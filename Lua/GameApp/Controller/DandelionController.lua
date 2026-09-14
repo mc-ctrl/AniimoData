@@ -48,7 +48,7 @@ slot18 = slot3
 slot15 = slot15(slot17, slot18)
 
 slot16 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = DandelionController
 	slot3 = slot3.super
 	slot3 = slot3.ctor
@@ -58,54 +58,39 @@ slot16 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	slot3 = NotNil
-	slot5 = slot1.eModel
-	slot3 = slot3(slot5)
+	slot3 = slot1.eModel
 	--- END OF BLOCK #0 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 13-18, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot1.eModel
-	slot5 = slot5.controllerComponent
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
-
-	slot3 = if slot3 then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 19-26, warpins: 1 ---
+	--- BLOCK #1 11-19, warpins: 1 ---
 	slot3 = slot1.eModel
-	slot3 = slot3.controllerComponent
 	slot5 = slot3
 	slot3 = slot3.OnHandleMove
-	slot6 = 0
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_CHARACETER_CONTROLLER
 	slot7 = 0
 	slot8 = 0
+	slot9 = 0
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot3(slot5, slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #3 27-29, warpins: 3 ---
+	--- BLOCK #2 20-22, warpins: 2 ---
 	slot3 = false
 	slot0.moving = slot3
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -262,9 +247,16 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-24, warpins: 2 ---
+	--- BLOCK #2 10-29, warpins: 2 ---
 	slot1 = true
 	slot0.exited = slot1
+	slot1 = slot0.vehicle
+	slot3 = slot1
+	slot1 = slot1.onVehicleMoveStateChanged
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -287,7 +279,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #3 25-27, warpins: 1 ---
+	--- BLOCK #3 30-32, warpins: 1 ---
 	slot2 = slot1.breakFogTime
 	--- END OF BLOCK #3 ---
 
@@ -298,7 +290,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #4 28-34, warpins: 1 ---
+	--- BLOCK #4 33-39, warpins: 1 ---
 	slot2 = facade
 	slot4 = slot2
 	slot2 = slot2.sendLuaEvent
@@ -313,7 +305,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 35-35, warpins: 3 ---
+	--- BLOCK #5 40-40, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -496,7 +488,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #15 54-60, warpins: 1 ---
+	--- BLOCK #15 54-65, warpins: 1 ---
 	slot8 = slot4
 	slot6 = slot4.playVehicleOverrideAnim
 	slot9 = {
@@ -507,12 +499,19 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 	slot6 = true
 	slot0.moving = slot6
+	slot6 = slot0.vehicle
+	slot8 = slot6
+	slot6 = slot6.onVehicleMoveStateChanged
+	slot9 = true
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #16 61-63, warpins: 2 ---
+	--- BLOCK #16 66-68, warpins: 2 ---
 	slot6 = slot0.moving
 	--- END OF BLOCK #16 ---
 
@@ -523,7 +522,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #17 64-65, warpins: 1 ---
+	--- BLOCK #17 69-70, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
 	slot5 = if not slot5 then
@@ -533,7 +532,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #18 66-70, warpins: 1 ---
+	--- BLOCK #18 71-80, warpins: 1 ---
 	slot8 = slot4
 	slot6 = slot4.stopVehicleSpecial
 
@@ -541,57 +540,49 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 	slot6 = false
 	slot0.moving = slot6
+	slot6 = slot0.vehicle
+	slot8 = slot6
+	slot6 = slot6.onVehicleMoveStateChanged
+	slot9 = false
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 71-75, warpins: 4 ---
-	slot6 = NotNil
-	slot8 = slot4.eModel
-	slot6 = slot6(slot8)
+	--- BLOCK #19 81-83, warpins: 4 ---
+	slot6 = slot4.eModel
 	--- END OF BLOCK #19 ---
 
 	slot6 = if slot6 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #20 76-81, warpins: 1 ---
-	slot6 = NotNil
-	slot8 = slot4.eModel
-	slot8 = slot8.controllerComponent
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #20 ---
-
-	slot6 = if slot6 then
 	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 82-89, warpins: 1 ---
+	--- BLOCK #20 84-92, warpins: 1 ---
 	slot6 = slot4.eModel
-	slot6 = slot6.controllerComponent
 	slot8 = slot6
 	slot6 = slot6.OnHandleMove
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
+	slot9 = Const
+	slot9 = slot9.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot3
 
-	slot6(slot8, slot9, slot10, slot11)
+	slot6(slot8, slot9, slot10, slot11, slot12)
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #22 90-90, warpins: 3 ---
+	--- BLOCK #21 93-93, warpins: 2 ---
 	return
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #21 ---
 
 
 

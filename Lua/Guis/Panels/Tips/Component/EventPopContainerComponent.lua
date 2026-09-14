@@ -14,7 +14,7 @@ slot6 = slot0
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.transform
 	slot4 = slot2
 	slot2 = slot2.GetComponent
@@ -23,6 +23,8 @@ slot4 = function(slot0, slot1)
 	slot0.container = slot2
 	slot2 = false
 	slot0.refContainersLoaded = slot2
+	slot2 = 0
+	slot0.loadSerial = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -47,7 +49,27 @@ end
 slot3.checkContainerLoaded = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.loadSerial
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-13, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0.loadSerial = slot1
 	slot1 = slot0.container
 	slot3 = slot1
 	slot1 = slot1.DestroyContent
@@ -58,7 +80,7 @@ slot4 = function(slot0)
 	slot0.refContainersLoaded = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -165,10 +187,8 @@ end
 slot3.findObjects = slot4
 
 slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.checkContainerLoaded
-	slot6 = slot6(slot8)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot6 = slot0.loadSerial
 	--- END OF BLOCK #0 ---
 
 	slot6 = if not slot6 then
@@ -178,13 +198,58 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot6 = slot0.container
-	slot8 = slot6
-	slot6 = slot6.LoadDefaultUrlManually
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #1 ---
 
-	slot9 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-12, warpins: 2 ---
+	slot6 = slot6 + 1
+	slot0.loadSerial = slot6
+	slot6 = slot0.loadSerial
+	slot9 = slot0
+	slot7 = slot0.checkContainerLoaded
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot7 = slot0.container
+	slot9 = slot7
+	slot7 = slot7.LoadDefaultUrlManually
+
+	slot10 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = loadSerial
+		slot1 = self
+		slot1 = slot1.loadSerial
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-23, warpins: 2 ---
 		slot0 = self
 		slot1 = true
 		slot0.refContainersLoaded = slot1
@@ -206,38 +271,38 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 12-19, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.showEventInternal
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
-	slot12 = slot4
-	slot13 = slot5
-
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 20-21, warpins: 2 ---
-	return
 	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 19-26, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.showEventInternal
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot3
+	slot13 = slot4
+	slot14 = slot5
+
+	slot7(slot9, slot10, slot11, slot12, slot13, slot14)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-28, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
@@ -388,18 +453,50 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6 = slot0.confirmUButton
 
 	slot7 = function()
-		--- BLOCK #0 1-13, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.rootUComponent
-		slot2 = slot0
-		slot0 = slot0.InvokeCallbackWithCallback
-		slot3 = CS
-		slot3 = slot3.XGUI
-		slot3 = slot3.EInvokeTime
-		slot3 = slot3.Hide
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = extraInfo
+		--- END OF BLOCK #0 ---
 
-		slot4 = function()
-			--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot0 = extraInfo
+		slot0 = slot0.hintCb
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 8-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.nextTimeUButton
+		slot0 = slot0.isSelected
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 11-22, warpins: 3 ---
+		slot1 = self
+		slot1 = slot1.rootUComponent
+		slot3 = slot1
+		slot1 = slot1.InvokeCallbackWithCallback
+		slot4 = CS
+		slot4 = slot4.XGUI
+		slot4 = slot4.EInvokeTime
+		slot4 = slot4.Hide
+
+		slot5 = function()
+			--- BLOCK #0 1-11, warpins: 1 ---
 			slot0 = self
 			slot2 = slot0
 			slot0 = slot0.hide
@@ -412,75 +509,73 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 			slot0(slot2)
 
-			return
+			slot0 = okCb
 			--- END OF BLOCK #0 ---
 
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 12-13, warpins: 1 ---
+			slot0 = okCb
+
+			slot0()
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 14-16, warpins: 2 ---
+			slot0 = extraInfo
+			--- END OF BLOCK #2 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #3 17-20, warpins: 1 ---
+			slot0 = extraInfo
+			slot0 = slot0.hintCb
+			--- END OF BLOCK #3 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 21-24, warpins: 1 ---
+			slot0 = extraInfo
+			slot0 = slot0.hintCb
+			slot2 = hintSelected
+
+			slot0(slot2)
+
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+			--- BLOCK #5 25-25, warpins: 3 ---
+			return
+			--- END OF BLOCK #5 ---
+
 
 
 		end
 
-		slot0(slot2, slot3, slot4)
+		slot1(slot3, slot4, slot5)
 
-		slot0 = okCb
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 14-15, warpins: 1 ---
-		slot0 = okCb
-
-		slot0()
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 16-18, warpins: 2 ---
-		slot0 = extraInfo
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #3 19-22, warpins: 1 ---
-		slot0 = extraInfo
-		slot0 = slot0.hintCb
-		--- END OF BLOCK #3 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 23-28, warpins: 1 ---
-		slot0 = extraInfo
-		slot0 = slot0.hintCb
-		slot2 = self
-		slot2 = slot2.nextTimeUButton
-		slot2 = slot2.isSelected
-
-		slot0(slot2)
-
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-		--- BLOCK #5 29-29, warpins: 3 ---
 		return
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -490,18 +585,50 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6 = slot0.closeUButton
 
 	slot7 = function()
-		--- BLOCK #0 1-13, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.rootUComponent
-		slot2 = slot0
-		slot0 = slot0.InvokeCallbackWithCallback
-		slot3 = CS
-		slot3 = slot3.XGUI
-		slot3 = slot3.EInvokeTime
-		slot3 = slot3.Hide
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = extraInfo
+		--- END OF BLOCK #0 ---
 
-		slot4 = function()
-			--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot0 = extraInfo
+		slot0 = slot0.hintCb
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 8-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.nextTimeUButton
+		slot0 = slot0.isSelected
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 11-22, warpins: 3 ---
+		slot1 = self
+		slot1 = slot1.rootUComponent
+		slot3 = slot1
+		slot1 = slot1.InvokeCallbackWithCallback
+		slot4 = CS
+		slot4 = slot4.XGUI
+		slot4 = slot4.EInvokeTime
+		slot4 = slot4.Hide
+
+		slot5 = function()
+			--- BLOCK #0 1-11, warpins: 1 ---
 			slot0 = self
 			slot2 = slot0
 			slot0 = slot0.hide
@@ -514,75 +641,73 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 			slot0(slot2)
 
-			return
+			slot0 = closeCb
 			--- END OF BLOCK #0 ---
 
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 12-13, warpins: 1 ---
+			slot0 = closeCb
+
+			slot0()
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 14-16, warpins: 2 ---
+			slot0 = extraInfo
+			--- END OF BLOCK #2 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #3 17-20, warpins: 1 ---
+			slot0 = extraInfo
+			slot0 = slot0.hintCb
+			--- END OF BLOCK #3 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 21-24, warpins: 1 ---
+			slot0 = extraInfo
+			slot0 = slot0.hintCb
+			slot2 = hintSelected
+
+			slot0(slot2)
+
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+			--- BLOCK #5 25-25, warpins: 3 ---
+			return
+			--- END OF BLOCK #5 ---
+
 
 
 		end
 
-		slot0(slot2, slot3, slot4)
+		slot1(slot3, slot4, slot5)
 
-		slot0 = closeCb
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 14-15, warpins: 1 ---
-		slot0 = closeCb
-
-		slot0()
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 16-18, warpins: 2 ---
-		slot0 = extraInfo
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #3 19-22, warpins: 1 ---
-		slot0 = extraInfo
-		slot0 = slot0.hintCb
-		--- END OF BLOCK #3 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 23-28, warpins: 1 ---
-		slot0 = extraInfo
-		slot0 = slot0.hintCb
-		slot2 = self
-		slot2 = slot2.nextTimeUButton
-		slot2 = slot2.isSelected
-
-		slot0(slot2)
-
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-		--- BLOCK #5 29-29, warpins: 3 ---
 		return
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #3 ---
 
 
 

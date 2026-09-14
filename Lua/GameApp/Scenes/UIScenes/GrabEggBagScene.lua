@@ -1,4 +1,4 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -20,12 +20,15 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Common.Const.PlayableConst"
 slot6 = slot6(slot8)
-slot7 = slot0.LightClass
-slot9 = "GrabEggBagScene"
-slot10 = slot1
-slot7 = slot7(slot9, slot10)
+slot7 = require
+slot9 = "Common.Const.Const"
+slot7 = slot7(slot9)
+slot8 = slot0.LightClass
+slot10 = "GrabEggBagScene"
+slot11 = slot1
+slot8 = slot8(slot10, slot11)
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -34,9 +37,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onCtor = slot8
+slot8.onCtor = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-42, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -130,9 +133,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onStart = slot8
+slot8.onStart = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -149,25 +152,24 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #1 9-31, warpins: 1 ---
+	--- BLOCK #1 9-28, warpins: 1 ---
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
 	slot4 = slot2
-	slot2 = slot2.SetParent
+	slot2 = slot2.SetTransformParent
 	slot5 = nil
 	slot6 = false
 
 	slot2(slot4, slot5, slot6)
 
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
-	slot3 = Vector3
-	slot3 = slot3.New
+	slot4 = slot2
+	slot2 = slot2.SetTransformPosition
 	slot5 = 0
 	slot6 = -1000
 	slot7 = 0
-	slot3 = slot3(slot5, slot6, slot7)
-	slot2.position = slot3
+
+	slot2(slot4, slot5, slot6, slot7)
+
 	slot4 = slot1
 	slot2 = slot1.setActive
 	slot5 = ClientConst
@@ -182,7 +184,7 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 32-32, warpins: 2 ---
+	--- BLOCK #2 29-29, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -190,9 +192,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onDestroy = slot8
+slot8.onDestroy = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -218,14 +220,15 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-19, warpins: 2 ---
+	--- BLOCK #2 12-20, warpins: 2 ---
 	slot3 = slot2.eModel
-	slot3 = slot3.playableComponent
 	slot5 = slot3
 	slot3 = slot3.SetFacialStubEnabled
-	slot6 = false
+	slot6 = Const
+	slot6 = slot6.COMPONENT_IDX_PLAYABLE
+	slot7 = false
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #2 ---
 
@@ -236,7 +239,7 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 20-22, warpins: 1 ---
+	--- BLOCK #3 21-23, warpins: 1 ---
 	slot3 = slot0.boyTransform
 	--- END OF BLOCK #3 ---
 
@@ -247,33 +250,31 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 23-23, warpins: 2 ---
+	--- BLOCK #4 24-24, warpins: 2 ---
 	slot3 = slot0.girlTransform
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 24-42, warpins: 2 ---
+	--- BLOCK #5 25-39, warpins: 2 ---
 	slot4 = slot2.eModel
-	slot4 = slot4.transform
 	slot6 = slot4
-	slot4 = slot4.SetParent
+	slot4 = slot4.SetTransformParent
 	slot7 = slot3
 	slot8 = false
 
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot2.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localPosition = slot5
-	slot4 = slot2.eModel
-	slot4 = slot4.transform
-	slot5 = Quaternion
-	slot5 = slot5.Euler
-	slot7 = 0
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
+
+	slot4(slot6)
+
+	slot4 = Quaternion
+	slot4 = slot4.Euler
+	slot6 = 0
 	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
@@ -283,60 +284,79 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 43-44, warpins: 1 ---
-	slot8 = -17.72
+	--- BLOCK #6 40-41, warpins: 1 ---
+	slot7 = -17.72
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 45-45, warpins: 1 ---
-	slot8 = -87.81
+	--- BLOCK #7 42-42, warpins: 1 ---
+	slot7 = -87.81
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 46-80, warpins: 2 ---
-	slot9 = 0
-	slot5 = slot5(slot7, slot8, slot9)
-	slot4.localRotation = slot5
-	slot4 = slot2.eModel
-	slot4 = slot4.transform
+	--- BLOCK #8 43-90, warpins: 2 ---
+	slot8 = 0
+	slot4 = slot4(slot6, slot7, slot8)
 	slot5 = slot2.eModel
-	slot5 = slot5.transform
-	slot5 = slot5.position
+	slot7 = slot5
+	slot5 = slot5.SetTransformLocalRotation
+	slot8 = slot4.x
+	slot9 = slot4.y
+	slot10 = slot4.z
+	slot11 = slot4.w
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
+	slot5 = Vector3
+	slot7 = slot2.eModel
+	slot9 = slot7
+	slot7 = slot7.GetTransformPosition
+	MULTRES = slot7(slot9)
+	slot5 = slot5(MULTRES)
 	slot8 = slot0
 	slot6 = slot0.calcScreenAdaptOffset
 	slot9 = slot3
 	slot6 = slot6(slot8, slot9)
 	slot5 = slot5 + slot6
-	slot4.position = slot5
-	slot4 = slot2.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.one
-	slot4.localScale = slot5
-	slot6 = slot2
-	slot4 = slot2.stopAllAnimation
+	slot6 = slot2.eModel
+	slot8 = slot6
+	slot6 = slot6.SetTransformPosition
+	slot9 = slot5.x
+	slot10 = slot5.y
+	slot11 = slot5.z
 
-	slot4(slot6)
+	slot6(slot8, slot9, slot10, slot11)
 
-	slot6 = slot2
-	slot4 = slot2.playAnimation
-	slot7 = PlayableConst
-	slot7 = slot7.Pose_Bag_Idle
+	slot6 = slot2.eModel
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalScale
 
-	slot4(slot6, slot7)
+	slot6(slot8)
 
-	slot6 = slot2
-	slot4 = slot2.setActive
-	slot7 = ClientConst
-	slot7 = slot7.MODEL_VISIBLE_KEY
-	slot7 = slot7.DEFAULT
-	slot8 = true
+	slot8 = slot2
+	slot6 = slot2.stopAllAnimation
 
-	slot4(slot6, slot7, slot8)
+	slot6(slot8)
+
+	slot8 = slot2
+	slot6 = slot2.playAnimation
+	slot9 = PlayableConst
+	slot9 = slot9.Pose_Bag_Idle
+
+	slot6(slot8, slot9)
+
+	slot8 = slot2
+	slot6 = slot2.setActive
+	slot9 = ClientConst
+	slot9 = slot9.MODEL_VISIBLE_KEY
+	slot9 = slot9.DEFAULT
+	slot10 = true
+
+	slot6(slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #8 ---
@@ -345,10 +365,10 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.createPlayer = slot8
-slot8 = 1.7777777777777777
+slot8.createPlayer = slot9
+slot9 = 1.7777777777777777
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = Screen
 	slot2 = slot2.width
@@ -409,9 +429,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.calcScreenAdaptOffset = slot9
+slot8.calcScreenAdaptOffset = slot10
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

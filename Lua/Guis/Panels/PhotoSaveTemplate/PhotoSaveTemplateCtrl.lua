@@ -122,7 +122,7 @@ slot6 = function(slot0)
 	slot1 = slot1.btnConfirmUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-15, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
@@ -131,7 +131,7 @@ slot6 = function(slot0)
 		slot3 = slot3.title
 
 		slot4 = function(slot0)
-			--- BLOCK #0 1-9, warpins: 1 ---
+			--- BLOCK #0 1-15, warpins: 1 ---
 			slot1 = pg
 			slot1 = slot1.me
 			slot3 = slot1
@@ -140,7 +140,7 @@ slot6 = function(slot0)
 			slot4 = slot4.content
 
 			slot5 = function(slot0)
-				--- BLOCK #0 1-27, warpins: 1 ---
+				--- BLOCK #0 1-21, warpins: 1 ---
 				slot1 = self
 				slot1 = slot1.templateInfo
 				slot2 = self
@@ -154,17 +154,11 @@ slot6 = function(slot0)
 				slot1 = pg
 				slot1 = slot1.me
 				slot3 = slot1
-				slot1 = slot1.uploadPresetWithImg
+				slot1 = slot1.uploadPresetWithImgSprite
 				slot4 = self
 				slot4 = slot4.templateInfo
-				slot5 = pg
-				slot5 = slot5.global
-				slot5 = slot5.mobileCameraMgr
-				slot7 = slot5
-				slot5 = slot5.GetSpriteCompressByte
-				slot8 = self
-				slot8 = slot8.sprite
-				slot5 = slot5(slot7, slot8)
+				slot5 = self
+				slot5 = slot5.sprite
 
 				slot6 = function(slot0)
 					--- BLOCK #0 1-12, warpins: 1 ---
@@ -223,7 +217,16 @@ slot6 = function(slot0)
 
 			end
 
-			slot1(slot3, slot4, slot5)
+			slot6 = nil
+			slot7 = {
+				DetailType = "Photo_Description"
+			}
+			slot8 = pg
+			slot8 = slot8.me
+			slot8 = slot8.level
+			slot7.Level = slot8
+
+			slot1(slot3, slot4, slot5, slot6, slot7)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -232,7 +235,16 @@ slot6 = function(slot0)
 
 		end
 
-		slot0(slot2, slot3, slot4)
+		slot5 = nil
+		slot6 = {
+			DetailType = "Photo_Title"
+		}
+		slot7 = pg
+		slot7 = slot7.me
+		slot7 = slot7.level
+		slot6.Level = slot7
+
+		slot0(slot2, slot3, slot4, slot5, slot6)
 
 		return
 		--- END OF BLOCK #0 ---

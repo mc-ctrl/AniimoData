@@ -23,7 +23,7 @@ slot7 = "Utils.LuaUIUtils"
 slot5 = slot5(slot7)
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-63, warpins: 1 ---
+	--- BLOCK #0 1-68, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -81,6 +81,11 @@ slot6 = function(slot0)
 	slot0.countDownUWidget = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
+	slot5 = "consoleBar"
+	slot2 = slot2(slot4, slot5)
+	slot0.consoleBar = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
 	slot5 = "bgImage"
 	slot2 = slot2(slot4, slot5)
 	slot0.bgImage = slot2
@@ -94,7 +99,7 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #1 64-66, warpins: 1 ---
+	--- BLOCK #1 69-71, warpins: 1 ---
 	slot2 = slot0.bgImage
 	slot3 = true
 	slot2.forceSyncLoad = slot3
@@ -104,7 +109,7 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 67-67, warpins: 2 ---
+	--- BLOCK #2 72-72, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -196,11 +201,10 @@ end
 slot3.changeLoadingStyle = slot6
 
 slot6 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = slot0.btnNextUButton
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.setUIViewVisible
+	slot4 = slot0.btnNextUButton
 	slot5 = slot1
 
 	slot2(slot4, slot5)

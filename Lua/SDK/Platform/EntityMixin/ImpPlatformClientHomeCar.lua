@@ -1,10 +1,13 @@
---- BLOCK #0 1-16, warpins: 1 ---
+--- BLOCK #0 1-19, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
 slot1 = slot1(slot3)
+slot2 = require
+slot4 = "Const.UIConst"
+slot2 = slot2(slot4)
 
-slot2 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.basicInfo
 	--- END OF BLOCK #0 ---
@@ -54,9 +57,9 @@ slot2 = function(slot0)
 
 end
 
-slot0.getRawHomeCarName = slot2
+slot0.getRawHomeCarName = slot3
 
-slot2 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -117,11 +120,21 @@ slot2 = function(slot0)
 
 end
 
-slot0.getHomeOwnerPlayerInfo = slot2
+slot0.getHomeOwnerPlayerInfo = slot3
 
-slot2 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.topLogoItem
+slot3 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.executeTopLogoComponentMethod
+	slot4 = UIConst
+	slot4 = slot4.TOPLOGO_COMPONENT
+	slot4 = slot4.COMBAT
+	slot5 = "refreshName"
+	slot6 = true
+
+	slot1(slot3, slot4, slot5, slot6)
+
+	slot1 = slot0.carGroup
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -131,9 +144,9 @@ slot2 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.topLogoItem
-	slot1 = slot1.components
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot1 = slot0.carGroup
+	slot1 = slot1.boardEntity
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
@@ -143,10 +156,10 @@ slot2 = function(slot0)
 	end
 
 
-	--- BLOCK #2 8-12, warpins: 1 ---
-	slot1 = slot0.topLogoItem
-	slot1 = slot1.components
-	slot1 = slot1.combat
+	--- BLOCK #2 16-20, warpins: 1 ---
+	slot1 = slot0.carGroup
+	slot1 = slot1.boardEntity
+	slot1 = slot1.onBasicInfoChanged
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -156,58 +169,7 @@ slot2 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-19, warpins: 1 ---
-	slot1 = slot0.topLogoItem
-	slot1 = slot1.components
-	slot1 = slot1.combat
-	slot3 = slot1
-	slot1 = slot1.refreshName
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 20-22, warpins: 4 ---
-	slot1 = slot0.carGroup
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #5 23-26, warpins: 1 ---
-	slot1 = slot0.carGroup
-	slot1 = slot1.boardEntity
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 27-31, warpins: 1 ---
-	slot1 = slot0.carGroup
-	slot1 = slot1.boardEntity
-	slot1 = slot1.onBasicInfoChanged
-	--- END OF BLOCK #6 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 32-37, warpins: 1 ---
+	--- BLOCK #3 21-26, warpins: 1 ---
 	slot1 = slot0.carGroup
 	slot1 = slot1.boardEntity
 	slot3 = slot1
@@ -216,22 +178,22 @@ slot2 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #8 38-38, warpins: 4 ---
+	--- BLOCK #4 27-27, warpins: 4 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot0.refreshHomeCarNameConsumers = slot2
+slot0.refreshHomeCarNameConsumers = slot3
 
-slot2 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = PlatformNameMaskService
 	slot2 = slot2.getMaskedDisplayName
@@ -257,9 +219,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot0.bindRemoteHomeCarName = slot2
+slot0.bindRemoteHomeCarName = slot3
 
-slot2 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -323,7 +285,7 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot0.getName = slot2
+slot0.getName = slot3
 
 return slot0
 --- END OF BLOCK #0 ---

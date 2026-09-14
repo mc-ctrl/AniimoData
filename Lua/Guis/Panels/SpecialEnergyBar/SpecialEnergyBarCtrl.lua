@@ -1,4 +1,4 @@
---- BLOCK #0 1-70, warpins: 1 ---
+--- BLOCK #0 1-77, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.AttributeConst"
 slot0 = slot0(slot2)
@@ -14,41 +14,44 @@ slot3 = slot3(slot5)
 slot4 = require
 slot6 = "Guis.UICtrl"
 slot4 = slot4(slot6)
-slot5 = slot3.LightClass
-slot7 = "SpecialEnergyBarCtrl"
-slot8 = slot4
-slot5 = slot5(slot7, slot8)
-slot6 = 3
-slot7 = 9
-slot8 = 37.5
-slot9 = {}
-slot10 = slot2.ON_CONTROL_ENT
-slot11 = {
+slot5 = require
+slot7 = "Utils.LuaTopLogoUtils"
+slot5 = slot5(slot7)
+slot6 = slot3.LightClass
+slot8 = "SpecialEnergyBarCtrl"
+slot9 = slot4
+slot6 = slot6(slot8, slot9)
+slot7 = 3
+slot8 = 9
+slot9 = 37.5
+slot10 = {}
+slot11 = slot2.ON_CAMERA_TARGET_CHANGE
+slot12 = {
 	"refreshEnergyStateOnEntChange",
 	true
 }
-slot9[slot10] = slot11
-slot10 = slot2.ON_PASSIVE_ENERGY_CHANGED
-slot11 = {
+slot10[slot11] = slot12
+slot11 = slot2.ON_PASSIVE_ENERGY_CHANGED
+slot12 = {
 	"refreshEnergyStateOnValueChange",
 	true
 }
-slot9[slot10] = slot11
-slot10 = slot2.PLAYER_COMBAT_STATUS_UPDATE
-slot11 = {
+slot10[slot11] = slot12
+slot11 = slot2.PLAYER_COMBAT_STATUS_UPDATE
+slot12 = {
 	"onCombatStatusChange",
 	true
 }
-slot9[slot10] = slot11
-slot10 = slot2.NOTIFY_PASSIVE_ENERGY_SUPER_BOOSTED
-slot11 = {
+slot10[slot11] = slot12
+slot11 = slot2.NOTIFY_PASSIVE_ENERGY_SUPER_BOOSTED
+slot12 = {
 	"onSuperBoostedStateChange",
 	true
 }
-slot9[slot10] = slot11
-slot5.messages = slot9
+slot10[slot11] = slot12
+slot6.messages = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -111,9 +114,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.onCreate = slot9
+slot6.onCreate = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = nil
 	slot0.curPawnActorId = slot1
@@ -173,9 +176,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.clearState = slot9
+slot6.clearState = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -323,153 +326,204 @@ slot9 = function(slot0)
 	slot6 = slot0.view
 	slot6 = slot6.rootUIFollowTrans
 	slot8 = slot6
-	slot6 = slot6.AttachToEntity
+	slot6 = slot6.AttachToEntityPositionAgent
 	slot9 = slot1.eModel
 
 	slot6(slot8, slot9)
 
-	slot8 = slot1
-	slot6 = slot1.getLockPosition
-	slot6 = slot6(slot8)
+	slot8 = slot0
+	slot6 = slot0.m_applyFollowAnchorOffset
 	slot9 = slot1
-	slot7 = slot1.getPosition
-	slot7 = slot7(slot9)
+
+	slot6(slot8, slot9)
+
+	slot6 = slot1.spEnergyInfo
+	slot6 = slot6.uiOffsetXYZ
 	--- END OF BLOCK #11 ---
 
-	slot6 = if slot6 then
+	if slot6 ~= nil then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 73-75, warpins: 1 ---
-	slot8 = slot6[2]
+	--- BLOCK #12 73-80, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7.rootUIFollowTrans
+	slot9 = slot7
+	slot7 = slot7.SetUIOffset
+	slot10 = slot6.x
+	slot11 = slot6.y
+
+	slot7(slot9, slot10, slot11)
+
 	--- END OF BLOCK #12 ---
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 76-76, warpins: 2 ---
-	slot8 = 0
+	--- BLOCK #13 81-87, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7.rootUIFollowTrans
+	slot9 = slot7
+	slot7 = slot7.SetUIOffset
+	slot10 = 0
+	slot11 = 0
+
+	slot7(slot9, slot10, slot11)
+
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 77-78, warpins: 2 ---
-	--- END OF BLOCK #14 ---
+	--- BLOCK #14 88-99, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.refreshBarBoostState
+	slot10 = slot1
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	slot7(slot9, slot10)
 
+	slot9 = slot0
+	slot7 = slot0.refreshSpEnergyBarVisible
+	slot10 = true
 
-	--- BLOCK #15 79-81, warpins: 1 ---
-	slot9 = slot7[2]
-	--- END OF BLOCK #15 ---
+	slot7(slot9, slot10)
 
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
+	slot9 = slot0
+	slot7 = slot0.refreshCutLinesLayout
 
-
-	--- BLOCK #16 82-82, warpins: 2 ---
-	slot9 = 0
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 83-95, warpins: 2 ---
-	slot8 = slot8 - slot9
-	slot9 = slot0.view
-	slot9 = slot9.rootUIFollowTrans
-	slot11 = slot9
-	slot9 = slot9.SetWorldOffset
-	slot12 = 0
-	slot13 = slot8
-	slot14 = 0
-
-	slot9(slot11, slot12, slot13, slot14)
-
-	slot9 = slot1.spEnergyInfo
-	slot9 = slot9.uiOffsetXYZ
-	--- END OF BLOCK #17 ---
-
-	if slot9 ~= nil then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 96-103, warpins: 1 ---
-	slot10 = slot0.view
-	slot10 = slot10.rootUIFollowTrans
-	slot12 = slot10
-	slot10 = slot10.SetUIOffset
-	slot13 = slot9.x
-	slot14 = slot9.y
-
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #19 104-110, warpins: 1 ---
-	slot10 = slot0.view
-	slot10 = slot10.rootUIFollowTrans
-	slot12 = slot10
-	slot10 = slot10.SetUIOffset
-	slot13 = 0
-	slot14 = 0
-
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 111-122, warpins: 2 ---
-	slot12 = slot0
-	slot10 = slot0.refreshBarBoostState
-	slot13 = slot1
-
-	slot10(slot12, slot13)
-
-	slot12 = slot0
-	slot10 = slot0.refreshSpEnergyBarVisible
-	slot13 = true
-
-	slot10(slot12, slot13)
-
-	slot12 = slot0
-	slot10 = slot0.refreshCutLinesLayout
-
-	slot10(slot12)
+	slot7(slot9)
 
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot5.refreshEnergyStateOnEntChange = slot9
+slot6.refreshEnergyStateOnEntChange = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0.view
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-11, warpins: 1 ---
+	slot2 = IsNil
+	slot4 = slot0.view
+	slot4 = slot4.rootUIFollowTrans
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-24, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.rootUIFollowTrans
+	slot4 = slot2
+	slot2 = slot2.SetWorldOffset
+	slot5 = 0
+	slot6 = LuaTopLogoUtils
+	slot6 = slot6.getAgentToCapsuleCenterY
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	slot7 = 0
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot6.m_applyFollowAnchorOffset = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.pawn
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot2 = slot1.actorId
+	slot3 = slot0.curPawnActorId
+
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-14, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.m_applyFollowAnchorOffset
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot6.refreshFollowAnchorOffset = slot10
+
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -579,9 +633,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.refreshEnergyStateOnValueChange = slot9
+slot6.refreshEnergyStateOnValueChange = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -624,9 +678,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.setSpEnergyBarValue = slot9
+slot6.setSpEnergyBarValue = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curPawnActorId
 	--- END OF BLOCK #0 ---
@@ -714,9 +768,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getSpEnergyBarVisible = slot9
+slot6.getSpEnergyBarVisible = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getSpEnergyBarVisible
@@ -955,9 +1009,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.refreshSpEnergyBarVisible = slot9
+slot6.refreshSpEnergyBarVisible = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = slot1.spEnergyInfo
 	slot2 = slot2.triggeredFull
@@ -1077,9 +1131,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.refreshBarBoostState = slot9
+slot6.refreshBarBoostState = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshSpEnergyBarVisible
@@ -1095,9 +1149,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onCombatStatusChange = slot9
+slot6.onCombatStatusChange = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -1145,9 +1199,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onSuperBoostedStateChange = slot9
+slot6.onSuperBoostedStateChange = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.delayHideTimer
 	--- END OF BLOCK #0 ---
@@ -1182,9 +1236,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.clearDelayHideTimer = slot9
+slot6.clearDelayHideTimer = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -1224,9 +1278,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.close = slot9
+slot6.close = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.cutLineAsyncTaskMap
@@ -1337,9 +1391,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onDestroy = slot9
+slot6.onDestroy = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = {}
 	slot0.cutLineCache = slot1
@@ -1526,9 +1580,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.initCutLine = slot9
+slot6.initCutLine = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.cutLineCache
 	slot1 = #slot1
@@ -1659,9 +1713,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.refreshCutLinesLayout = slot9
+slot6.refreshCutLinesLayout = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.curGridCount = slot1
 	slot2 = slot1 - 1
@@ -1739,9 +1793,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.refreshCutLinesLayoutInternal = slot9
+slot6.refreshCutLinesLayoutInternal = slot10
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

@@ -7,10 +7,10 @@ slot3 = "Data.npc_duel_data"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	CANNOT_CHALLENGE = 0,
 	FINISHED = 3,
 	PARTIAL_PASSED = 2,
-	CAN_CHALLENGE = 1,
-	CANNOT_CHALLENGE = 0
+	CAN_CHALLENGE = 1
 }
 slot2.State = slot3
 

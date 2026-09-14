@@ -38,9 +38,9 @@ slot12 = require
 slot14 = "Utils.LuaUIUtils"
 slot12 = slot12(slot14)
 slot13 = {
-	AutoLock = 1,
 	None = 0,
-	Lock = 2
+	Lock = 2,
+	AutoLock = 1
 }
 slot7.LockState = slot13
 
@@ -112,7 +112,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 18-99, warpins: 2 ---
+	--- BLOCK #3 18-101, warpins: 2 ---
 	slot0.checkHeight = slot1
 	slot1 = bor
 	slot3 = lshift
@@ -137,8 +137,10 @@ slot13 = function(slot0)
 	slot0.lockLayerMask = slot1
 	slot1 = nil
 	slot0.curLockedEntity = slot1
-	slot1 = 0.5
+	slot1 = 0.25
 	slot0.startTriggerPressTime = slot1
+	slot1 = 0.55
+	slot0.longPressDuration = slot1
 	slot1 = "VX_Node_Photograph_CameraAim_In"
 	slot0.lockEntityInAni = slot1
 	slot1 = "VX_Node_Photograph_CameraAim_Loop"
@@ -253,7 +255,7 @@ slot13 = function(slot0)
 	slot6 = function(slot0)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.startTriggerPressTime
+		slot1 = slot1.longPressDuration
 		--- END OF BLOCK #0 ---
 
 		if slot1 <= slot0 then
@@ -331,7 +333,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #4 100-114, warpins: 1 ---
+	--- BLOCK #4 102-116, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -351,7 +353,7 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 115-128, warpins: 1 ---
+	--- BLOCK #5 117-130, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -371,7 +373,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 129-139, warpins: 2 ---
+	--- BLOCK #6 131-141, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.startTimer
 
@@ -559,7 +561,7 @@ slot13 = function(slot0)
 	if slot1 == slot2 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #21
 	end
 
 
@@ -572,7 +574,7 @@ slot13 = function(slot0)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
 	--- BLOCK #9 95-100, warpins: 1 ---
@@ -585,7 +587,7 @@ slot13 = function(slot0)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
@@ -599,7 +601,7 @@ slot13 = function(slot0)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
@@ -618,7 +620,7 @@ slot13 = function(slot0)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
@@ -633,7 +635,7 @@ slot13 = function(slot0)
 	slot7 = if not slot7 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
@@ -657,11 +659,11 @@ slot13 = function(slot0)
 	if slot7 ~= slot8 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #15 133-156, warpins: 2 ---
+	--- BLOCK #15 133-142, warpins: 2 ---
 	slot7 = pg
 	slot7 = slot7.getLocalizationText
 	slot9 = PuppetData
@@ -669,6 +671,59 @@ slot13 = function(slot0)
 	slot9 = slot9[slot10]
 	slot9 = slot9.name
 	slot7 = slot7(slot9)
+	slot8 = slot6.ensureTopLogoItem
+	--- END OF BLOCK #15 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #16 143-148, warpins: 1 ---
+	slot10 = slot6
+	slot8 = slot6.ensureTopLogoItem
+	slot11 = "photo"
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #16 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #17 149-151, warpins: 1 ---
+	slot8 = slot6.ensureToplogoComponent
+	--- END OF BLOCK #17 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 152-160, warpins: 1 ---
+	slot10 = slot6
+	slot8 = slot6.ensureToplogoComponent
+	slot11 = UIConst
+	slot11 = slot11.TOPLOGO_COMPONENT
+	slot11 = slot11.PHOTO
+	slot12 = "photo_identify"
+	slot8 = slot8(slot10, slot11, slot12)
+	--- END OF BLOCK #18 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 161-177, warpins: 1 ---
 	slot8 = slot6.eventEmitter
 	slot10 = slot8
 	slot8 = slot8.emit
@@ -690,22 +745,22 @@ slot13 = function(slot0)
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #16 157-158, warpins: 7 ---
-	--- END OF BLOCK #16 ---
+	--- BLOCK #20 178-179, warpins: 11 ---
+	--- END OF BLOCK #20 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #9
-	GO OUT TO BLOCK #17
+	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #17 159-159, warpins: 2 ---
+	--- BLOCK #21 180-180, warpins: 2 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #21 ---
 
 
 
@@ -1219,7 +1274,7 @@ slot13 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
@@ -1234,11 +1289,11 @@ slot13 = function(slot0)
 	if slot1 == slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 11-31, warpins: 1 ---
+	--- BLOCK #2 11-22, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getLocalizationText
 	slot3 = PuppetData
@@ -1247,6 +1302,63 @@ slot13 = function(slot0)
 	slot3 = slot3[slot4]
 	slot3 = slot3.name
 	slot1 = slot1(slot3)
+	slot2 = slot0.curLockedEntity
+	slot2 = slot2.ensureTopLogoItem
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 23-29, warpins: 1 ---
+	slot2 = slot0.curLockedEntity
+	slot4 = slot2
+	slot2 = slot2.ensureTopLogoItem
+	slot5 = "photo"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 30-33, warpins: 1 ---
+	slot2 = slot0.curLockedEntity
+	slot2 = slot2.ensureToplogoComponent
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 34-43, warpins: 1 ---
+	slot2 = slot0.curLockedEntity
+	slot4 = slot2
+	slot2 = slot2.ensureToplogoComponent
+	slot5 = UIConst
+	slot5 = slot5.TOPLOGO_COMPONENT
+	slot5 = slot5.PHOTO
+	slot6 = "photo_identify"
+	slot2 = slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 44-56, warpins: 1 ---
 	slot2 = slot0.curLockedEntity
 	slot2 = slot2.eventEmitter
 	slot4 = slot2
@@ -1262,42 +1374,42 @@ slot13 = function(slot0)
 
 	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #3 32-38, warpins: 3 ---
+	--- BLOCK #7 57-63, warpins: 7 ---
 	slot3 = slot0
 	slot1 = slot0.tryGetLockedEntity
 	slot1 = slot1(slot3)
 	slot0.curLockedEntity = slot1
 	slot1 = slot0.curLockedEntity
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #4 39-45, warpins: 1 ---
+	--- BLOCK #8 64-70, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.photoMode
 	slot2 = slot0.ctrl
 	slot2 = slot2.ModeType
 	slot2 = slot2.PHOTO_IDENTIFY
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #5 46-66, warpins: 1 ---
+	--- BLOCK #9 71-82, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getLocalizationText
 	slot3 = PuppetData
@@ -1306,6 +1418,63 @@ slot13 = function(slot0)
 	slot3 = slot3[slot4]
 	slot3 = slot3.name
 	slot1 = slot1(slot3)
+	slot2 = slot0.curLockedEntity
+	slot2 = slot2.ensureTopLogoItem
+	--- END OF BLOCK #9 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #10 83-89, warpins: 1 ---
+	slot2 = slot0.curLockedEntity
+	slot4 = slot2
+	slot2 = slot2.ensureTopLogoItem
+	slot5 = "photo"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #11 90-93, warpins: 1 ---
+	slot2 = slot0.curLockedEntity
+	slot2 = slot2.ensureToplogoComponent
+	--- END OF BLOCK #11 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 94-103, warpins: 1 ---
+	slot2 = slot0.curLockedEntity
+	slot4 = slot2
+	slot2 = slot2.ensureToplogoComponent
+	slot5 = UIConst
+	slot5 = slot5.TOPLOGO_COMPONENT
+	slot5 = slot5.PHOTO
+	slot6 = "photo_identify"
+	slot2 = slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 104-116, warpins: 1 ---
 	slot2 = slot0.curLockedEntity
 	slot2 = slot2.eventEmitter
 	slot4 = slot2
@@ -1321,23 +1490,23 @@ slot13 = function(slot0)
 
 	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #6 67-69, warpins: 3 ---
+	--- BLOCK #14 117-119, warpins: 7 ---
 	slot1 = slot0.curLockedEntity
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #14 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #7 70-99, warpins: 1 ---
+	--- BLOCK #15 120-149, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.forceSetLockState
 	slot4 = slot0.curLockedEntity
@@ -1371,12 +1540,12 @@ slot13 = function(slot0)
 
 	slot2(slot4, slot5, slot6, slot7, slot8)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #8 100-113, warpins: 1 ---
+	--- BLOCK #16 150-163, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -1395,14 +1564,14 @@ slot13 = function(slot0)
 
 	slot1(slot3)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #9 114-114, warpins: 2 ---
+	--- BLOCK #17 164-164, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #17 ---
 
 
 

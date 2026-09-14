@@ -852,19 +852,18 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-17, warpins: 2 ---
+	--- BLOCK #2 7-16, warpins: 2 ---
 	slot3 = slot0.avatarScene
 	slot5 = slot3
 	slot3 = slot3.getCurEntity
 	slot3 = slot3(slot5)
 	slot4 = slot3.eModel
-	slot4 = slot4.modelView
-	slot5 = slot4.shaderView
-	slot7 = slot5
-	slot5 = slot5.IsClothCanStaining
-	slot8 = slot2.res
+	slot4 = slot4.shaderView
+	slot6 = slot4
+	slot4 = slot4.IsClothCanStaining
+	slot7 = slot2.res
 
-	return slot5(slot7, slot8)
+	return slot4(slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 

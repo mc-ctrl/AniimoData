@@ -1,4 +1,4 @@
---- BLOCK #0 1-50, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -18,19 +18,22 @@ slot5 = require
 slot7 = "Guis.UICtrl"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Guis.Utils.AvatarUtils"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
-slot7 = slot1.LightClass
-slot9 = "ColorPickerCtrl"
-slot10 = slot5
-slot7 = slot7(slot9, slot10)
-slot8 = require
-slot10 = "Core.Timer.TimerManager"
-slot8 = slot8(slot10)
-slot9 = {}
-slot7.messages = slot9
+slot7 = require
+slot9 = "Guis.Utils.AvatarUtils"
+slot7 = slot7(slot9)
+slot8 = slot1.LightClass
+slot10 = "ColorPickerCtrl"
+slot11 = slot5
+slot8 = slot8(slot10, slot11)
+slot9 = require
+slot11 = "Core.Timer.TimerManager"
+slot9 = slot9(slot11)
+slot10 = {}
+slot8.messages = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-42, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -99,7 +102,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 44-53, warpins: 2 ---
+	--- BLOCK #2 44-62, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.rGBRectU2DSlider
 	slot5 = slot3
@@ -111,6 +114,17 @@ slot9 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7, slot8, slot9)
 
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.tMPUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "BACK_TO_PRE"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -118,9 +132,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.onCreate = slot9
+slot8.onCreate = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.colorUColorPicker
@@ -169,10 +183,10 @@ slot9 = function(slot0)
 
 end
 
-slot7.closePanel = slot9
+slot8.closePanel = slot10
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot10 = function(slot0)
+	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.colorUColorPicker
 
@@ -408,7 +422,7 @@ slot9 = function(slot0)
 	slot1 = slot1.resetUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+		--- BLOCK #0 1-26, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.view
 		slot0 = slot0.colorUColorPicker
@@ -425,6 +439,58 @@ slot9 = function(slot0)
 		slot0 = slot0.colorUColorPicker
 		slot1 = true
 		slot0.enableValueChangedCallback = slot1
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.handleUImage
+		slot1 = self
+		slot1 = slot1.originColor
+		slot0.color = slot1
+		slot0 = self
+		slot0 = slot0.colorValueChangedCb
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 27-34, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.colorValueChangedCb
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.colorUColorPicker
+		slot3 = slot3.colorCode
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 35-35, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnBackUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.closePanel
+
+		slot0(slot2)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -442,9 +508,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.addListener = slot9
+slot8.addListener = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = nil
 	slot0.originColor = slot1
@@ -490,9 +556,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.onDestroy = slot9
+slot8.onDestroy = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -533,9 +599,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.onOpen = slot9
+slot8.onOpen = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -564,9 +630,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.refreshConsoleBarState = slot9
+slot8.refreshConsoleBarState = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -575,9 +641,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.onShow = slot9
+slot8.onShow = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -586,9 +652,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.onHide = slot9
+slot8.onHide = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.avatarScene
 	--- END OF BLOCK #0 ---
@@ -648,9 +714,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.onVisibleChange = slot9
+slot8.onVisibleChange = slot10
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

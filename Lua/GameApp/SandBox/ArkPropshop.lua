@@ -41,7 +41,7 @@ slot14 = "Common.Const.AiConst"
 slot12 = slot12(slot14)
 
 slot13 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot4 = ArkPropshop
 	slot4 = slot4.super
 	slot4 = slot4.ctor
@@ -56,6 +56,8 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	slot0.sysName = slot4
 	slot4 = 300
 	slot0.exchangeNum = slot4
+	slot4 = 3
+	slot0.maxStage = slot4
 
 	return
 	--- END OF BLOCK #0 ---
@@ -102,11 +104,34 @@ slot13 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 6-26, warpins: 1 ---
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot3 = slot2.templateId
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 9-12, warpins: 1 ---
+	slot3 = slot2.templateId
+	slot4 = 0
+	--- END OF BLOCK #2 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 13-23, warpins: 1 ---
 	slot3 = PetData
 	slot4 = slot2.templateId
 	slot3 = slot3[slot4]
@@ -114,6 +139,26 @@ slot13 = function(slot0, slot1)
 	slot0.prefabResID = slot4
 	slot4 = slot3.stage
 	slot0.stage = slot4
+	slot4 = slot0.stage
+	slot5 = slot0.maxStage
+	--- END OF BLOCK #3 ---
+
+	if slot5 < slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-25, warpins: 1 ---
+	slot4 = slot0.maxStage
+	slot0.stage = slot4
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-40, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.showConfirmMsgRaw
@@ -186,14 +231,33 @@ slot13 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 27-28, warpins: 2 ---
+	--- BLOCK #6 41-51, warpins: 3 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "ARK_PROPSHOP_NEED_A_PET"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 52-53, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -212,12 +276,23 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 3-14, warpins: 1 ---
+	--- BLOCK #1 3-28, warpins: 1 ---
 	slot0.orderId = slot2
 	slot0.rewardIndex = slot3
-	slot4 = slot0.rewardIndex
-	slot5 = slot0.stage
-	slot4 = slot4 + slot5
+	slot4 = slot3
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.interact
+	slot7 = slot5
+	slot5 = slot5.hide
+
+	slot5(slot7)
+
+	slot5 = pg
+	slot5 = slot5.me
+	slot6 = true
+	slot5.inPeep = slot6
 	slot5 = slot0.arkPropshop
 	slot7 = slot5
 	slot5 = slot5.PlayTimeline
@@ -226,12 +301,105 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 	slot5(slot7, slot8, slot9)
 
+	slot7 = slot0
+	slot5 = slot0.addTimer
+	slot8 = 10
+
+	slot9 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = self
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #2 8-12, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot0 = slot0.inPeep
+		--- END OF BLOCK #2 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 13-30, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.interact
+		slot2 = slot0
+		slot0 = slot0.show
+
+		slot0(slot2)
+
+		slot0 = pg
+		slot0 = slot0.me
+		slot1 = false
+		slot0.inPeep = slot1
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.getCurPetEntity
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 31-36, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.resumeBt
+		slot4 = AiConst
+		slot4 = slot4.PauseBtReason
+		slot4 = slot4.ArkPropshop
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 37-37, warpins: 5 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot5(slot7, slot8, slot9)
+
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 15-21, warpins: 1 ---
+	--- BLOCK #2 29-35, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot6 = slot4
@@ -246,7 +414,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 22-27, warpins: 1 ---
+	--- BLOCK #3 36-41, warpins: 1 ---
 	slot7 = slot4
 	slot5 = slot4.resumeBt
 	slot8 = AiConst
@@ -260,7 +428,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 28-28, warpins: 3 ---
+	--- BLOCK #4 42-43, warpins: 3 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -366,7 +534,20 @@ slot13 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 19-28, warpins: 2 ---
+		--- BLOCK #2 19-39, warpins: 2 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot1 = slot1.interact
+		slot3 = slot1
+		slot1 = slot1.show
+
+		slot1(slot3)
+
+		slot1 = pg
+		slot1 = slot1.me
+		slot2 = false
+		slot1.inPeep = slot2
 		slot1 = ArkGameStrengthData
 		slot2 = self
 		slot2 = slot2.stage
@@ -384,7 +565,7 @@ slot13 = function(slot0)
 		end
 
 
-		--- BLOCK #3 29-30, warpins: 1 ---
+		--- BLOCK #3 40-41, warpins: 1 ---
 		--- END OF BLOCK #3 ---
 
 		if slot1 ~= 0 then
@@ -394,7 +575,7 @@ slot13 = function(slot0)
 		end
 
 
-		--- BLOCK #4 31-38, warpins: 1 ---
+		--- BLOCK #4 42-49, warpins: 1 ---
 		slot2 = pg
 		slot2 = slot2.game
 		slot2 = slot2.dialogue
@@ -432,7 +613,7 @@ slot13 = function(slot0)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 39-39, warpins: 3 ---
+		--- BLOCK #5 50-50, warpins: 3 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -479,16 +660,58 @@ end
 slot2.onFinishExchangeCallback = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = ArkPropshop
-	slot1 = slot1.super
-	slot1 = slot1.destroy
-	slot3 = slot0
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.interact
+	slot3 = slot1
+	slot1 = slot1.show
 
 	slot1(slot3)
 
-	return
+	slot1 = pg
+	slot1 = slot1.me
+	slot2 = false
+	slot1.inPeep = slot2
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.getCurPetEntity
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 19-24, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.resumeBt
+	slot5 = AiConst
+	slot5 = slot5.PauseBtReason
+	slot5 = slot5.ArkPropshop
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 25-30, warpins: 2 ---
+	slot2 = ArkPropshop
+	slot2 = slot2.super
+	slot2 = slot2.destroy
+	slot4 = slot0
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #2 ---
 
 
 

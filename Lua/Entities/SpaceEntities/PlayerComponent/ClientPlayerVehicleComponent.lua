@@ -631,7 +631,6 @@ slot5 = function(slot0)
 	slot5(slot7)
 
 	slot1 = true
-
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
@@ -643,19 +642,41 @@ slot5 = function(slot0)
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #18 66-67, warpins: 1 ---
-	return
-
+	--- BLOCK #18 66-68, warpins: 1 ---
+	slot4 = slot0.clearVehicleSeatAppearances
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	slot4 = if slot4 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #19 68-74, warpins: 2 ---
+	--- BLOCK #19 69-71, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.clearVehicleSeatAppearances
+
+	slot4(slot6)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 72-73, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 74-81, warpins: 2 ---
 	slot4 = {}
 	slot0._inRidingMap = slot4
 	slot6 = slot0
@@ -663,8 +684,30 @@ slot5 = function(slot0)
 
 	slot4(slot6)
 
+	slot4 = slot0.clearVehicleSeatAppearances
+	--- END OF BLOCK #21 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 82-84, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.clearVehicleSeatAppearances
+
+	slot4(slot6)
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 85-86, warpins: 2 ---
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #23 ---
 
 
 

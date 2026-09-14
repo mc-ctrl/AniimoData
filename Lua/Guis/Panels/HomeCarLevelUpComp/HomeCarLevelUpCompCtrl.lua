@@ -1,4 +1,4 @@
---- BLOCK #0 1-114, warpins: 1 ---
+--- BLOCK #0 1-108, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -69,15 +69,6 @@ slot20 = slot20(slot22)
 slot21 = require
 slot23 = "Data.item_source_data"
 slot21 = slot21(slot23)
-slot22 = {
-	LackCoin = 6,
-	LackItem = 5,
-	LackCondition = 4,
-	CanNotUpgraded = 3,
-	IsUpgraded = 2,
-	Normal = 1
-}
-slot4.UpgradeMode = slot22
 slot22 = {}
 slot4.messages = slot22
 
@@ -184,7 +175,7 @@ end
 slot4.onCreate = slot22
 
 slot22 = function(slot0)
-	--- BLOCK #0 1-88, warpins: 1 ---
+	--- BLOCK #0 1-92, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -393,7 +384,7 @@ slot22 = function(slot0)
 		slot5 = slot0.tabId
 
 		slot6 = function()
-			--- BLOCK #0 1-27, warpins: 1 ---
+			--- BLOCK #0 1-23, warpins: 1 ---
 			slot0 = self
 			slot1 = HomeLandUtils
 			slot1 = slot1.getHomeCarInfo
@@ -403,13 +394,9 @@ slot22 = function(slot0)
 			slot0 = slot0.view
 			slot0 = slot0.listItemUList
 			slot2 = slot0
-			slot0 = slot0.RefreshElement
-			slot3 = self
-			slot3 = slot3.view
-			slot3 = slot3.listItemUList
-			slot3 = slot3.selectedIndex
+			slot0 = slot0.RefreshList
 
-			slot0(slot2, slot3)
+			slot0(slot2)
 
 			slot0 = self
 			slot0 = slot0.view
@@ -430,7 +417,7 @@ slot22 = function(slot0)
 			end
 
 
-			--- BLOCK #1 28-30, warpins: 1 ---
+			--- BLOCK #1 24-26, warpins: 1 ---
 			slot4 = slot1
 			slot2 = slot1.OnClickSimulate
 
@@ -441,7 +428,7 @@ slot22 = function(slot0)
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 31-52, warpins: 2 ---
+			--- BLOCK #2 27-48, warpins: 2 ---
 			slot2 = self
 			slot2 = slot2.view
 			slot2 = slot2.listCurrencyUList
@@ -660,6 +647,35 @@ slot22 = function(slot0)
 
 	slot1.luaRenderItem = slot2
 	slot1 = slot0.view
+	slot1 = slot1.listUnlockUList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-15, warpins: 1 ---
+		slot5 = slot0
+		slot3 = slot0.GetComponent
+		slot6 = "ObjectReference"
+		slot3 = slot3(slot5, slot6)
+		slot6 = slot3
+		slot4 = slot3.GetRefValue
+		slot7 = "txtNameUSDFText"
+		slot4 = slot4(slot6, slot7)
+		slot5 = LuaUIUtils
+		slot5 = slot5.customSetText
+		slot7 = slot4
+		slot8 = slot2.name
+		slot9 = true
+
+		slot5(slot7, slot8, slot9)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.view
 	slot1 = slot1.listCostUList
 
 	slot2 = function(slot0, slot1, slot2)
@@ -726,54 +742,18 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 42-44, warpins: 3 ---
-		slot7 = slot2.num
-		--- END OF BLOCK #3 ---
-
-		if slot7 <= slot6 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 45-55, warpins: 1 ---
-		slot7 = ClientTextUtils
-		slot7 = slot7.setText
+		--- BLOCK #3 42-60, warpins: 3 ---
+		slot7 = LuaUIUtils
+		slot7 = slot7.renderConsumeText
 		slot9 = slot5
-		slot10 = string
-		slot10 = slot10.format
-		slot12 = "<color=#bdf561>%s</color>/%s"
-		slot13 = slot6
-		slot14 = slot2.num
-		MULTRES = slot10(slot12, slot13, slot14)
+		slot10 = slot6
+		slot11 = slot2.num
+		slot12 = UIConst
+		slot12 = slot12.ITEM_STATE
+		slot12 = slot12.FULL
 
-		slot7(slot9, MULTRES)
+		slot7(slot9, slot10, slot11, slot12)
 
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-		--- BLOCK #5 56-65, warpins: 1 ---
-		slot7 = ClientTextUtils
-		slot7 = slot7.setText
-		slot9 = slot5
-		slot10 = string
-		slot10 = slot10.format
-		slot12 = "<color=#f67574>%s</color>/%s"
-		slot13 = slot6
-		slot14 = slot2.num
-		MULTRES = slot10(slot12, slot13, slot14)
-
-		slot7(slot9, MULTRES)
-
-		--- END OF BLOCK #5 ---
-
-		FLOW; TARGET BLOCK #6
-
-
-		--- BLOCK #6 66-75, warpins: 2 ---
 		slot7 = LuaUIUtils
 		slot7 = slot7.getIconByItemId
 		slot9 = slot2.id
@@ -782,16 +762,16 @@ slot22 = function(slot0)
 		slot7 = ItemData
 		slot8 = slot2.id
 		slot7 = slot7[slot8]
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #3 ---
 
 		slot7 = if slot7 then
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #4
 		else
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #7 76-80, warpins: 1 ---
+		--- BLOCK #4 61-65, warpins: 1 ---
 		slot10 = slot0
 		slot8 = slot0.TryChangePage
 		slot11 = "Quality"
@@ -799,12 +779,12 @@ slot22 = function(slot0)
 
 		slot8(slot10, slot11, slot12)
 
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #8
+		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #8 81-89, warpins: 2 ---
+		--- BLOCK #5 66-74, warpins: 2 ---
 		slot10 = slot0
 		slot8 = slot0.TryChangePage
 		slot11 = "State"
@@ -821,7 +801,10 @@ slot22 = function(slot0)
 			slot0 = slot0.open
 			slot3 = UIConst
 			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-			slot4 = {}
+			slot4 = {
+				padding = 8,
+				autoHor = true
+			}
 			slot5 = data
 			slot5 = slot5.id
 			slot4.id = slot5
@@ -843,7 +826,7 @@ slot22 = function(slot0)
 		slot0.luaClick = slot8
 
 		return
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -1040,7 +1023,7 @@ slot22 = function(slot0)
 	slot1 = slot1.listItemUList
 
 	slot2 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-32, warpins: 1 ---
+		--- BLOCK #0 1-36, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -1057,150 +1040,211 @@ slot22 = function(slot0)
 		slot6 = slot3.GetRefValue
 		slot9 = "levelText"
 		slot6 = slot6(slot8, slot9)
-		slot9 = slot5
-		slot7 = slot5.SetActive
-		slot10 = false
+		slot9 = slot3
+		slot7 = slot3.GetRefValue
+		slot10 = "lockText"
+		slot7 = slot7(slot9, slot10)
+		slot10 = slot5
+		slot8 = slot5.SetActive
+		slot11 = false
 
-		slot7(slot9, slot10)
+		slot8(slot10, slot11)
 
-		slot7 = CS
-		slot7 = slot7.XGUI
-		slot7 = slot7.EButtonType
-		slot7 = slot7.Radio
-		slot0.buttonType = slot7
-		slot7 = self
-		slot7 = slot7.homeCarBaseInfo
-		slot7 = slot7.carCompsLevel
-		slot8 = slot2.tabId
-		slot7 = slot7[slot8]
+		slot8 = CS
+		slot8 = slot8.XGUI
+		slot8 = slot8.EButtonType
+		slot8 = slot8.Radio
+		slot0.buttonType = slot8
+		slot8 = self
+		slot8 = slot8.homeCarBaseInfo
+		slot8 = slot8.carCompsLevel
+		slot9 = slot2.tabId
+		slot8 = slot8[slot9]
 		--- END OF BLOCK #0 ---
 
-		slot7 = if not slot7 then
+		slot8 = if not slot8 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 33-33, warpins: 1 ---
-		slot7 = 0
+		--- BLOCK #1 37-37, warpins: 1 ---
+		slot8 = 0
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 34-45, warpins: 2 ---
-		slot8 = self
-		slot8 = slot8.model
-		slot10 = slot8
-		slot8 = slot8.getHomeCarComponentMaxLevel
-		slot11 = slot2.tabId
-		slot8 = slot8(slot10, slot11)
-		slot11 = slot0
-		slot9 = slot0.TryChangePage
-		slot12 = "state"
-		slot13 = 0
+		--- BLOCK #2 38-68, warpins: 2 ---
+		slot9 = self
+		slot9 = slot9.model
+		slot11 = slot9
+		slot9 = slot9.getHomeCarComponentMaxLevel
+		slot12 = slot2.tabId
+		slot9 = slot9(slot11, slot12)
+		slot10 = string
+		slot10 = slot10.format
+		slot12 = RedDotConst
+		slot12 = slot12.RedDotPath
+		slot12 = slot12.HOMECAR_COMPONENT_UPGRADE_ITEM
+		slot13 = slot2.tabId
+		slot10 = slot10(slot12, slot13)
+		slot11 = self
+		slot11 = slot11.model
+		slot13 = slot11
+		slot11 = slot11.redDot_GetComponentUpgradeState
+		slot14 = slot2.tabId
+		slot15 = self
+		slot15 = slot15.homeCarBaseInfo
+		slot11 = slot11(slot13, slot14, slot15)
+		slot12 = pg
+		slot12 = slot12.global
+		slot12 = slot12.setRedDot
+		slot14 = slot10
+		slot15 = slot0
+		slot16 = RedDotConst
+		slot16 = slot16.RedDotStyle
+		slot16 = slot16.NONE
 		--- END OF BLOCK #2 ---
 
-		if slot7 > slot13 then
+		if slot11 == slot16 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 46-47, warpins: 1 ---
-		slot13 = 0
+		--- BLOCK #3 69-70, warpins: 1 ---
+		slot16 = false
 		--- END OF BLOCK #3 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #4 48-48, warpins: 1 ---
-		slot13 = 2
-
+		--- BLOCK #4 71-71, warpins: 1 ---
+		slot16 = true
 		--- END OF BLOCK #4 ---
 
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 49-52, warpins: 2 ---
-		slot9(slot11, slot12, slot13)
+		--- BLOCK #5 72-79, warpins: 2 ---
+		slot17 = slot11
 
-		slot9 = slot2.partIcon
+		slot12(slot14, slot15, slot16, slot17)
+
+		slot14 = slot0
+		slot12 = slot0.TryChangePage
+		slot15 = "state"
+		slot16 = 0
 		--- END OF BLOCK #5 ---
 
-		slot9 = if not slot9 then
+		if slot8 > slot16 then
 		JUMP TO BLOCK #6
 		else
 		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #6 53-54, warpins: 1 ---
-		slot9 = AddressDataConst
-		slot9 = slot9.UI_HOME_PLOT_NORMAL_ICON
+		--- BLOCK #6 80-81, warpins: 1 ---
+		slot16 = 0
 		--- END OF BLOCK #6 ---
 
-		FLOW; TARGET BLOCK #7
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-		--- BLOCK #7 55-57, warpins: 2 ---
-		slot4.url = slot9
+		--- BLOCK #7 82-82, warpins: 1 ---
+		slot16 = 2
+
 		--- END OF BLOCK #7 ---
 
-		if slot7 ~= 0 then
-		JUMP TO BLOCK #8
-		else
-		JUMP TO BLOCK #9
-		end
+		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 58-59, warpins: 1 ---
+		--- BLOCK #8 83-86, warpins: 2 ---
+		slot12(slot14, slot15, slot16)
+
+		slot12 = slot2.partIcon
 		--- END OF BLOCK #8 ---
 
-		if slot8 == 1 then
+		slot12 = if not slot12 then
 		JUMP TO BLOCK #9
 		else
 		JUMP TO BLOCK #10
 		end
 
 
-		--- BLOCK #9 60-64, warpins: 2 ---
-		slot11 = slot6
-		slot9 = slot6.SetActive
-		slot12 = false
-
-		slot9(slot11, slot12)
-
+		--- BLOCK #9 87-88, warpins: 1 ---
+		slot12 = AddressDataConst
+		slot12 = slot12.UI_HOME_PLOT_NORMAL_ICON
 		--- END OF BLOCK #9 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #11
+		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 65-75, warpins: 1 ---
-		slot11 = slot6
-		slot9 = slot6.SetActive
-		slot12 = true
-
-		slot9(slot11, slot12)
-
-		slot9 = ClientTextUtils
-		slot9 = slot9.setText
-		slot11 = slot6
-		slot12 = "Lv."
-		slot13 = slot7
-		slot12 = slot12 .. slot13
-
-		slot9(slot11, slot12)
-
+		--- BLOCK #10 89-91, warpins: 2 ---
+		slot4.url = slot12
 		--- END OF BLOCK #10 ---
 
-		FLOW; TARGET BLOCK #11
+		if slot8 ~= 0 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
 
 
-		--- BLOCK #11 76-79, warpins: 2 ---
-		slot9 = function()
+		--- BLOCK #11 92-93, warpins: 1 ---
+		--- END OF BLOCK #11 ---
+
+		if slot9 == 1 then
+		JUMP TO BLOCK #12
+		else
+		JUMP TO BLOCK #13
+		end
+
+
+		--- BLOCK #12 94-98, warpins: 2 ---
+		slot14 = slot6
+		slot12 = slot6.SetActive
+		slot15 = false
+
+		slot12(slot14, slot15)
+
+		--- END OF BLOCK #12 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+		--- BLOCK #13 99-109, warpins: 1 ---
+		slot14 = slot6
+		slot12 = slot6.SetActive
+		slot15 = true
+
+		slot12(slot14, slot15)
+
+		slot12 = ClientTextUtils
+		slot12 = slot12.setText
+		slot14 = slot6
+		slot15 = "Lv."
+		slot16 = slot8
+		slot15 = slot15 .. slot16
+
+		slot12(slot14, slot15)
+
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 110-117, warpins: 2 ---
+		slot14 = slot7
+		slot12 = slot7.SetActive
+		slot15 = false
+
+		slot12(slot14, slot15)
+
+		slot12 = function()
 			--- BLOCK #0 1-21, warpins: 1 ---
 			slot0 = math
 			slot0 = slot0.min
@@ -1470,10 +1514,10 @@ slot22 = function(slot0)
 
 		end
 
-		slot0.luaClick = slot9
+		slot0.luaClick = slot12
 
 		return
-		--- END OF BLOCK #11 ---
+		--- END OF BLOCK #14 ---
 
 
 
@@ -1746,7 +1790,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 89-98, warpins: 1 ---
+	--- BLOCK #1 93-102, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
 	slot1 = slot1.Navigation
@@ -1778,7 +1822,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 99-100, warpins: 2 ---
+	--- BLOCK #2 103-104, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -2320,413 +2364,7 @@ end
 slot4.getLevelListInfo = slot22
 
 slot22 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot1.levelId
-	--- END OF BLOCK #0 ---
-
-	if slot3 <= slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot3 = HomeCarLevelUpCompCtrl
-	slot3 = slot3.UpgradeMode
-	slot3 = slot3.IsUpgraded
-
-	return slot3
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #2 9-13, warpins: 1 ---
-	slot3 = slot1.levelId
-	slot3 = slot3 - slot2
-	slot4 = 1
-	--- END OF BLOCK #2 ---
-
-	if slot3 > slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 14-17, warpins: 1 ---
-	slot3 = HomeCarLevelUpCompCtrl
-	slot3 = slot3.UpgradeMode
-	slot3 = slot3.CanNotUpgraded
-
-	return slot3
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 18-21, warpins: 3 ---
-	slot3 = 1
-	slot4 = 5
-	slot5 = 1
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 22-27, warpins: 2 ---
-	slot7 = "upgradeConditions"
-	slot8 = slot6
-	slot7 = slot7 .. slot8
-	slot7 = slot1[slot7]
-	--- END OF BLOCK #5 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 28-39, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.triggerMap
-	slot9 = slot7
-	slot7 = slot7.isCompleteOrMeetCondition
-	slot10 = "upgradeConditions"
-	slot11 = slot6
-	slot10 = slot10 .. slot11
-	slot10 = slot1[slot10]
-	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #6 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 40-43, warpins: 1 ---
-	slot8 = HomeCarLevelUpCompCtrl
-	slot8 = slot8.UpgradeMode
-	slot8 = slot8.LackCondition
-
-	return slot8
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 44-44, warpins: 3 ---
-	--- END OF BLOCK #8 ---
-
-	for slot6=slot3, slot4, slot5
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #9
-
-	--- BLOCK #9 45-48, warpins: 1 ---
-	slot3 = ipairs
-	slot5 = slot1.unlockCostItem
-	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #10 49-62, warpins: 1 ---
-	slot8 = ItemUtils
-	slot8 = slot8.getItemCountById
-	slot10 = pg
-	slot10 = slot10.me
-	slot11 = slot7[1]
-	slot8 = slot8(slot10, slot11)
-	slot9 = pg
-	slot9 = slot9.me
-	slot9 = slot9.space
-	slot11 = slot9
-	slot9 = slot9.isHomeland
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #10 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #11 63-72, warpins: 1 ---
-	slot9 = pg
-	slot9 = slot9.me
-	slot9 = slot9.space
-	slot11 = slot9
-	slot9 = slot9.isSelfHomeland
-	slot12 = pg
-	slot12 = slot12.me
-	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #11 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 73-77, warpins: 1 ---
-	slot9 = ClientUtils
-	slot9 = slot9.getHomelandItemCountById
-	slot11 = slot7[1]
-	slot9 = slot9(slot11)
-	slot8 = slot8 + slot9
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 78-80, warpins: 3 ---
-	slot9 = slot7[2]
-	--- END OF BLOCK #13 ---
-
-	if slot8 < slot9 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 81-84, warpins: 1 ---
-	slot9 = HomeCarLevelUpCompCtrl
-	slot9 = slot9.UpgradeMode
-	slot9 = slot9.LackItem
-
-	return slot9
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 85-86, warpins: 3 ---
-	--- END OF BLOCK #15 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #16
-
-
-	--- BLOCK #16 87-89, warpins: 1 ---
-	slot3 = slot1.unlockCostCoin
-	--- END OF BLOCK #16 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #17 90-100, warpins: 1 ---
-	slot3 = ItemUtils
-	slot3 = slot3.getItemCountById
-	slot5 = pg
-	slot5 = slot5.me
-	slot6 = slot1.unlockCostCoin
-	slot6 = slot6[1]
-	slot3 = slot3(slot5, slot6)
-	slot4 = slot1.unlockCostCoin
-	slot4 = slot4[2]
-	--- END OF BLOCK #17 ---
-
-	if slot3 < slot4 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 101-104, warpins: 1 ---
-	slot4 = HomeCarLevelUpCompCtrl
-	slot4 = slot4.UpgradeMode
-	slot4 = slot4.LackCoin
-
-	return slot4
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 105-108, warpins: 3 ---
-	slot3 = HomeCarLevelUpCompCtrl
-	slot3 = slot3.UpgradeMode
-	slot3 = slot3.Normal
-
-	return slot3
-	--- END OF BLOCK #19 ---
-
-
-
-end
-
-slot4.getCanUpgradeMode = slot22
-
-slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.view
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot2 = IsNil
-	slot4 = slot0.view
-	slot4 = slot4.txtDetailUSDFText
-	slot2 = slot2(slot4)
-
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 10-10, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 11-22, warpins: 2 ---
-	slot2 = slot0.view
-	slot2 = slot2.txtDetailUSDFText
-	slot2 = slot2.transform
-	slot4 = slot2
-	slot2 = slot2.Find
-	slot5 = "BtnText"
-	slot2 = slot2(slot4, slot5)
-	slot3 = IsNil
-	slot5 = slot2
-	slot3 = slot3(slot5)
-
-	--- END OF BLOCK #3 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 23-23, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 24-36, warpins: 2 ---
-	slot5 = slot2
-	slot3 = slot2.GetComponent
-	slot6 = typeof
-	slot8 = CS
-	slot8 = slot8.XGUI
-	slot8 = slot8.UButton
-	MULTRES = slot6(slot8)
-	slot3 = slot3(slot5, MULTRES)
-	slot4 = IsNil
-	slot6 = slot3
-	slot4 = slot4(slot6)
-
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 37-37, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 38-39, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	slot4 = if slot1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #8 40-48, warpins: 1 ---
-	slot4 = string
-	slot4 = slot4.find
-	slot6 = slot1
-	slot7 = "<link="
-	slot8 = 1
-	slot9 = true
-	slot4 = slot4(slot6, slot7, slot8, slot9)
-	--- END OF BLOCK #8 ---
-
-	if slot4 == nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 49-50, warpins: 1 ---
-	slot4 = false
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 51-51, warpins: 1 ---
-	slot4 = true
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 52-54, warpins: 3 ---
-	slot5 = not slot4
-	slot3.navForceNonInteractable = slot5
-
-	return
-	--- END OF BLOCK #11 ---
-
-
-
-end
-
-slot4.refreshTxtDetailNavState = slot22
-
-slot22 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-56, warpins: 1 ---
+	--- BLOCK #0 1-30, warpins: 1 ---
 	slot3 = ClientTextUtils
 	slot3 = slot3.setText
 	slot5 = slot0.view
@@ -2748,7 +2386,7 @@ slot22 = function(slot0, slot1, slot2)
 	slot3 = ClientTextUtils
 	slot3 = slot3.setText
 	slot5 = slot0.view
-	slot5 = slot5.textDescUSDFText
+	slot5 = slot5.textDetailUSDFText
 	slot6 = pg
 	slot6 = slot6.getLocalizationText
 	slot8 = slot1.detailInfo
@@ -2756,215 +2394,162 @@ slot22 = function(slot0, slot1, slot2)
 
 	slot3(slot5, MULTRES)
 
-	slot3 = slot0.view
-	slot3 = slot3.textSubDetailUSDFText
-	slot5 = slot3
-	slot3 = slot3.SetActive
-	slot6 = false
-
-	slot3(slot5, slot6)
-
-	slot3 = pg
-	slot3 = slot3.getLocalizationText
-	slot5 = slot1.functionUnlockDes
-	slot3 = slot3(slot5)
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot0.view
-	slot6 = slot6.txtDetailUSDFText
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.txtDetailUSDFText
-	slot5 = true
-	slot4.enabledHyperlink = slot5
-	slot4 = slot0.view
-	slot4 = slot4.txtDetailUSDFText
-
-	slot5 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot3 = LuaUIUtils
-		slot3 = slot3.clickHyperText
-		slot5 = slot0
-		slot6 = slot1
-		slot7 = slot2
-
-		slot3(slot5, slot6, slot7)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot4.luaOnHyperlinkClick = slot5
-	slot6 = slot0
-	slot4 = slot0.refreshTxtDetailNavState
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
-	slot4 = {}
-	slot5 = 1
-	slot6 = 5
-	slot7 = 1
+	slot3 = {}
+	slot4 = pg
+	slot4 = slot4.getLocalizationText
+	slot6 = slot1.functionUnlockDes
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	FLOW; TARGET BLOCK #1
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #1 57-62, warpins: 2 ---
-	slot9 = "upgradeConditions"
-	slot10 = slot8
-	slot9 = slot9 .. slot10
-	slot9 = slot1[slot9]
+	--- BLOCK #1 31-32, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot9 = if slot9 then
+	if slot4 ~= "" then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 63-68, warpins: 1 ---
-	slot9 = "upgradeConditionsDes"
-	slot10 = slot8
-	slot9 = slot9 .. slot10
-	slot9 = slot1[slot9]
+	--- BLOCK #2 33-41, warpins: 1 ---
+	slot5 = string
+	slot5 = slot5.split
+	slot7 = slot4
+	slot8 = "\n"
+	slot5 = slot5(slot7, slot8)
+	slot6 = ipairs
+	slot8 = slot5
+	slot6, slot7, slot8 = slot6(slot8)
 	--- END OF BLOCK #2 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 69-88, warpins: 1 ---
-	slot9 = table
-	slot9 = slot9.insert
-	slot11 = slot4
-	slot12 = {}
-	slot13 = "upgradeConditions"
-	slot14 = slot8
-	slot13 = slot13 .. slot14
-	slot13 = slot1[slot13]
-	slot12.upgradeConditions = slot13
-	slot13 = "upgradeConditionsDes"
-	slot14 = slot8
-	slot13 = slot13 .. slot14
-	slot13 = slot1[slot13]
-	slot12.upgradeConditionsDes = slot13
-	slot13 = "source"
-	slot14 = slot8
-	slot13 = slot13 .. slot14
-	slot13 = slot1[slot13]
-	slot12.sourceId = slot13
+	--- BLOCK #3 42-47, warpins: 1 ---
+	slot11 = table
+	slot11 = slot11.insert
+	slot13 = slot3
+	slot14 = {}
+	slot14.name = slot10
 
-	slot9(slot11, slot12)
+	slot11(slot13, slot14)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 89-89, warpins: 3 ---
+	--- BLOCK #4 48-49, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	for slot8=slot5, slot6, slot7
-	LOOP BLOCK #1
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #3
 	GO OUT TO BLOCK #5
 
-	--- BLOCK #5 90-93, warpins: 1 ---
-	slot5 = #slot4
-	slot6 = 0
+
+	--- BLOCK #5 50-60, warpins: 3 ---
+	slot5 = slot0.view
+	slot5 = slot5.listUnlockUList
+	slot7 = slot5
+	slot5 = slot5.SetList
+	slot8 = slot3
+
+	slot5(slot7, slot8)
+
+	slot5 = {}
+	slot6 = 1
+	slot7 = 5
+	slot8 = 1
 	--- END OF BLOCK #5 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #6
-	else
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 61-66, warpins: 2 ---
+	slot10 = "upgradeConditions"
+	slot11 = slot9
+	slot10 = slot10 .. slot11
+	slot10 = slot1[slot10]
+	--- END OF BLOCK #6 ---
+
+	slot10 = if slot10 then
 	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 94-106, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.listUList
-	slot7 = slot5
-	slot5 = slot5.SetList
-	slot8 = slot4
-
-	slot5(slot7, slot8)
-
-	slot5 = slot0.view
-	slot5 = slot5.contentUpgradeUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = true
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 107-112, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.contentUpgradeUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = false
-
-	slot5(slot7, slot8)
-
+	--- BLOCK #7 67-72, warpins: 1 ---
+	slot10 = "upgradeConditionsDes"
+	slot11 = slot9
+	slot10 = slot10 .. slot11
+	slot10 = slot1[slot10]
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot10 = if slot10 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 113-117, warpins: 2 ---
-	slot5 = {}
-	slot6 = ipairs
-	slot8 = slot1.unlockCostItem
-	slot6, slot7, slot8 = slot6(slot8)
+	--- BLOCK #8 73-92, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot5
+	slot13 = {}
+	slot14 = "upgradeConditions"
+	slot15 = slot9
+	slot14 = slot14 .. slot15
+	slot14 = slot1[slot14]
+	slot13.upgradeConditions = slot14
+	slot14 = "upgradeConditionsDes"
+	slot15 = slot9
+	slot14 = slot14 .. slot15
+	slot14 = slot1[slot14]
+	slot13.upgradeConditionsDes = slot14
+	slot14 = "source"
+	slot15 = slot9
+	slot14 = slot14 .. slot15
+	slot14 = slot1[slot14]
+	slot13.sourceId = slot14
+
+	slot10(slot12, slot13)
+
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 118-126, warpins: 1 ---
-	slot11 = table
-	slot11 = slot11.insert
-	slot13 = slot5
-	slot14 = {}
-	slot15 = slot10[1]
-	slot14.id = slot15
-	slot15 = slot10[2]
-	slot14.num = slot15
-
-	slot11(slot13, slot14)
-
+	--- BLOCK #9 93-93, warpins: 3 ---
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	for slot9=slot6, slot7, slot8
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #10
 
-
-	--- BLOCK #10 127-128, warpins: 2 ---
+	--- BLOCK #10 94-97, warpins: 1 ---
+	slot6 = #slot5
+	slot7 = 0
 	--- END OF BLOCK #10 ---
 
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #9
-	GO OUT TO BLOCK #11
+	if slot6 > slot7 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 129-142, warpins: 1 ---
+	--- BLOCK #11 98-110, warpins: 1 ---
 	slot6 = slot0.view
-	slot6 = slot6.listCostUList
+	slot6 = slot6.listUList
 	slot8 = slot6
 	slot6 = slot6.SetList
 	slot9 = slot5
@@ -2972,218 +2557,73 @@ slot22 = function(slot0, slot1, slot2)
 	slot6(slot8, slot9)
 
 	slot6 = slot0.view
-	slot6 = slot6.costItemUWidget
+	slot6 = slot6.contentUpgradeUWidget
 	slot8 = slot6
 	slot6 = slot6.SetActive
-	slot9 = #slot5
-	slot10 = 0
-	--- END OF BLOCK #11 ---
-
-	if slot9 <= slot10 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 143-144, warpins: 1 ---
-	slot9 = false
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 145-145, warpins: 1 ---
 	slot9 = true
 
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 146-149, warpins: 2 ---
 	slot6(slot8, slot9)
 
-	slot6 = slot1.unlockCostCoin
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 111-116, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.contentUpgradeUWidget
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 117-121, warpins: 2 ---
+	slot6 = {}
+	slot7 = ipairs
+	slot9 = slot1.unlockItem
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 122-130, warpins: 1 ---
+	slot12 = table
+	slot12 = slot12.insert
+	slot14 = slot6
+	slot15 = {}
+	slot16 = slot11[1]
+	slot15.id = slot16
+	slot16 = slot11[2]
+	slot15.num = slot16
+
+	slot12(slot14, slot15)
+
 	--- END OF BLOCK #14 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 150-167, warpins: 1 ---
-	slot6 = {}
-	slot7 = table
-	slot7 = slot7.insert
-	slot9 = slot6
-	slot10 = {}
-	slot11 = slot1.unlockCostCoin
-	slot11 = slot11[1]
-	slot10.itemId = slot11
-	slot11 = slot1.unlockCostCoin
-	slot11 = slot11[2]
-	slot10.itemCount = slot11
+	--- BLOCK #15 131-132, warpins: 2 ---
+	--- END OF BLOCK #15 ---
 
-	slot7(slot9, slot10)
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #16
 
+
+	--- BLOCK #16 133-146, warpins: 1 ---
 	slot7 = slot0.view
-	slot7 = slot7.costCoinListUList
+	slot7 = slot7.listCostUList
 	slot9 = slot7
 	slot7 = slot7.SetList
 	slot10 = slot6
-
-	slot7(slot9, slot10)
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 168-216, warpins: 2 ---
-	slot6 = slot0.view
-	slot6 = slot6.btnComfirmUButton
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = true
-
-	slot6(slot8, slot9)
-
-	slot6 = slot0.view
-	slot6 = slot6.btnReadyUWidget
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = false
-
-	slot6(slot8, slot9)
-
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.view
-	slot8 = slot8.txtNameUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "UPGRADE"
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	slot6 = slot0.view
-	slot6 = slot6.btnComfirmUButton
-	slot7 = false
-	slot6.interactable = slot7
-	slot6 = false
-	slot0.lackItem = slot6
-	slot6 = slot0.view
-	slot6 = slot6.costCoinListUList
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = true
-
-	slot6(slot8, slot9)
-
-	slot6 = slot0.view
-	slot6 = slot6.textNoFillUSDFText
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = false
-
-	slot6(slot8, slot9)
-
-	slot8 = slot0
-	slot6 = slot0.getCanUpgradeMode
-	slot9 = slot1
-	slot10 = slot2
-	slot6 = slot6(slot8, slot9, slot10)
-	slot7 = HomeCarLevelUpCompCtrl
-	slot7 = slot7.UpgradeMode
-	slot7 = slot7.Normal
-	--- END OF BLOCK #16 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 217-221, warpins: 1 ---
-	slot7 = slot0.view
-	slot7 = slot7.btnComfirmUButton
-	slot8 = true
-	slot7.interactable = slot8
-	--- END OF BLOCK #17 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
-
-
-	--- BLOCK #18 222-226, warpins: 1 ---
-	slot7 = HomeCarLevelUpCompCtrl
-	slot7 = slot7.UpgradeMode
-	slot7 = slot7.CanNotUpgraded
-	--- END OF BLOCK #18 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 227-236, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.view
-	slot9 = slot9.txtNameUSDFText
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "HOMCAR_NOTMEET_CONDITION"
-	MULTRES = slot10(slot12)
-
-	slot7(slot9, MULTRES)
-
-	--- END OF BLOCK #19 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
-
-
-	--- BLOCK #20 237-241, warpins: 1 ---
-	slot7 = HomeCarLevelUpCompCtrl
-	slot7 = slot7.UpgradeMode
-	slot7 = slot7.IsUpgraded
-	--- END OF BLOCK #20 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 242-275, warpins: 1 ---
-	slot7 = slot0.view
-	slot7 = slot7.btnComfirmUButton
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = false
-
-	slot7(slot9, slot10)
-
-	slot7 = slot0.view
-	slot7 = slot7.btnReadyUWidget
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = true
-
-	slot7(slot9, slot10)
-
-	slot7 = slot0.view
-	slot7 = slot7.costCoinListUList
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = false
 
 	slot7(slot9, slot10)
 
@@ -3191,6 +2631,86 @@ slot22 = function(slot0, slot1, slot2)
 	slot7 = slot7.costItemUWidget
 	slot9 = slot7
 	slot7 = slot7.SetActive
+	slot10 = #slot6
+	slot11 = 0
+	--- END OF BLOCK #16 ---
+
+	if slot10 <= slot11 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 147-148, warpins: 1 ---
+	slot10 = false
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 149-149, warpins: 1 ---
+	slot10 = true
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 150-153, warpins: 2 ---
+	slot7(slot9, slot10)
+
+	slot7 = slot1.unlockCost
+	--- END OF BLOCK #19 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 154-171, warpins: 1 ---
+	slot7 = {}
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot7
+	slot11 = {}
+	slot12 = slot1.unlockCost
+	slot12 = slot12[1]
+	slot11.itemId = slot12
+	slot12 = slot1.unlockCost
+	slot12 = slot12[2]
+	slot11.itemCount = slot12
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.view
+	slot8 = slot8.costCoinListUList
+	slot10 = slot8
+	slot8 = slot8.SetList
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 172-222, warpins: 2 ---
+	slot7 = slot0.view
+	slot7 = slot7.btnComfirmUButton
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = true
+
+	slot7(slot9, slot10)
+
+	slot7 = slot0.view
+	slot7 = slot7.btnReadyUWidget
+	slot9 = slot7
+	slot7 = slot7.SetActive
 	slot10 = false
 
 	slot7(slot9, slot10)
@@ -3201,140 +2721,268 @@ slot22 = function(slot0, slot1, slot2)
 	slot9 = slot9.txtNameUSDFText
 	slot10 = pg
 	slot10 = slot10.getGameString
-	slot12 = "HOMCAR_IS_UPGRADED"
+	slot12 = "UPGRADE"
 	MULTRES = slot10(slot12)
 
 	slot7(slot9, MULTRES)
 
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
-
-
-	--- BLOCK #22 276-280, warpins: 1 ---
-	slot7 = HomeCarLevelUpCompCtrl
-	slot7 = slot7.UpgradeMode
-	slot7 = slot7.LackCondition
-	--- END OF BLOCK #22 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 281-290, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.view
-	slot9 = slot9.txtNameUSDFText
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "HOMCAR_NOTMEET_CONDITION"
-	MULTRES = slot10(slot12)
-
-	slot7(slot9, MULTRES)
-
-	--- END OF BLOCK #23 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
-
-
-	--- BLOCK #24 291-295, warpins: 1 ---
-	slot7 = HomeCarLevelUpCompCtrl
-	slot7 = slot7.UpgradeMode
-	slot7 = slot7.LackCoin
-	--- END OF BLOCK #24 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 296-296, warpins: 1 ---
-	--- END OF BLOCK #25 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
-
-
-	--- BLOCK #26 297-301, warpins: 1 ---
-	slot7 = HomeCarLevelUpCompCtrl
-	slot7 = slot7.UpgradeMode
-	slot7 = slot7.LackItem
-	--- END OF BLOCK #26 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 302-307, warpins: 1 ---
 	slot7 = slot0.view
 	slot7 = slot7.btnComfirmUButton
-	slot8 = true
+	slot8 = false
 	slot7.interactable = slot8
-	slot7 = true
+	slot7 = false
 	slot0.lackItem = slot7
-	--- END OF BLOCK #27 ---
+	slot7 = slot0.view
+	slot7 = slot7.costCoinListUList
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = true
 
-	FLOW; TARGET BLOCK #28
+	slot7(slot9, slot10)
 
+	slot7 = slot0.view
+	slot7 = slot7.textNoFillUSDFText
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = false
 
-	--- BLOCK #28 308-309, warpins: 7 ---
-	--- END OF BLOCK #28 ---
+	slot7(slot9, slot10)
 
-	if slot2 == 0 then
-	JUMP TO BLOCK #29
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.getCanUpgradeMode
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot1.levelId
+	slot7 = slot7(slot9, slot10, slot11, slot12)
+	slot8 = slot0.model
+	slot8 = slot8.UpgradeMode
+	slot8 = slot8.Normal
+	--- END OF BLOCK #21 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #29 310-318, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.view
-	slot9 = slot9.txtNameUSDFText
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "ACCESSORY_UNLOCK"
-	MULTRES = slot10(slot12)
+	--- BLOCK #22 223-227, warpins: 1 ---
+	slot8 = slot0.view
+	slot8 = slot8.btnComfirmUButton
+	slot9 = true
+	slot8.interactable = slot9
+	--- END OF BLOCK #22 ---
 
-	slot7(slot9, MULTRES)
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
+
+	--- BLOCK #23 228-232, warpins: 1 ---
+	slot8 = slot0.model
+	slot8 = slot8.UpgradeMode
+	slot8 = slot8.CanNotUpgraded
+	--- END OF BLOCK #23 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 233-242, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.view
+	slot10 = slot10.txtNameUSDFText
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "HOMCAR_NOTMEET_CONDITION"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
+
+
+	--- BLOCK #25 243-247, warpins: 1 ---
+	slot8 = slot0.model
+	slot8 = slot8.UpgradeMode
+	slot8 = slot8.IsUpgraded
+	--- END OF BLOCK #25 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 248-281, warpins: 1 ---
+	slot8 = slot0.view
+	slot8 = slot8.btnComfirmUButton
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = false
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.view
+	slot8 = slot8.btnReadyUWidget
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = true
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.view
+	slot8 = slot8.costCoinListUList
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = false
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.view
+	slot8 = slot8.costItemUWidget
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = false
+
+	slot8(slot10, slot11)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.view
+	slot10 = slot10.txtNameUSDFText
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "HOMCAR_IS_UPGRADED"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
+
+
+	--- BLOCK #27 282-286, warpins: 1 ---
+	slot8 = slot0.model
+	slot8 = slot8.UpgradeMode
+	slot8 = slot8.LackCondition
+	--- END OF BLOCK #27 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 287-296, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.view
+	slot10 = slot10.txtNameUSDFText
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "HOMCAR_NOTMEET_CONDITION"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #28 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
+
+
+	--- BLOCK #29 297-301, warpins: 1 ---
+	slot8 = slot0.model
+	slot8 = slot8.UpgradeMode
+	slot8 = slot8.LackCoin
 	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #30
+	if slot7 == slot8 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
 
 
-	--- BLOCK #30 319-335, warpins: 2 ---
-	slot7 = slot0.view
-	slot7 = slot7.scrollRectUScrollRect
-	slot9 = slot7
-	slot7 = slot7.GoToPos
-	slot10 = Vector2
-	slot10 = slot10.zero
-	slot11 = true
+	--- BLOCK #30 302-302, warpins: 1 ---
+	--- END OF BLOCK #30 ---
 
-	slot7(slot9, slot10, slot11)
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
-	slot7 = slot0.view
-	slot7 = slot7.scrollRectDescUScrollRect
-	slot9 = slot7
-	slot7 = slot7.GoToPos
-	slot10 = Vector2
-	slot10 = slot10.zero
-	slot11 = true
 
-	slot7(slot9, slot10, slot11)
+	--- BLOCK #31 303-307, warpins: 1 ---
+	slot8 = slot0.model
+	slot8 = slot8.UpgradeMode
+	slot8 = slot8.LackItem
+	--- END OF BLOCK #31 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 308-313, warpins: 1 ---
+	slot8 = slot0.view
+	slot8 = slot8.btnComfirmUButton
+	slot9 = true
+	slot8.interactable = slot9
+	slot8 = true
+	slot0.lackItem = slot8
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 314-315, warpins: 7 ---
+	--- END OF BLOCK #33 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 316-324, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.view
+	slot10 = slot10.txtNameUSDFText
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "ACCESSORY_UNLOCK"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 325-333, warpins: 2 ---
+	slot8 = slot0.view
+	slot8 = slot8.scrollRectUScrollRect
+	slot10 = slot8
+	slot8 = slot8.GoToPos
+	slot11 = Vector2
+	slot11 = slot11.zero
+	slot12 = true
+
+	slot8(slot10, slot11, slot12)
 
 	return
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #35 ---
 
 
 

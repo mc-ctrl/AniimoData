@@ -154,58 +154,85 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 56-58, warpins: 3 ---
-	slot7 = slot4.isExtraTempPet
+	--- BLOCK #9 56-57, warpins: 3 ---
 	--- END OF BLOCK #9 ---
 
-	slot7 = if slot7 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 59-63, warpins: 1 ---
+	--- BLOCK #10 58-65, warpins: 1 ---
+	slot7 = CombatLogger
+	slot7 = slot7.warn
+	slot9 = "rogue damage statistic missing srcEntity, abilityId=%s, buffTemplateId=%s, projectileTemplateId=%s"
+	slot10 = slot2.abilityId
+	slot11 = slot2.buffTemplateId
+	slot12 = slot2.projectileTemplateId
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 66-68, warpins: 2 ---
+	slot7 = slot4.isExtraTempPet
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 69-73, warpins: 1 ---
 	slot9 = slot4
 	slot7 = slot4.isExtraTempPet
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #11 64-70, warpins: 1 ---
+	--- BLOCK #13 74-80, warpins: 1 ---
 	slot7 = tostring
 	slot9 = slot4.templateId
 	slot7 = slot7(slot9)
 	slot8 = slot0.tempPet
 	slot8 = slot8[slot7]
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
 	slot8 = if not slot8 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 71-76, warpins: 1 ---
+	--- BLOCK #14 81-86, warpins: 1 ---
 	slot9 = RogueCombatStatistic
 	slot11 = {}
 	slot9 = slot9(slot11)
 	slot8 = slot9
 	slot9 = slot0.tempPet
 	slot9[slot7] = slot8
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #13 77-87, warpins: 2 ---
+	--- BLOCK #15 87-97, warpins: 2 ---
 	slot9 = slot8.damage
 	slot9 = slot9 + slot3
 	slot8.damage = slot9
@@ -220,104 +247,87 @@ slot10 = function(slot0, slot1, slot2)
 
 	return
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #14 88-93, warpins: 3 ---
+	--- BLOCK #16 98-103, warpins: 3 ---
 	slot7 = Utils
 	slot7 = slot7.isPet
 	slot9 = slot4
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #16 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #15 94-99, warpins: 1 ---
+	--- BLOCK #17 104-109, warpins: 1 ---
 	slot7 = Utils
 	slot7 = slot7.isPlayer
 	slot9 = slot4
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #17 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #16 100-104, warpins: 1 ---
+	--- BLOCK #18 110-114, warpins: 1 ---
 	slot9 = slot4
 	slot7 = slot4.getCurPetEntity
 	slot7 = slot7(slot9)
 	slot4 = slot7
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #17 105-112, warpins: 1 ---
+	--- BLOCK #19 115-122, warpins: 1 ---
 	slot7 = CombatLogger
 	slot7 = slot7.error
 	slot9 = "undefine case"
 	slot10 = slot4.className
 	slot11 = slot4.templateId
 	slot12 = slot2.abilityId
-	--- END OF BLOCK #17 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #18 113-115, warpins: 1 ---
-	slot12 = slot2.buffTemplateId
-	--- END OF BLOCK #18 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 116-116, warpins: 1 ---
-	slot12 = slot2.projectileTemplateId
-
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 117-118, warpins: 3 ---
-	slot7(slot9, slot10, slot11, slot12)
-
-	return
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 119-120, warpins: 3 ---
-	--- END OF BLOCK #21 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #22
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #22 121-121, warpins: 1 ---
+	--- BLOCK #20 123-125, warpins: 1 ---
+	slot12 = slot2.buffTemplateId
+	--- END OF BLOCK #20 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 126-126, warpins: 1 ---
+	slot12 = slot2.projectileTemplateId
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 127-128, warpins: 3 ---
+	slot7(slot9, slot10, slot11, slot12)
+
 	return
 
 	--- END OF BLOCK #22 ---
@@ -325,20 +335,47 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 122-126, warpins: 2 ---
-	slot7 = slot0.pet
-	slot8 = slot4.id
-	slot7 = slot7[slot8]
+	--- BLOCK #23 129-130, warpins: 3 ---
 	--- END OF BLOCK #23 ---
 
-	slot7 = if not slot7 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 127-133, warpins: 1 ---
+	--- BLOCK #24 131-138, warpins: 1 ---
+	slot7 = CombatLogger
+	slot7 = slot7.warn
+	slot9 = "rogue damage statistic missing pet entity after player convert, abilityId=%s, buffTemplateId=%s, projectileTemplateId=%s"
+	slot10 = slot2.abilityId
+	slot11 = slot2.buffTemplateId
+	slot12 = slot2.projectileTemplateId
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	return
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 139-143, warpins: 2 ---
+	slot7 = slot0.pet
+	slot8 = slot4.id
+	slot7 = slot7[slot8]
+	--- END OF BLOCK #25 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 144-150, warpins: 1 ---
 	slot8 = RogueCombatStatistic
 	slot10 = {}
 	slot8 = slot8(slot10)
@@ -346,12 +383,12 @@ slot10 = function(slot0, slot1, slot2)
 	slot8 = slot0.pet
 	slot9 = slot4.id
 	slot8[slot9] = slot7
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #25 134-144, warpins: 2 ---
+	--- BLOCK #27 151-161, warpins: 2 ---
 	slot8 = slot7.damage
 	slot8 = slot8 + slot3
 	slot7.damage = slot8
@@ -365,7 +402,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot8(slot10, slot11, slot12, slot13)
 
 	return
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #27 ---
 
 
 
@@ -618,58 +655,85 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 51-53, warpins: 3 ---
-	slot6 = slot3.isExtraTempPet
+	--- BLOCK #7 51-52, warpins: 3 ---
 	--- END OF BLOCK #7 ---
 
-	slot6 = if slot6 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 54-58, warpins: 1 ---
+	--- BLOCK #8 53-60, warpins: 1 ---
+	slot6 = CombatLogger
+	slot6 = slot6.warn
+	slot8 = "rogue heal statistic missing srcEntity, abilityId=%s, buffTemplateId=%s, projectileTemplateId=%s"
+	slot9 = slot2.abilityId
+	slot10 = slot2.buffTemplateId
+	slot11 = slot2.projectileTemplateId
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 61-63, warpins: 2 ---
+	slot6 = slot3.isExtraTempPet
+	--- END OF BLOCK #9 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #10 64-68, warpins: 1 ---
 	slot8 = slot3
 	slot6 = slot3.isExtraTempPet
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #9 59-65, warpins: 1 ---
+	--- BLOCK #11 69-75, warpins: 1 ---
 	slot6 = tostring
 	slot8 = slot3.templateId
 	slot6 = slot6(slot8)
 	slot7 = slot0.tempPet
 	slot7 = slot7[slot6]
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 66-71, warpins: 1 ---
+	--- BLOCK #12 76-81, warpins: 1 ---
 	slot8 = RogueCombatStatistic
 	slot10 = {}
 	slot8 = slot8(slot10)
 	slot7 = slot8
 	slot8 = slot0.tempPet
 	slot8[slot6] = slot7
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #11 72-82, warpins: 2 ---
+	--- BLOCK #13 82-92, warpins: 2 ---
 	slot8 = slot7.heal
 	slot8 = slot8 + slot1
 	slot7.heal = slot8
@@ -684,25 +748,135 @@ slot10 = function(slot0, slot1, slot2)
 
 	return
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #12 83-87, warpins: 3 ---
-	slot6 = slot0.pet
-	slot7 = slot3.id
-	slot6 = slot6[slot7]
-	--- END OF BLOCK #12 ---
+	--- BLOCK #14 93-98, warpins: 3 ---
+	slot6 = Utils
+	slot6 = slot6.isPet
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #14 ---
 
 	slot6 = if not slot6 then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #13 88-94, warpins: 1 ---
+	--- BLOCK #15 99-104, warpins: 1 ---
+	slot6 = Utils
+	slot6 = slot6.isPlayer
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #15 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 105-109, warpins: 1 ---
+	slot8 = slot3
+	slot6 = slot3.getCurPetEntity
+	slot6 = slot6(slot8)
+	slot3 = slot6
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #17 110-117, warpins: 1 ---
+	slot6 = CombatLogger
+	slot6 = slot6.error
+	slot8 = "undefine heal case"
+	slot9 = slot3.className
+	slot10 = slot3.templateId
+	slot11 = slot2.abilityId
+	--- END OF BLOCK #17 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 118-120, warpins: 1 ---
+	slot11 = slot2.buffTemplateId
+	--- END OF BLOCK #18 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 121-121, warpins: 1 ---
+	slot11 = slot2.projectileTemplateId
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 122-123, warpins: 3 ---
+	slot6(slot8, slot9, slot10, slot11)
+
+	return
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 124-125, warpins: 3 ---
+	--- END OF BLOCK #21 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 126-133, warpins: 1 ---
+	slot6 = CombatLogger
+	slot6 = slot6.warn
+	slot8 = "rogue heal statistic missing pet entity after player convert, abilityId=%s, buffTemplateId=%s, projectileTemplateId=%s"
+	slot9 = slot2.abilityId
+	slot10 = slot2.buffTemplateId
+	slot11 = slot2.projectileTemplateId
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	return
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 134-138, warpins: 2 ---
+	slot6 = slot0.pet
+	slot7 = slot3.id
+	slot6 = slot6[slot7]
+	--- END OF BLOCK #23 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 139-145, warpins: 1 ---
 	slot7 = RogueCombatStatistic
 	slot9 = {}
 	slot7 = slot7(slot9)
@@ -710,12 +884,12 @@ slot10 = function(slot0, slot1, slot2)
 	slot7 = slot0.pet
 	slot8 = slot3.id
 	slot7[slot8] = slot6
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #14 95-105, warpins: 2 ---
+	--- BLOCK #25 146-156, warpins: 2 ---
 	slot7 = slot6.heal
 	slot7 = slot7 + slot1
 	slot6.heal = slot7
@@ -729,7 +903,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot7(slot9, slot10, slot11, slot12)
 
 	return
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #25 ---
 
 
 

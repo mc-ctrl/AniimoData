@@ -13,12 +13,12 @@ slot3 = slot3.bor
 slot4 = slot2.lshift
 slot5 = {}
 slot6 = {
+	OTHER_PLAYER = 2,
+	SELF_PLAYER = 1,
 	WILD_MONSTER = 6,
 	NPC = 5,
 	OTHER_PET = 4,
-	SELF_PET = 3,
-	OTHER_PLAYER = 2,
-	SELF_PLAYER = 1
+	SELF_PET = 3
 }
 slot5.EntityType = slot6
 

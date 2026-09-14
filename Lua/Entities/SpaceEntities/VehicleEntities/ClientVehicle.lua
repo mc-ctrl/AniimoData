@@ -1,4 +1,4 @@
---- BLOCK #0 1-73, warpins: 1 ---
+--- BLOCK #0 1-93, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -45,61 +45,81 @@ slot14 = require
 slot16 = "Data.vehicle_seat_attach_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
+slot17 = "Data.vehicle_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Entities.SpaceEntities.CommonComponent.ClientSeatComponent"
+slot18 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
+slot19 = "Entities.SpaceEntities.CommonComponent.ClientSeatComponent"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.sys_config_data"
+slot20 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
 slot18 = slot18(slot20)
-slot19 = slot2.Class
-slot21 = "ClientVehicle"
-slot22 = slot3
-slot19 = slot19(slot21, slot22)
-slot20 = {}
-slot20[1] = slot17
-slot20[2] = slot6
-slot20[3] = slot7
-slot20[4] = slot9
-slot20[5] = slot11
-slot20[6] = slot15
-slot20[7] = slot12
-slot20[8] = slot16
-slot21 = EnableBotTest
+slot19 = require
+slot21 = "Entities.SpaceEntities.VehicleEntities.ClientVehicleBodyAnimationComponent"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Entities.SpaceEntities.CommonComponent.ClientEcsComponent"
+slot20 = slot20(slot22)
+slot21 = require
+slot23 = "Data.sys_config_data"
+slot21 = slot21(slot23)
+slot22 = require
+slot24 = "GameApp.Controller.RouteController"
+slot22 = slot22(slot24)
+slot23 = require
+slot25 = "GameApp.Controller.DandelionController"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "GameApp.Controller.SkateboardVehicleController"
+slot24 = slot24(slot26)
+slot25 = slot2.Class
+slot27 = "ClientVehicle"
+slot28 = slot3
+slot25 = slot25(slot27, slot28)
+slot26 = {}
+slot26[1] = slot18
+slot26[2] = slot6
+slot26[3] = slot7
+slot26[4] = slot9
+slot26[5] = slot11
+slot26[6] = slot16
+slot26[7] = slot12
+slot26[8] = slot17
+slot26[9] = slot19
+slot26[10] = slot20
+slot27 = EnableBotTest
 --- END OF BLOCK #0 ---
 
-slot21 = if slot21 then
+slot27 = if slot27 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 74-79, warpins: 1 ---
-slot21 = {}
-slot21[1] = slot17
-slot21[2] = slot15
-slot21[3] = slot11
-slot21[4] = slot16
-slot20 = slot21
+--- BLOCK #1 94-99, warpins: 1 ---
+slot27 = {}
+slot27[1] = slot18
+slot27[2] = slot16
+slot27[3] = slot11
+slot27[4] = slot17
+slot26 = slot27
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 80-121, warpins: 2 ---
-slot21 = slot2.AddComponents
-slot23 = slot19
-slot24 = slot20
+--- BLOCK #2 100-155, warpins: 2 ---
+slot27 = slot2.AddComponents
+slot29 = slot25
+slot30 = slot26
 
-slot21(slot23, slot24)
+slot27(slot29, slot30)
 
-slot21 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = ClientVehicle
 	slot2 = slot2.super
 	slot2 = slot2.ctor
@@ -115,6 +135,8 @@ slot21 = function(slot0, slot1)
 	slot2 = slot2.TopLogoType
 	slot2 = slot2.Pet
 	slot0.topLogoType = slot2
+	slot2 = false
+	slot0.isClientEnt = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -123,9 +145,104 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot19.ctor = slot21
+slot25.ctor = slot27
 
-slot21 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= "SkateboardVehicleController" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= "SkateboardController" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	slot2 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-8, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot25.isSkateboardVehicleControllerCls = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot2 = ClientVehicle
+	slot2 = slot2.super
+	slot2 = slot2.init
+	slot4 = slot0
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot0
+	slot3 = slot0.isSkateboardVehicleControllerCls
+	slot8 = slot0
+	slot6 = slot0.getVehicleConfig
+	slot6 = slot6(slot8)
+	slot6 = slot6.controllerCls
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 16-22, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.setIsKinematic
+	slot6 = true
+	slot7 = ClientConst
+	slot7 = slot7.IsKinematicKey
+	slot7 = slot7.SkateboardVehicle
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 23-23, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot25.init = slot27
+
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = ClientVehicle
 	slot2 = slot2.super
@@ -213,9 +330,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot19.postInit = slot21
+slot25.postInit = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getVehicleConfig
@@ -227,9 +344,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.getConfigData = slot21
+slot25.getConfigData = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = ClientVehicle
 	slot1 = slot1.super
@@ -254,9 +371,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.refreshAppearance = slot21
+slot25.refreshAppearance = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -265,9 +382,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.onPrefabModelLoaded = slot21
+slot25.onPrefabModelLoaded = slot27
 
-slot21 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.featureVehicle = slot1
 
@@ -278,9 +395,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot19.registerFeatureVehicle = slot21
+slot25.registerFeatureVehicle = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.deepCopyTable
@@ -313,25 +430,152 @@ slot21 = function(slot0)
 
 end
 
-slot19.getControllerData = slot21
+slot25.getControllerData = slot27
 
-slot21 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = BenchController
-	slot2 = slot2.new
-	slot4 = slot1
-	slot5 = slot0
-
-	return slot2(slot4, slot5)
+slot27 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isSkateboardVehicleControllerCls
+	slot6 = slot0
+	slot4 = slot0.getVehicleConfig
+	slot4 = slot4(slot6)
+	slot4 = slot4.controllerCls
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-11, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-16, warpins: 2 ---
+	slot1 = ClientVehicle
+	slot1 = slot1.super
+	slot1 = slot1.isConfigKinematic
+	slot3 = slot0
+
+	return slot1(slot3)
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot19.getActorController = slot21
+slot25.isConfigKinematic = slot27
 
-slot21 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getVehicleConfig
+	slot2 = slot2(slot4)
+	slot2 = slot2.controllerCls
+	slot5 = slot0
+	slot3 = slot0.isSkateboardVehicleControllerCls
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-16, warpins: 1 ---
+	slot3 = SkateboardVehicleController
+	slot3 = slot3.new
+	slot5 = slot1
+	slot6 = slot0
+
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #2 17-18, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot2 == "RouteController" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-24, warpins: 1 ---
+	slot3 = DandelionController
+	slot3 = slot3.new
+	slot5 = slot1
+	slot6 = slot0
+
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 25-26, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot2 == "RideVehicleController" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-32, warpins: 1 ---
+	slot3 = RouteController
+	slot3 = slot3.new
+	slot5 = slot1
+	slot6 = slot0
+
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 33-37, warpins: 1 ---
+	slot3 = BenchController
+	slot3 = slot3.new
+	slot5 = slot1
+	slot6 = slot0
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 38-38, warpins: 4 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot25.getActorController = slot27
+
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.featureVehicle
 
@@ -367,9 +611,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot19.onEntityMount = slot21
+slot25.onEntityMount = slot27
 
-slot21 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.featureVehicle
 
@@ -404,9 +648,102 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot19.onEntityDismount = slot21
+slot25.onEntityDismount = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.postComponentMethod
+	slot5 = "EVENT_OnVehiclePassengerEnterFinished"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot25.onVehicleMountLoopEntered = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.postComponentMethod
+	slot5 = "EVENT_OnVehiclePassengerExitFinished"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot25.onVehicleMountExitFinished = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.setVehicleBodyMoving
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setVehicleBodyMoving
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot5 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 2 ---
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot25.onVehicleMoveStateChanged = slot27
+
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -415,9 +752,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.onEnterControl = slot21
+slot25.onEnterControl = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -426,9 +763,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.onExitControl = slot21
+slot25.onExitControl = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -437,9 +774,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.onDoSkill1 = slot21
+slot25.onDoSkill1 = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -448,9 +785,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.onDoSkill2 = slot21
+slot25.onDoSkill2 = slot27
 
-slot21 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -459,9 +796,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot19.onTriggerBreak = slot21
+slot25.onTriggerBreak = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSeatInteractionList
@@ -473,9 +810,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.getInteractionListData = slot21
+slot25.getInteractionListData = slot27
 
-slot21 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setVisible
@@ -490,7 +827,7 @@ slot21 = function(slot0, slot1, slot2)
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
-	slot3 = slot3.serverSpaceMsg
+	slot3 = slot3.reliableServerSpaceMsg
 	slot6 = "RPC_CS_DestroyVehicleByEcs"
 	slot7 = {}
 	slot8 = slot0.actorId
@@ -541,9 +878,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot19.destroyEntity = slot21
+slot25.destroyEntity = slot27
 
-slot21 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playDestroyEffect
@@ -552,7 +889,7 @@ slot21 = function(slot0)
 
 	slot1 = ClientVehicle
 	slot1 = slot1.super
-	slot1 = slot1.destroy
+	slot1 = slot1.preDestroy
 	slot3 = slot0
 
 	slot1(slot3)
@@ -564,9 +901,27 @@ slot21 = function(slot0)
 
 end
 
-slot19.destroy = slot21
+slot25.preDestroy = slot27
 
-return slot19
+slot27 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getVehicleConfig
+
+	slot1(slot3)
+
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot25.canDirectMountRideVehicle = slot27
+
+return slot25
 --- END OF BLOCK #2 ---
 
 

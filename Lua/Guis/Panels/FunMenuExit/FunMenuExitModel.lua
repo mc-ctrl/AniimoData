@@ -237,35 +237,42 @@ end
 slot10.isFastQuit = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCurConfigId
 	slot1 = slot1(slot3)
 	slot2 = FuncMenuData
 	slot2 = slot2[slot1]
+	slot3 = pg
+	slot3 = slot3.me
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot3 = true
-	slot4 = false
-
-	return slot3, slot4
-
+	--- BLOCK #1 10-14, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.isInRiftMode
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #2 11-14, warpins: 2 ---
+	--- BLOCK #2 15-21, warpins: 1 ---
 	slot3 = pg
-	slot3 = slot3.space
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInRiftMode
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
@@ -275,46 +282,41 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 15-19, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.space
-	slot5 = slot3
-	slot3 = slot3.isHomeCamp
-	slot3 = slot3(slot5)
+	--- BLOCK #3 22-24, warpins: 1 ---
+	slot3 = false
+	slot4 = false
+
+	return slot3, slot4
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-26, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isInLeaderWorld
-	slot4 = slot4(slot6)
+	--- BLOCK #4 25-26, warpins: 4 ---
 	--- END OF BLOCK #4 ---
 
-	slot4 = if slot4 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 27-31, warpins: 1 ---
-	slot4 = Utils
-	slot4 = slot4.isScenePhoto
-	slot4 = slot4()
+	--- BLOCK #5 27-29, warpins: 1 ---
+	slot3 = true
+	slot4 = false
+
+	return slot3, slot4
+
 	--- END OF BLOCK #5 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-33, warpins: 1 ---
+	--- BLOCK #6 30-33, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.space
 	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
@@ -324,82 +326,131 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #7 34-36, warpins: 3 ---
-	slot4 = slot2.mode
+	--- BLOCK #7 34-38, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.space
+	slot5 = slot3
+	slot3 = slot3.isHomeCamp
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #7 ---
 
-	if slot4 == 3 then
-	JUMP TO BLOCK #8
-	else
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 39-45, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.isInLeaderWorld
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 37-39, warpins: 2 ---
-	slot4 = true
-	slot5 = true
-
-	return slot4, slot5
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 40-42, warpins: 2 ---
-	slot4 = slot2.mode
+	--- BLOCK #9 46-50, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.isScenePhoto
+	slot4 = slot4()
 	--- END OF BLOCK #9 ---
 
-	if slot4 ~= 1 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 43-44, warpins: 1 ---
-	slot4 = false
+	--- BLOCK #10 51-52, warpins: 1 ---
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #11 45-45, warpins: 1 ---
-	slot4 = true
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 46-48, warpins: 2 ---
-	slot5 = slot2.mode
-	--- END OF BLOCK #12 ---
-
-	if slot5 ~= 2 then
-	JUMP TO BLOCK #13
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #13 49-50, warpins: 1 ---
-	slot5 = false
-	--- END OF BLOCK #13 ---
+	--- BLOCK #11 53-55, warpins: 3 ---
+	slot4 = slot2.mode
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	if slot4 == 3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #14 51-51, warpins: 1 ---
+	--- BLOCK #12 56-58, warpins: 2 ---
+	slot4 = true
 	slot5 = true
 
+	return slot4, slot5
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 59-61, warpins: 2 ---
+	slot4 = slot2.mode
+	--- END OF BLOCK #13 ---
+
+	if slot4 ~= 1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 62-63, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 52-52, warpins: 2 ---
-	return slot4, slot5
+	--- BLOCK #15 64-64, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 65-67, warpins: 2 ---
+	slot5 = slot2.mode
+	--- END OF BLOCK #16 ---
+
+	if slot5 ~= 2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 68-69, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 70-70, warpins: 1 ---
+	slot5 = true
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 71-71, warpins: 2 ---
+	return slot4, slot5
+	--- END OF BLOCK #19 ---
 
 
 
@@ -488,7 +539,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-31, warpins: 2 ---
+	--- BLOCK #2 7-35, warpins: 2 ---
 	slot2 = {}
 	slot3 = {}
 	slot4 = FuncMenuCommonData
@@ -510,34 +561,33 @@ slot11 = function(slot0)
 	slot4 = slot4[14]
 	slot3.cfg = slot4
 	slot2[4] = slot3
-	slot3 = CommonSwitch
-	slot3 = slot3.IOS_REVIEW
+	slot3 = {}
+	slot4 = FuncMenuCommonData
+	slot4 = slot4[9]
+	slot3.cfg = slot4
+	slot2[5] = slot3
+	slot3 = slot1.showInformationButton
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 32-37, warpins: 1 ---
+	--- BLOCK #3 36-41, warpins: 1 ---
 	slot3 = {}
 	slot4 = FuncMenuCommonData
-	slot4 = slot4[3]
+	slot4 = slot4[10]
 	slot3.cfg = slot4
-	slot2[5] = slot3
+	slot2[6] = slot3
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 38-47, warpins: 1 ---
-	slot3 = {}
-	slot4 = FuncMenuCommonData
-	slot4 = slot4[9]
-	slot3.cfg = slot4
-	slot2[5] = slot3
+	--- BLOCK #4 42-46, warpins: 1 ---
 	slot3 = {}
 	slot4 = FuncMenuCommonData
 	slot4 = slot4[3]
@@ -549,7 +599,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 48-48, warpins: 2 ---
+	--- BLOCK #5 47-47, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #5 ---
 

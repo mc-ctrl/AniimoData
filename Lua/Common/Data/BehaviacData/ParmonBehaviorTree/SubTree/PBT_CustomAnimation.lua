@@ -7,75 +7,75 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_CustomAnimation",
+	useForRoute = true,
 	version = 8,
-	useForRoute = true
+	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_CustomAnimation"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tWaitTime",
 	type = "float",
-	value = "0",
-	const = 0
+	const = 0,
+	name = "tWaitTime",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tAnimationKey",
 	type = "string",
-	value = "",
-	const = ""
+	const = "",
+	name = "tAnimationKey",
+	value = ""
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tAnimationTimeout",
 	type = "float",
-	value = "5",
-	const = 5
+	const = 5,
+	name = "tAnimationTimeout",
+	value = "5"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tEmojiBubbleKey",
 	type = "string",
-	value = "",
-	const = ""
+	const = "",
+	name = "tEmojiBubbleKey",
+	value = ""
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tEmojiBubbleTimeout",
 	type = "float",
-	value = "5",
-	const = 5
+	const = 5,
+	name = "tEmojiBubbleTimeout",
+	value = "5"
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tTimelineTag",
 	type = "string",
-	value = "",
-	const = ""
+	const = "",
+	name = "tTimelineTag",
+	value = ""
 }
 slot4[6] = slot5
 slot5 = {
-	name = "tNeedLoop",
 	type = "bool",
-	value = "false",
-	const = false
+	const = false,
+	name = "tNeedLoop",
+	value = "false"
 }
 slot4[7] = slot5
 slot5 = {
-	name = "tAnimationPlayOnce",
 	type = "bool",
-	value = "false",
-	const = false
+	const = false,
+	name = "tAnimationPlayOnce",
+	value = "false"
 }
 slot4[8] = slot5
 slot5 = {
-	name = "tEmojiBubbleMustPlayFull",
 	type = "bool",
-	value = "false",
-	const = false
+	const = false,
+	name = "tEmojiBubbleMustPlayFull",
+	value = "false"
 }
 slot4[9] = slot5
 slot3.pars = slot4

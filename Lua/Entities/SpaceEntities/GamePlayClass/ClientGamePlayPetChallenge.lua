@@ -1,4 +1,4 @@
---- BLOCK #0 1-56, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -9,7 +9,7 @@ slot2 = require
 slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Client.ClientEntity"
+slot5 = "Entities.SpaceEntities.GamePlayClass.ClientGamePlayEntity"
 slot3 = slot3(slot5)
 slot4 = require
 slot6 = "Common.Const.SandboxConst"
@@ -35,48 +35,6 @@ slot13 = "ClientGamePlayPetChallenge"
 slot14 = slot3
 slot11 = slot11(slot13, slot14)
 slot12 = "endFinishHint"
-
-slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = ClientGamePlayPetChallenge
-	slot2 = slot2.super
-	slot2 = slot2.ctor
-	slot4 = slot0
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot11.ctor = slot13
-
-slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = ClientGamePlayPetChallenge
-	slot2 = slot2.super
-	slot2 = slot2.init
-	slot4 = slot0
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot2 = slot1.sandboxId
-	slot0.sandboxId = slot2
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot11.init = slot13
 
 slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

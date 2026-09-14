@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-48, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -20,12 +20,15 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Utils.LuaUIUtils"
 slot6 = slot6(slot8)
-slot7 = slot0.LightClass
-slot9 = "PetFirstShowItem"
-slot10 = slot1
-slot7 = slot7(slot9, slot10)
+slot7 = require
+slot9 = "Utils.ClientUtils"
+slot7 = slot7(slot9)
+slot8 = slot0.LightClass
+slot10 = "PetFirstShowItem"
+slot11 = slot1
+slot8 = slot8(slot10, slot11)
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMaxLimit
@@ -40,20 +43,15 @@ slot8 = function(slot0)
 
 end
 
-slot7.onInit = slot8
+slot8.onInit = slot9
 
-slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.enqueue
 	slot5 = slot1
 
 	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.checkTipState
-
-	slot2(slot4)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -62,9 +60,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.pushData = slot8
+slot8.pushData = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryPopupItem
@@ -78,9 +76,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onUpdate = slot8
+slot8.onUpdate = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isQueueEmpty
@@ -113,7 +111,7 @@ slot8 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #3 12-27, warpins: 1 ---
+	--- BLOCK #3 12-25, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
@@ -123,13 +121,13 @@ slot8 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.uiMgr
-	slot4 = slot2
-	slot2 = slot2.CheckIsMobileInteract
-	slot2 = slot2(slot4)
+	slot4 = slot0
+	slot2 = slot0._refreshFlag
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = IS_MOBILE
 	--- END OF BLOCK #3 ---
 
 	slot2 = if slot2 then
@@ -139,7 +137,7 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #4 28-42, warpins: 1 ---
+	--- BLOCK #4 26-40, warpins: 1 ---
 	slot2 = true
 	slot1.lowMode = slot2
 	slot2 = true
@@ -182,7 +180,7 @@ slot8 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 43-53, warpins: 1 ---
+	--- BLOCK #5 41-51, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -225,14 +223,14 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 54-55, warpins: 2 ---
+	--- BLOCK #6 52-53, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 56-56, warpins: 2 ---
+	--- BLOCK #7 54-54, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -240,9 +238,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.tryPopupItem = slot8
+slot8.tryPopupItem = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -261,7 +259,7 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 11-17, warpins: 1 ---
+	--- BLOCK #1 11-18, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -273,28 +271,41 @@ slot8 = function(slot0, slot1)
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 18-18, warpins: 2 ---
-	return
+	--- BLOCK #2 19-22, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0._refreshFlag
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #2 ---
 
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 23-23, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
 
 
 end
 
-slot7.onClearRunningList = slot8
+slot8.onClearRunningList = slot9
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot9 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._refreshFlag
 	slot6 = slot0
-	slot4 = slot0.isRunning
-	MULTRES = slot4(slot6)
+	slot4 = slot0.isQueueEmpty
+	slot4 = slot4(slot6)
+	slot4 = not slot4
 
-	slot1(slot3, MULTRES)
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -303,39 +314,41 @@ slot8 = function(slot0)
 
 end
 
-slot7.checkTipState = slot8
+slot8.checkTipStateOnClose = slot9
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0._refreshFlag
-	slot6 = slot0
-	slot4 = slot0.isRunning
-	MULTRES = slot4(slot6)
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0._lastNeedHide
 
-	slot1(slot3, MULTRES)
-
-	return
 	--- END OF BLOCK #0 ---
 
-
-
-end
-
-slot7.checkTipStateOnClose = slot8
-
-slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
+	if slot2 == slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-30, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot0._lastNeedHide = slot1
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-39, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -365,12 +378,18 @@ slot8 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #1 ---
+	slot4 = slot0
+	slot2 = slot0._setHudLUActive
+	slot5 = false
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 31-40, warpins: 1 ---
+	--- BLOCK #4 40-53, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -383,41 +402,68 @@ slot8 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #2 ---
+	slot4 = slot0
+	slot2 = slot0._setHudLUActive
+	slot5 = true
 
-	FLOW; TARGET BLOCK #3
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 41-41, warpins: 2 ---
+	--- BLOCK #5 54-54, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot7._refreshFlag = slot8
+slot8._refreshFlag = slot9
 
-slot8 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0._refreshFlag
-	slot8 = slot0
-	slot6 = slot0.isRunning
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	return
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = ClientUtils
+	slot2 = slot2.isInDouYinOfflineScene
+	slot2 = slot2()
 	--- END OF BLOCK #0 ---
 
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
+	slot5 = slot3
+	slot3 = slot3.setLeftVisible
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-14, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
 
 
 end
 
-slot7.onRunStateChanged = slot8
+slot8._setHudLUActive = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = 1
@@ -433,13 +479,13 @@ slot8 = function(slot0, slot1)
 	slot8 = 1001200
 	slot7 = slot7[slot8]
 	slot8 = {
-		templateId = 1001200,
 		lv = 1,
 		gender = 0,
 		label = 1,
 		spLabel = "测试LB",
 		isBoss = true,
-		isRare = true
+		isRare = true,
+		templateId = 1001200
 	}
 	slot9 = slot7.iconName
 	slot8.headIconName = slot9
@@ -466,9 +512,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.GMPushData = slot8
+slot8.GMPushData = slot9
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

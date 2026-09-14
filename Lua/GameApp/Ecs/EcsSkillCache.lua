@@ -53,7 +53,7 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6[slot8] = slot5
 	slot8 = slot7 + 5
 	slot9 = Time
-	slot9 = slot9.secondCache
+	slot9 = slot9.realSecondCache
 	slot6[slot8] = slot9
 	slot8 = slot0.skillHitIndex
 	slot8 = slot8 % 10
@@ -145,7 +145,7 @@ slot5 = function(slot0, slot1)
 
 	--- BLOCK #5 35-40, warpins: 1 ---
 	slot11 = Time
-	slot11 = slot11.secondCache
+	slot11 = slot11.realSecondCache
 	slot11 = slot11 - slot10
 	slot12 = 5
 	--- END OF BLOCK #5 ---
@@ -304,7 +304,7 @@ slot5 = function(slot0, slot1)
 	slot11 = math
 	slot11 = slot11.abs
 	slot13 = Time
-	slot13 = slot13.secondCache
+	slot13 = slot13.realSecondCache
 	slot13 = slot13 - slot10
 	slot11 = slot11(slot13)
 	slot12 = 0.01

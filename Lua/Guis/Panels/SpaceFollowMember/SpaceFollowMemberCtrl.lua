@@ -167,11 +167,14 @@ end
 slot3.addListener = slot8
 
 slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.uid
-	slot2 = slot1[slot2]
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	slot4 = slot2
+	slot2 = slot2.getGivePetEligibleFollowerUids
+	slot5 = slot0.petId
+	slot2 = slot2(slot4, slot5)
 	slot0.spaceFollowMembers = slot2
 	slot4 = slot0
 	slot2 = slot0.refreshFollowerList

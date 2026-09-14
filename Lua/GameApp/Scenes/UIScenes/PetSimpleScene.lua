@@ -1,28 +1,34 @@
---- BLOCK #0 1-36, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.UIScene.UISceneBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "PetSimpleScene"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Const.ClientConst"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "GameApp.UIScene.UISceneBase"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "PetSimpleScene"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Utils.ClientModelUtils"
+slot6 = "Const.ClientConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Entities.ClientSimpleVirtualEntity"
+slot7 = "Common.Const.Const"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.pet_prototype_data"
+slot8 = "Utils.ClientModelUtils"
 slot6 = slot6(slot8)
+slot7 = require
+slot9 = "Entities.ClientSimpleVirtualEntity"
+slot7 = slot7(slot9)
+slot8 = require
+slot10 = "Data.pet_prototype_data"
+slot8 = slot8(slot10)
 
-slot7 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.initScene
@@ -37,9 +43,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.onStart = slot7
+slot3.onStart = slot9
 
-slot7 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -82,9 +88,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.initScene = slot7
+slot3.initScene = slot9
 
-slot7 = function(slot0, slot1, slot2, slot3, slot4)
+slot9 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.curTemplateId = slot1
 	slot0.label = slot2
@@ -98,9 +104,9 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot2.setTemplateId = slot7
+slot3.setTemplateId = slot9
 
-slot7 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.cameraCamera
 	slot3 = slot1.texture
@@ -113,9 +119,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.setRawImageProRef = slot7
+slot3.setRawImageProRef = slot9
 
-slot7 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetProtoTypeData
 	slot2 = slot0.curTemplateId
@@ -131,9 +137,9 @@ slot7 = function(slot0)
 
 
 	--- BLOCK #1 7-10, warpins: 1 ---
-	slot2 = slot0.curEnt
-	slot4 = slot2
-	slot2 = slot2.destroy
+	slot2 = ClientUtils
+	slot2 = slot2.safeDestroy
+	slot4 = slot0.curEnt
 
 	slot2(slot4)
 
@@ -142,7 +148,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-44, warpins: 2 ---
+	--- BLOCK #2 11-47, warpins: 2 ---
 	slot2 = ClientSimpleVirtualEntity
 	slot2 = slot2.new
 	slot2 = slot2()
@@ -154,35 +160,42 @@ slot7 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.curEnt
-	slot4 = slot2
-	slot2 = slot2.init
-	slot5 = {}
-	slot6 = slot0.curTemplateId
-	slot5.templateId = slot6
+	slot2 = {
+		isIgnoreEffectLod = true
+	}
+	slot3 = slot0.curTemplateId
+	slot2.templateId = slot3
+	slot3 = slot0.curEnt
+	slot5 = slot3
+	slot3 = slot3.init
+	slot6 = slot2
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = slot0.curEnt
-	slot4 = slot2
-	slot2 = slot2.start
+	slot3 = slot0.curEnt
+	slot5 = slot3
+	slot3 = slot3.postInit
+	slot6 = slot2
 
-	slot2(slot4)
+	slot3(slot5, slot6)
 
-	slot2 = slot0.curEnt
-	slot4 = slot2
-	slot2 = slot2.setModelLayer
-	slot5 = ClientConst
-	slot5 = slot5.LayerDefine
-	slot5 = slot5.LAYER_UI_SCENE
+	slot3 = slot0.curEnt
+	slot5 = slot3
+	slot3 = slot3.start
 
-	slot2(slot4, slot5)
+	slot3(slot5)
 
-	slot2 = slot0.curEnt
-	slot2 = slot2.eModel
-	slot3 = NotNil
-	slot5 = slot2
-	slot3 = slot3(slot5)
+	slot3 = slot0.curEnt
+	slot5 = slot3
+	slot3 = slot3.setModelLayer
+	slot6 = ClientConst
+	slot6 = slot6.LayerDefine
+	slot6 = slot6.LAYER_UI_SCENE
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.curEnt
+	slot3 = slot3.eModel
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
@@ -192,145 +205,146 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 45-56, warpins: 1 ---
-	slot3 = PetProtoTypeData
-	slot4 = slot0.curTemplateId
-	slot3 = slot3[slot4]
-	slot4 = slot2.modelComponent
-	slot4 = slot4.modelView
-	slot5, slot6 = nil
-	slot7 = ClientModelUtils
-	slot7 = slot7.getModelExtraInfo
-	slot9 = slot3
-	slot10 = slot0.label
+	--- BLOCK #3 48-58, warpins: 1 ---
+	slot4 = PetProtoTypeData
+	slot5 = slot0.curTemplateId
+	slot4 = slot4[slot5]
+	slot5 = slot3.modelModelView
+	slot6, slot7 = nil
+	slot8 = ClientModelUtils
+	slot8 = slot8.getModelExtraInfo
+	slot10 = slot4
+	slot11 = slot0.label
 	--- END OF BLOCK #3 ---
 
-	slot10 = if not slot10 then
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 57-57, warpins: 1 ---
-	slot10 = 0
+	--- BLOCK #4 59-59, warpins: 1 ---
+	slot11 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 58-60, warpins: 2 ---
-	slot11 = slot0.gender
+	--- BLOCK #5 60-62, warpins: 2 ---
+	slot12 = slot0.gender
 	--- END OF BLOCK #5 ---
 
-	slot11 = if not slot11 then
+	slot12 = if not slot12 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 61-61, warpins: 1 ---
-	slot11 = 0
+	--- BLOCK #6 63-63, warpins: 1 ---
+	slot12 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 62-110, warpins: 2 ---
-	slot12 = false
-	slot7 = slot7(slot9, slot10, slot11, slot12)
-	slot5 = slot7
-	slot7 = ClientModelUtils
-	slot7 = slot7.applyModelAppearance
-	slot9 = slot4.modelInfo
-	slot10 = slot3
-	slot11 = slot5
+	--- BLOCK #7 64-113, warpins: 2 ---
+	slot13 = false
+	slot8 = slot8(slot10, slot11, slot12, slot13)
+	slot6 = slot8
+	slot8 = ClientModelUtils
+	slot8 = slot8.applyModelAppearance
+	slot10 = slot5.modelInfo
+	slot11 = slot4
+	slot12 = slot6
 
-	slot7(slot9, slot10, slot11)
+	slot8(slot10, slot11, slot12)
 
-	slot7 = slot2.playableComponent
 	slot8 = Vector3
 	slot10 = 0
 	slot11 = 0
 	slot12 = 0
 	slot8 = slot8(slot10, slot11, slot12)
-	slot7.RootRotationScale = slot8
-	slot7 = ClientModelUtils
-	slot7 = slot7.applyAnimController
-	slot9 = slot0.curEnt
-	slot10 = slot2.playableComponent
-	slot11 = slot1
+	slot3.RootRotationScale = slot8
+	slot8 = ClientModelUtils
+	slot8 = slot8.applyAnimController
+	slot10 = slot0.curEnt
+	slot11 = slot3
+	slot12 = slot1
 
-	slot7(slot9, slot10, slot11)
+	slot8(slot10, slot11, slot12)
 
-	slot7 = slot0.curEnt
-	slot9 = slot7
-	slot7 = slot7.toggleLodTick
-	slot10 = false
+	slot8 = slot0.curEnt
+	slot10 = slot8
+	slot8 = slot8.setLodTickEnable
+	slot11 = Const
+	slot11 = slot11.LOD_TICK_KEY
+	slot11 = slot11.DEFAULT
+	slot12 = false
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11, slot12)
 
-	slot7 = slot0.curEnt
-	slot9 = slot7
-	slot7 = slot7.setRendererLod
-	slot10 = 0
+	slot8 = slot0.curEnt
+	slot10 = slot8
+	slot8 = slot8.setRendererLod
+	slot11 = 0
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
-	slot9 = slot4
-	slot7 = slot4.RefreshModels
+	slot10 = slot5
+	slot8 = slot5.RefreshModels
 
-	slot7(slot9)
+	slot8(slot10)
 
-	slot7 = slot0.curEnt
-	slot9 = slot7
-	slot7 = slot7.setModelVisible
-	slot10 = ClientConst
-	slot10 = slot10.MODEL_VISIBLE_KEY
-	slot10 = slot10.UIScene
-	slot11 = true
+	slot8 = slot0.curEnt
+	slot10 = slot8
+	slot8 = slot8.setModelVisible
+	slot11 = ClientConst
+	slot11 = slot11.MODEL_VISIBLE_KEY
+	slot11 = slot11.UIScene
+	slot12 = true
 
-	slot7(slot9, slot10, slot11)
+	slot8(slot10, slot11, slot12)
 
-	slot7 = slot2.transform
-	slot9 = slot7
-	slot7 = slot7.SetParent
-	slot10 = slot0.petPosTransform
-	slot11 = false
+	slot10 = slot3
+	slot8 = slot3.SetTransformParent
+	slot11 = slot0.petPosTransform
+	slot12 = false
 
-	slot7(slot9, slot10, slot11)
+	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 111-135, warpins: 2 ---
-	slot3 = slot2.modelComponent
-	slot5 = slot3
-	slot3 = slot3.TryGetHead
-	slot3, slot4, slot5 = slot3(slot5)
-	slot6 = slot0.curEnt
-	slot8 = slot6
-	slot6 = slot6.getRotation
-	slot6 = slot6(slot8)
-	slot7 = Vector3
-	slot7 = slot7.forward
-	slot6 = slot6 * slot7
-	slot7 = slot5 * slot6
-	slot7 = slot7 * 2
-	slot7 = slot4 + slot7
-	slot8 = slot0.cameraCamera
-	slot8 = slot8.transform
-	slot8.position = slot7
-	slot9 = Quaternion
-	slot9 = slot9.LookRotation
-	slot11 = -slot6
-	slot12 = Vector3
-	slot12 = slot12.up
-	slot9 = slot9(slot11, slot12)
-	slot8.rotation = slot9
+	--- BLOCK #8 114-139, warpins: 2 ---
+	slot6 = slot3
+	slot4 = slot3.TryGetHead
+	slot7 = Const
+	slot7 = slot7.COMPONENT_INDEX_MODEL
+	slot4, slot5, slot6 = slot4(slot6, slot7)
+	slot7 = slot0.curEnt
+	slot9 = slot7
+	slot7 = slot7.getRotation
+	slot7 = slot7(slot9)
+	slot8 = Vector3
+	slot8 = slot8.forward
+	slot7 = slot7 * slot8
+	slot8 = slot6 * slot7
+	slot8 = slot8 * 2
+	slot8 = slot5 + slot8
+	slot9 = slot0.cameraCamera
+	slot9 = slot9.transform
+	slot9.position = slot8
+	slot10 = Quaternion
+	slot10 = slot10.LookRotation
+	slot12 = -slot7
+	slot13 = Vector3
+	slot13 = slot13.up
+	slot10 = slot10(slot12, slot13)
+	slot9.rotation = slot10
 
 	return
 	--- END OF BLOCK #8 ---
@@ -339,9 +353,9 @@ slot7 = function(slot0)
 
 end
 
-slot2.refreshEntity = slot7
+slot3.refreshEntity = slot9
 
-slot7 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = PetSimpleScene
 	slot1 = slot1.super
@@ -372,15 +386,16 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #2 13-76, warpins: 1 ---
+	--- BLOCK #2 13-77, warpins: 1 ---
 	slot2 = slot0.curEnt
 	slot4 = slot2
 	slot2 = slot2.getPosition
 	slot2 = slot2(slot4)
-	slot3 = slot1.modelComponent
-	slot5 = slot3
-	slot3 = slot3.TryGetHead
-	slot3, slot4, slot5 = slot3(slot5)
+	slot5 = slot1
+	slot3 = slot1.TryGetHead
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_MODEL
+	slot3, slot4, slot5 = slot3(slot5, slot6)
 	slot6 = slot0.curEnt
 	slot8 = slot6
 	slot6 = slot6.getRotation
@@ -443,7 +458,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 77-77, warpins: 3 ---
+	--- BLOCK #3 78-78, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -451,9 +466,9 @@ slot7 = function(slot0)
 
 end
 
-slot2.beforeAnimation = slot7
+slot3.beforeAnimation = slot9
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

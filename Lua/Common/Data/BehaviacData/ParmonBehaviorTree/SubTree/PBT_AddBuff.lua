@@ -7,24 +7,24 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/PBT_AddBuff",
-	agenttype = "CombatAgent",
-	version = 10
+	useForRoute = false,
+	version = 10,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
 	name = "tBuffId",
+	type = "int",
 	const = 0,
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
 	name = "duration",
+	type = "float",
 	const = -1,
 	value = "-1"
 }

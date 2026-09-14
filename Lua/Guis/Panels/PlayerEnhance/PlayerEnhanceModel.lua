@@ -1,198 +1,201 @@
---- BLOCK #0 1-301, warpins: 1 ---
+--- BLOCK #0 1-304, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
-slot2 = slot0.getLogger
-slot4 = "PlayerEnhanceModel"
+slot2 = require
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
-slot3 = require
-slot5 = "Core.Framework.Class"
+slot3 = slot1.getLogger
+slot5 = "PlayerEnhanceModel"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Guis.UIModel"
+slot6 = "Core.Framework.Class"
 slot4 = slot4(slot6)
-slot5 = slot3.LightClass
-slot7 = "PlayerEnhanceModel"
-slot8 = slot4
-slot5 = slot5(slot7, slot8)
-slot6 = require
-slot8 = "Common.Const.AbilityConst"
-slot6 = slot6(slot8)
+slot5 = require
+slot7 = "Guis.UIModel"
+slot5 = slot5(slot7)
+slot6 = slot4.LightClass
+slot8 = "PlayerEnhanceModel"
+slot9 = slot5
+slot6 = slot6(slot8, slot9)
 slot7 = require
-slot9 = "Data.player_skill_tree_data"
+slot9 = "Common.Const.AbilityConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.player_skill_data"
+slot10 = "Data.player_skill_tree_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.player_level_data"
+slot11 = "Data.player_skill_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.player_title_data"
+slot12 = "Data.player_level_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.pet_data"
+slot13 = "Data.player_title_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.custom_trigger_data"
+slot14 = "Data.pet_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_avatar_data"
+slot15 = "Data.custom_trigger_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.sys_config_data"
+slot16 = "Data.pet_avatar_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Const.ItemConst"
+slot17 = "Data.sys_config_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Utils.Utils"
+slot18 = "Common.Const.ItemConst"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Utils.LuaUIUtils"
+slot19 = "Common.Utils.Utils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.Utils.ItemUtils"
+slot20 = "Utils.LuaUIUtils"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Const.ClientConst"
+slot21 = "Common.Utils.ItemUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Data.player_skill_reverse_data"
+slot22 = "Const.ClientConst"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.player_head_icon_data"
+slot23 = "Data.player_skill_reverse_data"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Common.Const.Const"
+slot24 = "Data.player_head_icon_data"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Const.RedDotConst"
+slot25 = "Common.Const.Const"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "GameApp.Quest.QuestUtils"
+slot26 = "Const.RedDotConst"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Common.Const.QuestConst"
+slot27 = "GameApp.Quest.QuestUtils"
 slot25 = slot25(slot27)
 slot26 = require
-slot28 = "Utils.ClientTextUtils"
+slot28 = "Common.Const.QuestConst"
 slot26 = slot26(slot28)
 slot27 = require
-slot29 = "Guis.Utils.BadgeUtils"
+slot29 = "Utils.ClientTextUtils"
 slot27 = slot27(slot29)
 slot28 = require
-slot30 = "Data.show_title_data"
+slot30 = "Guis.Utils.BadgeUtils"
 slot28 = slot28(slot30)
 slot29 = require
-slot31 = "Data.player_title_data"
+slot31 = "Utils.ShowTitleUtils"
 slot29 = slot29(slot31)
-slot30 = 6
-slot5.ACTIVE_SKILL_ROW_COUNT = slot30
-slot30 = 5
-slot5.ACTIVE_SKILL_COL_COUNT = slot30
-slot30 = 6
-slot5.PASSIVE_SKILL_ROW_COUNT = slot30
-slot30 = 7
-slot5.PASSIVE_SKILL_COL_COUNT = slot30
-slot30 = 6
-slot5.MAX_LEVEL = slot30
-slot30 = {
+slot30 = require
+slot32 = "Data.player_title_data"
+slot30 = slot30(slot32)
+slot31 = 6
+slot6.ACTIVE_SKILL_ROW_COUNT = slot31
+slot31 = 5
+slot6.ACTIVE_SKILL_COL_COUNT = slot31
+slot31 = 6
+slot6.PASSIVE_SKILL_ROW_COUNT = slot31
+slot31 = 7
+slot6.PASSIVE_SKILL_COL_COUNT = slot31
+slot31 = 6
+slot6.MAX_LEVEL = slot31
+slot31 = {
+	CANT_UNLOCK_CONDITION_NOT_MEET = 2,
 	CANT_UNLOCK_LEVEL_INSUFFICIENT = 1,
 	NEED_TURN_POSITIVE = 8,
 	MAX_LEVEL = 7,
 	CAN_UPGRADE = 6,
 	CANT_UPGRADE_CONDITION_NOT_MEET = 5,
 	CANT_UPGRADE_LEVEL_INSUFFICIENT = 4,
-	CAN_UNLOCK = 3,
-	CANT_UNLOCK_CONDITION_NOT_MEET = 2
+	CAN_UNLOCK = 3
 }
-slot5.SKILL_STATE = slot30
-slot30 = {
+slot6.SKILL_STATE = slot31
+slot31 = {
+	WAITING = 2,
 	CANT_UPGRADE = 1,
 	CAN_UPGRADE = 3,
-	MAX_RANK = 4,
-	WAITING = 2
+	MAX_RANK = 4
 }
-slot5.RANK_STATE = slot30
-slot30 = {}
-slot31 = slot5.SKILL_STATE
-slot31 = slot31.CANT_UNLOCK_LEVEL_INSUFFICIENT
-slot32 = "UNLOCK_PLAYER_ENHANCE"
-slot30[slot31] = slot32
-slot31 = slot5.SKILL_STATE
-slot31 = slot31.CAN_UNLOCK
-slot32 = "LEARN"
-slot30[slot31] = slot32
-slot31 = slot5.SKILL_STATE
-slot31 = slot31.CANT_UPGRADE_LEVEL_INSUFFICIENT
-slot32 = "UNLOCK_PLAYER_ENHANCE"
-slot30[slot31] = slot32
-slot31 = slot5.SKILL_STATE
-slot31 = slot31.CAN_UPGRADE
-slot32 = "UPGRADE"
-slot30[slot31] = slot32
-slot31 = slot5.SKILL_STATE
-slot31 = slot31.MAX_LEVEL
-slot32 = "FULL_LEVEL"
-slot30[slot31] = slot32
-slot31 = slot5.SKILL_STATE
-slot31 = slot31.NEED_TURN_POSITIVE
-slot32 = "TURN_POSITIVE"
-slot30[slot31] = slot32
-slot5.STATE_NAME = slot30
-slot30 = {
+slot6.RANK_STATE = slot31
+slot31 = {}
+slot32 = slot6.SKILL_STATE
+slot32 = slot32.CANT_UNLOCK_LEVEL_INSUFFICIENT
+slot33 = "UNLOCK_PLAYER_ENHANCE"
+slot31[slot32] = slot33
+slot32 = slot6.SKILL_STATE
+slot32 = slot32.CAN_UNLOCK
+slot33 = "LEARN"
+slot31[slot32] = slot33
+slot32 = slot6.SKILL_STATE
+slot32 = slot32.CANT_UPGRADE_LEVEL_INSUFFICIENT
+slot33 = "UNLOCK_PLAYER_ENHANCE"
+slot31[slot32] = slot33
+slot32 = slot6.SKILL_STATE
+slot32 = slot32.CAN_UPGRADE
+slot33 = "UPGRADE"
+slot31[slot32] = slot33
+slot32 = slot6.SKILL_STATE
+slot32 = slot32.MAX_LEVEL
+slot33 = "FULL_LEVEL"
+slot31[slot32] = slot33
+slot32 = slot6.SKILL_STATE
+slot32 = slot32.NEED_TURN_POSITIVE
+slot33 = "TURN_POSITIVE"
+slot31[slot32] = slot33
+slot6.STATE_NAME = slot31
+slot31 = {
+	SPECIAL = 4,
 	EXPLORE = 3,
 	PASSIVE = 2,
-	COMBATS = 1,
-	SPECIAL = 4
+	COMBATS = 1
 }
-slot5.SKILL_TYPE = slot30
-slot30 = {}
-slot31 = slot6.SKILL_TYPE
-slot31 = slot31.COMBATS
-slot32 = "PLAYER_SKILLS_1"
-slot30[slot31] = slot32
-slot31 = slot6.SKILL_TYPE
-slot31 = slot31.PASSIVE
-slot32 = "PLAYER_SKILLS_2"
-slot30[slot31] = slot32
-slot31 = slot6.SKILL_TYPE
-slot31 = slot31.EXPLORE
-slot32 = "PLAYER_SKILLS_3"
-slot30[slot31] = slot32
-slot31 = slot6.SKILL_TYPE
-slot31 = slot31.SPECIAL
-slot32 = "PLAYER_SKILLS_4"
-slot30[slot31] = slot32
-slot5.SKILL_TYPE_NAME = slot30
-slot30 = {
+slot6.SKILL_TYPE = slot31
+slot31 = {}
+slot32 = slot7.SKILL_TYPE
+slot32 = slot32.COMBATS
+slot33 = "PLAYER_SKILLS_1"
+slot31[slot32] = slot33
+slot32 = slot7.SKILL_TYPE
+slot32 = slot32.PASSIVE
+slot33 = "PLAYER_SKILLS_2"
+slot31[slot32] = slot33
+slot32 = slot7.SKILL_TYPE
+slot32 = slot32.EXPLORE
+slot33 = "PLAYER_SKILLS_3"
+slot31[slot32] = slot33
+slot32 = slot7.SKILL_TYPE
+slot32 = slot32.SPECIAL
+slot33 = "PLAYER_SKILLS_4"
+slot31[slot32] = slot33
+slot6.SKILL_TYPE_NAME = slot31
+slot31 = {
+	CAN_RECEIVE = 2,
 	LOCKED = 1,
-	HAS_RECEIVED = 3,
-	CAN_RECEIVE = 2
+	HAS_RECEIVED = 3
 }
-slot5.LEVEL_AWARD_STATE = slot30
-slot30 = {
+slot6.LEVEL_AWARD_STATE = slot31
+slot31 = {
+	SKILL_TREE = 2,
 	MAIN_PAGE = 1,
 	BADGE_PAGE = 4,
-	SKILL_EQUIP = 3,
-	SKILL_TREE = 2
+	SKILL_EQUIP = 3
 }
-slot5.MODEL_STATE = slot30
-slot30 = {}
-slot31 = slot6.SKILL_TYPE
-slot31 = slot31.COMBATS
-slot32 = {
+slot6.MODEL_STATE = slot31
+slot31 = {}
+slot32 = slot7.SKILL_TYPE
+slot32 = slot32.COMBATS
+slot33 = {
 	1,
 	2
 }
-slot30[slot31] = slot32
-slot31 = slot6.SKILL_TYPE
-slot31 = slot31.PASSIVE
-slot32 = {
+slot31[slot32] = slot33
+slot32 = slot7.SKILL_TYPE
+slot32 = slot32.PASSIVE
+slot33 = {
 	3,
 	4,
 	5,
@@ -200,24 +203,24 @@ slot32 = {
 	7,
 	8
 }
-slot30[slot31] = slot32
-slot5.SKILL_TREE_COL = slot30
-slot30 = {
+slot31[slot32] = slot33
+slot6.SKILL_TREE_COL = slot31
+slot31 = {
 	"CLIMB",
 	"GLIDE",
 	"SWIM"
 }
-slot5.EXPLORE_SKILL_TITLE = slot30
-slot30 = {
+slot6.EXPLORE_SKILL_TITLE = slot31
+slot31 = {
 	"canClimb",
 	"canGlide",
 	"canSwim"
 }
-slot5.EXPLORE_SKILL_FIELD = slot30
-slot30 = 1
-slot5.HIDE_LEVEL = slot30
+slot6.EXPLORE_SKILL_FIELD = slot31
+slot31 = 1
+slot6.HIDE_LEVEL = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -231,7 +234,7 @@ slot30 = function(slot0)
 	slot3 = slot1.exp
 	slot2.curExp = slot3
 	slot3 = LuaUIUtils
-	slot3 = slot3.getStarTitleName
+	slot3 = slot3.getStarTitleNameForIcon
 	slot5 = slot1.starTitle
 	slot3 = slot3(slot5)
 	slot2.starName = slot3
@@ -319,9 +322,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getPlayerBaseInfo = slot30
+slot6.getPlayerBaseInfo = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = TitleData
 	slot1 = #slot1
@@ -333,9 +336,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getRowCount = slot30
+slot6.getRowCount = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot4 = slot0
@@ -363,7 +366,7 @@ slot30 = function(slot0)
 	slot11 = slot11(slot13)
 	slot10.icon = slot11
 	slot11 = LuaUIUtils
-	slot11 = slot11.getStarTitleName
+	slot11 = slot11.getStarTitleNameForIcon
 	slot13 = slot6
 	slot11 = slot11(slot13)
 	slot10.starName = slot11
@@ -409,9 +412,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getTreeHeadList = slot30
+slot6.getTreeHeadList = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -613,9 +616,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getTreeLearnPointDataList = slot30
+slot6.getTreeLearnPointDataList = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.SKILL_TREE_COL
@@ -900,9 +903,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getSkillTreeDataList = slot30
+slot6.getSkillTreeDataList = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.Count
 	slot2 = slot2 - 1
@@ -955,9 +958,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.refreshSkillTreeDataList = slot30
+slot6.refreshSkillTreeDataList = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SkillTreeData
 	slot3 = slot3[slot1]
@@ -1014,9 +1017,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.getSkillDataWithLv = slot30
+slot6.getSkillDataWithLv = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.isEmpty
 
@@ -1349,358 +1352,428 @@ slot30 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 135-146, warpins: 2 ---
+	--- BLOCK #29 135-147, warpins: 2 ---
 	slot12 = slot10.learnAbilityId
 	slot1.realId = slot12
-	slot12 = slot10.video
-	slot1.video = slot12
-	slot12 = pg
-	slot12 = slot12.game
-	slot12 = slot12.setting
-	slot14 = slot12
-	slot12 = slot12.getShowDebugId
-	slot12 = slot12(slot14)
+	slot12 = nil
+	slot13 = pg
+	slot13 = slot13.me
+	slot15 = slot13
+	slot13 = slot13.getConfigData
+	slot13 = slot13(slot15)
+	slot14 = pg
+	slot14 = slot14.me
+	slot14 = slot14.gender
 	--- END OF BLOCK #29 ---
 
-	slot12 = if slot12 then
+	slot14 = if not slot14 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 147-154, warpins: 1 ---
-	slot12 = string
-	slot12 = slot12.format
-	slot14 = "%s - %d - %d"
-	slot15 = slot1.name
-	slot16 = slot3
-	slot17 = slot7
-	slot12 = slot12(slot14, slot15, slot16, slot17)
-	slot1.name = slot12
+	--- BLOCK #30 148-148, warpins: 1 ---
+	slot14 = slot13.gender
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 155-157, warpins: 2 ---
-	slot12 = slot10.desc
+	--- BLOCK #31 149-150, warpins: 2 ---
 	--- END OF BLOCK #31 ---
 
-	slot12 = if slot12 then
+	if slot14 == 1 then
 	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 158-163, warpins: 1 ---
-	slot12 = pg
-	slot12 = slot12.getLocalizationText
-	slot14 = slot10.desc
-	slot12 = slot12(slot14)
+	--- BLOCK #32 151-152, warpins: 1 ---
+	slot12 = slot10.videoM
 	--- END OF BLOCK #32 ---
 
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #33 164-164, warpins: 1 ---
-	slot12 = "Empty!"
+	--- BLOCK #33 153-153, warpins: 1 ---
+	slot12 = slot10.videoF
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 165-165, warpins: 2 ---
-	slot1.desc = slot12
+	--- BLOCK #34 154-159, warpins: 2 ---
+	slot15 = string
+	slot15 = slot15.isNilOrEmpty
+	slot17 = slot12
+	slot15 = slot15(slot17)
 	--- END OF BLOCK #34 ---
 
-	FLOW; TARGET BLOCK #35
+	slot15 = if slot15 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
 
 
-	--- BLOCK #35 166-169, warpins: 2 ---
-	slot12 = {}
-	slot13 = slot10.diffName1
+	--- BLOCK #35 160-160, warpins: 1 ---
+	slot12 = slot10.video
 	--- END OF BLOCK #35 ---
 
-	slot13 = if slot13 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #37
-	end
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #36 170-188, warpins: 1 ---
-	slot13 = #slot12
-	slot13 = slot13 + 1
-	slot14 = {
-		tIndex = 1
-	}
+	--- BLOCK #36 161-169, warpins: 2 ---
+	slot1.video = slot12
 	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffName1
+	slot15 = slot15.game
+	slot15 = slot15.setting
+	slot17 = slot15
+	slot15 = slot15.getShowDebugId
 	slot15 = slot15(slot17)
-	slot14.name = slot15
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffValueBefore1
-	slot15 = slot15(slot17)
-	slot14.cur = slot15
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffValueAfter1
-	slot15 = slot15(slot17)
-	slot14.next = slot15
-	slot12[slot13] = slot14
 	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 189-191, warpins: 2 ---
-	slot13 = slot10.diffName2
-	--- END OF BLOCK #37 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #38
+	slot15 = if slot15 then
+	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #38
 	end
 
 
-	--- BLOCK #38 192-210, warpins: 1 ---
-	slot13 = #slot12
-	slot13 = slot13 + 1
-	slot14 = {
-		tIndex = 1
-	}
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffName2
-	slot15 = slot15(slot17)
-	slot14.name = slot15
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffValueBefore2
-	slot15 = slot15(slot17)
-	slot14.cur = slot15
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffValueAfter2
-	slot15 = slot15(slot17)
-	slot14.next = slot15
-	slot12[slot13] = slot14
+	--- BLOCK #37 170-177, warpins: 1 ---
+	slot15 = string
+	slot15 = slot15.format
+	slot17 = "%s - %d - %d"
+	slot18 = slot1.name
+	slot19 = slot3
+	slot20 = slot7
+	slot15 = slot15(slot17, slot18, slot19, slot20)
+	slot1.name = slot15
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 178-180, warpins: 2 ---
+	slot15 = slot10.desc
 	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #39
+	slot15 = if slot15 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #42
+	end
 
 
-	--- BLOCK #39 211-213, warpins: 2 ---
-	slot13 = slot10.diffName3
+	--- BLOCK #39 181-186, warpins: 1 ---
+	slot15 = pg
+	slot15 = slot15.getLocalizationText
+	slot17 = slot10.desc
+	slot15 = slot15(slot17)
 	--- END OF BLOCK #39 ---
 
-	slot13 = if slot13 then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #40
 	else
 	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #40 214-232, warpins: 1 ---
-	slot13 = #slot12
-	slot13 = slot13 + 1
-	slot14 = {
-		tIndex = 1
-	}
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffName3
-	slot15 = slot15(slot17)
-	slot14.name = slot15
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffValueBefore3
-	slot15 = slot15(slot17)
-	slot14.cur = slot15
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot10.diffValueAfter3
-	slot15 = slot15(slot17)
-	slot14.next = slot15
-	slot12[slot13] = slot14
+	--- BLOCK #40 187-187, warpins: 1 ---
+	slot15 = "Empty!"
 	--- END OF BLOCK #40 ---
 
 	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 233-236, warpins: 2 ---
-	slot13 = #slot12
-	slot14 = 0
+	--- BLOCK #41 188-188, warpins: 2 ---
+	slot1.desc = slot15
 	--- END OF BLOCK #41 ---
 
-	if slot13 > slot14 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
+	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 237-247, warpins: 1 ---
-	slot13 = table
-	slot13 = slot13.insert
-	slot15 = slot12
-	slot16 = 1
-	slot17 = {
-		tIndex = 0
-	}
-	slot18 = pg
-	slot18 = slot18.getGameString
-	slot20 = "LEVEL_UP_GAIN"
-	slot18 = slot18(slot20)
-	slot17.name = slot18
-
-	slot13(slot15, slot16, slot17)
-
+	--- BLOCK #42 189-192, warpins: 2 ---
+	slot15 = {}
+	slot16 = slot10.diffName1
 	--- END OF BLOCK #42 ---
 
-	FLOW; TARGET BLOCK #43
+	slot16 = if slot16 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #44
+	end
 
 
-	--- BLOCK #43 248-249, warpins: 2 ---
+	--- BLOCK #43 193-211, warpins: 1 ---
+	slot16 = #slot15
+	slot16 = slot16 + 1
+	slot17 = {
+		tIndex = 1
+	}
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffName1
+	slot18 = slot18(slot20)
+	slot17.name = slot18
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffValueBefore1
+	slot18 = slot18(slot20)
+	slot17.cur = slot18
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffValueAfter1
+	slot18 = slot18(slot20)
+	slot17.next = slot18
+	slot15[slot16] = slot17
 	--- END OF BLOCK #43 ---
 
-	if slot7 == 0 then
-	JUMP TO BLOCK #44
-	else
-	JUMP TO BLOCK #45
-	end
+	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 250-253, warpins: 1 ---
-	slot13 = table
-	slot13 = slot13.clear
-	slot15 = slot12
-
-	slot13(slot15)
-
+	--- BLOCK #44 212-214, warpins: 2 ---
+	slot16 = slot10.diffName2
 	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #45
+	slot16 = if slot16 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
 
 
-	--- BLOCK #45 254-260, warpins: 2 ---
-	slot1.upDescList = slot12
-	slot13 = {}
-	slot14 = SkillData
-	slot14 = slot14[slot3]
-	slot14 = slot14[slot8]
+	--- BLOCK #45 215-233, warpins: 1 ---
+	slot16 = #slot15
+	slot16 = slot16 + 1
+	slot17 = {
+		tIndex = 1
+	}
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffName2
+	slot18 = slot18(slot20)
+	slot17.name = slot18
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffValueBefore2
+	slot18 = slot18(slot20)
+	slot17.cur = slot18
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffValueAfter2
+	slot18 = slot18(slot20)
+	slot17.next = slot18
+	slot15[slot16] = slot17
 	--- END OF BLOCK #45 ---
 
-	slot14 = if not slot14 then
-	JUMP TO BLOCK #46
-	else
-	JUMP TO BLOCK #47
-	end
+	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #46 261-261, warpins: 1 ---
-	slot14 = {}
+	--- BLOCK #46 234-236, warpins: 2 ---
+	slot16 = slot10.diffName3
 	--- END OF BLOCK #46 ---
 
-	FLOW; TARGET BLOCK #47
-
-
-	--- BLOCK #47 262-264, warpins: 2 ---
-	slot15 = slot14.needItem
-	--- END OF BLOCK #47 ---
-
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #48
+	slot16 = if slot16 then
+	JUMP TO BLOCK #47
 	else
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #48 265-265, warpins: 1 ---
-	slot15 = {}
+	--- BLOCK #47 237-255, warpins: 1 ---
+	slot16 = #slot15
+	slot16 = slot16 + 1
+	slot17 = {
+		tIndex = 1
+	}
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffName3
+	slot18 = slot18(slot20)
+	slot17.name = slot18
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffValueBefore3
+	slot18 = slot18(slot20)
+	slot17.cur = slot18
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot10.diffValueAfter3
+	slot18 = slot18(slot20)
+	slot17.next = slot18
+	slot15[slot16] = slot17
+	--- END OF BLOCK #47 ---
+
+	FLOW; TARGET BLOCK #48
+
+
+	--- BLOCK #48 256-259, warpins: 2 ---
+	slot16 = #slot15
+	slot17 = 0
 	--- END OF BLOCK #48 ---
 
-	FLOW; TARGET BLOCK #49
+	if slot16 > slot17 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #50
+	end
 
 
-	--- BLOCK #49 266-269, warpins: 2 ---
-	slot16 = pairs
+	--- BLOCK #49 260-270, warpins: 1 ---
+	slot16 = table
+	slot16 = slot16.insert
 	slot18 = slot15
-	slot16, slot17, slot18 = slot16(slot18)
+	slot19 = 1
+	slot20 = {
+		tIndex = 0
+	}
+	slot21 = pg
+	slot21 = slot21.getGameString
+	slot23 = "LEVEL_UP_GAIN"
+	slot21 = slot21(slot23)
+	slot20.name = slot21
+
+	slot16(slot18, slot19, slot20)
+
 	--- END OF BLOCK #49 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #51
+	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #50 270-291, warpins: 1 ---
-	slot21 = #slot13
-	slot21 = slot21 + 1
-	slot22 = {}
-	slot22.id = slot19
-	slot23 = LuaUIUtils
-	slot23 = slot23.getNameByItemId
-	slot25 = slot19
-	slot23 = slot23(slot25)
-	slot22.name = slot23
-	slot23 = LuaUIUtils
-	slot23 = slot23.getIconByItemId
-	slot25 = slot19
-	slot23 = slot23(slot25)
-	slot22.icon = slot23
-	slot22.num = slot20
-	slot23 = ItemUtils
-	slot23 = slot23.getItemCountById
-	slot25 = slot5
-	slot26 = slot19
-	slot23 = slot23(slot25, slot26)
-	slot22.ownNum = slot23
-	slot13[slot21] = slot22
+	--- BLOCK #50 271-272, warpins: 2 ---
 	--- END OF BLOCK #50 ---
 
-	FLOW; TARGET BLOCK #51
+	if slot7 == 0 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
 
 
-	--- BLOCK #51 292-293, warpins: 2 ---
+	--- BLOCK #51 273-276, warpins: 1 ---
+	slot16 = table
+	slot16 = slot16.clear
+	slot18 = slot15
+
+	slot16(slot18)
+
 	--- END OF BLOCK #51 ---
 
-	for slot19, slot20 in slot16, slot17, slot18
-	LOOP BLOCK #50
-	GO OUT TO BLOCK #52
+	FLOW; TARGET BLOCK #52
 
 
-	--- BLOCK #52 294-303, warpins: 1 ---
-	slot1.consume = slot13
-	slot18 = slot0
-	slot16 = slot0.parseConditionTrigger
-	slot19 = slot1
+	--- BLOCK #52 277-283, warpins: 2 ---
+	slot1.upDescList = slot15
+	slot16 = {}
+	slot17 = SkillData
+	slot17 = slot17[slot3]
+	slot17 = slot17[slot8]
+	--- END OF BLOCK #52 ---
 
-	slot16(slot18, slot19)
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #54
+	end
 
-	slot18 = slot0
-	slot16 = slot0.parseSkillState
-	slot19 = slot1
 
-	slot16(slot18, slot19)
+	--- BLOCK #53 284-284, warpins: 1 ---
+	slot17 = {}
+	--- END OF BLOCK #53 ---
+
+	FLOW; TARGET BLOCK #54
+
+
+	--- BLOCK #54 285-287, warpins: 2 ---
+	slot18 = slot17.needItem
+	--- END OF BLOCK #54 ---
+
+	slot18 = if not slot18 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #55 288-288, warpins: 1 ---
+	slot18 = {}
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 289-292, warpins: 2 ---
+	slot19 = pairs
+	slot21 = slot18
+	slot19, slot20, slot21 = slot19(slot21)
+	--- END OF BLOCK #56 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #58
+
+
+	--- BLOCK #57 293-314, warpins: 1 ---
+	slot24 = #slot16
+	slot24 = slot24 + 1
+	slot25 = {}
+	slot25.id = slot22
+	slot26 = LuaUIUtils
+	slot26 = slot26.getNameByItemId
+	slot28 = slot22
+	slot26 = slot26(slot28)
+	slot25.name = slot26
+	slot26 = LuaUIUtils
+	slot26 = slot26.getIconByItemId
+	slot28 = slot22
+	slot26 = slot26(slot28)
+	slot25.icon = slot26
+	slot25.num = slot23
+	slot26 = ItemUtils
+	slot26 = slot26.getItemCountById
+	slot28 = slot5
+	slot29 = slot22
+	slot26 = slot26(slot28, slot29)
+	slot25.ownNum = slot26
+	slot16[slot24] = slot25
+	--- END OF BLOCK #57 ---
+
+	FLOW; TARGET BLOCK #58
+
+
+	--- BLOCK #58 315-316, warpins: 2 ---
+	--- END OF BLOCK #58 ---
+
+	for slot22, slot23 in slot19, slot20, slot21
+	LOOP BLOCK #57
+	GO OUT TO BLOCK #59
+
+
+	--- BLOCK #59 317-326, warpins: 1 ---
+	slot1.consume = slot16
+	slot21 = slot0
+	slot19 = slot0.parseConditionTrigger
+	slot22 = slot1
+
+	slot19(slot21, slot22)
+
+	slot21 = slot0
+	slot19 = slot0.parseSkillState
+	slot22 = slot1
+
+	slot19(slot21, slot22)
 
 	return
-	--- END OF BLOCK #52 ---
+	--- END OF BLOCK #59 ---
 
 
 
 end
 
-slot5.parseSkillInfo = slot30
+slot6.parseSkillInfo = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1740,7 +1813,7 @@ slot30 = function(slot0, slot1)
 
 
 	--- BLOCK #3 17-17, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -1972,9 +2045,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.parseConditionTrigger = slot30
+slot6.parseConditionTrigger = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getSkillState
@@ -1989,9 +2062,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.parseSkillState = slot30
+slot6.parseSkillState = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot1.abilityType
 	slot4 = AbilityConst
@@ -2117,9 +2190,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.parseSkillKeyBoard = slot30
+slot6.parseSkillKeyBoard = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AbilityConst
 	slot2 = slot2.PLAYER_ABILITY_HOTKEY
@@ -2151,9 +2224,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.parseSkillFixedKeyBoard = slot30
+slot6.parseSkillFixedKeyBoard = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.row
 	--- END OF BLOCK #0 ---
@@ -2244,9 +2317,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.checkSkillInColumns = slot30
+slot6.checkSkillInColumns = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.row
 	--- END OF BLOCK #0 ---
@@ -2360,9 +2433,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.parseColumnIndex = slot30
+slot6.parseColumnIndex = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2776,9 +2849,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getEquipSkillList = slot30
+slot6.getEquipSkillList = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2915,9 +2988,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.refreshEquipSkillList = slot30
+slot6.refreshEquipSkillList = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = 0
 	slot4 = slot1.Count
@@ -2965,9 +3038,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.getEquipSkillItemIndex = slot30
+slot6.getEquipSkillItemIndex = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = {}
 	slot4 = 1
@@ -3229,9 +3302,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.getEquippedSkillList = slot30
+slot6.getEquippedSkillList = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3447,9 +3520,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.refreshEquippedSkillList = slot30
+slot6.refreshEquippedSkillList = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -3499,9 +3572,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getLearnDataList = slot30
+slot6.getLearnDataList = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.id
 	slot3 = SkillData
@@ -3770,9 +3843,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getSkillState = slot30
+slot6.getSkillState = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3814,9 +3887,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getCurSkillIndex = slot30
+slot6.getCurSkillIndex = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3850,9 +3923,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getDefaultGroupName = slot30
+slot6.getDefaultGroupName = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3982,9 +4055,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getGroupName = slot30
+slot6.getGroupName = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pg
@@ -4216,9 +4289,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.getSkillGroupOptions = slot30
+slot6.getSkillGroupOptions = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4492,9 +4565,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot5.checkSkillValidWithFilter = slot30
+slot6.checkSkillValidWithFilter = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-105, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -4624,9 +4697,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.initFilter = slot30
+slot6.initFilter = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.filter
 	--- END OF BLOCK #0 ---
@@ -4659,16 +4732,16 @@ slot30 = function(slot0)
 
 end
 
-slot5.getFilter = slot30
+slot6.getFilter = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getFilter
 	slot1 = slot1(slot3)
 	slot2 = {
-		state = 0,
-		rareMode = 0
+		rareMode = 0,
+		state = 0
 	}
 	slot3 = true
 	slot4 = ipairs
@@ -4775,9 +4848,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.parseFilter = slot30
+slot6.parseFilter = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getFilter
@@ -4791,9 +4864,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.parseOrders = slot30
+slot6.parseOrders = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.parseOrders
@@ -4855,9 +4928,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.selectOrder = slot30
+slot6.selectOrder = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = 0
 	slot4 = slot0
@@ -4906,9 +4979,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getSelectOrderIndex = slot30
+slot6.getSelectOrderIndex = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.parseOrders
@@ -5005,9 +5078,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.parseOrderName = slot30
+slot6.parseOrderName = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initFilter
@@ -5021,9 +5094,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.clearFilter = slot30
+slot6.clearFilter = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -5100,9 +5173,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getExplorePetList = slot30
+slot6.getExplorePetList = slot31
 
-slot30 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
@@ -5224,9 +5297,9 @@ slot30 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.parsePetInfo = slot30
+slot6.parsePetInfo = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.redDotDirty
 	--- END OF BLOCK #0 ---
@@ -5260,9 +5333,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_CheckSaveDirty = slot30
+slot6.redDot_CheckSaveDirty = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = false
 	slot3 = slot1.state
@@ -5329,9 +5402,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.redDot_GetPlayerTreeTrListItemState = slot30
+slot6.redDot_GetPlayerTreeTrListItemState = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.state
 	--- END OF BLOCK #0 ---
@@ -5403,9 +5476,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.redDot_SetPlayerTreeTrListItemState = slot30
+slot6.redDot_SetPlayerTreeTrListItemState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 0
 	slot2 = pairs
@@ -5493,9 +5566,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetPlayerTreeItemNum = slot30
+slot6.redDot_GetPlayerTreeItemNum = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.redDot_GetPlayerTreeItemNum
@@ -5544,9 +5617,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetPlayerTabTreeState = slot30
+slot6.redDot_GetPlayerTabTreeState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = true
 	slot0.redDotDirty = slot1
@@ -5574,9 +5647,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_SetPlayerTabTreeState = slot30
+slot6.redDot_SetPlayerTabTreeState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.redDot_GetPlayerTreeItemNum
@@ -5625,9 +5698,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetPlayerFuncMenuTreeState = slot30
+slot6.redDot_GetPlayerFuncMenuTreeState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.redDot_GetPlayerTreeItemNum
@@ -5653,9 +5726,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_SetPlayerFuncMenuTreeState = slot30
+slot6.redDot_SetPlayerFuncMenuTreeState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.redDot_GetPlayerTreeItemNum
@@ -5705,9 +5778,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetPlayerHUDTreeState = slot30
+slot6.redDot_GetPlayerHUDTreeState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.redDot_GetPlayerTreeItemNum
@@ -5734,9 +5807,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_SetPlayerHUDTreeState = slot30
+slot6.redDot_SetPlayerHUDTreeState = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -5841,7 +5914,7 @@ slot30 = function(slot0, slot1)
 
 
 	--- BLOCK #10 30-30, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
@@ -6013,9 +6086,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.redDot_CheckHasSkillCanEquip = slot30
+slot6.redDot_CheckHasSkillCanEquip = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.isEmpty
 	--- END OF BLOCK #0 ---
@@ -6046,9 +6119,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.redDot_GetPlayerMainEquipState = slot30
+slot6.redDot_GetPlayerMainEquipState = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = {}
 	slot3 = pg
@@ -6160,9 +6233,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.redDot_CheckHasPetCanEquip = slot30
+slot6.redDot_CheckHasPetCanEquip = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.isEmpty
 	--- END OF BLOCK #0 ---
@@ -6193,9 +6266,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.redDot_GetPlayerMainPetState = slot30
+slot6.redDot_GetPlayerMainPetState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getEquippedSkillList
@@ -6261,9 +6334,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetPointDotState = slot30
+slot6.redDot_GetPointDotState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -6285,9 +6358,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_CheckCanStarUP = slot30
+slot6.redDot_CheckCanStarUP = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.checkFuncUnlock
@@ -6433,9 +6506,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetFuncMenuPlayerState = slot30
+slot6.redDot_GetFuncMenuPlayerState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.checkFuncUnlock
@@ -6581,9 +6654,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.redDot_GetHUDPlayerState = slot30
+slot6.redDot_GetHUDPlayerState = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = BadgeUtils
 	slot1 = slot1.checkHasAnyBadgeTypeIsUnlock
@@ -6703,9 +6776,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getListTabData = slot30
+slot6.getListTabData = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -6767,9 +6840,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.setMainTabRedDot = slot30
+slot6.setMainTabRedDot = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -6826,9 +6899,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.setBadgeTabRedDot = slot30
+slot6.setBadgeTabRedDot = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -6886,9 +6959,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot5.setSkillEquipTabRedDot = slot30
+slot6.setSkillEquipTabRedDot = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -6990,9 +7063,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getBadgeTabData = slot30
+slot6.getBadgeTabData = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = BadgeUtils
 	slot1 = slot1.getBadgeNumByTab
@@ -7005,9 +7078,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getBadgeNumByTab = slot30
+slot6.getBadgeNumByTab = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = BadgeUtils
 	slot1 = slot1.TYPE_ICON
@@ -7020,208 +7093,68 @@ slot30 = function(slot0)
 
 end
 
-slot5.getBadgeTabIconByTab = slot30
+slot6.getBadgeTabIconByTab = slot31
 
-slot30 = function()
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
-	slot0 = slot0.showTitles
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.isWholeTitle
+slot31 = function()
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot0 = ShowTitleUtils
+	slot0 = slot0.getShowTitleText
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.showTitles
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.showTitleExtra
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.isWholeTitle
+	slot0 = slot0(slot2, slot3, slot4)
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-14, warpins: 1 ---
-	slot1 = Const
-	slot1 = slot1.SHOW_TITLE_TYPE
-	slot1 = slot1.Whole
-	slot1 = slot0[slot1]
+	--- BLOCK #1 19-24, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getGameString
+	slot3 = "SHOW_TITLES_EMPTY"
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #1 ---
 
-	if slot1 == nil then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 15-19, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.getGameString
-	slot3 = "SHOW_TITLES_EMPTY"
-
-	return slot1(slot3)
+	--- BLOCK #2 25-25, warpins: 2 ---
+	slot1 = slot0
 
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-30, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.getLocalizationText
-	slot3 = ShowTitleData
-	slot4 = Const
-	slot4 = slot4.SHOW_TITLE_TYPE
-	slot4 = slot4.Whole
-	slot4 = slot0[slot4]
-	slot3 = slot3[slot4]
-	slot3 = slot3.titleText
-
-	return slot1(slot3)
-
+	--- BLOCK #3 26-26, warpins: 2 ---
+	return slot1
 	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #4 31-37, warpins: 1 ---
-	slot1, slot2 = nil
-	slot3 = Const
-	slot3 = slot3.SHOW_TITLE_TYPE
-	slot3 = slot3.Prefix
-	slot3 = slot0[slot3]
-	--- END OF BLOCK #4 ---
-
-	if slot3 == nil then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 38-39, warpins: 1 ---
-	slot1 = ""
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 40-50, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.getLocalizationText
-	slot5 = ShowTitleData
-	slot6 = Const
-	slot6 = slot6.SHOW_TITLE_TYPE
-	slot6 = slot6.Prefix
-	slot6 = slot0[slot6]
-	slot5 = slot5[slot6]
-	slot5 = slot5.titleText
-	slot3 = slot3(slot5)
-	slot1 = slot3
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 51-56, warpins: 2 ---
-	slot3 = Const
-	slot3 = slot3.SHOW_TITLE_TYPE
-	slot3 = slot3.Suffix
-	slot3 = slot0[slot3]
-	--- END OF BLOCK #7 ---
-
-	if slot3 == nil then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 57-58, warpins: 1 ---
-	slot2 = ""
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 59-69, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.getLocalizationText
-	slot5 = ShowTitleData
-	slot6 = Const
-	slot6 = slot6.SHOW_TITLE_TYPE
-	slot6 = slot6.Suffix
-	slot6 = slot0[slot6]
-	slot5 = slot5[slot6]
-	slot5 = slot5.titleText
-	slot3 = slot3(slot5)
-	slot2 = slot3
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 70-75, warpins: 2 ---
-	slot3 = Const
-	slot3 = slot3.SHOW_TITLE_TYPE
-	slot3 = slot3.Prefix
-	slot3 = slot0[slot3]
-	--- END OF BLOCK #10 ---
-
-	if slot3 == nil then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #11 76-81, warpins: 1 ---
-	slot3 = Const
-	slot3 = slot3.SHOW_TITLE_TYPE
-	slot3 = slot3.Suffix
-	slot3 = slot0[slot3]
-	--- END OF BLOCK #11 ---
-
-	if slot3 == nil then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 82-86, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.getGameString
-	slot5 = "SHOW_TITLES_EMPTY"
-
-	return slot3(slot5)
-
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 87-90, warpins: 2 ---
-	slot3 = slot1
-	slot4 = slot2
-	slot3 = slot3 .. slot4
-
-	return slot3
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 91-91, warpins: 4 ---
-	return
-	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot5.getMeTitle = slot30
+slot6.getMeTitle = slot31
 
-slot30 = function()
+slot31 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -7251,76 +7184,59 @@ slot30 = function()
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 12-19, warpins: 1 ---
+	--- BLOCK #3 12-18, warpins: 1 ---
 	slot3 = slot2.quest
 	slot4 = QuestUtils
 	slot4 = slot4.getAllAcceptedQuestsData
 	slot4 = slot4()
-	slot5 = pairs
-	slot7 = slot4
-	slot5, slot6, slot7 = slot5(slot7)
+	slot5 = slot4[slot3]
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	if slot5 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #4 20-22, warpins: 1 ---
-	slot10 = slot9[slot3]
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot5 = QuestUtils
+	slot5 = slot5.getMainQuestChapterConfig
+	slot7 = slot3
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #4 ---
 
-	if slot10 ~= nil then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 23-28, warpins: 1 ---
-	slot10 = QuestUtils
-	slot10 = slot10.getMainQuestChapterConfig
-	slot12 = slot3
-	slot10 = slot10(slot12)
+	--- BLOCK #5 25-26, warpins: 1 ---
+	slot6 = slot5.sectionId
+
+	return slot6
 	--- END OF BLOCK #5 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-30, warpins: 1 ---
-	slot11 = slot10.sectionId
-
-	return slot11
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 31-32, warpins: 4 ---
-	--- END OF BLOCK #7 ---
-
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 33-33, warpins: 2 ---
+	--- BLOCK #6 27-27, warpins: 4 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot5.getStarSectionId = slot30
+slot6.getStarSectionId = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerTitleData
 	slot1 = slot1[slot0]
@@ -7370,9 +7286,9 @@ slot30 = function(slot0)
 
 end
 
-slot5.getStarTitleColor = slot30
+slot6.getStarTitleColor = slot31
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

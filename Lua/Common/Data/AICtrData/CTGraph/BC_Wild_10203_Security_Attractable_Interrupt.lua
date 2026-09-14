@@ -1,56 +1,12 @@
---- BLOCK #0 1-29, warpins: 1 ---
+--- BLOCK #0 1-16, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {}
+slot1 = {}
+slot2 = slot0.SafeCall
+slot3 = slot0.DoAction
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -80,9 +36,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -91,24 +47,22 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot4 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 77
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "AddAITag"
-	slot7 = 0
-	slot8 = "Finish"
+	slot1 = _A
+	slot3 = slot0
+	slot4 = "AddAITag"
+	slot5 = 0
+	slot6 = "Finish"
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
+	slot1(slot3, slot4, slot5, slot6)
 
 	slot1 = true
 
@@ -119,30 +73,15 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_77_0 = slot7
+slot1._to_77_0 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot4 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = _C
 	slot3 = 74
 	slot4 = "GetSelfId"
 	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_74_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_74_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1(slot3, slot4, slot5)
 	slot2 = _C
 	slot4 = 75
 	slot5 = "HasAITag"
@@ -157,9 +96,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_75_2 = slot7
+slot1._get_75_2 = slot4
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

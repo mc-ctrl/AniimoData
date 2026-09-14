@@ -16,9 +16,9 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tTargetActorId",
-	value = "0",
 	const = 0
 }
 slot4[1] = slot5

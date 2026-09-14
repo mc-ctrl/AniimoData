@@ -620,7 +620,7 @@ end
 slot6._renderFilterItem = slot7
 
 slot7 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-23, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
@@ -637,145 +637,168 @@ slot7 = function(slot0, slot1, slot2)
 	slot6 = slot3.GetRefValue
 	slot9 = "rootUComponent"
 	slot6 = slot6(slot8, slot9)
-	slot9 = slot6
-	slot7 = slot6.TryChangePage
-	slot10 = "Sort"
-	slot11 = 0
-
-	slot7(slot9, slot10, slot11)
-
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.getSortKeyIndex
+	slot7 = slot7(slot9)
+	slot10 = slot6
+	slot8 = slot6.TryChangePage
+	slot11 = "Sort"
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	if slot7 ~= 0 then
 	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 26-27, warpins: 1 ---
+	slot12 = 1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 28-28, warpins: 1 ---
+	slot12 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 29-31, warpins: 2 ---
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #4 32-36, warpins: 1 ---
+	slot8 = {}
+	slot9 = ipairs
+	slot11 = slot2.options
+	slot9, slot10, slot11 = slot9(slot11)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #5 37-41, warpins: 1 ---
+	slot14 = {}
+	slot14.sortId = slot12
+	slot15 = slot13.text
+	--- END OF BLOCK #5 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 42-47, warpins: 1 ---
+	slot15 = pg
+	slot15 = slot15.getGameString
+	slot17 = slot13.text
+	slot15 = slot15(slot17)
+	--- END OF BLOCK #6 ---
+
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 48-48, warpins: 2 ---
+	slot15 = ""
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 49-50, warpins: 2 ---
+	slot14.label = slot15
+	slot8[slot12] = slot14
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 51-52, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	for slot12, slot13 in slot9, slot10, slot11
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 53-62, warpins: 1 ---
+	slot11 = slot4
+	slot9 = slot4.SetOptions
+	slot12 = slot8
+
+	slot9(slot11, slot12)
+
+	slot11 = slot4
+	slot9 = slot4.ForceSelect
+	slot12 = slot7
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #10 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 63-67, warpins: 1 ---
+	slot9 = slot5.gameObject
+	slot11 = slot9
+	slot9 = slot9.SetActiveEx
+	--- END OF BLOCK #11 ---
+
+	if slot7 == 0 then
+	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #1 24-28, warpins: 1 ---
-	slot7 = {}
-	slot8 = ipairs
-	slot10 = slot2.options
-	slot8, slot9, slot10 = slot8(slot10)
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #2 29-33, warpins: 1 ---
-	slot13 = {}
-	slot13.sortId = slot11
-	slot14 = slot12.text
-	--- END OF BLOCK #2 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 34-39, warpins: 1 ---
-	slot14 = pg
-	slot14 = slot14.getGameString
-	slot16 = slot12.text
-	slot14 = slot14(slot16)
-	--- END OF BLOCK #3 ---
-
-	slot14 = if not slot14 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 40-40, warpins: 2 ---
-	slot14 = ""
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 41-42, warpins: 2 ---
-	slot13.label = slot14
-	slot7[slot11] = slot13
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 43-44, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
-	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 45-58, warpins: 1 ---
-	slot10 = slot4
-	slot8 = slot4.SetOptions
-	slot11 = slot7
-
-	slot8(slot10, slot11)
-
-	slot8 = slot0.model
-	slot10 = slot8
-	slot8 = slot8.getSortKeyIndex
-	slot8 = slot8(slot10)
-	slot11 = slot4
-	slot9 = slot4.ForceSelect
-	slot12 = slot8
-
-	slot9(slot11, slot12)
-
-	--- END OF BLOCK #7 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 59-63, warpins: 1 ---
-	slot9 = slot5.gameObject
-	slot11 = slot9
-	slot9 = slot9.SetActiveEx
-	--- END OF BLOCK #8 ---
-
-	if slot8 == 0 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 64-65, warpins: 1 ---
+	--- BLOCK #12 68-69, warpins: 1 ---
 	slot12 = false
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #10 66-66, warpins: 1 ---
+	--- BLOCK #13 70-70, warpins: 1 ---
 	slot12 = true
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #11 67-67, warpins: 2 ---
+	--- BLOCK #14 71-71, warpins: 2 ---
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #12 68-69, warpins: 2 ---
+	--- BLOCK #15 72-73, warpins: 2 ---
 	slot9 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.selectedItem
@@ -950,29 +973,29 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 	slot4.luaSelectedChanged = slot9
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #13 70-71, warpins: 2 ---
-	--- END OF BLOCK #13 ---
+	--- BLOCK #16 74-75, warpins: 2 ---
+	--- END OF BLOCK #16 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #14 72-77, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0._refreshSortButtonState
-	slot10 = slot5
+	--- BLOCK #17 76-81, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0._refreshSortButtonState
+	slot11 = slot5
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
-	slot7 = function()
+	slot8 = function()
 		--- BLOCK #0 1-11, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.model
@@ -995,16 +1018,16 @@ slot7 = function(slot0, slot1, slot2)
 
 	end
 
-	slot5.luaClick = slot7
+	slot5.luaClick = slot8
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #15 78-79, warpins: 2 ---
+	--- BLOCK #18 82-83, warpins: 2 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #18 ---
 
 
 

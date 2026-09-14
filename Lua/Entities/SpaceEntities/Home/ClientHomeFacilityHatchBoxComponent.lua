@@ -1597,9 +1597,12 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 2 ---
-	slot1 = slot0.eModel
-	slot1 = slot1.animatorComponent
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.hasEModelComponent
+	slot4 = Const
+	slot4 = slot4.COMPONENT_INDEX_ANIMATOR
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #2 ---
 
@@ -1610,7 +1613,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #3 9-9, warpins: 1 ---
+	--- BLOCK #3 12-12, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -1618,7 +1621,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 10-16, warpins: 2 ---
+	--- BLOCK #4 13-19, warpins: 2 ---
 	slot1 = HomeLandUtils
 	slot1 = slot1.getHatchBoxStatus
 	slot3 = slot0.ornamentId
@@ -1634,7 +1637,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #5 17-17, warpins: 1 ---
+	--- BLOCK #5 20-20, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -1642,7 +1645,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-25, warpins: 2 ---
+	--- BLOCK #6 21-28, warpins: 2 ---
 	slot0.m_preStatus = slot1
 	slot4 = slot0
 	slot2 = slot0.getAniInfoByStatu
@@ -1659,7 +1662,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #7 26-26, warpins: 1 ---
+	--- BLOCK #7 29-29, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #7 ---
@@ -1667,7 +1670,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 27-40, warpins: 2 ---
+	--- BLOCK #8 30-43, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.playAnimancerAnim
 	slot6 = slot2.aniName

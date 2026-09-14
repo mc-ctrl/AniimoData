@@ -122,13 +122,13 @@ slot5.valueOut = slot6
 slot4.SPAWNER_DEATH = slot5
 slot5 = {}
 slot6 = {
-	value = "string",
-	key = "string"
+	key = "string",
+	value = "string"
 }
 slot5.valueIn = slot6
 slot6 = {
-	value = "string",
-	key = "string"
+	key = "string",
+	value = "string"
 }
 slot5.valueOut = slot6
 slot4.AI_EVENT = slot5

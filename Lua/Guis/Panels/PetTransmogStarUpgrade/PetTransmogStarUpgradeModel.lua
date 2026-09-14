@@ -1,4 +1,4 @@
---- BLOCK #0 1-30, warpins: 1 ---
+--- BLOCK #0 1-34, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -133,6 +133,104 @@ slot5 = function(slot0, slot1)
 end
 
 slot4.isNewlyUnlocked = slot5
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isNewlyUnlocked
+	slot4 = Const
+	slot4 = slot4.PetTransmogSlotType
+	slot4 = slot4.Flash
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.isFlashNewlyUnlocked = slot5
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = nil
+	slot2 = pairs
+	slot4 = slot0.newlyUnlockedSet
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot5 < slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 2 ---
+	slot1 = slot5
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-12, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 13-14, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 1 ---
+	slot2 = ""
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-21, warpins: 2 ---
+	slot2 = PetTransmogUtils
+	slot2 = slot2.getHoleName
+	slot4 = slot0.petId
+	slot5 = slot1
+
+	return slot2(slot4, slot5)
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot4.getNewlyUnlockedName = slot5
 
 slot5 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-61, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -22,7 +22,7 @@ slot8 = "TimeScaleManager"
 slot6 = slot6(slot8)
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot0.space = slot1
 	slot2 = {}
 	slot0.timeZones = slot2
@@ -30,11 +30,19 @@ slot7 = function(slot0, slot1)
 	slot0.timeZoneGenId = slot2
 	slot2 = 1
 	slot0.globalTimeScale = slot2
+	slot2 = 1
+	slot0.globalTimeZoneScale = slot2
+	slot2 = 0
+	slot0.globalScaledTime = slot2
 	slot2 = GlobalFreeze
 	slot2 = slot2()
 	slot0.globalFreeze = slot2
+	slot2 = 1
+	slot0.globalFreezeTimeScale = slot2
 	slot2 = {}
 	slot0.entities = slot2
+	slot2 = {}
+	slot0.tickEntities = slot2
 	slot2 = {}
 	slot0.temp_removeIds = slot2
 
@@ -48,7 +56,19 @@ end
 slot6.ctor = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = table
+	slot1 = slot1.clear
+	slot3 = slot0.tickEntities
+
+	slot1(slot3)
+
+	slot1 = table
+	slot1 = slot1.clear
+	slot3 = slot0.entities
+
+	slot1(slot3)
+
 	slot1 = nil
 	slot0.space = slot1
 	slot1 = slot0.globalFreeze
@@ -83,7 +103,20 @@ end
 slot6.genTimeZoneInstanceId = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = next
+	slot4 = slot0.timeZones
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #1 6-13, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.clear
 	slot4 = slot0.temp_removeIds
@@ -93,80 +126,85 @@ slot7 = function(slot0, slot1)
 	slot2 = pairs
 	slot4 = slot0.timeZones
 	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #1 9-13, warpins: 1 ---
-	slot9 = slot6
-	slot7 = slot6.isValid
-	slot7 = slot7(slot9)
 	--- END OF BLOCK #1 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
 	--- BLOCK #2 14-18, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.isValid
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-23, warpins: 1 ---
 	slot9 = slot6
 	slot7 = slot6.activate
 	slot10 = slot1
 
 	slot7(slot9, slot10)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 19-23, warpins: 1 ---
+	--- BLOCK #4 24-28, warpins: 1 ---
 	slot7 = slot0.temp_removeIds
 	slot8 = slot0.temp_removeIds
 	slot8 = #slot8
 	slot8 = slot8 + 1
 	slot7[slot8] = slot5
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 24-25, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #5
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 26-30, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.temp_removeIds
-	slot3 = #slot3
-	slot4 = 1
+	--- BLOCK #5 29-30, warpins: 3 ---
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 31-36, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.removeTimeZone
-	slot9 = slot0.temp_removeIds
-	slot9 = slot9[slot5]
-
-	slot6(slot8, slot9)
-
+	--- BLOCK #6 31-34, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = slot0.temp_removeIds
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #6 ---
 
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
-	--- BLOCK #7 37-47, warpins: 1 ---
+
+	--- BLOCK #7 35-38, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.removeTimeZone
+	slot10 = slot6
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 39-40, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 41-51, warpins: 2 ---
 	slot2 = slot0.globalFreeze
 	slot4 = slot2
 	slot2 = slot2.updateValue
@@ -178,102 +216,111 @@ slot7 = function(slot0, slot1)
 	slot2 = slot2.getGameTime
 	slot2 = slot2(slot4)
 	slot3 = slot0.lastTickTime
-	--- END OF BLOCK #7 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 48-48, warpins: 1 ---
-	slot0.lastTickTime = slot2
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 49-53, warpins: 2 ---
-	slot3 = slot0.lastTickTime
-	slot3 = slot2 - slot3
-	slot4 = 0
 	--- END OF BLOCK #9 ---
 
-	if slot3 < slot4 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 54-54, warpins: 1 ---
-	slot3 = 0
+	--- BLOCK #10 52-52, warpins: 1 ---
+	slot0.lastTickTime = slot2
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 55-63, warpins: 2 ---
-	slot0.lastTickTime = slot2
-	slot6 = slot0
-	slot4 = slot0.getGlobalFreeze
-	slot4 = slot4(slot6)
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.csAbilityMgr
+	--- BLOCK #11 53-57, warpins: 2 ---
+	slot3 = slot0.lastTickTime
+	slot3 = slot2 - slot3
+	slot4 = 0
 	--- END OF BLOCK #11 ---
 
-	slot5 = if slot5 then
+	if slot3 < slot4 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 64-67, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.csAbilityMgr
-	slot5.abilityDeltaTime = slot3
+	--- BLOCK #12 58-58, warpins: 1 ---
+	slot3 = 0
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 68-71, warpins: 2 ---
-	slot5 = pairs
-	slot7 = slot0.entities
-	slot5, slot6, slot7 = slot5(slot7)
+	--- BLOCK #13 59-67, warpins: 2 ---
+	slot0.lastTickTime = slot2
+	slot6 = slot0
+	slot4 = slot0.updateGlobalFreeze
+
+	slot4(slot6)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.csAbilityMgr
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #14 72-76, warpins: 1 ---
-	slot12 = slot9
-	slot10 = slot9.updateScaledTime
-	slot13 = slot3
-	slot14 = slot4
-
-	slot10(slot12, slot13, slot14)
-
+	--- BLOCK #14 68-71, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.csAbilityMgr
+	slot4.abilityDeltaTime = slot3
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 77-78, warpins: 2 ---
+	--- BLOCK #15 72-82, warpins: 2 ---
+	slot4 = slot0.globalScaledTime
+	slot5 = slot0.globalTimeZoneScale
+	slot6 = slot0.globalFreezeTimeScale
+	slot5 = slot5 * slot6
+	slot5 = slot5 * slot3
+	slot4 = slot4 + slot5
+	slot0.globalScaledTime = slot4
+	slot4 = pairs
+	slot6 = slot0.tickEntities
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #15 ---
 
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 79-79, warpins: 1 ---
-	return
+	--- BLOCK #16 83-87, warpins: 1 ---
+	slot11 = slot8
+	slot9 = slot8.updateScaledTime
+	slot12 = slot3
+	slot13 = slot0.globalFreezeTimeScale
+
+	slot9(slot11, slot12, slot13)
+
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 88-89, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #16
+	GO OUT TO BLOCK #18
+
+
+	--- BLOCK #18 90-90, warpins: 1 ---
+	return
+	--- END OF BLOCK #18 ---
 
 
 
@@ -281,13 +328,31 @@ end
 
 slot6.tick = slot7
 
-slot7 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot0.entities
-	slot3[slot1] = slot2
-
-	return
+slot7 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = slot0.entities
+	slot4[slot1] = slot2
 	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot4 = slot0.tickEntities
+	slot4[slot1] = slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
@@ -308,8 +373,11 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 5-10, warpins: 1 ---
 	slot3 = slot0.entities
+	slot4 = nil
+	slot3[slot1] = slot4
+	slot3 = slot0.tickEntities
 	slot4 = nil
 	slot3[slot1] = slot4
 
@@ -318,7 +386,7 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -381,23 +449,39 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
+	--- BLOCK #1 7-9, warpins: 1 ---
 	slot1 = 1
+	slot0.globalFreezeTimeScale = slot1
 
-	return slot1
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-12, warpins: 2 ---
+	--- BLOCK #2 10-15, warpins: 2 ---
 	slot1 = slot0.globalFreeze
 	slot3 = slot1
 	slot1 = slot1.getTimeScale
+	slot1 = slot1(slot3)
+	slot0.globalFreezeTimeScale = slot1
 
-	return slot1(slot3)
+	return
 	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot6.updateGlobalFreeze = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = slot0.globalFreezeTimeScale
+
+	return slot1
+	--- END OF BLOCK #0 ---
 
 
 
@@ -819,6 +903,39 @@ end
 slot6.removeTimeZone = slot7
 
 slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getTimeScale
+	slot4 = nil
+	slot1 = slot1(slot3, slot4)
+	slot0.globalTimeZoneScale = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.refreshGlobalZoneTimeScale = slot7
+
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshAllEntitiesTimeScale
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.onMultiPlayerEnvChanged = slot7
+
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.entities
@@ -880,7 +997,12 @@ end
 slot6.onGameTimeScaleChange = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshGlobalZoneTimeScale
+
+	slot1(slot3)
+
 	slot1 = pairs
 	slot3 = slot0.entities
 	slot1, slot2, slot3 = slot1(slot3)
@@ -889,7 +1011,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 8-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	slot5 = if slot5 then
@@ -899,7 +1021,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #2 7-9, warpins: 1 ---
+	--- BLOCK #2 10-12, warpins: 1 ---
 	slot6 = slot5.refreshTimeScale
 	--- END OF BLOCK #2 ---
 
@@ -910,7 +1032,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 10-13, warpins: 1 ---
+	--- BLOCK #3 13-16, warpins: 1 ---
 	slot6 = SafeCallback
 	slot8 = slot5.refreshTimeScale
 	slot9 = slot5
@@ -922,7 +1044,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-15, warpins: 4 ---
+	--- BLOCK #4 17-18, warpins: 4 ---
 	--- END OF BLOCK #4 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -930,7 +1052,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 16-16, warpins: 1 ---
+	--- BLOCK #5 19-19, warpins: 1 ---
 	return
 	--- END OF BLOCK #5 ---
 

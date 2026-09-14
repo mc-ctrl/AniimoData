@@ -1,4 +1,4 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
 slot2 = "Utils.LuaUIUtils"
 slot0 = slot0(slot2)
@@ -17,14 +17,17 @@ slot4 = slot4(slot6)
 slot5 = require
 slot7 = "Data.item_select_data"
 slot5 = slot5(slot7)
-slot6 = slot3.LightClass
-slot8 = "PropSelectComCtrl"
-slot9 = slot4
-slot6 = slot6(slot8, slot9)
-slot7 = {}
-slot6.messages = slot7
+slot6 = require
+slot8 = "Const.UIConst"
+slot6 = slot6(slot8)
+slot7 = slot3.LightClass
+slot9 = "PropSelectComCtrl"
+slot10 = slot4
+slot7 = slot7(slot9, slot10)
+slot8 = {}
+slot7.messages = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.ctor
@@ -44,9 +47,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.ctor = slot7
+slot7.ctor = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -62,9 +65,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.onCreate = slot7
+slot7.onCreate = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
@@ -409,9 +412,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.addListener = slot7
+slot7.addListener = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot0.propCount = slot1
 	slot2 = slot0.model
@@ -448,9 +451,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.onNumSelectChange = slot7
+slot7.onNumSelectChange = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.numType = slot1
 	--- END OF BLOCK #0 ---
@@ -514,12 +517,11 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.refreshCostStyle = slot7
+slot7.refreshCostStyle = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.isEmpty
-
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -530,14 +532,12 @@ slot7 = function(slot0, slot1)
 
 
 	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #2 5-37, warpins: 2 ---
+	--- BLOCK #2 5-41, warpins: 1 ---
 	slot2 = slot1.ownNum
 	slot3 = slot1.numParam
 	slot4 = 0
@@ -550,6 +550,57 @@ slot7 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
+	slot4 = slot0.view
+	slot4 = slot4.itemSelUButton
+
+	slot5 = function()
+		--- BLOCK #0 1-22, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_COMMON_ITEM_TIP
+		slot4 = {}
+		slot5 = itemInfo
+		slot5 = slot5.id
+		slot4.id = slot5
+		slot5 = itemInfo
+		slot5 = slot5.num
+		slot4.num = slot5
+		slot5 = self
+		slot5 = slot5.view
+		slot5 = slot5.itemSelUButton
+		slot4.targetRect = slot5
+
+		slot5 = function()
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.close
+
+			slot0(slot2)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot4.closeOnJumpToSource = slot5
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4.luaClick = slot5
 	slot4 = ClientTextUtils
 	slot4 = slot4.setText
 	slot6 = slot0.view
@@ -584,7 +635,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 38-39, warpins: 1 ---
+	--- BLOCK #3 42-43, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
@@ -594,7 +645,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 40-46, warpins: 1 ---
+	--- BLOCK #4 44-50, warpins: 1 ---
 	slot4 = math
 	slot4 = slot4.min
 	slot6 = slot2
@@ -609,14 +660,14 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 47-47, warpins: 2 ---
+	--- BLOCK #5 51-51, warpins: 2 ---
 	slot4 = slot2
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 48-50, warpins: 2 ---
+	--- BLOCK #6 52-54, warpins: 2 ---
 	slot5 = 0
 	--- END OF BLOCK #6 ---
 
@@ -627,21 +678,21 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 51-52, warpins: 1 ---
+	--- BLOCK #7 55-56, warpins: 1 ---
 	slot5 = false
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 53-53, warpins: 1 ---
+	--- BLOCK #8 57-57, warpins: 1 ---
 	slot5 = true
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 54-57, warpins: 2 ---
+	--- BLOCK #9 58-61, warpins: 2 ---
 	slot0.countEnough = slot5
 	slot5 = 0
 	--- END OF BLOCK #9 ---
@@ -653,7 +704,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 58-71, warpins: 1 ---
+	--- BLOCK #10 62-75, warpins: 1 ---
 	slot5 = slot0.view
 	slot5 = slot5.numSelectorUNumSelector
 	slot6 = 1
@@ -672,7 +723,7 @@ slot7 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 72-85, warpins: 1 ---
+	--- BLOCK #11 76-89, warpins: 1 ---
 	slot5 = slot0.view
 	slot5 = slot5.numSelectorUNumSelector
 	slot6 = 0
@@ -692,7 +743,7 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 86-102, warpins: 2 ---
+	--- BLOCK #12 90-106, warpins: 2 ---
 	slot5 = ClientTextUtils
 	slot5 = slot5.setText
 	slot7 = slot0.view
@@ -719,7 +770,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 103-120, warpins: 1 ---
+	--- BLOCK #13 107-124, warpins: 1 ---
 	slot7 = ClientTextUtils
 	slot7 = slot7.setText
 	slot9 = slot0.view
@@ -746,7 +797,7 @@ slot7 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #14 121-122, warpins: 1 ---
+	--- BLOCK #14 125-126, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
 	slot4 = if not slot3 then
@@ -756,14 +807,14 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 123-123, warpins: 1 ---
+	--- BLOCK #15 127-127, warpins: 1 ---
 	slot4 = 1
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 124-126, warpins: 2 ---
+	--- BLOCK #16 128-130, warpins: 2 ---
 	slot5, slot6 = nil
 	--- END OF BLOCK #16 ---
 
@@ -774,22 +825,9 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 127-149, warpins: 1 ---
+	--- BLOCK #17 131-142, warpins: 1 ---
 	slot7 = true
 	slot0.countEnough = slot7
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.view
-	slot9 = slot9.costCountTxt
-	slot10 = string
-	slot10 = slot10.format
-	slot12 = "%s/%s"
-	slot13 = slot2
-	slot14 = slot4
-	MULTRES = slot10(slot12, slot13, slot14)
-
-	slot7(slot9, MULTRES)
-
 	slot0.propCount = slot4
 	slot7 = slot0.model
 	slot9 = slot7
@@ -804,22 +842,9 @@ slot7 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 150-172, warpins: 1 ---
+	--- BLOCK #18 143-154, warpins: 1 ---
 	slot7 = false
 	slot0.countEnough = slot7
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.view
-	slot9 = slot9.costCountTxt
-	slot10 = string
-	slot10 = slot10.format
-	slot12 = "<style=Item_Lack>%s</style>/%s"
-	slot13 = slot2
-	slot14 = slot4
-	MULTRES = slot10(slot12, slot13, slot14)
-
-	slot7(slot9, MULTRES)
-
 	slot7 = 0
 	slot0.propCount = slot7
 	slot7 = slot0.model
@@ -835,7 +860,19 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 173-175, warpins: 2 ---
+	--- BLOCK #19 155-167, warpins: 2 ---
+	slot7 = LuaUIUtils
+	slot7 = slot7.renderConsumeText
+	slot9 = slot0.view
+	slot9 = slot9.costCountTxt
+	slot10 = slot2
+	slot11 = slot4
+	slot12 = UIConst
+	slot12 = slot12.ITEM_STATE
+	slot12 = slot12.FULL
+
+	slot7(slot9, slot10, slot11, slot12)
+
 	slot7 = slot0.fromLeylineFlower
 	--- END OF BLOCK #19 ---
 
@@ -846,7 +883,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 176-192, warpins: 1 ---
+	--- BLOCK #20 168-184, warpins: 1 ---
 	slot7 = ClientTextUtils
 	slot7 = slot7.setText
 	slot9 = slot0.view
@@ -873,17 +910,24 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 193-193, warpins: 4 ---
+	--- BLOCK #21 185-186, warpins: 4 ---
 	return
 	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 187-187, warpins: 2 ---
+	return
+	--- END OF BLOCK #22 ---
 
 
 
 end
 
-slot6.refreshMainIcon = slot7
+slot7.refreshMainIcon = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -913,9 +957,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.refreshTabList = slot7
+slot7.refreshTabList = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = ipairs
@@ -1001,9 +1045,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.refreshItemList = slot7
+slot7.refreshItemList = slot8
 
-slot7 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1023,9 +1067,9 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.renderTabItemList = slot7
+slot7.renderTabItemList = slot8
 
-slot7 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.isEmpty
 
@@ -1100,9 +1144,9 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.renderItemList = slot7
+slot7.renderItemList = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -1117,9 +1161,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.onDestroy = slot7
+slot7.onDestroy = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -1192,9 +1236,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.onOpen = slot7
+slot7.onOpen = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1203,9 +1247,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.onShow = slot7
+slot7.onShow = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1214,9 +1258,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.onHide = slot7
+slot7.onHide = slot8
 
-return slot6
+return slot7
 --- END OF BLOCK #0 ---
 
 

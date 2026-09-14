@@ -1,4 +1,4 @@
---- BLOCK #0 1-45, warpins: 1 ---
+--- BLOCK #0 1-47, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
@@ -512,22 +512,45 @@ end
 slot0.buildDisplayPlayerInfo = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot2 = PlatformDisplayNameInjector
-	slot2 = slot2.getDisplayName
-	slot4 = {}
-	slot5 = M
-	slot5 = slot5.buildDisplayPlayerInfo
-	slot7 = slot0.playerInfo
-	slot5 = slot5(slot7)
-	slot4.playerInfo = slot5
-	slot5 = M
-	slot5 = slot5.CONFIG
-	slot4.config = slot5
-	slot4.rawName = slot1
-
-	return slot2(slot4)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = slot0.view
+	slot3 = PlatformDisplayNameInjector
+	slot3 = slot3.enableRichText
 	--- END OF BLOCK #0 ---
+
+	slot5 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot5 = slot2.panelInfoPlayerNameText
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-20, warpins: 2 ---
+	slot3(slot5)
+
+	slot3 = PlatformDisplayNameInjector
+	slot3 = slot3.getDisplayName
+	slot5 = {}
+	slot6 = M
+	slot6 = slot6.buildDisplayPlayerInfo
+	slot8 = slot0.playerInfo
+	slot6 = slot6(slot8)
+	slot5.playerInfo = slot6
+	slot6 = M
+	slot6 = slot6.CONFIG
+	slot5.config = slot6
+	slot5.rawName = slot1
+
+	return slot3(slot5)
+	--- END OF BLOCK #2 ---
 
 
 
@@ -665,92 +688,294 @@ end
 slot0.onDestroy = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.playerInfo
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 4-12, warpins: 1 ---
-	slot2 = tostring
-	slot4 = slot0.playerInfo
-	slot4 = slot4.uid
-	slot2 = slot2(slot4)
-	slot3 = tostring
-	slot5 = pg
-	slot5 = slot5.me
-	--- END OF BLOCK #1 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 13-15, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.uid
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 16-18, warpins: 2 ---
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #3 ---
-
-	if slot2 ~= slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 19-30, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PlatformNameMaskService
 	slot4 = slot2
-	slot2 = slot2.checkNameVisibilityNow
+	slot2 = slot2.getVisibleProfileSignature
 	slot5 = slot0.playerInfo
-	slot5 = slot5.uid
-	slot6 = slot0.playerInfo
-	slot7 = PlatformNameMaskService
-	slot7 = slot7.Action
-	slot7 = slot7.InfoPlayerCardName
-	slot2, slot3 = slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #5
+	slot5 = if slot5 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #5 31-32, warpins: 1 ---
-	slot4 = " "
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot5 = slot0.playerInfo
+	slot5 = slot5.uid
+	--- END OF BLOCK #1 ---
 
-	return slot4
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #6 33-33, warpins: 4 ---
-	return slot1
-	--- END OF BLOCK #6 ---
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot6 = slot0.playerInfo
+	slot7 = slot1
+
+	return slot2(slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
 slot0.setPlayerBaseInfoSign = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isPS
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #2 10-12, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot2 = PlatformDisplayNameInjector
+	slot2 = slot2.isUnityNil
+	slot4 = slot1.onlineIDImage
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot2 = PlatformDisplayNameInjector
+	slot2 = slot2.isUnityNil
+	slot4 = slot1.onlineIDText
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-25, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #6 26-28, warpins: 1 ---
+	slot2 = slot0.playerInfo
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-30, warpins: 1 ---
+	slot2 = slot0.playerInfo
+	slot2 = slot2.uid
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-36, warpins: 2 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 37-42, warpins: 1 ---
+	slot3 = PlatformDisplayNameInjector
+	slot3 = slot3.setNodeActive
+	slot5 = slot1.onlineIDImage
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #10 43-53, warpins: 1 ---
+	slot3 = slot1.panelInfoObjectReference
+
+	slot4 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.view
+
+		--- END OF BLOCK #0 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-16, warpins: 2 ---
+		slot1 = PlatformDisplayNameInjector
+		slot1 = slot1.applyOnlineID
+		slot3 = {}
+		slot4 = objectReference
+		slot3.objectReference = slot4
+		slot3.playerInfo = slot0
+		slot4 = M
+		slot4 = slot4.CONFIG
+		slot3.config = slot4
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	slot7 = slot5
+	slot5 = slot5.getPlayerInfo
+	slot8 = slot2
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #10 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 54-57, warpins: 1 ---
+	slot6 = slot4
+	slot8 = slot5
+
+	slot6(slot8)
+
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 58-71, warpins: 1 ---
+	slot6 = PlatformDisplayNameInjector
+	slot6 = slot6.setNodeActive
+	slot8 = slot1.onlineIDImage
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot8 = slot6
+	slot6 = slot6.getPlayerInfoFromServer
+	slot9 = slot2
+	slot10 = nil
+
+	slot11 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = applyWithPlayerInfo
+		slot3 = slot0
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 72-73, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 74-74, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 75-75, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 76-76, warpins: 2 ---
+	return
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot0.setPlayerBaseInfoOnlineID = slot7
 
 return slot0
 --- END OF BLOCK #0 ---

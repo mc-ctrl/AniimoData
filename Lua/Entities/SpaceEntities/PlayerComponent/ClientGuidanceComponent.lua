@@ -1,4 +1,4 @@
---- BLOCK #0 1-82, warpins: 1 ---
+--- BLOCK #0 1-84, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -1042,22 +1042,18 @@ end
 
 slot13.RPC_SC_GuidanceRecords_Change = slot14
 
-slot14 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-14, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.quest
-	slot4.extraArgs = slot3
-	slot6 = slot0
-	slot4 = slot0.serverMsg
-	slot7 = "RPC_CS_StartCourse"
-	slot8 = slot1
-	slot9 = CallbackHandler
-	slot11 = slot0
-	slot12 = "onStartCourseCallback"
-	MULTRES = slot9(slot11, slot12)
+slot14 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.quest
+	slot3.extraArgs = slot2
+	slot5 = slot0
+	slot3 = slot0.serverMsg
+	slot6 = "RPC_CS_StartCourse"
+	slot7 = slot1
 
-	slot4(slot6, slot7, slot8, MULTRES)
+	slot3(slot5, slot6, slot7)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1067,6 +1063,24 @@ slot14 = function(slot0, slot1, slot2, slot3)
 end
 
 slot13.startCourse = slot14
+
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.serverMsg
+	slot5 = "RPC_CS_UnlockCourse"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot13.unlockCourse = slot14
 
 slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---

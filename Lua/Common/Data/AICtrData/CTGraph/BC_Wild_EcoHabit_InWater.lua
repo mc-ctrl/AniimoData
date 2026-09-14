@@ -1,56 +1,11 @@
---- BLOCK #0 1-43, warpins: 1 ---
+--- BLOCK #0 1-19, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {}
+slot1 = {}
+slot2 = slot0.SafeCall
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = 10
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._to_21_0
@@ -63,9 +18,9 @@ slot7 = function(slot0)
 
 end
 
-slot2.executeTickLodTrigger = slot7
+slot1.executeTickLodTrigger = slot3
 
-slot7 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -93,9 +48,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot3
 
-slot7 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -104,9 +59,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot3
 
-slot7 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -195,9 +150,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_21_0 = slot7
+slot1._to_21_0 = slot3
 
-slot7 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = _C
 	slot3 = 3
@@ -211,206 +166,105 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_3_0 = slot7
+slot1._get_3_0 = slot3
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_3_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 5
-	slot5 = "GetBodyHeight"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_5_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_3_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 8
-	slot5 = "CheckHasAbility"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "Swim"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_8_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_8_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 9
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_9_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = _C
-	slot3 = 10
-	slot4 = "GetPuppetData"
-	slot5 = slot0
-	slot6 = 0
-	slot7 = "enterWaterDeathDepthRatio"
-	slot8 = true
-	slot9 = -0.8
-
-	return slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_10_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot3 = function(slot0)
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_3_0
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	slot2 = _M
-	slot2 = slot2._get_18_2
+	slot2 = slot2._get_3_0
 	slot4 = slot0
 	slot2 = slot2(slot4)
 	slot3 = _C
-	slot5 = 17
-	slot6 = "IsOnWater"
+	slot5 = 5
+	slot6 = "GetBodyHeight"
 	slot7 = slot0
-	slot8 = slot1
-	slot9 = slot2
-
-	return slot3(slot5, slot6, slot7, slot8, slot9)
+	slot8 = slot2
+	slot3 = slot3(slot5, slot6, slot7, slot8)
+	slot4 = _C
+	slot6 = 10
+	slot7 = "GetPuppetData"
+	slot8 = slot0
+	slot9 = 0
+	slot10 = "enterWaterDeathDepthRatio"
+	slot11 = true
+	slot12 = -0.8
+	slot4 = slot4(slot6, slot7, slot8, slot9, slot10, slot11, slot12)
+	slot5 = slot3 * slot4
+	slot6 = _C
+	slot8 = 17
+	slot9 = "IsOnWater"
+	slot10 = slot0
+	slot11 = slot1
+	slot12 = slot5
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
 	--- END OF BLOCK #0 ---
 
-
-
-end
-
-slot2._get_17_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_5_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _M
-	slot2 = slot2._get_10_2
-	slot4 = slot0
-	slot2 = slot2(slot4)
-	slot3 = _C
-	slot5 = 18
-	slot6 = "Mul"
-	slot7 = slot0
-	slot8 = slot1
-	slot9 = slot2
-
-	return slot3(slot5, slot6, slot7, slot8, slot9)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_18_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_17_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #1 34-35, warpins: 1 ---
+	slot7 = false
 
-	return slot2
+	return slot7
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-14, warpins: 2 ---
-	slot2 = _M
-	slot2 = slot2._get_9_1
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #2 36-49, warpins: 2 ---
+	slot7 = _M
+	slot7 = slot7._get_3_0
+	slot9 = slot0
+	slot7 = slot7(slot9)
+	slot8 = _C
+	slot10 = 8
+	slot11 = "CheckHasAbility"
+	slot12 = slot0
+	slot13 = slot7
+	slot14 = "Swim"
+	slot8 = slot8(slot10, slot11, slot12, slot13, slot14)
+	slot9 = not slot8
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 15-16, warpins: 1 ---
-	slot3 = false
+	--- BLOCK #3 50-51, warpins: 1 ---
+	slot10 = false
 
-	return slot3
+	return slot10
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-18, warpins: 2 ---
-	slot3 = true
+	--- BLOCK #4 52-53, warpins: 2 ---
+	slot10 = true
 
-	return slot3
+	return slot10
 	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot2._get_19_2 = slot7
+slot1._get_19_2 = slot3
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

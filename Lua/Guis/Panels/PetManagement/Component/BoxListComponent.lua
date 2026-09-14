@@ -1,4 +1,4 @@
---- BLOCK #0 1-79, warpins: 1 ---
+--- BLOCK #0 1-83, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -24,12 +24,16 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Utils.PetManagementUtils"
 slot7 = slot7(slot9)
-slot8 = 1
-slot5.HOVER_TIME = slot8
-slot8 = 40
-slot5.BOX_LIST_MOVE_SPEED = slot8
+slot8 = require
+slot10 = "Utils.LuaUIUtils"
+slot8 = slot8(slot10)
+slot9 = "boxListHover"
+slot10 = 1
+slot5.HOVER_TIME = slot10
+slot10 = 40
+slot5.BOX_LIST_MOVE_SPEED = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-35, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.boxList
@@ -74,9 +78,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.findObjects = slot8
+slot5.findObjects = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addListener
@@ -95,9 +99,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.initView = slot8
+slot5.initView = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -106,9 +110,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.addListener = slot8
+slot5.addListener = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -473,9 +477,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.refreshBoxList = slot8
+slot5.refreshBoxList = slot10
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot4 = "Box"
 	slot5 = slot3.index
@@ -516,16 +520,13 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 27-37, warpins: 2 ---
+	--- BLOCK #2 27-34, warpins: 2 ---
 	slot10 = slot7.slotCount
 	slot11 = PetManagementUtils
 	slot11 = slot11.getBoxLockState
 	slot13 = slot7
 	slot11 = slot11(slot13)
-	slot14 = slot7
-	slot12 = slot7.isLocked
-	slot12 = slot12(slot14)
-	slot13 = ""
+	slot12 = ""
 	--- END OF BLOCK #2 ---
 
 	slot8 = if slot8 then
@@ -535,7 +536,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 38-39, warpins: 1 ---
+	--- BLOCK #3 35-36, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot8 ~= "" then
@@ -545,47 +546,47 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 40-41, warpins: 1 ---
-	slot13 = slot8
+	--- BLOCK #4 37-38, warpins: 1 ---
+	slot12 = slot8
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 42-48, warpins: 2 ---
-	slot14 = pg
-	slot14 = slot14.getGameString
-	slot16 = "DEFAULT_PET_BOX_NAME"
-	slot14 = slot14(slot16)
-	slot15 = " "
-	slot16 = slot3.index
-	slot13 = slot14 .. slot15 .. slot16
+	--- BLOCK #5 39-45, warpins: 2 ---
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "DEFAULT_PET_BOX_NAME"
+	slot13 = slot13(slot15)
+	slot14 = " "
+	slot15 = slot3.index
+	slot12 = slot13 .. slot14 .. slot15
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 49-65, warpins: 2 ---
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot6
-	slot17 = slot13
+	--- BLOCK #6 46-62, warpins: 2 ---
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot6
+	slot16 = slot12
 
-	slot14(slot16, slot17)
+	slot13(slot15, slot16)
 
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot5
-	slot17 = slot9
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot5
+	slot16 = slot9
 
-	slot14(slot16, slot17)
+	slot13(slot15, slot16)
 
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "Lock"
-	slot18 = slot11
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "Lock"
+	slot17 = slot11
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #6 ---
 
@@ -596,58 +597,58 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 66-71, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "BoxState"
-	slot18 = 2
+	--- BLOCK #7 63-68, warpins: 1 ---
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "BoxState"
+	slot17 = 2
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 72-74, warpins: 1 ---
-	slot14 = 0
+	--- BLOCK #8 69-71, warpins: 1 ---
+	slot13 = 0
 	--- END OF BLOCK #8 ---
 
-	if slot9 <= slot14 then
+	if slot9 <= slot13 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 75-80, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "BoxState"
-	slot18 = 1
+	--- BLOCK #9 72-77, warpins: 1 ---
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "BoxState"
+	slot17 = 1
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 81-85, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "BoxState"
-	slot18 = 0
+	--- BLOCK #10 78-82, warpins: 1 ---
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "BoxState"
+	slot17 = 0
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 86-112, warpins: 3 ---
-	slot14 = function()
+	--- BLOCK #11 83-109, warpins: 3 ---
+	slot13 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -663,9 +664,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaHover = slot14
+	slot1.luaHover = slot13
 
-	slot14 = function()
+	slot13 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -681,9 +682,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaUnhover = slot14
+	slot1.luaUnhover = slot13
 
-	slot14 = function()
+	slot13 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -700,9 +701,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaBeginDrag = slot14
+	slot1.luaBeginDrag = slot13
 
-	slot14 = function(slot0, slot1)
+	slot13 = function(slot0, slot1)
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot2 = self
 		slot4 = slot2
@@ -726,9 +727,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaEndDrag = slot14
+	slot1.luaEndDrag = slot13
 
-	slot14 = function()
+	slot13 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -737,9 +738,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaEndDragSimulate = slot14
+	slot1.luaEndDragSimulate = slot13
 
-	slot14 = function()
+	slot13 = function()
 		--- BLOCK #0 1-18, warpins: 1 ---
 		slot0 = button
 		slot2 = slot0
@@ -768,9 +769,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaClearDragSimulate = slot14
+	slot1.luaClearDragSimulate = slot13
 
-	slot14 = function()
+	slot13 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -786,21 +787,21 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaPress = slot14
-	slot14 = slot0.model
-	slot16 = slot14
-	slot14 = slot14.redDot_SetBoxRedDot
-	slot17 = slot3.index
-	slot18 = slot1
+	slot1.luaPress = slot13
+	slot13 = slot0.model
+	slot15 = slot13
+	slot13 = slot13.redDot_SetBoxRedDot
+	slot16 = slot3.index
+	slot17 = slot1
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "DragState"
-	slot18 = 0
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "DragState"
+	slot17 = 0
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	return
 	--- END OF BLOCK #11 ---
@@ -809,9 +810,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.setBoxListData = slot8
+slot5.setBoxListData = slot10
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot4 = "Box"
 	slot5 = slot3.index
@@ -852,16 +853,13 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 27-37, warpins: 2 ---
+	--- BLOCK #2 27-34, warpins: 2 ---
 	slot10 = slot7.slotCount
 	slot11 = PetManagementUtils
 	slot11 = slot11.getBoxLockState
 	slot13 = slot7
 	slot11 = slot11(slot13)
-	slot14 = slot7
-	slot12 = slot7.isLocked
-	slot12 = slot12(slot14)
-	slot13 = ""
+	slot12 = ""
 	--- END OF BLOCK #2 ---
 
 	slot8 = if slot8 then
@@ -871,7 +869,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 38-39, warpins: 1 ---
+	--- BLOCK #3 35-36, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot8 ~= "" then
@@ -881,47 +879,47 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 40-41, warpins: 1 ---
-	slot13 = slot8
+	--- BLOCK #4 37-38, warpins: 1 ---
+	slot12 = slot8
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 42-48, warpins: 2 ---
-	slot14 = pg
-	slot14 = slot14.getGameString
-	slot16 = "DEFAULT_PET_BOX_NAME"
-	slot14 = slot14(slot16)
-	slot15 = " "
-	slot16 = slot3.index
-	slot13 = slot14 .. slot15 .. slot16
+	--- BLOCK #5 39-45, warpins: 2 ---
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "DEFAULT_PET_BOX_NAME"
+	slot13 = slot13(slot15)
+	slot14 = " "
+	slot15 = slot3.index
+	slot12 = slot13 .. slot14 .. slot15
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 49-65, warpins: 2 ---
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot6
-	slot17 = slot13
+	--- BLOCK #6 46-62, warpins: 2 ---
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot6
+	slot16 = slot12
 
-	slot14(slot16, slot17)
+	slot13(slot15, slot16)
 
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot5
-	slot17 = slot9
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot5
+	slot16 = slot9
 
-	slot14(slot16, slot17)
+	slot13(slot15, slot16)
 
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "Lock"
-	slot18 = slot11
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "Lock"
+	slot17 = slot11
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #6 ---
 
@@ -932,58 +930,58 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 66-71, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "BoxState"
-	slot18 = 2
+	--- BLOCK #7 63-68, warpins: 1 ---
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "BoxState"
+	slot17 = 2
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 72-74, warpins: 1 ---
-	slot14 = 0
+	--- BLOCK #8 69-71, warpins: 1 ---
+	slot13 = 0
 	--- END OF BLOCK #8 ---
 
-	if slot9 <= slot14 then
+	if slot9 <= slot13 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 75-80, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "BoxState"
-	slot18 = 1
+	--- BLOCK #9 72-77, warpins: 1 ---
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "BoxState"
+	slot17 = 1
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 81-85, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "BoxState"
-	slot18 = 0
+	--- BLOCK #10 78-82, warpins: 1 ---
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "BoxState"
+	slot17 = 0
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 86-103, warpins: 3 ---
-	slot14 = function()
+	--- BLOCK #11 83-100, warpins: 3 ---
+	slot13 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -999,9 +997,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaHover = slot14
+	slot1.luaHover = slot13
 
-	slot14 = function()
+	slot13 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -1017,48 +1015,48 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaUnhover = slot14
-	slot14 = slot0.model
-	slot16 = slot14
-	slot14 = slot14.redDot_SetBoxRedDot
-	slot17 = slot3.index
-	slot18 = slot1
+	slot1.luaUnhover = slot13
+	slot13 = slot0.model
+	slot15 = slot13
+	slot13 = slot13.redDot_SetBoxRedDot
+	slot16 = slot3.index
+	slot17 = slot1
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "DragState"
-	slot18 = 0
+	slot15 = slot1
+	slot13 = slot1.TryChangePage
+	slot16 = "DragState"
+	slot17 = 0
 
-	slot14(slot16, slot17, slot18)
+	slot13(slot15, slot16, slot17)
 
-	slot14 = slot0._alterBoxListVisible
+	slot13 = slot0._alterBoxListVisible
 	--- END OF BLOCK #11 ---
 
-	if slot14 == true then
+	if slot13 == true then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 104-105, warpins: 1 ---
-	slot14 = false
+	--- BLOCK #12 101-102, warpins: 1 ---
+	slot13 = false
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 106-106, warpins: 1 ---
-	slot14 = true
+	--- BLOCK #13 103-103, warpins: 1 ---
+	slot13 = true
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 107-109, warpins: 2 ---
-	slot1.navForceNonInteractable = slot14
+	--- BLOCK #14 104-106, warpins: 2 ---
+	slot1.navForceNonInteractable = slot13
 
 	return
 	--- END OF BLOCK #14 ---
@@ -1067,9 +1065,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.setAlterBoxListData = slot8
+slot5.setAlterBoxListData = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.boxListAlter
 	slot4 = slot2
@@ -1169,9 +1167,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.showAlterBoxList = slot8
+slot5.showAlterBoxList = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshBoxSelectedStatus
@@ -1192,9 +1190,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.boxPressEvent = slot8
+slot5.boxPressEvent = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.boxList
 	slot3 = slot1
@@ -1232,9 +1230,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.clearAllSelectFrames = slot8
+slot5.clearAllSelectFrames = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot0.boxList
 	slot4 = slot2
@@ -1287,9 +1285,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.refreshBoxSelectedStatus = slot8
+slot5.refreshBoxSelectedStatus = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1340,9 +1338,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.getBoxIndexByBoxId = slot8
+slot5.getBoxIndexByBoxId = slot10
 
-slot8 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -1516,9 +1514,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot5.beginDrag = slot8
+slot5.beginDrag = slot10
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.TryChangePage
@@ -1723,9 +1721,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.endDrag = slot8
+slot5.endDrag = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot2 = nil
@@ -1748,9 +1746,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.clearDraggingInfo = slot8
+slot5.clearDraggingInfo = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.ctrl
 	--- END OF BLOCK #0 ---
@@ -1969,7 +1967,7 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 107-119, warpins: 1 ---
+	--- BLOCK #13 107-122, warpins: 1 ---
 	slot4 = slot0.ctrl
 	slot6 = slot4
 	slot4 = slot4.killTimer
@@ -1983,30 +1981,29 @@ slot8 = function(slot0, slot1)
 	slot4 = slot4.Kill
 	slot6 = slot1.transform
 	slot6 = slot6.gameObject
-	slot7 = "boxListHover"
+	slot7 = LuaUIUtils
+	slot7 = slot7.TweenId
+	slot9 = ID_BOX_LIST_HOVER
+	MULTRES = slot7(slot9)
 
-	slot4(slot6, slot7)
+	slot4(slot6, MULTRES)
 
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 120-150, warpins: 2 ---
+	--- BLOCK #14 123-156, warpins: 2 ---
 	slot4 = slot0.ctrl
 	slot6 = slot4
 	slot4 = slot4.startTimer
 
 	slot7 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
-		slot0 = tonumber
-		slot2 = string
-		slot2 = slot2.sub
-		slot4 = button
-		slot4 = slot4.name
-		slot5 = 4
-		MULTRES = slot2(slot4, slot5)
-		slot0 = slot0(MULTRES)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.ctrl
+		slot0 = slot0.inFilterMode
+
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
@@ -2016,7 +2013,58 @@ slot8 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #1 11-16, warpins: 1 ---
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-16, warpins: 2 ---
+		slot0 = tonumber
+		slot2 = string
+		slot2 = slot2.sub
+		slot4 = button
+		slot4 = slot4.name
+		slot5 = 4
+		MULTRES = slot2(slot4, slot5)
+		slot0 = slot0(MULTRES)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #3 17-24, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.ctrl
+		slot1 = slot1.boxPets
+		slot3 = slot1
+		slot1 = slot1.prepareDraggingPetTemporaryStorageForBoxSwitch
+		slot1 = slot1(slot3)
+
+		--- END OF BLOCK #3 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 25-25, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 26-31, warpins: 2 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.switchBoxToIdx
@@ -2025,41 +2073,14 @@ slot8 = function(slot0, slot1)
 
 		slot1(slot3, slot4, slot5)
 
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #5 ---
 
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 17-21, warpins: 2 ---
-		slot1 = self
-		slot1 = slot1.ctrl
-		slot1 = slot1.inFilterMode
-		--- END OF BLOCK #2 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #3 22-27, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.ctrl
-		slot3 = slot1
-		slot1 = slot1.showNormalList
-		slot4 = true
-
-		slot1(slot3, slot4)
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 28-28, warpins: 2 ---
+		--- BLOCK #6 32-32, warpins: 2 ---
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #6 ---
 
 
 
@@ -2075,7 +2096,10 @@ slot8 = function(slot0, slot1)
 	slot6 = slot6.gameObject
 	slot7 = 0
 	slot8 = 1
-	slot9 = "boxListHover"
+	slot9 = LuaUIUtils
+	slot9 = slot9.TweenId
+	slot11 = ID_BOX_LIST_HOVER
+	slot9 = slot9(slot11)
 	slot10 = BoxListComponent
 	slot10 = slot10.HOVER_TIME
 	slot11 = 0
@@ -2131,7 +2155,7 @@ slot8 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 151-161, warpins: 1 ---
+	--- BLOCK #15 157-170, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.TryChangePage
 	slot7 = "DragType"
@@ -2143,30 +2167,33 @@ slot8 = function(slot0, slot1)
 	slot4 = slot4.Kill
 	slot6 = slot1.transform
 	slot6 = slot6.gameObject
-	slot7 = "boxListHover"
+	slot7 = LuaUIUtils
+	slot7 = slot7.TweenId
+	slot9 = ID_BOX_LIST_HOVER
+	MULTRES = slot7(slot9)
 
-	slot4(slot6, slot7)
+	slot4(slot6, MULTRES)
 
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 162-163, warpins: 2 ---
+	--- BLOCK #16 171-172, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 164-164, warpins: 2 ---
+	--- BLOCK #17 173-173, warpins: 2 ---
 	return
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 165-165, warpins: 2 ---
+	--- BLOCK #18 174-174, warpins: 2 ---
 	return
 	--- END OF BLOCK #18 ---
 
@@ -2174,9 +2201,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.onHover = slot8
+slot5.onHover = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.ctrl
 
@@ -2354,7 +2381,7 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 86-98, warpins: 1 ---
+	--- BLOCK #10 86-101, warpins: 1 ---
 	slot3 = slot0.ctrl
 	slot5 = slot3
 	slot3 = slot3.killTimer
@@ -2368,16 +2395,19 @@ slot8 = function(slot0, slot1)
 	slot3 = slot3.Kill
 	slot5 = slot1.transform
 	slot5 = slot5.gameObject
-	slot6 = "boxListHover"
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = ID_BOX_LIST_HOVER
+	MULTRES = slot6(slot8)
 
-	slot3(slot5, slot6)
+	slot3(slot5, MULTRES)
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 99-99, warpins: 3 ---
+	--- BLOCK #11 102-102, warpins: 3 ---
 	return
 	--- END OF BLOCK #11 ---
 
@@ -2385,9 +2415,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.onUnHover = slot8
+slot5.onUnHover = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.boxList
 	slot3 = slot1
@@ -2455,9 +2485,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.resetDragState = slot8
+slot5.resetDragState = slot10
 
-slot8 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot3 = slot0.ctrl
 	slot3 = slot3.boxPets
@@ -2512,9 +2542,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot5.switchBoxToIdx = slot8
+slot5.switchBoxToIdx = slot10
 
-slot8 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -2542,9 +2572,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot5.switchBox = slot8
+slot5.switchBox = slot10
 
-slot8 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.boxList
 	slot4 = slot2
@@ -2581,9 +2611,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot5.muteBoxButtons = slot8
+slot5.muteBoxButtons = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.inFilterMode
@@ -2619,9 +2649,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.hideFilterWhenSwitchBackToBoxList = slot8
+slot5.hideFilterWhenSwitchBackToBoxList = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.hoverTimer
 	--- END OF BLOCK #0 ---
@@ -2661,9 +2691,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.destroyAll = slot8
+slot5.destroyAll = slot10
 
-slot8 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.boxPets
@@ -2867,9 +2897,9 @@ slot8 = function(slot0)
 
 end
 
-slot5.tick = slot8
+slot5.tick = slot10
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3117,7 +3147,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.hoveringMove = slot8
+slot5.hoveringMove = slot10
 
 return slot5
 --- END OF BLOCK #0 ---

@@ -16,25 +16,25 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	const = 0,
+	name = "disToTgtForSkillMon",
 	type = "float",
-	name = "disToTgtForSkillMon"
+	value = "0",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
-	const = 0,
+	name = "goBackDist",
 	type = "float",
-	name = "goBackDist"
+	value = "0",
+	const = 0
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "247",
-	class = "DecoratorLoop"
+	class = "DecoratorLoop",
+	id = "247"
 }
 slot5 = {}
 slot6 = {}
@@ -57,8 +57,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "377",
-	class = "Sequence"
+	class = "Sequence",
+	id = "377"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -67,8 +67,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "355",
-	class = "Action"
+	class = "Action",
+	id = "355"
 }
 slot11 = {}
 slot12 = {}
@@ -121,8 +121,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	id = "378",
-	class = "Action"
+	class = "Action",
+	id = "378"
 }
 slot11 = {}
 slot12 = {}

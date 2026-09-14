@@ -1,4 +1,4 @@
---- BLOCK #0 1-125, warpins: 1 ---
+--- BLOCK #0 1-154, warpins: 1 ---
 slot0 = require
 slot2 = "Data.gamestring_config_data"
 slot0 = slot0(slot2)
@@ -135,7 +135,7 @@ slot9 = function(slot0, ...)
 
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
 	--- BLOCK #10 41-46, warpins: 1 ---
@@ -162,20 +162,46 @@ slot9 = function(slot0, ...)
 
 
 	--- BLOCK #12 48-52, warpins: 2 ---
+	slot3 = type
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #12 ---
+
+	if slot3 == "number" then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 53-57, warpins: 1 ---
+	slot3 = pgI18N
+	slot3 = slot3.LocalizationText
+	slot3 = slot3.GetFinalTextNoParamById
+	slot5 = slot0
+
+	return slot3(slot5)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 58-62, warpins: 2 ---
 	slot3 = pgI18N
 	slot3 = slot3.LocalizationText
 	slot3 = slot3.GetFinalTextNoParam
 	slot5 = slot0
 
 	return slot3(slot5)
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #13 53-53, warpins: 2 ---
+	--- BLOCK #15 63-63, warpins: 2 ---
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
 
 
@@ -184,49 +210,64 @@ end
 slot8.getLocalizationText = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.localizationMgr
-	slot1 = slot1.SelectedLanguage
-	slot2 = ClientTextUtils
-	slot2 = slot2.luaHotFixLanguage
-	slot2 = slot2[slot1]
+	slot1 = slot1.languageType
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-15, warpins: 1 ---
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.luaHotFixLanguage
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 11-16, warpins: 1 ---
 	slot3 = tostring
 	slot5 = slot0
 	slot3 = slot3(slot5)
 	slot4 = slot2[slot3]
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 16-17, warpins: 1 ---
+	--- BLOCK #4 17-18, warpins: 1 ---
 	slot4 = slot2[slot3]
 
 	return slot4
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 18-18, warpins: 3 ---
+	--- BLOCK #5 19-19, warpins: 3 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -450,6 +491,75 @@ end
 
 slot8.getGameString = slot9
 
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = GameStringConfig
+	slot2 = slot2[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot3 = slot2.desc
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot3 = GameStringHash
+	slot3 = slot3[slot0]
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-11, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-12, warpins: 1 ---
+	return slot0
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-20, warpins: 2 ---
+	slot4 = pgI18N
+	slot4 = slot4.LocalizationText
+	slot4 = slot4.GetLocalizationTextByLanguage
+	slot6 = tostring
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	slot7 = slot1
+
+	return slot4(slot6, slot7)
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot8.getGameStringByLanguage = slot9
+
 slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
@@ -558,28 +668,14 @@ end
 slot8.getFormatText = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.match
-	slot3 = slot0
-	slot4 = "^([^%d]*%d)(%d*)(.-)$"
-	slot1, slot2, slot3 = slot1(slot3, slot4)
-	slot4 = slot1
-	slot7 = slot2
-	slot5 = slot2.reverse
-	slot5 = slot5(slot7)
-	slot7 = slot5
-	slot5 = slot5.gsub
-	slot8 = "(%d%d%d)"
-	slot9 = "%1,"
-	slot5 = slot5(slot7, slot8, slot9)
-	slot7 = slot5
-	slot5 = slot5.reverse
-	slot5 = slot5(slot7)
-	slot6 = slot3
-	slot4 = slot4 .. slot5 .. slot6
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.formatSeparatedNumberText
+	slot3 = tostring
+	slot5 = slot0
+	MULTRES = slot3(slot5)
 
-	return slot4
+	return slot1(MULTRES)
 	--- END OF BLOCK #0 ---
 
 
@@ -587,8 +683,915 @@ slot9 = function(slot0)
 end
 
 slot8.getFormatNumber = slot9
+slot9 = "<space=0.2em>"
+slot10 = "."
 
-slot9 = function(slot0)
+slot11 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = ""
+	slot2 = string
+	slot2 = slot2.sub
+	slot4 = slot0
+	slot5 = 1
+	slot6 = 1
+	slot2 = slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= "-" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-11, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 == "+" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-18, warpins: 2 ---
+	slot1 = slot2
+	slot3 = string
+	slot3 = slot3.sub
+	slot5 = slot0
+	slot6 = 2
+	slot3 = slot3(slot5, slot6)
+	slot0 = slot3
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-28, warpins: 2 ---
+	slot3 = {}
+	slot4 = string
+	slot4 = slot4.len
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = slot4 % 3
+	slot6 = 1
+	slot7 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot5 > slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 29-38, warpins: 1 ---
+	slot7 = #slot3
+	slot7 = slot7 + 1
+	slot8 = string
+	slot8 = slot8.sub
+	slot10 = slot0
+	slot11 = 1
+	slot12 = slot5
+	slot8 = slot8(slot10, slot11, slot12)
+	slot3[slot7] = slot8
+	slot6 = slot5 + 1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 39-40, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	if slot4 >= slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 41-41, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 42-52, warpins: 1 ---
+	slot7 = #slot3
+	slot7 = slot7 + 1
+	slot8 = string
+	slot8 = slot8.sub
+	slot10 = slot0
+	slot11 = slot6
+	slot12 = slot6 + 2
+	slot8 = slot8(slot10, slot11, slot12)
+	slot3[slot7] = slot8
+	slot6 = slot6 + 3
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #8 53-54, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot1 ~= "" then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 55-58, warpins: 1 ---
+	slot7 = slot1
+	slot8 = slot3[1]
+	slot7 = slot7 .. slot8
+	slot3[1] = slot7
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 59-63, warpins: 2 ---
+	slot7 = table
+	slot7 = slot7.concat
+	slot9 = slot3
+	slot10 = NUMBER_GROUP_SEPARATOR
+
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = type
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == "number" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot0 ~= slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-15, warpins: 2 ---
+	slot1 = math
+	slot1 = slot1.floor
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	if slot1 == slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-20, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.format
+	slot3 = "%.0f"
+	slot4 = slot0
+
+	return slot1(slot3, slot4)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-23, warpins: 2 ---
+	slot1 = tostring
+	slot3 = slot0
+
+	return slot1(slot3)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-28, warpins: 2 ---
+	slot1 = type
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	if slot1 ~= "string" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-30, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-31, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = normalizeSeparatedNumberText
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot2 = tostring
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 1 ---
+	slot4 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-21, warpins: 2 ---
+	slot2 = string
+	slot2 = slot2.match
+	slot4 = slot1
+	slot5 = "^([+-]?)(%d+)%.(%d+)$"
+	slot2, slot3, slot4 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-28, warpins: 1 ---
+	slot5 = string
+	slot5 = slot5.match
+	slot7 = slot1
+	slot8 = "^([+-]?)(%d+)$"
+	slot5, slot6 = slot5(slot7, slot8)
+	slot3 = slot6
+	slot2 = slot5
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-30, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-31, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 32-38, warpins: 2 ---
+	slot5 = formatIntegerPartWithSeparator
+	slot7 = slot2
+	slot8 = slot3
+	slot7 = slot7 .. slot8
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-43, warpins: 1 ---
+	slot6 = slot5
+	slot7 = NUMBER_DECIMAL_SEPARATOR
+	slot8 = slot4
+	slot6 = slot6 .. slot7 .. slot8
+
+	return slot6
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 44-44, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot8.formatSeparatedNumber = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-48, warpins: 1 ---
+	slot1 = {}
+	slot2 = 0
+
+	slot3 = function(slot0)
+		--- BLOCK #0 1-19, warpins: 1 ---
+		slot1 = protectedCount
+		slot1 = slot1 + 1
+		protectedCount = slot1
+		slot1 = string
+		slot1 = slot1.char
+		slot3 = 1
+		slot1 = slot1(slot3)
+		slot2 = string
+		slot2 = slot2.char
+		slot4 = protectedCount
+		slot2 = slot2(slot4)
+		slot3 = string
+		slot3 = slot3.char
+		slot5 = 2
+		slot3 = slot3(slot5)
+		slot1 = slot1 .. slot2 .. slot3
+		slot2 = protectedParts
+		slot2[slot1] = slot0
+
+		return slot1
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4 = string
+	slot4 = slot4.gsub
+	slot6 = slot0
+	slot7 = "<[^>]->"
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
+	slot5 = string
+	slot5 = slot5.gsub
+	slot7 = slot4
+	slot8 = "{%d+}"
+	slot9 = slot3
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4 = slot5
+	slot5 = string
+	slot5 = slot5.gsub
+	slot7 = slot4
+	slot8 = "([+-]?%d+%.?%d*)"
+
+	slot9 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = ClientTextUtils
+		slot1 = slot1.formatSeparatedNumber
+		slot3 = slot0
+
+		return slot1(slot3)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4 = slot5
+	slot5 = string
+	slot5 = slot5.gsub
+	slot7 = slot4
+	slot8 = string
+	slot8 = slot8.char
+	slot10 = 1
+	slot8 = slot8(slot10)
+	slot9 = "(.)"
+	slot10 = string
+	slot10 = slot10.char
+	slot12 = 2
+	slot10 = slot10(slot12)
+	slot8 = slot8 .. slot9 .. slot10
+
+	slot9 = function(slot0)
+		--- BLOCK #0 1-14, warpins: 1 ---
+		slot1 = string
+		slot1 = slot1.char
+		slot3 = 1
+		slot1 = slot1(slot3)
+		slot2 = slot0
+		slot3 = string
+		slot3 = slot3.char
+		slot5 = 2
+		slot3 = slot3(slot5)
+		slot1 = slot1 .. slot2 .. slot3
+		slot2 = protectedParts
+		slot2 = slot2[slot1]
+		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 15-15, warpins: 1 ---
+		slot2 = slot1
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 16-16, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4 = slot5
+
+	return slot4
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 49-49, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.formatSeparatedNumberText = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #2 5-9, warpins: 1 ---
+	slot1 = pcall
+
+	slot3 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = textComponent
+		slot0 = slot0.useInternationalNumberFormat
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1, slot2 = slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-13, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-20, warpins: 3 ---
+	slot3 = pcall
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = textComponent
+		slot0 = slot0.textPlus
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		slot1 = slot0.useInternationalNumberFormat
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-6, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot3, slot4 = slot3(slot5)
+	slot2 = slot4
+	slot1 = slot3
+
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-24, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-31, warpins: 3 ---
+	slot3 = pcall
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = textComponent
+		slot0 = slot0.gameObject
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-13, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.GetComponent
+		slot4 = typeof
+		slot6 = CS
+		slot6 = slot6.XGUI
+		slot6 = slot6.SRenderer
+		slot6 = slot6.TextPlus
+		MULTRES = slot4(slot6)
+		slot1 = slot1(slot3, MULTRES)
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 14-15, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot2 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 16-16, warpins: 1 ---
+		slot2 = slot1.useInternationalNumberFormat
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 17-17, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot3, slot4 = slot3(slot5)
+	slot2 = slot4
+	slot1 = slot3
+	--- END OF BLOCK #8 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 32-33, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	slot3 = if not slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 34-34, warpins: 2 ---
+	slot3 = false
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 35-36, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 37-37, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = useInternationalNumberFormat
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.formatSeparatedNumberText
+	slot4 = slot1
+
+	return slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = GameStringConfig
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.desc
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-11, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.getGameString
+	slot4 = slot0
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-19, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.getLocalizationText
+	slot4 = slot1.desc
+	slot2 = slot2(slot4)
+	slot3 = ClientTextUtils
+	slot3 = slot3.formatSeparatedNumberText
+	slot5 = slot2
+
+	return slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.getGameStringWithSeparatedNumber = slot15
+
+slot15 = function(slot0, ...)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = GameStringConfig
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.desc
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-15, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.getFormatText
+	slot4 = ClientTextUtils
+	slot4 = slot4.getGameString
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	MULTRES = ...
+
+	return slot2(slot4, MULTRES)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-27, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.getFormatText
+	slot4 = ClientTextUtils
+	slot4 = slot4.getLocalizationText
+	slot6 = slot1.desc
+	slot4 = slot4(slot6)
+	MULTRES = ...
+	slot2 = slot2(slot4, MULTRES)
+	slot3 = ClientTextUtils
+	slot3 = slot3.formatSeparatedNumberText
+	slot5 = slot2
+
+	return slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.getFormatGameStringWithSeparatedNumber = slot15
+
+slot15 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = math
@@ -755,7 +1758,7 @@ slot9 = function(slot0)
 
 	--- BLOCK #11 85-91, warpins: 2 ---
 	slot5 = ClientTextUtils
-	slot5 = slot5.concatByLanguage
+	slot5 = slot5.concatCountDownUnitsByLanguage
 	slot7 = table
 	slot7 = slot7.unpack
 	slot9 = slot1
@@ -768,9 +1771,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getLocalizationCountDown = slot9
+slot8.getLocalizationCountDown = slot15
 
-slot9 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getLocalizationText
@@ -837,147 +1840,147 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.parseDescText = slot9
-slot9 = {}
-slot10 = {
+slot8.parseDescText = slot15
+slot15 = {}
+slot16 = {
 	48,
 	57
 }
-slot9[1] = slot10
-slot10 = {
+slot15[1] = slot16
+slot16 = {
 	65,
 	90
 }
-slot9[2] = slot10
-slot10 = {
+slot15[2] = slot16
+slot16 = {
 	97,
 	122
 }
-slot9[3] = slot10
-slot10 = {
+slot15[3] = slot16
+slot16 = {
 	95,
 	95
 }
-slot9[4] = slot10
-slot10 = {
+slot15[4] = slot16
+slot16 = {
 	96,
 	96
 }
-slot9[5] = slot10
-slot10 = {
+slot15[5] = slot16
+slot16 = {
 	126,
 	126
 }
-slot9[6] = slot10
-slot10 = {
+slot15[6] = slot16
+slot16 = {
 	183,
 	183
 }
-slot9[7] = slot10
-slot10 = {
+slot15[7] = slot16
+slot16 = {
 	32,
 	47
 }
-slot9[8] = slot10
-slot10 = {
+slot15[8] = slot16
+slot16 = {
 	58,
 	64
 }
-slot9[9] = slot10
-slot10 = {
+slot15[9] = slot16
+slot16 = {
 	19968,
 	40959
 }
-slot9[10] = slot10
-slot10 = {
+slot15[10] = slot16
+slot16 = {
 	13312,
 	19903
 }
-slot9[11] = slot10
-slot10 = {
+slot15[11] = slot16
+slot16 = {
 	63744,
 	64255
 }
-slot9[12] = slot10
-slot10 = {
+slot15[12] = slot16
+slot16 = {
 	12352,
 	12447
 }
-slot9[13] = slot10
-slot10 = {
+slot15[13] = slot16
+slot16 = {
 	12448,
 	12543
 }
-slot9[14] = slot10
-slot10 = {
+slot15[14] = slot16
+slot16 = {
 	12784,
 	12799
 }
-slot9[15] = slot10
-slot10 = {
+slot15[15] = slot16
+slot16 = {
 	12288,
 	12351
 }
-slot9[16] = slot10
-slot10 = {
+slot15[16] = slot16
+slot16 = {
 	65072,
 	65103
 }
-slot9[17] = slot10
-slot10 = {
+slot15[17] = slot16
+slot16 = {
 	65281,
 	65374
 }
-slot9[18] = slot10
-slot10 = {
+slot15[18] = slot16
+slot16 = {
 	44032,
 	55215
 }
-slot9[19] = slot10
-slot10 = {
+slot15[19] = slot16
+slot16 = {
 	4352,
 	4607
 }
-slot9[20] = slot10
-slot10 = {
+slot15[20] = slot16
+slot16 = {
 	12592,
 	12687
 }
-slot9[21] = slot10
-slot10 = {
+slot15[21] = slot16
+slot16 = {
 	1024,
 	1279
 }
-slot9[22] = slot10
-slot10 = {
+slot15[22] = slot16
+slot16 = {
 	1280,
 	1327
 }
-slot9[23] = slot10
-slot10 = {
+slot15[23] = slot16
+slot16 = {
 	192,
 	255
 }
-slot9[24] = slot10
-slot10 = {
+slot15[24] = slot16
+slot16 = {
 	256,
 	383
 }
-slot9[25] = slot10
-slot10 = {
+slot15[25] = slot16
+slot16 = {
 	384,
 	591
 }
-slot9[26] = slot10
-slot10 = {
+slot15[26] = slot16
+slot16 = {
 	7680,
 	7935
 }
-slot9[27] = slot10
-slot8.UnicodeNameRangeList = slot9
-slot9 = slot8.UnicodeNameRangeList
+slot15[27] = slot16
+slot8.UnicodeNameRangeList = slot15
+slot15 = slot8.UnicodeNameRangeList
 
-slot10 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.utf8_to_unicode
@@ -1100,9 +2103,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.filterName = slot10
+slot8.filterName = slot16
 
-slot10 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -1182,9 +2185,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.containsBlank = slot10
+slot8.containsBlank = slot16
 
-slot10 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1490,9 +2493,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.utf8_to_unicode = slot10
+slot8.utf8_to_unicode = slot16
 
-slot10 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1777,9 +2780,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.unicode_to_utf8 = slot10
+slot8.unicode_to_utf8 = slot16
 
-slot10 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -2237,9 +3240,49 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.getValidName = slot10
+slot8.getValidName = slot16
 
-slot10 = function(slot0, ...)
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot2 = string
+	slot2 = slot2.format
+	slot4 = "<color=%s>%s</color>"
+	slot5 = slot1
+	slot6 = slot0
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot8.applyTextColor = slot16
+
+slot16 = function(slot0, ...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2291,35 +3334,41 @@ slot10 = function(slot0, ...)
 	end
 
 
-	--- BLOCK #4 24-30, warpins: 1 ---
-	slot8 = #slot1
-	slot8 = slot8 + 1
-	slot9 = tostring
-	slot11 = slot7
-	slot9 = slot9(slot11)
-	slot1[slot8] = slot9
+	--- BLOCK #4 24-28, warpins: 1 ---
+	slot8 = tostring
+	slot10 = slot7
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 31-33, warpins: 1 ---
-	slot8 = #slot1
-	slot8 = slot8 + 1
-	slot1[slot8] = slot7
+	--- BLOCK #5 29-29, warpins: 2 ---
+	slot8 = slot7
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 34-34, warpins: 2 ---
+	--- BLOCK #6 30-37, warpins: 2 ---
+	slot9 = #slot1
+	slot9 = slot9 + 1
+	slot10 = formatTextByInternationalNumberConfig
+	slot12 = slot0
+	slot13 = slot8
+	slot10 = slot10(slot12, slot13)
+	slot1[slot9] = slot10
 	--- END OF BLOCK #6 ---
 
 	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #3
 	GO OUT TO BLOCK #7
 
-	--- BLOCK #7 35-47, warpins: 1 ---
+	--- BLOCK #7 38-50, warpins: 1 ---
 	slot3 = pgI18N
 	slot3 = slot3.LocalizationText
 	slot3 = slot3.SetText
@@ -2343,9 +3392,9 @@ slot10 = function(slot0, ...)
 
 end
 
-slot8.setText = slot10
+slot8.setText = slot16
 
-slot10 = function(slot0, slot1, ...)
+slot16 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2396,35 +3445,41 @@ slot10 = function(slot0, slot1, ...)
 	end
 
 
-	--- BLOCK #4 23-29, warpins: 1 ---
-	slot8 = #slot2
-	slot8 = slot8 + 1
-	slot9 = tostring
-	slot11 = slot7
-	slot9 = slot9(slot11)
-	slot2[slot8] = slot9
+	--- BLOCK #4 23-27, warpins: 1 ---
+	slot8 = tostring
+	slot10 = slot7
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 30-32, warpins: 1 ---
-	slot8 = #slot2
-	slot8 = slot8 + 1
-	slot2[slot8] = slot7
+	--- BLOCK #5 28-28, warpins: 2 ---
+	slot8 = slot7
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 33-33, warpins: 2 ---
+	--- BLOCK #6 29-36, warpins: 2 ---
+	slot9 = #slot2
+	slot9 = slot9 + 1
+	slot10 = formatTextByInternationalNumberConfig
+	slot12 = slot0
+	slot13 = slot8
+	slot10 = slot10(slot12, slot13)
+	slot2[slot9] = slot10
 	--- END OF BLOCK #6 ---
 
 	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #3
 	GO OUT TO BLOCK #7
 
-	--- BLOCK #7 34-38, warpins: 1 ---
+	--- BLOCK #7 37-41, warpins: 1 ---
 	slot3 = type
 	slot5 = slot1
 	slot3 = slot3(slot5)
@@ -2437,7 +3492,7 @@ slot10 = function(slot0, slot1, ...)
 	end
 
 
-	--- BLOCK #8 39-42, warpins: 1 ---
+	--- BLOCK #8 42-45, warpins: 1 ---
 	slot3 = tonumber
 	slot5 = slot1
 	slot3 = slot3(slot5)
@@ -2447,7 +3502,7 @@ slot10 = function(slot0, slot1, ...)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-44, warpins: 2 ---
+	--- BLOCK #9 46-47, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 	if slot1 == nil then
@@ -2457,7 +3512,7 @@ slot10 = function(slot0, slot1, ...)
 	end
 
 
-	--- BLOCK #10 45-54, warpins: 1 ---
+	--- BLOCK #10 48-57, warpins: 1 ---
 	slot3 = pgI18N
 	slot3 = slot3.LocalizationText
 	slot3 = slot3.SetText
@@ -2474,7 +3529,7 @@ slot10 = function(slot0, slot1, ...)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 55-63, warpins: 1 ---
+	--- BLOCK #11 58-66, warpins: 1 ---
 	slot3 = pgI18N
 	slot3 = slot3.LocalizationText
 	slot3 = slot3.SetTextWithId
@@ -2491,7 +3546,7 @@ slot10 = function(slot0, slot1, ...)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 64-68, warpins: 2 ---
+	--- BLOCK #12 67-71, warpins: 2 ---
 	slot3 = ListPool
 	slot3 = slot3.returnList
 	slot5 = slot2
@@ -2505,9 +3560,9 @@ slot10 = function(slot0, slot1, ...)
 
 end
 
-slot8.setTextWithId = slot10
+slot8.setTextWithId = slot16
 
-slot10 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot1
@@ -2578,9 +3633,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot8.setTextWithIdOrDefault = slot10
+slot8.setTextWithIdOrDefault = slot16
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2715,160 +3770,629 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.setArkFontEnable = slot10
-slot10 = {}
+slot8.setArkFontEnable = slot16
+slot16 = {}
 
-slot11 = function(...)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot17 = function(...)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = table
 	slot0 = slot0.clear
 	slot2 = _concatResult
 
 	slot0(slot2)
 
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.localizationMgr
-	slot0 = slot0.SelectedLanguage
-	slot1 = ClientConst
-	slot1 = slot1.LANGUAGE_TYPE_MAP
-	slot1 = slot1.en
+	slot0 = 0
+	slot1 = 1
+	slot2 = select
+	slot4 = "#"
+	MULTRES = ...
+	slot2 = slot2(slot4, MULTRES)
+	slot3 = 1
 	--- END OF BLOCK #0 ---
 
-	if slot0 ~= slot1 then
+	FLOW; TARGET BLOCK #1
+
+
+	--- BLOCK #1 13-18, warpins: 2 ---
+	slot5 = select
+	slot7 = slot4
+	MULTRES = ...
+	slot5 = slot5(slot7, MULTRES)
+	--- END OF BLOCK #1 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 19-25, warpins: 1 ---
+	slot0 = slot0 + 1
+	slot6 = _concatResult
+	slot7 = type
+	slot9 = slot5
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	if slot7 ~= "string" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 26-30, warpins: 1 ---
+	slot7 = tostring
+	slot9 = slot5
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #3 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 31-31, warpins: 2 ---
+	slot7 = slot5
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-32, warpins: 2 ---
+	slot6[slot0] = slot7
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-33, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot4=slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #7
+
+	--- BLOCK #7 34-39, warpins: 1 ---
+	slot1 = ClientConst
+	slot1 = slot1.CONCAT_SEPARATOR_BY_LANGUAGE
+	slot2 = pg
+	slot2 = slot2.languageType
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 40-42, warpins: 1 ---
+	slot2 = ClientConst
+	slot2 = slot2.LANGUAGE_TYPE_MAP
+	slot2 = slot2.zh_CN
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 43-45, warpins: 2 ---
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #9 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 46-46, warpins: 1 ---
+	slot1 = ""
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 47-51, warpins: 2 ---
+	slot2 = table
+	slot2 = slot2.concat
+	slot4 = _concatResult
+	slot5 = slot1
+
+	return slot2(slot4, slot5)
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot8.concatByLanguage = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 14-15, warpins: 1 ---
-	slot0 = false
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = ""
+
+	return slot1
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-16, warpins: 1 ---
-	slot0 = true
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.languageType
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 17-24, warpins: 2 ---
-	slot1 = 0
-	slot2 = 1
-	slot3 = select
-	slot5 = "#"
-	MULTRES = ...
-	slot3 = slot3(slot5, MULTRES)
-	slot4 = 1
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot1 = ClientConst
+	slot1 = slot1.LANGUAGE_TYPE_MAP
+	slot1 = slot1.zh_CN
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-30, warpins: 2 ---
-	slot6 = select
-	slot8 = slot5
-	MULTRES = ...
-	slot6 = slot6(slot8, MULTRES)
+	--- BLOCK #4 12-16, warpins: 2 ---
+	slot2 = ClientConst
+	slot2 = slot2.SHORT_LEVEL_FORMAT_BY_LANGUAGE
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #4 ---
 
-	if slot6 ~= nil then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 31-37, warpins: 1 ---
-	slot1 = slot1 + 1
-	slot7 = _concatResult
-	slot8 = type
-	slot10 = slot6
-	slot8 = slot8(slot10)
+	--- BLOCK #5 17-18, warpins: 1 ---
+	slot2 = ClientConst
+	slot2 = slot2.DEFAULT_SHORT_LEVEL_FORMAT
 	--- END OF BLOCK #5 ---
 
-	if slot8 ~= "string" then
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-27, warpins: 2 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.getFormatText
+	slot5 = slot2
+	slot6 = ClientTextUtils
+	slot6 = slot6.getGameString
+	slot8 = "LEVEL_LITE"
+	slot6 = slot6(slot8)
+	slot7 = slot0
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot8.formatShortLevel = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	slot2 = ""
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-15, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.formatShortLevel
+	slot4 = string
+	slot4 = slot4.format
+	slot6 = "%s~%s"
+	slot7 = slot0
+	slot8 = slot1
+	MULTRES = slot4(slot6, slot7, slot8)
+
+	return slot2(MULTRES)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.formatShortLevelRange = slot17
+slot17 = {}
+
+slot18 = function(...)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = table
+	slot0 = slot0.clear
+	slot2 = _countDownConcatResult
+
+	slot0(slot2)
+
+	slot0 = pg
+	slot0 = slot0.languageType
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot0 = ClientConst
+	slot0 = slot0.LANGUAGE_TYPE_MAP
+	slot0 = slot0.zh_CN
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-18, warpins: 2 ---
+	slot1 = 1
+	slot2 = select
+	slot4 = "#"
+	MULTRES = ...
+	slot2 = slot2(slot4, MULTRES)
+	slot3 = 2
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-30, warpins: 2 ---
+	slot5 = select
+	slot7 = slot4
+	MULTRES = ...
+	slot5 = slot5(slot7, MULTRES)
+	slot6 = string
+	slot6 = slot6.trim
+	slot8 = select
+	slot10 = slot4 + 1
+	MULTRES = ...
+	slot8 = slot8(slot10, MULTRES)
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 31-31, warpins: 1 ---
+	slot8 = ""
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-34, warpins: 2 ---
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	if slot5 ~= nil then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 38-42, warpins: 1 ---
-	slot8 = tostring
+	--- BLOCK #6 35-44, warpins: 1 ---
+	slot7 = _countDownConcatResult
+	slot8 = _countDownConcatResult
+	slot8 = #slot8
+	slot8 = slot8 + 1
+	slot9 = tostring
+	slot11 = slot5
+	slot9 = slot9(slot11)
 	slot10 = slot6
-	slot8 = slot8(slot10)
+	slot9 = slot9 .. slot10
+	slot7[slot8] = slot9
 	--- END OF BLOCK #6 ---
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 43-43, warpins: 2 ---
-	slot8 = slot6
+	--- BLOCK #7 45-45, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	for slot4=slot1, slot2, slot3
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #8
 
-
-	--- BLOCK #8 44-44, warpins: 2 ---
-	slot7[slot1] = slot8
+	--- BLOCK #8 46-50, warpins: 1 ---
+	slot1 = ClientConst
+	slot1 = slot1.COUNT_DOWN_WITHOUT_UNIT_GROUP_SPACE_LANGUAGES
+	slot1 = slot1[slot0]
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 45-45, warpins: 2 ---
-	--- END OF BLOCK #9 ---
-
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #10
-
-	--- BLOCK #10 46-50, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.concat
-	slot4 = _concatResult
-	--- END OF BLOCK #10 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #11
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #11 51-52, warpins: 1 ---
-	slot5 = " "
-	--- END OF BLOCK #11 ---
+	--- BLOCK #9 51-52, warpins: 1 ---
+	slot1 = ""
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #12 53-53, warpins: 1 ---
-	slot5 = nil
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #13 54-54, warpins: 2 ---
+	--- BLOCK #10 53-54, warpins: 1 ---
+	slot1 = ClientConst
+	slot1 = slot1.HALF_WIDTH_SPACE
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 55-59, warpins: 2 ---
+	slot2 = table
+	slot2 = slot2.concat
+	slot4 = _countDownConcatResult
+	slot5 = slot1
+
 	return slot2(slot4, slot5)
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot8.concatByLanguage = slot11
+slot8.concatCountDownUnitsByLanguage = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 1 ---
+	slot1 = ""
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-10, warpins: 2 ---
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-17, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.gsub
+	slot3 = slot0
+	slot4 = "<[^>]->"
+	slot5 = ""
+	slot1 = slot1(slot3, slot4, slot5)
+
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot8.removeRichText = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-15, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.find
+	slot3 = slot0
+	slot4 = "</?%a[%a%d]*[^>]*>"
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-17, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-23, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.gmatch
+	slot3 = slot0
+	slot4 = "<#([^>]*)>"
+	slot1, slot2, slot3 = slot1(slot3, slot4)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #5 24-31, warpins: 1 ---
+	slot5 = #slot4
+	slot6 = string
+	slot6 = slot6.find
+	slot8 = slot4
+	slot9 = "[^%x]"
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #6 32-33, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot5 ~= 3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 34-35, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot5 ~= 4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 36-37, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot5 ~= 6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 38-39, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	if slot5 == 8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 40-41, warpins: 4 ---
+	slot6 = true
+
+	return slot6
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-43, warpins: 4 ---
+	--- END OF BLOCK #11 ---
+
+	for slot4 in slot1, slot2, slot3
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 44-45, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot8.containsRichText = slot18
 
 return slot8
 --- END OF BLOCK #0 ---

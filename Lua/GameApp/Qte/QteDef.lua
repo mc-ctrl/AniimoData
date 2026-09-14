@@ -1,24 +1,24 @@
 --- BLOCK #0 1-8, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	RESULT_GOOD = 12,
+	GOOD_RANGE = 3,
 	RESULT_FAIL = 11,
 	RESULT_TIMEOUT = 10,
 	GOOD_RANGE2 = 5,
-	PERFECT_RANGE = 4,
-	GOOD_RANGE = 3,
-	FAIL_RANGE = 2,
 	LOAD = 1,
+	FAIL_RANGE = 2,
 	NONE = 0,
+	RESULT_GOOD = 12,
+	RESULT_PERFECT = 13,
 	DESTROY = 20,
-	RESULT_PERFECT = 13
+	PERFECT_RANGE = 4
 }
 slot0.CLIP_PHASE = slot1
 slot1 = {
-	NONE = 0,
+	TIMEOUT = 2,
 	PERFECT = 4,
 	GOOD = 3,
-	TIMEOUT = 2,
+	NONE = 0,
 	FAIL = 1
 }
 slot0.QTE_CLIP_RESULT = slot1

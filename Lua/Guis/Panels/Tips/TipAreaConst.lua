@@ -1,48 +1,81 @@
---- BLOCK #0 1-404, warpins: 1 ---
+--- BLOCK #0 1-483, warpins: 1 ---
 slot0 = {}
 slot1 = 0.02
 slot0.TICK_INTERVAL = slot1
 slot1 = {
 	B = "BTipArea",
-	A3 = "A3TipArea",
-	A2 = "A2TipArea",
-	PA2 = "PA2TipArea",
-	A1I = "A1ITipArea",
-	MI = "MITipArea",
-	A1 = "A1TipArea",
-	M = "MTipArea",
-	TOP = "TOPTipArea",
-	CI = "CITipArea",
-	CF = "CFTipArea",
 	C = "CTipArea",
+	A3 = "A3TipArea",
+	PA2 = "PA2TipArea",
+	A2 = "A2TipArea",
+	MI = "MITipArea",
+	A1I = "A1ITipArea",
+	M = "MTipArea",
+	A1 = "A1TipArea",
+	CI = "CITipArea",
+	TOP = "TOPTipArea",
+	CF = "CFTipArea",
 	BI = "BITipArea"
 }
 slot0.AREAS = slot1
 slot1 = {
-	AreaFlag_Quest = "Quest",
-	AreaFlag_A2Show = "A2Show",
-	AreaFlag_Default = "Default",
-	AreaFlag_A1IShow = "A1IShow",
 	AreaFlag_A1Show = "A1Show",
-	AreaFlag_BIShow = "BIShow",
+	AreaFlag_SeasonOpenTip = "SeasonOpenTip",
 	AreaFlag_PanelHide = "PanelHide",
-	AreaFlag_CShow = "CShow",
 	AreaFlag_FullScreen = "FullScreen",
-	AreaFlag_CIShow = "CIShow",
 	AreaFlag_PetFirstShow = "PetFirstShow",
-	AreaFlag_CustomAreaShow = "CustomAreaShow",
 	AreaFlag_Level = "Level",
+	AreaFlag_DialogueGraph = "Dialogue",
+	AreaFlag_Quest = "Quest",
+	AreaFlag_Cutscene = "Cutscene",
+	AreaFlag_Default = "Default",
 	AreaFlag_Force = "Force",
-	AreaFlag_DialogueGraph = "Dialogue"
+	AreaFlag_CustomAreaShow = "CustomAreaShow",
+	AreaFlag_CIShow = "CIShow",
+	AreaFlag_CShow = "CShow",
+	AreaFlag_BIShow = "BIShow",
+	AreaFlag_A1IShow = "A1IShow",
+	AreaFlag_A2Show = "A2Show"
 }
 slot0.UITipAreaFlag = slot1
+slot1 = {
+	Target = "Edge_Target",
+	Quest = "Edge_Quest",
+	QuestArea = "Edge_QuestArea",
+	Challenge = "Edge_Challenge"
+}
+slot0.EDGE_AREAS = slot1
+slot1 = {
+	"ExplorePetReplace",
+	"MultiPetObtains",
+	"PetEvolve",
+	"PetResearch",
+	"PropObtain"
+}
+slot0.EDGE_HIDE_AREA_C_ITEMS = slot1
+slot1 = {
+	"ExplorePetReplace",
+	"MultiPetObtains",
+	"PetEvolve",
+	"PetResearch",
+	"PropObtain",
+	"PetObtain",
+	"GiftTips",
+	"HomeBookUnlock",
+	"QuickUse",
+	"FriendOnLine",
+	"ScreenCaptureShare"
+}
+slot0.CUTSCENE_HIDE_AREA_C_ITEMS = slot1
+slot1 = 60
+slot0.CUTSCENE_MAX_SUSPEND_TIME = slot1
 slot1 = {}
 slot2 = slot0.AREAS
 slot2 = slot2.TOP
 slot3 = {
-	maxRunItemNum = 3,
 	priority = 1,
-	resKey = "topArea"
+	resKey = "topArea",
+	maxRunItemNum = 3
 }
 slot4 = {}
 slot5 = slot0.UITipAreaFlag
@@ -56,51 +89,51 @@ slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A1
 slot3 = {
-	priority = 9,
-	resKey = "a1Area"
+	resKey = "a1Area",
+	priority = 9
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A1I
 slot3 = {
-	priority = 10,
-	resKey = "a1IArea"
+	resKey = "a1IArea",
+	priority = 10
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A2
 slot3 = {
-	maxRunItemNum = 2,
 	priority = 8,
-	resKey = "a2Area"
+	resKey = "a2Area",
+	maxRunItemNum = 2
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A3
 slot3 = {
-	priority = 1,
-	resKey = "a3Area"
+	resKey = "a3Area",
+	priority = 1
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.B
 slot3 = {
-	priority = 1,
-	resKey = "bArea"
+	resKey = "bArea",
+	priority = 1
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.BI
 slot3 = {
-	priority = 1,
-	resKey = "bIArea"
+	resKey = "bIArea",
+	priority = 1
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.CF
 slot3 = {
-	priority = 1,
-	resKey = "cFArea"
+	resKey = "cFArea",
+	priority = 1
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
@@ -109,33 +142,38 @@ slot3 = {
 	priority = 1,
 	resKey = "cArea"
 }
+slot4 = {}
+slot5 = slot0.UITipAreaFlag
+slot5 = slot5.AreaFlag_FullScreen
+slot4[1] = slot5
+slot3.customAreaShow = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.CI
 slot3 = {
-	priority = 3,
-	resKey = "cIArea"
+	resKey = "cIArea",
+	priority = 3
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.M
 slot3 = {
-	priority = 11,
-	resKey = "empty"
+	resKey = "empty",
+	priority = 11
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.MI
 slot3 = {
-	priority = 12,
-	resKey = "empty"
+	resKey = "empty",
+	priority = 12
 }
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.PA2
 slot3 = {
-	priority = 1,
-	resKey = "pA2Area"
+	resKey = "pA2Area",
+	priority = 1
 }
 slot1[slot2] = slot3
 slot0.AREAS_CONFIG = slot1
@@ -216,9 +254,9 @@ slot5 = {
 slot4.testParam = slot5
 slot3.PvpPreparation = slot4
 slot4 = {
-	fixed = true,
 	priority = 1,
-	resKey = "homeName"
+	resKey = "homeName",
+	fixed = true
 }
 slot5 = {
 	name = "测试Home"
@@ -230,9 +268,9 @@ slot4 = {
 	resKey = "countDown"
 }
 slot5 = {
-	infoText = "测试倒计时",
 	useGameTime = true,
-	duration = 5
+	duration = 5,
+	infoText = "测试倒计时"
 }
 slot4.testParam = slot5
 slot5 = {}
@@ -249,9 +287,9 @@ slot4 = {
 	resKey = "timeViolent"
 }
 slot5 = {
-	infoText = "测试狂暴倒计时",
 	useGameTime = true,
-	duration = 5
+	duration = 5,
+	infoText = "测试狂暴倒计时"
 }
 slot4.testParam = slot5
 slot5 = {}
@@ -264,9 +302,9 @@ slot5[2] = slot6
 slot4.customAreaShow = slot5
 slot3.TimeViolent = slot4
 slot4 = {
-	fixed = true,
 	priority = 5,
-	resKey = "bossBlood"
+	resKey = "bossBlood",
+	fixed = true
 }
 slot5 = {}
 slot6 = slot0.UITipAreaFlag
@@ -279,9 +317,14 @@ slot4.customAreaShow = slot5
 slot3.BossTitle = slot4
 slot4 = {
 	fixed = true,
-	priority = 6,
-	resKey = "fishingCaptureProgress"
+	priority = 8,
+	resKey = "getEggLimitedTime"
 }
+slot5 = {
+	title = "测试进度",
+	progress = 0.5
+}
+slot4.testParam = slot5
 slot5 = {}
 slot6 = slot0.UITipAreaFlag
 slot6 = slot6.AreaFlag_A1Show
@@ -290,11 +333,16 @@ slot6 = slot0.UITipAreaFlag
 slot6 = slot6.AreaFlag_A1IShow
 slot5[2] = slot6
 slot4.customAreaShow = slot5
-slot3.FishingCaptureProgress = slot4
+slot3.GetEggLimitedTime = slot4
 slot4 = {
-	priority = 7,
-	resKey = "bossCatchTips"
+	fixed = true,
+	priority = 8,
+	resKey = "waitingInfo"
 }
+slot5 = {
+	tipsTextKey = "GRAB_EGG_LOADING_WAIT"
+}
+slot4.testParam = slot5
 slot5 = {}
 slot6 = slot0.UITipAreaFlag
 slot6 = slot6.AreaFlag_A1Show
@@ -303,14 +351,31 @@ slot6 = slot0.UITipAreaFlag
 slot6 = slot6.AreaFlag_A1IShow
 slot5[2] = slot6
 slot4.customAreaShow = slot5
-slot3.BossCatchTips = slot4
+slot3.GrabEggWaitingInfo = slot4
+slot4 = {
+	priority = 8,
+	resKey = "petSmallHp"
+}
+slot5 = {
+	duration = 5
+}
+slot4.testParam = slot5
+slot5 = {}
+slot6 = slot0.UITipAreaFlag
+slot6 = slot6.AreaFlag_A1Show
+slot5[1] = slot6
+slot6 = slot0.UITipAreaFlag
+slot6 = slot6.AreaFlag_A1IShow
+slot5[2] = slot6
+slot4.customAreaShow = slot5
+slot3.TargetEntityInfo = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A1
 slot3 = {}
 slot4 = {
-	priority = 1,
-	resKey = "pOINew"
+	resKey = "pOINew",
+	priority = 1
 }
 slot3.POIPop = slot4
 slot4 = {
@@ -318,8 +383,8 @@ slot4 = {
 	resKey = "questComplete"
 }
 slot5 = {
-	id = 1202075,
-	duration = 5
+	duration = 5,
+	id = 1202075
 }
 slot4.testParam = slot5
 slot3.QuestComplete = slot4
@@ -385,13 +450,13 @@ slot5 = {
 slot4.testParam = slot5
 slot3.BossFirstKill = slot4
 slot4 = {
-	fixed = true,
 	priority = 0,
-	resKey = "grabEggsIncubator"
+	resKey = "grabEggsIncubator",
+	fixed = true
 }
 slot5 = {
-	duration = 3,
-	title = "测试Title"
+	title = "测试Title",
+	duration = 3
 }
 slot4.testParam = slot5
 slot3.GrabEggsIncubator = slot4
@@ -414,6 +479,15 @@ slot5 = {
 slot4.testParam = slot5
 slot3.TransferEgg = slot4
 slot4 = {
+	priority = 101,
+	resKey = "eventSeasonUContainer"
+}
+slot5 = {
+	endTime = 0
+}
+slot4.testParam = slot5
+slot3.EventSeason = slot4
+slot4 = {
 	priority = 20,
 	resKey = "resultFail"
 }
@@ -422,10 +496,44 @@ slot5 = {
 }
 slot4.testParam = slot5
 slot3.ResultFail = slot4
+slot4 = {
+	priority = 31,
+	resKey = "bossCatchWarning"
+}
+slot5 = {
+	duration = 3
+}
+slot4.testNames = slot5
+slot3.BossCatchWarning = slot4
+slot4 = {
+	priority = 26,
+	resKey = "countDownLimitedTime"
+}
+slot5 = {
+	duration = 5,
+	title = "测试限时"
+}
+slot4.testParam = slot5
+slot3.CountDownLimitedTime = slot4
+slot4 = {
+	priority = 100,
+	resKey = "HomeSeasonCelebration"
+}
+slot5 = {
+	duration = 600,
+	title = "庆典准备中"
+}
+slot4.testParam = slot5
+slot3.HomeSeasonCelebration = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A1I
 slot3 = {}
+slot4 = {
+	resKey = "mapTipsUContainer",
+	priority = 100
+}
+slot3.MapTips = slot4
 slot4 = {
 	priority = 56,
 	resKey = "playerExpChanged"
@@ -439,20 +547,20 @@ slot6 = slot6.A3
 slot5[2] = slot6
 slot4.hidAreas = slot5
 slot5 = {
+	curExp = 100,
 	oldExp = 100,
 	batch = true,
 	isLvUp = true,
 	newLevel = 11,
 	oldLevel = 10,
 	maxExp = 200,
-	addExp = 120,
-	curExp = 100
+	addExp = 120
 }
 slot4.testParam = slot5
 slot3.PlayerExpChanged = slot4
 slot4 = {
-	priority = 100,
-	resKey = "itemObtain"
+	resKey = "itemObtain",
+	priority = 99
 }
 slot3.ItemObtain = slot4
 slot1[slot2] = slot3
@@ -488,6 +596,16 @@ slot5 = {
 slot4.testParam = slot5
 slot3.BossMechanismProgress = slot4
 slot4 = {
+	priority = 15,
+	resKey = "battleRoomMechanismTips"
+}
+slot5 = {
+	duration = 3,
+	text = "测试道馆机制提示"
+}
+slot4.testParam = slot5
+slot3.BattleRoomMechanismTips = slot4
+slot4 = {
 	priority = 14,
 	resKey = "dungeonTips"
 }
@@ -498,10 +616,19 @@ slot5 = {
 slot4.testParam = slot5
 slot3.DungeonTips = slot4
 slot4 = {
-	priority = 1,
-	resKey = "poiAreaTips"
+	resKey = "poiAreaTips",
+	priority = 1
 }
 slot3.POIPopArea = slot4
+slot4 = {
+	priority = 16,
+	resKey = "bossCatchTips"
+}
+slot5 = {
+	text = "与鸢尾交互，缔结契约"
+}
+slot4.testParam = slot5
+slot3.BossCatchTips = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.A3
@@ -539,8 +666,8 @@ slot5 = {
 slot4.testParam = slot5
 slot3.HelpTips = slot4
 slot4 = {
-	priority = 1,
-	resKey = "underTips"
+	resKey = "underTips",
+	priority = 1
 }
 slot3.UnderTips = slot4
 slot4 = {
@@ -548,16 +675,25 @@ slot4 = {
 	resKey = "completionPrompt"
 }
 slot5 = {
-	templateId = 1001100,
-	pointNum = 100
+	pointNum = 100,
+	templateId = 1001100
 }
 slot4.testParam = slot5
 slot3.CompletionPrompt = slot4
 slot4 = {
-	priority = 101,
-	resKey = "badgeRepeatObtain"
+	resKey = "badgeRepeatObtain",
+	priority = 101
 }
 slot3.badgeRepeatObtain = slot4
+slot4 = {
+	priority = 5,
+	resKey = "gainCrop"
+}
+slot5 = {
+	itemId = 1
+}
+slot4.testParam = slot5
+slot3.GainCrop = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.BI
@@ -590,8 +726,8 @@ slot5 = {
 slot4.testParam = slot5
 slot3.ControlPanel = slot4
 slot4 = {
-	priority = 4,
-	resKey = "petConjunctionTips"
+	resKey = "petConjunctionTips",
+	priority = 4
 }
 slot3.PetConjunctionTips = slot4
 slot1[slot2] = slot3
@@ -599,9 +735,9 @@ slot2 = slot0.AREAS
 slot2 = slot2.CF
 slot3 = {}
 slot4 = {
-	fixed = true,
 	priority = 1,
-	resKey = "shortCutKey"
+	resKey = "shortCutKey",
+	fixed = true
 }
 slot3.ShortCutKey = slot4
 slot1[slot2] = slot3
@@ -619,13 +755,38 @@ slot5 = {
 slot4.testParam = slot5
 slot3.PropObtain = slot4
 slot4 = {
-	priority = 15,
-	resKey = "petObtain"
+	resKey = "quickUse",
+	priority = 11
+}
+slot3.QuickUse = slot4
+slot4 = {
+	resKey = "friendOnLine",
+	priority = 12
+}
+slot3.FriendOnLine = slot4
+slot4 = {
+	priority = 12,
+	resKey = "homeBookUnlock"
+}
+slot5 = {
+	duration = 5,
+	itemId = 4001000
+}
+slot4.testParam = slot5
+slot5 = {}
+slot6 = slot0.UITipAreaFlag
+slot6 = slot6.AreaFlag_FullScreen
+slot5[1] = slot6
+slot4.customAreaShow = slot5
+slot3.HomeBookUnlock = slot4
+slot4 = {
+	resKey = "petObtain",
+	priority = 54
 }
 slot3.PetObtain = slot4
 slot4 = {
-	priority = 16,
-	resKey = "petObtains"
+	resKey = "petObtains",
+	priority = 53
 }
 slot3.MultiPetObtains = slot4
 slot4 = {
@@ -633,62 +794,72 @@ slot4 = {
 	resKey = "petEvolve"
 }
 slot5 = {
-	templateId = 1002200,
-	canStageUp = true
+	canStageUp = true,
+	templateId = 1002200
 }
 slot4.testParam = slot5
 slot3.PetEvolve = slot4
 slot4 = {
-	priority = 21,
-	resKey = "petResearch"
+	resKey = "petResearch",
+	priority = 51
 }
 slot3.PetResearch = slot4
 slot4 = {
-	priority = 31,
-	resKey = "petAbility"
+	resKey = "petAbility",
+	priority = 52
 }
 slot3.ExplorePetReplace = slot4
+slot4 = {
+	resKey = "giftTips",
+	priority = 25
+}
+slot3.GiftTips = slot4
+slot4 = {
+	priority = 32,
+	resKey = "screenCaptureShareUContainer"
+}
+slot5 = {}
+slot6 = slot0.UITipAreaFlag
+slot6 = slot6.AreaFlag_FullScreen
+slot5[1] = slot6
+slot4.customAreaShow = slot5
+slot3.ScreenCaptureShare = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.CI
 slot3 = {}
 slot4 = {
-	priority = 60,
-	resKey = "friendInvite"
+	resKey = "friendInvite",
+	priority = 60
 }
 slot3.TeamInvite = slot4
 slot4 = {
-	priority = 61,
-	resKey = "pvpInvite"
+	resKey = "pvpInvite",
+	priority = 61
 }
 slot3.PvpInvite = slot4
 slot4 = {
-	priority = 1,
-	resKey = "npcCall"
+	resKey = "npcCall",
+	priority = 1
 }
 slot3.NpcCall = slot4
-slot4 = {
-	priority = 50,
-	resKey = "giftTips"
-}
-slot3.GiftTips = slot4
 slot1[slot2] = slot3
 slot2 = slot0.AREAS
 slot2 = slot2.M
 slot3 = {}
 slot4 = {
-	priority = 10,
-	resKey = "preciousProp"
+	resKey = "preciousProp",
+	priority = 10
 }
 slot3.PreciousProp = slot4
 slot4 = {
-	priority = 11,
-	resKey = "questChapter"
+	resKey = "questChapter",
+	priority = 11
 }
 slot3.QuestChapter = slot4
 slot4 = {
-	priority = 12,
-	resKey = "petFirstShow"
+	resKey = "petFirstShow",
+	priority = 12
 }
 slot3.PetFirstShow = slot4
 slot1[slot2] = slot3
@@ -696,8 +867,8 @@ slot2 = slot0.AREAS
 slot2 = slot2.MI
 slot3 = {}
 slot4 = {
-	priority = 10,
-	resKey = "propsObtain"
+	resKey = "propsObtain",
+	priority = 10
 }
 slot3.PropsObtain = slot4
 slot1[slot2] = slot3
@@ -709,25 +880,27 @@ slot4 = {
 	resKey = "dropHint"
 }
 slot5 = {
-	str = "You got a rare item!",
-	progressDuration = 5
+	progressDuration = 5,
+	str = "You got a rare item!"
 }
 slot4.testParam = slot5
 slot3.DropHint = slot4
 slot1[slot2] = slot3
 slot0.AREA_ITEMS = slot1
 slot1 = {
+	ItemFlag_NoHUD = 100,
 	ItemFlag_Mobile = 99,
 	ItemFlag_HideFixed = 1,
 	ItemFlag_Default = 0,
-	ItemFlag_NoHUD = 100
+	ItemFlag_BigWhiteBall = 102,
+	ItemFlag_SkillFreeAim = 101
 }
 slot0.TipItemFlag = slot1
 slot1 = {
-	RUN_FIXED = 1,
 	EMPTY = 0,
 	RUN_QUEUE = 3,
-	WAITING = 2
+	WAITING = 2,
+	RUN_FIXED = 1
 }
 slot0.ITEM_RUN_STATE = slot1
 slot1 = {
@@ -738,6 +911,8 @@ slot1 = {
 	"TOPTipArea_TimeViolent",
 	"TOPTipArea_CommonTimer",
 	"TOPTipArea_BossTitle",
+	"TOPTipArea_GetEggLimitedTime",
+	"TOPTipArea_GrabEggWaitingInfo",
 	"A1TipArea_POIPop",
 	"A1TipArea_QuestComplete",
 	"A1TipArea_TowerResultWin",
@@ -748,31 +923,41 @@ slot1 = {
 	"A1TipArea_BossFirstKill",
 	"A1TipArea_GrabEggsIncubator",
 	"A1TipArea_TransferEgg",
+	"A1TipArea_BossCatchWarning",
+	"A1TipArea_CountDownLimitedTime",
+	"A1TipArea_HomeSeasonCelebration",
+	"A1TipArea_EventSeason",
 	"A1ITipArea_PlayerExpChanged",
 	"A1ITipArea_ItemObtain",
 	"A2TipArea_OutCombatProgress",
 	"A2TipArea_BossMechanismTips",
 	"A2TipArea_BossMechanismProgress",
+	"A2TipArea_BattleRoomMechanismTips",
 	"A2TipArea_DungeonTips",
 	"A2TipArea_POIPopArea",
+	"A2TipArea_BossCatchTips",
 	"A3TipArea_NormalText",
 	"BTipArea_ItemRepeatObtain",
 	"BTipArea_HelpTips",
 	"BTipArea_UnderTips",
 	"BTipArea_CompletionPrompt",
+	"BTipArea_GainCrop",
 	"BITipArea_AIHelperTips",
 	"BITipArea_ControlPanel",
 	"CFTipArea_ShortCutKey",
 	"CTipArea_PropObtain",
+	"CTipArea_QuickUse",
+	"CTipArea_FriendOnLine",
+	"CTipArea_HomeBookUnlock",
 	"CTipArea_PetObtain",
-	"CTipArea_PetObtains",
+	"CTipArea_MultiPetObtains",
 	"CTipArea_PetEvolve",
 	"CTipArea_PetResearch",
 	"CTipArea_ExplorePetReplace",
+	"CTipArea_GiftTips",
 	"CITipArea_TeamInvite",
 	"CITipArea_PvpInvite",
 	"CITipArea_NpcCall",
-	"CITipArea_GiftTips",
 	"MTipArea_PreciousProp",
 	"MTipArea_QuestChapter",
 	"MITipArea_PropsObtain",

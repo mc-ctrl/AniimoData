@@ -41,10 +41,10 @@ slot0.DETECT_SPREAD_EFFECT_FAST = slot1
 slot1 = "$Level_FB_HelmonBox_VolumeProfile_01.asset"
 slot0.DETECT_MASK_EFFECT = slot1
 slot1 = {
+	CONGENER = 3,
 	CAMOUFLAGE = 2,
 	CHEST = 1,
-	NONE = 0,
-	CONGENER = 3
+	NONE = 0
 }
 slot0.DETECT_ENTITY_EFFECT_TYPE = slot1
 slot1 = "Eff_Parmon_Blink_First"

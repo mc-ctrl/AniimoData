@@ -1,4 +1,4 @@
---- BLOCK #0 1-97, warpins: 1 ---
+--- BLOCK #0 1-107, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -42,20 +42,198 @@ slot13 = require
 slot15 = "Data.home_event_type_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.Utils"
+slot16 = "Data.home_leisure_behavior_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Const.Const"
+slot17 = "Data.homeland_config_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Utils.LuaUIUtils"
+slot18 = "Common.Utils.Utils"
 slot16 = slot16(slot18)
-slot17 = slot3.LightClass
-slot19 = "TopLogoWorkStateComponent"
-slot20 = slot9
-slot17 = slot17(slot19, slot20)
+slot17 = require
+slot19 = "Common.Const.Const"
+slot17 = slot17(slot19)
+slot18 = require
+slot20 = "Utils.LuaUIUtils"
+slot18 = slot18(slot20)
+slot19 = slot3.LightClass
+slot21 = "TopLogoWorkStateComponent"
+slot22 = slot9
+slot19 = slot19(slot21, slot22)
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot1 = slot1.demoMode
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-11, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-17, warpins: 3 ---
+	slot1 = pcall
+	slot3 = require
+	slot4 = "Utils.GmToolUtils"
+	slot1, slot2 = slot1(slot3, slot4)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 18-19, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot3 = slot2.homeDemoModeOn
+	--- END OF BLOCK #5 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 25-25, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-26, warpins: 4 ---
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot19.isHomeDemoMode = slot20
+
+slot20 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.entity
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.getAttachEntityName
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-19, warpins: 2 ---
+	slot1 = slot0.entity
+	slot3 = slot1
+	slot1 = slot1.getAttachEntityName
+	slot1 = slot1(slot3)
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-21, warpins: 1 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-25, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.getLocalizationText
+	slot4 = slot1
+
+	return slot2(slot4)
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot19.m_getHomeDemoPetName = slot20
+
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = TopLogoWorkStateComponent
 	slot3 = slot3.super
@@ -78,9 +256,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.ctor = slot18
+slot19.ctor = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = false
 	slot0.m_pendingWorkStateRefresh = slot1
@@ -96,9 +274,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onCtor = slot18
+slot19.onCtor = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isHomePet
@@ -124,91 +302,125 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #2 9-13, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.checkHomePetHasFood
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-20, warpins: 1 ---
+	--- BLOCK #3 14-15, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-20, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot1 = slot1.checkHomePetHasFood
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 21-27, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
 	slot1 = slot1.checkHomePetHasFood
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #3 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 21-22, warpins: 1 ---
-	slot1 = true
-
-	return slot1
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 23-25, warpins: 3 ---
-	slot1 = slot0.isInWorkState
 	--- END OF BLOCK #5 ---
 
-	if slot1 ~= true then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 26-28, warpins: 1 ---
-	slot1 = slot0.isInActionState
-	--- END OF BLOCK #6 ---
-
-	if slot1 ~= true then
 	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 29-30, warpins: 1 ---
-	slot1 = false
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 31-31, warpins: 2 ---
+	--- BLOCK #6 28-29, warpins: 1 ---
 	slot1 = true
 
+	return slot1
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-32, warpins: 3 ---
+	slot1 = slot0.isInWorkState
+	--- END OF BLOCK #7 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 33-35, warpins: 1 ---
+	slot1 = slot0.isInActionState
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	if slot1 ~= true then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #9 32-32, warpins: 2 ---
-	return slot1
+	--- BLOCK #9 36-38, warpins: 1 ---
+	slot1 = slot0.isInPettingState
 	--- END OF BLOCK #9 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 39-40, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 41-41, warpins: 3 ---
+	slot1 = true
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 42-42, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot17.shouldBeActive = slot18
+slot19.shouldBeActive = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = nil
 	slot0.transportVisible = slot1
@@ -249,7 +461,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 23-38, warpins: 2 ---
+	--- BLOCK #2 23-43, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.markDirty
 	slot4 = EventConst
@@ -271,6 +483,13 @@ slot18 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	slot3 = slot0
+	slot1 = slot0.markDirty
+	slot4 = EventConst
+	slot4 = slot4.HOMELAND_LEISURE_STATE_CHANGED
+
+	slot1(slot3, slot4)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -278,9 +497,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.resetRender = slot18
+slot19.resetRender = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isHomePet
@@ -315,7 +534,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #3 11-26, warpins: 1 ---
+	--- BLOCK #3 11-34, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.eventEmitter
 	slot3 = slot1
@@ -336,12 +555,22 @@ slot18 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
+	slot1 = slot0.entity
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.removeEventListener
+	slot4 = EventConst
+	slot4 = slot4.HOMELAND_LEISURE_STATE_CHANGED
+	slot5 = slot0.onEntityLeisureStateChanged
+
+	slot1(slot3, slot4, slot5)
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-36, warpins: 2 ---
+	--- BLOCK #4 35-44, warpins: 2 ---
 	slot1 = false
 	slot0.m_pendingWorkStateRefresh = slot1
 	slot1 = TopLogoWorkStateComponent
@@ -361,9 +590,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onDestroy = slot18
+slot19.onDestroy = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0.refUContainer
 	slot1 = slot1.content
@@ -419,24 +648,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.findObjects = slot18
+slot19.findObjects = slot20
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.WORK_STATE
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot17.getComponentName = slot18
-
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isHomePet
@@ -455,7 +669,7 @@ slot18 = function(slot0)
 	--- BLOCK #1 7-7, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
 	--- BLOCK #2 8-12, warpins: 1 ---
@@ -652,24 +866,92 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 70-71, warpins: 2 ---
-	return
+	--- BLOCK #8 70-74, warpins: 2 ---
+	slot1 = function()
+		--- BLOCK #0 1-17, warpins: 1 ---
+		slot0 = self
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.checkInPettingState
+		slot1 = slot1(slot3)
+		slot0.isInPettingState = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.markDirty
+		slot3 = EventConst
+		slot3 = slot3.HOMELAND_LEISURE_STATE_CHANGED
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.m_notifyPending
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot0.onEntityLeisureStateChanged = slot1
+	slot1 = slot0.entity
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #9 72-72, warpins: 2 ---
-	return
+	--- BLOCK #9 75-91, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkInPettingState
+	slot1 = slot1(slot3)
+	slot0.isInPettingState = slot1
+	slot3 = slot0
+	slot1 = slot0.markDirty
+	slot4 = EventConst
+	slot4 = slot4.HOMELAND_LEISURE_STATE_CHANGED
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.entity
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.addEventListener
+	slot4 = EventConst
+	slot4 = slot4.HOMELAND_LEISURE_STATE_CHANGED
+	slot5 = slot0.onEntityLeisureStateChanged
+
+	slot1(slot3, slot4, slot5)
+
 	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 92-93, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 94-94, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot17.addEntityListener = slot18
+slot19.addEntityListener = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = TopLogoWorkStateComponent
 	slot1 = slot1.super
@@ -720,88 +1002,122 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #4 18-22, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.checkHomePetHasFood
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 23-29, warpins: 1 ---
+	--- BLOCK #5 23-24, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-29, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot1 = slot1.checkHomePetHasFood
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 30-36, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
 	slot1 = slot1.checkHomePetHasFood
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #5 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 30-31, warpins: 1 ---
-	slot1 = true
-
-	return slot1
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 32-34, warpins: 3 ---
-	slot1 = slot0.isInWorkState
 	--- END OF BLOCK #7 ---
 
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 35-37, warpins: 1 ---
-	slot1 = slot0.isInActionState
+	--- BLOCK #8 37-38, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
 	--- END OF BLOCK #8 ---
 
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 39-41, warpins: 3 ---
+	slot1 = slot0.isInWorkState
+	--- END OF BLOCK #9 ---
+
 	slot1 = if not slot1 then
-	JUMP TO BLOCK #9
-	else
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 38-39, warpins: 1 ---
+	--- BLOCK #10 42-44, warpins: 1 ---
+	slot1 = slot0.isInActionState
+	--- END OF BLOCK #10 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 45-47, warpins: 1 ---
+	slot1 = slot0.isInPettingState
+	--- END OF BLOCK #11 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 48-49, warpins: 1 ---
 	slot1 = false
 
 	return slot1
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #10 40-41, warpins: 3 ---
+	--- BLOCK #13 50-51, warpins: 4 ---
 	slot1 = true
 
 	return slot1
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot17.innerGetVisible = slot18
+slot19.innerGetVisible = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entity
 	--- END OF BLOCK #0 ---
@@ -891,33 +1207,56 @@ slot18 = function(slot0)
 
 end
 
-slot17.checkInWorkState = slot18
+slot19.checkInWorkState = slot20
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.entity
+slot20 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.entity
-	slot1 = slot1.petInfo
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
 	--- END OF BLOCK #1 ---
 
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot1 = slot0.entity
+	--- END OF BLOCK #2 ---
+
 	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 8-16, warpins: 1 ---
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.petInfo
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-23, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkHomePetStateValid
 	slot3 = slot0.entity
@@ -929,24 +1268,195 @@ slot18 = function(slot0)
 
 	return slot1
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 17-18, warpins: 3 ---
+	--- BLOCK #5 24-25, warpins: 3 ---
 	slot1 = false
 
 	return slot1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot17.checkInActionState = slot18
+slot19.checkInActionState = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = slot0.entity
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-12, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.space
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 3 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-19, warpins: 2 ---
+	slot1 = slot0.entity
+	slot1 = slot1.space
+	slot1 = slot1.leisureState
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot2 = slot0.entity
+	slot2 = slot2.id
+	slot2 = slot1[slot2]
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-27, warpins: 1 ---
+	slot3 = HomeLeisureBehaviorData
+	slot4 = slot2.leisureId
+	slot3 = slot3[slot4]
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-29, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 30-35, warpins: 1 ---
+	slot4 = slot3.leisureType
+	slot5 = Const
+	slot5 = slot5.HOME_LEISURE_TYPE
+	slot5 = slot5.PETTING
+	--- END OF BLOCK #9 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 36-39, warpins: 1 ---
+	slot4 = HomelandConfigData
+	slot4 = slot4.pettingName
+	--- END OF BLOCK #10 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 40-41, warpins: 3 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 42-48, warpins: 2 ---
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = HomelandConfigData
+	slot6 = slot6.pettingIcon
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 49-50, warpins: 1 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 51-52, warpins: 2 ---
+	slot4 = true
+
+	return slot4
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot19.checkInPettingState = slot20
+
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = false
 	slot0.transportVisible = slot1
@@ -956,11 +1466,24 @@ slot18 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 6-25, warpins: 1 ---
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 11-19, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.petInfo
 	slot3 = slot1
@@ -968,6 +1491,33 @@ slot18 = function(slot0)
 	slot4 = pg
 	slot4 = slot4.space
 	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-21, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-39, warpins: 2 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.setUIVisible
+	slot4 = slot0.iconUImage
+	slot5 = true
+
+	slot2(slot4, slot5)
+
 	slot2 = slot0.iconUImage
 	slot3 = slot1.statusIcon
 	slot2.url = slot3
@@ -985,107 +1535,171 @@ slot18 = function(slot0)
 
 	return slot2
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #2 26-28, warpins: 2 ---
+	--- BLOCK #5 40-42, warpins: 3 ---
 	slot1 = slot0.isInWorkState
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #3 29-33, warpins: 1 ---
+	--- BLOCK #6 43-47, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.allocationInfo
 	slot1 = slot1.opId
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #4 34-57, warpins: 1 ---
+	--- BLOCK #7 48-61, warpins: 1 ---
 	slot1 = HomelandOperateData
 	slot2 = slot0.entity
 	slot2 = slot2.allocationInfo
 	slot2 = slot2.opId
 	slot1 = slot1[slot2]
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.workText
-	slot5 = pg
-	slot5 = slot5.getLocalizationText
-	slot7 = slot1.workingName
-	MULTRES = slot5(slot7)
+	slot2 = pg
+	slot2 = slot2.getLocalizationText
+	slot4 = slot1.workingName
+	slot2 = slot2(slot4)
+	slot5 = slot0
+	slot3 = slot0.isHomeDemoMode
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #7 ---
 
-	slot2(slot4, MULTRES)
-
-	slot2 = slot0.iconUImage
-	slot3 = slot1.workingIcon
-	slot2.url = slot3
-	slot2 = slot0.entity
-	slot2 = slot2.allocationInfo
-	slot2 = slot2.opId
-	slot3 = Const
-	slot3 = slot3.HOMELAND_FACILITY_OP_TYPE
-	slot3 = slot3.TRANSPORT_TO_STORE
-	--- END OF BLOCK #4 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #5
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 58-59, warpins: 1 ---
-	slot2 = true
-	slot0.transportVisible = slot2
-	--- END OF BLOCK #5 ---
+	--- BLOCK #8 62-66, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.m_getHomeDemoPetName
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 60-61, warpins: 2 ---
-	slot2 = true
-
-	return slot2
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #7 62-68, warpins: 3 ---
+	--- BLOCK #9 67-70, warpins: 1 ---
+	slot4 = slot3
+	slot5 = " "
+	slot6 = slot2
+	slot2 = slot4 .. slot5 .. slot6
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 71-91, warpins: 3 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.workText
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = LuaUIUtils
+	slot3 = slot3.setUIVisible
+	slot5 = slot0.iconUImage
+	slot6 = true
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.iconUImage
+	slot4 = slot1.workingIcon
+	slot3.url = slot4
+	slot3 = slot0.entity
+	slot3 = slot3.allocationInfo
+	slot3 = slot3.opId
+	slot4 = Const
+	slot4 = slot4.HOMELAND_FACILITY_OP_TYPE
+	slot4 = slot4.TRANSPORT_TO_STORE
+	--- END OF BLOCK #10 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 92-93, warpins: 1 ---
+	slot3 = true
+	slot0.transportVisible = slot3
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 94-95, warpins: 2 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 96-100, warpins: 3 ---
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #13 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 101-107, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
 	slot1 = slot1.checkHomePetHasFood
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #14 ---
 
 	slot1 = if not slot1 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #8 69-85, warpins: 1 ---
+	--- BLOCK #15 108-129, warpins: 1 ---
 	slot1 = HomeEventTypeData
 	slot2 = Const
 	slot2 = slot2.HOMELAND_FOOD_LACK_EVENT_ID
 	slot1 = slot1[slot2]
+	slot2 = LuaUIUtils
+	slot2 = slot2.setUIVisible
+	slot4 = slot0.iconUImage
+	slot5 = true
+
+	slot2(slot4, slot5)
+
 	slot2 = slot0.iconUImage
 	slot3 = slot1.statusIcon
 	slot2.url = slot3
@@ -1103,24 +1717,243 @@ slot18 = function(slot0)
 
 	return slot2
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #9 86-87, warpins: 2 ---
+	--- BLOCK #16 130-132, warpins: 3 ---
+	slot1 = slot0.isInPettingState
+	--- END OF BLOCK #16 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #17 133-137, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #17 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #18 138-141, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.space
+	--- END OF BLOCK #18 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 142-144, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.space
+	slot1 = slot1.leisureState
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 145-146, warpins: 2 ---
+	--- END OF BLOCK #20 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 147-149, warpins: 1 ---
+	slot2 = slot0.entity
+	slot2 = slot2.id
+	slot2 = slot1[slot2]
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 150-151, warpins: 2 ---
+	--- END OF BLOCK #22 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 152-154, warpins: 1 ---
+	slot3 = HomeLeisureBehaviorData
+	slot4 = slot2.leisureId
+	slot3 = slot3[slot4]
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 155-156, warpins: 2 ---
+	--- END OF BLOCK #24 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #25 157-162, warpins: 1 ---
+	slot4 = slot3.leisureType
+	slot5 = Const
+	slot5 = slot5.HOME_LEISURE_TYPE
+	slot5 = slot5.PETTING
+	--- END OF BLOCK #25 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #26 163-166, warpins: 1 ---
+	slot4 = HomelandConfigData
+	slot4 = slot4.pettingName
+	--- END OF BLOCK #26 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #27 167-173, warpins: 1 ---
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = HomelandConfigData
+	slot6 = slot6.pettingIcon
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #27 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 174-193, warpins: 1 ---
+	slot4 = LuaUIUtils
+	slot4 = slot4.setUIVisible
+	slot6 = slot0.iconUImage
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot4 = slot0.iconUImage
+	slot5 = HomelandConfigData
+	slot5 = slot5.pettingIcon
+	slot4.url = slot5
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.workText
+	slot7 = pg
+	slot7 = slot7.getLocalizationText
+	slot9 = HomelandConfigData
+	slot9 = slot9.pettingName
+	MULTRES = slot7(slot9)
+
+	slot4(slot6, MULTRES)
+
+	slot4 = true
+
+	return slot4
+
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 194-198, warpins: 7 ---
+	slot3 = slot0
+	slot1 = slot0.isHomeDemoMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #29 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #30 199-203, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.m_getHomeDemoPetName
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #30 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 204-218, warpins: 1 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.setUIVisible
+	slot4 = slot0.iconUImage
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.iconUImage
+	slot3 = ""
+	slot2.url = slot3
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.workText
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 219-220, warpins: 3 ---
 	slot1 = false
 
 	return slot1
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #32 ---
 
 
 
 end
 
-slot17.refreshWorkInfo = slot18
+slot19.refreshWorkInfo = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshWorkInfo
@@ -1165,9 +1998,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.refreshBaseInfo = slot18
+slot19.refreshBaseInfo = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entity
 
@@ -1258,9 +2091,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.refreshTransportInfo = slot18
+slot19.refreshTransportInfo = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.shouldBeActive
@@ -1347,9 +2180,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.m_notifyPending = slot18
+slot19.m_notifyPending = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContainerLoaded
@@ -1392,9 +2225,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onLanguageChanged = slot18
+slot19.onLanguageChanged = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_pendingWorkStateRefresh
 	--- END OF BLOCK #0 ---
@@ -1524,10 +2357,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.refreshTopLogoInfo = slot18
+slot19.refreshTopLogoInfo = slot20
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot20 = function(slot0)
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkAndResetDirty
 	slot4 = EventConst
@@ -1543,68 +2376,83 @@ slot18 = function(slot0)
 	slot6 = EventConst
 	slot6 = slot6.HOMELAND_TRANSPORT_STATE_CHANGED
 	slot3 = slot3(slot5, slot6)
+	slot6 = slot0
+	slot4 = slot0.checkAndResetDirty
+	slot7 = EventConst
+	slot7 = slot7.HOMELAND_LEISURE_STATE_CHANGED
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 18-19, warpins: 1 ---
+	--- BLOCK #1 23-24, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 20-22, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.refreshBaseInfo
-
-	slot4(slot6)
-
+	--- BLOCK #2 25-26, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 23-24, warpins: 2 ---
-	--- END OF BLOCK #3 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #4 25-27, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.refreshTransportInfo
+	--- BLOCK #3 27-29, warpins: 3 ---
+	slot7 = slot0
+	slot5 = slot0.refreshBaseInfo
 
-	slot4(slot6)
+	slot5(slot7)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 30-31, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 28-28, warpins: 2 ---
-	return
+	--- BLOCK #5 32-34, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.refreshTransportInfo
+
+	slot5(slot7)
+
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 35-35, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot17.m_refreshTplWorkStateInfo = slot18
+slot19.m_refreshTplWorkStateInfo = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1627,9 +2475,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.refreshTransportItem = slot18
+slot19.refreshTransportItem = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = SysConfigData
 	slot1 = slot1.NPC_TOPLOGO_DISTANCE
@@ -1641,9 +2489,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getInitMaxDistance = slot18
+slot19.getInitMaxDistance = slot20
 
-return slot17
+return slot19
 --- END OF BLOCK #0 ---
 
 

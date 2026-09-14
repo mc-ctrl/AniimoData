@@ -16,37 +16,37 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "string",
 	value = "",
 	const = "",
-	type = "string",
 	name = "tAnimationKey"
 }
 slot4[1] = slot5
 slot5 = {
+	type = "string",
 	value = "",
 	const = "",
-	type = "string",
 	name = "tFaceAnimationkey"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "0:",
 	type = "vector<float>",
+	value = "0:",
 	name = "tTargetPos"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[3] = slot5
 slot5 = {
+	type = "float",
 	value = "0",
 	const = 0,
-	type = "float",
 	name = "tYaw"
 }
 slot4[4] = slot5
 slot5 = {
-	value = "0:",
 	type = "vector<float>",
+	value = "0:",
 	name = "tWorkPos"
 }
 slot6 = {}

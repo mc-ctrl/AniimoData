@@ -1,5 +1,7 @@
 --- BLOCK #0 1-2, warpins: 1 ---
 slot0 = {
+	eNoClimbingScene = 13,
+	eBigball = 12,
 	ePet = 11,
 	eEntity = 10,
 	eStackPhotoCamera = 9,
@@ -18,9 +20,7 @@ slot0 = {
 	eEvolvPet = 23,
 	ePlayer = 22,
 	eTrigger = 21,
-	eItem = 20,
-	eNoClimbingScene = 13,
-	eBigball = 12
+	eItem = 20
 }
 
 return slot0

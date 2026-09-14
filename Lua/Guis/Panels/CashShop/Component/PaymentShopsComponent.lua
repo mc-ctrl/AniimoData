@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-71, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,8 +30,14 @@ slot8 = slot1.LightClass
 slot10 = "PaymentShopsComponent"
 slot11 = slot7
 slot8 = slot8(slot10, slot11)
+slot9 = CS
+slot9 = slot9.FunPlus
+slot9 = slot9.WorldX
+slot9 = slot9.SDK
+slot9 = slot9.Platform
+slot9 = slot9.PlatformBridgeLuaFacade
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -98,9 +104,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.findObjects = slot9
+slot8.findObjects = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CashShopContainerComponent
 	slot1 = slot1.addListener
@@ -206,9 +212,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.addListener = slot9
+slot8.addListener = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initTitle
@@ -232,9 +238,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshPage = slot9
+slot8.refreshPage = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.btnWebPay
 	--- END OF BLOCK #0 ---
@@ -333,9 +339,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshWebPayBtn = slot9
+slot8.refreshWebPayBtn = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -364,9 +370,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.initTitle = slot9
+slot8.initTitle = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = RechargeUtils
 	slot1 = slot1.getAllProductRechargeDisplayInfo
@@ -405,9 +411,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshProductList = slot9
+slot8.refreshProductList = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.listProducts
 
@@ -483,9 +489,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onProductListEntranceFinished = slot9
+slot8.onProductListEntranceFinished = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -909,9 +915,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.renderProductItem = slot9
+slot8.renderProductItem = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -962,9 +968,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.onClickBuy = slot9
+slot8.onClickBuy = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = RechargeUtils
 	slot1 = slot1.openThirdPartyPay
@@ -978,7 +984,234 @@ slot9 = function(slot0)
 
 end
 
-slot8.onClickWebPay = slot9
+slot8.onClickWebPay = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = CashShopContainerComponent
+	slot1 = slot1.onExitPage
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = false
+	slot0.entered = slot1
+	slot3 = slot0
+	slot1 = slot0.HideStoreIcon
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.onExitPage = slot10
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = CashShopContainerComponent
+	slot2 = slot2.onEnterPage
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+	slot0.entered = slot2
+	slot4 = slot0
+	slot2 = slot0.DisplayStoreIcon
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.onEnterPage = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = CashShopContainerComponent
+	slot1 = slot1.onDestroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.HideStoreIcon
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.onDestroy = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.setPSIconUIVisiable
+	slot3 = "PaymentShopsComponent"
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	slot1 = PlatformBridgeLuaFacade
+	slot3 = slot1
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.DisplayStoreIcon
+	slot3 = 3
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot8.DisplayStoreIcon = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.setPSIconUIVisiable
+	slot3 = "PaymentShopsComponent"
+	slot4 = false
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-13, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot3 = slot1
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-16, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.HideStoreIcon
+
+	slot1()
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.HideStoreIcon = slot10
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = CashShopContainerComponent
+	slot2 = slot2.onVisibleChange
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot2 = slot0.entered
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.DisplayStoreIcon
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 15-17, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.HideStoreIcon
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-18, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot8.onVisibleChange = slot10
 
 return slot8
 --- END OF BLOCK #0 ---

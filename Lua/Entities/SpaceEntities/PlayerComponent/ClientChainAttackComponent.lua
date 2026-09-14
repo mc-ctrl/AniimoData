@@ -214,7 +214,7 @@ slot10 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
@@ -226,62 +226,77 @@ slot10 = function(slot0)
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 46-47, warpins: 1 ---
+	--- BLOCK #9 46-52, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isBossRushSceneId
+	slot4 = slot0.space
+	slot4 = slot4.sceneId
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #9 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 53-54, warpins: 2 ---
 	slot2 = false
 
 	return slot2
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #10 48-53, warpins: 3 ---
+	--- BLOCK #11 55-60, warpins: 3 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
 	slot4 = slot0.lockedActorId
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #10 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 54-59, warpins: 1 ---
-	slot3 = Utils
-	slot3 = slot3.isPuppet
-	slot5 = slot2
-	slot3 = slot3(slot5)
 	--- END OF BLOCK #11 ---
 
-	slot3 = if not slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 60-61, warpins: 2 ---
+	--- BLOCK #12 61-66, warpins: 1 ---
+	slot3 = Utils
+	slot3 = slot3.isPuppet
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #12 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 67-68, warpins: 2 ---
 	slot3 = false
 
 	return slot3
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #13 62-66, warpins: 2 ---
+	--- BLOCK #14 69-73, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
 	slot6 = "RPC_CS_StartPlayerTeamChainAttack"
@@ -289,7 +304,7 @@ slot10 = function(slot0)
 	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #14 ---
 
 
 

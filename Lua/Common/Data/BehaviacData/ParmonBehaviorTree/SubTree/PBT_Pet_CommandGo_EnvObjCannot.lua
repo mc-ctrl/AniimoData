@@ -9,30 +9,30 @@ slot2 = {}
 slot3 = {
 	useForRoute = false,
 	agenttype = "PetAgent",
-	version = 8,
-	name = "ParmonBehaviorTree/SubTree/PBT_Pet_CommandGo_EnvObjCannot"
+	name = "ParmonBehaviorTree/SubTree/PBT_Pet_CommandGo_EnvObjCannot",
+	version = 8
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "0",
 	const = 0,
 	type = "int",
-	value = "0",
 	name = "tTargetId"
 }
 slot4[1] = slot5
 slot5 = {
+	value = "0",
 	const = 0,
 	type = "int",
-	value = "0",
 	name = "tTargetEnvPartId"
 }
 slot4[2] = slot5
 slot5 = {
+	value = "0",
 	const = 0,
 	type = "float",
-	value = "0",
 	name = "tSpeedMulti"
 }
 slot4[3] = slot5
@@ -393,10 +393,10 @@ slot13.properties = slot14
 slot14 = {}
 slot15 = {
 	transition = false,
-	id = "32",
-	class = "Precondition",
 	effector = false,
-	precondition = true
+	precondition = true,
+	id = "32",
+	class = "Precondition"
 }
 slot16 = {}
 slot17 = {

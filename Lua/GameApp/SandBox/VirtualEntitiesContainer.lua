@@ -192,19 +192,22 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 30-35, warpins: 1 ---
+	--- BLOCK #7 30-36, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.gameObject
-	slot5 = "VirtualEntity_"
-	slot6 = slot1
-	slot5 = slot5 .. slot6
-	slot4.name = slot5
+	slot6 = slot4
+	slot4 = slot4.SetGameObjectName
+	slot7 = "VirtualEntity_"
+	slot8 = slot1
+	slot7 = slot7 .. slot8
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 36-40, warpins: 2 ---
+	--- BLOCK #8 37-41, warpins: 2 ---
 	slot4 = slot0.id
 	slot3.refLevelItemId = slot4
 	slot4 = slot0._entities

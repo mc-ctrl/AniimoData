@@ -1,69 +1,84 @@
---- BLOCK #0 1-155, warpins: 1 ---
+--- BLOCK #0 1-170, warpins: 1 ---
 slot0 = require
-slot2 = "Const.MessageName"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Const.MessageName"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.CallbackHandler"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Timer.TimerManager"
+slot5 = "Core.Common.CallbackHandler"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Guis.UICtrl"
+slot6 = "Core.Timer.TimerManager"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.UIConst"
+slot7 = "Guis.UICtrl"
 slot5 = slot5(slot7)
-slot6 = slot1.LightClass
-slot8 = "VitalitySettlementCtrl"
-slot9 = slot4
-slot6 = slot6(slot8, slot9)
-slot7 = require
-slot9 = "Utils.ClientTextUtils"
-slot7 = slot7(slot9)
+slot6 = require
+slot8 = "Const.UIConst"
+slot6 = slot6(slot8)
+slot7 = slot2.LightClass
+slot9 = "VitalitySettlementCtrl"
+slot10 = slot5
+slot7 = slot7(slot9, slot10)
 slot8 = require
-slot10 = "Common.Utils.ActivityUtils"
+slot10 = "Utils.ClientTextUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Guis.Utils.AvatarUtils"
+slot11 = "Common.Utils.ActivityUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.AudioConst"
+slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.energy_match_theme_data"
+slot13 = "Guis.Utils.AvatarUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Utils.UIObjectPool"
+slot14 = "Common.Const.Const"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "GameApp.UIScene.UISceneConst"
+slot15 = "Common.NoticeDef"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Const.AddressDataConst"
+slot16 = "Utils.ClientSettingUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.item_data"
+slot17 = "Const.AudioConst"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.event_vitality_pet_animation_data"
+slot18 = "Data.energy_match_theme_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.energy_accessories_rank_data"
+slot19 = "Utils.UIObjectPool"
 slot17 = slot17(slot19)
-slot18 = {
+slot18 = require
+slot20 = "GameApp.UIScene.UISceneConst"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "Const.AddressDataConst"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Data.item_data"
+slot20 = slot20(slot22)
+slot21 = require
+slot23 = "Data.event_vitality_pet_animation_data"
+slot21 = slot21(slot23)
+slot22 = require
+slot24 = "Data.energy_accessories_rank_data"
+slot22 = slot22(slot24)
+slot23 = {
 	Personality = "personality",
-	Ability = "ability",
-	Evolution = "evolution",
-	Form = "form",
 	Position = "position",
-	Attribute = "attribute"
+	Evolution = "evolution",
+	Attribute = "attribute",
+	Ability = "ability",
+	Form = "form"
 }
-slot6.BonusType = slot18
-slot18 = {
+slot7.BonusType = slot23
+slot23 = {
 	"Ability",
 	"Attribute",
 	"Position",
@@ -71,50 +86,50 @@ slot18 = {
 	"Personality",
 	"Evolution"
 }
-slot6.BonusTypeOrder = slot18
-slot18 = {
+slot7.BonusTypeOrder = slot23
+slot23 = {
 	Accessory = 3,
 	Multiplier = 2,
 	Base = 1
 }
-slot6.ShowStage = slot18
-slot18 = 0.5
-slot6.ScoreNodeInterval = slot18
-slot18 = 0.5
-slot6.MultiplierScoreNodeInterval = slot18
-slot18 = {
+slot7.ShowStage = slot23
+slot23 = 0.5
+slot7.ScoreNodeInterval = slot23
+slot23 = 0.5
+slot7.MultiplierScoreNodeInterval = slot23
+slot23 = {
 	0.4,
 	0.5,
 	0.6
 }
-slot6.RandomScoreNodeIntervals = slot18
-slot18 = {
+slot7.RandomScoreNodeIntervals = slot23
+slot23 = {
 	0.2,
 	0.3,
 	0.4
 }
-slot6.AccessoryScoreNodeIntervals = slot18
-slot18 = 0.5
-slot6.StageStayDuration = slot18
-slot18 = {}
-slot19 = slot6.ShowStage
-slot19 = slot19.Base
-slot20 = 1.5
-slot18[slot19] = slot20
-slot19 = slot6.ShowStage
-slot19 = slot19.Multiplier
-slot20 = 1.5
-slot18[slot19] = slot20
-slot6.StageStayDurations = slot18
-slot18 = 2
-slot6.FinalStageStayDuration = slot18
-slot18 = {
+slot7.AccessoryScoreNodeIntervals = slot23
+slot23 = 0.5
+slot7.StageStayDuration = slot23
+slot23 = {}
+slot24 = slot7.ShowStage
+slot24 = slot24.Base
+slot25 = 1.5
+slot23[slot24] = slot25
+slot24 = slot7.ShowStage
+slot24 = slot24.Multiplier
+slot25 = 1.5
+slot23[slot24] = slot25
+slot7.StageStayDurations = slot23
+slot23 = 2
+slot7.FinalStageStayDuration = slot23
+slot23 = {
 	Normal = 1,
 	Points = 2
 }
-slot6.TextPoolType = slot18
+slot7.TextPoolType = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -156,10 +171,10 @@ slot18 = function(slot0, slot1)
 
 	--- BLOCK #3 16-20, warpins: 1 ---
 	slot2 = {
-		fashion = 0,
-		totalScore = 0,
 		tagCount = 0,
-		tagScore = 0
+		tagScore = 0,
+		fashion = 0,
+		totalScore = 0
 	}
 	slot3 = {}
 	slot2.tagScores = slot3
@@ -604,9 +619,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.onCreate = slot18
+slot7.onCreate = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.showStarted
 
@@ -653,9 +668,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.startShowAfterModelReady = slot18
+slot7.startShowAfterModelReady = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	slot3 = slot1
@@ -691,7 +706,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 15-41, warpins: 1 ---
+	--- BLOCK #3 15-42, warpins: 1 ---
 	slot9 = slot0.model
 	slot11 = slot9
 	slot9 = slot9.parseDefaultAccessInfo
@@ -715,8 +730,9 @@ slot18 = function(slot0)
 	slot17 = slot9.localPosition
 	slot18 = slot9.localRotation
 	slot19 = slot10
+	slot20 = false
 
-	slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+	slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20)
 
 	slot13 = slot2
 	slot11 = slot2.RefreshModels
@@ -728,7 +744,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 42-43, warpins: 2 ---
+	--- BLOCK #4 43-44, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -736,7 +752,7 @@ slot18 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 44-44, warpins: 1 ---
+	--- BLOCK #5 45-45, warpins: 1 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -744,9 +760,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.wearTryAccess = slot18
+slot7.wearTryAccess = slot23
 
-slot18 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
@@ -858,7 +874,7 @@ slot18 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 48-65, warpins: 2 ---
+	--- BLOCK #8 48-66, warpins: 2 ---
 	slot6 = slot5 * 1.2
 	slot0.adjustHeight = slot6
 	slot6 = AvatarUtils
@@ -866,7 +882,8 @@ slot18 = function(slot0, slot1, slot2)
 	slot8 = slot5
 	slot9 = slot3.scale
 	slot10 = 1.5
-	slot6 = slot6(slot8, slot9, slot10)
+	slot11 = slot4.sizeLevel
+	slot6 = slot6(slot8, slot9, slot10, slot11)
 	slot0.modelSliderInfo = slot6
 	slot6 = slot0.avatarScene
 	slot8 = slot6
@@ -885,9 +902,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.showPetModel = slot18
+slot7.showPetModel = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = EventVitalityPetAnimationData
 	slot3 = slot0.entityId
@@ -957,9 +974,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.playPetShowAnimation = slot18
+slot7.playPetShowAnimation = slot23
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot8 = slot0.isDestroyed
 	--- END OF BLOCK #0 ---
@@ -1477,9 +1494,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot6.showText = slot18
+slot7.showText = slot23
 
-slot18 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.TextPoolType
 	slot3 = slot3.Points
@@ -1543,9 +1560,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.getScoreTextInvokeTime = slot18
+slot7.getScoreTextInvokeTime = slot23
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot6 = function()
 		--- BLOCK #0 1-3, warpins: 1 ---
@@ -1651,9 +1668,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot6.playScoreTextAnimation = slot18
+slot7.playScoreTextAnimation = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.max
@@ -1803,9 +1820,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.refreshProgress = slot18
+slot7.refreshProgress = slot23
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1974,9 +1991,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.renderScoreListItem = slot18
+slot7.renderScoreListItem = slot23
 
-slot18 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.listUList
@@ -2143,9 +2160,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.refreshScoreListItemState = slot18
+slot7.refreshScoreListItemState = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2250,9 +2267,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.triggerStageLight = slot18
+slot7.triggerStageLight = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setStageLights
@@ -2277,9 +2294,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.triggerStageLightInternal = slot18
+slot7.triggerStageLightInternal = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.avatarScene
 
@@ -2312,7 +2329,7 @@ slot18 = function(slot0, slot1)
 
 
 	--- BLOCK #3 8-8, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -2354,9 +2371,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.setStageLights = slot18
+slot7.setStageLights = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.perfectReached
 
@@ -2428,9 +2445,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.triggerPerfectLight = slot18
+slot7.triggerPerfectLight = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playShowStage
@@ -2445,9 +2462,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.startShowStages = slot18
+slot7.startShowStages = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.showStageData
 	slot2 = slot2[slot1]
@@ -2554,9 +2571,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.playShowStage = slot18
+slot7.playShowStage = slot23
 
-slot18 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.showStageData
 	slot3 = slot3[slot1]
@@ -2691,9 +2708,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.playScoreNode = slot18
+slot7.playScoreNode = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.timerId
 	--- END OF BLOCK #0 ---
@@ -2734,9 +2751,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.finishShowStages = slot18
+slot7.finishShowStages = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = ipairs
@@ -2751,7 +2768,7 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #1 6-6, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -2832,9 +2849,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.getShowTotalTime = slot18
+slot7.getShowTotalTime = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2927,9 +2944,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getStageStayDuration = slot18
+slot7.getStageStayDuration = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3116,9 +3133,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getScoreNodeInterval = slot18
+slot7.getScoreNodeInterval = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3195,9 +3212,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getAverageScoreNodeInterval = slot18
+slot7.getAverageScoreNodeInterval = slot23
 
-slot18 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.score
 	--- END OF BLOCK #0 ---
@@ -3251,9 +3268,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.insertScoreShowItem = slot18
+slot7.insertScoreShowItem = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = "×"
 	slot3 = tostring
@@ -3295,9 +3312,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getNewBonusScoreText = slot18
+slot7.getNewBonusScoreText = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = {}
@@ -3622,9 +3639,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getScoreShowStageData = slot18
+slot7.getScoreShowStageData = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.accessoryScoreData
@@ -3836,7 +3853,7 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #18 76-76, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
@@ -3929,9 +3946,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.getAccessoryShowItems = slot18
+slot7.getAccessoryShowItems = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = tonumber
 	slot4 = slot1
@@ -3969,7 +3986,7 @@ slot18 = function(slot0, slot1)
 
 
 	--- BLOCK #3 15-15, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -4222,9 +4239,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getRankPermille = slot18
+slot7.getRankPermille = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.format
@@ -4364,9 +4381,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getRankText = slot18
+slot7.getRankText = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.txtRank
@@ -4407,9 +4424,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.refreshRankText = slot18
+slot7.refreshRankText = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnSettlementUButton
@@ -4745,50 +4762,165 @@ slot18 = function(slot0)
 		slot0 = slot0.vXEventSettlementAnimation
 		slot1 = false
 		slot0.playAutomatically = slot1
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.mobileCameraMgr
-		slot2 = slot0
-		slot0 = slot0.CaptureScreenDelaySave
+		slot0 = Utils
+		slot0 = slot0.captureAndCheckPhoto
+		slot2 = Const
+		slot2 = slot2.PhotoCheckScene
+		slot2 = slot2.Share
 
-		slot3 = function(slot0)
-			--- BLOCK #0 1-62, warpins: 1 ---
-			slot1 = pg
-			slot1 = slot1.me
-			slot3 = slot1
-			slot1 = slot1.getPositionAgentPosition
-			slot1 = slot1(slot3)
-			slot2 = pg
-			slot2 = slot2.global
-			slot2 = slot2.mobileCameraMgr
-			slot4 = slot2
-			slot2 = slot2.GetPetPhotoInfo
-			slot5 = os
-			slot5 = slot5.time
-			slot5 = slot5()
-			slot6 = slot1
-			slot7 = pg
-			slot7 = slot7.me
-			slot7 = slot7.space
-			slot7 = slot7.sceneId
-			slot8 = {}
-			slot9 = self
-			slot9 = slot9.entityId
-			slot8[1] = slot9
-			slot2 = slot2(slot4, slot5, slot6, slot7, slot8)
-			slot3 = {}
-			slot3.sprite = slot0
-			slot4 = true
-			slot3.needSave = slot4
-			slot4 = slot2.pos
-			slot3.position = slot4
-			slot4 = slot2.sceneId
-			slot3.sceneId = slot4
-			slot4 = slot2.ts
-			slot3.timeStamp = slot4
+		slot3 = function(slot0, slot1, slot2)
+			--- BLOCK #0 1-18, warpins: 1 ---
+			slot3 = self
+			slot3 = slot3.view
+			slot3 = slot3.btnPhotoUButton
+			slot3 = slot3.gameObject
+			slot5 = slot3
+			slot3 = slot3.SetActiveEx
+			slot6 = true
 
-			slot4 = function()
-				--- BLOCK #0 1-19, warpins: 1 ---
+			slot3(slot5, slot6)
+
+			slot3 = self
+			slot3 = slot3.view
+			slot3 = slot3.btnSettlementUButton
+			slot3 = slot3.gameObject
+			slot5 = slot3
+			slot3 = slot3.SetActiveEx
+			slot6 = true
+
+			slot3(slot5, slot6)
+
+			--- END OF BLOCK #0 ---
+
+			slot2 = if not slot2 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 19-19, warpins: 1 ---
+			--- END OF BLOCK #1 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+			--- BLOCK #2 20-65, warpins: 1 ---
+			slot3 = pg
+			slot3 = slot3.me
+			slot5 = slot3
+			slot3 = slot3.getPositionAgentPosition
+			slot3 = slot3(slot5)
+			slot4 = pg
+			slot4 = slot4.global
+			slot4 = slot4.mobileCameraMgr
+			slot6 = slot4
+			slot4 = slot4.GetPetPhotoInfo
+			slot7 = os
+			slot7 = slot7.time
+			slot7 = slot7()
+			slot8 = slot3
+			slot9 = pg
+			slot9 = slot9.me
+			slot9 = slot9.space
+			slot9 = slot9.sceneId
+			slot10 = {}
+			slot11 = self
+			slot11 = slot11.entityId
+			slot10[1] = slot11
+			slot4 = slot4(slot6, slot7, slot8, slot9, slot10)
+			slot5 = {}
+			slot5.sprite = slot0
+			slot6 = true
+			slot5.needSave = slot6
+			slot6 = slot4.pos
+			slot5.position = slot6
+			slot6 = slot4.sceneId
+			slot5.sceneId = slot6
+			slot6 = slot4.ts
+			slot5.timeStamp = slot6
+
+			slot6 = function()
+				--- BLOCK #0 1-5, warpins: 1 ---
+				slot0 = ClientSettingUtils
+				slot0 = slot0.isCloudGame
+				slot0 = slot0()
+				--- END OF BLOCK #0 ---
+
+				slot0 = if slot0 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 6-14, warpins: 1 ---
+				slot0 = pg
+				slot0 = slot0.global
+				slot0 = slot0.mobileCameraMgr
+				slot2 = slot0
+				slot0 = slot0.SaveImageToAlbum
+				slot3 = photoInfo
+
+				slot4 = function(slot0)
+					--- BLOCK #0 1-6, warpins: 1 ---
+					slot1 = string
+					slot1 = slot1.isNilOrEmpty
+					slot3 = slot0
+					slot1 = slot1(slot3)
+					--- END OF BLOCK #0 ---
+
+					slot1 = if slot1 then
+					JUMP TO BLOCK #1
+					else
+					JUMP TO BLOCK #2
+					end
+
+
+					--- BLOCK #1 7-13, warpins: 1 ---
+					slot1 = pg
+					slot1 = slot1.global
+					slot1 = slot1.showBubbleMessage
+					slot3 = NoticeDef
+					slot3 = slot3.SAVE_PHOTOGRAPH_FAILED_DISC_FULL
+
+					slot1(slot3)
+
+					return
+
+					--- END OF BLOCK #1 ---
+
+					FLOW; TARGET BLOCK #2
+
+
+					--- BLOCK #2 14-24, warpins: 2 ---
+					slot1 = pg
+					slot1 = slot1.global
+					slot1 = slot1.ui
+					slot1 = slot1.tips
+					slot3 = slot1
+					slot1 = slot1.showTextTip
+					slot4 = ClientSettingUtils
+					slot4 = slot4.getPhotoSyncingToPhoneText
+					MULTRES = slot4()
+
+					slot1(slot3, MULTRES)
+
+					return
+					--- END OF BLOCK #2 ---
+
+
+
+				end
+
+				slot0(slot2, slot3, slot4)
+
+				--- END OF BLOCK #1 ---
+
+				UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+				--- BLOCK #2 15-32, warpins: 1 ---
 				slot0 = pg
 				slot0 = slot0.global
 				slot0 = slot0.mobileCameraMgr
@@ -4811,47 +4943,40 @@ slot18 = function(slot0)
 
 				slot0(slot2, MULTRES)
 
+				--- END OF BLOCK #2 ---
+
+				FLOW; TARGET BLOCK #3
+
+
+				--- BLOCK #3 33-33, warpins: 2 ---
 				return
-				--- END OF BLOCK #0 ---
+				--- END OF BLOCK #3 ---
 
 
 
 			end
 
-			slot3.saveCallback = slot4
-			slot4 = pg
-			slot4 = slot4.global
-			slot4 = slot4.ui
-			slot4 = slot4.albumPhoto
-			slot6 = slot4
-			slot4 = slot4.open
-			slot7 = {}
-			slot7.photoInfo = slot3
+			slot5.saveCallback = slot6
+			slot6 = pg
+			slot6 = slot6.global
+			slot6 = slot6.ui
+			slot6 = slot6.albumPhoto
+			slot8 = slot6
+			slot6 = slot6.open
+			slot9 = {}
+			slot9.photoInfo = slot5
 
-			slot4(slot6, slot7)
-
-			slot4 = self
-			slot4 = slot4.view
-			slot4 = slot4.btnPhotoUButton
-			slot4 = slot4.gameObject
-			slot6 = slot4
-			slot4 = slot4.SetActiveEx
-			slot7 = true
-
-			slot4(slot6, slot7)
-
-			slot4 = self
-			slot4 = slot4.view
-			slot4 = slot4.btnSettlementUButton
-			slot4 = slot4.gameObject
-			slot6 = slot4
-			slot4 = slot4.SetActiveEx
-			slot7 = true
-
-			slot4(slot6, slot7)
+			slot6(slot8, slot9)
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 66-66, warpins: 2 ---
+			return
+			--- END OF BLOCK #3 ---
 
 
 
@@ -4875,9 +5000,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.addListener = slot18
+slot7.addListener = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chatMessagePools
 
@@ -4937,9 +5062,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.destroyChatMessagePools = slot18
+slot7.destroyChatMessagePools = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = true
 	slot0.isDestroyed = slot1
@@ -4961,9 +5086,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.onDestroy = slot18
+slot7.onDestroy = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onShow
@@ -4978,9 +5103,9 @@ slot18 = function(slot0)
 
 end
 
-slot6.onShow = slot18
+slot7.onShow = slot23
 
-return slot6
+return slot7
 --- END OF BLOCK #0 ---
 
 

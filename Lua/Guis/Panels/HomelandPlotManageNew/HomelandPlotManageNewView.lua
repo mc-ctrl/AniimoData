@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-131, warpins: 1 ---
+	--- BLOCK #0 1-151, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -145,9 +145,29 @@ slot4 = function(slot0)
 	slot0.virtualMouseField = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "plotVirtualMouseFieldUVirtualMouseField"
+	slot5 = "btnOverViewUButton"
 	slot2 = slot2(slot4, slot5)
-	slot0.plotVirtualMouseField = slot2
+	slot0.btnOverViewUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnSpeedUpUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnSpeedUpUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "speedUpUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.speedUpUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "plotSpeedUpUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.plotSpeedUpUContainer = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "scaleUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.scaleUWidget = slot2
 
 	return
 	--- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-50, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -23,26 +23,29 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Utils.LuaUIUtils"
 slot6 = slot6(slot8)
-slot7 = slot1.LightClass
-slot9 = "EventTaskPanelCtrl"
-slot10 = slot2
-slot7 = slot7(slot9, slot10)
-slot8 = {}
-slot9 = slot3.EVENT_CUR_PAGE_REFRESH
-slot10 = {
+slot7 = require
+slot9 = "Const.RedDotConst"
+slot7 = slot7(slot9)
+slot8 = slot1.LightClass
+slot10 = "EventTaskPanelCtrl"
+slot11 = slot2
+slot8 = slot8(slot10, slot11)
+slot9 = {}
+slot10 = slot3.EVENT_CUR_PAGE_REFRESH
+slot11 = {
 	"onActDataRefresh",
 	true
 }
-slot8[slot9] = slot10
-slot9 = slot3.EVENT_TASK_STATE_CHANGE
-slot10 = {
+slot9[slot10] = slot11
+slot10 = slot3.EVENT_TASK_STATE_CHANGE
+slot11 = {
 	"onActDataRefresh",
 	true
 }
-slot8[slot9] = slot10
-slot7.messages = slot8
+slot9[slot10] = slot11
+slot8.messages = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -121,9 +124,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onOpen = slot8
+slot8.onOpen = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.taskListUList
@@ -228,9 +231,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.addListener = slot8
+slot8.addListener = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshList
@@ -244,9 +247,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onActDataRefresh = slot8
+slot8.onActDataRefresh = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -267,9 +270,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.refreshList = slot8
+slot8.refreshList = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -294,7 +297,7 @@ slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #2 6-6, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
 	--- BLOCK #3 7-36, warpins: 1 ---
@@ -356,7 +359,15 @@ slot8 = function(slot0, slot1, slot2)
 	slot12 = slot12(slot14, slot15)
 
 	slot13 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-14, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.btnCloseAllUButton
+		slot2.rayCastParent = slot3
+		slot3 = 1
+		slot2.addSibling = slot3
+		slot3 = false
+		slot2.checkTouchBegin = slot3
 		slot3 = LuaUIUtils
 		slot3 = slot3.renderRewardItem
 		slot5 = slot0
@@ -613,7 +624,7 @@ slot8 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 123-129, warpins: 3 ---
+	--- BLOCK #21 123-140, warpins: 3 ---
 	slot17 = slot6
 	slot15 = slot6.TryChangePage
 	slot18 = "Status"
@@ -621,16 +632,57 @@ slot8 = function(slot0, slot1, slot2)
 
 	slot15(slot17, slot18, slot19)
 
+	slot15 = pg
+	slot15 = slot15.global
+	slot15 = slot15.setRedDot
+	slot17 = string
+	slot17 = slot17.format
+	slot19 = RedDotConst
+	slot19 = slot19.RedDotPath
+	slot19 = slot19.EVENT_LEYLINE_UP_TASKITEM
+	slot20 = slot2.taskId
+	slot17 = slot17(slot19, slot20)
+	slot18 = slot7
 	--- END OF BLOCK #21 ---
 
-	slot10 = if slot10 then
+	if slot14 ~= 1 then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 130-137, warpins: 1 ---
+	--- BLOCK #22 141-142, warpins: 1 ---
+	slot19 = false
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #23 143-143, warpins: 1 ---
+	slot19 = true
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 144-149, warpins: 2 ---
+	slot20 = RedDotConst
+	slot20 = slot20.RedDotStyle
+	slot20 = slot20.REWARD
+
+	slot15(slot17, slot18, slot19, slot20)
+
+	--- END OF BLOCK #24 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 150-157, warpins: 1 ---
 	slot15 = ClientTextUtils
 	slot15 = slot15.setText
 	slot17 = slot10
@@ -641,46 +693,46 @@ slot8 = function(slot0, slot1, slot2)
 
 	slot15(slot17, MULTRES)
 
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #23 138-143, warpins: 2 ---
+	--- BLOCK #26 158-163, warpins: 2 ---
 	slot17 = slot7
 	slot15 = slot7.GetComponent
 	slot18 = "ObjectReference"
 	slot15 = slot15(slot17, slot18)
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #26 ---
 
 	slot16 = if slot15 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #24 144-147, warpins: 1 ---
+	--- BLOCK #27 164-167, warpins: 1 ---
 	slot18 = slot15
 	slot16 = slot15.GetRefValue
 	slot19 = "txtNameUText"
 	slot16 = slot16(slot18, slot19)
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #27 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #25 148-149, warpins: 2 ---
-	--- END OF BLOCK #25 ---
+	--- BLOCK #28 168-169, warpins: 2 ---
+	--- END OF BLOCK #28 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #26 150-157, warpins: 1 ---
+	--- BLOCK #29 170-177, warpins: 1 ---
 	slot17 = ClientTextUtils
 	slot17 = slot17.setText
 	slot19 = slot16
@@ -691,22 +743,22 @@ slot8 = function(slot0, slot1, slot2)
 
 	slot17(slot19, MULTRES)
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #27 158-159, warpins: 2 ---
-	--- END OF BLOCK #27 ---
+	--- BLOCK #30 178-179, warpins: 2 ---
+	--- END OF BLOCK #30 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #28 160-167, warpins: 1 ---
+	--- BLOCK #31 180-187, warpins: 1 ---
 	slot17 = ClientTextUtils
 	slot17 = slot17.setText
 	slot19 = slot12
@@ -717,29 +769,29 @@ slot8 = function(slot0, slot1, slot2)
 
 	slot17(slot19, MULTRES)
 
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #31 ---
 
-	FLOW; TARGET BLOCK #29
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #29 168-169, warpins: 2 ---
+	--- BLOCK #32 188-189, warpins: 2 ---
 	return
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #30 170-170, warpins: 2 ---
+	--- BLOCK #33 190-190, warpins: 2 ---
 	return
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #33 ---
 
 
 
 end
 
-slot7._renderItem = slot8
+slot8._renderItem = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -754,9 +806,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onDestroy = slot8
+slot8.onDestroy = slot9
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

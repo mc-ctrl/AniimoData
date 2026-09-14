@@ -165,7 +165,7 @@ slot8.initPanelFocus = slot9
 slot9 = function(slot0)
 	--- BLOCK #0 1-111, warpins: 1 ---
 	slot1 = slot0.navigation
-	slot2 = 2
+	slot2 = 0.55
 	slot1.longPressDelay = slot2
 	slot1 = nil
 	slot0.onRightStickMoveCallback = slot1
@@ -364,11 +364,11 @@ slot9 = function(slot0)
 	--- BLOCK #0 1-79, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		GUIDE_COURSE_GRADE_REWARD = 2,
+		GUIDE_COURSE_LIST_COURSE = 4,
+		GUIDE_COURSE_GRADE = 1,
 		GUIDE_COURSE_LIST_COURSE_REWARD = 5,
 		GUIDE_COURSE_LIST_REWARD = 3,
-		GUIDE_COURSE_LIST_COURSE = 4,
-		GUIDE_COURSE_GRADE = 1
+		GUIDE_COURSE_GRADE_REWARD = 2
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

@@ -16,15 +16,15 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	name = "tTargetID",
+	const = 0,
 	type = "int",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	name = "CurrentDistToTarget",
+	const = 0,
 	type = "float",
 	value = "0"
 }
@@ -395,11 +395,11 @@ slot11[3] = slot12
 slot10.properties = slot11
 slot11 = {}
 slot12 = {
-	transition = false,
+	class = "Precondition",
 	id = "356",
 	effector = false,
 	precondition = true,
-	class = "Precondition"
+	transition = false
 }
 slot13 = {}
 slot14 = {

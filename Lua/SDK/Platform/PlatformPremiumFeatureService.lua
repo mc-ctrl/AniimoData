@@ -1,4 +1,4 @@
---- BLOCK #0 1-24, warpins: 1 ---
+--- BLOCK #0 1-26, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformLogger"
 slot0 = slot0(slot2)
@@ -211,22 +211,148 @@ end
 
 slot2.checkEligibility = slot3
 
-slot3 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot0.activeFeatureType = slot1
-	slot4 = PlatformPremiumFeatureService
-	slot4 = slot4.isFacadeReady
-	slot4 = slot4()
+slot3 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = require
+	slot2 = "SDK.Platform.PlatformConnectivityService"
+	slot0 = slot0(slot2)
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot1 = if slot0 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-12, warpins: 1 ---
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot1 = slot0.state
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot2 = slot1.tipShown
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-13, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 14-14, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 15-15, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot2.isDisconnectTipShown = slot3
+
+slot3 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = PlatformPremiumFeatureService
+	slot4 = slot4.isDisconnectTipShown
+	slot4 = slot4()
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 6-18, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.info
+	slot7 = "断网提示弹窗显示中，跳过 PremiumFeatureSession begin，featureType=%s"
+	slot8 = tostring
+	slot10 = slot1
+	MULTRES = slot8(slot10)
+
+	slot4(slot6, slot7, MULTRES)
+
+	slot4 = type
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	if slot4 == "function" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 19-24, warpins: 1 ---
+	slot4 = slot2
+	slot6 = false
+	slot7 = 0
+	slot8 = "network_disconnect_tip_shown"
+	slot9 = ""
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 25-25, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 26-32, warpins: 2 ---
+	slot4 = "cross_play"
+	slot0.activeFeatureType = slot4
+	slot4 = PlatformPremiumFeatureService
+	slot4 = slot4.isFacadeReady
+	slot4 = slot4()
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 33-38, warpins: 1 ---
 	slot4 = PlatformPremiumFeatureService
 	slot4 = slot4.fireFallback
 	slot6 = slot2
@@ -236,56 +362,38 @@ slot3 = function(slot0, slot1, slot2, slot3)
 
 	return
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 13-17, warpins: 2 ---
-	slot4 = PlatformBridgeLuaFacade
-	slot4 = slot4.BeginPremiumFeatureSession
-	slot6 = tostring
-	--- END OF BLOCK #2 ---
-
-	slot8 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 18-18, warpins: 1 ---
-	slot8 = ""
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 19-21, warpins: 2 ---
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #4 ---
-
-	slot7 = if not slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-22, warpins: 1 ---
-	slot7 = 0
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 23-25, warpins: 2 ---
+	--- BLOCK #6 39-43, warpins: 2 ---
+	slot4 = PlatformBridgeLuaFacade
+	slot4 = slot4.BeginPremiumFeatureSession
+	slot6 = "cross_play"
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 44-44, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 45-47, warpins: 2 ---
 	slot8 = slot2
 
 	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 

@@ -24,11 +24,34 @@ slot10 = "ClientScentTrackingComponent"
 slot8 = slot8(slot10)
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ScentTrackingConst
 	slot1 = slot1.ScentTrackingState
 	slot1 = slot1.None
 	slot0.scentTrackingState = slot1
+	slot1 = slot0.updateStateCache
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.updateStateCache
+	slot4 = "SCENT_TRACKING_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-20, warpins: 2 ---
 	slot1 = nil
 	slot0.scentTrackingOwnerActorId = slot1
 	slot1 = {}
@@ -39,7 +62,7 @@ slot9 = function(slot0)
 	slot0.lastTrackingItem = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -475,24 +498,47 @@ end
 slot8.onEnterScentTracking = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ScentTrackingConst
 	slot1 = slot1.ScentTrackingState
 	slot1 = slot1.Ready
 	slot0.scentTrackingState = slot1
-	slot3 = slot0
-	slot1 = slot0.playScentTrackingEffect
-	slot1 = slot1(slot3)
+	slot1 = slot0.updateStateCache
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-21, warpins: 1 ---
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.updateStateCache
+	slot4 = "SCENT_TRACKING_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-16, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.playScentTrackingEffect
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-28, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.exitScentTracking
 
@@ -508,12 +554,12 @@ slot9 = function(slot0)
 
 	slot2(MULTRES)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 22-35, warpins: 1 ---
+	--- BLOCK #4 29-42, warpins: 1 ---
 	slot2 = facade
 	slot4 = slot2
 	slot2 = slot2.sendMsgToUI
@@ -551,14 +597,14 @@ slot9 = function(slot0)
 	slot0.scentTrackTickTimer = slot2
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 36-36, warpins: 2 ---
+	--- BLOCK #5 43-43, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -652,13 +698,36 @@ slot9 = function(slot0, slot1)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 27-39, warpins: 1 ---
+	--- BLOCK #7 27-35, warpins: 1 ---
 	slot2 = {}
 	slot0.closestScentTrackingTargetInfos = slot2
 	slot2 = ScentTrackingConst
 	slot2 = slot2.ScentTrackingState
 	slot2 = slot2.Tracking
 	slot0.scentTrackingState = slot2
+	slot2 = slot0.updateStateCache
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 36-39, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.updateStateCache
+	slot5 = "SCENT_TRACKING_ST"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 40-46, warpins: 2 ---
 	slot2 = facade
 	slot4 = slot2
 	slot2 = slot2.sendMsgToUI
@@ -668,7 +737,7 @@ slot9 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -747,51 +816,74 @@ end
 slot8.onRecoverLastScentTrackingItem = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ScentTrackingConst
 	slot1 = slot1.ScentTrackingState
 	slot1 = slot1.None
 	slot0.scentTrackingState = slot1
+	slot1 = slot0.updateStateCache
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.updateStateCache
+	slot4 = "SCENT_TRACKING_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-17, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.stopScentTrackingEffect
 
 	slot1(slot3)
 
 	slot1 = slot0.currentTrackingItem
-	--- END OF BLOCK #0 ---
-
-	if slot1 ~= nil then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #1 11-14, warpins: 1 ---
-	slot1 = slot0.currentTrackingItem
-	slot1 = slot1.entity
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 15-18, warpins: 1 ---
-	slot1 = slot0.currentTrackingItem
-	slot1 = slot1.effectId
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	if slot1 ~= nil then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 19-25, warpins: 1 ---
+	--- BLOCK #3 18-21, warpins: 1 ---
+	slot1 = slot0.currentTrackingItem
+	slot1 = slot1.entity
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 22-25, warpins: 1 ---
+	slot1 = slot0.currentTrackingItem
+	slot1 = slot1.effectId
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-32, warpins: 1 ---
 	slot1 = slot0.currentTrackingItem
 	slot1 = slot1.entity
 	slot3 = slot1
@@ -801,43 +893,43 @@ slot9 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 26-27, warpins: 3 ---
-	slot1 = nil
-	slot0.currentTrackingItem = slot1
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 28-30, warpins: 2 ---
-	slot1 = slot0.scentTrackTickTimer
 	--- END OF BLOCK #5 ---
 
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-34, warpins: 3 ---
+	slot1 = nil
+	slot0.currentTrackingItem = slot1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 35-37, warpins: 2 ---
+	slot1 = slot0.scentTrackTickTimer
+	--- END OF BLOCK #7 ---
+
 	slot1 = if slot1 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 31-34, warpins: 1 ---
+	--- BLOCK #8 38-41, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
 	slot4 = slot0.scentTrackTickTimer
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 35-41, warpins: 2 ---
+	--- BLOCK #9 42-48, warpins: 2 ---
 	slot1 = facade
 	slot3 = slot1
 	slot1 = slot1.sendMsgToUI
@@ -847,7 +939,7 @@ slot9 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 

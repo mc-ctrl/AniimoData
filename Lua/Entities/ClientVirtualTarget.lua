@@ -1,4 +1,4 @@
---- BLOCK #0 1-35, warpins: 1 ---
+--- BLOCK #0 1-39, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -12,22 +12,26 @@ slot3 = require
 slot5 = "Common.Const.Const"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Entities.SpaceEntities.CommonComponent.ClientAoiComponent"
+slot6 = "Entities.SpaceEntities.CommonComponent.ClientPosRotComponent"
 slot4 = slot4(slot6)
-slot5 = slot0.Class
-slot7 = "ClientVirtualTarget"
-slot8 = slot2
-slot5 = slot5(slot7, slot8)
-slot6 = {}
-slot6[1] = slot4
-slot7 = slot0.AddComponents
-slot9 = slot5
+slot5 = require
+slot7 = "Entities.SpaceEntities.CommonComponent.ClientAoiComponent"
+slot5 = slot5(slot7)
+slot6 = slot0.Class
+slot8 = "ClientVirtualTarget"
+slot9 = slot2
+slot6 = slot6(slot8, slot9)
+slot7 = {}
+slot7[1] = slot4
+slot7[2] = slot5
+slot8 = slot0.AddComponents
 slot10 = slot6
+slot11 = slot7
 
-slot7(slot9, slot10)
+slot8(slot10, slot11)
 
-slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-21, warpins: 1 ---
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = VirtualEntUtils
 	slot2 = slot2.getNewVirtualEntActorId
 	slot2 = slot2()
@@ -44,8 +48,6 @@ slot7 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = true
-	slot0.isClientEnt = slot2
-	slot2 = true
 	slot0.isVirtualTarget = slot2
 	slot2 = 3001
 	slot0.camp = slot2
@@ -58,9 +60,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.init = slot7
+slot6.init = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = true
 
@@ -71,9 +73,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.canBeLocked = slot7
+slot6.canBeLocked = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPosition
@@ -85,9 +87,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.getLockPosition = slot7
+slot6.getLockPosition = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPosition
@@ -99,9 +101,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.getLockPartPosition = slot7
+slot6.getLockPartPosition = slot8
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

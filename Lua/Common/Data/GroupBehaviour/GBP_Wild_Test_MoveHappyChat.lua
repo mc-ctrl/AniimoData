@@ -1,7 +1,7 @@
 --- BLOCK #0 1-58, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_Test_MoveHappyChat",
-	CDAfterEnd = 3
+	CDAfterEnd = 3,
+	behavID = "BP_Wild_GroupBehav_Test_MoveHappyChat"
 }
 slot1 = {}
 slot2 = {
@@ -19,8 +19,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPoint01",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPoint01"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -49,8 +49,8 @@ slot1[1] = slot2
 slot2 = {}
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_Common01",
-	func = "sendTrigger_Common"
+	func = "sendTrigger_Common",
+	para = "GBPMsg_Common01"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -79,8 +79,8 @@ slot1[2] = slot2
 slot2 = {}
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_Common02",
-	func = "sendTrigger_Common"
+	func = "sendTrigger_Common",
+	para = "GBPMsg_Common02"
 }
 slot5 = {
 	conditionName = "delayTime"

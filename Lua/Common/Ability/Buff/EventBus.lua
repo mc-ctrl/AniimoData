@@ -1,4 +1,4 @@
---- BLOCK #0 1-95, warpins: 1 ---
+--- BLOCK #0 1-97, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -837,15 +837,17 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-16, warpins: 2 ---
-	return
+	--- BLOCK #3 16-17, warpins: 2 ---
+	slot3 = false
+
+	return slot3
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-20, warpins: 2 ---
+	--- BLOCK #4 18-21, warpins: 2 ---
 	slot3 = slot0.eventContainerMap
 	slot3 = slot3[slot1]
 	--- END OF BLOCK #4 ---
@@ -857,7 +859,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #5 21-23, warpins: 1 ---
+	--- BLOCK #5 22-24, warpins: 1 ---
 	slot4 = slot0.blockEventName
 	--- END OF BLOCK #5 ---
 
@@ -868,7 +870,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #6 24-30, warpins: 1 ---
+	--- BLOCK #6 25-31, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
 	slot6 = LoggerConst
@@ -883,7 +885,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #7 31-35, warpins: 1 ---
+	--- BLOCK #7 32-36, warpins: 1 ---
 	slot4 = CombatLogger
 	slot4 = slot4.debug
 	slot6 = "blockEvent"
@@ -896,15 +898,17 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 36-36, warpins: 2 ---
-	return
+	--- BLOCK #8 37-38, warpins: 2 ---
+	slot4 = false
+
+	return slot4
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 37-41, warpins: 2 ---
+	--- BLOCK #9 39-43, warpins: 2 ---
 	slot4 = slot1
 	slot5 = AbilityConst
 	slot5 = slot5.COMBAT_EVENT_ATTRIBUTE_CHANGE
@@ -917,7 +921,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #10 42-47, warpins: 1 ---
+	--- BLOCK #10 44-49, warpins: 1 ---
 	slot5 = slot1
 	slot6 = AttributeConst
 	slot6 = slot6.ID2NAME
@@ -929,7 +933,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 48-51, warpins: 2 ---
+	--- BLOCK #11 50-53, warpins: 2 ---
 	slot5 = slot0.notifyRecord
 	slot5 = slot5[slot4]
 	--- END OF BLOCK #11 ---
@@ -941,7 +945,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #12 52-58, warpins: 1 ---
+	--- BLOCK #12 54-60, warpins: 1 ---
 	slot5 = LoggerManager
 	slot5 = slot5.checkLogger
 	slot7 = LoggerConst
@@ -956,7 +960,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #13 59-63, warpins: 1 ---
+	--- BLOCK #13 61-65, warpins: 1 ---
 	slot5 = CombatLogger
 	slot5 = slot5.debug
 	slot7 = "inifinity loop detected, eventId"
@@ -969,15 +973,17 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 64-64, warpins: 2 ---
-	return
+	--- BLOCK #14 66-67, warpins: 2 ---
+	slot5 = false
+
+	return slot5
 
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 65-77, warpins: 2 ---
+	--- BLOCK #15 68-80, warpins: 2 ---
 	slot5 = slot0.notifyRecord
 	slot6 = true
 	slot5[slot4] = slot6
@@ -995,7 +1001,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 78-80, warpins: 2 ---
+	--- BLOCK #16 81-83, warpins: 2 ---
 	slot12 = slot6[slot11]
 	slot5[slot11] = slot12
 	--- END OF BLOCK #16 ---
@@ -1004,7 +1010,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	LOOP BLOCK #16
 	GO OUT TO BLOCK #17
 
-	--- BLOCK #17 81-84, warpins: 1 ---
+	--- BLOCK #17 84-87, warpins: 1 ---
 	slot8 = 1
 	slot9 = slot7
 	slot10 = 1
@@ -1013,7 +1019,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 85-90, warpins: 2 ---
+	--- BLOCK #18 88-93, warpins: 2 ---
 	slot12 = slot5[slot11]
 	slot13 = type
 	slot15 = slot12[2]
@@ -1027,7 +1033,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #19 91-99, warpins: 1 ---
+	--- BLOCK #19 94-102, warpins: 1 ---
 	slot13 = xpcall
 	slot15 = slot12[2]
 	slot16 = debug
@@ -1044,7 +1050,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #20 100-106, warpins: 1 ---
+	--- BLOCK #20 103-109, warpins: 1 ---
 	slot15 = LoggerManager
 	slot15 = slot15.checkLogger
 	slot17 = LoggerConst
@@ -1059,7 +1065,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #21 107-111, warpins: 1 ---
+	--- BLOCK #21 110-114, warpins: 1 ---
 	slot15 = CombatLogger
 	slot15 = slot15.logException
 	slot17 = slot14
@@ -1071,7 +1077,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #22 112-116, warpins: 1 ---
+	--- BLOCK #22 115-119, warpins: 1 ---
 	slot13 = slot12[2]
 	slot14 = 1
 	slot15 = #slot13
@@ -1081,7 +1087,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 117-125, warpins: 2 ---
+	--- BLOCK #23 120-128, warpins: 2 ---
 	slot18 = xpcall
 	slot20 = slot13[slot17]
 	slot21 = debug
@@ -1098,7 +1104,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #24 126-132, warpins: 1 ---
+	--- BLOCK #24 129-135, warpins: 1 ---
 	slot20 = LoggerManager
 	slot20 = slot20.checkLogger
 	slot22 = LoggerConst
@@ -1113,7 +1119,7 @@ slot15 = function(slot0, slot1, slot2, ...)
 	end
 
 
-	--- BLOCK #25 133-136, warpins: 1 ---
+	--- BLOCK #25 136-139, warpins: 1 ---
 	slot20 = CombatLogger
 	slot20 = slot20.logException
 	slot22 = slot19
@@ -1125,21 +1131,21 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 137-137, warpins: 3 ---
+	--- BLOCK #26 140-140, warpins: 3 ---
 	--- END OF BLOCK #26 ---
 
 	for slot17=slot14, slot15, slot16
 	LOOP BLOCK #23
 	GO OUT TO BLOCK #27
 
-	--- BLOCK #27 138-138, warpins: 4 ---
+	--- BLOCK #27 141-141, warpins: 4 ---
 	--- END OF BLOCK #27 ---
 
 	for slot11=slot8, slot9, slot10
 	LOOP BLOCK #18
 	GO OUT TO BLOCK #28
 
-	--- BLOCK #28 139-146, warpins: 1 ---
+	--- BLOCK #28 142-149, warpins: 1 ---
 	slot8 = ListPool
 	slot8 = slot8.returnList
 	slot10 = slot5
@@ -1155,36 +1161,74 @@ slot15 = function(slot0, slot1, slot2, ...)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 147-149, warpins: 2 ---
-	slot4 = slot0.additionalReceiver
+	--- BLOCK #29 150-151, warpins: 2 ---
+	slot4 = true
+
+	return slot4
 	--- END OF BLOCK #29 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #30
+
+
+end
+
+slot14.notifySelf = slot15
+
+slot15 = function(slot0, slot1, slot2, ...)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.notifySelf
+	slot6 = slot1
+	slot7 = slot2
+	MULTRES = ...
+	slot3 = slot3(slot5, slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #30 150-157, warpins: 1 ---
-	slot4 = slot0.additionalReceiver
-	slot6 = slot4
-	slot4 = slot4.notifyFromAdditive
-	slot7 = slot0
-	slot8 = slot1
-	slot9 = slot2
+	--- BLOCK #1 9-9, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot3 = slot0.additionalReceiver
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-20, warpins: 1 ---
+	slot3 = slot0.additionalReceiver
+	slot5 = slot3
+	slot3 = slot3.notifyFromAdditive
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
 	MULTRES = ...
 
-	slot4(slot6, slot7, slot8, slot9, MULTRES)
+	slot3(slot5, slot6, slot7, slot8, MULTRES)
 
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #31 158-158, warpins: 2 ---
+	--- BLOCK #4 21-21, warpins: 2 ---
 	return
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -1248,7 +1292,7 @@ slot15 = function(slot0, slot1, slot2, slot3, ...)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #33
 	end
 
 
@@ -1325,281 +1369,311 @@ slot15 = function(slot0, slot1, slot2, slot3, ...)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 49-56, warpins: 2 ---
+	--- BLOCK #11 49-61, warpins: 2 ---
 	slot6 = slot0.notifyRecord
 	slot7 = true
 	slot6[slot5] = slot7
-	slot6 = slot4.container
-	slot7 = 1
-	slot8 = #slot6
+	slot6 = ListPool
+	slot6 = slot6.getList
+	slot8 = 3
+	slot6 = slot6(slot8)
+	slot7 = slot4.container
+	slot8 = #slot7
 	slot9 = 1
+	slot10 = slot8
+	slot11 = 1
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 57-62, warpins: 2 ---
-	slot11 = slot6[slot10]
-	slot12 = slot11[4]
-	slot13 = slot11[5]
-	slot14 = slot11[6]
+	--- BLOCK #12 62-64, warpins: 2 ---
+	slot13 = slot7[slot12]
+	slot6[slot12] = slot13
 	--- END OF BLOCK #12 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #29
-	end
+	for slot12=slot9, slot10, slot11
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #13
 
-
-	--- BLOCK #13 63-64, warpins: 1 ---
+	--- BLOCK #13 65-68, warpins: 1 ---
+	slot9 = 1
+	slot10 = slot8
+	slot11 = 1
 	--- END OF BLOCK #13 ---
 
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 65-68, warpins: 1 ---
-	slot15 = slot0.owner
-	slot15 = slot15.isSummon
+	--- BLOCK #14 69-74, warpins: 2 ---
+	slot13 = slot6[slot12]
+	slot14 = slot13[4]
+	slot15 = slot13[5]
+	slot16 = slot13[6]
 	--- END OF BLOCK #14 ---
 
-	if slot15 ~= nil then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #15 69-72, warpins: 1 ---
-	slot15 = slot0.owner
-	slot15 = slot15.isSummon
+	--- BLOCK #15 75-76, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
-	if slot15 == true then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #16 73-74, warpins: 3 ---
+	--- BLOCK #16 77-80, warpins: 1 ---
+	slot17 = slot0.owner
+	slot17 = slot17.isSummon
 	--- END OF BLOCK #16 ---
 
-	slot14 = if not slot14 then
+	if slot17 ~= nil then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 75-80, warpins: 1 ---
-	slot15 = Utils
-	slot15 = slot15.isPuppet
-	slot17 = slot1.owner
-	slot15 = slot15(slot17)
+	--- BLOCK #17 81-84, warpins: 1 ---
+	slot17 = slot0.owner
+	slot17 = slot17.isSummon
 	--- END OF BLOCK #17 ---
 
-	slot15 = if not slot15 then
+	if slot17 == true then
 	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #18 81-86, warpins: 1 ---
-	slot15 = Utils
-	slot15 = slot15.isCreation
-	slot17 = slot1.owner
-	slot15 = slot15(slot17)
+	--- BLOCK #18 85-86, warpins: 3 ---
 	--- END OF BLOCK #18 ---
 
-	slot15 = if not slot15 then
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #19 87-91, warpins: 2 ---
-	slot15 = type
-	slot17 = slot11[2]
-	slot15 = slot15(slot17)
+	--- BLOCK #19 87-92, warpins: 1 ---
+	slot17 = Utils
+	slot17 = slot17.isPuppet
+	slot19 = slot1.owner
+	slot17 = slot17(slot19)
 	--- END OF BLOCK #19 ---
 
-	if slot15 == "table" then
+	slot17 = if not slot17 then
 	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #20 93-98, warpins: 1 ---
+	slot17 = Utils
+	slot17 = slot17.isCreation
+	slot19 = slot1.owner
+	slot17 = slot17(slot19)
+	--- END OF BLOCK #20 ---
+
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #21 99-103, warpins: 2 ---
+	slot17 = type
+	slot19 = slot13[2]
+	slot17 = slot17(slot19)
+	--- END OF BLOCK #21 ---
+
+	if slot17 == "table" then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #22 104-108, warpins: 1 ---
+	slot17 = slot13[2]
+	slot18 = 1
+	slot19 = #slot17
+	slot20 = 1
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 109-117, warpins: 2 ---
+	slot22 = xpcall
+	slot24 = slot17[slot21]
+	slot25 = debug
+	slot25 = slot25.traceback
+	slot26 = slot3
+	MULTRES = ...
+	slot22, slot23 = slot22(slot24, slot25, slot26, MULTRES)
+	--- END OF BLOCK #23 ---
+
+	slot22 = if not slot22 then
+	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #20 92-96, warpins: 1 ---
-	slot15 = slot11[2]
-	slot16 = 1
-	slot17 = #slot15
-	slot18 = 1
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 97-105, warpins: 2 ---
-	slot20 = xpcall
-	slot22 = slot15[slot19]
-	slot23 = debug
-	slot23 = slot23.traceback
-	slot24 = slot3
-	MULTRES = ...
-	slot20, slot21 = slot20(slot22, slot23, slot24, MULTRES)
-	--- END OF BLOCK #21 ---
-
-	slot20 = if not slot20 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #22 106-112, warpins: 1 ---
-	slot22 = LoggerManager
-	slot22 = slot22.checkLogger
-	slot24 = LoggerConst
-	slot24 = slot24.ERROR
-	slot22 = slot22(slot24)
-	--- END OF BLOCK #22 ---
-
-	slot22 = if slot22 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 113-116, warpins: 1 ---
-	slot22 = CombatLogger
-	slot22 = slot22.logException
-	slot24 = slot21
-
-	slot22(slot24)
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 117-117, warpins: 3 ---
+	--- BLOCK #24 118-124, warpins: 1 ---
+	slot24 = LoggerManager
+	slot24 = slot24.checkLogger
+	slot26 = LoggerConst
+	slot26 = slot26.ERROR
+	slot24 = slot24(slot26)
 	--- END OF BLOCK #24 ---
 
-	for slot19=slot16, slot17, slot18
-	LOOP BLOCK #21
-	GO OUT TO BLOCK #25
+	slot24 = if slot24 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
 
-	--- BLOCK #25 118-118, warpins: 1 ---
+
+	--- BLOCK #25 125-128, warpins: 1 ---
+	slot24 = CombatLogger
+	slot24 = slot24.logException
+	slot26 = slot23
+
+	slot24(slot26)
+
 	--- END OF BLOCK #25 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 119-127, warpins: 1 ---
-	slot15 = xpcall
-	slot17 = slot11[2]
-	slot18 = debug
-	slot18 = slot18.traceback
-	slot19 = slot3
-	MULTRES = ...
-	slot15, slot16 = slot15(slot17, slot18, slot19, MULTRES)
+	--- BLOCK #26 129-129, warpins: 3 ---
 	--- END OF BLOCK #26 ---
 
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #29
-	end
+	for slot21=slot18, slot19, slot20
+	LOOP BLOCK #23
+	GO OUT TO BLOCK #27
 
-
-	--- BLOCK #27 128-134, warpins: 1 ---
-	slot17 = LoggerManager
-	slot17 = slot17.checkLogger
-	slot19 = LoggerConst
-	slot19 = slot19.ERROR
-	slot17 = slot17(slot19)
+	--- BLOCK #27 130-130, warpins: 1 ---
 	--- END OF BLOCK #27 ---
 
-	slot17 = if slot17 then
-	JUMP TO BLOCK #28
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
+
+
+	--- BLOCK #28 131-139, warpins: 1 ---
+	slot17 = xpcall
+	slot19 = slot13[2]
+	slot20 = debug
+	slot20 = slot20.traceback
+	slot21 = slot3
+	MULTRES = ...
+	slot17, slot18 = slot17(slot19, slot20, slot21, MULTRES)
+	--- END OF BLOCK #28 ---
+
+	slot17 = if not slot17 then
 	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #28 135-138, warpins: 1 ---
-	slot17 = CombatLogger
-	slot17 = slot17.logException
-	slot19 = slot16
-
-	slot17(slot19)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 139-139, warpins: 8 ---
+	--- BLOCK #29 140-146, warpins: 1 ---
+	slot19 = LoggerManager
+	slot19 = slot19.checkLogger
+	slot21 = LoggerConst
+	slot21 = slot21.ERROR
+	slot19 = slot19(slot21)
 	--- END OF BLOCK #29 ---
 
-	for slot10=slot7, slot8, slot9
-	LOOP BLOCK #12
-	GO OUT TO BLOCK #30
+	slot19 = if slot19 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
 
-	--- BLOCK #30 140-142, warpins: 1 ---
-	slot7 = slot0.notifyRecord
-	slot8 = nil
-	slot7[slot5] = slot8
+
+	--- BLOCK #30 147-150, warpins: 1 ---
+	slot19 = CombatLogger
+	slot19 = slot19.logException
+	slot21 = slot18
+
+	slot19(slot21)
+
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 143-145, warpins: 2 ---
-	slot5 = slot0.additionalReceiver
+	--- BLOCK #31 151-151, warpins: 8 ---
 	--- END OF BLOCK #31 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #35
-	end
+	for slot12=slot9, slot10, slot11
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #32
 
+	--- BLOCK #32 152-159, warpins: 1 ---
+	slot9 = ListPool
+	slot9 = slot9.returnList
+	slot11 = slot6
+	slot12 = 3
 
-	--- BLOCK #32 146-149, warpins: 1 ---
-	slot5 = slot0.owner
-	slot5 = slot5.isSummon
+	slot9(slot11, slot12)
+
+	slot9 = slot0.notifyRecord
+	slot10 = nil
+	slot9[slot5] = slot10
 	--- END OF BLOCK #32 ---
 
-	if slot5 ~= nil then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 150-153, warpins: 1 ---
-	slot5 = slot0.owner
-	slot5 = slot5.isSummon
+	--- BLOCK #33 160-162, warpins: 2 ---
+	slot5 = slot0.additionalReceiver
 	--- END OF BLOCK #33 ---
 
-	if slot5 == true then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #34
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #34 154-161, warpins: 2 ---
+	--- BLOCK #34 163-166, warpins: 1 ---
+	slot5 = slot0.owner
+	slot5 = slot5.isSummon
+	--- END OF BLOCK #34 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 167-170, warpins: 1 ---
+	slot5 = slot0.owner
+	slot5 = slot5.isSummon
+	--- END OF BLOCK #35 ---
+
+	if slot5 == true then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 171-178, warpins: 2 ---
 	slot5 = slot0.additionalReceiver
 	slot7 = slot5
 	slot5 = slot5.notifyFromAdditive
@@ -1610,14 +1684,14 @@ slot15 = function(slot0, slot1, slot2, slot3, ...)
 
 	slot5(slot7, slot8, slot9, slot10, MULTRES)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #35 162-162, warpins: 3 ---
+	--- BLOCK #37 179-179, warpins: 3 ---
 	return
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #37 ---
 
 
 

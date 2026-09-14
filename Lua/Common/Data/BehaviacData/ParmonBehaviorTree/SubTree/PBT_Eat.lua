@@ -9,35 +9,35 @@ slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/PBT_Eat",
 	useForRoute = false,
-	agenttype = "CombatAgent",
-	version = 10
+	version = 10,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 5,
-	name = "eatTimeOut",
 	value = "5",
-	type = "float"
+	name = "eatTimeOut",
+	type = "float",
+	const = 5
 }
 slot4[1] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
 slot5 = {}
 slot6 = {
-	id = "5",
 	class = "Effector",
 	transition = false,
 	effector = true,
-	precondition = false
+	precondition = false,
+	id = "5"
 }
 slot7 = {}
 slot8 = {
@@ -70,8 +70,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "6",
-	class = "Action"
+	class = "Action",
+	id = "6"
 }
 slot8 = {}
 slot9 = {}
@@ -107,8 +107,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}
@@ -152,8 +152,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "Action"
+	class = "Action",
+	id = "3"
 }
 slot8 = {}
 slot9 = {}

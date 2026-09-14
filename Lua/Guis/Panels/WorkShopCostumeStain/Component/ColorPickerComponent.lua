@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-54, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -109,6 +109,155 @@ end
 slot4.findObjects = slot7
 
 slot7 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectMergeGroup
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectMergeGroup
+	slot1 = slot1.hasNormal
+	--- END OF BLOCK #1 ---
+
+	if slot1 == true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectMergeGroup
+	slot1 = slot1.enableGradient
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 3 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 17-17, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-18, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot4.mergeGroupSupportsGradient = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.mergeGroupSupportsGradient
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-11, warpins: 2 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectMergeGroup
+	--- END OF BLOCK #2 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectSecondUV
+	--- END OF BLOCK #3 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 16-19, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectSimpleDye
+	--- END OF BLOCK #4 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 22-22, warpins: 3 ---
+	slot1 = true
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-23, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot4.shouldHideGradientUi = slot7
+
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.gradientUButton
 
@@ -129,142 +278,45 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
+	--- BLOCK #2 5-10, warpins: 2 ---
 	slot1 = slot0.gradientUButton
-	slot2 = slot0.ctrl
-	slot2 = slot2.selectSecondUV
+	slot4 = slot0
+	slot2 = slot0.shouldHideGradientUi
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-13, warpins: 1 ---
-	slot2 = slot0.ctrl
-	slot2 = slot2.selectSimpleDye
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 14-15, warpins: 2 ---
-	slot2 = 0
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot2 = 1
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 16-16, warpins: 1 ---
-	slot2 = 1
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 17-18, warpins: 2 ---
+	--- BLOCK #5 14-15, warpins: 2 ---
 	slot1.renderOpacity = slot2
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
 slot4.refreshGradientBtnOpacity = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = slot0.ctrl
-	slot1 = slot1.selectSimpleDye
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-14, warpins: 1 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.realizeDyeDesaturate
-	slot4 = true
-	slot5, slot6 = nil
-	slot7 = slot0.ctrl
-	slot7 = slot7.selectSimpleDye
-	slot7 = slot7.matName
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #2 15-18, warpins: 1 ---
-	slot1 = slot0.ctrl
-	slot1 = slot1.selectSecondUV
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 19-29, warpins: 1 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.realizeDyeDesaturate
-	slot4 = true
-	slot5 = nil
-	slot6 = slot0.ctrl
-	slot6 = slot6.selectSecondUV
-	slot6 = slot6.matName
-	slot7 = nil
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 30-37, warpins: 1 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.realizeDyeDesaturate
-	slot4 = true
-	slot5 = slot0.ctrl
-	slot5 = slot5.selectAreaIdx
-	slot6, slot7 = nil
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 38-38, warpins: 3 ---
-	return
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot4.forceDesaturateOnOpen = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
@@ -431,42 +483,30 @@ slot7 = function(slot0)
 	slot1 = slot0.btnGradientL
 
 	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.ctrl
-		slot0 = slot0.selectSecondUV
+		slot2 = slot0
+		slot0 = slot0.shouldHideGradientUi
+		slot0 = slot0(slot2)
+
 		--- END OF BLOCK #0 ---
 
-		slot0 = if not slot0 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 6-10, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.ctrl
-		slot0 = slot0.selectSimpleDye
+		--- BLOCK #1 7-7, warpins: 1 ---
+		return
 
 		--- END OF BLOCK #1 ---
 
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
+		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-11, warpins: 2 ---
-		return
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 12-19, warpins: 2 ---
+		--- BLOCK #2 8-15, warpins: 2 ---
 		slot0 = self
 		slot1 = false
 		slot0.isGradient = slot1
@@ -477,7 +517,7 @@ slot7 = function(slot0)
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -487,42 +527,30 @@ slot7 = function(slot0)
 	slot1 = slot0.btnGradientR
 
 	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.ctrl
-		slot0 = slot0.selectSecondUV
+		slot2 = slot0
+		slot0 = slot0.shouldHideGradientUi
+		slot0 = slot0(slot2)
+
 		--- END OF BLOCK #0 ---
 
-		slot0 = if not slot0 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 6-10, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.ctrl
-		slot0 = slot0.selectSimpleDye
+		--- BLOCK #1 7-7, warpins: 1 ---
+		return
 
 		--- END OF BLOCK #1 ---
 
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
+		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-11, warpins: 2 ---
-		return
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 12-19, warpins: 2 ---
+		--- BLOCK #2 8-15, warpins: 2 ---
 		slot0 = self
 		slot1 = true
 		slot0.isGradient = slot1
@@ -533,7 +561,7 @@ slot7 = function(slot0)
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -710,41 +738,75 @@ end
 slot4.onShow = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshGradientBtnOpacity
 
 	slot1(slot3)
 
 	slot3 = slot0
-	slot1 = slot0.forceDesaturateOnOpen
-
-	slot1(slot3)
-
-	slot1 = slot0.ctrl
-	slot1 = slot1.selectSimpleDye
+	slot1 = slot0.mergeGroupSupportsGradient
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-14, warpins: 1 ---
-	slot1 = slot0.ctrl
-	slot1 = slot1.selectSecondUV
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot1 = slot0.btnGradientL
+	slot3 = slot1
+	slot1 = slot1.OnClickSimulate
+
+	slot1(slot3)
+
+	return
+
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-17, warpins: 2 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectMergeGroup
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 15-26, warpins: 2 ---
+	--- BLOCK #3 18-21, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectSimpleDye
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-25, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.selectSecondUV
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-37, warpins: 3 ---
 	slot1 = false
 	slot0.isGradient = slot1
 	slot1 = slot0.component
@@ -762,12 +824,12 @@ slot7 = function(slot0)
 
 	return
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #3 27-31, warpins: 2 ---
+	--- BLOCK #6 38-42, warpins: 2 ---
 	slot1 = slot0.btnGradientL
 	slot3 = slot1
 	slot1 = slot1.OnClickSimulate
@@ -775,7 +837,7 @@ slot7 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
@@ -787,7 +849,7 @@ slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.ctrl
-	slot2 = slot2.selectSimpleDye
+	slot2 = slot2.selectMergeGroup
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -797,23 +859,27 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-14, warpins: 1 ---
+	--- BLOCK #1 6-18, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
-	slot2 = slot2.getSimpleDyeOriginColor
+	slot2 = slot2.getMergeGroupOriginColor
 	slot5 = slot0.ctrl
-	slot5 = slot5.selectSimpleDye
-	slot5 = slot5.matName
-	slot2 = slot2(slot4, slot5)
+	slot5 = slot5.selectMergeGroup
+	slot5 = slot5.groupIndex
+	slot6 = slot0.ctrl
+	slot6 = slot6.selectMergeGroup
+	slot6 = slot6.members
+	slot7 = slot0.isGradient
+	slot2 = slot2(slot4, slot5, slot6, slot7)
 	slot1 = slot2
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 15-18, warpins: 1 ---
+	--- BLOCK #2 19-22, warpins: 1 ---
 	slot2 = slot0.ctrl
-	slot2 = slot2.selectSecondUV
+	slot2 = slot2.selectSimpleDye
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -823,7 +889,33 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-28, warpins: 1 ---
+	--- BLOCK #3 23-31, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getSimpleDyeOriginColor
+	slot5 = slot0.ctrl
+	slot5 = slot5.selectSimpleDye
+	slot5 = slot5.matName
+	slot2 = slot2(slot4, slot5)
+	slot1 = slot2
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 32-35, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.selectSecondUV
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 36-45, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.selectSecondUV
 	slot3 = slot0.model
@@ -833,12 +925,12 @@ slot7 = function(slot0)
 	slot7 = slot2.partIndex
 	slot3 = slot3(slot5, slot6, slot7)
 	slot1 = slot3
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 29-36, warpins: 1 ---
+	--- BLOCK #6 46-53, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.getOriginColor
@@ -847,12 +939,12 @@ slot7 = function(slot0)
 	slot6 = slot0.isGradient
 	slot2 = slot2(slot4, slot5, slot6)
 	slot1 = slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 37-54, warpins: 3 ---
+	--- BLOCK #7 54-71, warpins: 4 ---
 	slot2 = slot0.colorUColorPicker
 	slot4 = slot2
 	slot2 = slot2.SetColorWithoutNotify
@@ -879,7 +971,7 @@ slot7 = function(slot0)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -890,17 +982,75 @@ slot4.resetCsColorPick = slot7
 slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.ctrl
-	slot2 = slot2.selectSimpleDye
+	slot2 = slot2.selectMergeGroup
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 5-21, warpins: 1 ---
+	--- BLOCK #1 5-17, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.applyMergeGroupColors
+	slot5 = slot0.ctrl
+	slot5 = slot5.selectMergeGroup
+	slot5 = slot5.members
+	slot6 = slot1
+	slot7 = slot0.isGradient
+	slot8 = slot0.ctrl
+	slot8 = slot8.selectMergeGroup
+	slot8 = slot8.enableGradient
+	--- END OF BLOCK #1 ---
+
+	if slot8 ~= true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 18-19, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 20-20, warpins: 1 ---
+	slot8 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-22, warpins: 2 ---
+	slot2(slot4, slot5, slot6, slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-26, warpins: 2 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.selectSimpleDye
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 27-35, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.setSimpleDyeColor
@@ -911,36 +1061,26 @@ slot7 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	slot2 = slot0.model
-	slot4 = slot2
-	slot2 = slot2.markDyeDesaturateCache
-	slot5, slot6 = nil
-	slot7 = slot0.ctrl
-	slot7 = slot7.selectSimpleDye
-	slot7 = slot7.matName
-
-	slot2(slot4, slot5, slot6, slot7)
-
 	return
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #2 22-25, warpins: 2 ---
+	--- BLOCK #7 36-39, warpins: 2 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.selectSecondUV
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #7 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #3 26-42, warpins: 1 ---
+	--- BLOCK #8 40-49, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.selectSecondUV
 	slot3 = slot0.model
@@ -952,78 +1092,43 @@ slot7 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7, slot8)
 
-	slot3 = slot0.model
-	slot5 = slot3
-	slot3 = slot3.markDyeDesaturateCache
-	slot6 = nil
-	slot7 = slot2.matName
-	slot8 = nil
-
-	slot3(slot5, slot6, slot7, slot8)
-
 	return
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #4 43-49, warpins: 2 ---
+	--- BLOCK #9 50-56, warpins: 2 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.setMatAreaColor
 	slot5 = slot0.ctrl
 	slot5 = slot5.selectAreaIdx
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #9 ---
 
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #5 50-50, warpins: 1 ---
+	--- BLOCK #10 57-57, warpins: 1 ---
 	slot5 = 1
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #6 51-60, warpins: 2 ---
+	--- BLOCK #11 58-61, warpins: 2 ---
 	slot6 = slot1
 	slot7 = slot0.isGradient
 
 	slot2(slot4, slot5, slot6, slot7)
 
-	slot2 = slot0.model
-	slot4 = slot2
-	slot2 = slot2.markDyeDesaturateCache
-	slot5 = slot0.ctrl
-	slot5 = slot5.selectAreaIdx
-	--- END OF BLOCK #6 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 61-61, warpins: 1 ---
-	slot5 = 1
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 62-64, warpins: 2 ---
-	slot6, slot7 = nil
-
-	slot2(slot4, slot5, slot6, slot7)
-
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 
 
@@ -1068,7 +1173,7 @@ slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.ctrl
-	slot2 = slot2.selectSimpleDye
+	slot2 = slot2.selectMergeGroup
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -1078,23 +1183,27 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-14, warpins: 1 ---
+	--- BLOCK #1 6-18, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
-	slot2 = slot2.getSimpleDyeColor
+	slot2 = slot2.getMergeGroupColor
 	slot5 = slot0.ctrl
-	slot5 = slot5.selectSimpleDye
-	slot5 = slot5.matName
-	slot2 = slot2(slot4, slot5)
+	slot5 = slot5.selectMergeGroup
+	slot5 = slot5.groupIndex
+	slot6 = slot0.ctrl
+	slot6 = slot6.selectMergeGroup
+	slot6 = slot6.members
+	slot7 = slot0.isGradient
+	slot2 = slot2(slot4, slot5, slot6, slot7)
 	slot1 = slot2
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 15-18, warpins: 1 ---
+	--- BLOCK #2 19-22, warpins: 1 ---
 	slot2 = slot0.ctrl
-	slot2 = slot2.selectSecondUV
+	slot2 = slot2.selectSimpleDye
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -1104,7 +1213,33 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-28, warpins: 1 ---
+	--- BLOCK #3 23-31, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getSimpleDyeColor
+	slot5 = slot0.ctrl
+	slot5 = slot5.selectSimpleDye
+	slot5 = slot5.matName
+	slot2 = slot2(slot4, slot5)
+	slot1 = slot2
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 32-35, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.selectSecondUV
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 36-45, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.selectSecondUV
 	slot3 = slot0.model
@@ -1114,12 +1249,12 @@ slot7 = function(slot0)
 	slot7 = slot2.partIndex
 	slot3 = slot3(slot5, slot6, slot7)
 	slot1 = slot3
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 29-36, warpins: 1 ---
+	--- BLOCK #6 46-53, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.getMatColor
@@ -1128,12 +1263,12 @@ slot7 = function(slot0)
 	slot6 = slot0.isGradient
 	slot2 = slot2(slot4, slot5, slot6)
 	slot1 = slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 37-53, warpins: 3 ---
+	--- BLOCK #7 54-70, warpins: 4 ---
 	slot2 = slot0.colorUColorPicker
 	slot4 = slot2
 	slot2 = slot2.SetColorWithoutNotify
@@ -1159,7 +1294,7 @@ slot7 = function(slot0)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -1219,17 +1354,196 @@ slot4.setColorPack = slot7
 slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.ctrl
-	slot2 = slot2.selectSimpleDye
+	slot2 = slot2.selectMergeGroup
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #1 5-34, warpins: 1 ---
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.mergeGroupSupportsGradient
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #2 10-18, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getFirstNormalMember
+	slot5 = slot0.ctrl
+	slot5 = slot5.selectMergeGroup
+	slot5 = slot5.members
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #3 19-20, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-22, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot1 == 1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-39, warpins: 2 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getMatColor
+	slot6 = slot2.areaIndex
+	slot7 = false
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = slot0.btnGradientL
+	slot4 = slot4.transform
+	slot6 = slot4
+	slot4 = slot4.Find
+	slot7 = "Color"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UImage"
+	slot4 = slot4(slot6, slot7)
+	slot4.color = slot3
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 40-41, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 42-43, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot1 == 2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 44-60, warpins: 2 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getMatColor
+	slot6 = slot2.areaIndex
+	slot7 = true
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = slot0.btnGradientR
+	slot4 = slot4.transform
+	slot6 = slot4
+	slot4 = slot4.Find
+	slot7 = "Color"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UImage"
+	slot4 = slot4(slot6, slot7)
+	slot4.color = slot3
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 61-61, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 62-95, warpins: 3 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getMergeGroupColor
+	slot5 = slot0.ctrl
+	slot5 = slot5.selectMergeGroup
+	slot5 = slot5.groupIndex
+	slot6 = slot0.ctrl
+	slot6 = slot6.selectMergeGroup
+	slot6 = slot6.members
+	slot7 = false
+	slot2 = slot2(slot4, slot5, slot6, slot7)
+	slot3 = slot0.btnGradientL
+	slot3 = slot3.transform
+	slot5 = slot3
+	slot3 = slot3.Find
+	slot6 = "Color"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UImage"
+	slot3 = slot3(slot5, slot6)
+	slot3.color = slot2
+	slot3 = slot0.btnGradientR
+	slot3 = slot3.transform
+	slot5 = slot3
+	slot3 = slot3.Find
+	slot6 = "Color"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UImage"
+	slot3 = slot3(slot5, slot6)
+	slot3.color = slot2
+
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 96-99, warpins: 2 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.selectSimpleDye
+	--- END OF BLOCK #11 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 100-129, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.getSimpleDyeColor
@@ -1262,24 +1576,24 @@ slot7 = function(slot0, slot1)
 
 	return
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #2 35-38, warpins: 2 ---
+	--- BLOCK #13 130-133, warpins: 2 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.selectSecondUV
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #13 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #3 39-69, warpins: 1 ---
+	--- BLOCK #14 134-164, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.selectSecondUV
 	slot3 = slot0.model
@@ -1313,32 +1627,32 @@ slot7 = function(slot0, slot1)
 
 	return
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #4 70-71, warpins: 2 ---
-	--- END OF BLOCK #4 ---
+	--- BLOCK #15 165-166, warpins: 2 ---
+	--- END OF BLOCK #15 ---
 
 	if slot1 ~= 0 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #5 72-73, warpins: 1 ---
-	--- END OF BLOCK #5 ---
+	--- BLOCK #16 167-168, warpins: 1 ---
+	--- END OF BLOCK #16 ---
 
 	if slot1 == 1 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #6 74-91, warpins: 2 ---
+	--- BLOCK #17 169-186, warpins: 2 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.getMatColor
@@ -1357,32 +1671,32 @@ slot7 = function(slot0, slot1)
 	slot6 = "UImage"
 	slot3 = slot3(slot5, slot6)
 	slot3.color = slot2
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #7 92-93, warpins: 2 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #18 187-188, warpins: 2 ---
+	--- END OF BLOCK #18 ---
 
 	if slot1 ~= 0 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #8 94-95, warpins: 1 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #19 189-190, warpins: 1 ---
+	--- END OF BLOCK #19 ---
 
 	if slot1 == 2 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #9 96-113, warpins: 2 ---
+	--- BLOCK #20 191-208, warpins: 2 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.getMatColor
@@ -1402,14 +1716,14 @@ slot7 = function(slot0, slot1)
 	slot3 = slot3(slot5, slot6)
 	slot3.color = slot2
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #10 114-114, warpins: 2 ---
+	--- BLOCK #21 209-209, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #21 ---
 
 
 

@@ -1,7 +1,7 @@
 --- BLOCK #0 1-134, warpins: 1 ---
 slot0 = {
-	CDAfterEnd = 1,
-	behavID = "BP_Wild_GroupBehav_WolfChaseSheep"
+	behavID = "BP_Wild_GroupBehav_WolfChaseSheep",
+	CDAfterEnd = 1
 }
 slot1 = {}
 slot2 = {
@@ -139,8 +139,8 @@ slot5 = {
 slot4.role = slot5
 slot3[4] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -247,8 +247,8 @@ slot5 = {
 slot4.role = slot5
 slot3[4] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"

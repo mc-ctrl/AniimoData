@@ -1,25 +1,28 @@
---- BLOCK #0 1-27, warpins: 1 ---
+--- BLOCK #0 1-30, warpins: 1 ---
 slot0 = require
-slot2 = "Core.PropertySync.CustomDict"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.PropertySync.CustomDict"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Log.LoggerManager"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Log.LoggerConst"
+slot5 = "Core.Log.LoggerManager"
 slot3 = slot3(slot5)
-slot4 = slot2.getLogger
-slot6 = "BlockPetRecordMap"
+slot4 = require
+slot6 = "Core.Log.LoggerConst"
 slot4 = slot4(slot6)
-slot5 = slot1.LiteClass
+slot5 = slot3.getLogger
 slot7 = "BlockPetRecordMap"
-slot8 = slot0
-slot5 = slot5(slot7, slot8)
+slot5 = slot5(slot7)
+slot6 = slot2.LiteClass
+slot8 = "BlockPetRecordMap"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -140,9 +143,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.addRecordCount = slot6
+slot6.addRecordCount = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0[slot1]
 	--- END OF BLOCK #0 ---
@@ -182,9 +185,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.getRecordCount = slot6
+slot6.getRecordCount = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = 0
 	slot4 = ipairs
@@ -198,7 +201,7 @@ slot6 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -265,9 +268,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.getRecordCountByList = slot6
+slot6.getRecordCountByList = slot7
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

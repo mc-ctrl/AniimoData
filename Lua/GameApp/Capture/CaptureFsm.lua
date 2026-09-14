@@ -1,7 +1,7 @@
 --- BLOCK #0 1-49, warpins: 1 ---
 slot0 = {
-	S = 3,
 	Empty = 0,
+	S = 3,
 	E = 2,
 	T = 1
 }

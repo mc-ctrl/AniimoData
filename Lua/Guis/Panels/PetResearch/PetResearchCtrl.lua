@@ -1,4 +1,4 @@
---- BLOCK #0 1-120, warpins: 1 ---
+--- BLOCK #0 1-117, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -28,58 +28,55 @@ slot7 = require
 slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.Utils"
+slot10 = "Const.AudioConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.AudioConst"
+slot11 = "Utils.ClientTextUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.ClientTextUtils"
+slot12 = "Guis.Utils.PetResearchUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Guis.Utils.PetResearchUtils"
+slot13 = "Guis.Panels.PetResearch.Component.PetResearchCardComponent"
 slot11 = slot11(slot13)
-slot12 = require
-slot14 = "Guis.Panels.PetResearch.Component.PetResearchCardComponent"
-slot12 = slot12(slot14)
-slot13 = slot3.LightClass
-slot15 = "PetResearchCtrl"
-slot16 = slot4
-slot13 = slot13(slot15, slot16)
-slot14 = {}
-slot15 = slot0.PET_RESEARCH_COUNTRY_REWARD_STATUS_CHANGE
-slot16 = {
+slot12 = slot3.LightClass
+slot14 = "PetResearchCtrl"
+slot15 = slot4
+slot12 = slot12(slot14, slot15)
+slot13 = {}
+slot14 = slot0.PET_RESEARCH_COUNTRY_REWARD_STATUS_CHANGE
+slot15 = {
 	"onRewardStatusChanged",
 	true
 }
-slot14[slot15] = slot16
-slot15 = slot0.INPUT_DEVICE_CHANGED
-slot16 = {
+slot13[slot14] = slot15
+slot14 = slot0.INPUT_DEVICE_CHANGED
+slot15 = {
 	"onInputDeviceChanged",
 	true
 }
-slot14[slot15] = slot16
-slot15 = slot0.PET_RESEARCH_LEVEL_REWARD_STATUS_CHANGE
-slot16 = {
+slot13[slot14] = slot15
+slot14 = slot0.PET_RESEARCH_LEVEL_REWARD_STATUS_CHANGE
+slot15 = {
 	"onPetRewardStatusChanged",
 	true
 }
-slot14[slot15] = slot16
-slot15 = slot0.PET_RESEARCH_PET_NEW_LABEL_STATUS_CHANGE
-slot16 = {
+slot13[slot14] = slot15
+slot14 = slot0.PET_RESEARCH_PET_NEW_LABEL_STATUS_CHANGE
+slot15 = {
 	"onPetNewStatusChanged",
 	true
 }
-slot14[slot15] = slot16
-slot15 = slot0.PET_RESEARCH_FORM_DISPLAY_CHANGE
-slot16 = {
+slot13[slot14] = slot15
+slot14 = slot0.PET_RESEARCH_FORM_DISPLAY_CHANGE
+slot15 = {
 	"onPetDisplayChanged",
 	true
 }
-slot14[slot15] = slot16
-slot13.messages = slot14
+slot13[slot14] = slot15
+slot12.messages = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -90,11 +87,8 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-8, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.getBasePetPrototypeId
-	slot4 = slot1.templateId
-	slot2 = slot2(slot4)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot1.templateId
 	--- END OF BLOCK #1 ---
 
 	slot2 = if not slot2 then
@@ -104,14 +98,14 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 9-9, warpins: 2 ---
+	--- BLOCK #2 6-6, warpins: 2 ---
 	slot2 = nil
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-35, warpins: 2 ---
+	--- BLOCK #3 7-32, warpins: 2 ---
 	slot0.focusTemplateId = slot2
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -182,9 +176,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onCreate = slot14
+slot12.onCreate = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -234,10 +228,32 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.setScrollPosLocalCache = slot14
+slot12.setScrollPosLocalCache = slot13
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = slot1.countryId
+	slot3 = slot0.model
+	slot3 = slot3.areaId
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-12, warpins: 2 ---
 	slot2 = slot0.petResearch
 	slot4 = slot2
 	slot2 = slot2.onPetDisplayChanged
@@ -246,15 +262,15 @@ slot14 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot13.onPetDisplayChanged = slot14
+slot12.onPetDisplayChanged = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getScrollPosCachePath
@@ -313,9 +329,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.getScrollPosLocalCache = slot14
+slot12.getScrollPosLocalCache = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -347,9 +363,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.getScrollPosCachePath = slot14
+slot12.getScrollPosCachePath = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -374,9 +390,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.setScrollIndexLocalCache = slot14
+slot12.setScrollIndexLocalCache = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -401,9 +417,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.getScrollIndexLocalCache = slot14
+slot12.getScrollIndexLocalCache = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-56, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
@@ -529,7 +545,7 @@ slot14 = function(slot0)
 	slot3 = slot3.btnOverviewUButton
 
 	slot4 = function()
-		--- BLOCK #0 1-16, warpins: 1 ---
+		--- BLOCK #0 1-18, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -546,6 +562,23 @@ slot14 = function(slot0)
 		slot4 = PetResearchUtils
 		slot4 = slot4.tryOpenPetResearchDetail
 		slot3.clickFunc = slot4
+
+		slot4 = function(slot0)
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot1 = PetResearchUtils
+			slot1 = slot1.savePetShowTab
+			slot3 = slot0
+
+			slot1(slot3)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot3.switchTabCallback = slot4
 
 		slot0(slot2, slot3)
 
@@ -575,9 +608,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.addListener = slot14
+slot12.addListener = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petResearch
 	--- END OF BLOCK #0 ---
@@ -623,9 +656,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onRewardStatusChanged = slot14
+slot12.onRewardStatusChanged = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -636,9 +669,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.checkSkipBgmAttenuation = slot14
+slot12.checkSkipBgmAttenuation = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshBgmState
@@ -682,7 +715,7 @@ slot14 = function(slot0, slot1)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
@@ -693,33 +726,52 @@ slot14 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 19-22, warpins: 1 ---
+	--- BLOCK #4 19-21, warpins: 1 ---
+	slot2 = slot0._skipNextVisibleRefresh
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-24, warpins: 1 ---
+	slot2 = nil
+	slot0._skipNextVisibleRefresh = slot2
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 25-28, warpins: 1 ---
 	slot2 = slot0.petResearch
 	slot4 = slot2
 	slot2 = slot2.onUICtrlVisible
 
 	slot2(slot4)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 23-23, warpins: 3 ---
+	--- BLOCK #7 29-29, warpins: 4 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot13.onVisibleChange = slot14
+slot12.onVisibleChange = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.petResearch
 	slot4 = slot2
@@ -740,9 +792,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onPetRewardStatusChanged = slot14
+slot12.onPetRewardStatusChanged = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.petResearch
 	slot3 = slot1
@@ -757,9 +809,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onPetNewStatusChanged = slot14
+slot12.onPetNewStatusChanged = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -768,9 +820,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshBgmState = slot14
+slot12.refreshBgmState = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Vector2
 	slot3 = 0
@@ -785,9 +837,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.initGamepadNav = slot14
+slot12.initGamepadNav = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.petResearch
 
@@ -814,9 +866,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.refreshRewardFocusNav = slot14
+slot12.refreshRewardFocusNav = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.tabList
 	slot2 = slot0.tabCurNavIndex
@@ -860,9 +912,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.selectTab = slot14
+slot12.selectTab = slot13
 
-slot14 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -871,9 +923,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot13.setPetListNav = slot14
+slot12.setPetListNav = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -882,9 +934,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.setFinalRewardNav = slot14
+slot12.setFinalRewardNav = slot13
 
-slot14 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -893,9 +945,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot13.setRewardListNav = slot14
+slot12.setRewardListNav = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -931,9 +983,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onInputDeviceChanged = slot14
+slot12.onInputDeviceChanged = slot13
 
-slot14 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -1080,9 +1132,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.gamepadFocusDefault = slot14
+slot12.gamepadFocusDefault = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -1135,10 +1187,10 @@ slot14 = function(slot0)
 
 end
 
-slot13.onDestroy = slot14
+slot12.onDestroy = slot13
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -1146,6 +1198,40 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot4 = slot0
+	slot2 = slot0.checkUIVisible
+	slot2 = slot2(slot4)
+	slot2 = not slot2
+	slot0._skipNextVisibleRefresh = slot2
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-15, warpins: 1 ---
+	slot2 = slot1.templateId
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	slot2 = nil
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-26, warpins: 2 ---
+	slot0.focusTemplateId = slot2
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -1153,16 +1239,16 @@ slot14 = function(slot0, slot1)
 	slot4 = slot2
 	slot2 = slot2.checkUIOpen
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 15-21, warpins: 1 ---
+	--- BLOCK #4 27-33, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -1172,12 +1258,12 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #2 22-31, warpins: 2 ---
+	--- BLOCK #5 34-43, warpins: 2 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.initData
@@ -1192,15 +1278,15 @@ slot14 = function(slot0, slot1)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot13.onOpen = slot14
+slot12.onOpen = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -1219,9 +1305,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshConsoleBarState = slot14
+slot12.refreshConsoleBarState = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1230,9 +1316,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onShow = slot14
+slot12.onShow = slot13
 
-slot14 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1241,9 +1327,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onHide = slot14
+slot12.onHide = slot13
 
-return slot13
+return slot12
 --- END OF BLOCK #0 ---
 
 

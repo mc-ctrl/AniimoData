@@ -122,13 +122,13 @@ slot6 = function(slot0)
 end
 
 slot7 = {
-	[""] = "\\v",
-	[""] = "\\f",
-	["\n"] = "\\n",
-	[""] = "\\b",
-	["\t"] = "\\t",
 	[""] = "\\a",
-	["\r"] = "\\r"
+	["\r"] = "\\r",
+	["\t"] = "\\t",
+	[""] = "\\f",
+	[""] = "\\v",
+	[""] = "\\b",
+	["\n"] = "\\n"
 }
 
 slot8 = function(slot0)
@@ -286,13 +286,13 @@ slot11 = function(slot0, slot1)
 end
 
 slot12 = {
-	boolean = 2,
-	userdata = 6,
-	["function"] = 5,
-	thread = 7,
+	table = 4,
 	string = 3,
 	number = 1,
-	table = 4
+	boolean = 2,
+	userdata = 6,
+	thread = 7,
+	["function"] = 5
 }
 
 slot13 = function(slot0, slot1)
@@ -2047,60 +2047,57 @@ end
 slot22.putValue = slot25
 
 slot25 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = _G_IsDebugMode
+
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-3, warpins: 1 ---
-	slot1 = {}
+	--- BLOCK #1 4-5, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 4-8, warpins: 2 ---
-	slot3 = getmetatable
-	slot5 = slot0
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 9-11, warpins: 1 ---
-	slot4 = slot0._AccessControl_
+	--- BLOCK #2 6-6, warpins: 1 ---
+	return slot0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-8, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	slot4 = if slot4 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 12-18, warpins: 1 ---
-	slot4 = AccessControl
-	slot6 = slot4
-	slot4 = slot4.getRawTable
-	slot7 = slot0
-	slot4 = slot4(slot6, slot7)
-	slot0 = slot4
+	--- BLOCK #4 9-9, warpins: 1 ---
+	slot1 = {}
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-20, warpins: 2 ---
+	--- BLOCK #5 10-14, warpins: 2 ---
+	slot3 = getmetatable
+	slot5 = slot0
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
 	slot3 = if slot3 then
@@ -2110,8 +2107,8 @@ slot25 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 21-23, warpins: 1 ---
-	slot4 = slot0._BddData_
+	--- BLOCK #6 15-17, warpins: 1 ---
+	slot4 = slot0._AccessControl_
 	--- END OF BLOCK #6 ---
 
 	slot4 = if slot4 then
@@ -2121,136 +2118,169 @@ slot25 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 24-27, warpins: 1 ---
+	--- BLOCK #7 18-24, warpins: 1 ---
+	slot4 = AccessControl
+	slot6 = slot4
+	slot4 = slot4.getRawTable
+	slot7 = slot0
+	slot4 = slot4(slot6, slot7)
+	slot0 = slot4
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 25-26, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 27-29, warpins: 1 ---
+	slot4 = slot0._BddData_
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 30-33, warpins: 1 ---
 	slot4 = bdd2DeepTable
 	slot6 = slot0
 	slot4 = slot4(slot6)
 	slot0 = slot4
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 28-30, warpins: 4 ---
-	slot4 = slot1.depth
-	--- END OF BLOCK #8 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 31-31, warpins: 1 ---
-	slot4 = 3
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 32-34, warpins: 2 ---
-	slot5 = slot1.newline
 	--- END OF BLOCK #10 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 35-40, warpins: 1 ---
-	slot5 = os
-	slot5 = slot5.getenv
-	slot7 = "OS"
-	slot5 = slot5(slot7)
+	--- BLOCK #11 34-36, warpins: 4 ---
+	slot4 = slot1.depth
 	--- END OF BLOCK #11 ---
 
-	if slot5 == "Windows_NT" then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 41-42, warpins: 1 ---
-	slot5 = "\n"
+	--- BLOCK #12 37-37, warpins: 1 ---
+	slot4 = 3
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 43-43, warpins: 1 ---
-	slot5 = " "
+	--- BLOCK #13 38-40, warpins: 2 ---
+	slot5 = slot1.newline
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #14 44-46, warpins: 3 ---
-	slot6 = slot1.indent
+	--- BLOCK #14 41-46, warpins: 1 ---
+	slot5 = os
+	slot5 = slot5.getenv
+	slot7 = "OS"
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #14 ---
 
-	slot6 = if not slot6 then
+	if slot5 == "Windows_NT" then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 47-47, warpins: 1 ---
-	slot6 = "  "
+	--- BLOCK #15 47-48, warpins: 1 ---
+	slot5 = "\n"
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 48-50, warpins: 2 ---
-	slot7 = slot1.maxlen
+	--- BLOCK #16 49-49, warpins: 1 ---
+	slot5 = " "
 	--- END OF BLOCK #16 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #17
-	else
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 50-52, warpins: 3 ---
+	slot6 = slot1.indent
+	--- END OF BLOCK #17 ---
+
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 51-51, warpins: 1 ---
+	--- BLOCK #18 53-53, warpins: 1 ---
+	slot6 = "  "
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 54-56, warpins: 2 ---
+	slot7 = slot1.maxlen
+	--- END OF BLOCK #19 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 57-57, warpins: 1 ---
 	slot7 = 1000
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #18 52-57, warpins: 2 ---
+	--- BLOCK #21 58-63, warpins: 2 ---
 	slot8 = slot1.nometa
 	slot9 = slot1.process
 	slot10 = slot1.noReplace
 	slot10 = not slot10
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #21 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #19 58-63, warpins: 1 ---
+	--- BLOCK #22 64-69, warpins: 1 ---
 	slot11 = processRecursive
 	slot13 = slot9
 	slot14 = slot0
 	slot15 = {}
 	slot11 = slot11(slot13, slot14, slot15)
 	slot0 = slot11
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #20 64-99, warpins: 2 ---
+	--- BLOCK #23 70-105, warpins: 2 ---
 	slot11 = setmetatable
 	slot13 = {
 		level = 0
@@ -2289,134 +2319,52 @@ slot25 = function(slot0, slot1, slot2)
 	slot12(slot14, slot15)
 
 	slot12 = _G_IsDebugMode
-	--- END OF BLOCK #20 ---
-
-	slot12 = if slot12 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #21 100-110, warpins: 1 ---
-	slot12 = table
-	slot12 = slot12.concat
-	slot14 = slot11.buffer
-	slot12 = slot12(slot14)
-	slot13 = string
-	slot13 = slot13.len
-	slot15 = slot12
-	slot13 = slot13(slot15)
-	slot14 = slot11.maxlen
-	--- END OF BLOCK #21 ---
-
-	if slot14 < slot13 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #22 111-116, warpins: 1 ---
-	slot13 = debug
-	slot13 = slot13.getinfo
-	slot15 = 3
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #22 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 117-117, warpins: 1 ---
-	slot13 = {}
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
 
 
-	--- BLOCK #24 118-123, warpins: 2 ---
-	slot14 = debug
-	slot14 = slot14.getinfo
-	slot16 = 2
-	slot14 = slot14(slot16)
+	--- BLOCK #24 106-107, warpins: 1 ---
 	--- END OF BLOCK #24 ---
 
-	slot14 = if not slot14 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #25
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 124-124, warpins: 1 ---
-	slot14 = {}
-	--- END OF BLOCK #25 ---
+	--- BLOCK #25 108-113, warpins: 2 ---
+	slot12 = table
+	slot12 = slot12.concat
+	slot14 = slot11.buffer
+	slot12 = slot12(slot14)
 
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 125-131, warpins: 2 ---
-	slot15 = LoggerManager
-	slot15 = slot15.checkLogger
-	slot17 = LoggerConst
-	slot17 = slot17.ERROR
-	slot15 = slot15(slot17)
-	--- END OF BLOCK #26 ---
-
-	slot15 = if slot15 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 132-144, warpins: 1 ---
-	slot15 = logger
-	slot17 = slot15
-	slot15 = slot15.error
-	slot18 = "inspect table to string too long, len=%s, %s:%s, %s:%s"
-	slot19 = string
-	slot19 = slot19.len
-	slot21 = slot12
-	slot19 = slot19(slot21)
-	slot20 = slot13.short_src
-	slot21 = slot13.currentline
-	slot22 = slot14.short_src
-	slot23 = slot14.currentline
-
-	slot15(slot17, slot18, slot19, slot20, slot21, slot22, slot23)
-
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 145-146, warpins: 3 ---
 	return slot12
 
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #25 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #29 147-150, warpins: 1 ---
+	--- BLOCK #26 114-117, warpins: 1 ---
 	slot12 = table
 	slot12 = slot12.concat
 	slot14 = slot11.buffer
 
 	return slot12(slot14)
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #30 151-151, warpins: 2 ---
+	--- BLOCK #27 118-118, warpins: 2 ---
 	return
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #27 ---
 
 
 

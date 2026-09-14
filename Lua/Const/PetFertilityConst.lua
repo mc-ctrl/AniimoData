@@ -1,4 +1,4 @@
---- BLOCK #0 1-177, warpins: 1 ---
+--- BLOCK #0 1-201, warpins: 1 ---
 slot0 = require
 slot2 = "Const.AddressDataConst"
 slot0 = slot0(slot2)
@@ -12,9 +12,9 @@ slot3 = {}
 slot4 = false
 slot3.IsRecoverCatchBossNew = slot4
 slot4 = {
+	GeneralCubeItemId = 0,
 	ShineChampionItemId = 110006,
-	ChampionItemId = 110003,
-	GeneralCubeItemId = 0
+	ChampionItemId = 110003
 }
 slot3.PetFertilityCubeIds = slot4
 slot4 = {}
@@ -26,18 +26,19 @@ slot5 = slot5.ShineChampionItemId
 slot4[1] = slot5
 slot3.FxGroupKeys = slot4
 slot4 = {
-	ChampionCubeOut = "ChampionCubeOut",
-	ChampionCubeIn = "ChampionCubeIn",
-	GeneralEggOut = "GeneralEggOut",
-	GeneralEggIn = "GeneralEggIn",
-	GeneralCubeOut = "GeneralCubeOut",
-	GeneralCubeIn = "GeneralCubeIn",
+	AllCubeSwitch = "AllCubeSwitch",
 	ShineChampionEggOut = "ShineChampionEggOut",
 	ShineChampionEggIn = "ShineChampionEggIn",
 	ShineChampionCubeOut = "ShineChampionCubeOut",
 	ShineChampionCubeIn = "ShineChampionCubeIn",
 	ChampionEggOut = "ChampionEggOut",
-	ChampionEggIn = "ChampionEggIn"
+	ChampionEggIn = "ChampionEggIn",
+	ChampionCubeOut = "ChampionCubeOut",
+	ChampionCubeIn = "ChampionCubeIn",
+	GeneralEggOut = "GeneralEggOut",
+	GeneralEggIn = "GeneralEggIn",
+	GeneralCubeOut = "GeneralCubeOut",
+	GeneralCubeIn = "GeneralCubeIn"
 }
 slot3.FxKeys = slot4
 slot4 = {}
@@ -89,6 +90,10 @@ slot5 = slot3.FxKeys
 slot5 = slot5.ShineChampionEggOut
 slot6 = slot0.FERTILITY_CUBEFX_SHINE_CHAMPIONEGG_OUT
 slot4[slot5] = slot6
+slot5 = slot3.FxKeys
+slot5 = slot5.AllCubeSwitch
+slot6 = slot0.FERTILITY_CUBEFX_ALLCUBE_SWITCH
+slot4[slot5] = slot6
 slot3.FxResIds = slot4
 slot4 = {}
 slot5 = slot3.PetFertilityCubeIds
@@ -110,15 +115,15 @@ slot7 = slot3.FxKeys
 slot7 = slot7.GeneralEggOut
 slot6.EggOutKey = slot7
 slot7 = {
-	-0.376,
-	0.008,
-	-0.097
+	0,
+	0,
+	0
 }
 slot6.EggInPos = slot7
 slot7 = {
-	-0.376,
-	0.008,
-	-0.097
+	0,
+	0,
+	0
 }
 slot6.EggOutPos = slot7
 slot4[slot5] = slot6
@@ -141,15 +146,15 @@ slot7 = slot3.FxKeys
 slot7 = slot7.ChampionEggOut
 slot6.EggOutKey = slot7
 slot7 = {
-	-0.376,
-	0.008,
-	-0.097
+	0,
+	0,
+	0
 }
 slot6.EggInPos = slot7
 slot7 = {
-	-0.376,
-	0.008,
-	-0.097
+	0,
+	0,
+	0
 }
 slot6.EggOutPos = slot7
 slot4[slot5] = slot6
@@ -172,15 +177,15 @@ slot7 = slot3.FxKeys
 slot7 = slot7.ShineChampionEggOut
 slot6.EggOutKey = slot7
 slot7 = {
-	-0.376,
-	0.008,
-	-0.097
+	0,
+	0,
+	0
 }
 slot6.EggInPos = slot7
 slot7 = {
-	-0.376,
-	0.008,
-	-0.097
+	0,
+	0,
+	0
 }
 slot6.EggOutPos = slot7
 slot4[slot5] = slot6
@@ -256,8 +261,42 @@ slot5 = {
 }
 slot4.chooseCubeCameraPos = slot5
 slot3.ChooseCubeTransConfigs = slot4
-slot4 = 0.5
+slot4 = 0.1
 slot3.CubeOutTweenTime = slot4
+slot4 = 0.01
+slot3.CubeSwitchOutDelayTime = slot4
+slot4 = 0.1
+slot3.CubeSwitchNewCubeDelayTime = slot4
+slot4 = 0.1
+slot3.WaitCubeSwitchEffectTime = slot4
+slot4 = 1
+slot3.CubeSwitchEffectTime = slot4
+slot4 = 0.2
+slot3.CubeSwitchEffectScale = slot4
+slot4 = {
+	-0.032,
+	0.028,
+	0.057
+}
+slot3.CubeSwitchEffectOffsetPos = slot4
+slot4 = {
+	localScale = 1.65
+}
+slot5 = {
+	0,
+	-0.35,
+	0
+}
+slot4.localPos = slot5
+slot5 = {
+	0,
+	0,
+	90
+}
+slot4.localRot = slot5
+slot3.ChooseCubeggTransConfigs = slot4
+slot4 = slot0.FERTILITY_CUBE_FALLBACK_RESGG_RES
+slot3.fallbackEggResId = slot4
 
 return slot3
 --- END OF BLOCK #0 ---

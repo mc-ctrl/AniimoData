@@ -433,7 +433,7 @@ end
 slot4.onCreate = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.backBtn
 
 	slot2 = function()
@@ -471,11 +471,7 @@ slot12 = function(slot0)
 
 	end
 
-	slot6 = nil
-	slot7 = slot0.backBtn
-	slot7 = slot7.gameObject
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
+	slot1(slot3, slot4, slot5)
 
 	slot1 = slot0.view
 	slot1 = slot1.verticalUButton

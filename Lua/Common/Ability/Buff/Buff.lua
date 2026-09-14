@@ -1,4 +1,4 @@
---- BLOCK #0 1-98, warpins: 1 ---
+--- BLOCK #0 1-100, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -27,13 +27,13 @@ slot8 = require
 slot10 = "Common.Ability.Attribute.AttributeProcessCustomData"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Ability.CombatCasterInfo"
+slot11 = "Common.Ability.AbilityObject"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Ability.AbilityObject"
+slot12 = "Data.buff_config_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.buff_config_data"
+slot13 = "Common.Const.Const"
 slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Core.Log.LoggerManager"
@@ -43,7 +43,7 @@ slot15 = "Common.Ability.CombatLogger"
 slot13 = slot13(slot15)
 slot14 = slot2.LiteClass
 slot16 = "Buff"
-slot17 = slot10
+slot17 = slot9
 slot14 = slot14(slot16, slot17)
 slot15 = pg
 slot16 = ToBool
@@ -435,6 +435,61 @@ slot17 = function(slot0, slot1)
 end
 
 slot14.destroy = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.owner
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.owner
+	slot2 = slot2.subject
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-19, warpins: 2 ---
+	slot2 = slot0.owner
+	slot2 = slot2.subject
+	slot4 = slot2
+	slot2 = slot2.notify
+	slot5 = AbilityConst
+	slot5 = slot5.COMBAT_EVENT_ON_BUFF_LIFE
+	slot6 = slot1
+	slot7 = slot0.buffData
+	slot7 = slot7.templateId
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot14.notifyBuffLifeEvent = slot17
 
 slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -1001,22 +1056,23 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #15 73-79, warpins: 1 ---
+	--- BLOCK #15 73-80, warpins: 1 ---
 	slot10 = slot0.owner
 	slot10 = slot10.eModel
-	slot10 = slot10.effectComponent
 	slot12 = slot10
 	slot10 = slot10.ChangeToPermanent
-	slot13 = slot9
+	slot13 = Const
+	slot13 = slot13.COMPONENT_INDEX_EFFECT
+	slot14 = slot9
 
-	slot10(slot12, slot13)
+	slot10(slot12, slot13, slot14)
 
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 80-81, warpins: 2 ---
+	--- BLOCK #16 81-82, warpins: 2 ---
 	slot10 = nil
 	slot1[slot7] = slot10
 	--- END OF BLOCK #16 ---
@@ -1024,7 +1080,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 82-83, warpins: 2 ---
+	--- BLOCK #17 83-84, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -1032,7 +1088,7 @@ slot17 = function(slot0)
 	GO OUT TO BLOCK #18
 
 
-	--- BLOCK #18 84-90, warpins: 2 ---
+	--- BLOCK #18 85-91, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.stopAllEffects
 
@@ -1049,7 +1105,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #19 91-97, warpins: 1 ---
+	--- BLOCK #19 92-98, warpins: 1 ---
 	slot1 = {}
 	slot0.bindEffects = slot1
 	slot1 = ipairs
@@ -1061,7 +1117,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #20 98-110, warpins: 1 ---
+	--- BLOCK #20 99-111, warpins: 1 ---
 	slot6 = slot0.owner
 	slot8 = slot6
 	slot6 = slot6.playEffect
@@ -1163,7 +1219,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 111-112, warpins: 2 ---
+	--- BLOCK #21 112-113, warpins: 2 ---
 	--- END OF BLOCK #21 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1171,7 +1227,7 @@ slot17 = function(slot0)
 	GO OUT TO BLOCK #22
 
 
-	--- BLOCK #22 113-116, warpins: 3 ---
+	--- BLOCK #22 114-117, warpins: 3 ---
 	slot1 = slot0.buffTemplate
 	slot1 = slot1.inheritGroupSound
 	--- END OF BLOCK #22 ---
@@ -1183,7 +1239,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #23 117-120, warpins: 1 ---
+	--- BLOCK #23 118-121, warpins: 1 ---
 	slot1 = slot0.owner
 	slot1 = slot1.playSoundEvent
 	--- END OF BLOCK #23 ---
@@ -1195,7 +1251,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #24 121-125, warpins: 1 ---
+	--- BLOCK #24 122-126, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.buffTemplate
 	slot3 = slot3.inheritGroupSound
@@ -1205,7 +1261,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #25 126-135, warpins: 1 ---
+	--- BLOCK #25 127-136, warpins: 1 ---
 	slot6 = slot0.owner
 	slot8 = slot6
 	slot6 = slot6.stopSoundEvent
@@ -1225,7 +1281,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 136-137, warpins: 2 ---
+	--- BLOCK #26 137-138, warpins: 2 ---
 	--- END OF BLOCK #26 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1233,7 +1289,7 @@ slot17 = function(slot0)
 	GO OUT TO BLOCK #27
 
 
-	--- BLOCK #27 138-143, warpins: 3 ---
+	--- BLOCK #27 139-144, warpins: 3 ---
 	slot1 = slot0.buffData
 	slot3 = slot1
 	slot1 = slot1.isInherit
@@ -1247,11 +1303,19 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #28 144-149, warpins: 1 ---
+	--- BLOCK #28 145-156, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.executeTriggers
 	slot4 = AbilityConst
 	slot4 = slot4.TRIGGER_ON_BUFF_START
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.notifyBuffLifeEvent
+	slot4 = AbilityConst
+	slot4 = slot4.BUFF_LIFE_EVENT_TYPE
+	slot4 = slot4.START
 
 	slot1(slot3, slot4)
 
@@ -1260,7 +1324,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #29 150-154, warpins: 1 ---
+	--- BLOCK #29 157-161, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.executeTriggers
 	slot4 = AbilityConst
@@ -1273,7 +1337,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 155-163, warpins: 2 ---
+	--- BLOCK #30 162-170, warpins: 2 ---
 	slot1 = slot0.owner
 	slot3 = slot1
 	slot1 = slot1.postComponentMethod
@@ -1351,11 +1415,19 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-14, warpins: 1 ---
+	--- BLOCK #1 10-20, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.executeTriggers
 	slot4 = AbilityConst
 	slot4 = slot4.TRIGGER_ON_BUFF_DESTROY
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.notifyBuffLifeEvent
+	slot4 = AbilityConst
+	slot4 = slot4.BUFF_LIFE_EVENT_TYPE
+	slot4 = slot4.DESTROY
 
 	slot1(slot3, slot4)
 
@@ -1364,7 +1436,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-18, warpins: 2 ---
+	--- BLOCK #2 21-24, warpins: 2 ---
 	slot1 = slot0.buffTemplate
 	slot1 = slot1.inheritGroupEffect
 	--- END OF BLOCK #2 ---
@@ -1376,7 +1448,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-22, warpins: 1 ---
+	--- BLOCK #3 25-28, warpins: 1 ---
 	slot1 = slot0.owner
 	slot1 = slot1.getEffectPlayTime
 	--- END OF BLOCK #3 ---
@@ -1388,7 +1460,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #4 23-27, warpins: 1 ---
+	--- BLOCK #4 29-33, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.buffTemplate
 	slot3 = slot3.inheritGroupEffect
@@ -1398,7 +1470,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #5 28-30, warpins: 1 ---
+	--- BLOCK #5 34-36, warpins: 1 ---
 	slot6 = slot5.effectId
 	--- END OF BLOCK #5 ---
 
@@ -1409,14 +1481,14 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #6 31-31, warpins: 1 ---
+	--- BLOCK #6 37-37, warpins: 1 ---
 	slot6 = slot5
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 32-43, warpins: 2 ---
+	--- BLOCK #7 38-49, warpins: 2 ---
 	slot7 = slot0.owner
 	slot9 = slot7
 	slot7 = slot7.getEffectPlayTime
@@ -1436,7 +1508,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #8 44-51, warpins: 1 ---
+	--- BLOCK #8 50-57, warpins: 1 ---
 	slot8 = CombatLogger
 	slot8 = slot8.debug
 	slot10 = "set inheritGroupEffect playTime"
@@ -1452,7 +1524,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 52-60, warpins: 2 ---
+	--- BLOCK #9 58-66, warpins: 2 ---
 	slot8 = pg
 	slot8 = slot8.global
 	slot8 = slot8.abilityMgr
@@ -1469,7 +1541,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #10 61-68, warpins: 1 ---
+	--- BLOCK #10 67-74, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.global
 	slot8 = slot8.abilityMgr
@@ -1483,7 +1555,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 69-83, warpins: 2 ---
+	--- BLOCK #11 75-89, warpins: 2 ---
 	slot8 = pg
 	slot8 = slot8.global
 	slot8 = slot8.abilityMgr
@@ -1506,7 +1578,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 84-85, warpins: 2 ---
+	--- BLOCK #12 90-91, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1514,7 +1586,7 @@ slot17 = function(slot0)
 	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #13 86-89, warpins: 3 ---
+	--- BLOCK #13 92-95, warpins: 3 ---
 	slot1 = slot0.buffTemplate
 	slot1 = slot1.inheritGroupSound
 	--- END OF BLOCK #13 ---
@@ -1526,7 +1598,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #14 90-93, warpins: 1 ---
+	--- BLOCK #14 96-99, warpins: 1 ---
 	slot1 = slot0.owner
 	slot1 = slot1.stopSoundEvent
 	--- END OF BLOCK #14 ---
@@ -1538,7 +1610,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #15 94-98, warpins: 1 ---
+	--- BLOCK #15 100-104, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.buffTemplate
 	slot3 = slot3.inheritGroupEffect
@@ -1548,7 +1620,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 99-103, warpins: 1 ---
+	--- BLOCK #16 105-109, warpins: 1 ---
 	slot6 = slot0.owner
 	slot8 = slot6
 	slot6 = slot6.stopSoundEvent
@@ -1561,7 +1633,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 104-105, warpins: 2 ---
+	--- BLOCK #17 110-111, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1569,7 +1641,7 @@ slot17 = function(slot0)
 	GO OUT TO BLOCK #18
 
 
-	--- BLOCK #18 106-118, warpins: 3 ---
+	--- BLOCK #18 112-124, warpins: 3 ---
 	slot1 = AbilityObject
 	slot1 = slot1.clearObject
 	slot3 = slot0
@@ -1592,14 +1664,14 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #19 119-119, warpins: 1 ---
+	--- BLOCK #19 125-125, warpins: 1 ---
 	slot2 = slot0.owner
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 120-121, warpins: 2 ---
+	--- BLOCK #20 126-127, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
 	slot3 = if slot2 then
@@ -1609,7 +1681,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #21 122-124, warpins: 1 ---
+	--- BLOCK #21 128-130, warpins: 1 ---
 	slot3 = slot2.getCombatContext
 	--- END OF BLOCK #21 ---
 
@@ -1620,7 +1692,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #22 125-128, warpins: 1 ---
+	--- BLOCK #22 131-134, warpins: 1 ---
 	slot5 = slot2
 	slot3 = slot2.getCombatContext
 	slot6 = slot1
@@ -1630,7 +1702,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 129-130, warpins: 3 ---
+	--- BLOCK #23 135-136, warpins: 3 ---
 	--- END OF BLOCK #23 ---
 
 	slot3 = if slot3 then
@@ -1640,7 +1712,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #24 131-134, warpins: 1 ---
+	--- BLOCK #24 137-140, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.returnCombatContext
 	slot7 = slot3
@@ -1652,7 +1724,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 135-142, warpins: 2 ---
+	--- BLOCK #25 141-148, warpins: 2 ---
 	slot4 = slot0.owner
 	slot6 = slot4
 	slot4 = slot4.postComponentMethod
@@ -1736,7 +1808,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-44, warpins: 2 ---
+	--- BLOCK #5 29-48, warpins: 2 ---
 	slot2.abilityStoreType = slot3
 	slot2 = slot0.combatContext
 	slot3 = slot0.buffData
@@ -1746,6 +1818,10 @@ slot17 = function(slot0)
 	slot2 = slot2.srcCombatContextId
 	slot3 = slot0.combatContext
 	slot3.srcCombatContextId = slot2
+	slot3 = slot0.combatContext
+	slot4 = slot0.buffData
+	slot4 = slot4.castingCombatContextId
+	slot3.castingCombatContextId = slot4
 	slot3 = pg
 	slot3 = slot3.getEntity
 	slot5 = slot0.buffData
@@ -1760,31 +1836,21 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #6 45-45, warpins: 1 ---
+	--- BLOCK #6 49-49, warpins: 1 ---
 	slot3 = slot0.owner
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 46-70, warpins: 2 ---
+	--- BLOCK #7 50-64, warpins: 2 ---
 	slot4 = slot0.combatContext
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.abilityMgr
-	slot5 = slot5.constCasterInfoPool
-	slot7 = slot5
-	slot5 = slot5.get
-	slot8 = true
-	slot5 = slot5(slot7, slot8)
-	slot4.constCasterInfo = slot5
-	slot4 = slot0.combatContext
-	slot4 = slot4.constCasterInfo
 	slot6 = slot4
-	slot4 = slot4.ctor
-	slot7 = slot3.actorId
+	slot4 = slot4.setConstCasterInfo
+	slot7 = nil
+	slot8 = slot3.actorId
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.combatContext
 	slot5 = nil
@@ -1804,7 +1870,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #8 71-73, warpins: 1 ---
+	--- BLOCK #8 65-67, warpins: 1 ---
 	slot4 = slot3.getCombatContext
 	--- END OF BLOCK #8 ---
 
@@ -1815,7 +1881,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #9 74-77, warpins: 1 ---
+	--- BLOCK #9 68-71, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.getCombatContext
 	slot7 = slot2
@@ -1825,7 +1891,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 78-79, warpins: 3 ---
+	--- BLOCK #10 72-73, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
 	slot4 = if slot4 then
@@ -1835,10 +1901,10 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #11 80-86, warpins: 1 ---
+	--- BLOCK #11 74-80, warpins: 1 ---
 	slot5 = slot0.combatContext
-	slot6 = slot4.castingCombatContextId
-	slot5.castingCombatContextId = slot6
+	slot6 = slot4.srcCastingCombatContextId
+	slot5.srcCastingCombatContextId = slot6
 	slot7 = slot3
 	slot5 = slot3.addCombatContextRefCnt
 	slot8 = slot4
@@ -1850,7 +1916,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 87-87, warpins: 2 ---
+	--- BLOCK #12 81-81, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 
@@ -1860,17 +1926,93 @@ end
 
 slot14.initCombatContext = slot17
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.executeTriggers
-	slot4 = AbilityConst
-	slot4 = slot4.TRIGGER_ON_BUFF_LAYER_CHANGE
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.executeTriggers
+	slot6 = AbilityConst
+	slot6 = slot6.TRIGGER_ON_BUFF_LAYER_CHANGE
 
-	slot1(slot3, slot4)
+	slot3(slot5, slot6)
 
-	return
 	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot1 < slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-19, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.notifyBuffLifeEvent
+	slot6 = AbilityConst
+	slot6 = slot6.BUFF_LIFE_EVENT_TYPE
+	slot6 = slot6.LAYER_INCREASE
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot2 < slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-27, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.notifyBuffLifeEvent
+	slot6 = AbilityConst
+	slot6 = slot6.BUFF_LIFE_EVENT_TYPE
+	slot6 = slot6.LAYER_DECREASE
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 28-28, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 

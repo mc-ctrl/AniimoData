@@ -1,14 +1,14 @@
 --- BLOCK #0 1-64, warpins: 1 ---
 slot0 = {
+	SELF_CIRCLE_EFFECT_RES = "Eff_Common_Target_Green",
+	PARTNER_CIRCLE_EFFECT_RES = "Eff_Common_Target_Blue",
 	ENEMY_CIRCLE_EFFECT_RES = "Eff_Common_Target_Red",
 	ROGUE_EXCHANGE_REWARD_NPC_EFF = "Eff_Monster_Robot_Normal_Atk_Gauntlet_Skill_Summon_Self_01_Loop",
 	Eff_Level_BossRush_UI_BossRedEye = "Eff_Level_BossRush_UI_BossRedEye",
 	Eff_UI_PetExchange_Hand_R = "Eff_UI_PetExchange_Hand_R",
 	Eff_UI_PetExchange_Hand_L = "Eff_UI_PetExchange_Hand_L",
 	PET_EXCHANGE_LINK = "Eff_UI_PetExchange_Hand_Line",
-	EFF_PARMON_STICKON = "Eff_Parmon_10261_StickOn",
-	SELF_CIRCLE_EFFECT_RES = "Eff_Common_Target_Green",
-	PARTNER_CIRCLE_EFFECT_RES = "Eff_Common_Target_Blue"
+	EFF_PARMON_STICKON = "Eff_Parmon_10261_StickOn"
 }
 slot1 = {
 	"Eff_Parmon_10023_Boss_ScreenUV",
@@ -16,9 +16,9 @@ slot1 = {
 }
 slot0.CUSTOM_PRELOAD_EFF_IDS = slot1
 slot1 = {
+	green = "Eff_Common_Target_Green",
 	blue = "Eff_Common_Target_Blue",
-	red = "Eff_Common_Target_Red",
-	green = "Eff_Common_Target_Green"
+	red = "Eff_Common_Target_Red"
 }
 slot0.CIRCLE_EFFECT = slot1
 slot1 = {
@@ -40,89 +40,89 @@ slot1 = {
 }
 slot0.QUALITY_EFFECT = slot1
 slot1 = {
-	TOP_END = "Eff_Env_GrabEgg_Transmit_BEgg_Clouds_KeyItem_End",
-	BOTTOM_LOOP = "Eff_Env_GrabEgg_Transmit_BEgg_KeyItem_Loop",
 	BOTTOM_START = "Eff_Env_GrabEgg_Transmit_BEgg_KeyItem_Start",
+	TOP_END = "Eff_Env_GrabEgg_Transmit_BEgg_Clouds_KeyItem_End",
 	TOP_LOOP = "Eff_Env_GrabEgg_Transmit_BEgg_Clouds_KeyItem_Loop",
-	BOTTOM_END = "Eff_Env_GrabEgg_Transmit_BEgg_KeyItem_End"
+	BOTTOM_END = "Eff_Env_GrabEgg_Transmit_BEgg_KeyItem_End",
+	BOTTOM_LOOP = "Eff_Env_GrabEgg_Transmit_BEgg_KeyItem_Loop"
 }
 slot0.TRANSPORT_EFFECT = slot1
 slot1 = {
-	"ShinyEffect_Color01",
-	"ShinyEffect_Color02",
-	"ShinyEffect_Color03",
-	"ShinyEffect_Color04",
-	"ShinyEffect_Color05",
-	"ShinyEffect_Color06",
-	"ShinyEffect_Color07",
-	"ShinyEffect_Color08",
-	"ShinyEffect_Color09",
-	"ShinyEffect_Color10",
-	"ShinyEffect_Color11",
-	"ShinyEffect_Color12",
-	"ShinyEffect_Color13",
-	"ShinyEffect_Color14",
-	"ShinyEffect_Color15"
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color01_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color02_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color03_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color04_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color05_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color06_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color07_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color08_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color09_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color10_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color11_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color12_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color13_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color14_PM.asset",
+	"Assets/Res_Export/Character/MaterialPreset/ParmonDye/UniverselShinyEffectPreset/ShinyEffect_Color15_PM.asset"
 }
 slot0.SHINY_EFFECTS = slot1
 slot1 = {
-	ARROW_FULL_LOOP = 1,
-	ARROW_FULL_START = 2
+	ARROW_FULL_START = 2,
+	ARROW_FULL_LOOP = 1
 }
 slot0.EFF_BOW_ATTACK = slot1
 slot1 = {
-	Curve_Target = 2,
-	Straight = 1
+	Straight = 1,
+	Curve_Target = 2
 }
 slot0.EffectMotorType = slot1
 slot1 = {
-	LOW = 2,
-	MIDDLE = 1,
-	HIGH = 0,
 	AUTO = 100,
 	NONE = 4,
-	FUNC = 3
+	FUNC = 3,
+	LOW = 2,
+	MIDDLE = 1,
+	HIGH = 0
 }
 slot0.EFFECT_LEVEL = slot1
 slot1 = {
+	MAIN_PLAYER = 1,
+	SCENE = 7,
+	MISC = 6,
+	FRIEND_PLAYER = 5,
 	ENEMY_PLAYER = 4,
 	MONSTER_BOSS = 3,
 	LOCKED_ENEMY_PLAYER = 2,
-	MAIN_PLAYER = 1,
-	MECHANISM = 8,
-	SCENE = 7,
-	MISC = 6,
-	FRIEND_PLAYER = 5
+	MECHANISM = 8
 }
 slot0.EFFECT_CATEGORY = slot1
 slot1 = {
+	SCENE = 9,
+	MISC = 8,
 	EQUIP = 7,
 	SCREEN = 6,
 	HIT = 5,
 	BUFF = 4,
 	BULLET_SKILL = 3,
 	LINE_SKILL = 2,
-	NORMAL_SKILL = 1,
-	SCENE = 9,
-	MISC = 8
+	NORMAL_SKILL = 1
 }
 slot0.EFFECT_TYPE = slot1
 slot1 = {
-	RIDE_FLY = 10,
-	BODY = 1,
 	DECORATION = 25,
 	NONE = 0,
-	WEAPON = 20
+	WEAPON = 20,
+	RIDE_FLY = 10,
+	BODY = 1
 }
 slot0.EFFECT_APPEARANCE_LOD_TYPE = slot1
 slot1 = {
-	MISC = 4,
-	SCREEN = 6,
 	EQUIP = 3,
 	SKILL = 0,
-	SCENE = 5,
 	HIT = 1,
-	BUFF = 2
+	BUFF = 2,
+	MISC = 4,
+	SCENE = 5,
+	SCREEN = 6
 }
 slot0.MAPPED_EFFECT_TYPE = slot1
 slot1 = {
@@ -132,25 +132,25 @@ slot1 = {
 }
 slot0.EFFECT_LOD_LEVEL = slot1
 slot1 = {
-	Link = 6,
-	Camera = 5,
-	Custom = 4,
 	Model = 3,
 	PositionAgent = 2,
 	Entity = 1,
 	World = 0,
-	Motor = 7
+	Motor = 7,
+	Link = 6,
+	Camera = 5,
+	Custom = 4
 }
 slot0.MountType = slot1
 slot1 = {
-	FollowPosRootRotation = 5,
-	FollowPosRot = 4,
-	FollowPos = 3,
 	OncePosRot = 2,
 	OncePos = 1,
 	Global = 0,
 	AlignEffectBone = 7,
-	OncePosRootRotation = 6
+	OncePosRootRotation = 6,
+	FollowPosRootRotation = 5,
+	FollowPosRot = 4,
+	FollowPos = 3
 }
 slot0.FollowType = slot1
 slot1 = {
@@ -170,11 +170,11 @@ slot1 = {
 }
 slot0.EFFECT_EVENT = slot1
 slot1 = {
-	CHARACTER_EDGE_DISSOLVE = "CharacterEdgeDissolve",
 	DITHERING_FADE_REVERSE = "DitheringFadeReverse",
-	DITHERING_FADE = "DitheringFade",
 	IDYLL_DISSLOVE_INVERSE_2 = "Idyll_dissolve02",
-	IDYLL_DISSLOVE_INVERSE_1 = "Idyll_dissolve01"
+	IDYLL_DISSLOVE_INVERSE_1 = "Idyll_dissolve01",
+	CHARACTER_EDGE_DISSOLVE = "CharacterEdgeDissolve",
+	DITHERING_FADE = "DitheringFade"
 }
 slot0.PRESET_NAME = slot1
 slot1 = 10000
@@ -252,6 +252,8 @@ slot1 = slot1.EffectConfigInfo
 slot1 = slot1.memSize
 slot0.EFFECT_SHARE_MEM_LEN = slot1
 slot1 = {
+	combatRTPCType = 2,
+	forceLodLevel = -1,
 	enableMultipleLoop = 0,
 	syncType = 0,
 	visibleType = 0,

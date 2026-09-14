@@ -1,8 +1,10 @@
---- BLOCK #0 1-10, warpins: 1 ---
+--- BLOCK #0 1-12, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
 slot1 = slot1(slot3)
+slot2 = "homeland"
+slot0.REPORT_SOURCE_HOMELAND = slot2
 
 slot2 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -161,62 +163,94 @@ slot2 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 21-35, warpins: 2 ---
+	--- BLOCK #6 21-29, warpins: 2 ---
 	slot3 = M
 	slot3 = slot3.getChatPlayerInfo
 	slot5 = slot2
 	slot3 = slot3(slot5)
-	slot4 = PlatformNameMaskService
-	slot4 = slot4.getMaskedDisplayName
-	slot6 = {}
-	slot7 = PlatformNameMaskService
-	slot7 = slot7.Action
-	slot7 = slot7.AccusationName
-	slot6.action = slot7
-	slot6.uid = slot2
-	slot6.playerInfo = slot3
+	slot4 = slot0._reportSource
+	slot5 = M
+	slot5 = slot5.REPORT_SOURCE_HOMELAND
 	--- END OF BLOCK #6 ---
 
-	slot7 = if not slot1 then
+	if slot4 == slot5 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 36-37, warpins: 1 ---
+	--- BLOCK #7 30-34, warpins: 1 ---
+	slot4 = PlatformNameMaskService
+	slot4 = slot4.Action
+	slot4 = slot4.HomeCampCustomName
 	--- END OF BLOCK #7 ---
 
-	slot3 = if slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 38-40, warpins: 1 ---
-	slot7 = slot3.playerName
+	--- BLOCK #8 35-37, warpins: 2 ---
+	slot4 = PlatformNameMaskService
+	slot4 = slot4.Action
+	slot4 = slot4.AccusationName
 	--- END OF BLOCK #8 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #9
-	else
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 38-45, warpins: 2 ---
+	slot5 = PlatformNameMaskService
+	slot5 = slot5.getMaskedDisplayName
+	slot7 = {}
+	slot7.action = slot4
+	slot7.uid = slot2
+	slot7.playerInfo = slot3
+	--- END OF BLOCK #9 ---
+
+	slot8 = if not slot1 then
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 41-41, warpins: 2 ---
-	slot7 = ""
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 42-43, warpins: 3 ---
-	slot6.rawText = slot7
-
-	return slot4(slot6)
+	--- BLOCK #10 46-47, warpins: 1 ---
 	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 48-50, warpins: 1 ---
+	slot8 = slot3.playerName
+	--- END OF BLOCK #11 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 51-51, warpins: 2 ---
+	slot8 = ""
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 52-53, warpins: 3 ---
+	slot7.rawText = slot8
+
+	return slot5(slot7)
+	--- END OF BLOCK #13 ---
 
 
 

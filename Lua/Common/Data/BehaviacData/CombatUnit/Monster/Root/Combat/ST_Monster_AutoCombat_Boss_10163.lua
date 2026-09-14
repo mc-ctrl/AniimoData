@@ -16,121 +16,121 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "int",
 	name = "tSkill_ComboAttack",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11630400",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631200",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631300",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631301",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631302",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[6] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631303",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[7] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631400",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[8] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631500",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[9] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631501",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[10] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631600",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[11] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11631700",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[12] = slot5
 slot5 = {
+	type = "float",
 	name = "skillStopDist",
 	const = 0,
-	type = "float",
 	value = "0"
 }
 slot4[13] = slot5
 slot5 = {
+	type = "int",
 	name = "tPlayer",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[14] = slot5
 slot5 = {
+	type = "bool",
 	name = "tMechanismed",
 	const = false,
-	type = "bool",
 	value = "false"
 }
 slot4[15] = slot5
 slot5 = {
+	type = "int",
 	name = "tSkill_11630430",
 	const = 0,
-	type = "int",
 	value = "0"
 }
 slot4[16] = slot5
 slot5 = {
+	type = "float",
 	name = "tBoxDist",
 	const = 0,
-	type = "float",
 	value = "0"
 }
 slot4[17] = slot5

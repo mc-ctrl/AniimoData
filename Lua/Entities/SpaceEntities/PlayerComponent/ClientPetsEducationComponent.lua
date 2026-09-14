@@ -25,7 +25,7 @@ slot9 = "ClientPetsEducationComponent"
 slot7 = slot7(slot9)
 
 slot8 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot4 = slot0.logger
 	slot6 = slot4
 	slot4 = slot4.debug
@@ -43,6 +43,8 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	slot7 = slot7.CARRY_UNLOAD
 	slot8 = {}
 	slot8.petId = slot1
+	slot8.invId = slot2
+	slot8.genID = slot3
 
 	slot4(slot6, slot7, slot8)
 

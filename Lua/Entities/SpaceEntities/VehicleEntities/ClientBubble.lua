@@ -1,4 +1,4 @@
---- BLOCK #0 1-78, warpins: 1 ---
+--- BLOCK #0 1-81, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -42,14 +42,17 @@ slot12 = slot12(slot14)
 slot13 = require
 slot15 = "GameApp.Controller.DandelionController"
 slot13 = slot13(slot15)
-slot14 = {}
-slot15 = slot0.AddComponents
-slot17 = slot6
-slot18 = slot14
+slot14 = require
+slot16 = "Entities.SpaceEntities.VehicleEntities.VehicleInteractUtils"
+slot14 = slot14(slot16)
+slot15 = {}
+slot16 = slot0.AddComponents
+slot18 = slot6
+slot19 = slot15
 
-slot15(slot17, slot18)
+slot16(slot18, slot19)
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientBubble
 	slot2 = slot2.super
@@ -66,10 +69,10 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot6.ctor = slot15
+slot6.ctor = slot16
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-25, warpins: 1 ---
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-29, warpins: 1 ---
 	slot2 = ClientBubble
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -81,18 +84,22 @@ slot15 = function(slot0, slot1)
 	slot4 = slot0
 	slot2 = slot0.getVehicleConfig
 	slot2 = slot2(slot4)
-	slot3 = {}
-	slot4 = slot2.playInteractId
-	slot3.actionPrototypeId = slot4
-	slot4 = InteractionConst
-	slot4 = slot4.INTERACTION_TYPE_QUICK_PHOTO
-	slot3.overrideType = slot4
-	slot6 = slot0
-	slot4 = slot0.getGlobalId
-	slot4 = slot4(slot6)
-	slot3.globalId = slot4
+	slot3 = VehicleInteractUtils
+	slot3 = slot3.toInteractIdList
+	slot5 = slot2.playInteractId
+	slot3 = slot3(slot5)
+	slot4 = {}
+	slot5 = slot3[1]
+	slot4.actionPrototypeId = slot5
+	slot5 = InteractionConst
+	slot5 = slot5.INTERACTION_TYPE_QUICK_PHOTO
+	slot4.overrideType = slot5
+	slot7 = slot0
+	slot5 = slot0.getGlobalId
+	slot5 = slot5(slot7)
+	slot4.globalId = slot5
 
-	slot4 = function()
+	slot5 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -107,20 +114,20 @@ slot15 = function(slot0, slot1)
 
 	end
 
-	slot3.interactFunc = slot4
-	slot0.playInteractData = slot3
-	slot3 = true
+	slot4.interactFunc = slot5
+	slot0.playInteractData = slot4
+	slot4 = true
 
-	return slot3
+	return slot4
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot6.init = slot15
+slot6.init = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clientDestroy
@@ -134,9 +141,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.onDoSkill1 = slot15
+slot6.onDoSkill1 = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ClientBubble
 	slot1 = slot1.super
@@ -154,9 +161,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.onPrefabModelLoaded = slot15
+slot6.onPrefabModelLoaded = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = ClientBubble
 	slot3 = slot3.super
@@ -174,9 +181,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot6.onEntityMount = slot15
+slot6.onEntityMount = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = ClientBubble
 	slot1 = slot1.super
@@ -211,9 +218,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.onEnterControl = slot15
+slot6.onEnterControl = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = facade
 	slot3 = slot1
@@ -248,9 +255,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.onExitControl = slot15
+slot6.onExitControl = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = ClientBubble
 	slot1 = slot1.super
@@ -274,9 +281,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.getControllerData = slot15
+slot6.getControllerData = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -287,9 +294,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.isConfigKinematic = slot15
+slot6.isConfigKinematic = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = DandelionController
 	slot2 = slot2.new
@@ -303,9 +310,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot6.getActorController = slot15
+slot6.getActorController = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = ClientBubble
 	slot3 = slot3.super
@@ -351,9 +358,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot6.onTriggerEnter = slot15
+slot6.onTriggerEnter = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -362,9 +369,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot6.onTriggerBreak = slot15
+slot6.onTriggerBreak = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -379,9 +386,9 @@ slot15 = function(slot0)
 
 end
 
-slot6.clientDestroy = slot15
+slot6.clientDestroy = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = facade
 	slot3 = slot1
@@ -416,7 +423,7 @@ slot15 = function(slot0)
 
 end
 
-slot6.destroy = slot15
+slot6.destroy = slot16
 
 return slot6
 --- END OF BLOCK #0 ---

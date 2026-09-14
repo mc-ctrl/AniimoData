@@ -7,26 +7,26 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 7,
-	name = "ParmonBehaviorTree/SubTree/PBT_SneakIn",
 	useForRoute = true,
-	agenttype = "WxAgent"
+	version = 7,
+	agenttype = "WxAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_SneakIn"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "float",
-	value = "0",
+	name = "tWaitTime",
 	const = 0,
-	name = "tWaitTime"
+	value = "0",
+	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	value = "0",
+	name = "tRandomWaitTime",
 	const = 0,
-	name = "tRandomWaitTime"
+	value = "0",
+	type = "float"
 }
 slot4[2] = slot5
 slot3.pars = slot4

@@ -410,7 +410,7 @@ slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #4 21-25, warpins: 1 ---
 	slot5 = slot4 + 2
 	slot6 = Time
-	slot6 = slot6.secondCache
+	slot6 = slot6.realSecondCache
 	--- END OF BLOCK #4 ---
 
 	if slot6 < slot5 then
@@ -451,7 +451,7 @@ slot25 = function(slot0, slot1, slot2, slot3)
 	slot5 = slot0.puzzleEntityInfo
 	slot5 = slot5[slot4]
 	slot6 = Time
-	slot6 = slot6.secondCache
+	slot6 = slot6.realSecondCache
 	slot5.lastInteractTime = slot6
 	--- END OF BLOCK #0 ---
 

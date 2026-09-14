@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-63, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -29,14 +29,17 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Common.Const.SocialConst"
 slot9 = slot9(slot11)
-slot10 = slot0.LiteClass
-slot12 = "PetPeekTag"
+slot10 = require
+slot12 = "Common.Utils.PetAttributeCalcUtils"
 slot10 = slot10(slot12)
-slot11 = slot3.STYLE_CONST
-slot11 = slot11.ARK_PET_UP_INTERACT
-slot10.PEEK_ACTION_ID = slot11
+slot11 = slot0.LiteClass
+slot13 = "PetPeekTag"
+slot11 = slot11(slot13)
+slot12 = slot3.STYLE_CONST
+slot12 = slot12.ARK_PET_UP_INTERACT
+slot11.PEEK_ACTION_ID = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = nil
 	--- END OF BLOCK #0 ---
@@ -99,9 +102,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.getPetEntity = slot11
+slot11.getPetEntity = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -192,9 +195,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.getPetDisplayNameByInfo = slot11
+slot11.getPetDisplayNameByInfo = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -483,9 +486,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.getPetIcon = slot11
+slot11.getPetIcon = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -615,9 +618,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.isPetInRange = slot11
+slot11.isPetInRange = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._tagWidgets
 	--- END OF BLOCK #0 ---
@@ -696,9 +699,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.resetData = slot11
+slot11.resetData = slot12
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1033,9 +1036,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot10.attach = slot11
+slot11.attach = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1148,9 +1151,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.detach = slot11
+slot11.detach = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1279,9 +1282,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.openPendingIvUpDialog = slot11
+slot11.openPendingIvUpDialog = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1313,8 +1316,13 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 8-10, warpins: 2 ---
-	slot3 = slot1.attributeCacheMap
+	--- BLOCK #3 8-15, warpins: 2 ---
+	slot3 = PetAttributeCalcUtils
+	slot3 = slot3.getAttributeMapByPetInfo
+	slot5 = pg
+	slot5 = slot5.me
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #3 ---
 
 	if slot3 == nil then
@@ -1324,7 +1332,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 11-13, warpins: 1 ---
+	--- BLOCK #4 16-18, warpins: 1 ---
 	slot4 = nil
 	slot5 = false
 
@@ -1335,7 +1343,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-21, warpins: 2 ---
+	--- BLOCK #5 19-26, warpins: 2 ---
 	slot4 = {}
 	slot5 = false
 	slot6 = Const
@@ -1348,7 +1356,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 22-27, warpins: 2 ---
+	--- BLOCK #6 27-32, warpins: 2 ---
 	slot10 = PetManagementDataHelper
 	slot10 = slot10.CUR_PROP
 	slot10 = slot10[slot9]
@@ -1362,14 +1370,14 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 28-28, warpins: 1 ---
+	--- BLOCK #7 33-33, warpins: 1 ---
 	slot11 = slot3[slot10]
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 29-32, warpins: 2 ---
+	--- BLOCK #8 34-37, warpins: 2 ---
 	slot12 = slot2[slot9]
 	slot13 = nil
 	--- END OF BLOCK #8 ---
@@ -1381,7 +1389,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 33-35, warpins: 1 ---
+	--- BLOCK #9 38-40, warpins: 1 ---
 	slot14 = slot12.attributeTotal
 	--- END OF BLOCK #9 ---
 
@@ -1392,14 +1400,14 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 36-36, warpins: 1 ---
+	--- BLOCK #10 41-41, warpins: 1 ---
 	slot13 = slot12.propDisplayVal
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 37-38, warpins: 3 ---
+	--- BLOCK #11 42-43, warpins: 3 ---
 	--- END OF BLOCK #11 ---
 
 	if slot13 == nil then
@@ -1409,14 +1417,14 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #12 39-39, warpins: 1 ---
+	--- BLOCK #12 44-44, warpins: 1 ---
 	slot13 = slot11
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 40-44, warpins: 2 ---
+	--- BLOCK #13 45-49, warpins: 2 ---
 	slot14 = tonumber
 	slot16 = slot13
 	slot14 = slot14(slot16)
@@ -1429,14 +1437,14 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #14 45-45, warpins: 1 ---
+	--- BLOCK #14 50-50, warpins: 1 ---
 	slot13 = 0
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 46-50, warpins: 2 ---
+	--- BLOCK #15 51-55, warpins: 2 ---
 	slot14 = {}
 	slot14.total = slot13
 	slot4[slot9] = slot14
@@ -1449,7 +1457,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #16 51-52, warpins: 1 ---
+	--- BLOCK #16 56-57, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
 	if slot13 ~= slot11 then
@@ -1459,21 +1467,21 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #17 53-53, warpins: 1 ---
+	--- BLOCK #17 58-58, warpins: 1 ---
 	slot5 = true
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 54-54, warpins: 3 ---
+	--- BLOCK #18 59-59, warpins: 3 ---
 	--- END OF BLOCK #18 ---
 
 	for slot9=slot6, slot7, slot8
 	LOOP BLOCK #6
 	GO OUT TO BLOCK #19
 
-	--- BLOCK #19 55-57, warpins: 1 ---
+	--- BLOCK #19 60-62, warpins: 1 ---
 	slot6 = slot4
 	slot7 = slot5
 
@@ -1484,9 +1492,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10._buildIvUpOldProp = slot11
+slot11._buildIvUpOldProp = slot12
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0._buildIvUpOldProp
@@ -1559,9 +1567,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot10._openIvUpLevelUpPanel = slot11
+slot11._openIvUpLevelUpPanel = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resetData
@@ -1575,9 +1583,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.destroy = slot11
+slot11.destroy = slot12
 
-return slot10
+return slot11
 --- END OF BLOCK #0 ---
 
 

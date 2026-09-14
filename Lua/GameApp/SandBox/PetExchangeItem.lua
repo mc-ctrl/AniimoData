@@ -203,16 +203,11 @@ end
 slot18.onSandboxReady = slot19
 
 slot19 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot2.templateId
 	slot4 = ClientSimpleVirtualEntityWithPhysics
 	slot4 = slot4.new
 	slot4 = slot4()
-	slot7 = slot4
-	slot5 = slot4.start
-
-	slot5(slot7)
-
 	slot5 = PetData
 	slot5 = slot5[slot3]
 	--- END OF BLOCK #0 ---
@@ -224,67 +219,68 @@ slot19 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 12-12, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
 	slot5 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-31, warpins: 2 ---
+	--- BLOCK #2 10-38, warpins: 2 ---
 	slot8 = slot4
 	slot6 = slot4.setConfigData
 	slot9 = slot5
 
 	slot6(slot8, slot9)
 
+	slot8 = slot4
+	slot6 = slot4.init
+	slot9 = slot2
+
+	slot6(slot8, slot9)
+
+	slot8 = slot4
+	slot6 = slot4.postInit
+	slot9 = slot2
+
+	slot6(slot8, slot9)
+
+	slot8 = slot4
+	slot6 = slot4.start
+
+	slot6(slot8)
+
 	slot6 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = virtualEnt
 		slot0 = slot0.eModel
-		slot0 = slot0.modelView
+		slot0 = slot0.shaderView
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #2
 		end
 
 
 		--- BLOCK #1 6-11, warpins: 1 ---
-		slot0 = virtualEnt
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
+		slot0 = ClientEffectUtils
+		slot0 = slot0.ApplyMaterialEffect
+		slot2 = virtualEnt
+		slot3 = "Temple_StoneStatueBase"
+		slot4 = true
+
+		slot0(slot2, slot3, slot4)
+
 		--- END OF BLOCK #1 ---
 
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
+		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 12-19, warpins: 1 ---
-		slot0 = virtualEnt
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
-		slot0 = slot0.ApplyMaterialEffect
-		slot3 = "Temple_StoneStatueBase"
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 20-20, warpins: 3 ---
+		--- BLOCK #2 12-12, warpins: 2 ---
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -292,8 +288,7 @@ slot19 = function(slot0, slot1, slot2)
 
 	slot4.modelLoadedCallback = slot6
 	slot6 = slot4.eModel
-	slot6 = slot6.modelComponent
-	slot6 = slot6.modelView
+	slot6 = slot6.modelModelView
 	slot7 = ClientConst
 	slot7 = slot7.InstantiatePriority
 	slot7 = slot7.Urgent
@@ -311,14 +306,14 @@ slot19 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 32-32, warpins: 1 ---
+	--- BLOCK #3 39-39, warpins: 1 ---
 	slot10 = 0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 33-35, warpins: 2 ---
+	--- BLOCK #4 40-42, warpins: 2 ---
 	slot11 = slot2.gender
 	--- END OF BLOCK #4 ---
 
@@ -329,14 +324,14 @@ slot19 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 36-36, warpins: 1 ---
+	--- BLOCK #5 43-43, warpins: 1 ---
 	slot11 = 0
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 37-56, warpins: 2 ---
+	--- BLOCK #6 44-62, warpins: 2 ---
 	slot7 = slot7(slot9, slot10, slot11)
 	slot8 = ClientModelUtils
 	slot8 = slot8.applyPetAppearance
@@ -350,7 +345,6 @@ slot19 = function(slot0, slot1, slot2)
 	slot8 = slot8.applyAnimController
 	slot10 = slot4
 	slot11 = slot4.eModel
-	slot11 = slot11.playableComponent
 	slot12 = slot5
 
 	slot8(slot10, slot11, slot12)
@@ -370,14 +364,14 @@ slot19 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 57-57, warpins: 1 ---
+	--- BLOCK #7 63-63, warpins: 1 ---
 	slot8 = 0
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 58-60, warpins: 2 ---
+	--- BLOCK #8 64-66, warpins: 2 ---
 	slot9 = slot2.animName
 	--- END OF BLOCK #8 ---
 
@@ -388,14 +382,14 @@ slot19 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 61-61, warpins: 1 ---
+	--- BLOCK #9 67-67, warpins: 1 ---
 	slot9 = "Idle"
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 62-108, warpins: 2 ---
+	--- BLOCK #10 68-114, warpins: 2 ---
 	slot12 = slot4
 	slot10 = slot4.playRawAnimation
 	slot13 = "Idle"
@@ -427,17 +421,21 @@ slot19 = function(slot0, slot1, slot2)
 	slot12(slot14, slot15)
 
 	slot12 = slot4.eModel
-	slot12 = slot12.gameObject
-	slot12 = slot12.transform
-	slot13 = Vector3
-	slot13 = slot13.zero
-	slot12.localPosition = slot13
+	slot14 = slot12
+	slot12 = slot12.SetTransformLocalPosition
+
+	slot12(slot14)
+
 	slot12 = slot4.eModel
-	slot12 = slot12.gameObject
-	slot12 = slot12.transform
-	slot13 = Quaternion
-	slot13 = slot13.identity
-	slot12.localRotation = slot13
+	slot14 = slot12
+	slot12 = slot12.SetTransformLocalRotation
+	slot15 = 0
+	slot16 = 0
+	slot17 = 0
+	slot18 = 1
+
+	slot12(slot14, slot15, slot16, slot17, slot18)
+
 	slot14 = slot4
 	slot12 = slot4.refreshPhysxData
 
@@ -720,13 +718,11 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #3 8-17, warpins: 1 ---
+	--- BLOCK #3 8-15, warpins: 1 ---
 	slot1 = slot0.sculptureEnt
 	slot1 = slot1.eModel
-	slot1 = slot1.gameObject
-	slot1 = slot1.transform
 	slot3 = slot1
-	slot1 = slot1.SetParent
+	slot1 = slot1.SetTransformParent
 	slot4 = slot0.cutsceneAttachTrans
 	slot5 = false
 
@@ -737,13 +733,11 @@ slot19 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 18-26, warpins: 1 ---
+	--- BLOCK #4 16-22, warpins: 1 ---
 	slot1 = slot0.sculptureEnt
 	slot1 = slot1.eModel
-	slot1 = slot1.gameObject
-	slot1 = slot1.transform
 	slot3 = slot1
-	slot1 = slot1.SetParent
+	slot1 = slot1.SetTransformParent
 	slot4 = slot0.attachTrans
 	slot5 = false
 
@@ -754,7 +748,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 27-27, warpins: 2 ---
+	--- BLOCK #5 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -1029,7 +1023,7 @@ slot19 = function(slot0, slot1)
 	--- BLOCK #6 18-22, warpins: 1 ---
 	slot2 = slot0.canInteractTime
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	--- END OF BLOCK #6 ---
 
 	if slot3 < slot2 then
@@ -1575,8 +1569,8 @@ slot19 = function(slot0)
 	slot3 = slot1
 	slot1 = slot1.showA1Tips
 	slot4 = {
-		duration = 10,
-		id = "ArchaicCharacter"
+		id = "ArchaicCharacter",
+		duration = 10
 	}
 	slot5 = slot0.noticeKey
 	slot4.noticeKey = slot5
@@ -1671,7 +1665,7 @@ slot19 = function(slot0, slot1)
 
 	--- BLOCK #4 17-21, warpins: 3 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot2 = slot2 + 5.5
 	slot0.canInteractTime = slot2
 
@@ -1734,7 +1728,7 @@ slot19 = function(slot0, slot1)
 
 	--- BLOCK #4 17-21, warpins: 3 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot2 = slot2 + 5.5
 	slot0.canInteractTime = slot2
 

@@ -132,10 +132,15 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #3 16-22, warpins: 1 ---
+	--- BLOCK #3 16-27, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.getEModelMonoComponent
+	slot13 = Const
+	slot13 = slot13.COMPONENT_IDX_PHYSX
+	slot10 = slot10(slot12, slot13)
+	slot8 = slot10
 	slot10 = slot0.eModel
-	slot8 = slot10.physxComponent
-	slot8.triggerCallback = slot9
+	slot10.triggerCallback = slot9
 	slot10 = slot0.triggerCompMap
 	slot10[slot1] = slot8
 
@@ -146,7 +151,7 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-24, warpins: 4 ---
+	--- BLOCK #4 28-29, warpins: 4 ---
 	--- END OF BLOCK #4 ---
 
 	if slot2 == "Sphere" then
@@ -156,7 +161,7 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #5 25-33, warpins: 1 ---
+	--- BLOCK #5 30-38, warpins: 1 ---
 	slot10 = PhysxComponent
 	slot10 = slot10.AddSphereTrigger
 	slot12 = slot0.eModel
@@ -170,7 +175,7 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 34-35, warpins: 1 ---
+	--- BLOCK #6 39-40, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	if slot2 == "Box" then
@@ -180,7 +185,7 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #7 36-43, warpins: 1 ---
+	--- BLOCK #7 41-48, warpins: 1 ---
 	slot10 = PhysxComponent
 	slot10 = slot10.AddBoxTrigger
 	slot12 = slot0.eModel
@@ -194,7 +199,7 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 44-49, warpins: 3 ---
+	--- BLOCK #8 49-54, warpins: 3 ---
 	slot8.isNotifyWhenDisable = slot7
 	slot0.isAbilityPortal = slot5
 	slot10 = slot0.triggerCompMap
@@ -300,9 +305,12 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 26-29, warpins: 3 ---
-	slot4 = slot0.eModel
-	slot4 = slot4.physxComponent
+	--- BLOCK #9 26-32, warpins: 3 ---
+	slot6 = slot0
+	slot4 = slot0.getEModelMonoComponent
+	slot7 = Const
+	slot7 = slot7.COMPONENT_IDX_PHYSX
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #9 ---
 
 	if slot2 == slot4 then
@@ -312,30 +320,31 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #10 30-32, warpins: 1 ---
-	slot4 = nil
-	slot2.triggerCallback = slot4
+	--- BLOCK #10 33-36, warpins: 1 ---
+	slot5 = slot0.eModel
+	slot6 = nil
+	slot5.triggerCallback = slot6
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 33-36, warpins: 1 ---
-	slot4 = PhysxComponent
-	slot4 = slot4.RemoveTrigger
-	slot6 = slot2
+	--- BLOCK #11 37-40, warpins: 1 ---
+	slot5 = PhysxComponent
+	slot5 = slot5.RemoveTrigger
+	slot7 = slot2
 
-	slot4(slot6)
+	slot5(slot7)
 
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 37-40, warpins: 2 ---
-	slot4 = slot0.triggerCompMap
-	slot5 = nil
-	slot4[slot1] = slot5
+	--- BLOCK #12 41-44, warpins: 2 ---
+	slot5 = slot0.triggerCompMap
+	slot6 = nil
+	slot5[slot1] = slot6
 
 	return
 	--- END OF BLOCK #12 ---

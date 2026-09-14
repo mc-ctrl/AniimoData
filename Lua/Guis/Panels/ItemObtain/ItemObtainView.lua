@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-71, warpins: 1 ---
+	--- BLOCK #0 1-83, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -84,6 +84,18 @@ slot3 = function(slot0)
 	slot4 = "doubleRewardUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.doubleRewardUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "rankSign"
+	slot1 = slot1(slot3, slot4)
+	slot0.rankSignUContainer = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "timeUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.timeUWidget = slot1
 
 	return
 	--- END OF BLOCK #0 ---

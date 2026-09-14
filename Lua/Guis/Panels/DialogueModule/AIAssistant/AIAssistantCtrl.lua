@@ -1,4 +1,4 @@
---- BLOCK #0 1-35, warpins: 1 ---
+--- BLOCK #0 1-37, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -529,6 +529,19 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4)
 end
 
 slot3.showContent = slot6
+
+slot6 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.checkUIShowVirtualMouseCursor = slot6
 
 return slot3
 --- END OF BLOCK #0 ---

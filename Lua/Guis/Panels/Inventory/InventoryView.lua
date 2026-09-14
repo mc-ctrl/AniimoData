@@ -39,9 +39,9 @@ slot3 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "listTab"
+	slot4 = "listTabIconUList"
 	slot1 = slot1(slot3, slot4)
-	slot0.listTab = slot1
+	slot0.listTabIconUList = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -54,12 +54,6 @@ slot3 = function(slot0)
 	slot4 = "listCurrency"
 	slot1 = slot1(slot3, slot4)
 	slot0.listCurrency = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "propInfo"
-	slot1 = slot1(slot3, slot4)
-	slot0.propInfo = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -156,6 +150,12 @@ slot3 = function(slot0)
 	slot4 = "textDragUBaseText"
 	slot1 = slot1(slot3, slot4)
 	slot0.textDragUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "propInfoUContainer"
+	slot1 = slot1(slot3, slot4)
+	slot0.propInfoUContainer = slot1
 
 	return
 	--- END OF BLOCK #0 ---

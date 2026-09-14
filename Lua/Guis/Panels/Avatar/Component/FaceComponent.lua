@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-50, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Helper.UIComponent"
 slot0 = slot0(slot2)
@@ -15,21 +15,18 @@ slot4 = require
 slot6 = "GameApp.UIScene.UISceneConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.Avatar.avatar_preset_detail_data"
+slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
-slot6 = require
-slot8 = "Utils.ClientTextUtils"
-slot6 = slot6(slot8)
-slot7 = slot1.LightClass
-slot9 = "FaceComponent"
-slot10 = slot0
-slot7 = slot7(slot9, slot10)
-slot8 = pg
-slot8 = slot8.global
-slot8 = slot8.avatarMgr
-slot8 = slot8.avatarFace
+slot6 = slot1.LightClass
+slot8 = "FaceComponent"
+slot9 = slot0
+slot6 = slot6(slot8, slot9)
+slot7 = pg
+slot7 = slot7.global
+slot7 = slot7.avatarMgr
+slot7 = slot7.avatarFace
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -38,9 +35,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.findObjects = slot9
+slot6.findObjects = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.presetKey
@@ -70,9 +67,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.initView = slot9
+slot6.initView = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.operationUList
@@ -211,9 +208,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.addListener = slot9
+slot6.addListener = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 	slot0.avatarScene = slot1
@@ -229,14 +226,16 @@ slot9 = function(slot0)
 
 end
 
-slot7.onDestroy = slot9
+slot6.onDestroy = slot8
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-27, warpins: 1 ---
-	slot1 = AvatarPresetDetailData
-	slot2 = slot0.presetKey
-	slot1 = slot1[slot2]
-	slot1 = slot1.face
+slot8 = function(slot0)
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot1 = AvatarUtils
+	slot1 = slot1.getCurrentPartAssetId
+	slot3 = slot0.avatarScene
+	slot4 = slot0.presetKey
+	slot5 = "face"
+	slot1 = slot1(slot3, slot4, slot5)
 	slot2 = require
 	slot4 = string
 	slot4 = slot4.format
@@ -267,9 +266,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.sortConfig = slot9
+slot6.sortConfig = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-33, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addListener
@@ -330,7 +329,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 37-48, warpins: 2 ---
+	--- BLOCK #2 37-53, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.firstSortUList
 	slot5 = slot3
@@ -346,16 +345,67 @@ slot9 = function(slot0)
 
 	slot3(slot5)
 
-	return
+	slot3 = slot0.avatarScene
+	slot5 = slot3
+	slot3 = slot3.getCurEntity
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 54-56, warpins: 1 ---
+	slot4 = slot3.eModel
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 57-63, warpins: 1 ---
+	slot4 = slot3.eModel
+	slot4 = slot4.modelModelView
+	slot5 = NotNil
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 64-66, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.RefreshFaceSkeletonOnly
+
+	slot5(slot7)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 67-67, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot7.onEnterPage = slot9
+slot6.onEnterPage = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -364,9 +414,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.onExitPage = slot9
+slot6.onExitPage = slot8
 
-slot9 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.secondSortUList
@@ -420,9 +470,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.onFirstSortSelected = slot9
+slot6.onFirstSortSelected = slot8
 
-slot9 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot3 = slot0.model
 	slot5 = slot3
@@ -459,23 +509,21 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot7.onSecondSortSelected = slot9
+slot6.onSecondSortSelected = slot8
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.avatarScene
 	slot4 = slot2
 	slot2 = slot2.getCurEntity
 	slot2 = slot2(slot4)
 	slot3 = slot2.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
-	slot4 = slot3.shaderView
-	slot6 = slot4
-	slot4 = slot4.HighLight
-	slot7 = slot1
+	slot3 = slot3.shaderView
+	slot5 = slot3
+	slot3 = slot3.HighLight
+	slot6 = slot1
 
-	slot4(slot6, slot7)
+	slot3(slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -484,9 +532,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.highLight = slot9
+slot6.highLight = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.operationUList
@@ -502,9 +550,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.refreshComponent = slot9
+slot6.refreshComponent = slot8
 
-return slot7
+return slot6
 --- END OF BLOCK #0 ---
 
 

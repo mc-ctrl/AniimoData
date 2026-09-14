@@ -84,7 +84,7 @@ slot13 = function(slot0)
 
 end
 
-slot12.destroy = slot13
+slot12.preDestroy = slot13
 
 slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -687,7 +687,7 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 46-75, warpins: 5 ---
+	--- BLOCK #10 46-67, warpins: 5 ---
 	slot4 = slot0
 	slot2 = slot0._setIgnoreTurnAnimation
 	slot5 = true
@@ -712,76 +712,53 @@ slot13 = function(slot0, slot1)
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot2 = slot2.lockComponent
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.prefsCacheUtils
-	slot5 = slot3
-	slot3 = slot3.getBool
-	slot6 = "HudV2Enable"
-	slot7 = false
-	slot3 = slot3(slot5, slot6, slot7)
+	slot2 = slot2.hudV2
+	slot2 = slot2.LD
 	--- END OF BLOCK #10 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 76-82, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.hudV2
-	slot3 = slot3.LD
+	--- BLOCK #11 68-73, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.hudV2
+	slot2 = slot2.LD
+	slot2 = slot2.focus
 	--- END OF BLOCK #11 ---
 
-	slot2 = if slot3 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 83-88, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.hudV2
-	slot3 = slot3.LD
-	slot2 = slot3.focus
+	--- BLOCK #12 74-75, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 89-90, warpins: 3 ---
-	--- END OF BLOCK #13 ---
-
 	slot2 = if slot2 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #14 91-93, warpins: 1 ---
+	--- BLOCK #13 76-78, warpins: 1 ---
 	slot5 = slot2
 	slot3 = slot2.hide
 
 	slot3(slot5)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #15 94-94, warpins: 2 ---
+	--- BLOCK #14 79-79, warpins: 2 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #14 ---
 
 
 
@@ -935,35 +912,38 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 57-76, warpins: 1 ---
+	--- BLOCK #11 57-79, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.cameraMgr
-	slot3 = slot3.worldCameraInst
-	slot3 = slot3.transform
-	slot3 = slot3.forward
-	slot4 = 0
-	slot3.y = slot4
-	slot6 = slot2
-	slot4 = slot2.forceSetPosRot
+	slot5 = slot3
+	slot3 = slot3.GetWorldCameraForwardEx
+	slot3, slot4, slot5 = slot3(slot5)
+	slot6 = Vector3
+	slot8 = slot3
+	slot9 = 0
+	slot10 = slot5
+	slot6 = slot6(slot8, slot9, slot10)
 	slot9 = slot2
-	slot7 = slot2.getPosition
-	slot7 = slot7(slot9)
-	slot8 = Quaternion
-	slot8 = slot8.LookRotation
-	slot10 = slot3
-	slot11 = Vector3
-	slot11 = slot11.up
-	MULTRES = slot8(slot10, slot11)
+	slot7 = slot2.forceSetPosRot
+	slot12 = slot2
+	slot10 = slot2.getPosition
+	slot10 = slot10(slot12)
+	slot11 = Quaternion
+	slot11 = slot11.LookRotation
+	slot13 = slot6
+	slot14 = Vector3
+	slot14 = slot14.up
+	MULTRES = slot11(slot13, slot14)
 
-	slot4(slot6, slot7, MULTRES)
+	slot7(slot9, slot10, MULTRES)
 
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 77-99, warpins: 2 ---
+	--- BLOCK #12 80-94, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -977,76 +957,53 @@ slot13 = function(slot0, slot1)
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
-	slot3 = slot3.lockComponent
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.prefsCacheUtils
-	slot6 = slot4
-	slot4 = slot4.getBool
-	slot7 = "HudV2Enable"
-	slot8 = false
-	slot4 = slot4(slot6, slot7, slot8)
+	slot3 = slot3.hudV2
+	slot3 = slot3.LD
 	--- END OF BLOCK #12 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 100-106, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.hudV2
-	slot4 = slot4.LD
+	--- BLOCK #13 95-100, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
+	slot3 = slot3.LD
+	slot3 = slot3.focus
 	--- END OF BLOCK #13 ---
 
-	slot3 = if slot4 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 107-112, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.hudV2
-	slot4 = slot4.LD
-	slot3 = slot4.focus
+	--- BLOCK #14 101-102, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 113-114, warpins: 3 ---
-	--- END OF BLOCK #15 ---
-
 	slot3 = if slot3 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #16 115-117, warpins: 1 ---
+	--- BLOCK #15 103-105, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.show
 
 	slot4(slot6)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #17 118-118, warpins: 2 ---
+	--- BLOCK #16 106-106, warpins: 2 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #16 ---
 
 
 
@@ -1404,8 +1361,8 @@ slot13 = function(slot0)
 	slot4 = slot1.playEffect
 	slot7 = slot2
 	slot8 = {
-		duration = -1,
-		neverHide = true
+		neverHide = true,
+		duration = -1
 	}
 
 	slot9 = function(slot0)
@@ -2765,8 +2722,8 @@ slot13 = function(slot0)
 	slot4 = slot1.playEffect
 	slot7 = slot2
 	slot8 = {
-		duration = -1,
-		neverHide = true
+		neverHide = true,
+		duration = -1
 	}
 
 	slot9 = function(slot0)
@@ -3255,8 +3212,8 @@ slot13 = function(slot0)
 		slot1 = slot1.playEffect
 		slot4 = effectName
 		slot5 = {
-			duration = -1,
-			neverHide = true
+			neverHide = true,
+			duration = -1
 		}
 
 		slot6 = function(slot0)
@@ -3270,17 +3227,11 @@ slot13 = function(slot0)
 			end
 
 
-			--- BLOCK #1 3-23, warpins: 1 ---
-			slot1 = slot0.effectTrans
-			slot3 = slot1
-			slot1 = slot1.SetParent
-			slot4 = pg
-			slot4 = slot4.global
-			slot4 = slot4.cameraMgr
-			slot4 = slot4.worldCameraInst
-			slot4 = slot4.transform
+			--- BLOCK #1 3-17, warpins: 1 ---
+			slot3 = slot0
+			slot1 = slot0.SetParentWorldCamera
 
-			slot1(slot3, slot4)
+			slot1(slot3)
 
 			slot1 = slot0.effectTrans
 			slot2 = Vector3
@@ -3300,7 +3251,7 @@ slot13 = function(slot0)
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 24-24, warpins: 2 ---
+			--- BLOCK #2 18-18, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -3651,8 +3602,8 @@ slot13 = function(slot0)
 	slot4 = slot1.playEffect
 	slot7 = slot2
 	slot8 = {
-		duration = -1,
-		neverHide = true
+		neverHide = true,
+		duration = -1
 	}
 	slot4 = slot4(slot6, slot7, slot8)
 	slot3.blinkEffectId = slot4
@@ -3723,49 +3674,36 @@ slot13 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
 	--- BLOCK #1 5-7, warpins: 1 ---
 	slot3 = slot2.eModel
+
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-11, warpins: 1 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.controllerComponent
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
 
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 12-12, warpins: 3 ---
-	return
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 13-16, warpins: 2 ---
+	--- BLOCK #3 9-11, warpins: 2 ---
 	slot3 = slot2.eModel
-	slot3 = slot3.controllerComponent
 	slot3.IgnoreTurnAnimation = slot1
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 

@@ -7,8 +7,8 @@ slot1 = slot1.SDK
 slot1 = slot1.Platform
 slot1 = slot1.PlatformBridgeLuaFacade
 slot2 = {
-	resolved = false,
-	shouldRedactSensitiveLogs = true
+	shouldRedactSensitiveLogs = true,
+	resolved = false
 }
 slot0.state = slot2
 

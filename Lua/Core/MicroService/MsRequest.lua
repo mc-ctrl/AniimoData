@@ -141,8 +141,8 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #12 35-42, warpins: 1 ---
 	slot0.timeout = slot8
 	slot9 = Time
-	slot9 = slot9.getMillisecond
-	slot9 = slot9()
+	slot9 = slot9.realSecondCache
+	slot9 = slot9 * 1000
 	slot10 = slot8 * 1000
 	slot9 = slot9 + slot10
 	slot0.expireAt = slot9

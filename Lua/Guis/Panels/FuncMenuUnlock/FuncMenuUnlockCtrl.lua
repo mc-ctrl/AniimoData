@@ -36,9 +36,9 @@ slot10 = slot10(slot12)
 slot11 = {}
 slot8.messages = slot11
 slot11 = {
-	RightList = 1,
 	Normal = 0,
-	Other = 2
+	Other = 2,
+	RightList = 1
 }
 slot8.FuncMode = slot11
 slot11 = {

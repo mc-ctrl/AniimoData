@@ -1,4 +1,4 @@
---- BLOCK #0 1-64, warpins: 1 ---
+--- BLOCK #0 1-63, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -26,21 +26,21 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Entities.Utils.EModelUtils"
 slot8 = slot8(slot10)
-slot9 = slot0.Class
-slot11 = "ClientChestVirtualEntity"
-slot12 = slot6
-slot9 = slot9(slot11, slot12)
-slot10 = require
-slot12 = "Data.chest_data"
-slot10 = slot10(slot12)
+slot9 = require
+slot11 = "Utils.ClientUtils"
+slot9 = slot9(slot11)
+slot10 = slot0.Class
+slot12 = "ClientChestVirtualEntity"
+slot13 = slot6
+slot10 = slot10(slot12, slot13)
 slot11 = require
-slot13 = "Entities.SpaceEntities.CommonComponent.ClientAttachComponent"
+slot13 = "Data.chest_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
+slot14 = "Entities.SpaceEntities.CommonComponent.ClientAttachComponent"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Entities.SpaceEntities.CommonComponent.ClientChemistryComponent"
+slot15 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
 slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
@@ -55,11 +55,10 @@ slot17 = require
 slot19 = "Entities.SpaceEntities.CommonComponent.ClientAnimatorComponent"
 slot17 = slot17(slot19)
 slot18 = {}
-slot18[1] = slot11
-slot18[2] = slot12
-slot18[3] = slot13
-slot18[4] = slot17
-slot18[5] = slot16
+slot18[1] = slot12
+slot18[2] = slot13
+slot18[3] = slot17
+slot18[4] = slot16
 slot19 = EnableBotTest
 --- END OF BLOCK #0 ---
 
@@ -70,16 +69,16 @@ JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 65-65, warpins: 1 ---
+--- BLOCK #1 64-64, warpins: 1 ---
 slot18 = {}
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 66-103, warpins: 2 ---
+--- BLOCK #2 65-106, warpins: 2 ---
 slot19 = slot0.AddComponents
-slot21 = slot9
+slot21 = slot10
 slot22 = slot18
 
 slot19(slot21, slot22)
@@ -104,7 +103,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.ctor = slot19
+slot10.ctor = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-25, warpins: 1 ---
@@ -146,7 +145,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.init = slot19
+slot10.init = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-26, warpins: 1 ---
@@ -202,7 +201,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.InitByMainChest = slot19
+slot10.InitByMainChest = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -220,28 +219,167 @@ slot19 = function(slot0)
 
 end
 
-slot9.start = slot19
+slot10.start = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.mainChest
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.mainChest
+	slot1 = slot1.eventEmitter
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.UnRegisterVirtualChestEvent
+
+	slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-13, warpins: 3 ---
+	slot1 = slot0.effectId
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot1 = slot0.eModel
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-20, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopEffectById
+	slot4 = slot0.effectId
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-22, warpins: 2 ---
+	slot1 = nil
+	slot0.effectId = slot1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-28, warpins: 2 ---
+	slot1 = ClientChestVirtualEntity
+	slot1 = slot1.super
+	slot1 = slot1.preDestroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot10.preDestroy = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot1 = slot0.space
+	slot3 = slot1
+	slot1 = slot1.onEntityLeave
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-18, warpins: 2 ---
+	slot1 = ClientChestVirtualEntity
+	slot1 = slot1.super
+	slot1 = slot1.destroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.mainChest = slot1
+	slot1 = nil
+	slot0.onMainChestDestroyed = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot10.destroy = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_AddEComponent"
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_EFFECT
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -253,7 +391,7 @@ slot19 = function(slot0)
 
 end
 
-slot9.initializeComponents = slot19
+slot10.initializeComponents = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
@@ -280,10 +418,10 @@ slot19 = function(slot0)
 
 end
 
-slot9.postInitializeComponents = slot19
+slot10.postInitializeComponents = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = ClientChestVirtualEntity
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -299,20 +437,18 @@ slot19 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 17-17, warpins: 1 ---
+	--- BLOCK #1 15-15, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -320,7 +456,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-24, warpins: 2 ---
+	--- BLOCK #2 16-22, warpins: 2 ---
 	slot1 = chestData
 	slot2 = slot0.mainChest
 	slot2 = slot2.templateId
@@ -335,21 +471,22 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #3 25-30, warpins: 1 ---
+	--- BLOCK #3 23-29, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
 	slot4 = slot2
 	slot2 = slot2.SetModelResId
-	slot5 = slot1.model
+	slot5 = Const
+	slot5 = slot5.COMPONENT_IDX_ITEM
+	slot6 = slot1.model
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-31, warpins: 2 ---
+	--- BLOCK #4 30-30, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -357,7 +494,7 @@ slot19 = function(slot0)
 
 end
 
-slot9.refreshAppearance = slot19
+slot10.refreshAppearance = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -372,7 +509,7 @@ slot19 = function(slot0)
 
 end
 
-slot9.getInteractionListData = slot19
+slot10.getInteractionListData = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -440,7 +577,7 @@ slot19 = function(slot0)
 
 end
 
-slot9.onItemModelLoaded = slot19
+slot10.onItemModelLoaded = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -457,7 +594,7 @@ slot19 = function(slot0)
 
 end
 
-slot9.onModelRefreshed = slot19
+slot10.onModelRefreshed = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -471,7 +608,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.getLockPartPosition = slot19
+slot10.getLockPartPosition = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -487,7 +624,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.belongsToPlayer = slot19
+slot10.belongsToPlayer = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -503,7 +640,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.checkCanInteract = slot19
+slot10.checkCanInteract = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -521,7 +658,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot9.interact = slot19
+slot10.interact = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-70, warpins: 1 ---
@@ -564,13 +701,10 @@ slot19 = function(slot0)
 		end
 
 
-		--- BLOCK #3 15-26, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		--- BLOCK #3 15-23, warpins: 1 ---
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPreset
+		slot2 = self
 		slot3 = self
 		slot3 = slot3.unlockPreset
 		slot4 = self
@@ -584,7 +718,7 @@ slot19 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 27-30, warpins: 2 ---
+		--- BLOCK #4 24-27, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.unlockSound
 		--- END OF BLOCK #4 ---
@@ -596,7 +730,7 @@ slot19 = function(slot0)
 		end
 
 
-		--- BLOCK #5 31-36, warpins: 1 ---
+		--- BLOCK #5 28-33, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.playSoundAtSelfPos
@@ -610,7 +744,7 @@ slot19 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 37-45, warpins: 2 ---
+		--- BLOCK #6 34-42, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.setAnimatorTrigger
@@ -962,82 +1096,21 @@ slot19 = function(slot0)
 	slot0.onInteractInterrupt = slot1
 
 	slot1 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.space
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-10, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.onEntityLeave
-		slot3 = self
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 11-18, warpins: 2 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.UnRegisterVirtualChestEvent
-
-		slot0(slot2)
-
-		slot0 = self
-		slot0 = slot0.effectId
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 19-27, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.stopEffectById
-		slot3 = self
-		slot3 = slot3.effectId
-
-		slot0(slot2, slot3)
-
-		slot0 = self
-		slot1 = nil
-		slot0.effectId = slot1
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 28-32, warpins: 2 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.playDestroyEffect
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = ClientUtils
+		slot0 = slot0.safeDestroy
+		slot2 = self
 
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	slot0.destroy = slot1
+	slot0.onMainChestDestroyed = slot1
 
 	slot1 = function()
 		--- BLOCK #0 1-15, warpins: 1 ---
@@ -1111,7 +1184,7 @@ slot19 = function(slot0)
 	slot1 = slot1.addEventListener
 	slot4 = EventConst
 	slot4 = slot4.VIRTUAL_CHEST_DESTROY
-	slot5 = slot0.destroy
+	slot5 = slot0.onMainChestDestroyed
 
 	slot1(slot3, slot4, slot5)
 
@@ -1142,7 +1215,7 @@ slot19 = function(slot0)
 
 end
 
-slot9.RegisterVirtualChestEvent = slot19
+slot10.RegisterVirtualChestEvent = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-57, warpins: 1 ---
@@ -1192,7 +1265,7 @@ slot19 = function(slot0)
 	slot1 = slot1.removeEventListener
 	slot4 = EventConst
 	slot4 = slot4.VIRTUAL_CHEST_DESTROY
-	slot5 = slot0.destroy
+	slot5 = slot0.onMainChestDestroyed
 
 	slot1(slot3, slot4, slot5)
 
@@ -1223,9 +1296,9 @@ slot19 = function(slot0)
 
 end
 
-slot9.UnRegisterVirtualChestEvent = slot19
+slot10.UnRegisterVirtualChestEvent = slot19
 
-return slot9
+return slot10
 --- END OF BLOCK #2 ---
 
 

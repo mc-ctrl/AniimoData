@@ -1,40 +1,31 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-35, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "GameApp.Core.SystemBase"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Utils.ClientUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.Core.SystemBase"
+slot5 = "Common.Utils.SceneUtils"
 slot3 = slot3(slot5)
-slot4 = slot0.getLogger
-slot6 = "EnvObjSystem"
+slot4 = require
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
-slot5 = require
-slot7 = "Utils.ClientUtils"
-slot5 = slot5(slot7)
-slot6 = require
-slot8 = "Common.Utils.SceneUtils"
-slot6 = slot6(slot8)
-slot7 = require
-slot9 = "Common.Const.Const"
-slot7 = slot7(slot9)
-slot8 = CS
-slot8 = slot8.FunPlus
-slot8 = slot8.WorldX
-slot8 = slot8.Entities
-slot8 = slot8.EnvObj
-slot8 = slot8.EnvObjectManager
-slot9 = slot2.LightClass
-slot11 = "EnvObjSystem"
-slot12 = slot3
-slot9 = slot9(slot11, slot12)
+slot5 = CS
+slot5 = slot5.FunPlus
+slot5 = slot5.WorldX
+slot5 = slot5.Entities
+slot5 = slot5.EnvObj
+slot5 = slot5.EnvObjectManager
+slot6 = slot0.LightClass
+slot8 = "EnvObjSystem"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
 
-slot10 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -43,9 +34,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.onInit = slot10
+slot6.onInit = slot7
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
@@ -66,9 +57,9 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot9.createServerEntAt = slot10
+slot6.createServerEntAt = slot7
 
-slot10 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = EnvObjectManager
 	slot1 = slot1.GenEnvId
@@ -80,14 +71,14 @@ slot10 = function(slot0)
 
 end
 
-slot9.genEnvId = slot10
+slot6.genEnvId = slot7
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot6 = slot4
-	slot4 = slot4.serverSpaceMsg
+	slot4 = slot4.reliableServerSpaceMsg
 	slot7 = "RPC_CS_DestroyEnvEntity"
 	slot8 = {}
 	slot9 = slot1.envId
@@ -142,9 +133,9 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot9.destroyEnvObject = slot10
+slot6.destroyEnvObject = slot7
 
-return slot9
+return slot6
 --- END OF BLOCK #0 ---
 
 

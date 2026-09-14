@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-41, warpins: 1 ---
+	--- BLOCK #0 1-36, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -53,11 +53,6 @@ slot4 = function(slot0)
 	slot5 = "txtType"
 	slot2 = slot2(slot4, slot5)
 	slot0.txtType = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "txtTitle"
-	slot2 = slot2(slot4, slot5)
-	slot0.txtTitle = slot2
 
 	return
 	--- END OF BLOCK #0 ---

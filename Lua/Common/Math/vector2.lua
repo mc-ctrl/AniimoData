@@ -1,4 +1,4 @@
---- BLOCK #0 1-88, warpins: 1 ---
+--- BLOCK #0 1-90, warpins: 1 ---
 slot0 = math
 slot0 = slot0.sqrt
 slot1 = math
@@ -9,8 +9,8 @@ slot3 = setmetatable
 slot4 = rawset
 slot5 = rawget
 slot6 = {
-	class = "Vector2",
-	banInspect = true
+	banInspect = true,
+	class = "Vector2"
 }
 slot7 = slot3
 slot9 = slot6
@@ -396,6 +396,73 @@ slot8 = function(slot0)
 end
 
 slot6.SetNormalize = slot8
+
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = sqrt
+	slot4 = slot0 * slot0
+	slot5 = slot1 * slot1
+	slot4 = slot4 + slot5
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == 1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot3 = slot0
+	slot4 = slot1
+
+	return slot3, slot4
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot3 = 1e-05
+	--- END OF BLOCK #2 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-17, warpins: 1 ---
+	slot0 = slot0 / slot2
+	slot1 = slot1 / slot2
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 18-19, warpins: 1 ---
+	slot0 = 0
+	slot1 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-22, warpins: 3 ---
+	slot3 = slot0
+	slot4 = slot1
+
+	return slot3, slot4
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot6.NormalizeVec2XY = slot8
 
 slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---

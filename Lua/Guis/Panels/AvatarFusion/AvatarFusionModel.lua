@@ -113,13 +113,18 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
+	--- BLOCK #1 4-18, warpins: 1 ---
 	slot5 = #slot4
 	slot5 = slot5 + 1
 	slot6 = {}
 	slot6.presetKey = slot2
-	slot7 = AvatarPresetData
-	slot7 = slot7[slot2]
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.avatar
+	slot9 = slot7
+	slot7 = slot7.getAvatarPresetData
+	slot10 = slot2
+	slot7 = slot7(slot9, slot10)
 	slot7 = slot7.icon
 	slot6.icon = slot7
 	slot4[slot5] = slot6
@@ -128,7 +133,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 14-17, warpins: 1 ---
+	--- BLOCK #2 19-22, warpins: 1 ---
 	slot5 = #slot4
 	slot5 = slot5 + 1
 	slot6 = {
@@ -140,7 +145,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 18-19, warpins: 2 ---
+	--- BLOCK #3 23-24, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
@@ -150,13 +155,18 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 20-29, warpins: 1 ---
+	--- BLOCK #4 25-39, warpins: 1 ---
 	slot5 = #slot4
 	slot5 = slot5 + 1
 	slot6 = {}
 	slot6.presetKey = slot3
-	slot7 = AvatarPresetData
-	slot7 = slot7[slot3]
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.avatar
+	slot9 = slot7
+	slot7 = slot7.getAvatarPresetData
+	slot10 = slot3
+	slot7 = slot7(slot9, slot10)
 	slot7 = slot7.icon
 	slot6.icon = slot7
 	slot4[slot5] = slot6
@@ -165,7 +175,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 30-33, warpins: 1 ---
+	--- BLOCK #5 40-43, warpins: 1 ---
 	slot5 = #slot4
 	slot5 = slot5 + 1
 	slot6 = {
@@ -177,7 +187,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 34-35, warpins: 2 ---
+	--- BLOCK #6 44-45, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	slot1 = if slot1 then
@@ -187,13 +197,18 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 36-45, warpins: 1 ---
+	--- BLOCK #7 46-60, warpins: 1 ---
 	slot5 = #slot4
 	slot5 = slot5 + 1
 	slot6 = {}
 	slot6.presetKey = slot1
-	slot7 = AvatarPresetData
-	slot7 = slot7[slot1]
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.avatar
+	slot9 = slot7
+	slot7 = slot7.getAvatarPresetData
+	slot10 = slot1
+	slot7 = slot7(slot9, slot10)
 	slot7 = slot7.icon
 	slot6.icon = slot7
 	slot4[slot5] = slot6
@@ -202,7 +217,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 46-49, warpins: 1 ---
+	--- BLOCK #8 61-64, warpins: 1 ---
 	slot5 = #slot4
 	slot5 = slot5 + 1
 	slot6 = {
@@ -215,7 +230,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 50-50, warpins: 2 ---
+	--- BLOCK #9 65-65, warpins: 2 ---
 	return slot4
 	--- END OF BLOCK #9 ---
 

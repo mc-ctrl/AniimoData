@@ -1968,450 +1968,374 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8)
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
+	--- BLOCK #1 3-5, warpins: 1 ---
 	slot9 = slot0.ent
-	slot9 = slot9.actorId
 	--- END OF BLOCK #1 ---
 
-	slot1 = if not slot9 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 7-12, warpins: 3 ---
+	--- BLOCK #2 6-9, warpins: 2 ---
 	slot9 = pg
 	slot9 = slot9.getEntityByActorId
 	slot11 = slot1
 	slot9 = slot9(slot11)
 	--- END OF BLOCK #2 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #41
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-15, warpins: 1 ---
-	slot10 = slot9.space
+	--- BLOCK #3 10-16, warpins: 2 ---
+	slot12 = slot9
+	slot10 = slot9.getPatrolRouteRefList
+	slot10 = slot10(slot12)
+	slot11 = ipairs
+	slot13 = slot10
+	slot11, slot12, slot13 = slot11(slot13)
 	--- END OF BLOCK #3 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #4 16-25, warpins: 1 ---
-	slot10 = SceneUtils
-	slot10 = slot10.getSceneEntityData
-	slot12 = slot9.space
-	slot12 = slot12.sceneId
-	slot13 = slot9.space
-	slot13 = slot13.id
-	slot10 = slot10(slot12, slot13)
-	slot11 = slot9.staticId
-	--- END OF BLOCK #4 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 26-26, warpins: 1 ---
-	slot11 = 0
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 27-29, warpins: 2 ---
-	slot11 = slot10[slot11]
-	--- END OF BLOCK #6 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 30-31, warpins: 1 ---
-	slot11 = AiConst
-	slot11 = slot11.DefaultNullTable
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 32-34, warpins: 2 ---
-	slot12 = slot11.routeRefs
-	--- END OF BLOCK #8 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 35-36, warpins: 1 ---
-	slot12 = AiConst
-	slot12 = slot12.DefaultNullTable
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 37-40, warpins: 2 ---
-	slot13 = ipairs
-	slot15 = slot12
-	slot13, slot14, slot15 = slot13(slot15)
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
-
-
-	--- BLOCK #11 41-47, warpins: 1 ---
-	slot18 = IBasePropertyComponent
-	slot18 = slot18._checkRouteDayTime
-	slot20 = slot17.dayTag
-	slot21 = slot2
-	slot18 = slot18(slot20, slot21)
-	--- END OF BLOCK #11 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #12 48-54, warpins: 1 ---
-	slot18 = IBasePropertyComponent
-	slot18 = slot18._checkRouteWeatherId
-	slot20 = slot17.weatherIds
-	slot21 = slot3
-	slot18 = slot18(slot20, slot21)
-	--- END OF BLOCK #12 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #13 55-61, warpins: 1 ---
-	slot18 = IBasePropertyComponent
-	slot18 = slot18._checkRouteMeteorologyId
-	slot20 = slot17.meteorologyIds
-	slot21 = slot4
-	slot18 = slot18(slot20, slot21)
-	--- END OF BLOCK #13 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #14 62-68, warpins: 1 ---
-	slot18 = IBasePropertyComponent
-	slot18 = slot18._checkRouteEntityTag
-	slot20 = slot17.entityTagRoute
-	slot21 = slot5
-	slot18 = slot18(slot20, slot21)
-	--- END OF BLOCK #14 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #15 69-77, warpins: 1 ---
-	slot18 = IBasePropertyComponent
-	slot18 = slot18._checkRouteOtherTag
-	slot20 = slot17.otherTags
-	slot21 = slot6
-	slot22 = slot7
-	slot23 = slot8
-	slot18 = slot18(slot20, slot21, slot22, slot23)
-	--- END OF BLOCK #15 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #16 78-80, warpins: 1 ---
-	slot18 = slot17.routeGroup
-	--- END OF BLOCK #16 ---
-
-	slot18 = if not slot18 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 81-82, warpins: 1 ---
-	slot18 = AiConst
-	slot18 = slot18.DefaultNullTable
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 83-86, warpins: 2 ---
-	slot19 = #slot18
-	slot20 = 1
-	--- END OF BLOCK #18 ---
-
-	if slot19 > slot20 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #19 87-91, warpins: 1 ---
-	slot19 = 0
-	slot20 = ipairs
-	slot22 = slot18
-	slot20, slot21, slot22 = slot20(slot22)
-	--- END OF BLOCK #19 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #20 92-96, warpins: 1 ---
-	slot25 = IBasePropertyComponent
-	slot25 = slot25._getValidWeight
-	slot27 = slot24.weight
-	slot25 = slot25(slot27)
-	slot19 = slot19 + slot25
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 97-98, warpins: 2 ---
-	--- END OF BLOCK #21 ---
-
-	for slot23, slot24 in slot20, slot21, slot22
-	LOOP BLOCK #20
-	GO OUT TO BLOCK #22
-
-
-	--- BLOCK #22 99-107, warpins: 1 ---
-	slot20 = math_random
-	slot22 = 1
-	slot23 = slot19
-	slot20 = slot20(slot22, slot23)
-	slot21 = 0
-	slot22 = ipairs
-	slot24 = slot18
-	slot22, slot23, slot24 = slot22(slot24)
-	--- END OF BLOCK #22 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #23 108-114, warpins: 1 ---
-	slot27 = IBasePropertyComponent
-	slot27 = slot27._getValidWeight
-	slot29 = slot26.weight
-	slot27 = slot27(slot29)
-	slot21 = slot21 + slot27
-	--- END OF BLOCK #23 ---
+	--- BLOCK #4 17-23, warpins: 1 ---
+	slot16 = IBasePropertyComponent
+	slot16 = slot16._checkRouteDayTime
+	slot18 = slot15.dayTag
+	slot19 = slot2
+	slot16 = slot16(slot18, slot19)
+	--- END OF BLOCK #4 ---
 
-	if slot20 <= slot21 then
-	JUMP TO BLOCK #24
+	slot16 = if slot16 then
+	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #24 115-117, warpins: 1 ---
-	slot27 = slot26.routeId
-	--- END OF BLOCK #24 ---
+	--- BLOCK #5 24-30, warpins: 1 ---
+	slot16 = IBasePropertyComponent
+	slot16 = slot16._checkRouteWeatherId
+	slot18 = slot15.weatherIds
+	slot19 = slot3
+	slot16 = slot16(slot18, slot19)
+	--- END OF BLOCK #5 ---
 
-	slot27 = if not slot27 then
-	JUMP TO BLOCK #25
+	slot16 = if slot16 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #6 31-37, warpins: 1 ---
+	slot16 = IBasePropertyComponent
+	slot16 = slot16._checkRouteMeteorologyId
+	slot18 = slot15.meteorologyIds
+	slot19 = slot4
+	slot16 = slot16(slot18, slot19)
+	--- END OF BLOCK #6 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #7 38-44, warpins: 1 ---
+	slot16 = IBasePropertyComponent
+	slot16 = slot16._checkRouteEntityTag
+	slot18 = slot15.entityTagRoute
+	slot19 = slot5
+	slot16 = slot16(slot18, slot19)
+	--- END OF BLOCK #7 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #8 45-53, warpins: 1 ---
+	slot16 = IBasePropertyComponent
+	slot16 = slot16._checkRouteOtherTag
+	slot18 = slot15.otherTags
+	slot19 = slot6
+	slot20 = slot7
+	slot21 = slot8
+	slot16 = slot16(slot18, slot19, slot20, slot21)
+	--- END OF BLOCK #8 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #9 54-56, warpins: 1 ---
+	slot16 = slot15.routeGroup
+	--- END OF BLOCK #9 ---
+
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 57-58, warpins: 1 ---
+	slot16 = AiConst
+	slot16 = slot16.DefaultNullTable
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 59-62, warpins: 2 ---
+	slot17 = #slot16
+	slot18 = 1
+	--- END OF BLOCK #11 ---
+
+	if slot17 > slot18 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #12 63-67, warpins: 1 ---
+	slot17 = 0
+	slot18 = ipairs
+	slot20 = slot16
+	slot18, slot19, slot20 = slot18(slot20)
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 68-72, warpins: 1 ---
+	slot23 = IBasePropertyComponent
+	slot23 = slot23._getValidWeight
+	slot25 = slot22.weight
+	slot23 = slot23(slot25)
+	slot17 = slot17 + slot23
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 73-74, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	for slot21, slot22 in slot18, slot19, slot20
+	LOOP BLOCK #13
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 75-83, warpins: 1 ---
+	slot18 = math_random
+	slot20 = 1
+	slot21 = slot17
+	slot18 = slot18(slot20, slot21)
+	slot19 = 0
+	slot20 = ipairs
+	slot22 = slot16
+	slot20, slot21, slot22 = slot20(slot22)
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #16 84-90, warpins: 1 ---
+	slot25 = IBasePropertyComponent
+	slot25 = slot25._getValidWeight
+	slot27 = slot24.weight
+	slot25 = slot25(slot27)
+	slot19 = slot19 + slot25
+	--- END OF BLOCK #16 ---
+
+	if slot18 <= slot19 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #17 91-93, warpins: 1 ---
+	slot25 = slot24.routeId
+	--- END OF BLOCK #17 ---
+
+	slot25 = if not slot25 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 94-94, warpins: 1 ---
+	slot25 = 0
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 95-95, warpins: 2 ---
+	return slot25
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 96-97, warpins: 3 ---
+	--- END OF BLOCK #20 ---
+
+	for slot23, slot24 in slot20, slot21, slot22
+	LOOP BLOCK #16
+	GO OUT TO BLOCK #21
+
+
+	--- BLOCK #21 98-98, warpins: 1 ---
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #22 99-101, warpins: 1 ---
+	slot17 = #slot16
+	--- END OF BLOCK #22 ---
+
+	if slot17 == 1 then
+	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 118-118, warpins: 1 ---
-	slot27 = 0
+	--- BLOCK #23 102-105, warpins: 1 ---
+	slot17 = slot16[1]
+	slot17 = slot17.routeId
+	--- END OF BLOCK #23 ---
+
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 106-106, warpins: 1 ---
+	slot17 = 0
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 107-108, warpins: 2 ---
+	return slot17
 
 	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #26 119-119, warpins: 2 ---
-	return slot27
+	--- BLOCK #26 109-110, warpins: 1 ---
+	slot17 = 0
+
+	return slot17
 
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 120-121, warpins: 3 ---
+	--- BLOCK #27 111-112, warpins: 9 ---
 	--- END OF BLOCK #27 ---
 
-	for slot25, slot26 in slot22, slot23, slot24
-	LOOP BLOCK #23
+	for slot14, slot15 in slot11, slot12, slot13
+	LOOP BLOCK #4
 	GO OUT TO BLOCK #28
 
 
-	--- BLOCK #28 122-122, warpins: 1 ---
+	--- BLOCK #28 113-117, warpins: 1 ---
+	slot11 = string_isNilOrEmpty
+	slot13 = slot6
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #28 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
+	slot11 = if slot11 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #34
+	end
 
 
-	--- BLOCK #29 123-125, warpins: 1 ---
-	slot19 = #slot18
+	--- BLOCK #29 118-122, warpins: 1 ---
+	slot11 = string_isNilOrEmpty
+	slot13 = slot7
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #29 ---
 
-	if slot19 == 1 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #30 123-127, warpins: 1 ---
+	slot11 = string_isNilOrEmpty
+	slot13 = slot8
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #30 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #31 128-130, warpins: 1 ---
+	slot11 = slot9.routeId
+	--- END OF BLOCK #31 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #30 126-129, warpins: 1 ---
-	slot19 = slot18[1]
-	slot19 = slot19.routeId
-	--- END OF BLOCK #30 ---
-
-	slot19 = if not slot19 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #32
-	end
-
-
-	--- BLOCK #31 130-130, warpins: 1 ---
-	slot19 = 0
-
-	--- END OF BLOCK #31 ---
-
-	FLOW; TARGET BLOCK #32
-
-
-	--- BLOCK #32 131-132, warpins: 2 ---
-	return slot19
+	--- BLOCK #32 131-131, warpins: 1 ---
+	slot11 = 0
 
 	--- END OF BLOCK #32 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 133-134, warpins: 1 ---
-	slot19 = 0
-
-	return slot19
+	--- BLOCK #33 132-132, warpins: 2 ---
+	return slot11
 
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 135-136, warpins: 9 ---
+	--- BLOCK #34 133-134, warpins: 4 ---
+	slot11 = 0
+
+	return slot11
 	--- END OF BLOCK #34 ---
-
-	for slot16, slot17 in slot13, slot14, slot15
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #35
-
-
-	--- BLOCK #35 137-141, warpins: 1 ---
-	slot13 = string_isNilOrEmpty
-	slot15 = slot6
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #35 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #36 142-146, warpins: 1 ---
-	slot13 = string_isNilOrEmpty
-	slot15 = slot7
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #36 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #37 147-151, warpins: 1 ---
-	slot13 = string_isNilOrEmpty
-	slot15 = slot8
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #37 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #38 152-154, warpins: 1 ---
-	slot13 = slot9.routeId
-	--- END OF BLOCK #38 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #39 155-155, warpins: 1 ---
-	slot13 = 0
-
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 156-156, warpins: 2 ---
-	return slot13
-
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 157-158, warpins: 6 ---
-	slot10 = 0
-
-	return slot10
-	--- END OF BLOCK #41 ---
 
 
 
@@ -2512,225 +2436,225 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
+	--- BLOCK #1 3-5, warpins: 1 ---
 	slot10 = slot0.ent
-	slot10 = slot10.actorId
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot10 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 7-12, warpins: 3 ---
+	--- BLOCK #2 6-9, warpins: 2 ---
 	slot10 = pg
 	slot10 = slot10.getEntityByActorId
 	slot12 = slot2
 	slot10 = slot10(slot12)
 	--- END OF BLOCK #2 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #28
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-15, warpins: 1 ---
-	slot11 = slot10.space
+	--- BLOCK #3 10-16, warpins: 2 ---
+	slot13 = slot10
+	slot11 = slot10.getPatrolRouteRefList
+	slot11 = slot11(slot13)
+	slot12 = ipairs
+	slot14 = slot11
+	slot12, slot13, slot14 = slot12(slot14)
 	--- END OF BLOCK #3 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #28
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #4 16-25, warpins: 1 ---
-	slot11 = SceneUtils
-	slot11 = slot11.getSceneEntityData
-	slot13 = slot10.space
-	slot13 = slot13.sceneId
-	slot14 = slot10.space
-	slot14 = slot14.id
-	slot11 = slot11(slot13, slot14)
-	slot12 = slot10.staticId
+	--- BLOCK #4 17-23, warpins: 1 ---
+	slot17 = IBasePropertyComponent
+	slot17 = slot17._checkRouteDayTime
+	slot19 = slot16.dayTag
+	slot20 = slot3
+	slot17 = slot17(slot19, slot20)
 	--- END OF BLOCK #4 ---
 
-	slot12 = if not slot12 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #5 26-26, warpins: 1 ---
-	slot12 = 0
+	--- BLOCK #5 24-30, warpins: 1 ---
+	slot17 = IBasePropertyComponent
+	slot17 = slot17._checkRouteWeatherId
+	slot19 = slot16.weatherIds
+	slot20 = slot4
+	slot17 = slot17(slot19, slot20)
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot17 = if slot17 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #6 27-29, warpins: 2 ---
-	slot12 = slot11[slot12]
+	--- BLOCK #6 31-37, warpins: 1 ---
+	slot17 = IBasePropertyComponent
+	slot17 = slot17._checkRouteMeteorologyId
+	slot19 = slot16.meteorologyIds
+	slot20 = slot5
+	slot17 = slot17(slot19, slot20)
 	--- END OF BLOCK #6 ---
 
-	slot12 = if not slot12 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #7 30-31, warpins: 1 ---
-	slot12 = AiConst
-	slot12 = slot12.DefaultNullTable
+	--- BLOCK #7 38-44, warpins: 1 ---
+	slot17 = IBasePropertyComponent
+	slot17 = slot17._checkRouteEntityTag
+	slot19 = slot16.entityTagRoute
+	slot20 = slot6
+	slot17 = slot17(slot19, slot20)
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot17 = if slot17 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #8 32-34, warpins: 2 ---
-	slot13 = slot12.routeRefs
+	--- BLOCK #8 45-53, warpins: 1 ---
+	slot17 = IBasePropertyComponent
+	slot17 = slot17._checkRouteOtherTag
+	slot19 = slot16.otherTags
+	slot20 = slot7
+	slot21 = slot8
+	slot22 = slot9
+	slot17 = slot17(slot19, slot20, slot21, slot22)
 	--- END OF BLOCK #8 ---
 
-	slot13 = if not slot13 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #9 35-36, warpins: 1 ---
-	slot13 = AiConst
-	slot13 = slot13.DefaultNullTable
+	--- BLOCK #9 54-56, warpins: 1 ---
+	slot17 = slot16.routeGroup
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 37-40, warpins: 2 ---
-	slot14 = ipairs
-	slot16 = slot13
-	slot14, slot15, slot16 = slot14(slot16)
+	--- BLOCK #10 57-58, warpins: 1 ---
+	slot17 = AiConst
+	slot17 = slot17.DefaultNullTable
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 41-47, warpins: 1 ---
-	slot19 = IBasePropertyComponent
-	slot19 = slot19._checkRouteDayTime
-	slot21 = slot18.dayTag
-	slot22 = slot3
-	slot19 = slot19(slot21, slot22)
+	--- BLOCK #11 59-62, warpins: 2 ---
+	slot18 = ipairs
+	slot20 = slot17
+	slot18, slot19, slot20 = slot18(slot20)
 	--- END OF BLOCK #11 ---
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #22
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 48-54, warpins: 1 ---
-	slot19 = IBasePropertyComponent
-	slot19 = slot19._checkRouteWeatherId
-	slot21 = slot18.weatherIds
-	slot22 = slot4
-	slot19 = slot19(slot21, slot22)
+	--- BLOCK #12 63-65, warpins: 1 ---
+	slot23 = slot22.routeId
 	--- END OF BLOCK #12 ---
 
-	slot19 = if slot19 then
+	if slot23 == slot1 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 55-61, warpins: 1 ---
-	slot19 = IBasePropertyComponent
-	slot19 = slot19._checkRouteMeteorologyId
-	slot21 = slot18.meteorologyIds
-	slot22 = slot5
-	slot19 = slot19(slot21, slot22)
+	--- BLOCK #13 66-67, warpins: 1 ---
+	slot23 = true
+
+	return slot23
+
 	--- END OF BLOCK #13 ---
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #22
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 62-68, warpins: 1 ---
-	slot19 = IBasePropertyComponent
-	slot19 = slot19._checkRouteEntityTag
-	slot21 = slot18.entityTagRoute
-	slot22 = slot6
-	slot19 = slot19(slot21, slot22)
+	--- BLOCK #14 68-69, warpins: 3 ---
 	--- END OF BLOCK #14 ---
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #22
-	end
+	for slot21, slot22 in slot18, slot19, slot20
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 69-77, warpins: 1 ---
-	slot19 = IBasePropertyComponent
-	slot19 = slot19._checkRouteOtherTag
-	slot21 = slot18.otherTags
-	slot22 = slot7
-	slot23 = slot8
-	slot24 = slot9
-	slot19 = slot19(slot21, slot22, slot23, slot24)
+	--- BLOCK #15 70-71, warpins: 7 ---
 	--- END OF BLOCK #15 ---
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #22
-	end
+	for slot15, slot16 in slot12, slot13, slot14
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 78-80, warpins: 1 ---
-	slot19 = slot18.routeGroup
+	--- BLOCK #16 72-76, warpins: 1 ---
+	slot12 = string_isNilOrEmpty
+	slot14 = slot7
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #16 ---
 
-	slot19 = if not slot19 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #17 81-82, warpins: 1 ---
-	slot19 = AiConst
-	slot19 = slot19.DefaultNullTable
+	--- BLOCK #17 77-81, warpins: 1 ---
+	slot12 = string_isNilOrEmpty
+	slot14 = slot8
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	slot12 = if slot12 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #18 83-86, warpins: 2 ---
-	slot20 = ipairs
-	slot22 = slot19
-	slot20, slot21, slot22 = slot20(slot22)
+	--- BLOCK #18 82-86, warpins: 1 ---
+	slot12 = string_isNilOrEmpty
+	slot14 = slot9
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	slot12 = if slot12 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
 
 
 	--- BLOCK #19 87-89, warpins: 1 ---
-	slot25 = slot24.routeId
+	slot12 = slot10.routeId
 	--- END OF BLOCK #19 ---
 
-	if slot25 == slot1 then
+	if slot12 == slot1 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
@@ -2738,96 +2662,20 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 
 
 	--- BLOCK #20 90-91, warpins: 1 ---
-	slot25 = true
+	slot12 = true
 
-	return slot25
+	return slot12
 
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 92-93, warpins: 3 ---
+	--- BLOCK #21 92-93, warpins: 5 ---
+	slot12 = false
+
+	return slot12
 	--- END OF BLOCK #21 ---
-
-	for slot23, slot24 in slot20, slot21, slot22
-	LOOP BLOCK #19
-	GO OUT TO BLOCK #22
-
-
-	--- BLOCK #22 94-95, warpins: 7 ---
-	--- END OF BLOCK #22 ---
-
-	for slot17, slot18 in slot14, slot15, slot16
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #23
-
-
-	--- BLOCK #23 96-100, warpins: 1 ---
-	slot14 = string_isNilOrEmpty
-	slot16 = slot7
-	slot14 = slot14(slot16)
-	--- END OF BLOCK #23 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #24 101-105, warpins: 1 ---
-	slot14 = string_isNilOrEmpty
-	slot16 = slot8
-	slot14 = slot14(slot16)
-	--- END OF BLOCK #24 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #25 106-110, warpins: 1 ---
-	slot14 = string_isNilOrEmpty
-	slot16 = slot9
-	slot14 = slot14(slot16)
-	--- END OF BLOCK #25 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #26 111-113, warpins: 1 ---
-	slot14 = slot10.routeId
-	--- END OF BLOCK #26 ---
-
-	if slot14 == slot1 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 114-115, warpins: 1 ---
-	slot14 = true
-
-	return slot14
-
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 116-117, warpins: 7 ---
-	slot11 = false
-
-	return slot11
-	--- END OF BLOCK #28 ---
 
 
 

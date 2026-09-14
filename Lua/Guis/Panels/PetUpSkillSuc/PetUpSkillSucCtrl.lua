@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,10 +30,12 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Const.UIConst"
 slot8 = slot8(slot10)
-slot9 = {}
-slot4.messages = slot9
+slot9 = "PETSKILL_UPLV_SUCCEED"
+slot10 = "CARRY_CERT_ENHANCE_SUC"
+slot11 = {}
+slot4.messages = slot11
 
-slot9 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -54,9 +56,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot9
+slot4.onCreate = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
@@ -85,9 +87,9 @@ slot9 = function(slot0)
 
 end
 
-slot4.addListener = slot9
+slot4.addListener = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -112,9 +114,9 @@ slot9 = function(slot0)
 
 end
 
-slot4.onDestroy = slot9
+slot4.onDestroy = slot11
 
-slot9 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -156,7 +158,7 @@ slot9 = function(slot0, slot1)
 	slot2 = slot2(slot4, slot5, MULTRES)
 	slot3 = pg
 	slot3 = slot3.getGameString
-	slot5 = "PETSKILL_UPLV_SUCCEED"
+	slot5 = sucTitleKey2
 	slot3 = slot3(slot5)
 	slot4 = slot2
 	slot3 = slot3 .. slot4
@@ -180,7 +182,7 @@ slot9 = function(slot0, slot1)
 	slot4 = slot4.txtTitleUBaseText
 	slot5 = pg
 	slot5 = slot5.getGameString
-	slot7 = "PETSKILL_UPLV_SUCCEED"
+	slot7 = sucTitleKey2
 	MULTRES = slot5(slot7)
 
 	slot2(slot4, MULTRES)
@@ -210,9 +212,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot9
+slot4.onOpen = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -221,9 +223,9 @@ slot9 = function(slot0)
 
 end
 
-slot4.onShow = slot9
+slot4.onShow = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -232,7 +234,7 @@ slot9 = function(slot0)
 
 end
 
-slot4.onHide = slot9
+slot4.onHide = slot11
 
 return slot4
 --- END OF BLOCK #0 ---

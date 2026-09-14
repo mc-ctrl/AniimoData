@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-151, warpins: 1 ---
+	--- BLOCK #0 1-137, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -104,29 +104,9 @@ slot3 = function(slot0)
 	slot0.txtTipsUBaseText = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "btnShopUButton"
-	slot2 = slot2(slot4, slot5)
-	slot0.btnShopUButton = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "btnRecordUButton"
-	slot2 = slot2(slot4, slot5)
-	slot0.btnRecordUButton = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "bringItemTitleTxt"
-	slot2 = slot2(slot4, slot5)
-	slot0.bringItemTitleTxt = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
 	slot5 = "bringItemUList"
 	slot2 = slot2(slot4, slot5)
 	slot0.bringItemUList = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "bossCatchModeUWidget"
-	slot2 = slot2(slot4, slot5)
-	slot0.bossCatchModeUWidget = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "txtLevelNameUBaseText"
@@ -154,14 +134,20 @@ slot3 = function(slot0)
 	slot0.infoTxt = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "catchBallUList"
+	slot5 = "bg1UContainer"
 	slot2 = slot2(slot4, slot5)
-	slot0.catchBallUList = slot2
+	slot0.bg1UContainer = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "btnBagUButton"
+	slot5 = "bg2UContainer"
 	slot2 = slot2(slot4, slot5)
-	slot0.btnBagUButton = slot2
+	slot0.bg2UContainer = slot2
+	slot2 = {}
+	slot3 = slot0.bg1UContainer
+	slot2[1] = slot3
+	slot3 = slot0.bg2UContainer
+	slot2[2] = slot3
+	slot0.entranceBgUContainers = slot2
 
 	return
 	--- END OF BLOCK #0 ---

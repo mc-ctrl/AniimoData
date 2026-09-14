@@ -766,338 +766,321 @@ end
 slot3.getSpeedUpItems = slot20
 
 slot20 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
-	slot2 = pg
-	slot2 = slot2.me
-	slot3 = slot2.invInfo
+	slot2 = ItemUtils
+	slot2 = slot2.eachSupportedTypedBag
+	slot4 = pg
+	slot4 = slot4.me
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.items
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #0 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #1 5-11, warpins: 1 ---
+		slot7 = self
+		slot9 = slot7
+		slot7 = slot7.getInfoByItem
+		slot10 = slot6
+		slot7 = slot7(slot9, slot10)
+		--- END OF BLOCK #1 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 12-16, warpins: 1 ---
+		slot8 = ret
+		slot9 = ret
+		slot9 = #slot9
+		slot9 = slot9 + 1
+		slot8[slot9] = slot7
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-18, warpins: 3 ---
+		--- END OF BLOCK #3 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #1
+		GO OUT TO BLOCK #4
+
+
+		--- BLOCK #4 19-19, warpins: 1 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.hatchSortId
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	if slot2 == 1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	slot3 = {}
+	--- BLOCK #1 11-16, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.sort
+	slot4 = slot1
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.hatchIsDescending
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = slot0.id
+		slot3 = slot1.id
+		--- END OF BLOCK #1 ---
+
+		if slot3 >= slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 12-13, warpins: 2 ---
+		return slot2
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #5 14-17, warpins: 1 ---
+		slot2 = slot0.id
+		slot3 = slot1.id
+		--- END OF BLOCK #5 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 18-19, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 20-20, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 21-21, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 22-22, warpins: 2 ---
+		return
+		--- END OF BLOCK #9 ---
+
+
+
+	end
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 8-11, warpins: 2 ---
-	slot4 = pairs
-	slot6 = slot3
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #2 17-19, warpins: 1 ---
+	slot2 = slot0.hatchSortId
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	if slot2 == 2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 12-15, warpins: 1 ---
-	slot11 = slot8
-	slot9 = slot8.items
-	slot9, slot10, slot11 = slot9(slot11)
+	--- BLOCK #3 20-24, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.sort
+	slot4 = slot1
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.hatchIsDescending
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = slot0.quality
+		slot3 = slot1.quality
+		--- END OF BLOCK #1 ---
+
+		if slot3 >= slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 12-13, warpins: 2 ---
+		return slot2
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #5 14-17, warpins: 1 ---
+		slot2 = slot0.quality
+		slot3 = slot1.quality
+		--- END OF BLOCK #5 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 18-19, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 20-20, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 21-21, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 22-22, warpins: 2 ---
+		return
+		--- END OF BLOCK #9 ---
+
+
+
+	end
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 25-28, warpins: 3 ---
+	slot2 = ipairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 16-21, warpins: 1 ---
-	slot16 = slot0
-	slot14 = slot0.getInfoByItem
-	slot17 = slot13
-	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #4 ---
+	--- BLOCK #5 29-29, warpins: 1 ---
+	slot6.index = slot5
 
-	slot14 = if slot14 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-24, warpins: 1 ---
-	slot15 = #slot1
-	slot15 = slot15 + 1
-	slot1[slot15] = slot14
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-26, warpins: 3 ---
+	--- BLOCK #6 30-31, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #4
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #5
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 27-28, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 29-31, warpins: 1 ---
-	slot4 = slot0.hatchSortId
-	--- END OF BLOCK #8 ---
-
-	if slot4 == 1 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 32-37, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.sort
-	slot6 = slot1
-
-	slot7 = function(slot0, slot1)
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.hatchIsDescending
-		--- END OF BLOCK #0 ---
-
-		slot2 = if slot2 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot2 = slot0.id
-		slot3 = slot1.id
-		--- END OF BLOCK #1 ---
-
-		if slot3 >= slot2 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 9-10, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #3 11-11, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 12-13, warpins: 2 ---
-		return slot2
-
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-		--- BLOCK #5 14-17, warpins: 1 ---
-		slot2 = slot0.id
-		slot3 = slot1.id
-		--- END OF BLOCK #5 ---
-
-		if slot2 >= slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 18-19, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #6 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-		--- BLOCK #7 20-20, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 21-21, warpins: 2 ---
-		return slot2
-		--- END OF BLOCK #8 ---
-
-		FLOW; TARGET BLOCK #9
-
-
-		--- BLOCK #9 22-22, warpins: 2 ---
-		return
-		--- END OF BLOCK #9 ---
-
-
-
-	end
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 38-40, warpins: 1 ---
-	slot4 = slot0.hatchSortId
-	--- END OF BLOCK #10 ---
-
-	if slot4 == 2 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 41-45, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.sort
-	slot6 = slot1
-
-	slot7 = function(slot0, slot1)
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.hatchIsDescending
-		--- END OF BLOCK #0 ---
-
-		slot2 = if slot2 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot2 = slot0.quality
-		slot3 = slot1.quality
-		--- END OF BLOCK #1 ---
-
-		if slot3 >= slot2 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 9-10, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #3 11-11, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 12-13, warpins: 2 ---
-		return slot2
-
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-		--- BLOCK #5 14-17, warpins: 1 ---
-		slot2 = slot0.quality
-		slot3 = slot1.quality
-		--- END OF BLOCK #5 ---
-
-		if slot2 >= slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 18-19, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #6 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-		--- BLOCK #7 20-20, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 21-21, warpins: 2 ---
-		return slot2
-		--- END OF BLOCK #8 ---
-
-		FLOW; TARGET BLOCK #9
-
-
-		--- BLOCK #9 22-22, warpins: 2 ---
-		return
-		--- END OF BLOCK #9 ---
-
-
-
-	end
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 46-49, warpins: 3 ---
-	slot4 = ipairs
-	slot6 = slot1
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 50-50, warpins: 1 ---
-	slot8.index = slot7
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 51-52, warpins: 2 ---
-	--- END OF BLOCK #14 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #13
-	GO OUT TO BLOCK #15
-
-
-	--- BLOCK #15 53-54, warpins: 1 ---
+	--- BLOCK #7 32-33, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -1314,8 +1297,8 @@ slot20 = function(slot0, slot1)
 	slot8(slot10, slot11)
 
 	slot8 = {
-		isNormalEgg = false,
-		isHatching = false
+		isHatching = false,
+		isNormalEgg = false
 	}
 	slot9 = slot1.genID
 	slot8.genId = slot9

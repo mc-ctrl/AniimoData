@@ -1,10 +1,16 @@
---- BLOCK #0 1-8, warpins: 1 ---
-slot0 = {}
+--- BLOCK #0 1-14, warpins: 1 ---
+slot0 = require
+slot2 = "SDK.Platform.PlatformNoticeUtils"
+slot0 = slot0(slot2)
 slot1 = require
-slot3 = "SDK.Platform.PlatformHomeCampEntryFilterService"
+slot3 = "Common.NoticeDef"
 slot1 = slot1(slot3)
+slot2 = {}
+slot3 = require
+slot5 = "SDK.Platform.PlatformHomeCampEntryFilterService"
+slot3 = slot3(slot5)
 
-slot2 = function(slot0, slot1, slot2)
+slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -22,32 +28,25 @@ slot2 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-10, warpins: 2 ---
+	--- BLOCK #2 4-13, warpins: 2 ---
 	slot3 = PlatformHomeCampEntryFilterService
 	slot5 = slot3
 	slot3 = slot3.canEnterHomeCamp
 	slot6 = slot1
 	slot3, slot4, slot5 = slot3(slot5, slot6)
+	slot6 = PlatformHomeCampEntryFilterService
+	slot6 = slot6.Decision
+	slot6 = slot6.Pending
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	if slot4 == slot6 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-20, warpins: 1 ---
-	slot6 = PlatformHomeCampEntryFilterService
-	slot8 = slot6
-	slot6 = slot6.showEnterDeniedTip
-	slot9 = slot5
-	slot10 = {}
-	slot11 = slot2.action
-	slot10.action = slot11
-
-	slot6(slot8, slot9, slot10)
-
+	--- BLOCK #3 14-15, warpins: 1 ---
 	slot6 = false
 
 	return slot6
@@ -57,19 +56,46 @@ slot2 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-22, warpins: 2 ---
+	--- BLOCK #4 16-17, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-24, warpins: 1 ---
+	slot6 = PlatformNoticeUtils
+	slot6 = slot6.showTextTipById
+	slot8 = NoticeDef
+	slot8 = slot8.CANNOT_ENTER_HOMECAMP
+
+	slot6(slot8)
+
+	slot6 = false
+
+	return slot6
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-26, warpins: 2 ---
 	slot6 = true
 
 	return slot6
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot0.canEnterHomeCamp = slot2
+slot2.canEnterHomeCamp = slot4
 
-return slot0
+return slot2
 --- END OF BLOCK #0 ---
 
 

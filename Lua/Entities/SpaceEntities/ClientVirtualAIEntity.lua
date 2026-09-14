@@ -113,11 +113,7 @@ slot33 = slot29
 slot30(slot32, slot33)
 
 slot30 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
-	slot2 = VirtualEntUtils
-	slot2 = slot2.getNewVirtualEntActorId
-	slot2 = slot2()
-	slot0.actorId = slot2
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = ClientVirtualAIEntity
 	slot2 = slot2.super
 	slot2 = slot2.ctor
@@ -140,7 +136,7 @@ end
 slot10.ctor = slot30
 
 slot30 = function(slot0, slot1)
-	--- BLOCK #0 1-26, warpins: 1 ---
+	--- BLOCK #0 1-30, warpins: 1 ---
 	slot2 = ClientVirtualAIEntity
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -149,6 +145,10 @@ slot30 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = VirtualEntUtils
+	slot2 = slot2.getNewVirtualEntActorId
+	slot2 = slot2()
+	slot0.actorId = slot2
 	slot2 = slot1.virtualTemplateId
 	slot0.templateId = slot2
 	slot2 = slot1.virtualTemplateClassName
@@ -176,17 +176,15 @@ slot30 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 27-27, warpins: 1 ---
+	--- BLOCK #1 31-31, warpins: 1 ---
 	slot3 = 1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 28-44, warpins: 2 ---
+	--- BLOCK #2 32-46, warpins: 2 ---
 	slot0.curModelScale = slot3
-	slot3 = slot1.isClientEnt
-	slot0.isClientEnt = slot3
 	slot5 = slot0
 	slot3 = slot0.setBtName
 	slot8 = slot0
@@ -210,14 +208,14 @@ slot30 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 45-45, warpins: 1 ---
+	--- BLOCK #3 47-47, warpins: 1 ---
 	slot3 = 0.2
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 46-49, warpins: 2 ---
+	--- BLOCK #4 48-51, warpins: 2 ---
 	slot0.bodySize = slot3
 	slot3 = slot2.bodySize
 	--- END OF BLOCK #4 ---
@@ -229,15 +227,17 @@ slot30 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 50-50, warpins: 1 ---
+	--- BLOCK #5 52-52, warpins: 1 ---
 	slot3 = 0.5
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 51-53, warpins: 2 ---
+	--- BLOCK #6 53-57, warpins: 2 ---
 	slot0.bodyHeight = slot3
+	slot3 = true
+	slot0.useSimpleTimeScale = slot3
 	slot3 = true
 
 	return slot3
@@ -360,7 +360,7 @@ end
 slot10.startVirtualEntity = slot30
 
 slot30 = function(slot0)
-	--- BLOCK #0 1-42, warpins: 1 ---
+	--- BLOCK #0 1-36, warpins: 1 ---
 	slot1 = ClientVirtualAIEntity
 	slot1 = slot1.super
 	slot1 = slot1.initializeComponents
@@ -368,50 +368,44 @@ slot30 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_MODEL
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_EFFECT
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_PLAYABLE
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_MOTION
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_AUTO_PATH_FIND
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_AI_CONTROLLER
 
 	slot1(slot3, slot4)
@@ -464,7 +458,7 @@ end
 slot10.getCsEntityType = slot30
 
 slot30 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = ClientVirtualAIEntity
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -472,20 +466,18 @@ slot30 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-11, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -493,13 +485,12 @@ slot30 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-23, warpins: 2 ---
+	--- BLOCK #2 10-20, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = ClientModelUtils
 	slot3 = slot3.getModelExtraInfo
 	slot5 = slot1
@@ -513,14 +504,14 @@ slot30 = function(slot0)
 	end
 
 
-	--- BLOCK #3 24-24, warpins: 1 ---
+	--- BLOCK #3 21-21, warpins: 1 ---
 	slot6 = 0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-49, warpins: 2 ---
+	--- BLOCK #4 22-46, warpins: 2 ---
 	slot7 = slot0.gender
 	slot3 = slot3(slot5, slot6, slot7)
 	slot4 = ClientModelUtils
@@ -561,7 +552,7 @@ slot30 = function(slot0)
 	end
 
 
-	--- BLOCK #5 50-50, warpins: 1 ---
+	--- BLOCK #5 47-47, warpins: 1 ---
 	slot7 = slot1.layer
 
 	--- END OF BLOCK #5 ---
@@ -569,7 +560,7 @@ slot30 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 51-52, warpins: 2 ---
+	--- BLOCK #6 48-49, warpins: 2 ---
 	slot4(slot6, slot7)
 
 	return

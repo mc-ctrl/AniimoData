@@ -1,8 +1,5 @@
 --- BLOCK #0 1-22, warpins: 1 ---
 slot0 = {
-	_URL = "https://github.com/kikito/md5.lua",
-	_VERSION = "md5.lua 1.1.0",
-	_DESCRIPTION = "MD5 computation in Lua (5.1-3, LuaJIT)",
 	_LICENSE = [[
     MIT LICENSE
 
@@ -26,7 +23,10 @@ slot0 = {
     CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-  ]]
+  ]],
+	_DESCRIPTION = "MD5 computation in Lua (5.1-3, LuaJIT)",
+	_VERSION = "md5.lua 1.1.0",
+	_URL = "https://github.com/kikito/md5.lua"
 }
 slot1 = string
 slot1 = slot1.char

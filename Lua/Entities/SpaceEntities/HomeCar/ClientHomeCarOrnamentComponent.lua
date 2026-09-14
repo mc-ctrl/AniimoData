@@ -29,56 +29,75 @@ slot7 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
+	--- BLOCK #1 4-10, warpins: 1 ---
 	slot2 = slot1.homeTemplateId
 	slot0.homeTemplateId = slot2
 	slot2 = slot1.ornamentId
 	slot0.ornamentId = slot2
-	slot2 = slot1.playerUID
-	slot0.playerUID = slot2
+	slot2 = slot1.areaId
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 10-12, warpins: 2 ---
-	slot2 = slot0.ornamentId
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-15, warpins: 1 ---
-	slot2 = slot0.ornamentId
+	--- BLOCK #3 12-14, warpins: 2 ---
+	slot0.areaId = slot2
+	slot2 = slot1.playerUID
+	slot0.playerUID = slot2
 	--- END OF BLOCK #3 ---
 
-	if slot2 ~= 0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-18, warpins: 1 ---
-	slot2 = slot0.playerUID
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot2 = slot0.ornamentId
 	--- END OF BLOCK #4 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 19-29, warpins: 1 ---
+	--- BLOCK #5 18-20, warpins: 1 ---
+	slot2 = slot0.ornamentId
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 21-23, warpins: 1 ---
+	slot2 = slot0.playerUID
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 24-34, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.homeCar
@@ -88,16 +107,16 @@ slot7 = function(slot0, slot1)
 	slot2 = slot2(slot4, slot5)
 	slot0.carGroup = slot2
 	slot2 = slot0.carGroup
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 30-37, warpins: 1 ---
+	--- BLOCK #8 35-42, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.error
@@ -108,16 +127,16 @@ slot7 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6, slot7, slot8)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 38-39, warpins: 5 ---
+	--- BLOCK #9 43-44, warpins: 5 ---
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 

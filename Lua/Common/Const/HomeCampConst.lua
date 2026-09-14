@@ -20,28 +20,28 @@ slot1 = 10
 slot0.DEFAULT_MAX_ENTER = slot1
 slot1 = {}
 slot2 = {
-	quota = 4,
 	minLogin = 5,
-	name = "high"
+	name = "high",
+	quota = 4
 }
 slot1[1] = slot2
 slot2 = {
-	quota = 7,
 	minLogin = 3,
-	name = "mid"
+	name = "mid",
+	quota = 7
 }
 slot1[2] = slot2
 slot2 = {
-	quota = 7,
 	minLogin = 1,
-	name = "low"
+	name = "low",
+	quota = 7
 }
 slot1[3] = slot2
 slot2 = {
-	maxQuota = 4,
-	quota = 2,
 	minLogin = 0,
-	name = "empty"
+	maxQuota = 4,
+	name = "empty",
+	quota = 2
 }
 slot1[4] = slot2
 slot0.RECOMMEND_BAND = slot1
@@ -57,7 +57,7 @@ slot1 = 120
 slot0.ENTER_HEARTBEAT_CHECK_INTERVAL = slot1
 slot1 = 60
 slot0.OFFLINE_CHECK_INTERVAL = slot1
-slot1 = 5
+slot1 = 30
 slot0.DIRECTORY_SYNC_INTERVAL = slot1
 slot1 = 5
 slot0.MONGO_FLUSH_INTERVAL = slot1

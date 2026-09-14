@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-55, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -8,31 +8,34 @@ slot1 = slot1(slot3)
 slot2 = require
 slot4 = "Common.Const.GroupBehaviourConst"
 slot2 = slot2(slot4)
-slot3 = slot2.TacheDefine
-slot4 = require
-slot6 = "Common.AI.GroupBehavior.SheepGather.GBT_SearchSheep"
-slot4 = slot4(slot6)
+slot3 = require
+slot5 = "Common.Const.Const"
+slot3 = slot3(slot5)
+slot4 = slot2.TacheDefine
 slot5 = require
-slot7 = "Common.AI.GroupBehavior.SheepGather.GBT_SheepGather"
+slot7 = "Common.AI.GroupBehavior.SheepGather.GBT_SearchSheep"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.AI.GroupBehavior.SheepGather.GBT_SheepAbility"
+slot8 = "Common.AI.GroupBehavior.SheepGather.GBT_SheepGather"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.AiConst"
+slot9 = "Common.AI.GroupBehavior.SheepGather.GBT_SheepAbility"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.EntityCacheValueUtils"
+slot10 = "Common.Const.AiConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Utils.AIUtils"
+slot11 = "Common.Utils.EntityCacheValueUtils"
 slot9 = slot9(slot11)
-slot10 = slot0.LiteClass
-slot12 = "GB_SheepGather"
-slot13 = slot1
-slot10 = slot10(slot12, slot13)
+slot10 = require
+slot12 = "Common.Utils.AIUtils"
+slot10 = slot10(slot12)
+slot11 = slot0.LiteClass
+slot13 = "GB_SheepGather"
+slot14 = slot1
+slot11 = slot11(slot13, slot14)
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-57, warpins: 1 ---
 	slot0.bindEnt = slot1
 	slot4 = slot1
@@ -105,9 +108,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onInit = slot11
+slot11.onInit = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = GroupBehaviourBase
 	slot1 = slot1.onStart
@@ -130,9 +133,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onStart = slot11
+slot11.onStart = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.fsm
 	--- END OF BLOCK #0 ---
@@ -205,9 +208,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.isRunning = slot11
+slot11.isRunning = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._setMemberAttach
@@ -230,9 +233,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onMemberRemove = slot11
+slot11.onMemberRemove = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.members
@@ -271,9 +274,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.setAllMemberAttach = slot11
+slot11.setAllMemberAttach = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.bindEnt
 
@@ -294,57 +297,44 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
-	slot4 = NotNil
-	slot6 = slot3.eModel
-	slot4 = slot4(slot6)
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot4 = slot3.eModel
 	--- END OF BLOCK #2 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 10-14, warpins: 1 ---
-	slot4 = NotNil
-	slot6 = slot1.eModel
-	slot4 = slot4(slot6)
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot4 = slot1.eModel
 	--- END OF BLOCK #3 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #4 15-20, warpins: 1 ---
-	slot4 = NotNil
-	slot6 = slot1.eModel
-	slot6 = slot6.attachComponent
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #4 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #5 21-22, warpins: 1 ---
-	--- END OF BLOCK #5 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #6
-	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 23-64, warpins: 1 ---
+	--- BLOCK #4 11-12, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 13-61, warpins: 1 ---
+	slot4 = Vector3
+	slot4 = slot4.enableCreateFromCache
+
+	slot4()
+
 	slot6 = slot3
 	slot4 = slot3.getRotation
 	slot4 = slot4(slot6)
@@ -372,15 +362,21 @@ slot11 = function(slot0, slot1, slot2)
 	slot6 = slot6(slot8)
 	slot5 = slot5 * slot6
 	slot6 = slot1.eModel
-	slot6 = slot6.attachComponent
 	slot8 = slot6
 	slot6 = slot6.AttachByCurrentPos
-	slot9 = slot3.eModel
-	slot10 = slot4
-	slot11 = slot5
-	slot12 = 1000
+	slot9 = Const
+	slot9 = slot9.COMPONENT_ATTACH
+	slot10 = slot3.eModel
+	slot11 = slot4
+	slot12 = slot5
+	slot13 = 1000
 
-	slot6(slot8, slot9, slot10, slot11, slot12)
+	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+
+	slot6 = Vector3
+	slot6 = slot6.disableCreateFromCache
+
+	slot6()
 
 	slot8 = slot1
 	slot6 = slot1.pauseBt
@@ -390,18 +386,19 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot6(slot8, slot9)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #7 65-75, warpins: 1 ---
+	--- BLOCK #6 62-73, warpins: 1 ---
 	slot4 = slot1.eModel
-	slot4 = slot4.attachComponent
 	slot6 = slot4
 	slot4 = slot4.Detach
+	slot7 = Const
+	slot7 = slot7.COMPONENT_ATTACH
 
-	slot4(slot6)
+	slot4(slot6, slot7)
 
 	slot6 = slot1
 	slot4 = slot1.resumeBt
@@ -411,22 +408,22 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #8 76-76, warpins: 5 ---
+	--- BLOCK #7 74-74, warpins: 4 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot10._setMemberAttach = slot11
+slot11._setMemberAttach = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.bindEnt
 	slot3 = 1
@@ -494,9 +491,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.setOwnerEntVal = slot11
+slot11.setOwnerEntVal = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.members
@@ -543,9 +540,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.setAllMemberEnterCombat = slot11
+slot11.setAllMemberEnterCombat = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.bindEnt
 	slot2 = slot1.space
@@ -592,9 +589,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.stopBehaviour = slot11
+slot11.stopBehaviour = slot12
 
-return slot10
+return slot11
 --- END OF BLOCK #0 ---
 
 

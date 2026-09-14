@@ -1,4 +1,4 @@
---- BLOCK #0 1-26, warpins: 1 ---
+--- BLOCK #0 1-29, warpins: 1 ---
 slot0 = {}
 slot1 = {}
 slot2 = {}
@@ -18,9 +18,12 @@ slot6 = "VectorPool"
 slot4 = slot4(slot6)
 slot5 = rawset
 slot6 = rawget
-slot7 = 6
+slot7 = Vector2
+slot8 = Vector3
+slot9 = Vector4
+slot10 = 6
 
-slot8 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -177,9 +180,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot0.getVector = slot8
+slot0.getVector = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -335,7 +338,7 @@ slot8 = function(slot0)
 
 end
 
-slot0.returnVector = slot8
+slot0.returnVector = slot11
 
 return slot0
 --- END OF BLOCK #0 ---

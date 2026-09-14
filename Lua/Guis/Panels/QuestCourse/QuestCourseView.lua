@@ -22,115 +22,62 @@ end
 slot2.findObjects = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-109, warpins: 1 ---
+	--- BLOCK #0 1-56, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
-	slot0.objectReference = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseUList = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "leftHotKeyContent"
-	slot1 = slot1(slot3, slot4)
-	slot0.leftHotKeyContent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "rightHotKeyContent"
-	slot1 = slot1(slot3, slot4)
-	slot0.rightHotKeyContent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseGradePanel"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseGradePanel = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseDetailOR"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailOR = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "closeBtn"
-	slot1 = slot1(slot3, slot4)
-	slot0.closeBtn = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "root"
-	slot1 = slot1(slot3, slot4)
-	slot0.root = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseDetailOR"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailOR = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseNameTxt"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailNameTxt = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "imgRoleUImage"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailRoleImg = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseFinTxt"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailFinTxt = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseTotalTxt"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailTotalTxt = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseProgressSlider"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailProgressSlider = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "courseList"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailList = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "rewardUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailRewardList = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "closeBtn"
-	slot1 = slot1(slot3, slot4)
-	slot0.courseDetailCloseBtn = slot1
-	slot1 = slot0.courseDetailOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnCloseUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnCloseUButton = slot1
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "courseUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.courseUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "closeBtn"
+	slot2 = slot2(slot4, slot5)
+	slot0.closeBtn = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "root"
+	slot2 = slot2(slot4, slot5)
+	slot0.root = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "courseFinTxt"
+	slot2 = slot2(slot4, slot5)
+	slot0.courseFinTxt = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "courseTotalTxt"
+	slot2 = slot2(slot4, slot5)
+	slot0.courseTotalTxt = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "courseDetailList"
+	slot2 = slot2(slot4, slot5)
+	slot0.courseDetailList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rewardUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.rewardUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "beginnerNode"
+	slot2 = slot2(slot4, slot5)
+	slot0.beginnerNode = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "mainCom"
+	slot2 = slot2(slot4, slot5)
+	slot0.mainCom = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "titleTxt"
+	slot2 = slot2(slot4, slot5)
+	slot0.titleTxt = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -166,7 +113,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-82, warpins: 1 ---
+	--- BLOCK #1 5-47, warpins: 1 ---
 	slot2 = slot1.transform
 	slot4 = slot2
 	slot2 = slot2.GetComponent
@@ -182,27 +129,6 @@ slot4 = function(slot0, slot1)
 	slot7 = "courseUComponent"
 	slot4 = slot4(slot6, slot7)
 	slot3.com = slot4
-	slot3 = courseGradeItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "ani"
-	slot4 = slot4(slot6, slot7)
-	slot3.ani = slot4
-	slot3 = courseGradeItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "bgImg"
-	slot4 = slot4(slot6, slot7)
-	slot3.bgImg = slot4
-	slot3 = courseGradeItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "unlockDetailTxt"
-	slot4 = slot4(slot6, slot7)
-	slot3.unlockDetailTxt = slot4
 	slot3 = courseGradeItemsComs
 	slot3 = slot3[slot1]
 	slot6 = slot2
@@ -231,26 +157,12 @@ slot4 = function(slot0, slot1)
 	slot7 = "courseProgressSlider"
 	slot4 = slot4(slot6, slot7)
 	slot3.courseProgressSlider = slot4
-	slot3 = courseGradeItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "rewardtUList"
-	slot4 = slot4(slot6, slot7)
-	slot3.rewardtUList = slot4
-	slot3 = courseGradeItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "selectedState"
-	slot4 = slot4(slot6, slot7)
-	slot3.selectedState = slot4
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 83-85, warpins: 2 ---
+	--- BLOCK #2 48-50, warpins: 2 ---
 	slot2 = courseGradeItemsComs
 	slot2 = slot2[slot1]
 
@@ -277,7 +189,7 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-82, warpins: 1 ---
+	--- BLOCK #1 5-92, warpins: 1 ---
 	slot2 = slot1.transform
 	slot4 = slot2
 	slot2 = slot2.GetComponent
@@ -297,13 +209,6 @@ slot5 = function(slot0, slot1)
 	slot3 = slot3[slot1]
 	slot6 = slot2
 	slot4 = slot2.GetRefValue
-	slot7 = "ani"
-	slot4 = slot4(slot6, slot7)
-	slot3.ani = slot4
-	slot3 = courseItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
 	slot7 = "nameTxt"
 	slot4 = slot4(slot6, slot7)
 	slot3.nameTxt = slot4
@@ -318,13 +223,6 @@ slot5 = function(slot0, slot1)
 	slot3 = slot3[slot1]
 	slot6 = slot2
 	slot4 = slot2.GetRefValue
-	slot7 = "typeTxt"
-	slot4 = slot4(slot6, slot7)
-	slot3.typeTxt = slot4
-	slot3 = courseItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
 	slot7 = "typeImg"
 	slot4 = slot4(slot6, slot7)
 	slot3.typeImg = slot4
@@ -332,36 +230,60 @@ slot5 = function(slot0, slot1)
 	slot3 = slot3[slot1]
 	slot6 = slot2
 	slot4 = slot2.GetRefValue
-	slot7 = "lockTxt"
-	slot4 = slot4(slot6, slot7)
-	slot3.lockTxt = slot4
-	slot3 = courseItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
 	slot7 = "rewardUList"
 	slot4 = slot4(slot6, slot7)
 	slot3.rewardUList = slot4
-	slot3 = courseItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "startBtn"
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "startBtn"
+	slot3 = slot3(slot5, slot6)
+	slot4 = courseItemsComs
+	slot4 = slot4[slot1]
+	slot4.startBtn = slot3
+	slot4 = slot3.transform
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "ObjectReference"
 	slot4 = slot4(slot6, slot7)
-	slot3.startBtn = slot4
-	slot3 = courseItemsComs
-	slot3 = slot3[slot1]
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "consoleSelected"
-	slot4 = slot4(slot6, slot7)
-	slot3.consoleSelected = slot4
+	slot5 = courseItemsComs
+	slot5 = slot5[slot1]
+	slot8 = slot4
+	slot6 = slot4.GetRefValue
+	slot9 = "txtNameUText"
+	slot6 = slot6(slot8, slot9)
+	slot5.startBtnTxt = slot6
+	slot5 = courseItemsComs
+	slot5 = slot5[slot1]
+	slot8 = slot4
+	slot6 = slot4.GetRefValue
+	slot9 = "keyHotKeyContent"
+	slot6 = slot6(slot8, slot9)
+	slot5.startBtnHotkey = slot6
+	slot7 = slot2
+	slot5 = slot2.GetRefValue
+	slot8 = "claimBtn"
+	slot5 = slot5(slot7, slot8)
+	slot6 = courseItemsComs
+	slot6 = slot6[slot1]
+	slot6.claimBtn = slot5
+	slot6 = slot5.transform
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "ObjectReference"
+	slot6 = slot6(slot8, slot9)
+	slot7 = courseItemsComs
+	slot7 = slot7[slot1]
+	slot10 = slot6
+	slot8 = slot6.GetRefValue
+	slot11 = "txtNameUText"
+	slot8 = slot8(slot10, slot11)
+	slot7.claimBtnTxt = slot8
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 83-85, warpins: 2 ---
+	--- BLOCK #2 93-95, warpins: 2 ---
 	slot2 = courseItemsComs
 	slot2 = slot2[slot1]
 
@@ -388,7 +310,7 @@ slot6 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-37, warpins: 1 ---
+	--- BLOCK #1 5-33, warpins: 1 ---
 	slot2 = courseDetailRewardItemsComs
 	slot3 = {}
 	slot2[slot1] = slot3
@@ -401,33 +323,29 @@ slot6 = function(slot0, slot1)
 	slot3 = slot3[slot1]
 	slot6 = slot2
 	slot4 = slot2.GetRefValue
-	slot7 = "numUText"
+	slot7 = "rewardBtn"
 	slot4 = slot4(slot6, slot7)
-	slot3.courseNumTxt = slot4
+	slot3.rewardBtn = slot4
 	slot3 = courseDetailRewardItemsComs
 	slot3 = slot3[slot1]
 	slot6 = slot2
 	slot4 = slot2.GetRefValue
-	slot7 = "rewardBtn"
+	slot7 = "progressUProgress"
 	slot4 = slot4(slot6, slot7)
-	slot3.rewardBtn = slot4
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "rewardItemOR"
-	slot3 = slot3(slot5, slot6)
-	slot4 = courseDetailRewardItemsComs
-	slot4 = slot4[slot1]
-	slot7 = slot3
-	slot5 = slot3.GetRefValue
-	slot8 = "consoleSelected"
-	slot5 = slot5(slot7, slot8)
-	slot4.consoleSelected = slot5
+	slot3.progress = slot4
+	slot3 = courseDetailRewardItemsComs
+	slot3 = slot3[slot1]
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "textTitle"
+	slot4 = slot4(slot6, slot7)
+	slot3.textTitle = slot4
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 38-40, warpins: 2 ---
+	--- BLOCK #2 34-36, warpins: 2 ---
 	slot2 = courseDetailRewardItemsComs
 	slot2 = slot2[slot1]
 

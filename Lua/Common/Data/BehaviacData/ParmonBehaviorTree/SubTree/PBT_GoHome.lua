@@ -16,8 +16,8 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "vector<float>",
 	name = "tBornPos",
+	type = "vector<float>",
 	value = "0:"
 }
 slot6 = {}
@@ -27,8 +27,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Selector",
-	id = "1"
+	id = "1",
+	class = "Selector"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -37,8 +37,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "2"
+	id = "2",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -70,8 +70,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Sequence",
-	id = "3"
+	id = "3",
+	class = "Sequence"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -80,8 +80,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	class = "Assignment",
-	id = "6"
+	id = "6",
+	class = "Assignment"
 }
 slot11 = {}
 slot12 = {
@@ -109,8 +109,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	class = "Action",
-	id = "5"
+	id = "5",
+	class = "Action"
 }
 slot11 = {}
 slot12 = {}

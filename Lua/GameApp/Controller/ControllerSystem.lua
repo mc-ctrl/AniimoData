@@ -1,4 +1,4 @@
---- BLOCK #0 1-78, warpins: 1 ---
+--- BLOCK #0 1-81, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -32,17 +32,20 @@ slot9 = slot9(slot11)
 slot10 = require
 slot12 = "GameApp.Controller.Utils.AutoCastController"
 slot10 = slot10(slot12)
-slot11 = CS
-slot11 = slot11.FunPlus
-slot11 = slot11.WorldX
-slot11 = slot11.SpecialAbility
-slot11 = slot11.SwitchInfo
-slot12 = slot2.LightClass
-slot14 = "ControllerSystem"
-slot15 = slot1
-slot12 = slot12(slot14, slot15)
+slot11 = require
+slot13 = "Core.Common.lume"
+slot11 = slot11(slot13)
+slot12 = CS
+slot12 = slot12.FunPlus
+slot12 = slot12.WorldX
+slot12 = slot12.SpecialAbility
+slot12 = slot12.SwitchInfo
+slot13 = slot2.LightClass
+slot15 = "ControllerSystem"
+slot16 = slot1
+slot13 = slot13(slot15, slot16)
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = {}
 	slot2 = MessageName
@@ -65,10 +68,10 @@ slot13 = function(slot0)
 
 end
 
-slot12.getMessageBindMap = slot13
+slot13.getMessageBindMap = slot14
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-46, warpins: 1 ---
+slot14 = function(slot0)
+	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = nil
 	slot0.me = slot1
 	slot1 = nil
@@ -83,7 +86,8 @@ slot13 = function(slot0)
 	slot1 = slot1()
 	slot0.csSwitchInfo = slot1
 	slot1 = Time
-	slot1 = slot1.millisecondCache
+	slot1 = slot1.realSecondCache
+	slot1 = slot1 * 1000
 	slot0.lastFrameTickTime = slot1
 	slot1 = NextSkillAction
 	slot1 = slot1.new
@@ -122,9 +126,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onCtor = slot13
+slot13.onCtor = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.lockHelper
 	slot3 = slot1
@@ -139,9 +143,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onInputDeviceChange = slot13
+slot13.onInputDeviceChange = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -150,12 +154,13 @@ slot13 = function(slot0)
 
 end
 
-slot12.onInit = slot13
+slot13.onInit = slot14
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot14 = function(slot0)
+	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.millisecondCache
+	slot1 = slot1.realSecondCache
+	slot1 = slot1 * 1000
 	slot2 = slot0.lastFrameTickTime
 	slot2 = slot1 - slot2
 	slot0.lastFrameTickDuration = slot2
@@ -196,9 +201,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onTick = slot13
+slot13.onTick = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setPlayer
@@ -213,12 +218,16 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onPlayerInit = slot13
+slot13.onPlayerInit = slot14
 
-slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
-	slot2 = {}
-	slot0.switchAbilityHintInfo = slot2
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot2 = lume
+	slot2 = slot2.clear
+	slot4 = slot0.switchAbilityHintInfo
+
+	slot2(slot4)
+
 	slot2 = facade
 	slot4 = slot2
 	slot2 = slot2.SendMessageCommand
@@ -241,9 +250,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onPlayerDestroy = slot13
+slot13.onPlayerDestroy = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.me
 	--- END OF BLOCK #0 ---
@@ -288,9 +297,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.setPlayer = slot13
+slot13.setPlayer = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.me
 	slot2 = slot0.pawn
@@ -335,9 +344,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.isInControlEnt = slot13
+slot13.isInControlEnt = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.me
 	slot2 = slot0.pawn
@@ -381,9 +390,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.isInControlMainPlayer = slot13
+slot13.isInControlMainPlayer = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -550,9 +559,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot12.controlEntity = slot13
+slot13.controlEntity = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.controlEntity
@@ -569,9 +578,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.resetController = slot13
+slot13.resetController = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -590,8 +599,40 @@ slot13 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-11, warpins: 2 ---
+	--- BLOCK #2 4-6, warpins: 2 ---
 	slot3 = slot0.curController
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 7-9, warpins: 1 ---
+	slot4 = slot3.isVehicle
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-12, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.exit
+
+	slot4(slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-19, warpins: 3 ---
 	slot0.curController = slot1
 	slot6 = slot1
 	slot4 = slot1.enter
@@ -601,15 +642,15 @@ slot13 = function(slot0, slot1, slot2)
 	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot12.switchController = slot13
+slot13.switchController = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.me
 
@@ -646,9 +687,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onHandleOnCloseUI = slot13
+slot13.onHandleOnCloseUI = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -717,9 +758,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.controlTempPlayer = slot13
+slot13.controlTempPlayer = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.enableSwitchController = slot1
 
@@ -730,9 +771,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.setSwitchControllerEnable = slot13
+slot13.setSwitchControllerEnable = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.lockHelper
 	--- END OF BLOCK #0 ---
@@ -823,9 +864,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onLeaveCatchMode = slot13
+slot13.onLeaveCatchMode = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

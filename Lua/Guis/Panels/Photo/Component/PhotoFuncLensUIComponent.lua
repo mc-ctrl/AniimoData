@@ -1,4 +1,4 @@
---- BLOCK #0 1-148, warpins: 1 ---
+--- BLOCK #0 1-173, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -22,146 +22,203 @@ slot5 = require
 slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.HotkeyConst"
+slot8 = "Utils.ClientSettingUtils"
 slot6 = slot6(slot8)
-slot7 = {
-	ROTATE = 9,
-	VIGNETTE = 8,
-	CONTRAST = 7,
-	BRIGHTNESS = 6,
+slot7 = require
+slot9 = "Const.HotkeyConst"
+slot7 = slot7(slot9)
+slot8 = {
 	SATURATION = 5,
 	EXPOSURE = 4,
 	DOF_R = 3,
 	DOF = 2,
-	FOV = 1
+	FOV = 1,
+	ROTATE = 9,
+	VIGNETTE = 8,
+	CONTRAST = 7,
+	BRIGHTNESS = 6
 }
-slot3.Tabs = slot7
-slot7 = {
+slot3.Tabs = slot8
+slot8 = {
 	KeyValue = 1
 }
-slot3.CameraParamTipType = slot7
-slot7 = {}
-slot8 = slot3.Tabs
-slot8 = slot8.FOV
-slot9 = {
-	label = "FIELD_OF_VIEW",
+slot3.CameraParamTipType = slot8
+slot8 = {}
+slot9 = slot3.Tabs
+slot9 = slot9.FOV
+slot10 = {
 	showRate = 10,
 	maxValue = 10,
-	defaultValue = 1.4
+	defaultValue = 1.4,
+	label = "FIELD_OF_VIEW"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.FOV
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.DOF
-slot9 = {
-	label = "DEPTH_OF_FIELD",
+slot11 = slot3.Tabs
+slot11 = slot11.FOV
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.DOF
+slot10 = {
 	adjust = 100,
 	flip = true,
 	showRate = -10,
 	maxValue = 10,
 	defaultValue = 10,
-	startValue = 1
+	startValue = 1,
+	label = "DEPTH_OF_FIELD"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.DOF
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.DOF_R
-slot9 = {
-	label = "DEPTH_OF_FIELD_RANGE",
+slot11 = slot3.Tabs
+slot11 = slot11.DOF
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.DOF_R
+slot10 = {
 	showRate = 100,
 	maxValue = 1,
-	defaultValue = 0.5
+	defaultValue = 0.5,
+	label = "DEPTH_OF_FIELD_RANGE"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.DOF_R
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.EXPOSURE
-slot9 = {
-	label = "PHOTO_EXPOSURE",
-	maxValue = 1,
-	showRate = 100,
-	minValue = -1,
-	defaultValue = 0
-}
-slot10 = slot3.Tabs
-slot10 = slot10.EXPOSURE
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.SATURATION
-slot9 = {
-	label = "PHOTO_SATURATION",
+slot11 = slot3.Tabs
+slot11 = slot11.DOF_R
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.EXPOSURE
+slot10 = {
 	maxValue = 1,
 	showRate = 100,
 	minValue = -1,
-	defaultValue = 0
+	defaultValue = 0,
+	label = "PHOTO_EXPOSURE"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.SATURATION
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.BRIGHTNESS
-slot9 = {
-	label = "PHOTO_BRIGHTNESS",
+slot11 = slot3.Tabs
+slot11 = slot11.EXPOSURE
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.SATURATION
+slot10 = {
 	maxValue = 1,
 	showRate = 100,
 	minValue = -1,
-	defaultValue = 0
+	defaultValue = 0,
+	label = "PHOTO_SATURATION"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.BRIGHTNESS
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.CONTRAST
-slot9 = {
-	label = "PHOTO_CONTRAST",
+slot11 = slot3.Tabs
+slot11 = slot11.SATURATION
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.BRIGHTNESS
+slot10 = {
 	maxValue = 1,
 	showRate = 100,
 	minValue = -1,
-	defaultValue = 0
+	defaultValue = 0,
+	label = "PHOTO_BRIGHTNESS"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.CONTRAST
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.VIGNETTE
-slot9 = {
-	label = "PHOTO_VIGNETTE",
+slot11 = slot3.Tabs
+slot11 = slot11.BRIGHTNESS
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.CONTRAST
+slot10 = {
+	maxValue = 1,
+	showRate = 100,
+	minValue = -1,
+	defaultValue = 0,
+	label = "PHOTO_CONTRAST"
+}
+slot11 = slot3.Tabs
+slot11 = slot11.CONTRAST
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.VIGNETTE
+slot10 = {
 	formatString = "%.2f",
 	showRate = 12.5,
 	maxValue = 0.8,
-	defaultValue = 0
+	defaultValue = 0,
+	label = "PHOTO_VIGNETTE"
 }
-slot10 = slot3.Tabs
-slot10 = slot10.VIGNETTE
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot8 = slot3.Tabs
-slot8 = slot8.ROTATE
-slot9 = {
-	label = "ROTATE_TEXT",
+slot11 = slot3.Tabs
+slot11 = slot11.VIGNETTE
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot9 = slot3.Tabs
+slot9 = slot9.ROTATE
+slot10 = {
 	maxValue = 90,
 	startValue = 0.5,
 	showRate = 1,
 	minValue = -90,
-	defaultValue = 0
+	defaultValue = 0,
+	label = "ROTATE_TEXT"
 }
+slot11 = slot3.Tabs
+slot11 = slot11.ROTATE
+slot10.tabId = slot11
+slot8[slot9] = slot10
+slot3.ConfigData = slot8
+slot8 = 0.01
+slot9 = {}
 slot10 = slot3.Tabs
-slot10 = slot10.ROTATE
-slot9.tabId = slot10
-slot7[slot8] = slot9
-slot3.ConfigData = slot7
+slot10 = slot10.SATURATION
+slot11 = slot6.get_worldCameraSaturation
+slot9[slot10] = slot11
+slot10 = slot3.Tabs
+slot10 = slot10.BRIGHTNESS
+slot11 = slot6.get_worldCameraBrightness
+slot9[slot10] = slot11
+slot10 = slot3.Tabs
+slot10 = slot10.CONTRAST
+slot11 = slot6.get_worldCameraContrast
+slot9[slot10] = slot11
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = WorldCameraSettingGetterByTab
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot3 = slot2
+	slot3 = slot3()
+	slot4 = WORLD_CAMERA_SETTING_RATE
+	slot3 = slot3 * slot4
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-13, warpins: 2 ---
+	slot3 = slot0.ConfigData
+	slot3 = slot3[slot1]
+	slot3 = slot3.defaultValue
+
+	return slot3
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot3.getDefaultValue = slot10
+
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -195,9 +252,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.onCtor = slot7
+slot3.onCtor = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-65, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -271,9 +328,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.findObjects = slot7
+slot3.findObjects = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initPhotoLens
@@ -287,9 +344,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.initView = slot7
+slot3.initView = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.updateRotate
@@ -303,9 +360,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.update = slot7
+slot3.update = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -342,9 +399,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.onRefreshPhotoType = slot7
+slot3.onRefreshPhotoType = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.listUList
 	slot3 = slot1
@@ -366,9 +423,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.onDestroy = slot7
+slot3.onDestroy = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = slot0.Tabs
 	slot1 = slot1.FOV
@@ -414,23 +471,24 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #2 33-35, warpins: 1 ---
-	slot7 = slot0.ConfigData
-	slot7 = slot7[slot5]
-	slot7 = slot7.defaultValue
+	--- BLOCK #2 33-36, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.getDefaultValue
+	slot10 = slot5
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 36-36, warpins: 2 ---
+	--- BLOCK #3 37-37, warpins: 2 ---
 	slot6[slot5] = slot7
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 37-38, warpins: 2 ---
+	--- BLOCK #4 38-39, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -438,7 +496,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 39-114, warpins: 1 ---
+	--- BLOCK #5 40-115, warpins: 1 ---
 	slot1 = slot0.btnArrowLeftUButton
 	slot3 = slot1
 	slot1 = slot1.SetActive
@@ -457,7 +515,7 @@ slot7 = function(slot0)
 	slot1 = slot1.zoom
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-10, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.setFov
@@ -465,8 +523,36 @@ slot7 = function(slot0)
 
 		slot1(slot3, slot4)
 
-		return
+		slot1 = self
+		slot1 = slot1.ctrl
+		slot1 = slot1.scheduleHistoryStep
 		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 11-17, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.ctrl
+		slot3 = slot1
+		slot1 = slot1.scheduleHistoryStep
+		slot4 = "lens_adjust"
+		slot5 = 0.2
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 18-18, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
 
 
 
@@ -562,11 +648,11 @@ slot7 = function(slot0)
 		slot0 = self
 		slot0 = slot0.sliderUSlider
 		slot1 = self
-		slot1 = slot1.ConfigData
-		slot2 = self
-		slot2 = slot2.curTab
-		slot1 = slot1[slot2]
-		slot1 = slot1.defaultValue
+		slot3 = slot1
+		slot1 = slot1.getDefaultValue
+		slot4 = self
+		slot4 = slot4.curTab
+		slot1 = slot1(slot3, slot4)
 		slot0.value = slot1
 
 		return
@@ -950,7 +1036,7 @@ slot7 = function(slot0)
 			slot10 = slot10.sliderUSlider
 
 			slot11 = function(slot0)
-				--- BLOCK #0 1-40, warpins: 1 ---
+				--- BLOCK #0 1-38, warpins: 1 ---
 				slot1 = self
 				slot1 = slot1.sliderValueByTab
 				slot2 = data
@@ -988,39 +1074,39 @@ slot7 = function(slot0)
 
 				slot2(slot4, slot5, slot6, slot7)
 
-				slot2 = data
-				slot2 = slot2.tabId
-				slot3 = self
-				slot3 = slot3.Tabs
-				slot3 = slot3.FOV
+				slot2 = self
+				slot2 = slot2.ctrl
+				slot2 = slot2.scheduleHistoryStep
 				--- END OF BLOCK #0 ---
 
-				if slot2 == slot3 then
+				slot2 = if slot2 then
 				JUMP TO BLOCK #1
 				else
 				JUMP TO BLOCK #2
 				end
 
 
-				--- BLOCK #1 41-46, warpins: 1 ---
+				--- BLOCK #1 39-45, warpins: 1 ---
 				slot2 = self
+				slot2 = slot2.ctrl
 				slot4 = slot2
-				slot2 = slot2.setFov
-				slot5 = slot0
+				slot2 = slot2.scheduleHistoryStep
+				slot5 = "lens_adjust"
+				slot6 = 0.2
 
-				slot2(slot4, slot5)
+				slot2(slot4, slot5, slot6)
 
 				--- END OF BLOCK #1 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				FLOW; TARGET BLOCK #2
 
 
-				--- BLOCK #2 47-53, warpins: 1 ---
+				--- BLOCK #2 46-52, warpins: 2 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.DOF
+				slot3 = slot3.FOV
 				--- END OF BLOCK #2 ---
 
 				if slot2 == slot3 then
@@ -1030,25 +1116,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #3 54-59, warpins: 1 ---
+				--- BLOCK #3 53-58, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setDof
+				slot2 = slot2.setFov
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #3 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #4 60-66, warpins: 1 ---
+				--- BLOCK #4 59-65, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.DOF_R
+				slot3 = slot3.DOF
 				--- END OF BLOCK #4 ---
 
 				if slot2 == slot3 then
@@ -1058,25 +1144,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #5 67-72, warpins: 1 ---
+				--- BLOCK #5 66-71, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setDofR
+				slot2 = slot2.setDof
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #5 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #6 73-79, warpins: 1 ---
+				--- BLOCK #6 72-78, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.EXPOSURE
+				slot3 = slot3.DOF_R
 				--- END OF BLOCK #6 ---
 
 				if slot2 == slot3 then
@@ -1086,25 +1172,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #7 80-85, warpins: 1 ---
+				--- BLOCK #7 79-84, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setExposure
+				slot2 = slot2.setDofR
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #7 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #8 86-92, warpins: 1 ---
+				--- BLOCK #8 85-91, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.SATURATION
+				slot3 = slot3.EXPOSURE
 				--- END OF BLOCK #8 ---
 
 				if slot2 == slot3 then
@@ -1114,25 +1200,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #9 93-98, warpins: 1 ---
+				--- BLOCK #9 92-97, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setSaturation
+				slot2 = slot2.setExposure
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #9 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #10 99-105, warpins: 1 ---
+				--- BLOCK #10 98-104, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.BRIGHTNESS
+				slot3 = slot3.SATURATION
 				--- END OF BLOCK #10 ---
 
 				if slot2 == slot3 then
@@ -1142,25 +1228,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #11 106-111, warpins: 1 ---
+				--- BLOCK #11 105-110, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setBrightness
+				slot2 = slot2.setSaturation
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #11 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #12 112-118, warpins: 1 ---
+				--- BLOCK #12 111-117, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.CONTRAST
+				slot3 = slot3.BRIGHTNESS
 				--- END OF BLOCK #12 ---
 
 				if slot2 == slot3 then
@@ -1170,25 +1256,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #13 119-124, warpins: 1 ---
+				--- BLOCK #13 118-123, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setContrast
+				slot2 = slot2.setBrightness
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #13 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #14 125-131, warpins: 1 ---
+				--- BLOCK #14 124-130, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.VIGNETTE
+				slot3 = slot3.CONTRAST
 				--- END OF BLOCK #14 ---
 
 				if slot2 == slot3 then
@@ -1198,25 +1284,25 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #15 132-137, warpins: 1 ---
+				--- BLOCK #15 131-136, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
-				slot2 = slot2.setVignette
+				slot2 = slot2.setContrast
 				slot5 = slot0
 
 				slot2(slot4, slot5)
 
 				--- END OF BLOCK #15 ---
 
-				UNCONDITIONAL JUMP; TARGET BLOCK #18
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-				--- BLOCK #16 138-144, warpins: 1 ---
+				--- BLOCK #16 137-143, warpins: 1 ---
 				slot2 = data
 				slot2 = slot2.tabId
 				slot3 = self
 				slot3 = slot3.Tabs
-				slot3 = slot3.ROTATE
+				slot3 = slot3.VIGNETTE
 				--- END OF BLOCK #16 ---
 
 				if slot2 == slot3 then
@@ -1226,7 +1312,35 @@ slot7 = function(slot0)
 				end
 
 
-				--- BLOCK #17 145-149, warpins: 1 ---
+				--- BLOCK #17 144-149, warpins: 1 ---
+				slot2 = self
+				slot4 = slot2
+				slot2 = slot2.setVignette
+				slot5 = slot0
+
+				slot2(slot4, slot5)
+
+				--- END OF BLOCK #17 ---
+
+				UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+				--- BLOCK #18 150-156, warpins: 1 ---
+				slot2 = data
+				slot2 = slot2.tabId
+				slot3 = self
+				slot3 = slot3.Tabs
+				slot3 = slot3.ROTATE
+				--- END OF BLOCK #18 ---
+
+				if slot2 == slot3 then
+				JUMP TO BLOCK #19
+				else
+				JUMP TO BLOCK #20
+				end
+
+
+				--- BLOCK #19 157-161, warpins: 1 ---
 				slot2 = self
 				slot4 = slot2
 				slot2 = slot2.setRotate
@@ -1234,14 +1348,14 @@ slot7 = function(slot0)
 
 				slot2(slot4, slot5)
 
-				--- END OF BLOCK #17 ---
+				--- END OF BLOCK #19 ---
 
-				FLOW; TARGET BLOCK #18
+				FLOW; TARGET BLOCK #20
 
 
-				--- BLOCK #18 150-150, warpins: 10 ---
+				--- BLOCK #20 162-162, warpins: 10 ---
 				return
-				--- END OF BLOCK #18 ---
+				--- END OF BLOCK #20 ---
 
 
 
@@ -1298,7 +1412,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #6 115-119, warpins: 1 ---
+	--- BLOCK #6 116-120, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.applyPreset
 	slot4 = slot0.preset
@@ -1310,7 +1424,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 120-122, warpins: 1 ---
+	--- BLOCK #7 121-123, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshAllEffect
 
@@ -1321,7 +1435,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 123-124, warpins: 2 ---
+	--- BLOCK #8 124-125, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -1329,9 +1443,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.initPhotoLens = slot7
+slot3.initPhotoLens = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.haveRefreshed
 	--- END OF BLOCK #0 ---
@@ -1339,43 +1453,98 @@ slot7 = function(slot0)
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot1 = {}
-	slot2 = pairs
-	slot4 = slot0.ConfigData
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.getHiddenLensTabs
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 9-11, warpins: 1 ---
-	slot7 = #slot1
-	slot7 = slot7 + 1
-	slot1[slot7] = slot6
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.getHiddenLensTabs
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 12-13, warpins: 2 ---
+	--- BLOCK #3 14-14, warpins: 2 ---
+	slot1 = nil
 	--- END OF BLOCK #3 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #4
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-34, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.sort
-	slot4 = slot1
+	--- BLOCK #4 15-19, warpins: 2 ---
+	slot2 = {}
+	slot3 = pairs
+	slot5 = slot0.ConfigData
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #4 ---
 
-	slot5 = function(slot0, slot1)
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-25, warpins: 1 ---
+	slot8 = slot7.tabId
+	slot8 = slot1[slot8]
+	--- END OF BLOCK #6 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-28, warpins: 2 ---
+	slot8 = #slot2
+	slot8 = slot8 + 1
+	slot2[slot8] = slot7
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 29-30, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 31-51, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot2
+
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot0.tabId
 		slot3 = slot1.tabId
@@ -1411,48 +1580,321 @@ slot7 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = slot0.listUList
-	slot4 = slot2
-	slot2 = slot2.SetList
-	slot5 = slot1
+	slot3 = slot0.listUList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = slot2
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = slot0.listUList
-	slot4 = slot2
-	slot2 = slot2.DeselectAll
+	slot3 = slot0.listUList
+	slot5 = slot3
+	slot3 = slot3.DeselectAll
 
-	slot2(slot4)
+	slot3(slot5)
 
-	slot2 = slot0.listUList
-	slot4 = slot2
-	slot2 = slot2.SelectItem
-	slot5 = 0
+	slot3 = slot0.listUList
+	slot5 = slot3
+	slot3 = slot3.SelectItem
+	slot6 = 0
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = true
-	slot0.haveRefreshed = slot2
+	slot3 = true
+	slot0.haveRefreshed = slot3
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #5 35-35, warpins: 2 ---
+	--- BLOCK #10 52-52, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot3.refreshUI = slot7
+slot3.refreshUI = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot2 = slot0.ConfigData
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.FOV
+	slot5 = slot1.fov
+	--- END OF BLOCK #1 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot5 = slot0.Tabs
+	slot5 = slot5.FOV
+	slot5 = slot2[slot5]
+	slot5 = slot5.defaultValue
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-20, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.DOF
+	slot5 = slot1.dof
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-24, warpins: 1 ---
+	slot5 = slot0.Tabs
+	slot5 = slot5.DOF
+	slot5 = slot2[slot5]
+	slot5 = slot5.defaultValue
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-31, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.DOF_R
+	slot5 = slot1.dofRange
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-35, warpins: 1 ---
+	slot5 = slot0.Tabs
+	slot5 = slot5.DOF_R
+	slot5 = slot2[slot5]
+	slot5 = slot5.defaultValue
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 36-42, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.EXPOSURE
+	slot5 = slot1.exposure
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 43-46, warpins: 1 ---
+	slot5 = slot0.Tabs
+	slot5 = slot5.EXPOSURE
+	slot5 = slot2[slot5]
+	slot5 = slot5.defaultValue
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 47-53, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.SATURATION
+	slot5 = slot1.saturation
+	--- END OF BLOCK #9 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 54-58, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getDefaultValue
+	slot8 = slot0.Tabs
+	slot8 = slot8.SATURATION
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 59-65, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.BRIGHTNESS
+	slot5 = slot1.brightness
+	--- END OF BLOCK #11 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 66-70, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getDefaultValue
+	slot8 = slot0.Tabs
+	slot8 = slot8.BRIGHTNESS
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 71-77, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.CONTRAST
+	slot5 = slot1.contrast
+	--- END OF BLOCK #13 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 78-82, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getDefaultValue
+	slot8 = slot0.Tabs
+	slot8 = slot8.CONTRAST
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 83-89, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.VIGNETTE
+	slot5 = slot1.vignette
+	--- END OF BLOCK #15 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 90-93, warpins: 1 ---
+	slot5 = slot0.Tabs
+	slot5 = slot5.VIGNETTE
+	slot5 = slot2[slot5]
+	slot5 = slot5.defaultValue
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 94-100, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot3 = slot0.sliderValueByTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.ROTATE
+	slot5 = slot1.rotate
+	--- END OF BLOCK #17 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 101-104, warpins: 1 ---
+	slot5 = slot0.Tabs
+	slot5 = slot5.ROTATE
+	slot5 = slot2[slot5]
+	slot5 = slot5.defaultValue
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 105-111, warpins: 2 ---
+	slot3[slot4] = slot5
+	slot5 = slot0
+	slot3 = slot0.refreshAllEffect
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.refreshCurrentSliderValue
+
+	slot3(slot5)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 112-112, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
+
+
+
+end
+
+slot3.applyPreset = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = slot0.ConfigData
+	slot2 = slot0.curTab
+	slot1 = slot1[slot2]
+	slot2 = slot0.sliderValueByTab
+	slot3 = slot0.curTab
+	slot2 = slot2[slot3]
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -1462,73 +1904,108 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-50, warpins: 1 ---
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.FOV
-	slot4 = slot1.fov
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.DOF
-	slot4 = slot1.dof
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.DOF_R
-	slot4 = slot1.dofRange
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.EXPOSURE
-	slot4 = slot1.exposure
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.SATURATION
-	slot4 = slot1.saturation
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.BRIGHTNESS
-	slot4 = slot1.brightness
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.CONTRAST
-	slot4 = slot1.contrast
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.VIGNETTE
-	slot4 = slot1.vignette
-	slot2[slot3] = slot4
-	slot2 = slot0.sliderValueByTab
-	slot3 = slot0.Tabs
-	slot3 = slot3.ROTATE
-	slot4 = slot1.rotate
-	slot2[slot3] = slot4
-	slot4 = slot0
-	slot2 = slot0.refreshAllEffect
-
-	slot2(slot4)
-
+	--- BLOCK #1 9-10, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 51-51, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
+
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-19, warpins: 2 ---
+	slot3 = slot0.sliderUSlider
+	slot5 = slot3
+	slot3 = slot3.SetValueWithoutCallback
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = slot1.showRate
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-20, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-23, warpins: 2 ---
+	slot4 = slot1.adjust
+	--- END OF BLOCK #5 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 24-24, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-27, warpins: 2 ---
+	slot5 = slot1.formatString
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 28-28, warpins: 1 ---
+	slot5 = "%d"
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 29-39, warpins: 2 ---
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot0.textNumUBaseText
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = slot5
+	slot12 = slot2 * slot3
+	slot12 = slot12 + slot4
+	MULTRES = slot9(slot11, slot12)
+
+	slot6(slot8, MULTRES)
+
+	return
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot3.applyPreset = slot7
+slot3.refreshCurrentSliderValue = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-100, warpins: 1 ---
 	slot2 = tonumber
 	slot4 = string
@@ -1637,9 +2114,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.saveToPreset = slot7
+slot3.saveToPreset = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-64, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setFov
@@ -1715,7 +2192,7 @@ slot7 = function(slot0)
 
 	slot3 = slot0
 	slot1 = slot0.setRotate
-	slot4 = slot0.sliderUSlider
+	slot4 = slot0.sliderValueByTab
 	slot5 = slot0.Tabs
 	slot5 = slot5.ROTATE
 	slot4 = slot4[slot5]
@@ -1729,9 +2206,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.refreshAllEffect = slot7
+slot3.refreshAllEffect = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.curTab
 	slot3 = slot0.Tabs
@@ -1754,15 +2231,10 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-16, warpins: 2 ---
-	slot2 = slot0.view
-	slot2 = slot2.zoom
-	slot3 = false
-	slot2.useNodes = slot3
-	slot2 = slot0.view
-	slot2 = slot2.zoom
-	slot2 = slot2.value
-	slot3 = slot0.zoomChangeRate
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.adjustFov
+	slot5 = slot0.zoomChangeRate
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -1772,23 +2244,44 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 17-18, warpins: 1 ---
-	slot4 = 1
+	--- BLOCK #3 12-13, warpins: 1 ---
+	slot6 = 1
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 19-19, warpins: 1 ---
-	slot4 = -1
+	--- BLOCK #4 14-14, warpins: 1 ---
+	slot6 = -1
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 20-64, warpins: 2 ---
-	slot3 = slot3 * slot4
-	slot2 = slot2 + slot3
+	--- BLOCK #5 15-17, warpins: 2 ---
+	slot5 = slot5 * slot6
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot3.onZoomClick = slot10
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-51, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.zoom
+	slot3 = false
+	slot2.useNodes = slot3
+	slot2 = slot0.view
+	slot2 = slot2.zoom
+	slot2 = slot2.value
+	slot2 = slot2 + slot1
 	slot3 = slot0.sliderValueByTab
 	slot4 = slot0.Tabs
 	slot4 = slot4.FOV
@@ -1836,15 +2329,15 @@ slot7 = function(slot0, slot1)
 	slot4(slot6, slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot3.onZoomClick = slot7
+slot3.adjustFov = slot10
 
-slot7 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0.curTab
 	slot4 = slot0.Tabs
@@ -1956,9 +2449,173 @@ slot7 = function(slot0, slot1, slot2)
 
 end
 
-slot3.onZoomLongPress = slot7
+slot3.onZoomLongPress = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-7, warpins: 1 ---
+	slot3 = slot0.curTab
+	slot4 = slot0.Tabs
+	slot4 = slot4.FOV
+	--- END OF BLOCK #1 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.adjustFov
+	slot6 = slot0.zoomChangeRate
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot7 = 1
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot7 = -1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-18, warpins: 2 ---
+	slot6 = slot6 * slot7
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-23, warpins: 2 ---
+	slot3 = slot0.ConfigData
+	slot4 = slot0.curTab
+	slot3 = slot3[slot4]
+
+	--- END OF BLOCK #6 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 24-24, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-27, warpins: 2 ---
+	slot4 = slot3.showRate
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 28-31, warpins: 1 ---
+	slot4 = slot3.showRate
+	slot5 = 0
+	--- END OF BLOCK #9 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 32-33, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 34-34, warpins: 2 ---
+	slot4 = -1
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 35-39, warpins: 2 ---
+	slot5 = slot0.sliderUSlider
+	slot6 = slot0.sliderUSlider
+	slot6 = slot6.normalizedValue
+	--- END OF BLOCK #12 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 40-41, warpins: 1 ---
+	slot7 = 1
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 42-42, warpins: 1 ---
+	slot7 = -1
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 43-47, warpins: 2 ---
+	slot7 = 0.05 * slot7
+	slot7 = slot7 * slot4
+	slot6 = slot6 + slot7
+	slot5.normalizedValue = slot6
+
+	return
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot3.onScrollAdjust = slot10
+
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.zoom
@@ -2081,10 +2738,10 @@ slot7 = function(slot0, slot1)
 
 
 	--- BLOCK #8 64-72, warpins: 4 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot4 = slot2
 	slot2 = slot2.zoom
 	slot5 = slot1
@@ -2098,14 +2755,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setFov = slot7
+slot3.setFov = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetDof
@@ -2120,9 +2777,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setDof = slot7
+slot3.setDof = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setDofRangeUIViewSize
@@ -2133,10 +2790,10 @@ slot7 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetDofRange
@@ -2151,9 +2808,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setDofR = slot7
+slot3.setDofR = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.center2Transform
@@ -2170,14 +2827,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setDofRangeUIViewSize = slot7
+slot3.setDofRangeUIViewSize = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetExposure
@@ -2192,14 +2849,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setExposure = slot7
+slot3.setExposure = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetSaturation
@@ -2214,14 +2871,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setSaturation = slot7
+slot3.setSaturation = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetBrightness
@@ -2236,14 +2893,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setBrightness = slot7
+slot3.setBrightness = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetContrast
@@ -2258,14 +2915,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setContrast = slot7
+slot3.setContrast = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot2 = slot2.cameraMode
 	slot4 = slot2
 	slot2 = slot2.SetVignette
@@ -2280,14 +2937,14 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setVignette = slot7
+slot3.setVignette = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.camera
-	slot2 = slot2.photoCameraMode
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.getPhotoCameraMode
+	slot2 = slot2(slot4)
 	slot4 = slot2
 	slot2 = slot2.rotateZ
 	slot5 = slot1
@@ -2301,9 +2958,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.setRotate = slot7
+slot3.setRotate = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2312,9 +2969,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.refreshPhotoLens = slot7
+slot3.refreshPhotoLens = slot10
 
-slot7 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curTab
 	slot2 = slot0.Tabs
@@ -2489,9 +3146,9 @@ slot7 = function(slot0)
 
 end
 
-slot3.updateRotate = slot7
+slot3.updateRotate = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.btnArrowLeftUButton
 	slot4 = slot2
@@ -2564,7 +3221,7 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot3.onListScroll = slot7
+slot3.onListScroll = slot10
 
 return slot3
 --- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-525, warpins: 1 ---
+--- BLOCK #0 1-547, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,31 +7,31 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NpcChallenge_20101840300",
-	version = 136,
 	useForRoute = false,
-	agenttype = "PuppetAgent"
+	agenttype = "PuppetAgent",
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NpcChallenge_20101840300",
+	version = 136
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "skillStopDist",
 	const = 0,
+	name = "skillStopDist",
 	type = "float",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tPlayer",
 	const = 0,
+	name = "tPlayer",
 	type = "int",
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "FirstFlyDone",
 	const = 0,
+	name = "FirstFlyDone",
 	type = "int",
 	value = "0"
 }
@@ -257,23 +257,40 @@ slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "531",
+	id = "468",
 	class = "Action"
 }
 slot20 = {}
 slot21 = {}
 slot22 = {
-	func = "switchToFly"
+	func = "castSkill"
 }
 slot23 = {}
 slot24 = {
-	const = 3
+	const = 0
 }
 slot23[1] = slot24
 slot24 = {
-	const = 3600
+	const = 11840900
 }
 slot23[2] = slot24
+slot24 = {
+	const = false
+}
+slot23[3] = slot24
+slot24 = {
+	const = 0
+}
+slot23[4] = slot24
+slot24 = {
+	const = false
+}
+slot23[5] = slot24
+slot24 = {}
+slot25 = slot0.CastAbilitySourceType
+slot25 = slot25.Normal
+slot24.const = slot25
+slot23[6] = slot24
 slot22.params = slot23
 slot21.Method = slot22
 slot20[1] = slot21
@@ -368,10 +385,10 @@ slot16.properties = slot17
 slot17 = {}
 slot18 = {
 	id = "453",
+	class = "Precondition",
 	transition = false,
 	effector = false,
-	precondition = true,
-	class = "Precondition"
+	precondition = true
 }
 slot19 = {}
 slot20 = {
@@ -526,23 +543,40 @@ slot18.node = slot19
 slot17[3] = slot18
 slot18 = {}
 slot19 = {
-	id = "532",
+	id = "517",
 	class = "Action"
 }
 slot20 = {}
 slot21 = {}
 slot22 = {
-	func = "switchToFly"
+	func = "castSkill"
 }
 slot23 = {}
 slot24 = {
-	const = 3
+	const = 0
 }
 slot23[1] = slot24
 slot24 = {
-	const = 3600
+	const = 11840900
 }
 slot23[2] = slot24
+slot24 = {
+	const = false
+}
+slot23[3] = slot24
+slot24 = {
+	const = 0
+}
+slot23[4] = slot24
+slot24 = {
+	const = false
+}
+slot23[5] = slot24
+slot24 = {}
+slot25 = slot0.CastAbilitySourceType
+slot25 = slot25.Normal
+slot24.const = slot25
+slot23[6] = slot24
 slot22.params = slot23
 slot21.Method = slot22
 slot20[1] = slot21
@@ -574,10 +608,10 @@ slot16.properties = slot17
 slot17 = {}
 slot18 = {
 	id = "453",
+	class = "Precondition",
 	transition = false,
 	effector = false,
-	precondition = true,
-	class = "Precondition"
+	precondition = true
 }
 slot19 = {}
 slot20 = {

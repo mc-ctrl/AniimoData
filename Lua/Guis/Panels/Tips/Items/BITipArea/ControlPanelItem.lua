@@ -172,7 +172,7 @@ slot12 = function(slot0)
 
 	--- BLOCK #4 22-26, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.duration
 	--- END OF BLOCK #4 ---
 
@@ -247,7 +247,7 @@ slot12 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -610,7 +610,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot8 = 0
 	slot9 = slot2.endTime
 	slot10 = Time
-	slot10 = slot10.secondCache
+	slot10 = slot10.realSecondCache
 	slot9 = slot9 - slot10
 	slot6 = slot6(slot8, slot9)
 	slot7 = slot2.startTime
@@ -687,7 +687,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot13 = slot13.min
 	slot15 = 1
 	slot16 = Time
-	slot16 = slot16.secondCache
+	slot16 = slot16.realSecondCache
 	slot17 = slot2.startTime
 	slot16 = slot16 - slot17
 	slot16 = slot16 / slot7
@@ -849,7 +849,7 @@ slot10.hide = slot12
 slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.duration
 	--- END OF BLOCK #0 ---
 

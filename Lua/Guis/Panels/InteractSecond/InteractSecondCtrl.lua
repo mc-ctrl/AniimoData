@@ -561,7 +561,9 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #2 91-94, warpins: 1 ---
+	--- BLOCK #2 91-96, warpins: 1 ---
+	slot7 = true
+	slot6.useRawBindingPath = slot7
 	slot9 = slot6
 	slot7 = slot6.SetHotKeyPaths
 	slot10 = "Hud/InteractScroll"
@@ -573,7 +575,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 95-96, warpins: 3 ---
+	--- BLOCK #3 97-98, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -905,7 +907,7 @@ slot13 = function(slot0)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #1 7-13, warpins: 1 ---
@@ -943,7 +945,7 @@ slot13 = function(slot0)
 	slot9, slot10, slot11 = slot9(slot11)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #5 21-26, warpins: 1 ---
@@ -1097,7 +1099,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 82-102, warpins: 2 ---
+	--- BLOCK #19 82-104, warpins: 2 ---
 	slot14.interactIdx = slot15
 	slot15 = slot6.interactId
 	slot14.interactId = slot15
@@ -1110,43 +1112,65 @@ slot13 = function(slot0)
 	slot14.interactUnit = slot6
 	slot15 = slot13.disableButton
 	slot14.disableButton = slot15
+	slot15 = slot13.textColor
+	slot14.textColor = slot15
 	slot17 = slot0
 	slot15 = slot0.getBtnHierarchyName
 	slot18 = slot6
 	slot19 = slot13.styleId
 	slot15 = slot15(slot17, slot18, slot19)
 	slot14.btnHierarchyName = slot15
+	slot15 = slot14.btnIcon
+	--- END OF BLOCK #19 ---
+
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 105-106, warpins: 1 ---
+	slot15 = AddressDataConst
+	slot15 = slot15.UI_INTERACT_COMMON_ICON
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 107-110, warpins: 2 ---
+	slot14.btnIcon = slot15
 	slot15 = #slot1
 	slot15 = slot15 + 1
 	slot1[slot15] = slot14
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #20 103-104, warpins: 2 ---
-	--- END OF BLOCK #20 ---
+	--- BLOCK #22 111-112, warpins: 2 ---
+	--- END OF BLOCK #22 ---
 
 	for slot12, slot13 in slot9, slot10, slot11
 	LOOP BLOCK #5
-	GO OUT TO BLOCK #21
+	GO OUT TO BLOCK #23
 
 
-	--- BLOCK #21 105-106, warpins: 2 ---
-	--- END OF BLOCK #21 ---
+	--- BLOCK #23 113-114, warpins: 2 ---
+	--- END OF BLOCK #23 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #22
+	GO OUT TO BLOCK #24
 
 
-	--- BLOCK #22 107-122, warpins: 1 ---
+	--- BLOCK #24 115-130, warpins: 1 ---
 	slot2 = #slot1
 	slot2 = slot2 + 1
 	slot3 = {
+		isExit = true,
 		actionPath = "Hud/Interact",
-		btnHierarchyName = "UI_Node_Interaction_Second_Exit",
-		isExit = true
+		btnHierarchyName = "UI_Node_Interaction_Second_Exit"
 	}
 	slot4 = pg
 	slot4 = slot4.getGameString
@@ -1176,7 +1200,7 @@ slot13 = function(slot0)
 	slot1[slot2] = slot3
 
 	return slot1
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #24 ---
 
 
 
@@ -1207,7 +1231,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-49, warpins: 2 ---
+	--- BLOCK #2 9-55, warpins: 2 ---
 	slot4.actionPath = slot5
 	slot5 = true
 	slot4.isVirtual = slot5
@@ -1263,99 +1287,32 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	slot5 = slot5(slot7, slot8)
 	slot8 = slot5
 	slot6 = slot5.GetRefValue
-	slot9 = "txtNameOneUSDFText"
+	slot9 = "txtNameUSDFText"
 	slot6 = slot6(slot8, slot9)
 	slot9 = slot5
 	slot7 = slot5.GetRefValue
-	slot10 = "txtNameTwoUSDFText"
+	slot10 = "iconUImage"
 	slot7 = slot7(slot9, slot10)
-	slot10 = slot5
-	slot8 = slot5.GetRefValue
-	slot11 = "iconUImage"
-	slot8 = slot8(slot10, slot11)
-	slot9 = 0
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot6
-	slot13 = pg
-	slot13 = slot13.getLocalizationText
-	slot15 = slot3.btnTitle
-	MULTRES = slot13(slot15)
-
-	slot10(slot12, MULTRES)
-
-	slot12 = slot6
-	slot10 = slot6.IsTextOverflowing
+	slot8 = ClientTextUtils
+	slot8 = slot8.applyTextColor
+	slot10 = pg
+	slot10 = slot10.getLocalizationText
+	slot12 = slot3.btnTitle
 	slot10 = slot10(slot12)
-	--- END OF BLOCK #2 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 50-67, warpins: 1 ---
-	slot12 = slot6
-	slot10 = slot6.SetActive
-	slot13 = false
-
-	slot10(slot12, slot13)
-
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot7
-	slot13 = pg
-	slot13 = slot13.getLocalizationText
-	slot15 = slot3.btnTitle
-	MULTRES = slot13(slot15)
-
-	slot10(slot12, MULTRES)
-
-	slot12 = slot7
-	slot10 = slot7.SetActive
-	slot13 = true
-
-	slot10(slot12, slot13)
-
-	slot9 = 1
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 68-75, warpins: 1 ---
-	slot12 = slot7
-	slot10 = slot7.SetActive
-	slot13 = false
-
-	slot10(slot12, slot13)
-
-	slot12 = slot6
-	slot10 = slot6.SetActive
-	slot13 = true
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 76-91, warpins: 2 ---
-	slot12 = slot1
-	slot10 = slot1.TryChangePage
-	slot13 = "TextMode"
-	slot14 = slot9
-
-	slot10(slot12, slot13, slot14)
-
+	slot11 = slot3.textColor
+	slot8 = slot8(slot10, slot11)
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot6
 	slot12 = slot8
-	slot10 = slot8.SetUrlWithCallback
-	slot13 = slot3.btnIcon
 
-	slot14 = function()
+	slot9(slot11, slot12)
+
+	slot11 = slot7
+	slot9 = slot7.SetUrlWithCallback
+	slot12 = slot3.btnIcon
+
+	slot13 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = iconUImage
 		slot2 = slot0
@@ -1433,12 +1390,12 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot15 = nil
-	slot16 = true
+	slot14 = nil
+	slot15 = true
 
-	slot10(slot12, slot13, slot14, slot15, slot16)
+	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	slot10 = function()
+	slot9 = function()
 		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = self
 		slot1 = true
@@ -1463,10 +1420,10 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaHover = slot10
+	slot1.luaHover = slot9
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 

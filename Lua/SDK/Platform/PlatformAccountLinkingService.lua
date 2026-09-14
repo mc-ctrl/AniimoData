@@ -10,17 +10,17 @@ slot1 = slot1.Platform
 slot1 = slot1.PlatformBridgeLuaFacade
 slot2 = {}
 slot3 = {
-	Child = 1,
 	Unknown = 0,
 	Adult = 3,
-	Teen = 2
+	Teen = 2,
+	Child = 1
 }
 slot2.AgeGroup = slot3
 slot3 = {
-	initialized = false,
 	restrictPersonalData = false,
 	userAgeGroup = 0,
-	ownerUserId = ""
+	ownerUserId = "",
+	initialized = false
 }
 slot2.state = slot3
 

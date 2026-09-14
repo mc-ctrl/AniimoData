@@ -1,4 +1,4 @@
---- BLOCK #0 1-62, warpins: 1 ---
+--- BLOCK #0 1-66, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -1036,44 +1036,81 @@ end
 slot8.onLockedTargetChange = slot9
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.uWidget
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 3-5, warpins: 1 ---
-	slot2 = slot0.uWidget
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot2 = not slot1
+	slot3 = slot0.uWidget
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 6-11, warpins: 1 ---
-	slot2 = slot0.uWidget
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "expand"
-	slot6 = 0
-
-	slot2(slot4, slot5, slot6)
-
+	--- BLOCK #2 12-18, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.controller
+	slot3 = slot3.lockHelper
+	slot3 = slot3.forceLockActorId
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	if slot3 ~= 0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 12-12, warpins: 3 ---
-	return
+	--- BLOCK #3 19-20, warpins: 1 ---
+	slot3 = 1
 	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 21-21, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-27, warpins: 2 ---
+	slot4 = slot0.uWidget
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "expand"
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-28, warpins: 3 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
@@ -1097,6 +1134,82 @@ slot9 = function(slot0)
 end
 
 slot8.onDestroy = slot9
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.uWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Show
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot8.playShowAnim = slot9
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.uWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Hide
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot8.playHideAnim = slot9
 
 return slot8
 --- END OF BLOCK #0 ---

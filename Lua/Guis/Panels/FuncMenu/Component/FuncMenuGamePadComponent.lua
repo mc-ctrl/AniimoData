@@ -16,8 +16,8 @@ slot4 = require
 slot6 = "Guis.GamePad.GamePadConst"
 slot4 = slot4(slot6)
 slot5 = {
-	FUNCTION_AREA = 2,
-	CHOICE_AREA = 1
+	CHOICE_AREA = 1,
+	FUNCTION_AREA = 2
 }
 slot3.AREAS = slot5
 

@@ -1,33 +1,42 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-87, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Data.bossrush_guanka_data"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.UIConst"
+slot4 = "Data.bossrush_guanka_data"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Data.bossrush_cycle_data"
+slot5 = "Const.UIConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.BossRushUtils"
+slot6 = "Data.bossrush_cycle_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Timer.TimerManager"
+slot7 = "Utils.BossRushUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.bossrush_level_mapping_data"
+slot8 = "Core.Timer.TimerManager"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Data.bossrush_level_mapping_data"
 slot7 = slot7(slot9)
-slot8 = slot0.Component
-slot10 = "ClientPlayerBossRushComponent"
+slot8 = require
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Const.MessageName"
+slot9 = slot9(slot11)
+slot10 = require
+slot12 = "Data.sys_config_data"
+slot10 = slot10(slot12)
+slot11 = slot1.Component
+slot13 = "ClientPlayerBossRushComponent"
+slot11 = slot11(slot13)
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = "prepare"
 	slot0.curBossRushPlace = slot1
@@ -41,9 +50,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.ctor = slot9
+slot11.ctor = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = true
 
@@ -54,9 +63,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.init = slot9
+slot11.init = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -72,9 +81,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.goBossRushDungeon = slot9
+slot11.goBossRushDungeon = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.playBossRushSceneScan
@@ -90,9 +99,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_BossRushPlayerReconnect = slot9
+slot11.RPC_SC_BossRushPlayerReconnect = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.bossRushGoToLevel
@@ -106,10 +115,10 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_BossRushGotoGuanka = slot9
+slot11.RPC_SC_BossRushGotoGuanka = slot12
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-22, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-49, warpins: 1 ---
 	slot1 = BossRushUtils
 	slot1 = slot1.recordPlayerInfo
 	slot3 = slot0.space
@@ -128,24 +137,6 @@ slot9 = function(slot0)
 	slot1.needResetBattleTime = slot2
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 23-30, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.hudV2
 	slot3 = slot1
@@ -153,27 +144,15 @@ slot9 = function(slot0)
 
 	slot1(slot3)
 
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 31-37, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
-	slot1 = slot1.hudV2
+	slot1 = slot1.tips
 	slot3 = slot1
-	slot1 = slot1.refreshBossRushInfo
+	slot1 = slot1.clearAllBossMechanismTips
 
 	slot1(slot3)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 38-56, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -182,6 +161,10 @@ slot9 = function(slot0)
 	slot4 = {}
 	slot5 = UIConst
 	slot5 = slot5.UI_ID_BOSS_RUSH_BATTLE_RESULT
+	slot6 = true
+	slot4[slot5] = slot6
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_BOSS_RUSH_BATTLE_DETAIL_RESULT
 	slot6 = true
 	slot4[slot5] = slot6
 
@@ -193,16 +176,16 @@ slot9 = function(slot0)
 	slot2 = Const
 	slot2 = slot2.BossRushTeleportTarget
 	slot2 = slot2.Prepare
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #4 57-66, warpins: 1 ---
+	--- BLOCK #1 50-59, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -214,12 +197,12 @@ slot9 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #5 67-75, warpins: 1 ---
+	--- BLOCK #2 60-68, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -231,22 +214,22 @@ slot9 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #6 76-76, warpins: 2 ---
+	--- BLOCK #3 69-69, warpins: 2 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot8.bossRushGoToLevel = slot9
+slot11.bossRushGoToLevel = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -340,7 +323,7 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #8 31-31, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -441,9 +424,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.playBossRushSceneScan = slot9
+slot11.playBossRushSceneScan = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -460,9 +443,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.bossRushSelectPet = slot9
+slot11.bossRushSelectPet = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -477,9 +460,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.resetBossRushLevel = slot9
+slot11.resetBossRushLevel = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -494,9 +477,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.endBossRushLevel = slot9
+slot11.endBossRushLevel = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -512,17 +495,16 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.selectTankEntId = slot9
+slot11.selectTankEntId = slot12
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
 	slot5 = "RPC_CS_BossRushSelectBattleBuff"
 	slot6 = slot1[1]
-	slot7 = slot1[2]
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -531,9 +513,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.bossRushSelectBattleBuffs = slot9
+slot11.bossRushSelectBattleBuffs = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isInTeam
@@ -581,9 +563,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.openChallengeBoss = slot9
+slot11.openChallengeBoss = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isInTeam
@@ -630,9 +612,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.bossRushCancelOpen = slot9
+slot11.bossRushCancelOpen = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isInTeam
@@ -763,9 +745,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_BossRushNtfOpenChangeBoss = slot9
+slot11.RPC_SC_BossRushNtfOpenChangeBoss = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isInTeam
@@ -826,9 +808,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.RPC_SC_BossRushNtfCancelOpen = slot9
+slot11.RPC_SC_BossRushNtfCancelOpen = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = BossRushUtils
 	slot2 = slot2.hasSettle
@@ -844,10 +826,82 @@ slot9 = function(slot0, slot1)
 	--- BLOCK #1 5-10, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.addTimer
-	slot4 = 3
+	slot4 = 2
 
 	slot5 = function()
-		--- BLOCK #0 1-12, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot0 = slot0.space
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-13, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot0 = slot0.space
+		slot2 = slot0
+		slot0 = slot0.isBossRushEnv
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 14-14, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 15-24, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.checkUIOpen
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_BOSS_RUSH_SETTLEMENT
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 25-32, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.close
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_BOSS_RUSH_SETTLEMENT
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 33-44, warpins: 2 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -864,7 +918,7 @@ slot9 = function(slot0, slot1)
 		slot0(slot2, slot3, slot4)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -874,7 +928,7 @@ slot9 = function(slot0, slot1)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
 	--- BLOCK #2 11-14, warpins: 1 ---
@@ -911,77 +965,40 @@ slot9 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 25-34, warpins: 3 ---
+	--- BLOCK #5 25-33, warpins: 3 ---
 	slot2 = pg
 	slot2 = slot2.global
-	slot2 = slot2.prefsCacheUtils
+	slot2 = slot2.ui
+	slot2 = slot2.hudV2
 	slot4 = slot2
-	slot2 = slot2.getBool
-	slot5 = "HudV2Enable"
-	slot6 = false
-	slot2 = slot2(slot4, slot5, slot6)
+	slot2 = slot2.delayShowBossRushUpdate
+	slot5 = {
+		pageType = 1
+	}
+	slot5.newRecordData = slot1
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-44, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.delayShowBossRushUpdate
-	slot5 = {
-		pageType = 1
-	}
-	slot5.newRecordData = slot1
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 45-53, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.delayShowBossRushUpdate
-	slot5 = {
-		pageType = 1
-	}
-	slot5.newRecordData = slot1
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 54-55, warpins: 4 ---
+	--- BLOCK #6 34-35, warpins: 3 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot8.RPC_SC_BossRushSettle = slot9
+slot11.RPC_SC_BossRushSettle = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = BossRushUtils
 	slot2.showHelpTipArgs = slot1
@@ -993,9 +1010,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_BossRushAssistInfo = slot9
+slot11.RPC_SC_BossRushAssistInfo = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1004,9 +1021,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_BossRushQuitAndSettle = slot9
+slot11.RPC_SC_BossRushQuitAndSettle = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = print
 	slot4 = "RPC_SC_BossRushSetBatPetList received"
@@ -1021,9 +1038,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_BossRushSetBatPetList = slot9
+slot11.RPC_SC_BossRushSetBatPetList = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1045,72 +1062,83 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 6-15, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.checkUIOpen
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_FUNC_MENU_EXIT
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #2 6-26, warpins: 1 ---
+	slot2 = {}
+	slot2.result = slot1
+	slot3 = pg
+	slot3 = slot3.space
+	slot3 = slot3.dungeonId
+	slot2.levelId = slot3
+	slot3 = BossRushUtils
+	slot3 = slot3.buildBattleResultPlayerSnapshots
+	slot5 = slot2.levelId
+	slot3 = slot3(slot5)
+	slot2.playerSnapshots = slot3
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.checkUIOpen
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_FUNC_MENU_EXIT
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 16-23, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.close
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_FUNC_MENU_EXIT
+	--- BLOCK #3 27-34, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.close
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_FUNC_MENU_EXIT
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 24-26, warpins: 2 ---
-	slot2 = slot1.bossKilled
+	--- BLOCK #4 35-37, warpins: 2 ---
+	slot3 = slot1.bossKilled
 	--- END OF BLOCK #4 ---
 
-	if slot2 == 1 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 27-28, warpins: 1 ---
-	slot2 = 2
+	--- BLOCK #5 38-39, warpins: 1 ---
+	slot3 = 2
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 29-29, warpins: 1 ---
-	slot2 = 0.8
+	--- BLOCK #6 40-40, warpins: 1 ---
+	slot3 = 0.8
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 30-35, warpins: 2 ---
-	slot3 = TimerManager
-	slot3 = slot3.addTimer
-	slot5 = slot2
+	--- BLOCK #7 41-51, warpins: 2 ---
+	slot4 = TimerManager
+	slot4 = slot4.addTimer
+	slot6 = slot3
 
-	slot6 = function()
-		--- BLOCK #0 1-16, warpins: 1 ---
+	slot7 = function()
+		--- BLOCK #0 1-10, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -1118,13 +1146,7 @@ slot9 = function(slot0, slot1)
 		slot0 = slot0.open
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_BOSS_RUSH_BATTLE_RESULT
-		slot4 = {}
-		slot5 = result
-		slot4.result = slot5
-		slot5 = pg
-		slot5 = slot5.space
-		slot5 = slot5.dungeonId
-		slot4.levelId = slot5
+		slot4 = battleResultInfo
 
 		slot0(slot2, slot3, slot4)
 
@@ -1135,14 +1157,38 @@ slot9 = function(slot0, slot1)
 
 	end
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
+
+	slot4 = TimerManager
+	slot4 = slot4.addTimer
+	slot6 = slot3 + 1
+
+	slot7 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.goBossRushDungeon
+		slot3 = SysConfigData
+		slot3 = slot3.BossRushPrepareLevelId
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 36-46, warpins: 2 ---
+	--- BLOCK #8 52-62, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -1161,7 +1207,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 47-48, warpins: 2 ---
+	--- BLOCK #9 63-63, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -1169,9 +1215,71 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_OnResult = slot9
+slot11.RPC_SC_OnResult = slot12
 
-return slot8
+slot12 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = facade
+	slot2 = slot0
+	slot0 = slot0.sendMsgToUI
+	slot3 = MessageName
+	slot3 = slot3.BOSS_RUSH_RED_DOT_CHANGED
+
+	slot0(slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = notifyBossRushRedDotChanged
+
+	slot3()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot11.onCurBossRushSeasonIdChanged = slot13
+
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = notifyBossRushRedDotChanged
+
+	slot3()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot11.onBossRushSeasonRewardMapChanged = slot13
+
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = notifyBossRushRedDotChanged
+
+	slot3()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot11.onBossRushSeasonBestGradeMapChanged = slot13
+
+return slot11
 --- END OF BLOCK #0 ---
 
 

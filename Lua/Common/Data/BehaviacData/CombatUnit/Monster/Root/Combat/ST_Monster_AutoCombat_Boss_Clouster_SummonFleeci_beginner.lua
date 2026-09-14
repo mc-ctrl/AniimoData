@@ -7,34 +7,34 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = false,
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Clouster_SummonFleeci_beginner",
 	version = 16,
-	useForRoute = false,
 	agenttype = "PuppetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "float",
-	name = "disToTgtForSkillMon",
 	const = 7,
-	value = "7"
+	type = "float",
+	value = "7",
+	name = "disToTgtForSkillMon"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	name = "goBackDist",
 	const = 0,
-	value = "0"
+	type = "float",
+	value = "0",
+	name = "goBackDist"
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "154",
-	class = "Sequence"
+	class = "Sequence",
+	id = "154"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -43,8 +43,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "160",
-	class = "Assignment"
+	class = "Assignment",
+	id = "160"
 }
 slot8 = {}
 slot9 = {
@@ -72,8 +72,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "150",
-	class = "DecoratorLoop"
+	class = "DecoratorLoop",
+	id = "150"
 }
 slot8 = {}
 slot9 = {}
@@ -96,8 +96,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "174",
-	class = "Action"
+	class = "Action",
+	id = "174"
 }
 slot11 = {}
 slot12 = {}

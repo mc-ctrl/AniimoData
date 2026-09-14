@@ -2045,8 +2045,8 @@ slot17 = function(slot0)
 		slot2 = slot2.petDetailsUContainer
 		slot2 = slot2.content
 		slot3 = {
-			useLocalEnv = true,
-			defaultSelectTabIndex = 0
+			defaultSelectTabIndex = 0,
+			useLocalEnv = true
 		}
 		slot4 = self
 		slot4 = slot4.uiScene

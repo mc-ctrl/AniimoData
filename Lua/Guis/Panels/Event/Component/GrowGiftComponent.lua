@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-101, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -36,36 +36,45 @@ slot10 = require
 slot12 = "Const.RedDotConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.event_growth_gitf_data"
+slot13 = "Const.ClientConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.event_pet_egg_data"
+slot14 = "Utils.ClientActivityUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_prototype_data"
+slot15 = "Data.event_growth_gitf_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Guis.Utils.PetResearchUtils"
+slot16 = "Data.activate_tasks_data"
 slot14 = slot14(slot16)
-slot15 = slot1.LightClass
-slot17 = "GrowGiftComponent"
-slot18 = slot4
-slot15 = slot15(slot17, slot18)
-slot16 = {
+slot15 = require
+slot17 = "Data.pet_prototype_data"
+slot15 = slot15(slot17)
+slot16 = require
+slot18 = "Guis.Utils.PetResearchUtils"
+slot16 = slot16(slot18)
+slot17 = require
+slot19 = "Guis.Panels.GrowthGiftSelect.GrowthGiftSelectModel"
+slot17 = slot17(slot19)
+slot18 = slot1.LightClass
+slot20 = "GrowGiftComponent"
+slot21 = slot4
+slot18 = slot18(slot20, slot21)
+slot19 = {
 	NotSelected = 2,
 	CanReceive = 1,
 	NotMeetCond = 0,
 	Received = 3
 }
-slot15.BtnGetState = slot16
-slot16 = {
+slot18.BtnGetState = slot19
+slot19 = {
 	NotSelected = 0,
 	Selected = 1,
 	Received = 2
 }
-slot15.CardStatus = slot16
+slot18.CardStatus = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -88,7 +97,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-106, warpins: 2 ---
+	--- BLOCK #2 7-136, warpins: 2 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetChild
@@ -188,6 +197,36 @@ slot16 = function(slot0)
 	slot5 = "btnGet2"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnGet2 = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnCollect"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnCollect = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "curProgress"
+	slot2 = slot2(slot4, slot5)
+	slot0.curProgress = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "collectCount"
+	slot2 = slot2(slot4, slot5)
+	slot0.collectCount = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "listRewardUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listRewardUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtCollected"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtCollected = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtViewCollection"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtViewCollection = slot2
 
 	return
 	--- END OF BLOCK #2 ---
@@ -196,53 +235,10 @@ slot16 = function(slot0)
 
 end
 
-slot15.findObjects = slot16
+slot18.findObjects = slot19
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkContentLoaded
-	slot1 = slot1(slot3)
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-13, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.addListener
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.refreshPage
-
-	slot1(slot3)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot15.initView = slot16
-
-slot16 = function(slot0)
-	--- BLOCK #0 1-62, warpins: 1 ---
+slot19 = function(slot0)
+	--- BLOCK #0 1-68, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.txtSelect
@@ -375,6 +371,45 @@ slot16 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.btnCollect
+
+	slot2 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.openPetCollection
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.listRewardUList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.onRenderCollectRewardItem
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
+
+		slot3(slot5, slot6, slot7, slot8)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -383,9 +418,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.addListener = slot16
+slot18.addListener = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getActData
@@ -400,7 +435,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #1 6-8, warpins: 1 ---
-	slot2 = slot1.receivedEgg
+	slot2 = slot1.receivedPetFlag
 	--- END OF BLOCK #1 ---
 
 	if slot2 == 1 then
@@ -458,7 +493,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #6 24-26, warpins: 1 ---
-	slot2 = slot1.selectedEgg
+	slot2 = slot1.selectedPetId
 	--- END OF BLOCK #6 ---
 
 	slot2 = if not slot2 then
@@ -509,9 +544,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.getBtnGetState = slot16
+slot18.getBtnGetState = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getActData
@@ -526,7 +561,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #1 6-8, warpins: 1 ---
-	slot2 = slot1.receivedEgg
+	slot2 = slot1.receivedPetFlag
 	--- END OF BLOCK #1 ---
 
 	if slot2 == 1 then
@@ -559,7 +594,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #4 15-17, warpins: 1 ---
-	slot2 = slot1.selectedEgg
+	slot2 = slot1.selectedPetId
 	--- END OF BLOCK #4 ---
 
 	slot2 = if not slot2 then
@@ -617,9 +652,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.getCardStatus = slot16
+slot18.getCardStatus = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = ActivityUtils
 	slot1 = slot1.getActivityData
@@ -637,9 +672,73 @@ slot16 = function(slot0)
 
 end
 
-slot15.getActData = slot16
+slot18.getActData = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getActData
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.selectedPetId
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	slot2 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-15, warpins: 2 ---
+	slot3 = GrowthGiftSelectModel
+	slot3 = slot3.getRewardPetIdByDropId
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot3 = 0
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot18.getSelectedRewardPetId = slot19
+
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = EventGrowthGiftData
 	slot2 = slot0.eventPhase
@@ -741,9 +840,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.isReceiveCondMeet = slot16
+slot18.isReceiveCondMeet = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -765,9 +864,426 @@ slot16 = function(slot0)
 
 end
 
-slot15.openPetSelect = slot16
+slot18.openPetSelect = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_GROW_GIFT_SELECT
+	slot5 = {
+		collectionMode = true
+	}
+	slot6 = slot0.eventId
+	slot5.eventId = slot6
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot18.openPetCollection = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = ActivateTasksData
+	slot2 = slot0.eventId
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.foreverTaskGroup
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	slot2 = slot1.foreverTaskGroup
+	slot2 = slot2[1]
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-15, warpins: 3 ---
+	slot3 = ClientActivityUtils
+	slot3 = slot3.getTaskInfoList
+	slot5 = slot2
+	slot6 = true
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot18.getCollectTaskInfoList = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getActData
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.collectSocre
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	slot2 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-13, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.triggerMap
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-24, warpins: 2 ---
+	slot4 = {}
+	slot5 = 0
+	slot6 = ipairs
+	slot10 = slot0
+	slot8 = slot0.getCollectTaskInfoList
+	MULTRES = slot8(slot10)
+	slot6, slot7, slot8 = slot6(MULTRES)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #6 25-26, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 27-33, warpins: 1 ---
+	slot13 = slot3
+	slot11 = slot3.getConditionTargetCount
+	slot14 = slot10.taskCondition
+	slot15 = 1
+	slot11 = slot11(slot13, slot14, slot15)
+	--- END OF BLOCK #7 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 34-34, warpins: 2 ---
+	slot11 = 0
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 35-38, warpins: 2 ---
+	slot12 = slot11 - slot5
+	slot13 = 0
+	--- END OF BLOCK #9 ---
+
+	if slot12 > slot13 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 39-50, warpins: 1 ---
+	slot13 = math
+	slot13 = slot13.min
+	slot15 = math
+	slot15 = slot15.max
+	slot17 = slot2 - slot5
+	slot17 = slot17 / slot12
+	slot18 = 0
+	slot15 = slot15(slot17, slot18)
+	slot16 = 1
+	slot13 = slot13(slot15, slot16)
+	--- END OF BLOCK #10 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 51-51, warpins: 2 ---
+	slot13 = 0
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 52-60, warpins: 2 ---
+	slot14 = ClientConst
+	slot14 = slot14.RewardState
+	slot14 = slot14.NotAchieved
+	slot15 = slot10.taskState
+	slot16 = ActivityConst
+	slot16 = slot16.TaskState
+	slot16 = slot16.Finihed_CanRecv
+	--- END OF BLOCK #12 ---
+
+	if slot15 == slot16 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 61-64, warpins: 1 ---
+	slot15 = ClientConst
+	slot15 = slot15.RewardState
+	slot14 = slot15.ReadyToClaim
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #14 65-70, warpins: 1 ---
+	slot15 = slot10.taskState
+	slot16 = ActivityConst
+	slot16 = slot16.TaskState
+	slot16 = slot16.Received
+	--- END OF BLOCK #14 ---
+
+	if slot15 ~= slot16 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 71-76, warpins: 1 ---
+	slot15 = slot10.taskState
+	slot16 = ActivityConst
+	slot16 = slot16.TaskState
+	slot16 = slot16.Received_SendMail
+	--- END OF BLOCK #15 ---
+
+	if slot15 == slot16 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 77-79, warpins: 2 ---
+	slot15 = ClientConst
+	slot15 = slot15.RewardState
+	slot14 = slot15.Claimed
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 80-92, warpins: 3 ---
+	slot15 = slot10.taskId
+	slot16 = {}
+	slot16.taskId = slot15
+	slot16.targetNum = slot11
+	slot16.progress = slot13
+	slot17 = slot10.taskAward
+	slot16.dropId = slot17
+	slot16.state = slot14
+	slot17 = ClientConst
+	slot17 = slot17.RewardState
+	slot17 = slot17.ReadyToClaim
+
+	--- END OF BLOCK #17 ---
+
+	if slot14 == slot17 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 93-94, warpins: 1 ---
+	slot17 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.reqActReceiveTaskReward
+		slot3 = taskId
+		slot4 = self
+		slot4 = slot4.eventId
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot16.extraFunc = slot17
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 95-99, warpins: 2 ---
+	slot17 = #slot4
+	slot17 = slot17 + 1
+	slot4[slot17] = slot16
+	slot5 = slot11
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 100-101, warpins: 2 ---
+	--- END OF BLOCK #20 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #21
+
+
+	--- BLOCK #21 102-103, warpins: 1 ---
+	return slot4
+	--- END OF BLOCK #21 ---
+
+
+
+end
+
+slot18.buildCollectRewardList = slot19
+
+slot19 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot4 = ClientActivityUtils
+	slot4 = slot4.onRenderRewardProgressItem
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = string
+	slot4 = slot4.format
+	slot6 = RedDotConst
+	slot6 = slot6.RedDotPath
+	slot6 = slot6.EVENT_GROW_GIFT_COLLECT_REWARD_ITEM
+	slot7 = slot0.eventId
+	slot8 = slot3.taskId
+	slot4 = slot4(slot6, slot7, slot8)
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.setRedDot
+	slot7 = slot4
+	slot8 = slot1
+	slot9 = slot3.state
+	slot10 = ClientConst
+	slot10 = slot10.RewardState
+	slot10 = slot10.ReadyToClaim
+	--- END OF BLOCK #0 ---
+
+	if slot9 ~= slot10 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 26-27, warpins: 1 ---
+	slot9 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 28-28, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 29-33, warpins: 2 ---
+	slot10 = RedDotConst
+	slot10 = slot10.RedDotStyle
+	slot10 = slot10.REWARD
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot18.onRenderCollectRewardItem = slot19
+
+slot19 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBtnGetState
@@ -795,7 +1311,7 @@ slot16 = function(slot0)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #2 16-20, warpins: 1 ---
@@ -822,7 +1338,7 @@ slot16 = function(slot0)
 
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
 	--- BLOCK #4 28-32, warpins: 1 ---
@@ -841,127 +1357,73 @@ slot16 = function(slot0)
 	--- BLOCK #5 33-33, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #6 34-38, warpins: 1 ---
+	--- BLOCK #6 34-40, warpins: 1 ---
 	slot4 = slot0
-	slot2 = slot0.getActData
+	slot2 = slot0.getSelectedRewardPetId
 	slot2 = slot2(slot4)
+	slot3 = PetPrototypeData
+	slot3 = slot3[slot2]
 	--- END OF BLOCK #6 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 39-41, warpins: 1 ---
-	slot3 = slot2.selectedEgg
+	--- BLOCK #7 41-46, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.getLocalizationText
+	slot6 = slot3.name
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #7 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 42-42, warpins: 2 ---
-	slot3 = 0
+	--- BLOCK #8 47-47, warpins: 2 ---
+	slot4 = ""
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-46, warpins: 2 ---
-	slot4 = EventPetEggData
-	slot4 = slot4[slot3]
-	--- END OF BLOCK #9 ---
-
-	slot5 = if slot4 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 47-48, warpins: 1 ---
-	slot5 = PetPrototypeData
-	slot5 = slot5[slot4]
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 49-50, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 51-56, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.getLocalizationText
-	slot8 = slot5.name
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #12 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 57-57, warpins: 2 ---
-	slot6 = ""
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 58-89, warpins: 2 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.ui
-	slot9 = slot7
-	slot7 = slot7.open
-	slot10 = UIConst
-	slot10 = slot10.UI_ID_COMMON_USE_CONFIRM
-	slot11 = {
-		muteCheckEnough = true,
-		hideCurrency = true
+	--- BLOCK #9 48-74, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot7 = slot5
+	slot5 = slot5.open
+	slot8 = UIConst
+	slot8 = slot8.UI_ID_COMMON_USE_CONFIRM
+	slot9 = {
+		hideCurrency = true,
+		muteCheckEnough = true
 	}
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = "PRISMANA_GIFTS_CONFIRM"
+	slot10 = slot10(slot12)
+	slot9.title = slot10
+	slot10 = pg
+	slot10 = slot10.getFormatText
 	slot12 = pg
 	slot12 = slot12.getGameString
-	slot14 = "PRISMANA_GIFTS_CONFIRM"
+	slot14 = "PRISMANA_GIFTS_CONFIRMTEXT"
 	slot12 = slot12(slot14)
-	slot11.title = slot12
-	slot12 = pg
-	slot12 = slot12.getFormatText
-	slot14 = pg
-	slot14 = slot14.getGameString
-	slot16 = "PRISMANA_GIFTS_CONFIRMTEXT"
-	slot14 = slot14(slot16)
-	slot15 = slot6
-	slot12 = slot12(slot14, slot15)
-	slot11.tipTop = slot12
-	slot12 = {}
-	slot13 = {
-		[2.0] = 1,
-		hideOwnNum = true
-	}
-	slot13[1] = slot3
-	slot12[1] = slot13
-	slot11.data = slot12
+	slot13 = slot4
+	slot10 = slot10(slot12, slot13)
+	slot9.tipTop = slot10
 
-	slot12 = function()
+	slot10 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
@@ -979,41 +1441,41 @@ slot16 = function(slot0)
 
 	end
 
-	slot11.confirmCb = slot12
+	slot9.confirmCb = slot10
 
-	slot7(slot9, slot10, slot11)
+	slot5(slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #15 90-90, warpins: 2 ---
+	--- BLOCK #10 75-75, warpins: 2 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #16 91-91, warpins: 2 ---
+	--- BLOCK #11 76-76, warpins: 2 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #17 92-92, warpins: 2 ---
+	--- BLOCK #12 77-77, warpins: 2 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot15.onClickReceive = slot16
+slot18.onClickReceive = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getActData
@@ -1023,526 +1485,732 @@ slot16 = function(slot0)
 	slot2 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #1 6-8, warpins: 1 ---
-	slot2 = slot1.receivedEgg
+	slot2 = slot1.receivedPetFlag
 	--- END OF BLOCK #1 ---
 
 	if slot2 ~= 1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 9-11, warpins: 1 ---
-	slot2 = slot1.selectedEgg
+	--- BLOCK #2 9-10, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 12-12, warpins: 1 ---
-	slot2 = 0
+	--- BLOCK #3 11-11, warpins: 1 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-14, warpins: 2 ---
+	--- BLOCK #4 12-13, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	if slot2 ~= 0 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 15-16, warpins: 2 ---
-	slot2 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 17-17, warpins: 1 ---
-	slot2 = true
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 18-25, warpins: 3 ---
-	slot5 = slot0
-	slot3 = slot0.getBtnGetState
-	slot3 = slot3(slot5)
-	slot4 = GrowGiftComponent
-	slot4 = slot4.BtnGetState
-	slot4 = slot4.CanReceive
-	--- END OF BLOCK #7 ---
-
-	if slot3 ~= slot4 then
-	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 26-27, warpins: 1 ---
-	slot3 = false
-	--- END OF BLOCK #8 ---
+	--- BLOCK #5 14-15, warpins: 1 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 28-28, warpins: 1 ---
-	slot3 = true
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 29-56, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.setRedDot
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotPath
-	slot6 = slot6.EVENT_GROW_GIFT_SELECT
-	slot7 = slot0.btnSwitch
-	slot8 = slot2
-	slot9 = RedDotConst
-	slot9 = slot9.RedDotStyle
-	slot9 = slot9.POINT
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.setRedDot
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotPath
-	slot6 = slot6.EVENT_GROW_GIFT_REWARD
-	slot7 = slot0.btnGet1
-	slot8 = slot3
-	slot9 = RedDotConst
-	slot9 = slot9.RedDotStyle
-	slot9 = slot9.POINT
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	slot6 = slot0
-	slot4 = slot0.refreshCommonNodeRedDot
-
-	slot4(slot6)
-
-	return
-	--- END OF BLOCK #10 ---
-
-
-
-end
-
-slot15.refreshRedDotState = slot16
-
-slot16 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.getEventTimeConfig
-	slot3 = slot0.eventId
-	slot1 = slot1(slot3)
-	slot4 = slot0
-	slot2 = slot0.setEventTitle
-	slot5 = slot0.eventTitleUContainer
-	--- END OF BLOCK #0 ---
-
-	slot6 = if slot1 then
-	JUMP TO BLOCK #1
+	slot3 = if slot1 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #1 10-10, warpins: 1 ---
-	slot6 = slot1.eventEndDayTime
+	--- BLOCK #6 16-18, warpins: 1 ---
+	slot3 = slot1.selectedPetId
+	--- END OF BLOCK #6 ---
 
-	--- END OF BLOCK #1 ---
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
-	FLOW; TARGET BLOCK #2
+
+	--- BLOCK #7 19-19, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #2 11-34, warpins: 2 ---
-	slot2(slot4, slot5, slot6)
+	--- BLOCK #8 20-21, warpins: 2 ---
+	--- END OF BLOCK #8 ---
 
-	slot2 = slot0.btnGetUComponent
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "Btn"
-	slot8 = slot0
-	slot6 = slot0.getBtnGetState
-	MULTRES = slot6(slot8)
+	if slot3 ~= 0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
-	slot2(slot4, slot5, MULTRES)
 
-	slot2 = slot0.cardUComponent
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "Status"
-	slot8 = slot0
-	slot6 = slot0.getCardStatus
-	MULTRES = slot6(slot8)
+	--- BLOCK #9 22-23, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #9 ---
 
-	slot2(slot4, slot5, MULTRES)
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
-	slot4 = slot0
-	slot2 = slot0.refreshSelectedPet
 
-	slot2(slot4)
+	--- BLOCK #10 24-24, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #10 ---
 
-	slot4 = slot0
-	slot2 = slot0.refreshRedDotState
+	FLOW; TARGET BLOCK #11
 
-	slot2(slot4)
+
+	--- BLOCK #11 25-26, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 27-34, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getBtnGetState
+	slot4 = slot4(slot6)
+	slot5 = GrowGiftComponent
+	slot5 = slot5.BtnGetState
+	slot5 = slot5.CanReceive
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 35-36, warpins: 2 ---
+	slot4 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 37-37, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 38-65, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.setRedDot
+	slot7 = RedDotConst
+	slot7 = slot7.RedDotPath
+	slot7 = slot7.EVENT_GROW_GIFT_SELECT
+	slot8 = slot0.btnSwitch
+	slot9 = slot3
+	slot10 = RedDotConst
+	slot10 = slot10.RedDotStyle
+	slot10 = slot10.POINT
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.setRedDot
+	slot7 = RedDotConst
+	slot7 = slot7.RedDotPath
+	slot7 = slot7.EVENT_GROW_GIFT_REWARD
+	slot8 = slot0.btnGet1
+	slot9 = slot4
+	slot10 = RedDotConst
+	slot10 = slot10.RedDotStyle
+	slot10 = slot10.REWARD
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot7 = slot0
+	slot5 = slot0.refreshCommonNodeRedDot
+
+	slot5(slot7)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot15.refreshPage = slot16
+slot18.refreshRedDotState = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getActData
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #1 6-8, warpins: 1 ---
-	slot2 = slot1.selectedEgg
+	slot2 = slot1.receivedPetFlag
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
+	if slot2 ~= 1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 9-9, warpins: 2 ---
-	slot2 = 0
+	--- BLOCK #2 9-10, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 10-11, warpins: 2 ---
+	--- BLOCK #3 11-11, warpins: 1 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	if slot2 == 0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-14, warpins: 1 ---
-	slot3 = slot0.imgPetIcon
+	--- BLOCK #4 12-20, warpins: 3 ---
+	slot3 = Utils
+	slot3 = slot3.getEventTimeConfig
+	slot5 = slot0.eventId
+	slot3 = slot3(slot5)
+	slot4 = EventGrowthGiftData
+	slot5 = slot0.eventPhase
+	slot4 = slot4[slot5]
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 15-17, warpins: 1 ---
-	slot3 = slot0.imgPetIcon
-	slot4 = ""
-	slot3.url = slot4
+	--- BLOCK #5 21-22, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #6 18-25, warpins: 2 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.txtPetName
-	slot6 = ""
-
-	slot3(slot5, slot6)
-
-	slot3 = slot0.imgFormIcon
+	--- BLOCK #6 23-25, warpins: 1 ---
+	slot5 = slot4.eventTitle
 	--- END OF BLOCK #6 ---
 
-	slot3 = if slot3 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 26-28, warpins: 1 ---
-	slot3 = slot0.imgFormIcon
-	slot4 = ""
-	slot3.url = slot4
+	--- BLOCK #7 26-31, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getLocalizationText
+	slot7 = slot4.eventTitle
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 29-34, warpins: 2 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.txtForm
-	slot6 = ""
-
-	slot3(slot5, slot6)
-
-	return
-
+	--- BLOCK #8 32-32, warpins: 4 ---
+	slot5 = nil
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 35-38, warpins: 2 ---
-	slot3 = EventPetEggData
-	slot3 = slot3[slot2]
+	--- BLOCK #9 33-34, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
-	slot4 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 39-40, warpins: 1 ---
-	slot4 = PetPrototypeData
-	slot4 = slot4[slot3]
+	--- BLOCK #10 35-36, warpins: 1 ---
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #11 41-43, warpins: 2 ---
-	slot5 = slot0.imgPetIcon
+	--- BLOCK #11 37-39, warpins: 1 ---
+	slot6 = slot4.eventDesc
 	--- END OF BLOCK #11 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 44-45, warpins: 1 ---
+	--- BLOCK #12 40-45, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.getLocalizationText
+	slot8 = slot4.eventDesc
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #12 ---
 
-	slot4 = if slot4 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 46-48, warpins: 1 ---
-	slot5 = slot4.iconName
+	--- BLOCK #13 46-46, warpins: 4 ---
+	slot6 = nil
 	--- END OF BLOCK #13 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 49-56, warpins: 1 ---
-	slot5 = LuaUIUtils
-	slot5 = slot5.getPetIcon
-	slot7 = slot4.iconName
-	slot8 = LuaUIUtils
-	slot8 = slot8.PET_ICON
-	slot5 = slot5(slot7, slot8)
+	--- BLOCK #14 47-51, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.setEventTitle
+	slot10 = slot0.eventTitleUContainer
 	--- END OF BLOCK #14 ---
 
-	slot5 = if not slot5 then
+	slot11 = if slot3 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 57-57, warpins: 3 ---
-	slot5 = ""
+	--- BLOCK #15 52-52, warpins: 1 ---
+	slot11 = slot3.tabEndDayTime
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 58-59, warpins: 2 ---
-	slot6 = slot0.imgPetIcon
-	slot6.url = slot5
+	--- BLOCK #16 53-62, warpins: 2 ---
+	slot12 = slot5
+	slot13, slot14 = nil
+	slot15 = slot6
+
+	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+
+	slot7 = slot0.rootUComponent
+	slot9 = slot7
+	slot7 = slot7.TryChangePage
+	slot10 = "Stage"
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #17 60-64, warpins: 2 ---
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.txtPetName
+	--- BLOCK #17 63-64, warpins: 1 ---
+	slot11 = 1
 	--- END OF BLOCK #17 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 65-70, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
-	slot10 = slot4.name
-	slot8 = slot8(slot10)
+	--- BLOCK #18 65-65, warpins: 1 ---
+	slot11 = 0
+
 	--- END OF BLOCK #18 ---
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 71-71, warpins: 2 ---
-	slot8 = ""
+	--- BLOCK #19 66-68, warpins: 2 ---
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	slot2 = if slot2 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #23
+	end
 
 
-	--- BLOCK #20 72-75, warpins: 2 ---
-	slot5(slot7, slot8)
-
-	slot5 = slot0.imgFormIcon
+	--- BLOCK #20 69-71, warpins: 1 ---
+	slot7 = slot1.collectSocre
 	--- END OF BLOCK #20 ---
 
-	slot5 = if slot5 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 76-78, warpins: 1 ---
-	slot5 = slot0.imgFormIcon
+	--- BLOCK #21 72-72, warpins: 1 ---
+	slot7 = 0
 	--- END OF BLOCK #21 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 79-84, warpins: 1 ---
-	slot6 = PetResearchUtils
-	slot6 = slot6.getPetFormIconSmall
-	slot8 = slot3
-	slot6 = slot6(slot8)
+	--- BLOCK #22 73-106, warpins: 2 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.curProgress
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.collectCount
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.txtCollected
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "PRISMANA_GIFTS_COLLECTED"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.txtViewCollection
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "PRISMANA_GIFTS_VIEW_COLLECTION"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	slot8 = slot0.listRewardUList
+	slot10 = slot8
+	slot8 = slot8.SetList
+	slot13 = slot0
+	slot11 = slot0.buildCollectRewardList
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
 	--- END OF BLOCK #22 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #23 85-85, warpins: 2 ---
-	slot6 = ""
+	--- BLOCK #23 107-125, warpins: 1 ---
+	slot7 = slot0.btnGetUComponent
+	slot9 = slot7
+	slot7 = slot7.TryChangePage
+	slot10 = "Btn"
+	slot13 = slot0
+	slot11 = slot0.getBtnGetState
+	MULTRES = slot11(slot13)
+
+	slot7(slot9, slot10, MULTRES)
+
+	slot7 = slot0.cardUComponent
+	slot9 = slot7
+	slot7 = slot7.TryChangePage
+	slot10 = "Status"
+	slot13 = slot0
+	slot11 = slot0.getCardStatus
+	MULTRES = slot11(slot13)
+
+	slot7(slot9, slot10, MULTRES)
+
+	slot9 = slot0
+	slot7 = slot0.refreshSelectedPet
+
+	slot7(slot9)
+
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 86-86, warpins: 2 ---
-	slot5.url = slot6
-	--- END OF BLOCK #24 ---
+	--- BLOCK #24 126-129, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.refreshRedDotState
 
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 87-91, warpins: 2 ---
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.txtForm
-	--- END OF BLOCK #25 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #26 92-97, warpins: 1 ---
-	slot8 = LuaUIUtils
-	slot8 = slot8.getPetFormName
-	slot10 = slot3
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #26 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 98-98, warpins: 2 ---
-	slot8 = ""
-
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 99-100, warpins: 2 ---
-	slot5(slot7, slot8)
+	slot7(slot9)
 
 	return
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot15.refreshSelectedPet = slot16
+slot18.refreshPage = slot19
 
-slot16 = function(slot0)
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getSelectedRewardPetId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot0.imgPetIcon
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot2 = slot0.imgPetIcon
+	slot3 = ""
+	slot2.url = slot3
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-19, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.txtPetName
+	slot5 = ""
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.imgFormIcon
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-22, warpins: 1 ---
+	slot2 = slot0.imgFormIcon
+	slot3 = ""
+	slot2.url = slot3
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-28, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.txtForm
+	slot5 = ""
+
+	slot2(slot4, slot5)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-33, warpins: 2 ---
+	slot2 = PetPrototypeData
+	slot2 = slot2[slot1]
+	slot3 = slot0.imgPetIcon
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #7 34-35, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 36-38, warpins: 1 ---
+	slot3 = slot2.iconName
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-46, warpins: 1 ---
+	slot3 = LuaUIUtils
+	slot3 = slot3.getPetIcon
+	slot5 = slot2.iconName
+	slot6 = LuaUIUtils
+	slot6 = slot6.PET_ICON
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #9 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 47-47, warpins: 3 ---
+	slot3 = ""
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 48-49, warpins: 2 ---
+	slot4 = slot0.imgPetIcon
+	slot4.url = slot3
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 50-54, warpins: 2 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.txtPetName
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 55-60, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.getLocalizationText
+	slot8 = slot2.name
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #13 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 61-61, warpins: 2 ---
+	slot6 = ""
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 62-65, warpins: 2 ---
+	slot3(slot5, slot6)
+
+	slot3 = slot0.imgFormIcon
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 66-71, warpins: 1 ---
+	slot3 = slot0.imgFormIcon
+	slot4 = PetResearchUtils
+	slot4 = slot4.getPetFormIconSmall
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	slot3.url = slot4
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 72-80, warpins: 2 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.txtForm
+	slot6 = LuaUIUtils
+	slot6 = slot6.getPetFormName
+	slot8 = slot1
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot18.refreshSelectedPet = slot19
+
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = EventContainerComponent
 	slot1 = slot1.onExitPage
@@ -1557,9 +2225,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onExitPage = slot16
+slot18.onExitPage = slot19
 
-return slot15
+return slot18
 --- END OF BLOCK #0 ---
 
 

@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-36, warpins: 1 ---
+	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -53,6 +53,31 @@ slot4 = function(slot0)
 	slot5 = "tMPUSDFText"
 	slot2 = slot2(slot4, slot5)
 	slot0.tMPUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnPetUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnPetUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "listMainTabUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listMainTabUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "legacyMainTabUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.legacyMainTabUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtPetTabUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtPetTabUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtFoodTabUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtFoodTabUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

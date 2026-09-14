@@ -1,4 +1,4 @@
---- BLOCK #0 1-24, warpins: 1 ---
+--- BLOCK #0 1-27, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -11,13 +11,16 @@ slot1 = slot1(slot3)
 slot2 = require
 slot4 = "Guis.UIView"
 slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "BossRushChallengeView"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
+slot3 = require
+slot5 = "Utils.ClientTextUtils"
+slot3 = slot3(slot5)
+slot4 = slot1.LightClass
+slot6 = "BossRushChallengeView"
+slot7 = slot2
+slot4 = slot4(slot6, slot7)
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-247, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-301, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -264,6 +267,60 @@ slot4 = function(slot0)
 	slot4 = "recommendUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.recommendUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "cycleBuffUList"
+	slot1 = slot1(slot3, slot4)
+	slot0.cycleBuffUList = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "seasonBuffBtnSearchUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.seasonBuffBtnSearchUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "seasonBuffTitle2USDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.seasonBuffTitle2USDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "cycleBuffBtnSearchUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.cycleBuffBtnSearchUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "seasonBuffTitleUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.seasonBuffTitleUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "seasonBuffBtnSearch2UButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.seasonBuffBtnSearch2UButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "numBoxTextUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.numBoxTextUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "playDetailUScrollRect"
+	slot1 = slot1(slot3, slot4)
+	slot0.playDetailUScrollRect = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "envDetailUScrollRect"
+	slot1 = slot1(slot3, slot4)
+	slot0.envDetailUScrollRect = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -272,9 +329,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.findObjects = slot4
+slot4.findObjects = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = slot0.btnConfirmUButton
 	slot3 = slot1
@@ -304,10 +361,40 @@ slot4 = function(slot0)
 
 end
 
-slot3.registerObjects = slot4
+slot4.registerObjects = slot5
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.seasonBuffTitle2USDFText
+	slot4 = ClientTextUtils
+	slot4 = slot4.getGameString
+	slot6 = "BOSS_RUSH_CHALLENGE_TIP1"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.seasonBuffTitleUSDFText
+	slot4 = ClientTextUtils
+	slot4 = slot4.getGameString
+	slot6 = "BOSS_RUSH_CHALLENGE_TIP1"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.numBoxTextUSDFText
+	slot4 = ClientTextUtils
+	slot4 = slot4.getGameString
+	slot6 = "BOSS_RUSH_CHALLENGE_TIP4"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -315,9 +402,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.initView = slot4
+slot4.initView = slot5
 
-return slot3
+return slot4
 --- END OF BLOCK #0 ---
 
 

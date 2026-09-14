@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-67, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -11,18 +11,34 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Common.Container.TablePool"
 slot3 = slot3(slot5)
-slot4 = {}
-slot5 = {}
-slot4._cache = slot5
-slot5 = {}
-slot4._csharpCache = slot5
-slot5 = {}
-slot4._autoDisposeCache = slot5
-slot5 = slot4._cache
-slot6 = slot4._autoDisposeCache
-slot7 = slot4._csharpCache
+slot4 = table
+slot5 = select
+slot6 = unpack
+slot7 = type
+slot8 = math
+slot8 = slot8.min
+slot9 = setmetatable
+slot10 = {}
+slot11 = {}
+slot10._cache = slot11
+slot11 = {}
+slot10._csharpCache = slot11
+slot11 = {}
+slot10._autoDisposeCache = slot11
+slot11 = slot10._cache
+slot12 = slot10._autoDisposeCache
+slot13 = slot10._csharpCache
+slot14 = {
+	2048,
+	256
+}
+slot15 = 1
+slot16 = 2
+slot17 = 1
+slot18 = 0
+slot19 = 0
 
-slot8 = function(slot0, slot1, ...)
+slot20 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = nil
 	slot3 = cache
@@ -74,9 +90,9 @@ slot8 = function(slot0, slot1, ...)
 
 end
 
-slot4.new = slot8
+slot10.new = slot20
 
-slot8 = function(slot0, slot1, ...)
+slot20 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = nil
 	slot3 = csharpCache
@@ -136,9 +152,9 @@ slot8 = function(slot0, slot1, ...)
 
 end
 
-slot4.newOnceCSharpCb = slot8
+slot10.newOnceCSharpCb = slot20
 
-slot8 = function(slot0, slot1, ...)
+slot20 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = CallbackHandlerNoGC
 	slot2 = slot2.new
@@ -158,38 +174,219 @@ slot8 = function(slot0, slot1, ...)
 
 end
 
-slot4.newOnce = slot8
+slot10.newOnce = slot20
 
-slot8 = function()
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot0 = autoDisposeCache
-	slot0 = #slot0
-	slot1 = 1
-	slot2 = -1
+slot20 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = math_min
 	--- END OF BLOCK #0 ---
 
-	FLOW; TARGET BLOCK #1
+	slot3 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 6-14, warpins: 2 ---
-	slot4 = autoDisposeCache
-	slot4 = slot4[slot3]
-	slot6 = slot4
-	slot4 = slot4._innerDispose
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot3 = autoDisposeCount
+	--- END OF BLOCK #1 ---
 
-	slot4(slot6)
+	FLOW; TARGET BLOCK #2
 
-	slot4 = autoDisposeCache
-	slot5 = nil
-	slot4[slot3] = slot5
+
+	--- BLOCK #2 5-10, warpins: 2 ---
+	slot4 = autoDisposeCount
+	slot1 = slot1(slot3, slot4)
+	slot0 = slot1
+	slot1 = 0
+
+	--- END OF BLOCK #2 ---
+
+	if slot0 <= slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-11, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-15, warpins: 2 ---
+	slot1 = 1
+	slot2 = slot0
+	slot3 = 1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-32, warpins: 2 ---
+	slot5 = autoDisposeCache
+	slot6 = autoDisposeHead
+	slot5 = slot5[slot6]
+	slot7 = slot5
+	slot5 = slot5._innerDispose
+
+	slot5(slot7)
+
+	slot5 = autoDisposeCache
+	slot6 = autoDisposeHead
+	slot7 = nil
+	slot5[slot6] = slot7
+	slot5 = autoDisposeHead
+	slot5 = slot5 + 1
+	autoDisposeHead = slot5
+	slot5 = autoDisposeCount
+	slot5 = slot5 - 1
+	autoDisposeCount = slot5
+	--- END OF BLOCK #5 ---
+
+	for slot4=slot1, slot2, slot3
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #6
+
+	--- BLOCK #6 33-35, warpins: 1 ---
+	slot1 = autoDisposeCount
+	--- END OF BLOCK #6 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 36-38, warpins: 1 ---
+	autoDisposeHead = 1
+	autoDisposeTail = 0
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #8 39-43, warpins: 1 ---
+	slot1 = autoDisposeHead
+	slot1 = slot1 - 1
+	slot2 = autoDisposeCount
+	--- END OF BLOCK #8 ---
+
+	if slot2 < slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #9 44-47, warpins: 1 ---
+	slot1 = 1
+	slot2 = autoDisposeCount
+	slot3 = 1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 48-55, warpins: 2 ---
+	slot5 = autoDisposeCache
+	slot6 = autoDisposeCache
+	slot7 = autoDisposeHead
+	slot7 = slot7 + slot4
+	slot7 = slot7 - 1
+	slot6 = slot6[slot7]
+	slot5[slot4] = slot6
+	--- END OF BLOCK #10 ---
+
+	for slot4=slot1, slot2, slot3
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #11
+
+	--- BLOCK #11 56-60, warpins: 1 ---
+	slot1 = autoDisposeCount
+	slot1 = slot1 + 1
+	slot2 = autoDisposeTail
+	slot3 = 1
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 61-64, warpins: 2 ---
+	slot5 = autoDisposeCache
+	slot6 = nil
+	slot5[slot4] = slot6
+	--- END OF BLOCK #12 ---
+
+	for slot4=slot1, slot2, slot3
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #13
+
+	--- BLOCK #13 65-67, warpins: 1 ---
+	autoDisposeHead = 1
+	slot1 = autoDisposeCount
+	autoDisposeTail = slot1
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 68-68, warpins: 3 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot10.checkAutoDisposeCache = slot20
+
+slot20 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = LoggerManager
+	slot0 = slot0.checkLogger
+	slot2 = LoggerConst
+	slot2 = slot2.INFO
+	slot3 = "Pool"
+	slot0 = slot0(slot2, slot3)
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-22, warpins: 1 ---
+	slot0 = logger
+	slot2 = slot0
+	slot0 = slot0.info
+	slot3 = "[CallbackHandlerNoGC Cache] reusableLua=%d reusableCSharp=%d dirty=%d capacity=%d/%d"
+	slot4 = cache
+	slot4 = #slot4
+	slot5 = csharpCache
+	slot5 = #slot5
+	slot6 = autoDisposeCount
+	slot7 = poolMaxCount
+	slot7 = slot7[1]
+	slot8 = poolMaxCount
+	slot8 = slot8[2]
+
+	slot0(slot2, slot3, slot4, slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #1 ---
 
-	for slot3=slot0, slot1, slot2
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #2
+	FLOW; TARGET BLOCK #2
 
-	--- BLOCK #2 15-15, warpins: 1 ---
+
+	--- BLOCK #2 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -197,9 +394,9 @@ slot8 = function()
 
 end
 
-slot4.checkAutoDisposeCache = slot8
+slot10.printCacheInfo = slot20
 
-slot8 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getCSharpCallback
@@ -211,14 +408,14 @@ slot8 = function(slot0)
 
 end
 
-slot4.getFunction = slot8
+slot10.getFunction = slot20
 
-slot8 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._autoDispose
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	if slot1 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #4
@@ -274,9 +471,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.dispose = slot8
+slot10.dispose = slot20
 
-slot8 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._isInPool
 	--- END OF BLOCK #0 ---
@@ -367,44 +564,72 @@ slot8 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	end
 
 
 	--- BLOCK #7 40-45, warpins: 1 ---
 	slot1 = csharpCache
+	slot1 = #slot1
+	slot2 = poolMaxCount
+	slot2 = slot2[2]
+	--- END OF BLOCK #7 ---
+
+	if slot1 < slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 46-51, warpins: 1 ---
+	slot1 = csharpCache
 	slot2 = csharpCache
 	slot2 = #slot2
 	slot2 = slot2 + 1
 	slot1[slot2] = slot0
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 46-50, warpins: 1 ---
+	--- BLOCK #9 52-57, warpins: 1 ---
+	slot1 = cache
+	slot1 = #slot1
+	slot2 = poolMaxCount
+	slot2 = slot2[1]
+	--- END OF BLOCK #9 ---
+
+	if slot1 < slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 58-62, warpins: 1 ---
 	slot1 = cache
 	slot2 = cache
 	slot2 = #slot2
 	slot2 = slot2 + 1
 	slot1[slot2] = slot0
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 51-51, warpins: 2 ---
+	--- BLOCK #11 63-63, warpins: 4 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot4._innerDispose = slot8
+slot10._innerDispose = slot20
 
-slot8 = function(slot0, slot1, slot2, ...)
+slot20 = function(slot0, slot1, slot2, ...)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0.obj = slot1
 	slot0.method = slot2
@@ -452,9 +677,11 @@ slot8 = function(slot0, slot1, slot2, ...)
 	LOOP BLOCK #2
 	GO OUT TO BLOCK #3
 
-	--- BLOCK #3 29-31, warpins: 2 ---
+	--- BLOCK #3 29-33, warpins: 2 ---
 	slot3 = false
 	slot0._isInPool = slot3
+	slot3 = nil
+	slot0._autoDispose = slot3
 
 	return
 	--- END OF BLOCK #3 ---
@@ -463,9 +690,9 @@ slot8 = function(slot0, slot1, slot2, ...)
 
 end
 
-slot4._innerInit = slot8
+slot10._innerInit = slot20
 
-slot8 = function(slot0, ...)
+slot20 = function(slot0, ...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._isInPool
 	--- END OF BLOCK #0 ---
@@ -513,114 +740,120 @@ slot8 = function(slot0, ...)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-19, warpins: 2 ---
+	--- BLOCK #4 17-20, warpins: 2 ---
 	slot1 = slot0._autoDispose
+	slot2 = AutoDisposeStateQueued
+
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	if slot1 == slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 20-24, warpins: 1 ---
-	slot1 = autoDisposeCache
-	slot2 = autoDisposeCache
-	slot2 = #slot2
-	slot2 = slot2 + 1
-	slot1[slot2] = slot0
+	--- BLOCK #5 21-21, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-27, warpins: 2 ---
-	slot1 = slot0.obj
+	--- BLOCK #6 22-25, warpins: 2 ---
+	slot1 = slot0._autoDispose
+	slot2 = AutoDisposeStatePending
 	--- END OF BLOCK #6 ---
 
-	if slot1 ~= nil then
+	if slot1 == slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 28-33, warpins: 1 ---
+	--- BLOCK #7 26-36, warpins: 1 ---
+	slot1 = AutoDisposeStateQueued
+	slot0._autoDispose = slot1
+	slot1 = autoDisposeTail
+	slot1 = slot1 + 1
+	autoDisposeTail = slot1
+	slot1 = autoDisposeCache
+	slot2 = autoDisposeTail
+	slot1[slot2] = slot0
+	slot1 = autoDisposeCount
+	slot1 = slot1 + 1
+	autoDisposeCount = slot1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 37-39, warpins: 2 ---
+	slot1 = slot0.obj
+	--- END OF BLOCK #8 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #9 40-45, warpins: 1 ---
 	slot1 = slot0.method
 	slot2 = type
 	slot4 = slot0.method
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	if slot2 == "string" then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 34-36, warpins: 1 ---
+	--- BLOCK #10 46-48, warpins: 1 ---
 	slot2 = slot0.obj
 	slot3 = slot0.method
 	slot1 = slot2[slot3]
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 37-41, warpins: 2 ---
+	--- BLOCK #11 49-53, warpins: 2 ---
 	slot2 = type
 	slot4 = slot1
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 	if slot2 == "function" then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #10 42-43, warpins: 1 ---
-	--- END OF BLOCK #10 ---
-
-	if slot1 ~= nil then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #11 44-51, warpins: 1 ---
+	--- BLOCK #12 54-55, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #13 56-63, warpins: 1 ---
 	slot2 = select
 	slot4 = "#"
 	MULTRES = ...
 	slot2 = slot2(slot4, MULTRES)
 	slot3 = slot0.n0
 	slot3 = slot3 + slot2
-	--- END OF BLOCK #11 ---
-
-	if slot3 == 0 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 52-55, warpins: 1 ---
-	slot3 = slot1
-	slot5 = slot0.obj
-
-	return slot3(slot5)
-
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
-
-
-	--- BLOCK #13 56-58, warpins: 1 ---
-	slot3 = slot0.n0
 	--- END OF BLOCK #13 ---
 
 	if slot3 == 0 then
@@ -630,29 +863,51 @@ slot8 = function(slot0, ...)
 	end
 
 
-	--- BLOCK #14 59-63, warpins: 1 ---
+	--- BLOCK #14 64-67, warpins: 1 ---
 	slot3 = slot1
 	slot5 = slot0.obj
-	MULTRES = ...
 
-	return slot3(slot5, MULTRES)
+	return slot3(slot5)
 
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #15 64-65, warpins: 1 ---
+	--- BLOCK #15 68-70, warpins: 1 ---
+	slot3 = slot0.n0
 	--- END OF BLOCK #15 ---
 
-	if slot2 == 0 then
+	if slot3 == 0 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 66-74, warpins: 1 ---
+	--- BLOCK #16 71-75, warpins: 1 ---
+	slot3 = slot1
+	slot5 = slot0.obj
+	MULTRES = ...
+
+	return slot3(slot5, MULTRES)
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #17 76-77, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 78-86, warpins: 1 ---
 	slot3 = slot1
 	slot5 = slot0.obj
 	slot6 = unpack
@@ -663,21 +918,21 @@ slot8 = function(slot0, ...)
 
 	return slot3(slot5, MULTRES)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #17 75-78, warpins: 1 ---
+	--- BLOCK #19 87-90, warpins: 1 ---
 	slot3 = 1
 	slot4 = slot2
 	slot5 = 1
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #18 79-87, warpins: 2 ---
+	--- BLOCK #20 91-99, warpins: 2 ---
 	slot7 = slot0.args
 	slot8 = slot0.n0
 	slot8 = slot6 + slot8
@@ -686,13 +941,13 @@ slot8 = function(slot0, ...)
 	MULTRES = ...
 	slot9 = slot9(slot11, MULTRES)
 	slot7[slot8] = slot9
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #20 ---
 
 	for slot6=slot3, slot4, slot5
-	LOOP BLOCK #18
-	GO OUT TO BLOCK #19
+	LOOP BLOCK #20
+	GO OUT TO BLOCK #21
 
-	--- BLOCK #19 88-97, warpins: 1 ---
+	--- BLOCK #21 100-109, warpins: 1 ---
 	slot3 = slot1
 	slot5 = slot0.obj
 	slot6 = unpack
@@ -704,27 +959,27 @@ slot8 = function(slot0, ...)
 
 	return slot3(slot5, MULTRES)
 
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #20 98-104, warpins: 1 ---
+	--- BLOCK #22 110-116, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
 	slot4 = LoggerConst
 	slot4 = slot4.ERROR
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #21 105-109, warpins: 1 ---
+	--- BLOCK #23 117-121, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.error
@@ -732,24 +987,24 @@ slot8 = function(slot0, ...)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #22 110-110, warpins: 8 ---
+	--- BLOCK #24 122-122, warpins: 8 ---
 	return
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot4._innerCall = slot8
+slot10._innerCall = slot20
 
-slot8 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = true
+	slot1 = AutoDisposeStatePending
 	slot0._autoDispose = slot1
 
 	return
@@ -759,9 +1014,9 @@ slot8 = function(slot0)
 
 end
 
-slot4._setAutoDispose = slot8
+slot10._setAutoDispose = slot20
 
-slot8 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.csharpCallback
 
@@ -805,10 +1060,10 @@ slot8 = function(slot0)
 
 end
 
-slot4._getCSharpCallback = slot8
-slot8 = {}
+slot10._getCSharpCallback = slot20
+slot20 = {}
 
-slot9 = function(slot0, ...)
+slot21 = function(slot0, ...)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._innerCall
@@ -821,10 +1076,10 @@ slot9 = function(slot0, ...)
 
 end
 
-slot8.__call = slot9
-slot8.__index = slot4
+slot20.__call = slot21
+slot20.__index = slot10
 
-slot9 = function()
+slot21 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = {}
 	slot1 = setmetatable
@@ -840,9 +1095,9 @@ slot9 = function()
 
 end
 
-slot4._innerNew = slot9
+slot10._innerNew = slot21
 
-return slot4
+return slot10
 --- END OF BLOCK #0 ---
 
 

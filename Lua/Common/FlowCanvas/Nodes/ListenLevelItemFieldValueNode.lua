@@ -1,22 +1,25 @@
---- BLOCK #0 1-40, warpins: 1 ---
+--- BLOCK #0 1-43, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ServerEventConst"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.FlowCanvas.Nodes.FlowNode"
+slot4 = "Const.ServerEventConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Data.level_item_subtype_data"
+slot5 = "Common.FlowCanvas.Nodes.FlowNode"
 slot3 = slot3(slot5)
-slot4 = slot0.LiteClass
-slot6 = "ListenLevelItemFieldValueNode"
-slot7 = slot2
-slot4 = slot4(slot6, slot7)
+slot4 = require
+slot6 = "Data.level_item_subtype_data"
+slot4 = slot4(slot6)
+slot5 = slot1.LiteClass
+slot7 = "ListenLevelItemFieldValueNode"
+slot8 = slot3
+slot5 = slot5(slot7, slot8)
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = ListenLevelItemFieldValueNode
 	slot4 = slot4.super
@@ -35,10 +38,10 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.ctor = slot5
+slot5.ctor = slot6
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-54, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-46, warpins: 1 ---
 	slot1 = ListenLevelItemFieldValueNode
 	slot1 = slot1.super
 	slot1 = slot1.registerPorts
@@ -50,14 +53,6 @@ slot5 = function(slot0)
 	slot2 = "timer"
 	slot1 = slot1 .. slot2
 	slot0.timerKey = slot1
-	slot1 = "eventSetName"
-	slot2 = slot0.nodeId
-	slot1 = slot1 .. slot2
-	slot0.eventSetNameKey = slot1
-	slot1 = "eventChangeName"
-	slot2 = slot0.nodeId
-	slot1 = slot1 .. slot2
-	slot0.eventChangeNameKey = slot1
 	slot3 = slot0
 	slot1 = slot0.addFlowOutput
 	slot4 = "Out"
@@ -118,9 +113,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.registerPorts = slot5
+slot5.registerPorts = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
@@ -238,7 +233,7 @@ slot5 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #10 50-79, warpins: 1 ---
+	--- BLOCK #10 50-77, warpins: 1 ---
 	slot12 = slot0
 	slot10 = slot0.addTimer
 	slot13 = slot1
@@ -335,11 +330,10 @@ slot5 = function(slot0, slot1, slot2)
 	slot14 = slot0
 	slot12 = slot0.addEventListen
 	slot15 = slot1
-	slot16 = slot0.eventSetNameKey
-	slot17 = slot11
-	slot18 = slot10
+	slot16 = slot11
+	slot17 = slot10
 
-	slot12(slot14, slot15, slot16, slot17, slot18)
+	slot12(slot14, slot15, slot16, slot17)
 
 	slot12 = ServerEventConst
 	slot12 = slot12.LEVELITEM_STATE_CHANGE
@@ -432,11 +426,10 @@ slot5 = function(slot0, slot1, slot2)
 	slot16 = slot0
 	slot14 = slot0.addEventListen
 	slot17 = slot1
-	slot18 = slot0.eventChangeNameKey
-	slot19 = slot12
-	slot20 = slot13
+	slot18 = slot12
+	slot19 = slot13
 
-	slot14(slot16, slot17, slot18, slot19, slot20)
+	slot14(slot16, slot17, slot18, slot19)
 
 	return
 	--- END OF BLOCK #10 ---
@@ -444,28 +437,28 @@ slot5 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 80-80, warpins: 2 ---
+	--- BLOCK #11 78-78, warpins: 2 ---
 	return
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 81-81, warpins: 2 ---
+	--- BLOCK #12 79-79, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 82-82, warpins: 2 ---
+	--- BLOCK #13 80-80, warpins: 2 ---
 	return
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 83-83, warpins: 2 ---
+	--- BLOCK #14 81-81, warpins: 2 ---
 	return
 	--- END OF BLOCK #14 ---
 
@@ -473,9 +466,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.On_In_PortCalled = slot5
+slot5.On_In_PortCalled = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getContextValue
@@ -497,7 +490,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #1 13-13, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -608,9 +601,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.fixInputFieldValue = slot5
+slot5.fixInputFieldValue = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -780,17 +773,17 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.ParseValueFromString = slot5
+slot5.ParseValueFromString = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3, slot4)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot7 = slot1
-	slot5 = slot1.getSpace
-	slot5 = slot5(slot7)
+	slot6 = slot1
+	slot4 = slot1.getSpace
+	slot4 = slot4(slot6)
 
 	--- END OF BLOCK #0 ---
 
-	slot5 = if not slot5 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -805,28 +798,14 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-23, warpins: 2 ---
-	slot8 = slot5
-	slot6 = slot5.addSpaceEventListener
-	slot9 = slot3
-	slot10 = slot4
-
-	slot6(slot8, slot9, slot10)
-
-	slot8 = slot1
-	slot6 = slot1.addContextEvent
-	slot9 = slot3
-	slot10 = slot4
-	slot11 = slot0.nodeId
-
-	slot6(slot8, slot9, slot10, slot11)
-
-	slot8 = slot1
-	slot6 = slot1.setContextValue
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot7 = slot1
+	slot5 = slot1.registerSpaceEventListener
+	slot8 = slot0.nodeId
 	slot9 = slot2
 	slot10 = slot3
 
-	slot6(slot8, slot9, slot10)
+	slot5(slot7, slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -835,50 +814,9 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot4.addEventListen = slot5
+slot5.addEventListen = slot6
 
-slot5 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot5 = slot1
-	slot3 = slot1.getContextValue
-	slot6 = slot2
-	slot3 = slot3(slot5, slot6)
-
-	--- END OF BLOCK #0 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-7, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-13, warpins: 2 ---
-	slot6 = slot1
-	slot4 = slot1.removeContextEvent
-	slot7 = slot3
-	slot8 = slot0.nodeId
-
-	slot4(slot6, slot7, slot8)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot4.removeListen = slot5
-
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getTimer
@@ -941,9 +879,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.addTimer = slot5
+slot5.addTimer = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.removeContextTimer
@@ -959,9 +897,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.removeTimer = slot5
+slot5.removeTimer = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getTimer
@@ -1006,29 +944,21 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.On_Timeout = slot5
+slot5.On_Timeout = slot6
 
-slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot6 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.unregisterSpaceEventListeners
+	slot5 = slot0.nodeId
+
+	slot2(slot4, slot5)
+
 	slot4 = slot0
 	slot2 = slot0.removeTimer
 	slot5 = slot1
 
 	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.removeListen
-	slot5 = slot1
-	slot6 = slot0.eventSetNameKey
-
-	slot2(slot4, slot5, slot6)
-
-	slot4 = slot0
-	slot2 = slot0.removeListen
-	slot5 = slot1
-	slot6 = slot0.eventChangeNameKey
-
-	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1037,9 +967,50 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4._clearup = slot5
+slot5._clearup = slot6
 
-return slot4
+slot6 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.removeTimer
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot2 = ListenLevelItemFieldValueNode
+	slot2 = slot2.super
+	slot2 = slot2.onContextDestroy
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot5.onContextDestroy = slot6
+
+return slot5
 --- END OF BLOCK #0 ---
 
 

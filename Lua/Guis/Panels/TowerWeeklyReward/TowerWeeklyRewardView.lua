@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-71, warpins: 1 ---
+	--- BLOCK #0 1-76, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -88,6 +88,11 @@ slot4 = function(slot0)
 	slot5 = "bossKillUButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.bossKillUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "staticUIBlurEffect"
+	slot2 = slot2(slot4, slot5)
+	slot0.staticUIBlurEffect = slot2
 
 	return
 	--- END OF BLOCK #0 ---

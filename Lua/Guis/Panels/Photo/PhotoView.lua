@@ -20,7 +20,7 @@ slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-386, warpins: 1 ---
+	--- BLOCK #0 1-417, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -406,6 +406,37 @@ slot6 = function(slot0)
 	slot5 = "keyLeftConsoleUWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.keyLeftConsoleUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "pictureQualityUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.pictureQualityUWidget = slot2
+	slot2 = slot0.pictureQualityUWidget
+	slot2 = slot2.transform
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "btnSelectedUButton"
+	slot3 = slot3(slot5, slot6)
+	slot0.pictureQualitySelectedUButton = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtNameUBaseText"
+	slot3 = slot3(slot5, slot6)
+	slot0.pictureQualityNameUBaseText = slot3
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "eventTopUWidget"
+	slot3 = slot3(slot5, slot6)
+	slot0.eventTopUWidget = slot3
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "txtEventTop"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtEventTop = slot3
 
 	return
 	--- END OF BLOCK #0 ---
@@ -417,7 +448,7 @@ end
 slot2.findObjects = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-65, warpins: 1 ---
+	--- BLOCK #0 1-81, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.textQRCodeUBaseText
@@ -494,6 +525,26 @@ slot6 = function(slot0)
 	slot4 = pg
 	slot4 = slot4.getGameString
 	slot6 = "PHOTO_TITLE_RESET"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.pictureQualityNameUBaseText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "PHOTO_TOP_VIDEO_QUALITY"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtEventTop
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "REDNOTE_CORRECT_PLACE"
 	MULTRES = slot4(slot6)
 
 	slot1(slot3, MULTRES)

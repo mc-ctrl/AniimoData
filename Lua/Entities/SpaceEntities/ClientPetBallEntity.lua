@@ -110,7 +110,7 @@ slot6.getGameTimeScale = slot11
 slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 
 	return slot1
 	--- END OF BLOCK #0 ---

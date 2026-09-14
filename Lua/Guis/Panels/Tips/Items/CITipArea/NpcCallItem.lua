@@ -1,4 +1,4 @@
---- BLOCK #0 1-35, warpins: 1 ---
+--- BLOCK #0 1-37, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -112,7 +112,7 @@ slot8 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 20-32, warpins: 1 ---
+	--- BLOCK #4 20-30, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
@@ -135,28 +135,28 @@ slot8 = function(slot0)
 
 	slot1.closeFunc = slot2
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = SysConfigData
 	slot3 = slot3.NPC_CALL_CLOSE_TIME
-	slot2 = slot2 + slot3
-	slot2 = slot2 + 1
 	--- END OF BLOCK #4 ---
 
-	slot2 = if not slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 33-33, warpins: 1 ---
-	slot2 = 16
+	--- BLOCK #5 31-31, warpins: 1 ---
+	slot3 = 15
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 34-49, warpins: 2 ---
+	--- BLOCK #6 32-49, warpins: 2 ---
+	slot2 = slot2 + slot3
+	slot2 = slot2 + 1
 	slot1.endTime = slot2
 	slot4 = slot0
 	slot2 = slot0.addRunItem
@@ -218,7 +218,7 @@ slot8 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -263,6 +263,55 @@ slot8 = function(slot0)
 end
 
 slot7.refreshRemainTime = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.firstRunItem
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-19, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.close
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_NPC_CALL_MULTIPLE
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.removeItem
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.onClearRunningList = slot8
 
 return slot7
 --- END OF BLOCK #0 ---

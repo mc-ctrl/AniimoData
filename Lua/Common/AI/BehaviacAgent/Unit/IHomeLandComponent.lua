@@ -1,4 +1,4 @@
---- BLOCK #0 1-25, warpins: 1 ---
+--- BLOCK #0 1-27, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -83,6 +83,29 @@ slot7 = function(slot0, slot1, slot2)
 end
 
 slot6.switchToHomeWorkNow = slot7
+
+slot7 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot4 = HomeLandUtils
+	slot4 = slot4.tryMountHomeLeisureRide
+	slot6 = slot0.ent
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = EBTStatus
+	slot4 = slot4.BT_SUCCESS
+
+	return slot4
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.tryHomeLeisureMount = slot7
 
 return slot6
 --- END OF BLOCK #0 ---

@@ -20,7 +20,7 @@ slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-92, warpins: 1 ---
+	--- BLOCK #0 1-97, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -112,6 +112,11 @@ slot5 = function(slot0)
 	slot5 = "itemUButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.itemUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnHeadUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnHeadUButton = slot2
 
 	return
 	--- END OF BLOCK #0 ---

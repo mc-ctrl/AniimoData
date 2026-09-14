@@ -13,11 +13,11 @@ slot5 = "ItemViewerModel"
 slot6 = slot1
 slot3 = slot3(slot5, slot6)
 slot4 = {
-	MODE4 = 3,
 	MODE3 = 2,
 	MODE2 = 1,
 	MODE1 = 0,
-	MODE5 = 4
+	MODE5 = 4,
+	MODE4 = 3
 }
 slot3.VIEWER_MODE = slot4
 

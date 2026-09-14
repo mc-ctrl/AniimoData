@@ -1,4 +1,4 @@
---- BLOCK #0 1-97, warpins: 1 ---
+--- BLOCK #0 1-87, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -33,238 +33,43 @@ slot10 = require
 slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Const.AddressDataConst"
+slot13 = "Data.meteorology_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.meteorology_data"
+slot14 = "Core.Common.Time"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Core.Common.Time"
+slot15 = "Const.RedDotConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Const.RedDotConst"
+slot16 = "Const.ClientConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Const.ClientConst"
+slot17 = "GameApp.Map.MapHelper"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "GameApp.Map.MapHelper"
+slot18 = "Guis.Utils.MapUtils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Guis.Utils.MapUtils"
+slot19 = "Utils.ClientUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Utils.ClientUtils"
+slot20 = "Const.HotkeyConst"
 slot18 = slot18(slot20)
 slot19 = slot0.LightClass
 slot21 = "MapPetAreaComponent"
 slot22 = slot1
 slot19 = slot19(slot21, slot22)
-slot20 = {
-	High = 2,
-	Reach = 1,
-	UnKnown = 0,
-	Lock = 3
-}
-slot19.SmallAreaState = slot20
 
 slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-19, warpins: 1 ---
-	slot2 = {}
-	slot0.areaIndexTable = slot2
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.map
-	slot4 = slot2
-	slot2 = slot2.convertSceneId
-	slot5 = slot1.selectedSceneId
-	slot2 = slot2(slot4, slot5)
-	slot3 = MapHelper
-	slot3 = slot3.getAllChildrenScene
-	slot5 = slot2
-	slot3 = slot3(slot5)
-	slot4 = {}
-	slot5 = 0
-	slot6 = ipairs
-	slot8 = slot3
-	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #0 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = nil
+	slot0.lastNotReachTipAreaId = slot2
+	slot2 = 0
+	slot0.lastNotReachTipTime = slot2
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #1 20-31, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.game
-	slot11 = slot11.map
-	slot13 = slot11
-	slot11 = slot11.getBlockIds
-	slot14 = slot10
-	slot11 = slot11(slot13, slot14)
-	slot5 = #slot4
-	slot12 = ipairs
-	slot14 = slot11
-	slot12, slot13, slot14 = slot12(slot14)
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #2 32-35, warpins: 1 ---
-	slot17 = MapSmallAreaIdToIndex
-	slot17 = slot17[slot16]
-	--- END OF BLOCK #2 ---
-
-	slot17 = if slot17 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #3 36-43, warpins: 1 ---
-	slot17 = pg
-	slot17 = slot17.me
-	slot19 = slot17
-	slot17 = slot17.getAreaFirstInData
-	slot20 = slot16
-	slot17 = slot17(slot19, slot20)
-	--- END OF BLOCK #3 ---
-
-	slot17 = if slot17 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 44-47, warpins: 1 ---
-	slot17 = slot0.SmallAreaState
-	slot17 = slot17.Reach
-	--- END OF BLOCK #4 ---
-
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 48-49, warpins: 2 ---
-	slot17 = slot0.SmallAreaState
-	slot17 = slot17.UnKnown
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 50-55, warpins: 2 ---
-	slot20 = slot0
-	slot18 = slot0.checkSmallAreaLockState
-	slot21 = slot16
-	slot18 = slot18(slot20, slot21)
-	--- END OF BLOCK #6 ---
-
-	slot18 = if not slot18 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 56-57, warpins: 1 ---
-	slot18 = slot0.SmallAreaState
-	slot17 = slot18.Lock
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 58-63, warpins: 2 ---
-	slot18 = MapSmallAreaIdToIndex
-	slot18 = slot18[slot16]
-	slot18 = slot18 + slot5
-	slot4[slot18] = slot17
-	slot19 = slot0.areaIndexTable
-	slot19[slot16] = slot18
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 64-65, warpins: 3 ---
-	--- END OF BLOCK #9 ---
-
-	for slot15, slot16 in slot12, slot13, slot14
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #10
-
-
-	--- BLOCK #10 66-67, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #11
-
-
-	--- BLOCK #11 68-77, warpins: 1 ---
-	slot0.stateData = slot4
-	slot6 = nil
-	slot0.lastNotReachTipAreaId = slot6
-	slot6 = 0
-	slot0.lastNotReachTipTime = slot6
-	slot6 = AddressDataConst
-	slot6 = slot6.MAP_AREA_INFO
-	slot6 = slot6[slot2]
-	--- END OF BLOCK #11 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 78-88, warpins: 1 ---
-	slot7 = slot0.view
-	slot9 = slot7
-	slot7 = slot7.addPrefabWithPathAsync
-	slot10 = slot0.view
-	slot10 = slot10.mapAreaTransform
-	slot11 = slot6
-
-	slot12 = function(slot0)
-		--- BLOCK #0 1-8, warpins: 1 ---
-		slot1 = self
-		slot2 = slot0.gameObject
-		slot1.resObj = slot2
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.trySetMapAreaUImages
-
-		slot1(slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot13 = true
-	slot14 = true
-	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14)
-	slot0.taskId = slot7
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 89-90, warpins: 2 ---
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -274,227 +79,17 @@ slot19.onCtor = slot20
 
 slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.mapAreaUImages
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot1 = slot0.mapAreaUImages
-	slot1 = slot1.Length
-	slot2 = 0
-	--- END OF BLOCK #1 ---
-
-	if slot1 <= slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 9-11, warpins: 2 ---
-	slot1 = slot0.resObj
-
-	--- END OF BLOCK #2 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-12, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 13-26, warpins: 2 ---
-	slot1 = slot0.resObj
-	slot3 = slot1
-	slot1 = slot1.GetComponentsInChildren
-	slot4 = typeof
-	slot6 = CS
-	slot6 = slot6.XGUI
-	slot6 = slot6.UImage
-	MULTRES = slot4(slot6)
-	slot1 = slot1(slot3, MULTRES)
-	slot0.mapAreaUImages = slot1
-	slot1 = slot0.ctrl
-	slot1 = slot1.scaleValue
-	--- END OF BLOCK #4 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #5 27-34, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.mapShowScaleMap
-	slot2 = slot0.ctrl
-	slot2 = slot2.sceneId
-	slot1 = slot1[slot2]
-	--- END OF BLOCK #5 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 35-42, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.map
-	slot3 = slot1
-	slot1 = slot1.getDefaultMapScaleRatio
-	slot4 = slot0.ctrl
-	slot4 = slot4.sceneId
-	slot1 = slot1(slot3, slot4)
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 43-47, warpins: 3 ---
-	slot4 = slot0
-	slot2 = slot0.setMapAreaVisible
-	slot5 = 0
-	--- END OF BLOCK #7 ---
-
-	if slot1 > slot5 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 48-49, warpins: 1 ---
-	slot5 = false
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 50-50, warpins: 1 ---
-	slot5 = true
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 51-56, warpins: 2 ---
-	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.setAreaHighLight
-	slot5 = -1
-
-	slot2(slot4, slot5)
-
-	return
-	--- END OF BLOCK #10 ---
-
-
-
-end
-
-slot19.trySetMapAreaUImages = slot20
-
-slot20 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.taskId
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot1 = slot0.view
-	slot3 = slot1
-	slot1 = slot1.cancelUIAsyncTask
-	slot4 = slot0.taskId
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-11, warpins: 2 ---
-	slot1 = slot0.resObj
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 12-18, warpins: 1 ---
-	slot1 = slot0.view
-	slot3 = slot1
-	slot1 = slot1.checkInstanceExists
-	slot4 = slot0.resObj
-	slot1 = slot1(slot3, slot4)
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 19-23, warpins: 1 ---
-	slot1 = slot0.view
-	slot3 = slot1
-	slot1 = slot1.destroyInstance
-	slot4 = slot0.resObj
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 24-30, warpins: 3 ---
-	slot1 = nil
-	slot0.mapAreaUImages = slot1
-	slot1 = nil
-	slot0.resObj = slot1
 	slot1 = slot0.weatherTaskContainer
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #6 31-39, warpins: 1 ---
+	--- BLOCK #1 4-12, warpins: 1 ---
 	slot1 = MapUtils
 	slot1 = slot1.renderWeatherIcon
 	slot3 = nil
@@ -507,14 +102,14 @@ slot20 = function(slot0)
 	slot1 = nil
 	slot0.weatherTaskContainer = slot1
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #7 40-40, warpins: 2 ---
+	--- BLOCK #2 13-13, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -1696,57 +1291,6 @@ end
 
 slot19.RefreshWeather = slot20
 
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = MapBlockConfigData
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot3 = slot2.mapAreaId
-	--- END OF BLOCK #1 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-9, warpins: 2 ---
-	slot3 = false
-
-	return slot3
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 10-16, warpins: 2 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.map
-	slot5 = slot3
-	slot3 = slot3.checkBlockLeylineTreeUnlocked
-	slot6 = slot2.mapAreaId
-
-	return slot3(slot5, slot6)
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot19.checkSmallAreaLockState = slot20
-
 slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
@@ -1819,247 +1363,41 @@ end
 slot19.closePanel = slot20
 
 slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.mapAreaUImages
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.mapAreaOverlayComponent
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.mapAreaUImages
-	slot3 = slot3.Length
-	slot4 = 1
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-16, warpins: 2 ---
-	slot6 = slot0.mapAreaUImages
-	slot7 = slot5 - 1
-	slot6 = slot6[slot7]
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = slot1
-
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #2 ---
-
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #3
-
-	--- BLOCK #3 17-17, warpins: 2 ---
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot19.setMapAreaVisible = slot20
-
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.mapAreaUImages
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.mapAreaUImages
-	slot3 = slot3.Length
-	slot4 = 1
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-18, warpins: 2 ---
-	slot6 = pgUtils
-	slot6 = slot6.SetMapMaterialInfo
-	slot8 = slot0.mapAreaUImages
-	slot9 = slot5 - 1
-	slot8 = slot8[slot9]
-	slot9 = slot0.stateData
-	slot10 = slot0.areaIndexTable
-	slot10 = slot10[slot1]
-	--- END OF BLOCK #2 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 19-19, warpins: 1 ---
-	slot10 = 0
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 20-24, warpins: 2 ---
-	slot11 = slot0.areaIndexTable
-	slot12 = slot0.hoverAreaId
-	slot11 = slot11[slot12]
-	--- END OF BLOCK #4 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 25-25, warpins: 1 ---
-	slot11 = 0
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-27, warpins: 2 ---
-	slot6(slot8, slot9, slot10, slot11)
-
-	--- END OF BLOCK #6 ---
-
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #7
-
-	--- BLOCK #7 28-28, warpins: 2 ---
-	return
-	--- END OF BLOCK #7 ---
-
-
-
-end
-
-slot19.setAreaHighLight = slot20
-
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.hoverAreaId
-
-	--- END OF BLOCK #0 ---
-
-	if slot1 == slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.mapAreaOverlayComponent
+	slot4 = slot2
+	slot2 = slot2.setSelected
+	slot5 = slot1
+
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 2 ---
-	slot0.hoverAreaId = slot1
-	slot2 = slot0.mapAreaUImages
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #3 9-13, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.mapAreaUImages
-	slot3 = slot3.Length
-	slot4 = 1
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 14-24, warpins: 2 ---
-	slot6 = pgUtils
-	slot6 = slot6.SetMapMaterialInfo
-	slot8 = slot0.mapAreaUImages
-	slot9 = slot5 - 1
-	slot8 = slot8[slot9]
-	slot9 = slot0.stateData
-	slot10 = slot0.areaIndexTable
-	slot11 = slot0.smallAreaId
-	slot10 = slot10[slot11]
-	--- END OF BLOCK #4 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 25-25, warpins: 1 ---
-	slot10 = 0
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-29, warpins: 2 ---
-	slot11 = slot0.areaIndexTable
-	slot11 = slot11[slot1]
-	--- END OF BLOCK #6 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 30-30, warpins: 1 ---
-	slot11 = 0
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 31-32, warpins: 2 ---
-	slot6(slot8, slot9, slot10, slot11)
-
-	--- END OF BLOCK #8 ---
-
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #9
-
-	--- BLOCK #9 33-33, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot19.setAreaHover = slot20
+slot19.setAreaHighLight = slot20
 
 slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -2283,7 +1621,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #18 101-101, warpins: 1 ---
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #51
+	UNCONDITIONAL JUMP; TARGET BLOCK #58
 
 
 	--- BLOCK #19 102-106, warpins: 2 ---
@@ -2304,7 +1642,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #20 107-107, warpins: 1 ---
 	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #59
 
 
 	--- BLOCK #21 108-115, warpins: 1 ---
@@ -2325,7 +1663,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #22 116-119, warpins: 1 ---
 	slot5 = Time
-	slot5 = slot5.secondCache
+	slot5 = slot5.realSecondCache
 	--- END OF BLOCK #22 ---
 
 	slot5 = if not slot5 then
@@ -2428,7 +1766,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #32 147-147, warpins: 2 ---
 	--- END OF BLOCK #32 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #53
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
 	--- BLOCK #33 148-158, warpins: 1 ---
@@ -2455,7 +1793,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #34 159-159, warpins: 1 ---
 	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #61
 
 
 	--- BLOCK #35 160-162, warpins: 1 ---
@@ -2472,7 +1810,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #36 163-163, warpins: 1 ---
 	--- END OF BLOCK #36 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #55
+	UNCONDITIONAL JUMP; TARGET BLOCK #62
 
 
 	--- BLOCK #37 164-168, warpins: 1 ---
@@ -2491,10 +1829,10 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #38 169-169, warpins: 1 ---
 	--- END OF BLOCK #38 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #56
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-	--- BLOCK #39 170-382, warpins: 1 ---
+	--- BLOCK #39 170-381, warpins: 1 ---
 	slot0.smallAreaCfg = slot5
 	slot0.smallAreaId = slot4
 	slot7 = slot0.ctrl
@@ -2704,14 +2042,82 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot0.weatherTransform = slot11
 	slot13 = slot7
 	slot11 = slot7.GetRefValue
-	slot14 = "dadgeTransform"
+	slot14 = "dadgeListUCentralList"
 	slot11 = slot11(slot13, slot14)
-	slot0.dadgeTransform = slot11
+	slot0.dadgeListUCentralList = slot11
 	slot13 = slot7
 	slot11 = slot7.GetRefValue
 	slot14 = "textUSDFText"
 	slot11 = slot11(slot13, slot14)
 	slot0.textUSDFText = slot11
+	slot13 = slot7
+	slot11 = slot7.GetRefValue
+	slot14 = "leftBtnUButton"
+	slot11 = slot11(slot13, slot14)
+	slot0.leftBtnUButton = slot11
+	slot13 = slot7
+	slot11 = slot7.GetRefValue
+	slot14 = "rightBtnUButton"
+	slot11 = slot11(slot13, slot14)
+	slot0.rightBtnUButton = slot11
+	slot11 = slot0.ctrl
+	--- END OF BLOCK #39 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #40 382-385, warpins: 1 ---
+	slot11 = slot0.ctrl
+	slot11 = slot11.view
+	--- END OF BLOCK #40 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #41 386-390, warpins: 1 ---
+	slot11 = slot0.ctrl
+	slot11 = slot11.view
+	slot11 = slot11.consoleBarTransform
+	--- END OF BLOCK #41 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #42 391-401, warpins: 1 ---
+	slot11 = slot0.leftBtnUButton
+	slot13 = slot11
+	slot11 = slot11.SetHotkeyConsoleBarMultiPaths
+	slot14 = "CONSOLE_BAR_CYCLE_BADGE_REWARD"
+	slot15 = 8
+	slot16 = {
+		"Raw/GamepadLeftShoulder",
+		"Raw/GamepadRightShoulder"
+	}
+	slot17, slot18 = nil
+	slot19 = slot0.ctrl
+	slot19 = slot19.view
+	slot19 = slot19.consoleBarTransform
+
+	slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 402-415, warpins: 4 ---
 	slot0.lastSmallAreaId = slot4
 	slot11 = pg
 	slot11 = slot11.getLocalizationText
@@ -2724,16 +2130,16 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot13 = slot11
 	slot11 = slot11.getShowDebugId
 	slot11 = slot11(slot13)
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #43 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #40 383-394, warpins: 1 ---
+	--- BLOCK #44 416-427, warpins: 1 ---
 	slot11 = string
 	slot11 = slot11.format
 	slot13 = "%s-%s"
@@ -2746,12 +2152,12 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	MULTRES = slot15(slot17)
 	slot11 = slot11(slot13, slot14, MULTRES)
 	slot0.weatherText = slot11
-	--- END OF BLOCK #40 ---
+	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #41
+	FLOW; TARGET BLOCK #45
 
 
-	--- BLOCK #41 395-411, warpins: 2 ---
+	--- BLOCK #45 428-444, warpins: 2 ---
 	slot11 = slot0.ctrl
 	slot13 = slot11
 	slot11 = slot11.startTimer
@@ -2812,31 +2218,31 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot11, slot12 = slot11(slot13, slot14)
 	slot15 = slot0
 	slot13 = slot0.RefreshWeatherTime
-	--- END OF BLOCK #41 ---
+	--- END OF BLOCK #45 ---
 
 	if slot12 ~= 0 then
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #46
 	else
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #47
 	end
 
 
-	--- BLOCK #42 412-413, warpins: 1 ---
+	--- BLOCK #46 445-446, warpins: 1 ---
 	slot16 = false
-	--- END OF BLOCK #42 ---
+	--- END OF BLOCK #46 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #44
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #43 414-414, warpins: 1 ---
+	--- BLOCK #47 447-447, warpins: 1 ---
 	slot16 = true
 
-	--- END OF BLOCK #43 ---
+	--- END OF BLOCK #47 ---
 
-	FLOW; TARGET BLOCK #44
+	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #44 415-500, warpins: 2 ---
+	--- BLOCK #48 448-533, warpins: 2 ---
 	slot13(slot15, slot16)
 
 	slot15 = slot0
@@ -3209,12 +2615,11 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot15 = ClientTextUtils
 	slot15 = slot15.setText
 	slot17 = slot9
-	slot18 = string
-	slot18 = slot18.format
-	slot20 = "Lv.%s~%s"
-	slot21 = slot13
-	slot22 = slot14
-	MULTRES = slot18(slot20, slot21, slot22)
+	slot18 = ClientTextUtils
+	slot18 = slot18.formatShortLevelRange
+	slot20 = slot13
+	slot21 = slot14
+	MULTRES = slot18(slot20, slot21)
 
 	slot15(slot17, MULTRES)
 
@@ -3237,8 +2642,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot20 = "ObjectReference"
 	slot17 = slot17(slot19, slot20)
 	slot18 = slot4
+	slot19 = slot0.petAreaUComponent
 
-	slot15(slot17, slot18)
+	slot15(slot17, slot18, slot19)
 
 	slot15 = MapUtils
 	slot15 = slot15.renderWeatherIcon
@@ -3273,33 +2679,33 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot20 = slot20.RedDotPath
 	slot20 = slot20.FUNC_MENU_MAP_DISTRIBUTE_TAB_ICON
 	slot21 = slot0.buttonIconMysticUButton
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #48 ---
 
 	slot22 = if not slot15 then
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #51
 	end
 
 
-	--- BLOCK #45 501-502, warpins: 1 ---
-	--- END OF BLOCK #45 ---
+	--- BLOCK #49 534-535, warpins: 1 ---
+	--- END OF BLOCK #49 ---
 
 	slot22 = if not slot16 then
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #50
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #51
 	end
 
 
-	--- BLOCK #46 503-503, warpins: 1 ---
+	--- BLOCK #50 536-536, warpins: 1 ---
 	slot22 = slot17
-	--- END OF BLOCK #46 ---
+	--- END OF BLOCK #50 ---
 
-	FLOW; TARGET BLOCK #47
+	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #47 504-517, warpins: 3 ---
+	--- BLOCK #51 537-550, warpins: 3 ---
 	slot23 = RedDotConst
 	slot23 = slot23.RedDotStyle
 	slot23 = slot23.REWARD
@@ -3314,16 +2720,16 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot19 = UIConst
 	slot19 = slot19.PLATFORM
 	slot19 = slot19.Mobile
-	--- END OF BLOCK #47 ---
+	--- END OF BLOCK #51 ---
 
 	if slot18 == slot19 then
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #52
 	else
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #48 518-527, warpins: 1 ---
+	--- BLOCK #52 551-560, warpins: 1 ---
 	slot19 = slot0.petListUList
 	slot21 = slot19
 	slot19 = slot19.SetList
@@ -3348,12 +2754,12 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 	slot19(slot21, MULTRES)
 
-	--- END OF BLOCK #48 ---
+	--- END OF BLOCK #52 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #54
 
 
-	--- BLOCK #49 528-536, warpins: 1 ---
+	--- BLOCK #53 561-569, warpins: 1 ---
 	slot19 = slot0.petListUList
 	slot21 = slot19
 	slot19 = slot19.SetList
@@ -3378,72 +2784,291 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 	slot19(slot21, MULTRES)
 
-	--- END OF BLOCK #49 ---
-
-	FLOW; TARGET BLOCK #50
-
-
-	--- BLOCK #50 537-550, warpins: 2 ---
-	slot19 = MapUtils
-	slot19 = slot19.renderBadgePanel
-	slot21 = slot0.dadgeTransform
-	slot23 = slot21
-	slot21 = slot21.GetComponent
-	slot24 = "ObjectReference"
-	slot21 = slot21(slot23, slot24)
-	slot22 = slot4
-
-	slot19(slot21, slot22)
-
-	slot21 = slot0
-	slot19 = slot0.refreshCollectionView
-
-	slot19(slot21)
-
-	return
-	--- END OF BLOCK #50 ---
-
-	FLOW; TARGET BLOCK #51
-
-
-	--- BLOCK #51 551-551, warpins: 2 ---
-	return
-	--- END OF BLOCK #51 ---
-
-	FLOW; TARGET BLOCK #52
-
-
-	--- BLOCK #52 552-552, warpins: 2 ---
-	return
-	--- END OF BLOCK #52 ---
-
-	FLOW; TARGET BLOCK #53
-
-
-	--- BLOCK #53 553-553, warpins: 2 ---
-	return
 	--- END OF BLOCK #53 ---
 
 	FLOW; TARGET BLOCK #54
 
 
-	--- BLOCK #54 554-554, warpins: 2 ---
-	return
+	--- BLOCK #54 570-581, warpins: 2 ---
+	slot19 = MapUtils
+	slot19 = slot19.renderBadgeList
+	slot21 = slot0.dadgeListUCentralList
+	slot22 = slot4
+
+	slot19(slot21, slot22)
+
+	slot19 = MapUtils
+	slot19 = slot19.getBadgeStageStatus
+	slot21 = slot4
+	slot19, slot20, slot21 = slot19(slot21)
+	slot0.badgeStages = slot19
 	--- END OF BLOCK #54 ---
 
-	FLOW; TARGET BLOCK #55
+	slot21 = if slot21 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
 
 
-	--- BLOCK #55 555-555, warpins: 2 ---
-	return
+	--- BLOCK #55 582-584, warpins: 1 ---
+	slot22 = slot21 - 1
 	--- END OF BLOCK #55 ---
 
-	FLOW; TARGET BLOCK #56
+	slot22 = if not slot22 then
+	JUMP TO BLOCK #56
+	else
+	JUMP TO BLOCK #57
+	end
 
 
-	--- BLOCK #56 556-556, warpins: 2 ---
-	return
+	--- BLOCK #56 585-585, warpins: 2 ---
+	slot22 = 0
 	--- END OF BLOCK #56 ---
+
+	FLOW; TARGET BLOCK #57
+
+
+	--- BLOCK #57 586-597, warpins: 2 ---
+	slot0.joystickCurIndex = slot22
+	slot22 = slot0.leftBtnUButton
+
+	slot23 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.dadgeListUCentralList
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.dadgeListUCentralList
+		slot0 = slot0.gameObject
+		slot0 = slot0.activeSelf
+		--- END OF BLOCK #1 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 11-12, warpins: 2 ---
+		slot0 = true
+
+		return slot0
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 13-17, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.joystickCurIndex
+		slot1 = 0
+		--- END OF BLOCK #3 ---
+
+		if slot0 <= slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 18-19, warpins: 1 ---
+		slot0 = true
+
+		return slot0
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 20-34, warpins: 2 ---
+		slot0 = self
+		slot1 = self
+		slot1 = slot1.joystickCurIndex
+		slot1 = slot1 - 1
+		slot0.joystickCurIndex = slot1
+		slot0 = MapUtils
+		slot0 = slot0.renderBadgeList
+		slot2 = self
+		slot2 = slot2.dadgeListUCentralList
+		slot3 = self
+		slot3 = slot3.smallAreaId
+		slot4 = self
+		slot4 = slot4.joystickCurIndex
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot22.luaClick = slot23
+	slot22 = slot0.rightBtnUButton
+
+	slot23 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.dadgeListUCentralList
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.dadgeListUCentralList
+		slot0 = slot0.gameObject
+		slot0 = slot0.activeSelf
+		--- END OF BLOCK #1 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 11-12, warpins: 2 ---
+		slot0 = true
+
+		return slot0
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 13-16, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.badgeStages
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 17-24, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.joystickCurIndex
+		slot1 = self
+		slot1 = slot1.badgeStages
+		slot1 = #slot1
+		slot1 = slot1 - 1
+		--- END OF BLOCK #4 ---
+
+		if slot0 >= slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 25-26, warpins: 2 ---
+		slot0 = true
+
+		return slot0
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 27-41, warpins: 2 ---
+		slot0 = self
+		slot1 = self
+		slot1 = slot1.joystickCurIndex
+		slot1 = slot1 + 1
+		slot0.joystickCurIndex = slot1
+		slot0 = MapUtils
+		slot0 = slot0.renderBadgeList
+		slot2 = self
+		slot2 = slot2.dadgeListUCentralList
+		slot3 = self
+		slot3 = slot3.smallAreaId
+		slot4 = self
+		slot4 = slot4.joystickCurIndex
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot22.luaClick = slot23
+	slot24 = slot0
+	slot22 = slot0.refreshCollectionView
+
+	slot22(slot24)
+
+	return
+	--- END OF BLOCK #57 ---
+
+	FLOW; TARGET BLOCK #58
+
+
+	--- BLOCK #58 598-598, warpins: 2 ---
+	return
+	--- END OF BLOCK #58 ---
+
+	FLOW; TARGET BLOCK #59
+
+
+	--- BLOCK #59 599-599, warpins: 2 ---
+	return
+	--- END OF BLOCK #59 ---
+
+	FLOW; TARGET BLOCK #60
+
+
+	--- BLOCK #60 600-600, warpins: 2 ---
+	return
+	--- END OF BLOCK #60 ---
+
+	FLOW; TARGET BLOCK #61
+
+
+	--- BLOCK #61 601-601, warpins: 2 ---
+	return
+	--- END OF BLOCK #61 ---
+
+	FLOW; TARGET BLOCK #62
+
+
+	--- BLOCK #62 602-602, warpins: 2 ---
+	return
+	--- END OF BLOCK #62 ---
+
+	FLOW; TARGET BLOCK #63
+
+
+	--- BLOCK #63 603-603, warpins: 2 ---
+	return
+	--- END OF BLOCK #63 ---
 
 
 
@@ -3464,7 +3089,7 @@ slot20 = function(slot0)
 
 
 	--- BLOCK #1 4-6, warpins: 1 ---
-	slot1 = slot0.dadgeTransform
+	slot1 = slot0.dadgeListUCentralList
 
 	--- END OF BLOCK #1 ---
 
@@ -3483,14 +3108,10 @@ slot20 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 8-32, warpins: 2 ---
+	--- BLOCK #3 8-28, warpins: 2 ---
 	slot1 = MapUtils
-	slot1 = slot1.renderBadgePanel
-	slot3 = slot0.dadgeTransform
-	slot5 = slot3
-	slot3 = slot3.GetComponent
-	slot6 = "ObjectReference"
-	slot3 = slot3(slot5, slot6)
+	slot1 = slot1.renderBadgeList
+	slot3 = slot0.dadgeListUCentralList
 	slot4 = slot0.smallAreaId
 
 	slot1(slot3, slot4)
@@ -3518,7 +3139,7 @@ slot20 = function(slot0)
 	end
 
 
-	--- BLOCK #4 33-34, warpins: 1 ---
+	--- BLOCK #4 29-30, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	slot8 = if not slot2 then
@@ -3528,14 +3149,14 @@ slot20 = function(slot0)
 	end
 
 
-	--- BLOCK #5 35-35, warpins: 1 ---
+	--- BLOCK #5 31-31, warpins: 1 ---
 	slot8 = slot3
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 36-40, warpins: 3 ---
+	--- BLOCK #6 32-36, warpins: 3 ---
 	slot9 = RedDotConst
 	slot9 = slot9.RedDotStyle
 	slot9 = slot9.REWARD

@@ -713,46 +713,45 @@ slot6 = function(slot0, slot1)
 
 
 	--- BLOCK #1 4-5, warpins: 1 ---
-	slot2 = false
+	slot3 = false
 
-	return slot2
+	return slot3
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-11, warpins: 2 ---
-	slot2 = slot0._curState
-	slot4 = slot2
-	slot2 = slot2.getStateName
-	slot2 = slot2(slot4)
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.getStateName
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	if slot2 ~= slot1 then
+	if slot3 ~= slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-13, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 14-14, warpins: 1 ---
-	slot2 = true
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot3 = true
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-15, warpins: 2 ---
-	return slot2
+	--- BLOCK #5 14-14, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #5 ---
 
 

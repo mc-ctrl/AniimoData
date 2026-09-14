@@ -1,4 +1,4 @@
---- BLOCK #0 1-68, warpins: 1 ---
+--- BLOCK #0 1-70, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -107,6 +107,25 @@ end
 
 slot8.init = slot10
 
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = ClientEditorTemplateEntity
+	slot2 = slot2.super
+	slot2 = slot2.postInit
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.postInit = slot10
+
 slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientEditorTemplateEntity
@@ -161,25 +180,23 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-32, warpins: 2 ---
+	--- BLOCK #2 16-30, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_AddEComponent"
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddMonoComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelMonoComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_PHYSX
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -244,22 +261,22 @@ slot10 = function(slot0)
 	slot2(slot4, slot5)
 
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
 	slot4 = slot2
 	slot2 = slot2.SetModelResId
-	slot5 = slot0.templateData
-	slot5 = slot5.prefabResID
-	slot6 = ClientConst
-	slot6 = slot6.InstantiatePriority
-	slot6 = slot6.Urgent
+	slot5 = Const
+	slot5 = slot5.COMPONENT_IDX_ITEM
+	slot6 = slot0.templateData
+	slot6 = slot6.prefabResID
 	slot7 = ClientConst
 	slot7 = slot7.InstantiatePriority
-	slot7 = slot7.High
+	slot7 = slot7.Urgent
+	slot8 = ClientConst
+	slot8 = slot8.InstantiatePriority
+	slot8 = slot8.High
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	slot2 = slot0.eModel
-	slot2 = slot2.modelView
 	slot2 = slot2.shaderView
 	slot4 = slot2
 	slot2 = slot2.SetShadowType
@@ -292,7 +309,12 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
+	--- BLOCK #1 6-14, warpins: 1 ---
+	slot3 = Vector3
+	slot3 = slot3.enableCreateFromCache
+
+	slot3()
+
 	slot5 = slot0
 	slot3 = slot0.getRotation
 	slot3 = slot3(slot5)
@@ -306,7 +328,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 12-14, warpins: 1 ---
+	--- BLOCK #2 15-17, warpins: 1 ---
 	slot4 = slot0.baseTransMatrixInv
 	slot4 = slot4.rotation
 	slot3 = slot4 * slot3
@@ -315,11 +337,16 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 15-20, warpins: 2 ---
+	--- BLOCK #3 18-26, warpins: 2 ---
 	slot4 = Utils
 	slot4 = slot4.checkRotationIsVertical
 	slot6 = slot3
 	slot4 = slot4(slot6)
+	slot5 = Vector3
+	slot5 = slot5.disableCreateFromCache
+
+	slot5()
+
 	--- END OF BLOCK #3 ---
 
 	slot4 = if slot4 then
@@ -329,26 +356,26 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 21-31, warpins: 1 ---
-	slot4 = slot2[2]
-	slot4 = -slot4
-	slot4 = slot4 * 0.5
+	--- BLOCK #4 27-37, warpins: 1 ---
 	slot5 = slot2[2]
+	slot5 = -slot5
 	slot5 = slot5 * 0.5
-	slot6 = slot2[1]
-	slot6 = -slot6
+	slot6 = slot2[2]
 	slot6 = slot6 * 0.5
 	slot7 = slot2[1]
+	slot7 = -slot7
 	slot7 = slot7 * 0.5
+	slot8 = slot2[1]
+	slot8 = slot8 * 0.5
 
-	return slot4, slot5, slot6, slot7
+	return slot5, slot6, slot7, slot8
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 32-46, warpins: 3 ---
+	--- BLOCK #5 38-52, warpins: 3 ---
 	slot3 = slot2[1]
 	slot3 = -slot3
 	slot3 = slot3 * 0.5
@@ -404,26 +431,28 @@ end
 slot8.onEntityPositionChanged = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = true
 	slot0.isModelLoaded = slot1
 	slot1 = slot0.eModel
-	slot1 = slot1.physxComponent
 	slot3 = slot1
 	slot1 = slot1.SetHomeObjectTemplateCollider
+	slot4 = Const
+	slot4 = slot4.COMPONENT_IDX_PHYSX
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.physxComponent
 	slot3 = slot1
 	slot1 = slot1.SetTag
 	slot4 = Const
-	slot4 = slot4.TAG_ACTOR
-	slot5 = slot0.actorId
-	slot6 = 0
+	slot4 = slot4.COMPONENT_IDX_PHYSX
+	slot5 = Const
+	slot5 = slot5.TAG_ACTOR
+	slot6 = slot0.actorId
+	slot7 = 0
 
-	slot1(slot3, slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot1 = slot0.templateData
 	slot1 = slot1.modelText
@@ -436,7 +465,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #1 21-33, warpins: 1 ---
+	--- BLOCK #1 23-35, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getLocalizationText
 	slot4 = slot1
@@ -457,7 +486,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 34-34, warpins: 2 ---
+	--- BLOCK #2 36-36, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

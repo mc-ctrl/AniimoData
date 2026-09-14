@@ -1,4 +1,4 @@
---- BLOCK #0 1-80, warpins: 1 ---
+--- BLOCK #0 1-84, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -189,12 +189,14 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 40-46, warpins: 2 ---
+	--- BLOCK #5 40-48, warpins: 2 ---
 	slot3 = slot0.homeEntity
 	slot3 = slot3.pets
 	slot4 = slot0.id
 	slot3 = slot3[slot4]
 	slot0.petInfo = slot3
+	slot3 = true
+	slot0.useSimpleTimeScale = slot3
 	slot3 = true
 
 	return slot3
@@ -220,6 +222,152 @@ slot16 = function(slot0)
 end
 
 slot14.getHomelandConfigData = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getConfigData
+	slot1 = slot1(slot3)
+	slot1 = slot1.stepHeightUp
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot2 = slot0.homeSpace
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot2 = slot0.space
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot2 = pg
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-18, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.space
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-20, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 21-23, warpins: 1 ---
+	slot3 = slot2.demoMode
+	--- END OF BLOCK #7 ---
+
+	if slot3 == true then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 24-29, warpins: 1 ---
+	slot3 = math
+	slot3 = slot3.max
+	slot5 = slot1
+	slot6 = Const
+	slot6 = slot6.HOMELAND_DEMO_PET_STEP_HEIGHT_UP
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 30-30, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot14.getStepHeightUp = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot1 = slot0.eModel
+	slot4 = slot0
+	slot2 = slot0.getStepHeightUp
+	slot2 = slot2(slot4)
+	slot1.stepHeightUp = slot2
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot14.refreshDemoModeStepHeightUp = slot16
 
 slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---

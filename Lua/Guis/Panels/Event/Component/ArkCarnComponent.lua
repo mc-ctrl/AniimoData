@@ -2148,7 +2148,7 @@ slot22 = function(slot0)
 	slot5 = slot0
 	slot3 = slot0.setEventTitle
 	slot6 = slot0.eventTitleUContainer
-	slot7 = slot2.eventEndDayTime
+	slot7 = slot2.tabEndDayTime
 
 	slot3(slot5, slot6, slot7)
 

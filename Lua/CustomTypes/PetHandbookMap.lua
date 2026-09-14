@@ -30,22 +30,22 @@ slot9 = require
 slot11 = "Common.CommonSwitch"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_research_content_data"
+slot12 = "Data.pet_research_country_level_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.pet_research_country_level_data"
+slot13 = "Data.pet_research_country_collect_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_research_country_collect_data"
+slot14 = "Data.pet_base_prototype_to_prototype_map"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_base_prototype_to_prototype_map"
+slot15 = "Data.pet_research_country_species_collect_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.pet_research_country_species_collect_data"
+slot16 = "Data.pet_handbook_config_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.pet_handbook_config_data"
+slot17 = "Data.map_area_config_data"
 slot15 = slot15(slot17)
 slot16 = slot1.LiteClass
 slot18 = "PetHandbookMap"
@@ -124,7 +124,7 @@ slot17 = function(slot0, slot1, slot2)
 	if slot3 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -134,7 +134,7 @@ slot17 = function(slot0, slot1, slot2)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -146,7 +146,7 @@ slot17 = function(slot0, slot1, slot2)
 	if slot3 == "game" then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -155,19 +155,41 @@ slot17 = function(slot0, slot1, slot2)
 	slot3 = slot3.genPetHandbookInitDict
 	slot5 = slot1
 	slot3 = slot3(slot5)
-	slot0[slot1] = slot3
-	slot3 = {}
-	slot0.cachedTraitUnlockdCountMap = slot3
+	slot4 = slot0.buildPetHandbookInfoInitDict
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 17-18, warpins: 4 ---
+	--- BLOCK #4 17-21, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.buildPetHandbookInfoInitDict
+	slot7 = slot3
+	slot4 = slot4(slot6, slot7)
+	slot3 = slot4
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-24, warpins: 2 ---
+	slot0[slot1] = slot3
+	slot4 = {}
+	slot0.cachedTraitUnlockdCountMap = slot4
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-26, warpins: 4 ---
 	slot3 = slot0[slot1]
 
 	return slot3
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
@@ -933,71 +955,135 @@ end
 slot16.getLevel = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = CommonSwitch
-	slot2 = slot2.PetHandbookCache
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-8, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._getCountryTotalExp
-	slot5 = slot1
-
-	return slot2(slot4, slot5)
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 9-12, warpins: 2 ---
-	slot2 = slot0.cachedCountryTotalExpMap
-	slot2 = slot2[slot1]
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	if slot2 == nil then
-	JUMP TO BLOCK #3
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 13-21, warpins: 1 ---
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
+	--- END OF BLOCK #5 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-20, warpins: 2 ---
+	slot3 = CommonSwitch
+	slot3 = slot3.PetHandbookCache
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-24, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0._getCountryTotalExp
 	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot2 = slot3
-	slot3 = pg
-	slot3 = slot3.component
-	--- END OF BLOCK #3 ---
 
-	if slot3 == "game" then
-	JUMP TO BLOCK #4
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 25-28, warpins: 2 ---
+	slot3 = slot0.cachedCountryTotalExpMap
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #9 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #4 22-23, warpins: 1 ---
-	slot3 = slot0.cachedCountryTotalExpMap
-	slot3[slot1] = slot2
+	--- BLOCK #10 29-37, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._getCountryTotalExp
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot3 = slot4
+	slot4 = pg
+	slot4 = slot4.component
+	--- END OF BLOCK #10 ---
 
-	--- END OF BLOCK #4 ---
+	if slot4 == "game" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
-	FLOW; TARGET BLOCK #5
+
+	--- BLOCK #11 38-39, warpins: 1 ---
+	slot4 = slot0.cachedCountryTotalExpMap
+	slot4[slot1] = slot3
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #5 24-24, warpins: 3 ---
-	return slot2
-	--- END OF BLOCK #5 ---
+	--- BLOCK #12 40-40, warpins: 3 ---
+	return slot3
+	--- END OF BLOCK #12 ---
 
 
 
@@ -1006,75 +1092,130 @@ end
 slot16.getCountryTotalExp = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 0
-	slot5 = slot0
-	slot3 = slot0.items
-	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot8 = Utils
-	slot8 = slot8.isBasePetPrototypeId
-	slot10 = slot6
-	slot8 = slot8(slot10)
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 12-15, warpins: 1 ---
-	slot8 = PetResearchContentData
-	slot8 = slot8[slot6]
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 16-18, warpins: 1 ---
-	slot9 = slot8.countryId
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	if slot9 == slot1 then
-	JUMP TO BLOCK #4
-	else
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 19-22, warpins: 1 ---
-	slot11 = slot7
-	slot9 = slot7.getTotalExp
-	slot9 = slot9(slot11)
-	slot2 = slot2 + slot9
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 23-24, warpins: 5 ---
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
 	--- END OF BLOCK #5 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #6
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 25-25, warpins: 1 ---
-	return slot2
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-21, warpins: 2 ---
+	slot3 = 0
+	slot6 = slot0
+	slot4 = slot0.items
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 22-27, warpins: 1 ---
+	slot9 = Utils
+	slot9 = slot9.isBasePetPrototypeId
+	slot11 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #8 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 28-33, warpins: 1 ---
+	slot9 = Utils
+	slot9 = slot9.getPetCountryId
+	slot11 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #9 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 34-37, warpins: 1 ---
+	slot11 = slot8
+	slot9 = slot8.getTotalExp
+	slot9 = slot9(slot11)
+	slot3 = slot3 + slot9
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 38-39, warpins: 4 ---
+	--- END OF BLOCK #11 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 40-40, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #12 ---
 
 
 
@@ -1083,97 +1224,285 @@ end
 slot16._getCountryTotalExp = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PetResearchCountryLevelData
-	slot2 = slot2[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	if slot2 == nil then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot3 = 0
-	slot4 = 0
-
-	return slot3, slot4
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 8-12, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.getCountryTotalExp
-	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot4 = 0
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 13-15, warpins: 2 ---
-	slot5 = slot2[slot4]
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-19, warpins: 1 ---
-	slot5 = slot2[slot4]
-	slot5 = slot5.needResearchPoint
+	--- BLOCK #4 10-11, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 20-20, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 21-22, warpins: 2 ---
+	--- BLOCK #6 15-17, warpins: 2 ---
+	slot3 = 0
+	slot4 = 0
+
+	return slot3, slot4
+
 	--- END OF BLOCK #6 ---
 
-	if slot3 >= slot5 then
-	JUMP TO BLOCK #7
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 18-21, warpins: 2 ---
+	slot3 = PetResearchCountryLevelData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #7 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 23-23, warpins: 1 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #8 22-24, warpins: 1 ---
+	slot4 = 0
+	slot5 = 0
 
-	FLOW; TARGET BLOCK #8
+	return slot4, slot5
 
-
-	--- BLOCK #8 24-25, warpins: 1 ---
-	slot4 = slot4 + 1
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 26-31, warpins: 2 ---
-	slot4 = slot4 - 1
-	slot5 = slot4
-	slot6 = slot2[slot4]
+	--- BLOCK #9 25-29, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getCountryTotalExp
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = 0
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-32, warpins: 2 ---
+	slot6 = slot3[slot5]
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #11 33-36, warpins: 1 ---
+	slot6 = slot3[slot5]
+	slot6 = slot6.needResearchPoint
+	--- END OF BLOCK #11 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 37-37, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 38-39, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	if slot4 >= slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 40-40, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 41-42, warpins: 1 ---
+	slot5 = slot5 + 1
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #16 43-48, warpins: 2 ---
+	slot5 = slot5 - 1
+	slot6 = slot5
+	slot7 = slot3[slot5]
+	slot7 = slot7.needResearchPoint
+	--- END OF BLOCK #16 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 49-49, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 50-51, warpins: 2 ---
+	slot7 = slot4 - slot7
+
+	return slot6, slot7
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot16.getCountryTotalLevel = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
+	--- END OF BLOCK #5 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-24, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.getCountryTotalLevel
+	slot6 = slot1
+	slot3, slot4 = slot3(slot5, slot6)
+	slot5 = PetResearchCountryLevelData
+	slot5 = slot5[slot1]
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 25-27, warpins: 1 ---
+	slot6 = slot5[slot3]
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 28-31, warpins: 1 ---
+	slot6 = slot5[slot3]
 	slot6 = slot6.needResearchPoint
 	--- END OF BLOCK #9 ---
 
@@ -1184,102 +1513,43 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 32-32, warpins: 1 ---
+	--- BLOCK #10 32-32, warpins: 3 ---
 	slot6 = 0
+
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
 	--- BLOCK #11 33-34, warpins: 2 ---
-	slot6 = slot3 - slot6
-
-	return slot5, slot6
 	--- END OF BLOCK #11 ---
 
-
-
-end
-
-slot16.getCountryTotalLevel = slot17
-
-slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.getCountryTotalLevel
-	slot5 = slot1
-	slot2, slot3 = slot2(slot4, slot5)
-	slot4 = PetResearchCountryLevelData
-	slot4 = slot4[slot1]
-	--- END OF BLOCK #0 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #1
+	if slot6 == 0 then
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #1 9-11, warpins: 1 ---
-	slot5 = slot4[slot2]
-	--- END OF BLOCK #1 ---
+	--- BLOCK #12 35-35, warpins: 1 ---
+	return slot3
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #2 12-15, warpins: 1 ---
-	slot5 = slot4[slot2]
-	slot5 = slot5.needResearchPoint
-	--- END OF BLOCK #2 ---
+	--- BLOCK #13 36-43, warpins: 2 ---
+	slot7 = lume
+	slot7 = slot7.clamp
+	slot9 = slot4 / slot6
+	slot10 = 0
+	slot11 = 1
+	slot7 = slot7(slot9, slot10, slot11)
+	slot7 = slot3 + slot7
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 16-16, warpins: 3 ---
-	slot5 = 0
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-18, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	if slot5 == 0 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 19-19, warpins: 1 ---
-	return slot2
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 20-27, warpins: 2 ---
-	slot6 = lume
-	slot6 = slot6.clamp
-	slot8 = slot3 / slot5
-	slot9 = 0
-	slot10 = 1
-	slot6 = slot6(slot8, slot9, slot10)
-	slot6 = slot2 + slot6
-
-	return slot6
-	--- END OF BLOCK #6 ---
+	return slot7
+	--- END OF BLOCK #13 ---
 
 
 
@@ -1334,44 +1604,121 @@ end
 slot16.getMaxCountryTotalLevel = slot17
 
 slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0.petCountryMap
-	slot3 = slot3[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = 0
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	if slot1 > slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot3 = slot0.petCountryMap
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = MapAreaConfigData
 	slot3 = slot3[slot1]
-	slot3 = slot3.totalLevelRewardStatus
-	slot3 = slot3[slot2]
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot3 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 2 ---
-	slot3 = Const
-	slot3 = slot3.REWARD_STATUS_INIT
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot4 = slot3.belongNation
+	--- END OF BLOCK #5 ---
 
-	--- END OF BLOCK #2 ---
+	if slot4 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
-	FLOW; TARGET BLOCK #3
+
+	--- BLOCK #6 15-18, warpins: 1 ---
+	slot4 = PetResearchCountryLevelData
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #3 13-13, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #3 ---
+	--- BLOCK #7 19-21, warpins: 3 ---
+	slot4 = Const
+	slot4 = slot4.REWARD_STATUS_INIT
+
+	return slot4
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-25, warpins: 2 ---
+	slot4 = slot0.petCountryMap
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 26-31, warpins: 1 ---
+	slot4 = slot0.petCountryMap
+	slot4 = slot4[slot1]
+	slot4 = slot4.totalLevelRewardStatus
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 32-33, warpins: 2 ---
+	slot4 = Const
+	slot4 = slot4.REWARD_STATUS_INIT
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-34, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #11 ---
 
 
 
@@ -1494,71 +1841,135 @@ end
 slot16.getRainbowFormCatchedCount = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = CommonSwitch
-	slot2 = slot2.PetHandbookCache
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-8, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._getCountryCollectNum
-	slot5 = slot1
-
-	return slot2(slot4, slot5)
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 9-12, warpins: 2 ---
-	slot2 = slot0.cachedCountryCollectNumMap
-	slot2 = slot2[slot1]
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	if slot2 == nil then
-	JUMP TO BLOCK #3
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 13-21, warpins: 1 ---
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
+	--- END OF BLOCK #5 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-20, warpins: 2 ---
+	slot3 = CommonSwitch
+	slot3 = slot3.PetHandbookCache
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-24, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0._getCountryCollectNum
 	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot2 = slot3
-	slot3 = pg
-	slot3 = slot3.component
-	--- END OF BLOCK #3 ---
 
-	if slot3 == "game" then
-	JUMP TO BLOCK #4
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 25-28, warpins: 2 ---
+	slot3 = slot0.cachedCountryCollectNumMap
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #9 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #4 22-23, warpins: 1 ---
-	slot3 = slot0.cachedCountryCollectNumMap
-	slot3[slot1] = slot2
+	--- BLOCK #10 29-37, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._getCountryCollectNum
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot3 = slot4
+	slot4 = pg
+	slot4 = slot4.component
+	--- END OF BLOCK #10 ---
 
-	--- END OF BLOCK #4 ---
+	if slot4 == "game" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
-	FLOW; TARGET BLOCK #5
+
+	--- BLOCK #11 38-39, warpins: 1 ---
+	slot4 = slot0.cachedCountryCollectNumMap
+	slot4[slot1] = slot3
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #5 24-24, warpins: 3 ---
-	return slot2
-	--- END OF BLOCK #5 ---
+	--- BLOCK #12 40-40, warpins: 3 ---
+	return slot3
+	--- END OF BLOCK #12 ---
 
 
 
@@ -1567,75 +1978,126 @@ end
 slot16.getCountryCollectNum = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 0
-	slot5 = slot0
-	slot3 = slot0.items
-	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 6-13, warpins: 1 ---
-	slot8 = PetResearchContentData
-	slot9 = Utils
-	slot9 = slot9.getBasePetPrototypeId
-	slot11 = slot6
-	slot9 = slot9(slot11)
-	slot8 = slot8[slot9]
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 14-16, warpins: 1 ---
-	slot9 = slot8.countryId
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	if slot9 == slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
-	slot11 = slot7
-	slot9 = slot7.isCatched
-	slot9 = slot9(slot11)
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #4
-	else
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 22-22, warpins: 1 ---
-	slot2 = slot2 + 1
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 23-24, warpins: 5 ---
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
 	--- END OF BLOCK #5 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #6
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 25-25, warpins: 1 ---
-	return slot2
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-21, warpins: 2 ---
+	slot3 = 0
+	slot6 = slot0
+	slot4 = slot0.items
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 22-27, warpins: 1 ---
+	slot9 = Utils
+	slot9 = slot9.getPetCountryId
+	slot11 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #8 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 28-32, warpins: 1 ---
+	slot11 = slot8
+	slot9 = slot8.isCatched
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #9 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 33-33, warpins: 1 ---
+	slot3 = slot3 + 1
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-35, warpins: 4 ---
+	--- END OF BLOCK #11 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 36-36, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #12 ---
 
 
 
@@ -1644,29 +2106,71 @@ end
 slot16._getCountryCollectNum = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PetResearchCountryCollectData
-	slot2 = slot2[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	if slot2 == nil then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
+	--- END OF BLOCK #5 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 2 ---
 	slot3 = 0
 
 	return slot3
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #2 7-15, warpins: 2 ---
+	--- BLOCK #7 17-25, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.getCountryCollectNum
 	slot6 = slot1
@@ -1674,47 +2178,47 @@ slot17 = function(slot0, slot1)
 	slot4 = PetHandbookConfigData
 	slot4 = slot4.formCollectMaxMap
 	slot4 = slot4[slot1]
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #7 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #3 16-16, warpins: 1 ---
+	--- BLOCK #8 26-26, warpins: 1 ---
 	slot4 = 0
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #4 17-18, warpins: 2 ---
-	--- END OF BLOCK #4 ---
+	--- BLOCK #9 27-28, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
 	if slot4 == 0 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #5 19-20, warpins: 1 ---
+	--- BLOCK #10 29-30, warpins: 1 ---
 	slot5 = 0
 
 	return slot5
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #6 21-22, warpins: 2 ---
+	--- BLOCK #11 31-32, warpins: 2 ---
 	slot5 = slot3 / slot4
 
 	return slot5
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #11 ---
 
 
 
@@ -1723,119 +2227,184 @@ end
 slot16.getCountryCollectRate = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PetResearchCountryCollectData
-	slot2 = slot2[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	if slot2 == nil then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot3 = 0
-	slot4 = 0
-
-	return slot3, slot4
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 8-12, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.getCountryCollectNum
-	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot4 = 0
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 13-15, warpins: 2 ---
-	slot5 = slot2[slot4]
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-19, warpins: 1 ---
-	slot5 = slot2[slot4]
-	slot5 = slot5.collectNum
+	--- BLOCK #4 10-11, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 20-20, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 21-22, warpins: 2 ---
+	--- BLOCK #6 15-17, warpins: 2 ---
+	slot3 = 0
+	slot4 = 0
+
+	return slot3, slot4
+
 	--- END OF BLOCK #6 ---
 
-	if slot3 >= slot5 then
-	JUMP TO BLOCK #7
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 18-21, warpins: 2 ---
+	slot3 = PetResearchCountryCollectData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #7 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 23-23, warpins: 1 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #8 22-24, warpins: 1 ---
+	slot4 = 0
+	slot5 = 0
 
-	FLOW; TARGET BLOCK #8
+	return slot4, slot5
 
-
-	--- BLOCK #8 24-25, warpins: 1 ---
-	slot4 = slot4 + 1
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 26-31, warpins: 2 ---
-	slot4 = slot4 - 1
-	slot5 = slot4
-	slot6 = slot2[slot4]
-	slot6 = slot6.collectNum
+	--- BLOCK #9 25-29, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getCountryCollectNum
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = 0
 	--- END OF BLOCK #9 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #10
-	else
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-32, warpins: 2 ---
+	slot6 = slot3[slot5]
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #10 32-32, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 33-34, warpins: 2 ---
-	slot6 = slot3 - slot6
-
-	return slot5, slot6
+	--- BLOCK #11 33-36, warpins: 1 ---
+	slot6 = slot3[slot5]
+	slot6 = slot6.collectNum
 	--- END OF BLOCK #11 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 37-37, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 38-39, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	if slot4 >= slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 40-40, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 41-42, warpins: 1 ---
+	slot5 = slot5 + 1
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #16 43-48, warpins: 2 ---
+	slot5 = slot5 - 1
+	slot6 = slot5
+	slot7 = slot3[slot5]
+	slot7 = slot7.collectNum
+	--- END OF BLOCK #16 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 49-49, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 50-51, warpins: 2 ---
+	slot7 = slot4 - slot7
+
+	return slot6, slot7
+	--- END OF BLOCK #18 ---
 
 
 
@@ -1844,44 +2413,121 @@ end
 slot16.getCountryCollectLevel = slot17
 
 slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0.petCountryMap
-	slot3 = slot3[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = 0
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	if slot1 > slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot3 = slot0.petCountryMap
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = MapAreaConfigData
 	slot3 = slot3[slot1]
-	slot3 = slot3.collectLevelRewardStatus
-	slot3 = slot3[slot2]
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot3 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 2 ---
-	slot3 = Const
-	slot3 = slot3.REWARD_STATUS_INIT
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot4 = slot3.belongNation
+	--- END OF BLOCK #5 ---
 
-	--- END OF BLOCK #2 ---
+	if slot4 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
-	FLOW; TARGET BLOCK #3
+
+	--- BLOCK #6 15-18, warpins: 1 ---
+	slot4 = PetResearchCountryCollectData
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #3 13-13, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #3 ---
+	--- BLOCK #7 19-21, warpins: 3 ---
+	slot4 = Const
+	slot4 = slot4.REWARD_STATUS_INIT
+
+	return slot4
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-25, warpins: 2 ---
+	slot4 = slot0.petCountryMap
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 26-31, warpins: 1 ---
+	slot4 = slot0.petCountryMap
+	slot4 = slot4[slot1]
+	slot4 = slot4.collectLevelRewardStatus
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 32-33, warpins: 2 ---
+	slot4 = Const
+	slot4 = slot4.REWARD_STATUS_INIT
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-34, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #11 ---
 
 
 
@@ -1927,330 +2573,391 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #4 7-8, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 9-10, warpins: 1 ---
+	--- BLOCK #5 9-11, warpins: 1 ---
+	slot6 = 0
 	--- END OF BLOCK #5 ---
 
-	if slot1 == 0 then
+	if slot3 > slot6 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 11-12, warpins: 1 ---
+	--- BLOCK #6 12-15, warpins: 1 ---
+	slot6 = MapAreaConfigData
+	slot6 = slot6[slot3]
 	--- END OF BLOCK #6 ---
 
-	if slot2 ~= 0 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 13-14, warpins: 1 ---
+	--- BLOCK #7 16-18, warpins: 1 ---
+	slot7 = slot6.belongNation
 	--- END OF BLOCK #7 ---
 
-	if slot3 ~= nil then
+	if slot7 == nil then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 15-19, warpins: 1 ---
+	--- BLOCK #8 19-21, warpins: 2 ---
+	slot7 = 0
+
+	return slot7
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 22-22, warpins: 2 ---
+	slot3 = nil
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 23-24, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #11 25-26, warpins: 1 ---
+	--- END OF BLOCK #11 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #12 27-28, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #13 29-30, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #14 31-35, warpins: 1 ---
 	slot6 = ToBool
 	slot8 = slot4
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #8 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #9 20-23, warpins: 1 ---
-	slot6 = slot0.petCountryMap
-	slot6 = slot6[slot3]
-	--- END OF BLOCK #9 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 24-27, warpins: 1 ---
-	slot6 = slot0.petCountryMap
-	slot6 = slot6[slot3]
-	slot6 = slot6.stateMaskFormCountMap
-	slot6 = slot6[slot2]
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 28-29, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
-	if slot6 ~= nil then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 30-30, warpins: 1 ---
-	return slot6
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 31-33, warpins: 7 ---
-	slot6 = 0
-	--- END OF BLOCK #13 ---
-
-	if slot1 == 0 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #14 34-37, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.items
-	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #15 38-42, warpins: 1 ---
-	slot12 = ToBool
-	slot14 = slot4
-	slot12 = slot12(slot14)
+	--- BLOCK #15 36-39, warpins: 1 ---
+	slot6 = slot0.petCountryMap
+	slot6 = slot6[slot3]
 	--- END OF BLOCK #15 ---
 
-	slot12 = if slot12 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 43-48, warpins: 1 ---
-	slot12 = Utils
-	slot12 = slot12.isBasePetPrototypeId
-	slot14 = slot10
-	slot12 = slot12(slot14)
+	--- BLOCK #16 40-43, warpins: 1 ---
+	slot6 = slot0.petCountryMap
+	slot6 = slot6[slot3]
+	slot6 = slot6.stateMaskFormCountMap
+	slot6 = slot6[slot2]
+
 	--- END OF BLOCK #16 ---
 
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #21
-	end
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 49-50, warpins: 2 ---
+	--- BLOCK #17 44-45, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
-	slot3 = if slot3 then
+	if slot6 ~= nil then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 51-56, warpins: 1 ---
-	slot12 = Utils
-	slot12 = slot12.getPetCountryId
-	slot14 = slot10
-	slot12 = slot12(slot14)
+	--- BLOCK #18 46-46, warpins: 1 ---
+	return slot6
+
 	--- END OF BLOCK #18 ---
 
-	if slot12 == slot3 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #21
-	end
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 57-62, warpins: 2 ---
-	slot14 = slot11
-	slot12 = slot11.hasStateMask
-	slot15 = slot2
-	slot12 = slot12(slot14, slot15)
+	--- BLOCK #19 47-49, warpins: 7 ---
+	slot6 = 0
 	--- END OF BLOCK #19 ---
 
-	slot12 = if slot12 then
+	if slot1 == 0 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #20 63-63, warpins: 1 ---
-	slot6 = slot6 + 1
+	--- BLOCK #20 50-53, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.items
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #21 64-65, warpins: 5 ---
+	--- BLOCK #21 54-58, warpins: 1 ---
+	slot12 = ToBool
+	slot14 = slot4
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #21 ---
 
-	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #15
-	GO OUT TO BLOCK #22
+	slot12 = if slot12 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
 
 
-	--- BLOCK #22 66-66, warpins: 1 ---
+	--- BLOCK #22 59-64, warpins: 1 ---
+	slot12 = Utils
+	slot12 = slot12.isBasePetPrototypeId
+	slot14 = slot10
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #27
+	end
 
 
-	--- BLOCK #23 67-74, warpins: 1 ---
-	slot7 = PetBasePrototypeToPrototypeMap
-	slot8 = Utils
-	slot8 = slot8.getBasePetPrototypeId
-	slot10 = slot1
-	slot8 = slot8(slot10)
-	slot7 = slot7[slot8]
+	--- BLOCK #23 65-66, warpins: 2 ---
 	--- END OF BLOCK #23 ---
 
-	slot7 = if not slot7 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 75-75, warpins: 1 ---
-	slot7 = {}
+	--- BLOCK #24 67-72, warpins: 1 ---
+	slot12 = Utils
+	slot12 = slot12.getPetCountryId
+	slot14 = slot10
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #25
+	if slot12 == slot3 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #27
+	end
 
 
-	--- BLOCK #25 76-79, warpins: 2 ---
-	slot8 = ipairs
-	slot10 = slot7
-	slot8, slot9, slot10 = slot8(slot10)
+	--- BLOCK #25 73-78, warpins: 2 ---
+	slot14 = slot11
+	slot12 = slot11.hasStateMask
+	slot15 = slot2
+	slot12 = slot12(slot14, slot15)
 	--- END OF BLOCK #25 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	slot12 = if slot12 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
 
 
-	--- BLOCK #26 80-82, warpins: 1 ---
-	slot13 = slot0[slot12]
+	--- BLOCK #26 79-79, warpins: 1 ---
+	slot6 = slot6 + 1
 	--- END OF BLOCK #26 ---
 
-	slot13 = if slot13 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #33
-	end
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 83-87, warpins: 1 ---
-	slot14 = ToBool
-	slot16 = slot4
-	slot14 = slot14(slot16)
+	--- BLOCK #27 80-81, warpins: 5 ---
 	--- END OF BLOCK #27 ---
 
-	slot14 = if slot14 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #21
+	GO OUT TO BLOCK #28
 
 
-	--- BLOCK #28 88-93, warpins: 1 ---
-	slot14 = Utils
-	slot14 = slot14.isBasePetPrototypeId
-	slot16 = slot12
-	slot14 = slot14(slot16)
+	--- BLOCK #28 82-82, warpins: 1 ---
 	--- END OF BLOCK #28 ---
 
-	slot14 = if not slot14 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #33
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #40
 
 
-	--- BLOCK #29 94-95, warpins: 2 ---
+	--- BLOCK #29 83-90, warpins: 1 ---
+	slot7 = PetBasePrototypeToPrototypeMap
+	slot8 = Utils
+	slot8 = slot8.getBasePetPrototypeId
+	slot10 = slot1
+	slot8 = slot8(slot10)
+	slot7 = slot7[slot8]
 	--- END OF BLOCK #29 ---
 
-	slot3 = if slot3 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 96-101, warpins: 1 ---
+	--- BLOCK #30 91-91, warpins: 1 ---
+	slot7 = {}
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 92-95, warpins: 2 ---
+	slot8 = ipairs
+	slot10 = slot7
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #31 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #32 96-98, warpins: 1 ---
+	slot13 = slot0[slot12]
+	--- END OF BLOCK #32 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #33 99-103, warpins: 1 ---
+	slot14 = ToBool
+	slot16 = slot4
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #33 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 104-109, warpins: 1 ---
+	slot14 = Utils
+	slot14 = slot14.isBasePetPrototypeId
+	slot16 = slot12
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #34 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #35 110-111, warpins: 2 ---
+	--- END OF BLOCK #35 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 112-117, warpins: 1 ---
 	slot14 = Utils
 	slot14 = slot14.getPetCountryId
 	slot16 = slot12
 	slot14 = slot14(slot16)
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #36 ---
 
 	if slot14 == slot3 then
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #31 102-107, warpins: 2 ---
+	--- BLOCK #37 118-123, warpins: 2 ---
 	slot16 = slot13
 	slot14 = slot13.hasStateMask
 	slot17 = slot2
 	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #37 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #32 108-108, warpins: 1 ---
+	--- BLOCK #38 124-124, warpins: 1 ---
 	slot6 = slot6 + 1
 
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #33 109-110, warpins: 6 ---
-	--- END OF BLOCK #33 ---
+	--- BLOCK #39 125-126, warpins: 6 ---
+	--- END OF BLOCK #39 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #26
-	GO OUT TO BLOCK #34
+	LOOP BLOCK #32
+	GO OUT TO BLOCK #40
 
 
-	--- BLOCK #34 111-111, warpins: 2 ---
+	--- BLOCK #40 127-127, warpins: 2 ---
 	return slot6
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #40 ---
 
 
 
@@ -2361,71 +3068,135 @@ end
 slot16.getCatchedRainbowSpeciesCount = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = CommonSwitch
-	slot2 = slot2.PetHandbookCache
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-8, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._getCountrySpeciesCollectNum
-	slot5 = slot1
-
-	return slot2(slot4, slot5)
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 9-12, warpins: 2 ---
-	slot2 = slot0.cachedCountrySpeciesCollectNumMap
-	slot2 = slot2[slot1]
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	if slot2 == nil then
-	JUMP TO BLOCK #3
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 13-21, warpins: 1 ---
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
+	--- END OF BLOCK #5 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 17-20, warpins: 2 ---
+	slot3 = CommonSwitch
+	slot3 = slot3.PetHandbookCache
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-24, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0._getCountrySpeciesCollectNum
 	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot2 = slot3
-	slot3 = pg
-	slot3 = slot3.component
-	--- END OF BLOCK #3 ---
 
-	if slot3 == "game" then
-	JUMP TO BLOCK #4
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 25-28, warpins: 2 ---
+	slot3 = slot0.cachedCountrySpeciesCollectNumMap
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #9 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #4 22-23, warpins: 1 ---
-	slot3 = slot0.cachedCountrySpeciesCollectNumMap
-	slot3[slot1] = slot2
+	--- BLOCK #10 29-37, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._getCountrySpeciesCollectNum
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot3 = slot4
+	slot4 = pg
+	slot4 = slot4.component
+	--- END OF BLOCK #10 ---
 
-	--- END OF BLOCK #4 ---
+	if slot4 == "game" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
-	FLOW; TARGET BLOCK #5
+
+	--- BLOCK #11 38-39, warpins: 1 ---
+	slot4 = slot0.cachedCountrySpeciesCollectNumMap
+	slot4[slot1] = slot3
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #5 24-24, warpins: 3 ---
-	return slot2
-	--- END OF BLOCK #5 ---
+	--- BLOCK #12 40-40, warpins: 3 ---
+	return slot3
+	--- END OF BLOCK #12 ---
 
 
 
@@ -2434,89 +3205,144 @@ end
 slot16.getCountrySpeciesCollectNum = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 0
-	slot3 = {}
-	slot6 = slot0
-	slot4 = slot0.items
-	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 7-14, warpins: 1 ---
-	slot9 = Utils
-	slot9 = slot9.getBasePetPrototypeId
-	slot11 = slot7
-	slot9 = slot9(slot11)
-	slot10 = PetResearchContentData
-	slot10 = slot10[slot9]
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 15-17, warpins: 1 ---
-	slot11 = slot10.countryId
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	if slot11 == slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 18-22, warpins: 1 ---
-	slot13 = slot8
-	slot11 = slot8.isCatched
-	slot11 = slot11(slot13)
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-25, warpins: 1 ---
-	slot11 = slot3[slot9]
+	--- BLOCK #4 10-11, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	slot11 = if not slot11 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 26-28, warpins: 1 ---
-	slot11 = true
-	slot3[slot9] = slot11
-	slot2 = slot2 + 1
-
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 29-30, warpins: 6 ---
+	--- BLOCK #6 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
 	--- END OF BLOCK #6 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #7
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 31-31, warpins: 1 ---
-	return slot2
+	--- BLOCK #7 17-22, warpins: 2 ---
+	slot3 = 0
+	slot4 = {}
+	slot7 = slot0
+	slot5 = slot0.items
+	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #8 23-32, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.getBasePetPrototypeId
+	slot12 = slot8
+	slot10 = slot10(slot12)
+	slot11 = Utils
+	slot11 = slot11.getPetCountryId
+	slot13 = slot8
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #8 ---
+
+	if slot11 == slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #9 33-37, warpins: 1 ---
+	slot13 = slot9
+	slot11 = slot9.isCatched
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #9 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 38-40, warpins: 1 ---
+	slot11 = slot4[slot10]
+	--- END OF BLOCK #10 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 41-43, warpins: 1 ---
+	slot11 = true
+	slot4[slot10] = slot11
+	slot3 = slot3 + 1
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 44-45, warpins: 5 ---
+	--- END OF BLOCK #12 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 46-46, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #13 ---
 
 
 
@@ -2525,29 +3351,71 @@ end
 slot16._getCountrySpeciesCollectNum = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PetResearchCountrySpeciesCollectData
-	slot2 = slot2[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	if slot2 == nil then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
+	--- END OF BLOCK #5 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 2 ---
 	slot3 = 0
 
 	return slot3
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #2 7-15, warpins: 2 ---
+	--- BLOCK #7 17-25, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.getCountrySpeciesCollectNum
 	slot6 = slot1
@@ -2555,47 +3423,47 @@ slot17 = function(slot0, slot1)
 	slot4 = PetHandbookConfigData
 	slot4 = slot4.speciesCollectMaxMap
 	slot4 = slot4[slot1]
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #7 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #3 16-16, warpins: 1 ---
+	--- BLOCK #8 26-26, warpins: 1 ---
 	slot4 = 0
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #4 17-18, warpins: 2 ---
-	--- END OF BLOCK #4 ---
+	--- BLOCK #9 27-28, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
 	if slot4 == 0 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #5 19-20, warpins: 1 ---
+	--- BLOCK #10 29-30, warpins: 1 ---
 	slot5 = 0
 
 	return slot5
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #6 21-22, warpins: 2 ---
+	--- BLOCK #11 31-32, warpins: 2 ---
 	slot5 = slot3 / slot4
 
 	return slot5
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #11 ---
 
 
 
@@ -2604,119 +3472,184 @@ end
 slot16.getCountrySpeciesCollectRate = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PetResearchCountrySpeciesCollectData
-	slot2 = slot2[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #0 ---
 
-	if slot2 == nil then
+	if slot1 > slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot3 = 0
-	slot4 = 0
-
-	return slot3, slot4
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = MapAreaConfigData
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 8-12, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.getCountrySpeciesCollectNum
-	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot4 = 0
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 13-15, warpins: 2 ---
-	slot5 = slot2[slot4]
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-19, warpins: 1 ---
-	slot5 = slot2[slot4]
-	slot5 = slot5.collectNum
+	--- BLOCK #4 10-11, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 20-20, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot3 = slot2.belongNation
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot3 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 21-22, warpins: 2 ---
+	--- BLOCK #6 15-17, warpins: 2 ---
+	slot3 = 0
+	slot4 = 0
+
+	return slot3, slot4
+
 	--- END OF BLOCK #6 ---
 
-	if slot3 >= slot5 then
-	JUMP TO BLOCK #7
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 18-21, warpins: 2 ---
+	slot3 = PetResearchCountrySpeciesCollectData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #7 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 23-23, warpins: 1 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #8 22-24, warpins: 1 ---
+	slot4 = 0
+	slot5 = 0
 
-	FLOW; TARGET BLOCK #8
+	return slot4, slot5
 
-
-	--- BLOCK #8 24-25, warpins: 1 ---
-	slot4 = slot4 + 1
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 26-31, warpins: 2 ---
-	slot4 = slot4 - 1
-	slot5 = slot4
-	slot6 = slot2[slot4]
-	slot6 = slot6.collectNum
+	--- BLOCK #9 25-29, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getCountrySpeciesCollectNum
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = 0
 	--- END OF BLOCK #9 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #10
-	else
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-32, warpins: 2 ---
+	slot6 = slot3[slot5]
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #10 32-32, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 33-34, warpins: 2 ---
-	slot6 = slot3 - slot6
-
-	return slot5, slot6
+	--- BLOCK #11 33-36, warpins: 1 ---
+	slot6 = slot3[slot5]
+	slot6 = slot6.collectNum
 	--- END OF BLOCK #11 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 37-37, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 38-39, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	if slot4 >= slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 40-40, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 41-42, warpins: 1 ---
+	slot5 = slot5 + 1
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #16 43-48, warpins: 2 ---
+	slot5 = slot5 - 1
+	slot6 = slot5
+	slot7 = slot3[slot5]
+	slot7 = slot7.collectNum
+	--- END OF BLOCK #16 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 49-49, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 50-51, warpins: 2 ---
+	slot7 = slot4 - slot7
+
+	return slot6, slot7
+	--- END OF BLOCK #18 ---
 
 
 
@@ -2725,44 +3658,121 @@ end
 slot16.getCountrySpeciesCollectLevel = slot17
 
 slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0.petCountryMap
-	slot3 = slot3[slot1]
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = 0
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	if slot1 > slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot3 = slot0.petCountryMap
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = MapAreaConfigData
 	slot3 = slot3[slot1]
-	slot3 = slot3.speciesCollectLevelRewardStatus
-	slot3 = slot3[slot2]
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 0 ---
+	slot3 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 2 ---
-	slot3 = Const
-	slot3 = slot3.REWARD_STATUS_INIT
+	--- BLOCK #5 12-14, warpins: 1 ---
+	slot4 = slot3.belongNation
+	--- END OF BLOCK #5 ---
 
-	--- END OF BLOCK #2 ---
+	if slot4 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
-	FLOW; TARGET BLOCK #3
+
+	--- BLOCK #6 15-18, warpins: 1 ---
+	slot4 = PetResearchCountrySpeciesCollectData
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #3 13-13, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #3 ---
+	--- BLOCK #7 19-21, warpins: 3 ---
+	slot4 = Const
+	slot4 = slot4.REWARD_STATUS_INIT
+
+	return slot4
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-25, warpins: 2 ---
+	slot4 = slot0.petCountryMap
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 26-31, warpins: 1 ---
+	slot4 = slot0.petCountryMap
+	slot4 = slot4[slot1]
+	slot4 = slot4.speciesCollectLevelRewardStatus
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 32-33, warpins: 2 ---
+	slot4 = Const
+	slot4 = slot4.REWARD_STATUS_INIT
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-34, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #11 ---
 
 
 
@@ -2812,106 +3822,167 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #4 11-12, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot3 = if not slot3 then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 13-14, warpins: 1 ---
+	--- BLOCK #5 13-15, warpins: 1 ---
+	slot6 = 0
 	--- END OF BLOCK #5 ---
 
-	if slot1 ~= 0 then
+	if slot2 > slot6 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 15-16, warpins: 1 ---
+	--- BLOCK #6 16-19, warpins: 1 ---
+	slot6 = MapAreaConfigData
+	slot6 = slot6[slot2]
 	--- END OF BLOCK #6 ---
 
-	if slot2 ~= nil then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 17-18, warpins: 1 ---
+	--- BLOCK #7 20-22, warpins: 1 ---
+	slot7 = slot6.belongNation
 	--- END OF BLOCK #7 ---
 
-	if slot5 == 0 then
+	if slot7 == nil then
 	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 19-22, warpins: 1 ---
-	slot6 = slot0.petCountryMap
-	slot6 = slot6[slot2]
-	--- END OF BLOCK #8 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 23-26, warpins: 1 ---
-	slot6 = slot0.petCountryMap
-	slot6 = slot6[slot2]
-	slot6 = slot6.stateMaskSpeciesCountMap
-	slot6 = slot6[slot1]
+	--- BLOCK #8 23-25, warpins: 2 ---
+	slot7 = 0
 
+	return slot7
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 26-26, warpins: 2 ---
+	slot2 = nil
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 27-28, warpins: 2 ---
+	--- BLOCK #10 27-28, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
-	if slot6 ~= nil then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #11 29-29, warpins: 1 ---
-	return slot6
-
+	--- BLOCK #11 29-30, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 30-33, warpins: 6 ---
-	slot6 = {}
-	slot7 = 0
-	--- END OF BLOCK #12 ---
-
-	if slot5 == 0 then
-	JUMP TO BLOCK #13
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #13 34-37, warpins: 1 ---
+	--- BLOCK #12 31-32, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #13 33-34, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	if slot5 == 0 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #14 35-38, warpins: 1 ---
+	slot6 = slot0.petCountryMap
+	slot6 = slot6[slot2]
+	--- END OF BLOCK #14 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 39-42, warpins: 1 ---
+	slot6 = slot0.petCountryMap
+	slot6 = slot6[slot2]
+	slot6 = slot6.stateMaskSpeciesCountMap
+	slot6 = slot6[slot1]
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 43-44, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 45-45, warpins: 1 ---
+	return slot6
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 46-49, warpins: 6 ---
+	slot6 = {}
+	slot7 = 0
+	--- END OF BLOCK #18 ---
+
+	if slot5 == 0 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #19 50-53, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.items
 	slot8, slot9, slot10 = slot8(slot10)
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #14 38-47, warpins: 1 ---
+	--- BLOCK #20 54-63, warpins: 1 ---
 	slot13 = Utils
 	slot13 = slot13.getBasePetPrototypeId
 	slot15 = slot11
@@ -2920,332 +3991,262 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot14 = slot12.hasStateMask
 	slot17 = slot1
 	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #20 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #15 48-49, warpins: 1 ---
-	--- END OF BLOCK #15 ---
+	--- BLOCK #21 64-65, warpins: 1 ---
+	--- END OF BLOCK #21 ---
 
 	if slot2 ~= nil then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #16 50-55, warpins: 1 ---
+	--- BLOCK #22 66-71, warpins: 1 ---
 	slot14 = Utils
 	slot14 = slot14.getPetCountryId
 	slot16 = slot11
 	slot14 = slot14(slot16)
-	--- END OF BLOCK #16 ---
-
-	if slot14 == slot2 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #17 56-58, warpins: 2 ---
-	slot14 = slot6[slot13]
-	--- END OF BLOCK #17 ---
-
-	slot14 = if not slot14 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 59-59, warpins: 1 ---
-	slot7 = slot7 + 1
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 60-62, warpins: 2 ---
-	slot14 = slot6[slot13]
-	--- END OF BLOCK #19 ---
-
-	slot14 = if not slot14 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 63-63, warpins: 1 ---
-	slot14 = 0
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 64-65, warpins: 2 ---
-	slot14 = slot14 + 1
-	slot6[slot13] = slot14
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 66-67, warpins: 4 ---
 	--- END OF BLOCK #22 ---
 
-	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #23
-
-
-	--- BLOCK #23 68-68, warpins: 1 ---
-	--- END OF BLOCK #23 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
-
-
-	--- BLOCK #24 69-72, warpins: 1 ---
-	slot8 = PetBasePrototypeToPrototypeMap
-	slot8 = slot8[slot5]
-	--- END OF BLOCK #24 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #25
+	if slot14 == slot2 then
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #25 73-73, warpins: 1 ---
-	slot8 = {}
+	--- BLOCK #23 72-74, warpins: 2 ---
+	slot14 = slot6[slot13]
+	--- END OF BLOCK #23 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 75-75, warpins: 1 ---
+	slot7 = slot7 + 1
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 76-78, warpins: 2 ---
+	slot14 = slot6[slot13]
 	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #26
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
 
 
-	--- BLOCK #26 74-77, warpins: 2 ---
+	--- BLOCK #26 79-79, warpins: 1 ---
+	slot14 = 0
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 80-81, warpins: 2 ---
+	slot14 = slot14 + 1
+	slot6[slot13] = slot14
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 82-83, warpins: 4 ---
+	--- END OF BLOCK #28 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #20
+	GO OUT TO BLOCK #29
+
+
+	--- BLOCK #29 84-84, warpins: 1 ---
+	--- END OF BLOCK #29 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
+
+
+	--- BLOCK #30 85-88, warpins: 1 ---
+	slot8 = PetBasePrototypeToPrototypeMap
+	slot8 = slot8[slot5]
+	--- END OF BLOCK #30 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 89-89, warpins: 1 ---
+	slot8 = {}
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 90-93, warpins: 2 ---
 	slot9 = ipairs
 	slot11 = slot8
 	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #32 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #27 78-80, warpins: 1 ---
+	--- BLOCK #33 94-96, warpins: 1 ---
 	slot14 = slot0[slot13]
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #33 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #34
 	else
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #42
 	end
 
 
-	--- BLOCK #28 81-87, warpins: 1 ---
+	--- BLOCK #34 97-103, warpins: 1 ---
 	slot14 = slot0[slot13]
 	slot17 = slot14
 	slot15 = slot14.hasStateMask
 	slot18 = slot1
 	slot15 = slot15(slot17, slot18)
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #34 ---
 
 	slot15 = if slot15 then
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #42
 	end
 
 
-	--- BLOCK #29 88-89, warpins: 1 ---
-	--- END OF BLOCK #29 ---
+	--- BLOCK #35 104-105, warpins: 1 ---
+	--- END OF BLOCK #35 ---
 
 	if slot2 ~= nil then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #36
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #30 90-95, warpins: 1 ---
+	--- BLOCK #36 106-111, warpins: 1 ---
 	slot15 = Utils
 	slot15 = slot15.getPetCountryId
 	slot17 = slot13
 	slot15 = slot15(slot17)
-	--- END OF BLOCK #30 ---
-
-	if slot15 == slot2 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #31 96-98, warpins: 2 ---
-	slot15 = slot6[slot5]
-	--- END OF BLOCK #31 ---
-
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #32 99-99, warpins: 1 ---
-	slot7 = slot7 + 1
-	--- END OF BLOCK #32 ---
-
-	FLOW; TARGET BLOCK #33
-
-
-	--- BLOCK #33 100-102, warpins: 2 ---
-	slot15 = slot6[slot5]
-	--- END OF BLOCK #33 ---
-
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #34 103-103, warpins: 1 ---
-	slot15 = 0
-	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 104-105, warpins: 2 ---
-	slot15 = slot15 + 1
-	slot6[slot5] = slot15
-	--- END OF BLOCK #35 ---
-
-	FLOW; TARGET BLOCK #36
-
-
-	--- BLOCK #36 106-107, warpins: 5 ---
 	--- END OF BLOCK #36 ---
 
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #27
-	GO OUT TO BLOCK #37
+	if slot15 == slot2 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #42
+	end
 
 
-	--- BLOCK #37 108-114, warpins: 2 ---
-	slot8 = assert
-	slot10 = lume
-	slot10 = slot10.tableLength
-	slot12 = slot6
-	slot10 = slot10(slot12)
+	--- BLOCK #37 112-114, warpins: 2 ---
+	slot15 = slot6[slot5]
 	--- END OF BLOCK #37 ---
 
-	if slot10 ~= slot7 then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #38
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #38 115-116, warpins: 1 ---
-	slot10 = false
+	--- BLOCK #38 115-115, warpins: 1 ---
+	slot7 = slot7 + 1
 	--- END OF BLOCK #38 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 117-117, warpins: 1 ---
-	slot10 = true
-
+	--- BLOCK #39 116-118, warpins: 2 ---
+	slot15 = slot6[slot5]
 	--- END OF BLOCK #39 ---
 
-	FLOW; TARGET BLOCK #40
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
 
 
-	--- BLOCK #40 118-120, warpins: 2 ---
-	slot8(slot10)
-
+	--- BLOCK #40 119-119, warpins: 1 ---
+	slot15 = 0
 	--- END OF BLOCK #40 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #47
-	end
+	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 121-124, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.component
+	--- BLOCK #41 120-121, warpins: 2 ---
+	slot15 = slot15 + 1
+	slot6[slot5] = slot15
 	--- END OF BLOCK #41 ---
 
-	if slot8 == "game" then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #47
-	end
+	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 125-128, warpins: 1 ---
-	slot8 = pairs
-	slot10 = slot6
-	slot8, slot9, slot10 = slot8(slot10)
+	--- BLOCK #42 122-123, warpins: 5 ---
 	--- END OF BLOCK #42 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #46
+	for slot12, slot13 in slot9, slot10, slot11
+	LOOP BLOCK #33
+	GO OUT TO BLOCK #43
 
 
-	--- BLOCK #43 129-132, warpins: 1 ---
-	slot13 = slot4.speciesPetStateMaskCount
-	slot13 = slot13[slot11]
+	--- BLOCK #43 124-130, warpins: 2 ---
+	slot8 = assert
+	slot10 = lume
+	slot10 = slot10.tableLength
+	slot12 = slot6
+	slot10 = slot10(slot12)
 	--- END OF BLOCK #43 ---
 
-	slot13 = if not slot13 then
+	if slot10 ~= slot7 then
 	JUMP TO BLOCK #44
 	else
 	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #44 133-137, warpins: 1 ---
-	slot14 = slot4.speciesPetStateMaskCount
-	slot15 = {}
-	slot14[slot11] = slot15
-	slot14 = slot4.speciesPetStateMaskCount
-	slot13 = slot14[slot11]
+	--- BLOCK #44 131-132, warpins: 1 ---
+	slot10 = false
 	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #45
+	UNCONDITIONAL JUMP; TARGET BLOCK #46
 
 
-	--- BLOCK #45 138-138, warpins: 2 ---
-	slot13[slot1] = slot12
+	--- BLOCK #45 133-133, warpins: 1 ---
+	slot10 = true
 
 	--- END OF BLOCK #45 ---
 
 	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #46 139-140, warpins: 2 ---
-	--- END OF BLOCK #46 ---
+	--- BLOCK #46 134-135, warpins: 2 ---
+	slot8(slot10)
 
-	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #43
-	GO OUT TO BLOCK #47
-
-
-	--- BLOCK #47 141-141, warpins: 3 ---
 	return slot7
-	--- END OF BLOCK #47 ---
+	--- END OF BLOCK #46 ---
 
 
 
@@ -3480,179 +4481,243 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #4 7-8, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #5 9-10, warpins: 1 ---
-	--- END OF BLOCK #5 ---
-
-	if slot1 == 0 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #6 11-12, warpins: 1 ---
-	--- END OF BLOCK #6 ---
-
-	if slot2 ~= 0 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #7 13-14, warpins: 1 ---
-	--- END OF BLOCK #7 ---
-
 	if slot3 ~= nil then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 15-18, warpins: 1 ---
-	slot5 = slot0.petCountryMap
-	slot5 = slot5[slot3]
-	--- END OF BLOCK #8 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 19-22, warpins: 1 ---
-	slot5 = slot0.petCountryMap
-	slot5 = slot5[slot3]
-	slot5 = slot5.stateMaskCountMap
-	slot5 = slot5[slot2]
-	--- END OF BLOCK #9 ---
+	--- BLOCK #5 9-11, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 23-24, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	if slot5 ~= nil then
-	JUMP TO BLOCK #11
+	if slot3 > slot5 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #11 25-25, warpins: 1 ---
+	--- BLOCK #6 12-15, warpins: 1 ---
+	slot5 = MapAreaConfigData
+	slot5 = slot5[slot3]
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 16-18, warpins: 1 ---
+	slot6 = slot5.belongNation
+	--- END OF BLOCK #7 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 19-20, warpins: 2 ---
+	slot6 = 0
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
+
+
+	--- BLOCK #9 21-21, warpins: 0 ---
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 22-22, warpins: 2 ---
+	slot3 = nil
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 23-24, warpins: 3 ---
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #12 26-28, warpins: 5 ---
-	slot5 = 0
+	--- BLOCK #12 25-26, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
 	if slot1 == 0 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #13 29-33, warpins: 1 ---
-	slot6 = {}
-	slot9 = slot0
-	slot7 = slot0.items
-	slot7, slot8, slot9 = slot7(slot9)
+	--- BLOCK #13 27-28, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #14 34-39, warpins: 1 ---
-	slot14 = slot11
-	slot12 = slot11.hasStateMask
-	slot15 = slot2
-	slot12 = slot12(slot14, slot15)
+	--- BLOCK #14 29-30, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
-	slot12 = if slot12 then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #15 40-41, warpins: 1 ---
+	--- BLOCK #15 31-34, warpins: 1 ---
+	slot5 = slot0.petCountryMap
+	slot5 = slot5[slot3]
 	--- END OF BLOCK #15 ---
 
-	if slot3 ~= nil then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 42-47, warpins: 1 ---
-	slot12 = Utils
-	slot12 = slot12.getPetCountryId
-	slot14 = slot10
-	slot12 = slot12(slot14)
+	--- BLOCK #16 35-38, warpins: 1 ---
+	slot5 = slot0.petCountryMap
+	slot5 = slot5[slot3]
+	slot5 = slot5.stateMaskCountMap
+	slot5 = slot5[slot2]
 	--- END OF BLOCK #16 ---
 
-	if slot12 == slot3 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #19
-	end
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 48-54, warpins: 2 ---
-	slot12 = Utils
-	slot12 = slot12.getBasePetPrototypeId
-	slot14 = slot10
-	slot12 = slot12(slot14)
-	slot13 = slot6[slot12]
+	--- BLOCK #17 39-40, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
-	slot13 = if not slot13 then
+	if slot5 ~= nil then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 55-57, warpins: 1 ---
+	--- BLOCK #18 41-41, warpins: 1 ---
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
+
+
+	--- BLOCK #19 42-44, warpins: 5 ---
+	slot5 = 0
+	--- END OF BLOCK #19 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #20 45-49, warpins: 1 ---
+	slot6 = {}
+	slot9 = slot0
+	slot7 = slot0.items
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #21 50-55, warpins: 1 ---
+	slot14 = slot11
+	slot12 = slot11.hasStateMask
+	slot15 = slot2
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #21 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #22 56-57, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 58-63, warpins: 1 ---
+	slot12 = Utils
+	slot12 = slot12.getPetCountryId
+	slot14 = slot10
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #23 ---
+
+	if slot12 == slot3 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #24 64-70, warpins: 2 ---
+	slot12 = Utils
+	slot12 = slot12.getBasePetPrototypeId
+	slot14 = slot10
+	slot12 = slot12(slot14)
+	slot13 = slot6[slot12]
+	--- END OF BLOCK #24 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 71-73, warpins: 1 ---
 	slot13 = true
 	slot6[slot12] = slot13
 	slot5 = slot5 + 1
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #19 58-59, warpins: 5 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #26 74-75, warpins: 5 ---
+	--- END OF BLOCK #26 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #20
+	LOOP BLOCK #21
+	GO OUT TO BLOCK #27
 
 
-	--- BLOCK #20 60-60, warpins: 1 ---
-	--- END OF BLOCK #20 ---
+	--- BLOCK #27 76-76, warpins: 1 ---
+	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #21 61-69, warpins: 1 ---
+	--- BLOCK #28 77-85, warpins: 1 ---
 	slot6 = Utils
 	slot6 = slot6.getBoolByPetPrototypeIdAndGroupType
 	slot8 = slot1
@@ -3736,40 +4801,47 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 	slot6 = slot6(slot8, slot9, slot10)
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #28 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #22 70-71, warpins: 1 ---
+	--- BLOCK #29 86-87, warpins: 1 ---
 	slot5 = 1
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #29 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #23 72-72, warpins: 1 ---
+	--- BLOCK #30 88-88, warpins: 1 ---
 	slot5 = 0
 
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #24 73-74, warpins: 3 ---
+	--- BLOCK #31 89-90, warpins: 3 ---
 	return slot5
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #31 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #25 75-75, warpins: 2 ---
+	--- BLOCK #32 91-91, warpins: 2 ---
+	return slot6
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 92-92, warpins: 2 ---
 	return slot5
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #33 ---
 
 
 
@@ -4207,9 +5279,9 @@ end
 
 slot16.getSkillUnlockedCount = slot17
 
-slot17 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = 0
+	slot4 = 0
 	--- END OF BLOCK #0 ---
 
 	slot2 = if not slot2 then
@@ -4229,108 +5301,269 @@ slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #2 5-6, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	if slot1 == 0 then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #3 7-10, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.items
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #3 7-9, warpins: 1 ---
+	slot5 = 0
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	if slot3 > slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #4 11-15, warpins: 1 ---
-	slot11 = slot8
-	slot9 = slot8.getAvatarResearchedCount
-	slot12 = slot2
-	slot9 = slot9(slot11, slot12)
-	slot3 = slot3 + slot9
+	--- BLOCK #4 10-13, warpins: 1 ---
+	slot5 = MapAreaConfigData
+	slot5 = slot5[slot3]
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 16-17, warpins: 2 ---
+	--- BLOCK #5 14-16, warpins: 1 ---
+	slot6 = slot5.belongNation
 	--- END OF BLOCK #5 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #6
+	if slot6 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #6 18-18, warpins: 1 ---
+	--- BLOCK #6 17-18, warpins: 2 ---
+	slot6 = 0
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #7 19-26, warpins: 1 ---
-	slot4 = Utils
-	slot4 = slot4.getValueByPetPrototypeIdAndMergeType
-	slot6 = slot1
-	slot7 = Const
-	slot7 = slot7.MERGE_TYPE_SUM
+	--- BLOCK #7 19-19, warpins: 0 ---
+	--- END OF BLOCK #7 ---
 
-	slot8 = function(slot0)
-		--- BLOCK #0 1-4, warpins: 1 ---
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 20-20, warpins: 2 ---
+	slot3 = nil
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 21-22, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #10 23-26, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.items
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #11 27-28, warpins: 1 ---
+	--- END OF BLOCK #11 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 29-34, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.getPetCountryId
+	slot12 = slot8
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #12 ---
+
+	if slot10 == slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 35-41, warpins: 2 ---
+	slot12 = slot9
+	slot10 = slot9.getAvatarResearchedCount
+	slot13 = slot2
+	slot10 = slot10(slot12, slot13)
+	slot11 = 0
+	--- END OF BLOCK #13 ---
+
+	if slot10 > slot11 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 42-42, warpins: 1 ---
+	slot4 = slot4 + 1
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 43-44, warpins: 4 ---
+	--- END OF BLOCK #15 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #16
+
+
+	--- BLOCK #16 45-45, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 46-53, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.getValueByPetPrototypeIdAndMergeType
+	slot7 = slot1
+	slot8 = Const
+	slot8 = slot8.MERGE_TYPE_SUM
+
+	slot9 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1[slot0]
+		slot2 = needCountryId
 		--- END OF BLOCK #0 ---
 
-		slot1 = if slot1 then
+		if slot2 ~= nil then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 5-10, warpins: 1 ---
-		slot4 = slot1
-		slot2 = slot1.getAvatarResearchedCount
-		slot5 = needLabel
-		slot2 = slot2(slot4, slot5)
+		--- BLOCK #1 6-12, warpins: 1 ---
+		slot2 = Utils
+		slot2 = slot2.getPetCountryId
+		slot4 = slot0
+		slot2 = slot2(slot4)
+		slot3 = needCountryId
 		--- END OF BLOCK #1 ---
 
-		slot2 = if not slot2 then
+		if slot2 ~= slot3 then
 		JUMP TO BLOCK #2
 		else
 		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #2 11-11, warpins: 2 ---
-		slot2 = 0
-
+		--- BLOCK #2 13-14, warpins: 1 ---
+		slot2 = false
 		--- END OF BLOCK #2 ---
 
-		FLOW; TARGET BLOCK #3
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #3 12-12, warpins: 2 ---
-		return slot2
+		--- BLOCK #3 15-15, warpins: 2 ---
+		slot2 = true
 		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 16-17, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 18-19, warpins: 1 ---
+		--- END OF BLOCK #5 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #6 20-26, warpins: 1 ---
+		slot5 = slot1
+		slot3 = slot1.getAvatarResearchedCount
+		slot6 = needLabel
+		slot3 = slot3(slot5, slot6)
+		slot4 = 0
+		--- END OF BLOCK #6 ---
+
+		if slot3 > slot4 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 27-28, warpins: 1 ---
+		slot3 = 1
+
+		return slot3
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 29-30, warpins: 4 ---
+		slot3 = 0
+
+		return slot3
+		--- END OF BLOCK #8 ---
 
 
 
 	end
 
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3 = slot4
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4 = slot5
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #8 27-28, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #8 ---
+	--- BLOCK #18 54-55, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 56-56, warpins: 2 ---
+	return slot6
+	--- END OF BLOCK #19 ---
 
 
 

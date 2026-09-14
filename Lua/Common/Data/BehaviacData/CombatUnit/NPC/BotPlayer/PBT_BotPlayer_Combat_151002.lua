@@ -9,51 +9,51 @@ slot2 = {}
 slot3 = {
 	agenttype = "BotPlayerAgent",
 	name = "CombatUnit/NPC/BotPlayer/PBT_BotPlayer_Combat_151002",
-	useForRoute = false,
-	version = 151
+	version = 151,
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tCurrentPet",
-	value = "0",
 	const = 0
 }
 slot4[1] = slot5
 slot5 = {
+	value = "0",
 	type = "float",
 	name = "tCurrentPetHpPercent",
-	value = "0",
 	const = 0
 }
 slot4[2] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSwitchPetId",
-	value = "0",
 	const = 0
 }
 slot4[3] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tTargetSkillId",
-	value = "0",
 	const = 0
 }
 slot4[4] = slot5
 slot5 = {
+	value = "0",
 	type = "float",
 	name = "tCurrentEp",
-	value = "0",
 	const = 0
 }
 slot4[5] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "count",
-	value = "0",
 	const = 0
 }
 slot4[6] = slot5
@@ -3520,10 +3520,10 @@ slot20 = {}
 slot19.properties = slot20
 slot20 = {}
 slot21 = {
-	precondition = true,
 	transition = false,
-	id = "155",
 	effector = false,
+	precondition = true,
+	id = "155",
 	class = "Precondition"
 }
 slot22 = {}
@@ -3610,10 +3610,10 @@ slot17 = {}
 slot16.properties = slot17
 slot17 = {}
 slot18 = {
-	precondition = true,
 	transition = false,
-	id = "155",
 	effector = false,
+	precondition = true,
+	id = "155",
 	class = "Precondition"
 }
 slot19 = {}

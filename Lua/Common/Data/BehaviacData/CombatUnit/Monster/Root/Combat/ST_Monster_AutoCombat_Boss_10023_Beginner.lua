@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = false,
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10023_Beginner",
 	agenttype = "PuppetAgent",
-	version = 29,
-	useForRoute = false
+	version = 29
 }
 slot4 = {}
 slot3.properties = slot4
@@ -1488,9 +1488,9 @@ slot38 = {}
 slot39 = {
 	effector = false,
 	precondition = true,
+	transition = false,
 	id = "152",
-	class = "Precondition",
-	transition = false
+	class = "Precondition"
 }
 slot40 = {}
 slot41 = {

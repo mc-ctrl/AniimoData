@@ -7,47 +7,47 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/_Wild/PBT_Wild_11026101_MoveToTarget",
-	useForRoute = false,
+	agenttype = "CombatAgent",
 	version = 20,
-	agenttype = "CombatAgent"
+	name = "ParmonBehaviorTree/SubTree/_Wild/PBT_Wild_11026101_MoveToTarget",
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	const = 0,
 	name = "tTargetActorId",
 	type = "int",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	const = 0.2,
 	name = "tStopDist",
 	type = "float",
-	value = "0.2",
-	const = 0.2
+	value = "0.2"
 }
 slot4[2] = slot5
 slot5 = {
+	const = 5,
 	name = "tMaxTimeout",
 	type = "float",
-	value = "5",
-	const = 5
+	value = "5"
 }
 slot4[3] = slot5
 slot5 = {
+	const = true,
 	name = "tFaceTarget",
 	type = "bool",
-	value = "true",
-	const = true
+	value = "true"
 }
 slot4[4] = slot5
 slot5 = {
+	const = 0,
 	name = "tSpeed",
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
@@ -78,17 +78,17 @@ slot6 = slot6.Slow
 slot5.const = slot6
 slot4[8] = slot5
 slot5 = {
+	const = false,
 	name = "tUseAccurateArrive",
 	type = "bool",
-	value = "false",
-	const = false
+	value = "false"
 }
 slot4[9] = slot5
 slot5 = {
+	const = false,
 	name = "tNoBodySize",
 	type = "bool",
-	value = "false",
-	const = false
+	value = "false"
 }
 slot4[10] = slot5
 slot3.pars = slot4

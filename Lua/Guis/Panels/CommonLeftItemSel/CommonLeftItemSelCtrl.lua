@@ -1,39 +1,42 @@
---- BLOCK #0 1-67, warpins: 1 ---
+--- BLOCK #0 1-70, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "CommonLeftItemSelCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "CommonLeftItemSelCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.UICtrl"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.LuaUIUtils"
+slot6 = "Guis.UICtrl"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Utils.ItemUtils"
+slot7 = "Utils.LuaUIUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientTextUtils"
+slot8 = "Common.Utils.ItemUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.UIConst"
+slot9 = "Utils.ClientTextUtils"
 slot7 = slot7(slot9)
-slot8 = slot2.LightClass
-slot10 = "CommonLeftItemSelCtrl"
-slot11 = slot3
-slot8 = slot8(slot10, slot11)
-slot9 = {}
-slot8.messages = slot9
+slot8 = require
+slot10 = "Const.UIConst"
+slot8 = slot8(slot10)
+slot9 = slot3.LightClass
+slot11 = "CommonLeftItemSelCtrl"
+slot12 = slot4
+slot9 = slot9(slot11, slot12)
+slot10 = {}
+slot9.messages = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -52,9 +55,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onCreate = slot9
+slot9.onCreate = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
@@ -270,9 +273,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.addListener = slot9
+slot9.addListener = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = logger
 	slot3 = slot1
@@ -297,9 +300,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.testClickRightBtn = slot9
+slot9.testClickRightBtn = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listUList
@@ -323,9 +326,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onDestroy = slot9
+slot9.onDestroy = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -347,9 +350,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onOpen = slot9
+slot9.onOpen = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -358,9 +361,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onShow = slot9
+slot9.onShow = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listUList
@@ -383,9 +386,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onHide = slot9
+slot9.onHide = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -434,9 +437,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshTempInfo = slot9
+slot9.refreshTempInfo = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot2 = slot1.title
 	slot0.title = slot2
@@ -650,9 +653,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.initUI = slot9
+slot9.initUI = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -710,9 +713,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshUI = slot9
+slot9.refreshUI = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-139, warpins: 1 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.renderItem
@@ -1082,9 +1085,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.renderItem = slot9
+slot9.renderItem = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.getMaxNum
@@ -1335,9 +1338,9 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot8.reduceNum = slot9
+slot9.reduceNum = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot8 = slot0.tempItemCountMap
 	slot8 = slot8[slot1]
@@ -1586,9 +1589,9 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot8.addNum = slot9
+slot9.addNum = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._curSelectBtn
 
@@ -1969,9 +1972,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onNumSelectChange = slot9
+slot9.onNumSelectChange = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.itemNumLimitDict
 	--- END OF BLOCK #0 ---
@@ -2022,7 +2025,7 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #4 20-20, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -2088,9 +2091,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.getMaxNum = slot9
+slot9.getMaxNum = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = pairs
@@ -2105,7 +2108,7 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #1 6-6, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -2142,9 +2145,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getCurCnt = slot9
+slot9.getCurCnt = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -30,6 +30,12 @@ slot3 = function(slot0)
 	slot4 = "btnSkipHotKeyContent"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnSkipHotKeyContent = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtNameUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtNameUSDFText = slot1
 
 	return
 	--- END OF BLOCK #0 ---

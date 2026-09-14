@@ -339,9 +339,9 @@ end
 
 slot2.openPopupTipInfo = slot9
 slot9 = {
+	SUBTITLE = 0,
 	TEXT = 2,
-	TEXT_ORDER = 1,
-	SUBTITLE = 0
+	TEXT_ORDER = 1
 }
 
 slot10 = function(slot0, slot1)
@@ -497,27 +497,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #2 9-14, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.checkDataValid
-	slot7 = slot1
-	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #2 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 15-15, warpins: 1 ---
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #4 16-80, warpins: 1 ---
+	--- BLOCK #2 9-74, warpins: 1 ---
 	slot4 = false
 
 	slot5 = function()
@@ -679,7 +659,29 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 	slot7.luaClick = slot17
+	slot19 = slot0
+	slot17 = slot0.checkDataValid
+	slot20 = slot1
+	slot17 = slot17(slot19, slot20)
 
+	--- END OF BLOCK #2 ---
+
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 75-76, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 77-81, warpins: 2 ---
 	slot17 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-13, warpins: 1 ---
 		slot3 = slot2.tIndex
@@ -781,22 +783,75 @@ slot10 = function(slot0, slot1, slot2)
 
 		slot6(slot8, MULTRES)
 
-		slot6 = function(slot0, slot1)
-			--- BLOCK #0 1-9, warpins: 1 ---
-			slot2 = LuaUIUtils
-			slot2 = slot2.clickHyperText
-			slot4 = slot0
-			slot5 = slot1
-			slot6 = textUBaseText
-
-			slot2(slot4, slot5, slot6)
-
-			slot2 = closePopup
-
-			slot2()
-
-			return
+		slot6 = function(slot0, slot1, slot2)
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot3 = LuaUIUtils
+			slot3 = slot3.resolveHyperTextEffect
+			slot5 = slot0
+			slot3 = slot3(slot5)
+			slot4 = data
+			slot4 = slot4.useHyperlinkAnchor
 			--- END OF BLOCK #0 ---
+
+			slot4 = if slot4 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 9-10, warpins: 1 ---
+			--- END OF BLOCK #1 ---
+
+			slot4 = if not slot2 then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #3
+			end
+
+
+			--- BLOCK #2 11-11, warpins: 2 ---
+			slot4 = nil
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 12-23, warpins: 2 ---
+			slot5 = LuaUIUtils
+			slot5 = slot5.clickHyperText
+			slot7 = slot0
+			slot8 = slot1
+			slot9 = textUBaseText
+			slot10 = slot4
+
+			slot5(slot7, slot8, slot9, slot10)
+
+			slot5 = LuaUIUtils
+			slot5 = slot5.HYPERLINK_EFFECT
+			slot5 = slot5.OTHER
+			--- END OF BLOCK #3 ---
+
+			if slot3 == slot5 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 24-25, warpins: 1 ---
+			slot5 = closePopup
+
+			slot5()
+
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+			--- BLOCK #5 26-26, warpins: 2 ---
+			return
+			--- END OF BLOCK #5 ---
 
 
 
@@ -822,7 +877,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 81-92, warpins: 1 ---
+	--- BLOCK #5 82-93, warpins: 1 ---
 	slot19 = slot3
 	slot17 = slot3.TryChangePage
 	slot20 = "HaveBtn"
@@ -862,7 +917,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 93-103, warpins: 1 ---
+	--- BLOCK #6 94-104, warpins: 1 ---
 	slot18 = ClientTextUtils
 	slot18 = slot18.setText
 	slot20 = slot9
@@ -897,7 +952,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #7 104-105, warpins: 1 ---
+	--- BLOCK #7 105-106, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
 	if slot17 == "LvNotMatch" then
@@ -907,7 +962,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 106-119, warpins: 1 ---
+	--- BLOCK #8 107-120, warpins: 1 ---
 	slot20 = slot8
 	slot18 = slot8.TryChangePage
 	slot21 = "button"
@@ -930,7 +985,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #9 120-121, warpins: 1 ---
+	--- BLOCK #9 121-122, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
 	if slot17 == "TimeNotMatch" then
@@ -940,7 +995,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 122-127, warpins: 1 ---
+	--- BLOCK #10 123-128, warpins: 1 ---
 	slot20 = slot8
 	slot18 = slot8.TryChangePage
 	slot21 = "button"
@@ -953,7 +1008,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #11 128-129, warpins: 1 ---
+	--- BLOCK #11 129-130, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
 	if slot17 == "Match" then
@@ -963,7 +1018,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #12 130-145, warpins: 1 ---
+	--- BLOCK #12 131-146, warpins: 1 ---
 	slot20 = slot8
 	slot18 = slot8.TryChangePage
 	slot21 = "button"
@@ -1009,7 +1064,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #13 146-147, warpins: 1 ---
+	--- BLOCK #13 147-148, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
 	if slot17 == "MaxStar" then
@@ -1019,7 +1074,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #14 148-161, warpins: 1 ---
+	--- BLOCK #14 149-162, warpins: 1 ---
 	slot20 = slot8
 	slot18 = slot8.TryChangePage
 	slot21 = "button"
@@ -1042,7 +1097,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #15 162-164, warpins: 1 ---
+	--- BLOCK #15 163-165, warpins: 1 ---
 	slot17 = slot1.popUpType
 	--- END OF BLOCK #15 ---
 
@@ -1053,7 +1108,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #16 165-173, warpins: 1 ---
+	--- BLOCK #16 166-174, warpins: 1 ---
 	slot19 = slot3
 	slot17 = slot3.TryChangePage
 	slot20 = "HaveBtn"
@@ -1072,7 +1127,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #17 174-194, warpins: 1 ---
+	--- BLOCK #17 175-195, warpins: 1 ---
 	slot17 = ClientTextUtils
 	slot17 = slot17.setText
 	slot19 = slot12
@@ -1151,7 +1206,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 195-201, warpins: 1 ---
+	--- BLOCK #18 196-202, warpins: 1 ---
 	slot19 = slot3
 	slot17 = slot3.TryChangePage
 	slot20 = "HaveBtn"
@@ -1166,7 +1221,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 202-216, warpins: 9 ---
+	--- BLOCK #19 203-217, warpins: 9 ---
 	slot19 = slot11
 	slot17 = slot11.SetList
 	slot20 = slot1.content
@@ -1190,16 +1245,9 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 217-217, warpins: 2 ---
+	--- BLOCK #20 218-218, warpins: 2 ---
 	return
 	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 218-218, warpins: 2 ---
-	return
-	--- END OF BLOCK #21 ---
 
 
 

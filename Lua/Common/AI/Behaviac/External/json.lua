@@ -6,9 +6,9 @@ slot2.VERSION = slot0
 slot2.AUTHOR_NOTE = slot1
 slot3 = "  "
 slot4 = {
-	pretty = true,
 	array_newline = false,
-	align_keys = false
+	align_keys = false,
+	pretty = true
 }
 slot4.indent = slot3
 slot5 = {}

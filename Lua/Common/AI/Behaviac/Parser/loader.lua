@@ -3,10 +3,10 @@ slot0 = require
 slot2 = "Common.Utils.Utils"
 slot0 = slot0(slot2)
 slot1 = {
-	FILE_TYPE_BSON_BYTES = 1,
-	FILE_TYPE_UNKNOWN = 0,
 	FILE_TYPE_LUA = 3,
-	FILE_TYPE_JSON = 2
+	FILE_TYPE_JSON = 2,
+	FILE_TYPE_BSON_BYTES = 1,
+	FILE_TYPE_UNKNOWN = 0
 }
 slot2 = {}
 slot1.GlobalBtPathList = slot2

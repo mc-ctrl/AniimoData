@@ -1,4 +1,4 @@
---- BLOCK #0 1-1398, warpins: 1 ---
+--- BLOCK #0 1-1483, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,90 +7,97 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 46,
+	name = "ParmonBehaviorTree/SubTree/_Wild/10021_Defense/PBT_AutoCombat_10027",
+	version = 48,
 	useForRoute = false,
-	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/_Wild/10021_Defense/PBT_AutoCombat_10027"
+	agenttype = "PetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "CurrentEP",
 	const = 0,
 	type = "float",
-	name = "CurrentEP",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	name = "maxSkillDist",
 	const = 0,
 	type = "float",
-	name = "maxSkillDist",
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	name = "skillStopDist",
 	const = 0,
 	type = "float",
-	name = "skillStopDist",
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
+	name = "goBackDist",
 	const = 0,
 	type = "float",
-	name = "goBackDist",
 	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
+	name = "CurrentBoxDistToTarget",
 	const = 0,
 	type = "float",
-	name = "CurrentBoxDistToTarget",
 	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
+	name = "tSkillUsed",
 	const = 0,
 	type = "int",
-	name = "tSkillUsed",
 	value = "0"
 }
 slot4[6] = slot5
 slot5 = {
+	name = "skillId",
 	const = 0,
 	type = "int",
-	name = "skillId",
 	value = "0"
 }
 slot4[7] = slot5
 slot5 = {
+	name = "CurrentDistToTarget",
 	const = 0,
 	type = "float",
-	name = "CurrentDistToTarget",
 	value = "0"
 }
 slot4[8] = slot5
 slot5 = {
+	name = "CurrentHpPercent",
 	const = 0,
 	type = "float",
-	name = "CurrentHpPercent",
 	value = "0"
 }
 slot4[9] = slot5
 slot5 = {
+	name = "Weight_RunBack",
 	const = 0,
 	type = "int",
-	name = "Weight_RunBack",
 	value = "0"
 }
 slot4[10] = slot5
+slot5 = {
+	name = "tSkillZero",
+	const = 0,
+	type = "int",
+	value = "0"
+}
+slot4[11] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "49",
-	class = "Sequence"
+	class = "Sequence",
+	id = "49"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -99,8 +106,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "52",
-	class = "Sequence"
+	class = "Sequence",
+	id = "52"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -109,8 +116,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "63",
-	class = "Assignment"
+	class = "Assignment",
+	id = "63"
 }
 slot11 = {}
 slot12 = {
@@ -125,7 +132,7 @@ slot12.Opl = slot13
 slot11[2] = slot12
 slot12 = {}
 slot13 = {
-	func = "getLetGoTarget"
+	func = "getTarget"
 }
 slot12.Opr = slot13
 slot11[3] = slot12
@@ -138,8 +145,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	id = "53",
-	class = "Assignment"
+	class = "Assignment",
+	id = "53"
 }
 slot11 = {}
 slot12 = {
@@ -185,8 +192,8 @@ slot9.node = slot10
 slot8[2] = slot9
 slot9 = {}
 slot10 = {
-	id = "62",
-	class = "Assignment"
+	class = "Assignment",
+	id = "62"
 }
 slot11 = {}
 slot12 = {
@@ -232,186 +239,8 @@ slot9.node = slot10
 slot8[3] = slot9
 slot9 = {}
 slot10 = {
-	id = "56",
-	class = "Assignment"
-}
-slot11 = {}
-slot12 = {
-	CastRight = "false"
-}
-slot11[1] = slot12
-slot12 = {}
-slot13 = {
-	field = "skillId"
-}
-slot12.Opl = slot13
-slot11[2] = slot12
-slot12 = {}
-slot13 = {
-	const = 0
-}
-slot12.Opr = slot13
-slot11[3] = slot12
-slot10.properties = slot11
-slot11 = {}
-slot10.attachments = slot11
-slot11 = {}
-slot10.children = slot11
-slot9.node = slot10
-slot8[4] = slot9
-slot9 = {}
-slot10 = {
-	id = "127",
-	class = "Assignment"
-}
-slot11 = {}
-slot12 = {
-	CastRight = "false"
-}
-slot11[1] = slot12
-slot12 = {}
-slot13 = {
-	field = "CurrentEP"
-}
-slot12.Opl = slot13
-slot11[2] = slot12
-slot12 = {}
-slot13 = {
-	func = "getEp"
-}
-slot14 = {}
-slot15 = {
-	field = "selfId"
-}
-slot14[1] = slot15
-slot13.params = slot14
-slot12.Opr = slot13
-slot11[3] = slot12
-slot10.properties = slot11
-slot11 = {}
-slot10.attachments = slot11
-slot11 = {}
-slot10.children = slot11
-slot9.node = slot10
-slot8[5] = slot9
-slot9 = {}
-slot10 = {
-	id = "57",
-	class = "Assignment"
-}
-slot11 = {}
-slot12 = {
-	CastRight = "false"
-}
-slot11[1] = slot12
-slot12 = {}
-slot13 = {
-	field = "Weight_RunBack"
-}
-slot12.Opl = slot13
-slot11[2] = slot12
-slot12 = {}
-slot13 = {
-	const = 0
-}
-slot12.Opr = slot13
-slot11[3] = slot12
-slot10.properties = slot11
-slot11 = {}
-slot10.attachments = slot11
-slot11 = {}
-slot10.children = slot11
-slot9.node = slot10
-slot8[6] = slot9
-slot9 = {}
-slot10 = {
-	id = "64",
-	class = "Assignment"
-}
-slot11 = {}
-slot12 = {
-	CastRight = "false"
-}
-slot11[1] = slot12
-slot12 = {}
-slot13 = {
-	field = "tSkillUsed"
-}
-slot12.Opl = slot13
-slot11[2] = slot12
-slot12 = {}
-slot13 = {
-	const = 0
-}
-slot12.Opr = slot13
-slot11[3] = slot12
-slot10.properties = slot11
-slot11 = {}
-slot10.attachments = slot11
-slot11 = {}
-slot10.children = slot11
-slot9.node = slot10
-slot8[7] = slot9
-slot7.children = slot8
-slot6.node = slot7
-slot5[1] = slot6
-slot6 = {}
-slot7 = {
-	id = "95",
-	class = "Sequence"
-}
-slot8 = {}
-slot7.properties = slot8
-slot8 = {}
-slot7.attachments = slot8
-slot8 = {}
-slot9 = {}
-slot10 = {
-	id = "93",
-	class = "Condition"
-}
-slot11 = {}
-slot12 = {
-	Operator = "Equal"
-}
-slot11[1] = slot12
-slot12 = {}
-slot13 = {
-	func = "checkSkillExist"
-}
-slot14 = {}
-slot15 = {
-	field = "selfId"
-}
-slot14[1] = slot15
-slot15 = {
-	const = 10270400
-}
-slot14[2] = slot15
-slot15 = {
-	const = true
-}
-slot14[3] = slot15
-slot13.params = slot14
-slot12.Opl = slot13
-slot11[2] = slot12
-slot12 = {}
-slot13 = {
-	const = true
-}
-slot12.Opr = slot13
-slot11[3] = slot12
-slot10.properties = slot11
-slot11 = {}
-slot10.attachments = slot11
-slot11 = {}
-slot10.children = slot11
-slot9.node = slot10
-slot8[1] = slot9
-slot9 = {}
-slot10 = {
-	id = "67",
-	class = "IfElse"
+	class = "IfElse",
+	id = "146"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -420,8 +249,8 @@ slot10.attachments = slot11
 slot11 = {}
 slot12 = {}
 slot13 = {
-	id = "91",
-	class = "Condition"
+	class = "Condition",
+	id = "147"
 }
 slot14 = {}
 slot15 = {
@@ -463,8 +292,309 @@ slot12.node = slot13
 slot11[1] = slot12
 slot12 = {}
 slot13 = {
-	id = "7",
-	class = "Sequence"
+	class = "Action",
+	id = "149"
+}
+slot14 = {}
+slot15 = {}
+slot16 = {
+	func = "castSkill"
+}
+slot17 = {}
+slot18 = {
+	field = "tgt"
+}
+slot17[1] = slot18
+slot18 = {
+	const = 10270401
+}
+slot17[2] = slot18
+slot18 = {
+	const = false
+}
+slot17[3] = slot18
+slot18 = {
+	const = 0
+}
+slot17[4] = slot18
+slot18 = {
+	const = true
+}
+slot17[5] = slot18
+slot18 = {}
+slot19 = slot0.CastAbilitySourceType
+slot19 = slot19.Normal
+slot18.const = slot19
+slot17[6] = slot18
+slot16.params = slot17
+slot15.Method = slot16
+slot14[1] = slot15
+slot15 = {
+	ResultOption = "BT_INVALID"
+}
+slot14[2] = slot15
+slot15 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot14[3] = slot15
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot13.children = slot14
+slot12.node = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	class = "Noop",
+	id = "148"
+}
+slot14 = {}
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot13.children = slot14
+slot12.node = slot13
+slot11[3] = slot12
+slot10.children = slot11
+slot9.node = slot10
+slot8[4] = slot9
+slot9 = {}
+slot10 = {
+	class = "Assignment",
+	id = "56"
+}
+slot11 = {}
+slot12 = {
+	CastRight = "false"
+}
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	field = "skillId"
+}
+slot12.Opl = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	const = 0
+}
+slot12.Opr = slot13
+slot11[3] = slot12
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot10.children = slot11
+slot9.node = slot10
+slot8[5] = slot9
+slot9 = {}
+slot10 = {
+	class = "Assignment",
+	id = "127"
+}
+slot11 = {}
+slot12 = {
+	CastRight = "false"
+}
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	field = "CurrentEP"
+}
+slot12.Opl = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	func = "getEp"
+}
+slot14 = {}
+slot15 = {
+	field = "selfId"
+}
+slot14[1] = slot15
+slot13.params = slot14
+slot12.Opr = slot13
+slot11[3] = slot12
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot10.children = slot11
+slot9.node = slot10
+slot8[6] = slot9
+slot9 = {}
+slot10 = {
+	class = "Assignment",
+	id = "57"
+}
+slot11 = {}
+slot12 = {
+	CastRight = "false"
+}
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	field = "Weight_RunBack"
+}
+slot12.Opl = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	const = 0
+}
+slot12.Opr = slot13
+slot11[3] = slot12
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot10.children = slot11
+slot9.node = slot10
+slot8[7] = slot9
+slot9 = {}
+slot10 = {
+	class = "Assignment",
+	id = "64"
+}
+slot11 = {}
+slot12 = {
+	CastRight = "false"
+}
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	field = "tSkillUsed"
+}
+slot12.Opl = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	const = 0
+}
+slot12.Opr = slot13
+slot11[3] = slot12
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot10.children = slot11
+slot9.node = slot10
+slot8[8] = slot9
+slot7.children = slot8
+slot6.node = slot7
+slot5[1] = slot6
+slot6 = {}
+slot7 = {
+	class = "Sequence",
+	id = "95"
+}
+slot8 = {}
+slot7.properties = slot8
+slot8 = {}
+slot7.attachments = slot8
+slot8 = {}
+slot9 = {}
+slot10 = {
+	class = "Condition",
+	id = "93"
+}
+slot11 = {}
+slot12 = {
+	Operator = "Equal"
+}
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	func = "checkSkillExist"
+}
+slot14 = {}
+slot15 = {
+	field = "selfId"
+}
+slot14[1] = slot15
+slot15 = {
+	const = 10270400
+}
+slot14[2] = slot15
+slot15 = {
+	const = true
+}
+slot14[3] = slot15
+slot13.params = slot14
+slot12.Opl = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	const = true
+}
+slot12.Opr = slot13
+slot11[3] = slot12
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot10.children = slot11
+slot9.node = slot10
+slot8[1] = slot9
+slot9 = {}
+slot10 = {
+	class = "IfElse",
+	id = "67"
+}
+slot11 = {}
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot12 = {}
+slot13 = {
+	class = "Condition",
+	id = "91"
+}
+slot14 = {}
+slot15 = {
+	Operator = "Equal"
+}
+slot14[1] = slot15
+slot15 = {}
+slot16 = {
+	func = "checkTargetHasBuffById"
+}
+slot17 = {}
+slot18 = {
+	field = "selfId"
+}
+slot17[1] = slot18
+slot18 = {
+	const = 2102704
+}
+slot17[2] = slot18
+slot18 = {
+	const = 1
+}
+slot17[3] = slot18
+slot16.params = slot17
+slot15.Opl = slot16
+slot14[2] = slot15
+slot15 = {}
+slot16 = {
+	const = true
+}
+slot15.Opr = slot16
+slot14[3] = slot15
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot13.children = slot14
+slot12.node = slot13
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	class = "Sequence",
+	id = "7"
 }
 slot14 = {}
 slot13.properties = slot14
@@ -473,8 +603,8 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "115",
-	class = "Condition"
+	class = "Condition",
+	id = "115"
 }
 slot17 = {}
 slot18 = {
@@ -508,8 +638,8 @@ slot15.node = slot16
 slot14[1] = slot15
 slot15 = {}
 slot16 = {
-	id = "10",
-	class = "Action"
+	class = "Action",
+	id = "10"
 }
 slot17 = {}
 slot18 = {}
@@ -565,8 +695,8 @@ slot12.node = slot13
 slot11[2] = slot12
 slot12 = {}
 slot13 = {
-	id = "78",
-	class = "IfElse"
+	class = "IfElse",
+	id = "78"
 }
 slot14 = {}
 slot13.properties = slot14
@@ -575,8 +705,8 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "108",
-	class = "Or"
+	class = "Or",
+	id = "108"
 }
 slot17 = {}
 slot16.properties = slot17
@@ -585,8 +715,8 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "109",
-	class = "Condition"
+	class = "Condition",
+	id = "109"
 }
 slot20 = {}
 slot21 = {
@@ -620,8 +750,8 @@ slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "79",
-	class = "Condition"
+	class = "Condition",
+	id = "79"
 }
 slot20 = {}
 slot21 = {
@@ -658,8 +788,8 @@ slot15.node = slot16
 slot14[1] = slot15
 slot15 = {}
 slot16 = {
-	id = "81",
-	class = "Sequence"
+	class = "Sequence",
+	id = "81"
 }
 slot17 = {}
 slot16.properties = slot17
@@ -668,8 +798,8 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "80",
-	class = "Assignment"
+	class = "Assignment",
+	id = "80"
 }
 slot20 = {}
 slot21 = {
@@ -697,8 +827,8 @@ slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "82",
-	class = "Condition"
+	class = "Condition",
+	id = "82"
 }
 slot20 = {}
 slot21 = {
@@ -726,8 +856,8 @@ slot18.node = slot19
 slot17[2] = slot18
 slot18 = {}
 slot19 = {
-	id = "88",
-	class = "Assignment"
+	class = "Assignment",
+	id = "88"
 }
 slot20 = {}
 slot21 = {
@@ -761,8 +891,8 @@ slot18.node = slot19
 slot17[3] = slot18
 slot18 = {}
 slot19 = {
-	id = "89",
-	class = "Assignment"
+	class = "Assignment",
+	id = "89"
 }
 slot20 = {}
 slot21 = {
@@ -796,8 +926,8 @@ slot18.node = slot19
 slot17[4] = slot18
 slot18 = {}
 slot19 = {
-	id = "90",
-	class = "IfElse"
+	class = "IfElse",
+	id = "90"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -806,8 +936,8 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "86",
-	class = "Condition"
+	class = "Condition",
+	id = "86"
 }
 slot23 = {}
 slot24 = {
@@ -835,8 +965,8 @@ slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "87",
-	class = "Sequence"
+	class = "Sequence",
+	id = "87"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -845,8 +975,8 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "85",
-	class = "Action"
+	class = "Action",
+	id = "85"
 }
 slot26 = {}
 slot27 = {}
@@ -925,8 +1055,8 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "132",
-	class = "Action"
+	class = "Action",
+	id = "132"
 }
 slot26 = {}
 slot27 = {}
@@ -958,8 +1088,8 @@ slot24.node = slot25
 slot23[2] = slot24
 slot24 = {}
 slot25 = {
-	id = "131",
-	class = "Action"
+	class = "Action",
+	id = "131"
 }
 slot26 = {}
 slot27 = {}
@@ -991,8 +1121,8 @@ slot24.node = slot25
 slot23[3] = slot24
 slot24 = {}
 slot25 = {
-	id = "112",
-	class = "Action"
+	class = "Action",
+	id = "112"
 }
 slot26 = {}
 slot27 = {}
@@ -1024,8 +1154,8 @@ slot24.node = slot25
 slot23[4] = slot24
 slot24 = {}
 slot25 = {
-	id = "83",
-	class = "Action"
+	class = "Action",
+	id = "83"
 }
 slot26 = {}
 slot27 = {}
@@ -1078,8 +1208,8 @@ slot24.node = slot25
 slot23[5] = slot24
 slot24 = {}
 slot25 = {
-	id = "113",
-	class = "Action"
+	class = "Action",
+	id = "113"
 }
 slot26 = {}
 slot27 = {}
@@ -1114,8 +1244,8 @@ slot21.node = slot22
 slot20[2] = slot21
 slot21 = {}
 slot22 = {
-	id = "110",
-	class = "Sequence"
+	class = "Sequence",
+	id = "110"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -1124,8 +1254,8 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "133",
-	class = "Action"
+	class = "Action",
+	id = "133"
 }
 slot26 = {}
 slot27 = {}
@@ -1157,8 +1287,8 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "134",
-	class = "Action"
+	class = "Action",
+	id = "134"
 }
 slot26 = {}
 slot27 = {}
@@ -1190,8 +1320,8 @@ slot24.node = slot25
 slot23[2] = slot24
 slot24 = {}
 slot25 = {
-	id = "111",
-	class = "Action"
+	class = "Action",
+	id = "111"
 }
 slot26 = {}
 slot27 = {}
@@ -1223,8 +1353,8 @@ slot24.node = slot25
 slot23[3] = slot24
 slot24 = {}
 slot25 = {
-	id = "84",
-	class = "Action"
+	class = "Action",
+	id = "84"
 }
 slot26 = {}
 slot27 = {}
@@ -1277,8 +1407,8 @@ slot24.node = slot25
 slot23[4] = slot24
 slot24 = {}
 slot25 = {
-	id = "114",
-	class = "Action"
+	class = "Action",
+	id = "114"
 }
 slot26 = {}
 slot27 = {}
@@ -1319,8 +1449,8 @@ slot15.node = slot16
 slot14[2] = slot15
 slot15 = {}
 slot16 = {
-	id = "130",
-	class = "IfElse"
+	class = "IfElse",
+	id = "130"
 }
 slot17 = {}
 slot16.properties = slot17
@@ -1329,8 +1459,8 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "129",
-	class = "Condition"
+	class = "Condition",
+	id = "129"
 }
 slot20 = {}
 slot21 = {
@@ -1358,8 +1488,8 @@ slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "121",
-	class = "Sequence"
+	class = "Sequence",
+	id = "121"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -1368,8 +1498,8 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "122",
-	class = "Assignment"
+	class = "Assignment",
+	id = "122"
 }
 slot23 = {}
 slot24 = {
@@ -1427,8 +1557,8 @@ slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "120",
-	class = "Condition"
+	class = "Condition",
+	id = "120"
 }
 slot23 = {}
 slot24 = {
@@ -1456,8 +1586,8 @@ slot21.node = slot22
 slot20[2] = slot21
 slot21 = {}
 slot22 = {
-	id = "124",
-	class = "Assignment"
+	class = "Assignment",
+	id = "124"
 }
 slot23 = {}
 slot24 = {
@@ -1491,8 +1621,8 @@ slot21.node = slot22
 slot20[3] = slot21
 slot21 = {}
 slot22 = {
-	id = "125",
-	class = "Assignment"
+	class = "Assignment",
+	id = "125"
 }
 slot23 = {}
 slot24 = {
@@ -1526,8 +1656,8 @@ slot21.node = slot22
 slot20[4] = slot21
 slot21 = {}
 slot22 = {
-	id = "126",
-	class = "IfElse"
+	class = "IfElse",
+	id = "126"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -1536,8 +1666,8 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "118",
-	class = "Condition"
+	class = "Condition",
+	id = "118"
 }
 slot26 = {}
 slot27 = {
@@ -1565,8 +1695,8 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "116",
-	class = "Sequence"
+	class = "Sequence",
+	id = "116"
 }
 slot26 = {}
 slot25.properties = slot26
@@ -1575,8 +1705,8 @@ slot25.attachments = slot26
 slot26 = {}
 slot27 = {}
 slot28 = {
-	id = "119",
-	class = "Action"
+	class = "Action",
+	id = "119"
 }
 slot29 = {}
 slot30 = {}
@@ -1655,8 +1785,8 @@ slot27.node = slot28
 slot26[1] = slot27
 slot27 = {}
 slot28 = {
-	id = "123",
-	class = "Action"
+	class = "Action",
+	id = "123"
 }
 slot29 = {}
 slot30 = {}
@@ -1712,8 +1842,8 @@ slot24.node = slot25
 slot23[2] = slot24
 slot24 = {}
 slot25 = {
-	id = "117",
-	class = "Action"
+	class = "Action",
+	id = "117"
 }
 slot26 = {}
 slot27 = {}
@@ -1772,8 +1902,8 @@ slot18.node = slot19
 slot17[2] = slot18
 slot18 = {}
 slot19 = {
-	id = "41",
-	class = "IfElse"
+	class = "IfElse",
+	id = "41"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -1782,8 +1912,8 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "40",
-	class = "Or"
+	class = "Or",
+	id = "40"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -1792,8 +1922,8 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "38",
-	class = "Condition"
+	class = "Condition",
+	id = "38"
 }
 slot26 = {}
 slot27 = {
@@ -1821,8 +1951,8 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "39",
-	class = "Condition"
+	class = "Condition",
+	id = "39"
 }
 slot26 = {}
 slot27 = {
@@ -1853,8 +1983,8 @@ slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "42",
-	class = "Sequence"
+	class = "Sequence",
+	id = "42"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -1863,8 +1993,8 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "43",
-	class = "Action"
+	class = "Action",
+	id = "43"
 }
 slot26 = {}
 slot27 = {}
@@ -1943,8 +2073,8 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "44",
-	class = "Action"
+	class = "Action",
+	id = "44"
 }
 slot26 = {}
 slot27 = {}
@@ -2000,8 +2130,8 @@ slot21.node = slot22
 slot20[2] = slot21
 slot21 = {}
 slot22 = {
-	id = "45",
-	class = "Action"
+	class = "Action",
+	id = "45"
 }
 slot23 = {}
 slot24 = {}
@@ -2048,11 +2178,11 @@ slot23[3] = slot24
 slot22.properties = slot23
 slot23 = {}
 slot24 = {
+	class = "Precondition",
+	transition = false,
 	effector = false,
 	precondition = true,
-	id = "356",
-	class = "Precondition",
-	transition = false
+	id = "356"
 }
 slot25 = {}
 slot26 = {

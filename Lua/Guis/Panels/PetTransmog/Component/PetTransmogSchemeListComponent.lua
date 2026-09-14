@@ -1,4 +1,4 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -12,23 +12,26 @@ slot3 = require
 slot5 = "Utils.ClientTextUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.ServiceUtils"
+slot6 = "Utils.ClientUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "GameApp.PetTransmog.PetTransmogUtils"
+slot7 = "Common.Utils.ServiceUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Guis.Panels.PetTransmog.PetTransmogModel"
+slot8 = "GameApp.PetTransmog.PetTransmogUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Guis.Panels.PetTransmog.PetTransmogModel"
 slot7 = slot7(slot9)
-slot8 = slot0.LightClass
-slot10 = "PetTransmogSchemeListComponent"
-slot11 = slot1
-slot8 = slot8(slot10, slot11)
+slot8 = require
+slot10 = "Common.Const.Const"
+slot8 = slot8(slot10)
+slot9 = slot0.LightClass
+slot11 = "PetTransmogSchemeListComponent"
+slot12 = slot1
+slot9 = slot9(slot11, slot12)
 
-slot9 = function(slot0, slot1, slot2, slot3, slot4)
+slot10 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot7 = slot2
 	slot5 = slot2.GetRefValue
@@ -195,7 +198,6 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = ctrl
 		slot2 = slot2.needDestroyDownloadSprite
-
 		--- END OF BLOCK #0 ---
 
 		slot2 = if not slot2 then
@@ -206,17 +208,14 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 		--- BLOCK #1 5-5, warpins: 1 ---
-		return
-
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-		--- BLOCK #2 6-9, warpins: 2 ---
+		--- BLOCK #2 6-9, warpins: 1 ---
 		slot2 = ctrl
 		slot2 = slot2.itemPhotoTokens
-
 		--- END OF BLOCK #2 ---
 
 		slot2 = if not slot2 then
@@ -227,20 +226,17 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 		--- BLOCK #3 10-10, warpins: 1 ---
-		return
-
 		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #4
+		UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-		--- BLOCK #4 11-17, warpins: 2 ---
+		--- BLOCK #4 11-17, warpins: 1 ---
 		slot2 = ctrl
 		slot2 = slot2.itemPhotoTokens
 		slot3 = instanceId
 		slot2 = slot2[slot3]
 		slot3 = capturedToken
-
 		--- END OF BLOCK #4 ---
 
 		if slot2 ~= slot3 then
@@ -251,14 +247,12 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 		--- BLOCK #5 18-18, warpins: 1 ---
-		return
-
 		--- END OF BLOCK #5 ---
 
-		FLOW; TARGET BLOCK #6
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-		--- BLOCK #6 19-21, warpins: 2 ---
+		--- BLOCK #6 19-21, warpins: 1 ---
 		slot2 = slot0.status
 		--- END OF BLOCK #6 ---
 
@@ -271,7 +265,6 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 		--- BLOCK #7 22-24, warpins: 1 ---
 		slot2 = slot1.value
-
 		--- END OF BLOCK #7 ---
 
 		slot2 = if not slot2 then
@@ -282,14 +275,12 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 		--- BLOCK #8 25-25, warpins: 2 ---
-		return
-
 		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #9
+		UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-		--- BLOCK #9 26-32, warpins: 2 ---
+		--- BLOCK #9 26-32, warpins: 1 ---
 		slot2 = ctrl
 		slot2 = slot2.photoCache
 		slot3 = data
@@ -307,58 +298,205 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 		--- BLOCK #10 33-35, warpins: 1 ---
 		slot3 = itemIcon
 		slot3.sprite = slot2
-
-		return
-
 		--- END OF BLOCK #10 ---
 
-		FLOW; TARGET BLOCK #11
+		UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-		--- BLOCK #11 36-44, warpins: 2 ---
-		slot3 = pg
-		slot3 = slot3.global
-		slot3 = slot3.mobileCameraMgr
-		slot5 = slot3
-		slot3 = slot3.GetSpriteByCompressByte
-		slot6 = slot1.value
-		slot3 = slot3(slot5, slot6)
+		--- BLOCK #11 36-41, warpins: 1 ---
+		slot3 = ClientUtils
+		slot3 = slot3.pullPicture
+		slot5 = slot1.value
 
-		--- END OF BLOCK #11 ---
+		slot6 = function(slot0, slot1)
+			--- BLOCK #0 1-2, warpins: 1 ---
+			--- END OF BLOCK #0 ---
 
-		slot3 = if not slot3 then
-		JUMP TO BLOCK #12
-		else
-		JUMP TO BLOCK #13
+			slot1 = if not slot1 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 3-3, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 4-7, warpins: 2 ---
+			slot2 = ctrl
+			slot2 = slot2.needDestroyDownloadSprite
+			--- END OF BLOCK #2 ---
+
+			slot2 = if slot2 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 8-11, warpins: 1 ---
+			slot2 = ctrl
+			slot2 = slot2.itemPhotoTokens
+			--- END OF BLOCK #3 ---
+
+			slot2 = if not slot2 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 12-19, warpins: 2 ---
+			slot2 = pg
+			slot2 = slot2.global
+			slot2 = slot2.mobileCameraMgr
+			slot4 = slot2
+			slot2 = slot2.DestroySpriteTexture
+			slot5 = slot1
+
+			slot2(slot4, slot5)
+
+			return
+
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+			--- BLOCK #5 20-26, warpins: 2 ---
+			slot2 = ctrl
+			slot2 = slot2.itemPhotoTokens
+			slot3 = instanceId
+			slot2 = slot2[slot3]
+			slot3 = capturedToken
+			--- END OF BLOCK #5 ---
+
+			if slot2 ~= slot3 then
+			JUMP TO BLOCK #6
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #6 27-34, warpins: 1 ---
+			slot2 = pg
+			slot2 = slot2.global
+			slot2 = slot2.mobileCameraMgr
+			slot4 = slot2
+			slot2 = slot2.DestroySpriteTexture
+			slot5 = slot1
+
+			slot2(slot4, slot5)
+
+			return
+
+			--- END OF BLOCK #6 ---
+
+			FLOW; TARGET BLOCK #7
+
+
+			--- BLOCK #7 35-41, warpins: 2 ---
+			slot2 = ctrl
+			slot2 = slot2.photoCache
+			slot3 = data
+			slot3 = slot3.photoId
+			slot2 = slot2[slot3]
+			--- END OF BLOCK #7 ---
+
+			slot2 = if slot2 then
+			JUMP TO BLOCK #8
+			else
+			JUMP TO BLOCK #9
+			end
+
+
+			--- BLOCK #8 42-51, warpins: 1 ---
+			slot3 = pg
+			slot3 = slot3.global
+			slot3 = slot3.mobileCameraMgr
+			slot5 = slot3
+			slot3 = slot3.DestroySpriteTexture
+			slot6 = slot1
+
+			slot3(slot5, slot6)
+
+			slot3 = itemIcon
+			slot3.sprite = slot2
+
+			return
+
+			--- END OF BLOCK #8 ---
+
+			FLOW; TARGET BLOCK #9
+
+
+			--- BLOCK #9 52-66, warpins: 2 ---
+			slot3 = ctrl
+			slot3 = slot3.photoCache
+			slot4 = data
+			slot4 = slot4.photoId
+			slot3[slot4] = slot1
+			slot3 = ctrl
+			slot3 = slot3.needDestroyDownloadSprite
+			slot4 = ctrl
+			slot4 = slot4.needDestroyDownloadSprite
+			slot4 = #slot4
+			slot4 = slot4 + 1
+			slot3[slot4] = slot1
+			slot3 = itemIcon
+			slot3.sprite = slot1
+
+			return
+			--- END OF BLOCK #9 ---
+
+
+
 		end
 
+		slot3(slot5, slot6)
 
-		--- BLOCK #12 45-45, warpins: 1 ---
 		return
+		--- END OF BLOCK #11 ---
 
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 42-42, warpins: 2 ---
+		return
 		--- END OF BLOCK #12 ---
 
 		FLOW; TARGET BLOCK #13
 
 
-		--- BLOCK #13 46-60, warpins: 2 ---
-		slot4 = ctrl
-		slot4 = slot4.photoCache
-		slot5 = data
-		slot5 = slot5.photoId
-		slot4[slot5] = slot3
-		slot4 = ctrl
-		slot4 = slot4.needDestroyDownloadSprite
-		slot5 = ctrl
-		slot5 = slot5.needDestroyDownloadSprite
-		slot5 = #slot5
-		slot5 = slot5 + 1
-		slot4[slot5] = slot3
-		slot4 = itemIcon
-		slot4.sprite = slot3
-
+		--- BLOCK #13 43-43, warpins: 2 ---
 		return
 		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 44-44, warpins: 2 ---
+		return
+		--- END OF BLOCK #14 ---
+
+		FLOW; TARGET BLOCK #15
+
+
+		--- BLOCK #15 45-45, warpins: 2 ---
+		return
+		--- END OF BLOCK #15 ---
+
+		FLOW; TARGET BLOCK #16
+
+
+		--- BLOCK #16 46-46, warpins: 2 ---
+		return
+		--- END OF BLOCK #16 ---
 
 
 
@@ -408,9 +546,9 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot8.refreshSchemeIcon = slot9
+slot9.refreshSchemeIcon = slot10
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnComfilmPlan
@@ -573,9 +711,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.initView = slot10
+slot9.initView = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -712,9 +850,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.selectFirstScheme = slot10
+slot9.selectFirstScheme = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.schemeList
@@ -772,16 +910,16 @@ slot10 = function(slot0)
 
 end
 
-slot8.refreshSchemeList = slot10
+slot9.refreshSchemeList = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.planStarList
+	slot2 = slot0.view
+	slot2 = slot2.planStarList
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -796,336 +934,370 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-23, warpins: 2 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getSelectedScheme
-	slot1 = slot1(slot3)
-	slot2 = slot0.view
-	slot2 = slot2.planStarList
-	slot4 = slot2
-	slot2 = slot2.SetList
-	slot5 = slot0.ctrl
-	slot7 = slot5
-	slot5 = slot5.buildHoleData
-	slot8 = slot1
-	MULTRES = slot5(slot7, slot8)
-
-	slot2(slot4, MULTRES)
-
-	slot2 = slot0.view
-	slot2 = slot2.txtPlanNum
+	--- BLOCK #2 6-7, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot1 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-11, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getSelectedScheme
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-25, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.planStarList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = slot0.ctrl
+	slot8 = slot6
+	slot6 = slot6.buildHoleData
+	slot9 = slot2
+	MULTRES = slot6(slot8, slot9)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.view
+	slot3 = slot3.txtPlanNum
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 26-32, warpins: 1 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtPlanNum
+	slot6 = tostring
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 24-30, warpins: 1 ---
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.txtPlanNum
-	slot5 = tostring
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 31-33, warpins: 1 ---
-	slot7 = slot1.transmogValue
-	--- END OF BLOCK #4 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 34-34, warpins: 2 ---
-	slot7 = 0
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 35-36, warpins: 2 ---
-	MULTRES = slot5(slot7)
-
-	slot2(slot4, MULTRES)
-
+	--- BLOCK #6 33-35, warpins: 1 ---
+	slot8 = slot2.transmogValue
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 37-40, warpins: 2 ---
-	slot2 = slot0.view
-	slot2 = slot2.planPanelUComponent
+	--- BLOCK #7 36-36, warpins: 2 ---
+	slot8 = 0
 	--- END OF BLOCK #7 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 41-50, warpins: 1 ---
-	slot2 = 0
-	slot3 = slot0.model
-	slot5 = slot3
-	slot3 = slot3.getCurrentTab
-	slot3 = slot3(slot5)
-	slot4 = PetTransmogModel
-	slot4 = slot4.PLAN_TAB
-	slot4 = slot4.PREVIEW
+	--- BLOCK #8 37-38, warpins: 2 ---
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
 	--- END OF BLOCK #8 ---
 
-	if slot3 == slot4 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 51-52, warpins: 1 ---
-	slot2 = 2
+	--- BLOCK #9 39-40, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #10 53-54, warpins: 1 ---
-	--- END OF BLOCK #10 ---
-
 	slot1 = if slot1 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #11 55-57, warpins: 1 ---
-	slot3 = slot1.isApplying
+	--- BLOCK #10 41-41, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-45, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.planPanelUComponent
 	--- END OF BLOCK #11 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #12 58-62, warpins: 1 ---
-	slot3 = slot1.index
-	slot4 = Const
-	slot4 = slot4.PetTransmogCustomDefultSchemeIndex
+	--- BLOCK #12 46-55, warpins: 1 ---
+	slot3 = 0
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getCurrentTab
+	slot4 = slot4(slot6)
+	slot5 = PetTransmogModel
+	slot5 = slot5.PLAN_TAB
+	slot5 = slot5.PREVIEW
 	--- END OF BLOCK #12 ---
 
-	if slot3 == slot4 then
+	if slot4 == slot5 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 63-64, warpins: 1 ---
-	slot2 = 1
+	--- BLOCK #13 56-57, warpins: 1 ---
+	slot3 = 2
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #14 65-65, warpins: 1 ---
-	slot2 = 3
+	--- BLOCK #14 58-59, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	slot2 = if slot2 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #15 66-72, warpins: 5 ---
-	slot3 = slot0.view
-	slot3 = slot3.planPanelUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "BtnState"
-	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
-
+	--- BLOCK #15 60-62, warpins: 1 ---
+	slot4 = slot2.isApplying
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	slot4 = if slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #16 73-81, warpins: 2 ---
-	slot2 = slot0.model
-	slot4 = slot2
-	slot2 = slot2.getCurrentTab
-	slot2 = slot2(slot4)
-	slot3 = PetTransmogModel
-	slot3 = slot3.PLAN_TAB
-	slot3 = slot3.CUSTOM
+	--- BLOCK #16 63-67, warpins: 1 ---
+	slot4 = slot2.index
+	slot5 = Const
+	slot5 = slot5.PetTransmogCustomDefultSchemeIndex
 	--- END OF BLOCK #16 ---
 
-	if slot2 ~= slot3 then
+	if slot4 == slot5 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 82-83, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #17 68-69, warpins: 1 ---
+	slot3 = 1
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 84-84, warpins: 1 ---
-	slot2 = true
+	--- BLOCK #18 70-70, warpins: 1 ---
+	slot3 = 3
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 85-86, warpins: 2 ---
+	--- BLOCK #19 71-77, warpins: 5 ---
+	slot4 = slot0.view
+	slot4 = slot4.planPanelUComponent
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "BtnState"
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
 	--- END OF BLOCK #19 ---
 
-	slot3 = if slot2 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #22
-	end
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 87-88, warpins: 1 ---
+	--- BLOCK #20 78-86, warpins: 2 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getCurrentTab
+	slot3 = slot3(slot5)
+	slot4 = PetTransmogModel
+	slot4 = slot4.PLAN_TAB
+	slot4 = slot4.CUSTOM
 	--- END OF BLOCK #20 ---
 
-	slot3 = if slot1 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 89-90, warpins: 1 ---
-	slot3 = slot1.isApplying
-	slot3 = not slot3
+	--- BLOCK #21 87-88, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #22 91-92, warpins: 3 ---
+	--- BLOCK #22 89-89, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #22 ---
 
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 90-91, warpins: 2 ---
+	--- END OF BLOCK #23 ---
+
 	slot4 = if slot3 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #23 93-97, warpins: 1 ---
-	slot4 = slot1.index
-	slot5 = Const
-	slot5 = slot5.PetTransmogCustomDefultSchemeIndex
-	--- END OF BLOCK #23 ---
+	--- BLOCK #24 92-93, warpins: 1 ---
+	--- END OF BLOCK #24 ---
 
-	if slot4 == slot5 then
-	JUMP TO BLOCK #24
-	else
+	slot4 = if slot2 then
 	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #24 98-99, warpins: 1 ---
-	slot4 = false
-	--- END OF BLOCK #24 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #25 100-100, warpins: 1 ---
-	slot4 = true
+	--- BLOCK #25 94-95, warpins: 1 ---
+	slot4 = slot2.isApplying
+	slot4 = not slot4
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 101-104, warpins: 3 ---
-	slot5 = slot0.view
-	slot5 = slot5.btnDelPlan
+	--- BLOCK #26 96-97, warpins: 3 ---
 	--- END OF BLOCK #26 ---
 
-	slot5 = if slot5 then
+	slot5 = if slot4 then
 	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 105-110, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.btnDelPlan
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = slot4
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 111-114, warpins: 2 ---
-	slot5 = slot0.view
-	slot5 = slot5.btnComfilmPlan
-	--- END OF BLOCK #28 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #29
 	else
 	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #29 115-120, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.btnComfilmPlan
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = slot3
+	--- BLOCK #27 98-102, warpins: 1 ---
+	slot5 = slot2.index
+	slot6 = Const
+	slot6 = slot6.PetTransmogCustomDefultSchemeIndex
+	--- END OF BLOCK #27 ---
 
-	slot5(slot7, slot8)
+	if slot5 == slot6 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
 
+
+	--- BLOCK #28 103-104, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #28 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
+
+
+	--- BLOCK #29 105-105, warpins: 1 ---
+	slot5 = true
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 121-121, warpins: 2 ---
-	return
+	--- BLOCK #30 106-109, warpins: 3 ---
+	slot6 = slot0.view
+	slot6 = slot6.btnDelPlan
 	--- END OF BLOCK #30 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 110-115, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.btnDelPlan
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 116-119, warpins: 2 ---
+	slot6 = slot0.view
+	slot6 = slot6.btnComfilmPlan
+	--- END OF BLOCK #32 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 120-125, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.btnComfilmPlan
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 126-126, warpins: 2 ---
+	return
+	--- END OF BLOCK #34 ---
 
 
 
 end
 
-slot8.refreshPlanPartInfo = slot10
+slot9.refreshPlanPartInfo = slot11
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-39, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1549,7 +1721,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot18 = slot9.gameObject
 	slot20 = slot18
 	slot18 = slot18.SetActiveEx
-	slot21 = slot17
+	slot21 = false
 
 	slot18(slot20, slot21)
 
@@ -1595,9 +1767,9 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.onRenderSchemeItem = slot10
+slot9.onRenderSchemeItem = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1671,83 +1843,29 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-30, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #7 31-36, warpins: 1 ---
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot5
-	slot9 = slot2.name
-	--- END OF BLOCK #7 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 37-42, warpins: 1 ---
-	slot9 = pg
-	slot9 = slot9.getLocalizationText
-	slot11 = slot2.name
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #8 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 43-43, warpins: 2 ---
-	slot9 = ""
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 44-44, warpins: 2 ---
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 45-50, warpins: 2 ---
+	--- BLOCK #6 29-34, warpins: 2 ---
 	slot8 = slot1
 	slot6 = slot1.TryChangePage
 	slot9 = "Quality"
 	slot10 = slot2.quality
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #6 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #12 51-51, warpins: 1 ---
+	--- BLOCK #7 35-35, warpins: 1 ---
 	slot10 = 0
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #13 52-61, warpins: 2 ---
+	--- BLOCK #8 36-45, warpins: 2 ---
 	slot6(slot8, slot9, slot10)
 
 	slot6 = slot0.ctrl
@@ -1757,16 +1875,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot7 = PetTransmogModel
 	slot7 = slot7.SCHEME_SOURCE
 	slot7 = slot7.PREVIEW
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #8 ---
 
 	if slot6 ~= slot7 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #14 62-70, warpins: 1 ---
+	--- BLOCK #9 46-54, warpins: 1 ---
 	slot6 = PetTransmogUtils
 	slot6 = slot6.isHoleDisplayUnlocked
 	slot8 = slot0.model
@@ -1775,66 +1893,149 @@ slot10 = function(slot0, slot1, slot2)
 	slot8 = slot8(slot10)
 	slot9 = slot2.index
 	slot6 = slot6(slot8, slot9)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #15 71-72, warpins: 0 ---
+	--- BLOCK #10 55-56, warpins: 0 ---
 	slot6 = false
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #16 73-73, warpins: 1 ---
+	--- BLOCK #11 57-57, warpins: 1 ---
 	slot6 = true
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #17 74-78, warpins: 3 ---
+	--- BLOCK #12 58-62, warpins: 3 ---
 	slot9 = slot1
 	slot7 = slot1.TryChangePage
 	slot10 = "Emtpy"
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #12 ---
 
 	slot6 = if slot6 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 63-64, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 65-65, warpins: 1 ---
+	slot11 = 1
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 66-68, warpins: 2 ---
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #15 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #16 69-71, warpins: 1 ---
+	slot7 = ""
+	--- END OF BLOCK #16 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #17 72-74, warpins: 1 ---
+	slot8 = slot2.name
+	--- END OF BLOCK #17 ---
+
+	slot8 = if slot8 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 79-80, warpins: 1 ---
-	slot11 = 0
+	--- BLOCK #18 75-80, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getLocalizationText
+	slot10 = slot2.name
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	slot7 = if not slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #19 81-81, warpins: 1 ---
-	slot11 = 1
-
+	--- BLOCK #19 81-81, warpins: 2 ---
+	slot7 = ""
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 82-83, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
-
-	return
+	--- BLOCK #20 82-82, warpins: 2 ---
 	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #21 83-87, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "PETTRANSMOGRIFY_PART_LOCK"
+	slot8 = slot8(slot10)
+	slot7 = slot8
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 88-92, warpins: 2 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot5
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 93-93, warpins: 2 ---
+	return
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot8.onRenderPlanStarItem = slot10
+slot9.onRenderPlanStarItem = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2023,9 +2224,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot8.onSchemeSelected = slot10
+slot9.onSchemeSelected = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2102,9 +2303,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot8._updateItemSelected = slot10
+slot9._updateItemSelected = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2227,9 +2428,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onBtnComfilmPlan = slot10
+slot9.onBtnComfilmPlan = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
@@ -2248,9 +2449,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot8.doApplyCurrScheme = slot10
+slot9.doApplyCurrScheme = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2338,21 +2539,36 @@ slot10 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 33-48, warpins: 1 ---
+	--- BLOCK #8 33-60, warpins: 1 ---
 	slot3 = slot2.index
 	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.showConfirmMsgRaw
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "PETTRANSMOGRIFY_TIP"
-	slot6 = slot6(slot8)
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "PETTRANSMOGRIFY_DELETE_CONFIRM"
-	slot7 = slot7(slot9)
+	slot4 = slot4.getGameString
+	slot6 = "PETTRANSMOGRIFY_DELETE_ENTER_OK"
+	slot4 = slot4(slot6)
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot7 = slot5
+	slot5 = slot5.open
+	slot8 = UIConst
+	slot8 = slot8.UI_ID_COMMON_INPUT
+	slot9 = {
+		confirmBtnText = "COMMON_CONFIRM",
+		detail = "PETTRANSMOGRIFY_DELETE_CONFIRM",
+		title = "PETTRANSMOGRIFY_TIP"
+	}
+	slot10 = pg
+	slot10 = slot10.getFormatText
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "PETTRANSMOGRIFY_DELETE_ENTER"
+	slot12 = slot12(slot14)
+	slot13 = slot4
+	slot10 = slot10(slot12, slot13)
+	slot9.placeHolder = slot10
+	slot9.requireText = slot4
 
-	slot8 = function()
+	slot10 = function()
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
@@ -2371,7 +2587,9 @@ slot10 = function(slot0)
 
 	end
 
-	slot4(slot6, slot7, slot8)
+	slot9.confirmCb = slot10
+
+	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #8 ---
@@ -2379,21 +2597,21 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 49-49, warpins: 2 ---
+	--- BLOCK #9 61-61, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 50-50, warpins: 2 ---
+	--- BLOCK #10 62-62, warpins: 2 ---
 	return
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 51-51, warpins: 2 ---
+	--- BLOCK #11 63-63, warpins: 2 ---
 	return
 	--- END OF BLOCK #11 ---
 
@@ -2401,9 +2619,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onBtnDelPlan = slot10
+slot9.onBtnDelPlan = slot11
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

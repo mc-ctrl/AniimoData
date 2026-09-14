@@ -257,30 +257,14 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #3 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 22-30, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot7 = slot5
-	slot5 = slot5.show
-	slot8 = UIConst
-	slot8 = slot8.UI_ID_INTERACT
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 31-52, warpins: 1 ---
+	--- BLOCK #4 22-35, warpins: 1 ---
 	slot5 = ClientTextUtils
 	slot5 = slot5.setText
 	slot7 = slot0.submitTip
@@ -292,16 +276,6 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot5(slot7, MULTRES)
 
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot7 = slot5
-	slot5 = slot5.hide
-	slot8 = UIConst
-	slot8 = slot8.UI_ID_INTERACT
-
-	slot5(slot7, slot8)
-
 	slot0.eventParam = slot2
 	slot0.successSubmitCallback = slot4
 	slot7 = slot0
@@ -309,14 +283,14 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot5(slot7)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 53-53, warpins: 2 ---
+	--- BLOCK #5 36-36, warpins: 2 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 

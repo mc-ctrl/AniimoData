@@ -106,7 +106,7 @@ end
 slot26.ctor = slot27
 
 slot27 = function(slot0, slot1)
-	--- BLOCK #0 1-48, warpins: 1 ---
+	--- BLOCK #0 1-46, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.enableCatchMode
 	slot5 = true
@@ -123,12 +123,10 @@ slot27 = function(slot0, slot1)
 
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = true
 	slot2.AlwaysLookForward = slot3
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = slot0.ballData
 	slot3 = slot3.animType
 	slot2.ThrowAnimType = slot3
@@ -741,16 +739,17 @@ end
 slot26.doThrow = slot27
 
 slot27 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.ForceChangeToUpperState
-	slot5 = CharacterUpperState
-	slot5 = slot5.EMPTY
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = CharacterUpperState
+	slot6 = slot6.EMPTY
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	slot2 = TimerManager
 	slot2 = slot2.addRepeatTimer
@@ -932,7 +931,7 @@ slot27 = function(slot0)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #6 54-56, warpins: 1 ---
@@ -979,7 +978,7 @@ slot27 = function(slot0)
 
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
 	--- BLOCK #11 67-68, warpins: 1 ---
@@ -1010,7 +1009,7 @@ slot27 = function(slot0)
 	--- BLOCK #13 76-76, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
 	--- BLOCK #14 77-82, warpins: 2 ---
@@ -1027,39 +1026,41 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #15 83-91, warpins: 1 ---
+	--- BLOCK #15 83-92, warpins: 1 ---
 	slot3 = slot0.player
 	slot3 = slot3.eModel
-	slot3 = slot3.controllerComponent
 	slot5 = slot3
 	slot3 = slot3.ForceChangeToState
-	slot6 = CharacterStateConst
-	slot6 = slot6.CROUCHIDLE
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot7 = CharacterStateConst
+	slot7 = slot7.CROUCHIDLE
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 92-99, warpins: 1 ---
+	--- BLOCK #16 93-101, warpins: 1 ---
 	slot3 = slot0.player
 	slot3 = slot3.eModel
-	slot3 = slot3.controllerComponent
 	slot5 = slot3
 	slot3 = slot3.ForceChangeToState
-	slot6 = CharacterStateConst
-	slot6 = slot6.IDLE
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot7 = CharacterStateConst
+	slot7 = slot7.IDLE
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 100-102, warpins: 2 ---
+	--- BLOCK #17 102-104, warpins: 2 ---
 	slot0.itemId = slot1
 	--- END OF BLOCK #17 ---
 
@@ -1070,21 +1071,21 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #18 103-104, warpins: 1 ---
+	--- BLOCK #18 105-106, warpins: 1 ---
 	slot3 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 105-105, warpins: 1 ---
+	--- BLOCK #19 107-107, warpins: 1 ---
 	slot3 = true
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 106-120, warpins: 2 ---
+	--- BLOCK #20 108-120, warpins: 2 ---
 	slot0.isFree = slot3
 	slot3 = Utils
 	slot3 = slot3.itemId2CastItemId
@@ -1095,42 +1096,28 @@ slot27 = function(slot0)
 	slot4 = slot0.castItemId
 	slot3 = slot3[slot4]
 	slot0.ballData = slot3
-	slot3 = slot0.player
-	slot3 = slot3.eModel
-	slot3 = slot3.controllerComponent
+	slot3 = slot0.ballData
 	--- END OF BLOCK #20 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #21 121-123, warpins: 1 ---
-	slot3 = slot0.ballData
-	--- END OF BLOCK #21 ---
-
-	slot3 = if slot3 then
 	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 124-129, warpins: 1 ---
+	--- BLOCK #21 121-125, warpins: 1 ---
 	slot3 = slot0.player
 	slot3 = slot3.eModel
-	slot3 = slot3.controllerComponent
 	slot4 = slot0.ballData
 	slot4 = slot4.animType
 	slot3.ThrowAnimType = slot4
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #23 130-144, warpins: 3 ---
+	--- BLOCK #22 126-140, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0._clear
 
@@ -1165,28 +1152,28 @@ slot27 = function(slot0)
 	slot3(slot5, slot6, slot7)
 
 	return
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 141-141, warpins: 2 ---
+	return
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 145-145, warpins: 2 ---
+	--- BLOCK #24 142-142, warpins: 2 ---
 	return
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 146-146, warpins: 2 ---
+	--- BLOCK #25 143-143, warpins: 2 ---
 	return
 	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 147-147, warpins: 2 ---
-	return
-	--- END OF BLOCK #26 ---
 
 
 
@@ -1245,7 +1232,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-39, warpins: 2 ---
+	--- BLOCK #4 19-45, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -1268,48 +1255,18 @@ slot27 = function(slot0)
 
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 40-44, warpins: 1 ---
-	slot1 = slot0.player
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = false
 	slot1.AlwaysLookForward = slot2
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 45-58, warpins: 2 ---
-	slot1 = slot0.player
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	slot3 = slot1
-	slot1 = slot1.ForceChangeToUpperState
-	slot4 = CharacterUpperState
-	slot4 = slot4.EMPTY
-
-	slot1(slot3, slot4)
-
+	slot1 = nil
+	slot0.target = slot1
+	slot1 = ThrowBallContext
+	slot1 = slot1.destroy
 	slot3 = slot0
-	slot1 = slot0._clear
 
 	slot1(slot3)
 
-	slot1 = nil
-	slot0.target = slot1
-
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
 
 

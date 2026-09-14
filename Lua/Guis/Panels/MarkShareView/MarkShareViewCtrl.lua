@@ -1,4 +1,4 @@
---- BLOCK #0 1-168, warpins: 1 ---
+--- BLOCK #0 1-174, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -55,838 +55,320 @@ slot16 = require
 slot18 = "Common.Utils.Utils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Common.Utils.AbilityUtils"
+slot19 = "Common.Utils.ServiceUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.skill_tag_data"
+slot20 = "Common.Utils.AbilityUtils"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.pet_config_data"
+slot21 = "Data.skill_tag_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Data.pet_research_content_data"
+slot22 = "Data.pet_config_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.element_prop_data"
+slot23 = "Data.pet_research_content_data"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.player_skill_reverse_data"
+slot24 = "Data.element_prop_data"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Data.player_skill_data"
+slot25 = "Data.player_skill_reverse_data"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "Entities.Utils.EModelUtils"
+slot26 = "Data.player_skill_data"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Const.AddressDataConst"
+slot27 = "Entities.Utils.EModelUtils"
 slot25 = slot25(slot27)
 slot26 = require
-slot28 = "Const.ClientConst"
+slot28 = "Const.AddressDataConst"
 slot26 = slot26(slot28)
-slot27 = slot1.LightClass
-slot29 = "MarkShareViewCtrl"
-slot30 = slot2
-slot27 = slot27(slot29, slot30)
+slot27 = require
+slot29 = "Const.ClientConst"
+slot27 = slot27(slot29)
+slot28 = require
+slot30 = "Core.Common.Time"
+slot28 = slot28(slot30)
+slot29 = slot1.LightClass
+slot31 = "MarkShareViewCtrl"
+slot32 = slot2
+slot29 = slot29(slot31, slot32)
+slot30 = {}
+slot31 = slot0.ON_INFO_STAMP_BE_LIKED
+slot32 = {
+	"onInfoStampBeLiked",
+	true
+}
+slot30[slot31] = slot32
+slot31 = slot0.ON_PLAYER_HURT
+slot32 = {
+	"onPlayerHurt",
+	true
+}
+slot30[slot31] = slot32
+slot31 = slot0.INPUT_DEVICE_CHANGED
+slot32 = {
+	"onInputDeviceChanged",
+	true
+}
+slot30[slot31] = slot32
+slot29.messages = slot30
 
-slot28 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.isNilOrEmpty
-	slot3 = slot0
-	slot1 = slot1(slot3)
+slot30 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot5 = MarkShareViewCtrl
+	slot5 = slot5._platformHooks
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #1 7-9, warpins: 1 ---
-	slot1 = pg
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 10-13, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 14-18, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.chat
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 19-24, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.chat
-	slot1 = slot1.getPlayerInfo
-	--- END OF BLOCK #4 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 25-26, warpins: 5 ---
-	slot1 = nil
-
-	return slot1
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 27-33, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.chat
-	slot3 = slot1
-	slot1 = slot1.getPlayerInfo
-	slot4 = slot0
-
-	return slot1(slot3, slot4)
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot29 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.isNilOrEmpty
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 7-9, warpins: 1 ---
-	slot1 = pg
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #2 10-13, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 14-23, warpins: 1 ---
-	slot1 = tostring
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = tostring
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.uid
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #3 ---
-
-	if slot1 ~= slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 24-25, warpins: 2 ---
-	slot1 = false
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 26-26, warpins: 1 ---
-	slot1 = true
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 27-27, warpins: 4 ---
-	return slot1
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot30 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot0 = if slot0 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-5, warpins: 1 ---
-	slot1 = slot0.model
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot6 = slot5.applyMarkShareImage
 	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 6-9, warpins: 1 ---
-	slot1 = slot0.model
-	slot1 = slot1.getOtherPlayerUId
-	--- END OF BLOCK #2 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 10-11, warpins: 3 ---
-	slot1 = nil
-
-	return slot1
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 12-16, warpins: 2 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getOtherPlayerUId
-	slot4 = slot0.infoStampId
-
-	return slot1(slot3, slot4)
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot31 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot4 = getMarkShareTargetUid
-	slot6 = slot0
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #0 ---
-
-	slot5 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot5 = ""
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-12, warpins: 2 ---
-	slot6 = string
-	slot6 = slot6.isNilOrEmpty
-	slot8 = slot4
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #2 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 13-17, warpins: 1 ---
-	slot6 = isSelfUid
-	slot8 = slot4
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #3 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #4 18-22, warpins: 2 ---
-	slot6 = type
-	slot8 = slot3
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #4 ---
-
-	if slot6 == "function" then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 23-25, warpins: 1 ---
-	slot6 = slot3
-	slot8 = slot5
-
-	slot6(slot8)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-26, warpins: 2 ---
-	return slot5
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 27-33, warpins: 2 ---
+	--- BLOCK #2 8-14, warpins: 1 ---
+	slot6 = slot5.applyMarkShareImage
 	slot8 = slot0
-	slot6 = slot0.resolveUGCTextDisplay
 	slot9 = slot1
-	slot10 = slot4
-	slot11 = slot5
-	slot12 = slot3
+	slot10 = slot2
+	slot11 = slot3
+	slot12 = slot4
 
 	return slot6(slot8, slot9, slot10, slot11, slot12)
-	--- END OF BLOCK #7 ---
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
 
 
-
-end
-
-slot32 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot5 = getMarkShareTargetUid
-	slot7 = slot0
-	slot5 = slot5(slot7)
-	slot6 = string
-	slot6 = slot6.isNilOrEmpty
-	slot8 = slot5
+	--- BLOCK #3 15-19, warpins: 3 ---
+	slot6 = type
+	slot8 = slot4
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-14, warpins: 1 ---
-	slot6 = isSelfUid
-	slot8 = slot5
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #1 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #2
+	if slot6 == "function" then
+	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 15-19, warpins: 2 ---
-	slot6 = type
-	slot8 = slot4
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #2 ---
-
-	if slot6 == "function" then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 20-22, warpins: 1 ---
+	--- BLOCK #4 20-22, warpins: 1 ---
 	slot6 = slot4
 	slot8 = true
 
 	slot6(slot8)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 23-24, warpins: 2 ---
-	slot6 = true
-
-	return slot6
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 25-32, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.resolveUGCImageDisplay
-	slot9 = slot1
-	slot10 = slot5
-	slot11 = slot2
-	slot12 = slot3
-	slot13 = slot4
+	--- BLOCK #5 23-24, warpins: 2 ---
+	slot6 = true
 
-	return slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+	return slot6
 	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot33 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot4 = getMarkShareTargetUid
-	slot6 = slot0
-	slot4 = slot4(slot6)
+slot29.applyMarkShareImage = slot30
+
+slot30 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = MarkShareViewCtrl
+	slot4 = slot4._platformHooks
 	--- END OF BLOCK #0 ---
 
-	slot5 = if not slot2 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot5 = ""
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot5 = slot4.applyMarkShareText
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-12, warpins: 2 ---
-	slot6 = string
-	slot6 = slot6.isNilOrEmpty
-	slot8 = slot4
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #2 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #3
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 13-17, warpins: 1 ---
-	slot6 = isSelfUid
-	slot8 = slot4
-	slot6 = slot6(slot8)
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot5 = slot4.applyMarkShareText
+	slot7 = slot0
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+
+	return slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	slot6 = if slot6 then
+	slot5 = if not slot2 then
 	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot5 = ""
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-21, warpins: 2 ---
+	slot6 = type
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	if slot6 == "function" then
+	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 18-22, warpins: 2 ---
-	slot6 = type
-	slot8 = slot3
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #4 ---
-
-	if slot6 == "function" then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 23-25, warpins: 1 ---
+	--- BLOCK #6 22-24, warpins: 1 ---
 	slot6 = slot3
 	slot8 = slot5
 
 	slot6(slot8)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-26, warpins: 2 ---
-	return slot5
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-33, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.resolveUGCNameDisplay
-	slot9 = slot1
-	slot10 = slot4
-	slot11 = slot5
-	slot12 = slot3
-
-	return slot6(slot8, slot9, slot10, slot11, slot12)
+	--- BLOCK #7 25-25, warpins: 2 ---
+	return slot5
 	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot34 = {}
-slot35 = slot0.ON_INFO_STAMP_BE_LIKED
-slot36 = {
-	"onInfoStampBeLiked",
-	true
-}
-slot34[slot35] = slot36
-slot35 = slot0.ON_PLAYER_HURT
-slot36 = {
-	"onPlayerHurt",
-	true
-}
-slot34[slot35] = slot36
-slot35 = slot0.INPUT_DEVICE_CHANGED
-slot36 = {
-	"onInputDeviceChanged",
-	true
-}
-slot34[slot35] = slot36
-slot27.messages = slot34
+slot29.applyMarkShareText = slot30
 
-slot34 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot6 = type
-	slot8 = slot5
-	slot6 = slot6(slot8)
+slot30 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = MarkShareViewCtrl
+	slot4 = slot4._platformHooks
 	--- END OF BLOCK #0 ---
 
-	if slot6 == "function" then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot6 = slot5
-	slot8 = true
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot5 = slot4.applyMarkShareName
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot5 = slot4.applyMarkShareName
+	slot7 = slot0
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+
+	return slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot5 = ""
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-21, warpins: 2 ---
+	slot6 = type
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	if slot6 == "function" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot6 = slot3
+	slot8 = slot5
 
 	slot6(slot8)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #2 9-10, warpins: 2 ---
-	slot6 = false
-
-	return slot6
-	--- END OF BLOCK #2 ---
+	--- BLOCK #7 25-25, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot27._resolveUGCImageDisplayImpl = slot34
+slot29.applyMarkShareName = slot30
 
-slot34 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot6 = MarkShareViewCtrl
-	slot6 = slot6._platformHooks
-	--- END OF BLOCK #0 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot7 = slot6.resolveUGCImageDisplay
-	--- END OF BLOCK #1 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-15, warpins: 1 ---
-	slot7 = slot6.resolveUGCImageDisplay
-	slot9 = slot0
-	slot10 = slot1
-	slot11 = slot2
-	slot12 = slot3
-	slot13 = slot4
-	slot14 = slot5
-
-	return slot7(slot9, slot10, slot11, slot12, slot13, slot14)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 16-24, warpins: 3 ---
-	slot9 = slot0
-	slot7 = slot0._resolveUGCImageDisplayImpl
-	slot10 = slot1
-	slot11 = slot2
-	slot12 = slot3
-	slot13 = slot4
-	slot14 = slot5
-
-	slot7(slot9, slot10, slot11, slot12, slot13, slot14)
-
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot27.resolveUGCImageDisplay = slot34
-
-slot34 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot5 = type
-	slot7 = slot4
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #0 ---
-
-	if slot5 == "function" then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot5 = slot4
-	slot7 = slot3
-
-	slot5(slot7)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-9, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot27._resolveUGCTextDisplayImpl = slot34
-
-slot34 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot5 = MarkShareViewCtrl
-	slot5 = slot5._platformHooks
-	--- END OF BLOCK #0 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot6 = slot5.resolveUGCTextDisplay
-	--- END OF BLOCK #1 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-14, warpins: 1 ---
-	slot6 = slot5.resolveUGCTextDisplay
-	slot8 = slot0
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
-	slot12 = slot4
-
-	return slot6(slot8, slot9, slot10, slot11, slot12)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 15-21, warpins: 3 ---
-	slot8 = slot0
-	slot6 = slot0._resolveUGCTextDisplayImpl
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
-	slot12 = slot4
-
-	return slot6(slot8, slot9, slot10, slot11, slot12)
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot27.resolveUGCTextDisplay = slot34
-
-slot34 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot5 = type
-	slot7 = slot4
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #0 ---
-
-	if slot5 == "function" then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot5 = slot4
-	slot7 = slot3
-
-	slot5(slot7)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-9, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot27._resolveUGCNameDisplayImpl = slot34
-
-slot34 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot5 = MarkShareViewCtrl
-	slot5 = slot5._platformHooks
-	--- END OF BLOCK #0 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot6 = slot5.resolveUGCNameDisplay
-	--- END OF BLOCK #1 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-14, warpins: 1 ---
-	slot6 = slot5.resolveUGCNameDisplay
-	slot8 = slot0
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
-	slot12 = slot4
-
-	return slot6(slot8, slot9, slot10, slot11, slot12)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 15-21, warpins: 3 ---
-	slot8 = slot0
-	slot6 = slot0._resolveUGCNameDisplayImpl
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
-	slot12 = slot4
-
-	return slot6(slot8, slot9, slot10, slot11, slot12)
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot27.resolveUGCNameDisplay = slot34
-
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -920,9 +402,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.onCreate = slot34
+slot29.onCreate = slot30
 
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -931,9 +413,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.onOpen = slot34
+slot29.onOpen = slot30
 
-slot34 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -942,9 +424,9 @@ slot34 = function(slot0)
 
 end
 
-slot27.onShow = slot34
+slot29.onShow = slot30
 
-slot34 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -953,9 +435,9 @@ slot34 = function(slot0)
 
 end
 
-slot27.onHide = slot34
+slot29.onHide = slot30
 
-slot34 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1115,10 +597,10 @@ slot34 = function(slot0)
 
 end
 
-slot27.destroy = slot34
+slot29.destroy = slot30
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-58, warpins: 1 ---
+slot30 = function(slot0)
+	--- BLOCK #0 1-74, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
 	slot3 = slot0.view
@@ -1229,6 +711,22 @@ slot34 = function(slot0)
 
 	slot2.luaClick = slot3
 	slot2 = slot0.view
+	slot2 = slot2.presetLikeBtn
+	slot3 = true
+	slot2.enabledIntervalClick = slot3
+	slot2 = slot0.view
+	slot2 = slot2.presetLikeBtn
+	slot3 = 3
+	slot2.intervalClickDuration = slot3
+	slot2 = slot0.view
+	slot2 = slot2.otherPlayerLikeBtn
+	slot3 = true
+	slot2.enabledIntervalClick = slot3
+	slot2 = slot0.view
+	slot2 = slot2.otherPlayerLikeBtn
+	slot3 = 3
+	slot2.intervalClickDuration = slot3
+	slot2 = slot0.view
 	slot2 = slot2.likeKeyHotKeyContent
 	slot4 = slot2
 	slot2 = slot2.SetHotKeyPaths
@@ -1267,9 +765,9 @@ slot34 = function(slot0)
 
 end
 
-slot27.addListener = slot34
+slot29.addListener = slot30
 
-slot34 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -1284,173 +782,444 @@ slot34 = function(slot0)
 
 end
 
-slot27.onDestroy = slot34
+slot29.onDestroy = slot30
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.markShare
-	slot1 = slot1.infoStampInfoTrans
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 7-26, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.interaction
-	slot2 = true
-	slot1.pause = slot2
+slot30 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.markShare
 	slot1 = slot1.aroundMarkInfoStampGroup
 	slot2 = slot0.infoStampId
 	slot1 = slot1[slot2]
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.markShare
-	slot4 = slot2
-	slot2 = slot2.inMyOwnKey
-	slot5 = slot0.infoStampId
-	slot2 = slot2(slot4, slot5)
+	slot2 = slot1.type
+	slot3 = Const
+	slot3 = slot3.MediaMarkerType
+	slot3 = slot3.SystemText
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-14, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 15-15, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-21, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot3 = slot3.infoStampInfoTrans
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 22-35, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.interaction
+	slot4 = true
+	slot3.pause = slot4
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot5 = slot3
+	slot3 = slot3.inMyOwnKey
+	slot6 = slot0.infoStampId
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 36-56, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot5 = slot3
+	slot3 = slot3.parseInfoStamp
+	slot6 = false
+	slot7 = slot0.infoStampId
+	slot3 = slot3(slot5, slot6, slot7)
+	slot6 = slot0
+	slot4 = slot0.renderMainPlayerPanel
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.txtIDUSDFText
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.uid
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #6 57-62, warpins: 1 ---
+	slot3 = slot1.type
+	slot4 = Const
+	slot4 = slot4.MediaMarkerType
+	slot4 = slot4.SystemText
+	--- END OF BLOCK #6 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 63-82, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot5 = slot3
+	slot3 = slot3.parseInfoStamp
+	slot6 = true
+	slot7 = slot0.infoStampId
+	slot3 = slot3(slot5, slot6, slot7)
+	slot6 = slot0
+	slot4 = slot0.renderPresetOrOtherPlayerPanel
+	slot7 = slot3
+	slot8 = true
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.txtIDUSDFText
+	slot7 = ""
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 83-106, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot5 = slot3
+	slot3 = slot3.parseInfoStamp
+	slot6 = false
+	slot7 = slot0.infoStampId
+	slot3 = slot3(slot5, slot6, slot7)
+	slot6 = slot0
+	slot4 = slot0.renderPresetOrOtherPlayerPanel
+	slot7 = slot3
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.txtIDUSDFText
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.getOtherPlayerUId
+	slot10 = slot0.infoStampId
+	MULTRES = slot7(slot9, slot10)
+
+	slot4(slot6, MULTRES)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 107-126, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot5 = slot3
+	slot3 = slot3.parseInfoStamp
+	slot6 = false
+	slot7 = slot0.infoStampId
+	slot3 = slot3(slot5, slot6, slot7)
+	slot6 = slot0
+	slot4 = slot0.renderMainPlayerPanel
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.txtIDUSDFText
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.uid
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 127-146, warpins: 4 ---
+	slot5 = slot0
+	slot3 = slot0._renderExpireInfo
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.enableUI
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot5 = slot3
+	slot3 = slot3.dealInfoStampVisible
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	slot3 = MarkShareViewCtrl
+	slot3 = slot3._platformHooks
+	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 147-149, warpins: 1 ---
+	slot4 = slot3.initCloseButtons
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 150-152, warpins: 1 ---
+	slot4 = slot3.initCloseButtons
+	slot6 = slot0
+
+	slot4(slot6)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 153-153, warpins: 3 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot29.Init = slot30
+
+slot30 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot1.isPermanent
+	--- END OF BLOCK #1 ---
+
+	if slot3 == 1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 27-39, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.markShare
-	slot4 = slot2
-	slot2 = slot2.parseInfoStamp
-	slot5 = false
-	slot6 = slot0.infoStampId
-	slot2 = slot2(slot4, slot5, slot6)
-	slot5 = slot0
-	slot3 = slot0.renderMainPlayerPanel
-	slot6 = slot2
+	--- BLOCK #2 6-13, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.root
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "Time"
+	slot7 = 0
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
+
+	return
 
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 40-45, warpins: 1 ---
-	slot2 = slot1.type
-	slot3 = Const
-	slot3 = slot3.MediaMarkerType
-	slot3 = slot3.SystemText
+	--- BLOCK #3 14-17, warpins: 2 ---
+	slot3 = SysConfigData
+	slot3 = slot3.MARKSHARE_ENCOURAGE_DURING_MAX
 	--- END OF BLOCK #3 ---
 
-	if slot2 == slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 46-59, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.markShare
-	slot4 = slot2
-	slot2 = slot2.parseInfoStamp
-	slot5 = true
-	slot6 = slot0.infoStampId
-	slot2 = slot2(slot4, slot5, slot6)
-	slot5 = slot0
-	slot3 = slot0.renderPresetOrOtherPlayerPanel
-	slot6 = slot2
-	slot7 = true
-
-	slot3(slot5, slot6, slot7)
-
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot3 = 10
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 60-73, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.markShare
-	slot4 = slot2
-	slot2 = slot2.parseInfoStamp
-	slot5 = false
-	slot6 = slot0.infoStampId
-	slot2 = slot2(slot4, slot5, slot6)
-	slot5 = slot0
-	slot3 = slot0.renderPresetOrOtherPlayerPanel
-	slot6 = slot2
-	slot7 = false
-
-	slot3(slot5, slot6, slot7)
-
+	--- BLOCK #5 19-21, warpins: 2 ---
+	slot4 = slot1.createTs
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 74-85, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.markShare
-	slot3 = slot1
-	slot1 = slot1.parseInfoStamp
-	slot4 = false
-	slot5 = slot0.infoStampId
-	slot1 = slot1(slot3, slot4, slot5)
-	slot4 = slot0
-	slot2 = slot0.renderMainPlayerPanel
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #6 22-22, warpins: 1 ---
+	slot4 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 86-97, warpins: 4 ---
-	slot3 = slot0
-	slot1 = slot0.enableUI
-	slot4 = false
+	--- BLOCK #7 23-32, warpins: 2 ---
+	slot5 = Const
+	slot5 = slot5.SECONDS_ONE_DAY
+	slot5 = slot3 * slot5
+	slot4 = slot4 + slot5
+	slot5 = Time
+	slot5 = slot5.secondCache
+	slot5 = slot4 - slot5
+	slot6 = 0
+	--- END OF BLOCK #7 ---
 
-	slot1(slot3, slot4)
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.markShare
-	slot3 = slot1
-	slot1 = slot1.dealInfoStampVisible
-	slot4 = false
 
-	slot1(slot3, slot4)
+	--- BLOCK #8 33-49, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.root
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Time"
+	slot10 = 2
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot0.view
+	slot8 = slot8.txtNameUSDFText
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = "MARK_SHARE_EXPIRED"
+	MULTRES = slot9(slot11)
+
+	slot6(slot8, MULTRES)
 
 	return
-	--- END OF BLOCK #7 ---
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 50-76, warpins: 2 ---
+	slot6 = slot0.view
+	slot6 = slot6.root
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Time"
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = math
+	slot6 = slot6.ceil
+	slot8 = Const
+	slot8 = slot8.SECONDS_ONE_DAY
+	slot8 = slot5 / slot8
+	slot6 = slot6(slot8)
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot0.view
+	slot9 = slot9.txtNameUSDFText
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "MARK_SHARE_EXPIRE_DAYS"
+	slot12 = slot12(slot14)
+	slot13 = slot6
+	MULTRES = slot10(slot12, slot13)
+
+	slot7(slot9, MULTRES)
+
+	return
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot27.Init = slot34
+slot29._renderExpireInfo = slot30
 
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1468,7 +1237,7 @@ slot34 = function(slot0, slot1)
 	slot4 = slot2
 	slot2 = slot2.checkUIShow
 	slot5 = UIConst
-	slot5 = slot5.UI_ID_HUD
+	slot5 = slot5.UI_ID_HUD_V2
 	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #1 ---
 
@@ -1518,7 +1287,7 @@ slot34 = function(slot0, slot1)
 	slot4 = slot2
 	slot2 = slot2.checkUIShow
 	slot5 = UIConst
-	slot5 = slot5.UI_ID_HUD
+	slot5 = slot5.UI_ID_HUD_V2
 	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #4 ---
 
@@ -1569,9 +1338,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.enableUI = slot34
+slot29.enableUI = slot30
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
@@ -1582,114 +1351,123 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot8 = slot2
 
 	slot9 = function(slot0)
-		--- BLOCK #0 1-74, warpins: 1 ---
+		--- BLOCK #0 1-81, warpins: 1 ---
 		slot1 = self
 		slot1.curEnt = slot0
-		slot1 = self
-		slot1 = slot1.curEnt
-		slot1 = slot1.eModel
-		slot1 = slot1.transform
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.markShare
+		slot1 = slot1.infoStampInfoTrans
+		slot1 = slot1.position
+		slot2 = self
+		slot2 = slot2.curEnt
+		slot2 = slot2.eModel
+		slot4 = slot2
+		slot2 = slot2.SetTransformPosition
+		slot5 = slot1.x
+		slot6 = slot1.y
+		slot7 = slot1.z
+
+		slot2(slot4, slot5, slot6, slot7)
+
+		slot2 = EModelUtils
+		slot2 = slot2.setAgentRotation
+		slot4 = self
+		slot4 = slot4.curEnt
+		slot5 = rot
+		slot6 = true
+
+		slot2(slot4, slot5, slot6)
+
+		slot2 = self
+		slot3 = self
+		slot3 = slot3.model
+		slot5 = slot3
+		slot3 = slot3.getContentAnimationData
+		slot6 = self
+		slot6 = slot6.infoStampId
+		slot3 = slot3(slot5, slot6)
+		slot2.state = slot3
 		slot2 = pg
 		slot2 = slot2.game
 		slot2 = slot2.markShare
-		slot2 = slot2.infoStampInfoTrans
-		slot2 = slot2.position
-		slot1.position = slot2
-		slot1 = EModelUtils
-		slot1 = slot1.setAgentRotation
-		slot3 = self
-		slot3 = slot3.curEnt
-		slot4 = rot
-		slot5 = true
-
-		slot1(slot3, slot4, slot5)
-
-		slot1 = self
-		slot2 = self
-		slot2 = slot2.model
+		slot2 = slot2.avatarHelper
 		slot4 = slot2
-		slot2 = slot2.getContentAnimationData
-		slot5 = self
-		slot5 = slot5.infoStampId
-		slot2 = slot2(slot4, slot5)
-		slot1.state = slot2
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.markShare
-		slot1 = slot1.avatarHelper
-		slot3 = slot1
-		slot1 = slot1.animationTool
-		slot4 = self
-		slot4 = slot4.curEnt
-		slot5 = self
-		slot5 = slot5.state
-		slot6 = true
-
-		slot1(slot3, slot4, slot5, slot6)
-
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.markShare
-		slot1 = slot1.bubbleHelper
-		slot3 = slot1
-		slot1 = slot1.setPos
-		slot4 = self
-		slot4 = slot4.curEnt
-		slot4 = slot4.eModel
-		slot4 = slot4.transform
-		slot4 = slot4.position
+		slot2 = slot2.animationTool
 		slot5 = self
 		slot5 = slot5.curEnt
-		slot5 = slot5.eModel
-		slot5 = slot5.transform
-		slot5 = slot5.up
-		slot6 = SysConfigData
-		slot6 = slot6.INFO_STAMP_BUBBLE_HEIGHT
-		slot5 = slot5 * slot6
-		slot4 = slot4 + slot5
-		slot5 = true
+		slot6 = self
+		slot6 = slot6.state
+		slot7 = true
 
-		slot1(slot3, slot4, slot5)
+		slot2(slot4, slot5, slot6, slot7)
 
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.markShare
-		slot1 = slot1.bubbleHelper
-		slot3 = slot1
-		slot1 = slot1.changeType
-		slot4 = false
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.markShare
+		slot2 = slot2.bubbleHelper
+		slot4 = slot2
+		slot2 = slot2.setPos
+		slot5 = Vector3
+		slot7 = self
+		slot7 = slot7.curEnt
+		slot7 = slot7.eModel
+		slot9 = slot7
+		slot7 = slot7.GetTransformPosition
+		MULTRES = slot7(slot9)
+		slot5 = slot5(MULTRES)
+		slot6 = self
+		slot6 = slot6.curEnt
+		slot6 = slot6.eModel
+		slot6 = slot6.transform
+		slot6 = slot6.up
+		slot7 = SysConfigData
+		slot7 = slot7.INFO_STAMP_BUBBLE_HEIGHT
+		slot6 = slot6 * slot7
+		slot5 = slot5 + slot6
+		slot6 = true
 
-		slot1(slot3, slot4)
+		slot2(slot4, slot5, slot6)
 
-		slot1 = self
-		slot1 = slot1.hideEnt
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.markShare
+		slot2 = slot2.bubbleHelper
+		slot4 = slot2
+		slot2 = slot2.changeType
+		slot5 = false
+
+		slot2(slot4, slot5)
+
+		slot2 = self
+		slot2 = slot2.hideEnt
 		--- END OF BLOCK #0 ---
 
-		slot1 = if slot1 then
+		slot2 = if slot2 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 75-83, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.curEnt
-		slot3 = slot1
-		slot1 = slot1.setVisible
-		slot4 = ClientConst
-		slot4 = slot4.MODEL_VISIBLE_KEY
-		slot4 = slot4.PHOTO
-		slot5 = false
+		--- BLOCK #1 82-90, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curEnt
+		slot4 = slot2
+		slot2 = slot2.setVisible
+		slot5 = ClientConst
+		slot5 = slot5.MODEL_VISIBLE_KEY
+		slot5 = slot5.PHOTO
+		slot6 = false
 
-		slot1(slot3, slot4, slot5)
+		slot2(slot4, slot5, slot6)
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 84-84, warpins: 2 ---
+		--- BLOCK #2 91-91, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -1715,9 +1493,714 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.loadAvatar = slot34
+slot29.loadAvatar = slot30
 
-slot34 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = tostring
+	slot4 = slot1.txtClips
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot4 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot2 = slot2(slot4)
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot1.txtCustom
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-19, warpins: 1 ---
+	slot3 = string
+	slot3 = slot3.format
+	slot5 = "%s\n%s"
+	slot6 = slot2
+	slot7 = slot1.txtCustom
+	slot3 = slot3(slot5, slot6, slot7)
+	slot2 = slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-20, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot29.getMarkShareReportText = slot30
+
+slot30 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot4 = slot3
+	slot6 = tostring
+	--- END OF BLOCK #1 ---
+
+	slot8 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot8 = ""
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-14, warpins: 2 ---
+	MULTRES = slot6(slot8)
+
+	slot4(MULTRES)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-26, warpins: 1 ---
+	slot4 = ServiceUtils
+	slot4 = slot4.callService
+	slot6 = "KvService"
+	slot7 = "getPictureUrl"
+	slot8 = {}
+	slot8[1] = slot1
+
+	slot9 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = tostring
+		slot4 = fallbackImgUrl
+		--- END OF BLOCK #0 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		slot4 = ""
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-8, warpins: 2 ---
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #3 9-11, warpins: 1 ---
+		slot3 = slot0.status
+		--- END OF BLOCK #3 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #4 12-13, warpins: 1 ---
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 14-18, warpins: 1 ---
+		slot3 = type
+		slot5 = slot1.value
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #5 ---
+
+		if slot3 == "string" then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #6 19-29, warpins: 1 ---
+		slot3 = string
+		slot3 = slot3.sub
+		slot5 = slot1.value
+		slot6 = 9
+		slot3 = slot3(slot5, slot6)
+		slot4 = string
+		slot4 = slot4.isNilOrEmpty
+		slot6 = slot3
+		slot4 = slot4(slot6)
+		--- END OF BLOCK #6 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 30-32, warpins: 1 ---
+		slot4 = "https://"
+		slot5 = slot3
+		slot2 = slot4 .. slot5
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 33-36, warpins: 6 ---
+		slot3 = callback
+		slot5 = slot2
+
+		slot3(slot5)
+
+		return
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot10 = {}
+	slot10.hint = slot1
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-27, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot29.getMarkShareReportImageUrl = slot30
+
+slot30 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot4 = slot2.isSubmitting
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #3 7-8, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 9-10, warpins: 1 ---
+	slot4 = true
+	slot2.isSubmitting = slot4
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-13, warpins: 2 ---
+	slot4 = tostring
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 14-16, warpins: 1 ---
+	slot6 = slot2.imgKey
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 17-17, warpins: 2 ---
+	slot6 = ""
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 18-21, warpins: 2 ---
+	slot4 = slot4(slot6)
+	slot5 = tostring
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 22-24, warpins: 1 ---
+	slot7 = slot2.imgUrl
+	--- END OF BLOCK #9 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 25-25, warpins: 2 ---
+	slot7 = ""
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 26-35, warpins: 2 ---
+	slot5 = slot5(slot7)
+	slot1.imgKey = slot4
+	slot8 = slot0
+	slot6 = slot0.getMarkShareReportImageUrl
+	slot9 = slot4
+	slot10 = slot5
+
+	slot11 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = imageContext
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-6, warpins: 1 ---
+		slot1 = imageContext
+		slot2 = false
+		slot1.isSubmitting = slot2
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-10, warpins: 2 ---
+		slot1 = reportInfo
+		slot2 = tostring
+		--- END OF BLOCK #2 ---
+
+		slot4 = if not slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 11-11, warpins: 1 ---
+		slot4 = ""
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 12-33, warpins: 2 ---
+		slot2 = slot2(slot4)
+		slot1.imgUrl = slot2
+		slot1 = pg
+		slot1 = slot1.me
+		slot3 = slot1
+		slot1 = slot1.reportChat
+		slot4 = reportInfo
+
+		slot1(slot3, slot4)
+
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot1 = slot1.tips
+		slot3 = slot1
+		slot1 = slot1.showTextTip
+		slot4 = pg
+		slot4 = slot4.getGameString
+		slot6 = "ACCUSATION_CHAT_SUCCESS"
+		MULTRES = slot4(slot6)
+
+		slot1(slot3, MULTRES)
+
+		slot1 = accusationCtrl
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 34-37, warpins: 1 ---
+		slot1 = accusationCtrl
+		slot3 = slot1
+		slot1 = slot1.dismiss
+
+		slot1(slot3)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 38-38, warpins: 2 ---
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 36-36, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot29.submitMarkShareReport = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.markShare
+	slot2 = slot2.aroundMarkInfoStampGroup
+	slot3 = slot0.infoStampId
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot3 = tostring
+	slot5 = slot2.uid
+	--- END OF BLOCK #2 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot5 = ""
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-21, warpins: 2 ---
+	slot3 = slot3(slot5)
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #6 23-25, warpins: 1 ---
+	slot4 = slot2.content
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-26, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 27-29, warpins: 2 ---
+	slot5 = slot4.photoTemplate
+	--- END OF BLOCK #8 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 30-30, warpins: 1 ---
+	slot5 = {}
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 31-34, warpins: 2 ---
+	slot6 = tostring
+	slot8 = slot5.imgKey
+	--- END OF BLOCK #10 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 35-35, warpins: 1 ---
+	slot8 = ""
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 36-40, warpins: 2 ---
+	slot6 = slot6(slot8)
+	slot7 = tostring
+	slot9 = slot4.imgUrl
+	--- END OF BLOCK #12 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 41-41, warpins: 1 ---
+	slot9 = ""
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 42-46, warpins: 2 ---
+	slot7 = slot7(slot9)
+	slot8 = tostring
+	slot10 = slot1.playerName
+	--- END OF BLOCK #14 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 47-47, warpins: 1 ---
+	slot10 = ""
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 48-87, warpins: 2 ---
+	slot8 = slot8(slot10)
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot11 = slot9
+	slot9 = slot9.open
+	slot12 = UIConst
+	slot12 = slot12.UI_ID_ACCUSATION
+	slot13 = {}
+	slot13.playerName = slot8
+	slot13.playerId = slot3
+	slot16 = slot0
+	slot14 = slot0.getMarkShareReportText
+	slot17 = slot1
+	slot14 = slot14(slot16, slot17)
+	slot13.reportText = slot14
+	slot14 = {}
+	slot14.imgKey = slot6
+	slot14.imgUrl = slot7
+	slot13.reportImageContext = slot14
+
+	slot14 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.submitMarkShareReport
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
+
+		slot3(slot5, slot6, slot7, slot8)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot13.reportSubmitHandler = slot14
+	slot14 = {
+		detailType = "media_marker"
+	}
+	slot14.uid = slot3
+	slot14.name = slot8
+	slot14.character = slot8
+	slot15 = tostring
+	slot17 = slot0.infoStampId
+	slot15 = slot15(slot17)
+	slot14.msgId = slot15
+	slot15 = tostring
+	slot17 = slot0.infoStampId
+	slot15 = slot15(slot17)
+	slot14.markerId = slot15
+	slot14.imgKey = slot6
+	slot14.imgUrl = slot7
+	slot13.reportInfo = slot14
+
+	slot9(slot11, slot12, slot13)
+
+	return
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 88-88, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 89-89, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot29.openMarkShareReport = slot30
+
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.root
@@ -2051,7 +2534,7 @@ slot34 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #19 143-157, warpins: 1 ---
+	--- BLOCK #19 143-170, warpins: 1 ---
 	slot3 = ClientTextUtils
 	slot3 = slot3.setText
 	slot5 = slot0.view
@@ -2059,6 +2542,37 @@ slot34 = function(slot0, slot1, slot2)
 	slot6 = slot1.likes
 
 	slot3(slot5, slot6)
+
+	slot3 = slot0.view
+	slot3 = slot3.btnReportUButton
+
+	slot4 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.openMarkShareReport
+		slot3 = parsedInfo
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot3.luaClick = slot4
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.textReportUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "ACCUSATION_BTN"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
 
 	slot3 = pg
 	slot3 = slot3.game
@@ -2076,7 +2590,7 @@ slot34 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #20 158-169, warpins: 1 ---
+	--- BLOCK #20 171-182, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.root
 	slot5 = slot3
@@ -2095,7 +2609,7 @@ slot34 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 170-184, warpins: 1 ---
+	--- BLOCK #21 183-197, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.root
 	slot5 = slot3
@@ -2144,7 +2658,7 @@ slot34 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 185-188, warpins: 2 ---
+	--- BLOCK #22 198-201, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.dealNonSysPanel
 	slot6 = slot1
@@ -2156,7 +2670,7 @@ slot34 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 189-190, warpins: 2 ---
+	--- BLOCK #23 202-203, warpins: 2 ---
 	return
 	--- END OF BLOCK #23 ---
 
@@ -2164,9 +2678,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot27.renderPresetOrOtherPlayerPanel = slot34
+slot29.renderPresetOrOtherPlayerPanel = slot30
 
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.root
@@ -2474,9 +2988,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.renderMainPlayerPanel = slot34
+slot29.renderMainPlayerPanel = slot30
 
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.listContentUList
@@ -2538,7 +3052,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #1 9-28, warpins: 1 ---
+		--- BLOCK #1 9-29, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -2547,13 +3061,37 @@ slot34 = function(slot0, slot1)
 		slot4 = slot3.GetRefValue
 		slot7 = "txtContentUSDFText"
 		slot4 = slot4(slot6, slot7)
-		slot5 = bindMarkShareText
-		slot7 = self
+		slot5 = self
+		slot7 = slot5
+		slot5 = slot5.applyMarkShareText
 		slot8 = slot4
 		slot9 = slot2.txtClips
 
 		slot10 = function(slot0)
 			--- BLOCK #0 1-6, warpins: 1 ---
+			slot1 = UIUtils
+			slot1 = slot1.IsNull
+			slot3 = txtContentUSDFText
+			slot1 = slot1(slot3)
+
+			--- END OF BLOCK #0 ---
+
+			slot1 = if slot1 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 7-7, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 8-13, warpins: 2 ---
 			slot1 = ClientTextUtils
 			slot1 = slot1.setText
 			slot3 = txtContentUSDFText
@@ -2562,7 +3100,7 @@ slot34 = function(slot0, slot1)
 			slot1(slot3, slot4)
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #2 ---
 
 
 
@@ -2582,7 +3120,7 @@ slot34 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #2 29-31, warpins: 1 ---
+		--- BLOCK #2 30-32, warpins: 1 ---
 		slot3 = slot2.tIndex
 		--- END OF BLOCK #2 ---
 
@@ -2593,7 +3131,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #3 32-50, warpins: 1 ---
+		--- BLOCK #3 33-51, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -2620,7 +3158,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #4 51-58, warpins: 1 ---
+		--- BLOCK #4 52-59, warpins: 1 ---
 		slot9 = slot0
 		slot7 = slot0.TryChangePage
 		slot10 = "isImage"
@@ -2659,7 +3197,7 @@ slot34 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-		--- BLOCK #5 59-61, warpins: 1 ---
+		--- BLOCK #5 60-62, warpins: 1 ---
 		slot7 = slot2.picture
 		--- END OF BLOCK #5 ---
 
@@ -2670,7 +3208,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #6 62-73, warpins: 1 ---
+		--- BLOCK #6 63-75, warpins: 1 ---
 		slot9 = slot0
 		slot7 = slot0.TryChangePage
 		slot10 = "isImage"
@@ -2678,8 +3216,9 @@ slot34 = function(slot0, slot1)
 
 		slot7(slot9, slot10, slot11)
 
-		slot7 = bindMarkShareImage
-		slot9 = self
+		slot7 = self
+		slot9 = slot7
+		slot7 = slot7.applyMarkShareImage
 		slot10 = slot0
 		slot11 = slot5
 		slot12 = slot0
@@ -2769,13 +3308,13 @@ slot34 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 74-74, warpins: 3 ---
+		--- BLOCK #7 76-76, warpins: 3 ---
 		--- END OF BLOCK #7 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #8 75-77, warpins: 1 ---
+		--- BLOCK #8 77-79, warpins: 1 ---
 		slot3 = slot2.tIndex
 		--- END OF BLOCK #8 ---
 
@@ -2786,7 +3325,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #9 78-117, warpins: 1 ---
+		--- BLOCK #9 80-119, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -2956,7 +3495,7 @@ slot34 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #10 118-120, warpins: 1 ---
+		--- BLOCK #10 120-122, warpins: 1 ---
 		slot3 = slot2.tIndex
 		--- END OF BLOCK #10 ---
 
@@ -2967,7 +3506,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #11 121-175, warpins: 1 ---
+		--- BLOCK #11 123-177, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -3033,7 +3572,7 @@ slot34 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #12 176-178, warpins: 1 ---
+		--- BLOCK #12 178-180, warpins: 1 ---
 		slot3 = slot2.tIndex
 		--- END OF BLOCK #12 ---
 
@@ -3044,7 +3583,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #13 179-200, warpins: 1 ---
+		--- BLOCK #13 181-202, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -3074,14 +3613,14 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #14 201-201, warpins: 1 ---
+		--- BLOCK #14 203-203, warpins: 1 ---
 		slot7 = {}
 		--- END OF BLOCK #14 ---
 
 		FLOW; TARGET BLOCK #15
 
 
-		--- BLOCK #15 202-222, warpins: 2 ---
+		--- BLOCK #15 204-224, warpins: 2 ---
 		slot8 = slot7.iconName
 		slot9 = slot7.name
 		slot12 = slot4
@@ -3119,7 +3658,7 @@ slot34 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #16 223-225, warpins: 1 ---
+		--- BLOCK #16 225-227, warpins: 1 ---
 		slot3 = slot2.tIndex
 		--- END OF BLOCK #16 ---
 
@@ -3130,7 +3669,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #17 226-262, warpins: 1 ---
+		--- BLOCK #17 228-264, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -3175,14 +3714,14 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #18 263-263, warpins: 1 ---
+		--- BLOCK #18 265-265, warpins: 1 ---
 		slot8 = slot2.courseName
 		--- END OF BLOCK #18 ---
 
 		FLOW; TARGET BLOCK #19
 
 
-		--- BLOCK #19 264-266, warpins: 2 ---
+		--- BLOCK #19 266-268, warpins: 2 ---
 		slot10 = slot2.courseDesc
 		--- END OF BLOCK #19 ---
 
@@ -3193,14 +3732,14 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #20 267-267, warpins: 1 ---
+		--- BLOCK #20 269-269, warpins: 1 ---
 		slot9 = slot2.courseDesc
 		--- END OF BLOCK #20 ---
 
 		FLOW; TARGET BLOCK #21
 
 
-		--- BLOCK #21 268-301, warpins: 2 ---
+		--- BLOCK #21 270-303, warpins: 2 ---
 		slot10 = ClientTextUtils
 		slot10 = slot10.setText
 		slot12 = slot4
@@ -3224,117 +3763,152 @@ slot34 = function(slot0, slot1)
 		slot10(slot12, slot13)
 
 		slot10 = function()
-			--- BLOCK #0 1-16, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.global
-			slot0 = slot0.showConfirmMsgRaw
+			--- BLOCK #0 1-6, warpins: 1 ---
+			slot0 = GuideCourseData
+			slot1 = data
+			slot1 = slot1.course
+			slot0 = slot0[slot1]
+
+			--- END OF BLOCK #0 ---
+
+			if slot0 == nil then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 7-7, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 8-12, warpins: 2 ---
+			slot1 = pg
+			slot1 = slot1.me
+			slot1 = slot1.unlockCourseIds
+			--- END OF BLOCK #2 ---
+
+			if slot1 ~= nil then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 13-20, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.me
+			slot1 = slot1.unlockCourseIds
+			slot2 = data
+			slot2 = slot2.course
+			slot1 = slot1[slot2]
+			--- END OF BLOCK #3 ---
+
+			if slot1 ~= true then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 21-22, warpins: 2 ---
+			slot1 = false
+			--- END OF BLOCK #4 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+			--- BLOCK #5 23-23, warpins: 1 ---
+			slot1 = true
+			--- END OF BLOCK #5 ---
+
+			FLOW; TARGET BLOCK #6
+
+
+			--- BLOCK #6 24-25, warpins: 2 ---
+			--- END OF BLOCK #6 ---
+
+			slot1 = if not slot1 then
+			JUMP TO BLOCK #7
+			else
+			JUMP TO BLOCK #8
+			end
+
+
+			--- BLOCK #7 26-32, warpins: 1 ---
 			slot2 = pg
-			slot2 = slot2.getGameString
-			slot4 = "WARNING"
-			slot2 = slot2(slot4)
-			slot3 = pg
-			slot3 = slot3.getGameString
-			slot5 = "ENSURE_TO_ENTER_COURSE"
-			slot3 = slot3(slot5)
+			slot2 = slot2.me
+			slot4 = slot2
+			slot2 = slot2.unlockCourse
+			slot5 = data
+			slot5 = slot5.course
 
-			slot4 = function()
-				--- BLOCK #0 1-7, warpins: 1 ---
-				slot0 = pg
-				slot0 = slot0.me
-				slot2 = slot0
-				slot0 = slot0.isInTeam
-				slot0 = slot0(slot2)
-				--- END OF BLOCK #0 ---
+			slot2(slot4, slot5)
 
-				slot0 = if slot0 then
-				JUMP TO BLOCK #1
-				else
-				JUMP TO BLOCK #2
-				end
+			--- END OF BLOCK #7 ---
+
+			FLOW; TARGET BLOCK #8
 
 
-				--- BLOCK #1 8-19, warpins: 1 ---
-				slot0 = pg
-				slot0 = slot0.global
-				slot0 = slot0.ui
-				slot0 = slot0.tips
-				slot2 = slot0
-				slot0 = slot0.showTextTip
-				slot3 = pg
-				slot3 = slot3.getGameString
-				slot5 = "ENTER_COURSE_TEAM"
-				MULTRES = slot3(slot5)
+			--- BLOCK #8 33-45, warpins: 2 ---
+			slot2 = pg
+			slot2 = slot2.global
+			slot2 = slot2.ui
+			slot4 = slot2
+			slot2 = slot2.open
+			slot5 = UIConst
+			slot5 = slot5.UI_ID_QUEST_COURSE
+			slot6 = {
+				fromMarkShare = true
+			}
+			slot7 = data
+			slot7 = slot7.course
+			slot6.courseId = slot7
+			--- END OF BLOCK #8 ---
 
-				slot0(slot2, MULTRES)
-
-				--- END OF BLOCK #1 ---
-
-				UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-				--- BLOCK #2 20-28, warpins: 1 ---
-				slot0 = ClientUtils
-				slot0 = slot0.playTeleportDissolveEffectAndTeleportByFunc
-
-				slot2 = function()
-					--- BLOCK #0 1-10, warpins: 1 ---
-					slot0 = pg
-					slot0 = slot0.me
-					slot2 = slot0
-					slot0 = slot0.startCourse
-					slot3 = data
-					slot3 = slot3.course
-					slot4 = nil
-					slot5 = {
-						muteBackToCoursePanel = true
-					}
-
-					slot0(slot2, slot3, slot4, slot5)
-
-					return
-					--- END OF BLOCK #0 ---
-
-
-
-				end
-
-				slot0(slot2)
-
-				slot0 = self
-				slot2 = slot0
-				slot0 = slot0.closePanel
-
-				slot0(slot2)
-
-				return
-				--- END OF BLOCK #2 ---
-
-				FLOW; TARGET BLOCK #3
-
-
-				--- BLOCK #3 29-29, warpins: 2 ---
-				return
-				--- END OF BLOCK #3 ---
-
-
-
+			slot1 = if not slot1 then
+			JUMP TO BLOCK #9
+			else
+			JUMP TO BLOCK #10
 			end
 
-			slot5 = false
 
-			slot6 = function()
-				--- BLOCK #0 1-1, warpins: 1 ---
-				return
-				--- END OF BLOCK #0 ---
+			--- BLOCK #9 46-49, warpins: 1 ---
+			slot7 = data
+			slot7 = slot7.course
+			--- END OF BLOCK #9 ---
 
-
-
+			slot7 = if not slot7 then
+			JUMP TO BLOCK #10
+			else
+			JUMP TO BLOCK #11
 			end
 
-			slot0(slot2, slot3, slot4, slot5, slot6)
+
+			--- BLOCK #10 50-50, warpins: 2 ---
+			slot7 = nil
+			--- END OF BLOCK #10 ---
+
+			FLOW; TARGET BLOCK #11
+
+
+			--- BLOCK #11 51-57, warpins: 2 ---
+			slot6.forceUnlockCourseId = slot7
+
+			slot2(slot4, slot5, slot6)
+
+			slot2 = self
+			slot4 = slot2
+			slot2 = slot2.closePanel
+
+			slot2(slot4)
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #11 ---
 
 
 
@@ -3393,7 +3967,7 @@ slot34 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #22 302-304, warpins: 1 ---
+		--- BLOCK #22 304-306, warpins: 1 ---
 		slot3 = slot2.tIndex
 		--- END OF BLOCK #22 ---
 
@@ -3404,7 +3978,7 @@ slot34 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #23 305-321, warpins: 1 ---
+		--- BLOCK #23 307-323, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -3446,7 +4020,7 @@ slot34 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #24
 
 
-		--- BLOCK #24 322-323, warpins: 8 ---
+		--- BLOCK #24 324-325, warpins: 8 ---
 		return
 		--- END OF BLOCK #24 ---
 
@@ -3470,9 +4044,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.dealSysPanel = slot34
+slot29.dealSysPanel = slot30
 
-slot34 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-56, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.TryChangePage
@@ -3963,9 +4537,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot27.renderPanelTipList = slot34
+slot29.renderPanelTipList = slot30
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = function(slot0, slot1)
 		--- BLOCK #0 1-85, warpins: 1 ---
@@ -4144,7 +4718,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot14 = if slot14 then
 		JUMP TO BLOCK #8
 		else
-		JUMP TO BLOCK #11
+		JUMP TO BLOCK #18
 		end
 
 
@@ -4156,43 +4730,119 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot15 = if slot15 then
 		JUMP TO BLOCK #9
 		else
-		JUMP TO BLOCK #11
+		JUMP TO BLOCK #18
 		end
 
 
-		--- BLOCK #9 121-126, warpins: 1 ---
-		slot15 = PlayerSkillData
-		slot15 = slot15[slot14]
-		slot15 = slot15[1]
-		slot15 = slot15.video
+		--- BLOCK #9 121-131, warpins: 1 ---
+		slot15 = nil
+		slot16 = pg
+		slot16 = slot16.me
+		slot18 = slot16
+		slot16 = slot16.getConfigData
+		slot16 = slot16(slot18)
+		slot17 = pg
+		slot17 = slot17.me
+		slot17 = slot17.gender
 		--- END OF BLOCK #9 ---
 
-		slot15 = if slot15 then
+		slot17 = if not slot17 then
 		JUMP TO BLOCK #10
 		else
 		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #10 127-136, warpins: 1 ---
-		slot17 = slot1
-		slot15 = slot1.TryChangePage
-		slot18 = "video"
-		slot19 = 1
-
-		slot15(slot17, slot18, slot19)
-
-		slot15 = PlayerSkillData
-		slot15 = slot15[slot14]
-		slot15 = slot15[1]
-		slot15 = slot15.video
-		slot12.resID = slot15
+		--- BLOCK #10 132-132, warpins: 1 ---
+		slot17 = slot16.gender
 		--- END OF BLOCK #10 ---
 
 		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #11 137-149, warpins: 4 ---
+		--- BLOCK #11 133-134, warpins: 2 ---
+		--- END OF BLOCK #11 ---
+
+		if slot17 == 1 then
+		JUMP TO BLOCK #12
+		else
+		JUMP TO BLOCK #13
+		end
+
+
+		--- BLOCK #12 135-139, warpins: 1 ---
+		slot18 = PlayerSkillData
+		slot18 = slot18[slot14]
+		slot18 = slot18[1]
+		slot15 = slot18.videoM
+		--- END OF BLOCK #12 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+		--- BLOCK #13 140-143, warpins: 1 ---
+		slot18 = PlayerSkillData
+		slot18 = slot18[slot14]
+		slot18 = slot18[1]
+		slot15 = slot18.videoF
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 144-149, warpins: 2 ---
+		slot18 = string
+		slot18 = slot18.isNilOrEmpty
+		slot20 = slot15
+		slot18 = slot18(slot20)
+		--- END OF BLOCK #14 ---
+
+		slot18 = if slot18 then
+		JUMP TO BLOCK #15
+		else
+		JUMP TO BLOCK #16
+		end
+
+
+		--- BLOCK #15 150-153, warpins: 1 ---
+		slot18 = PlayerSkillData
+		slot18 = slot18[slot14]
+		slot18 = slot18[1]
+		slot15 = slot18.video
+		--- END OF BLOCK #15 ---
+
+		FLOW; TARGET BLOCK #16
+
+
+		--- BLOCK #16 154-159, warpins: 2 ---
+		slot18 = string
+		slot18 = slot18.isNilOrEmpty
+		slot20 = slot15
+		slot18 = slot18(slot20)
+		--- END OF BLOCK #16 ---
+
+		slot18 = if not slot18 then
+		JUMP TO BLOCK #17
+		else
+		JUMP TO BLOCK #18
+		end
+
+
+		--- BLOCK #17 160-165, warpins: 1 ---
+		slot20 = slot1
+		slot18 = slot1.TryChangePage
+		slot21 = "video"
+		slot22 = 1
+
+		slot18(slot20, slot21, slot22)
+
+		slot12.resID = slot15
+		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #18
+
+
+		--- BLOCK #18 166-178, warpins: 4 ---
 		slot15 = ClientTextUtils
 		slot15 = slot15.setText
 		slot17 = slot11.content
@@ -4208,16 +4858,16 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot15(slot17, slot18)
 
 		slot15 = idx
-		--- END OF BLOCK #11 ---
+		--- END OF BLOCK #18 ---
 
 		if slot15 == 3 then
-		JUMP TO BLOCK #12
+		JUMP TO BLOCK #19
 		else
-		JUMP TO BLOCK #13
+		JUMP TO BLOCK #20
 		end
 
 
-		--- BLOCK #12 150-155, warpins: 1 ---
+		--- BLOCK #19 179-184, warpins: 1 ---
 		slot17 = slot1
 		slot15 = slot1.TryChangePage
 		slot18 = "SkillType"
@@ -4225,12 +4875,12 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 		slot15(slot17, slot18, slot19)
 
-		--- END OF BLOCK #12 ---
+		--- END OF BLOCK #19 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #18
+		UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-		--- BLOCK #13 156-201, warpins: 1 ---
+		--- BLOCK #20 185-230, warpins: 1 ---
 		slot17 = slot1
 		slot15 = slot1.TryChangePage
 		slot18 = "SkillType"
@@ -4311,28 +4961,28 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot17 = key
 		slot16 = slot16[slot17]
 		slot16 = slot16.tags
-		--- END OF BLOCK #13 ---
+		--- END OF BLOCK #20 ---
 
 		slot16 = if slot16 then
-		JUMP TO BLOCK #14
+		JUMP TO BLOCK #21
 		else
-		JUMP TO BLOCK #17
+		JUMP TO BLOCK #24
 		end
 
 
-		--- BLOCK #14 202-208, warpins: 1 ---
+		--- BLOCK #21 231-237, warpins: 1 ---
 		slot16 = pairs
 		slot18 = AbilityParamData
 		slot19 = key
 		slot18 = slot18[slot19]
 		slot18 = slot18.tags
 		slot16, slot17, slot18 = slot16(slot18)
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #21 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #16
+		UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-		--- BLOCK #15 209-216, warpins: 1 ---
+		--- BLOCK #22 238-245, warpins: 1 ---
 		slot21 = #slot15
 		slot21 = slot21 + 1
 		slot22 = {}
@@ -4341,34 +4991,34 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot23 = slot23.tagName
 		slot22.tagName = slot23
 		slot15[slot21] = slot22
-		--- END OF BLOCK #15 ---
+		--- END OF BLOCK #22 ---
 
-		FLOW; TARGET BLOCK #16
+		FLOW; TARGET BLOCK #23
 
 
-		--- BLOCK #16 217-218, warpins: 2 ---
-		--- END OF BLOCK #16 ---
+		--- BLOCK #23 246-247, warpins: 2 ---
+		--- END OF BLOCK #23 ---
 
 		for slot19, slot20 in slot16, slot17, slot18
-		LOOP BLOCK #15
-		GO OUT TO BLOCK #17
+		LOOP BLOCK #22
+		GO OUT TO BLOCK #24
 
 
-		--- BLOCK #17 219-222, warpins: 2 ---
+		--- BLOCK #24 248-251, warpins: 2 ---
 		slot18 = slot4
 		slot16 = slot4.SetList
 		slot19 = slot15
 
 		slot16(slot18, slot19)
 
-		--- END OF BLOCK #17 ---
+		--- END OF BLOCK #24 ---
 
-		FLOW; TARGET BLOCK #18
+		FLOW; TARGET BLOCK #25
 
 
-		--- BLOCK #18 223-223, warpins: 2 ---
+		--- BLOCK #25 252-252, warpins: 2 ---
 		return
-		--- END OF BLOCK #18 ---
+		--- END OF BLOCK #25 ---
 
 
 
@@ -4383,9 +5033,9 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.renderPanelTipSkillPopup = slot34
+slot29.renderPanelTipSkillPopup = slot30
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = function(slot0, slot1)
 		--- BLOCK #0 1-31, warpins: 1 ---
@@ -4710,9 +5360,9 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.renderPanelTipElementAndPetPopup = slot34
+slot29.renderPanelTipElementAndPetPopup = slot30
 
-slot34 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = function()
 		--- BLOCK #0 1-20, warpins: 1 ---
@@ -4787,9 +5437,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot27.renderPanelTipItemPopup = slot34
+slot29.renderPanelTipItemPopup = slot30
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = function(slot0, slot1)
 		--- BLOCK #0 1-22, warpins: 1 ---
@@ -4832,17 +5482,80 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.renderPanelTipSmallPopup = slot34
+slot29.renderPanelTipSmallPopup = slot30
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot2 = bindMarkShareText
-	slot4 = slot0
-	slot5 = "ugcMarkShareConcatText"
-	slot6 = slot1.txtClips
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = MarkShareViewCtrl
+	slot2 = slot2._platformHooks
+	--- END OF BLOCK #0 ---
 
-	slot7 = function(slot0)
-		--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot3 = slot2.initOnlineID
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot3 = slot2.initOnlineID
+	slot5 = slot0
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-23, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.applyMarkShareText
+	slot6 = "ugcMarkShareConcatText"
+	slot7 = slot1.txtClips
+
+	slot8 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.view
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 5-12, warpins: 1 ---
+		slot1 = UIUtils
+		slot1 = slot1.IsNull
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.concatText
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 13-19, warpins: 1 ---
 		slot1 = ClientTextUtils
 		slot1 = slot1.setText
 		slot3 = self
@@ -4852,31 +5565,37 @@ slot34 = function(slot0, slot1)
 
 		slot1(slot3, slot4)
 
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 20-20, warpins: 3 ---
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
 	end
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot3(slot5, slot6, slot7, slot8)
 
-	slot4 = slot0
-	slot2 = slot0.renderPhotoTemplate
-	slot5 = slot1
+	slot5 = slot0
+	slot3 = slot0.renderPhotoTemplate
+	slot6 = slot1
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot27.dealNonSysPanel = slot34
+slot29.dealNonSysPanel = slot30
 
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.photoTemplate
 	--- END OF BLOCK #0 ---
@@ -4920,7 +5639,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 15-55, warpins: 1 ---
+	--- BLOCK #4 15-56, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.templateUWidget
 	slot6 = slot4
@@ -5093,99 +5812,142 @@ slot34 = function(slot0, slot1)
 	end
 
 	slot6.luaClick = slot8
-	slot8 = pg
-	slot8 = slot8.global
-	slot8 = slot8.ui
-	slot8 = slot8.photo
-	slot8 = slot8.model
-	slot10 = slot8
-	slot8 = slot8.queryPresetImg
-	slot11 = slot2.imgKey
+	slot8 = true
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.photo
+	slot9 = slot9.model
+	slot11 = slot9
+	slot9 = slot9.queryPresetImg
+	slot12 = slot2.imgKey
 
-	slot12 = function(slot0, slot1)
+	slot13 = function(slot0, slot1)
 		--- BLOCK #0 1-3, warpins: 1 ---
-		slot2 = photoUImage
-		slot2.sprite = slot0
-
-		return
+		slot2 = isUGCImageVisible
 		--- END OF BLOCK #0 ---
 
-
-
-	end
-
-	slot8(slot10, slot11, slot12)
-
-	slot8 = bindMarkShareImage
-	slot10 = slot0
-	slot11 = "ugcMarkSharePhotoTemplate"
-	slot12 = slot7
-	slot13 = slot0.view
-	slot13 = slot13.templateUWidget
-
-	slot14 = function(slot0)
-		--- BLOCK #0 1-8, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.templateUWidget
-		slot3 = slot1
-		slot1 = slot1.SetActive
-		slot4 = havePhoto
-		--- END OF BLOCK #0 ---
-
-		slot4 = if slot4 then
+		slot2 = if slot2 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 9-9, warpins: 1 ---
-		slot4 = slot0
+		--- BLOCK #1 4-5, warpins: 1 ---
+		slot2 = photoUImage
+		slot2.sprite = slot0
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 10-12, warpins: 2 ---
-		slot1(slot3, slot4)
-
-		--- END OF BLOCK #2 ---
-
-		slot0 = if not slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 13-15, warpins: 1 ---
-		slot1 = photoUImage
-		slot2 = nil
-		slot1.sprite = slot2
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 16-16, warpins: 2 ---
+		--- BLOCK #2 6-6, warpins: 2 ---
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #2 ---
 
 
 
 	end
 
-	slot8(slot10, slot11, slot12, slot13, slot14)
+	slot9(slot11, slot12, slot13)
+
+	slot11 = slot0
+	slot9 = slot0.applyMarkShareImage
+	slot12 = "ugcMarkSharePhotoTemplate"
+	slot13 = slot7
+	slot14 = slot0.view
+	slot14 = slot14.templateUWidget
+
+	slot15 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= true then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-4, warpins: 1 ---
+		slot1 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 5-5, warpins: 1 ---
+		slot1 = true
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 6-14, warpins: 2 ---
+		isUGCImageVisible = slot1
+		slot1 = self
+		slot1 = slot1.view
+		slot1 = slot1.templateUWidget
+		slot3 = slot1
+		slot1 = slot1.SetActive
+		slot4 = havePhoto
+		--- END OF BLOCK #3 ---
+
+		slot4 = if slot4 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 15-15, warpins: 1 ---
+		slot4 = slot0
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 16-18, warpins: 2 ---
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #5 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 19-21, warpins: 1 ---
+		slot1 = photoUImage
+		slot2 = nil
+		slot1.sprite = slot2
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 22-22, warpins: 2 ---
+		return
+		--- END OF BLOCK #7 ---
+
+
+
+	end
+
+	slot9(slot11, slot12, slot13, slot14, slot15)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 56-57, warpins: 2 ---
+	--- BLOCK #5 57-58, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -5193,10 +5955,138 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.renderPhotoTemplate = slot34
+slot29.renderPhotoTemplate = slot30
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot30 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.curPage
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-15, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.root
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "Liked"
+	slot5 = 1
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnLikedKeyBindingPro1
+	slot2 = true
+	slot1.isVirtual = slot2
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 16-18, warpins: 1 ---
+	slot1 = slot0.curPage
+	--- END OF BLOCK #2 ---
+
+	if slot1 == 2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-29, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.root
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "Liked"
+	slot5 = 1
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnLikedKeyBindingPro2
+	slot2 = true
+	slot1.isVirtual = slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 30-30, warpins: 3 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot29.setLikedState = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot2 = slot1.markerId
+	slot3 = slot0.infoStampId
+
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-13, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.setLikedState
+
+	slot2(slot4)
+
+	slot2 = slot1.onlyChangeLikeState
+
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-31, warpins: 2 ---
 	slot2 = slot0.view
 	slot2 = slot2.particleUWidget
 	slot2 = slot2.gameObject
@@ -5216,16 +6106,16 @@ slot34 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = slot0.curPage
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 	if slot2 == 1 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #1 18-35, warpins: 1 ---
+	--- BLOCK #6 32-38, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -5234,36 +6124,23 @@ slot34 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.view
-	slot2 = slot2.root
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "Liked"
-	slot6 = 1
+	--- END OF BLOCK #6 ---
 
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.view
-	slot2 = slot2.btnLikedKeyBindingPro1
-	slot3 = true
-	slot2.isVirtual = slot3
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #2 36-38, warpins: 1 ---
+	--- BLOCK #7 39-41, warpins: 1 ---
 	slot2 = slot0.curPage
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #7 ---
 
 	if slot2 == 2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #3 39-55, warpins: 1 ---
+	--- BLOCK #8 42-47, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -5272,25 +6149,12 @@ slot34 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.view
-	slot2 = slot2.root
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "Liked"
-	slot6 = 1
+	--- END OF BLOCK #8 ---
 
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.view
-	slot2 = slot2.btnLikedKeyBindingPro2
-	slot3 = true
-	slot2.isVirtual = slot3
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #4 56-64, warpins: 3 ---
+	--- BLOCK #9 48-56, warpins: 3 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.markShare
@@ -5299,24 +6163,24 @@ slot34 = function(slot0, slot1)
 	slot2 = slot2[slot3]
 	slot2 = slot2.info
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #9 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #5 65-65, warpins: 1 ---
+	--- BLOCK #10 57-57, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #6 66-73, warpins: 2 ---
+	--- BLOCK #11 58-65, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.markShare
@@ -5327,15 +6191,15 @@ slot34 = function(slot0, slot1)
 	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot27.onInfoStampBeLiked = slot34
+slot29.onInfoStampBeLiked = slot30
 
-slot34 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.closePanel
@@ -5349,9 +6213,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot27.onPlayerHurt = slot34
+slot29.onPlayerHurt = slot30
 
-slot34 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -5366,17 +6230,51 @@ slot34 = function(slot0)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 5-13, warpins: 1 ---
-	slot1 = UIUtils
-	slot1 = slot1.PlayAnimation
-	slot3 = slot0.view
-	slot3 = slot3.panelAnimation
-	slot4 = "VX_MarkShare_View_Out"
+	--- BLOCK #2 5-8, warpins: 1 ---
+	slot1 = MarkShareViewCtrl
+	slot1 = slot1._platformHooks
+	--- END OF BLOCK #2 ---
 
-	slot5 = function()
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot2 = slot1.clearOnlineID
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot2 = slot1.clearOnlineID
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-23, warpins: 3 ---
+	slot2 = UIUtils
+	slot2 = slot2.PlayAnimation
+	slot4 = slot0.view
+	slot4 = slot4.panelAnimation
+	slot5 = "VX_MarkShare_View_Out"
+
+	slot6 = function()
 		--- BLOCK #0 1-13, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -5401,25 +6299,25 @@ slot34 = function(slot0)
 
 	end
 
-	slot1(slot3, slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #3 14-14, warpins: 2 ---
+	--- BLOCK #6 24-24, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot27.closePanel = slot34
+slot29.closePanel = slot30
 
-slot34 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5468,8 +6366,8 @@ slot34 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #4 17-21, warpins: 1 ---
-	slot3 = bindMarkShareName
 	slot5 = slot0
+	slot3 = slot0.applyMarkShareName
 	slot6 = "ugcMarkShareViewName"
 	--- END OF BLOCK #4 ---
 
@@ -5502,20 +6400,23 @@ slot34 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 5-9, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.txtTitle1USDFText
+		--- BLOCK #1 5-12, warpins: 1 ---
+		slot1 = UIUtils
+		slot1 = slot1.IsNull
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.txtTitle1USDFText
+		slot1 = slot1(slot3)
 		--- END OF BLOCK #1 ---
 
-		slot1 = if slot1 then
+		slot1 = if not slot1 then
 		JUMP TO BLOCK #2
 		else
 		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #2 10-16, warpins: 1 ---
+		--- BLOCK #2 13-19, warpins: 1 ---
 		slot1 = ClientTextUtils
 		slot1 = slot1.setText
 		slot3 = self
@@ -5530,9 +6431,52 @@ slot34 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 17-17, warpins: 3 ---
-		return
+		--- BLOCK #3 20-23, warpins: 3 ---
+		slot1 = self
+		slot1 = slot1.view
 		--- END OF BLOCK #3 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #4 24-31, warpins: 1 ---
+		slot1 = UIUtils
+		slot1 = slot1.IsNull
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.txtTitleUSDFText
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #4 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 32-38, warpins: 1 ---
+		slot1 = ClientTextUtils
+		slot1 = slot1.setText
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.txtTitleUSDFText
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 39-39, warpins: 3 ---
+		return
+		--- END OF BLOCK #6 ---
 
 
 
@@ -5553,9 +6497,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot27._setText_txtTitle1USDFText = slot34
+slot29._setText_txtTitle1USDFText = slot30
 
-return slot27
+return slot29
 --- END OF BLOCK #0 ---
 
 

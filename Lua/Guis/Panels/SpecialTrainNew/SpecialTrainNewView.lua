@@ -115,16 +115,6 @@ slot3 = function(slot0)
 	slot0.medalAnimation = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "heightTxt"
-	slot2 = slot2(slot4, slot5)
-	slot0.heightTxt = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "weightTxt"
-	slot2 = slot2(slot4, slot5)
-	slot0.weightTxt = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
 	slot5 = "medalUWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.medalUWidget = slot2
@@ -488,6 +478,16 @@ slot3 = function(slot0)
 	slot5 = "bLayoutBoxUWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.bLayoutBoxUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "allTextUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.allTextUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "allTextTitleUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.allTextTitleUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1003,7 +1003,7 @@ end
 slot2.getBadgeRewardItemComs = slot8
 
 slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-240, warpins: 1 ---
+	--- BLOCK #0 1-216, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
 	slot5 = "ObjectReference"
@@ -1129,30 +1129,6 @@ slot8 = function(slot0, slot1)
 	slot5 = "imgPetUImage"
 	slot2 = slot2(slot4, slot5)
 	slot0.imgPetUImage = slot2
-	slot2 = slot0.objectReference
-	slot4 = slot2
-	slot2 = slot2.GetRefValue
-	slot5 = "heightTxtTitle"
-	slot2 = slot2(slot4, slot5)
-	slot0.heightTxtTitle = slot2
-	slot2 = slot0.objectReference
-	slot4 = slot2
-	slot2 = slot2.GetRefValue
-	slot5 = "heightTxtNum"
-	slot2 = slot2(slot4, slot5)
-	slot0.heightTxtNum = slot2
-	slot2 = slot0.objectReference
-	slot4 = slot2
-	slot2 = slot2.GetRefValue
-	slot5 = "weightTxtTitle"
-	slot2 = slot2(slot4, slot5)
-	slot0.weightTxtTitle = slot2
-	slot2 = slot0.objectReference
-	slot4 = slot2
-	slot2 = slot2.GetRefValue
-	slot5 = "weightTxtNum"
-	slot2 = slot2(slot4, slot5)
-	slot0.weightTxtNum = slot2
 	slot2 = slot0.objectReference
 	slot4 = slot2
 	slot2 = slot2.GetRefValue

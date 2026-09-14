@@ -1,4 +1,4 @@
---- BLOCK #0 1-58, warpins: 1 ---
+--- BLOCK #0 1-61, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -26,13 +26,16 @@ slot7 = slot7(slot9)
 slot8 = slot0.getLogger
 slot10 = "LoadingSystem"
 slot8 = slot8(slot10)
-slot9 = 0.1
-slot10 = slot4.LightClass
-slot12 = "LoadingSystem"
-slot13 = slot3
-slot10 = slot10(slot12, slot13)
+slot9 = require
+slot11 = "Const.UIConst"
+slot9 = slot9(slot11)
+slot10 = 0.1
+slot11 = slot4.LightClass
+slot13 = "LoadingSystem"
+slot14 = slot3
+slot11 = slot11(slot13, slot14)
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = {}
 
@@ -43,9 +46,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.getMessageBindMap = slot11
+slot11.getMessageBindMap = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = false
 	slot0.inSingleLoading = slot1
@@ -66,10 +69,19 @@ slot11 = function(slot0)
 
 end
 
-slot10.onCtor = slot11
+slot11.onCtor = slot12
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-23, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.resMgr
+	slot4 = slot2
+	slot2 = slot2.SetSceneLoadingUnloadSuppressed
+	slot5 = true
+
+	slot2(slot4, slot5)
+
 	slot2 = true
 	slot0.inSingleLoading = slot2
 	slot0.curSceneId = slot1
@@ -94,10 +106,19 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.enterSingleLoading = slot11
+slot11.enterSingleLoading = slot12
 
-slot11 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot12 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-24, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.resMgr
+	slot6 = slot4
+	slot4 = slot4.SetSceneLoadingUnloadSuppressed
+	slot7 = true
+
+	slot4(slot6, slot7)
+
 	slot4 = true
 	slot0.inSingleLoading = slot4
 	slot0.curSceneId = slot1
@@ -123,28 +144,120 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot10.enterSingleReloading = slot11
+slot11.enterSingleReloading = slot12
 
-slot11 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot3 = SingleLoading
-	slot5 = slot1
-	slot3 = slot3(slot5)
-	slot0.singleLoadingInst = slot3
-	slot3 = slot0.singleLoadingInst
-	slot5 = slot3
-	slot3 = slot3.enterOfflineScene
-	slot6 = slot2
+slot12 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-54, warpins: 1 ---
+	slot4 = SingleLoading
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	slot0.singleLoadingInst = slot4
+	slot7 = slot4
+	slot5 = slot4.enterOfflineScene
+	slot8 = slot2
 
-	slot3(slot5, slot6)
+	slot9 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.singleLoadingInst
+		slot2 = loadingInst
+		--- END OF BLOCK #0 ---
 
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot5 = slot3
-	slot3 = slot3.hideAllUI
+		if slot1 == slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
 
-	slot3(slot5)
+
+		--- BLOCK #1 6-9, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.exitSingleLoading
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-12, warpins: 2 ---
+		slot1 = onSceneLoaded
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 13-15, warpins: 1 ---
+		slot1 = onSceneLoaded
+		slot3 = slot0
+
+		slot1(slot3)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 16-16, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = {}
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_HUD_V2
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_FEED_GAME_ENTRY
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_CAPTURE_BALL
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_THROW_PANEL
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_TIPS
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_HUD_MOBILE_OPERATE
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_PET_FIRST_SHOW
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_COMMON_CONFIRM
+	slot7 = true
+	slot5[slot6] = slot7
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot8 = slot6
+	slot6 = slot6.hideAllUIByCustomKey
+	slot9 = UIConst
+	slot9 = slot9.UI_HIDE_KEY
+	slot9 = slot9.CLIENT_UTILS
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -153,9 +266,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.enterOfflineScene = slot11
+slot11.enterOfflineScene = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.singleLoadingInst
 	--- END OF BLOCK #0 ---
@@ -191,9 +304,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.onLoadingSceneLoaded = slot11
+slot11.onLoadingSceneLoaded = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.singleLoadingInst
 	--- END OF BLOCK #0 ---
@@ -205,7 +318,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-16, warpins: 1 ---
+	--- BLOCK #1 4-23, warpins: 1 ---
 	slot1 = slot0.singleLoadingInst
 	slot1 = slot1.sceneId
 	slot4 = slot0
@@ -223,12 +336,21 @@ slot11 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.resMgr
+	slot4 = slot2
+	slot2 = slot2.SetSceneLoadingUnloadSuppressed
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-17, warpins: 2 ---
+	--- BLOCK #2 24-24, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -236,9 +358,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onProgressFinished = slot11
+slot11.onProgressFinished = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot1.sceneId
 	slot4 = ClientConst
@@ -270,87 +392,121 @@ slot11 = function(slot0, slot1, slot2)
 	if slot1 == slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
 	--- BLOCK #3 12-13, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	slot2 = if not slot2 then
+	if slot2 ~= true then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 14-20, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.ERROR
-	slot3 = slot3(slot5)
+	--- BLOCK #4 14-15, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 21-26, warpins: 1 ---
-	slot3 = logger
-	slot5 = slot3
-	slot3 = slot3.error
-	slot6 = "failed to load scene"
-	slot7 = slot1.sceneId
-
-	slot3(slot5, slot6, slot7)
-
+	--- BLOCK #5 16-16, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 27-38, warpins: 3 ---
-	slot5 = slot0
-	slot3 = slot0.exitSingleLoading
-
-	slot3(slot5)
-
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.scene
-	slot5 = slot3
-	slot3 = slot3.onSceneLoaded
-	slot6 = slot1.sceneId
-	slot7 = slot2
-	slot8 = slot0.isReloading
-
-	slot3(slot5, slot6, slot7, slot8)
-
+	--- BLOCK #6 17-18, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #7 39-42, warpins: 2 ---
+	--- BLOCK #7 19-25, warpins: 1 ---
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.ERROR
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 26-31, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "failed to load scene"
+	slot8 = slot1.sceneId
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 32-51, warpins: 3 ---
+	slot6 = slot0
+	slot4 = slot0.exitSingleLoading
+
+	slot4(slot6)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.scene
+	slot6 = slot4
+	slot4 = slot4.onSceneLoaded
+	slot7 = slot1.sceneId
+	slot8 = slot2
+	slot9 = slot0.isReloading
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.resMgr
+	slot6 = slot4
+	slot4 = slot4.SetSceneLoadingUnloadSuppressed
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 52-55, warpins: 2 ---
 	slot3 = GmToolUtils
 	slot3 = slot3.OnSceneLoadedDo
 
 	slot3()
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot10.onFinishLoading = slot11
+slot11.onFinishLoading = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.singleLoadingInst
 
@@ -390,9 +546,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.exitSingleLoading = slot11
+slot11.exitSingleLoading = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.singleLoadingInst
 	--- END OF BLOCK #0 ---
@@ -422,9 +578,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.getRequest = slot11
+slot11.getRequest = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.singleLoadingInst
 	--- END OF BLOCK #0 ---
@@ -535,9 +691,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.getProgress = slot11
+slot11.getProgress = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.inSingleLoading
 	slot1 = not slot1
@@ -549,9 +705,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.isFinished = slot11
+slot11.isFinished = slot12
 
-return slot10
+return slot11
 --- END OF BLOCK #0 ---
 
 

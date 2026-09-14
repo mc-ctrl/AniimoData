@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Helper.UIComponent"
 slot0 = slot0(slot2)
@@ -36,8 +36,11 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Utils.ClientTextUtils"
 slot11 = slot11(slot13)
+slot12 = require
+slot14 = "Core.Common.Time"
+slot12 = slot12(slot14)
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-85, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -131,9 +134,9 @@ slot12 = function(slot0)
 
 end
 
-slot6.findObjects = slot12
+slot6.findObjects = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = slot0.btnDelAllMailUButton
 
@@ -334,9 +337,9 @@ slot12 = function(slot0)
 
 end
 
-slot6.initView = slot12
+slot6.initView = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = slot0.mailRewardItemListUList
 
@@ -608,7 +611,7 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #20
 
 
-		--- BLOCK #20 100-134, warpins: 6 ---
+		--- BLOCK #20 100-133, warpins: 6 ---
 		slot11 = ClientTextUtils
 		slot11 = slot11.setText
 		slot13 = slot5
@@ -629,9 +632,8 @@ slot12 = function(slot0)
 		slot14 = LuaUIUtils
 		slot14 = slot14.getCountDownString
 		slot16 = slot2.RemoveTime
-		slot17 = os
-		slot17 = slot17.time
-		slot17 = slot17()
+		slot17 = Time
+		slot17 = slot17.secondCache
 		slot16 = slot16 - slot17
 		slot17 = UIConst
 		slot17 = slot17.TimeType
@@ -657,21 +659,21 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #21 135-136, warpins: 1 ---
+		--- BLOCK #21 134-135, warpins: 1 ---
 		slot12 = false
 		--- END OF BLOCK #21 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-		--- BLOCK #22 137-137, warpins: 1 ---
+		--- BLOCK #22 136-136, warpins: 1 ---
 		slot12 = true
 		--- END OF BLOCK #22 ---
 
 		FLOW; TARGET BLOCK #23
 
 
-		--- BLOCK #23 138-139, warpins: 2 ---
+		--- BLOCK #23 137-138, warpins: 2 ---
 		--- END OF BLOCK #23 ---
 
 		slot12 = if slot12 then
@@ -681,7 +683,7 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #24 140-145, warpins: 1 ---
+		--- BLOCK #24 139-144, warpins: 1 ---
 		slot13 = LuaUIUtils
 		slot13 = slot13.renderRewards
 		slot15 = slot4
@@ -695,7 +697,7 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #25
 
 
-		--- BLOCK #25 146-168, warpins: 2 ---
+		--- BLOCK #25 145-167, warpins: 2 ---
 		slot13 = string
 		slot13 = slot13.format
 		slot15 = RedDotConst
@@ -726,7 +728,7 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #26 169-179, warpins: 1 ---
+		--- BLOCK #26 168-178, warpins: 1 ---
 		slot16 = pg
 		slot16 = slot16.global
 		slot16 = slot16.setRedDot
@@ -744,7 +746,7 @@ slot12 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-		--- BLOCK #27 180-181, warpins: 1 ---
+		--- BLOCK #27 179-180, warpins: 1 ---
 		--- END OF BLOCK #27 ---
 
 		slot15 = if slot15 then
@@ -754,7 +756,7 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #28 182-192, warpins: 1 ---
+		--- BLOCK #28 181-191, warpins: 1 ---
 		slot16 = pg
 		slot16 = slot16.global
 		slot16 = slot16.setRedDot
@@ -772,7 +774,7 @@ slot12 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-		--- BLOCK #29 193-202, warpins: 1 ---
+		--- BLOCK #29 192-201, warpins: 1 ---
 		slot16 = pg
 		slot16 = slot16.global
 		slot16 = slot16.setRedDot
@@ -790,7 +792,7 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #30
 
 
-		--- BLOCK #30 203-203, warpins: 3 ---
+		--- BLOCK #30 202-202, warpins: 3 ---
 		return
 		--- END OF BLOCK #30 ---
 
@@ -882,9 +884,9 @@ slot12 = function(slot0)
 
 end
 
-slot6.initMailList = slot12
+slot6.initMailList = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.CreatedTime
 	slot3 = slot1.CreatedTime
@@ -920,7 +922,7 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1255,9 +1257,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot6.refreshMailList = slot13
+slot6.refreshMailList = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -1384,7 +1386,7 @@ slot13 = function(slot0)
 
 end
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.mailDatas
 	slot3 = slot0.curSelectedMailIndex
@@ -1448,7 +1450,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 24-70, warpins: 3 ---
+	--- BLOCK #6 24-69, warpins: 3 ---
 	slot4 = slot0.mailContentUComponent
 	slot6 = slot4
 	slot4 = slot4.TryChangePage
@@ -1483,9 +1485,8 @@ slot14 = function(slot0, slot1)
 	slot10 = LuaUIUtils
 	slot10 = slot10.getCountDownString
 	slot12 = slot2.RemoveTime
-	slot13 = os
-	slot13 = slot13.time
-	slot13 = slot13()
+	slot13 = Time
+	slot13 = slot13.secondCache
 	slot12 = slot12 - slot13
 	slot13 = UIConst
 	slot13 = slot13.TimeType
@@ -1511,7 +1512,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 71-78, warpins: 1 ---
+	--- BLOCK #7 70-77, warpins: 1 ---
 	slot4 = type
 	slot6 = pg
 	slot6 = slot6.game
@@ -1527,7 +1528,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 79-86, warpins: 1 ---
+	--- BLOCK #8 78-85, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
@@ -1545,7 +1546,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 87-96, warpins: 3 ---
+	--- BLOCK #9 86-95, warpins: 3 ---
 	slot4 = string
 	slot4 = slot4.gsub
 	slot6 = pg
@@ -1563,14 +1564,14 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 97-97, warpins: 1 ---
+	--- BLOCK #10 96-96, warpins: 1 ---
 	slot6 = ""
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 98-123, warpins: 2 ---
+	--- BLOCK #11 97-122, warpins: 2 ---
 	slot7 = "\\n"
 	slot8 = "\n"
 	slot4 = slot4(slot6, slot7, slot8)
@@ -1624,7 +1625,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 124-131, warpins: 1 ---
+	--- BLOCK #12 123-130, warpins: 1 ---
 	slot6 = slot0.transform
 	slot8 = slot6
 	slot6 = slot6.GetComponent
@@ -1640,7 +1641,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 132-135, warpins: 2 ---
+	--- BLOCK #13 131-134, warpins: 2 ---
 	slot6 = slot2.Params
 	slot6 = slot6.haveRead
 	--- END OF BLOCK #13 ---
@@ -1652,7 +1653,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 136-144, warpins: 1 ---
+	--- BLOCK #14 135-143, warpins: 1 ---
 	slot6 = slot2.Params
 	slot7 = true
 	slot6.haveRead = slot7
@@ -1669,14 +1670,14 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 145-145, warpins: 2 ---
+	--- BLOCK #15 144-144, warpins: 2 ---
 	return
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 146-146, warpins: 2 ---
+	--- BLOCK #16 145-145, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -1684,9 +1685,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot6.refreshMailContent = slot14
+slot6.refreshMailContent = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.Params
 	slot2 = slot2.giftInfo
@@ -1759,8 +1760,8 @@ slot14 = function(slot0, slot1)
 	slot12 = slot12.insert
 	slot14 = slot3
 	slot15 = {
-		type = 0,
-		tIndex = 0
+		tIndex = 0,
+		type = 0
 	}
 	slot15.id = slot9
 	slot15.num = slot11
@@ -1807,9 +1808,9 @@ slot14 = function(slot0, slot1)
 	slot11 = slot11.insert
 	slot13 = slot3
 	slot14 = {
-		num = 1,
+		tIndex = 0,
 		type = 1,
-		tIndex = 0
+		num = 1
 	}
 	slot15 = slot10.templateId
 	slot14.petId = slot15
@@ -1854,7 +1855,7 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot6.getMailGiftItems = slot14
+slot6.getMailGiftItems = slot15
 
 return slot6
 --- END OF BLOCK #0 ---

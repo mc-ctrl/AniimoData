@@ -7,24 +7,24 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "PetAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_Pet_Back",
 	version = 21,
-	useForRoute = false
+	useForRoute = false,
+	agenttype = "PetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	name = "tInWaterDepth",
+	const = 0,
 	type = "float",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	name = "tCurrentDistToMaster",
+	const = 0,
 	type = "float",
 	value = "0"
 }
@@ -142,11 +142,11 @@ slot8[3] = slot9
 slot7.properties = slot8
 slot8 = {}
 slot9 = {
-	effector = false,
-	precondition = true,
 	id = "67",
 	class = "Precondition",
-	transition = false
+	transition = false,
+	effector = false,
+	precondition = true
 }
 slot10 = {}
 slot11 = {

@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-86, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -61,7 +61,7 @@ slot14[slot15] = slot16
 slot13.messages = slot14
 
 slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -71,30 +71,56 @@ slot14 = function(slot0, slot1)
 
 	slot2 = slot1.compoundId
 	slot0.compoundId = slot2
-	slot2 = ItemCompoundData
-	slot3 = slot0.compoundId
-	slot2 = slot2[slot3]
-	slot0.compoundCfg = slot2
-	slot2 = slot0.compoundCfg
-
+	slot2 = slot1.isTTLExchange
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	if slot2 ~= true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 15-15, warpins: 1 ---
-	return
-
+	--- BLOCK #1 11-12, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 16-29, warpins: 2 ---
+	--- BLOCK #2 13-13, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-21, warpins: 2 ---
+	slot0.isTTLExchange = slot2
+	slot2 = ItemCompoundData
+	slot3 = slot0.compoundId
+	slot2 = slot2[slot3]
+	slot0.compoundCfg = slot2
+	slot2 = slot0.compoundCfg
+
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-22, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-36, warpins: 2 ---
 	slot2 = DropData
 	slot3 = slot0.compoundCfg
 	slot3 = slot3.reward
@@ -107,27 +133,79 @@ slot14 = function(slot0, slot1)
 	slot4 = slot4.currency
 	slot3.currency = slot4
 	slot4 = slot2.displayReward
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 30-30, warpins: 1 ---
+	--- BLOCK #6 37-37, warpins: 1 ---
 	slot4 = {}
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 31-42, warpins: 2 ---
+	--- BLOCK #7 38-46, warpins: 2 ---
 	slot3.product = slot4
 	slot4 = slot0.compoundId
 	slot3.compoundId = slot4
 	slot0.compoundData = slot3
+	slot3 = ipairs
+	slot5 = slot0.compoundCfg
+	slot5 = slot5.material
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 47-51, warpins: 1 ---
+	slot8 = ItemData
+	slot9 = slot7[1]
+	slot8 = slot8[slot9]
+	--- END OF BLOCK #8 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 52-57, warpins: 1 ---
+	slot9 = tonumber
+	slot11 = slot8.ttlChangeItem
+	slot9 = slot9(slot11)
+	slot10 = slot0.compoundId
+	--- END OF BLOCK #9 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 58-59, warpins: 1 ---
+	slot0.ttlExchangeMaterial = slot7
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 60-61, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 62-69, warpins: 2 ---
 	slot3 = 1
 	slot0.multi = slot3
 	slot3 = slot1.craftFunc
@@ -138,7 +216,7 @@ slot14 = function(slot0, slot1)
 	slot3(slot5)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #12 ---
 
 
 
@@ -209,7 +287,7 @@ slot14 = function(slot0)
 	slot1 = slot1.numSelector
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-11, warpins: 1 ---
+		--- BLOCK #0 1-15, warpins: 1 ---
 		slot1 = self
 		slot1.multi = slot0
 		slot1 = self
@@ -221,6 +299,12 @@ slot14 = function(slot0)
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.refreshCurrencyInfo
+
+		slot1(slot3)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshTTLExchangeDescription
 
 		slot1(slot3)
 
@@ -581,7 +665,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 106-123, warpins: 2 ---
+	--- BLOCK #7 106-126, warpins: 2 ---
 	slot7 = ClientTextUtils
 	slot7 = slot7.setText
 	slot9 = slot0.view
@@ -600,6 +684,11 @@ slot14 = function(slot0)
 
 	slot7(slot9, MULTRES)
 
+	slot9 = slot0
+	slot7 = slot0.refreshTTLExchangeDescription
+
+	slot7(slot9)
+
 	return
 	--- END OF BLOCK #7 ---
 
@@ -608,6 +697,136 @@ slot14 = function(slot0)
 end
 
 slot13.initUI = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.isTTLExchange
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-16, warpins: 2 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.view
+	slot3 = slot3.titleUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "CONVERT"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = slot0.ttlExchangeMaterial
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 17-20, warpins: 1 ---
+	slot1 = slot0.compoundData
+	slot1 = slot1.product
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-25, warpins: 1 ---
+	slot1 = slot0.compoundData
+	slot1 = slot1.product
+	slot1 = #slot1
+
+	--- END OF BLOCK #4 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-26, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-68, warpins: 2 ---
+	slot1 = slot0.ttlExchangeMaterial
+	slot1 = slot1[1]
+	slot2 = slot0.ttlExchangeMaterial
+	slot2 = slot2[2]
+	slot3 = slot0.multi
+	slot2 = slot2 * slot3
+	slot3 = slot0.compoundData
+	slot3 = slot3.product
+	slot3 = slot3[1]
+	slot3 = slot3[1]
+	slot4 = slot0.compoundData
+	slot4 = slot4.product
+	slot4 = slot4[1]
+	slot4 = slot4[2]
+	slot5 = slot0.multi
+	slot4 = slot4 * slot5
+	slot5 = pg
+	slot5 = slot5.getLocalizationText
+	slot7 = ItemData
+	slot7 = slot7[slot1]
+	slot7 = slot7.itemName
+	slot5 = slot5(slot7)
+	slot6 = pg
+	slot6 = slot6.getLocalizationText
+	slot8 = ItemData
+	slot8 = slot8[slot3]
+	slot8 = slot8.itemName
+	slot6 = slot6(slot8)
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot0.view
+	slot9 = slot9.describeUSDFText
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = "消耗%d个%s，可兑换%d个%s"
+	slot13 = slot2
+	slot14 = slot5
+	slot15 = slot4
+	slot16 = slot6
+	MULTRES = slot10(slot12, slot13, slot14, slot15, slot16)
+
+	slot7(slot9, MULTRES)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot13.refreshTTLExchangeDescription = slot14
 
 slot14 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
@@ -730,7 +949,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 7-14, warpins: 1 ---
+	--- BLOCK #1 7-16, warpins: 1 ---
 	slot7 = #slot1
 	slot7 = slot7 + 1
 	slot8 = {}
@@ -738,13 +957,15 @@ slot14 = function(slot0)
 	slot8.propId = slot9
 	slot9 = slot6[2]
 	slot8.countNeed = slot9
+	slot9 = slot0.compoundId
+	slot8.compoundId = slot9
 	slot1[slot7] = slot8
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-16, warpins: 2 ---
+	--- BLOCK #2 17-18, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -752,7 +973,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 17-28, warpins: 1 ---
+	--- BLOCK #3 19-30, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.listItemFrontUList
 	slot4 = slot2
@@ -771,7 +992,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 29-36, warpins: 1 ---
+	--- BLOCK #4 31-38, warpins: 1 ---
 	slot8 = #slot2
 	slot8 = slot8 + 1
 	slot9 = {}
@@ -785,7 +1006,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 37-38, warpins: 2 ---
+	--- BLOCK #5 39-40, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -793,7 +1014,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 39-45, warpins: 1 ---
+	--- BLOCK #6 41-47, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.listItemBackUList
 	slot5 = slot3

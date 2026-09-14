@@ -1,4 +1,4 @@
---- BLOCK #0 1-49, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -24,14 +24,18 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
-slot7 = "VX_Ani_Pb_Personal_LoadingPage_Entrance_Loop"
-slot8 = "VX_Ani_Pb_Personal_LoadingPage_Entrance_End"
-slot9 = "VX_Ani_Pb_Personal_LoadingPage_Join_In"
-slot10 = 0.5
-slot11 = {}
-slot4.messages = slot11
+slot7 = require
+slot9 = "Utils.LuaUIUtils"
+slot7 = slot7(slot9)
+slot8 = "loadingValue"
+slot9 = "VX_Ani_Pb_Personal_LoadingPage_Entrance_Loop"
+slot10 = "VX_Ani_Pb_Personal_LoadingPage_Entrance_End"
+slot11 = "VX_Ani_Pb_Personal_LoadingPage_Join_In"
+slot12 = 0.5
+slot13 = {}
+slot4.messages = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -47,9 +51,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot11
+slot4.onCreate = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-60, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnEnterUButton
@@ -143,9 +147,9 @@ slot11 = function(slot0)
 
 end
 
-slot4.addListener = slot11
+slot4.addListener = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -161,33 +165,76 @@ slot11 = function(slot0)
 	slot3 = slot0.view
 	slot3 = slot3.widget
 	slot3 = slot3.gameObject
-	slot4 = "loadingValue"
+	slot4 = LuaUIUtils
+	slot4 = slot4.TweenId
+	slot6 = LOADING_VALUE_TWEEN_ID
+	slot4 = slot4(slot6)
 	slot5 = true
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = nil
-	slot0.info = slot1
-	slot1 = nil
-	slot0.uiOpenCb = slot1
-	slot1 = nil
-	slot0.entering = slot1
-	slot1 = UICtrl
-	slot1 = slot1.onDestroy
 	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.loopAnimId
 
-	slot1(slot3)
+	slot1(slot3, slot4)
+
+	slot1 = PlayerEnhanceLoadingCtrl
+	slot1 = slot1._platformHooks
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 27-29, warpins: 1 ---
+	slot2 = slot1.onDestroy
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 30-32, warpins: 1 ---
+	slot2 = slot1.onDestroy
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 33-43, warpins: 3 ---
+	slot2 = nil
+	slot0.info = slot2
+	slot2 = nil
+	slot0.uiOpenCb = slot2
+	slot2 = nil
+	slot0.entering = slot2
+	slot2 = UICtrl
+	slot2 = slot2.onDestroy
+	slot4 = slot0
+
+	slot2(slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot4.onDestroy = slot11
+slot4.onDestroy = slot13
 
-slot11 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -224,7 +271,7 @@ slot11 = function(slot0, slot1, slot2)
 	slot3 = slot0.startTimer
 
 	slot6 = function()
-		--- BLOCK #0 1-28, warpins: 1 ---
+		--- BLOCK #0 1-31, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.audio
@@ -258,8 +305,42 @@ slot11 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3, slot4, slot5, slot6, slot7, slot8)
 
-		return
+		slot0 = PlayerEnhanceLoadingCtrl
+		slot0 = slot0._platformHooks
 		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 32-34, warpins: 1 ---
+		slot1 = slot0.afterOpenPlayerEnhanceInBackground
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 35-37, warpins: 1 ---
+		slot1 = slot0.afterOpenPlayerEnhanceInBackground
+		slot3 = self
+
+		slot1(slot3)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 38-38, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
@@ -276,31 +357,99 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.onOpen = slot11
+slot4.onOpen = slot13
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+slot13 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PlayerEnhanceLoadingCtrl
+	slot1 = slot1._platformHooks
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.onShow
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = slot1.onShow
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot4.onShow = slot11
+slot4.onShow = slot13
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+slot13 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PlayerEnhanceLoadingCtrl
+	slot1 = slot1._platformHooks
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.onHide
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = slot1.onHide
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot4.onHide = slot11
+slot4.onHide = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entering
 	--- END OF BLOCK #0 ---
@@ -315,85 +464,119 @@ slot11 = function(slot0)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #2 5-27, warpins: 1 ---
+	--- BLOCK #2 5-10, warpins: 1 ---
 	slot1 = true
 	slot0.entering = slot1
-	slot3 = slot0
-	slot1 = slot0.killTimer
-	slot4 = slot0.loopAnimId
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.audio
-	slot3 = slot1
-	slot1 = slot1.stopEvent
-	slot4 = "SFX_UI_Personal_FirstOpen_Loop"
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.checkUIOpen
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_PLAYER_ENHANCEMENT
-	slot1 = slot1(slot3, slot4)
+	slot1 = PlayerEnhanceLoadingCtrl
+	slot1 = slot1._platformHooks
 	--- END OF BLOCK #2 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 28-38, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.playerEnhance
-	slot3 = slot1
-	slot1 = slot1.open
-	slot4 = slot0.info
-	slot5 = slot0.uiOpenCb
-	slot6, slot7, slot8 = nil
-	slot9 = true
-
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
-
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot2 = slot1.onStartEnter
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 39-58, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.audio
-	slot3 = slot1
-	slot1 = slot1.playEvent
-	slot4 = "SFX_UI_Personal_Active"
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot2 = slot1.onStartEnter
+	slot4 = slot0
 
-	slot1(slot3, slot4)
+	slot2(slot4)
 
-	slot1 = slot0.view
-	slot1 = slot1.rootAnim
-	slot3 = slot1
-	slot1 = slot1.Play
-	slot4 = END_ANIM
+	--- END OF BLOCK #4 ---
 
-	slot1(slot3, slot4)
+	FLOW; TARGET BLOCK #5
 
-	slot3 = slot0
-	slot1 = slot0.startTimer
 
-	slot4 = function()
+	--- BLOCK #5 17-37, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.killTimer
+	slot5 = slot0.loopAnimId
+
+	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.stopEvent
+	slot5 = "SFX_UI_Personal_FirstOpen_Loop"
+
+	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.checkUIOpen
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_PLAYER_ENHANCEMENT
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 38-48, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.playerEnhance
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = slot0.info
+	slot6 = slot0.uiOpenCb
+	slot7, slot8, slot9 = nil
+	slot10 = true
+
+	slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 49-68, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.playEvent
+	slot5 = "SFX_UI_Personal_Active"
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.view
+	slot2 = slot2.rootAnim
+	slot4 = slot2
+	slot2 = slot2.Play
+	slot5 = END_ANIM
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.startTimer
+
+	slot5 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -408,28 +591,28 @@ slot11 = function(slot0)
 
 	end
 
-	slot5 = 1
+	slot6 = 1
 
-	slot1(slot3, slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #5 59-59, warpins: 2 ---
+	--- BLOCK #8 69-69, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot4.startEnter = slot11
+slot4.startEnter = slot13
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-58, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.audio
@@ -474,7 +657,10 @@ slot11 = function(slot0)
 	slot3 = slot3.gameObject
 	slot4 = 0
 	slot5 = 100
-	slot6 = "loadingValue"
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = LOADING_VALUE_TWEEN_ID
+	slot6 = slot6(slot8)
 	slot7 = 1
 	slot8 = 0.3
 	slot9 = CS
@@ -562,7 +748,7 @@ slot11 = function(slot0)
 
 end
 
-slot4._playEnterAnim = slot11
+slot4._playEnterAnim = slot13
 
 return slot4
 --- END OF BLOCK #0 ---

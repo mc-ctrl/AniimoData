@@ -20,7 +20,7 @@ slot8 = slot1
 slot5 = slot5(slot7, slot8)
 
 slot6 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = "{\n"
 	slot3 = {
 		"templateId",
@@ -32,55 +32,27 @@ slot6 = function(slot0, slot1)
 		"srcAbilityId",
 		"level"
 	}
-	slot5 = CommonSwitch
-	slot5 = slot5.CppProperty
+	slot5 = slot0._properties
+	slot6 = ipairs
+	slot8 = slot3
+	slot6, slot7, slot8 = slot6(slot8)
 	--- END OF BLOCK #0 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot11 = slot5[slot10]
 	--- END OF BLOCK #1 ---
 
-	slot5 = if not slot0 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
-	slot5 = slot0._properties
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 11-14, warpins: 2 ---
-	slot6 = ipairs
-	slot8 = slot3
-	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #4 15-17, warpins: 1 ---
-	slot11 = slot5[slot10]
-	--- END OF BLOCK #4 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 18-24, warpins: 1 ---
+	--- BLOCK #2 12-18, warpins: 1 ---
 	slot11 = slot2
 	slot12 = "\t\t"
 	slot13 = slot10
@@ -88,42 +60,42 @@ slot6 = function(slot0, slot1)
 	slot15 = slot5[slot10]
 	slot16 = "\n"
 	slot2 = slot11 .. slot12 .. slot13 .. slot14 .. slot15 .. slot16
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #6 25-26, warpins: 3 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #3 19-20, warpins: 3 ---
+	--- END OF BLOCK #3 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #7
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #7 27-29, warpins: 1 ---
+	--- BLOCK #4 21-23, warpins: 1 ---
 	slot6 = slot5.expiredTime
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #8 30-32, warpins: 1 ---
+	--- BLOCK #5 24-26, warpins: 1 ---
 	slot6 = slot0.owner
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #5 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #9 33-46, warpins: 1 ---
+	--- BLOCK #6 27-40, warpins: 1 ---
 	slot6 = slot5.expiredTime
 	slot7 = slot0.owner
 	slot7 = slot7.space
@@ -138,42 +110,42 @@ slot6 = function(slot0, slot1)
 	slot11 = slot6
 	slot12 = "s\n"
 	slot2 = slot7 .. slot8 .. slot9 .. slot10 .. slot11 .. slot12
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #10 47-48, warpins: 3 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #7 41-42, warpins: 3 ---
+	--- END OF BLOCK #7 ---
 
 	if slot1 == 1 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 49-52, warpins: 1 ---
+	--- BLOCK #8 43-46, warpins: 1 ---
 	slot6 = ipairs
 	slot8 = slot4
 	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #12 53-55, warpins: 1 ---
+	--- BLOCK #9 47-49, warpins: 1 ---
 	slot11 = slot5[slot10]
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #9 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #13 56-62, warpins: 1 ---
+	--- BLOCK #10 50-56, warpins: 1 ---
 	slot11 = slot2
 	slot12 = "\t\t"
 	slot13 = slot10
@@ -181,26 +153,26 @@ slot6 = function(slot0, slot1)
 	slot15 = slot5[slot10]
 	slot16 = "\n"
 	slot2 = slot11 .. slot12 .. slot13 .. slot14 .. slot15 .. slot16
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #14 63-64, warpins: 3 ---
-	--- END OF BLOCK #14 ---
+	--- BLOCK #11 57-58, warpins: 3 ---
+	--- END OF BLOCK #11 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #12
-	GO OUT TO BLOCK #15
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #12
 
 
-	--- BLOCK #15 65-68, warpins: 2 ---
+	--- BLOCK #12 59-62, warpins: 2 ---
 	slot6 = slot2
 	slot7 = "\t}"
 	slot2 = slot6 .. slot7
 
 	return slot2
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #12 ---
 
 
 

@@ -7,17 +7,17 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_TriggerBlueprint",
+	useForRoute = true,
 	version = 6,
-	useForRoute = true
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tEventName",
 	type = "string",
+	name = "tEventName",
 	value = "",
 	const = ""
 }

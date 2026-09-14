@@ -1,4 +1,4 @@
---- BLOCK #0 1-107, warpins: 1 ---
+--- BLOCK #0 1-114, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -52,12 +52,12 @@ slot15 = require
 slot17 = "Common.NoticeDef"
 slot15 = slot15(slot17)
 slot16 = {
-	LEFT = 1,
-	RIGHT = 2
+	RIGHT = 2,
+	LEFT = 1
 }
 slot17 = {
-	LIGHT = 1,
-	UNLIGHT = 0
+	UNLIGHT = 0,
+	LIGHT = 1
 }
 slot18 = string
 slot18 = slot18.format
@@ -65,6 +65,12 @@ slot19 = {}
 slot20 = slot1.PET_INHERIT_CHANGE
 slot21 = {
 	"onPetInheritChange",
+	true
+}
+slot19[slot20] = slot21
+slot20 = slot1.PET_CARRY_LOCK_CHANGE
+slot21 = {
+	"onPetCarryLockChange",
 	true
 }
 slot19[slot20] = slot21
@@ -89,7 +95,7 @@ end
 slot4.onCreate = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-28, warpins: 1 ---
+	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
 
@@ -128,6 +134,10 @@ slot19 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnRulesUButton
+	slot2 = false
+	slot1.enabledTooltip = slot2
 	slot1 = slot0.view
 	slot1 = slot1.btnRulesUButton
 
@@ -188,7 +198,12 @@ end
 slot4.addListener = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.m_clearCarryInfoComps
+
+	slot1(slot3)
+
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -203,10 +218,6 @@ slot19 = function(slot0)
 	slot0.rightPetId = slot1
 	slot1 = nil
 	slot0.rightPetInfo = slot1
-	slot1 = nil
-	slot0.m_leftPetCarryInfoComp = slot1
-	slot1 = nil
-	slot0.m_rightPetCarryInfoComp = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -441,12 +452,13 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 94-102, warpins: 2 ---
+	--- BLOCK #7 94-101, warpins: 2 ---
 	slot0.rightPetInfo = slot2
-	slot2 = nil
-	slot0.m_leftPetCarryInfoComp = slot2
-	slot2 = nil
-	slot0.m_rightPetCarryInfoComp = slot2
+	slot4 = slot0
+	slot2 = slot0.m_clearCarryInfoComps
+
+	slot2(slot4)
+
 	slot4 = slot0
 	slot2 = slot0.refreshAll
 
@@ -505,41 +517,38 @@ end
 slot4.refreshAll = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.btnRulesUButton
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PetConfigData
+	slot1 = slot1.PET_INHERIT_TIP_INFO_ID
+	--- END OF BLOCK #0 ---
 
-	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-17, warpins: 1 ---
-		slot4 = slot1
-		slot2 = slot1.GetComponent
-		slot5 = "ObjectReference"
-		slot2 = slot2(slot4, slot5)
-		slot5 = slot2
-		slot3 = slot2.GetRefValue
-		slot6 = "txtNameUSDFText"
-		slot3 = slot3(slot5, slot6)
-		slot4 = ClientTextUtils
-		slot4 = slot4.setText
-		slot6 = slot3
-		slot7 = pg
-		slot7 = slot7.getGameString
-		slot9 = "PET_INHERIT_MAIN_RULES"
-		MULTRES = slot7(slot9)
-
-		slot4(slot6, MULTRES)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
 	end
 
-	slot1.luaRenderTooltip = slot2
 
+	--- BLOCK #1 5-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.openCommonPopUpTipById
+	slot4 = PetConfigData
+	slot4 = slot4.PET_INHERIT_TIP_INFO_ID
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-14, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -588,8 +597,8 @@ slot19 = function(slot0)
 	slot5.rightPetId = slot6
 	slot6, slot7 = nil
 	slot8 = {
-		textureHeight = 1080,
-		textureWidth = 1080
+		textureWidth = 1080,
+		textureHeight = 1080
 	}
 	slot9 = UIConst
 	slot9 = slot9.UI_ID_PET_INHERITANCE_CHOOSE
@@ -659,7 +668,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-14, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot1 = slot0.petInfo
 	slot2 = slot0.uiScene
 	slot4 = slot2
@@ -668,8 +677,10 @@ slot19 = function(slot0)
 	slot6 = slot0.view
 	slot6 = slot6.imgPetLeftURawImage
 	slot7 = slot1.label
+	slot8 = slot0.petId
+	slot9 = slot1
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -688,11 +699,35 @@ slot19 = function(slot0)
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 4-43, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.m_rightPetCarryInfoComp
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-11, warpins: 1 ---
+	slot1 = slot0.m_rightPetCarryInfoComp
+	slot3 = slot1
+	slot1 = slot1.updateAndRefresh
+	slot4 = nil
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-51, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
 	slot3 = slot1
@@ -742,12 +777,12 @@ slot19 = function(slot0)
 
 	return
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 44-66, warpins: 2 ---
+	--- BLOCK #4 52-74, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
 	slot3 = slot1
@@ -779,7 +814,7 @@ slot19 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -846,14 +881,16 @@ slot19 = function(slot0)
 
 	--- BLOCK #5 19-19, warpins: 1 ---
 	slot6 = 0
-
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-21, warpins: 2 ---
-	slot1(slot3, slot4, slot5, slot6)
+	--- BLOCK #6 20-23, warpins: 2 ---
+	slot7 = slot0.rightPetId
+	slot8 = slot0.rightPetInfo
+
+	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
 
 	return
 	--- END OF BLOCK #6 ---
@@ -1370,77 +1407,168 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 26-27, warpins: 3 ---
+	--- BLOCK #9 26-33, warpins: 3 ---
+	slot7 = slot4
+	slot5 = slot4.updateAndRefresh
+	slot8 = slot1
+	slot9 = {}
+	slot10 = INHERIT_POS
+	slot10 = slot10.RIGHT
 	--- END OF BLOCK #9 ---
 
-	slot1 = if slot1 then
+	if slot3 == slot10 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 28-35, warpins: 1 ---
-	slot5 = PetManagementUtils
-	slot5 = slot5.getPetCarryInfo
-	slot7 = slot1
-	slot5 = slot5(slot7)
-	slot6 = INHERIT_POS
-	slot6 = slot6.RIGHT
+	--- BLOCK #10 34-35, warpins: 1 ---
+	slot10 = 32
 	--- END OF BLOCK #10 ---
 
-	if slot3 == slot6 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 36-37, warpins: 1 ---
-	slot6 = 32
+	--- BLOCK #11 36-36, warpins: 1 ---
+	slot10 = nil
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 38-39, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #12 ---
+	--- BLOCK #12 37-39, warpins: 2 ---
+	slot9.popupDirection = slot10
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	slot5(slot7, slot8, slot9)
 
-
-	--- BLOCK #13 40-40, warpins: 0 ---
-	slot6 = true
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 41-47, warpins: 3 ---
-	slot9 = slot4
-	slot7 = slot4.updateAndRefresh
-	slot10 = slot1
-	slot11 = slot5
-	slot12 = false
-	slot13 = slot6
-
-	slot7(slot9, slot10, slot11, slot12, slot13)
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 48-48, warpins: 2 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
 slot4.m_refreshCarryInfo = slot19
+
+slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.m_leftPetCarryInfoComp
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.m_leftPetCarryInfoComp
+	slot4 = slot2
+	slot2 = slot2.refreshCarryItemTooltip
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot2 = slot0.m_rightPetCarryInfoComp
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = slot0.m_rightPetCarryInfoComp
+	slot4 = slot2
+	slot2 = slot2.refreshCarryItemTooltip
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.onPetCarryLockChange = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.m_leftPetCarryInfoComp
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = slot0.m_leftPetCarryInfoComp
+	slot3 = slot1
+	slot1 = slot1.onDestroy
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.m_leftPetCarryInfoComp = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot1 = slot0.m_rightPetCarryInfoComp
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot1 = slot0.m_rightPetCarryInfoComp
+	slot3 = slot1
+	slot1 = slot1.onDestroy
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.m_rightPetCarryInfoComp = slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.m_clearCarryInfoComps = slot19
 
 slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -1514,7 +1642,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 20-31, warpins: 2 ---
+	--- BLOCK #7 20-32, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.m_refreshPetGenderInfo
 	slot7 = slot1
@@ -1524,9 +1652,10 @@ slot19 = function(slot0, slot1)
 	slot11 = pg
 	slot11 = slot11.me
 	slot12 = slot3
-	MULTRES = slot9(slot11, slot12)
+	slot9 = slot9(slot11, slot12)
+	slot10 = slot3
 
-	slot4(slot6, slot7, slot8, MULTRES)
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #7 ---
@@ -1537,106 +1666,110 @@ end
 
 slot4.m_customRefreshGenderInfo = slot19
 
-slot19 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-48, warpins: 1 ---
-	slot6 = slot2
-	slot4 = slot2.GetComponent
-	slot7 = "ObjectReference"
-	slot4 = slot4(slot6, slot7)
-	slot7 = slot4
-	slot5 = slot4.GetRefValue
-	slot8 = "petNameUBaseText"
+slot19 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-52, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.GetComponent
+	slot8 = "ObjectReference"
 	slot5 = slot5(slot7, slot8)
-	slot8 = slot4
-	slot6 = slot4.GetRefValue
-	slot9 = "elementUList"
+	slot8 = slot5
+	slot6 = slot5.GetRefValue
+	slot9 = "petNameUBaseText"
 	slot6 = slot6(slot8, slot9)
-	slot9 = slot4
-	slot7 = slot4.GetRefValue
-	slot10 = "numCPUBaseText"
+	slot9 = slot5
+	slot7 = slot5.GetRefValue
+	slot10 = "elementUList"
 	slot7 = slot7(slot9, slot10)
-	slot10 = slot4
-	slot8 = slot4.GetRefValue
-	slot11 = "petNameUComponent"
+	slot10 = slot5
+	slot8 = slot5.GetRefValue
+	slot11 = "numCPUBaseText"
 	slot8 = slot8(slot10, slot11)
-	slot11 = slot4
-	slot9 = slot4.GetRefValue
-	slot12 = "txtNameChangeUBaseText"
+	slot11 = slot5
+	slot9 = slot5.GetRefValue
+	slot12 = "petNameUComponent"
 	slot9 = slot9(slot11, slot12)
-	slot12 = slot4
-	slot10 = slot4.GetRefValue
-	slot13 = "nameCoverUBaseText"
+	slot12 = slot5
+	slot10 = slot5.GetRefValue
+	slot13 = "txtNameChangeUBaseText"
 	slot10 = slot10(slot12, slot13)
-	slot13 = slot4
-	slot11 = slot4.GetRefValue
-	slot14 = "txtStateUSDFText"
+	slot13 = slot5
+	slot11 = slot5.GetRefValue
+	slot14 = "nameCoverUBaseText"
 	slot11 = slot11(slot13, slot14)
-	slot14 = slot4
-	slot12 = slot4.GetRefValue
-	slot15 = "iconGenderUImage"
+	slot14 = slot5
+	slot12 = slot5.GetRefValue
+	slot15 = "txtStateUSDFText"
 	slot12 = slot12(slot14, slot15)
-	slot15 = slot4
-	slot13 = slot4.GetRefValue
-	slot16 = "lineUWidget"
+	slot15 = slot5
+	slot13 = slot5.GetRefValue
+	slot16 = "iconGenderUImage"
 	slot13 = slot13(slot15, slot16)
-	slot16 = slot4
-	slot14 = slot4.GetRefValue
-	slot17 = "btnChangeUButton"
+	slot16 = slot5
+	slot14 = slot5.GetRefValue
+	slot17 = "lineUWidget"
 	slot14 = slot14(slot16, slot17)
-	slot15 = INHERIT_POS
-	slot15 = slot15.LEFT
+	slot17 = slot5
+	slot15 = slot5.GetRefValue
+	slot18 = "btnChangeUButton"
+	slot15 = slot15(slot17, slot18)
+	slot18 = slot5
+	slot16 = slot5.GetRefValue
+	slot19 = "listTagUList"
+	slot16 = slot16(slot18, slot19)
+	slot17 = INHERIT_POS
+	slot17 = slot17.LEFT
 	--- END OF BLOCK #0 ---
 
-	if slot1 == slot15 then
+	if slot1 == slot17 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 49-50, warpins: 1 ---
-	slot15 = "PET_INHERIT_LEFT_STATENAME"
+	--- BLOCK #1 53-54, warpins: 1 ---
+	slot17 = "PET_INHERIT_LEFT_STATENAME"
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 51-51, warpins: 1 ---
-	slot15 = "PET_INHERIT_RIGHT_STATENAME"
+	--- BLOCK #2 55-55, warpins: 1 ---
+	slot17 = "PET_INHERIT_RIGHT_STATENAME"
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 52-60, warpins: 2 ---
-	slot16 = ClientTextUtils
-	slot16 = slot16.setText
-	slot18 = slot11
-	slot19 = pg
-	slot19 = slot19.getGameString
-	slot21 = slot15
-	slot19 = slot19(slot21)
+	--- BLOCK #3 56-64, warpins: 2 ---
+	slot18 = ClientTextUtils
+	slot18 = slot18.setText
+	slot20 = slot12
+	slot21 = pg
+	slot21 = slot21.getGameString
+	slot23 = slot17
+	slot21 = slot21(slot23)
 	--- END OF BLOCK #3 ---
 
-	slot19 = if not slot19 then
+	slot21 = if not slot21 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 61-61, warpins: 1 ---
-	slot19 = ""
+	--- BLOCK #4 65-65, warpins: 1 ---
+	slot21 = ""
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 62-96, warpins: 2 ---
-	slot16(slot18, slot19)
+	--- BLOCK #5 66-100, warpins: 2 ---
+	slot18(slot20, slot21)
 
-	slot16 = function(slot0, slot1, slot2)
+	slot18 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot3 = LuaUIUtils
 		slot3 = slot3.setElementButtonNew
@@ -1655,134 +1788,134 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot6.luaRenderItem = slot16
-	slot18 = slot8
-	slot16 = slot8.SetActive
-	slot19 = true
+	slot7.luaRenderItem = slot18
+	slot20 = slot9
+	slot18 = slot9.SetActive
+	slot21 = true
 
-	slot16(slot18, slot19)
+	slot18(slot20, slot21)
 
-	slot16 = slot3.genderIcon
-	slot12.url = slot16
-	slot16 = ClientTextUtils
-	slot16 = slot16.setText
-	slot18 = slot5
-	slot19 = slot3.petName
+	slot18 = slot3.genderIcon
+	slot13.url = slot18
+	slot18 = ClientTextUtils
+	slot18 = slot18.setText
+	slot20 = slot6
+	slot21 = slot3.petName
 
-	slot16(slot18, slot19)
+	slot18(slot20, slot21)
 
-	slot16 = ClientTextUtils
-	slot16 = slot16.setText
-	slot18 = slot9
-	slot19 = slot3.petName
+	slot18 = ClientTextUtils
+	slot18 = slot18.setText
+	slot20 = slot10
+	slot21 = slot3.petName
 
-	slot16(slot18, slot19)
+	slot18(slot20, slot21)
 
-	slot16 = ClientTextUtils
-	slot16 = slot16.setText
-	slot18 = slot10
-	slot19 = slot3.petName
+	slot18 = ClientTextUtils
+	slot18 = slot18.setText
+	slot20 = slot11
+	slot21 = slot3.petName
 
-	slot16(slot18, slot19)
+	slot18(slot20, slot21)
 
-	slot16 = ClientTextUtils
-	slot16 = slot16.setText
-	slot18 = slot7
-	slot19 = slot3.petCp
+	slot18 = ClientTextUtils
+	slot18 = slot18.setText
+	slot20 = slot8
+	slot21 = slot3.petCp
 
-	slot16(slot18, slot19)
+	slot18(slot20, slot21)
 
-	slot16 = PetLevelData
-	slot17 = slot3.petLevel
-	slot17 = slot17 + 1
-	slot16 = slot16[slot17]
+	slot18 = PetLevelData
+	slot19 = slot3.petLevel
+	slot19 = slot19 + 1
+	slot18 = slot18[slot19]
 	--- END OF BLOCK #5 ---
 
-	if slot16 ~= nil then
+	if slot18 ~= nil then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 97-103, warpins: 1 ---
-	slot16 = PetLevelData
-	slot17 = slot3.petLevel
-	slot17 = slot17 + 1
-	slot16 = slot16[slot17]
-	slot16 = slot16.needExp
+	--- BLOCK #6 101-107, warpins: 1 ---
+	slot18 = PetLevelData
+	slot19 = slot3.petLevel
+	slot19 = slot19 + 1
+	slot18 = slot18[slot19]
+	slot18 = slot18.needExp
 	--- END OF BLOCK #6 ---
 
-	slot16 = if not slot16 then
+	slot18 = if not slot18 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 104-104, warpins: 2 ---
-	slot16 = 0
+	--- BLOCK #7 108-108, warpins: 2 ---
+	slot18 = 0
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 105-119, warpins: 2 ---
-	slot17 = PetData
-	slot18 = slot3.templateId
-	slot17 = slot17[slot18]
-	slot18 = LuaUIUtils
-	slot18 = slot18.getElementInfo
-	slot20 = slot17.elementType
-	slot18, slot19 = slot18(slot20)
-	slot22 = slot6
-	slot20 = slot6.SetList
-	slot23 = slot19
+	--- BLOCK #8 109-123, warpins: 2 ---
+	slot19 = PetData
+	slot20 = slot3.templateId
+	slot19 = slot19[slot20]
+	slot20 = LuaUIUtils
+	slot20 = slot20.getElementInfo
+	slot22 = slot19.elementType
+	slot20, slot21 = slot20(slot22)
+	slot24 = slot7
+	slot22 = slot7.SetList
+	slot25 = slot21
 
-	slot20(slot22, slot23)
+	slot22(slot24, slot25)
 
-	slot22 = slot13
-	slot20 = slot13.SetActive
+	slot24 = slot14
+	slot22 = slot14.SetActive
 	--- END OF BLOCK #8 ---
 
-	slot23 = if slot19 then
+	slot25 = if slot21 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 120-123, warpins: 1 ---
-	slot23 = #slot19
-	slot24 = 0
+	--- BLOCK #9 124-127, warpins: 1 ---
+	slot25 = #slot21
+	slot26 = 0
 	--- END OF BLOCK #9 ---
 
-	if slot23 <= slot24 then
+	if slot25 <= slot26 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 124-125, warpins: 1 ---
-	slot23 = false
+	--- BLOCK #10 128-129, warpins: 1 ---
+	slot25 = false
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 126-126, warpins: 1 ---
-	slot23 = true
+	--- BLOCK #11 130-130, warpins: 1 ---
+	slot25 = true
 
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 127-131, warpins: 3 ---
-	slot20(slot22, slot23)
+	--- BLOCK #12 131-145, warpins: 3 ---
+	slot22(slot24, slot25)
 
-	slot20 = function()
+	slot22 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = pos
 		slot1 = INHERIT_POS
@@ -1846,7 +1979,48 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot14.luaClick = slot20
+	slot15.luaClick = slot22
+
+	slot22 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-18, warpins: 1 ---
+		slot3 = LuaUIUtils
+		slot3 = slot3.renderPetTagList
+		slot5 = slot0
+		slot6 = slot2
+
+		slot3(slot5, slot6)
+
+		slot3 = LuaUIUtils
+		slot3 = slot3.setPetTagLabelToolTip
+		slot5 = slot0
+		slot6 = LuaUIUtils
+		slot6 = slot6.getPetTagInfo
+		slot8 = petInfo
+		slot8 = slot8.templateId
+		slot9 = slot2.label
+		slot10 = slot2.bodySizeType
+		slot11 = slot2.shinyStyle
+		MULTRES = slot6(slot8, slot9, slot10, slot11)
+
+		slot3(slot5, MULTRES)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot16.luaRenderItem = slot22
+	slot22 = LuaUIUtils
+	slot22 = slot22.getPetTagList
+	slot24 = slot4
+	slot22 = slot22(slot24)
+	slot25 = slot16
+	slot23 = slot16.SetList
+	slot26 = slot22
+
+	slot23(slot25, slot26)
 
 	return
 	--- END OF BLOCK #12 ---

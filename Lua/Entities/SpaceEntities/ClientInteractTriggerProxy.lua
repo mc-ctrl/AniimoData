@@ -78,10 +78,8 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-21, warpins: 2 ---
+	--- BLOCK #4 16-19, warpins: 2 ---
 	slot0.clenUsrType = slot2
-	slot2 = true
-	slot0.isClientEnt = slot2
 	slot2 = slot1.interactLocalOffset
 	--- END OF BLOCK #4 ---
 
@@ -92,7 +90,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 22-22, warpins: 1 ---
+	--- BLOCK #5 20-20, warpins: 1 ---
 	slot2 = {
 		0,
 		0,
@@ -103,7 +101,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 23-37, warpins: 2 ---
+	--- BLOCK #6 21-35, warpins: 2 ---
 	slot0._interactLocalOffset = slot2
 	slot2 = slot1.interactiveDist
 	slot0._interactiveDist = slot2

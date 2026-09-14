@@ -54,7 +54,7 @@ slot13 = slot13.atan
 FLOW; TARGET BLOCK #4
 
 
---- BLOCK #4 27-341, warpins: 2 ---
+--- BLOCK #4 27-352, warpins: 2 ---
 slot14 = math
 slot14 = slot14.sqrt
 slot15 = math
@@ -69,17 +69,21 @@ slot19 = table
 slot19 = slot19.sort
 slot20 = math
 slot20 = slot20.min
-slot21 = require
-slot23 = "Core.Log.LoggerManager"
-slot21 = slot21(slot23)
-slot22 = require
-slot24 = "Core.Log.LoggerConst"
-slot22 = slot22(slot24)
-slot23 = slot21.getLogger
-slot25 = "lume"
+slot21 = math
+slot21 = slot21.exp
+slot22 = math
+slot22 = slot22.pi
+slot23 = require
+slot25 = "Core.Log.LoggerManager"
 slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Core.Log.LoggerConst"
+slot24 = slot24(slot26)
+slot25 = slot23.getLogger
+slot27 = "lume"
+slot25 = slot25(slot27)
 
-slot24 = function()
+slot26 = function()
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -88,7 +92,7 @@ slot24 = function()
 
 end
 
-slot25 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return slot0
 	--- END OF BLOCK #0 ---
@@ -97,7 +101,7 @@ slot25 = function(slot0)
 
 end
 
-slot26 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.gsub
@@ -111,7 +115,7 @@ slot26 = function(slot0)
 
 end
 
-slot27 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 0
 	--- END OF BLOCK #0 ---
@@ -151,7 +155,7 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot28 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -222,7 +226,7 @@ slot28 = function(slot0)
 
 end
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.isarray
@@ -307,7 +311,7 @@ slot29 = function(slot0)
 
 end
 
-slot30 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -449,7 +453,7 @@ slot30 = function(slot0)
 
 end
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = pairs
@@ -484,9 +488,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.tableLength = slot31
+slot0.tableLength = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -543,9 +547,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.clamp = slot31
+slot0.clamp = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -612,9 +616,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.round = slot31
+slot0.round = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = 0
 	--- END OF BLOCK #0 ---
@@ -649,9 +653,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.sign = slot31
+slot0.sign = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot1 - slot0
 	slot4 = lume
@@ -670,9 +674,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.lerp = slot31
+slot0.lerp = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = lume
 	slot3 = slot3.clamp
@@ -695,9 +699,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.smooth = slot31
+slot0.smooth = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = math_abs
 	slot3 = slot0 % 2
@@ -712,9 +716,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.pingpong = slot31
+slot0.pingpong = slot33
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0 - slot2
 	slot6 = slot1 - slot3
@@ -758,9 +762,9 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0.distance = slot31
+slot0.distance = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = slot0.x
 	slot3 = slot1.x
@@ -781,9 +785,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.getVector3Dot = slot31
+slot0.getVector3Dot = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.y
@@ -818,9 +822,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.getVector3Cross = slot31
+slot0.getVector3Cross = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.sqrt
@@ -843,9 +847,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.getVector3Module = slot31
+slot0.getVector3Module = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = lume
 	slot2 = slot2.getVector3Dot
@@ -899,9 +903,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.getVector3Angle = slot31
+slot0.getVector3Angle = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -954,9 +958,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.random = slot31
+slot0.random = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = #slot0
 
@@ -990,9 +994,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.randomchoice = slot31
+slot0.randomchoice = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = math_min
 	slot4 = #slot0
@@ -1036,9 +1040,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.randomchoiceN = slot31
+slot0.randomchoiceN = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = assert
 	slot5 = #slot0
@@ -1344,9 +1348,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.weightRandomChoiceN = slot31
+slot0.weightRandomChoiceN = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = assert
 	slot4 = #slot0
@@ -1532,9 +1536,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.weightRandomChoiceOne = slot31
+slot0.weightRandomChoiceOne = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = #slot0
 	--- END OF BLOCK #0 ---
@@ -1581,9 +1585,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.randomchoiceWithoutRepetition = slot31
+slot0.randomchoiceWithoutRepetition = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = assert
 	slot5 = slot1 - slot0
@@ -1684,9 +1688,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.uniquerandom = slot31
+slot0.uniquerandom = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = pairs
@@ -1816,9 +1820,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.weightedchoice = slot31
+slot0.weightedchoice = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = 0
 	slot3 = ipairs
@@ -1971,9 +1975,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.weightedchoicearray = slot31
+slot0.weightedchoicearray = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -2084,9 +2088,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.isarray = slot31
+slot0.isarray = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = select
 	slot3 = "#"
@@ -2124,9 +2128,9 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.push = slot31
+slot0.push = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pairs
 	slot3 = slot2
@@ -2204,9 +2208,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.remove = slot31
+slot0.remove = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ipairs
 	slot3 = slot2
@@ -2257,9 +2261,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.removeFromArr = slot31
+slot0.removeFromArr = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ipairs
 	slot3 = slot2
@@ -2337,9 +2341,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.iremove = slot31
+slot0.iremove = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -2383,9 +2387,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.disposeItem = slot31
+slot0.disposeItem = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2461,9 +2465,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.removeListItemWithDispose = slot31
+slot0.removeListItemWithDispose = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2508,9 +2512,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.removeAllListItemWithDispose = slot31
+slot0.removeAllListItemWithDispose = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2563,9 +2567,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.clear = slot31
+slot0.clear = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = 1
 	slot2 = select
@@ -2632,9 +2636,9 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.extend = slot31
+slot0.extend = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = 1
 	slot2 = select
@@ -2703,9 +2707,9 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.extendArrayInPlace = slot31
+slot0.extendArrayInPlace = slot33
 
-slot31 = function(...)
+slot33 = function(...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = 1
@@ -2775,9 +2779,9 @@ slot31 = function(...)
 
 end
 
-slot0.extendArray = slot31
+slot0.extendArray = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = lume
 	slot2 = slot2.clone
@@ -2885,9 +2889,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.sort = slot31
+slot0.sort = slot33
 
-slot31 = function(...)
+slot33 = function(...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = {}
 	slot1, slot2, slot3 = ...
@@ -2922,9 +2926,9 @@ slot31 = function(...)
 
 end
 
-slot0.array = slot31
+slot0.array = slot33
 
-slot31 = function(slot0, slot1, ...)
+slot33 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pairs
 	slot3 = type
@@ -3011,9 +3015,9 @@ slot31 = function(slot0, slot1, ...)
 
 end
 
-slot0.each = slot31
+slot0.each = slot33
 
-slot31 = function(slot0, slot1, ...)
+slot33 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = ipairs
 	slot3 = type
@@ -3100,9 +3104,9 @@ slot31 = function(slot0, slot1, ...)
 
 end
 
-slot0.ieach = slot31
+slot0.ieach = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -3145,9 +3149,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.map = slot31
+slot0.map = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -3190,9 +3194,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.imap = slot31
+slot0.imap = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -3248,9 +3252,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.all = slot31
+slot0.all = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -3306,9 +3310,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.iall = slot31
+slot0.iall = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -3364,9 +3368,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.any = slot31
+slot0.any = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -3422,9 +3426,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.iany = slot31
+slot0.iany = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2
 	--- END OF BLOCK #0 ---
@@ -3511,9 +3515,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.reduce = slot31
+slot0.reduce = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2
 	--- END OF BLOCK #0 ---
@@ -3600,9 +3604,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.ireduce = slot31
+slot0.ireduce = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -3642,9 +3646,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.set = slot31
+slot0.set = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = iteratee
 	slot5 = slot1
@@ -3752,9 +3756,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.filter = slot31
+slot0.filter = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = iteratee
 	slot5 = slot1
@@ -3862,9 +3866,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.ifilter = slot31
+slot0.ifilter = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = iteratee
 	slot5 = slot1
@@ -3972,9 +3976,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.reject = slot31
+slot0.reject = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = iteratee
 	slot5 = slot1
@@ -4082,9 +4086,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.ireject = slot31
+slot0.ireject = slot33
 
-slot31 = function(...)
+slot33 = function(...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = 1
@@ -4143,9 +4147,9 @@ slot31 = function(...)
 
 end
 
-slot0.merge = slot31
+slot0.merge = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4222,9 +4226,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.mergeInPlace = slot31
+slot0.mergeInPlace = slot33
 
-slot31 = function(...)
+slot33 = function(...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = 1
@@ -4295,9 +4299,9 @@ slot31 = function(...)
 
 end
 
-slot0.concat = slot31
+slot0.concat = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = 1
 	slot2 = select
@@ -4366,9 +4370,9 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.append = slot31
+slot0.append = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = #slot0
 	slot3 = 1
@@ -4398,85 +4402,105 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.appendArray = slot31
+slot0.appendArray = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot0 = if not slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot3 = pairs
-	slot5 = slot0
-	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-8, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #3
-
-
-	--- BLOCK #3 9-12, warpins: 2 ---
-	slot3 = pairs
-	slot5 = slot0
-	slot3, slot4, slot5 = slot3(slot5)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #4 13-14, warpins: 1 ---
-	--- END OF BLOCK #4 ---
-
-	if slot7 == slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 15-15, warpins: 1 ---
-	return slot6
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 16-17, warpins: 3 ---
-	--- END OF BLOCK #6 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 18-19, warpins: 1 ---
+	--- BLOCK #1 3-4, warpins: 1 ---
 	slot3 = nil
 
 	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 7-10, warpins: 1 ---
+	slot3 = pairs
+	slot5 = slot0
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-12, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 13-16, warpins: 2 ---
+	slot3 = pairs
+	slot5 = slot0
+	slot3, slot4, slot5 = slot3(slot5)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 17-18, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 19-19, warpins: 1 ---
+	return slot6
+
 	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 20-21, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 22-23, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot0.find = slot31
+slot0.find = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4543,9 +4567,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.findInList = slot31
+slot0.findInList = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -4592,9 +4616,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.findAll = slot31
+slot0.findAll = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -4650,9 +4674,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.match = slot31
+slot0.match = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = 0
 	slot3 = pairs
@@ -4745,9 +4769,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.count = slot31
+slot0.count = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4892,9 +4916,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.slice = slot31
+slot0.slice = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4929,9 +4953,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.first = slot31
+slot0.first = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4967,9 +4991,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.last = slot31
+slot0.last = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -5004,9 +5028,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.invert = slot31
+slot0.invert = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = 1
@@ -5042,9 +5066,9 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.pick = slot31
+slot0.pick = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = #slot0
 	slot2 = 2
@@ -5078,9 +5102,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.shuffle = slot31
+slot0.shuffle = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -5118,9 +5142,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.keys = slot31
+slot0.keys = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = iteratee
 	slot4 = slot1
@@ -5165,9 +5189,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.values = slot31
+slot0.values = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5218,9 +5242,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot0.clone = slot31
+slot0.clone = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -5255,9 +5279,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.iclone = slot31
+slot0.iclone = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = {}
 	slot4 = nil
@@ -5418,9 +5442,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot0.tonumstrkey = slot31
+slot0.tonumstrkey = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -5458,9 +5482,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.tostrkey = slot31
+slot0.tostrkey = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -5498,9 +5522,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.tonumkey = slot31
+slot0.tonumkey = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -5541,9 +5565,9 @@ slot31 = function(slot0)
 
 end
 
-slot0.tonumtable = slot31
+slot0.tonumtable = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = assert
 	slot3 = iscallable
@@ -5585,9 +5609,9 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.fn = slot31
+slot0.fn = slot33
 
-slot31 = function(slot0, ...)
+slot33 = function(slot0, ...)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.fn
@@ -5636,11 +5660,11 @@ slot31 = function(slot0, ...)
 
 end
 
-slot0.once = slot31
-slot31 = {}
-slot32 = {}
+slot0.once = slot33
+slot33 = {}
+slot34 = {}
 
-slot33 = function(slot0)
+slot35 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 
@@ -5750,9 +5774,9 @@ slot33 = function(slot0)
 
 end
 
-slot0.memoize = slot33
+slot0.memoize = slot35
 
-slot33 = function(...)
+slot35 = function(...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = select
 	slot2 = "#"
@@ -5934,9 +5958,9 @@ slot33 = function(...)
 
 end
 
-slot0.combine = slot33
+slot0.combine = slot35
 
-slot33 = function(slot0, ...)
+slot35 = function(slot0, ...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5965,9 +5989,9 @@ slot33 = function(slot0, ...)
 
 end
 
-slot0.call = slot33
+slot0.call = slot35
 
-slot33 = function(slot0, ...)
+slot35 = function(slot0, ...)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = os
 	slot1 = slot1.clock
@@ -5992,10 +6016,10 @@ slot33 = function(slot0, ...)
 
 end
 
-slot0.time = slot33
-slot33 = {}
+slot0.time = slot35
+slot35 = {}
 
-slot34 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = lambda_cache
 	slot1 = slot1[slot0]
@@ -6063,14 +6087,14 @@ slot34 = function(slot0)
 
 end
 
-slot0.lambda = slot34
-slot34 = nil
-slot35 = {}
-slot35.boolean = slot8
-slot35["nil"] = slot8
-slot35["function"] = slot8
+slot0.lambda = slot36
+slot36 = nil
+slot37 = {}
+slot37.boolean = slot8
+slot37["nil"] = slot8
+slot37["function"] = slot8
 
-slot36 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -6084,9 +6108,9 @@ slot36 = function(slot0)
 
 end
 
-slot35.string = slot36
+slot37.string = slot38
 
-slot36 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6158,9 +6182,9 @@ slot36 = function(slot0)
 
 end
 
-slot35.number = slot36
+slot37.number = slot38
 
-slot36 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6275,12 +6299,12 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot35.table = slot36
-slot36 = setmetatable
-slot38 = slot35
-slot39 = {}
+slot37.table = slot38
+slot38 = setmetatable
+slot40 = slot37
+slot41 = {}
 
-slot40 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -6319,11 +6343,11 @@ slot40 = function(slot0, slot1)
 
 end
 
-slot39.__index = slot40
+slot41.__index = slot42
 
-slot36(slot38, slot39)
+slot38(slot40, slot41)
 
-slot34 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = serialize_map
 	slot3 = type
@@ -6340,7 +6364,7 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot36 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = serialize
 	slot3 = slot0
@@ -6352,9 +6376,9 @@ slot36 = function(slot0)
 
 end
 
-slot0.serialize = slot36
+slot0.serialize = slot38
 
-slot36 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.dostring
@@ -6369,9 +6393,9 @@ slot36 = function(slot0)
 
 end
 
-slot0.deserialize = slot36
+slot0.deserialize = slot38
 
-slot36 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6457,9 +6481,9 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot0.split = slot36
+slot0.split = slot38
 
-slot36 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6503,9 +6527,9 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot0.trim = slot36
+slot0.trim = slot38
 
-slot36 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6714,9 +6738,9 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot0.wordwrap = slot36
+slot0.wordwrap = slot38
 
-slot36 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6802,9 +6826,9 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot0.format = slot36
+slot0.format = slot38
 
-slot36 = function(...)
+slot38 = function(...)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0 = debug
 	slot0 = slot0.getinfo
@@ -6914,9 +6938,9 @@ slot36 = function(...)
 
 end
 
-slot0.trace = slot36
+slot0.trace = slot38
 
-slot36 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = assert
 	slot3 = loadstring
@@ -6948,9 +6972,9 @@ slot36 = function(slot0)
 
 end
 
-slot0.dostring = slot36
+slot0.dostring = slot38
 
-slot36 = function()
+slot38 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = function(slot0)
 		--- BLOCK #0 1-6, warpins: 1 ---
@@ -7014,9 +7038,9 @@ slot36 = function()
 
 end
 
-slot0.uuid = slot36
+slot0.uuid = slot38
 
-slot36 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.clone
@@ -7356,9 +7380,9 @@ slot36 = function(slot0)
 
 end
 
-slot0.hotswap = slot36
+slot0.hotswap = slot38
 
-slot36 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot1 - 1
 	slot2 = slot0[slot1]
@@ -7389,7 +7413,7 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot37 = function(slot0)
+slot39 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = ripairs_iter
 	slot2 = slot0
@@ -7403,9 +7427,9 @@ slot37 = function(slot0)
 
 end
 
-slot0.ripairs = slot37
+slot0.ripairs = slot39
 
-slot37 = function(slot0, slot1)
+slot39 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7611,9 +7635,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot0.color = slot37
+slot0.color = slot39
 
-slot37 = function(slot0)
+slot39 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.r
 	--- END OF BLOCK #0 ---
@@ -7675,9 +7699,9 @@ slot37 = function(slot0)
 
 end
 
-slot0.hexColorCode = slot37
+slot0.hexColorCode = slot39
 
-slot37 = function(slot0)
+slot39 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = 0.00392156862745098
 	slot2 = math_floor
@@ -7711,9 +7735,9 @@ slot37 = function(slot0)
 
 end
 
-slot0.rgba = slot37
+slot0.rgba = slot39
 
-slot37 = function(slot0, slot1)
+slot39 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot1
@@ -7751,16 +7775,16 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot0.mergeList = slot37
-slot37 = {}
-slot38 = slot0.map
-slot40 = slot0.filter
-slot42 = slot0
-slot43 = slot28
-slot44 = true
-slot40 = slot40(slot42, slot43, slot44)
+slot0.mergeList = slot39
+slot39 = {}
+slot40 = slot0.map
+slot42 = slot0.filter
+slot44 = slot0
+slot45 = slot30
+slot46 = true
+slot42 = slot42(slot44, slot45, slot46)
 
-slot41 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = function(slot0, ...)
 		--- BLOCK #0 1-6, warpins: 1 ---
@@ -7784,11 +7808,11 @@ slot41 = function(slot0)
 
 end
 
-slot38 = slot38(slot40, slot41)
-slot37.__index = slot38
-slot38 = slot37.__index
+slot40 = slot40(slot42, slot43)
+slot39.__index = slot40
+slot40 = slot39.__index
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0._value
 
@@ -7799,9 +7823,9 @@ slot39 = function(slot0)
 
 end
 
-slot38.result = slot39
+slot40.result = slot41
 
-slot38 = function(slot0)
+slot40 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = setmetatable
 	slot3 = {}
@@ -7815,9 +7839,9 @@ slot38 = function(slot0)
 
 end
 
-slot0.chain = slot38
+slot0.chain = slot40
 
-slot38 = function(slot0)
+slot40 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = ipairs
@@ -7852,9 +7876,9 @@ slot38 = function(slot0)
 
 end
 
-slot0.sum = slot38
+slot0.sum = slot40
 
-slot38 = function(slot0)
+slot40 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.huge
@@ -7901,9 +7925,9 @@ slot38 = function(slot0)
 
 end
 
-slot0.max = slot38
+slot0.max = slot40
 
-slot38 = function(slot0)
+slot40 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.huge
@@ -7949,9 +7973,9 @@ slot38 = function(slot0)
 
 end
 
-slot0.min = slot38
+slot0.min = slot40
 
-slot38 = function(slot0)
+slot40 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = ipairs
@@ -8010,9 +8034,9 @@ slot38 = function(slot0)
 
 end
 
-slot0.average = slot38
+slot0.average = slot40
 
-slot38 = function(slot0, slot1)
+slot40 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -8090,9 +8114,9 @@ slot38 = function(slot0, slot1)
 
 end
 
-slot0.union = slot38
+slot0.union = slot40
 
-slot38 = function(slot0, slot1)
+slot40 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -8144,9 +8168,10 @@ slot38 = function(slot0, slot1)
 
 end
 
-slot0.intersection = slot38
+slot0.intersection = slot40
+slot40 = "checkIntersectionList"
 
-slot38 = function(slot0, slot1)
+slot41 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot0
@@ -8199,10 +8224,10 @@ slot38 = function(slot0, slot1)
 
 end
 
-slot0.checkIntersectionList = slot38
-slot38 = "difference"
+slot0[slot40] = slot41
+slot40 = "difference"
 
-slot39 = function(slot0, slot1)
+slot41 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -8254,10 +8279,10 @@ slot39 = function(slot0, slot1)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "limit"
+slot0[slot40] = slot41
+slot40 = "limit"
 
-slot39 = function(slot0, slot1, slot2)
+slot41 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8321,10 +8346,10 @@ slot39 = function(slot0, slot1, slot2)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "getMapLen"
+slot0[slot40] = slot41
+slot40 = "getMapLen"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = pairs
@@ -8359,10 +8384,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "getListLenWithNil"
+slot0[slot40] = slot41
+slot40 = "getListLenWithNil"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = pairs
@@ -8410,10 +8435,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "parseMaskToList"
+slot0[slot40] = slot41
+slot40 = "parseMaskToList"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = {}
 	slot2 = 1
@@ -8494,10 +8519,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "getTableKeys"
+slot0[slot40] = slot41
+slot40 = "getTableKeys"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -8550,10 +8575,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "getTableValues"
+slot0[slot40] = slot41
+slot40 = "getTableValues"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -8606,10 +8631,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "mapToList"
+slot0[slot40] = slot41
+slot40 = "mapToList"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -8665,10 +8690,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "listToCountMap"
+slot0[slot40] = slot41
+slot40 = "listToCountMap"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -8738,10 +8763,10 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "mergeCountMap"
+slot0[slot40] = slot41
+slot40 = "mergeCountMap"
 
-slot39 = function(slot0, slot1)
+slot41 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -8870,10 +8895,10 @@ slot39 = function(slot0, slot1)
 
 end
 
-slot0[slot38] = slot39
-slot38 = "reverseInPlace"
+slot0[slot40] = slot41
+slot40 = "reverseInPlace"
 
-slot39 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = #slot0
 	slot2 = math
@@ -8912,12 +8937,159 @@ slot39 = function(slot0)
 
 end
 
-slot0[slot38] = slot39
-slot38 = setmetatable
-slot40 = slot0
-slot41 = {}
+slot0[slot40] = slot41
+slot40 = "erf"
 
-slot42 = function(slot0, ...)
+slot41 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot0 < slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = -1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot1 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-35, warpins: 2 ---
+	slot2 = math_abs
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	slot0 = slot2
+	slot2 = 0.3275911 * slot0
+	slot2 = 1 + slot2
+	slot2 = 1 / slot2
+	slot3 = 0.254829592
+	slot4 = -0.284496736
+	slot5 = 1.421413741
+	slot6 = -1.453152027
+	slot7 = 1.061405429
+	slot8 = slot7 * slot2
+	slot8 = slot8 + slot6
+	slot8 = slot8 * slot2
+	slot8 = slot8 + slot5
+	slot8 = slot8 * slot2
+	slot8 = slot8 + slot4
+	slot8 = slot8 * slot2
+	slot8 = slot8 + slot3
+	slot8 = slot8 * slot2
+	slot9 = math_exp
+	slot11 = -slot0
+	slot11 = slot11 * slot0
+	slot9 = slot9(slot11)
+	slot8 = slot8 * slot9
+	slot8 = 1 - slot8
+	slot9 = slot1 * slot8
+
+	return slot9
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot0[slot40] = slot41
+slot40 = "norm_dist"
+
+slot41 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot2 <= slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot4 = nil
+
+	return slot4
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot4 = slot0 - slot1
+	slot4 = slot4 / slot2
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-20, warpins: 1 ---
+	slot5 = lume
+	slot5 = slot5.erf
+	slot7 = math_sqrt
+	slot9 = 2
+	slot7 = slot7(slot9)
+	slot7 = slot4 / slot7
+	slot5 = slot5(slot7)
+	slot5 = 1 + slot5
+	slot5 = 0.5 * slot5
+
+	return slot5
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 21-31, warpins: 1 ---
+	slot5 = math_exp
+	slot7 = -0.5 * slot4
+	slot7 = slot7 * slot4
+	slot5 = slot5(slot7)
+	slot6 = math_sqrt
+	slot8 = math_pi
+	slot8 = 2 * slot8
+	slot6 = slot6(slot8)
+	slot6 = slot2 * slot6
+	slot5 = slot5 / slot6
+
+	return slot5
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-32, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot0[slot40] = slot41
+slot40 = setmetatable
+slot42 = slot0
+slot43 = {}
+
+slot44 = function(slot0, ...)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.chain
@@ -8930,10 +9102,10 @@ slot42 = function(slot0, ...)
 
 end
 
-slot43 = "__call"
-slot41[slot43] = slot42
+slot45 = "__call"
+slot43[slot45] = slot44
 
-slot38(slot40, slot41)
+slot40(slot42, slot43)
 
 return slot0
 --- END OF BLOCK #4 ---

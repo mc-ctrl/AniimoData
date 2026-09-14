@@ -178,7 +178,7 @@ slot11 = function(slot0)
 	slot1 = slot1.cancelBtn
 
 	slot2 = function()
-		--- BLOCK #0 1-35, warpins: 1 ---
+		--- BLOCK #0 1-31, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.avatarScene
 		slot2 = slot0
@@ -214,10 +214,6 @@ slot11 = function(slot0)
 		slot0(slot2)
 
 		slot0 = self
-		slot0 = slot0.avatarScene
-		slot1 = false
-		slot0.pauseAutoSave = slot1
-		slot0 = self
 		slot0 = slot0.openData
 		slot0 = slot0.cancelCb
 		--- END OF BLOCK #0 ---
@@ -229,7 +225,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #1 36-39, warpins: 1 ---
+		--- BLOCK #1 32-35, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.openData
 		slot0 = slot0.cancelCb
@@ -241,7 +237,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 40-44, warpins: 2 ---
+		--- BLOCK #2 36-40, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.dismiss
@@ -361,7 +357,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 58-79, warpins: 2 ---
+		--- BLOCK #4 58-83, warpins: 2 ---
 		slot2 = self
 		slot2 = slot2.avatarScene
 		slot3 = false
@@ -378,6 +374,10 @@ slot11 = function(slot0)
 		slot7 = slot7.autoSaveData
 		slot7 = slot7.presetKey
 		slot6.presetKey = slot7
+		slot7 = self
+		slot7 = slot7.openData
+		slot7 = slot7.isFeedTrial
+		slot6.isFeedTrial = slot7
 
 		slot2(slot4, slot5, slot6)
 

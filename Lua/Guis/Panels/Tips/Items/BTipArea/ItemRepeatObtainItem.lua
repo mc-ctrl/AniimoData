@@ -1,4 +1,4 @@
---- BLOCK #0 1-70, warpins: 1 ---
+--- BLOCK #0 1-72, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -134,7 +134,7 @@ slot15 = function(slot0)
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot2 = slot2 + 5
 	slot1.endTime = slot2
 	slot4 = slot0
@@ -185,7 +185,7 @@ slot15 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -989,8 +989,168 @@ end
 
 slot10.renderItem = slot15
 
+slot15 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.SetHotKeyPaths
+	slot6 = "Hud/ItemDetail"
+
+	slot3(slot5, slot6)
+
+	slot3 = LuaUIUtils
+	slot3 = slot3.waitHotKeyContentObjectReference
+	slot5 = slot0
+	slot6 = slot2
+
+	slot7 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = IsNil
+		slot3 = propRepeatUButton
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #0 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-10, warpins: 1 ---
+		slot1 = IsNil
+		slot3 = hotKeyContent
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 11-11, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 12-30, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.clearHotKeyBindByPath
+		slot4 = hotKeyContent
+		slot4 = slot4.gameObject
+		slot5 = "Hud/ItemDetail"
+
+		slot1(slot3, slot4, slot5)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.bindHotKeyItemLongPress
+		slot4 = slot0
+		slot5 = {
+			path = "Hud/ItemDetail"
+		}
+		slot6 = hotKeyContent
+		slot6 = slot6.gameObject
+		slot5.hotKeyObject = slot6
+
+		slot6 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.uWidget
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-8, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.uWidget
+			slot0 = slot0.gameObject
+			slot0 = slot0.activeSelf
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 9-10, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #3 11-14, warpins: 1 ---
+			slot1 = propRepeatUButton
+			slot1 = slot1.luaClick
+			--- END OF BLOCK #3 ---
+
+			slot1 = if slot1 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 15-17, warpins: 1 ---
+			slot1 = propRepeatUButton
+			slot1 = slot1.luaClick
+
+			slot1()
+
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+			--- BLOCK #5 18-18, warpins: 3 ---
+			return
+			--- END OF BLOCK #5 ---
+
+
+
+		end
+
+		slot5.longPressFunc = slot6
+
+		slot1(slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 31-31, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot10.bindDetailLongPress = slot15
+
 slot15 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-35, warpins: 1 ---
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot4 = slot0.uWidget
 	slot4 = slot4.content
 	slot6 = slot4
@@ -1005,74 +1165,6 @@ slot15 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot4.GetRefValue
 	slot9 = "keyHotKeyContent"
 	slot6 = slot6(slot8, slot9)
-	slot7 = LuaUIUtils
-	slot7 = slot7.bindHotKey
-	slot9 = slot6.gameObject
-	slot10 = "Hud/ItemDetail"
-
-	slot11 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.uWidget
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.uWidget
-		slot0 = slot0.gameObject
-		slot0 = slot0.activeSelf
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 9-10, warpins: 2 ---
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 11-13, warpins: 1 ---
-		slot1 = propRepeatUButton
-		slot1 = slot1.luaClick
-
-		slot1()
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 14-14, warpins: 2 ---
-		return
-		--- END OF BLOCK #4 ---
-
-
-
-	end
-
-	slot12 = slot6
-	slot13 = 100
-
-	slot7(slot9, slot10, slot11, slot12, slot13)
-
-	slot9 = slot6
-	slot7 = slot6.SetHotKeyPaths
-	slot10 = "Hud/ItemDetail"
-
-	slot7(slot9, slot10)
-
 	slot7 = PiecesItemSpecialData
 	slot8 = tonumber
 	slot10 = slot3
@@ -1206,6 +1298,12 @@ slot15 = function(slot0, slot1, slot2, slot3)
 	end
 
 	slot5.luaClick = slot8
+	slot10 = slot0
+	slot8 = slot0.bindDetailLongPress
+	slot11 = slot5
+	slot12 = slot6
+
+	slot8(slot10, slot11, slot12)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1217,7 +1315,7 @@ end
 slot10.setClickDetail = slot15
 
 slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-30, warpins: 1 ---
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = slot0.uWidget
 	slot2 = slot2.content
 	slot4 = slot2
@@ -1232,73 +1330,6 @@ slot15 = function(slot0, slot1)
 	slot4 = slot2.GetRefValue
 	slot7 = "keyHotKeyContent"
 	slot4 = slot4(slot6, slot7)
-	slot5 = LuaUIUtils
-	slot5 = slot5.bindHotKey
-	slot7 = slot4.gameObject
-	slot8 = "Hud/ItemDetail"
-
-	slot9 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.uWidget
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.uWidget
-		slot0 = slot0.gameObject
-		slot0 = slot0.activeSelf
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 9-10, warpins: 2 ---
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 11-13, warpins: 1 ---
-		slot1 = propRepeatUButton
-		slot1 = slot1.luaClick
-
-		slot1()
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 14-14, warpins: 2 ---
-		return
-		--- END OF BLOCK #4 ---
-
-
-
-	end
-
-	slot10 = slot4
-	slot11 = 100
-
-	slot5(slot7, slot8, slot9, slot10, slot11)
-
-	slot7 = slot4
-	slot5 = slot4.SetHotKeyPaths
-	slot8 = "Hud/ItemDetail"
-
-	slot5(slot7, slot8)
 
 	slot5 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
@@ -1341,6 +1372,12 @@ slot15 = function(slot0, slot1)
 	end
 
 	slot3.luaClick = slot5
+	slot7 = slot0
+	slot5 = slot0.bindDetailLongPress
+	slot8 = slot3
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---

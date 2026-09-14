@@ -7,25 +7,25 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	version = 13,
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/_Test/PBT_Test_TurnToPos",
 	agenttype = "CombatAgent",
-	version = 13
+	name = "ParmonBehaviorTree/SubTree/_Test/PBT_Test_TurnToPos"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
 	value = "0",
+	const = 0,
 	name = "tSensorTgtId",
-	const = 0
+	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "vector<float>",
 	value = "0:",
-	name = "tSensorTgtPos"
+	name = "tSensorTgtPos",
+	type = "vector<float>"
 }
 slot6 = {}
 slot5.const = slot6

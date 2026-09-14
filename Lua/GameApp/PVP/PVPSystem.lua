@@ -595,11 +595,11 @@ slot11 = function(slot0)
 	slot1 = slot1.game
 	slot1 = slot1.audio
 	slot3 = slot1
-	slot1 = slot1.trySetState
+	slot1 = slot1.setAttenGroupState
 	slot4 = AudioConst
-	slot4 = slot4.STATE_GROUP_ATTENUATION
-	slot5 = AudioConst
-	slot5 = slot5.ATTENUATION_STATE_ID_NORMAL
+	slot4 = slot4.AttenGroupStateReason
+	slot4 = slot4.PVP
+	slot5 = false
 
 	slot1(slot3, slot4, slot5)
 
@@ -769,7 +769,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-35, warpins: 2 ---
+	--- BLOCK #2 8-34, warpins: 2 ---
 	slot1 = nil
 	slot0.timer = slot1
 	slot1 = pg
@@ -794,53 +794,16 @@ slot11 = function(slot0)
 
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #2 ---
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_HUD_V2
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 36-39, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD_V2
-	--- END OF BLOCK #3 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 40-41, warpins: 2 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 42-49, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = slot1
-
-	slot2(slot4, slot5)
+	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 

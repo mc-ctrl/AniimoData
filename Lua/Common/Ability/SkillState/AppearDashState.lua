@@ -42,12 +42,20 @@ slot16 = 2
 slot17 = "Intermediate"
 
 slot18 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot5 = SkillState
 	slot5 = slot5.enter
 	slot7 = slot0
 
 	slot5(slot7)
+
+	slot7 = slot0
+	slot5 = slot0.clearDisplacementVelocitySource
+	slot8 = Const
+	slot8 = slot8.DisplacementVelocitySource
+	slot8 = slot8.AppearDash
+
+	slot5(slot7, slot8)
 
 	slot0.oldTemplateId = slot2
 	slot0.exitCallback = slot3
@@ -70,7 +78,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #1 17-23, warpins: 1 ---
+	--- BLOCK #1 23-29, warpins: 1 ---
 	slot5 = slot0.owner
 	slot7 = slot5
 	slot5 = slot5.pauseBt
@@ -85,7 +93,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 24-31, warpins: 2 ---
+	--- BLOCK #2 30-37, warpins: 2 ---
 	slot5 = true
 	slot0.isBlendIn = slot5
 	slot5 = slot0.owner
@@ -101,7 +109,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #3 32-40, warpins: 1 ---
+	--- BLOCK #3 38-46, warpins: 1 ---
 	slot5 = slot0.owner
 	slot7 = slot5
 	slot5 = slot5.getMasterEntity
@@ -118,7 +126,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #4 41-50, warpins: 1 ---
+	--- BLOCK #4 47-56, warpins: 1 ---
 	slot6 = require
 	slot8 = "Const.ClientConst"
 	slot6 = slot6(slot8)
@@ -136,14 +144,15 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 51-121, warpins: 2 ---
+	--- BLOCK #5 57-128, warpins: 2 ---
 	slot6 = slot0.owner
 	slot6 = slot6.eModel
-	slot6 = slot6.motionComponent
 	slot8 = slot6
 	slot6 = slot6.DisableSteering
+	slot9 = Const
+	slot9 = slot9.COMPONENT_MOTION
 
-	slot6(slot8)
+	slot6(slot8, slot9)
 
 	slot6 = slot5.lastPetPosition
 	slot6 = slot6 - slot4
@@ -219,7 +228,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 122-146, warpins: 2 ---
+	--- BLOCK #6 129-152, warpins: 2 ---
 	slot5 = slot0.owner
 	slot7 = slot5
 	slot5 = slot5.deformTo
@@ -250,9 +259,8 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot5 = slot0.owner
 	slot5 = slot5.eModel
-	slot5 = slot5.playableComponent
 	slot6 = 0
-	slot5.Speed = slot6
+	slot5.PlayableSpeed = slot6
 	slot5 = Utils
 	slot5 = slot5.checkClient
 	slot5 = slot5()
@@ -265,7 +273,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #7 147-156, warpins: 1 ---
+	--- BLOCK #7 153-162, warpins: 1 ---
 	slot5 = require
 	slot7 = "Const.ClientConst"
 	slot5 = slot5(slot7)
@@ -283,7 +291,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 157-157, warpins: 2 ---
+	--- BLOCK #8 163-163, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -434,18 +442,15 @@ end
 slot12.checkEndPhase = slot18
 
 slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-42, warpins: 1 ---
+	--- BLOCK #0 1-39, warpins: 1 ---
 	slot2 = slot0.owner
 	slot2 = slot2.eModel
-	slot2 = slot2.playableComponent
 	slot3 = 0
-	slot2.Speed = slot3
+	slot2.PlayableSpeed = slot3
 	slot2 = 100
 	slot3 = slot0.owner
 	slot3 = slot3.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
-	slot3 = slot3.shaderView
+	slot3 = slot3.modelShaderView
 	slot5 = slot3
 	slot3 = slot3.SetMorphEnable
 	slot6 = true
@@ -490,7 +495,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 43-46, warpins: 1 ---
+	--- BLOCK #1 40-43, warpins: 1 ---
 	slot7 = slot0.totalOffset
 	slot7 = slot7 / 2
 	--- END OF BLOCK #1 ---
@@ -502,7 +507,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 47-58, warpins: 1 ---
+	--- BLOCK #2 44-55, warpins: 1 ---
 	slot7 = false
 	slot0.isBlendIn = slot7
 	slot2 = 100
@@ -530,7 +535,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 59-70, warpins: 1 ---
+	--- BLOCK #3 56-67, warpins: 1 ---
 	slot7 = slot0.totalOffset
 	slot7 = slot7 / 2
 	slot7 = slot6 / slot7
@@ -547,7 +552,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 71-92, warpins: 1 ---
+	--- BLOCK #4 68-89, warpins: 1 ---
 	slot7 = slot0.totalOffset
 	slot7 = slot7 / 2
 	slot7 = slot6 - slot7
@@ -575,11 +580,10 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 93-107, warpins: 3 ---
+	--- BLOCK #5 90-103, warpins: 3 ---
 	slot7 = slot0.owner
 	slot7 = slot7.eModel
-	slot7 = slot7.modelComponent
-	slot7 = slot7.modelView
+	slot7 = slot7.modelModelView
 	slot9 = slot7
 	slot7 = slot7.SetBlendShapeWeight
 	slot10 = BLEND_SHAPE_NAME
@@ -596,11 +600,11 @@ slot18 = function(slot0, slot1)
 	if slot7 == slot8 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #6 108-111, warpins: 1 ---
+	--- BLOCK #6 104-107, warpins: 1 ---
 	slot7 = slot0.phase
 	slot8 = MOVE_PHASE_NONE
 
@@ -613,7 +617,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 112-113, warpins: 1 ---
+	--- BLOCK #7 108-109, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #7 ---
@@ -621,7 +625,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 114-116, warpins: 2 ---
+	--- BLOCK #8 110-112, warpins: 2 ---
 	slot7 = slot0.firstEnter
 	--- END OF BLOCK #8 ---
 
@@ -632,7 +636,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 117-120, warpins: 1 ---
+	--- BLOCK #9 113-116, warpins: 1 ---
 	slot7 = slot0.velocity
 	slot8 = 0
 	--- END OF BLOCK #9 ---
@@ -644,7 +648,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 121-129, warpins: 1 ---
+	--- BLOCK #10 117-125, warpins: 1 ---
 	slot7 = slot0.owner
 	slot7 = slot7.skillStateMgr
 	slot9 = slot7
@@ -661,7 +665,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 130-139, warpins: 3 ---
+	--- BLOCK #11 126-135, warpins: 3 ---
 	slot7 = false
 	slot0.firstEnter = slot7
 	slot9 = slot0
@@ -681,7 +685,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 140-150, warpins: 1 ---
+	--- BLOCK #12 136-146, warpins: 1 ---
 	slot8 = slot0.velocity
 	slot9 = AbilitySettingGlobalConstData
 	slot9 = slot9.appearDashAcceleration
@@ -700,7 +704,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 151-162, warpins: 1 ---
+	--- BLOCK #13 147-158, warpins: 1 ---
 	slot8 = AbilitySettingGlobalConstData
 	slot8 = slot8.appearDashDesireSpeed
 	slot0.velocity = slot8
@@ -719,7 +723,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #14 163-166, warpins: 1 ---
+	--- BLOCK #14 159-162, warpins: 1 ---
 	slot8 = slot0.phase
 	slot9 = DECELERATE_PHASE
 	--- END OF BLOCK #14 ---
@@ -731,7 +735,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 167-169, warpins: 1 ---
+	--- BLOCK #15 163-165, warpins: 1 ---
 	slot8 = slot0.deceleration
 	--- END OF BLOCK #15 ---
 
@@ -742,7 +746,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 170-171, warpins: 1 ---
+	--- BLOCK #16 166-167, warpins: 1 ---
 	slot8 = AbilitySettingGlobalConstData
 	slot8 = slot8.appearDashAcceleration
 	--- END OF BLOCK #16 ---
@@ -750,7 +754,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 172-179, warpins: 2 ---
+	--- BLOCK #17 168-175, warpins: 2 ---
 	slot9 = slot0.velocity
 	slot10 = slot8 * slot1
 	slot9 = slot9 - slot10
@@ -766,7 +770,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 180-181, warpins: 1 ---
+	--- BLOCK #18 176-177, warpins: 1 ---
 	slot9 = 0
 	slot0.velocity = slot9
 	--- END OF BLOCK #18 ---
@@ -774,7 +778,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 182-212, warpins: 5 ---
+	--- BLOCK #19 178-208, warpins: 5 ---
 	slot8 = slot0.owner
 	slot8 = slot8.eModel
 	slot10 = slot8
@@ -815,7 +819,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 213-223, warpins: 1 ---
+	--- BLOCK #20 209-219, warpins: 1 ---
 	slot9 = slot0.owner
 	slot9 = slot9.logger
 	slot11 = slot9
@@ -834,7 +838,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 224-239, warpins: 2 ---
+	--- BLOCK #21 220-237, warpins: 2 ---
 	slot9 = Vector3
 	slot9 = slot9.disableCreateFromCache
 
@@ -846,40 +850,25 @@ slot18 = function(slot0, slot1)
 	slot10 = slot0.moveDir
 	slot11 = slot1 * slot9
 	slot10 = slot10 * slot11
-	slot11 = NotNil
-	slot13 = slot0.owner
-	slot13 = slot13.eModel
-	slot13 = slot13.motionComponent
-	slot11 = slot11(slot13)
+	slot13 = slot0
+	slot11 = slot0.setDisplacementVelocitySource
+	slot14 = Const
+	slot14 = slot14.DisplacementVelocitySource
+	slot14 = slot14.AppearDash
+	slot15 = slot10
+	slot16 = slot1
+	slot17 = true
+
+	slot11(slot13, slot14, slot15, slot16, slot17)
+
 	--- END OF BLOCK #21 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 240-248, warpins: 1 ---
-	slot11 = slot0.owner
-	slot11 = slot11.eModel
-	slot11 = slot11.motionComponent
-	slot13 = slot11
-	slot11 = slot11.AddDisplacementOffset
-	slot14 = slot10
-	slot15 = true
-	slot16 = true
-
-	slot11(slot13, slot14, slot15, slot16)
-
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 249-249, warpins: 3 ---
+	--- BLOCK #22 238-238, warpins: 2 ---
 	return
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #22 ---
 
 
 
@@ -888,7 +877,15 @@ end
 slot12.tick = slot18
 
 slot18 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearDisplacementVelocitySource
+	slot4 = Const
+	slot4 = slot4.DisplacementVelocitySource
+	slot4 = slot4.AppearDash
+
+	slot1(slot3, slot4)
+
 	slot3 = slot0
 	slot1 = slot0.restoreKccFullSimulation
 
@@ -907,7 +904,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-20, warpins: 1 ---
+	--- BLOCK #1 16-26, warpins: 1 ---
 	slot1 = AnimationUtils
 	slot1 = slot1.playAnimationState
 	slot3 = slot0.owner
@@ -928,7 +925,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #2 21-30, warpins: 1 ---
+	--- BLOCK #2 27-36, warpins: 1 ---
 	slot1 = require
 	slot3 = "Const.ClientConst"
 	slot1 = slot1(slot3)
@@ -946,20 +943,20 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 31-46, warpins: 2 ---
+	--- BLOCK #3 37-52, warpins: 2 ---
 	slot1 = slot0.owner
 	slot1 = slot1.eModel
-	slot1 = slot1.motionComponent
 	slot3 = slot1
 	slot1 = slot1.DefaultSteeringMode
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MOTION
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = slot0.owner
 	slot1 = slot1.eModel
-	slot1 = slot1.playableComponent
 	slot2 = 1
-	slot1.Speed = slot2
+	slot1.PlayableSpeed = slot2
 	slot1 = slot0.owner
 	slot3 = slot1
 	slot1 = slot1.serverMsgNoGC
@@ -972,7 +969,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 47-49, warpins: 2 ---
+	--- BLOCK #4 53-55, warpins: 2 ---
 	slot1 = slot0.exitCallback
 	--- END OF BLOCK #4 ---
 
@@ -983,7 +980,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #5 50-51, warpins: 1 ---
+	--- BLOCK #5 56-57, warpins: 1 ---
 	slot1 = slot0.exitCallback
 
 	slot1()
@@ -993,7 +990,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 52-59, warpins: 2 ---
+	--- BLOCK #6 58-65, warpins: 2 ---
 	slot1 = SkillState
 	slot1 = slot1.leave
 	slot3 = slot0
@@ -1011,7 +1008,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #7 60-66, warpins: 1 ---
+	--- BLOCK #7 66-72, warpins: 1 ---
 	slot1 = slot0.owner
 	slot3 = slot1
 	slot1 = slot1.resumeBt
@@ -1026,34 +1023,60 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 67-69, warpins: 2 ---
+	--- BLOCK #8 73-75, warpins: 2 ---
 	slot1 = slot0.virtualEntity
 	--- END OF BLOCK #8 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 70-73, warpins: 1 ---
+	--- BLOCK #9 76-80, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.checkClient
+	slot1 = slot1()
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 81-87, warpins: 1 ---
+	slot1 = require
+	slot3 = "Utils.ClientUtils"
+	slot1 = slot1(slot3)
+	slot2 = slot1.safeDestroy
+	slot4 = slot0.virtualEntity
+
+	slot2(slot4)
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 88-91, warpins: 1 ---
 	slot1 = slot0.virtualEntity
 	slot3 = slot1
 	slot1 = slot1.destroy
 
 	slot1(slot3)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #10 74-118, warpins: 2 ---
+	--- BLOCK #12 92-132, warpins: 3 ---
 	slot1 = slot0.owner
 	slot1 = slot1.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot3 = slot1
 	slot1 = slot1.SetBlendShapeWeight
 	slot4 = BLEND_SHAPE_NAME
@@ -1069,8 +1092,7 @@ slot18 = function(slot0)
 
 	slot1 = slot0.owner
 	slot1 = slot1.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot3 = slot1
 	slot1 = slot1.SetBlendShapeWeight
 	slot4 = BLEND_SHAPE_NAME
@@ -1091,9 +1113,7 @@ slot18 = function(slot0)
 
 	slot1 = slot0.owner
 	slot1 = slot1.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
-	slot1 = slot1.shaderView
+	slot1 = slot1.modelShaderView
 	slot3 = slot1
 	slot1 = slot1.SetMorphEnable
 	slot4 = false
@@ -1103,16 +1123,16 @@ slot18 = function(slot0)
 	slot1 = Utils
 	slot1 = slot1.checkClient
 	slot1 = slot1()
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 119-128, warpins: 1 ---
+	--- BLOCK #13 133-142, warpins: 1 ---
 	slot1 = require
 	slot3 = "Const.ClientConst"
 	slot1 = slot1(slot3)
@@ -1125,12 +1145,12 @@ slot18 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #12 129-135, warpins: 2 ---
+	--- BLOCK #14 143-149, warpins: 2 ---
 	slot1 = 1.2
 	slot2 = slot0.owner
 	slot4 = slot2
@@ -1140,7 +1160,7 @@ slot18 = function(slot0)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 
 

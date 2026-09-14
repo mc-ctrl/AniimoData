@@ -144,15 +144,18 @@ slot17 = function(slot0, slot1, slot2)
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
+	--- BLOCK #1 4-11, warpins: 1 ---
 	slot3 = slot0.centerPos
-	slot4 = IsNil
-	slot6 = slot1.eModel
-	slot4 = slot4(slot6)
+	slot6 = slot1
+	slot4 = slot1.hasEModelComponent
+	slot7 = Const
+	slot7 = slot7.COMPONENT_IDX_PHYSX
+	slot4 = slot4(slot6, slot7)
+
 	--- END OF BLOCK #1 ---
 
 	slot4 = if not slot4 then
@@ -162,35 +165,21 @@ slot17 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 10-15, warpins: 1 ---
-	slot4 = IsNil
-	slot6 = slot1.eModel
-	slot6 = slot6.physxComponent
-	slot4 = slot4(slot6)
+	--- BLOCK #2 12-12, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-16, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-37, warpins: 2 ---
+	--- BLOCK #3 13-34, warpins: 2 ---
 	slot4 = slot1.eModel
-	slot4 = slot4.physxComponent
 	slot6 = slot4
 	slot4 = slot4.GetHeightRange
-	slot4, slot5 = slot4(slot6)
+	slot7 = Const
+	slot7 = slot7.COMPONENT_IDX_PHYSX
+	slot4, slot5 = slot4(slot6, slot7)
 	slot6 = math
 	slot6 = slot6.max
 	slot8 = slot3.y
@@ -205,16 +194,16 @@ slot17 = function(slot0, slot1, slot2)
 	slot9 = slot9 + slot10
 	slot10 = slot5
 	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 	if slot7 <= slot6 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 38-42, warpins: 1 ---
+	--- BLOCK #4 35-39, warpins: 1 ---
 	slot8 = CombatLogger
 	slot8 = slot8.error
 	slot10 = "wrong heightRange"
@@ -223,53 +212,53 @@ slot17 = function(slot0, slot1, slot2)
 
 	return
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 43-47, warpins: 2 ---
+	--- BLOCK #5 40-44, warpins: 2 ---
 	slot8 = slot3.y
 	slot9 = slot0.yOffset
 	slot8 = slot8 + slot9
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 	if slot6 <= slot8 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 48-49, warpins: 1 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #6 45-46, warpins: 1 ---
+	--- END OF BLOCK #6 ---
 
 	if slot8 <= slot7 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 50-52, warpins: 1 ---
+	--- BLOCK #7 47-49, warpins: 1 ---
 	slot9 = slot2.hitPos
 	slot9.y = slot8
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 50-51, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #9 53-54, warpins: 2 ---
-	--- END OF BLOCK #9 ---
-
 	if slot8 < slot6 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #10 55-64, warpins: 1 ---
+	--- BLOCK #9 52-61, warpins: 1 ---
 	slot9 = math
 	slot9 = slot9.random
 	slot9 = slot9()
@@ -279,12 +268,12 @@ slot17 = function(slot0, slot1, slot2)
 	slot11 = slot11 * slot9
 	slot11 = slot6 + slot11
 	slot10.y = slot11
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #11 65-73, warpins: 1 ---
+	--- BLOCK #10 62-70, warpins: 1 ---
 	slot9 = math
 	slot9 = slot9.random
 	slot9 = slot9()
@@ -295,14 +284,14 @@ slot17 = function(slot0, slot1, slot2)
 	slot11 = slot7 - slot11
 	slot10.y = slot11
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #12 74-74, warpins: 4 ---
+	--- BLOCK #11 71-71, warpins: 4 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 
 
@@ -430,11 +419,12 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 40-45, warpins: 2 ---
+	--- BLOCK #10 40-46, warpins: 2 ---
 	slot6 = Utils
 	slot6 = slot6.checkValidTarget
 	slot8 = slot2
-	slot6 = slot6(slot8)
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #10 ---
 
 	slot6 = if not slot6 then
@@ -444,7 +434,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 46-47, warpins: 1 ---
+	--- BLOCK #11 47-48, warpins: 1 ---
 	slot6 = false
 
 	return slot6
@@ -454,7 +444,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 48-49, warpins: 2 ---
+	--- BLOCK #12 49-50, warpins: 2 ---
 	slot6 = true
 
 	return slot6
@@ -559,11 +549,12 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 29-34, warpins: 2 ---
+	--- BLOCK #8 29-35, warpins: 2 ---
 	slot4 = Utils
 	slot4 = slot4.checkValidTarget
 	slot6 = slot2
-	slot4 = slot4(slot6)
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #8 ---
 
 	slot4 = if not slot4 then
@@ -573,7 +564,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #9 35-36, warpins: 1 ---
+	--- BLOCK #9 36-37, warpins: 1 ---
 	slot4 = true
 
 	return slot4
@@ -583,7 +574,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 37-38, warpins: 2 ---
+	--- BLOCK #10 38-39, warpins: 2 ---
 	slot4 = false
 
 	return slot4
@@ -764,7 +755,126 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 79-97, warpins: 2 ---
+	--- BLOCK #12 79-81, warpins: 2 ---
+	slot15 = slot6.useHitBox
+	--- END OF BLOCK #12 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #13 82-83, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 84-90, warpins: 1 ---
+	slot15 = LoggerManager
+	slot15 = slot15.checkLogger
+	slot17 = LoggerConst
+	slot17 = slot17.DEBUG
+	slot15 = slot15(slot17)
+	--- END OF BLOCK #14 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 91-94, warpins: 1 ---
+	slot15 = CombatLogger
+	slot15 = slot15.debug
+	slot17 = "partIdx is nil"
+
+	slot15(slot17)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 95-96, warpins: 2 ---
+	slot15 = true
+
+	return slot15
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 97-104, warpins: 3 ---
+	slot15 = Utils
+	slot15 = slot15.checkRelation
+	slot17 = slot9
+	slot18 = slot6
+	slot19 = slot0.relation
+	slot15 = slot15(slot17, slot18, slot19)
+	--- END OF BLOCK #17 ---
+
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 105-106, warpins: 1 ---
+	slot15 = true
+
+	return slot15
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 107-111, warpins: 2 ---
+	slot15 = ToBool
+	slot17 = slot0.maxNum
+	slot15 = slot15(slot17)
+	--- END OF BLOCK #19 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 112-115, warpins: 1 ---
+	slot15 = slot0.curNum
+	slot16 = slot0.maxNum
+	--- END OF BLOCK #20 ---
+
+	if slot16 <= slot15 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 116-117, warpins: 1 ---
+	slot15 = true
+
+	return slot15
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 118-152, warpins: 3 ---
 	slot15 = pg
 	slot15 = slot15.global
 	slot15 = slot15.abilityMgr
@@ -781,125 +891,6 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot20 = slot5
 	slot16 = slot16(slot18, slot19, slot20)
 	slot15.hitPos = slot16
-	slot16 = slot6.useHitBox
-	--- END OF BLOCK #12 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #13 98-99, warpins: 1 ---
-	--- END OF BLOCK #13 ---
-
-	if slot2 == nil then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #14 100-106, warpins: 1 ---
-	slot16 = LoggerManager
-	slot16 = slot16.checkLogger
-	slot18 = LoggerConst
-	slot18 = slot18.DEBUG
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #14 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 107-110, warpins: 1 ---
-	slot16 = CombatLogger
-	slot16 = slot16.debug
-	slot18 = "partIdx is nil"
-
-	slot16(slot18)
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 111-112, warpins: 2 ---
-	slot16 = true
-
-	return slot16
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 113-120, warpins: 3 ---
-	slot16 = Utils
-	slot16 = slot16.checkRelation
-	slot18 = slot9
-	slot19 = slot6
-	slot20 = slot0.relation
-	slot16 = slot16(slot18, slot19, slot20)
-	--- END OF BLOCK #17 ---
-
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 121-122, warpins: 1 ---
-	slot16 = true
-
-	return slot16
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 123-127, warpins: 2 ---
-	slot16 = ToBool
-	slot18 = slot0.maxNum
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #19 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #20 128-131, warpins: 1 ---
-	slot16 = slot0.curNum
-	slot17 = slot0.maxNum
-	--- END OF BLOCK #20 ---
-
-	if slot17 <= slot16 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 132-133, warpins: 1 ---
-	slot16 = true
-
-	return slot16
-
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 134-152, warpins: 3 ---
 	slot18 = slot9
 	slot16 = slot9.addHitTargetActorId
 	slot19 = slot6.actorId
@@ -1220,7 +1211,7 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	--- BLOCK #42 290-295, warpins: 1 ---
 	slot18 = require
-	slot20 = "Utils.ClientSwitch"
+	slot20 = "Common.ClientSwitch"
 	slot18 = slot18(slot20)
 	slot19 = slot18.EnableDrawAbilityGizmo
 	--- END OF BLOCK #42 ---

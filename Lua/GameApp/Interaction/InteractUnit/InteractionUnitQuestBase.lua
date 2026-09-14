@@ -1,4 +1,4 @@
---- BLOCK #0 1-39, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -459,7 +459,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
 	--- BLOCK #2 18-22, warpins: 1 ---
@@ -471,7 +471,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	if slot1 == slot5 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
@@ -490,29 +490,53 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #4 29-34, warpins: 1 ---
-	slot6 = slot5.deliverType
-	slot7 = QuestConst
-	slot7 = slot7.QUEST_SUBMIT_TYPE
-	slot7 = slot7.AUTO
-
+	slot6 = QuestUtils
+	slot6 = slot6.isQuestDeliverType
+	slot8 = slot2
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #4 ---
 
-	if slot6 == slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 35-36, warpins: 2 ---
-	return
+	--- BLOCK #5 35-39, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.refreshInteractAfterQuestChanged
+
+	slot6(slot8)
 
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 37-46, warpins: 2 ---
+	--- BLOCK #6 40-41, warpins: 1 ---
+	slot6 = slot3
+
+	slot6()
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 42-43, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 44-53, warpins: 2 ---
 	slot6 = pg
 	slot6 = slot6.me
 	slot8 = slot6
@@ -571,20 +595,76 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 47-48, warpins: 3 ---
+	--- BLOCK #9 54-55, warpins: 3 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
 slot7.triggerQuestDialogueCallback = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.interactEntity
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.refreshInteractTrigger
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-12, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.refreshInteractInfoByEntity
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-20, warpins: 3 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.interaction
+	slot4 = slot2
+	slot2 = slot2.refreshInteraction
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot7.refreshInteractAfterQuestChanged = slot8
 
 slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---

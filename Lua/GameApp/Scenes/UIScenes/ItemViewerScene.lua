@@ -1,32 +1,35 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
-slot2 = "Utils.ClientModelUtils"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Utils.ClientModelUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.UIScene.UISceneBase"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
-slot4 = CS
-slot4 = slot4.UnityEngine
-slot4 = slot4.GameObject
-slot5 = slot2.LightClass
-slot7 = "ItemViewerScene"
-slot8 = slot3
-slot5 = slot5(slot7, slot8)
-slot6 = require
-slot8 = "Entities.ClientSimpleVirtualEntity"
-slot6 = slot6(slot8)
+slot4 = require
+slot6 = "GameApp.UIScene.UISceneBase"
+slot4 = slot4(slot6)
+slot5 = CS
+slot5 = slot5.UnityEngine
+slot5 = slot5.GameObject
+slot6 = slot3.LightClass
+slot8 = "ItemViewerScene"
+slot9 = slot4
+slot6 = slot6(slot8, slot9)
 slot7 = require
-slot9 = "Entities.Utils.EModelUtils"
+slot9 = "Entities.ClientSimpleVirtualEntity"
 slot7 = slot7(slot9)
-slot8 = fingerGestures
+slot8 = require
+slot10 = "Entities.Utils.EModelUtils"
+slot8 = slot8(slot10)
+slot9 = fingerGestures
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-55, warpins: 1 ---
 	slot1 = 10
 	slot0.modelDistance = slot1
@@ -94,9 +97,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onStart = slot9
+slot6.onStart = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
@@ -153,9 +156,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.setRawImage = slot9
+slot6.setRawImage = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.renderTexture
 	--- END OF BLOCK #0 ---
@@ -167,7 +170,10 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-12, warpins: 1 ---
+	--- BLOCK #1 4-15, warpins: 1 ---
+	slot1 = slot0.targetCamera
+	slot2 = nil
+	slot1.targetTexture = slot2
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.uiMgr
@@ -185,7 +191,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
+	--- BLOCK #2 16-16, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -193,9 +199,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.clearTexture = slot9
+slot6.clearTexture = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = fingerGestures
 	slot1 = slot1.Active
@@ -241,9 +247,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.initGestures = slot9
+slot6.initGestures = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = fingerGestures
 	slot1 = slot1.DeActive
@@ -257,9 +263,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.disableGestures = slot9
+slot6.disableGestures = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = slot1.modelResId
 	slot3 = nil
@@ -295,7 +301,7 @@ slot9 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 19-47, warpins: 1 ---
+	--- BLOCK #2 19-55, warpins: 1 ---
 	slot3 = ClientSimpleVirtualEntity
 	slot3 = slot3.new
 	slot3 = slot3()
@@ -305,24 +311,36 @@ slot9 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	slot6 = slot3
-	slot4 = slot3.start
+	slot4 = {}
+	slot7 = slot3
+	slot5 = slot3.init
+	slot8 = slot4
 
-	slot4(slot6)
+	slot5(slot7, slot8)
 
-	slot6 = slot3
-	slot4 = slot3.setModelLayer
-	slot7 = ClientConst
-	slot7 = slot7.LayerDefine
-	slot7 = slot7.LAYER_UI_SCENE
+	slot7 = slot3
+	slot5 = slot3.postInit
+	slot8 = slot4
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
-	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
+	slot7 = slot3
+	slot5 = slot3.start
 
-	slot5 = function()
+	slot5(slot7)
+
+	slot7 = slot3
+	slot5 = slot3.setModelLayer
+	slot8 = ClientConst
+	slot8 = slot8.LayerDefine
+	slot8 = slot8.LAYER_UI_SCENE
+
+	slot5(slot7, slot8)
+
+	slot5 = slot3.eModel
+	slot5 = slot5.modelModelView
+
+	slot6 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -338,14 +356,14 @@ slot9 = function(slot0, slot1)
 
 	end
 
-	slot4.luaOnModelRefreshFinshed = slot5
-	slot5 = slot0.models
-	slot5[slot2] = slot3
-	slot7 = slot0
-	slot5 = slot0.showOldModel
-	slot8 = slot2
+	slot5.luaOnModelRefreshFinshed = slot6
+	slot6 = slot0.models
+	slot6[slot2] = slot3
+	slot8 = slot0
+	slot6 = slot0.showOldModel
+	slot9 = slot2
 
-	slot5(slot7, slot8)
+	slot6(slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -353,7 +371,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 48-48, warpins: 2 ---
+	--- BLOCK #3 56-56, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -361,24 +379,22 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.showModel = slot9
+slot6.showModel = slot10
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getConfigData
 	slot2 = slot2(slot4)
 	slot3 = slot1.eModel
-	slot3 = slot3.transform
 	slot5 = slot3
-	slot3 = slot3.SetParent
+	slot3 = slot3.SetTransformParent
 	slot6 = slot0.modelContainer
 
 	slot3(slot5, slot6)
 
 	slot3 = slot1.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
+	slot3 = slot3.modelModelView
 	slot4 = slot2.modelScale
 	--- END OF BLOCK #0 ---
 
@@ -389,7 +405,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 16-21, warpins: 1 ---
+	--- BLOCK #1 14-19, warpins: 1 ---
 	slot7 = slot3
 	slot5 = slot3.GetBoundExtents
 	slot5 = slot5(slot7)
@@ -401,7 +417,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 22-28, warpins: 2 ---
+	--- BLOCK #2 20-26, warpins: 2 ---
 	slot7 = slot1
 	slot5 = slot1.setScaleNumber
 	slot8 = slot4
@@ -418,7 +434,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 29-42, warpins: 1 ---
+	--- BLOCK #3 27-40, warpins: 1 ---
 	slot5 = Quaternion
 	slot5 = slot5.Euler
 	slot7 = slot2.modelRotationInit
@@ -440,7 +456,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 43-43, warpins: 2 ---
+	--- BLOCK #4 41-41, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -448,9 +464,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.onModelLoaded = slot9
+slot6.onModelLoaded = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.models
 	slot3 = slot0.curShowModelResId
@@ -530,19 +546,18 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 40-45, warpins: 1 ---
+	--- BLOCK #5 40-44, warpins: 1 ---
 	slot6 = slot2.eModel
-	slot6 = slot6.transform
-	slot6 = slot6.localRotation
-	slot6 = slot6.eulerAngles
-	slot7 = slot6.x
-	slot0.endX = slot7
+	slot8 = slot6
+	slot6 = slot6.GetTransformLocalRotationEulerAngles
+	slot6, slot7, slot8 = slot6(slot8)
+	slot0.endX = slot6
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 46-55, warpins: 2 ---
+	--- BLOCK #6 45-54, warpins: 2 ---
 	slot6 = slot0.endX
 	slot7 = slot4 * 0.2
 	slot6 = slot6 - slot7
@@ -560,25 +575,24 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 56-56, warpins: 1 ---
+	--- BLOCK #7 55-55, warpins: 1 ---
 	slot10 = slot5.rotationZLimit
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 57-68, warpins: 2 ---
+	--- BLOCK #8 56-65, warpins: 2 ---
 	slot6 = slot6(slot8, slot9, slot10)
 	slot0.endX = slot6
 	slot6 = slot2.eModel
-	slot6 = slot6.transform
-	slot7 = Quaternion
-	slot7 = slot7.Euler
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalEulerAngle
 	slot9 = slot0.endX
 	slot10 = 0
 	slot11 = 0
-	slot7 = slot7(slot9, slot10, slot11)
-	slot6.localRotation = slot7
+
+	slot6(slot8, slot9, slot10, slot11)
 
 	return
 	--- END OF BLOCK #8 ---
@@ -587,9 +601,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.onSwipeModel = slot9
+slot6.onSwipeModel = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = -360
 	--- END OF BLOCK #0 ---
@@ -731,9 +745,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.parseAngle = slot9
+slot6.parseAngle = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -796,9 +810,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.showOldModel = slot9
+slot6.showOldModel = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -860,9 +874,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.hideOldModel = slot9
+slot6.hideOldModel = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.hideOldModel
@@ -877,9 +891,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.hideCurModel = slot9
+slot6.hideCurModel = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearTexture
@@ -904,9 +918,10 @@ slot9 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 16-18, warpins: 1 ---
+	--- BLOCK #1 16-19, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -915,7 +930,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 19-20, warpins: 2 ---
+	--- BLOCK #2 20-21, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -923,7 +938,7 @@ slot9 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 21-25, warpins: 1 ---
+	--- BLOCK #3 22-26, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.clear
 	slot3 = slot0.models
@@ -937,9 +952,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onDestroy = slot9
+slot6.onDestroy = slot10
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

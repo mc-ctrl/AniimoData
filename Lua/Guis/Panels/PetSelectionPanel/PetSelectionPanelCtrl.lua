@@ -1,4 +1,4 @@
---- BLOCK #0 1-91, warpins: 1 ---
+--- BLOCK #0 1-94, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UICtrl"
 slot0 = slot0(slot2)
@@ -51,13 +51,16 @@ slot14 = slot14(slot16)
 slot15 = require
 slot17 = "Common.Const.DialogueGraphCommonConst"
 slot15 = slot15(slot17)
-slot16 = slot2.LightClass
-slot18 = "PetSelectionPanelCtrl"
-slot19 = slot0
-slot16 = slot16(slot18, slot19)
-slot17 = true
+slot16 = require
+slot18 = "Core.Common.Time"
+slot16 = slot16(slot18)
+slot17 = slot2.LightClass
+slot19 = "PetSelectionPanelCtrl"
+slot20 = slot0
+slot17 = slot17(slot19, slot20)
+slot18 = true
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -73,9 +76,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onCreate = slot18
+slot17.onCreate = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -139,9 +142,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onOpen = slot18
+slot17.onOpen = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-74, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.leftBtn
@@ -443,9 +446,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.addListener = slot18
+slot17.addListener = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-111, warpins: 1 ---
 	slot1 = ClientUtils
 	slot1 = slot1.getCustomVariableValue
@@ -588,9 +591,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.init = slot18
+slot17.init = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -637,13 +640,11 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-26, warpins: 2 ---
+	--- BLOCK #4 15-24, warpins: 2 ---
 	slot2 = slot1.valueVec2
 	slot2 = slot2.x
 	slot3 = 0.5
-	slot4 = CS
-	slot4 = slot4.UnityEngine
-	slot4 = slot4.Time
+	slot4 = Time
 	slot4 = slot4.time
 	slot5 = slot0.lastStickInputTime
 	slot5 = slot4 - slot5
@@ -658,7 +659,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 27-27, warpins: 1 ---
+	--- BLOCK #5 25-25, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -666,7 +667,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-30, warpins: 2 ---
+	--- BLOCK #6 26-28, warpins: 2 ---
 	slot5 = -slot3
 	--- END OF BLOCK #6 ---
 
@@ -677,7 +678,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 31-36, warpins: 1 ---
+	--- BLOCK #7 29-34, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.selectPet
 	slot8 = 1
@@ -690,7 +691,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #8 37-38, warpins: 1 ---
+	--- BLOCK #8 35-36, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
 	if slot3 < slot2 then
@@ -700,7 +701,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 39-43, warpins: 1 ---
+	--- BLOCK #9 37-41, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.selectPet
 	slot8 = 2
@@ -714,7 +715,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 44-44, warpins: 3 ---
+	--- BLOCK #10 42-42, warpins: 3 ---
 	return
 	--- END OF BLOCK #10 ---
 
@@ -722,9 +723,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onGamepadLeftStickMove = slot18
+slot17.onGamepadLeftStickMove = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -844,9 +845,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onGamepadButtonSouth = slot18
+slot17.onGamepadButtonSouth = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isConfirming
 
@@ -885,9 +886,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.selectPet = slot18
+slot17.selectPet = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.selectIndex
 
@@ -927,9 +928,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.showConfirmPanel = slot18
+slot17.showConfirmPanel = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.scheduleRPC
 	--- END OF BLOCK #0 ---
@@ -1011,9 +1012,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.confirmSelectPet = slot18
+slot17.confirmSelectPet = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	isShowBothBtn = false
 	slot2 = slot0.view
@@ -1071,9 +1072,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.switchDialogue = slot18
+slot17.switchDialogue = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.index = slot2
 	--- END OF BLOCK #0 ---
@@ -1262,9 +1263,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.showDialogueInfo = slot18
+slot17.showDialogueInfo = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1317,9 +1318,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.startMoveNextTimer = slot18
+slot17.startMoveNextTimer = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.moveNextTimer
 	--- END OF BLOCK #0 ---
@@ -1354,9 +1355,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.removeMoveNextTimer = slot18
+slot17.removeMoveNextTimer = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -1367,9 +1368,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkUIShowVirtualMouseCursor = slot18
+slot17.checkUIShowVirtualMouseCursor = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1378,9 +1379,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onInputDeviceChanged = slot18
+slot17.onInputDeviceChanged = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -1400,9 +1401,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.onDestroy = slot18
+slot17.onDestroy = slot19
 
-return slot16
+return slot17
 --- END OF BLOCK #0 ---
 
 

@@ -47,6 +47,19 @@
             ],
             "msGateAddrList": ["10.8.45.64:26000"]
         },
+        "local_cluster_full": {
+            "localDirData": [
+                {
+                    "ClusterId": 0,
+                    "ClusterName": "LOCAL"
+                },
+                {
+                    "ClusterId": 100,
+                    "ClusterName": "gameWorld"
+                }
+            ],
+            "msGateAddrList": ["127.0.0.1:26000"]
+        },
         "CBT3-CN": {
             "localDirData": [
                 {

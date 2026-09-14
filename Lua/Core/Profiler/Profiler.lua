@@ -18,9 +18,9 @@ slot5 = slot2.getLogger
 slot7 = "Profiler"
 slot5 = slot5(slot7)
 slot6 = {
+	openFileFlag = false,
 	outfile = "./profiler.txt",
-	gcTracingFlag = false,
-	openFileFlag = false
+	gcTracingFlag = false
 }
 slot7 = io
 slot7 = slot7.stdout

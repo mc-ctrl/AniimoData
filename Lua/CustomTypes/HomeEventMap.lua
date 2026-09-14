@@ -248,7 +248,7 @@ slot11 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
@@ -259,7 +259,7 @@ slot11 = function(slot0, slot1, slot2)
 	if slot4 == 0 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
@@ -275,7 +275,7 @@ slot11 = function(slot0, slot1, slot2)
 	if slot4 == slot6 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
@@ -289,13 +289,40 @@ slot11 = function(slot0, slot1, slot2)
 	slot6 = if slot6 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 23-30, warpins: 1 ---
-	slot7 = ""
-	slot6.homeEventInsId = slot7
+	--- BLOCK #4 23-26, warpins: 1 ---
+	slot9 = slot1
+	slot7 = slot1.prepareHomeEventPetResolvedPosition
+	slot10 = slot5
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-33, warpins: 2 ---
+	slot9 = slot1
+	slot7 = slot1.setPetHomeEventInsId
+	slot10 = slot5
+	slot11 = ""
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #5 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 34-39, warpins: 1 ---
 	slot9 = slot1
 	slot7 = slot1.onHomeEventPetStatusChange
 	slot10 = slot5
@@ -303,36 +330,36 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot7(slot9, slot10, slot11)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #5 31-35, warpins: 1 ---
+	--- BLOCK #7 40-44, warpins: 1 ---
 	slot6 = Const
 	slot6 = slot6.HomeEventTarget
 	slot6 = slot6.Friend
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	if slot4 == slot6 then
-	JUMP TO BLOCK #6
-	else
 	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #6 36-38, warpins: 1 ---
+	--- BLOCK #8 45-47, warpins: 1 ---
 	slot6 = slot3.giftStaticId
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 39-43, warpins: 1 ---
+	--- BLOCK #9 48-52, warpins: 1 ---
 	slot6 = ""
 	slot1.giftEventInsId = slot6
 	slot8 = slot1
@@ -340,14 +367,14 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot6(slot8)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 44-44, warpins: 7 ---
+	--- BLOCK #10 53-53, warpins: 7 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -545,7 +572,14 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 33-38, warpins: 1 ---
+	--- BLOCK #2 33-43, warpins: 1 ---
+	slot11 = slot1
+	slot9 = slot1.setPetHomeEventInsId
+	slot12 = slot8
+	slot13 = slot4
+
+	slot9(slot11, slot12, slot13)
+
 	slot11 = slot1
 	slot9 = slot1.getHomelandPet
 	slot12 = slot8
@@ -559,8 +593,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 39-45, warpins: 1 ---
-	slot9.homeEventInsId = slot4
+	--- BLOCK #3 44-49, warpins: 1 ---
 	slot12 = slot1
 	slot10 = slot1.onHomeEventPetStatusChange
 	slot13 = slot8
@@ -573,7 +606,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 46-50, warpins: 1 ---
+	--- BLOCK #4 50-54, warpins: 1 ---
 	slot9 = Const
 	slot9 = slot9.HomeEventTarget
 	slot9 = slot9.Friend
@@ -586,7 +619,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 51-53, warpins: 1 ---
+	--- BLOCK #5 55-57, warpins: 1 ---
 	slot9 = slot6.giftStaticId
 	--- END OF BLOCK #5 ---
 
@@ -597,7 +630,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 54-59, warpins: 1 ---
+	--- BLOCK #6 58-63, warpins: 1 ---
 	slot1.giftEventInsId = slot4
 	slot9 = false
 	slot1.giftOpened = slot9
@@ -611,7 +644,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 60-69, warpins: 6 ---
+	--- BLOCK #7 64-73, warpins: 6 ---
 	slot7 = slot1.logger
 	slot9 = slot7
 	slot7 = slot7.info

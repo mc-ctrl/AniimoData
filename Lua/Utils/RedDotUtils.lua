@@ -7,16 +7,16 @@ slot2 = CS
 slot2 = slot2.XGUI
 slot2 = slot2.RedDotMgr
 
-slot3 = function(slot0, slot1, slot2, slot3)
+slot3 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot4 = string
-	slot4 = slot4.isNilOrEmpty
-	slot6 = slot0
-	slot4 = slot4(slot6)
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot0
+	slot5 = slot5(slot7)
 
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -32,15 +32,15 @@ slot3 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 8-15, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.scene
-	slot6 = slot4
-	slot4 = slot4.checkHideRedDot
-	slot4 = slot4(slot6)
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.scene
+	slot7 = slot5
+	slot5 = slot5.checkHideRedDot
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -65,26 +65,43 @@ slot3 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #5 19-21, warpins: 1 ---
-	slot4 = RedDotConst
-	slot4 = slot4.RedDotStyle
-	slot3 = slot4.NONE
+	slot5 = RedDotConst
+	slot5 = slot5.RedDotStyle
+	slot3 = slot5.NONE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
 	--- BLOCK #6 22-29, warpins: 2 ---
-	slot4 = CSRedDotManager
-	slot4 = slot4.LuaSetRedDot
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = slot2
-	slot9 = slot3
+	slot5 = CSRedDotManager
+	slot5 = slot5.LuaSetRedDot
+	slot7 = slot0
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+	--- END OF BLOCK #6 ---
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot11 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 30-30, warpins: 1 ---
+	slot11 = 0
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-32, warpins: 2 ---
+	slot5(slot7, slot8, slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 

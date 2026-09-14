@@ -20,246 +20,198 @@ slot7 = "Common.CommonSwitch"
 slot5 = slot5(slot7)
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = CommonSwitch
-	slot1 = slot1.IOS_REVIEW
-	slot1 = not slot1
-	slot2 = DevelopHintCtrl
-	slot2 = slot2._platformHooks
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.txtHintUText
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot3 = slot2.shouldShowDevelopHint
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.txtHintUText
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-15, warpins: 1 ---
-	slot3 = slot2.shouldShowDevelopHint
-	slot5 = slot0
-	slot3 = slot3(slot5)
+	--- BLOCK #2 12-14, warpins: 2 ---
+	slot1 = ShowWaterMark
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot3 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #3 16-24, warpins: 4 ---
-	slot3 = slot0.view
-	slot3 = slot3.txtHintUText
-	slot3 = slot3.gameObject
-	slot5 = slot3
-	slot3 = slot3.SetActiveEx
-	slot6 = slot1
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #3 15-83, warpins: 1 ---
+	slot1 = AddressDataConst
+	slot1 = slot1.UI_WATER_MARK
+	slot0.markResId = slot1
+	slot1 = 500
+	slot0.markWidth = slot1
+	slot1 = 100
+	slot0.markHeight = slot1
+	slot1 = 600
+	slot0.markIntervalWidth = slot1
+	slot1 = 500
+	slot0.markIntervalHeight = slot1
+	slot1 = 140
+	slot0.rotateOffsetY = slot1
+	slot1 = 0
+	slot0.rotateOffsetX = slot1
+	slot1 = 400
+	slot0.colOffset = slot1
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.uiMgr
+	slot1 = slot1.uiRootCanvasRect
+	slot2 = math
+	slot2 = slot2.ceil
+	slot4 = slot1.width
+	slot5 = slot0.markWidth
+	slot6 = slot0.markIntervalWidth
+	slot5 = slot5 + slot6
+	slot4 = slot4 / slot5
+	slot2 = slot2(slot4)
+	slot2 = slot2 + 1
+	slot3 = math
+	slot3 = slot3.ceil
+	slot5 = slot1.height
+	slot6 = slot0.markHeight
+	slot7 = slot0.markIntervalHeight
+	slot6 = slot6 + slot7
+	slot5 = slot5 / slot6
+	slot3 = slot3(slot5)
+	slot3 = slot3 + 1
+	slot4 = slot1.width
+	slot4 = slot4 / slot2
+	slot5 = slot0.markWidth
+	slot4 = slot4 - slot5
+	slot0.markIntervalWidth = slot4
+	slot4 = slot1.height
+	slot4 = slot4 / slot3
+	slot5 = slot0.markHeight
+	slot4 = slot4 - slot5
+	slot0.markIntervalHeight = slot4
+	slot4 = slot1.width
+	slot4 = -slot4
+	slot4 = slot4 / 2
+	slot5 = slot0.markWidth
+	slot5 = slot5 / 2
+	slot4 = slot4 + slot5
+	slot5 = slot0.rotateOffsetX
+	slot4 = slot4 + slot5
+	slot5 = slot1.height
+	slot5 = -slot5
+	slot5 = slot5 / 2
+	slot6 = slot0.markHeight
+	slot6 = slot6 / 2
+	slot5 = slot5 + slot6
+	slot6 = slot0.rotateOffsetY
+	slot5 = slot5 + slot6
+	slot6 = 1
+	slot7 = slot2
+	slot8 = 1
 	--- END OF BLOCK #3 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-33, warpins: 1 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.view
-	slot5 = slot5.txtHintUText
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "PRE_ALPHA"
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
+	--- BLOCK #4 84-86, warpins: 2 ---
+	slot10 = slot9 % 2
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 34-36, warpins: 2 ---
-	slot3 = ShowWaterMark
-	--- END OF BLOCK #5 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #6
+	if slot10 == 0 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 37-105, warpins: 1 ---
-	slot3 = AddressDataConst
-	slot3 = slot3.UI_WATER_MARK
-	slot0.markResId = slot3
-	slot3 = 500
-	slot0.markWidth = slot3
-	slot3 = 100
-	slot0.markHeight = slot3
-	slot3 = 600
-	slot0.markIntervalWidth = slot3
-	slot3 = 500
-	slot0.markIntervalHeight = slot3
-	slot3 = 140
-	slot0.rotateOffsetY = slot3
-	slot3 = 0
-	slot0.rotateOffsetX = slot3
-	slot3 = 400
-	slot0.colOffset = slot3
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.uiMgr
-	slot3 = slot3.uiRootCanvasRect
-	slot4 = math
-	slot4 = slot4.ceil
-	slot6 = slot3.width
-	slot7 = slot0.markWidth
-	slot8 = slot0.markIntervalWidth
-	slot7 = slot7 + slot8
-	slot6 = slot6 / slot7
-	slot4 = slot4(slot6)
-	slot4 = slot4 + 1
-	slot5 = math
-	slot5 = slot5.ceil
-	slot7 = slot3.height
-	slot8 = slot0.markHeight
-	slot9 = slot0.markIntervalHeight
-	slot8 = slot8 + slot9
-	slot7 = slot7 / slot8
-	slot5 = slot5(slot7)
-	slot5 = slot5 + 1
-	slot6 = slot3.width
-	slot6 = slot6 / slot4
-	slot7 = slot0.markWidth
-	slot6 = slot6 - slot7
-	slot0.markIntervalWidth = slot6
-	slot6 = slot3.height
-	slot6 = slot6 / slot5
-	slot7 = slot0.markHeight
-	slot6 = slot6 - slot7
-	slot0.markIntervalHeight = slot6
-	slot6 = slot3.width
-	slot6 = -slot6
-	slot6 = slot6 / 2
-	slot7 = slot0.markWidth
-	slot7 = slot7 / 2
-	slot6 = slot6 + slot7
-	slot7 = slot0.rotateOffsetX
-	slot6 = slot6 + slot7
-	slot7 = slot3.height
-	slot7 = -slot7
-	slot7 = slot7 / 2
-	slot8 = slot0.markHeight
-	slot8 = slot8 / 2
-	slot7 = slot7 + slot8
-	slot8 = slot0.rotateOffsetY
-	slot7 = slot7 + slot8
-	slot8 = 1
-	slot9 = slot4
-	slot10 = 1
+	--- BLOCK #5 87-89, warpins: 1 ---
+	slot10 = slot0.colOffset
+	--- END OF BLOCK #5 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 90-90, warpins: 2 ---
+	slot10 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 106-108, warpins: 2 ---
-	slot12 = slot11 % 2
+	--- BLOCK #7 91-103, warpins: 2 ---
+	slot11 = slot1.height
+	slot11 = -slot11
+	slot11 = slot11 / 2
+	slot12 = slot0.markHeight
+	slot12 = slot12 / 2
+	slot11 = slot11 + slot12
+	slot12 = slot0.rotateOffsetY
+	slot11 = slot11 + slot12
+	slot5 = slot11 + slot10
+	slot11 = 1
+	slot12 = slot3
+	slot13 = 1
 	--- END OF BLOCK #7 ---
 
-	if slot12 == 0 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 109-111, warpins: 1 ---
-	slot12 = slot0.colOffset
+	--- BLOCK #8 104-106, warpins: 2 ---
+	slot15 = slot9 % 2
 	--- END OF BLOCK #8 ---
 
-	slot12 = if not slot12 then
+	if slot15 == 0 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 112-112, warpins: 2 ---
-	slot12 = 0
+	--- BLOCK #9 107-109, warpins: 1 ---
+	slot15 = slot14 % 2
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 113-125, warpins: 2 ---
-	slot13 = slot3.height
-	slot13 = -slot13
-	slot13 = slot13 / 2
-	slot14 = slot0.markHeight
-	slot14 = slot14 / 2
-	slot13 = slot13 + slot14
-	slot14 = slot0.rotateOffsetY
-	slot13 = slot13 + slot14
-	slot7 = slot13 + slot12
-	slot13 = 1
-	slot14 = slot5
-	slot15 = 1
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 126-128, warpins: 2 ---
-	slot17 = slot11 % 2
-	--- END OF BLOCK #11 ---
-
-	if slot17 == 0 then
-	JUMP TO BLOCK #12
+	if slot15 ~= 0 then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #12 129-131, warpins: 1 ---
-	slot17 = slot16 % 2
-	--- END OF BLOCK #12 ---
+	--- BLOCK #10 110-120, warpins: 2 ---
+	slot15 = slot4
+	slot16 = slot5
+	slot17 = slot0.view
+	slot19 = slot17
+	slot17 = slot17.addPrefabWithPathAsync
+	slot20 = slot0.view
+	slot20 = slot20.transform
+	slot21 = slot0.markResId
 
-	if slot17 ~= 0 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 132-142, warpins: 2 ---
-	slot17 = slot6
-	slot18 = slot7
-	slot19 = slot0.view
-	slot21 = slot19
-	slot19 = slot19.addPrefabWithPathAsync
-	slot22 = slot0.view
-	slot22 = slot22.transform
-	slot23 = slot0.markResId
-
-	slot24 = function(slot0)
+	slot22 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot1 = IsNil
 		slot3 = slot0.gameObject
@@ -317,39 +269,39 @@ slot6 = function(slot0)
 
 	end
 
-	slot19(slot21, slot22, slot23, slot24)
+	slot17(slot19, slot20, slot21, slot22)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #14 143-147, warpins: 2 ---
-	slot17 = slot0.markIntervalHeight
-	slot17 = slot7 + slot17
-	slot18 = slot0.markHeight
-	slot7 = slot17 + slot18
-	--- END OF BLOCK #14 ---
+	--- BLOCK #11 121-125, warpins: 2 ---
+	slot15 = slot0.markIntervalHeight
+	slot15 = slot5 + slot15
+	slot16 = slot0.markHeight
+	slot5 = slot15 + slot16
+	--- END OF BLOCK #11 ---
 
-	for slot16=slot13, slot14, slot15
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #15
+	for slot14=slot11, slot12, slot13
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #12
 
-	--- BLOCK #15 148-152, warpins: 1 ---
-	slot13 = slot0.markIntervalWidth
-	slot13 = slot6 + slot13
-	slot14 = slot0.markWidth
-	slot6 = slot13 + slot14
+	--- BLOCK #12 126-130, warpins: 1 ---
+	slot11 = slot0.markIntervalWidth
+	slot11 = slot4 + slot11
+	slot12 = slot0.markWidth
+	slot4 = slot11 + slot12
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #12 ---
 
-	for slot11=slot8, slot9, slot10
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #16
+	for slot9=slot6, slot7, slot8
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #13
 
-	--- BLOCK #16 153-153, warpins: 2 ---
+	--- BLOCK #13 131-131, warpins: 2 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #13 ---
 
 
 

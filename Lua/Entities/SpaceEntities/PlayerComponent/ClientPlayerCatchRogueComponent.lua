@@ -1,60 +1,63 @@
---- BLOCK #0 1-104, warpins: 1 ---
+--- BLOCK #0 1-107, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Common.lume"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.Utils"
+slot4 = "Core.Common.lume"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.OpDef"
+slot5 = "Common.Utils.Utils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.catch_rogue_level_data"
+slot6 = "Common.OpDef"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.event_catch_rogue_data"
+slot7 = "Data.catch_rogue_level_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.catch_rogue_phase_data"
+slot8 = "Data.event_catch_rogue_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Data.catch_rogue_phase_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.ActivityUtils"
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.ActivityConst"
+slot11 = "Common.Utils.ActivityUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.NoticeDef"
+slot12 = "Common.Const.ActivityConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Log.LoggerManager"
+slot13 = "Common.NoticeDef"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Core.Log.LoggerConst"
+slot14 = "Core.Log.LoggerManager"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.UIConst"
+slot15 = "Core.Log.LoggerConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.catch_rogue_buff_data"
+slot16 = "Const.UIConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Const.MessageName"
+slot17 = "Data.catch_rogue_buff_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.item_data"
+slot18 = "Const.MessageName"
 slot16 = slot16(slot18)
-slot17 = slot0.Component
-slot19 = "ClientPlayerCatchRogueComponent"
+slot17 = require
+slot19 = "Data.item_data"
 slot17 = slot17(slot19)
+slot18 = slot1.Component
+slot20 = "ClientPlayerCatchRogueComponent"
+slot18 = slot18(slot20)
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = true
 	slot0.catchRogueBuySwitch = slot1
@@ -68,9 +71,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.ctor = slot18
+slot18.ctor = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCatchRogueCurGameId
@@ -148,9 +151,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getCatchRogueBuyEnable = slot18
+slot18.getCatchRogueBuyEnable = slot19
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot19 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -253,9 +256,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.sendCatchRogueOption = slot18
+slot18.sendCatchRogueOption = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = OpDef
 	slot3 = slot3.OP
@@ -474,7 +477,7 @@ slot18 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #11 122-122, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
@@ -672,9 +675,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.RPC_SC_CatchRogueNotify = slot18
+slot18.RPC_SC_CatchRogueNotify = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -732,7 +735,7 @@ slot18 = function(slot0, slot1)
 
 
 	--- BLOCK #4 25-25, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -799,9 +802,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.playCatchRougeSceneScan = slot18
+slot18.playCatchRougeSceneScan = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.canPrepareGame
@@ -848,9 +851,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.modifyCatchRoguePets = slot18
+slot18.modifyCatchRoguePets = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.canPrepareGame
@@ -897,9 +900,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.modifyCatchRogueBallSort = slot18
+slot18.modifyCatchRogueBallSort = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.canPrepareGame
@@ -946,9 +949,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.modifyCatchRogueBallCount = slot18
+slot18.modifyCatchRogueBallCount = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.sendCatchRogueOption
@@ -967,9 +970,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.enterCatchRogueGame = slot18
+slot18.enterCatchRogueGame = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPlayerInSpaceCatchRogueDungeon
@@ -1010,9 +1013,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.nextCatchRogueGame = slot18
+slot18.nextCatchRogueGame = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPlayerInSpaceCatchRogueDungeon
@@ -1053,9 +1056,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.saveCatchRogueGame = slot18
+slot18.saveCatchRogueGame = slot19
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot19 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.sendCatchRogueOption
@@ -1076,9 +1079,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.settleCatchRogueGame = slot18
+slot18.settleCatchRogueGame = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.catchRogueInfo
 	--- END OF BLOCK #0 ---
@@ -1173,9 +1176,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getCatchRogueCurGameId = slot18
+slot18.getCatchRogueCurGameId = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -1193,7 +1196,7 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #1 9-9, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -1250,9 +1253,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getCurCatchRoguePetList = slot18
+slot18.getCurCatchRoguePetList = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1336,9 +1339,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.isPlayCatchRogue = slot18
+slot18.isPlayCatchRogue = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1404,9 +1407,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getCatchRoguePuppetInfo = slot18
+slot18.getCatchRoguePuppetInfo = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1457,9 +1460,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getCurPuppetFinishCount = slot18
+slot18.getCurPuppetFinishCount = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1508,9 +1511,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getCurCanGetAddOnSet = slot18
+slot18.getCurCanGetAddOnSet = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -1695,9 +1698,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getCatchRoguePreparePetList = slot18
+slot18.getCatchRoguePreparePetList = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1736,9 +1739,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.canPrepareGame = slot18
+slot18.canPrepareGame = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -1790,9 +1793,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.on_floorId_changed = slot18
+slot18.on_floorId_changed = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.logDebug
@@ -1844,9 +1847,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.on_catchRogue_ballList_changed = slot18
+slot18.on_catchRogue_ballList_changed = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.logDebug
@@ -1898,9 +1901,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.on_catchRogue_ballCountMap_changed = slot18
+slot18.on_catchRogue_ballCountMap_changed = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot3 = slot0.catchRogueInfo
 	slot5 = slot3
@@ -1957,9 +1960,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.on_catchRogue_savedPuppetMap_changed = slot18
+slot18.on_catchRogue_savedPuppetMap_changed = slot19
 
-return slot17
+return slot18
 --- END OF BLOCK #0 ---
 
 

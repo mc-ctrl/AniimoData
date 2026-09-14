@@ -1,4 +1,4 @@
---- BLOCK #0 1-78, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -48,16 +48,23 @@ slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Core.Timer.TimerManager"
 slot14 = slot14(slot16)
-slot15 = {}
-slot16 = slot2.INPUT_DEVICE_CHANGED
-slot17 = {
+slot15 = require
+slot17 = "Utils.ClientUtils"
+slot15 = slot15(slot17)
+slot16 = require
+slot18 = "Common.Utils.Utils"
+slot16 = slot16(slot18)
+slot17 = {}
+slot18 = slot2.INPUT_DEVICE_CHANGED
+slot19 = {
 	"onInputDeviceChanged",
 	true
 }
-slot15[slot16] = slot17
-slot3.messages = slot15
+slot17[slot18] = slot19
+slot3.messages = slot17
+slot17 = 1
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -140,9 +147,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot15
+slot3.onCreate = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -151,9 +158,53 @@ slot15 = function(slot0)
 
 end
 
-slot3.addListener = slot15
+slot3.addListener = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.closeBtn
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.startTimer
+
+	slot4 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.closeBtn
+		slot2 = slot0
+		slot0 = slot0.SetActive
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = TIME_SHOW_CLOSE_BTN
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.onOpen = slot18
+
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0._isOpen
 	--- END OF BLOCK #0 ---
@@ -241,9 +292,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot3.checkCanOpen = slot15
+slot3.checkCanOpen = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.itemListData
 
@@ -440,7 +491,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 88-117, warpins: 2 ---
+	--- BLOCK #13 88-111, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.refreshRogueRewardUp
 
@@ -451,20 +502,12 @@ slot15 = function(slot0)
 
 	slot3(slot5)
 
-	slot3 = slot0.view
-	slot3 = slot3.animRoot
-	slot5 = slot3
-	slot3 = slot3.Play
-	slot6 = "VX_Ani_ObtainPanel_In"
-
-	slot3(slot5, slot6)
-
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.audio
 	slot5 = slot3
 	slot3 = slot3.triggerEvent
-	slot6 = "SFX_UI_Common_GetItem"
+	slot6 = "SFX_UI_CommonRewardPanel"
 
 	slot3(slot5, slot6)
 
@@ -487,10 +530,31 @@ slot15 = function(slot0)
 
 end
 
-slot3.onShow = slot15
+slot3.onShow = slot18
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot18 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = slot0.source
+	slot2 = ItemConstSourceData
+	slot2 = slot2.ITEM_SOURCE_FC_WEEK_DUNGEON
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = true
+	slot0._waitExitFishingCaptureWeeklyDungeon = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-23, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.eventEmitter
@@ -509,29 +573,29 @@ slot15 = function(slot0)
 	slot1(slot3)
 
 	slot1 = slot0._pendingQueue
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 17-21, warpins: 1 ---
+	--- BLOCK #3 24-28, warpins: 1 ---
 	slot1 = slot0._pendingQueue
 	slot1 = #slot1
 	slot2 = 0
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	if slot1 > slot2 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 22-31, warpins: 1 ---
+	--- BLOCK #4 29-40, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.remove
 	slot3 = slot0._pendingQueue
@@ -561,22 +625,121 @@ slot15 = function(slot0)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 32-32, warpins: 3 ---
 	return
-	--- END OF BLOCK #3 ---
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 41-44, warpins: 3 ---
+	slot3 = slot0
+	slot1 = slot0._tryExitFishingCaptureWeeklyDungeon
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot3.onDestroy = slot15
+slot3.onDestroy = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._waitExitFishingCaptureWeeklyDungeon
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-10, warpins: 2 ---
+	slot1 = nil
+	slot0._waitExitFishingCaptureWeeklyDungeon = slot1
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-21, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isWeeklyDungeonSceneId
+	slot4 = slot1.sceneId
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-22, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-26, warpins: 2 ---
+	slot2 = ClientUtils
+	slot2 = slot2.exitDungeon
+
+	slot2()
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot3._tryExitFishingCaptureWeeklyDungeon = slot18
+
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot4 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
@@ -807,9 +970,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.instantiateItem = slot15
+slot3.instantiateItem = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.isPet
 	--- END OF BLOCK #0 ---
@@ -927,7 +1090,8 @@ slot15 = function(slot0, slot1, slot2)
 	slot6 = slot6.UI_ID_COMMON_ITEM_TIP
 	slot7 = {
 		checkTouchBegin = false,
-		addSibling = 1
+		addSibling = 1,
+		autoHor = true
 	}
 	slot8 = slot2.itemId
 	slot7.id = slot8
@@ -974,11 +1138,12 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot3.onClickItem = slot15
+slot3.onClickItem = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isClosing
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -989,50 +1154,25 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-30, warpins: 1 ---
+	--- BLOCK #2 5-27, warpins: 2 ---
 	slot1 = true
 	slot0.isClosing = slot1
-	slot1 = slot0.view
-	slot1 = slot1.animRoot
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.Play
-	slot4 = "VX_Ani_ObtainPanel_Out"
+	slot1 = slot1.close
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_COMMON_OBTAIN
 
 	slot1(slot3, slot4)
-
-	slot3 = slot0
-	slot1 = slot0.startTimer
-
-	slot4 = function()
-		--- BLOCK #0 1-12, warpins: 1 ---
-		slot0 = self
-		slot1 = false
-		slot0.isClosing = slot1
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.ui
-		slot2 = slot0
-		slot0 = slot0.close
-		slot3 = UIConst
-		slot3 = slot3.UI_ID_COMMON_OBTAIN
-
-		slot0(slot2, slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot5 = 0.4
-
-	slot1(slot3, slot4, slot5)
 
 	slot1 = pg
 	slot1 = slot1.global
@@ -1056,7 +1196,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #3 31-35, warpins: 1 ---
+	--- BLOCK #3 28-32, warpins: 1 ---
 	slot1 = slot0.source
 	slot2 = ItemConstSourceData
 	slot2 = slot2.ITEM_SOURCE_SANDBOX_ROGUELIKE
@@ -1069,7 +1209,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #4 36-41, warpins: 2 ---
+	--- BLOCK #4 33-38, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot1 = slot1.space
@@ -1083,24 +1223,17 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 42-43, warpins: 2 ---
+	--- BLOCK #5 39-39, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 44-44, warpins: 2 ---
-	return
-	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot3.closePanel = slot15
+slot3.closePanel = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1109,9 +1242,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot3.onInputDeviceChanged = slot15
+slot3.onInputDeviceChanged = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.source
 	slot2 = ItemConstSourceData
@@ -1196,9 +1329,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.CheckBadgeCollection = slot15
+slot3.CheckBadgeCollection = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = false
 	slot2 = ipairs
@@ -1293,7 +1426,13 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #7 45-54, warpins: 1 ---
+	--- BLOCK #7 45-58, warpins: 1 ---
+	slot10 = slot3
+	slot8 = slot3.SetActive
+	slot11 = true
+
+	slot8(slot10, slot11)
+
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot3
@@ -1311,7 +1450,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 55-56, warpins: 2 ---
+	--- BLOCK #8 59-60, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	slot4 = if slot4 then
@@ -1321,7 +1460,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #9 57-68, warpins: 1 ---
+	--- BLOCK #9 61-72, warpins: 1 ---
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot4
@@ -1341,7 +1480,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 69-69, warpins: 3 ---
+	--- BLOCK #10 73-73, warpins: 3 ---
 	return
 	--- END OF BLOCK #10 ---
 
@@ -1349,7 +1488,7 @@ slot15 = function(slot0)
 
 end
 
-slot3.refreshRogueRewardUp = slot15
+slot3.refreshRogueRewardUp = slot18
 
 return slot3
 --- END OF BLOCK #0 ---

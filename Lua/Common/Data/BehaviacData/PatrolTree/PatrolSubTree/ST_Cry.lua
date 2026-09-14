@@ -7,34 +7,34 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = true,
-	name = "PatrolTree/PatrolSubTree/ST_Cry",
 	version = 25,
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	name = "PatrolTree/PatrolSubTree/ST_Cry",
+	useForRoute = true
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
-	type = "float",
+	name = "cryTimeOut",
 	value = "0",
-	name = "cryTimeOut"
+	type = "float",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	const = false,
-	type = "bool",
+	name = "tIsLoop",
 	value = "false",
-	name = "tIsLoop"
+	type = "bool",
+	const = false
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "1"
+	id = "1",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -43,8 +43,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "7"
+	id = "7",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -88,8 +88,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "3"
+	id = "3",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

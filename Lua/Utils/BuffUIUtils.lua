@@ -692,30 +692,34 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 31-41, warpins: 1 ---
-	slot4 = slot1.duration
-	slot5 = slot1.expiredTime
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.getGameTime
-	slot6 = slot6(slot8)
-	slot5 = slot5 - slot6
-	slot6 = 0
+	--- BLOCK #6 31-40, warpins: 1 ---
+	slot4 = slot1.expiredTime
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.getGameTime
+	slot5 = slot5(slot7)
+	slot4 = slot4 - slot5
+	slot5 = 0
 	--- END OF BLOCK #6 ---
 
-	if slot5 > slot6 then
+	if slot4 > slot5 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 42-47, warpins: 1 ---
+	--- BLOCK #7 41-51, warpins: 1 ---
+	slot5 = math
+	slot5 = slot5.max
+	slot7 = slot1.duration
+	slot8 = slot4
+	slot5 = slot5(slot7, slot8)
 	slot8 = slot3
 	slot6 = slot3.Play
-	slot9 = slot5
-	slot10 = slot4
+	slot9 = slot4
+	slot10 = slot5
 
 	slot6(slot8, slot9, slot10)
 
@@ -724,7 +728,7 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 48-52, warpins: 2 ---
+	--- BLOCK #8 52-56, warpins: 2 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.setUIViewVisible
 	slot6 = slot3
@@ -737,7 +741,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 53-53, warpins: 4 ---
+	--- BLOCK #9 57-57, warpins: 4 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -1929,7 +1933,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 51-65, warpins: 3 ---
+	--- BLOCK #10 51-60, warpins: 3 ---
 	slot7 = slot2
 	slot5 = slot2.GetRefValue
 	slot8 = "iconUImage"
@@ -1938,178 +1942,196 @@ slot17 = function(slot0, slot1)
 	slot6 = slot2.GetRefValue
 	slot9 = "countDownUCountDown"
 	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #10 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 61-62, warpins: 1 ---
 	slot7 = slot1.icon
 	slot5.url = slot7
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 63-67, warpins: 2 ---
 	slot7 = slot1.tag
 	slot8 = AbilityConst
 	slot8 = slot8.BUFF_TAG_POSITIVE
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 	if slot7 == slot8 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #13 68-73, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.TryChangePage
+	slot10 = "Buff_Type"
+	slot11 = slot1.isAdvanced
+	--- END OF BLOCK #13 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #11 66-71, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.TryChangePage
-	slot10 = "Buff_Type"
-	slot11 = slot1.isAdvanced
-	--- END OF BLOCK #11 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 72-73, warpins: 1 ---
+	--- BLOCK #14 74-75, warpins: 1 ---
 	slot11 = "Up2"
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 74-74, warpins: 1 ---
-	slot11 = "Up"
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 75-76, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
-
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 77-81, warpins: 1 ---
+	--- BLOCK #15 76-76, warpins: 1 ---
+	slot11 = "Up"
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 77-78, warpins: 2 ---
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #17 79-83, warpins: 1 ---
 	slot7 = slot1.tag
 	slot8 = AbilityConst
 	slot8 = slot8.BUFF_TAG_NEGATIVE
-	--- END OF BLOCK #15 ---
-
-	if slot7 == slot8 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #16 82-87, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.TryChangePage
-	slot10 = "Buff_Type"
-	slot11 = slot1.isAdvanced
-	--- END OF BLOCK #16 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 88-89, warpins: 1 ---
-	slot11 = "Down2"
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
-
-
-	--- BLOCK #18 90-90, warpins: 1 ---
-	slot11 = "Down"
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 91-92, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #19 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
-
-
-	--- BLOCK #20 93-98, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.TryChangePage
-	slot10 = "Buff_Type"
-	slot11 = slot1.isAdvanced
-	--- END OF BLOCK #20 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #21
+	if slot7 == slot8 then
+	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 99-100, warpins: 1 ---
-	slot11 = "Normal2"
-	--- END OF BLOCK #21 ---
+	--- BLOCK #18 84-89, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.TryChangePage
+	slot10 = "Buff_Type"
+	slot11 = slot1.isAdvanced
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	slot11 = if slot11 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #22 101-101, warpins: 1 ---
-	slot11 = "Normal"
+	--- BLOCK #19 90-91, warpins: 1 ---
+	slot11 = "Down2"
+	--- END OF BLOCK #19 ---
 
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #23 102-102, warpins: 2 ---
+	--- BLOCK #20 92-92, warpins: 1 ---
+	slot11 = "Down"
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 93-94, warpins: 2 ---
 	slot7(slot9, slot10, slot11)
 
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #22 95-100, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.TryChangePage
+	slot10 = "Buff_Type"
+	slot11 = slot1.isAdvanced
+	--- END OF BLOCK #22 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 101-102, warpins: 1 ---
+	slot11 = "Normal2"
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #24 103-104, warpins: 3 ---
+	--- BLOCK #24 103-103, warpins: 1 ---
+	slot11 = "Normal"
+
 	--- END OF BLOCK #24 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #32
-	end
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 105-108, warpins: 1 ---
-	slot7 = slot1.duration
-	slot8 = 0
+	--- BLOCK #25 104-104, warpins: 2 ---
+	slot7(slot9, slot10, slot11)
+
 	--- END OF BLOCK #25 ---
 
-	if slot7 > slot8 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #31
-	end
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 109-111, warpins: 1 ---
-	slot7 = slot1.hideCountDown
+	--- BLOCK #26 105-106, warpins: 3 ---
 	--- END OF BLOCK #26 ---
 
-	slot7 = if not slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #27 112-119, warpins: 1 ---
+	--- BLOCK #27 107-112, warpins: 1 ---
+	slot7 = true
+	slot6.useGameTime = slot7
+	slot7 = slot1.duration
+	slot8 = 0
+	--- END OF BLOCK #27 ---
+
+	if slot7 > slot8 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #28 113-115, warpins: 1 ---
+	slot7 = slot1.hideCountDown
+	--- END OF BLOCK #28 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #29 116-123, warpins: 1 ---
 	slot7 = LuaUIUtils
 	slot7 = slot7.setUIViewVisible
 	slot9 = slot6
@@ -2118,59 +2140,63 @@ slot17 = function(slot0, slot1)
 	slot7(slot9, slot10)
 
 	slot7 = slot1.breakBuffFreezeTime
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #29 ---
 
 	if slot7 ~= 0 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #28 120-123, warpins: 1 ---
+	--- BLOCK #30 124-127, warpins: 1 ---
 	slot9 = slot6
 	slot7 = slot6.Stop
 
 	slot7(slot9)
 
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #30 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #29 124-134, warpins: 1 ---
-	slot7 = slot1.duration
-	slot8 = slot1.expiredTime
-	slot9 = pg
-	slot9 = slot9.me
-	slot11 = slot9
-	slot9 = slot9.getGameTime
-	slot9 = slot9(slot11)
-	slot8 = slot8 - slot9
-	slot9 = 0
-	--- END OF BLOCK #29 ---
+	--- BLOCK #31 128-137, warpins: 1 ---
+	slot7 = slot1.expiredTime
+	slot8 = pg
+	slot8 = slot8.me
+	slot10 = slot8
+	slot8 = slot8.getGameTime
+	slot8 = slot8(slot10)
+	slot7 = slot7 - slot8
+	slot8 = 0
+	--- END OF BLOCK #31 ---
 
-	if slot8 > slot9 then
-	JUMP TO BLOCK #30
-	else
+	if slot7 > slot8 then
 	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #30 135-140, warpins: 1 ---
+	--- BLOCK #32 138-148, warpins: 1 ---
+	slot8 = math
+	slot8 = slot8.max
+	slot10 = slot1.duration
+	slot11 = slot7
+	slot8 = slot8(slot10, slot11)
 	slot11 = slot6
 	slot9 = slot6.Play
-	slot12 = slot8
-	slot13 = slot7
+	slot12 = slot7
+	slot13 = slot8
 
 	slot9(slot11, slot12, slot13)
 
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #32 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #31 141-145, warpins: 2 ---
+	--- BLOCK #33 149-153, warpins: 2 ---
 	slot7 = LuaUIUtils
 	slot7 = slot7.setUIViewVisible
 	slot9 = slot6
@@ -2178,23 +2204,23 @@ slot17 = function(slot0, slot1)
 
 	slot7(slot9, slot10)
 
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #33 ---
 
-	FLOW; TARGET BLOCK #32
+	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #32 146-148, warpins: 5 ---
+	--- BLOCK #34 154-156, warpins: 5 ---
 	slot7 = slot1.isDisplayed
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #34 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #33 149-157, warpins: 1 ---
+	--- BLOCK #35 157-165, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.InvokeCallback
 	slot10 = CS
@@ -2207,14 +2233,14 @@ slot17 = function(slot0, slot1)
 	slot7 = true
 	slot1.isDisplayed = slot7
 
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #34 158-158, warpins: 2 ---
+	--- BLOCK #36 166-166, warpins: 2 ---
 	return
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #36 ---
 
 
 
@@ -2251,7 +2277,9 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 21-24, warpins: 1 ---
+	--- BLOCK #1 21-26, warpins: 1 ---
+	slot6 = true
+	slot4.useGameTime = slot6
 	slot6 = slot1.duration
 	slot7 = 0
 	--- END OF BLOCK #1 ---
@@ -2263,7 +2291,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 25-27, warpins: 1 ---
+	--- BLOCK #2 27-29, warpins: 1 ---
 	slot6 = slot1.hideCountDown
 	--- END OF BLOCK #2 ---
 
@@ -2274,7 +2302,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 28-35, warpins: 1 ---
+	--- BLOCK #3 30-37, warpins: 1 ---
 	slot6 = LuaUIUtils
 	slot6 = slot6.setUIViewVisible
 	slot8 = slot4
@@ -2292,7 +2320,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 36-39, warpins: 1 ---
+	--- BLOCK #4 38-41, warpins: 1 ---
 	slot8 = slot4
 	slot6 = slot4.Stop
 
@@ -2303,30 +2331,34 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 40-50, warpins: 1 ---
-	slot6 = slot1.duration
-	slot7 = slot1.expiredTime
-	slot8 = pg
-	slot8 = slot8.me
-	slot10 = slot8
-	slot8 = slot8.getGameTime
-	slot8 = slot8(slot10)
-	slot7 = slot7 - slot8
-	slot8 = 0
+	--- BLOCK #5 42-51, warpins: 1 ---
+	slot6 = slot1.expiredTime
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.getGameTime
+	slot7 = slot7(slot9)
+	slot6 = slot6 - slot7
+	slot7 = 0
 	--- END OF BLOCK #5 ---
 
-	if slot7 > slot8 then
+	if slot6 > slot7 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 51-56, warpins: 1 ---
+	--- BLOCK #6 52-62, warpins: 1 ---
+	slot7 = math
+	slot7 = slot7.max
+	slot9 = slot1.duration
+	slot10 = slot6
+	slot7 = slot7(slot9, slot10)
 	slot10 = slot4
 	slot8 = slot4.Play
-	slot11 = slot7
-	slot12 = slot6
+	slot11 = slot6
+	slot12 = slot7
 
 	slot8(slot10, slot11, slot12)
 
@@ -2335,7 +2367,7 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 57-61, warpins: 2 ---
+	--- BLOCK #7 63-67, warpins: 2 ---
 	slot6 = LuaUIUtils
 	slot6 = slot6.setUIViewVisible
 	slot8 = slot4
@@ -2348,7 +2380,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 62-70, warpins: 5 ---
+	--- BLOCK #8 68-76, warpins: 5 ---
 	slot6 = ClientTextUtils
 	slot6 = slot6.setText
 	slot8 = slot5
@@ -2425,9 +2457,19 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-8, warpins: 2 ---
+	--- BLOCK #2 4-18, warpins: 2 ---
+	slot1 = nil
+	slot0.preEleBuffButton = slot1
 	slot1 = nil
 	slot0.preEleBuffStage = slot1
+	slot1 = nil
+	slot0.preEleBuffType = slot1
+	slot1 = nil
+	slot0.preEleBuffLayer = slot1
+	slot1 = nil
+	slot0.preEleBuffSliderActive = slot1
+	slot1 = nil
+	slot0.preEleBuffSliderValue = slot1
 	slot1 = slot0.delayHideEleBuffTimer
 	--- END OF BLOCK #2 ---
 
@@ -2438,7 +2480,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #3 9-12, warpins: 1 ---
+	--- BLOCK #3 19-22, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
 	slot3 = slot0.delayHideEleBuffTimer
@@ -2450,37 +2492,12 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-17, warpins: 2 ---
+	--- BLOCK #4 23-25, warpins: 2 ---
 	slot1 = nil
 	slot0.delayHideEleBuffTimer = slot1
-	slot1 = slot0.delayLoopAniTimer
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 18-21, warpins: 1 ---
-	slot1 = TimerManager
-	slot1 = slot1.removeTimer
-	slot3 = slot0.delayLoopAniTimer
-
-	slot1(slot3)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 22-24, warpins: 2 ---
-	slot1 = nil
-	slot0.delayLoopAniTimer = slot1
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -2489,120 +2506,253 @@ end
 slot16.tryDestroyEleBuffsTimer = slot17
 
 slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.GetComponent
-	slot6 = "ObjectReference"
-	slot3 = slot3(slot5, slot6)
-	slot4 = slot1.ecsAmountCache
-	slot4 = slot4.maxElementType
-	slot5 = slot1.ecsAmountCache
-	slot5 = slot5.maxValue
-	slot6 = ElementBuffData
-	slot6 = slot6[slot4]
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot7 = if slot6 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 13-13, warpins: 1 ---
-	slot7 = slot6.buffId
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot2.preEleBuffButton
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 14-27, warpins: 2 ---
-	slot8 = slot1.actorBuff
-	slot10 = slot8
-	slot8 = slot8.findOneBuffByTemplateId
-	slot11 = slot7
-	slot8 = slot8(slot10, slot11)
-	slot9 = "VX_Node_ElementToplogo_State_Out"
-	slot12 = slot3
-	slot10 = slot3.GetRefValue
-	slot13 = "uINodeElementToplogoAnimation"
-	slot10 = slot10(slot12, slot13)
-	slot11 = false
-	slot12, slot13 = nil
-	--- END OF BLOCK #2 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #3
+	if slot3 ~= slot0 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 28-29, warpins: 1 ---
+	--- BLOCK #2 6-10, warpins: 1 ---
+	slot3 = BuffUIUtils
+	slot3 = slot3.tryDestroyEleBuffsTimer
+	slot5 = slot2
+
+	slot3(slot5)
+
+	slot2.preEleBuffButton = slot0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 30-33, warpins: 1 ---
-	slot14 = BuffUIUtils
-	slot14 = slot14.tryDestroyEleBuffsTimer
-	slot16 = slot2
-
-	slot14(slot16)
-
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot3 = slot2.elementToplogoRefs
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 34-35, warpins: 2 ---
+	--- BLOCK #5 14-15, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
-	slot10 = if slot10 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 36-37, warpins: 1 ---
+	--- BLOCK #6 16-18, warpins: 1 ---
+	slot4 = slot3.button
 	--- END OF BLOCK #6 ---
 
-	slot9 = if slot9 then
+	if slot4 ~= slot0 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 38-39, warpins: 1 ---
+	--- BLOCK #7 19-19, warpins: 1 ---
+	slot3 = nil
 	--- END OF BLOCK #7 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 20-21, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 40-51, warpins: 1 ---
-	slot11 = true
-	slot16 = slot10
-	slot14 = slot10.Play
-	slot17 = slot9
+	--- BLOCK #9 22-24, warpins: 1 ---
+	slot4 = slot3.objectReference
+	--- END OF BLOCK #9 ---
 
-	slot14(slot16, slot17)
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
-	slot14 = TimerManager
-	slot14 = slot14.addTimer
-	slot16 = 0.5
 
-	slot17 = function()
+	--- BLOCK #10 25-28, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.GetComponent
+	slot7 = "ObjectReference"
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 29-36, warpins: 2 ---
+	slot5 = slot1.ecsAmountCache
+	slot5 = slot5.maxElementType
+	slot6 = slot1.ecsAmountCache
+	slot6 = slot6.maxValue
+	slot7 = ElementBuffData
+	slot7 = slot7[slot5]
+	--- END OF BLOCK #11 ---
+
+	slot8 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 37-37, warpins: 1 ---
+	slot8 = slot7.buffId
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 38-45, warpins: 2 ---
+	slot9 = slot1.actorBuff
+	slot11 = slot9
+	slot9 = slot9.findOneBuffByTemplateId
+	slot12 = slot8
+	slot9 = slot9(slot11, slot12)
+	slot10 = "VX_Node_ElementToplogo_State_Out"
+	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 46-48, warpins: 1 ---
+	slot11 = slot3.animation
+	--- END OF BLOCK #14 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 49-52, warpins: 2 ---
+	slot13 = slot4
+	slot11 = slot4.GetRefValue
+	slot14 = "uINodeElementToplogoAnimation"
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 53-56, warpins: 2 ---
+	slot12 = false
+	slot13, slot14 = nil
+	--- END OF BLOCK #16 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #17 57-58, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 59-62, warpins: 1 ---
+	slot15 = BuffUIUtils
+	slot15 = slot15.tryDestroyEleBuffsTimer
+	slot17 = slot2
+
+	slot15(slot17)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 63-64, warpins: 2 ---
+	--- END OF BLOCK #19 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #20 65-66, warpins: 1 ---
+	--- END OF BLOCK #20 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #21 67-68, warpins: 1 ---
+	--- END OF BLOCK #21 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 69-80, warpins: 1 ---
+	slot12 = true
+	slot17 = slot11
+	slot15 = slot11.Play
+	slot18 = slot10
+
+	slot15(slot17, slot18)
+
+	slot15 = TimerManager
+	slot15 = slot15.addTimer
+	slot17 = 0.5
+
+	slot18 = function()
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot0 = button
 		--- END OF BLOCK #0 ---
@@ -2635,417 +2785,505 @@ slot17 = function(slot0, slot1, slot2)
 
 	end
 
-	slot14 = slot14(slot16, slot17)
-	slot2.delayHideEleBuffTimer = slot14
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 52-55, warpins: 3 ---
-	slot16 = slot0
-	slot14 = slot0.SetActiveFastest
-	slot17 = false
-
-	slot14(slot16, slot17)
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 56-59, warpins: 2 ---
-	slot14 = false
-	slot15 = slot11
-
-	return slot14, slot15
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 60-62, warpins: 2 ---
-	slot14 = slot0.bActive
-	--- END OF BLOCK #11 ---
-
-	if slot14 == false then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 63-66, warpins: 1 ---
-	slot16 = slot0
-	slot14 = slot0.SetActive
-	slot17 = true
-
-	slot14(slot16, slot17)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 67-76, warpins: 2 ---
-	slot16 = slot0
-	slot14 = slot0.SetActiveFastest
-	slot17 = true
-
-	slot14(slot16, slot17)
-
-	slot14 = BuffConfigData
-	slot14 = slot14[slot7]
-	slot15 = 0
-	slot16 = slot14.stage3Layer
-	--- END OF BLOCK #13 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #14 77-81, warpins: 1 ---
-	slot16 = slot8.buffData
-	slot16 = slot16.layer
-	slot17 = slot14.stage3Layer
-	--- END OF BLOCK #14 ---
-
-	if slot17 < slot16 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 82-85, warpins: 1 ---
-	slot15 = 2
-	slot12 = "VX_Node_ElementToplogo_State3_In"
-	slot13 = "VX_Node_ElementToplogo_State3_Loop"
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #16 86-88, warpins: 2 ---
-	slot16 = slot14.stage2Layer
-	--- END OF BLOCK #16 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #17 89-93, warpins: 1 ---
-	slot16 = slot8.buffData
-	slot16 = slot16.layer
-	slot17 = slot14.stage2Layer
-	--- END OF BLOCK #17 ---
-
-	if slot17 < slot16 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 94-96, warpins: 1 ---
-	slot15 = 1
-	slot12 = "VX_Node_ElementToplogo_State2_In"
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #19 97-98, warpins: 2 ---
-	slot15 = 0
-	slot12 = "VX_Node_ElementToplogo_State1_In"
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 99-101, warpins: 3 ---
-	slot16 = slot2.preEleBuffStage
-	--- END OF BLOCK #20 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 102-104, warpins: 1 ---
-	slot16 = slot2.preEleBuffStage
-	--- END OF BLOCK #21 ---
-
-	if slot16 ~= slot15 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #22 105-111, warpins: 2 ---
-	slot18 = slot0
-	slot16 = slot0.TryChangePage
-	slot19 = "State"
-	slot20 = slot15
-
-	slot16(slot18, slot19, slot20)
-
+	slot15 = slot15(slot17, slot18)
+	slot2.delayHideEleBuffTimer = slot15
 	--- END OF BLOCK #22 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #25
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #23 112-113, warpins: 1 ---
+	--- BLOCK #23 81-84, warpins: 3 ---
+	slot17 = slot0
+	slot15 = slot0.SetActiveFastest
+	slot18 = false
+
+	slot15(slot17, slot18)
+
 	--- END OF BLOCK #23 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #25
-	end
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 114-117, warpins: 1 ---
-	slot18 = slot10
-	slot16 = slot10.Play
-	slot19 = slot12
+	--- BLOCK #24 85-88, warpins: 2 ---
+	slot15 = false
+	slot16 = slot12
 
-	slot16(slot18, slot19)
+	return slot15, slot16
 
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 118-120, warpins: 3 ---
-	slot16 = slot2.delayLoopAniTimer
+	--- BLOCK #25 89-91, warpins: 2 ---
+	slot15 = slot0.bActive
 	--- END OF BLOCK #25 ---
 
-	slot16 = if slot16 then
+	if slot15 == false then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 121-126, warpins: 1 ---
-	slot16 = TimerManager
-	slot16 = slot16.removeTimer
-	slot18 = slot2.delayLoopAniTimer
+	--- BLOCK #26 92-95, warpins: 1 ---
+	slot17 = slot0
+	slot15 = slot0.SetActive
+	slot18 = true
 
-	slot16(slot18)
+	slot15(slot17, slot18)
 
-	slot16 = nil
-	slot2.delayLoopAniTimer = slot16
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 127-128, warpins: 2 ---
+	--- BLOCK #27 96-105, warpins: 2 ---
+	slot17 = slot0
+	slot15 = slot0.SetActiveFastest
+	slot18 = true
+
+	slot15(slot17, slot18)
+
+	slot15 = BuffConfigData
+	slot15 = slot15[slot8]
+	slot16 = 0
+	slot17 = slot15.stage3Layer
 	--- END OF BLOCK #27 ---
 
-	slot10 = if slot10 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #28
 	else
 	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #28 129-130, warpins: 1 ---
+	--- BLOCK #28 106-110, warpins: 1 ---
+	slot17 = slot9.buffData
+	slot17 = slot17.layer
+	slot18 = slot15.stage3Layer
 	--- END OF BLOCK #28 ---
 
-	slot13 = if slot13 then
+	if slot18 < slot17 then
 	JUMP TO BLOCK #29
 	else
 	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #29 131-136, warpins: 1 ---
-	slot16 = TimerManager
-	slot16 = slot16.addTimer
-	slot18 = 0.5
-
-	slot19 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = button
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #1 4-6, warpins: 1 ---
-		slot0 = animationRefVal
-		--- END OF BLOCK #1 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 7-11, warpins: 1 ---
-		slot0 = animationRefVal
-		slot2 = slot0
-		slot0 = slot0.Play
-		slot3 = stageAniLoopName
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 12-12, warpins: 3 ---
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot16 = slot16(slot18, slot19)
-	slot2.delayLoopAniTimer = slot16
+	--- BLOCK #29 111-114, warpins: 1 ---
+	slot16 = 2
+	slot13 = "VX_Node_ElementToplogo_State3_In"
+	slot14 = "VX_Node_ElementToplogo_State3_Loop"
 	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #30 137-173, warpins: 4 ---
-	slot2.preEleBuffStage = slot15
-	slot16 = AbilityConst
-	slot16 = slot16.ECS_ELEMENT_2_ABILITY
-	slot16 = slot16[slot4]
-	slot19 = slot0
-	slot17 = slot0.TryChangePage
-	slot20 = "type"
-	slot21 = ElementPropData
-	slot21 = slot21[slot16]
-	slot21 = slot21.name
-
-	slot17(slot19, slot20, slot21)
-
-	slot19 = slot3
-	slot17 = slot3.GetRefValue
-	slot20 = "sliderUSlider"
-	slot17 = slot17(slot19, slot20)
-	slot20 = slot17
-	slot18 = slot17.SetActive
-	slot21 = true
-
-	slot18(slot20, slot21)
-
-	slot20 = slot3
-	slot18 = slot3.GetRefValue
-	slot21 = "numUBaseText"
-	slot18 = slot18(slot20, slot21)
-	slot19 = ClientTextUtils
-	slot19 = slot19.setText
-	slot21 = slot18
-	slot22 = BuffUIUtils
-	slot22 = slot22.formatBuffLayer
-	slot24 = slot8.buffData
-	slot24 = slot24.layer
-	MULTRES = slot22(slot24)
-
-	slot19(slot21, MULTRES)
-
-	slot19 = 0
-	slot20 = AbilitySettingGlobalConstData
-	slot20 = slot20.elementValuePerLayer
+	--- BLOCK #30 115-117, warpins: 2 ---
+	slot17 = slot15.stage2Layer
 	--- END OF BLOCK #30 ---
 
-	if slot15 == 0 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #31 174-176, warpins: 1 ---
-	slot21 = slot14.stage2Layer
+	--- BLOCK #31 118-122, warpins: 1 ---
+	slot17 = slot9.buffData
+	slot17 = slot17.layer
+	slot18 = slot15.stage2Layer
 	--- END OF BLOCK #31 ---
 
-	slot21 = if not slot21 then
+	if slot18 < slot17 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 177-177, warpins: 1 ---
-	slot21 = slot14.maxLayer
+	--- BLOCK #32 123-125, warpins: 1 ---
+	slot16 = 1
+	slot13 = "VX_Node_ElementToplogo_State2_In"
 	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #33 178-180, warpins: 2 ---
-	slot21 = slot20 * slot21
-	slot19 = slot5 / slot21
+	--- BLOCK #33 126-127, warpins: 2 ---
+	slot16 = 0
+	slot13 = "VX_Node_ElementToplogo_State1_In"
 	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
+	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 181-182, warpins: 1 ---
+	--- BLOCK #34 128-130, warpins: 3 ---
+	slot17 = slot2.preEleBuffStage
 	--- END OF BLOCK #34 ---
 
-	if slot15 == 1 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #35
 	else
 	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #35 183-190, warpins: 1 ---
-	slot21 = slot14.stage2Layer
-	slot21 = slot20 * slot21
-	slot22 = slot14.stage3Layer
-	slot22 = slot20 * slot22
-	slot23 = slot5 - slot21
-	slot24 = slot22 - slot21
-	slot19 = slot23 / slot24
+	--- BLOCK #35 131-133, warpins: 1 ---
+	slot17 = slot2.preEleBuffStage
 	--- END OF BLOCK #35 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
+	if slot17 ~= slot16 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #40
+	end
 
 
-	--- BLOCK #36 191-197, warpins: 1 ---
-	slot21 = slot14.stage3Layer
-	slot21 = slot20 * slot21
-	slot22 = slot14.maxLayer
-	slot22 = slot20 * slot22
-	slot23 = slot5 - slot21
-	slot24 = slot22 - slot21
-	slot19 = slot23 / slot24
+	--- BLOCK #36 134-143, warpins: 2 ---
+	slot19 = slot0
+	slot17 = slot0.TryChangePage
+	slot20 = "State"
+	slot21 = slot16
+	slot22 = false
+	slot23 = true
+	slot24 = false
+
+	slot17(slot19, slot20, slot21, slot22, slot23, slot24)
+
 	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #37
+	slot11 = if slot11 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #40
+	end
 
 
-	--- BLOCK #37 198-208, warpins: 3 ---
+	--- BLOCK #37 144-145, warpins: 1 ---
+	--- END OF BLOCK #37 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #40
+	end
+
+
+	--- BLOCK #38 146-151, warpins: 1 ---
+	slot19 = slot11
+	slot17 = slot11.Play
+	slot20 = slot13
+
+	slot17(slot19, slot20)
+
+	--- END OF BLOCK #38 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #40
+	end
+
+
+	--- BLOCK #39 152-155, warpins: 1 ---
+	slot19 = slot11
+	slot17 = slot11.PlayQueued
+	slot20 = slot14
+
+	slot17(slot19, slot20)
+
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 156-158, warpins: 5 ---
+	slot2.preEleBuffStage = slot16
+	--- END OF BLOCK #40 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 159-161, warpins: 1 ---
+	slot17 = slot2.preEleBuffType
+	--- END OF BLOCK #41 ---
+
+	if slot17 ~= slot5 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #44
+	end
+
+
+	--- BLOCK #42 162-173, warpins: 2 ---
+	slot17 = AbilityConst
+	slot17 = slot17.ECS_ELEMENT_2_ABILITY
+	slot17 = slot17[slot5]
+	slot20 = slot0
+	slot18 = slot0.TryChangePage
+	slot21 = "type"
+	slot22 = ElementPropData
+	slot22 = slot22[slot17]
+	slot22 = slot22.name
+
+	slot18(slot20, slot21, slot22)
+
+	--- END OF BLOCK #42 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #44
+	end
+
+
+	--- BLOCK #43 174-174, warpins: 1 ---
+	slot2.preEleBuffType = slot5
+	--- END OF BLOCK #43 ---
+
+	FLOW; TARGET BLOCK #44
+
+
+	--- BLOCK #44 175-176, warpins: 3 ---
+	--- END OF BLOCK #44 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #45 177-179, warpins: 1 ---
+	slot17 = slot3.slider
+	--- END OF BLOCK #45 ---
+
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 180-183, warpins: 2 ---
+	slot19 = slot4
+	slot17 = slot4.GetRefValue
+	slot20 = "sliderUSlider"
+	slot17 = slot17(slot19, slot20)
+	--- END OF BLOCK #46 ---
+
+	FLOW; TARGET BLOCK #47
+
+
+	--- BLOCK #47 184-185, warpins: 2 ---
+	--- END OF BLOCK #47 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #48 186-188, warpins: 1 ---
+	slot18 = slot2.preEleBuffSliderActive
+	--- END OF BLOCK #48 ---
+
+	slot18 = if not slot18 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #49 189-194, warpins: 2 ---
+	slot20 = slot17
+	slot18 = slot17.SetActive
+	slot21 = true
+
+	slot18(slot20, slot21)
+
+	--- END OF BLOCK #49 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 195-196, warpins: 1 ---
+	slot18 = true
+	slot2.preEleBuffSliderActive = slot18
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 197-200, warpins: 3 ---
+	slot18 = slot9.buffData
+	slot18 = slot18.layer
+	--- END OF BLOCK #51 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #52 201-203, warpins: 1 ---
+	slot19 = slot2.preEleBuffLayer
+	--- END OF BLOCK #52 ---
+
+	if slot19 ~= slot18 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #58
+	end
+
+
+	--- BLOCK #53 204-205, warpins: 2 ---
+	--- END OF BLOCK #53 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #54
+	else
+	JUMP TO BLOCK #55
+	end
+
+
+	--- BLOCK #54 206-208, warpins: 1 ---
+	slot19 = slot3.numText
+	--- END OF BLOCK #54 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #55 209-212, warpins: 2 ---
+	slot21 = slot4
+	slot19 = slot4.GetRefValue
+	slot22 = "numUBaseText"
+	slot19 = slot19(slot21, slot22)
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 213-222, warpins: 2 ---
+	slot20 = ClientTextUtils
+	slot20 = slot20.setText
+	slot22 = slot19
+	slot23 = BuffUIUtils
+	slot23 = slot23.formatBuffLayer
+	slot25 = slot18
+	MULTRES = slot23(slot25)
+
+	slot20(slot22, MULTRES)
+
+	--- END OF BLOCK #56 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #58
+	end
+
+
+	--- BLOCK #57 223-223, warpins: 1 ---
+	slot2.preEleBuffLayer = slot18
+	--- END OF BLOCK #57 ---
+
+	FLOW; TARGET BLOCK #58
+
+
+	--- BLOCK #58 224-228, warpins: 3 ---
+	slot19 = 0
+	slot20 = AbilitySettingGlobalConstData
+	slot20 = slot20.elementValuePerLayer
+	--- END OF BLOCK #58 ---
+
+	if slot16 == 0 then
+	JUMP TO BLOCK #59
+	else
+	JUMP TO BLOCK #62
+	end
+
+
+	--- BLOCK #59 229-231, warpins: 1 ---
+	slot21 = slot15.stage2Layer
+	--- END OF BLOCK #59 ---
+
+	slot21 = if not slot21 then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #61
+	end
+
+
+	--- BLOCK #60 232-232, warpins: 1 ---
+	slot21 = slot15.maxLayer
+	--- END OF BLOCK #60 ---
+
+	FLOW; TARGET BLOCK #61
+
+
+	--- BLOCK #61 233-235, warpins: 2 ---
+	slot21 = slot20 * slot21
+	slot19 = slot6 / slot21
+	--- END OF BLOCK #61 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #62 236-237, warpins: 1 ---
+	--- END OF BLOCK #62 ---
+
+	if slot16 == 1 then
+	JUMP TO BLOCK #63
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #63 238-245, warpins: 1 ---
+	slot21 = slot15.stage2Layer
+	slot21 = slot20 * slot21
+	slot22 = slot15.stage3Layer
+	slot22 = slot20 * slot22
+	slot23 = slot6 - slot21
+	slot24 = slot22 - slot21
+	slot19 = slot23 / slot24
+	--- END OF BLOCK #63 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #64 246-252, warpins: 1 ---
+	slot21 = slot15.stage3Layer
+	slot21 = slot20 * slot21
+	slot22 = slot15.maxLayer
+	slot22 = slot20 * slot22
+	slot23 = slot6 - slot21
+	slot24 = slot22 - slot21
+	slot19 = slot23 / slot24
+	--- END OF BLOCK #64 ---
+
+	FLOW; TARGET BLOCK #65
+
+
+	--- BLOCK #65 253-261, warpins: 3 ---
 	slot21 = math
 	slot21 = slot21.clamp
 	slot23 = slot19
@@ -3053,11 +3291,49 @@ slot17 = function(slot0, slot1, slot2)
 	slot25 = 1
 	slot21 = slot21(slot23, slot24, slot25)
 	slot19 = slot21
+	--- END OF BLOCK #65 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #66
+	else
+	JUMP TO BLOCK #67
+	end
+
+
+	--- BLOCK #66 262-264, warpins: 1 ---
+	slot21 = slot2.preEleBuffSliderValue
+	--- END OF BLOCK #66 ---
+
+	if slot21 ~= slot19 then
+	JUMP TO BLOCK #67
+	else
+	JUMP TO BLOCK #69
+	end
+
+
+	--- BLOCK #67 265-267, warpins: 2 ---
 	slot17.value = slot19
+	--- END OF BLOCK #67 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #68
+	else
+	JUMP TO BLOCK #69
+	end
+
+
+	--- BLOCK #68 268-268, warpins: 1 ---
+	slot2.preEleBuffSliderValue = slot19
+	--- END OF BLOCK #68 ---
+
+	FLOW; TARGET BLOCK #69
+
+
+	--- BLOCK #69 269-271, warpins: 3 ---
 	slot21 = true
 
 	return slot21
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #69 ---
 
 
 
@@ -3237,7 +3513,7 @@ slot17 = function(slot0, slot1, slot2)
 	if slot3 ~= nil then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #52
 	end
 
 
@@ -3332,233 +3608,343 @@ slot17 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 95-111, warpins: 4 ---
-	slot11 = {}
-	slot12 = slot0.templateId
-	slot11.templateId = slot12
-	slot12 = slot0.level
-	slot11.level = slot12
-	slot11.icon = slot3
-	slot11.tag = slot8
-	slot12 = slot0.layer
-	slot11.layer = slot12
-	slot12 = slot0.expiredTime
-	slot11.expiredTime = slot12
-	slot12 = slot0.duration
-	slot11.duration = slot12
-	slot12 = slot1.breakBuffFreezeTime
-	slot11.breakBuffFreezeTime = slot12
+	--- BLOCK #25 95-103, warpins: 4 ---
+	slot11 = pg
+	slot11 = slot11.getEntity
+	slot13 = slot0.srcEntityId
+	slot11 = slot11(slot13)
+	slot14 = slot0
+	slot12 = slot0.getRootOwner
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #25 ---
 
-	slot12 = if slot4 then
+	slot13 = if slot12 then
 	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #26 112-112, warpins: 1 ---
-	slot12 = slot4.hideCountDown
+	--- BLOCK #26 104-106, warpins: 1 ---
+	slot13 = slot12.actorBuff
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
+	slot13 = if slot13 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
 
 
-	--- BLOCK #27 113-125, warpins: 2 ---
-	slot11.hideCountDown = slot12
-	slot12 = ToBool
-	slot14 = slot4.isAdvanced
-	slot12 = slot12(slot14)
-	slot11.isAdvanced = slot12
-	slot12 = slot0.instanceId
-	slot11.instanceId = slot12
-	slot12 = slot4.stageElement
-	slot11.stageElement = slot12
-	slot11.stage = slot10
-	slot12 = slot1.displayedBuffs
+	--- BLOCK #27 107-111, warpins: 1 ---
+	slot13 = slot12.actorBuff
+	slot15 = slot13
+	slot13 = slot13.findBuff
+	slot16 = slot0.instanceId
+	slot13 = slot13(slot15, slot16)
 	--- END OF BLOCK #27 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 126-128, warpins: 1 ---
-	slot12 = slot1.displayedBuffs
-	slot13 = slot0.templateId
-	slot12 = slot12[slot13]
+	--- BLOCK #28 112-128, warpins: 3 ---
+	slot14 = {}
+	slot15 = slot0.templateId
+	slot14.templateId = slot15
+	slot15 = slot0.level
+	slot14.level = slot15
+	slot14.icon = slot3
+	slot14.tag = slot8
+	slot15 = slot0.layer
+	slot14.layer = slot15
+	slot15 = slot0.expiredTime
+	slot14.expiredTime = slot15
+	slot15 = slot0.duration
+	slot14.duration = slot15
+	slot15 = slot1.breakBuffFreezeTime
+	slot14.breakBuffFreezeTime = slot15
 	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #29
+	slot15 = if slot4 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
 
 
-	--- BLOCK #29 129-131, warpins: 2 ---
-	slot11.isDisplayed = slot12
+	--- BLOCK #29 129-129, warpins: 1 ---
+	slot15 = slot4.hideCountDown
 	--- END OF BLOCK #29 ---
 
-	slot12 = if slot1 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #31
-	end
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 132-132, warpins: 1 ---
-	slot12 = slot1.actorId
+	--- BLOCK #30 130-142, warpins: 2 ---
+	slot14.hideCountDown = slot15
+	slot15 = ToBool
+	slot17 = slot4.isAdvanced
+	slot15 = slot15(slot17)
+	slot14.isAdvanced = slot15
+	slot15 = slot0.instanceId
+	slot14.instanceId = slot15
+	slot15 = slot4.stageElement
+	slot14.stageElement = slot15
+	slot14.stage = slot10
+	slot15 = slot1.displayedBuffs
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
+	slot15 = if slot15 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
 
 
-	--- BLOCK #31 133-136, warpins: 2 ---
-	slot11.ownerActorId = slot12
-	slot12 = slot4.showOrder
+	--- BLOCK #31 143-145, warpins: 1 ---
+	slot15 = slot1.displayedBuffs
+	slot16 = slot0.templateId
+	slot15 = slot15[slot16]
 	--- END OF BLOCK #31 ---
 
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #33
-	end
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 137-137, warpins: 1 ---
-	slot12 = 0
+	--- BLOCK #32 146-148, warpins: 2 ---
+	slot14.isDisplayed = slot15
 	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #33
+	slot13 = if slot13 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #35
+	end
 
 
-	--- BLOCK #33 138-144, warpins: 2 ---
-	slot11.showOrder = slot12
-	slot12 = slot1.petInfo
-	slot11.petInfo = slot12
-	slot9 = slot11
-	slot11 = slot9.isDisplayed
+	--- BLOCK #33 149-151, warpins: 1 ---
+	slot15 = slot13.owner
 	--- END OF BLOCK #33 ---
 
-	slot11 = if not slot11 then
+	slot15 = if slot15 then
 	JUMP TO BLOCK #34
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #34 145-147, warpins: 1 ---
-	slot11 = slot0.isTeamBuff
+	--- BLOCK #34 152-155, warpins: 1 ---
+	slot15 = slot13.owner
+	slot15 = slot15.actorId
 	--- END OF BLOCK #34 ---
 
-	slot11 = if slot11 then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #35 148-150, warpins: 1 ---
-	slot11 = slot1.getMasterEntity
+	--- BLOCK #35 156-157, warpins: 3 ---
 	--- END OF BLOCK #35 ---
 
-	slot11 = if slot11 then
+	slot15 = if slot1 then
 	JUMP TO BLOCK #36
 	else
 	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #36 151-153, warpins: 1 ---
-	slot13 = slot1
-	slot11 = slot1.getMasterEntity
-	slot11 = slot11(slot13)
+	--- BLOCK #36 158-158, warpins: 1 ---
+	slot15 = slot1.actorId
 	--- END OF BLOCK #36 ---
 
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 154-155, warpins: 2 ---
+	--- BLOCK #37 159-163, warpins: 3 ---
+	slot14.ownerActorId = slot15
+	slot14.buffInstance = slot13
+	slot15 = slot4.showOrder
 	--- END OF BLOCK #37 ---
 
-	slot11 = if slot11 then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 164-164, warpins: 1 ---
+	slot15 = 0
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 165-167, warpins: 2 ---
+	slot14.showOrder = slot15
+	--- END OF BLOCK #39 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #40
 	else
 	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #38 156-158, warpins: 1 ---
-	slot12 = slot11.displayedBuffs
-	--- END OF BLOCK #38 ---
+	--- BLOCK #40 168-170, warpins: 1 ---
+	slot15 = slot11.petInfo
+	--- END OF BLOCK #40 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #39
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #41
 	else
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #39 159-161, warpins: 1 ---
-	slot12 = slot11.displayedBuffs
-	slot13 = slot0.templateId
-	slot12 = slot12[slot13]
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 162-162, warpins: 2 ---
-	slot9.isDisplayed = slot12
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 163-165, warpins: 4 ---
-	slot11 = #slot2
-	slot11 = slot11 + 1
-	slot2[slot11] = slot9
+	--- BLOCK #41 171-172, warpins: 2 ---
 	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #42
+	slot15 = if slot1 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #43
+	end
 
 
-	--- BLOCK #42 166-170, warpins: 2 ---
+	--- BLOCK #42 173-173, warpins: 1 ---
+	slot15 = slot1.petInfo
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 174-178, warpins: 3 ---
+	slot14.petInfo = slot15
+	slot9 = slot14
+	slot14 = slot9.isDisplayed
+	--- END OF BLOCK #43 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #44 179-181, warpins: 1 ---
+	slot14 = slot0.isTeamBuff
+	--- END OF BLOCK #44 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #45 182-184, warpins: 1 ---
+	slot14 = slot1.getMasterEntity
+	--- END OF BLOCK #45 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 185-187, warpins: 1 ---
+	slot16 = slot1
+	slot14 = slot1.getMasterEntity
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #46 ---
+
+	FLOW; TARGET BLOCK #47
+
+
+	--- BLOCK #47 188-189, warpins: 2 ---
+	--- END OF BLOCK #47 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #48 190-192, warpins: 1 ---
+	slot15 = slot14.displayedBuffs
+	--- END OF BLOCK #48 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #50
+	end
+
+
+	--- BLOCK #49 193-195, warpins: 1 ---
+	slot15 = slot14.displayedBuffs
+	slot16 = slot0.templateId
+	slot15 = slot15[slot16]
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 196-196, warpins: 2 ---
+	slot9.isDisplayed = slot15
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 197-199, warpins: 4 ---
+	slot14 = #slot2
+	slot14 = slot14 + 1
+	slot2[slot14] = slot9
+	--- END OF BLOCK #51 ---
+
+	FLOW; TARGET BLOCK #52
+
+
+	--- BLOCK #52 200-204, warpins: 2 ---
 	slot10 = element_buff_rev_data
 	slot11 = slot0.templateId
 	slot10 = slot10[slot11]
-	--- END OF BLOCK #42 ---
+	--- END OF BLOCK #52 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #53
 	else
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #55
 	end
 
 
-	--- BLOCK #43 171-172, warpins: 1 ---
-	--- END OF BLOCK #43 ---
+	--- BLOCK #53 205-206, warpins: 1 ---
+	--- END OF BLOCK #53 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #54
 	else
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #55
 	end
 
 
-	--- BLOCK #44 173-175, warpins: 1 ---
+	--- BLOCK #54 207-209, warpins: 1 ---
 	slot11 = 1
 	slot9.tIndex = slot11
 	slot9.ecsElementType = slot10
 
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #54 ---
 
-	FLOW; TARGET BLOCK #45
+	FLOW; TARGET BLOCK #55
 
 
-	--- BLOCK #45 176-176, warpins: 3 ---
+	--- BLOCK #55 210-210, warpins: 3 ---
 	return slot9
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #55 ---
 
 
 

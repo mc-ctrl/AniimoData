@@ -986,9 +986,32 @@ slot16 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 39-39, warpins: 5 ---
-	return
+	--- BLOCK #6 39-41, warpins: 5 ---
+	slot3 = slot0.updateStateCache
 	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 42-45, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.updateStateCache
+	slot6 = "BE_HUG_ENT_ST"
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 46-46, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
 
 
 

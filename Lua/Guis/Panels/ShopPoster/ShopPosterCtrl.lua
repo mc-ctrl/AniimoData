@@ -296,12 +296,11 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #1 5-13, warpins: 1 ---
+		--- BLOCK #1 5-12, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot0 = slot0.eModel
-		slot0 = slot0.modelComponent
-		slot0 = slot0.modelView
+		slot0 = slot0.modelModelView
 		slot2 = slot0
 		slot0 = slot0.SetLightIntensity
 		slot3 = 1
@@ -313,7 +312,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 14-14, warpins: 2 ---
+		--- BLOCK #2 13-13, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-77, warpins: 1 ---
+--- BLOCK #0 1-81, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -46,6 +46,28 @@ slot16 = slot0.Class
 slot18 = "ClientFollowingPhantomVirtualEntity"
 slot19 = slot1
 slot16 = slot16(slot18, slot19)
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = ClientFollowingPhantomVirtualEntity
+	slot2 = slot2.super
+	slot2 = slot2.ctor
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = false
+	slot0.isClientEnt = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.ctor = slot17
 
 slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
@@ -330,6 +352,30 @@ end
 slot16.refreshVisible = slot17
 
 slot17 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = ClientSimpleVirtualEntity
+	slot1 = slot1.destroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = ActorManager
+	slot1 = slot1.removeEntity
+	slot3 = slot0.actorId
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.destroy = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getEntityByActorId
@@ -346,7 +392,7 @@ slot17 = function(slot0)
 
 	--- BLOCK #1 7-11, warpins: 1 ---
 	slot2 = ClientSimpleVirtualEntity
-	slot2 = slot2.destroy
+	slot2 = slot2.preDestroy
 	slot4 = slot0
 
 	slot2(slot4)
@@ -367,71 +413,76 @@ slot17 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 17-22, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot2.eModel
-	slot5 = slot5.modelView
-	slot3 = slot3(slot5)
+	--- BLOCK #3 17-19, warpins: 1 ---
+	slot3 = slot2.eModel
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 23-28, warpins: 1 ---
-	slot3 = FollowingPhantomComponent
-	slot3 = slot3.GetByActorId
-	slot5 = slot2.actorId
+	--- BLOCK #4 20-25, warpins: 1 ---
+	slot3 = NotNil
+	slot5 = slot2.eModel
+	slot5 = slot5.modelView
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #4 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 29-32, warpins: 1 ---
+	--- BLOCK #5 26-31, warpins: 1 ---
+	slot3 = FollowingPhantomComponent
+	slot3 = slot3.GetByActorId
+	slot5 = slot2.actorId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-35, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.RemoveFollowPhantom
 	slot7 = slot0.id
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #6 33-41, warpins: 4 ---
+	--- BLOCK #7 36-40, warpins: 5 ---
 	slot3 = ClientSimpleVirtualEntity
-	slot3 = slot3.destroy
+	slot3 = slot3.preDestroy
 	slot5 = slot0
 
 	slot3(slot5)
 
-	slot3 = ActorManager
-	slot3 = slot3.removeEntity
-	slot5 = slot0.actorId
-
-	slot3(slot5)
-
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot16.destroy = slot17
+slot16.preDestroy = slot17
 
 slot17 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
@@ -459,21 +510,19 @@ end
 slot16.refreshPhantomVisible = slot17
 
 slot17 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -481,7 +530,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-32, warpins: 2 ---
+	--- BLOCK #2 5-29, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setModelLayer
 	slot4 = ClientConst
@@ -494,8 +543,7 @@ slot17 = function(slot0)
 	slot1 = slot0.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = ClientModelUtils
 	slot3 = slot3.getModelExtraInfo
 	slot5 = slot1
@@ -504,10 +552,10 @@ slot17 = function(slot0)
 	slot9 = "_Shadow"
 	slot3 = slot3(slot5, slot6, slot7, slot8, slot9)
 	slot4 = string
-	slot4 = slot4.startsWith
-	slot6 = slot3.prefabResID
-	slot7 = "$E_P_Parmon"
-	slot4 = slot4(slot6, slot7)
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot0.actionData
+	slot6 = slot6.prefabResId
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
 	slot4 = if not slot4 then
@@ -517,7 +565,31 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #3 33-39, warpins: 1 ---
+	--- BLOCK #3 30-32, warpins: 1 ---
+	slot4 = slot0.actionData
+	slot4 = slot4.prefabResId
+	slot3.prefabResID = slot4
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 33-39, warpins: 2 ---
+	slot4 = string
+	slot4 = slot4.startsWith
+	slot6 = slot3.prefabResID
+	slot7 = "$E_P_Parmon"
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 40-46, warpins: 1 ---
 	slot4 = slot3.prefabResID
 	slot6 = slot4
 	slot4 = slot4.gsub
@@ -525,12 +597,12 @@ slot17 = function(slot0)
 	slot8 = "E_P_Parmon"
 	slot4 = slot4(slot6, slot7, slot8)
 	slot3.prefabResID = slot4
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 40-48, warpins: 2 ---
+	--- BLOCK #6 47-55, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.resMgr
@@ -538,16 +610,16 @@ slot17 = function(slot0)
 	slot4 = slot4.CheckAssetExist
 	slot7 = slot3.prefabResID
 	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 49-55, warpins: 1 ---
+	--- BLOCK #7 56-62, warpins: 1 ---
 	slot4 = ClientModelUtils
 	slot4 = slot4.applyModelAppearance
 	slot6 = slot2.modelInfo
@@ -556,12 +628,12 @@ slot17 = function(slot0)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 56-68, warpins: 1 ---
+	--- BLOCK #8 63-75, warpins: 1 ---
 	slot4 = ClientModelUtils
 	slot4 = slot4.getModelExtraInfo
 	slot6 = slot1
@@ -577,12 +649,12 @@ slot17 = function(slot0)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 69-77, warpins: 2 ---
+	--- BLOCK #9 76-84, warpins: 2 ---
 	slot6 = slot2
 	slot4 = slot2.RefreshModels
 
@@ -596,7 +668,7 @@ slot17 = function(slot0)
 	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 

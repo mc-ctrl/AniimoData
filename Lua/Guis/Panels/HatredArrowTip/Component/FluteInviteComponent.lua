@@ -29,10 +29,10 @@ slot8 = require
 slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = {
+	RECEIVE_FLUTE = 1,
 	PLAY_FLUTE = 0,
 	FLUTE_REPLY = 3,
-	RECEIVE_REPLY = 2,
-	RECEIVE_FLUTE = 1
+	RECEIVE_REPLY = 2
 }
 slot10 = {}
 slot11 = slot8.GENDER_TYPE_MALE

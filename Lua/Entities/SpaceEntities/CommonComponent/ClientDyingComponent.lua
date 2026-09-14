@@ -856,15 +856,12 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #1 9-19, warpins: 1 ---
-	slot1 = table
-	slot1 = slot1.unpack
-	slot3 = PhysicsUtils
-	slot3 = slot3.getGroundHeight
-	slot7 = slot0
-	slot5 = slot0.getPosition
-	MULTRES = slot5(slot7)
-	MULTRES = slot3(MULTRES)
+	--- BLOCK #1 9-16, warpins: 1 ---
+	slot1 = PhysicsUtils
+	slot1 = slot1.getGroundHeight
+	slot5 = slot0
+	slot3 = slot0.getPosition
+	MULTRES = slot3(slot5)
 	slot1, slot2 = slot1(MULTRES)
 	--- END OF BLOCK #1 ---
 
@@ -875,7 +872,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #2 20-26, warpins: 1 ---
+	--- BLOCK #2 17-23, warpins: 1 ---
 	slot3 = math
 	slot3 = slot3.abs
 	slot5 = slot2
@@ -890,7 +887,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #3 27-45, warpins: 1 ---
+	--- BLOCK #3 24-42, warpins: 1 ---
 	slot3 = table
 	slot3 = slot3.insert
 	slot5 = slot0.backtrackQueue
@@ -917,7 +914,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 46-53, warpins: 4 ---
+	--- BLOCK #4 43-50, warpins: 4 ---
 	slot3 = slot0
 	slot1 = slot0.addRepeatTimer
 	slot4 = 1
@@ -978,16 +975,13 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 24-35, warpins: 2 ---
-		slot0 = table
-		slot0 = slot0.unpack
-		slot2 = PhysicsUtils
-		slot2 = slot2.getGroundHeight
-		slot4 = self
-		slot6 = slot4
-		slot4 = slot4.getPosition
-		MULTRES = slot4(slot6)
-		MULTRES = slot2(MULTRES)
+		--- BLOCK #4 24-32, warpins: 2 ---
+		slot0 = PhysicsUtils
+		slot0 = slot0.getGroundHeight
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.getPosition
+		MULTRES = slot2(slot4)
 		slot0, slot1 = slot0(MULTRES)
 		--- END OF BLOCK #4 ---
 
@@ -998,7 +992,7 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #5 36-42, warpins: 1 ---
+		--- BLOCK #5 33-39, warpins: 1 ---
 		slot2 = math
 		slot2 = slot2.abs
 		slot4 = slot1
@@ -1013,7 +1007,7 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #6 43-64, warpins: 1 ---
+		--- BLOCK #6 40-61, warpins: 1 ---
 		slot2 = table
 		slot2 = slot2.insert
 		slot4 = self
@@ -1043,7 +1037,7 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 65-65, warpins: 3 ---
+		--- BLOCK #7 62-62, warpins: 3 ---
 		return
 		--- END OF BLOCK #7 ---
 
@@ -1122,15 +1116,12 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #5 19-29, warpins: 1 ---
-	slot5 = table
-	slot5 = slot5.unpack
-	slot7 = PhysicsUtils
-	slot7 = slot7.getGroundHeight
-	slot11 = slot0
-	slot9 = slot0.getPosition
-	MULTRES = slot9(slot11)
-	MULTRES = slot7(MULTRES)
+	--- BLOCK #5 19-26, warpins: 1 ---
+	slot5 = PhysicsUtils
+	slot5 = slot5.getGroundHeight
+	slot9 = slot0
+	slot7 = slot0.getPosition
+	MULTRES = slot7(slot9)
 	slot5, slot6 = slot5(MULTRES)
 	--- END OF BLOCK #5 ---
 
@@ -1141,7 +1132,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #6 30-36, warpins: 1 ---
+	--- BLOCK #6 27-33, warpins: 1 ---
 	slot7 = math
 	slot7 = slot7.abs
 	slot9 = slot6
@@ -1156,7 +1147,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #7 37-47, warpins: 1 ---
+	--- BLOCK #7 34-44, warpins: 1 ---
 	slot7 = true
 	slot10 = slot0
 	slot8 = slot0.getPosition
@@ -1175,7 +1166,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 48-51, warpins: 6 ---
+	--- BLOCK #8 45-48, warpins: 6 ---
 	slot5 = Const
 	slot5 = slot5.RESET_POS_TYPE_INCLUDE_CUR_POS
 	--- END OF BLOCK #8 ---
@@ -1187,7 +1178,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #9 52-55, warpins: 1 ---
+	--- BLOCK #9 49-52, warpins: 1 ---
 	slot5 = Const
 	slot5 = slot5.RESET_POS_TYPE_EXCLUDE_CUR_POS
 	--- END OF BLOCK #9 ---
@@ -1199,7 +1190,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #10 56-60, warpins: 2 ---
+	--- BLOCK #10 53-57, warpins: 2 ---
 	slot5 = ToBool
 	slot7 = slot0.backtrackQueue
 	slot5 = slot5(slot7)
@@ -1212,7 +1203,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #11 61-65, warpins: 1 ---
+	--- BLOCK #11 58-62, warpins: 1 ---
 	slot5 = slot0.backtrackQueue
 	slot5 = #slot5
 	slot6 = 1
@@ -1222,16 +1213,13 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 66-76, warpins: 2 ---
+	--- BLOCK #12 63-70, warpins: 2 ---
 	slot9 = slot0.backtrackQueue
 	slot9 = slot9[slot8]
-	slot10 = table
-	slot10 = slot10.unpack
-	slot12 = PhysicsUtils
-	slot12 = slot12.getGroundHeight
-	slot14 = slot9.pos
-	MULTRES = slot12(slot14)
-	slot10, slot11 = slot10(MULTRES)
+	slot10 = PhysicsUtils
+	slot10 = slot10.getGroundHeight
+	slot12 = slot9.pos
+	slot10, slot11 = slot10(slot12)
 	--- END OF BLOCK #12 ---
 
 	slot10 = if slot10 then
@@ -1241,7 +1229,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #13 77-83, warpins: 1 ---
+	--- BLOCK #13 71-77, warpins: 1 ---
 	slot12 = math
 	slot12 = slot12.abs
 	slot14 = slot11
@@ -1256,7 +1244,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #14 84-87, warpins: 1 ---
+	--- BLOCK #14 78-81, warpins: 1 ---
 	slot12 = true
 	slot13 = slot9.pos
 	slot14 = slot9.rotYawEuler
@@ -1268,20 +1256,20 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 88-88, warpins: 3 ---
+	--- BLOCK #15 82-82, warpins: 3 ---
 	--- END OF BLOCK #15 ---
 
 	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #12
 	GO OUT TO BLOCK #16
 
-	--- BLOCK #16 89-89, warpins: 1 ---
+	--- BLOCK #16 83-83, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #17 90-93, warpins: 1 ---
+	--- BLOCK #17 84-87, warpins: 1 ---
 	slot5 = Const
 	slot5 = slot5.RESET_POS_TYPE_MARK_POINT
 	--- END OF BLOCK #17 ---
@@ -1293,7 +1281,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #18 94-97, warpins: 1 ---
+	--- BLOCK #18 88-91, warpins: 1 ---
 	slot5 = true
 	slot6 = slot3
 	--- END OF BLOCK #18 ---
@@ -1305,7 +1293,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #19 98-100, warpins: 1 ---
+	--- BLOCK #19 92-94, warpins: 1 ---
 	slot7 = slot4[2]
 	--- END OF BLOCK #19 ---
 
@@ -1316,7 +1304,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #20 101-101, warpins: 2 ---
+	--- BLOCK #20 95-95, warpins: 2 ---
 	slot7 = 0
 
 	--- END OF BLOCK #20 ---
@@ -1324,7 +1312,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 102-103, warpins: 2 ---
+	--- BLOCK #21 96-97, warpins: 2 ---
 	return slot5, slot6, slot7
 
 	--- END OF BLOCK #21 ---
@@ -1332,7 +1320,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #22 104-110, warpins: 1 ---
+	--- BLOCK #22 98-104, warpins: 1 ---
 	slot5 = LoggerManager
 	slot5 = slot5.checkLogger
 	slot7 = LoggerConst
@@ -1347,7 +1335,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #23 111-116, warpins: 1 ---
+	--- BLOCK #23 105-110, warpins: 1 ---
 	slot5 = slot0.logger
 	slot7 = slot5
 	slot5 = slot5.error
@@ -1361,7 +1349,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 117-120, warpins: 5 ---
+	--- BLOCK #24 111-114, warpins: 5 ---
 	slot5 = false
 	slot6 = {}
 	slot7 = 0

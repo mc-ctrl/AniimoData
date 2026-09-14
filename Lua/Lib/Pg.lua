@@ -91,7 +91,7 @@ slot19 = {}
 FLOW; TARGET BLOCK #4
 
 
---- BLOCK #4 66-308, warpins: 2 ---
+--- BLOCK #4 66-131, warpins: 2 ---
 slot18.proxy = slot19
 slot18 = slot0.global
 slot19 = appFacade
@@ -153,6 +153,27 @@ slot18 = slot0.global
 slot19 = appFacade
 slot19 = slot19.localizationManager
 slot18.localizationMgr = slot19
+slot18 = slot0.global
+slot18 = slot18.localizationMgr
+slot18 = slot18.SelectedLanguage
+--- END OF BLOCK #4 ---
+
+slot18 = if not slot18 then
+JUMP TO BLOCK #5
+else
+JUMP TO BLOCK #6
+end
+
+
+--- BLOCK #5 132-132, warpins: 1 ---
+slot18 = 0
+--- END OF BLOCK #5 ---
+
+FLOW; TARGET BLOCK #6
+
+
+--- BLOCK #6 133-248, warpins: 2 ---
+slot0.languageType = slot18
 slot18 = slot0.global
 slot19 = appFacade
 slot19 = slot19.dungeonManager
@@ -265,6 +286,152 @@ slot18.calculateRedDotPriority = slot19
 slot18 = slot0.global
 slot19 = slot9.bindCurvedUI
 slot18.bindCurvedUI = slot19
+slot18 = slot0._psIconUIVisibleStates
+--- END OF BLOCK #6 ---
+
+slot18 = if not slot18 then
+JUMP TO BLOCK #7
+else
+JUMP TO BLOCK #8
+end
+
+
+--- BLOCK #7 249-249, warpins: 1 ---
+slot18 = {}
+--- END OF BLOCK #7 ---
+
+FLOW; TARGET BLOCK #8
+
+
+--- BLOCK #8 250-327, warpins: 2 ---
+slot0._psIconUIVisibleStates = slot18
+slot18 = slot0.global
+slot19 = 0
+slot18.localHostMode = slot19
+
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-19, warpins: 2 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "pg.setPSIconUIVisiable ui:%s, visible:%s"
+	slot6 = tostring
+	slot8 = slot0
+	slot6 = slot6(slot8)
+	slot7 = tostring
+	slot9 = slot1
+	MULTRES = slot7(slot9)
+
+	slot2(slot4, slot5, slot6, MULTRES)
+
+	slot2 = pg
+	slot2 = slot2._psIconUIVisibleStates
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-21, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 22-22, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-28, warpins: 2 ---
+	slot2[slot0] = slot3
+	slot2 = pairs
+	slot4 = pg
+	slot4 = slot4._psIconUIVisibleStates
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 29-30, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-43, warpins: 1 ---
+	slot7 = logger
+	slot9 = slot7
+	slot7 = slot7.info
+	slot10 = "pg.setPSIconUIVisiable ui:%s, visible:%s, return true"
+	slot11 = tostring
+	slot13 = slot5
+	slot11 = slot11(slot13)
+	slot12 = tostring
+	slot14 = slot1
+	MULTRES = slot12(slot14)
+
+	slot7(slot9, slot10, slot11, MULTRES)
+
+	slot7 = true
+
+	return slot7
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 44-45, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 46-47, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot0.setPSIconUIVisiable = slot18
 
 slot18 = function()
 	--- BLOCK #0 1-25, warpins: 1 ---
@@ -1181,6 +1348,236 @@ end
 slot0.profileEntityCount = slot18
 
 slot18 = function()
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot0 = require
+	slot2 = "Core.Framework.Class"
+	slot0 = slot0(slot2)
+	slot1 = collectgarbage
+	slot3 = "count"
+	slot1 = slot1(slot3)
+	slot2 = collectgarbage
+	slot4 = "collect"
+
+	slot2(slot4)
+
+	slot2 = collectgarbage
+	slot4 = "count"
+	slot2 = slot2(slot4)
+	slot3 = slot0.profileInstanceCount
+	slot3 = slot3()
+	slot4 = {}
+	slot5 = 0
+	slot6 = pairs
+	slot8 = slot3
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 21-30, warpins: 1 ---
+	slot5 = slot5 + 1
+	slot11 = #slot4
+	slot11 = slot11 + 1
+	slot12 = {}
+	slot12.className = slot9
+	slot13 = slot10.alive
+	slot12.alive = slot13
+	slot13 = slot10.created
+	slot12.created = slot13
+	slot4[slot11] = slot12
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 31-32, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 33-50, warpins: 1 ---
+	slot6 = table
+	slot6 = slot6.sort
+	slot8 = slot4
+
+	slot9 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = slot0.alive
+		slot3 = slot1.alive
+		--- END OF BLOCK #0 ---
+
+		if slot2 ~= slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = slot0.alive
+		slot3 = slot1.alive
+		--- END OF BLOCK #1 ---
+
+		if slot3 >= slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 12-12, warpins: 2 ---
+		return slot2
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 13-16, warpins: 2 ---
+		slot2 = slot0.className
+		slot3 = slot1.className
+		--- END OF BLOCK #5 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 17-18, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 19-19, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 20-20, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot6(slot8, slot9)
+
+	slot6 = print
+	slot8 = "garbage collect"
+	slot9 = slot1
+	slot10 = slot2
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = "Logs\\InstanceCount.txt"
+	slot7 = io
+	slot7 = slot7.open
+	slot9 = slot6
+	slot10 = "w"
+	slot7 = slot7(slot9, slot10)
+	--- END OF BLOCK #3 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 51-62, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.write
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = "total: %d\n"
+	slot14 = slot5
+	MULTRES = slot11(slot13, slot14)
+
+	slot8(slot10, MULTRES)
+
+	slot8 = ipairs
+	slot10 = slot4
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 63-72, warpins: 1 ---
+	slot15 = slot7
+	slot13 = slot7.write
+	slot16 = string
+	slot16 = slot16.format
+	slot18 = "{className: %s, alive: %d, created: %d}\n"
+	slot19 = slot12.className
+	slot20 = slot12.alive
+	slot21 = slot12.created
+	MULTRES = slot16(slot18, slot19, slot20, slot21)
+
+	slot13(slot15, MULTRES)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 73-74, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 75-77, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.close
+
+	slot8(slot10)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 78-78, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot0.profileInstanceCount = slot18
+
+slot18 = function()
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0 = require
 	slot2 = "Common.Utils.Utils"
@@ -1298,39 +1695,13 @@ end
 slot0.getLocalizationTextWithoutSuffix = slot18
 
 slot18 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.localizationMgr
-	slot1 = slot1.SelectedLanguage
-	slot2 = ClientConst
-	slot2 = slot2.LANGUAGE_TYPE_MAP
-	slot2 = slot2.zh_CN
-
-	--- END OF BLOCK #0 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-10, warpins: 1 ---
-	return slot0
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-14, warpins: 2 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.getFormatNumber
 	slot3 = slot0
 
 	return slot1(slot3)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -1407,34 +1778,49 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-15, warpins: 2 ---
+	--- BLOCK #2 7-10, warpins: 2 ---
 	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.localizationMgr
-	slot2 = slot2.SelectedLanguage
+	slot2 = slot2.languageType
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-11, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-16, warpins: 2 ---
 	slot3 = ClientConst
 	slot3 = slot3.LANGUAGE_TYPE_MAP
 	slot3 = slot3.zh_CN
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
-	--- END OF BLOCK #3 ---
+	--- BLOCK #5 17-18, warpins: 1 ---
+	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 18-22, warpins: 1 ---
+	--- BLOCK #6 19-23, warpins: 1 ---
 	slot2 = os
 	slot2 = slot2.date
 	slot4 = "%Y/%m/%d"
@@ -1442,38 +1828,15 @@ slot18 = function(slot0, slot1)
 
 	return slot2(slot4, slot5)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 23-27, warpins: 2 ---
+	--- BLOCK #7 24-28, warpins: 2 ---
 	slot2 = os
 	slot2 = slot2.date
 	slot4 = "%Y/%m/%d %H:%M:%S"
-	slot5 = slot0
-
-	return slot2(slot4, slot5)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 28-29, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 30-34, warpins: 1 ---
-	slot2 = os
-	slot2 = slot2.date
-	slot4 = "%m/%d/%Y"
 	slot5 = slot0
 
 	return slot2(slot4, slot5)
@@ -1483,14 +1846,37 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-39, warpins: 2 ---
+	--- BLOCK #8 29-30, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 31-35, warpins: 1 ---
+	slot2 = os
+	slot2 = slot2.date
+	slot4 = "%m/%d/%Y"
+	slot5 = slot0
+
+	return slot2(slot4, slot5)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-40, warpins: 2 ---
 	slot2 = os
 	slot2 = slot2.date
 	slot4 = "%m/%d/%Y %H:%M:%S"
 	slot5 = slot0
 
 	return slot2(slot4, slot5)
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -4914,7 +5300,7 @@ end
 slot0.patchRiderEmmyHelper = slot18
 
 return slot0
---- END OF BLOCK #4 ---
+--- END OF BLOCK #8 ---
 
 
 

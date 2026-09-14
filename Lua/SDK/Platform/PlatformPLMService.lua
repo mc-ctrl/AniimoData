@@ -1,4 +1,4 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-59, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformLogger"
 slot0 = slot0(slot2)
@@ -9,51 +9,36 @@ slot2 = require
 slot4 = "SDK.Platform.PlatformCrossPlatformService"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "SDK.Platform.PlatformTextCommunicationService"
+slot5 = "Core.Client.GlobalData"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "SDK.Platform.PlatformCommunicationService"
+slot6 = "SDK.Platform.PlatformIdentityUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "SDK.Platform.PlatformUGCService"
+slot7 = "SDK.Platform.PlatformPaymentReconcileService"
 slot5 = slot5(slot7)
-slot6 = require
-slot8 = "SDK.Platform.PlatformSocialService"
-slot6 = slot6(slot8)
-slot7 = require
-slot9 = "SDK.Platform.PlatformTextMaskService"
-slot7 = slot7(slot9)
-slot8 = require
-slot10 = "SDK.Platform.PlatformImageMaskService"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Common.Const.EventConst"
-slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Core.Client.GlobalData"
-slot10 = slot10(slot12)
-slot11 = CS
-slot11 = slot11.FunPlus
-slot11 = slot11.WorldX
-slot11 = slot11.SDK
-slot11 = slot11.Platform
-slot11 = slot11.PlatformBridgeLuaFacade
-slot12 = {}
-slot13 = {
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
+slot6 = slot6.SDK
+slot6 = slot6.Platform
+slot6 = slot6.PlatformBridgeLuaFacade
+slot7 = {}
+slot8 = {
+	pendingUnconstrainRefresh = false,
+	pendingResumeRefresh = false,
 	isSuspended = false,
 	callbackRegistered = false,
 	initialized = false,
-	retryCount = 0,
-	pendingUnconstrainRefresh = false,
-	pendingResumeRefresh = false
+	retryCount = 0
 }
-slot12.state = slot13
-slot13 = 1
-slot12.RETRY_DELAY = slot13
-slot13 = 5
-slot12.RETRY_WARN_INTERVAL = slot13
+slot7.state = slot8
+slot8 = 1
+slot7.RETRY_DELAY = slot8
+slot8 = 5
+slot7.RETRY_WARN_INTERVAL = slot8
 
-slot13 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -100,99 +85,9 @@ slot13 = function()
 
 end
 
-slot12.isPLMSupported = slot13
+slot7.isPLMSupported = slot8
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = pg
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #2 8-12, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.eventEmitter
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 13-15, warpins: 1 ---
-	slot1 = EventConst
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 16-19, warpins: 1 ---
-	slot1 = EventConst
-	slot1 = slot1.PLATFORM_NAME_MASK_POLICY_REFRESHED
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 20-29, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.eventEmitter
-	slot3 = slot1
-	slot1 = slot1.emit
-	slot4 = EventConst
-	slot4 = slot4.PLATFORM_NAME_MASK_POLICY_REFRESHED
-	slot5 = {
-		reason = "plm_privacy_refresh"
-	}
-	slot5.source = slot0
-
-	slot1(slot3, slot4, slot5)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 30-30, warpins: 6 ---
-	return
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot12.emitNameMaskPolicyRefreshed = slot13
-
-slot13 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -262,9 +157,9 @@ slot13 = function()
 
 end
 
-slot12.isPlatformPrivacyContextReady = slot13
+slot7.isPlatformPrivacyContextReady = slot8
 
-slot13 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformPLMService
 	slot1 = slot1.isPlatformPrivacyContextReady
@@ -290,316 +185,57 @@ slot13 = function(slot0)
 	slot1(slot3, slot4, MULTRES)
 
 	slot1 = false
+
+	return slot1
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-50, warpins: 1 ---
-	slot1 = PlatformTextCommunicationService
-	slot3 = slot1
-	slot1 = slot1.clearPermissionCache
-	slot4 = {
-		clearUGCService = false
-	}
+	--- BLOCK #2 16-22, warpins: 2 ---
+	slot1 = PlatformIdentityUtils
+	slot1 = slot1.refreshPrivacyCachesIfNotPS
+	slot3 = "plm_privacy_refresh"
+	slot4 = slot0
 
 	slot1(slot3, slot4)
 
-	slot1 = PlatformSocialService
-	slot3 = slot1
-	slot1 = slot1.refreshPlatformFriendCache
+	--- END OF BLOCK #2 ---
 
-	slot1(slot3)
-
-	slot1 = PlatformTextMaskService
-	slot3 = slot1
-	slot1 = slot1.clearCache
-
-	slot1(slot3)
-
-	slot1 = PlatformImageMaskService
-	slot3 = slot1
-	slot1 = slot1.clearCache
-
-	slot1(slot3)
-
-	slot1 = PlatformUGCService
-	slot3 = slot1
-	slot1 = slot1.refreshLocalPolicy
-	slot4 = "plm_privacy_refresh"
-
-	slot5 = function(slot0)
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot1 = PlatformPLMService
-		slot1 = slot1.emitNameMaskPolicyRefreshed
-		slot3 = source
-
-		slot1(slot3)
-
-		slot1 = pg
-		--- END OF BLOCK #0 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #1 8-11, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		--- END OF BLOCK #1 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #2 12-16, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.eventEmitter
-		--- END OF BLOCK #2 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #3 17-19, warpins: 1 ---
-		slot1 = EventConst
-		--- END OF BLOCK #3 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #4 20-23, warpins: 1 ---
-		slot1 = EventConst
-		slot1 = slot1.PLATFORM_UGC_POLICY_CHANGED
-		--- END OF BLOCK #4 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #5 24-35, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.eventEmitter
-		slot3 = slot1
-		slot1 = slot1.emit
-		slot4 = EventConst
-		slot4 = slot4.PLATFORM_UGC_POLICY_CHANGED
-		slot5 = {
-			reason = "plm_privacy_refresh"
-		}
-		slot6 = source
-		slot5.source = slot6
-		slot5.policy = slot0
-
-		slot1(slot3, slot4, slot5)
-
-		--- END OF BLOCK #5 ---
-
-		FLOW; TARGET BLOCK #6
-
-
-		--- BLOCK #6 36-36, warpins: 6 ---
-		return
-		--- END OF BLOCK #6 ---
-
-
-
+	if slot0 == "resume" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
-	slot1(slot3, slot4, slot5)
 
-	slot1 = PlatformTextCommunicationService
-	slot3 = slot1
-	slot1 = slot1.prefetchLocalCommunicationPrivileges
-
-	slot1(slot3)
-
-	slot1 = PlatformCommunicationService
-	slot3 = slot1
-	slot1 = slot1.refreshLocalCommunicationPolicy
-
-	slot4 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = pg
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		--- END OF BLOCK #1 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #2 8-12, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.chat
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #3 13-20, warpins: 1 ---
-		slot0 = type
-		slot2 = pg
-		slot2 = slot2.game
-		slot2 = slot2.chat
-		slot2 = slot2.refreshPlatformFilteredChatMessages
-		slot0 = slot0(slot2)
-		--- END OF BLOCK #3 ---
-
-		if slot0 == "function" then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 21-27, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.chat
-		slot2 = slot0
-		slot0 = slot0.refreshPlatformFilteredChatMessages
-		slot3 = "plm_privacy_refresh"
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-		--- BLOCK #5 28-30, warpins: 5 ---
-		slot0 = pg
-		--- END OF BLOCK #5 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #10
-		end
-
-
-		--- BLOCK #6 31-34, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		--- END OF BLOCK #6 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #7
-		else
-		JUMP TO BLOCK #10
-		end
-
-
-		--- BLOCK #7 35-39, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.chat
-		--- END OF BLOCK #7 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #8
-		else
-		JUMP TO BLOCK #10
-		end
-
-
-		--- BLOCK #8 40-47, warpins: 1 ---
-		slot0 = type
-		slot2 = pg
-		slot2 = slot2.game
-		slot2 = slot2.chat
-		slot2 = slot2.refreshPlatformFilteredMails
-		slot0 = slot0(slot2)
-		--- END OF BLOCK #8 ---
-
-		if slot0 == "function" then
-		JUMP TO BLOCK #9
-		else
-		JUMP TO BLOCK #10
-		end
-
-
-		--- BLOCK #9 48-54, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.chat
-		slot2 = slot0
-		slot0 = slot0.refreshPlatformFilteredMails
-		slot3 = "plm_privacy_refresh"
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #9 ---
-
-		FLOW; TARGET BLOCK #10
-
-
-		--- BLOCK #10 55-55, warpins: 5 ---
-		return
-		--- END OF BLOCK #10 ---
-
-
-
-	end
+	--- BLOCK #3 23-27, warpins: 1 ---
+	slot1 = PlatformIdentityUtils
+	slot1 = slot1.refreshPrivacyCachesIfPS
+	slot3 = "plm_privacy_refresh"
+	slot4 = slot0
 
 	slot1(slot3, slot4)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 28-29, warpins: 2 ---
 	slot1 = true
 
 	return slot1
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 51-51, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot12.refreshPlatformPrivacyCaches = slot13
+slot7.refreshPlatformPrivacyCaches = slot8
 
-slot13 = function()
+slot8 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformPLMService
 	slot0 = slot0.state
@@ -640,10 +276,10 @@ slot13 = function()
 
 end
 
-slot12.stopRetryTimer = slot13
-slot13 = nil
+slot7.stopRetryTimer = slot8
+slot8 = nil
 
-slot14 = function()
+slot9 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformPLMService
 	slot0 = slot0.state
@@ -756,9 +392,9 @@ slot14 = function()
 
 end
 
-slot12.schedulePendingRefreshRetry = slot14
+slot7.schedulePendingRefreshRetry = slot9
 
-slot13 = function()
+slot8 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformPLMService
 	slot0 = slot0.state
@@ -893,7 +529,7 @@ slot13 = function()
 
 end
 
-slot14 = function()
+slot9 = function()
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot0 = logger
 	slot2 = slot0
@@ -937,10 +573,10 @@ slot14 = function()
 
 end
 
-slot12.onSuspend = slot14
+slot7.onSuspend = slot9
 
-slot14 = function()
-	--- BLOCK #0 1-21, warpins: 1 ---
+slot9 = function()
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot0 = logger
 	slot2 = slot0
 	slot0 = slot0.info
@@ -960,6 +596,12 @@ slot14 = function()
 
 	slot0()
 
+	slot0 = PlatformPaymentReconcileService
+	slot0 = slot0.onForeground
+	slot2 = "plm_resuming"
+
+	slot0(slot2)
+
 	slot0 = logger
 	slot2 = slot0
 	slot0 = slot0.info
@@ -974,9 +616,9 @@ slot14 = function()
 
 end
 
-slot12.onResuming = slot14
+slot7.onResuming = slot9
 
-slot14 = function()
+slot9 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = logger
 	slot2 = slot0
@@ -1032,9 +674,9 @@ slot14 = function()
 
 end
 
-slot12.onConstrained = slot14
+slot7.onConstrained = slot9
 
-slot14 = function()
+slot9 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = logger
 	slot2 = slot0
@@ -1082,7 +724,7 @@ slot14 = function()
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-26, warpins: 3 ---
+	--- BLOCK #3 20-30, warpins: 3 ---
 	slot0 = PlatformPLMService
 	slot0 = slot0.state
 	slot1 = true
@@ -1091,6 +733,12 @@ slot14 = function()
 
 	slot0()
 
+	slot0 = PlatformPaymentReconcileService
+	slot0 = slot0.onForeground
+	slot2 = "plm_unconstrained"
+
+	slot0(slot2)
+
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1098,9 +746,9 @@ slot14 = function()
 
 end
 
-slot12.onUnconstrained = slot14
+slot7.onUnconstrained = slot9
 
-slot14 = function()
+slot9 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformPLMService
 	slot0 = slot0.state
@@ -1161,7 +809,7 @@ slot14 = function()
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 20-40, warpins: 2 ---
+	--- BLOCK #5 20-35, warpins: 2 ---
 	slot0 = PlatformBridgeLuaFacade
 	slot0 = slot0.RegisterPLMCallbacks
 	slot2 = PlatformPLMService
@@ -1179,12 +827,6 @@ slot14 = function()
 	slot0 = slot0.state
 	slot1 = true
 	slot0.callbackRegistered = slot1
-	slot0 = logger
-	slot2 = slot0
-	slot0 = slot0.info
-	slot3 = "PlatformPLMService: PLM 回调注册成功"
-
-	slot0(slot2, slot3)
 
 	return
 	--- END OF BLOCK #5 ---
@@ -1193,9 +835,9 @@ slot14 = function()
 
 end
 
-slot12.registerPLMCallbacks = slot14
+slot7.registerPLMCallbacks = slot9
 
-slot14 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformPLMService
 	slot1 = slot1.state
@@ -1268,9 +910,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.init = slot14
+slot7.init = slot9
 
-slot14 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlatformPLMService
 	slot1 = slot1.state
@@ -1283,9 +925,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.isSuspended = slot14
+slot7.isSuspended = slot9
 
-return slot12
+return slot7
 --- END OF BLOCK #0 ---
 
 

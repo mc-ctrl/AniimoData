@@ -25,8 +25,8 @@ slot7 = require
 slot9 = "Utils.PetManagementUtils"
 slot7 = slot7(slot9)
 slot8 = {
-	FEMALE = 1,
-	MALE = 0
+	MALE = 0,
+	FEMALE = 1
 }
 slot5.PAGE_TYPE = slot8
 slot8 = {

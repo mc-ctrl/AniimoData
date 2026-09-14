@@ -1,4 +1,4 @@
---- BLOCK #0 1-132, warpins: 1 ---
+--- BLOCK #0 1-142, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -141,152 +141,512 @@ end
 
 slot11.onCreate = slot16
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = false
-	slot0._hasSwitch = slot1
-	slot1 = pg
-	slot1 = slot1.timePeriod
-	slot2 = slot0.view
-	slot2 = slot2.uIPbTimeSwitchUComponent
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "TimeFrame"
-	slot6 = slot1 - 1
+slot16 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot6 = if not slot6 then
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot2.animOnly
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-13, warpins: 3 ---
+	slot3 = UICtrl
+	slot3 = slot3.checkCanOpen
+	slot5 = slot0
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot11.checkCanOpen = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = false
+	slot0._hasSwitch = slot2
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 13-13, warpins: 1 ---
-	slot6 = 0
-
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.animOnly
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 14-51, warpins: 2 ---
-	slot2(slot4, slot5, slot6)
+	--- BLOCK #2 8-8, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
 
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.txtClose
-	slot5 = pg
-	slot5 = slot5.getGameString
-	slot7 = "TIME_CLOSE"
-	MULTRES = slot5(slot7)
+	FLOW; TARGET BLOCK #3
 
-	slot2(slot4, MULTRES)
 
+	--- BLOCK #3 9-12, warpins: 2 ---
+	slot0.animOnly = slot2
+	slot2 = slot0.animOnly
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-39, warpins: 1 ---
+	slot2 = slot1.endTimePeriod
+	slot0.endTimePeriod = slot2
+	slot2 = slot1.onBlack
+	slot0.onBlackCb = slot2
 	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.audio
-	slot4 = slot2
-	slot2 = slot2.triggerEvent
-	slot5 = "SFX_UI_TimePass01"
+	slot2 = slot2.timePeriod
+	slot0.startTimePeriod = slot2
+	slot4 = slot0
+	slot2 = slot0.setSelectVisible
+	slot5 = false
 
 	slot2(slot4, slot5)
 
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.txtCurTimeDesc
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "TIME_DISPLAY"
-	slot7 = slot7(slot9)
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = TIME_NAME
-	slot10 = slot10[slot1]
-	MULTRES = slot8(slot10)
-	MULTRES = slot5(slot7, MULTRES)
+	slot2 = slot0.view
+	slot2 = slot2.uIPbTimeSwitchUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "TimeFrame"
+	slot6 = slot0.startTimePeriod
+	slot6 = slot6 - 1
 
-	slot2(slot4, MULTRES)
+	slot2(slot4, slot5, slot6)
 
-	slot2 = ipairs
-	slot4 = TIME_BTN
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #2 ---
+	slot4 = slot0
+	slot2 = slot0.setTimeBtnState
+	slot5 = slot0.startTimePeriod
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot2(slot4, slot5)
 
+	slot4 = slot0
+	slot2 = slot0.startSwitchAnim
 
-	--- BLOCK #3 52-55, warpins: 1 ---
-	slot7 = slot0.view
-	slot7 = slot7[slot6]
-	--- END OF BLOCK #3 ---
+	slot2(slot4)
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #8
-	end
+	return
 
-
-	--- BLOCK #4 56-62, warpins: 1 ---
-	slot7 = slot0.view
-	slot7 = slot7[slot6]
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "state"
 	--- END OF BLOCK #4 ---
 
-	if slot1 == slot5 then
-	JUMP TO BLOCK #5
-	else
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 40-59, warpins: 2 ---
+	slot2 = nil
+	slot0.endTimePeriod = slot2
+	slot2 = nil
+	slot0.onBlackCb = slot2
+	slot2 = nil
+	slot0.startTimePeriod = slot2
+	slot4 = slot0
+	slot2 = slot0.setSelectVisible
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.timePeriod
+	slot3 = slot0.view
+	slot3 = slot3.uIPbTimeSwitchUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "TimeFrame"
+	slot7 = slot2 - 1
+	--- END OF BLOCK #5 ---
+
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 63-64, warpins: 1 ---
-	slot11 = 1
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 65-65, warpins: 1 ---
-	slot11 = 0
+	--- BLOCK #6 60-60, warpins: 1 ---
+	slot7 = 0
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 66-66, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
+	--- BLOCK #7 61-99, warpins: 2 ---
+	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #7 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtClose
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "TIME_CLOSE"
+	MULTRES = slot6(slot8)
 
-	FLOW; TARGET BLOCK #8
+	slot3(slot5, MULTRES)
 
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.audio
+	slot5 = slot3
+	slot3 = slot3.triggerEvent
+	slot6 = "SFX_UI_TimePass01"
 
-	--- BLOCK #8 67-68, warpins: 3 ---
-	--- END OF BLOCK #8 ---
+	slot3(slot5, slot6)
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #9
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtCurTimeDesc
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "TIME_DISPLAY"
+	slot8 = slot8(slot10)
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = TIME_NAME
+	slot11 = slot11[slot2]
+	MULTRES = slot9(slot11)
+	MULTRES = slot6(slot8, MULTRES)
 
+	slot3(slot5, MULTRES)
 
-	--- BLOCK #9 69-69, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.setTimeBtnState
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
 slot11.onOpen = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._hasSwitch
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot1 = true
+	slot0._hasSwitch = slot1
+	slot1 = slot0.startTimePeriod
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.timePeriod
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-36, warpins: 2 ---
+	slot2 = slot0.view
+	slot3 = TIME_BTN
+	slot3 = slot3[slot1]
+	slot2 = slot2[slot3]
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "state"
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = UIUtils
+	slot2 = slot2.PlayAnimation
+	slot4 = slot0.view
+	slot4 = slot4.panelAnimation
+	slot5 = "VX_Pb_TimeSwitch_Switch_Constant"
+
+	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.triggerEvent
+	slot5 = "SFX_UI_TimePass02"
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.timerId
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 37-42, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.killTimer
+	slot5 = slot0.timerId
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.timerId = slot2
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 43-52, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.startTimer
+	slot5 = CallbackHandler
+	slot7 = slot0
+	slot8 = "_onBlack"
+	slot5 = slot5(slot7, slot8)
+	slot6 = 0.5
+	slot2 = slot2(slot4, slot5, slot6)
+	slot0.timerId = slot2
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot11.startSwitchAnim = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = TIME_BTN
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7[slot6]
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-14, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7[slot6]
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = slot1
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 17-35, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnCloseUButton
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.view
+	slot2 = slot2.txtCurTimeDesc
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.view
+	slot2 = slot2.txtClose
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot11.setSelectVisible = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = TIME_BTN
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7[slot6]
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 9-21, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7[slot6]
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = true
+
+	slot7(slot9, slot10)
+
+	slot7 = slot0.view
+	slot7 = slot7[slot6]
+	slot9 = slot7
+	slot7 = slot7.TryChangePage
+	slot10 = "state"
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-23, warpins: 1 ---
+	slot11 = 1
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 24-24, warpins: 1 ---
+	slot11 = 0
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-25, warpins: 2 ---
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-27, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 28-28, warpins: 1 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot11.setTimeBtnState = slot16
 
 slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -344,6 +704,42 @@ end
 slot11.checkFadeOutHud = slot16
 
 slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.animOnly
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot1 = UICtrl
+	slot1 = slot1.checkCommonQuit
+	slot3 = slot0
+
+	return slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot11.checkCommonQuit = slot16
+
+slot16 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
@@ -362,32 +758,53 @@ slot16 = function(slot0)
 	slot1.actionPath = slot2
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot1 = slot0.phase
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.animOnly
+
 		--- END OF BLOCK #0 ---
 
-		if slot1 == "Performed" then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1._closeSelf
-
-		slot1(slot3)
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 8-8, warpins: 2 ---
-		return
+		--- BLOCK #2 6-8, warpins: 2 ---
+		slot1 = slot0.phase
 		--- END OF BLOCK #2 ---
+
+		if slot1 == "Performed" then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 9-12, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1._closeSelf
+
+		slot1(slot3)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 13-13, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
 
 
 
@@ -398,7 +815,28 @@ slot16 = function(slot0)
 	slot2 = slot2.btnCloseUButton
 
 	slot3 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.animOnly
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-10, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.onCloseBtnClick
@@ -406,7 +844,7 @@ slot16 = function(slot0)
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -436,7 +874,28 @@ slot16 = function(slot0)
 
 	--- BLOCK #2 30-31, warpins: 1 ---
 	slot8 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.animOnly
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-11, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.choseTimeConfirm
@@ -445,7 +904,7 @@ slot16 = function(slot0)
 		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -499,12 +958,23 @@ end
 slot11.onCloseBtnClick = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
 
 	slot1(slot3)
 
+	slot1 = slot0.animOnly
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -515,8 +985,14 @@ slot16 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -632,66 +1108,49 @@ end
 slot11._closeSelf = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.timePeriod
-	slot2 = 0
-	slot3 = {}
-	slot4 = slot0.endTimePeriod
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.startTimePeriod
 	--- END OF BLOCK #0 ---
 
-	if slot4 < slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-12, warpins: 1 ---
-	slot4 = slot1
-	slot5 = ANI_NAME_LOOP
-	slot5 = #slot5
-	slot6 = 1
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.timePeriod
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-28, warpins: 2 ---
-	slot8 = table
-	slot8 = slot8.insert
-	slot10 = slot3
-	slot11 = ANI_NAME_LOOP
-	slot11 = slot11[slot7]
-
-	slot8(slot10, slot11)
-
-	slot8 = slot0.view
-	slot8 = slot8.animTimeChange
-	slot10 = slot8
-	slot8 = slot8.GetClip
-	slot11 = ANI_NAME_LOOP
-	slot11 = slot11[slot7]
-	slot8 = slot8(slot10, slot11)
-	slot8 = slot8.length
-	slot2 = slot2 + slot8
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot2 = 0
+	slot3 = {}
+	slot4 = slot0.endTimePeriod
 	--- END OF BLOCK #2 ---
 
-	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #3
+	if slot4 < slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
 
-	--- BLOCK #3 29-33, warpins: 1 ---
-	slot4 = 1
-	slot5 = slot0.endTimePeriod
-	slot5 = slot5 - 1
+
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot4 = slot1
+	slot5 = ANI_NAME_LOOP
+	slot5 = #slot5
 	slot6 = 1
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 34-49, warpins: 2 ---
+	--- BLOCK #4 16-31, warpins: 2 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot3
@@ -715,23 +1174,17 @@ slot16 = function(slot0)
 	LOOP BLOCK #4
 	GO OUT TO BLOCK #5
 
-	--- BLOCK #5 50-50, warpins: 1 ---
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #6 51-55, warpins: 1 ---
-	slot4 = slot1
+	--- BLOCK #5 32-36, warpins: 1 ---
+	slot4 = 1
 	slot5 = slot0.endTimePeriod
 	slot5 = slot5 - 1
 	slot6 = 1
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #7 56-71, warpins: 2 ---
+	--- BLOCK #6 37-52, warpins: 2 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot3
@@ -749,13 +1202,53 @@ slot16 = function(slot0)
 	slot8 = slot8(slot10, slot11)
 	slot8 = slot8.length
 	slot2 = slot2 + slot8
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
 	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #8
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #7
 
-	--- BLOCK #8 72-77, warpins: 2 ---
+	--- BLOCK #7 53-53, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 54-58, warpins: 1 ---
+	slot4 = slot1
+	slot5 = slot0.endTimePeriod
+	slot5 = slot5 - 1
+	slot6 = 1
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 59-74, warpins: 2 ---
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot3
+	slot11 = ANI_NAME_LOOP
+	slot11 = slot11[slot7]
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.view
+	slot8 = slot8.animTimeChange
+	slot10 = slot8
+	slot8 = slot8.GetClip
+	slot11 = ANI_NAME_LOOP
+	slot11 = slot11[slot7]
+	slot8 = slot8(slot10, slot11)
+	slot8 = slot8.length
+	slot2 = slot2 + slot8
+	--- END OF BLOCK #9 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #10
+
+	--- BLOCK #10 75-80, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.loopShowAnim
 	slot7 = slot3
@@ -764,7 +1257,7 @@ slot16 = function(slot0)
 	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -976,7 +1469,42 @@ end
 slot11._onBtnChangeEnd = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.animOnly
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.onBlackCb
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 7-12, warpins: 1 ---
+	slot1 = slot0.onBlackCb
+	slot2 = nil
+	slot0.onBlackCb = slot2
+	slot2 = slot1
+
+	slot2()
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 13-25, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -994,13 +1522,19 @@ slot16 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 26-29, warpins: 3 ---
 	slot3 = slot0
 	slot1 = slot0.setChangeAnim
 
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -1059,103 +1593,15 @@ slot16 = function(slot0, slot1)
 	slot5 = nil
 
 	slot6 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0._hasSwitch
-		--- END OF BLOCK #0 ---
-
-		slot0 = if not slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #1 5-34, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.view
-		slot1 = TIME_BTN
-		slot2 = pg
-		slot2 = slot2.timePeriod
-		slot1 = slot1[slot2]
-		slot0 = slot0[slot1]
-		slot2 = slot0
-		slot0 = slot0.TryChangePage
-		slot3 = "state"
-		slot4 = 0
-
-		slot0(slot2, slot3, slot4)
-
-		slot0 = UIUtils
-		slot0 = slot0.PlayAnimation
-		slot2 = self
-		slot2 = slot2.view
-		slot2 = slot2.panelAnimation
-		slot3 = "VX_Pb_TimeSwitch_Switch_Constant"
-
-		slot0(slot2, slot3)
-
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.audio
-		slot2 = slot0
-		slot0 = slot0.triggerEvent
-		slot3 = "SFX_UI_TimePass02"
-
-		slot0(slot2, slot3)
-
-		slot0 = self
-		slot0 = slot0.timerId
-		--- END OF BLOCK #1 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 35-43, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.killTimer
-		slot3 = self
-		slot3 = slot3.timerId
+		slot0 = slot0.startSwitchAnim
 
-		slot0(slot2, slot3)
+		slot0(slot2)
 
-		slot0 = self
-		slot1 = nil
-		slot0.timerId = slot1
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 44-57, warpins: 2 ---
-		slot0 = self
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.startTimer
-		slot4 = CallbackHandler
-		slot6 = self
-		slot7 = "_onBlack"
-		slot4 = slot4(slot6, slot7)
-		slot5 = 0.5
-		slot1 = slot1(slot3, slot4, slot5)
-		slot0.timerId = slot1
-		slot0 = self
-		slot1 = true
-		slot0._hasSwitch = slot1
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 58-58, warpins: 2 ---
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #0 ---
 
 
 

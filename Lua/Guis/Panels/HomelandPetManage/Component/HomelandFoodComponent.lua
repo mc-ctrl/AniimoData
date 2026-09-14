@@ -1,4 +1,4 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-84, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -39,15 +39,18 @@ slot11 = require
 slot13 = "Common.Const.Const"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Guis.Helper.UIComponent"
+slot14 = "Common.Utils.HomeLandUtils"
 slot12 = slot12(slot14)
-slot13 = slot1.LightClass
-slot15 = "HomelandFoodComponent"
-slot16 = slot12
-slot13 = slot13(slot15, slot16)
-slot14 = 3
+slot13 = require
+slot15 = "Guis.Helper.UIComponent"
+slot13 = slot13(slot15)
+slot14 = slot1.LightClass
+slot16 = "HomelandFoodComponent"
+slot17 = slot13
+slot14 = slot14(slot16, slot17)
+slot15 = 3
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -56,9 +59,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.findObjects = slot15
+slot14.findObjects = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot3 = slot1
@@ -119,21 +122,16 @@ slot15 = function(slot0)
 
 end
 
-slot13.initView = slot15
+slot14.initView = slot16
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-60, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-55, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "foodEmptyUWidget"
-	slot2 = slot2(slot4, slot5)
-	slot0.foodEmptyUWidget = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "btnGoBuyUButton"
@@ -187,7 +185,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 61-100, warpins: 2 ---
+	--- BLOCK #1 56-95, warpins: 2 ---
 	slot6 = "button"
 	slot7 = slot5
 	slot6 = slot6 .. slot7
@@ -248,7 +246,7 @@ slot15 = function(slot0)
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #2
 
-	--- BLOCK #2 101-137, warpins: 1 ---
+	--- BLOCK #2 96-132, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "btnAddUButton"
@@ -347,9 +345,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.onContentLoaded = slot15
+slot14.onContentLoaded = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.space
@@ -418,9 +416,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot13.clearSLot = slot15
+slot14.clearSLot = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = MAX_SLOT_COUNT
 	--- END OF BLOCK #0 ---
@@ -585,9 +583,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot13.onClickToAdd = slot15
+slot14.onClickToAdd = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot3 = slot1
@@ -639,9 +637,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.refreshFoodInfo = slot15
+slot14.refreshFoodInfo = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -803,9 +801,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.refreshFoodSlot = slot15
+slot14.refreshFoodSlot = slot16
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.renderItem
@@ -936,9 +934,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13.renderFoodList = slot15
+slot14.renderFoodList = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1121,9 +1119,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.refreshItemTip = slot15
+slot14.refreshItemTip = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1248,9 +1246,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot13.getCanAddNum = slot15
+slot14.getCanAddNum = slot16
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.space
@@ -1299,9 +1297,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13.moveToFoodSlot = slot15
+slot14.moveToFoodSlot = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -1316,9 +1314,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.onDestroy = slot15
+slot14.onDestroy = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -1474,117 +1472,80 @@ slot15 = function(slot0)
 	slot5 = if slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 83-85, warpins: 1 ---
-	slot5 = slot2.petBoxMap
+	--- BLOCK #7 83-89, warpins: 1 ---
+	slot5 = HomeLandUtils
+	slot5 = slot5.getPetCurCount
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	slot6 = 0
 	--- END OF BLOCK #7 ---
 
-	slot5 = if slot5 then
+	if slot5 <= slot6 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 86-87, warpins: 1 ---
-	slot5 = slot2.petBoxMap
-	slot5 = slot5[1]
+	--- BLOCK #8 90-91, warpins: 1 ---
+	slot5 = false
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 88-89, warpins: 3 ---
+	--- BLOCK #9 92-92, warpins: 1 ---
+	slot5 = true
 	--- END OF BLOCK #9 ---
 
-	slot6 = if slot5 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 90-92, warpins: 1 ---
-	slot6 = slot5.count
+	--- BLOCK #10 93-101, warpins: 3 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.setRedDot
+	slot8 = RedDotConst
+	slot8 = slot8.RedDotPath
+	slot8 = slot8.HOMELAND_FOOD_MANGE
+	slot9 = slot0.timeUComponent
 	--- END OF BLOCK #10 ---
 
-	slot6 = if slot6 then
+	slot10 = if slot5 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 93-96, warpins: 1 ---
-	slot6 = slot5.count
-	slot7 = 0
+	--- BLOCK #11 102-102, warpins: 1 ---
+	slot10 = not slot4
 	--- END OF BLOCK #11 ---
 
-	if slot6 <= slot7 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 97-98, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #12 ---
+	--- BLOCK #12 103-108, warpins: 2 ---
+	slot11 = RedDotConst
+	slot11 = slot11.RedDotStyle
+	slot11 = slot11.POINT
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 99-99, warpins: 1 ---
-	slot6 = true
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 100-108, warpins: 4 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.setRedDot
-	slot9 = RedDotConst
-	slot9 = slot9.RedDotPath
-	slot9 = slot9.HOMELAND_FOOD_MANGE
-	slot10 = slot0.timeUComponent
-	--- END OF BLOCK #14 ---
-
-	slot11 = if slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 109-109, warpins: 1 ---
-	slot11 = not slot4
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 110-115, warpins: 2 ---
-	slot12 = RedDotConst
-	slot12 = slot12.RedDotStyle
-	slot12 = slot12.POINT
-
-	slot7(slot9, slot10, slot11, slot12)
+	slot6(slot8, slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot13.refreshFoodBandInfo = slot15
+slot14.refreshFoodBandInfo = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.totalFoodTimer
 	--- END OF BLOCK #0 ---
@@ -1619,9 +1580,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.clearTotalFoodTimer = slot15
+slot14.clearTotalFoodTimer = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getHomeFoodData
@@ -1678,9 +1639,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.refreshFoodList = slot15
+slot14.refreshFoodList = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -1865,9 +1826,9 @@ slot15 = function(slot0)
 
 end
 
-slot13.getHomeFoodData = slot15
+slot14.getHomeFoodData = slot16
 
-return slot13
+return slot14
 --- END OF BLOCK #0 ---
 
 

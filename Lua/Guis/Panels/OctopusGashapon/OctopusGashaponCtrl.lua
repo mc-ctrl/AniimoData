@@ -15,30 +15,30 @@ slot3 = slot3(slot5, slot6)
 slot4 = 0.24
 slot5 = 9162304
 slot6 = {
-	PINK = 2,
 	ORANGE = 1,
 	GOLD = 4,
-	BLUE = 3
+	BLUE = 3,
+	PINK = 2
 }
 slot7 = {
-	NORMAL = 1,
-	QUICK = 2
+	QUICK = 2,
+	NORMAL = 1
 }
 slot8 = {
-	NORMAL = 1,
-	WON = 2
+	WON = 2,
+	NORMAL = 1
 }
 slot9 = {
-	Explode = 3,
 	Add = 2,
 	NoneSlot = 1,
-	Normal = 0
+	Normal = 0,
+	Explode = 3
 }
 slot10 = {
-	PINK = 2,
 	ORANGE = 1,
 	GOLD = 0,
-	BLUE = 3
+	BLUE = 3,
+	PINK = 2
 }
 slot11 = {}
 slot12 = slot6.ORANGE
@@ -54,10 +54,10 @@ slot12 = slot6.GOLD
 slot13 = slot10.GOLD
 slot11[slot12] = slot13
 slot12 = {
-	PINK = 2,
 	ORANGE = 1,
 	GOLD = 0,
-	BLUE = 3
+	BLUE = 3,
+	PINK = 2
 }
 slot13 = {}
 slot14 = slot6.ORANGE

@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-96, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -37,23 +37,27 @@ slot13 = "Const.EventConst"
 slot11 = slot11(slot13)
 slot12 = Vector3
 slot13 = require
-slot15 = "Const.ClientConst"
+slot15 = "Data.camera_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.catch_absorb_data"
+slot16 = "Utils.ClientSettingUtils"
 slot14 = slot14(slot16)
-slot15 = slot1.OldLightClass
-slot17 = "PlayerCatchCameraMode"
-slot18 = slot3
-slot15 = slot15(slot17, slot18)
-slot16 = CS
-slot16 = slot16.FunPlus
-slot16 = slot16.WorldX
-slot16 = slot16.VirtualCamera
-slot16 = slot16.WaterDetectMode
+slot15 = require
+slot17 = "Data.catch_absorb_data"
+slot15 = slot15(slot17)
+slot16 = 0.0001
+slot17 = slot1.OldLightClass
+slot19 = "PlayerCatchCameraMode"
+slot20 = slot3
+slot17 = slot17(slot19, slot20)
+slot18 = CS
+slot18 = slot18.FunPlus
+slot18 = slot18.WorldX
+slot18 = slot18.VirtualCamera
+slot18 = slot18.WaterDetectMode
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-54, warpins: 1 ---
+slot19 = function(slot0)
+	--- BLOCK #0 1-56, warpins: 1 ---
 	slot1 = ThirdPersonCameraMode
 	slot1 = slot1.onCtor
 	slot3 = slot0
@@ -203,6 +207,8 @@ slot17 = function(slot0)
 	slot1 = slot1.controller
 	slot1 = slot1.lockHelper
 	slot0._lockHelper = slot1
+	slot1 = 0
+	slot0._configuredAbsorbSpeed = slot1
 	slot3 = slot0
 	slot1 = slot0.onInputDeviceChange
 
@@ -220,9 +226,9 @@ slot17 = function(slot0)
 
 end
 
-slot15.onCtor = slot17
+slot17.onCtor = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0._lockHelper
 	slot1 = slot1.forceLockActorId
@@ -284,9 +290,9 @@ slot17 = function(slot0)
 
 end
 
-slot15._forceFocus = slot17
+slot17._forceFocus = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0._lockHelper
 	slot1 = slot1.forceLockActorId
@@ -342,9 +348,9 @@ slot17 = function(slot0)
 
 end
 
-slot15._switchFocus = slot17
+slot17._switchFocus = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -367,10 +373,10 @@ slot17 = function(slot0)
 
 end
 
-slot15._cancelFocus = slot17
+slot17._cancelFocus = slot19
 
-slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot19 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = ThirdPersonCameraMode
 	slot3 = slot3.setActive
 	slot5 = slot0
@@ -378,20 +384,46 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
-	slot3 = slot0.cameraMode
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.offset = slot4
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 12-20, warpins: 1 ---
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.resetRotateSpeed
+
+	slot3(slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-19, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0._refreshAbsorbSpeed
+
+	slot3(slot5)
+
+	slot3 = slot0.cameraMode
+	slot4 = Vector3
+	slot4 = slot4.zero
+	slot3.offset = slot4
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 20-28, warpins: 1 ---
 	slot3 = true
 	slot0._skipDistCheckOnActive = slot3
 	slot5 = slot0
@@ -401,16 +433,16 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot3 = slot0._lockHelper
 	slot3 = slot3.forceLockActorId
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	if slot3 ~= 0 then
-	JUMP TO BLOCK #2
-	else
 	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 21-30, warpins: 1 ---
+	--- BLOCK #4 29-38, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByActorId
 	slot5 = slot0._lockHelper
@@ -422,12 +454,12 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 31-36, warpins: 1 ---
+	--- BLOCK #5 39-44, warpins: 1 ---
 	slot3 = nil
 	slot0._skipDistCheckOnActive = slot3
 	slot5 = slot0
@@ -436,22 +468,153 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 37-37, warpins: 3 ---
+	--- BLOCK #6 45-45, warpins: 3 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15.setActive = slot17
+slot17.setActive = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.input
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot2 = slot1.cameraProcessor
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot3 = slot2.isManualViewInputActive
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-13, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-17, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.isManualViewInputActive
+	slot6 = MANUAL_VIEW_INPUT_THRESHOLD_SQR
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot17._isManualViewInputActive = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._configuredAbsorbSpeed
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isActive
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 10-14, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0._isManualViewInputActive
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-18, warpins: 3 ---
+	slot2 = slot0.cameraMode
+	slot2.absorbSpeed = slot1
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot17._refreshAbsorbSpeed = slot19
+
+slot19 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getAimDistance
@@ -468,166 +631,185 @@ slot17 = function(slot0)
 
 end
 
-slot15.onBallChanged = slot17
+slot17.onBallChanged = slot19
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot19 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
+	slot1 = slot1.me
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
-	slot1 = sysConfigData
-	slot1 = slot1.CATCHCAMERALOCK_MAX_DISTANCE
-
-	return slot1
-
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.currentContext
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-20, warpins: 2 ---
-	slot1 = nil
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.prefsCacheUtils
-	slot4 = slot2
-	slot2 = slot2.getBool
-	slot5 = "HudV2Enable"
-	slot6 = false
-	slot2 = slot2(slot4, slot5, slot6)
+	--- BLOCK #2 8-9, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 21-29, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.getCurSelectPropId
-	slot2 = slot2(slot4)
-	slot1 = slot2
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot2 = slot1.itemId
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 30-37, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot4 = slot2
-	slot2 = slot2.getCurSelectPropId
-	slot2 = slot2(slot4)
-	slot1 = slot2
+	--- BLOCK #4 11-15, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 38-41, warpins: 2 ---
-	slot2 = ItemEffectData
-	slot2 = slot2[slot1]
+	--- BLOCK #5 16-19, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #10
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 42-46, warpins: 1 ---
-	slot2 = ItemEffectData
-	slot2 = slot2[slot1]
-	slot2 = slot2.castItemId
+	--- BLOCK #6 20-21, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 47-53, warpins: 1 ---
-	slot2 = CastItemData
-	slot3 = ItemEffectData
-	slot3 = slot3[slot1]
-	slot3 = slot3.castItemId
-	slot2 = slot2[slot3]
+	--- BLOCK #7 22-23, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 54-61, warpins: 1 ---
-	slot2 = CastItemData
-	slot3 = ItemEffectData
-	slot3 = slot3[slot1]
-	slot3 = slot3.castItemId
-	slot2 = slot2[slot3]
-	slot2 = slot2.aimSwitchDistance
+	--- BLOCK #8 24-27, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.getCurSelectPropId
+	slot4 = slot4(slot6)
+	slot2 = slot4
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #9
-	else
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 28-31, warpins: 3 ---
+	slot4 = ItemEffectData
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #9 62-68, warpins: 1 ---
-	slot2 = CastItemData
-	slot3 = ItemEffectData
-	slot3 = slot3[slot1]
-	slot3 = slot3.castItemId
-	slot2 = slot2[slot3]
-	slot2 = slot2.aimSwitchDistance
-
-	return slot2
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 69-71, warpins: 5 ---
-	slot2 = sysConfigData
-	slot2 = slot2.CATCHCAMERALOCK_MAX_DISTANCE
-
-	return slot2
+	--- BLOCK #10 32-36, warpins: 1 ---
+	slot4 = ItemEffectData
+	slot4 = slot4[slot2]
+	slot4 = slot4.castItemId
 	--- END OF BLOCK #10 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #11 37-43, warpins: 1 ---
+	slot4 = CastItemData
+	slot5 = ItemEffectData
+	slot5 = slot5[slot2]
+	slot5 = slot5.castItemId
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 44-51, warpins: 1 ---
+	slot4 = CastItemData
+	slot5 = ItemEffectData
+	slot5 = slot5[slot2]
+	slot5 = slot5.castItemId
+	slot4 = slot4[slot5]
+	slot4 = slot4.aimSwitchDistance
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 52-58, warpins: 1 ---
+	slot4 = CastItemData
+	slot5 = ItemEffectData
+	slot5 = slot5[slot2]
+	slot5 = slot5.castItemId
+	slot4 = slot4[slot5]
+	slot4 = slot4.aimSwitchDistance
+
+	return slot4
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 59-61, warpins: 5 ---
+	slot4 = sysConfigData
+	slot4 = slot4.CATCHCAMERALOCK_MAX_DISTANCE
+
+	return slot4
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot15.getAimDistance = slot17
+slot17.getAimDistance = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.target = slot1
 	--- END OF BLOCK #0 ---
@@ -727,9 +909,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot15.setTarget = slot17
+slot17.setTarget = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-50, warpins: 1 ---
 	slot1 = slot0.cameraMode
 	slot2 = 30
@@ -862,9 +1044,9 @@ slot17 = function(slot0)
 
 end
 
-slot15.refreshBossCatchInfo = slot17
+slot17.refreshBossCatchInfo = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -879,9 +1061,9 @@ slot17 = function(slot0)
 
 end
 
-slot15.getModeClass = slot17
+slot17.getModeClass = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = CameraConst
 	slot1 = slot1.CAMERA_NAME_CATCH
@@ -893,9 +1075,151 @@ slot17 = function(slot0)
 
 end
 
-slot15.getCameraName = slot17
+slot17.getCameraName = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = CameraData
+	slot2 = CameraConst
+	slot2 = slot2.CAMERA_NAME_CATCH
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot1 = {}
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.getConfigData = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.configData
+	slot1 = slot1.yawSpeed
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = 2.5
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot2 = slot0.configData
+	slot2 = slot2.pitchSpeed
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot2 = 2.5
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-16, warpins: 2 ---
+	slot3 = slot0.configData
+	slot3 = slot3.yawSpeedTable
+	slot4 = slot0.configData
+	slot4 = slot4.pitchSpeedTable
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-22, warpins: 1 ---
+	slot5 = ClientSettingUtils
+	slot5 = slot5.get_catchCameraYawRotateRate
+	slot5 = slot5()
+	slot5 = slot3[slot5]
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-30, warpins: 1 ---
+	slot5 = ClientSettingUtils
+	slot5 = slot5.get_catchCameraPitchRotateRate
+	slot5 = slot5()
+	slot5 = slot4[slot5]
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #8 31-37, warpins: 3 ---
+	slot5 = slot0.cameraMode
+	slot7 = slot5
+	slot5 = slot5.SetRotateSpeed
+	slot8 = slot1
+	slot9 = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot17.resetRotateSpeed = slot19
+
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isActive
@@ -918,7 +1242,12 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-9, warpins: 2 ---
+	--- BLOCK #2 7-12, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0._refreshAbsorbSpeed
+
+	slot2(slot4)
+
 	slot2 = slot0.target
 	--- END OF BLOCK #2 ---
 
@@ -929,7 +1258,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 10-16, warpins: 1 ---
+	--- BLOCK #3 13-19, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -944,7 +1273,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 17-19, warpins: 1 ---
+	--- BLOCK #4 20-22, warpins: 1 ---
 	slot2 = slot0._skipDistCheckOnActive
 	--- END OF BLOCK #4 ---
 
@@ -955,7 +1284,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 20-27, warpins: 1 ---
+	--- BLOCK #5 23-30, warpins: 1 ---
 	slot2 = nil
 	slot0._skipDistCheckOnActive = slot2
 	slot2 = true
@@ -971,7 +1300,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 28-31, warpins: 1 ---
+	--- BLOCK #6 31-34, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._cancelFocus
 
@@ -982,7 +1311,7 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #7 32-39, warpins: 1 ---
+	--- BLOCK #7 35-42, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkDistance
 	slot5 = slot0.target
@@ -998,7 +1327,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 40-43, warpins: 1 ---
+	--- BLOCK #8 43-46, warpins: 1 ---
 	slot2 = slot0.target
 	slot2 = slot2.isDestroyed
 	--- END OF BLOCK #8 ---
@@ -1010,7 +1339,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 44-46, warpins: 2 ---
+	--- BLOCK #9 47-49, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0._cancelFocus
 
@@ -1021,7 +1350,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 47-50, warpins: 6 ---
+	--- BLOCK #10 50-53, warpins: 6 ---
 	slot2 = slot0.lastUpdateState
 	slot3 = slot1.characterState
 
@@ -1034,7 +1363,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 51-51, warpins: 1 ---
+	--- BLOCK #11 54-54, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #11 ---
@@ -1042,7 +1371,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 52-58, warpins: 2 ---
+	--- BLOCK #12 55-61, warpins: 2 ---
 	slot2 = slot1.characterState
 	slot0.lastUpdateState = slot2
 	slot4 = slot1
@@ -1057,7 +1386,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 59-93, warpins: 1 ---
+	--- BLOCK #13 62-96, warpins: 1 ---
 	slot2 = slot0.cameraMode
 	slot2 = slot2.springArm
 	slot3 = sysConfigData
@@ -1097,7 +1426,7 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #14 94-100, warpins: 1 ---
+	--- BLOCK #14 97-103, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -1112,13 +1441,13 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 101-101, warpins: 1 ---
+	--- BLOCK #15 104-104, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 102-138, warpins: 1 ---
+	--- BLOCK #16 105-141, warpins: 1 ---
 	slot2 = slot0.cameraMode
 	slot3 = 40
 	slot2.fieldOfView = slot3
@@ -1162,7 +1491,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 139-139, warpins: 3 ---
+	--- BLOCK #17 142-142, warpins: 3 ---
 	return
 	--- END OF BLOCK #17 ---
 
@@ -1170,9 +1499,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot15.update = slot17
+slot17.update = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1234,9 +1563,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot15.checkDistance = slot17
+slot17.checkDistance = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1310,164 +1639,178 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 28-46, warpins: 2 ---
-	slot5 = sysConfigData
-	slot5 = slot5.catchAbsorbSpeedMax
-	slot6 = sysConfigData
-	slot6 = slot6.catchDampingRateMax
-	slot7 = slot0.cameraMode
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.setting
-	slot10 = slot8
-	slot8 = slot8.getCatchAbsorbSpeed
-	slot11 = slot3
-	slot8 = slot8(slot10, slot11)
-	slot8 = slot8 / 100
-	slot8 = slot5 * slot8
-	slot7.absorbSpeed = slot8
-	slot7 = slot0.cameraMode
-	slot8 = slot4.absorbRayRadius
+	--- BLOCK #7 28-37, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.setting
+	slot7 = slot5
+	slot5 = slot5.getCatchAbsorbSpeed
+	slot8 = slot3
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot4.absorbSpeedMultiplier
 	--- END OF BLOCK #7 ---
 
-	slot8 = if not slot8 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 47-47, warpins: 1 ---
-	slot8 = 0.1
+	--- BLOCK #8 38-38, warpins: 1 ---
+	slot6 = 1
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 48-52, warpins: 2 ---
-	slot7.absorbRayRadius = slot8
-	slot7 = slot0.cameraMode
-	slot8 = slot4.dampingFactor
+	--- BLOCK #9 39-47, warpins: 2 ---
+	slot5 = slot5 * slot6
+	slot0._configuredAbsorbSpeed = slot5
+	slot7 = slot0
+	slot5 = slot0._refreshAbsorbSpeed
+
+	slot5(slot7)
+
+	slot5 = slot0.cameraMode
+	slot6 = slot4.absorbRayRadius
 	--- END OF BLOCK #9 ---
 
-	slot8 = if not slot8 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 53-53, warpins: 1 ---
-	slot8 = 0.5
+	--- BLOCK #10 48-48, warpins: 1 ---
+	slot6 = 0.1
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 54-69, warpins: 2 ---
-	slot7.dampingFactor = slot8
-	slot7 = slot0.cameraMode
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.setting
-	slot10 = slot8
-	slot8 = slot8.getCatchDampingRate
-	slot11 = slot3
-	slot8 = slot8(slot10, slot11)
-	slot8 = slot8 / 100
-	slot8 = slot6 * slot8
-	slot7.dampingFactor = slot8
-	slot7 = slot0.cameraMode
-	slot8 = slot4.dampingRayRadius
+	--- BLOCK #11 49-60, warpins: 2 ---
+	slot5.absorbRayRadius = slot6
+	slot5 = slot0.cameraMode
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.setting
+	slot8 = slot6
+	slot6 = slot6.getCatchDampingRate
+	slot9 = slot3
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot4.dampingFactorMultiplier
 	--- END OF BLOCK #11 ---
 
-	slot8 = if not slot8 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 70-70, warpins: 1 ---
-	slot8 = 0.1
+	--- BLOCK #12 61-61, warpins: 1 ---
+	slot7 = 1
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 71-75, warpins: 2 ---
-	slot7.dampingRayRadius = slot8
-	slot7 = slot0.cameraMode
-	slot8 = slot4.moveAbsorbSpeed
+	--- BLOCK #13 62-67, warpins: 2 ---
+	slot6 = slot6 * slot7
+	slot5.dampingFactor = slot6
+	slot5 = slot0.cameraMode
+	slot6 = slot4.dampingRayRadius
 	--- END OF BLOCK #13 ---
 
-	slot8 = if not slot8 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 76-76, warpins: 1 ---
-	slot8 = 0.1
+	--- BLOCK #14 68-68, warpins: 1 ---
+	slot6 = 0.1
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 77-81, warpins: 2 ---
-	slot7.moveAbsorbSpeed = slot8
-	slot7 = slot0.cameraMode
-	slot8 = slot4.moveAbsorbRayRadius
+	--- BLOCK #15 69-73, warpins: 2 ---
+	slot5.dampingRayRadius = slot6
+	slot5 = slot0.cameraMode
+	slot6 = slot4.moveAbsorbSpeed
 	--- END OF BLOCK #15 ---
 
-	slot8 = if not slot8 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 82-82, warpins: 1 ---
-	slot8 = 0.1
+	--- BLOCK #16 74-74, warpins: 1 ---
+	slot6 = 0.1
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 83-87, warpins: 2 ---
-	slot7.moveAbsorbRayRadius = slot8
-	slot7 = slot0.cameraMode
-	slot8 = slot4.absorbRayRadiusStart
+	--- BLOCK #17 75-79, warpins: 2 ---
+	slot5.moveAbsorbSpeed = slot6
+	slot5 = slot0.cameraMode
+	slot6 = slot4.moveAbsorbRayRadius
 	--- END OF BLOCK #17 ---
 
-	slot8 = if not slot8 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 88-88, warpins: 1 ---
-	slot8 = 0.5
+	--- BLOCK #18 80-80, warpins: 1 ---
+	slot6 = 0.1
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 89-90, warpins: 2 ---
-	slot7.absorbRayRadiusStart = slot8
+	--- BLOCK #19 81-85, warpins: 2 ---
+	slot5.moveAbsorbRayRadius = slot6
+	slot5 = slot0.cameraMode
+	slot6 = slot4.absorbRayRadiusStart
+	--- END OF BLOCK #19 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 86-86, warpins: 1 ---
+	slot6 = 0.5
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 87-88, warpins: 2 ---
+	slot5.absorbRayRadiusStart = slot6
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot15.onInputDeviceChange = slot17
+slot17.onInputDeviceChange = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1493,9 +1836,9 @@ slot17 = function(slot0)
 
 end
 
-slot15.dispose = slot17
+slot17.dispose = slot19
 
-return slot15
+return slot17
 --- END OF BLOCK #0 ---
 
 

@@ -1,46 +1,73 @@
---- BLOCK #0 1-128, warpins: 1 ---
+--- BLOCK #0 1-173, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "GameApp.Chat.ChatSystem"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.MessageName"
+slot5 = "GameApp.Chat.ChatSystem"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.Const"
+slot6 = "Const.MessageName"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.RedDotConst"
+slot7 = "Common.Const.Const"
 slot5 = slot5(slot7)
-slot6 = slot0.getLogger
-slot8 = "ChatSystem"
+slot6 = require
+slot8 = "Common.NoticeDef"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.TriggerConst"
+slot9 = "Const.RedDotConst"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Common.Utils.Utils"
+slot8 = slot1.getLogger
+slot10 = "ChatSystem"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.ClientConst"
+slot11 = "Common.Const.TriggerConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Core.Common.Time"
+slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.friend_source_data"
+slot13 = "Const.ClientConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "json"
+slot14 = "Core.Common.Time"
 slot12 = slot12(slot14)
-slot13 = 600
-slot2.AddFriendCD = slot13
-slot13 = {
+slot13 = require
+slot15 = "Data.friend_source_data"
+slot13 = slot13(slot15)
+slot14 = require
+slot16 = "Data.friendship_level_data"
+slot14 = slot14(slot16)
+slot15 = require
+slot17 = "Data.friendship_level_func_data"
+slot15 = slot15(slot17)
+slot16 = require
+slot18 = "Data.sys_config_data"
+slot16 = slot16(slot18)
+slot17 = require
+slot19 = "json"
+slot17 = slot17(slot19)
+slot18 = require
+slot20 = "SDK.Platform.PlatformHomeCampEntryFilterService"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "SDK.Platform.PlatformNoticeUtils"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "SDK.Platform.PlatformSocialService"
+slot20 = slot20(slot22)
+slot21 = require
+slot23 = "Utils.LuaUIUtils"
+slot21 = slot21(slot23)
+slot22 = 600
+slot3.AddFriendCD = slot22
+slot22 = {
 	PlayerCard = 7,
 	Team = 6,
 	ChatChannel = 5,
@@ -49,9 +76,9 @@ slot13 = {
 	SystemRecommend = 2,
 	Search = 1
 }
-slot2.AddFriendSource = slot13
+slot3.AddFriendSource = slot22
 
-slot13 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.status
 
@@ -72,7 +99,7 @@ slot13 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-19, warpins: 2 ---
+	--- BLOCK #2 5-20, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.setSpecialFriendUId
 	slot6 = slot2.SpecialFriendId
@@ -85,31 +112,66 @@ slot13 = function(slot0, slot1, slot2)
 	slot5 = {}
 	slot4.subItems = slot5
 	slot4 = {}
+	slot0.friendIdSet = slot4
+	slot4 = {}
 	slot0.friendCustomList = slot4
+	slot4 = slot0.friendIntimacyLimits
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-21, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-25, warpins: 2 ---
+	slot0.friendIntimacyLimits = slot4
+	slot4 = slot0.friendIntimacyTodayLimits
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-26, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-35, warpins: 2 ---
+	slot0.friendIntimacyTodayLimits = slot4
+	slot4 = {}
+	slot0.friendSendGiftLimitCounts = slot4
+	slot4 = {}
+	slot0.friendshipPermissions = slot4
 	slot4 = ipairs
 	slot6 = slot2.Friends
 	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #3 20-42, warpins: 1 ---
-	slot9 = slot0.friendList
-	slot9 = slot9[2]
-	slot9 = slot9.subItems
-	slot10 = slot0.friendList
-	slot10 = slot10[2]
-	slot10 = slot10.subItems
-	slot10 = #slot10
-	slot10 = slot10 + 1
-	slot11 = {
-		type = 0,
-		tIndex = 0
-	}
+	--- BLOCK #7 36-50, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.addFriendListItem
 	slot12 = slot8.uid
-	slot11.playerId = slot12
-	slot9[slot10] = slot11
+
+	slot9(slot11, slot12)
+
 	slot9 = #slot3
 	slot9 = slot9 + 1
 	slot10 = slot8.uid
@@ -119,45 +181,129 @@ slot13 = function(slot0, slot1, slot2)
 	slot11 = Utils
 	slot11 = slot11.calFriendshipLevel
 	slot13 = slot8.intimacy
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
 	slot13 = if not slot13 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 43-43, warpins: 1 ---
+	--- BLOCK #8 51-51, warpins: 1 ---
 	slot13 = 0
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #5 44-50, warpins: 2 ---
+	--- BLOCK #9 52-58, warpins: 2 ---
 	slot11 = slot11(slot13)
 	slot9[slot10] = slot11
 	slot9 = slot0.friendIntimacies
 	slot10 = slot8.uid
 	slot11 = slot8.intimacy
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #9 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 51-51, warpins: 1 ---
+	--- BLOCK #10 59-59, warpins: 1 ---
 	slot11 = 0
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #7 52-58, warpins: 2 ---
+	--- BLOCK #11 60-65, warpins: 2 ---
+	slot9[slot10] = slot11
+	slot9 = slot0.friendIntimacyLimits
+	slot10 = slot8.uid
+	slot11 = slot8.intimacyLimits
+	--- END OF BLOCK #11 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 66-66, warpins: 1 ---
+	slot11 = {}
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 67-72, warpins: 2 ---
+	slot9[slot10] = slot11
+	slot9 = slot0.friendshipPermissions
+	slot10 = slot8.uid
+	slot11 = slot8.permissions
+	--- END OF BLOCK #13 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 73-73, warpins: 1 ---
+	slot11 = {}
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 74-79, warpins: 2 ---
+	slot9[slot10] = slot11
+	slot9 = slot0.friendIntimacyTodayLimits
+	slot10 = slot8.uid
+	slot11 = slot8.intimacyTodayLimit
+	--- END OF BLOCK #15 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 80-80, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 81-86, warpins: 2 ---
+	slot9[slot10] = slot11
+	slot9 = slot0.friendSendGiftLimitCounts
+	slot10 = slot8.uid
+	slot11 = slot8.sendGiftLimitCount
+	--- END OF BLOCK #17 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 87-87, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 88-94, warpins: 2 ---
 	slot9[slot10] = slot11
 	slot11 = slot0
 	slot9 = slot0.setFriendCustomInfo
@@ -167,25 +313,32 @@ slot13 = function(slot0, slot1, slot2)
 
 	slot9(slot11, slot12, slot13, slot14)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #8 59-60, warpins: 2 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #20 95-96, warpins: 2 ---
+	--- END OF BLOCK #20 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #9
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #9 61-94, warpins: 1 ---
+	--- BLOCK #21 97-135, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.initFriendGroup
 	slot7 = slot2.FriendGroups
 
 	slot4(slot6, slot7)
+
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.refreshFriendFuncSettings
+
+	slot4(slot6)
 
 	slot4 = pg
 	slot4 = slot4.me
@@ -225,15 +378,304 @@ slot13 = function(slot0, slot1, slot2)
 	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot2.recvFriendList = slot13
+slot3.recvFriendList = slot22
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot2 = slot0.friendList
+	slot2 = slot2[2]
+	slot2 = slot2.subItems
+	slot3 = #slot2
+	slot3 = slot3 + 1
+	slot4 = {
+		type = 0,
+		tIndex = 0
+	}
+	slot4.playerId = slot1
+	slot2[slot3] = slot4
+	slot3 = slot0.friendIdSet
+	slot4 = true
+	slot3[slot1] = slot4
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.addFriendListItem = slot22
+
+slot22 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.friendSendGiftLimitCounts
+	slot3[slot1] = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.setFriendSendGiftLimitCount = slot22
+
+slot22 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0.friendshipPermissions
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #0 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot3 = {}
+	slot4 = slot0.friendshipPermissions
+	slot4[slot1] = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-22, warpins: 2 ---
+	slot4 = tostring
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	slot5 = true
+	slot3[slot4] = slot5
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.SendMessageCommand
+	slot7 = MessageName
+	slot7 = slot7.FRIEND_PERMISSION_CHANGED
+	slot8 = {}
+	slot8.friendId = slot1
+	slot8.permissionId = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot3.recvFriendPermissionChanged = slot22
+
+slot22 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = FriendshipLevelFuncData
+	slot3 = slot3[slot2]
+	--- END OF BLOCK #0 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.ERROR
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-19, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "FriendshipLevelFuncData is missing, permissionId=%s, skipped"
+	slot8 = tostring
+	slot10 = slot2
+	MULTRES = slot8(slot10)
+
+	slot4(slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 2 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-26, warpins: 2 ---
+	slot4 = nil
+	slot5 = ipairs
+	slot7 = FriendshipLevelData
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 27-33, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.contains
+	slot12 = slot9.levelfunc
+	slot13 = slot2
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #5 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 34-36, warpins: 1 ---
+	slot10 = slot9.friendshipRange
+	slot4 = slot10[1]
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 37-38, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 39-40, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 41-46, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getFriendIntimacy
+	slot8 = slot1
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #9 ---
+
+	if slot5 < slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 47-48, warpins: 2 ---
+	slot5 = false
+
+	return slot5
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 49-51, warpins: 2 ---
+	slot5 = slot3.cost
+	--- END OF BLOCK #11 ---
+
+	if slot5 == nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 52-53, warpins: 1 ---
+	slot5 = true
+
+	return slot5
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 54-57, warpins: 2 ---
+	slot5 = slot0.friendshipPermissions
+	slot5 = slot5[slot1]
+	--- END OF BLOCK #13 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 58-63, warpins: 1 ---
+	slot6 = tostring
+	slot8 = slot2
+	slot6 = slot6(slot8)
+	slot6 = slot5[slot6]
+	--- END OF BLOCK #14 ---
+
+	if slot6 ~= true then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 64-65, warpins: 2 ---
+	slot6 = false
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #16 66-66, warpins: 1 ---
+	slot6 = true
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 67-67, warpins: 2 ---
+	return slot6
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot3.isFriendshipPermissionUnlocked = slot22
+
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.friendCustomList
 	slot4 = slot4[slot1]
@@ -340,9 +782,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.setFriendCustomInfo = slot13
+slot3.setFriendCustomInfo = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = {}
 	slot0.friendGroupList = slot2
@@ -418,9 +860,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot2.initFriendGroup = slot13
+slot3.initFriendGroup = slot22
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = {}
 	--- END OF BLOCK #0 ---
@@ -807,9 +1249,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.setFriendGroup = slot13
+slot3.setFriendGroup = slot22
 
-slot13 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot1
@@ -953,9 +1395,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvMoveFriendToGroup = slot13
+slot3.recvMoveFriendToGroup = slot22
 
-slot13 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.friendGroupList
 
@@ -966,9 +1408,9 @@ slot13 = function(slot0)
 
 end
 
-slot2.getFriendGroupList = slot13
+slot3.getFriendGroupList = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1020,9 +1462,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot2.getFriendGroup = slot13
+slot3.getFriendGroup = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.friendCustomList
 	slot2 = slot2[slot1]
@@ -1051,9 +1493,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot2.getFriendCustomInfo = slot13
+slot3.getFriendCustomInfo = slot22
 
-slot13 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getFriendGroup
@@ -1253,9 +1695,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot2.editFriendGroupName = slot13
+slot3.editFriendGroupName = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.friendCustomList
 	slot2 = slot2[slot1]
@@ -1357,9 +1799,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot2.removeFriendCustomInfo = slot13
+slot3.removeFriendCustomInfo = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -1398,9 +1840,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot2.setSpecialFriendUId = slot13
+slot3.setSpecialFriendUId = slot22
 
-slot13 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.specialFriendUId
 
@@ -1411,9 +1853,127 @@ slot13 = function(slot0)
 
 end
 
-slot2.getSpecialFriendUId = slot13
+slot3.getSpecialFriendUId = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-3, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 4-19, warpins: 2 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot1 = slot1.tips
+		slot3 = slot1
+		slot1 = slot1.addHudNotice
+		slot4 = playerId
+		slot5 = slot0
+		slot6 = ""
+		slot7 = SysConfigData
+		slot7 = slot7.WAIT_APPLICANT_TIME
+		slot8 = onAccept
+		slot9 = onReject
+		slot10 = onTimeout
+		--- END OF BLOCK #2 ---
+
+		slot10 = if not slot10 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 20-20, warpins: 1 ---
+		slot10 = onReject
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 21-27, warpins: 2 ---
+		slot11 = {
+			type = 8,
+			tIndex = 1
+		}
+		slot12 = Const
+		slot12 = slot12.FUNCTION_NAME
+		slot12 = slot12.FRIEND
+		slot11.funcName = slot12
+
+		slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11)
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot8 = slot0
+	slot6 = slot0.getPlayerInfo
+	slot9 = slot1
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #0 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot7 = slot5
+	slot9 = slot6
+
+	slot7(slot9)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-23, warpins: 2 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.queryPlayerInfo
+	slot10 = slot1
+	slot11 = nil
+	slot12 = true
+	slot13 = slot5
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot3.showVariantFriendInvite = slot22
+
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1502,9 +2062,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot2.checkRecommendFilter = slot13
+slot3.checkRecommendFilter = slot22
 
-slot13 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1522,9 +2082,9 @@ slot13 = function(slot0)
 
 end
 
-slot2.getFriendRequestList = slot13
+slot3.getFriendRequestList = slot22
 
-slot13 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.status
 	--- END OF BLOCK #0 ---
@@ -1580,7 +2140,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
 	--- BLOCK #5 23-27, warpins: 1 ---
@@ -1626,92 +2186,140 @@ slot13 = function(slot0, slot1, slot2)
 	slot9 = if not slot9 then
 	JUMP TO BLOCK #10
 	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #10 38-48, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.getPlayerInfo
+	slot13 = slot8.uid
+	slot10 = slot10(slot12, slot13)
+	slot11 = PlatformSocialService
+	slot13 = slot11
+	slot11 = slot11.peekPlatformUserBlockedByLocalUser
+	slot14 = slot10
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #10 ---
+
+	if slot11 == true then
+	JUMP TO BLOCK #11
+	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 38-54, warpins: 1 ---
-	slot10 = json
-	slot10 = slot10.decode
-	slot12 = slot8.info
-	slot10 = slot10(slot12)
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
-	slot13 = FriendSourceData
-	slot14 = slot10.sourceId
-	slot13 = slot13[slot14]
-	slot13 = slot13.friendsourceText
+	--- BLOCK #11 49-55, warpins: 1 ---
+	slot11 = LoggerManager
+	slot11 = slot11.checkLogger
+	slot13 = LoggerConst
+	slot13 = slot13.INFO
 	slot11 = slot11(slot13)
-	slot12 = string
-	slot12 = slot12.isNilOrEmpty
-	slot14 = slot10.channelName
-	slot12 = slot12(slot14)
-	--- END OF BLOCK #10 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 55-60, warpins: 1 ---
-	slot12 = pg
-	slot12 = slot12.getFormatText
-	slot14 = slot11
-	slot15 = slot10.channelName
-	slot12 = slot12(slot14, slot15)
-	slot11 = slot12
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 61-75, warpins: 2 ---
-	slot12 = slot0.friendRequestList
-	slot13 = slot0.friendRequestList
-	slot13 = #slot13
-	slot13 = slot13 + 1
-	slot14 = {
-		type = 1,
-		tIndex = 0
-	}
-	slot15 = slot8.uid
-	slot14.playerId = slot15
-	slot15 = slot10.sourceId
-	slot14.sourceId = slot15
-	slot14.sourceText = slot11
-	slot12[slot13] = slot14
-	slot12 = #slot3
-	slot12 = slot12 + 1
-	slot13 = slot8.uid
-	slot3[slot12] = slot13
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 76-77, warpins: 3 ---
-	--- END OF BLOCK #13 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #14
-
-
-	--- BLOCK #14 78-81, warpins: 1 ---
-	slot4 = #slot3
-	slot5 = 0
-	--- END OF BLOCK #14 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #15
+	slot11 = if slot11 then
+	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 82-90, warpins: 1 ---
+	--- BLOCK #12 56-62, warpins: 1 ---
+	slot11 = logger
+	slot13 = slot11
+	slot11 = slot11.info
+	slot14 = "recvFriendRequestList skip blocked applicant"
+	slot15 = slot8.uid
+
+	slot11(slot13, slot14, slot15)
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #13 63-79, warpins: 1 ---
+	slot11 = json
+	slot11 = slot11.decode
+	slot13 = slot8.info
+	slot11 = slot11(slot13)
+	slot12 = pg
+	slot12 = slot12.getLocalizationText
+	slot14 = FriendSourceData
+	slot15 = slot11.sourceId
+	slot14 = slot14[slot15]
+	slot14 = slot14.friendsourceText
+	slot12 = slot12(slot14)
+	slot13 = string
+	slot13 = slot13.isNilOrEmpty
+	slot15 = slot11.channelName
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #13 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 80-85, warpins: 1 ---
+	slot13 = pg
+	slot13 = slot13.getFormatText
+	slot15 = slot12
+	slot16 = slot11.channelName
+	slot13 = slot13(slot15, slot16)
+	slot12 = slot13
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 86-100, warpins: 2 ---
+	slot13 = slot0.friendRequestList
+	slot14 = slot0.friendRequestList
+	slot14 = #slot14
+	slot14 = slot14 + 1
+	slot15 = {
+		type = 1,
+		tIndex = 0
+	}
+	slot16 = slot8.uid
+	slot15.playerId = slot16
+	slot16 = slot11.sourceId
+	slot15.sourceId = slot16
+	slot15.sourceText = slot12
+	slot13[slot14] = slot15
+	slot13 = #slot3
+	slot13 = slot13 + 1
+	slot14 = slot8.uid
+	slot3[slot13] = slot14
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 101-102, warpins: 5 ---
+	--- END OF BLOCK #16 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 103-106, warpins: 1 ---
+	slot4 = #slot3
+	slot5 = 0
+	--- END OF BLOCK #17 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 107-115, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot6 = slot4
@@ -1723,22 +2331,22 @@ slot13 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #16 91-91, warpins: 2 ---
+	--- BLOCK #19 116-116, warpins: 2 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot2.recvFriendRequestList = slot13
+slot3.recvFriendRequestList = slot22
 
-slot13 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.status
 	slot3 = slot1.status
@@ -1821,7 +2429,7 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot14 = function(slot0, slot1, slot2, slot3, slot4)
+slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot3.status
 	--- END OF BLOCK #0 ---
@@ -1927,7 +2535,7 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	slot11 = slot9.Uid
 	slot10.uid = slot11
 	slot13 = slot0
-	slot11 = slot0.setPlayerData
+	slot11 = slot0.setQueriedPlayerData
 	slot14 = slot9.Uid
 	slot15 = slot10
 
@@ -2312,117 +2920,461 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot2.recvQueryPlayerInfoList = slot14
+slot3.recvQueryPlayerInfoList = slot23
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
-	slot2 = ipairs
-	slot4 = slot0.friendList
-	slot4 = slot4[2]
-	slot4 = slot4.subItems
-	slot2, slot3, slot4 = slot2(slot4)
+	slot2 = {}
+	slot3 = slot0.friendIntimacyLimits
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #1 8-12, warpins: 1 ---
-	slot7 = slot0.playerDatas
-	slot8 = slot6.playerId
-	slot7 = slot7[slot8]
-	--- END OF BLOCK #1 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #2 13-15, warpins: 1 ---
-	slot8 = slot7.online
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot0.friendIntimacyLimits = slot3
+	slot3 = ipairs
+	slot5 = slot0.friendList
+	slot5 = slot5[2]
+	slot5 = slot5.subItems
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot8 = slot0.playerDatas
+	slot9 = slot7.playerId
+	slot8 = slot8[slot9]
+	--- END OF BLOCK #3 ---
+
 	slot8 = if slot8 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 19-21, warpins: 1 ---
+	slot9 = slot8.online
+	--- END OF BLOCK #4 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-23, warpins: 1 ---
+	slot9 = 0
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 24-24, warpins: 1 ---
+	slot9 = 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-32, warpins: 2 ---
+	slot7.status = slot9
+	slot9 = slot8.loginTime
+	slot7.loginTime = slot9
+	slot9 = slot8.lastLogoutTime
+	slot7.lastLogoutTime = slot9
+	slot9 = slot8.online
+	--- END OF BLOCK #7 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 33-34, warpins: 1 ---
+	slot1 = slot1 + 1
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 35-36, warpins: 1 ---
+	slot9 = 1
+	slot7.status = slot9
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 37-40, warpins: 3 ---
+	slot9 = #slot2
+	slot9 = slot9 + 1
+	slot10 = slot7.playerId
+	slot2[slot9] = slot10
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 41-42, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 43-46, warpins: 1 ---
+	slot3 = #slot2
+	slot4 = 0
+	--- END OF BLOCK #12 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 47-60, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.callService
+	slot6 = "FriendService"
+	slot7 = "batchChatQuery"
+	slot8 = {}
+	slot9 = pg
+	slot9 = slot9.me
+	slot9 = slot9.uid
+	slot8[1] = slot9
+	slot8[2] = slot2
+
+	slot9 = function(slot0, slot1)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot2 = slot0.status
+		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot2 = ipairs
+		slot4 = friendUids
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 8-22, warpins: 1 ---
+		slot7 = self
+		slot7 = slot7.friendships
+		slot8 = Utils
+		slot8 = slot8.calFriendshipLevel
+		slot10 = 0
+		slot8 = slot8(slot10)
+		slot7[slot6] = slot8
+		slot7 = self
+		slot7 = slot7.friendIntimacies
+		slot8 = 0
+		slot7[slot6] = slot8
+		slot7 = self
+		slot7 = slot7.friendIntimacyLimits
+		slot8 = {}
+		slot7[slot6] = slot8
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 23-24, warpins: 2 ---
+		--- END OF BLOCK #3 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #2
+		GO OUT TO BLOCK #4
+
+
+		--- BLOCK #4 25-25, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 26-28, warpins: 2 ---
+		slot2 = ipairs
+		--- END OF BLOCK #5 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 29-31, warpins: 1 ---
+		slot4 = slot1.Results
+		--- END OF BLOCK #6 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 32-32, warpins: 2 ---
+		slot4 = EMPTY_TABLE
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 33-34, warpins: 2 ---
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #8 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+		--- BLOCK #9 35-42, warpins: 1 ---
+		slot7 = self
+		slot7 = slot7.friendships
+		slot8 = slot6.Target
+		slot9 = Utils
+		slot9 = slot9.calFriendshipLevel
+		slot11 = slot6.Intimacy
+		--- END OF BLOCK #9 ---
+
+		slot11 = if not slot11 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 43-43, warpins: 1 ---
+		slot11 = 0
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 44-51, warpins: 2 ---
+		slot9 = slot9(slot11)
+		slot7[slot8] = slot9
+		slot7 = self
+		slot7 = slot7.friendIntimacies
+		slot8 = slot6.Target
+		slot9 = slot6.Intimacy
+		--- END OF BLOCK #11 ---
+
+		slot9 = if not slot9 then
+		JUMP TO BLOCK #12
+		else
+		JUMP TO BLOCK #13
+		end
+
+
+		--- BLOCK #12 52-52, warpins: 1 ---
+		slot9 = 0
+		--- END OF BLOCK #12 ---
+
+		FLOW; TARGET BLOCK #13
+
+
+		--- BLOCK #13 53-53, warpins: 2 ---
+		slot7[slot8] = slot9
+
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 54-55, warpins: 2 ---
+		--- END OF BLOCK #14 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #9
+		GO OUT TO BLOCK #15
+
+
+		--- BLOCK #15 56-56, warpins: 1 ---
+		return
+		--- END OF BLOCK #15 ---
+
+
+
+	end
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 61-94, warpins: 2 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot0.friendList
+	slot5 = slot5[2]
+	slot5 = slot5.subItems
+	slot6 = friendListSort
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.friendList
+	slot3 = slot3[1]
+	slot4 = slot1
+	slot5 = "/"
+	slot6 = slot0.friendList
+	slot6 = slot6[2]
+	slot6 = slot6.subItems
+	slot6 = #slot6
+	slot4 = slot4 .. slot5 .. slot6
+	slot3.label = slot4
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.tryClientTrigger
+	slot6 = TriggerConst
+	slot6 = slot6.TRIGGER_TARGET_FRIENDS_NUM
+	slot7 = TriggerConst
+	slot7 = slot7.TRIGGER_ID_ANY
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.RECV_FRIEND_LIST
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot3.refreshFriendStatus = slot23
+
+slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot3 then
+	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
-	slot8 = 0
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot7 = slot3.status
+	--- END OF BLOCK #1 ---
+
+	if slot7 ~= true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 8-8, warpins: 1 ---
+	slot7 = true
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-18, warpins: 1 ---
-	slot8 = 1
+	--- BLOCK #4 9-10, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #5 19-24, warpins: 2 ---
-	slot6.status = slot8
-	slot8 = slot7.loginTime
-	slot6.loginTime = slot8
-	slot8 = slot7.online
+	--- BLOCK #5 11-13, warpins: 1 ---
+	slot8 = slot4.AttributesMap
 	--- END OF BLOCK #5 ---
 
 	slot8 = if slot8 then
 	JUMP TO BLOCK #6
 	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 14-21, warpins: 1 ---
+	slot8 = slot4.AttributesMap
+	slot9 = Utils
+	slot9 = slot9.decodeFromStr
+	slot11 = slot4.AttributesMap
+	slot11 = slot11.stableAttributesStr
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #6 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #7
+	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 25-26, warpins: 1 ---
-	slot1 = slot1 + 1
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 27-28, warpins: 1 ---
-	slot8 = 1
-	slot6.status = slot8
+	--- BLOCK #7 22-22, warpins: 1 ---
+	slot9 = {}
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 29-37, warpins: 3 ---
-	slot8 = slot6.playerId
-	slot9 = Utils
-	slot9 = slot9.queryFriendship
-	slot11 = pg
-	slot11 = slot11.me
-	slot12 = slot8
-
-	slot13 = function(slot0)
-		--- BLOCK #0 1-13, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.friendships
-		slot2 = friendUid
-		slot3 = Utils
-		slot3 = slot3.calFriendshipLevel
-		slot5 = slot0
-		slot3 = slot3(slot5)
-		slot1[slot2] = slot3
-		slot1 = self
-		slot1 = slot1.friendIntimacies
-		slot2 = friendUid
-		slot1[slot2] = slot0
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
+	--- BLOCK #8 23-29, warpins: 2 ---
+	slot8.stableAttributesDict = slot9
+	slot8.uid = slot1
+	slot11 = slot0
+	slot9 = slot0.setQueriedPlayerData
+	slot12 = slot1
+	slot13 = slot8
 
 	slot9(slot11, slot12, slot13)
 
@@ -2431,323 +3383,197 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 38-39, warpins: 2 ---
+	--- BLOCK #9 30-33, warpins: 3 ---
+	slot8 = slot0.queryPlayerInfoType
+	slot8 = slot8.FriendAddSearch
 	--- END OF BLOCK #9 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #10
+	if slot2 == slot8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #10 40-73, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.sort
-	slot4 = slot0.friendList
-	slot4 = slot4[2]
-	slot4 = slot4.subItems
-	slot5 = friendListSort
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.friendList
-	slot2 = slot2[1]
-	slot3 = slot1
-	slot4 = "/"
-	slot5 = slot0.friendList
-	slot5 = slot5[2]
-	slot5 = slot5.subItems
-	slot5 = #slot5
-	slot3 = slot3 .. slot4 .. slot5
-	slot2.label = slot3
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.tryClientTrigger
-	slot5 = TriggerConst
-	slot5 = slot5.TRIGGER_TARGET_FRIENDS_NUM
-	slot6 = TriggerConst
-	slot6 = slot6.TRIGGER_ID_ANY
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = facade
-	slot4 = slot2
-	slot2 = slot2.SendMessageCommand
-	slot5 = MessageName
-	slot5 = slot5.RECV_FRIEND_LIST
-
-	slot2(slot4, slot5)
-
-	return
+	--- BLOCK #10 34-36, warpins: 1 ---
+	slot8 = {}
 	--- END OF BLOCK #10 ---
 
-
-
-end
-
-slot2.refreshFriendStatus = slot14
-
-slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot7 = slot3.status
-	--- END OF BLOCK #0 ---
-
 	slot7 = if slot7 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot7 = slot4.AttributesMap
-	--- END OF BLOCK #1 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 7-14, warpins: 1 ---
-	slot7 = slot4.AttributesMap
-	slot8 = Utils
-	slot8 = slot8.decodeFromStr
-	slot10 = slot4.AttributesMap
-	slot10 = slot10.stableAttributesStr
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #2 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 15-15, warpins: 1 ---
-	slot8 = {}
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 16-22, warpins: 2 ---
-	slot7.stableAttributesDict = slot8
-	slot7.uid = slot1
-	slot10 = slot0
-	slot8 = slot0.setPlayerData
+	--- BLOCK #11 37-42, warpins: 1 ---
+	slot9 = string
+	slot9 = slot9.isNilOrEmpty
 	slot11 = slot1
-	slot12 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #11 ---
 
-	slot8(slot10, slot11, slot12)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 23-26, warpins: 3 ---
-	slot7 = slot0.queryPlayerInfoType
-	slot7 = slot7.FriendAddSearch
-	--- END OF BLOCK #5 ---
-
-	if slot2 == slot7 then
-	JUMP TO BLOCK #6
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #6 27-30, warpins: 1 ---
-	slot7 = {}
-	slot8 = slot3.status
-	--- END OF BLOCK #6 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 31-36, warpins: 1 ---
-	slot8 = string
-	slot8 = slot8.isNilOrEmpty
-	slot10 = slot1
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #7 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 37-39, warpins: 1 ---
-	slot8 = {
+	--- BLOCK #12 43-45, warpins: 1 ---
+	slot9 = {
 		type = 2,
 		tIndex = 0
 	}
-	slot8.playerId = slot1
-	slot7[1] = slot8
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 40-47, warpins: 3 ---
-	slot8 = facade
-	slot10 = slot8
-	slot8 = slot8.SendMessageCommand
-	slot11 = MessageName
-	slot11 = slot11.RECV_QUERY_PLAYER_INFO
-	slot12 = slot7
-
-	slot8(slot10, slot11, slot12)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #10 48-51, warpins: 1 ---
-	slot7 = slot0.queryPlayerInfoType
-	slot7 = slot7.ChatRecord
-	--- END OF BLOCK #10 ---
-
-	if slot2 == slot7 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 52-56, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.tryCreatePrivateChat
-	slot10 = slot1
-
-	slot7(slot9, slot10)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #12 57-60, warpins: 1 ---
-	slot7 = slot0.queryPlayerInfoType
-	slot7 = slot7.ShowPlayerInfo
+	slot9.playerId = slot1
+	slot8[1] = slot9
 	--- END OF BLOCK #12 ---
 
-	if slot2 == slot7 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #15
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 61-75, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.ui
-	slot7 = slot7.chat
-	slot9 = slot7
-	slot7 = slot7.openPlayerInfoCard
-	slot10 = slot1
-	slot11 = slot6
+	--- BLOCK #13 46-53, warpins: 3 ---
+	slot9 = facade
+	slot11 = slot9
+	slot9 = slot9.SendMessageCommand
+	slot12 = MessageName
+	slot12 = slot12.RECV_QUERY_PLAYER_INFO
+	slot13 = slot8
 
-	slot7(slot9, slot10, slot11)
+	slot9(slot11, slot12, slot13)
 
-	slot9 = slot0
-	slot7 = slot0.checkFriendList
-	slot10 = slot1
-	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #13 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #17
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #14 76-82, warpins: 1 ---
-	slot7 = facade
-	slot9 = slot7
-	slot7 = slot7.SendMessageCommand
-	slot10 = MessageName
-	slot10 = slot10.RECV_FRIEND_LIST
-
-	slot7(slot9, slot10)
-
+	--- BLOCK #14 54-57, warpins: 1 ---
+	slot8 = slot0.queryPlayerInfoType
+	slot8 = slot8.ChatRecord
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #15 83-86, warpins: 1 ---
-	slot7 = slot0.queryPlayerInfoType
-	slot7 = slot7.ApplyTeam
-	--- END OF BLOCK #15 ---
-
-	if slot2 == slot7 then
-	JUMP TO BLOCK #16
+	if slot2 == slot8 then
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #16 87-93, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.teamHandleInner
-	slot10 = slot1
-	slot11 = slot0.playerDatas
-	slot11 = slot11[slot1]
-	slot12 = slot6
+	--- BLOCK #15 58-62, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.tryCreatePrivateChat
+	slot11 = slot1
 
-	slot7(slot9, slot10, slot11, slot12)
+	slot8(slot10, slot11)
 
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #16 63-66, warpins: 1 ---
+	slot8 = slot0.queryPlayerInfoType
+	slot8 = slot8.ShowPlayerInfo
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 94-95, warpins: 6 ---
-	--- END OF BLOCK #17 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #18
+	if slot2 == slot8 then
+	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 96-99, warpins: 1 ---
-	slot7 = slot5
-	slot9 = slot0.playerDatas
-	slot9 = slot9[slot1]
+	--- BLOCK #17 67-72, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.checkFriendList
+	slot11 = slot1
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #17 ---
 
-	slot7(slot9)
+	slot8 = if slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #18 73-81, warpins: 1 ---
+	slot8 = facade
+	slot10 = slot8
+	slot8 = slot8.SendMessageCommand
+	slot11 = MessageName
+	slot11 = slot11.RECV_FRIEND_LIST
+	slot12 = slot0.queryPlayerInfoType
+	slot12 = slot12.ShowPlayerInfo
+
+	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #19 100-100, warpins: 2 ---
-	return
+	--- BLOCK #19 82-85, warpins: 1 ---
+	slot8 = slot0.queryPlayerInfoType
+	slot8 = slot8.ApplyTeam
 	--- END OF BLOCK #19 ---
+
+	if slot2 == slot8 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 86-92, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.teamHandleInner
+	slot11 = slot1
+	slot12 = slot0.playerDatas
+	slot12 = slot12[slot1]
+	slot13 = slot6
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 93-94, warpins: 6 ---
+	--- END OF BLOCK #21 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 95-99, warpins: 1 ---
+	slot8 = slot5
+	slot10 = slot0.playerDatas
+	slot10 = slot10[slot1]
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 100-100, warpins: 2 ---
+	return
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot2.recvQueryPlayerInfo = slot14
+slot3.recvQueryPlayerInfo = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.status
 	--- END OF BLOCK #0 ---
@@ -2760,20 +3586,12 @@ slot14 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 4-49, warpins: 1 ---
-	slot3 = slot0.friendList
-	slot3 = slot3[2]
-	slot3 = slot3.subItems
-	slot4 = slot0.friendList
-	slot4 = slot4[2]
-	slot4 = slot4.subItems
-	slot4 = #slot4
-	slot4 = slot4 + 1
-	slot5 = {
-		type = 0,
-		tIndex = 0
-	}
-	slot5.playerId = slot1
-	slot3[slot4] = slot5
+	slot5 = slot0
+	slot3 = slot0.addFriendListItem
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.chat
@@ -2810,6 +3628,15 @@ slot14 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.PLAYER_NAME_CHANGE
+	slot7 = slot1
+
+	slot3(slot5, slot6, slot7)
+
 	slot5 = slot0
 	slot3 = slot0.removeFriendRequest
 	slot6 = slot1
@@ -2834,9 +3661,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvAcceptFriend = slot14
+slot3.recvAcceptFriend = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.status
 	--- END OF BLOCK #0 ---
@@ -2868,9 +3695,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvRefuseFriend = slot14
+slot3.recvRefuseFriend = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = -1
 	slot3 = ipairs
@@ -2954,9 +3781,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.removeFriendRequest = slot14
+slot3.removeFriendRequest = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.status
 	--- END OF BLOCK #0 ---
@@ -3002,21 +3829,13 @@ slot14 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 17-30, warpins: 1 ---
-	slot9 = slot0.friendList
-	slot9 = slot9[2]
-	slot9 = slot9.subItems
-	slot10 = slot0.friendList
-	slot10 = slot10[2]
-	slot10 = slot10.subItems
-	slot10 = #slot10
-	slot10 = slot10 + 1
-	slot11 = {
-		type = 0,
-		tIndex = 0
-	}
-	slot11.playerId = slot8
-	slot9[slot10] = slot11
+	--- BLOCK #4 17-23, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.addFriendListItem
+	slot12 = slot8
+
+	slot9(slot11, slot12)
+
 	slot9 = #slot3
 	slot9 = slot9 + 1
 	slot3[slot9] = slot8
@@ -3025,7 +3844,7 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 31-32, warpins: 2 ---
+	--- BLOCK #5 24-25, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -3033,7 +3852,7 @@ slot14 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 33-63, warpins: 1 ---
+	--- BLOCK #6 26-56, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.recvMoveFriendToGroup
 	slot7 = slot3
@@ -3079,7 +3898,7 @@ slot14 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 64-74, warpins: 3 ---
+	--- BLOCK #7 57-67, warpins: 3 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -3098,7 +3917,7 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 75-75, warpins: 2 ---
+	--- BLOCK #8 68-68, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -3106,9 +3925,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvAcceptAllFriends = slot14
+slot3.recvAcceptAllFriends = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.status
 	--- END OF BLOCK #0 ---
@@ -3152,9 +3971,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.recvRefuseAllFriends = slot14
+slot3.recvRefuseAllFriends = slot23
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot1.status
 	--- END OF BLOCK #0 ---
@@ -3162,7 +3981,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
@@ -3335,7 +4154,18 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 81-131, warpins: 2 ---
+	--- BLOCK #14 81-83, warpins: 2 ---
+	slot8 = slot4.skipCreateChat
+	--- END OF BLOCK #14 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 84-93, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.global
 	slot8 = slot8.ui
@@ -3348,6 +4178,12 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 	slot8(slot10, slot11, slot12, slot13)
 
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 94-134, warpins: 2 ---
 	slot8 = pg
 	slot8 = slot8.game
 	slot8 = slot8.chat
@@ -3397,28 +4233,28 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #15 132-132, warpins: 2 ---
+	--- BLOCK #17 135-135, warpins: 2 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot2.recvApplyFriend = slot14
+slot3.recvApplyFriend = slot23
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot4 = {}
-	slot4.sourceId = slot2
+	slot5 = {}
+	slot5.sourceId = slot2
 	--- END OF BLOCK #0 ---
 
-	slot5 = if not slot3 then
+	slot6 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -3426,37 +4262,55 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot5 = nil
+	slot6 = nil
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-18, warpins: 2 ---
-	slot4.channelName = slot5
-	slot5 = json
-	slot5 = slot5.encode
-	slot7 = slot4
-	slot5 = slot5(slot7)
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.applyFriend
-	slot9 = slot1
-	slot10 = slot5
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot5.channelName = slot6
+	--- END OF BLOCK #2 ---
 
-	slot6(slot8, slot9, slot10)
+	slot6 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	slot6 = nil
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-22, warpins: 2 ---
+	slot5.skipCreateChat = slot6
+	slot6 = json
+	slot6 = slot6.encode
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.applyFriend
+	slot10 = slot1
+	slot11 = slot6
+
+	slot7(slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot2.applyFriend = slot14
+slot3.applyFriend = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.status
 	--- END OF BLOCK #0 ---
@@ -3468,126 +4322,143 @@ slot14 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 4-10, warpins: 1 ---
-	slot3 = -1
-	slot4 = ipairs
-	slot6 = slot0.friendList
-	slot6 = slot6[2]
-	slot6 = slot6.subItems
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #1 4-15, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.clearFriendFuncSettings
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.removeFriendListItem
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	if slot3 == true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #2 11-13, warpins: 1 ---
-	slot9 = slot8.playerId
+	--- BLOCK #2 16-28, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.removeFriendCustomInfo
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.friendships
+	slot4 = -1
+	slot3[slot1] = slot4
+	slot3 = slot0.friendIntimacies
+	slot4 = -1
+	slot3[slot1] = slot4
+	slot3 = slot0.friendIntimacyLimits
 	--- END OF BLOCK #2 ---
 
-	if slot9 == slot1 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-15, warpins: 1 ---
-	slot3 = slot7
+	--- BLOCK #3 29-31, warpins: 1 ---
+	slot3 = slot0.friendIntimacyLimits
+	slot4 = nil
+	slot3[slot1] = slot4
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-17, warpins: 2 ---
+	--- BLOCK #4 32-34, warpins: 2 ---
+	slot3 = slot0.friendIntimacyTodayLimits
 	--- END OF BLOCK #4 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 18-19, warpins: 2 ---
-	--- END OF BLOCK #5 ---
-
-	if slot3 ~= -1 then
-	JUMP TO BLOCK #6
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 20-70, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.remove
-	slot6 = slot0.friendList
-	slot6 = slot6[2]
-	slot6 = slot6.subItems
-	slot7 = slot3
+	--- BLOCK #5 35-37, warpins: 1 ---
+	slot3 = slot0.friendIntimacyTodayLimits
+	slot4 = nil
+	slot3[slot1] = slot4
+	--- END OF BLOCK #5 ---
 
-	slot4(slot6, slot7)
+	FLOW; TARGET BLOCK #6
 
-	slot6 = slot0
-	slot4 = slot0.removeFriendCustomInfo
+
+	--- BLOCK #6 38-81, warpins: 2 ---
+	slot3 = slot0.friendSendGiftLimitCounts
+	slot4 = nil
+	slot3[slot1] = slot4
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.setFriendshipLevelLastShow
+	slot6 = slot1
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.refreshFriendStatus
+
+	slot3(slot5)
+
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "CHAT_REMOVE_FRIEND_SUCCESS"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.RECV_FRIEND_LIST
+
+	slot3(slot5, slot6)
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.PLAYER_NAME_CHANGE
 	slot7 = slot1
 
-	slot4(slot6, slot7)
+	slot3(slot5, slot6, slot7)
 
-	slot4 = slot0.friendships
-	slot5 = -1
-	slot4[slot1] = slot5
-	slot4 = slot0.friendIntimacies
-	slot5 = -1
-	slot4[slot1] = slot5
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.setFriendshipLevelLastShow
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.REMOVE_CHANNEL
 	slot7 = slot1
-	slot8 = 0
 
-	slot4(slot6, slot7, slot8)
-
-	slot6 = slot0
-	slot4 = slot0.refreshFriendStatus
-
-	slot4(slot6)
-
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.tips
-	slot6 = slot4
-	slot4 = slot4.showTextTip
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "CHAT_REMOVE_FRIEND_SUCCESS"
-	MULTRES = slot7(slot9)
-
-	slot4(slot6, MULTRES)
-
-	slot4 = facade
-	slot6 = slot4
-	slot4 = slot4.SendMessageCommand
-	slot7 = MessageName
-	slot7 = slot7.RECV_FRIEND_LIST
-
-	slot4(slot6, slot7)
-
-	slot4 = facade
-	slot6 = slot4
-	slot4 = slot4.SendMessageCommand
-	slot7 = MessageName
-	slot7 = slot7.REMOVE_CHANNEL
-	slot8 = slot1
-
-	slot4(slot6, slot7, slot8)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 71-71, warpins: 3 ---
+	--- BLOCK #7 82-82, warpins: 3 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -3595,9 +4466,73 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvRemoveFriend = slot14
+slot3.recvRemoveFriend = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = slot0.friendList
+	slot2 = slot2[2]
+	slot2 = slot2.subItems
+	slot3 = ipairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot8 = slot7.playerId
+	--- END OF BLOCK #1 ---
+
+	if slot8 == slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-20, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.remove
+	slot10 = slot2
+	slot11 = slot6
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.friendIdSet
+	slot9 = nil
+	slot8[slot1] = slot9
+	slot8 = true
+
+	return slot8
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 21-22, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 23-24, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot3.removeFriendListItem = slot23
+
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.status
 	--- END OF BLOCK #0 ---
@@ -3745,9 +4680,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvAddBlacklist = slot14
+slot3.recvAddBlacklist = slot23
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot2.status
 	--- END OF BLOCK #0 ---
@@ -3854,9 +4789,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.recvDelBlacklist = slot14
+slot3.recvDelBlacklist = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot0.friendRequestList
@@ -3965,10 +4900,10 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvFriendApply = slot14
+slot3.recvFriendApply = slot23
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-42, warpins: 1 ---
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-49, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.removeFriendRequest
 	slot5 = slot1
@@ -4005,6 +4940,15 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = facade
+	slot4 = slot2
+	slot2 = slot2.SendMessageCommand
+	slot5 = MessageName
+	slot5 = slot5.PLAYER_NAME_CHANGE
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -4029,9 +4973,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.recvFriendAccept = slot14
+slot3.recvFriendAccept = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -4040,96 +4984,124 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.recvFriendRefuse = slot14
+slot3.recvFriendRefuse = slot23
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = -1
-	slot3 = ipairs
-	slot5 = slot0.friendList
-	slot5 = slot5[2]
-	slot5 = slot5.subItems
-	slot3, slot4, slot5 = slot3(slot5)
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.clearFriendFuncSettings
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.removeFriendListItem
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	if slot2 == true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot8 = slot7.playerId
+	--- BLOCK #1 13-21, warpins: 1 ---
+	slot2 = slot0.friendships
+	slot3 = -1
+	slot2[slot1] = slot3
+	slot2 = slot0.friendIntimacies
+	slot3 = -1
+	slot2[slot1] = slot3
+	slot2 = slot0.friendIntimacyLimits
 	--- END OF BLOCK #1 ---
 
-	if slot8 == slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 1 ---
-	slot2 = slot6
+	--- BLOCK #2 22-24, warpins: 1 ---
+	slot2 = slot0.friendIntimacyLimits
+	slot3 = nil
+	slot2[slot1] = slot3
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-14, warpins: 2 ---
+	--- BLOCK #3 25-27, warpins: 2 ---
+	slot2 = slot0.friendIntimacyTodayLimits
 	--- END OF BLOCK #3 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
-
-
-	--- BLOCK #4 15-16, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	if slot2 ~= -1 then
-	JUMP TO BLOCK #5
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 17-40, warpins: 1 ---
-	slot3 = slot0.friendships
-	slot4 = -1
-	slot3[slot1] = slot4
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.setFriendshipLevelLastShow
+	--- BLOCK #4 28-30, warpins: 1 ---
+	slot2 = slot0.friendIntimacyTodayLimits
+	slot3 = nil
+	slot2[slot1] = slot3
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 31-60, warpins: 2 ---
+	slot2 = slot0.friendSendGiftLimitCounts
+	slot3 = nil
+	slot2[slot1] = slot3
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.setFriendshipLevelLastShow
+	slot5 = slot1
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.removeFriendCustomInfo
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.refreshFriendStatus
+
+	slot2(slot4)
+
+	slot2 = facade
+	slot4 = slot2
+	slot2 = slot2.SendMessageCommand
+	slot5 = MessageName
+	slot5 = slot5.RECV_FRIEND_LIST
+
+	slot2(slot4, slot5)
+
+	slot2 = facade
+	slot4 = slot2
+	slot2 = slot2.SendMessageCommand
+	slot5 = MessageName
+	slot5 = slot5.PLAYER_NAME_CHANGE
 	slot6 = slot1
-	slot7 = 0
 
-	slot3(slot5, slot6, slot7)
-
-	slot3 = table
-	slot3 = slot3.remove
-	slot5 = slot0.friendList
-	slot5 = slot5[2]
-	slot5 = slot5.subItems
-	slot6 = slot2
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.removeFriendCustomInfo
-	slot6 = slot1
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.refreshFriendStatus
-
-	slot3(slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 41-41, warpins: 2 ---
+	--- BLOCK #6 61-61, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -4137,9 +5109,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.recvFriendRemove = slot14
+slot3.recvFriendRemove = slot23
 
-slot14 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.playerDatas
 	slot3 = slot3[slot1]
@@ -4161,67 +5133,161 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-16, warpins: 2 ---
-	slot3 = slot0.playerDatas
-	slot3 = slot3[slot1]
-	slot4 = os
-	slot4 = slot4.time
-	slot4 = slot4()
-	slot3.loginTime = slot4
-	slot3 = Const
-	slot3 = slot3.FriendStatus
-	slot3 = slot3.Online
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot4 = Const
+	slot4 = slot4.FriendStatus
+	slot4 = slot4.Online
 	--- END OF BLOCK #2 ---
 
-	if slot2 == slot3 then
+	if slot2 ~= slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
-	slot3 = slot0.playerDatas
-	slot3 = slot3[slot1]
-	slot4 = true
-	slot3.online = slot4
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 22-25, warpins: 1 ---
-	slot3 = slot0.playerDatas
-	slot3 = slot3[slot1]
-	slot4 = false
-	slot3.online = slot4
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 26-33, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.refreshChannelList
-	slot6 = slot1
+	--- BLOCK #5 14-16, warpins: 2 ---
+	slot5 = slot3.online
+	--- END OF BLOCK #5 ---
 
-	slot3(slot5, slot6)
+	if slot5 == false then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
 
-	slot5 = slot0
-	slot3 = slot0.refreshFriendStatus
 
-	slot3(slot5)
+	--- BLOCK #6 17-18, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 19-28, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.isFriendFuncEnabled
+	slot8 = slot1
+	slot9 = Const
+	slot9 = slot9.FriendshipPermissionType
+	slot9 = slot9.OnlineReminder
+	slot5 = slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 29-30, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 31-31, warpins: 0 ---
+	slot5 = true
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 32-33, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 34-37, warpins: 1 ---
+	slot6 = Time
+	slot6 = slot6.secondCache
+	slot3.loginTime = slot6
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 38-40, warpins: 1 ---
+	slot6 = Time
+	slot6 = slot6.secondCache
+	slot3.lastLogoutTime = slot6
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 41-43, warpins: 2 ---
+	slot3.online = slot4
+	--- END OF BLOCK #13 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 44-52, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	slot8 = slot6
+	slot6 = slot6.pushFriendOnLineItem
+	slot9 = {}
+	slot9.uid = slot1
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 53-60, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.refreshChannelList
+	slot9 = slot1
+
+	slot6(slot8, slot9)
+
+	slot8 = slot0
+	slot6 = slot0.refreshFriendStatus
+
+	slot6(slot8)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot2.recvFriendSyncStatus = slot14
+slot3.recvFriendSyncStatus = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkBlack
@@ -4234,62 +5300,47 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.checkBlackList = slot14
+slot3.checkBlackList = slot23
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = ipairs
-	slot4 = slot0.friendList
-	slot4 = slot4[2]
-	slot4 = slot4.subItems
-	slot2, slot3, slot4 = slot2(slot4)
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = slot0.friendIdSet
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #0 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
-	slot7 = slot6.playerId
-	--- END OF BLOCK #1 ---
-
-	if slot7 == slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 10-11, warpins: 1 ---
-	slot7 = true
-
-	return slot7
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot2 = true
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 12-13, warpins: 3 ---
-	--- END OF BLOCK #3 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
-
-
-	--- BLOCK #4 14-15, warpins: 1 ---
-	slot2 = false
-
+	--- BLOCK #3 8-8, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot2.checkFriendList = slot14
+slot3.checkFriendList = slot23
 
-slot14 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -4329,16 +5380,314 @@ slot14 = function(slot0)
 
 end
 
-slot2.getFriendIdList = slot14
+slot3.getFriendIdList = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getPlayerInfo
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot4 = slot3.homelandHasTillableFacility
+	--- END OF BLOCK #2 ---
+
+	if slot4 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-13, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-16, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 17-18, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 19-19, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 20-22, warpins: 2 ---
+	slot3.homelandHasTillableFacility = slot5
+	--- END OF BLOCK #8 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 23-24, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 25-25, warpins: 1 ---
+	slot6 = true
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 26-26, warpins: 2 ---
+	return slot6
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot3.setFriendTillableState = slot23
+
+slot23 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot4 = PlatformHomeCampEntryFilterService
+	slot6 = slot4
+	slot4 = slot4.canEnterHomeCamp
+	slot7 = slot1
+	slot8 = slot2
+	slot4 = slot4(slot6, slot7, slot8)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-14, warpins: 1 ---
+	slot5 = PlatformNoticeUtils
+	slot5 = slot5.showTextTipById
+	slot7 = NoticeDef
+	slot7 = slot7.CANNOT_ENTER_HOMECAMP
+
+	slot5(slot7)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 15-18, warpins: 1 ---
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot0 = slot0.space
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 10-18, warpins: 1 ---
+		slot0 = Utils
+		slot0 = slot0.isSpaceDungeon
+		slot2 = pg
+		slot2 = slot2.me
+		slot2 = slot2.space
+		slot2 = slot2.spaceType
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 19-30, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.showTextTip
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "APPLY_TEAM_STATUS_ERROR"
+		MULTRES = slot3(slot5)
+
+		slot0(slot2, MULTRES)
+
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 31-33, warpins: 4 ---
+		slot0 = confirmCallback
+		--- END OF BLOCK #4 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 34-35, warpins: 1 ---
+		slot0 = confirmCallback
+
+		slot0()
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 36-42, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.enterHomelandByUid
+		slot3 = playerId
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot6 = slot2.homelandHasTillableFacility
+	--- END OF BLOCK #2 ---
+
+	if slot6 == true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-20, warpins: 1 ---
+	slot6 = "HOMELAND_VISIT_TILLABLE_CONFIRM"
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 21-21, warpins: 1 ---
+	slot6 = "HOMELAND_VISIT_CONFIRM"
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-36, warpins: 2 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.showConfirmMsgRaw
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = "WARNING"
+	slot9 = slot9(slot11)
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = slot6
+	slot10 = slot10(slot12)
+	slot11 = slot5
+
+	slot7(slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 37-37, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot3.visitHome = slot23
+
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
@@ -4349,7 +5698,7 @@ slot14 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
@@ -4384,96 +5733,19 @@ slot14 = function(slot0, slot1)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 18-18, warpins: 3 ---
-	return
-	--- END OF BLOCK #5 ---
+	--- BLOCK #5 18-21, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.prefetchTeamMemberPsnBlockStates
+	slot5 = slot1.membersInfo
 
+	slot2(slot4, slot5)
 
-
-end
-
-slot2.syncTeamMembersInfo = slot14
-
-slot14 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot4 = Utils
-	slot4 = slot4.calFriendshipLevel
-	slot6 = slot3
-	slot4 = slot4(slot6)
-	slot5 = slot1
-	slot6 = pg
-	slot6 = slot6.me
-	slot6 = slot6.uid
-	--- END OF BLOCK #0 ---
-
-	if slot1 == slot6 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-11, warpins: 1 ---
-	slot5 = slot2
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 12-15, warpins: 2 ---
-	slot6 = slot0.friendships
-	slot6 = slot6[slot5]
-	--- END OF BLOCK #2 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 16-19, warpins: 1 ---
-	slot6 = slot0.friendships
-	slot6 = slot6[slot5]
-	--- END OF BLOCK #3 ---
-
-	if slot6 >= slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 20-21, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 22-22, warpins: 1 ---
-	slot6 = true
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 23-36, warpins: 3 ---
-	slot7 = slot0.friendships
-	slot7[slot5] = slot4
-	slot7 = slot0.friendIntimacies
-	slot7[slot5] = slot3
-	slot7 = facade
-	slot9 = slot7
-	slot7 = slot7.SendMessageCommand
-	slot10 = MessageName
-	slot10 = slot10.FRIENDSHIP_UPDATE
-	slot11 = {}
-	slot11.friendUid = slot5
-	slot11.levelUp = slot6
-
-	slot7(slot9, slot10, slot11)
-
+	--- BLOCK #6 22-22, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -4481,9 +5753,600 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.onFriendshipUpdate = slot14
+slot3.syncTeamMembersInfo = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = pg
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-14, warpins: 1 ---
+	slot2 = type
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.requestPsnBlockStates
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= "function" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-15, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #4 16-20, warpins: 1 ---
+	slot2 = {}
+	slot3 = pairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 21-25, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.uid
+	--- END OF BLOCK #5 ---
+
+	if slot6 ~= slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-28, warpins: 1 ---
+	slot8 = #slot2
+	slot8 = slot8 + 1
+	slot2[slot8] = slot6
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-30, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 31-33, warpins: 1 ---
+	slot3 = #slot2
+	--- END OF BLOCK #8 ---
+
+	if slot3 == 0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 34-34, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #10 35-46, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.queryPlayerInfoList
+	slot6 = slot2
+	slot7 = nil
+	slot8 = true
+	slot9 = nil
+
+	slot10 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = {}
+		slot1 = ipairs
+		slot3 = uids
+		slot1, slot2, slot3 = slot1(slot3)
+		--- END OF BLOCK #0 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #1 6-12, warpins: 1 ---
+		slot6 = self
+		slot8 = slot6
+		slot6 = slot6.getPlayerInfo
+		slot9 = slot5
+		slot6 = slot6(slot8, slot9)
+		--- END OF BLOCK #1 ---
+
+		slot7 = if slot6 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 13-13, warpins: 1 ---
+		slot7 = slot6.platformUserId
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 14-19, warpins: 2 ---
+		slot8 = string
+		slot8 = slot8.isNilOrEmpty
+		slot10 = slot7
+		slot8 = slot8(slot10)
+		--- END OF BLOCK #3 ---
+
+		slot8 = if not slot8 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 20-22, warpins: 1 ---
+		slot8 = #slot0
+		slot8 = slot8 + 1
+		slot0[slot8] = slot7
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 23-24, warpins: 3 ---
+		--- END OF BLOCK #5 ---
+
+		for slot4, slot5 in slot1, slot2, slot3
+		LOOP BLOCK #1
+		GO OUT TO BLOCK #6
+
+
+		--- BLOCK #6 25-28, warpins: 1 ---
+		slot1 = #slot0
+		slot2 = 0
+		--- END OF BLOCK #6 ---
+
+		if slot1 > slot2 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 29-34, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.me
+		slot3 = slot1
+		slot1 = slot1.requestPsnBlockStates
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 35-35, warpins: 2 ---
+		return
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 47-47, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 48-48, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot3.prefetchTeamMemberPsnBlockStates = slot23
+
+slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot6 = Utils
+	slot6 = slot6.calFriendshipLevel
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	slot7 = slot1
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.uid
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-11, warpins: 1 ---
+	slot7 = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-17, warpins: 2 ---
+	slot8 = slot0.friendships
+	slot8 = slot8[slot7]
+	slot9 = slot0.friendIntimacies
+	slot9 = slot9[slot7]
+	--- END OF BLOCK #2 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-18, warpins: 1 ---
+	slot9 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-21, warpins: 2 ---
+	slot9 = slot3 - slot9
+	--- END OF BLOCK #4 ---
+
+	slot10 = if slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 22-23, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot8 >= slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 24-25, warpins: 1 ---
+	slot10 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 26-26, warpins: 1 ---
+	slot10 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 27-32, warpins: 3 ---
+	slot13 = slot0
+	slot11 = slot0.getPlayerInfo
+	slot14 = slot7
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #8 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #9 33-35, warpins: 1 ---
+	slot12 = slot11.playerName
+	--- END OF BLOCK #9 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #10 36-37, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #11 38-40, warpins: 1 ---
+	slot12 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot9 > slot12 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #12 41-50, warpins: 1 ---
+	slot12 = LuaUIUtils
+	slot12 = slot12.getPlayerDisplayName
+	slot14 = slot7
+	slot15 = slot11.playerName
+	slot16 = true
+	slot12 = slot12(slot14, slot15, slot16)
+	slot13 = ChatSystem
+	slot13 = slot13._platformHooks
+	--- END OF BLOCK #12 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 51-53, warpins: 1 ---
+	slot14 = slot13.resolveFriendshipUpdateName
+	--- END OF BLOCK #13 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 54-61, warpins: 1 ---
+	slot14 = slot13.resolveFriendshipUpdateName
+	slot16 = slot0
+	slot17 = slot7
+	slot18 = slot11
+	slot19 = slot12
+	slot14 = slot14(slot16, slot17, slot18, slot19)
+	--- END OF BLOCK #14 ---
+
+	slot12 = if not slot14 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #15 62-69, warpins: 4 ---
+	slot14 = pg
+	slot14 = slot14.getFormatText
+	slot16 = pg
+	slot16 = slot16.getGameString
+	slot18 = "FRIENDSHIIP_LEVEL_UP_TOAST"
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #15 ---
+
+	slot17 = if not slot12 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 70-70, warpins: 1 ---
+	slot17 = ""
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 71-72, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	slot18 = if not slot9 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 73-73, warpins: 1 ---
+	slot18 = 0
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 74-82, warpins: 2 ---
+	slot14 = slot14(slot16, slot17, slot18)
+	slot15 = pg
+	slot15 = slot15.global
+	slot15 = slot15.ui
+	slot15 = slot15.tips
+	slot17 = slot15
+	slot15 = slot15.showTextTip
+	slot18 = slot14
+
+	slot15(slot17, slot18)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 83-89, warpins: 5 ---
+	slot12 = slot0.friendships
+	slot12[slot7] = slot6
+	slot12 = slot0.friendIntimacies
+	slot12[slot7] = slot3
+	slot12 = slot0.friendIntimacyLimits
+	--- END OF BLOCK #20 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 90-90, warpins: 1 ---
+	slot12 = {}
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 91-94, warpins: 2 ---
+	slot0.friendIntimacyLimits = slot12
+	slot12 = slot0.friendIntimacyLimits
+	--- END OF BLOCK #22 ---
+
+	slot13 = if not slot4 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #23 95-98, warpins: 1 ---
+	slot13 = slot0.friendIntimacyLimits
+	slot13 = slot13[slot7]
+	--- END OF BLOCK #23 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 99-99, warpins: 1 ---
+	slot13 = {}
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 100-103, warpins: 3 ---
+	slot12[slot7] = slot13
+	slot12 = slot0.friendIntimacyTodayLimits
+	--- END OF BLOCK #25 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 104-104, warpins: 1 ---
+	slot12 = {}
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 105-108, warpins: 2 ---
+	slot0.friendIntimacyTodayLimits = slot12
+	slot12 = slot0.friendIntimacyTodayLimits
+	--- END OF BLOCK #27 ---
+
+	slot13 = if not slot5 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #28 109-112, warpins: 1 ---
+	slot13 = slot0.friendIntimacyTodayLimits
+	slot13 = slot13[slot7]
+	--- END OF BLOCK #28 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 113-113, warpins: 1 ---
+	slot13 = 0
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 114-125, warpins: 3 ---
+	slot12[slot7] = slot13
+	slot12 = facade
+	slot14 = slot12
+	slot12 = slot12.SendMessageCommand
+	slot15 = MessageName
+	slot15 = slot15.FRIENDSHIP_UPDATE
+	slot16 = {}
+	slot16.friendUid = slot7
+	slot16.levelUp = slot10
+	slot16.friendshipValueDelta = slot9
+
+	slot12(slot14, slot15, slot16)
+
+	return
+	--- END OF BLOCK #30 ---
+
+
+
+end
+
+slot3.onFriendshipUpdate = slot23
+
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._addFriendCDCache
 	--- END OF BLOCK #0 ---
@@ -4511,7 +6374,7 @@ slot14 = function(slot0, slot1)
 	slot4 = slot1
 	slot3 = slot3 .. slot4
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot2[slot3] = slot4
 
 	return
@@ -4521,9 +6384,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.setAddFriendCD = slot14
+slot3.setAddFriendCD = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._addFriendCDCache
 	--- END OF BLOCK #0 ---
@@ -4592,7 +6455,7 @@ slot14 = function(slot0, slot1)
 	slot3 = slot3.AddFriendCD
 	slot2 = slot2 + slot3
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	--- END OF BLOCK #4 ---
 
 	if slot2 < slot3 then
@@ -4630,9 +6493,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.checkAddFriendCD = slot14
+slot3.checkAddFriendCD = slot23
 
-slot14 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._addFriendCDCache
 	--- END OF BLOCK #0 ---
@@ -4667,7 +6530,7 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.clearAddFriendCD = slot14
+slot3.clearAddFriendCD = slot23
 
 return
 --- END OF BLOCK #0 ---

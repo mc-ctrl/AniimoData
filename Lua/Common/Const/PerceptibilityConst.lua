@@ -1,35 +1,35 @@
---- BLOCK #0 1-57, warpins: 1 ---
+--- BLOCK #0 1-60, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot1 = slot1(slot3)
 slot2 = slot1.EBTRootState
 slot3 = {
-	PET = 3,
-	PLAYER_PET = 2,
 	PLAYER = 1,
 	ITEM_ENTITY = 13,
-	PUPPET = 4
+	PUPPET = 4,
+	PET = 3,
+	PLAYER_PET = 2
 }
 slot0.ENTITY_TYPE = slot3
 slot3 = {
-	ALL_GENDER = 0,
 	DIFF_GENDER = 2,
-	SAME_GENDER = 1
+	SAME_GENDER = 1,
+	ALL_GENDER = 0
 }
 slot0.GENDER_RESPONSE = slot3
 slot3 = {
-	Free = 0,
-	WaitFailCoolDown = 3,
 	WaitCoolDown = 2,
-	Active = 1
+	Active = 1,
+	Free = 0,
+	WaitFailCoolDown = 3
 }
 slot0.SensorState = slot3
 slot3 = {
-	Other = 4,
-	EnvObj = 3,
 	Pamon = 2,
-	Player = 1
+	Player = 1,
+	Other = 4,
+	EnvObj = 3
 }
 slot0.SensorType = slot3
 slot3 = {
@@ -38,10 +38,6 @@ slot3 = {
 }
 slot0.VisionType = slot3
 slot3 = {
-	attenuationWait = "attenuationWait",
-	visionHeight = "visionHeight",
-	visionAreaSleep = "visionAreaSleep",
-	visionAreaDefault = "visionAreaDefault",
 	attenuation = "attenuation",
 	valueChange = "valueChange",
 	invisibleSwitch = "invisibleSwitch",
@@ -52,6 +48,7 @@ slot3 = {
 	playerRun = "playerRun",
 	playerIdle = "playerIdle",
 	visionType = "visionType",
+	attenuationWait = "attenuationWait",
 	ballHitAddValue = "ballHitAddValue",
 	ballNearbyAddValue = "ballNearbyAddValue",
 	valueShowEnd = "valueShowEnd",
@@ -59,15 +56,19 @@ slot3 = {
 	valueSensed = "valueSensed",
 	valueMax = "valueMax",
 	valueAlert = "valueAlert",
-	valueIdle = "valueIdle"
+	valueIdle = "valueIdle",
+	visionHeight = "visionHeight",
+	visionAreaSleep = "visionAreaSleep",
+	visionAreaDefault = "visionAreaDefault"
 }
 slot0.PropertyName = slot3
 slot3 = {
-	subPerceivedValue = 0,
-	addPerceivedValue = -1
+	addPerceivedValue = -1,
+	subPerceivedValue = 0
 }
 slot0.VisionState = slot3
 slot3 = {
+	Affinity = 15,
 	ControllingPet = 14,
 	SmokeBlock = 13,
 	BeAttached = 12,
@@ -82,8 +83,7 @@ slot3 = {
 	Invisible = 3,
 	BlockedRayCast = 2,
 	NotResponse = 1,
-	None = 0,
-	Affinity = 15
+	None = 0
 }
 slot0.VisionFilterReason = slot3
 slot3 = {
@@ -93,10 +93,10 @@ slot3 = {
 }
 slot0.SenseState = slot3
 slot3 = {
+	GM = 4,
 	Authority = 3,
 	AIPause = 2,
-	BeTrapped = 1,
-	GM = 4
+	BeTrapped = 1
 }
 slot0.PauseReason = slot3
 slot3 = {}
@@ -127,6 +127,9 @@ slot4 = slot2.ST_Root_Alert
 slot5 = true
 slot3[slot4] = slot5
 slot4 = slot2.ST_Root_Sensed
+slot5 = true
+slot3[slot4] = slot5
+slot4 = slot2.ST_Root_Follow
 slot5 = true
 slot3[slot4] = slot5
 slot0.NeedUpdatePerceptibilityOnAgentRootState = slot3

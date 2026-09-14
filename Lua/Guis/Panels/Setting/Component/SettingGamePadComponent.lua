@@ -305,7 +305,7 @@ slot7 = function(slot0)
 	--- BLOCK #13 38-42, warpins: 1 ---
 	slot1 = slot0.leftTriggerDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #13 ---
 
 	if slot1 <= slot2 then
@@ -385,7 +385,7 @@ slot7 = function(slot0)
 	--- BLOCK #19 70-74, warpins: 1 ---
 	slot1 = slot0.rightTriggerDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #19 ---
 
 	if slot1 <= slot2 then
@@ -527,7 +527,7 @@ slot7 = function(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.max
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot5 = slot0.leftTriggerDelay
 	slot4 = slot4 + slot5
 	slot5 = slot0.leftTriggerDisableTime
@@ -542,7 +542,7 @@ slot7 = function(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.max
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot5 = slot0.rightTriggerDelay
 	slot4 = slot4 + slot5
 	slot5 = slot0.rightTriggerDisableTime
@@ -568,13 +568,13 @@ slot7 = function(slot0)
 	--- BLOCK #0 1-172, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		SCREEN_RESOLUTION_AREA = 5,
-		SCREEN_MODE_AREA = 4,
 		LANGUAGE_SELECTOR_AREA = 3,
 		SUB_AREA = 2,
 		MAIN_AREA = 1,
+		SCREEN_RESOLUTION_AREA = 5,
+		SCREEN_AA_AREA = 6,
 		COMMON_SWITCH_AREA = 7,
-		SCREEN_AA_AREA = 6
+		SCREEN_MODE_AREA = 4
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

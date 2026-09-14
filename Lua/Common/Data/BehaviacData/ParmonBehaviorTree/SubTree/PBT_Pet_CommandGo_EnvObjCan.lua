@@ -7,47 +7,47 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "PetAgent",
+	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/PBT_Pet_CommandGo_EnvObjCan",
 	version = 7,
-	useForRoute = false
+	agenttype = "PetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	type = "int",
+	const = 0,
 	name = "tTargetId",
-	const = 0
+	type = "int",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	const = 0,
 	name = "tSkillId",
-	const = 0
+	type = "int",
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	const = 0,
 	name = "tTargetEnvPartId",
-	const = 0
+	type = "int",
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
-	value = "2",
-	type = "float",
+	const = 2,
 	name = "tSpeedMulti",
-	const = 2
+	type = "float",
+	value = "2"
 }
 slot4[4] = slot5
 slot5 = {
-	value = "0",
-	type = "float",
+	const = 0,
 	name = "tSkillStopDist",
-	const = 0
+	type = "float",
+	value = "0"
 }
 slot4[5] = slot5
 slot3.pars = slot4

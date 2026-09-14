@@ -905,7 +905,7 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -915,11 +915,11 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	if slot4 ~= nil then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 11-31, warpins: 1 ---
+	--- BLOCK #2 11-24, warpins: 1 ---
 	slot7 = slot0.callbackGuard
 	slot9 = slot7
 	slot7 = slot7.genNextCallbackId
@@ -954,6 +954,16 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot14 = slot8
 	slot15 = slot5
 	slot9 = slot9(slot11, slot12, slot13, slot14, slot15)
+	--- END OF BLOCK #2 ---
+
+	if slot9 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 25-32, warpins: 1 ---
 	slot10 = slot0.callbackGuard
 	slot12 = slot10
 	slot10 = slot10.addMicroServiceCallback
@@ -964,12 +974,18 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #3 32-39, warpins: 1 ---
+	--- BLOCK #4 33-33, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #5 34-41, warpins: 1 ---
 	slot7 = slot6.callService
 	slot9 = slot1
 	slot10 = slot2
@@ -979,27 +995,27 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7(slot9, slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #4 40-46, warpins: 1 ---
+	--- BLOCK #6 42-48, warpins: 1 ---
 	slot7 = LoggerManager
 	slot7 = slot7.checkLogger
 	slot9 = LoggerConst
 	slot9 = slot9.ERROR
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 47-56, warpins: 1 ---
+	--- BLOCK #7 49-58, warpins: 1 ---
 	slot7 = slot0.logger
 	slot9 = slot7
 	slot7 = slot7.error
@@ -1012,22 +1028,22 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7(slot9, slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 57-58, warpins: 2 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #8 59-60, warpins: 2 ---
+	--- END OF BLOCK #8 ---
 
 	if slot4 ~= nil then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 59-61, warpins: 1 ---
+	--- BLOCK #9 61-63, warpins: 1 ---
 	slot7 = slot4
 	slot9 = {
 		errmsg = "MsProxy not connected",
@@ -1036,14 +1052,14 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7(slot9)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 62-63, warpins: 4 ---
+	--- BLOCK #10 64-65, warpins: 4 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -1074,7 +1090,7 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	if slot6 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -1084,11 +1100,11 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	if slot4 ~= nil then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 8-27, warpins: 1 ---
+	--- BLOCK #2 8-22, warpins: 1 ---
 	slot7 = slot0.callbackGuard
 	slot9 = slot7
 	slot7 = slot7.genNextCallbackId
@@ -1124,6 +1140,16 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot15 = slot8
 	slot16 = slot5
 	slot9 = slot9(slot11, slot12, slot13, slot14, slot15, slot16)
+	--- END OF BLOCK #2 ---
+
+	if slot9 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-28, warpins: 1 ---
 	slot10 = slot0.callbackGuard
 	slot12 = slot10
 	slot10 = slot10.addClusterMsCallback
@@ -1132,12 +1158,18 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #3 28-36, warpins: 1 ---
+	--- BLOCK #4 29-29, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #5 30-38, warpins: 1 ---
 	slot9 = slot6
 	slot7 = slot6.callService
 	slot10 = slot1
@@ -1148,27 +1180,27 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7(slot9, slot10, slot11, slot12, slot13, slot14)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #4 37-43, warpins: 1 ---
+	--- BLOCK #6 39-45, warpins: 1 ---
 	slot7 = LoggerManager
 	slot7 = slot7.checkLogger
 	slot9 = LoggerConst
 	slot9 = slot9.ERROR
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 44-53, warpins: 1 ---
+	--- BLOCK #7 46-55, warpins: 1 ---
 	slot7 = slot0.logger
 	slot9 = slot7
 	slot7 = slot7.error
@@ -1181,22 +1213,22 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7(slot9, slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 54-55, warpins: 2 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #8 56-57, warpins: 2 ---
+	--- END OF BLOCK #8 ---
 
 	if slot4 ~= nil then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 56-58, warpins: 1 ---
+	--- BLOCK #9 58-60, warpins: 1 ---
 	slot7 = slot4
 	slot9 = {
 		errmsg = "globalMsProxy is nil",
@@ -1205,14 +1237,14 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7(slot9)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 59-60, warpins: 4 ---
+	--- BLOCK #10 61-62, warpins: 4 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 

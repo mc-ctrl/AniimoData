@@ -41,28 +41,28 @@ slot12 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = {}
 	slot2 = {
-		name = "ALL",
-		tIndex = 0
+		tIndex = 0,
+		name = "ALL"
 	}
 	slot1[1] = slot2
 	slot2 = {
-		name = "SYSTEM",
-		tIndex = 1
+		tIndex = 1,
+		name = "SYSTEM"
 	}
 	slot1[2] = slot2
 	slot2 = {
-		name = "NOURISH",
-		tIndex = 1
+		tIndex = 1,
+		name = "NOURISH"
 	}
 	slot1[3] = slot2
 	slot2 = {
-		name = "BATTLE",
-		tIndex = 1
+		tIndex = 1,
+		name = "BATTLE"
 	}
 	slot1[4] = slot2
 	slot2 = {
-		name = "EXPLORE",
-		tIndex = 2
+		tIndex = 2,
+		name = "EXPLORE"
 	}
 	slot1[5] = slot2
 	slot0.entryTitle = slot1
@@ -301,9 +301,9 @@ slot12 = function(slot0, slot1)
 	--- BLOCK #12 47-51, warpins: 1 ---
 	slot11 = slot8.type
 	slot12 = {
+		startIndex = 2,
 		unlockCnt = 0,
-		cnt = 0,
-		startIndex = 2
+		cnt = 0
 	}
 	slot13 = {}
 	slot12.entries = slot13
@@ -863,8 +863,8 @@ slot12 = function(slot0, slot1)
 
 	--- BLOCK #21 94-99, warpins: 1 ---
 	slot9 = {
-		tIndex = 0,
 		entryName = "RECENTLY_UNLOCKED",
+		tIndex = 0,
 		isTitle = true
 	}
 	slot17 = table
@@ -884,9 +884,9 @@ slot12 = function(slot0, slot1)
 	slot17 = slot17.insert
 	slot19 = slot8
 	slot20 = {
-		isUnlock = true,
+		tIndex = 1,
 		isRecent = true,
-		tIndex = 1
+		isUnlock = true
 	}
 	slot21 = slot15.guidenceId
 	slot20.index = slot21

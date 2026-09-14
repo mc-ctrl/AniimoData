@@ -11,7 +11,7 @@ slot5 = slot0
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-55, warpins: 1 ---
+	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -66,6 +66,12 @@ slot3 = function(slot0)
 	slot4 = "btnConfirmUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnConfirmUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtTipsWarnUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtTipsWarnUSDFText = slot1
 
 	return
 	--- END OF BLOCK #0 ---

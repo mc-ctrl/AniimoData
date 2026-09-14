@@ -1,4 +1,4 @@
---- BLOCK #0 1-228, warpins: 1 ---
+--- BLOCK #0 1-233, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -55,143 +55,146 @@ slot16 = require
 slot18 = "Data.bossrush_buff_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "GameApp.Camera.CameraConst"
+slot19 = "Data.avatar_robot_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Const.RedDotConst"
+slot20 = "GameApp.Camera.CameraConst"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Const.AddressDataConst"
+slot21 = "Const.RedDotConst"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Guis.Utils.UICardRenderUtils"
+slot22 = "Const.AddressDataConst"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Common.Utils.Utils"
+slot23 = "Guis.Utils.UICardRenderUtils"
 slot21 = slot21(slot23)
-slot22 = {}
-slot23 = slot1.BOSS_RUSH_TEAM_INFO_CHANGED
-slot24 = {
+slot22 = require
+slot24 = "Common.Utils.Utils"
+slot22 = slot22(slot24)
+slot23 = {}
+slot24 = slot1.BOSS_RUSH_TEAM_INFO_CHANGED
+slot25 = {
 	"refreshTeamInfo",
 	true
 }
-slot22[slot23] = slot24
-slot23 = slot1.BOSS_RUSH_TEAM_BUFF_CHANGED
-slot24 = {
+slot23[slot24] = slot25
+slot24 = slot1.BOSS_RUSH_TEAM_BUFF_CHANGED
+slot25 = {
 	"refreshBuffInfo",
 	true
 }
-slot22[slot23] = slot24
-slot23 = slot1.BOSS_RUSH_TEAM_LEVEL_ID_CHANGED
-slot24 = {
+slot23[slot24] = slot25
+slot24 = slot1.BOSS_RUSH_TEAM_LEVEL_ID_CHANGED
+slot25 = {
 	"refreshOpenLevelMatch",
 	true
 }
-slot22[slot23] = slot24
-slot4.messages = slot22
-slot22 = {
+slot23[slot24] = slot25
+slot4.messages = slot23
+slot23 = {
 	path = "Raw/GamepadLeftStickPress"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_LUCKY_IMO"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.luckyPetConsoleData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_LUCKY_IMO"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.luckyPetConsoleData = slot23
+slot23 = {
 	path = "Raw/GamepadStart"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_PLAYMODE_INFO"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.infoConsoleData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_PLAYMODE_INFO"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.infoConsoleData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonWest"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_BUFF_DETAILS"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.buffDefailData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_BUFF_DETAILS"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.buffDefailData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonSouth"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_VIEW"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.checkData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_VIEW"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.checkData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonEast"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_LEAVE"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.exitData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_LEAVE"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.exitData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonSouth"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_VIEW_IMO"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.viewPetData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_VIEW_IMO"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.viewPetData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonSouth"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_MODIFY_IMO"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.changePetData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_MODIFY_IMO"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.changePetData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonSouth"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_VIEW_BUFF"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.viewBuffData = slot22
-slot22 = {
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_VIEW_BUFF"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.viewBuffData = slot23
+slot23 = {
 	path = "Raw/GamepadButtonSouth"
 }
-slot23 = pg
-slot23 = slot23.getGameString
-slot25 = "CONSOLE_BAR_MODIFY_BUFF"
-slot23 = slot23(slot25)
-slot22.label = slot23
-slot4.changeBuffData = slot22
-slot22 = {}
-slot23 = slot4.luckyPetConsoleData
-slot22[1] = slot23
-slot23 = slot4.infoConsoleData
-slot22[2] = slot23
-slot23 = slot4.buffDefailData
-slot22[3] = slot23
-slot23 = slot4.checkData
-slot22[4] = slot23
-slot23 = slot4.viewPetData
-slot22[5] = slot23
-slot23 = slot4.changePetData
-slot22[6] = slot23
-slot23 = slot4.viewBuffData
-slot22[7] = slot23
-slot23 = slot4.changeBuffData
-slot22[8] = slot23
-slot23 = slot4.exitData
-slot22[9] = slot23
-slot4.orders = slot22
+slot24 = pg
+slot24 = slot24.getGameString
+slot26 = "CONSOLE_BAR_MODIFY_BUFF"
+slot24 = slot24(slot26)
+slot23.label = slot24
+slot4.changeBuffData = slot23
+slot23 = {}
+slot24 = slot4.luckyPetConsoleData
+slot23[1] = slot24
+slot24 = slot4.infoConsoleData
+slot23[2] = slot24
+slot24 = slot4.buffDefailData
+slot23[3] = slot24
+slot24 = slot4.checkData
+slot23[4] = slot24
+slot24 = slot4.viewPetData
+slot23[5] = slot24
+slot24 = slot4.changePetData
+slot23[6] = slot24
+slot24 = slot4.viewBuffData
+slot23[7] = slot24
+slot24 = slot4.changeBuffData
+slot23[8] = slot24
+slot24 = slot4.exitData
+slot23[9] = slot24
+slot4.orders = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = {}
 	--- END OF BLOCK #0 ---
@@ -338,9 +341,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.generateConsoleData = slot22
+slot4.generateConsoleData = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -506,7 +509,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 69-74, warpins: 1 ---
+	--- BLOCK #14 69-78, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -515,12 +518,18 @@ slot22 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = BossRushUtils
+	slot2 = slot2.checkSelfPetAvailable
+	slot4 = slot0.levelId
+
+	slot2(slot4)
+
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 75-77, warpins: 2 ---
+	--- BLOCK #15 79-81, warpins: 2 ---
 	slot2 = slot0.isShow
 	--- END OF BLOCK #15 ---
 
@@ -531,7 +540,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 78-84, warpins: 1 ---
+	--- BLOCK #16 82-88, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -546,7 +555,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 85-90, warpins: 1 ---
+	--- BLOCK #17 89-94, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -557,21 +566,21 @@ slot22 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #18 91-92, warpins: 1 ---
+	--- BLOCK #18 95-96, warpins: 1 ---
 	slot2 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 93-93, warpins: 0 ---
+	--- BLOCK #19 97-97, warpins: 0 ---
 	slot2 = true
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 94-103, warpins: 4 ---
+	--- BLOCK #20 98-107, warpins: 4 ---
 	slot0.needNotifyCancelOpen = slot2
 	slot2 = nil
 	slot0.tempOpenLevelId = slot2
@@ -589,7 +598,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #21 104-106, warpins: 1 ---
+	--- BLOCK #21 108-110, warpins: 1 ---
 	slot2 = slot1.isFromServer
 	--- END OF BLOCK #21 ---
 
@@ -600,7 +609,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #22 107-108, warpins: 2 ---
+	--- BLOCK #22 111-112, warpins: 2 ---
 	slot2 = slot0.levelId
 	slot0.tempOpenLevelId = slot2
 	--- END OF BLOCK #22 ---
@@ -608,7 +617,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 109-111, warpins: 2 ---
+	--- BLOCK #23 113-115, warpins: 2 ---
 	slot2 = slot0.target
 	--- END OF BLOCK #23 ---
 
@@ -619,7 +628,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #24 112-114, warpins: 1 ---
+	--- BLOCK #24 116-118, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getShowTarget
 	slot2 = slot2(slot4)
@@ -628,7 +637,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 115-135, warpins: 2 ---
+	--- BLOCK #25 119-139, warpins: 2 ---
 	slot0.showTarget = slot2
 	slot4 = slot0
 	slot2 = slot0.initUI
@@ -662,9 +671,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot22
+slot4.onCreate = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -673,9 +682,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.onGamePadFocusChange = slot22
+slot4.onGamePadFocusChange = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -983,8 +992,8 @@ slot22 = function(slot0)
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_BOSS_RUSH_BUFF_SELECT
 		slot4 = {
-			isShow = false,
-			tab = 0
+			tab = 0,
+			isShow = false
 		}
 
 		slot0(slot2, slot3, slot4)
@@ -1445,9 +1454,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.addListener = slot22
+slot4.addListener = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1473,50 +1482,39 @@ slot22 = function(slot0)
 	slot2 = slot1[1]
 	--- END OF BLOCK #2 ---
 
-	if slot2 ~= nil then
+	if slot2 == nil then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-13, warpins: 1 ---
-	slot2 = slot1[2]
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #3 ---
 
-	if slot2 == nil then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 14-15, warpins: 2 ---
-	slot2 = false
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 16-16, warpins: 1 ---
+	--- BLOCK #4 13-13, warpins: 1 ---
 	slot2 = true
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 17-17, warpins: 2 ---
+	--- BLOCK #5 14-14, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot4.checkSelectBuff = slot22
+slot4.checkSelectBuff = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -1578,9 +1576,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.checkSelectTank = slot22
+slot4.checkSelectTank = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -1690,101 +1688,22 @@ slot22 = function(slot0)
 
 end
 
-slot4.checkSelectPet = slot22
+slot4.checkSelectPet = slot23
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.target
-	slot2 = Const
-	slot2 = slot2.BossRushTeleportTarget
-	slot2 = slot2.BossMid
+slot23 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = true
+
+	return slot1
 	--- END OF BLOCK #0 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #1 7-14, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.levelState
-	slot2 = slot0.levelIds
-	slot2 = slot2[1]
-	slot1 = slot1[slot2]
-	--- END OF BLOCK #1 ---
-
-	if slot1 == 1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 15-22, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.levelState
-	slot2 = slot0.levelIds
-	slot2 = slot2[3]
-	slot1 = slot1[slot2]
-	--- END OF BLOCK #2 ---
-
-	if slot1 == 1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 23-24, warpins: 1 ---
-	slot1 = true
-
-	return slot1
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 25-37, warpins: 3 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.showTextTip
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "BOSS_RUSH_CHALLENGE_MID_LOCKED"
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
-	slot1 = false
-
-	return slot1
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 38-39, warpins: 2 ---
-	slot1 = true
-
-	return slot1
-	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot4.checkCanChallenge = slot22
+slot4.checkCanChallenge = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshPageInfoType
@@ -1840,9 +1759,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.initUI = slot22
+slot4.initUI = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = BossRushLevelData
 	slot2 = slot0.levelId
@@ -1909,9 +1828,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.onLevelIdUpdate = slot22
+slot4.onLevelIdUpdate = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.levelData
 
@@ -1941,34 +1860,19 @@ slot22 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-16, warpins: 1 ---
+	--- BLOCK #3 10-11, warpins: 1 ---
 	slot1 = 2
 	slot0.type = slot1
-	slot3 = slot0
-	slot1 = slot0.checkHasRecord
-	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-18, warpins: 1 ---
-	slot1 = 1
-	slot0.type = slot1
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 19-38, warpins: 3 ---
+	--- BLOCK #4 12-31, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
 	slot3 = slot1
@@ -1995,15 +1899,15 @@ slot22 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot4.refreshPageInfoType = slot22
+slot4.refreshPageInfoType = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isOpen
 	--- END OF BLOCK #0 ---
@@ -2071,9 +1975,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.checkHasRecord = slot22
+slot4.checkHasRecord = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.levelData
 
@@ -2094,261 +1998,96 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-7, warpins: 2 ---
-	slot1 = slot0.type
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot1 = 0
+	slot2 = 0
+	slot3 = slot0.isOpen
 	--- END OF BLOCK #2 ---
 
-	if slot1 == 0 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 8-12, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.bossScore
+	--- BLOCK #3 10-17, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.curBossRushCycBossBestScores
+	slot4 = slot0.levelData
+	slot4 = slot4.bossId
+	slot3 = slot3[slot4]
 	--- END OF BLOCK #3 ---
 
-	slot1 = if not slot1 then
+	slot1 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 13-13, warpins: 1 ---
-	slot1 = {}
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot1 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-25, warpins: 2 ---
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.scoreUBaseText
-	slot5 = ClientTextUtils
-	slot5 = slot5.concatByLanguage
-	slot7 = ""
-	slot8 = slot0.levelData
-	slot8 = slot8.bossId
-	slot8 = slot1[slot8]
+	--- BLOCK #5 19-26, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.curBossRushCycBossBestGrades
+	slot4 = slot0.levelData
+	slot4 = slot4.bossId
+	slot3 = slot3[slot4]
 	--- END OF BLOCK #5 ---
 
-	slot8 = if not slot8 then
+	slot2 = if not slot3 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 26-26, warpins: 1 ---
-	slot8 = 0
+	--- BLOCK #6 27-27, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-33, warpins: 2 ---
-	MULTRES = slot5(slot7, slot8)
+	--- BLOCK #7 28-44, warpins: 3 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.scoreUBaseText
+	slot6 = ClientTextUtils
+	slot6 = slot6.concatByLanguage
+	slot8 = ""
+	slot9 = slot1
+	MULTRES = slot6(slot8, slot9)
 
-	slot2(slot4, MULTRES)
+	slot3(slot5, MULTRES)
 
-	slot2 = pg
-	slot2 = slot2.space
-	slot2 = slot2.bossGrade
-	--- END OF BLOCK #7 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 34-34, warpins: 1 ---
-	slot2 = {}
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 35-43, warpins: 2 ---
 	slot3 = ClientTextUtils
 	slot3 = slot3.setText
 	slot5 = slot0.view
 	slot5 = slot5.starUBaseText
-	slot6 = slot0.levelData
-	slot6 = slot6.bossId
-	slot6 = slot2[slot6]
-	--- END OF BLOCK #9 ---
+	slot6 = slot2
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 44-44, warpins: 1 ---
-	slot6 = 0
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 45-46, warpins: 2 ---
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #12 47-49, warpins: 1 ---
-	slot1 = slot0.type
-	--- END OF BLOCK #12 ---
-
-	if slot1 ~= 1 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 50-52, warpins: 1 ---
-	slot1 = slot0.type
-	--- END OF BLOCK #13 ---
-
-	if slot1 == 2 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #14 53-55, warpins: 2 ---
-	slot1 = slot0.isOpen
-	--- END OF BLOCK #14 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #15 56-70, warpins: 1 ---
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.scoreUBaseText
-	slot4 = ClientTextUtils
-	slot4 = slot4.concatByLanguage
-	slot6 = ""
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.curBossRushCycBossBestScores
-	slot8 = slot0.levelData
-	slot8 = slot8.bossId
-	slot7 = slot7[slot8]
-	--- END OF BLOCK #15 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 71-71, warpins: 1 ---
-	slot7 = 0
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 72-85, warpins: 2 ---
-	MULTRES = slot4(slot6, slot7)
-
-	slot1(slot3, MULTRES)
-
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.starUBaseText
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.curBossRushCycBossBestGrades
-	slot5 = slot0.levelData
-	slot5 = slot5.bossId
-	slot4 = slot4[slot5]
-	--- END OF BLOCK #17 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 86-86, warpins: 1 ---
-	slot4 = 0
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 87-88, warpins: 2 ---
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #19 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #20 89-104, warpins: 1 ---
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.scoreUBaseText
-	slot4 = ClientTextUtils
-	slot4 = slot4.concatByLanguage
-	slot6 = ""
-	slot7 = 0
-	MULTRES = slot4(slot6, slot7)
-
-	slot1(slot3, MULTRES)
-
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.starUBaseText
-	slot4 = 0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 105-105, warpins: 4 ---
 	return
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot4.renderRankData = slot22
+slot4.renderRankData = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.levelData
 	--- END OF BLOCK #0 ---
@@ -2374,7 +2113,7 @@ slot22 = function(slot0)
 	--- BLOCK #2 7-7, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	UNCONDITIONAL JUMP; TARGET BLOCK #44
 
 
 	--- BLOCK #3 8-12, warpins: 1 ---
@@ -2393,7 +2132,7 @@ slot22 = function(slot0)
 	--- BLOCK #4 13-13, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
 
 
 	--- BLOCK #5 14-22, warpins: 1 ---
@@ -2528,7 +2267,28 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 74-82, warpins: 2 ---
+	--- BLOCK #15 74-78, warpins: 2 ---
+	slot6 = slot0.view
+	slot6 = slot6.playIconUImage
+	slot7 = slot5.buffIcon
+	--- END OF BLOCK #15 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 79-79, warpins: 1 ---
+	slot7 = ""
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 80-89, warpins: 2 ---
+	slot6.url = slot7
 	slot6 = ClientTextUtils
 	slot6 = slot6.setText
 	slot8 = slot0.view
@@ -2536,34 +2296,6 @@ slot22 = function(slot0)
 	slot9 = pg
 	slot9 = slot9.getLocalizationText
 	slot11 = slot5.buffName
-	--- END OF BLOCK #15 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 83-83, warpins: 1 ---
-	slot11 = ""
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 84-94, warpins: 2 ---
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.view
-	slot8 = slot8.playDetailUBaseText
-	slot9 = pg
-	slot9 = slot9.getLocalizationText
-	slot11 = slot5.descShort
 	--- END OF BLOCK #17 ---
 
 	slot11 = if not slot11 then
@@ -2573,14 +2305,43 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #18 95-95, warpins: 1 ---
+	--- BLOCK #18 90-90, warpins: 1 ---
 	slot11 = ""
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 96-107, warpins: 2 ---
+	--- BLOCK #19 91-102, warpins: 2 ---
+	MULTRES = slot9(slot11)
+
+	slot6(slot8, MULTRES)
+
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot0.view
+	slot8 = slot8.playDetailUScrollRect
+	slot8 = slot8.content
+	slot9 = pg
+	slot9 = slot9.getLocalizationText
+	slot11 = slot5.descShort
+	--- END OF BLOCK #19 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 103-103, warpins: 1 ---
+	slot11 = ""
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 104-115, warpins: 2 ---
 	MULTRES = slot9(slot11)
 
 	slot6(slot8, MULTRES)
@@ -2593,25 +2354,6 @@ slot22 = function(slot0)
 	slot10 = {}
 	slot9.tags = slot10
 	slot10 = slot5.buffName
-	--- END OF BLOCK #19 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 108-108, warpins: 1 ---
-	slot10 = ""
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 109-112, warpins: 2 ---
-	slot9.skillName = slot10
-	slot10 = slot5.desc
 	--- END OF BLOCK #21 ---
 
 	slot10 = if not slot10 then
@@ -2621,40 +2363,96 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #22 113-113, warpins: 1 ---
+	--- BLOCK #22 116-116, warpins: 1 ---
 	slot10 = ""
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 114-122, warpins: 2 ---
-	slot9.skillDesc = slot10
-	slot10 = AddressDataConst
-	slot10 = slot10.BOSS_RUSH_BOSS_INFO_ICON
-	slot9.skillIcon = slot10
-
-	slot6(slot8, slot9)
-
-	slot6 = BossRushBuffData
-	slot6 = slot6[slot4]
+	--- BLOCK #23 117-120, warpins: 2 ---
+	slot9.skillName = slot10
+	slot10 = slot5.desc
 	--- END OF BLOCK #23 ---
 
-	slot6 = if not slot6 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 123-123, warpins: 1 ---
-	slot6 = {}
+	--- BLOCK #24 121-121, warpins: 1 ---
+	slot10 = ""
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 124-132, warpins: 2 ---
+	--- BLOCK #25 122-125, warpins: 2 ---
+	slot9.skillDesc = slot10
+	slot10 = slot5.buffIcon
+	--- END OF BLOCK #25 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 126-126, warpins: 1 ---
+	slot10 = ""
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 127-132, warpins: 2 ---
+	slot9.skillIcon = slot10
+
+	slot6(slot8, slot9)
+
+	slot6 = BossRushBuffData
+	slot6 = slot6[slot4]
+	--- END OF BLOCK #27 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 133-133, warpins: 1 ---
+	slot6 = {}
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 134-138, warpins: 2 ---
+	slot7 = slot0.view
+	slot7 = slot7.envIconUImage
+	slot8 = slot6.buffIcon
+	--- END OF BLOCK #29 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #30 139-139, warpins: 1 ---
+	slot8 = ""
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 140-149, warpins: 2 ---
+	slot7.url = slot8
 	slot7 = ClientTextUtils
 	slot7 = slot7.setText
 	slot9 = slot0.view
@@ -2662,23 +2460,23 @@ slot22 = function(slot0)
 	slot10 = pg
 	slot10 = slot10.getLocalizationText
 	slot12 = slot6.buffName
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #31 ---
 
 	slot12 = if not slot12 then
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #26 133-133, warpins: 1 ---
+	--- BLOCK #32 150-150, warpins: 1 ---
 	slot12 = ""
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #27 134-144, warpins: 2 ---
+	--- BLOCK #33 151-162, warpins: 2 ---
 	MULTRES = slot10(slot12)
 
 	slot7(slot9, MULTRES)
@@ -2686,27 +2484,28 @@ slot22 = function(slot0)
 	slot7 = ClientTextUtils
 	slot7 = slot7.setText
 	slot9 = slot0.view
-	slot9 = slot9.envDetailUBaseText
+	slot9 = slot9.envDetailUScrollRect
+	slot9 = slot9.content
 	slot10 = pg
 	slot10 = slot10.getLocalizationText
 	slot12 = slot6.descShort
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #33 ---
 
 	slot12 = if not slot12 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #34
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #28 145-145, warpins: 1 ---
+	--- BLOCK #34 163-163, warpins: 1 ---
 	slot12 = ""
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #34 ---
 
-	FLOW; TARGET BLOCK #29
+	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #29 146-157, warpins: 2 ---
+	--- BLOCK #35 164-175, warpins: 2 ---
 	MULTRES = slot10(slot12)
 
 	slot7(slot9, MULTRES)
@@ -2719,67 +2518,83 @@ slot22 = function(slot0)
 	slot11 = {}
 	slot10.tags = slot11
 	slot11 = slot6.buffName
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #35 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #36
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #30 158-158, warpins: 1 ---
+	--- BLOCK #36 176-176, warpins: 1 ---
 	slot11 = ""
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #31 159-162, warpins: 2 ---
+	--- BLOCK #37 177-180, warpins: 2 ---
 	slot10.skillName = slot11
 	slot11 = slot6.desc
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #37 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #32 163-163, warpins: 1 ---
+	--- BLOCK #38 181-181, warpins: 1 ---
 	slot11 = ""
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #33 164-171, warpins: 2 ---
+	--- BLOCK #39 182-185, warpins: 2 ---
 	slot10.skillDesc = slot11
-	slot11 = AddressDataConst
-	slot11 = slot11.BOSS_RUSH_ENV_INFO_ICON
+	slot11 = slot6.buffIcon
+	--- END OF BLOCK #39 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 186-186, warpins: 1 ---
+	slot11 = ""
+	--- END OF BLOCK #40 ---
+
+	FLOW; TARGET BLOCK #41
+
+
+	--- BLOCK #41 187-191, warpins: 2 ---
 	slot10.skillIcon = slot11
 
 	slot7(slot9, slot10)
 
 	slot7 = slot1.elementRecmmend
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #41 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #34 172-172, warpins: 1 ---
+	--- BLOCK #42 192-192, warpins: 1 ---
 	slot7 = {}
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #42 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #35 173-197, warpins: 2 ---
+	--- BLOCK #43 193-217, warpins: 2 ---
 	slot8 = LuaUIUtils
 	slot8 = slot8.renderPetElement
 	slot10 = slot0.view
@@ -2873,29 +2688,29 @@ slot22 = function(slot0)
 	slot9.luaRenderTooltip = slot10
 
 	return
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #43 ---
 
-	FLOW; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #36 198-198, warpins: 2 ---
+	--- BLOCK #44 218-218, warpins: 2 ---
 	return
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #37
+	FLOW; TARGET BLOCK #45
 
 
-	--- BLOCK #37 199-199, warpins: 2 ---
+	--- BLOCK #45 219-219, warpins: 2 ---
 	return
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #45 ---
 
 
 
 end
 
-slot4.renderBossInfo = slot22
+slot4.renderBossInfo = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.levelData
 	--- END OF BLOCK #0 ---
@@ -3186,9 +3001,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.refreshBossBaseInfo = slot22
+slot4.refreshBossBaseInfo = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = false
 	slot0.selectTankExpand = slot1
@@ -3210,7 +3025,7 @@ slot22 = function(slot0)
 		--- BLOCK #1 4-4, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #26
+		UNCONDITIONAL JUMP; TARGET BLOCK #38
 
 
 		--- BLOCK #2 5-39, warpins: 1 ---
@@ -3357,66 +3172,125 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #13
 
 
-		--- BLOCK #13 72-81, warpins: 3 ---
+		--- BLOCK #13 72-75, warpins: 3 ---
 		slot8(slot10, slot11, slot12)
 
-		slot8 = pg
-		slot8 = slot8.game
-		slot8 = slot8.chat
-		slot10 = slot8
-		slot8 = slot8.getPlayerInfo
-		slot11 = slot2.uid
-		slot8 = slot8(slot10, slot11)
+		slot8 = slot2.entId
 		--- END OF BLOCK #13 ---
 
 		slot8 = if slot8 then
 		JUMP TO BLOCK #14
 		else
-		JUMP TO BLOCK #18
+		JUMP TO BLOCK #15
 		end
 
 
-		--- BLOCK #14 82-86, warpins: 1 ---
-		slot9 = slot8.playerName
-		slot10 = BossRushChallengeCtrl
-		slot10 = slot10._platformHooks
+		--- BLOCK #14 76-79, warpins: 1 ---
+		slot8 = pg
+		slot8 = slot8.getEntity
+		slot10 = slot2.entId
+		slot8 = slot8(slot10)
 		--- END OF BLOCK #14 ---
 
-		slot10 = if slot10 then
-		JUMP TO BLOCK #15
-		else
-		JUMP TO BLOCK #17
-		end
+		FLOW; TARGET BLOCK #15
 
 
-		--- BLOCK #15 87-89, warpins: 1 ---
-		slot11 = slot10.getMaskedPlayerDisplayName
+		--- BLOCK #15 80-81, warpins: 2 ---
 		--- END OF BLOCK #15 ---
 
-		slot11 = if slot11 then
+		slot8 = if slot8 then
 		JUMP TO BLOCK #16
 		else
-		JUMP TO BLOCK #17
+		JUMP TO BLOCK #24
 		end
 
 
-		--- BLOCK #16 90-97, warpins: 1 ---
-		slot11 = slot10.getMaskedPlayerDisplayName
-		slot13 = self
-		slot14 = slot2.uid
-		slot15 = slot8
-		slot16 = slot9
-		slot11 = slot11(slot13, slot14, slot15, slot16)
+		--- BLOCK #16 82-85, warpins: 1 ---
+		slot9 = slot8.playerName
+		slot10 = slot2.isAi
 		--- END OF BLOCK #16 ---
 
-		slot9 = if not slot11 then
+		slot10 = if slot10 then
 		JUMP TO BLOCK #17
 		else
-		JUMP TO BLOCK #17
+		JUMP TO BLOCK #20
 		end
 
 
-		--- BLOCK #17 98-103, warpins: 4 ---
+		--- BLOCK #17 86-90, warpins: 1 ---
+		slot10 = AvatarRobotData
+		slot11 = slot8.botTemplateId
+		slot10 = slot10[slot11]
+		--- END OF BLOCK #17 ---
+
+		slot10 = if slot10 then
+		JUMP TO BLOCK #18
+		else
+		JUMP TO BLOCK #20
+		end
+
+
+		--- BLOCK #18 91-93, warpins: 1 ---
+		slot11 = slot10.name
+		--- END OF BLOCK #18 ---
+
+		slot11 = if slot11 then
+		JUMP TO BLOCK #19
+		else
+		JUMP TO BLOCK #20
+		end
+
+
+		--- BLOCK #19 94-98, warpins: 1 ---
+		slot11 = pg
+		slot11 = slot11.getLocalizationText
+		slot13 = slot10.name
+		slot11 = slot11(slot13)
+		slot9 = slot11
+		--- END OF BLOCK #19 ---
+
+		FLOW; TARGET BLOCK #20
+
+
+		--- BLOCK #20 99-102, warpins: 4 ---
+		slot10 = BossRushChallengeCtrl
+		slot10 = slot10._platformHooks
+		--- END OF BLOCK #20 ---
+
+		slot10 = if slot10 then
+		JUMP TO BLOCK #21
+		else
+		JUMP TO BLOCK #23
+		end
+
+
+		--- BLOCK #21 103-105, warpins: 1 ---
+		slot11 = slot10.getMaskedEntDisplayName
+		--- END OF BLOCK #21 ---
+
+		slot11 = if slot11 then
+		JUMP TO BLOCK #22
+		else
+		JUMP TO BLOCK #23
+		end
+
+
+		--- BLOCK #22 106-112, warpins: 1 ---
+		slot11 = slot10.getMaskedEntDisplayName
+		slot13 = self
+		slot14 = slot8
+		slot15 = slot9
+		slot11 = slot11(slot13, slot14, slot15)
+		--- END OF BLOCK #22 ---
+
+		slot9 = if not slot11 then
+		JUMP TO BLOCK #23
+		else
+		JUMP TO BLOCK #23
+		end
+
+
+		--- BLOCK #23 113-118, warpins: 4 ---
 		slot11 = ClientTextUtils
 		slot11 = slot11.setText
 		slot13 = slot4
@@ -3424,21 +3298,91 @@ slot22 = function(slot0)
 
 		slot11(slot13, slot14)
 
-		--- END OF BLOCK #17 ---
+		--- END OF BLOCK #23 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #19
+		UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-		--- BLOCK #18 104-112, warpins: 1 ---
+		--- BLOCK #24 119-127, warpins: 1 ---
 		slot9 = pg
 		slot9 = slot9.game
 		slot9 = slot9.chat
 		slot11 = slot9
-		slot9 = slot9.getPlayerInfoFromServer
+		slot9 = slot9.getPlayerInfo
 		slot12 = slot2.uid
-		slot13 = nil
+		slot9 = slot9(slot11, slot12)
+		--- END OF BLOCK #24 ---
 
-		slot14 = function()
+		slot9 = if slot9 then
+		JUMP TO BLOCK #25
+		else
+		JUMP TO BLOCK #29
+		end
+
+
+		--- BLOCK #25 128-132, warpins: 1 ---
+		slot10 = slot9.playerName
+		slot11 = BossRushChallengeCtrl
+		slot11 = slot11._platformHooks
+		--- END OF BLOCK #25 ---
+
+		slot11 = if slot11 then
+		JUMP TO BLOCK #26
+		else
+		JUMP TO BLOCK #28
+		end
+
+
+		--- BLOCK #26 133-135, warpins: 1 ---
+		slot12 = slot11.getMaskedPlayerDisplayName
+		--- END OF BLOCK #26 ---
+
+		slot12 = if slot12 then
+		JUMP TO BLOCK #27
+		else
+		JUMP TO BLOCK #28
+		end
+
+
+		--- BLOCK #27 136-143, warpins: 1 ---
+		slot12 = slot11.getMaskedPlayerDisplayName
+		slot14 = self
+		slot15 = slot2.uid
+		slot16 = slot9
+		slot17 = slot10
+		slot12 = slot12(slot14, slot15, slot16, slot17)
+		--- END OF BLOCK #27 ---
+
+		slot10 = if not slot12 then
+		JUMP TO BLOCK #28
+		else
+		JUMP TO BLOCK #28
+		end
+
+
+		--- BLOCK #28 144-149, warpins: 4 ---
+		slot12 = ClientTextUtils
+		slot12 = slot12.setText
+		slot14 = slot4
+		slot15 = slot10
+
+		slot12(slot14, slot15)
+
+		--- END OF BLOCK #28 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #30
+
+
+		--- BLOCK #29 150-158, warpins: 1 ---
+		slot10 = pg
+		slot10 = slot10.game
+		slot10 = slot10.chat
+		slot12 = slot10
+		slot10 = slot10.getPlayerInfoFromServer
+		slot13 = slot2.uid
+		slot14 = nil
+
+		slot15 = function()
 			--- BLOCK #0 1-12, warpins: 1 ---
 			slot0 = pg
 			slot0 = slot0.game
@@ -3522,68 +3466,74 @@ slot22 = function(slot0)
 
 		end
 
-		slot9(slot11, slot12, slot13, slot14)
+		slot10(slot12, slot13, slot14, slot15)
 
-		--- END OF BLOCK #18 ---
+		--- END OF BLOCK #29 ---
 
-		FLOW; TARGET BLOCK #19
+		FLOW; TARGET BLOCK #30
 
 
-		--- BLOCK #19 113-118, warpins: 2 ---
+		--- BLOCK #30 159-159, warpins: 2 ---
+		--- END OF BLOCK #30 ---
+
+		FLOW; TARGET BLOCK #31
+
+
+		--- BLOCK #31 160-165, warpins: 2 ---
 		slot11 = slot5
 		slot9 = slot5.TryChangePage
 		slot12 = "Empty"
 		slot13 = slot2.empty
-		--- END OF BLOCK #19 ---
+		--- END OF BLOCK #31 ---
 
 		slot13 = if slot13 then
-		JUMP TO BLOCK #20
+		JUMP TO BLOCK #32
 		else
-		JUMP TO BLOCK #21
+		JUMP TO BLOCK #33
 		end
 
 
-		--- BLOCK #20 119-120, warpins: 1 ---
+		--- BLOCK #32 166-167, warpins: 1 ---
 		slot13 = 1
-		--- END OF BLOCK #20 ---
+		--- END OF BLOCK #32 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #22
+		UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-		--- BLOCK #21 121-121, warpins: 1 ---
+		--- BLOCK #33 168-168, warpins: 1 ---
 		slot13 = 0
 
-		--- END OF BLOCK #21 ---
+		--- END OF BLOCK #33 ---
 
-		FLOW; TARGET BLOCK #22
+		FLOW; TARGET BLOCK #34
 
 
-		--- BLOCK #22 122-125, warpins: 2 ---
+		--- BLOCK #34 169-172, warpins: 2 ---
 		slot9(slot11, slot12, slot13)
 
 		slot9 = slot2.empty
-		--- END OF BLOCK #22 ---
+		--- END OF BLOCK #34 ---
 
 		slot9 = if not slot9 then
-		JUMP TO BLOCK #23
+		JUMP TO BLOCK #35
 		else
-		JUMP TO BLOCK #25
+		JUMP TO BLOCK #37
 		end
 
 
-		--- BLOCK #23 126-129, warpins: 1 ---
+		--- BLOCK #35 173-176, warpins: 1 ---
 		slot9 = slot2.petInfo
 		slot9 = slot9.templateId
-		--- END OF BLOCK #23 ---
+		--- END OF BLOCK #35 ---
 
 		slot9 = if slot9 then
-		JUMP TO BLOCK #24
+		JUMP TO BLOCK #36
 		else
-		JUMP TO BLOCK #25
+		JUMP TO BLOCK #37
 		end
 
 
-		--- BLOCK #24 130-142, warpins: 1 ---
+		--- BLOCK #36 177-189, warpins: 1 ---
 		slot9 = LuaUIUtils
 		slot9 = slot9.getPetIcon
 		slot11 = PetData
@@ -3597,12 +3547,12 @@ slot22 = function(slot0)
 		slot13 = slot13.label
 		slot9 = slot9(slot11, slot12, slot13)
 		slot6.url = slot9
-		--- END OF BLOCK #24 ---
+		--- END OF BLOCK #36 ---
 
-		FLOW; TARGET BLOCK #25
+		FLOW; TARGET BLOCK #37
 
 
-		--- BLOCK #25 143-149, warpins: 3 ---
+		--- BLOCK #37 190-196, warpins: 3 ---
 		slot9 = slot2.empty
 		slot9 = not slot9
 		slot0.enabledTooltip = slot9
@@ -3686,14 +3636,14 @@ slot22 = function(slot0)
 		slot0.luaRenderTooltip = slot9
 
 		return
-		--- END OF BLOCK #25 ---
+		--- END OF BLOCK #37 ---
 
-		FLOW; TARGET BLOCK #26
+		FLOW; TARGET BLOCK #38
 
 
-		--- BLOCK #26 150-150, warpins: 2 ---
+		--- BLOCK #38 197-197, warpins: 2 ---
 		return
-		--- END OF BLOCK #26 ---
+		--- END OF BLOCK #38 ---
 
 
 
@@ -3739,29 +3689,30 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #3 12-24, warpins: 1 ---
+		--- BLOCK #3 12-25, warpins: 1 ---
 		slot2 = pg
 		slot2 = slot2.global
 		slot2 = slot2.ui
+		slot2 = slot2.petManagement
 		slot4 = slot2
 		slot2 = slot2.open
-		slot5 = UIConst
-		slot5 = slot5.UI_ID_PET_MANAGEMENT
-		slot6 = {
+		slot5 = {
 			isBossRush = true
 		}
-		slot7 = self
-		slot7 = slot7.levelId
-		slot6.levelId = slot7
+		slot6 = self
+		slot6 = slot6.levelId
+		slot5.levelId = slot6
+		slot6, slot7, slot8, slot9 = nil
+		slot10 = true
 
-		slot2(slot4, slot5, slot6)
+		slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
 
 		--- END OF BLOCK #3 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #4 25-27, warpins: 1 ---
+		--- BLOCK #4 26-28, warpins: 1 ---
 		slot2 = slot0.enabledTooltip
 		--- END OF BLOCK #4 ---
 
@@ -3772,7 +3723,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #5 28-30, warpins: 1 ---
+		--- BLOCK #5 29-31, warpins: 1 ---
 		slot4 = slot0
 		slot2 = slot0.OpenTooltip
 
@@ -3783,7 +3734,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 31-31, warpins: 3 ---
+		--- BLOCK #6 32-32, warpins: 3 ---
 		return
 		--- END OF BLOCK #6 ---
 
@@ -4069,9 +4020,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.initTeamInfo = slot22
+slot4.initTeamInfo = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.type
 	--- END OF BLOCK #0 ---
@@ -4124,9 +4075,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.refreshTeamInfo = slot22
+slot4.refreshTeamInfo = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.levelData
 	--- END OF BLOCK #0 ---
@@ -4304,9 +4255,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.refreshHistoryChallengeRecord = slot22
+slot4.refreshHistoryChallengeRecord = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -4441,620 +4392,863 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 61-80, warpins: 2 ---
-	slot1 = slot0.view
-	slot1 = slot1.readyUWidget
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isInTeam
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
-	slot1 = {}
-	slot2 = {}
-	slot3 = 0
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isInTeam
-	slot4 = slot4(slot6)
+	--- BLOCK #10 61-65, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot1 = slot1.playerBotUidList
 	--- END OF BLOCK #10 ---
 
-	slot4 = if slot4 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 81-89, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.getCurTeamInfo
-	slot4 = slot4(slot6)
-	slot5 = ipairs
-	slot7 = slot4.sortList
-	slot5, slot6, slot7 = slot5(slot7)
+	--- BLOCK #11 66-66, warpins: 1 ---
+	slot1 = {}
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 90-98, warpins: 1 ---
-	slot10 = slot4.membersInfo
-	slot10 = slot10[slot9]
-	slot10 = slot10.entityId
-	slot11 = pg
-	slot11 = slot11.space
-	slot11 = slot11.teamerInfos
-	slot11 = slot11[slot10]
+	--- BLOCK #12 67-73, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isInTeam
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #12 ---
 
-	slot11 = if slot11 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 99-103, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.space
-	slot11 = slot11.teamerInfos
-	slot11 = slot11[slot10]
-	slot11 = slot11.levelBatPetList
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 104-105, warpins: 2 ---
-	--- END OF BLOCK #14 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 106-107, warpins: 1 ---
-	slot12 = slot0.levelId
-	slot11 = slot11[slot12]
+	--- BLOCK #13 74-77, warpins: 1 ---
+	slot2 = #slot1
+	slot3 = 0
+	--- END OF BLOCK #13 ---
+
+	if slot2 <= slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 78-79, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 80-80, warpins: 1 ---
+	slot2 = true
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 108-109, warpins: 2 ---
+	--- BLOCK #16 81-96, warpins: 3 ---
+	slot3 = slot0.view
+	slot3 = slot3.readyUWidget
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = {}
+	slot4 = {}
+	slot5 = 0
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.isInTeam
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #16 ---
 
-	slot12 = if slot11 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #17 110-110, warpins: 1 ---
-	slot12 = slot11[1]
+	--- BLOCK #17 97-105, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.getCurTeamInfo
+	slot6 = slot6(slot8)
+	slot7 = ipairs
+	slot9 = slot6.sortList
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #37
 
 
-	--- BLOCK #18 111-117, warpins: 2 ---
-	slot13 = BossRushUtils
-	slot13 = slot13.isPlayerReady
-	slot15 = slot10
-	slot16 = slot0.levelId
-	slot13 = slot13(slot15, slot16)
+	--- BLOCK #18 106-114, warpins: 1 ---
+	slot12 = slot6.membersInfo
+	slot12 = slot12[slot11]
+	slot12 = slot12.entityId
+	slot13 = pg
+	slot13 = slot13.space
+	slot13 = slot13.teamerInfos
+	slot13 = slot13[slot12]
 	--- END OF BLOCK #18 ---
 
-	slot13 = if not slot13 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 118-123, warpins: 1 ---
+	--- BLOCK #19 115-119, warpins: 1 ---
 	slot13 = pg
-	slot13 = slot13.me
-	slot15 = slot13
-	slot13 = slot13.isUidTeamLeader
-	slot16 = slot9
-	slot13 = slot13(slot15, slot16)
+	slot13 = slot13.space
+	slot13 = slot13.teamerInfos
+	slot13 = slot13[slot12]
+	slot13 = slot13.levelBatPetList
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 124-132, warpins: 2 ---
-	slot14 = table
-	slot14 = slot14.insert
-	slot16 = slot1
-	slot17 = {}
-	slot17.uid = slot9
-	slot17.petInfo = slot12
-	slot17.isReady = slot13
+	--- BLOCK #20 120-121, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
-	if slot12 ~= nil then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 133-134, warpins: 1 ---
-	slot18 = false
+	--- BLOCK #21 122-123, warpins: 1 ---
+	slot14 = slot0.levelId
+	slot13 = slot13[slot14]
 	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 135-135, warpins: 1 ---
-	slot18 = true
+	--- BLOCK #22 124-125, warpins: 2 ---
 	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 136-142, warpins: 2 ---
-	slot17.empty = slot18
-	slot17.pList = slot11
-	slot18 = pg
-	slot18 = slot18.me
-	slot18 = slot18.uid
-	--- END OF BLOCK #23 ---
-
-	if slot9 ~= slot18 then
-	JUMP TO BLOCK #24
+	slot14 = if slot13 then
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #24 143-144, warpins: 1 ---
-	slot18 = false
+	--- BLOCK #23 126-126, warpins: 1 ---
+	slot14 = slot13[1]
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 127-133, warpins: 2 ---
+	slot15 = BossRushUtils
+	slot15 = slot15.isPlayerReady
+	slot17 = slot12
+	slot18 = slot0.levelId
+	slot15 = slot15(slot17, slot18)
 	--- END OF BLOCK #24 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
 
 
-	--- BLOCK #25 145-145, warpins: 1 ---
-	slot18 = true
+	--- BLOCK #25 134-139, warpins: 1 ---
+	slot15 = pg
+	slot15 = slot15.me
+	slot17 = slot15
+	slot15 = slot15.isUidTeamLeader
+	slot18 = slot11
+	slot15 = slot15(slot17, slot18)
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 146-150, warpins: 2 ---
-	slot17.isSelf = slot18
-	slot17.entId = slot10
-
-	slot14(slot16, slot17)
-
+	--- BLOCK #26 140-148, warpins: 2 ---
+	slot16 = table
+	slot16 = slot16.insert
+	slot18 = slot3
+	slot19 = {}
+	slot19.uid = slot11
+	slot19.petInfo = slot14
+	slot19.isReady = slot15
 	--- END OF BLOCK #26 ---
 
-	slot12 = if slot12 then
+	if slot14 ~= nil then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 151-156, warpins: 1 ---
-	slot14 = LuaUIUtils
-	slot14 = slot14.isPetTank
-	slot16 = slot12.templateId
-	slot14 = slot14(slot16)
+	--- BLOCK #27 149-150, warpins: 1 ---
+	slot20 = false
 	--- END OF BLOCK #27 ---
 
-	slot14 = if slot14 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #28 157-165, warpins: 1 ---
-	slot14 = table
-	slot14 = slot14.insert
-	slot16 = slot2
-	slot17 = {}
-	slot17.uid = slot9
-	slot17.petInfo = slot12
-	slot17.index = slot8
-	slot17.entId = slot10
-
-	slot14(slot16, slot17)
-
+	--- BLOCK #28 151-151, warpins: 1 ---
+	slot20 = true
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 166-167, warpins: 3 ---
+	--- BLOCK #29 152-158, warpins: 2 ---
+	slot19.empty = slot20
+	slot19.pList = slot13
+	slot20 = pg
+	slot20 = slot20.me
+	slot20 = slot20.uid
 	--- END OF BLOCK #29 ---
 
-	slot13 = if slot13 then
+	if slot11 ~= slot20 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 168-168, warpins: 1 ---
-	slot3 = slot3 + 1
+	--- BLOCK #30 159-160, warpins: 1 ---
+	slot20 = false
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 169-170, warpins: 3 ---
+	--- BLOCK #31 161-161, warpins: 1 ---
+	slot20 = true
 	--- END OF BLOCK #31 ---
 
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #12
-	GO OUT TO BLOCK #32
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 171-181, warpins: 1 ---
-	slot5 = slot4.sortList
-	slot5 = #slot5
-	slot6 = slot0.view
-	slot6 = slot6.btnConfirmUButton
-	slot7 = pg
-	slot7 = slot7.me
-	slot9 = slot7
-	slot7 = slot7.isTeamLeader
-	slot7 = slot7(slot9)
+	--- BLOCK #32 162-166, warpins: 2 ---
+	slot19.isSelf = slot20
+	slot19.entId = slot12
+
+	slot16(slot18, slot19)
+
 	--- END OF BLOCK #32 ---
 
-	slot7 = if slot7 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #33
 	else
 	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #33 182-183, warpins: 1 ---
+	--- BLOCK #33 167-172, warpins: 1 ---
+	slot16 = LuaUIUtils
+	slot16 = slot16.isPetTank
+	slot18 = slot14.templateId
+	slot16 = slot16(slot18)
 	--- END OF BLOCK #33 ---
 
-	if slot3 ~= slot5 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #34
 	else
 	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #34 184-185, warpins: 1 ---
-	slot7 = false
+	--- BLOCK #34 173-181, warpins: 1 ---
+	slot16 = table
+	slot16 = slot16.insert
+	slot18 = slot4
+	slot19 = {}
+	slot19.uid = slot11
+	slot19.petInfo = slot14
+	slot19.index = slot10
+	slot19.entId = slot12
+
+	slot16(slot18, slot19)
+
 	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 186-186, warpins: 2 ---
-	slot7 = true
+	--- BLOCK #35 182-183, warpins: 3 ---
 	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #36
+	slot15 = if slot15 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
 
 
-	--- BLOCK #36 187-197, warpins: 2 ---
-	slot6.interactable = slot7
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.view
-	slot8 = slot8.readyUBaseText
-	slot9 = slot3
-	slot10 = "/"
-	slot11 = slot5
-
-	slot6(slot8, slot9, slot10, slot11)
-
+	--- BLOCK #36 184-184, warpins: 1 ---
+	slot5 = slot5 + 1
 	--- END OF BLOCK #36 ---
 
-	if slot3 == slot5 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #50
-	end
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 198-203, warpins: 1 ---
-	slot6 = slot0.view
-	slot6 = slot6.fxRefreshAnimation
-	slot8 = slot6
-	slot6 = slot6.Play
-
-	slot6(slot8)
-
+	--- BLOCK #37 185-186, warpins: 3 ---
 	--- END OF BLOCK #37 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #18
+	GO OUT TO BLOCK #38
 
 
-	--- BLOCK #38 204-212, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.space
-	slot4 = slot4.teamerInfos
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.id
-	slot4 = slot4[slot5]
+	--- BLOCK #38 187-187, warpins: 1 ---
 	--- END OF BLOCK #38 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #40
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #51
 
 
-	--- BLOCK #39 213-220, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.space
-	slot4 = slot4.teamerInfos
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.id
-	slot4 = slot4[slot5]
-	slot4 = slot4.levelBatPetList
+	--- BLOCK #39 188-196, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.space
+	slot6 = slot6.teamerInfos
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.id
+	slot6 = slot6[slot7]
 	--- END OF BLOCK #39 ---
 
-	FLOW; TARGET BLOCK #40
+	slot6 = if slot6 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
 
 
-	--- BLOCK #40 221-222, warpins: 2 ---
+	--- BLOCK #40 197-204, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.space
+	slot6 = slot6.teamerInfos
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.id
+	slot6 = slot6[slot7]
+	slot6 = slot6.levelBatPetList
 	--- END OF BLOCK #40 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #42
-	end
+	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 223-224, warpins: 1 ---
-	slot5 = slot0.levelId
-	slot4 = slot4[slot5]
+	--- BLOCK #41 205-206, warpins: 2 ---
 	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #42
+	slot6 = if slot6 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #43
+	end
 
 
-	--- BLOCK #42 225-226, warpins: 2 ---
+	--- BLOCK #42 207-208, warpins: 1 ---
+	slot7 = slot0.levelId
+	slot6 = slot6[slot7]
 	--- END OF BLOCK #42 ---
 
-	slot5 = if slot4 then
-	JUMP TO BLOCK #43
-	else
-	JUMP TO BLOCK #44
-	end
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 227-227, warpins: 1 ---
-	slot5 = slot4[1]
+	--- BLOCK #43 209-210, warpins: 2 ---
 	--- END OF BLOCK #43 ---
 
-	FLOW; TARGET BLOCK #44
+	slot7 = if slot6 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #45
+	end
 
 
-	--- BLOCK #44 228-238, warpins: 2 ---
-	slot6 = table
-	slot6 = slot6.insert
-	slot8 = slot1
-	slot9 = {
-		isReady = true,
-		isSelf = true
-	}
-	slot10 = pg
-	slot10 = slot10.me
-	slot10 = slot10.uid
-	slot9.uid = slot10
-	slot9.petInfo = slot5
+	--- BLOCK #44 211-211, warpins: 1 ---
+	slot7 = slot6[1]
 	--- END OF BLOCK #44 ---
 
-	if slot5 ~= nil then
-	JUMP TO BLOCK #45
-	else
-	JUMP TO BLOCK #46
-	end
+	FLOW; TARGET BLOCK #45
 
 
-	--- BLOCK #45 239-240, warpins: 1 ---
-	slot10 = false
+	--- BLOCK #45 212-222, warpins: 2 ---
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot3
+	slot11 = {
+		isSelf = true,
+		isReady = true
+	}
+	slot12 = pg
+	slot12 = slot12.me
+	slot12 = slot12.uid
+	slot11.uid = slot12
+	slot11.petInfo = slot7
 	--- END OF BLOCK #45 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #47
+	if slot7 ~= nil then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
 
 
-	--- BLOCK #46 241-241, warpins: 1 ---
-	slot10 = true
+	--- BLOCK #46 223-224, warpins: 1 ---
+	slot12 = false
 	--- END OF BLOCK #46 ---
 
-	FLOW; TARGET BLOCK #47
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #47 242-246, warpins: 2 ---
-	slot9.empty = slot10
-	slot9.pList = slot4
-
-	slot6(slot8, slot9)
-
+	--- BLOCK #47 225-225, warpins: 1 ---
+	slot12 = true
 	--- END OF BLOCK #47 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #48
-	else
-	JUMP TO BLOCK #50
-	end
+	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 247-252, warpins: 1 ---
-	slot6 = LuaUIUtils
-	slot6 = slot6.isPetTank
-	slot8 = slot5.templateId
-	slot6 = slot6(slot8)
+	--- BLOCK #48 226-235, warpins: 2 ---
+	slot11.empty = slot12
+	slot11.pList = slot6
+	slot12 = pg
+	slot12 = slot12.me
+	slot12 = slot12.id
+	slot11.entId = slot12
+
+	slot8(slot10, slot11)
+
+	slot5 = slot5 + 1
 	--- END OF BLOCK #48 ---
 
-	slot6 = if slot6 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #51
 	end
 
 
-	--- BLOCK #49 253-262, warpins: 1 ---
-	slot6 = table
-	slot6 = slot6.insert
-	slot8 = slot2
-	slot9 = {
-		index = 1
-	}
-	slot10 = pg
-	slot10 = slot10.me
-	slot10 = slot10.uid
-	slot9.uid = slot10
-	slot9.petInfo = slot5
-
-	slot6(slot8, slot9)
-
+	--- BLOCK #49 236-241, warpins: 1 ---
+	slot8 = LuaUIUtils
+	slot8 = slot8.isPetTank
+	slot10 = slot7.templateId
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #49 ---
 
-	FLOW; TARGET BLOCK #50
+	slot8 = if slot8 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
 
 
-	--- BLOCK #50 263-268, warpins: 5 ---
-	slot0.prepareCount = slot3
-	slot4 = #slot1
-	slot4 = slot4 + 1
-	slot5 = 4
-	slot6 = 1
+	--- BLOCK #50 242-251, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot4
+	slot11 = {
+		index = 1
+	}
+	slot12 = pg
+	slot12 = slot12.me
+	slot12 = slot12.uid
+	slot11.uid = slot12
+	slot11.petInfo = slot7
+
+	slot8(slot10, slot11)
+
 	--- END OF BLOCK #50 ---
 
 	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #51 269-274, warpins: 2 ---
-	slot8 = table
-	slot8 = slot8.insert
-	slot10 = slot1
-	slot11 = {
-		tIndex = 1
-	}
-
-	slot8(slot10, slot11)
-
+	--- BLOCK #51 252-255, warpins: 4 ---
+	slot6 = ipairs
+	slot8 = slot1
+	slot6, slot7, slot8 = slot6(slot8)
 	--- END OF BLOCK #51 ---
 
-	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #51
-	GO OUT TO BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
-	--- BLOCK #52 275-294, warpins: 1 ---
-	slot0.memTeamInfo = slot1
-	slot4 = slot0.view
-	slot4 = slot4.listPlayerUList
-	slot6 = slot4
-	slot4 = slot4.SetList
-	slot7 = slot1
 
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.panelTankUButton
-	slot6 = slot4
-	slot4 = slot4.SetActive
-	slot7 = false
-
-	slot4(slot6, slot7)
-
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isInTeam
-	slot4 = slot4(slot6)
+	--- BLOCK #52 256-261, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.space
+	slot11 = slot11.teamerInfos
+	slot11 = slot11[slot10]
 	--- END OF BLOCK #52 ---
 
-	slot4 = if slot4 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #53
 	else
-	JUMP TO BLOCK #56
+	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #53 295-300, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.refreshOpenLevelMatch
-
-	slot4(slot6)
-
-	slot4 = slot0.isMatchOpenLevel
+	--- BLOCK #53 262-266, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.space
+	slot11 = slot11.teamerInfos
+	slot11 = slot11[slot10]
+	slot11 = slot11.levelBatPetList
 	--- END OF BLOCK #53 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #54
-	else
-	JUMP TO BLOCK #56
-	end
+	FLOW; TARGET BLOCK #54
 
 
-	--- BLOCK #54 301-308, warpins: 1 ---
-	slot4 = BossRushUtils
-	slot4 = slot4.getCurBossRushPlace
-	slot4 = slot4()
-	slot5 = Const
-	slot5 = slot5.BossRushTeleportTarget
-	slot5 = slot5.Prepare
+	--- BLOCK #54 267-268, warpins: 2 ---
 	--- END OF BLOCK #54 ---
 
-	if slot4 == slot5 then
+	slot12 = if slot11 then
 	JUMP TO BLOCK #55
 	else
 	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #55 309-319, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.tips
-	slot6 = slot4
-	slot4 = slot4.showTextTip
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "BOSS_RUSH_OPEN_LEVEL_WAIT_LEADER"
-	MULTRES = slot7(slot9)
-
-	slot4(slot6, MULTRES)
-
+	--- BLOCK #55 269-270, warpins: 1 ---
+	slot12 = slot0.levelId
+	slot12 = slot11[slot12]
 	--- END OF BLOCK #55 ---
 
 	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #56 320-320, warpins: 4 ---
-	return
+	--- BLOCK #56 271-272, warpins: 2 ---
 	--- END OF BLOCK #56 ---
+
+	if slot12 == nil then
+	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #59
+	end
+
+
+	--- BLOCK #57 273-274, warpins: 1 ---
+	--- END OF BLOCK #57 ---
+
+	slot12 = if slot11 then
+	JUMP TO BLOCK #58
+	else
+	JUMP TO BLOCK #59
+	end
+
+
+	--- BLOCK #58 275-275, warpins: 1 ---
+	slot12 = slot11[0]
+	--- END OF BLOCK #58 ---
+
+	FLOW; TARGET BLOCK #59
+
+
+	--- BLOCK #59 276-277, warpins: 3 ---
+	--- END OF BLOCK #59 ---
+
+	slot13 = if slot12 then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #61
+	end
+
+
+	--- BLOCK #60 278-278, warpins: 1 ---
+	slot13 = slot12[1]
+	--- END OF BLOCK #60 ---
+
+	FLOW; TARGET BLOCK #61
+
+
+	--- BLOCK #61 279-286, warpins: 2 ---
+	slot14 = table
+	slot14 = slot14.insert
+	slot16 = slot3
+	slot17 = {
+		isSelf = false,
+		isReady = true,
+		isAi = true
+	}
+	slot17.uid = slot10
+	slot17.petInfo = slot13
+	--- END OF BLOCK #61 ---
+
+	if slot13 ~= nil then
+	JUMP TO BLOCK #62
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #62 287-288, warpins: 1 ---
+	slot18 = false
+	--- END OF BLOCK #62 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #64
+
+
+	--- BLOCK #63 289-289, warpins: 1 ---
+	slot18 = true
+	--- END OF BLOCK #63 ---
+
+	FLOW; TARGET BLOCK #64
+
+
+	--- BLOCK #64 290-294, warpins: 2 ---
+	slot17.empty = slot18
+	slot17.pList = slot12
+	slot17.entId = slot10
+
+	slot14(slot16, slot17)
+
+	slot5 = slot5 + 1
+	--- END OF BLOCK #64 ---
+
+	FLOW; TARGET BLOCK #65
+
+
+	--- BLOCK #65 295-296, warpins: 2 ---
+	--- END OF BLOCK #65 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #52
+	GO OUT TO BLOCK #66
+
+
+	--- BLOCK #66 297-306, warpins: 1 ---
+	slot6 = #slot3
+	slot7 = slot0.view
+	slot7 = slot7.btnConfirmUButton
+	slot8 = pg
+	slot8 = slot8.me
+	slot10 = slot8
+	slot8 = slot8.isTeamLeader
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #66 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #67
+	else
+	JUMP TO BLOCK #69
+	end
+
+
+	--- BLOCK #67 307-308, warpins: 1 ---
+	--- END OF BLOCK #67 ---
+
+	if slot5 ~= slot6 then
+	JUMP TO BLOCK #68
+	else
+	JUMP TO BLOCK #69
+	end
+
+
+	--- BLOCK #68 309-310, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #68 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #70
+
+
+	--- BLOCK #69 311-311, warpins: 2 ---
+	slot8 = true
+	--- END OF BLOCK #69 ---
+
+	FLOW; TARGET BLOCK #70
+
+
+	--- BLOCK #70 312-322, warpins: 2 ---
+	slot7.interactable = slot8
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot0.view
+	slot9 = slot9.readyUBaseText
+	slot10 = slot5
+	slot11 = "/"
+	slot12 = slot6
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	--- END OF BLOCK #70 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #71
+	else
+	JUMP TO BLOCK #73
+	end
+
+
+	--- BLOCK #71 323-324, warpins: 1 ---
+	--- END OF BLOCK #71 ---
+
+	if slot5 == slot6 then
+	JUMP TO BLOCK #72
+	else
+	JUMP TO BLOCK #73
+	end
+
+
+	--- BLOCK #72 325-329, warpins: 1 ---
+	slot7 = slot0.view
+	slot7 = slot7.fxRefreshAnimation
+	slot9 = slot7
+	slot7 = slot7.Play
+
+	slot7(slot9)
+
+	--- END OF BLOCK #72 ---
+
+	FLOW; TARGET BLOCK #73
+
+
+	--- BLOCK #73 330-335, warpins: 3 ---
+	slot0.prepareCount = slot5
+	slot7 = #slot3
+	slot7 = slot7 + 1
+	slot8 = 4
+	slot9 = 1
+	--- END OF BLOCK #73 ---
+
+	FLOW; TARGET BLOCK #74
+
+
+	--- BLOCK #74 336-341, warpins: 2 ---
+	slot11 = table
+	slot11 = slot11.insert
+	slot13 = slot3
+	slot14 = {
+		tIndex = 1
+	}
+
+	slot11(slot13, slot14)
+
+	--- END OF BLOCK #74 ---
+
+	for slot10=slot7, slot8, slot9
+	LOOP BLOCK #74
+	GO OUT TO BLOCK #75
+
+	--- BLOCK #75 342-361, warpins: 1 ---
+	slot0.memTeamInfo = slot3
+	slot7 = slot0.view
+	slot7 = slot7.listPlayerUList
+	slot9 = slot7
+	slot7 = slot7.SetList
+	slot10 = slot3
+
+	slot7(slot9, slot10)
+
+	slot7 = slot0.view
+	slot7 = slot7.panelTankUButton
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = false
+
+	slot7(slot9, slot10)
+
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.isInTeam
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #75 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #76
+	else
+	JUMP TO BLOCK #80
+	end
+
+
+	--- BLOCK #76 362-371, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.refreshOpenLevelMatch
+
+	slot7(slot9)
+
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.isTeamLeader
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #76 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #77
+	else
+	JUMP TO BLOCK #80
+	end
+
+
+	--- BLOCK #77 372-374, warpins: 1 ---
+	slot7 = slot0.isMatchOpenLevel
+	--- END OF BLOCK #77 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #78
+	else
+	JUMP TO BLOCK #80
+	end
+
+
+	--- BLOCK #78 375-382, warpins: 1 ---
+	slot7 = BossRushUtils
+	slot7 = slot7.getCurBossRushPlace
+	slot7 = slot7()
+	slot8 = Const
+	slot8 = slot8.BossRushTeleportTarget
+	slot8 = slot8.Prepare
+	--- END OF BLOCK #78 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #79
+	else
+	JUMP TO BLOCK #80
+	end
+
+
+	--- BLOCK #79 383-393, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = "BOSS_RUSH_OPEN_LEVEL_WAIT_LEADER"
+	MULTRES = slot10(slot12)
+
+	slot7(slot9, MULTRES)
+
+	--- END OF BLOCK #79 ---
+
+	FLOW; TARGET BLOCK #80
+
+
+	--- BLOCK #80 394-394, warpins: 5 ---
+	return
+	--- END OF BLOCK #80 ---
 
 
 
 end
 
-slot4.refreshChallengeTeamInfo = slot22
+slot4.refreshChallengeTeamInfo = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -5168,9 +5362,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.refreshOpenLevelMatch = slot22
+slot4.refreshOpenLevelMatch = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = -1
 	slot3 = -1
@@ -5397,10 +5591,10 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.refreshTankSelected = slot22
+slot4.refreshTankSelected = slot23
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-37, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-57, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.buffUList
 
@@ -5426,120 +5620,24 @@ slot22 = function(slot0)
 	slot1 = slot1.buffUList
 
 	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #0 1-10, warpins: 1 ---
 		slot2 = pg
-		slot2 = slot2.me
+		slot2 = slot2.global
+		slot2 = slot2.ui
 		slot4 = slot2
-		slot2 = slot2.isInTeam
-		slot2 = slot2(slot4)
-		--- END OF BLOCK #0 ---
-
-		slot2 = if slot2 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #1 8-13, warpins: 1 ---
-		slot2 = pg
-		slot2 = slot2.me
-		slot4 = slot2
-		slot2 = slot2.isTeamLeader
-		slot2 = slot2(slot4)
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #2 14-15, warpins: 0 ---
-		slot2 = false
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #3 16-16, warpins: 1 ---
-		slot2 = true
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 17-18, warpins: 3 ---
-		--- END OF BLOCK #4 ---
-
-		slot3 = if slot2 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #5 19-24, warpins: 1 ---
-		slot3 = pg
-		slot3 = slot3.me
-		slot3 = slot3.space
-		slot5 = slot3
-		slot3 = slot3.isBossRushEnv
-		slot3 = slot3(slot5)
-		--- END OF BLOCK #5 ---
-
-		FLOW; TARGET BLOCK #6
-
-
-		--- BLOCK #6 25-41, warpins: 2 ---
-		slot4 = pg
-		slot4 = slot4.global
-		slot4 = slot4.ui
-		slot6 = slot4
-		slot4 = slot4.open
-		slot7 = UIConst
-		slot7 = slot7.UI_ID_BOSS_RUSH_BUFF_SELECT
-		slot8 = {
-			tab = 0
+		slot2 = slot2.open
+		slot5 = UIConst
+		slot5 = slot5.UI_ID_BOSS_RUSH_BUFF_SELECT
+		slot6 = {
+			tab = 0,
+			buffIndex = 1,
+			isShow = true
 		}
-		slot9 = slot1.index
-		slot8.buffIndex = slot9
-		slot9 = not slot3
-		slot8.isShow = slot9
 
-		slot4(slot6, slot7, slot8)
+		slot2(slot4, slot5, slot6)
 
-		slot4 = self
-		slot4 = slot4.buffIsNew
-		--- END OF BLOCK #6 ---
-
-		slot4 = if slot4 then
-		JUMP TO BLOCK #7
-		else
-		JUMP TO BLOCK #8
-		end
-
-
-		--- BLOCK #7 42-53, warpins: 1 ---
-		slot4 = self
-		slot5 = false
-		slot4.buffIsNew = slot5
-		slot4 = self
-		slot4 = slot4.view
-		slot4 = slot4.buffUList
-		slot6 = slot4
-		slot4 = slot4.SetList
-		slot7 = BossRushUtils
-		slot7 = slot7.getSelectBatBuffs
-		MULTRES = slot7()
-
-		slot4(slot6, MULTRES)
-
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 54-54, warpins: 2 ---
 		return
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #0 ---
 
 
 
@@ -5663,8 +5761,8 @@ slot22 = function(slot0)
 		slot5 = UIConst
 		slot5 = slot5.UI_ID_BOSS_RUSH_BUFF_SELECT
 		slot6 = {
-			isShow = true,
-			tab = 0
+			tab = 0,
+			isShow = true
 		}
 
 		slot2(slot4, slot5, slot6)
@@ -5711,12 +5809,231 @@ slot22 = function(slot0)
 		slot5 = UIConst
 		slot5 = slot5.UI_ID_BOSS_RUSH_BUFF_SELECT
 		slot6 = {
-			isShow = true,
+			tab = 0,
 			buffIndex = 1,
-			tab = 0
+			isShow = true
 		}
 
 		slot2(slot4, slot5, slot6)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.cycleBuffUList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot3 = BossRushUtils
+		slot3 = slot3.renderBuffItem
+		slot5 = slot0
+		slot6 = slot1
+		slot7 = slot2
+
+		slot3(slot5, slot6, slot7)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.view
+	slot1 = slot1.cycleBuffUList
+
+	slot2 = function(slot0, slot1)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.me
+		slot4 = slot2
+		slot2 = slot2.isInTeam
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 8-13, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.me
+		slot4 = slot2
+		slot2 = slot2.isTeamLeader
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #2 14-15, warpins: 0 ---
+		slot2 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 16-16, warpins: 1 ---
+		slot2 = true
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 17-18, warpins: 3 ---
+		--- END OF BLOCK #4 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 19-25, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.me
+		slot3 = slot3.space
+		slot5 = slot3
+		slot3 = slot3.isBossRushEnv
+		slot3 = slot3(slot5)
+		slot2 = slot3
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 26-40, warpins: 2 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot5 = slot3
+		slot3 = slot3.open
+		slot6 = UIConst
+		slot6 = slot6.UI_ID_BOSS_RUSH_BUFF_SELECT
+		slot7 = {
+			tab = 0
+		}
+		slot8 = not slot2
+		slot7.isShow = slot8
+
+		slot3(slot5, slot6, slot7)
+
+		slot3 = self
+		slot3 = slot3.buffIsNew
+		--- END OF BLOCK #6 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 41-52, warpins: 1 ---
+		slot3 = self
+		slot4 = false
+		slot3.buffIsNew = slot4
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.cycleBuffUList
+		slot5 = slot3
+		slot3 = slot3.SetList
+		slot6 = BossRushUtils
+		slot6 = slot6.getSelectBatBuffs
+		MULTRES = slot6()
+
+		slot3(slot5, MULTRES)
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 53-53, warpins: 2 ---
+		return
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.seasonBuffBtnSearchUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.openCommonPopUpTipById
+		slot3 = Const
+		slot3 = slot3.COMMON_POPUP_TIP_ID
+		slot3 = slot3.BOSS_RUSH_HELP_SEASON_BUFF
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.seasonBuffBtnSearch2UButton
+
+	slot2 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.openCommonPopUpTipById
+		slot3 = Const
+		slot3 = slot3.COMMON_POPUP_TIP_ID
+		slot3 = slot3.BOSS_RUSH_HELP_SEASON_BUFF
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.cycleBuffBtnSearchUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.openCommonPopUpTipById
+		slot3 = Const
+		slot3 = slot3.COMMON_POPUP_TIP_ID
+		slot3 = slot3.BOSS_RUSH_HELP_CYCLE_BUFF
+
+		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -5738,9 +6055,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.initBuffInfo = slot22
+slot4.initBuffInfo = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.type
 	--- END OF BLOCK #0 ---
@@ -5752,7 +6069,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-39, warpins: 1 ---
+	--- BLOCK #1 4-50, warpins: 1 ---
 	slot1 = RedDotConst
 	slot1 = slot1.RedDotPath
 	slot1 = slot1.BOSS_RUSH_MAIN_BUFF
@@ -5776,6 +6093,19 @@ slot22 = function(slot0)
 	slot4 = slot2
 	slot2 = slot2.SetList
 	slot5 = BossRushUtils
+	slot5 = slot5.getNormalBuffList
+	slot7 = pg
+	slot7 = slot7.space
+	slot7 = slot7.teamLeaderSeasonStar
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.view
+	slot2 = slot2.cycleBuffUList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = BossRushUtils
 	slot5 = slot5.getSelectBatBuffs
 	slot7 = slot0.buffIsNew
 	MULTRES = slot5(slot7)
@@ -5794,49 +6124,92 @@ slot22 = function(slot0)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #2 40-42, warpins: 1 ---
+	--- BLOCK #2 51-53, warpins: 1 ---
 	slot1 = slot0.type
 	--- END OF BLOCK #2 ---
 
 	if slot1 == 1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 43-52, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.buffUList
-	slot3 = slot1
-	slot1 = slot1.SetList
-	slot4 = BossRushUtils
-	slot4 = slot4.getHistoryRecordBatBuffs
-	slot6 = slot0.isOpen
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #4 53-55, warpins: 1 ---
-	slot1 = slot0.type
-	--- END OF BLOCK #4 ---
-
-	if slot1 == 2 then
-	JUMP TO BLOCK #5
-	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 56-73, warpins: 1 ---
+	--- BLOCK #3 54-56, warpins: 1 ---
+	slot1 = slot0.levelData
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 57-58, warpins: 1 ---
+	slot1 = slot0.levelData
+	slot1 = slot1.bossId
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 59-80, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.buffUList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = BossRushUtils
+	slot5 = slot5.getHistoryRecordSeasonBuffs
+	slot7 = slot0.isOpen
+	slot8 = slot1
+	slot9 = true
+	MULTRES = slot5(slot7, slot8, slot9)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.view
+	slot2 = slot2.cycleBuffUList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = BossRushUtils
+	slot5 = slot5.getHistoryRecordBatBuffs
+	slot7 = slot0.isOpen
+	slot8 = slot1
+	MULTRES = slot5(slot7, slot8)
+
+	slot2(slot4, MULTRES)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 81-83, warpins: 1 ---
+	slot1 = slot0.type
+	--- END OF BLOCK #6 ---
+
+	if slot1 == 2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 84-100, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.normalBuffUList
+	slot3 = slot1
+	slot1 = slot1.SetList
+	slot4 = BossRushUtils
+	slot4 = slot4.getNormalBuffList
+	MULTRES = slot4()
+
+	slot1(slot3, MULTRES)
+
 	slot1 = slot0.view
 	slot1 = slot1.specialBuffUList
 	slot3 = slot1
@@ -5848,33 +6221,22 @@ slot22 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
-	slot1 = slot0.view
-	slot1 = slot1.normalBuffUList
-	slot3 = slot1
-	slot1 = slot1.SetList
-	slot4 = BossRushUtils
-	slot4 = slot4.getNormalBuffList
-	slot6 = slot0.isOpen
-	MULTRES = slot4(slot6)
+	--- END OF BLOCK #7 ---
 
-	slot1(slot3, MULTRES)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 74-74, warpins: 4 ---
+	--- BLOCK #8 101-101, warpins: 4 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot4.refreshBuffInfo = slot22
+slot4.refreshBuffInfo = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.uiScene
 
@@ -6125,9 +6487,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.renderBossModel = slot22
+slot4.renderBossModel = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = false
 	slot3 = false
@@ -6238,9 +6600,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.refreshDof = slot22
+slot4.refreshDof = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isShow
 	--- END OF BLOCK #0 ---
@@ -6354,9 +6716,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.getShowTarget = slot22
+slot4.getShowTarget = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.uiScene
 	--- END OF BLOCK #0 ---
@@ -6413,9 +6775,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.onVisibleChange = slot22
+slot4.onVisibleChange = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -6474,10 +6836,94 @@ slot22 = function(slot0)
 
 end
 
-slot4.onDestroy = slot22
+slot4.onDestroy = slot23
 
-slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.checkUIOpen
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BOSS_RUSH_BATTLE_RESULT
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.closeImmediately
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BOSS_RUSH_BATTLE_RESULT
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-28, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.checkUIOpen
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BOSS_RUSH_BATTLE_DETAIL_RESULT
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 29-36, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.closeImmediately
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BOSS_RUSH_BATTLE_DETAIL_RESULT
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 37-37, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.closeBattleResultPanel = slot23
+
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.closeBattleResultPanel
+
+	slot2(slot4)
+
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -6492,9 +6938,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot22
+slot4.onOpen = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -6503,9 +6949,9 @@ slot22 = function(slot0)
 
 end
 
-slot4.onShow = slot22
+slot4.onShow = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -6514,7 +6960,7 @@ slot22 = function(slot0)
 
 end
 
-slot4.onHide = slot22
+slot4.onHide = slot23
 
 return slot4
 --- END OF BLOCK #0 ---

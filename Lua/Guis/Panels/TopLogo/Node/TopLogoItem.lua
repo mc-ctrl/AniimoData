@@ -1,4 +1,4 @@
---- BLOCK #0 1-40, warpins: 1 ---
+--- BLOCK #0 1-43, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -8,12 +8,15 @@ slot1 = slot1(slot3)
 slot2 = require
 slot4 = "Const.AddressDataConst"
 slot2 = slot2(slot4)
-slot3 = slot0.LightClass
-slot5 = "TopLogoItem"
-slot6 = slot1
-slot3 = slot3(slot5, slot6)
+slot3 = "TopLogo"
+slot4 = "_UnUse"
+slot5 = "_Use"
+slot6 = slot0.LightClass
+slot8 = "TopLogoItem"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
 
-slot4 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = TopLogoItem
 	slot2 = slot2.super
@@ -53,9 +56,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3.ctor = slot4
+slot6.ctor = slot7
 
-slot4 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entity
 	--- END OF BLOCK #0 ---
@@ -99,9 +102,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.getTopLogoGlobalId = slot4
+slot6.getTopLogoGlobalId = slot7
 
-slot4 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = TopLogoItem
 	slot1 = slot1.super
@@ -117,9 +120,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.destroy = slot4
+slot6.destroy = slot7
 
-slot4 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.topLogoScript
 	--- END OF BLOCK #0 ---
@@ -131,21 +134,25 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-5, warpins: 1 ---
-	slot1 = "_UnUse"
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = TopLogoSuffixUnUse
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 6-6, warpins: 1 ---
-	slot1 = "_Use"
+	--- BLOCK #2 7-7, warpins: 2 ---
+	slot1 = TopLogoSuffixUse
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 7-10, warpins: 2 ---
+	--- BLOCK #3 8-11, warpins: 2 ---
 	slot2 = slot0.entity
 	slot2 = slot2.actorType
 	--- END OF BLOCK #3 ---
@@ -157,15 +164,15 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #4 11-11, warpins: 1 ---
+	--- BLOCK #4 12-12, warpins: 1 ---
 	slot2 = "-1"
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 12-19, warpins: 2 ---
-	slot3 = "TopLogo_"
+	--- BLOCK #5 13-20, warpins: 2 ---
+	slot3 = RuntimeTopLogoName
 	slot4 = slot0.entity
 	slot4 = slot4.actorId
 	slot5 = "_"
@@ -180,9 +187,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.getTopLogoName = slot4
+slot6.getTopLogoName = slot7
 
-slot4 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setTopLogoAttachTrans
@@ -197,16 +204,16 @@ slot4 = function(slot0)
 
 end
 
-slot3.initTopLogoAttach = slot4
-slot4 = Vector3
-slot6 = 0
-slot7 = 0
-slot8 = 0
-slot4 = slot4(slot6, slot7, slot8)
-slot5 = Vector2
-slot5 = slot5.zero
+slot6.initTopLogoAttach = slot7
+slot7 = Vector3
+slot9 = 0
+slot10 = 0
+slot11 = 0
+slot7 = slot7(slot9, slot10, slot11)
+slot8 = Vector2
+slot8 = slot8.zero
 
-slot6 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -314,9 +321,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.setTopLogoAttachTrans = slot6
+slot6.setTopLogoAttachTrans = slot9
 
-slot6 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.checkCreate
@@ -362,9 +369,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot3.createTopLogo = slot6
+slot6.createTopLogo = slot9
 
-slot6 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = TopLogoItem
 	slot1 = slot1.super
@@ -380,9 +387,9 @@ slot6 = function(slot0)
 
 end
 
-slot3.onTopLogoLoaded = slot6
+slot6.onTopLogoLoaded = slot9
 
-slot6 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entity
 	--- END OF BLOCK #0 ---
@@ -406,19 +413,21 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #2 8-11, warpins: 1 ---
+	--- BLOCK #2 8-13, warpins: 1 ---
 	slot1 = slot0.entity
 	slot3 = slot1
 	slot1 = slot1.showTopLogoEx
+	slot4 = nil
+	slot5 = "active_component_wake"
 
-	slot1(slot3)
+	slot1(slot3, slot4, slot5)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 12-12, warpins: 3 ---
+	--- BLOCK #3 14-14, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -426,9 +435,9 @@ slot6 = function(slot0)
 
 end
 
-slot3.onActiveCompsNonEmpty = slot6
+slot6.onActiveCompsNonEmpty = slot9
 
-return slot3
+return slot6
 --- END OF BLOCK #0 ---
 
 

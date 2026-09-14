@@ -531,7 +531,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 29-43, warpins: 2 ---
+	--- BLOCK #3 29-42, warpins: 2 ---
 	slot7 = function()
 		--- BLOCK #0 1-10, warpins: 1 ---
 		slot0 = pg
@@ -624,85 +624,50 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	slot7 = slot3.icon
 	slot5.url = slot7
-	slot7 = slot3.ownNum
-	slot8 = slot3.requiredNum
+	slot7 = slot3.isReplace
 	--- END OF BLOCK #3 ---
 
-	if slot8 <= slot7 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 44-46, warpins: 1 ---
-	slot7 = slot0.containsReplace
+	--- BLOCK #4 43-47, warpins: 1 ---
+	slot7 = UIConst
+	slot7 = slot7.ITEM_STATE
+	slot7 = slot7.EXCHANGE
 	--- END OF BLOCK #4 ---
 
-	slot7 = if slot7 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 47-57, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot6
-	slot10 = string
-	slot10 = slot10.format
-	slot12 = "<color=#00FAFF>%d</color>/%d"
-	slot13 = slot3.ownNum
-	slot14 = slot3.requiredNum
-	MULTRES = slot10(slot12, slot13, slot14)
-
-	slot7(slot9, MULTRES)
-
+	--- BLOCK #5 48-50, warpins: 2 ---
+	slot7 = UIConst
+	slot7 = slot7.ITEM_STATE
+	slot7 = slot7.FULL
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 58-68, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot6
-	slot10 = string
-	slot10 = slot10.format
-	slot12 = "<color=#B8F56B>%d</color>/%d"
-	slot13 = slot3.ownNum
-	slot14 = slot3.requiredNum
-	MULTRES = slot10(slot12, slot13, slot14)
+	--- BLOCK #6 51-59, warpins: 2 ---
+	slot8 = LuaUIUtils
+	slot8 = slot8.renderConsumeText
+	slot10 = slot6
+	slot11 = slot3.ownNum
+	slot12 = slot3.requiredNum
+	slot13 = slot7
 
-	slot7(slot9, MULTRES)
+	slot8(slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 69-78, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot6
-	slot10 = string
-	slot10 = slot10.format
-	slot12 = "<color=#FF0500>%d</color>/%d"
-	slot13 = slot3.ownNum
-	slot14 = slot3.requiredNum
-	MULTRES = slot10(slot12, slot13, slot14)
-
-	slot7(slot9, MULTRES)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 79-80, warpins: 3 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #6 ---
 
 
 

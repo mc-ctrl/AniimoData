@@ -233,9 +233,9 @@ slot4 = function(slot0)
 
 
 	--- BLOCK #2 7-10, warpins: 2 ---
-	slot2 = pairs
-	slot4 = slot1
-	slot2, slot3, slot4 = slot2(slot4)
+	slot2 = raw_next
+	slot3 = slot1
+	slot4 = nil
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
@@ -298,9 +298,9 @@ slot4 = function(slot0)
 
 
 	--- BLOCK #2 7-10, warpins: 2 ---
-	slot2 = pairs
-	slot4 = slot1
-	slot2, slot3, slot4 = slot2(slot4)
+	slot2 = raw_next
+	slot3 = slot1
+	slot4 = nil
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
@@ -411,9 +411,9 @@ slot3.startTimer = slot4
 
 slot4 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = pairs
-	slot3 = slot0._timerIds
-	slot1, slot2, slot3 = slot1(slot3)
+	slot1 = raw_next
+	slot2 = slot0._timerIds
+	slot3 = nil
 	--- END OF BLOCK #0 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
@@ -494,11 +494,11 @@ slot3.killTimer = slot4
 
 slot4 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = pairs
-	slot3 = slot0._timerIds
+	slot1 = raw_next
+	slot2 = slot0._timerIds
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -506,14 +506,14 @@ slot4 = function(slot0)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot3 = {}
+	slot2 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
 	--- BLOCK #2 6-7, warpins: 2 ---
-	slot1, slot2, slot3 = slot1(slot3)
+	slot3 = nil
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4

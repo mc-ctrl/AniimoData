@@ -1,41 +1,44 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.Helper.UIComponent"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "EditBaseBarComponent"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Utils.ClientTextUtils"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "Guis.Helper.UIComponent"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "EditBaseBarComponent"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Guis.Utils.BadgeUtils"
+slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.player_badge_data"
+slot7 = "Guis.Utils.BadgeUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.Const"
+slot8 = "Data.player_badge_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.MessageName"
+slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Const.RedDotConst"
+slot10 = "Const.MessageName"
 slot8 = slot8(slot10)
-slot9 = {}
-slot10 = slot7.PLAYER_BADGE_SHOW_MAP_CHANGED
-slot11 = {
+slot9 = require
+slot11 = "Utils.LuaUIUtils"
+slot9 = slot9(slot11)
+slot10 = {}
+slot11 = slot8.PLAYER_BADGE_SHOW_MAP_CHANGED
+slot12 = {
 	"onBadgeShowMapChanged"
 }
-slot9[slot10] = slot11
-slot2.messages = slot9
+slot10[slot11] = slot12
+slot3.messages = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot1.playerInfo
 	slot0.playerInfo = slot2
@@ -69,9 +72,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.onCtor = slot9
+slot3.onCtor = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-88, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -141,7 +144,7 @@ slot9 = function(slot0)
 	slot2 = slot0.listTabUList
 
 	slot3 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-33, warpins: 1 ---
+		--- BLOCK #0 1-21, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -164,66 +167,6 @@ slot9 = function(slot0)
 
 		slot7(slot9, MULTRES)
 
-		slot7 = pg
-		slot7 = slot7.global
-		slot7 = slot7.setPreViewRedDot
-		slot9 = self
-		slot11 = slot9
-		slot9 = slot9.getBadgeTabRedDotPath
-		slot12 = slot2.tabIndex
-		slot9 = slot9(slot11, slot12)
-		slot10 = slot0
-
-		slot11 = function()
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.checkHasNewBadgeByTab
-			slot3 = data
-			slot3 = slot3.tabIndex
-			slot0 = slot0(slot2, slot3)
-			--- END OF BLOCK #0 ---
-
-			slot0 = if slot0 then
-			JUMP TO BLOCK #1
-			else
-			JUMP TO BLOCK #2
-			end
-
-
-			--- BLOCK #1 9-13, warpins: 1 ---
-			slot0 = RedDotConst
-			slot0 = slot0.RedDotStyle
-			slot0 = slot0.NEW
-			--- END OF BLOCK #1 ---
-
-			slot0 = if not slot0 then
-			JUMP TO BLOCK #2
-			else
-			JUMP TO BLOCK #3
-			end
-
-
-			--- BLOCK #2 14-16, warpins: 2 ---
-			slot0 = RedDotConst
-			slot0 = slot0.RedDotStyle
-			slot0 = slot0.NONE
-
-			--- END OF BLOCK #2 ---
-
-			FLOW; TARGET BLOCK #3
-
-
-			--- BLOCK #3 17-17, warpins: 2 ---
-			return slot0
-			--- END OF BLOCK #3 ---
-
-
-
-		end
-
-		slot7(slot9, slot10, slot11)
-
 		return
 		--- END OF BLOCK #0 ---
 
@@ -245,21 +188,22 @@ slot9 = function(slot0)
 		end
 
 
-		--- BLOCK #1 3-8, warpins: 1 ---
-		slot2 = self
-		slot4 = slot2
-		slot2 = slot2.refreshBadgeListByIndex
-		slot5 = slot0.selectedItem
-		slot5 = slot5.tabIndex
+		--- BLOCK #1 3-9, warpins: 1 ---
+		slot2 = slot0.selectedItem
+		slot2 = slot2.tabIndex
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.refreshBadgeListByIndex
+		slot6 = slot2
 
-		slot2(slot4, slot5)
+		slot3(slot5, slot6)
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 9-9, warpins: 2 ---
+		--- BLOCK #2 10-10, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -313,28 +257,8 @@ slot9 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 21-40, warpins: 2 ---
+		--- BLOCK #3 21-22, warpins: 2 ---
 		slot3(slot5, slot6, slot7)
-
-		slot3 = pg
-		slot3 = slot3.global
-		slot3 = slot3.setRedDot
-		slot5 = self
-		slot7 = slot5
-		slot5 = slot5.getBadgeItemRedDotPath
-		slot8 = slot2.badgeId
-		slot5 = slot5(slot7, slot8)
-		slot6 = slot0
-		slot7 = self
-		slot9 = slot7
-		slot7 = slot7.checkHasNewBadge
-		slot10 = slot2.badgeId
-		slot7 = slot7(slot9, slot10)
-		slot8 = RedDotConst
-		slot8 = slot8.RedDotStyle
-		slot8 = slot8.NEW
-
-		slot3(slot5, slot6, slot7, slot8)
 
 		return
 		--- END OF BLOCK #3 ---
@@ -565,9 +489,9 @@ slot9 = function(slot0)
 
 end
 
-slot2.initView = slot9
+slot3.initView = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -869,8 +793,8 @@ slot9 = function(slot0, slot1)
 		slot2 = slot0
 		slot0 = slot0.open
 		slot3 = {
-			defaultTab = 1,
-			defaultMode = 4
+			defaultMode = 4,
+			defaultTab = 1
 		}
 		slot4 = self
 		slot4 = slot4.listTabUList
@@ -921,9 +845,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.refreshBadgeBarPanel = slot9
+slot3.refreshBadgeBarPanel = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 1
 	slot2 = Const
@@ -996,9 +920,9 @@ slot9 = function(slot0)
 
 end
 
-slot2.resetEquipBadgeData = slot9
+slot3.resetEquipBadgeData = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.curBadgeTabIndex = slot1
 	slot5 = slot0
@@ -1088,9 +1012,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot2.refreshBadgeListByIndex = slot9
+slot3.refreshBadgeListByIndex = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = {}
 	slot3 = ipairs
@@ -1144,7 +1068,7 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #4 24-24, warpins: 1 ---
-	slot11 = {}
+	slot11 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -1208,9 +1132,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.getBadgeListByIndex = slot9
+slot3.getBadgeListByIndex = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = nil
 	slot3 = ipairs
@@ -1275,9 +1199,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.getMaxCompleteBadgeData = slot9
+slot3.getMaxCompleteBadgeData = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ipairs
 	slot6 = slot0
@@ -1328,9 +1252,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.getFirstUnequippedBadgeData = slot9
+slot3.getFirstUnequippedBadgeData = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1411,9 +1335,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.isBadgeEquipped = slot9
+slot3.isBadgeEquipped = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.badgeTabData
 	--- END OF BLOCK #0 ---
@@ -1678,9 +1602,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.selectBadgeTab = slot9
+slot3.selectBadgeTab = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.badgeListData
 	--- END OF BLOCK #0 ---
@@ -1918,9 +1842,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.selectBadgeItem = slot9
+slot3.selectBadgeItem = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshBtnState
@@ -1935,9 +1859,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.refreshSelectedBadge = slot9
+slot3.refreshSelectedBadge = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2018,8 +1942,12 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-29, warpins: 2 ---
-	slot3 = slot0.badgeIconUImage
+	--- BLOCK #7 27-33, warpins: 2 ---
+	slot3 = BadgeUtils
+	slot3 = slot3.getBadgeUnlockInfo
+	slot5 = slot1.badgeId
+	slot3 = slot3(slot5)
+	slot4 = slot0.badgeIconUImage
 	--- END OF BLOCK #7 ---
 
 	slot2 = if slot2 then
@@ -2029,150 +1957,133 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 30-32, warpins: 1 ---
-	slot4 = slot2.icon
+	--- BLOCK #8 34-36, warpins: 1 ---
+	slot5 = slot2.icon
 	--- END OF BLOCK #8 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 33-33, warpins: 2 ---
-	slot4 = ""
+	--- BLOCK #9 37-37, warpins: 2 ---
+	slot5 = ""
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 34-39, warpins: 2 ---
-	slot3.url = slot4
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.textBadgeTimeUSDFText
+	--- BLOCK #10 38-43, warpins: 2 ---
+	slot4.url = slot5
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.textBadgeTimeUSDFText
 	--- END OF BLOCK #10 ---
 
-	slot1 = if slot1 then
+	slot7 = if not slot3 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 40-42, warpins: 1 ---
-	slot6 = slot1.unlockTime
+	--- BLOCK #11 44-44, warpins: 1 ---
+	slot7 = ""
+
 	--- END OF BLOCK #11 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #12
-	else
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 45-50, warpins: 2 ---
+	slot4(slot6, slot7)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.textBadgeTitleUSDFText
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 43-43, warpins: 2 ---
-	slot6 = ""
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 44-49, warpins: 2 ---
-	slot3(slot5, slot6)
-
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.textBadgeTitleUSDFText
+	--- BLOCK #13 51-56, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.getLocalizationText
+	slot9 = slot2.name
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #13 ---
 
-	slot2 = if slot2 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 50-55, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.getLocalizationText
-	slot8 = slot2.name
-	slot6 = slot6(slot8)
+	--- BLOCK #14 57-57, warpins: 2 ---
+	slot7 = ""
+
 	--- END OF BLOCK #14 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #15
-	else
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 58-63, warpins: 2 ---
+	slot4(slot6, slot7)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.textBadgeDescUSDFText
+	--- END OF BLOCK #15 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #15 56-56, warpins: 2 ---
-	slot6 = ""
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 57-62, warpins: 2 ---
-	slot3(slot5, slot6)
-
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.textBadgeDescUSDFText
+	--- BLOCK #16 64-69, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.getLocalizationText
+	slot9 = slot2.desc
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #16 ---
 
-	slot2 = if slot2 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 63-68, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.getLocalizationText
-	slot8 = slot2.desc
-	slot6 = slot6(slot8)
+	--- BLOCK #17 70-70, warpins: 2 ---
+	slot7 = ""
+
 	--- END OF BLOCK #17 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 69-69, warpins: 2 ---
-	slot6 = ""
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 70-75, warpins: 2 ---
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.clearBadgeRedDot
-	slot6 = slot1.badgeId
-
-	slot3(slot5, slot6)
+	--- BLOCK #18 71-72, warpins: 2 ---
+	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot2.refreshBadgeDetail = slot9
+slot3.refreshBadgeDetail = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2195,379 +2106,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.renderBadgeItem = slot9
+slot3.renderBadgeItem = slot10
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot2 = string
-	slot2 = slot2.format
-	slot4 = RedDotConst
-	slot4 = slot4.RedDotPath
-	slot4 = slot4.FUNC_MENU_PLAYER_BADGE_TYPE
-	slot5 = slot0.order
-	--- END OF BLOCK #0 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 9-9, warpins: 1 ---
-	slot5 = 5
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-11, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	slot6 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-12, warpins: 1 ---
-	slot6 = 0
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 13-13, warpins: 2 ---
-	return slot2(slot4, slot5, slot6)
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot2.getBadgeTabRedDotPath = slot9
-
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot2 = string
-	slot2 = slot2.format
-	slot4 = RedDotConst
-	slot4 = slot4.RedDotPath
-	slot4 = slot4.FUNC_MENU_PLAYER_BADGE_LIST
-	slot5 = slot0.order
-	--- END OF BLOCK #0 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 9-9, warpins: 1 ---
-	slot5 = 5
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-12, warpins: 2 ---
-	slot6 = slot0.curBadgeTabIndex
-	--- END OF BLOCK #2 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 13-13, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 14-15, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	slot7 = if not slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 16-16, warpins: 1 ---
-	slot7 = 0
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 17-17, warpins: 2 ---
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot2.getBadgeItemRedDotPath = slot9
-
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PlayerBadgeData
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot3 = BadgeUtils
-	slot3 = slot3.getBadgeObtainFromPrefs
-	slot5 = slot2.group
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 11-11, warpins: 2 ---
-	slot3 = false
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 12-12, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot2.checkHasNewBadge = slot9
-
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = ipairs
-	slot6 = slot0
-	slot4 = slot0.getBadgeListByIndex
-	slot7 = slot1
-	MULTRES = slot4(slot6, slot7)
-	slot2, slot3, slot4 = slot2(MULTRES)
-	--- END OF BLOCK #0 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #1 8-13, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.checkHasNewBadge
-	slot10 = slot6.badgeId
-	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #1 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 14-15, warpins: 1 ---
-	slot7 = true
-
-	return slot7
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 16-17, warpins: 3 ---
-	--- END OF BLOCK #3 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
-
-
-	--- BLOCK #4 18-19, warpins: 1 ---
-	slot2 = false
-
-	return slot2
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot2.checkHasNewBadgeByTab = slot9
-
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PlayerBadgeData
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot3 = BadgeUtils
-	slot3 = slot3.getBadgeObtainFromPrefs
-	slot5 = slot2.group
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #2 11-18, warpins: 1 ---
-	slot3 = BadgeUtils
-	slot3 = slot3.deleteBadgeObtainFromPrefs
-	slot5 = slot2.group
-
-	slot3(slot5)
-
-	slot3 = slot0.listUList
-	slot3 = slot3.selectedIndex
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 19-25, warpins: 1 ---
-	slot4 = slot0.listUList
-	slot6 = slot4
-	slot4 = slot4.TryGetChildAt
-	slot7 = slot3
-	slot4, slot5 = slot4(slot6, slot7)
-	--- END OF BLOCK #3 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 26-38, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.setRedDot
-	slot10 = slot0
-	slot8 = slot0.getBadgeItemRedDotPath
-	slot11 = slot1
-	slot8 = slot8(slot10, slot11)
-	slot9 = slot5
-	slot10 = false
-	slot11 = RedDotConst
-	slot11 = slot11.RedDotStyle
-	slot11 = slot11.NEW
-
-	slot6(slot8, slot9, slot10, slot11)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 39-57, warpins: 3 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.refreshRedDotState
-	slot8 = slot0
-	slot6 = slot0.getBadgeTabRedDotPath
-	slot9 = slot0.curBadgeTabIndex
-	MULTRES = slot6(slot8, slot9)
-
-	slot4(MULTRES)
-
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.refreshRedDotState
-	slot6 = string
-	slot6 = slot6.format
-	slot8 = RedDotConst
-	slot8 = slot8.RedDotPath
-	slot8 = slot8.FUNC_MENU_PLAYER_AVATAR_TAB_LIST
-	slot9 = slot0.order
-	--- END OF BLOCK #5 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 58-58, warpins: 1 ---
-	slot9 = 5
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 59-67, warpins: 2 ---
-	MULTRES = slot6(slot8, slot9)
-
-	slot4(MULTRES)
-
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.refreshRedDotState
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotPath
-	slot6 = slot6.FUNC_MENU_PLAYER_AVATAR
-
-	slot4(slot6)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 68-68, warpins: 3 ---
-	return
-	--- END OF BLOCK #8 ---
-
-
-
-end
-
-slot2.clearBadgeRedDot = slot9
-
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.btnConfirmUButton
 	slot4 = slot2
@@ -2825,9 +2366,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.refreshBtnState = slot9
+slot3.refreshBtnState = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curSelectedEquipIndex
 
@@ -2901,9 +2442,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.setBadgeShow = slot9
+slot3.setBadgeShow = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = {}
 	slot3 = {}
@@ -3105,9 +2646,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot2.getBadgeShowMap = slot9
+slot3.getBadgeShowMap = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.playerInfo
 	slot2 = pg
@@ -3144,9 +2685,9 @@ slot9 = function(slot0)
 
 end
 
-slot2.onBadgeShowMapChanged = slot9
+slot3.onBadgeShowMapChanged = slot10
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

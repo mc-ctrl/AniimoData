@@ -22,8 +22,8 @@ slot4 = function(slot0)
 	slot0.navigation = slot1
 	slot1 = slot0.navigation
 	slot2 = {
-		AREA_RENAME = 2,
-		AREA_TAG = 1
+		AREA_TAG = 1,
+		AREA_RENAME = 2
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

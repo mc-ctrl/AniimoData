@@ -1,154 +1,90 @@
---- BLOCK #0 1-77, warpins: 1 ---
+--- BLOCK #0 1-141, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Helper.UIComponent"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Common.CallbackHandler"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.lume"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Utils.ItemUtils"
+slot5 = "Core.Common.lume"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.DropUtils"
+slot6 = "Common.Utils.ItemUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Client.ClientRepo"
+slot7 = "Common.Utils.DropUtils"
 slot5 = slot5(slot7)
-slot6 = slot1.LightClass
-slot8 = "MailNewComponent"
-slot9 = slot0
-slot6 = slot6(slot8, slot9)
+slot6 = require
+slot8 = "Common.Utils.Utils"
+slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.LuaUIUtils"
+slot9 = "Core.Client.ClientRepo"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Const.UIConst"
+slot10 = "Core.Log.LoggerManager"
 slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Common.Const.Const"
-slot9 = slot9(slot11)
+slot8 = slot8.getLogger
+slot10 = "MailNewComponent"
+slot8 = slot8(slot10)
+slot9 = slot2.LightClass
+slot11 = "MailNewComponent"
+slot12 = slot0
+slot9 = slot9(slot11, slot12)
 slot10 = require
-slot12 = "Const.RedDotConst"
+slot12 = "Utils.LuaUIUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.ClientTextUtils"
+slot13 = "Const.UIConst"
 slot11 = slot11(slot13)
-slot12 = CS
-slot12 = slot12.FunPlus
-slot12 = slot12.WorldX
-slot12 = slot12.GUIS
-slot12 = slot12.Panels
-slot12 = slot12.Utils
-slot12 = slot12.KeyBindingPro
+slot12 = require
+slot14 = "Common.Const.Const"
+slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.MessageName"
+slot15 = "Const.RedDotConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.item_data"
+slot16 = "Common.Utils.RewardStateUtils"
 slot14 = slot14(slot16)
-slot15 = 27
+slot15 = require
+slot17 = "Utils.ClientTextUtils"
+slot15 = slot15(slot17)
+slot16 = require
+slot18 = "Core.Common.Time"
+slot16 = slot16(slot18)
+slot17 = CS
+slot17 = slot17.FunPlus
+slot17 = slot17.WorldX
+slot17 = slot17.GUIS
+slot17 = slot17.Panels
+slot17 = slot17.Utils
+slot17 = slot17.KeyBindingPro
+slot18 = require
+slot20 = "Const.MessageName"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "Data.item_data"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Data.setting_selector_text_data"
+slot20 = slot20(slot22)
+slot21 = require
+slot23 = "Const.HotkeyConst"
+slot21 = slot21(slot23)
+slot22 = 27
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-97, warpins: 1 ---
-	slot1 = slot0.transform
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "ObjectReference"
-	slot1 = slot1(slot3, slot4)
-	slot0.objectReference = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "mailListUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.mailListUList = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnDeleteUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnDeleteUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnAllReadUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnAllReadUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "txtTitleUSDFText"
-	slot1 = slot1(slot3, slot4)
-	slot0.txtTitleUSDFText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "rewardListUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.rewardListUList = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnDetailCloseUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnDetailCloseUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "textTimeUSDFText"
-	slot1 = slot1(slot3, slot4)
-	slot0.textTimeUSDFText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "detailAddresserNameUSDFText"
-	slot1 = slot1(slot3, slot4)
-	slot0.detailAddresserNameUSDFText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "detailScrollRect"
-	slot1 = slot1(slot3, slot4)
-	slot0.detailScrollRect = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnDetailConfirmUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnDetailConfirmUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "mailDetailUComponent"
-	slot1 = slot1(slot3, slot4)
-	slot0.mailDetailUComponent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "detailTitleUSDFText"
-	slot1 = slot1(slot3, slot4)
-	slot0.detailTitleUSDFText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "noMessageUWidget"
-	slot1 = slot1(slot3, slot4)
-	slot0.noMessageUWidget = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "txtMailEmptyUSDFText"
-	slot1 = slot1(slot3, slot4)
-	slot0.txtMailEmptyUSDFText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnDetailDeleteUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnDetailDeleteUButton = slot1
+slot23 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = {}
+	slot0.mailTitleTranslationOwner = slot1
+	slot1 = {}
+	slot0.mailContentTranslationOwner = slot1
+	slot1 = false
+	slot0.mailTranslationSelected = slot1
+	slot1 = 0
+	slot0.mailTranslationPendingCount = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -157,10 +93,159 @@ slot16 = function(slot0)
 
 end
 
-slot6.findObjects = slot16
+slot9.onCtor = slot23
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-78, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopMailTranslation
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.onDestroy = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-122, warpins: 1 ---
+	slot1 = slot0.transform
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "mailListUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.mailListUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnDeleteUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnDeleteUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnAllReadUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnAllReadUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtTitleUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtTitleUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rewardListUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.rewardListUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnDetailCloseUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnDetailCloseUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textTimeUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textTimeUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "detailAddresserNameUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.detailAddresserNameUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "detailScrollRect"
+	slot2 = slot2(slot4, slot5)
+	slot0.detailScrollRect = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnDetailConfirmUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnDetailConfirmUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "mailDetailUComponent"
+	slot2 = slot2(slot4, slot5)
+	slot0.mailDetailUComponent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "detailTitleUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.detailTitleUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "noMessageUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.noMessageUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtMailEmptyUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtMailEmptyUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnDetailDeleteUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnDetailDeleteUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "infoUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.infoUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnOtherUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnOtherUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "translateUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.translateUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "otherPanelUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.otherPanelUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "translateUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.translateUWidget = slot2
+	slot2 = slot0.otherPanelUWidget
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot1 = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "otherBtnCloseUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.otherBtnCloseUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "listOtherUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listOtherUList = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.findObjects = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-101, warpins: 1 ---
 	slot1 = slot0.btnDeleteUButton
 
 	slot2 = function()
@@ -235,7 +320,44 @@ slot16 = function(slot0)
 	slot3 = slot0.btnAllReadUButton
 
 	slot4 = function()
-		--- BLOCK #0 1-12, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.chat
+		slot2 = slot0
+		slot0 = slot0.checkHasRewardMail
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		if slot0 == false then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-20, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.showTextTip
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "MAIL_NO_REWARD_TO_RECEIVE"
+		MULTRES = slot3(slot5)
+
+		slot0(slot2, MULTRES)
+
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 21-32, warpins: 2 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
@@ -252,7 +374,7 @@ slot16 = function(slot0)
 		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -278,10 +400,49 @@ slot16 = function(slot0)
 
 	slot5(slot7, MULTRES)
 
+	slot5 = slot0.infoUButton
+
+	slot6 = function(slot0, slot1)
+		--- BLOCK #0 1-20, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.GetComponent
+		slot5 = "ObjectReference"
+		slot2 = slot2(slot4, slot5)
+		slot5 = slot2
+		slot3 = slot2.GetRefValue
+		slot6 = "txtNameUSDFText"
+		slot3 = slot3(slot5, slot6)
+		slot4 = ClientTextUtils
+		slot4 = slot4.setText
+		slot6 = slot3
+		slot7 = string
+		slot7 = slot7.format
+		slot9 = pg
+		slot9 = slot9.getGameString
+		slot11 = "CHAT_MAIL_PANEL_INFO"
+		MULTRES = slot9(slot11)
+		MULTRES = slot7(MULTRES)
+
+		slot4(slot6, MULTRES)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5.luaRenderTooltip = slot6
 	slot5 = slot0.btnDetailCloseUButton
 
 	slot6 = function()
-		--- BLOCK #0 1-8, warpins: 1 ---
+		--- BLOCK #0 1-12, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.stopMailTranslation
+
+		slot0(slot2)
+
 		slot0 = self
 		slot0 = slot0.uWidget
 		slot2 = slot0
@@ -461,22 +622,46 @@ slot16 = function(slot0)
 	end
 
 	slot6.luaClick = slot7
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.txtMailEmptyUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "CHAT_NO_MAIL"
-	MULTRES = slot9(slot11)
+	slot6 = slot0.btnDetailDeleteUButton
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "ObjectReference"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot6
+	slot7 = slot6.GetRefValue
+	slot10 = "txtNameUText"
+	slot7 = slot7(slot9, slot10)
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot7
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "DELETE"
+	MULTRES = slot11(slot13)
 
-	slot6(slot8, MULTRES)
+	slot8(slot10, MULTRES)
 
-	slot6 = {}
-	slot0.mailDatas = slot6
-	slot8 = slot0
-	slot6 = slot0.initMailList
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.txtMailEmptyUSDFText
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "CHAT_NO_MAIL"
+	MULTRES = slot11(slot13)
 
-	slot6(slot8)
+	slot8(slot10, MULTRES)
+
+	slot8 = {}
+	slot0.mailDatas = slot8
+	slot10 = slot0
+	slot8 = slot0.initOtherList
+
+	slot8(slot10)
+
+	slot10 = slot0
+	slot8 = slot0.initMailList
+
+	slot8(slot10)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -485,9 +670,592 @@ slot16 = function(slot0)
 
 end
 
-slot6.initView = slot16
+slot9.initView = slot23
 
-slot16 = function(slot0)
+slot23 = function(slot0)
+	--- BLOCK #0 1-30, warpins: 1 ---
+	slot1 = slot0.translateUWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.btnOtherUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setOtherPanelVisible
+		slot3 = self
+		slot3 = slot3.otherPanelVisible
+		slot3 = not slot3
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.otherBtnCloseUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setOtherPanelVisible
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.listOtherUList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot3 = slot2.tIndex
+		--- END OF BLOCK #0 ---
+
+		if slot3 == 0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-10, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.renderSwitchSettingItem
+		slot6 = slot0
+		slot7 = slot2
+
+		slot3(slot5, slot6, slot7)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #2 11-13, warpins: 1 ---
+		slot3 = slot2.tIndex
+		--- END OF BLOCK #2 ---
+
+		if slot3 == 4 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 14-19, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.renderMailTranslationSettingItem
+		slot6 = slot0
+		slot7 = slot2
+
+		slot3(slot5, slot6, slot7)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 20-20, warpins: 3 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getExtensionFunctionListByType
+	slot4 = "Mail"
+	slot1 = slot1(slot3, slot4)
+	slot2 = slot0.listOtherUList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.setOtherPanelVisible
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.initOtherList = slot23
+
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-70, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.GetComponent
+	slot6 = "ObjectReference"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "textTitleUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot3
+	slot5 = slot3.GetRefValue
+	slot8 = "button1UButton"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot3
+	slot6 = slot3.GetRefValue
+	slot9 = "button2UButton"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot3
+	slot7 = slot3.GetRefValue
+	slot10 = "btnName1USDFText"
+	slot7 = slot7(slot9, slot10)
+	slot10 = slot3
+	slot8 = slot3.GetRefValue
+	slot11 = "btnName2USDFText"
+	slot8 = slot8(slot10, slot11)
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot4
+	slot12 = pg
+	slot12 = slot12.getLocalizationText
+	slot14 = slot2.label
+	MULTRES = slot12(slot14)
+
+	slot9(slot11, MULTRES)
+
+	slot9 = SettingSelectorTextData
+	slot10 = slot2.widgetTxt
+	slot10 = slot10[1]
+	slot9 = slot9[slot10]
+	slot10 = SettingSelectorTextData
+	slot11 = slot2.widgetTxt
+	slot11 = slot11[2]
+	slot10 = slot10[slot11]
+	slot11 = ClientTextUtils
+	slot11 = slot11.setText
+	slot13 = slot7
+	slot14 = pg
+	slot14 = slot14.getLocalizationText
+	slot16 = slot9.name
+	MULTRES = slot14(slot16)
+
+	slot11(slot13, MULTRES)
+
+	slot11 = ClientTextUtils
+	slot11 = slot11.setText
+	slot13 = slot8
+	slot14 = pg
+	slot14 = slot14.getLocalizationText
+	slot16 = slot10.name
+	MULTRES = slot14(slot16)
+
+	slot11(slot13, MULTRES)
+
+	slot11 = slot2.checkFunc
+	slot11 = slot0[slot11]
+	slot13 = slot0
+	slot14 = slot2.settingType
+	slot11 = slot11(slot13, slot14)
+	slot12 = not slot11
+	slot5.isSelected = slot12
+	slot6.isSelected = slot11
+
+	slot12 = function()
+		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = self
+		slot1 = data
+		slot1 = slot1.func
+		slot0 = slot0[slot1]
+		slot2 = self
+		slot3 = false
+		slot4 = data
+		slot4 = slot4.settingType
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = button1UButton
+		slot1 = true
+		slot0.isSelected = slot1
+		slot0 = button2UButton
+		slot1 = false
+		slot0.isSelected = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5.luaClick = slot12
+
+	slot12 = function()
+		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = self
+		slot1 = data
+		slot1 = slot1.func
+		slot0 = slot0[slot1]
+		slot2 = self
+		slot3 = true
+		slot4 = data
+		slot4 = slot4.settingType
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = button1UButton
+		slot1 = false
+		slot0.isSelected = slot1
+		slot0 = button2UButton
+		slot1 = true
+		slot0.isSelected = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6.luaClick = slot12
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.renderSwitchSettingItem = slot23
+
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-39, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.GetComponent
+	slot6 = "ObjectReference"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "txtNameUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot3
+	slot5 = slot3.GetRefValue
+	slot8 = "btnOpenUButton"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot5
+	slot6 = slot5.GetComponent
+	slot9 = "ObjectReference"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot6
+	slot7 = slot6.GetRefValue
+	slot10 = "uIBtn1stConfirmUButton"
+	slot7 = slot7(slot9, slot10)
+	slot10 = slot6
+	slot8 = slot6.GetRefValue
+	slot11 = "txtNameUText"
+	slot8 = slot8(slot10, slot11)
+	slot11 = slot6
+	slot9 = slot6.GetRefValue
+	slot12 = "keyHotKeyContent"
+	slot9 = slot9(slot11, slot12)
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot4
+	slot13 = pg
+	slot13 = slot13.getLocalizationText
+	slot15 = slot2.label
+	MULTRES = slot13(slot15)
+
+	slot10(slot12, MULTRES)
+
+	slot10 = slot0.mailTranslationSelected
+	--- END OF BLOCK #0 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 40-41, warpins: 1 ---
+	slot10 = "AI_TRANSLATED"
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 42-42, warpins: 1 ---
+	slot10 = "AI_TRANSLATE"
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 43-70, warpins: 2 ---
+	slot11 = ClientTextUtils
+	slot11 = slot11.setText
+	slot13 = slot8
+	slot14 = pg
+	slot14 = slot14.getGameString
+	slot16 = slot10
+	MULTRES = slot14(slot16)
+
+	slot11(slot13, MULTRES)
+
+	slot11 = HotkeyConst
+	slot11 = slot11.INPUT_MAP_ACTION_KEY
+	slot11 = slot11.GamepadConfirm
+	slot14 = slot9
+	slot12 = slot9.SetHotKeyPaths
+	slot15 = slot11
+
+	slot12(slot14, slot15)
+
+	slot14 = slot7
+	slot12 = slot7.SetGamepadAction
+	slot15 = slot11
+	slot16 = slot9.gameObject
+
+	slot12(slot14, slot15, slot16)
+
+	slot14 = slot7
+	slot12 = slot7.SetHotkeyActiveOnlyInCurrentItem
+	slot15 = true
+
+	slot12(slot14, slot15)
+
+	slot12 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot1 = data
+		slot1 = slot1.func
+		slot0 = slot0[slot1]
+		slot2 = self
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot7.luaClick = slot12
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot9.renderMailTranslationSettingItem = slot23
+
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot0.otherPanelVisible = slot1
+	slot2 = slot0.btnOtherUButton
+	slot2.isSelected = slot1
+	slot2 = slot0.otherPanelUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-14, warpins: 1 ---
+	slot2 = slot0.listOtherUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot9.setOtherPanelVisible = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = slot0.mailTranslationSelected
+	slot1 = not slot1
+	slot0.mailTranslationSelected = slot1
+	slot1 = slot0.listOtherUList
+	slot3 = slot1
+	slot1 = slot1.RefreshList
+
+	slot1(slot3)
+
+	slot1 = slot0.mailTranslationSelected
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-13, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopMailTranslation
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-20, warpins: 2 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.TryGetCurrentPage
+	slot4 = "ShowDetail"
+	slot1, slot2 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	if slot2 == 1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-23, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.refreshMailContent
+
+	slot3(slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-24, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot9.toggleMailTranslation = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.chat
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-23, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.chat
+	slot3 = slot1
+	slot1 = slot1.cancelTextTranslationOwner
+	slot4 = slot0.mailTitleTranslationOwner
+
+	slot1(slot3, slot4)
+
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.chat
+	slot3 = slot1
+	slot1 = slot1.cancelTextTranslationOwner
+	slot4 = slot0.mailContentTranslationOwner
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-31, warpins: 3 ---
+	slot1 = 0
+	slot0.mailTranslationPendingCount = slot1
+	slot1 = slot0.translateUWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot9.stopMailTranslation = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0.rewardListUList
 
@@ -625,7 +1393,7 @@ slot16 = function(slot0)
 		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 49-87, warpins: 2 ---
+		--- BLOCK #10 49-86, warpins: 2 ---
 		slot13 = slot0
 		slot11 = slot0.TryChangePage
 		slot14 = "MailAndReward"
@@ -653,9 +1421,8 @@ slot16 = function(slot0)
 		slot14 = LuaUIUtils
 		slot14 = slot14.getCountDownString
 		slot16 = slot2.RemoveTime
-		slot17 = os
-		slot17 = slot17.time
-		slot17 = slot17()
+		slot17 = Time
+		slot17 = slot17.secondCache
 		slot16 = slot16 - slot17
 		slot17 = UIConst
 		slot17 = slot17.TimeType
@@ -680,21 +1447,21 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #11 88-89, warpins: 1 ---
+		--- BLOCK #11 87-88, warpins: 1 ---
 		slot11 = false
 		--- END OF BLOCK #11 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-		--- BLOCK #12 90-90, warpins: 1 ---
+		--- BLOCK #12 89-89, warpins: 1 ---
 		slot11 = true
 		--- END OF BLOCK #12 ---
 
 		FLOW; TARGET BLOCK #13
 
 
-		--- BLOCK #13 91-92, warpins: 2 ---
+		--- BLOCK #13 90-91, warpins: 2 ---
 		--- END OF BLOCK #13 ---
 
 		slot11 = if slot11 then
@@ -704,7 +1471,7 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #14 93-103, warpins: 1 ---
+		--- BLOCK #14 92-102, warpins: 1 ---
 		slot12 = self
 		slot14 = slot12
 		slot12 = slot12.getGiftMailGiverName
@@ -722,7 +1489,7 @@ slot16 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-		--- BLOCK #15 104-108, warpins: 1 ---
+		--- BLOCK #15 103-107, warpins: 1 ---
 		slot12 = ClientTextUtils
 		slot12 = slot12.setText
 		slot14 = slot6
@@ -735,7 +1502,7 @@ slot16 = function(slot0)
 		FLOW; TARGET BLOCK #16
 
 
-		--- BLOCK #16 109-124, warpins: 2 ---
+		--- BLOCK #16 108-123, warpins: 2 ---
 		slot12 = self
 		slot14 = slot12
 		slot12 = slot12.trySetGiftMailGiverDisplayName
@@ -761,7 +1528,7 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #17 125-130, warpins: 1 ---
+		--- BLOCK #17 124-129, warpins: 1 ---
 		slot13 = self
 		slot15 = slot13
 		slot13 = slot13.convertGiftMailItems
@@ -775,7 +1542,7 @@ slot16 = function(slot0)
 		FLOW; TARGET BLOCK #18
 
 
-		--- BLOCK #18 131-134, warpins: 2 ---
+		--- BLOCK #18 130-133, warpins: 2 ---
 		slot13 = #slot12
 		slot14 = 0
 		--- END OF BLOCK #18 ---
@@ -787,21 +1554,21 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #19 135-136, warpins: 1 ---
+		--- BLOCK #19 134-135, warpins: 1 ---
 		slot13 = false
 		--- END OF BLOCK #19 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-		--- BLOCK #20 137-137, warpins: 1 ---
+		--- BLOCK #20 136-136, warpins: 1 ---
 		slot13 = true
 		--- END OF BLOCK #20 ---
 
 		FLOW; TARGET BLOCK #21
 
 
-		--- BLOCK #21 138-139, warpins: 2 ---
+		--- BLOCK #21 137-138, warpins: 2 ---
 		--- END OF BLOCK #21 ---
 
 		slot13 = if slot13 then
@@ -811,7 +1578,7 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #22 140-145, warpins: 1 ---
+		--- BLOCK #22 139-144, warpins: 1 ---
 		slot14 = LuaUIUtils
 		slot14 = slot14.renderMailRewards
 		slot16 = slot4
@@ -825,7 +1592,7 @@ slot16 = function(slot0)
 		FLOW; TARGET BLOCK #23
 
 
-		--- BLOCK #23 146-168, warpins: 2 ---
+		--- BLOCK #23 145-167, warpins: 2 ---
 		slot14 = string
 		slot14 = slot14.format
 		slot16 = RedDotConst
@@ -856,7 +1623,7 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #24 169-179, warpins: 1 ---
+		--- BLOCK #24 168-178, warpins: 1 ---
 		slot17 = pg
 		slot17 = slot17.global
 		slot17 = slot17.setRedDot
@@ -874,7 +1641,7 @@ slot16 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-		--- BLOCK #25 180-181, warpins: 1 ---
+		--- BLOCK #25 179-180, warpins: 1 ---
 		--- END OF BLOCK #25 ---
 
 		slot16 = if slot16 then
@@ -884,7 +1651,7 @@ slot16 = function(slot0)
 		end
 
 
-		--- BLOCK #26 182-192, warpins: 1 ---
+		--- BLOCK #26 181-191, warpins: 1 ---
 		slot17 = pg
 		slot17 = slot17.global
 		slot17 = slot17.setRedDot
@@ -902,7 +1669,7 @@ slot16 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-		--- BLOCK #27 193-202, warpins: 1 ---
+		--- BLOCK #27 192-201, warpins: 1 ---
 		slot17 = pg
 		slot17 = slot17.global
 		slot17 = slot17.setRedDot
@@ -920,7 +1687,69 @@ slot16 = function(slot0)
 		FLOW; TARGET BLOCK #28
 
 
-		--- BLOCK #28 203-203, warpins: 3 ---
+		--- BLOCK #28 202-205, warpins: 3 ---
+		slot17 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = button
+			slot0 = slot0.isSelected
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #1 5-12, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.uWidget
+			slot2 = slot0
+			slot0 = slot0.TryGetCurrentPage
+			slot3 = "ShowDetail"
+			slot0, slot1 = slot0(slot2, slot3)
+
+			--- END OF BLOCK #1 ---
+
+			if slot1 == 1 then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #3
+			end
+
+
+			--- BLOCK #2 13-13, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 14-19, warpins: 2 ---
+			slot2 = self
+			slot4 = slot2
+			slot2 = slot2.selectMail
+			slot5 = index
+			slot5 = slot5 + 1
+
+			slot2(slot4, slot5)
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 20-20, warpins: 2 ---
+			return
+			--- END OF BLOCK #4 ---
+
+
+
+		end
+
+		slot0.luaClick = slot17
+
 		return
 		--- END OF BLOCK #28 ---
 
@@ -932,32 +1761,14 @@ slot16 = function(slot0)
 	slot1 = slot0.mailListUList
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-21, warpins: 1 ---
-		slot1 = self
-		slot2 = slot0.selectedIndex
-		slot2 = slot2 + 1
-		slot1.curSelectedMailIndex = slot2
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
-		slot1 = slot1.refreshMailContent
+		slot1 = slot1.selectMail
+		slot4 = slot0.selectedIndex
+		slot4 = slot4 + 1
 
-		slot1(slot3)
-
-		slot1 = self
-		slot1 = slot1.mailListUList
-		slot3 = slot1
-		slot1 = slot1.RefreshList
-
-		slot1(slot3)
-
-		slot1 = self
-		slot1 = slot1.uWidget
-		slot3 = slot1
-		slot1 = slot1.TryChangePage
-		slot4 = "ShowDetail"
-		slot5 = 1
-
-		slot1(slot3, slot4, slot5)
+		slot1(slot3, slot4)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1010,9 +1821,40 @@ slot16 = function(slot0)
 
 end
 
-slot6.initMailList = slot16
+slot9.initMailList = slot23
 
-slot16 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot0.curSelectedMailIndex = slot1
+	slot4 = slot0
+	slot2 = slot0.refreshMailContent
+
+	slot2(slot4)
+
+	slot2 = slot0.mailListUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	slot2 = slot0.uWidget
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "ShowDetail"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.selectMail = slot23
+
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.CreatedTime
 	slot3 = slot1.CreatedTime
@@ -1048,7 +1890,7 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot17 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1386,7 +2228,7 @@ slot17 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #28
 
 
-	--- BLOCK #28 142-151, warpins: 1 ---
+	--- BLOCK #28 142-166, warpins: 1 ---
 	slot0.mailDatas = slot6
 	slot7 = slot0.mailListUList
 	slot9 = slot7
@@ -1394,6 +2236,23 @@ slot17 = function(slot0, slot1, slot2)
 	slot10 = slot6
 
 	slot7(slot9, slot10)
+
+	slot7 = RewardStateUtils
+	slot7 = slot7.applyClaimButton
+	slot9 = slot0.btnAllReadUButton
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot12 = slot10
+	slot10 = slot10.checkHasRewardMail
+	slot10 = slot10(slot12)
+	slot11 = RedDotConst
+	slot11 = slot11.RedDotPath
+	slot11 = slot11.FUNC_MENU_MAIL
+	slot12 = false
+	slot13 = "claimAll"
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
 
 	slot7 = #slot6
 	slot8 = 0
@@ -1406,7 +2265,7 @@ slot17 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #29 152-158, warpins: 1 ---
+	--- BLOCK #29 167-173, warpins: 1 ---
 	slot7 = slot0.mailListUList
 	slot9 = slot7
 	slot7 = slot7.SelectItem
@@ -1420,7 +2279,7 @@ slot17 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #30 159-164, warpins: 1 ---
+	--- BLOCK #30 174-179, warpins: 1 ---
 	slot7 = slot0.uWidget
 	slot9 = slot7
 	slot7 = slot7.TryChangePage
@@ -1434,7 +2293,7 @@ slot17 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 165-171, warpins: 2 ---
+	--- BLOCK #31 180-186, warpins: 2 ---
 	slot7 = slot0.noMessageUWidget
 	slot9 = slot7
 	slot7 = slot7.SetActive
@@ -1449,14 +2308,14 @@ slot17 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #32 172-173, warpins: 1 ---
+	--- BLOCK #32 187-188, warpins: 1 ---
 	slot10 = false
 	--- END OF BLOCK #32 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #33 174-174, warpins: 1 ---
+	--- BLOCK #33 189-189, warpins: 1 ---
 	slot10 = true
 
 	--- END OF BLOCK #33 ---
@@ -1464,17 +2323,8 @@ slot17 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 175-184, warpins: 2 ---
+	--- BLOCK #34 190-191, warpins: 2 ---
 	slot7(slot9, slot10)
-
-	slot7 = slot0.btnAllReadUButton
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.chat
-	slot10 = slot8
-	slot8 = slot8.checkHasRewardMail
-	slot8 = slot8(slot10)
-	slot7.interactable = slot8
 
 	return
 	--- END OF BLOCK #34 ---
@@ -1483,9 +2333,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot6.refreshMailList = slot17
+slot9.refreshMailList = slot24
 
-slot17 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -1632,7 +2482,7 @@ slot17 = function(slot0)
 
 end
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.Params
 	slot2 = slot2.giftInfo
@@ -1641,7 +2491,7 @@ slot18 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
@@ -1674,29 +2524,66 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-24, warpins: 2 ---
-	slot4 = calcMailGifts
+	--- BLOCK #3 20-25, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.isTable
 	slot6 = slot2
-	slot4, slot5, slot6 = slot4(slot6)
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #3 ---
 
-	slot4 = if slot4 then
+	if slot4 == false then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 25-28, warpins: 1 ---
+	--- BLOCK #4 26-38, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "Failed to parse mail gift info, mailId=%s, valueType=%s"
+	slot8 = tostring
+	slot10 = slot1.MailId
+	slot8 = slot8(slot10)
+	slot9 = type
+	slot11 = slot2
+	MULTRES = slot9(slot11)
+
+	slot4(slot6, slot7, slot8, MULTRES)
+
+	slot4 = {}
+
+	return slot4
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 39-43, warpins: 2 ---
+	slot4 = calcMailGifts
+	slot6 = slot2
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 44-47, warpins: 1 ---
 	slot7 = pairs
 	slot9 = slot4
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 29-42, warpins: 1 ---
+	--- BLOCK #7 48-61, warpins: 1 ---
 	slot12 = ItemUtils
 	slot12 = slot12.getItemCountFromNumInfo
 	slot14 = slot11
@@ -1705,8 +2592,8 @@ slot18 = function(slot0, slot1)
 	slot13 = slot13.insert
 	slot15 = slot3
 	slot16 = {
-		tIndex = 0,
-		type = 0
+		type = 0,
+		tIndex = 0
 	}
 	slot16.id = slot10
 	slot16.num = slot12
@@ -1716,46 +2603,46 @@ slot18 = function(slot0, slot1)
 
 	slot13(slot15, slot16)
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 43-44, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
-	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 45-46, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 62-63, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 64-65, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
 	slot5 = if slot5 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #8 47-50, warpins: 1 ---
+	--- BLOCK #10 66-69, warpins: 1 ---
 	slot7 = pairs
 	slot9 = slot5
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #9 51-64, warpins: 1 ---
+	--- BLOCK #11 70-83, warpins: 1 ---
 	slot12 = table
 	slot12 = slot12.insert
 	slot14 = slot3
 	slot15 = {
 		type = 1,
-		tIndex = 0,
-		num = 1
+		num = 1,
+		tIndex = 0
 	}
 	slot16 = slot11.templateId
 	slot15.petId = slot16
@@ -1769,45 +2656,45 @@ slot18 = function(slot0, slot1)
 
 	slot12(slot14, slot15)
 
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 65-66, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #9
-	GO OUT TO BLOCK #11
-
-
-	--- BLOCK #11 67-68, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 84-85, warpins: 2 ---
+	--- END OF BLOCK #12 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 86-87, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
 	slot6 = if slot6 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #12 69-72, warpins: 1 ---
+	--- BLOCK #14 88-91, warpins: 1 ---
 	slot7 = ipairs
 	slot9 = slot6
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #13 73-84, warpins: 1 ---
+	--- BLOCK #15 92-103, warpins: 1 ---
 	slot12 = table
 	slot12 = slot12.insert
 	slot14 = slot3
 	slot15 = {
-		tIndex = 0,
-		type = 0
+		type = 0,
+		tIndex = 0
 	}
 	slot16 = slot11.itemId
 	slot15.id = slot16
@@ -1819,40 +2706,40 @@ slot18 = function(slot0, slot1)
 
 	slot12(slot14, slot15)
 
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 85-86, warpins: 2 ---
-	--- END OF BLOCK #14 ---
-
-	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #13
-	GO OUT TO BLOCK #15
-
-
-	--- BLOCK #15 87-87, warpins: 2 ---
-	return slot3
-
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 88-89, warpins: 2 ---
+	--- BLOCK #16 104-105, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 106-106, warpins: 2 ---
+	return slot3
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 107-108, warpins: 2 ---
 	slot2 = {}
 
 	return slot2
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot6.getMailGiftItems = slot18
+slot9.getMailGiftItems = slot25
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = MailNewComponent
 	slot1 = slot1._platformHooks
@@ -1892,7 +2779,7 @@ slot18 = function(slot0)
 	--- BLOCK #3 13-13, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #44
+	UNCONDITIONAL JUMP; TARGET BLOCK #49
 
 
 	--- BLOCK #4 14-18, warpins: 3 ---
@@ -1908,7 +2795,12 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #5 19-25, warpins: 1 ---
+	--- BLOCK #5 19-38, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.stopMailTranslation
+
+	slot3(slot5)
+
 	slot3 = slot0.uWidget
 	slot5 = slot3
 	slot3 = slot3.TryChangePage
@@ -1917,12 +2809,24 @@ slot18 = function(slot0)
 
 	slot3(slot5, slot6, slot7)
 
+	slot3 = RewardStateUtils
+	slot3 = slot3.applyClaimButton
+	slot5 = slot0.btnDetailConfirmUButton
+	slot6 = false
+	slot7 = RedDotConst
+	slot7 = slot7.RedDotPath
+	slot7 = slot7.FUNC_MENU_MAIL
+	slot8 = false
+	slot9 = "detailClaim"
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #6 26-39, warpins: 1 ---
+	--- BLOCK #6 39-52, warpins: 1 ---
 	slot3 = slot0.uWidget
 	slot5 = slot3
 	slot3 = slot3.TryChangePage
@@ -1946,21 +2850,21 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #7 40-41, warpins: 1 ---
+	--- BLOCK #7 53-54, warpins: 1 ---
 	slot3 = false
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 42-42, warpins: 1 ---
+	--- BLOCK #8 55-55, warpins: 1 ---
 	slot3 = true
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-54, warpins: 2 ---
+	--- BLOCK #9 56-64, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
@@ -1968,94 +2872,107 @@ slot18 = function(slot0)
 	slot4 = slot4.checkMailHasGift
 	slot7 = slot2
 	slot4 = slot4(slot6, slot7)
-	slot5 = slot0.btnDetailDeleteUButton
-	slot7 = slot5
-	slot5 = slot5.SetActive
 	--- END OF BLOCK #9 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot4 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 55-58, warpins: 1 ---
-	slot8 = slot2.Params
-	slot8 = slot8.giftReceived
+	--- BLOCK #10 65-67, warpins: 1 ---
+	slot5 = slot2.Params
+	slot5 = slot5.giftReceived
+	slot5 = not slot5
 	--- END OF BLOCK #10 ---
 
-	if slot8 ~= nil then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #13
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 59-62, warpins: 1 ---
-	slot8 = slot2.Params
-	slot8 = slot8.giftReceived
+	--- BLOCK #11 68-72, warpins: 2 ---
+	slot6 = slot0.btnDetailDeleteUButton
+	slot8 = slot6
+	slot6 = slot6.SetActive
 	--- END OF BLOCK #11 ---
 
-	if slot8 ~= true then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 63-64, warpins: 1 ---
-	slot8 = false
+	--- BLOCK #12 73-76, warpins: 1 ---
+	slot9 = slot2.Params
+	slot9 = slot9.giftReceived
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 65-65, warpins: 3 ---
-	slot8 = true
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 66-71, warpins: 2 ---
-	slot5(slot7, slot8)
-
-	slot5 = slot0.btnDetailConfirmUButton
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	--- END OF BLOCK #14 ---
-
-	slot8 = if slot4 then
-	JUMP TO BLOCK #15
+	if slot9 ~= nil then
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #15 72-74, warpins: 1 ---
-	slot8 = slot2.Params
-	slot8 = slot8.giftReceived
-	slot8 = not slot8
+	--- BLOCK #13 77-80, warpins: 1 ---
+	slot9 = slot2.Params
+	slot9 = slot9.giftReceived
+	--- END OF BLOCK #13 ---
+
+	if slot9 ~= true then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 81-82, warpins: 1 ---
+	slot9 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 83-83, warpins: 3 ---
+	slot9 = true
 
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 75-86, warpins: 2 ---
-	slot5(slot7, slot8)
+	--- BLOCK #16 84-110, warpins: 2 ---
+	slot6(slot8, slot9)
 
-	slot5 = slot0.btnDetailConfirmUButton
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "ObjectReference"
-	slot5 = slot5(slot7, slot8)
-	slot8 = slot5
-	slot6 = slot5.GetRefValue
-	slot9 = "txtNameUText"
+	slot6 = slot0.btnDetailConfirmUButton
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	slot6 = RewardStateUtils
+	slot6 = slot6.applyClaimButton
+	slot8 = slot0.btnDetailConfirmUButton
+	slot9 = slot5
+	slot10 = RedDotConst
+	slot10 = slot10.RedDotPath
+	slot10 = slot10.FUNC_MENU_MAIL
+	slot11 = false
+	slot12 = "detailClaim"
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	slot6 = slot0.btnDetailConfirmUButton
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "ObjectReference"
 	slot6 = slot6(slot8, slot9)
+	slot9 = slot6
+	slot7 = slot6.GetRefValue
+	slot10 = "txtNameUText"
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #16 ---
 
 	slot3 = if slot3 then
@@ -2065,45 +2982,45 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #17 87-95, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot6
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "SHOP_GIFT_OPEN"
-	MULTRES = slot10(slot12)
+	--- BLOCK #17 111-119, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot7
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "SHOP_GIFT_OPEN"
+	MULTRES = slot11(slot13)
 
-	slot7(slot9, MULTRES)
+	slot8(slot10, MULTRES)
 
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 96-103, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot6
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "QUEST_DELEGATION_CLAIM"
-	MULTRES = slot10(slot12)
+	--- BLOCK #18 120-127, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot7
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "QUEST_DELEGATION_CLAIM"
+	MULTRES = slot11(slot13)
 
-	slot7(slot9, MULTRES)
+	slot8(slot10, MULTRES)
 
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 104-110, warpins: 2 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.detailTitleUSDFText
-	slot10 = slot2.Title
+	--- BLOCK #19 128-134, warpins: 2 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.detailTitleUSDFText
+	slot11 = slot2.Title
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #19 ---
 
@@ -2114,144 +3031,140 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #20 111-120, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.getGiftMailGiverName
-	slot10 = slot2
-	slot7 = slot7(slot9, slot10)
-	slot8 = ClientTextUtils
-	slot8 = slot8.setText
-	slot10 = slot0.detailAddresserNameUSDFText
-	slot11 = slot7
+	--- BLOCK #20 135-144, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.getGiftMailGiverName
+	slot11 = slot2
+	slot8 = slot8(slot10, slot11)
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.detailAddresserNameUSDFText
+	slot12 = slot8
 
-	slot8(slot10, slot11)
+	slot9(slot11, slot12)
 
 	--- END OF BLOCK #20 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 121-125, warpins: 1 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.detailAddresserNameUSDFText
-	slot10 = slot2.SrcName
+	--- BLOCK #21 145-149, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.detailAddresserNameUSDFText
+	slot11 = slot2.SrcName
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #21 ---
 
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 126-150, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.trySetGiftMailGiverDisplayName
-	slot10 = tonumber
-	slot12 = slot2.SrcId
-	slot10 = slot10(slot12)
-	slot11 = slot2
-	slot12 = slot0.detailAddresserNameUSDFText
+	--- BLOCK #22 150-174, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.trySetGiftMailGiverDisplayName
+	slot11 = tonumber
+	slot13 = slot2.SrcId
+	slot11 = slot11(slot13)
+	slot12 = slot2
+	slot13 = slot0.detailAddresserNameUSDFText
 
-	slot7(slot9, slot10, slot11, slot12)
+	slot8(slot10, slot11, slot12, slot13)
 
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.textTimeUSDFText
-	slot10 = pg
-	slot10 = slot10.getLocalizationTimeYMD
-	slot12 = slot2.CreatedTime
-	slot13 = true
-	MULTRES = slot10(slot12, slot13)
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot0.textTimeUSDFText
+	slot11 = pg
+	slot11 = slot11.getLocalizationTimeYMD
+	slot13 = slot2.CreatedTime
+	slot14 = true
+	MULTRES = slot11(slot13, slot14)
 
-	slot7(slot9, MULTRES)
+	slot8(slot10, MULTRES)
 
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot7 = slot7.mailContent
-	slot8 = slot2.MailId
-	slot7 = slot7[slot8]
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.mailContent
+	slot9 = slot2.MailId
+	slot8 = slot8[slot9]
 	--- END OF BLOCK #22 ---
 
-	if slot7 == nil then
+	if slot8 == nil then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #23 151-158, warpins: 1 ---
-	slot7 = type
-	slot9 = pg
-	slot9 = slot9.game
-	slot9 = slot9.chat
-	slot9 = slot9.requestMailContent
-	slot7 = slot7(slot9)
+	--- BLOCK #23 175-182, warpins: 1 ---
+	slot9 = type
+	slot11 = pg
+	slot11 = slot11.game
+	slot11 = slot11.chat
+	slot11 = slot11.requestMailContent
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #23 ---
 
-	if slot7 == "function" then
+	if slot9 == "function" then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 159-166, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot9 = slot7
-	slot7 = slot7.requestMailContent
-	slot10 = slot2.MailId
-	slot11 = {
+	--- BLOCK #24 183-190, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot11 = slot9
+	slot9 = slot9.requestMailContent
+	slot12 = slot2.MailId
+	slot13 = {
 		highPriority = true
 	}
 
-	slot7(slot9, slot10, slot11)
+	slot9(slot11, slot12, slot13)
 
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 167-176, warpins: 3 ---
-	slot7 = string
-	slot7 = slot7.gsub
-	slot9 = pg
-	slot9 = slot9.game
-	slot9 = slot9.chat
-	slot9 = slot9.mailContent
-	slot10 = slot2.MailId
-	slot9 = slot9[slot10]
+	--- BLOCK #25 191-194, warpins: 3 ---
+	slot9 = string
+	slot9 = slot9.gsub
 	--- END OF BLOCK #25 ---
 
-	slot9 = if not slot9 then
+	slot11 = if not slot8 then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 177-177, warpins: 1 ---
-	slot9 = ""
+	--- BLOCK #26 195-195, warpins: 1 ---
+	slot11 = ""
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 178-194, warpins: 2 ---
-	slot10 = "\\n"
-	slot11 = "\n"
-	slot7 = slot7(slot9, slot10, slot11)
-	slot8 = slot0.detailScrollRect
-	slot8 = slot8.content
-	slot10 = slot8
-	slot8 = slot8.GetComponent
-	slot11 = "UBaseText"
-	slot8 = slot8(slot10, slot11)
+	--- BLOCK #27 196-214, warpins: 2 ---
+	slot12 = "\\n"
+	slot13 = "\n"
+	slot9 = slot9(slot11, slot12, slot13)
+	slot10 = slot0.detailScrollRect
+	slot10 = slot10.content
+	slot12 = slot10
+	slot10 = slot10.GetComponent
+	slot13 = "UBaseText"
+	slot10 = slot10(slot12, slot13)
+	slot11 = true
+	slot10.enabledHyperlink = slot11
 
-	slot9 = function(slot0, slot1, slot2)
+	slot11 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot3 = LuaUIUtils
 		slot3 = slot3.clickHyperText
@@ -2268,11 +3181,11 @@ slot18 = function(slot0)
 
 	end
 
-	slot8.luaOnHyperlinkClick = slot9
-	slot11 = slot0
-	slot9 = slot0.getMailGiftItems
-	slot12 = slot2
-	slot9 = slot9(slot11, slot12)
+	slot10.luaOnHyperlinkClick = slot11
+	slot13 = slot0
+	slot11 = slot0.getMailGiftItems
+	slot14 = slot2
+	slot11 = slot11(slot13, slot14)
 	--- END OF BLOCK #27 ---
 
 	slot3 = if slot3 then
@@ -2282,240 +3195,843 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #28 195-199, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.convertGiftMailItems
-	slot13 = slot2
-	slot14 = slot9
+	--- BLOCK #28 215-219, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.convertGiftMailItems
+	slot15 = slot2
+	slot16 = slot11
 
-	slot10(slot12, slot13, slot14)
+	slot12(slot14, slot15, slot16)
 
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 200-207, warpins: 2 ---
-	slot10 = slot0.mailDetailUComponent
-	slot12 = slot10
-	slot10 = slot10.TryChangePage
-	slot13 = "HaveOrNot"
-	slot14 = #slot9
-	slot15 = 0
+	--- BLOCK #29 220-227, warpins: 2 ---
+	slot12 = slot0.mailDetailUComponent
+	slot14 = slot12
+	slot12 = slot12.TryChangePage
+	slot15 = "HaveOrNot"
+	slot16 = #slot11
+	slot17 = 0
 	--- END OF BLOCK #29 ---
 
-	if slot14 > slot15 then
+	if slot16 > slot17 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 208-209, warpins: 1 ---
-	slot14 = 0
+	--- BLOCK #30 228-229, warpins: 1 ---
+	slot16 = 0
 	--- END OF BLOCK #30 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 210-210, warpins: 1 ---
-	slot14 = 1
+	--- BLOCK #31 230-230, warpins: 1 ---
+	slot16 = 1
 
 	--- END OF BLOCK #31 ---
 
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 211-217, warpins: 2 ---
-	slot10(slot12, slot13, slot14)
+	--- BLOCK #32 231-238, warpins: 2 ---
+	slot12(slot14, slot15, slot16)
 
-	slot10 = tonumber
-	slot12 = slot2.SrcId
-	slot10 = slot10(slot12)
-	slot11 = SPECIAL_GIFT_MAIL_SOURCE_ID
+	slot12 = slot9
+	slot13 = tonumber
+	slot15 = slot2.SrcId
+	slot13 = slot13(slot15)
+	slot14 = SPECIAL_GIFT_MAIL_SOURCE_ID
 	--- END OF BLOCK #32 ---
 
-	if slot10 ~= slot11 then
+	if slot13 ~= slot14 then
 	JUMP TO BLOCK #33
 	else
 	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #33 218-219, warpins: 1 ---
+	--- BLOCK #33 239-240, warpins: 1 ---
+	slot13 = false
 	--- END OF BLOCK #33 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #40
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
 
 
-	--- BLOCK #34 220-223, warpins: 2 ---
-	slot10 = #slot9
-	slot11 = 0
+	--- BLOCK #34 241-241, warpins: 1 ---
+	slot13 = true
 	--- END OF BLOCK #34 ---
 
-	if slot10 > slot11 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #40
-	end
+	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 224-229, warpins: 1 ---
-	slot10 = ItemData
-	slot11 = slot9[1]
-	slot11 = slot11.id
-	slot10 = slot10[slot11]
+	--- BLOCK #35 242-243, warpins: 2 ---
 	--- END OF BLOCK #35 ---
 
-	slot10 = if slot10 then
+	slot13 = if not slot13 then
 	JUMP TO BLOCK #36
 	else
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #36 230-235, warpins: 1 ---
-	slot10 = ItemData
-	slot11 = slot9[1]
-	slot11 = slot11.id
-	slot10 = slot10[slot11]
+	--- BLOCK #36 244-245, warpins: 1 ---
 	--- END OF BLOCK #36 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #37 236-241, warpins: 1 ---
-	slot13 = slot0
-	slot11 = slot0.getGiftMailGiverName
-	slot14 = slot2
-	slot11 = slot11(slot13, slot14)
+	--- BLOCK #37 246-249, warpins: 2 ---
+	slot14 = #slot11
+	slot15 = 0
 	--- END OF BLOCK #37 ---
 
-	slot11 = if not slot11 then
+	if slot14 > slot15 then
 	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #39
-	end
-
-
-	--- BLOCK #38 242-242, warpins: 2 ---
-	slot11 = slot2.SrcName
-	--- END OF BLOCK #38 ---
-
-	FLOW; TARGET BLOCK #39
-
-
-	--- BLOCK #39 243-256, warpins: 2 ---
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot8
-	slot15 = string
-	slot15 = slot15.format
-	slot17 = slot7
-	slot18 = slot11
-	slot19 = pg
-	slot19 = slot19.getLocalizationText
-	slot21 = slot10.itemName
-	MULTRES = slot19(slot21)
-	MULTRES = slot15(slot17, slot18, MULTRES)
-
-	slot12(slot14, MULTRES)
-
-	--- END OF BLOCK #39 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #41
-
-
-	--- BLOCK #40 257-261, warpins: 3 ---
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot8
-	slot13 = slot7
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 262-270, warpins: 2 ---
-	slot10 = slot0.rewardListUList
-	slot12 = slot10
-	slot10 = slot10.SetList
-	slot13 = slot9
-
-	slot10(slot12, slot13)
-
-	slot10 = slot2.Params
-	slot10 = slot10.haveRead
-	--- END OF BLOCK #41 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #42
 	else
 	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #42 271-279, warpins: 1 ---
-	slot10 = slot2.Params
-	slot11 = true
-	slot10.haveRead = slot11
-	slot10 = pg
-	slot10 = slot10.me
-	slot12 = slot10
-	slot10 = slot10.setMailHaveRead
-	slot13 = slot2.MailId
+	--- BLOCK #38 250-255, warpins: 1 ---
+	slot14 = ItemData
+	slot15 = slot11[1]
+	slot15 = slot15.id
+	slot14 = slot14[slot15]
+	--- END OF BLOCK #38 ---
 
-	slot10(slot12, slot13)
+	slot14 = if slot14 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #43
+	end
 
+
+	--- BLOCK #39 256-261, warpins: 1 ---
+	slot14 = ItemData
+	slot15 = slot11[1]
+	slot15 = slot15.id
+	slot14 = slot14[slot15]
+	--- END OF BLOCK #39 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 262-267, warpins: 1 ---
+	slot17 = slot0
+	slot15 = slot0.getGiftMailGiverName
+	slot18 = slot2
+	slot15 = slot15(slot17, slot18)
+	--- END OF BLOCK #40 ---
+
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 268-268, warpins: 2 ---
+	slot15 = slot2.SrcName
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 269-279, warpins: 2 ---
+	slot16 = pg
+	slot16 = slot16.getLocalizationText
+	slot18 = slot14.itemName
+	slot16 = slot16(slot18)
+	slot17 = string
+	slot17 = slot17.format
+	slot19 = slot9
+	slot20 = slot15
+	slot21 = slot16
+	slot17 = slot17(slot19, slot20, slot21)
+	slot12 = slot17
 	--- END OF BLOCK #42 ---
 
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 280-286, warpins: 2 ---
-	slot10 = facade
-	slot12 = slot10
-	slot10 = slot10.SendMessageCommand
-	slot13 = MessageName
-	slot13 = slot13.CHAT_RED_DOT_UPDATE
+	--- BLOCK #43 280-290, warpins: 4 ---
+	slot14 = ClientTextUtils
+	slot14 = slot14.setText
+	slot16 = slot10
+	slot17 = slot12
 
-	slot10(slot12, slot13)
+	slot14(slot16, slot17)
 
-	return
+	slot16 = slot0
+	slot14 = slot0.refreshMailTranslation
+	slot17 = slot2
+	slot18 = slot12
 	--- END OF BLOCK #43 ---
 
-	FLOW; TARGET BLOCK #44
+	if slot8 == nil then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #45
+	end
 
 
-	--- BLOCK #44 287-287, warpins: 2 ---
-	return
+	--- BLOCK #44 291-292, warpins: 1 ---
+	slot19 = false
 	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #45
+	UNCONDITIONAL JUMP; TARGET BLOCK #46
 
 
-	--- BLOCK #45 288-288, warpins: 2 ---
-	return
+	--- BLOCK #45 293-293, warpins: 1 ---
+	slot19 = true
+
 	--- END OF BLOCK #45 ---
+
+	FLOW; TARGET BLOCK #46
+
+
+	--- BLOCK #46 294-303, warpins: 2 ---
+	slot14(slot16, slot17, slot18, slot19)
+
+	slot14 = slot0.rewardListUList
+	slot16 = slot14
+	slot14 = slot14.SetList
+	slot17 = slot11
+
+	slot14(slot16, slot17)
+
+	slot14 = slot2.Params
+	slot14 = slot14.haveRead
+	--- END OF BLOCK #46 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #47
+	else
+	JUMP TO BLOCK #48
+	end
+
+
+	--- BLOCK #47 304-312, warpins: 1 ---
+	slot14 = slot2.Params
+	slot15 = true
+	slot14.haveRead = slot15
+	slot14 = pg
+	slot14 = slot14.me
+	slot16 = slot14
+	slot14 = slot14.setMailHaveRead
+	slot17 = slot2.MailId
+
+	slot14(slot16, slot17)
+
+	--- END OF BLOCK #47 ---
+
+	FLOW; TARGET BLOCK #48
+
+
+	--- BLOCK #48 313-319, warpins: 2 ---
+	slot14 = facade
+	slot16 = slot14
+	slot14 = slot14.SendMessageCommand
+	slot17 = MessageName
+	slot17 = slot17.CHAT_RED_DOT_UPDATE
+
+	slot14(slot16, slot17)
+
+	return
+	--- END OF BLOCK #48 ---
+
+	FLOW; TARGET BLOCK #49
+
+
+	--- BLOCK #49 320-320, warpins: 2 ---
+	return
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 321-321, warpins: 2 ---
+	return
+	--- END OF BLOCK #50 ---
 
 
 
 end
 
-slot6.refreshMailContent = slot18
+slot9.refreshMailContent = slot25
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0.mailTranslationSelected
+
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-12, warpins: 2 ---
+	slot4 = slot1.Params
+	slot4 = slot4.mailLanguage
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #3 13-15, warpins: 1 ---
+	slot5 = ClientConfigAppCountry
+	--- END OF BLOCK #3 ---
+
+	if slot5 ~= "cn" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-17, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 18-18, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-20, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 21-22, warpins: 1 ---
+	slot4 = "zh_CN"
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 23-23, warpins: 1 ---
+	slot4 = "en"
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 24-51, warpins: 3 ---
+	slot5 = slot1.MailId
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.setting
+	slot8 = slot6
+	slot6 = slot6.getLanguage
+	slot6 = slot6(slot8)
+	slot9 = slot0
+	slot7 = slot0.startMailTranslation
+
+	slot7(slot9)
+
+	slot7 = CallbackHandler
+	slot9 = slot0
+	slot10 = "onMailTitleTranslated"
+	slot11 = slot5
+	slot12 = slot6
+	slot7 = slot7(slot9, slot10, slot11, slot12)
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot10 = slot8
+	slot8 = slot8.translateText
+	slot11 = slot1.Title
+	slot12 = slot4
+	slot13 = slot7
+	slot14 = slot0.mailTitleTranslationOwner
+	slot8 = slot8(slot10, slot11, slot12, slot13, slot14)
+	--- END OF BLOCK #9 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 52-55, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.stopMailTranslation
+
+	slot9(slot11)
+
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 56-57, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 58-58, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 59-76, warpins: 2 ---
+	slot9 = CallbackHandler
+	slot11 = slot0
+	slot12 = "onMailContentTranslated"
+	slot13 = slot5
+	slot14 = slot6
+	slot9 = slot9(slot11, slot12, slot13, slot14)
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot12 = slot10
+	slot10 = slot10.translateText
+	slot13 = slot2
+	slot14 = slot4
+	slot15 = slot9
+	slot16 = slot0.mailContentTranslationOwner
+	slot10 = slot10(slot12, slot13, slot14, slot15, slot16)
+	--- END OF BLOCK #13 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 77-79, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.stopMailTranslation
+
+	slot11(slot13)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 80-80, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot9.refreshMailTranslation = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopMailTranslation
+
+	slot1(slot3)
+
+	slot1 = 2
+	slot0.mailTranslationPendingCount = slot1
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.translateUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "AI_TRANSLATING"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = slot0.translateUWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.startMailTranslation = slot25
+
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.ctrl
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = slot0.mailTranslationSelected
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 7-10, warpins: 1 ---
+	slot3 = slot0.mailTranslationPendingCount
+	slot4 = 0
+	--- END OF BLOCK #2 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-15, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 16-17, warpins: 1 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 18-22, warpins: 2 ---
+	slot4 = slot0.mailDatas
+	slot5 = slot0.curSelectedMailIndex
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #7 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 23-25, warpins: 1 ---
+	slot5 = slot4.MailId
+	--- END OF BLOCK #8 ---
+
+	if slot5 == slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 26-33, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.setting
+	slot7 = slot5
+	slot5 = slot5.getLanguage
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #9 ---
+
+	if slot5 ~= slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 34-35, warpins: 3 ---
+	slot5 = false
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 36-36, warpins: 1 ---
+	slot5 = true
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 37-37, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot9.isCurrentMailTranslation = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.mailTranslationPendingCount
+	slot1 = slot1 - 1
+	slot0.mailTranslationPendingCount = slot1
+	slot1 = slot0.mailTranslationPendingCount
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.translateUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "AI_TRANSLATED"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot9.completeMailTranslationPart = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.isCurrentMailTranslation
+	slot8 = slot1
+	slot9 = slot2
+	slot5 = slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.stopMailTranslation
+
+	slot5(slot7)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-23, warpins: 2 ---
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot0.detailTitleUSDFText
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot7 = slot0
+	slot5 = slot0.completeMailTranslationPart
+
+	slot5(slot7)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot9.onMailTitleTranslated = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.isCurrentMailTranslation
+	slot8 = slot1
+	slot9 = slot2
+	slot5 = slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.stopMailTranslation
+
+	slot5(slot7)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-29, warpins: 2 ---
+	slot5 = slot0.detailScrollRect
+	slot5 = slot5.content
+	slot7 = slot5
+	slot5 = slot5.GetComponent
+	slot8 = "UBaseText"
+	slot5 = slot5(slot7, slot8)
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot5
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
+	slot8 = slot0
+	slot6 = slot0.completeMailTranslationPart
+
+	slot6(slot8)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot9.onMailContentTranslated = slot25
+
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot2.mail = slot1
@@ -2696,9 +4212,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.buildGiftReceiveInfo = slot18
+slot9.buildGiftReceiveInfo = slot25
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.Params
 	--- END OF BLOCK #0 ---
@@ -2792,9 +4308,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getGiftMailRechargeId = slot18
+slot9.getGiftMailRechargeId = slot25
 
-slot18 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getGiftMailRechargeId
@@ -2883,9 +4399,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.convertGiftMailItems = slot18
+slot9.convertGiftMailItems = slot25
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.Params
 	--- END OF BLOCK #0 ---
@@ -3104,9 +4620,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getGiftMailGiverName = slot18
+slot9.getGiftMailGiverName = slot25
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = Const
 	slot4 = slot4.MAIL_ID
@@ -3188,9 +4704,201 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.trySetGiftMailGiverDisplayName = slot18
+slot9.trySetGiftMailGiverDisplayName = slot25
 
-return slot6
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.prefsCacheUtils
+	slot4 = slot2
+	slot2 = slot2.setBool
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.uid
+	slot6 = "AutoDeleteReadMails"
+	slot5 = slot5 .. slot6
+	slot6 = slot1
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.setAutoDeleteReadMails = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.prefsCacheUtils
+	slot3 = slot1
+	slot1 = slot1.getBool
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.uid
+	slot5 = "AutoDeleteReadMails"
+	slot4 = slot4 .. slot5
+	slot5 = false
+
+	return slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.getAutoDeleteReadMails = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getAutoDeleteReadMails
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-19, warpins: 2 ---
+	slot2 = slot0.mailDatas
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.checkMailHasRead
+	slot5 = false
+	slot6 = ipairs
+	slot8 = slot2
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 20-26, warpins: 1 ---
+	slot11 = slot4
+	slot13 = slot3
+	slot14 = slot10
+	slot11 = slot11(slot13, slot14)
+	slot5 = slot11
+
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 27-27, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 28-29, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 30-31, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot5 == false then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 32-32, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-44, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.deleteReadedMail
+
+	slot6(slot8)
+
+	slot6 = facade
+	slot8 = slot6
+	slot6 = slot6.SendMessageCommand
+	slot9 = MessageName
+	slot9 = slot9.CHAT_RED_DOT_UPDATE
+
+	slot6(slot8, slot9)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot9.tryDeleteReadMails = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryDeleteReadMails
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.onHide = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryDeleteReadMails
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.onClose = slot25
+
+return slot9
 --- END OF BLOCK #0 ---
 
 

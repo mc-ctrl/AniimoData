@@ -1,25 +1,28 @@
---- BLOCK #0 1-27, warpins: 1 ---
+--- BLOCK #0 1-30, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.FlowCanvas.Nodes.FlowNode"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Framework.Class"
+slot5 = "Common.FlowCanvas.Nodes.FlowNode"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.Utils"
+slot6 = "Core.Framework.Class"
 slot4 = slot4(slot6)
-slot5 = slot3.LiteClass
-slot7 = "GetPetNode"
-slot8 = slot2
-slot5 = slot5(slot7, slot8)
+slot5 = require
+slot7 = "Common.Utils.Utils"
+slot5 = slot5(slot7)
+slot6 = slot4.LiteClass
+slot8 = "GetPetNode"
+slot9 = slot3
+slot6 = slot6(slot8, slot9)
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = FlowNode
 	slot4 = slot4.ctor
@@ -37,9 +40,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.ctor = slot6
+slot6.ctor = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = GetPetNode
 	slot1 = slot1.super
@@ -80,9 +83,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.registerPorts = slot6
+slot6.registerPorts = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getSpace
@@ -194,7 +197,7 @@ slot6 = function(slot0, slot1)
 
 
 	--- BLOCK #9 41-41, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -257,9 +260,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.Get_Value_Pet = slot6
+slot6.Get_Value_Pet = slot7
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

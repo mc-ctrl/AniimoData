@@ -537,7 +537,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot2.tickTimer = slot10
 
 	slot10 = function()
-		--- BLOCK #0 1-14, warpins: 1 ---
+		--- BLOCK #0 1-21, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
@@ -555,6 +555,15 @@ slot10 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3)
 
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.audio
+		slot2 = slot0
+		slot0 = slot0.triggerEvent
+		slot3 = "ui_sfx_button"
+
+		slot0(slot2, slot3)
+
 		return
 		--- END OF BLOCK #0 ---
 
@@ -565,7 +574,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot4.luaClick = slot10
 
 	slot10 = function()
-		--- BLOCK #0 1-14, warpins: 1 ---
+		--- BLOCK #0 1-21, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
@@ -580,6 +589,15 @@ slot10 = function(slot0, slot1, slot2)
 		slot2 = slot0
 		slot0 = slot0.recycleToast
 		slot3 = data
+
+		slot0(slot2, slot3)
+
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.audio
+		slot2 = slot0
+		slot0 = slot0.triggerEvent
+		slot3 = "ui_sfx_button"
 
 		slot0(slot2, slot3)
 

@@ -30,11 +30,11 @@ slot8 = slot8(slot10, slot11)
 slot9 = "UI_DamageNumber_"
 slot8.RES_PREFIX_STR = slot9
 slot9 = {
-	IMMUNE = "UI_DamageNumber_Immune",
+	EXECUTE = "UI_DamageNumber_Execute",
 	ENERGY = "UI_DamageNumber_Energy",
+	IMMUNE = "UI_DamageNumber_Immune",
 	HEAL = "UI_DamageNumber_Heal",
-	POWER_BREAK = "UI_DamageNumber_PowerBreak",
-	EXECUTE = "UI_DamageNumber_Execute"
+	POWER_BREAK = "UI_DamageNumber_PowerBreak"
 }
 slot10 = "UI_DamageNumber_"
 slot11 = slot4.DAMAGE_UI_TYPE_DESC
@@ -92,7 +92,7 @@ LOOP BLOCK #1
 GO OUT TO BLOCK #3
 
 
---- BLOCK #3 72-152, warpins: 1 ---
+--- BLOCK #3 72-167, warpins: 1 ---
 slot8.ALL_RES_IDS = slot9
 slot9 = {}
 slot10 = slot3.DAMAGE_SHOW_ENUM_WEAK
@@ -114,6 +114,23 @@ slot8.RES_EP_CONFIG_ID = slot9
 slot9 = slot8.WORD_RES
 slot9 = slot9.BASIC_NORMAL
 slot8.RES_BP_CONFIG_ID = slot9
+slot9 = {}
+slot10 = slot4.DAMAGE_NUMBER_TYPE
+slot10 = slot10.BOSS_CATCH1
+slot11 = slot8.WORD_RES
+slot11 = slot11.BASIC_NORMAL
+slot9[slot10] = slot11
+slot10 = slot4.DAMAGE_NUMBER_TYPE
+slot10 = slot10.BOSS_CATCH2
+slot11 = slot8.WORD_RES
+slot11 = slot11.BASIC_EXCELLENT
+slot9[slot10] = slot11
+slot10 = slot4.DAMAGE_NUMBER_TYPE
+slot10 = slot10.BOSS_CATCH3
+slot11 = slot8.WORD_RES
+slot11 = slot11.POWER_BREAK
+slot9[slot10] = slot11
+slot8.BOSS_CATCH_TYPE_RES_MAP = slot9
 slot9 = {
 	CRITICAL = 2,
 	NORMAL = 1,
@@ -143,8 +160,6 @@ slot11 = {
 }
 slot9[slot10] = slot11
 slot8.VX_DMGNUM_ANINAMES = slot9
-slot9 = "Break_In"
-slot8.TAG_NUM_BREAKE_IN_ANIM = slot9
 slot9 = {}
 slot10 = slot3.DAMAGE_SHOW_ENUM_WEAK
 slot11 = "VX_NumLow_PowerBreak_In"
@@ -171,8 +186,8 @@ slot8.VX_NUM_IMMUNE_IN_ANIM = slot9
 slot9 = "VX_Pb_DmgNumber_Execute_In"
 slot8.VX_NUM_EXECUTE_IN_ANIM = slot9
 slot9 = {
-	SPECIAL = 2,
 	NULL = 3,
+	SPECIAL = 2,
 	IMMUNE = 1,
 	MISS = 0
 }
@@ -188,7 +203,7 @@ slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -196,307 +211,247 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 3-4, warpins: 1 ---
-	slot3 = Const
-	slot2 = slot3.DAMAGE_SHOW_ENUM_NORMAL
+	slot3 = nil
+
+	return slot3
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-32, warpins: 2 ---
-	slot3 = slot0.VX_DMGTYPE_ANI_PRIORITY
-	slot3 = slot3.NORMAL
-	slot4 = {}
-	slot5 = {}
-	slot6 = slot0.VX_DMGTYPE_ANI_PRIORITY
-	slot6 = slot6.BREAK
-	slot5.priority = slot6
-
-	slot6 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = damageInfo
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 4-5, warpins: 1 ---
-		slot0 = damageInfo
-		slot0 = slot0.isBreakEnhance
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 6-6, warpins: 2 ---
-		return slot0
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot5.check = slot6
-	slot4[1] = slot5
-	slot5 = {}
-	slot6 = slot0.VX_DMGTYPE_ANI_PRIORITY
-	slot6 = slot6.CRITICAL
-	slot5.priority = slot6
-
-	slot6 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = damageInfo
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot0 = damageInfo
-		slot0 = slot0.isCritical
-		--- END OF BLOCK #1 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 8-10, warpins: 1 ---
-		slot0 = damageInfo
-		slot0 = slot0.isPlayerBeAttacked
-		slot0 = not slot0
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 11-11, warpins: 3 ---
-		return slot0
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot5.check = slot6
-	slot4[2] = slot5
-	slot5 = {}
-	slot6 = slot0.VX_DMGTYPE_ANI_PRIORITY
-	slot6 = slot6.NORMAL
-	slot5.priority = slot6
-
-	slot6 = function()
-		--- BLOCK #0 1-2, warpins: 1 ---
-		slot0 = true
-
-		return slot0
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot5.check = slot6
-	slot4[3] = slot5
-	slot5 = ipairs
-	slot7 = slot4
-	slot5, slot6, slot7 = slot5(slot7)
+	--- BLOCK #2 5-6, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #3 33-36, warpins: 1 ---
-	slot10 = slot9.check
-	slot10 = slot10()
-	--- END OF BLOCK #3 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #4
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #4 37-38, warpins: 1 ---
-	slot3 = slot9.priority
+	--- BLOCK #3 7-8, warpins: 1 ---
+	slot3 = Const
+	slot2 = slot3.DAMAGE_SHOW_ENUM_NORMAL
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-13, warpins: 2 ---
+	slot3 = slot0.VX_DMGTYPE_ANI_PRIORITY
+	slot3 = slot3.NORMAL
+	slot4 = slot1.isBreakEnhance
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 39-40, warpins: 2 ---
+	--- BLOCK #5 14-16, warpins: 1 ---
+	slot4 = slot0.VX_DMGTYPE_ANI_PRIORITY
+	slot3 = slot4.BREAK
 	--- END OF BLOCK #5 ---
 
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 41-43, warpins: 2 ---
-	slot5 = slot1.isPowerfulStrike
+	--- BLOCK #6 17-19, warpins: 1 ---
+	slot4 = slot1.isCritical
 	--- END OF BLOCK #6 ---
 
-	slot5 = if slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 44-47, warpins: 1 ---
-	slot5 = slot0.VX_DMGNUM_ANINAMES_POWER_BREAK
-	slot5 = slot5[slot2]
-
+	--- BLOCK #7 20-22, warpins: 1 ---
+	slot4 = slot1.isPlayerBeAttacked
 	--- END OF BLOCK #7 ---
 
-	slot5 = if slot5 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 48-49, warpins: 1 ---
-	return slot5
-
+	--- BLOCK #8 23-24, warpins: 1 ---
+	slot4 = slot0.VX_DMGTYPE_ANI_PRIORITY
+	slot3 = slot4.CRITICAL
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 50-53, warpins: 3 ---
-	slot5 = pg
-	slot5 = slot5.me
+	--- BLOCK #9 25-27, warpins: 4 ---
+	slot4 = slot1.isPowerfulStrike
 	--- END OF BLOCK #9 ---
 
-	slot5 = if slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 54-59, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.id
-	slot6 = slot1.targetId
+	--- BLOCK #10 28-31, warpins: 1 ---
+	slot4 = slot0.VX_DMGNUM_ANINAMES_POWER_BREAK
+	slot4 = slot4[slot2]
+
 	--- END OF BLOCK #10 ---
 
-	if slot5 ~= slot6 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 60-61, warpins: 1 ---
-	slot5 = false
+	--- BLOCK #11 32-32, warpins: 1 ---
+	return slot4
+
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 62-62, warpins: 1 ---
-	slot5 = true
+	--- BLOCK #12 33-36, warpins: 3 ---
+	slot4 = pg
+	slot4 = slot4.me
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #13 63-66, warpins: 3 ---
-	slot6 = pg
-	slot6 = slot6.me
+	--- BLOCK #13 37-42, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.id
+	slot5 = slot1.targetId
 	--- END OF BLOCK #13 ---
 
-	slot6 = if slot6 then
+	if slot4 ~= slot5 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 67-71, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot6 = slot6.pets
+	--- BLOCK #14 43-44, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #14 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 72-76, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot6 = slot6.pets
-	slot7 = slot1.targetId
-	slot6 = slot6[slot7]
+	--- BLOCK #15 45-45, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 77-78, warpins: 3 ---
+	--- BLOCK #16 46-49, warpins: 3 ---
+	slot5 = pg
+	slot5 = slot5.me
 	--- END OF BLOCK #16 ---
 
-	slot5 = if not slot5 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 79-80, warpins: 1 ---
+	--- BLOCK #17 50-54, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.pets
 	--- END OF BLOCK #17 ---
 
-	slot6 = if slot6 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 81-84, warpins: 2 ---
-	slot7 = slot0.VX_DMGNUM_ANINAMES_MINE
-	slot7 = slot7[slot2]
-
-	return slot7
-
+	--- BLOCK #18 55-59, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.pets
+	slot6 = slot1.targetId
+	slot5 = slot5[slot6]
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 85-88, warpins: 2 ---
-	slot7 = slot0.VX_DMGNUM_ANINAMES
-	slot7 = slot7[slot2]
+	--- BLOCK #19 60-62, warpins: 3 ---
+	slot6 = slot1.isAttackSelfControlEgg
 	--- END OF BLOCK #19 ---
 
-	slot7 = if not slot7 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #20 89-95, warpins: 1 ---
+	--- BLOCK #20 63-64, warpins: 1 ---
+	--- END OF BLOCK #20 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 65-66, warpins: 1 ---
+	--- END OF BLOCK #21 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 67-69, warpins: 3 ---
+	slot7 = slot0.VX_DMGNUM_ANINAMES_MINE
+	slot7 = slot7[slot2]
+
+	return slot7
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 70-73, warpins: 2 ---
+	slot7 = slot0.VX_DMGNUM_ANINAMES
+	slot7 = slot7[slot2]
+	--- END OF BLOCK #23 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 74-79, warpins: 1 ---
 	slot8 = slot0.VX_DMGNUM_ANINAMES
 	slot9 = Const
 	slot9 = slot9.DAMAGE_SHOW_ENUM_NORMAL
@@ -505,16 +460,16 @@ slot9 = function(slot0, slot1, slot2)
 
 	return slot8
 
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #21 96-98, warpins: 2 ---
+	--- BLOCK #25 80-81, warpins: 2 ---
 	slot8 = slot7[slot3]
 
 	return slot8
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #25 ---
 
 
 
@@ -611,14 +566,14 @@ end
 
 slot8.getSpecialIndexInPrefab = slot9
 slot9 = {
-	PARTNER_HEAVY_BASIC_BREAK = 10,
+	ENERGY = 15,
 	HEAL = 12,
 	NULL = 17,
 	PLAYER_BREAK = 16,
 	ENEMY_NORMAL_CRITICAL_NONBREAK = 14,
 	ENEMY_NORMAL_BASIC_NONBREAK = 13,
 	PARTNER_HEAVY_CRITICAL_BREAK = 11,
-	ENERGY = 15,
+	PARTNER_HEAVY_BASIC_BREAK = 10,
 	PARTNER_HEAVY_CRITICAL_NONBREAK = 9,
 	PARTNER_HEAVY_BASIC_NONBREAK = 8,
 	PARTNER_NORMAL_CRITICAL_BREAK = 7,

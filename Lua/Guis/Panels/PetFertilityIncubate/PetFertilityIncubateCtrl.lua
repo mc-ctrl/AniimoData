@@ -1069,9 +1069,10 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
+	--- BLOCK #1 4-9, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.millisecondCache
+	slot1 = slot1.realSecondCache
+	slot1 = slot1 * 1000
 	slot2 = slot0._nextClickTime
 	--- END OF BLOCK #1 ---
 
@@ -1082,7 +1083,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #2 9-15, warpins: 1 ---
+	--- BLOCK #2 10-16, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
 	slot3 = LoggerConst
@@ -1097,7 +1098,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #3 16-20, warpins: 1 ---
+	--- BLOCK #3 17-21, warpins: 1 ---
 	slot1 = logger
 	slot3 = slot1
 	slot1 = slot1.warn
@@ -1110,7 +1111,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-22, warpins: 2 ---
+	--- BLOCK #4 22-23, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #4 ---
@@ -1118,7 +1119,7 @@ slot15 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #5 23-26, warpins: 2 ---
+	--- BLOCK #5 24-27, warpins: 2 ---
 	slot1 = slot0._curIndex
 	slot2 = 4
 	--- END OF BLOCK #5 ---
@@ -1130,7 +1131,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #6 27-32, warpins: 1 ---
+	--- BLOCK #6 28-33, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
 
@@ -1146,7 +1147,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #7 33-34, warpins: 1 ---
+	--- BLOCK #7 34-35, warpins: 1 ---
 	slot1 = slot0._closeCallBack
 
 	slot1()
@@ -1156,7 +1157,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-36, warpins: 2 ---
+	--- BLOCK #8 36-37, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #8 ---
@@ -1164,11 +1165,12 @@ slot15 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 37-78, warpins: 1 ---
+	--- BLOCK #9 38-80, warpins: 1 ---
 	slot1 = true
 	slot0._inAni = slot1
 	slot1 = Time
-	slot1 = slot1.millisecondCache
+	slot1 = slot1.realSecondCache
+	slot1 = slot1 * 1000
 	slot0._aniStartTime = slot1
 	slot1 = slot0._curIndex
 	slot1 = slot1 + 1
@@ -1220,7 +1222,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 79-79, warpins: 3 ---
+	--- BLOCK #10 81-81, warpins: 3 ---
 	return
 	--- END OF BLOCK #10 ---
 

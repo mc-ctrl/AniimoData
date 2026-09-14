@@ -145,15 +145,40 @@ end
 slot3.setOperTarget = slot4
 
 slot4 = function(slot0, slot1)
-	--- BLOCK #0 1-28, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.targetRotation
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
 	slot2 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-48, warpins: 2 ---
+	slot0.targetRotation = slot2
+	slot2 = slot0.targetRotation
 	slot3 = slot1.x
 	slot2.x = slot3
+	slot2 = slot0.targetRotation
 	slot3 = slot1.y
 	slot2.y = slot3
+	slot2 = slot0.targetRotation
 	slot3 = slot1.z
 	slot2.z = slot3
-	slot0.targetRotation = slot2
+	slot2 = Vector3
+	slot2 = slot2.enableCreateFromCache
+
+	slot2()
+
 	slot2 = Quaternion
 	slot2 = slot2.Euler
 	slot4 = slot1.x
@@ -172,30 +197,19 @@ slot4 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	slot4 = slot0.operEntity
-	slot4 = slot4.onEntityPositionChanged
-	--- END OF BLOCK #0 ---
+	slot4 = Vector3
+	slot4 = slot4.disableCreateFromCache
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot4()
 
-
-	--- BLOCK #1 29-32, warpins: 1 ---
-	slot4 = slot0.operEntity
+	slot4 = slot0.editor
 	slot6 = slot4
-	slot4 = slot4.onEntityPositionChanged
+	slot4 = slot4.onEntityRotationChanged
+	slot7 = slot0.operEntity
+	slot8 = true
 
-	slot4(slot6)
+	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 33-38, warpins: 2 ---
 	slot4 = slot0.redoRecorder
 	slot6 = slot4
 	slot4 = slot4.record
@@ -213,7 +227,7 @@ end
 slot3.doRotate = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = slot0.redoRecorder
 	slot3 = slot1
 	slot1 = slot1.restore
@@ -221,30 +235,6 @@ slot4 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.operEntity
-	slot1 = slot1.onEntityPositionChanged
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-13, warpins: 1 ---
-	slot1 = slot0.operEntity
-	slot3 = slot1
-	slot1 = slot1.onEntityPositionChanged
-
-	slot1(slot3)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 14-24, warpins: 2 ---
 	slot1 = slot0.editor
 	slot3 = slot1
 	slot1 = slot1.setCachedEulerAngles
@@ -257,8 +247,15 @@ slot4 = function(slot0)
 
 	slot1(slot3, slot4, slot5, slot6)
 
+	slot1 = slot0.editor
+	slot3 = slot1
+	slot1 = slot1.onEntityRotationChanged
+	slot4 = slot0.operEntity
+
+	slot1(slot3, slot4)
+
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -267,7 +264,7 @@ end
 slot3.doOper = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = slot0.undoRecorder
 	slot3 = slot1
 	slot1 = slot1.restore
@@ -275,30 +272,6 @@ slot4 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.operEntity
-	slot1 = slot1.onEntityPositionChanged
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-13, warpins: 1 ---
-	slot1 = slot0.operEntity
-	slot3 = slot1
-	slot1 = slot1.onEntityPositionChanged
-
-	slot1(slot3)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 14-24, warpins: 2 ---
 	slot1 = slot0.editor
 	slot3 = slot1
 	slot1 = slot1.setCachedEulerAngles
@@ -311,8 +284,15 @@ slot4 = function(slot0)
 
 	slot1(slot3, slot4, slot5, slot6)
 
+	slot1 = slot0.editor
+	slot3 = slot1
+	slot1 = slot1.onEntityRotationChanged
+	slot4 = slot0.operEntity
+
+	slot1(slot3, slot4)
+
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 

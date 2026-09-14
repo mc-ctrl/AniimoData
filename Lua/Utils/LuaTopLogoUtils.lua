@@ -1,4 +1,4 @@
---- BLOCK #0 1-80, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -496,229 +496,6 @@ slot20 = function(slot0)
 	slot0 = if not slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 7-11, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.sceneId
-	--- END OF BLOCK #2 ---
-
-	slot0 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-15, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.scene
-	slot0 = slot1.targetSceneId
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 16-19, warpins: 3 ---
-	slot1 = SceneData
-	slot1 = slot1[slot0]
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 20-22, warpins: 1 ---
-	slot2 = slot1.toplogoType
-	--- END OF BLOCK #5 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 23-23, warpins: 2 ---
-	slot2 = nil
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 24-24, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #7 ---
-
-
-
-end
-
-slot19.getSceneTopLogoSpecialType = slot20
-
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 3-4, warpins: 1 ---
-	slot2 = false
-
-	return slot2
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-6, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 7-9, warpins: 1 ---
-	slot2 = slot0.space
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 10-13, warpins: 1 ---
-	slot2 = slot0.space
-	slot2 = slot2.sceneId
-	--- END OF BLOCK #4 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 14-14, warpins: 3 ---
-	slot2 = nil
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 15-20, warpins: 2 ---
-	slot3 = LuaTopLogoUtils
-	slot3 = slot3.getSceneTopLogoSpecialType
-	slot5 = slot2
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #6 ---
-
-	if slot3 ~= slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 21-22, warpins: 1 ---
-	slot3 = false
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 23-23, warpins: 1 ---
-	slot3 = true
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 24-24, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #9 ---
-
-
-
-end
-
-slot19.isTopLogoSpecialScene = slot20
-
-slot20 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = LuaTopLogoUtils
-	slot1 = slot1.isTopLogoSpecialScene
-	slot3 = slot0
-	slot4 = ClientConst
-	slot4 = slot4.TopLogoSpecial
-	slot4 = slot4.Pvp
-
-	return slot1(slot3, slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot19.isPvpTopLogoScene = slot20
-
-slot20 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = LuaTopLogoUtils
-	slot1 = slot1.isTopLogoSpecialScene
-	slot3 = slot0
-	slot4 = ClientConst
-	slot4 = slot4.TopLogoSpecial
-	slot4 = slot4.Pvp_2
-
-	return slot1(slot3, slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot19.isPvp2TopLogoScene = slot20
-
-slot20 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot0 = if not slot0 then
-	JUMP TO BLOCK #1
-	else
 	JUMP TO BLOCK #2
 	end
 
@@ -734,142 +511,151 @@ slot20 = function(slot0)
 
 
 	--- BLOCK #2 5-8, warpins: 2 ---
-	slot1 = LuaTopLogoUtils
-	slot1 = slot1.getSceneTopLogoSpecialType
+	slot1 = pg
+	slot1 = slot1.space
 	--- END OF BLOCK #2 ---
 
-	slot0 = if slot0 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 9-11, warpins: 1 ---
-	slot3 = slot0.space
+	--- BLOCK #3 9-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot1 = slot1.toplogoType
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	if slot1 ~= slot0 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 12-15, warpins: 1 ---
-	slot3 = slot0.space
-	slot3 = slot3.sceneId
+	--- BLOCK #4 14-15, warpins: 1 ---
+	slot1 = false
 	--- END OF BLOCK #4 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 16-16, warpins: 3 ---
-	slot3 = nil
+	--- BLOCK #5 16-16, warpins: 1 ---
+	slot1 = true
+
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 17-19, warpins: 2 ---
-	slot1 = slot1(slot3)
+	--- BLOCK #6 17-17, warpins: 3 ---
+	return slot1
 	--- END OF BLOCK #6 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
 
 
-	--- BLOCK #7 20-21, warpins: 1 ---
-	slot2 = true
+end
 
-	return slot2
+slot19.isTopLogoSpecialScene = slot20
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 22-26, warpins: 2 ---
+slot20 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = LuaTopLogoUtils
+	slot0 = slot0.isTopLogoSpecialScene
 	slot2 = ClientConst
 	slot2 = slot2.TopLogoSpecial
-	slot2 = slot2.Pvp
-	--- END OF BLOCK #8 ---
+	slot2 = slot2.Pvp_2
 
-	if slot1 == slot2 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #14
-	end
+	return slot0(slot2)
+	--- END OF BLOCK #0 ---
 
 
-	--- BLOCK #9 27-32, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isPuppet
-	slot4 = slot0
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #9 ---
+
+end
+
+slot19.isPvp2TopLogoScene = slot20
+
+slot20 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.space
+	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #10 33-34, warpins: 1 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.space
+	slot2 = slot2.toplogoType
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-16, warpins: 2 ---
+	slot3 = ClientConst
+	slot3 = slot3.TopLogoSpecial
+	slot3 = slot3.Pvp
+
+	--- END OF BLOCK #4 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 17-18, warpins: 1 ---
+	--- END OF BLOCK #5 ---
 
 	slot0 = if slot0 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #11 35-37, warpins: 1 ---
-	slot2 = slot0.getIsIgnoreTopLogoTypeCfg
-	--- END OF BLOCK #11 ---
+	--- BLOCK #6 19-19, warpins: 1 ---
+	return slot1
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #12 38-40, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.getIsIgnoreTopLogoTypeCfg
+	--- BLOCK #7 20-21, warpins: 3 ---
+	slot3 = true
 
-	return slot2(slot4)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 41-42, warpins: 3 ---
-	slot2 = false
-
-	return slot2
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 43-44, warpins: 3 ---
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #14 ---
+	return slot3
+	--- END OF BLOCK #7 ---
 
 
 
@@ -907,6 +693,204 @@ slot20 = function()
 end
 
 slot19.isUseMobileSchedule = slot20
+
+slot20 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = 0
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot1 = slot0.topLogoData
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-8, warpins: 1 ---
+	slot2 = slot1.agentToCapsuleCenterY
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-10, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 11-13, warpins: 1 ---
+	slot3 = slot0.getPhysxDataByState
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 14-18, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getPhysxDataByState
+	slot6 = slot0.characterState
+	slot3, slot4, slot5, slot6 = slot3(slot5, slot6)
+	slot2 = slot6
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-20, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-21, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 22-24, warpins: 2 ---
+	slot3 = slot0.getLockPosition
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 25-27, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getLockPosition
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 28-30, warpins: 2 ---
+	slot4 = slot0.getPosition
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 31-33, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getPosition
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 34-35, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 36-38, warpins: 1 ---
+	slot5 = slot3[2]
+	--- END OF BLOCK #14 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 39-39, warpins: 2 ---
+	slot5 = 0
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 40-41, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 42-44, warpins: 1 ---
+	slot6 = slot4[2]
+	--- END OF BLOCK #17 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 45-45, warpins: 2 ---
+	slot6 = 0
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 46-47, warpins: 2 ---
+	slot5 = slot5 - slot6
+
+	return slot5
+	--- END OF BLOCK #19 ---
+
+
+
+end
+
+slot19.getAgentToCapsuleCenterY = slot20
 
 return slot19
 --- END OF BLOCK #0 ---

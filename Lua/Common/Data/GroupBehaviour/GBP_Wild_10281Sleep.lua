@@ -1,7 +1,7 @@
 --- BLOCK #0 1-98, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_10281Sleep",
-	CDAfterEnd = 10
+	CDAfterEnd = 10,
+	behavID = "BP_Wild_GroupBehav_10281Sleep"
 }
 slot1 = {}
 slot2 = {
@@ -54,8 +54,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -78,8 +78,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_CommonStartSleep"
+	para = "GBPMsg_CommonStartSleep",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -116,8 +116,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = "GBPMsg_Common"
+	para = "GBPMsg_Common",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -140,8 +140,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_CommonAwake"
+	para = "GBPMsg_CommonAwake",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -157,8 +157,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_CommonLeave"
+	para = "GBPMsg_CommonLeave",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -174,8 +174,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = "GBPMsg_Common"
+	para = "GBPMsg_Common",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"

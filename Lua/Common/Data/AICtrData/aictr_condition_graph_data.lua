@@ -12,15 +12,15 @@ slot1.outPorts = slot2
 slot0.BCM_Budclaw_Check_Dis = slot1
 slot1 = {}
 slot2 = {
-	entityTag1 = "",
-	entityTag2 = ""
+	entityTag2 = "",
+	entityTag1 = ""
 }
 slot1.inPorts = slot2
 slot2 = {
-	entity1 = 0,
 	result2 = false,
 	result1 = false,
-	entity2 = 0
+	entity2 = 0,
+	entity1 = 0
 }
 slot1.outPorts = slot2
 slot0.BCM_Budclaw_Select_Target = slot1
@@ -30,10 +30,10 @@ slot2 = {
 }
 slot1.inPorts = slot2
 slot2 = {
-	tIsPuppet = false,
 	tIsPlayerInterrupt = false,
 	tIsPlayer = false,
-	tPetNotCurrPet = false
+	tPetNotCurrPet = false,
+	tIsPuppet = false
 }
 slot1.outPorts = slot2
 slot0.BCM_Common_CheckPER = slot1
@@ -49,9 +49,9 @@ slot1.outPorts = slot2
 slot0.BCM_Common_CheckVisionNormal = slot1
 slot1 = {}
 slot2 = {
-	status = 1,
 	staticId = 0,
-	behavName = ""
+	behavName = "",
+	status = 1
 }
 slot1.inPorts = slot2
 slot2 = {}
@@ -67,8 +67,8 @@ slot2 = {
 }
 slot1.inPorts = slot2
 slot2 = {
-	Actorid = 0,
-	HasEntity = false
+	HasEntity = false,
+	Actorid = 0
 }
 slot1.outPorts = slot2
 slot0.BCM_SelectEnvObjinDisbyEntityTag = slot1

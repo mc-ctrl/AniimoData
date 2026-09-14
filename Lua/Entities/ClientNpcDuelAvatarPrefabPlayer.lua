@@ -55,21 +55,19 @@ end
 slot4.init = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -77,7 +75,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-27, warpins: 2 ---
+	--- BLOCK #2 5-24, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setModelLayer
 
@@ -94,8 +92,7 @@ slot5 = function(slot0)
 	slot1 = slot0.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = slot2.modelInfo
 	slot6 = slot3
 	slot4 = slot3.ClearInfo
@@ -112,7 +109,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #3 28-30, warpins: 1 ---
+	--- BLOCK #3 25-27, warpins: 1 ---
 	slot4 = slot1.modelHeight
 	--- END OF BLOCK #3 ---
 
@@ -123,14 +120,14 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #4 31-31, warpins: 1 ---
+	--- BLOCK #4 28-28, warpins: 1 ---
 	slot4 = 1.5
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 32-36, warpins: 3 ---
+	--- BLOCK #5 29-33, warpins: 3 ---
 	slot3.height = slot4
 	slot4 = slot3.physiqueModelInfo
 	slot5 = slot0.avatarPrefabResID
@@ -143,7 +140,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #6 37-39, warpins: 1 ---
+	--- BLOCK #6 34-36, warpins: 1 ---
 	slot5 = slot1.prefabResID
 	--- END OF BLOCK #6 ---
 
@@ -154,14 +151,14 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #7 40-40, warpins: 1 ---
+	--- BLOCK #7 37-37, warpins: 1 ---
 	slot5 = ""
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 41-54, warpins: 3 ---
+	--- BLOCK #8 38-51, warpins: 3 ---
 	slot4.modelPathID = slot5
 	slot4 = slot3.physiqueModelInfo
 	slot5 = ""
@@ -183,14 +180,14 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #9 55-55, warpins: 1 ---
+	--- BLOCK #9 52-52, warpins: 1 ---
 	slot5 = 1
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 56-73, warpins: 2 ---
+	--- BLOCK #10 53-70, warpins: 2 ---
 	slot4.modelScale = slot5
 	slot4 = slot3.physiqueModelInfo
 	slot5 = false

@@ -11,12 +11,18 @@
         "stamina_config_data",
         "CharacterStateConstImp",
         "trigger_map_data",
-        "custom_default_register_map"
+        "custom_default_register_map",
+        "dye_config_data"
     ],
     "bddIgnoreFolders": [
         "BehaviacData.",
         "AICtrData.",
         "GroupBehaviour.",
-        "Input."
+        "Input.",
+        "DialogueGraph."
+    ],
+    "bddIgnoreRegex": [
+        "(^|\\.)scene_route_data_[^.]+$",
+        "(^|\\.)scene_entity_data_[^.]+$"
     ]
 }

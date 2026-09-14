@@ -244,10 +244,10 @@ slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.carGroup
 	slot1 = slot1.baseRotation
-	slot1 = slot1.eulerAngles
-	slot1 = slot1[2]
+	slot3 = slot1
+	slot1 = slot1.GetEulerAnglesY
 
-	return slot1
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
 
 

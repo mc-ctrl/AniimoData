@@ -1,22 +1,25 @@
---- BLOCK #0 1-26, warpins: 1 ---
+--- BLOCK #0 1-29, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.UIScene.UISceneBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Utils.ClientVirtualEntityUtils"
+slot4 = "GameApp.UIScene.UISceneBase"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.ClientConst"
+slot5 = "Utils.ClientVirtualEntityUtils"
 slot3 = slot3(slot5)
-slot4 = slot0.LightClass
-slot6 = "BossRushModelScene"
-slot7 = slot1
-slot4 = slot4(slot6, slot7)
+slot4 = require
+slot6 = "Const.ClientConst"
+slot4 = slot4(slot6)
+slot5 = slot1.LightClass
+slot7 = "BossRushModelScene"
+slot8 = slot2
+slot5 = slot5(slot7, slot8)
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-43, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -68,9 +71,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.onStart = slot5
+slot5.onStart = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -94,25 +97,25 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 8-32, warpins: 1 ---
+	--- BLOCK #2 8-30, warpins: 1 ---
 	slot2 = ClientVirtualEntityUtils
 	slot2 = slot2.createSimpleVirtualNpc
 	slot4 = slot1
 	slot2 = slot2(slot4)
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
 	slot5 = slot3
-	slot3 = slot3.SetParent
+	slot3 = slot3.SetTransformParent
 	slot6 = slot0.pos
 	slot7 = false
 
 	slot3(slot5, slot6, slot7)
 
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.localPosition = slot4
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalPosition
+
+	slot3(slot5)
+
 	slot5 = slot2
 	slot3 = slot2.setModelLayer
 	slot6 = ClientConst
@@ -129,7 +132,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 33-36, warpins: 2 ---
+	--- BLOCK #3 31-34, warpins: 2 ---
 	slot2 = pairs
 	slot4 = slot0.bossModels
 	slot2, slot3, slot4 = slot2(slot4)
@@ -138,9 +141,8 @@ slot5 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 37-43, warpins: 1 ---
+	--- BLOCK #4 35-40, warpins: 1 ---
 	slot7 = slot6.eModel
-	slot7 = slot7.gameObject
 	slot9 = slot7
 	slot7 = slot7.SetActiveEx
 	slot10 = slot1.templateId
@@ -153,14 +155,14 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 44-45, warpins: 1 ---
+	--- BLOCK #5 41-42, warpins: 1 ---
 	slot10 = false
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 46-46, warpins: 1 ---
+	--- BLOCK #6 43-43, warpins: 1 ---
 	slot10 = true
 
 	--- END OF BLOCK #6 ---
@@ -168,7 +170,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 47-47, warpins: 2 ---
+	--- BLOCK #7 44-44, warpins: 2 ---
 	slot7(slot9, slot10)
 
 	--- END OF BLOCK #7 ---
@@ -176,7 +178,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 48-49, warpins: 2 ---
+	--- BLOCK #8 45-46, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -184,7 +186,7 @@ slot5 = function(slot0, slot1)
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 50-50, warpins: 2 ---
+	--- BLOCK #9 47-47, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -192,9 +194,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.setModel = slot5
+slot5.setModel = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.renderTexture
 
@@ -226,9 +228,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.setRawImageProRef = slot5
+slot5.setRawImageProRef = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.renderTexture
 	--- END OF BLOCK #0 ---
@@ -266,9 +268,10 @@ slot5 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 17-19, warpins: 1 ---
+	--- BLOCK #3 17-20, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -277,7 +280,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-21, warpins: 2 ---
+	--- BLOCK #4 21-22, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -285,7 +288,7 @@ slot5 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 22-24, warpins: 1 ---
+	--- BLOCK #5 23-25, warpins: 1 ---
 	slot1 = {}
 	slot0.bossModels = slot1
 
@@ -296,9 +299,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onDestroy = slot5
+slot5.onDestroy = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

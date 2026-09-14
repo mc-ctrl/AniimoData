@@ -1,4 +1,4 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -30,10 +30,16 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
-slot10 = {}
-slot3.messages = slot10
+slot10 = require
+slot12 = "Common.NoticeDef"
+slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Data.sys_notice_data"
+slot11 = slot11(slot13)
+slot12 = {}
+slot3.messages = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -49,9 +55,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot10
+slot3.onCreate = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.inputField
@@ -119,9 +125,9 @@ slot10 = function(slot0)
 
 end
 
-slot3.addListener = slot10
+slot3.addListener = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -141,9 +147,9 @@ slot10 = function(slot0)
 
 end
 
-slot3.onDestroy = slot10
+slot3.onDestroy = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -173,9 +179,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot3.onOpen = slot10
+slot3.onOpen = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -196,9 +202,9 @@ slot10 = function(slot0)
 
 end
 
-slot3.randomName = slot10
+slot3.randomName = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -221,9 +227,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot3.onNameChanged = slot10
+slot3.onNameChanged = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.inputField
@@ -311,19 +317,41 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 50-52, warpins: 2 ---
-	slot2 = slot0.canSubmit
-
+	--- BLOCK #4 50-55, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.containsRichText
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #4 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 53-53, warpins: 1 ---
+	--- BLOCK #5 56-72, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.rootComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Tips"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtTips
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "CONTENT_CONTAINS_RICH_TEXT"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
 	return
 
 	--- END OF BLOCK #5 ---
@@ -331,7 +359,71 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 54-68, warpins: 2 ---
+	--- BLOCK #6 73-80, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.inputField
+	slot4 = slot2
+	slot2 = slot2.CanRenderText
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 81-97, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.rootComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Tips"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtTips
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "NAME_NOT_VALID"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 98-100, warpins: 2 ---
+	slot2 = slot0.canSubmit
+
+	--- END OF BLOCK #8 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 101-101, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 102-116, warpins: 2 ---
 	slot2 = false
 	slot0.canSubmit = slot2
 	slot2 = logger
@@ -347,16 +439,16 @@ slot10 = function(slot0)
 	slot4 = LoggerConst
 	slot4 = slot4.INFO
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #10 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #7 69-74, warpins: 1 ---
+	--- BLOCK #11 117-122, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.info
@@ -365,12 +457,12 @@ slot10 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #8 75-82, warpins: 2 ---
+	--- BLOCK #12 123-130, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -381,15 +473,15 @@ slot10 = function(slot0)
 	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot3.submitRename = slot10
+slot3.submitRename = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
@@ -474,34 +566,30 @@ slot10 = function(slot0, slot1)
 	slot2 = slot2.ERROR_NAME_CHECK_FAIL
 	--- END OF BLOCK #3 ---
 
-	if slot1 == slot2 then
+	if slot1 ~= slot2 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 52-61, warpins: 1 ---
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.txtTips
-	slot5 = pg
-	slot5 = slot5.getGameString
-	slot7 = "INPUT_TEXT_CONTAINS_SENSITIVE"
-	MULTRES = slot5(slot7)
-
-	slot2(slot4, MULTRES)
-
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #5 62-66, warpins: 1 ---
+	--- BLOCK #4 52-56, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.CHANGE_NAME_RETURN_CODE
-	slot2 = slot2.ERROR_NAME_REPEAT
+	slot2 = slot2.ERROR_OP_TIMEOUT
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 57-61, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.CHANGE_NAME_RETURN_CODE
+	slot2 = slot2.ERROR_EXCEPTION
 	--- END OF BLOCK #5 ---
 
 	if slot1 == slot2 then
@@ -511,7 +599,41 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 67-76, warpins: 1 ---
+	--- BLOCK #6 62-75, warpins: 3 ---
+	slot2 = SysNoticeData
+	slot3 = NoticeDef
+	slot3 = slot3.TID_SERVICE_ERROR
+	slot2 = slot2[slot3]
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtTips
+	slot6 = pg
+	slot6 = slot6.getLocalizationText
+	slot8 = slot2.text
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #7 76-80, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.CHANGE_NAME_RETURN_CODE
+	slot2 = slot2.ERROR_NAME_REPEAT
+	--- END OF BLOCK #7 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 81-90, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -523,25 +645,25 @@ slot10 = function(slot0, slot1)
 
 	slot2(slot4, MULTRES)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #7 77-81, warpins: 1 ---
+	--- BLOCK #9 91-95, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.CHANGE_NAME_RETURN_CODE
 	slot2 = slot2.ERROR_NAME_FAIL
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 82-91, warpins: 1 ---
+	--- BLOCK #10 96-104, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -553,80 +675,20 @@ slot10 = function(slot0, slot1)
 
 	slot2(slot4, MULTRES)
 
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #9 92-96, warpins: 1 ---
-	slot2 = Const
-	slot2 = slot2.CHANGE_NAME_RETURN_CODE
-	slot2 = slot2.ERROR_OP_TIMEOUT
-	--- END OF BLOCK #9 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 97-106, warpins: 1 ---
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.txtTips
-	slot5 = pg
-	slot5 = slot5.getGameString
-	slot7 = "NAME_EDIT_OVERTIME"
-	MULTRES = slot5(slot7)
-
-	slot2(slot4, MULTRES)
-
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 107-111, warpins: 1 ---
-	slot2 = Const
-	slot2 = slot2.CHANGE_NAME_RETURN_CODE
-	slot2 = slot2.ERROR_EXCEPTION
-	--- END OF BLOCK #11 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 112-120, warpins: 1 ---
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.txtTips
-	slot5 = pg
-	slot5 = slot5.getGameString
-	slot7 = "NAME_EDIT_ERROR"
-	MULTRES = slot5(slot7)
-
-	slot2(slot4, MULTRES)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 121-121, warpins: 6 ---
+	--- BLOCK #11 105-105, warpins: 4 ---
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot3.createNameResult = slot10
+slot3.createNameResult = slot12
 
 return slot3
 --- END OF BLOCK #0 ---

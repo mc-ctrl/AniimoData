@@ -59,7 +59,7 @@ end
 slot6.findObjects = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = {}
 	slot2 = UIConst
 	slot2 = slot2.TOPLOGO_COMPONENT
@@ -71,6 +71,10 @@ slot7 = function(slot0)
 	slot3 = slot3(slot5, slot6)
 	slot1[slot2] = slot3
 	slot0.components = slot1
+	slot3 = slot0
+	slot1 = slot0.m_classifyComponents
+
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #0 ---

@@ -78,7 +78,7 @@ slot10 = function(slot0)
 
 end
 
-slot9.destroy = slot10
+slot9.preDestroy = slot10
 
 slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---

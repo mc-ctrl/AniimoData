@@ -1,10 +1,10 @@
 --- BLOCK #0 1-4, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	PSPad = "<DualShockGamepad>/touchpadButton",
 	SwitchPad = "<SwitchProControllerHID>/select",
-	XBox = "<XInputController>/select",
-	_genericPath = "<Gamepad>/select"
+	PSPad = "<DualShockGamepad>/touchpadButton",
+	_genericPath = "<Gamepad>/select",
+	XBox = "<XInputController>/select"
 }
 slot0.SelectButton = slot1
 

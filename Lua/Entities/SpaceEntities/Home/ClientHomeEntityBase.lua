@@ -1,4 +1,4 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -57,9 +57,7 @@ end
 slot7.ctor = slot9
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = slot1.isClientEnt
-	slot0.isClientEnt = slot2
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientHomeEntityBase
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -76,29 +74,6 @@ slot9 = function(slot0, slot1)
 end
 
 slot7.init = slot9
-
-slot9 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.format
-	slot3 = "%s-%s-%s-%s"
-	slot4 = slot0.className
-	slot5 = slot0.ornamentId
-	slot6 = tostring
-	slot8 = slot0.id
-	slot6 = slot6(slot8)
-	slot7 = tostring
-	slot9 = slot0.homeTemplateId
-	MULTRES = slot7(slot9)
-
-	return slot1(slot3, slot4, slot5, slot6, MULTRES)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot7.getShowName = slot9
 
 slot9 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---

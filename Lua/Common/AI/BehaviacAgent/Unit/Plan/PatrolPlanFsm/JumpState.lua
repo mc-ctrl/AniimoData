@@ -1,4 +1,4 @@
---- BLOCK #0 1-37, warpins: 1 ---
+--- BLOCK #0 1-30, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -24,12 +24,43 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Common.Data.BehaviacData.Meta.BehaviorPathMapData"
 slot8 = slot8(slot10)
-slot9 = slot0.LiteClass
-slot11 = "JumpState"
-slot12 = slot1
-slot9 = slot9(slot11, slot12)
+slot9 = require
+slot11 = "Common.Data.Scene.route_default_value_data"
+slot9 = slot9(slot11)
+--- END OF BLOCK #0 ---
 
-slot10 = function(slot0, slot1, slot2)
+slot9 = if slot9 then
+JUMP TO BLOCK #1
+else
+JUMP TO BLOCK #2
+end
+
+
+--- BLOCK #1 31-33, warpins: 1 ---
+slot10 = slot9.wayPoints
+--- END OF BLOCK #1 ---
+
+slot10 = if not slot10 then
+JUMP TO BLOCK #2
+else
+JUMP TO BLOCK #3
+end
+
+
+--- BLOCK #2 34-34, warpins: 2 ---
+slot10 = {}
+--- END OF BLOCK #2 ---
+
+FLOW; TARGET BLOCK #3
+
+
+--- BLOCK #3 35-46, warpins: 2 ---
+slot11 = slot0.LiteClass
+slot13 = "JumpState"
+slot14 = slot1
+slot11 = slot11(slot13, slot14)
+
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-45, warpins: 1 ---
 	slot3 = JumpState
 	slot3 = slot3.super
@@ -88,9 +119,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onEnter = slot10
+slot11.onEnter = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = JumpState
 	slot3 = slot3.super
@@ -111,9 +142,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onExit = slot10
+slot11.onExit = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = JumpState
 	slot2 = slot2.super
@@ -132,51 +163,69 @@ slot10 = function(slot0, slot1)
 	slot4 = slot3.inexecutionAction
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 16-21, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.transitionTo
-	slot7 = PATROL_STATE
-	slot7 = slot7.WayPointBehavior
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #1 16-17, warpins: 1 ---
+	slot4 = WAY_POINT_DEFAULTS
+	slot4 = slot4.inexecutionAction
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 22-26, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.transitionTo
-	slot7 = PATROL_STATE
-	slot7 = slot7.WayPointBehaviorTurn
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #2 18-19, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 27-27, warpins: 2 ---
-	return
+	--- BLOCK #3 20-25, warpins: 1 ---
+	slot7 = slot1
+	slot5 = slot1.transitionTo
+	slot8 = PATROL_STATE
+	slot8 = slot8.WayPointBehavior
+
+	slot5(slot7, slot8)
+
 	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 26-30, warpins: 1 ---
+	slot7 = slot1
+	slot5 = slot1.transitionTo
+	slot8 = PATROL_STATE
+	slot8 = slot8.WayPointBehaviorTurn
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 31-31, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot9.onRun = slot10
+slot11.onRun = slot12
 
-return slot9
---- END OF BLOCK #0 ---
+return slot11
+--- END OF BLOCK #3 ---
 
 
 

@@ -694,15 +694,19 @@ end
 slot9.onSearchChanged = slot10
 
 slot10 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot4 = slot0.model
 	slot6 = slot4
 	slot4 = slot4.getPartCloths
 	slot7 = slot1
-	slot8 = AvatarPresetData
-	slot9 = slot0.ctrl
-	slot9 = slot9.presetKey
-	slot8 = slot8[slot9]
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.avatar
+	slot10 = slot8
+	slot8 = slot8.getAvatarPresetData
+	slot11 = slot0.ctrl
+	slot11 = slot11.presetKey
+	slot8 = slot8(slot10, slot11)
 	slot8 = slot8.body
 	slot9 = slot2
 	slot10 = slot3
@@ -725,7 +729,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 22-28, warpins: 1 ---
+	--- BLOCK #1 26-32, warpins: 1 ---
 	slot5 = slot0.ctrl
 	slot5 = slot5.slotOptionComponent
 	slot5 = slot5.optionUList
@@ -740,7 +744,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 29-29, warpins: 2 ---
+	--- BLOCK #2 33-33, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -901,24 +905,45 @@ slot10 = function(slot0)
 	slot8 = slot8(slot10, slot11)
 	--- END OF BLOCK #1 ---
 
-	if slot6 == 0 then
+	if slot6 ~= 0 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 26-30, warpins: 1 ---
+	--- BLOCK #2 26-32, warpins: 1 ---
+	slot9 = LuaUIUtils
+	slot9 = slot9.isClothesBelongToSlot
+	slot11 = slot6
+	slot12 = slot5
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #2 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 33-43, warpins: 2 ---
 	slot9 = LuaUIUtils
 	slot9 = slot9.SLOT_STATE
 	slot9 = slot9.EMPTY
 	slot8.state = slot9
-	--- END OF BLOCK #2 ---
+	slot9 = 0
+	slot8.clothesId = slot9
+	slot9 = nil
+	slot8.icon = slot9
+	slot9 = nil
+	slot8.quality = slot9
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 31-45, warpins: 1 ---
+	--- BLOCK #4 44-58, warpins: 1 ---
 	slot9 = LuaUIUtils
 	slot9 = slot9.SLOT_STATE
 	slot9 = slot9.HAVE
@@ -934,12 +959,12 @@ slot10 = function(slot0)
 	slot8.icon = slot10
 	slot10 = slot9.quality
 	slot8.quality = slot10
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #4 46-53, warpins: 2 ---
+	--- BLOCK #5 59-66, warpins: 2 ---
 	slot9 = slot0.ctrl
 	slot9 = slot9.slotOptionComponent
 	slot9 = slot9.slotUList
@@ -949,15 +974,15 @@ slot10 = function(slot0)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 	for slot5=slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #5
+	GO OUT TO BLOCK #6
 
-	--- BLOCK #5 54-54, warpins: 1 ---
+	--- BLOCK #6 67-67, warpins: 1 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
 
 
@@ -1092,119 +1117,169 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot4
 	slot4 = slot4.getCurEntity
 	slot4 = slot4(slot6)
+
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-13, warpins: 1 ---
-	slot7 = slot4
-	slot5 = slot4.setCustomShowPreview
-	slot8 = slot1
-	slot9 = true
-
-	slot5(slot7, slot8, slot9)
-
+	--- BLOCK #1 8-8, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 14-17, warpins: 1 ---
-	slot5 = AppearanceData
-	slot5 = slot5[slot1]
-	--- END OF BLOCK #2 ---
+	--- BLOCK #2 9-18, warpins: 1 ---
+	slot5 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = isPreview
+		--- END OF BLOCK #0 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-10, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.setCustomShowPreview
+		slot3 = clothesId
+		slot4 = true
+
+		slot0(slot2, slot3, slot4)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #2 11-15, warpins: 1 ---
+		slot0 = AppearanceData
+		slot1 = clothesId
+		slot0 = slot0[slot1]
+		--- END OF BLOCK #2 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 16-16, warpins: 1 ---
+		slot0 = {}
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 17-19, warpins: 2 ---
+		slot1 = slot0.points
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 20-23, warpins: 1 ---
+		slot1 = ipairs
+		slot3 = slot0.points
+		slot1, slot2, slot3 = slot1(slot3)
+		--- END OF BLOCK #5 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #6 24-28, warpins: 1 ---
+		slot6 = entity
+		slot8 = slot6
+		slot6 = slot6.cancelCustomShowPreview
+		slot9 = slot5
+
+		slot6(slot8, slot9)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 29-30, warpins: 2 ---
+		--- END OF BLOCK #7 ---
+
+		for slot4, slot5 in slot1, slot2, slot3
+		LOOP BLOCK #6
+		GO OUT TO BLOCK #8
+
+
+		--- BLOCK #8 31-36, warpins: 2 ---
+		slot1 = entity
+		slot3 = slot1
+		slot1 = slot1.setCustomShow
+		slot4 = clothesId
+		slot5 = true
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 37-50, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshClothes
+		slot3 = isPreview
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshSlotList
+
+		slot0(slot2)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.updateSelectClothId
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #9 ---
+
+
+
 	end
 
-
-	--- BLOCK #3 18-18, warpins: 1 ---
-	slot5 = {}
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 19-21, warpins: 2 ---
-	slot6 = slot5.points
-	--- END OF BLOCK #4 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #5 22-25, warpins: 1 ---
-	slot6 = ipairs
-	slot8 = slot5.points
-	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 26-29, warpins: 1 ---
-	slot13 = slot4
-	slot11 = slot4.cancelCustomShowPreview
-	slot14 = slot10
-
-	slot11(slot13, slot14)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 30-31, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 32-36, warpins: 2 ---
+	slot6 = AvatarUtils
+	slot6 = slot6.tryEquipClothesWithConflictConfirm
 	slot8 = slot4
-	slot6 = slot4.setCustomShow
 	slot9 = slot1
-	slot10 = true
+	slot10 = slot3
+	slot11 = slot5
 
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 37-47, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.refreshClothes
-	slot8 = slot3
-
-	slot5(slot7, slot8)
-
-	slot7 = slot0
-	slot5 = slot0.refreshSlotList
-
-	slot5(slot7)
-
-	slot7 = slot0
-	slot5 = slot0.updateSelectClothId
-
-	slot5(slot7)
+	slot6(slot8, slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
@@ -1213,15 +1288,14 @@ end
 slot9.equipClothes = slot10
 
 slot10 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = slot0.model
 	slot2 = slot2.avatarScene
 	slot4 = slot2
 	slot2 = slot2.getCurEntity
 	slot2 = slot2(slot4)
 	slot3 = slot2.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
+	slot3 = slot3.modelModelView
 	slot4 = slot3.modelInfo
 	slot4 = slot4.partModelInfo
 	slot5 = AppearancePointEnum
@@ -1234,7 +1308,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 17-27, warpins: 2 ---
+	--- BLOCK #1 16-26, warpins: 2 ---
 	slot11 = slot2
 	slot9 = slot2.getAppearanceConfigId
 	slot12 = slot8
@@ -1253,7 +1327,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 28-33, warpins: 1 ---
+	--- BLOCK #2 27-32, warpins: 1 ---
 	slot11 = string
 	slot11 = slot11.isNilOrEmpty
 	slot13 = slot10
@@ -1267,7 +1341,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 34-38, warpins: 1 ---
+	--- BLOCK #3 33-37, warpins: 1 ---
 	slot13 = slot4
 	slot11 = slot4.RemovePartItem
 	slot14 = slot10
@@ -1279,7 +1353,7 @@ slot10 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 39-42, warpins: 1 ---
+	--- BLOCK #4 38-41, warpins: 1 ---
 	slot11 = AppearanceData
 	slot11 = slot11[slot9]
 	--- END OF BLOCK #4 ---
@@ -1291,7 +1365,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 43-45, warpins: 1 ---
+	--- BLOCK #5 42-44, warpins: 1 ---
 	slot12 = slot11.res
 	--- END OF BLOCK #5 ---
 
@@ -1302,7 +1376,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 46-53, warpins: 1 ---
+	--- BLOCK #6 45-52, warpins: 1 ---
 	slot14 = slot4
 	slot12 = slot4.ModifyPartItem
 	slot15 = slot11.res
@@ -1318,14 +1392,14 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 54-54, warpins: 5 ---
+	--- BLOCK #7 53-53, warpins: 5 ---
 	--- END OF BLOCK #7 ---
 
 	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #8
 
-	--- BLOCK #8 55-63, warpins: 1 ---
+	--- BLOCK #8 54-62, warpins: 1 ---
 	slot7 = slot3
 	slot5 = slot3.RefreshModels
 

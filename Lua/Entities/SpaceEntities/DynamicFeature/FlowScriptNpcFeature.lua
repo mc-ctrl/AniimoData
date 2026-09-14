@@ -22,11 +22,9 @@ end
 slot2.EVENT_OnModelRefreshed = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.master
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.master
+	slot1 = slot1.eModel
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -36,7 +34,7 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-16, warpins: 1 ---
+	--- BLOCK #1 5-14, warpins: 1 ---
 	slot1 = slot0.master
 	slot1 = slot1.eModel
 	slot3 = slot1
@@ -54,7 +52,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-17, warpins: 2 ---
+	--- BLOCK #2 15-15, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -65,11 +63,9 @@ end
 slot2.onMasterModelLoaded = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.master
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.master
+	slot1 = slot1.eModel
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -79,7 +75,7 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-16, warpins: 1 ---
+	--- BLOCK #1 5-14, warpins: 1 ---
 	slot1 = slot0.master
 	slot1 = slot1.eModel
 	slot3 = slot1
@@ -97,7 +93,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-17, warpins: 2 ---
+	--- BLOCK #2 15-15, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

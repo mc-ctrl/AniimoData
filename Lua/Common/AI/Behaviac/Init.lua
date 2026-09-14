@@ -3,10 +3,10 @@ slot0 = require
 slot2 = "Common.Utils.Utils"
 slot0 = slot0(slot2)
 slot1 = {
-	_DESCRIPTION = "Behaviac Lib...",
 	_LICENSE = "MIT/X11",
 	_VERSION = "1.0.0.1",
-	_URL = "http://"
+	_URL = "http://",
+	_DESCRIPTION = "Behaviac Lib..."
 }
 slot2 = slot1
 slot3 = require

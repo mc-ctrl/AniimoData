@@ -566,7 +566,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 79-92, warpins: 3 ---
+	--- BLOCK #21 79-100, warpins: 3 ---
 	slot9 = slot1
 	slot7 = slot1.getKindPage
 	slot7 = slot7(slot9)
@@ -581,183 +581,201 @@ slot9 = function(slot0, slot1)
 	slot10 = slot1
 	slot8 = slot1.getItemId
 	slot8 = slot8(slot10)
+	slot9 = ClientCashShopUtils
+	slot9 = slot9.getPlayerGender
+	slot9 = slot9()
+	slot10 = ClientCashShopUtils
+	slot10 = slot10.getGenderConvertedItemId
+	slot12 = slot8
+	slot13 = slot9
+	slot10 = slot10(slot12, slot13)
 	--- END OF BLOCK #21 ---
 
-	if slot7 == 0 then
+	slot8 = if not slot10 then
 	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #22 93-99, warpins: 1 ---
-	slot9 = slot0.ImgAvatar
-	slot10 = LuaUIUtils
-	slot10 = slot10.getIconByItemId
-	slot12 = slot8
-	slot10 = slot10(slot12)
-	slot9.url = slot10
+	--- BLOCK #22 101-102, warpins: 2 ---
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	if slot7 == 0 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
 
 
-	--- BLOCK #23 100-101, warpins: 1 ---
+	--- BLOCK #23 103-109, warpins: 1 ---
+	slot10 = slot0.ImgAvatar
+	slot11 = LuaUIUtils
+	slot11 = slot11.getIconByItemId
+	slot13 = slot8
+	slot11 = slot11(slot13)
+	slot10.url = slot11
 	--- END OF BLOCK #23 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
+
+
+	--- BLOCK #24 110-111, warpins: 1 ---
+	--- END OF BLOCK #24 ---
+
 	if slot7 == 1 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #25 112-117, warpins: 1 ---
+	slot10 = slot0.imgItem
+	slot13 = slot1
+	slot11 = slot1.getProductDisplayIcon
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #25 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #24 102-107, warpins: 1 ---
-	slot9 = slot0.imgItem
-	slot12 = slot1
-	slot10 = slot1.getProductDisplayIcon
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #24 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 108-111, warpins: 1 ---
-	slot10 = LuaUIUtils
-	slot10 = slot10.getIconByItemId
-	slot12 = slot8
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 112-113, warpins: 2 ---
-	slot9.url = slot10
+	--- BLOCK #26 118-121, warpins: 1 ---
+	slot11 = LuaUIUtils
+	slot11 = slot11.getIconByItemId
+	slot13 = slot8
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #26 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 114-118, warpins: 1 ---
-	slot9 = {}
-	slot9.id = slot8
-	slot10 = slot2.num
+	--- BLOCK #27 122-123, warpins: 2 ---
+	slot10.url = slot11
 	--- END OF BLOCK #27 ---
 
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #28
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
+
+
+	--- BLOCK #28 124-128, warpins: 1 ---
+	slot10 = {}
+	slot10.id = slot8
+	slot11 = slot2.num
+	--- END OF BLOCK #28 ---
+
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #28 119-119, warpins: 1 ---
-	slot10 = 1
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 120-125, warpins: 2 ---
-	slot9.num = slot10
-	slot10 = LuaUIUtils
-	slot10 = slot10.renderRewardItem
-	slot12 = slot0.itemUComponent
-	slot13 = slot9
-
-	slot10(slot12, slot13)
-
+	--- BLOCK #29 129-129, warpins: 1 ---
+	slot11 = 1
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 126-128, warpins: 3 ---
-	slot9 = slot0.numSelector
+	--- BLOCK #30 130-135, warpins: 2 ---
+	slot10.num = slot11
+	slot11 = LuaUIUtils
+	slot11 = slot11.renderRewardItem
+	slot13 = slot0.itemUComponent
+	slot14 = slot10
+
+	slot11(slot13, slot14)
+
 	--- END OF BLOCK #30 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #31
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 136-138, warpins: 3 ---
+	slot10 = slot0.numSelector
+	--- END OF BLOCK #31 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #32 139-140, warpins: 1 ---
+	--- END OF BLOCK #32 ---
+
+	if slot7 == 2 then
+	JUMP TO BLOCK #33
 	else
 	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #31 129-130, warpins: 1 ---
-	--- END OF BLOCK #31 ---
+	--- BLOCK #33 141-155, warpins: 1 ---
+	slot10 = slot0.numSelector
+	slot10 = slot10.gameObject
+	slot12 = slot10
+	slot10 = slot10.SetActiveEx
+	slot13 = true
 
-	if slot7 == 2 then
-	JUMP TO BLOCK #32
+	slot10(slot12, slot13)
+
+	slot12 = slot1
+	slot10 = slot1.getMaxBuyCount
+	slot10 = slot10(slot12)
+	slot11 = slot0.numSelector
+	slot12 = math
+	slot12 = slot12.max
+	slot14 = 1
+	--- END OF BLOCK #33 ---
+
+	slot15 = if not slot10 then
+	JUMP TO BLOCK #34
 	else
 	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #32 131-145, warpins: 1 ---
-	slot9 = slot0.numSelector
-	slot9 = slot9.gameObject
-	slot11 = slot9
-	slot9 = slot9.SetActiveEx
-	slot12 = true
-
-	slot9(slot11, slot12)
-
-	slot11 = slot1
-	slot9 = slot1.getMaxBuyCount
-	slot9 = slot9(slot11)
-	slot10 = slot0.numSelector
-	slot11 = math
-	slot11 = slot11.max
-	slot13 = 1
-	--- END OF BLOCK #32 ---
-
-	slot14 = if not slot9 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #33 146-146, warpins: 1 ---
-	slot14 = 0
-	--- END OF BLOCK #33 ---
-
-	FLOW; TARGET BLOCK #34
-
-
-	--- BLOCK #34 147-152, warpins: 2 ---
-	slot11 = slot11(slot13, slot14)
-	slot10.maxValue = slot11
-	slot10 = slot0.numSelector
-	slot11 = 1
-	slot10.value = slot11
+	--- BLOCK #34 156-156, warpins: 1 ---
+	slot15 = 0
 	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 153-158, warpins: 1 ---
-	slot9 = slot0.numSelector
-	slot9 = slot9.gameObject
-	slot11 = slot9
-	slot9 = slot9.SetActiveEx
-	slot12 = false
-
-	slot9(slot11, slot12)
-
+	--- BLOCK #35 157-162, warpins: 2 ---
+	slot12 = slot12(slot14, slot15)
+	slot11.maxValue = slot12
+	slot11 = slot0.numSelector
+	slot12 = 1
+	slot11.value = slot12
 	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #36
+	UNCONDITIONAL JUMP; TARGET BLOCK #37
 
 
-	--- BLOCK #36 159-159, warpins: 3 ---
-	return
+	--- BLOCK #36 163-168, warpins: 1 ---
+	slot10 = slot0.numSelector
+	slot10 = slot10.gameObject
+	slot12 = slot10
+	slot10 = slot10.SetActiveEx
+	slot13 = false
+
+	slot10(slot12, slot13)
+
 	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 169-169, warpins: 3 ---
+	return
+	--- END OF BLOCK #37 ---
 
 
 

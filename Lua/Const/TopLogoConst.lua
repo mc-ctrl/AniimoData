@@ -1,4 +1,4 @@
---- BLOCK #0 1-534, warpins: 1 ---
+--- BLOCK #0 1-572, warpins: 1 ---
 slot0 = require
 slot2 = "Const.AddressDataConst"
 slot0 = slot0(slot2)
@@ -9,13 +9,15 @@ slot2 = require
 slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = {}
+slot4 = UNITY_EDITOR
+slot3.OpenCacheDebugName = slot4
 slot4 = false
 slot3.OPEN_TOPLOGO_PROFILE = slot4
 slot4 = false
 slot3.IS_SIMULATE_MOBILE = slot4
 slot4 = false
 slot3.IsDebugAlertLog = slot4
-slot4 = 3
+slot4 = 4
 slot3.PRELOAD_TOPLOG_RES_COUNT = slot4
 slot4 = {}
 slot5 = slot0.TOPLOGO_TOP_RESID
@@ -26,7 +28,7 @@ slot5 = slot0.TOPLOGO_TOP_RESID
 slot6 = "Top_"
 slot4[slot5] = slot6
 slot3.PreloadTopLogoPrefixes = slot4
-slot4 = 5
+slot4 = 16
 slot3.POOL_EXPIRE_TIME = slot4
 slot4 = 2
 slot3.POOL_CAPACITY_MULTIPLIER = slot4
@@ -39,10 +41,10 @@ slot5 = slot3.CONTAINER_POOL_TARGET
 slot4.count = slot5
 slot3.PreloadTopLogoUContainerInfo = slot4
 slot4 = {
+	CB_FUNC2 = 2,
 	CB_FUNC1 = 1,
 	CB_FUNC4 = 4,
-	CB_FUNC3 = 3,
-	CB_FUNC2 = 2
+	CB_FUNC3 = 3
 }
 slot3.REF_CONTAINER_LOADED_CALLBACK_GROUP = slot4
 slot4 = {}
@@ -88,19 +90,19 @@ slot6 = true
 slot4[slot5] = slot6
 slot3.TOPLOGO_PER_FRAME_UPDATE_COMPONENTS = slot4
 slot4 = {
-	MID = 2,
-	TOP = 1
+	TOP = 1,
+	MID = 2
 }
 slot3.MULTI_TOPLOGO_ATTACH_TYPE = slot4
 slot4 = {
+	MidExtraLeft = "MidExtra/Left",
 	Right = "Right",
 	Mid = "Mid",
 	Left = "Left",
 	Sub = "Sub",
 	Main = "Main",
 	MidExtraMid = "MidExtra/Mid",
-	MidExtraRight = "MidExtra/Right",
-	MidExtraLeft = "MidExtra/Left"
+	MidExtraRight = "MidExtra/Right"
 }
 slot3.MULTI_TOPLOGO_ZONE_TYPE = slot4
 slot4 = slot3.MULTI_TOPLOGO_ATTACH_TYPE
@@ -116,7 +118,6 @@ slot6 = {}
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.TEAM_MATE
 slot8 = {
-	class = "TopLogoTeamMateStateComponent",
 	sort = 10
 }
 slot9 = slot4.TOP
@@ -132,7 +133,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.QUEST
 slot8 = {
-	class = "TopLogoQuestComponent",
 	sort = 20
 }
 slot9 = slot4.TOP
@@ -148,7 +148,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.BATTLE_ROOM
 slot8 = {
-	class = "TopLogoBattleRoomComponent",
 	sort = 25
 }
 slot9 = slot4.TOP
@@ -162,9 +161,23 @@ slot9 = slot0.TOPLOGO_COMP_RES_BATTLE_ROOM
 slot8.url = slot9
 slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
+slot7 = slot7.PET_LEVEL_UP
+slot8 = {
+	sort = 26
+}
+slot9 = slot4.TOP
+slot8.zoneRoot = slot9
+slot9 = slot5.MidExtraMid
+slot8.zoneParent = slot9
+slot9 = slot1.TOPLOGO_COMPONENT
+slot9 = slot9.PET_LEVEL_UP
+slot8.component = slot9
+slot9 = slot0.TOPLOGO_COMP_RES_PET_LEVEL_UP
+slot8.url = slot9
+slot6[slot7] = slot8
+slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.FOCUS
 slot8 = {
-	class = "TopLogoFocusComponent",
 	sort = 30
 }
 slot9 = slot4.TOP
@@ -180,7 +193,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.TEAM_SPEECH
 slot8 = {
-	class = "TopLogoTeamSpeechComponent",
 	sort = 40
 }
 slot9 = slot4.TOP
@@ -196,7 +208,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.PET_EXCHANGE
 slot8 = {
-	class = "TopLogoPetExchangeComponent",
 	sort = 50
 }
 slot9 = slot4.TOP
@@ -212,7 +223,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.ICON
 slot8 = {
-	class = "TopLogoIconComponent",
 	sort = 60
 }
 slot9 = slot4.TOP
@@ -228,7 +238,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.SPACE_FOLLOW
 slot8 = {
-	class = "TopLogoSpaceFollowComponent",
 	sort = 70
 }
 slot9 = slot4.TOP
@@ -244,7 +253,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.NPC
 slot8 = {
-	class = "TopLogoNpcComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -259,9 +267,7 @@ slot8.url = slot9
 slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.PHOTO
-slot8 = {
-	class = "TopLogoPhotoComponent"
-}
+slot8 = {}
 slot9 = slot4.TOP
 slot8.zoneRoot = slot9
 slot9 = slot5.Main
@@ -275,7 +281,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.PET_FERTILITY
 slot8 = {
-	class = "TopLogoPetFertilityComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -291,7 +296,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.CALL_FRIENDS
 slot8 = {
-	class = "TopLogoCallFriendsComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -307,7 +311,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.WORK_STATE
 slot8 = {
-	class = "TopLogoWorkStateComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -323,7 +326,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.VLOG
 slot8 = {
-	class = "TopLogoVlogComponent",
 	sort = 80
 }
 slot9 = slot4.TOP
@@ -339,7 +341,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.PLAYERHUB
 slot8 = {
-	class = "TopLogoPlayerHubComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -355,7 +356,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.FACILITY
 slot8 = {
-	class = "TopLogoHomeFaciilityComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -371,7 +371,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.SOCIAL
 slot8 = {
-	class = "TopLogoSocialComponent",
 	sort = 90
 }
 slot9 = slot4.TOP
@@ -387,7 +386,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.GRAB_EGG_STATE
 slot8 = {
-	class = "TopLogoEggStateComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -403,7 +401,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.COMBAT
 slot8 = {
-	class = "TopLogoCombatComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -419,7 +416,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.ALERT
 slot8 = {
-	class = "TopLogoAlertComponent",
 	sort = 100
 }
 slot9 = slot4.TOP
@@ -435,7 +431,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.PET_CHAT
 slot8 = {
-	class = "TopLogoPetChatComponent",
 	sort = 110
 }
 slot9 = slot4.TOP
@@ -451,7 +446,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.BUBBLE
 slot8 = {
-	class = "TopLogoBubbleComponent",
 	sort = 120
 }
 slot9 = slot4.TOP
@@ -467,7 +461,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.CHAT
 slot8 = {
-	class = "TopLogoChatComponent",
 	sort = 130
 }
 slot9 = slot4.TOP
@@ -483,7 +476,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.PLAYER_CHAT
 slot8 = {
-	class = "TopLogoPlayerChatComponent",
 	sort = 140
 }
 slot9 = slot4.TOP
@@ -499,7 +491,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.ACTION_STATE
 slot8 = {
-	class = "TopLogoActionStateComponent",
 	sort = 150
 }
 slot9 = slot4.TOP
@@ -515,7 +506,6 @@ slot6[slot7] = slot8
 slot7 = slot1.TOPLOGO_COMPONENT
 slot7 = slot7.INTERACT_SIGN
 slot8 = {
-	class = "TopLogoInteractSignComponent",
 	mutexGroup = "OnlyOne"
 }
 slot9 = slot4.TOP
@@ -526,6 +516,21 @@ slot9 = slot1.TOPLOGO_COMPONENT
 slot9 = slot9.INTERACT_SIGN
 slot8.component = slot9
 slot9 = slot0.TOPLOGO_COMP_RES_INTERACT_SIGN
+slot8.url = slot9
+slot6[slot7] = slot8
+slot7 = slot1.TOPLOGO_COMPONENT
+slot7 = slot7.WATER_STORAGE
+slot8 = {
+	sort = 160
+}
+slot9 = slot4.TOP
+slot8.zoneRoot = slot9
+slot9 = slot5.Sub
+slot8.zoneParent = slot9
+slot9 = slot1.TOPLOGO_COMPONENT
+slot9 = slot9.WATER_STORAGE
+slot8.component = slot9
+slot9 = slot0.TOPLOGO_COMP_RES_WATER_STORAGE
 slot8.url = slot9
 slot6[slot7] = slot8
 slot3.TOPLOGO_NEW_ZONE_CONFIG = slot6
@@ -609,12 +614,18 @@ slot10[4] = slot11
 slot11 = slot1.TOPLOGO_COMPONENT
 slot11 = slot11.ALERT
 slot10[5] = slot11
+slot11 = slot1.TOPLOGO_COMPONENT
+slot11 = slot11.WATER_STORAGE
+slot10[6] = slot11
 slot8[slot9] = slot10
 slot9 = slot5.MidExtraMid
 slot10 = {}
 slot11 = slot1.TOPLOGO_COMPONENT
-slot11 = slot11.VLOG
+slot11 = slot11.PET_LEVEL_UP
 slot10[1] = slot11
+slot11 = slot1.TOPLOGO_COMPONENT
+slot11 = slot11.VLOG
+slot10[2] = slot11
 slot8[slot9] = slot10
 slot9 = slot5.MidExtraRight
 slot10 = {}
@@ -625,10 +636,14 @@ slot8[slot9] = slot10
 slot6[slot7] = slot8
 slot3.TOPLOGO_NEW_ZONE_REVERSE_CONFIG = slot6
 slot6 = {
-	ON_SKELETON_LOADED = "ON_SKELETON_LOADED",
-	DEFAULT = "DEFAULT"
+	DEFAULT = "DEFAULT",
+	ON_SKELETON_LOADED = "ON_SKELETON_LOADED"
 }
 slot3.GET_TOPLOGO_HEIGHT_ENTRY = slot6
+slot6 = 8
+slot3.QUEST_INFO_INTERACT_ID_INDEX = slot6
+slot6 = 10
+slot3.CHAT_TOPLOGO_SHOW_NUM_MAX = slot6
 
 return slot3
 --- END OF BLOCK #0 ---

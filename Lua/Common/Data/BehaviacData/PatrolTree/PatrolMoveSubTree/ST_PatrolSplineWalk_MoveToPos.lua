@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "PatrolTree/PatrolMoveSubTree/ST_PatrolSplineWalk_MoveToPos",
-	agenttype = "WxAgent",
 	version = 17,
-	useForRoute = false
+	useForRoute = false,
+	agenttype = "WxAgent"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -25,16 +25,16 @@ slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
 	name = "patrolMaxTime",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "tPatrolSpeed",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
@@ -64,16 +64,16 @@ slot5.const = slot6
 slot4[6] = slot5
 slot5 = {
 	name = "tUseAccurateArrive",
+	const = false,
 	type = "bool",
-	value = "false",
-	const = false
+	value = "false"
 }
 slot4[7] = slot5
 slot5 = {
 	name = "tIsFirstPoint",
+	const = false,
 	type = "bool",
-	value = "false",
-	const = false
+	value = "false"
 }
 slot4[8] = slot5
 slot3.pars = slot4

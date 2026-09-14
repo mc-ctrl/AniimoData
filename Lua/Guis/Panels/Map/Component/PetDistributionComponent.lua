@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -15,16 +15,16 @@ slot4 = require
 slot6 = "Data.pet_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.pet_avatar_data"
+slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientTextUtils"
+slot8 = "Guis.Utils.PetResearchUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Utils.PetResearchUtils"
+slot9 = "Guis.Utils.MapPetAreaBlockHighlight"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.Utils.MapPetAreaBlockHighlight"
+slot10 = "Data.pet_research_content_data"
 slot8 = slot8(slot10)
 slot9 = slot0.LightClass
 slot11 = "PetDistributionComponent"
@@ -54,19 +54,36 @@ slot10 = function(slot0)
 		end
 
 
-		--- BLOCK #1 7-10, warpins: 1 ---
+		--- BLOCK #1 7-27, warpins: 1 ---
 		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.openDistributionMode
+		slot0 = slot0.ctrl
+		slot0 = slot0.distributionShowTab
+		slot1 = self
+		slot1 = slot1.ctrl
+		slot1 = slot1.resetDistributionShowTab
+		slot2 = self
+		slot2 = slot2.ctrl
+		slot3 = nil
+		slot2.distributionShowTab = slot3
+		slot2 = self
+		slot2 = slot2.ctrl
+		slot3 = nil
+		slot2.resetDistributionShowTab = slot3
+		slot2 = self
+		slot2 = slot2.ctrl
+		slot4 = slot2
+		slot2 = slot2.openDistributionMode
+		slot5 = slot0
+		slot6 = slot1
 
-		slot0(slot2)
+		slot2(slot4, slot5, slot6)
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-11, warpins: 2 ---
+		--- BLOCK #2 28-28, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -157,8 +174,27 @@ end
 
 slot9.openDistributionMode = slot10
 
+slot10 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.renderDistributionTop
+	slot4 = slot0.view
+	slot4 = slot4.petDistributionUContainer
+	slot4 = slot4.content
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9._refreshContent = slot10
+
 slot10 = function(slot0, slot1)
-	--- BLOCK #0 1-59, warpins: 1 ---
+	--- BLOCK #0 1-60, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
 	slot5 = "ObjectReference"
@@ -218,20 +254,97 @@ slot10 = function(slot0, slot1)
 	slot5.luaClick = slot9
 
 	slot9 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = PetResearchContentData
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.map
+		slot1 = slot1.activeDistributionPetTemplateId
+		slot0 = slot0[slot1]
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 9-17, warpins: 1 ---
+		slot0 = PetResearchContentData
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.map
+		slot1 = slot1.activeDistributionPetTemplateId
+		slot0 = slot0[slot1]
+		slot0 = slot0.countryId
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 18-34, warpins: 1 ---
 		slot0 = LuaUIUtils
 		slot0 = slot0.openPetOverviewFromMap
-		slot2 = pg
-		slot2 = slot2.game
-		slot2 = slot2.map
-		slot4 = slot2
-		slot2 = slot2.getCurLargeBlockId
-		MULTRES = slot2(slot4)
+		slot2 = PetResearchContentData
+		slot3 = pg
+		slot3 = slot3.game
+		slot3 = slot3.map
+		slot3 = slot3.activeDistributionPetTemplateId
+		slot2 = slot2[slot3]
+		slot2 = slot2.countryId
+		slot3 = self
+		slot3 = slot3.model
+		slot5 = slot3
+		slot3 = slot3.getPetShowTab
+		slot3 = slot3(slot5)
 
-		slot0(MULTRES)
+		slot4 = function(slot0)
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot1 = self
+			slot1 = slot1.model
+			slot3 = slot1
+			slot1 = slot1.refreshPetShowTab
+			slot4 = slot0
 
+			slot1(slot3, slot4)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot5 = function()
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0._refreshContent
+
+			slot0(slot2)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 35-35, warpins: 3 ---
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -245,9 +358,10 @@ slot10 = function(slot0, slot1)
 	slot11 = slot11.map
 	slot11 = slot11.activeDistributionPetTemplateId
 	slot9 = slot9(slot11)
-	slot10 = PetResearchUtils
-	slot10 = slot10.getLastPetShowTab
-	slot10 = slot10()
+	slot10 = slot0.model
+	slot12 = slot10
+	slot10 = slot10.getPetShowTab
+	slot10 = slot10(slot12)
 	slot11 = PetResearchUtils
 	slot11 = slot11.PET_SHOW_TAB
 	slot11 = slot11.SPECIES
@@ -260,21 +374,21 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 60-61, warpins: 1 ---
+	--- BLOCK #1 61-62, warpins: 1 ---
 	slot10 = false
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 62-62, warpins: 1 ---
+	--- BLOCK #2 63-63, warpins: 1 ---
 	slot10 = true
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 63-64, warpins: 2 ---
+	--- BLOCK #3 64-65, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	slot10 = if slot10 then
@@ -284,7 +398,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 65-69, warpins: 1 ---
+	--- BLOCK #4 66-70, warpins: 1 ---
 	slot11 = pg
 	slot11 = slot11.getGameString
 	slot13 = "ALL_FORM_DISTRIBUTION"
@@ -295,7 +409,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 70-86, warpins: 2 ---
+	--- BLOCK #5 71-87, warpins: 2 ---
 	slot11 = ClientTextUtils
 	slot11 = slot11.setText
 	slot13 = slot6
@@ -324,7 +438,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 87-99, warpins: 1 ---
+	--- BLOCK #6 88-100, warpins: 1 ---
 	slot11 = slot0.view
 	slot11 = slot11.petDistributionUImage
 	slot11 = slot11.gameObject
@@ -347,7 +461,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 100-107, warpins: 1 ---
+	--- BLOCK #7 101-108, warpins: 1 ---
 	slot12 = LuaUIUtils
 	slot12 = slot12.getSpeciesKnownDistributionFormIds
 	slot14 = pg
@@ -361,7 +475,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 108-116, warpins: 2 ---
+	--- BLOCK #8 109-117, warpins: 2 ---
 	slot12 = MapPetAreaBlockHighlight
 	slot12 = slot12.applyPetBlocks
 	slot14 = slot0.view
@@ -378,7 +492,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 117-118, warpins: 2 ---
+	--- BLOCK #9 118-119, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 

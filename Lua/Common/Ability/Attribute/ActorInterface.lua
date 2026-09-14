@@ -22,34 +22,13 @@ slot8 = "ActorInterface"
 slot6 = slot6(slot8)
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.actorId
 	slot0.actorId = slot2
 	slot0.entity = slot1
-	slot2 = assert
-	slot4 = slot0.actorId
-	--- END OF BLOCK #0 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 8-8, warpins: 1 ---
-	slot4 = slot0.entity
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-10, warpins: 2 ---
-	slot2(slot4)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 

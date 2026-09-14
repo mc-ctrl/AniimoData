@@ -25,166 +25,109 @@ end
 slot3.onStart = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-81, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_HUD_V2
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot1(slot3, slot4)
 
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_GAMEPAD_MENU_NEW
 
-	--- BLOCK #1 11-14, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD_V2
-	--- END OF BLOCK #1 ---
+	slot1(slot3, slot4)
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_INTERACT
 
+	slot1(slot3, slot4)
 
-	--- BLOCK #2 15-16, warpins: 2 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD
-	--- END OF BLOCK #2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_CHAIN_ATTACK
 
-	FLOW; TARGET BLOCK #3
+	slot1(slot3, slot4)
 
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_DAMAGE_NUMBER
 
-	--- BLOCK #3 17-112, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = slot1
+	slot1(slot3, slot4)
 
-	slot2(slot4, slot5)
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_TIPS
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_GAMEPAD_MENU_NEW
+	slot1(slot3, slot4)
 
-	slot2(slot4, slot5)
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BOTTOM_DIALOGUE
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_INTERACT
+	slot1(slot3, slot4)
 
-	slot2(slot4, slot5)
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BOTTOM_PET_CHAT
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_CHAIN_ATTACK
+	slot1(slot3, slot4)
 
-	slot2(slot4, slot5)
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_PET_EVOLVE
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_BIG_WHITE_BALL
+	slot1(slot3, slot4)
 
-	slot2(slot4, slot5)
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_HATRED_ARROW_TIP
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.hide
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_BIG_WHITE_BALL
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_DAMAGE_NUMBER
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_TIPS
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_BOTTOM_DIALOGUE
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_BOTTOM_PET_CHAT
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_PET_EVOLVE
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_HATRED_ARROW_TIP
-
-	slot2(slot4, slot5)
+	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 

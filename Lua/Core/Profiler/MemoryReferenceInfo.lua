@@ -1,8 +1,8 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-67, warpins: 1 ---
 slot0 = {
-	m_bAllMemoryRefFileAddTime = false,
 	m_bComparedMemoryRefFileAddTime = false,
-	m_bSingleMemoryRefFileAddTime = false
+	m_bSingleMemoryRefFileAddTime = false,
+	m_bAllMemoryRefFileAddTime = false
 }
 
 slot1 = function()
@@ -5137,6 +5137,43 @@ end
 slot15.CmpFile = slot16
 slot16 = slot15.CmpFile
 slot15.Cmp = slot16
+
+slot16 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = require
+	slot5 = "Core.Profiler.GCRootProfiler"
+	slot3 = slot3(slot5)
+	slot3 = slot3.Dump
+	slot5 = slot0
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.DumpGCRoot = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = require
+	slot4 = "Core.Profiler.GCRootProfiler"
+	slot2 = slot2(slot4)
+	slot2 = slot2.Find
+	slot4 = slot0
+	slot5 = slot1
+
+	return slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.FindGCRoot = slot16
 
 return slot15
 --- END OF BLOCK #0 ---

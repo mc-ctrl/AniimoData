@@ -6,9 +6,10 @@ slot1 = slot0.Class
 slot3 = "HttpRequest"
 slot1 = slot1(slot3)
 slot2 = {
+	GET = "GET",
+	PATCH = "PATCH",
 	PUT = "PUT",
-	POST = "POST",
-	GET = "GET"
+	POST = "POST"
 }
 slot1.Method = slot2
 

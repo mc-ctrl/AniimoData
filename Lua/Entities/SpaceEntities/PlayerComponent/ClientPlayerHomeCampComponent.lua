@@ -1,56 +1,65 @@
---- BLOCK #0 1-157, warpins: 1 ---
+--- BLOCK #0 1-192, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Common.CallbackHandler"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.MessageName"
+slot4 = "Core.Common.CallbackHandler"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.Const"
+slot5 = "Const.MessageName"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.OpDef"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.NoticeDef"
+slot7 = "Common.OpDef"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientUtils"
+slot8 = "Common.NoticeDef"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.Utils"
+slot9 = "Utils.ClientUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.HomeLandUtils"
+slot10 = "Common.Utils.Utils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Utils.HomeCampTenantUtils"
+slot11 = "Common.Utils.HomeLandUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.CommonSwitch"
+slot12 = "Common.Utils.HomeCampTenantUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.home_camp_data"
+slot13 = "Common.CommonSwitch"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Core.Common.Time"
+slot14 = "Data.home_camp_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.LuaUIUtils"
+slot15 = "Core.Common.Time"
 slot13 = slot13(slot15)
-slot14 = slot0.Component
-slot16 = "ClientPlayerHomeCampComponent"
+slot14 = require
+slot16 = "Utils.LuaUIUtils"
 slot14 = slot14(slot16)
+slot15 = require
+slot17 = "Common.Utils.HomeCampDirectoryCaller"
+slot15 = slot15(slot17)
+slot16 = slot1.Component
+slot18 = "ClientPlayerHomeCampComponent"
+slot16 = slot16(slot18)
+slot17 = 132
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot18 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot0.worldHomeCampInfo = slot1
 	slot1 = {}
 	slot0.tempWorldHomeCampInfo = slot1
+	slot1 = nil
+	slot0._campDispatchFinishTimer = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -59,9 +68,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.ctor = slot15
+slot16.ctor = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = true
 
@@ -72,23 +81,12 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.init = slot15
+slot16.init = slot18
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot14.destroy = slot15
-
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.queryWorldCampInfo
+	slot1 = slot0.clearCampDispatchFinishTimer
 
 	slot1(slot3)
 
@@ -99,9 +97,672 @@ slot15 = function(slot0)
 
 end
 
-slot14.start = slot15
+slot16.destroy = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.queryWorldCampInfo
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshCampDispatchFinishTimer
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.start = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._campDispatchFinishTimer
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.removeTimer
+	slot4 = slot0._campDispatchFinishTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0._campDispatchFinishTimer = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.clearCampDispatchFinishTimer = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.campDispatchInfo
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.finishTs
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	slot2 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-10, warpins: 2 ---
+	slot3 = 0
+
+	--- END OF BLOCK #3 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-11, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-13, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 14-16, warpins: 1 ---
+	slot3 = slot1.endTs
+	--- END OF BLOCK #6 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 17-17, warpins: 2 ---
+	slot3 = 0
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 18-18, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot16.getCampDispatchFinishTimestamp = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCampDispatchFinishTimestamp
+	slot1 = slot1(slot3)
+	slot2 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot2 = Time
+	slot2 = slot2.secondCache
+	--- END OF BLOCK #1 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 13-13, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-14, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16.isCampDispatchFinished = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearCampDispatchFinishTimer
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.getCampDispatchFinishTimestamp
+	slot1 = slot1(slot3)
+	slot2 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-14, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isCampDispatchFinished
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-28, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.addTimer
+	slot5 = Time
+	slot5 = slot5.secondCache
+	slot5 = slot1 - slot5
+	slot6 = CallbackHandler
+	slot8 = slot0
+	slot9 = "onCampDispatchFinishTimer"
+	slot10 = slot1
+	MULTRES = slot6(slot8, slot9, slot10)
+	slot2 = slot2(slot4, slot5, MULTRES)
+	slot0._campDispatchFinishTimer = slot2
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16.refreshCampDispatchFinishTimer = slot18
+
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getCampDispatchFinishTimestamp
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot2 = nil
+	slot0._campDispatchFinishTimer = slot2
+	slot4 = slot0
+	slot2 = slot0.isCampDispatchFinished
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-17, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshCampDispatchFinishTimer
+
+	slot2(slot4)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-25, warpins: 2 ---
+	slot2 = facade
+	slot4 = slot2
+	slot2 = slot2.sendMsgToUI
+	slot5 = MessageName
+	slot5 = slot5.HOME_CAR_CAMP_DISPATCH_STATE_CHANGED
+	slot6 = true
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16.onCampDispatchFinishTimer = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.isInScene
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-13, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.getClientInfo
+	slot4 = Const
+	slot4 = slot4.CLIENT_KEY
+	slot4 = slot4.HOME_CAR_UPGRADE
+	slot5 = "pending_ai_notice_level"
+	slot1 = slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot2 = 0
+
+	--- END OF BLOCK #4 ---
+
+	if slot1 <= slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-18, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-21, warpins: 2 ---
+	slot2 = slot0.homeBasicInfo
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 22-24, warpins: 1 ---
+	slot3 = slot2.level
+	--- END OF BLOCK #7 ---
+
+	if slot3 >= slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 25-28, warpins: 1 ---
+	slot3 = slot2.upgradeEndTs
+	slot4 = 0
+
+	--- END OF BLOCK #8 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 29-29, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-46, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.doEventByData
+	slot6 = {
+		"startAIRemind"
+	}
+	slot7 = {}
+	slot8 = HOME_CAR_UPGRADE_AI_GROUP_ID
+	slot7[1] = slot8
+	slot6[2] = slot7
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.setClientInfo
+	slot6 = Const
+	slot6 = slot6.CLIENT_KEY
+	slot6 = slot6.HOME_CAR_UPGRADE
+	slot7 = "pending_ai_notice_level"
+	slot8 = 0
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot16.tryNotifyHomeCarUpgradeFinished = slot18
+
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.refreshCampDispatchFinishTimer
+
+	slot3(slot5)
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.HOME_CAR_CAMP_DISPATCH_STATE_CHANGED
+	slot9 = slot0
+	slot7 = slot0.isCampDispatchFinished
+	MULTRES = slot7(slot9)
+
+	slot3(slot5, slot6, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.on_campDispatchInfo_changed = slot18
+
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-6, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 7-15, warpins: 2 ---
+	slot5 = facade
+	slot7 = slot5
+	slot5 = slot5.sendMsgToUI
+	slot8 = MessageName
+	slot8 = slot8.HOME_CAR_UPGRADE_STATE_CHANGED
+
+	slot5(slot7, slot8)
+
+	slot5 = 0
+	--- END OF BLOCK #4 ---
+
+	if slot3 > slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 16-17, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot4 == 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 18-20, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.tryNotifyHomeCarUpgradeFinished
+
+	slot5(slot7)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-21, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot16.on_homeBasicInfo_upgradeEndTs_changed = slot18
+
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-6, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 7-14, warpins: 2 ---
+	slot5 = facade
+	slot7 = slot5
+	slot5 = slot5.sendMsgToUI
+	slot8 = MessageName
+	slot8 = slot8.HOME_CAR_UPGRADE_STATE_CHANGED
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #4 ---
+
+	if slot3 < slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-17, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.tryNotifyHomeCarUpgradeFinished
+
+	slot5(slot7)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-18, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.on_homeBasicInfo_level_changed = slot18
+
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.queryWorldCampInfo
@@ -115,9 +776,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.on_campSpaceKeyMap_added = slot15
+slot16.on_campSpaceKeyMap_added = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.queryWorldCampInfo
@@ -131,9 +792,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.on_campSpaceKeyMap_delete = slot15
+slot16.on_campSpaceKeyMap_delete = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.queryWorldCampInfo
@@ -147,9 +808,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.on_campSpaceKeyMap_changed = slot15
+slot16.on_campSpaceKeyMap_changed = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.queryWorldCampInfo
@@ -173,9 +834,113 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.on_curCampStaticId_changed = slot15
+slot16.on_curCampStaticId_changed = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.HOMELAND_STATHOMECAR_ORNAMENT_CHANGED
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.on_statHomeCarOrnament_changed = slot18
+
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.countOrnamentPlaceNum
+	slot5 = slot0.statHomeCarOrnament
+	slot6 = slot1
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.getOrnamentCarCurPlaceNum = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.statHomeCarOrnament
+	slot2 = slot1[0]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot2 = slot1[0]
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot2 = 0
+	slot3 = pairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 12-13, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot6 ~= 0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	slot2 = slot2 + slot7
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-16, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 17-17, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.getCarGroupOrnamentCount = slot18
+
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -330,9 +1095,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.queryHomeBasicInfo = slot15
+slot16.queryHomeBasicInfo = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -473,9 +1238,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.queryCampCarSyncInfo = slot15
+slot16.queryCampCarSyncInfo = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isHomeCampUnlocked
 	--- END OF BLOCK #0 ---
@@ -508,9 +1273,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.getHomeCarLevel = slot15
+slot16.getHomeCarLevel = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isHomeCampUnlocked
 	--- END OF BLOCK #0 ---
@@ -561,9 +1326,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.getHomeCarCompLevel = slot15
+slot16.getHomeCarCompLevel = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.campSpaceKeyMap
 	slot2 = slot0.curCampStaticId
@@ -576,9 +1341,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.getSelfHomeCampKey = slot15
+slot16.getSelfHomeCampKey = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3, slot4)
+slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -679,78 +1444,38 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-7, warpins: 2 ---
-	slot6 = CommonSwitch
-	slot6 = slot6.UseNewHomeCampArch
-	--- END OF BLOCK #2 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 8-25, warpins: 1 ---
+	--- BLOCK #2 4-24, warpins: 2 ---
+	slot6 = HomeCampDirectoryCaller
+	slot6 = slot6.call
 	slot8 = slot0
-	slot6 = slot0.callService
-	slot9 = "HomeCampDirectoryService"
-	slot10 = "CMD_GetRecommendCampLines"
-	slot11 = {}
-	slot12 = slot0.uid
-	slot11[1] = slot12
-	slot12 = slot0.serverId
-	slot11[2] = slot12
-	slot11[3] = slot2
-	slot11[4] = slot1
-	slot11[5] = slot3
-	slot12 = slot5
-	slot13 = {}
-	slot14 = slot0.id
-	slot13.hint = slot14
+	slot9 = "CMD_GetRecommendCampLines"
+	slot10 = {}
+	slot11 = slot0.uid
+	slot10[1] = slot11
+	slot11 = slot0.serverId
+	slot10[2] = slot11
+	slot10[3] = slot2
+	slot10[4] = slot1
+	slot10[5] = slot3
+	slot11 = slot5
+	slot12 = {}
+	slot13 = slot0.id
+	slot12.hint = slot13
+	slot13 = slot0.uid
+	slot12.callerId = slot13
 
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+	slot6(slot8, slot9, slot10, slot11, slot12)
 
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 26-41, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.callService
-	slot9 = "HomeCampService"
-	slot10 = "CMD_GetCampListN"
-	slot11 = {}
-	slot12 = slot0.uid
-	slot11[1] = slot12
-	slot12 = slot0.serverId
-	slot11[2] = slot12
-	slot11[3] = slot1
-	slot11[4] = slot2
-	slot12 = slot5
-	slot13 = {}
-	slot14 = slot0.id
-	slot13.hint = slot14
-
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 42-43, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot14.getCampListN = slot15
+slot16.getCampListN = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -851,75 +1576,36 @@ slot15 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-7, warpins: 2 ---
-	slot4 = CommonSwitch
-	slot4 = slot4.UseNewHomeCampArch
-	--- END OF BLOCK #2 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 8-23, warpins: 1 ---
+	--- BLOCK #2 4-22, warpins: 2 ---
+	slot4 = HomeCampDirectoryCaller
+	slot4 = slot4.call
 	slot6 = slot0
-	slot4 = slot0.callService
-	slot7 = "HomeCampDirectoryService"
-	slot8 = "CMD_GetLinesBySpaceKeys"
-	slot9 = {}
-	slot10 = slot0.uid
-	slot9[1] = slot10
-	slot10 = slot0.serverId
-	slot9[2] = slot10
-	slot9[3] = slot1
-	slot10 = slot3
-	slot11 = {}
-	slot12 = slot0.id
-	slot11.hint = slot12
+	slot7 = "CMD_GetLinesBySpaceKeys"
+	slot8 = {}
+	slot9 = slot0.uid
+	slot8[1] = slot9
+	slot9 = slot0.serverId
+	slot8[2] = slot9
+	slot8[3] = slot1
+	slot9 = slot3
+	slot10 = {}
+	slot11 = slot0.id
+	slot10.hint = slot11
+	slot11 = slot0.uid
+	slot10.callerId = slot11
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 24-38, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.callService
-	slot7 = "HomeCampService"
-	slot8 = "CMD_GetCampListByIds"
-	slot9 = {}
-	slot10 = slot0.uid
-	slot9[1] = slot10
-	slot10 = slot0.serverId
-	slot9[2] = slot10
-	slot9[3] = slot1
-	slot10 = slot3
-	slot11 = {}
-	slot12 = slot0.id
-	slot11.hint = slot12
-
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 39-40, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot14.getCampListByIds = slot15
+slot16.getCampListByIds = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1020,29 +1706,31 @@ slot15 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-21, warpins: 2 ---
+	--- BLOCK #2 4-23, warpins: 2 ---
+	slot5 = HomeCampDirectoryCaller
+	slot5 = slot5.call
 	slot7 = slot0
-	slot5 = slot0.callService
-	slot8 = "HomeCampDirectoryService"
-	slot9 = "CMD_QueryCampLines"
-	slot10 = {
+	slot8 = "CMD_QueryCampLines"
+	slot9 = {
 		nil,
 		nil,
 		0,
 		0
 	}
-	slot11 = slot0.uid
-	slot10[1] = slot11
-	slot11 = slot0.serverId
-	slot10[2] = slot11
-	slot10[5] = slot1
-	slot10[6] = slot2
-	slot11 = slot4
-	slot12 = {}
-	slot13 = slot0.id
-	slot12.hint = slot13
+	slot10 = slot0.uid
+	slot9[1] = slot10
+	slot10 = slot0.serverId
+	slot9[2] = slot10
+	slot9[5] = slot1
+	slot9[6] = slot2
+	slot10 = slot4
+	slot11 = {}
+	slot12 = slot0.id
+	slot11.hint = slot12
+	slot12 = slot0.uid
+	slot11.callerId = slot12
 
-	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+	slot5(slot7, slot8, slot9, slot10, slot11)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -1051,9 +1739,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.getAllCampListN = slot15
+slot16.getAllCampListN = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1158,23 +1846,25 @@ slot15 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 7-23, warpins: 2 ---
+	--- BLOCK #4 7-25, warpins: 2 ---
+	slot4 = HomeCampDirectoryCaller
+	slot4 = slot4.call
 	slot6 = slot0
-	slot4 = slot0.callService
-	slot7 = "HomeCampDirectoryService"
-	slot8 = "CMD_FindCampByCode"
-	slot9 = {}
-	slot10 = slot0.uid
-	slot9[1] = slot10
-	slot10 = slot0.serverId
-	slot9[2] = slot10
-	slot9[3] = slot1
-	slot10 = slot3
-	slot11 = {}
-	slot12 = slot0.id
-	slot11.hint = slot12
+	slot7 = "CMD_FindCampByCode"
+	slot8 = {}
+	slot9 = slot0.uid
+	slot8[1] = slot9
+	slot9 = slot0.serverId
+	slot8[2] = slot9
+	slot8[3] = slot1
+	slot9 = slot3
+	slot10 = {}
+	slot11 = slot0.id
+	slot10.hint = slot11
+	slot11 = slot0.uid
+	slot10.callerId = slot11
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -1182,7 +1872,7 @@ slot15 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 24-24, warpins: 2 ---
+	--- BLOCK #5 26-26, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -1190,9 +1880,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.findCampByCode = slot15
+slot16.findCampByCode = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = {
 		"playerName",
@@ -1226,9 +1916,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.queryFriendCampInfo = slot15
+slot16.queryFriendCampInfo = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = {}
 	slot5 = {}
@@ -1465,9 +2155,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.queryFriendCampInfoCallback = slot15
+slot16.queryFriendCampInfoCallback = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = {
 		"playerName",
@@ -1505,9 +2195,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.querySinglePlayerCampInfo = slot15
+slot16.querySinglePlayerCampInfo = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1567,9 +2257,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.querySinglePlayerCampInfoCallback = slot15
+slot16.querySinglePlayerCampInfoCallback = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curCampStaticId
 	--- END OF BLOCK #0 ---
@@ -2107,9 +2797,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.queryWorldCampInfo = slot15
+slot16.queryWorldCampInfo = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0.worldHomeCampData = slot1
 	slot2 = {}
@@ -2257,9 +2947,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onQueryWorldCampLineInfo = slot15
+slot16.onQueryWorldCampLineInfo = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.queryWorldCampInfoCallbackInfo = slot3
 	slot4 = slot2.status
@@ -2407,9 +3097,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.queryWorldCampInfoCallback = slot15
+slot16.queryWorldCampInfoCallback = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.curCampCarTmplId
 
@@ -2420,9 +3110,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.getSelfHomeCampPlaceId = slot15
+slot16.getSelfHomeCampPlaceId = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.requestHomeCampOp
@@ -2443,9 +3133,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.unlockHomeCamp = slot15
+slot16.unlockHomeCamp = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -2460,9 +3150,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.enterSelfHomeCamp = slot15
+slot16.enterSelfHomeCamp = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ClientPlayerHomeCampComponent
 	slot3 = slot3._platformHooks
@@ -2556,9 +3246,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.enterHomeCamp = slot15
+slot16.enterHomeCamp = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2606,9 +3296,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.enterHomeCampByUid = slot15
+slot16.enterHomeCampByUid = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot2.status
 	--- END OF BLOCK #0 ---
@@ -2664,9 +3354,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14._enterHomeCampByUidQueryCallback = slot15
+slot16._enterHomeCampByUidQueryCallback = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2750,9 +3440,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.requestHomeCampOp = slot15
+slot16.requestHomeCampOp = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.requestHomeCampOp
@@ -2772,9 +3462,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.setHomeCarShape = slot15
+slot16.setHomeCarShape = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.requestHomeCampOp
@@ -2794,9 +3484,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.likeHomeCar = slot15
+slot16.likeHomeCar = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
@@ -2887,9 +3577,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.changeCamp = slot15
+slot16.changeCamp = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
@@ -2957,9 +3647,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.sendDissolvePrivateMessage = slot15
+slot16.sendDissolvePrivateMessage = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -2981,9 +3671,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.sendSetLinePermissionMessage = slot15
+slot16.sendSetLinePermissionMessage = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -3005,9 +3695,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.changeCarIndexMessage = slot15
+slot16.changeCarIndexMessage = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -3029,9 +3719,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.kickLineMemberMessage = slot15
+slot16.kickLineMemberMessage = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.logDebug
@@ -3618,9 +4308,290 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.RPC_SC_HomeCampOp = slot15
+slot16.RPC_SC_HomeCampOp = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-20, warpins: 2 ---
+	slot3 = HomeLandUtils
+	slot3 = slot3.getCampAddOnOwnerNameFromCreatedMap
+	slot5 = pg
+	slot5 = slot5.space
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-21, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-36, warpins: 2 ---
+	slot3 = LuaUIUtils
+	slot3 = slot3.getPlayerDisplayName
+	slot5 = tostring
+	slot7 = slot1
+	slot5 = slot5(slot7)
+	slot6 = nil
+	slot7 = true
+	slot3 = slot3(slot5, slot6, slot7)
+	slot2 = slot3
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 37-37, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-40, warpins: 2 ---
+	slot3 = tostring
+	--- END OF BLOCK #6 ---
+
+	slot5 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 41-41, warpins: 1 ---
+	slot5 = ""
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 42-42, warpins: 2 ---
+	return slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot16.getCampAddOnOwnerDisplayName = slot18
+
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot1.ownerUid
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot2 = slot0.campAddOnOwnerUid
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	slot2 = slot0.uid
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-14, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.getCampAddOnOwnerDisplayName
+	slot6 = slot2
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-15, warpins: 1 ---
+	slot7 = slot1.ownerName
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 16-26, warpins: 2 ---
+	slot3 = slot3(slot5, slot6, slot7)
+	slot0.campAddOnOwnerUid = slot2
+	slot0.campAddOnOwnerName = slot3
+	slot4 = tostring
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	slot5 = tostring
+	slot7 = slot0.uid
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #6 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 27-33, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.showBubbleMessageById
+	slot6 = NoticeDef
+	slot6 = slot6.HOMECAMP_BUFF_GAINED_SELF
+
+	slot4(slot6)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 34-40, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.showBubbleMessageById
+	slot6 = NoticeDef
+	slot6 = slot6.HOMECAMP_BUFF_GAINED_OTHER
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 41-46, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.homeCarBuffPanel
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 47-49, warpins: 1 ---
+	slot5 = slot4.view
+	--- END OF BLOCK #10 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 50-52, warpins: 1 ---
+	slot5 = slot4.onBuffGained
+	--- END OF BLOCK #11 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 53-56, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.onBuffGained
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 57-57, warpins: 4 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot16.onCampBuffGained = slot18
+
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3655,7 +4626,7 @@ slot15 = function(slot0, slot1)
 
 
 	--- BLOCK #3 11-11, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -3762,9 +4733,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.refreshCampLinInfo = slot15
+slot16.refreshCampLinInfo = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot2.status
 
@@ -3862,9 +4833,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.refreshCampLinInfoCallback = slot15
+slot16.refreshCampLinInfoCallback = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playerHomeCampInfo
 	--- END OF BLOCK #0 ---
@@ -3933,9 +4904,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.getPlayerHomeCampInfo = slot15
+slot16.getPlayerHomeCampInfo = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.callService
@@ -3979,9 +4950,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.requirePlayerLineInfo = slot15
+slot16.requirePlayerLineInfo = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.status
 
@@ -4017,9 +4988,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.getOwnLoginLineInfoCallback = slot15
+slot16.getOwnLoginLineInfoCallback = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
@@ -4097,9 +5068,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.requireCreatePrivateHomeCamp = slot15
+slot16.requireCreatePrivateHomeCamp = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPlayerHomeCampInfo
@@ -4192,9 +5163,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.checkIsPrivateCampOwner = slot15
+slot16.checkIsPrivateCampOwner = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4232,9 +5203,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.teleportToCreatePrivateCampPosition = slot15
+slot16.teleportToCreatePrivateCampPosition = slot18
 
-slot15 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.curCampStaticId
 	slot2 = HomeLandUtils
@@ -4342,9 +5313,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.confirmTeleportToCreatePrivateCampPosition = slot15
+slot16.confirmTeleportToCreatePrivateCampPosition = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -4391,7 +5362,7 @@ slot15 = function(slot0, slot1)
 
 
 	--- BLOCK #4 16-16, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -4442,9 +5413,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.checkFriendInSelfCamp = slot15
+slot16.checkFriendInSelfCamp = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4648,9 +5619,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.showHomeCampNoticeByReason = slot15
+slot16.showHomeCampNoticeByReason = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4843,9 +5814,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.sendInviteFriendMessage = slot15
+slot16.sendInviteFriendMessage = slot18
 
-slot15 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.targetUid
 	slot3 = pg
@@ -4914,9 +5885,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onCreateInviteSucc = slot15
+slot16.onCreateInviteSucc = slot18
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5231,9 +6202,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.realSendInviteFriendMessage = slot15
+slot16.realSendInviteFriendMessage = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ClientPlayerHomeCampComponent
 	slot3 = slot3._platformHooks
@@ -5315,9 +6286,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.acceptCampInvite = slot15
+slot16.acceptCampInvite = slot18
 
-slot15 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = {}
 	slot4 = pairs
@@ -5475,9 +6446,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.showMemberNotUnlockCampInfo = slot15
+slot16.showMemberNotUnlockCampInfo = slot18
 
-return slot14
+return slot16
 --- END OF BLOCK #0 ---
 
 

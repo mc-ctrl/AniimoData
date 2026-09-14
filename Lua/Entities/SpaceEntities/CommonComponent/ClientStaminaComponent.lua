@@ -1,4 +1,4 @@
---- BLOCK #0 1-108, warpins: 1 ---
+--- BLOCK #0 1-116, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -57,19 +57,26 @@ slot19 = slot3
 slot16 = slot16(slot18, slot19)
 
 slot17 = function(slot0)
-	--- BLOCK #0 1-88, warpins: 1 ---
+	--- BLOCK #0 1-94, warpins: 1 ---
+	slot1 = false
+	slot0.staminaLocked = slot1
+	slot1 = nil
+	slot0.lockedStamina = slot1
+	slot1 = false
+	slot0.restoringLockedStamina = slot1
 	slot1 = {
 		enterCost = 0,
-		horiRate = 0,
-		notifyNotEnough = false,
-		followRatio = 1,
 		freelanceMode = false,
+		usualFlyCostSpace = false,
 		isPvpSpace = false,
-		vertRate = 0,
+		isFastCarryEgg = false,
+		isRobEggSpace = false,
+		notifyNotEnough = false,
 		startCost = false,
 		recovery = false,
-		usualFlyCostSpace = false,
-		isRobEggSpace = false
+		followRatio = 1,
+		vertRate = 0,
+		horiRate = 0
 	}
 	slot2 = StaminaConfigData
 	slot2 = slot2.StaminaRegenCoolDown
@@ -82,13 +89,13 @@ slot17 = function(slot0)
 	slot1.staminaTag = slot2
 	slot0.staminaTickData = slot1
 	slot1 = {
-		vertRate = 0,
-		horiRate = 0,
 		recovery = false,
+		vertRate = 0,
+		inCombat = false,
+		enterWithoutCost = false,
 		rate = 1,
 		cost = 0,
-		inCombat = false,
-		enterWithoutCost = false
+		horiRate = 0
 	}
 	slot0.staminaQueryData = slot1
 	slot1 = {}
@@ -291,7 +298,282 @@ end
 slot16.onLeaveSpace = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.staminaTickData
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-8, warpins: 2 ---
+	slot2.isFastCarryEgg = slot3
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16.setFastCarryEggStaminaState = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-9, warpins: 2 ---
+	slot0.staminaLocked = slot2
+	slot2 = slot0.staminaLocked
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-17, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getStamina
+	slot2 = slot2(slot4)
+	slot0.lockedStamina = slot2
+	slot4 = slot0
+	slot2 = slot0.clearStaminaTickData
+
+	slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 18-19, warpins: 1 ---
+	slot2 = nil
+	slot0.lockedStamina = slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-20, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.setStaminaLocked = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-21, warpins: 1 ---
+	slot1 = slot0.staminaTickData
+	slot2 = 0
+	slot1.enterCost = slot2
+	slot2 = 0
+	slot1.horiRate = slot2
+	slot2 = 0
+	slot1.vertRate = slot2
+	slot2 = StaminaConfigData
+	slot2 = slot2.StaminaRegenCoolDown
+	slot1.recoverStaminaLeftTime = slot2
+	slot2 = TagMask
+	slot2 = slot2.None
+	slot1.stateTag = slot2
+	slot2 = TagMask
+	slot2 = slot2.None
+	slot1.staminaTag = slot2
+	slot2 = false
+	slot1.recovery = slot2
+	slot2 = false
+	slot1.startCost = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.clearStaminaTickData = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.staminaLocked
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot0.lockedStamina
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot2 = slot0.restoringLockedStamina
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 3 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-13, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-17, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getStamina
+	slot2 = slot2(slot4)
+	slot1 = slot2
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-26, warpins: 2 ---
+	slot2 = slot0.lockedStamina
+	slot2 = slot2 - slot1
+	slot3 = math
+	slot3 = slot3.abs
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	slot4 = 0.0001
+	--- END OF BLOCK #6 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 27-28, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 29-39, warpins: 2 ---
+	slot3 = true
+	slot0.restoringLockedStamina = slot3
+	slot3 = slot0.actorCombatAttribute
+	slot5 = slot3
+	slot3 = slot3.changeStamina
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = false
+	slot0.restoringLockedStamina = slot3
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot16.restoreLockedStamina = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.staminaLocked
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-12, warpins: 2 ---
 	slot2 = TagMask
 	slot2 = slot2.None
 	slot3 = TagMask
@@ -299,93 +581,93 @@ slot17 = function(slot0, slot1)
 	slot4 = pairs
 	slot6 = slot0.StateTagNames
 	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #1 9-14, warpins: 1 ---
+	--- BLOCK #3 13-18, warpins: 1 ---
 	slot11 = slot1
 	slot9 = slot1.Has
 	slot12 = slot7
 	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 15-15, warpins: 1 ---
+	--- BLOCK #4 19-19, warpins: 1 ---
 	slot2 = slot7
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 16-17, warpins: 3 ---
-	--- END OF BLOCK #3 ---
+	--- BLOCK #5 20-21, warpins: 3 ---
+	--- END OF BLOCK #5 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #4 18-22, warpins: 1 ---
+	--- BLOCK #6 22-26, warpins: 1 ---
 	slot4 = -1
 	slot5 = pairs
 	slot7 = slot0.StaminaTagNames
 	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #5 23-28, warpins: 1 ---
+	--- BLOCK #7 27-32, warpins: 1 ---
 	slot12 = slot1
 	slot10 = slot1.Has
 	slot13 = slot8
 	slot10 = slot10(slot12, slot13)
-	--- END OF BLOCK #5 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 29-32, warpins: 1 ---
-	slot10 = slot0.StaminaTagPriority
-	slot10 = slot10[slot8]
-	--- END OF BLOCK #6 ---
-
-	if slot4 < slot10 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 33-34, warpins: 1 ---
-	slot3 = slot8
-	slot4 = slot10
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot10 = if slot10 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #8 35-36, warpins: 4 ---
+	--- BLOCK #8 33-36, warpins: 1 ---
+	slot10 = slot0.StaminaTagPriority
+	slot10 = slot10[slot8]
 	--- END OF BLOCK #8 ---
 
+	if slot4 < slot10 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 37-38, warpins: 1 ---
+	slot3 = slot8
+	slot4 = slot10
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 39-40, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
 	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #9
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #9 37-42, warpins: 1 ---
+	--- BLOCK #11 41-46, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.changeStaminaTickData
 	slot8 = slot2
@@ -394,7 +676,7 @@ slot17 = function(slot0, slot1)
 	slot5(slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 
 
@@ -403,13 +685,33 @@ end
 slot16.updateStaminaTags = slot17
 
 slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.staminaLocked
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
 	slot3 = slot0.staminaTickData
 	slot3.horiRate = slot1
 	slot3.vertRate = slot2
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -779,10 +1081,9 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 22-26, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.FAST_CARRY_EGG_ST
-	slot2 = slot2(slot4)
+	--- BLOCK #6 22-25, warpins: 1 ---
+	slot2 = slot0.staminaTickData
+	slot2 = slot2.isFastCarryEgg
 	--- END OF BLOCK #6 ---
 
 	slot2 = if slot2 then
@@ -792,7 +1093,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 27-28, warpins: 2 ---
+	--- BLOCK #7 26-27, warpins: 2 ---
 	slot2 = true
 
 	return slot2
@@ -802,7 +1103,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 29-30, warpins: 2 ---
+	--- BLOCK #8 28-29, warpins: 2 ---
 	slot2 = false
 
 	return slot2
@@ -1984,11 +2285,10 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 38-44, warpins: 1 ---
+	--- BLOCK #8 38-43, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.pawn
 	slot5 = slot5.eModel
-	slot5 = slot5.motionComponent
 	slot5 = slot5.CanGlide
 	--- END OF BLOCK #8 ---
 
@@ -1999,14 +2299,14 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #9 45-46, warpins: 1 ---
+	--- BLOCK #9 44-45, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #10 47-54, warpins: 1 ---
+	--- BLOCK #10 46-53, warpins: 1 ---
 	slot5 = slot0.actorCombatAttribute
 	slot7 = slot5
 	slot5 = slot5.getStaminaCostRatio
@@ -2019,7 +2319,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #11 55-58, warpins: 1 ---
+	--- BLOCK #11 54-57, warpins: 1 ---
 	slot5 = TagMask
 	slot5 = slot5.Swim
 	--- END OF BLOCK #11 ---
@@ -2031,13 +2331,13 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #12 59-59, warpins: 1 ---
+	--- BLOCK #12 58-58, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #13 60-63, warpins: 1 ---
+	--- BLOCK #13 59-62, warpins: 1 ---
 	slot5 = TagMask
 	slot5 = slot5.Dash
 	--- END OF BLOCK #13 ---
@@ -2049,7 +2349,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #14 64-76, warpins: 1 ---
+	--- BLOCK #14 63-75, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.pawn
 	slot5 = slot5.actorCombatAttribute
@@ -2070,7 +2370,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #15 77-82, warpins: 1 ---
+	--- BLOCK #15 76-81, warpins: 1 ---
 	slot5 = slot0.space
 	slot7 = slot5
 	slot5 = slot5.isPvpEnv
@@ -2084,7 +2384,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #16 83-86, warpins: 1 ---
+	--- BLOCK #16 82-85, warpins: 1 ---
 	slot5 = AbilitySettingGlobalConstData
 	slot5 = slot5.pvpDashStaminaCostRatio
 	--- END OF BLOCK #16 ---
@@ -2096,21 +2396,21 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #17 87-87, warpins: 1 ---
+	--- BLOCK #17 86-86, warpins: 1 ---
 	slot5 = 1
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 88-89, warpins: 2 ---
+	--- BLOCK #18 87-88, warpins: 2 ---
 	slot3 = slot3 * slot5
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #19 90-96, warpins: 2 ---
+	--- BLOCK #19 89-95, warpins: 2 ---
 	slot5 = Utils
 	slot5 = slot5.isRobEggSceneId
 	slot7 = slot0.space
@@ -2125,7 +2425,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #20 97-101, warpins: 1 ---
+	--- BLOCK #20 96-100, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.isInCombat
 	slot5 = slot5(slot7)
@@ -2138,7 +2438,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #21 102-105, warpins: 1 ---
+	--- BLOCK #21 101-104, warpins: 1 ---
 	slot5 = AbilitySettingGlobalConstData
 	slot5 = slot5.SouDaCheInCombatDashCost
 	--- END OF BLOCK #21 ---
@@ -2150,20 +2450,20 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #22 106-106, warpins: 1 ---
+	--- BLOCK #22 105-105, warpins: 1 ---
 	slot3 = 30
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 107-107, warpins: 2 ---
+	--- BLOCK #23 106-106, warpins: 2 ---
 	--- END OF BLOCK #23 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #24 108-111, warpins: 1 ---
+	--- BLOCK #24 107-110, warpins: 1 ---
 	slot5 = TagMask
 	slot5 = slot5.Sprint
 	--- END OF BLOCK #24 ---
@@ -2175,7 +2475,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #25 112-120, warpins: 1 ---
+	--- BLOCK #25 111-119, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.pawn
 	slot5 = slot5.actorCombatAttribute
@@ -2190,7 +2490,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 121-130, warpins: 10 ---
+	--- BLOCK #26 120-129, warpins: 10 ---
 	slot5 = slot3 * slot4
 	slot6 = slot0.staminaTickData
 	slot6 = slot6.followRatio
@@ -2247,29 +2547,52 @@ end
 slot16.recoverStamina = slot17
 
 slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = 0
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.restoreLockedStamina
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+
 	--- END OF BLOCK #0 ---
 
-	if slot2 <= slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.onStaminaExhausted
-
-	slot3(slot5)
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-13, warpins: 2 ---
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot3 = 0
+	--- END OF BLOCK #2 ---
+
+	if slot2 <= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.onStaminaExhausted
+
+	slot3(slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-20, warpins: 2 ---
 	slot3 = facade
 	slot5 = slot3
 	slot3 = slot3.sendMsgToUI
@@ -2279,7 +2602,7 @@ slot17 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -2335,343 +2658,444 @@ end
 slot16.checkFullStamina = slot17
 
 slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot2 = slot2.timeScale
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.staminaLocked
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
-	slot2 = 1
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.restoreLockedStamina
+
+	slot2(slot4)
+
+	return
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-14, warpins: 2 ---
-	slot3 = slot0.timeScale
-	slot3 = slot1 * slot3
-	slot3 = slot3 * slot2
-	slot4 = slot0.staminaTickData
-	slot5 = 0
-	slot6 = slot4.enterCost
-	slot7 = 0
+	--- BLOCK #2 8-11, warpins: 2 ---
+	slot2 = slot0.eModel
+	slot2 = slot2.timeScale
 	--- END OF BLOCK #2 ---
 
-	if slot6 > slot7 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 15-18, warpins: 1 ---
-	slot6 = slot4.enterCost
-	slot5 = slot5 + slot6
-	slot6 = 0
-	slot4.enterCost = slot6
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot2 = 1
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-25, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.prepareStaminaQueryData
-	slot9 = slot4.stateTag
-	slot6 = slot6(slot8, slot9)
-	slot7 = slot4.startCost
+	--- BLOCK #4 13-19, warpins: 2 ---
+	slot3 = slot0.timeScale
+	slot3 = slot1 * slot3
+	slot3 = slot3 * slot2
+	slot4 = slot0.staminaTickData
+	slot5 = slot4.isFastCarryEgg
 	--- END OF BLOCK #4 ---
 
-	slot7 = if slot7 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 26-28, warpins: 1 ---
-	slot7 = slot6.inCombat
+	--- BLOCK #5 20-24, warpins: 1 ---
+	slot5 = slot4.staminaTag
+	slot6 = TagMask
+	slot6 = slot6.Movement
 	--- END OF BLOCK #5 ---
 
-	slot7 = if not slot7 then
+	if slot5 ~= slot6 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 29-31, warpins: 1 ---
-	slot7 = slot4.freelanceMode
+	--- BLOCK #6 25-26, warpins: 1 ---
+	slot5 = false
 	--- END OF BLOCK #6 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 32-55, warpins: 2 ---
-	slot7 = slot4.horiRate
-	slot6.horiRate = slot7
-	slot7 = slot4.vertRate
-	slot6.vertRate = slot7
-	slot9 = slot0
-	slot7 = slot0.staminaQueryTickCost
-	slot10 = StaminaConfigData
-	slot10 = slot10.StaminaCostType
-	slot10 = slot10.COST_BY_TIME
-	slot11 = slot4.stateTag
-	slot12 = slot4.staminaTag
-	slot13 = slot6
-
-	slot7(slot9, slot10, slot11, slot12, slot13)
-
-	slot7 = slot6.cost
-	slot8 = slot6.rate
-	slot7 = slot7 * slot8
-	slot7 = slot7 * slot3
-	slot5 = slot5 + slot7
-	slot10 = slot0
-	slot8 = slot0.costStamina
-	slot11 = slot4.stateTag
-	slot12 = slot4.staminaTag
-	slot13 = slot5
-
-	slot8(slot10, slot11, slot12, slot13)
-
+	--- BLOCK #7 27-27, warpins: 1 ---
+	slot5 = true
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 56-57, warpins: 3 ---
+	--- BLOCK #8 28-29, warpins: 3 ---
 	--- END OF BLOCK #8 ---
 
-	if slot5 == 0 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 58-60, warpins: 1 ---
-	slot7 = slot4.recovery
+	--- BLOCK #9 30-33, warpins: 1 ---
+	slot6 = TagMask
+	slot6 = slot6.Sprint
 	--- END OF BLOCK #9 ---
 
-	slot7 = if slot7 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 61-65, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.checkFullStamina
-	slot7 = slot7(slot9)
+	--- BLOCK #10 34-34, warpins: 2 ---
+	slot6 = slot4.staminaTag
 	--- END OF BLOCK #10 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #24
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 66-69, warpins: 1 ---
-	slot7 = slot4.recoverStaminaLeftTime
-	slot8 = 0
+	--- BLOCK #11 35-39, warpins: 2 ---
+	slot7 = 0
+	slot8 = slot4.enterCost
+	slot9 = 0
 	--- END OF BLOCK #11 ---
 
-	if slot7 > slot8 then
+	if slot8 > slot9 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 70-73, warpins: 1 ---
-	slot7 = slot4.recoverStaminaLeftTime
-	slot7 = slot7 - slot3
-	slot4.recoverStaminaLeftTime = slot7
+	--- BLOCK #12 40-43, warpins: 1 ---
+	slot8 = slot4.enterCost
+	slot7 = slot7 + slot8
+	slot8 = 0
+	slot4.enterCost = slot8
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 74-88, warpins: 1 ---
-	slot7 = slot0.actorCombatAttribute
-	slot9 = slot7
-	slot7 = slot7.getAttribValue
-	slot10 = AttributeConst
-	slot10 = slot10.stamina_regen_v
-	slot7 = slot7(slot9, slot10)
-	slot8 = slot0.actorCombatAttribute
-	slot10 = slot8
-	slot8 = slot8.getAttribValue
-	slot11 = AttributeConst
-	slot11 = slot11.stamina_regen_p
+	--- BLOCK #13 44-50, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.prepareStaminaQueryData
+	slot11 = slot4.stateTag
 	slot8 = slot8(slot10, slot11)
-	slot9 = slot4.isPvpSpace
+	slot9 = slot4.startCost
 	--- END OF BLOCK #13 ---
 
-	slot9 = if slot9 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 89-92, warpins: 1 ---
-	slot9 = AbilitySettingGlobalConstData
-	slot9 = slot9.pvpStaminaRecoverRatio
+	--- BLOCK #14 51-52, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
-	slot9 = if not slot9 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #15 93-93, warpins: 2 ---
-	slot9 = 1
+	--- BLOCK #15 53-55, warpins: 2 ---
+	slot9 = slot8.inCombat
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 94-96, warpins: 2 ---
-	slot10 = slot4.isRobEggSpace
+	--- BLOCK #16 56-58, warpins: 1 ---
+	slot9 = slot4.freelanceMode
 	--- END OF BLOCK #16 ---
 
-	slot10 = if slot10 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 97-101, warpins: 1 ---
+	--- BLOCK #17 59-82, warpins: 2 ---
+	slot9 = slot4.horiRate
+	slot8.horiRate = slot9
+	slot9 = slot4.vertRate
+	slot8.vertRate = slot9
+	slot11 = slot0
+	slot9 = slot0.staminaQueryTickCost
+	slot12 = StaminaConfigData
+	slot12 = slot12.StaminaCostType
+	slot12 = slot12.COST_BY_TIME
+	slot13 = slot4.stateTag
+	slot14 = slot6
+	slot15 = slot8
+
+	slot9(slot11, slot12, slot13, slot14, slot15)
+
+	slot9 = slot8.cost
+	slot10 = slot8.rate
+	slot9 = slot9 * slot10
+	slot9 = slot9 * slot3
+	slot7 = slot7 + slot9
 	slot12 = slot0
-	slot10 = slot0.isInCombat
-	slot10 = slot10(slot12)
+	slot10 = slot0.costStamina
+	slot13 = slot4.stateTag
+	slot14 = slot6
+	slot15 = slot7
+
+	slot10(slot12, slot13, slot14, slot15)
+
 	--- END OF BLOCK #17 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #21
-	end
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 102-105, warpins: 1 ---
-	slot10 = AbilitySettingGlobalConstData
-	slot10 = slot10.pvpStaminaRecoverRatio
+	--- BLOCK #18 83-84, warpins: 3 ---
 	--- END OF BLOCK #18 ---
 
-	slot9 = if not slot10 then
+	if slot7 == 0 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #19 106-106, warpins: 1 ---
-	slot9 = 1
+	--- BLOCK #19 85-87, warpins: 1 ---
+	slot9 = slot4.recovery
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	slot9 = if slot9 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #34
+	end
 
 
-	--- BLOCK #20 107-107, warpins: 2 ---
+	--- BLOCK #20 88-92, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.checkFullStamina
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #34
+	end
 
 
-	--- BLOCK #21 108-111, warpins: 1 ---
-	slot10 = SysConfigData
-	slot10 = slot10.OutFightStaminRatio
+	--- BLOCK #21 93-96, warpins: 1 ---
+	slot9 = slot4.recoverStaminaLeftTime
+	slot10 = 0
 	--- END OF BLOCK #21 ---
 
-	slot9 = if not slot10 then
+	if slot9 > slot10 then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 112-112, warpins: 1 ---
-	slot9 = 1
+	--- BLOCK #22 97-100, warpins: 1 ---
+	slot9 = slot4.recoverStaminaLeftTime
+	slot9 = slot9 - slot3
+	slot4.recoverStaminaLeftTime = slot9
 	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
 
 
-	--- BLOCK #23 113-120, warpins: 4 ---
-	slot12 = slot0
-	slot10 = slot0.recoverStamina
-	slot13 = 1 + slot8
-	slot13 = slot7 * slot13
-	slot13 = slot13 * slot3
-	slot13 = slot13 * slot9
-
-	slot10(slot12, slot13)
-
+	--- BLOCK #23 101-115, warpins: 1 ---
+	slot9 = slot0.actorCombatAttribute
+	slot11 = slot9
+	slot9 = slot9.getAttribValue
+	slot12 = AttributeConst
+	slot12 = slot12.stamina_regen_v
+	slot9 = slot9(slot11, slot12)
+	slot10 = slot0.actorCombatAttribute
+	slot12 = slot10
+	slot10 = slot10.getAttribValue
+	slot13 = AttributeConst
+	slot13 = slot13.stamina_regen_p
+	slot10 = slot10(slot12, slot13)
+	slot11 = slot4.isPvpSpace
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #24 121-123, warpins: 3 ---
-	slot7 = StaminaConfigData
-	slot7 = slot7.StaminaRegenCoolDown
-	slot4.recoverStaminaLeftTime = slot7
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 124-126, warpins: 3 ---
-	slot7 = slot4.notifyNotEnough
-	--- END OF BLOCK #25 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #26
+	slot11 = if slot11 then
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #26 127-134, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.showBubbleMessageById
-	slot9 = NoticeDef
-	slot9 = slot9.STAMINA_NOT_ENOUGH
+	--- BLOCK #24 116-119, warpins: 1 ---
+	slot11 = AbilitySettingGlobalConstData
+	slot11 = slot11.pvpStaminaRecoverRatio
+	--- END OF BLOCK #24 ---
 
-	slot7(slot9)
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
 
-	slot7 = false
-	slot4.notifyNotEnough = slot7
 
+	--- BLOCK #25 120-120, warpins: 2 ---
+	slot11 = 1
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 121-123, warpins: 2 ---
+	slot12 = slot4.isRobEggSpace
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
+	slot12 = if slot12 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #33
+	end
 
 
-	--- BLOCK #27 135-135, warpins: 2 ---
-	return
+	--- BLOCK #27 124-128, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.isInCombat
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #27 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #28 129-132, warpins: 1 ---
+	slot12 = AbilitySettingGlobalConstData
+	slot12 = slot12.pvpStaminaRecoverRatio
+	--- END OF BLOCK #28 ---
+
+	slot11 = if not slot12 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 133-133, warpins: 1 ---
+	slot11 = 1
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 134-134, warpins: 2 ---
+	--- END OF BLOCK #30 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
+
+
+	--- BLOCK #31 135-138, warpins: 1 ---
+	slot12 = SysConfigData
+	slot12 = slot12.OutFightStaminRatio
+	--- END OF BLOCK #31 ---
+
+	slot11 = if not slot12 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 139-139, warpins: 1 ---
+	slot11 = 1
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 140-147, warpins: 4 ---
+	slot14 = slot0
+	slot12 = slot0.recoverStamina
+	slot15 = 1 + slot10
+	slot15 = slot9 * slot15
+	slot15 = slot15 * slot3
+	slot15 = slot15 * slot11
+
+	slot12(slot14, slot15)
+
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
+
+
+	--- BLOCK #34 148-150, warpins: 3 ---
+	slot9 = StaminaConfigData
+	slot9 = slot9.StaminaRegenCoolDown
+	slot4.recoverStaminaLeftTime = slot9
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 151-153, warpins: 3 ---
+	slot9 = slot4.notifyNotEnough
+	--- END OF BLOCK #35 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 154-161, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.showBubbleMessageById
+	slot11 = NoticeDef
+	slot11 = slot11.STAMINA_NOT_ENOUGH
+
+	slot9(slot11)
+
+	slot9 = false
+	slot4.notifyNotEnough = slot9
+
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 162-162, warpins: 2 ---
+	return
+	--- END OF BLOCK #37 ---
 
 
 

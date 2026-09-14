@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -41,6 +41,9 @@ slot7 = slot1.add_cur_stamina_v
 slot8 = true
 slot6[slot7] = slot8
 slot7 = slot1.add_cur_stamina_max_p
+slot8 = true
+slot6[slot7] = slot8
+slot7 = slot1.water_cur
 slot8 = true
 slot6[slot7] = slot8
 slot5.ClientPreModifyAttributes = slot6

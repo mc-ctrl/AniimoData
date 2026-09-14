@@ -457,18 +457,16 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 23-35, warpins: 1 ---
+	--- BLOCK #4 23-33, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.me
 	slot7 = slot7.space
 	slot7 = slot7.allocation
 	slot7 = slot7[slot6]
-	slot8 = table
-	slot8 = slot8.contains
-	slot10 = Const
-	slot10 = slot10.HOMELAND_IGNORE_WORK_TYPE
-	slot11 = slot7.opId
-	slot8 = slot8(slot10, slot11)
+	slot8 = Const
+	slot8 = slot8.HOMELAND_IGNORE_WORK_TYPE
+	slot9 = slot7.opId
+	slot8 = slot8[slot9]
 	--- END OF BLOCK #4 ---
 
 	slot8 = if not slot8 then
@@ -478,7 +476,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #5 36-43, warpins: 1 ---
+	--- BLOCK #5 34-41, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot0.petList
@@ -496,7 +494,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 44-45, warpins: 3 ---
+	--- BLOCK #6 42-43, warpins: 3 ---
 	--- END OF BLOCK #6 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -504,7 +502,7 @@ slot13 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 46-50, warpins: 2 ---
+	--- BLOCK #7 44-48, warpins: 2 ---
 	slot2 = HomeObjectData
 	slot3 = slot0.homeTemplateId
 	slot2 = slot2[slot3]
@@ -517,14 +515,14 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #8 51-51, warpins: 1 ---
+	--- BLOCK #8 49-49, warpins: 1 ---
 	slot2 = {}
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 52-54, warpins: 2 ---
+	--- BLOCK #9 50-52, warpins: 2 ---
 	slot3 = slot2.maxPetCount
 	--- END OF BLOCK #9 ---
 
@@ -535,14 +533,14 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #10 55-55, warpins: 1 ---
+	--- BLOCK #10 53-53, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 56-61, warpins: 2 ---
+	--- BLOCK #11 54-59, warpins: 2 ---
 	slot4 = slot0.petList
 	slot4 = #slot4
 	slot5 = slot4 + 1
@@ -553,7 +551,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 62-67, warpins: 2 ---
+	--- BLOCK #12 60-65, warpins: 2 ---
 	slot9 = table
 	slot9 = slot9.insert
 	slot11 = slot0.petList
@@ -569,7 +567,7 @@ slot13 = function(slot0)
 	LOOP BLOCK #12
 	GO OUT TO BLOCK #13
 
-	--- BLOCK #13 68-74, warpins: 1 ---
+	--- BLOCK #13 66-72, warpins: 1 ---
 	slot5 = slot0.view
 	slot5 = slot5.listPet
 	slot7 = slot5

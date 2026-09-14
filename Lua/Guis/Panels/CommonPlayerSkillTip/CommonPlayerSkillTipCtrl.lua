@@ -1,4 +1,4 @@
---- BLOCK #0 1-72, warpins: 1 ---
+--- BLOCK #0 1-75, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -39,10 +39,13 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Utils.ClientTextUtils"
 slot12 = slot12(slot14)
-slot13 = {}
-slot3.messages = slot13
+slot13 = require
+slot15 = "Const.UIConst"
+slot13 = slot13(slot15)
+slot14 = {}
+slot3.messages = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -58,9 +61,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot13
+slot3.onCreate = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.bindTipsGamepadClose
@@ -233,9 +236,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.addListener = slot13
+slot3.addListener = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.iData
 	slot1 = slot1.onCloseCallback
@@ -273,9 +276,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.onDestroy = slot13
+slot3.onDestroy = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -357,9 +360,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot3.onOpen = slot13
+slot3.onOpen = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.iData
 
@@ -548,9 +551,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.onShow = slot13
+slot3.onShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-55, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -1111,9 +1114,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.refreshView = slot13
+slot3.refreshView = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -1137,9 +1140,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot3.onRenderElementItem = slot13
+slot3.onRenderElementItem = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -1266,10 +1269,10 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot3.onRenderUpEffectItem = slot13
+slot3.onRenderUpEffectItem = slot14
 
-slot13 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot14 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-35, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
@@ -1284,73 +1287,38 @@ slot13 = function(slot0, slot1, slot2)
 	slot5 = slot5(slot7, slot8)
 	slot6 = true
 	slot5.supportRichText = slot6
-	slot6 = nil
-	slot7 = ItemUtils
-	slot7 = slot7.getItemCountById
-	slot9 = pg
-	slot9 = slot9.me
-	slot10 = slot2.id
-	slot7 = slot7(slot9, slot10)
-	slot2.ownNum = slot7
-	slot7 = slot2.ownNum
-	slot8 = slot2.num
-	--- END OF BLOCK #0 ---
+	slot6 = ItemUtils
+	slot6 = slot6.getItemCountById
+	slot8 = pg
+	slot8 = slot8.me
+	slot9 = slot2.id
+	slot6 = slot6(slot8, slot9)
+	slot2.ownNum = slot6
+	slot6 = slot2.icon
+	slot4.url = slot6
+	slot6 = true
+	slot5.supportRichText = slot6
+	slot6 = LuaUIUtils
+	slot6 = slot6.renderConsumeText
+	slot8 = slot5
+	slot9 = slot2.ownNum
+	slot10 = slot2.num
+	slot11 = UIConst
+	slot11 = slot11.ITEM_STATE
+	slot11 = slot11.FULL
 
-	if slot7 < slot8 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 27-34, warpins: 1 ---
-	slot7 = string
-	slot7 = slot7.format
-	slot9 = "<color=#ea5757>%d</color>/%d"
-	slot10 = slot2.ownNum
-	slot11 = slot2.num
-	slot7 = slot7(slot9, slot10, slot11)
-	slot6 = slot7
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 35-41, warpins: 1 ---
-	slot7 = string
-	slot7 = slot7.format
-	slot9 = "%d/%d"
-	slot10 = slot2.ownNum
-	slot11 = slot2.num
-	slot7 = slot7(slot9, slot10, slot11)
-	slot6 = slot7
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 42-51, warpins: 2 ---
-	slot7 = slot2.icon
-	slot4.url = slot7
-	slot7 = true
-	slot5.supportRichText = slot7
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot5
-	slot10 = slot6
-
-	slot7(slot9, slot10)
+	slot6(slot8, slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot3.onRenderConsumeItem = slot13
+slot3.onRenderConsumeItem = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.iData
 	slot1 = slot1.data
@@ -1524,9 +1492,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.onUpGradeBtnClick = slot13
+slot3.onUpGradeBtnClick = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.iData
 	slot1 = slot1.onSwitchToLearn
@@ -1562,9 +1530,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.onBtnEquip = slot13
+slot3.onBtnEquip = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot1
@@ -1615,9 +1583,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot3.checkItemEnough = slot13
+slot3.checkItemEnough = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1672,9 +1640,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot3.skillLearnOrUpCallback = slot13
+slot3.skillLearnOrUpCallback = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1683,7 +1651,7 @@ slot13 = function(slot0)
 
 end
 
-slot3.onHide = slot13
+slot3.onHide = slot14
 
 return slot3
 --- END OF BLOCK #0 ---

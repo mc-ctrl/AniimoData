@@ -1,9 +1,9 @@
 --- BLOCK #0 1-78, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_10291CrossRiver",
-	CDAfterEnd = 0,
 	minStartRoleNum = 2,
-	minHoldRoleNum = 1
+	minHoldRoleNum = 1,
+	behavID = "BP_Wild_GroupBehav_10291CrossRiver",
+	CDAfterEnd = 0
 }
 slot1 = {}
 slot2 = {
@@ -47,8 +47,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -64,8 +64,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointGO1",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointGO1"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -81,8 +81,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointGO2",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointGO2"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -104,8 +104,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -121,8 +121,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointJump",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointJump"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -138,8 +138,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointJump",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointJump"
 }
 slot5 = {
 	conditionName = "delayTime"

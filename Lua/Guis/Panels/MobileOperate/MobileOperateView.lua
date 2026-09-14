@@ -17,31 +17,32 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-25, warpins: 1 ---
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
-	slot0.objectReference = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "joyStickUJoyStick"
-	slot1 = slot1(slot3, slot4)
-	slot0.joyStickUJoyStick = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "cameraCtrlUWidget"
-	slot1 = slot1(slot3, slot4)
-	slot0.cameraCtrlUWidget = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "clickObject"
-	slot1 = slot1(slot3, slot4)
-	slot0.clickObject = slot1
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "joyStickUJoyStick"
+	slot2 = slot2(slot4, slot5)
+	slot0.joyStickUJoyStick = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "cameraCtrlUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.cameraCtrlUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "clickObject"
+	slot2 = slot2(slot4, slot5)
+	slot0.clickObject = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "safeMobileBoxUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.safeMobileBoxUWidget = slot2
 
 	return
 	--- END OF BLOCK #0 ---

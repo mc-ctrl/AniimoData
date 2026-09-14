@@ -1,70 +1,73 @@
---- BLOCK #0 1-145, warpins: 1 ---
+--- BLOCK #0 1-152, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Common.lume"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Common.Time"
+slot6 = "Core.Common.lume"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Utils.Utils"
+slot7 = "Core.Common.Time"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.Const"
+slot8 = "Common.Utils.Utils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.NoticeDef"
+slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Const.MessageName"
+slot10 = "Common.NoticeDef"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.UIConst"
+slot11 = "Const.MessageName"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.LuaUIUtils"
+slot12 = "Const.UIConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Client.ClientRepo"
+slot13 = "Utils.LuaUIUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Core.Common.CallbackHandler"
+slot14 = "Core.Client.ClientRepo"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.EventConst"
+slot15 = "Core.Common.CallbackHandler"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "GameApp.Map.MapHelper"
+slot16 = "Const.EventConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.sys_config_data"
+slot17 = "GameApp.Map.MapHelper"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Core.Timer.TimerManager"
+slot18 = "Data.sys_config_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Core.Client.GlobalData"
+slot19 = "Core.Timer.TimerManager"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.map_level_config_data"
+slot20 = "Core.Client.GlobalData"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.map_small_area_id_to_index"
+slot21 = "Data.map_level_config_data"
 slot19 = slot19(slot21)
-slot20 = slot2.Component
-slot22 = "ClientMapComponent"
+slot20 = require
+slot22 = "Data.map_small_area_id_to_index"
 slot20 = slot20(slot22)
-slot21 = 5
+slot21 = slot3.Component
+slot23 = "ClientMapComponent"
+slot21 = slot21(slot23)
+slot22 = 5
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -73,9 +76,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onLeaveSpace = slot22
+slot21.onLeaveSpace = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = {}
 	slot0.mapFogContentCacheMap = slot1
@@ -121,9 +124,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onEnterSpace = slot22
+slot21.onEnterSpace = slot23
 
-slot22 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -193,9 +196,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot20.setMapFogDataDirtyFlag = slot22
+slot21.setMapFogDataDirtyFlag = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = MapHelper
 	slot1 = slot1.getRootScene
@@ -235,9 +238,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.getCurrentSceneMapFogContent = slot22
+slot21.getCurrentSceneMapFogContent = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot2 = ClientRepo
@@ -260,9 +263,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.getFirstCreateMapFogContent = slot22
+slot21.getFirstCreateMapFogContent = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isMainPlayer
 
@@ -352,9 +355,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.startMapFogServerRefresh = slot22
+slot21.startMapFogServerRefresh = slot23
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.mapFogContentCacheMap
 	slot4 = slot4[slot1]
@@ -401,7 +404,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #4 12-12, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
 	--- BLOCK #5 13-16, warpins: 2 ---
@@ -412,11 +415,25 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	if slot5 == nil then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #6 17-33, warpins: 1 ---
+	--- BLOCK #6 17-22, warpins: 1 ---
+	slot6 = Utils
+	slot6 = slot6.isServerDrivenDungeonFog
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 23-39, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.getFirstCreateMapFogContent
 	slot6 = slot6(slot8)
@@ -436,45 +453,45 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 	slot7(slot9, slot10, slot11)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 	if slot2 ~= nil then
-	JUMP TO BLOCK #7
-	else
 	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 34-36, warpins: 1 ---
+	--- BLOCK #8 40-42, warpins: 1 ---
 	slot7 = slot2
 	slot9 = slot6
 
 	slot7(slot9)
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 37-37, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 38-41, warpins: 1 ---
-	slot6 = slot0.mapFogRequestCallbacks
-	slot6 = slot6[slot1]
+	--- BLOCK #9 43-43, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #10 44-47, warpins: 2 ---
+	slot6 = slot0.mapFogRequestCallbacks
+	slot6 = slot6[slot1]
+	--- END OF BLOCK #10 ---
+
 	if slot6 == nil then
-	JUMP TO BLOCK #10
-	else
 	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 42-53, warpins: 1 ---
+	--- BLOCK #11 48-59, warpins: 1 ---
 	slot7 = slot0.mapFogRequestCallbacks
 	slot8 = {}
 	slot8[1] = slot2
@@ -488,35 +505,35 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 	slot7(slot9, slot10, slot11, slot12)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #11 54-56, warpins: 1 ---
+	--- BLOCK #12 60-62, warpins: 1 ---
 	slot7 = #slot6
 	slot7 = slot7 + 1
 	slot6[slot7] = slot2
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 57-60, warpins: 2 ---
-	slot7 = slot0.mapFogRequestTimerIds
-	slot7 = slot7[slot1]
 	--- END OF BLOCK #12 ---
 
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 63-66, warpins: 2 ---
+	slot7 = slot0.mapFogRequestTimerIds
+	slot7 = slot7[slot1]
+	--- END OF BLOCK #13 ---
+
 	if slot7 == nil then
-	JUMP TO BLOCK #13
-	else
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 61-71, warpins: 1 ---
+	--- BLOCK #14 67-77, warpins: 1 ---
 	slot8 = Time
-	slot8 = slot8.secondCache
+	slot8 = slot8.realSecondCache
 	slot8 = slot8 + 3
 	slot9 = slot0.mapFogRequestTimerIds
 	slot12 = slot0
@@ -526,7 +543,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	slot14 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = Time
-		slot0 = slot0.secondCache
+		slot0 = slot0.realSecondCache
 		slot1 = endTs
 		--- END OF BLOCK #0 ---
 
@@ -562,36 +579,36 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	slot10 = slot10(slot12, slot13, slot14)
 	slot9[slot1] = slot10
 
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 72-73, warpins: 2 ---
-	return
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 74-74, warpins: 2 ---
+	--- BLOCK #15 78-79, warpins: 2 ---
 	return
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 75-75, warpins: 2 ---
+	--- BLOCK #16 80-80, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 81-81, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot20.tryRefreshMapFog = slot22
+slot21.tryRefreshMapFog = slot23
 
-slot22 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.mapFogContentCacheMap
 	slot3[slot1] = slot2
@@ -629,7 +646,7 @@ slot22 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 19-19, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -670,65 +687,89 @@ slot22 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 30-42, warpins: 2 ---
-	slot4 = MapHelper
-	slot4 = slot4.getRootScene
-	slot6 = pg
-	slot6 = slot6.game
-	slot6 = slot6.map
-	slot8 = slot6
-	slot6 = slot6.convertSceneId
-	slot9 = slot0.space
-	slot9 = slot9.sceneId
-	MULTRES = slot6(slot8, slot9)
-	slot4 = slot4(MULTRES)
+	--- BLOCK #7 30-32, warpins: 2 ---
+	slot4 = slot0.space
 	--- END OF BLOCK #7 ---
 
-	if slot1 == slot4 then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 43-45, warpins: 1 ---
-	slot4 = slot0.mapFogUploadTimer
+	--- BLOCK #8 33-38, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.isServerDrivenDungeonFog
+	slot7 = slot1
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #8 ---
 
-	if slot4 == nil then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 46-54, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.addRepeatTimer
-	slot7 = MAP_FOG_UPLOAD_INTERVAL
-	slot8 = CallbackHandler
-	slot10 = slot0
-	slot11 = "uploadMapFogToServer"
-	MULTRES = slot8(slot10, slot11)
-	slot4 = slot4(slot6, slot7, MULTRES)
-	slot0.mapFogUploadTimer = slot4
-
+	--- BLOCK #9 39-50, warpins: 1 ---
+	slot5 = MapHelper
+	slot5 = slot5.getRootScene
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.map
+	slot9 = slot7
+	slot7 = slot7.convertSceneId
+	slot10 = slot4.sceneId
+	MULTRES = slot7(slot9, slot10)
+	slot5 = slot5(MULTRES)
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	if slot1 == slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #10 55-55, warpins: 3 ---
-	return
+	--- BLOCK #10 51-53, warpins: 1 ---
+	slot5 = slot0.mapFogUploadTimer
 	--- END OF BLOCK #10 ---
+
+	if slot5 == nil then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 54-62, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.addRepeatTimer
+	slot8 = MAP_FOG_UPLOAD_INTERVAL
+	slot9 = CallbackHandler
+	slot11 = slot0
+	slot12 = "uploadMapFogToServer"
+	MULTRES = slot9(slot11, slot12)
+	slot5 = slot5(slot7, slot8, MULTRES)
+	slot0.mapFogUploadTimer = slot5
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 63-63, warpins: 5 ---
+	return
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot20._onRefreshMapFog = slot22
+slot21._onRefreshMapFog = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = MapHelper
 	slot2 = slot2.getRootScene
@@ -755,22 +796,24 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-18, warpins: 2 ---
+	--- BLOCK #2 13-20, warpins: 2 ---
 	MULTRES = slot4(slot6, slot7)
 	slot2 = slot2(MULTRES)
-	slot3 = slot0.mapFogContentCacheMap
-	slot3 = slot3[slot2]
+	slot3 = Utils
+	slot3 = slot3.isServerDrivenDungeonFog
+	slot5 = slot2
+	slot3 = slot3(slot5)
 
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 19-19, warpins: 1 ---
+	--- BLOCK #3 21-21, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -778,49 +821,70 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-21, warpins: 2 ---
+	--- BLOCK #4 22-25, warpins: 2 ---
+	slot3 = slot0.mapFogContentCacheMap
+	slot3 = slot3[slot2]
+
 	--- END OF BLOCK #4 ---
 
-	slot1 = if not slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 22-26, warpins: 1 ---
+	--- BLOCK #5 26-26, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-28, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 29-33, warpins: 1 ---
 	slot3 = next
 	slot5 = slot0.mapFogDirtyFlag
 	slot3 = slot3(slot5)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 27-27, warpins: 1 ---
+	--- BLOCK #8 34-34, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 28-32, warpins: 3 ---
+	--- BLOCK #9 35-39, warpins: 3 ---
 	slot3 = {}
 	slot4 = pairs
 	slot6 = slot0.mapFogDirtyFlag
 	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 33-54, warpins: 1 ---
+	--- BLOCK #10 40-61, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.setMapFogDataDirtyFlag
 	slot12 = nil
@@ -845,20 +909,20 @@ slot22 = function(slot0, slot1)
 	slot10 = slot0.mapFogContentCacheMap
 	slot10 = slot10[slot2]
 	slot10[slot7] = slot9
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 55-56, warpins: 2 ---
-	--- END OF BLOCK #9 ---
+	--- BLOCK #11 62-63, warpins: 2 ---
+	--- END OF BLOCK #11 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #10
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #12
 
 
-	--- BLOCK #10 57-64, warpins: 1 ---
+	--- BLOCK #12 64-71, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.callRefreshMapFog
 	slot7 = slot2
@@ -869,15 +933,15 @@ slot22 = function(slot0, slot1)
 	slot4(slot6, slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot20.uploadMapFogToServer = slot22
+slot21.uploadMapFogToServer = slot23
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.serverMsg
@@ -964,9 +1028,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.callRefreshMapFog = slot22
+slot21.callRefreshMapFog = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.MAP_FOG_LOG_STR
@@ -1025,7 +1089,7 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = Utils
 	slot4 = slot4.isRobEggSceneId
@@ -1110,7 +1174,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 38-42, warpins: 1 ---
+	--- BLOCK #6 38-43, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0._onRefreshMapFog
 	slot7 = slot1
@@ -1120,10 +1184,119 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #7 43-43, warpins: 2 ---
+	--- BLOCK #7 44-47, warpins: 1 ---
+	slot4 = Const
+	slot4 = slot4.MAP_FOG_INC_SERVER_PUSH
+	--- END OF BLOCK #7 ---
+
+	if slot2 == slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 48-52, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.onServerPushMapFog
+	slot7 = slot1
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 53-53, warpins: 3 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot21.RPC_SC_RefreshMapFogCallback = slot24
+
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-7, warpins: 2 ---
+	slot3 = slot0.mapFogContentCacheMap
+	slot3 = slot3[slot1]
+
+	--- END OF BLOCK #2 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-12, warpins: 2 ---
+	slot4 = pairs
+	slot6 = slot2
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 13-13, warpins: 1 ---
+	slot3[slot7] = slot8
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 14-15, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 16-24, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.map
+	slot6 = slot4
+	slot4 = slot4.applyServerFogPush
+	slot7 = slot1
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
 	return
 	--- END OF BLOCK #7 ---
 
@@ -1131,9 +1304,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.RPC_SC_RefreshMapFogCallback = slot23
+slot21.onServerPushMapFog = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -1181,9 +1354,9 @@ slot23 = function(slot0)
 
 end
 
-slot20.isSpaceOwner = slot23
+slot21.isSpaceOwner = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -1264,9 +1437,9 @@ slot23 = function(slot0)
 
 end
 
-slot20.isUsingSpaceOwnerMap = slot23
+slot21.isUsingSpaceOwnerMap = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getSpaceOwnerMapMarkStatusMap
@@ -1287,31 +1460,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-9, warpins: 2 ---
-	slot5 = slot0.space
-	--- END OF BLOCK #2 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 10-14, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.isUsingSpaceOwnerMap
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #3 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 15-20, warpins: 2 ---
+	--- BLOCK #2 7-12, warpins: 2 ---
 	slot7 = slot4
 	slot5 = slot4.getStatus
 	slot8 = slot1
@@ -1319,122 +1468,15 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	slot10 = slot3
 
 	return slot5(slot7, slot8, slot9, slot10)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 21-25, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.getTeamLeaderPlayer
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #5 ---
-
-	if slot5 == nil then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 26-31, warpins: 1 ---
-	slot8 = slot4
-	slot6 = slot4.getStatus
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = slot3
-
-	return slot6(slot8, slot9, slot10, slot11)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 32-37, warpins: 2 ---
-	slot6 = Utils
-	slot6 = slot6.getMarkConfigByMarkId
-	slot8 = slot3
-	slot9 = slot0.space
-	--- END OF BLOCK #7 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 38-39, warpins: 1 ---
-	slot9 = slot0.space
-	slot9 = slot9.id
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 40-43, warpins: 2 ---
-	slot6 = slot6(slot8, slot9)
-	slot7 = ToBool
-	--- END OF BLOCK #9 ---
-
-	slot9 = if slot6 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 44-44, warpins: 1 ---
-	slot9 = slot6.multiplayerPoiType
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 45-47, warpins: 2 ---
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #11 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 48-53, warpins: 1 ---
-	slot9 = slot4
-	slot7 = slot4.getStatus
-	slot10 = slot1
-	slot11 = slot2
-	slot12 = slot3
-
-	return slot7(slot9, slot10, slot11, slot12)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 54-59, warpins: 2 ---
-	slot9 = slot4
-	slot7 = slot4.getStatus
-	slot10 = slot1
-	slot11 = slot2
-	slot12 = slot3
-
-	return slot7(slot9, slot10, slot11, slot12)
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot20.getSpaceOwnerMapMarkStatus = slot23
+slot21.getSpaceOwnerMapMarkStatus = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isUsingSpaceOwnerMap
@@ -1487,7 +1529,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #5 18-24, warpins: 1 ---
+	--- BLOCK #5 18-26, warpins: 1 ---
 	slot2 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot3 = {}
@@ -1576,6 +1618,44 @@ slot23 = function(slot0)
 
 	slot3 = setmetatable
 	slot5 = {}
+
+	slot6 = function(slot0, slot1, slot2, slot3)
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot4 = self
+		slot4 = slot4.space
+		slot5 = leaderPlayer
+		slot5 = slot5.mapMarkStatusMap
+		slot7 = slot5
+		slot5 = slot5.getFilteredStatus
+		slot8 = slot1
+		slot9 = slot2
+		slot10 = slot3
+		--- END OF BLOCK #0 ---
+
+		slot11 = if slot4 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 12-12, warpins: 1 ---
+		slot11 = slot4.id
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 13-13, warpins: 2 ---
+		return slot5(slot7, slot8, slot9, slot10, slot11)
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot5.getStatus = slot6
 	slot6 = {}
 	slot7 = slot1.mapMarkStatusMap
 	--- END OF BLOCK #5 ---
@@ -1587,7 +1667,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #6 25-28, warpins: 1 ---
+	--- BLOCK #6 27-30, warpins: 1 ---
 	slot7 = getmetatable
 	slot9 = slot1.mapMarkStatusMap
 	slot7 = slot7(slot9)
@@ -1597,7 +1677,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 29-32, warpins: 2 ---
+	--- BLOCK #7 31-34, warpins: 2 ---
 	slot6.__len = slot7
 	slot7 = slot1.mapMarkStatusMap
 	--- END OF BLOCK #7 ---
@@ -1609,7 +1689,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #8 33-36, warpins: 1 ---
+	--- BLOCK #8 35-38, warpins: 1 ---
 	slot7 = getmetatable
 	slot9 = slot1.mapMarkStatusMap
 	slot7 = slot7(slot9)
@@ -1619,7 +1699,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 37-42, warpins: 2 ---
+	--- BLOCK #9 39-44, warpins: 2 ---
 	slot6.__pairs = slot7
 
 	slot7 = function(slot0, slot1)
@@ -1876,7 +1956,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 43-45, warpins: 2 ---
+	--- BLOCK #10 45-47, warpins: 2 ---
 	slot2 = slot1.spaceOwnerMapMarkCache
 
 	return slot2
@@ -1885,14 +1965,14 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 46-46, warpins: 2 ---
+	--- BLOCK #11 48-48, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 47-47, warpins: 2 ---
+	--- BLOCK #12 49-49, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #12 ---
 
@@ -1900,9 +1980,25 @@ slot23 = function(slot0)
 
 end
 
-slot20.getSpaceOwnerMapMarkStatusMap = slot23
+slot21.getSpaceOwnerMapMarkStatusMap = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.clearStatusCache
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot21.onMapMarkStatusMap_changed = slot24
+
+slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot7 = slot0.isMainPlayer
 	--- END OF BLOCK #0 ---
@@ -2445,9 +2541,9 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot20.OnMapMarkStatusChange = slot23
+slot21.OnMapMarkStatusChange = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.OnMapMarkStatusChange
@@ -2467,9 +2563,9 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot20.RPC_SC_OnMapMarkStatusChange = slot23
+slot21.RPC_SC_OnMapMarkStatusChange = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2559,9 +2655,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.checkDistance = slot23
+slot21.checkDistance = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4)
+slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = LoggerManager
 	slot5 = slot5.checkLogger
@@ -2705,9 +2801,9 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot20.onCustomMapMarkMap_changed = slot23
+slot21.onCustomMapMarkMap_changed = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
@@ -3021,9 +3117,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.onCustomMapMarkMap_entryAdded = slot23
+slot21.onCustomMapMarkMap_entryAdded = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
@@ -3212,9 +3308,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.onCustomMapMarkMap_entryDeleted = slot23
+slot21.onCustomMapMarkMap_entryDeleted = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4)
+slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = LoggerManager
 	slot5 = slot5.checkLogger
@@ -3255,9 +3351,9 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot20.onCustomMapMarkMapName_valueChanged = slot23
+slot21.onCustomMapMarkMapName_valueChanged = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
@@ -3383,9 +3479,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.RPC_SC_OnPoiResult = slot23
+slot21.RPC_SC_OnPoiResult = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0.mapFogContentDisplayFlag = slot1
 	slot2 = pg
@@ -3429,9 +3525,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.refreshMapFogByFlag = slot23
+slot21.refreshMapFogByFlag = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -3475,9 +3571,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.RPC_SC_HideMapFogUI = slot23
+slot21.RPC_SC_HideMapFogUI = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -3543,9 +3639,9 @@ slot23 = function(slot0)
 
 end
 
-slot20.RPC_SC_UnlockAllMapArea = slot23
+slot21.RPC_SC_UnlockAllMapArea = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
@@ -3591,9 +3687,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.onMapFogWholeUnlocked_valueChanged = slot23
+slot21.onMapFogWholeUnlocked_valueChanged = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.isMainPlayer
 
@@ -3614,53 +3710,54 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-14, warpins: 2 ---
+	--- BLOCK #2 5-15, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.uploadMapFogToServer
 	slot7 = true
 
 	slot4(slot6, slot7)
 
-	slot6 = slot0
-	slot4 = slot0.serverMsg
-	slot7 = "RPC_CS_TeleportToScene"
-	slot8 = slot1
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.CallServerMsgTeleportToScene
+	slot7 = slot1
 	--- END OF BLOCK #2 ---
 
-	slot9 = if not slot2 then
+	slot8 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 15-15, warpins: 1 ---
-	slot9 = 0
+	--- BLOCK #3 16-16, warpins: 1 ---
+	slot8 = 0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-17, warpins: 2 ---
+	--- BLOCK #4 17-18, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot10 = if not slot3 then
+	slot9 = if not slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 18-18, warpins: 1 ---
-	slot10 = false
+	--- BLOCK #5 19-19, warpins: 1 ---
+	slot9 = false
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 19-20, warpins: 2 ---
-	slot4(slot6, slot7, slot8, slot9, slot10)
+	--- BLOCK #6 20-21, warpins: 2 ---
+	slot4(slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #6 ---
@@ -3669,9 +3766,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.tryTeleportToScene = slot23
+slot21.tryTeleportToScene = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -3716,9 +3813,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.getSceneLastFloor = slot23
+slot21.getSceneLastFloor = slot24
 
-slot23 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getClientInfo
@@ -3760,9 +3857,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot20.setSceneLastFloor = slot23
+slot21.setSceneLastFloor = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -3814,9 +3911,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.getMapLayerData = slot23
+slot21.getMapLayerData = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -3886,9 +3983,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.setMapLayerData = slot23
+slot21.setMapLayerData = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getClientInfo
@@ -3905,9 +4002,9 @@ slot23 = function(slot0)
 
 end
 
-slot20.getMapLayerUnlockData = slot23
+slot21.getMapLayerUnlockData = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -4123,9 +4220,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.setMapLayerUnlockData = slot23
+slot21.setMapLayerUnlockData = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = slot0.logger
 	slot4 = slot2
@@ -4159,9 +4256,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.RPC_SC_GetSpaceLineInfoRes = slot23
+slot21.RPC_SC_GetSpaceLineInfoRes = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getClientInfo
@@ -4177,9 +4274,9 @@ slot23 = function(slot0)
 
 end
 
-slot20.getAreaFirstInDataDict = slot23
+slot21.getAreaFirstInDataDict = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -4225,9 +4322,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.getAreaFirstInData = slot23
+slot21.getAreaFirstInData = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -4290,9 +4387,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot20.setAreaFirstInData = slot23
+slot21.setAreaFirstInData = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = Const
 	slot4 = slot4.MAP_MARK_STATUS_UNLOCKED
@@ -4437,9 +4534,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.dealFirstInArea = slot23
+slot21.dealFirstInArea = slot24
 
-return slot20
+return slot21
 --- END OF BLOCK #0 ---
 
 

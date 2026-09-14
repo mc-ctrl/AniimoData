@@ -1,4 +1,4 @@
---- BLOCK #0 1-131, warpins: 1 ---
+--- BLOCK #0 1-134, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -41,11 +41,12 @@ slot17 = slot17.format
 slot18 = getRawSetter
 slot19 = true
 slot7.__CUSTOM_LIST__ = slot19
+slot19 = raw_next
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = nil
-	slot3 = next
+	slot3 = raw_next
 	slot5 = slot0
 	slot6 = slot1
 	slot3, slot4 = slot3(slot5, slot6)
@@ -78,7 +79,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot1 + 1
 	slot2 = slot0[slot1]
@@ -109,9 +110,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot21 = {}
+slot22 = {}
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0._properties
 	slot2 = slot2[slot1]
@@ -151,9 +152,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot21.__index = slot22
+slot22.__index = slot23
 
-slot22 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0._id
 	slot4 = PropertyTypes
@@ -525,9 +526,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot21.__newindex = slot22
+slot22.__newindex = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairsIterator
 	slot2 = slot0._properties
@@ -540,9 +541,9 @@ slot22 = function(slot0)
 
 end
 
-slot21.__pairs = slot22
+slot22.__pairs = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairsIterator
 	slot2 = slot0._properties
@@ -555,9 +556,9 @@ slot22 = function(slot0)
 
 end
 
-slot21.__ipairs = slot22
+slot22.__ipairs = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0._propertiesCnt
 
@@ -568,10 +569,10 @@ slot22 = function(slot0)
 
 end
 
-slot21.__len = slot22
-slot22 = {}
+slot22.__len = slot23
+slot23 = {}
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.__ClassType
 	slot3 = slot2[slot1]
@@ -609,9 +610,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.__index = slot23
+slot23.__index = slot24
 
-slot23 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0._id
 	slot4 = PropertyTypes
@@ -678,9 +679,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.__newindex = slot23
+slot23.__newindex = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._lazyload
@@ -698,9 +699,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.__pairs = slot23
+slot23.__pairs = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._lazyload
@@ -718,9 +719,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.__ipairs = slot23
+slot23.__ipairs = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._lazyload
@@ -736,9 +737,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.__len = slot23
+slot23.__len = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = CustomList
 	slot2 = slot2.super
@@ -776,9 +777,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot7.ctor = slot23
+slot7.ctor = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0._id
 	slot3 = PropertyTypes
@@ -1004,9 +1005,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot7.init = slot23
+slot7.init = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -1255,9 +1256,9 @@ slot23 = function(slot0)
 
 end
 
-slot7._lazyload = slot23
+slot7._lazyload = slot24
 
-slot23 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0._id
 	slot4 = PropertyTypes
@@ -1685,9 +1686,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot7.insert = slot23
+slot7.insert = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0._id
 	slot3 = PropertyTypes
@@ -1922,9 +1923,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot7.remove = slot23
+slot7.remove = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0._id
 	slot3 = PropertyTypes
@@ -2238,85 +2239,76 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot7.sort = slot23
+slot7.sort = slot24
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = CustomList
+	slot1 = slot1.super
+	slot1 = slot1.getPersistentValue
 	slot3 = slot0
-	slot1 = slot0._getPersist
-	slot1 = slot1(slot3)
-	slot2 = PropertyTypes
-	slot2 = slot2.PS_PER
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
-	slot1 = nil
+end
 
-	return slot1
+slot7.getPersistentValue = slot24
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-15, warpins: 2 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.__ClassType
 	slot2 = slot2.__ValueTypeDeclare__
 	slot3 = slot2.customClass
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #3 16-19, warpins: 1 ---
+	--- BLOCK #1 7-10, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot0._properties
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 20-23, warpins: 1 ---
+	--- BLOCK #2 11-14, warpins: 1 ---
 	slot8 = assert
 	slot10 = slot7._name
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 	if slot6 ~= slot10 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #5 24-25, warpins: 1 ---
+	--- BLOCK #3 15-16, warpins: 1 ---
 	slot10 = false
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #6 26-26, warpins: 1 ---
+	--- BLOCK #4 17-17, warpins: 1 ---
 	slot10 = true
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #7 27-34, warpins: 2 ---
+	--- BLOCK #5 18-25, warpins: 2 ---
 	slot8(slot10)
 
 	slot10 = slot7
@@ -2328,65 +2320,65 @@ slot23 = function(slot0)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #8 35-36, warpins: 2 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #6 26-27, warpins: 2 ---
+	--- END OF BLOCK #6 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #9
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #9 37-37, warpins: 1 ---
-	--- END OF BLOCK #9 ---
+	--- BLOCK #7 28-28, warpins: 1 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 38-41, warpins: 1 ---
+	--- BLOCK #8 29-32, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot0._properties
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #11 42-45, warpins: 1 ---
+	--- BLOCK #9 33-36, warpins: 1 ---
 	slot8 = table_insert
 	slot10 = slot1
 	slot11 = slot7
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #12 46-47, warpins: 2 ---
-	--- END OF BLOCK #12 ---
+	--- BLOCK #10 37-38, warpins: 2 ---
+	--- END OF BLOCK #10 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #13
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #13 48-48, warpins: 2 ---
+	--- BLOCK #11 39-39, warpins: 2 ---
 	return slot1
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot7.getPersistentValue = slot23
+slot7._getPersistentValue = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getAoiscope
@@ -2583,9 +2575,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.getOwnClientValue = slot23
+slot7.getOwnClientValue = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getAoiscope
@@ -2782,9 +2774,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.getAllClientsValue = slot23
+slot7.getAllClientsValue = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._getAoiscope
@@ -3032,9 +3024,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot7.getOwnAndAllClientsValue = slot23
+slot7.getOwnAndAllClientsValue = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -3164,9 +3156,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.getOwnClientPropertyIds = slot23
+slot7.getOwnClientPropertyIds = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -3296,9 +3288,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.getAllClientsPropertyIds = slot23
+slot7.getAllClientsPropertyIds = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getPersist
@@ -3447,9 +3439,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.getJournalPropertyIds = slot23
+slot7.getJournalPropertyIds = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = assert
 	slot3 = slot0._id
@@ -3625,9 +3617,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.getJournalValue = slot23
+slot7.getJournalValue = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -3638,9 +3630,9 @@ slot23 = function(slot0)
 
 end
 
-slot7.isCustomList = slot23
+slot7.isCustomList = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = "customList"
 
@@ -3651,12 +3643,12 @@ slot23 = function(slot0)
 
 end
 
-slot7.customTypeName = slot23
-slot23 = {}
-slot24 = slot21.__index
-slot23.__index = slot24
+slot7.customTypeName = slot24
+slot24 = {}
+slot25 = slot22.__index
+slot24.__index = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0._properties
 	slot3 = slot3[slot1]
@@ -3729,13 +3721,13 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot23.__newindex = slot24
-slot24 = slot21.__pairs
-slot23.__pairs = slot24
-slot24 = slot21.__ipairs
-slot23.__ipairs = slot24
+slot24.__newindex = slot25
+slot25 = slot22.__pairs
+slot24.__pairs = slot25
+slot25 = slot22.__ipairs
+slot24.__ipairs = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._propertiesCnt
 	--- END OF BLOCK #0 ---
@@ -3763,10 +3755,10 @@ slot24 = function(slot0)
 
 end
 
-slot23.__len = slot24
-slot24 = {}
+slot24.__len = slot25
+slot25 = {}
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.__ClassType
 	slot3 = slot2[slot1]
@@ -3804,9 +3796,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot24.__index = slot25
+slot25.__index = slot26
 
-slot25 = function(slot0, slot1, slot2)
+slot26 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0._rolazyload
@@ -3884,9 +3876,9 @@ slot25 = function(slot0, slot1, slot2)
 
 end
 
-slot24.__newindex = slot25
+slot25.__newindex = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._rolazyload
@@ -3904,9 +3896,9 @@ slot25 = function(slot0)
 
 end
 
-slot24.__pairs = slot25
+slot25.__pairs = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._rolazyload
@@ -3924,9 +3916,9 @@ slot25 = function(slot0)
 
 end
 
-slot24.__ipairs = slot25
+slot25.__ipairs = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._rolazyload
@@ -3959,9 +3951,9 @@ slot25 = function(slot0)
 
 end
 
-slot24.__len = slot25
+slot25.__len = slot26
 
-slot25 = function()
+slot26 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "list readonly, can not insert!"
@@ -3975,7 +3967,7 @@ slot25 = function()
 
 end
 
-slot26 = function()
+slot27 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "list readonly, can not remove!"
@@ -3989,7 +3981,7 @@ slot26 = function()
 
 end
 
-slot27 = function()
+slot28 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "list readonly, can not sort!"
@@ -4003,7 +3995,7 @@ slot27 = function()
 
 end
 
-slot28 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot7 = slot0._id
 	slot8 = PropertyTypes
@@ -4361,9 +4353,9 @@ slot28 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot7.roinit = slot28
+slot7.roinit = slot29
 
-slot28 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = Switch
 	slot1 = slot1.LazyLoadDebug
@@ -4513,9 +4505,9 @@ slot28 = function(slot0)
 
 end
 
-slot7._rolazyload = slot28
+slot7._rolazyload = slot29
 
-slot28 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0._id
 	slot3 = PropertyTypes
@@ -4844,7 +4836,7 @@ slot28 = function(slot0, slot1)
 
 end
 
-slot7.rochange = slot28
+slot7.rochange = slot29
 
 return slot7
 --- END OF BLOCK #0 ---

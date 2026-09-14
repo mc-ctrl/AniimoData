@@ -1,4 +1,4 @@
---- BLOCK #0 1-70, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -29,35 +29,64 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Guis.Panels.HudV2.HudBaseComponent"
 slot9 = slot9(slot11)
-slot10 = CS
-slot10 = slot10.FunPlus
-slot10 = slot10.WorldX
-slot10 = slot10.GUIS
-slot10 = slot10.Panels
-slot10 = slot10.Utils
-slot10 = slot10.KeyBindingPro
-slot11 = require
-slot13 = "Core.Common.Time"
-slot11 = slot11(slot13)
-slot12 = slot0.LightClass
-slot14 = "QuitBtnUIComponent"
-slot15 = slot9
-slot12 = slot12(slot14, slot15)
-slot13 = {}
-slot14 = slot7.INPUT_DEVICE_CHANGED
-slot15 = {
+slot10 = require
+slot12 = "Utils.LuaUIUtils"
+slot10 = slot10(slot12)
+slot11 = CS
+slot11 = slot11.FunPlus
+slot11 = slot11.WorldX
+slot11 = slot11.GUIS
+slot11 = slot11.Panels
+slot11 = slot11.Utils
+slot11 = slot11.KeyBindingPro
+slot12 = require
+slot14 = "Core.Common.Time"
+slot12 = slot12(slot14)
+slot13 = slot0.LightClass
+slot15 = "QuitBtnUIComponent"
+slot16 = slot9
+slot13 = slot13(slot15, slot16)
+slot14 = 0.25
+slot15 = 0.55
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot1 = math
+	slot1 = slot1.min
+	slot3 = math
+	slot3 = slot3.max
+	slot5 = LONG_PRESS_START_TIME
+	slot5 = slot0 - slot5
+	slot6 = LONG_PRESS_DURATION
+	slot7 = LONG_PRESS_START_TIME
+	slot6 = slot6 - slot7
+	slot5 = slot5 / slot6
+	slot6 = 0
+	slot3 = slot3(slot5, slot6)
+	slot4 = 1
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17 = {}
+slot18 = slot7.INPUT_DEVICE_CHANGED
+slot19 = {
 	"onInputDeviceChanged"
 }
-slot13[slot14] = slot15
-slot14 = slot7.IN_LEADER_WORLD_STATE_CHANGED
-slot15 = {
+slot17[slot18] = slot19
+slot18 = slot7.IN_LEADER_WORLD_STATE_CHANGED
+slot19 = {
 	"refreshESCBtnState",
 	true
 }
-slot13[slot14] = slot15
-slot12.messages = slot13
+slot17[slot18] = slot19
+slot13.messages = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -82,103 +111,45 @@ slot13 = function(slot0)
 
 end
 
-slot12.findObjects = slot13
+slot13.findObjects = slot17
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot1 = false
-	slot0.isHomeland = slot1
-	slot1 = slot0.btnQuitUButton
-
-	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.onQuitBtnClick
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.funMenuExit
-	slot1 = slot1.model
-	slot3 = slot1
-	slot1 = slot1.checkShowEscKeyCode
-	slot1 = slot1(slot3)
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "progressPressContainerUContainer"
+	slot3 = slot3(slot5, slot6)
+	slot0.progressPressContainerUContainer = slot3
+	slot3 = slot0.progressPressContainerUContainer
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 16-17, warpins: 1 ---
-	slot2 = "Hud/ExitDungeon"
+	--- BLOCK #1 9-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 18-18, warpins: 1 ---
-	slot2 = "Hud/QuitDungeonGamepad"
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 19-41, warpins: 2 ---
-	slot3 = slot0.btnQuitHotKeyContent
+	--- BLOCK #2 10-21, warpins: 1 ---
+	slot3 = slot0.progressPressContainerUContainer
 	slot5 = slot3
-	slot3 = slot3.SetHotKeyPaths
-	slot6 = slot2
+	slot3 = slot3.SetActive
+	slot6 = true
 
 	slot3(slot5, slot6)
 
-	slot3 = slot0.btnQuitHotKeyContent
+	slot3 = slot0.progressPressContainerUContainer
 	slot5 = slot3
-	slot3 = slot3.GetComponent
-	slot6 = "ObjectReference"
-	slot3 = slot3(slot5, slot6)
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
-	slot7 = "progressPressContainerUContainer"
-	slot4 = slot4(slot6, slot7)
-	slot0.progressPressContainerUContainer = slot4
-	slot4 = slot0.progressPressContainerUContainer
-	slot6 = slot4
-	slot4 = slot4.SetActive
-	slot7 = true
+	slot3 = slot3.LoadDefaultUrlManually
 
-	slot4(slot6, slot7)
-
-	slot4 = slot0.progressPressContainerUContainer
-	--- END OF BLOCK #3 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 42-46, warpins: 1 ---
-	slot4 = slot0.progressPressContainerUContainer
-	slot6 = slot4
-	slot4 = slot4.LoadDefaultUrlManually
-
-	slot7 = function()
-		--- BLOCK #0 1-22, warpins: 1 ---
+	slot6 = function()
+		--- BLOCK #0 1-23, warpins: 1 ---
 		slot0 = self
 		slot1 = self
 		slot1 = slot1.progressPressContainerUContainer
@@ -190,8 +161,9 @@ slot13 = function(slot0)
 		slot0 = slot0.ProgressToValue
 		slot3 = 0
 		slot4 = nil
+		slot5 = 0
 
-		slot0(slot2, slot3, slot4)
+		slot0(slot2, slot3, slot4, slot5)
 
 		slot0 = pg
 		slot0 = slot0.global
@@ -210,7 +182,7 @@ slot13 = function(slot0)
 		end
 
 
-		--- BLOCK #1 23-30, warpins: 1 ---
+		--- BLOCK #1 24-31, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.input
@@ -226,7 +198,7 @@ slot13 = function(slot0)
 		end
 
 
-		--- BLOCK #2 31-37, warpins: 2 ---
+		--- BLOCK #2 32-38, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.keyProgressPress
 		slot0 = slot0.gameObject
@@ -241,7 +213,7 @@ slot13 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 38-53, warpins: 2 ---
+		--- BLOCK #3 39-54, warpins: 2 ---
 		slot0 = KeyBindingPro
 		slot0 = slot0.GetOrAddKeyBindingByName
 		slot2 = self
@@ -358,11 +330,11 @@ slot13 = function(slot0)
 				slot0 = self
 				slot1 = pressTimeKey
 				slot0 = slot0[slot1]
-				slot1 = 1
+				slot1 = LONG_PRESS_DURATION
 
 				--- END OF BLOCK #0 ---
 
-				if slot0 >= slot1 then
+				if slot1 <= slot0 then
 				JUMP TO BLOCK #1
 				else
 				JUMP TO BLOCK #2
@@ -390,48 +362,51 @@ slot13 = function(slot0)
 				slot0 = self
 				slot1 = pressTimeKey
 				slot0 = slot0[slot1]
-				slot1 = 0.3
+				slot1 = LONG_PRESS_START_TIME
 				--- END OF BLOCK #2 ---
 
-				if slot0 > slot1 then
+				if slot1 < slot0 then
 				JUMP TO BLOCK #3
 				else
 				JUMP TO BLOCK #4
 				end
 
 
-				--- BLOCK #3 23-31, warpins: 1 ---
+				--- BLOCK #3 23-34, warpins: 1 ---
 				slot0 = self
 				slot0 = slot0.keyProgressPress
 				slot2 = slot0
 				slot0 = slot0.ProgressToValue
-				slot3 = self
-				slot4 = pressTimeKey
-				slot3 = slot3[slot4]
+				slot3 = getLongPressProgress
+				slot5 = self
+				slot6 = pressTimeKey
+				slot5 = slot5[slot6]
+				slot3 = slot3(slot5)
 				slot4 = nil
+				slot5 = 0
 
-				slot0(slot2, slot3, slot4)
+				slot0(slot2, slot3, slot4, slot5)
 
 				--- END OF BLOCK #3 ---
 
 				FLOW; TARGET BLOCK #4
 
 
-				--- BLOCK #4 32-37, warpins: 2 ---
+				--- BLOCK #4 35-40, warpins: 2 ---
 				slot0 = self
 				slot1 = pressTimeKey
 				slot0 = slot0[slot1]
-				slot1 = 1
+				slot1 = LONG_PRESS_DURATION
 				--- END OF BLOCK #4 ---
 
-				if slot0 >= slot1 then
+				if slot1 <= slot0 then
 				JUMP TO BLOCK #5
 				else
 				JUMP TO BLOCK #6
 				end
 
 
-				--- BLOCK #5 38-56, warpins: 1 ---
+				--- BLOCK #5 41-59, warpins: 1 ---
 				slot0 = self
 				slot2 = slot0
 				slot0 = slot0.onQuitBtnClick
@@ -461,7 +436,7 @@ slot13 = function(slot0)
 				FLOW; TARGET BLOCK #6
 
 
-				--- BLOCK #6 57-57, warpins: 2 ---
+				--- BLOCK #6 60-60, warpins: 2 ---
 				return
 				--- END OF BLOCK #6 ---
 
@@ -512,7 +487,7 @@ slot13 = function(slot0)
 
 			slot3 = self
 			slot3 = slot3[slot2]
-			slot4 = 0.3
+			slot4 = LONG_PRESS_START_TIME
 			--- END OF BLOCK #8 ---
 
 			if slot3 <= slot4 then
@@ -618,29 +593,124 @@ slot13 = function(slot0)
 
 	end
 
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 47-51, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.refreshESCBtnState
-
-	slot4(slot6)
+	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-22, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot12.initView = slot13
+slot13.initProgressPressContainer = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = false
+	slot0.isHomeland = slot1
+	slot1 = slot0.btnQuitUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onQuitBtnClick
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.funMenuExit
+	slot1 = slot1.model
+	slot3 = slot1
+	slot1 = slot1.checkShowEscKeyCode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 16-17, warpins: 1 ---
+	slot2 = "Hud/ExitDungeon"
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 18-18, warpins: 1 ---
+	slot2 = "Hud/QuitDungeonGamepad"
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-34, warpins: 2 ---
+	slot3 = slot0.btnQuitHotKeyContent
+	slot5 = slot3
+	slot3 = slot3.SetHotKeyPaths
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = LuaUIUtils
+	slot3 = slot3.waitHotKeyContentObjectReference
+	slot5 = slot0
+	slot6 = slot0.btnQuitHotKeyContent
+
+	slot7 = function(slot0)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.initProgressPressContainer
+		slot4 = slot0
+		slot5 = setKey
+
+		slot1(slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.refreshESCBtnState
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot13.initView = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -721,9 +791,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshESCBtnState = slot13
+slot13.refreshESCBtnState = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.keyProgressPress
 
@@ -744,14 +814,15 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-19, warpins: 2 ---
 	slot2 = slot0.keyProgressPress
 	slot4 = slot2
 	slot2 = slot2.ProgressToValue
 	slot5 = 0
 	slot6 = nil
+	slot7 = 0
 
-	slot2(slot4, slot5, slot6)
+	slot2(slot4, slot5, slot6, slot7)
 
 	slot2 = pg
 	slot2 = slot2.game
@@ -768,7 +839,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 19-28, warpins: 1 ---
+	--- BLOCK #3 20-29, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -786,7 +857,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 29-35, warpins: 1 ---
+	--- BLOCK #4 30-36, warpins: 1 ---
 	slot2 = slot0.keyProgressPress
 	slot2 = slot2.gameObject
 	slot4 = slot2
@@ -800,7 +871,7 @@ slot13 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 36-41, warpins: 2 ---
+	--- BLOCK #5 37-42, warpins: 2 ---
 	slot2 = slot0.keyProgressPress
 	slot2 = slot2.gameObject
 	slot4 = slot2
@@ -814,7 +885,7 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 42-42, warpins: 2 ---
+	--- BLOCK #6 43-43, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -822,9 +893,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onInputDeviceChanged = slot13
+slot13.onInputDeviceChanged = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isHomeland
 	--- END OF BLOCK #0 ---
@@ -925,9 +996,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.getExitTitleAndDesc = slot13
+slot13.getExitTitleAndDesc = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1009,9 +1080,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.clearRogueInfo = slot13
+slot13.clearRogueInfo = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1805,13 +1876,12 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #24 272-284, warpins: 1 ---
+	--- BLOCK #24 272-283, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.space
 	slot4 = slot2
-	slot2 = slot2.npcDuelDungeonIsEnding
+	slot2 = slot2.isNpcDuelActive
 	slot2 = slot2(slot4)
-	slot2 = not slot2
 	slot3 = {}
 	slot4 = Const
 	slot4 = slot4.ExitButtonType
@@ -1826,7 +1896,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #25 285-289, warpins: 1 ---
+	--- BLOCK #25 284-288, warpins: 1 ---
 	slot4 = Const
 	slot4 = slot4.ExitButtonType
 	slot4 = slot4.READJUST
@@ -1839,14 +1909,14 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #26 290-290, warpins: 2 ---
+	--- BLOCK #26 289-289, warpins: 2 ---
 	slot4 = nil
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 291-316, warpins: 2 ---
+	--- BLOCK #27 290-315, warpins: 2 ---
 	slot3.btn4Type = slot4
 	slot4 = Const
 	slot4 = slot4.ExitButtonType
@@ -1880,16 +1950,7 @@ slot13 = function(slot0)
 	slot3.backFunc1 = slot4
 
 	slot4 = function()
-		--- BLOCK #0 1-23, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.pauseGameByName
-		slot3 = "NpcDuelExitConfirm"
-		slot4 = -1
-
-		slot0(slot2, slot3, slot4)
-
+		--- BLOCK #0 1-15, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.showConfirmMsgRaw
@@ -1903,21 +1964,13 @@ slot13 = function(slot0)
 		slot3 = slot3(slot5)
 
 		slot4 = function()
-			--- BLOCK #0 1-12, warpins: 1 ---
+			--- BLOCK #0 1-6, warpins: 1 ---
 			slot0 = pg
 			slot0 = slot0.me
 			slot2 = slot0
 			slot0 = slot0.npcDuelExit
 
 			slot0(slot2)
-
-			slot0 = pg
-			slot0 = slot0.space
-			slot2 = slot0
-			slot0 = slot0.resumeGameByName
-			slot3 = "NpcDuelExitConfirm"
-
-			slot0(slot2, slot3)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -1928,24 +1981,7 @@ slot13 = function(slot0)
 
 		slot5 = false
 
-		slot6 = function()
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.space
-			slot2 = slot0
-			slot0 = slot0.resumeGameByName
-			slot3 = "NpcDuelExitConfirm"
-
-			slot0(slot2, slot3)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot0(slot2, slot3, slot4, slot5, slot6)
+		slot0(slot2, slot3, slot4, slot5)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1965,7 +2001,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #28 317-319, warpins: 1 ---
+	--- BLOCK #28 316-318, warpins: 1 ---
 	slot4 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
@@ -1991,14 +2027,14 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #29 320-320, warpins: 2 ---
+	--- BLOCK #29 319-319, warpins: 2 ---
 	slot4 = nil
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 321-323, warpins: 2 ---
+	--- BLOCK #30 320-322, warpins: 2 ---
 	slot3.backFunc4 = slot4
 	slot1 = slot3
 	--- END OF BLOCK #30 ---
@@ -2006,7 +2042,7 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 324-335, warpins: 1 ---
+	--- BLOCK #31 323-334, warpins: 1 ---
 	slot2 = {}
 	slot3 = Const
 	slot3 = slot3.ExitButtonType
@@ -2080,7 +2116,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 336-346, warpins: 9 ---
+	--- BLOCK #32 335-345, warpins: 9 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -2099,9 +2135,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onQuitBtnClick = slot13
+slot13.onQuitBtnClick = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HudBaseComponent
 	slot1 = slot1.onDestroy
@@ -2116,9 +2152,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot13.onDestroy = slot17
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

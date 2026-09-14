@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -30,9 +30,35 @@ slot3 = function(slot0)
 	slot4 = "btnBackUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnBackUButton = slot1
+	slot1 = slot0.transform
+	slot3 = slot1
+	slot1 = slot1.Find
+	slot4 = "Blur/BgBlur"
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 26-29, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetComponent
+	slot5 = "UIBlurEffect"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 30-31, warpins: 2 ---
+	slot0.bgBlurUIBlurEffect = slot2
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 

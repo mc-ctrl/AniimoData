@@ -975,15 +975,12 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #2 8-9, warpins: 2 ---
 	slot4 = false
-
-	return slot4
-
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #3 10-16, warpins: 2 ---
+	--- BLOCK #3 10-16, warpins: 1 ---
 	slot4 = slot0.avatarComponent
 	slot4 = slot4.avatarScene
 	slot6 = slot4
@@ -1023,15 +1020,12 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #6 24-25, warpins: 3 ---
 	slot5 = false
-
-	return slot5
-
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #7 26-27, warpins: 2 ---
+	--- BLOCK #7 26-27, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
 	slot3 = if not slot3 then
@@ -1163,193 +1157,220 @@ slot6 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 70-91, warpins: 2 ---
-	slot8 = AvatarUtils
-	slot8 = slot8.generatePetJewelrySlider
-	slot10 = slot6
-	slot11 = slot7
-	slot12 = 1.5
-	slot8 = slot8(slot10, slot11, slot12)
-	slot0.sliderInfo = slot8
-	slot8 = slot0.avatarComponent
-	slot10 = slot8
-	slot8 = slot8.buildPetAttachInfo
-	slot11 = slot1
-	slot12 = slot3
-	slot8 = slot8(slot10, slot11, slot12)
-	slot9 = slot8.localPosition
-	slot10 = slot8.localRotation
-	slot11 = slot8.scale
-	slot12 = {}
-	slot13 = Vector3
-	slot13 = slot13.New
-	slot15 = slot9[1]
+	--- BLOCK #19 70-71, warpins: 2 ---
 	--- END OF BLOCK #19 ---
 
-	slot15 = if not slot15 then
+	slot8 = if slot5 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 92-92, warpins: 1 ---
-	slot15 = slot9.x
+	--- BLOCK #20 72-72, warpins: 1 ---
+	slot8 = slot5.sizeLevel
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 93-95, warpins: 2 ---
-	slot16 = slot9[2]
-	--- END OF BLOCK #21 ---
+	--- BLOCK #21 73-101, warpins: 2 ---
+	slot9 = AvatarUtils
+	slot9 = slot9.generatePetJewelrySlider
+	slot11 = slot6
+	slot12 = slot7
+	slot13 = 1.5
+	slot14 = slot8
+	slot9 = slot9(slot11, slot12, slot13, slot14)
+	slot0.sliderInfo = slot9
+	slot9 = true
+	slot0.editing = slot9
+	slot9 = {}
+	slot0._undoStack = slot9
+	slot9 = {}
+	slot0._redoStack = slot9
+	slot9 = slot4.eModel
+	slot9 = slot9.modelView
+	slot10 = slot0.instanceId
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
+	slot11 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.instanceId
+		slot1 = expectedInstanceId
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-102, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.avatarComponent
+		slot2 = slot0
+		slot0 = slot0.buildPetAttachInfo
+		slot3 = accessoryId
+		slot4 = slotIdx
+		slot0 = slot0(slot2, slot3, slot4)
+		slot1 = AvatarUtils
+		slot1 = slot1.loadPetOperationFromAttach
+		slot3 = modelView
+		slot4 = self
+		slot4 = slot4.instanceId
+		slot5 = slot0
+		slot6 = self
+		slot6 = slot6.sliderInfo
+		slot1 = slot1(slot3, slot4, slot5, slot6)
+		slot2 = self
+		slot3 = {}
+		slot4 = Vector3
+		slot4 = slot4.New
+		slot6 = slot1.curOffset
+		slot6 = slot6.x
+		slot7 = slot1.curOffset
+		slot7 = slot7.y
+		slot8 = slot1.curOffset
+		slot8 = slot8.z
+		slot4 = slot4(slot6, slot7, slot8)
+		slot3.curOffset = slot4
+		slot4 = Vector3
+		slot4 = slot4.New
+		slot6 = slot1.curRotate
+		slot6 = slot6.x
+		slot7 = slot1.curRotate
+		slot7 = slot7.y
+		slot8 = slot1.curRotate
+		slot8 = slot8.z
+		slot4 = slot4(slot6, slot7, slot8)
+		slot3.curRotate = slot4
+		slot4 = slot1.curScale
+		slot3.curScale = slot4
+		slot4 = slot1.attachBone
+		slot3.attachBone = slot4
+		slot4 = slot1.resId
+		slot3.resId = slot4
+		slot2.operationData = slot3
+		slot2 = self
+		slot3 = {}
+		slot4 = Vector3
+		slot4 = slot4.New
+		slot6 = self
+		slot6 = slot6.operationData
+		slot6 = slot6.curOffset
+		slot6 = slot6.x
+		slot7 = self
+		slot7 = slot7.operationData
+		slot7 = slot7.curOffset
+		slot7 = slot7.y
+		slot8 = self
+		slot8 = slot8.operationData
+		slot8 = slot8.curOffset
+		slot8 = slot8.z
+		slot4 = slot4(slot6, slot7, slot8)
+		slot3.curOffset = slot4
+		slot4 = Vector3
+		slot4 = slot4.New
+		slot6 = self
+		slot6 = slot6.operationData
+		slot6 = slot6.curRotate
+		slot6 = slot6.x
+		slot7 = self
+		slot7 = slot7.operationData
+		slot7 = slot7.curRotate
+		slot7 = slot7.y
+		slot8 = self
+		slot8 = slot8.operationData
+		slot8 = slot8.curRotate
+		slot8 = slot8.z
+		slot4 = slot4(slot6, slot7, slot8)
+		slot3.curRotate = slot4
+		slot4 = self
+		slot4 = slot4.operationData
+		slot4 = slot4.curScale
+		slot3.curScale = slot4
+		slot4 = self
+		slot4 = slot4.operationData
+		slot4 = slot4.attachBone
+		slot3.attachBone = slot4
+		slot4 = self
+		slot4 = slot4.operationData
+		slot4 = slot4.resId
+		slot3.resId = slot4
+		slot2.cacheOperationData = slot3
+		slot2 = self
+		slot2 = slot2.operationUList
+		--- END OF BLOCK #2 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 103-107, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.operationUList
+		slot4 = slot2
+		slot2 = slot2.RefreshList
+
+		slot2(slot4)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 108-108, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
 	end
 
+	slot12 = slot11
 
-	--- BLOCK #22 96-96, warpins: 1 ---
-	slot16 = slot9.y
+	slot12()
+
+	slot12 = require
+	slot14 = "Core.Timer.TimerManager"
+	slot12 = slot12(slot14)
+	slot13 = slot12.addNextFrameCb
+	slot15 = slot11
+
+	slot13(slot15)
+
+	slot13 = true
+
+	return slot13
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 102-102, warpins: 2 ---
+	return slot4
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 97-99, warpins: 2 ---
-	slot17 = slot9[3]
+	--- BLOCK #23 103-103, warpins: 2 ---
+	return slot5
 	--- END OF BLOCK #23 ---
-
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #24 100-100, warpins: 1 ---
-	slot17 = slot9.z
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 101-107, warpins: 2 ---
-	slot13 = slot13(slot15, slot16, slot17)
-	slot12.curOffset = slot13
-	slot13 = Vector3
-	slot13 = slot13.New
-	slot15 = slot10[1]
-	--- END OF BLOCK #25 ---
-
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #26 108-108, warpins: 1 ---
-	slot15 = slot10.x
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 109-111, warpins: 2 ---
-	slot16 = slot10[2]
-	--- END OF BLOCK #27 ---
-
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #28 112-112, warpins: 1 ---
-	slot16 = slot10.y
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 113-115, warpins: 2 ---
-	slot17 = slot10[3]
-	--- END OF BLOCK #29 ---
-
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #31
-	end
-
-
-	--- BLOCK #30 116-116, warpins: 1 ---
-	slot17 = slot10.z
-	--- END OF BLOCK #30 ---
-
-	FLOW; TARGET BLOCK #31
-
-
-	--- BLOCK #31 117-169, warpins: 2 ---
-	slot13 = slot13(slot15, slot16, slot17)
-	slot12.curRotate = slot13
-	slot12.curScale = slot11
-	slot13 = slot8.attachHp
-	slot12.attachBone = slot13
-	slot13 = slot8.resId
-	slot12.resId = slot13
-	slot0.operationData = slot12
-	slot12 = {}
-	slot13 = Vector3
-	slot13 = slot13.New
-	slot15 = slot0.operationData
-	slot15 = slot15.curOffset
-	slot15 = slot15.x
-	slot16 = slot0.operationData
-	slot16 = slot16.curOffset
-	slot16 = slot16.y
-	slot17 = slot0.operationData
-	slot17 = slot17.curOffset
-	slot17 = slot17.z
-	slot13 = slot13(slot15, slot16, slot17)
-	slot12.curOffset = slot13
-	slot13 = Vector3
-	slot13 = slot13.New
-	slot15 = slot0.operationData
-	slot15 = slot15.curRotate
-	slot15 = slot15.x
-	slot16 = slot0.operationData
-	slot16 = slot16.curRotate
-	slot16 = slot16.y
-	slot17 = slot0.operationData
-	slot17 = slot17.curRotate
-	slot17 = slot17.z
-	slot13 = slot13(slot15, slot16, slot17)
-	slot12.curRotate = slot13
-	slot13 = slot0.operationData
-	slot13 = slot13.curScale
-	slot12.curScale = slot13
-	slot13 = slot0.operationData
-	slot13 = slot13.attachBone
-	slot12.attachBone = slot13
-	slot13 = slot0.operationData
-	slot13 = slot13.resId
-	slot12.resId = slot13
-	slot0.cacheOperationData = slot12
-	slot12 = true
-	slot0.editing = slot12
-	slot12 = {}
-	slot0._undoStack = slot12
-	slot12 = {}
-	slot0._redoStack = slot12
-	slot12 = true
-
-	return slot12
-	--- END OF BLOCK #31 ---
 
 
 
@@ -1894,42 +1915,16 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 16-48, warpins: 2 ---
+	--- BLOCK #5 16-24, warpins: 2 ---
 	slot2 = slot1.eModel
 	slot2 = slot2.modelView
+	slot3 = AvatarUtils
+	slot3 = slot3.syncPetAttachFromOperation
 	slot5 = slot2
-	slot3 = slot2.AdjustAccessLocalTransform
 	slot6 = slot0.instanceId
 	slot7 = slot0.operationData
 
 	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.operationData
-	slot3 = slot3.curOffset
-	slot4 = slot0.operationData
-	slot4 = slot4.curRotate
-	slot5 = Vector3
-	slot5 = slot5.New
-	slot7 = slot0.operationData
-	slot7 = slot7.curScale
-	slot8 = slot0.operationData
-	slot8 = slot8.curScale
-	slot9 = slot0.operationData
-	slot9 = slot9.curScale
-	slot5 = slot5(slot7, slot8, slot9)
-	slot6 = slot2.modelInfo
-	slot8 = slot6
-	slot6 = slot6.AddAttachInfo
-	slot9 = slot0.operationData
-	slot9 = slot9.resId
-	slot10 = slot0.instanceId
-	slot11 = slot0.operationData
-	slot11 = slot11.attachBone
-	slot12 = slot3
-	slot13 = slot4
-	slot14 = slot5
-
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
 
 	return
 	--- END OF BLOCK #5 ---

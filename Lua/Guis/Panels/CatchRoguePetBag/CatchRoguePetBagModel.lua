@@ -149,7 +149,7 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 31-49, warpins: 2 ---
+	--- BLOCK #5 31-61, warpins: 2 ---
 	slot2.cp = slot4
 	slot4 = slot1.label
 	slot2.label = slot4
@@ -163,6 +163,18 @@ slot12 = function(slot0, slot1)
 	slot6 = slot1.label
 	slot4 = slot4(slot6)
 	slot2.isVariant = slot4
+	slot4 = Utils
+	slot4 = slot4.isLabelElite
+	slot6 = slot1.label
+	slot4 = slot4(slot6)
+	slot2.isBoss = slot4
+	slot4 = Utils
+	slot4 = slot4.isLabelRainbow
+	slot6 = slot1.label
+	slot4 = slot4(slot6)
+	slot2.isMini = slot4
+	slot4 = slot1.bodySizeType
+	slot2.bodySizeType = slot4
 	slot4 = PetProtoTypeData
 	slot5 = slot1.templateId
 	slot4 = slot4[slot5]
@@ -176,14 +188,14 @@ slot12 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 50-50, warpins: 1 ---
+	--- BLOCK #6 62-62, warpins: 1 ---
 	slot5 = {}
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 51-70, warpins: 2 ---
+	--- BLOCK #7 63-82, warpins: 2 ---
 	slot6 = LuaUIUtils
 	slot6 = slot6.getElementInfo
 	slot8 = slot3.elementType

@@ -8,23 +8,23 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	version = 19,
-	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/_Wild/_GrabEggs/PBT_Wild_GrabEggs_ProtectEgg_CheckEgg",
-	useForRoute = false
+	useForRoute = false,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	type = "int",
+	const = 0,
 	name = "EggActorId",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	type = "float",
+	const = 0,
 	name = "tWaitTime",
 	value = "0"
 }
@@ -33,8 +33,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "19",
-	class = "Sequence"
+	class = "Sequence",
+	id = "19"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -43,8 +43,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "26",
-	class = "Action"
+	class = "Action",
+	id = "26"
 }
 slot8 = {}
 slot9 = {}
@@ -78,8 +78,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "21",
-	class = "Sequence"
+	class = "Sequence",
+	id = "21"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -88,8 +88,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "13",
-	class = "Action"
+	class = "Action",
+	id = "13"
 }
 slot11 = {}
 slot12 = {}
@@ -168,8 +168,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	id = "20",
-	class = "Action"
+	class = "Action",
+	id = "20"
 }
 slot11 = {}
 slot12 = {}
@@ -213,8 +213,8 @@ slot9.node = slot10
 slot8[2] = slot9
 slot9 = {}
 slot10 = {
-	id = "23",
-	class = "Assignment"
+	class = "Assignment",
+	id = "23"
 }
 slot11 = {}
 slot12 = {
@@ -252,8 +252,8 @@ slot9.node = slot10
 slot8[3] = slot9
 slot9 = {}
 slot10 = {
-	id = "24",
-	class = "Action"
+	class = "Action",
+	id = "24"
 }
 slot11 = {}
 slot12 = {}

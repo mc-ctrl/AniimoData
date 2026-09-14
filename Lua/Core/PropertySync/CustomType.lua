@@ -1,4 +1,4 @@
---- BLOCK #0 1-118, warpins: 1 ---
+--- BLOCK #0 1-121, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -42,7 +42,173 @@ slot19 = getRawSetter
 slot20 = true
 slot8.__CUSTOM_TYPE__ = slot20
 
-slot20 = function(slot0)
+slot20 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot5 = slot0._root
+	slot6 = slot5._owner
+	slot9 = slot5
+	slot7 = slot5._getPersist
+	slot7 = slot7(slot9)
+	slot8 = PropertyTypes
+	slot8 = slot8.PS_PER
+
+	--- END OF BLOCK #0 ---
+
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-14, warpins: 2 ---
+	slot7 = nil
+	slot8 = slot1.customClass
+	--- END OF BLOCK #2 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-19, warpins: 1 ---
+	slot10 = slot3
+	slot8 = slot3._getPersist
+	slot8 = slot8(slot10)
+	slot7 = slot8
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 20-26, warpins: 1 ---
+	slot8 = math_min
+	slot10 = slot1.persist
+	slot13 = slot0
+	slot11 = slot0._getPersist
+	MULTRES = slot11(slot13)
+	slot8 = slot8(slot10, MULTRES)
+	slot7 = slot8
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-30, warpins: 2 ---
+	slot8 = PropertyTypes
+	slot8 = slot8.PS_PER
+
+	--- END OF BLOCK #5 ---
+
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 31-31, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 32-34, warpins: 2 ---
+	slot8 = slot6.markPersistentSubPropertyDirty
+	--- END OF BLOCK #7 ---
+
+	if slot8 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #8 35-42, warpins: 1 ---
+	slot9 = slot8
+	slot11 = slot6
+	slot12 = slot0
+	slot13 = slot4
+	slot14 = slot2
+	slot15 = slot1.customClass
+	--- END OF BLOCK #8 ---
+
+	if slot15 == nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 43-44, warpins: 1 ---
+	slot15 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 45-45, warpins: 1 ---
+	slot15 = true
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 46-47, warpins: 2 ---
+	slot9(slot11, slot12, slot13, slot14, slot15)
+
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 48-50, warpins: 2 ---
+	slot9 = slot6.markPersistentRootDirty
+	--- END OF BLOCK #12 ---
+
+	if slot9 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 51-54, warpins: 1 ---
+	slot10 = slot9
+	slot12 = slot6
+	slot13 = slot5._name
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 55-55, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = getRawSetter
 	slot3 = slot0
@@ -144,9 +310,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.ctor = slot20
+slot8.ctor = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = getRawSetter
 	slot4 = slot0
@@ -164,9 +330,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._setName = slot20
+slot8._setName = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -177,9 +343,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.enableQuickCopy = slot20
+slot8.enableQuickCopy = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = getRawSetter
 	slot4 = slot0
@@ -227,9 +393,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._setDeclare = slot20
+slot8._setDeclare = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._root
 	--- END OF BLOCK #0 ---
@@ -342,9 +508,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._setOwner = slot20
+slot8._setOwner = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = math_floor
 	slot3 = slot0._persist_aoiscope
@@ -357,9 +523,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._getPersist = slot20
+slot8._getPersist = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._persist_aoiscope
 	slot1 = slot1 % 8
@@ -371,9 +537,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._getAoiscope = slot20
+slot8._getAoiscope = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = getRawSetter
 	slot4 = slot0
@@ -446,9 +612,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8.setDelegator = slot20
+slot8.setDelegator = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0._delegator
 
@@ -459,9 +625,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.getDelegator = slot20
+slot8.getDelegator = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = getRawSetter
 	slot3 = slot0
@@ -479,9 +645,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._markRoot = slot20
+slot8._markRoot = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._root
 	--- END OF BLOCK #0 ---
@@ -516,9 +682,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._isRoot = slot20
+slot8._isRoot = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = getRawSetter
 	slot4 = slot0
@@ -704,9 +870,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._setParent = slot20
+slot8._setParent = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -773,9 +939,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._setInvalid = slot20
+slot8._setInvalid = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -812,9 +978,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.isInvalid = slot20
+slot8.isInvalid = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0._parent
 	slot2 = slot0._root
@@ -900,9 +1066,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._isWrapper = slot20
+slot8._isWrapper = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._root
 
@@ -1012,9 +1178,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._onLazyLoadInRuntime = slot20
+slot8._onLazyLoadInRuntime = slot21
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot21 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0._root
 
@@ -1035,7 +1201,17 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
+	--- BLOCK #2 5-17, warpins: 2 ---
+	slot4 = markPersistentDirty
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+	slot10 = PropertyTypes
+	slot10 = slot10.OP_CHANGE
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	slot4 = slot0._root
 	slot4 = slot4._owner
 	slot5 = slot4.__startfinish
@@ -1049,7 +1225,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -1057,7 +1233,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-14, warpins: 2 ---
+	--- BLOCK #4 19-22, warpins: 2 ---
 	slot5 = SyncStrategyMgr
 	slot5 = slot5.running
 	--- END OF BLOCK #4 ---
@@ -1069,7 +1245,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 15-20, warpins: 1 ---
+	--- BLOCK #5 23-28, warpins: 1 ---
 	slot5 = rawget
 	slot7 = slot0
 	slot8 = "_delegator"
@@ -1083,14 +1259,14 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 21-21, warpins: 1 ---
+	--- BLOCK #6 29-29, warpins: 1 ---
 	slot4 = slot5
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 22-25, warpins: 2 ---
+	--- BLOCK #7 30-33, warpins: 2 ---
 	slot6, slot7 = nil
 	slot8 = slot1.customClass
 	--- END OF BLOCK #7 ---
@@ -1102,7 +1278,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 26-40, warpins: 1 ---
+	--- BLOCK #8 34-48, warpins: 1 ---
 	slot8 = math_min
 	slot10 = slot1.aoiscope
 	slot13 = slot0
@@ -1122,7 +1298,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 41-48, warpins: 1 ---
+	--- BLOCK #9 49-56, warpins: 1 ---
 	slot10 = slot3
 	slot8 = slot3._getAoiscope
 	slot8 = slot8(slot10)
@@ -1136,7 +1312,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 49-52, warpins: 2 ---
+	--- BLOCK #10 57-60, warpins: 2 ---
 	slot8 = PropertyTypes
 	slot8 = slot8.AOI_SERVER_ONLY
 	--- END OF BLOCK #10 ---
@@ -1148,7 +1324,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #11 53-61, warpins: 1 ---
+	--- BLOCK #11 61-69, warpins: 1 ---
 	slot10 = slot4
 	slot8 = slot4.propertySync2Client
 	slot11 = slot6
@@ -1165,7 +1341,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 62-63, warpins: 2 ---
+	--- BLOCK #12 70-71, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	if slot5 ~= nil then
@@ -1175,7 +1351,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #13 64-66, warpins: 1 ---
+	--- BLOCK #13 72-74, warpins: 1 ---
 	slot8 = slot5.onPropertyModify
 	--- END OF BLOCK #13 ---
 
@@ -1186,7 +1362,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #14 67-76, warpins: 1 ---
+	--- BLOCK #14 75-84, warpins: 1 ---
 	slot10 = slot5
 	slot8 = slot5.onPropertyModify
 	slot11 = slot0
@@ -1203,7 +1379,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 77-84, warpins: 1 ---
+	--- BLOCK #15 85-92, warpins: 1 ---
 	slot5 = SyncStrategyMgr
 	slot5 = slot5.onSubPropertyChangedInRuntime
 	slot7 = slot4
@@ -1219,7 +1395,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 85-85, warpins: 4 ---
+	--- BLOCK #16 93-93, warpins: 4 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -1227,9 +1403,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8._onSubPropertyChangedInRuntime = slot20
+slot8._onSubPropertyChangedInRuntime = slot21
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot21 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0._root
 
@@ -1250,7 +1426,17 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
+	--- BLOCK #2 5-17, warpins: 2 ---
+	slot4 = markPersistentDirty
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+	slot10 = PropertyTypes
+	slot10 = slot10.OP_DEL
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	slot4 = slot0._root
 	slot4 = slot4._owner
 	slot5 = slot4.__startfinish
@@ -1264,7 +1450,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -1272,7 +1458,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-14, warpins: 2 ---
+	--- BLOCK #4 19-22, warpins: 2 ---
 	slot5 = SyncStrategyMgr
 	slot5 = slot5.running
 	--- END OF BLOCK #4 ---
@@ -1284,7 +1470,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 15-20, warpins: 1 ---
+	--- BLOCK #5 23-28, warpins: 1 ---
 	slot5 = rawget
 	slot7 = slot0
 	slot8 = "_delegator"
@@ -1298,14 +1484,14 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 21-21, warpins: 1 ---
+	--- BLOCK #6 29-29, warpins: 1 ---
 	slot4 = slot5
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 22-27, warpins: 2 ---
+	--- BLOCK #7 30-35, warpins: 2 ---
 	slot6 = nil
 	slot9 = slot0
 	slot7 = slot0.isCustomList
@@ -1319,7 +1505,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 28-30, warpins: 1 ---
+	--- BLOCK #8 36-38, warpins: 1 ---
 	slot7 = PropertyTypes
 	slot6 = slot7.OP_REMOVE
 	--- END OF BLOCK #8 ---
@@ -1327,7 +1513,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 31-32, warpins: 1 ---
+	--- BLOCK #9 39-40, warpins: 1 ---
 	slot7 = PropertyTypes
 	slot6 = slot7.OP_DEL
 	--- END OF BLOCK #9 ---
@@ -1335,7 +1521,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 33-39, warpins: 2 ---
+	--- BLOCK #10 41-47, warpins: 2 ---
 	slot9 = slot0
 	slot7 = slot0._getAoiscope
 	slot7 = slot7(slot9)
@@ -1350,7 +1536,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #11 40-47, warpins: 1 ---
+	--- BLOCK #11 48-55, warpins: 1 ---
 	slot10 = slot4
 	slot8 = slot4.propertySync2Client
 	slot11 = slot7
@@ -1366,7 +1552,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 48-49, warpins: 2 ---
+	--- BLOCK #12 56-57, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	if slot5 ~= nil then
@@ -1376,7 +1562,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #13 50-52, warpins: 1 ---
+	--- BLOCK #13 58-60, warpins: 1 ---
 	slot8 = slot5.onPropertyModify
 	--- END OF BLOCK #13 ---
 
@@ -1387,7 +1573,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #14 53-61, warpins: 1 ---
+	--- BLOCK #14 61-69, warpins: 1 ---
 	slot10 = slot5
 	slot8 = slot5.onPropertyModify
 	slot11 = slot0
@@ -1403,7 +1589,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 62-69, warpins: 1 ---
+	--- BLOCK #15 70-77, warpins: 1 ---
 	slot5 = SyncStrategyMgr
 	slot5 = slot5.onSubPropertyDeletedInRuntime
 	slot7 = slot4
@@ -1419,7 +1605,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 70-70, warpins: 4 ---
+	--- BLOCK #16 78-78, warpins: 4 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -1427,9 +1613,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8._onSubPropertyDeletedInRuntime = slot20
+slot8._onSubPropertyDeletedInRuntime = slot21
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot21 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0._root
 
@@ -1450,7 +1636,17 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
+	--- BLOCK #2 5-17, warpins: 2 ---
+	slot4 = markPersistentDirty
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+	slot10 = PropertyTypes
+	slot10 = slot10.OP_ADD
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	slot4 = slot0._root
 	slot4 = slot4._owner
 	slot5 = slot4.__startfinish
@@ -1464,7 +1660,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -1472,7 +1668,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-14, warpins: 2 ---
+	--- BLOCK #4 19-22, warpins: 2 ---
 	slot5 = SyncStrategyMgr
 	slot5 = slot5.running
 	--- END OF BLOCK #4 ---
@@ -1484,7 +1680,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 15-20, warpins: 1 ---
+	--- BLOCK #5 23-28, warpins: 1 ---
 	slot5 = rawget
 	slot7 = slot0
 	slot8 = "_delegator"
@@ -1498,14 +1694,14 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 21-21, warpins: 1 ---
+	--- BLOCK #6 29-29, warpins: 1 ---
 	slot4 = slot5
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 22-27, warpins: 2 ---
+	--- BLOCK #7 30-35, warpins: 2 ---
 	slot6 = nil
 	slot9 = slot0
 	slot7 = slot0.isCustomList
@@ -1519,7 +1715,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 28-30, warpins: 1 ---
+	--- BLOCK #8 36-38, warpins: 1 ---
 	slot7 = PropertyTypes
 	slot6 = slot7.OP_INSERT
 	--- END OF BLOCK #8 ---
@@ -1527,7 +1723,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 31-32, warpins: 1 ---
+	--- BLOCK #9 39-40, warpins: 1 ---
 	slot7 = PropertyTypes
 	slot6 = slot7.OP_ADD
 	--- END OF BLOCK #9 ---
@@ -1535,7 +1731,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 33-39, warpins: 2 ---
+	--- BLOCK #10 41-47, warpins: 2 ---
 	slot9 = slot0
 	slot7 = slot0._getAoiscope
 	slot7 = slot7(slot9)
@@ -1550,7 +1746,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #11 40-47, warpins: 1 ---
+	--- BLOCK #11 48-55, warpins: 1 ---
 	slot10 = slot4
 	slot8 = slot4.propertySync2Client
 	slot11 = slot7
@@ -1566,7 +1762,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 48-49, warpins: 2 ---
+	--- BLOCK #12 56-57, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	if slot5 ~= nil then
@@ -1576,7 +1772,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #13 50-52, warpins: 1 ---
+	--- BLOCK #13 58-60, warpins: 1 ---
 	slot8 = slot5.onPropertyModify
 	--- END OF BLOCK #13 ---
 
@@ -1587,7 +1783,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #14 53-61, warpins: 1 ---
+	--- BLOCK #14 61-69, warpins: 1 ---
 	slot10 = slot5
 	slot8 = slot5.onPropertyModify
 	slot11 = slot0
@@ -1603,7 +1799,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 62-69, warpins: 1 ---
+	--- BLOCK #15 70-77, warpins: 1 ---
 	slot5 = SyncStrategyMgr
 	slot5 = slot5.onSubPropertCreatedInRuntime
 	slot7 = slot4
@@ -1619,7 +1815,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 70-70, warpins: 4 ---
+	--- BLOCK #16 78-78, warpins: 4 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -1627,9 +1823,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8._onSubPropertyCreatedInRuntime = slot20
+slot8._onSubPropertyCreatedInRuntime = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -1779,9 +1975,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.reuse = slot20
+slot8.reuse = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -1792,9 +1988,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.isCustomType = slot20
+slot8.isCustomType = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -1805,9 +2001,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.isCustomDict = slot20
+slot8.isCustomDict = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -1818,9 +2014,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.isCustomList = slot20
+slot8.isCustomList = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = "customType"
 
@@ -1831,9 +2027,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.customTypeName = slot20
+slot8.customTypeName = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._root
 	--- END OF BLOCK #0 ---
@@ -1862,9 +2058,97 @@ slot20 = function(slot0)
 
 end
 
-slot8.getRootOwner = slot20
+slot8.getRootOwner = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._getPersist
+	slot1 = slot1(slot3)
+	slot2 = PropertyTypes
+	slot2 = slot2.PS_PER
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-14, warpins: 2 ---
+	slot1 = type
+	slot3 = slot0._properties
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	if slot1 == "userdata" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 15-20, warpins: 1 ---
+	slot1 = rawget
+	slot3 = slot0
+	slot4 = "_readonly"
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-24, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._rolazyload
+
+	slot1(slot3)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 25-27, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._lazyload
+
+	slot1(slot3)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-30, warpins: 3 ---
+	slot3 = slot0
+	slot1 = slot0._getPersistentValue
+
+	return slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot8.getPersistentValue = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0._properties
@@ -1981,9 +2265,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.getRawTable = slot20
+slot8.getRawTable = slot21
 
-slot20 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot0._properties
@@ -2042,9 +2326,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot8.rawset = slot20
+slot8.rawset = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0._properties
@@ -2265,9 +2549,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.items = slot20
+slot8.items = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0._properties
@@ -2561,9 +2845,9 @@ slot20 = function(slot0)
 
 end
 
-slot8.fast_items = slot20
+slot8.fast_items = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2712,9 +2996,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._attachToCache = slot20
+slot8._attachToCache = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2864,9 +3148,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._detachFromCache = slot20
+slot8._detachFromCache = slot21
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot21 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = type
 	slot6 = slot0._properties
@@ -2966,9 +3250,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8._onSyncPropertyId = slot20
+slot8._onSyncPropertyId = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._path
 	--- END OF BLOCK #0 ---
@@ -3065,9 +3349,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._pathFromRoot2Myself = slot20
+slot8._pathFromRoot2Myself = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0._parent
@@ -3143,9 +3427,9 @@ slot20 = function(slot0)
 
 end
 
-slot8._gatherUnfixedNames = slot20
+slot8._gatherUnfixedNames = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._pathFromRoot2Myself
@@ -3220,9 +3504,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot8._traceSubNode = slot20
+slot8._traceSubNode = slot21
 
-slot20 = function(slot0, slot1, slot2, slot3, slot4)
+slot21 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = type
 	slot7 = slot0._properties
@@ -3482,9 +3766,9 @@ slot20 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot8.quickCopy = slot20
+slot8.quickCopy = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0._properties
@@ -3595,7 +3879,7 @@ slot20 = function(slot0)
 
 end
 
-slot8.deepCopy = slot20
+slot8.deepCopy = slot21
 
 return slot8
 --- END OF BLOCK #0 ---

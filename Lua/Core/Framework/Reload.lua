@@ -1,14 +1,17 @@
---- BLOCK #0 1-209, warpins: 1 ---
-slot0 = {}
+--- BLOCK #0 1-212, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Common.EmptyTable"
+slot0 = slot0(slot2)
 slot1 = {}
-slot2 = table
-slot3 = unpack
-slot2.unpack = slot3
-slot3 = debug
-slot4 = {}
-slot5 = nil
+slot2 = {}
+slot3 = table
+slot4 = unpack
+slot3.unpack = slot4
+slot4 = debug
+slot5 = {}
+slot6 = nil
 
-slot6 = function()
+slot7 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = {}
 
@@ -19,22 +22,22 @@ slot6 = function()
 
 end
 
-slot7 = "[Core.Log.LoggerManager]"
-slot8 = "[Core.Framework.Class]"
-slot9 = "[Core.Framework.AccessControl]"
-slot10 = {}
+slot8 = "[Core.Log.LoggerManager]"
+slot9 = "[Core.Framework.Class]"
+slot10 = "[Core.Framework.AccessControl]"
 slot11 = {}
 slot12 = {}
-slot13 = {
+slot13 = {}
+slot14 = {
+	preInit = true,
 	ctor = true,
 	start = true,
 	destroy = true,
 	postInit = true,
-	init = true,
-	preInit = true
+	init = true
 }
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = __defaultMethods
 	slot1 = slot1[slot0]
@@ -46,9 +49,9 @@ slot14 = function(slot0)
 
 end
 
-slot1.isDefaultMethods = slot14
+slot2.isDefaultMethods = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = _isRpcMethodFunc
 	--- END OF BLOCK #0 ---
@@ -94,10 +97,10 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot1.isRpcMethod = slot14
-slot14 = {}
+slot2.isRpcMethod = slot15
+slot15 = {}
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = {
 		__IsClass = true
@@ -142,9 +145,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.Class = slot15
+slot15.Class = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = {
 		__IsClass = true,
@@ -188,9 +191,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.OldLightClass = slot15
+slot15.OldLightClass = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = {
 		__IsClass = true,
@@ -216,9 +219,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.LiteClass = slot15
+slot15.LiteClass = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = {
 		__IsComponent = true
@@ -237,9 +240,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.Component = slot15
+slot15.Component = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = getmetatable
 	slot3 = slot0
@@ -372,9 +375,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.GenerateClass = slot15
+slot15.GenerateClass = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = getmetatable
 	slot3 = slot0
@@ -507,9 +510,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.GenerateOldLightClass = slot15
+slot15.GenerateOldLightClass = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = getmetatable
 	slot4 = slot1
@@ -638,9 +641,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.GenerateLiteClass = slot15
+slot15.GenerateLiteClass = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = getmetatable
 	slot3 = slot0
@@ -769,9 +772,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.GenerateComponent = slot15
+slot15.GenerateComponent = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = classWrapper
 	slot2 = slot2.GenerateComponent
@@ -820,9 +823,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.AddComponent = slot15
+slot15.AddComponent = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = 1
 	slot3 = #slot1
@@ -855,13 +858,13 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.AddComponents = slot15
-slot15 = {}
-slot16 = {
+slot15.AddComponents = slot16
+slot16 = {}
+slot17 = {
 	__metatable = "LOGGER"
 }
 
-slot17 = function()
+slot18 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "_loggerMt __newindex"
@@ -875,9 +878,9 @@ slot17 = function()
 
 end
 
-slot16.__newindex = slot17
+slot17.__newindex = slot18
 
-slot17 = function()
+slot18 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "_loggerMt __pairs"
@@ -891,9 +894,9 @@ slot17 = function()
 
 end
 
-slot16.__pairs = slot17
+slot17.__pairs = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot1.name = slot0
@@ -910,9 +913,9 @@ slot17 = function(slot0)
 
 end
 
-slot15.getLogger = slot17
+slot16.getLogger = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = loggerWrapper
 	slot1.generateLogger = slot0
@@ -924,62 +927,32 @@ slot17 = function(slot0)
 
 end
 
-slot15.setGenerateLoggerFunc = slot17
-slot17 = {}
-slot18 = {
-	__metatable = "AccessControl"
-}
-
-slot19 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = error
-	slot2 = "_accessControlWrapperMt __newindex"
-
-	slot0(slot2)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot18.__newindex = slot19
-
-slot19 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = error
-	slot2 = "_accessControlWrapperMt __newindex"
-
-	slot0(slot2)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot18.__pairs = slot19
-
-slot19 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot17.readOnly = slot19
+slot16.setGenerateLoggerFunc = slot18
+slot18 = {}
 slot19 = {
-	__metatable = "WRAPPER"
+	__metatable = "AccessControl"
 }
 
 slot20 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
-	slot2 = "wrapper_dummy_mt __pairs"
+	slot2 = "_accessControlWrapperMt __newindex"
+
+	slot0(slot2)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot19.__newindex = slot20
+
+slot20 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = error
+	slot2 = "_accessControlWrapperMt __newindex"
 
 	slot0(slot2)
 
@@ -993,6 +966,36 @@ end
 slot19.__pairs = slot20
 
 slot20 = function(slot0)
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot18.readOnly = slot20
+slot20 = {
+	__metatable = "WRAPPER"
+}
+
+slot21 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = error
+	slot2 = "wrapper_dummy_mt __pairs"
+
+	slot0(slot2)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.__pairs = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = _wrapperModule
 	slot1 = slot1[slot0]
@@ -1004,9 +1007,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.__tostring = slot20
+slot20.__tostring = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = _wrapperModule
 	slot2[slot1] = slot0
@@ -1025,27 +1028,27 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot21 = slot14.LiteClass
-slot14.LightClass = slot21
-slot21 = slot20
-slot23 = slot14
-slot24 = slot8
+slot22 = slot15.LiteClass
+slot15.LightClass = slot22
+slot22 = slot21
+slot24 = slot15
+slot25 = slot9
 
-slot21(slot23, slot24)
+slot22(slot24, slot25)
 
-slot21 = slot20
-slot23 = slot15
-slot24 = slot7
+slot22 = slot21
+slot24 = slot16
+slot25 = slot8
 
-slot21(slot23, slot24)
+slot22(slot24, slot25)
 
-slot21 = slot20
-slot23 = slot17
-slot24 = slot9
+slot22 = slot21
+slot24 = slot18
+slot25 = slot10
 
-slot21(slot23, slot24)
+slot22(slot24, slot25)
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = reload
 	slot1 = slot1.postfix
@@ -1170,11 +1173,11 @@ slot21 = function(slot0)
 
 end
 
-slot22 = {
+slot23 = {
 	__metatable = "SANDBOX"
 }
 
-slot23 = function()
+slot24 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "global_mt __newindex"
@@ -1188,9 +1191,9 @@ slot23 = function()
 
 end
 
-slot22.__newindex = slot23
+slot23.__newindex = slot24
 
-slot23 = function()
+slot24 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "global_mt __pairs"
@@ -1204,17 +1207,17 @@ slot23 = function()
 
 end
 
-slot22.__pairs = slot23
-slot23 = {}
+slot23.__pairs = slot24
 slot24 = {}
-slot25 = {
+slot25 = {}
+slot26 = {
 	__mode = "kv"
 }
-slot26 = {
+slot27 = {
 	__metatable = "MODULE"
 }
 
-slot27 = function()
+slot28 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "module_dummy_mt __newindex"
@@ -1228,9 +1231,9 @@ slot27 = function()
 
 end
 
-slot26.__newindex = slot27
+slot27.__newindex = slot28
 
-slot27 = function()
+slot28 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "module_dummy_mt __pairs"
@@ -1244,9 +1247,9 @@ slot27 = function()
 
 end
 
-slot26.__pairs = slot27
+slot27.__pairs = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = dummy_module_cache
 	slot1 = slot1[slot0]
@@ -1258,9 +1261,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.__tostring = slot27
+slot27.__tostring = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = assert
 	slot4 = type
@@ -1346,12 +1349,12 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot26.__index = slot27
-slot27 = {
+slot27.__index = slot28
+slot28 = {
 	__metatable = "IMP_MODULE"
 }
 
-slot28 = function()
+slot29 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "module_imp_dummy_mt __pairs"
@@ -1365,9 +1368,9 @@ slot28 = function()
 
 end
 
-slot27.__pairs = slot28
+slot28.__pairs = slot29
 
-slot28 = function(slot0, slot1, slot2)
+slot29 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = dummy_module_cache
 	slot3 = slot3[slot0]
@@ -1416,9 +1419,9 @@ slot28 = function(slot0, slot1, slot2)
 
 end
 
-slot27.__newindex = slot28
+slot28.__newindex = slot29
 
-slot28 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = dummy_module_cache
 	slot1 = slot1[slot0]
@@ -1430,11 +1433,11 @@ slot28 = function(slot0)
 
 end
 
-slot27.__tostring = slot28
-slot28 = slot26.__index
-slot26.__index = slot28
+slot28.__tostring = slot29
+slot29 = slot27.__index
+slot27.__index = slot29
 
-slot28 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = "["
 	slot2 = slot0
@@ -1538,7 +1541,7 @@ slot28 = function(slot0)
 
 end
 
-slot29 = function()
+slot30 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = setmetatable
 	slot2 = {}
@@ -1551,7 +1554,7 @@ slot29 = function()
 
 end
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = assert
 	slot3 = type
@@ -1670,9 +1673,9 @@ slot30 = function(slot0)
 
 end
 
-slot1.require = slot30
+slot2.require = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = sandbox
 	slot1 = slot1.current_mod
@@ -1795,12 +1798,12 @@ slot30 = function(slot0)
 
 end
 
-slot1.import = slot30
-slot30 = {
+slot2.import = slot31
+slot31 = {
 	__metatable = "GLOBAL"
 }
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = dummy_cache
 	slot1 = slot1[slot0]
@@ -1812,9 +1815,9 @@ slot31 = function(slot0)
 
 end
 
-slot30.__tostring = slot31
+slot31.__tostring = slot32
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "global_dummy_mt __newindex"
@@ -1828,9 +1831,9 @@ slot31 = function()
 
 end
 
-slot30.__newindex = slot31
+slot31.__newindex = slot32
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = error
 	slot2 = "global_dummy_mt __pairs"
@@ -1844,9 +1847,9 @@ slot31 = function()
 
 end
 
-slot30.__pairs = slot31
+slot31.__pairs = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = dummy_cache
 	slot1 = slot1[slot0]
@@ -1894,7 +1897,7 @@ slot31 = function(slot0)
 
 end
 
-slot32 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = dummy_cache
 	slot2 = slot2[slot0]
@@ -1944,58 +1947,58 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot30.__index = slot32
-slot32 = ipairs
+slot31.__index = slot33
+slot33 = ipairs
+slot35 = {}
+slot33 = slot33(slot35)
 slot34 = {}
-slot32 = slot32(slot34)
-slot33 = {}
-slot34 = slot1.require
-slot33.require = slot34
-slot34 = pairs
-slot33.pairs = slot34
-slot34 = next
-slot33.next = slot34
-slot34 = ipairs
-slot33.ipairs = slot34
-slot33._inext = slot32
-slot34 = print
-slot33.print = slot34
-slot34 = slot1.import
-slot33.import = slot34
-slot34 = unpack
-slot33.unpack = slot34
-slot34 = math
-slot33.math = slot34
-slot34 = getmetatable
-slot33.getmetatable = slot34
-slot34 = setmetatable
-slot33.setmetatable = slot34
-slot34 = rawset
-slot33.rawset = slot34
-slot34 = rawget
-slot33.rawget = slot34
-slot34 = string
-slot33.string = slot34
-slot34 = Vector2
-slot33.Vector2 = slot34
-slot34 = Vector3
-slot33.Vector3 = slot34
-slot34 = Vector4
-slot33.Vector4 = slot34
-slot34 = pg
-slot33.pg = slot34
-slot34 = Quaternion
-slot33.Quaternion = slot34
-slot34 = bit
-slot33.bit = slot34
-slot34 = loadfile
-slot33.loadfile = slot34
-slot34 = type
-slot33.type = slot34
-slot34 = EnableBotTest
-slot33.EnableBotTest = slot34
+slot35 = slot2.require
+slot34.require = slot35
+slot35 = pairs
+slot34.pairs = slot35
+slot35 = next
+slot34.next = slot35
+slot35 = ipairs
+slot34.ipairs = slot35
+slot34._inext = slot33
+slot35 = print
+slot34.print = slot35
+slot35 = slot2.import
+slot34.import = slot35
+slot35 = unpack
+slot34.unpack = slot35
+slot35 = math
+slot34.math = slot35
+slot35 = getmetatable
+slot34.getmetatable = slot35
+slot35 = setmetatable
+slot34.setmetatable = slot35
+slot35 = rawset
+slot34.rawset = slot35
+slot35 = rawget
+slot34.rawget = slot35
+slot35 = string
+slot34.string = slot35
+slot35 = Vector2
+slot34.Vector2 = slot35
+slot35 = Vector3
+slot34.Vector3 = slot35
+slot35 = Vector4
+slot34.Vector4 = slot35
+slot35 = pg
+slot34.pg = slot35
+slot35 = Quaternion
+slot34.Quaternion = slot35
+slot35 = bit
+slot34.bit = slot35
+slot35 = loadfile
+slot34.loadfile = slot35
+slot35 = type
+slot34.type = slot35
+slot35 = EnableBotTest
+slot34.EnableBotTest = slot35
 
-slot34 = function(slot0, slot1)
+slot35 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = assert
 	slot4 = type
@@ -2069,9 +2072,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot22.__index = slot34
+slot23.__index = slot35
 
-slot34 = function(slot0)
+slot35 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = dummy_cache
 	slot1 = slot1[slot0]
@@ -2132,7 +2135,7 @@ slot34 = function(slot0)
 
 end
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = dummy_module_cache
 	slot1 = slot1[slot0]
@@ -2292,7 +2295,7 @@ slot35 = function(slot0)
 
 end
 
-slot36 = function(slot0)
+slot37 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = _wrapperModule
 	slot1 = slot1[slot0]
@@ -2339,7 +2342,7 @@ slot36 = function(slot0)
 
 end
 
-slot37 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = getmetatable
 	slot3 = slot0
@@ -2437,9 +2440,9 @@ slot37 = function(slot0)
 
 end
 
-slot1.value = slot37
+slot2.value = slot38
 
-slot37 = function(slot0, slot1)
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = reload
 	slot2 = slot2.print
@@ -2614,9 +2617,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot1.init = slot37
+slot2.init = slot38
 
-slot37 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = safe_function
 	slot1 = slot1[slot0]
@@ -2675,9 +2678,9 @@ slot37 = function(slot0)
 
 end
 
-slot1.isdummy = slot37
+slot2.isdummy = slot38
 
-slot37 = function(slot0)
+slot38 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = _LOADED
 	slot1 = slot1[slot0]
@@ -2689,9 +2692,9 @@ slot37 = function(slot0)
 
 end
 
-slot1.module = slot37
+slot2.module = slot38
 
-slot37 = function()
+slot38 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	dummy_cache = nil
 	dummy_module_cache = nil
@@ -2759,9 +2762,9 @@ slot37 = function()
 
 end
 
-slot1.clear = slot37
+slot2.clear = slot38
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = _wrapperModule
 	slot2 = LoggerPath
@@ -2802,9 +2805,9 @@ slot10 = function(slot0)
 
 end
 
-slot0.initEnv = slot10
+slot1.initEnv = slot11
 
-slot10 = function()
+slot11 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -2847,14 +2850,14 @@ slot10 = function()
 
 end
 
-slot0.list = slot10
-slot10 = {
+slot1.list = slot11
+slot11 = {
 	string = true,
 	number = true,
 	boolean = true
 }
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = reload
 	slot1 = slot1.print
@@ -3539,7 +3542,7 @@ slot11 = function(slot0)
 
 end
 
-slot12 = function(slot0, slot1, slot2, ...)
+slot13 = function(slot0, slot1, slot2, ...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3707,7 +3710,7 @@ slot12 = function(slot0, slot1, slot2, ...)
 
 end
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot1.typeName
 	slot4 = slot0.typeName
@@ -3878,7 +3881,7 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = "[Class "
 	slot3 = slot1.typeName
@@ -4269,7 +4272,7 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot15 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot16 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot7 = reload
 	slot7 = slot7.print
@@ -4620,7 +4623,7 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4719,7 +4722,7 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = reload
 	slot4 = slot4.print
@@ -5063,7 +5066,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = reload
 	slot2 = slot2.print
@@ -5405,7 +5408,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot19 = function(slot0, slot1, slot2, slot3, slot4, ...)
+slot20 = function(slot0, slot1, slot2, slot3, slot4, ...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5601,7 +5604,7 @@ slot19 = function(slot0, slot1, slot2, slot3, slot4, ...)
 
 end
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = reload
 	slot2 = slot2.print
@@ -5800,7 +5803,7 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot21 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = debug
 	slot2 = slot2.getregistry
@@ -5853,7 +5856,7 @@ slot21 = function(slot0, slot1)
 
 
 	--- BLOCK #4 23-23, warpins: 1 ---
-	slot15 = {}
+	slot15 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -6490,7 +6493,7 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = debug
 	slot1 = slot1.getregistry
@@ -6806,7 +6809,7 @@ slot22 = function(slot0)
 
 end
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-48, warpins: 1 ---
 	slot1 = debug
 	slot1 = slot1.getregistry
@@ -7530,7 +7533,7 @@ slot23 = function(slot0)
 
 end
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = reload
 	slot3 = slot3.print
@@ -7848,9 +7851,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.reload = slot24
+slot1.reload = slot25
 
-return slot0
+return slot1
 --- END OF BLOCK #0 ---
 
 

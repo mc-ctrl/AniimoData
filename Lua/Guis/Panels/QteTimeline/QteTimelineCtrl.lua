@@ -397,7 +397,7 @@ end
 slot3.onOpen = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-25, warpins: 1 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.progress
 	slot2 = 0
@@ -416,6 +416,32 @@ slot4 = function(slot0)
 	slot1 = slot1.TryChangePage
 	slot4 = "State"
 	slot5 = 0
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = UIUtils
+	slot1 = slot1.PlayAnimation
+	slot3 = slot0.view
+	slot3 = slot3.rapidClickAnim
+	slot4 = "VX_Pb_RapidClick_In"
+
+	slot5 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.rapidClickAnim
+		slot2 = slot0
+		slot0 = slot0.Play
+		slot3 = "VX_Pb_RapidClick_Click_Loop"
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
 
 	slot1(slot3, slot4, slot5)
 

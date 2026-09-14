@@ -181,12 +181,34 @@ slot6 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-18, warpins: 2 ---
+	--- BLOCK #2 14-36, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.initKeyConflict
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.btnCancelTxtNameUText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "EXIT_GAME_CANCEL"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.btnConfirmTxtNameUText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "COMMON_CONFIRM"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
 
 	return
 	--- END OF BLOCK #2 ---

@@ -7,25 +7,25 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 27,
 	useForRoute = false,
 	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_Perception_MimicryEnterResPoint"
+	name = "ParmonBehaviorTree/SubTree/PBT_Perception_MimicryEnterResPoint",
+	version = 27
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	type = "int",
 	name = "tSensorTgtId",
+	const = 0,
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	type = "float",
 	name = "tRandomWaitTime",
+	const = 0,
 	value = "0"
 }
 slot4[2] = slot5

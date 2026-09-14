@@ -1,4 +1,4 @@
---- BLOCK #0 1-67, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -41,12 +41,21 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Utils.ClientCashShopUtils"
 slot12 = slot12(slot14)
-slot13 = slot2.LightClass
-slot15 = "BpObtainCtrl"
-slot16 = slot3
-slot13 = slot13(slot15, slot16)
+slot13 = require
+slot15 = "GameApp.Recharge.RechargeUtils"
+slot13 = slot13(slot15)
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.SDK
+slot14 = slot14.Platform
+slot14 = slot14.PlatformBridgeLuaFacade
+slot15 = slot2.LightClass
+slot17 = "BpObtainCtrl"
+slot18 = slot3
+slot15 = slot15(slot17, slot18)
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -230,7 +239,7 @@ slot14 = function(slot0)
 
 end
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -296,7 +305,7 @@ slot15 = function(slot0)
 
 end
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -453,10 +462,10 @@ slot16 = function(slot0)
 
 end
 
-slot17 = {}
-slot13.messages = slot17
+slot19 = {}
+slot15.messages = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -472,9 +481,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot13.onCreate = slot17
+slot15.onCreate = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = slot1.btnBGClose
@@ -548,7 +557,49 @@ slot17 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 7-19, warpins: 2 ---
+		--- BLOCK #2 7-14, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.platform
+		slot2 = slot0
+		slot0 = slot0.isPS
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 15-19, warpins: 1 ---
+		slot0 = RechargeUtils
+		slot0 = slot0.isEmptyStore
+		slot0 = slot0()
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 20-23, warpins: 1 ---
+		slot0 = PlatformBridgeLuaFacade
+		slot0 = slot0.ShowCommonMessageDialogEmptyStore
+
+		slot0()
+
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 24-36, warpins: 3 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -566,7 +617,7 @@ slot17 = function(slot0)
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -699,9 +750,9 @@ slot17 = function(slot0)
 
 end
 
-slot13.addListener = slot17
+slot15.addListener = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -716,9 +767,9 @@ slot17 = function(slot0)
 
 end
 
-slot13.onDestroy = slot17
+slot15.onDestroy = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -734,9 +785,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot13.onOpen = slot17
+slot15.onOpen = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = slot1.txtTitle
@@ -909,9 +960,9 @@ slot17 = function(slot0)
 
 end
 
-slot13.onShow = slot17
+slot15.onShow = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ActivityUtils
 	slot1 = slot1.getActivityData
@@ -1271,9 +1322,9 @@ slot17 = function(slot0)
 
 end
 
-slot13._collectPayRewardsUpToCurrentLevel = slot17
+slot15._collectPayRewardsUpToCurrentLevel = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1282,9 +1333,9 @@ slot17 = function(slot0)
 
 end
 
-slot13.onHide = slot17
+slot15.onHide = slot19
 
-return slot13
+return slot15
 --- END OF BLOCK #0 ---
 
 

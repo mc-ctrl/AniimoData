@@ -1,4 +1,4 @@
---- BLOCK #0 1-243, warpins: 1 ---
+--- BLOCK #0 1-292, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -28,223 +28,250 @@ slot8 = require
 slot10 = "Utils.LuaUIUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Guis.Panels.Photo.Component.PhotoFuncCameraModeUIComponent"
+slot11 = "Utils.PhotographyAssetRedDotUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Guis.Panels.Photo.Component.PhotoFuncLensUIComponent"
+slot12 = "Const.RedDotConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Guis.Panels.Photo.Component.PhotoFuncLightingUIComponent"
+slot13 = "Guis.Panels.Photo.Component.PhotoFuncCameraModeUIComponent"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Guis.Panels.Photo.Component.PhotoFuncFilterUIComponent"
+slot14 = "Guis.Panels.Photo.Component.PhotoFuncLensUIComponent"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Guis.Panels.Photo.Component.PhotoFuncDIYUIComponent"
+slot15 = "Guis.Panels.Photo.Component.PhotoFuncLightingUIComponent"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Guis.Panels.Photo.Component.PhotoFuncPlayerPoseUIComponent"
+slot16 = "Guis.Panels.Photo.Component.PhotoFuncFilterUIComponent"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Guis.Panels.Photo.Component.PhotoFuncPetPoseUIComponent"
+slot17 = "Guis.Panels.Photo.Component.PhotoFuncDIYUIComponent"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Guis.Panels.Photo.Component.PhotoFuncTemplateUIComponent"
+slot18 = "Guis.Panels.Photo.Component.PhotoFuncPlayerPoseUIComponent"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Guis.Panels.Photo.Component.PhotoFuncWeatherUIComponent"
+slot19 = "Guis.Panels.Photo.Component.PhotoFuncPetPoseUIComponent"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Guis.Panels.Photo.Component.PhotoFuncGazeComponent"
+slot20 = "Guis.Panels.Photo.Component.PhotoFuncTemplateUIComponent"
 slot18 = slot18(slot20)
-slot19 = "VX_Node_Camera_Menu_EXpand"
-slot20 = "VX_Node_Camera_Menu_Recover"
-slot21 = "VX_Node_Camera_Menu_In"
-slot22 = {
+slot19 = require
+slot21 = "Guis.Panels.Photo.Component.PhotoFuncWeatherUIComponent"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Guis.Panels.Photo.Component.PhotoFuncGazeComponent"
+slot20 = slot20(slot22)
+slot21 = "VX_Node_Camera_Menu_EXpand"
+slot22 = "VX_Node_Camera_Menu_Recover"
+slot23 = "VX_Node_Camera_Menu_In"
+slot24 = {
+	PetPose = 6,
+	PlayerPose = 5,
+	DIY = 4,
 	Filter = 3,
 	Lighting = 2,
 	Lens = 1,
 	CameraMode = 0,
 	Gaze = 9,
 	Weather = 8,
-	Template = 7,
-	PetPose = 6,
-	PlayerPose = 5,
-	DIY = 4
+	Template = 7
 }
-slot2.Funcs = slot22
-slot22 = {}
-slot23 = {
+slot2.Funcs = slot24
+slot24 = {}
+slot25 = {
 	label = "PHOTO_TEMPLATE"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.Template
-slot23.funcId = slot24
-slot22[1] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.Template
+slot25.funcId = slot26
+slot24[1] = slot25
+slot25 = {
 	tIndex = 1
 }
-slot22[2] = slot23
-slot23 = {
+slot24[2] = slot25
+slot25 = {
 	label = "PHOTO_CAMERA_FUNCTION"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.CameraMode
-slot23.funcId = slot24
-slot22[3] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.CameraMode
+slot25.funcId = slot26
+slot24[3] = slot25
+slot25 = {
 	label = "PHOTO_LENS_PARAM"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.Lens
-slot23.funcId = slot24
-slot22[4] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.Lens
+slot25.funcId = slot26
+slot24[4] = slot25
+slot25 = {
 	label = "PHOTO_LIGHTING"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.Lighting
-slot23.funcId = slot24
-slot22[5] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.Lighting
+slot25.funcId = slot26
+slot24[5] = slot25
+slot25 = {
 	label = "PHOTO_FILTER"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.Filter
-slot23.funcId = slot24
-slot22[6] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.Filter
+slot25.funcId = slot26
+slot24[6] = slot25
+slot25 = {
 	label = "PHOTO_WEATHER"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.Weather
-slot23.funcId = slot24
-slot22[7] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.Weather
+slot25.funcId = slot26
+slot24[7] = slot25
+slot25 = {
 	label = "PHOTO_DIY"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.DIY
-slot23.funcId = slot24
-slot22[8] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.DIY
+slot25.funcId = slot26
+slot24[8] = slot25
+slot25 = {
 	tIndex = 1
 }
-slot22[9] = slot23
-slot23 = {
+slot24[9] = slot25
+slot25 = {
 	label = "PHOTO_PLAYER_POSE"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.PlayerPose
-slot23.funcId = slot24
-slot22[10] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.PlayerPose
+slot25.funcId = slot26
+slot24[10] = slot25
+slot25 = {
 	label = "PHOTO_PET_POSE"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.PetPose
-slot23.funcId = slot24
-slot22[11] = slot23
-slot23 = {
+slot26 = slot2.Funcs
+slot26 = slot26.PetPose
+slot25.funcId = slot26
+slot24[11] = slot25
+slot25 = {
 	label = "PHOTO_GAZE"
 }
-slot24 = slot2.Funcs
-slot24 = slot24.Gaze
-slot23.funcId = slot24
-slot22[12] = slot23
-slot2.CurOpenMenuTabs = slot22
-slot22 = {
+slot26 = slot2.Funcs
+slot26 = slot26.Gaze
+slot25.funcId = slot26
+slot24[12] = slot25
+slot2.CurOpenMenuTabs = slot24
+slot24 = {}
+slot25 = slot2.Funcs
+slot25 = slot25.Lighting
+slot26 = slot9.AssetType
+slot26 = slot26.Lighting
+slot24[slot25] = slot26
+slot25 = slot2.Funcs
+slot25 = slot25.Filter
+slot26 = slot9.AssetType
+slot26 = slot26.Filter
+slot24[slot25] = slot26
+slot25 = slot2.Funcs
+slot25 = slot25.DIY
+slot26 = slot9.AssetType
+slot26 = slot26.DIY
+slot24[slot25] = slot26
+slot25 = slot2.Funcs
+slot25 = slot25.PlayerPose
+slot26 = slot9.AssetType
+slot26 = slot26.PlayerPose
+slot24[slot25] = slot26
+slot25 = {
 	KeyValue = 1
 }
-slot2.CameraParamTipType = slot22
-slot22 = "PHOTO_CAMERA_FUNCTION"
-slot2.DefaultLabel = slot22
-slot22 = {}
-slot23 = slot2.Funcs
-slot23 = slot23.Template
-slot24 = {
+slot2.CameraParamTipType = slot25
+slot25 = "PHOTO_CAMERA_FUNCTION"
+slot2.DefaultLabel = slot25
+slot25 = {}
+slot26 = slot2.Funcs
+slot26 = slot26.Template
+slot27 = {
 	1,
 	5,
 	2,
 	5
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.CameraMode
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.CameraMode
+slot27 = {
 	0,
 	0
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.Lens
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.Lens
+slot27 = {
 	0,
 	1
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.Lighting
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.Lighting
+slot27 = {
 	2,
 	0
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.Filter
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.Filter
+slot27 = {
 	1,
 	1,
 	2,
 	1
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.Weather
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.Weather
+slot27 = {
 	0,
 	2
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.DIY
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.DIY
+slot27 = {
 	1,
 	2,
 	2,
 	2
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.PlayerPose
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.PlayerPose
+slot27 = {
 	1,
 	3,
 	2,
 	3
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.PetPose
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.PetPose
+slot27 = {
 	1,
 	4,
 	2,
 	4
 }
-slot22[slot23] = slot24
-slot23 = slot2.Funcs
-slot23 = slot23.Gaze
-slot24 = {
+slot25[slot26] = slot27
+slot26 = slot2.Funcs
+slot26 = slot26.Gaze
+slot27 = {
 	1,
 	6,
 	2,
 	6
 }
-slot22[slot23] = slot24
-slot2.Func2Area = slot22
+slot25[slot26] = slot27
+slot2.Func2Area = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-96, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -349,9 +376,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.findObjects = slot22
+slot2.findObjects = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = 0.4
 	slot0.defaultHiddenOpacity = slot1
@@ -510,82 +537,149 @@ slot22 = function(slot0)
 	slot1 = slot0.funcTabUList
 
 	slot2 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot3 = slot2.funcId
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot3 = FuncAssetType
+		slot4 = slot2.funcId
+		slot3 = slot3[slot4]
+		slot4 = PhotographyAssetRedDotUtils
+		slot4 = slot4.getFunctionPath
 		--- END OF BLOCK #0 ---
 
-		slot3 = if slot3 then
+		slot6 = if not slot3 then
 		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		slot6 = "none"
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-19, warpins: 2 ---
+		slot4 = slot4(slot6)
+		slot5 = pg
+		slot5 = slot5.global
+		slot5 = slot5.setPreViewRedDot
+		slot7 = slot4
+		slot8 = slot0
+
+		slot9 = function()
+			--- BLOCK #0 1-3, warpins: 1 ---
+			slot0 = assetType
+			--- END OF BLOCK #0 ---
+
+			slot0 = if not slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 4-7, warpins: 1 ---
+			slot0 = RedDotConst
+			slot0 = slot0.RedDotStyle
+			slot0 = slot0.NONE
+
+			return slot0
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 8-11, warpins: 2 ---
+			slot0 = PhotographyAssetRedDotUtils
+			slot0 = slot0.getRedDotStyle
+			slot2 = assetType
+
+			return slot0(slot2)
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		slot5(slot7, slot8, slot9)
+
+		slot5 = slot2.funcId
+		--- END OF BLOCK #2 ---
+
+		slot5 = if slot5 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #3 20-34, warpins: 1 ---
+		slot7 = slot0
+		slot5 = slot0.TryChangePage
+		slot8 = "FuncIcon"
+		slot9 = slot2.funcId
+
+		slot5(slot7, slot8, slot9)
+
+		slot5 = self
+		slot7 = slot5
+		slot5 = slot5.checkFuncLock
+		slot8 = slot2
+		slot5 = slot5(slot7, slot8)
+		slot8 = slot0
+		slot6 = slot0.TryChangePage
+		slot9 = "Lock"
+		--- END OF BLOCK #3 ---
+
+		slot5 = if slot5 then
+		JUMP TO BLOCK #4
 		else
 		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #1 4-18, warpins: 1 ---
-		slot5 = slot0
-		slot3 = slot0.TryChangePage
-		slot6 = "FuncIcon"
-		slot7 = slot2.funcId
-
-		slot3(slot5, slot6, slot7)
-
-		slot3 = self
-		slot5 = slot3
-		slot3 = slot3.checkFuncLock
-		slot6 = slot2
-		slot3 = slot3(slot5, slot6)
-		slot6 = slot0
-		slot4 = slot0.TryChangePage
-		slot7 = "Lock"
-		--- END OF BLOCK #1 ---
-
-		slot3 = if slot3 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 19-20, warpins: 1 ---
-		slot8 = 0
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #3 21-21, warpins: 1 ---
-		slot8 = 1
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 22-26, warpins: 2 ---
-		slot4(slot6, slot7, slot8)
-
-		slot0.visualInteractable = slot3
-		slot4 = not slot3
-		slot0.skipInListSwitch = slot4
+		--- BLOCK #4 35-36, warpins: 1 ---
+		slot10 = 0
 		--- END OF BLOCK #4 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 27-30, warpins: 1 ---
-		slot3 = true
-		slot0.skipInListSwitch = slot3
-		slot3 = false
-		slot0.visualInteractable = slot3
+		--- BLOCK #5 37-37, warpins: 1 ---
+		slot10 = 1
 
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 31-31, warpins: 2 ---
-		return
+		--- BLOCK #6 38-42, warpins: 2 ---
+		slot6(slot8, slot9, slot10)
+
+		slot0.visualInteractable = slot5
+		slot6 = not slot5
+		slot0.skipInListSwitch = slot6
 		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 43-46, warpins: 1 ---
+		slot5 = true
+		slot0.skipInListSwitch = slot5
+		slot5 = false
+		slot0.visualInteractable = slot5
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 47-48, warpins: 2 ---
+		return
+		--- END OF BLOCK #8 ---
 
 
 
@@ -761,7 +855,7 @@ slot22 = function(slot0)
 
 	slot2 = slot0.ctrl
 	slot4 = slot2
-	slot2 = slot2.bindHotKey
+	slot2 = slot2.bindHotKeyPerform
 	slot5 = "Photo/OpenPhotoFuncMenu"
 
 	slot6 = function()
@@ -1258,9 +1352,274 @@ slot22 = function(slot0)
 
 end
 
-slot2.initView = slot22
+slot2.initView = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-11, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.refreshRedDotState
+	slot5 = PhotographyAssetRedDotUtils
+	slot5 = slot5.getSubTabPath
+	slot7 = slot1
+	slot8 = slot2
+	MULTRES = slot5(slot7, slot8)
+
+	slot3(MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-24, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.refreshRedDotState
+	slot5 = PhotographyAssetRedDotUtils
+	slot5 = slot5.getFunctionPath
+	slot7 = slot1
+	MULTRES = slot5(slot7)
+
+	slot3(MULTRES)
+
+	slot3 = slot0.funcTabUList
+	slot5 = slot3
+	slot3 = slot3.RefreshList
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.onPhotoAssetViewed = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = slot0.funcTabUList
+	slot3 = slot1
+	slot1 = slot1.RefreshList
+
+	slot1(slot3)
+
+	slot1 = slot0.funcComps
+	slot2 = slot0.curSelectTab
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot2 = slot1.refreshAssetUnlockState
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.refreshAssetUnlockState
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #3 17-19, warpins: 1 ---
+	slot2 = slot1.refreshPoseFunc
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 20-22, warpins: 1 ---
+	slot2 = slot1.curPoseType
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-27, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.refreshPoseFunc
+	slot5 = slot1.curPoseType
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #6 28-30, warpins: 2 ---
+	slot2 = slot1.listSecondUList
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-35, warpins: 1 ---
+	slot2 = slot1.listSecondUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 36-38, warpins: 1 ---
+	slot2 = slot1.listUList
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-42, warpins: 1 ---
+	slot2 = slot1.listUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 43-45, warpins: 5 ---
+	slot2 = slot1.listFirstUList
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 46-49, warpins: 1 ---
+	slot2 = slot1.listFirstUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 50-52, warpins: 2 ---
+	slot2 = slot1.listTabUList
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 53-56, warpins: 1 ---
+	slot2 = slot1.listTabUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 57-60, warpins: 3 ---
+	slot2 = pairs
+	slot4 = FuncAssetType
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 61-68, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.refreshRedDotState
+	slot9 = PhotographyAssetRedDotUtils
+	slot9 = slot9.getFunctionPath
+	slot11 = slot6
+	MULTRES = slot9(slot11)
+
+	slot7(MULTRES)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 69-70, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 71-71, warpins: 1 ---
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot2.onPhotoAssetUnlockChanged = slot25
+
+slot25 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootComponent
@@ -1294,9 +1653,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.closePhotoMenu = slot22
+slot2.closePhotoMenu = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootComponent
@@ -1336,9 +1695,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.isMenuRaised = slot22
+slot2.isMenuRaised = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isMenuRaised
@@ -1473,9 +1832,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.refreshInputState = slot22
+slot2.refreshInputState = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.funcComps
 	--- END OF BLOCK #0 ---
@@ -1537,14 +1896,14 @@ slot22 = function(slot0)
 
 end
 
-slot2.refreshDIYCanFocusStick = slot22
+slot2.refreshDIYCanFocusStick = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.funcId
 	slot3 = PhotoFuncMenuUIComponent
 	slot3 = slot3.Funcs
-	slot3 = slot3.PlayerPose
+	slot3 = slot3.Template
 	--- END OF BLOCK #0 ---
 
 	if slot2 == slot3 then
@@ -1555,24 +1914,24 @@ slot22 = function(slot0, slot1)
 
 
 	--- BLOCK #1 7-13, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.controller
+	slot2 = slot0.ctrl
 	slot4 = slot2
-	slot2 = slot2.isInControlMainPlayer
+	slot2 = slot2.isHomelandMode
+	slot2 = slot2(slot4)
+	slot2 = not slot2
 
-	return slot2(slot4)
+	return slot2
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
 	--- BLOCK #2 14-19, warpins: 1 ---
 	slot2 = slot1.funcId
 	slot3 = PhotoFuncMenuUIComponent
 	slot3 = slot3.Funcs
-	slot3 = slot3.PetPose
+	slot3 = slot3.PlayerPose
 	--- END OF BLOCK #2 ---
 
 	if slot2 == slot3 then
@@ -1582,22 +1941,25 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 20-23, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.isUnlockPetPoseComp
+	--- BLOCK #3 20-26, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.controller
+	slot4 = slot2
+	slot2 = slot2.isInControlMainPlayer
 
 	return slot2(slot4)
 
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 24-29, warpins: 1 ---
+	--- BLOCK #4 27-32, warpins: 1 ---
 	slot2 = slot1.funcId
 	slot3 = PhotoFuncMenuUIComponent
 	slot3 = slot3.Funcs
-	slot3 = slot3.Weather
+	slot3 = slot3.PetPose
 	--- END OF BLOCK #4 ---
 
 	if slot2 == slot3 then
@@ -1607,30 +1969,55 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 30-32, warpins: 1 ---
+	--- BLOCK #5 33-36, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isUnlockPetPoseComp
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 37-42, warpins: 1 ---
+	slot2 = slot1.funcId
+	slot3 = PhotoFuncMenuUIComponent
+	slot3 = slot3.Funcs
+	slot3 = slot3.Weather
+	--- END OF BLOCK #6 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 43-45, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.isSceneWorld
 
 	return slot2()
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 33-34, warpins: 4 ---
+	--- BLOCK #8 46-47, warpins: 5 ---
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot2.checkFuncLock = slot22
+slot2.checkFuncLock = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -1678,9 +2065,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.checkCanPetChangePos = slot22
+slot2.checkCanPetChangePos = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1766,9 +2153,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.isUnlockPetPoseComp = slot22
+slot2.isUnlockPetPoseComp = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.funcTabUList
 	slot3 = slot1
@@ -1783,9 +2170,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.refreshLockState = slot22
+slot2.refreshLockState = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.funcId
 	slot3 = PhotoFuncMenuUIComponent
@@ -1900,9 +2287,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.showLockTip = slot22
+slot2.showLockTip = slot25
 
-slot22 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.hiddenKeys
 	slot3[slot1] = slot2
@@ -2093,9 +2480,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot2.setOpacity = slot22
+slot2.setOpacity = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.updateComponents
@@ -2109,9 +2496,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.update = slot22
+slot2.update = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.funcComps
 
@@ -2179,9 +2566,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.updateComponents = slot22
+slot2.updateComponents = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -2387,9 +2774,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.onRefreshPhotoType = slot22
+slot2.onRefreshPhotoType = slot25
 
-slot22 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0.funcTabUList
 	slot5 = slot3
@@ -2469,9 +2856,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot2.initFuncTabList = slot22
+slot2.initFuncTabList = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2583,9 +2970,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.refreshFunc = slot22
+slot2.refreshFunc = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -2598,9 +2985,134 @@ slot22 = function(slot0)
 
 end
 
-slot2.isShowCameraMode = slot22
+slot2.isShowCameraMode = slot25
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.camera
+	slot1 = slot1.photoCameraMode
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.getPhotoCameraMode = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.funcComps
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.funcComps
+	slot3 = slot0.Funcs
+	slot3 = slot3.Lens
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot3 = slot2.onScrollAdjust
+
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-13, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-21, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.onScrollAdjust
+	slot6 = slot1
+	slot7 = slot0.curSelectTab
+	slot8 = slot0.Funcs
+	slot8 = slot8.Lens
+	--- END OF BLOCK #5 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-23, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 24-24, warpins: 1 ---
+	slot7 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-26, warpins: 2 ---
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot2.scrollLens = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.getSelfEntity = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.showParamTipTimer
 	--- END OF BLOCK #0 ---
@@ -2636,7 +3148,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 		slot1 = slot1.showTipDuration
 		slot0 = slot0 + slot1
 		slot1 = Time
-		slot1 = slot1.secondCache
+		slot1 = slot1.realSecondCache
 		--- END OF BLOCK #1 ---
 
 		if slot0 < slot1 then
@@ -2704,7 +3216,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #2 11-34, warpins: 2 ---
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot0.lastShowParamTipTime = slot4
 	slot4 = slot0.view
 	slot4 = slot4.cameraMenuPanelUComponent
@@ -2781,9 +3293,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.showParamTip = slot22
+slot2.showParamTip = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnMenuUButton
@@ -2801,9 +3313,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.tryHandleCurOpenTab = slot22
+slot2.tryHandleCurOpenTab = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnMenuUButton
@@ -2817,9 +3329,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.tryDeSelectCurOpenTab = slot22
+slot2.tryDeSelectCurOpenTab = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2886,9 +3398,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.applyPreset = slot22
+slot2.applyPreset = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.funcComps
@@ -2937,9 +3449,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.saveToPreset = slot22
+slot2.saveToPreset = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.funcComps
 	slot2 = slot0.Funcs
@@ -2957,9 +3469,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.tryTriggerAllPetsAction = slot22
+slot2.tryTriggerAllPetsAction = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.funcComps
 	slot3 = slot0.Funcs
@@ -2978,9 +3490,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.onBeginPhoto = slot22
+slot2.onBeginPhoto = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.funcComps
 	slot3 = slot0.Funcs
@@ -2999,9 +3511,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.onEndPhoto = slot22
+slot2.onEndPhoto = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.funcComps
 	slot2 = slot0.Funcs
@@ -3019,9 +3531,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.deselectAllDIY = slot22
+slot2.deselectAllDIY = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.funcComps
 	slot3 = slot0.Funcs
@@ -3040,9 +3552,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.setPetVisible = slot22
+slot2.setPetVisible = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.funcComps
 	slot3 = slot0.Funcs
@@ -3059,9 +3571,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.getPetEntity = slot22
+slot2.getPetEntity = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.funcComps
 	slot2 = slot0.Funcs
@@ -3077,9 +3589,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.getCreatedPets = slot22
+slot2.getCreatedPets = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.funcComps
 	slot3 = slot0.Funcs
@@ -3096,9 +3608,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.createPresetPets = slot22
+slot2.createPresetPets = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.funcComps
 	slot3 = slot0.Funcs
@@ -3117,16 +3629,37 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.refreshFishEyeEffect = slot22
+slot2.refreshFishEyeEffect = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = slot0.funcComps
+	slot3 = slot0.Funcs
+	slot3 = slot3.PetPose
+	slot2 = slot2[slot3]
+	slot4 = slot2
+	slot2 = slot2.stopAllPetAction
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.stopAllPetAction = slot25
+
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.funcComps
 	slot2 = slot0.Funcs
 	slot2 = slot2.PetPose
 	slot1 = slot1[slot2]
 	slot3 = slot1
-	slot1 = slot1.stopAllPetAction
+	slot1 = slot1.resetAllPetAction
 
 	slot1(slot3)
 
@@ -3137,9 +3670,96 @@ slot22 = function(slot0)
 
 end
 
-slot2.stopAllPetAction = slot22
+slot2.resetAllPetAction = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.keepPetActionOnExit
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.shouldKeepPetActionOnExit = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = slot0.funcComps
+	slot2 = slot0.Funcs
+	slot2 = slot2.PlayerPose
+	slot1 = slot1[slot2]
+	slot3 = slot1
+	slot1 = slot1.pausePhotoSubject
+
+	slot1(slot3)
+
+	slot1 = slot0.funcComps
+	slot2 = slot0.Funcs
+	slot2 = slot2.PetPose
+	slot1 = slot1[slot2]
+	slot3 = slot1
+	slot1 = slot1.pausePhotoSubjects
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.pausePhotoSubjects = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = slot0.funcComps
+	slot2 = slot0.Funcs
+	slot2 = slot2.PlayerPose
+	slot1 = slot1[slot2]
+	slot3 = slot1
+	slot1 = slot1.resumePhotoSubject
+
+	slot1(slot3)
+
+	slot1 = slot0.funcComps
+	slot2 = slot0.Funcs
+	slot2 = slot2.PetPose
+	slot1 = slot1[slot2]
+	slot3 = slot1
+	slot1 = slot1.resumePhotoSubjects
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.resumePhotoSubjects = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.checkTimePause
+
+	return slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.checkTimePause = slot25
+
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.funcComps
 	slot2 = slot0.Funcs
@@ -3155,9 +3775,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.getPlayerCurAnimName = slot22
+slot2.getPlayerCurAnimName = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.funcComps
 	slot2 = slot0.Funcs
@@ -3175,9 +3795,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.hideLight = slot22
+slot2.hideLight = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-36, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryHandleCurOpenTab
@@ -3231,9 +3851,9 @@ slot22 = function(slot0)
 
 end
 
-slot2.onDestroy = slot22
+slot2.onDestroy = slot25
 
-slot22 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -3343,9 +3963,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot2.onInputDeviceChanged = slot22
+slot2.onInputDeviceChanged = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootComponent
@@ -3398,7 +4018,25 @@ slot22 = function(slot0)
 
 end
 
-slot2.needBlockGamepad = slot22
+slot2.needBlockGamepad = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = {}
+	slot2 = LensComp
+	slot2 = slot2.Tabs
+	slot2 = slot2.EXPOSURE
+	slot3 = true
+	slot1[slot2] = slot3
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.getHiddenLensTabs = slot25
 
 return slot2
 --- END OF BLOCK #0 ---

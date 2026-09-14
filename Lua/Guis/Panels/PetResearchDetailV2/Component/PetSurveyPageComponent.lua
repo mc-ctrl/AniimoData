@@ -1,78 +1,81 @@
---- BLOCK #0 1-135, warpins: 1 ---
+--- BLOCK #0 1-144, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Common.lume"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Data.pet_trait_data"
+slot3 = "Core.Common.lume"
 slot1 = slot1(slot3)
-slot2 = UIUtils
-slot3 = require
-slot5 = "Const.HotkeyConst"
-slot3 = slot3(slot5)
-slot4 = table
-slot4 = slot4.sort
-slot5 = require
-slot7 = "Const.Const"
-slot5 = slot5(slot7)
+slot2 = require
+slot4 = "Data.pet_trait_data"
+slot2 = slot2(slot4)
+slot3 = UIUtils
+slot4 = require
+slot6 = "Const.HotkeyConst"
+slot4 = slot4(slot6)
+slot5 = table
+slot5 = slot5.sort
 slot6 = require
-slot8 = "Core.Framework.Class"
+slot8 = "Const.Const"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Helper.UIComponent"
+slot9 = "Core.Framework.Class"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.ability_param_data"
+slot10 = "Guis.Helper.UIComponent"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.pet_avatar_data"
+slot11 = "Data.ability_param_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.item_source_data"
+slot12 = "Data.pet_avatar_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.pet_form_text_data"
+slot13 = "Data.item_source_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_character_data"
+slot14 = "Data.pet_form_text_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_config_data"
+slot15 = "Data.pet_character_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.pet_research_result_data"
+slot16 = "Data.pet_config_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Utils.LuaUIUtils"
+slot17 = "Data.pet_research_result_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Guis.Utils.PetResearchUtils"
+slot18 = "Utils.LuaUIUtils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Common.Math.Mathf"
+slot19 = "Guis.Utils.PetResearchUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.pet_data"
+slot20 = "Common.Math.Mathf"
 slot18 = slot18(slot20)
-slot19 = slot6.LightClass
-slot21 = "PetSurveyPageComponent"
-slot22 = slot7
-slot19 = slot19(slot21, slot22)
-slot20 = require
-slot22 = "Utils.ClientTextUtils"
-slot20 = slot20(slot22)
-slot21 = 1
-slot22 = 2
-slot23 = 3
-slot24 = 0
-slot25 = 1
-slot26 = {
+slot19 = require
+slot21 = "Data.pet_data"
+slot19 = slot19(slot21)
+slot20 = slot7.LightClass
+slot22 = "PetSurveyPageComponent"
+slot23 = slot8
+slot20 = slot20(slot22, slot23)
+slot21 = require
+slot23 = "Utils.ClientTextUtils"
+slot21 = slot21(slot23)
+slot22 = 1
+slot23 = 2
+slot24 = 3
+slot25 = 0
+slot26 = 1
+slot27 = {
 	3,
 	3,
 	2
 }
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-175, warpins: 1 ---
+slot28 = function(slot0)
+	--- BLOCK #0 1-181, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -247,6 +250,12 @@ slot27 = function(slot0)
 	slot4 = "widgetIconUImage"
 	slot1 = slot1(slot3, slot4)
 	slot0.widgetIconUImage = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "buttonDragUpdateListener"
+	slot1 = slot1(slot3, slot4)
+	slot0.dragRotationDragUpdateListener = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -255,9 +264,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.findObjects = slot27
+slot20.findObjects = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.templateId
 	--- END OF BLOCK #0 ---
@@ -286,10 +295,10 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.getPetLabelByFormSelect = slot27
+slot20.getPetLabelByFormSelect = slot28
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot28 = function(slot0)
+	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = true
 	slot0.lineVisible = slot1
 	slot1 = slot0.listElementUList
@@ -350,6 +359,16 @@ slot27 = function(slot0)
 	slot1 = slot1.height
 	slot1 = slot1 * 0.5
 	slot0.screenHeightHalf = slot1
+	slot3 = slot0
+	slot1 = slot0.setSurveyDragEnabled
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.initSurveyDragRotation
+
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -358,9 +377,207 @@ slot27 = function(slot0)
 
 end
 
-slot19.initView = slot27
+slot20.initView = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.dragRotationDragUpdateListener
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-12, warpins: 1 ---
+	slot1 = slot0.dragRotationDragUpdateListener
+
+	slot2 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.surveyDragEnabled
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.isPlayingSurveyAction
+
+		--- END OF BLOCK #1 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 10-13, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.isSurveyRotating
+		--- END OF BLOCK #3 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 14-21, warpins: 1 ---
+		slot2 = self
+		slot3 = true
+		slot2.isSurveyRotating = slot3
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.visibleAllLineOnRotation
+		slot5 = false
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 22-29, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.ctrl
+		slot2 = slot2.petScene
+		slot4 = slot2
+		slot2 = slot2.rotateSurveyPet
+		slot5 = slot0
+
+		slot2(slot4, slot5)
+
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot1.luaDragUpdate = slot2
+	slot1 = slot0.dragRotationDragUpdateListener
+
+	slot2 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.isPlayingSurveyAction
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-18, warpins: 2 ---
+		slot0 = self
+		slot1 = false
+		slot0.isSurveyRotating = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.lineToSkeleton
+
+		slot0(slot2)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.visibleAllLineOnRotation
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaEndDrag = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-13, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot20.initSurveyDragRotation = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0.surveyDragEnabled = slot1
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = false
+	slot0.isSurveyRotating = slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot20.setSurveyDragEnabled = slot28
+
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -476,14 +693,31 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.switchLabelVisible = slot27
+slot20.switchLabelVisible = slot28
 
-slot27 = function(slot0, slot1)
-	--- BLOCK #0 1-31, warpins: 1 ---
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-44, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.petScene
+	slot4 = slot2
+	slot2 = slot2.clearPetPageAction
+
+	slot2(slot4)
+
 	slot2 = slot0.ctrl
 	slot4 = slot2
 	slot2 = slot2.setPageTitle
 	slot5 = "TITLE_SURVEY"
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+	slot0.isSelectedPage = slot2
+	slot2 = false
+	slot0.isPlayingSurveyAction = slot2
+	slot4 = slot0
+	slot2 = slot0.setSurveyDragEnabled
+	slot5 = false
 
 	slot2(slot4, slot5)
 
@@ -551,7 +785,7 @@ slot27 = function(slot0, slot1)
 	slot6 = slot6.SURVEY
 
 	slot7 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-16, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.lineToSkeleton
@@ -562,6 +796,14 @@ slot27 = function(slot0, slot1)
 		slot2 = slot0
 		slot0 = slot0.visibleLineInPlayable
 		slot3 = true
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setSurveyDragEnabled
+		slot3 = self
+		slot3 = slot3.isSelectedPage
 
 		slot0(slot2, slot3)
 
@@ -581,15 +823,15 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.onSelectThisPage = slot27
+slot20.onSelectThisPage = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.formName
 	slot4 = LuaUIUtils
-	slot4 = slot4.getPetFormName
+	slot4 = slot4.getPetFormNameByPrototypeId
 	slot6 = slot0.model
 	slot6 = slot6.formPetTemplateId
 	MULTRES = slot4(slot6)
@@ -600,7 +842,7 @@ slot27 = function(slot0)
 	slot1 = slot1.setText
 	slot3 = slot0.formTxtName
 	slot4 = LuaUIUtils
-	slot4 = slot4.getPetFormName
+	slot4 = slot4.getPetFormNameByPrototypeId
 	slot6 = slot0.model
 	slot6 = slot6.formPetTemplateId
 	MULTRES = slot4(slot6)
@@ -640,10 +882,27 @@ slot27 = function(slot0)
 
 end
 
-slot19.refreshFormName = slot27
+slot20.refreshFormName = slot28
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot28 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot1 = false
+	slot0.isSelectedPage = slot1
+	slot1 = false
+	slot0.isPlayingSurveyAction = slot1
+	slot3 = slot0
+	slot1 = slot0.setSurveyDragEnabled
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.ctrl
+	slot1 = slot1.petScene
+	slot3 = slot1
+	slot1 = slot1.clearPetPageAction
+
+	slot1(slot3)
+
 	slot1 = slot0.ctrl
 	slot1 = slot1.surveyForm
 	--- END OF BLOCK #0 ---
@@ -655,7 +914,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #1 5-9, warpins: 1 ---
+	--- BLOCK #1 18-22, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.surveyForm
 	slot3 = slot1
@@ -668,7 +927,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -676,9 +935,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.onDeselectThisTab = slot27
+slot20.onDeselectThisTab = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -687,9 +946,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.refreshPageResearchPoint = slot27
+slot20.refreshPageResearchPoint = slot28
 
-slot27 = function(slot0, slot1, slot2, slot3)
+slot28 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -921,9 +1180,9 @@ slot27 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot19.renderFormList = slot27
+slot20.renderFormList = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -977,10 +1236,37 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.setPetBaseInfo = slot27
+slot20.setPetBaseInfo = slot28
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot28 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = false
+	slot0.isSelectedPage = slot1
+	slot1 = false
+	slot0.isPlayingSurveyAction = slot1
+	slot1 = slot0.dragRotationDragUpdateListener
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-13, warpins: 1 ---
+	slot1 = slot0.dragRotationDragUpdateListener
+	slot2 = nil
+	slot1.luaDragUpdate = slot2
+	slot1 = slot0.dragRotationDragUpdateListener
+	slot2 = nil
+	slot1.luaEndDrag = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-27, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.clearDelayShowTimer
 
@@ -1003,58 +1289,58 @@ slot27 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot19.onDestroy = slot27
+slot20.onDestroy = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-38, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.hideAllTraitLabel
 
 	slot1(slot3)
 
-	slot1 = slot0.templateId
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.petHandbookMap
-	slot4 = slot2
-	slot2 = slot2.getInfo
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.petHandbookMap
+	slot3 = slot1
+	slot1 = slot1.getInfo
+	slot4 = slot0.model
+	slot4 = slot4.baseTemplateId
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot0
+	slot2 = slot0.getPetTraitData
 	slot5 = slot1
 	slot2 = slot2(slot4, slot5)
-	slot5 = slot0
-	slot3 = slot0.getPetTraitData
-	slot6 = slot2
-	slot3 = slot3(slot5, slot6)
-	slot0.traitDatas = slot3
-	slot5 = slot0
-	slot3 = slot0.clearDelayShowTimer
+	slot0.traitDatas = slot2
+	slot4 = slot0
+	slot2 = slot0.clearDelayShowTimer
 
-	slot3(slot5)
+	slot2(slot4)
 
-	slot5 = slot0
-	slot3 = slot0.clearShowTraitTimer
+	slot4 = slot0
+	slot2 = slot0.clearShowTraitTimer
 
-	slot3(slot5)
+	slot2(slot4)
 
-	slot3 = {}
-	slot0.traitItemNodes = slot3
-	slot3 = true
-	slot0.inSequence = slot3
-	slot5 = slot0
-	slot3 = slot0.refreshPageResearchPoint
+	slot2 = {}
+	slot0.traitItemNodes = slot2
+	slot2 = true
+	slot0.inSequence = slot2
+	slot4 = slot0
+	slot2 = slot0.refreshPageResearchPoint
 
-	slot3(slot5)
+	slot2(slot4)
 
-	slot3 = slot0.ctrl
-	slot5 = slot3
-	slot3 = slot3.startTimer
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.startTimer
 
-	slot6 = function()
+	slot5 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = ipairs
 		slot2 = self
@@ -1101,9 +1387,9 @@ slot27 = function(slot0)
 
 	end
 
-	slot7 = 0.3
-	slot3 = slot3(slot5, slot6, slot7)
-	slot0.delayShowTimer = slot3
+	slot6 = 0.3
+	slot2 = slot2(slot4, slot5, slot6)
+	slot0.delayShowTimer = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1112,9 +1398,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.refreshTraitLabel = slot27
+slot20.refreshTraitLabel = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = slot0.traitDatas
@@ -1197,7 +1483,7 @@ slot27 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 47-73, warpins: 1 ---
+	--- BLOCK #5 47-78, warpins: 1 ---
 	slot10 = slot7
 	slot8 = slot7.Find
 	slot11 = "Lock"
@@ -1214,25 +1500,30 @@ slot27 = function(slot0)
 	slot11 = slot9.GetRefValue
 	slot14 = "lineTransform"
 	slot11 = slot11(slot13, slot14)
-	slot14 = slot9
-	slot12 = slot9.GetRefValue
-	slot15 = "iconViewUImage"
-	slot12 = slot12(slot14, slot15)
-	slot15 = slot0
-	slot13 = slot0.setLabelLinePoint
-	slot16 = slot12
-	slot17 = slot5.skeleton
-	slot18 = slot10
-	slot19 = slot11
+	slot14 = slot0
+	slot12 = slot0.getLockDetailReferences
+	slot15 = slot9
+	slot16 = slot5.isMirror
+	slot12 = slot12(slot14, slot15, slot16)
+	slot15 = slot12
+	slot13 = slot12.GetRefValue
+	slot16 = "iconViewUImage"
+	slot13 = slot13(slot15, slot16)
+	slot16 = slot0
+	slot14 = slot0.setLabelLinePoint
+	slot17 = slot13
+	slot18 = slot5.skeleton
+	slot19 = slot10
+	slot20 = slot11
 
-	slot13(slot15, slot16, slot17, slot18, slot19)
+	slot14(slot16, slot17, slot18, slot19, slot20)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 74-75, warpins: 5 ---
+	--- BLOCK #6 79-80, warpins: 5 ---
 	--- END OF BLOCK #6 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1240,7 +1531,7 @@ slot27 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 76-76, warpins: 1 ---
+	--- BLOCK #7 81-81, warpins: 1 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -1248,9 +1539,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.lineToSkeleton = slot27
+slot20.lineToSkeleton = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = 1
 	slot3 = 8
@@ -1301,9 +1592,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.visibleAllLineOnRotation = slot27
+slot20.visibleAllLineOnRotation = slot28
 
-slot27 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -1330,9 +1621,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot19.visibleLineAlpha = slot27
+slot20.visibleLineAlpha = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.delayShowTimer
 	--- END OF BLOCK #0 ---
@@ -1368,9 +1659,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.clearDelayShowTimer = slot27
+slot20.clearDelayShowTimer = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.showTraitTimer
 	--- END OF BLOCK #0 ---
@@ -1405,9 +1696,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.clearShowTraitTimer = slot27
+slot20.clearShowTraitTimer = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.traitItemNodes
 	slot2 = #slot2
@@ -1504,9 +1795,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.showTraitLabelSequence = slot27
+slot20.showTraitLabelSequence = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = UIUtils
 	slot2 = slot2.WorldToScreenPoint
@@ -1676,9 +1967,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.invokeVxEvent = slot27
+slot20.invokeVxEvent = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = 1
 	slot2 = 8
@@ -1717,9 +2008,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.hideAllTraitLabel = slot27
+slot20.hideAllTraitLabel = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.positionDefault
 
@@ -1910,10 +2201,47 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.setTraitLabel = slot27
+slot20.setTraitLabel = slot28
 
-slot27 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-66, warpins: 1 ---
+slot28 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "detailLObjectReference"
+
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-10, warpins: 2 ---
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "detailRObjectReference"
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot20.getLockDetailReferences = slot28
+
+slot28 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-31, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.TryChangePage
 	slot6 = "State"
@@ -1937,152 +2265,210 @@ slot27 = function(slot0, slot1, slot2)
 	slot6 = slot4.GetRefValue
 	slot9 = "lineTransform"
 	slot6 = slot6(slot8, slot9)
-	slot9 = slot4
-	slot7 = slot4.GetRefValue
-	slot10 = "txtNameUText"
-	slot7 = slot7(slot9, slot10)
+	slot9 = slot0
+	slot7 = slot0.getLockDetailReferences
+	slot10 = slot4
+	slot11 = slot2.isMirror
+	slot7 = slot7(slot9, slot10, slot11)
 	slot10 = slot4
 	slot8 = slot4.GetRefValue
-	slot11 = "iconViewUImage"
-	slot8 = slot8(slot10, slot11)
-	slot11 = slot4
-	slot9 = slot4.GetRefValue
-	slot12 = "iconSeekUWidget"
-	slot9 = slot9(slot11, slot12)
-	slot12 = slot4
-	slot10 = slot4.GetRefValue
-	slot13 = "detailUButton"
-	slot10 = slot10(slot12, slot13)
-	slot13 = slot4
-	slot11 = slot4.GetRefValue
-	slot14 = "txtHowUText"
-	slot11 = slot11(slot13, slot14)
-	slot14 = slot4
-	slot12 = slot4.GetRefValue
-	slot15 = "pointNumberUSDFText"
-	slot12 = slot12(slot14, slot15)
-	slot15 = slot4
-	slot13 = slot4.GetRefValue
-	slot16 = "btnTooltipsUButton"
-	slot13 = slot13(slot15, slot16)
-	slot16 = slot6
-	slot14 = slot6.GetComponent
-	slot17 = "UWidget"
-	slot14 = slot14(slot16, slot17)
-	slot16 = slot14
-	slot14 = slot14.SetActiveFastest
-	slot17 = false
-
-	slot14(slot16, slot17)
-
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot12
-	slot17 = "+"
-	slot18 = PetResearchUtils
-	slot18 = slot18.getRewardResearchPoint
-	slot20 = slot2.reward
+	slot11 = slot2.isMirror
 	--- END OF BLOCK #0 ---
 
-	slot20 = if not slot20 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 67-67, warpins: 1 ---
-	slot20 = 0
+	--- BLOCK #1 32-33, warpins: 1 ---
+	slot11 = "detailLUWidget"
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 68-100, warpins: 2 ---
-	MULTRES = slot18(slot20)
-
-	slot14(slot16, slot17, MULTRES)
-
-	slot16 = slot5
-	slot14 = slot5.GetComponent
-	slot17 = "UWidget"
-	slot14 = slot14(slot16, slot17)
-	slot16 = slot14
-	slot14 = slot14.SetActive
-	slot17 = slot0.lineVisible
-
-	slot14(slot16, slot17)
-
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot7
-	slot17 = pg
-	slot17 = slot17.getLocalizationText
-	slot19 = slot2.clueDesc
-	MULTRES = slot17(slot19)
-
-	slot14(slot16, MULTRES)
-
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot11
-	slot17 = pg
-	slot17 = slot17.getLocalizationText
-	slot19 = slot2.text
-	MULTRES = slot17(slot19)
-
-	slot14(slot16, MULTRES)
-
-	slot14 = slot2.clueIcon
-	slot8.url = slot14
-	slot14 = slot2.type
-	slot14 = not slot14
-	slot15 = LABEL_STYLE_TYPE_1
+	--- BLOCK #2 34-34, warpins: 1 ---
+	slot11 = "detailRUWidget"
 	--- END OF BLOCK #2 ---
 
-	if slot14 == slot15 then
-	JUMP TO BLOCK #3
-	else
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 35-40, warpins: 2 ---
+	slot8 = slot8(slot10, slot11)
+	slot11 = slot4
+	slot9 = slot4.GetRefValue
+	slot12 = slot2.isMirror
+	--- END OF BLOCK #3 ---
+
+	slot12 = if slot12 then
 	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 101-105, warpins: 1 ---
-	slot14 = LuaUIUtils
-	slot14 = slot14.setUIViewVisible
-	slot16 = slot5
-	slot17 = false
+	--- BLOCK #4 41-42, warpins: 1 ---
+	slot12 = "detailRUWidget"
+	--- END OF BLOCK #4 ---
 
-	slot14(slot16, slot17)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 106-124, warpins: 2 ---
-	slot16 = slot0
-	slot14 = slot0.setLabelMirror
-	slot17 = slot3
-	slot18 = slot2.isMirror
+	--- BLOCK #5 43-43, warpins: 1 ---
+	slot12 = "detailLUWidget"
+	--- END OF BLOCK #5 ---
 
-	slot14(slot16, slot17, slot18)
+	FLOW; TARGET BLOCK #6
 
-	slot16 = slot10
-	slot14 = slot10.TryChangePage
-	slot17 = "SwitchText"
-	slot18 = 0
 
-	slot14(slot16, slot17, slot18)
+	--- BLOCK #6 44-89, warpins: 2 ---
+	slot9 = slot9(slot11, slot12)
+	slot12 = slot7
+	slot10 = slot7.GetRefValue
+	slot13 = "txtWhyUSDFText"
+	slot10 = slot10(slot12, slot13)
+	slot13 = slot7
+	slot11 = slot7.GetRefValue
+	slot14 = "txtHowUSDFText"
+	slot11 = slot11(slot13, slot14)
+	slot14 = slot7
+	slot12 = slot7.GetRefValue
+	slot15 = "iconViewUImage"
+	slot12 = slot12(slot14, slot15)
+	slot15 = slot7
+	slot13 = slot7.GetRefValue
+	slot16 = "pointNumberUSDFText"
+	slot13 = slot13(slot15, slot16)
+	slot16 = slot7
+	slot14 = slot7.GetRefValue
+	slot17 = "btnTooltipsUButton"
+	slot14 = slot14(slot16, slot17)
+	slot17 = slot9
+	slot15 = slot9.SetActive
+	slot18 = false
 
-	slot16 = slot10
-	slot14 = slot10.TryChangePage
-	slot17 = "ShowJumpIcon"
-	slot18 = 0
+	slot15(slot17, slot18)
 
-	slot14(slot16, slot17, slot18)
+	slot17 = slot8
+	slot15 = slot8.SetActive
+	slot18 = true
 
-	slot14 = function(slot0)
+	slot15(slot17, slot18)
+
+	slot17 = slot6
+	slot15 = slot6.GetComponent
+	slot18 = "UWidget"
+	slot15 = slot15(slot17, slot18)
+	slot17 = slot15
+	slot15 = slot15.SetActiveFastest
+	slot18 = false
+
+	slot15(slot17, slot18)
+
+	slot15 = ClientTextUtils
+	slot15 = slot15.setText
+	slot17 = slot13
+	slot18 = "+"
+	slot19 = PetResearchUtils
+	slot19 = slot19.getRewardResearchPoint
+	slot21 = slot2.reward
+	--- END OF BLOCK #6 ---
+
+	slot21 = if not slot21 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 90-90, warpins: 1 ---
+	slot21 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 91-123, warpins: 2 ---
+	MULTRES = slot19(slot21)
+
+	slot15(slot17, slot18, MULTRES)
+
+	slot17 = slot5
+	slot15 = slot5.GetComponent
+	slot18 = "UWidget"
+	slot15 = slot15(slot17, slot18)
+	slot17 = slot15
+	slot15 = slot15.SetActive
+	slot18 = slot0.lineVisible
+
+	slot15(slot17, slot18)
+
+	slot15 = ClientTextUtils
+	slot15 = slot15.setText
+	slot17 = slot10
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot2.clueDesc
+	MULTRES = slot18(slot20)
+
+	slot15(slot17, MULTRES)
+
+	slot15 = ClientTextUtils
+	slot15 = slot15.setText
+	slot17 = slot11
+	slot18 = pg
+	slot18 = slot18.getLocalizationText
+	slot20 = slot2.text
+	MULTRES = slot18(slot20)
+
+	slot15(slot17, MULTRES)
+
+	slot15 = slot2.clueIcon
+	slot12.url = slot15
+	slot15 = slot2.type
+	slot15 = not slot15
+	slot16 = LABEL_STYLE_TYPE_1
+	--- END OF BLOCK #8 ---
+
+	if slot15 == slot16 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 124-128, warpins: 1 ---
+	slot15 = LuaUIUtils
+	slot15 = slot15.setUIViewVisible
+	slot17 = slot5
+	slot18 = false
+
+	slot15(slot17, slot18)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 129-142, warpins: 2 ---
+	slot17 = slot8
+	slot15 = slot8.TryChangePage
+	slot18 = "SwitchText"
+	slot19 = 0
+
+	slot15(slot17, slot18, slot19)
+
+	slot17 = slot8
+	slot15 = slot8.TryChangePage
+	slot18 = "ShowJumpIcon"
+	slot19 = 0
+
+	slot15(slot17, slot18, slot19)
+
+	slot15 = function(slot0)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = traitData
 		slot1 = slot1.text
@@ -2095,7 +2481,7 @@ slot27 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 5-16, warpins: 1 ---
+		--- BLOCK #1 5-15, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.switchClue
@@ -2105,17 +2491,16 @@ slot27 = function(slot0, slot1, slot2)
 		slot6 = btnTooltipsUButton
 		slot7 = traitData
 		slot7 = slot7.clueSeek
-		slot8 = iconSeek6UWidget
-		slot9 = slot0
+		slot8 = slot0
 
-		slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+		slot1(slot3, slot4, slot5, slot6, slot7, slot8)
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 17-17, warpins: 2 ---
+		--- BLOCK #2 16-16, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -2123,18 +2508,18 @@ slot27 = function(slot0, slot1, slot2)
 
 	end
 
-	slot10.luaClick = slot14
+	slot8.luaClick = slot15
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot19.setLockItem = slot27
+slot20.setLockItem = slot28
 
-slot27 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot28 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot8 = slot1
 	slot6 = slot1.TryGetCurrentPage
@@ -2265,9 +2650,9 @@ slot27 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot19.switchClue = slot27
+slot20.switchClue = slot28
 
-slot27 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.traitTimers
 	slot3 = slot3[slot1]
@@ -2334,9 +2719,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot19.autoSwitchClue = slot27
+slot20.autoSwitchClue = slot28
 
-slot27 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.traitTimers
@@ -2350,7 +2735,7 @@ slot27 = function(slot0)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -2394,9 +2779,9 @@ slot27 = function(slot0)
 
 end
 
-slot19.clearAllTraitTimer = slot27
+slot20.clearAllTraitTimer = slot28
 
-slot27 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2441,9 +2826,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot19.setLabelMirror = slot27
+slot20.setLabelMirror = slot28
 
-slot27 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-83, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.Find
@@ -2962,7 +3347,47 @@ slot27 = function(slot0, slot1, slot2)
 
 	--- BLOCK #24 258-259, warpins: 1 ---
 	slot22 = function()
-		--- BLOCK #0 1-39, warpins: 1 ---
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.surveyDragEnabled
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.isPlayingSurveyAction
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 10-40, warpins: 1 ---
+		slot0 = self
+		slot1 = true
+		slot0.isPlayingSurveyAction = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setSurveyDragEnabled
+		slot3 = false
+
+		slot0(slot2, slot3)
+
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.switchTraitNodeVisible
@@ -2986,75 +3411,144 @@ slot27 = function(slot0, slot1, slot2)
 		slot0 = slot0.ctrl
 		slot0 = slot0.petScene
 		slot2 = slot0
-		slot0 = slot0.playSurveyAction
-		slot3 = nil
-		slot4 = traitData
-		slot4 = slot4.traitsAnimation
+		slot0 = slot0.resetSurveyPetRotation
 
-		slot5 = function()
-			--- BLOCK #0 1-29, warpins: 1 ---
+		slot3 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
 			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.switchTraitNodeVisible
-			slot3 = true
-			slot4 = labelNode
+			slot0 = slot0.isSelectedPage
+			--- END OF BLOCK #0 ---
 
-			slot0(slot2, slot3, slot4)
+			slot0 = if not slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-8, warpins: 1 ---
+			slot0 = self
+			slot1 = false
+			slot0.isPlayingSurveyAction = slot1
+			--- END OF BLOCK #1 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+			--- BLOCK #2 9-32, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.ctrl
+			slot0 = slot0.petScene
+			slot2 = slot0
+			slot0 = slot0.playSurveyAction
+			slot3 = nil
+			slot4 = traitData
+			slot4 = slot4.traitsAnimation
+
+			slot5 = function()
+				--- BLOCK #0 1-42, warpins: 1 ---
+				slot0 = self
+				slot1 = false
+				slot0.isPlayingSurveyAction = slot1
+				slot0 = self
+				slot2 = slot0
+				slot0 = slot0.switchTraitNodeVisible
+				slot3 = true
+				slot4 = labelNode
+
+				slot0(slot2, slot3, slot4)
+
+				slot0 = self
+				slot0 = slot0.ctrl
+				slot0 = slot0.petScene
+				slot2 = slot0
+				slot0 = slot0.enableSurveyCameraMove
+				slot3 = false
+
+				slot0(slot2, slot3)
+
+				slot0 = self
+				slot0 = slot0.ctrl
+				slot0 = slot0.petScene
+				slot2 = slot0
+				slot0 = slot0.moveCameraPosToOrigin
+
+				slot0(slot2)
+
+				slot0 = self
+				slot2 = slot0
+				slot0 = slot0.lineToSkeleton
+
+				slot0(slot2)
+
+				slot0 = pointTransform
+				slot2 = slot0
+				slot0 = slot0.GetComponent
+				slot3 = "UWidget"
+				slot0 = slot0(slot2, slot3)
+				slot2 = slot0
+				slot0 = slot0.SetActiveFastest
+				slot3 = true
+
+				slot0(slot2, slot3)
+
+				slot0 = self
+				slot2 = slot0
+				slot0 = slot0.setSurveyDragEnabled
+				slot3 = self
+				slot3 = slot3.isSelectedPage
+
+				slot0(slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			slot0(slot2, slot3, slot4, slot5)
 
 			slot0 = self
 			slot0 = slot0.ctrl
 			slot0 = slot0.petScene
 			slot2 = slot0
 			slot0 = slot0.enableSurveyCameraMove
-			slot3 = false
-
-			slot0(slot2, slot3)
-
-			slot0 = self
-			slot0 = slot0.ctrl
-			slot0 = slot0.petScene
-			slot2 = slot0
-			slot0 = slot0.moveCameraPosToOrigin
-
-			slot0(slot2)
-
-			slot0 = pointTransform
-			slot2 = slot0
-			slot0 = slot0.GetComponent
-			slot3 = "UWidget"
-			slot0 = slot0(slot2, slot3)
-			slot2 = slot0
-			slot0 = slot0.SetActiveFastest
 			slot3 = true
+			slot4 = traitData
+			slot4 = slot4.cameraOffsetCondition
+			slot5 = traitData
+			slot5 = slot5.cameraOffset
+			slot6 = traitData
+			slot6 = slot6.cameraOffsetTime
 
-			slot0(slot2, slot3)
+			slot0(slot2, slot3, slot4, slot5, slot6)
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 33-33, warpins: 2 ---
+			return
+			--- END OF BLOCK #3 ---
 
 
 
 		end
 
-		slot0(slot2, slot3, slot4, slot5)
-
-		slot0 = self
-		slot0 = slot0.ctrl
-		slot0 = slot0.petScene
-		slot2 = slot0
-		slot0 = slot0.enableSurveyCameraMove
-		slot3 = true
-		slot4 = traitData
-		slot4 = slot4.cameraOffsetCondition
-		slot5 = traitData
-		slot5 = slot5.cameraOffset
-		slot6 = traitData
-		slot6 = slot6.cameraOffsetTime
-
-		slot0(slot2, slot3, slot4, slot5, slot6)
+		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 41-41, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
 
 
 
@@ -3075,9 +3569,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot19.setUnlockSkeletonItem = slot27
+slot20.setUnlockSkeletonItem = slot28
 
-slot27 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.lineVisible = slot1
 	slot2 = pairs
@@ -3154,9 +3648,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.visibleLineInPlayable = slot27
+slot20.visibleLineInPlayable = slot28
 
-slot27 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot0.traitItemNodes
@@ -3170,7 +3664,7 @@ slot27 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -3283,9 +3777,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot19.switchTraitNodeVisible = slot27
+slot20.switchTraitNodeVisible = slot28
 
-slot27 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.Find
@@ -3339,9 +3833,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot19.setUnlockImgItem = slot27
+slot20.setUnlockImgItem = slot28
 
-slot27 = function(slot0, slot1, slot2, slot3, slot4)
+slot28 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3504,13 +3998,14 @@ slot27 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot19.setLabelLinePoint = slot27
+slot20.setLabelLinePoint = slot28
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot28 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PetResearchUtils
 	slot1 = slot1.getPetSurveyPoint
-	slot3 = slot0.templateId
+	slot3 = slot0.model
+	slot3 = slot3.baseTemplateId
 
 	return slot1(slot3)
 	--- END OF BLOCK #0 ---
@@ -3519,11 +4014,12 @@ slot27 = function(slot0)
 
 end
 
-slot19.getSurveyResearchPoint = slot27
+slot20.getSurveyResearchPoint = slot28
 
-slot27 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = slot0.templateId
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = slot0.model
+	slot2 = slot2.baseTemplateId
 	slot3 = PetTraitData
 	slot3 = slot3[slot2]
 	--- END OF BLOCK #0 ---
@@ -3535,14 +4031,14 @@ slot27 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-16, warpins: 2 ---
+	--- BLOCK #2 8-17, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot4 = slot4.petHandbookMap
@@ -3557,7 +4053,7 @@ slot27 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #3 17-31, warpins: 1 ---
+	--- BLOCK #3 18-32, warpins: 1 ---
 	slot11 = Lume
 	slot11 = slot11.clone
 	slot13 = slot10
@@ -3580,7 +4076,7 @@ slot27 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 32-36, warpins: 1 ---
+	--- BLOCK #4 33-37, warpins: 1 ---
 	slot13 = Const
 	slot13 = slot13.PET_RESEARCH
 	slot13 = slot13.STATUS_SHOW
@@ -3593,21 +4089,21 @@ slot27 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 37-38, warpins: 1 ---
+	--- BLOCK #5 38-39, warpins: 1 ---
 	slot13 = false
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 39-39, warpins: 1 ---
+	--- BLOCK #6 40-40, warpins: 1 ---
 	slot13 = true
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 40-43, warpins: 2 ---
+	--- BLOCK #7 41-44, warpins: 2 ---
 	slot11.unlock = slot13
 	slot13 = slot11.unlock
 	--- END OF BLOCK #7 ---
@@ -3619,7 +4115,7 @@ slot27 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 44-52, warpins: 1 ---
+	--- BLOCK #8 45-53, warpins: 1 ---
 	slot15 = slot4
 	slot13 = slot4.hasParams
 	slot16 = Const
@@ -3634,7 +4130,7 @@ slot27 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 53-55, warpins: 2 ---
+	--- BLOCK #9 54-56, warpins: 2 ---
 	slot13 = #slot5
 	slot13 = slot13 + 1
 	slot5[slot13] = slot11
@@ -3643,7 +4139,7 @@ slot27 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 56-57, warpins: 3 ---
+	--- BLOCK #10 57-58, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
@@ -3651,7 +4147,7 @@ slot27 = function(slot0, slot1)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 58-63, warpins: 1 ---
+	--- BLOCK #11 59-64, warpins: 1 ---
 	slot6 = sort
 	slot8 = slot5
 
@@ -3732,9 +4228,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot19.getPetTraitData = slot27
+slot20.getPetTraitData = slot28
 
-return slot19
+return slot20
 --- END OF BLOCK #0 ---
 
 

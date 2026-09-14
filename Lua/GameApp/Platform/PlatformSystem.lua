@@ -1,4 +1,4 @@
---- BLOCK #0 1-32, warpins: 1 ---
+--- BLOCK #0 1-38, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -9,13 +9,13 @@ slot2 = require
 slot4 = "SDK.Platform.PlatformIdentityUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "SDK.Platform.PlatformLogger"
+slot5 = "SDK.Platform.PlatformShellActivityService"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "SDK.Platform.PlatformShellActivityService"
+slot6 = "SDK.Platform.PlatformShellJoinService"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "SDK.Platform.PlatformShellJoinService"
+slot7 = "SDK.Platform.PlatformUGCService"
 slot5 = slot5(slot7)
 slot6 = slot0.LightClass
 slot8 = "PlatformSystem"
@@ -121,9 +121,12 @@ slot7 = function()
 
 end
 
-slot8 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = getPlatformBridgeLuaFacade
+slot6.getPlatformBridgeLuaFacade = slot7
+
+slot7 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = PlatformSystem
+	slot0 = slot0.getPlatformBridgeLuaFacade
 	slot0 = slot0()
 	--- END OF BLOCK #0 ---
 
@@ -134,7 +137,7 @@ slot8 = function()
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 6-8, warpins: 1 ---
 	slot1 = slot0.IsRuntimeInitialized
 	--- END OF BLOCK #1 ---
 
@@ -145,7 +148,7 @@ slot8 = function()
 	end
 
 
-	--- BLOCK #2 8-11, warpins: 1 ---
+	--- BLOCK #2 9-12, warpins: 1 ---
 	slot1 = slot0.IsRuntimeInitialized
 	slot1 = slot1()
 	--- END OF BLOCK #2 ---
@@ -157,14 +160,14 @@ slot8 = function()
 	end
 
 
-	--- BLOCK #3 12-13, warpins: 1 ---
+	--- BLOCK #3 13-14, warpins: 1 ---
 	slot1 = false
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 14-14, warpins: 1 ---
+	--- BLOCK #4 15-15, warpins: 1 ---
 	slot1 = true
 
 	--- END OF BLOCK #4 ---
@@ -172,7 +175,7 @@ slot8 = function()
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-15, warpins: 4 ---
+	--- BLOCK #5 16-16, warpins: 4 ---
 	return slot1
 	--- END OF BLOCK #5 ---
 
@@ -180,131 +183,93 @@ slot8 = function()
 
 end
 
-slot9 = function()
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot6.isRuntimeReady = slot7
+
+slot7 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = PlatformIdentityUtils
-	slot0 = slot0.getCurrentPlatformFamily
-	slot0 = slot0()
-	slot1 = PlatformIdentityUtils
-	slot1 = slot1.isConsoleFamily
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot0 = slot0.isConsoleFamily
+	slot2 = PlatformIdentityUtils
+	slot2 = slot2.getCurrentPlatformFamily
+	MULTRES = slot2()
+	slot0 = slot0(MULTRES)
 	--- END OF BLOCK #0 ---
 
-	if slot1 == true then
+	if slot0 ~= true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-11, warpins: 1 ---
-	slot1 = true
-
-	return slot1
-
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot0 = false
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 12-14, warpins: 2 ---
-	slot1 = pg
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot0 = true
+
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 15-18, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
+	--- BLOCK #3 12-12, warpins: 2 ---
+	return slot0
 	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 19-21, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.platform
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 22-23, warpins: 3 ---
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #6 24-28, warpins: 1 ---
-	slot2 = type
-	slot4 = slot1.isXboxPC
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #6 ---
-
-	if slot2 == "function" then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 29-33, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.isXboxPC
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #7 ---
-
-	if slot2 == true then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 34-41, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.error
-	slot5 = "PlatformSystem detected XboxPC but getCurrentPlatformFamily returned non-console family=%s"
-	slot6 = tostring
-	slot8 = slot0
-	MULTRES = slot6(slot8)
-
-	slot2(slot4, slot5, MULTRES)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 42-43, warpins: 4 ---
-	slot2 = false
-
-	return slot2
-	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot6.isCurrentPlatformSupported = slot9
+slot6.isCurrentPlatformSupported = slot7
 
-slot9 = function(slot0)
+slot7 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = PlatformIdentityUtils
+	slot0 = slot0.getCurrentPlatformFamily
+	slot0 = slot0()
+	slot1 = PlatformIdentityUtils
+	slot1 = slot1.Family
+	slot1 = slot1.PlayStation
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-12, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot6.isCurrentPlayStationSupported = slot7
+
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformSystem
 	slot1 = slot1.isCurrentPlatformSupported
@@ -327,7 +292,14 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-21, warpins: 2 ---
+	--- BLOCK #2 7-27, warpins: 2 ---
+	slot1 = PlatformUGCService
+	slot3 = slot1
+	slot1 = slot1.requestDeferredServerSync
+	slot4 = "login"
+
+	slot1(slot3, slot4)
+
 	slot1 = PlatformShellActivityService
 	slot3 = slot1
 	slot1 = slot1.publishLoginActivity
@@ -343,7 +315,8 @@ slot9 = function(slot0)
 	slot1 = PlatformShellJoinService
 	slot3 = slot1
 	slot1 = slot1.init
-	slot4 = isRuntimeReady
+	slot4 = PlatformSystem
+	slot4 = slot4.isRuntimeReady
 	MULTRES = slot4()
 
 	slot1(slot3, MULTRES)
@@ -355,9 +328,9 @@ slot9 = function(slot0)
 
 end
 
-slot6.initAfterLogin = slot9
+slot6.initAfterLogin = slot7
 
-slot9 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformSystem
 	slot1 = slot1.isCurrentPlatformSupported
@@ -380,10 +353,100 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-15, warpins: 2 ---
+	--- BLOCK #2 7-20, warpins: 2 ---
+	slot1 = PlatformUGCService
+	slot3 = slot1
+	slot1 = slot1.flushDeferredServerSync
+	slot4 = "player_enter_scene"
+
+	slot1(slot3, slot4)
+
+	slot1 = PlatformShellJoinService
+	slot3 = slot1
+	slot1 = slot1.tryShowPendingTextTip
+
+	slot1(slot3)
+
+	slot1 = PlatformSystem
+	slot1 = slot1.isCurrentPlayStationSupported
+	slot1 = slot1()
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-24, warpins: 1 ---
+	slot1 = PlatformShellJoinService
+	slot3 = slot1
+	slot1 = slot1.clearDelayPremiumFeatureSessionUntilPlayerEnterScene
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 25-25, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot6.onPlayerEnterScene = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformSystem
+	slot1 = slot1.isCurrentPlatformSupported
+	slot1 = slot1()
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-28, warpins: 2 ---
+	slot1 = PlatformUGCService
+	slot3 = slot1
+	slot1 = slot1.cancelDeferredServerSync
+	slot4 = "back_to_login"
+
+	slot1(slot3, slot4)
+
 	slot1 = PlatformShellActivityService
 	slot3 = slot1
 	slot1 = slot1.shutdown
+
+	slot1(slot3)
+
+	slot1 = PlatformShellJoinService
+	slot3 = slot1
+	slot1 = slot1.clearPendingTextTip
+
+	slot1(slot3)
+
+	slot1 = PlatformShellJoinService
+	slot3 = slot1
+	slot1 = slot1.clearDelayPremiumFeatureSessionUntilPlayerEnterScene
 
 	slot1(slot3)
 
@@ -400,7 +463,7 @@ slot9 = function(slot0)
 
 end
 
-slot6.onBackToLogin = slot9
+slot6.onBackToLogin = slot7
 
 return slot6
 --- END OF BLOCK #0 ---

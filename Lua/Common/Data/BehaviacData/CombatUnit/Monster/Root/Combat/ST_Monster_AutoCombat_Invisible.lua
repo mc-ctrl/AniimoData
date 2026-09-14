@@ -7,9 +7,9 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	version = 9,
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Invisible",
 	useForRoute = false,
-	version = 9,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "2",
-	class = "Sequence"
+	class = "Sequence",
+	id = "2"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -29,8 +29,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "1",
-	class = "DecoratorLoop"
+	class = "DecoratorLoop",
+	id = "1"
 }
 slot8 = {}
 slot9 = {}
@@ -53,8 +53,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "0",
-	class = "Selector"
+	class = "Selector",
+	id = "0"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -63,8 +63,8 @@ slot10.attachments = slot11
 slot11 = {}
 slot12 = {}
 slot13 = {
-	id = "5",
-	class = "Sequence"
+	class = "Sequence",
+	id = "5"
 }
 slot14 = {}
 slot13.properties = slot14
@@ -73,8 +73,8 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "7",
-	class = "Action"
+	class = "Action",
+	id = "7"
 }
 slot17 = {}
 slot18 = {}
@@ -130,8 +130,8 @@ slot12.node = slot13
 slot11[1] = slot12
 slot12 = {}
 slot13 = {
-	id = "8",
-	class = "Sequence"
+	class = "Sequence",
+	id = "8"
 }
 slot14 = {}
 slot13.properties = slot14
@@ -140,8 +140,8 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "9",
-	class = "Action"
+	class = "Action",
+	id = "9"
 }
 slot17 = {}
 slot18 = {}

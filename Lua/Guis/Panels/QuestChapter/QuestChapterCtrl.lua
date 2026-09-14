@@ -1,4 +1,4 @@
---- BLOCK #0 1-73, warpins: 1 ---
+--- BLOCK #0 1-72, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -11,41 +11,36 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
-slot4 = require
-slot6 = "GameApp.Camera.CameraConst"
-slot4 = slot4(slot6)
-slot5 = slot3.LightClass
+slot4 = slot3.LightClass
+slot6 = "QuestChapterCtrl"
+slot7 = slot2
+slot4 = slot4(slot6, slot7)
+slot5 = slot0.getLogger
 slot7 = "QuestChapterCtrl"
-slot8 = slot2
-slot5 = slot5(slot7, slot8)
-slot6 = slot0.getLogger
-slot8 = "QuestChapterCtrl"
+slot5 = slot5(slot7)
+slot6 = require
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientTextUtils"
+slot9 = "Common.Const.QuestConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.QuestConst"
+slot10 = "GameApp.Quest.QuestUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "GameApp.Quest.QuestUtils"
+slot11 = "Data.quest_catalog"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.quest_catalog"
+slot12 = "Const.AddressDataConst"
 slot10 = slot10(slot12)
-slot11 = require
-slot13 = "Const.AddressDataConst"
-slot11 = slot11(slot13)
-slot12 = require
-slot14 = "Common.Const.CharacterStateConst"
-slot12 = slot12(slot14)
-slot13 = 0
-slot14 = {}
-slot15 = -46.232
-slot16 = "VX_Pb_Quest_ChapterAppearPanel_ChapterAppear"
-slot17 = "VX_Pb_Quest_ChapterAppearPanel_SectionAppear"
+slot11 = 0
+slot12 = {}
+slot13 = -46.232
+slot14 = 6.5
+slot15 = "VX_Pb_Quest_ChapterAppearPanel_ChapterAppear"
+slot16 = "VX_Pb_Quest_ChapterAppearPanel_SectionAppear"
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -140,9 +135,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot5.onCreate = slot18
+slot4.onCreate = slot17
 
-slot18 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -151,9 +146,9 @@ slot18 = function(slot0)
 
 end
 
-slot5.addListener = slot18
+slot4.addListener = slot17
 
-slot18 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -162,9 +157,9 @@ slot18 = function(slot0)
 
 end
 
-slot5.onShow = slot18
+slot4.onShow = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.type
 	--- END OF BLOCK #0 ---
@@ -196,35 +191,33 @@ slot18 = function(slot0, slot1)
 
 	--- BLOCK #3 8-11, warpins: 2 ---
 	showType = slot2
-	slot2 = showType
+	slot2 = slot0.closeCountDownTimer
 	--- END OF BLOCK #3 ---
 
-	if slot2 == 0 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 12-13, warpins: 1 ---
-	slot2 = 4
+	--- BLOCK #4 12-15, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.killTimer
+	slot5 = slot0.closeCountDownTimer
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-14, warpins: 1 ---
-	slot2 = 6
-	--- END OF BLOCK #5 ---
+	--- BLOCK #5 16-31, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.startTimer
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 15-28, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.startTimer
-
-	slot6 = function()
+	slot5 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -263,105 +256,105 @@ slot18 = function(slot0, slot1)
 
 	end
 
-	slot7 = slot2 + 1
+	slot6 = ANI_TIME
+	slot6 = slot6 + 1
+	slot2 = slot2(slot4, slot5, slot6)
+	slot0.closeCountDownTimer = slot2
+	slot2 = slot0.view
+	slot2 = slot2.rootCom
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Type"
+	slot6 = 0
 
-	slot3(slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6)
 
-	slot3 = slot0.view
-	slot3 = slot3.rootCom
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "Type"
-	slot7 = 0
-
-	slot3(slot5, slot6, slot7)
-
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 32-35, warpins: 1 ---
+	slot2 = #slot1
+	slot3 = 5
+	--- END OF BLOCK #6 ---
+
+	if slot2 > slot3 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 29-32, warpins: 1 ---
-	slot3 = #slot1
-	slot4 = 5
+	--- BLOCK #7 36-38, warpins: 1 ---
+	slot2 = slot1[6]
 	--- END OF BLOCK #7 ---
 
-	if slot3 > slot4 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 33-35, warpins: 1 ---
-	slot3 = slot1[6]
+	--- BLOCK #8 39-58, warpins: 1 ---
+	slot2 = true
+	slot0.isUIModel = slot2
+	slot2 = slot0.view
+	slot2 = slot2.rootCom
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Type"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.view
+	slot4 = slot2
+	slot2 = slot2.getChapterObjects
+	slot5 = slot0.view
+	slot5 = slot5.chapterRoot
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.showPanel
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #8 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #9 36-55, warpins: 1 ---
-	slot3 = true
-	slot0.isUIModel = slot3
-	slot3 = slot0.view
-	slot3 = slot3.rootCom
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "Type"
-	slot7 = 1
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.view
-	slot5 = slot3
-	slot3 = slot3.getChapterObjects
-	slot6 = slot0.view
-	slot6 = slot6.chapterRoot
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.showPanel
-	slot6 = slot1
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #9 59-63, warpins: 3 ---
+	slot2 = IsNil
+	slot4 = slot0.UIRoot
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 56-60, warpins: 3 ---
-	slot3 = IsNil
-	slot5 = slot0.UIRoot
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #10 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #11
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #11 61-69, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.resMgr
-	slot5 = slot3
-	slot3 = slot3.GetInstanceFromCacheByLua
-	slot6 = AddressDataConst
-	slot6 = slot6.UI_3D_CHAPTER_APPEAR_ROOT
+	--- BLOCK #10 64-72, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.resMgr
+	slot4 = slot2
+	slot2 = slot2.GetInstanceFromCacheByLua
+	slot5 = AddressDataConst
+	slot5 = slot5.UI_3D_CHAPTER_APPEAR_ROOT
 
-	slot7 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot2 = IsNil
 		slot4 = slot0
@@ -610,24 +603,24 @@ slot18 = function(slot0, slot1)
 
 	end
 
-	slot3(slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #12 70-71, warpins: 3 ---
+	--- BLOCK #11 73-74, warpins: 3 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot5.onOpen = slot18
+slot4.onOpen = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -649,20 +642,13 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-20, warpins: 2 ---
+	--- BLOCK #2 6-13, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.getPosition
 	slot2 = slot2(slot4)
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.cameraMgr
-	slot3 = slot3.worldCameraInst
-	slot3 = slot3.transform
-	slot4 = slot3.position
-	slot5 = slot3.forward
-	slot6 = slot2.forward
+	slot3 = slot2.forward
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -672,38 +658,38 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 21-24, warpins: 1 ---
-	slot7 = #slot1
-	slot8 = 5
+	--- BLOCK #3 14-17, warpins: 1 ---
+	slot4 = #slot1
+	slot5 = 5
 	--- END OF BLOCK #3 ---
 
-	if slot7 > slot8 then
+	if slot4 > slot5 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 25-27, warpins: 1 ---
-	slot7 = slot1[6]
+	--- BLOCK #4 18-20, warpins: 1 ---
+	slot4 = slot1[6]
 	--- END OF BLOCK #4 ---
 
-	slot7 = if slot7 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 28-29, warpins: 1 ---
-	slot7 = true
-	slot0.isUIModel = slot7
+	--- BLOCK #5 21-22, warpins: 1 ---
+	slot4 = true
+	slot0.isUIModel = slot4
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 30-31, warpins: 4 ---
+	--- BLOCK #6 23-24, warpins: 4 ---
 	--- END OF BLOCK #6 ---
 
 	slot1 = if slot1 then
@@ -713,49 +699,49 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 32-35, warpins: 1 ---
-	slot7 = #slot1
-	slot8 = 1
+	--- BLOCK #7 25-28, warpins: 1 ---
+	slot4 = #slot1
+	slot5 = 1
 	--- END OF BLOCK #7 ---
 
-	if slot7 > slot8 then
+	if slot4 > slot5 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 36-38, warpins: 1 ---
-	slot7 = slot1[2]
+	--- BLOCK #8 29-31, warpins: 1 ---
+	slot4 = slot1[2]
 	--- END OF BLOCK #8 ---
 
-	if slot7 ~= 0 then
+	if slot4 ~= 0 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 39-41, warpins: 1 ---
-	slot7 = slot1[2]
+	--- BLOCK #9 32-34, warpins: 1 ---
+	slot4 = slot1[2]
 	--- END OF BLOCK #9 ---
 
-	slot7 = if not slot7 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 42-42, warpins: 4 ---
-	slot7 = 0
+	--- BLOCK #10 35-35, warpins: 4 ---
+	slot4 = 0
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 43-45, warpins: 2 ---
-	slot8 = slot6 * slot7
+	--- BLOCK #11 36-38, warpins: 2 ---
+	slot5 = slot3 * slot4
 	--- END OF BLOCK #11 ---
 
 	slot1 = if slot1 then
@@ -765,65 +751,65 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 46-49, warpins: 1 ---
-	slot9 = #slot1
-	slot10 = 2
+	--- BLOCK #12 39-42, warpins: 1 ---
+	slot6 = #slot1
+	slot7 = 2
 	--- END OF BLOCK #12 ---
 
-	if slot9 > slot10 then
+	if slot6 > slot7 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 50-52, warpins: 1 ---
-	slot9 = slot1[3]
+	--- BLOCK #13 43-45, warpins: 1 ---
+	slot6 = slot1[3]
 	--- END OF BLOCK #13 ---
 
-	if slot9 ~= 0 then
+	if slot6 ~= 0 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 53-55, warpins: 1 ---
-	slot9 = slot1[3]
+	--- BLOCK #14 46-48, warpins: 1 ---
+	slot6 = slot1[3]
 	--- END OF BLOCK #14 ---
 
-	slot9 = if not slot9 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 56-60, warpins: 4 ---
-	slot9 = Vector3
-	slot11 = 0
-	slot12 = 0
-	slot13 = 0
-	slot9 = slot9(slot11, slot12, slot13)
+	--- BLOCK #15 49-53, warpins: 4 ---
+	slot6 = Vector3
+	slot8 = 0
+	slot9 = 0
+	slot10 = 0
+	slot6 = slot6(slot8, slot9, slot10)
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 61-63, warpins: 2 ---
-	slot10 = slot2 + slot9
-	slot10 = slot10 + slot8
+	--- BLOCK #16 54-56, warpins: 2 ---
+	slot7 = slot2 + slot6
+	slot7 = slot7 + slot5
 
-	return slot10
+	return slot7
 	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot5.setUIPosition = slot18
+slot4.setUIPosition = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.questId
 	--- END OF BLOCK #0 ---
@@ -1377,9 +1363,86 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot5.showPanel = slot18
+slot4.showPanel = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.getLocalizationText
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot1
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.SetActive
+	--- END OF BLOCK #1 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 16-17, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot4 == "" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-19, warpins: 2 ---
+	slot8 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 20-20, warpins: 1 ---
+	slot8 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-21, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot4.setSectionContent = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = 0
 	slot3 = slot0.isUIModel
@@ -1455,9 +1518,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot5.getState = slot18
+slot4.getState = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setIsModel
@@ -1592,7 +1655,7 @@ slot18 = function(slot0, slot1)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #11
 	end
 
 
@@ -1605,116 +1668,35 @@ slot18 = function(slot0, slot1)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 70-81, warpins: 1 ---
+	--- BLOCK #10 70-85, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getLocalizationText
 	slot11 = slot8.mainTypeName
 	slot9 = slot9(slot11)
 	slot7 = slot9
-	slot9 = 0
-	slot10 = slot8.mainType
-	slot11 = QuestConst
-	slot11 = slot11.MainType
-	slot11 = slot11.Story
+	slot11 = slot0
+	slot9 = slot0.getMainTypeStateAndColor
+	slot12 = slot8.mainType
+	slot9, slot10 = slot9(slot11, slot12)
+	slot11 = slot0.view
+	slot11 = slot11.mainCom
+	slot13 = slot11
+	slot11 = slot11.TryChangePage
+	slot14 = "Type"
+	slot15 = slot9
+
+	slot11(slot13, slot14, slot15)
+
 	--- END OF BLOCK #10 ---
 
-	if slot10 == slot11 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 82-83, warpins: 1 ---
-	slot9 = 0
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #12 84-89, warpins: 1 ---
-	slot10 = slot8.mainType
-	slot11 = QuestConst
-	slot11 = slot11.MainType
-	slot11 = slot11.Quest
-	--- END OF BLOCK #12 ---
-
-	if slot10 == slot11 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 90-91, warpins: 1 ---
-	slot9 = 1
-	--- END OF BLOCK #13 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #14 92-97, warpins: 1 ---
-	slot10 = slot8.mainType
-	slot11 = QuestConst
-	slot11 = slot11.MainType
-	slot11 = slot11.Adventure
-	--- END OF BLOCK #14 ---
-
-	if slot10 == slot11 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 98-99, warpins: 1 ---
-	slot9 = 2
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #16 100-105, warpins: 1 ---
-	slot10 = slot8.mainType
-	slot11 = QuestConst
-	slot11 = slot11.MainType
-	slot11 = slot11.Clue
-	--- END OF BLOCK #16 ---
-
-	if slot10 == slot11 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 106-106, warpins: 1 ---
-	slot9 = 1
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 107-113, warpins: 5 ---
-	slot10 = slot0.view
-	slot10 = slot10.mainCom
-	slot12 = slot10
-	slot10 = slot10.TryChangePage
-	slot13 = "Type"
-	slot14 = slot9
-
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 114-150, warpins: 3 ---
+	--- BLOCK #11 86-121, warpins: 3 ---
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot0.view
@@ -1742,16 +1724,15 @@ slot18 = function(slot0, slot1)
 
 	slot8(slot10, MULTRES)
 
-	slot8 = ClientTextUtils
-	slot8 = slot8.setText
-	slot10 = slot0.view
-	slot10 = slot10.caSectionContentTxt
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
+	slot10 = slot0
+	slot8 = slot0.setSectionContent
+	slot11 = slot0.view
+	slot11 = slot11.caSectionContentTxt
+	slot12 = slot0.view
+	slot12 = slot12.textBgUWidget
 	slot13 = slot6.startDesc
-	MULTRES = slot11(slot13)
 
-	slot8(slot10, MULTRES)
+	slot8(slot10, slot11, slot12, slot13)
 
 	slot8 = slot0.view
 	slot8 = slot8.mainTitleTextUBaseText
@@ -1762,15 +1743,15 @@ slot18 = function(slot0, slot1)
 	slot8(slot10, slot11)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot5.refreshChapterOpenPanel = slot18
+slot4.refreshChapterOpenPanel = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setIsModel
@@ -1905,7 +1886,7 @@ slot18 = function(slot0, slot1)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #11
 	end
 
 
@@ -1918,116 +1899,20 @@ slot18 = function(slot0, slot1)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 70-84, warpins: 1 ---
+	--- BLOCK #10 70-94, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getLocalizationText
 	slot11 = slot8.chapterTypeName
 	slot9 = slot9(slot11)
 	slot7 = slot9
-	slot9 = 0
-	slot10 = QuestConst
-	slot10 = slot10.NUMBER_COLOR
-	slot10 = slot10.YELLOW
-	slot11 = slot8.mainType
-	slot12 = QuestConst
-	slot12 = slot12.MainType
-	slot12 = slot12.Story
-	--- END OF BLOCK #10 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 85-89, warpins: 1 ---
-	slot11 = QuestConst
-	slot11 = slot11.NUMBER_COLOR
-	slot10 = slot11.YELLOW
-	slot9 = 0
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #12 90-95, warpins: 1 ---
-	slot11 = slot8.mainType
-	slot12 = QuestConst
-	slot12 = slot12.MainType
-	slot12 = slot12.Quest
-	--- END OF BLOCK #12 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 96-100, warpins: 1 ---
-	slot11 = QuestConst
-	slot11 = slot11.NUMBER_COLOR
-	slot10 = slot11.BLUE
-	slot9 = 1
-	--- END OF BLOCK #13 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #14 101-106, warpins: 1 ---
-	slot11 = slot8.mainType
-	slot12 = QuestConst
-	slot12 = slot12.MainType
-	slot12 = slot12.Adventure
-	--- END OF BLOCK #14 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 107-111, warpins: 1 ---
-	slot11 = QuestConst
-	slot11 = slot11.NUMBER_COLOR
-	slot10 = slot11.GREEN
-	slot9 = 2
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #16 112-117, warpins: 1 ---
-	slot11 = slot8.mainType
-	slot12 = QuestConst
-	slot12 = slot12.MainType
-	slot12 = slot12.Clue
-	--- END OF BLOCK #16 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 118-121, warpins: 1 ---
-	slot11 = QuestConst
-	slot11 = slot11.NUMBER_COLOR
-	slot10 = slot11.BLUE
-	slot9 = 1
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 122-137, warpins: 5 ---
+	slot11 = slot0
+	slot9 = slot0.getMainTypeStateAndColor
+	slot12 = slot8.mainType
+	slot9, slot10 = slot9(slot11, slot12)
 	slot11 = slot0.view
 	slot11 = slot11.mainCom
 	slot13 = slot11
@@ -2048,12 +1933,12 @@ slot18 = function(slot0, slot1)
 
 	slot11(slot13, MULTRES)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #19 138-174, warpins: 3 ---
+	--- BLOCK #11 95-130, warpins: 3 ---
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot0.view
@@ -2081,16 +1966,15 @@ slot18 = function(slot0, slot1)
 
 	slot8(slot10, MULTRES)
 
-	slot8 = ClientTextUtils
-	slot8 = slot8.setText
-	slot10 = slot0.view
-	slot10 = slot10.scSectionContentTxt
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
+	slot10 = slot0
+	slot8 = slot0.setSectionContent
+	slot11 = slot0.view
+	slot11 = slot11.scSectionContentTxt
+	slot12 = slot0.view
+	slot12 = slot12.completeTextBgUWidget
 	slot13 = slot6.endDesc
-	MULTRES = slot11(slot13)
 
-	slot8(slot10, MULTRES)
+	slot8(slot10, slot11, slot12, slot13)
 
 	slot8 = slot0.view
 	slot8 = slot8.expressionUImage
@@ -2100,15 +1984,15 @@ slot18 = function(slot0, slot1)
 	slot8.url = slot9
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot5.refreshChapterCompletePanel = slot18
+slot4.refreshChapterCompletePanel = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setIsModel
@@ -2157,7 +2041,7 @@ slot18 = function(slot0, slot1)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #5
 	end
 
 
@@ -2170,116 +2054,35 @@ slot18 = function(slot0, slot1)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 30-41, warpins: 1 ---
+	--- BLOCK #4 30-45, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.getLocalizationText
 	slot8 = slot5.mainTypeName
 	slot6 = slot6(slot8)
 	slot4 = slot6
-	slot6 = 0
-	slot7 = slot5.mainType
-	slot8 = QuestConst
-	slot8 = slot8.MainType
-	slot8 = slot8.Story
+	slot8 = slot0
+	slot6 = slot0.getMainTypeStateAndColor
+	slot9 = slot5.mainType
+	slot6, slot7 = slot6(slot8, slot9)
+	slot8 = slot0.view
+	slot8 = slot8.mainCom
+	slot10 = slot8
+	slot8 = slot8.TryChangePage
+	slot11 = "Type"
+	slot12 = slot6
+
+	slot8(slot10, slot11, slot12)
+
 	--- END OF BLOCK #4 ---
 
-	if slot7 == slot8 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 42-43, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #6 44-49, warpins: 1 ---
-	slot7 = slot5.mainType
-	slot8 = QuestConst
-	slot8 = slot8.MainType
-	slot8 = slot8.Quest
-	--- END OF BLOCK #6 ---
-
-	if slot7 == slot8 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 50-51, warpins: 1 ---
-	slot6 = 1
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #8 52-57, warpins: 1 ---
-	slot7 = slot5.mainType
-	slot8 = QuestConst
-	slot8 = slot8.MainType
-	slot8 = slot8.Adventure
-	--- END OF BLOCK #8 ---
-
-	if slot7 == slot8 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 58-59, warpins: 1 ---
-	slot6 = 2
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 60-65, warpins: 1 ---
-	slot7 = slot5.mainType
-	slot8 = QuestConst
-	slot8 = slot8.MainType
-	slot8 = slot8.Clue
-	--- END OF BLOCK #10 ---
-
-	if slot7 == slot8 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 66-66, warpins: 1 ---
-	slot6 = 1
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 67-73, warpins: 5 ---
-	slot7 = slot0.view
-	slot7 = slot7.mainCom
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "Type"
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 74-110, warpins: 3 ---
+	--- BLOCK #5 46-81, warpins: 3 ---
 	slot5 = ClientTextUtils
 	slot5 = slot5.setText
 	slot7 = slot0.view
@@ -2307,16 +2110,15 @@ slot18 = function(slot0, slot1)
 
 	slot5(slot7, MULTRES)
 
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.view
-	slot7 = slot7.caSectionContentTxt
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot7 = slot0
+	slot5 = slot0.setSectionContent
+	slot8 = slot0.view
+	slot8 = slot8.caSectionContentTxt
+	slot9 = slot0.view
+	slot9 = slot9.textBgUWidget
 	slot10 = slot3.chapterStartDesc
-	MULTRES = slot8(slot10)
 
-	slot5(slot7, MULTRES)
+	slot5(slot7, slot8, slot9, slot10)
 
 	slot5 = slot0.view
 	slot5 = slot5.mainTitleTextUBaseText
@@ -2327,15 +2129,15 @@ slot18 = function(slot0, slot1)
 	slot5(slot7, slot8)
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot5.refreshChapterCurtainOpenPanel = slot18
+slot4.refreshChapterCurtainOpenPanel = slot17
 
-slot18 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setIsModel
@@ -2405,7 +2207,7 @@ slot18 = function(slot0, slot1)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #6
 	end
 
 
@@ -2418,116 +2220,20 @@ slot18 = function(slot0, slot1)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 37-51, warpins: 1 ---
+	--- BLOCK #5 37-61, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.getLocalizationText
 	slot8 = slot5.chapterTypeName
 	slot6 = slot6(slot8)
 	slot4 = slot6
-	slot6 = 0
-	slot7 = QuestConst
-	slot7 = slot7.NUMBER_COLOR
-	slot7 = slot7.YELLOW
-	slot8 = slot5.mainType
-	slot9 = QuestConst
-	slot9 = slot9.MainType
-	slot9 = slot9.Story
-	--- END OF BLOCK #5 ---
-
-	if slot8 == slot9 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 52-56, warpins: 1 ---
-	slot8 = QuestConst
-	slot8 = slot8.NUMBER_COLOR
-	slot7 = slot8.YELLOW
-	slot6 = 0
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #7 57-62, warpins: 1 ---
-	slot8 = slot5.mainType
-	slot9 = QuestConst
-	slot9 = slot9.MainType
-	slot9 = slot9.Quest
-	--- END OF BLOCK #7 ---
-
-	if slot8 == slot9 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 63-67, warpins: 1 ---
-	slot8 = QuestConst
-	slot8 = slot8.NUMBER_COLOR
-	slot7 = slot8.BLUE
-	slot6 = 1
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #9 68-73, warpins: 1 ---
-	slot8 = slot5.mainType
-	slot9 = QuestConst
-	slot9 = slot9.MainType
-	slot9 = slot9.Adventure
-	--- END OF BLOCK #9 ---
-
-	if slot8 == slot9 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 74-78, warpins: 1 ---
-	slot8 = QuestConst
-	slot8 = slot8.NUMBER_COLOR
-	slot7 = slot8.GREEN
-	slot6 = 2
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #11 79-84, warpins: 1 ---
-	slot8 = slot5.mainType
-	slot9 = QuestConst
-	slot9 = slot9.MainType
-	slot9 = slot9.Clue
-	--- END OF BLOCK #11 ---
-
-	if slot8 == slot9 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 85-88, warpins: 1 ---
-	slot8 = QuestConst
-	slot8 = slot8.NUMBER_COLOR
-	slot7 = slot8.BLUE
-	slot6 = 1
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 89-104, warpins: 5 ---
+	slot8 = slot0
+	slot6 = slot0.getMainTypeStateAndColor
+	slot9 = slot5.mainType
+	slot6, slot7 = slot6(slot8, slot9)
 	slot8 = slot0.view
 	slot8 = slot8.mainCom
 	slot10 = slot8
@@ -2548,12 +2254,12 @@ slot18 = function(slot0, slot1)
 
 	slot8(slot10, MULTRES)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #14 105-141, warpins: 3 ---
+	--- BLOCK #6 62-97, warpins: 3 ---
 	slot5 = ClientTextUtils
 	slot5 = slot5.setText
 	slot7 = slot0.view
@@ -2581,16 +2287,15 @@ slot18 = function(slot0, slot1)
 
 	slot5(slot7, MULTRES)
 
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.view
-	slot7 = slot7.scSectionContentTxt
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot7 = slot0
+	slot5 = slot0.setSectionContent
+	slot8 = slot0.view
+	slot8 = slot8.scSectionContentTxt
+	slot9 = slot0.view
+	slot9 = slot9.completeTextBgUWidget
 	slot10 = slot3.chapterEndDesc
-	MULTRES = slot8(slot10)
 
-	slot5(slot7, MULTRES)
+	slot5(slot7, slot8, slot9, slot10)
 
 	slot5 = slot0.view
 	slot5 = slot5.expressionUImage
@@ -2600,16 +2305,159 @@ slot18 = function(slot0, slot1)
 	slot5.url = slot6
 
 	return
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot5.refreshChapterCurtainCompletePanel = slot18
+slot4.refreshChapterCurtainCompletePanel = slot17
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.MainType
+	slot2 = slot2.Story
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot2 = 0
+	slot3 = QuestConst
+	slot3 = slot3.NUMBER_COLOR
+	slot3 = slot3.YELLOW
+
+	return slot2, slot3
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #2 12-16, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.MainType
+	slot2 = slot2.Quest
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-22, warpins: 1 ---
+	slot2 = 1
+	slot3 = QuestConst
+	slot3 = slot3.NUMBER_COLOR
+	slot3 = slot3.BLUE
+
+	return slot2, slot3
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 23-27, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.MainType
+	slot2 = slot2.Adventure
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-33, warpins: 1 ---
+	slot2 = 2
+	slot3 = QuestConst
+	slot3 = slot3.NUMBER_COLOR
+	slot3 = slot3.GREEN
+
+	return slot2, slot3
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 34-38, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.MainType
+	slot2 = slot2.Clue
+	--- END OF BLOCK #6 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 39-43, warpins: 1 ---
+	slot2 = 1
+	slot3 = QuestConst
+	slot3 = slot3.NUMBER_COLOR
+	slot3 = slot3.BLUE
+
+	return slot2, slot3
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 44-48, warpins: 5 ---
+	slot2 = 0
+	slot3 = QuestConst
+	slot3 = slot3.NUMBER_COLOR
+	slot3 = slot3.YELLOW
+
+	return slot2, slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot4.getMainTypeStateAndColor = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.closeCountDownTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.closeCountDownTimer
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-15, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.resMgr
@@ -2620,15 +2468,15 @@ slot18 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot5.onHide = slot18
+slot4.onHide = slot17
 
-slot18 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -2652,9 +2500,9 @@ slot18 = function(slot0)
 
 end
 
-slot5.onDestroy = slot18
+slot4.onDestroy = slot17
 
-return slot5
+return slot4
 --- END OF BLOCK #0 ---
 
 

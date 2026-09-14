@@ -1,21 +1,24 @@
 --- BLOCK #0 1-17, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	space = "space",
+	enableModule = "enableModule",
+	cutscene = "cutscene",
+	hudVisible = "hudVisible",
+	panelHide = "panelHide",
+	forceHide = "forceHide",
+	NoChallengeNoTempleNoDitto = "challengeInfo_NoTempleSceneNoInDittoDungeon",
 	fullScreenShow = "fullScreenShow",
 	isShowCurTarget = "isShowCurTarget",
 	priorityBreakChallenge = "priorityBreakChallenge",
 	priorityBreakQuest = "priorityBreakQuest",
 	priorityBreakTarget = "priorityBreakTarget",
 	isVisible = "isVisible",
-	enableModule = "enableModule",
+	space = "space",
 	inCourseScene = "inCourseScene",
 	catchMode = "catchMode",
 	checkShowState = "checkShowState",
 	ui = "ui",
-	NoChallengeNoTempleNoDitto = "challengeInfo_NoTempleSceneNoInDittoDungeon",
-	target = "targetComponent",
-	forceHide = "forceHide"
+	target = "targetComponent"
 }
 slot0.HideReason = slot1
 

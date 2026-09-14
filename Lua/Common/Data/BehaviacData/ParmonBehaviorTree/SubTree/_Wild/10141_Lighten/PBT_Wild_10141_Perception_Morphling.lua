@@ -16,17 +16,17 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
 	type = "int",
 	const = 0,
-	name = "tSensorTgtId"
+	name = "tSensorTgtId",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
 	type = "int",
 	const = 0,
-	name = "tTgtId"
+	name = "tTgtId",
+	value = "0"
 }
 slot4[2] = slot5
 slot3.pars = slot4

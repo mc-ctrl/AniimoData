@@ -1462,7 +1462,7 @@ slot20 = function(slot0, slot1)
 	slot0.sumResearchPoint = slot3
 	slot3 = 0
 	slot0.unlockResearchPoint = slot3
-	slot3 = slot0.templateId
+	slot3 = slot0.baseTemplateId
 	slot3 = slot2[slot3]
 	slot6 = slot0
 	slot4 = slot0.getPetFeatureData
@@ -1837,7 +1837,7 @@ slot20 = function(slot0)
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
 	--- BLOCK #3 13-15, warpins: 1 ---
@@ -1847,11 +1847,11 @@ slot20 = function(slot0)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 16-29, warpins: 1 ---
+	--- BLOCK #4 16-25, warpins: 1 ---
 	slot8 = slot6
 	slot9 = slot2[slot7]
 	slot10 = slot0.ctrl
@@ -1860,6 +1860,16 @@ slot20 = function(slot0)
 	slot13 = slot8
 	slot14 = slot9
 	slot10 = slot10(slot12, slot13, slot14)
+	--- END OF BLOCK #4 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-31, warpins: 1 ---
 	slot11 = AbilityConst
 	slot11 = slot11.SPECIFIC_ABILITY_INDEX_MAX
 	slot10.maxLevel = slot11
@@ -1867,22 +1877,22 @@ slot20 = function(slot0)
 	slot11 = slot11 + 1
 	slot1[slot11] = slot10
 
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 30-31, warpins: 3 ---
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 32-33, warpins: 4 ---
+	--- END OF BLOCK #6 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #6
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #6 32-32, warpins: 1 ---
+	--- BLOCK #7 34-34, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -2080,7 +2090,7 @@ slot20 = function(slot0, slot1)
 	--- BLOCK #1 7-7, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #2 8-11, warpins: 1 ---
@@ -2089,7 +2099,7 @@ slot20 = function(slot0, slot1)
 	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
 	--- BLOCK #3 12-17, warpins: 1 ---
@@ -2102,7 +2112,7 @@ slot20 = function(slot0, slot1)
 	slot10 = if slot10 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	end
 
 
@@ -2136,7 +2146,7 @@ slot20 = function(slot0, slot1)
 	slot12 = if not slot12 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	end
 
 
@@ -2146,7 +2156,7 @@ slot20 = function(slot0, slot1)
 	slot11 = if slot11 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	end
 
 
@@ -2159,7 +2169,7 @@ slot20 = function(slot0, slot1)
 	if slot11 == slot12 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	end
 
 
@@ -2170,7 +2180,7 @@ slot20 = function(slot0, slot1)
 	slot12 = if slot12 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	end
 
 
@@ -2286,44 +2296,51 @@ slot20 = function(slot0, slot1)
 	slot14 = slot9.showContentLocked
 	--- END OF BLOCK #18 ---
 
-	slot14 = if not slot14 then
+	if slot14 ~= 1 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 95-95, warpins: 1 ---
+	--- BLOCK #19 95-96, warpins: 1 ---
 	slot14 = false
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #20 96-103, warpins: 2 ---
+	--- BLOCK #20 97-97, warpins: 1 ---
+	slot14 = true
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 98-105, warpins: 2 ---
 	slot12.showContentLocked = slot14
 	slot14 = slot1.battleResearch
 	slot16 = slot14
 	slot14 = slot14.getInfo
 	slot17 = slot8
 	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #21 ---
 
 	slot15 = if slot14 then
-	JUMP TO BLOCK #21
-	else
 	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #21 104-104, warpins: 1 ---
+	--- BLOCK #22 106-106, warpins: 1 ---
 	slot15 = slot14.isNew
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #22 105-111, warpins: 2 ---
+	--- BLOCK #23 107-113, warpins: 2 ---
 	slot12.isNew = slot15
 	slot15 = slot9.skillOrder
 	slot12.skillOrder = slot15
@@ -2331,20 +2348,20 @@ slot20 = function(slot0, slot1)
 	slot15 = #slot2
 	slot15 = slot15 + 1
 	slot2[slot15] = slot12
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 112-113, warpins: 7 ---
 	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 114-115, warpins: 7 ---
+	--- END OF BLOCK #24 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #24
+	GO OUT TO BLOCK #25
 
 
-	--- BLOCK #24 114-120, warpins: 1 ---
+	--- BLOCK #25 116-122, warpins: 1 ---
 	slot5 = table
 	slot5 = slot5.sort
 	slot7 = slot2
@@ -2388,14 +2405,14 @@ slot20 = function(slot0, slot1)
 	slot5(slot7, slot8)
 
 	return slot2
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 121-121, warpins: 2 ---
-	return slot2
 	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 123-123, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #26 ---
 
 
 
@@ -2520,7 +2537,7 @@ slot20 = function(slot0, slot1)
 
 	--- BLOCK #4 12-16, warpins: 1 ---
 	slot3 = LuaUIUtils
-	slot3 = slot3.getPetFormName
+	slot3 = slot3.getPetFormNameByPrototypeId
 	slot5 = slot1[1]
 
 	return slot3(slot5)
@@ -2562,7 +2579,7 @@ slot20 = function(slot0, slot1)
 
 	--- BLOCK #8 28-34, warpins: 1 ---
 	slot10 = LuaUIUtils
-	slot10 = slot10.getPetFormName
+	slot10 = slot10.getPetFormNameByPrototypeId
 	slot12 = slot9
 	slot10 = slot10(slot12)
 	slot11 = slot4[slot10]

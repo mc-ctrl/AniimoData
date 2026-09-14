@@ -1,4 +1,4 @@
---- BLOCK #0 1-3960, warpins: 1 ---
+--- BLOCK #0 1-4060, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,40 +7,40 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 8,
 	useForRoute = false,
 	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Dramotter"
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Dramotter",
+	version = 24
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
-	const = 0,
 	value = "0",
-	name = "creations"
+	name = "creations",
+	const = 0,
+	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	value = "0",
-	name = "disToTgtForSkillMon"
+	name = "disToTgtForSkillMon",
+	const = 0,
+	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	value = "0",
-	name = "selfhp"
+	name = "selfhp",
+	const = 0,
+	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	value = "0",
-	name = "goBackDist"
+	name = "goBackDist",
+	const = 0,
+	type = "float"
 }
 slot4[4] = slot5
 slot3.pars = slot4
@@ -2569,13 +2569,13 @@ slot49.attachments = slot50
 slot50 = {}
 slot51 = {}
 slot52 = {
-	id = "357",
+	id = "401",
 	class = "Action"
 }
 slot53 = {}
 slot54 = {}
 slot55 = {
-	func = "turnToTarget"
+	func = "sideWalk"
 }
 slot56 = {}
 slot57 = {
@@ -2583,17 +2583,21 @@ slot57 = {
 }
 slot56[1] = slot57
 slot57 = {
-	const = true
+	const = 1
 }
 slot56[2] = slot57
 slot57 = {
-	const = 0
+	const = -35
 }
 slot56[3] = slot57
 slot57 = {
-	const = false
+	const = -1
 }
 slot56[4] = slot57
+slot57 = {
+	const = false
+}
+slot56[5] = slot57
 slot55.params = slot56
 slot54.Method = slot55
 slot53[1] = slot54
@@ -2710,13 +2714,13 @@ slot49.attachments = slot50
 slot50 = {}
 slot51 = {}
 slot52 = {
-	id = "360",
+	id = "402",
 	class = "Action"
 }
 slot53 = {}
 slot54 = {}
 slot55 = {
-	func = "turnToTarget"
+	func = "sideWalk"
 }
 slot56 = {}
 slot57 = {
@@ -2724,17 +2728,21 @@ slot57 = {
 }
 slot56[1] = slot57
 slot57 = {
-	const = true
+	const = 1
 }
 slot56[2] = slot57
 slot57 = {
-	const = 0
+	const = -35
 }
 slot56[3] = slot57
 slot57 = {
-	const = false
+	const = -1
 }
 slot56[4] = slot57
+slot57 = {
+	const = false
+}
+slot56[5] = slot57
 slot55.params = slot56
 slot54.Method = slot55
 slot53[1] = slot54
@@ -2927,6 +2935,55 @@ slot54.node = slot55
 slot53[1] = slot54
 slot54 = {}
 slot55 = {
+	id = "398",
+	class = "Action"
+}
+slot56 = {}
+slot57 = {}
+slot58 = {
+	func = "sideWalk"
+}
+slot59 = {}
+slot60 = {
+	field = "tgt"
+}
+slot59[1] = slot60
+slot60 = {
+	const = 1
+}
+slot59[2] = slot60
+slot60 = {
+	const = -35
+}
+slot59[3] = slot60
+slot60 = {
+	const = -1
+}
+slot59[4] = slot60
+slot60 = {
+	const = false
+}
+slot59[5] = slot60
+slot58.params = slot59
+slot57.Method = slot58
+slot56[1] = slot57
+slot57 = {
+	ResultOption = "BT_INVALID"
+}
+slot56[2] = slot57
+slot57 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot56[3] = slot57
+slot55.properties = slot56
+slot56 = {}
+slot55.attachments = slot56
+slot56 = {}
+slot55.children = slot56
+slot54.node = slot55
+slot53[2] = slot54
+slot54 = {}
+slot55 = {
 	id = "344",
 	class = "Action"
 }
@@ -2980,7 +3037,7 @@ slot55.attachments = slot56
 slot56 = {}
 slot55.children = slot56
 slot54.node = slot55
-slot53[2] = slot54
+slot53[3] = slot54
 slot52.children = slot53
 slot51.node = slot52
 slot50[2] = slot51
@@ -3457,13 +3514,13 @@ slot46.attachments = slot47
 slot47 = {}
 slot48 = {}
 slot49 = {
-	id = "376",
+	id = "403",
 	class = "Action"
 }
 slot50 = {}
 slot51 = {}
 slot52 = {
-	func = "turnToTarget"
+	func = "sideWalk"
 }
 slot53 = {}
 slot54 = {
@@ -3471,17 +3528,21 @@ slot54 = {
 }
 slot53[1] = slot54
 slot54 = {
-	const = true
+	const = 1
 }
 slot53[2] = slot54
 slot54 = {
-	const = 0
+	const = -35
 }
 slot53[3] = slot54
 slot54 = {
-	const = false
+	const = -1
 }
 slot53[4] = slot54
+slot54 = {
+	const = false
+}
+slot53[5] = slot54
 slot52.params = slot53
 slot51.Method = slot52
 slot50[1] = slot51
@@ -3598,13 +3659,13 @@ slot46.attachments = slot47
 slot47 = {}
 slot48 = {}
 slot49 = {
-	id = "379",
+	id = "404",
 	class = "Action"
 }
 slot50 = {}
 slot51 = {}
 slot52 = {
-	func = "turnToTarget"
+	func = "sideWalk"
 }
 slot53 = {}
 slot54 = {
@@ -3612,17 +3673,21 @@ slot54 = {
 }
 slot53[1] = slot54
 slot54 = {
-	const = true
+	const = 1
 }
 slot53[2] = slot54
 slot54 = {
-	const = 0
+	const = -35
 }
 slot53[3] = slot54
 slot54 = {
-	const = false
+	const = -1
 }
 slot53[4] = slot54
+slot54 = {
+	const = false
+}
+slot53[5] = slot54
 slot52.params = slot53
 slot51.Method = slot52
 slot50[1] = slot51
@@ -3815,6 +3880,55 @@ slot51.node = slot52
 slot50[1] = slot51
 slot51 = {}
 slot52 = {
+	id = "397",
+	class = "Action"
+}
+slot53 = {}
+slot54 = {}
+slot55 = {
+	func = "sideWalk"
+}
+slot56 = {}
+slot57 = {
+	field = "tgt"
+}
+slot56[1] = slot57
+slot57 = {
+	const = 1
+}
+slot56[2] = slot57
+slot57 = {
+	const = -35
+}
+slot56[3] = slot57
+slot57 = {
+	const = -1
+}
+slot56[4] = slot57
+slot57 = {
+	const = false
+}
+slot56[5] = slot57
+slot55.params = slot56
+slot54.Method = slot55
+slot53[1] = slot54
+slot54 = {
+	ResultOption = "BT_INVALID"
+}
+slot53[2] = slot54
+slot54 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot53[3] = slot54
+slot52.properties = slot53
+slot53 = {}
+slot52.attachments = slot53
+slot53 = {}
+slot52.children = slot53
+slot51.node = slot52
+slot50[2] = slot51
+slot51 = {}
+slot52 = {
 	id = "382",
 	class = "Action"
 }
@@ -3868,7 +3982,7 @@ slot52.attachments = slot53
 slot53 = {}
 slot52.children = slot53
 slot51.node = slot52
-slot50[2] = slot51
+slot50[3] = slot51
 slot49.children = slot50
 slot48.node = slot49
 slot47[2] = slot48
@@ -4747,6 +4861,55 @@ slot34.attachments = slot35
 slot35 = {}
 slot36 = {}
 slot37 = {
+	id = "399",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "sideWalk"
+}
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 1
+}
+slot41[2] = slot42
+slot42 = {
+	const = -35
+}
+slot41[3] = slot42
+slot42 = {
+	const = -1
+}
+slot41[4] = slot42
+slot42 = {
+	const = false
+}
+slot41[5] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
 	id = "98",
 	class = "Action"
 }
@@ -4800,7 +4963,7 @@ slot37.attachments = slot38
 slot38 = {}
 slot37.children = slot38
 slot36.node = slot37
-slot35[1] = slot36
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[1] = slot33
@@ -4921,11 +5084,11 @@ slot38 = {}
 slot37.properties = slot38
 slot38 = {}
 slot39 = {
-	transition = false,
 	effector = false,
 	precondition = true,
 	id = "135",
-	class = "Precondition"
+	class = "Precondition",
+	transition = false
 }
 slot40 = {}
 slot41 = {
@@ -5276,13 +5439,13 @@ slot39.node = slot40
 slot38[2] = slot39
 slot39 = {}
 slot40 = {
-	id = "117",
+	id = "400",
 	class = "Action"
 }
 slot41 = {}
 slot42 = {}
 slot43 = {
-	func = "turnToTarget"
+	func = "sideWalk"
 }
 slot44 = {}
 slot45 = {
@@ -5290,17 +5453,21 @@ slot45 = {
 }
 slot44[1] = slot45
 slot45 = {
-	const = true
+	const = 1
 }
 slot44[2] = slot45
 slot45 = {
-	const = 0
+	const = -35
 }
 slot44[3] = slot45
 slot45 = {
-	const = false
+	const = -1
 }
 slot44[4] = slot45
+slot45 = {
+	const = false
+}
+slot44[5] = slot45
 slot43.params = slot44
 slot42.Method = slot43
 slot41[1] = slot42
@@ -5430,11 +5597,11 @@ slot32 = {}
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
-	transition = false,
 	effector = false,
 	precondition = true,
 	id = "135",
-	class = "Precondition"
+	class = "Precondition",
+	transition = false
 }
 slot34 = {}
 slot35 = {
@@ -5554,11 +5721,11 @@ slot44 = {}
 slot43.properties = slot44
 slot44 = {}
 slot45 = {
-	transition = false,
 	effector = false,
 	precondition = true,
 	id = "104",
-	class = "Precondition"
+	class = "Precondition",
+	transition = false
 }
 slot46 = {}
 slot47 = {
@@ -5692,11 +5859,11 @@ slot44 = {}
 slot43.properties = slot44
 slot44 = {}
 slot45 = {
-	transition = false,
 	effector = false,
 	precondition = true,
 	id = "109",
-	class = "Precondition"
+	class = "Precondition",
+	transition = false
 }
 slot46 = {}
 slot47 = {

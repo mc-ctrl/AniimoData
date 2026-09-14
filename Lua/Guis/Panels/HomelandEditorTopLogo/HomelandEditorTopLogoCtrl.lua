@@ -48,7 +48,7 @@ end
 slot5.ctor = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-46, warpins: 1 ---
+	--- BLOCK #0 1-38, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -67,13 +67,6 @@ slot7 = function(slot0, slot1)
 	slot5 = "TopLogoRoot"
 	slot2 = slot2(slot4, slot5)
 	slot0.topLogoRoot = slot2
-	slot2 = slot0.view
-	slot2 = slot2.transform
-	slot4 = slot2
-	slot2 = slot2.Find
-	slot5 = "TopLogoCache"
-	slot2 = slot2(slot4, slot5)
-	slot0.topLogoCacheRoot = slot2
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.uiMgr
@@ -88,12 +81,11 @@ slot7 = function(slot0, slot1)
 	slot2 = slot2.init
 	slot5 = slot0.view
 	slot6 = slot0.topLogoRoot
-	slot7 = slot0.topLogoCacheRoot
-	slot8 = {}
-	slot9 = PreloadTopLogoResIds
-	slot8.preloadTopLogoResIds = slot9
+	slot7 = {}
+	slot8 = PreloadTopLogoResIds
+	slot7.preloadTopLogoResIds = slot8
 
-	slot2(slot4, slot5, slot6, slot7, slot8)
+	slot2(slot4, slot5, slot6, slot7)
 
 	slot4 = slot0
 	slot2 = slot0.initOrnamentTopLogos
@@ -110,7 +102,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 47-50, warpins: 1 ---
+	--- BLOCK #1 39-42, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.killTimer
 	slot5 = slot0.topLogoTimer
@@ -122,7 +114,7 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 51-59, warpins: 2 ---
+	--- BLOCK #2 43-51, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.startTimer
 

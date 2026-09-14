@@ -1,4 +1,4 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UICtrl"
 slot0 = slot0(slot2)
@@ -33,8 +33,9 @@ slot8 = {
 	FINISH = 2
 }
 slot3.OPEN_TYPE = slot8
+slot8 = 2
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -50,9 +51,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot8
+slot3.onCreate = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.backGroundCloseUButton
@@ -150,9 +151,9 @@ slot8 = function(slot0)
 
 end
 
-slot3.addListener = slot8
+slot3.addListener = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -230,9 +231,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot3.onOpen = slot8
+slot3.onOpen = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = QuestUtils
 	slot1 = slot1.getChapterConfig
@@ -357,14 +358,24 @@ slot8 = function(slot0)
 
 end
 
-slot3.showPanel = slot8
+slot3.showPanel = slot9
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-32, warpins: 1 ---
+slot9 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = QuestUtils
 	slot1 = slot1.getChapterConfig
 	slot3 = slot0.chapterId
 	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-24, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -387,27 +398,75 @@ slot8 = function(slot0)
 
 	slot2(slot4, MULTRES)
 
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.textInfoUSDFText
-	slot5 = pg
-	slot5 = slot5.getLocalizationText
-	slot7 = slot1.chapterDes
-	MULTRES = slot5(slot7)
+	--- END OF BLOCK #1 ---
 
-	slot2(slot4, MULTRES)
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 25-37, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.textInfoUSDFText
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.startTimer
+
+	slot5 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.dismiss
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.closeCallback
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-11, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.closeCallback
+
+		slot0()
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 12-12, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot6 = START_AIN_TIMER
+
+	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot3.setChapterStart = slot8
+slot3.setChapterStart = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = QuestUtils
 	slot1 = slot1.getChapterConfig
@@ -542,9 +601,9 @@ slot8 = function(slot0)
 
 end
 
-slot3.setChapterFinish = slot8
+slot3.setChapterFinish = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -553,9 +612,9 @@ slot8 = function(slot0)
 
 end
 
-slot3.onHide = slot8
+slot3.onHide = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
@@ -590,9 +649,9 @@ slot8 = function(slot0)
 
 end
 
-slot3.onClosePanel = slot8
+slot3.onClosePanel = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -607,7 +666,7 @@ slot8 = function(slot0)
 
 end
 
-slot3.onDestroy = slot8
+slot3.onDestroy = slot9
 
 return slot3
 --- END OF BLOCK #0 ---

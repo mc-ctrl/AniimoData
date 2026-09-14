@@ -1,6 +1,19 @@
---- BLOCK #0 1-588, warpins: 1 ---
-slot0 = {}
-slot1 = {
+--- BLOCK #0 1-639, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Common.EmptyTable"
+slot0 = slot0(slot2)
+slot1 = {}
+slot2 = {
+	SC_HC_CampExpired = 10504,
+	SC_HC_LoginCampSuccess = 10503,
+	SC_HC_ChangeCampSuccess = 10501,
+	SC_HC_UnlockCampSuccess = 10500,
+	CS_HC_ChangeCarIndex = 524,
+	CS_HC_KickLineMember = 523,
+	CS_HC_SetLinePermission = 522,
+	CS_HC_DissolvePrivateLine = 521,
+	CS_HC_CreatePrivateLine = 520,
+	CS_HC_AcceptInvite = 515,
 	CS_HC_InviteFriend = 514,
 	CS_HC_ConfirmRelocate = 513,
 	CS_HC_RefreshAddOns = 512,
@@ -40,6 +53,30 @@ slot1 = {
 	SC_PR_ROOM_INFO = 10100,
 	CS_PR_CONFIRM = 101,
 	CS_PR_PICK = 100,
+	SC_FC_SettleResult = 10805,
+	SC_FC_HeatUpdate = 10804,
+	SC_FC_CaptureSuccess = 10803,
+	SC_FC_ThrowResult = 10802,
+	SC_FC_BattleResult = 10801,
+	SC_FC_PhaseChange = 10800,
+	CS_FS_ForgeAPact = 806,
+	CS_FC_ExchangeTicket = 805,
+	CS_FC_Quit = 804,
+	CS_FC_ThrowBall = 803,
+	CS_FC_SkipBattle = 802,
+	CS_FC_StartBattle = 801,
+	CS_FC_Enter = 800,
+	SC_PC_HugInviteResult = 10603,
+	SC_PC_HugInvite = 10602,
+	SC_PC_OnDropCarry = 10601,
+	SC_PC_OnStartCarry = 10600,
+	CS_PC_InspectItem = 612,
+	CS_PC_StrokePet = 611,
+	CS_PC_HugReply = 610,
+	CS_PC_BeHuggedPutDown = 609,
+	CS_PC_PlayerPutDown = 608,
+	CS_PC_PlayerTakeUp = 607,
+	CS_PC_ItemPutBack = 606,
 	CS_PC_ItemTakeOut = 605,
 	CS_PC_PetAssign = 604,
 	CS_PC_PetPutDown = 603,
@@ -48,20 +85,6 @@ slot1 = {
 	CS_PC_PetTakeUp = 600,
 	SC_HC_MembersNotUnlocked = 10527,
 	SC_HC_PrivateLineMigrated = 10526,
-	CS_PC_ItemPutBack = 606,
-	SC_PC_OnStartCarry = 10600,
-	SC_PC_OnDropCarry = 10601,
-	CS_FC_Enter = 800,
-	CS_FC_StartBattle = 801,
-	CS_FC_SkipBattle = 802,
-	CS_FC_ThrowBall = 803,
-	CS_FC_Quit = 804,
-	SC_FC_PhaseChange = 10800,
-	SC_FC_BattleResult = 10801,
-	SC_FC_ThrowResult = 10802,
-	SC_FC_CaptureSuccess = 10803,
-	SC_FC_HeatUpdate = 10804,
-	SC_FC_SettleResult = 10805,
 	SC_HC_LineInfoChanged = 10525,
 	SC_HC_ChangeCarIndex = 10524,
 	SC_HC_PrivateLineKicked = 10523,
@@ -69,970 +92,1034 @@ slot1 = {
 	SC_HC_PrivateLineDissolved = 10521,
 	SC_HC_CreatePrivateLineSuccess = 10520,
 	SC_HC_InviteReceived = 10514,
-	SC_HC_Notice = 10510,
-	SC_HC_CampExpired = 10504,
-	SC_HC_LoginCampSuccess = 10503,
-	SC_HC_ChangeCampSuccess = 10501,
-	SC_HC_UnlockCampSuccess = 10500,
-	CS_HC_ChangeCarIndex = 524,
-	CS_HC_KickLineMember = 523,
-	CS_HC_SetLinePermission = 522,
-	CS_HC_DissolvePrivateLine = 521,
-	CS_HC_CreatePrivateLine = 520,
-	CS_HC_AcceptInvite = 515
+	SC_HC_Notice = 10510
 }
-slot0.OP = slot1
-slot1 = {}
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeCamp
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeName
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeShape
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_UpgradeCar
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_UpgradeCarComp
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ConfirmRelocate
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_InviteFriend
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_AcceptInvite
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_CreatePrivateLine
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_DissolvePrivateLine
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_SetLinePermission
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_KickLineMember
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeCarIndex
-slot3 = true
-slot1[slot2] = slot3
-slot0.OP_needUnlockCamp = slot1
-slot1 = {}
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeCamp
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_InviteFriend
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_KickLineMember
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeCarIndex
-slot3 = true
-slot1[slot2] = slot3
-slot0.OP_needInHomeCamp = slot1
-slot1 = {}
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangePets
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_Dispatch
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_DispatchStop
-slot3 = true
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_DispatchFinish
-slot3 = true
-slot1[slot2] = slot3
-slot0.OP_needInSelfHomeCamp = slot1
-slot1 = {}
-slot2 = slot0.OP
-slot2 = slot2.CS_PR_PICK
-slot3 = {}
-slot4 = {
+slot1.OP = slot2
+slot2 = {}
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeCamp
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeName
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeShape
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_UpgradeCar
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_UpgradeCarComp
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ConfirmRelocate
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_InviteFriend
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_AcceptInvite
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_CreatePrivateLine
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_DissolvePrivateLine
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_SetLinePermission
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_KickLineMember
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeCarIndex
+slot4 = true
+slot2[slot3] = slot4
+slot1.OP_needUnlockCamp = slot2
+slot2 = {}
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeCamp
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_InviteFriend
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_KickLineMember
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeCarIndex
+slot4 = true
+slot2[slot3] = slot4
+slot1.OP_needInHomeCamp = slot2
+slot2 = {}
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangePets
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_Dispatch
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_DispatchStop
+slot4 = true
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_DispatchFinish
+slot4 = true
+slot2[slot3] = slot4
+slot1.OP_needInSelfHomeCamp = slot2
+slot2 = {}
+slot3 = slot1.OP
+slot3 = slot3.CS_PR_PICK
+slot4 = {}
+slot5 = {
 	"number",
 	"选择的序号"
 }
-slot3.index = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_PR_CONFIRM
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_PR_ROOM_INFO
-slot3 = {}
-slot4 = {
+slot4.index = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_PR_CONFIRM
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_PR_ROOM_INFO
+slot4 = {}
+slot5 = {
 	"number",
 	"结束时间戳"
 }
-slot3.end_ts = slot4
-slot4 = {}
-slot5 = {
+slot4.end_ts = slot5
+slot5 = {}
+slot6 = {
 	"string",
 	"玩家的uid"
 }
-slot4.__key = slot5
-slot5 = {
+slot5.__key = slot6
+slot6 = {
 	__isDict = true
 }
-slot6 = {
+slot7 = {
 	"table",
 	"CustomType:PlayerBaseInfo"
 }
-slot5.base = slot6
-slot6 = {
+slot6.base = slot7
+slot7 = {
 	"table",
 	"CustomType:PVPPetTeamInfo"
 }
-slot5.team = slot6
-slot4.__val = slot5
-slot3.players = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_PR_PICK_NOTIFY
-slot3 = {}
-slot4 = {
+slot6.team = slot7
+slot5.__val = slot6
+slot4.players = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_PR_PICK_NOTIFY
+slot4 = {}
+slot5 = {
 	"string",
 	"玩家的uid"
 }
-slot3.uid = slot4
-slot4 = {
+slot4.uid = slot5
+slot5 = {
 	"number",
 	"已选择数量"
 }
-slot3.pickCnt = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_PR_CONFIRM_NOTIFY
-slot3 = {}
-slot4 = {
-	"string",
-	"玩家的uid"
-}
-slot3.uid = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_PR_LOADING_INFO
-slot3 = {}
+slot4.pickCnt = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_PR_CONFIRM_NOTIFY
 slot4 = {}
 slot5 = {
 	"string",
 	"玩家的uid"
 }
-slot4.__key = slot5
-slot5 = {
+slot4.uid = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_PR_LOADING_INFO
+slot4 = {}
+slot5 = {}
+slot6 = {
+	"string",
+	"玩家的uid"
+}
+slot5.__key = slot6
+slot6 = {
 	__isDict = true
 }
-slot6 = {
+slot7 = {
 	__isList = true
 }
-slot7 = {
+slot8 = {
 	"number",
 	"宠物templateId"
 }
-slot6.__valDef = slot7
-slot5.petList = slot6
-slot4.__val = slot5
-slot3.players = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_UpdatePets
-slot3 = {}
-slot4 = {
+slot7.__valDef = slot8
+slot6.petList = slot7
+slot5.__val = slot6
+slot4.players = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_UpdatePets
+slot4 = {}
+slot5 = {
 	__isList = true
 }
-slot5 = {
+slot6 = {
 	"string",
 	"宠物ID"
 }
-slot4.__valDef = slot5
-slot3.petIds = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_UpdateBalls
-slot3 = {}
-slot4 = {
-	__isList = true
-}
-slot5 = {
-	"number",
-	"球ID"
-}
-slot4.__valDef = slot5
-slot3.ballIds = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_UpdateBallCount
-slot3 = {}
+slot5.__valDef = slot6
+slot4.petIds = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_UpdateBalls
 slot4 = {}
 slot5 = {
+	__isList = true
+}
+slot6 = {
 	"number",
 	"球ID"
 }
-slot4.__key = slot5
-slot5 = {
+slot5.__valDef = slot6
+slot4.ballIds = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_UpdateBallCount
+slot4 = {}
+slot5 = {}
+slot6 = {
+	"number",
+	"球ID"
+}
+slot5.__key = slot6
+slot6 = {
 	"number",
 	"球数量"
 }
-slot4.__val = slot5
-slot3.ballCountMap = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_GameEnter
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_GameStart
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_GameSave
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_CR_GameSettle
-slot3 = {}
-slot4 = {
+slot5.__val = slot6
+slot4.ballCountMap = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_GameEnter
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_GameStart
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_GameSave
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_CR_GameSettle
+slot4 = {}
+slot5 = {
 	"boolean",
 	"是否退出"
 }
-slot3.isQuit = slot4
-slot4 = {
+slot4.isQuit = slot5
+slot5 = {
 	"number",
 	"购买类型, Const.CatchRogue.PURCHASE_...",
 	true
 }
-slot3.purchaseType = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_CR_SettleRequest
-slot3 = {}
-slot4 = {
+slot4.purchaseType = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_CR_SettleRequest
+slot4 = {}
+slot5 = {
 	"number",
 	"结算原因, Const.CatchRogue.SETTLE_REASON_..."
 }
-slot3.reason = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_CR_AddOnNotify
-slot3 = {}
-slot4 = {
+slot4.reason = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_CR_AddOnNotify
+slot4 = {}
+slot5 = {
 	"number",
 	"增益ID"
 }
-slot3.addonId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_CR_SettleFinish
-slot3 = {}
-slot4 = {
+slot4.addonId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_CR_SettleFinish
+slot4 = {}
+slot5 = {
 	"table",
 	"物品数量表，key为itemId，value为数量"
 }
-slot3.itemCountMap = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HF_AddItem
-slot3 = {}
-slot4 = {
+slot4.itemCountMap = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HF_AddItem
+slot4 = {}
+slot5 = {
 	"number",
 	"食材ID"
 }
-slot3.itemId = slot4
-slot4 = {
+slot4.itemId = slot5
+slot5 = {
 	"number",
 	"食材数量"
 }
-slot3.itemNum = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HF_ClearSlot
-slot3 = {}
-slot4 = {
+slot4.itemNum = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HF_ClearSlot
+slot4 = {}
+slot5 = {
 	"number",
 	"槽位ID"
 }
-slot3.slotIndex = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeCamp
-slot3 = {}
-slot4 = {
+slot4.slotIndex = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_Dispatch
+slot4 = {}
+slot5 = {
+	"number",
+	"派遣配置id"
+}
+slot4.dispatchId = slot5
+slot5 = {
+	"number",
+	"派遣奖励所属营地staticId；仅私人驿站可指定",
+	true
+}
+slot4.campId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeCamp
+slot4 = {}
+slot5 = {
 	"number",
 	"目标营地staticId"
 }
-slot3.staticId = slot4
-slot4 = {
+slot4.staticId = slot5
+slot5 = {
 	"number",
 	"目标分线ID",
 	true
 }
-slot3.lineId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_InviteFriend
-slot3 = {}
-slot4 = {
+slot4.lineId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_InviteFriend
+slot4 = {}
+slot5 = {
 	"string",
 	"被邀请玩家uid"
 }
-slot3.targetUid = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_AcceptInvite
-slot3 = {}
-slot4 = {
+slot4.targetUid = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_AcceptInvite
+slot4 = {}
+slot5 = {
 	"string",
 	"邀请凭证ID"
 }
-slot3.inviteId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_CreatePrivateLine
-slot3 = {}
-slot4 = {
+slot4.inviteId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_RefreshAddOns
+slot4 = {}
+slot5 = {
+	"string",
+	"目标车位主人uid",
+	true
+}
+slot4.ownerUid = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_CreatePrivateLine
+slot4 = {}
+slot5 = {
 	"number",
 	"目标营地staticId"
 }
-slot3.staticId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_DissolvePrivateLine
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_SetLinePermission
-slot3 = {}
-slot4 = {
+slot4.staticId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_DissolvePrivateLine
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_SetLinePermission
+slot4 = {}
+slot5 = {
 	"number",
 	"权限位掩码"
 }
-slot3.permissions = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_ChangeCampSuccess
-slot3 = {}
-slot4 = {
+slot4.permissions = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_ChangeCampSuccess
+slot4 = {}
+slot5 = {
 	"number",
 	"目标营地staticId"
 }
-slot3.staticId = slot4
-slot4 = {
+slot4.staticId = slot5
+slot5 = {
 	"number",
 	"切换前的营地staticId（本会话内），0 表示无切换；客户端按 staticId != lastStaticId 判断是否需要传送或弹切营地提示"
 }
-slot3.lastStaticId = slot4
-slot4 = {
+slot4.lastStaticId = slot5
+slot5 = {
 	"number",
 	"当前分线ID"
 }
-slot3.lineId = slot4
-slot4 = {
+slot4.lineId = slot5
+slot5 = {
 	"number",
 	"切换前的分线ID（本会话内），0 表示无切换；客户端按 lineId != lastLineId 判断分线是否变化"
 }
-slot3.lastLineId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_LoginCampSuccess
-slot3 = {}
-slot4 = {
+slot4.lastLineId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_LoginCampSuccess
+slot4 = {}
+slot5 = {
 	"number",
 	"当前营地staticId"
 }
-slot3.staticId = slot4
-slot4 = {
+slot4.staticId = slot5
+slot5 = {
 	"number",
 	"切换前的营地staticId（本会话内），0 表示无切换/首次登录；客户端按 staticId != lastStaticId 判断是否需要传送或弹切营地提示"
 }
-slot3.lastStaticId = slot4
-slot4 = {
+slot4.lastStaticId = slot5
+slot5 = {
 	"string",
 	"当前营地spaceKey"
 }
-slot3.spaceKey = slot4
-slot4 = {
+slot4.spaceKey = slot5
+slot5 = {
 	"number",
 	"当前分线ID"
 }
-slot3.lineId = slot4
-slot4 = {
+slot4.lineId = slot5
+slot5 = {
 	"number",
 	"切换前的分线ID（本会话内），0 表示无切换/首次登录；客户端按 lineId != lastLineId 判断分线是否变化"
 }
-slot3.lastLineId = slot4
-slot4 = {
+slot4.lastLineId = slot5
+slot5 = {
 	"number",
 	"当前停车位索引"
 }
-slot3.carIndex = slot4
-slot4 = {
+slot4.carIndex = slot5
+slot5 = {
 	"number",
 	"当前房车模板ID"
 }
-slot3.carTmplId = slot4
-slot4 = {
+slot4.carTmplId = slot5
+slot5 = {
 	"string",
 	"新架构分线展示编号",
 	true
 }
-slot3.displayCode = slot4
-slot4 = {
+slot4.displayCode = slot5
+slot5 = {
 	"string",
 	"传送原因；缺省表示普通登录同步，不强制传送",
 	true
 }
-slot3.transferReason = slot4
-slot4 = {
+slot4.transferReason = slot5
+slot5 = {
 	"number",
 	"触发该次就绪的业务事件协议Op（10520/10521/10523/10501等）",
 	true
 }
-slot3.transferSourceOp = slot4
-slot4 = {
+slot4.transferSourceOp = slot5
+slot5 = {
 	"number",
 	"新架构 lineUid，便于客户端校验/日志",
 	true
 }
-slot3.transferLineUid = slot4
-slot4 = {
+slot4.transferLineUid = slot5
+slot5 = {
 	"number",
 	"可选提示，客户端可在传送后统一弹",
 	true
 }
-slot3.transferNoticeId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_InviteReceived
-slot3 = {}
-slot4 = {
+slot4.transferNoticeId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_InviteReceived
+slot4 = {}
+slot5 = {
 	"string",
 	"邀请凭证ID"
 }
-slot3.inviteId = slot4
-slot4 = {
+slot4.inviteId = slot5
+slot5 = {
 	"string",
 	"邀请者uid"
 }
-slot3.inviterUid = slot4
-slot4 = {
+slot4.inviterUid = slot5
+slot5 = {
 	"string",
 	"被邀请玩家uid"
 }
-slot3.targetUid = slot4
-slot4 = {
+slot4.targetUid = slot5
+slot5 = {
 	"string",
 	"邀请者名字"
 }
-slot3.inviterName = slot4
-slot4 = {
+slot4.inviterName = slot5
+slot5 = {
 	"number",
 	"分线uid"
 }
-slot3.lineUid = slot4
-slot4 = {
+slot4.lineUid = slot5
+slot5 = {
 	"number",
 	"营地staticId"
 }
-slot3.staticId = slot4
-slot4 = {
+slot4.staticId = slot5
+slot5 = {
 	"string",
 	"分线显示编号"
 }
-slot3.displayCode = slot4
-slot4 = {
+slot4.displayCode = slot5
+slot5 = {
 	"number",
 	"过期时间戳"
 }
-slot3.expireTs = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_CreatePrivateLineSuccess
-slot3 = {}
-slot4 = {
+slot4.expireTs = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_CreatePrivateLineSuccess
+slot4 = {}
+slot5 = {
 	"number",
 	"私人分线 lineUid"
 }
-slot3.lineUid = slot4
-slot4 = {
+slot4.lineUid = slot5
+slot5 = {
 	"string",
 	"分线显示编号",
 	true
 }
-slot3.displayCode = slot4
-slot4 = {
+slot4.displayCode = slot5
+slot5 = {
 	"number",
 	"目标营地 staticId"
 }
-slot3.staticId = slot4
-slot4 = {
+slot4.staticId = slot5
+slot5 = {
 	"boolean",
 	"true 表示仅创建成功、仍需等待 SwitchCamp 激活",
 	true
 }
-slot3.pendingActivate = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_PrivateLineDissolved
-slot3 = {}
-slot4 = {
+slot4.pendingActivate = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_PrivateLineDissolved
+slot4 = {}
+slot5 = {
 	"number",
 	"分线uid"
 }
-slot3.lineUid = slot4
-slot4 = {
+slot4.lineUid = slot5
+slot5 = {
 	"string",
 	"分线主人名字"
 }
-slot3.ownerName = slot4
-slot4 = {
+slot4.ownerName = slot5
+slot5 = {
 	"number",
 	"提示ID",
 	true
 }
-slot3.noticeId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_PermissionChanged
-slot3 = {}
-slot4 = {
+slot4.noticeId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_PermissionChanged
+slot4 = {}
+slot5 = {
 	"number",
 	"新权限位掩码"
 }
-slot3.permissions = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_KickLineMember
-slot3 = {}
-slot4 = {
+slot4.permissions = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_KickLineMember
+slot4 = {}
+slot5 = {
 	"string",
 	"被踢玩家uid"
 }
-slot3.targetUid = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_PrivateLineKicked
-slot3 = {}
-slot4 = {
+slot4.targetUid = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_PrivateLineKicked
+slot4 = {}
+slot5 = {
 	"number",
 	"分线uid"
 }
-slot3.lineUid = slot4
-slot4 = {
+slot4.lineUid = slot5
+slot5 = {
 	"string",
 	"分线主人名字"
 }
-slot3.ownerName = slot4
-slot4 = {
+slot4.ownerName = slot5
+slot5 = {
 	"number",
 	"提示ID",
 	true
 }
-slot3.noticeId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_HC_ChangeCarIndex
-slot3 = {}
-slot4 = {
+slot4.noticeId = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_HC_ChangeCarIndex
+slot4 = {}
+slot5 = {
 	"number",
 	"目标车位索引"
 }
-slot3.targetCarIndex = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_ChangeCarIndex
-slot3 = {}
-slot4 = {
+slot4.targetCarIndex = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_ChangeCarIndex
+slot4 = {}
+slot5 = {
 	"number",
 	"原车位索引"
 }
-slot3.oldCarIndex = slot4
-slot4 = {
+slot4.oldCarIndex = slot5
+slot5 = {
 	"number",
 	"新车位索引"
 }
-slot3.newCarIndex = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_LineInfoChanged
-slot3 = {}
-slot4 = {
+slot4.newCarIndex = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_LineInfoChanged
+slot4 = {}
+slot5 = {
 	"number",
 	"分线 lineUid"
 }
-slot3.lineUid = slot4
-slot4 = {
+slot4.lineUid = slot5
+slot5 = {
 	"number",
 	"广播时刻的 ownerEpoch"
 }
-slot3.ownerEpoch = slot4
-slot4 = {
+slot4.ownerEpoch = slot5
+slot5 = {
 	"number",
 	"lineInfo 单调递增版本号"
 }
-slot3.lineVersion = slot4
-slot4 = {
+slot4.lineVersion = slot5
+slot5 = {
 	"string",
 	"变更原因 login/logout/change_slot/kick_member/permission_changed/permission_revert/enter/leave_enter/full"
 }
-slot3.reason = slot4
-slot4 = {
+slot4.reason = slot5
+slot5 = {
 	"string",
 	"全量或增量 full/patch（首期仅 full）"
 }
-slot3.mode = slot4
-slot4 = {
+slot4.mode = slot5
+slot5 = {
 	"table",
 	"mode=full 时携带的分线摘要（与 buildLineSummary 一致）",
 	true
 }
-slot3.lineInfo = slot4
-slot4 = {
+slot4.lineInfo = slot5
+slot5 = {
 	"table",
 	"mode=patch 预留",
 	true
 }
-slot3.patch = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.SC_HC_PrivateLineMigrated
-slot3 = {}
-slot4 = {
+slot4.patch = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.SC_HC_PrivateLineMigrated
+slot4 = {}
+slot5 = {
 	"string",
 	"迁移模式 login/enter"
 }
-slot3.mode = slot4
-slot4 = {
+slot4.mode = slot5
+slot5 = {
 	"string",
 	"私人分线稳定身份",
 	true
 }
-slot3.privateLineKey = slot4
-slot4 = {
+slot4.privateLineKey = slot5
+slot5 = {
 	"number",
 	"源分线 lineUid",
 	true
 }
-slot3.sourceLineUid = slot4
-slot4 = {
+slot4.sourceLineUid = slot5
+slot5 = {
 	"number",
 	"源 areaId",
 	true
 }
-slot3.sourceAreaId = slot4
-slot4 = {
+slot4.sourceAreaId = slot5
+slot5 = {
 	"number",
 	"源 bucketId",
 	true
 }
-slot3.sourceBucketId = slot4
-slot4 = {
+slot4.sourceBucketId = slot5
+slot5 = {
 	"number",
 	"源营地 staticId",
 	true
 }
-slot3.sourceStaticId = slot4
-slot4 = {
+slot4.sourceStaticId = slot5
+slot5 = {
 	"string",
 	"源营地 spaceKey",
 	true
 }
-slot3.sourceSpaceKey = slot4
-slot4 = {
+slot4.sourceSpaceKey = slot5
+slot5 = {
 	"number",
 	"目标分线 lineUid"
 }
-slot3.targetLineUid = slot4
-slot4 = {
+slot4.targetLineUid = slot5
+slot5 = {
 	"number",
 	"目标 areaId",
 	true
 }
-slot3.targetAreaId = slot4
-slot4 = {
+slot4.targetAreaId = slot5
+slot5 = {
 	"number",
 	"目标 bucketId",
 	true
 }
-slot3.targetBucketId = slot4
-slot4 = {
+slot4.targetBucketId = slot5
+slot5 = {
 	"number",
 	"目标营地 staticId"
 }
-slot3.targetStaticId = slot4
-slot4 = {
+slot4.targetStaticId = slot5
+slot5 = {
 	"string",
 	"目标营地 spaceKey",
 	true
 }
-slot3.targetSpaceKey = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_PC_PetTakeUp
-slot3 = {}
-slot4 = {
+slot4.targetSpaceKey = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot3 = slot3.CS_PC_PetTakeUp
+slot4 = {}
+slot5 = {
 	"string",
 	"宠物ID"
 }
-slot3.petId = slot4
-slot4 = {
+slot4.petId = slot5
+slot5 = {
 	"number",
 	"来源类型，Const.CARRY_REQ_FROM_..."
 }
-slot3.fromType = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_PC_PetTakeOut
-slot3 = {}
-slot4 = {
+slot4.fromType = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_PC_PetTakeOut"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"string",
 	"宠物ID"
 }
-slot3.petId = slot4
-slot4 = {
+slot4.petId = slot5
+slot5 = {
 	"number",
 	"来源类型，Const.CARRY_REQ_FROM_..."
 }
-slot3.fromType = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_PC_PetAssign
-slot3 = {}
-slot4 = {
+slot4.fromType = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_PC_PetAssign"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"家具ID"
 }
-slot3.ornamentId = slot4
-slot4 = {
+slot6 = "ornamentId"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	""
 }
-slot3.opId = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot2 = slot2.CS_PC_ItemTakeOut
-slot3 = {}
-slot4 = {
+slot6 = "opId"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_PC_ItemTakeOut"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"背包ID"
 }
-slot5 = "invId"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "invId"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"道具格子ID"
 }
-slot5 = "genId"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "CS_FC_Enter"
-slot2 = slot2[slot3]
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "CS_FC_StartBattle"
-slot2 = slot2[slot3]
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "CS_FC_SkipBattle"
-slot2 = slot2[slot3]
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "CS_FC_ThrowBall"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "genId"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_PC_PlayerTakeUp"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
+	"string",
+	"被抱玩家实体ID"
+}
+slot6 = "targetId"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"来源类型，Const.CARRY_REQ_FROM_..."
+}
+slot4.fromType = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_PC_HugReply"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
+	"string",
+	"发起抱起邀请的玩家实体ID"
+}
+slot6 = "inviterId"
+slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"是否同意被抱"
+}
+slot6 = "accept"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_FC_Enter"
+slot3 = slot3[slot4]
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_FC_StartBattle"
+slot3 = slot3[slot4]
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_FC_SkipBattle"
+slot3 = slot3[slot4]
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_FC_ThrowBall"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"球道具ID"
 }
-slot5 = "ballItemId"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "CS_FC_Quit"
-slot2 = slot2[slot3]
-slot3 = {}
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "SC_FC_PhaseChange"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "ballItemId"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_FC_Quit"
+slot3 = slot3[slot4]
+slot4 = {}
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "SC_FC_PhaseChange"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"子阶段, FishingCaptureConst.Phase"
 }
-slot5 = "phase"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "phase"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"阶段结束时间戳"
 }
-slot5 = "phaseEndTs"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "phaseEndTs"
+slot4[slot6] = slot5
+slot5 = {
 	"table",
 	"额外数据",
 	true
 }
-slot5 = "extraData"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "SC_FC_BattleResult"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "extraData"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "SC_FC_BattleResult"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"战斗评级 1=S,2=A,3=B"
 }
-slot5 = "grade"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "SC_FC_ThrowResult"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "grade"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "SC_FC_ThrowResult"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"boolean",
 	"是否捕获成功"
 }
-slot5 = "success"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	"是否暴击"
+slot6 = "success"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"暴击类型,见 FishingCaptureConst.CritType (None/Small/Big)"
 }
-slot5 = "isCrit"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "critType"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"进度增量"
 }
-slot5 = "progressDelta"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "progressDelta"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"当前进度"
 }
-slot5 = "curProgress"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "curProgress"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"当前虚弱层数"
 }
-slot5 = "curLayer"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "curLayer"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"获得的使徒代币数量,满进度随机失败才会有",
 	true
 }
-slot5 = "coinNum"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "SC_FC_CaptureSuccess"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "coinNum"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "SC_FC_CaptureSuccess"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"string",
 	"宠物ID",
 	true
 }
-slot3.petId = slot4
-slot4 = {
+slot4.petId = slot5
+slot5 = {
 	"number",
 	"宠物数据表ID",
 	true
 }
-slot5 = "petTemplateId"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "petTemplateId"
+slot4[slot6] = slot5
+slot5 = {
 	"number",
 	"捕获奖励Id",
 	true
 }
-slot5 = "rewardId"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "rewardId"
+slot4[slot6] = slot5
+slot5 = {
 	"boolean",
 	"是否能量满随机发放(非直接捕捉)"
 }
-slot5 = "isByLevelRandom"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "SC_FC_HeatUpdate"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "isByLevelRandom"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "SC_FC_HeatUpdate"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"当前热度值"
 }
-slot5 = "heatValue"
-slot3[slot5] = slot4
-slot4 = {
+slot6 = "heatValue"
+slot4[slot6] = slot5
+slot5 = {
 	"boolean",
 	"狂热是否激活"
 }
-slot5 = "frenzyActive"
-slot3[slot5] = slot4
-slot1[slot2] = slot3
-slot2 = slot0.OP
-slot3 = "SC_FC_SettleResult"
-slot2 = slot2[slot3]
-slot3 = {}
-slot4 = {
+slot6 = "frenzyActive"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "SC_FC_SettleResult"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
 	"number",
 	"结算原因, FishingCaptureConst.SettleReason"
 }
-slot3.reason = slot4
-slot4 = {
+slot4.reason = slot5
+slot5 = {
 	"table",
 	"奖励列表",
 	true
 }
-slot5 = "rewards"
-slot3[slot5] = slot4
+slot6 = "rewards"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot3 = slot1.OP
+slot4 = "CS_FC_ExchangeTicket"
+slot3 = slot3[slot4]
+slot4 = {}
+slot5 = {
+	"number",
+	"立方类型，1传说立方，2赛季立方"
+}
+slot6 = "cubeType"
+slot4[slot6] = slot5
+slot2[slot3] = slot4
+slot1.OP_PARAM_DEF = slot2
+slot2 = "OP_REVERSE_MAP"
+slot3 = {}
 slot1[slot2] = slot3
-slot0.OP_PARAM_DEF = slot1
-slot1 = "OP_REVERSE_MAP"
-slot2 = {}
-slot0[slot1] = slot2
-slot1 = "initOpReverseMap"
+slot2 = "initOpReverseMap"
 
-slot2 = function()
+slot3 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pairs
 	slot2 = OpDef
@@ -1069,10 +1156,10 @@ slot2 = function()
 
 end
 
-slot0[slot1] = slot2
-slot1 = "_checkNode"
+slot1[slot2] = slot3
+slot2 = "_checkNode"
 
-slot2 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1460,10 +1547,10 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot0[slot1] = slot2
-slot1 = "repr"
+slot1[slot2] = slot3
+slot2 = "repr"
 
-slot2 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.format
@@ -1491,9 +1578,9 @@ slot2 = function(slot0, slot1)
 	slot6 = inspect
 	slot8 = slot1
 	slot9 = {
+		depth = 3,
 		indent = " ",
-		newline = " ",
-		depth = 3
+		newline = " "
 	}
 	MULTRES = slot6(slot8, slot9)
 
@@ -1504,10 +1591,10 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot0[slot1] = slot2
-slot1 = "checkParams"
+slot1[slot2] = slot3
+slot2 = "checkParams"
 
-slot2 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0
@@ -1599,7 +1686,7 @@ slot2 = function(slot0, slot1)
 
 
 	--- BLOCK #6 43-43, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
@@ -1663,9 +1750,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot0[slot1] = slot2
+slot1[slot2] = slot3
 
-return slot0
+return slot1
 --- END OF BLOCK #0 ---
 
 

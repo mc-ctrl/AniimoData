@@ -31,17 +31,17 @@ slot11 = "AppearanceOutfitModel"
 slot12 = slot1
 slot9 = slot9(slot11, slot12)
 slot10 = {
-	PREVIEW = "Preview",
-	EMPTY = "Empty",
 	NOW = "Now",
+	PREVIEW = "Preview",
 	LOCKED = "Locked",
-	NORMAL = "Normal"
+	NORMAL = "Normal",
+	EMPTY = "Empty"
 }
 slot9.OUTFIT_TAB = slot10
 slot10 = {
 	LOCKED = "Locked",
-	EMPTY = "Empty",
 	EMPTY_NO_WORD = "EmptyNoWord",
+	EMPTY = "Empty",
 	HAVE = "Have"
 }
 slot9.CONTENT_TAB = slot10
@@ -437,75 +437,95 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 103-105, warpins: 2 ---
-	slot9 = nil
+	--- BLOCK #11 103-108, warpins: 2 ---
+	slot9 = LuaUIUtils
+	slot9 = slot9.isAppearancePointHidden
+	slot11 = slot8
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #11 ---
 
-	slot1 = if slot1 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 106-111, warpins: 1 ---
+	--- BLOCK #12 109-109, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #13 110-112, warpins: 1 ---
+	slot9 = nil
+	--- END OF BLOCK #13 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 113-118, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.me
 	slot10 = slot10.appearanceCustom
 	slot10 = slot10[slot1]
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #13
-	else
 	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #13 112-118, warpins: 1 ---
+	--- BLOCK #15 119-125, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.me
 	slot10 = slot10.appearanceCustom
 	slot10 = slot10[slot1]
 	slot10 = slot10.customShow
 	slot9 = slot10[slot8]
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #14 119-123, warpins: 1 ---
+	--- BLOCK #16 126-130, warpins: 1 ---
 	slot12 = slot3
 	slot10 = slot3.getAppearanceConfigId
 	slot13 = slot8
 	slot10 = slot10(slot12, slot13)
 	slot9 = slot10
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 124-125, warpins: 3 ---
-	--- END OF BLOCK #15 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #16 126-127, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
-	if slot9 ~= 0 then
-	JUMP TO BLOCK #17
-	else
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 131-132, warpins: 3 ---
+	--- END OF BLOCK #17 ---
+
+	slot9 = if slot9 then
 	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #17 128-159, warpins: 1 ---
+	--- BLOCK #18 133-134, warpins: 1 ---
+	--- END OF BLOCK #18 ---
+
+	if slot9 ~= 0 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 135-166, warpins: 1 ---
 	slot10 = LuaUIUtils
 	slot10 = slot10.getAccessoryInfo
 	slot12 = pg
@@ -537,12 +557,12 @@ slot10 = function(slot0, slot1)
 	slot12.text = slot13
 	slot12.id = slot9
 	slot4[slot11] = slot12
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #18 160-179, warpins: 2 ---
+	--- BLOCK #20 167-186, warpins: 2 ---
 	slot10 = #slot4
 	slot10 = slot10 + 1
 	slot11 = {}
@@ -564,21 +584,21 @@ slot10 = function(slot0, slot1)
 	slot11.text = slot12
 	slot4[slot10] = slot11
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #19 180-180, warpins: 2 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #21 187-187, warpins: 3 ---
+	--- END OF BLOCK #21 ---
 
 	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #11
-	GO OUT TO BLOCK #20
+	GO OUT TO BLOCK #22
 
-	--- BLOCK #20 181-181, warpins: 1 ---
+	--- BLOCK #22 188-188, warpins: 1 ---
 	return slot4
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
 
 

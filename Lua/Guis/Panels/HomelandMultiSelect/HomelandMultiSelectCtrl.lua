@@ -1,88 +1,99 @@
---- BLOCK #0 1-164, warpins: 1 ---
+--- BLOCK #0 1-191, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "HomelandMultiSelectCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "HomelandMultiSelectCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.UICtrl"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.item_data"
+slot6 = "Guis.UICtrl"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Data.item_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.homeland_config_data"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Panels.HomelandEditor.Component.HomelandEditorTopListComponent"
+slot9 = "Data.homeland_config_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.Panels.HomelandEditor.Component.HomelandViewCtrlComponent"
+slot10 = "Guis.Panels.HomelandEditor.Component.HomelandEditorTopListComponent"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.ClientConst"
+slot11 = "Guis.Panels.HomelandEditor.Component.HomelandViewCtrlComponent"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.LuaUIUtils"
+slot12 = "Const.ClientConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Common.lume"
+slot13 = "Const.AddressDataConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Const.Const"
+slot14 = "Utils.LuaUIUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.NoticeDef"
+slot15 = "Core.Common.lume"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Const.UIConst"
+slot16 = "Common.Const.Const"
 slot14 = slot14(slot16)
-slot15 = CS
-slot15 = slot15.FunPlus
-slot15 = slot15.WorldX
-slot15 = slot15.GUIS
-slot15 = slot15.Panels
-slot15 = slot15.Utils
-slot15 = slot15.KeyBindingPro
+slot15 = require
+slot17 = "Common.NoticeDef"
+slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Core.Client.GlobalData"
+slot18 = "Const.UIConst"
 slot16 = slot16(slot18)
-slot17 = slot2.LightClass
-slot19 = "HomelandMultiSelectCtrl"
-slot20 = slot3
-slot17 = slot17(slot19, slot20)
-slot18 = {}
-slot19 = slot1.HOMELAND_EDITOR_SETTING_REFRESH
-slot20 = {
+slot17 = CS
+slot17 = slot17.FunPlus
+slot17 = slot17.WorldX
+slot17 = slot17.GUIS
+slot17 = slot17.Panels
+slot17 = slot17.Utils
+slot17 = slot17.KeyBindingPro
+slot18 = require
+slot20 = "Core.Client.GlobalData"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "Utils.ClientHomelandUtils"
+slot19 = slot19(slot21)
+slot20 = slot3.LightClass
+slot22 = "HomelandMultiSelectCtrl"
+slot23 = slot4
+slot20 = slot20(slot22, slot23)
+slot21 = {}
+slot22 = slot2.HOMELAND_EDITOR_SETTING_REFRESH
+slot23 = {
 	"refreshTopList",
 	true
 }
-slot18[slot19] = slot20
-slot19 = slot1.INPUT_DEVICE_CHANGED
-slot20 = {
+slot21[slot22] = slot23
+slot22 = slot2.INPUT_DEVICE_CHANGED
+slot23 = {
 	"onInputDeviceChanged",
 	true
 }
-slot18[slot19] = slot20
-slot17.messages = slot18
-slot18 = {
-	DeSelect = 1,
-	Select = 0
+slot21[slot22] = slot23
+slot20.messages = slot21
+slot21 = {
+	Select = 0,
+	DeSelect = 1
 }
-slot17.SelectType = slot18
+slot20.SelectType = slot21
+slot21 = 2
+slot20.PRE_MULTI_SELECT_MAX_COUNT_RATIO = slot21
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-22, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = HomelandMultiSelectCtrl
 	slot1 = slot1.super
 	slot1 = slot1.ctor
@@ -97,7 +108,9 @@ slot18 = function(slot0)
 	slot1 = {}
 	slot0.tempSelectEntitiesCache = slot1
 	slot1 = {}
-	slot0.tempSelectChildEntitiesCache = slot1
+	slot0.tempPreMultiSelectEntitiesCache = slot1
+	slot1 = {}
+	slot0.tempPreMultiSelectList = slot1
 	slot1 = {}
 	slot0.tempCalcBoundEntities = slot1
 	slot1 = {}
@@ -114,9 +127,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.ctor = slot18
+slot20.ctor = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -145,10 +158,24 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-24, warpins: 2 ---
+	--- BLOCK #2 13-38, warpins: 2 ---
 	slot0.editor = slot2
 	slot2 = slot1.carGroup
 	slot0.carGroup = slot2
+	slot2 = slot1.areaId
+	slot0.areaId = slot2
+	slot2 = slot0.editor
+	slot2 = slot2.displayHideMode
+	slot0.displayMode = slot2
+	slot2 = slot0.editor
+	slot2 = slot2.cameraHeightLimit
+	slot0.cameraHeight = slot2
+	slot2 = {}
+	slot0.photoHiddenFurniture = slot2
+	slot2 = {}
+	slot0.photoOutlinedFurniture = slot2
+	slot2 = false
+	slot0.isBlueprintPhotoSceneActive = slot2
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -165,7 +192,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 25-30, warpins: 1 ---
+	--- BLOCK #3 39-44, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.operateMobileUContainer
 	slot4 = slot2
@@ -208,7 +235,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-141, warpins: 2 ---
+	--- BLOCK #4 45-141, warpins: 2 ---
 	slot2 = HomelandViewCtrlComponent
 	slot4 = slot0
 	slot5 = slot0.view
@@ -363,6 +390,89 @@ slot18 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
+	slot3 = slot0.viewCtrlComponent
+	slot5 = slot3
+	slot3 = slot3.initCameraHeight
+
+	slot3(slot5)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtDisplayUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "HOME_BUILD_WALL_DISPLAY_DESC"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtMetreUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "HOME_BUILD_CAMERA_HEIGHT_DESC"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.view
+	slot3 = slot3.btnDisplayUButton
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "Dispaly"
+	slot7 = slot0.displayMode
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.view
+	slot3 = slot3.btnDisplayUButton
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = slot0.carGroup
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 142-147, warpins: 1 ---
+	slot6 = slot0.areaId
+	slot7 = Const
+	slot7 = slot7.HOMELAND_AREA_TYPE
+	slot7 = slot7.BUILD
+	--- END OF BLOCK #5 ---
+
+	if slot6 ~= slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 148-149, warpins: 2 ---
+	slot6 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 150-150, warpins: 1 ---
+	slot6 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 151-207, warpins: 2 ---
+	slot3(slot5, slot6)
+
 	slot3 = slot0.editor
 
 	slot4 = function()
@@ -440,17 +550,25 @@ slot18 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.showBubbleMessage
+	slot5 = NoticeDef
+	slot5 = slot5.HOMELAND_MULTI_SELECT_ENTER
+
+	slot3(slot5)
+
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot17.onCreate = slot18
+slot20.onCreate = slot21
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-180, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-188, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBack
 
@@ -470,6 +588,145 @@ slot18 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnDisplayUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-31, warpins: 1 ---
+		slot0 = self
+		slot1 = self
+		slot1 = slot1.displayMode
+		slot1 = slot1 + 1
+		slot1 = slot1 % 3
+		slot0.displayMode = slot1
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.btnDisplayUButton
+		slot2 = slot0
+		slot0 = slot0.TryChangePage
+		slot3 = "Dispaly"
+		slot4 = self
+		slot4 = slot4.displayMode
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = self
+		slot0 = slot0.editor
+		slot2 = slot0
+		slot0 = slot0.setDisplayHideMode
+		slot3 = self
+		slot3 = slot3.displayMode
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot0 = slot0.editor
+		slot2 = slot0
+		slot0 = slot0.refreshHeightHide
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.displayMode
+		--- END OF BLOCK #0 ---
+
+		if slot0 == 0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 32-43, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.showTextTip
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "HOMELAND_EDITOR_FULL_DISPLAY"
+		MULTRES = slot3(slot5)
+
+		slot0(slot2, MULTRES)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+		--- BLOCK #2 44-47, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.displayMode
+		--- END OF BLOCK #2 ---
+
+		if slot0 == 1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 48-59, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.showTextTip
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "HOMELAND_EDITOR_SEMI_HIDDEN"
+		MULTRES = slot3(slot5)
+
+		slot0(slot2, MULTRES)
+
+		--- END OF BLOCK #3 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+		--- BLOCK #4 60-63, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.displayMode
+		--- END OF BLOCK #4 ---
+
+		if slot0 == 2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 64-74, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.showTextTip
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "HOMELAND_EDITOR_FULL_HIDDEN"
+		MULTRES = slot3(slot5)
+
+		slot0(slot2, MULTRES)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 75-75, warpins: 4 ---
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
 	slot3 = slot0
 	slot1 = slot0.initSelectPanel
 
@@ -480,10 +737,29 @@ slot18 = function(slot0)
 	slot2 = slot2.btnSaveUButton
 	slot4 = slot2
 	slot2 = slot2.SetActive
-	slot5 = false
+	slot5 = true
 
 	slot2(slot4, slot5)
 
+	slot2 = slot0.view
+	slot2 = slot2.btnSaveUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.openCreateComposeDetail
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
 	slot2 = slot0.view
 	slot2 = slot2.btnSaveUButton
 	slot4 = slot2
@@ -500,7 +776,7 @@ slot18 = function(slot0)
 	slot4 = slot1
 	slot5 = pg
 	slot5 = slot5.getGameString
-	slot7 = "SAVE_BLUEPRINT"
+	slot7 = "HOMELAND_COMPOSE_SAVE_COMBINATION"
 	MULTRES = slot5(slot7)
 
 	slot2(slot4, MULTRES)
@@ -781,9 +1057,410 @@ slot18 = function(slot0)
 
 end
 
-slot17.addListener = slot18
+slot20.addListener = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshDisplayMode
+
+	slot2(slot4)
+
+	slot2 = slot0.viewCtrlComponent
+	slot4 = slot2
+	slot2 = slot2.refreshCameraHeight
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot20.onVisibleChange = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = slot0.editor
+	slot1 = slot1.displayHideMode
+	slot0.displayMode = slot1
+	slot1 = slot0.view
+	slot1 = slot1.btnDisplayUButton
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "Dispaly"
+	slot5 = slot0.displayMode
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.refreshDisplayMode = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.editor
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #3 9-18, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshRangeInfo
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.getSelectedOrnamentIdList
+	slot1, slot2 = slot1(slot3)
+	slot3 = #slot1
+	slot4 = 2
+	--- END OF BLOCK #3 ---
+
+	if slot3 < slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-28, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.showBubbleMessageRaw
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "HOMELAND_COMPOSE_CREATE_MIN_FURNITURE_COUNT"
+	MULTRES = slot5(slot7)
+
+	slot3(MULTRES)
+
+	slot3 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #5 29-31, warpins: 1 ---
+	slot3 = slot0.isOverMaxCount
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-34, warpins: 1 ---
+	slot3 = slot0.isOverMaxBound
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 35-36, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #8 37-42, warpins: 1 ---
+	slot3 = 0
+	slot4 = 0
+	slot5 = ipairs
+	slot7 = slot2
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 43-52, warpins: 1 ---
+	slot10 = ClientHomelandUtils
+	slot10 = slot10.getLoadValueById
+	slot12 = slot9
+	slot10 = slot10(slot12)
+	slot3 = slot3 + slot10
+	slot10 = ClientHomelandUtils
+	slot10 = slot10.getComfortValueById
+	slot12 = slot9
+	slot10 = slot10(slot12)
+	slot4 = slot4 + slot10
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 53-54, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 55-65, warpins: 1 ---
+	slot5 = slot0.editor
+	slot7 = slot5
+	slot5 = slot5.calcEntitiesBounds
+	slot8 = slot0.tempCalcBoundEntities
+	slot5, slot6, slot7, slot8, slot9, slot10 = slot5(slot7, slot8)
+	slot11 = 0
+	slot12 = 0
+	slot13 = 0
+	slot14 = nil
+	--- END OF BLOCK #11 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 66-114, warpins: 1 ---
+	slot15 = math
+	slot15 = slot15.ceil
+	slot17 = slot6 - slot5
+	slot15 = slot15(slot17)
+	slot11 = slot15
+	slot15 = math
+	slot15 = slot15.ceil
+	slot17 = slot10 - slot9
+	slot15 = slot15(slot17)
+	slot12 = slot15
+	slot15 = math
+	slot15 = slot15.ceil
+	slot17 = slot8 - slot7
+	slot15 = slot15(slot17)
+	slot13 = slot15
+	slot15 = Vector3
+	slot15 = slot15.New
+	slot17 = slot5 + slot6
+	slot17 = slot17 * 0.5
+	slot18 = slot9 + slot10
+	slot18 = slot18 * 0.5
+	slot19 = slot7 + slot8
+	slot19 = slot19 * 0.5
+	slot15 = slot15(slot17, slot18, slot19)
+	slot16 = slot0.editor
+	slot18 = slot16
+	slot16 = slot16.getWorldPosition
+	slot19 = slot15
+	slot16 = slot16(slot18, slot19)
+	slot17 = slot0.editor
+	slot19 = slot17
+	slot17 = slot17.getWorldRotation
+	slot20 = slot0.editor
+	slot22 = slot20
+	slot20 = slot20.getDefaultRotation
+	MULTRES = slot20(slot22)
+	slot17 = slot17(slot19, MULTRES)
+	slot18 = Vector3
+	slot18 = slot18.forward
+	slot17 = slot17 * slot18
+	slot18 = 0
+	slot17.y = slot18
+	slot18 = Vector3
+	slot18 = slot18.SqrMagnitude
+	slot20 = slot17
+	slot18 = slot18(slot20)
+	slot19 = 0.01
+	--- END OF BLOCK #12 ---
+
+	if slot18 <= slot19 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 115-117, warpins: 1 ---
+	slot18 = Vector3
+	slot17 = slot18.forward
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 118-120, warpins: 1 ---
+	slot20 = slot17
+	slot18 = slot17.SetNormalize
+
+	slot18(slot20)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 121-148, warpins: 2 ---
+	slot18 = {}
+	slot19 = {}
+	slot20 = {}
+	slot21 = slot16.x
+	slot20.x = slot21
+	slot21 = slot16.y
+	slot20.y = slot21
+	slot21 = slot16.z
+	slot20.z = slot21
+	slot19.center = slot20
+	slot20 = {}
+	slot21 = slot6 - slot5
+	slot20.x = slot21
+	slot21 = slot10 - slot9
+	slot20.y = slot21
+	slot21 = slot8 - slot7
+	slot20.z = slot21
+	slot19.size = slot20
+	slot20 = {}
+	slot21 = slot17.x
+	slot20.x = slot21
+	slot21 = slot17.z
+	slot20.z = slot21
+	slot19.front = slot20
+	slot18.cameraTargetInfo = slot19
+
+	slot19 = function(slot0)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.setBlueprintPhotoSceneActive
+		slot4 = slot0
+		slot5 = ornamentIdList
+
+		slot1(slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot18.setSceneActive = slot19
+	slot14 = slot18
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 149-179, warpins: 2 ---
+	slot15 = pg
+	slot15 = slot15.global
+	slot15 = slot15.ui
+	slot15 = slot15.homelandFurnitureComposeDetail
+	slot17 = slot15
+	slot15 = slot15.open
+	slot18 = {}
+	slot19 = UIConst
+	slot19 = slot19.HOME_DESIGN_MODE
+	slot19 = slot19.CREATE
+	slot18.designIndex = slot19
+	slot19 = UIConst
+	slot19 = slot19.HOME_COMPOSE_MODE
+	slot19 = slot19.COMBINATION
+	slot18.composeIndex = slot19
+	slot18.photoContext = slot14
+	slot19 = {}
+	slot19.ornamentIdList = slot1
+	slot19.homeIdList = slot2
+	slot20 = {}
+	slot20[1] = slot11
+	slot20[2] = slot12
+	slot20[3] = slot13
+	slot19.rangeSize = slot20
+	slot19.loadValue = slot3
+	slot19.comfortValue = slot4
+	slot18.detailData = slot19
+
+	slot15(slot17, slot18)
+
+	slot15 = true
+
+	return slot15
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 180-180, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 181-181, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 182-182, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #19 ---
+
+
+
+end
+
+slot20.openCreateComposeDetail = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
@@ -907,10 +1584,16 @@ slot18 = function(slot0)
 
 end
 
-slot17.initConsoleKeyBind = slot18
+slot20.initConsoleKeyBind = slot21
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-72, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-80, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setBlueprintPhotoSceneActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	slot3 = slot0
 	slot1 = slot0.clearPreMultiSelect
 
@@ -982,7 +1665,13 @@ slot18 = function(slot0)
 
 	slot1 = table
 	slot1 = slot1.clear
-	slot3 = slot0.tempSelectChildEntitiesCache
+	slot3 = slot0.tempPreMultiSelectEntitiesCache
+
+	slot1(slot3)
+
+	slot1 = table
+	slot1 = slot1.clear
+	slot3 = slot0.tempPreMultiSelectList
 
 	slot1(slot3)
 
@@ -1013,9 +1702,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onDestroy = slot18
+slot20.onDestroy = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -1036,9 +1725,22 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onOpen = slot18
+slot20.onOpen = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.checkVirtualMouseHoverSnapEnabled = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1047,9 +1749,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onShow = slot18
+slot20.onShow = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1058,9 +1760,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onHide = slot18
+slot20.onHide = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-39, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.selectedPanelUComponent
@@ -1178,9 +1880,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.initSelectPanel = slot18
+slot20.initSelectPanel = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshSelectList
@@ -1194,9 +1896,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onSelectListChange = slot18
+slot20.onSelectListChange = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.editor
 	slot1 = slot1.multiSelectEntities
@@ -1434,44 +2136,91 @@ slot18 = function(slot0)
 	--- BLOCK #17 108-113, warpins: 3 ---
 	slot6.interactable = slot7
 	slot6 = slot0.view
-	slot6 = slot6.btnRecycleUButton
+	slot6 = slot6.btnSaveUButton
 	slot7 = 0
 	--- END OF BLOCK #17 ---
 
-	if slot3 <= slot7 then
+	if slot3 > slot7 then
 	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #18 114-115, warpins: 1 ---
-	slot7 = false
+	--- BLOCK #18 114-116, warpins: 1 ---
+	slot7 = slot0.isOverMaxCount
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #19 116-116, warpins: 1 ---
-	slot7 = true
+	--- BLOCK #19 117-119, warpins: 1 ---
+	slot7 = slot0.isOverMaxBound
+	slot7 = not slot7
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #20 117-118, warpins: 2 ---
+	--- BLOCK #20 120-121, warpins: 2 ---
+	slot7 = false
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #21 122-122, warpins: 0 ---
+	slot7 = true
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 123-128, warpins: 3 ---
+	slot6.interactable = slot7
+	slot6 = slot0.view
+	slot6 = slot6.btnRecycleUButton
+	slot7 = 0
+	--- END OF BLOCK #22 ---
+
+	if slot3 <= slot7 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 129-130, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #23 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #24 131-131, warpins: 1 ---
+	slot7 = true
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 132-133, warpins: 2 ---
 	slot6.interactable = slot7
 
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #25 ---
 
 
 
 end
 
-slot17.refreshSelectList = slot18
+slot20.refreshSelectList = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isOverMaxCount
 	--- END OF BLOCK #0 ---
@@ -1503,9 +2252,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.setOverMaxCountState = slot18
+slot20.setOverMaxCountState = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isOverMaxBound
 	--- END OF BLOCK #0 ---
@@ -1537,9 +2286,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.setOverMaxBoundState = slot18
+slot20.setOverMaxBoundState = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isOverMaxCount
 	--- END OF BLOCK #0 ---
@@ -1612,9 +2361,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.refreshErrorState = slot18
+slot20.refreshErrorState = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.clear
@@ -2030,9 +2779,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.refreshRangeInfo = slot18
+slot20.refreshRangeInfo = slot21
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot21 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-57, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2165,20 +2914,25 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.rendererSelectItem = slot18
+slot20.rendererSelectItem = slot21
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
 	slot4 = slot1.entId
 	slot2 = slot2(slot4)
-	slot3 = slot0.editor
-	slot5 = slot3
-	slot3 = slot3.removeMultiSelectEntity
-	slot6 = slot2
+	slot5 = slot0
+	slot3 = slot0.collectOrnamentEditGroupEntities
+	slot6 = {}
+	slot6[1] = slot2
+	slot3 = slot3(slot5, slot6)
+	slot4 = slot0.editor
+	slot6 = slot4
+	slot4 = slot4.removeMultiSelectEntities
+	slot7 = slot3
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2187,9 +2941,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onSelectItemDeleteBtnClick = slot18
+slot20.onSelectItemDeleteBtnClick = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -2283,9 +3037,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onDeleteAllBtnClick = slot18
+slot20.onDeleteAllBtnClick = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.carGroup
 	--- END OF BLOCK #0 ---
@@ -2364,9 +3118,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onWithdrawBtnClick = slot18
+slot20.onWithdrawBtnClick = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.editor
 	slot1 = slot1.multiSelectEntities
@@ -2455,14 +3209,57 @@ slot18 = function(slot0)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 30-54, warpins: 1 ---
+	--- BLOCK #8 30-32, warpins: 1 ---
+	slot3 = #slot2
+	--- END OF BLOCK #8 ---
+
+	if slot3 == 1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 33-53, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
 	slot3 = slot3.homelandPlacement
 	slot5 = slot3
 	slot3 = slot3.open
-	slot6 = {}
+	slot6 = {
+		isFromMultiSelect = true
+	}
+	slot7 = ClientConst
+	slot7 = slot7.HomeEditType
+	slot7 = slot7.UpdateOrnament
+	slot6.editType = slot7
+	slot7 = slot2[1]
+	slot6.entity = slot7
+	slot7 = slot0.editor
+	slot6.editor = slot7
+	slot7 = slot0.carGroup
+	slot6.carGroup = slot7
+	slot7 = slot0.areaId
+	slot6.areaId = slot7
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 54-72, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.homelandPlacement
+	slot5 = slot3
+	slot3 = slot3.open
+	slot6 = {
+		isFromMultiSelect = true
+	}
 	slot7 = ClientConst
 	slot7 = slot7.HomeEditType
 	slot7 = slot7.UpdateOrnament
@@ -2472,34 +3269,42 @@ slot18 = function(slot0)
 	slot6.editor = slot7
 	slot7 = slot0.carGroup
 	slot6.carGroup = slot7
+	slot7 = slot0.areaId
+	slot6.areaId = slot7
 
 	slot3(slot5, slot6)
 
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 73-80, warpins: 2 ---
 	slot3 = GlobalData
 	slot3 = slot3.BILogger
 	slot5 = slot3
 	slot3 = slot3.customeLog
 	slot6 = "home_build_mode"
 	slot7 = {
+		is_continuous_place = 0,
 		is_multiple_edit = 0,
 		is_multiple_choice = 1,
 		action_type = "edit_confirm",
-		is_continuous_buy = 0,
-		is_continuous_place = 0
+		is_continuous_buy = 0
 	}
 
 	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot17.onEditBtnClick = slot18
+slot20.onEditBtnClick = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.carGroup
 	--- END OF BLOCK #0 ---
@@ -2539,9 +3344,822 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getOrnamentEnt = slot18
+slot20.getOrnamentEnt = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.space
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot4 = slot0.carGroup
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot4 = slot0.carGroup
+	slot3 = slot4.campCarEnt
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-26, warpins: 2 ---
+	slot4 = ClientHomelandUtils
+	slot4 = slot4.collectOrnamentEditGroupEntities
+	slot6 = slot1
+	slot7 = {}
+	slot8 = slot0.editor
+	slot7.editor = slot8
+	slot8 = slot0.areaId
+	slot7.areaId = slot8
+	slot7.homeSpace = slot3
+
+	slot8 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.getOrnamentEnt
+		slot4 = slot0
+
+		return slot1(slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot7.getEntity = slot8
+	slot7.collectGroups = slot2
+
+	return slot4(slot6, slot7)
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.collectOrnamentEditGroupEntities = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = {}
+	slot2 = {}
+	slot3 = slot0.editor
+	slot3 = slot3.multiSelectEntities
+	slot4 = ipairs
+	slot6 = slot0.editor
+	slot6 = slot6.multiSelectList
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot9 = slot3[slot8]
+	--- END OF BLOCK #1 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 13-15, warpins: 1 ---
+	slot10 = slot9.homeTemplateId
+	--- END OF BLOCK #2 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot10 = slot9.ornamentId
+	--- END OF BLOCK #3 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-28, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot1
+	slot13 = slot9.ornamentId
+
+	slot10(slot12, slot13)
+
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot2
+	slot13 = slot9.homeTemplateId
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-30, warpins: 5 ---
+	--- END OF BLOCK #5 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 31-33, warpins: 1 ---
+	slot4 = slot1
+	slot5 = slot2
+
+	return slot4, slot5
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot20.getSelectedOrnamentIdList = slot21
+
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot0.view
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot3 = slot0.isBlueprintPhotoSceneActive
+	--- END OF BLOCK #3 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #54
+
+
+	--- BLOCK #5 11-12, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #6 13-16, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot0.photoHiddenFurniture
+	--- END OF BLOCK #6 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 17-17, warpins: 1 ---
+	slot5 = EMPTY_TABLE
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 18-19, warpins: 2 ---
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #9 20-21, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 22-24, warpins: 1 ---
+	slot8 = slot7.destroyed
+	--- END OF BLOCK #10 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 25-27, warpins: 1 ---
+	slot8 = slot7.setVisible
+	--- END OF BLOCK #11 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 28-34, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.setVisible
+	slot11 = ClientConst
+	slot11 = slot11.MODEL_VISIBLE_KEY
+	slot11 = slot11.PHOTO
+	slot12 = true
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 35-36, warpins: 5 ---
+	--- END OF BLOCK #13 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 37-40, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot0.photoOutlinedFurniture
+	--- END OF BLOCK #14 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 41-41, warpins: 1 ---
+	slot5 = EMPTY_TABLE
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 42-43, warpins: 2 ---
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #17 44-45, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #18 46-48, warpins: 1 ---
+	slot8 = slot7.destroyed
+	--- END OF BLOCK #18 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #19 49-51, warpins: 1 ---
+	slot8 = slot7.isInMultiSelect
+	--- END OF BLOCK #19 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 52-54, warpins: 1 ---
+	slot8 = slot7.setEditorOutline
+	--- END OF BLOCK #20 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 55-63, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.setEditorOutline
+	slot11 = ClientConst
+	slot11 = slot11.EntityEditorOutlinePriority
+	slot11 = slot11.MutiSelect
+	slot12 = true
+	slot13 = AddressDataConst
+	slot13 = slot13.HOMELAND_OUTLINE_GREEN
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 64-65, warpins: 6 ---
+	--- END OF BLOCK #22 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #17
+	GO OUT TO BLOCK #23
+
+
+	--- BLOCK #23 66-68, warpins: 1 ---
+	slot3 = slot0.viewCtrlComponent
+	--- END OF BLOCK #23 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #24 69-71, warpins: 1 ---
+	slot4 = slot3.isDestroyed
+	--- END OF BLOCK #24 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #25 72-74, warpins: 1 ---
+	slot4 = slot3.setEnable
+	--- END OF BLOCK #25 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #26 75-79, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.setEnable
+	slot7 = slot0.photoViewCtrlWasEnabled
+	--- END OF BLOCK #26 ---
+
+	if slot7 == false then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 80-81, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #27 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #28 82-82, warpins: 1 ---
+	slot7 = true
+
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 83-83, warpins: 2 ---
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 84-92, warpins: 4 ---
+	slot4 = {}
+	slot0.photoHiddenFurniture = slot4
+	slot4 = {}
+	slot0.photoOutlinedFurniture = slot4
+	slot4 = nil
+	slot0.photoViewCtrlWasEnabled = slot4
+	slot4 = false
+	slot0.isBlueprintPhotoSceneActive = slot4
+	--- END OF BLOCK #30 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #55
+
+
+	--- BLOCK #31 93-95, warpins: 1 ---
+	slot3 = slot0.editor
+	--- END OF BLOCK #31 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 96-98, warpins: 1 ---
+	slot4 = slot3.forEachHideableEntity
+	--- END OF BLOCK #32 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 99-99, warpins: 2 ---
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
+
+
+	--- BLOCK #34 100-102, warpins: 1 ---
+	slot4 = slot0.viewCtrlComponent
+	--- END OF BLOCK #34 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #35 103-105, warpins: 1 ---
+	slot5 = slot4.isDestroyed
+	--- END OF BLOCK #35 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #36 106-108, warpins: 1 ---
+	slot5 = slot4.setEnable
+	--- END OF BLOCK #36 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 109-114, warpins: 1 ---
+	slot5 = slot4.enable
+	slot0.photoViewCtrlWasEnabled = slot5
+	slot7 = slot4
+	slot5 = slot4.setEnable
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 115-118, warpins: 4 ---
+	slot5 = {}
+	slot6 = ipairs
+	--- END OF BLOCK #38 ---
+
+	slot8 = if not slot2 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #40
+	end
+
+
+	--- BLOCK #39 119-119, warpins: 1 ---
+	slot8 = EMPTY_TABLE
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 120-121, warpins: 2 ---
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
+
+
+	--- BLOCK #41 122-123, warpins: 1 ---
+	slot11 = true
+	slot5[slot10] = slot11
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 124-125, warpins: 2 ---
+	--- END OF BLOCK #42 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #41
+	GO OUT TO BLOCK #43
+
+
+	--- BLOCK #43 126-137, warpins: 1 ---
+	slot6 = {}
+	slot0.photoHiddenFurniture = slot6
+	slot6 = {}
+	slot0.photoOutlinedFurniture = slot6
+	slot8 = slot3
+	slot6 = slot3.forEachHideableEntity
+
+	slot9 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 3-5, warpins: 1 ---
+		slot1 = slot0.setVisible
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 6-10, warpins: 1 ---
+		slot1 = selectedOrnamentIdSet
+		slot2 = slot0.ornamentId
+		slot1 = slot1[slot2]
+		--- END OF BLOCK #2 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 11-23, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.setVisible
+		slot4 = ClientConst
+		slot4 = slot4.MODEL_VISIBLE_KEY
+		slot4 = slot4.PHOTO
+		slot5 = false
+
+		slot1(slot3, slot4, slot5)
+
+		slot1 = table
+		slot1 = slot1.insert
+		slot3 = self
+		slot3 = slot3.photoHiddenFurniture
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 24-24, warpins: 4 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot6(slot8, slot9)
+
+	slot6 = pairs
+	slot8 = slot3.multiSelectEntities
+	--- END OF BLOCK #43 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #45
+	end
+
+
+	--- BLOCK #44 138-138, warpins: 1 ---
+	slot8 = EMPTY_TABLE
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 139-140, warpins: 2 ---
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #45 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #51
+
+
+	--- BLOCK #46 141-142, warpins: 1 ---
+	--- END OF BLOCK #46 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #47
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #47 143-146, warpins: 1 ---
+	slot11 = slot10.ornamentId
+	slot11 = slot5[slot11]
+	--- END OF BLOCK #47 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #48 147-149, warpins: 1 ---
+	slot11 = slot10.isInMultiSelect
+	--- END OF BLOCK #48 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #49 150-152, warpins: 1 ---
+	slot11 = slot10.setEditorOutline
+	--- END OF BLOCK #49 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 153-164, warpins: 1 ---
+	slot13 = slot10
+	slot11 = slot10.setEditorOutline
+	slot14 = ClientConst
+	slot14 = slot14.EntityEditorOutlinePriority
+	slot14 = slot14.MutiSelect
+	slot15 = false
+
+	slot11(slot13, slot14, slot15)
+
+	slot11 = table
+	slot11 = slot11.insert
+	slot13 = slot0.photoOutlinedFurniture
+	slot14 = slot10
+
+	slot11(slot13, slot14)
+
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 165-166, warpins: 6 ---
+	--- END OF BLOCK #51 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #46
+	GO OUT TO BLOCK #52
+
+
+	--- BLOCK #52 167-170, warpins: 1 ---
+	slot6 = true
+	slot0.isBlueprintPhotoSceneActive = slot6
+
+	return
+	--- END OF BLOCK #52 ---
+
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 171-171, warpins: 2 ---
+	return
+	--- END OF BLOCK #53 ---
+
+	FLOW; TARGET BLOCK #54
+
+
+	--- BLOCK #54 172-172, warpins: 2 ---
+	return
+	--- END OF BLOCK #54 ---
+
+	FLOW; TARGET BLOCK #55
+
+
+	--- BLOCK #55 173-173, warpins: 2 ---
+	return
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 174-174, warpins: 2 ---
+	return
+	--- END OF BLOCK #56 ---
+
+
+
+end
+
+slot20.setBlueprintPhotoSceneActive = slot21
+
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2593,181 +4211,94 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 13-28, warpins: 2 ---
-	slot2 = {}
-	slot3 = slot1.id
-	slot2[slot3] = slot1
-	slot3 = table
-	slot3 = slot3.clear
-	slot5 = slot0.selectEntitiesCache
-
-	slot3(slot5)
-
-	slot3 = table
-	slot3 = slot3.insert
-	slot5 = slot0.selectEntitiesCache
-	slot6 = slot1
-
-	slot3(slot5, slot6)
-
-	slot3 = slot0.editor
-	slot3 = slot3.buildAttachManager
+	--- BLOCK #5 13-15, warpins: 2 ---
+	slot2 = slot0.areaId
 	--- END OF BLOCK #5 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 29-43, warpins: 1 ---
-	slot3 = table
-	slot3 = slot3.clear
-	slot5 = slot0.tempSelectEntitiesCache
+	--- BLOCK #6 16-19, warpins: 1 ---
+	slot2 = slot1.areaId
+	slot3 = slot0.areaId
 
-	slot3(slot5)
-
-	slot3 = slot0.editor
-	slot3 = slot3.buildAttachManager
-	slot5 = slot3
-	slot3 = slot3.getAttachChildEntitiesId
-	slot6 = slot1.ornamentId
-	slot7 = slot0.tempSelectEntitiesCache
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = pairs
-	slot5 = slot0.tempSelectEntitiesCache
-	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #7 44-46, warpins: 1 ---
-	slot8 = slot2[slot6]
-	--- END OF BLOCK #7 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #8
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 47-52, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.getOrnamentEnt
-	slot11 = slot6
-	slot8 = slot8(slot10, slot11)
+	--- BLOCK #7 20-20, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 21-31, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.collectOrnamentEditGroupEntities
+	slot5 = {}
+	slot5[1] = slot1
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot0.editor
+	slot3 = slot3.multiSelectEntities
+	slot4 = slot1.id
+	slot3 = slot3[slot4]
 	--- END OF BLOCK #8 ---
 
-	slot8 = if slot8 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 53-54, warpins: 1 ---
-	slot9 = slot8.id
-	slot2[slot9] = slot8
+	--- BLOCK #9 32-37, warpins: 1 ---
+	slot3 = slot0.editor
+	slot5 = slot3
+	slot3 = slot3.addMultiSelectEntities
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 55-59, warpins: 2 ---
-	slot9 = table
-	slot9 = slot9.insert
-	slot11 = slot0.selectEntitiesCache
-	slot12 = slot8
+	--- BLOCK #10 38-42, warpins: 1 ---
+	slot3 = slot0.editor
+	slot5 = slot3
+	slot3 = slot3.removeMultiSelectEntities
+	slot6 = slot2
 
-	slot9(slot11, slot12)
+	slot3(slot5, slot6)
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 60-61, warpins: 3 ---
-	--- END OF BLOCK #11 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #12
-
-
-	--- BLOCK #12 62-65, warpins: 1 ---
-	slot3 = table
-	slot3 = slot3.clear
-	slot5 = slot0.tempSelectEntitiesCache
-
-	slot3(slot5)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 66-71, warpins: 2 ---
-	slot3 = slot0.editor
-	slot3 = slot3.multiSelectEntities
-	slot4 = slot1.id
-	slot3 = slot3[slot4]
-	--- END OF BLOCK #13 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 72-77, warpins: 1 ---
-	slot3 = slot0.editor
-	slot5 = slot3
-	slot3 = slot3.addMultiSelectEntities
-	slot6 = slot0.selectEntitiesCache
-
-	slot3(slot5, slot6)
-
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #15 78-82, warpins: 1 ---
-	slot3 = slot0.editor
-	slot5 = slot3
-	slot3 = slot3.removeMultiSelectEntities
-	slot6 = slot0.selectEntitiesCache
-
-	slot3(slot5, slot6)
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 83-87, warpins: 2 ---
-	slot3 = table
-	slot3 = slot3.clear
-	slot5 = slot0.selectEntitiesCache
-
-	slot3(slot5)
-
+	--- BLOCK #11 43-43, warpins: 2 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot17.onSelectEnt = slot18
+slot20.onSelectEnt = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isMobileMultiSelectMode
 	--- END OF BLOCK #0 ---
@@ -2836,9 +4367,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.setMobileMultiSelectMode = slot18
+slot20.setMobileMultiSelectMode = slot21
 
-slot18 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.clearPreMultiSelect
@@ -2991,9 +4522,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.checkAndHandleStartDrag = slot18
+slot20.checkAndHandleStartDrag = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isInMultiSelecting
 	--- END OF BLOCK #0 ---
@@ -3038,9 +4569,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.checkAndHandleEndDrag = slot18
+slot20.checkAndHandleEndDrag = slot21
 
-slot18 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -3183,136 +4714,129 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.checkAndHandleDrag = slot18
+slot20.checkAndHandleDrag = slot21
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = slot0.editor
-	slot2 = slot2.buildAttachManager
-
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = {}
+	slot3 = pairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
-	return
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot2
+	slot11 = slot7
+
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-13, warpins: 2 ---
-	slot2 = table
-	slot2 = slot2.clear
-	slot4 = slot0.tempSelectChildEntitiesCache
-
-	slot2(slot4)
-
-	slot2 = pairs
-	slot4 = slot1
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #2 11-12, warpins: 2 ---
 	--- END OF BLOCK #2 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 13-26, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot2
+
+	slot6 = function(slot0, slot1)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot2 = tostring
+		slot4 = slot0.id
+		slot2 = slot2(slot4)
+		slot3 = tostring
+		slot5 = slot1.id
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #0 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 12-12, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.collectOrnamentEditGroupEntities
+	slot6 = slot2
+	slot7 = true
+	slot3, slot4, slot5 = slot3(slot5, slot6, slot7)
+	slot6 = ipairs
+	slot8 = slot3
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 14-16, warpins: 1 ---
-	slot7 = slot6.ornamentId
-	--- END OF BLOCK #3 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 17-23, warpins: 1 ---
-	slot7 = slot0.editor
-	slot7 = slot7.buildAttachManager
-	slot9 = slot7
-	slot7 = slot7.getAttachChildEntitiesId
-	slot10 = slot6.ornamentId
-	slot11 = slot0.tempSelectChildEntitiesCache
-
-	slot7(slot9, slot10, slot11)
+	--- BLOCK #4 27-28, warpins: 1 ---
+	slot11 = slot10.id
+	slot1[slot11] = slot10
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 24-25, warpins: 3 ---
+	--- BLOCK #5 29-30, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #3
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #4
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 26-29, warpins: 1 ---
-	slot2 = pairs
-	slot4 = slot0.tempSelectChildEntitiesCache
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #6 31-32, warpins: 1 ---
+	return slot5
 	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #7 30-35, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.getOrnamentEnt
-	slot10 = slot5
-	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #7 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 36-37, warpins: 1 ---
-	slot8 = slot7.id
-	slot1[slot8] = slot7
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 38-39, warpins: 3 ---
-	--- END OF BLOCK #9 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #10
-
-
-	--- BLOCK #10 40-44, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.clear
-	slot4 = slot0.tempSelectChildEntitiesCache
-
-	slot2(slot4)
-
-	return
-	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot17.addPreSelectOrnamentChilds = slot18
+slot20.addPreSelectRelatedOrnaments = slot21
 
-slot18 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-23, warpins: 1 ---
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot3 = table
 	slot3 = slot3.clear
 	slot5 = slot0.tempSelectEntitiesCache
@@ -3332,166 +4856,275 @@ slot18 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6, slot7, slot8, slot9)
 
 	slot5 = slot0
-	slot3 = slot0.addPreSelectOrnamentChilds
+	slot3 = slot0.addPreSelectRelatedOrnaments
 	slot6 = slot0.tempSelectEntitiesCache
-
-	slot3(slot5, slot6)
-
-	slot3 = false
-	slot4 = pairs
-	slot6 = slot0.tempSelectEntitiesCache
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #0 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #1 24-26, warpins: 1 ---
-	slot9 = slot8.canEntEdit
-	--- END OF BLOCK #1 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #2 27-31, warpins: 1 ---
-	slot11 = slot8
-	slot9 = slot8.canEntEdit
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #2 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 32-34, warpins: 1 ---
-	slot9 = slot8.setPreMultiSelectMode
-	--- END OF BLOCK #3 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 35-40, warpins: 1 ---
-	slot11 = slot0
-	slot9 = slot0.addPreMultiSelect
-	slot12 = slot8
-	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #4 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 41-41, warpins: 1 ---
-	slot3 = true
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 42-43, warpins: 6 ---
-	--- END OF BLOCK #6 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 44-47, warpins: 1 ---
-	slot4 = pairs
-	slot6 = slot0.preMultiSelectEntities
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #8 48-51, warpins: 1 ---
-	slot9 = slot0.tempSelectEntitiesCache
-	slot9 = slot9[slot7]
-	--- END OF BLOCK #8 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 52-57, warpins: 1 ---
-	slot11 = slot0
-	slot9 = slot0.removePreMultiSelect
-	slot12 = slot8
-	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #9 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 58-58, warpins: 1 ---
-	slot3 = true
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 59-60, warpins: 4 ---
-	--- END OF BLOCK #11 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #12
-
-
-	--- BLOCK #12 61-62, warpins: 1 ---
-	--- END OF BLOCK #12 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 63-65, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.refreshRangeInfo
+	slot3 = slot3(slot5, slot6)
+	slot4 = table
+	slot4 = slot4.clear
+	slot6 = slot0.tempPreMultiSelectEntitiesCache
 
 	slot4(slot6)
 
+	slot4 = table
+	slot4 = slot4.clear
+	slot6 = slot0.tempPreMultiSelectList
+
+	slot4(slot6)
+
+	slot6 = slot0
+	slot4 = slot0.getPreMultiSelectMaxCount
+	slot4 = slot4(slot6)
+	slot5 = 0
+	slot6 = ipairs
+	slot8 = slot3
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #1 35-39, warpins: 1 ---
+	slot11 = 0
+	slot12 = ipairs
+	slot14 = slot10
+	slot12, slot13, slot14 = slot12(slot14)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 40-45, warpins: 1 ---
+	slot19 = slot0
+	slot17 = slot0.checkCanPreMultiSelect
+	slot20 = slot16
+	slot17 = slot17(slot19, slot20)
+	--- END OF BLOCK #2 ---
+
+	slot17 = if slot17 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 46-47, warpins: 1 ---
+	slot11 = slot11 + 1
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 48-51, warpins: 1 ---
+	slot17 = slot0.tempSelectEntitiesCache
+	slot18 = slot16.id
+	slot19 = nil
+	slot17[slot18] = slot19
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 52-53, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot15, slot16 in slot12, slot13, slot14
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 54-56, warpins: 1 ---
+	slot12 = slot5 + slot11
+	--- END OF BLOCK #6 ---
+
+	if slot4 >= slot12 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #7 57-60, warpins: 1 ---
+	slot12 = ipairs
+	slot14 = slot10
+	slot12, slot13, slot14 = slot12(slot14)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 61-65, warpins: 1 ---
+	slot17 = slot0.tempSelectEntitiesCache
+	slot18 = slot16.id
+	slot17 = slot17[slot18]
+	--- END OF BLOCK #8 ---
+
+	slot17 = if slot17 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 66-73, warpins: 1 ---
+	slot17 = slot0.tempPreMultiSelectEntitiesCache
+	slot18 = slot16.id
+	slot17[slot18] = slot16
+	slot17 = table
+	slot17 = slot17.insert
+	slot19 = slot0.tempPreMultiSelectList
+	slot20 = slot16
+
+	slot17(slot19, slot20)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 74-75, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	for slot15, slot16 in slot12, slot13, slot14
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 76-76, warpins: 1 ---
+	slot5 = slot5 + slot11
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 77-78, warpins: 3 ---
+	--- END OF BLOCK #12 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 79-83, warpins: 1 ---
+	slot6 = false
+	slot7 = pairs
+	slot9 = slot0.preMultiSelectEntities
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #14 66-66, warpins: 2 ---
-	return
+	--- BLOCK #14 84-87, warpins: 1 ---
+	slot12 = slot0.tempPreMultiSelectEntitiesCache
+	slot12 = slot12[slot10]
 	--- END OF BLOCK #14 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 88-93, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.removePreMultiSelect
+	slot15 = slot11
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #15 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 94-94, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 95-96, warpins: 4 ---
+	--- END OF BLOCK #17 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #18
+
+
+	--- BLOCK #18 97-100, warpins: 1 ---
+	slot7 = ipairs
+	slot9 = slot0.tempPreMultiSelectList
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #19 101-106, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.addPreMultiSelect
+	slot15 = slot11
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #19 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 107-107, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 108-109, warpins: 3 ---
+	--- END OF BLOCK #21 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #19
+	GO OUT TO BLOCK #22
+
+
+	--- BLOCK #22 110-111, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 112-114, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.refreshRangeInfo
+
+	slot7(slot9)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 115-115, warpins: 2 ---
+	return
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot17.updatePreSelectEntities = slot18
+slot20.updatePreSelectEntities = slot21
 
-slot18 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updatePreSelectEntities
@@ -3600,9 +5233,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.endPreSelectEntities = slot18
+slot20.endPreSelectEntities = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.selectBoxVisible
 	--- END OF BLOCK #0 ---
@@ -3747,9 +5380,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.setSelectBoxVisible = slot18
+slot20.setSelectBoxVisible = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.selectType
 	slot2 = HomelandMultiSelectCtrl
@@ -3787,9 +5420,218 @@ slot18 = function(slot0)
 
 end
 
-slot17.checkIsSelectMode = slot18
+slot20.checkIsSelectMode = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.setPreMultiSelectMode
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.canEntEdit
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-11, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.canEntEdit
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-16, warpins: 2 ---
+	slot2 = slot0.areaId
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 17-20, warpins: 1 ---
+	slot2 = slot1.areaId
+	slot3 = slot0.areaId
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-28, warpins: 3 ---
+	slot2 = slot0.editor
+	slot2 = slot2.multiSelectEntities
+	slot3 = slot1.id
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #7 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-30, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 31-31, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 32-36, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.checkIsSelectMode
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #10 ---
+
+	if slot3 == slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 37-38, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 39-39, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 40-40, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot20.checkCanPreMultiSelect = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = HomelandConfigData
+	slot1 = slot1.maxMultiSelectNum
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = 100
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-16, warpins: 2 ---
+	slot2 = math
+	slot2 = slot2.floor
+	slot4 = HomelandMultiSelectCtrl
+	slot4 = slot4.PRE_MULTI_SELECT_MAX_COUNT_RATIO
+	slot4 = slot1 * slot4
+	slot2 = slot2(slot4)
+	slot5 = slot0
+	slot3 = slot0.checkIsSelectMode
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-20, warpins: 1 ---
+	slot3 = slot0.editor
+	slot3 = slot3.multiSelectList
+	slot3 = #slot3
+	slot2 = slot2 - slot3
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-25, warpins: 2 ---
+	slot3 = math
+	slot3 = slot3.max
+	slot5 = slot2
+	slot6 = 0
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.getPreMultiSelectMaxCount = slot21
+
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.preMultiSelectEntities
 	slot3 = slot1.id
@@ -3799,11 +5641,36 @@ slot18 = function(slot0, slot1)
 	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 6-16, warpins: 1 ---
+	--- BLOCK #1 6-12, warpins: 1 ---
+	slot2 = slot0.preMultiSelectList
+	slot2 = #slot2
+	slot5 = slot0
+	slot3 = slot0.getPreMultiSelectMaxCount
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	if slot3 <= slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-14, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-25, warpins: 2 ---
 	slot2 = slot0.preMultiSelectEntities
 	slot3 = slot1.id
 	slot2[slot3] = slot1
@@ -3815,16 +5682,16 @@ slot18 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = slot1.setPreMultiSelectMode
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 17-22, warpins: 1 ---
+	--- BLOCK #4 26-31, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.setPreMultiSelectMode
 	slot7 = slot0
@@ -3833,34 +5700,34 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, MULTRES)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 23-24, warpins: 2 ---
+	--- BLOCK #5 32-33, warpins: 2 ---
 	slot2 = true
 
 	return slot2
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 25-26, warpins: 2 ---
+	--- BLOCK #6 34-35, warpins: 2 ---
 	slot2 = false
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot17.addPreMultiSelect = slot18
+slot20.addPreMultiSelect = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.preMultiSelectEntities
 	slot3 = slot1.id
@@ -3928,9 +5795,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.removePreMultiSelect = slot18
+slot20.removePreMultiSelect = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = false
 	slot0.isInMultiSelecting = slot1
@@ -3993,9 +5860,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.clearPreMultiSelect = slot18
+slot20.clearPreMultiSelect = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4017,9 +5884,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.closePanel = slot18
+slot20.closePanel = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.globalEditingComponent
 	--- END OF BLOCK #0 ---
@@ -4075,9 +5942,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.refreshTopList = slot18
+slot20.refreshTopList = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.warningUContainer
@@ -4338,9 +6205,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.refreshErrorInfo = slot18
+slot20.refreshErrorInfo = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4435,9 +6302,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getPlaceErrorText = slot18
+slot20.getPlaceErrorText = slot21
 
-slot18 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4459,71 +6326,121 @@ slot18 = function(slot0)
 
 end
 
-slot17.shopButtonClick = slot18
+slot20.shopButtonClick = slot21
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot1.preSelectEntity
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = {}
+	slot3 = ipairs
+	slot5 = slot1.preSelectEntities
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot2 = slot1.preSelectEntity
-	slot2 = slot2.destroyed
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-14, warpins: 1 ---
-	slot2 = slot0.editor
-	slot2 = slot2.multiSelectEntities
-	slot3 = slot1.preSelectEntity
-	slot3 = slot3.id
-	slot2 = slot2[slot3]
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 15-19, warpins: 1 ---
-	slot2 = slot0.editor
-	slot4 = slot2
-	slot2 = slot2.addMultiSelectEntity
-	slot5 = slot1.preSelectEntity
+	--- BLOCK #3 9-13, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot2
+	slot11 = slot7
 
-	slot2(slot4, slot5)
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-20, warpins: 4 ---
-	return
+	--- BLOCK #4 14-15, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 16-18, warpins: 1 ---
+	slot3 = slot1.preSelectEntity
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 19-23, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.insert
+	slot5 = slot2
+	slot6 = slot1.preSelectEntity
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-31, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.collectOrnamentEditGroupEntities
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	slot4 = #slot3
+	slot5 = 0
+	--- END OF BLOCK #7 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-36, warpins: 1 ---
+	slot4 = slot0.editor
+	slot6 = slot4
+	slot4 = slot4.addMultiSelectEntities
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 37-37, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
 
 
 end
 
-slot17.initPreSelectState = slot18
+slot20.initPreSelectState = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -4532,9 +6449,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onChildEntityAdded = slot18
+slot20.onChildEntityAdded = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -4543,9 +6460,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onChildEntityRemove = slot18
+slot20.onChildEntityRemove = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -4554,9 +6471,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onChildEntityDestroy = slot18
+slot20.onChildEntityDestroy = slot21
 
-slot18 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.viewCtrlComponent
 	--- END OF BLOCK #0 ---
@@ -4580,42 +6497,12 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot17.onInputDeviceChanged = slot18
-
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 3-8, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.showBubbleMessage
-	slot4 = NoticeDef
-	slot4 = slot4.HOMELAND_MULTI_SELECT_ENTER
+	--- BLOCK #2 8-11, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshVirtualMouseHoverSnapEnabled
 
 	slot2(slot4)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-9, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -4623,9 +6510,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onVisibleChange = slot18
+slot20.onInputDeviceChanged = slot21
 
-return slot17
+return slot20
 --- END OF BLOCK #0 ---
 
 

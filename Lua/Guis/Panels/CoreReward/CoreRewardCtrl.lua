@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-68, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -42,10 +42,19 @@ slot12 = slot2.LightClass
 slot14 = "CoreRewardCtrl"
 slot15 = slot3
 slot12 = slot12(slot14, slot15)
-slot13 = {}
-slot12.messages = slot13
+slot13 = require
+slot15 = "GameApp.Recharge.RechargeUtils"
+slot13 = slot13(slot15)
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.SDK
+slot14 = slot14.Platform
+slot14 = slot14.PlatformBridgeLuaFacade
+slot15 = {}
+slot12.messages = slot15
 
-slot13 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -61,9 +70,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onCreate = slot13
+slot12.onCreate = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
@@ -110,7 +119,49 @@ slot13 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 7-19, warpins: 2 ---
+		--- BLOCK #2 7-14, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.platform
+		slot2 = slot0
+		slot0 = slot0.isPS
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 15-19, warpins: 1 ---
+		slot0 = RechargeUtils
+		slot0 = slot0.isEmptyStore
+		slot0 = slot0()
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 20-23, warpins: 1 ---
+		slot0 = PlatformBridgeLuaFacade
+		slot0 = slot0.ShowCommonMessageDialogEmptyStore
+
+		slot0()
+
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 24-36, warpins: 3 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.dismiss
@@ -128,7 +179,7 @@ slot13 = function(slot0)
 		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -259,9 +310,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.addListener = slot13
+slot12.addListener = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -276,9 +327,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot12.onDestroy = slot15
 
-slot13 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -294,9 +345,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onOpen = slot13
+slot12.onOpen = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ActivityUtils
 	slot1 = slot1.getActivityData
@@ -757,9 +808,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onShow = slot13
+slot12.onShow = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -768,7 +819,7 @@ slot13 = function(slot0)
 
 end
 
-slot12.onHide = slot13
+slot12.onHide = slot15
 
 return slot12
 --- END OF BLOCK #0 ---

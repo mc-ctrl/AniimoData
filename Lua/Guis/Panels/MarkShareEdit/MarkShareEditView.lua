@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-241, warpins: 1 ---
+	--- BLOCK #0 1-246, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -252,6 +252,11 @@ slot3 = function(slot0)
 	slot5 = "rightKeyHotKeyContent"
 	slot2 = slot2(slot4, slot5)
 	slot0.rightKeyHotKeyContent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnInfoUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnInfoUButton = slot2
 
 	return
 	--- END OF BLOCK #0 ---

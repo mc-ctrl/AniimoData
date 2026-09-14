@@ -1,10 +1,10 @@
---- BLOCK #0 1-213, warpins: 1 ---
+--- BLOCK #0 1-217, warpins: 1 ---
 slot0 = {}
 slot1 = bit
 slot2 = {
+	NONE = "NONE",
 	WATER = "WATER",
-	GRASS = "GRASS",
-	NONE = "NONE"
+	GRASS = "GRASS"
 }
 slot0.Perceptions = slot2
 slot2 = {
@@ -203,18 +203,18 @@ slot3 = slot3(slot5, slot6)
 slot2.PlantGrass = slot3
 slot0.VoxelStateDef = slot2
 slot2 = {
+	PATHFIND_NO_VOXEL_SCENE = 1,
 	PATHFIND_SUCCESS = 0,
 	PATHFIND_PART_SUCCESS = 5,
 	PATHFIND_FAILED = 4,
 	PATHFIND_END_POS_INVALID = 3,
-	PATHFIND_START_POS_INVALID = 2,
-	PATHFIND_NO_VOXEL_SCENE = 1
+	PATHFIND_START_POS_INVALID = 2
 }
 slot0.VoxelPathFindResultCode = slot2
 slot2 = {
+	VOXEL_NAV_WATER_BOTTOM = 2,
 	VOXEL_NAV_CAN_SWIM = 1,
-	VOXEL_NAV_CANT_SWIM = 0,
-	VOXEL_NAV_WATER_BOTTOM = 2
+	VOXEL_NAV_CANT_SWIM = 0
 }
 slot0.VoxelNavSwimType = slot2
 slot2 = 0.5
@@ -225,12 +225,19 @@ slot2 = 20
 slot0.InvCellHeight = slot2
 slot2 = 0.05
 slot0.CellHeight = slot2
+slot2 = 64
+slot0.REGION_LENGTH = slot2
 slot2 = 3000
 slot0.MAX_VOXEL_NAV_DEPTH = slot2
 slot2 = 400
 slot0.MIN_NAV_ASTAR_SEARCH_COUNT = slot2
 slot2 = 10000
 slot0.MAX_NAV_ASTAR_SEARCH_COUNT = slot2
+slot2 = {
+	MOBILE = 24,
+	DEFAULT = 12
+}
+slot0.MUTABLE_REGION_TICK_FRAME_COUNT = slot2
 
 return slot0
 --- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-83, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -444,6 +444,138 @@ slot2.setCacheMoveAxis = slot21
 
 slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.curController
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.checkPawn
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot2 = slot1.isVehicle
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot2 = slot1.pawn
+	slot3 = slot0.pawn
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-15, warpins: 4 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-19, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.game
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 20-23, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.social
+	slot2 = slot2.interactGestureComponent
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-25, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 26-31, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.tickMultiPetFollowInput
+	slot6 = slot0.pawn
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 32-33, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 34-41, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.setCacheMoveAxis
+	slot6 = 0
+	slot7 = 0
+	slot8 = 0
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot2.tryHandleMultiPetFollowInput = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.pawn
 	--- END OF BLOCK #0 ---
 
@@ -454,11 +586,9 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.pawn
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.pawn
+	slot1 = slot1.eModel
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
@@ -468,7 +598,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #2 10-13, warpins: 1 ---
+	--- BLOCK #2 8-11, warpins: 1 ---
 	slot1 = slot0.pawn
 	slot3 = slot1
 	slot1 = slot1.CLIMB_ST
@@ -480,7 +610,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 14-15, warpins: 3 ---
+	--- BLOCK #3 12-13, warpins: 3 ---
 	slot1 = false
 
 	return slot1
@@ -504,11 +634,9 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot2 = NotNil
-	slot4 = slot0.pawn
-	slot4 = slot4.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.pawn
+	slot2 = slot2.eModel
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
@@ -518,7 +646,7 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 10-15, warpins: 1 ---
+	--- BLOCK #2 8-13, warpins: 1 ---
 	slot2 = slot0.pawn
 	slot4 = slot2
 	slot2 = slot2.checkJump
@@ -532,7 +660,7 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
+	--- BLOCK #3 14-15, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	slot1 = if slot1 then
@@ -542,35 +670,37 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 18-26, warpins: 1 ---
+	--- BLOCK #4 16-25, warpins: 1 ---
 	slot2 = slot0.pawn
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.SetInputCommand
-	slot5 = InputCommand
-	slot5 = slot5.ClimbJump
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = InputCommand
+	slot6 = slot6.ClimbJump
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #5 27-37, warpins: 1 ---
+	--- BLOCK #5 26-37, warpins: 1 ---
 	slot2 = slot0.pawn
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.SetInputCommand
-	slot5 = slot0.pawn
-	slot7 = slot5
-	slot5 = slot5.CLIMB_ST
-	slot5 = slot5(slot7)
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = slot0.pawn
+	slot8 = slot6
+	slot6 = slot6.CLIMB_ST
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #5 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
@@ -578,11 +708,11 @@ slot21 = function(slot0, slot1)
 
 
 	--- BLOCK #6 38-41, warpins: 1 ---
-	slot5 = InputCommand
-	slot5 = slot5.ClimbJump
+	slot6 = InputCommand
+	slot6 = slot6.ClimbJump
 	--- END OF BLOCK #6 ---
 
-	slot5 = if not slot5 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
@@ -590,8 +720,8 @@ slot21 = function(slot0, slot1)
 
 
 	--- BLOCK #7 42-43, warpins: 2 ---
-	slot5 = InputCommand
-	slot5 = slot5.Jump
+	slot6 = InputCommand
+	slot6 = slot6.Jump
 
 	--- END OF BLOCK #7 ---
 
@@ -599,7 +729,7 @@ slot21 = function(slot0, slot1)
 
 
 	--- BLOCK #8 44-44, warpins: 2 ---
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #8 ---
 
@@ -628,11 +758,9 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot2 = NotNil
-	slot4 = slot0.pawn
-	slot4 = slot4.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.pawn
+	slot2 = slot2.eModel
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
@@ -642,7 +770,7 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 10-11, warpins: 1 ---
+	--- BLOCK #2 8-9, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -652,35 +780,37 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 12-22, warpins: 1 ---
+	--- BLOCK #3 10-21, warpins: 1 ---
 	slot2 = slot0.pawn
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.SetInputCommand
-	slot5 = InputCommand
-	slot5 = slot5.FastClimb
-	slot6 = slot1
-	slot7 = 1
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = InputCommand
+	slot6 = slot6.FastClimb
+	slot7 = slot1
+	slot8 = 1
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 23-31, warpins: 1 ---
+	--- BLOCK #4 22-31, warpins: 1 ---
 	slot2 = slot0.pawn
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.SetInputCommand
-	slot5 = InputCommand
-	slot5 = slot5.FastClimb
-	slot6 = slot1
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = InputCommand
+	slot6 = slot6.FastClimb
+	slot7 = slot1
 
-	slot2(slot4, slot5, slot6)
+	slot2(slot4, slot5, slot6, slot7)
 
 	--- END OF BLOCK #4 ---
 
@@ -709,11 +839,9 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot2 = NotNil
-	slot4 = slot0.pawn
-	slot4 = slot4.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.pawn
+	slot2 = slot2.eModel
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
@@ -723,7 +851,7 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 10-11, warpins: 1 ---
+	--- BLOCK #2 8-9, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -733,23 +861,24 @@ slot21 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 12-19, warpins: 1 ---
+	--- BLOCK #3 10-18, warpins: 1 ---
 	slot2 = slot0.pawn
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.SetInputCommand
-	slot5 = InputCommand
-	slot5 = slot5.SpecialAbility
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = InputCommand
+	slot6 = slot6.SpecialAbility
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-20, warpins: 4 ---
+	--- BLOCK #4 19-19, warpins: 4 ---
 	return
 	--- END OF BLOCK #4 ---
 

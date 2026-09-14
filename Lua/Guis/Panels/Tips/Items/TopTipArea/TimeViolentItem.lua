@@ -41,7 +41,7 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot2 + slot3
 	slot6 = Time
-	slot6 = slot6.secondCache
+	slot6 = slot6.realSecondCache
 	slot6 = slot5 - slot6
 	slot7 = 0
 	--- END OF BLOCK #0 ---
@@ -293,7 +293,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #1 7-13, warpins: 1 ---
 	slot5 = slot2.endTime
 	slot6 = Time
-	slot6 = slot6.secondCache
+	slot6 = slot6.realSecondCache
 	slot5 = slot5 - slot6
 	slot6 = 0
 	--- END OF BLOCK #1 ---
@@ -698,7 +698,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		slot2 = data
 		slot3 = countDown
 		slot4 = Time
-		slot4 = slot4.secondCache
+		slot4 = slot4.realSecondCache
 		slot5 = loopDuration
 		slot6 = loopRound
 
@@ -757,7 +757,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #24 134-135, warpins: 1 ---
 	slot12 = Time
-	slot12 = slot12.secondCache
+	slot12 = slot12.realSecondCache
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25

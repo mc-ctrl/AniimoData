@@ -10,9 +10,9 @@ slot4 = "PvpRewardModel"
 slot5 = slot1
 slot2 = slot2(slot4, slot5)
 slot3 = {
-	AGAIN = 1,
 	BACK = 2,
-	NONE = 0
+	NONE = 0,
+	AGAIN = 1
 }
 slot2.RE_BATTLE_STATE = slot3
 

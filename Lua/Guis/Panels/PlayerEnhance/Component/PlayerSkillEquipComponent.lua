@@ -4152,7 +4152,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 7-19, warpins: 2 ---
+	--- BLOCK #3 7-24, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -4161,9 +4161,14 @@ slot10 = function(slot0)
 	slot5 = UIConst
 	slot5 = slot5.UI_ID_PLAYER_RENAME
 	slot6 = {
-		title = "技能组重命名",
+		placeholder = "",
 		mode = "Rename"
 	}
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "RENAME_TIPS_SKILL"
+	slot7 = slot7(slot9)
+	slot6.title = slot7
 
 	slot7 = function(slot0)
 		--- BLOCK #0 1-10, warpins: 1 ---

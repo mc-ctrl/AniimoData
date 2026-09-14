@@ -10,9 +10,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	SwitchPad = "<SwitchProControllerHID>/select",
-	PSPad = "<DualShockGamepad>/touchpadButton",
+	XBox = "<Gamepad>/select",
 	_genericPath = "<Gamepad>/select",
-	XBox = "<Gamepad>/select"
+	PSPad = "<DualShockGamepad>/touchpadButton"
 }
 slot2.SelectButton = slot3
 slot3 = "<GamepadManual>/"

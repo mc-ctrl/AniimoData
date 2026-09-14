@@ -1,4 +1,4 @@
---- BLOCK #0 1-74, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = {
 	_behaviorTreeFolder = "./lua/data/"
 }
@@ -130,6 +130,22 @@ slot12 = function()
 	slot1 = {}
 	slot0._agentInstances = slot1
 	slot0 = _M
+	slot0 = slot0.clearPool
+
+	slot0()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.clearInstance = slot12
+
+slot12 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = _M
 	slot1 = {}
 	slot0._agentPool = slot1
 
@@ -140,7 +156,7 @@ slot12 = function()
 
 end
 
-slot0.clearInstance = slot12
+slot0.clearPool = slot12
 
 slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

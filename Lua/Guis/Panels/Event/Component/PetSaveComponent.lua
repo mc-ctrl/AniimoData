@@ -780,9 +780,9 @@ slot18 = function(slot0)
 
 			--- BLOCK #1 32-45, warpins: 1 ---
 			slot3 = {
-				playType = 0,
 				isDialogueGraph = true,
-				intervalTime = 3
+				intervalTime = 3,
+				playType = 0
 			}
 			slot3.id = slot1
 			slot4 = #slot2
@@ -921,7 +921,7 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #5 36-38, warpins: 1 ---
-	slot8 = slot3.eventEndDayTime
+	slot8 = slot3.tabEndDayTime
 	--- END OF BLOCK #5 ---
 
 	slot8 = if not slot8 then
@@ -932,7 +932,7 @@ slot18 = function(slot0)
 
 
 	--- BLOCK #6 39-39, warpins: 2 ---
-	slot8 = slot3.eventStartDayTime
+	slot8 = slot3.tabStartDayTime
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7

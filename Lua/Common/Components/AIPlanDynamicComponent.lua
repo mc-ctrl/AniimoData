@@ -32,12 +32,40 @@ slot9 = slot9(slot11)
 slot10 = "_onAIEvent"
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-31, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
+	slot2 = AiConst
+	slot2 = slot2.AI_DEBUG
+	slot2 = slot2.REGISTRATION_INFO
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
 	slot2 = {}
-	slot1.tickTimers = slot2
-	slot2 = {}
-	slot1.registeredGraphs = slot2
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	slot2 = nil
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-37, warpins: 2 ---
+	slot1.debugRegisteredGraphs = slot2
 	slot2 = {
 		tickLodTriggerCount = 0
 	}
@@ -67,7 +95,7 @@ slot11 = function(slot0)
 	slot0.AIPlanDynamic = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
@@ -296,49 +324,112 @@ end
 slot9.resetAIDynamicListener = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = ipairs
-	slot3 = slot0.AIPlanDynamic
-	slot3 = slot3.dynamicBehavList
-	slot1, slot2, slot3 = slot1(slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.agent
+
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 6-19, warpins: 1 ---
-	slot6 = AIUtils
-	slot6 = slot6.registerAITrigger
-	slot8 = slot0
-	slot9 = slot0.AIPlanDynamic
-	slot9 = slot9.eventEmitter
-	slot10 = slot5
-	slot11 = slot0.AIPlanDynamic
-	slot11 = slot11.tickLodTriggerBehaviourIdMap
-	slot12 = slot0.AIPlanDynamic
-	slot12 = slot12.registeredGraphs
-	slot13 = slot0.AIPlanDynamic
-	slot13 = slot13.tickTimers
-	slot14 = AI_TRIGGER_FUNC_NAME
-
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 20-21, warpins: 2 ---
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot1 = AiConst
+	slot1 = slot1.AI_DEBUG
+	slot1 = slot1.REGISTRATION_INFO
 	--- END OF BLOCK #2 ---
 
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #3 22-22, warpins: 1 ---
-	return
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot1 = slot0.AIPlanDynamic
+	slot1 = slot1.debugRegisteredGraphs
 	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot1 = slot0.AIPlanDynamic
+	slot2 = {}
+	slot1.debugRegisteredGraphs = slot2
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-30, warpins: 3 ---
+	slot1 = AIControllerUtils
+	slot1 = slot1.getMotionStateValue
+	slot3 = slot0
+	slot4 = true
+	slot1 = slot1(slot3, slot4)
+	slot2 = slot0.agent
+	slot4 = slot2
+	slot2 = slot2.getRootState
+	slot2 = slot2(slot4)
+	slot3 = ipairs
+	slot5 = slot0.AIPlanDynamic
+	slot5 = slot5.dynamicBehavList
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 31-44, warpins: 1 ---
+	slot8 = AIUtils
+	slot8 = slot8.registerAITrigger
+	slot10 = slot0
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot0.AIPlanDynamic
+	slot13 = slot13.eventEmitter
+	slot14 = slot7
+	slot15 = slot0.AIPlanDynamic
+	slot15 = slot15.tickLodTriggerBehaviourIdMap
+	slot16 = slot0.AIPlanDynamic
+	slot16 = slot16.debugRegisteredGraphs
+	slot17 = AI_TRIGGER_FUNC_NAME
+
+	slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 45-46, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 47-47, warpins: 1 ---
+	return
+	--- END OF BLOCK #8 ---
 
 
 
@@ -347,23 +438,43 @@ end
 slot9.registerAIDynamicListener = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = AiConst
+	slot1 = slot1.AI_DEBUG
+	slot1 = slot1.REGISTRATION_INFO
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = slot0.AIPlanDynamic
+	slot2 = nil
+	slot1.debugRegisteredGraphs = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-19, warpins: 2 ---
 	slot1 = AIUtils
 	slot1 = slot1.unregisterAITrigger
 	slot3 = slot0
 	slot4 = slot0.AIPlanDynamic
 	slot4 = slot4.eventEmitter
 	slot5 = slot0.AIPlanDynamic
-	slot5 = slot5.tickTimers
+	slot5 = slot5.tickLodTriggerBehaviourIdMap
 	slot6 = slot0.AIPlanDynamic
-	slot6 = slot6.tickLodTriggerBehaviourIdMap
-	slot7 = slot0.AIPlanDynamic
-	slot7 = slot7.registeredGraphs
+	slot6 = slot6.debugRegisteredGraphs
 
-	slot1(slot3, slot4, slot5, slot6, slot7)
+	slot1(slot3, slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -431,12 +542,30 @@ end
 slot9.tickLodAIDynamicTriggerExec = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.AIPlanDynamic
-	slot1 = slot1.registeredGraphs
-
-	return slot1
+	slot1 = slot1.debugRegisteredGraphs
 	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot1 = AiConst
+	slot1 = slot1.DefaultNullTable
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
 
 
 

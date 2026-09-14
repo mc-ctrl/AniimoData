@@ -1,4 +1,4 @@
---- BLOCK #0 1-146, warpins: 1 ---
+--- BLOCK #0 1-168, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerConst"
 slot0 = slot0(slot2)
@@ -39,55 +39,73 @@ slot12 = require
 slot14 = "Common.Utils.ServiceUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.GameVersion"
+slot15 = "Common.Utils.Utils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.ConfigVersion"
+slot16 = "Common.GameVersion"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Const.Const"
+slot17 = "Common.ConfigVersion"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Const.DefaultSceneConst"
+slot18 = "Common.Const.Const"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Common.NoticeDef"
+slot19 = "Common.Const.DefaultSceneConst"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Core.Common.IDManager"
+slot20 = "Common.NoticeDef"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Utils.ClientTextUtils"
+slot21 = "Core.Common.IDManager"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "SDK.Platform.PlatformEntryPrivilegeService"
+slot22 = "Utils.ClientTextUtils"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "SDK.Platform.PlatformIdentityUtils"
+slot23 = "Const.UIConst"
 slot21 = slot21(slot23)
-slot22 = slot3.getLogger
-slot24 = "LoginAgent"
+slot22 = require
+slot24 = "SDK.Platform.PlatformEntryPrivilegeService"
 slot22 = slot22(slot24)
-slot23 = CS
-slot23 = slot23.FunPlus
-slot23 = slot23.WorldX
-slot23 = slot23.SDK
-slot23 = slot23.SDKManager
+slot23 = require
+slot25 = "SDK.Platform.PlatformIdentityUtils"
+slot23 = slot23(slot25)
 slot24 = require
-slot26 = "json"
+slot26 = "SDK.SDKLoginConfig"
 slot24 = slot24(slot26)
-slot25 = CS
-slot25 = slot25.FunPlus
-slot25 = slot25.WorldX
-slot25 = slot25.SDK
-slot25 = slot25.Platform
-slot25 = slot25.PlatformBridgeLuaFacade
-slot26 = slot1.Class
+slot25 = require
+slot27 = "SDK.Platform.PlatformShellActivityService"
+slot25 = slot25(slot27)
+slot26 = slot3.getLogger
 slot28 = "LoginAgent"
 slot26 = slot26(slot28)
+slot27 = CS
+slot27 = slot27.FunPlus
+slot27 = slot27.WorldX
+slot27 = slot27.SDK
+slot27 = slot27.SDKManager
+slot28 = require
+slot30 = "Common.Const.LuaCSConst"
+slot28 = slot28(slot30)
+slot29 = require
+slot31 = "Utils.ClientXPartUtil"
+slot29 = slot29(slot31)
+slot30 = require
+slot32 = "json"
+slot30 = slot30(slot32)
+slot31 = CS
+slot31 = slot31.FunPlus
+slot31 = slot31.WorldX
+slot31 = slot31.SDK
+slot31 = slot31.Platform
+slot31 = slot31.PlatformBridgeLuaFacade
+slot32 = slot1.Class
+slot34 = "LoginAgent"
+slot32 = slot32(slot34)
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot33 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = {}
 	slot0.conf = slot1
 	slot1 = 0
@@ -98,6 +116,8 @@ slot27 = function(slot0)
 	slot0._bindGlobalMsGateTimer = slot1
 	slot1 = nil
 	slot0._bindGlobalExtraMsGateTimer = slot1
+	slot1 = false
+	slot0._needLastScene = slot1
 	slot1 = EnableBotTest
 	--- END OF BLOCK #0 ---
 
@@ -108,7 +128,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #1 14-15, warpins: 1 ---
+	--- BLOCK #1 16-17, warpins: 1 ---
 	slot1 = nil
 	slot0.botDefaultSceneId = slot1
 
@@ -117,7 +137,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-16, warpins: 2 ---
+	--- BLOCK #2 18-18, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -125,9 +145,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.ctor = slot27
+slot32.ctor = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ClientRepo
 	slot1 = slot1.confJson
@@ -158,9 +178,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.init = slot27
+slot32.init = slot33
 
-slot27 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = pg
 	--- END OF BLOCK #0 ---
@@ -168,7 +188,7 @@ slot27 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
@@ -180,137 +200,189 @@ slot27 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-12, warpins: 1 ---
+	--- BLOCK #2 8-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-16, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.login
+	--- BLOCK #3 11-12, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-18, warpins: 4 ---
-	--- END OF BLOCK #4 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #5
+	slot3 = if slot2 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 19-21, warpins: 1 ---
-	slot3 = slot2.showLoginFailedTip
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot3 = slot2.avatarLoading
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-15, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 22-26, warpins: 1 ---
-	slot5 = slot2
-	slot3 = slot2.showLoginFailedTip
-	slot6 = slot1
-
-	slot3(slot5, slot6)
-
-	return
-
+	--- BLOCK #6 16-18, warpins: 1 ---
+	slot4 = slot3.close
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 27-28, warpins: 3 ---
-	--- END OF BLOCK #7 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 29-31, warpins: 1 ---
-	slot3 = slot2.resetLoginState
+	--- BLOCK #7 19-21, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.close
+
+	slot4(slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-23, warpins: 3 ---
 	--- END OF BLOCK #8 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot2 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 32-34, warpins: 1 ---
-	slot5 = slot2
-	slot3 = slot2.resetLoginState
-
-	slot3(slot5)
-
+	--- BLOCK #9 24-24, warpins: 1 ---
+	slot4 = slot2.login
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 35-40, warpins: 3 ---
-	slot3 = ClientUtils
-	slot3 = slot3.showBubbleMessageRaw
-	slot5 = pg
-	slot5 = slot5.getGameString
+	--- BLOCK #10 25-26, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
-	slot7 = if not slot1 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 41-41, warpins: 1 ---
-	slot7 = "SERVER_UNRESPONSIVE"
+	--- BLOCK #11 27-29, warpins: 1 ---
+	slot5 = slot4.showLoginFailedTip
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	slot5 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #12 42-45, warpins: 2 ---
-	slot5 = slot5(slot7)
-	slot6 = 3
+	--- BLOCK #12 30-34, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.showLoginFailedTip
+	slot8 = slot1
 
-	slot3(slot5, slot6)
+	slot5(slot7, slot8)
 
 	return
+
 	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 35-36, warpins: 3 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 37-39, warpins: 1 ---
+	slot5 = slot4.resetLoginState
+	--- END OF BLOCK #14 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 40-42, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.resetLoginState
+
+	slot5(slot7)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 43-48, warpins: 3 ---
+	slot5 = ClientUtils
+	slot5 = slot5.showBubbleMessageRaw
+	slot7 = pg
+	slot7 = slot7.getGameString
+	--- END OF BLOCK #16 ---
+
+	slot9 = if not slot1 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 49-49, warpins: 1 ---
+	slot9 = "SERVER_UNRESPONSIVE"
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 50-53, warpins: 2 ---
+	slot7 = slot7(slot9)
+	slot8 = 3
+
+	slot5(slot7, slot8)
+
+	return
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot26._showLoginFailedTip = slot27
+slot32._showLoginFailedTip = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.pullServerInfoTimer
 	--- END OF BLOCK #0 ---
@@ -345,9 +417,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.removePullServerInfoTimer = slot27
+slot32.removePullServerInfoTimer = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = {}
 	slot2 = GlobalData
@@ -385,9 +457,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.logoutService = slot27
+slot32.logoutService = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.logoutService
@@ -406,9 +478,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.logout = slot27
+slot32.logout = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -417,9 +489,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.sdkLogin = slot27
+slot32.sdkLogin = slot33
 
-slot27 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -479,7 +551,7 @@ slot27 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #34
 	end
 
 
@@ -625,177 +697,316 @@ slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #16 72-77, warpins: 2 ---
 	slot3 = slot2.Token
 	slot0.token = slot3
-	slot3 = nil
-	slot4 = slot2.RoleInfo
+	slot3 = GlobalData
+	slot3 = slot3.Player
 	--- END OF BLOCK #16 ---
 
-	if slot4 ~= nil then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 78-86, warpins: 1 ---
-	slot5 = ClientRepo
-	slot5 = slot5.protoCodec
-	slot7 = slot5
-	slot5 = slot5.decode
-	slot8 = slot4
-	slot5 = slot5(slot7, slot8)
-	slot3 = slot5
+	--- BLOCK #17 78-80, warpins: 1 ---
+	slot4 = slot3.isOfflineMainPlayer
 	--- END OF BLOCK #17 ---
 
-	if slot3 ~= nil then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 87-91, warpins: 1 ---
-	slot5 = next
+	--- BLOCK #18 81-95, warpins: 1 ---
+	slot4 = ClientUtils
+	slot4 = slot4.getSceneName
+	slot6 = slot3.sceneId
+	slot4 = slot4(slot6)
+	slot5 = ClientUtils
+	slot5 = slot5.safeDestroy
 	slot7 = slot3
-	slot5 = slot5(slot7)
+
+	slot5(slot7)
+
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.resMgr
+	slot7 = slot5
+	slot5 = slot5.UnloadSceneForTransition
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
 	--- END OF BLOCK #18 ---
 
-	if slot5 == nil then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 92-102, warpins: 2 ---
-	slot5 = csSDKManager
-	slot5 = slot5.PatchFlowSDKLog
-	slot7 = 20008
-	slot8 = "LoginCreateRole"
-	slot9 = ""
-	slot10 = ""
-
-	slot5(slot7, slot8, slot9, slot10)
-
-	slot5 = ClientUtils
-	slot5 = slot5.checkCreateUser
-
-	slot5()
-
-	return
-
+	--- BLOCK #19 96-99, warpins: 3 ---
+	slot4 = nil
+	slot5 = slot2.RoleInfo
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	if slot5 ~= nil then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #30
+	end
 
 
-	--- BLOCK #20 103-111, warpins: 2 ---
-	slot5 = table
-	slot5 = slot5.firstOrDefault
-	slot7 = slot3.players
-	slot5, slot6 = slot5(slot7)
-	slot7 = slot6.clientPlayerCreateInited
-	slot7 = not slot7
-	slot8 = slot6.avatarPresetKey
+	--- BLOCK #20 100-108, warpins: 1 ---
+	slot6 = ClientRepo
+	slot6 = slot6.protoCodec
+	slot8 = slot6
+	slot6 = slot6.decode
+	slot9 = slot5
+	slot6 = slot6(slot8, slot9)
+	slot4 = slot6
 	--- END OF BLOCK #20 ---
 
-	slot7 = if slot7 then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 112-113, warpins: 1 ---
+	--- BLOCK #21 109-113, warpins: 1 ---
+	slot6 = next
+	slot8 = slot4
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #21 ---
 
-	slot8 = if slot8 then
+	if slot6 == nil then
 	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 114-126, warpins: 1 ---
-	slot9 = csSDKManager
-	slot9 = slot9.PatchFlowSDKLog
-	slot11 = 20008
-	slot12 = "LoginCreateRole"
-	slot13 = ""
-	slot14 = ""
+	--- BLOCK #22 114-124, warpins: 2 ---
+	slot6 = csSDKManager
+	slot6 = slot6.PatchFlowSDKLog
+	slot8 = 20008
+	slot9 = "LoginCreateRole"
+	slot10 = ""
+	slot11 = ""
 
-	slot9(slot11, slot12, slot13, slot14)
+	slot6(slot8, slot9, slot10, slot11)
 
-	slot9 = ClientUtils
-	slot9 = slot9.checkCreateUser
-	slot11 = slot6.avatarPresetKey
+	slot6 = ClientUtils
+	slot6 = slot6.checkCreateUser
 
-	slot9(slot11)
+	slot6()
 
 	return
 
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 127-137, warpins: 1 ---
-	slot5 = csSDKManager
-	slot5 = slot5.PatchFlowSDKLog
-	slot7 = 20008
-	slot8 = "LoginCreateRole"
-	slot9 = ""
-	slot10 = ""
-
-	slot5(slot7, slot8, slot9, slot10)
-
-	slot5 = ClientUtils
-	slot5 = slot5.checkCreateUser
-
-	slot5()
-
-	return
-
+	--- BLOCK #23 125-130, warpins: 2 ---
+	slot6 = table
+	slot6 = slot6.firstOrDefault
+	slot8 = slot4.players
+	slot6, slot7 = slot6(slot8)
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 138-148, warpins: 4 ---
-	slot5 = csSDKManager
-	slot5 = slot5.PatchFlowSDKLog
-	slot7 = 20008
-	slot8 = "LoginLoadWorld"
-	slot9 = ""
-	slot10 = ""
-
-	slot5(slot7, slot8, slot9, slot10)
-
-	slot7 = slot0
-	slot5 = slot0.loginImp
-
-	slot5(slot7)
-
-	--- END OF BLOCK #24 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #25 149-155, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.ERROR
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #25 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #26
+	if slot7 == nil then
+	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 156-161, warpins: 1 ---
+	--- BLOCK #24 131-137, warpins: 1 ---
+	slot8 = LoggerManager
+	slot8 = slot8.checkLogger
+	slot10 = LoggerConst
+	slot10 = slot10.ERROR
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #24 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 138-142, warpins: 1 ---
+	slot8 = logger
+	slot10 = slot8
+	slot8 = slot8.error
+	slot11 = "loginAgent verify roleInfo.players is empty"
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 143-153, warpins: 2 ---
+	slot8 = csSDKManager
+	slot8 = slot8.PatchFlowSDKLog
+	slot10 = 20008
+	slot11 = "LoginCreateRole"
+	slot12 = ""
+	slot13 = ""
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	slot8 = ClientUtils
+	slot8 = slot8.checkCreateUser
+
+	slot8()
+
+	return
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 154-158, warpins: 2 ---
+	slot8 = slot7.clientPlayerCreateInited
+	slot8 = not slot8
+	slot9 = slot7.avatarPresetKey
+	--- END OF BLOCK #27 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #28 159-160, warpins: 1 ---
+	--- END OF BLOCK #28 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #29 161-173, warpins: 1 ---
+	slot10 = csSDKManager
+	slot10 = slot10.PatchFlowSDKLog
+	slot12 = 20008
+	slot13 = "LoginCreateRole"
+	slot14 = ""
+	slot15 = ""
+
+	slot10(slot12, slot13, slot14, slot15)
+
+	slot10 = ClientUtils
+	slot10 = slot10.checkCreateUser
+	slot12 = slot7.avatarPresetKey
+
+	slot10(slot12)
+
+	return
+
+	--- END OF BLOCK #29 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
+
+
+	--- BLOCK #30 174-184, warpins: 1 ---
+	slot6 = csSDKManager
+	slot6 = slot6.PatchFlowSDKLog
+	slot8 = 20008
+	slot9 = "LoginCreateRole"
+	slot10 = ""
+	slot11 = ""
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = ClientUtils
+	slot6 = slot6.checkCreateUser
+
+	slot6()
+
+	return
+
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 185-198, warpins: 4 ---
+	slot6 = print
+	slot8 = "@fjs verifyCb, roleInfo="
+	slot9 = slot4.scene
+
+	slot6(slot8, slot9)
+
+	slot6 = csSDKManager
+	slot6 = slot6.PatchFlowSDKLog
+	slot8 = 20008
+	slot9 = "LoginLoadWorld"
+	slot10 = ""
+	slot11 = ""
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = slot4.scene
+	--- END OF BLOCK #31 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 199-199, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 200-210, warpins: 2 ---
+	slot7 = {}
+	slot8 = LuaCSConst
+	slot8 = slot8.XPartConst
+	slot8 = slot8.KeyLogin2Scene
+	slot7.KeyFrom = slot8
+	slot7.ToScene = slot6
+	slot10 = slot0
+	slot8 = slot0.loginImp
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #44
+
+
+	--- BLOCK #34 211-217, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.ERROR
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #34 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 218-223, warpins: 1 ---
 	slot3 = logger
 	slot5 = slot3
 	slot3 = slot3.error
@@ -804,120 +1015,116 @@ slot27 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #27 162-164, warpins: 2 ---
+	--- BLOCK #36 224-226, warpins: 2 ---
 	slot3 = pg
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #36 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #28 165-168, warpins: 1 ---
+	--- BLOCK #37 227-230, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #37 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #29 169-173, warpins: 1 ---
+	--- BLOCK #38 231-235, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #38 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #30 174-177, warpins: 1 ---
+	--- BLOCK #39 236-239, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
 	slot3 = slot3.login
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #39 ---
 
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #31 178-179, warpins: 4 ---
-	--- END OF BLOCK #31 ---
+	--- BLOCK #40 240-241, warpins: 4 ---
+	--- END OF BLOCK #40 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #41
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #32 180-182, warpins: 1 ---
+	--- BLOCK #41 242-244, warpins: 1 ---
 	slot4 = slot3.resetLoginState
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #41 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #33 183-185, warpins: 1 ---
+	--- BLOCK #42 245-247, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.resetLoginState
 
 	slot4(slot6)
 
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #42 ---
 
-	FLOW; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #34 186-197, warpins: 3 ---
+	--- BLOCK #43 248-255, warpins: 3 ---
 	slot4 = ClientUtils
 	slot4 = slot4.showBubbleMessageRaw
-	slot6 = ClientTextUtils
-	slot6 = slot6.concatByLanguage
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "SERVER_LOGIN_FAIL"
-	slot8 = slot8(slot10)
-	slot9 = slot1.errmsg
-	slot6 = slot6(slot8, slot9)
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "SERVER_LOGIN_FAIL"
+	slot6 = slot6(slot8)
 	slot7 = 3
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #43 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #35 198-198, warpins: 2 ---
+	--- BLOCK #44 256-256, warpins: 2 ---
 	return
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #44 ---
 
 
 
 end
 
-slot26.verifyCb = slot27
+slot32.verifyCb = slot33
 
-slot27 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.status
 	--- END OF BLOCK #0 ---
@@ -1047,14 +1254,53 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot26.useNameCb = slot27
+slot32.useNameCb = slot33
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0._loginImpPending
+slot33 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot2 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = require
+		slot2 = "Core.Client.ClientRepo"
+		slot0 = slot0(slot2)
+		slot1 = slot0.loginAgent
+		slot3 = slot1
+		slot1 = slot1._callLoginImp
+		slot4 = arg
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot3 = require
+	slot5 = "Utils.ClientXPartUtil"
+	slot3 = slot3(slot5)
+	slot4 = slot3.hookLoginAgentLoginImp
+	slot6 = slot1
+	slot7 = slot2
+
+	slot4(slot6, slot7)
+
+	return
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+
+
+end
+
+slot32.loginImp = slot33
+
+slot33 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0._loginImpPending
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #4
@@ -1062,14 +1308,14 @@ slot27 = function(slot0)
 
 
 	--- BLOCK #1 4-10, warpins: 1 ---
-	slot1 = LoggerManager
-	slot1 = slot1.checkLogger
-	slot3 = LoggerConst
-	slot3 = slot3.WARN
-	slot1 = slot1(slot3)
+	slot2 = LoggerManager
+	slot2 = slot2.checkLogger
+	slot4 = LoggerConst
+	slot4 = slot4.WARN
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -1077,12 +1323,12 @@ slot27 = function(slot0)
 
 
 	--- BLOCK #2 11-15, warpins: 1 ---
-	slot1 = logger
-	slot3 = slot1
-	slot1 = slot1.warn
-	slot4 = "loginImp re-entered while privilege check pending, ignored"
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "loginImp re-entered while privilege check pending, ignored"
 
-	slot1(slot3, slot4)
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #2 ---
 
@@ -1096,13 +1342,13 @@ slot27 = function(slot0)
 
 
 	--- BLOCK #4 17-25, warpins: 1 ---
-	slot1 = true
-	slot0._loginImpPending = slot1
-	slot1 = PlatformEntryPrivilegeService
-	slot3 = slot1
-	slot1 = slot1.checkLoginMultiplayerPrivilege
+	slot2 = true
+	slot0._loginImpPending = slot2
+	slot2 = PlatformEntryPrivilegeService
+	slot4 = slot2
+	slot2 = slot2.checkLoginMultiplayerPrivilege
 
-	slot4 = function(slot0, slot1)
+	slot5 = function(slot0, slot1)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot2 = self
 		slot3 = nil
@@ -1181,7 +1427,7 @@ slot27 = function(slot0)
 
 	end
 
-	slot1(slot3, slot4)
+	slot2(slot4, slot5)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -1197,9 +1443,204 @@ slot27 = function(slot0)
 
 end
 
-slot26.loginImp = slot27
+slot32._callLoginImp = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.sdkManager
+	slot4 = slot2
+	slot2 = slot2.getDeviceData
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot2 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= "" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 12-18, warpins: 1 ---
+	slot3 = pcall
+	slot5 = json
+	slot5 = slot5.decode
+	slot6 = slot2
+	slot3, slot4 = slot3(slot5, slot6)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.isTable
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-26, warpins: 1 ---
+	slot1.deviceData = slot4
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 27-33, warpins: 2 ---
+	slot5 = LoggerManager
+	slot5 = slot5.checkLogger
+	slot7 = LoggerConst
+	slot7 = slot7.ERROR
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 34-41, warpins: 1 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.error
+	slot8 = "decode deviceData failed before login: %s"
+	slot9 = tostring
+	slot11 = slot2
+	MULTRES = slot9(slot11)
+
+	slot5(slot7, slot8, MULTRES)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 42-53, warpins: 4 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.sdkManager
+	slot5 = slot3
+	slot3 = slot3.getClientIPInfoData
+	slot3 = slot3(slot5)
+	slot4 = Utils
+	slot4 = slot4.isTable
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 54-54, warpins: 1 ---
+	slot1.ipInfoData = slot3
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 55-66, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.sdkManager
+	slot6 = slot4
+	slot4 = slot4.getAccountInfoData
+	slot4 = slot4(slot6)
+	slot5 = Utils
+	slot5 = slot5.isTable
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #10 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 67-67, warpins: 1 ---
+	slot1.accountInfo = slot4
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 68-70, warpins: 2 ---
+	slot5 = ClientConfigSDKFromMobile
+	--- END OF BLOCK #12 ---
+
+	if slot5 == "true" then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 71-82, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.sdkManager
+	slot5 = slot5.fpId
+	slot1.accountid = slot5
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.sdkManager
+	slot5 = slot5.accountId
+	slot1.fpid = slot5
+	slot5 = "true"
+	slot1.xcloud = slot5
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 83-83, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot32._enrichSdkInfo = slot33
+
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = SysConfigData
 	slot1 = slot1.sceneInit
@@ -1305,56 +1746,63 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 51-53, warpins: 2 ---
-	slot4 = ClientConfigSDKFromMobile
+	--- BLOCK #8 51-52, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	if slot4 == "true" then
+	if slot3 ~= "" then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #9 54-55, warpins: 1 ---
-	--- END OF BLOCK #9 ---
-
-	if slot3 ~= "" then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #10 56-62, warpins: 1 ---
+	--- BLOCK #9 53-59, warpins: 1 ---
 	slot4 = pcall
 	slot6 = json
 	slot6 = slot6.decode
 	slot7 = slot3
 	slot4, slot5 = slot4(slot6, slot7)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
 	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 60-65, warpins: 1 ---
+	slot6 = Utils
+	slot6 = slot6.isTable
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 63-67, warpins: 1 ---
-	slot6 = type
+	--- BLOCK #11 66-75, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0._enrichSdkInfo
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	slot6 = json
+	slot6 = slot6.encode
 	slot8 = slot5
 	slot6 = slot6(slot8)
+	slot3 = slot6
 	--- END OF BLOCK #11 ---
 
-	if slot6 ~= "table" then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #15
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #12 68-74, warpins: 2 ---
+	--- BLOCK #12 76-82, warpins: 2 ---
 	slot6 = LoggerManager
 	slot6 = slot6.checkLogger
 	slot8 = LoggerConst
@@ -1369,7 +1817,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #13 75-82, warpins: 1 ---
+	--- BLOCK #13 83-90, warpins: 1 ---
 	slot6 = logger
 	slot8 = slot6
 	slot6 = slot6.error
@@ -1385,7 +1833,18 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 83-87, warpins: 2 ---
+	--- BLOCK #14 91-93, warpins: 2 ---
+	slot6 = ClientConfigSDKFromMobile
+	--- END OF BLOCK #14 ---
+
+	if slot6 == "true" then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 94-98, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0._showLoginFailedTip
 	slot9 = "LOGIN_SDK_FAILED"
@@ -1394,35 +1853,12 @@ slot27 = function(slot0)
 
 	return
 
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 88-104, warpins: 2 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.sdkManager
-	slot6 = slot6.fpId
-	slot5.accountid = slot6
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.sdkManager
-	slot6 = slot6.accountId
-	slot5.fpid = slot6
-	slot6 = "true"
-	slot5.xcloud = slot6
-	slot6 = json
-	slot6 = slot6.encode
-	slot8 = slot5
-	slot6 = slot6(slot8)
-	slot3 = slot6
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 105-129, warpins: 3 ---
+	--- BLOCK #16 99-126, warpins: 4 ---
 	slot4 = {}
 	slot5 = GlobalData
 	slot5 = slot5.AvatarPresetKey
@@ -1442,6 +1878,9 @@ slot27 = function(slot0)
 	slot5 = GlobalData
 	slot5 = slot5.PlayerTags
 	slot4.playerTags = slot5
+	slot5 = GlobalData
+	slot5 = slot5.Language
+	slot4.language = slot5
 	slot5 = tostring
 	slot7 = PlatformIdentityUtils
 	slot7 = slot7.getCurrentPlatformFamily
@@ -1455,7 +1894,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #17 130-132, warpins: 1 ---
+	--- BLOCK #17 127-129, warpins: 1 ---
 	slot7 = PlatformIdentityUtils
 	slot7 = slot7.Family
 	slot7 = slot7.Other
@@ -1464,7 +1903,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 133-138, warpins: 2 ---
+	--- BLOCK #18 130-135, warpins: 2 ---
 	slot5 = slot5(slot7)
 	slot4.platformFamily = slot5
 	slot5 = LoginAgent
@@ -1478,14 +1917,14 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #19 139-139, warpins: 1 ---
+	--- BLOCK #19 136-136, warpins: 1 ---
 	slot6 = slot5._enrichLoginExtraInfo
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 140-141, warpins: 2 ---
+	--- BLOCK #20 137-138, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
 	slot6 = if slot6 then
@@ -1495,7 +1934,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #21 142-145, warpins: 1 ---
+	--- BLOCK #21 139-142, warpins: 1 ---
 	slot7 = slot6
 	slot9 = slot0
 	slot10 = slot4
@@ -1507,7 +1946,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 146-148, warpins: 2 ---
+	--- BLOCK #22 143-145, warpins: 2 ---
 	slot7 = _G_IsDebugMode
 	--- END OF BLOCK #22 ---
 
@@ -1518,7 +1957,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #23 149-159, warpins: 1 ---
+	--- BLOCK #23 146-156, warpins: 1 ---
 	slot7 = require
 	slot9 = "Data.scene_data"
 	slot7 = slot7(slot9)
@@ -1534,7 +1973,7 @@ slot27 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #24 160-161, warpins: 1 ---
+	--- BLOCK #24 157-158, warpins: 1 ---
 	slot15 = slot14.type
 	slot9[slot13] = slot15
 	--- END OF BLOCK #24 ---
@@ -1542,7 +1981,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 162-163, warpins: 2 ---
+	--- BLOCK #25 159-160, warpins: 2 ---
 	--- END OF BLOCK #25 ---
 
 	for slot13, slot14 in slot10, slot11, slot12
@@ -1550,7 +1989,7 @@ slot27 = function(slot0)
 	GO OUT TO BLOCK #26
 
 
-	--- BLOCK #26 164-170, warpins: 1 ---
+	--- BLOCK #26 161-167, warpins: 1 ---
 	slot4.sceneTypes = slot9
 	slot10 = GlobalData
 	slot10 = slot10.DebugEnterSceneId
@@ -1563,7 +2002,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 171-191, warpins: 2 ---
+	--- BLOCK #27 168-188, warpins: 2 ---
 	slot7 = ServiceUtils
 	slot7 = slot7.callService
 	slot9 = "RoleService"
@@ -1592,7 +2031,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #28 192-198, warpins: 1 ---
+	--- BLOCK #28 189-195, warpins: 1 ---
 	slot8 = LoggerManager
 	slot8 = slot8.checkLogger
 	slot10 = LoggerConst
@@ -1607,7 +2046,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #29 199-203, warpins: 1 ---
+	--- BLOCK #29 196-200, warpins: 1 ---
 	slot8 = logger
 	slot10 = slot8
 	slot8 = slot8.error
@@ -1620,7 +2059,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 204-208, warpins: 2 ---
+	--- BLOCK #30 201-205, warpins: 2 ---
 	slot10 = slot0
 	slot8 = slot0._showLoginFailedTip
 	slot11 = "LOGIN_SERVICE_UNAVAILABLE"
@@ -1634,7 +2073,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 209-212, warpins: 2 ---
+	--- BLOCK #31 206-209, warpins: 2 ---
 	slot10 = slot0
 	slot8 = slot0.tryInitClientDataHelpers
 
@@ -1647,9 +2086,9 @@ slot27 = function(slot0)
 
 end
 
-slot26._doLoginImp = slot27
+slot32._doLoginImp = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = require
 	slot3 = "Utils.PetManagementDataHelper"
@@ -1692,17 +2131,102 @@ slot27 = function(slot0)
 
 end
 
-slot26.tryInitClientDataHelpers = slot27
+slot32.tryInitClientDataHelpers = slot33
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = require
-	slot3 = "SDK.Platform.PlatformPremiumFeatureService"
-	slot1 = slot1(slot3)
+slot33 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = pg
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-19, warpins: 1 ---
 	slot4 = slot1
-	slot2 = slot1.checkEligibility
+	slot2 = slot1.checkUIVisible
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_LOGIN
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
 
-	slot5 = function(slot0, slot1, slot2, slot3)
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-22, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-26, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.doLoginClick
+
+	slot3(slot5)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 27-35, warpins: 1 ---
+	slot3 = require
+	slot5 = "SDK.Platform.PlatformPremiumFeatureService"
+	slot3 = slot3(slot5)
+	slot6 = slot3
+	slot4 = slot3.checkEligibility
+
+	slot7 = function(slot0, slot1, slot2, slot3)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -1747,7 +2271,14 @@ slot27 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 21-26, warpins: 2 ---
+		--- BLOCK #3 21-31, warpins: 2 ---
+		slot4 = PlatformShellActivityService
+		slot6 = slot4
+		slot4 = slot4.clearCurrentActivity
+		slot7 = "login_premium_denied"
+
+		slot4(slot6, slot7)
+
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4._showLoginFailedTip
@@ -1760,7 +2291,7 @@ slot27 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #4 27-32, warpins: 1 ---
+		--- BLOCK #4 32-37, warpins: 1 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4._fetchPlatformAuthToken
@@ -1788,7 +2319,7 @@ slot27 = function(slot0)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 33-33, warpins: 2 ---
+		--- BLOCK #5 38-38, warpins: 2 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -1796,18 +2327,25 @@ slot27 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5)
+	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 36-36, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot26.loginClick = slot27
+slot32.loginClick = slot33
 
-slot27 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -1976,63 +2514,62 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot26._fetchPlatformAuthToken = slot27
+slot32._fetchPlatformAuthToken = slot33
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = require
-	slot3 = "Utils.ClientSwitch"
-	slot1 = slot1(slot3)
-	slot2 = slot1.EnableSDKLogin
+slot33 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = SDKLoginConfig
+	slot1 = slot1.isEnabled
+	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 7-14, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.platform
-	slot4 = slot2
-	slot2 = slot2.isXbox
-	slot2 = slot2(slot4)
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isXbox
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 15-22, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.platform
-	slot4 = slot2
-	slot2 = slot2.isXboxPC
-	slot2 = slot2(slot4)
+	--- BLOCK #2 14-21, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isXboxPC
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 23-30, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.sdkManager
-	slot4 = slot2
-	slot2 = slot2.tryRefreshTicket
+	--- BLOCK #3 22-29, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.sdkManager
+	slot3 = slot1
+	slot1 = slot1.tryRefreshTicket
 
-	slot5 = function()
+	slot4 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -2047,36 +2584,36 @@ slot27 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5)
+	slot1(slot3, slot4)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 31-34, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.verifySdk
+	--- BLOCK #4 30-33, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.verifySdk
 
-	slot2(slot4)
+	slot1(slot3)
 
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 35-37, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.verifyWithoutSdk
+	--- BLOCK #5 34-36, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.verifyWithoutSdk
 
-	slot2(slot4)
+	slot1(slot3)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 38-39, warpins: 3 ---
+	--- BLOCK #6 37-38, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -2084,10 +2621,14 @@ slot27 = function(slot0)
 
 end
 
-slot26.doLoginClick = slot27
+slot32.doLoginClick = slot33
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+slot33 = function(slot0)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot1 = ClientXPartUtil
+	slot1 = slot1.needCheck
+	slot1 = slot1()
+	slot0._needLastScene = slot1
 	slot1 = ServiceUtils
 	slot1 = slot1.callService
 	slot3 = "LoginService"
@@ -2098,8 +2639,10 @@ slot27 = function(slot0)
 	slot6 = slot6.sdkManager
 	slot8 = slot6
 	slot6 = slot6.getTicket
-	MULTRES = slot6(slot8)
-	slot5[MULTRES] = MULTRES
+	slot6 = slot6(slot8)
+	slot5[1] = slot6
+	slot6 = slot0._needLastScene
+	slot5[2] = slot6
 	slot6 = CallbackHandler
 	slot8 = slot0
 	slot9 = "verifyCb"
@@ -2114,7 +2657,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #1 20-26, warpins: 1 ---
+	--- BLOCK #1 26-32, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
 	slot4 = LoggerConst
@@ -2129,7 +2672,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #2 27-31, warpins: 1 ---
+	--- BLOCK #2 33-37, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.error
@@ -2142,7 +2685,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 32-35, warpins: 2 ---
+	--- BLOCK #3 38-41, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0._showLoginFailedTip
 	slot5 = "LOGIN_SERVICE_UNAVAILABLE"
@@ -2154,7 +2697,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 36-36, warpins: 2 ---
+	--- BLOCK #4 42-42, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -2162,10 +2705,14 @@ slot27 = function(slot0)
 
 end
 
-slot26.verifySdk = slot27
+slot32.verifySdk = slot33
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot33 = function(slot0)
+	--- BLOCK #0 1-21, warpins: 1 ---
+	slot1 = ClientXPartUtil
+	slot1 = slot1.needCheck
+	slot1 = slot1()
+	slot0._needLastScene = slot1
 	slot1 = ServiceUtils
 	slot1 = slot1.callService
 	slot3 = "LoginService"
@@ -2174,6 +2721,8 @@ slot27 = function(slot0)
 	slot6 = GlobalData
 	slot6 = slot6.UserName
 	slot5[1] = slot6
+	slot6 = slot0._needLastScene
+	slot5[2] = slot6
 	slot6 = CallbackHandler
 	slot8 = slot0
 	slot9 = "verifyCb"
@@ -2188,7 +2737,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #1 16-22, warpins: 1 ---
+	--- BLOCK #1 22-28, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
 	slot4 = LoggerConst
@@ -2203,7 +2752,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #2 23-27, warpins: 1 ---
+	--- BLOCK #2 29-33, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.error
@@ -2216,7 +2765,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 28-31, warpins: 2 ---
+	--- BLOCK #3 34-37, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0._showLoginFailedTip
 	slot5 = "LOGIN_SERVICE_UNAVAILABLE"
@@ -2228,7 +2777,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 32-32, warpins: 2 ---
+	--- BLOCK #4 38-38, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -2236,9 +2785,9 @@ slot27 = function(slot0)
 
 end
 
-slot26.verifyWithoutSdk = slot27
+slot32.verifyWithoutSdk = slot33
 
-slot27 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2262,8 +2811,8 @@ slot27 = function(slot0, slot1)
 	--- BLOCK #2 5-18, warpins: 2 ---
 	slot2 = {}
 	slot3 = {
-		StartTime = 0,
-		ClusterName = ""
+		ClusterName = "",
+		StartTime = 0
 	}
 	slot4 = Const
 	slot4 = slot4.LOGIN_DUMMY_CLUSTERID
@@ -2447,9 +2996,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot26.genPreConfigedServers = slot27
+slot32.genPreConfigedServers = slot33
 
-slot27 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.genPreConfigedServers
@@ -2555,9 +3104,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot26.getServerInfosByConfig = slot27
+slot32.getServerInfosByConfig = slot33
 
-slot27 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -3021,9 +3570,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot26.notifyQueueInfo = slot27
+slot32.notifyQueueInfo = slot33
 
-slot27 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3136,9 +3685,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot26.bindGlobalMsGate = slot27
+slot32.bindGlobalMsGate = slot33
 
-slot27 = function(slot0, slot1, slot2, slot3, slot4)
+slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot3.status
 	--- END OF BLOCK #0 ---
@@ -3274,9 +3823,9 @@ slot27 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot26.bindGlobalMsGateCb = slot27
+slot32.bindGlobalMsGateCb = slot33
 
-slot27 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = nil
 	slot0._bindGlobalMsGateTimer = slot3
@@ -3294,9 +3843,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot26._bindGlobalMsGateTimeoutHandler = slot27
+slot32._bindGlobalMsGateTimeoutHandler = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bindGlobalMsGateTimer
 	--- END OF BLOCK #0 ---
@@ -3331,9 +3880,9 @@ slot27 = function(slot0)
 
 end
 
-slot26._stopBindGlobalMsGateTimer = slot27
+slot32._stopBindGlobalMsGateTimer = slot33
 
-slot27 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ClientRepo
 	slot3 = slot3.extraGlobalMsProxy
@@ -3490,9 +4039,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot26.bindExtraGlobalMsGate = slot27
+slot32.bindExtraGlobalMsGate = slot33
 
-slot27 = function(slot0, slot1, slot2, slot3, slot4)
+slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot3.status
 	--- END OF BLOCK #0 ---
@@ -3651,9 +4200,9 @@ slot27 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot26.bindExtraGlobalMsGateCb = slot27
+slot32.bindExtraGlobalMsGateCb = slot33
 
-slot27 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = nil
 	slot0._bindExtraGlobalMsGateTimer = slot3
@@ -3671,9 +4220,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot26._bindExtraGlobalMsGateTimeoutHandler = slot27
+slot32._bindExtraGlobalMsGateTimeoutHandler = slot33
 
-slot27 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bindExtraGlobalMsGateTimer
 	--- END OF BLOCK #0 ---
@@ -3708,9 +4257,9 @@ slot27 = function(slot0)
 
 end
 
-slot26._stopBindExtraGlobalMsGateTimer = slot27
+slot32._stopBindExtraGlobalMsGateTimer = slot33
 
-slot27 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = ServiceUtils
 	slot2 = slot2.callService
@@ -3732,9 +4281,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot26.verifySdkBotTest = slot27
+slot32.verifySdkBotTest = slot33
 
-return slot26
+return slot32
 --- END OF BLOCK #0 ---
 
 

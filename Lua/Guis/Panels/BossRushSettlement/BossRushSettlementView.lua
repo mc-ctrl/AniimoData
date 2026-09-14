@@ -1,4 +1,4 @@
---- BLOCK #0 1-24, warpins: 1 ---
+--- BLOCK #0 1-27, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -15,9 +15,12 @@ slot3 = slot1.LightClass
 slot5 = "BossRushSettlementView"
 slot6 = slot2
 slot3 = slot3(slot5, slot6)
+slot4 = require
+slot6 = "Utils.ClientTextUtils"
+slot4 = slot4(slot6)
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-115, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-169, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -132,6 +135,60 @@ slot4 = function(slot0)
 	slot4 = "btnAiHelpUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnAiHelpUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "escListItemUList"
+	slot1 = slot1(slot3, slot4)
+	slot0.escListItemUList = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "rankNameTxtUBaseText"
+	slot1 = slot1(slot3, slot4)
+	slot0.rankNameTxtUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "rankNumTxtUBaseText"
+	slot1 = slot1(slot3, slot4)
+	slot0.rankNumTxtUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "goSeasonBtnUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.goSeasonBtnUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "goRankBtnUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.goRankBtnUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "resultBox3UButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.resultBox3UButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "seasonTxtNameUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.seasonTxtNameUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "consoleBarConsoleBar"
+	slot1 = slot1(slot3, slot4)
+	slot0.consoleBarConsoleBar = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "resultBox1TxtUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.resultBox1TxtUSDFText = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -140,9 +197,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.findObjects = slot4
+slot3.findObjects = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-46, warpins: 1 ---
 	slot1 = slot0.btnReturnUButton
 	slot3 = slot1
@@ -197,10 +254,47 @@ slot4 = function(slot0)
 
 end
 
-slot3.registerObjects = slot4
+slot3.registerObjects = slot5
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-30, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.rankNameTxtUBaseText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "BOSS_RUSH_ESC_TIP1"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.resultBox1TxtUSDFText
+	slot4 = pg
+	slot4 = slot4.getLocalizationText
+	slot6 = "1480502685"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.seasonTxtNameUSDFText
+	slot4 = pg
+	slot4 = slot4.getLocalizationText
+	slot6 = "1557650816"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.rankNumTxtUBaseText
+	slot4 = "No.--"
+
+	slot1(slot3, slot4)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -208,7 +302,7 @@ slot4 = function(slot0)
 
 end
 
-slot3.initView = slot4
+slot3.initView = slot5
 
 return slot3
 --- END OF BLOCK #0 ---

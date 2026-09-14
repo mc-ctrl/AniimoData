@@ -122,7 +122,7 @@ slot5 = function(slot0)
 	slot1 = slot1(slot3, slot4)
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "txtNameOneUSDFText"
+	slot4 = "txtNameUSDFText"
 	slot1 = slot1(slot3, slot4)
 	slot0.pwtSwitchCtrlTxt = slot1
 

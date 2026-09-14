@@ -1,25 +1,28 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-54, warpins: 1 ---
 slot0 = require
-slot2 = "Utils.ClientUtils"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Utils.ClientUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "GameApp.Core.SystemBase"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "UISceneSystem"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
-slot4 = require
-slot6 = "Const.ClientConst"
-slot4 = slot4(slot6)
+slot3 = require
+slot5 = "GameApp.Core.SystemBase"
+slot3 = slot3(slot5)
+slot4 = slot2.LightClass
+slot6 = "UISceneSystem"
+slot7 = slot3
+slot4 = slot4(slot6, slot7)
 slot5 = require
-slot7 = "Const.AddressDataConst"
+slot7 = "Const.ClientConst"
 slot5 = slot5(slot7)
+slot6 = require
+slot8 = "Const.AddressDataConst"
+slot6 = slot6(slot8)
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = nil
 	slot0.mainSceneLight = slot1
@@ -31,10 +34,19 @@ slot6 = function(slot0)
 
 end
 
-slot3.onCtor = slot6
+slot4.onCtor = slot7
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot7 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.cameraMgr
+	slot3 = slot1
+	slot1 = slot1.SetGateCameraEnable
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	slot1 = {}
 	slot0.attachScenes = slot1
 	slot1 = {}
@@ -47,9 +59,9 @@ slot6 = function(slot0)
 
 end
 
-slot3.onInit = slot6
+slot4.onInit = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -64,7 +76,7 @@ slot6 = function(slot0)
 
 
 	--- BLOCK #1 6-6, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -142,63 +154,149 @@ slot6 = function(slot0)
 
 end
 
-slot3.formatPetBlurTraceStack = slot6
+slot4.formatPetBlurTraceStack = slot7
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = pairs
-	slot3 = slot0.attachScenes
-	slot1, slot2, slot3 = slot1(slot3)
+slot7 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = {}
+	slot2 = pairs
+	slot4 = slot0.attachScenes
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 6-7, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	if slot5 ~= nil then
+	if slot6 ~= nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 7-9, warpins: 1 ---
-	slot8 = slot5
-	slot6 = slot5.destroy
-
-	slot6(slot8)
-
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot7 = #slot1
+	slot7 = slot7 + 1
+	slot1[slot7] = slot6
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-11, warpins: 3 ---
+	--- BLOCK #3 11-12, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	for slot4, slot5 in slot1, slot2, slot3
+	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 12-16, warpins: 1 ---
-	slot1 = {}
-	slot0.attachScenes = slot1
-	slot1 = {}
-	slot0.uiSceneStack = slot1
+	--- BLOCK #4 13-16, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 17-21, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.tryWithLogErrorEx
+	slot9 = slot6.destroy
+	slot10 = slot6
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-23, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 24-48, warpins: 1 ---
+	slot2 = {}
+	slot0.attachScenes = slot2
+	slot2 = {}
+	slot0.uiSceneStack = slot2
+	slot4 = slot0
+	slot2 = slot0.setMainSceneActive
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.lightMgr
+	slot4 = slot2
+	slot2 = slot2.ActiveLightByLayer
+	slot5 = false
+	slot6 = ClientConst
+	slot6 = slot6.LayerDefine
+	slot6 = slot6.LAYER_UI_SCENE
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.uiMgr
+	slot4 = slot2
+	slot2 = slot2.ClearStreamingAnchor
+
+	slot2(slot4)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot3.onDestroy = slot6
+slot4.clearUIScenes = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearUIScenes
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.onClear = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearUIScenes
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.onDestroy = slot7
+
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.attachScenes
 	slot3 = slot3[slot1]
@@ -231,9 +329,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot3.registerUIScene = slot6
+slot4.registerUIScene = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.attachScenes
 	slot3 = nil
@@ -246,9 +344,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.unRegisterUIScene = slot6
+slot4.unRegisterUIScene = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot6 = slot0.attachScenes
 	slot6 = slot6[slot1]
@@ -576,9 +674,9 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot3.switchToScene = slot6
+slot4.switchToScene = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.attachScenes
@@ -629,9 +727,9 @@ slot6 = function(slot0)
 
 end
 
-slot3.checkNeedPawnHide = slot6
+slot4.checkNeedPawnHide = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4)
+slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0.attachScenes
 	slot5 = slot5[slot1]
@@ -931,7 +1029,7 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #29 90-92, warpins: 3 ---
-	slot8 = not slot3
+	slot8 = true
 	--- END OF BLOCK #29 ---
 
 	slot6 = if slot6 then
@@ -1128,9 +1226,9 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot3.switchOutScene = slot6
+slot4.switchOutScene = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.attachScenes
 	slot2 = slot2[slot1]
@@ -1142,9 +1240,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.getScene = slot6
+slot4.getScene = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot6 = nil
 	--- END OF BLOCK #0 ---
@@ -1195,9 +1293,9 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot3.getUISceneInst = slot6
+slot4.getUISceneInst = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.attachScenes
@@ -1244,9 +1342,9 @@ slot6 = function(slot0)
 
 end
 
-slot3.beforeAnimation = slot6
+slot4.beforeAnimation = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -1267,9 +1365,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.setMainSceneActive = slot6
+slot4.setMainSceneActive = slot7
 
-return slot3
+return slot4
 --- END OF BLOCK #0 ---
 
 

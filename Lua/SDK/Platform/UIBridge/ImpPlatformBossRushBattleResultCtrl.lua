@@ -1,4 +1,4 @@
---- BLOCK #0 1-9, warpins: 1 ---
+--- BLOCK #0 1-10, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
@@ -212,7 +212,9 @@ slot2 = function(slot0, slot1, slot2)
 
 end
 
-slot3 = function(slot0, slot1, slot2, slot3, slot4)
+slot0.getPlayerInfo = slot2
+
+slot2 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -272,8 +274,9 @@ slot3 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 14-29, warpins: 4 ---
-	slot6 = getPlayerInfo
+	--- BLOCK #6 14-30, warpins: 4 ---
+	slot6 = M
+	slot6 = slot6.getPlayerInfo
 	slot8 = slot5
 	slot9 = slot2
 	slot10 = slot4
@@ -296,14 +299,14 @@ slot3 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #7 30-30, warpins: 1 ---
+	--- BLOCK #7 31-31, warpins: 1 ---
 	slot10 = ""
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 31-32, warpins: 2 ---
+	--- BLOCK #8 32-33, warpins: 2 ---
 	slot9.rawText = slot10
 
 	return slot7(slot9)
@@ -313,7 +316,7 @@ slot3 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0.getMaskedPlayerName = slot3
+slot0.getMaskedPlayerName = slot2
 
 return slot0
 --- END OF BLOCK #0 ---

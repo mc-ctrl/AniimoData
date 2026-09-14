@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-59, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -18,20 +18,26 @@ slot5 = require
 slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.photo_identify_data"
+slot8 = "Utils.ClientSettingUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.pet_research_content_data"
+slot9 = "Common.NoticeDef"
 slot7 = slot7(slot9)
-slot8 = slot2.LightClass
-slot10 = "QuickCaptureUIComponent"
-slot11 = slot4
-slot8 = slot8(slot10, slot11)
+slot8 = require
+slot10 = "Data.photo_identify_data"
+slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.LuaUIUtils"
+slot11 = "Data.pet_research_content_data"
 slot9 = slot9(slot11)
+slot10 = slot2.LightClass
+slot12 = "QuickCaptureUIComponent"
+slot13 = slot4
+slot10 = slot10(slot12, slot13)
+slot11 = require
+slot13 = "Utils.LuaUIUtils"
+slot11 = slot11(slot13)
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = UIComponent
 	slot3 = slot3.ctor
@@ -48,9 +54,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot8.ctor = slot10
+slot10.ctor = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootComponent
@@ -78,9 +84,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onShow = slot10
+slot10.onShow = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -89,9 +95,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.registerStpFinishCb = slot10
+slot10.registerStpFinishCb = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -100,9 +106,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.findObjects = slot10
+slot10.findObjects = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.setUIViewVisible
@@ -136,10 +142,10 @@ slot10 = function(slot0)
 
 end
 
-slot8.playEntryAni = slot10
+slot10.playEntryAni = slot12
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-25, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.takePhotoBtn
 
@@ -192,6 +198,33 @@ slot10 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = ClientSettingUtils
+	slot1 = slot1.isCloudGame
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 14-20, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.view
+	slot3 = slot3.captureTip
+	slot4 = ""
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 21-29, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -203,6 +236,12 @@ slot10 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 30-37, warpins: 2 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.setUIViewVisible
 	slot3 = slot0.view
@@ -212,15 +251,15 @@ slot10 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot8.initView = slot10
+slot10.initView = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -243,9 +282,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onDestroy = slot10
+slot10.onDestroy = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PhotoIdentifyData
 	slot2 = slot0.quickPhotoId
@@ -365,9 +404,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.setPhotoTitle = slot10
+slot10.setPhotoTitle = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -376,10 +415,135 @@ slot10 = function(slot0)
 
 end
 
-slot8.update = slot10
+slot10.update = slot12
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.mobileCameraMgr
+	slot1 = slot1.HasCapturedImage
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.mobileCameraMgr
+	slot3 = slot1
+	slot1 = slot1.HasCapturedImage
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 15-19, warpins: 1 ---
+	slot1 = ClientSettingUtils
+	slot1 = slot1.isCloudGame
+	slot1 = slot1()
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-20, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 21-25, warpins: 3 ---
+	slot1 = ClientSettingUtils
+	slot1 = slot1.isCloudGame
+	slot1 = slot1()
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-34, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.mobileCameraMgr
+	slot3 = slot1
+	slot1 = slot1.SaveImageToAlbum
+	slot4 = nil
+
+	slot5 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = string
+		slot1 = slot1.isNilOrEmpty
+		slot3 = slot0
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 7-13, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.showBubbleMessage
+		slot3 = NoticeDef
+		slot3 = slot3.SAVE_PHOTOGRAPH_FAILED_DISC_FULL
+
+		slot1(slot3)
+
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 14-21, warpins: 2 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.showBubbleMessageRaw
+		slot3 = ClientSettingUtils
+		slot3 = slot3.getPhotoSyncingToPhoneText
+		MULTRES = slot3()
+
+		slot1(MULTRES)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 35-40, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.mobileCameraMgr
@@ -388,16 +552,29 @@ slot10 = function(slot0)
 
 	slot1(slot3)
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 41-41, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot8.savePhoto = slot10
+slot10.savePhoto = slot12
 
-return slot8
+return slot10
 --- END OF BLOCK #0 ---
 
 

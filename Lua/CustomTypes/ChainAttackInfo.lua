@@ -600,23 +600,20 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 24-64, warpins: 2 ---
+	--- BLOCK #6 24-59, warpins: 2 ---
 	slot11 = slot1
 	slot9 = slot1.getCombatContextFromCache
 	slot12 = AbilityConst
 	slot12 = slot12.COMBAT_CONTEXT_TYPE_CHAIN_ATTACK
 	slot13 = slot4
 	slot9 = slot9(slot11, slot12, slot13)
-	slot10 = pg
-	slot10 = slot10.global
-	slot10 = slot10.abilityMgr
-	slot10 = slot10.constCasterInfoPool
-	slot12 = slot10
-	slot10 = slot10.getWithCtor
-	slot13 = true
+	slot12 = slot9
+	slot10 = slot9.setConstCasterInfo
+	slot13 = nil
 	slot14 = slot1.actorId
-	slot10 = slot10(slot12, slot13, slot14)
-	slot9.constCasterInfo = slot10
+
+	slot10(slot12, slot13, slot14)
+
 	slot10 = pg
 	slot10 = slot10.global
 	slot10 = slot10.abilityMgr
@@ -651,14 +648,14 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	end
 
 
-	--- BLOCK #7 65-65, warpins: 1 ---
+	--- BLOCK #7 60-60, warpins: 1 ---
 	slot10 = 0
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 66-88, warpins: 2 ---
+	--- BLOCK #8 61-83, warpins: 2 ---
 	slot9.overrideAtk = slot10
 	slot10 = true
 	slot9.isExtremeChainActions = slot10
@@ -693,7 +690,7 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 89-89, warpins: 2 ---
+	--- BLOCK #9 84-84, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 

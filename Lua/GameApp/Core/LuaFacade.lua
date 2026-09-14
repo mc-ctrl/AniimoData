@@ -298,9 +298,9 @@ slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #2 6-11, warpins: 2 ---
 	slot4 = Pg
 	slot4 = slot4.game
-	slot5 = pairs
-	slot7 = slot3
-	slot5, slot6, slot7 = slot5(slot7)
+	slot5 = raw_next
+	slot6 = slot3
+	slot7 = nil
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6

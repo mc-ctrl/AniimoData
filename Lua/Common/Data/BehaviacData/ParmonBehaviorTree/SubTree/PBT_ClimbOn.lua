@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/PBT_ClimbOn",
+	agenttype = "CombatAgent",
 	version = 5,
-	useForRoute = false,
-	agenttype = "CombatAgent"
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
@@ -33,8 +33,8 @@ slot5.const = slot6
 slot4[2] = slot5
 slot5 = {
 	name = "tClimbYaw",
-	const = 0,
 	type = "float",
+	const = 0,
 	value = "0"
 }
 slot4[3] = slot5

@@ -369,13 +369,17 @@ slot20 = function(slot0)
 	end
 
 
-	--- BLOCK #13 88-100, warpins: 1 ---
+	--- BLOCK #13 88-104, warpins: 1 ---
 	slot9 = 1 - slot8
 	slot9 = slot4 * slot9
 	slot10 = slot6 - slot9
 	slot13 = slot0
-	slot11 = slot0.addRepeatTimer
-	slot14 = slot10
+	slot11 = slot0.addTimer
+	slot14 = math
+	slot14 = slot14.max
+	slot16 = 0
+	slot17 = slot10
+	slot14 = slot14(slot16, slot17)
 	slot15 = CallbackHandler
 	slot17 = slot0
 	slot18 = "refreshHatchBox"
@@ -387,7 +391,7 @@ slot20 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #14 101-106, warpins: 1 ---
+	--- BLOCK #14 105-110, warpins: 1 ---
 	slot3 = slot0.hatchSlotStatus
 	slot4 = Const
 	slot4 = slot4.PET_BALL
@@ -401,7 +405,7 @@ slot20 = function(slot0)
 	end
 
 
-	--- BLOCK #15 107-110, warpins: 1 ---
+	--- BLOCK #15 111-114, warpins: 1 ---
 	slot2 = "Hatched"
 	slot3 = Const
 	slot3 = slot3.HOME_HATCHBOX_STATUS
@@ -411,7 +415,7 @@ slot20 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 111-113, warpins: 5 ---
+	--- BLOCK #16 115-117, warpins: 5 ---
 	slot3 = slot0.m_status
 	--- END OF BLOCK #16 ---
 
@@ -422,7 +426,7 @@ slot20 = function(slot0)
 	end
 
 
-	--- BLOCK #17 114-132, warpins: 1 ---
+	--- BLOCK #17 118-136, warpins: 1 ---
 	slot0.m_status = slot1
 	slot3 = HomeLandUtils
 	slot3 = slot3.getHatchBoxAniInfo
@@ -451,7 +455,7 @@ slot20 = function(slot0)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 133-136, warpins: 2 ---
+	--- BLOCK #18 137-140, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.refreshHatchBoxTopLogo
 

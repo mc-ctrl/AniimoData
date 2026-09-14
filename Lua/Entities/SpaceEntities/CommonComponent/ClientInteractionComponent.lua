@@ -1,4 +1,4 @@
---- BLOCK #0 1-43, warpins: 1 ---
+--- BLOCK #0 1-37, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -11,11 +11,15 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Const.MessageName"
 slot3 = slot3(slot5)
-slot4 = slot0.Component
-slot6 = "ClientInteractionComponent"
+slot4 = require
+slot6 = "Entities.SpaceEntities.CommonComponent.ClientFKeyInteractBase"
 slot4 = slot4(slot6)
+slot5 = slot0.Component
+slot7 = "ClientInteractionComponent"
+slot8 = slot4
+slot5 = slot5(slot7, slot8)
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getInteractLocalOffset
@@ -33,135 +37,32 @@ slot5 = function(slot0)
 
 end
 
-slot4.start = slot5
+slot5.start = slot6
 
-slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.refreshTriggerState
+slot6 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot2 = slot0.localOffset
+	slot3 = slot0.eModel
+	slot5 = slot3
+	slot3 = slot3.CreateSphereTriggerWithOffsetEx
+	slot6 = ClientConst
+	slot6 = slot6.TriggerType
+	slot6 = slot6.FKey
+	slot7 = slot1
+	slot8 = slot2[1]
+	slot9 = slot2[2]
+	slot10 = slot2[3]
 
-	slot2(slot4)
-
-	return
+	return slot3(slot5, slot6, slot7, slot8, slot9, slot10)
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot4.EVENT_OnActiveChange = slot5
+slot5.createTrigger = slot6
 
-slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.refreshTriggerState
-
-	slot2(slot4)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot4.EVENT_OnModelVisibleChange = slot5
-
-slot5 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.triggerId
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot1 = slot0.visible
-	--- END OF BLOCK #1 ---
-
-	if slot1 ~= nil then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #2 7-9, warpins: 1 ---
-	slot1 = slot0.active
-	--- END OF BLOCK #2 ---
-
-	if slot1 ~= nil then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #3 10-12, warpins: 1 ---
-	slot1 = slot0.visible
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 13-15, warpins: 1 ---
-	slot1 = slot0.active
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 16-22, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.SetTriggerActive
-	slot4 = slot0.triggerId
-	slot5 = true
-
-	slot1(slot3, slot4, slot5)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 23-28, warpins: 2 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.SetTriggerActive
-	slot4 = slot0.triggerId
-	slot5 = false
-
-	slot1(slot3, slot4, slot5)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 29-29, warpins: 5 ---
-	return
-	--- END OF BLOCK #7 ---
-
-
-
-end
-
-slot4.refreshTriggerState = slot5
-
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.getOverrideInteractLocalOffset
 	--- END OF BLOCK #0 ---
@@ -222,9 +123,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getInteractLocalOffset = slot5
+slot5.getInteractLocalOffset = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 0
 	slot4 = slot0
@@ -453,52 +354,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getInteractiveDist = slot5
+slot5.getInteractiveDist = slot6
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.onLeaveInteractTrigger
-
-	slot1(slot3)
-
-	slot1 = slot0.triggerId
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-13, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.DestroyTrigger
-	slot4 = slot0.triggerId
-
-	slot1(slot3, slot4)
-
-	slot1 = nil
-	slot0.triggerId = slot1
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 14-14, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot4.destroy = slot5
-
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.sandboxReady
 	--- END OF BLOCK #0 ---
@@ -552,45 +410,12 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.onTriggerEnter = slot5
+slot5.onTriggerEnter = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = ClientConst
-	slot2 = slot2.TriggerType
-	slot2 = slot2.FKey
-	--- END OF BLOCK #0 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.onLeaveInteractTrigger
-
-	slot2(slot4)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-9, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot4.onTriggerExit = slot5
-
-slot5 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = true
+	slot0.playerInTrigger = slot1
 	slot1 = slot0.getInteractionListData
 	--- END OF BLOCK #0 ---
 
@@ -601,7 +426,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-10, warpins: 1 ---
+	--- BLOCK #1 6-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getInteractionListData
 	slot1 = slot1(slot3)
@@ -616,7 +441,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #2 11-17, warpins: 1 ---
+	--- BLOCK #2 13-19, warpins: 1 ---
 	slot1 = facade
 	slot3 = slot1
 	slot1 = slot1.SendMessageCommand
@@ -631,7 +456,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 18-20, warpins: 3 ---
+	--- BLOCK #3 20-22, warpins: 3 ---
 	slot1 = slot0.getCarryInteractionListData
 	--- END OF BLOCK #3 ---
 
@@ -642,7 +467,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #4 21-27, warpins: 1 ---
+	--- BLOCK #4 23-29, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCarryInteractionListData
 	slot1 = slot1(slot3)
@@ -657,7 +482,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #5 28-34, warpins: 1 ---
+	--- BLOCK #5 30-36, warpins: 1 ---
 	slot1 = facade
 	slot3 = slot1
 	slot1 = slot1.SendMessageCommand
@@ -672,7 +497,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-39, warpins: 3 ---
+	--- BLOCK #6 37-41, warpins: 3 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_OnEnterInteractRange"
@@ -686,10 +511,12 @@ slot5 = function(slot0)
 
 end
 
-slot4.onEnterInteractTrigger = slot5
+slot5.onEnterInteractTrigger = slot6
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = false
+	slot0.playerInTrigger = slot1
 	slot1 = slot0._interactionData
 	--- END OF BLOCK #0 ---
 
@@ -700,7 +527,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-12, warpins: 1 ---
+	--- BLOCK #1 6-14, warpins: 1 ---
 	slot1 = facade
 	slot3 = slot1
 	slot1 = slot1.SendMessageCommand
@@ -717,7 +544,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-15, warpins: 2 ---
+	--- BLOCK #2 15-17, warpins: 2 ---
 	slot1 = slot0._carryInteractionData
 	--- END OF BLOCK #2 ---
 
@@ -728,7 +555,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #3 16-24, warpins: 1 ---
+	--- BLOCK #3 18-26, warpins: 1 ---
 	slot1 = facade
 	slot3 = slot1
 	slot1 = slot1.SendMessageCommand
@@ -745,7 +572,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-29, warpins: 2 ---
+	--- BLOCK #4 27-31, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_OnLeaveInteractRange"
@@ -759,9 +586,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onLeaveInteractTrigger = slot5
+slot5.onLeaveInteractTrigger = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshInteractTrigger
@@ -802,111 +629,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.refreshInteractTriggerEvent = slot5
+slot5.refreshInteractTriggerEvent = slot6
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getInteractiveDist
-	slot1 = slot1(slot3)
-	slot2 = slot0.interactiveDist
-	--- END OF BLOCK #0 ---
-
-	if slot1 ~= slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #1 7-11, warpins: 1 ---
-	slot0.interactiveDist = slot1
-	slot2 = slot0.interactiveDist
-	slot3 = 0
-	--- END OF BLOCK #1 ---
-
-	if slot2 > slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #2 12-14, warpins: 1 ---
-	slot2 = slot0.triggerId
-	--- END OF BLOCK #2 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 15-17, warpins: 1 ---
-	slot2 = slot0.eModel
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 18-26, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot4 = slot2
-	slot2 = slot2.CreateSphereTriggerWithOffset
-	slot5 = ClientConst
-	slot5 = slot5.TriggerType
-	slot5 = slot5.FKey
-	slot6 = slot0.interactiveDist
-	slot7 = slot0.localOffset
-	slot2 = slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 27-31, warpins: 2 ---
-	slot0.triggerId = slot2
-	slot4 = slot0
-	slot2 = slot0.refreshTriggerState
-
-	slot2(slot4)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 32-38, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot4 = slot2
-	slot2 = slot2.RefreshTrigger
-	slot5 = slot0.triggerId
-	slot6 = slot0.id
-	slot7 = slot0.interactiveDist
-
-	slot2(slot4, slot5, slot6, slot7)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 39-39, warpins: 4 ---
-	return
-	--- END OF BLOCK #7 ---
-
-
-
-end
-
-slot4.refreshInteractTrigger = slot5
-
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

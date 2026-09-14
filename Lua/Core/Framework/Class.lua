@@ -1,7 +1,10 @@
---- BLOCK #0 1-52, warpins: 1 ---
-slot0 = {}
+--- BLOCK #0 1-62, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Common.EmptyTable"
+slot0 = slot0(slot2)
+slot1 = {}
 
-slot1 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -108,7 +111,7 @@ slot1 = function(slot0)
 
 end
 
-slot2 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 
@@ -280,7 +283,7 @@ slot2 = function(slot0)
 
 
 	--- BLOCK #1 11-11, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -320,37 +323,134 @@ slot2 = function(slot0)
 
 end
 
-slot3 = {}
 slot4 = {}
 slot5 = {}
 slot6 = {}
-slot7 = {
+slot7 = {}
+slot8 = false
+slot7.enableInstanceProfile = slot8
+slot8 = {}
+slot9 = {}
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = Class
+	slot2 = slot2.enableInstanceProfile
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-12, warpins: 2 ---
+	slot2 = __classCreatedCount
+	slot3 = __classCreatedCount
+	slot3 = slot3[slot0]
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-19, warpins: 2 ---
+	slot3 = slot3 + 1
+	slot2[slot0] = slot3
+	slot2 = __classAliveInstances
+	slot2 = slot2[slot0]
+	--- END OF BLOCK #5 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 20-26, warpins: 1 ---
+	slot3 = setmetatable
+	slot5 = {}
+	slot6 = {
+		__mode = "k"
+	}
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	slot3 = __classAliveInstances
+	slot3[slot0] = slot2
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-29, warpins: 2 ---
+	slot3 = true
+	slot2[slot1] = slot3
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot11 = {
+	destroy = false,
 	preDestroy = false,
 	postInit = false,
 	init = false,
 	preInit = false,
 	ctor = false,
-	start = false,
-	destroy = false
+	start = false
 }
-slot8 = {
+slot12 = {
 	start = true,
 	postInit = true,
 	init = true,
 	preInit = true,
 	ctor = true
 }
-slot9 = {
+slot13 = {
+	clientMsg = true,
 	serverMsg = true,
 	getAoiClients = true,
-	getOwnClient = true,
-	clientMsg = true
+	getOwnClient = true
 }
-slot10 = false
-slot11 = false
-slot12 = nil
+slot14 = false
+slot15 = false
+slot16 = nil
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	__logger = slot0
 
@@ -361,9 +461,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.setLogger = slot13
+slot7.setLogger = slot17
 
-slot13 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = nil
 	slot4 = __constructMethods
@@ -880,7 +980,7 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot14 = function(slot0, ...)
+slot18 = function(slot0, ...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._instance
 	--- END OF BLOCK #0 ---
@@ -912,56 +1012,82 @@ slot14 = function(slot0, ...)
 
 end
 
-slot6.createSingletonClass = slot14
+slot7.createSingletonClass = slot18
 
-slot14 = function(slot0)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	if slot0 == true then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
+	--- BLOCK #1 3-5, warpins: 1 ---
 	reload = slot0
-	slot1 = Class
-	slot1 = slot1.BeforeReload
-
-	slot1()
-
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #2 8-11, warpins: 1 ---
-	slot1 = Class
-	slot1 = slot1.OnReload
+	--- BLOCK #2 6-9, warpins: 1 ---
+	slot2 = Class
+	slot2 = slot2.BeforeReload
 
-	slot1()
-
-	reload = slot0
+	slot2()
 
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 12-12, warpins: 2 ---
-	return
+	--- BLOCK #3 10-11, warpins: 1 ---
 	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot2 = Class
+	slot2 = slot2.OnReload
+
+	slot2()
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-15, warpins: 2 ---
+	reload = slot0
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 16-16, warpins: 3 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot6.setReload = slot14
-slot14 = {}
+slot7.setReload = slot18
+slot18 = {}
 
-slot15 = function(slot0, slot1, slot2, slot3, slot4)
+slot19 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = {
 		__IsClass = true
@@ -1149,7 +1275,7 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 77-87, warpins: 2 ---
+	--- BLOCK #16 77-88, warpins: 2 ---
 	slot6 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
@@ -1239,11 +1365,24 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 	slot9 = {}
-	slot10 = __ClassTypeList
-	slot10[slot5] = slot9
-	slot10 = {}
-	slot10.__index = slot9
-	slot5.__objMetatable = slot10
+
+	slot10 = function(slot0, slot1)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot2 = vtbl
+		slot2 = slot2[slot1]
+
+		return slot2
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot11 = __ClassTypeList
+	slot11[slot5] = slot9
+	slot11 = {}
+	slot11.__index = slot9
+	slot5.__objMetatable = slot11
 	--- END OF BLOCK #16 ---
 
 	slot3 = if slot3 then
@@ -1253,16 +1392,16 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #17 88-96, warpins: 1 ---
-	slot10 = false
-	slot5.__botWhitelist = slot10
-	slot10 = {}
-	slot5.__botStubCache = slot10
-	slot10 = {}
-	slot5.__botReportedSet = slot10
-	slot10 = slot5.__objMetatable
+	--- BLOCK #17 89-97, warpins: 1 ---
+	slot11 = false
+	slot5.__botWhitelist = slot11
+	slot11 = {}
+	slot5.__botStubCache = slot11
+	slot11 = {}
+	slot5.__botReportedSet = slot11
+	slot11 = slot5.__objMetatable
 
-	slot11 = function(slot0, slot1)
+	slot12 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = vtbl
 		slot2 = slot2[slot1]
@@ -1453,21 +1592,22 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot10.__index = slot11
+	slot11.__index = slot12
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 97-106, warpins: 2 ---
+	--- BLOCK #18 98-108, warpins: 2 ---
 	slot9.toString = slot6
 	slot9.getClass = slot7
 	slot9.getClassType = slot8
-	slot10 = slot5.typeName
-	slot9.className = slot10
+	slot9._getClassFunc = slot10
+	slot11 = slot5.typeName
+	slot9.className = slot11
 
-	slot10 = function(...)
-		--- BLOCK #0 1-10, warpins: 1 ---
+	slot11 = function(...)
+		--- BLOCK #0 1-15, warpins: 1 ---
 		slot0 = {
 			__IsInstance = true
 		}
@@ -1475,6 +1615,13 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 		slot3 = slot0
 		slot4 = classType
 		slot4 = slot4.__objMetatable
+
+		slot1(slot3, slot4)
+
+		slot1 = __recordInstance
+		slot3 = classType
+		slot3 = slot3.typeName
+		slot4 = slot0
 
 		slot1(slot3, slot4)
 
@@ -1489,7 +1636,7 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 		end
 
 
-		--- BLOCK #1 11-15, warpins: 1 ---
+		--- BLOCK #1 16-20, warpins: 1 ---
 		slot1 = classType
 		slot1 = slot1.ctor
 		slot3 = slot0
@@ -1502,7 +1649,7 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 16-16, warpins: 2 ---
+		--- BLOCK #2 21-21, warpins: 2 ---
 		return slot0
 		--- END OF BLOCK #2 ---
 
@@ -1510,20 +1657,20 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot5.new = slot10
-	slot10 = slot5._IsSingleton
+	slot5.new = slot11
+	slot11 = slot5._IsSingleton
 
 	--- END OF BLOCK #18 ---
 
-	slot10 = if slot10 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 107-108, warpins: 1 ---
-	slot10 = function(...)
+	--- BLOCK #19 109-110, warpins: 1 ---
+	slot11 = function(...)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = Class
 		slot0 = slot0.createSingletonClass
@@ -1537,15 +1684,15 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot5.GetInstance = slot10
+	slot5.GetInstance = slot11
 
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 109-131, warpins: 2 ---
-	slot10 = function()
+	--- BLOCK #20 111-133, warpins: 2 ---
+	slot11 = function()
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot0 = superType
 		--- END OF BLOCK #0 ---
@@ -1615,17 +1762,17 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot5.setSuperMeta = slot10
-	slot10 = slot5.setSuperMeta
+	slot5.setSuperMeta = slot11
+	slot11 = slot5.setSuperMeta
 
-	slot10()
+	slot11()
 
-	slot10 = setmetatable
-	slot12 = slot5
-	slot13 = {}
-	slot13.__index = slot9
+	slot11 = setmetatable
+	slot13 = slot5
+	slot14 = {}
+	slot14.__index = slot9
 
-	slot14 = function(slot0, slot1, slot2)
+	slot15 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot3 = __defaultMethods
 		slot3 = slot3[slot1]
@@ -1839,9 +1986,9 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot13.__newindex = slot14
+	slot14.__newindex = slot15
 
-	slot14 = function(slot0, ...)
+	slot15 = function(slot0, ...)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = classType
 		slot1 = slot1._IsSingleton
@@ -1886,11 +2033,11 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot13.__call = slot14
+	slot14.__call = slot15
 
-	slot10(slot12, slot13)
+	slot11(slot13, slot14)
 
-	slot10 = function()
+	slot11 = function()
 		--- BLOCK #0 1-2, warpins: 1 ---
 		slot0 = vtbl
 
@@ -1901,9 +2048,9 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot5.getVtbl = slot10
+	slot5.getVtbl = slot11
 
-	slot10 = function(slot0, slot1, ...)
+	slot11 = function(slot0, slot1, ...)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot2 = classType
 		slot2 = slot2.__flatPostMethodCache
@@ -2039,57 +2186,132 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 		FLOW; TARGET BLOCK #13
 
 
-		--- BLOCK #13 51-54, warpins: 2 ---
+		--- BLOCK #13 51-52, warpins: 2 ---
+		--- END OF BLOCK #13 ---
+
+		if slot1 == "tick" then
+		JUMP TO BLOCK #14
+		else
+		JUMP TO BLOCK #17
+		end
+
+
+		--- BLOCK #14 53-56, warpins: 1 ---
 		slot3 = 1
 		slot4 = #slot2
 		slot5 = 1
-		--- END OF BLOCK #13 ---
+		--- END OF BLOCK #14 ---
 
-		FLOW; TARGET BLOCK #14
+		FLOW; TARGET BLOCK #15
 
 
-		--- BLOCK #14 55-59, warpins: 2 ---
+		--- BLOCK #15 57-61, warpins: 2 ---
 		slot7 = slot2[slot6]
 		slot9 = slot0
 		MULTRES = ...
 
 		slot7(slot9, MULTRES)
 
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #15 ---
 
 		for slot6=slot3, slot4, slot5
-		LOOP BLOCK #14
-		GO OUT TO BLOCK #15
+		LOOP BLOCK #15
+		GO OUT TO BLOCK #16
 
-		--- BLOCK #15 60-60, warpins: 1 ---
+		--- BLOCK #16 62-62, warpins: 1 ---
 		return
-		--- END OF BLOCK #15 ---
+
+		--- END OF BLOCK #16 ---
+
+		FLOW; TARGET BLOCK #17
+
+
+		--- BLOCK #17 63-66, warpins: 2 ---
+		slot3 = 1
+		slot4 = #slot2
+		slot5 = 1
+		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #18
+
+
+		--- BLOCK #18 67-75, warpins: 2 ---
+		slot7 = xpcall
+		slot9 = slot2[slot6]
+		slot10 = debug
+		slot10 = slot10.traceback
+		slot11 = slot0
+		MULTRES = ...
+		slot7, slot8 = slot7(slot9, slot10, slot11, MULTRES)
+		--- END OF BLOCK #18 ---
+
+		slot7 = if not slot7 then
+		JUMP TO BLOCK #19
+		else
+		JUMP TO BLOCK #21
+		end
+
+
+		--- BLOCK #19 76-78, warpins: 1 ---
+		slot9 = __logger
+		--- END OF BLOCK #19 ---
+
+		slot9 = if slot9 then
+		JUMP TO BLOCK #20
+		else
+		JUMP TO BLOCK #21
+		end
+
+
+		--- BLOCK #20 79-83, warpins: 1 ---
+		slot9 = __logger
+		slot11 = slot9
+		slot9 = slot9.error
+		slot12 = slot8
+
+		slot9(slot11, slot12)
+
+		--- END OF BLOCK #20 ---
+
+		FLOW; TARGET BLOCK #21
+
+
+		--- BLOCK #21 84-84, warpins: 3 ---
+		--- END OF BLOCK #21 ---
+
+		for slot6=slot3, slot4, slot5
+		LOOP BLOCK #18
+		GO OUT TO BLOCK #22
+
+		--- BLOCK #22 85-85, warpins: 1 ---
+		return
+		--- END OF BLOCK #22 ---
 
 
 
 	end
 
-	slot5.postComponentMethod = slot10
-	slot10 = {}
-	slot5.__canOverrideDefaumtMethods = slot10
-	slot10 = pairs
-	slot12 = __defaultMethods
-	slot10, slot11, slot12 = slot10(slot12)
+	slot5.postComponentMethod = slot11
+	slot11 = {}
+	slot5.__canOverrideDefaumtMethods = slot11
+	slot11 = pairs
+	slot13 = __defaultMethods
+	slot11, slot12, slot13 = slot11(slot13)
 	--- END OF BLOCK #20 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 132-143, warpins: 1 ---
-	slot15 = nil
-	slot5[slot13] = slot15
-	slot15 = rawset
-	slot17 = slot9
-	slot18 = "_"
-	slot19 = slot13
-	slot18 = slot18 .. slot19
+	--- BLOCK #21 134-145, warpins: 1 ---
+	slot16 = nil
+	slot5[slot14] = slot16
+	slot16 = rawset
+	slot18 = slot9
+	slot19 = "_"
+	slot20 = slot14
+	slot19 = slot19 .. slot20
 
-	slot19 = function()
+	slot20 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -2098,27 +2320,27 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot15(slot17, slot18, slot19)
+	slot16(slot18, slot19, slot20)
 
-	slot15 = slot5.__canOverrideDefaumtMethods
-	slot16 = true
-	slot15[slot13] = slot16
+	slot16 = slot5.__canOverrideDefaumtMethods
+	slot17 = true
+	slot16[slot14] = slot17
 
 	--- END OF BLOCK #21 ---
 
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 144-145, warpins: 2 ---
+	--- BLOCK #22 146-147, warpins: 2 ---
 	--- END OF BLOCK #22 ---
 
-	for slot13, slot14 in slot10, slot11, slot12
+	for slot14, slot15 in slot11, slot12, slot13
 	LOOP BLOCK #21
 	GO OUT TO BLOCK #23
 
 
-	--- BLOCK #23 146-151, warpins: 1 ---
-	slot10 = function(slot0, slot1)
+	--- BLOCK #23 148-153, warpins: 1 ---
+	slot11 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot0.__forceAttrRepeat
 		slot3 = true
@@ -2131,9 +2353,9 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot5.forceAttrRepeat = slot10
+	slot5.forceAttrRepeat = slot11
 
-	slot10 = function(slot0)
+	slot11 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = {}
 		slot0.__forceAttrRepeat = slot1
@@ -2145,7 +2367,7 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot5.clearAttrRepeat = slot10
+	slot5.clearAttrRepeat = slot11
 	--- END OF BLOCK #23 ---
 
 	slot1 = if slot1 then
@@ -2155,12 +2377,12 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #24 152-157, warpins: 1 ---
-	slot10 = setmetatable
-	slot12 = slot9
-	slot13 = {}
+	--- BLOCK #24 154-159, warpins: 1 ---
+	slot11 = setmetatable
+	slot13 = slot9
+	slot14 = {}
 
-	slot14 = function(slot0, slot1)
+	slot15 = function(slot0, slot1)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot2 = classType
 		slot2 = slot2.superNilKeys
@@ -2252,16 +2474,16 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot13.__index = slot14
+	slot14.__index = slot15
 
-	slot10(slot12, slot13)
+	slot11(slot13, slot14)
 
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 158-159, warpins: 2 ---
+	--- BLOCK #25 160-161, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #25 ---
 
@@ -2269,13 +2491,13 @@ slot15 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot6.Class = slot15
+slot7.Class = slot19
 
-slot15 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = {
-		__IsOldLightClass = true,
-		__IsClass = true
+		__IsClass = true,
+		__IsOldLightClass = true
 	}
 	slot3.typeName = slot0
 	--- END OF BLOCK #0 ---
@@ -2545,7 +2767,7 @@ slot15 = function(slot0, slot1, slot2)
 	slot7.className = slot8
 
 	slot8 = function(...)
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-15, warpins: 1 ---
 		slot0 = {
 			__IsInstance = true
 		}
@@ -2553,6 +2775,13 @@ slot15 = function(slot0, slot1, slot2)
 		slot3 = slot0
 		slot4 = classType
 		slot4 = slot4.__objMetatable
+
+		slot1(slot3, slot4)
+
+		slot1 = __recordInstance
+		slot3 = classType
+		slot3 = slot3.typeName
+		slot4 = slot0
 
 		slot1(slot3, slot4)
 
@@ -2567,7 +2796,7 @@ slot15 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 11-15, warpins: 1 ---
+		--- BLOCK #1 16-20, warpins: 1 ---
 		slot1 = classType
 		slot1 = slot1.ctor
 		slot3 = slot0
@@ -2580,7 +2809,7 @@ slot15 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 16-16, warpins: 2 ---
+		--- BLOCK #2 21-21, warpins: 2 ---
 		return slot0
 		--- END OF BLOCK #2 ---
 
@@ -3029,13 +3258,13 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot6.OldLightClass = slot15
+slot7.OldLightClass = slot19
 
-slot15 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = {
-		__IsLiteClass = true,
-		__IsClass = true
+		__IsClass = true,
+		__IsLiteClass = true
 	}
 	slot2.typeName = slot0
 	slot2.className = slot0
@@ -3058,11 +3287,18 @@ slot15 = function(slot0, slot1)
 	slot2.getClass = slot3
 
 	slot3 = function(...)
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = {}
 		slot1 = setmetatable
 		slot3 = slot0
 		slot4 = cls
+
+		slot1(slot3, slot4)
+
+		slot1 = __recordInstance
+		slot3 = cls
+		slot3 = slot3.typeName
+		slot4 = slot0
 
 		slot1(slot3, slot4)
 
@@ -3077,7 +3313,7 @@ slot15 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #1 10-13, warpins: 1 ---
+		--- BLOCK #1 15-18, warpins: 1 ---
 		slot2 = slot1
 		slot4 = slot0
 		MULTRES = ...
@@ -3089,7 +3325,7 @@ slot15 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 14-14, warpins: 2 ---
+		--- BLOCK #2 19-19, warpins: 2 ---
 		return slot0
 		--- END OF BLOCK #2 ---
 
@@ -3226,11 +3462,11 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot6.LiteClass = slot15
-slot15 = slot6.LiteClass
-slot6.LightClass = slot15
+slot7.LiteClass = slot19
+slot19 = slot7.LiteClass
+slot7.LightClass = slot19
 
-slot15 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0
@@ -3345,9 +3581,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot6.isSubClassOf = slot15
+slot7.isSubClassOf = slot19
 
-slot15 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0
@@ -3473,11 +3709,11 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot6.isInstanceOf = slot15
-slot15 = {}
-slot16 = {}
+slot7.isInstanceOf = slot19
+slot19 = {}
+slot20 = {}
 
-slot17 = function(...)
+slot21 = function(...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = true
 
@@ -3488,7 +3724,7 @@ slot17 = function(...)
 
 end
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = {}
 	slot3 = true
@@ -3765,9 +4001,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.Component = slot18
+slot7.Component = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	slot2 = slot1.super
 	--- END OF BLOCK #0 ---
@@ -4147,7 +4383,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot19 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1.__PropertyCallbacks__
@@ -4274,7 +4510,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot20 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1.__Name2PropertyDeclare__
@@ -4361,7 +4597,7 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = assert
 	slot4 = slot1.__IsComponent
@@ -4584,7 +4820,7 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot22 = function(slot0, slot1, slot2)
+slot26 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4651,9 +4887,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot6.AddComponents = slot22
+slot7.AddComponents = slot26
 
-slot22 = function(slot0, ...)
+slot26 = function(slot0, ...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = select
 	slot3 = "#"
@@ -4692,9 +4928,9 @@ slot22 = function(slot0, ...)
 
 end
 
-slot6.AddComponent = slot22
+slot7.AddComponent = slot26
 
-slot22 = function()
+slot26 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pairs
 	slot2 = TypeNames
@@ -4906,9 +5142,9 @@ slot22 = function()
 
 end
 
-slot6.BeforeReload = slot22
+slot7.BeforeReload = slot26
 
-slot22 = function()
+slot26 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pairs
 	slot2 = TypeNames
@@ -4974,9 +5210,132 @@ slot22 = function()
 
 end
 
-slot6.OnReload = slot22
+slot7.OnReload = slot26
 
-return slot6
+slot26 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = {}
+	slot1 = pairs
+	slot3 = __classAliveInstances
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot6 = 0
+	slot7 = pairs
+	slot9 = slot5
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot6 = slot6 + 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	for slot10 in slot7, slot8, slot9
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 14-19, warpins: 1 ---
+	slot7 = {}
+	slot7.alive = slot6
+	slot8 = __classCreatedCount
+	slot8 = slot8[slot4]
+	--- END OF BLOCK #4 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 1 ---
+	slot8 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-22, warpins: 2 ---
+	slot7.created = slot8
+	slot0[slot4] = slot7
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-24, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 25-28, warpins: 1 ---
+	slot1 = pairs
+	slot3 = __classCreatedCount
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #9 29-31, warpins: 1 ---
+	slot6 = slot0[slot4]
+	--- END OF BLOCK #9 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 32-34, warpins: 1 ---
+	slot6 = {
+		alive = 0
+	}
+	slot6.created = slot5
+	slot0[slot4] = slot6
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 35-36, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 37-37, warpins: 1 ---
+	return slot0
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot7.profileInstanceCount = slot26
+
+return slot7
 --- END OF BLOCK #0 ---
 
 

@@ -322,7 +322,7 @@ slot12 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 14-76, warpins: 1 ---
+	--- BLOCK #2 14-75, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	slot3 = slot1
 	slot1 = slot1.getCurEntity
@@ -343,9 +343,8 @@ slot12 = function(slot0)
 
 	slot1 = slot0.ctrEntity
 	slot1 = slot1.eModel
-	slot1 = slot1.transform
 	slot3 = slot1
-	slot1 = slot1.SetParent
+	slot1 = slot1.SetTransformParent
 	slot4 = slot0.cutscene
 	slot4 = slot4.cutscene
 	slot4 = slot4.rootObject
@@ -417,7 +416,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 77-77, warpins: 2 ---
+	--- BLOCK #3 76-76, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -914,7 +913,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 70-110, warpins: 2 ---
+	--- BLOCK #3 70-106, warpins: 2 ---
 	slot1 = slot0.cutscene
 	slot3 = slot1
 	slot1 = slot1.play
@@ -940,16 +939,12 @@ slot12 = function(slot0)
 	slot1 = slot1.global
 	slot1 = slot1.cameraMgr
 	slot3 = slot1
-	slot1 = slot1.AddUISceneCameraLayer
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.cameraMgr
-	slot4 = slot4.worldCameraInst
-	slot5 = ClientConst
-	slot5 = slot5.LayerDefine
-	slot5 = slot5.LAYER_UI_SCENE
+	slot1 = slot1.AddWorldCameraLayer
+	slot4 = ClientConst
+	slot4 = slot4.LayerDefine
+	slot4 = slot4.LAYER_UI_SCENE
 
-	slot1(slot3, slot4, slot5)
+	slot1(slot3, slot4)
 
 	slot1 = slot0.ctrEntity
 	slot1 = slot1.eModel
@@ -1242,7 +1237,7 @@ end
 slot2.setPlayerName = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-28, warpins: 1 ---
+	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.cutscene
@@ -1259,16 +1254,12 @@ slot12 = function(slot0)
 	slot1 = slot1.global
 	slot1 = slot1.cameraMgr
 	slot3 = slot1
-	slot1 = slot1.SubUISceneCameraLayer
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.cameraMgr
-	slot4 = slot4.worldCameraInst
-	slot5 = ClientConst
-	slot5 = slot5.LayerDefine
-	slot5 = slot5.LAYER_UI_SCENE
+	slot1 = slot1.SubWorldCameraLayer
+	slot4 = ClientConst
+	slot4 = slot4.LayerDefine
+	slot4 = slot4.LAYER_UI_SCENE
 
-	slot1(slot3, slot4, slot5)
+	slot1(slot3, slot4)
 
 	slot1 = IsNil
 	slot3 = slot0.quickPhoto
@@ -1282,7 +1273,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #1 29-36, warpins: 1 ---
+	--- BLOCK #1 25-32, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.uiMgr
@@ -1298,7 +1289,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 37-41, warpins: 2 ---
+	--- BLOCK #2 33-37, warpins: 2 ---
 	slot1 = IsNil
 	slot3 = slot0.dissolveBG
 	slot1 = slot1(slot3)
@@ -1311,7 +1302,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #3 42-49, warpins: 1 ---
+	--- BLOCK #3 38-45, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.uiMgr
@@ -1327,7 +1318,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 50-54, warpins: 2 ---
+	--- BLOCK #4 46-50, warpins: 2 ---
 	slot1 = IsNil
 	slot3 = slot0.avatarIcon
 	slot1 = slot1(slot3)
@@ -1340,7 +1331,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #5 55-62, warpins: 1 ---
+	--- BLOCK #5 51-58, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.uiMgr
@@ -1356,7 +1347,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 63-73, warpins: 2 ---
+	--- BLOCK #6 59-69, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.resMgr
@@ -1377,7 +1368,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #7 74-77, warpins: 1 ---
+	--- BLOCK #7 70-73, warpins: 1 ---
 	slot1 = slot0.cutscene
 	slot3 = slot1
 	slot1 = slot1.destroy
@@ -1389,7 +1380,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 78-84, warpins: 2 ---
+	--- BLOCK #8 74-80, warpins: 2 ---
 	slot1 = nil
 	slot0.cutscene = slot1
 	slot1 = UIComponent

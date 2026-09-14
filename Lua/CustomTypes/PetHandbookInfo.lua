@@ -606,46 +606,93 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #3 13-17, warpins: 1 ---
+	--- BLOCK #3 13-14, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 15-18, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.component
+	--- END OF BLOCK #4 ---
+
+	if slot7 == "game" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 19-26, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.getOrCreateOrdinaryResearchInfo
+	slot10 = slot1
+	slot11 = slot2
+	slot7 = slot7(slot9, slot10, slot11)
+	slot6 = slot7
+
+	--- END OF BLOCK #5 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 27-27, warpins: 1 ---
+	return slot6
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 28-32, warpins: 4 ---
 	slot7 = slot0[slot5]
 	slot8 = slot7.__ClassType
 	slot8 = slot8.typeName
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
 	if slot8 == "PetResearchMap" then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 18-24, warpins: 1 ---
+	--- BLOCK #8 33-39, warpins: 1 ---
 	slot10 = slot7
 	slot8 = slot7.getInfo
 	slot11 = slot2
 	slot12 = slot3
 	slot8 = slot8(slot10, slot11, slot12)
 	slot6 = slot8
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #5 25-25, warpins: 1 ---
+	--- BLOCK #9 40-40, warpins: 1 ---
 	slot6 = slot7
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #6 26-26, warpins: 3 ---
+	--- BLOCK #10 41-41, warpins: 3 ---
 	return slot6
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -662,7 +709,7 @@ slot13 = function(slot0, slot1, slot2)
 	if slot3 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
@@ -672,7 +719,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
@@ -684,69 +731,28 @@ slot13 = function(slot0, slot1, slot2)
 	if slot3 == "game" then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-17, warpins: 1 ---
-	slot3 = PetResearchUtils
-	slot3 = slot3.genTraitResearchInfoInitDict
-	slot5 = slot0._name
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getOrCreateTraitResearchInfo
 	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
+
+	return slot3(slot5, slot6)
+
 	--- END OF BLOCK #3 ---
 
-	if slot3 ~= nil then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-20, warpins: 1 ---
-	slot4 = slot0.traitResearchMap
-	slot4[slot1] = slot3
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #5 21-27, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.ERROR
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 28-34, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.error
-	slot7 = "getTraitResearchInfo init error"
-	slot8 = slot0._name
-	slot9 = slot1
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 35-37, warpins: 6 ---
+	--- BLOCK #4 15-17, warpins: 4 ---
 	slot3 = slot0.traitResearchMap
 	slot3 = slot3[slot1]
 
 	return slot3
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -998,7 +1004,7 @@ slot13 = function(slot0, slot1, slot2)
 	if slot3 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
@@ -1008,7 +1014,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
@@ -1020,69 +1026,28 @@ slot13 = function(slot0, slot1, slot2)
 	if slot3 == "game" then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-17, warpins: 1 ---
-	slot3 = PetResearchUtils
-	slot3 = slot3.genEvolveResearchInfoInitDict
-	slot5 = slot0._name
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getOrCreateEvolveResearchInfo
 	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
+
+	return slot3(slot5, slot6)
+
 	--- END OF BLOCK #3 ---
 
-	if slot3 ~= nil then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-20, warpins: 1 ---
-	slot4 = slot0.evolveResearchMap
-	slot4[slot1] = slot3
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #5 21-27, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.ERROR
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 28-34, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.error
-	slot7 = "getEvolveResearchInfo init error"
-	slot8 = slot0._name
-	slot9 = slot1
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 35-37, warpins: 6 ---
+	--- BLOCK #4 15-17, warpins: 4 ---
 	slot3 = slot0.evolveResearchMap
 	slot3 = slot3[slot1]
 
 	return slot3
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -1750,7 +1715,7 @@ end
 slot12.dumpEvolveResearchMap = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-69, warpins: 1 ---
+	--- BLOCK #0 1-62, warpins: 1 ---
 	slot1 = {}
 	slot2 = string
 	slot2 = slot2.format
@@ -1769,13 +1734,6 @@ slot13 = function(slot0)
 	slot2 = slot0.getStateMaskRepr
 	slot2 = slot2(slot4)
 	slot1._stateMask = slot2
-	slot4 = slot0
-	slot2 = slot0.dumpResearchMap
-	slot5 = Const
-	slot5 = slot5.PET_RESEARCH
-	slot5 = slot5.KEY_BASE
-	slot2 = slot2(slot4, slot5)
-	slot1.r_base = slot2
 	slot4 = slot0
 	slot2 = slot0.dumpResearchMap
 	slot5 = Const

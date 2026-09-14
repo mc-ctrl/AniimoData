@@ -1,4 +1,4 @@
---- BLOCK #0 1-90, warpins: 1 ---
+--- BLOCK #0 1-96, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.VoxelConst"
 slot0 = slot0(slot2)
@@ -19,19 +19,19 @@ slot6, slot7 = nil
 slot8 = Vector3
 slot9 = slot0.CannotStandOnVoxelMaterialDef
 slot10 = {
+	startSearchUpRange = 10,
+	characterHeight = 1,
+	jumpHeight = 10,
+	climbHeight = 10,
+	max_depth = 10,
+	maxSearchCount = 30,
 	ignoreEndCheck = 1,
 	characterSize = 1,
 	swimType = 0,
 	waterStandHeight = 10,
 	endSearchDownRange = 10,
 	endSearchUpRange = 10,
-	startSearchDownRange = 10,
-	startSearchUpRange = 10,
-	characterHeight = 1,
-	jumpHeight = 10,
-	climbHeight = 10,
-	max_depth = 10,
-	maxSearchCount = 30
+	startSearchDownRange = 10
 }
 
 slot11 = function(slot0, slot1, slot2, slot3)
@@ -1383,11 +1383,24 @@ slot11 = function(slot0, slot1)
 	if slot9 ~= slot12 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 19-27, warpins: 1 ---
+	--- BLOCK #2 19-23, warpins: 1 ---
+	slot12 = VoxelConst
+	slot12 = slot12.VoxelMaterialDef
+	slot12 = slot12.Ice
+	--- END OF BLOCK #2 ---
+
+	if slot9 ~= slot12 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 24-32, warpins: 1 ---
 	slot12 = bit
 	slot12 = slot12.band
 	slot14 = slot9
@@ -1395,82 +1408,82 @@ slot11 = function(slot0, slot1)
 	slot15 = slot15.VoxelMaterialDef
 	slot15 = slot15.Ground
 	slot12 = slot12(slot14, slot15)
-	--- END OF BLOCK #2 ---
-
-	if slot12 ~= 0 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #3 28-30, warpins: 2 ---
-	slot12 = slot1.y
 	--- END OF BLOCK #3 ---
 
-	if slot8 <= slot12 then
+	if slot12 ~= 0 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 31-34, warpins: 1 ---
+	--- BLOCK #4 33-35, warpins: 3 ---
+	slot12 = slot1.y
+	--- END OF BLOCK #4 ---
+
+	if slot8 <= slot12 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 36-39, warpins: 1 ---
 	slot12 = slot1.y
 	slot12 = slot12 - slot8
 
 	return slot12
 
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #5 35-37, warpins: 1 ---
-	slot12 = slot1.y
 	--- END OF BLOCK #5 ---
 
-	if slot7 <= slot12 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 38-40, warpins: 1 ---
+	--- BLOCK #6 40-42, warpins: 1 ---
 	slot12 = slot1.y
 	--- END OF BLOCK #6 ---
 
-	if slot12 < slot8 then
+	if slot7 <= slot12 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 41-43, warpins: 1 ---
+	--- BLOCK #7 43-45, warpins: 1 ---
+	slot12 = slot1.y
+	--- END OF BLOCK #7 ---
+
+	if slot12 < slot8 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 46-48, warpins: 1 ---
 	slot12 = slot1.y
 	slot12 = slot12 - slot7
 
 	return slot12
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 44-44, warpins: 5 ---
 	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 49-49, warpins: 5 ---
+	--- END OF BLOCK #9 ---
 
 	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #9
+	GO OUT TO BLOCK #10
 
-	--- BLOCK #9 45-46, warpins: 1 ---
+	--- BLOCK #10 50-51, warpins: 1 ---
 	slot3 = 0
 
 	return slot3
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -1627,88 +1640,103 @@ slot11 = function(slot0, slot1)
 
 
 	--- BLOCK #2 5-7, warpins: 2 ---
-	slot2 = 0
+	slot2 = slot0.eModel
 	--- END OF BLOCK #2 ---
 
-	if slot1 < slot2 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 8-10, warpins: 1 ---
-	slot2 = slot0.voxelComponent
+	--- BLOCK #3 8-8, warpins: 1 ---
+	slot3 = slot2.waterVoxelDepth
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-11, warpins: 2 ---
+	slot4 = 0
+	--- END OF BLOCK #4 ---
+
+	if slot1 < slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 12-13, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 14-16, warpins: 1 ---
+	slot4 = -slot1
+	--- END OF BLOCK #6 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 11-15, warpins: 1 ---
-	slot2 = slot0.voxelComponent
-	slot2 = slot2.waterVoxelDepth
-	slot3 = -slot1
-	--- END OF BLOCK #4 ---
-
-	if slot2 <= slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 16-17, warpins: 1 ---
-	slot2 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 18-18, warpins: 1 ---
-	slot2 = true
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 19-20, warpins: 2 ---
-	return slot2
-
+	--- BLOCK #7 17-18, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 21-32, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.getPosition
-	slot2 = slot2(slot4)
-	slot3 = VoxelUtils
-	slot3 = slot3.isPosOnWater
-	slot5 = slot0.space
-	slot5 = slot5.id
-	slot6 = slot2.x
-	slot7 = slot2.y
-	slot8 = slot2.z
-	slot9 = slot1
-
-	return slot3(slot5, slot6, slot7, slot8, slot9)
+	--- BLOCK #8 19-19, warpins: 1 ---
+	slot4 = true
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 33-34, warpins: 2 ---
-	slot2 = false
+	--- BLOCK #9 20-21, warpins: 2 ---
+	return slot4
 
-	return slot2
 	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 22-33, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getPosition
+	slot4 = slot4(slot6)
+	slot5 = VoxelUtils
+	slot5 = slot5.isPosOnWater
+	slot7 = slot0.space
+	slot7 = slot7.id
+	slot8 = slot4.x
+	slot9 = slot4.y
+	slot10 = slot4.z
+	slot11 = slot1
+
+	return slot5(slot7, slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-35, warpins: 2 ---
+	slot4 = false
+
+	return slot4
+	--- END OF BLOCK #11 ---
 
 
 
@@ -2059,42 +2087,71 @@ end
 slot5.rayCast = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-22, warpins: 1 ---
-	slot4 = slot2 - slot1
-	slot5 = VoxelUtils
-	slot5 = slot5._getMaxCostLengthByDiff
-	slot7 = slot4
-	slot8 = slot0.bodySize
-	slot5, slot6 = slot5(slot7, slot8)
-	slot7 = VoxelNavParam
-	slot7.maxSearchCount = slot6
-	slot7 = VoxelNavParam
-	slot7.max_depth = slot5
-	slot7 = VoxelUtils
-	slot7 = slot7._setDefaultVoxelNavParam
-	slot9 = slot0
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot4 = VoxelUtils
+	slot4 = slot4._getMaxCostLengthByDiffXYZ
+	slot6 = slot2[1]
+	slot7 = slot1[1]
+	slot6 = slot6 - slot7
+	slot7 = slot2[2]
+	slot8 = slot1[2]
+	slot7 = slot7 - slot8
+	slot8 = slot2[3]
+	slot9 = slot1[3]
+	slot8 = slot8 - slot9
+	slot9 = slot0.bodySize
+	slot4, slot5 = slot4(slot6, slot7, slot8, slot9)
+	slot6 = VoxelNavParam
+	slot6.maxSearchCount = slot5
+	slot6 = VoxelNavParam
+	slot6.max_depth = slot4
+	slot6 = VoxelUtils
+	slot6 = slot6._setDefaultVoxelNavParam
+	slot8 = slot0
 
-	slot7(slot9)
+	slot6(slot8)
 
-	slot7 = VoxelNavParam
-	slot8 = 1
-	slot7.ignoreEndCheck = slot8
-	slot7 = Utils
-	slot7 = slot7.checkClient
-	slot7 = slot7()
+	slot6 = VoxelNavParam
+	slot7 = 1
+	slot6.ignoreEndCheck = slot7
+	slot6 = Utils
+	slot6 = slot6.checkClient
+	slot6 = slot6()
 	--- END OF BLOCK #0 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 23-35, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.world
-	slot7 = slot7.findPathToPos
+	--- BLOCK #1 30-42, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.world
+	slot6 = slot6.findPathToPos
+	slot8 = slot1[1]
+	slot9 = slot1[2]
+	slot10 = slot1[3]
+	slot11 = slot2[1]
+	slot12 = slot2[2]
+	slot13 = slot2[3]
+	slot14 = VoxelNavParam
+	slot15 = slot3
+
+	return slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 43-56, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.world
+	slot6 = slot6.findPathToPos
+	slot8 = slot0.space
+	slot8 = slot8.id
 	slot9 = slot1[1]
 	slot10 = slot1[2]
 	slot11 = slot1[3]
@@ -2104,35 +2161,13 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot15 = VoxelNavParam
 	slot16 = slot3
 
-	return slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 36-49, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.world
-	slot7 = slot7.findPathToPos
-	slot9 = slot0.space
-	slot9 = slot9.id
-	slot10 = slot1[1]
-	slot11 = slot1[2]
-	slot12 = slot1[3]
-	slot13 = slot2[1]
-	slot14 = slot2[2]
-	slot15 = slot2[3]
-	slot16 = VoxelNavParam
-	slot17 = slot3
-
-	return slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17)
+	return slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16)
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 50-50, warpins: 2 ---
+	--- BLOCK #3 57-57, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -2143,54 +2178,72 @@ end
 slot5.findPathToPos = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-46, warpins: 1 ---
-	slot2 = math
-	slot2 = slot2.abs
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = VoxelUtils
+	slot2 = slot2._getMaxCostLengthByDiffXYZ
 	slot4 = slot0.x
-	slot2 = slot2(slot4)
-	slot3 = math
-	slot3 = slot3.abs
 	slot5 = slot0.y
-	slot3 = slot3(slot5)
-	slot4 = math
-	slot4 = slot4.abs
 	slot6 = slot0.z
-	slot4 = slot4(slot6)
-	slot5 = math
-	slot5 = slot5.floor
-	slot7 = slot2 + slot4
-	slot5 = slot5(slot7)
-	slot5 = slot5 * 5
-	slot6 = math
-	slot6 = slot6.min
-	slot8 = slot3 * 0.1
-	slot9 = 10
-	slot6 = slot6(slot8, slot9)
-	slot6 = slot6 * 2
-	slot5 = slot5 + slot6
-	slot5 = slot5 + 8
-	slot6 = math
-	slot6 = slot6.min
-	slot8 = slot5
-	slot9 = VoxelConst
-	slot9 = slot9.MAX_VOXEL_NAV_DEPTH
-	slot6 = slot6(slot8, slot9)
-	slot7 = math
-	slot7 = slot7.floor
-	slot9 = VoxelConst
-	slot9 = slot9.InvCellSize
-	slot9 = slot2 * slot9
-	slot7 = slot7(slot9)
-	slot8 = math
-	slot8 = slot8.floor
-	slot10 = VoxelConst
-	slot10 = slot10.InvCellSize
-	slot10 = slot4 * slot10
-	slot8 = slot8(slot10)
-	slot9 = 1
+	slot7 = slot1
+
+	return slot2(slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #0 ---
 
-	if slot1 < slot9 then
+
+
+end
+
+slot5._getMaxCostLengthByDiff = slot11
+
+slot11 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-46, warpins: 1 ---
+	slot4 = math
+	slot4 = slot4.abs
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = math
+	slot5 = slot5.abs
+	slot7 = slot1
+	slot5 = slot5(slot7)
+	slot6 = math
+	slot6 = slot6.abs
+	slot8 = slot2
+	slot6 = slot6(slot8)
+	slot7 = math
+	slot7 = slot7.floor
+	slot9 = slot4 + slot6
+	slot7 = slot7(slot9)
+	slot7 = slot7 * 5
+	slot8 = math
+	slot8 = slot8.min
+	slot10 = slot5 * 0.1
+	slot11 = 10
+	slot8 = slot8(slot10, slot11)
+	slot8 = slot8 * 2
+	slot7 = slot7 + slot8
+	slot7 = slot7 + 8
+	slot8 = math
+	slot8 = slot8.min
+	slot10 = slot7
+	slot11 = VoxelConst
+	slot11 = slot11.MAX_VOXEL_NAV_DEPTH
+	slot8 = slot8(slot10, slot11)
+	slot9 = math
+	slot9 = slot9.floor
+	slot11 = VoxelConst
+	slot11 = slot11.InvCellSize
+	slot11 = slot4 * slot11
+	slot9 = slot9(slot11)
+	slot10 = math
+	slot10 = slot10.floor
+	slot12 = VoxelConst
+	slot12 = slot12.InvCellSize
+	slot12 = slot6 * slot12
+	slot10 = slot10(slot12)
+	slot11 = 1
+	--- END OF BLOCK #0 ---
+
+	if slot3 < slot11 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -2198,17 +2251,17 @@ slot11 = function(slot0, slot1)
 
 
 	--- BLOCK #1 47-48, warpins: 1 ---
-	slot9 = 1
+	slot11 = 1
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
 	--- BLOCK #2 49-51, warpins: 1 ---
-	slot9 = 1
+	slot11 = 1
 	--- END OF BLOCK #2 ---
 
-	if slot1 > slot9 then
+	if slot3 > slot11 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -2216,57 +2269,57 @@ slot11 = function(slot0, slot1)
 
 
 	--- BLOCK #3 52-53, warpins: 1 ---
-	slot9 = 1.5
+	slot11 = 1.5
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
 	--- BLOCK #4 54-54, warpins: 1 ---
-	slot9 = 1.3
+	slot11 = 1.3
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
 	--- BLOCK #5 55-83, warpins: 3 ---
-	slot10 = slot7 * slot7
-	slot11 = slot8 * slot8
-	slot10 = slot10 + slot11
-	slot10 = slot10 * 0.25
-	slot11 = slot7 + slot8
-	slot12 = math
-	slot12 = slot12.clamp
-	slot14 = slot3 * 0.1
-	slot15 = 1
-	slot16 = 5
-	slot12 = slot12(slot14, slot15, slot16)
-	slot11 = slot11 * slot12
-	slot10 = slot10 + slot11
-	slot11 = VoxelConst
-	slot11 = slot11.MIN_NAV_ASTAR_SEARCH_COUNT
-	slot10 = slot10 + slot11
-	slot11 = math
-	slot11 = slot11.floor
+	slot12 = slot9 * slot9
+	slot13 = slot10 * slot10
+	slot12 = slot12 + slot13
+	slot12 = slot12 * 0.25
+	slot13 = slot9 + slot10
+	slot14 = math
+	slot14 = slot14.clamp
+	slot16 = slot5 * 0.1
+	slot17 = 1
+	slot18 = 5
+	slot14 = slot14(slot16, slot17, slot18)
+	slot13 = slot13 * slot14
+	slot12 = slot12 + slot13
+	slot13 = VoxelConst
+	slot13 = slot13.MIN_NAV_ASTAR_SEARCH_COUNT
+	slot12 = slot12 + slot13
 	slot13 = math
-	slot13 = slot13.min
-	slot15 = slot10
-	slot16 = VoxelConst
-	slot16 = slot16.MAX_NAV_ASTAR_SEARCH_COUNT
-	slot13 = slot13(slot15, slot16)
-	slot13 = slot13 * slot9
-	slot11 = slot11(slot13)
-	slot12 = slot6
-	slot13 = slot11
+	slot13 = slot13.floor
+	slot15 = math
+	slot15 = slot15.min
+	slot17 = slot12
+	slot18 = VoxelConst
+	slot18 = slot18.MAX_NAV_ASTAR_SEARCH_COUNT
+	slot15 = slot15(slot17, slot18)
+	slot15 = slot15 * slot11
+	slot13 = slot13(slot15)
+	slot14 = slot8
+	slot15 = slot13
 
-	return slot12, slot13
+	return slot14, slot15
 	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot5._getMaxCostLengthByDiff = slot11
+slot5._getMaxCostLengthByDiffXYZ = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-9, warpins: 1 ---
@@ -2366,7 +2419,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	if slot7 > slot9 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	end
 
 
@@ -2376,143 +2429,181 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-59, warpins: 1 ---
+	--- BLOCK #3 16-35, warpins: 1 ---
 	slot7 = slot7 - 1
-	slot9 = Vector3
-	slot11 = math
-	slot11 = slot11.random
-	slot11 = slot11()
-	slot11 = slot11 * 2
-	slot11 = slot11 - 1
-	slot12 = 0
-	slot13 = math
-	slot13 = slot13.random
-	slot13 = slot13()
-	slot13 = slot13 * 2
-	slot13 = slot13 - 1
-	slot9 = slot9(slot11, slot12, slot13)
-	slot9 = slot9.normalized
+	slot9 = math
+	slot9 = slot9.random
+	slot9 = slot9()
+	slot9 = slot9 * 2
+	slot9 = slot9 - 1
 	slot10 = math
 	slot10 = slot10.random
 	slot10 = slot10()
-	slot11 = slot3 - slot2
-	slot10 = slot10 * slot11
-	slot10 = slot10 + slot2
-	slot11 = slot9 * slot10
-	slot11 = slot11 + slot1
-	slot12 = slot3 - slot10
-	slot13 = math
-	slot13 = slot13.ceil
-	slot15 = VoxelConst
-	slot15 = slot15.InvCellSize
-	slot15 = slot12 * slot15
-	slot13 = slot13(slot15)
-	slot14 = slot1 - slot11
-	slot15 = VoxelUtils
-	slot15 = slot15._getMaxCostLengthByDiff
-	slot17 = slot14
-	slot18 = slot0.bodySize
-	slot15, slot16 = slot15(slot17, slot18)
-	slot8.maxSearchCount = slot16
-	slot8.max_depth = slot15
-	slot17, slot18, slot19, slot20 = nil
-	slot21 = Utils
-	slot21 = slot21.checkClient
-	slot21 = slot21()
+	slot10 = slot10 * 2
+	slot10 = slot10 - 1
+	slot11 = math
+	slot11 = slot11.sqrt
+	slot13 = slot9 * slot9
+	slot14 = slot10 * slot10
+	slot13 = slot13 + slot14
+	slot11 = slot11(slot13)
+	slot12 = 1e-05
 	--- END OF BLOCK #3 ---
 
-	slot21 = if slot21 then
+	if slot11 > slot12 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 60-80, warpins: 1 ---
-	slot21 = pg
-	slot21 = slot21.world
-	slot21 = slot21.tryGetStandSpanWithRange
-	slot23 = slot11.x
-	slot24 = slot11.y
-	slot25 = slot11.z
-	slot26 = VoxelConst
-	slot26 = slot26.InvCellHeight
-	slot26 = 2 * slot26
-	slot27 = VoxelConst
-	slot27 = slot27.InvCellHeight
-	slot27 = 2 * slot27
-	slot28 = slot13
-	slot29 = slot12
-	slot30 = slot8
-	slot21, slot22, slot23, slot24 = slot21(slot23, slot24, slot25, slot26, slot27, slot28, slot29, slot30)
-	slot20 = slot24
-	slot19 = slot23
-	slot18 = slot22
-	slot17 = slot21
+	--- BLOCK #4 36-38, warpins: 1 ---
+	slot9 = slot9 / slot11
+	slot10 = slot10 / slot11
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 81-102, warpins: 1 ---
-	slot21 = pg
-	slot21 = slot21.world
-	slot21 = slot21.tryGetStandSpanWithRange
-	slot23 = slot0.space
-	slot23 = slot23.id
-	slot24 = slot11.x
-	slot25 = slot11.y
-	slot26 = slot11.z
-	slot27 = VoxelConst
-	slot27 = slot27.InvCellHeight
-	slot27 = 2 * slot27
-	slot28 = VoxelConst
-	slot28 = slot28.InvCellHeight
-	slot28 = 2 * slot28
-	slot29 = slot13
-	slot30 = slot12
-	slot31 = slot8
-	slot21, slot22, slot23, slot24 = slot21(slot23, slot24, slot25, slot26, slot27, slot28, slot29, slot30, slot31)
-	slot20 = slot24
-	slot19 = slot23
-	slot18 = slot22
-	slot17 = slot21
+	--- BLOCK #5 39-40, warpins: 1 ---
+	slot9 = 0
+	slot10 = 0
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 103-104, warpins: 2 ---
+	--- BLOCK #6 41-78, warpins: 2 ---
+	slot12 = math
+	slot12 = slot12.random
+	slot12 = slot12()
+	slot13 = slot3 - slot2
+	slot12 = slot12 * slot13
+	slot12 = slot12 + slot2
+	slot13 = slot1.x
+	slot14 = slot9 * slot12
+	slot13 = slot13 + slot14
+	slot14 = slot1.y
+	slot15 = slot1.z
+	slot16 = slot10 * slot12
+	slot15 = slot15 + slot16
+	slot16 = slot3 - slot12
+	slot17 = math
+	slot17 = slot17.ceil
+	slot19 = VoxelConst
+	slot19 = slot19.InvCellSize
+	slot19 = slot16 * slot19
+	slot17 = slot17(slot19)
+	slot18 = VoxelUtils
+	slot18 = slot18._getMaxCostLengthByDiffXYZ
+	slot20 = slot1.x
+	slot20 = slot20 - slot13
+	slot21 = slot1.y
+	slot21 = slot21 - slot14
+	slot22 = slot1.z
+	slot22 = slot22 - slot15
+	slot23 = slot0.bodySize
+	slot18, slot19 = slot18(slot20, slot21, slot22, slot23)
+	slot8.maxSearchCount = slot19
+	slot8.max_depth = slot18
+	slot20, slot21, slot22, slot23 = nil
+	slot24 = Utils
+	slot24 = slot24.checkClient
+	slot24 = slot24()
 	--- END OF BLOCK #6 ---
 
-	slot17 = if slot17 then
+	slot24 = if slot24 then
 	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 79-99, warpins: 1 ---
+	slot24 = pg
+	slot24 = slot24.world
+	slot24 = slot24.tryGetStandSpanWithRange
+	slot26 = slot13
+	slot27 = slot14
+	slot28 = slot15
+	slot29 = VoxelConst
+	slot29 = slot29.InvCellHeight
+	slot29 = 2 * slot29
+	slot30 = VoxelConst
+	slot30 = slot30.InvCellHeight
+	slot30 = 2 * slot30
+	slot31 = slot17
+	slot32 = slot16
+	slot33 = slot8
+	slot24, slot25, slot26, slot27 = slot24(slot26, slot27, slot28, slot29, slot30, slot31, slot32, slot33)
+	slot23 = slot27
+	slot22 = slot26
+	slot21 = slot25
+	slot20 = slot24
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 100-121, warpins: 1 ---
+	slot24 = pg
+	slot24 = slot24.world
+	slot24 = slot24.tryGetStandSpanWithRange
+	slot26 = slot0.space
+	slot26 = slot26.id
+	slot27 = slot13
+	slot28 = slot14
+	slot29 = slot15
+	slot30 = VoxelConst
+	slot30 = slot30.InvCellHeight
+	slot30 = 2 * slot30
+	slot31 = VoxelConst
+	slot31 = slot31.InvCellHeight
+	slot31 = 2 * slot31
+	slot32 = slot17
+	slot33 = slot16
+	slot34 = slot8
+	slot24, slot25, slot26, slot27 = slot24(slot26, slot27, slot28, slot29, slot30, slot31, slot32, slot33, slot34)
+	slot23 = slot27
+	slot22 = slot26
+	slot21 = slot25
+	slot20 = slot24
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 122-123, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #1
 	end
 
 
-	--- BLOCK #7 105-110, warpins: 1 ---
-	slot21 = true
-	slot22 = slot18
-	slot23 = slot19
-	slot24 = slot20
+	--- BLOCK #10 124-129, warpins: 1 ---
+	slot24 = true
+	slot25 = slot21
+	slot26 = slot22
+	slot27 = slot23
 
-	return slot21, slot22, slot23, slot24
+	return slot24, slot25, slot26, slot27
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #1
 
 
-	--- BLOCK #8 111-115, warpins: 1 ---
+	--- BLOCK #11 130-134, warpins: 1 ---
 	slot9 = false
 	slot10 = slot4
 	slot11 = slot5
 	slot12 = slot6
 
 	return slot9, slot10, slot11, slot12
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 
 
@@ -2761,6 +2852,82 @@ slot11 = function(slot0, slot1)
 end
 
 slot5.setSpanDataFilter = slot11
+
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.world
+	slot2 = slot2.setVoxelTickFrameCount
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.world
+	slot2 = slot2.setVoxelTickFrameCount
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot5.setVoxelTickFrameCount = slot11
+
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.world
+	slot2 = slot2.setVoxelTimeScale
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.world
+	slot2 = slot2.setVoxelTimeScale
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot5.setVoxelTimeScale = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-2, warpins: 1 ---

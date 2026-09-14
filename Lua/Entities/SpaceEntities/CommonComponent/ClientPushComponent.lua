@@ -134,24 +134,26 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.pushingEnt
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.pushingEnt
+	slot1 = slot1.eModel
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 9-10, warpins: 1 ---
+	--- BLOCK #2 8-9, warpins: 2 ---
 	slot1 = false
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 11-11, warpins: 0 ---
+	--- BLOCK #3 10-10, warpins: 1 ---
 	slot1 = true
 
 	--- END OF BLOCK #3 ---
@@ -159,7 +161,7 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-12, warpins: 3 ---
+	--- BLOCK #4 11-11, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #4 ---
 

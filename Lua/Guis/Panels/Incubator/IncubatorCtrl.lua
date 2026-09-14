@@ -1,4 +1,4 @@
---- BLOCK #0 1-167, warpins: 1 ---
+--- BLOCK #0 1-187, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -43,64 +43,85 @@ slot12 = require
 slot14 = "Utils.LuaUIUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.ClientUtils"
+slot15 = "Common.Utils.Utils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Core.Timer.TimerManager"
+slot16 = "Utils.ClientUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Utils.ClientTextUtils"
+slot17 = "Core.Timer.TimerManager"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.pet_hatch_egg_data"
+slot18 = "Utils.ClientTextUtils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Common.Utils.HomeLandUtils"
+slot19 = "Data.pet_hatch_egg_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.Utils.ItemUtils"
+slot20 = "Common.Utils.HomeLandUtils"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Utils.ClientActivityUtils"
+slot21 = "Utils.ClientCashShopUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Const.HotkeyConst"
+slot22 = "Common.Utils.ItemUtils"
 slot20 = slot20(slot22)
-slot21 = 150
-slot22 = {}
-slot23 = slot3.HOMELAND_HATCH_UPDATE_SINGLEINFO
-slot24 = {
+slot21 = require
+slot23 = "Utils.ClientActivityUtils"
+slot21 = slot21(slot23)
+slot22 = require
+slot24 = "GameApp.MonthCard.MonthCardUtils"
+slot22 = slot22(slot24)
+slot23 = require
+slot25 = "Const.AddressDataConst"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Const.CashShopConst"
+slot24 = slot24(slot26)
+slot25 = require
+slot27 = "Const.HotkeyConst"
+slot25 = slot25(slot27)
+slot26 = 150
+slot27 = {}
+slot28 = slot3.HOMELAND_HATCH_UPDATE_SINGLEINFO
+slot29 = {
 	"m_updateOrnamentHatchInfo",
 	true
 }
-slot22[slot23] = slot24
-slot23 = slot3.EVENT_REFRESH_REDDOT
-slot24 = {
+slot27[slot28] = slot29
+slot28 = slot3.EVENT_REFRESH_REDDOT
+slot29 = {
 	"onRefreshTabList",
 	true
 }
-slot22[slot23] = slot24
-slot23 = slot3.HOMELAND_HATCH_UPDATE_ADD_SINGLEINFO
-slot24 = {
+slot27[slot28] = slot29
+slot28 = slot3.MONTH_CARD_ACTIVATE
+slot29 = {
+	"onRefreshTabList",
+	true
+}
+slot27[slot28] = slot29
+slot28 = slot3.HOMELAND_HATCH_UPDATE_ADD_SINGLEINFO
+slot29 = {
 	"m_addOrnamentHatchInfo",
 	true
 }
-slot22[slot23] = slot24
-slot23 = slot3.HOMELAND_HATCH_UPDATE_REMOVE_SINGLEINFO
-slot24 = {
+slot27[slot28] = slot29
+slot28 = slot3.HOMELAND_HATCH_UPDATE_REMOVE_SINGLEINFO
+slot29 = {
 	"m_removeOrnamentHatchInfo",
 	true
 }
-slot22[slot23] = slot24
-slot23 = slot3.INPUT_DEVICE_CHANGED
-slot24 = {
+slot27[slot28] = slot29
+slot28 = slot3.INPUT_DEVICE_CHANGED
+slot29 = {
 	"onInputDeviceChanged",
 	true
 }
-slot22[slot23] = slot24
-slot6.messages = slot22
+slot27[slot28] = slot29
+slot6.messages = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -144,10 +165,10 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.onCreate = slot22
+slot6.onCreate = slot27
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+slot27 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
 
@@ -224,21 +245,216 @@ slot22 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.speedTipsUButton
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 21-28, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.speedTipsUButton
+
+	slot2 = function(slot0, slot1)
+		--- BLOCK #0 1-24, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.GetComponent
+		slot5 = "ObjectReference"
+		slot2 = slot2(slot4, slot5)
+		slot5 = slot2
+		slot3 = slot2.GetRefValue
+		slot6 = "btnUpUButton"
+		slot3 = slot3(slot5, slot6)
+		slot6 = slot2
+		slot4 = slot2.GetRefValue
+		slot7 = "txtDesc"
+		slot4 = slot4(slot6, slot7)
+		slot7 = slot2
+		slot5 = slot2.GetRefValue
+		slot8 = "btnNameUSDFText"
+		slot5 = slot5(slot7, slot8)
+		slot6 = MonthCardUtils
+		slot6 = slot6.isActivated
+		slot6 = slot6()
+		slot9 = slot1
+		slot7 = slot1.TryChangePage
+		slot10 = "Btn"
+		--- END OF BLOCK #0 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 25-26, warpins: 1 ---
+		slot11 = 0
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 27-27, warpins: 1 ---
+		slot11 = 1
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 28-35, warpins: 2 ---
+		slot7(slot9, slot10, slot11)
+
+		slot9 = slot1
+		slot7 = slot1.TryChangePage
+		slot10 = "headTitle"
+		slot11 = 0
+
+		slot7(slot9, slot10, slot11)
+
+		--- END OF BLOCK #3 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 36-37, warpins: 1 ---
+		slot7 = "INCUBATE_MONTHLY_ACTIVATED_INFO"
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+		--- BLOCK #5 38-38, warpins: 1 ---
+		slot7 = "INCUBATE_MONTHLY_UNACTIVATED_INFO"
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 39-64, warpins: 2 ---
+		slot8 = ClientActivityUtils
+		slot8 = slot8.getMonthCardSpeedupHatchTime
+		slot8 = slot8()
+		slot9 = ClientTextUtils
+		slot9 = slot9.setText
+		slot11 = slot4
+		slot12 = pg
+		slot12 = slot12.getFormatText
+		slot14 = pg
+		slot14 = slot14.getGameString
+		slot16 = slot7
+		slot14 = slot14(slot16)
+		slot15 = slot8
+		MULTRES = slot12(slot14, slot15)
+
+		slot9(slot11, MULTRES)
+
+		slot9 = ClientTextUtils
+		slot9 = slot9.setText
+		slot11 = slot5
+		slot12 = pg
+		slot12 = slot12.getGameString
+		slot14 = "INCUBATE_MONTHLY_GO_TO"
+		MULTRES = slot12(slot14)
+
+		slot9(slot11, MULTRES)
+
+		slot9 = function()
+			--- BLOCK #0 1-20, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.view
+			slot0 = slot0.speedTipsUButton
+			slot2 = slot0
+			slot0 = slot0.CloseTooltip
+
+			slot0(slot2)
+
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.ui
+			slot2 = slot0
+			slot0 = slot0.open
+			slot3 = UIConst
+			slot3 = slot3.UI_ID_CASH_SHOP
+			slot4 = {}
+			slot5 = CashShopConst
+			slot5 = slot5.CategoryType
+			slot5 = slot5.MONTHLYCARD
+			slot4.tabId = slot5
+
+			slot0(slot2, slot3, slot4)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot3.luaClick = slot9
+
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot1.luaRenderTooltip = slot2
+	slot1 = slot0.view
+	slot1 = slot1.speedTipsUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.speedTipsUButton
+		slot2 = slot0
+		slot0 = slot0.OpenTooltipWithUrl
+		slot3 = AddressDataConst
+		slot3 = slot3.UI_TOOLTIP_SKILL_INFO_WITH_TITLE
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 29-33, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.m_setupBtnConfirmHotKey
 
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot6.addListener = slot22
+slot6.addListener = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -380,9 +596,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.m_setupBtnConfirmHotKey = slot22
+slot6.m_setupBtnConfirmHotKey = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.updateTimer
 	--- END OF BLOCK #0 ---
@@ -423,9 +639,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onDestroy = slot22
+slot6.onDestroy = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -452,9 +668,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.onOpen = slot22
+slot6.onOpen = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.RefreshOnOpen
@@ -500,9 +716,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onShow = slot22
+slot6.onShow = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -511,9 +727,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onHide = slot22
+slot6.onHide = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_updateHatchProgress
@@ -527,9 +743,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onTick = slot22
+slot6.onTick = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -598,9 +814,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.Init = slot22
+slot6.Init = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.updatAndRefresh
@@ -614,9 +830,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.RefreshOnOpen = slot22
+slot6.RefreshOnOpen = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -651,9 +867,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.updatAndRefresh = slot22
+slot6.updatAndRefresh = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.root
@@ -683,9 +899,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.refreshRoot = slot22
+slot6.refreshRoot = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.m_uiOpenParams
 	--- END OF BLOCK #0 ---
@@ -758,9 +974,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.initOrnamentHatchInfo = slot22
+slot6.initOrnamentHatchInfo = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -854,9 +1070,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.isSameOrnament = slot22
+slot6.isSameOrnament = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isSameOrnament
@@ -893,9 +1109,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.m_addOrnamentHatchInfo = slot22
+slot6.m_addOrnamentHatchInfo = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isSameOrnament
@@ -932,9 +1148,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.m_removeOrnamentHatchInfo = slot22
+slot6.m_removeOrnamentHatchInfo = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isSameOrnament
@@ -971,9 +1187,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.m_updateOrnamentHatchInfo = slot22
+slot6.m_updateOrnamentHatchInfo = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.m_ornamentId
 	--- END OF BLOCK #0 ---
@@ -1019,9 +1235,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onRefreshTabList = slot22
+slot6.onRefreshTabList = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1222,25 +1438,20 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 76-99, warpins: 2 ---
-	slot8 = ClientUtils
-	slot8 = slot8.setL10nUCountDownTextFunc
+	--- BLOCK #17 76-96, warpins: 2 ---
+	slot8 = LuaUIUtils
+	slot8 = slot8.setCountDownTime
 	slot10 = slot0.view
 	slot10 = slot10.countDownUCountDown
-
-	slot8(slot10)
-
-	slot8 = slot0.view
-	slot8 = slot8.countDownUCountDown
-	slot10 = slot8
-	slot8 = slot8.Play
 	slot11 = math
 	slot11 = slot11.max
 	slot13 = 0.1
 	slot14 = slot7 - slot6
-	MULTRES = slot11(slot13, slot14)
+	slot11 = slot11(slot13, slot14)
+	slot12, slot13, slot14 = nil
+	slot15 = true
 
-	slot8(slot10, MULTRES)
+	slot8(slot10, slot11, slot12, slot13, slot14, slot15)
 
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
@@ -1258,7 +1469,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 100-108, warpins: 2 ---
+	--- BLOCK #18 97-105, warpins: 2 ---
 	slot6 = HomeLandUtils
 	slot6 = slot6.getHatchBoxStatus
 	slot8 = slot0.m_ornamentId
@@ -1275,21 +1486,21 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #19 109-110, warpins: 1 ---
+	--- BLOCK #19 106-107, warpins: 1 ---
 	slot7 = false
 	--- END OF BLOCK #19 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #20 111-111, warpins: 1 ---
+	--- BLOCK #20 108-108, warpins: 1 ---
 	slot7 = true
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 112-120, warpins: 2 ---
+	--- BLOCK #21 109-117, warpins: 2 ---
 	slot8 = slot0.view
 	slot8 = slot8.btnPasueUButton
 	slot10 = slot8
@@ -1306,21 +1517,21 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #22 121-122, warpins: 1 ---
+	--- BLOCK #22 118-119, warpins: 1 ---
 	slot11 = not slot7
 	--- END OF BLOCK #22 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #23 123-124, warpins: 1 ---
+	--- BLOCK #23 120-121, warpins: 1 ---
 	slot11 = false
 	--- END OF BLOCK #23 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #24 125-125, warpins: 0 ---
+	--- BLOCK #24 122-122, warpins: 0 ---
 	slot11 = true
 
 	--- END OF BLOCK #24 ---
@@ -1328,7 +1539,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 126-126, warpins: 3 ---
+	--- BLOCK #25 123-123, warpins: 3 ---
 	slot8(slot10, slot11)
 
 	--- END OF BLOCK #25 ---
@@ -1336,7 +1547,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 127-127, warpins: 2 ---
+	--- BLOCK #26 124-124, warpins: 2 ---
 	return
 	--- END OF BLOCK #26 ---
 
@@ -1344,9 +1555,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.refreshHatchInfo = slot22
+slot6.refreshHatchInfo = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1520,7 +1731,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 68-107, warpins: 2 ---
+	--- BLOCK #14 68-104, warpins: 2 ---
 	slot8.url = slot9
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
@@ -1537,24 +1748,19 @@ slot22 = function(slot0, slot1)
 	slot8 = slot8.getHatchBoxHatchedLeftSecond
 	slot10 = slot2
 	slot8 = slot8(slot10)
-	slot9 = ClientUtils
-	slot9 = slot9.setL10nUCountDownTextFunc
+	slot9 = LuaUIUtils
+	slot9 = slot9.setCountDownTime
 	slot11 = slot0.view
 	slot11 = slot11.countDownUCountDown
-
-	slot9(slot11)
-
-	slot9 = slot0.view
-	slot9 = slot9.countDownUCountDown
-	slot11 = slot9
-	slot9 = slot9.Play
 	slot12 = math
 	slot12 = slot12.max
 	slot14 = 0.1
 	slot15 = slot8
-	MULTRES = slot12(slot14, slot15)
+	slot12 = slot12(slot14, slot15)
+	slot13, slot14, slot15 = nil
+	slot16 = true
 
-	slot9(slot11, MULTRES)
+	slot9(slot11, slot12, slot13, slot14, slot15, slot16)
 
 	slot9 = HomeLandUtils
 	slot9 = slot9.getHatchBoxProgressRatio
@@ -1572,7 +1778,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 108-112, warpins: 2 ---
+	--- BLOCK #15 105-109, warpins: 2 ---
 	slot8 = slot0.m_rootPage
 	slot9 = slot0.model
 	slot9 = slot9.RootPage_SpeedUp
@@ -1585,21 +1791,21 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 113-114, warpins: 1 ---
+	--- BLOCK #16 110-111, warpins: 1 ---
 	slot8 = false
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #17 115-115, warpins: 1 ---
+	--- BLOCK #17 112-112, warpins: 1 ---
 	slot8 = true
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 116-124, warpins: 2 ---
+	--- BLOCK #18 113-121, warpins: 2 ---
 	slot9 = slot0.view
 	slot9 = slot9.btnPasueUButton
 	slot11 = slot9
@@ -1616,21 +1822,21 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #19 125-126, warpins: 1 ---
+	--- BLOCK #19 122-123, warpins: 1 ---
 	slot12 = not slot8
 	--- END OF BLOCK #19 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #20 127-128, warpins: 1 ---
+	--- BLOCK #20 124-125, warpins: 1 ---
 	slot12 = false
 	--- END OF BLOCK #20 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 129-129, warpins: 0 ---
+	--- BLOCK #21 126-126, warpins: 0 ---
 	slot12 = true
 
 	--- END OF BLOCK #21 ---
@@ -1638,7 +1844,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 130-130, warpins: 3 ---
+	--- BLOCK #22 127-127, warpins: 3 ---
 	slot9(slot11, slot12)
 
 	--- END OF BLOCK #22 ---
@@ -1646,7 +1852,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 131-131, warpins: 2 ---
+	--- BLOCK #23 128-128, warpins: 2 ---
 	return
 	--- END OF BLOCK #23 ---
 
@@ -1654,9 +1860,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.m_updateHatchProgress = slot22
+slot6.m_updateHatchProgress = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.btnSortUButton
@@ -1727,9 +1933,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.initSortOption = slot22
+slot6.initSortOption = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1749,9 +1955,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.m_onClickSortOrFilter = slot22
+slot6.m_onClickSortOrFilter = slot27
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1809,9 +2015,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.m_onLuaRenderSortOptItem = slot22
+slot6.m_onLuaRenderSortOptItem = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1894,9 +2100,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.refreshSortOption = slot22
+slot6.refreshSortOption = slot27
 
-slot22 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.listPropUList
@@ -1928,9 +2134,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot6.initPropList = slot22
+slot6.initPropList = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.m_rootPage
 	slot2 = slot0.model
@@ -2000,9 +2206,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.refreshPropListPanel = slot22
+slot6.refreshPropListPanel = slot27
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.m_preClickMs
 	--- END OF BLOCK #0 ---
@@ -2021,10 +2227,11 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-12, warpins: 2 ---
+	--- BLOCK #2 5-13, warpins: 2 ---
 	slot0.m_preClickMs = slot4
 	slot4 = Time
-	slot4 = slot4.millisecondCache
+	slot4 = slot4.realSecondCache
+	slot4 = slot4 * 1000
 	slot5 = slot0.m_preClickMs
 	slot4 = slot4 - slot5
 	slot5 = LIMIT_CLOSE_PROP_DELAY_TIME
@@ -2038,7 +2245,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 13-13, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -2046,7 +2253,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-22, warpins: 2 ---
+	--- BLOCK #4 15-23, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.m_onClickContListItem
 	slot7 = slot2
@@ -2065,7 +2272,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 23-28, warpins: 1 ---
+	--- BLOCK #5 24-29, warpins: 1 ---
 	slot4 = slot0.model
 	slot6 = slot4
 	slot4 = slot4.setPreviewSpeedupTime
@@ -2079,9 +2286,10 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-32, warpins: 2 ---
+	--- BLOCK #6 30-34, warpins: 2 ---
 	slot4 = Time
-	slot4 = slot4.millisecondCache
+	slot4 = slot4.realSecondCache
+	slot4 = slot4 * 1000
 	--- END OF BLOCK #6 ---
 
 	slot4 = if not slot4 then
@@ -2091,14 +2299,14 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 33-33, warpins: 1 ---
+	--- BLOCK #7 35-35, warpins: 1 ---
 	slot4 = 0
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 34-46, warpins: 2 ---
+	--- BLOCK #8 36-48, warpins: 2 ---
 	slot0.m_preClickMs = slot4
 	slot6 = slot0
 	slot4 = slot0.openItemPropUI
@@ -2124,9 +2332,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.m_onPressContListItem = slot22
+slot6.m_onPressContListItem = slot27
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -2245,9 +2453,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.m_onReleaseContListItem = slot22
+slot6.m_onReleaseContListItem = slot27
 
-slot22 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.cancelClosePropTimer
@@ -2326,9 +2534,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot6.openItemPropUI = slot22
+slot6.openItemPropUI = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.delayRefreshByClosePropTimer
 	--- END OF BLOCK #0 ---
@@ -2363,9 +2571,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.cancelClosePropTimer = slot22
+slot6.cancelClosePropTimer = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -2406,9 +2614,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.closeItemPropUI = slot22
+slot6.closeItemPropUI = slot27
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-51, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2630,9 +2838,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.m_renderContListItem = slot22
+slot6.m_renderContListItem = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2723,9 +2931,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.m_refreshSpeedUpListPanel = slot22
+slot6.m_refreshSpeedUpListPanel = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2865,9 +3073,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.m_refreshEggListPanel = slot22
+slot6.m_refreshEggListPanel = slot27
 
-slot22 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.isLock
 	--- END OF BLOCK #0 ---
@@ -2917,779 +3125,1105 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot6.m_onClickContListItem = slot22
+slot6.m_onClickContListItem = slot27
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.m_listContData
+slot27 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = MonthCardUtils
+	slot1 = slot1.isActivated
+	slot1 = slot1()
+	slot2 = slot0.view
+	slot2 = slot2.speedTipsUButton
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.m_listContData
-	slot1 = #slot1
+	--- BLOCK #1 8-22, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.speedTipsUButton
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = ClientCashShopUtils
+	slot5 = slot5.canOpenCashShop
+	MULTRES = slot5()
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.view
+	slot2 = slot2.speedTipsUButton
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Monthcard"
 	--- END OF BLOCK #1 ---
 
-	if slot1 == 0 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-14, warpins: 2 ---
-	slot1 = slot0.view
-	slot1 = slot1.bottomUWidget
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = false
-
-	slot1(slot3, slot4)
-
-	return
-
+	--- BLOCK #2 23-24, warpins: 1 ---
+	slot6 = 1
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 15-26, warpins: 2 ---
-	slot1 = slot0.view
-	slot1 = slot1.bottomUWidget
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = true
+	--- BLOCK #3 25-25, warpins: 1 ---
+	slot6 = 0
 
-	slot1(slot3, slot4)
-
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getSelectedItemData
-	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-30, warpins: 1 ---
-	slot2 = slot1.id
-	slot3 = 0
+	--- BLOCK #4 26-26, warpins: 2 ---
+	slot2(slot4, slot5, slot6)
+
 	--- END OF BLOCK #4 ---
 
-	if slot2 <= slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 31-32, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #5 27-30, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.txtSpeedTips
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 33-33, warpins: 1 ---
-	slot2 = true
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 34-48, warpins: 3 ---
-	slot3 = slot0.model
-	slot5 = slot3
-	slot3 = slot3.getOrnamentHatchInfo
-	slot6 = slot0.m_ornamentId
-	slot3 = slot3(slot5, slot6)
-	slot4 = HomeLandUtils
-	slot4 = slot4.getHatchBoxStatus
-	slot6 = slot0.m_ornamentId
-	slot4 = slot4(slot6)
-	slot5, slot6, slot7, slot8, slot9 = nil
-	slot10 = slot0.m_rootPage
-	slot11 = slot0.model
-	slot11 = slot11.RootPage_PutEgg
-	--- END OF BLOCK #7 ---
-
-	if slot10 == slot11 then
-	JUMP TO BLOCK #8
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 49-55, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
-	slot10 = slot10(slot12)
-	slot6 = slot10
+	--- BLOCK #6 31-32, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 33-34, warpins: 1 ---
+	slot2 = "INCUBATE_MONTHLY_ACTIVATED"
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 35-35, warpins: 1 ---
+	slot2 = "INCUBATE_HOW_TO_ACCELERATE"
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #50
-	end
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 56-68, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "INCUBATOR_FINITH_TIME_TIP"
-	slot10 = slot10(slot12)
-	slot8 = slot10
-	slot10 = slot0.model
-	slot12 = slot10
-	slot10 = slot10.getPreviewIncubatroFinishTimeDesc
-	slot13 = slot1.id
-	slot14 = slot0.m_ornamentId
-	slot10 = slot10(slot12, slot13, slot14)
-	slot9 = slot10
+	--- BLOCK #9 36-44, warpins: 2 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtSpeedTips
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = slot2
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 69-73, warpins: 1 ---
-	slot10 = slot0.m_rootPage
-	slot11 = slot0.model
-	slot11 = slot11.RootPage_SpeedUp
+	--- BLOCK #10 45-47, warpins: 2 ---
+	slot2 = slot0.m_listContData
 	--- END OF BLOCK #10 ---
 
-	if slot10 == slot11 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 74-75, warpins: 1 ---
+	--- BLOCK #11 48-51, warpins: 1 ---
+	slot2 = slot0.m_listContData
+	slot2 = #slot2
 	--- END OF BLOCK #11 ---
 
-	slot3 = if slot3 then
+	if slot2 == 0 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 76-78, warpins: 1 ---
-	slot10 = slot3.item
+	--- BLOCK #12 52-58, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.bottomUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	return
+
 	--- END OF BLOCK #12 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #32
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 79-84, warpins: 1 ---
-	slot10 = HomeLandUtils
-	slot10 = slot10.getHatchBoxSpeedupInfo
-	slot12 = slot3
-	slot10 = slot10(slot12)
+	--- BLOCK #13 59-70, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.bottomUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getSelectedItemData
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #13 ---
 
-	slot10 = if not slot10 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #14 85-85, warpins: 1 ---
-	slot10 = {}
+	--- BLOCK #14 71-74, warpins: 1 ---
+	slot3 = slot2.id
+	slot4 = 0
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #15 86-101, warpins: 2 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_SPEEDUP_TITLE"
-	slot11 = slot11(slot13)
-	slot8 = slot11
-	slot11 = slot0.model
-	slot13 = slot11
-	slot11 = slot11.getLimitSpeedupCntDesc
-	slot14 = slot10
-	slot11 = slot11(slot13, slot14)
-	slot9 = slot11
-	slot11 = Const
-	slot11 = slot11.HOME_HATCHBOX_STATUS
-	slot11 = slot11.HATCHED
+	--- BLOCK #15 75-76, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #15 ---
 
-	if slot4 == slot11 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #23
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 102-103, warpins: 1 ---
+	--- BLOCK #16 77-77, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #16 ---
 
-	slot6 = if slot2 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 104-108, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "ECOLOGICAL_RESARCH_FINISH"
-	slot11 = slot11(slot13)
-	slot6 = slot11
+	--- BLOCK #17 78-92, warpins: 3 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getOrnamentHatchInfo
+	slot7 = slot0.m_ornamentId
+	slot4 = slot4(slot6, slot7)
+	slot5 = HomeLandUtils
+	slot5 = slot5.getHatchBoxStatus
+	slot7 = slot0.m_ornamentId
+	slot5 = slot5(slot7)
+	slot6, slot7, slot8, slot9, slot10 = nil
+	slot11 = slot0.m_rootPage
+	slot12 = slot0.model
+	slot12 = slot12.RootPage_PutEgg
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 109-110, warpins: 2 ---
-	--- END OF BLOCK #18 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #19
+	if slot11 == slot12 then
+	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 111-116, warpins: 1 ---
+	--- BLOCK #18 93-99, warpins: 1 ---
 	slot11 = pg
 	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_TIP_SELECTE_SPEEDUP_ITEM"
+	slot13 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
 	slot11 = slot11(slot13)
-	slot5 = slot11
+	slot7 = slot11
+	--- END OF BLOCK #18 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #60
+	end
+
+
+	--- BLOCK #19 100-112, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "INCUBATOR_FINITH_TIME_TIP"
+	slot11 = slot11(slot13)
+	slot9 = slot11
+	slot11 = slot0.model
+	slot13 = slot11
+	slot11 = slot11.getPreviewIncubatroFinishTimeDesc
+	slot14 = slot2.id
+	slot15 = slot0.m_ornamentId
+	slot11 = slot11(slot13, slot14, slot15)
+	slot10 = slot11
 	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #20 117-118, warpins: 1 ---
-	slot5 = false
+	--- BLOCK #20 113-117, warpins: 1 ---
+	slot11 = slot0.m_rootPage
+	slot12 = slot0.model
+	slot12 = slot12.RootPage_SpeedUp
 	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	if slot11 == slot12 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #44
+	end
 
 
-	--- BLOCK #21 119-119, warpins: 0 ---
-	slot5 = true
+	--- BLOCK #21 118-119, warpins: 1 ---
 	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #22
+	slot4 = if slot4 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #42
+	end
 
 
-	--- BLOCK #22 120-121, warpins: 3 ---
-	slot7 = true
+	--- BLOCK #22 120-122, warpins: 1 ---
+	slot11 = slot4.item
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	slot11 = if slot11 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #42
+	end
 
 
-	--- BLOCK #23 122-124, warpins: 1 ---
-	slot11 = slot10.isCanSpeedup
+	--- BLOCK #23 123-128, warpins: 1 ---
+	slot11 = HomeLandUtils
+	slot11 = slot11.getHatchBoxSpeedupInfo
+	slot13 = slot4
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #23 ---
 
-	slot11 = if slot11 then
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 125-126, warpins: 1 ---
+	--- BLOCK #24 129-129, warpins: 1 ---
+	slot11 = {}
 	--- END OF BLOCK #24 ---
 
-	slot6 = if slot2 then
-	JUMP TO BLOCK #25
-	else
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 130-145, warpins: 2 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_SPEEDUP_TITLE"
+	slot12 = slot12(slot14)
+	slot9 = slot12
+	slot12 = slot0.model
+	slot14 = slot12
+	slot12 = slot12.getLimitSpeedupCntDesc
+	slot15 = slot11
+	slot12 = slot12(slot14, slot15)
+	slot10 = slot12
+	slot12 = Const
+	slot12 = slot12.HOME_HATCHBOX_STATUS
+	slot12 = slot12.HATCHED
+	--- END OF BLOCK #25 ---
+
+	if slot5 == slot12 then
 	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #25 127-131, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_SPEEDUP_DESC"
-	slot11 = slot11(slot13)
-	slot6 = slot11
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 132-133, warpins: 2 ---
+	--- BLOCK #26 146-147, warpins: 1 ---
 	--- END OF BLOCK #26 ---
 
-	slot2 = if not slot2 then
+	slot7 = if slot3 then
 	JUMP TO BLOCK #27
 	else
 	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 134-139, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_TIP_SELECTE_SPEEDUP_ITEM"
-	slot11 = slot11(slot13)
-	slot5 = slot11
+	--- BLOCK #27 148-152, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "ECOLOGICAL_RESARCH_FINISH"
+	slot12 = slot12(slot14)
+	slot7 = slot12
 	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 140-141, warpins: 1 ---
-	slot5 = false
+	--- BLOCK #28 153-154, warpins: 2 ---
 	--- END OF BLOCK #28 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
 
 
-	--- BLOCK #29 142-142, warpins: 0 ---
-	slot5 = true
+	--- BLOCK #29 155-160, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_TIP_SELECTE_SPEEDUP_ITEM"
+	slot12 = slot12(slot14)
+	slot6 = slot12
 	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #30 143-143, warpins: 2 ---
+	--- BLOCK #30 161-162, warpins: 1 ---
+	slot6 = false
 	--- END OF BLOCK #30 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 144-150, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_HAVE_SPEEDUP_DESC"
-	slot11 = slot11(slot13)
-	slot6 = slot11
-	slot7 = true
+	--- BLOCK #31 163-163, warpins: 0 ---
+	slot6 = true
 	--- END OF BLOCK #31 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 151-157, warpins: 2 ---
-	slot10 = LoggerManager
-	slot10 = slot10.checkLogger
-	slot12 = LoggerConst
-	slot12 = slot12.ERROR
-	slot10 = slot10(slot12)
+	--- BLOCK #32 164-165, warpins: 3 ---
+	slot8 = true
 	--- END OF BLOCK #32 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #50
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #33 158-164, warpins: 1 ---
-	slot10 = logger
-	slot12 = slot10
-	slot10 = slot10.error
-	slot13 = "家园孵化 - 选中某个加速道具显示加速信息 未获取到孵化信息 ornamentId=%s"
-	slot14 = slot0.m_ornamentId
-
-	slot10(slot12, slot13, slot14)
-
+	--- BLOCK #33 166-168, warpins: 1 ---
+	slot12 = slot11.isCanSpeedup
 	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	slot12 = if slot12 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #41
+	end
 
 
-	--- BLOCK #34 165-169, warpins: 1 ---
-	slot10 = slot0.m_rootPage
-	slot11 = slot0.model
-	slot11 = slot11.RootPage_Manger
+	--- BLOCK #34 169-170, warpins: 1 ---
 	--- END OF BLOCK #34 ---
 
-	if slot10 == slot11 then
+	slot7 = if slot3 then
 	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #35 170-178, warpins: 1 ---
-	slot10 = HomeLandUtils
-	slot10 = slot10.getHatchBoxStatus
-	slot12 = slot0.m_ornamentId
-	slot10 = slot10(slot12)
-	slot11 = Const
-	slot11 = slot11.HOME_HATCHBOX_STATUS
-	slot11 = slot11.CAN_PLACE
+	--- BLOCK #35 171-175, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_SPEEDUP_DESC"
+	slot12 = slot12(slot14)
+	slot7 = slot12
 	--- END OF BLOCK #35 ---
 
-	if slot10 == slot11 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #39
-	end
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #36 179-184, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
-	slot11 = slot11(slot13)
+	--- BLOCK #36 176-177, warpins: 2 ---
 	--- END OF BLOCK #36 ---
 
-	slot6 = if not slot11 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #37
 	else
 	JUMP TO BLOCK #38
 	end
 
 
-	--- BLOCK #37 185-185, warpins: 1 ---
-	slot6 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	--- BLOCK #37 178-183, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_TIP_SELECTE_SPEEDUP_ITEM"
+	slot12 = slot12(slot14)
+	slot6 = slot12
 	--- END OF BLOCK #37 ---
 
-	FLOW; TARGET BLOCK #38
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #38 186-186, warpins: 2 ---
+	--- BLOCK #38 184-185, warpins: 1 ---
+	slot6 = false
 	--- END OF BLOCK #38 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #40
 
 
-	--- BLOCK #39 187-191, warpins: 1 ---
-	slot11 = Const
-	slot11 = slot11.HOME_HATCHBOX_STATUS
-	slot11 = slot11.HATCHING
+	--- BLOCK #39 186-186, warpins: 0 ---
+	slot6 = true
 	--- END OF BLOCK #39 ---
 
-	if slot10 == slot11 then
-	JUMP TO BLOCK #40
-	else
-	JUMP TO BLOCK #47
-	end
+	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #40 192-193, warpins: 1 ---
+	--- BLOCK #40 187-187, warpins: 2 ---
 	--- END OF BLOCK #40 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #44
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #41 194-199, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
-	slot11 = slot11(slot13)
+	--- BLOCK #41 188-194, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_HAVE_SPEEDUP_DESC"
+	slot12 = slot12(slot14)
+	slot7 = slot12
+	slot8 = true
 	--- END OF BLOCK #41 ---
 
-	slot6 = if not slot11 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #42 200-200, warpins: 1 ---
-	slot6 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	--- BLOCK #42 195-201, warpins: 2 ---
+	slot11 = LoggerManager
+	slot11 = slot11.checkLogger
+	slot13 = LoggerConst
+	slot13 = slot13.ERROR
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #42 ---
 
-	FLOW; TARGET BLOCK #43
+	slot11 = if slot11 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #60
+	end
 
 
-	--- BLOCK #43 201-201, warpins: 2 ---
+	--- BLOCK #43 202-208, warpins: 1 ---
+	slot11 = logger
+	slot13 = slot11
+	slot11 = slot11.error
+	slot14 = "家园孵化 - 选中某个加速道具显示加速信息 未获取到孵化信息 ornamentId=%s"
+	slot15 = slot0.m_ornamentId
+
+	slot11(slot13, slot14, slot15)
+
 	--- END OF BLOCK #43 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #44 202-207, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "HATCH_BTN_PAUSE"
-	slot11 = slot11(slot13)
+	--- BLOCK #44 209-213, warpins: 1 ---
+	slot11 = slot0.m_rootPage
+	slot12 = slot0.model
+	slot12 = slot12.RootPage_Manger
 	--- END OF BLOCK #44 ---
 
-	slot6 = if not slot11 then
+	if slot11 == slot12 then
 	JUMP TO BLOCK #45
 	else
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #60
 	end
 
 
-	--- BLOCK #45 208-208, warpins: 1 ---
-	slot6 = "HATCH_BTN_PAUSE"
+	--- BLOCK #45 214-222, warpins: 1 ---
+	slot11 = HomeLandUtils
+	slot11 = slot11.getHatchBoxStatus
+	slot13 = slot0.m_ornamentId
+	slot11 = slot11(slot13)
+	slot12 = Const
+	slot12 = slot12.HOME_HATCHBOX_STATUS
+	slot12 = slot12.CAN_PLACE
 	--- END OF BLOCK #45 ---
 
-	FLOW; TARGET BLOCK #46
+	if slot11 == slot12 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #49
+	end
 
 
-	--- BLOCK #46 209-209, warpins: 2 ---
+	--- BLOCK #46 223-228, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #46 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	slot7 = if not slot12 then
+	JUMP TO BLOCK #47
+	else
+	JUMP TO BLOCK #48
+	end
 
 
-	--- BLOCK #47 210-214, warpins: 1 ---
-	slot11 = Const
-	slot11 = slot11.HOME_HATCHBOX_STATUS
-	slot11 = slot11.HATCHED
+	--- BLOCK #47 229-229, warpins: 1 ---
+	slot7 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
 	--- END OF BLOCK #47 ---
 
-	if slot10 == slot11 then
-	JUMP TO BLOCK #48
-	else
-	JUMP TO BLOCK #50
-	end
+	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 215-220, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
-	slot11 = slot11(slot13)
+	--- BLOCK #48 230-230, warpins: 2 ---
 	--- END OF BLOCK #48 ---
 
-	slot6 = if not slot11 then
-	JUMP TO BLOCK #49
-	else
-	JUMP TO BLOCK #50
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #49 221-221, warpins: 1 ---
-	slot6 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	--- BLOCK #49 231-235, warpins: 1 ---
+	slot12 = Const
+	slot12 = slot12.HOME_HATCHBOX_STATUS
+	slot12 = slot12.HATCHING
 	--- END OF BLOCK #49 ---
 
-	FLOW; TARGET BLOCK #50
-
-
-	--- BLOCK #50 222-227, warpins: 15 ---
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot0.view
-	slot12 = slot12.txtTiitleUSDFText
-	--- END OF BLOCK #50 ---
-
-	slot13 = if not slot8 then
-	JUMP TO BLOCK #51
+	if slot11 == slot12 then
+	JUMP TO BLOCK #50
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #57
 	end
 
 
-	--- BLOCK #51 228-228, warpins: 1 ---
-	slot13 = ""
+	--- BLOCK #50 236-237, warpins: 1 ---
+	--- END OF BLOCK #50 ---
 
-	--- END OF BLOCK #51 ---
-
-	FLOW; TARGET BLOCK #52
-
-
-	--- BLOCK #52 229-235, warpins: 2 ---
-	slot10(slot12, slot13)
-
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot0.view
-	slot12 = slot12.txtNumUSDFText
-	--- END OF BLOCK #52 ---
-
-	slot13 = if not slot9 then
-	JUMP TO BLOCK #53
+	slot3 = if slot3 then
+	JUMP TO BLOCK #51
 	else
 	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #53 236-236, warpins: 1 ---
-	slot13 = ""
+	--- BLOCK #51 238-243, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #51 ---
 
+	slot7 = if not slot12 then
+	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #52 244-244, warpins: 1 ---
+	slot7 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	--- END OF BLOCK #52 ---
+
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 245-245, warpins: 2 ---
 	--- END OF BLOCK #53 ---
 
-	FLOW; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #54 237-255, warpins: 2 ---
-	slot10(slot12, slot13)
-
-	slot10 = slot0.view
-	slot10 = slot10.btnConfirmUButton
-	slot12 = slot10
-	slot10 = slot10.SetActive
-	slot13 = ToBool
-	slot15 = slot6
-	MULTRES = slot13(slot15)
-
-	slot10(slot12, MULTRES)
-
-	slot10 = slot0.view
-	slot10 = slot10.btnConfirmUButton
-	slot12 = slot10
-	slot10 = slot10.TryChangePage
-	slot13 = "button"
-	slot14 = ToBool
-	slot16 = slot7
-	slot14 = slot14(slot16)
+	--- BLOCK #54 246-251, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "HATCH_BTN_PAUSE"
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #54 ---
 
-	slot14 = if slot14 then
+	slot7 = if not slot12 then
 	JUMP TO BLOCK #55
 	else
 	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #55 256-257, warpins: 1 ---
-	slot14 = 4
+	--- BLOCK #55 252-252, warpins: 1 ---
+	slot7 = "HATCH_BTN_PAUSE"
 	--- END OF BLOCK #55 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #57
+	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #56 258-258, warpins: 1 ---
-	slot14 = 0
-
+	--- BLOCK #56 253-253, warpins: 2 ---
 	--- END OF BLOCK #56 ---
 
-	FLOW; TARGET BLOCK #57
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #57 259-265, warpins: 2 ---
-	slot10(slot12, slot13, slot14)
-
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot0.view
-	slot12 = slot12.txtBtnConfirmNameUSDFText
+	--- BLOCK #57 254-258, warpins: 1 ---
+	slot12 = Const
+	slot12 = slot12.HOME_HATCHBOX_STATUS
+	slot12 = slot12.HATCHED
 	--- END OF BLOCK #57 ---
 
-	slot13 = if not slot6 then
+	if slot11 == slot12 then
 	JUMP TO BLOCK #58
 	else
-	JUMP TO BLOCK #59
+	JUMP TO BLOCK #60
 	end
 
 
-	--- BLOCK #58 266-266, warpins: 1 ---
-	slot13 = ""
-
+	--- BLOCK #58 259-264, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #58 ---
 
-	FLOW; TARGET BLOCK #59
-
-
-	--- BLOCK #59 267-281, warpins: 2 ---
-	slot10(slot12, slot13)
-
-	slot10 = slot0.view
-	slot10 = slot10.tipsUWidget
-	slot12 = slot10
-	slot10 = slot10.SetActive
-	slot13 = ToBool
-	slot15 = slot5
-	MULTRES = slot13(slot15)
-
-	slot10(slot12, MULTRES)
-
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot0.view
-	slot12 = slot12.txtTipsUSDFText
-	--- END OF BLOCK #59 ---
-
-	slot13 = if not slot5 then
-	JUMP TO BLOCK #60
+	slot7 = if not slot12 then
+	JUMP TO BLOCK #59
 	else
-	JUMP TO BLOCK #61
+	JUMP TO BLOCK #60
 	end
 
 
-	--- BLOCK #60 282-282, warpins: 1 ---
-	slot13 = ""
+	--- BLOCK #59 265-265, warpins: 1 ---
+	slot7 = "INCUBATOR_CONFIRM_PLACE_EGG_DESC"
+	--- END OF BLOCK #59 ---
 
+	FLOW; TARGET BLOCK #60
+
+
+	--- BLOCK #60 266-270, warpins: 15 ---
+	slot11 = slot0.m_rootPage
+	slot12 = slot0.model
+	slot12 = slot12.RootPage_PutEgg
 	--- END OF BLOCK #60 ---
 
-	FLOW; TARGET BLOCK #61
+	if slot11 ~= slot12 then
+	JUMP TO BLOCK #61
+	else
+	JUMP TO BLOCK #63
+	end
 
 
-	--- BLOCK #61 283-295, warpins: 2 ---
-	slot10(slot12, slot13)
-
-	slot10 = ClientActivityUtils
-	slot10 = slot10.isPetHatchActivityOpen
-	slot10 = slot10()
-	slot11 = slot0.view
-	slot11 = slot11.speedUpUWidget
-	slot13 = slot11
-	slot11 = slot11.SetActive
-	slot14 = ToBool
-	slot16 = slot6
-	slot14 = slot14(slot16)
+	--- BLOCK #61 271-275, warpins: 1 ---
+	slot11 = slot0.m_rootPage
+	slot12 = slot0.model
+	slot12 = slot12.RootPage_Manger
 	--- END OF BLOCK #61 ---
 
-	slot14 = if slot14 then
+	if slot11 ~= slot12 then
 	JUMP TO BLOCK #62
 	else
 	JUMP TO BLOCK #63
 	end
 
 
-	--- BLOCK #62 296-296, warpins: 1 ---
-	slot14 = slot10
-
+	--- BLOCK #62 276-277, warpins: 1 ---
+	slot11 = false
 	--- END OF BLOCK #62 ---
 
-	FLOW; TARGET BLOCK #63
+	UNCONDITIONAL JUMP; TARGET BLOCK #64
 
 
-	--- BLOCK #63 297-307, warpins: 2 ---
-	slot11(slot13, slot14)
-
-	slot11 = ClientTextUtils
-	slot11 = slot11.setText
-	slot13 = slot0.view
-	slot13 = slot13.txtSpeedUp
-	slot14 = pg
-	slot14 = slot14.getGameString
-	slot16 = "INCUBATOR_CONFIRM_SPEEDUP_DESC"
-	MULTRES = slot14(slot16)
-
-	slot11(slot13, MULTRES)
-
-	return
+	--- BLOCK #63 278-278, warpins: 2 ---
+	slot11 = true
 	--- END OF BLOCK #63 ---
+
+	FLOW; TARGET BLOCK #64
+
+
+	--- BLOCK #64 279-280, warpins: 2 ---
+	--- END OF BLOCK #64 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #65
+	else
+	JUMP TO BLOCK #68
+	end
+
+
+	--- BLOCK #65 281-282, warpins: 1 ---
+	--- END OF BLOCK #65 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #66
+	else
+	JUMP TO BLOCK #68
+	end
+
+
+	--- BLOCK #66 283-288, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.m_checkSealedEggCanHatch
+	slot15 = slot2.id
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #66 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #67
+	else
+	JUMP TO BLOCK #68
+	end
+
+
+	--- BLOCK #67 289-294, warpins: 1 ---
+	slot7 = nil
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "PET_RECEIVE_HATCH_TIP"
+	slot12 = slot12(slot14)
+	slot6 = slot12
+	--- END OF BLOCK #67 ---
+
+	FLOW; TARGET BLOCK #68
+
+
+	--- BLOCK #68 295-300, warpins: 4 ---
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.view
+	slot14 = slot14.txtTiitleUSDFText
+	--- END OF BLOCK #68 ---
+
+	slot15 = if not slot9 then
+	JUMP TO BLOCK #69
+	else
+	JUMP TO BLOCK #70
+	end
+
+
+	--- BLOCK #69 301-301, warpins: 1 ---
+	slot15 = ""
+
+	--- END OF BLOCK #69 ---
+
+	FLOW; TARGET BLOCK #70
+
+
+	--- BLOCK #70 302-308, warpins: 2 ---
+	slot12(slot14, slot15)
+
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.view
+	slot14 = slot14.txtNumUSDFText
+	--- END OF BLOCK #70 ---
+
+	slot15 = if not slot10 then
+	JUMP TO BLOCK #71
+	else
+	JUMP TO BLOCK #72
+	end
+
+
+	--- BLOCK #71 309-309, warpins: 1 ---
+	slot15 = ""
+
+	--- END OF BLOCK #71 ---
+
+	FLOW; TARGET BLOCK #72
+
+
+	--- BLOCK #72 310-328, warpins: 2 ---
+	slot12(slot14, slot15)
+
+	slot12 = slot0.view
+	slot12 = slot12.btnConfirmUButton
+	slot14 = slot12
+	slot12 = slot12.SetActive
+	slot15 = ToBool
+	slot17 = slot7
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
+	slot12 = slot0.view
+	slot12 = slot12.btnConfirmUButton
+	slot14 = slot12
+	slot12 = slot12.TryChangePage
+	slot15 = "button"
+	slot16 = ToBool
+	slot18 = slot8
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #72 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #73
+	else
+	JUMP TO BLOCK #74
+	end
+
+
+	--- BLOCK #73 329-330, warpins: 1 ---
+	slot16 = 4
+	--- END OF BLOCK #73 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #75
+
+
+	--- BLOCK #74 331-331, warpins: 1 ---
+	slot16 = 0
+
+	--- END OF BLOCK #74 ---
+
+	FLOW; TARGET BLOCK #75
+
+
+	--- BLOCK #75 332-338, warpins: 2 ---
+	slot12(slot14, slot15, slot16)
+
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.view
+	slot14 = slot14.txtBtnConfirmNameUSDFText
+	--- END OF BLOCK #75 ---
+
+	slot15 = if not slot7 then
+	JUMP TO BLOCK #76
+	else
+	JUMP TO BLOCK #77
+	end
+
+
+	--- BLOCK #76 339-339, warpins: 1 ---
+	slot15 = ""
+
+	--- END OF BLOCK #76 ---
+
+	FLOW; TARGET BLOCK #77
+
+
+	--- BLOCK #77 340-354, warpins: 2 ---
+	slot12(slot14, slot15)
+
+	slot12 = slot0.view
+	slot12 = slot12.tipsUWidget
+	slot14 = slot12
+	slot12 = slot12.SetActive
+	slot15 = ToBool
+	slot17 = slot6
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.view
+	slot14 = slot14.txtTipsUSDFText
+	--- END OF BLOCK #77 ---
+
+	slot15 = if not slot6 then
+	JUMP TO BLOCK #78
+	else
+	JUMP TO BLOCK #79
+	end
+
+
+	--- BLOCK #78 355-355, warpins: 1 ---
+	slot15 = ""
+
+	--- END OF BLOCK #78 ---
+
+	FLOW; TARGET BLOCK #79
+
+
+	--- BLOCK #79 356-360, warpins: 2 ---
+	slot12(slot14, slot15)
+
+	slot12 = slot0.view
+	slot12 = slot12.activityUButton
+	--- END OF BLOCK #79 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #80
+	else
+	JUMP TO BLOCK #83
+	end
+
+
+	--- BLOCK #80 361-372, warpins: 1 ---
+	slot12 = ClientActivityUtils
+	slot12 = slot12.isPetHatchActivityOpen
+	slot12 = slot12()
+	slot13 = slot0.view
+	slot13 = slot13.activityUButton
+	slot15 = slot13
+	slot13 = slot13.SetActive
+	slot16 = ToBool
+	slot18 = slot7
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #80 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #81
+	else
+	JUMP TO BLOCK #82
+	end
+
+
+	--- BLOCK #81 373-373, warpins: 1 ---
+	slot16 = slot12
+
+	--- END OF BLOCK #81 ---
+
+	FLOW; TARGET BLOCK #82
+
+
+	--- BLOCK #82 374-374, warpins: 2 ---
+	slot13(slot15, slot16)
+
+	--- END OF BLOCK #82 ---
+
+	FLOW; TARGET BLOCK #83
+
+
+	--- BLOCK #83 375-378, warpins: 2 ---
+	slot12 = slot0.view
+	slot12 = slot12.txtActivityUp
+	--- END OF BLOCK #83 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #84
+	else
+	JUMP TO BLOCK #85
+	end
+
+
+	--- BLOCK #84 379-394, warpins: 1 ---
+	slot12 = ClientActivityUtils
+	slot12 = slot12.getPetHatchActivityUpTimeRata
+	slot12 = slot12()
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot0.view
+	slot15 = slot15.txtActivityUp
+	slot16 = pg
+	slot16 = slot16.getFormatText
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "INCUBATE_PERCENT"
+	slot18 = slot18(slot20)
+	slot19 = slot12
+	MULTRES = slot16(slot18, slot19)
+
+	slot13(slot15, MULTRES)
+
+	--- END OF BLOCK #84 ---
+
+	FLOW; TARGET BLOCK #85
+
+
+	--- BLOCK #85 395-398, warpins: 2 ---
+	slot12 = slot0.view
+	slot12 = slot12.speedUpUWidget
+	--- END OF BLOCK #85 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #86
+	else
+	JUMP TO BLOCK #89
+	end
+
+
+	--- BLOCK #86 399-407, warpins: 1 ---
+	slot12 = slot0.view
+	slot12 = slot12.speedUpUWidget
+	slot14 = slot12
+	slot12 = slot12.SetActive
+	slot15 = ToBool
+	slot17 = slot7
+	slot15 = slot15(slot17)
+	--- END OF BLOCK #86 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #87
+	else
+	JUMP TO BLOCK #88
+	end
+
+
+	--- BLOCK #87 408-408, warpins: 1 ---
+	slot15 = slot1
+
+	--- END OF BLOCK #87 ---
+
+	FLOW; TARGET BLOCK #88
+
+
+	--- BLOCK #88 409-409, warpins: 2 ---
+	slot12(slot14, slot15)
+
+	--- END OF BLOCK #88 ---
+
+	FLOW; TARGET BLOCK #89
+
+
+	--- BLOCK #89 410-413, warpins: 2 ---
+	slot12 = slot0.view
+	slot12 = slot12.txtSpeedUp
+	--- END OF BLOCK #89 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #90
+	else
+	JUMP TO BLOCK #91
+	end
+
+
+	--- BLOCK #90 414-429, warpins: 1 ---
+	slot12 = ClientActivityUtils
+	slot12 = slot12.getMonthCardSpeedupHatchTime
+	slot12 = slot12()
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot0.view
+	slot15 = slot15.txtSpeedUp
+	slot16 = pg
+	slot16 = slot16.getFormatText
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "INCUBATE_MINUTE"
+	slot18 = slot18(slot20)
+	slot19 = slot12
+	MULTRES = slot16(slot18, slot19)
+
+	slot13(slot15, MULTRES)
+
+	--- END OF BLOCK #90 ---
+
+	FLOW; TARGET BLOCK #91
+
+
+	--- BLOCK #91 430-430, warpins: 2 ---
+	return
+	--- END OF BLOCK #91 ---
 
 
 
 end
 
-slot6.refreshBottom = slot22
+slot6.refreshBottom = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.close
@@ -3703,9 +4237,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onClickClose = slot22
+slot6.onClickClose = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = HomeLandUtils
 	slot1 = slot1.showPauseHatchConfirm
@@ -3735,9 +4269,9 @@ slot22 = function(slot0)
 
 end
 
-slot6.onClickPause = slot22
+slot6.onClickPause = slot27
 
-slot22 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -3757,10 +4291,59 @@ slot22 = function(slot0)
 
 end
 
-slot6.onClickSortOrFilter = slot22
+slot6.onClickSortOrFilter = slot27
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isSealedPetEgg
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-14, warpins: 2 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.checkSealedEggCanHatch
+	slot4 = slot1
+
+	return slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot6.m_checkSealedEggCanHatch = slot27
+
+slot27 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.getSelectedItemData
@@ -3769,189 +4352,272 @@ slot22 = function(slot0)
 	slot2 = slot2.getHatchBoxStatus
 	slot4 = slot0.m_ornamentId
 	slot2 = slot2(slot4)
-	slot3 = true
-	slot4 = slot0.m_rootPage
-	slot5 = slot0.model
-	slot5 = slot5.RootPage_PutEgg
+	slot3 = slot0.m_rootPage
+	slot4 = slot0.model
+	slot4 = slot4.RootPage_PutEgg
 	--- END OF BLOCK #0 ---
 
-	if slot4 == slot5 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 15-16, warpins: 1 ---
+	--- BLOCK #1 14-18, warpins: 1 ---
+	slot3 = slot0.m_rootPage
+	slot4 = slot0.model
+	slot4 = slot4.RootPage_Manger
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 17-24, warpins: 1 ---
-	slot4 = slot0.m_homeSpace
-	slot6 = slot4
-	slot4 = slot4.reqStartHatchPetEgg
-	slot7 = slot0.m_ornamentId
-	slot8 = slot1.id
-	slot9 = slot1.genId
-
-	slot4(slot6, slot7, slot8, slot9)
-
+	--- BLOCK #2 19-20, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 25-29, warpins: 2 ---
-	slot4 = slot0.m_rootPage
-	slot5 = slot0.model
-	slot5 = slot5.RootPage_SpeedUp
+	--- BLOCK #3 21-21, warpins: 2 ---
+	slot3 = true
 	--- END OF BLOCK #3 ---
 
-	if slot4 == slot5 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 30-31, warpins: 1 ---
+	--- BLOCK #4 22-23, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 32-36, warpins: 1 ---
-	slot4 = Const
-	slot4 = slot4.HOME_HATCHBOX_STATUS
-	slot4 = slot4.HATCHING
+	--- BLOCK #5 24-25, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	if slot2 == slot4 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 37-45, warpins: 1 ---
-	slot4 = HomeLandUtils
-	slot4 = slot4.trySpeedUpHatchBox
-	slot6 = slot0.m_ornamentId
+	--- BLOCK #6 26-31, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.m_checkSealedEggCanHatch
 	slot7 = slot1.id
-	slot8 = slot1.genId
-	slot9 = true
-	slot4 = slot4(slot6, slot7, slot8, slot9)
-	slot3 = slot4
+	slot4 = slot4(slot6, slot7)
+
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #7 46-47, warpins: 1 ---
-	slot3 = true
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #8 48-52, warpins: 2 ---
-	slot4 = slot0.m_rootPage
-	slot5 = slot0.model
-	slot5 = slot5.RootPage_Manger
-	--- END OF BLOCK #8 ---
-
-	if slot4 == slot5 then
-	JUMP TO BLOCK #9
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #9 53-57, warpins: 1 ---
-	slot4 = HomeLandUtils
-	slot4 = slot4.tryChangeHatchBoxEgg
-	slot6 = slot0.m_ornamentId
+	--- BLOCK #7 32-32, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-38, warpins: 4 ---
+	slot4 = true
+	slot5 = slot0.m_rootPage
+	slot6 = slot0.model
+	slot6 = slot6.RootPage_PutEgg
+	--- END OF BLOCK #8 ---
+
+	if slot5 == slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 39-40, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	slot7 = if slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 58-58, warpins: 1 ---
-	slot7 = slot1.id
+	--- BLOCK #10 41-48, warpins: 1 ---
+	slot5 = slot0.m_homeSpace
+	slot7 = slot5
+	slot5 = slot5.reqStartHatchPetEgg
+	slot8 = slot0.m_ornamentId
+	slot9 = slot1.id
+	slot10 = slot1.genId
+
+	slot5(slot7, slot8, slot9, slot10)
+
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #11 59-60, warpins: 2 ---
+	--- BLOCK #11 49-53, warpins: 2 ---
+	slot5 = slot0.m_rootPage
+	slot6 = slot0.model
+	slot6 = slot6.RootPage_SpeedUp
 	--- END OF BLOCK #11 ---
 
-	slot8 = if slot1 then
+	if slot5 == slot6 then
 	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 61-61, warpins: 1 ---
-	slot8 = slot1.genId
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 62-63, warpins: 2 ---
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3 = slot4
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 64-65, warpins: 5 ---
-	--- END OF BLOCK #14 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 66-68, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.close
+	--- BLOCK #12 54-55, warpins: 1 ---
+	--- END OF BLOCK #12 ---
 
-	slot4(slot6)
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
 
+
+	--- BLOCK #13 56-60, warpins: 1 ---
+	slot5 = Const
+	slot5 = slot5.HOME_HATCHBOX_STATUS
+	slot5 = slot5.HATCHING
+	--- END OF BLOCK #13 ---
+
+	if slot2 == slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 61-69, warpins: 1 ---
+	slot5 = HomeLandUtils
+	slot5 = slot5.trySpeedUpHatchBox
+	slot7 = slot0.m_ornamentId
+	slot8 = slot1.id
+	slot9 = slot1.genId
+	slot10 = true
+	slot5 = slot5(slot7, slot8, slot9, slot10)
+	slot4 = slot5
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #15 70-71, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #16 69-69, warpins: 2 ---
-	return
+	--- BLOCK #16 72-76, warpins: 2 ---
+	slot5 = slot0.m_rootPage
+	slot6 = slot0.model
+	slot6 = slot6.RootPage_Manger
 	--- END OF BLOCK #16 ---
+
+	if slot5 == slot6 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #17 77-81, warpins: 1 ---
+	slot5 = HomeLandUtils
+	slot5 = slot5.tryChangeHatchBoxEgg
+	slot7 = slot0.m_ornamentId
+	--- END OF BLOCK #17 ---
+
+	slot8 = if slot1 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 82-82, warpins: 1 ---
+	slot8 = slot1.id
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 83-84, warpins: 2 ---
+	--- END OF BLOCK #19 ---
+
+	slot9 = if slot1 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 85-85, warpins: 1 ---
+	slot9 = slot1.genId
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 86-87, warpins: 2 ---
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4 = slot5
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 88-89, warpins: 5 ---
+	--- END OF BLOCK #22 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 90-92, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.close
+
+	slot5(slot7)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 93-93, warpins: 2 ---
+	return
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot6.onClickConfirm = slot22
+slot6.onClickConfirm = slot27
 
 return slot6
 --- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-97, warpins: 1 ---
+--- BLOCK #0 1-99, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -260,7 +260,14 @@ end
 slot6.tryClosePanel = slot13
 
 slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = slot0.view
+	slot4 = slot2
+	slot2 = slot2.setNextBtnVisible
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #0 ---
 
 	if slot1 ~= nil then
@@ -270,7 +277,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-5, warpins: 1 ---
+	--- BLOCK #1 8-10, warpins: 1 ---
 	slot2 = slot1.id
 	--- END OF BLOCK #1 ---
 
@@ -281,7 +288,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 6-10, warpins: 2 ---
+	--- BLOCK #2 11-15, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.closeScreen
 	slot5 = true
@@ -293,7 +300,7 @@ slot13 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #3 11-17, warpins: 1 ---
+	--- BLOCK #3 16-22, warpins: 1 ---
 	slot2 = BlackScreenData
 	slot3 = slot1.id
 	slot2 = slot2[slot3]
@@ -308,7 +315,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 18-22, warpins: 1 ---
+	--- BLOCK #4 23-27, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.closeScreen
 	slot5 = true
@@ -320,7 +327,7 @@ slot13 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #5 23-26, warpins: 1 ---
+	--- BLOCK #5 28-31, warpins: 1 ---
 	slot2 = slot0.screenConfig
 	slot2 = slot2.inOrNot
 	--- END OF BLOCK #5 ---
@@ -332,7 +339,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 27-30, warpins: 1 ---
+	--- BLOCK #6 32-35, warpins: 1 ---
 	slot2 = slot0.screenConfig
 	slot2 = slot2.inTime
 	--- END OF BLOCK #6 ---
@@ -344,7 +351,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 31-34, warpins: 1 ---
+	--- BLOCK #7 36-39, warpins: 1 ---
 	slot2 = slot0.screenConfig
 	slot2 = slot2.inTime
 	--- END OF BLOCK #7 ---
@@ -356,7 +363,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 35-40, warpins: 1 ---
+	--- BLOCK #8 40-45, warpins: 1 ---
 	slot2 = slot0.screenConfig
 	slot2 = slot2.inTime
 	slot3 = slot0.SCREEN_IN_ANI_TIME
@@ -370,14 +377,14 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 41-41, warpins: 3 ---
+	--- BLOCK #9 46-46, warpins: 3 ---
 	slot2 = 1
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 42-50, warpins: 2 ---
+	--- BLOCK #10 47-55, warpins: 2 ---
 	slot3 = UIUtils
 	slot3 = slot3.PlayAnimation
 	slot5 = slot0.view
@@ -409,7 +416,7 @@ slot13 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 51-54, warpins: 1 ---
+	--- BLOCK #11 56-59, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshAll
 	slot5 = slot1
@@ -421,21 +428,21 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 55-56, warpins: 2 ---
+	--- BLOCK #12 60-61, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 57-57, warpins: 2 ---
+	--- BLOCK #13 62-62, warpins: 2 ---
 	return
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 58-58, warpins: 2 ---
+	--- BLOCK #14 63-63, warpins: 2 ---
 	return
 	--- END OF BLOCK #14 ---
 
@@ -707,7 +714,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 85-101, warpins: 2 ---
+	--- BLOCK #16 85-97, warpins: 2 ---
 	slot0.isScanFinished = slot4
 	slot4 = slot0.view
 	slot6 = slot4
@@ -716,15 +723,11 @@ slot13 = function(slot0)
 
 	slot4(slot6, slot7)
 
-	slot4 = slot0.view
-	slot6 = slot4
-	slot4 = slot4.setNextBtnTxt
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "CLICK_TO_CONTINUE"
-	MULTRES = slot7(slot9)
+	slot6 = slot0
+	slot4 = slot0.setNextBtn
+	slot7 = "CLICK_TO_CONTINUE"
 
-	slot4(slot6, MULTRES)
+	slot4(slot6, slot7)
 
 	slot6 = slot0
 	slot4 = slot0.nonAutoPlayTxt
@@ -736,7 +739,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 102-102, warpins: 3 ---
+	--- BLOCK #17 98-98, warpins: 3 ---
 	return
 	--- END OF BLOCK #17 ---
 
@@ -1217,16 +1220,12 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #5 23-32, warpins: 1 ---
-	slot1 = slot0.view
-	slot3 = slot1
-	slot1 = slot1.setNextBtnTxt
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "CLICK_TO_CLOSE"
-	MULTRES = slot4(slot6)
+	--- BLOCK #5 23-28, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setNextBtn
+	slot4 = "CLICK_TO_CLOSE"
 
-	slot1(slot3, MULTRES)
+	slot1(slot3, slot4)
 
 	slot1 = true
 	slot0.btnCanClose = slot1
@@ -1235,7 +1234,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 33-38, warpins: 4 ---
+	--- BLOCK #6 29-34, warpins: 4 ---
 	slot3 = slot0
 	slot1 = slot0.clampDialogIndex
 
@@ -1251,7 +1250,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 39-39, warpins: 2 ---
+	--- BLOCK #7 35-35, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -1260,6 +1259,39 @@ slot13 = function(slot0)
 end
 
 slot6.onBtnNextClickHandler = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot2 = slot0.view
+	slot4 = slot2
+	slot2 = slot2.setNextBtnTxt
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = slot1
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.view
+	slot2 = slot2.btnNextUButton
+	slot4 = slot2
+	slot2 = slot2.SetHotkeyConsoleBar
+	slot5 = slot1
+	slot6 = 1
+	slot7 = slot0.view
+	slot7 = slot7.consoleBar
+	slot7 = slot7.transform
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.setNextBtn = slot13
 
 slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -1297,16 +1329,12 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-23, warpins: 1 ---
-	slot1 = slot0.view
-	slot3 = slot1
-	slot1 = slot1.setNextBtnTxt
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "CLICK_TO_CLOSE"
-	MULTRES = slot4(slot6)
+	--- BLOCK #3 13-19, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setNextBtn
+	slot4 = "CLICK_TO_CLOSE"
 
-	slot1(slot3, MULTRES)
+	slot1(slot3, slot4)
 
 	slot1 = true
 	slot0.btnCanClose = slot1
@@ -1315,16 +1343,12 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 24-33, warpins: 1 ---
-	slot1 = slot0.view
-	slot3 = slot1
-	slot1 = slot1.setNextBtnTxt
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "CLICK_TO_CONTINUE"
-	MULTRES = slot4(slot6)
+	--- BLOCK #4 20-25, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setNextBtn
+	slot4 = "CLICK_TO_CONTINUE"
 
-	slot1(slot3, MULTRES)
+	slot1(slot3, slot4)
 
 	slot1 = false
 	slot0.btnCanClose = slot1
@@ -1334,7 +1358,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 34-34, warpins: 3 ---
+	--- BLOCK #5 26-26, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 

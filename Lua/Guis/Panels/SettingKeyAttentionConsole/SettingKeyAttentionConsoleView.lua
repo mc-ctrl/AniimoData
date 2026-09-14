@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-37, warpins: 1 ---
+	--- BLOCK #0 1-57, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -48,6 +48,26 @@ slot3 = function(slot0)
 	slot4 = "btnCancelUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnCancelUButton = slot1
+	slot1 = slot0.btnCancelUButton
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNameUText"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnCancelTxtNameUText = slot2
+	slot2 = slot0.btnConfirmUButton
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtNameUText"
+	slot3 = slot3(slot5, slot6)
+	slot0.btnConfirmTxtNameUText = slot3
 
 	return
 	--- END OF BLOCK #0 ---

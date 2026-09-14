@@ -1,4 +1,4 @@
---- BLOCK #0 1-50, warpins: 1 ---
+--- BLOCK #0 1-48, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -294,7 +294,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 78-100, warpins: 2 ---
+	--- BLOCK #19 78-101, warpins: 2 ---
 	slot15.isSelf = slot16
 	slot16 = slot14.playerName
 	slot15.playerName = slot16
@@ -310,13 +310,12 @@ slot10 = function(slot0)
 	slot15.os = slot16
 	slot16 = slot14.isAllowedCrossPlatform
 	slot15.isAllowedCrossPlatform = slot16
-	slot18 = slot0
-	slot16 = slot0.parseBecameEggInfo
-	slot19 = slot15
-	slot20 = slot14.becomeEggInfo
-
-	slot16(slot18, slot19, slot20)
-
+	slot16 = slot14.showTitles
+	slot15.showTitles = slot16
+	slot16 = slot14.showTitleExtra
+	slot15.showTitleExtra = slot16
+	slot16 = slot14.isWholeTitle
+	slot15.isWholeTitle = slot16
 	slot16 = slot15.isLeader
 	--- END OF BLOCK #19 ---
 
@@ -327,7 +326,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #20 101-103, warpins: 1 ---
+	--- BLOCK #20 102-104, warpins: 1 ---
 	slot16 = slot15.isReady
 	--- END OF BLOCK #20 ---
 
@@ -338,21 +337,21 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #21 104-105, warpins: 1 ---
+	--- BLOCK #21 105-106, warpins: 1 ---
 	slot7 = slot7 + 1
 	--- END OF BLOCK #21 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #22 106-106, warpins: 1 ---
+	--- BLOCK #22 107-107, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 107-110, warpins: 3 ---
+	--- BLOCK #23 108-111, warpins: 3 ---
 	slot16 = PlayerHeadIconData
 	slot17 = slot14.headIcon
 	--- END OF BLOCK #23 ---
@@ -364,14 +363,14 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #24 111-111, warpins: 1 ---
+	--- BLOCK #24 112-112, warpins: 1 ---
 	slot17 = 1
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 112-126, warpins: 2 ---
+	--- BLOCK #25 113-127, warpins: 2 ---
 	slot16 = slot16[slot17]
 	slot16 = slot16.res
 	slot15.icon = slot16
@@ -396,14 +395,14 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #26 127-127, warpins: 1 ---
+	--- BLOCK #26 128-128, warpins: 1 ---
 	slot5 = slot15
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 128-129, warpins: 3 ---
+	--- BLOCK #27 129-130, warpins: 3 ---
 	--- END OF BLOCK #27 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
@@ -411,7 +410,7 @@ slot10 = function(slot0)
 	GO OUT TO BLOCK #28
 
 
-	--- BLOCK #28 130-134, warpins: 1 ---
+	--- BLOCK #28 131-135, warpins: 1 ---
 	slot8 = true
 	slot3.isAllReady = slot8
 	slot3.readyNum = slot7
@@ -424,7 +423,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #29 135-138, warpins: 1 ---
+	--- BLOCK #29 136-139, warpins: 1 ---
 	slot8 = slot5.isLeader
 	slot3.isLeader = slot8
 	slot8 = slot5.isReady
@@ -435,7 +434,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 139-139, warpins: 2 ---
+	--- BLOCK #30 140-140, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #30 ---
 
@@ -444,47 +443,6 @@ slot10 = function(slot0)
 end
 
 slot3.tryParseTeamInfo = slot10
-
-slot10 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot2.isBecomeEgg
-	slot1.isBecameEgg = slot3
-	slot3 = slot1.isBecameEgg
-
-	--- END OF BLOCK #0 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-14, warpins: 2 ---
-	slot3 = slot2.eggTemplateId
-	slot4 = LuaUIUtils
-	slot4 = slot4.getItemInfoById
-	slot6 = slot3
-	slot4 = slot4(slot6)
-	slot5 = slot4.icon
-	slot1.becameEggIcon = slot5
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot3.parseBecameEggInfo = slot10
 
 slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---

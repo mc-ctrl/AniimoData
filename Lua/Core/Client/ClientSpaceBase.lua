@@ -205,7 +205,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 58-89, warpins: 2 ---
+	--- BLOCK #11 58-97, warpins: 2 ---
 	slot4 = slot4(slot6)
 	slot3.file = slot4
 	slot6 = slot0
@@ -221,105 +221,143 @@ slot11 = function(slot0, slot1)
 	slot4 = AoiLodConst
 	slot4 = slot4.SPACE_MARKER_TILE_SIZE
 	slot3.marker_tile_size = slot4
-	slot4 = pg
-	slot4 = slot4.world
-	slot4 = slot4.createSpace
-	slot6 = slot0.sceneId
-	slot7 = slot0.id
-	slot8 = slot3
-	slot9 = false
+	slot4 = slot3.toplogoType
+	slot0.toplogoType = slot4
+	slot4 = setmetatable
+	slot6 = {}
+	slot6[1] = slot0
+	slot7 = {
+		__mode = "v"
+	}
+	slot4 = slot4(slot6, slot7)
+	slot5 = pg
+	slot5 = slot5.world
+	slot5 = slot5.createSpace
+	slot7 = slot0.sceneId
+	slot8 = slot0.id
+	slot9 = slot3
+	slot10 = false
 
-	slot10 = function(slot0)
-		--- BLOCK #0 1-2, warpins: 1 ---
+	slot11 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = weakSelf
+		slot1 = slot1[1]
 		--- END OF BLOCK #0 ---
 
-		slot0 = if slot0 then
+		if slot1 ~= nil then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 3-14, warpins: 1 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1._doAfterLoaded
-
-		slot1(slot3)
-
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.voxel
-		slot3 = slot1
-		slot1 = slot1.registerVoxelRegionLoadCallback
-		slot4 = self
-
-		slot1(slot3, slot4)
+		--- BLOCK #1 5-7, warpins: 1 ---
+		slot2 = slot1.destroyed
 
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #2 15-21, warpins: 1 ---
-		slot1 = LoggerManager
-		slot1 = slot1.checkLogger
-		slot3 = LoggerConst
-		slot3 = slot3.ERROR
-		slot1 = slot1(slot3)
-		--- END OF BLOCK #2 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #3
+		slot2 = if slot2 then
+		JUMP TO BLOCK #2
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #3 22-31, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.logger
-		slot3 = slot1
-		slot1 = slot1.error
-		slot4 = "(%s) failed to load space"
-		slot5 = self
-		slot7 = slot5
-		slot5 = slot5.repr
-		MULTRES = slot5(slot7)
+		--- BLOCK #2 8-8, warpins: 2 ---
+		return
 
-		slot1(slot3, slot4, MULTRES)
+		--- END OF BLOCK #2 ---
 
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 9-10, warpins: 2 ---
 		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #4
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
 
 
-		--- BLOCK #4 32-32, warpins: 3 ---
-		return
+		--- BLOCK #4 11-21, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1._doAfterLoaded
+
+		slot2(slot4)
+
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.voxel
+		slot4 = slot2
+		slot2 = slot2.registerVoxelRegionLoadCallback
+		slot5 = slot1
+
+		slot2(slot4, slot5)
+
 		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #5 22-28, warpins: 1 ---
+		slot2 = LoggerManager
+		slot2 = slot2.checkLogger
+		slot4 = LoggerConst
+		slot4 = slot4.ERROR
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #5 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 29-36, warpins: 1 ---
+		slot2 = slot1.logger
+		slot4 = slot2
+		slot2 = slot2.error
+		slot5 = "(%s) failed to load space"
+		slot8 = slot1
+		slot6 = slot1.repr
+		MULTRES = slot6(slot8)
+
+		slot2(slot4, slot5, MULTRES)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 37-37, warpins: 3 ---
+		return
+		--- END OF BLOCK #7 ---
 
 
 
 	end
 
-	slot4(slot6, slot7, slot8, slot9, slot10)
+	slot5(slot7, slot8, slot9, slot10, slot11)
 
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.scene
-	slot6 = slot4
-	slot4 = slot4.loadScene
-	slot7 = slot2
-	slot8 = slot1.portalPos
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.scene
+	slot7 = slot5
+	slot5 = slot5.loadScene
+	slot8 = slot2
+	slot9 = slot1.portalPos
 
-	slot4(slot6, slot7, slot8)
+	slot5(slot7, slot8, slot9)
 
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 90-92, warpins: 2 ---
+	--- BLOCK #12 98-100, warpins: 2 ---
 	slot2 = true
 
 	return slot2
@@ -328,7 +366,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 93-93, warpins: 2 ---
+	--- BLOCK #13 101-101, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #13 ---
 

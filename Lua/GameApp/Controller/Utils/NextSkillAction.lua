@@ -216,7 +216,7 @@ slot10 = function(slot0, slot1)
 	--- BLOCK #2 6-10, warpins: 1 ---
 	slot0.nextSkillId = slot1
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.startTime = slot2
 	--- END OF BLOCK #2 ---
 
@@ -225,7 +225,7 @@ slot10 = function(slot0, slot1)
 
 	--- BLOCK #3 11-14, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.startTime = slot2
 	--- END OF BLOCK #3 ---
 
@@ -307,7 +307,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot4 = slot3.abilityId
 	slot0.nextTimelineSkillId = slot4
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot0.startTime = slot4
 	--- END OF BLOCK #3 ---
 
@@ -316,7 +316,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #4 24-27, warpins: 1 ---
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot0.startTime = slot4
 	--- END OF BLOCK #4 ---
 
@@ -872,7 +872,7 @@ slot10 = function(slot0)
 
 	--- BLOCK #13 79-88, warpins: 3 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = table
 	slot2 = slot2.nums
 	slot4 = slot0.keyQueue
@@ -1097,7 +1097,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot7 = {}
 	slot7[1] = slot1
 	slot8 = Time
-	slot8 = slot8.secondCache
+	slot8 = slot8.realSecondCache
 	slot7[2] = slot8
 	slot7[3] = slot2
 

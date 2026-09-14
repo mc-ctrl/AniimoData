@@ -1,22 +1,25 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.FlowCanvas.Nodes.ListenBaseNode"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LiteClass
-slot4 = "RoundTimeNode"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Const.ServerEventConst"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "Common.FlowCanvas.Nodes.ListenBaseNode"
+slot2 = slot2(slot4)
+slot3 = slot1.LiteClass
+slot5 = "RoundTimeNode"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Common.Const.Const"
+slot6 = "Const.ServerEventConst"
 slot4 = slot4(slot6)
+slot5 = require
+slot7 = "Common.Const.Const"
+slot5 = slot5(slot7)
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = RoundTimeNode
 	slot4 = slot4.super
@@ -35,9 +38,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.ctor = slot5
+slot3.ctor = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-38, warpins: 1 ---
 	slot1 = RoundTimeNode
 	slot1 = slot1.super
@@ -139,9 +142,9 @@ slot5 = function(slot0)
 
 end
 
-slot2.registerPorts = slot5
+slot3.registerPorts = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
@@ -197,9 +200,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot2.On_LevelItemIn_PortCalled = slot5
+slot3.On_LevelItemIn_PortCalled = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
@@ -373,9 +376,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot2.On_In_PortCalled = slot5
+slot3.On_In_PortCalled = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = RoundTimeNode
 	slot3 = slot3.super
@@ -446,9 +449,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot2.On_Cancel_PortCalled = slot5
+slot3.On_Cancel_PortCalled = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.unloadSpawner
@@ -507,9 +510,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot2.onFinish = slot5
+slot3.onFinish = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
@@ -647,9 +650,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot2.endRoundTime = slot5
+slot3.endRoundTime = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getSpace
@@ -686,7 +689,7 @@ slot5 = function(slot0, slot1)
 
 
 	--- BLOCK #3 12-12, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -800,9 +803,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot2.loadSpawner = slot5
+slot3.loadSpawner = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getSpace
@@ -839,7 +842,7 @@ slot5 = function(slot0, slot1)
 
 
 	--- BLOCK #3 12-12, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -894,9 +897,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot2.unloadSpawner = slot5
+slot3.unloadSpawner = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -929,7 +932,7 @@ slot5 = function(slot0, slot1)
 
 
 	--- BLOCK #3 9-9, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -1020,9 +1023,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot2.destroy = slot5
+slot3.destroy = slot6
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

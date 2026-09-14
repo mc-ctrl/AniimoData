@@ -1,64 +1,75 @@
---- BLOCK #0 1-114, warpins: 1 ---
+--- BLOCK #0 1-131, warpins: 1 ---
 slot0 = require
-slot2 = "SDK.Platform.PlatformLogger"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Timer.TimerManager"
+slot3 = "SDK.Platform.PlatformLogger"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "SDK.Platform.PlatformAchievementTriggerService"
+slot4 = "Core.Timer.TimerManager"
 slot2 = slot2(slot4)
-slot3 = CS
-slot3 = slot3.FunPlus
-slot3 = slot3.WorldX
-slot3 = slot3.SDK
-slot3 = slot3.Platform
-slot3 = slot3.PlatformBridgeLuaFacade
-slot4 = {}
-slot5 = "initialStateSynced"
-slot4.EVENT_INITIAL_STATE_SYNCED = slot5
-slot5 = "achievementsUpdated"
-slot4.EVENT_ACHIEVEMENTS_UPDATED = slot5
-slot5 = "achievementProgressUpdated"
-slot4.EVENT_ACHIEVEMENT_PROGRESS_UPDATED = slot5
-slot5 = "achievementUnlocked"
-slot4.EVENT_ACHIEVEMENT_UNLOCKED = slot5
-slot5 = 0
-slot4.POLL_INTERVAL = slot5
-slot5 = -1
-slot4.NOT_SUPPORTED_RESULT = slot5
-slot5 = -2
-slot4.RUNTIME_NOT_READY_RESULT = slot5
-slot5 = -3
-slot4.INVALID_ARGUMENT_RESULT = slot5
-slot5 = {
-	hasLoggedReadySnapshot = false,
-	ownerUserId = "",
-	initialStateSynced = false,
+slot3 = require
+slot5 = "SDK.Platform.PlatformAchievementTriggerService"
+slot3 = slot3(slot5)
+slot4 = require
+slot6 = "SDK.Platform.PlatformAchievementRuleConfig"
+slot4 = slot4(slot6)
+slot5 = require
+slot7 = "json"
+slot5 = slot5(slot7)
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
+slot6 = slot6.SDK
+slot6 = slot6.Platform
+slot6 = slot6.PlatformBridgeLuaFacade
+slot7 = {}
+slot8 = "initialStateSynced"
+slot7.EVENT_INITIAL_STATE_SYNCED = slot8
+slot8 = "achievementsUpdated"
+slot7.EVENT_ACHIEVEMENTS_UPDATED = slot8
+slot8 = "achievementProgressUpdated"
+slot7.EVENT_ACHIEVEMENT_PROGRESS_UPDATED = slot8
+slot8 = "achievementUnlocked"
+slot7.EVENT_ACHIEVEMENT_UNLOCKED = slot8
+slot8 = 0
+slot7.POLL_INTERVAL = slot8
+slot8 = 10000
+slot7.STEAM_QUERY_TIMEOUT_MS = slot8
+slot8 = -1
+slot7.NOT_SUPPORTED_RESULT = slot8
+slot8 = -2
+slot7.RUNTIME_NOT_READY_RESULT = slot8
+slot8 = -3
+slot7.INVALID_ARGUMENT_RESULT = slot8
+slot8 = {
 	initialized = false,
+	ownerUserId = "",
+	hasLoggedReadySnapshot = false,
+	initialStateSynced = false,
 	managerReady = false
 }
-slot6 = {}
-slot5.achievements = slot6
-slot6 = {}
-slot5.achievementIndex = slot6
-slot6 = {}
-slot7 = slot4.EVENT_INITIAL_STATE_SYNCED
-slot8 = {}
-slot6[slot7] = slot8
-slot7 = slot4.EVENT_ACHIEVEMENTS_UPDATED
-slot8 = {}
-slot6[slot7] = slot8
-slot7 = slot4.EVENT_ACHIEVEMENT_PROGRESS_UPDATED
-slot8 = {}
-slot6[slot7] = slot8
-slot7 = slot4.EVENT_ACHIEVEMENT_UNLOCKED
-slot8 = {}
-slot6[slot7] = slot8
-slot5.listeners = slot6
-slot4.state = slot5
+slot9 = {}
+slot8.achievements = slot9
+slot9 = {}
+slot8.achievementIndex = slot9
+slot9 = {}
+slot10 = slot7.EVENT_INITIAL_STATE_SYNCED
+slot11 = {}
+slot9[slot10] = slot11
+slot10 = slot7.EVENT_ACHIEVEMENTS_UPDATED
+slot11 = {}
+slot9[slot10] = slot11
+slot10 = slot7.EVENT_ACHIEVEMENT_PROGRESS_UPDATED
+slot11 = {}
+slot9[slot10] = slot11
+slot10 = slot7.EVENT_ACHIEVEMENT_UNLOCKED
+slot11 = {}
+slot9[slot10] = slot11
+slot8.listeners = slot9
+slot7.state = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -100,9 +111,9 @@ slot5 = function()
 
 end
 
-slot4.isPlatformSupported = slot5
+slot7.isPlatformSupported = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -162,9 +173,9 @@ slot5 = function()
 
 end
 
-slot4.supportsAchievements = slot5
+slot7.supportsAchievements = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -224,9 +235,9 @@ slot5 = function()
 
 end
 
-slot4.isRuntimeReady = slot5
+slot7.isRuntimeReady = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -234,33 +245,170 @@ slot5 = function()
 	slot0 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
-	slot0 = slot0.GetSignedInUserId
+	slot0 = slot0.IsIdentitySkipped
 	--- END OF BLOCK #1 ---
 
-	slot0 = if not slot0 then
+	slot0 = if slot0 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.IsIdentitySkipped
+	slot0 = slot0()
+	--- END OF BLOCK #2 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 4 ---
+	return slot0
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot7.isNativeSignInSkipped = slot8
+
+slot8 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = PlatformAchievementService
+	slot0 = slot0.isNativeSignInSkipped
+	slot0 = slot0()
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.platform
+	slot0 = slot0.getSdkFpId
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 12-23, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.platform
+	slot2 = slot0
+	slot0 = slot0.getSdkFpId
+	slot0 = slot0(slot2)
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 24-26, warpins: 1 ---
+	slot1 = tostring
+	slot3 = slot0
+
+	return slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 27-33, warpins: 3 ---
+	slot0 = logger
+	slot2 = slot0
+	slot0 = slot0.warn
+	slot3 = "isNativeSignInSkipped but getSdkFpId is nil"
+
+	slot0(slot2, slot3)
+
 	slot0 = ""
 
 	return slot0
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 10-18, warpins: 2 ---
+	--- BLOCK #5 34-36, warpins: 2 ---
+	slot0 = PlatformBridgeLuaFacade
+	--- END OF BLOCK #5 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 37-40, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.GetSignedInUserId
+	--- END OF BLOCK #6 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 41-42, warpins: 2 ---
+	slot0 = ""
+
+	return slot0
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 43-51, warpins: 2 ---
 	slot0 = PlatformBridgeLuaFacade
 	slot0 = slot0.GetSignedInUserId
 	slot0 = slot0()
@@ -268,39 +416,215 @@ slot5 = function()
 	slot1 = slot1.isNilOrEmpty
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #8 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #4 19-20, warpins: 1 ---
+	--- BLOCK #9 52-53, warpins: 1 ---
 	slot1 = ""
 
 	return slot1
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #5 21-23, warpins: 2 ---
+	--- BLOCK #10 54-56, warpins: 2 ---
 	slot1 = tostring
 	slot3 = slot0
 
 	return slot1(slot3)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot4.getSignedInUserId = slot5
+slot7.getSignedInUserId = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.QueryAchievement
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot1 = logger
+	slot3 = slot1
+	slot1 = slot1.warn
+	slot4 = "FPX achievement/get bridge is unavailable"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #3 14-20, warpins: 1 ---
+	slot1 = {}
+	slot2 = ipairs
+	slot4 = PlatformAchievementRuleConfig
+	slot4 = slot4.getRules
+	MULTRES = slot4()
+	slot2, slot3, slot4 = slot2(MULTRES)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 21-30, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.getPlatformAchievementId
+	slot10 = slot6.achievementId
+	slot7 = slot7(slot9, slot10)
+	slot8 = string
+	slot8 = slot8.isNilOrEmpty
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #4 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 31-37, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.insert
+	slot10 = slot1
+	slot11 = tostring
+	slot13 = slot7
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-39, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 40-55, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "FPX achievement/get 开始批量查询 steamIdCount=%s"
+	slot6 = tostring
+	slot8 = #slot1
+	MULTRES = slot6(slot8)
+
+	slot2(slot4, slot5, MULTRES)
+
+	slot2 = PlatformBridgeLuaFacade
+	slot2 = slot2.QueryAchievement
+	slot4 = slot1
+	slot5 = PlatformAchievementService
+	slot5 = slot5.STEAM_QUERY_TIMEOUT_MS
+
+	slot6 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-8, warpins: 1 ---
+		slot3 = logger
+		slot5 = slot3
+		slot3 = slot3.info
+		slot6 = "FPX achievement/get 批量查询完成"
+
+		slot3(slot5, slot6)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 9-19, warpins: 1 ---
+		slot3 = logger
+		slot5 = slot3
+		slot3 = slot3.warn
+		slot6 = "FPX achievement/get 批量查询失败 result=%s message=%s"
+		slot7 = tostring
+		slot9 = slot1
+		slot7 = slot7(slot9)
+		slot8 = tostring
+		slot10 = slot2
+		MULTRES = slot8(slot10)
+
+		slot3(slot5, slot6, slot7, MULTRES)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 20-20, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 56-56, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot7.queryConfiguredSteamAchievements = slot8
+
+slot8 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = PlatformAchievementService
 	slot1 = slot1.state
@@ -350,9 +674,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.resetCachedAchievementState = slot5
+slot7.resetCachedAchievementState = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = PlatformAchievementService
 	slot0 = slot0.getSignedInUserId
@@ -423,9 +747,9 @@ slot5 = function()
 
 end
 
-slot4.bindSignedInUser = slot5
+slot7.bindSignedInUser = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -538,9 +862,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.iterateCsCollection = slot5
+slot7.iterateCsCollection = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -896,9 +1220,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.buildAchievementList = slot5
+slot7.buildAchievementList = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1034,9 +1358,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.buildEventPayload = slot5
+slot7.buildEventPayload = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = tostring
 	--- END OF BLOCK #0 ---
@@ -1079,9 +1403,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.sanitizeLogValue = slot5
+slot7.sanitizeLogValue = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformAchievementService
 	slot1 = slot1.state
@@ -1185,7 +1509,7 @@ slot5 = function(slot0)
 
 
 	--- BLOCK #9 33-33, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -1535,9 +1859,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.logReadyAchievementSnapshot = slot5
+slot7.logReadyAchievementSnapshot = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PlatformAchievementService
 	slot2 = slot2.state
@@ -1627,9 +1951,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.notifyListeners = slot5
+slot7.notifyListeners = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformAchievementService
 	slot0 = slot0.state
@@ -1673,9 +1997,9 @@ slot5 = function()
 
 end
 
-slot4.stopPolling = slot5
+slot7.stopPolling = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformAchievementService
 	slot0 = slot0.state
@@ -1748,9 +2072,9 @@ slot5 = function()
 
 end
 
-slot4.startPolling = slot5
+slot7.startPolling = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformAchievementService
 	slot1 = slot1.isPlatformSupported
@@ -1782,9 +2106,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isSupported = slot5
+slot7.isSupported = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isSupported
@@ -1906,9 +2230,9 @@ slot5 = function(slot0)
 
 end
 
-slot4._ensureReady = slot5
+slot7._ensureReady = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._ensureReady
@@ -2279,9 +2603,9 @@ slot5 = function(slot0)
 
 end
 
-slot4._pumpAchievementEvents = slot5
+slot7._pumpAchievementEvents = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformAchievementService
 	slot2 = slot2.state
@@ -2424,7 +2748,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 45-73, warpins: 2 ---
+	--- BLOCK #12 45-67, warpins: 2 ---
 	slot2 = PlatformBridgeLuaFacade
 	slot2 = slot2.EnsureAchievementsManagerReady
 
@@ -2446,6 +2770,33 @@ slot5 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.platform
+	slot4 = slot2
+	slot2 = slot2.useFPXAchievement
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 68-70, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.queryConfiguredSteamAchievements
+
+	slot2(slot4)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 71-84, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0._pumpAchievementEvents
 
@@ -2467,15 +2818,15 @@ slot5 = function(slot0, slot1)
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot4.init = slot5
+slot7.init = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformAchievementService
 	slot1 = slot1.state
@@ -2534,9 +2885,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.shutdown = slot5
+slot7.shutdown = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._ensureReady
@@ -2655,9 +3006,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.refreshAchievements = slot5
+slot7.refreshAchievements = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlatformAchievementService
 	slot1 = slot1.state
@@ -2670,9 +3021,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getAchievements = slot5
+slot7.getAchievements = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlatformAchievementService
 	slot1 = slot1.state
@@ -2685,9 +3036,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getOwnerUserId = slot5
+slot7.getOwnerUserId = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -2728,9 +3079,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.getAchievementById = slot5
+slot7.getAchievementById = slot8
 
-slot5 = function(slot0, slot1, slot2, slot3, slot4)
+slot8 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.isSupported
@@ -2982,7 +3333,7 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4)
 		slot3 = logger
 		slot5 = slot3
 		slot3 = slot3.info
-		slot6 = "平台标题托管成就上报成功 achievementId=%s currentValue=%s targetValue=%s result=%s"
+		slot6 = "平台标题托管成就上报成功 platformAchievementId=%s currentValue=%s targetValue=%s result=%s"
 		slot7 = tostring
 		slot9 = achievementId
 		slot7 = slot7(slot9)
@@ -3007,7 +3358,7 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4)
 		slot3 = logger
 		slot5 = slot3
 		slot3 = slot3.warn
-		slot6 = "平台标题托管成就上报失败 achievementId=%s currentValue=%s targetValue=%s result=%s message=%s"
+		slot6 = "平台标题托管成就上报失败 platformAchievementId=%s currentValue=%s targetValue=%s result=%s message=%s"
 		slot7 = tostring
 		slot9 = achievementId
 		slot7 = slot7(slot9)
@@ -3104,9 +3455,103 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot4.updateAchievement = slot5
+slot7.updateAchievement = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.platform
+	slot4 = slot2
+	slot2 = slot2.isSteam
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot2 = PlatformAchievementRuleConfig
+	slot2 = slot2.getRuleSteamId
+	slot4 = slot1
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 14-21, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.platform
+	slot4 = slot2
+	slot2 = slot2.isEpic
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-26, warpins: 1 ---
+	slot2 = PlatformAchievementRuleConfig
+	slot2 = slot2.getRuleEpicId
+	slot4 = slot1
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 27-34, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.platform
+	slot4 = slot2
+	slot2 = slot2.isGoogle
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 35-38, warpins: 1 ---
+	slot2 = PlatformAchievementRuleConfig
+	slot2 = slot2.getRuleGoogleId
+	slot4 = slot1
+
+	return slot2(slot4)
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 39-39, warpins: 4 ---
+	return slot1
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.getPlatformAchievementId = slot8
+
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformAchievementService
 	slot3 = slot3.state
@@ -3159,9 +3604,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.subscribe = slot5
+slot7.subscribe = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformAchievementService
 	slot3 = slot3.state
@@ -3243,9 +3688,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.unsubscribe = slot5
+slot7.unsubscribe = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.subscribe
@@ -3260,9 +3705,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.onInitialStateSynced = slot5
+slot7.onInitialStateSynced = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.subscribe
@@ -3277,9 +3722,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.onAchievementsUpdated = slot5
+slot7.onAchievementsUpdated = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.subscribe
@@ -3294,9 +3739,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.onAchievementProgressUpdated = slot5
+slot7.onAchievementProgressUpdated = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.subscribe
@@ -3311,9 +3756,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.onAchievementUnlocked = slot5
+slot7.onAchievementUnlocked = slot8
 
-return slot4
+return slot7
 --- END OF BLOCK #0 ---
 
 

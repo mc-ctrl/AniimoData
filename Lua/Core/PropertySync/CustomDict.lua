@@ -1,4 +1,4 @@
---- BLOCK #0 1-119, warpins: 1 ---
+--- BLOCK #0 1-122, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -39,11 +39,12 @@ slot17 = slot17.format
 slot18 = getRawSetter
 slot19 = true
 slot7.__CUSTOM_DICT__ = slot19
+slot19 = raw_next
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = nil
-	slot3 = next
+	slot3 = raw_next
 	slot5 = slot0
 	slot6 = slot1
 	slot3, slot4 = slot3(slot5, slot6)
@@ -98,9 +99,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot20 = {}
+slot21 = {}
 
-slot21 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0._properties
 	slot2 = slot2[slot1]
@@ -140,9 +141,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot20.__index = slot21
+slot21.__index = slot22
 
-slot21 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0._id
 	slot4 = PropertyTypes
@@ -944,9 +945,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot20.__newindex = slot21
+slot21.__newindex = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairsIterator
 	slot2 = slot0._properties
@@ -959,9 +960,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.__pairs = slot21
+slot21.__pairs = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = error
 	slot3 = string_format
@@ -979,9 +980,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.__ipairs = slot21
+slot21.__ipairs = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0._propertiesCnt
 
@@ -992,10 +993,10 @@ slot21 = function(slot0)
 
 end
 
-slot20.__len = slot21
-slot21 = {}
+slot21.__len = slot22
+slot22 = {}
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.__ClassType
 	slot3 = slot2[slot1]
@@ -1033,9 +1034,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot21.__index = slot22
+slot22.__index = slot23
 
-slot22 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0._id
 	slot4 = PropertyTypes
@@ -1102,9 +1103,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot21.__newindex = slot22
+slot22.__newindex = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._lazyload
@@ -1122,9 +1123,9 @@ slot22 = function(slot0)
 
 end
 
-slot21.__pairs = slot22
+slot22.__pairs = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = error
 	slot3 = string_format
@@ -1142,9 +1143,9 @@ slot22 = function(slot0)
 
 end
 
-slot21.__ipairs = slot22
+slot22.__ipairs = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._lazyload
@@ -1160,9 +1161,9 @@ slot22 = function(slot0)
 
 end
 
-slot21.__len = slot22
+slot22.__len = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = CustomDict
 	slot2 = slot2.super
@@ -1200,9 +1201,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot7.ctor = slot22
+slot7.ctor = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0._id
 	slot3 = PropertyTypes
@@ -1708,9 +1709,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot7.init = slot22
+slot7.init = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -1959,35 +1960,26 @@ slot22 = function(slot0)
 
 end
 
-slot7._lazyload = slot22
+slot7._lazyload = slot23
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = CustomDict
+	slot1 = slot1.super
+	slot1 = slot1.getPersistentValue
 	slot3 = slot0
-	slot1 = slot0._getPersist
-	slot1 = slot1(slot3)
-	slot2 = PropertyTypes
-	slot2 = slot2.PS_PER
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
-	slot1 = nil
+end
 
-	return slot1
+slot7.getPersistentValue = slot23
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-17, warpins: 2 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.__ClassType
 	slot3 = slot2.__Name2PropertyDeclare__
@@ -1995,196 +1987,196 @@ slot22 = function(slot0)
 	slot5 = pairs
 	slot7 = slot0._properties
 	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #3 18-19, warpins: 1 ---
-	--- END OF BLOCK #3 ---
+	--- BLOCK #1 9-10, warpins: 1 ---
+	--- END OF BLOCK #1 ---
 
 	if slot8 ~= "_" then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #4 20-22, warpins: 1 ---
+	--- BLOCK #2 11-13, warpins: 1 ---
 	slot10 = slot3[slot8]
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 	if slot10 ~= nil then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #5 23-28, warpins: 1 ---
-	slot11 = assert
-	slot13 = type
-	slot15 = slot8
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #5 ---
-
-	if slot13 ~= "string" then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 29-30, warpins: 1 ---
-	slot13 = false
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 31-31, warpins: 1 ---
-	slot13 = true
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 32-35, warpins: 2 ---
-	slot11(slot13)
-
-	slot11 = slot10.customClass
-	--- END OF BLOCK #8 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 36-40, warpins: 1 ---
+	--- BLOCK #3 14-19, warpins: 1 ---
+	slot11 = assert
+	slot13 = type
+	slot15 = slot8
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #3 ---
+
+	if slot13 ~= "string" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-21, warpins: 1 ---
+	slot13 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 22-22, warpins: 1 ---
+	slot13 = true
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-26, warpins: 2 ---
+	slot11(slot13)
+
+	slot11 = slot10.customClass
+	--- END OF BLOCK #6 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 27-31, warpins: 1 ---
 	slot13 = slot9
 	slot11 = slot9.getPersistentValue
 	slot11 = slot11(slot13)
 	slot1[slot8] = slot11
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #10 41-45, warpins: 1 ---
+	--- BLOCK #8 32-36, warpins: 1 ---
 	slot11 = slot10.persist
 	slot12 = PropertyTypes
 	slot12 = slot12.PS_PER
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #8 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #11 46-47, warpins: 1 ---
+	--- BLOCK #9 37-38, warpins: 1 ---
 	slot1[slot8] = slot9
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #12 48-50, warpins: 1 ---
+	--- BLOCK #10 39-41, warpins: 1 ---
 	slot11 = assert
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #10 ---
 
 	if slot4 == nil then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #13 51-52, warpins: 1 ---
+	--- BLOCK #11 42-43, warpins: 1 ---
 	slot13 = false
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #14 53-53, warpins: 1 ---
+	--- BLOCK #12 44-44, warpins: 1 ---
 	slot13 = true
 
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 45-48, warpins: 2 ---
+	slot11(slot13)
+
+	slot11 = slot4.intTypeKey
+	--- END OF BLOCK #13 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 49-52, warpins: 1 ---
+	slot11 = tostring
+	slot13 = slot8
+	slot11 = slot11(slot13)
+	slot8 = slot11
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 54-57, warpins: 2 ---
-	slot11(slot13)
-
-	slot11 = slot4.intTypeKey
+	--- BLOCK #15 53-58, warpins: 2 ---
+	slot11 = assert
+	slot13 = type
+	slot15 = slot8
+	slot13 = slot13(slot15)
 	--- END OF BLOCK #15 ---
 
-	slot11 = if slot11 then
+	if slot13 ~= "string" then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 58-61, warpins: 1 ---
-	slot11 = tostring
-	slot13 = slot8
-	slot11 = slot11(slot13)
-	slot8 = slot11
+	--- BLOCK #16 59-60, warpins: 1 ---
+	slot13 = false
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #17 62-67, warpins: 2 ---
-	slot11 = assert
-	slot13 = type
-	slot15 = slot8
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #17 ---
-
-	if slot13 ~= "string" then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 68-69, warpins: 1 ---
-	slot13 = false
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #19 70-70, warpins: 1 ---
+	--- BLOCK #17 61-61, warpins: 1 ---
 	slot13 = true
 
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #20 71-74, warpins: 2 ---
+	--- BLOCK #18 62-65, warpins: 2 ---
 	slot11(slot13)
 
 	slot11 = slot1[slot8]
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #18 ---
 
 	if slot11 ~= nil then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #21 75-80, warpins: 1 ---
+	--- BLOCK #19 66-71, warpins: 1 ---
 	slot11 = error
 	slot13 = "%s persistent property %s repeated!"
 	slot14 = slot0.__ClassType
@@ -2193,96 +2185,96 @@ slot22 = function(slot0)
 
 	slot11(slot13, slot14, slot15)
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #22 81-83, warpins: 2 ---
+	--- BLOCK #20 72-74, warpins: 2 ---
 	slot11 = slot4.customClass
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #20 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #23 84-88, warpins: 1 ---
+	--- BLOCK #21 75-79, warpins: 1 ---
 	slot13 = slot9
 	slot11 = slot9.getPersistentValue
 	slot11 = slot11(slot13)
 	slot1[slot8] = slot11
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #22 80-81, warpins: 1 ---
+	slot1[slot8] = slot9
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #23 82-82, warpins: 1 ---
+	slot1[slot8] = slot9
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 89-90, warpins: 1 ---
-	slot1[slot8] = slot9
+	--- BLOCK #24 83-84, warpins: 7 ---
 	--- END OF BLOCK #24 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #25 91-91, warpins: 1 ---
-	slot1[slot8] = slot9
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 92-93, warpins: 7 ---
-	--- END OF BLOCK #26 ---
-
 	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #27
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #25
 
 
-	--- BLOCK #27 94-99, warpins: 1 ---
+	--- BLOCK #25 85-90, warpins: 1 ---
 	slot5 = assert
 	slot7 = next
 	slot9 = slot1
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #25 ---
 
 	if slot7 == nil then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #28 100-101, warpins: 1 ---
+	--- BLOCK #26 91-92, warpins: 1 ---
 	slot7 = false
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #26 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #29 102-102, warpins: 1 ---
+	--- BLOCK #27 93-93, warpins: 1 ---
 	slot7 = true
 
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #27 ---
 
-	FLOW; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #30 103-104, warpins: 2 ---
+	--- BLOCK #28 94-95, warpins: 2 ---
 	slot5(slot7)
 
 	return slot1
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot7.getPersistentValue = slot22
+slot7._getPersistentValue = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getAoiscope
@@ -2479,9 +2471,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.getOwnClientValue = slot22
+slot7.getOwnClientValue = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getAoiscope
@@ -2678,9 +2670,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.getAllClientsValue = slot22
+slot7.getAllClientsValue = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._getAoiscope
@@ -2918,9 +2910,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot7.getOwnAndAllClientsValue = slot22
+slot7.getOwnAndAllClientsValue = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -3050,9 +3042,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.getOwnClientPropertyIds = slot22
+slot7.getOwnClientPropertyIds = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0._id
 	slot2 = PropertyTypes
@@ -3182,9 +3174,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.getAllClientsPropertyIds = slot22
+slot7.getAllClientsPropertyIds = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getPersist
@@ -3357,9 +3349,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.getJournalPropertyIds = slot22
+slot7.getJournalPropertyIds = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = assert
 	slot3 = slot0._id
@@ -3617,9 +3609,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.getJournalValue = slot22
+slot7.getJournalValue = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -3630,9 +3622,9 @@ slot22 = function(slot0)
 
 end
 
-slot7.isCustomDict = slot22
+slot7.isCustomDict = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = "customDict"
 
@@ -3643,12 +3635,12 @@ slot22 = function(slot0)
 
 end
 
-slot7.customTypeName = slot22
-slot22 = {}
-slot23 = slot20.__index
-slot22.__index = slot23
+slot7.customTypeName = slot23
+slot23 = {}
+slot24 = slot21.__index
+slot23.__index = slot24
 
-slot23 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0._properties
 	slot3 = slot3[slot1]
@@ -3721,13 +3713,13 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.__newindex = slot23
-slot23 = slot20.__pairs
-slot22.__pairs = slot23
-slot23 = slot20.__ipairs
-slot22.__ipairs = slot23
+slot23.__newindex = slot24
+slot24 = slot21.__pairs
+slot23.__pairs = slot24
+slot24 = slot21.__ipairs
+slot23.__ipairs = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._propertiesCnt
 	--- END OF BLOCK #0 ---
@@ -3755,10 +3747,10 @@ slot23 = function(slot0)
 
 end
 
-slot22.__len = slot23
-slot23 = {}
+slot23.__len = slot24
+slot24 = {}
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.__ClassType
 	slot3 = slot2[slot1]
@@ -3796,9 +3788,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot23.__index = slot24
+slot24.__index = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0._rolazyload
@@ -3876,9 +3868,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot23.__newindex = slot24
+slot24.__newindex = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._rolazyload
@@ -3896,9 +3888,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.__pairs = slot24
+slot24.__pairs = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = error
 	slot3 = string_format
@@ -3916,9 +3908,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.__ipairs = slot24
+slot24.__ipairs = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._rolazyload
@@ -3951,9 +3943,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.__len = slot24
+slot24.__len = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot7 = slot0._id
 	slot8 = PropertyTypes
@@ -4726,9 +4718,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot7.roinit = slot24
+slot7.roinit = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = Switch
 	slot1 = slot1.LazyLoadDebug
@@ -4878,9 +4870,9 @@ slot24 = function(slot0)
 
 end
 
-slot7._rolazyload = slot24
+slot7._rolazyload = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0._id
 	slot3 = PropertyTypes
@@ -5386,7 +5378,7 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot7.rochange = slot24
+slot7.rochange = slot25
 
 return slot7
 --- END OF BLOCK #0 ---

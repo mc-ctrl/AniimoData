@@ -377,7 +377,7 @@ slot9 = function(slot0, slot1, slot2)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
@@ -389,23 +389,47 @@ slot9 = function(slot0, slot1, slot2)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 19-25, warpins: 1 ---
+	--- BLOCK #2 19-23, warpins: 1 ---
 	slot4 = DropData
 	slot4 = slot4[slot2]
 	slot4 = slot4.displayReward
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 24-27, warpins: 1 ---
 	slot5 = ipairs
 	slot7 = slot4
 	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 26-34, warpins: 1 ---
+	--- BLOCK #4 28-33, warpins: 1 ---
+	slot10 = slot0.model
+	slot10 = slot10.isCurrencyUnlocked
+	slot12 = slot9[1]
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #4 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 34-42, warpins: 1 ---
 	slot10 = slot9[1]
 	slot11 = {
 		count = 0
@@ -418,22 +442,22 @@ slot9 = function(slot0, slot1, slot2)
 	slot11.factorShiny = slot12
 	slot3[slot10] = slot11
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 35-36, warpins: 2 ---
-	--- END OF BLOCK #4 ---
+	--- BLOCK #6 43-44, warpins: 3 ---
+	--- END OF BLOCK #6 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #5 37-37, warpins: 3 ---
+	--- BLOCK #7 45-45, warpins: 4 ---
 	return slot3
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -893,10 +917,13 @@ slot9 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-40, warpins: 1 ---
-	slot6 = slot0.id_str
-	slot7 = slot4
-	slot6 = slot6 .. slot7
+	--- BLOCK #1 5-43, warpins: 1 ---
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = slot0.id_str
+	slot9 = slot4
+	slot8 = slot8 .. slot9
+	slot6 = slot6(slot8)
 	slot7 = DoTweenAnimMgr
 	slot7 = slot7.Kill
 	slot9 = slot0.uWidget
@@ -970,7 +997,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 41-42, warpins: 2 ---
+	--- BLOCK #2 44-45, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -978,7 +1005,7 @@ slot9 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 43-43, warpins: 1 ---
+	--- BLOCK #3 46-46, warpins: 1 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -998,10 +1025,13 @@ slot9 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-14, warpins: 1 ---
-	slot6 = slot0.id_str
-	slot7 = slot4
-	slot6 = slot6 .. slot7
+	--- BLOCK #1 5-17, warpins: 1 ---
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = slot0.id_str
+	slot9 = slot4
+	slot8 = slot8 .. slot9
+	slot6 = slot6(slot8)
 	slot7 = DoTweenAnimMgr
 	slot7 = slot7.Kill
 	slot9 = slot0.uWidget
@@ -1016,7 +1046,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-16, warpins: 2 ---
+	--- BLOCK #2 18-19, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1024,7 +1054,7 @@ slot9 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 17-17, warpins: 1 ---
+	--- BLOCK #3 20-20, warpins: 1 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1671,10 +1701,13 @@ slot9 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 38-54, warpins: 1 ---
-	slot7 = slot0.id_str
-	slot8 = slot5
-	slot7 = slot7 .. slot8
+	--- BLOCK #3 38-57, warpins: 1 ---
+	slot7 = LuaUIUtils
+	slot7 = slot7.TweenId
+	slot9 = slot0.id_str
+	slot10 = slot5
+	slot9 = slot9 .. slot10
+	slot7 = slot7(slot9)
 	slot8 = DoTweenAnimMgr
 	slot8 = slot8.Kill
 	slot10 = slot0.uWidget
@@ -1698,7 +1731,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 55-75, warpins: 1 ---
+	--- BLOCK #4 58-78, warpins: 1 ---
 	slot9 = DoTweenAnimMgr
 	slot9 = slot9.DoFloat
 	slot11 = slot0.uWidget
@@ -1759,13 +1792,13 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 76-76, warpins: 2 ---
+	--- BLOCK #5 79-79, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 77-78, warpins: 2 ---
+	--- BLOCK #6 80-81, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -1773,7 +1806,7 @@ slot9 = function(slot0, slot1)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 79-80, warpins: 1 ---
+	--- BLOCK #7 82-83, warpins: 1 ---
 	return
 	--- END OF BLOCK #7 ---
 

@@ -1,7 +1,7 @@
 --- BLOCK #0 1-58, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_Flash",
-	CDAfterEnd = 5
+	CDAfterEnd = 5,
+	behavID = "BP_Wild_GroupBehav_Flash"
 }
 slot1 = {}
 slot2 = {

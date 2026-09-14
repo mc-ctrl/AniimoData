@@ -39,7 +39,7 @@ slot9 = function(slot0)
 	slot1 = slot1(slot3)
 	slot0.navigation = slot1
 	slot1 = slot0.navigation
-	slot2 = 2
+	slot2 = 0.55
 	slot1.longPressDelay = slot2
 	slot3 = slot0
 	slot1 = slot0.initAreas
@@ -134,8 +134,8 @@ slot9 = function(slot0)
 	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		PET_EVOLVE_ITEM_DETAIL_AREA = 2,
-		PET_EVOLVE_CONDITION_AREA = 1
+		PET_EVOLVE_CONDITION_AREA = 1,
+		PET_EVOLVE_ITEM_DETAIL_AREA = 2
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

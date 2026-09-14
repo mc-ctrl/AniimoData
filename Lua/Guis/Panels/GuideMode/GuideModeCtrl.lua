@@ -30,11 +30,11 @@ slot8 = slot8(slot10)
 slot9 = {}
 slot7.messages = slot9
 slot9 = {
+	BackAndNext = 3,
+	Back = 2,
 	Confirm = 1,
 	Next = 0,
-	BackAndConfirm = 4,
-	BackAndNext = 3,
-	Back = 2
+	BackAndConfirm = 4
 }
 
 slot10 = function(slot0, slot1)

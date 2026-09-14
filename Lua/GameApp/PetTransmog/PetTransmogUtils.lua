@@ -1,4 +1,4 @@
---- BLOCK #0 1-163, warpins: 1 ---
+--- BLOCK #0 1-192, warpins: 1 ---
 slot0 = require
 slot2 = "Data.pet_transmog_solt_data"
 slot0 = slot0(slot2)
@@ -48,10 +48,18 @@ slot14 = slot6.Hat
 slot13[4] = slot14
 slot14 = "E_P_Parmon_Suit_{0}_{1}_{2}"
 slot15 = {
-	SAVE_TEMP = 1,
-	APPLY_CURR = 2
+	APPLY_CURR = 2,
+	SAVE_TEMP = 1
 }
 slot10.REPLACE_MODE = slot15
+slot15 = {
+	"PETTRANSMOGRIFY_TIPS_PART_1",
+	"PETTRANSMOGRIFY_TIPS_PART_2",
+	"PETTRANSMOGRIFY_TIPS_PART_3",
+	"PETTRANSMOGRIFY_TIPS_PART_4",
+	"PETTRANSMOGRIFY_TIPS_PART_5"
+}
+slot10.Tips = slot15
 
 slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -214,6 +222,21 @@ slot15 = function()
 end
 
 slot10.getMaxLockNum = slot15
+
+slot15 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = PetTransmogUtils
+	slot0 = slot0.getBaseNumber
+	slot2 = "transmog_single_exp"
+
+	return slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot10.getTransmogSingleExp = slot15
 
 slot15 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -1401,11 +1424,10 @@ slot16 = function(slot0)
 end
 
 slot10.getSlotConfig = slot16
+slot16 = {}
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = {}
-
+slot17 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot0 = if not slot0 then
@@ -1415,7 +1437,9 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = {}
+
 	return slot1
 
 	--- END OF BLOCK #1 ---
@@ -1423,81 +1447,105 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 2 ---
-	slot2 = pairs
-	slot4 = PetTransmogSoltData
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot1 = tostring
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _suitZeroSlotIdsCache
+	slot2 = slot2[slot1]
+
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 9-11, warpins: 1 ---
-	slot7 = slot6.suitId
+	--- BLOCK #3 12-12, warpins: 1 ---
+	return slot2
+
 	--- END OF BLOCK #3 ---
 
-	if slot7 == 0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-14, warpins: 1 ---
-	slot7 = slot6.type
+	--- BLOCK #4 13-17, warpins: 2 ---
+	slot3 = {}
+	slot4 = pairs
+	slot6 = PetTransmogSoltData
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #4 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #5 15-22, warpins: 1 ---
-	slot7 = tostring
-	slot9 = slot6.petId
-	slot7 = slot7(slot9)
-	slot8 = tostring
-	slot10 = slot0
-	slot8 = slot8(slot10)
+	--- BLOCK #5 18-20, warpins: 1 ---
+	slot9 = slot8.suitId
 	--- END OF BLOCK #5 ---
 
-	if slot7 == slot8 then
+	if slot9 == 0 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 23-24, warpins: 1 ---
-	slot7 = slot6.type
-	slot1[slot7] = slot5
-
+	--- BLOCK #6 21-23, warpins: 1 ---
+	slot9 = slot8.type
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot9 = if slot9 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #7 25-26, warpins: 5 ---
+	--- BLOCK #7 24-28, warpins: 1 ---
+	slot9 = tostring
+	slot11 = slot8.petId
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #7 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #8
+	if slot9 == slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 27-27, warpins: 1 ---
-	return slot1
+	--- BLOCK #8 29-30, warpins: 1 ---
+	slot9 = slot8.type
+	slot3[slot9] = slot7
 	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 31-32, warpins: 5 ---
+	--- END OF BLOCK #9 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 33-35, warpins: 1 ---
+	slot4 = _suitZeroSlotIdsCache
+	slot4[slot1] = slot3
+
+	return slot3
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot10.getSuitZeroSlotIds = slot16
+slot10.getSuitZeroSlotIds = slot17
 
-slot16 = function()
+slot17 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = PetTransmogUtils
 	slot0 = slot0.getBaseRaw
@@ -1528,9 +1576,9 @@ slot16 = function()
 
 end
 
-slot10.getModelSplicePathConfig = slot16
+slot10.getModelSplicePathConfig = slot17
 
-slot16 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = PetTransmogUtils
 	slot3 = slot3.getModelSplicePathConfig
@@ -1667,9 +1715,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot10.formatCompositeModelPath = slot16
+slot10.formatCompositeModelPath = slot17
 
-slot16 = function(slot0, slot1, slot2, slot3)
+slot17 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = tostring
 	slot6 = PetTransmogUtils
@@ -1851,9 +1899,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot10.formatTransmogEffectPath = slot16
+slot10.formatTransmogEffectPath = slot17
 
-slot16 = function(slot0, slot1, slot2, slot3)
+slot17 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2073,9 +2121,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot10.buildPartTransmogEffects = slot16
+slot10.buildPartTransmogEffects = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = {}
 	--- END OF BLOCK #0 ---
@@ -2217,9 +2265,9 @@ slot16 = function(slot0, slot1)
 	slot6 = #slot2
 	slot6 = slot6 + 1
 	slot7 = {
-		isBaseModel = true,
+		holeIndex = 0,
 		slotId = 0,
-		holeIndex = 0
+		isBaseModel = true
 	}
 	slot7.path = slot5
 	slot2[slot6] = slot7
@@ -2234,52 +2282,55 @@ slot16 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #15 46-49, warpins: 1 ---
-	slot4 = pairs
-	slot6 = slot3
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #15 46-52, warpins: 1 ---
+	slot4 = tostring
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = pairs
+	slot7 = slot3
+	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #16 50-55, warpins: 1 ---
-	slot9 = PetTransmogUtils
-	slot9 = slot9.getSlotConfig
-	slot11 = slot8
-	slot9 = slot9(slot11)
+	--- BLOCK #16 53-58, warpins: 1 ---
+	slot10 = PetTransmogUtils
+	slot10 = slot10.getSlotConfig
+	slot12 = slot9
+	slot10 = slot10(slot12)
 	--- END OF BLOCK #16 ---
 
-	slot9 = if slot9 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #17 56-58, warpins: 1 ---
-	slot10 = slot9.resources
+	--- BLOCK #17 59-61, warpins: 1 ---
+	slot11 = slot10.resources
 	--- END OF BLOCK #17 ---
 
-	slot10 = if slot10 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #18 59-61, warpins: 1 ---
-	slot10 = slot9.resources
+	--- BLOCK #18 62-64, warpins: 1 ---
+	slot11 = slot10.resources
 	--- END OF BLOCK #18 ---
 
-	if slot10 ~= "" then
+	if slot11 ~= "" then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #19 62-63, warpins: 1 ---
+	--- BLOCK #19 65-66, warpins: 1 ---
 	--- END OF BLOCK #19 ---
 
 	slot0 = if slot0 then
@@ -2289,27 +2340,24 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 64-66, warpins: 1 ---
-	slot10 = slot9.petId
+	--- BLOCK #20 67-69, warpins: 1 ---
+	slot11 = slot10.petId
 	--- END OF BLOCK #20 ---
 
-	slot10 = if slot10 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 67-74, warpins: 1 ---
-	slot10 = tostring
-	slot12 = slot9.petId
-	slot10 = slot10(slot12)
+	--- BLOCK #21 70-74, warpins: 1 ---
 	slot11 = tostring
-	slot13 = slot0
+	slot13 = slot10.petId
 	slot11 = slot11(slot13)
 	--- END OF BLOCK #21 ---
 
-	if slot10 == slot11 then
+	if slot11 == slot4 then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #25
@@ -2317,17 +2365,17 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #22 75-84, warpins: 3 ---
-	slot10 = #slot2
-	slot10 = slot10 + 1
-	slot11 = {}
-	slot11.holeIndex = slot7
-	slot11.slotId = slot8
-	slot12 = slot9.resources
-	slot11.path = slot12
-	slot12 = slot9.attachHp
+	slot11 = #slot2
+	slot11 = slot11 + 1
+	slot12 = {}
+	slot12.holeIndex = slot8
+	slot12.slotId = slot9
+	slot13 = slot10.resources
+	slot12.path = slot13
+	slot13 = slot10.attachHp
 	--- END OF BLOCK #22 ---
 
-	slot12 = if not slot12 then
+	slot13 = if not slot13 then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #24
@@ -2335,15 +2383,15 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #23 85-85, warpins: 1 ---
-	slot12 = slot9.attach
+	slot13 = slot10.attach
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
 	--- BLOCK #24 86-87, warpins: 2 ---
-	slot11.attachHp = slot12
-	slot2[slot10] = slot11
+	slot12.attachHp = slot13
+	slot2[slot11] = slot12
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
@@ -2352,17 +2400,17 @@ slot16 = function(slot0, slot1)
 	--- BLOCK #25 88-89, warpins: 6 ---
 	--- END OF BLOCK #25 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
+	for slot8, slot9 in slot5, slot6, slot7
 	LOOP BLOCK #16
 	GO OUT TO BLOCK #26
 
 
 	--- BLOCK #26 90-96, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.sort
-	slot6 = slot2
+	slot5 = table
+	slot5 = slot5.sort
+	slot7 = slot2
 
-	slot7 = function(slot0, slot1)
+	slot8 = function(slot0, slot1)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot2 = slot0.holeIndex
 		--- END OF BLOCK #0 ---
@@ -2432,7 +2480,7 @@ slot16 = function(slot0, slot1)
 
 	end
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
 	return slot2
 	--- END OF BLOCK #26 ---
@@ -2448,9 +2496,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.getSchemeModelPaths = slot16
+slot10.getSchemeModelPaths = slot17
 
-slot16 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #0 ---
@@ -2520,8 +2568,11 @@ slot16 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 18-20, warpins: 2 ---
-	slot5 = {}
+	--- BLOCK #7 18-23, warpins: 2 ---
+	slot5 = tostring
+	slot7 = slot0
+	slot5 = slot5(slot7)
+	slot6 = {}
 	--- END OF BLOCK #7 ---
 
 	slot4 = if slot4 then
@@ -2531,72 +2582,69 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 21-24, warpins: 1 ---
-	slot6 = pairs
-	slot8 = slot4
-	slot6, slot7, slot8 = slot6(slot8)
+	--- BLOCK #8 24-27, warpins: 1 ---
+	slot7 = pairs
+	slot9 = slot4
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #9 25-30, warpins: 1 ---
-	slot11 = PetTransmogUtils
-	slot11 = slot11.getSlotConfig
-	slot13 = slot10
-	slot11 = slot11(slot13)
+	--- BLOCK #9 28-33, warpins: 1 ---
+	slot12 = PetTransmogUtils
+	slot12 = slot12.getSlotConfig
+	slot14 = slot11
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #9 ---
 
-	slot11 = if slot11 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #10 31-33, warpins: 1 ---
-	slot12 = slot11.resources
+	--- BLOCK #10 34-36, warpins: 1 ---
+	slot13 = slot12.resources
 	--- END OF BLOCK #10 ---
 
-	slot12 = if slot12 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #11 34-36, warpins: 1 ---
-	slot12 = slot11.resources
+	--- BLOCK #11 37-39, warpins: 1 ---
+	slot13 = slot12.resources
 	--- END OF BLOCK #11 ---
 
-	if slot12 ~= "" then
+	if slot13 ~= "" then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 37-39, warpins: 1 ---
-	slot12 = slot11.petId
+	--- BLOCK #12 40-42, warpins: 1 ---
+	slot13 = slot12.petId
 	--- END OF BLOCK #12 ---
 
-	slot12 = if slot12 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 40-47, warpins: 1 ---
-	slot12 = tostring
-	slot14 = slot11.petId
-	slot12 = slot12(slot14)
+	--- BLOCK #13 43-47, warpins: 1 ---
 	slot13 = tostring
-	slot15 = slot0
+	slot15 = slot12.petId
 	slot13 = slot13(slot15)
 	--- END OF BLOCK #13 ---
 
-	if slot12 == slot13 then
+	if slot13 == slot5 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
@@ -2604,15 +2652,15 @@ slot16 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #14 48-56, warpins: 2 ---
-	slot12 = slot11.type
-	slot13 = {}
-	slot13.holeIndex = slot9
-	slot13.slotId = slot10
-	slot14 = slot11.type
-	slot13.type = slot14
-	slot14 = slot11.resources
-	slot13.resources = slot14
-	slot5[slot12] = slot13
+	slot13 = slot12.type
+	slot14 = {}
+	slot14.holeIndex = slot10
+	slot14.slotId = slot11
+	slot15 = slot12.type
+	slot14.type = slot15
+	slot15 = slot12.resources
+	slot14.resources = slot15
+	slot6[slot13] = slot14
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
@@ -2621,29 +2669,29 @@ slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #15 57-58, warpins: 6 ---
 	--- END OF BLOCK #15 ---
 
-	for slot9, slot10 in slot6, slot7, slot8
+	for slot10, slot11 in slot7, slot8, slot9
 	LOOP BLOCK #9
 	GO OUT TO BLOCK #16
 
 
 	--- BLOCK #16 59-66, warpins: 2 ---
-	slot6 = PetTransmogUtils
-	slot6 = slot6.getSuitZeroSlotIds
-	slot8 = slot0
-	slot6 = slot6(slot8)
-	slot7 = ipairs
-	slot9 = TRANSMOG_COMPOSITE_PART_TYPES
-	slot7, slot8, slot9 = slot7(slot9)
+	slot7 = PetTransmogUtils
+	slot7 = slot7.getSuitZeroSlotIds
+	slot9 = slot0
+	slot7 = slot7(slot9)
+	slot8 = ipairs
+	slot10 = TRANSMOG_COMPOSITE_PART_TYPES
+	slot8, slot9, slot10 = slot8(slot10)
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
 	--- BLOCK #17 67-69, warpins: 1 ---
-	slot12 = slot5[slot11]
+	slot13 = slot6[slot12]
 	--- END OF BLOCK #17 ---
 
-	slot12 = if not slot12 then
+	slot13 = if not slot13 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #22
@@ -2651,13 +2699,13 @@ slot16 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #18 70-75, warpins: 1 ---
-	slot13 = PetTransmogUtils
-	slot13 = slot13.getSlotConfig
-	slot15 = slot6[slot11]
-	slot13 = slot13(slot15)
+	slot14 = PetTransmogUtils
+	slot14 = slot14.getSlotConfig
+	slot16 = slot7[slot12]
+	slot14 = slot14(slot16)
 	--- END OF BLOCK #18 ---
 
-	slot13 = if slot13 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #22
@@ -2665,10 +2713,10 @@ slot16 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #19 76-78, warpins: 1 ---
-	slot14 = slot13.resources
+	slot15 = slot14.resources
 	--- END OF BLOCK #19 ---
 
-	slot14 = if slot14 then
+	slot15 = if slot15 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #22
@@ -2676,10 +2724,10 @@ slot16 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #20 79-81, warpins: 1 ---
-	slot14 = slot13.resources
+	slot15 = slot14.resources
 	--- END OF BLOCK #20 ---
 
-	if slot14 ~= "" then
+	if slot15 ~= "" then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
@@ -2687,16 +2735,16 @@ slot16 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #21 82-89, warpins: 1 ---
-	slot14 = {
+	slot15 = {
 		isDefault = true
 	}
-	slot14.holeIndex = slot11
-	slot15 = slot6[slot11]
-	slot14.slotId = slot15
-	slot14.type = slot11
-	slot15 = slot13.resources
-	slot14.resources = slot15
-	slot12 = slot14
+	slot15.holeIndex = slot12
+	slot16 = slot7[slot12]
+	slot15.slotId = slot16
+	slot15.type = slot12
+	slot16 = slot14.resources
+	slot15.resources = slot16
+	slot13 = slot15
 	--- END OF BLOCK #21 ---
 
 	FLOW; TARGET BLOCK #22
@@ -2705,7 +2753,7 @@ slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #22 90-91, warpins: 5 ---
 	--- END OF BLOCK #22 ---
 
-	slot12 = if slot12 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #24
@@ -2713,9 +2761,9 @@ slot16 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #23 92-94, warpins: 1 ---
-	slot13 = #slot3
-	slot13 = slot13 + 1
-	slot3[slot13] = slot12
+	slot14 = #slot3
+	slot14 = slot14 + 1
+	slot3[slot14] = slot13
 
 	--- END OF BLOCK #23 ---
 
@@ -2725,7 +2773,7 @@ slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #24 95-96, warpins: 3 ---
 	--- END OF BLOCK #24 ---
 
-	for slot10, slot11 in slot7, slot8, slot9
+	for slot11, slot12 in slot8, slot9, slot10
 	LOOP BLOCK #17
 	GO OUT TO BLOCK #25
 
@@ -2738,9 +2786,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot10.getSchemeCompositePartList = slot16
+slot10.getSchemeCompositePartList = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2801,84 +2849,84 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 15-18, warpins: 1 ---
-	slot3 = pairs
-	slot5 = slot2
-	slot3, slot4, slot5 = slot3(slot5)
+	--- BLOCK #6 15-21, warpins: 1 ---
+	slot3 = tostring
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	slot4 = pairs
+	slot6 = slot2
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #7 19-24, warpins: 1 ---
-	slot8 = PetTransmogUtils
-	slot8 = slot8.getSlotConfig
-	slot10 = slot7
-	slot8 = slot8(slot10)
+	--- BLOCK #7 22-27, warpins: 1 ---
+	slot9 = PetTransmogUtils
+	slot9 = slot9.getSlotConfig
+	slot11 = slot8
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #7 ---
 
-	slot8 = if slot8 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #8 25-28, warpins: 1 ---
-	slot9 = slot8.type
-	slot10 = TRANSMOG_COLOR_TYPE
+	--- BLOCK #8 28-31, warpins: 1 ---
+	slot10 = slot9.type
+	slot11 = TRANSMOG_COLOR_TYPE
 	--- END OF BLOCK #8 ---
 
-	if slot9 == slot10 then
+	if slot10 == slot11 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #9 29-31, warpins: 1 ---
-	slot9 = slot8.resources
+	--- BLOCK #9 32-34, warpins: 1 ---
+	slot10 = slot9.resources
 	--- END OF BLOCK #9 ---
 
-	slot9 = if slot9 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 32-34, warpins: 1 ---
-	slot9 = slot8.resources
+	--- BLOCK #10 35-37, warpins: 1 ---
+	slot10 = slot9.resources
 	--- END OF BLOCK #10 ---
 
-	if slot9 ~= "" then
+	if slot10 ~= "" then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 35-37, warpins: 1 ---
-	slot9 = slot8.petId
+	--- BLOCK #11 38-40, warpins: 1 ---
+	slot10 = slot9.petId
 	--- END OF BLOCK #11 ---
 
-	slot9 = if slot9 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 38-45, warpins: 1 ---
-	slot9 = tostring
-	slot11 = slot8.petId
-	slot9 = slot9(slot11)
+	--- BLOCK #12 41-45, warpins: 1 ---
 	slot10 = tostring
-	slot12 = slot0
+	slot12 = slot9.petId
 	slot10 = slot10(slot12)
 	--- END OF BLOCK #12 ---
 
-	if slot9 == slot10 then
+	if slot10 == slot3 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
@@ -2886,9 +2934,9 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #13 46-47, warpins: 2 ---
-	slot9 = slot8.resources
+	slot10 = slot9.resources
 
-	return slot9
+	return slot10
 
 	--- END OF BLOCK #13 ---
 
@@ -2898,7 +2946,7 @@ slot16 = function(slot0, slot1)
 	--- BLOCK #14 48-49, warpins: 7 ---
 	--- END OF BLOCK #14 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
+	for slot7, slot8 in slot4, slot5, slot6
 	LOOP BLOCK #7
 	GO OUT TO BLOCK #15
 
@@ -2965,9 +3013,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.getSchemeCompositeColorResource = slot16
+slot10.getSchemeCompositeColorResource = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3114,192 +3162,216 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.isSchemeFlashEffectEnabled = slot16
+slot10.isSchemeFlashEffectEnabled = slot17
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = PetTransmogUtils
-	slot2 = slot2.isSchemeFlashEffectEnabled
-	slot4 = slot0
-	slot5 = slot1
-	slot2 = slot2(slot4, slot5)
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
-	slot2 = nil
-
-	return slot2
-
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot3 = PetTransmogUtils
+	slot3 = slot3.isSchemeFlashEffectEnabled
+	slot5 = slot0
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-11, warpins: 2 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot0 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-13, warpins: 1 ---
-	slot2 = PetTransmogSuitPerviewData
-	slot2 = slot2[slot0]
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-15, warpins: 2 ---
+	--- BLOCK #4 13-14, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot2 = if not slot2 then
+	slot3 = if slot0 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 16-17, warpins: 1 ---
-	slot3 = nil
-
-	return slot3
-
+	--- BLOCK #5 15-16, warpins: 1 ---
+	slot3 = PetTransmogSuitPerviewData
+	slot3 = slot3[slot0]
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-21, warpins: 2 ---
-	slot3 = pairs
-	slot5 = slot1.holeIds
-	slot3, slot4, slot5 = slot3(slot5)
+	--- BLOCK #6 17-18, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 22-27, warpins: 1 ---
-	slot8 = PetTransmogUtils
-	slot8 = slot8.getSlotConfig
-	slot10 = slot7
-	slot8 = slot8(slot10)
+	--- BLOCK #7 19-20, warpins: 1 ---
+	slot4 = nil
+
+	return slot4
+
 	--- END OF BLOCK #7 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 28-30, warpins: 1 ---
-	slot9 = slot8.suitId
+	--- BLOCK #8 21-24, warpins: 2 ---
+	slot4 = pairs
+	slot6 = slot1.holeIds
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #8 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #9 25-30, warpins: 1 ---
+	slot9 = PetTransmogUtils
+	slot9 = slot9.getSlotConfig
+	slot11 = slot8
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #9 ---
+
 	slot9 = if slot9 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #10 31-33, warpins: 1 ---
+	slot10 = slot9.suitId
+	--- END OF BLOCK #10 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #11 34-37, warpins: 1 ---
+	slot10 = slot9.suitId
+	slot10 = slot3[slot10]
+	--- END OF BLOCK #11 ---
+
+	slot11 = if slot10 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 38-38, warpins: 1 ---
+	slot11 = slot10.suitEff
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 39-44, warpins: 2 ---
+	slot12 = Utils
+	slot12 = slot12.isTable
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #13 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #9 31-34, warpins: 1 ---
-	slot9 = slot8.suitId
-	slot9 = slot2[slot9]
-	--- END OF BLOCK #9 ---
-
-	slot10 = if slot9 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 35-35, warpins: 1 ---
-	slot10 = slot9.suitEff
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 36-37, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #12 38-39, warpins: 1 ---
-	--- END OF BLOCK #12 ---
-
-	if slot10 ~= "" then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 40-41, warpins: 1 ---
-	--- END OF BLOCK #13 ---
-
-	slot11 = if not slot10 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 42-42, warpins: 3 ---
-	slot11 = nil
-
+	--- BLOCK #14 45-49, warpins: 1 ---
+	slot12 = next
+	slot14 = slot11
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	slot12 = if slot12 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #15 43-43, warpins: 2 ---
-	return slot11
-
+	--- BLOCK #15 50-51, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	slot12 = if not slot11 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 44-45, warpins: 4 ---
+	--- BLOCK #16 52-52, warpins: 3 ---
+	slot12 = nil
+
 	--- END OF BLOCK #16 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #17
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 46-47, warpins: 1 ---
-	slot3 = nil
+	--- BLOCK #17 53-53, warpins: 2 ---
+	return slot12
 
-	return slot3
 	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 54-55, warpins: 4 ---
+	--- END OF BLOCK #18 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #19
+
+
+	--- BLOCK #19 56-57, warpins: 1 ---
+	slot4 = nil
+
+	return slot4
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot10.getSchemeSuitEff = slot16
+slot10.getSchemeSuitEff = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = PetTransmogUtils
 	slot2 = slot2.getSchemeCompositeColorResource
@@ -3491,82 +3563,55 @@ slot16 = function(slot0, slot1)
 	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 75-83, warpins: 1 ---
+	--- BLOCK #16 75-85, warpins: 1 ---
 	slot8 = PetTransmogUtils
 	slot8 = slot8.getSchemeSuitEff
 	slot10 = slot0
 	slot11 = slot1
-	slot8 = slot8(slot10, slot11)
-	slot9 = pg
-	slot9 = slot9.component
+	slot12 = slot7
+	slot8 = slot8(slot10, slot11, slot12)
+	slot9 = next
+	slot11 = slot4
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #16 ---
 
-	if slot9 == "game" then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 84-91, warpins: 1 ---
-	slot9 = logger
-	slot11 = slot9
-	slot9 = slot9.info
-	slot12 = "getSchemeTransmogData data=%s"
-	slot13 = inspect
-	slot15 = slot4
-	MULTRES = slot13(slot15)
-
-	slot9(slot11, slot12, MULTRES)
-
+	--- BLOCK #17 86-87, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	slot9 = if not slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #18 92-96, warpins: 2 ---
-	slot9 = next
-	slot11 = slot4
-	slot9 = slot9(slot11)
+	--- BLOCK #18 88-88, warpins: 2 ---
+	slot9 = nil
 	--- END OF BLOCK #18 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 97-98, warpins: 1 ---
-	--- END OF BLOCK #19 ---
-
-	slot9 = if not slot4 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 99-99, warpins: 2 ---
-	slot9 = nil
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 100-101, warpins: 2 ---
+	--- BLOCK #19 89-90, warpins: 2 ---
 	slot10 = slot8
 
 	return slot9, slot10
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot10.getSchemeTransmogData = slot16
+slot10.getSchemeTransmogData = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -3625,8 +3670,11 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-21, warpins: 2 ---
-	slot2 = slot1.selectTransmogScheme
+	--- BLOCK #5 19-24, warpins: 2 ---
+	slot2 = PetTransmogUtils
+	slot2 = slot2.getSelectedScheme
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
@@ -3636,7 +3684,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #6 22-24, warpins: 1 ---
+	--- BLOCK #6 25-27, warpins: 1 ---
 	slot3 = slot2.index
 	--- END OF BLOCK #6 ---
 
@@ -3647,14 +3695,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #7 25-25, warpins: 1 ---
+	--- BLOCK #7 28-28, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 26-27, warpins: 2 ---
+	--- BLOCK #8 29-30, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	if slot3 == 0 then
@@ -3664,7 +3712,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #9 28-29, warpins: 2 ---
+	--- BLOCK #9 31-32, warpins: 2 ---
 	slot3 = false
 
 	return slot3
@@ -3674,7 +3722,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 30-33, warpins: 2 ---
+	--- BLOCK #10 33-36, warpins: 2 ---
 	slot3 = PetTransmogUtils
 	slot3 = slot3.isTemplateTransmogable
 	slot5 = slot1.templateId
@@ -3686,9 +3734,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.hasAppliedTransmog = slot16
+slot10.hasAppliedTransmog = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3734,9 +3782,68 @@ slot16 = function(slot0)
 
 end
 
-slot10.isTemplateTransmogable = slot16
+slot10.isTemplateTransmogable = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-9, warpins: 2 ---
+	slot2 = PetTransmogUtils
+	slot2 = slot2.isTemplateTransmogable
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-19, warpins: 1 ---
+	slot2 = bit
+	slot2 = slot2.band
+	slot4 = slot1
+	slot5 = bit
+	slot5 = slot5.bnot
+	slot7 = Const
+	slot7 = slot7.PET_LABEL_MASK
+	slot7 = slot7.SHINY
+	MULTRES = slot5(slot7)
+
+	return slot2(slot4, MULTRES)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-20, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot10.getDisplayLabel = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetTransmogUtils
 	slot1 = slot1.getPetInfo
@@ -3761,8 +3868,11 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-11, warpins: 2 ---
-	slot2 = slot1.selectTransmogScheme
+	--- BLOCK #2 9-14, warpins: 2 ---
+	slot2 = PetTransmogUtils
+	slot2 = slot2.getSelectedScheme
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -3772,7 +3882,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-14, warpins: 1 ---
+	--- BLOCK #3 15-17, warpins: 1 ---
 	slot3 = slot2.index
 	--- END OF BLOCK #3 ---
 
@@ -3783,14 +3893,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #4 15-15, warpins: 1 ---
+	--- BLOCK #4 18-18, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 16-17, warpins: 2 ---
+	--- BLOCK #5 19-20, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	if slot3 == 0 then
@@ -3800,7 +3910,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #6 18-19, warpins: 2 ---
+	--- BLOCK #6 21-22, warpins: 2 ---
 	slot3 = nil
 
 	return slot3
@@ -3810,7 +3920,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 20-28, warpins: 2 ---
+	--- BLOCK #7 23-31, warpins: 2 ---
 	slot3 = PetTransmogUtils
 	slot3 = slot3.getSchemeTransmogData
 	slot5 = slot1.templateId
@@ -3827,15 +3937,596 @@ slot16 = function(slot0)
 
 end
 
-slot10.getAppliedSchemeTransmogData = slot16
+slot10.getAppliedSchemeTransmogData = slot17
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = {}
-	slot3 = tostring
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot5 = if not slot0 then
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot0.setTransmogData
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 3 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-15, warpins: 2 ---
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-21, warpins: 1 ---
+	slot4 = PetTransmogUtils
+	slot4 = slot4.isTemplateTransmogable
+	slot6 = slot3.templateId
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #5 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-23, warpins: 2 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-34, warpins: 2 ---
+	slot4 = PetTransmogUtils
+	slot4 = slot4.getSelectedScheme
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5, slot6 = nil
+	slot7 = PetTransmogUtils
+	slot7 = slot7.hasAppliedTransmog
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 35-40, warpins: 1 ---
+	slot7 = PetTransmogUtils
+	slot7 = slot7.getAppliedSchemeTransmogData
+	slot9 = slot1
+	slot7, slot8 = slot7(slot9)
+	slot6 = slot8
+	slot5 = slot7
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 41-43, warpins: 2 ---
+	slot7 = "empty"
+	--- END OF BLOCK #9 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 44-49, warpins: 1 ---
+	slot8 = PetTransmogUtils
+	slot8 = slot8.getSchemeModelCacheKey
+	slot10 = slot3.templateId
+	slot11 = slot4
+	slot8 = slot8(slot10, slot11)
+	slot7 = slot8
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 50-52, warpins: 2 ---
+	slot8 = slot0.transmogSignature
+	--- END OF BLOCK #11 ---
+
+	if slot8 == slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 53-54, warpins: 1 ---
+	slot8 = false
+
+	return slot8
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 55-56, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 57-58, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 59-60, warpins: 1 ---
+	slot8 = false
+
+	return slot8
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 61-67, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.setTransmogData
+	slot11, slot12 = nil
+	slot13 = "empty"
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	slot8 = true
+
+	return slot8
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 68-73, warpins: 2 ---
+	slot8 = Utils
+	slot8 = slot8.isTable
+	slot10 = slot6
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #17 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 74-78, warpins: 1 ---
+	slot8 = next
+	slot10 = slot6
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #18 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 79-82, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.setDisableEffectLod
+	slot11 = true
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 83-90, warpins: 3 ---
+	slot10 = slot0
+	slot8 = slot0.setTransmogData
+	slot11 = slot5
+	slot12 = slot6
+	slot13 = slot7
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	slot8 = true
+
+	return slot8
+	--- END OF BLOCK #20 ---
+
+
+
+end
+
+slot10.applyAppliedTransmog = slot17
+
+slot17 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot5 = slot0.setTransmogData
+	--- END OF BLOCK #1 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	slot5 = false
+
+	return slot5
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-13, warpins: 2 ---
+	slot5 = PetTransmogUtils
+	slot5 = slot5.isTemplateTransmogable
+	slot7 = slot1
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-15, warpins: 1 ---
+	slot5 = false
+
+	return slot5
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-18, warpins: 2 ---
+	slot5, slot6 = nil
+	--- END OF BLOCK #5 ---
+
+	slot7 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #6 19-21, warpins: 1 ---
+	slot7 = slot2.index
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 22-22, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 23-24, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	if slot7 == 0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 25-26, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 27-27, warpins: 1 ---
+	slot7 = true
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 28-29, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 30-31, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 32-38, warpins: 2 ---
+	slot8 = PetTransmogUtils
+	slot8 = slot8.getSchemeTransmogData
+	slot10 = slot1
+	slot11 = slot2
+	slot8, slot9 = slot8(slot10, slot11)
+	slot6 = slot9
+	slot5 = slot8
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 39-41, warpins: 2 ---
+	slot8 = "empty"
+	--- END OF BLOCK #14 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 42-47, warpins: 1 ---
+	slot9 = PetTransmogUtils
+	slot9 = slot9.getSchemeModelCacheKey
+	slot11 = slot1
+	slot12 = slot2
+	slot9 = slot9(slot11, slot12)
+	slot8 = slot9
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 48-49, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	slot9 = if slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 50-50, warpins: 1 ---
+	slot9 = not slot7
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 51-53, warpins: 2 ---
+	slot10 = slot0.transmogSignature
+	--- END OF BLOCK #18 ---
+
+	if slot10 == slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #19 54-55, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 56-57, warpins: 1 ---
+	slot10 = false
+
+	return slot10
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 58-59, warpins: 3 ---
+	--- END OF BLOCK #21 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #22 60-61, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 62-63, warpins: 1 ---
+	slot10 = false
+
+	return slot10
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 64-70, warpins: 2 ---
+	slot12 = slot0
+	slot10 = slot0.setTransmogData
+	slot13, slot14 = nil
+	slot15 = "empty"
+
+	slot10(slot12, slot13, slot14, slot15)
+
+	slot10 = true
+
+	return slot10
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 71-76, warpins: 2 ---
+	slot10 = Utils
+	slot10 = slot10.isTable
+	slot12 = slot6
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #25 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #26 77-81, warpins: 1 ---
+	slot10 = next
+	slot12 = slot6
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #26 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 82-85, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.setDisableEffectLod
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 86-94, warpins: 3 ---
+	slot12 = slot0
+	slot10 = slot0.setTransmogData
+	slot13 = slot5
+	slot14 = slot6
+	slot15 = slot8
+	slot16 = slot9
+
+	slot10(slot12, slot13, slot14, slot15, slot16)
+
+	slot10 = true
+
+	return slot10
+	--- END OF BLOCK #28 ---
+
+
+
+end
+
+slot10.applySchemeTransmog = slot17
+
+slot17 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = {}
+	slot5 = tostring
+	--- END OF BLOCK #0 ---
+
+	slot7 = if not slot0 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -3843,18 +4534,18 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot5 = "nil"
+	slot7 = "nil"
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
 	--- BLOCK #2 6-9, warpins: 2 ---
-	MULTRES = slot3(slot5)
-	slot2[MULTRES] = MULTRES
+	MULTRES = slot5(slot7)
+	slot4[MULTRES] = MULTRES
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot1 then
+	slot5 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -3862,7 +4553,7 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #3 10-10, warpins: 1 ---
-	slot3 = slot1.holeIds
+	slot5 = slot1.holeIds
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -3871,7 +4562,7 @@ slot16 = function(slot0, slot1)
 	--- BLOCK #4 11-12, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #15
@@ -3879,12 +4570,12 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #5 13-17, warpins: 1 ---
-	slot4 = next
-	slot6 = slot3
-	slot4 = slot4(slot6)
+	slot6 = next
+	slot8 = slot5
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #5 ---
 
-	slot4 = if slot4 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #15
@@ -3892,19 +4583,19 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #6 18-22, warpins: 1 ---
-	slot4 = {}
-	slot5 = pairs
-	slot7 = slot3
-	slot5, slot6, slot7 = slot5(slot7)
+	slot6 = {}
+	slot7 = pairs
+	slot9 = slot5
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
 	--- BLOCK #7 23-25, warpins: 1 ---
-	slot9 = #slot4
-	slot9 = slot9 + 1
-	slot4[slot9] = slot8
+	slot11 = #slot6
+	slot11 = slot11 + 1
+	slot6[slot11] = slot10
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -3913,38 +4604,38 @@ slot16 = function(slot0, slot1)
 	--- BLOCK #8 26-27, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	for slot8 in slot5, slot6, slot7
+	for slot10 in slot7, slot8, slot9
 	LOOP BLOCK #7
 	GO OUT TO BLOCK #9
 
 
 	--- BLOCK #9 28-35, warpins: 1 ---
-	slot5 = table
-	slot5 = slot5.sort
-	slot7 = slot4
+	slot7 = table
+	slot7 = slot7.sort
+	slot9 = slot6
 
-	slot5(slot7)
+	slot7(slot9)
 
-	slot5 = ipairs
-	slot7 = slot4
-	slot5, slot6, slot7 = slot5(slot7)
+	slot7 = ipairs
+	slot9 = slot6
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
 	--- BLOCK #10 36-45, warpins: 1 ---
-	slot10 = #slot2
-	slot10 = slot10 + 1
-	slot11 = tostring
-	slot13 = slot9
-	slot11 = slot11(slot13)
-	slot12 = ":"
+	slot12 = #slot4
+	slot12 = slot12 + 1
 	slot13 = tostring
-	slot15 = slot3[slot9]
+	slot15 = slot11
+	slot13 = slot13(slot15)
+	slot14 = ":"
+	slot15 = tostring
+	slot17 = slot5[slot11]
 	--- END OF BLOCK #10 ---
 
-	slot15 = if not slot15 then
+	slot17 = if not slot17 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
@@ -3952,16 +4643,16 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #11 46-46, warpins: 1 ---
-	slot15 = 0
+	slot17 = 0
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
 	--- BLOCK #12 47-49, warpins: 2 ---
-	slot13 = slot13(slot15)
-	slot11 = slot11 .. slot12 .. slot13
-	slot2[slot10] = slot11
+	slot15 = slot15(slot17)
+	slot13 = slot13 .. slot14 .. slot15
+	slot4[slot12] = slot13
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
@@ -3970,7 +4661,7 @@ slot16 = function(slot0, slot1)
 	--- BLOCK #13 50-51, warpins: 2 ---
 	--- END OF BLOCK #13 ---
 
-	for slot8, slot9 in slot5, slot6, slot7
+	for slot10, slot11 in slot7, slot8, slot9
 	LOOP BLOCK #10
 	GO OUT TO BLOCK #14
 
@@ -3982,31 +4673,69 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #15 53-56, warpins: 2 ---
-	slot4 = #slot2
-	slot4 = slot4 + 1
-	slot5 = "default"
-	slot2[slot4] = slot5
+	slot6 = #slot4
+	slot6 = slot6 + 1
+	slot7 = "default"
+	slot4[slot6] = slot7
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 57-61, warpins: 2 ---
-	slot4 = table
-	slot4 = slot4.concat
-	slot6 = slot2
-	slot7 = "_"
-
-	return slot4(slot6, slot7)
+	--- BLOCK #16 57-58, warpins: 2 ---
 	--- END OF BLOCK #16 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 59-61, warpins: 1 ---
+	slot6 = #slot4
+	slot6 = slot6 + 1
+	slot4[slot6] = slot2
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 62-63, warpins: 2 ---
+	--- END OF BLOCK #18 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 64-66, warpins: 1 ---
+	slot6 = #slot4
+	slot6 = slot6 + 1
+	slot4[slot6] = slot3
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 67-71, warpins: 2 ---
+	slot6 = table
+	slot6 = slot6.concat
+	slot8 = slot4
+	slot9 = "_"
+
+	return slot6(slot8, slot9)
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot10.getSchemeModelCacheKey = slot16
+slot10.getSchemeModelCacheKey = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetTransmogUtils
 	slot1 = slot1.getPetInfo
@@ -4066,9 +4795,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.getPetSlotMap = slot16
+slot10.getPetSlotMap = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -4115,14 +4844,112 @@ slot16 = function(slot0)
 
 end
 
-slot10.getPetInfo = slot16
+slot10.getPetInfo = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = PetTransmogUtils
-	slot1 = slot1.getPetInfo
+slot17 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-7, warpins: 1 ---
 	slot3 = slot0
+	slot1 = slot0.getTransmogInfo
 	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	slot1 = nil
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot10.getTransmogInfo = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = slot0.getSelectTransmogScheme
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getSelectTransmogScheme
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	slot1 = nil
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-12, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot10.getSelectedScheme = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getTransmogInfo
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -4132,7 +4959,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
+	--- BLOCK #1 10-12, warpins: 1 ---
 	slot2 = slot1.currTransmogScheme
 	--- END OF BLOCK #1 ---
 
@@ -4143,7 +4970,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 13-13, warpins: 2 ---
 	slot2 = nil
 
 	--- END OF BLOCK #2 ---
@@ -4151,7 +4978,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-11, warpins: 2 ---
+	--- BLOCK #3 14-14, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #3 ---
 
@@ -4159,9 +4986,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.getCurrentScheme = slot16
+slot10.getCurrentScheme = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = _patchDefaultColor
 	slot3 = slot0
@@ -4177,73 +5004,171 @@ slot16 = function(slot0)
 
 end
 
-slot10.getCurrentDisplayScheme = slot16
+slot10.getCurrentDisplayScheme = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = PetTransmogUtils
-	slot1 = slot1.getPetInfo
-	slot3 = slot0
-	slot1 = slot1(slot3)
+slot17 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = {}
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot1 then
+	slot2 = if slot0 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	slot2 = slot1.selectTransmogScheme
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot2 = slot0.lockHolesList
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 5-6, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 10-12, warpins: 1 ---
-	slot3 = slot2.index
+	--- BLOCK #3 7-10, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 13-13, warpins: 2 ---
-	slot3 = nil
+	--- BLOCK #4 11-12, warpins: 1 ---
+	slot8 = true
+	slot1[slot7] = slot8
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-14, warpins: 2 ---
-	return slot3
+	--- BLOCK #5 13-14, warpins: 2 ---
 	--- END OF BLOCK #5 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 15-15, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot10.getSelectedSchemeId = slot16
+slot10.getSchemeLockedSet = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getSelectedScheme
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot2 = slot1.index
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 2 ---
+	slot2 = nil
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot10.getSelectedSchemeId = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getSelectedScheme
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot2 = slot1.transmogValue
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 2 ---
+	slot2 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot10.getAppliedTransmogValue = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetTransmogUtils
-	slot1 = slot1.getPetInfo
+	slot1 = slot1.getCurrentScheme
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
@@ -4256,7 +5181,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #1 7-9, warpins: 1 ---
-	slot2 = slot1.transmogProgress
+	slot2 = slot1.transmogValue
 	--- END OF BLOCK #1 ---
 
 	slot2 = if not slot2 then
@@ -4282,9 +5207,56 @@ slot16 = function(slot0)
 
 end
 
-slot10.getTransmogProgress = slot16
+slot10.getCurrentTransmogValue = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getTransmogInfo
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot2 = slot1.transmogProgress
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 2 ---
+	slot2 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot10.getTransmogProgress = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetTransmogUtils
 	slot1 = slot1.getCurrentScheme
@@ -4550,14 +5522,17 @@ slot16 = function(slot0)
 
 end
 
-slot10.getCurrentSuitInfo = slot16
+slot10.getCurrentSuitInfo = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PetTransmogUtils
-	slot1 = slot1.getPetInfo
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1.getTransmogInfo
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -4567,7 +5542,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
+	--- BLOCK #1 10-12, warpins: 1 ---
 	slot2 = slot1.transmogUnlockSolts
 	--- END OF BLOCK #1 ---
 
@@ -4578,7 +5553,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 13-13, warpins: 2 ---
 	slot2 = nil
 
 	--- END OF BLOCK #2 ---
@@ -4586,7 +5561,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-11, warpins: 2 ---
+	--- BLOCK #3 14-14, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #3 ---
 
@@ -4594,9 +5569,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.getUnlockedHoles = slot16
+slot10.getUnlockedHoles = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetTransmogUtils
 	slot1 = slot1.getUnlockedHoles
@@ -4648,9 +5623,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.isAllHolesUnlocked = slot16
+slot10.isAllHolesUnlocked = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4695,14 +5670,17 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.getSchemePhotoId = slot16
+slot10.getSchemePhotoId = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PetTransmogUtils
-	slot1 = slot1.getPetInfo
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1.getTransmogInfo
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot1 then
@@ -4712,14 +5690,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 10-10, warpins: 1 ---
 	slot2 = slot1.customTransmogSchemes
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-13, warpins: 2 ---
+	--- BLOCK #2 11-16, warpins: 2 ---
 	slot3 = PetTransmogUtils
 	slot3 = slot3.getMaxCustomCount
 	slot3 = slot3()
@@ -4733,14 +5711,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #3 14-14, warpins: 1 ---
+	--- BLOCK #3 17-17, warpins: 1 ---
 	slot3 = 5
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-20, warpins: 2 ---
+	--- BLOCK #4 18-23, warpins: 2 ---
 	slot4 = slot3 + 1
 	slot5 = {}
 	slot6 = 0
@@ -4754,7 +5732,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #5 21-24, warpins: 1 ---
+	--- BLOCK #5 24-27, warpins: 1 ---
 	slot8 = pairs
 	slot10 = slot2
 	slot8, slot9, slot10 = slot8(slot10)
@@ -4763,7 +5741,7 @@ slot16 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #6 25-26, warpins: 1 ---
+	--- BLOCK #6 28-29, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	slot12 = if slot12 then
@@ -4773,7 +5751,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #7 27-29, warpins: 1 ---
+	--- BLOCK #7 30-32, warpins: 1 ---
 	slot13 = slot12.index
 	--- END OF BLOCK #7 ---
 
@@ -4784,7 +5762,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #8 30-34, warpins: 1 ---
+	--- BLOCK #8 33-37, warpins: 1 ---
 	slot13 = slot12.index
 	slot5[slot13] = slot12
 	slot13 = slot12.transmogValue
@@ -4797,14 +5775,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #9 35-35, warpins: 1 ---
+	--- BLOCK #9 38-38, warpins: 1 ---
 	slot13 = 0
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 36-37, warpins: 2 ---
+	--- BLOCK #10 39-40, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	if slot6 < slot13 then
@@ -4814,7 +5792,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #11 38-40, warpins: 1 ---
+	--- BLOCK #11 41-43, warpins: 1 ---
 	slot14 = slot13
 	slot7 = slot12.index
 	slot6 = slot14
@@ -4823,7 +5801,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 41-42, warpins: 5 ---
+	--- BLOCK #12 44-45, warpins: 5 ---
 	--- END OF BLOCK #12 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
@@ -4831,7 +5809,7 @@ slot16 = function(slot0)
 	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #13 43-60, warpins: 2 ---
+	--- BLOCK #13 46-63, warpins: 2 ---
 	slot8 = PetTransmogUtils
 	slot8 = slot8.getSelectedSchemeId
 	slot10 = slot0
@@ -4854,7 +5832,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 61-65, warpins: 2 ---
+	--- BLOCK #14 64-68, warpins: 2 ---
 	slot16 = slot5[slot15]
 	slot17 = Const
 	slot17 = slot17.PetTransmogCustomDefultSchemeIndex
@@ -4867,7 +5845,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #15 66-70, warpins: 1 ---
+	--- BLOCK #15 69-73, warpins: 1 ---
 	slot17 = _patchDefaultColor
 	slot19 = slot0
 	slot20 = slot16
@@ -4878,7 +5856,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 71-74, warpins: 2 ---
+	--- BLOCK #16 74-77, warpins: 2 ---
 	slot17 = Const
 	slot17 = slot17.PetTransmogCustomDefultSchemeIndex
 	--- END OF BLOCK #16 ---
@@ -4890,7 +5868,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #17 75-76, warpins: 1 ---
+	--- BLOCK #17 78-79, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
 	if slot16 == nil then
@@ -4900,21 +5878,21 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #18 77-78, warpins: 1 ---
+	--- BLOCK #18 80-81, warpins: 1 ---
 	slot17 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 79-79, warpins: 2 ---
+	--- BLOCK #19 82-82, warpins: 2 ---
 	slot17 = true
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 80-81, warpins: 2 ---
+	--- BLOCK #20 83-84, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
 	slot16 = if slot16 then
@@ -4924,7 +5902,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #21 82-84, warpins: 1 ---
+	--- BLOCK #21 85-87, warpins: 1 ---
 	slot18 = slot16.holeIds
 	--- END OF BLOCK #21 ---
 
@@ -4935,14 +5913,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #22 85-85, warpins: 2 ---
+	--- BLOCK #22 88-88, warpins: 2 ---
 	slot18 = nil
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 86-88, warpins: 2 ---
+	--- BLOCK #23 89-91, warpins: 2 ---
 	slot19 = 0
 	--- END OF BLOCK #23 ---
 
@@ -4953,7 +5931,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #24 89-90, warpins: 1 ---
+	--- BLOCK #24 92-93, warpins: 1 ---
 	--- END OF BLOCK #24 ---
 
 	slot9 = if slot9 then
@@ -4963,7 +5941,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #25 91-101, warpins: 1 ---
+	--- BLOCK #25 94-104, warpins: 1 ---
 	slot20, slot21 = nil
 	slot22 = true
 	slot23 = Const
@@ -4979,7 +5957,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 102-107, warpins: 2 ---
+	--- BLOCK #26 105-110, warpins: 2 ---
 	slot27 = PetTransmogUtils
 	slot27 = slot27.getSlotConfig
 	slot29 = slot18[slot26]
@@ -4993,7 +5971,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #27 108-110, warpins: 1 ---
+	--- BLOCK #27 111-113, warpins: 1 ---
 	slot28 = slot27.suitId
 	--- END OF BLOCK #27 ---
 
@@ -5004,14 +5982,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #28 111-112, warpins: 2 ---
+	--- BLOCK #28 114-115, warpins: 2 ---
 	slot22 = false
 	--- END OF BLOCK #28 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #29 113-114, warpins: 1 ---
+	--- BLOCK #29 116-117, warpins: 1 ---
 	--- END OF BLOCK #29 ---
 
 	if slot20 == nil then
@@ -5021,7 +5999,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #30 115-118, warpins: 1 ---
+	--- BLOCK #30 118-121, warpins: 1 ---
 	slot20 = slot27.suitId
 	slot28 = slot27.quality
 	--- END OF BLOCK #30 ---
@@ -5033,20 +6011,20 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #31 119-119, warpins: 1 ---
+	--- BLOCK #31 122-122, warpins: 1 ---
 	slot21 = 0
 	--- END OF BLOCK #31 ---
 
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 120-120, warpins: 2 ---
+	--- BLOCK #32 123-123, warpins: 2 ---
 	--- END OF BLOCK #32 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #35
 
 
-	--- BLOCK #33 121-123, warpins: 1 ---
+	--- BLOCK #33 124-126, warpins: 1 ---
 	slot28 = slot27.suitId
 	--- END OF BLOCK #33 ---
 
@@ -5057,21 +6035,21 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #34 124-125, warpins: 1 ---
+	--- BLOCK #34 127-128, warpins: 1 ---
 	slot22 = false
 	--- END OF BLOCK #34 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #35 126-126, warpins: 2 ---
+	--- BLOCK #35 129-129, warpins: 2 ---
 	--- END OF BLOCK #35 ---
 
 	for slot26=slot23, slot24, slot25
 	LOOP BLOCK #26
 	GO OUT TO BLOCK #36
 
-	--- BLOCK #36 127-128, warpins: 3 ---
+	--- BLOCK #36 130-131, warpins: 3 ---
 	--- END OF BLOCK #36 ---
 
 	slot22 = if slot22 then
@@ -5081,7 +6059,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #37 129-130, warpins: 1 ---
+	--- BLOCK #37 132-133, warpins: 1 ---
 	--- END OF BLOCK #37 ---
 
 	slot21 = if slot21 then
@@ -5091,14 +6069,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #38 131-131, warpins: 1 ---
+	--- BLOCK #38 134-134, warpins: 1 ---
 	slot19 = slot21
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 132-140, warpins: 5 ---
+	--- BLOCK #39 135-143, warpins: 5 ---
 	slot20 = #slot11
 	slot20 = slot20 + 1
 	slot21 = {}
@@ -5115,7 +6093,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #40 141-146, warpins: 1 ---
+	--- BLOCK #40 144-149, warpins: 1 ---
 	slot22 = pg
 	slot22 = slot22.getGameString
 	slot24 = "PETTRANSMOGRIFY_DEFAULT"
@@ -5129,7 +6107,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #41 147-154, warpins: 2 ---
+	--- BLOCK #41 150-157, warpins: 2 ---
 	slot22 = pg
 	slot22 = slot22.getFormatText
 	slot24 = pg
@@ -5143,7 +6121,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 155-158, warpins: 2 ---
+	--- BLOCK #42 158-161, warpins: 2 ---
 	slot21.name = slot22
 	slot21.quality = slot19
 	--- END OF BLOCK #42 ---
@@ -5155,7 +6133,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #43 159-161, warpins: 1 ---
+	--- BLOCK #43 162-164, warpins: 1 ---
 	slot22 = slot16.transmogValue
 	--- END OF BLOCK #43 ---
 
@@ -5166,14 +6144,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #44 162-162, warpins: 2 ---
+	--- BLOCK #44 165-165, warpins: 2 ---
 	slot22 = 0
 	--- END OF BLOCK #44 ---
 
 	FLOW; TARGET BLOCK #45
 
 
-	--- BLOCK #45 163-166, warpins: 2 ---
+	--- BLOCK #45 166-169, warpins: 2 ---
 	slot21.transmogValue = slot22
 	slot21.holeIds = slot18
 	--- END OF BLOCK #45 ---
@@ -5185,7 +6163,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #46 167-169, warpins: 1 ---
+	--- BLOCK #46 170-172, warpins: 1 ---
 	slot22 = slot16._colorPatched
 	--- END OF BLOCK #46 ---
 
@@ -5196,14 +6174,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #47 170-170, warpins: 2 ---
+	--- BLOCK #47 173-173, warpins: 2 ---
 	slot22 = nil
 	--- END OF BLOCK #47 ---
 
 	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 171-173, warpins: 2 ---
+	--- BLOCK #48 174-176, warpins: 2 ---
 	slot21._colorPatched = slot22
 	--- END OF BLOCK #48 ---
 
@@ -5214,7 +6192,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #49 174-175, warpins: 1 ---
+	--- BLOCK #49 177-178, warpins: 1 ---
 	--- END OF BLOCK #49 ---
 
 	if slot8 ~= nil then
@@ -5224,7 +6202,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #50 176-177, warpins: 1 ---
+	--- BLOCK #50 179-180, warpins: 1 ---
 	--- END OF BLOCK #50 ---
 
 	if slot8 ~= slot15 then
@@ -5234,21 +6212,21 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #51 178-179, warpins: 2 ---
+	--- BLOCK #51 181-182, warpins: 2 ---
 	slot22 = false
 	--- END OF BLOCK #51 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #53
 
 
-	--- BLOCK #52 180-180, warpins: 1 ---
+	--- BLOCK #52 183-183, warpins: 1 ---
 	slot22 = true
 	--- END OF BLOCK #52 ---
 
 	FLOW; TARGET BLOCK #53
 
 
-	--- BLOCK #53 181-183, warpins: 3 ---
+	--- BLOCK #53 184-186, warpins: 3 ---
 	slot21.isApplying = slot22
 	--- END OF BLOCK #53 ---
 
@@ -5259,7 +6237,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #54 184-185, warpins: 1 ---
+	--- BLOCK #54 187-188, warpins: 1 ---
 	--- END OF BLOCK #54 ---
 
 	if slot7 ~= slot15 then
@@ -5269,21 +6247,21 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #55 186-187, warpins: 1 ---
+	--- BLOCK #55 189-190, warpins: 1 ---
 	slot22 = false
 	--- END OF BLOCK #55 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #57
 
 
-	--- BLOCK #56 188-188, warpins: 1 ---
+	--- BLOCK #56 191-191, warpins: 1 ---
 	slot22 = true
 	--- END OF BLOCK #56 ---
 
 	FLOW; TARGET BLOCK #57
 
 
-	--- BLOCK #57 189-193, warpins: 3 ---
+	--- BLOCK #57 192-196, warpins: 3 ---
 	slot21.isRecommended = slot22
 	slot22 = Const
 	slot22 = slot22.PetTransmogCustomDefultSchemeIndex
@@ -5296,7 +6274,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #58 194-200, warpins: 1 ---
+	--- BLOCK #58 197-203, warpins: 1 ---
 	slot22 = PetTransmogUtils
 	slot22 = slot22.getSchemePhotoId
 	slot24 = slot0
@@ -5311,14 +6289,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #59 201-201, warpins: 2 ---
+	--- BLOCK #59 204-204, warpins: 2 ---
 	slot22 = nil
 	--- END OF BLOCK #59 ---
 
 	FLOW; TARGET BLOCK #60
 
 
-	--- BLOCK #60 202-205, warpins: 2 ---
+	--- BLOCK #60 205-208, warpins: 2 ---
 	slot21.photoId = slot22
 	slot21.defaultPic = slot10
 	slot11[slot20] = slot21
@@ -5328,7 +6306,7 @@ slot16 = function(slot0)
 	LOOP BLOCK #14
 	GO OUT TO BLOCK #61
 
-	--- BLOCK #61 206-212, warpins: 1 ---
+	--- BLOCK #61 209-215, warpins: 1 ---
 	slot12 = table
 	slot12 = slot12.sort
 	slot14 = slot11
@@ -5541,9 +6519,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.getCustomSchemes = slot16
+slot10.getCustomSchemes = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = PetTransmogUtils
@@ -5619,14 +6597,131 @@ slot16 = function(slot0)
 
 end
 
-slot10.isCustomFull = slot16
+slot10.isCustomFull = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = ipairs
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getCustomSchemes
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1, slot2, slot3 = slot1(MULTRES)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot6 = slot5.index
+	--- END OF BLOCK #1 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot6 = slot5.index
+	slot7 = Const
+	slot7 = slot7.PetTransmogCustomDefultSchemeIndex
+	--- END OF BLOCK #2 ---
+
+	if slot7 < slot6 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot6 = slot5.exists
+	--- END OF BLOCK #3 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-20, warpins: 1 ---
+	slot6 = slot5.index
+
+	return slot6
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-22, warpins: 5 ---
+	--- END OF BLOCK #5 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot10.getFirstEmptyCustomIndex = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getFormatText
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "PETTRANSMOGRIFY_CUSTOM_NAME"
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	slot4 = slot4 - 1
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot10.getCustomSchemeDisplayName = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PetTransmogUtils
-	slot1 = slot1.getPetInfo
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1.getTransmogInfo
+	slot3 = PetTransmogUtils
+	slot3 = slot3.getPetInfo
+	slot5 = slot0
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot1 then
@@ -5636,14 +6731,14 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 10-10, warpins: 1 ---
 	slot2 = slot1.tempTransmogSchemes
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-10, warpins: 2 ---
+	--- BLOCK #2 11-13, warpins: 2 ---
 	slot3 = {}
 	--- END OF BLOCK #2 ---
 
@@ -5654,13 +6749,13 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #3 11-11, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 12-15, warpins: 1 ---
+	--- BLOCK #4 15-18, warpins: 1 ---
 	slot4 = pairs
 	slot6 = slot2
 	slot4, slot5, slot6 = slot4(slot6)
@@ -5669,7 +6764,7 @@ slot16 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 16-18, warpins: 1 ---
+	--- BLOCK #5 19-21, warpins: 1 ---
 	slot9 = #slot3
 	slot9 = slot9 + 1
 	slot3[slot9] = slot8
@@ -5678,7 +6773,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 19-20, warpins: 2 ---
+	--- BLOCK #6 22-23, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -5686,7 +6781,7 @@ slot16 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 21-27, warpins: 1 ---
+	--- BLOCK #7 24-30, warpins: 1 ---
 	slot4 = table
 	slot4 = slot4.sort
 	slot6 = slot3
@@ -5848,7 +6943,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 28-28, warpins: 2 ---
+	--- BLOCK #8 31-31, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #8 ---
 
@@ -5856,9 +6951,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.getTempSchemes = slot16
+slot10.getTempSchemes = slot17
 
-slot16 = function()
+slot17 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = Const
 	slot0 = slot0.PetTransmogSlotType
@@ -5871,13 +6966,13 @@ slot16 = function()
 
 end
 
-slot10.getHoleCount = slot16
+slot10.getHoleCount = slot17
 
-slot16 = function()
+slot17 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = PetTransmogUtils
-	slot0 = slot0.getBaseNumber
-	slot2 = "transmog_all_exp"
+	slot0 = slot0.getBaseRaw
+	slot2 = "transmog_exp"
 
 	return slot0(slot2)
 	--- END OF BLOCK #0 ---
@@ -5886,67 +6981,250 @@ slot16 = function()
 
 end
 
-slot10.getHoleUnlockStep = slot16
+slot10.getTransmogExpList = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PetTransmogUtils
-	slot1 = slot1.getHoleCount
+	slot1 = slot1.getTransmogExpList
 	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot1 = 0
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = #slot1
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-9, warpins: 2 ---
-	slot2 = 1
-	--- END OF BLOCK #2 ---
-
-	if slot1 <= slot2 then
-	JUMP TO BLOCK #3
+	if slot2 == 0 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 10-11, warpins: 1 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
 	slot2 = 0
 
 	return slot2
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #4 12-17, warpins: 2 ---
-	slot2 = slot1 - 1
-	slot3 = PetTransmogUtils
-	slot3 = slot3.getHoleUnlockStep
-	slot3 = slot3()
-	slot2 = slot2 * slot3
+	--- BLOCK #3 11-13, warpins: 2 ---
+	slot2 = #slot1
+	slot2 = slot1[slot2]
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot10.getMaxTransmogValue = slot16
+slot10.getMaxTransmogValue = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getTransmogExpList
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = #slot1
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	slot2 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-12, warpins: 2 ---
+	slot3 = 1
+	--- END OF BLOCK #3 ---
+
+	if slot2 <= slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-14, warpins: 1 ---
+	slot3 = 0
+
+	return slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-16, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 17-17, warpins: 1 ---
+	slot0 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 18-20, warpins: 2 ---
+	slot3 = slot1[slot2]
+	--- END OF BLOCK #7 ---
+
+	if slot3 <= slot0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-22, warpins: 1 ---
+	slot3 = 1
+
+	return slot3
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 23-26, warpins: 2 ---
+	slot3 = 1
+	slot4 = slot2 - 1
+	slot5 = 1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 27-31, warpins: 2 ---
+	slot7 = slot1[slot6]
+	slot8 = slot6 + 1
+	slot8 = slot1[slot8]
+	--- END OF BLOCK #10 ---
+
+	if slot0 < slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #11 32-33, warpins: 1 ---
+	--- END OF BLOCK #11 ---
+
+	if slot7 < slot8 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 34-38, warpins: 1 ---
+	slot9 = slot0 - slot7
+	slot10 = slot8 - slot7
+	slot9 = slot9 / slot10
+	--- END OF BLOCK #12 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 39-39, warpins: 2 ---
+	slot9 = 0
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 40-42, warpins: 2 ---
+	slot10 = 0
+	--- END OF BLOCK #14 ---
+
+	if slot9 < slot10 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 43-43, warpins: 1 ---
+	slot9 = 0
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 44-48, warpins: 2 ---
+	slot10 = slot6 - 1
+	slot10 = slot10 + slot9
+	slot11 = slot2 - 1
+	slot10 = slot10 / slot11
+
+	return slot10
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 49-49, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #18
+
+	--- BLOCK #18 50-51, warpins: 1 ---
+	slot3 = 1
+
+	return slot3
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot10.getTransmogSliderFill = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6038,9 +7316,83 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.isHoleUnlocked = slot16
+slot10.isHoleUnlocked = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getUnlockedHoles
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot2 = 0
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-13, warpins: 2 ---
+	slot2 = 0
+	slot3 = ipairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot8 = Const
+	slot8 = slot8.PetTransmogSlotType
+	slot8 = slot8.Flash
+	--- END OF BLOCK #3 ---
+
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-19, warpins: 1 ---
+	slot2 = slot2 + 1
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-21, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot10.getLockableHoleCount = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = PetTransmogUtils
 	slot1 = slot1.getTransmogSpecialItemId
@@ -6094,9 +7446,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.canUseTransmogSpecialItem = slot16
+slot10.canUseTransmogSpecialItem = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -6173,9 +7525,9 @@ slot16 = function(slot0)
 
 end
 
-slot10.getItemOwnedCount = slot16
+slot10.getItemOwnedCount = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6193,124 +7545,141 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-19, warpins: 2 ---
-	slot2 = PetTransmogUtils
-	slot2 = slot2.getTransmogItemId
-	slot2 = slot2()
+	--- BLOCK #2 4-15, warpins: 2 ---
 	slot3 = PetTransmogUtils
-	slot3 = slot3.getTransmogSpecialItemId
+	slot3 = slot3.getTransmogItemId
 	slot3 = slot3()
 	slot4 = PetTransmogUtils
-	slot4 = slot4.canUseTransmogSpecialItem
-	slot6 = slot0
-	slot4 = slot4(slot6)
+	slot4 = slot4.getTransmogSpecialItemId
+	slot4 = slot4()
 	slot5 = PetTransmogUtils
-	slot5 = slot5.getItemOwnedCount
-	slot7 = slot2
+	slot5 = slot5.canUseTransmogSpecialItem
+	slot7 = slot0
 	slot5 = slot5(slot7)
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 20-25, warpins: 1 ---
+	--- BLOCK #3 16-16, warpins: 1 ---
+	slot5 = not slot2
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-22, warpins: 2 ---
 	slot6 = PetTransmogUtils
 	slot6 = slot6.getItemOwnedCount
 	slot8 = slot3
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #3 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 26-26, warpins: 2 ---
-	slot6 = 0
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 27-34, warpins: 2 ---
-	slot7 = slot5 + slot6
-	slot8 = math
-	slot8 = slot8.max
-	slot10 = slot1 - slot7
-	slot11 = 0
-	slot8 = slot8(slot10, slot11)
+	--- BLOCK #5 23-28, warpins: 1 ---
+	slot7 = PetTransmogUtils
+	slot7 = slot7.getItemOwnedCount
+	slot9 = slot4
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #5 ---
 
-	slot4 = if slot4 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 35-37, warpins: 1 ---
-	slot9 = 0
+	--- BLOCK #6 29-29, warpins: 2 ---
+	slot7 = 0
 	--- END OF BLOCK #6 ---
 
-	if slot6 > slot9 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 38-39, warpins: 1 ---
+	--- BLOCK #7 30-37, warpins: 2 ---
+	slot8 = slot6 + slot7
+	slot9 = math
+	slot9 = slot9.max
+	slot11 = slot1 - slot8
+	slot12 = 0
+	slot9 = slot9(slot11, slot12)
 	--- END OF BLOCK #7 ---
 
-	slot9 = if not slot3 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 40-40, warpins: 3 ---
-	slot9 = slot2
+	--- BLOCK #8 38-40, warpins: 1 ---
+	slot10 = 0
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	if slot7 > slot10 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #9 41-58, warpins: 2 ---
-	slot10 = math
-	slot10 = slot10.min
-	slot12 = slot6
-	slot13 = slot1
-	slot10 = slot10(slot12, slot13)
-	slot11 = slot1 - slot10
-	slot12 = {}
-	slot12.needItemId = slot2
-	slot12.specialItemId = slot3
-	slot12.useSpecial = slot4
-	slot12.needOwned = slot5
-	slot12.specialOwned = slot6
-	slot12.totalOwned = slot7
-	slot12.lackCount = slot8
-	slot12.displayItemId = slot9
-	slot12.specialUseCount = slot10
-	slot12.needUseCount = slot11
-
-	return slot12
+	--- BLOCK #9 41-42, warpins: 1 ---
 	--- END OF BLOCK #9 ---
+
+	slot10 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 43-43, warpins: 3 ---
+	slot10 = slot3
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 44-61, warpins: 2 ---
+	slot11 = math
+	slot11 = slot11.min
+	slot13 = slot7
+	slot14 = slot1
+	slot11 = slot11(slot13, slot14)
+	slot12 = slot1 - slot11
+	slot13 = {}
+	slot13.needItemId = slot3
+	slot13.specialItemId = slot4
+	slot13.useSpecial = slot5
+	slot13.needOwned = slot6
+	slot13.specialOwned = slot7
+	slot13.totalOwned = slot8
+	slot13.lackCount = slot9
+	slot13.displayItemId = slot10
+	slot13.specialUseCount = slot11
+	slot13.needUseCount = slot12
+
+	return slot13
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot10.getRollMaterialStatus = slot16
+slot10.getRollMaterialStatus = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = PetTransmogUtils
 	slot2 = slot2.isHoleUnlocked
@@ -6383,9 +7752,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.isHoleDisplayUnlocked = slot16
+slot10.isHoleDisplayUnlocked = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6460,9 +7829,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.getHoleQuality = slot16
+slot10.getHoleQuality = slot17
 
-slot16 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6716,9 +8085,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot10.getSlotName = slot16
+slot10.getSlotName = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PetTransmogUtils
 	slot2 = slot2.getPetSlotMap
@@ -6821,7 +8190,7 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot10.getHoleName = slot16
+slot10.getHoleName = slot17
 
 return slot10
 --- END OF BLOCK #0 ---

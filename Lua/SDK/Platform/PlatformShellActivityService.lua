@@ -1,4 +1,4 @@
---- BLOCK #0 1-132, warpins: 1 ---
+--- BLOCK #0 1-146, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformLogger"
 slot0 = slot0(slot2)
@@ -6,61 +6,66 @@ slot1 = require
 slot3 = "Common.Const.Const"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.IDManager"
+slot4 = "Common.Const.MatchConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Data.sys_config_data"
+slot5 = "Common.CommonSwitch"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Timer.TimerManager"
+slot6 = "Core.Common.IDManager"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "SDK.Platform.PlatformShellTokenUtils"
+slot7 = "Data.sys_config_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "SDK.Platform.PlatformInviteTokenService"
+slot8 = "Core.Timer.TimerManager"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.PlatformShellConst"
+slot9 = "SDK.Platform.PlatformShellTokenUtils"
 slot7 = slot7(slot9)
-slot8 = CS
-slot8 = slot8.FunPlus
-slot8 = slot8.WorldX
-slot8 = slot8.SDK
-slot8 = slot8.Platform
-slot8 = slot8.PlatformBridgeLuaFacade
-slot9 = {}
-slot10 = "public"
-slot9.DEFAULT_JOIN_RESTRICTION = slot10
-slot10 = "invite_only"
-slot9.NOT_JOINABLE_RESTRICTION = slot10
-slot10 = 1
-slot9.DEFAULT_CURRENT_PLAYERS = slot10
-slot10 = 4
-slot9.DEFAULT_MAX_PLAYERS = slot10
-slot10 = slot7.TokenType
-slot10 = slot10.JoinGameByShell
-slot9.TOKEN_TYPE_ACTIVITY = slot10
-slot10 = "open"
-slot9.ACTIVITY_TARGET_KEY = slot10
-slot10 = 30
-slot9.ACTIVITY_TOKEN_FRESH_MARGIN = slot10
-slot10 = {
-	publishSeq = 0,
-	ownerUserId = "",
-	initialized = false,
-	lastActivitySourceReason = "",
-	lastActivityToken = "",
+slot8 = require
+slot10 = "SDK.Platform.PlatformInviteTokenService"
+slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Common.Const.PlatformShellConst"
+slot9 = slot9(slot11)
+slot10 = CS
+slot10 = slot10.FunPlus
+slot10 = slot10.WorldX
+slot10 = slot10.SDK
+slot10 = slot10.Platform
+slot10 = slot10.PlatformBridgeLuaFacade
+slot11 = {}
+slot12 = "public"
+slot11.DEFAULT_JOIN_RESTRICTION = slot12
+slot12 = "invite_only"
+slot11.NOT_JOINABLE_RESTRICTION = slot12
+slot12 = 1
+slot11.DEFAULT_CURRENT_PLAYERS = slot12
+slot12 = 4
+slot11.DEFAULT_MAX_PLAYERS = slot12
+slot12 = slot9.TokenType
+slot12 = slot12.JoinGameByShell
+slot11.TOKEN_TYPE_ACTIVITY = slot12
+slot12 = "open"
+slot11.ACTIVITY_TARGET_KEY = slot12
+slot12 = 30
+slot11.ACTIVITY_TOKEN_FRESH_MARGIN = slot12
+slot12 = {
 	suspendedWithActivity = false,
 	platformJoinTokenRefreshing = false,
 	activityInviteId = "",
 	pendingPublish = false,
-	published = false
+	published = false,
+	publishSeq = 0,
+	ownerUserId = "",
+	initialized = false,
+	lastActivitySourceReason = "",
+	lastActivityToken = ""
 }
-slot9.state = slot10
-slot10 = nil
+slot11.state = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -120,9 +125,9 @@ slot11 = function()
 
 end
 
-slot9.isPlatformSupported = slot11
+slot11.isPlatformSupported = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -182,9 +187,9 @@ slot11 = function()
 
 end
 
-slot9.supportsMultiplayerActivity = slot11
+slot11.supportsMultiplayerActivity = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -244,9 +249,9 @@ slot11 = function()
 
 end
 
-slot9.isRuntimeReady = slot11
+slot11.isRuntimeReady = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -306,9 +311,9 @@ slot11 = function()
 
 end
 
-slot9.isPlayStationPlatform = slot11
+slot11.isPlayStationPlatform = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -380,9 +385,9 @@ slot11 = function()
 
 end
 
-slot9.getSignedInUserId = slot11
+slot11.getSignedInUserId = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.state
@@ -423,9 +428,9 @@ slot11 = function()
 
 end
 
-slot9.cancelRepublishTimer = slot11
+slot11.cancelRepublishTimer = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.state
@@ -443,9 +448,9 @@ slot11 = function()
 
 end
 
-slot9.clearCachedActivityToken = slot11
+slot11.clearCachedActivityToken = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.state
@@ -459,9 +464,9 @@ slot11 = function()
 
 end
 
-slot9.clearActivityInviteId = slot11
+slot11.clearActivityInviteId = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = tonumber
 	slot2 = SysConfigData
@@ -520,9 +525,9 @@ slot11 = function()
 
 end
 
-slot9.getActivityTokenTtl = slot11
+slot11.getActivityTokenTtl = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.getActivityTokenTtl
@@ -566,9 +571,9 @@ slot11 = function()
 
 end
 
-slot9.getActivityRepublishInterval = slot11
+slot11.getActivityRepublishInterval = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.state
@@ -598,8 +603,9 @@ slot11 = function()
 	slot3 = slot3()
 
 	slot4 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot0 = publishCurrentActivity
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = PlatformShellActivityService
+		slot0 = slot0.publishCurrentActivity
 		slot2 = "mpa_activity_token_renew"
 		slot3 = true
 		slot4 = {
@@ -632,9 +638,9 @@ slot11 = function()
 
 end
 
-slot9.ensureRepublishTimerInternal = slot11
+slot11.ensureRepublishTimerInternal = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = PlatformShellActivityService
 	slot1 = slot1.state
@@ -702,9 +708,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.resetState = slot11
+slot11.resetState = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.state
@@ -749,9 +755,9 @@ slot11 = function()
 
 end
 
-slot9.resetLocalStateAfterShutdown = slot11
+slot11.resetLocalStateAfterShutdown = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.getSignedInUserId
@@ -855,9 +861,9 @@ slot11 = function()
 
 end
 
-slot9.bindSignedInUser = slot11
+slot11.bindSignedInUser = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = tonumber
 	slot2 = SysConfigData
@@ -981,9 +987,9 @@ slot11 = function()
 
 end
 
-slot9.getMaxPlayers = slot11
+slot11.getMaxPlayers = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = PlatformShellActivityService
 	slot0 = slot0.getMaxPlayers
@@ -1018,9 +1024,9 @@ slot11 = function()
 
 end
 
-slot9.getResolvedMaxPlayers = slot11
+slot11.getResolvedMaxPlayers = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = tonumber
 	--- END OF BLOCK #0 ---
@@ -1160,9 +1166,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot9.normalizeCurrentPlayers = slot11
+slot11.normalizeCurrentPlayers = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = tostring
 	slot2 = pg
@@ -1216,9 +1222,9 @@ slot11 = function()
 
 end
 
-slot9.getSelfUid = slot11
+slot11.getSelfUid = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1322,9 +1328,9 @@ slot11 = function()
 
 end
 
-slot9.isGameUserServerReady = slot11
+slot11.isGameUserServerReady = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1377,9 +1383,9 @@ slot11 = function()
 
 end
 
-slot9.getTeamInfo = slot11
+slot11.getTeamInfo = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1427,9 +1433,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.isValidTeamInfo = slot11
+slot11.isValidTeamInfo = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = 0
 	--- END OF BLOCK #0 ---
@@ -1504,9 +1510,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.countMembers = slot11
+slot11.countMembers = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1599,9 +1605,9 @@ slot11 = function()
 
 end
 
-slot9.isSelfInTeam = slot11
+slot11.isSelfInTeam = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1780,9 +1786,91 @@ slot11 = function()
 
 end
 
-slot9.isSelfTeamLeader = slot11
+slot11.isSelfTeamLeader = slot12
 
-slot11 = function()
+slot12 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = slot0.isGuidancePlayer
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 6-10, warpins: 1 ---
+	slot1 = slot0.matchStatus
+	slot2 = MatchConst
+	slot2 = slot2.MATCH_STATUS_INIT
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot1 = type
+	slot3 = slot0.isMatchStatusInit
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	if slot1 == "function" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-19, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isMatchStatusInit
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 20-21, warpins: 4 ---
+	slot1 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 22-22, warpins: 0 ---
+	slot1 = true
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-23, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot11.isConsoleMatchStatusInit = slot12
+
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1814,7 +1902,7 @@ slot11 = function()
 
 	--- BLOCK #3 8-12, warpins: 1 ---
 	slot1 = type
-	slot3 = slot0.isMatchStatusInit
+	slot3 = slot0.checkFunctionUnlock
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
@@ -1825,47 +1913,53 @@ slot11 = function()
 	end
 
 
-	--- BLOCK #4 13-17, warpins: 1 ---
+	--- BLOCK #4 13-20, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.isMatchStatusInit
-	slot1 = slot1(slot3)
+	slot1 = slot0.checkFunctionUnlock
+	slot4 = Const
+	slot4 = slot4.FUNCTION_NAME
+	slot4 = slot4.TEAM
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #4 ---
 
-	slot1 = if not slot1 then
+	if slot1 == true then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 18-20, warpins: 1 ---
-	slot1 = false
-	slot2 = "match_status_not_idle"
-
-	return slot1, slot2
-
+	--- BLOCK #5 21-27, warpins: 1 ---
+	slot1 = CommonSwitch
+	slot2 = Const
+	slot2 = slot2.FUNCTION_NAME
+	slot2 = slot2.TEAM
+	slot1 = slot1[slot2]
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 21-25, warpins: 4 ---
-	slot1 = PlatformShellActivityService
-	slot1 = slot1.isSelfInTeam
-	slot1 = slot1()
-	--- END OF BLOCK #6 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #7
+	if slot1 == false then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 26-30, warpins: 1 ---
+	--- BLOCK #6 28-30, warpins: 4 ---
+	slot1 = false
+	slot2 = "team_function_locked"
+
+	return slot1, slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 31-36, warpins: 2 ---
 	slot1 = PlatformShellActivityService
-	slot1 = slot1.isSelfTeamLeader
-	slot1 = slot1()
+	slot1 = slot1.isConsoleMatchStatusInit
+	slot3 = slot0
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #7 ---
 
 	slot1 = if not slot1 then
@@ -1875,9 +1969,9 @@ slot11 = function()
 	end
 
 
-	--- BLOCK #8 31-33, warpins: 1 ---
+	--- BLOCK #8 37-39, warpins: 1 ---
 	slot1 = false
-	slot2 = "not_team_leader"
+	slot2 = "match_status_not_idle"
 
 	return slot1, slot2
 
@@ -1886,20 +1980,57 @@ slot11 = function()
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 34-36, warpins: 3 ---
+	--- BLOCK #9 40-44, warpins: 2 ---
+	slot1 = PlatformShellActivityService
+	slot1 = slot1.isSelfInTeam
+	slot1 = slot1()
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 45-49, warpins: 1 ---
+	slot1 = PlatformShellActivityService
+	slot1 = slot1.isSelfTeamLeader
+	slot1 = slot1()
+	--- END OF BLOCK #10 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 50-52, warpins: 1 ---
+	slot1 = false
+	slot2 = "not_team_leader"
+
+	return slot1, slot2
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 53-55, warpins: 3 ---
 	slot1 = true
 	slot2 = "joinable"
 
 	return slot1, slot2
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot9.resolveActivityJoinState = slot11
+slot11.resolveActivityJoinState = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = true
 
@@ -1910,9 +2041,9 @@ slot11 = function()
 
 end
 
-slot9.canAllowCrossPlatformJoin = slot11
+slot11.canAllowCrossPlatformJoin = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = string
 	slot0 = slot0.isNilOrEmpty
@@ -1953,9 +2084,9 @@ slot11 = function()
 
 end
 
-slot9.getActivityInviteId = slot11
+slot11.getActivityInviteId = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = tostring
 	--- END OF BLOCK #0 ---
@@ -2124,9 +2255,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.buildCurrentActivity = slot11
+slot11.buildCurrentActivity = slot12
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = PlatformBridgeLuaFacade
 	slot4 = slot4.SetMultiplayerActivity
@@ -2388,9 +2519,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot9.publishActivityDirect = slot11
+slot11.publishActivityDirect = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformShellActivityService
 	slot2 = slot2.state
@@ -2603,9 +2734,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot9.clearActivity = slot11
+slot11.clearActivity = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2652,9 +2783,93 @@ slot11 = function(slot0)
 
 end
 
-slot9.isTokenRequestFailed = slot11
+slot11.isTokenRequestFailed = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = PlatformShellActivityService
+	slot0 = slot0.isPlayStationPlatform
+	slot0 = slot0()
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot0 = PlatformShellActivityService
+	slot0 = slot0.isSelfInTeam
+	slot0 = slot0()
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot0 = PlatformShellActivityService
+	slot0 = slot0.isSelfTeamLeader
+	slot0 = slot0()
+	slot0 = not slot0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-15, warpins: 3 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot11.shouldSkipActivityPublishForTeamMember = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformShellActivityService
+	slot1 = slot1.clearActivity
+	slot3 = tostring
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot5 = "team_member_not_leader"
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-10, warpins: 2 ---
+	slot3 = slot3(slot5)
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot11.clearActivityForNonLeader = slot12
+
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2744,7 +2959,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = false
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
 	--- BLOCK #8 36-40, warpins: 1 ---
@@ -2796,73 +3011,111 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = false
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
 	--- BLOCK #12 57-61, warpins: 1 ---
 	slot3 = PlatformShellActivityService
-	slot3 = slot3.state
-	slot3 = slot3.platformJoinTokenRefreshing
+	slot3 = slot3.shouldSkipActivityPublishForTeamMember
+	slot3 = slot3()
 	--- END OF BLOCK #12 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 62-66, warpins: 1 ---
+	--- BLOCK #13 62-77, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot3 = slot3.clearActivityForNonLeader
+	slot5 = slot0
+	slot6 = "_not_team_leader"
+	slot5 = slot5 .. slot6
+
+	slot3(slot5)
+
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "MultiplayerActivity publish skipped reason=not_team_leader sourceReason=%s"
+	slot7 = tostring
+	slot9 = slot0
+	MULTRES = slot7(slot9)
+
+	slot3(slot5, slot6, MULTRES)
+
+	slot3 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
+
+
+	--- BLOCK #14 78-82, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot3 = slot3.state
+	slot3 = slot3.platformJoinTokenRefreshing
+	--- END OF BLOCK #14 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 83-87, warpins: 1 ---
 	slot3 = PlatformShellActivityService
 	slot3 = slot3.state
 	slot3 = slot3.published
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #14 67-69, warpins: 1 ---
+	--- BLOCK #16 88-90, warpins: 1 ---
 	slot3 = PlatformShellActivityService
 	slot3 = slot3.state
 	slot3 = slot3.pendingPublish
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 70-70, warpins: 2 ---
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
-
-
-	--- BLOCK #16 71-73, warpins: 1 ---
-	slot3 = slot2.reuseCachedActivityToken
 	--- END OF BLOCK #16 ---
 
-	if slot3 == true then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #27
-	end
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 74-76, warpins: 1 ---
-	slot3 = slot2.forceRenewToken
+	--- BLOCK #17 91-91, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
-	if slot3 ~= true then
-	JUMP TO BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #18 92-94, warpins: 1 ---
+	slot3 = slot2.reuseCachedActivityToken
+	--- END OF BLOCK #18 ---
+
+	if slot3 == true then
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #18 77-85, warpins: 1 ---
+	--- BLOCK #19 95-97, warpins: 1 ---
+	slot3 = slot2.forceRenewToken
+	--- END OF BLOCK #19 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #20 98-106, warpins: 1 ---
 	slot3 = PlatformShellActivityService
 	slot3 = slot3.state
 	slot3 = slot3.lastActivityToken
@@ -2870,28 +3123,28 @@ slot10 = function(slot0, slot1, slot2)
 	slot4 = slot4.isNilOrEmpty
 	slot6 = slot3
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #20 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #19
-	else
 	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #19 86-89, warpins: 1 ---
+	--- BLOCK #21 107-110, warpins: 1 ---
 	slot4 = PlatformInviteTokenService
 	slot4 = slot4.getToken
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #20 90-98, warpins: 1 ---
+	--- BLOCK #22 111-119, warpins: 1 ---
 	slot4 = PlatformInviteTokenService
 	slot6 = slot4
 	slot4 = slot4.getToken
@@ -2901,52 +3154,52 @@ slot10 = function(slot0, slot1, slot2)
 	slot8 = slot8.ACTIVITY_TARGET_KEY
 	slot4 = slot4(slot6, slot7, slot8)
 	slot3 = slot4
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #21 99-104, warpins: 3 ---
+	--- BLOCK #23 120-125, warpins: 3 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
 	slot6 = slot3
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #23 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #22 105-109, warpins: 1 ---
+	--- BLOCK #24 126-130, warpins: 1 ---
 	slot4 = PlatformShellActivityService
 	slot4 = slot4.isRuntimeReady
 	slot4 = slot4()
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #24 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #23 110-114, warpins: 1 ---
+	--- BLOCK #25 131-135, warpins: 1 ---
 	slot4 = PlatformShellActivityService
 	slot4 = slot4.bindSignedInUser
 	slot4 = slot4()
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #25 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #24 115-134, warpins: 1 ---
+	--- BLOCK #26 136-155, warpins: 1 ---
 	slot4 = PlatformShellActivityService
 	slot4 = slot4.state
 	slot5 = true
@@ -2965,16 +3218,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot5 = slot5.buildCurrentActivity
 	slot7 = slot3
 	slot5 = slot5(slot7)
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #26 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #25 135-143, warpins: 1 ---
+	--- BLOCK #27 156-164, warpins: 1 ---
 	slot6 = PlatformShellActivityService
 	slot6 = slot6.publishActivityDirect
 	slot8 = slot5
@@ -2985,22 +3238,22 @@ slot10 = function(slot0, slot1, slot2)
 	slot6(slot8, slot9, slot10, slot11)
 
 	slot6 = true
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
+	UNCONDITIONAL JUMP; TARGET BLOCK #37
 
 
-	--- BLOCK #26 144-147, warpins: 1 ---
+	--- BLOCK #28 165-168, warpins: 1 ---
 	slot6 = PlatformShellActivityService
 	slot6 = slot6.state
 	slot7 = false
 	slot6.pendingPublish = slot7
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #27 148-176, warpins: 6 ---
+	--- BLOCK #29 169-197, warpins: 6 ---
 	slot3 = PlatformShellActivityService
 	slot3 = slot3.state
 	slot4 = true
@@ -3250,21 +3503,64 @@ slot10 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #15
 
 
-		--- BLOCK #15 103-108, warpins: 2 ---
+		--- BLOCK #15 103-107, warpins: 2 ---
 		slot2 = PlatformShellActivityService
-		slot2 = slot2.buildCurrentActivity
-		slot4 = slot0
-		slot2 = slot2(slot4)
+		slot2 = slot2.shouldSkipActivityPublishForTeamMember
+		slot2 = slot2()
 		--- END OF BLOCK #15 ---
 
-		slot2 = if not slot2 then
+		slot2 = if slot2 then
 		JUMP TO BLOCK #16
 		else
 		JUMP TO BLOCK #17
 		end
 
 
-		--- BLOCK #16 109-124, warpins: 1 ---
+		--- BLOCK #16 108-126, warpins: 1 ---
+		slot2 = PlatformShellActivityService
+		slot2 = slot2.state
+		slot3 = false
+		slot2.pendingPublish = slot3
+		slot2 = PlatformShellActivityService
+		slot2 = slot2.clearActivityForNonLeader
+		slot4 = sourceReason
+		slot5 = "_not_team_leader"
+		slot4 = slot4 .. slot5
+
+		slot2(slot4)
+
+		slot2 = logger
+		slot4 = slot2
+		slot2 = slot2.info
+		slot5 = "MultiplayerActivity publish skipped after token reason=not_team_leader sourceReason=%s"
+		slot6 = tostring
+		slot8 = sourceReason
+		MULTRES = slot6(slot8)
+
+		slot2(slot4, slot5, MULTRES)
+
+		return
+
+		--- END OF BLOCK #16 ---
+
+		FLOW; TARGET BLOCK #17
+
+
+		--- BLOCK #17 127-132, warpins: 2 ---
+		slot2 = PlatformShellActivityService
+		slot2 = slot2.buildCurrentActivity
+		slot4 = slot0
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #17 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #18
+		else
+		JUMP TO BLOCK #19
+		end
+
+
+		--- BLOCK #18 133-148, warpins: 1 ---
 		slot3 = PlatformShellActivityService
 		slot3 = slot3.state
 		slot4 = false
@@ -3286,12 +3582,12 @@ slot10 = function(slot0, slot1, slot2)
 
 		return
 
-		--- END OF BLOCK #16 ---
+		--- END OF BLOCK #18 ---
 
-		FLOW; TARGET BLOCK #17
+		FLOW; TARGET BLOCK #19
 
 
-		--- BLOCK #17 125-132, warpins: 2 ---
+		--- BLOCK #19 149-156, warpins: 2 ---
 		slot3 = PlatformShellActivityService
 		slot3 = slot3.publishActivityDirect
 		slot5 = slot2
@@ -3302,78 +3598,87 @@ slot10 = function(slot0, slot1, slot2)
 		slot3(slot5, slot6, slot7, slot8)
 
 		return
-		--- END OF BLOCK #17 ---
+		--- END OF BLOCK #19 ---
 
 
 
 	end
 
 	slot10 = slot2.forceRenewToken
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #29 ---
 
 	if slot10 ~= true then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #28 177-178, warpins: 1 ---
+	--- BLOCK #30 198-199, warpins: 1 ---
 	slot10 = false
-	--- END OF BLOCK #28 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
-
-
-	--- BLOCK #29 179-179, warpins: 1 ---
-	slot10 = true
-
-	--- END OF BLOCK #29 ---
-
-	FLOW; TARGET BLOCK #30
-
-
-	--- BLOCK #30 180-183, warpins: 2 ---
-	slot4(slot6, slot7, slot8, slot9, slot10)
-
-	slot4 = true
-
-	return slot4
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 184-184, warpins: 2 ---
-	return slot3
+	--- BLOCK #31 200-200, warpins: 1 ---
+	slot10 = true
+
 	--- END OF BLOCK #31 ---
 
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 185-185, warpins: 2 ---
-	return slot3
+	--- BLOCK #32 201-204, warpins: 2 ---
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot4 = true
+
+	return slot4
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 186-186, warpins: 2 ---
+	--- BLOCK #33 205-205, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 187-187, warpins: 2 ---
-	return slot6
+	--- BLOCK #34 206-206, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 207-207, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #35 ---
+
+	FLOW; TARGET BLOCK #36
+
+
+	--- BLOCK #36 208-208, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 209-209, warpins: 2 ---
+	return slot6
+	--- END OF BLOCK #37 ---
 
 
 
 end
 
-slot11 = function(slot0)
+slot11.publishCurrentActivity = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformShellActivityService
 	slot1 = slot1.isPlatformSupported
@@ -3405,9 +3710,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.isSupported = slot11
+slot11.isSupported = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformShellActivityService
 	slot2 = slot2.state
@@ -3506,9 +3811,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot9.init = slot11
+slot11.init = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformShellActivityService
 	slot1 = slot1.state
@@ -3612,9 +3917,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.shutdown = slot11
+slot11.shutdown = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformShellActivityService
 	slot2 = slot2.isPlayStationPlatform
@@ -3692,7 +3997,7 @@ slot11 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
@@ -3702,7 +4007,7 @@ slot11 = function(slot0, slot1)
 	slot3 = slot3()
 	--- END OF BLOCK #7 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
@@ -3710,7 +4015,21 @@ slot11 = function(slot0, slot1)
 
 
 	--- BLOCK #8 33-37, warpins: 1 ---
-	slot3 = publishCurrentActivity
+	slot3 = PlatformShellActivityService
+	slot3 = slot3.isSelfTeamLeader
+	slot3 = slot3()
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 38-43, warpins: 2 ---
+	slot3 = PlatformShellActivityService
+	slot3 = slot3.publishCurrentActivity
 	slot5 = "login_activity_after_clear"
 	slot6 = false
 	slot7 = {
@@ -3719,24 +4038,25 @@ slot11 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 38-38, warpins: 3 ---
-	return slot2
 	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 44-44, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot9.clearCurrentActivity = slot11
+slot11.clearCurrentActivity = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = publishCurrentActivity
+slot12 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = PlatformShellActivityService
+	slot1 = slot1.publishCurrentActivity
 	slot3 = "login_activity"
 	slot4 = false
 	slot5 = {
@@ -3750,9 +4070,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.publishLoginActivity = slot11
+slot11.publishLoginActivity = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.init
@@ -3791,11 +4111,12 @@ slot11 = function(slot0)
 
 end
 
-slot9.ensureRepublishTimer = slot11
+slot11.ensureRepublishTimer = slot12
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = publishCurrentActivity
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = PlatformShellActivityService
+	slot2 = slot2.publishCurrentActivity
 	--- END OF BLOCK #0 ---
 
 	slot4 = if not slot1 then
@@ -3805,14 +4126,14 @@ slot11 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 5-5, warpins: 1 ---
 	slot4 = "team_activity_refresh"
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-6, warpins: 2 ---
+	--- BLOCK #2 6-7, warpins: 2 ---
 	slot5 = true
 
 	return slot2(slot4, slot5)
@@ -3822,9 +4143,117 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot9.refreshCurrentTeamActivity = slot11
+slot11.refreshCurrentTeamActivity = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = PlatformShellActivityService
+	slot2 = slot2.isPlayStationPlatform
+	slot2 = slot2()
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isSupported
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot2 = PlatformShellActivityService
+	slot2 = slot2.isRuntimeReady
+	slot2 = slot2()
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-17, warpins: 3 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-19, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 1 ---
+	slot1 = "team_activity_recreate"
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-27, warpins: 2 ---
+	slot2 = PlatformShellActivityService
+	slot2 = slot2.clearActivity
+	slot4 = slot1
+	slot5 = true
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 28-33, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot3 = slot3.publishCurrentActivity
+	slot5 = slot1
+	slot6 = true
+	slot7 = {
+		forceRenewToken = true
+	}
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 34-34, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot11.recreateCurrentTeamActivity = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = PlatformShellActivityService
 	slot1 = slot1.state
@@ -3859,9 +4288,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onSuspend = slot11
+slot11.onSuspend = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformShellActivityService
 	slot1 = slot1.state
@@ -3875,9 +4304,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onResume = slot11
+slot11.onResume = slot12
 
-return slot9
+return slot11
 --- END OF BLOCK #0 ---
 
 

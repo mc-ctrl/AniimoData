@@ -11,12 +11,13 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-141, warpins: 1 ---
+	--- BLOCK #0 1-172, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
+	slot0.objectReference = slot1
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "root"
@@ -149,9 +150,39 @@ slot3 = function(slot0)
 	slot0.templateUWidget = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "txtEdit"
+	slot5 = "onlineIDImage"
 	slot2 = slot2(slot4, slot5)
-	slot0.txtEdit = slot2
+	slot0.onlineIDImage = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "onlineIDText"
+	slot2 = slot2(slot4, slot5)
+	slot0.onlineIDText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtIDUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtIDUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "countDownUCountDown"
+	slot2 = slot2(slot4, slot5)
+	slot0.countDownUCountDown = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNameUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtNameUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnReportUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnReportUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textReportUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textReportUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

@@ -1,10 +1,10 @@
 --- BLOCK #0 1-44, warpins: 1 ---
 slot0 = {}
 slot1 = {
+	CallFriends = 3,
 	EcologyPerform = 2,
 	Custom = 1,
-	SheepGather = 5,
-	CallFriends = 3
+	SheepGather = 5
 }
 slot0.BehaviourType = slot1
 slot1 = {}
@@ -26,24 +26,24 @@ slot3 = "SheepGather.GB_SheepGather"
 slot1[slot2] = slot3
 slot0.BehaviourClassPath = slot1
 slot1 = {
-	SheepGather = 401,
-	SheepAbility = 402,
-	SearchSheep = 400,
-	HelpSkill = 202,
-	Formation = 201,
 	QueueFollow = 200,
 	CustomAnimation = 101,
 	MoveToResPoint = 100,
 	MakeGroup = 0,
-	CoolDown = -1
+	CoolDown = -1,
+	SheepGather = 401,
+	SheepAbility = 402,
+	SearchSheep = 400,
+	HelpSkill = 202,
+	Formation = 201
 }
 slot0.TacheDefine = slot1
 slot1 = {
-	AbnormalFinish = 4,
 	NormalFinish = 3,
 	Running = 2,
 	None = 0,
-	MakeGroup = 1
+	MakeGroup = 1,
+	AbnormalFinish = 4
 }
 slot0.RunningState = slot1
 slot1 = 2500

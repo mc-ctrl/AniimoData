@@ -283,7 +283,7 @@ slot11 = function(slot0, slot1, slot2)
 
 	--- BLOCK #2 7-13, warpins: 1 ---
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.lastSwitchTime
 	slot3 = slot3 - slot4
 	slot4 = SwitchEvaluateCD
@@ -307,12 +307,12 @@ slot11 = function(slot0, slot1, slot2)
 
 	--- BLOCK #4 15-26, warpins: 3 ---
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot0.lastSwitchTime = slot3
 	slot3 = slot0.curScore
 	slot0.curScore = slot1
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot0.stateChangeTime = slot4
 	slot4 = nil
 	slot0.keepMark = slot4
@@ -483,7 +483,7 @@ slot11 = function(slot0, slot1, slot2)
 
 	--- BLOCK #1 4-10, warpins: 1 ---
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.lastPlayTextTime
 	slot3 = slot3 - slot4
 	slot4 = PlayTextAnimCD
@@ -507,7 +507,7 @@ slot11 = function(slot0, slot1, slot2)
 
 	--- BLOCK #3 12-16, warpins: 3 ---
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot0.lastPlayTextTime = slot3
 	--- END OF BLOCK #3 ---
 
@@ -668,7 +668,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #4 14-19, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot0.stateChangeTime
 	slot3 = slot3 + 20
 	--- END OF BLOCK #4 ---
@@ -739,7 +739,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #7 54-59, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot0.stateChangeTime
 	slot3 = slot3 + 10
 	--- END OF BLOCK #7 ---

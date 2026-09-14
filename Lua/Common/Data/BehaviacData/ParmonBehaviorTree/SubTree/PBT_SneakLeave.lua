@@ -7,18 +7,18 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
-	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_SneakLeave",
-	version = 5
+	useForRoute = false,
+	version = 5,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	const = 0,
 	type = "int",
+	const = 0,
+	value = "0",
 	name = "tTargetId"
 }
 slot4[1] = slot5

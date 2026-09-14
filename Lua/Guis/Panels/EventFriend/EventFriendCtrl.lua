@@ -386,7 +386,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	slot19 = LuaUIUtils
 	slot19 = slot19.getLastTimeStr
-	slot21 = slot17.loginTime
+	slot21 = slot17.lastLogoutTime
 	slot19, slot20 = slot19(slot21)
 	slot21 = ClientTextUtils
 	slot21 = slot21.setText

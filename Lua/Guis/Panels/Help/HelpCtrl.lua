@@ -1020,7 +1020,7 @@ slot21 = function(slot0)
 	slot1[slot2] = slot3
 	slot1 = slot0.functionBtnMap
 	slot2 = UIConst
-	slot2 = slot2.UI_ID_ILLUSTRATED_PET_DETAILS
+	slot2 = slot2.UI_ID_PET_RESEARCH
 
 	slot3 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
@@ -1592,7 +1592,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
@@ -1723,23 +1723,49 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 49-57, warpins: 2 ---
+	--- BLOCK #6 49-58, warpins: 2 ---
 	slot9 = slot5
 	slot7 = slot5.GetRefValue
 	slot10 = "keyHotKeyContent"
 	slot7 = slot7(slot9, slot10)
+	slot8 = string
+	slot8 = slot8.isNilOrEmpty
+	slot10 = slot3.actionPath
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #6 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 59-63, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.SetHotKeyPaths
+	slot11 = ""
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #8 64-68, warpins: 1 ---
 	slot10 = slot7
 	slot8 = slot7.SetHotKeyPaths
 	slot11 = slot3.actionPath
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #7 58-74, warpins: 1 ---
+	--- BLOCK #9 69-85, warpins: 1 ---
 	slot7 = true
 	slot1.skipInListSwitch = slot7
 	slot7 = ClientTextUtils
@@ -1757,16 +1783,16 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot10 = "txNumberUSDFText"
 	slot7 = slot7(slot9, slot10)
 	slot8 = slot3.unlockCnt
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 75-85, warpins: 1 ---
+	--- BLOCK #10 86-96, warpins: 1 ---
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot7
@@ -1779,12 +1805,12 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot8(slot10, MULTRES)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #9 86-90, warpins: 1 ---
+	--- BLOCK #11 97-101, warpins: 1 ---
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot7
@@ -1792,70 +1818,70 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #10 91-97, warpins: 3 ---
+	--- BLOCK #12 102-108, warpins: 4 ---
 	slot7 = tostring
 	slot9 = slot3.id
 	slot7 = slot7(slot9)
 	slot1.name = slot7
 	slot7 = slot0.needResetSelectBtn
-	--- END OF BLOCK #10 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #11 98-99, warpins: 1 ---
-	--- END OF BLOCK #11 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #12 100-102, warpins: 1 ---
-	slot7 = slot3.isUnlock
 	--- END OF BLOCK #12 ---
 
 	slot7 = if slot7 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #13 103-105, warpins: 1 ---
-	slot7 = slot0.gotoIndex
+	--- BLOCK #13 109-110, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
-	if slot7 == 0 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #14 106-108, warpins: 1 ---
-	slot7 = slot0.curEntry
+	--- BLOCK #14 111-113, warpins: 1 ---
+	slot7 = slot3.isUnlock
 	--- END OF BLOCK #14 ---
 
-	if slot7 == nil then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #15 109-120, warpins: 1 ---
+	--- BLOCK #15 114-116, warpins: 1 ---
+	slot7 = slot0.gotoIndex
+	--- END OF BLOCK #15 ---
+
+	if slot7 == 0 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 117-119, warpins: 1 ---
+	slot7 = slot0.curEntry
+	--- END OF BLOCK #16 ---
+
+	if slot7 == nil then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 120-131, warpins: 1 ---
 	slot7 = true
 	slot1.isSelected = slot7
 	slot0.selectedBtn = slot1
@@ -1890,80 +1916,80 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot7(slot9, slot10, slot11)
 
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 121-124, warpins: 6 ---
-	slot7 = slot0.gotoIndex
-	slot8 = slot3.index
-	--- END OF BLOCK #16 ---
-
-	if slot7 ~= slot8 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #17 125-128, warpins: 1 ---
-	slot7 = slot0.gotoIndex
-	slot8 = slot3.groupIndex
 	--- END OF BLOCK #17 ---
 
-	if slot7 ~= slot8 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 129-130, warpins: 1 ---
-	slot7 = false
+	--- BLOCK #18 132-135, warpins: 6 ---
+	slot7 = slot0.gotoIndex
+	slot8 = slot3.index
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #19 131-131, warpins: 2 ---
-	slot7 = true
+	--- BLOCK #19 136-139, warpins: 1 ---
+	slot7 = slot0.gotoIndex
+	slot8 = slot3.groupIndex
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #20 132-133, warpins: 2 ---
+	--- BLOCK #20 140-141, warpins: 1 ---
+	slot7 = false
 	--- END OF BLOCK #20 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #24
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 134-135, warpins: 1 ---
+	--- BLOCK #21 142-142, warpins: 2 ---
+	slot7 = true
 	--- END OF BLOCK #21 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #24
-	end
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 136-137, warpins: 1 ---
+	--- BLOCK #22 143-144, warpins: 2 ---
 	--- END OF BLOCK #22 ---
 
-	slot4 = if not slot4 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #23 138-146, warpins: 1 ---
+	--- BLOCK #23 145-146, warpins: 1 ---
+	--- END OF BLOCK #23 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #24 147-148, warpins: 1 ---
+	--- END OF BLOCK #24 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 149-157, warpins: 1 ---
 	slot8 = 0
 	slot0.gotoIndex = slot8
 	slot8 = slot1.luaClick
@@ -1995,14 +2021,14 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot8(slot10, slot11, slot12)
 
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #24 147-148, warpins: 4 ---
+	--- BLOCK #26 158-159, warpins: 4 ---
 	return
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #26 ---
 
 
 
@@ -3402,8 +3428,8 @@ slot21 = function(slot0, slot1, slot2)
 
 	--- BLOCK #7 53-64, warpins: 1 ---
 	slot8 = {
-		isTitle = true,
-		tIndex = 0
+		tIndex = 0,
+		isTitle = true
 	}
 	slot9 = HelpConst
 	slot9 = slot9.EntryTypeName

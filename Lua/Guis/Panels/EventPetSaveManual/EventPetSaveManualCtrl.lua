@@ -975,18 +975,42 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot10 = if not slot10 then
 	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #18 99-99, warpins: 2 ---
-	slot10 = slot8.editorName
+	--- BLOCK #18 99-100, warpins: 2 ---
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	slot8 = if slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #19 100-113, warpins: 2 ---
+	--- BLOCK #19 101-106, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.getLocalizationText
+	slot12 = slot8.name
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #19 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 107-107, warpins: 2 ---
+	slot10 = ""
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 108-121, warpins: 3 ---
 	slot11 = ClientTextUtils
 	slot11 = slot11.setText
 	slot13 = slot7
@@ -1003,7 +1027,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot11(slot13, MULTRES)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
 
 

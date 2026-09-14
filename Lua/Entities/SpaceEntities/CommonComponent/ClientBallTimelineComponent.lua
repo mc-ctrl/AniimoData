@@ -55,9 +55,26 @@ end
 slot6.init = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopBallTimelineTick
+
+	slot1(slot3)
+
+	slot1 = slot0.ballTimeline
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot1 = slot0.ballTimeline
+	slot3 = slot1
+	slot1 = slot1.stopTimeline
 
 	slot1(slot3)
 
@@ -67,6 +84,12 @@ slot7 = function(slot0)
 
 	slot1(slot3)
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-21, warpins: 2 ---
 	slot1 = nil
 	slot0.ballTimeline = slot1
 	slot1 = nil
@@ -75,7 +98,7 @@ slot7 = function(slot0)
 	slot0.timelineId = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -252,27 +275,84 @@ slot7 = function(slot0)
 		slot4 = if slot4 then
 		JUMP TO BLOCK #9
 		else
-		JUMP TO BLOCK #10
+		JUMP TO BLOCK #14
 		end
 
 
-		--- BLOCK #9 41-46, warpins: 1 ---
+		--- BLOCK #9 41-51, warpins: 1 ---
 		slot4 = self
 		slot4 = slot4.ballTimeline
-		slot6 = slot4
-		slot4 = slot4.tick
-		slot7 = slot1
+		slot5 = slot4.isEnd
+		slot8 = slot4
+		slot6 = slot4.tick
+		slot9 = slot1
 
-		slot4(slot6, slot7)
+		slot6(slot8, slot9)
 
+		slot6 = self
+		slot6 = slot6.onTimelineEnd
 		--- END OF BLOCK #9 ---
 
-		FLOW; TARGET BLOCK #10
+		slot6 = if slot6 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #14
+		end
 
 
-		--- BLOCK #10 47-47, warpins: 2 ---
-		return
+		--- BLOCK #10 52-53, warpins: 1 ---
 		--- END OF BLOCK #10 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #11 54-57, warpins: 1 ---
+		slot6 = self
+		slot6 = slot6.ballTimeline
+		--- END OF BLOCK #11 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #12
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #12 58-62, warpins: 1 ---
+		slot6 = self
+		slot6 = slot6.ballTimeline
+		slot6 = slot6.isEnd
+		--- END OF BLOCK #12 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #13
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #13 63-69, warpins: 1 ---
+		slot6 = self
+		slot6 = slot6.timelineId
+		slot7 = self
+		slot7 = slot7.onTimelineEnd
+		slot9 = self
+		slot10 = slot6
+
+		slot7(slot9, slot10)
+
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 70-70, warpins: 6 ---
+		return
+		--- END OF BLOCK #14 ---
 
 
 
@@ -291,7 +371,31 @@ end
 slot6.startBallTimelineTick = slot7
 
 slot7 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-18, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.abilityMgr
+	slot6 = slot4
+	slot4 = slot4.getTimelineTemplate
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-11, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #2 12-29, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.abilityMgr
@@ -308,34 +412,34 @@ slot7 = function(slot0, slot1, slot2, slot3)
 	slot7 = slot0.actorId
 	slot5 = slot5(slot7)
 	slot4.constCasterInfo = slot5
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 19-21, warpins: 1 ---
-	slot5 = slot2.actorId
-	--- END OF BLOCK #1 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 22-22, warpins: 2 ---
-	slot5 = 0
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 23-51, warpins: 2 ---
+	--- BLOCK #3 30-32, warpins: 1 ---
+	slot5 = slot2.actorId
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 33-33, warpins: 2 ---
+	slot5 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 34-50, warpins: 2 ---
 	slot4.targetActorId = slot5
 	slot5 = slot4.constCasterInfo
 	slot6 = slot0.actorId
@@ -350,9 +454,36 @@ slot7 = function(slot0, slot1, slot2, slot3)
 	slot8 = slot1
 	slot9 = 1
 	slot10 = slot4
+	slot5 = slot5(slot7, slot8, slot9, slot10)
+	--- END OF BLOCK #5 ---
 
-	slot5(slot7, slot8, slot9, slot10)
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
+
+	--- BLOCK #6 51-62, warpins: 1 ---
+	slot5 = nil
+	slot0.timelineId = slot5
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.abilityMgr
+	slot5 = slot5.combatParamsPool
+	slot7 = slot5
+	slot5 = slot5.returnObject
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot5 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #7 63-76, warpins: 1 ---
 	slot5 = slot0.ballTimeline
 	slot7 = slot5
 	slot5 = slot5.clearExitCallback
@@ -385,16 +516,16 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 52-59, warpins: 1 ---
+	--- BLOCK #8 77-84, warpins: 1 ---
 	slot5 = slot0.ballTimeline
 	slot7 = slot5
 	slot5 = slot5.addExitCallback
@@ -405,14 +536,30 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	slot5(slot7, MULTRES)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #5 60-61, warpins: 2 ---
-	return
-	--- END OF BLOCK #5 ---
+	--- BLOCK #9 85-87, warpins: 2 ---
+	slot5 = true
+
+	return slot5
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 88-88, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 89-89, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #11 ---
 
 
 

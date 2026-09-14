@@ -16,17 +16,17 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	type = "float",
 	name = "disToTgtForSkillMon",
-	value = "0"
+	value = "0",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	type = "float",
 	name = "goBackDist",
-	value = "0"
+	value = "0",
+	const = 0
 }
 slot4[2] = slot5
 slot3.pars = slot4

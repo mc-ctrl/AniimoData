@@ -60,7 +60,7 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-44, warpins: 2 ---
+	--- BLOCK #2 14-51, warpins: 2 ---
 	slot2 = SlotOptionComponent
 	slot4 = slot0
 	slot5 = slot0.view
@@ -98,6 +98,15 @@ slot7 = function(slot0, slot1)
 	slot2 = slot0.onPartModelLoaded
 
 	slot2(slot4)
+
+	slot2 = slot0.view
+	slot2 = slot2.btnHairTieUButton
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -185,7 +194,7 @@ slot7 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = AvatarUtils
-	slot2 = slot2.renderBackGroundSwitchSelector
+	slot2 = slot2.renderPhotographyStudioBackgroundSelector
 	slot4 = slot0.view
 	slot4 = slot4.backgroundSelectorUSelector
 
@@ -328,86 +337,14 @@ end
 slot4.onVisibleChange = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
 
 	slot1(slot3)
 
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.checkUIOpen
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_APPEARANCE_V2
-	slot1 = slot1(slot3, slot4)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 14-21, warpins: 1 ---
-	slot1 = pairs
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.appearanceV2
-	slot3 = slot3.components
-	slot1, slot2, slot3 = slot1(slot3)
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #2 22-23, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 24-26, warpins: 1 ---
-	slot6 = slot5.slotOptionComponent
-	--- END OF BLOCK #3 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 27-30, warpins: 1 ---
-	slot6 = slot5.slotOptionComponent
-	slot8 = slot6
-	slot6 = slot6.refreshBagButton
-
-	slot6(slot8)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 31-32, warpins: 4 ---
-	--- END OF BLOCK #5 ---
-
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #6
-
-
-	--- BLOCK #6 33-33, warpins: 2 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #0 ---
 
 
 

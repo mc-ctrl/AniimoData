@@ -76,9 +76,9 @@ slot5 = function(slot0)
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.entity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.entity
 
 	slot1(slot3)
 

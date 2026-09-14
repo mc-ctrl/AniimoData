@@ -1,4 +1,4 @@
---- BLOCK #0 1-43, warpins: 1 ---
+--- BLOCK #0 1-54, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -14,12 +14,79 @@ slot3 = slot3(slot5)
 slot4 = require
 slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
-slot5 = slot0.LightClass
-slot7 = "GrabEggAreaComponent"
-slot8 = slot1
-slot5 = slot5(slot7, slot8)
+slot5 = require
+slot7 = "Const.MessageName"
+slot5 = slot5(slot7)
+slot6 = slot0.LightClass
+slot8 = "GrabEggAreaComponent"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
+slot7 = {}
+slot8 = slot5.GRAB_EGG_NOVICE_PROTECTION_CHANGED
+slot9 = {
+	"refreshNoviceMapFogVisual"
+}
+slot7[slot8] = slot9
+slot6.messages = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.shouldRevealAllMapFog
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.shouldRevealAllMapFog
+	slot5 = slot0
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 13-14, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 0 ---
+	slot2 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	slot0.appearAreaMarkData = slot1
@@ -31,93 +98,326 @@ slot6 = function(slot0)
 
 end
 
-slot5.findObjects = slot6
+slot6.findObjects = slot8
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.map
-	slot3 = slot1
-	slot1 = slot1.getGrabEggAppearAreaInfo
-	slot4 = slot0.ctrl
-	slot4 = slot4.sceneId
-	slot1 = slot1(slot3, slot4)
+slot8 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshNoviceMapFogVisual
+
+	slot1(slot3)
+
+	return
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+
+
+end
+
+slot6.init = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = shouldRevealAllMapFog
+	slot3 = slot0.ctrl
+	slot3 = slot3.sceneId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-15, warpins: 1 ---
-	slot2 = next
-	slot4 = slot1
-	slot2 = slot2(slot4)
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.restoreNoviceMapFogVisual
+
+	slot1(slot3)
+
+	return
 
 	--- END OF BLOCK #1 ---
 
-	if slot2 == nil then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-16, warpins: 2 ---
-	return
-
+	--- BLOCK #2 11-13, warpins: 2 ---
+	slot1 = slot0.ctrl
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 17-20, warpins: 2 ---
-	slot2 = pairs
-	slot4 = slot1
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #4 21-25, warpins: 1 ---
-	slot7 = Time
-	slot7 = slot7.secondCache
-	slot8 = slot6.endTimeStamp
-	--- END OF BLOCK #4 ---
-
-	if slot7 < slot8 then
-	JUMP TO BLOCK #5
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #5 26-30, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.instantiateAppearArea
-	slot10 = slot6.id
-	slot11 = slot6
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot2 = slot1.mapFogGenerator
+	--- END OF BLOCK #3 ---
 
-	slot7(slot9, slot10, slot11)
+	FLOW; TARGET BLOCK #4
 
+
+	--- BLOCK #4 15-16, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 17-21, warpins: 1 ---
+	slot3 = NotNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 31-32, warpins: 3 ---
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot3 = slot2.gameObject
 	--- END OF BLOCK #6 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #7
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 33-33, warpins: 1 ---
+	--- BLOCK #7 25-25, warpins: 3 ---
+	slot3 = nil
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-27, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 28-32, warpins: 1 ---
+	slot4 = NotNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 33-33, warpins: 1 ---
+	slot3 = nil
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-36, warpins: 3 ---
+	slot4 = slot0.noviceMapFogVisualOverridden
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 37-39, warpins: 1 ---
+	slot4 = slot0.noviceMapFogVisualTarget
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 40-42, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.restoreNoviceMapFogVisual
+
+	slot4(slot6)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 43-45, warpins: 3 ---
+	slot4 = slot0.noviceMapFogVisualOverridden
+	--- END OF BLOCK #14 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 46-51, warpins: 1 ---
+	slot4 = true
+	slot0.noviceMapFogVisualOverridden = slot4
+	slot4 = slot1.mapFogBlock
+	slot0.originalMapFogBlock = slot4
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 52-52, warpins: 1 ---
+	slot0.noviceMapFogVisualTarget = slot3
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 53-56, warpins: 3 ---
+	slot4 = false
+	slot1.mapFogBlock = slot4
+	--- END OF BLOCK #17 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 57-61, warpins: 1 ---
+	slot4 = UIUtils
+	slot4 = slot4.ScaleVisible
+	slot6 = slot3
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 62-62, warpins: 2 ---
+	return
+	--- END OF BLOCK #19 ---
+
+
+
+end
+
+slot6.refreshNoviceMapFogVisual = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.noviceMapFogVisualOverridden
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot1 = slot0.noviceMapFogVisualTarget
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 8-12, warpins: 1 ---
+	slot2 = NotNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-17, warpins: 1 ---
+	slot2 = UIUtils
+	slot2 = slot2.ScaleVisible
+	slot4 = slot1
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-20, warpins: 3 ---
+	slot2 = slot0.ctrl
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot3 = slot0.originalMapFogBlock
+	slot2.mapFogBlock = slot3
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-29, warpins: 2 ---
+	slot3 = nil
+	slot0.noviceMapFogVisualOverridden = slot3
+	slot3 = nil
+	slot0.noviceMapFogVisualTarget = slot3
+	slot3 = nil
+	slot0.originalMapFogBlock = slot3
+
 	return
 	--- END OF BLOCK #7 ---
 
@@ -125,9 +425,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.init = slot6
+slot6.restoreNoviceMapFogVisual = slot8
 
-slot6 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = Time
 	slot3 = slot3.secondCache
@@ -240,9 +540,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.instantiateAppearArea = slot6
+slot6.instantiateAppearArea = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.appearAreaMarkData
 	slot2 = slot2[slot1]
@@ -387,9 +687,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.destroyAppearArea = slot6
+slot6.destroyAppearArea = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.appearAreaMarkData
 
@@ -486,9 +786,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.destroyAllAppearArea = slot6
+slot6.destroyAllAppearArea = slot8
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-65, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -657,9 +957,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.loadResInner = slot6
+slot6.loadResInner = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.appearAreaMarkData
 	slot2 = slot2[slot1]
@@ -751,9 +1051,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.refreshCountDown = slot6
+slot6.refreshCountDown = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -875,9 +1175,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.adjustScale = slot6
+slot6.adjustScale = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.appearAreaMarkData
@@ -943,10 +1243,15 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.adjustActiveState = slot6
+slot6.adjustActiveState = slot8
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.restoreNoviceMapFogVisual
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.destroyAllAppearArea
 
@@ -959,31 +1264,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.destroy = slot6
+slot6.onDestroy = slot8
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.destroy
-
-	slot1(slot3)
-
-	slot1 = UIComponent
-	slot1 = slot1.onDestroy
-	slot3 = slot0
-
-	slot1(slot3)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot5.onDestroy = slot6
-
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

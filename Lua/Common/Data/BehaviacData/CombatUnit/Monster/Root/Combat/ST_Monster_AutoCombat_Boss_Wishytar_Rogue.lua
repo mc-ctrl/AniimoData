@@ -7,40 +7,40 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Wishytar_Rogue",
 	useForRoute = false,
 	version = 7,
-	agenttype = "PuppetAgent"
+	agenttype = "PuppetAgent",
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Wishytar_Rogue"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
 	name = "dashWeight",
-	value = "0",
-	const = 0
+	const = 0,
+	type = "int",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "int",
 	name = "swordWeight",
-	value = "0",
-	const = 0
+	const = 0,
+	type = "int",
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "int",
 	name = "attackWeight",
-	value = "0",
-	const = 0
+	const = 0,
+	type = "int",
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "int",
 	name = "moveWeight",
-	value = "1",
-	const = 1
+	const = 1,
+	type = "int",
+	value = "1"
 }
 slot4[4] = slot5
 slot3.pars = slot4

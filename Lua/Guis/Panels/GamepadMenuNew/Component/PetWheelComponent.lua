@@ -1,26 +1,29 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
-slot2 = "Guis.Helper.UIComponent"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Guis.Helper.UIComponent"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.AudioConst"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.LuaUIUtils"
+slot5 = "Const.AudioConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientTextUtils"
+slot6 = "Utils.LuaUIUtils"
 slot4 = slot4(slot6)
-slot5 = slot1.LightClass
-slot7 = "PetWheelComponent"
-slot8 = slot0
-slot5 = slot5(slot7, slot8)
-slot6 = 8
+slot5 = require
+slot7 = "Utils.ClientTextUtils"
+slot5 = slot5(slot7)
+slot6 = slot2.LightClass
+slot8 = "PetWheelComponent"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
+slot7 = 8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {}
 	slot0.petWheels = slot1
@@ -38,9 +41,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.initView = slot7
+slot6.initView = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot0.petWheels = slot1
@@ -54,9 +57,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.clearWheels = slot7
+slot6.clearWheels = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.getAllPetPrepareBattleTeamInfo
@@ -77,9 +80,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.refreshPetPrepareBattleTeamList = slot7
+slot6.refreshPetPrepareBattleTeamList = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot2 = slot1.transform
 	slot5 = slot2
@@ -496,9 +499,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.initPetWheel = slot7
+slot6.initPetWheel = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.petWheels
 	slot2 = #slot2
@@ -537,9 +540,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.setWheelOffset = slot7
+slot6.setWheelOffset = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = slot0.petWheels
@@ -577,9 +580,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.resetWheel = slot7
+slot6.resetWheel = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot0.petWheels
@@ -614,9 +617,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5._broadcastWheelIndex = slot7
+slot6._broadcastWheelIndex = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot0.petWheels
@@ -655,9 +658,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5._broadcastListName = slot7
+slot6._broadcastListName = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot0.petWheels
@@ -696,9 +699,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5._broadcastListBtnList = slot7
+slot6._broadcastListBtnList = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.petWheels
@@ -811,9 +814,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.refreshSelectedPetTeam = slot7
+slot6.refreshSelectedPetTeam = slot8
 
-slot7 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.petPrepareBattleTeamList
 	--- END OF BLOCK #0 ---
@@ -826,7 +829,7 @@ slot7 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 4-4, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -983,9 +986,9 @@ slot7 = function(slot0, slot1, slot2)
 
 end
 
-slot5.refreshPetTeam = slot7
+slot6.refreshPetTeam = slot8
 
-slot7 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1129,9 +1132,9 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.setupPetTeamEntry = slot7
+slot6.setupPetTeamEntry = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.min
@@ -1404,9 +1407,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.refreshPet = slot7
+slot6.refreshPet = slot8
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

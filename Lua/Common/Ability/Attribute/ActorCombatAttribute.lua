@@ -1,4 +1,4 @@
---- BLOCK #0 1-183, warpins: 1 ---
+--- BLOCK #0 1-193, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -1678,7 +1678,7 @@ slot19 = function(slot0)
 	slot3 = slot0
 	slot1 = slot0.getAttribValue
 	slot4 = AttributeConst
-	slot4 = slot4.bp_max
+	slot4 = slot4.bp_max_cur
 
 	return slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
@@ -1699,7 +1699,7 @@ slot19 = function(slot0)
 	slot4 = slot0
 	slot2 = slot0.getAttribValue
 	slot5 = AttributeConst
-	slot5 = slot5.bp_max
+	slot5 = slot5.bp_max_cur
 	slot2 = slot2(slot4, slot5)
 	slot1 = slot1 / slot2
 
@@ -1782,7 +1782,7 @@ end
 slot16.getRunSpeedRatio = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getAttribRatioValue
 	slot4 = AttributeConst
@@ -1794,49 +1794,72 @@ slot19 = function(slot0)
 	slot5 = slot5.speed_ratio_load_adjustment_v
 	slot2 = slot2(slot4, slot5)
 	slot1 = slot1 * slot2
-	slot2 = slot0.entity
-	slot4 = slot2
-	slot2 = slot2.FAST_CARRY_EGG_ST
-	slot2 = slot2(slot4)
+	slot2 = slot0.isPet
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 18-21, warpins: 1 ---
-	slot2 = SysConfigData
-	slot2 = slot2.FAST_CARRY_EGG_SPEED_RATIO
+	--- BLOCK #1 15-20, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getAttribRatioValue
+	slot5 = AttributeConst
+	slot5 = slot5.speed_ratio_dash_v
+	slot2 = slot2(slot4, slot5)
+	slot1 = slot1 * slot2
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 21-26, warpins: 2 ---
+	slot2 = slot0.entity
+	slot4 = slot2
+	slot2 = slot2.FAST_CARRY_EGG_ST
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 22-22, warpins: 1 ---
-	slot2 = 1.4
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 23-23, warpins: 2 ---
-	slot1 = slot1 * slot2
-
+	--- BLOCK #3 27-30, warpins: 1 ---
+	slot2 = SysConfigData
+	slot2 = slot2.FAST_CARRY_EGG_SPEED_RATIO
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 24-24, warpins: 2 ---
-	return slot1
+	--- BLOCK #4 31-31, warpins: 1 ---
+	slot2 = 1.4
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-32, warpins: 2 ---
+	slot1 = slot1 * slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-33, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #6 ---
 
 
 
@@ -1960,7 +1983,29 @@ end
 slot16.getGlideSpeedRatio = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.isPet
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getSprintSpeedRatio
+
+	return slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-18, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getAttribRatioValue
 	slot4 = AttributeConst
@@ -1974,7 +2019,7 @@ slot19 = function(slot0)
 	slot1 = slot1 * slot2
 
 	return slot1
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -2568,7 +2613,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-31, warpins: 2 ---
+	--- BLOCK #2 8-23, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.getRawSpeed
 	slot5 = AttributeConst
@@ -2581,16 +2626,8 @@ slot19 = function(slot0)
 	slot3 = slot3[slot4]
 	slot3 = slot2 + slot3
 	slot6 = slot0
-	slot4 = slot0.getAttribRatioValue
-	slot7 = AttributeConst
-	slot7 = slot7.speed_ratio_sprint_v
-	slot4 = slot4(slot6, slot7)
-	slot3 = slot3 * slot4
-	slot6 = slot0
-	slot4 = slot0.getAttribRatioValue
-	slot7 = AttributeConst
-	slot7 = slot7.speed_ratio_load_adjustment_v
-	slot4 = slot4(slot6, slot7)
+	slot4 = slot0.getSprintSpeedRatio
+	slot4 = slot4(slot6)
 	slot3 = slot3 * slot4
 
 	return slot3
@@ -3203,6 +3240,100 @@ slot19 = function(slot0, slot1)
 end
 
 slot16.getStaminaCostRatio = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getAttribValue
+	slot4 = AttributeConst
+	slot4 = slot4.water_cur
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.getCurWater = slot19
+
+slot19 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getAttribValue
+	slot4 = AttributeConst
+	slot4 = slot4.water_max
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.getMaxWater = slot19
+
+slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot2 = slot0.attributeModifier
+	slot4 = slot2
+	slot2 = slot2.modifyAttrib
+	slot5 = slot0
+	slot6 = AttributeConst
+	slot6 = slot6.water_cur
+	slot7 = slot1
+	slot8 = nil
+
+	slot2(slot4, slot5, slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.changeWater = slot19
+
+slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setAttribute
+	slot5 = AttributeConst
+	slot5 = slot5.water_max
+	slot6 = slot1
+	slot7 = false
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.setMaxWater = slot19
+
+slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setAttribute
+	slot5 = AttributeConst
+	slot5 = slot5.water_cur
+	slot6 = slot1
+	slot7 = false
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.setCurWater = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---

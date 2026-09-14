@@ -1,52 +1,55 @@
---- BLOCK #0 1-73, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
-slot2 = "Utils.ClientModelUtils"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Utils.ClientModelUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.UIScene.UISceneBase"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
-slot4 = slot2.LightClass
-slot6 = "PVPBpScene"
-slot7 = slot3
-slot4 = slot4(slot6, slot7)
-slot5 = require
-slot7 = "Entities.ClientSimpleVirtualEntity"
-slot5 = slot5(slot7)
+slot4 = require
+slot6 = "GameApp.UIScene.UISceneBase"
+slot4 = slot4(slot6)
+slot5 = slot3.LightClass
+slot7 = "PVPBpScene"
+slot8 = slot4
+slot5 = slot5(slot7, slot8)
 slot6 = require
-slot8 = "Data.pet_data"
+slot8 = "Entities.ClientSimpleVirtualEntity"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.pvp_mode_data"
+slot9 = "Data.pet_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Core.Common.Time"
+slot10 = "Data.pvp_mode_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "GameApp.Camera.CameraMode.FixedCameraMode"
+slot11 = "Core.Common.Time"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "GameApp.Camera.CameraConst"
+slot12 = "GameApp.Camera.CameraMode.FixedCameraMode"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "GameApp.UIScene.UISceneConst"
+slot13 = "GameApp.Camera.CameraConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Utils.ClientTextUtils"
+slot14 = "GameApp.UIScene.UISceneConst"
 slot12 = slot12(slot14)
-slot13 = {
+slot13 = require
+slot15 = "Utils.ClientTextUtils"
+slot13 = slot13(slot15)
+slot14 = {
 	NONE = 0,
 	FINISHED = 3,
 	LOADING = 2,
 	BP = 1
 }
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = {}
 	slot0.mSelfModels = slot1
@@ -69,9 +72,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onCtor = slot14
+slot5.onCtor = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = require
 	slot3 = "Const.AddressDataConst"
@@ -312,9 +315,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onStart = slot14
+slot5.onStart = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -360,9 +363,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.showModel = slot14
+slot5.showModel = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.mSelfModels
 	slot3 = slot3[slot1]
@@ -376,10 +379,10 @@ slot14 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 5-12, warpins: 1 ---
-	slot3 = slot0.mSelfModels
-	slot3 = slot3[slot1]
-	slot5 = slot3
-	slot3 = slot3.destroy
+	slot3 = ClientUtils
+	slot3 = slot3.safeDestroy
+	slot5 = slot0.mSelfModels
+	slot5 = slot5[slot1]
 
 	slot3(slot5)
 
@@ -418,13 +421,12 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 24-43, warpins: 2 ---
+	--- BLOCK #4 24-41, warpins: 2 ---
 	slot5 = slot0.mSelfModels
 	slot5[slot1] = slot4
 	slot5 = slot4.eModel
-	slot5 = slot5.transform
 	slot7 = slot5
-	slot5 = slot5.SetParent
+	slot5 = slot5.SetTransformParent
 	slot8 = slot3
 	slot9 = false
 
@@ -438,10 +440,10 @@ slot14 = function(slot0, slot1, slot2)
 	slot5(slot7, slot8)
 
 	slot5 = slot4.eModel
-	slot5 = slot5.transform
-	slot6 = Vector3
-	slot6 = slot6.zero
-	slot5.localPosition = slot6
+	slot7 = slot5
+	slot5 = slot5.SetTransformLocalPosition
+
+	slot5(slot7)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -450,9 +452,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.showMSelfPetModel = slot14
+slot5.showMSelfPetModel = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.rivalModels
 	slot4 = slot4[slot1]
@@ -466,10 +468,10 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #1 5-12, warpins: 1 ---
-	slot4 = slot0.rivalModels
-	slot4 = slot4[slot1]
-	slot6 = slot4
-	slot4 = slot4.destroy
+	slot4 = ClientUtils
+	slot4 = slot4.safeDestroy
+	slot6 = slot0.rivalModels
+	slot6 = slot6[slot1]
 
 	slot4(slot6)
 
@@ -537,13 +539,12 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 34-53, warpins: 2 ---
+	--- BLOCK #7 34-51, warpins: 2 ---
 	slot6 = slot0.rivalModels
 	slot6[slot1] = slot5
 	slot6 = slot5.eModel
-	slot6 = slot6.transform
 	slot8 = slot6
-	slot6 = slot6.SetParent
+	slot6 = slot6.SetTransformParent
 	slot9 = slot4
 	slot10 = false
 
@@ -557,10 +558,10 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	slot6(slot8, slot9)
 
 	slot6 = slot5.eModel
-	slot6 = slot6.transform
-	slot7 = Vector3
-	slot7 = slot7.zero
-	slot6.localPosition = slot7
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalPosition
+
+	slot6(slot8)
 
 	return
 	--- END OF BLOCK #7 ---
@@ -569,9 +570,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.showRivalPetModel = slot14
+slot5.showRivalPetModel = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -583,10 +584,10 @@ slot14 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 3-11, warpins: 1 ---
-	slot3 = slot0.rivalModels
-	slot3 = slot3[slot2]
-	slot5 = slot3
-	slot3 = slot3.destroy
+	slot3 = ClientUtils
+	slot3 = slot3.safeDestroy
+	slot5 = slot0.rivalModels
+	slot5 = slot5[slot2]
 
 	slot3(slot5)
 
@@ -599,10 +600,10 @@ slot14 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 12-19, warpins: 1 ---
-	slot3 = slot0.mSelfModels
-	slot3 = slot3[slot2]
-	slot5 = slot3
-	slot3 = slot3.destroy
+	slot3 = ClientUtils
+	slot3 = slot3.safeDestroy
+	slot5 = slot0.mSelfModels
+	slot5 = slot5[slot2]
 
 	slot3(slot5)
 
@@ -623,9 +624,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.hideModel = slot14
+slot5.hideModel = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.uIPbAnim
 	slot3 = slot1
@@ -651,9 +652,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.getReady = slot14
+slot5.getReady = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
@@ -858,9 +859,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.showLoadingPets = slot14
+slot5.showLoadingPets = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.waitLoadMode
 	--- END OF BLOCK #0 ---
@@ -948,9 +949,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.tick = slot14
+slot5.tick = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -959,7 +960,7 @@ slot14 = function(slot0)
 	slot1 = slot1.getLoadingProgress
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot0.startTime
 	slot2 = slot2 - slot3
 	slot3 = slot0.endTime
@@ -1085,9 +1086,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.tickRemandTime = slot14
+slot5.tickRemandTime = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = PetData
 	slot4 = slot4[slot1]
@@ -1109,7 +1110,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-29, warpins: 2 ---
+	--- BLOCK #2 6-34, warpins: 2 ---
 	slot5 = ClientSimpleVirtualEntity
 	slot5 = slot5.new
 	slot5 = slot5()
@@ -1119,27 +1120,34 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 	slot6(slot8, slot9)
 
-	slot8 = slot5
-	slot6 = slot5.init
-	slot9 = {}
-	slot9.templateId = slot1
-	slot9.label = slot2
-	slot9.gender = slot3
+	slot6 = {}
+	slot6.templateId = slot1
+	slot6.label = slot2
+	slot6.gender = slot3
+	slot9 = slot5
+	slot7 = slot5.init
+	slot10 = slot6
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
-	slot8 = slot5
-	slot6 = slot5.start
+	slot9 = slot5
+	slot7 = slot5.postInit
+	slot10 = slot6
 
-	slot6(slot8)
+	slot7(slot9, slot10)
 
-	slot8 = slot5
-	slot6 = slot5.setModelLayer
-	slot9 = ClientConst
-	slot9 = slot9.LayerDefine
-	slot9 = slot9.LAYER_UI_SCENE
+	slot9 = slot5
+	slot7 = slot5.start
 
-	slot6(slot8, slot9)
+	slot7(slot9)
+
+	slot9 = slot5
+	slot7 = slot5.setModelLayer
+	slot10 = ClientConst
+	slot10 = slot10.LayerDefine
+	slot10 = slot10.LAYER_UI_SCENE
+
+	slot7(slot9, slot10)
 
 	return slot5
 	--- END OF BLOCK #2 ---
@@ -1148,37 +1156,49 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.initModel = slot14
+slot5.initModel = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-23, warpins: 1 ---
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-31, warpins: 1 ---
 	slot2 = ClientSimpleVirtualEntity
 	slot2 = slot2.new
 	slot2 = slot2()
-	slot5 = slot2
-	slot3 = slot2.start
+	slot3 = {}
+	slot6 = slot2
+	slot4 = slot2.init
+	slot7 = slot3
 
-	slot3(slot5)
+	slot4(slot6, slot7)
 
-	slot5 = slot2
-	slot3 = slot2.setModelLayer
-	slot6 = ClientConst
-	slot6 = slot6.LayerDefine
-	slot6 = slot6.LAYER_UI_SCENE
+	slot6 = slot2
+	slot4 = slot2.postInit
+	slot7 = slot3
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
-	slot3 = slot2.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
-	slot4 = slot3.modelInfo
-	slot4 = slot4.physiqueModelInfo
-	slot5 = "$P_Parmon_10000.prefab"
-	slot4.modelPathID = slot5
-	slot6 = slot3
-	slot4 = slot3.RefreshModels
+	slot6 = slot2
+	slot4 = slot2.start
 
 	slot4(slot6)
+
+	slot6 = slot2
+	slot4 = slot2.setModelLayer
+	slot7 = ClientConst
+	slot7 = slot7.LayerDefine
+	slot7 = slot7.LAYER_UI_SCENE
+
+	slot4(slot6, slot7)
+
+	slot4 = slot2.eModel
+	slot4 = slot4.modelModelView
+	slot5 = slot4.modelInfo
+	slot5 = slot5.physiqueModelInfo
+	slot6 = "$P_Parmon_10000.prefab"
+	slot5.modelPathID = slot6
+	slot7 = slot4
+	slot5 = slot4.RefreshModels
+
+	slot5(slot7)
 
 	return slot2
 	--- END OF BLOCK #0 ---
@@ -1187,9 +1207,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.initFakeModel = slot14
+slot5.initFakeModel = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PvpModeData
 	slot2 = slot2[1]
@@ -1211,7 +1231,7 @@ slot14 = function(slot0, slot1)
 
 	--- BLOCK #2 6-10, warpins: 2 ---
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot2.showTime
 	--- END OF BLOCK #2 ---
 
@@ -1233,7 +1253,7 @@ slot14 = function(slot0, slot1)
 	slot3 = slot3 + slot4
 	slot0.endTime = slot3
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot0.startTime = slot3
 	slot3 = PVP_STATE
 	slot3 = slot3.LOADING
@@ -1327,9 +1347,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.startLoading = slot14
+slot5.startLoading = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1375,9 +1395,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.endLoading = slot14
+slot5.endLoading = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.mSelfModels
 	--- END OF BLOCK #0 ---
@@ -1398,9 +1418,10 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 8-10, warpins: 1 ---
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -1409,7 +1430,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-12, warpins: 2 ---
+	--- BLOCK #3 12-13, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1417,7 +1438,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 13-17, warpins: 2 ---
+	--- BLOCK #4 14-18, warpins: 2 ---
 	slot1 = nil
 	slot0.mSelfModels = slot1
 	slot1 = slot0.rivalModels
@@ -1430,7 +1451,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #5 18-21, warpins: 1 ---
+	--- BLOCK #5 19-22, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.rivalModels
 	slot1, slot2, slot3 = slot1(slot3)
@@ -1439,9 +1460,10 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 22-24, warpins: 1 ---
+	--- BLOCK #6 23-26, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -1450,7 +1472,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 25-26, warpins: 2 ---
+	--- BLOCK #7 27-28, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1458,7 +1480,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 27-42, warpins: 2 ---
+	--- BLOCK #8 29-44, warpins: 2 ---
 	slot1 = nil
 	slot0.rivalModels = slot1
 	slot1 = pg
@@ -1485,9 +1507,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onDestroy = slot14
+slot5.onDestroy = slot15
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

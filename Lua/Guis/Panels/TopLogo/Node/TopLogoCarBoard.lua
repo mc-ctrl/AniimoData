@@ -75,12 +75,39 @@ end
 slot8.destroy = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopRepeatTimer
 
 	slot1(slot3)
 
+	slot1 = slot0._likedTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-12, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0._likedTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0._likedTimer = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-20, warpins: 2 ---
+	slot1 = nil
+	slot0._pendingLiked = slot1
 	slot1 = TopLogoCarBoard
 	slot1 = slot1.super
 	slot1 = slot1.onTopLogoDestroy
@@ -89,7 +116,7 @@ slot9 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -136,7 +163,7 @@ end
 slot8.findObjects = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshBoardInfo
 
@@ -150,13 +177,37 @@ slot9 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
+	slot1 = slot0._pendingLiked
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-17, warpins: 1 ---
+	slot1 = nil
+	slot0._pendingLiked = slot1
+	slot3 = slot0
+	slot1 = slot0.onLiked
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 18-21, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.launchRepeatTimer
 
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -554,18 +605,48 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = true
+	slot0._pendingLiked = slot1
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 5-11, warpins: 1 ---
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot1 = slot0._likedTimer
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0._likedTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0._likedTimer = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-23, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.startTimer
 
 	slot4 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0._likedTimer = slot1
 		slot0 = self
 		slot0 = slot0.gameObject
 		--- END OF BLOCK #0 ---
@@ -577,7 +658,7 @@ slot9 = function(slot0)
 		end
 
 
-		--- BLOCK #1 5-18, warpins: 1 ---
+		--- BLOCK #1 8-21, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.rootComponent
 		slot2 = slot0
@@ -601,7 +682,7 @@ slot9 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 19-19, warpins: 2 ---
+		--- BLOCK #2 22-22, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -610,18 +691,18 @@ slot9 = function(slot0)
 	end
 
 	slot5 = 0.8
-
-	slot1(slot3, slot4, slot5)
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0._likedTimer = slot1
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 12-12, warpins: 2 ---
+	--- BLOCK #5 24-24, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 

@@ -22,9 +22,9 @@ slot4.ENCOUNTER_TYPE_OPPONENT = slot5
 slot5 = 128
 slot4.MAX_WARN_ONCE_KEYS = slot5
 slot5 = {
-	initialized = false,
 	ownerUserId = "",
-	enabled = false
+	enabled = false,
+	initialized = false
 }
 slot6 = {}
 slot5.warnOnceKeys = slot6

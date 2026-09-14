@@ -1,4 +1,4 @@
---- BLOCK #0 1-31, warpins: 1 ---
+--- BLOCK #0 1-35, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -194,6 +194,153 @@ slot8 = function(slot0)
 end
 
 slot6.getAllPets = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = {}
+	slot2 = pairs
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.pets
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 10-15, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.selectRoguePets
+	slot7 = slot7[slot5]
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-20, warpins: 1 ---
+	slot7 = LuaUIUtils
+	slot7 = slot7.generatePetInfo
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	slot1[slot5] = slot7
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-22, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 23-23, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot6.getAllPetMap = slot8
+
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getAllPetMap
+	slot2 = slot2(slot4)
+	slot3 = pairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot8 = slot7.isEmpty
+	--- END OF BLOCK #1 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 11-13, warpins: 1 ---
+	slot8 = slot7.isLock
+	--- END OF BLOCK #2 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 14-17, warpins: 1 ---
+	slot8 = slot7.id
+	slot8 = slot2[slot8]
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot8 = slot7
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-19, warpins: 2 ---
+	slot1[slot6] = slot8
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-21, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 22-22, warpins: 1 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot6.refreshPetInfo = slot8
 
 return slot6
 --- END OF BLOCK #0 ---

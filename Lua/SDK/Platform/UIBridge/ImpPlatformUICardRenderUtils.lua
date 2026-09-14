@@ -1,4 +1,4 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
@@ -21,9 +21,12 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "SDK.Platform.PlatformLoginService"
 slot7 = slot7(slot9)
-slot8 = slot3.UI_Node_TeamRoom_CenterItem
-slot0.CONFIG = slot8
-slot8 = {
+slot8 = require
+slot10 = "SDK.Platform.PlatformPetNameMaskService"
+slot8 = slot8(slot10)
+slot9 = slot3.UI_Node_TeamRoom_CenterItem
+slot0.CONFIG = slot9
+slot9 = {
 	"platformDisplayName",
 	"platformUserId",
 	"platformFamily",
@@ -31,9 +34,9 @@ slot8 = {
 	"os",
 	"isAllowedCrossPlatform"
 }
-slot0.IDENTITY_FIELDS = slot8
+slot0.IDENTITY_FIELDS = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -77,9 +80,9 @@ slot8 = function(slot0)
 
 end
 
-slot0.isMissing = slot8
+slot0.isMissing = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 
@@ -153,9 +156,9 @@ slot8 = function(slot0)
 
 end
 
-slot0.copyPlayerInfo = slot8
+slot0.copyPlayerInfo = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -197,9 +200,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot0.fillMissingIdentity = slot8
+slot0.fillMissingIdentity = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -360,9 +363,9 @@ slot8 = function(slot0)
 
 end
 
-slot0.isSelfMember = slot8
+slot0.isSelfMember = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = PlatformLoginService
 	--- END OF BLOCK #0 ---
@@ -557,9 +560,9 @@ slot8 = function(slot0)
 
 end
 
-slot0.fillFromCurrentUser = slot8
+slot0.fillFromCurrentUser = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -686,9 +689,9 @@ slot8 = function(slot0)
 
 end
 
-slot0.getChatPlayerInfo = slot8
+slot0.getChatPlayerInfo = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -789,9 +792,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot0.fillFromPlayerCache = slot8
+slot0.fillFromPlayerCache = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = M
 	slot1 = slot1.copyPlayerInfo
@@ -843,10 +846,19 @@ slot8 = function(slot0)
 
 end
 
-slot0.resolveDisplayInfo = slot8
+slot0.resolveDisplayInfo = slot9
 
-slot8 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot9 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = PlatformDisplayNameInjector
+	slot4 = slot4.enableRichTextRefs
+	slot6 = slot3
+	slot7 = {
+		"playerNameUBaseText"
+	}
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -856,67 +868,76 @@ slot8 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
-	slot3 = nil
+	--- BLOCK #1 8-9, warpins: 1 ---
+	slot4 = nil
 
-	return slot3
+	return slot4
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-16, warpins: 2 ---
-	slot3 = PlatformNameMaskService
-	slot3 = slot3.getMaskedDisplayName
-	slot5 = {}
-	slot6 = PlatformNameMaskService
-	slot6 = slot6.Action
-	slot6 = slot6.TeamRoomMemberName
-	slot5.action = slot6
-	slot6 = slot1.uid
-	slot5.uid = slot6
-	slot5.playerInfo = slot1
+	--- BLOCK #2 10-21, warpins: 2 ---
+	slot4 = PlatformNameMaskService
+	slot4 = slot4.getMaskedDisplayName
+	slot6 = {}
+	slot7 = PlatformNameMaskService
+	slot7 = slot7.Action
+	slot7 = slot7.TeamRoomMemberName
+	slot6.action = slot7
+	slot7 = slot1.uid
+	slot6.uid = slot7
+	slot6.playerInfo = slot1
 	--- END OF BLOCK #2 ---
 
-	slot6 = if not slot2 then
+	slot7 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 17-19, warpins: 1 ---
-	slot6 = slot1.playerName
+	--- BLOCK #3 22-24, warpins: 1 ---
+	slot7 = slot1.playerName
 	--- END OF BLOCK #3 ---
 
-	slot6 = if not slot6 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 20-20, warpins: 1 ---
-	slot6 = ""
+	--- BLOCK #4 25-25, warpins: 1 ---
+	slot7 = ""
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-22, warpins: 3 ---
-	slot5.rawText = slot6
+	--- BLOCK #5 26-36, warpins: 3 ---
+	slot6.rawText = slot7
+	slot4 = slot4(slot6)
+	slot5 = PlatformDisplayNameInjector
+	slot5 = slot5.getDisplayName
+	slot7 = {}
+	slot7.playerInfo = slot1
+	slot8 = M
+	slot8 = slot8.CONFIG
+	slot7.config = slot8
+	slot7.rawName = slot4
 
-	return slot3(slot5)
+	return slot5(slot7)
 	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot0.getRender1Plus3RoomPlayerName = slot8
+slot0.getRender1Plus3RoomPlayerName = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = M
 	slot3 = slot3.resolveDisplayInfo
@@ -938,7 +959,103 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot0.render1Plus3RoomOnlineID = slot8
+slot0.render1Plus3RoomOnlineID = slot9
+
+slot9 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = PlatformPetNameMaskService
+	slot3 = slot3.getMaskedDisplayPetName
+	slot5 = {}
+	slot6 = PlatformPetNameMaskService
+	slot6 = slot6.Action
+	slot6 = slot6.PetCustomName
+	slot5.action = slot6
+	--- END OF BLOCK #0 ---
+
+	slot6 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	slot6 = slot1.uid
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-14, warpins: 2 ---
+	slot5.uid = slot6
+	slot5.playerInfo = slot1
+	--- END OF BLOCK #2 ---
+
+	slot6 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-15, warpins: 1 ---
+	slot6 = slot2.customName
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-18, warpins: 2 ---
+	slot5.customName = slot6
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot6 = slot2.configName
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot6 = slot2.name
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-25, warpins: 2 ---
+	slot6 = ""
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-27, warpins: 3 ---
+	slot5.configName = slot6
+
+	return slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot0.getRender1Plus3PrimaryPetName = slot9
 
 return slot0
 --- END OF BLOCK #0 ---

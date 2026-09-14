@@ -601,7 +601,7 @@ end
 slot10.initUContainer = slot12
 
 slot12 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-44, warpins: 1 ---
+	--- BLOCK #0 1-47, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
@@ -619,13 +619,16 @@ slot12 = function(slot0, slot1, slot2)
 	slot9 = "countDownAnimation"
 	slot6 = slot6(slot8, slot9)
 	slot7 = math
-	slot7 = slot7.max
-	slot9 = 0
-	slot10 = slot2.endTime
-	slot11 = Time
-	slot11 = slot11.secondCache
-	slot10 = slot10 - slot11
-	slot7 = slot7(slot9, slot10)
+	slot7 = slot7.ceil
+	slot9 = math
+	slot9 = slot9.max
+	slot11 = 0
+	slot12 = slot2.endTime
+	slot13 = Time
+	slot13 = slot13.secondCache
+	slot12 = slot12 - slot13
+	MULTRES = slot9(slot11, slot12)
+	slot7 = slot7(MULTRES)
 	slot10 = slot0
 	slot8 = slot0.playAnim
 	slot11 = slot4
@@ -645,7 +648,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot11 = function()
 		--- BLOCK #0 1-17, warpins: 1 ---
 		slot0 = math
-		slot0 = slot0.floor
+		slot0 = slot0.ceil
 		slot2 = remandTime
 		slot0 = slot0(slot2)
 		remandTime = slot0

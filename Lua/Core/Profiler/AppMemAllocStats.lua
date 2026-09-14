@@ -109,8 +109,10 @@ slot13 = function()
 		end
 
 
-		--- BLOCK #2 16-20, warpins: 1 ---
-		slot5 = slot4.short_src
+		--- BLOCK #2 16-22, warpins: 1 ---
+		slot5 = debug
+		slot5 = slot5.traceback
+		slot5 = slot5()
 		slot6 = records
 		slot6 = slot6[slot5]
 		--- END OF BLOCK #2 ---
@@ -122,7 +124,7 @@ slot13 = function()
 		end
 
 
-		--- BLOCK #3 21-23, warpins: 1 ---
+		--- BLOCK #3 23-25, warpins: 1 ---
 		slot6 = {}
 		slot7 = records
 		slot7[slot5] = slot6
@@ -131,7 +133,7 @@ slot13 = function()
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 24-26, warpins: 2 ---
+		--- BLOCK #4 26-28, warpins: 2 ---
 		slot7 = slot6[slot1]
 		--- END OF BLOCK #4 ---
 
@@ -142,12 +144,14 @@ slot13 = function()
 		end
 
 
-		--- BLOCK #5 27-35, warpins: 1 ---
+		--- BLOCK #5 29-39, warpins: 1 ---
 		slot8 = {
 			0,
 			0
 		}
-		slot9 = slot4.source
+		slot9 = debug
+		slot9 = slot9.traceback
+		slot9 = slot9()
 		slot8[3] = slot9
 		slot9 = slot4.linedefined
 		slot8[4] = slot9
@@ -160,7 +164,7 @@ slot13 = function()
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 36-41, warpins: 2 ---
+		--- BLOCK #6 40-45, warpins: 2 ---
 		slot8 = slot7[1]
 		slot8 = slot8 + slot3
 		slot7[1] = slot8
@@ -172,7 +176,7 @@ slot13 = function()
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 42-47, warpins: 2 ---
+		--- BLOCK #7 46-51, warpins: 2 ---
 		slot5 = get_mem
 		slot7 = "count"
 		slot5 = slot5(slot7)
@@ -183,7 +187,7 @@ slot13 = function()
 		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #8 48-48, warpins: 1 ---
+		--- BLOCK #8 52-52, warpins: 1 ---
 		last_mem = slot2
 
 		--- END OF BLOCK #8 ---
@@ -191,7 +195,7 @@ slot13 = function()
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 49-49, warpins: 2 ---
+		--- BLOCK #9 53-53, warpins: 2 ---
 		return
 		--- END OF BLOCK #9 ---
 
@@ -430,7 +434,7 @@ slot0.collect_stack = slot13
 FLOW; TARGET BLOCK #3
 
 
---- BLOCK #3 30-41, warpins: 2 ---
+--- BLOCK #3 30-51, warpins: 2 ---
 slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = running
@@ -518,8 +522,331 @@ slot13 = function(slot0, slot1)
 end
 
 slot0.collect_add = slot13
+slot13 = {}
+slot14 = false
 
-slot13 = function()
+slot15 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = UNITY_EDITOR
+
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot0 = sample_mode
+
+	--- END OF BLOCK #2 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-10, warpins: 2 ---
+	sample_mode = true
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot0.startSample = slot15
+
+slot15 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = sample_mode
+
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-10, warpins: 2 ---
+	sample_mode = false
+	slot0 = sample_stack
+	slot0 = #slot0
+	slot1 = 1
+	slot2 = -1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-14, warpins: 2 ---
+	slot4 = sample_stack
+	slot5 = nil
+	slot4[slot3] = slot5
+
+	--- END OF BLOCK #3 ---
+
+	for slot3=slot0, slot1, slot2
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #4
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot0.stopSample = slot15
+
+slot15 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = sample_mode
+
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-12, warpins: 2 ---
+	slot0 = table_insert
+	slot2 = sample_stack
+	slot3 = get_mem
+	slot5 = "count"
+	slot3 = slot3(slot5)
+	slot3 = slot3 * 1024
+
+	slot0(slot2, slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.beginSample = slot15
+
+slot15 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = sample_mode
+
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot0 = sample_stack
+	slot0 = #slot0
+
+	--- END OF BLOCK #2 ---
+
+	if slot0 == 0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-16, warpins: 2 ---
+	slot1 = sample_stack
+	slot1 = slot1[slot0]
+	slot2 = sample_stack
+	slot3 = nil
+	slot2[slot0] = slot3
+
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-25, warpins: 2 ---
+	slot2 = get_mem
+	slot4 = "count"
+	slot2 = slot2(slot4)
+	slot2 = slot2 * 1024
+	slot3 = slot2 - slot1
+	slot4 = 2
+	--- END OF BLOCK #6 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #7 26-31, warpins: 1 ---
+	slot4 = debug_getinfo
+	slot6 = 2
+	slot7 = "Sl"
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #8 32-39, warpins: 1 ---
+	slot5 = debug
+	slot5 = slot5.traceback
+	slot5 = slot5()
+	slot6 = slot4.currentline
+	slot7 = records
+	slot7 = slot7[slot5]
+	--- END OF BLOCK #8 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 40-42, warpins: 1 ---
+	slot7 = {}
+	slot8 = records
+	slot8[slot5] = slot7
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 43-45, warpins: 2 ---
+	slot8 = slot7[slot6]
+	--- END OF BLOCK #10 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 46-56, warpins: 1 ---
+	slot9 = {
+		0,
+		0
+	}
+	slot10 = debug
+	slot10 = slot10.traceback
+	slot10 = slot10()
+	slot9[3] = slot10
+	slot10 = slot4.linedefined
+	slot9[4] = slot10
+	slot10 = slot4.lastlinedefined
+	slot9[5] = slot10
+	slot8 = slot9
+	slot7[slot6] = slot8
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 57-62, warpins: 2 ---
+	slot9 = slot8[1]
+	slot9 = slot9 + slot3
+	slot8[1] = slot9
+	slot9 = slot8[2]
+	slot9 = slot9 + 1
+	slot8[2] = slot9
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 63-63, warpins: 3 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot0.endSample = slot15
+
+slot15 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = UNITY_EDITOR
 
@@ -574,9 +901,9 @@ slot13 = function()
 
 end
 
-slot0.stop = slot13
+slot0.stop = slot15
 
-slot13 = function()
+slot15 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = AppMemAllocStats
 	slot0 = slot0.stop
@@ -593,9 +920,9 @@ slot13 = function()
 
 end
 
-slot0.clear = slot13
+slot0.clear = slot15
 
-slot13 = function()
+slot15 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = UNITY_EDITOR
 	--- END OF BLOCK #0 ---
@@ -1027,9 +1354,9 @@ slot13 = function()
 
 end
 
-slot0.save = slot13
+slot0.save = slot15
 
-slot13 = function()
+slot15 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = UNITY_EDITOR
 
@@ -1091,7 +1418,7 @@ slot13 = function()
 
 end
 
-slot0.trigger = slot13
+slot0.trigger = slot15
 
 return slot0
 --- END OF BLOCK #3 ---

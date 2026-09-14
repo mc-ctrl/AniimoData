@@ -1,4 +1,4 @@
---- BLOCK #0 1-56, warpins: 1 ---
+--- BLOCK #0 1-59, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -19,16 +19,19 @@ slot5 = require
 slot7 = "Common.Const.ItemConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.item_data"
+slot8 = "Common.Utils.ItemUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Core.Log.LoggerManager"
+slot9 = "Data.item_data"
 slot7 = slot7(slot9)
-slot8 = slot7.getLogger
-slot10 = "HomelandInventoryModel"
+slot8 = require
+slot10 = "Core.Log.LoggerManager"
 slot8 = slot8(slot10)
+slot9 = slot8.getLogger
+slot11 = "HomelandInventoryModel"
+slot9 = slot9(slot11)
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = {}
 	slot2 = InventoryModel
@@ -62,9 +65,9 @@ slot9 = function(slot0)
 
 end
 
-slot3.ctor = slot9
+slot3.ctor = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.sortIdxType = slot1
 
@@ -75,9 +78,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.setSortIdxType = slot9
+slot3.setSortIdxType = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.sortIsAscending = slot1
 
@@ -88,9 +91,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.setSortAscendingOrder = slot9
+slot3.setSortAscendingOrder = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.sortIdxType
 	--- END OF BLOCK #0 ---
@@ -121,9 +124,9 @@ slot9 = function(slot0)
 
 end
 
-slot3.getSortIdxType = slot9
+slot3.getSortIdxType = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -166,9 +169,9 @@ slot9 = function(slot0)
 
 end
 
-slot3.getSortOptions = slot9
+slot3.getSortOptions = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -265,9 +268,9 @@ slot9 = function(slot0)
 
 end
 
-slot3.getInventoryData = slot9
+slot3.getInventoryData = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getInventoryData
@@ -394,127 +397,109 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getInventoryList = slot9
+slot3.getInventoryList = slot10
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot10 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.invInfo
-	--- END OF BLOCK #0 ---
+	slot2 = 0
+	slot3 = ItemUtils
+	slot3 = slot3.eachSupportedTypedBag
+	slot5 = pg
+	slot5 = slot5.me
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
+	slot6 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.items
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #0 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot7 = slot6.id
+		slot8 = ItemData
+		slot8 = slot8[slot7]
+		--- END OF BLOCK #1 ---
+
+		slot8 = if slot8 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 10-12, warpins: 1 ---
+		slot9 = slot8.isHomeItem
+		--- END OF BLOCK #2 ---
+
+		if slot9 == 1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 13-31, warpins: 1 ---
+		slot9 = table
+		slot9 = slot9.insert
+		slot11 = res
+		slot12 = {
+			enableChecked = false
+		}
+		slot12.id = slot7
+		slot13 = slot8.icon
+		slot12.icon = slot13
+		slot13 = slot8.quality
+		slot12.quality = slot13
+		slot13 = slot6.count
+		slot12.num = slot13
+		slot13 = slot8.type
+		slot12.type = slot13
+		slot13 = index
+		slot12.index = slot13
+
+		slot9(slot11, slot12)
+
+		slot9 = index
+		slot9 = slot9 + 1
+		index = slot9
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 32-33, warpins: 4 ---
+		--- END OF BLOCK #4 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #1
+		GO OUT TO BLOCK #5
+
+
+		--- BLOCK #5 34-34, warpins: 1 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
 	end
 
+	slot3(slot5, slot6)
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	slot2 = {}
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-12, warpins: 2 ---
-	slot3 = 0
-	slot4 = pairs
-	slot6 = slot2
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #3 13-16, warpins: 1 ---
-	slot11 = slot8
-	slot9 = slot8.items
-	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #4 17-21, warpins: 1 ---
-	slot14 = slot13.id
-	slot15 = ItemData
-	slot15 = slot15[slot14]
-	--- END OF BLOCK #4 ---
-
-	slot15 = if slot15 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #5 22-24, warpins: 1 ---
-	slot16 = slot15.isHomeItem
-	--- END OF BLOCK #5 ---
-
-	if slot16 == 1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 25-40, warpins: 1 ---
-	slot16 = table
-	slot16 = slot16.insert
-	slot18 = slot1
-	slot19 = {
-		enableChecked = false
-	}
-	slot19.id = slot14
-	slot20 = slot15.icon
-	slot19.icon = slot20
-	slot20 = slot15.quality
-	slot19.quality = slot20
-	slot20 = slot13.count
-	slot19.num = slot20
-	slot20 = slot15.type
-	slot19.type = slot20
-	slot19.index = slot3
-
-	slot16(slot18, slot19)
-
-	slot3 = slot3 + 1
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 41-42, warpins: 4 ---
-	--- END OF BLOCK #7 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 43-44, warpins: 2 ---
-	--- END OF BLOCK #8 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #9
-
-
-	--- BLOCK #9 45-45, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot3.getBagData = slot9
+slot3.getBagData = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getBagData
@@ -641,9 +626,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getBagList = slot9
+slot3.getBagList = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.sort
@@ -889,9 +874,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.sortRateDESC = slot9
+slot3.sortRateDESC = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.sort
@@ -1137,9 +1122,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.sortRateASC = slot9
+slot3.sortRateASC = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.sort
@@ -1385,9 +1370,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.sortTypeDESC = slot9
+slot3.sortTypeDESC = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.sort
@@ -1633,7 +1618,7 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.sortTypeASC = slot9
+slot3.sortTypeASC = slot10
 
 return slot3
 --- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-85, warpins: 1 ---
+--- BLOCK #0 1-108, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Helper.UIComponent"
 slot0 = slot0(slot2)
@@ -48,45 +48,69 @@ slot14 = slot14(slot16)
 slot15 = require
 slot17 = "Data.func_menu_data"
 slot15 = slot15(slot17)
-slot16 = 8
-slot17 = {
-	PVP = "PVP",
-	Service = "SERVICE",
-	Map = "MAP",
-	Album = "ALBUM",
-	PetEntry = "PETENTRY",
-	PhotoInvite = "PHOTOINVITE",
-	PetBall = "PETBALL",
-	PhotoAlbum = "PHOTO_ALBUM",
-	Help = "HELP",
-	PhotoHideUI = "PHOTO_HIDE_UI",
-	Config = "CONFIG",
-	PhotoAppearance = "PHOTO_APPEARANCE",
-	Bag = "BAG",
+slot16 = require
+slot18 = "Data.func_to_menu_id_data"
+slot16 = slot16(slot18)
+slot17 = require
+slot19 = "Data.normal_func_to_menu_id_data"
+slot17 = slot17(slot19)
+slot18 = require
+slot20 = "Data.func_menu_list_data"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "Data.func_menu_common_use_data"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Utils.HomelandReportUtils"
+slot20 = slot20(slot22)
+slot21 = 8
+slot22 = {
 	PhotoSetting = "PHOTO_SETTING",
-	PetBook = "PETRESEARCH",
+	PetEntry = "PETENTRY",
 	PhotoScanCode = "PHOTO_SCAN_CODE",
-	Quest = "QUEST",
+	TowerBuff = "TOWER_BUFF",
 	HomeCarManagement = "HOMECAR_MANAGEMENT",
+	TowerPets = "TOWER_PETS",
+	StationManage = "STATIONMANAGE",
+	Event = "ACTIVITYCENTER",
+	HomeCampReport = "HOMECAMPREPORT",
+	Train = "SPECIALTRAIN",
+	HomelandReport = "HOMELANDREPORT",
+	PVP = "PVP",
+	HomelandSeason = "HOMELANDSEASON",
+	Map = "MAP",
+	HomelandDesign = "HOMELANDDESIGN",
+	HomelandPlantHandbook = "HOMELANDPLANTHANDBOOK",
+	PetBall = "PETBALL",
+	Help = "HELP",
+	HomelandLog = "HOMELANDLOG",
+	Config = "CONFIG",
+	Bag = "BAG",
+	PetBook = "PETRESEARCH",
+	Quest = "QUEST",
 	Photo = "TAKEPHOTO",
 	Undefined = "",
-	StationManage = "STATIONMANAGE",
-	HomelandPlantHandbook = "HOMELANDPLANTHANDBOOK",
-	Appearance = "APPEARANCE",
-	HomelandLog = "HOMELANDLOG",
-	GrabEggBag = "GRABEGG_BAG",
-	TowerBuff = "TOWER_BUFF",
+	RULE = "RULE",
+	CASHSHOP = "CASHSHOP",
 	SCHOOLGUIDE = "SCHOOLGUIDE",
-	TowerPets = "TOWER_PETS",
+	SeasonLobby = "SeasonLobby",
 	battlepass = "battlepass",
-	Event = "ACTIVITYCENTER",
-	Train = "SPECIALTRAIN"
+	GrabEggBag = "GRABEGG_BAG",
+	Appearance = "APPEARANCE",
+	Service = "SERVICE",
+	Album = "ALBUM",
+	PhotoInvite = "PHOTOINVITE",
+	PhotoAlbum = "PHOTO_ALBUM",
+	PhotoHideUI = "PHOTO_HIDE_UI",
+	PhotoAppearance = "PHOTO_APPEARANCE"
 }
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {}
 	slot0.menuWheels = slot1
+	slot1 = {}
+	slot0.menuItemRedDotIds = slot1
 	slot1 = {}
 	slot0.listData = slot1
 	slot1 = nil
@@ -99,25 +123,72 @@ slot18 = function(slot0)
 
 end
 
-slot12.initView = slot18
+slot12.initView = slot23
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = ipairs
+	slot3 = slot0.menuWheels
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot6 = ipairs
+	slot8 = slot5.items
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot13 = slot10
+	slot11 = slot10.ClearRedDot
+
+	slot11(slot13)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 16-22, warpins: 1 ---
 	slot1 = {}
 	slot0.menuWheels = slot1
+	slot1 = {}
+	slot0.menuItemRedDotIds = slot1
 	slot1 = nil
 	slot0.selectedWheelIndex = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot12.clearWheels = slot18
+slot12.clearWheels = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = slot1.transform
 	slot5 = slot2
@@ -309,9 +380,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot12.initMenuWheel = slot18
+slot12.initMenuWheel = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.menuWheels
 	slot2 = #slot2
@@ -350,9 +421,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot12.setWheelOffset = slot18
+slot12.setWheelOffset = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = slot0.menuWheels
@@ -390,9 +461,9 @@ slot18 = function(slot0)
 
 end
 
-slot12.resetWheel = slot18
+slot12.resetWheel = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot0.menuWheels
@@ -431,9 +502,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot12._broadcastNameText = slot18
+slot12._broadcastNameText = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.menuWheels
 	slot2 = #slot2
@@ -690,9 +761,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot12.selectItem = slot18
+slot12.selectItem = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.menuWheels
 	slot1 = #slot1
@@ -1094,9 +1165,9 @@ slot18 = function(slot0)
 
 end
 
-slot12.refreshMenu = slot18
+slot12.refreshMenu = slot23
 
-slot18 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.menuWheels
 	slot3 = #slot3
@@ -1269,9 +1340,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot12.selectItemByScene = slot18
+slot12.selectItemByScene = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.menuWheels
 	slot1 = #slot1
@@ -1523,9 +1594,16 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #20 89-97, warpins: 1 ---
+	--- BLOCK #20 89-102, warpins: 1 ---
 	slot18 = nil
 	slot16.customData = slot18
+	slot20 = slot0
+	slot18 = slot0._bindMenuItemRedDot
+	slot21 = slot16
+	slot22 = nil
+
+	slot18(slot20, slot21, slot22)
+
 	slot20 = slot16
 	slot18 = slot16.TryChangePage
 	slot21 = "Empty"
@@ -1542,7 +1620,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #21 98-103, warpins: 1 ---
+	--- BLOCK #21 103-108, warpins: 1 ---
 	slot20 = slot16
 	slot18 = slot16.TryChangePage
 	slot21 = "button"
@@ -1555,7 +1633,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #22 104-108, warpins: 1 ---
+	--- BLOCK #22 109-113, warpins: 1 ---
 	slot20 = slot16
 	slot18 = slot16.TryChangePage
 	slot21 = "button"
@@ -1568,7 +1646,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 109-110, warpins: 5 ---
+	--- BLOCK #23 114-115, warpins: 5 ---
 	--- END OF BLOCK #23 ---
 
 	for slot15, slot16 in slot12, slot13, slot14
@@ -1576,7 +1654,7 @@ slot18 = function(slot0)
 	GO OUT TO BLOCK #24
 
 
-	--- BLOCK #24 111-112, warpins: 2 ---
+	--- BLOCK #24 116-117, warpins: 2 ---
 	--- END OF BLOCK #24 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -1584,7 +1662,7 @@ slot18 = function(slot0)
 	GO OUT TO BLOCK #25
 
 
-	--- BLOCK #25 113-117, warpins: 1 ---
+	--- BLOCK #25 118-122, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0._broadcastNameText
 	slot10 = slot6
@@ -1597,7 +1675,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 118-118, warpins: 2 ---
+	--- BLOCK #26 123-123, warpins: 2 ---
 	return
 	--- END OF BLOCK #26 ---
 
@@ -1605,10 +1683,549 @@ slot18 = function(slot0)
 
 end
 
-slot12.refreshMenuByScene = slot18
+slot12.refreshMenuByScene = slot23
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot2 = FuncToMenuIdData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 9-12, warpins: 1 ---
+	slot2 = NormalFuncToMenuIdData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-15, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.FUNCTION_IDS
+	slot2 = slot2[slot1]
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot12._getFuncMenuId = slot23
+
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.HomelandReport
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot2 = HomelandReportUtils
+	slot2 = slot2.isAvailable
+
+	return slot2()
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #2 9-12, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.HomeCampReport
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-16, warpins: 1 ---
+	slot2 = HomelandReportUtils
+	slot2 = slot2.isHomeCampReportAvailable
+
+	return slot2()
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #4 17-20, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.SeasonLobby
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #5 21-26, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.hudV2
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 27-31, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.hudV2
+	slot2 = slot2.model
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 32-33, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 34-38, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.isSeasonLobbyAvailable
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-39, warpins: 2 ---
+	slot3 = false
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 40-40, warpins: 2 ---
+	return slot3
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 41-46, warpins: 4 ---
+	slot4 = slot0
+	slot2 = slot0._getFuncMenuId
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #11 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 47-48, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 49-54, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
+	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 55-59, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
+	slot3 = slot3.model
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 60-61, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 62-63, warpins: 1 ---
+	slot4 = true
+
+	return slot4
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 64-67, warpins: 2 ---
+	slot4 = FuncMenuListData
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #17 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 68-69, warpins: 1 ---
+	slot4 = FuncMenuCommonData
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 70-71, warpins: 2 ---
+	--- END OF BLOCK #19 ---
+
+	slot5 = if slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 72-74, warpins: 1 ---
+	slot5 = slot4["function"]
+	--- END OF BLOCK #20 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 75-75, warpins: 1 ---
+	slot5 = slot4.functionType
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 76-80, warpins: 3 ---
+	slot8 = slot3
+	slot6 = slot3.checkFuncExtraCondition
+	slot9 = slot2
+	slot10 = slot5
+
+	return slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #22 ---
+
+
+
+end
+
+slot12._checkExtraCondition = slot23
+
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0._getFuncMenuId
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot3 = FuncMenuListData
+	slot3 = slot3[slot2]
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot3 = FuncMenuCommonData
+	slot3 = slot3[slot2]
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot4 = {}
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 18-21, warpins: 1 ---
+	slot5 = pairs
+	slot7 = slot3
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 22-22, warpins: 1 ---
+	slot4[slot8] = slot9
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-24, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 25-28, warpins: 2 ---
+	slot4.id = slot2
+	slot5 = slot4.functionName
+	--- END OF BLOCK #8 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 29-29, warpins: 1 ---
+	slot5 = slot1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-31, warpins: 2 ---
+	slot4.functionName = slot5
+
+	return slot4
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot12._getMenuItemRedDotData = slot23
+
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0._getMenuItemRedDotData
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot4 = slot3.id
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	slot4 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-14, warpins: 2 ---
+	slot5 = slot0.menuItemRedDotIds
+	slot5 = slot5[slot1]
+
+	--- END OF BLOCK #3 ---
+
+	if slot5 == slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-22, warpins: 2 ---
+	slot7 = slot1
+	slot5 = slot1.ClearRedDot
+
+	slot5(slot7)
+
+	slot5 = slot0.menuItemRedDotIds
+	slot5[slot1] = slot4
+
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-23, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-33, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.funcMenu
+	slot7 = slot5
+	slot5 = slot5.bind_RedDotForMenuItem
+	slot8 = slot1
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot12._bindMenuItemRedDot = slot23
+
+slot23 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0._bindMenuItemRedDot
+	slot8 = slot1
+	slot9 = slot4.funcKey
+
+	slot5(slot7, slot8, slot9)
+
 	slot7 = slot0
 	slot5 = slot0.isMenuItemUnlocked
 	slot8 = slot4.funcKey
@@ -1630,7 +2247,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #1 15-22, warpins: 1 ---
+	--- BLOCK #1 20-27, warpins: 1 ---
 	slot7 = slot4.icon
 	slot6.url = slot7
 	slot9 = slot1
@@ -1645,7 +2262,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 23-30, warpins: 1 ---
+	--- BLOCK #2 28-35, warpins: 1 ---
 	slot7 = AddressDataConst
 	slot7 = slot7.GAMEPAD_MENU_EMPTY_ICON
 	slot6.url = slot7
@@ -1661,7 +2278,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 31-32, warpins: 2 ---
+	--- BLOCK #3 36-37, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	if slot2 == slot3 then
@@ -1671,7 +2288,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #4 33-38, warpins: 1 ---
+	--- BLOCK #4 38-43, warpins: 1 ---
 	slot9 = slot1
 	slot7 = slot1.TryChangePage
 	slot10 = "button"
@@ -1684,7 +2301,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 39-43, warpins: 1 ---
+	--- BLOCK #5 44-48, warpins: 1 ---
 	slot9 = slot1
 	slot7 = slot1.TryChangePage
 	slot10 = "button"
@@ -1697,7 +2314,7 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 44-44, warpins: 2 ---
+	--- BLOCK #6 49-49, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -1705,9 +2322,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot12._renderMenuItem = slot18
+slot12._renderMenuItem = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 1
 	slot2 = pg
@@ -1761,9 +2378,9 @@ slot18 = function(slot0)
 
 end
 
-slot12.getCurConfigId = slot18
+slot12.getCurConfigId = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1787,7 +2404,7 @@ slot18 = function(slot0)
 	slot1 = slot0._getPhotoFunctionButtons
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
 	--- BLOCK #2 14-22, warpins: 1 ---
@@ -1873,74 +2490,55 @@ slot18 = function(slot0)
 	LOOP BLOCK #8
 	GO OUT TO BLOCK #9
 
-	--- BLOCK #9 48-53, warpins: 2 ---
+	--- BLOCK #9 48-52, warpins: 2 ---
 	slot4 = {}
-	slot5 = 0
-	slot6 = 1
-	slot7 = 10
-	slot8 = 1
+	slot5 = 1
+	slot6 = 10
+	slot7 = 1
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 54-56, warpins: 2 ---
-	slot10 = slot2[slot9]
+	--- BLOCK #10 53-55, warpins: 2 ---
+	slot9 = slot2[slot8]
 	--- END OF BLOCK #10 ---
 
-	slot10 = if slot10 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 57-57, warpins: 1 ---
-	slot5 = slot9
+	--- BLOCK #11 56-61, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0._checkExtraCondition
+	slot13 = slot9
+	slot10 = slot10(slot12, slot13)
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 58-58, warpins: 2 ---
-	--- END OF BLOCK #12 ---
-
-	for slot9=slot6, slot7, slot8
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #13
-
-	--- BLOCK #13 59-62, warpins: 1 ---
-	slot6 = 1
-	slot7 = slot5
-	slot8 = 1
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 63-65, warpins: 2 ---
-	slot10 = slot2[slot9]
-	--- END OF BLOCK #14 ---
-
 	slot10 = if slot10 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #15 66-82, warpins: 1 ---
+	--- BLOCK #12 62-79, warpins: 1 ---
+	slot10 = #slot4
+	slot10 = slot10 + 1
 	slot11 = {}
-	slot11.funcKey = slot10
+	slot11.funcKey = slot9
 	slot12 = pg
 	slot12 = slot12.getLocalizationText
 	slot14 = GamepadMenuItemData
-	slot14 = slot14[slot10]
+	slot14 = slot14[slot9]
 	slot14 = slot14.name
 	slot12 = slot12(slot14)
 	slot11.name = slot12
 	slot12 = GamepadMenuItemData
-	slot12 = slot12[slot10]
+	slot12 = slot12[slot9]
 	slot12 = slot12.icon
 	slot11.icon = slot12
 
@@ -1961,46 +2559,38 @@ slot18 = function(slot0)
 	end
 
 	slot11.btnClickFunc = slot12
-	slot4[slot9] = slot11
-	--- END OF BLOCK #15 ---
+	slot4[slot10] = slot11
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	--- END OF BLOCK #12 ---
 
-
-	--- BLOCK #16 83-84, warpins: 1 ---
-	slot11 = false
-	slot4[slot9] = slot11
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #17 85-86, warpins: 2 ---
-	--- END OF BLOCK #17 ---
+	--- BLOCK #13 80-81, warpins: 3 ---
+	--- END OF BLOCK #13 ---
 
-	for slot9=slot6, slot7, slot8
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #18
+	for slot8=slot5, slot6, slot7
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #14
 
-	--- BLOCK #18 87-88, warpins: 1 ---
+	--- BLOCK #14 82-83, warpins: 1 ---
 	return slot4
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #19 89-89, warpins: 2 ---
+	--- BLOCK #15 84-84, warpins: 2 ---
 	return slot1(slot3)
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot12.getFunctionButtonByScene = slot18
+slot12.getFunctionButtonByScene = slot23
 
-slot18 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -2229,9 +2819,9 @@ slot18 = function(slot0)
 
 end
 
-slot12._getPhotoFunctionButtons = slot18
+slot12._getPhotoFunctionButtons = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2303,9 +2893,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot12.isMenuItemUnlocked = slot18
+slot12.isMenuItemUnlocked = slot23
 
-slot18 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = MenuItemType
 	slot2 = slot2.Photo
@@ -2330,7 +2920,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #2 13-16, warpins: 1 ---
@@ -2357,7 +2947,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #4 25-28, warpins: 1 ---
@@ -2384,7 +2974,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #6 37-40, warpins: 1 ---
@@ -2411,7 +3001,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #8 49-52, warpins: 1 ---
@@ -2439,7 +3029,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #10 62-65, warpins: 1 ---
@@ -2467,7 +3057,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #12 75-78, warpins: 1 ---
@@ -2494,7 +3084,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #14 87-90, warpins: 1 ---
@@ -2521,7 +3111,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #16 99-102, warpins: 1 ---
@@ -2548,7 +3138,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #18 111-114, warpins: 1 ---
@@ -2575,7 +3165,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #20 123-126, warpins: 1 ---
@@ -2602,7 +3192,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #22 135-138, warpins: 1 ---
@@ -2630,7 +3220,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #24 148-151, warpins: 1 ---
@@ -2658,7 +3248,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #25 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #26 161-164, warpins: 1 ---
@@ -2686,7 +3276,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #28 174-177, warpins: 1 ---
@@ -2717,7 +3307,7 @@ slot18 = function(slot0, slot1)
 
 	--- END OF BLOCK #29 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #30 188-191, warpins: 1 ---
@@ -2732,24 +3322,25 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #31 192-199, warpins: 1 ---
+	--- BLOCK #31 192-200, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
-	slot2 = slot2.homePlantsManual
 	slot4 = slot2
 	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_HOME_BOOK
 
-	slot2(slot4)
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #31 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #32 200-203, warpins: 1 ---
+	--- BLOCK #32 201-204, warpins: 1 ---
 	slot2 = MenuItemType
-	slot2 = slot2.StationManage
+	slot2 = slot2.HomelandDesign
 	--- END OF BLOCK #32 ---
 
 	if slot1 == slot2 then
@@ -2759,24 +3350,24 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #33 204-211, warpins: 1 ---
+	--- BLOCK #33 205-212, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
-	slot2 = slot2.homeStationManage
+	slot2 = slot2.funcMenu
 	slot4 = slot2
-	slot2 = slot2.open
+	slot2 = slot2.furnitureDesign
 
 	slot2(slot4)
 
 	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #34 212-215, warpins: 1 ---
+	--- BLOCK #34 213-216, warpins: 1 ---
 	slot2 = MenuItemType
-	slot2 = slot2.HomeCarManagement
+	slot2 = slot2.HomelandSeason
 	--- END OF BLOCK #34 ---
 
 	if slot1 == slot2 then
@@ -2786,25 +3377,24 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #35 216-224, warpins: 1 ---
+	--- BLOCK #35 217-224, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
+	slot2 = slot2.funcMenu
 	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_CAMP_MANAGER
+	slot2 = slot2.homelandSeason
 
-	slot2(slot4, slot5)
+	slot2(slot4)
 
 	--- END OF BLOCK #35 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #36 225-228, warpins: 1 ---
 	slot2 = MenuItemType
-	slot2 = slot2.PhotoInvite
+	slot2 = slot2.HomelandReport
 	--- END OF BLOCK #36 ---
 
 	if slot1 == slot2 then
@@ -2820,18 +3410,18 @@ slot18 = function(slot0, slot1)
 	slot2 = slot2.ui
 	slot2 = slot2.funcMenu
 	slot4 = slot2
-	slot2 = slot2.photoInvite
+	slot2 = slot2.homelandReport
 
 	slot2(slot4)
 
 	--- END OF BLOCK #37 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #38 237-240, warpins: 1 ---
 	slot2 = MenuItemType
-	slot2 = slot2.Album
+	slot2 = slot2.HomeCampReport
 	--- END OF BLOCK #38 ---
 
 	if slot1 == slot2 then
@@ -2847,18 +3437,18 @@ slot18 = function(slot0, slot1)
 	slot2 = slot2.ui
 	slot2 = slot2.funcMenu
 	slot4 = slot2
-	slot2 = slot2.album
+	slot2 = slot2.homeCampReport
 
 	slot2(slot4)
 
 	--- END OF BLOCK #39 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
 	--- BLOCK #40 249-252, warpins: 1 ---
 	slot2 = MenuItemType
-	slot2 = slot2.Service
+	slot2 = slot2.StationManage
 	--- END OF BLOCK #40 ---
 
 	if slot1 == slot2 then
@@ -2872,30 +3462,151 @@ slot18 = function(slot0, slot1)
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
+	slot2 = slot2.homeStationManage
+	slot4 = slot2
+	slot2 = slot2.open
+
+	slot2(slot4)
+
+	--- END OF BLOCK #41 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #42 261-264, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.HomeCarManagement
+	--- END OF BLOCK #42 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #45
+	end
+
+
+	--- BLOCK #43 265-268, warpins: 1 ---
+	slot2 = CommonSwitch
+	slot2 = slot2.CAMP_MANAGER
+	--- END OF BLOCK #43 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #65
+	end
+
+
+	--- BLOCK #44 269-277, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_CAMP_MANAGER
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #44 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #45 278-281, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.PhotoInvite
+	--- END OF BLOCK #45 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 282-289, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.funcMenu
+	slot4 = slot2
+	slot2 = slot2.photoInvite
+
+	slot2(slot4)
+
+	--- END OF BLOCK #46 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #47 290-293, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.Album
+	--- END OF BLOCK #47 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #48 294-301, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.funcMenu
+	slot4 = slot2
+	slot2 = slot2.album
+
+	slot2(slot4)
+
+	--- END OF BLOCK #48 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #49 302-305, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.Service
+	--- END OF BLOCK #49 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 306-313, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
 	slot2 = slot2.funcMenu
 	slot4 = slot2
 	slot2 = slot2.service
 
 	slot2(slot4)
 
-	--- END OF BLOCK #41 ---
+	--- END OF BLOCK #50 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #42 261-264, warpins: 1 ---
+	--- BLOCK #51 314-317, warpins: 1 ---
 	slot2 = MenuItemType
 	slot2 = slot2.Appearance
-	--- END OF BLOCK #42 ---
+	--- END OF BLOCK #51 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #52
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #43 265-272, warpins: 1 ---
+	--- BLOCK #52 318-325, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -2905,24 +3616,24 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #43 ---
+	--- END OF BLOCK #52 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #44 273-276, warpins: 1 ---
+	--- BLOCK #53 326-329, warpins: 1 ---
 	slot2 = MenuItemType
 	slot2 = slot2.GrabEggBag
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #53 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #54
 	else
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #55
 	end
 
 
-	--- BLOCK #45 277-284, warpins: 1 ---
+	--- BLOCK #54 330-337, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -2932,24 +3643,24 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #54 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #46 285-288, warpins: 1 ---
+	--- BLOCK #55 338-341, warpins: 1 ---
 	slot2 = MenuItemType
 	slot2 = slot2.battlepass
-	--- END OF BLOCK #46 ---
+	--- END OF BLOCK #55 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #56
 	else
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #57
 	end
 
 
-	--- BLOCK #47 289-296, warpins: 1 ---
+	--- BLOCK #56 342-349, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -2959,24 +3670,52 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #47 ---
+	--- END OF BLOCK #56 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #48 297-300, warpins: 1 ---
+	--- BLOCK #57 350-353, warpins: 1 ---
 	slot2 = MenuItemType
-	slot2 = slot2.SCHOOLGUIDE
-	--- END OF BLOCK #48 ---
+	slot2 = slot2.SeasonLobby
+	--- END OF BLOCK #57 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #58
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #59
 	end
 
 
-	--- BLOCK #49 301-307, warpins: 1 ---
+	--- BLOCK #58 354-362, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_SEASON_LOBBY
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #58 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #59 363-366, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.SCHOOLGUIDE
+	--- END OF BLOCK #59 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #61
+	end
+
+
+	--- BLOCK #60 367-374, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -2986,20 +3725,74 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #49 ---
+	--- END OF BLOCK #60 ---
 
-	FLOW; TARGET BLOCK #50
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
 
 
-	--- BLOCK #50 308-308, warpins: 26 ---
+	--- BLOCK #61 375-378, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.CASHSHOP
+	--- END OF BLOCK #61 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #62
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #62 379-386, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.funcMenu
+	slot4 = slot2
+	slot2 = slot2.cashShop
+
+	slot2(slot4)
+
+	--- END OF BLOCK #62 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #63 387-390, warpins: 1 ---
+	slot2 = MenuItemType
+	slot2 = slot2.RULE
+	--- END OF BLOCK #63 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #64
+	else
+	JUMP TO BLOCK #65
+	end
+
+
+	--- BLOCK #64 391-397, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.funcMenu
+	slot4 = slot2
+	slot2 = slot2.gameplayRule
+
+	slot2(slot4)
+
+	--- END OF BLOCK #64 ---
+
+	FLOW; TARGET BLOCK #65
+
+
+	--- BLOCK #65 398-398, warpins: 34 ---
 	return
-	--- END OF BLOCK #50 ---
+	--- END OF BLOCK #65 ---
 
 
 
 end
 
-slot12.handleSelect = slot18
+slot12.handleSelect = slot23
 
 return slot12
 --- END OF BLOCK #0 ---

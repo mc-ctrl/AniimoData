@@ -111,10 +111,12 @@ slot6 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 41-45, warpins: 2 ---
+	--- BLOCK #7 41-47, warpins: 2 ---
 	slot9.ownNum = slot11
 	slot11 = slot8.hideOwnNum
 	slot9.hideOwnNum = slot11
+	slot11 = slot8.hideNum
+	slot9.hideNum = slot11
 	slot11 = slot8.showLack
 	slot9.showLack = slot11
 	--- END OF BLOCK #7 ---
@@ -122,7 +124,7 @@ slot6 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 46-46, warpins: 2 ---
+	--- BLOCK #8 48-48, warpins: 2 ---
 	slot2[slot7] = slot9
 
 	--- END OF BLOCK #8 ---
@@ -130,7 +132,7 @@ slot6 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 47-48, warpins: 2 ---
+	--- BLOCK #9 49-50, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -138,7 +140,7 @@ slot6 = function(slot0, slot1)
 	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #10 49-49, warpins: 1 ---
+	--- BLOCK #10 51-51, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #10 ---
 

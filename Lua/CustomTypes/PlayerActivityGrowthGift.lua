@@ -10,12 +10,12 @@ slot4 = "PlayerActivityGrowthGift"
 slot5 = slot0
 slot2 = slot2(slot4, slot5)
 
-slot3 = function(slot0)
+slot3 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.receivedEgg
+	slot3 = slot0.recvCollectAllWards
 	--- END OF BLOCK #0 ---
 
-	if slot1 == 1 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -23,9 +23,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #1 4-5, warpins: 1 ---
-	slot1 = false
+	slot3 = false
 
-	return slot1
+	return slot3
 
 	--- END OF BLOCK #1 ---
 
@@ -33,9 +33,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #2 6-7, warpins: 2 ---
-	slot1 = true
+	slot3 = true
 
-	return slot1
+	return slot3
 	--- END OF BLOCK #2 ---
 
 
@@ -44,12 +44,12 @@ end
 
 slot2.canTabOpen = slot3
 
-slot3 = function(slot0)
+slot3 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.receivedEgg
+	slot3 = slot0.recvCollectAllWards
 	--- END OF BLOCK #0 ---
 
-	if slot1 == 1 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -57,9 +57,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #1 4-5, warpins: 1 ---
-	slot1 = false
+	slot3 = false
 
-	return slot1
+	return slot3
 
 	--- END OF BLOCK #1 ---
 
@@ -67,9 +67,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #2 6-7, warpins: 2 ---
-	slot1 = true
+	slot3 = true
 
-	return slot1
+	return slot3
 	--- END OF BLOCK #2 ---
 
 

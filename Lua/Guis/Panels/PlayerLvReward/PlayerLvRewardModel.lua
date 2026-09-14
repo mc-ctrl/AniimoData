@@ -446,7 +446,7 @@ slot3.parseRewardState = slot11
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = LuaUIUtils
-	slot2 = slot2.getStarTitleName
+	slot2 = slot2.getStarTitleNameForIcon
 	slot4 = slot1.assessStar
 	slot2 = slot2(slot4)
 	slot1.starName = slot2
@@ -1262,15 +1262,57 @@ slot11 = function(slot0, slot1)
 
 	--- BLOCK #4 26-26, warpins: 1 ---
 	slot5 = false
-
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 27-27, warpins: 2 ---
-	return slot5
+	--- BLOCK #5 27-29, warpins: 2 ---
+	slot6 = slot3.hideRedPoint
 	--- END OF BLOCK #5 ---
+
+	if slot6 ~= 1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-31, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 32-32, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-34, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot7 = if slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 35-35, warpins: 1 ---
+	slot7 = not slot6
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-36, warpins: 2 ---
+	return slot7
+	--- END OF BLOCK #10 ---
 
 
 

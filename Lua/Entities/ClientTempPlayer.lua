@@ -1,4 +1,4 @@
---- BLOCK #0 1-155, warpins: 1 ---
+--- BLOCK #0 1-172, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -59,26 +59,45 @@ slot18 = slot18(slot20)
 slot19 = require
 slot21 = "Common.Utils.VirtualEntUtils"
 slot19 = slot19(slot21)
-slot20 = slot0.Class
-slot22 = "ClientTempPlayer"
-slot23 = slot13
-slot20 = slot20(slot22, slot23)
-slot21 = require
-slot23 = "Entities.SpaceEntities.CommonComponent.ClientMotionComponent"
-slot21 = slot21(slot23)
+slot20 = require
+slot22 = "Data.pet_data"
+slot20 = slot20(slot22)
+slot21 = slot0.Class
+slot23 = "ClientTempPlayer"
+slot24 = slot13
+slot21 = slot21(slot23, slot24)
 slot22 = require
-slot24 = "Common.Ability.Attribute.ActorCombatAttribute"
+slot24 = "Entities.SpaceEntities.CommonComponent.ClientMotionComponent"
 slot22 = slot22(slot24)
-slot23 = {}
-slot23[1] = slot21
-slot24 = slot0.AddComponents
-slot26 = slot20
-slot27 = slot23
+slot23 = require
+slot25 = "Common.Ability.Attribute.ActorCombatAttribute"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Common.Components.CharacterController"
+slot24 = slot24(slot26)
+slot25 = require
+slot27 = "Entities.SpaceEntities.CommonComponent.ClientDyingComponent"
+slot25 = slot25(slot27)
+slot26 = require
+slot28 = "Entities.SpaceEntities.CommonComponent.ClientVoxelComponent"
+slot26 = slot26(slot28)
+slot27 = require
+slot29 = "Entities.SpaceEntities.CommonComponent.ClientStateCheckComponent"
+slot27 = slot27(slot29)
+slot28 = {}
+slot28[1] = slot24
+slot28[2] = slot26
+slot28[3] = slot27
+slot28[4] = slot25
+slot28[5] = slot22
+slot29 = slot0.AddComponents
+slot31 = slot21
+slot32 = slot28
 
-slot24(slot26, slot27)
+slot29(slot31, slot32)
 
-slot24 = function(slot0)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot29 = function(slot0)
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = ClientTempPlayer
 	slot1 = slot1.super
 	slot1 = slot1.initializeComponents
@@ -86,34 +105,30 @@ slot24 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.AddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_MAIN_PLAYER
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.AddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_MOTION
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.AddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_CHARACETER_CONTROLLER
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.AddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
 
 	slot1(slot3, slot4)
@@ -125,9 +140,9 @@ slot24 = function(slot0)
 
 end
 
-slot20.initializeComponents = slot24
+slot21.initializeComponents = slot29
 
-slot24 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientTempPlayer
 	slot2 = slot2.super
@@ -144,9 +159,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot20.postInit = slot24
+slot21.postInit = slot29
 
-slot24 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ClientConst
 	slot1 = slot1.ENTITY_CS_TYPE
@@ -159,9 +174,9 @@ slot24 = function(slot0)
 
 end
 
-slot20.getCsEntityType = slot24
+slot21.getCsEntityType = slot29
 
-slot24 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = AddressDataConst
 	slot1 = slot1.Ent_MainPlayer
@@ -173,9 +188,9 @@ slot24 = function(slot0)
 
 end
 
-slot20.getEModelResId = slot24
+slot21.getEModelResId = slot29
 
-slot24 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ClientTempPlayer
 	slot1 = slot1.super
@@ -197,20 +212,21 @@ slot24 = function(slot0)
 
 end
 
-slot20.onEnterScene = slot24
+slot21.onEnterScene = slot29
 
-slot24 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot29 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.controllerComponent
 	slot3 = slot1
 	slot1 = slot1.SetControllerMachine
-	slot4 = ClientModelUtils
-	slot4 = slot4.getAnimController
-	slot6 = slot0.templateData
-	MULTRES = slot4(slot6)
+	slot4 = Const
+	slot4 = slot4.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot5 = ClientModelUtils
+	slot5 = slot5.getAnimController
+	slot7 = slot0.templateData
+	MULTRES = slot5(slot7)
 
-	slot1(slot3, MULTRES)
+	slot1(slot3, slot4, MULTRES)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -219,9 +235,9 @@ slot24 = function(slot0)
 
 end
 
-slot20.setControllerMachine = slot24
+slot21.setControllerMachine = slot29
 
-slot24 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -232,35 +248,9 @@ slot24 = function(slot0)
 
 end
 
-slot20.isInCombat = slot24
+slot21.isInCombat = slot29
 
-slot24 = function(slot0, slot1)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot2 = ClientTempPlayer
-	slot2 = slot2.super
-	slot2 = slot2.tick
-	slot4 = slot0
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.postComponentMethod
-	slot5 = "tick"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot20.tick = slot24
-
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot29 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot5 = true
 
@@ -271,7 +261,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot25 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -282,7 +272,7 @@ slot25 = function(slot0)
 
 end
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = nil
 
@@ -293,7 +283,7 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = ClientTempPlayer
 	slot1 = slot1.super
@@ -505,9 +495,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.start = slot27
+slot21.start = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = 0
 
@@ -518,9 +508,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.getWeather = slot27
+slot21.getWeather = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = nil
 
@@ -531,9 +521,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.getCurPetEntity = slot27
+slot21.getCurPetEntity = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -544,9 +534,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isDead = slot27
+slot21.isDead = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -557,9 +547,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isControllingPet = slot27
+slot21.isControllingPet = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -570,9 +560,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.canRotate = slot27
+slot21.canRotate = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -583,9 +573,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.inBreak = slot27
+slot21.inBreak = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -596,9 +586,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.canMove = slot27
+slot21.canMove = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -609,9 +599,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isControllingMaster = slot27
+slot21.isControllingMaster = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -622,9 +612,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isControllingExploreEnt = slot27
+slot21.isControllingExploreEnt = slot32
 
-slot27 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -633,9 +623,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot20.getPetInfo = slot27
+slot21.getPetInfo = slot32
 
-slot27 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = tostring
 	slot4 = slot1
@@ -647,9 +637,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot20.getSpecificAbilityPetId = slot27
+slot21.getSpecificAbilityPetId = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.templateData
 
@@ -660,22 +650,88 @@ slot27 = function(slot0)
 
 end
 
-slot20.getTemplateData = slot27
+slot21.getTemplateData = slot32
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.deformData
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.deformContext
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 7-10, warpins: 1 ---
+	slot1 = slot0.deformContext
+	slot1 = slot1.templateId
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 2 ---
+	slot1 = slot0.deformData
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-17, warpins: 1 ---
+	slot1 = PetData
+	slot2 = slot0.deformContext
+	slot2 = slot2.templateId
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-20, warpins: 2 ---
+	slot0.deformData = slot1
+	slot1 = slot0.deformData
+
+	return slot1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-22, warpins: 3 ---
 	slot1 = slot0.templateData
 
 	return slot1
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot20.getConfigData = slot27
+slot21.getConfigData = slot32
 
-slot27 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -684,9 +740,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot20.addStatData = slot27
+slot21.addStatData = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.actorCombatAttribute
 	slot3 = slot1
@@ -701,9 +757,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.getStamina = slot27
+slot21.getStamina = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = 0
 
@@ -714,9 +770,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.getGameTime = slot27
+slot21.getGameTime = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -727,9 +783,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isInCatchMode = slot27
+slot21.isInCatchMode = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -738,9 +794,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.cancelAbility = slot27
+slot21.cancelAbility = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = nil
 
@@ -751,9 +807,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.getEntityIdByStaticId = slot27
+slot21.getEntityIdByStaticId = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -764,9 +820,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isAbilityEdgeBlocking = slot27
+slot21.isAbilityEdgeBlocking = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -777,9 +833,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.isAlive = slot27
+slot21.isAlive = slot32
 
-slot27 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -788,9 +844,9 @@ slot27 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot20.tryClientTrigger = slot27
+slot21.tryClientTrigger = slot32
 
-slot27 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -799,9 +855,9 @@ slot27 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.tryClientTriggerAll = slot27
+slot21.tryClientTriggerAll = slot32
 
-slot27 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.lastPawnId
 	slot4 = pg
@@ -813,48 +869,69 @@ slot27 = function(slot0, slot1, slot2)
 	if slot4 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot5 = slot4.eModel
+	--- BLOCK #1 8-14, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.hasEModelComponent
+	slot8 = Const
+	slot8 = slot8.COMPONENT_INDEX_MODEL
+	slot5 = slot5(slot7, slot8)
 	--- END OF BLOCK #1 ---
 
-	if slot5 ~= nil then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 11-18, warpins: 1 ---
-	slot5 = slot0.eModel
-	slot5 = slot5.modelComponent
-	slot6 = slot4.eModel
-	slot6 = slot6.modelComponent
-	slot9 = slot5
-	slot7 = slot5.SeizeModel
-	slot10 = slot6
-
-	slot7(slot9, slot10)
-
+	--- BLOCK #2 15-24, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.getEModelComponent
+	slot8 = Const
+	slot8 = slot8.COMPONENT_INDEX_MODEL
+	slot5 = slot5(slot7, slot8)
+	slot6 = NotNil
+	slot8 = slot5
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot6 = if slot6 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 19-19, warpins: 3 ---
-	return
+	--- BLOCK #3 25-31, warpins: 1 ---
+	slot6 = slot0.eModel
+	slot8 = slot6
+	slot6 = slot6.SeizeModel
+	slot9 = Const
+	slot9 = slot9.COMPONENT_INDEX_MODEL
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 32-32, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot20.refreshModel = slot27
+slot21.refreshModel = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -863,9 +940,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.onLoseControlled = slot27
+slot21.onLoseControlled = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-44, warpins: 1 ---
 	slot1 = require
 	slot3 = "Core.Common.EntityFactory"
@@ -971,9 +1048,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.testCreate = slot27
+slot21.testCreate = slot32
 
-slot27 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1001,9 +1078,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot20.testReplace = slot27
+slot21.testReplace = slot32
 
-slot27 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1030,9 +1107,9 @@ slot27 = function(slot0)
 
 end
 
-slot20.test = slot27
+slot21.test = slot32
 
-return slot20
+return slot21
 --- END OF BLOCK #0 ---
 
 

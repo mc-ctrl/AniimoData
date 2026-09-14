@@ -1,4 +1,4 @@
---- BLOCK #0 1-36, warpins: 1 ---
+--- BLOCK #0 1-39, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Global"
 slot0 = slot0(slot2)
@@ -31,8 +31,11 @@ slot10 = string
 slot10 = slot10.sub
 slot11 = string
 slot11 = slot11.find
+slot12 = type
+slot13 = pairs
+slot14 = ipairs
 
-slot12 = function()
+slot15 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = globalDeclare
 	slot2 = "traceback"
@@ -475,7 +478,7 @@ slot12 = function()
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 34-297, warpins: 2 ---
+	--- BLOCK #6 34-302, warpins: 2 ---
 	raw_rawset = slot1
 
 	slot1 = function(slot0, slot1, slot2)
@@ -4179,6 +4182,46 @@ slot12 = function()
 
 	IsNil = slot3
 	slot3 = globalDeclare
+	slot5 = "IsNilModel"
+
+	slot3(slot5)
+
+	slot3 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-4, warpins: 1 ---
+		slot1 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 5-5, warpins: 1 ---
+		slot1 = true
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 6-6, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	IsNilModel = slot3
+	slot3 = globalDeclare
 	slot5 = "NotNil"
 
 	slot3(slot5)
@@ -5479,7 +5522,7 @@ slot12 = function()
 
 end
 
-slot2.init = slot12
+slot2.init = slot15
 
 return slot2
 --- END OF BLOCK #0 ---

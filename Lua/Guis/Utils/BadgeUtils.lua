@@ -1,4 +1,4 @@
---- BLOCK #0 1-204, warpins: 1 ---
+--- BLOCK #0 1-211, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
@@ -52,11 +52,11 @@ slot18 = "Data.item_source_data"
 slot16 = slot16(slot18)
 slot17 = {}
 slot18 = {
+	CHAMPION_PATH = 2,
 	MASTER_PATH = 1,
 	SPECIAL_PATH = 5,
 	GLITZ_PATH = 4,
-	EXPLORE_PATH = 3,
-	CHAMPION_PATH = 2
+	EXPLORE_PATH = 3
 }
 slot17.BADGE_TYPE = slot18
 slot18 = {}
@@ -90,9 +90,9 @@ slot18 = {
 }
 slot17.QUALITY_ICON = slot18
 slot18 = {
+	LOCK = 1,
 	COMPLETE = 3,
-	UNLOCK = 2,
-	LOCK = 1
+	UNLOCK = 2
 }
 slot17.BADGE_STATE = slot18
 slot18 = 2
@@ -112,12 +112,13 @@ slot17.RainBowMatPath = slot18
 slot18 = 4
 slot17.RainBowQuality = slot18
 slot18 = {
-	normal = 1,
-	replaceColon = 2
+	replaceColon = 2,
+	normal = 1
 }
 slot17.TitleDisplayType = slot18
+slot18 = "PLAYER_BADGE_OVERVIEW_BOX_%s"
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4)
+slot19 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.GetComponent
@@ -301,9 +302,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot17.renderEntry = slot18
+slot17.renderEntry = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-52, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.GetComponent
@@ -427,9 +428,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17._renderTooltip = slot18
+slot17._renderTooltip = slot19
 
-slot18 = function()
+slot19 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pairs
 	slot2 = BadgeUtils
@@ -482,9 +483,9 @@ slot18 = function()
 
 end
 
-slot17.checkHasAnyBadgeTypeIsUnlock = slot18
+slot17.checkHasAnyBadgeTypeIsUnlock = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PlayerBadgeTypeData
 	slot1 = slot1[slot0]
@@ -562,9 +563,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.checkBadgeTypeIsUnlock = slot18
+slot17.checkBadgeTypeIsUnlock = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = BadgeUtils
 	slot2 = slot2.checkSubTypeIsUnlockInServer
@@ -633,9 +634,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.checkSubTypeIsUnlock = slot18
+slot17.checkSubTypeIsUnlock = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -704,9 +705,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.checkSubTypeIsUnlockInServer = slot18
+slot17.checkSubTypeIsUnlockInServer = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeData
 	slot1 = slot1[slot0]
@@ -788,9 +789,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeInitStateFromCfg = slot18
+slot17.getBadgeInitStateFromCfg = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeTypeData
 	slot1 = slot1[slot0]
@@ -834,9 +835,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getNameAndIconByMainType = slot18
+slot17.getNameAndIconByMainType = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeGroupMap
 	slot1 = slot1[slot0]
@@ -880,9 +881,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeSlotIcon = slot18
+slot17.getBadgeSlotIcon = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PlayerBadgeGroupMap
 	slot2 = slot2[slot0]
@@ -926,9 +927,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getBadgeIcon = slot18
+slot17.getBadgeIcon = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PlayerBadgeGroupMap
 	slot2 = slot2[slot0]
@@ -972,9 +973,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getBadgeQuality = slot18
+slot17.getBadgeQuality = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeData
 	slot1 = slot1[slot0]
@@ -1004,9 +1005,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeQualityByBadgeId = slot18
+slot17.getBadgeQualityByBadgeId = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PlayerBadgeData
 	slot2 = slot2[slot0]
@@ -1062,9 +1063,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.setBadgeQuality = slot18
+slot17.setBadgeQuality = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeTypeData
 	slot1 = slot1[slot0]
@@ -1108,9 +1109,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getMainTypeNameAndIconInPlayerUI = slot18
+slot17.getMainTypeNameAndIconInPlayerUI = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = PlayerBadgeMainTypeMap
@@ -1120,7 +1121,7 @@ slot18 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
@@ -1130,7 +1131,7 @@ slot18 = function(slot0)
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #2 10-16, warpins: 1 ---
@@ -1144,14 +1145,33 @@ slot18 = function(slot0)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #3 17-30, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot8 = {}
 	slot9 = {}
 	slot8.suite = slot9
+	slot9 = slot7.subType
+	--- END OF BLOCK #3 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-23, warpins: 1 ---
+	slot9 = slot6
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-35, warpins: 2 ---
+	slot8.subType = slot9
 	slot9 = slot7.subTypeName
 	slot8.subName = slot9
 	slot9 = BadgeUtils
@@ -1161,25 +1181,25 @@ slot18 = function(slot0)
 	slot9 = slot9(slot11, slot12)
 	slot8.subArkName = slot9
 	slot9 = slot7.groupIds
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 31-34, warpins: 1 ---
+	--- BLOCK #6 36-39, warpins: 1 ---
 	slot10 = ipairs
 	slot12 = slot9
 	slot10, slot11, slot12 = slot10(slot12)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 35-56, warpins: 1 ---
+	--- BLOCK #7 40-61, warpins: 1 ---
 	slot15 = BadgeUtils
 	slot15 = slot15.getBadgeByGroupId
 	slot17 = slot14
@@ -1204,20 +1224,20 @@ slot18 = function(slot0)
 
 	slot19(slot21, slot22)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 57-58, warpins: 2 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #8 62-63, warpins: 2 ---
+	--- END OF BLOCK #8 ---
 
 	for slot13, slot14 in slot10, slot11, slot12
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #7
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #7 59-81, warpins: 2 ---
+	--- BLOCK #9 64-86, warpins: 2 ---
 	slot10 = BadgeUtils
 	slot10 = slot10.getBadgeByGroupId
 	slot12 = slot7.bigBadgeId
@@ -1243,30 +1263,264 @@ slot18 = function(slot0)
 
 	slot13(slot15, slot16)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 82-83, warpins: 3 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #10 87-88, warpins: 3 ---
+	--- END OF BLOCK #10 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
 	LOOP BLOCK #2
-	GO OUT TO BLOCK #9
+	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #9 84-84, warpins: 2 ---
+	--- BLOCK #11 89-89, warpins: 2 ---
 	return slot1
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot17.getDataByTab = slot18
+slot17.getDataByTab = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = 0
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-19, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.prefsCacheUtils
+	slot3 = slot1
+	slot1 = slot1.getInt
+	slot4 = string
+	slot4 = slot4.format
+	slot6 = LastLookBadgeBoxKey
+	slot7 = slot0
+	slot4 = slot4(slot6, slot7)
+	slot5 = 0
+	slot6 = ClientConst
+	slot6 = slot6.CACHE_TYPE_FLAG
+	slot6 = slot6.USER
+
+	return slot1(slot3, slot4, slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.getLastLookBadgeBoxSubType = slot19
+
+slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-7, warpins: 1 ---
+	slot2 = 0
+
+	--- END OF BLOCK #2 ---
+
+	if slot1 <= slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-8, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-24, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.prefsCacheUtils
+	slot4 = slot2
+	slot2 = slot2.setInt
+	slot5 = string
+	slot5 = slot5.format
+	slot7 = LastLookBadgeBoxKey
+	slot8 = slot0
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot1
+	slot7 = ClientConst
+	slot7 = slot7.CACHE_TYPE_FLAG
+	slot7 = slot7.USER
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot17.setLastLookBadgeBoxSubType = slot19
+
+slot19 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-5, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-9, warpins: 2 ---
+	slot3 = PlayerBadgeTypeData
+	slot3 = slot3[slot0]
+
+	--- END OF BLOCK #3 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-14, warpins: 2 ---
+	slot4 = ipairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #6 15-17, warpins: 1 ---
+	slot9 = slot8.seasonBadgeBox
+	--- END OF BLOCK #6 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 18-21, warpins: 1 ---
+	slot9 = slot8.seasonBadgeBox
+	slot9 = slot9[1]
+	--- END OF BLOCK #7 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 22-25, warpins: 1 ---
+	slot9 = slot8.seasonBadgeBox
+	slot9 = slot9[2]
+
+	--- END OF BLOCK #8 ---
+
+	if slot9 == slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 26-26, warpins: 1 ---
+	return slot7
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 27-28, warpins: 5 ---
+	--- END OF BLOCK #10 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 29-29, warpins: 1 ---
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot17.getSeasonBadgeBoxSubType = slot19
+
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PlayerBadgeTypeData
 	slot2 = slot2[slot0]
@@ -1308,9 +1562,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getSubTypeArkName = slot18
+slot17.getSubTypeArkName = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1373,9 +1627,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getLatestCompleteBadgeId = slot18
+slot17.getLatestCompleteBadgeId = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1541,9 +1795,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeByGroupId = slot18
+slot17.getBadgeByGroupId = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -1701,9 +1955,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getAllBadgeByGroupId = slot18
+slot17.getAllBadgeByGroupId = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1766,9 +2020,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeUnlockInfo = slot18
+slot17.getBadgeUnlockInfo = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = PlayerBadgeData
 	slot1 = slot1[slot0]
@@ -1829,9 +2083,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeProcessById = slot18
+slot17.getBadgeProcessById = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -1939,25 +2193,25 @@ slot18 = function(slot0)
 
 end
 
-slot17.getConditionInfoOnlyNormal = slot18
+slot17.getConditionInfoOnlyNormal = slot19
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = {}
-	slot2 = pg
-	slot2 = slot2.me
-	slot3 = slot2.triggerMap
+slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = {}
+	slot3 = nil
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot0 then
+	if slot1 ~= true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	slot4 = slot0.condition
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot3 = slot4.triggerMap
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -1966,112 +2220,144 @@ slot18 = function(slot0)
 	--- BLOCK #2 8-9, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot4 = if slot0 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-13, warpins: 1 ---
-	slot5 = ipairs
-	slot7 = slot4
-	slot5, slot6, slot7 = slot5(slot7)
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot4 = slot0.condition
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-21, warpins: 1 ---
-	slot10 = BadgeUtils
-	slot10 = slot10._getOneNormalConditionCount
-	slot12 = slot3
-	slot13 = slot9
-	slot10, slot11, slot12 = slot10(slot12, slot13)
-	slot13 = slot9[1]
+	--- BLOCK #4 11-12, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	slot13 = if slot13 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-25, warpins: 1 ---
-	slot13 = CustomTriggerData
-	slot14 = slot9[1]
-	slot13 = slot13[slot14]
-	slot13 = slot13.note
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-40, warpins: 2 ---
-	slot14 = table
-	slot14 = slot14.insert
-	slot16 = slot1
-	slot17 = {
-		tIndex = 0
-	}
-	slot18 = slot9[1]
-	slot17.conditionId = slot18
-	slot17.desc = slot13
-	slot17.needNum = slot11
-	slot17.byCondition = slot12
-	slot17.curNum = slot10
-	slot18 = SourceData
-	slot19 = slot9[4]
-	slot18 = slot18[slot19]
-	slot17.source = slot18
-
-	slot14(slot16, slot17)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 41-42, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 43-47, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.petHandbookMap
-	--- END OF BLOCK #8 ---
-
-	slot6 = if slot0 then
-	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 48-48, warpins: 1 ---
-	slot6 = slot0.petCollect
-	--- END OF BLOCK #9 ---
+	--- BLOCK #5 13-16, warpins: 1 ---
+	slot5 = ipairs
+	slot7 = slot4
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #10 49-50, warpins: 2 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #6 17-25, warpins: 1 ---
+	slot10 = BadgeUtils
+	slot10 = slot10._getOneNormalConditionCount
+	slot12 = slot3
+	slot13 = slot9
+	slot14 = slot1
+	slot10, slot11, slot12 = slot10(slot12, slot13, slot14)
+	slot13 = slot9[1]
+	--- END OF BLOCK #6 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #11
+	slot13 = if slot13 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #11 51-59, warpins: 1 ---
+	--- BLOCK #7 26-29, warpins: 1 ---
+	slot13 = CustomTriggerData
+	slot14 = slot9[1]
+	slot13 = slot13[slot14]
+	slot13 = slot13.note
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 30-43, warpins: 2 ---
+	slot14 = #slot2
+	slot14 = slot14 + 1
+	slot15 = {
+		tIndex = 0
+	}
+	slot16 = slot9[1]
+	slot15.conditionId = slot16
+	slot15.desc = slot13
+	slot15.needNum = slot11
+	slot15.byCondition = slot12
+	slot15.curNum = slot10
+	slot16 = SourceData
+	slot17 = slot9[4]
+	slot16 = slot16[slot17]
+	slot15.source = slot16
+	slot2[slot14] = slot15
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 44-45, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 46-48, warpins: 2 ---
+	slot5 = nil
+	--- END OF BLOCK #10 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 49-51, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot5 = slot6.petHandbookMap
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 52-53, warpins: 2 ---
+	--- END OF BLOCK #12 ---
+
+	slot6 = if slot0 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 54-54, warpins: 1 ---
+	slot6 = slot0.petCollect
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 55-56, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #15 57-65, warpins: 1 ---
 	slot7 = {
 		tIndex = 1
 	}
@@ -2082,192 +2368,208 @@ slot18 = function(slot0)
 	slot10 = pairs
 	slot12 = slot6
 	slot10, slot11, slot12 = slot10(slot12)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #12 60-69, warpins: 1 ---
-	slot15 = BadgeUtils
-	slot15 = slot15.PET_STATE_IS_EMPTY
-	slot18 = slot5
-	slot16 = slot5.isKnown
-	slot19 = slot14
-	slot20 = Const
-	slot20 = slot20.GROUP_TYPE_SELF
-	slot16 = slot16(slot18, slot19, slot20)
-	--- END OF BLOCK #12 ---
+	--- BLOCK #16 66-68, warpins: 1 ---
+	slot15 = nil
+	--- END OF BLOCK #16 ---
 
-	slot16 = if slot16 then
-	JUMP TO BLOCK #13
+	if slot1 == true then
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #13 70-71, warpins: 1 ---
+	--- BLOCK #17 69-71, warpins: 1 ---
 	slot16 = BadgeUtils
-	slot15 = slot16.PET_STATE_IS_KNOWN
-	--- END OF BLOCK #13 ---
+	slot15 = slot16.PET_STATE_IS_CATCH
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #14 72-79, warpins: 2 ---
+	--- BLOCK #18 72-79, warpins: 1 ---
 	slot18 = slot5
 	slot16 = slot5.isCatched
 	slot19 = slot14
 	slot20 = Const
 	slot20 = slot20.GROUP_TYPE_SELF
 	slot16 = slot16(slot18, slot19, slot20)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #18 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #15 80-81, warpins: 1 ---
+	--- BLOCK #19 80-82, warpins: 1 ---
 	slot16 = BadgeUtils
 	slot15 = slot16.PET_STATE_IS_CATCH
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #16 82-98, warpins: 2 ---
-	slot16 = table
-	slot16 = slot16.insert
-	slot18 = slot7.collect
-	slot19 = {}
-	slot19.petId = slot14
-	slot20 = LuaUIUtils
-	slot20 = slot20.getPetIconByTemplateId
-	slot22 = slot14
-	slot23 = LuaUIUtils
-	slot23 = slot23.PET_ICON
-	slot20 = slot20(slot22, slot23)
-	slot19.petIcon = slot20
-	slot19.state = slot15
+	--- BLOCK #20 83-90, warpins: 1 ---
+	slot18 = slot5
+	slot16 = slot5.isKnown
+	slot19 = slot14
+	slot20 = Const
+	slot20 = slot20.GROUP_TYPE_SELF
+	slot16 = slot16(slot18, slot19, slot20)
+	--- END OF BLOCK #20 ---
 
-	slot16(slot18, slot19)
-
-	slot9 = slot9 + 1
-	--- END OF BLOCK #16 ---
-
-	if slot9 == slot8 then
-	JUMP TO BLOCK #17
-	else
+	slot16 = if slot16 then
 	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #17 99-109, warpins: 1 ---
-	slot16 = table
-	slot16 = slot16.insert
-	slot18 = slot1
-	slot19 = slot7
+	--- BLOCK #21 91-93, warpins: 1 ---
+	slot16 = BadgeUtils
+	slot15 = slot16.PET_STATE_IS_KNOWN
+	--- END OF BLOCK #21 ---
 
-	slot16(slot18, slot19)
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
+
+	--- BLOCK #22 94-95, warpins: 1 ---
+	slot16 = BadgeUtils
+	slot15 = slot16.PET_STATE_IS_EMPTY
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 96-113, warpins: 4 ---
+	slot16 = slot7.collect
+	slot17 = slot7.collect
+	slot17 = #slot17
+	slot17 = slot17 + 1
+	slot18 = {}
+	slot18.petId = slot14
+	slot19 = LuaUIUtils
+	slot19 = slot19.getPetIconByTemplateId
+	slot21 = slot14
+	slot22 = LuaUIUtils
+	slot22 = slot22.PET_ICON
+	slot19 = slot19(slot21, slot22)
+	slot18.petIcon = slot19
+	slot18.state = slot15
+	slot16[slot17] = slot18
+	slot9 = slot9 + 1
+	--- END OF BLOCK #23 ---
+
+	if slot9 == slot8 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #24 114-122, warpins: 1 ---
+	slot16 = #slot2
+	slot16 = slot16 + 1
+	slot2[slot16] = slot7
 	slot16 = {
 		tIndex = 1
 	}
 	slot17 = {}
 	slot16.collect = slot17
 	slot7 = slot16
-	--- END OF BLOCK #17 ---
-
-	if slot8 == 4 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 110-111, warpins: 1 ---
-	slot8 = 3
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #19 112-112, warpins: 1 ---
-	slot8 = 4
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 113-113, warpins: 2 ---
-	slot9 = 0
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 114-115, warpins: 3 ---
-	--- END OF BLOCK #21 ---
-
-	for slot13, slot14 in slot10, slot11, slot12
-	LOOP BLOCK #12
-	GO OUT TO BLOCK #22
-
-
-	--- BLOCK #22 116-118, warpins: 1 ---
-	slot10 = 0
-	--- END OF BLOCK #22 ---
-
-	if slot9 > slot10 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 119-123, warpins: 1 ---
-	slot10 = table
-	slot10 = slot10.insert
-	slot12 = slot1
-	slot13 = slot7
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 124-125, warpins: 3 ---
 	--- END OF BLOCK #24 ---
 
-	slot7 = if slot0 then
+	if slot8 == 4 then
 	JUMP TO BLOCK #25
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 126-126, warpins: 1 ---
-	slot7 = slot0.itemCollect
+	--- BLOCK #25 123-124, warpins: 1 ---
+	slot8 = 3
 	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #26 127-128, warpins: 2 ---
+	--- BLOCK #26 125-125, warpins: 1 ---
+	slot8 = 4
 	--- END OF BLOCK #26 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #27
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 126-126, warpins: 2 ---
+	slot9 = 0
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 127-128, warpins: 3 ---
+	--- END OF BLOCK #28 ---
+
+	for slot13, slot14 in slot10, slot11, slot12
+	LOOP BLOCK #16
+	GO OUT TO BLOCK #29
+
+
+	--- BLOCK #29 129-131, warpins: 1 ---
+	slot10 = 0
+	--- END OF BLOCK #29 ---
+
+	if slot9 > slot10 then
+	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #27 129-135, warpins: 1 ---
+	--- BLOCK #30 132-134, warpins: 1 ---
+	slot10 = #slot2
+	slot10 = slot10 + 1
+	slot2[slot10] = slot7
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 135-136, warpins: 3 ---
+	--- END OF BLOCK #31 ---
+
+	slot7 = if slot0 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 137-137, warpins: 1 ---
+	slot7 = slot0.itemCollect
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 138-139, warpins: 2 ---
+	--- END OF BLOCK #33 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #34 140-146, warpins: 1 ---
 	slot8 = {
 		tIndex = 2
 	}
@@ -2276,65 +2578,87 @@ slot18 = function(slot0)
 	slot9 = pairs
 	slot11 = slot7
 	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #28 136-149, warpins: 1 ---
+	--- BLOCK #35 147-150, warpins: 1 ---
 	slot14 = slot13[1]
 	slot15 = slot13[2]
+	--- END OF BLOCK #35 ---
+
+	if slot1 == true then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 151-152, warpins: 1 ---
+	--- END OF BLOCK #36 ---
+
+	slot16 = if not slot15 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 153-156, warpins: 2 ---
 	slot16 = BadgeUtils
 	slot16 = slot16._getItemCount
 	slot18 = slot14
 	slot16 = slot16(slot18)
-	slot17 = table
-	slot17 = slot17.insert
-	slot19 = slot8.collect
-	slot20 = {}
-	slot20.itemId = slot14
-	slot20.needNum = slot15
-	slot20.curNum = slot16
+	--- END OF BLOCK #37 ---
 
-	slot17(slot19, slot20)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
+	FLOW; TARGET BLOCK #38
 
 
-	--- BLOCK #29 150-151, warpins: 2 ---
-	--- END OF BLOCK #29 ---
+	--- BLOCK #38 157-165, warpins: 2 ---
+	slot17 = slot8.collect
+	slot18 = slot8.collect
+	slot18 = #slot18
+	slot18 = slot18 + 1
+	slot19 = {}
+	slot19.itemId = slot14
+	slot19.needNum = slot15
+	slot19.curNum = slot16
+	slot17[slot18] = slot19
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 166-167, warpins: 2 ---
+	--- END OF BLOCK #39 ---
 
 	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #28
-	GO OUT TO BLOCK #30
+	LOOP BLOCK #35
+	GO OUT TO BLOCK #40
 
 
-	--- BLOCK #30 152-156, warpins: 1 ---
-	slot9 = table
-	slot9 = slot9.insert
-	slot11 = slot1
-	slot12 = slot8
+	--- BLOCK #40 168-170, warpins: 1 ---
+	slot9 = #slot2
+	slot9 = slot9 + 1
+	slot2[slot9] = slot8
 
-	slot9(slot11, slot12)
+	--- END OF BLOCK #40 ---
 
-	--- END OF BLOCK #30 ---
-
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #31 157-157, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #31 ---
+	--- BLOCK #41 171-171, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #41 ---
 
 
 
 end
 
-slot17.getConditionInfo = slot18
+slot17.getConditionInfo = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = PlayerBadgeData
 	slot2 = slot2[slot0]
@@ -2402,9 +2726,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getConditionInfoByBadgeIdAndIndex = slot18
+slot17.getConditionInfoByBadgeIdAndIndex = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = 0
 	slot2 = 0
@@ -2478,180 +2802,262 @@ slot18 = function(slot0)
 
 end
 
-slot17.getNormalConditionInfo = slot18
+slot17.getNormalConditionInfo = slot19
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot1[3]
+slot19 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot2 == -1 then
+	if slot2 == true then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.isCompleteOrMeetCondition
-	slot5 = slot1[1]
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot1[3]
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	if slot3 ~= -1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 10-11, warpins: 1 ---
-	slot3 = 1
+	--- BLOCK #2 6-7, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 12-12, warpins: 1 ---
-	slot3 = 0
+	--- BLOCK #3 8-8, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-16, warpins: 2 ---
-	slot4 = 1
-	slot5 = true
-
-	return slot3, slot4, slot5
-
+	--- BLOCK #4 9-10, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 17-19, warpins: 1 ---
-	slot2 = slot1[3]
+	--- BLOCK #5 11-12, warpins: 1 ---
+	slot4 = 1
 	--- END OF BLOCK #5 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 20-20, warpins: 1 ---
-	slot2 = 1
+	--- BLOCK #6 13-15, warpins: 1 ---
+	slot4 = slot1[2]
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 21-26, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.isCompleteOrMeetCondition
-	slot6 = slot1[1]
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #7 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #8
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 27-36, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.getConditionTargetCount
-	slot7 = slot1[1]
-	slot8 = slot2
-	slot4 = slot4(slot6, slot7, slot8)
+	--- BLOCK #7 16-16, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 17-20, warpins: 3 ---
 	slot5 = slot4
 	slot6 = slot4
-	slot7 = false
+	slot7 = slot3
 
 	return slot5, slot6, slot7
 
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 37-39, warpins: 1 ---
-	slot4 = slot1[1]
+	--- BLOCK #9 21-23, warpins: 2 ---
+	slot3 = slot1[3]
 	--- END OF BLOCK #9 ---
 
-	slot4 = if slot4 then
+	if slot3 == -1 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 40-46, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.getConditionFinishCount
-	slot7 = slot1[1]
-	slot8 = slot2
-	slot4 = slot4(slot6, slot7, slot8)
+	--- BLOCK #10 24-29, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isCompleteOrMeetCondition
+	slot6 = slot1[1]
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #10 ---
 
-	slot4 = if not slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 47-47, warpins: 2 ---
-	slot4 = 0
+	--- BLOCK #11 30-31, warpins: 1 ---
+	slot4 = 1
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 48-51, warpins: 2 ---
-	slot5 = slot4
-	slot6 = slot1[2]
+	--- BLOCK #12 32-32, warpins: 1 ---
+	slot4 = 0
 	--- END OF BLOCK #12 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #13
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 33-36, warpins: 2 ---
+	slot5 = 1
+	slot6 = true
+
+	return slot4, slot5, slot6
+
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #14 37-39, warpins: 1 ---
+	slot3 = slot1[3]
+	--- END OF BLOCK #14 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #13 52-52, warpins: 1 ---
-	slot6 = 1
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 53-54, warpins: 2 ---
-	slot7 = false
-
-	return slot5, slot6, slot7
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 55-55, warpins: 3 ---
-	return
+	--- BLOCK #15 40-40, warpins: 1 ---
+	slot3 = 1
 	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 41-46, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.isCompleteOrMeetCondition
+	slot7 = slot1[1]
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #16 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 47-56, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getConditionTargetCount
+	slot8 = slot1[1]
+	slot9 = slot3
+	slot5 = slot5(slot7, slot8, slot9)
+	slot6 = slot5
+	slot7 = slot5
+	slot8 = false
+
+	return slot6, slot7, slot8
+
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #18 57-59, warpins: 1 ---
+	slot5 = slot1[1]
+	--- END OF BLOCK #18 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 60-66, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getConditionFinishCount
+	slot8 = slot1[1]
+	slot9 = slot3
+	slot5 = slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #19 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 67-67, warpins: 2 ---
+	slot5 = 0
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 68-71, warpins: 2 ---
+	slot6 = slot5
+	slot7 = slot1[2]
+	--- END OF BLOCK #21 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 72-72, warpins: 1 ---
+	slot7 = 1
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 73-74, warpins: 2 ---
+	slot8 = false
+
+	return slot6, slot7, slot8
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 75-75, warpins: 3 ---
+	return
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot17._getOneNormalConditionCount = slot18
+slot17._getOneNormalConditionCount = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -2742,9 +3148,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getPetCollectInfo = slot18
+slot17.getPetCollectInfo = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = 0
 	slot2 = 0
@@ -2839,9 +3245,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getItemCollectInfo = slot18
+slot17.getItemCollectInfo = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ClientUtils
 	slot1 = slot1.getItemCountById
@@ -2860,9 +3266,9 @@ slot18 = function(slot0)
 
 end
 
-slot17._getItemCount = slot18
+slot17._getItemCount = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = PlayerBadgeMainTypeMap
@@ -2965,9 +3371,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeNumByTab = slot18
+slot17.getBadgeNumByTab = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.title
@@ -2998,9 +3404,9 @@ slot18 = function(slot0)
 	slot3 = slot3.insert
 	slot5 = slot1
 	slot6 = {
-		isTitle = true,
+		tIndex = 0,
 		icon = "$UI_PassiveSkillIcon_Avatar_130009.png",
-		tIndex = 0
+		isTitle = true
 	}
 	slot7 = BadgeUtils
 	slot7 = slot7._getPlayerTitleDisplay
@@ -3115,9 +3521,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getEntryData = slot18
+slot17.getEntryData = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.titleType
@@ -3181,9 +3587,9 @@ slot18 = function(slot0)
 
 end
 
-slot17._getPlayerTitleDisplay = slot18
+slot17._getPlayerTitleDisplay = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeData
 	slot1 = slot1[slot0]
@@ -3235,9 +3641,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getTypeByBadgeId = slot18
+slot17.getTypeByBadgeId = slot19
 
-slot18 = function()
+slot19 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pairs
 	slot2 = BadgeUtils
@@ -3290,9 +3696,9 @@ slot18 = function()
 
 end
 
-slot17.checkHasNewUnlockBadge = slot18
+slot17.checkHasNewUnlockBadge = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeMainTypeMap
 	slot1 = slot1[slot0]
@@ -3388,9 +3794,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.checkHasNewUnlockBadgeByTab = slot18
+slot17.checkHasNewUnlockBadgeByTab = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3414,9 +3820,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeStateFromPrefs = slot18
+slot17.getBadgeStateFromPrefs = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3440,9 +3846,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.setBadgeStateToPrefs = slot18
+slot17.setBadgeStateToPrefs = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3467,9 +3873,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.deleteBadgeStateInPrefs = slot18
+slot17.deleteBadgeStateInPrefs = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3493,9 +3899,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getBadgeObtainFromPrefs = slot18
+slot17.getBadgeObtainFromPrefs = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3519,9 +3925,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.setBadgeObtainFromPrefs = slot18
+slot17.setBadgeObtainFromPrefs = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3544,9 +3950,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.deleteBadgeObtainFromPrefs = slot18
+slot17.deleteBadgeObtainFromPrefs = slot19
 
-slot18 = function()
+slot19 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -3566,9 +3972,9 @@ slot18 = function()
 
 end
 
-slot17.getFirstEnterBadgeUI = slot18
+slot17.getFirstEnterBadgeUI = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3588,9 +3994,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.setFirstEnterBadgeUI = slot18
+slot17.setFirstEnterBadgeUI = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Const
 	slot1 = slot1.BADGE_STATUS
@@ -3627,9 +4033,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.badgeStateIsShow = slot18
+slot17.badgeStateIsShow = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Const
 	slot1 = slot1.BADGE_STATUS
@@ -3666,9 +4072,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.badgeStateIsGet = slot18
+slot17.badgeStateIsGet = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3699,9 +4105,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getGroupId = slot18
+slot17.getGroupId = slot19
 
-slot18 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = BadgeUtils
 	slot3 = slot3.getBadgeInitStateFromCfg
@@ -3835,9 +4241,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.onServerDataChanged = slot18
+slot17.onServerDataChanged = slot19
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = BadgeUtils
 	slot2 = slot2.getBadgeInitStateFromCfg
@@ -3943,9 +4349,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onServerDataAdd = slot18
+slot17.onServerDataAdd = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeData
 	slot1 = slot1[slot0]
@@ -4003,9 +4409,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.displayBadge = slot18
+slot17.displayBadge = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlayerBadgeData
 	slot1 = slot1[slot0]
@@ -4069,9 +4475,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.openBadgeTip = slot18
+slot17.openBadgeTip = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -4120,9 +4526,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.openBadgeObtainUI = slot18
+slot17.openBadgeObtainUI = slot19
 
-slot18 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0 - 1
 
@@ -4133,7 +4539,7 @@ slot18 = function(slot0)
 
 end
 
-slot17._getItemQuality = slot18
+slot17._getItemQuality = slot19
 
 return slot17
 --- END OF BLOCK #0 ---

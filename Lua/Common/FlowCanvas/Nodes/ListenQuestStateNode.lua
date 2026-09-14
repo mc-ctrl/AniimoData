@@ -41,11 +41,7 @@ end
 slot3.ctor = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-32, warpins: 1 ---
-	slot1 = "eventName"
-	slot2 = slot0.nodeId
-	slot1 = slot1 .. slot2
-	slot0.eventNameKey = slot1
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addFlowOutput
 	slot4 = "Out"
@@ -232,7 +228,7 @@ slot6 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #2 17-23, warpins: 1 ---
@@ -262,7 +258,7 @@ slot6 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
 	--- BLOCK #4 32-33, warpins: 1 ---
@@ -287,18 +283,22 @@ slot6 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #6 42-56, warpins: 1 ---
-	slot8 = slot0.flowOut_Init
-	slot10 = slot8
-	slot8 = slot8.call
-	slot11 = slot1
+	--- BLOCK #6 42-67, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7._getQuestState
+	slot11 = slot3
+	slot8 = slot8(slot10, slot11)
+	slot9 = slot0.flowOut_Init
+	slot11 = slot9
+	slot9 = slot9.call
+	slot12 = slot1
 
-	slot8(slot10, slot11)
+	slot9(slot11, slot12)
 
-	slot8 = function(slot0)
+	slot9 = function(slot0)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = slot0.questId
 		slot2 = questId
@@ -382,38 +382,85 @@ slot6 = function(slot0, slot1, slot2)
 
 	end
 
-	slot11 = slot0
-	slot9 = slot0.addEventListen
-	slot12 = slot1
-	slot13 = ServerEventConst
-	slot13 = slot13.QUEST_STATE_CHANGE
-	slot14 = slot8
+	slot10 = ServerEventConst
+	slot10 = slot10.QUEST_STATE_CHANGE
+	slot11 = slot3
+	slot10 = slot10 .. slot11
+	slot13 = slot0
+	slot11 = slot0.addEventListen
+	slot14 = slot1
+	slot15 = slot10
+	slot16 = slot9
 
-	slot9(slot11, slot12, slot13, slot14)
+	slot11(slot13, slot14, slot15, slot16)
 
-	return
+	slot13 = slot0
+	slot11 = slot0._getSpaceAndPlayer
+	slot14 = slot1
+	slot11, slot12 = slot11(slot13, slot14)
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot12 = if slot12 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #7 57-57, warpins: 2 ---
-	return
+	--- BLOCK #7 68-73, warpins: 1 ---
+	slot15 = slot12
+	slot13 = slot12._getQuestState
+	slot16 = slot3
+	slot13 = slot13(slot15, slot16)
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	if slot13 ~= slot8 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 58-58, warpins: 2 ---
-	return
+	--- BLOCK #8 74-81, warpins: 1 ---
+	slot16 = slot0
+	slot14 = slot0._onQuestStateChange
+	slot17 = slot1
+	slot18 = slot3
+	slot19 = slot5
+	slot20 = slot13
+	slot21 = slot12
+
+	slot14(slot16, slot17, slot18, slot19, slot20, slot21)
+
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 59-59, warpins: 2 ---
+	--- BLOCK #9 82-83, warpins: 3 ---
 	return
 	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 84-84, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 85-85, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 86-86, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
 
 
 
@@ -520,28 +567,14 @@ slot6 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-23, warpins: 2 ---
-	slot7 = slot4
-	slot5 = slot4.addSpaceEventListener
-	slot8 = slot2
-	slot9 = slot3
-
-	slot5(slot7, slot8, slot9)
-
+	--- BLOCK #2 7-13, warpins: 2 ---
 	slot7 = slot1
-	slot5 = slot1.addContextEvent
-	slot8 = slot2
-	slot9 = slot3
-	slot10 = slot0.nodeId
+	slot5 = slot1.registerSpaceEventListener
+	slot8 = slot0.nodeId
+	slot9 = slot2
+	slot10 = slot3
 
 	slot5(slot7, slot8, slot9, slot10)
-
-	slot7 = slot1
-	slot5 = slot1.setContextValue
-	slot8 = slot0.eventNameKey
-	slot9 = slot2
-
-	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -553,39 +586,15 @@ end
 slot3.addEventListen = slot6
 
 slot6 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot1
-	slot2 = slot1.getContextValue
-	slot5 = slot0.eventNameKey
-	slot2 = slot2(slot4, slot5)
+	slot2 = slot1.unregisterSpaceEventListeners
+	slot5 = slot0.nodeId
 
+	slot2(slot4, slot5)
+
+	return
 	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-7, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-13, warpins: 2 ---
-	slot5 = slot1
-	slot3 = slot1.removeContextEvent
-	slot6 = slot2
-	slot7 = slot0.nodeId
-
-	slot3(slot5, slot6, slot7)
-
-	return
-	--- END OF BLOCK #2 ---
 
 
 

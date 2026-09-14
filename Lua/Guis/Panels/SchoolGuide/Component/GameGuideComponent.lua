@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-92, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -48,17 +48,23 @@ slot14 = require
 slot16 = "Data.level_reward_linked_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Utils.Utils"
+slot17 = "Data.chest_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.item_source_data"
+slot18 = "Data.drop_data"
 slot16 = slot16(slot18)
-slot17 = slot1.LightClass
-slot19 = "GameGuideComponent"
-slot20 = slot2
-slot17 = slot17(slot19, slot20)
+slot17 = require
+slot19 = "Common.Utils.Utils"
+slot17 = slot17(slot19)
+slot18 = require
+slot20 = "Data.item_source_data"
+slot18 = slot18(slot20)
+slot19 = slot1.LightClass
+slot21 = "GameGuideComponent"
+slot22 = slot2
+slot19 = slot19(slot21, slot22)
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-46, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -113,9 +119,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.findObjects = slot18
+slot19.findObjects = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.secondLevelTabUList
 
@@ -218,9 +224,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.initView = slot18
+slot19.initView = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = nil
 	slot0.mainTabType = slot1
@@ -239,9 +245,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onDestroy = slot18
+slot19.onDestroy = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot0.mainTabType = slot1
 	slot3 = slot0.model
@@ -357,9 +363,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.enter = slot18
+slot19.enter = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -438,9 +444,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17._getSecondTabIndexByGroup = slot18
+slot19._getSecondTabIndexByGroup = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.widget
@@ -458,9 +464,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.exit = slot18
+slot19.exit = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -606,7 +612,7 @@ slot18 = function(slot0)
 	slot8 = Utils
 	slot8 = slot8.getConfigTimeOfArea
 	slot10 = slot4
-	slot11 = "eventEndDayTime"
+	slot11 = "tabEndDayTime"
 	slot8 = slot8(slot10, slot11)
 	slot9 = UIConst
 	slot9 = slot9.TimeType
@@ -678,9 +684,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.refreshUI = slot18
+slot19.refreshUI = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-43, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -834,9 +840,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.renderSecondTab = slot18
+slot19.renderSecondTab = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.secondTabType
 	slot2 = SchoolGuideConst
@@ -913,10 +919,10 @@ slot18 = function(slot0)
 
 end
 
-slot17.isLeaderSecondTab = slot18
+slot19.isLeaderSecondTab = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-145, warpins: 1 ---
+slot20 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-150, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1053,11 +1059,17 @@ slot18 = function(slot0, slot1, slot2, slot3)
 	slot37 = slot4.GetRefValue
 	slot40 = "btnInfo3"
 	slot37 = slot37(slot39, slot40)
+	slot40 = slot4
+	slot38 = slot4.GetRefValue
+	slot41 = "descLayoutBoxTransform"
+	slot38 = slot38(slot40, slot41)
+	slot41 = slot4
+	slot39 = slot4.GetRefValue
+	slot42 = "descLineTransform"
+	slot39 = slot39(slot41, slot42)
 
-	slot38 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-8, warpins: 1 ---
-		slot3 = true
-		slot2.hideCount = slot3
+	slot40 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot3 = LuaUIUtils
 		slot3 = slot3.renderRewardItem
 		slot5 = slot0
@@ -1072,122 +1084,123 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot17.luaRenderItem = slot38
-	slot38 = nil
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.BOSS
+	slot17.luaRenderItem = slot40
+	slot40 = nil
+	slot41 = slot3.isBoss
 	--- END OF BLOCK #0 ---
 
-	if slot39 == slot40 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 146-147, warpins: 1 ---
-	slot38 = "Boss"
+	--- BLOCK #1 151-152, warpins: 1 ---
+	slot40 = "Boss"
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 148-153, warpins: 1 ---
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.MOCK
+	--- BLOCK #2 153-158, warpins: 1 ---
+	slot41 = slot0.secondTabType
+	slot42 = SchoolGuideConst
+	slot42 = slot42.SecondPageType
+	slot42 = slot42.MOCK
 	--- END OF BLOCK #2 ---
 
-	if slot39 == slot40 then
+	if slot41 == slot42 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 154-155, warpins: 1 ---
-	slot38 = "Holographic"
+	--- BLOCK #3 159-160, warpins: 1 ---
+	slot40 = "Holographic"
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 156-156, warpins: 1 ---
-	slot38 = "Leader"
+	--- BLOCK #4 161-161, warpins: 1 ---
+	slot40 = "Leader"
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 157-167, warpins: 3 ---
-	slot41 = slot1
-	slot39 = slot1.TryChangePage
-	slot42 = "ListType"
-	slot43 = slot38
+	--- BLOCK #5 162-172, warpins: 3 ---
+	slot43 = slot1
+	slot41 = slot1.TryChangePage
+	slot44 = "ListType"
+	slot45 = slot40
 
-	slot39(slot41, slot42, slot43)
+	slot41(slot43, slot44, slot45)
 
-	slot41 = slot1
-	slot39 = slot1.TryChangePage
-	slot42 = "ListState"
-	slot43 = slot3.lock
+	slot43 = slot1
+	slot41 = slot1.TryChangePage
+	slot44 = "ListState"
+	slot45 = slot3.lock
 	--- END OF BLOCK #5 ---
 
-	slot43 = if slot43 then
+	slot45 = if slot45 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 168-169, warpins: 1 ---
-	slot43 = "Lock"
+	--- BLOCK #6 173-174, warpins: 1 ---
+	slot45 = "Lock"
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 170-170, warpins: 1 ---
-	slot43 = "Normal"
+	--- BLOCK #7 175-175, warpins: 1 ---
+	slot45 = "Normal"
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 171-174, warpins: 2 ---
-	slot39(slot41, slot42, slot43)
+	--- BLOCK #8 176-184, warpins: 2 ---
+	slot41(slot43, slot44, slot45)
 
-	slot39 = slot3.lock
+	slot43 = slot1
+	slot41 = slot1.TryChangePage
+	slot44 = "Lv"
+	slot45 = "on"
+
+	slot41(slot43, slot44, slot45)
+
+	slot41 = slot3.lock
 	--- END OF BLOCK #8 ---
 
-	slot39 = if slot39 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #9 175-180, warpins: 1 ---
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.BOSS
+	--- BLOCK #9 185-187, warpins: 1 ---
+	slot41 = slot3.isBoss
 
 	--- END OF BLOCK #9 ---
 
-	if slot39 == slot40 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 181-183, warpins: 1 ---
-	slot39 = function()
+	--- BLOCK #10 188-190, warpins: 1 ---
+	slot41 = function()
 		--- BLOCK #0 1-19, warpins: 1 ---
 		slot0 = LuaUIUtils
 		slot0 = slot0.sendCustomLog
@@ -1218,28 +1231,28 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot27.luaClick = slot39
+	slot27.luaClick = slot41
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #11 184-188, warpins: 1 ---
-	slot41 = slot0
-	slot39 = slot0.isLeaderSecondTab
-	slot39 = slot39(slot41)
+	--- BLOCK #11 191-195, warpins: 1 ---
+	slot43 = slot0
+	slot41 = slot0.isLeaderSecondTab
+	slot41 = slot41(slot43)
 
 	--- END OF BLOCK #11 ---
 
-	slot39 = if slot39 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 189-191, warpins: 1 ---
-	slot39 = function()
+	--- BLOCK #12 196-198, warpins: 1 ---
+	slot41 = function()
 		--- BLOCK #0 1-19, warpins: 1 ---
 		slot0 = LuaUIUtils
 		slot0 = slot0.sendCustomLog
@@ -1270,29 +1283,29 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot28.luaClick = slot39
+	slot28.luaClick = slot41
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #13 192-197, warpins: 1 ---
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.MOCK
+	--- BLOCK #13 199-204, warpins: 1 ---
+	slot41 = slot0.secondTabType
+	slot42 = SchoolGuideConst
+	slot42 = slot42.SecondPageType
+	slot42 = slot42.MOCK
 
 	--- END OF BLOCK #13 ---
 
-	if slot39 == slot40 then
+	if slot41 == slot42 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 198-201, warpins: 1 ---
-	slot39 = function()
+	--- BLOCK #14 205-208, warpins: 1 ---
+	slot41 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
@@ -1309,48 +1322,48 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot24.luaClick = slot39
-	slot39 = slot3.icon
-	slot22.url = slot39
+	slot24.luaClick = slot41
+	slot41 = slot3.icon
+	slot22.url = slot41
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 202-219, warpins: 4 ---
-	slot39 = slot3.stageBossTip
-	slot40 = slot35.gameObject
-	slot42 = slot40
-	slot40 = slot40.SetActiveEx
-	slot43 = slot39
+	--- BLOCK #15 209-226, warpins: 4 ---
+	slot41 = slot3.stageBossTip
+	slot42 = slot35.gameObject
+	slot44 = slot42
+	slot42 = slot42.SetActiveEx
+	slot45 = slot41
 
-	slot40(slot42, slot43)
+	slot42(slot44, slot45)
 
-	slot40 = slot36.gameObject
-	slot42 = slot40
-	slot40 = slot40.SetActiveEx
-	slot43 = slot39
+	slot42 = slot36.gameObject
+	slot44 = slot42
+	slot42 = slot42.SetActiveEx
+	slot45 = slot41
 
-	slot40(slot42, slot43)
+	slot42(slot44, slot45)
 
-	slot40 = slot37.gameObject
-	slot42 = slot40
-	slot40 = slot40.SetActiveEx
-	slot43 = slot39
+	slot42 = slot37.gameObject
+	slot44 = slot42
+	slot42 = slot42.SetActiveEx
+	slot45 = slot41
 
-	slot40(slot42, slot43)
+	slot42(slot44, slot45)
 
 	--- END OF BLOCK #15 ---
 
-	slot39 = if slot39 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #16 220-226, warpins: 1 ---
-	slot40 = function(slot0, slot1)
+	--- BLOCK #16 227-233, warpins: 1 ---
+	slot42 = function(slot0, slot1)
 		--- BLOCK #0 1-18, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetComponent
@@ -1378,9 +1391,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot35.luaRenderTooltip = slot40
+	slot35.luaRenderTooltip = slot42
 
-	slot40 = function(slot0, slot1)
+	slot42 = function(slot0, slot1)
 		--- BLOCK #0 1-18, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetComponent
@@ -1408,9 +1421,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot36.luaRenderTooltip = slot40
+	slot36.luaRenderTooltip = slot42
 
-	slot40 = function(slot0, slot1)
+	slot42 = function(slot0, slot1)
 		--- BLOCK #0 1-18, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetComponent
@@ -1438,15 +1451,15 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot37.luaRenderTooltip = slot40
+	slot37.luaRenderTooltip = slot42
 
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #17 227-234, warpins: 1 ---
-	slot39 = function()
+	--- BLOCK #17 234-238, warpins: 1 ---
+	slot41 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.secondTabType
@@ -1494,22 +1507,19 @@ slot18 = function(slot0, slot1, slot2, slot3)
 		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #2 31-37, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.secondTabType
-		slot1 = SchoolGuideConst
-		slot1 = slot1.SecondPageType
-		slot1 = slot1.BOSS
+		--- BLOCK #2 31-34, warpins: 1 ---
+		slot0 = data
+		slot0 = slot0.isBoss
 		--- END OF BLOCK #2 ---
 
-		if slot0 ~= slot1 then
+		slot0 = if not slot0 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 38-43, warpins: 1 ---
+		--- BLOCK #3 35-40, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.isLeaderSecondTab
@@ -1523,7 +1533,7 @@ slot18 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #4 44-61, warpins: 2 ---
+		--- BLOCK #4 41-58, warpins: 2 ---
 		slot0 = LuaUIUtils
 		slot0 = slot0.sendCustomLog
 		slot2 = Const
@@ -1551,7 +1561,7 @@ slot18 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 62-62, warpins: 3 ---
+		--- BLOCK #5 59-59, warpins: 3 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -1559,144 +1569,141 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot5.luaClick = slot39
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.BOSS
+	slot5.luaClick = slot41
+	slot41 = slot3.isBoss
 	--- END OF BLOCK #17 ---
 
-	if slot39 == slot40 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 235-242, warpins: 1 ---
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot6
-	slot42 = slot3.currencyNum
+	--- BLOCK #18 239-246, warpins: 1 ---
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot6
+	slot44 = slot3.currencyNum
 
-	slot39(slot41, slot42)
+	slot41(slot43, slot44)
 
-	slot39 = slot3.currencyIcon
-	slot7.url = slot39
+	slot41 = slot3.currencyIcon
+	slot7.url = slot41
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #19 243-247, warpins: 1 ---
-	slot41 = slot0
-	slot39 = slot0.isLeaderSecondTab
-	slot39 = slot39(slot41)
+	--- BLOCK #19 247-251, warpins: 1 ---
+	slot43 = slot0
+	slot41 = slot0.isLeaderSecondTab
+	slot41 = slot41(slot43)
 	--- END OF BLOCK #19 ---
 
-	slot39 = if slot39 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 248-255, warpins: 1 ---
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot9
-	slot42 = slot3.currencyNum
+	--- BLOCK #20 252-259, warpins: 1 ---
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot9
+	slot44 = slot3.currencyNum
 
-	slot39(slot41, slot42)
+	slot41(slot43, slot44)
 
-	slot39 = slot3.currencyIcon
-	slot8.url = slot39
+	slot41 = slot3.currencyIcon
+	slot8.url = slot41
 	--- END OF BLOCK #20 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #21 256-261, warpins: 1 ---
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.MOCK
+	--- BLOCK #21 260-265, warpins: 1 ---
+	slot41 = slot0.secondTabType
+	slot42 = SchoolGuideConst
+	slot42 = slot42.SecondPageType
+	slot42 = slot42.MOCK
 	--- END OF BLOCK #21 ---
 
-	if slot39 == slot40 then
+	if slot41 == slot42 then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 262-268, warpins: 1 ---
-	slot39 = slot3.currencyIcon
-	slot11.url = slot39
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot12
-	slot42 = slot3.currencyNum
+	--- BLOCK #22 266-272, warpins: 1 ---
+	slot41 = slot3.currencyIcon
+	slot11.url = slot41
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot12
+	slot44 = slot3.currencyNum
 
-	slot39(slot41, slot42)
+	slot41(slot43, slot44)
 
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 269-278, warpins: 6 ---
-	slot39 = slot3.icon
-	slot25.url = slot39
-	slot41 = slot26
-	slot39 = slot26.SetActive
-	slot42 = slot0.secondTabType
-	slot43 = SchoolGuideConst
-	slot43 = slot43.SecondPageType
-	slot43 = slot43.MOCK
+	--- BLOCK #23 273-282, warpins: 6 ---
+	slot41 = slot3.icon
+	slot25.url = slot41
+	slot43 = slot26
+	slot41 = slot26.SetActive
+	slot44 = slot0.secondTabType
+	slot45 = SchoolGuideConst
+	slot45 = slot45.SecondPageType
+	slot45 = slot45.MOCK
 	--- END OF BLOCK #23 ---
 
-	if slot42 ~= slot43 then
+	if slot44 ~= slot45 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 279-280, warpins: 1 ---
-	slot42 = false
+	--- BLOCK #24 283-284, warpins: 1 ---
+	slot44 = false
 	--- END OF BLOCK #24 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #25 281-281, warpins: 1 ---
-	slot42 = true
+	--- BLOCK #25 285-285, warpins: 1 ---
+	slot44 = true
 
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 282-288, warpins: 2 ---
-	slot39(slot41, slot42)
+	--- BLOCK #26 286-292, warpins: 2 ---
+	slot41(slot43, slot44)
 
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.MOCK
+	slot41 = slot0.secondTabType
+	slot42 = SchoolGuideConst
+	slot42 = slot42.SecondPageType
+	slot42 = slot42.MOCK
 
 	--- END OF BLOCK #26 ---
 
-	if slot39 == slot40 then
+	if slot41 == slot42 then
 	JUMP TO BLOCK #27
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #27 289-295, warpins: 1 ---
-	slot39 = function(slot0, slot1, slot2)
+	--- BLOCK #27 293-299, warpins: 1 ---
+	slot41 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.TryChangePage
@@ -1736,614 +1743,848 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot26.luaRenderItem = slot39
-	slot39 = {}
-	slot40 = 1
-	slot41 = slot3.totalStarNum
+	slot26.luaRenderItem = slot41
+	slot41 = {}
 	slot42 = 1
+	slot43 = slot3.totalStarNum
+	slot44 = 1
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 296-302, warpins: 2 ---
-	slot44 = table
-	slot44 = slot44.insert
-	slot46 = slot39
-	slot47 = {}
-	slot48 = slot3.starNum
+	--- BLOCK #28 300-306, warpins: 2 ---
+	slot46 = table
+	slot46 = slot46.insert
+	slot48 = slot41
+	slot49 = {}
+	slot50 = slot3.starNum
 	--- END OF BLOCK #28 ---
 
-	if slot43 > slot48 then
+	if slot45 > slot50 then
 	JUMP TO BLOCK #29
 	else
 	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #29 303-304, warpins: 1 ---
-	slot48 = false
+	--- BLOCK #29 307-308, warpins: 1 ---
+	slot50 = false
 	--- END OF BLOCK #29 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #30 305-305, warpins: 1 ---
-	slot48 = true
+	--- BLOCK #30 309-309, warpins: 1 ---
+	slot50 = true
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 306-308, warpins: 2 ---
-	slot47.finish = slot48
+	--- BLOCK #31 310-312, warpins: 2 ---
+	slot49.finish = slot50
 
-	slot44(slot46, slot47)
+	slot46(slot48, slot49)
 
 	--- END OF BLOCK #31 ---
 
-	for slot43=slot40, slot41, slot42
+	for slot45=slot42, slot43, slot44
 	LOOP BLOCK #28
 	GO OUT TO BLOCK #32
 
-	--- BLOCK #32 309-312, warpins: 1 ---
-	slot42 = slot26
-	slot40 = slot26.SetList
-	slot43 = slot39
+	--- BLOCK #32 313-316, warpins: 1 ---
+	slot44 = slot26
+	slot42 = slot26.SetList
+	slot45 = slot41
 
-	slot40(slot42, slot43)
+	slot42(slot44, slot45)
 
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 313-326, warpins: 2 ---
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot13
-	slot42 = pg
-	slot42 = slot42.getLocalizationText
-	slot44 = slot3.title
-	MULTRES = slot42(slot44)
+	--- BLOCK #33 317-330, warpins: 2 ---
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot13
+	slot44 = pg
+	slot44 = slot44.getLocalizationText
+	slot46 = slot3.title
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = slot0.secondTabType
-	slot40 = SchoolGuideConst
-	slot40 = slot40.SecondPageType
-	slot40 = slot40.MOCK
+	slot41 = slot0.secondTabType
+	slot42 = SchoolGuideConst
+	slot42 = slot42.SecondPageType
+	slot42 = slot42.MOCK
 	--- END OF BLOCK #33 ---
 
-	if slot39 == slot40 then
+	if slot41 == slot42 then
 	JUMP TO BLOCK #34
 	else
 	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #34 327-335, warpins: 1 ---
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot14
-	slot42 = pg
-	slot42 = slot42.getLocalizationText
-	slot44 = slot3.describe
-	MULTRES = slot42(slot44)
+	--- BLOCK #34 331-339, warpins: 1 ---
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot14
+	slot44 = pg
+	slot44 = slot44.getLocalizationText
+	slot46 = slot3.describe
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
 	--- END OF BLOCK #34 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #41
 
 
-	--- BLOCK #35 336-340, warpins: 1 ---
-	slot39 = LevelRewardLinkedData
-	slot40 = slot3.markStaticId
-	slot39 = slot39[slot40]
+	--- BLOCK #35 340-344, warpins: 1 ---
+	slot41 = LevelRewardLinkedData
+	slot42 = slot3.markStaticId
+	slot41 = slot41[slot42]
 	--- END OF BLOCK #35 ---
 
-	slot40 = if slot39 then
+	slot42 = if slot41 then
 	JUMP TO BLOCK #36
 	else
 	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #36 341-341, warpins: 1 ---
-	slot40 = slot39.materials
+	--- BLOCK #36 345-345, warpins: 1 ---
+	slot42 = slot41.materials
 	--- END OF BLOCK #36 ---
 
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 342-346, warpins: 2 ---
-	slot41 = ClientTextUtils
-	slot41 = slot41.setText
-	slot43 = slot14
+	--- BLOCK #37 346-350, warpins: 2 ---
+	slot43 = ClientTextUtils
+	slot43 = slot43.setText
+	slot45 = slot14
 	--- END OF BLOCK #37 ---
 
-	slot40 = if slot40 then
+	slot42 = if slot42 then
 	JUMP TO BLOCK #38
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #38 347-352, warpins: 1 ---
-	slot44 = pg
-	slot44 = slot44.getLocalizationText
-	slot46 = slot40
-	slot44 = slot44(slot46)
+	--- BLOCK #38 351-356, warpins: 1 ---
+	slot46 = pg
+	slot46 = slot46.getLocalizationText
+	slot48 = slot42
+	slot46 = slot46(slot48)
 	--- END OF BLOCK #38 ---
 
-	slot44 = if not slot44 then
+	slot46 = if not slot46 then
 	JUMP TO BLOCK #39
 	else
 	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #39 353-353, warpins: 2 ---
-	slot44 = ""
+	--- BLOCK #39 357-357, warpins: 2 ---
+	slot46 = ""
 
 	--- END OF BLOCK #39 ---
 
 	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #40 354-354, warpins: 2 ---
-	slot41(slot43, slot44)
+	--- BLOCK #40 358-358, warpins: 2 ---
+	slot43(slot45, slot46)
 
 	--- END OF BLOCK #40 ---
 
 	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 355-423, warpins: 2 ---
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot29
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_GOTO_BUTTON"
-	MULTRES = slot42(slot44)
+	--- BLOCK #41 359-427, warpins: 2 ---
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot29
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_GOTO_BUTTON"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot30
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_GOTO_BUTTON"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot30
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_GOTO_BUTTON"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot31
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_GOTO_BUTTON"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot31
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_GOTO_BUTTON"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot33
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot33
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot34
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot34
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot21
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot21
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot19
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot19
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_HEAD_NOT_FOUND"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot23
-	slot42 = pg
-	slot42 = slot42.getGameString
-	slot44 = "SCHOOL_GUIDE_CRAFT_LOCK"
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot23
+	slot44 = pg
+	slot44 = slot44.getGameString
+	slot46 = "SCHOOL_GUIDE_CRAFT_LOCK"
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
-	slot41 = slot15
-	slot39 = slot15.SetActive
-	slot42 = slot3.element
+	slot43 = slot15
+	slot41 = slot15.SetActive
+	slot44 = slot3.element
 	--- END OF BLOCK #41 ---
 
-	if slot42 == nil then
+	if slot44 == nil then
 	JUMP TO BLOCK #42
 	else
 	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #42 424-425, warpins: 1 ---
-	slot42 = false
+	--- BLOCK #42 428-429, warpins: 1 ---
+	slot44 = false
 	--- END OF BLOCK #42 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #44
 
 
-	--- BLOCK #43 426-426, warpins: 1 ---
-	slot42 = true
+	--- BLOCK #43 430-430, warpins: 1 ---
+	slot44 = true
 
 	--- END OF BLOCK #43 ---
 
 	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 427-430, warpins: 2 ---
-	slot39(slot41, slot42)
+	--- BLOCK #44 431-434, warpins: 2 ---
+	slot41(slot43, slot44)
 
-	slot39 = slot3.element
+	slot41 = slot3.element
 	--- END OF BLOCK #44 ---
 
-	slot39 = if slot39 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #45
 	else
 	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #45 431-435, warpins: 1 ---
-	slot39 = LuaUIUtils
-	slot39 = slot39.setElementButtonNew
-	slot41 = slot15
-	slot42 = slot3.element
+	--- BLOCK #45 435-439, warpins: 1 ---
+	slot41 = LuaUIUtils
+	slot41 = slot41.setElementButtonNew
+	slot43 = slot15
+	slot44 = slot3.element
 
-	slot39(slot41, slot42)
+	slot41(slot43, slot44)
 
 	--- END OF BLOCK #45 ---
 
 	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #46 436-438, warpins: 2 ---
-	slot39 = slot3.downDes
+	--- BLOCK #46 440-442, warpins: 2 ---
+	slot41 = slot3.downDes
 	--- END OF BLOCK #46 ---
 
-	if slot39 ~= "" then
+	if slot41 ~= "" then
 	JUMP TO BLOCK #47
 	else
 	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #47 439-451, warpins: 1 ---
-	slot41 = slot16
-	slot39 = slot16.SetActive
-	slot42 = true
+	--- BLOCK #47 443-455, warpins: 1 ---
+	slot43 = slot16
+	slot41 = slot16.SetActive
+	slot44 = true
 
-	slot39(slot41, slot42)
+	slot41(slot43, slot44)
 
-	slot39 = ClientTextUtils
-	slot39 = slot39.setText
-	slot41 = slot16
-	slot42 = pg
-	slot42 = slot42.getLocalizationText
-	slot44 = slot3.downDes
-	MULTRES = slot42(slot44)
+	slot41 = ClientTextUtils
+	slot41 = slot41.setText
+	slot43 = slot16
+	slot44 = pg
+	slot44 = slot44.getLocalizationText
+	slot46 = slot3.downDes
+	MULTRES = slot44(slot46)
 
-	slot39(slot41, MULTRES)
+	slot41(slot43, MULTRES)
 
 	--- END OF BLOCK #47 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #49
 
 
-	--- BLOCK #48 452-455, warpins: 1 ---
-	slot41 = slot16
-	slot39 = slot16.SetActive
-	slot42 = false
+	--- BLOCK #48 456-459, warpins: 1 ---
+	slot43 = slot16
+	slot41 = slot16.SetActive
+	slot44 = false
 
-	slot39(slot41, slot42)
+	slot41(slot43, slot44)
 
 	--- END OF BLOCK #48 ---
 
 	FLOW; TARGET BLOCK #49
 
 
-	--- BLOCK #49 456-458, warpins: 2 ---
-	slot39 = slot3.rewardItems
+	--- BLOCK #49 460-462, warpins: 2 ---
+	slot41 = slot3.rewardItems
 	--- END OF BLOCK #49 ---
 
-	slot39 = if slot39 then
+	slot41 = if slot41 then
 	JUMP TO BLOCK #50
 	else
 	JUMP TO BLOCK #51
 	end
 
 
-	--- BLOCK #50 459-462, warpins: 1 ---
-	slot42 = slot17
-	slot40 = slot17.SetList
-	slot43 = slot39
+	--- BLOCK #50 463-466, warpins: 1 ---
+	slot44 = slot17
+	slot42 = slot17.SetList
+	slot45 = slot41
 
-	slot40(slot42, slot43)
+	slot42(slot44, slot45)
 
 	--- END OF BLOCK #50 ---
 
 	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #51 463-467, warpins: 2 ---
-	slot42 = slot0
-	slot40 = slot0.isLeaderSecondTab
-	slot40 = slot40(slot42)
+	--- BLOCK #51 467-471, warpins: 2 ---
+	slot44 = slot0
+	slot42 = slot0.isLeaderSecondTab
+	slot42 = slot42(slot44)
 	--- END OF BLOCK #51 ---
 
-	slot40 = if not slot40 then
+	slot42 = if not slot42 then
 	JUMP TO BLOCK #52
 	else
-	JUMP TO BLOCK #55
+	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #52 468-473, warpins: 1 ---
-	slot40 = slot0.secondTabType
-	slot41 = SchoolGuideConst
-	slot41 = slot41.SecondPageType
-	slot41 = slot41.BOSS
+	--- BLOCK #52 472-472, warpins: 1 ---
+	slot42 = slot3.isBoss
 	--- END OF BLOCK #52 ---
 
-	if slot40 ~= slot41 then
-	JUMP TO BLOCK #53
-	else
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 473-474, warpins: 2 ---
+	--- END OF BLOCK #53 ---
+
+	slot42 = if slot42 then
 	JUMP TO BLOCK #54
+	else
+	JUMP TO BLOCK #57
 	end
 
 
-	--- BLOCK #53 474-475, warpins: 1 ---
-	slot40 = false
-	--- END OF BLOCK #53 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #55
-
-
-	--- BLOCK #54 476-476, warpins: 1 ---
-	slot40 = true
+	--- BLOCK #54 475-476, warpins: 1 ---
 	--- END OF BLOCK #54 ---
 
-	FLOW; TARGET BLOCK #55
+	slot32 = if slot32 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #57
+	end
 
 
-	--- BLOCK #55 477-478, warpins: 3 ---
+	--- BLOCK #55 477-479, warpins: 1 ---
+	slot43 = slot3.idInType
 	--- END OF BLOCK #55 ---
 
-	slot32 = if slot32 then
+	slot43 = if slot43 then
 	JUMP TO BLOCK #56
 	else
 	JUMP TO BLOCK #57
 	end
 
 
-	--- BLOCK #56 479-482, warpins: 1 ---
-	slot43 = slot32
-	slot41 = slot32.SetActive
-	slot44 = slot40
-
-	slot41(slot43, slot44)
-
-	--- END OF BLOCK #56 ---
-
-	FLOW; TARGET BLOCK #57
-
-
-	--- BLOCK #57 483-484, warpins: 2 ---
-	--- END OF BLOCK #57 ---
-
-	slot40 = if slot40 then
-	JUMP TO BLOCK #58
-	else
-	JUMP TO BLOCK #61
-	end
-
-
-	--- BLOCK #58 485-486, warpins: 1 ---
-	--- END OF BLOCK #58 ---
-
-	slot32 = if slot32 then
-	JUMP TO BLOCK #59
-	else
-	JUMP TO BLOCK #61
-	end
-
-
-	--- BLOCK #59 487-489, warpins: 1 ---
-	slot41 = slot3.idInType
-	--- END OF BLOCK #59 ---
-
-	slot41 = if slot41 then
-	JUMP TO BLOCK #60
-	else
-	JUMP TO BLOCK #61
-	end
-
-
-	--- BLOCK #60 490-499, warpins: 1 ---
-	slot41 = pg
-	slot41 = slot41.me
-	slot43 = slot41
-	slot41 = slot41.serverMsg
-	slot44 = "RPC_CS_ShowMapPuppetLevel"
-	slot45 = {}
-	slot46 = slot3.idInType
-	slot45[1] = slot46
+	--- BLOCK #56 480-484, warpins: 1 ---
+	slot43 = LuaUIUtils
+	slot43 = slot43.requestMapPuppetLevel
+	slot45 = slot3.idInType
 
 	slot46 = function(slot0)
-		--- BLOCK #0 1-2, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.me
+		slot1 = slot1.level
 		--- END OF BLOCK #0 ---
 
-		slot1 = if slot0 then
+		slot1 = if not slot1 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 3-5, warpins: 1 ---
-		slot1 = data
-		slot1 = slot1.idInType
-		slot1 = slot0[slot1]
+		--- BLOCK #1 6-6, warpins: 1 ---
+		slot1 = 0
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 6-7, warpins: 2 ---
+		--- BLOCK #2 7-16, warpins: 2 ---
+		slot2 = pg
+		slot2 = slot2.getFormatText
+		slot4 = pg
+		slot4 = slot4.getGameString
+		slot6 = "SCHOOL_GUIDE_HEAD_LEVEL"
+		slot4 = slot4(slot6)
+		slot5 = slot0
+		slot2 = slot2(slot4, slot5)
 		--- END OF BLOCK #2 ---
 
-		slot1 = if slot1 then
+		if slot1 < slot0 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 8-10, warpins: 1 ---
-		slot2 = slot1[1]
-
+		--- BLOCK #3 17-25, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.getFormatText
+		slot5 = pg
+		slot5 = slot5.getGameString
+		slot7 = "SCHOOL_GUIDE_HEAD_LEVEL_RED"
+		slot5 = slot5(slot7)
+		slot6 = slot2
+		slot3 = slot3(slot5, slot6)
+		slot2 = slot3
 		--- END OF BLOCK #3 ---
 
-		slot2 = if not slot2 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 11-11, warpins: 2 ---
+		--- BLOCK #4 26-31, warpins: 2 ---
+		slot3 = ClientTextUtils
+		slot3 = slot3.setText
+		slot5 = txtLv
+		slot6 = slot2
+
+		slot3(slot5, slot6)
+
 		return
-
 		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-		--- BLOCK #5 12-17, warpins: 2 ---
-		slot2 = slot1[1]
-		slot3 = pg
-		slot3 = slot3.me
-		slot3 = slot3.level
-		--- END OF BLOCK #5 ---
-
-		slot3 = if not slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 18-18, warpins: 1 ---
-		slot3 = 0
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 19-28, warpins: 2 ---
-		slot4 = pg
-		slot4 = slot4.getFormatText
-		slot6 = pg
-		slot6 = slot6.getGameString
-		slot8 = "SCHOOL_GUIDE_HEAD_LEVEL"
-		slot6 = slot6(slot8)
-		slot7 = slot2
-		slot4 = slot4(slot6, slot7)
-		--- END OF BLOCK #7 ---
-
-		if slot3 < slot2 then
-		JUMP TO BLOCK #8
-		else
-		JUMP TO BLOCK #9
-		end
-
-
-		--- BLOCK #8 29-37, warpins: 1 ---
-		slot5 = pg
-		slot5 = slot5.getFormatText
-		slot7 = pg
-		slot7 = slot7.getGameString
-		slot9 = "SCHOOL_GUIDE_HEAD_LEVEL_RED"
-		slot7 = slot7(slot9)
-		slot8 = slot4
-		slot5 = slot5(slot7, slot8)
-		slot4 = slot5
-		--- END OF BLOCK #8 ---
-
-		FLOW; TARGET BLOCK #9
-
-
-		--- BLOCK #9 38-43, warpins: 2 ---
-		slot5 = ClientTextUtils
-		slot5 = slot5.setText
-		slot7 = txtLv
-		slot8 = slot4
-
-		slot5(slot7, slot8)
-
-		return
-		--- END OF BLOCK #9 ---
 
 
 
 	end
 
-	slot41(slot43, slot44, slot45, slot46)
+	slot43(slot45, slot46)
 
-	--- END OF BLOCK #60 ---
+	--- END OF BLOCK #56 ---
 
-	FLOW; TARGET BLOCK #61
+	FLOW; TARGET BLOCK #57
 
 
-	--- BLOCK #61 500-501, warpins: 4 ---
+	--- BLOCK #57 485-487, warpins: 4 ---
+	slot43 = slot3.isBoss
+	--- END OF BLOCK #57 ---
+
+	slot43 = if slot43 then
+	JUMP TO BLOCK #58
+	else
+	JUMP TO BLOCK #59
+	end
+
+
+	--- BLOCK #58 488-515, warpins: 1 ---
+	slot43 = slot38.gameObject
+	slot45 = slot43
+	slot43 = slot43.SetActiveEx
+	slot46 = true
+
+	slot43(slot45, slot46)
+
+	slot43 = slot39.gameObject
+	slot45 = slot43
+	slot43 = slot43.SetActiveEx
+	slot46 = true
+
+	slot43(slot45, slot46)
+
+	slot45 = slot0
+	slot43 = slot0.getChallengeLimit
+	slot46 = slot3.markStaticId
+	slot43, slot44 = slot43(slot45, slot46)
+	slot45 = ClientTextUtils
+	slot45 = slot45.setText
+	slot47 = slot14
+	slot48 = pg
+	slot48 = slot48.getFormatText
+	slot50 = pg
+	slot50 = slot50.getGameString
+	slot52 = "SCHOOL_GUIDE_BOSS_WEEK_LIMIT"
+	slot50 = slot50(slot52)
+	slot51 = slot43
+	slot52 = slot44
+	MULTRES = slot48(slot50, slot51, slot52)
+
+	slot45(slot47, MULTRES)
+
+	--- END OF BLOCK #58 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
+
+
+	--- BLOCK #59 516-525, warpins: 1 ---
+	slot43 = slot38.gameObject
+	slot45 = slot43
+	slot43 = slot43.SetActiveEx
+	slot46 = false
+
+	slot43(slot45, slot46)
+
+	slot43 = slot39.gameObject
+	slot45 = slot43
+	slot43 = slot43.SetActiveEx
+	slot46 = false
+
+	slot43(slot45, slot46)
+
+	--- END OF BLOCK #59 ---
+
+	FLOW; TARGET BLOCK #60
+
+
+	--- BLOCK #60 526-527, warpins: 2 ---
 	return
-	--- END OF BLOCK #61 ---
+	--- END OF BLOCK #60 ---
 
 
 
 end
 
-slot17.renderImoList = slot18
+slot19.renderImoList = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot20 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.useLimitMap
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot3 = 0
+	slot4 = 0
+
+	return slot3, slot4
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-16, warpins: 2 ---
+	slot3 = LevelRewardLinkedData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 1 ---
+	slot4 = slot3.chestId
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-19, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 20-21, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot4 == 0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 22-24, warpins: 2 ---
+	slot5 = 0
+	slot6 = 0
+
+	return slot5, slot6
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 25-28, warpins: 2 ---
+	slot5 = ChestData
+	slot5 = slot5[slot4]
+	--- END OF BLOCK #9 ---
+
+	slot6 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 29-29, warpins: 1 ---
+	slot6 = slot5.reward
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 30-31, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 32-33, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	if slot6 == 0 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 34-36, warpins: 2 ---
+	slot7 = 0
+	slot8 = 0
+
+	return slot7, slot8
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 37-40, warpins: 2 ---
+	slot7 = DropData
+	slot7 = slot7[slot6]
+	--- END OF BLOCK #14 ---
+
+	slot8 = if slot7 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 41-41, warpins: 1 ---
+	slot8 = slot7.limitId
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 42-43, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 44-45, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	if slot8 == 0 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 46-48, warpins: 2 ---
+	slot9 = 0
+	slot10 = 0
+
+	return slot9, slot10
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 49-54, warpins: 2 ---
+	slot11 = slot2
+	slot9 = slot2.getTotalCount
+	slot12 = slot8
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #19 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 55-57, warpins: 1 ---
+	slot10 = 0
+	--- END OF BLOCK #20 ---
+
+	if slot9 <= slot10 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 58-60, warpins: 2 ---
+	slot10 = 0
+	slot11 = 0
+
+	return slot10, slot11
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 61-66, warpins: 2 ---
+	slot12 = slot2
+	slot10 = slot2.getRemainCount
+	slot13 = slot8
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #22 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 67-67, warpins: 1 ---
+	slot10 = 0
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 68-69, warpins: 2 ---
+	slot11 = slot9
+
+	return slot10, slot11
+	--- END OF BLOCK #24 ---
+
+
+
+end
+
+slot19.getChallengeLimit = slot20
+
+slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2377,9 +2618,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.renderMockDifficulty = slot18
+slot19.renderMockDifficulty = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2440,9 +2681,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.focusMark = slot18
+slot19.focusMark = slot20
 
-return slot17
+return slot19
 --- END OF BLOCK #0 ---
 
 

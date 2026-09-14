@@ -1,4 +1,4 @@
---- BLOCK #0 1-120, warpins: 1 ---
+--- BLOCK #0 1-102, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -58,49 +58,31 @@ slot17 = require
 slot19 = "Utils.ClientUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.revert_home_upgrade_data"
+slot20 = "Data.homeland_formula_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.home_object_data"
+slot21 = "Data.homeland_config_data"
 slot19 = slot19(slot21)
-slot20 = require
-slot22 = "Data.homeland_zone_unlock_config_data"
-slot20 = slot20(slot22)
-slot21 = require
-slot23 = "Data.homeland_formula_data"
-slot21 = slot21(slot23)
-slot22 = require
-slot24 = "Data.homeland_operate_data"
-slot22 = slot22(slot24)
-slot23 = require
-slot25 = "Data.homeland_config_data"
-slot23 = slot23(slot25)
-slot24 = require
-slot26 = "Data.item_data"
-slot24 = slot24(slot26)
-slot25 = require
-slot27 = "Data.homeland_facility_data"
-slot25 = slot25(slot27)
-slot26 = {}
-slot27 = slot14.HOMELAND_FACILITY_TYPE
-slot27 = slot27.Electric
-slot28 = 0
-slot26[slot27] = slot28
-slot27 = slot14.HOMELAND_FACILITY_TYPE
-slot27 = slot27.HighTemperate
-slot28 = 1
-slot26[slot27] = slot28
-slot27 = slot14.HOMELAND_FACILITY_TYPE
-slot27 = slot27.LowTemperate
-slot28 = 2
-slot26[slot27] = slot28
-slot27 = slot14.HOMELAND_FACILITY_TYPE
-slot27 = slot27.Light
-slot28 = 3
-slot26[slot27] = slot28
-slot6.ENV_FACILITY_TYPE = slot26
+slot20 = {}
+slot21 = slot14.HOMELAND_FACILITY_TYPE
+slot21 = slot21.Electric
+slot22 = 0
+slot20[slot21] = slot22
+slot21 = slot14.HOMELAND_FACILITY_TYPE
+slot21 = slot21.HighTemperate
+slot22 = 1
+slot20[slot21] = slot22
+slot21 = slot14.HOMELAND_FACILITY_TYPE
+slot21 = slot21.LowTemperate
+slot22 = 2
+slot20[slot21] = slot22
+slot21 = slot14.HOMELAND_FACILITY_TYPE
+slot21 = slot21.Light
+slot22 = 3
+slot20[slot21] = slot22
+slot6.ENV_FACILITY_TYPE = slot20
 
-slot26 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -109,9 +91,9 @@ slot26 = function(slot0)
 
 end
 
-slot6.findObjects = slot26
+slot6.findObjects = slot20
 
-slot26 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot3 = slot1
@@ -155,9 +137,9 @@ slot26 = function(slot0)
 
 end
 
-slot6.initView = slot26
+slot6.initView = slot20
 
-slot26 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
@@ -213,9 +195,9 @@ slot26 = function(slot0)
 
 end
 
-slot6.onContentLoaded = slot26
+slot6.onContentLoaded = slot20
 
-slot26 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.HOMELAND_FACILITY_TYPE
@@ -326,9 +308,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot6.getEnvEffectName = slot26
+slot6.getEnvEffectName = slot20
 
-slot26 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.listUList
 
@@ -648,9 +630,9 @@ slot26 = function(slot0)
 
 end
 
-slot6.addListener = slot26
+slot6.addListener = slot20
 
-slot26 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -665,9 +647,9 @@ slot26 = function(slot0)
 
 end
 
-slot6.onDestroy = slot26
+slot6.onDestroy = slot20
 
-slot26 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -904,9 +886,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot6.getFacilityWarnText = slot26
+slot6.getFacilityWarnText = slot20
 
-slot26 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1533,9 +1515,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot6.refreshPlotDetailEnvironment = slot26
+slot6.refreshPlotDetailEnvironment = slot20
 
-slot26 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot3 = slot1
@@ -1566,7 +1548,7 @@ slot26 = function(slot0)
 
 end
 
-slot6.onEnterPage = slot26
+slot6.onEnterPage = slot20
 
 return slot6
 --- END OF BLOCK #0 ---

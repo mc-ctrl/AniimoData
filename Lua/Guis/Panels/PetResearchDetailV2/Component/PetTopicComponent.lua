@@ -1,4 +1,4 @@
---- BLOCK #0 1-83, warpins: 1 ---
+--- BLOCK #0 1-85, warpins: 1 ---
 slot0 = require
 slot2 = "Data.pet_research_target_data"
 slot0 = slot0(slot2)
@@ -1019,7 +1019,7 @@ end
 slot8.setupPetTopicList = slot15
 
 slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-34, warpins: 1 ---
+	--- BLOCK #0 1-30, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot4 = slot2
 	slot2 = slot2.setPageTitle
@@ -1054,13 +1054,10 @@ slot15 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	slot3 = slot0.btnGetRewardUButton
-	slot4 = PetResearchUtils
-	slot4 = slot4.checkHasTopicReward
-	slot6 = slot0.ctrl
-	slot6 = slot6.petListDatas
-	slot4 = slot4(slot6)
-	slot3.interactable = slot4
+	slot5 = slot0
+	slot3 = slot0._refreshGetAllBtnState
+
+	slot3(slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1857,14 +1854,12 @@ end
 slot8.reqGetAllPetTopicReward = slot15
 
 slot15 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot1 = slot0.btnGetRewardUButton
-	slot2 = PetResearchUtils
-	slot2 = slot2.checkHasTopicReward
-	slot4 = slot0.ctrl
-	slot4 = slot4.petListDatas
-	slot2 = slot2(slot4)
-	slot1.interactable = slot2
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._refreshGetAllBtnState
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.setupPetTopicList
 
@@ -1884,6 +1879,38 @@ slot15 = function(slot0)
 end
 
 slot8.onGetReward = slot15
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot1 = PetResearchUtils
+	slot1 = slot1.checkHasTopicReward
+	slot3 = slot0.ctrl
+	slot3 = slot3.petListDatas
+	slot1 = slot1(slot3)
+	slot2 = slot0.btnGetRewardUButton
+	slot2.interactable = slot1
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.setRedDot
+	slot4 = RedDotConst
+	slot4 = slot4.RedDotPath
+	slot4 = slot4.PET_RESEARCH_TOPIC_GET_ALL_REWARD
+	slot5 = slot0.btnGetRewardUButton
+	slot6 = slot1
+	slot7 = RedDotConst
+	slot7 = slot7.RedDotStyle
+	slot7 = slot7.REWARD
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8._refreshGetAllBtnState = slot15
 
 return slot8
 --- END OF BLOCK #0 ---

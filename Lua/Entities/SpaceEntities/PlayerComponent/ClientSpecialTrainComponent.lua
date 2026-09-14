@@ -1,4 +1,4 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -15,25 +15,16 @@ slot4 = slot2.Component
 slot6 = "ClientSpecialTrainComponent"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.UIConst"
+slot7 = "Const.MessageName"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.MessageName"
+slot8 = "GameApp.Quest.QuestUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.special_train_badge_data"
+slot9 = "Core.Common.CallbackHandler"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Data.special_train_phase_data"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "GameApp.Quest.QuestUtils"
-slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Core.Common.CallbackHandler"
-slot10 = slot10(slot12)
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -42,9 +33,9 @@ slot11 = function(slot0)
 
 end
 
-slot4.ctor = slot11
+slot4.ctor = slot8
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
@@ -94,9 +85,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.getSpecialTrainEntryReward = slot11
+slot4.getSpecialTrainEntryReward = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -162,9 +153,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.getSpecialTrainEntryRewardCallback = slot11
+slot4.getSpecialTrainEntryRewardCallback = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -185,9 +176,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.getSpecialTrainBadgeReward = slot11
+slot4.getSpecialTrainBadgeReward = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -253,9 +244,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.getSpecialTrainBadgeRewardCallback = slot11
+slot4.getSpecialTrainBadgeRewardCallback = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -289,9 +280,9 @@ slot11 = function(slot0)
 
 end
 
-slot4.firstOpenSpecialTrainInterface = slot11
+slot4.firstOpenSpecialTrainInterface = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = QuestUtils
 	slot1 = slot1.manualTrackSecondTracingQuest
@@ -305,193 +296,9 @@ slot11 = function(slot0)
 
 end
 
-slot4.RPC_SC_StartSpecialTrainSystem = slot11
+slot4.RPC_SC_StartSpecialTrainSystem = slot8
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = SpecialTrainPhaseData
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 5-9, warpins: 1 ---
-	slot3 = slot2.goTo
-	slot4 = slot2.chat
-	slot5 = slot2.npcId
-	--- END OF BLOCK #1 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 10-11, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-16, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.gotoNpcGetReward
-	slot9 = slot4
-	slot10 = slot5
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-17, warpins: 4 ---
-	return
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot4.RPC_SC_NotifySpecialTrainPhaseReward = slot11
-
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = SpecialTrainBadgeData
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 5-9, warpins: 1 ---
-	slot3 = slot2.goTo
-	slot4 = slot2.chat
-	slot5 = slot2.npcId
-	--- END OF BLOCK #1 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 10-11, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-16, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.gotoNpcGetReward
-	slot9 = slot4
-	slot10 = slot5
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-17, warpins: 4 ---
-	return
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot4.RPC_SC_NotifySpecialTrainBadegeReward = slot11
-
-slot11 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 3-4, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 5-27, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot5 = slot3
-	slot3 = slot3.close
-	slot6 = UIConst
-	slot6 = slot6.UI_ID_OPEN_SPECIAL_TRAIN_PANEL
-
-	slot3(slot5, slot6)
-
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot5 = slot3
-	slot3 = slot3.close
-	slot6 = UIConst
-	slot6 = slot6.UI_ID_FUNC_MENU
-
-	slot3(slot5, slot6)
-
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.dialogue
-	slot5 = slot3
-	slot3 = slot3.playDialogueGraph
-	slot6 = slot1
-
-	slot3(slot5, slot6)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 28-28, warpins: 3 ---
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot4.gotoNpcGetReward = slot11
-
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -507,9 +314,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot4.firstViewSpeicalTrainChapter = slot11
+slot4.firstViewSpeicalTrainChapter = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -530,9 +337,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.getSpecialTrainChapterReward = slot11
+slot4.getSpecialTrainChapterReward = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -598,9 +405,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.getSpecialTrainChapterRewardCallback = slot11
+slot4.getSpecialTrainChapterRewardCallback = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -620,9 +427,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot4.getSpecialTrainBadgeContinuousReward = slot11
+slot4.getSpecialTrainBadgeContinuousReward = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -688,9 +495,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot4.getSpecialTrainBadgeContinuousRewardCallback = slot11
+slot4.getSpecialTrainBadgeContinuousRewardCallback = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -699,9 +506,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot4.RPC_SC_UnlockSpecialTrainType = slot11
+slot4.RPC_SC_UnlockSpecialTrainType = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -748,9 +555,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot4.RPC_SC_UnlockSpecialTrainChapter = slot11
+slot4.RPC_SC_UnlockSpecialTrainChapter = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -766,7 +573,7 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot4.viewSpecialTrainStarTitleQuest = slot11
+slot4.viewSpecialTrainStarTitleQuest = slot8
 
 return slot4
 --- END OF BLOCK #0 ---

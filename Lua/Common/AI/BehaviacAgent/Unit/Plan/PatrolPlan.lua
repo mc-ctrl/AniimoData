@@ -1,4 +1,4 @@
---- BLOCK #0 1-118, warpins: 1 ---
+--- BLOCK #0 1-75, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -69,12 +69,79 @@ slot21 = slot21(slot23)
 slot22 = require
 slot24 = "Common.Utils.AIUtils"
 slot22 = slot22(slot24)
-slot23 = slot0.LightClass
-slot25 = "PatrolPlan"
-slot26 = slot7
-slot23 = slot23(slot25, slot26)
+slot23 = require
+slot25 = "Common.Data.Scene.route_default_value_data"
+slot23 = slot23(slot25)
+--- END OF BLOCK #0 ---
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot23 = if slot23 then
+JUMP TO BLOCK #1
+else
+JUMP TO BLOCK #2
+end
+
+
+--- BLOCK #1 76-78, warpins: 1 ---
+slot24 = slot23.wayPoints
+--- END OF BLOCK #1 ---
+
+slot24 = if not slot24 then
+JUMP TO BLOCK #2
+else
+JUMP TO BLOCK #3
+end
+
+
+--- BLOCK #2 79-79, warpins: 2 ---
+slot24 = {}
+--- END OF BLOCK #2 ---
+
+FLOW; TARGET BLOCK #3
+
+
+--- BLOCK #3 80-82, warpins: 2 ---
+slot25 = slot24.behaviorTreeTemplate
+--- END OF BLOCK #3 ---
+
+slot25 = if not slot25 then
+JUMP TO BLOCK #4
+else
+JUMP TO BLOCK #5
+end
+
+
+--- BLOCK #4 83-83, warpins: 1 ---
+slot25 = {}
+--- END OF BLOCK #4 ---
+
+FLOW; TARGET BLOCK #5
+
+
+--- BLOCK #5 84-86, warpins: 2 ---
+slot26 = slot25.behaviors
+--- END OF BLOCK #5 ---
+
+slot26 = if not slot26 then
+JUMP TO BLOCK #6
+else
+JUMP TO BLOCK #7
+end
+
+
+--- BLOCK #6 87-87, warpins: 1 ---
+slot26 = {}
+--- END OF BLOCK #6 ---
+
+FLOW; TARGET BLOCK #7
+
+
+--- BLOCK #7 88-135, warpins: 2 ---
+slot27 = slot0.LightClass
+slot29 = "PatrolPlan"
+slot30 = slot7
+slot27 = slot27(slot29, slot30)
+
+slot28 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot7 = PatrolPlan
 	slot7 = slot7.super
@@ -268,8 +335,8 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #15 74-84, warpins: 1 ---
 	slot10 = {
 		firstEnter = true,
-		routeIndex = 1,
-		canInterrupt = true
+		canInterrupt = true,
+		routeIndex = 1
 	}
 	slot10.routeData = slot8
 	slot10.routeId = slot2
@@ -415,9 +482,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot23.recycleInit = slot24
+slot27.recycleInit = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot1 = slot1.priority
@@ -429,9 +496,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.getPriority = slot24
+slot27.getPriority = slot28
 
-slot24 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = PatrolPlan
 	slot2 = slot2.super
@@ -494,9 +561,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot23.initPlan = slot24
+slot27.initPlan = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.patrolSelector
@@ -529,9 +596,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.tryRunPlan = slot24
+slot27.tryRunPlan = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.targetEnt
 
@@ -605,206 +672,546 @@ slot24 = function(slot0)
 
 end
 
-slot23.breakPlan = slot24
+slot27.breakPlan = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot1 = slot1.routeData
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
 	slot2 = slot1.ignoreAILod
-
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 6-6, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot23.checkIgnoreAILod = slot24
-
-slot24 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = slot0.patrolData
-	slot1 = slot1.routeData
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot1 then
-	JUMP TO BLOCK #1
-	else
+	if slot2 == nil then
 	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
-	slot2 = slot1.useAccurateArrive
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 6-6, warpins: 2 ---
-	return slot2
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = routeDefaultValueData
 	--- END OF BLOCK #2 ---
 
-
-
-end
-
-slot23.checkUseAccurateArrive = slot24
-
-slot24 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = slot0.patrolData
-	slot1 = slot1.routeData
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot1 then
-	JUMP TO BLOCK #1
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	slot2 = slot2.ignoreAILod
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 2 ---
+	slot2 = false
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 2 ---
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 2 ---
+	slot2 = slot1.ignoreAILod
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-20, warpins: 2 ---
+	slot2 = nil
+
+	return slot2
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot27.checkIgnoreAILod = slot28
+
+slot28 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.patrolData
+	slot1 = slot1.routeData
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.useAccurateArrive
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	slot2 = slot2.useAccurateArrive
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 2 ---
+	slot2 = false
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 2 ---
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 2 ---
+	slot2 = slot1.useAccurateArrive
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-20, warpins: 2 ---
+	slot2 = nil
+
+	return slot2
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot27.checkUseAccurateArrive = slot28
+
+slot28 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.patrolData
+	slot1 = slot1.routeData
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.firstWayPointSelectType
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	slot2 = slot2.firstWayPointSelectType
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot2 = PatrolConst
+	slot2 = slot2.FirstWayPointSelectType
+	slot2 = slot2.FirstWayPoint
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-22, warpins: 2 ---
+	slot3 = PatrolConst
+	slot3 = slot3.FirstWayPointSelectType
+	slot3 = slot3.ResumeLastWayPoint
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 25-25, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-26, warpins: 2 ---
+	return slot3
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 27-32, warpins: 2 ---
 	slot2 = slot1.firstWayPointSelectType
 	slot3 = PatrolConst
 	slot3 = slot3.FirstWayPointSelectType
 	slot3 = slot3.ResumeLastWayPoint
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #9 ---
 
 	if slot2 ~= slot3 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 1 ---
+	--- BLOCK #10 33-34, warpins: 1 ---
 	slot2 = false
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #3 13-13, warpins: 1 ---
+	--- BLOCK #11 35-35, warpins: 1 ---
 	slot2 = true
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #4 14-14, warpins: 3 ---
+	--- BLOCK #12 36-36, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #4 ---
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 37-38, warpins: 2 ---
+	slot2 = nil
+
+	return slot2
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot23.checkResumeLastWaypoint = slot24
+slot27.checkResumeLastWaypoint = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot1 = slot1.routeData
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.firstWayPointSelectType
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	slot2 = slot2.firstWayPointSelectType
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot2 = PatrolConst
+	slot2 = slot2.FirstWayPointSelectType
+	slot2 = slot2.FirstWayPoint
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-22, warpins: 2 ---
+	slot3 = PatrolConst
+	slot3 = slot3.FirstWayPointSelectType
+	slot3 = slot3.NearestWayPoint
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 25-25, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-26, warpins: 2 ---
+	return slot3
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 27-32, warpins: 2 ---
 	slot2 = slot1.firstWayPointSelectType
 	slot3 = PatrolConst
 	slot3 = slot3.FirstWayPointSelectType
 	slot3 = slot3.NearestWayPoint
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #9 ---
 
 	if slot2 ~= slot3 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 1 ---
+	--- BLOCK #10 33-34, warpins: 1 ---
 	slot2 = false
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #3 13-13, warpins: 1 ---
+	--- BLOCK #11 35-35, warpins: 1 ---
 	slot2 = true
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #4 14-14, warpins: 3 ---
+	--- BLOCK #12 36-36, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #4 ---
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 37-38, warpins: 2 ---
+	slot2 = nil
+
+	return slot2
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot23.checkUseNearbyWaypoint = slot24
+slot27.checkUseNearbyWaypoint = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot1 = slot1.routeData
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
 	slot2 = slot1.extraLongRoute
-
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
-	return slot2
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = routeDefaultValueData
 	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = routeDefaultValueData
+	slot2 = slot2.extraLongRoute
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 2 ---
+	slot2 = false
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 2 ---
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 2 ---
+	slot2 = slot1.extraLongRoute
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-20, warpins: 2 ---
+	slot2 = nil
+
+	return slot2
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot23.checkExtraLongRoute = slot24
+slot27.checkExtraLongRoute = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = AiConst
 	slot1 = slot1.ParmonPlanType
@@ -817,9 +1224,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.getPlanType = slot24
+slot27.getPlanType = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot1 = slot1.behaviorId
@@ -831,9 +1238,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.getID = slot24
+slot27.getID = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.breakPlan
@@ -847,9 +1254,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.destroy = slot24
+slot27.destroy = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkResumeLastWaypoint
@@ -975,9 +1382,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.resetPlan = slot24
+slot27.resetPlan = slot28
 
-slot24 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.targetEnt = slot1
 
@@ -988,9 +1395,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot23.registerEntity = slot24
+slot27.registerEntity = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot1 = slot1.loopTime
@@ -1058,9 +1465,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.isActive = slot24
+slot27.isActive = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isActive
@@ -1106,9 +1513,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.patrolSelector = slot24
+slot27.patrolSelector = slot28
 
-slot24 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1130,7 +1537,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 6-9, warpins: 2 ---
+	--- BLOCK #2 6-8, warpins: 2 ---
 	slot2 = 0
 	slot3 = 1
 
@@ -1138,198 +1545,234 @@ slot24 = function(slot0, slot1)
 
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-15, warpins: 1 ---
+	--- BLOCK #3 9-11, warpins: 2 ---
 	slot2 = slot1.BehaviourTreeCompositeType
-	slot3 = AiConst
-	slot3 = slot3.CompositeType
-	slot3 = slot3.Sequence
 	--- END OF BLOCK #3 ---
 
-	if slot2 == slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 16-20, warpins: 1 ---
-	slot2 = slot1.behaviors
-	slot2 = #slot2
-	slot3 = 1
-
-	return slot2, slot3
-
+	--- BLOCK #4 12-13, warpins: 1 ---
+	slot2 = BEHAVIOR_TREE_TEMPLATE_DEFAULTS
+	slot2 = slot2.BehaviourTreeCompositeType
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-26, warpins: 1 ---
-	slot2 = slot1.BehaviourTreeCompositeType
+	--- BLOCK #5 14-18, warpins: 2 ---
 	slot3 = AiConst
 	slot3 = slot3.CompositeType
-	slot3 = slot3.SelectorProbability
+	slot3 = slot3.Sequence
 	--- END OF BLOCK #5 ---
 
 	if slot2 == slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 27-31, warpins: 1 ---
-	slot2 = slot1.behaviors
-	slot2 = #slot2
-	slot3 = 0
+	--- BLOCK #6 19-23, warpins: 1 ---
+	slot3 = slot1.behaviors
+	slot3 = #slot3
+	slot4 = 1
+
+	return slot3, slot4
+
 	--- END OF BLOCK #6 ---
 
-	if slot2 > slot3 then
-	JUMP TO BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #7 24-28, warpins: 1 ---
+	slot3 = AiConst
+	slot3 = slot3.CompositeType
+	slot3 = slot3.SelectorProbability
+	--- END OF BLOCK #7 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #7 32-38, warpins: 1 ---
-	slot2 = ListPool
-	slot2 = slot2.getList
-	slot2 = slot2()
-	slot3 = ipairs
-	slot5 = slot1.behaviors
-	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 39-56, warpins: 1 ---
-	slot8 = ListPool
-	slot8 = slot8.getList
-	slot8 = slot8()
-	slot9 = table
-	slot9 = slot9.insert
-	slot11 = slot8
-	slot12 = slot6
-
-	slot9(slot11, slot12)
-
-	slot9 = table
-	slot9 = slot9.insert
-	slot11 = slot8
-	slot12 = slot7.probability
-
-	slot9(slot11, slot12)
-
-	slot9 = table
-	slot9 = slot9.insert
-	slot11 = slot2
-	slot12 = slot8
-
-	slot9(slot11, slot12)
-
+	--- BLOCK #8 29-33, warpins: 1 ---
+	slot3 = slot1.behaviors
+	slot3 = #slot3
+	slot4 = 0
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	if slot3 > slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #9 57-58, warpins: 2 ---
+	--- BLOCK #9 34-40, warpins: 1 ---
+	slot3 = ListPool
+	slot3 = slot3.getList
+	slot3 = slot3()
+	slot4 = ipairs
+	slot6 = slot1.behaviors
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #9 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #10 59-67, warpins: 1 ---
-	slot3 = lume
-	slot3 = slot3.weightedchoicearray
-	slot5 = slot2
-	slot6 = slot0.patrolData
-	slot3 = slot3(slot5, slot6)
-	slot4 = ipairs
-	slot6 = slot2
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #10 41-51, warpins: 1 ---
+	slot9 = ListPool
+	slot9 = slot9.getList
+	slot9 = slot9()
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot9
+	slot13 = slot7
+
+	slot10(slot12, slot13)
+
+	slot10 = slot8.probability
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 68-71, warpins: 1 ---
-	slot9 = ListPool
-	slot9 = slot9.returnList
-	slot11 = slot8
-
-	slot9(slot11)
-
+	--- BLOCK #11 52-53, warpins: 1 ---
+	slot10 = BEHAVIOR_DEFAULTS
+	slot10 = slot10.probability
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 72-73, warpins: 2 ---
+	--- BLOCK #12 54-63, warpins: 2 ---
+	slot11 = table
+	slot11 = slot11.insert
+	slot13 = slot9
+	slot14 = slot10
+
+	slot11(slot13, slot14)
+
+	slot11 = table
+	slot11 = slot11.insert
+	slot13 = slot3
+	slot14 = slot9
+
+	slot11(slot13, slot14)
+
 	--- END OF BLOCK #12 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #13
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 74-79, warpins: 1 ---
-	slot4 = ListPool
-	slot4 = slot4.returnList
-	slot6 = slot2
-
-	slot4(slot6)
-
+	--- BLOCK #13 64-65, warpins: 2 ---
 	--- END OF BLOCK #13 ---
 
-	if slot3 == nil then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #14
 
 
-	--- BLOCK #14 80-82, warpins: 1 ---
-	slot4 = 0
-	slot5 = 1
-
-	return slot4, slot5
-
+	--- BLOCK #14 66-74, warpins: 1 ---
+	slot4 = lume
+	slot4 = slot4.weightedchoicearray
+	slot6 = slot3
+	slot7 = slot0.patrolData
+	slot4 = slot4(slot6, slot7)
+	slot5 = ipairs
+	slot7 = slot3
+	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 83-85, warpins: 2 ---
-	slot4 = 1
-	slot5 = slot3
+	--- BLOCK #15 75-78, warpins: 1 ---
+	slot10 = ListPool
+	slot10 = slot10.returnList
+	slot12 = slot9
 
-	return slot4, slot5
+	slot10(slot12)
 
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 86-88, warpins: 5 ---
-	slot2 = 0
-	slot3 = 1
-
-	return slot2, slot3
+	--- BLOCK #16 79-80, warpins: 2 ---
 	--- END OF BLOCK #16 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 81-86, warpins: 1 ---
+	slot5 = ListPool
+	slot5 = slot5.returnList
+	slot7 = slot3
+
+	slot5(slot7)
+
+	--- END OF BLOCK #17 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 87-89, warpins: 1 ---
+	slot5 = 0
+	slot6 = 1
+
+	return slot5, slot6
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 90-92, warpins: 2 ---
+	slot5 = 1
+	slot6 = slot4
+
+	return slot5, slot6
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 93-95, warpins: 4 ---
+	slot3 = 0
+	slot4 = 1
+
+	return slot3, slot4
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot23.getPatrolControlBehaviorLoopTime = slot24
+slot27.getPatrolControlBehaviorLoopTime = slot28
 
-slot24 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.patrolData
 	slot2 = slot0.patrolData
@@ -1423,9 +1866,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.updateRouteIndex = slot24
+slot27.updateRouteIndex = slot28
 
-slot24 = function(slot0, slot1)
+slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.patrolData
 	slot2.routeIndex = slot1
@@ -1437,9 +1880,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot23.setRouteIndex = slot24
+slot27.setRouteIndex = slot28
 
-slot24 = function(slot0, slot1, slot2)
+slot28 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1515,10 +1958,10 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot23.getSplinePosList = slot24
+slot27.getSplinePosList = slot28
 
-return slot23
---- END OF BLOCK #0 ---
+return slot27
+--- END OF BLOCK #7 ---
 
 
 

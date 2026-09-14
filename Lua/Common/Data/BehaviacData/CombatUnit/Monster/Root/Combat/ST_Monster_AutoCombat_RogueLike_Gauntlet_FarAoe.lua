@@ -7,26 +7,26 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_RogueLike_Gauntlet_FarAoe",
 	useForRoute = false,
-	version = 87
+	agenttype = "PuppetAgent",
+	version = 87,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_RogueLike_Gauntlet_FarAoe"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	type = "float",
-	name = "disToTgtForSkillMon",
 	value = "0",
-	const = 0
+	const = 0,
+	name = "disToTgtForSkillMon"
 }
 slot4[1] = slot5
 slot5 = {
 	type = "float",
-	name = "goBackDist",
 	value = "0",
-	const = 0
+	const = 0,
+	name = "goBackDist"
 }
 slot4[2] = slot5
 slot3.pars = slot4

@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerConst"
 slot0 = slot0(slot2)
@@ -18,21 +18,18 @@ slot5 = require
 slot7 = "Core.Common.CallbackHandler"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Common.lume"
+slot8 = "Utils.ClientUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientUtils"
+slot9 = "Const.ClientConst"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Const.ClientConst"
+slot8 = slot1.Class
+slot10 = "MsNetworkEventCallback"
 slot8 = slot8(slot10)
-slot9 = slot1.Class
-slot11 = "MsNetworkEventCallback"
-slot9 = slot9(slot11)
-slot10 = 10
-slot11 = 2
+slot9 = 10
+slot10 = 2
 
-slot12 = function()
+slot11 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = ClientUtils
 	slot0 = slot0.showBubbleMessageRaw
@@ -52,8 +49,8 @@ slot12 = function()
 
 end
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.getLogger
 	slot5 = slot0
@@ -65,6 +62,8 @@ slot13 = function(slot0)
 	slot0.msGateList = slot1
 	slot1 = nil
 	slot0.msGateAddr = slot1
+	slot1 = 0
+	slot0.msGateIndex = slot1
 	slot1 = 0
 	slot0.reconnectTimes = slot1
 	slot1 = nil
@@ -79,9 +78,9 @@ slot13 = function(slot0)
 
 end
 
-slot9.ctor = slot13
+slot8.ctor = slot12
 
-slot13 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot0.msProxy = slot1
 	slot2 = slot0.msProxy
@@ -111,13 +110,15 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot9.regCallbacksTo = slot13
+slot8.regCallbacksTo = slot12
 
-slot13 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot12 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.msGateList = slot1
+	slot3 = 0
+	slot0.msGateIndex = slot3
 	slot5 = slot0
-	slot3 = slot0.randomMsGate
+	slot3 = slot0.selectNextMsGate
 
 	slot3(slot5)
 
@@ -136,14 +137,16 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot9.start = slot13
+slot8.start = slot12
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = {}
 	slot0.msGateList = slot1
 	slot1 = nil
 	slot0.msGateAddr = slot1
+	slot1 = 0
+	slot0.msGateIndex = slot1
 	slot1 = 0
 	slot0.reconnectTimes = slot1
 	slot1 = slot0.msProxy
@@ -162,7 +165,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 14-19, warpins: 1 ---
+	--- BLOCK #1 16-21, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
 	slot3 = slot0.timer
@@ -177,7 +180,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 20-20, warpins: 2 ---
+	--- BLOCK #2 22-22, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -185,9 +188,9 @@ slot13 = function(slot0)
 
 end
 
-slot9.destroy = slot13
+slot8.destroy = slot12
 
-slot13 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -226,9 +229,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot9.onTraceback = slot13
+slot8.onTraceback = slot12
 
-slot13 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ProtobufConst
 	slot2 = slot2.CONNECT_RESPONSE_TYPE_CONNECTED
@@ -353,9 +356,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot9.onConnectCallback = slot13
+slot8.onConnectCallback = slot12
 
-slot13 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ProtobufConst
 	slot2 = slot2.CONNECT_RESPONSE_TYPE_NORMALBROKEN
@@ -659,12 +662,12 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot9.onDisconnectCallback = slot13
+slot8.onDisconnectCallback = slot12
 
-slot13 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.randomMsGate
+	slot1 = slot0.selectNextMsGate
 
 	slot1(slot3)
 
@@ -682,9 +685,9 @@ slot13 = function(slot0)
 
 end
 
-slot9.reconnect = slot13
+slot8.reconnect = slot12
 
-slot13 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -731,26 +734,83 @@ slot13 = function(slot0)
 
 end
 
-slot9.onReconnectFailed = slot13
+slot8.onReconnectFailed = slot12
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = lume
-	slot1 = slot1.randomchoice
-	slot3 = slot0.msGateList
-	slot1 = slot1(slot3)
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.msGateList
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.msGateList
+	slot1 = #slot1
+	--- END OF BLOCK #1 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot1 = nil
 	slot0.msGateAddr = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-18, warpins: 2 ---
+	slot1 = slot0.msGateIndex
+	slot1 = slot1 + 1
+	slot0.msGateIndex = slot1
+	slot1 = slot0.msGateIndex
+	slot2 = slot0.msGateList
+	slot2 = #slot2
+	--- END OF BLOCK #3 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-20, warpins: 1 ---
+	slot1 = 1
+	slot0.msGateIndex = slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-25, warpins: 2 ---
+	slot1 = slot0.msGateList
+	slot2 = slot0.msGateIndex
+	slot1 = slot1[slot2]
+	slot0.msGateAddr = slot1
+
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot9.randomMsGate = slot13
+slot8.selectNextMsGate = slot12
 
-slot13 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.msProxy
 	--- END OF BLOCK #0 ---
@@ -796,9 +856,9 @@ slot13 = function(slot0)
 
 end
 
-slot9.isConnected = slot13
+slot8.isConnected = slot12
 
-slot13 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.msProxy
 	--- END OF BLOCK #0 ---
@@ -832,9 +892,9 @@ slot13 = function(slot0)
 
 end
 
-slot9.getTTL = slot13
+slot8.getTTL = slot12
 
-return slot9
+return slot8
 --- END OF BLOCK #0 ---
 
 

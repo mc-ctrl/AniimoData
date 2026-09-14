@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -58,7 +58,7 @@ end
 slot7.ctor = slot9
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-25, warpins: 1 ---
+	--- BLOCK #0 1-29, warpins: 1 ---
 	slot2 = ClientHomeCarTemplateEntity
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -67,6 +67,8 @@ slot9 = function(slot0, slot1)
 	slot2 = slot2(slot4, slot5)
 	slot3 = slot1.ornamentId
 	slot0.ornamentId = slot3
+	slot3 = slot1.areaId
+	slot0.areaId = slot3
 	slot3 = slot1.playerUID
 	slot0.playerUID = slot3
 	slot3 = slot1.homeTemplateId
@@ -75,6 +77,8 @@ slot9 = function(slot0, slot1)
 	slot0.originEntity = slot3
 	slot3 = slot1.isPreview
 	slot0.isPreview = slot3
+	slot3 = slot1.editor
+	slot0.editor = slot3
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.homeCar
@@ -163,9 +167,56 @@ end
 slot7.destroy = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = true
-	slot0.isModelLoaded = slot1
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.carGroup
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot1 = slot0.carGroup
+	slot3 = slot1
+	slot1 = slot1.onOrnamentPositionChanged
+	slot4 = slot0.ornamentId
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-14, warpins: 2 ---
+	slot1 = ClientHomeCarTemplateEntity
+	slot1 = slot1.super
+	slot1 = slot1.onEntityPositionChanged
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.onEntityPositionChanged = slot9
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = ClientHomeCarTemplateEntity
+	slot1 = slot1.super
+	slot1 = slot1.onItemModelLoaded
+	slot3 = slot0
+
+	slot1(slot3)
+
 	slot1 = slot0.originEntity
 	--- END OF BLOCK #0 ---
 
@@ -176,7 +227,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-9, warpins: 1 ---
+	--- BLOCK #1 9-12, warpins: 1 ---
 	slot1 = slot0.originEntity
 	slot1 = slot1._needStateInteraction
 	--- END OF BLOCK #1 ---
@@ -188,7 +239,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #2 10-13, warpins: 1 ---
+	--- BLOCK #2 13-16, warpins: 1 ---
 	slot1 = slot0.originEntity
 	slot1 = slot1.isOrnamentSwitchOpen
 	--- END OF BLOCK #2 ---
@@ -200,7 +251,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #3 14-19, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot1 = slot0.originEntity
 	slot3 = slot1
 	slot1 = slot1.isOrnamentSwitchOpen
@@ -214,7 +265,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #4 20-22, warpins: 1 ---
+	--- BLOCK #4 23-25, warpins: 1 ---
 	slot1 = slot0.templateData
 	--- END OF BLOCK #4 ---
 
@@ -225,7 +276,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #5 23-25, warpins: 1 ---
+	--- BLOCK #5 26-28, warpins: 1 ---
 	slot2 = slot1.interactiveOpenAnim
 	--- END OF BLOCK #5 ---
 
@@ -236,7 +287,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #6 26-29, warpins: 1 ---
+	--- BLOCK #6 29-32, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.playAnimancerAnimAtEnd
 	slot5 = slot1.interactiveOpenAnim
@@ -248,7 +299,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 30-38, warpins: 7 ---
+	--- BLOCK #7 33-41, warpins: 7 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_onModelLoaded"

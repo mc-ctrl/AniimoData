@@ -1,62 +1,68 @@
---- BLOCK #0 1-124, warpins: 1 ---
+--- BLOCK #0 1-132, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "CatchBossNewCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "CatchBossNewCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.UICtrl"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientUtils"
+slot6 = "Guis.UICtrl"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.LuaUIUtils"
+slot7 = "Utils.ClientUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientCaptureUtils"
+slot8 = "Utils.LuaUIUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientTextUtils"
+slot9 = "Utils.ClientCaptureUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Const.UIConst"
+slot10 = "Utils.ClientTextUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "GameApp.Camera.CameraConst"
+slot11 = "Const.UIConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.Const"
+slot12 = "GameApp.Camera.CameraConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Common.Time"
+slot13 = "Common.Const.Const"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.NoticeDef"
+slot14 = "Core.Common.Time"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_config_data"
+slot15 = "Common.NoticeDef"
 slot13 = slot13(slot15)
-slot14 = slot2.LightClass
-slot16 = "CatchBossNewCtrl"
-slot17 = slot3
-slot14 = slot14(slot16, slot17)
-slot15 = require
-slot17 = "Core.Timer.TimerManager"
-slot15 = slot15(slot17)
-slot16 = CS
-slot16 = slot16.UnityEngine
-slot16 = slot16.RectTransformUtility
-slot17 = 5
+slot14 = require
+slot16 = "Data.pet_config_data"
+slot14 = slot14(slot16)
+slot15 = slot3.LightClass
+slot17 = "CatchBossNewCtrl"
+slot18 = slot4
+slot15 = slot15(slot17, slot18)
+slot16 = require
+slot18 = "Core.Timer.TimerManager"
+slot16 = slot16(slot18)
+slot17 = CS
+slot17 = slot17.UnityEngine
+slot17 = slot17.RectTransformUtility
+slot18 = 5
+slot19 = "List"
+slot20 = "CatchBossNew_RewardFocused"
+slot21 = "CatchBossNewConsoleBar"
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -119,28 +125,28 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot19 = {}
-slot20 = slot1.ON_BACKPACK_INFO_CHANGE
-slot21 = {
+slot23 = {}
+slot24 = slot2.ON_BACKPACK_INFO_CHANGE
+slot25 = {
 	"onBackPackInfoChange",
 	true
 }
-slot19[slot20] = slot21
-slot20 = slot1.CURRENCY_CHANGE
-slot21 = {
+slot23[slot24] = slot25
+slot24 = slot2.CURRENCY_CHANGE
+slot25 = {
 	"onCostCountChange",
 	true
 }
-slot19[slot20] = slot21
-slot20 = slot1.MONEY_COUNT_CHANGE
-slot21 = {
+slot23[slot24] = slot25
+slot24 = slot2.MONEY_COUNT_CHANGE
+slot25 = {
 	"onCostCountChange",
 	true
 }
-slot19[slot20] = slot21
-slot14.messages = slot19
+slot23[slot24] = slot25
+slot15.messages = slot23
 
-slot19 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -156,10 +162,10 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.onCreate = slot19
+slot15.onCreate = slot23
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCancelUButton
 
@@ -198,26 +204,9 @@ slot19 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot14.addListener = slot19
-
-slot19 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.checkUIShow
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_COMMON_ITEM_TIP
-	slot1 = slot1(slot3, slot4)
+	slot1 = slot1.navMgr
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -227,7 +216,202 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #1 11-18, warpins: 1 ---
+	--- BLOCK #1 14-32, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.addNavFocusListener
+
+	slot4 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshConsoleBarState
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = CONSOLE_BAR_LISTENER_NAME
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = CONSOLE_BAR_LISTENER_NAME
+	slot2 = tostring
+	slot4 = slot0.uid
+	slot2 = slot2(slot4)
+	slot1 = slot1 .. slot2
+	slot0._consoleBarHotkeyListenerName = slot1
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	slot3 = slot1
+	slot1 = slot1.AddLuaHotkeyActivationChangedListener
+	slot4 = slot0._consoleBarHotkeyListenerName
+
+	slot5 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshConsoleBarState
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 33-34, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15.addListener = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot2 = slot1.CurrentFocusedGroupName
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot3 = NAV_GROUP_REWARD
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 12-12, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-22, warpins: 2 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.Navigation
+	slot4 = slot4.ConsoleBar
+	slot4 = slot4.SetStateForAll
+	slot6 = CONSOLE_BAR_STATE_REWARD_FOCUSED
+	slot7 = not slot3
+	slot7 = not slot7
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15.refreshConsoleBarState = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._consoleBarHotkeyListenerName
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	slot3 = slot1
+	slot1 = slot1.RemoveLuaHotkeyActivationChangedListener
+	slot4 = slot0._consoleBarHotkeyListenerName
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-27, warpins: 3 ---
+	slot1 = nil
+	slot0._consoleBarHotkeyListenerName = slot1
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.checkUIShow
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_COMMON_ITEM_TIP
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 28-35, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -238,12 +422,12 @@ slot19 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #2 19-41, warpins: 2 ---
+	--- BLOCK #5 36-50, warpins: 2 ---
 	slot1 = nil
 	slot0._tooltipItemId = slot1
 	slot1 = UICtrl
@@ -258,31 +442,21 @@ slot19 = function(slot0)
 	slot3 = slot1
 	slot1 = slot1.show
 	slot4 = UIConst
-	slot4 = slot4.UI_ID_HUD
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.show
-	slot4 = UIConst
 	slot4 = slot4.UI_ID_HUD_V2
 
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot14.onDestroy = slot19
+slot15.onDestroy = slot23
 
-slot19 = function(slot0, slot1)
-	--- BLOCK #0 1-76, warpins: 1 ---
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-68, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -351,16 +525,6 @@ slot19 = function(slot0, slot1)
 	slot4 = slot2
 	slot2 = slot2.hide
 	slot5 = UIConst
-	slot5 = slot5.UI_ID_HUD
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.hide
-	slot5 = UIConst
 	slot5 = slot5.UI_ID_HUD_V2
 
 	slot2(slot4, slot5)
@@ -383,9 +547,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.onOpen = slot19
+slot15.onOpen = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -406,9 +570,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.onShow = slot19
+slot15.onShow = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -429,9 +593,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.onHide = slot19
+slot15.onHide = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-35, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -505,9 +669,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.refreshInfo = slot19
+slot15.refreshInfo = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSelectCastItem
 	--- END OF BLOCK #0 ---
@@ -545,7 +709,7 @@ slot19 = function(slot0)
 
 
 	--- BLOCK #3 15-15, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -701,9 +865,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.syncSelectedItem = slot19
+slot15.syncSelectedItem = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.bossEntity
 	--- END OF BLOCK #0 ---
@@ -983,9 +1147,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.refreshBossInfo = slot19
+slot15.refreshBossInfo = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1028,9 +1192,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.refreshRewardInfo = slot19
+slot15.refreshRewardInfo = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1205,9 +1369,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.refreshCostInfo = slot19
+slot15.refreshCostInfo = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.costInfo
 	--- END OF BLOCK #0 ---
@@ -1294,9 +1458,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.isCostEnough = slot19
+slot15.isCostEnough = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSelectCastItem
 	--- END OF BLOCK #0 ---
@@ -1402,9 +1566,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.isCurSelectBallEnough = slot19
+slot15.isCurSelectBallEnough = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -1535,9 +1699,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.refreshConfirmButtonState = slot19
+slot15.refreshConfirmButtonState = slot23
 
-slot19 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -1766,9 +1930,9 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot14._toggleItemTooltip = slot19
+slot15._toggleItemTooltip = slot23
 
-slot19 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-48, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2285,9 +2449,9 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.renderCatchBallItem = slot19
+slot15.renderCatchBallItem = slot23
 
-slot19 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.setElementGrade
@@ -2306,9 +2470,9 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.renderBossElementItem = slot19
+slot15.renderBossElementItem = slot23
 
-slot19 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = math
 	slot2 = slot2.clamp
@@ -2389,9 +2553,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.selectItem = slot19
+slot15.selectItem = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.checkFuncTemporaryDisable
@@ -2439,9 +2603,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.openCatchBallShop = slot19
+slot15.openCatchBallShop = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -2464,9 +2628,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.onCancelClick = slot19
+slot15.onCancelClick = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.costInfo
 
@@ -2535,9 +2699,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.showCostNotEnoughConfirm = slot19
+slot15.showCostNotEnoughConfirm = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.lastClickTime
 	--- END OF BLOCK #0 ---
@@ -2551,7 +2715,7 @@ slot19 = function(slot0)
 
 	--- BLOCK #1 4-10, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastClickTime
 	slot1 = slot1 - slot2
 	slot2 = 1
@@ -2575,7 +2739,7 @@ slot19 = function(slot0)
 
 	--- BLOCK #3 12-17, warpins: 3 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.lastClickTime = slot1
 	slot1 = slot0.curSelectCastItem
 	--- END OF BLOCK #3 ---
@@ -2774,9 +2938,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.onConfirmClick = slot19
+slot15.onConfirmClick = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSelectCastItem
 	--- END OF BLOCK #0 ---
@@ -2805,9 +2969,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.getCurSelectPropId = slot19
+slot15.getCurSelectPropId = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSelectCastItem
 	--- END OF BLOCK #0 ---
@@ -2854,9 +3018,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.isCurSelectFree = slot19
+slot15.isCurSelectFree = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.curSelectCastItem
 
@@ -2867,9 +3031,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.getCurSelectPropInfo = slot19
+slot15.getCurSelectPropInfo = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshInfo
@@ -2883,9 +3047,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.onBackPackInfoChange = slot19
+slot15.onBackPackInfoChange = slot23
 
-slot19 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshCostInfo
@@ -2935,9 +3099,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.onCostCountChange = slot19
+slot15.onCostCountChange = slot23
 
-return slot14
+return slot15
 --- END OF BLOCK #0 ---
 
 

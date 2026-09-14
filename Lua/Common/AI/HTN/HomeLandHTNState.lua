@@ -13,13 +13,13 @@ slot5 = "Data.home_object_data"
 slot3 = slot3(slot5)
 slot4 = {}
 slot5 = {
+	TargetOrnamentId = 101,
+	TargetOperId = 100,
 	CloseToTransportTarget = 6,
 	HasTransportTarget = 5,
 	CloseToWorkPosition = 4,
 	HasWorkTarget = 3,
-	TargetStoreId = 102,
-	TargetOrnamentId = 101,
-	TargetOperId = 100
+	TargetStoreId = 102
 }
 slot4.StateName = slot5
 slot5 = {}

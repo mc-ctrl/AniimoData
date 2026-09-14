@@ -145,34 +145,36 @@ slot8 = function(slot0)
 	slot1 = slot1.rootCmp
 
 	slot2 = function()
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot0 = Vector3
-		slot0 = slot0.one
-		slot1 = self
-		slot1 = slot1.iData
-		slot1 = slot1.scale
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.iData
+		slot0 = slot0.scale
 		--- END OF BLOCK #0 ---
 
-		slot1 = if not slot1 then
+		slot0 = if not slot0 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 8-8, warpins: 1 ---
-		slot1 = 1
+		--- BLOCK #1 6-6, warpins: 1 ---
+		slot0 = 1
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 9-14, warpins: 2 ---
-		slot0 = slot0 * slot1
+		--- BLOCK #2 7-16, warpins: 2 ---
 		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.transform
-		slot1.localScale = slot0
+		slot2 = Vector3
+		slot4 = slot0
+		slot5 = slot0
+		slot6 = slot0
+		slot2 = slot2(slot4, slot5, slot6)
+		slot1.localScale = slot2
 
 		return
 		--- END OF BLOCK #2 ---
@@ -396,7 +398,7 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 15-36, warpins: 2 ---
+	--- BLOCK #6 15-39, warpins: 2 ---
 	slot3 = ClientTextUtils
 	slot3 = slot3.setText
 	slot5 = slot0.view
@@ -424,8 +426,35 @@ slot8 = function(slot0)
 
 	slot3(slot5, slot6)
 
-	return
+	slot3 = slot0.iData
+	slot3 = slot3.tooltipAnchor
 	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 40-46, warpins: 1 ---
+	slot3 = LuaUIUtils
+	slot3 = slot3.alignTooltipToAnchorLeftTop
+	slot5 = slot0.view
+	slot5 = slot5.rootCmp
+	slot6 = slot0.iData
+	slot6 = slot6.tooltipAnchor
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 47-47, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
 
 
 

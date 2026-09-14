@@ -1,4 +1,4 @@
---- BLOCK #0 1-135, warpins: 1 ---
+--- BLOCK #0 1-132, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -45,41 +45,38 @@ slot13 = require
 slot15 = "Data.college_guide_page_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.ui_panel_const_data"
+slot16 = "Data.sys_config_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.sys_config_data"
+slot17 = "Utils.ClientUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Utils.ClientUtils"
+slot18 = "Const.UIConst"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Const.UIConst"
+slot19 = "Data.badge_task_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.badge_task_data"
+slot20 = "Data.item_source_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.item_source_data"
+slot21 = "Common.Utils.ItemUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.Utils.ItemUtils"
+slot22 = "Data.limit_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.limit_data"
+slot23 = "Common.Utils.TimeUtils"
 slot21 = slot21(slot23)
-slot22 = require
-slot24 = "Common.Utils.TimeUtils"
-slot22 = slot22(slot24)
-slot23 = slot1.LightClass
-slot25 = "BadgeCollectionComponent2"
-slot26 = slot12
-slot23 = slot23(slot25, slot26)
-slot24 = pg
-slot24 = slot24.game
-slot24 = slot24.audio
+slot22 = slot1.LightClass
+slot24 = "BadgeCollectionComponent2"
+slot25 = slot12
+slot22 = slot22(slot24, slot25)
+slot23 = pg
+slot23 = slot23.game
+slot23 = slot23.audio
 
-slot25 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = 1013
 	slot0.medalItemId = slot2
@@ -202,9 +199,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot23.enter = slot25
+slot22.enter = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = BadgeCollectionComponent
 	slot1 = slot1._openHelpTip
@@ -218,9 +215,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.customRuleTip = slot25
+slot22.customRuleTip = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -229,9 +226,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.exit = slot25
+slot22.exit = slot24
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -240,9 +237,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot23.setFirstTabRed = slot25
+slot22.setFirstTabRed = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = RedDotConst
 	slot1 = slot1.RedDotStyle
@@ -255,15 +252,15 @@ slot25 = function(slot0)
 
 end
 
-slot23.getRedStyle = slot25
-slot25 = {
-	canOpen = 2,
+slot22.getRedStyle = slot24
+slot24 = {
 	inCollection = 1,
-	base = 0
+	base = 0,
+	canOpen = 2
 }
-slot23.pipeline = slot25
+slot22.pipeline = slot24
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = UIComponent
 	slot4 = slot4.ctor
@@ -285,9 +282,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot23.ctor = slot25
+slot22.ctor = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = true
 	slot0.refContainersLoaded = slot1
@@ -320,9 +317,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.onUILoaded = slot25
+slot22.onUILoaded = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -441,9 +438,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.findObjects = slot25
+slot22.findObjects = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = slot0.btnConvertUButton
 
@@ -455,7 +452,7 @@ slot25 = function(slot0)
 		slot2 = slot0
 		slot0 = slot0.open
 		slot3 = UIConst
-		slot3 = slot3.UI_ID_SHOP_MAIN
+		slot3 = slot3.UI_ID_SEASON_SHOP
 		slot4 = {}
 		slot5 = {
 			46
@@ -558,9 +555,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.addListener = slot25
+slot22.addListener = slot24
 
-slot25 = function()
+slot24 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -582,9 +579,9 @@ slot25 = function()
 
 end
 
-slot23._openHelpTip = slot25
+slot22._openHelpTip = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshTime
@@ -651,9 +648,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.refreshPage = slot25
+slot22.refreshPage = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getLimitInfo
@@ -721,9 +718,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.refreshMedalNum = slot25
+slot22.refreshMedalNum = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshMedalNum
@@ -737,9 +734,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.onItemCountChanged = slot25
+slot22.onItemCountChanged = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.setCountDownTime
@@ -761,9 +758,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.refreshTime = slot25
+slot22.refreshTime = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -801,9 +798,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.refreshOpenRed = slot25
+slot22.refreshOpenRed = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -1002,9 +999,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.getCardData = slot25
+slot22.getCardData = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1037,9 +1034,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.checkCondition = slot25
+slot22.checkCondition = slot24
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-74, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1180,9 +1177,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot23.renderOneCard = slot25
+slot22.renderOneCard = slot24
 
-slot25 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-39, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
@@ -1277,9 +1274,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot23.renderTooltip = slot25
+slot22.renderTooltip = slot24
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1333,9 +1330,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot23.renderOneTipLine = slot25
+slot22.renderOneTipLine = slot24
 
-slot25 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1397,9 +1394,9 @@ slot25 = function(slot0, slot1, slot2)
 
 end
 
-slot23.setImage = slot25
+slot22.setImage = slot24
 
-slot25 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1424,9 +1421,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot23.getLimitInfo = slot25
+slot22.getLimitInfo = slot24
 
-slot25 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = LimitData
 	slot2 = slot2[slot1]
@@ -1552,9 +1549,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot23.getLimitNextTime = slot25
+slot22.getLimitNextTime = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.refContainersLoaded
 
@@ -1565,9 +1562,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.checkContentLoaded = slot25
+slot22.checkContentLoaded = slot24
 
-slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot7 = {}
 	--- END OF BLOCK #0 ---
@@ -1940,9 +1937,9 @@ slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot23._getRewardData = slot25
+slot22._getRewardData = slot24
 
-slot25 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1951,9 +1948,9 @@ slot25 = function(slot0)
 
 end
 
-slot23.onBadgeOpenChanged = slot25
+slot22.onBadgeOpenChanged = slot24
 
-return slot23
+return slot22
 --- END OF BLOCK #0 ---
 
 

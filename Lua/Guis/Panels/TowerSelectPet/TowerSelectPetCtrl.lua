@@ -2102,23 +2102,23 @@ slot17 = function(slot0)
 	--- BLOCK #2 14-24, warpins: 2 ---
 	slot2 = {}
 	slot3 = {
-		index = 1,
-		isEmpty = true
+		isEmpty = true,
+		index = 1
 	}
 	slot2[1] = slot3
 	slot3 = {
-		index = 2,
-		isEmpty = true
+		isEmpty = true,
+		index = 2
 	}
 	slot2[2] = slot3
 	slot3 = {
-		index = 3,
-		isEmpty = true
+		isEmpty = true,
+		index = 3
 	}
 	slot2[3] = slot3
 	slot3 = {
-		index = 4,
-		isEmpty = true
+		isEmpty = true,
+		index = 4
 	}
 	slot2[4] = slot3
 	slot1 = slot2
@@ -2130,23 +2130,23 @@ slot17 = function(slot0)
 	--- BLOCK #3 25-44, warpins: 1 ---
 	slot2 = {}
 	slot3 = {
-		index = 1,
-		isEmpty = true
+		isEmpty = true,
+		index = 1
 	}
 	slot2[1] = slot3
 	slot3 = {
-		index = 2,
-		isEmpty = true
+		isEmpty = true,
+		index = 2
 	}
 	slot2[2] = slot3
 	slot3 = {
-		index = 3,
-		isEmpty = true
+		isEmpty = true,
+		index = 3
 	}
 	slot2[3] = slot3
 	slot3 = {
-		index = 4,
-		isEmpty = true
+		isEmpty = true,
+		index = 4
 	}
 	slot2[4] = slot3
 	slot3 = {

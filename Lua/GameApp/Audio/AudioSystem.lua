@@ -1,4 +1,4 @@
---- BLOCK #0 1-246, warpins: 1 ---
+--- BLOCK #0 1-301, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -26,71 +26,100 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Data.puppet_data"
 slot8 = slot8(slot10)
-slot9 = slot0.getLogger
-slot11 = "AudioSystem"
+slot9 = require
+slot11 = "Data.pet_data"
 slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Common.Utils.SceneUtils"
+slot10 = slot0.getLogger
+slot12 = "AudioSystem"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.element_prop_data"
+slot13 = "Common.Utils.SceneUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Const.Const"
+slot14 = "Data.element_prop_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.ClientConst"
+slot15 = "Common.Const.Const"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.Utils"
+slot16 = "Const.ClientConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Container.Events"
+slot17 = "Common.Utils.Utils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Core.Common.CallbackHandler"
+slot18 = "Common.Container.Events"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Core.Common.lume"
+slot19 = "Core.Common.CallbackHandler"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.weather_data"
+slot20 = "Core.Common.lume"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.map_block_config_data"
+slot21 = "Data.weather_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Data.decibel_grade_data"
+slot22 = "Data.map_block_config_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.sys_config_data"
+slot23 = "Data.decibel_grade_data"
 slot21 = slot21(slot23)
-slot22 = slot4.LightClass
-slot24 = "AudioSystem"
-slot25 = slot3
-slot22 = slot22(slot24, slot25)
-slot23 = ToBool
-slot24 = CS
-slot24 = slot24.FunPlus
-slot24 = slot24.WorldX
-slot24 = slot24.Manager
-slot24 = slot24.ListenerFollowType
+slot22 = require
+slot24 = "Data.sys_config_data"
+slot22 = slot22(slot24)
+slot23 = slot4.LightClass
+slot25 = "AudioSystem"
+slot26 = slot3
+slot23 = slot23(slot25, slot26)
+slot24 = {}
+slot25 = slot5.SWITCH_GROUP_SURFACE_MATERIAL
+slot26 = {
+	"swamp",
+	"water",
+	"snow",
+	"ice",
+	"sand",
+	"grass",
+	"metal",
+	"concret",
+	"soil",
+	"stone",
+	"wood"
+}
+slot24[slot25] = slot26
+slot23.SWITCH_ID_PRELOAD_CONFIG = slot24
+slot24 = {}
+slot25 = slot5.SWITCH_GROUP_SURFACE_MATERIAL
+slot26 = slot5.SWITCH_STATE_SURFACE_MATERIAL_DEFAULT
+slot24[slot25] = slot26
+slot23.SWITCH_DEFAULT_CONFIG = slot24
+slot24 = ToBool
 slot25 = CS
 slot25 = slot25.FunPlus
 slot25 = slot25.WorldX
-slot25 = slot25.Audio
-slot25 = slot25.SoundType
-slot26 = {}
-slot27 = 0.1
-slot28 = 0.2
-slot29 = 20
-slot30 = 2
-slot31 = 1
-slot22.checkCombatBgmInterval = slot31
+slot25 = slot25.Manager
+slot25 = slot25.ListenerFollowType
+slot26 = CS
+slot26 = slot26.FunPlus
+slot26 = slot26.WorldX
+slot26 = slot26.Audio
+slot26 = slot26.SoundType
+slot27 = {}
+slot28 = 0.1
+slot29 = 0.2
+slot30 = 10
+slot31 = 2
+slot32 = 1
+slot23.checkCombatBgmInterval = slot32
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
+	slot2 = MessageName
+	slot2 = slot2.PLAYER_ONTELEPORT
+	slot3 = "onPlayerTeleport"
+	slot1[slot2] = slot3
 	slot2 = MessageName
 	slot2 = slot2.TIMESCALE_CHANGE
 	slot3 = "onTimeScaleChange"
@@ -103,10 +132,10 @@ slot31 = function(slot0)
 
 end
 
-slot22.getMessageBindMap = slot31
+slot23.getMessageBindMap = slot32
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-64, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-72, warpins: 1 ---
 	slot1 = appFacade
 	slot1 = slot1.audioManager
 	slot0.mgrInst = slot1
@@ -144,6 +173,8 @@ slot31 = function(slot0)
 	slot0.soundAreaState = slot1
 	slot1 = nil
 	slot0.combatBgmAreaId = slot1
+	slot1 = false
+	slot0.muteLoseFocusAudio = slot1
 	slot1 = {}
 	slot0.projectileHitCache = slot1
 	slot1 = {}
@@ -168,8 +199,14 @@ slot31 = function(slot0)
 	slot0.defaultCombatBgm = slot1
 	slot1 = CombatBgmSilenceTime
 	slot0.combatBgmResetTime = slot1
+	slot1 = nil
+	slot0.currentSceneId = slot1
+	slot1 = false
+	slot0.sceneBerserkBgmEnabled = slot1
 	slot1 = {}
 	slot0.decibelListeners = slot1
+	slot1 = {}
+	slot0.switchIdCache = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -178,10 +215,20 @@ slot31 = function(slot0)
 
 end
 
-slot22.onCtor = slot31
+slot23.onCtor = slot32
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-38, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-56, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setConfiguredDefaultSwitches
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.preloadConfiguredSwitchIds
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.setRTPCValue
 	slot4 = AudioConst
@@ -194,6 +241,14 @@ slot31 = function(slot0)
 	slot1 = slot0.setRTPCValue
 	slot4 = AudioConst
 	slot4 = slot4.RTPC_VOLUME_3P
+	slot5 = 1
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0.setRTPCValue
+	slot4 = AudioConst
+	slot4 = slot4.RTPC_VOLUME_EX
 	slot5 = 1
 
 	slot1(slot3, slot4, slot5)
@@ -212,6 +267,14 @@ slot31 = function(slot0)
 	MULTRES = slot7(slot9, slot10)
 
 	slot1(slot3, slot4, slot5, slot6, MULTRES)
+
+	slot3 = slot0
+	slot1 = slot0.setState
+	slot4 = AudioConst
+	slot4 = slot4.STATE_GROUP_GAME_MUSIC_STATE
+	slot5 = "None"
+
+	slot1(slot3, slot4, slot5)
 
 	slot3 = slot0
 	slot1 = slot0.playEvent
@@ -236,9 +299,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.onInit = slot31
+slot23.onInit = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.templateId
 	--- END OF BLOCK #0 ---
@@ -288,9 +351,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.onPlayerInit = slot31
+slot23.onPlayerInit = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = AudioSystem
 	slot2 = slot2.super
@@ -317,9 +380,57 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.onPlayerDestroy = slot31
+slot23.onPlayerDestroy = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = slot0.combatBgmState
+	slot1 = slot1.curState
+	slot2 = AudioConst
+	slot2 = slot2.BGMCombatState
+	slot2 = slot2.Fading
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-20, warpins: 2 ---
+	slot1 = slot0.combatBgmState
+	slot2 = AudioConst
+	slot2 = slot2.BGMCombatState
+	slot2 = slot2.Stop
+	slot1.curState = slot2
+	slot3 = slot0
+	slot1 = slot0.stopBgm
+	slot4 = AudioConst
+	slot4 = slot4.BgmPriority
+	slot4 = slot4.Combat
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot23.onPlayerTeleport = slot32
+
+slot32 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -406,9 +517,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.initAudioLanguage = slot31
+slot23.initAudioLanguage = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.curLanguage
 
@@ -419,9 +530,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.getLanguage = slot31
+slot23.getLanguage = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.curLanguage = slot1
 	--- END OF BLOCK #0 ---
@@ -451,7 +562,33 @@ slot31 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-19, warpins: 2 ---
+	--- BLOCK #2 14-18, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.checkDisableVox
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-24, warpins: 1 ---
+	slot3 = slot0.mgrInst
+	slot5 = slot3
+	slot3 = slot3.SetLanguage
+	slot6 = "None"
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 25-29, warpins: 1 ---
 	slot3 = slot0.mgrInst
 	slot5 = slot3
 	slot3 = slot3.SetLanguage
@@ -459,16 +596,107 @@ slot31 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 30-30, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot22.setLanguage = slot31
+slot23.setLanguage = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = ClientConfigAppCountry
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= "vnm" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot23.checkDisableVox = slot32
+
+slot32 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = require
+	slot3 = "Utils.ClientSettingUtils"
+	slot1 = slot1(slot3)
+	slot2 = slot1.get_autoMute
+	slot2 = slot2()
+	slot0.muteLoseFocusAudio = slot2
+	slot4 = slot0
+	slot2 = slot0.onAppFocusChanged
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.isFocused
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.initLoseFocusAudio = slot32
+
+slot32 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = ToBool
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot0.muteLoseFocusAudio = slot2
+	slot4 = slot0
+	slot2 = slot0.onAppFocusChanged
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.isFocused
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.setLoseFocusAudio = slot32
+
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -477,9 +705,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.onTimeScaleChange = slot31
+slot23.onTimeScaleChange = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -560,9 +788,9 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.trySetState = slot31
+slot23.trySetState = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.stateInfo
 	slot2 = slot2[slot1]
@@ -662,9 +890,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.refreshState = slot31
+slot23.refreshState = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.mgrInst
 	slot5 = slot3
@@ -681,9 +909,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.setState = slot31
+slot23.setState = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -741,9 +969,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.setVolume = slot31
+slot23.setVolume = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.volumeInfo
 	slot2 = slot2[slot1]
@@ -816,9 +1044,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.refreshVolume = slot31
+slot23.refreshVolume = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0.mgrInst
 	slot6 = slot4
@@ -836,9 +1064,48 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.setRTPCValue = slot31
+slot23.setRTPCValue = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0.mgrInst
+	slot3 = slot3.SetGameObjectOutputBusVolume
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot3 = slot0.mgrInst
+	slot5 = slot3
+	slot3 = slot3.SetGameObjectOutputBusVolume
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot23.setGameObjectOutputBusVolume = slot32
+
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.mgrInst
 	slot5 = slot3
@@ -853,9 +1120,167 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.getRTPCValue = slot31
+slot23.getRTPCValue = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = slot0.mgrInst
+	slot4 = slot2
+	slot2 = slot2.SetBlockOtherPlayerAudio
+	slot5 = ToBool
+	slot7 = slot1
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.setBlockOtherPlayerAudio = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot1
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-16, warpins: 1 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.PlayEvent
+	slot7 = slot1
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-24, warpins: 2 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.PlayCombatEvent
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot23.playCombat = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot1
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-16, warpins: 1 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.PlayEvent
+	slot7 = slot1
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-24, warpins: 2 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.PlayCombatEventAtPos
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot23.playCombatAtPos = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -887,20 +1312,20 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #3 7-19, warpins: 1 ---
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = "battle_mathit_%s_%s_%s"
-	slot8 = slot3
-	slot9 = slot1
-	slot10 = slot2
-	slot5 = slot5(slot7, slot8, slot9, slot10)
-	slot6 = slot0.mgrInst
-	slot8 = slot6
-	slot6 = slot6.PlayEvent
-	slot9 = slot5
-	slot10 = slot4
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = "battle_mathit_%s_%s_%s"
+	slot9 = slot3
+	slot10 = slot1
+	slot11 = slot2
+	slot6 = slot6(slot8, slot9, slot10, slot11)
+	slot9 = slot0
+	slot7 = slot0.playCombatAtPos
+	slot10 = slot6
+	slot11 = slot4
+	slot12 = slot5
 
-	slot6(slot8, slot9, slot10)
+	slot7(slot9, slot10, slot11, slot12)
 
 	--- END OF BLOCK #3 ---
 
@@ -915,9 +1340,9 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.playHit = slot31
+slot23.playHit = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -939,13 +1364,13 @@ slot31 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 5-10, warpins: 1 ---
-	slot3 = slot0.mgrInst
-	slot5 = slot3
-	slot3 = slot3.PlayEvent
-	slot6 = slot1
-	slot7 = slot2
+	slot6 = slot0
+	slot4 = slot0.playCombatAtPos
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8, slot9)
 
 	--- END OF BLOCK #2 ---
 
@@ -960,9 +1385,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.playSoundAtPos = slot31
+slot23.playSoundAtPos = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -984,12 +1409,12 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 5-9, warpins: 1 ---
-	slot4 = nil
-	slot5 = slot0.projectileHitCache
-	slot5 = slot5[slot1]
+	slot5 = nil
+	slot6 = slot0.projectileHitCache
+	slot6 = slot6[slot1]
 	--- END OF BLOCK #2 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
@@ -997,12 +1422,12 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #3 10-14, warpins: 1 ---
-	slot5 = slot0.projectileHitCache
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
+	slot6 = slot0.projectileHitCache
+	slot6 = slot6[slot1]
+	slot6 = slot6[slot2]
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -1010,29 +1435,29 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #4 15-18, warpins: 1 ---
-	slot5 = slot0.projectileHitCache
-	slot5 = slot5[slot1]
-	slot4 = slot5[slot2]
+	slot6 = slot0.projectileHitCache
+	slot6 = slot6[slot1]
+	slot5 = slot6[slot2]
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
 	--- BLOCK #5 19-31, warpins: 2 ---
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = "battle_projectilehit_%s_%s"
-	slot8 = ElementPropData
-	slot8 = slot8[slot1]
-	slot8 = slot8.projectileHitSound
-	slot9 = slot2
-	slot5 = slot5(slot7, slot8, slot9)
-	slot4 = slot5
-	slot5 = slot0.projectileHitCache
-	slot5 = slot5[slot1]
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = "battle_projectilehit_%s_%s"
+	slot9 = ElementPropData
+	slot9 = slot9[slot1]
+	slot9 = slot9.projectileHitSound
+	slot10 = slot2
+	slot6 = slot6(slot8, slot9, slot10)
+	slot5 = slot6
+	slot6 = slot0.projectileHitCache
+	slot6 = slot6[slot1]
 	--- END OF BLOCK #5 ---
 
-	slot5 = if not slot5 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
@@ -1040,31 +1465,31 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #6 32-34, warpins: 1 ---
-	slot5 = slot0.projectileHitCache
-	slot6 = {}
-	slot5[slot1] = slot6
+	slot6 = slot0.projectileHitCache
+	slot7 = {}
+	slot6[slot1] = slot7
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
 	--- BLOCK #7 35-37, warpins: 2 ---
-	slot5 = slot0.projectileHitCache
-	slot5 = slot5[slot1]
-	slot5[slot2] = slot4
+	slot6 = slot0.projectileHitCache
+	slot6 = slot6[slot1]
+	slot6[slot2] = slot5
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
 	--- BLOCK #8 38-43, warpins: 2 ---
-	slot5 = slot0.mgrInst
-	slot7 = slot5
-	slot5 = slot5.PlayEvent
-	slot8 = slot4
-	slot9 = slot3
+	slot8 = slot0
+	slot6 = slot0.playCombatAtPos
+	slot9 = slot5
+	slot10 = slot3
+	slot11 = slot4
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10, slot11)
 
 	--- END OF BLOCK #8 ---
 
@@ -1079,17 +1504,17 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.playProjectileHit = slot31
+slot23.playProjectileHit = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = ToBool
-	slot5 = slot1
-	slot3 = slot3(slot5)
+	slot4 = ToBool
+	slot6 = slot1
+	slot4 = slot4(slot6)
 
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -1105,13 +1530,13 @@ slot31 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 7-13, warpins: 2 ---
-	slot3 = slot0.mgrInst
-	slot5 = slot3
-	slot3 = slot3.PlayEvent
-	slot6 = slot1
-	slot7 = slot2
+	slot6 = slot0
+	slot4 = slot0.playCombatAtPos
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -1120,9 +1545,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.playHitById = slot31
+slot23.playHitById = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = string
 	slot6 = slot6.isNilOrEmpty
@@ -1219,9 +1644,9 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot22.triggerEvent = slot31
+slot23.triggerEvent = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
@@ -1260,9 +1685,485 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.setSwitch = slot31
+slot23.setSwitch = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-12, warpins: 1 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-16, warpins: 2 ---
+	slot3 = false
+	slot4 = 0
+	slot5 = 0
+
+	return slot3, slot4, slot5
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-19, warpins: 2 ---
+	slot3 = slot0.switchIdCache
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-20, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-25, warpins: 2 ---
+	slot0.switchIdCache = slot3
+	slot3 = slot0.switchIdCache
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 26-28, warpins: 1 ---
+	slot4 = slot3.switchStateIds
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 29-32, warpins: 1 ---
+	slot4 = slot3.switchStateIds
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #7 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 33-36, warpins: 1 ---
+	slot5 = true
+	slot6 = slot3.switchGroupId
+	slot7 = slot4
+
+	return slot5, slot6, slot7
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 37-44, warpins: 4 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.TryGetSwitchIds
+	slot7 = slot1
+	slot8 = slot2
+	slot4, slot5, slot6 = slot4(slot6, slot7, slot8)
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 45-48, warpins: 1 ---
+	slot7 = false
+	slot8 = 0
+	slot9 = 0
+
+	return slot7, slot8, slot9
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 49-50, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 51-53, warpins: 1 ---
+	slot7 = slot3.switchStateIds
+	--- END OF BLOCK #12 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 54-56, warpins: 1 ---
+	slot7 = slot3.switchGroupId
+	--- END OF BLOCK #13 ---
+
+	if slot7 ~= slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 57-63, warpins: 3 ---
+	slot7 = {}
+	slot7.switchGroupId = slot5
+	slot8 = {}
+	slot7.switchStateIds = slot8
+	slot3 = slot7
+	slot7 = slot0.switchIdCache
+	slot7[slot1] = slot3
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 64-69, warpins: 2 ---
+	slot7 = slot3.switchStateIds
+	slot7[slot2] = slot6
+	slot7 = true
+	slot8 = slot5
+	slot9 = slot6
+
+	return slot7, slot8, slot9
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot23.tryGetSwitchIds = slot32
+
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot3 = type
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	if slot3 ~= "table" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-18, warpins: 2 ---
+	slot3 = true
+	slot4 = ipairs
+	slot6 = slot2
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 19-25, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.tryGetSwitchIds
+	slot12 = slot1
+	slot13 = slot8
+	slot9 = slot9(slot11, slot12, slot13)
+	--- END OF BLOCK #4 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-33, warpins: 1 ---
+	slot3 = false
+	slot10 = logger
+	slot12 = slot10
+	slot10 = slot10.error
+	slot13 = "Failed to preload switch ids, groupName:%s, stateName:%s"
+	slot14 = slot1
+	slot15 = slot8
+
+	slot10(slot12, slot13, slot14, slot15)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 34-35, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 36-36, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot23.preloadSwitchIds = slot32
+
+slot32 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = true
+	slot2 = pairs
+	slot4 = AudioSystem
+	slot4 = slot4.SWITCH_ID_PRELOAD_CONFIG
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 7-13, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.preloadSwitchIds
+	slot10 = slot5
+	slot11 = slot6
+	slot7 = slot7(slot9, slot10, slot11)
+	--- END OF BLOCK #1 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-14, warpins: 1 ---
+	slot1 = false
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 17-17, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot23.preloadConfiguredSwitchIds = slot32
+
+slot32 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = true
+	slot2 = pairs
+	slot4 = AudioSystem
+	slot4 = slot4.SWITCH_DEFAULT_CONFIG
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot7 = slot0.mgrInst
+	slot9 = slot7
+	slot7 = slot7.SetDefaultSwitch
+	slot10 = slot5
+	slot11 = slot6
+	slot7 = slot7(slot9, slot10, slot11)
+	--- END OF BLOCK #1 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-22, warpins: 1 ---
+	slot1 = false
+	slot7 = logger
+	slot9 = slot7
+	slot7 = slot7.error
+	slot10 = "Failed to set default switch, groupName:%s, stateName:%s"
+	slot11 = slot5
+	slot12 = slot6
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 23-24, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 25-25, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot23.setConfiguredDefaultSwitches = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 7-8, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 9-10, warpins: 4 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-17, warpins: 2 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.SetSwitchById
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	return slot4(slot6, slot7, slot8, slot9)
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot23.setSwitchById = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = string
 	slot6 = slot6.isNilOrEmpty
@@ -1339,9 +2240,104 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot22.playEvent = slot31
+slot23.playEvent = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = PetData
+	slot5 = tonumber
+	slot7 = slot1
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot5 = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot5 = slot4.resId
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-19, warpins: 1 ---
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-21, warpins: 3 ---
+	slot5 = false
+
+	return slot5
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-36, warpins: 2 ---
+	slot5 = string
+	slot5 = slot5.format
+	slot7 = "VOX_Emotion_Parmon_%s_%s"
+	slot8 = tostring
+	slot10 = slot4.resId
+	slot8 = slot8(slot10)
+	slot9 = slot2
+	slot5 = slot5(slot7, slot8, slot9)
+	slot8 = slot0
+	slot6 = slot0.playEvent
+	slot9 = slot5
+	slot10 = slot3
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = true
+
+	return slot6
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot23.playPetEmotionSound = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
@@ -1382,9 +2378,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.seekEvent = slot31
+slot23.seekEvent = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = string
 	slot5 = slot5.isNilOrEmpty
@@ -1460,10 +2456,405 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.stopEvent = slot31
+slot23.stopEvent = slot32
 
-slot31 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot32 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.space
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot3 = slot2.sceneId
+	--- END OF BLOCK #3 ---
+
+	if slot3 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-18, warpins: 1 ---
+	slot3 = Utils
+	slot3 = slot3.isRobEggUnderGround
+	slot5 = slot2.spaceType
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 19-20, warpins: 3 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-23, warpins: 2 ---
+	slot3 = slot2.useAfterViewLimitFog
+	--- END OF BLOCK #6 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 24-25, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 26-26, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 27-27, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot23.isSceneBerserkBgmEnabled = slot32
+
+slot32 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.sceneBerserkBgmEnabled
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.berserkBgm
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot2 = slot1.bgm
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-8, warpins: 2 ---
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-10, warpins: 2 ---
+	slot2 = slot1.bgm
+
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot23.getSceneBgm = slot32
+
+slot32 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.sceneBerserkBgmEnabled
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.berserkCombatBgm
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot2 = slot1.combatBgm
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot2 = "BGM_Normal_Combat01"
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 3 ---
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-14, warpins: 2 ---
+	slot2 = slot1.combatBgm
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-15, warpins: 1 ---
+	slot2 = "BGM_Normal_Combat01"
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 16-16, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot23.getSceneCombatBgm = slot32
+
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.currentSceneId
+
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 7-8, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 9-9, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 10-12, warpins: 2 ---
+	slot3 = slot0.sceneBerserkBgmEnabled
+
+	--- END OF BLOCK #5 ---
+
+	if slot3 == slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 13-13, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 14-22, warpins: 2 ---
+	slot0.sceneBerserkBgmEnabled = slot2
+	slot3 = SceneUtils
+	slot3 = slot3.getMainSceneId
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	slot4 = SceneData
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #7 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 23-23, warpins: 1 ---
+	slot4 = EMPTY_TABLE
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 24-30, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.getSceneCombatBgm
+	slot8 = slot4
+	slot5 = slot5(slot7, slot8)
+	slot0.defaultCombatBgm = slot5
+	--- END OF BLOCK #9 ---
+
+	if slot3 == slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 31-35, warpins: 1 ---
+	slot5 = AudioConst
+	slot5 = slot5.BgmPriority
+	slot5 = slot5.Scene
+	--- END OF BLOCK #10 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 36-38, warpins: 2 ---
+	slot5 = AudioConst
+	slot5 = slot5.BgmPriority
+	slot5 = slot5.SeamlessScene
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 39-50, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.playBgm
+	slot11 = slot0
+	slot9 = slot0.getSceneBgm
+	slot12 = slot4
+	slot9 = slot9(slot11, slot12)
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot0
+	slot6 = slot0.updateCombatBgmState
+
+	slot6(slot8)
+
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot23.setSceneBerserkBgmEnabled = slot32
+
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.resetTimelineClipDisabledAudio
+
+	slot3(slot5)
+
+	slot0.currentSceneId = slot1
+	slot5 = slot0
+	slot3 = slot0.isSceneBerserkBgmEnabled
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot0.sceneBerserkBgmEnabled = slot3
 	slot3 = SceneUtils
 	slot3 = slot3.getMainSceneId
 	slot5 = slot1
@@ -1479,14 +2870,14 @@ slot31 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 9-9, warpins: 1 ---
+	--- BLOCK #1 18-18, warpins: 1 ---
 	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-13, warpins: 2 ---
+	--- BLOCK #2 19-22, warpins: 2 ---
 	slot5 = SceneData
 	slot5 = slot5[slot3]
 	--- END OF BLOCK #2 ---
@@ -1498,14 +2889,14 @@ slot31 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 14-14, warpins: 1 ---
+	--- BLOCK #3 23-23, warpins: 1 ---
 	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-17, warpins: 2 ---
+	--- BLOCK #4 24-26, warpins: 2 ---
 	slot6 = slot4.noBattleMusic
 	--- END OF BLOCK #4 ---
 
@@ -1516,16 +2907,21 @@ slot31 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 18-18, warpins: 1 ---
+	--- BLOCK #5 27-27, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 19-22, warpins: 2 ---
+	--- BLOCK #6 28-36, warpins: 2 ---
 	slot0.disableBattleMusic = slot6
-	slot6 = slot4.combatBgm
+	slot8 = slot0
+	slot6 = slot0.getSceneCombatBgm
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
+	slot0.defaultCombatBgm = slot6
+	slot6 = slot4.exitCombatBgm
 	--- END OF BLOCK #6 ---
 
 	slot6 = if not slot6 then
@@ -1535,16 +2931,16 @@ slot31 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 23-23, warpins: 1 ---
-	slot6 = "BGM_Normal_Combat01"
+	--- BLOCK #7 37-37, warpins: 1 ---
+	slot6 = "BGM_Slience"
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 24-27, warpins: 2 ---
-	slot0.defaultCombatBgm = slot6
-	slot6 = slot4.exitCombatBgm
+	--- BLOCK #8 38-41, warpins: 2 ---
+	slot0.defaultExitCombatBgm = slot6
+	slot6 = slot4.combatBgmResetTime
 	--- END OF BLOCK #8 ---
 
 	slot6 = if not slot6 then
@@ -1554,64 +2950,31 @@ slot31 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 28-28, warpins: 1 ---
-	slot6 = "BGM_Slience"
+	--- BLOCK #9 42-42, warpins: 1 ---
+	slot6 = CombatBgmSilenceTime
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 29-32, warpins: 2 ---
-	slot0.defaultExitCombatBgm = slot6
-	slot6 = slot4.combatBgmResetTime
+	--- BLOCK #10 43-45, warpins: 2 ---
+	slot0.combatBgmResetTime = slot6
 	--- END OF BLOCK #10 ---
 
-	slot6 = if not slot6 then
+	if slot3 ~= slot1 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 33-33, warpins: 1 ---
-	slot6 = CombatBgmSilenceTime
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 34-36, warpins: 2 ---
-	slot0.combatBgmResetTime = slot6
-	--- END OF BLOCK #12 ---
-
-	if slot3 ~= slot1 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #13 37-41, warpins: 1 ---
+	--- BLOCK #11 46-60, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.playBgm
-	slot9 = slot4.bgm
-	--- END OF BLOCK #13 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 42-42, warpins: 1 ---
-	slot9 = nil
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 43-51, warpins: 2 ---
+	slot11 = slot0
+	slot9 = slot0.getSceneBgm
+	slot12 = slot4
+	slot9 = slot9(slot11, slot12)
 	slot10 = AudioConst
 	slot10 = slot10.BgmPriority
 	slot10 = slot10.SeamlessScene
@@ -1621,142 +2984,177 @@ slot31 = function(slot0, slot1, slot2)
 	slot8 = slot0
 	slot6 = slot0.playAmb
 	slot9 = slot4.amb
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #11 ---
 
 	slot9 = if not slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 61-61, warpins: 1 ---
+	slot9 = nil
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 62-66, warpins: 2 ---
+	slot10 = AudioConst
+	slot10 = slot10.BgmPriority
+	slot10 = slot10.SeamlessScene
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 67-80, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.playBgm
+	slot9 = nil
+	slot10 = AudioConst
+	slot10 = slot10.BgmPriority
+	slot10 = slot10.SeamlessScene
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot0
+	slot6 = slot0.playAmb
+	slot9 = nil
+	slot10 = AudioConst
+	slot10 = slot10.BgmPriority
+	slot10 = slot10.SeamlessScene
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 81-83, warpins: 2 ---
+	slot6 = slot5.bgm
+	--- END OF BLOCK #15 ---
+
+	if slot3 == slot1 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 52-52, warpins: 1 ---
-	slot9 = nil
+	--- BLOCK #16 84-88, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.getSceneBgm
+	slot10 = slot5
+	slot7 = slot7(slot9, slot10)
+	slot6 = slot7
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 53-57, warpins: 2 ---
-	slot10 = AudioConst
-	slot10 = slot10.BgmPriority
-	slot10 = slot10.SeamlessScene
+	--- BLOCK #17 89-101, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.playBgm
+	slot10 = slot6
+	slot11 = AudioConst
+	slot11 = slot11.BgmPriority
+	slot11 = slot11.Scene
+	slot12 = true
 
-	slot6(slot8, slot9, slot10)
+	slot7(slot9, slot10, slot11, slot12)
 
+	slot9 = slot0
+	slot7 = slot0.playAmb
+	slot10 = slot5.amb
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #18 58-71, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.playBgm
-	slot9 = nil
-	slot10 = AudioConst
-	slot10 = slot10.BgmPriority
-	slot10 = slot10.SeamlessScene
-
-	slot6(slot8, slot9, slot10)
-
-	slot8 = slot0
-	slot6 = slot0.playAmb
-	slot9 = nil
-	slot10 = AudioConst
-	slot10 = slot10.BgmPriority
-	slot10 = slot10.SeamlessScene
-
-	slot6(slot8, slot9, slot10)
-
+	--- BLOCK #18 102-102, warpins: 1 ---
+	slot10 = nil
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 72-76, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.playBgm
-	slot9 = slot5.bgm
-	--- END OF BLOCK #19 ---
+	--- BLOCK #19 103-127, warpins: 2 ---
+	slot11 = AudioConst
+	slot11 = slot11.BgmPriority
+	slot11 = slot11.Scene
+	slot12 = true
 
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
+	slot7(slot9, slot10, slot11, slot12)
 
+	slot9 = slot0
+	slot7 = slot0.setAuxName
+	slot10 = slot4.reverb
+	slot11 = AudioConst
+	slot11 = slot11.BgmPriority
+	slot11 = slot11.Scene
 
-	--- BLOCK #20 77-77, warpins: 1 ---
-	slot9 = nil
-	--- END OF BLOCK #20 ---
+	slot7(slot9, slot10, slot11)
 
-	FLOW; TARGET BLOCK #21
+	slot7 = slot0.mgrInst
+	slot9 = slot7
+	slot7 = slot7.SetListenerFollowType
+	slot10 = ListenerFollowType
+	slot10 = slot10.Player
 
+	slot7(slot9, slot10)
 
-	--- BLOCK #21 78-87, warpins: 2 ---
-	slot10 = AudioConst
-	slot10 = slot10.BgmPriority
-	slot10 = slot10.Scene
-	slot11 = true
+	slot9 = slot0
+	slot7 = slot0.refreshTimePeriodRTPC
 
-	slot6(slot8, slot9, slot10, slot11)
+	slot7(slot9)
 
-	slot8 = slot0
-	slot6 = slot0.playAmb
-	slot9 = slot5.amb
-	--- END OF BLOCK #21 ---
+	slot9 = slot0
+	slot7 = slot0.refreshDungeonState
 
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 88-88, warpins: 1 ---
-	slot9 = nil
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 89-106, warpins: 2 ---
-	slot10 = AudioConst
-	slot10 = slot10.BgmPriority
-	slot10 = slot10.Scene
-	slot11 = true
-
-	slot6(slot8, slot9, slot10, slot11)
-
-	slot6 = slot0.mgrInst
-	slot8 = slot6
-	slot6 = slot6.SetListenerFollowType
-	slot9 = ListenerFollowType
-	slot9 = slot9.Player
-
-	slot6(slot8, slot9)
-
-	slot8 = slot0
-	slot6 = slot0.refreshTimePeriodRTPC
-
-	slot6(slot8)
-
-	slot8 = slot0
-	slot6 = slot0.refreshDungeonState
-
-	slot6(slot8)
+	slot7(slot9)
 
 	return
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot22.onSceneLoaded = slot31
+slot23.onSceneLoaded = slot32
 
-slot31 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-49, warpins: 1 ---
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.currentSceneId
+	--- END OF BLOCK #0 ---
+
+	if slot3 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = nil
+	slot0.currentSceneId = slot3
+	slot3 = false
+	slot0.sceneBerserkBgmEnabled = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-56, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.resetMapBlockId
 
@@ -1821,18 +3219,18 @@ slot31 = function(slot0, slot1, slot2)
 	slot3.isInDungeon = slot4
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot22.onSceneUnloaded = slot31
+slot23.onSceneUnloaded = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastCheckHateTime
 	slot2 = slot1 - slot2
 	slot3 = checkHateInterval
@@ -1969,9 +3367,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.onTick = slot31
+slot23.onTick = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -2034,9 +3432,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.checkEventValid = slot31
+slot23.checkEventValid = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = nil
 	slot2 = 0
@@ -2090,9 +3488,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.getCurBgmAndMaxPriority = slot31
+slot23.getCurBgmAndMaxPriority = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCurBgmAndMaxPriority
@@ -2319,9 +3717,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.refreshBgm = slot31
+slot23.refreshBgm = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = -999999
 	slot4 = nil
@@ -2434,9 +3832,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.getCurSceneAreaId = slot31
+slot23.getCurSceneAreaId = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -2448,7 +3846,7 @@ slot31 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = ipairs
 	slot4 = slot0.tempBlockAreaIds
 	slot2, slot3, slot4 = slot2(slot4)
@@ -2755,9 +4153,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.updateMapBlockId = slot31
+slot23.updateMapBlockId = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.clear
@@ -2786,9 +4184,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.resetMapBlockId = slot31
+slot23.resetMapBlockId = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = false
 	slot3 = slot0.settingBlockAreaIds
@@ -2891,9 +4289,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.setMapBlockAreaIds = slot31
+slot23.setMapBlockAreaIds = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = nil
 	slot3 = pg
@@ -3032,9 +4430,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.refreshWeatherInfo = slot31
+slot23.refreshWeatherInfo = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshTimePeriodRTPC
@@ -3048,9 +4446,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.onTimePeriodChange = slot31
+slot23.onTimePeriodChange = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.timePeriod
@@ -3097,9 +4495,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.refreshTimePeriodRTPC = slot31
+slot23.refreshTimePeriodRTPC = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = false
 	slot2 = pg
@@ -3136,9 +4534,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.refreshDungeonState = slot31
+slot23.refreshDungeonState = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -3622,72 +5020,110 @@ slot31 = function(slot0)
 
 end
 
-slot22.updateSoundArea = slot31
+slot23.updateSoundArea = slot32
 
-slot31 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = UNITY_IOS
+
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-16, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.audio
-	slot4 = slot2
-	slot2 = slot2.setVolume
-	slot5 = AudioConst
-	slot5 = slot5.VolumeType
-	slot5 = slot5.All
-	slot6 = nil
-	slot7 = AudioConst
-	slot7 = slot7.SetVolumeReason
-	slot7 = slot7.Focus
-
-	slot2(slot4, slot5, slot6, slot7)
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-29, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.audio
-	slot4 = slot2
-	slot2 = slot2.setVolume
-	slot5 = AudioConst
-	slot5 = slot5.VolumeType
-	slot5 = slot5.All
-	slot6 = 0
-	slot7 = AudioConst
-	slot7 = slot7.SetVolumeReason
-	slot7 = slot7.Focus
-
-	slot2(slot4, slot5, slot6, slot7)
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot3 = UNITY_STANDALONE
 
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #3 30-30, warpins: 2 ---
-	return
+	--- BLOCK #3 8-9, warpins: 1 ---
 	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-17, warpins: 3 ---
+	slot3 = not slot1
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot4 = slot4.curPlatform
+	--- END OF BLOCK #5 ---
+
+	if slot4 == "Windows" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 18-20, warpins: 1 ---
+	slot4 = slot0.muteLoseFocusAudio
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 21-21, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-27, warpins: 3 ---
+	slot4 = slot0.mgrInst
+	slot6 = slot4
+	slot4 = slot4.SetWwiseBackgroundMuted
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot22.onAppFocusChanged = slot31
+slot23.onAppFocusChanged = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0.combatBgmState
 	slot5 = slot0.combatBgmState
@@ -3807,9 +5243,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.setCombatBgmInfo = slot31
+slot23.setCombatBgmInfo = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.combatBgmState
 	slot2 = slot1.bossList
@@ -3944,45 +5380,45 @@ slot31 = function(slot0)
 
 end
 
-slot22.checkBossEliteValid = slot31
+slot23.checkBossEliteValid = slot32
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = false
 	slot2, slot3, slot4, slot5 = nil
 	slot6 = false
-	slot7 = slot0.disableBattleMusic
+	slot7 = pg
+	slot7 = slot7.me
 	--- END OF BLOCK #0 ---
 
-	slot7 = if not slot7 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-11, warpins: 1 ---
-	slot7 = next
-	slot9 = slot0.combatBgmState
-	slot9 = slot9.bossList
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.space
 	--- END OF BLOCK #1 ---
 
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot8 = if slot7 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 12-12, warpins: 1 ---
-	slot9 = EMPTY_TABLE
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 13-15, warpins: 2 ---
-	slot7, slot8 = slot7(slot9)
+	--- BLOCK #3 13-15, warpins: 1 ---
+	slot8 = slot7.isNpcDuelActive
 	--- END OF BLOCK #3 ---
 
 	slot8 = if slot8 then
@@ -3992,605 +5428,730 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #4 16-16, warpins: 1 ---
-	slot4 = slot8
+	--- BLOCK #4 16-18, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.isNpcDuelActive
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-21, warpins: 2 ---
-	slot9 = next
-	slot11 = slot0.combatBgmState
-	slot11 = slot11.eliteList
+	--- BLOCK #5 19-21, warpins: 3 ---
+	slot9 = slot0.disableBattleMusic
 	--- END OF BLOCK #5 ---
 
-	slot11 = if not slot11 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #6 22-22, warpins: 1 ---
-	slot11 = EMPTY_TABLE
+	--- BLOCK #6 22-26, warpins: 1 ---
+	slot9 = next
+	slot11 = slot0.combatBgmState
+	slot11 = slot11.bossList
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 23-25, warpins: 2 ---
-	slot9, slot10 = slot9(slot11)
+	--- BLOCK #7 27-27, warpins: 1 ---
+	slot11 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 26-26, warpins: 1 ---
-	slot5 = slot10
+	--- BLOCK #8 28-30, warpins: 2 ---
+	slot9, slot10 = slot9(slot11)
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	slot10 = if slot10 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #9 27-30, warpins: 2 ---
-	slot11 = pg
-	slot11 = slot11.me
+	--- BLOCK #9 31-31, warpins: 1 ---
+	slot4 = slot10
 	--- END OF BLOCK #9 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #34
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 31-37, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.me
-	slot13 = slot11
-	slot11 = slot11.isInCombat
-	slot11 = slot11(slot13)
+	--- BLOCK #10 32-36, warpins: 2 ---
+	slot11 = next
+	slot13 = slot0.combatBgmState
+	slot13 = slot13.eliteList
 	--- END OF BLOCK #10 ---
 
-	slot11 = if not slot11 then
+	slot13 = if not slot13 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 38-39, warpins: 1 ---
+	--- BLOCK #11 37-37, warpins: 1 ---
+	slot13 = EMPTY_TABLE
 	--- END OF BLOCK #11 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 40-41, warpins: 1 ---
+	--- BLOCK #12 38-40, warpins: 2 ---
+	slot11, slot12 = slot11(slot13)
 	--- END OF BLOCK #12 ---
 
-	slot4 = if slot4 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 42-44, warpins: 3 ---
-	slot1 = true
+	--- BLOCK #13 41-41, warpins: 1 ---
+	slot5 = slot12
 	--- END OF BLOCK #13 ---
 
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 42-43, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #15 44-47, warpins: 1 ---
+	slot13 = pg
+	slot13 = slot13.me
+	--- END OF BLOCK #15 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #16 48-54, warpins: 1 ---
+	slot13 = pg
+	slot13 = slot13.me
+	slot15 = slot13
+	slot13 = slot13.isInCombat
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #16 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #17 55-56, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 57-58, warpins: 1 ---
+	--- END OF BLOCK #18 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #19 59-61, warpins: 4 ---
+	slot1 = true
+	--- END OF BLOCK #19 ---
+
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #20 62-67, warpins: 1 ---
+	slot13 = pairs
+	slot15 = pg
+	slot15 = slot15.me
+	slot15 = slot15.behatredMap
+	slot13, slot14, slot15 = slot13(slot15)
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
+
+
+	--- BLOCK #21 68-73, warpins: 1 ---
+	slot18 = pg
+	slot18 = slot18.getEntityByActorId
+	slot20 = slot16
+	slot18 = slot18(slot20)
+	--- END OF BLOCK #21 ---
+
+	slot18 = if slot18 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #22 74-79, warpins: 1 ---
+	slot19 = Utils
+	slot19 = slot19.isBoss
+	slot21 = slot18
+	slot19 = slot19(slot21)
+	--- END OF BLOCK #22 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #23 80-88, warpins: 1 ---
+	slot21 = slot0
+	slot19 = slot0.isNullEvent
+	slot22 = PuppetData
+	slot23 = slot18.templateId
+	slot22 = slot22[slot23]
+	slot22 = slot22.combatBgm
+	slot19 = slot19(slot21, slot22)
+	--- END OF BLOCK #23 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #24 89-90, warpins: 1 ---
+	--- END OF BLOCK #24 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #25
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #14 45-50, warpins: 1 ---
-	slot11 = pairs
-	slot13 = pg
-	slot13 = slot13.me
-	slot13 = slot13.behatredMap
-	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #15 51-56, warpins: 1 ---
-	slot16 = pg
-	slot16 = slot16.getEntityByActorId
-	slot18 = slot14
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #15 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #16 57-62, warpins: 1 ---
-	slot17 = Utils
-	slot17 = slot17.isBoss
-	slot19 = slot16
-	slot17 = slot17(slot19)
-	--- END OF BLOCK #16 ---
-
-	slot17 = if slot17 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #17 63-71, warpins: 1 ---
-	slot19 = slot0
-	slot17 = slot0.isNullEvent
-	slot20 = PuppetData
-	slot21 = slot16.templateId
-	slot20 = slot20[slot21]
-	slot20 = slot20.combatBgm
-	slot17 = slot17(slot19, slot20)
-	--- END OF BLOCK #17 ---
-
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #18 72-73, warpins: 1 ---
-	--- END OF BLOCK #18 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 74-77, warpins: 1 ---
-	slot17 = PuppetData
-	slot18 = slot16.templateId
-	slot17 = slot17[slot18]
-	slot4 = slot17.combatBgm
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 78-78, warpins: 2 ---
-	--- END OF BLOCK #20 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #21 79-84, warpins: 1 ---
-	slot17 = Utils
-	slot17 = slot17.isElite
-	slot19 = slot16
-	slot17 = slot17(slot19)
-	--- END OF BLOCK #21 ---
-
-	slot17 = if slot17 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #22 85-93, warpins: 1 ---
-	slot19 = slot0
-	slot17 = slot0.isNullEvent
-	slot20 = PuppetData
-	slot21 = slot16.templateId
-	slot20 = slot20[slot21]
-	slot20 = slot20.combatBgm
-	slot17 = slot17(slot19, slot20)
-	--- END OF BLOCK #22 ---
-
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #23 94-95, warpins: 1 ---
-	--- END OF BLOCK #23 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #24 96-99, warpins: 1 ---
-	slot17 = PuppetData
-	slot18 = slot16.templateId
-	slot17 = slot17[slot18]
-	slot5 = slot17.combatBgm
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 100-101, warpins: 8 ---
+	--- BLOCK #25 91-94, warpins: 1 ---
+	slot19 = PuppetData
+	slot20 = slot18.templateId
+	slot19 = slot19[slot20]
+	slot4 = slot19.combatBgm
 	--- END OF BLOCK #25 ---
 
-	for slot14, slot15 in slot11, slot12, slot13
-	LOOP BLOCK #15
-	GO OUT TO BLOCK #26
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 102-103, warpins: 2 ---
+	--- BLOCK #26 95-95, warpins: 2 ---
 	--- END OF BLOCK #26 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #27 104-105, warpins: 1 ---
-	slot2 = slot4
+	--- BLOCK #27 96-101, warpins: 1 ---
+	slot19 = Utils
+	slot19 = slot19.isElite
+	slot21 = slot18
+	slot19 = slot19(slot21)
 	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
+	slot19 = if slot19 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #31
+	end
 
 
-	--- BLOCK #28 106-107, warpins: 1 ---
+	--- BLOCK #28 102-110, warpins: 1 ---
+	slot21 = slot0
+	slot19 = slot0.isNullEvent
+	slot22 = PuppetData
+	slot23 = slot18.templateId
+	slot22 = slot22[slot23]
+	slot22 = slot22.combatBgm
+	slot19 = slot19(slot21, slot22)
 	--- END OF BLOCK #28 ---
 
-	slot5 = if slot5 then
+	slot19 = if not slot19 then
 	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #29 108-109, warpins: 1 ---
-	slot2 = slot5
+	--- BLOCK #29 111-112, warpins: 1 ---
 	--- END OF BLOCK #29 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
 
 
-	--- BLOCK #30 110-113, warpins: 1 ---
-	slot6 = true
-	slot11 = slot0.combatBgmAreaId
+	--- BLOCK #30 113-116, warpins: 1 ---
+	slot19 = PuppetData
+	slot20 = slot18.templateId
+	slot19 = slot19[slot20]
+	slot5 = slot19.combatBgm
 	--- END OF BLOCK #30 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #33
-	end
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 114-116, warpins: 1 ---
-	slot11 = slot0.combatBgmAreaId
+	--- BLOCK #31 117-118, warpins: 8 ---
 	--- END OF BLOCK #31 ---
 
-	if slot11 ~= 0 then
-	JUMP TO BLOCK #32
-	else
+	for slot16, slot17 in slot13, slot14, slot15
+	LOOP BLOCK #21
+	GO OUT TO BLOCK #32
+
+
+	--- BLOCK #32 119-120, warpins: 2 ---
+	--- END OF BLOCK #32 ---
+
+	slot8 = if slot8 then
 	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #32 117-125, warpins: 1 ---
-	slot11 = MapBlockConfigData
-	slot12 = slot0.combatBgmAreaId
-	slot11 = slot11[slot12]
-	slot3 = slot11.exitCombatBgm
-	slot11 = MapBlockConfigData
-	slot12 = slot0.combatBgmAreaId
-	slot11 = slot11[slot12]
-	slot2 = slot11.combatBgm
-	--- END OF BLOCK #32 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #33 126-128, warpins: 2 ---
+	--- BLOCK #33 121-124, warpins: 1 ---
+	slot6 = true
 	slot3 = slot0.defaultExitCombatBgm
 	slot2 = slot0.defaultCombatBgm
 	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #34 129-129, warpins: 2 ---
-	slot1 = false
+	--- BLOCK #34 125-126, warpins: 1 ---
 	--- END OF BLOCK #34 ---
 
-	FLOW; TARGET BLOCK #35
+	slot4 = if slot4 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
 
 
-	--- BLOCK #35 130-131, warpins: 6 ---
+	--- BLOCK #35 127-128, warpins: 1 ---
+	slot2 = slot4
 	--- END OF BLOCK #35 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #46
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #36 132-139, warpins: 1 ---
-	slot7 = false
-	slot8 = slot0.combatBgmState
-	slot8 = slot8.curState
-	slot9 = AudioConst
-	slot9 = slot9.BGMCombatState
-	slot9 = slot9.Playing
+	--- BLOCK #36 129-130, warpins: 1 ---
 	--- END OF BLOCK #36 ---
 
-	if slot8 == slot9 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #38
 	end
 
 
-	--- BLOCK #37 140-143, warpins: 1 ---
-	slot8 = slot0.combatBgmState
-	slot8 = slot8.combatBgm
+	--- BLOCK #37 131-132, warpins: 1 ---
+	slot2 = slot5
 	--- END OF BLOCK #37 ---
 
-	if slot8 == slot2 then
-	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #39
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #38 144-144, warpins: 1 ---
-	slot7 = true
+	--- BLOCK #38 133-136, warpins: 1 ---
+	slot6 = true
+	slot13 = slot0.combatBgmAreaId
 	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #39
+	slot13 = if slot13 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #41
+	end
 
 
-	--- BLOCK #39 145-146, warpins: 2 ---
+	--- BLOCK #39 137-139, warpins: 1 ---
+	slot13 = slot0.combatBgmAreaId
 	--- END OF BLOCK #39 ---
 
-	slot7 = if not slot7 then
+	if slot13 ~= 0 then
 	JUMP TO BLOCK #40
 	else
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #40 147-150, warpins: 1 ---
-	slot8 = slot0.combatBgmState
-	slot8 = slot8.exitCombatBgm
+	--- BLOCK #40 140-148, warpins: 1 ---
+	slot13 = MapBlockConfigData
+	slot14 = slot0.combatBgmAreaId
+	slot13 = slot13[slot14]
+	slot3 = slot13.exitCombatBgm
+	slot13 = MapBlockConfigData
+	slot14 = slot0.combatBgmAreaId
+	slot13 = slot13[slot14]
+	slot2 = slot13.combatBgm
 	--- END OF BLOCK #40 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #42
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #41 151-155, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.triggerEvent
-	slot11 = slot0.combatBgmState
-	slot11 = slot11.exitCombatBgm
-
-	slot8(slot10, slot11)
-
+	--- BLOCK #41 149-151, warpins: 2 ---
+	slot3 = slot0.defaultExitCombatBgm
+	slot2 = slot0.defaultCombatBgm
 	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #42
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #42 156-157, warpins: 4 ---
+	--- BLOCK #42 152-152, warpins: 2 ---
+	slot1 = false
 	--- END OF BLOCK #42 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #43
-	else
-	JUMP TO BLOCK #53
-	end
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 158-176, warpins: 1 ---
-	slot8 = slot0.combatBgmState
-	slot9 = AudioConst
-	slot9 = slot9.BGMCombatState
-	slot9 = slot9.Playing
-	slot8.curState = slot9
-	slot8 = slot0.combatBgmState
-	slot9 = true
-	slot8.inCombat = slot9
-	slot8 = slot0.combatBgmState
-	slot9 = Time
-	slot9 = slot9.secondCache
-	slot8.enterCombatTime = slot9
-	slot8 = slot0.combatBgmState
-	slot8.isUseSceneBgm = slot6
-	slot8 = slot0.combatBgmState
-	slot8.combatBgm = slot2
-	slot8 = slot0.combatBgmState
+	--- BLOCK #43 153-154, warpins: 7 ---
 	--- END OF BLOCK #43 ---
 
-	slot9 = if not slot3 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #44 177-177, warpins: 1 ---
-	slot9 = "BGM_Slience"
+	--- BLOCK #44 155-162, warpins: 1 ---
+	slot9 = false
+	slot10 = slot0.combatBgmState
+	slot10 = slot10.curState
+	slot11 = AudioConst
+	slot11 = slot11.BGMCombatState
+	slot11 = slot11.Playing
 	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #45
-
-
-	--- BLOCK #45 178-187, warpins: 2 ---
-	slot8.exitCombatBgm = slot9
-	slot10 = slot0
-	slot8 = slot0.playBgm
-	slot11 = slot0.combatBgmState
-	slot11 = slot11.combatBgm
-	slot12 = AudioConst
-	slot12 = slot12.BgmPriority
-	slot12 = slot12.Combat
-
-	slot8(slot10, slot11, slot12)
-
-	--- END OF BLOCK #45 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #53
-
-
-	--- BLOCK #46 188-194, warpins: 1 ---
-	slot7 = slot0.combatBgmState
-	slot7 = slot7.curState
-	slot8 = AudioConst
-	slot8 = slot8.BGMCombatState
-	slot8 = slot8.Playing
-	--- END OF BLOCK #46 ---
-
-	if slot7 == slot8 then
-	JUMP TO BLOCK #47
+	if slot10 == slot11 then
+	JUMP TO BLOCK #45
 	else
 	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #47 195-210, warpins: 1 ---
-	slot7 = slot0.combatBgmState
-	slot8 = AudioConst
-	slot8 = slot8.BGMCombatState
-	slot8 = slot8.Fading
-	slot7.curState = slot8
-	slot7 = slot0.combatBgmState
-	slot8 = false
-	slot7.inCombat = slot8
-	slot7 = slot0.combatBgmState
-	slot8 = Time
-	slot8 = slot8.secondCache
-	slot7.leaveCombatTime = slot8
-	slot7 = slot0.combatBgmState
-	slot7 = slot7.exitCombatBgm
-	--- END OF BLOCK #47 ---
+	--- BLOCK #45 163-166, warpins: 1 ---
+	slot10 = slot0.combatBgmState
+	slot10 = slot10.combatBgm
+	--- END OF BLOCK #45 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #48
+	if slot10 == slot2 then
+	JUMP TO BLOCK #46
 	else
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #47
 	end
 
 
-	--- BLOCK #48 211-215, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.triggerEvent
+	--- BLOCK #46 167-167, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #46 ---
+
+	FLOW; TARGET BLOCK #47
+
+
+	--- BLOCK #47 168-169, warpins: 2 ---
+	--- END OF BLOCK #47 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #50
+	end
+
+
+	--- BLOCK #48 170-173, warpins: 1 ---
 	slot10 = slot0.combatBgmState
 	slot10 = slot10.exitCombatBgm
-
-	slot7(slot9, slot10)
-
 	--- END OF BLOCK #48 ---
 
-	FLOW; TARGET BLOCK #49
+	slot10 = if slot10 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #50
+	end
 
 
-	--- BLOCK #49 216-223, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.playBgm
-	slot10 = "Empty"
-	slot11 = AudioConst
-	slot11 = slot11.BgmPriority
-	slot11 = slot11.Combat
+	--- BLOCK #49 174-178, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.triggerEvent
+	slot13 = slot0.combatBgmState
+	slot13 = slot13.exitCombatBgm
 
-	slot7(slot9, slot10, slot11)
+	slot10(slot12, slot13)
 
 	--- END OF BLOCK #49 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #53
+	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #50 224-230, warpins: 1 ---
-	slot7 = slot0.combatBgmState
-	slot7 = slot7.curState
-	slot8 = AudioConst
-	slot8 = slot8.BGMCombatState
-	slot8 = slot8.Fading
+	--- BLOCK #50 179-182, warpins: 4 ---
+	slot10 = slot0.combatBgmState
+	slot10.isNpcDuel = slot8
 	--- END OF BLOCK #50 ---
 
-	if slot7 == slot8 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #51
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #63
 	end
 
 
-	--- BLOCK #51 231-238, warpins: 1 ---
-	slot7 = Time
-	slot7 = slot7.secondCache
-	slot8 = slot0.combatBgmState
-	slot8 = slot8.leaveCombatTime
-	slot9 = slot0.combatBgmResetTime
-	slot8 = slot8 + slot9
+	--- BLOCK #51 183-201, warpins: 1 ---
+	slot10 = slot0.combatBgmState
+	slot11 = AudioConst
+	slot11 = slot11.BGMCombatState
+	slot11 = slot11.Playing
+	slot10.curState = slot11
+	slot10 = slot0.combatBgmState
+	slot11 = true
+	slot10.inCombat = slot11
+	slot10 = slot0.combatBgmState
+	slot11 = Time
+	slot11 = slot11.realSecondCache
+	slot10.enterCombatTime = slot11
+	slot10 = slot0.combatBgmState
+	slot10.isUseSceneBgm = slot6
+	slot10 = slot0.combatBgmState
+	slot10.combatBgm = slot2
+	slot10 = slot0.combatBgmState
 	--- END OF BLOCK #51 ---
 
-	if slot7 > slot8 then
+	slot11 = if not slot3 then
 	JUMP TO BLOCK #52
 	else
 	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #52 239-249, warpins: 1 ---
-	slot7 = slot0.combatBgmState
-	slot8 = AudioConst
-	slot8 = slot8.BGMCombatState
-	slot8 = slot8.Stop
-	slot7.curState = slot8
-	slot9 = slot0
-	slot7 = slot0.stopBgm
-	slot10 = AudioConst
-	slot10 = slot10.BgmPriority
-	slot10 = slot10.Combat
-
-	slot7(slot9, slot10)
-
+	--- BLOCK #52 202-202, warpins: 1 ---
+	slot11 = "BGM_Slience"
 	--- END OF BLOCK #52 ---
 
 	FLOW; TARGET BLOCK #53
 
 
-	--- BLOCK #53 250-250, warpins: 6 ---
-	return
+	--- BLOCK #53 203-212, warpins: 2 ---
+	slot10.exitCombatBgm = slot11
+	slot12 = slot0
+	slot10 = slot0.playBgm
+	slot13 = slot0.combatBgmState
+	slot13 = slot13.combatBgm
+	slot14 = AudioConst
+	slot14 = slot14.BgmPriority
+	slot14 = slot14.Combat
+
+	slot10(slot12, slot13, slot14)
+
 	--- END OF BLOCK #53 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
+
+
+	--- BLOCK #54 213-216, warpins: 1 ---
+	slot9 = slot0.combatBgmState
+	slot9 = slot9.isNpcDuel
+	--- END OF BLOCK #54 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #55 217-240, warpins: 1 ---
+	slot9 = slot0.combatBgmState
+	slot10 = AudioConst
+	slot10 = slot10.BGMCombatState
+	slot10 = slot10.Stop
+	slot9.curState = slot10
+	slot9 = slot0.combatBgmState
+	slot10 = false
+	slot9.inCombat = slot10
+	slot9 = slot0.combatBgmState
+	slot10 = nil
+	slot9.isNpcDuel = slot10
+	slot9 = slot0.combatBgmState
+	slot10 = nil
+	slot9.combatBgm = slot10
+	slot9 = slot0.combatBgmState
+	slot10 = nil
+	slot9.exitCombatBgm = slot10
+	slot11 = slot0
+	slot9 = slot0.stopBgm
+	slot12 = AudioConst
+	slot12 = slot12.BgmPriority
+	slot12 = slot12.Combat
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #55 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
+
+
+	--- BLOCK #56 241-247, warpins: 1 ---
+	slot9 = slot0.combatBgmState
+	slot9 = slot9.curState
+	slot10 = AudioConst
+	slot10 = slot10.BGMCombatState
+	slot10 = slot10.Playing
+	--- END OF BLOCK #56 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #60
+	end
+
+
+	--- BLOCK #57 248-263, warpins: 1 ---
+	slot9 = slot0.combatBgmState
+	slot10 = AudioConst
+	slot10 = slot10.BGMCombatState
+	slot10 = slot10.Fading
+	slot9.curState = slot10
+	slot9 = slot0.combatBgmState
+	slot10 = false
+	slot9.inCombat = slot10
+	slot9 = slot0.combatBgmState
+	slot10 = Time
+	slot10 = slot10.realSecondCache
+	slot9.leaveCombatTime = slot10
+	slot9 = slot0.combatBgmState
+	slot9 = slot9.exitCombatBgm
+	--- END OF BLOCK #57 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #58
+	else
+	JUMP TO BLOCK #59
+	end
+
+
+	--- BLOCK #58 264-268, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.triggerEvent
+	slot12 = slot0.combatBgmState
+	slot12 = slot12.exitCombatBgm
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #58 ---
+
+	FLOW; TARGET BLOCK #59
+
+
+	--- BLOCK #59 269-276, warpins: 2 ---
+	slot11 = slot0
+	slot9 = slot0.playBgm
+	slot12 = "Empty"
+	slot13 = AudioConst
+	slot13 = slot13.BgmPriority
+	slot13 = slot13.Combat
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #59 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
+
+
+	--- BLOCK #60 277-283, warpins: 1 ---
+	slot9 = slot0.combatBgmState
+	slot9 = slot9.curState
+	slot10 = AudioConst
+	slot10 = slot10.BGMCombatState
+	slot10 = slot10.Fading
+	--- END OF BLOCK #60 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #61
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #61 284-291, warpins: 1 ---
+	slot9 = Time
+	slot9 = slot9.realSecondCache
+	slot10 = slot0.combatBgmState
+	slot10 = slot10.leaveCombatTime
+	slot11 = slot0.combatBgmResetTime
+	slot10 = slot10 + slot11
+	--- END OF BLOCK #61 ---
+
+	if slot9 > slot10 then
+	JUMP TO BLOCK #62
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #62 292-302, warpins: 1 ---
+	slot9 = slot0.combatBgmState
+	slot10 = AudioConst
+	slot10 = slot10.BGMCombatState
+	slot10 = slot10.Stop
+	slot9.curState = slot10
+	slot11 = slot0
+	slot9 = slot0.stopBgm
+	slot12 = AudioConst
+	slot12 = slot12.BgmPriority
+	slot12 = slot12.Combat
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #62 ---
+
+	FLOW; TARGET BLOCK #63
+
+
+	--- BLOCK #63 303-303, warpins: 7 ---
+	return
+	--- END OF BLOCK #63 ---
 
 
 
 end
 
-slot22.updateCombatBgmState = slot31
+slot23.updateCombatBgmState = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4642,9 +6203,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.setAuxName = slot31
+slot23.setAuxName = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 	slot2 = AudioConst
@@ -4691,9 +6252,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.innerGetAuxName = slot31
+slot23.innerGetAuxName = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 	slot2 = Utils
@@ -4756,9 +6317,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.updateAuxEnvBus = slot31
+slot23.updateAuxEnvBus = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4819,9 +6380,77 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.disableAuxEnvBus = slot31
+slot23.disableAuxEnvBus = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = AudioConst
+	slot3 = slot3.AttenGroupStateReason
+	slot1 = slot3.Default
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-11, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.trySetState
+	slot6 = AudioConst
+	slot6 = slot6.STATE_GROUP_ATTENUATION
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot7 = AudioConst
+	slot7 = slot7.ATTENUATION_STATE_ID_ATTENUATION
+	--- END OF BLOCK #3 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-17, warpins: 2 ---
+	slot7 = AudioConst
+	slot7 = slot7.ATTENUATION_STATE_ID_NORMAL
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-20, warpins: 2 ---
+	slot8 = slot1
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot23.setAttenGroupState = slot32
+
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curAuxEnvBus
 	--- END OF BLOCK #0 ---
@@ -4855,9 +6484,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.innerSetAuxEnvBus = slot31
+slot23.innerSetAuxEnvBus = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4891,9 +6520,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.isEmptyEvent = slot31
+slot23.isEmptyEvent = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4937,9 +6566,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.isNullEvent = slot31
+slot23.isNullEvent = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = AudioConst
 	slot3 = slot3.BgmPriority
@@ -5031,9 +6660,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.getBGMStackBgmStr = slot31
+slot23.getBGMStackBgmStr = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = false
 	slot5 = AudioConst
@@ -5217,9 +6846,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.setBGMStackBgmStr = slot31
+slot23.setBGMStackBgmStr = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getBGMStackBgmStr
@@ -5258,9 +6887,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.checkBGMStackBgmStrSame = slot31
+slot23.checkBGMStackBgmStrSame = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = false
 	--- END OF BLOCK #0 ---
@@ -5445,28 +7074,166 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 	slot0.bgmDirty = slot7
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #16 67-67, warpins: 2 ---
-	slot0.bgmDirty = slot6
-
+	--- BLOCK #16 67-69, warpins: 2 ---
+	slot7 = slot0.bgmDirty
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #17 68-68, warpins: 2 ---
-	return
+	--- BLOCK #17 70-70, warpins: 1 ---
+	slot7 = slot6
 	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 71-71, warpins: 2 ---
+	slot0.bgmDirty = slot7
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 72-72, warpins: 2 ---
+	return
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot22.playBgm = slot31
+slot23.playBgm = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.playBgm
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot6 = ""
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot6 = nil
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-13, warpins: 2 ---
+	slot7 = AudioConst
+	slot7 = slot7.BgmPriority
+	slot7 = slot7.TimelineClip
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 14-17, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.playAmb
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-19, warpins: 1 ---
+	slot6 = ""
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 20-20, warpins: 1 ---
+	slot6 = nil
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-24, warpins: 2 ---
+	slot7 = AudioConst
+	slot7 = slot7.BgmPriority
+	slot7 = slot7.TimelineClip
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-25, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot23.disableBgmByTimelineClip = slot32
+
+slot32 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.playBgm
+	slot4 = nil
+	slot5 = AudioConst
+	slot5 = slot5.BgmPriority
+	slot5 = slot5.TimelineClip
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0.playAmb
+	slot4 = nil
+	slot5 = AudioConst
+	slot5 = slot5.BgmPriority
+	slot5 = slot5.TimelineClip
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.resetTimelineClipDisabledAudio = slot32
+
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5503,9 +7270,9 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.playBgmByLevel = slot31
+slot23.playBgmByLevel = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5539,9 +7306,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.stopBgmByLevel = slot31
+slot23.stopBgmByLevel = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopEvent
@@ -5575,9 +7342,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.forceReplayGameMusic = slot31
+slot23.forceReplayGameMusic = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2, slot3 = nil
 	slot4 = pairs
@@ -5687,9 +7454,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.refreshLevelBgm = slot31
+slot23.refreshLevelBgm = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5725,9 +7492,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.playAmbByLevel = slot31
+slot23.playAmbByLevel = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5761,9 +7528,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.stopAmbByLevel = slot31
+slot23.stopAmbByLevel = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1, slot2 = nil
 	slot3 = pairs
@@ -5828,28 +7595,46 @@ slot31 = function(slot0)
 
 end
 
-slot22.refreshLevelAmb = slot31
+slot23.refreshLevelAmb = slot32
 
-slot31 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setBGMStackBgmStr
 	slot6 = slot1
 	slot7 = nil
 	slot8 = slot2
 	slot3 = slot3(slot5, slot6, slot7, slot8)
-	slot0.bgmDirty = slot3
+	slot4 = slot0.bgmDirty
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	slot4 = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	slot0.bgmDirty = slot4
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot22.stopBgm = slot31
+slot23.stopBgm = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5957,9 +7742,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.playAmb = slot31
+slot23.playAmb = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.ambStack
 	slot2 = slot2[slot1]
@@ -6026,9 +7811,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.stopAmb = slot31
+slot23.stopAmb = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = 0
 	slot2 = nil
@@ -6280,9 +8065,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.refreshAmb = slot31
+slot23.refreshAmb = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.registerEventEntity
 	slot3 = true
@@ -6295,9 +8080,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.registerAudioBgmEventByActorId = slot31
+slot23.registerAudioBgmEventByActorId = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.registerEventEntity
 	slot3 = nil
@@ -6310,9 +8095,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.unregisterAudioBgmEventByActorId = slot31
+slot23.unregisterAudioBgmEventByActorId = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.registerEventInfo
 	slot3[slot1] = slot2
@@ -6324,9 +8109,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.registerAudioBgmEvent = slot31
+slot23.registerAudioBgmEvent = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.registerEventInfo
 	slot3 = nil
@@ -6339,9 +8124,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.unregisterAudioBgmEvent = slot31
+slot23.unregisterAudioBgmEvent = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot0.registerEventEntity
@@ -6424,9 +8209,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22._onAudioBgmEventCallbackGlobal = slot31
+slot23._onAudioBgmEventCallbackGlobal = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = pairs
 	slot6 = slot0.registerEventEntity
@@ -6509,9 +8294,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22._onAudioBgmEventCallback = slot31
+slot23._onAudioBgmEventCallback = slot32
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = pairs
 	slot6 = slot0.registerEventEntity
@@ -6595,9 +8380,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.onSoundEmitterEvent = slot31
+slot23.onSoundEmitterEvent = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = decibel_grade_data
 	slot3 = slot3[slot2]
@@ -6728,9 +8513,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.emitDecibel = slot31
+slot23.emitDecibel = slot32
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = sys_config_data
 	slot3 = slot3.soundImpulseConversion
@@ -6783,9 +8568,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot22.emitPhysicsCollide = slot31
+slot23.emitPhysicsCollide = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.decibelListeners
 	slot3 = slot1.id
@@ -6798,9 +8583,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.registerDecibelListener = slot31
+slot23.registerDecibelListener = slot32
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.decibelListeners
 	slot3 = slot1.id
@@ -6814,9 +8599,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot22.unregisterDecibelListener = slot31
+slot23.unregisterDecibelListener = slot32
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.triggerEvent
@@ -6979,9 +8764,9 @@ slot31 = function(slot0)
 
 end
 
-slot22.testCallback = slot31
+slot23.testCallback = slot32
 
-return slot22
+return slot23
 --- END OF BLOCK #0 ---
 
 

@@ -892,40 +892,70 @@ slot16 = function(slot0, slot1)
 
 		--- END OF BLOCK #3 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-		--- BLOCK #4 34-45, warpins: 1 ---
+		--- BLOCK #4 34-41, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
 		slot0 = slot0.getPetInfo
 		slot3 = petId
 		slot0 = slot0(slot2, slot3)
-		slot1 = slot0.abilityPresetMap
-		slot2 = slot0.curAbilityPreset
-		slot1 = slot1[slot2]
-		slot1 = slot1.name
 		--- END OF BLOCK #4 ---
 
-		slot1 = if slot1 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #5
 		else
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #5 46-47, warpins: 1 ---
+		--- BLOCK #5 42-44, warpins: 1 ---
+		slot1 = slot0.abilityPresetMap
+
 		--- END OF BLOCK #5 ---
 
-		if slot1 ~= "" then
+		slot1 = if not slot1 then
 		JUMP TO BLOCK #6
 		else
 		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #6 48-54, warpins: 1 ---
+		--- BLOCK #6 45-45, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 46-51, warpins: 2 ---
+		slot1 = slot0.abilityPresetMap
+		slot2 = slot0.curAbilityPreset
+		slot1 = slot1[slot2]
+		slot1 = slot1.name
+		--- END OF BLOCK #7 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #8 52-53, warpins: 1 ---
+		--- END OF BLOCK #8 ---
+
+		if slot1 ~= "" then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 54-60, warpins: 1 ---
 		slot2 = ClientTextUtils
 		slot2 = slot2.setText
 		slot4 = self
@@ -934,12 +964,12 @@ slot16 = function(slot0, slot1)
 
 		slot2(slot4, slot5)
 
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #9 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-		--- BLOCK #7 55-67, warpins: 2 ---
+		--- BLOCK #10 61-73, warpins: 2 ---
 		slot2 = ClientTextUtils
 		slot2 = slot2.setText
 		slot4 = self
@@ -955,14 +985,14 @@ slot16 = function(slot0, slot1)
 
 		slot2(slot4, MULTRES)
 
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #10 ---
 
-		FLOW; TARGET BLOCK #8
+		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #8 68-68, warpins: 3 ---
+		--- BLOCK #11 74-74, warpins: 3 ---
 		return
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #11 ---
 
 
 
@@ -1656,7 +1686,6 @@ slot16 = function(slot0, slot1, slot2)
 
 	slot3 = false
 	slot1.enabledTooltip = slot3
-
 	--- END OF BLOCK #0 ---
 
 	slot2 = if not slot2 then
@@ -1666,7 +1695,13 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 15-15, warpins: 1 ---
+	--- BLOCK #1 15-19, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.SetActive
+	slot6 = false
+
+	slot3(slot5, slot6)
+
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1674,7 +1709,13 @@ slot16 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-46, warpins: 2 ---
+	--- BLOCK #2 20-54, warpins: 2 ---
+	slot5 = slot1
+	slot3 = slot1.SetActive
+	slot6 = true
+
+	slot3(slot5, slot6)
+
 	slot5 = slot1
 	slot3 = slot1.TryChangePage
 	slot6 = "State"

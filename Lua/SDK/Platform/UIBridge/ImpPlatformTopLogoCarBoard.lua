@@ -198,7 +198,29 @@ end
 slot0.bindHomeCarBoardName = slot4
 
 slot4 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = PlatformDisplayNameInjector
+	slot3 = slot3.enableRichText
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot5 = slot0.txtName
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot3(slot5)
+
 	slot3 = M
 	slot3 = slot3.bindHomeCarBoardName
 	slot5 = slot0
@@ -206,7 +228,7 @@ slot4 = function(slot0, slot1, slot2)
 	slot7 = slot2
 
 	return slot3(slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 

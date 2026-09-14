@@ -399,21 +399,6 @@ end
 slot13.onLanguageChanged = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.CALL_FRIENDS
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot13.getComponentName = slot14
-
-slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -535,23 +520,94 @@ end
 
 slot13.innerGetVisible = slot14
 
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.entity
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.topLogoData
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.topLogoData
+	slot1 = slot1.ecsWaterTopLogo
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-18, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshEcsTopLogoInfo
+	slot5 = slot1.wetCount
+	slot6 = slot1.totalWetCount
+	slot7 = slot1.percent
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot13.refreshTopLogoInfo = slot14
+
 slot14 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.checkFinalVisible
-	slot4 = slot4(slot6)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot4 = {}
+	slot4.wetCount = slot1
+	slot4.totalWetCount = slot2
+	slot4.percent = slot3
+	slot0.m_cbCacheCallFriendsInfo = slot4
+	slot4 = slot0.topLogoItem
 	--- END OF BLOCK #0 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.checkContainerLoaded
+	--- BLOCK #1 9-14, warpins: 1 ---
+	slot4 = slot0.topLogoItem
+	slot6 = slot4
+	slot4 = slot4.isTopLogoPrefabReady
 	slot4 = slot4(slot6)
 	--- END OF BLOCK #1 ---
 
@@ -562,44 +618,76 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 11-20, warpins: 1 ---
+	--- BLOCK #2 15-17, warpins: 1 ---
 	slot6 = slot0
-	slot4 = slot0.updateWaterProgress
-	slot7 = slot1
-	slot8 = slot2
-
-	slot4(slot6, slot7, slot8)
-
-	slot6 = slot0
-	slot4 = slot0.updateCountDown
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
+	slot4 = slot0.innerGetVisible
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 21-28, warpins: 1 ---
-	slot4 = {}
-	slot4.wetCount = slot1
-	slot4.totalWetCount = slot2
-	slot4.percent = slot3
-	slot0.m_cbCacheCallFriendsInfo = slot4
-	slot4 = slot0.m_loadedCallFriendsCallBack
-
+	--- BLOCK #3 18-22, warpins: 3 ---
+	slot7 = slot0
+	slot5 = slot0.checkFinalVisible
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #3 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 29-30, warpins: 1 ---
-	slot4 = function(slot0)
+	--- BLOCK #4 23-24, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 25-29, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.checkContainerLoaded
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-33, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.m_refreshTplCallFriends
+
+	slot5(slot7)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #7 34-36, warpins: 1 ---
+	slot5 = slot0.m_loadedCallFriendsCallBack
+
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 37-38, warpins: 1 ---
+	slot5 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -630,30 +718,30 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot0.m_loadedCallFriendsCallBack = slot4
-	--- END OF BLOCK #4 ---
+	slot0.m_loadedCallFriendsCallBack = slot5
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 31-37, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.checkAndLoadUContainerUrlSupportAsync
-	slot7 = slot0.m_loadedCallFriendsCallBack
-	slot8 = TopLogoConst
-	slot8 = slot8.REF_CONTAINER_LOADED_CALLBACK_GROUP
-	slot8 = slot8.CB_FUNC1
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 38-39, warpins: 3 ---
+	--- BLOCK #9 39-45, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.checkAndLoadUContainerUrlSupportAsync
+	slot8 = slot0.m_loadedCallFriendsCallBack
+	slot9 = TopLogoConst
+	slot9 = slot9.REF_CONTAINER_LOADED_CALLBACK_GROUP
+	slot9 = slot9.CB_FUNC1
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 46-47, warpins: 3 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #10 ---
 
 
 

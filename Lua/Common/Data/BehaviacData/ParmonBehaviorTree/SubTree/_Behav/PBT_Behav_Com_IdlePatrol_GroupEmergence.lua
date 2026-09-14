@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 15,
 	useForRoute = false,
+	version = 15,
 	agenttype = "WxAgent",
 	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_IdlePatrol_GroupEmergence"
 }
@@ -16,15 +16,15 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "tNoIdleSpProb",
 	const = 0,
 	value = "0",
-	name = "tNoIdleSpProb",
 	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "Slow",
 	name = "SpeedRateType",
+	value = "Slow",
 	type = "SpeedRateType"
 }
 slot6 = slot0.SpeedRateType
@@ -32,15 +32,15 @@ slot6 = slot6.Slow
 slot5.const = slot6
 slot4[2] = slot5
 slot5 = {
+	name = "Speed",
 	const = 1,
 	value = "1",
-	name = "Speed",
 	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
-	value = "0:",
 	name = "tBornPos",
+	value = "0:",
 	type = "vector<float>"
 }
 slot6 = {}

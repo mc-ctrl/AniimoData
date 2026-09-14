@@ -1,97 +1,157 @@
---- BLOCK #0 1-87, warpins: 1 ---
+--- BLOCK #0 1-95, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "GrabEggsTalentCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "GrabEggsTalentCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.UICtrl"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.UIConst"
+slot6 = "Guis.UICtrl"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Const.UIConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.RedDotConst"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.ItemConst"
+slot9 = "Const.RedDotConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.LuaUIUtils"
+slot10 = "Common.Const.ItemConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Core.Timer.TimerManager"
+slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
-slot10 = {
+slot10 = require
+slot12 = "Utils.LuaUIUtils"
+slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Core.Timer.TimerManager"
+slot11 = slot11(slot13)
+slot12 = {
 	unlocked = 3,
 	["disabled-broadcast"] = 2,
 	["unlocked-FX"] = 1,
 	unlockable = 0,
 	locked = 0
 }
-slot11 = {
-	left = "LeftLine",
+slot13 = {
 	right = "RightLine",
+	left = "LeftLine",
 	mid = "MidLine"
 }
-slot12 = {
+slot14 = {
+	["disabled-broadcast"] = 1,
 	unlocked = 2,
 	unlockable = 0,
-	locked = 1,
-	["disabled-broadcast"] = 1
+	locked = 1
 }
-slot13 = {
-	TITLE_NAME = "GRAB_EGG_TALENT_TITLE",
+slot15 = {
 	PROGRESS = "GRAB_EGG_TALENT_PROGRESS",
-	UNLOCKED = "GRAB_EGG_TALENT_UNLOCKED",
-	BROADCAST = "GRAB_EGG_TALENT_UNAVAILABLE",
-	UNLOCK_PRENODE = "GRAB_EGG_TALENT_UNLOCK_PRENODE",
-	FAIL_REASON_STATE = "GRAB_EGG_TALENT_FAIL_REASON_STATE",
-	UNLOCK = "GRAB_EGG_TALENT_UNLOCK",
-	FAIL_REASON_ITEM = "GRAB_EGG_TALENT_FAIL_REASON_ITEM",
 	UNLOCK_COST = "GRAB_EGG_TALENT_UNLOCK_COST",
-	FAIL_REASON_COIN = "GRAB_EGG_TALENT_FAIL_REASON_COIN",
+	BROADCAST = "GRAB_EGG_TALENT_UNAVAILABLE",
 	TALENT_TREE_THREE = "GRAB_EGG_TALENT_RIGHTTITLE",
+	FAIL_REASON_STATE = "GRAB_EGG_TALENT_FAIL_REASON_STATE",
 	TALENT_TREE_TWO = "GRAB_EGG_TALENT_MIDTITLE",
-	TALENT_TREE_ONE = "GRAB_EGG_TALENT_LEFTTITLE"
+	FAIL_REASON_ITEM = "GRAB_EGG_TALENT_FAIL_REASON_ITEM",
+	TALENT_TREE_ONE = "GRAB_EGG_TALENT_LEFTTITLE",
+	FAIL_REASON_COIN = "GRAB_EGG_TALENT_FAIL_REASON_COIN",
+	TITLE_NAME = "GRAB_EGG_TALENT_TITLE",
+	UNLOCKED = "GRAB_EGG_TALENT_UNLOCKED",
+	UNLOCK_PRENODE = "GRAB_EGG_TALENT_UNLOCK_PRENODE",
+	UNLOCK = "GRAB_EGG_TALENT_UNLOCK"
 }
-slot14 = 32
-slot15 = slot2.LightClass
-slot17 = "GrabEggsTalentCtrl"
-slot18 = slot3
-slot15 = slot15(slot17, slot18)
-slot16 = {}
-slot17 = slot1.GRAB_EGG_TALENT_UNLOCKED
-slot18 = {
+slot16 = 32
+slot17 = slot3.LightClass
+slot19 = "GrabEggsTalentCtrl"
+slot20 = slot4
+slot17 = slot17(slot19, slot20)
+slot18 = {}
+slot19 = slot2.GRAB_EGG_TALENT_UNLOCKED
+slot20 = {
 	"refreshUI",
 	true
 }
-slot16[slot17] = slot18
-slot17 = slot1.MONEY_COUNT_CHANGE
-slot18 = {
+slot18[slot19] = slot20
+slot19 = slot2.MONEY_COUNT_CHANGE
+slot20 = {
 	"refreshUI",
 	true
 }
-slot16[slot17] = slot18
-slot17 = slot1.ITEM_COUNT_MAP_CHANGE
-slot18 = {
+slot18[slot19] = slot20
+slot19 = slot2.ITEM_COUNT_MAP_CHANGE
+slot20 = {
 	"refreshUI",
 	true
 }
-slot16[slot17] = slot18
-slot15.messages = slot16
+slot18[slot19] = slot20
+slot17.messages = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.grabEgg_isTalentEntryUnlocked
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-17, warpins: 2 ---
+	slot1 = false
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "GRAB_EGG_TALENT_ENTRY_LOCKED_TIP"
+	MULTRES = slot2(slot4)
+
+	return slot1, MULTRES
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 18-19, warpins: 2 ---
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot17.checkOpenExtra = slot18
+
+slot18 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshAll
@@ -116,9 +176,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshUI = slot16
+slot17.refreshUI = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -145,9 +205,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15._setConsoleBarCheck = slot16
+slot17._setConsoleBarCheck = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -201,9 +261,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.onCreate = slot16
+slot17.onCreate = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._focusTalentId
 	--- END OF BLOCK #0 ---
@@ -400,9 +460,9 @@ slot16 = function(slot0)
 
 end
 
-slot15._tryFocusTalent = slot16
+slot17._tryFocusTalent = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._setConsoleBarCheck
@@ -417,10 +477,10 @@ slot16 = function(slot0)
 
 end
 
-slot15.InitUI = slot16
+slot17.InitUI = slot18
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot18 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
 
@@ -440,6 +500,53 @@ slot16 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnInfoUButton
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-16, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnInfoUButton
+	slot2 = false
+	slot1.enabledTooltip = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnInfoUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.openRogPopTips
+		slot3 = Const
+		slot3 = slot3.COMMON_POPUP_TIP_ID
+		slot3 = slot3.GRAB_EGG_TALENT_INFO
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 17-38, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.bindCloseButton
 
@@ -485,15 +592,15 @@ slot16 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot15.addListener = slot16
+slot17.addListener = slot18
 
-slot16 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -678,9 +785,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15.renderTalentItem = slot16
+slot17.renderTalentItem = slot18
 
-slot16 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0.model
 	slot5 = slot3
@@ -805,9 +912,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15.renderThreeLine = slot16
+slot17.renderThreeLine = slot18
 
-slot16 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.TryChangePage
@@ -1076,9 +1183,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15.renderSlotItem = slot16
+slot17.renderSlotItem = slot18
 
-slot16 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1512,7 +1619,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #17 185-185, warpins: 1 ---
-	slot15 = {}
+	slot15 = EMPTY_TABLE
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
@@ -1527,8 +1634,8 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #19 188-193, warpins: 1 ---
 	slot18 = {
-		sortingOrder = 30001,
-		hierarchyMode = 1
+		hierarchyMode = 1,
+		sortingOrder = 30001
 	}
 	slot19 = slot17[1]
 	slot18.id = slot19
@@ -1648,9 +1755,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15.renderTooltip = slot16
+slot17.renderTooltip = slot18
 
-slot16 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -1724,9 +1831,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15._openTooltipCostItemTip = slot16
+slot17._openTooltipCostItemTip = slot18
 
-slot16 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot2.state
 	--- END OF BLOCK #0 ---
@@ -1949,9 +2056,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15._renderTooltipBtn = slot16
+slot17._renderTooltipBtn = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -2191,9 +2298,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshAll = slot16
+slot17.refreshAll = slot18
 
-slot16 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -2338,9 +2445,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15.renderCurrencyItem = slot16
+slot17.renderCurrencyItem = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.selectedSlotItem
 	--- END OF BLOCK #0 ---
@@ -2384,9 +2491,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshConsoleBarState = slot16
+slot17.refreshConsoleBarState = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -2411,9 +2518,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onDestroy = slot16
+slot17.onDestroy = slot18
 
-return slot15
+return slot17
 --- END OF BLOCK #0 ---
 
 

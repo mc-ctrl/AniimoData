@@ -830,25 +830,55 @@ slot15 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #1 7-10, warpins: 1 ---
+	slot1 = slot0.owner
+	slot1 = slot1.startTTL
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-19, warpins: 1 ---
+	slot1 = slot0.owner
+	slot1 = slot1.logger
+	slot3 = slot1
+	slot1 = slot1.error
+	slot4 = "GateClient:onConfirmEncryptKeyAck: owner.startTTL is not found, owner=%s"
+	slot5 = slot0.owner
+	slot5 = slot5.className
+
+	slot1(slot3, slot4, slot5)
+
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-23, warpins: 2 ---
 	slot1 = slot0.owner
 	slot3 = slot1
 	slot1 = slot1.startTTL
 
 	slot1(slot3)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 11-11, warpins: 2 ---
+	--- BLOCK #4 24-24, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 

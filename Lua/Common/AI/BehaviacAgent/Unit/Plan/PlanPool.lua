@@ -1,4 +1,4 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-46, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.AiConst"
 slot0 = slot0(slot2)
@@ -250,6 +250,46 @@ slot4 = function(slot0)
 end
 
 slot1.returnPlan = slot4
+
+slot4 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pairs
+	slot2 = availablePlans
+	slot0, slot1, slot2 = slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot5 = table
+	slot5 = slot5.clear
+	slot7 = slot4
+
+	slot5(slot7)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot3, slot4 in slot0, slot1, slot2
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 1 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot1.clear = slot4
 
 return slot1
 --- END OF BLOCK #0 ---

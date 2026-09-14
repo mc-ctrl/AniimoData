@@ -1,77 +1,80 @@
---- BLOCK #0 1-117, warpins: 1 ---
+--- BLOCK #0 1-120, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "PetDispatchTaskCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "PetDispatchTaskCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UICtrl"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.UIConst"
+slot5 = "Guis.UICtrl"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.MessageName"
+slot6 = "Const.UIConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.LuaUIUtils"
+slot7 = "Const.MessageName"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientTextUtils"
+slot8 = "Utils.LuaUIUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.ActivityConst"
+slot9 = "Utils.ClientTextUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.ActivityUtils"
+slot10 = "Common.Const.ActivityConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Utils.Utils"
+slot11 = "Common.Utils.ActivityUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Core.Common.Time"
+slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Timer.TimerManager"
+slot13 = "Core.Common.Time"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.sys_config_data"
+slot14 = "Core.Timer.TimerManager"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.event_task_data"
+slot15 = "Data.sys_config_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "GameApp.PetDispatch.PetDispatchUtils"
+slot16 = "Data.event_task_data"
 slot14 = slot14(slot16)
-slot15 = {
+slot15 = require
+slot17 = "GameApp.PetDispatch.PetDispatchUtils"
+slot15 = slot15(slot17)
+slot16 = {
+	S = 2,
 	A = 1,
-	B = 0,
-	S = 2
+	B = 0
 }
-slot16 = slot1.LightClass
-slot18 = "PetDispatchTaskCtrl"
-slot19 = slot2
-slot16 = slot16(slot18, slot19)
-slot17 = {}
-slot18 = slot4.EVENT_CUR_PAGE_REFRESH
-slot19 = {
+slot17 = slot2.LightClass
+slot19 = "PetDispatchTaskCtrl"
+slot20 = slot3
+slot17 = slot17(slot19, slot20)
+slot18 = {}
+slot19 = slot5.EVENT_CUR_PAGE_REFRESH
+slot20 = {
 	"refreshUI",
 	true
 }
-slot17[slot18] = slot19
-slot18 = slot4.EVENT_TASK_STATE_CHANGE
-slot19 = {
+slot18[slot19] = slot20
+slot19 = slot5.EVENT_TASK_STATE_CHANGE
+slot20 = {
 	"refreshUI",
 	true
 }
-slot17[slot18] = slot19
-slot16.messages = slot17
+slot18[slot19] = slot20
+slot17.messages = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -87,9 +90,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.onCreate = slot17
+slot17.onCreate = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -125,9 +128,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.onOpen = slot17
+slot17.onOpen = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._clearCountDownFormatTimer
@@ -147,9 +150,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onDestroy = slot17
+slot17.onDestroy = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._countDownFmtTimer
 	--- END OF BLOCK #0 ---
@@ -184,9 +187,9 @@ slot17 = function(slot0)
 
 end
 
-slot16._clearCountDownFormatTimer = slot17
+slot17._clearCountDownFormatTimer = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
@@ -615,9 +618,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.addListener = slot17
+slot17.addListener = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -662,9 +665,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshUI = slot17
+slot17.refreshUI = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshTeamSlots
@@ -693,9 +696,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshAfterTeamChange = slot17
+slot17.refreshAfterTeamChange = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.clueId
@@ -1155,9 +1158,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshExtraReward = slot17
+slot17.refreshExtraReward = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listPossiblyUList
@@ -1245,7 +1248,7 @@ slot17 = function(slot0)
 
 
 	--- BLOCK #7 36-36, warpins: 1 ---
-	slot12 = {}
+	slot12 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -1299,9 +1302,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshPossiblyReward = slot17
+slot17.refreshPossiblyReward = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listLeaderUList
@@ -1411,9 +1414,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshTeamSlots = slot17
+slot17.refreshTeamSlots = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1515,9 +1518,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.buildSlotData = slot17
+slot17.buildSlotData = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.model
 	slot2 = slot2.clueId
@@ -1601,9 +1604,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16._calcSlotMatchCount = slot17
+slot17._calcSlotMatchCount = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3, slot4)
+slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1967,9 +1970,9 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot16.renderTeamSlot = slot17
+slot17.renderTeamSlot = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.clueId
@@ -2133,9 +2136,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshHeader = slot17
+slot17.refreshHeader = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.countDownUCountDown
@@ -2557,9 +2560,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshCountDown = slot17
+slot17.refreshCountDown = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._clearCountDownFormatTimer
@@ -2631,7 +2634,7 @@ slot17 = function(slot0, slot1)
 
 	--- BLOCK #5 33-43, warpins: 1 ---
 	slot8 = ClientTextUtils
-	slot8 = slot8.concatByLanguage
+	slot8 = slot8.concatCountDownUnitsByLanguage
 	slot10 = "{1}"
 	slot11 = slot3
 	slot12 = "{2}"
@@ -2658,7 +2661,7 @@ slot17 = function(slot0, slot1)
 
 	--- BLOCK #7 47-57, warpins: 1 ---
 	slot8 = ClientTextUtils
-	slot8 = slot8.concatByLanguage
+	slot8 = slot8.concatCountDownUnitsByLanguage
 	slot10 = "{2}"
 	slot11 = slot4
 	slot12 = "{3}"
@@ -2674,7 +2677,7 @@ slot17 = function(slot0, slot1)
 
 	--- BLOCK #8 58-63, warpins: 1 ---
 	slot8 = ClientTextUtils
-	slot8 = slot8.concatByLanguage
+	slot8 = slot8.concatCountDownUnitsByLanguage
 	slot10 = "{3}"
 	slot11 = slot5
 	slot8 = slot8(slot10, slot11)
@@ -2792,9 +2795,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16._applyDispatchingCountDown = slot17
+slot17._applyDispatchingCountDown = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.taskState
@@ -3155,9 +3158,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshMainAction = slot17
+slot17.refreshMainAction = slot18
 
-slot17 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot3 = slot0.model
 	slot3.selectMode = slot1
@@ -3239,9 +3242,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot16.openPetPick = slot17
+slot17.openPetPick = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.model
@@ -3295,9 +3298,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.getCurrentTeamSlots = slot17
+slot17.getCurrentTeamSlots = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3331,7 +3334,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #3 12-12, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -3374,9 +3377,9 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.onPetPicked = slot17
+slot17.onPetPicked = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.model
@@ -3450,9 +3453,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.getCurrentTeamIds = slot17
+slot17.getCurrentTeamIds = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.taskState
@@ -3727,7 +3730,7 @@ slot17 = function(slot0)
 
 
 	--- BLOCK #23 105-105, warpins: 1 ---
-	slot10 = {}
+	slot10 = EMPTY_TABLE
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
@@ -3770,9 +3773,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onClickAutoChoose = slot17
+slot17.onClickAutoChoose = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4, slot5 = nil
 	slot6 = ipairs
@@ -3854,9 +3857,9 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16._pickAutoLeader = slot17
+slot17._pickAutoLeader = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = ActivityConst
 	slot4 = slot4.PetDispatchPetMaxNum
@@ -4138,9 +4141,9 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16._pickAutoFollowers = slot17
+slot17._pickAutoFollowers = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = {}
 	slot4[1] = slot1
@@ -4184,9 +4187,9 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16._teamRating = slot17
+slot17._teamRating = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.taskState
@@ -4253,7 +4256,7 @@ slot17 = function(slot0)
 
 
 	--- BLOCK #4 35-35, warpins: 1 ---
-	slot2 = slot1.eventEndDayTime
+	slot2 = slot1.tabEndDayTime
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -4397,8 +4400,13 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #15 99-101, warpins: 1 ---
-	slot4 = slot3.isGoldAdveRewarded
+	--- BLOCK #15 99-106, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.hasPetGoldAdveRewarded
+	slot7 = slot3.id
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #15 ---
 
 	slot4 = if slot4 then
@@ -4408,7 +4416,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #16 102-124, warpins: 1 ---
+	--- BLOCK #16 107-129, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.ui
@@ -4465,7 +4473,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 125-137, warpins: 3 ---
+	--- BLOCK #17 130-142, warpins: 3 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot6 = slot4
@@ -4485,7 +4493,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #18 138-144, warpins: 1 ---
+	--- BLOCK #18 143-149, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.taskState
 	slot2 = ActivityConst
@@ -4500,7 +4508,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #19 145-166, warpins: 1 ---
+	--- BLOCK #19 150-171, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -4551,7 +4559,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #20 167-173, warpins: 1 ---
+	--- BLOCK #20 172-178, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.taskState
 	slot2 = ActivityConst
@@ -4566,7 +4574,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #21 174-182, warpins: 1 ---
+	--- BLOCK #21 179-187, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -4583,21 +4591,21 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 183-184, warpins: 4 ---
+	--- BLOCK #22 188-189, warpins: 4 ---
 	return
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 185-185, warpins: 2 ---
+	--- BLOCK #23 190-190, warpins: 2 ---
 	return
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 186-186, warpins: 2 ---
+	--- BLOCK #24 191-191, warpins: 2 ---
 	return
 	--- END OF BLOCK #24 ---
 
@@ -4605,9 +4613,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onMainAction = slot17
+slot17.onMainAction = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.selectedLeaderId
@@ -4669,9 +4677,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.canDispatch = slot17
+slot17.canDispatch = slot18
 
-return slot16
+return slot17
 --- END OF BLOCK #0 ---
 
 

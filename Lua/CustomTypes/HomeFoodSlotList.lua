@@ -1,34 +1,37 @@
---- BLOCK #0 1-72, warpins: 1 ---
+--- BLOCK #0 1-75, warpins: 1 ---
 slot0 = require
-slot2 = "Core.PropertySync.CustomList"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.PropertySync.CustomList"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.Time"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.NoticeDef"
+slot5 = "Core.Common.Time"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.TimeUtils"
+slot6 = "Common.NoticeDef"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.TriggerConst"
+slot7 = "Common.Utils.TimeUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.pet_data"
+slot8 = "Common.Const.TriggerConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.item_data"
+slot9 = "Data.pet_data"
 slot7 = slot7(slot9)
-slot8 = slot1.LiteClass
-slot10 = "HomeFoodSlotList"
-slot11 = slot0
-slot8 = slot8(slot10, slot11)
+slot8 = require
+slot10 = "Data.item_data"
+slot8 = slot8(slot10)
+slot9 = slot2.LiteClass
+slot11 = "HomeFoodSlotList"
+slot12 = slot1
+slot9 = slot9(slot11, slot12)
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = ItemData
 	slot4 = slot4[slot2]
@@ -179,9 +182,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.checkOpAddItem = slot9
+slot9.checkOpAddItem = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.checkOpAddItem
@@ -348,9 +351,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.opAddItem = slot9
+slot9.opAddItem = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0[slot2]
 	--- END OF BLOCK #0 ---
@@ -407,9 +410,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.checkOpClearSlot = slot9
+slot9.checkOpClearSlot = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.checkOpClearSlot
@@ -531,7 +534,7 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #8 57-57, warpins: 1 ---
-	slot11 = {}
+	slot11 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -580,9 +583,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.opClearSlot = slot9
+slot9.opClearSlot = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot2
 	slot4 = {}
@@ -700,9 +703,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.calcAddItemInsertInfos = slot9
+slot9.calcAddItemInsertInfos = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -817,9 +820,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.getPayBackItems = slot9
+slot9.getPayBackItems = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getPayBackItems
@@ -875,9 +878,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.payBackSlotItems = slot9
+slot9.payBackSlotItems = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getTotalFood
@@ -898,9 +901,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.getEstimatedEndTs = slot9
+slot9.getEstimatedEndTs = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.foodSlotCurSpeed
 	--- END OF BLOCK #0 ---
@@ -928,9 +931,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.getCurSpeed = slot9
+slot9.getCurSpeed = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = 0
 	slot3 = ipairs
@@ -1003,9 +1006,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.getTotalFood = slot9
+slot9.getTotalFood = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0[1]
 	--- END OF BLOCK #0 ---
@@ -1080,9 +1083,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getSettlingItemFoodNum = slot9
+slot9.getSettlingItemFoodNum = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot1.foodSlotNextRefreshTs
 	slot4 = 0
@@ -1145,26 +1148,30 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 25-33, warpins: 2 ---
+	--- BLOCK #5 25-37, warpins: 2 ---
 	slot4 = slot4(slot6, slot7)
 	slot3 = slot4
 	slot4 = math
-	slot4 = slot4.max
-	slot6 = 0
-	slot7 = Time
-	slot7 = slot7.secondCache
-	slot7 = slot7 - slot3
+	slot4 = slot4.min
+	slot6 = Time
+	slot6 = slot6.secondCache
+	slot7 = slot1.foodSlotNextRefreshTs
+	slot4 = slot4(slot6, slot7)
+	slot5 = math
+	slot5 = slot5.max
+	slot7 = 0
+	slot8 = slot4 - slot3
 
-	return slot4(slot6, slot7)
+	return slot5(slot7, slot8)
 	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot8.getCurSettledSeconds = slot9
+slot9.getCurSettledSeconds = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getSettlingItemFoodNum
@@ -1182,9 +1189,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.getCurSettledFood = slot9
+slot9.getCurSettledFood = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.foodSlotNextRefreshTs
 	slot3 = 0
@@ -1258,9 +1265,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.getCurRemainingFood = slot9
+slot9.getCurRemainingFood = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.foodSlotNextRefreshTs
 	slot3 = 0
@@ -1296,9 +1303,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.isWorking = slot9
+slot9.isWorking = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = 0
 	slot3 = pairs
@@ -1364,9 +1371,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8._calcFoodCostSpeed = slot9
+slot9._calcFoodCostSpeed = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0[1]
 	--- END OF BLOCK #0 ---
@@ -1456,9 +1463,9 @@ slot9 = function(slot0)
 
 end
 
-slot8._consumeItem = slot9
+slot9._consumeItem = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1543,9 +1550,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.repr = slot9
+slot9.repr = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.foodSlotNextRefreshTs
 	slot3 = 0
@@ -1593,9 +1600,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.pauseWorking = slot9
+slot9.pauseWorking = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._calcFoodCostSpeed
@@ -1712,9 +1719,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.resumeWorking = slot9
+slot9.resumeWorking = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot1.foodSlotNextRefreshTs
 	slot4 = 0
@@ -1723,7 +1730,7 @@ slot9 = function(slot0, slot1, slot2)
 	if slot3 > slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #23
 	end
 
 
@@ -1741,44 +1748,42 @@ slot9 = function(slot0, slot1, slot2)
 	if slot5 <= slot4 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #2 15-19, warpins: 1 ---
-	slot4 = Time
-	slot4 = slot4.secondCache
+	--- BLOCK #2 15-16, warpins: 1 ---
+	slot4 = slot1.foodSlotCurSpeed
 	slot5 = slot1.foodSlotNextRefreshTs
-	slot4 = slot4 - slot5
-	slot5 = slot1.foodSlotCurSpeed
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-22, warpins: 3 ---
-	slot6 = 0
+	--- BLOCK #3 17-20, warpins: 6 ---
+	slot6 = Time
+	slot6 = slot6.secondCache
 	--- END OF BLOCK #3 ---
 
-	if slot4 > slot6 then
+	if slot5 <= slot6 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #4 23-25, warpins: 1 ---
+	--- BLOCK #4 21-23, warpins: 1 ---
 	slot6 = slot0[1]
 	--- END OF BLOCK #4 ---
 
 	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #5 26-31, warpins: 1 ---
+	--- BLOCK #5 24-29, warpins: 1 ---
 	slot6 = slot0[1]
 	slot8 = slot6
 	slot6 = slot6.isEmpty
@@ -1788,17 +1793,17 @@ slot9 = function(slot0, slot1, slot2)
 	slot6 = if not slot6 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #6 32-32, warpins: 1 ---
+	--- BLOCK #6 30-30, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 33-37, warpins: 1 ---
+	--- BLOCK #7 31-35, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0._consumeItem
 	slot6 = slot6(slot8)
@@ -1807,11 +1812,11 @@ slot9 = function(slot0, slot1, slot2)
 	slot6 = if slot6 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #8 38-43, warpins: 1 ---
+	--- BLOCK #8 36-41, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.getSettlingItemFoodNum
 	slot6 = slot6(slot8)
@@ -1821,49 +1826,117 @@ slot9 = function(slot0, slot1, slot2)
 	if slot6 > slot7 then
 	JUMP TO BLOCK #9
 	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #9 42-49, warpins: 1 ---
+	slot7 = slot6 * 60
+	slot7 = slot7 / slot4
+	slot7 = slot5 + slot7
+	slot8 = math
+	slot8 = slot8.max
+	slot10 = slot5
+	--- END OF BLOCK #9 ---
+
+	slot11 = if not slot2 then
+	JUMP TO BLOCK #10
+	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 44-55, warpins: 1 ---
-	slot1.foodSlotCurSpeed = slot5
-	slot7 = Time
-	slot7 = slot7.secondCache
-	slot8 = math
-	slot8 = slot8.round
-	slot10 = slot6 * 60
-	slot10 = slot10 / slot5
-	slot8 = slot8(slot10)
-	slot7 = slot7 + slot8
-	slot1.foodSlotNextRefreshTs = slot7
-	--- END OF BLOCK #9 ---
+	--- BLOCK #10 50-50, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #10 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #10
-	else
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 51-68, warpins: 2 ---
+	slot8 = slot8(slot10, slot11)
+	slot9 = math
+	slot9 = slot9.max
+	slot11 = 0
+	slot12 = math
+	slot12 = slot12.min
+	slot14 = Time
+	slot14 = slot14.secondCache
+	slot15 = slot7
+	slot12 = slot12(slot14, slot15)
+	slot12 = slot12 - slot8
+	slot9 = slot9(slot11, slot12)
+	slot3 = slot3 + slot9
+	slot5 = slot7
+	slot9 = Time
+	slot9 = slot9.secondCache
+	--- END OF BLOCK #11 ---
+
+	if slot9 < slot5 then
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 56-66, warpins: 1 ---
-	slot7 = slot1.logger
-	slot9 = slot7
-	slot7 = slot7.debug
-	slot10 = "homeFood refreshWorking consumeItem, remainFood=%d, %s"
-	slot11 = slot6
-	slot14 = slot0
-	slot12 = slot0.repr
-	slot15 = slot1
-	MULTRES = slot12(slot14, slot15)
+	--- BLOCK #12 69-79, warpins: 1 ---
+	slot1.foodSlotCurSpeed = slot4
+	slot9 = Time
+	slot9 = slot9.secondCache
+	slot10 = math
+	slot10 = slot10.round
+	slot12 = Time
+	slot12 = slot12.secondCache
+	slot12 = slot5 - slot12
+	slot10 = slot10(slot12)
+	slot9 = slot9 + slot10
+	slot1.foodSlotNextRefreshTs = slot9
+	--- END OF BLOCK #12 ---
 
-	slot7(slot9, slot10, slot11, MULTRES)
-
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #11 67-79, warpins: 1 ---
+	--- BLOCK #13 80-81, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #14 82-85, warpins: 1 ---
+	slot9 = Time
+	slot9 = slot9.secondCache
+	--- END OF BLOCK #14 ---
+
+	if slot9 < slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #15 86-96, warpins: 1 ---
+	slot9 = slot1.logger
+	slot11 = slot9
+	slot9 = slot9.debug
+	slot12 = "homeFood refreshWorking consumeItem, remainFood=%d, %s"
+	slot13 = slot6
+	slot16 = slot0
+	slot14 = slot0.repr
+	slot17 = slot1
+	MULTRES = slot14(slot16, slot17)
+
+	slot9(slot11, slot12, slot13, MULTRES)
+
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #16 97-110, warpins: 1 ---
 	slot7 = 0
 	slot1.foodSlotCurSpeed = slot7
 	slot7 = 0
@@ -1879,22 +1952,12 @@ slot9 = function(slot0, slot1, slot2)
 
 	slot7(slot9, slot10, MULTRES)
 
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 80-84, warpins: 3 ---
-	slot7 = slot6 * 60
-	slot7 = slot7 / slot5
-	slot3 = slot3 + slot7
-	slot4 = slot4 - slot7
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #13 85-98, warpins: 1 ---
+	--- BLOCK #17 111-124, warpins: 1 ---
 	slot6 = 0
 	slot1.foodSlotCurSpeed = slot6
 	slot6 = 0
@@ -1910,39 +1973,39 @@ slot9 = function(slot0, slot1, slot2)
 
 	slot6(slot8, slot9, MULTRES)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #14 99-99, warpins: 0 ---
-	--- END OF BLOCK #14 ---
+	--- BLOCK #18 125-125, warpins: 0 ---
+	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #15 100-100, warpins: 0 ---
-	--- END OF BLOCK #15 ---
+	--- BLOCK #19 126-126, warpins: 0 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #16 101-107, warpins: 1 ---
+	--- BLOCK #20 127-133, warpins: 1 ---
 	slot4 = slot1.foodSlotCurSpeed
 	slot7 = slot0
 	slot5 = slot0._calcFoodCostSpeed
 	slot8 = slot1
 	slot5 = slot5(slot7, slot8)
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #20 ---
 
 	if slot4 ~= slot5 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #17 108-133, warpins: 1 ---
+	--- BLOCK #21 134-159, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.getCurRemainingFood
 	slot9 = slot1
@@ -1971,43 +2034,43 @@ slot9 = function(slot0, slot1, slot2)
 
 	slot7(slot9, slot10, slot11, slot12, slot13, MULTRES)
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #18 134-138, warpins: 7 ---
+	--- BLOCK #22 160-164, warpins: 7 ---
 	slot4 = math
 	slot4 = slot4.round
 	slot6 = slot3
 
 	return slot4(slot6)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #19 139-140, warpins: 1 ---
+	--- BLOCK #23 165-166, warpins: 1 ---
 	slot3 = 0
 
 	return slot3
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #20 141-141, warpins: 2 ---
+	--- BLOCK #24 167-167, warpins: 2 ---
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot8.refreshWorking = slot9
+slot9.refreshWorking = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

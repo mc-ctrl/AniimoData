@@ -193,7 +193,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 20-36, warpins: 1 ---
+		--- BLOCK #2 20-38, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -211,6 +211,23 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		slot5 = button
 		slot4.targetRect = slot5
 
+		slot5 = function()
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.closePanel
+
+			slot0(slot2)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot4.closeOnJumpToSource = slot5
+
 		slot0(slot2, slot3, slot4)
 
 		--- END OF BLOCK #2 ---
@@ -218,7 +235,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 37-37, warpins: 2 ---
+		--- BLOCK #3 39-39, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 

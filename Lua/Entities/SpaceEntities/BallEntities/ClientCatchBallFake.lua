@@ -1,4 +1,4 @@
---- BLOCK #0 1-185, warpins: 1 ---
+--- BLOCK #0 1-190, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -93,27 +93,30 @@ slot30 = require
 slot32 = "Data.sys_config_data"
 slot30 = slot30(slot32)
 slot31 = require
-slot33 = "Core.Framework.Class"
+slot33 = "Utils.LuaUIUtils"
 slot31 = slot31(slot33)
-slot32 = Vector3
-slot33 = slot31.Class
-slot35 = "ClientCatchBallFake"
-slot36 = slot4
-slot33 = slot33(slot35, slot36)
-slot34 = {}
-slot34[1] = slot5
-slot34[2] = slot6
-slot34[3] = slot7
-slot34[4] = slot8
-slot34[5] = slot23
-slot35 = slot31.AddComponents
-slot37 = slot33
+slot32 = require
+slot34 = "Core.Framework.Class"
+slot32 = slot32(slot34)
+slot33 = Vector3
+slot34 = slot32.Class
+slot36 = "ClientCatchBallFake"
+slot37 = slot4
+slot34 = slot34(slot36, slot37)
+slot35 = {}
+slot35[1] = slot5
+slot35[2] = slot6
+slot35[3] = slot7
+slot35[4] = slot8
+slot35[5] = slot23
+slot36 = slot32.AddComponents
 slot38 = slot34
+slot39 = slot35
 
-slot35(slot37, slot38)
+slot36(slot38, slot39)
 
-slot35 = function(slot0, slot1)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot36 = function(slot0, slot1)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = ClientCatchBallFake
 	slot2 = slot2.super
 	slot2 = slot2.ctor
@@ -130,6 +133,8 @@ slot35 = function(slot0, slot1)
 	slot0.clientDestroyed = slot2
 	slot2 = false
 	slot0._bossSettled = slot2
+	slot2 = true
+	slot0.isClientEnt = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -138,10 +143,10 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.ctor = slot35
+slot34.ctor = slot36
 
-slot35 = function(slot0, slot1)
-	--- BLOCK #0 1-40, warpins: 1 ---
+slot36 = function(slot0, slot1)
+	--- BLOCK #0 1-38, warpins: 1 ---
 	slot2 = ClientCatchBallFake
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -181,8 +186,6 @@ slot35 = function(slot0, slot1)
 	slot0.ballData = slot3
 	slot3 = {}
 	slot0.timelineInputConfig = slot3
-	slot3 = true
-	slot0.isClientEnt = slot3
 
 	return slot2
 	--- END OF BLOCK #0 ---
@@ -191,9 +194,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.init = slot35
+slot34.init = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = ClientCatchBallFake
 	slot1 = slot1.super
@@ -237,9 +240,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.start = slot35
+slot34.start = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = ClientCatchBallFake
 	slot1 = slot1.super
@@ -263,9 +266,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.postInitializeComponents = slot35
+slot34.postInitializeComponents = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0.space = slot1
 	slot2 = slot0.space
@@ -287,11 +290,157 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.enterSpace = slot35
+slot34.enterSpace = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.master
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.master
+	slot1 = slot1.onCaptureBallDestroyed
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot1 = slot0.master
+	slot3 = slot1
+	slot1 = slot1.onCaptureBallDestroyed
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-15, warpins: 3 ---
 	slot1 = slot0.bossRpcTimeoutTimer
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-21, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.removeTimer
+	slot4 = slot0.bossRpcTimeoutTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.bossRpcTimeoutTimer = slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-24, warpins: 2 ---
+	slot1 = slot0._bossMaxLifetimeTimer
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-30, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.removeTimer
+	slot4 = slot0._bossMaxLifetimeTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0._bossMaxLifetimeTimer = slot1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 31-42, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.clearBossTitleTrapInvisible
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.ballGameObject = slot1
+	slot1 = nil
+	slot0.ballComponent = slot1
+	slot1 = nil
+	slot0.timelineInputConfig = slot1
+	slot1 = slot0.space
+	--- END OF BLOCK #7 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 43-47, warpins: 1 ---
+	slot1 = slot0.space
+	slot3 = slot1
+	slot1 = slot1.onEntityLeave
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 48-58, warpins: 2 ---
+	slot1 = ClientCatchBallFake
+	slot1 = slot1.super
+	slot1 = slot1.destroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = ActorManager
+	slot1 = slot1.removeEntity
+	slot3 = slot0.actorId
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot34.destroy = slot36
+
+slot36 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -301,22 +450,19 @@ slot35 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.removeTimer
-	slot4 = slot0.bossRpcTimeoutTimer
+	slot1 = slot0.onLeaveSpace
 
-	slot1(slot3, slot4)
+	slot1(slot3)
 
-	slot1 = nil
-	slot0.bossRpcTimeoutTimer = slot1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-12, warpins: 2 ---
-	slot1 = slot0._bossMaxLifetimeTimer
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot1 = slot0.entIdInBall
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -326,101 +472,36 @@ slot35 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-18, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.removeTimer
-	slot4 = slot0._bossMaxLifetimeTimer
-
-	slot1(slot3, slot4)
-
-	slot1 = nil
-	slot0._bossMaxLifetimeTimer = slot1
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 19-24, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.clearBossTitleTrapInvisible
-
-	slot1(slot3)
-
-	slot1 = slot0.entIdInBall
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 25-28, warpins: 1 ---
+	--- BLOCK #3 10-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.onLuaNoticeFinished
 	slot4 = slot0.entIdInBall
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 29-37, warpins: 2 ---
-	slot1 = nil
-	slot0.ballGameObject = slot1
-	slot1 = nil
-	slot0.ballComponent = slot1
-	slot1 = nil
-	slot0.timelineInputConfig = slot1
-	slot1 = slot0.space
-	--- END OF BLOCK #6 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #7 38-45, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.onLeaveSpace
-
-	slot1(slot3)
-
-	slot1 = slot0.space
-	slot3 = slot1
-	slot1 = slot1.onEntityLeave
-	slot4 = slot0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 46-51, warpins: 2 ---
+	--- BLOCK #4 14-19, warpins: 2 ---
 	slot1 = ClientCatchBallFake
 	slot1 = slot1.super
-	slot1 = slot1.destroy
+	slot1 = slot1.preDestroy
 	slot3 = slot0
 
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot33.destroy = slot35
+slot34.preDestroy = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.ballUid
 
@@ -431,9 +512,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.getGlobalId = slot35
+slot34.getGlobalId = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ClientConst
 	slot1 = slot1.ENTITY_CS_TYPE
@@ -446,9 +527,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.getCsEntityType = slot35
+slot34.getCsEntityType = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.clientDestroyed
 	--- END OF BLOCK #0 ---
@@ -680,9 +761,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.clientDestroy = slot35
+slot34.clientDestroy = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -693,9 +774,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.isConfigKinematic = slot35
+slot34.isConfigKinematic = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.fired
 
@@ -729,9 +810,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.fire = slot35
+slot34.fire = slot36
 
-slot35 = function(slot0, slot1, slot2)
+slot36 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.fired
 
@@ -773,9 +854,9 @@ slot35 = function(slot0, slot1, slot2)
 
 end
 
-slot33.quickFire = slot35
+slot34.quickFire = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -786,9 +867,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.isBallReady = slot35
+slot34.isBallReady = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ballData
 	--- END OF BLOCK #0 ---
@@ -828,9 +909,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.getProxyName = slot35
+slot34.getProxyName = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.timelineInputConfig
 	--- END OF BLOCK #0 ---
@@ -874,9 +955,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.getConfigData = slot35
+slot34.getConfigData = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1053,7 +1134,7 @@ slot35 = function(slot0, slot1)
 	slot5 = if not slot5 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #23
 	end
 
 
@@ -1061,62 +1142,34 @@ slot35 = function(slot0, slot1)
 	slot6 = slot2.eModel
 	--- END OF BLOCK #17 ---
 
-	slot6 = if slot6 then
+	slot7 = if slot6 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 60-61, warpins: 1 ---
-	slot6 = slot2.eModel
-	slot6 = slot6.physxComponent
+	--- BLOCK #18 60-60, warpins: 1 ---
+	slot7 = slot6.bodyCollider
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 62-63, warpins: 2 ---
+	--- BLOCK #19 61-65, warpins: 2 ---
+	slot8 = NotNil
+	slot10 = slot7
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #19 ---
 
-	slot7 = if slot6 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 64-64, warpins: 1 ---
-	slot7 = slot6.bodyCollider
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 65-66, warpins: 2 ---
-	--- END OF BLOCK #21 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #22 67-71, warpins: 1 ---
-	slot8 = IsNil
-	slot10 = slot7
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #22 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 72-82, warpins: 1 ---
+	--- BLOCK #20 66-76, warpins: 1 ---
 	slot10 = slot7
 	slot8 = slot7.ClosestPoint
 	slot11 = slot4
@@ -1128,32 +1181,32 @@ slot35 = function(slot0, slot1)
 	slot13 = slot8.z
 	slot9 = slot9(slot11, slot12, slot13)
 	slot5 = slot9
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #24 83-84, warpins: 3 ---
-	--- END OF BLOCK #24 ---
+	--- BLOCK #21 77-78, warpins: 2 ---
+	--- END OF BLOCK #21 ---
 
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #25 85-88, warpins: 1 ---
+	--- BLOCK #22 79-82, warpins: 1 ---
 	slot10 = slot2
 	slot8 = slot2.getPositionAgentPosition
 	slot8 = slot8(slot10)
 	slot5 = slot8
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #26
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #26 89-108, warpins: 3 ---
+	--- BLOCK #23 83-102, warpins: 3 ---
 	slot6 = true
 	slot0.fired = slot6
 	slot6 = true
@@ -1172,68 +1225,68 @@ slot35 = function(slot0, slot1)
 	slot6 = slot2.id
 	slot0.entIdInBall = slot6
 	slot6 = slot1.finalProb
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #23 ---
 
 	slot6 = if not slot6 then
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #27 109-109, warpins: 1 ---
+	--- BLOCK #24 103-103, warpins: 1 ---
 	slot6 = 1
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 104-109, warpins: 2 ---
+	slot0.prob = slot6
+	slot6 = slot0.prob
+	slot0.finalProb = slot6
+	slot6 = slot1.result
+	--- END OF BLOCK #25 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 110-112, warpins: 1 ---
+	slot6 = true
+	slot0.result = slot6
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #27 113-114, warpins: 1 ---
+	slot6 = slot1.result
+	slot0.result = slot6
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 110-115, warpins: 2 ---
-	slot0.prob = slot6
-	slot6 = slot0.prob
-	slot0.finalProb = slot6
-	slot6 = slot1.result
-	--- END OF BLOCK #28 ---
-
-	if slot6 == nil then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #29 116-118, warpins: 1 ---
-	slot6 = true
-	slot0.result = slot6
-	--- END OF BLOCK #29 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
-
-
-	--- BLOCK #30 119-120, warpins: 1 ---
-	slot6 = slot1.result
-	slot0.result = slot6
-	--- END OF BLOCK #30 ---
-
-	FLOW; TARGET BLOCK #31
-
-
-	--- BLOCK #31 121-125, warpins: 2 ---
+	--- BLOCK #28 115-119, warpins: 2 ---
 	slot6 = slot1.finalPosOffset
 	slot0.finalPosOffset = slot6
 	slot6 = {}
 	slot0.timelineInputConfig = slot6
 
 	return
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot33.setupFakeHitContext = slot35
+slot34.setupFakeHitContext = slot36
 
-slot35 = function(slot0, slot1, slot2, slot3, slot4)
+slot36 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot0._bossCaptureCancelled
 	--- END OF BLOCK #0 ---
@@ -1447,9 +1500,9 @@ slot35 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot33.bossQuickFire = slot35
+slot34.bossQuickFire = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = true
 	slot0._bossCaptureCancelled = slot1
@@ -1490,9 +1543,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.cancelBossCapturePerformance = slot35
+slot34.cancelBossCapturePerformance = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bossCaptureCancelled
 	--- END OF BLOCK #0 ---
@@ -1527,9 +1580,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.isBossCapturePerformanceCancelled = slot35
+slot34.isBossCapturePerformanceCancelled = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot1 = true
 	slot0.isModelLoaded = slot1
@@ -1543,7 +1596,7 @@ slot35 = function(slot0)
 	slot1 = slot1.maxColl
 	slot0.remainColl = slot1
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.createTime = slot1
 	slot3 = slot0
 	slot1 = slot0.setModelLoaded
@@ -1596,9 +1649,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.onBallCreated = slot35
+slot34.onBallCreated = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.fired
 	--- END OF BLOCK #0 ---
@@ -1671,9 +1724,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.onLuaFire = slot35
+slot34.onLuaFire = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.entIdInBall
 
@@ -1904,9 +1957,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.onLuaHitEntity = slot35
+slot34.onLuaHitEntity = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._getBossPreSettleTimelineId
@@ -1963,9 +2016,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33._playBossPreSettleTimeline = slot35
+slot34._playBossPreSettleTimeline = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = CaptureConst
 	slot1 = slot1.CAPTURE_NORMAL_BALL_PRE_TIMELINE
@@ -1977,9 +2030,9 @@ slot35 = function(slot0)
 
 end
 
-slot33._getBossPreSettleTimelineId = slot35
+slot34._getBossPreSettleTimelineId = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bossCaptureCancelled
 	--- END OF BLOCK #0 ---
@@ -2197,9 +2250,9 @@ slot35 = function(slot0)
 
 end
 
-slot33._onBossPreSettleTimelineEnd = slot35
+slot34._onBossPreSettleTimelineEnd = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bossRpcSent
 	--- END OF BLOCK #0 ---
@@ -2275,9 +2328,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.isBossSettlePending = slot35
+slot34.isBossSettlePending = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._bossCaptureCancelled
 	--- END OF BLOCK #0 ---
@@ -2395,9 +2448,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.onBossSettleResult = slot35
+slot34.onBossSettleResult = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._getBossSettleTimelineId
@@ -2445,9 +2498,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33._playBossSettleTimeline = slot35
+slot34._playBossSettleTimeline = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = CaptureConst
 	slot2 = slot2.CAPTURE_NORMAL_BALL_RESULT_TIMELINE
@@ -2459,9 +2512,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33._getBossSettleTimelineId = slot35
+slot34._getBossSettleTimelineId = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkEModel
@@ -2495,9 +2548,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.onLuaHitWater = slot35
+slot34.onLuaHitWater = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkEModel
@@ -2538,9 +2591,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.onLuaHitCollider = slot35
+slot34.onLuaHitCollider = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearBossTitleTrapInvisible
@@ -2679,21 +2732,25 @@ slot35 = function(slot0)
 	end
 
 
-	--- BLOCK #12 47-52, warpins: 1 ---
+	--- BLOCK #12 47-56, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.showBubbleMessageById
 	slot6 = NoticeDef
 	slot6 = slot6.CATCH_BALL_SHINY
+	slot7 = LuaUIUtils
+	slot7 = slot7.getNameByItemId
+	slot9 = slot0.itemId
+	MULTRES = slot7(slot9)
 
-	slot4(slot6)
+	slot4(slot6, MULTRES)
 
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 53-54, warpins: 5 ---
+	--- BLOCK #13 57-58, warpins: 5 ---
 	--- END OF BLOCK #13 ---
 
 	slot2 = if slot2 then
@@ -2703,7 +2760,7 @@ slot35 = function(slot0)
 	end
 
 
-	--- BLOCK #14 55-56, warpins: 1 ---
+	--- BLOCK #14 59-60, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
 	slot3 = if slot3 then
@@ -2713,7 +2770,7 @@ slot35 = function(slot0)
 	end
 
 
-	--- BLOCK #15 57-61, warpins: 1 ---
+	--- BLOCK #15 61-65, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.cancelTrapped
 	slot7 = slot0.master
@@ -2726,7 +2783,7 @@ slot35 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 62-66, warpins: 3 ---
+	--- BLOCK #16 66-70, warpins: 3 ---
 	slot6 = slot0
 	slot4 = slot0.checkEModel
 	slot4 = slot4(slot6)
@@ -2739,7 +2796,7 @@ slot35 = function(slot0)
 	end
 
 
-	--- BLOCK #17 67-70, warpins: 1 ---
+	--- BLOCK #17 71-74, warpins: 1 ---
 	slot4 = slot0.eModel
 	slot6 = slot4
 	slot4 = slot4.OnNoticeFinished
@@ -2751,7 +2808,7 @@ slot35 = function(slot0)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 71-74, warpins: 2 ---
+	--- BLOCK #18 75-78, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.clientDestroy
 
@@ -2764,23 +2821,21 @@ slot35 = function(slot0)
 
 end
 
-slot33.onLuaNoticeFinished = slot35
+slot34.onLuaNoticeFinished = slot36
 
-slot35 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+slot36 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-14, warpins: 1 ---
+	--- BLOCK #1 4-12, warpins: 1 ---
 	slot1 = slot0.logger
 	slot3 = slot1
 	slot1 = slot1.warn
@@ -2798,7 +2853,7 @@ slot35 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-16, warpins: 2 ---
+	--- BLOCK #2 13-14, warpins: 2 ---
 	slot1 = true
 
 	return slot1
@@ -2808,9 +2863,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.checkEModel = slot35
+slot34.checkEModel = slot36
 
-slot35 = function(slot0, slot1, slot2)
+slot36 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2852,9 +2907,9 @@ slot35 = function(slot0, slot1, slot2)
 
 end
 
-slot33._setBossTitleTrapInvisible = slot35
+slot34._setBossTitleTrapInvisible = slot36
 
-slot35 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bossTitleTrapInvisible
 	--- END OF BLOCK #0 ---
@@ -2905,9 +2960,9 @@ slot35 = function(slot0)
 
 end
 
-slot33.clearBossTitleTrapInvisible = slot35
+slot34.clearBossTitleTrapInvisible = slot36
 
-slot35 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.destroyed
 	--- END OF BLOCK #0 ---
@@ -3067,9 +3122,9 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot33.hitEntityValid = slot35
+slot34.hitEntityValid = slot36
 
-return slot33
+return slot34
 --- END OF BLOCK #0 ---
 
 

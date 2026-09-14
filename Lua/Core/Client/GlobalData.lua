@@ -1,13 +1,13 @@
 --- BLOCK #0 1-4, warpins: 1 ---
 slot0 = {
-	UserName = "",
-	BlockBindSoulClientNotMatch = false,
-	ZoneTime = 0,
-	GamePlatform = "PC",
 	PlayerName = "",
 	AvatarPresetKey = 0,
 	AvatarConfig = "",
-	ServerId = 0
+	ServerId = 0,
+	UserName = "",
+	BlockBindSoulClientNotMatch = false,
+	ZoneTime = 0,
+	GamePlatform = "PC"
 }
 slot1 = {}
 slot0.PlayerTags = slot1

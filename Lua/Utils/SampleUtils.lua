@@ -1,4 +1,4 @@
---- BLOCK #0 1-31, warpins: 1 ---
+--- BLOCK #0 1-33, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -30,8 +30,19 @@ end
 
 slot4.sampleOn = slot5
 
+slot5 = function()
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.sampleVoid = slot5
+
 slot5 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = SampleUtils
 	slot1.isEnabled = slot0
 	slot1 = require
@@ -42,8 +53,47 @@ slot5 = function(slot0)
 
 	slot2(slot4)
 
-	return
 	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-19, warpins: 1 ---
+	slot2 = SampleUtils
+	slot3 = SampleUtils
+	slot3 = slot3.beginSampleS
+	slot2.beginSampleEx = slot3
+	slot2 = SampleUtils
+	slot3 = SampleUtils
+	slot3 = slot3.endSample
+	slot2.endSampleEx = slot3
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 20-27, warpins: 1 ---
+	slot2 = SampleUtils
+	slot3 = SampleUtils
+	slot3 = slot3.sampleVoid
+	slot2.beginSampleEx = slot3
+	slot2 = SampleUtils
+	slot3 = SampleUtils
+	slot3 = slot3.sampleVoid
+	slot2.endSampleEx = slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 28-28, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
@@ -130,7 +180,7 @@ JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 32-40, warpins: 1 ---
+--- BLOCK #1 34-42, warpins: 1 ---
 slot7 = {}
 slot8 = {}
 
@@ -283,26 +333,14 @@ slot4.logSampleEx = slot9
 UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
---- BLOCK #2 41-50, warpins: 1 ---
-slot7 = slot4.beginSample
+--- BLOCK #2 43-50, warpins: 1 ---
+slot7 = slot4.sampleVoid
 slot4.beginSampleEx = slot7
-slot7 = slot4.endSample
+slot7 = slot4.sampleVoid
 slot4.endSampleEx = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = SampleUtils
-	slot1 = slot1.isEnabled
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-10, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = SampleUtils
 	slot1 = slot1.beginSample
 	slot3 = tostring
@@ -311,54 +349,14 @@ slot7 = function(slot0)
 
 	slot1(MULTRES)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-11, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot4.beginSampleEx = slot7
-
-slot7 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = SampleUtils
-	slot0 = slot0.isEnabled
 	--- END OF BLOCK #0 ---
 
-	slot0 = if slot0 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot0 = SampleUtils
-	slot0 = slot0.endSample
-
-	slot0()
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
 
 
 end
 
-slot4.endSampleEx = slot7
+slot4.beginSampleS = slot7
 
 slot7 = function()
 	--- BLOCK #0 1-1, warpins: 1 ---

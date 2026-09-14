@@ -130,7 +130,7 @@ end
 slot6.getConfigData = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = ClientVirtualPuppet
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -138,20 +138,18 @@ slot7 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-11, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -159,13 +157,12 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-32, warpins: 2 ---
+	--- BLOCK #2 10-29, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = ClientModelUtils
 	slot3 = slot3.getModelExtraInfo
 	slot5 = slot1

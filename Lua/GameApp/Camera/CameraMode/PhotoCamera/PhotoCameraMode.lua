@@ -1,4 +1,4 @@
---- BLOCK #0 1-69, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Camera.CameraConst"
 slot0 = slot0(slot2)
@@ -6,20 +6,23 @@ slot1 = require
 slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.UIConst"
+slot4 = "Common.Const.Const"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.Camera.CameraMode.StackFramingCameraMode"
+slot5 = "Const.UIConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.HotkeyConst"
+slot6 = "GameApp.Camera.CameraMode.StackFramingCameraMode"
 slot4 = slot4(slot6)
-slot5 = slot1.OldLightClass
-slot7 = "PhotoCameraMode"
-slot8 = slot3
-slot5 = slot5(slot7, slot8)
+slot5 = require
+slot7 = "Const.HotkeyConst"
+slot5 = slot5(slot7)
+slot6 = slot1.OldLightClass
+slot8 = "PhotoCameraMode"
+slot9 = slot4
+slot6 = slot6(slot8, slot9)
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = StackFramingCameraMode
 	slot1 = slot1.onCtor
@@ -39,9 +42,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.onCtor = slot6
+slot6.onCtor = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -56,9 +59,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getModeClass = slot6
+slot6.getModeClass = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = CameraConst
 	slot1 = slot1.PRIORITY_PHOTO
@@ -70,9 +73,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getCameraPriority = slot6
+slot6.getCameraPriority = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = CameraConst
 	slot1 = slot1.CAMERA_NAME_PHOTO
@@ -84,9 +87,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getCameraName = slot6
+slot6.getCameraName = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0.cameraMode
 	slot6 = slot4
@@ -104,9 +107,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.move = slot6
+slot6.move = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0.cameraMode
 	slot5 = slot3
@@ -128,9 +131,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.rotate = slot6
+slot6.rotate = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.stackCameraObj
 	--- END OF BLOCK #0 ---
@@ -173,9 +176,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.rotateExtra = slot6
+slot6.rotateExtra = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.cameraMode
 	slot4 = slot2
@@ -191,9 +194,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.rotateZ = slot6
+slot6.rotateZ = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.openFishEyeState
 
@@ -229,9 +232,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.zoom = slot6
+slot6.zoom = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.openFishEyeState
 
@@ -272,9 +275,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.openFishEye = slot6
+slot6.openFishEye = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.openFishEyeState
 
@@ -312,9 +315,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.closeFishEye = slot6
+slot6.closeFishEye = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.closeFishEye
@@ -328,9 +331,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.openFreeCamera = slot6
+slot6.openFreeCamera = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.cameraMode
 	slot3 = slot1
@@ -345,9 +348,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.reset = slot6
+slot6.reset = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot7 = slot0.cameraMode
 	slot9 = slot7
@@ -368,9 +371,60 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot5.AsyncTrans = slot6
+slot6.AsyncTrans = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot5 = IsNil
+	slot7 = slot1
+	slot5 = slot5(slot7)
+
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-23, warpins: 2 ---
+	slot5 = slot0.cameraMode
+	slot7 = slot5
+	slot5 = slot5.SetMoveRange
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+	slot11 = slot4
+	slot12 = 0
+	slot13 = 0.5
+	slot14 = 0.3
+	slot15 = 0.1
+	slot16 = 0.1
+	slot17 = 0.8
+	slot18 = 0.8
+	slot19 = 19
+
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot6.setMoveRange = slot7
+
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInFollowType
 	--- END OF BLOCK #0 ---
@@ -408,9 +462,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getFollowPosition = slot6
+slot6.getFollowPosition = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInFollowType
 	--- END OF BLOCK #0 ---
@@ -445,9 +499,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getFollowEulerAngles = slot6
+slot6.getFollowEulerAngles = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.cameraMode
 	slot5 = slot3
@@ -464,9 +518,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.setTarget = slot6
+slot6.setTarget = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4)
+slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0.cameraMode
 	slot7 = slot5
@@ -533,9 +587,9 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot5.setTargetByActorId = slot6
+slot6.setTargetByActorId = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -560,53 +614,81 @@ slot6 = function(slot0, slot1, slot2)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
 	--- BLOCK #3 7-10, warpins: 1 ---
 	slot3 = slot2.eModel
-	slot3 = slot3.ikComponent
+	slot3 = slot3.ikLookAtComponent
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 11-13, warpins: 1 ---
-	slot4 = slot3.lookAtComponent
+	--- BLOCK #4 11-11, warpins: 1 ---
+	slot3.enableCameraLookAt = slot1
+
 	--- END OF BLOCK #4 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-15, warpins: 1 ---
-	slot4 = slot3.lookAtComponent
-	slot4.enableCameraLookAt = slot1
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 16-16, warpins: 4 ---
+	--- BLOCK #5 12-12, warpins: 3 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot5.setEnableCameraLookAt = slot6
+slot6.setEnableCameraLookAt = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot4 = nil
+
+	return slot4
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-13, warpins: 2 ---
+	slot4 = slot0.cameraMode
+	slot6 = slot4
+	slot4 = slot4.GetLookAtPos
+	slot7 = slot1
+	slot8 = slot2
+	slot11 = slot3
+	slot9 = slot3.getPosition
+	MULTRES = slot9(slot11)
+
+	return slot4(slot6, slot7, slot8, MULTRES)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot6.getLookAtPos = slot7
+
+slot7 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -651,9 +733,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.onRotate = slot6
+slot6.onRotate = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -708,9 +790,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.onRotateEnd = slot6
+slot6.onRotateEnd = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInFollowType
 	--- END OF BLOCK #0 ---
@@ -745,9 +827,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.clearFollowType = slot6
+slot6.clearFollowType = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = true
 	slot0.isInFollowType = slot1
@@ -779,9 +861,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.openFollowType = slot6
+slot6.openFollowType = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInFollowType
 
@@ -833,9 +915,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.closeFollowType = slot6
+slot6.closeFollowType = slot7
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

@@ -158,51 +158,16 @@ slot9 = function(slot0)
 	slot1 = slot1.marketUList
 
 	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-38, warpins: 1 ---
+		--- BLOCK #0 1-9, warpins: 1 ---
 		slot2 = self
-		slot2 = slot2.view
-		slot2 = slot2.propPanelUComponent
+		slot2 = slot2.ctrl
 		slot4 = slot2
-		slot2 = slot2.TryChangePage
-		slot5 = "isEmpty"
-		slot6 = 0
-
-		slot2(slot4, slot5, slot6)
-
-		slot2 = LuaUIUtils
-		slot2 = slot2.refreshItemInfo
-		slot4 = self
-		slot4 = slot4.view
-		slot4 = slot4.propInfoUComponent
-		slot5 = {
-			fromParamCount = true
-		}
-		slot6 = slot1.itemId
-		slot5.itemId = slot6
+		slot2 = slot2.showItemDetail
+		slot5 = slot1
 		slot6 = slot1.ownCount
-		slot5.itemCount = slot6
+		slot7 = slot1.selectorCount
 
-		slot2(slot4, slot5)
-
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot3 = slot1.currencyItemId
-		slot2.currencyItemId = slot3
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot3 = slot1.currencyNum
-		slot2.currencyNum = slot3
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot3 = slot1.materialId
-		slot2.materialId = slot3
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot4 = slot2
-		slot2 = slot2.refreshSelectorState
-		slot5 = slot1.selectorCount
-
-		slot2(slot4, slot5)
+		slot2(slot4, slot5, slot6, slot7)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -240,7 +205,14 @@ end
 slot8.onDestroy = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-39, warpins: 1 ---
+	--- BLOCK #0 1-44, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.marketUList
+	slot3 = slot1
+	slot1 = slot1.DeselectAll
+
+	slot1(slot3)
+
 	slot1 = slot0.view
 	slot1 = slot1.timeUCountDown
 	slot2 = Color
@@ -289,7 +261,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 40-45, warpins: 1 ---
+	--- BLOCK #1 45-50, warpins: 1 ---
 	slot5 = Utils
 	slot5 = slot5.isEmptyTable
 	slot7 = slot0.marketList
@@ -303,7 +275,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #2 46-71, warpins: 2 ---
+	--- BLOCK #2 51-80, warpins: 2 ---
 	slot5 = slot0.view
 	slot5 = slot5.rootUComponent
 	slot7 = slot5
@@ -335,6 +307,12 @@ slot9 = function(slot0)
 
 	slot5(slot7, MULTRES)
 
+	slot5 = slot0.ctrl
+	slot7 = slot5
+	slot5 = slot5.setItemInfoEmpty
+
+	slot5(slot7)
+
 	return
 
 	--- END OF BLOCK #2 ---
@@ -342,7 +320,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 72-92, warpins: 2 ---
+	--- BLOCK #3 81-98, warpins: 2 ---
 	slot5 = slot0.view
 	slot5 = slot5.rootUComponent
 	slot7 = slot5
@@ -352,14 +330,11 @@ slot9 = function(slot0)
 
 	slot5(slot7, slot8, slot9)
 
-	slot5 = slot0.view
-	slot5 = slot5.propPanelUComponent
+	slot5 = slot0.ctrl
 	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "isEmpty"
-	slot9 = 1
+	slot5 = slot5.setItemInfoEmpty
 
-	slot5(slot7, slot8, slot9)
+	slot5(slot7)
 
 	slot5 = slot0.view
 	slot5 = slot5.marketUList
@@ -483,7 +458,7 @@ slot9 = function(slot0, slot1)
 
 	--- BLOCK #5 45-56, warpins: 1 ---
 	slot6 = slot0.view
-	slot6 = slot6.inventoryUList
+	slot6 = slot6.marketUList
 	slot8 = slot6
 	slot6 = slot6.SetElement
 	slot9 = slot1
@@ -560,7 +535,7 @@ slot9 = function(slot0, slot1)
 
 	--- BLOCK #10 79-86, warpins: 1 ---
 	slot5 = slot0.view
-	slot5 = slot5.marketList
+	slot5 = slot5.marketUList
 	slot7 = slot5
 	slot5 = slot5.TryGetChildAt
 	slot8 = slot4
@@ -596,22 +571,19 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 93-99, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.propPanelUComponent
+	--- BLOCK #13 93-96, warpins: 1 ---
+	slot5 = slot0.ctrl
 	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "isEmpty"
-	slot9 = 1
+	slot5 = slot5.setItemInfoEmpty
 
-	slot5(slot7, slot8, slot9)
+	slot5(slot7)
 
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 100-100, warpins: 2 ---
+	--- BLOCK #14 97-97, warpins: 2 ---
 	return
 	--- END OF BLOCK #14 ---
 

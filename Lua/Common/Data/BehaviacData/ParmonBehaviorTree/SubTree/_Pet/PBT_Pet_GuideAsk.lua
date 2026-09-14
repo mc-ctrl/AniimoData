@@ -8,25 +8,25 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_GuideAsk",
 	agenttype = "PetAgent",
+	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_GuideAsk",
 	version = 13
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	const = 0,
+	type = "int",
 	name = "tSensorTgtId",
-	type = "int"
+	const = 0,
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
-	const = 0,
+	type = "float",
 	name = "tRandomWaitTime",
-	type = "float"
+	const = 0,
+	value = "0"
 }
 slot4[2] = slot5
 slot3.pars = slot4

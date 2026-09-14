@@ -11,10 +11,10 @@ slot2 = slot2(slot4)
 slot3 = {
 	TYPE_HOMELANE = 16,
 	TYPE_PET_INFO = 8,
+	TYPE_PUPPET = 4,
 	TYPE_PET = 2,
 	TYPE_PLAYER = 1,
-	TYPE_NONE = 0,
-	TYPE_PUPPET = 4
+	TYPE_NONE = 0
 }
 
 slot4 = function(slot0)

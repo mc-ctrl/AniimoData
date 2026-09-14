@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -76,7 +76,7 @@ slot10 = function(slot0)
 	slot1 = slot1.listTagUList
 
 	slot2 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-19, warpins: 1 ---
+		--- BLOCK #0 1-25, warpins: 1 ---
 		slot3 = LuaUIUtils
 		slot3 = slot3.renderPetTagList
 		slot5 = slot0
@@ -95,7 +95,13 @@ slot10 = function(slot0)
 		slot9 = self
 		slot9 = slot9.petInfo
 		slot9 = slot9.label
-		MULTRES = slot6(slot8, slot9)
+		slot10 = self
+		slot10 = slot10.petInfo
+		slot10 = slot10.bodySizeType
+		slot11 = self
+		slot11 = slot11.petInfo
+		slot11 = slot11.shinyStyle
+		MULTRES = slot6(slot8, slot9, slot10, slot11)
 
 		slot3(slot5, MULTRES)
 
@@ -118,7 +124,7 @@ end
 slot9.addListener = slot10
 
 slot10 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -128,15 +134,41 @@ slot10 = function(slot0, slot1)
 
 	slot2 = slot0.model
 	slot4 = slot2
-	slot2 = slot2.setSettlementData
+	slot2 = slot2.loadSettlementData
 	slot5 = slot1
 
-	slot2(slot4, slot5)
+	slot6 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
 
-	slot4 = slot0
-	slot2 = slot0._refresh
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
 
-	slot2(slot4)
+
+		--- BLOCK #1 3-6, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1._refresh
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-7, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -379,7 +411,7 @@ slot10 = function(slot0)
 	slot16 = slot16.stageTxt
 	slot17 = pg
 	slot17 = slot17.getGameString
-	slot19 = "PET_STAGE_TXT_3.5"
+	slot19 = "PET_STAGE_TXT_4"
 	MULTRES = slot17(slot19)
 
 	slot14(slot16, MULTRES)
@@ -405,89 +437,152 @@ end
 slot9._refresh = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.widget
-	slot3 = slot1
-	slot1 = slot1.InvokeCallbackWithCallback
-	slot4 = CS
-	slot4 = slot4.XGUI
-	slot4 = slot4.EInvokeTime
-	slot4 = slot4.User1
+	slot2 = NotNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
 
-	slot5 = function()
-		--- BLOCK #0 1-12, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.ui
-		slot2 = slot0
-		slot0 = slot0.show
-		slot3 = UIConst
-		slot3 = slot3.UI_ID_LOADING
-
-		slot0(slot2, slot3)
-
-		slot0 = pg
-		slot0 = slot0.me
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #3
-		end
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-		--- BLOCK #1 13-17, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.onResultClose
-		--- END OF BLOCK #1 ---
+	--- BLOCK #1 8-16, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.CheckHasEvent
+	slot5 = CS
+	slot5 = slot5.XGUI
+	slot5 = slot5.EInvokeTime
+	slot5 = slot5.User1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #1 ---
 
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 18-22, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot2 = slot0
-		slot0 = slot0.onResultClose
-
-		slot0(slot2)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-		--- BLOCK #3 23-27, warpins: 3 ---
+	--- BLOCK #2 17-25, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.InvokeCallbackWithCallback
+	slot5 = CS
+	slot5 = slot5.XGUI
+	slot5 = slot5.EInvokeTime
+	slot5 = slot5.User1
+
+	slot6 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.dismiss
+		slot0 = slot0._doClose
 
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	slot1(slot3, slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 26-28, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0._doClose
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 29-30, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
 slot9.onConfirmClick = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.show
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_LOADING
+
+	slot1(slot3, slot4)
+
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 13-17, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.onResultClose
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 18-22, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.onResultClose
+
+	slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 23-26, warpins: 3 ---
+	slot3 = slot0
+	slot1 = slot0.dismiss
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot9._doClose = slot10
 
 slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

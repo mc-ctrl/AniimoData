@@ -13,9 +13,9 @@ slot3 = require
 slot5 = "Utils.ClientTextUtils"
 slot3 = slot3(slot5)
 slot4 = {
-	COLOR = 1,
 	NORMAL = 0,
-	NONE = 2
+	NONE = 2,
+	COLOR = 1
 }
 slot2.TYPE = slot4
 

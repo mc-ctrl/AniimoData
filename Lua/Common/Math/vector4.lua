@@ -8,8 +8,8 @@ slot2 = slot2.min
 slot3 = math
 slot3 = slot3.max
 slot4 = {
-	banInspect = true,
-	class = "Vector4"
+	class = "Vector4",
+	banInspect = true
 }
 slot5 = setmetatable
 slot7 = slot4

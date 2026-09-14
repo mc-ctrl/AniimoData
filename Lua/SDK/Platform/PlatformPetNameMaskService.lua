@@ -17,8 +17,8 @@ slot4 = slot4(slot6)
 slot5 = {}
 slot6 = {
 	PetExchangePetName = "ugc_pet_exchange_pet_name",
-	TopLogoPetName = "ugc_pet_top_logo_name",
-	PetCustomName = "ugc_pet_custom_name"
+	PetCustomName = "ugc_pet_custom_name",
+	TopLogoPetName = "ugc_pet_top_logo_name"
 }
 slot5.Action = slot6
 
@@ -928,8 +928,8 @@ slot6 = function(slot0)
 	slot6 = PlatformPetNameMaskService
 	slot6 = slot6.markContext
 	slot8 = {
-		ugcVisible = true,
-		ugcReason = "local_ugc_policy_cache_missing"
+		ugcReason = "local_ugc_policy_cache_missing",
+		ugcVisible = true
 	}
 	slot9 = slot3.Allow
 	slot8.ugcDecision = slot9
@@ -971,8 +971,8 @@ slot6 = function(slot0)
 	slot6 = PlatformPetNameMaskService
 	slot6 = slot6.markContext
 	slot8 = {
-		ugcVisible = false,
-		ugcReason = "local_ugc_privacy_blocked"
+		ugcReason = "local_ugc_privacy_blocked",
+		ugcVisible = false
 	}
 	slot9 = slot3.Deny
 	slot8.ugcDecision = slot9
@@ -1004,7 +1004,7 @@ slot6 = function(slot0)
 	if slot1 == "friends_only" then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1040,7 +1040,151 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 63-73, warpins: 2 ---
+	--- BLOCK #13 63-64, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #14 65-67, warpins: 1 ---
+	slot6 = PlatformUGCService
+	--- END OF BLOCK #14 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #15 68-73, warpins: 1 ---
+	slot6 = type
+	slot8 = PlatformUGCService
+	slot8 = slot8.resolveTargetVisibleDecision
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #15 ---
+
+	if slot6 == "function" then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #16 74-81, warpins: 1 ---
+	slot6 = PlatformUGCService
+	slot8 = slot6
+	slot6 = slot6.resolveTargetVisibleDecision
+	slot9 = slot0
+	slot10 = "local_ugc_privacy_friends_only"
+	slot6, slot7 = slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #16 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 82-84, warpins: 1 ---
+	slot8 = slot3.Allow
+	--- END OF BLOCK #17 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 85-85, warpins: 2 ---
+	slot8 = slot3.Deny
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 86-94, warpins: 2 ---
+	slot9 = slot8
+	slot10 = slot6
+	slot11 = PlatformPetNameMaskService
+	slot11 = slot11.markContext
+	slot13 = {}
+	slot13.ugcDecision = slot8
+	slot13.ugcVisible = slot6
+	--- END OF BLOCK #19 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 95-97, warpins: 1 ---
+	slot14 = slot7.ugcReason
+	--- END OF BLOCK #20 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 98-98, warpins: 2 ---
+	slot14 = "local_ugc_privacy_friends_only"
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 99-102, warpins: 2 ---
+	slot13.ugcReason = slot14
+	slot14 = slot6
+	--- END OF BLOCK #22 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 103-105, warpins: 1 ---
+	slot15 = slot7.ugcReason
+	--- END OF BLOCK #23 ---
+
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 106-106, warpins: 2 ---
+	slot15 = "local_ugc_privacy_friends_only"
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 107-108, warpins: 2 ---
+	MULTRES = slot11(slot13, slot14, slot15)
+
+	return slot9, slot10, MULTRES
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 109-119, warpins: 4 ---
 	slot6 = slot5
 	slot7 = slot4
 	slot8 = PlatformPetNameMaskService
@@ -1056,47 +1200,181 @@ slot6 = function(slot0)
 
 	return slot6, slot7, MULTRES
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #14 74-76, warpins: 2 ---
+	--- BLOCK #27 120-122, warpins: 2 ---
 	slot4 = slot2.Fallback
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #27 ---
 
 	if slot1 ~= slot4 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #15 77-78, warpins: 1 ---
-	--- END OF BLOCK #15 ---
+	--- BLOCK #28 123-124, warpins: 1 ---
+	--- END OF BLOCK #28 ---
 
 	if slot1 == "fallback" then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #16 79-80, warpins: 2 ---
+	--- BLOCK #29 125-126, warpins: 2 ---
 	slot4 = "local_ugc_privacy_fallback"
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #29 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #17 81-81, warpins: 1 ---
+	--- BLOCK #30 127-127, warpins: 1 ---
 	slot4 = "local_ugc_privacy_allow"
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #18 82-93, warpins: 2 ---
+	--- BLOCK #31 128-130, warpins: 2 ---
+	slot5 = PlatformUGCService
+	--- END OF BLOCK #31 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #32 131-136, warpins: 1 ---
+	slot5 = type
+	slot7 = PlatformUGCService
+	slot7 = slot7.resolveTargetVisibleDecision
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #32 ---
+
+	if slot5 == "function" then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #33 137-144, warpins: 1 ---
+	slot5 = PlatformUGCService
+	slot7 = slot5
+	slot5 = slot5.resolveTargetVisibleDecision
+	slot8 = slot0
+	slot9 = slot4
+	slot5, slot6 = slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #33 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 145-147, warpins: 1 ---
+	slot7 = slot3.Allow
+	--- END OF BLOCK #34 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 148-148, warpins: 2 ---
+	slot7 = slot3.Deny
+	--- END OF BLOCK #35 ---
+
+	FLOW; TARGET BLOCK #36
+
+
+	--- BLOCK #36 149-157, warpins: 2 ---
+	slot8 = slot7
+	slot9 = slot5
+	slot10 = PlatformPetNameMaskService
+	slot10 = slot10.markContext
+	slot12 = {}
+	slot12.ugcDecision = slot7
+	slot12.ugcVisible = slot5
+	--- END OF BLOCK #36 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 158-160, warpins: 1 ---
+	slot13 = slot6.ugcReason
+	--- END OF BLOCK #37 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 161-161, warpins: 2 ---
+	slot13 = slot4
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 162-165, warpins: 2 ---
+	slot12.ugcReason = slot13
+	slot13 = slot5
+	--- END OF BLOCK #39 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 166-168, warpins: 1 ---
+	slot14 = slot6.ugcReason
+	--- END OF BLOCK #40 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 169-169, warpins: 2 ---
+	slot14 = slot4
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 170-171, warpins: 2 ---
+	MULTRES = slot10(slot12, slot13, slot14)
+
+	return slot8, slot9, MULTRES
+
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 172-183, warpins: 3 ---
 	slot5 = slot3.Allow
 	slot6 = true
 	slot7 = PlatformPetNameMaskService
@@ -1112,7 +1390,7 @@ slot6 = function(slot0)
 	MULTRES = slot7(slot9, slot10, slot11)
 
 	return slot5, slot6, MULTRES
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #43 ---
 
 
 
@@ -1402,92 +1680,92 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 24-29, warpins: 2 ---
-	slot3 = PlatformPetNameMaskService
-	slot3 = slot3.isNilOrEmpty
-	slot5 = slot1
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 30-39, warpins: 1 ---
-	slot3 = slot2
-	slot4 = true
-	slot5 = slot0.playerInfo
-	slot6 = PlatformPetNameMaskService
-	slot6 = slot6.markContext
-	slot8 = {}
-	slot9 = true
-	slot10 = "config_name"
-	MULTRES = slot6(slot8, slot9, slot10)
-
-	return slot3, slot4, slot5, MULTRES
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 40-44, warpins: 2 ---
-	slot3 = PlatformPetNameMaskService
-	slot3 = slot3.isCurrentConsoleFamily
-	slot3 = slot3()
-	--- END OF BLOCK #8 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 45-54, warpins: 1 ---
-	slot3 = slot1
-	slot4 = true
-	slot5 = slot0.playerInfo
-	slot6 = PlatformPetNameMaskService
-	slot6 = slot6.markContext
-	slot8 = {}
-	slot9 = true
-	slot10 = "non_console_family"
-	MULTRES = slot6(slot8, slot9, slot10)
-
-	return slot3, slot4, slot5, MULTRES
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 55-62, warpins: 2 ---
+	--- BLOCK #6 24-31, warpins: 2 ---
 	slot3 = PlatformPetNameMaskService
 	slot5 = slot3
 	slot3 = slot3.peekPetNameVisibility
 	slot6 = slot0.uid
 	slot7 = slot0.playerInfo
 	slot3, slot4, slot5, slot6 = slot3(slot5, slot6, slot7)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #6 ---
 
 	if slot4 == false then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 32-36, warpins: 1 ---
+	slot7 = ""
+	slot8 = false
+	slot9 = slot5
+	slot10 = slot6
+
+	return slot7, slot8, slot9, slot10
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 37-42, warpins: 2 ---
+	slot7 = PlatformPetNameMaskService
+	slot7 = slot7.isNilOrEmpty
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #8 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 43-52, warpins: 1 ---
+	slot7 = slot2
+	slot8 = true
+	slot9 = slot0.playerInfo
+	slot10 = PlatformPetNameMaskService
+	slot10 = slot10.markContext
+	slot12 = {}
+	slot13 = true
+	slot14 = "config_name"
+	MULTRES = slot10(slot12, slot13, slot14)
+
+	return slot7, slot8, slot9, MULTRES
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 53-57, warpins: 2 ---
+	slot7 = PlatformPetNameMaskService
+	slot7 = slot7.isCurrentConsoleFamily
+	slot7 = slot7()
+	--- END OF BLOCK #10 ---
+
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 63-67, warpins: 1 ---
-	slot7 = slot2
-	slot8 = false
-	slot9 = slot5
-	slot10 = slot6
+	--- BLOCK #11 58-67, warpins: 1 ---
+	slot7 = slot1
+	slot8 = true
+	slot9 = slot0.playerInfo
+	slot10 = PlatformPetNameMaskService
+	slot10 = slot10.markContext
+	slot12 = {}
+	slot13 = true
+	slot14 = "non_console_family"
+	MULTRES = slot10(slot12, slot13, slot14)
 
-	return slot7, slot8, slot9, slot10
+	return slot7, slot8, slot9, MULTRES
 
 	--- END OF BLOCK #11 ---
 

@@ -1132,7 +1132,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot18(slot20, slot21)
 
 	slot20 = slot0
-	slot18 = slot0.startTimer
+	slot18 = slot0.startScaleTimer
 
 	slot21 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
@@ -1322,7 +1322,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot20(slot22, slot23)
 
 	slot22 = slot0
-	slot20 = slot0.startTimer
+	slot20 = slot0.startScaleTimer
 
 	slot23 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---

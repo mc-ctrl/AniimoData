@@ -71,7 +71,7 @@ end
 slot4.refreshAppearance = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.createHomeCarPet
 
@@ -81,6 +81,14 @@ slot6 = function(slot0)
 	slot1 = slot0.setEffetLevelCamera
 
 	slot1(slot3)
+
+	slot1 = slot0.eModel
+	slot1 = slot1.modelModelView
+	slot3 = slot1
+	slot1 = slot1.OverrideStaticShadowCaster
+	slot4 = false
+
+	slot1(slot3, slot4)
 
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
@@ -126,9 +134,8 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #2 7-15, warpins: 1 ---
+	--- BLOCK #2 7-14, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.gameObject
 	slot1 = slot1.transform
 	slot3 = slot1
 	slot1 = slot1.FindRecursive
@@ -143,7 +150,7 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #3 16-20, warpins: 1 ---
+	--- BLOCK #3 15-19, warpins: 1 ---
 	slot2 = slot0.uiScene
 	slot4 = slot2
 	slot2 = slot2.createPetEnt
@@ -156,7 +163,7 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-21, warpins: 4 ---
+	--- BLOCK #4 20-20, warpins: 4 ---
 	return
 	--- END OF BLOCK #4 ---
 

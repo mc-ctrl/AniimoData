@@ -7,19 +7,19 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 6,
+	useForRoute = false,
 	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_Com_Node_Wait",
-	useForRoute = false
+	version = 6
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "float",
 	const = 0,
 	value = "0",
-	name = "tWaitTime",
-	type = "float"
+	name = "tWaitTime"
 }
 slot4[1] = slot5
 slot3.pars = slot4

@@ -1,4 +1,4 @@
---- BLOCK #0 1-137, warpins: 1 ---
+--- BLOCK #0 1-143, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -422,18 +422,57 @@ slot17 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-17, warpins: 2 ---
-	slot3 = slot0.isMainPlayer
+	--- BLOCK #2 15-18, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.game
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 18-25, warpins: 1 ---
+	--- BLOCK #3 19-23, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-29, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot5 = slot3
+	slot3 = slot3.refreshSelfPlayerData
+
+	slot3(slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 30-32, warpins: 3 ---
+	slot3 = slot0.isMainPlayer
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 33-40, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.showBubbleMessageRaw
@@ -444,12 +483,12 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot3(MULTRES)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 26-32, warpins: 2 ---
+	--- BLOCK #7 41-47, warpins: 2 ---
 	slot3 = facade
 	slot5 = slot3
 	slot3 = slot3.SendMessageCommand
@@ -459,7 +498,7 @@ slot17 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -728,6 +767,59 @@ slot17 = function(slot0, slot1, slot2)
 end
 
 slot16.on_showTitles_changed = slot17
+
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-18, warpins: 1 ---
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = "on_showTitleExtra_changed ov:%s, nv:%s"
+	slot7 = inspect
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	slot8 = inspect
+	slot10 = slot2
+	MULTRES = slot8(slot10)
+
+	slot3(slot5, slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-25, warpins: 2 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.PLAYER_TITLE_CHANGE
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.on_showTitleExtra_changed = slot17
 
 slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -1025,7 +1117,7 @@ slot17 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-28, warpins: 2 ---
+	--- BLOCK #2 15-25, warpins: 2 ---
 	slot3 = facade
 	slot5 = slot3
 	slot3 = slot3.SendMessageCommand
@@ -1034,6 +1126,34 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.UWAGPMManager
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 26-32, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.UWAGPMManager
+	slot5 = slot3
+	slot3 = slot3.setUserLevel
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 33-40, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.executePetAdditiveAIEvent
 	slot6 = "LevelUpTrigger"
@@ -1044,7 +1164,7 @@ slot17 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -1120,6 +1240,46 @@ slot17 = function(slot0, slot1, slot2)
 end
 
 slot16.on_unlockedAbilityMap_changed = slot17
+
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.PLAYER_CHAT_BUBBLE_CHANGE
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.on_chatBubble_changed = slot17
+
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.PLAYER_CHAT_BUBBLE_DICTS_CHANGE
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.on_chatBubbleDicts_changed = slot17
 
 slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
@@ -1421,7 +1581,7 @@ slot17 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 33-40, warpins: 1 ---
+	--- BLOCK #5 33-41, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.eventEmitter
@@ -1429,15 +1589,16 @@ slot17 = function(slot0, slot1, slot2)
 	slot3 = slot3.emit
 	slot6 = EventConst
 	slot6 = slot6.PLATFORM_ACHIEVEMENT_STAR_TITLE_CHANGED
+	slot7 = slot2
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 41-41, warpins: 4 ---
+	--- BLOCK #6 42-42, warpins: 4 ---
 	return
 	--- END OF BLOCK #6 ---
 

@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 6,
+	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_Love_Test",
-	useForRoute = false,
-	agenttype = "CombatAgent"
+	version = 6,
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4

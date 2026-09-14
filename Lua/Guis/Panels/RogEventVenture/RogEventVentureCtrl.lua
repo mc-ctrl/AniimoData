@@ -1,46 +1,49 @@
---- BLOCK #0 1-90, warpins: 1 ---
+--- BLOCK #0 1-93, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.UICtrl"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Utils.RogueUtils"
+slot4 = "Guis.UICtrl"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.LuaUIUtils"
+slot5 = "Utils.RogueUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientTextUtils"
+slot6 = "Utils.LuaUIUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Timer.TimerManager"
+slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientUtils"
+slot8 = "Core.Timer.TimerManager"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.ItemConst"
+slot9 = "Utils.ClientUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.AnimationUtils"
+slot10 = "Common.Const.ItemConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.PlayableConst"
+slot11 = "Common.Utils.AnimationUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.Const"
+slot12 = "Common.Const.PlayableConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Const.RogueConst"
+slot13 = "Common.Const.Const"
 slot11 = slot11(slot13)
-slot12 = slot0.LightClass
-slot14 = "RogEventVentureCtrl"
-slot15 = slot1
-slot12 = slot12(slot14, slot15)
+slot12 = require
+slot14 = "Const.RogueConst"
+slot12 = slot12(slot14)
+slot13 = slot1.LightClass
+slot15 = "RogEventVentureCtrl"
+slot16 = slot2
+slot13 = slot13(slot15, slot16)
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = RogueUtils
 	slot2 = slot2.isInRogueSpace
@@ -343,9 +346,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onOpen = slot13
+slot13.onOpen = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = false
 	slot0.hasInit = slot1
@@ -362,9 +365,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.closeDirect = slot13
+slot13.closeDirect = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.hasInit
 	--- END OF BLOCK #0 ---
@@ -406,9 +409,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.close = slot13
+slot13.close = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1[1]
 	--- END OF BLOCK #0 ---
@@ -457,7 +460,7 @@ slot13 = function(slot0, slot1)
 
 
 	--- BLOCK #4 18-18, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -581,9 +584,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.processOpenParam = slot13
+slot13.processOpenParam = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -731,9 +734,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onGetReqRogueOpenDice = slot13
+slot13.onGetReqRogueOpenDice = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -823,9 +826,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot13.onDestroy = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.btnInteractFlag
 
@@ -891,9 +894,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onClickClose = slot13
+slot13.onClickClose = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -973,9 +976,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.tryStop = slot13
+slot13.tryStop = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listReward
@@ -1216,9 +1219,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshStructShow = slot13
+slot13.refreshStructShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -1626,9 +1629,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshPointShow = slot13
+slot13.refreshPointShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = ClientUtils
 	slot1 = slot1.getItemCountById
@@ -1686,9 +1689,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshMoneyShow = slot13
+slot13.refreshMoneyShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1797,9 +1800,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshBtnShow = slot13
+slot13.refreshBtnShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkSurprise
@@ -1832,9 +1835,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshSurpriseShow = slot13
+slot13.refreshSurpriseShow = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.moneyEnoughFlag = slot1
 	slot4 = slot0
@@ -1849,9 +1852,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.setMoneyEnough = slot13
+slot13.setMoneyEnough = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.btnInteractFlag = slot1
 	slot4 = slot0
@@ -1866,9 +1869,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.setBtnInteract = slot13
+slot13.setBtnInteract = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = slot0.diceRandomCount
 	slot2 = slot2 + 1
@@ -2044,9 +2047,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onGetStep = slot13
+slot13.onGetStep = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.currentRewardIndex
 	slot2 = slot0.rewardCount
@@ -2158,9 +2161,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.stepOne = slot13
+slot13.stepOne = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentRewardIndex
 	--- END OF BLOCK #0 ---
@@ -2246,9 +2249,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.stepOneForward = slot13
+slot13.stepOneForward = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentPointIndex
 	--- END OF BLOCK #0 ---
@@ -2322,9 +2325,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.stepOneBackward = slot13
+slot13.stepOneBackward = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.rewardState
 	slot2 = slot0.currentRewardIndex
@@ -2543,9 +2546,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.stepEnd = slot13
+slot13.stepEnd = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -2631,9 +2634,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.checkSendReward = slot13
+slot13.checkSendReward = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = true
 	slot2 = 1
@@ -2679,9 +2682,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.checkSurprise = slot13
+slot13.checkSurprise = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.rootComponent
@@ -2737,9 +2740,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.playSurprise = slot13
+slot13.playSurprise = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.currentRewardIndex
 	slot2 = 0
@@ -2837,9 +2840,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.foucsCurrent = slot13
+slot13.foucsCurrent = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

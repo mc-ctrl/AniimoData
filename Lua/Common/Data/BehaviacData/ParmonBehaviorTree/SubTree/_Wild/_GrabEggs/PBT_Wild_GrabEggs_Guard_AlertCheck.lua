@@ -7,39 +7,39 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/_Wild/_GrabEggs/PBT_Wild_GrabEggs_Guard_AlertCheck",
 	useForRoute = false,
-	version = 43,
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/_Wild/_GrabEggs/PBT_Wild_GrabEggs_Guard_AlertCheck",
+	version = 43
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "tSensorTgtId",
+	type = "int",
 	const = 0,
-	value = "0",
-	type = "int"
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "tRandomStopDis",
+	type = "float",
 	const = 0,
-	value = "0",
-	type = "float"
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "tRandomWaitTime",
+	type = "float",
 	const = 0,
-	value = "0",
-	type = "float"
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
 	name = "tSensorTgtPos",
-	value = "0:",
-	type = "vector<float>"
+	type = "vector<float>",
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6

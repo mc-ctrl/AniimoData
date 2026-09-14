@@ -7,38 +7,38 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_MoveToResPointPort",
 	useForRoute = false,
-	version = 7,
-	agenttype = "CombatAgent"
+	name = "ParmonBehaviorTree/SubTree/PBT_MoveToResPointPort",
+	agenttype = "CombatAgent",
+	version = 7
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
 	const = 0,
 	value = "0",
+	type = "int",
 	name = "tPointId"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "int",
 	const = 0,
 	value = "0",
+	type = "int",
 	name = "tPortId"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
 	const = 0,
 	value = "0",
+	type = "float",
 	name = "tTimeout"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "SpeedRateType",
 	value = "Slow",
+	type = "SpeedRateType",
 	name = "tSpeedRateType"
 }
 slot6 = slot0.SpeedRateType
@@ -46,16 +46,16 @@ slot6 = slot6.Slow
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	type = "float",
 	const = 0,
 	value = "0",
+	type = "float",
 	name = "tSpeed"
 }
 slot4[5] = slot5
 slot5 = {
-	type = "bool",
 	const = false,
 	value = "false",
+	type = "bool",
 	name = "tUseAccurateArrive"
 }
 slot4[6] = slot5

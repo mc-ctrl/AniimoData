@@ -1,4 +1,4 @@
---- BLOCK #0 1-30, warpins: 1 ---
+--- BLOCK #0 1-34, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Utils.CalcUtils"
 slot0 = slot0(slot2)
@@ -277,7 +277,7 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #9 18-30, warpins: 1 ---
+	--- BLOCK #9 18-32, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.global
 	slot6 = slot6.physicsMgr
@@ -289,22 +289,22 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot12 = slot3
 	slot13 = slot4
 	slot14 = slot5
-	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	slot6, slot7 = slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	slot8 = slot6
+	slot9 = slot7
 
-	return slot6
+	return slot8, slot9
 
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 31-32, warpins: 2 ---
-	slot6 = {
-		false,
-		0
-	}
+	--- BLOCK #10 33-35, warpins: 2 ---
+	slot6 = false
+	slot7 = 0
 
-	return slot6
+	return slot6, slot7
 	--- END OF BLOCK #10 ---
 
 
@@ -312,6 +312,126 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 end
 
 slot4.getGroundHeight = slot7
+
+slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot5 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-6, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 7-8, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 9-9, warpins: 1 ---
+	slot3 = 4
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 10-11, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 12-12, warpins: 1 ---
+	slot7 = 100
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 13-17, warpins: 2 ---
+	slot8 = Utils
+	slot8 = slot8.checkClient
+	slot8 = slot8()
+	--- END OF BLOCK #8 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 18-34, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.physicsMgr
+	slot10 = slot8
+	slot8 = slot8.GetGroundHeightByPosXYZ
+	slot11 = slot0
+	slot12 = slot1
+	slot13 = slot2
+	slot14 = slot3
+	slot15 = slot4
+	slot16 = slot5
+	slot17 = slot6
+	slot18 = slot7
+	slot8, slot9 = slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18)
+	slot10 = slot8
+	slot11 = slot9
+
+	return slot10, slot11
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 35-37, warpins: 2 ---
+	slot8 = false
+	slot9 = 0
+
+	return slot8, slot9
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot4.getGroundHeightByPosXYZ = slot7
 
 slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -348,7 +468,7 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 7-21, warpins: 2 ---
+	--- BLOCK #4 7-20, warpins: 2 ---
 	slot6 = PhysicsUtils
 	slot6 = slot6.getGroundHeight
 	slot8 = slot0
@@ -356,22 +476,22 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot10 = slot2
 	slot11 = slot3
 	slot12 = slot4
-	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
-	slot7 = Vector3
-	slot7 = slot7.Clone
-	slot9 = slot0
-	slot7 = slot7(slot9)
-	slot8 = slot6[1]
+	slot6, slot7 = slot6(slot8, slot9, slot10, slot11, slot12)
+	slot8 = Vector3
+	slot8 = slot8.Clone
+	slot10 = slot0
+	slot8 = slot8(slot10)
+
 	--- END OF BLOCK #4 ---
 
-	slot8 = if slot8 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 22-23, warpins: 1 ---
+	--- BLOCK #5 21-22, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
@@ -381,46 +501,166 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #6 24-26, warpins: 1 ---
-	slot8 = slot6[2]
-
+	--- BLOCK #6 23-24, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	if slot5 < slot8 then
+	if slot5 < slot7 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 27-27, warpins: 1 ---
-	return slot7
+	--- BLOCK #7 25-25, warpins: 1 ---
+	return slot8
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 28-35, warpins: 3 ---
-	slot8 = slot0.y
-	slot9 = slot6[2]
-	slot8 = slot8 - slot9
-	slot7.y = slot8
-	slot8 = slot7
-	slot9 = true
+	--- BLOCK #8 26-32, warpins: 3 ---
+	slot9 = slot0.y
+	slot9 = slot9 - slot7
+	slot8.y = slot9
+	slot9 = slot8
+	slot10 = true
 
-	return slot8, slot9
+	return slot9, slot10
 
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 36-38, warpins: 1 ---
-	slot8 = slot0
-	slot9 = false
+	--- BLOCK #9 33-35, warpins: 1 ---
+	slot9 = slot0
+	slot10 = false
 
-	return slot8, slot9
+	return slot9, slot10
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-36, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot4.getGroundPos = slot7
+
+slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot7 = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-6, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 7-18, warpins: 2 ---
+	slot8 = PhysicsUtils
+	slot8 = slot8.getGroundHeightByPosXYZ
+	slot10 = slot0
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3
+	slot14 = slot4
+	slot15 = slot5
+	slot16 = slot6
+	slot8, slot9 = slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16)
+	--- END OF BLOCK #4 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 19-20, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot7 < slot9 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-27, warpins: 1 ---
+	slot10 = false
+	slot11 = slot0
+	slot12 = slot1
+	slot13 = slot2
+
+	return slot10, slot11, slot12, slot13
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-33, warpins: 3 ---
+	slot10 = true
+	slot11 = slot0
+	slot12 = slot1 - slot9
+	slot13 = slot2
+
+	return slot10, slot11, slot12, slot13
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 34-38, warpins: 1 ---
+	slot10 = false
+	slot11 = slot0
+	slot12 = slot1
+	slot13 = slot2
+
+	return slot10, slot11, slot12, slot13
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -434,7 +674,7 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot4.getGroundPos = slot7
+slot4.getGroundPosXYZ = slot7
 slot7 = EnableBotTest
 
 --- END OF BLOCK #0 ---
@@ -446,7 +686,7 @@ JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 31-32, warpins: 1 ---
+--- BLOCK #1 35-36, warpins: 1 ---
 slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return slot0
@@ -463,7 +703,7 @@ slot4.getGroundPos = slot7
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 33-56, warpins: 2 ---
+--- BLOCK #2 37-60, warpins: 2 ---
 slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
@@ -646,12 +886,7 @@ end
 slot4.getGroundTangentRotationEx = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.cameraMgr
-	slot1 = slot1.worldCameraInst
-	slot1 = slot1.transform
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot0 = if not slot0 then
@@ -661,73 +896,29 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-8, warpins: 1 ---
+	--- BLOCK #1 3-3, warpins: 1 ---
 	slot0 = 100
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-30, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.physicsMgr
-	slot4 = slot2
-	slot2 = slot2.GetRaycastInfo
-	slot5 = slot1.position
-	slot6 = slot1.rotation
-	slot8 = slot6
-	slot6 = slot6.MulVec3
-	slot9 = Vector3
-	slot9 = slot9.forward
-	slot6 = slot6(slot8, slot9)
-	slot7 = slot0
-	slot8 = CS
-	slot8 = slot8.FunPlus
-	slot8 = slot8.WorldX
-	slot8 = slot8.Const
-	slot8 = slot8.LayerDefine
-	slot8 = slot8.STABLE_GROUND_AND_ENTITY_LAYERS
-	slot2, slot3 = slot2(slot4, slot5, slot6, slot7, slot8)
+	--- BLOCK #2 4-16, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.physicsMgr
+	slot3 = slot1
+	slot1 = slot1.GetScreenCenterPosXYZ
+	slot4 = slot0
+	slot1, slot2, slot3 = slot1(slot3, slot4)
+	slot4 = Vector3
+	slot4 = slot4.ForceNew
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = slot3
+
+	return slot4(slot6, slot7, slot8)
 	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 31-33, warpins: 1 ---
-	slot4 = slot2.point
-
-	return slot4
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 34-43, warpins: 1 ---
-	slot4 = slot1.position
-	slot5 = slot1.rotation
-	slot7 = slot5
-	slot5 = slot5.MulVec3
-	slot8 = Vector3
-	slot8 = slot8.forward
-	slot5 = slot5(slot7, slot8)
-	slot5 = slot5 * slot0
-	slot4 = slot4 + slot5
-
-	return slot4
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 44-44, warpins: 2 ---
-	return
-	--- END OF BLOCK #5 ---
 
 
 
@@ -929,80 +1120,40 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot1 = nil
-	slot2 = false
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
 
-	return slot1, slot2
+	return slot1
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-18, warpins: 2 ---
+	--- BLOCK #2 8-22, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.cameraMgr
-	slot1 = slot1.worldCameraInst
-	slot1 = slot1.transform
-	slot2 = IsNil
-	slot4 = slot1
-	slot2 = slot2(slot4)
+	slot1 = slot1.physicsMgr
+	slot3 = slot1
+	slot1 = slot1.CheckCameraRaycastToPosEx
+	slot4 = slot0.x
+	slot5 = slot0.y
+	slot6 = slot0.z
+	slot7 = CS
+	slot7 = slot7.FunPlus
+	slot7 = slot7.WorldX
+	slot7 = slot7.Const
+	slot7 = slot7.LayerDefine
+	slot7 = slot7.STABLE_GROUND_LAYERS
+
+	return slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 19-21, warpins: 1 ---
-	slot2 = nil
-	slot3 = false
-
-	return slot2, slot3
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 22-44, warpins: 2 ---
-	slot2 = slot1.position
-	slot3 = slot0 - slot2
-	slot6 = slot3
-	slot4 = slot3.Magnitude
-	slot4 = slot4(slot6)
-	slot7 = slot3
-	slot5 = slot3.SetNormalize
-
-	slot5(slot7)
-
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.physicsMgr
-	slot7 = slot5
-	slot5 = slot5.GetRaycastInfo
-	slot8 = slot2
-	slot9 = slot3
-	slot10 = slot4
-	slot11 = CS
-	slot11 = slot11.FunPlus
-	slot11 = slot11.WorldX
-	slot11 = slot11.Const
-	slot11 = slot11.LayerDefine
-	slot11 = slot11.STABLE_GROUND_LAYERS
-
-	return slot5(slot7, slot8, slot9, slot10, slot11)
-	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot4.getCameraRayCastToPosInfo = slot7
+slot4.checkCameraRayCastToPosBlocked = slot7
 
 slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---

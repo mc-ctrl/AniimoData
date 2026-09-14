@@ -30,10 +30,10 @@ slot4 = {}
 slot2[slot3] = slot4
 slot3 = slot0.PET_TEAM_TYPE_TMP_BOSS_CHALLENGE
 slot4 = {
-	forceDefaultCombat = false,
 	useTempExplore = false,
 	useTempFormation = false,
-	bypassControlLevel = true
+	bypassControlLevel = true,
+	forceDefaultCombat = false
 }
 slot2[slot3] = slot4
 slot3 = slot0.PET_TEAM_TYPE_TMP_CATCH_ROGUE
@@ -52,11 +52,11 @@ slot1.PVP_ROBEGG_GROUPID = slot2
 slot2 = 3
 slot1.PVP_BOSSRUSH_GROUPID = slot2
 slot2 = {
-	forceDefaultCombat = true,
 	useTempExplore = true,
 	useTempFormation = true,
 	recordCombatState = false,
-	bypassControlLevel = false
+	bypassControlLevel = false,
+	forceDefaultCombat = true
 }
 slot1.DefaultConfig = slot2
 

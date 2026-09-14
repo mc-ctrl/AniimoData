@@ -7,152 +7,152 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "PuppetAgent",
-	version = 153,
 	useForRoute = false,
+	version = 153,
+	agenttype = "PuppetAgent",
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10203_Elite"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	type = "float",
+	name = "disToTgtForSkillMon",
 	const = 0,
-	name = "disToTgtForSkillMon"
+	type = "float",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
-	type = "float",
+	name = "goBackDist",
 	const = 0,
-	name = "goBackDist"
+	type = "float",
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "MeleeA1",
 	const = 50,
-	name = "MeleeA1"
+	type = "int",
+	value = "50"
 }
 slot4[3] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "MeleeA2",
 	const = 50,
-	name = "MeleeA2"
+	type = "int",
+	value = "50"
 }
 slot4[4] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "RangedA1",
 	const = 50,
-	name = "RangedA1"
+	type = "int",
+	value = "50"
 }
 slot4[5] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "RangedA2",
 	const = 50,
-	name = "RangedA2"
+	type = "int",
+	value = "50"
 }
 slot4[6] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	name = "RangedB1",
 	const = 0,
-	name = "RangedB1"
+	type = "int",
+	value = "0"
 }
 slot4[7] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	name = "RangedB2",
 	const = 0,
-	name = "RangedB2"
+	type = "int",
+	value = "0"
 }
 slot4[8] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "MeleeB1",
 	const = 50,
-	name = "MeleeB1"
+	type = "int",
+	value = "50"
 }
 slot4[9] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "MeleeB2",
 	const = 50,
-	name = "MeleeB2"
+	type = "int",
+	value = "50"
 }
 slot4[10] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "MeleeB3",
 	const = 50,
-	name = "MeleeB3"
+	type = "int",
+	value = "50"
 }
 slot4[11] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	name = "RangedC1",
 	const = 0,
-	name = "RangedC1"
+	type = "int",
+	value = "0"
 }
 slot4[12] = slot5
 slot5 = {
-	value = "20",
-	type = "int",
+	name = "RangedC2",
 	const = 20,
-	name = "RangedC2"
+	type = "int",
+	value = "20"
 }
 slot4[13] = slot5
 slot5 = {
-	value = "20",
-	type = "int",
+	name = "RangedC3",
 	const = 20,
-	name = "RangedC3"
+	type = "int",
+	value = "20"
 }
 slot4[14] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	name = "Ex1",
 	const = 0,
-	name = "Ex1"
+	type = "int",
+	value = "0"
 }
 slot4[15] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "Ex2",
 	const = 50,
-	name = "Ex2"
+	type = "int",
+	value = "50"
 }
 slot4[16] = slot5
 slot5 = {
-	value = "100",
-	type = "int",
+	name = "Ex3",
 	const = 100,
-	name = "Ex3"
+	type = "int",
+	value = "100"
 }
 slot4[17] = slot5
 slot5 = {
-	value = "false",
-	type = "bool",
+	name = "hasUsedEx",
 	const = false,
-	name = "hasUsedEx"
+	type = "bool",
+	value = "false"
 }
 slot4[18] = slot5
 slot5 = {
-	value = "0",
-	type = "int",
+	name = "wyv",
 	const = 0,
-	name = "wyv"
+	type = "int",
+	value = "0"
 }
 slot4[19] = slot5
 slot5 = {
-	value = "50",
-	type = "int",
+	name = "RangeA3",
 	const = 50,
-	name = "RangeA3"
+	type = "int",
+	value = "50"
 }
 slot4[20] = slot5
 slot3.pars = slot4

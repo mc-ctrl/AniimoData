@@ -888,8 +888,17 @@ end
 
 slot0.resolveDisplayInfo = slot8
 
-slot8 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot8 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = PlatformDisplayNameInjector
+	slot5 = slot5.enableRichTextRefs
+	slot7 = slot4
+	slot8 = {
+		"playerNameUBaseText"
+	}
+
+	slot5(slot7, slot8)
+
 	--- END OF BLOCK #0 ---
 
 	slot2 = if not slot2 then
@@ -899,67 +908,72 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
-	slot4 = nil
+	--- BLOCK #1 8-9, warpins: 1 ---
+	slot5 = nil
 
-	return slot4
+	return slot5
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-16, warpins: 2 ---
-	slot4 = PlatformNameMaskService
-	slot4 = slot4.getMaskedDisplayName
-	slot6 = {}
-	slot7 = PlatformNameMaskService
-	slot7 = slot7.Action
-	slot7 = slot7.TeamRoomMemberName
-	slot6.action = slot7
-	slot7 = slot1.uid
-	slot6.uid = slot7
-	slot6.playerInfo = slot2
+	--- BLOCK #2 10-26, warpins: 2 ---
+	slot5 = M
+	slot5 = slot5.resolveDisplayInfo
+	slot7 = slot1
+	slot8 = slot2
+	slot5 = slot5(slot7, slot8)
+	slot6 = PlatformNameMaskService
+	slot6 = slot6.getMaskedDisplayName
+	slot8 = {}
+	slot9 = PlatformNameMaskService
+	slot9 = slot9.Action
+	slot9 = slot9.TeamRoomMemberName
+	slot8.action = slot9
+	slot9 = slot1.uid
+	slot8.uid = slot9
+	slot8.playerInfo = slot5
 	--- END OF BLOCK #2 ---
 
-	slot7 = if not slot3 then
+	slot9 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 17-19, warpins: 1 ---
-	slot7 = slot2.playerName
+	--- BLOCK #3 27-29, warpins: 1 ---
+	slot9 = slot2.playerName
 	--- END OF BLOCK #3 ---
 
-	slot7 = if not slot7 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 20-20, warpins: 1 ---
-	slot7 = ""
+	--- BLOCK #4 30-30, warpins: 1 ---
+	slot9 = ""
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-31, warpins: 3 ---
-	slot6.rawText = slot7
-	slot4 = slot4(slot6)
-	slot5 = PlatformDisplayNameInjector
-	slot5 = slot5.getDisplayName
-	slot7 = {}
-	slot7.playerInfo = slot2
-	slot8 = M
-	slot8 = slot8.CONFIG
-	slot7.config = slot8
-	slot7.rawName = slot4
+	--- BLOCK #5 31-41, warpins: 3 ---
+	slot8.rawText = slot9
+	slot6 = slot6(slot8)
+	slot7 = PlatformDisplayNameInjector
+	slot7 = slot7.getDisplayName
+	slot9 = {}
+	slot9.playerInfo = slot5
+	slot10 = M
+	slot10 = slot10.CONFIG
+	slot9.config = slot10
+	slot9.rawName = slot6
 
-	return slot5(slot7)
+	return slot7(slot9)
 	--- END OF BLOCK #5 ---
 
 

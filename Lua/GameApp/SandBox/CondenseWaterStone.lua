@@ -1,4 +1,4 @@
---- BLOCK #0 1-28, warpins: 1 ---
+--- BLOCK #0 1-34, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -143,6 +143,53 @@ end
 slot2.RPC_SC_StartMove = slot3
 
 slot3 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0._getMajorComp
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot3 = slot2.OnCancelMove
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-12, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.OnCancelMove
+	slot6 = slot1.locationIndex
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-13, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot2.RPC_SC_CancelMove = slot3
+
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -176,6 +223,40 @@ slot3 = function(slot0)
 end
 
 slot2.notifyMoveCompleted = slot3
+
+slot3 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.serverMsg
+	slot4 = "RPC_CS_CancelMove"
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.cancelMove = slot3
+
+slot3 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.serverMsg
+	slot4 = "RPC_CS_NotifyClientReady"
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.notifyClientReady = slot3
 
 slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---

@@ -8,48 +8,48 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_GamePlay_Leave",
+	version = 12,
 	agenttype = "CombatAgent",
-	version = 12
+	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_GamePlay_Leave"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
+	type = "int",
 	const = 0,
-	name = "tTargetActorId",
-	type = "int"
+	value = "0",
+	name = "tTargetActorId"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "35",
+	type = "float",
 	const = 35,
-	name = "tLeaveDistance",
-	type = "float"
+	value = "35",
+	name = "tLeaveDistance"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "4",
+	type = "float",
 	const = 4,
-	name = "tSpeed",
-	type = "float"
+	value = "4",
+	name = "tSpeed"
 }
 slot4[3] = slot5
 slot5 = {
+	type = "SpeedRateType",
 	value = "Mid",
-	name = "tSpeedRateType",
-	type = "SpeedRateType"
+	name = "tSpeedRateType"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Mid
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	value = "10",
+	type = "float",
 	const = 10,
-	name = "tMaxTime",
-	type = "float"
+	value = "10",
+	name = "tMaxTime"
 }
 slot4[5] = slot5
 slot3.pars = slot4

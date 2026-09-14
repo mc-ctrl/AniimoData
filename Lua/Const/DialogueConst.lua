@@ -3,18 +3,15 @@ slot0 = require
 slot2 = "Const.UIConst"
 slot0 = slot0(slot2)
 slot1 = {
-	CUSTOM_BUBBLE_DEFAULT_DURATION = 3,
-	CUSTOM_BUBBLE_DIALOGUE_ID = -1,
 	CHARACTER_RANDOM_BUBBLE = "characterRandomBubble",
 	VIRTUAL_CAMERA_CUT_NAME = "CutCMVcam",
 	NOTICE_HIT_AIR_WALL = 30001001,
 	DEFAULT_SCREEN_TURN_COUNT = 5,
-	DEFAULT_LOOK_AT_FADE_TIME = 3
+	DEFAULT_LOOK_AT_FADE_TIME = 3,
+	CUSTOM_BUBBLE_DEFAULT_DURATION = 3,
+	CUSTOM_BUBBLE_DIALOGUE_ID = -1
 }
 slot2 = {
-	ASIDE = 2,
-	BUBBLE = 1,
-	ONLY_EVENT = 0,
 	NONE = -1,
 	MAXN = 10,
 	AI_ASSISTANT = 10,
@@ -22,27 +19,31 @@ slot2 = {
 	WHITE_SCREEN = 7,
 	TELECALL = 6,
 	BLACK_SCREEN = 5,
-	DIALOGUE = 3
+	DIALOGUE = 3,
+	ASIDE = 2,
+	BUBBLE = 1,
+	ONLY_EVENT = 0
 }
 slot1.ChatType = slot2
 slot2 = {
 	AUTO = 1,
+	NONE = 0,
 	AUTO_UNBREAKABLE = 3,
-	CLICK_NEXT = 2,
-	NONE = 0
+	CLICK_NEXT = 2
 }
 slot1.PlayType = slot2
 slot2 = {
-	SINGLE = 1,
-	TURN = 0
+	TURN = 0,
+	SINGLE = 1
 }
 slot1.PlayMode = slot2
 slot2 = {
-	Player = 0,
 	OpponentTwinPet = 101,
 	PlayerTwinPet = 100,
 	Puppet = 2,
-	Pet = 1
+	Pet = 1,
+	Player = 0,
+	Illegal = -1
 }
 slot1.SpeakerType = slot2
 slot2 = {
@@ -53,11 +54,11 @@ slot2 = {
 }
 slot1.NpcType = slot2
 slot2 = {
-	COMBAT = 4,
-	AI = 3,
 	SIMPLE_EVENT = 2,
 	Interaction = 1,
-	PlotDialogue = 0
+	PlotDialogue = 0,
+	COMBAT = 4,
+	AI = 3
 }
 slot1.SrcType = slot2
 slot2 = {}
@@ -162,10 +163,10 @@ slot1.FORBID_RANDOM_TEXT_AI_BT_TREE = slot2
 slot2 = {}
 slot1.FORBID_RANDOM_TEXT_ENTITY_TAG = slot2
 slot2 = {
-	LOOK_AT_AND_TURN = 0,
-	IDLE_AND_LOOK_AT = 1,
 	ONLY_LOOK_AT = 2,
-	NO_PERFORMANCE = 3
+	NO_PERFORMANCE = 3,
+	LOOK_AT_AND_TURN = 0,
+	IDLE_AND_LOOK_AT = 1
 }
 slot1.PERFORMANCE_LEVEL = slot2
 slot2 = {
@@ -181,9 +182,9 @@ slot2 = {
 }
 slot1.SEND_REPORT_ACTION_EVENT = slot2
 slot2 = {
+	NONE = 2,
 	IMMERSIVE = 1,
-	FREEDOM = 0,
-	NONE = 2
+	FREEDOM = 0
 }
 slot1.CAMERA_MODE = slot2
 slot2 = {

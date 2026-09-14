@@ -149,8 +149,8 @@ slot8 = function(slot0)
 			slot3 = UIConst
 			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
 			slot4 = {
-				checkTouchBegin = false,
-				addSibling = 1
+				addSibling = 1,
+				checkTouchBegin = false
 			}
 			slot5 = data
 			slot5 = slot5.itemId
@@ -267,15 +267,26 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-27, warpins: 2 ---
+	--- BLOCK #2 17-36, warpins: 2 ---
 	slot2 = slot0.view
 	slot2 = slot2.rootWidget
 	slot4 = slot2
 	slot2 = slot2.TryChangePage
 	slot5 = "Type"
-	slot6 = 1
+	slot6 = 0
 
 	slot2(slot4, slot5, slot6)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.titleTxt
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "CHALLENGE_FAIL"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
 
 	slot4 = slot0
 	slot2 = slot0.refreshRewards
@@ -389,9 +400,44 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-28, warpins: 2 ---
-	return
+	--- BLOCK #5 28-37, warpins: 2 ---
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.Navigation
+	slot2 = slot2.ConsoleBar
+	slot2 = slot2.SetStateForAll
+	slot4 = "itemDetail"
+	slot5 = #slot1
+	slot6 = 0
 	--- END OF BLOCK #5 ---
+
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 38-39, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 40-40, warpins: 1 ---
+	slot5 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 41-42, warpins: 2 ---
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #8 ---
 
 
 

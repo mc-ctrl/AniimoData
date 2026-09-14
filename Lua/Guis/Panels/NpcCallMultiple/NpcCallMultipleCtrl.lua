@@ -31,10 +31,10 @@ slot13 = "VX_Node_AiCommunicate_Avatar_Change"
 slot14 = "VX_Node_AiCommunicate_Avatar_In"
 slot15 = "VX_Node_AiCommunicate_Avatar_Out"
 slot16 = {
+	ON_HOLD = 1,
 	HANGUP = 4,
 	CONNECTED = 3,
-	CONNECTING = 2,
-	ON_HOLD = 1
+	CONNECTING = 2
 }
 
 slot17 = function(slot0, slot1)

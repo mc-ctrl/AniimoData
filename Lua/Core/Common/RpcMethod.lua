@@ -27,8 +27,8 @@ slot8 = slot2.Class
 slot10 = "RpcMethod"
 slot8 = slot8(slot10)
 slot9 = {
-	RPC_CS_ = "#FFB74D",
-	RPC_SC_ = "#4FC3F7"
+	RPC_SC_ = "#4FC3F7",
+	RPC_CS_ = "#FFB74D"
 }
 
 slot10 = function(slot0, slot1)
@@ -1105,9 +1105,9 @@ slot11 = function(slot0, slot1, slot2, slot3, ...)
 	slot10 = inspect
 	slot12 = slot5
 	slot13 = {
+		indent = " ",
 		newline = " ",
-		depth = 5,
-		indent = " "
+		depth = 5
 	}
 	slot10 = slot10(slot12, slot13)
 	slot11 = string

@@ -471,68 +471,31 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-16, warpins: 2 ---
+	--- BLOCK #2 5-21, warpins: 2 ---
 	slot1 = true
 	slot0.hasEnterUI = slot1
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #2 ---
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_HUD_V2
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	slot1(slot3, slot4)
 
+	slot3 = slot0
+	slot1 = slot0.enterCountDown
 
-	--- BLOCK #3 17-20, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD_V2
-	--- END OF BLOCK #3 ---
+	slot1(slot3)
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	slot3 = slot0
+	slot1 = slot0.refreshView
 
-
-	--- BLOCK #4 21-22, warpins: 2 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 23-36, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.enterCountDown
-
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.refreshView
-
-	slot2(slot4)
+	slot1(slot3)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -1031,7 +994,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 37-64, warpins: 2 ---
+	--- BLOCK #6 37-63, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -1058,53 +1021,16 @@ slot17 = function(slot0)
 
 	slot2 = pg
 	slot2 = slot2.global
-	slot2 = slot2.prefsCacheUtils
+	slot2 = slot2.ui
 	slot4 = slot2
-	slot2 = slot2.getBool
-	slot5 = "HudV2Enable"
-	slot6 = false
-	slot2 = slot2(slot4, slot5, slot6)
-	--- END OF BLOCK #6 ---
+	slot2 = slot2.close
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_HUD_V2
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 65-68, warpins: 1 ---
-	slot2 = UIConst
-	slot2 = slot2.UI_ID_HUD_V2
-	--- END OF BLOCK #7 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 69-70, warpins: 2 ---
-	slot2 = UIConst
-	slot2 = slot2.UI_ID_HUD
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 71-78, warpins: 2 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot5 = slot3
-	slot3 = slot3.close
-	slot6 = slot2
-
-	slot3(slot5, slot6)
+	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
 
 

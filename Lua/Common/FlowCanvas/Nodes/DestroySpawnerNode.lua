@@ -142,50 +142,69 @@ end
 slot4.On_In_PortCalled = slot5
 
 slot5 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
 	slot3 = slot3(slot5)
-	slot6 = slot3
-	slot4 = slot3.getSpawner
-	slot7 = slot2
-	slot4 = slot4(slot6, slot7)
+
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-13, warpins: 1 ---
-	slot7 = slot4
-	slot5 = slot4.unloadEntity
-
-	slot5(slot7)
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-20, warpins: 1 ---
-	slot5 = LoggerManager
-	slot5 = slot5.checkLogger
-	slot7 = LoggerConst
-	slot7 = slot7.WARN
-	slot5 = slot5(slot7)
+	--- BLOCK #2 7-12, warpins: 2 ---
+	slot6 = slot3
+	slot4 = slot3.getSpawner
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #2 ---
 
-	slot5 = if slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 21-26, warpins: 1 ---
+	--- BLOCK #3 13-16, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.unloadEntity
+
+	slot5(slot7)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 17-23, warpins: 1 ---
+	slot5 = LoggerManager
+	slot5 = slot5.checkLogger
+	slot7 = LoggerConst
+	slot7 = slot7.WARN
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-29, warpins: 1 ---
 	slot5 = slot0.logger
 	slot7 = slot5
 	slot5 = slot5.warn
@@ -194,14 +213,14 @@ slot5 = function(slot0, slot1, slot2)
 
 	slot5(slot7, slot8, slot9)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 27-27, warpins: 3 ---
+	--- BLOCK #6 30-30, warpins: 3 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-49, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -123,6 +123,163 @@ slot14 = function(slot0)
 end
 
 slot13.onHandleThrow = slot14
+
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 6-9, warpins: 1 ---
+	slot2 = slot0.me
+	slot2 = slot2.setContinuousCaptureThrow
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-14, warpins: 1 ---
+	slot2 = slot0.me
+	slot4 = slot2
+	slot2 = slot2.setContinuousCaptureThrow
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-15, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-20, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.checkPawn
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-21, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 22-27, warpins: 2 ---
+	slot2 = slot0.me
+	slot4 = slot2
+	slot2 = slot2.isInCatchMode
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 28-28, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 29-33, warpins: 2 ---
+	slot2 = nil
+	slot3 = slot0.me
+	slot3 = slot3.setContinuousCaptureThrow
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 34-39, warpins: 1 ---
+	slot3 = slot0.me
+	slot5 = slot3
+	slot3 = slot3.setContinuousCaptureThrow
+	slot6 = true
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 40-41, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot2 ~= false then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 42-45, warpins: 1 ---
+	slot3 = slot0.me
+	slot5 = slot3
+	slot3 = slot3.captureThrow
+
+	slot3(slot5)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 46-46, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot13.onHandleContinuousThrow = slot14
 
 slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

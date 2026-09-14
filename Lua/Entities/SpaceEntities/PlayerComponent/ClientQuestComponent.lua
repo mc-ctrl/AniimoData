@@ -1,46 +1,30 @@
---- BLOCK #0 1-86, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Log.LoggerConst"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.Const"
+slot5 = "Core.Log.LoggerManager"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.MessageName"
+slot6 = "Core.Common.CallbackHandler"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Log.LoggerManager"
+slot7 = "GameApp.Quest.QuestUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Common.CallbackHandler"
+slot8 = "Common.Const.QuestConst"
 slot6 = slot6(slot8)
-slot7 = require
-slot9 = "GameApp.Quest.QuestUtils"
+slot7 = slot1.Component
+slot9 = "ClientQuestComponent"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Common.Const.QuestConst"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Const.UIConst"
-slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Common.Utils.Utils"
-slot10 = slot10(slot12)
-slot11 = slot2.Component
-slot13 = "ClientQuestComponent"
-slot11 = slot11(slot13)
-slot12 = table
-slot12 = slot12.insert
-slot13 = table
-slot13 = slot13.remove
 
-slot14 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -49,9 +33,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.ctor = slot14
+slot7.ctor = slot8
 
-slot14 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -60,10 +44,35 @@ slot14 = function(slot0)
 
 end
 
-slot11.start = slot14
+slot7.start = slot8
 
-slot14 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot8 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.quest
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-18, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.quest
@@ -75,16 +84,22 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 	slot4(slot6, slot7, slot8, slot9)
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-19, warpins: 3 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot11.RPC_SC_SendQuestObjectiveChange = slot14
+slot7.RPC_SC_SendQuestObjectiveChange = slot8
 
-slot14 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.isQuestVisible
@@ -123,10 +138,35 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.RPC_SC_SendQuestComActionObjectiveChange = slot14
+slot7.RPC_SC_SendQuestComActionObjectiveChange = slot8
 
-slot14 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot8 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.quest
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-17, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.quest
@@ -137,25 +177,31 @@ slot14 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 18-18, warpins: 3 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot11.RPC_SC_SendQuestRunStateChange = slot14
+slot7.RPC_SC_SendQuestRunStateChange = slot8
 
-slot14 = function(slot0, slot1)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.INFO
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -163,30 +209,66 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #1 8-13, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "clientAcceptQuest id = %d  "
-	slot6 = slot1
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "clientAcceptQuest id = %d  "
+	slot7 = slot1
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-23, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.serverMsg
-	slot5 = "RPC_CS_AcceptQuest"
-	slot6 = slot1
-	slot7 = CallbackHandler
-	slot9 = slot0
-	slot10 = "callbackOnAcceptQuest"
-	MULTRES = slot7(slot9, slot10)
+	--- BLOCK #2 14-21, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.serverMsg
+	slot6 = "RPC_CS_AcceptQuest"
+	slot7 = slot1
 
-	slot2(slot4, slot5, slot6, MULTRES)
+	slot8 = function(slot0, slot1)
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.callbackOnAcceptQuest
+		slot5 = slot0
+		slot6 = slot1
+
+		slot2(slot4, slot5, slot6)
+
+		slot2 = callback
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 10-13, warpins: 1 ---
+		slot2 = callback
+		slot4 = slot0
+		slot5 = slot1
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 14-14, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot3(slot5, slot6, slot7, slot8)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -195,9 +277,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.acceptQuest = slot14
+slot7.acceptQuest = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -264,9 +346,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.callbackOnAcceptQuest = slot14
+slot7.callbackOnAcceptQuest = slot8
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
@@ -331,9 +413,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot11.submitQuest = slot14
+slot7.submitQuest = slot8
 
-slot14 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -353,9 +435,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.abandonQuest = slot14
+slot7.abandonQuest = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -422,9 +504,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.callbackOnAbandonQuest = slot14
+slot7.callbackOnAbandonQuest = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
@@ -443,9 +525,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.RPC_SC_SendQuestStateInfo = slot14
+slot7.RPC_SC_SendQuestStateInfo = slot8
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot4 = {}
 	slot4.npcId = slot1
@@ -477,9 +559,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot11.RPC_SC_openNpcPhoneUI = slot14
+slot7.RPC_SC_openNpcPhoneUI = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -655,9 +737,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.traceQuest = slot14
+slot7.traceQuest = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -835,10 +917,11 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.on_curTraceQuest_changed = slot14
+slot7.on_curTraceQuest_changed = slot8
 
-slot14 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot8 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #0 ---
 
 	if slot1 ~= 0 then
@@ -848,41 +931,42 @@ slot14 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-8, warpins: 1 ---
-	slot3 = QuestUtils
-	slot3 = slot3.getQuestData
-	slot5 = slot1
-	slot3 = slot3(slot5)
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getQuestData
+	slot6 = slot1
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #1 ---
 
-	if slot3 ~= nil then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 9-20, warpins: 1 ---
-	slot4 = facade
-	slot6 = slot4
-	slot4 = slot4.SendMessageCommand
-	slot7 = MessageName
-	slot7 = slot7.QUEST_ON_TRACE_CHANGE
-	slot8 = {}
-	slot8.questData = slot3
-	slot9 = QuestConst
-	slot9 = slot9.QUEST_TRACE_TYPE
-	slot9 = slot9.STORY
-	slot8.type = slot9
+	--- BLOCK #2 10-22, warpins: 1 ---
+	slot5 = facade
+	slot7 = slot5
+	slot5 = slot5.SendMessageCommand
+	slot8 = MessageName
+	slot8 = slot8.QUEST_ON_TRACE_CHANGE
+	slot9 = {}
+	slot9.questData = slot4
+	slot10 = QuestConst
+	slot10 = slot10.QUEST_TRACE_TYPE
+	slot10 = slot10.STORY
+	slot9.type = slot10
 
-	slot4(slot6, slot7, slot8)
+	slot5(slot7, slot8, slot9)
 
+	slot3 = true
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 21-22, warpins: 3 ---
+	--- BLOCK #3 23-24, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
 	if slot2 ~= 0 then
@@ -892,28 +976,81 @@ slot14 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 23-28, warpins: 1 ---
-	slot3 = QuestUtils
-	slot3 = slot3.getQuestData
-	slot5 = slot2
-	slot3 = slot3(slot5)
+	--- BLOCK #4 25-30, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getQuestData
+	slot6 = slot2
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #4 ---
 
-	if slot3 ~= nil then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 29-40, warpins: 1 ---
+	--- BLOCK #5 31-43, warpins: 1 ---
+	slot5 = facade
+	slot7 = slot5
+	slot5 = slot5.SendMessageCommand
+	slot8 = MessageName
+	slot8 = slot8.QUEST_ON_TRACE_CHANGE
+	slot9 = {}
+	slot9.questData = slot4
+	slot10 = QuestConst
+	slot10 = slot10.QUEST_TRACE_TYPE
+	slot10 = slot10.STORY
+	slot9.type = slot10
+
+	slot5(slot7, slot8, slot9)
+
+	slot3 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 44-45, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 46-47, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 48-52, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.isStoryTracingAllFinished
+	slot4 = slot4()
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 53-63, warpins: 1 ---
 	slot4 = facade
 	slot6 = slot4
 	slot4 = slot4.SendMessageCommand
 	slot7 = MessageName
 	slot7 = slot7.QUEST_ON_TRACE_CHANGE
 	slot8 = {}
-	slot8.questData = slot3
 	slot9 = QuestConst
 	slot9 = slot9.QUEST_TRACE_TYPE
 	slot9 = slot9.STORY
@@ -921,32 +1058,32 @@ slot14 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #6 41-49, warpins: 3 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.quest
-	slot5 = slot3
-	slot3 = slot3.onQuestTraceChange
-	slot6 = slot2
-	slot7 = slot1
+	--- BLOCK #10 64-72, warpins: 4 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.quest
+	slot6 = slot4
+	slot4 = slot4.onQuestTraceChange
+	slot7 = slot2
+	slot8 = slot1
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot11.on_curTraceStoryQuest_changed = slot14
+slot7.on_curTraceStoryQuest_changed = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #0 ---
@@ -1096,9 +1233,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.on_curTraceTempQuest_changed = slot14
+slot7.on_curTraceTempQuest_changed = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #0 ---
@@ -1250,9 +1387,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.on_curTraceSecondQuest_changed = slot14
+slot7.on_curTraceSecondQuest_changed = slot8
 
-slot14 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
@@ -1271,9 +1408,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.RPC_SC_ClueQuestRevealFlagChanged = slot14
+slot7.RPC_SC_ClueQuestRevealFlagChanged = slot8
 
-slot14 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1283,7 +1420,7 @@ slot14 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
@@ -1297,7 +1434,7 @@ slot14 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
@@ -1310,11 +1447,11 @@ slot14 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 17-22, warpins: 1 ---
+	--- BLOCK #3 17-29, warpins: 1 ---
 	slot1 = QuestUtils
 	slot1 = slot1.switchHudPageType
 	slot3 = QuestConst
@@ -1323,22 +1460,50 @@ slot14 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot1 = slot1.quest
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 23-23, warpins: 4 ---
-	return
+	--- BLOCK #4 30-40, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot1 = slot1.quest
+	slot3 = slot1
+	slot1 = slot1.switchQuestPageType
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.STORY
+
+	slot1(slot3, slot4)
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 41-41, warpins: 5 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot11.RPC_SC_ClearSideQuestAiTip = slot14
+slot7.RPC_SC_ClearSideQuestAiTip = slot8
 
-slot14 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1347,9 +1512,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.RPC_SC_ToFillQuestFirstTrace = slot14
+slot7.RPC_SC_ToFillQuestFirstTrace = slot8
 
-slot14 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -1365,9 +1530,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.setSideQuestAiTip = slot14
+slot7.setSideQuestAiTip = slot8
 
-slot14 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -1383,9 +1548,109 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.reDoQuestCompleteActions = slot14
+slot7.reDoQuestCompleteActions = slot8
 
-return slot11
+slot8 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.serverMsg
+	slot7 = "RPC_CS_GetChapterQuestProgressReward"
+	slot8 = slot1
+
+	slot9 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = callback
+		--- END OF BLOCK #0 ---
+
+		if slot1 ~= nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-6, warpins: 1 ---
+		slot1 = callback
+		slot3 = slot0
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-7, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.getChapterQuestProgressReward = slot8
+
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.quest
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-16, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.quest
+	slot4 = slot2
+	slot2 = slot2.onTimeTokenReached
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot7.RPC_SC_TimeTokenReached = slot8
+
+return slot7
 --- END OF BLOCK #0 ---
 
 

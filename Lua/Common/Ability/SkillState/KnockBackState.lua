@@ -56,12 +56,20 @@ end
 slot13.ctor = slot14
 
 slot14 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = SkillState
 	slot3 = slot3.enter
 	slot5 = slot0
 
 	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.clearDisplacementVelocitySource
+	slot6 = Const
+	slot6 = slot6.DisplacementVelocitySource
+	slot6 = slot6.KnockBack
+
+	slot3(slot5, slot6)
 
 	slot3 = slot0.owner
 	slot3 = slot3.authority
@@ -76,7 +84,7 @@ slot14 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 11-30, warpins: 1 ---
+	--- BLOCK #1 17-36, warpins: 1 ---
 	slot3 = 0
 	slot0.accelerateTime = slot3
 	slot3 = slot0.owner
@@ -154,7 +162,7 @@ slot14 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 31-39, warpins: 1 ---
+	--- BLOCK #2 37-45, warpins: 1 ---
 	slot4 = slot0.owner
 	slot4 = slot4.skillStateMgr
 	slot6 = slot4
@@ -171,7 +179,7 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 40-48, warpins: 2 ---
+	--- BLOCK #3 46-54, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.setKnockDirection
 	slot7 = slot0.dir
@@ -190,7 +198,7 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 49-57, warpins: 2 ---
+	--- BLOCK #4 55-63, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.playSkillSkateAnimation
 	slot6 = PlayableConst
@@ -209,7 +217,7 @@ slot14 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 58-64, warpins: 1 ---
+	--- BLOCK #5 64-70, warpins: 1 ---
 	slot3 = slot0.owner
 	slot5 = slot3
 	slot3 = slot3.pauseBt
@@ -224,7 +232,7 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 65-66, warpins: 2 ---
+	--- BLOCK #6 71-72, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -418,7 +426,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 83-103, warpins: 1 ---
+	--- BLOCK #12 83-107, warpins: 1 ---
 	slot2 = slot0.impulseH
 	slot3 = AbilityConst
 	slot3 = slot3.KNOCK_ACCELERATE_TIME
@@ -432,11 +440,15 @@ slot14 = function(slot0, slot1)
 	slot3 = slot3 * slot2
 	slot3 = slot3 * slot1
 	slot6 = slot0
-	slot4 = slot0.addDisplacementOffset
-	slot7 = slot3
-	slot8 = true
+	slot4 = slot0.setDisplacementVelocitySource
+	slot7 = Const
+	slot7 = slot7.DisplacementVelocitySource
+	slot7 = slot7.KnockBack
+	slot8 = slot3
+	slot9 = slot1
+	slot10 = true
 
-	slot4(slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	slot4 = slot0.accelerateTime
 	slot4 = slot4 + slot1
@@ -449,7 +461,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 104-114, warpins: 2 ---
+	--- BLOCK #13 108-118, warpins: 2 ---
 	slot2 = slot0.impulseH
 	slot3 = AbilitySettingGlobalConstData
 	slot3 = slot3.friction
@@ -468,7 +480,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 115-122, warpins: 1 ---
+	--- BLOCK #14 119-126, warpins: 1 ---
 	slot2 = 0
 	slot3 = slot0.impulseH
 	slot4 = AbilitySettingGlobalConstData
@@ -482,7 +494,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 123-138, warpins: 2 ---
+	--- BLOCK #15 127-137, warpins: 2 ---
 	slot3 = slot0.dir
 	slot4 = slot0.impulseH
 	slot4 = slot4 + slot2
@@ -490,13 +502,6 @@ slot14 = function(slot0, slot1)
 	slot3 = slot3 * 0.5
 	slot3 = slot3 * slot1
 	slot0.impulseH = slot2
-	slot6 = slot0
-	slot4 = slot0.addDisplacementOffset
-	slot7 = slot3
-	slot8 = true
-
-	slot4(slot6, slot7, slot8)
-
 	slot4 = slot0.impulseH
 	slot5 = 0
 	--- END OF BLOCK #15 ---
@@ -508,7 +513,22 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 139-145, warpins: 1 ---
+	--- BLOCK #16 138-156, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.clearDisplacementVelocitySource
+	slot7 = Const
+	slot7 = slot7.DisplacementVelocitySource
+	slot7 = slot7.KnockBack
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.addDisplacementOffset
+	slot7 = slot3
+	slot8 = true
+
+	slot4(slot6, slot7, slot8)
+
 	slot4 = slot0.owner
 	slot4 = slot4.skillStateMgr
 	slot6 = slot4
@@ -520,12 +540,29 @@ slot14 = function(slot0, slot1)
 
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #17 146-146, warpins: 2 ---
-	return
+	--- BLOCK #17 157-165, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setDisplacementVelocitySource
+	slot7 = Const
+	slot7 = slot7.DisplacementVelocitySource
+	slot7 = slot7.KnockBack
+	slot8 = slot3
+	slot9 = slot1
+	slot10 = true
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 166-166, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
 
 
 
@@ -534,7 +571,15 @@ end
 slot13.tick = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+	--- BLOCK #0 1-24, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearDisplacementVelocitySource
+	slot4 = Const
+	slot4 = slot4.DisplacementVelocitySource
+	slot4 = slot4.KnockBack
+
+	slot1(slot3, slot4)
+
 	slot1 = SkillState
 	slot1 = slot1.leave
 	slot3 = slot0
@@ -566,7 +611,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #1 19-25, warpins: 1 ---
+	--- BLOCK #1 25-31, warpins: 1 ---
 	slot1 = slot0.owner
 	slot3 = slot1
 	slot1 = slot1.resumeBt
@@ -581,7 +626,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 26-26, warpins: 2 ---
+	--- BLOCK #2 32-32, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -632,25 +677,50 @@ slot14 = function(slot0, slot1)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
 	--- BLOCK #3 21-26, warpins: 1 ---
 	slot2 = slot0.owner
 	slot2.knockState = slot1
-	slot2 = pg
-	slot2 = slot2.component
+	slot2 = slot0.owner
+	slot2 = slot2.refreshKnockGroup
 	--- END OF BLOCK #3 ---
 
-	if slot2 == "client" then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 27-32, warpins: 1 ---
+	--- BLOCK #4 27-31, warpins: 1 ---
+	slot2 = slot0.owner
+	slot4 = slot2
+	slot2 = slot2.refreshKnockGroup
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-35, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.component
+	--- END OF BLOCK #5 ---
+
+	if slot2 == "client" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 36-41, warpins: 1 ---
 	slot2 = slot0.owner
 	slot4 = slot2
 	slot2 = slot2.serverMsgNoGC
@@ -659,14 +729,14 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 33-33, warpins: 3 ---
+	--- BLOCK #7 42-42, warpins: 3 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 

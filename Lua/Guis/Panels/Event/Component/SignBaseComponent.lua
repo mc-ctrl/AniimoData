@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-55, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -39,8 +39,11 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Guis.Panels.Event.Component.SignFourteenDayComponent"
 slot11 = slot11(slot13)
+slot12 = require
+slot14 = "Guis.Panels.Event.Component.SignLongDayComponent"
+slot12 = slot12(slot14)
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -101,9 +104,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.findObjects = slot12
+slot9.findObjects = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -141,20 +144,53 @@ slot12 = function(slot0)
 
 	slot3(slot5, slot6, slot7)
 
-	slot3 = slot1.signinDayType
+	slot3 = slot0.eventType
 	slot4 = ActivityConst
-	slot4 = slot4.SignDayType
-	slot4 = slot4.SevenDay
+	slot4 = slot4.EventType
+	slot4 = slot4.LongTermSign
 	--- END OF BLOCK #2 ---
 
 	if slot3 == slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 25-33, warpins: 1 ---
+	--- BLOCK #3 25-29, warpins: 1 ---
+	slot3 = ActivityConst
+	slot3 = slot3.SignDayType
+	slot3 = slot3.LongSign
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 30-30, warpins: 2 ---
+	slot3 = slot1.signinDayType
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 31-35, warpins: 2 ---
+	slot4 = ActivityConst
+	slot4 = slot4.SignDayType
+	slot4 = slot4.SevenDay
+	--- END OF BLOCK #5 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 36-44, warpins: 1 ---
 	slot4 = slot0.rootUComponent
 	slot6 = slot4
 	slot4 = slot4.TryChangePage
@@ -164,16 +200,16 @@ slot12 = function(slot0)
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.showPage
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 34-43, warpins: 1 ---
+	--- BLOCK #7 45-54, warpins: 1 ---
 	slot4 = SignSevenDayComponent
 	slot4 = slot4.new
 	slot6 = slot0
@@ -183,37 +219,37 @@ slot12 = function(slot0)
 	slot8.eventId = slot9
 	slot4 = slot4(slot6, slot7, slot8)
 	slot0.showPage = slot4
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #5 44-48, warpins: 1 ---
+	--- BLOCK #8 55-59, warpins: 1 ---
 	slot4 = slot0.showPage
 	slot6 = slot4
 	slot4 = slot4.refreshPage
 
 	slot4(slot6)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #6 49-53, warpins: 1 ---
+	--- BLOCK #9 60-64, warpins: 1 ---
 	slot4 = ActivityConst
 	slot4 = slot4.SignDayType
 	slot4 = slot4.FourteenDay
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 	if slot3 == slot4 then
-	JUMP TO BLOCK #7
-	else
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #7 54-62, warpins: 1 ---
+	--- BLOCK #10 65-73, warpins: 1 ---
 	slot4 = slot0.rootUComponent
 	slot6 = slot4
 	slot4 = slot4.TryChangePage
@@ -223,16 +259,16 @@ slot12 = function(slot0)
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.showPage
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 63-72, warpins: 1 ---
+	--- BLOCK #11 74-83, warpins: 1 ---
 	slot4 = SignFourteenDayComponent
 	slot4 = slot4.new
 	slot6 = slot0
@@ -242,39 +278,98 @@ slot12 = function(slot0)
 	slot8.eventId = slot9
 	slot4 = slot4(slot6, slot7, slot8)
 	slot0.showPage = slot4
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #9 73-77, warpins: 1 ---
+	--- BLOCK #12 84-88, warpins: 1 ---
 	slot4 = slot0.showPage
 	slot6 = slot4
 	slot4 = slot4.refreshPage
 
 	slot4(slot6)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #10 78-84, warpins: 1 ---
+	--- BLOCK #13 89-93, warpins: 1 ---
+	slot4 = ActivityConst
+	slot4 = slot4.SignDayType
+	slot4 = slot4.LongSign
+	--- END OF BLOCK #13 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 94-102, warpins: 1 ---
+	slot4 = slot0.rootUComponent
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "status"
+	slot8 = 2
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.showPage
+	--- END OF BLOCK #14 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 103-112, warpins: 1 ---
+	slot4 = SignLongDayComponent
+	slot4 = slot4.new
+	slot6 = slot0
+	slot7 = slot0.transform
+	slot8 = {}
+	slot9 = slot0.eventId
+	slot8.eventId = slot9
+	slot4 = slot4(slot6, slot7, slot8)
+	slot0.showPage = slot4
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #16 113-117, warpins: 1 ---
+	slot4 = slot0.showPage
+	slot6 = slot4
+	slot4 = slot4.refreshPage
+
+	slot4(slot6)
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #17 118-124, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
 	slot6 = LoggerConst
 	slot6 = slot6.ERROR
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #17 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #11 85-90, warpins: 1 ---
+	--- BLOCK #18 125-130, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.error
@@ -283,27 +378,27 @@ slot12 = function(slot0)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #12 91-94, warpins: 6 ---
+	--- BLOCK #19 131-134, warpins: 8 ---
 	slot6 = slot0
 	slot4 = slot0.refreshCommonNodeRedDot
 
 	slot4(slot6)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot9.refreshPage = slot12
+slot9.refreshPage = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.petId
 	--- END OF BLOCK #0 ---
@@ -366,9 +461,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot9.showSignItemInfo = slot12
+slot9.showSignItemInfo = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
@@ -396,9 +491,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot9.setSignRodDot = slot12
+slot9.setSignRodDot = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.showPage
 	--- END OF BLOCK #0 ---
@@ -438,7 +533,7 @@ slot12 = function(slot0)
 
 end
 
-slot9.onDestroy = slot12
+slot9.onDestroy = slot13
 
 return slot9
 --- END OF BLOCK #0 ---

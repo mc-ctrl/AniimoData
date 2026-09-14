@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = true,
-	agenttype = "CombatAgent",
+	version = 5,
 	name = "ParmonBehaviorTree/SubTree/PBT_SendMsgToPartners",
-	version = 5
+	useForRoute = true,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -26,16 +26,16 @@ slot4[1] = slot5
 slot5 = {
 	name = "tMessageName",
 	type = "string",
-	value = "",
-	const = ""
+	const = "",
+	value = ""
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "1"
+	id = "1",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -44,8 +44,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Assignment",
-	id = "4"
+	id = "4",
+	class = "Assignment"
 }
 slot8 = {}
 slot9 = {
@@ -79,8 +79,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "2"
+	id = "2",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

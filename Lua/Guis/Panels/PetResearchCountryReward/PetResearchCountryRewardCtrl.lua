@@ -640,16 +640,15 @@ end
 slot9.getReward = slot12
 
 slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
-	slot2 = slot2.serverMsg
-	slot5 = "RPC_CS_GetPetHandbookCountryLevelReward"
-	slot6 = slot0.countryId
-	slot7 = slot1
+	slot2 = slot2.getPetHandbookCountryLevelReward
+	slot5 = slot0.countryId
+	slot6 = slot1
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---

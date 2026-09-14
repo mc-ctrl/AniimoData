@@ -53,8 +53,13 @@ FLOW; TARGET BLOCK #4
 slot0.lshift = slot4
 
 slot4 = function(slot0, slot1)
-	--- BLOCK #0 1-29, warpins: 1 ---
+	--- BLOCK #0 1-32, warpins: 1 ---
 	slot2 = 0.02
+	slot3 = Vector3
+	slot3 = slot3.enableCreateFromCache
+
+	slot3()
+
 	slot3 = Vector3
 	slot5 = slot0.x
 	slot6 = slot0.y
@@ -90,7 +95,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 30-33, warpins: 1 ---
+	--- BLOCK #1 33-36, warpins: 1 ---
 	slot6 = slot4.x
 	slot7 = 1
 	--- END OF BLOCK #1 ---
@@ -102,7 +107,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 34-37, warpins: 1 ---
+	--- BLOCK #2 37-40, warpins: 1 ---
 	slot6 = slot4.y
 	slot7 = 0
 	--- END OF BLOCK #2 ---
@@ -114,7 +119,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 38-41, warpins: 1 ---
+	--- BLOCK #3 41-44, warpins: 1 ---
 	slot6 = slot4.y
 	slot7 = 1
 	--- END OF BLOCK #3 ---
@@ -126,7 +131,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 42-45, warpins: 1 ---
+	--- BLOCK #4 45-48, warpins: 1 ---
 	slot6 = slot4.z
 	slot7 = 0
 	--- END OF BLOCK #4 ---
@@ -138,21 +143,21 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 46-47, warpins: 5 ---
+	--- BLOCK #5 49-50, warpins: 5 ---
 	slot6 = false
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 48-48, warpins: 1 ---
+	--- BLOCK #6 51-51, warpins: 1 ---
 	slot6 = true
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 49-52, warpins: 2 ---
+	--- BLOCK #7 52-55, warpins: 2 ---
 	slot7 = slot5.x
 	slot8 = 0
 	--- END OF BLOCK #7 ---
@@ -164,7 +169,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 53-56, warpins: 1 ---
+	--- BLOCK #8 56-59, warpins: 1 ---
 	slot7 = slot5.x
 	slot8 = 1
 	--- END OF BLOCK #8 ---
@@ -176,7 +181,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 57-60, warpins: 1 ---
+	--- BLOCK #9 60-63, warpins: 1 ---
 	slot7 = slot5.y
 	slot8 = 0
 	--- END OF BLOCK #9 ---
@@ -188,7 +193,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 61-64, warpins: 1 ---
+	--- BLOCK #10 64-67, warpins: 1 ---
 	slot7 = slot5.y
 	slot8 = 1
 	--- END OF BLOCK #10 ---
@@ -200,7 +205,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 65-68, warpins: 1 ---
+	--- BLOCK #11 68-71, warpins: 1 ---
 	slot7 = slot5.z
 	slot8 = 0
 	--- END OF BLOCK #11 ---
@@ -212,21 +217,21 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 69-70, warpins: 5 ---
+	--- BLOCK #12 72-73, warpins: 5 ---
 	slot7 = false
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 71-71, warpins: 1 ---
+	--- BLOCK #13 74-74, warpins: 1 ---
 	slot7 = true
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 72-75, warpins: 2 ---
+	--- BLOCK #14 75-78, warpins: 2 ---
 	slot8 = slot4.y
 	slot9 = 0
 	--- END OF BLOCK #14 ---
@@ -238,7 +243,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 76-79, warpins: 1 ---
+	--- BLOCK #15 79-82, warpins: 1 ---
 	slot8 = slot5.y
 	slot9 = 1
 	--- END OF BLOCK #15 ---
@@ -250,7 +255,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 80-83, warpins: 1 ---
+	--- BLOCK #16 83-86, warpins: 1 ---
 	slot8 = slot4.z
 	slot9 = 0
 	--- END OF BLOCK #16 ---
@@ -262,7 +267,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 84-87, warpins: 1 ---
+	--- BLOCK #17 87-90, warpins: 1 ---
 	slot8 = slot5.z
 	slot9 = 0
 	--- END OF BLOCK #17 ---
@@ -274,21 +279,22 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 88-89, warpins: 4 ---
+	--- BLOCK #18 91-92, warpins: 4 ---
 	slot8 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 90-90, warpins: 1 ---
+	--- BLOCK #19 93-93, warpins: 1 ---
 	slot8 = true
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 91-92, warpins: 2 ---
+	--- BLOCK #20 94-96, warpins: 2 ---
+	slot9 = false
 	--- END OF BLOCK #20 ---
 
 	slot6 = if not slot6 then
@@ -298,7 +304,7 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #21 93-94, warpins: 1 ---
+	--- BLOCK #21 97-98, warpins: 1 ---
 	--- END OF BLOCK #21 ---
 
 	slot7 = if not slot7 then
@@ -308,65 +314,59 @@ slot4 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #22 95-96, warpins: 1 ---
+	--- BLOCK #22 99-100, warpins: 1 ---
 	--- END OF BLOCK #22 ---
 
 	slot8 = if slot8 then
 	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #23 97-109, warpins: 3 ---
-	slot9 = math
-	slot9 = slot9.max
-	slot11 = slot4.y
-	slot12 = 0
-	slot9 = slot9(slot11, slot12)
+	--- BLOCK #23 101-113, warpins: 3 ---
 	slot10 = math
-	slot10 = slot10.min
-	slot12 = slot5.y
-	slot13 = 1
+	slot10 = slot10.max
+	slot12 = slot4.y
+	slot13 = 0
 	slot10 = slot10(slot12, slot13)
-	slot11 = slot10 - slot9
+	slot11 = math
+	slot11 = slot11.min
+	slot13 = slot5.y
+	slot14 = 1
+	slot11 = slot11(slot13, slot14)
+	slot12 = slot11 - slot10
 	--- END OF BLOCK #23 ---
 
-	if slot2 >= slot11 then
+	if slot2 >= slot12 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 110-111, warpins: 1 ---
-	slot11 = false
+	--- BLOCK #24 114-115, warpins: 1 ---
+	slot9 = false
 	--- END OF BLOCK #24 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #25 112-112, warpins: 1 ---
-	slot11 = true
-
+	--- BLOCK #25 116-116, warpins: 1 ---
+	slot9 = true
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 113-113, warpins: 2 ---
-	return slot11
+	--- BLOCK #26 117-120, warpins: 3 ---
+	slot10 = Vector3
+	slot10 = slot10.disableCreateFromCache
 
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 114-115, warpins: 2 ---
-	slot9 = false
+	slot10()
 
 	return slot9
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #26 ---
 
 
 
@@ -1080,9 +1080,14 @@ slot4 = function()
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 132-158, warpins: 2 ---
+	--- BLOCK #29 132-164, warpins: 2 ---
 	slot14 = slot11 + slot13
 	slot14 = slot14 / 2
+	slot15 = Vector3
+	slot15 = slot15.enableCreateFromCache
+
+	slot15()
+
 	slot15 = Vector3
 	slot17 = slot10.x
 	slot18 = slot10.y
@@ -1106,6 +1111,11 @@ slot4 = function()
 	slot20 = slot10
 	slot21 = slot14
 	slot18 = slot18(slot20, slot21)
+	slot19 = Vector3
+	slot19 = slot19.disableCreateFromCache
+
+	slot19()
+
 	--- END OF BLOCK #29 ---
 
 	slot18 = if slot18 then
@@ -1115,7 +1125,7 @@ slot4 = function()
 	end
 
 
-	--- BLOCK #30 159-160, warpins: 1 ---
+	--- BLOCK #30 165-166, warpins: 1 ---
 	--- END OF BLOCK #30 ---
 
 	slot17 = if not slot17 then
@@ -1125,36 +1135,36 @@ slot4 = function()
 	end
 
 
-	--- BLOCK #31 161-166, warpins: 1 ---
-	slot18 = tostring
-	slot20 = slot9.uid
-	slot18 = slot18(slot20)
-	slot19 = slot1[slot18]
+	--- BLOCK #31 167-172, warpins: 1 ---
+	slot19 = tostring
+	slot21 = slot9.uid
+	slot19 = slot19(slot21)
+	slot20 = slot1[slot19]
 	--- END OF BLOCK #31 ---
 
-	slot19 = if not slot19 then
+	slot20 = if not slot20 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 167-173, warpins: 1 ---
-	slot19 = true
-	slot1[slot18] = slot19
-	slot19 = table
-	slot19 = slot19.insert
-	slot21 = slot0
-	slot22 = slot9.uid
+	--- BLOCK #32 173-179, warpins: 1 ---
+	slot20 = true
+	slot1[slot19] = slot20
+	slot20 = table
+	slot20 = slot20.insert
+	slot22 = slot0
+	slot23 = slot9.uid
 
-	slot19(slot21, slot22)
+	slot20(slot22, slot23)
 
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 174-175, warpins: 12 ---
+	--- BLOCK #33 180-181, warpins: 12 ---
 	--- END OF BLOCK #33 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
@@ -1162,7 +1172,7 @@ slot4 = function()
 	GO OUT TO BLOCK #34
 
 
-	--- BLOCK #34 176-176, warpins: 1 ---
+	--- BLOCK #34 182-182, warpins: 1 ---
 	return slot0
 	--- END OF BLOCK #34 ---
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-109, warpins: 1 ---
+--- BLOCK #0 1-118, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -35,28 +35,37 @@ slot9 = require
 slot11 = "Data.pet_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Guis.Utils.AvatarUtils"
+slot12 = "Utils.ClientModelUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.appearance_jewelry_pet_data"
+slot13 = "Guis.Utils.AvatarUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_appearance_point_data"
+slot14 = "Data.appearance_jewelry_pet_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.PetJewelryOssCache"
+slot15 = "Data.pet_appearance_point_data"
 slot13 = slot13(slot15)
-slot14 = {}
-slot4.messages = slot14
+slot14 = require
+slot16 = "Utils.PetJewelryOssCache"
+slot14 = slot14(slot16)
+slot15 = {}
+slot4.messages = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.initQuickPhotoCache
+
+	slot2(slot4)
 
 	slot2 = nil
 	slot0.selectTabBtn = slot2
@@ -68,9 +77,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot14
+slot4.onCreate = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-63, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
@@ -539,9 +548,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.addListener = slot14
+slot4.addListener = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.restoreCurrentWearModel
@@ -567,10 +576,10 @@ slot14 = function(slot0)
 
 end
 
-slot4.onDestroy = slot14
+slot4.onDestroy = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -591,6 +600,15 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
+	slot2 = slot0.view
+	slot2 = slot2.arrowUImage
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -598,9 +616,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot14
+slot4.onOpen = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -629,44 +647,65 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshConsoleBarState = slot14
+slot4.refreshConsoleBarState = slot15
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-28, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = false
 	slot0._hasRestoreWear = slot1
-	slot3 = slot0
-	slot1 = slot0.clearTryWearOnEnter
+	slot1 = PetJewelryOssCache
+	slot1 = slot1.ensureLoaded
+
+	slot3 = function()
+		--- BLOCK #0 1-33, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.clearTryWearOnEnter
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.initAvatarScene
+		slot3 = self
+		slot3 = slot3.curPetId
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshList
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.getTitleInfo
+		slot0 = slot0(slot2)
+		slot1 = self
+		slot1 = slot1.view
+		slot1 = slot1.imgPet
+		slot2 = slot0.refPetIcon
+		slot1.url = slot2
+		slot1 = ClientTextUtils
+		slot1 = slot1.setText
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.petClanTitle
+		slot4 = slot0.title
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
 
 	slot1(slot3)
-
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.initAvatarScene
-	slot4 = slot0.curPetId
-
-	slot1(slot3, slot4)
-
-	slot3 = slot0
-	slot1 = slot0.refreshList
-
-	slot1(slot3)
-
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getTitleInfo
-	slot1 = slot1(slot3)
-	slot2 = slot0.view
-	slot2 = slot2.imgPet
-	slot3 = slot1.refPetIcon
-	slot2.url = slot3
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.view
-	slot4 = slot4.petClanTitle
-	slot5 = slot1.title
-
-	slot2(slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -675,9 +714,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onShow = slot14
+slot4.onShow = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -761,13 +800,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 28-35, warpins: 3 ---
-	slot5 = slot2
-	slot3 = slot2.showPetModel
-	slot6 = slot0.curPetId
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #7 28-31, warpins: 3 ---
 	slot5 = slot2
 	slot3 = slot2.refreshAllList
 
@@ -780,9 +813,364 @@ slot14 = function(slot0)
 
 end
 
-slot4.clearTryWearOnEnter = slot14
+slot4.clearTryWearOnEnter = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot7 = AppearanceJewelryPetData
+	slot7 = slot7[slot3]
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot8 = slot7.res
+	--- END OF BLOCK #1 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot8 = slot1.modelInfo
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-14, warpins: 4 ---
+	slot8 = false
+
+	return slot8
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-16, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot8 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 17-17, warpins: 1 ---
+	slot8 = slot5[slot2]
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 18-20, warpins: 2 ---
+	slot9 = nil
+	--- END OF BLOCK #7 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-28, warpins: 1 ---
+	slot10 = PetJewelryOssCache
+	slot10 = slot10.getSavedTransform
+	slot12 = slot0.curPetId
+	slot13 = slot3
+	slot14 = slot8
+	slot10 = slot10(slot12, slot13, slot14)
+	slot9 = slot10
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 29-29, warpins: 1 ---
+	slot9 = slot8
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-31, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 32-62, warpins: 1 ---
+	slot10 = Vector3
+	slot10 = slot10.New
+	slot12 = slot9.posX
+	slot13 = slot9.posY
+	slot14 = slot9.posZ
+	slot10 = slot10(slot12, slot13, slot14)
+	slot11 = Vector3
+	slot11 = slot11.New
+	slot13 = slot9.rotX
+	slot14 = slot9.rotY
+	slot15 = slot9.rotZ
+	slot11 = slot11(slot13, slot14, slot15)
+	slot12 = Vector3
+	slot12 = slot12.New
+	slot14 = slot9.scale
+	slot15 = slot9.scale
+	slot16 = slot9.scale
+	slot12 = slot12(slot14, slot15, slot16)
+	slot13 = slot1.modelInfo
+	slot15 = slot13
+	slot13 = slot13.AddAttachInfo
+	slot16 = slot7.res
+	slot17 = slot4
+	slot18 = slot9.attachBone
+	slot19 = slot10
+	slot20 = slot11
+	slot21 = slot12
+	slot22 = false
+
+	slot13(slot15, slot16, slot17, slot18, slot19, slot20, slot21, slot22)
+
+	slot13 = true
+
+	return slot13
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 63-70, warpins: 2 ---
+	slot10 = pg
+	slot10 = slot10.me
+	slot12 = slot10
+	slot10 = slot10.getPetInfo
+	slot13 = slot0.curPetId
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #12 ---
+
+	slot11 = if slot10 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 71-71, warpins: 1 ---
+	slot11 = slot10.templateId
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 72-73, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 74-78, warpins: 1 ---
+	slot12 = PetData
+	slot12 = slot12[slot11]
+	slot12 = slot12.refId
+	--- END OF BLOCK #15 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 79-80, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	slot12 = if not slot11 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 81-81, warpins: 2 ---
+	slot12 = nil
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 82-83, warpins: 3 ---
+	--- END OF BLOCK #18 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 84-90, warpins: 1 ---
+	slot13 = pgUtils
+	slot13 = slot13.GetAccessoryConfigFromLocal
+	slot15 = slot11
+	slot16 = slot3
+	slot13 = slot13(slot15, slot16)
+	--- END OF BLOCK #19 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 91-91, warpins: 2 ---
+	slot13 = nil
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 92-93, warpins: 2 ---
+	--- END OF BLOCK #21 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #22 94-95, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 96-101, warpins: 1 ---
+	slot14 = pgUtils
+	slot14 = slot14.GetAccessoryConfigFromLocal
+	slot16 = slot12
+	slot17 = slot3
+	slot14 = slot14(slot16, slot17)
+	slot13 = slot14
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 102-103, warpins: 3 ---
+	--- END OF BLOCK #24 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 104-120, warpins: 1 ---
+	slot14 = ClientModelUtils
+	slot14 = slot14.addPetAttachInfo
+	slot16 = slot1.modelInfo
+	slot17 = slot7.res
+	slot18 = slot4
+	slot19 = slot13.attachHp
+	slot20 = slot13.localPosition
+	slot21 = slot13.localRotation
+	slot22 = Vector3
+	slot22 = slot22.New
+	slot24 = slot13.scale
+	slot25 = slot13.scale
+	slot26 = slot13.scale
+	MULTRES = slot22(slot24, slot25, slot26)
+
+	slot14(slot16, slot17, slot18, slot19, slot20, slot21, MULTRES)
+
+	slot14 = true
+
+	return slot14
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 121-122, warpins: 2 ---
+	slot14 = false
+
+	return slot14
+	--- END OF BLOCK #26 ---
+
+
+
+end
+
+slot4.addPetAttachWithJewelryData = slot15
+
+slot15 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.petJewelryInfos
+	slot6 = slot0.curPetId
+	slot5 = slot5[slot6]
+	slot8 = slot0
+	slot6 = slot0.addPetAttachWithJewelryData
+	slot9 = slot1
+	slot10 = slot2
+	slot11 = slot3
+	slot12 = slot4
+	slot13 = slot5
+	slot14 = true
+
+	return slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.addPetAttachWithServerData = slot15
+
+slot15 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -873,9 +1261,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshAndFocus = slot14
+slot4.refreshAndFocus = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -910,45 +1298,41 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.refreshAllList = slot14
+slot4.refreshAllList = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = slot0.selectTabBtn
-	slot3 = IsNil
-	slot5 = slot2
-	slot3 = slot3(slot5)
-
+slot15 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	return
-
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot3 = slot0.selectTabBtn
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-10, warpins: 2 ---
-	slot3 = slot2.dataFromUList
+	--- BLOCK #2 4-8, warpins: 2 ---
+	slot4 = IsNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
 
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-11, warpins: 1 ---
+	--- BLOCK #3 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -956,82 +1340,159 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-18, warpins: 2 ---
-	slot4 = slot0.model
-	slot6 = slot4
-	slot4 = slot4.refreshPresetData
-	slot7 = slot3
-
-	slot4(slot6, slot7)
+	--- BLOCK #4 10-12, warpins: 2 ---
+	slot4 = slot3.dataFromUList
 
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 19-39, warpins: 1 ---
-	slot4 = slot0.view
-	slot4 = slot4.outfitUList
-	slot6 = slot4
-	slot4 = slot4.TryGetChildAt
-	slot7 = slot3.slot
-	slot4, slot5 = slot4(slot6, slot7)
-	slot8 = slot5
-	slot6 = slot5.GetComponent
-	slot9 = "ObjectReference"
-	slot6 = slot6(slot8, slot9)
-	slot9 = slot6
-	slot7 = slot6.GetRefValue
-	slot10 = "suitUImage"
-	slot7 = slot7(slot9, slot10)
-	slot7.sprite = slot1
-	slot10 = slot5
-	slot8 = slot5.TryChangePage
-	slot11 = "State"
-	slot12 = 1
-
-	slot8(slot10, slot11, slot12)
+	--- BLOCK #5 13-13, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 40-45, warpins: 1 ---
-	slot4 = slot0.view
-	slot4 = slot4.outfitUList
-	slot6 = slot4
-	slot4 = slot4.RefreshElement
-	slot7 = slot3.slot
+	--- BLOCK #6 14-20, warpins: 2 ---
+	slot5 = slot0.model
+	slot7 = slot5
+	slot5 = slot5.refreshPresetData
+	slot8 = slot4
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #7 46-50, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.onFocusTab
-	slot7 = slot2
-
-	slot4(slot6, slot7)
-
-	return
+	--- BLOCK #7 21-25, warpins: 1 ---
+	slot5 = NotNil
+	slot7 = slot4.sprite
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 26-28, warpins: 1 ---
+	slot5 = slot4.sprite
+	--- END OF BLOCK #8 ---
+
+	if slot5 ~= slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 29-35, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.mobileCameraMgr
+	slot7 = slot5
+	slot5 = slot5.DestroySpriteTexture
+	slot8 = slot4.sprite
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-57, warpins: 3 ---
+	slot4.sprite = slot1
+	slot5 = slot0.view
+	slot5 = slot5.outfitUList
+	slot7 = slot5
+	slot5 = slot5.TryGetChildAt
+	slot8 = slot4.slot
+	slot5, slot6 = slot5(slot7, slot8)
+	slot9 = slot6
+	slot7 = slot6.GetComponent
+	slot10 = "ObjectReference"
+	slot7 = slot7(slot9, slot10)
+	slot10 = slot7
+	slot8 = slot7.GetRefValue
+	slot11 = "suitUImage"
+	slot8 = slot8(slot10, slot11)
+	slot8.sprite = slot1
+	slot11 = slot6
+	slot9 = slot6.TryChangePage
+	slot12 = "State"
+	slot13 = 1
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 58-63, warpins: 1 ---
+	slot5 = slot0.view
+	slot5 = slot5.outfitUList
+	slot7 = slot5
+	slot5 = slot5.RefreshElement
+	slot8 = slot4.slot
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 64-66, warpins: 2 ---
+	slot5 = slot0.selectTabBtn
+	--- END OF BLOCK #12 ---
+
+	if slot5 == slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 67-70, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.onFocusTab
+	slot8 = slot3
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 71-71, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot4.refreshSelectPreset = slot14
+slot4.refreshSelectPreset = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1082,9 +1543,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshList = slot14
+slot4.refreshList = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1255,14 +1716,47 @@ slot14 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 4-8, warpins: 2 ---
-		slot2 = suitUImage
-		slot2.sprite = slot1
+		--- BLOCK #2 4-11, warpins: 2 ---
 		slot2 = data
 		slot2.sprite = slot1
-
-		return
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.checkUIOpen
+		slot2 = slot2(slot4)
 		--- END OF BLOCK #2 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 12-16, warpins: 1 ---
+		slot2 = button
+		slot2 = slot2.dataFromUList
+		slot3 = data
+		--- END OF BLOCK #3 ---
+
+		if slot2 == slot3 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 17-18, warpins: 1 ---
+		slot2 = suitUImage
+		slot2.sprite = slot1
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 19-19, warpins: 3 ---
+		return
+		--- END OF BLOCK #5 ---
 
 
 
@@ -1311,9 +1805,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.onRenderPresetItem = slot14
+slot4.onRenderPresetItem = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot1.dataFromUList
 	slot4 = slot3.state
@@ -1395,15 +1889,15 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.onSelectTab = slot14
+slot4.onSelectTab = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = slot0.model
-	slot2 = slot2.avatarScene
+	slot3 = slot0.model
+	slot3 = slot3.avatarScene
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -1411,11 +1905,11 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #1 5-9, warpins: 1 ---
-	slot2 = slot0.model
-	slot2 = slot2.avatarScene
-	slot4 = slot2
-	slot2 = slot2.getCurEntity
-	slot2 = slot2(slot4)
+	slot3 = slot0.model
+	slot3 = slot3.avatarScene
+	slot5 = slot3
+	slot3 = slot3.getCurEntity
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -1424,28 +1918,26 @@ slot14 = function(slot0, slot1)
 	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-16, warpins: 1 ---
-	slot3 = IsNil
-	slot5 = slot2.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot4 = slot3.eModel
 
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 17-17, warpins: 2 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #4 ---
@@ -1453,31 +1945,31 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 18-21, warpins: 2 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.modelView
+	--- BLOCK #5 16-19, warpins: 2 ---
+	slot4 = slot3.eModel
+	slot4 = slot4.modelView
 	--- END OF BLOCK #5 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 22-24, warpins: 1 ---
-	slot4 = slot3.modelInfo
+	--- BLOCK #6 20-22, warpins: 1 ---
+	slot5 = slot4.modelInfo
 
 	--- END OF BLOCK #6 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 25-25, warpins: 2 ---
+	--- BLOCK #7 23-23, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #7 ---
@@ -1485,8 +1977,8 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 26-28, warpins: 2 ---
-	slot4 = nil
+	--- BLOCK #8 24-26, warpins: 2 ---
+	slot5, slot6 = nil
 	--- END OF BLOCK #8 ---
 
 	slot1 = if slot1 then
@@ -1496,118 +1988,119 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 29-34, warpins: 1 ---
-	slot5 = slot1.state
-	slot6 = slot0.model
-	slot6 = slot6.OUTFIT_TAB
-	slot6 = slot6.NOW
+	--- BLOCK #9 27-32, warpins: 1 ---
+	slot7 = slot1.state
+	slot8 = slot0.model
+	slot8 = slot8.OUTFIT_TAB
+	slot8 = slot8.NOW
 	--- END OF BLOCK #9 ---
 
-	if slot5 == slot6 then
+	if slot7 == slot8 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 35-41, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.petJewelryInfos
-	slot6 = slot0.curPetId
-	slot5 = slot5[slot6]
+	--- BLOCK #10 33-39, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.petJewelryInfos
+	slot8 = slot0.curPetId
+	slot7 = slot7[slot8]
 	--- END OF BLOCK #10 ---
 
-	slot4 = if slot5 then
+	slot5 = if slot7 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 42-42, warpins: 1 ---
-	slot4 = slot5.customPresets
+	--- BLOCK #11 40-40, warpins: 1 ---
+	slot5 = slot7.customPresets
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 43-43, warpins: 2 ---
+	--- BLOCK #12 41-41, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #13 44-51, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.petJewelryCustom
-	slot6 = slot0.model
-	slot6 = slot6.adjustPetProId
-	slot5 = slot5[slot6]
+	--- BLOCK #13 42-49, warpins: 2 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.petJewelryCustom
+	slot8 = slot0.model
+	slot8 = slot8.adjustPetProId
+	slot7 = slot7[slot8]
 	--- END OF BLOCK #13 ---
 
-	slot6 = if slot5 then
+	slot6 = if slot7 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 52-53, warpins: 1 ---
-	slot6 = slot1.slot
-	slot6 = slot5[slot6]
+	--- BLOCK #14 50-51, warpins: 1 ---
+	slot8 = slot1.slot
+	slot6 = slot7[slot8]
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 54-55, warpins: 2 ---
+	--- BLOCK #15 52-53, warpins: 2 ---
 	--- END OF BLOCK #15 ---
 
-	slot4 = if slot6 then
+	slot5 = if slot6 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 56-56, warpins: 1 ---
-	slot4 = slot6.customPresets
+	--- BLOCK #16 54-54, warpins: 1 ---
+	slot5 = slot6.customPresets
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 57-64, warpins: 3 ---
-	slot7 = slot0
-	slot5 = slot0.clearPreviewPresetWear
-	slot8 = slot3
+	--- BLOCK #17 55-62, warpins: 3 ---
+	slot9 = slot0
+	slot7 = slot0.clearPreviewPresetWear
+	slot10 = slot4
 
-	slot5(slot7, slot8)
+	slot7(slot9, slot10)
 
-	slot5 = {}
-	slot0.previewSlotAttachMap = slot5
+	slot7 = {}
+	slot0.previewSlotAttachMap = slot7
 	--- END OF BLOCK #17 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 65-72, warpins: 1 ---
-	slot7 = slot3
-	slot5 = slot3.RefreshModels
+	--- BLOCK #18 63-71, warpins: 1 ---
+	slot9 = slot4
+	slot7 = slot4.RefreshModels
 
-	slot5(slot7)
+	slot7(slot9)
 
-	slot7 = slot0
-	slot5 = slot0.afterRefreshModel
-	slot8 = slot3
+	slot9 = slot0
+	slot7 = slot0.afterRefreshModel
+	slot10 = slot4
+	slot11 = slot2
 
-	slot5(slot7, slot8)
+	slot7(slot9, slot10, slot11)
 
 	return
 
@@ -1616,261 +2109,200 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 73-80, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.getPetInfo
-	slot8 = slot0.curPetId
-	slot5 = slot5(slot7, slot8)
+	--- BLOCK #19 72-77, warpins: 2 ---
+	slot7 = table
+	slot7 = slot7.nums
+	slot9 = AttachPointData
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #19 ---
 
-	slot6 = if slot5 then
+	slot8 = if slot1 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #20 81-81, warpins: 1 ---
-	slot6 = slot5.templateId
+	--- BLOCK #20 78-83, warpins: 1 ---
+	slot8 = slot1.state
+	slot9 = slot0.model
+	slot9 = slot9.OUTFIT_TAB
+	slot9 = slot9.NOW
 	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #21
+	if slot8 ~= slot9 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
 
 
-	--- BLOCK #21 82-83, warpins: 2 ---
+	--- BLOCK #21 84-85, warpins: 1 ---
+	slot8 = false
 	--- END OF BLOCK #21 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #24
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #22 84-88, warpins: 1 ---
-	slot7 = PetData
-	slot7 = slot7[slot6]
-	slot7 = slot7.refId
+	--- BLOCK #22 86-86, warpins: 1 ---
+	slot8 = true
 	--- END OF BLOCK #22 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #25
-	end
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 89-90, warpins: 1 ---
+	--- BLOCK #23 87-90, warpins: 3 ---
+	slot9 = 1
+	slot10 = slot7
+	slot11 = 1
 	--- END OF BLOCK #23 ---
 
-	slot7 = if not slot6 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #25
-	end
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 91-91, warpins: 2 ---
-	slot7 = nil
+	--- BLOCK #24 91-93, warpins: 2 ---
+	slot13 = slot5[slot12]
 	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #25
+	slot13 = if slot13 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #33
+	end
 
 
-	--- BLOCK #25 92-99, warpins: 3 ---
-	slot8 = table
-	slot8 = slot8.nums
-	slot10 = AttachPointData
-	slot8 = slot8(slot10)
-	slot9 = 1
-	slot10 = slot8
-	slot11 = 1
+	--- BLOCK #25 94-95, warpins: 1 ---
 	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #26
+	if slot13 ~= 0 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #33
+	end
 
 
-	--- BLOCK #26 100-102, warpins: 2 ---
-	slot13 = slot4[slot12]
+	--- BLOCK #26 96-97, warpins: 1 ---
 	--- END OF BLOCK #26 ---
 
-	slot13 = if slot13 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 103-104, warpins: 1 ---
+	--- BLOCK #27 98-105, warpins: 1 ---
+	slot14 = string
+	slot14 = slot14.format
+	slot16 = "%d_%d"
+	slot17 = slot12
+	slot18 = slot13
+	slot14 = slot14(slot16, slot17, slot18)
 	--- END OF BLOCK #27 ---
 
-	if slot13 ~= 0 then
+	slot14 = if not slot14 then
 	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #28 105-108, warpins: 1 ---
-	slot14 = AppearanceJewelryPetData
-	slot14 = slot14[slot13]
+	--- BLOCK #28 106-111, warpins: 2 ---
+	slot14 = string
+	slot14 = slot14.format
+	slot16 = "preset_preview_%d_%d"
+	slot17 = slot12
+	slot18 = slot13
+	slot14 = slot14(slot16, slot17, slot18)
 	--- END OF BLOCK #28 ---
 
-	slot14 = if slot14 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #38
-	end
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 109-111, warpins: 1 ---
-	slot15 = slot14.res
+	--- BLOCK #29 112-115, warpins: 2 ---
+	slot15 = slot0.previewSlotAttachMap
+	slot15[slot12] = slot14
 	--- END OF BLOCK #29 ---
 
-	slot15 = if slot15 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 112-113, warpins: 1 ---
+	--- BLOCK #30 116-123, warpins: 1 ---
+	slot17 = slot0
+	slot15 = slot0.addPetAttachWithServerData
+	slot18 = slot4
+	slot19 = slot12
+	slot20 = slot13
+	slot21 = slot14
+
+	slot15(slot17, slot18, slot19, slot20, slot21)
+
 	--- END OF BLOCK #30 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #32
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #31 114-120, warpins: 1 ---
-	slot15 = pgUtils
-	slot15 = slot15.GetAccessoryConfigFromLocal
-	slot17 = slot6
-	slot18 = slot13
-	slot15 = slot15(slot17, slot18)
+	--- BLOCK #31 124-125, warpins: 1 ---
 	--- END OF BLOCK #31 ---
 
-	slot15 = if not slot15 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 121-121, warpins: 2 ---
-	slot15 = nil
+	--- BLOCK #32 126-134, warpins: 1 ---
+	slot17 = slot0
+	slot15 = slot0.addPetAttachWithJewelryData
+	slot18 = slot4
+	slot19 = slot12
+	slot20 = slot13
+	slot21 = slot14
+	slot22 = slot6
+	slot23 = false
+
+	slot15(slot17, slot18, slot19, slot20, slot21, slot22, slot23)
+
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 122-123, warpins: 2 ---
+	--- BLOCK #33 135-135, warpins: 5 ---
 	--- END OF BLOCK #33 ---
 
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #34 124-125, warpins: 1 ---
-	--- END OF BLOCK #34 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #35 126-131, warpins: 1 ---
-	slot16 = pgUtils
-	slot16 = slot16.GetAccessoryConfigFromLocal
-	slot18 = slot7
-	slot19 = slot13
-	slot16 = slot16(slot18, slot19)
-	slot15 = slot16
-	--- END OF BLOCK #35 ---
-
-	FLOW; TARGET BLOCK #36
-
-
-	--- BLOCK #36 132-141, warpins: 3 ---
-	slot16 = string
-	slot16 = slot16.format
-	slot18 = "preset_preview_%d_%d"
-	slot19 = slot12
-	slot20 = slot13
-	slot16 = slot16(slot18, slot19, slot20)
-	slot17 = slot0.previewSlotAttachMap
-	slot17[slot12] = slot16
-	--- END OF BLOCK #36 ---
-
-	slot15 = if slot15 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #37 142-157, warpins: 1 ---
-	slot17 = Vector3
-	slot17 = slot17.New
-	slot19 = slot15.scale
-	slot20 = slot15.scale
-	slot21 = slot15.scale
-	slot17 = slot17(slot19, slot20, slot21)
-	slot18 = slot3.modelInfo
-	slot20 = slot18
-	slot18 = slot18.AddAttachInfo
-	slot21 = slot14.res
-	slot22 = slot16
-	slot23 = slot15.attachHp
-	slot24 = slot15.localPosition
-	slot25 = slot15.localRotation
-	slot26 = slot17
-
-	slot18(slot20, slot21, slot22, slot23, slot24, slot25, slot26)
-
-	--- END OF BLOCK #37 ---
-
-	FLOW; TARGET BLOCK #38
-
-
-	--- BLOCK #38 158-158, warpins: 6 ---
-	--- END OF BLOCK #38 ---
-
 	for slot12=slot9, slot10, slot11
-	LOOP BLOCK #26
-	GO OUT TO BLOCK #39
+	LOOP BLOCK #24
+	GO OUT TO BLOCK #34
 
-	--- BLOCK #39 159-166, warpins: 1 ---
-	slot11 = slot3
-	slot9 = slot3.RefreshModels
+	--- BLOCK #34 136-144, warpins: 1 ---
+	slot11 = slot4
+	slot9 = slot4.RefreshModels
 
 	slot9(slot11)
 
 	slot11 = slot0
 	slot9 = slot0.afterRefreshModel
-	slot12 = slot3
+	slot12 = slot4
+	slot13 = slot2
 
-	slot9(slot11, slot12)
+	slot9(slot11, slot12, slot13)
 
 	return
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #34 ---
 
 
 
 end
 
-slot4.previewPresetWear = slot14
+slot4.previewPresetWear = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2042,9 +2474,173 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.clearPreviewPresetWear = slot14
+slot4.clearPreviewPresetWear = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot1.modelInfo
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-19, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.clearPreviewPresetWear
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.previewSlotAttachMap = slot2
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.petJewelryInfos
+	slot3 = slot0.curPetId
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-22, warpins: 1 ---
+	slot3 = slot2.customPresets
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-30, warpins: 2 ---
+	slot5 = slot1
+	slot3 = slot1.RefreshModels
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.afterRefreshModel
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 31-35, warpins: 2 ---
+	slot3 = slot2.customPresets
+	slot5 = slot3
+	slot3 = slot3.items
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #7 36-37, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 38-39, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot7 ~= 0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 40-52, warpins: 1 ---
+	slot8 = string
+	slot8 = slot8.format
+	slot10 = "%d_%d"
+	slot11 = slot6
+	slot12 = slot7
+	slot8 = slot8(slot10, slot11, slot12)
+	slot11 = slot0
+	slot9 = slot0.addPetAttachWithServerData
+	slot12 = slot1
+	slot13 = slot6
+	slot14 = slot7
+	slot15 = slot8
+
+	slot9(slot11, slot12, slot13, slot14, slot15)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 53-54, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 55-62, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.RefreshModels
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.afterRefreshModel
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot4.restoreFormalWearToModel = slot15
+
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._hasRestoreWear
 
@@ -2075,7 +2671,7 @@ slot14 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #13
 	end
 
 
@@ -2086,7 +2682,7 @@ slot14 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #13
 	end
 
 
@@ -2098,519 +2694,245 @@ slot14 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #5 18-29, warpins: 1 ---
+	--- BLOCK #5 18-22, warpins: 1 ---
 	slot2 = slot1.components
 	slot2 = slot2.pet
-	slot5 = slot2
-	slot3 = slot2.showPetModel
-	slot6 = slot0.curPetId
-
-	slot3(slot5, slot6)
-
-	slot5 = slot2
-	slot3 = slot2.refreshAllList
-
-	slot3(slot5)
-
-	slot3 = true
-	slot0._hasRestoreWear = slot3
-
-	return
-
+	slot3 = slot2.avatarScene
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 30-33, warpins: 4 ---
-	slot2 = slot0.model
-	slot2 = slot2.avatarScene
-	--- END OF BLOCK #6 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #7
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 34-38, warpins: 1 ---
-	slot2 = slot0.model
-	slot2 = slot2.avatarScene
-	slot4 = slot2
-	slot2 = slot2.getCurEntity
-	slot2 = slot2(slot4)
+	--- BLOCK #6 23-26, warpins: 1 ---
+	slot3 = slot2.avatarScene
+	slot5 = slot3
+	slot3 = slot3.getCurEntity
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-28, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot4 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #8 39-40, warpins: 2 ---
+	--- BLOCK #8 29-31, warpins: 1 ---
+	slot4 = slot3.eModel
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 41-45, warpins: 1 ---
-	slot3 = IsNil
-	slot5 = slot2.eModel
-	slot3 = slot3(slot5)
-
+	--- BLOCK #9 32-33, warpins: 1 ---
+	slot4 = slot3.eModel
+	slot4 = slot4.modelView
 	--- END OF BLOCK #9 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 46-46, warpins: 2 ---
-	return
-
+	--- BLOCK #10 34-35, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 47-50, warpins: 2 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.modelView
-	--- END OF BLOCK #11 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 51-53, warpins: 1 ---
-	slot4 = slot3.modelInfo
-
-	--- END OF BLOCK #12 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 54-54, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 55-67, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.clearPreviewPresetWear
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
-	slot4 = nil
-	slot0.previewSlotAttachMap = slot4
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.petJewelryInfos
-	slot5 = slot0.curPetId
-	slot4 = slot4[slot5]
-	--- END OF BLOCK #14 ---
-
 	slot4 = if slot4 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #15 68-70, warpins: 1 ---
-	slot5 = slot4.customPresets
-	--- END OF BLOCK #15 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 71-80, warpins: 2 ---
-	slot7 = slot3
-	slot5 = slot3.RefreshModels
-
-	slot5(slot7)
-
+	--- BLOCK #11 36-39, warpins: 1 ---
 	slot7 = slot0
-	slot5 = slot0.afterRefreshModel
-	slot8 = slot3
+	slot5 = slot0.restoreFormalWearToModel
+	slot8 = slot4
 
 	slot5(slot7, slot8)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 40-45, warpins: 2 ---
+	slot7 = slot2
+	slot5 = slot2.refreshAllList
+
+	slot5(slot7)
 
 	slot5 = true
 	slot0._hasRestoreWear = slot5
 
 	return
 
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 46-49, warpins: 4 ---
+	slot2 = slot0.model
+	slot2 = slot2.avatarScene
+	--- END OF BLOCK #13 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 50-54, warpins: 1 ---
+	slot2 = slot0.model
+	slot2 = slot2.avatarScene
+	slot4 = slot2
+	slot2 = slot2.getCurEntity
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 55-56, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 57-59, warpins: 1 ---
+	slot3 = slot2.eModel
+
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #17 81-88, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.getPetInfo
-	slot8 = slot0.curPetId
-	slot5 = slot5(slot7, slot8)
+	--- BLOCK #17 60-60, warpins: 2 ---
+	return
+
 	--- END OF BLOCK #17 ---
 
-	slot6 = if slot5 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 89-89, warpins: 1 ---
-	slot6 = slot5.templateId
+	--- BLOCK #18 61-64, warpins: 2 ---
+	slot3 = slot2.eModel
+	slot3 = slot3.modelView
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #19 90-91, warpins: 2 ---
+	--- BLOCK #19 65-67, warpins: 1 ---
+	slot4 = slot3.modelInfo
+
 	--- END OF BLOCK #19 ---
 
-	slot6 = if slot6 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 92-96, warpins: 1 ---
-	slot7 = PetData
-	slot7 = slot7[slot6]
-	slot7 = slot7.refId
+	--- BLOCK #20 68-68, warpins: 2 ---
+	return
+
 	--- END OF BLOCK #20 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #23
-	end
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 97-98, warpins: 1 ---
-	--- END OF BLOCK #21 ---
+	--- BLOCK #21 69-75, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.restoreFormalWearToModel
+	slot7 = slot3
 
-	slot7 = if not slot6 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
+	slot4(slot6, slot7)
 
-
-	--- BLOCK #22 99-99, warpins: 2 ---
-	slot7 = nil
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 100-104, warpins: 3 ---
-	slot8 = slot4.customPresets
-	slot10 = slot8
-	slot8 = slot8.items
-	slot8, slot9, slot10 = slot8(slot10)
-	--- END OF BLOCK #23 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
-
-
-	--- BLOCK #24 105-106, warpins: 1 ---
-	--- END OF BLOCK #24 ---
-
-	slot12 = if slot12 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #25 107-108, warpins: 1 ---
-	--- END OF BLOCK #25 ---
-
-	if slot12 ~= 0 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #26 109-121, warpins: 1 ---
-	slot13 = string
-	slot13 = slot13.format
-	slot15 = "%d_%d"
-	slot16 = slot11
-	slot17 = slot12
-	slot13 = slot13(slot15, slot16, slot17)
-	slot14 = PetJewelryOssCache
-	slot14 = slot14.get
-	slot16 = slot0.curPetId
-	slot17 = slot12
-	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #26 ---
-
-	slot14 = if not slot14 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 122-122, warpins: 1 ---
-	slot14 = slot4[slot11]
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 123-126, warpins: 2 ---
-	slot15 = AppearanceJewelryPetData
-	slot15 = slot15[slot12]
-	--- END OF BLOCK #28 ---
-
-	slot15 = if slot15 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #29 127-129, warpins: 1 ---
-	slot16 = slot15.res
-	--- END OF BLOCK #29 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #30 130-131, warpins: 1 ---
-	--- END OF BLOCK #30 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #32
-	end
-
-
-	--- BLOCK #31 132-160, warpins: 1 ---
-	slot16 = Vector3
-	slot16 = slot16.New
-	slot18 = slot14.posX
-	slot19 = slot14.posY
-	slot20 = slot14.posZ
-	slot16 = slot16(slot18, slot19, slot20)
-	slot17 = Vector3
-	slot17 = slot17.New
-	slot19 = slot14.rotX
-	slot20 = slot14.rotY
-	slot21 = slot14.rotZ
-	slot17 = slot17(slot19, slot20, slot21)
-	slot18 = Vector3
-	slot18 = slot18.New
-	slot20 = slot14.scale
-	slot21 = slot14.scale
-	slot22 = slot14.scale
-	slot18 = slot18(slot20, slot21, slot22)
-	slot19 = slot3.modelInfo
-	slot21 = slot19
-	slot19 = slot19.AddAttachInfo
-	slot22 = slot15.res
-	slot23 = slot13
-	slot24 = slot14.attachBone
-	slot25 = slot16
-	slot26 = slot17
-	slot27 = slot18
-
-	slot19(slot21, slot22, slot23, slot24, slot25, slot26, slot27)
-
-	--- END OF BLOCK #31 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
-
-
-	--- BLOCK #32 161-162, warpins: 1 ---
-	--- END OF BLOCK #32 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #33 163-169, warpins: 1 ---
-	slot16 = pgUtils
-	slot16 = slot16.GetAccessoryConfigFromLocal
-	slot18 = slot6
-	slot19 = slot12
-	slot16 = slot16(slot18, slot19)
-	--- END OF BLOCK #33 ---
-
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #34 170-170, warpins: 2 ---
-	slot16 = nil
-	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 171-172, warpins: 2 ---
-	--- END OF BLOCK #35 ---
-
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #36 173-174, warpins: 1 ---
-	--- END OF BLOCK #36 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #37 175-180, warpins: 1 ---
-	slot17 = pgUtils
-	slot17 = slot17.GetAccessoryConfigFromLocal
-	slot19 = slot7
-	slot20 = slot12
-	slot17 = slot17(slot19, slot20)
-	slot16 = slot17
-	--- END OF BLOCK #37 ---
-
-	FLOW; TARGET BLOCK #38
-
-
-	--- BLOCK #38 181-182, warpins: 3 ---
-	--- END OF BLOCK #38 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #39 183-198, warpins: 1 ---
-	slot17 = Vector3
-	slot17 = slot17.New
-	slot19 = slot16.scale
-	slot20 = slot16.scale
-	slot21 = slot16.scale
-	slot17 = slot17(slot19, slot20, slot21)
-	slot18 = slot3.modelInfo
-	slot20 = slot18
-	slot18 = slot18.AddAttachInfo
-	slot21 = slot15.res
-	slot22 = slot13
-	slot23 = slot16.attachHp
-	slot24 = slot16.localPosition
-	slot25 = slot16.localRotation
-	slot26 = slot17
-
-	slot18(slot20, slot21, slot22, slot23, slot24, slot25, slot26)
-
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 199-200, warpins: 8 ---
-	--- END OF BLOCK #40 ---
-
-	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #24
-	GO OUT TO BLOCK #41
-
-
-	--- BLOCK #41 201-210, warpins: 1 ---
-	slot10 = slot3
-	slot8 = slot3.RefreshModels
-
-	slot8(slot10)
-
-	slot10 = slot0
-	slot8 = slot0.afterRefreshModel
-	slot11 = slot3
-
-	slot8(slot10, slot11)
-
-	slot8 = true
-	slot0._hasRestoreWear = slot8
+	slot4 = true
+	slot0._hasRestoreWear = slot4
 
 	return
-	--- END OF BLOCK #41 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot4.restoreCurrentWearModel = slot14
+slot4.restoreCurrentWearModel = slot15
 
-slot14 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-25, warpins: 1 ---
+slot15 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-44, warpins: 1 ---
 	slot3 = slot1.dataFromUList
 	slot4 = slot3.unlockCost
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.showCommonTipUse
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "UNLOCK_TITLE"
-	slot7 = slot7(slot9)
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "UNLOCK_DESC"
-	slot8 = slot8(slot10)
-	slot9 = {}
+	slot5 = LuaUIUtils
+	slot5 = slot5.getItemCountConsumeShowText
+	slot7 = slot4.id
+	slot8 = slot4.num
+	slot9 = true
+	slot5 = slot5(slot7, slot8, slot9)
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.commonUseConfirm
+	slot8 = slot6
+	slot6 = slot6.open
+	slot9 = {
+		type = 4
+	}
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = "UNLOCK_TITLE"
+	slot10 = slot10(slot12)
+	slot9.title = slot10
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "HOME_BUY_DESC"
+	slot12 = slot12(slot14)
+	slot13 = slot5
+	slot10 = slot10(slot12, slot13)
+	slot9.tipTop = slot10
 	slot10 = {}
-	slot11 = slot4.id
+	slot11 = {}
+	slot12 = slot4.id
+	slot11[1] = slot12
+	slot12 = slot4.num
+	slot11[2] = slot12
 	slot10[1] = slot11
-	slot11 = slot4.num
-	slot10[2] = slot11
-	slot9[1] = slot10
+	slot9.data = slot10
 
 	slot10 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
@@ -2661,7 +2983,9 @@ slot14 = function(slot0, slot1, slot2)
 
 	end
 
-	slot11 = function()
+	slot9.confirmCb = slot10
+
+	slot10 = function()
 		--- BLOCK #0 1-13, warpins: 1 ---
 		slot0 = button
 		slot2 = slot0
@@ -2686,7 +3010,9 @@ slot14 = function(slot0, slot1, slot2)
 
 	end
 
-	slot5(slot7, slot8, slot9, slot10, slot11)
+	slot9.cancelCb = slot10
+
+	slot6(slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2695,9 +3021,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.onUnlockPresetSlot = slot14
+slot4.onUnlockPresetSlot = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.outfitUList
@@ -2965,9 +3291,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onFocusTab = slot14
+slot4.onFocusTab = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -3105,9 +3431,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.onRenderAccessItem = slot14
+slot4.onRenderAccessItem = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.selectTabBtn
 	slot1 = slot1.dataFromUList
@@ -3160,9 +3486,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onBtnSavePreset = slot14
+slot4.onBtnSavePreset = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.onOperationPresetWithOpName
@@ -3179,9 +3505,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onBtnUsePreset = slot14
+slot4.onBtnUsePreset = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = slot0.selectTabBtn
 	slot2 = slot2.dataFromUList
@@ -3342,9 +3668,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onOperationPresetWithOpName = slot14
+slot4.onOperationPresetWithOpName = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curOperation
 
@@ -3448,48 +3774,63 @@ slot14 = function(slot0)
 
 end
 
-slot4.onBtnConfirmOperation = slot14
+slot4.onBtnConfirmOperation = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.selectTabBtn
-	slot2 = slot2.dataFromUList
-	slot3 = slot0.model
-	slot5 = slot3
-	slot3 = slot3.savePreset2Server
-	slot6 = slot2.slot
+	slot3 = slot2.dataFromUList
+	slot4 = slot0.view
+	slot5 = slot0.model
+	slot7 = slot5
+	slot5 = slot5.savePreset2Server
+	slot8 = slot3.slot
 
-	slot7 = function(slot0)
+	slot9 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
-		slot0 = if not slot0 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 3-3, warpins: 1 ---
-		return
-
+		--- BLOCK #1 3-7, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.view
+		slot2 = view
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		if slot1 == slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
 
 
-		--- BLOCK #2 4-28, warpins: 2 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.showBubbleMessageRaw
-		slot3 = pg
-		slot3 = slot3.getGameString
-		slot5 = "PET_ACCESSORY_SAVE_SUCCESS"
-		slot3 = slot3(slot5)
-		slot4 = 3
+		--- BLOCK #2 8-13, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.checkUIOpen
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #2 ---
 
-		slot1(slot3, slot4)
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
 
+
+		--- BLOCK #3 14-14, warpins: 3 ---
+		--- END OF BLOCK #3 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #4 15-40, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.rootUComponent
@@ -3501,22 +3842,59 @@ slot14 = function(slot0, slot1)
 		slot1(slot3, slot4, slot5)
 
 		slot1 = self
+		slot1 = slot1.model
 		slot3 = slot1
-		slot1 = slot1.captureQuickPhoto
-		slot4 = self
-		slot4 = slot4.selectTabBtn
-		slot5 = update
+		slot1 = slot1.refreshPresetData
+		slot4 = presetData
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.onFocusTab
+		slot4 = button
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.previewPresetWear
+		slot4 = presetData
+
+		slot5 = function()
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.captureQuickPhoto
+			slot3 = button
+			slot4 = update
+
+			slot0(slot2, slot3, slot4)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
 
 		slot1(slot3, slot4, slot5)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 41-41, warpins: 2 ---
+		return
+		--- END OF BLOCK #5 ---
 
 
 
 	end
 
-	slot3(slot5, slot6, slot7)
+	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -3525,10 +3903,10 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onSavePreset2Server = slot14
+slot4.onSavePreset2Server = slot15
 
-slot14 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot15 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
@@ -3538,51 +3916,179 @@ slot14 = function(slot0, slot1, slot2)
 	slot7 = "suitUImage"
 	slot4 = slot4(slot6, slot7)
 	slot5 = slot4.sizeDelta
-	slot6 = slot0.model
-	slot8 = slot6
-	slot6 = slot6.captureQuickPetPresetPhoto
-	slot9 = slot5
+	slot6 = slot0.view
+	slot7 = slot1.dataFromUList
+	slot8 = slot0.model
+	slot10 = slot8
+	slot8 = slot8.captureQuickPetPresetPhoto
+	slot11 = slot5
 
-	slot10 = function(slot0)
-		--- BLOCK #0 1-15, warpins: 1 ---
-		slot1 = button
-		slot1 = slot1.dataFromUList
-		slot2 = true
-		slot1.isDirty = slot2
-		slot2 = self
-		slot2 = slot2.model
-		slot4 = slot2
-		slot2 = slot2.uploadQuickPhoto
-		slot5 = slot1
+	slot12 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 3-7, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.view
+		slot4 = view
+		--- END OF BLOCK #1 ---
+
+		if slot3 == slot4 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 8-13, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.checkUIOpen
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #2 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 14-21, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.model
+		slot5 = slot3
+		slot3 = slot3.retainRuntimeSprite
 		slot6 = slot0
-		slot7 = update
+		slot3 = slot3(slot5, slot6)
+		--- END OF BLOCK #3 ---
 
-		slot8 = function()
-			--- BLOCK #0 1-6, warpins: 1 ---
+		slot3 = if not slot3 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #4 22-26, warpins: 4 ---
+		slot3 = NotNil
+		slot5 = slot0
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #4 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 27-33, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.mobileCameraMgr
+		slot5 = slot3
+		slot3 = slot3.DestroySpriteTexture
+		slot6 = slot0
+
+		slot3(slot5, slot6)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 34-34, warpins: 2 ---
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 35-48, warpins: 1 ---
+		slot3 = data
+		slot4 = true
+		slot3.isDirty = slot4
+		slot3 = self
+		slot3 = slot3.model
+		slot5 = slot3
+		slot3 = slot3.uploadQuickPhoto
+		slot6 = data
+		slot7 = slot1
+		slot8 = update
+
+		slot9 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.view
+
+			--- END OF BLOCK #0 ---
+
+			slot0 = if not slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-5, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 6-21, warpins: 2 ---
 			slot0 = self
 			slot2 = slot0
 			slot0 = slot0.refreshSelectPreset
 			slot3 = sprite
+			slot4 = button
+
+			slot0(slot2, slot3, slot4)
+
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.showBubbleMessageRaw
+			slot2 = pg
+			slot2 = slot2.getGameString
+			slot4 = "PET_ACCESSORY_SAVE_SUCCESS"
+			slot2 = slot2(slot4)
+			slot3 = 3
 
 			slot0(slot2, slot3)
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #2 ---
 
 
 
 		end
 
-		slot2(slot4, slot5, slot6, slot7, slot8)
+		slot3(slot5, slot6, slot7, slot8, slot9)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 49-49, warpins: 2 ---
+		return
+		--- END OF BLOCK #8 ---
 
 
 
 	end
 
-	slot6(slot8, slot9, slot10)
+	slot8(slot10, slot11, slot12)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -3591,9 +4097,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot4.captureQuickPhoto = slot14
+slot4.captureQuickPhoto = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.selectTabBtn
 	slot1 = slot1.dataFromUList
@@ -3815,9 +4321,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onUsePresetFromServer = slot14
+slot4.onUsePresetFromServer = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
@@ -3835,9 +4341,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onBtnCancelOperation = slot14
+slot4.onBtnCancelOperation = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.restoreCurrentWearModel
@@ -3851,50 +4357,150 @@ slot14 = function(slot0)
 
 end
 
-slot4.onHide = slot14
+slot4.onHide = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.SetAllAttachTransformRefreshedCb
+slot15 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.killTimer
+	slot6 = slot0.presetCaptureTimer
 
-	slot5 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+	slot3(slot5, slot6)
+
+	slot3 = nil
+	slot0.presetCaptureTimer = slot3
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 10-18, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.startTimer
+
+	slot6 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.model
-		slot0 = slot0.avatarScene
 		slot2 = slot0
-		slot0 = slot0.getCurEntity
+		slot0 = slot0.checkUIOpen
 		slot0 = slot0(slot2)
-		slot1 = AvatarUtils
-		slot1 = slot1.fixAttachTemp
-		slot3 = slot0
-		slot4 = self
-		slot4 = slot4.curPetId
-		slot5 = self
-		slot5 = slot5.selectTabBtn
-		slot5 = slot5.dataFromUList
-		slot5 = slot5.slot
+		--- END OF BLOCK #0 ---
 
-		slot1(slot3, slot4, slot5)
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 7-16, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.killTimer
+		slot3 = self
+		slot3 = slot3.presetCaptureTimer
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot1 = nil
+		slot0.presetCaptureTimer = slot1
 
 		return
-		--- END OF BLOCK #0 ---
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 17-20, warpins: 2 ---
+		slot0 = modelView
+		slot0 = slot0.firstLoaded
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 21-26, warpins: 1 ---
+		slot0 = modelView
+		slot2 = slot0
+		slot0 = slot0.IsAnimatorRead
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #3 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 27-27, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 28-39, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.killTimer
+		slot3 = self
+		slot3 = slot3.presetCaptureTimer
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot1 = nil
+		slot0.presetCaptureTimer = slot1
+		slot0 = callback
+
+		slot0()
+
+		return
+		--- END OF BLOCK #5 ---
 
 
 
 	end
 
-	slot2(slot4, slot5)
+	slot7 = 0.05
+	slot8 = true
+	slot3 = slot3(slot5, slot6, slot7, slot8)
+	slot0.presetCaptureTimer = slot3
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot4.afterRefreshModel = slot14
+slot4.afterRefreshModel = slot15
 
 return slot4
 --- END OF BLOCK #0 ---

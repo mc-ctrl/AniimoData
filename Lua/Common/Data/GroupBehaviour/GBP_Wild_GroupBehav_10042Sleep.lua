@@ -1,10 +1,10 @@
 --- BLOCK #0 1-70, warpins: 1 ---
 slot0 = {
+	minHoldRoleNum = 3,
 	behavID = "BP_Wild_GroupBehav_10042Sleep",
 	GroupBehavVisionArea = "visionAreaDefault",
 	CDAfterEnd = 10,
-	minStartRoleNum = 3,
-	minHoldRoleNum = 3
+	minStartRoleNum = 3
 }
 slot1 = {}
 slot2 = {
@@ -58,8 +58,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_CommonHappyChase",
-	func = "sendTrigger_Common"
+	func = "sendTrigger_Common",
+	para = "GBPMsg_CommonHappyChase"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -78,8 +78,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -102,8 +102,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_CommonWakeUp",
-	func = "sendTrigger_Common"
+	func = "sendTrigger_Common",
+	para = "GBPMsg_CommonWakeUp"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -122,8 +122,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"

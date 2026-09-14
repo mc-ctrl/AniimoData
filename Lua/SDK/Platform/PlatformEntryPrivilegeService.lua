@@ -15,8 +15,8 @@ slot3 = {}
 slot4 = 30
 slot3.LOGIN_MULTIPLAYER_PRIVILEGE_TIMEOUT_SECONDS = slot4
 slot4 = {
-	initialized = false,
-	runtimeReady = false
+	runtimeReady = false,
+	initialized = false
 }
 slot3.state = slot4
 

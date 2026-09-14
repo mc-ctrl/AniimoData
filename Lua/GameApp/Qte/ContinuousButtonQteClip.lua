@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-55, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -972,6 +972,47 @@ slot8 = function(slot0)
 end
 
 slot7.onFadeOut = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.canClickBySkillButton
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.onHit
+
+	slot1(slot3)
+
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.clickBySkillButton = slot8
 
 return slot7
 --- END OF BLOCK #0 ---

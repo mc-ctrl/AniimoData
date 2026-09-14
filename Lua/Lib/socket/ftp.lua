@@ -1660,8 +1660,8 @@ slot12 = function(slot0)
 end
 
 slot13 = {
-	path = "/",
-	scheme = "ftp"
+	scheme = "ftp",
+	path = "/"
 }
 
 slot14 = function(slot0)

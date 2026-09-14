@@ -560,7 +560,7 @@ slot10 = function(slot0)
 	slot6(slot8, slot9, slot10)
 
 	slot6 = BossRushUtils
-	slot6 = slot6.getCurBattleBestScore
+	slot6 = slot6.getCurCycleTotalScore
 	slot6, slot7 = slot6()
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText

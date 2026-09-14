@@ -1,4 +1,4 @@
---- BLOCK #0 1-127, warpins: 1 ---
+--- BLOCK #0 1-129, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -484,7 +484,7 @@ slot22 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 9-44, warpins: 1 ---
+	--- BLOCK #4 9-43, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setModelLayer
 	slot4 = ClientConst
@@ -500,8 +500,7 @@ slot22 = function(slot0)
 	slot2 = slot2.prefabResID
 	slot1.prefabResID = slot2
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = slot0.eModel
 	slot4 = nil
 	slot0._shadowPartLoadsPending = slot4
@@ -576,7 +575,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #5 45-58, warpins: 1 ---
+	--- BLOCK #5 44-57, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0._beginShadowPartLoad
 
@@ -652,20 +651,18 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 59-80, warpins: 2 ---
+	--- BLOCK #6 58-79, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0._beginShadowPartLoad
 
 	slot4(slot6)
 
 	slot4 = function()
-		--- BLOCK #0 1-47, warpins: 1 ---
+		--- BLOCK #0 1-45, warpins: 1 ---
 		slot0 = self
 		slot1 = self
 		slot1 = slot1.eModel
-		slot1 = slot1.modelComponent
-		slot1 = slot1.modelView
-		slot1 = slot1.skeletonView
+		slot1 = slot1.modelSkeletonView
 		slot1 = slot1.skeletonRoot
 		slot1 = slot1.gameObject
 		slot0.gameObject = slot1
@@ -714,7 +711,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #1 48-64, warpins: 1 ---
+		--- BLOCK #1 46-62, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.animator
 		slot4 = slot2
@@ -742,7 +739,7 @@ slot22 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 65-80, warpins: 1 ---
+		--- BLOCK #2 63-78, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.animator
 		slot4 = slot2
@@ -770,7 +767,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 81-95, warpins: 2 ---
+		--- BLOCK #3 79-93, warpins: 2 ---
 		slot2 = pg
 		slot2 = slot2.me
 		slot2 = slot2.leylineTreeInfoMap
@@ -793,7 +790,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #4 96-103, warpins: 1 ---
+		--- BLOCK #4 94-101, warpins: 1 ---
 		slot4 = 1
 		slot3.curStage = slot4
 		slot4 = self
@@ -808,7 +805,7 @@ slot22 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 104-110, warpins: 1 ---
+		--- BLOCK #5 102-108, warpins: 1 ---
 		slot4 = 2
 		slot3.curStage = slot4
 		slot4 = self
@@ -823,7 +820,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 111-115, warpins: 2 ---
+		--- BLOCK #6 109-113, warpins: 2 ---
 		slot4 = self
 		slot4 = slot4.level
 		slot5 = 0
@@ -836,7 +833,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #7 116-121, warpins: 1 ---
+		--- BLOCK #7 114-119, warpins: 1 ---
 		slot4 = self
 		slot4 = slot4.level
 		slot5 = SysConfigData
@@ -850,7 +847,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #8 122-127, warpins: 1 ---
+		--- BLOCK #8 120-125, warpins: 1 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4.phaseEff
@@ -863,7 +860,7 @@ slot22 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-		--- BLOCK #9 128-133, warpins: 2 ---
+		--- BLOCK #9 126-131, warpins: 2 ---
 		slot4 = self
 		slot4 = slot4.level
 		slot5 = SysConfigData
@@ -877,7 +874,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #10 134-139, warpins: 1 ---
+		--- BLOCK #10 132-137, warpins: 1 ---
 		slot4 = self
 		slot4 = slot4.level
 		slot5 = self
@@ -891,7 +888,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #11 140-145, warpins: 1 ---
+		--- BLOCK #11 138-143, warpins: 1 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4.phaseEff
@@ -904,7 +901,7 @@ slot22 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-		--- BLOCK #12 146-151, warpins: 2 ---
+		--- BLOCK #12 144-149, warpins: 2 ---
 		slot4 = self
 		slot4 = slot4.level
 		slot5 = self
@@ -918,7 +915,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #13 152-156, warpins: 1 ---
+		--- BLOCK #13 150-154, warpins: 1 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4.phaseEff
@@ -931,7 +928,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #14 157-161, warpins: 4 ---
+		--- BLOCK #14 155-159, warpins: 4 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4._onShadowPartLoaded
@@ -974,14 +971,14 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 81-81, warpins: 2 ---
+	--- BLOCK #7 80-80, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 82-82, warpins: 2 ---
+	--- BLOCK #8 81-81, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -1148,6 +1145,61 @@ slot22 = function(slot0)
 end
 
 slot14.destroy = slot22
+
+slot22 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.eModel
+	slot1 = slot1.modelModelView
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 1 ---
+	slot2 = nil
+	slot1.luaOnModelRefreshFinshed = slot2
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-15, warpins: 2 ---
+	slot2 = ClientLeylineTree
+	slot2 = slot2.super
+	slot2 = slot2.preDestroy
+	slot4 = slot0
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot14.preDestroy = slot22
 
 slot22 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-3, warpins: 1 ---

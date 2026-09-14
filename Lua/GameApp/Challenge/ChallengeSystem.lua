@@ -63,7 +63,7 @@ slot7 = function(slot0)
 	--- BLOCK #2 9-13, warpins: 1 ---
 	slot7 = slot6.removeTime
 	slot8 = Time
-	slot8 = slot8.secondCache
+	slot8 = slot8.realSecondCache
 	--- END OF BLOCK #2 ---
 
 	if slot7 < slot8 then
@@ -200,7 +200,7 @@ slot7 = function(slot0, slot1, slot2)
 	slot4 = {}
 	slot4.challengeInfo = slot2
 	slot5 = Time
-	slot5 = slot5.secondCache
+	slot5 = slot5.realSecondCache
 	slot4.addTime = slot5
 	slot3[slot1] = slot4
 	slot5 = slot0
@@ -398,7 +398,7 @@ slot7 = function(slot0, slot1, slot2)
 
 	--- BLOCK #8 28-31, warpins: 1 ---
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot4 = slot4 + slot2
 	slot3.removeTime = slot4
 

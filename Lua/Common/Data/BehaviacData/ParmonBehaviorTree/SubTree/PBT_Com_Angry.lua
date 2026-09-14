@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/PBT_Com_Angry",
-	version = 5,
 	useForRoute = false,
+	version = 5,
 	agenttype = "CombatAgent"
 }
 slot4 = {}

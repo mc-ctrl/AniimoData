@@ -1,4 +1,4 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-104, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -31,27 +31,40 @@ slot9 = require
 slot11 = "Utils.LuaUIUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Utils.Utils"
+slot12 = "Common.NoticeDef"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.NoticeDef"
+slot13 = "Common.Utils.Utils"
 slot11 = slot11(slot13)
-slot12 = {}
-slot13 = slot5.GRAB_EGG_REWARD_BOX_CHANGED
-slot14 = {
+slot12 = require
+slot14 = "Common.Const.Const"
+slot12 = slot12(slot14)
+slot13 = require
+slot15 = "Core.Timer.TimerManager"
+slot13 = slot13(slot15)
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.GUIS
+slot14 = slot14.Panels
+slot14 = slot14.Utils
+slot14 = slot14.KeyBindingPro
+slot15 = {}
+slot16 = slot5.GRAB_EGG_REWARD_BOX_CHANGED
+slot17 = {
 	"onRewardBoxChanged",
 	true
 }
-slot12[slot13] = slot14
-slot13 = slot5.GRAB_EGG_RANK_CHANGED
-slot14 = {
+slot15[slot16] = slot17
+slot16 = slot5.GRAB_EGG_RANK_CHANGED
+slot17 = {
 	"onRankChanged",
 	true
 }
-slot12[slot13] = slot14
-slot2.messages = slot12
+slot15[slot16] = slot17
+slot2.messages = slot15
 
-slot12 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -67,10 +80,10 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot2.onCreate = slot12
+slot2.onCreate = slot15
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
 
@@ -78,7 +91,7 @@ slot12 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.close
+		slot0 = slot0.onBackClick
 
 		slot0(slot2)
 
@@ -90,12 +103,260 @@ slot12 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
-	slot1 = {}
-	slot0.slotButtons = slot1
-	slot1 = slot0.view
-	slot1 = slot1.listRewardUList
+	slot3 = slot0
+	slot1 = slot0.bindCloseButton
+	slot4 = slot0.view
+	slot4 = slot4.btnCloseUButton
 
-	slot2 = function(slot0, slot1, slot2)
+	slot1(slot3, slot4)
+
+	slot1 = KeyBindingPro
+	slot1 = slot1.GetOrAddKeyBindingByName
+	slot3 = slot0.view
+	slot3 = slot3.widget
+	slot3 = slot3.gameObject
+	slot4 = "rewardPreviewCloseBind"
+	slot1 = slot1(slot3, slot4)
+	slot2 = true
+	slot1.isVirtual = slot2
+	slot2 = 1
+	slot1.priority = slot2
+	slot2 = "Common/ClosePanelCommon"
+	slot1.actionPath = slot2
+
+	slot2 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = slot0.phase
+		--- END OF BLOCK #0 ---
+
+		if slot1 == "Performed" then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 4-9, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.tryCloseRewardPreview
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 10-11, warpins: 1 ---
+		slot1 = false
+
+		return slot1
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 12-13, warpins: 3 ---
+		slot1 = true
+
+		return slot1
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot1.luaTrigger = slot2
+	slot2 = slot0.view
+	slot2 = slot2.btnRewardDetailUButton
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 29-32, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnRewardDetailUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.showRewardPreview
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 33-36, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnInfoUButton
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 37-44, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnInfoUButton
+	slot3 = false
+	slot2.enabledTooltip = slot3
+	slot2 = slot0.view
+	slot2 = slot2.btnInfoUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.openRogPopTips
+		slot3 = Const
+		slot3 = slot3.COMMON_POPUP_TIP_ID
+		slot3 = slot3.GRAB_EGG_SEASON_BOX_INFO
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 45-48, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.popupRewardBtnCloseUButton
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 49-52, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.popupRewardBtnCloseUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.tryCloseRewardPreview
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 53-72, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.popupRewardCloseUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.tryCloseRewardPreview
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	slot2 = slot0.view
+	slot2 = slot2.btnBackUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.tryCloseRewardPreview
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	slot2 = slot0.view
+	slot2 = slot2.popupRewardListUList
+
+	slot3 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.renderRewardPreviewItem
+		slot6 = slot0
+		slot7 = slot2
+
+		slot3(slot5, slot6, slot7)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaRenderItem = slot3
+	slot2 = {}
+	slot0.slotButtons = slot2
+	slot2 = slot0.view
+	slot2 = slot2.listRewardUList
+
+	slot3 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-11, warpins: 1 ---
 		slot3 = self
 		slot3 = slot3.slotButtons
@@ -116,19 +377,152 @@ slot12 = function(slot0)
 
 	end
 
-	slot1.luaRenderItem = slot2
+	slot2.luaRenderItem = slot3
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot2.addListener = slot12
+slot2.addListener = slot15
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.rewardPreviewCloseGuard
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 6-8, warpins: 1 ---
+	slot1 = slot0.rewardPreviewVisible
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-10, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 11-23, warpins: 1 ---
+	slot1 = true
+	slot0.rewardPreviewCloseGuard = slot1
+	slot1 = TimerManager
+	slot1 = slot1.addNextFrameCb
+
+	slot3 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot1 = false
+		slot0.rewardPreviewCloseGuard = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.setRewardPreviewVisible
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-24, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-25, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot2.tryCloseRewardPreview = slot15
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryCloseRewardPreview
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-10, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.close
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.onBackClick = slot15
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setRewardPreviewVisible
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	slot3 = slot0
 	slot1 = slot0.startTimer
 
@@ -164,35 +558,13 @@ slot12 = function(slot0)
 
 end
 
-slot2.onShow = slot12
+slot2.onShow = slot15
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-24, warpins: 1 ---
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.txtTitleUSDFText
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "GRABEGG_LUCKYCHEST_TITLE"
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.txtResetUSDFText
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "GRABEGG_LUCKYCHEST_RESET"
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
+slot15 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
-	slot1 = slot1.getDailyBoxStatus
+	slot1 = slot1.getSeasonDisplayInfo
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
@@ -203,76 +575,483 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #1 25-40, warpins: 1 ---
+	--- BLOCK #1 7-24, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
-	slot4 = slot4.txtSubUSDFText
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = pg
-	slot7 = slot7.getGameString
-	slot9 = "GRABEGG_LUCKYCHEST_OBTAI"
-	slot7 = slot7(slot9)
-	slot8 = slot1.acquired
-	slot9 = "/"
-	slot10 = slot1.limit
-	slot8 = slot8 .. slot9 .. slot10
-	MULTRES = slot5(slot7, slot8)
+	slot4 = slot4.txtNumUSDFText
+	slot5 = slot1.numText
 
-	slot2(slot4, MULTRES)
+	slot2(slot4, slot5)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtNameUSDFText
+	slot5 = slot1.name
+
+	slot2(slot4, slot5)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.text2USDFText
+	slot5 = slot1.timeText
+
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 41-49, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.startDailyResetCount
+	--- BLOCK #2 25-66, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtRewardDetailUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "GRAB_EGG_SEASON_REWARD_PREVIEW"
+	MULTRES = slot5(slot7)
 
-	slot2(slot4)
+	slot2(slot4, MULTRES)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtRuleUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "GRAB_EGG_SEASON_RULE"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtTitleUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "GRABEGG_LUCKYCHEST_TITLE"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtResetUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "GRABEGG_LUCKYCHEST_RESET"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
 
 	slot2 = slot0.model
 	slot4 = slot2
-	slot2 = slot2.getRankDisplayInfo
+	slot2 = slot2.getDailyBoxStatus
 	slot2 = slot2(slot4)
-
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 50-50, warpins: 1 ---
-	return
+	--- BLOCK #3 67-82, warpins: 1 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtSubUSDFText
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "GRABEGG_LUCKYCHEST_OBTAI"
+	slot8 = slot8(slot10)
+	slot9 = slot2.acquired
+	slot10 = "/"
+	slot11 = slot2.limit
+	slot9 = slot9 .. slot10 .. slot11
+	MULTRES = slot6(slot8, slot9)
+
+	slot3(slot5, MULTRES)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 51-66, warpins: 2 ---
+	--- BLOCK #4 83-91, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.startDailyResetCount
+
+	slot3(slot5)
+
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getRankDisplayInfo
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 92-92, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 93-108, warpins: 2 ---
+	slot4 = slot0.view
+	slot4 = slot4.iconUImage
+	slot5 = slot3.icon
+	slot7 = slot5
+	slot5 = slot5.gsub
+	slot8 = "%.png$"
+	slot9 = "_small.png"
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4.url = slot5
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.tagNameUSDFText
+	slot7 = slot3.name
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot2.refreshUI = slot15
+
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0.rewardPreviewVisible = slot1
+	slot2 = slot0.view
+	slot2 = slot2.popupRewardUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.setRewardPreviewVisible = slot15
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-23, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
 	slot3 = slot0.view
-	slot3 = slot3.iconUImage
-	slot4 = slot2.icon
+	slot3 = slot3.popupRewardTitleUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "GRAB_EGG_SEASON_REWARD_PREVIEW"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = slot0.view
+	slot1 = slot1.popupRewardListUList
+	slot3 = slot1
+	slot1 = slot1.SetList
+	slot4 = slot0.model
 	slot6 = slot4
-	slot4 = slot4.gsub
-	slot7 = "%.png$"
-	slot8 = "_small.png"
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3.url = slot4
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.view
-	slot5 = slot5.tagNameUSDFText
-	slot6 = slot2.name
+	slot4 = slot4.getBoxRewardPreviewList
+	MULTRES = slot4(slot6)
 
-	slot3(slot5, slot6)
+	slot1(slot3, MULTRES)
 
+	slot3 = slot0
+	slot1 = slot0.setRewardPreviewVisible
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.showRewardPreview = slot15
+
+slot15 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.GetComponent
+	slot6 = "ObjectReference"
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot4 = IsNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 13-39, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "iconUImage"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot3
+	slot5 = slot3.GetRefValue
+	slot8 = "txtNameUSDFText"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot3
+	slot6 = slot3.GetRefValue
+	slot9 = "listUList"
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot2.icon
+	slot4.url = slot7
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot5
+	slot10 = slot2.name
+
+	slot7(slot9, slot10)
+
+	slot7 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot3 = LuaUIUtils
+		slot3 = slot3.renderRewardItem
+		slot5 = slot0
+		slot6 = slot2
+		slot7, slot8, slot9, slot10 = nil
+
+		slot11 = function(slot0)
+			--- BLOCK #0 1-2, warpins: 1 ---
+			--- END OF BLOCK #0 ---
+
+			slot1 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 3-3, warpins: 1 ---
+			slot1 = slot0.param
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 4-5, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+			slot2 = if slot1 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 6-6, warpins: 1 ---
+			slot2 = slot1[1]
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 7-8, warpins: 2 ---
+			--- END OF BLOCK #4 ---
+
+			if slot2 ~= "openUI" then
+			JUMP TO BLOCK #5
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #5 9-10, warpins: 1 ---
+			--- END OF BLOCK #5 ---
+
+			if slot2 ~= "openUISuper" then
+			JUMP TO BLOCK #6
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #6 11-12, warpins: 1 ---
+			slot3 = false
+			--- END OF BLOCK #6 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+			--- BLOCK #7 13-13, warpins: 2 ---
+			slot3 = true
+			--- END OF BLOCK #7 ---
+
+			FLOW; TARGET BLOCK #8
+
+
+			--- BLOCK #8 14-15, warpins: 2 ---
+			--- END OF BLOCK #8 ---
+
+			slot4 = if slot3 then
+			JUMP TO BLOCK #9
+			else
+			JUMP TO BLOCK #10
+			end
+
+
+			--- BLOCK #9 16-16, warpins: 1 ---
+			slot4 = slot1[2]
+			--- END OF BLOCK #9 ---
+
+			FLOW; TARGET BLOCK #10
+
+
+			--- BLOCK #10 17-22, warpins: 2 ---
+			slot5 = Utils
+			slot5 = slot5.isTable
+			slot7 = slot4
+			slot5 = slot5(slot7)
+			--- END OF BLOCK #10 ---
+
+			slot5 = if slot5 then
+			JUMP TO BLOCK #11
+			else
+			JUMP TO BLOCK #14
+			end
+
+
+			--- BLOCK #11 23-27, warpins: 1 ---
+			slot5 = slot4[1]
+			slot6 = self
+			slot6 = slot6.uid
+			--- END OF BLOCK #11 ---
+
+			if slot5 ~= slot6 then
+			JUMP TO BLOCK #12
+			else
+			JUMP TO BLOCK #13
+			end
+
+
+			--- BLOCK #12 28-29, warpins: 1 ---
+			slot5 = false
+			--- END OF BLOCK #12 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+			--- BLOCK #13 30-30, warpins: 1 ---
+			slot5 = true
+			--- END OF BLOCK #13 ---
+
+			FLOW; TARGET BLOCK #14
+
+
+			--- BLOCK #14 31-37, warpins: 3 ---
+			slot6 = self
+			slot8 = slot6
+			slot6 = slot6.setRewardPreviewVisible
+			slot9 = false
+
+			slot6(slot8, slot9)
+
+			--- END OF BLOCK #14 ---
+
+			slot5 = if not slot5 then
+			JUMP TO BLOCK #15
+			else
+			JUMP TO BLOCK #16
+			end
+
+
+			--- BLOCK #15 38-41, warpins: 1 ---
+			slot6 = self
+			slot8 = slot6
+			slot6 = slot6.close
+
+			slot6(slot8)
+
+			--- END OF BLOCK #15 ---
+
+			FLOW; TARGET BLOCK #16
+
+
+			--- BLOCK #16 42-42, warpins: 2 ---
+			return
+			--- END OF BLOCK #16 ---
+
+
+
+		end
+
+		slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6.luaRenderItem = slot7
+	slot9 = slot6
+	slot7 = slot6.SetList
+	slot10 = slot2.rewards
+
+	slot7(slot9, slot10)
+
+	return
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 40-40, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -280,9 +1059,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.refreshUI = slot12
+slot2.renderRewardPreviewItem = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.dailyTimer
 	--- END OF BLOCK #0 ---
@@ -390,9 +1169,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.startDailyResetCount = slot12
+slot2.startDailyResetCount = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -442,9 +1221,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.refreshDailyCount = slot12
+slot2.refreshDailyCount = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = {}
 	slot0.slotButtons = slot1
@@ -478,9 +1257,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.refreshBoxList = slot12
+slot2.refreshBoxList = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentSlots
 
@@ -545,9 +1324,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.clearAllSlotRedDots = slot12
+slot2.clearAllSlotRedDots = slot15
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.format
@@ -870,9 +1649,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.renderRewardItem = slot12
+slot2.renderRewardItem = slot15
 
-slot12 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.killBoxTimer
@@ -935,9 +1714,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot2.resetBoxTimer = slot12
+slot2.resetBoxTimer = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentSlots
 	--- END OF BLOCK #0 ---
@@ -1018,9 +1797,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.hasCountingDownSlot = slot12
+slot2.hasCountingDownSlot = slot15
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1183,9 +1962,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.updateSlotCountDown = slot12
+slot2.updateSlotCountDown = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentSlots
 
@@ -1416,9 +2195,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.tickCountDown = slot12
+slot2.tickCountDown = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.boxtimer
 	--- END OF BLOCK #0 ---
@@ -1453,9 +2232,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.killBoxTimer = slot12
+slot2.killBoxTimer = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshBoxList
@@ -1469,9 +2248,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.onRewardBoxChanged = slot12
+slot2.onRewardBoxChanged = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshBoxList
@@ -1485,9 +2264,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.onRankChanged = slot12
+slot2.onRankChanged = slot15
 
-slot12 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killBoxTimer
@@ -1536,7 +2315,7 @@ slot12 = function(slot0)
 
 end
 
-slot2.onDestroy = slot12
+slot2.onDestroy = slot15
 
 return slot2
 --- END OF BLOCK #0 ---

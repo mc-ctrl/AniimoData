@@ -1,4 +1,4 @@
---- BLOCK #0 1-75, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -36,28 +36,31 @@ slot9 = slot9(slot11)
 slot10 = require
 slot12 = "GameApp.DialogueGraph.DialogueGraphUtils"
 slot10 = slot10(slot12)
-slot11 = slot4.LightClass
-slot13 = "CommonSkipCtrl"
-slot14 = slot9
-slot11 = slot11(slot13, slot14)
-slot12 = 3
-slot11.SpeedMax = slot12
-slot12 = {}
-slot13 = slot3.DIALOGUE_GRAPH_PLAYBACK_STATE_CHANGE
-slot14 = {
+slot11 = require
+slot13 = "Utils.LuaUIUtils"
+slot11 = slot11(slot13)
+slot12 = slot4.LightClass
+slot14 = "CommonSkipCtrl"
+slot15 = slot9
+slot12 = slot12(slot14, slot15)
+slot13 = 3
+slot12.SpeedMax = slot13
+slot13 = {}
+slot14 = slot3.DIALOGUE_GRAPH_PLAYBACK_STATE_CHANGE
+slot15 = {
 	"onPlaybackStateChange",
 	true
 }
-slot12[slot13] = slot14
-slot13 = slot3.DIALOGUE_GRAPH_PLAYBACK_PERMISSION_CHANGE
-slot14 = {
+slot13[slot14] = slot15
+slot14 = slot3.DIALOGUE_GRAPH_PLAYBACK_PERMISSION_CHANGE
+slot15 = {
 	"onPlaybackPremissionChange",
 	true
 }
-slot12[slot13] = slot14
-slot11.messages = slot12
+slot13[slot14] = slot15
+slot12.messages = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -73,9 +76,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.onCreate = slot12
+slot12.onCreate = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = DialogueGraphConst
 	slot2 = slot2.PLAYBACK_STATE
@@ -193,9 +196,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.onPlaybackStateChange = slot12
+slot12.onPlaybackStateChange = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = DialogueGraphConst
 	slot2 = slot2.PLAYBACK_PERMISSION
@@ -259,29 +262,18 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.onPlaybackPremissionChange = slot12
+slot12.onPlaybackPremissionChange = slot13
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-222, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.btnSpeedUButton
+slot13 = function(slot0)
+	--- BLOCK #0 1-169, warpins: 1 ---
+	slot1 = LuaUIUtils
+	slot1 = slot1.setUIViewVisible
+	slot3 = slot0.view
+	slot3 = slot3.btnSpeedUButton
+	slot4 = false
 
-	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.changeSpeed
+	slot1(slot3, slot4)
 
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
 	slot1 = slot0.view
 	slot1 = slot1.btnAutoUButton
 
@@ -302,305 +294,14 @@ slot12 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
-	slot1 = slot0.view
-	slot1 = slot1.btnGearUButton
+	slot1 = LuaUIUtils
+	slot1 = slot1.setUIViewVisible
+	slot3 = slot0.view
+	slot3 = slot3.btnGearUButton
+	slot4 = false
 
-	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-58, warpins: 1 ---
-		slot4 = slot1
-		slot2 = slot1.GetComponent
-		slot5 = "ObjectReference"
-		slot2 = slot2(slot4, slot5)
-		slot5 = slot2
-		slot3 = slot2.GetRefValue
-		slot6 = "speedSlider"
-		slot3 = slot3(slot5, slot6)
-		slot6 = slot2
-		slot4 = slot2.GetRefValue
-		slot7 = "speedBtn1"
-		slot4 = slot4(slot6, slot7)
-		slot7 = slot2
-		slot5 = slot2.GetRefValue
-		slot8 = "speedBtn2"
-		slot5 = slot5(slot7, slot8)
-		slot8 = slot2
-		slot6 = slot2.GetRefValue
-		slot9 = "speedBtn3"
-		slot6 = slot6(slot8, slot9)
+	slot1(slot3, slot4)
 
-		slot7 = function()
-			--- BLOCK #0 1-13, warpins: 1 ---
-			slot0 = speedSlider
-			slot1 = self
-			slot1 = slot1.currentSpeed
-			slot0.value = slot1
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.refreshSpeedBtnState
-			slot3 = speedBtn1
-			slot4 = self
-			slot4 = slot4.currentSpeed
-			slot5 = 1
-			--- END OF BLOCK #0 ---
-
-			if slot4 < slot5 then
-			JUMP TO BLOCK #1
-			else
-			JUMP TO BLOCK #2
-			end
-
-
-			--- BLOCK #1 14-15, warpins: 1 ---
-			slot4 = false
-			--- END OF BLOCK #1 ---
-
-			UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-			--- BLOCK #2 16-16, warpins: 1 ---
-			slot4 = true
-
-			--- END OF BLOCK #2 ---
-
-			FLOW; TARGET BLOCK #3
-
-
-			--- BLOCK #3 17-26, warpins: 2 ---
-			slot0(slot2, slot3, slot4)
-
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.refreshSpeedBtnState
-			slot3 = speedBtn2
-			slot4 = self
-			slot4 = slot4.currentSpeed
-			slot5 = 2
-			--- END OF BLOCK #3 ---
-
-			if slot4 < slot5 then
-			JUMP TO BLOCK #4
-			else
-			JUMP TO BLOCK #5
-			end
-
-
-			--- BLOCK #4 27-28, warpins: 1 ---
-			slot4 = false
-			--- END OF BLOCK #4 ---
-
-			UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-			--- BLOCK #5 29-29, warpins: 1 ---
-			slot4 = true
-
-			--- END OF BLOCK #5 ---
-
-			FLOW; TARGET BLOCK #6
-
-
-			--- BLOCK #6 30-39, warpins: 2 ---
-			slot0(slot2, slot3, slot4)
-
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.refreshSpeedBtnState
-			slot3 = speedBtn3
-			slot4 = self
-			slot4 = slot4.currentSpeed
-			slot5 = 3
-			--- END OF BLOCK #6 ---
-
-			if slot4 < slot5 then
-			JUMP TO BLOCK #7
-			else
-			JUMP TO BLOCK #8
-			end
-
-
-			--- BLOCK #7 40-41, warpins: 1 ---
-			slot4 = false
-			--- END OF BLOCK #7 ---
-
-			UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-			--- BLOCK #8 42-42, warpins: 1 ---
-			slot4 = true
-
-			--- END OF BLOCK #8 ---
-
-			FLOW; TARGET BLOCK #9
-
-
-			--- BLOCK #9 43-44, warpins: 2 ---
-			slot0(slot2, slot3, slot4)
-
-			return
-			--- END OF BLOCK #9 ---
-
-
-
-		end
-
-		slot8 = function()
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.setPlaySpeed
-			slot3 = 1
-
-			slot0(slot2, slot3)
-
-			slot0 = refreshSpeedBtn
-
-			slot0()
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot4.luaClick = slot8
-
-		slot8 = function()
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.setPlaySpeed
-			slot3 = 2
-
-			slot0(slot2, slot3)
-
-			slot0 = refreshSpeedBtn
-
-			slot0()
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot5.luaClick = slot8
-
-		slot8 = function()
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.setPlaySpeed
-			slot3 = 3
-
-			slot0(slot2, slot3)
-
-			slot0 = refreshSpeedBtn
-
-			slot0()
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot6.luaClick = slot8
-		slot8 = 1
-		slot3.minValue = slot8
-		slot8 = CommonSkipCtrl
-		slot8 = slot8.SpeedMax
-		slot3.maxValue = slot8
-		slot8 = 0.2
-		slot3.stepSize = slot8
-
-		slot8 = function(slot0)
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot1 = self
-			slot3 = slot1
-			slot1 = slot1.setPlaySpeed
-			slot4 = slot0
-
-			slot1(slot3, slot4)
-
-			slot1 = refreshSpeedBtn
-
-			slot1()
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot3.luaValueChanged = slot8
-		slot8 = slot7
-
-		slot8()
-
-		slot8 = self
-		slot10 = slot8
-		slot8 = slot8.bindHotKeyPerform
-		slot11 = HotkeyConst
-		slot11 = slot11.INPUT_MAP_ACTION_KEY
-		slot11 = slot11.GamepadLeftTrigger
-
-		slot12 = function()
-			--- BLOCK #0 1-6, warpins: 1 ---
-			slot0 = speedSlider
-			slot1 = speedSlider
-			slot1 = slot1.value
-			slot1 = slot1 - 0.2
-			slot0.value = slot1
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot13 = slot3.gameObject
-
-		slot8(slot10, slot11, slot12, slot13)
-
-		slot8 = self
-		slot10 = slot8
-		slot8 = slot8.bindHotKeyPerform
-		slot11 = HotkeyConst
-		slot11 = slot11.INPUT_MAP_ACTION_KEY
-		slot11 = slot11.GamepadRightTrigger
-
-		slot12 = function()
-			--- BLOCK #0 1-6, warpins: 1 ---
-			slot0 = speedSlider
-			slot1 = speedSlider
-			slot1 = slot1.value
-			slot1 = slot1 + 0.2
-			slot0.value = slot1
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot13 = slot3.gameObject
-
-		slot8(slot10, slot11, slot12, slot13)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaRenderTooltip = slot2
 	slot1 = slot0.view
 	slot1 = slot1.btnPlayingUButton
 
@@ -643,20 +344,26 @@ slot12 = function(slot0)
 		--- BLOCK #1 8-8, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-		--- BLOCK #2 9-24, warpins: 1 ---
+		--- BLOCK #2 9-22, warpins: 1 ---
 		slot0 = DialogueGraphUtils
-		slot0 = slot0.setGameTime
-		slot2 = 0
+		slot0 = slot0.pauseGame
 
-		slot0(slot2)
+		slot0()
 
-		slot0 = function()
-			--- BLOCK #0 1-6, warpins: 1 ---
-			slot0 = self
-			slot0 = slot0.cmd
+		slot0 = self
+		slot0 = slot0.cmd
+
+		slot1 = function()
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot0 = DialogueGraphUtils
+			slot0 = slot0.resumeGame
+
+			slot0()
+
+			slot0 = cmd
 			slot2 = slot0
 			slot0 = slot0.startSkip
 
@@ -669,58 +376,46 @@ slot12 = function(slot0)
 
 		end
 
-		slot1, slot2, slot3 = nil
-		slot4 = tostring
-		slot6 = self
-		slot6 = slot6.cmd
-		slot6 = slot6.id
-		slot4 = slot4(slot6)
+		slot2, slot3, slot4 = nil
 		slot5 = self
 		slot5 = slot5.cmd
-		slot5 = slot5.skipMsg
+		slot5 = slot5.id
+		slot6 = DialogueGraphSkipData
+		slot6 = slot6[slot5]
 		--- END OF BLOCK #2 ---
 
-		slot5 = if slot5 then
+		slot6 = if slot6 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #3 25-28, warpins: 1 ---
-		slot5 = DialogueGraphSkipData
-		slot5 = slot5[slot4]
-		--- END OF BLOCK #3 ---
-
-		slot5 = if slot5 then
 		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #4 29-54, warpins: 1 ---
-		slot5 = pg
-		slot5 = slot5.getLocalizationText
-		slot7 = DialogueGraphSkipData
-		slot7 = slot7[slot4]
-		slot7 = slot7.title
-		slot5 = slot5(slot7)
-		slot1 = slot5
-		slot5 = pg
-		slot5 = slot5.getLocalizationText
-		slot7 = DialogueGraphSkipData
-		slot7 = slot7[slot4]
-		slot7 = slot7.msg
-		slot5 = slot5(slot7)
-		slot2 = slot5
-		slot5 = pg
-		slot5 = slot5.global
-		slot5 = slot5.showConfirmMsgRaw
-		slot7 = slot1
-		slot8 = slot2
+		--- BLOCK #3 23-51, warpins: 1 ---
+		slot6 = pg
+		slot6 = slot6.getLocalizationText
+		slot8 = DialogueGraphSkipData
+		slot8 = slot8[slot5]
+		slot8 = slot8.title
+		slot6 = slot6(slot8)
+		slot2 = slot6
+		slot6 = pg
+		slot6 = slot6.getLocalizationText
+		slot8 = DialogueGraphSkipData
+		slot8 = slot8[slot5]
+		slot8 = slot8.msg
+		slot6 = slot6(slot8)
+		slot3 = slot6
+		slot6 = pg
+		slot6 = slot6.global
+		slot6 = slot6.ui
+		slot6 = slot6.dialogueSkip
+		slot8 = slot6
+		slot6 = slot6.openConfirm
+		slot9 = slot2
+		slot10 = slot3
 
-		slot9 = function()
+		slot11 = function()
 			--- BLOCK #0 1-3, warpins: 1 ---
 			slot0 = okCb
 
@@ -733,15 +428,14 @@ slot12 = function(slot0)
 
 		end
 
-		slot10 = nil
+		slot12 = nil
 
-		slot11 = function()
-			--- BLOCK #0 1-5, warpins: 1 ---
+		slot13 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
 			slot0 = DialogueGraphUtils
-			slot0 = slot0.setGameTime
-			slot2 = 1
+			slot0 = slot0.resumeGame
 
-			slot0(slot2)
+			slot0()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -750,31 +444,31 @@ slot12 = function(slot0)
 
 		end
 
-		slot12, slot13 = nil
-		slot14 = slot3
+		slot14, slot15 = nil
+		slot16 = slot4
 
-		slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+		slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16)
 
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #3 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-		--- BLOCK #5 55-79, warpins: 2 ---
-		slot5 = pg
-		slot5 = slot5.getGameString
-		slot7 = "SKIPDIALOGUE"
-		slot5 = slot5(slot7)
-		slot1 = slot5
-		slot2 = ""
-		slot5 = {}
+		--- BLOCK #4 52-76, warpins: 1 ---
 		slot6 = pg
-		slot6 = slot6.me
-		slot6 = slot6.noSkipScenePromptToday
-		slot6 = not slot6
-		slot5.hint = slot6
+		slot6 = slot6.getGameString
+		slot8 = "SKIPDIALOGUE"
+		slot6 = slot6(slot8)
+		slot2 = slot6
+		slot3 = ""
+		slot6 = {}
+		slot7 = pg
+		slot7 = slot7.me
+		slot7 = slot7.noSkipScenePromptToday
+		slot7 = not slot7
+		slot6.hint = slot7
 
-		slot6 = function(slot0)
+		slot7 = function(slot0)
 			--- BLOCK #0 1-7, warpins: 1 ---
 			slot1 = pg
 			slot1 = slot1.me
@@ -791,44 +485,49 @@ slot12 = function(slot0)
 
 		end
 
-		slot5.hintCb = slot6
+		slot6.hintCb = slot7
+		slot7 = pg
+		slot7 = slot7.getGameString
+		slot9 = "SKIPDIALOGUE_TODAY"
+		slot7 = slot7(slot9)
+		slot6.hintDesc = slot7
+		slot4 = slot6
 		slot6 = pg
-		slot6 = slot6.getGameString
-		slot8 = "SKIPDIALOGUE_TODAY"
-		slot6 = slot6(slot8)
-		slot5.hintDesc = slot6
-		slot3 = slot5
-		slot5 = pg
-		slot5 = slot5.me
-		slot5 = slot5.noSkipScenePromptToday
-		--- END OF BLOCK #5 ---
+		slot6 = slot6.me
+		slot6 = slot6.noSkipScenePromptToday
+		--- END OF BLOCK #4 ---
 
-		slot5 = if slot5 then
-		JUMP TO BLOCK #6
+		slot6 = if slot6 then
+		JUMP TO BLOCK #5
 		else
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #6 80-82, warpins: 1 ---
-		slot5 = slot0
+		--- BLOCK #5 77-79, warpins: 1 ---
+		slot6 = slot1
 
-		slot5()
+		slot6()
 
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #5 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-		--- BLOCK #7 83-93, warpins: 1 ---
-		slot5 = pg
-		slot5 = slot5.global
-		slot5 = slot5.showConfirmMsgRaw
-		slot7 = slot1
+		--- BLOCK #6 80-90, warpins: 1 ---
+		slot6 = pg
+		slot6 = slot6.global
+		slot6 = slot6.showConfirmMsgRaw
 		slot8 = slot2
+		slot9 = slot3
 
-		slot9 = function()
-			--- BLOCK #0 1-3, warpins: 1 ---
+		slot10 = function()
+			--- BLOCK #0 1-6, warpins: 1 ---
+			slot0 = DialogueGraphUtils
+			slot0 = slot0.resumeGame
+
+			slot0()
+
 			slot0 = okCb
 
 			slot0()
@@ -840,15 +539,14 @@ slot12 = function(slot0)
 
 		end
 
-		slot10 = nil
+		slot11 = nil
 
-		slot11 = function()
-			--- BLOCK #0 1-5, warpins: 1 ---
+		slot12 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
 			slot0 = DialogueGraphUtils
-			slot0 = slot0.setGameTime
-			slot2 = 1
+			slot0 = slot0.resumeGame
 
-			slot0(slot2)
+			slot0()
 
 			return
 			--- END OF BLOCK #0 ---
@@ -857,26 +555,26 @@ slot12 = function(slot0)
 
 		end
 
-		slot12, slot13 = nil
-		slot14 = slot3
+		slot13, slot14 = nil
+		slot15 = slot4
 
-		slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+		slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15)
 
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 91-92, warpins: 3 ---
+		return
 		--- END OF BLOCK #7 ---
 
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 94-95, warpins: 3 ---
+		--- BLOCK #8 93-93, warpins: 2 ---
 		return
 		--- END OF BLOCK #8 ---
-
-		FLOW; TARGET BLOCK #9
-
-
-		--- BLOCK #9 96-96, warpins: 2 ---
-		return
-		--- END OF BLOCK #9 ---
 
 
 
@@ -1001,7 +699,7 @@ slot12 = function(slot0)
 	slot5 = "keyHotKeyContent"
 	slot2 = slot2(slot4, slot5)
 	slot3 = slot0.view
-	slot3 = slot3.btnSpeedUButton
+	slot3 = slot3.btnAutoUButton
 	slot3 = slot3.transform
 	slot5 = slot3
 	slot3 = slot3.GetComponent
@@ -1012,7 +710,7 @@ slot12 = function(slot0)
 	slot6 = "keyHotKeyContent"
 	slot3 = slot3(slot5, slot6)
 	slot4 = slot0.view
-	slot4 = slot4.btnAutoUButton
+	slot4 = slot4.btnPlayingUButton
 	slot4 = slot4.transform
 	slot6 = slot4
 	slot4 = slot4.GetComponent
@@ -1023,7 +721,7 @@ slot12 = function(slot0)
 	slot7 = "keyHotKeyContent"
 	slot4 = slot4(slot6, slot7)
 	slot5 = slot0.view
-	slot5 = slot5.btnPlayingUButton
+	slot5 = slot5.btnSkipUButton
 	slot5 = slot5.transform
 	slot7 = slot5
 	slot5 = slot5.GetComponent
@@ -1033,237 +731,122 @@ slot12 = function(slot0)
 	slot5 = slot5.GetRefValue
 	slot8 = "keyHotKeyContent"
 	slot5 = slot5(slot7, slot8)
-	slot6 = slot0.view
-	slot6 = slot6.btnSkipUButton
-	slot6 = slot6.transform
-	slot8 = slot6
-	slot6 = slot6.GetComponent
-	slot9 = "ObjectReference"
-	slot6 = slot6(slot8, slot9)
-	slot8 = slot6
-	slot6 = slot6.GetRefValue
-	slot9 = "keyHotKeyContent"
-	slot6 = slot6(slot8, slot9)
-	slot7 = slot0.view
-	slot7 = slot7.btnGearUButton
-	slot7 = slot7.transform
-	slot9 = slot7
-	slot7 = slot7.GetComponent
-	slot10 = "ObjectReference"
-	slot7 = slot7(slot9, slot10)
-	slot9 = slot7
-	slot7 = slot7.GetRefValue
-	slot10 = "keyHotKeyContent"
-	slot7 = slot7(slot9, slot10)
-	slot10 = slot2
-	slot8 = slot2.SetHotKeyPaths
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadSelect
+	slot8 = slot2
+	slot6 = slot2.SetHotKeyPaths
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadSelect
 
-	slot8(slot10, slot11)
+	slot6(slot8, slot9)
 
-	slot10 = slot3
-	slot8 = slot3.SetHotKeyPaths
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadRightShoulder
+	slot8 = slot3
+	slot6 = slot3.SetHotKeyPaths
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadButtonWest
 
-	slot8(slot10, slot11)
+	slot6(slot8, slot9)
 
-	slot10 = slot4
-	slot8 = slot4.SetHotKeyPaths
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadButtonWest
+	slot8 = slot4
+	slot6 = slot4.SetHotKeyPaths
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadButtonWest
 
-	slot8(slot10, slot11)
+	slot6(slot8, slot9)
 
-	slot10 = slot5
-	slot8 = slot5.SetHotKeyPaths
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadButtonWest
+	slot8 = slot5
+	slot6 = slot5.SetHotKeyPaths
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadStart
 
-	slot8(slot10, slot11)
+	slot6(slot8, slot9)
 
-	slot10 = slot6
-	slot8 = slot6.SetHotKeyPaths
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadStart
+	slot8 = slot0
+	slot6 = slot0.bindHotKeyPerform
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadSelect
+	slot10 = slot0.view
+	slot10 = slot10.btnLogUButton
+	slot10 = slot10.luaClick
+	slot11 = slot0.view
+	slot11 = slot11.btnLogUButton
+	slot11 = slot11.gameObject
 
-	slot8(slot10, slot11)
+	slot6(slot8, slot9, slot10, slot11)
 
-	slot10 = slot7
-	slot8 = slot7.SetHotKeyPaths
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadLeftShoulder
+	slot8 = slot0
+	slot6 = slot0.bindHotKeyPerform
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadButtonWest
+	slot10 = slot0.view
+	slot10 = slot10.btnAutoUButton
+	slot10 = slot10.luaClick
+	slot11 = slot0.view
+	slot11 = slot11.btnAutoUButton
+	slot11 = slot11.gameObject
 
-	slot8(slot10, slot11)
+	slot6(slot8, slot9, slot10, slot11)
 
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadSelect
-	slot12 = slot0.view
-	slot12 = slot12.btnLogUButton
-	slot12 = slot12.luaClick
-	slot13 = slot0.view
-	slot13 = slot13.btnLogUButton
-	slot13 = slot13.gameObject
+	slot8 = slot0
+	slot6 = slot0.bindHotKeyPerform
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadButtonWest
+	slot10 = slot0.view
+	slot10 = slot10.btnPlayingUButton
+	slot10 = slot10.luaClick
+	slot11 = slot0.view
+	slot11 = slot11.btnPlayingUButton
+	slot11 = slot11.gameObject
 
-	slot8(slot10, slot11, slot12, slot13)
+	slot6(slot8, slot9, slot10, slot11)
 
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadRightShoulder
-	slot12 = slot0.view
-	slot12 = slot12.btnSpeedUButton
-	slot12 = slot12.luaClick
-	slot13 = slot0.view
-	slot13 = slot13.btnSpeedUButton
-	slot13 = slot13.gameObject
+	slot8 = slot0
+	slot6 = slot0.bindHotKeyPerform
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.GamepadStart
+	slot10 = slot0.view
+	slot10 = slot10.btnSkipUButton
+	slot10 = slot10.luaClick
+	slot11 = slot0.view
+	slot11 = slot11.btnSkipUButton
+	slot11 = slot11.gameObject
 
-	slot8(slot10, slot11, slot12, slot13)
+	slot6(slot8, slot9, slot10, slot11)
 
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadButtonWest
-	slot12 = slot0.view
-	slot12 = slot12.btnAutoUButton
-	slot12 = slot12.luaClick
-	slot13 = slot0.view
-	slot13 = slot13.btnAutoUButton
-	slot13 = slot13.gameObject
+	slot8 = slot0
+	slot6 = slot0.bindHotKeyPerform
+	slot9 = HotkeyConst
+	slot9 = slot9.INPUT_MAP_ACTION_KEY
+	slot9 = slot9.ClosePanelCommon
 
-	slot8(slot10, slot11, slot12, slot13)
-
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadButtonWest
-	slot12 = slot0.view
-	slot12 = slot12.btnPlayingUButton
-	slot12 = slot12.luaClick
-	slot13 = slot0.view
-	slot13 = slot13.btnPlayingUButton
-	slot13 = slot13.gameObject
-
-	slot8(slot10, slot11, slot12, slot13)
-
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadStart
-	slot12 = slot0.view
-	slot12 = slot12.btnSkipUButton
-	slot12 = slot12.luaClick
-	slot13 = slot0.view
-	slot13 = slot13.btnSkipUButton
-	slot13 = slot13.gameObject
-
-	slot8(slot10, slot11, slot12, slot13)
-
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadLeftShoulder
-
-	slot12 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.view
-		slot0 = slot0.btnGearUButton
-		slot0 = slot0.isTooltipOpen
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 7-13, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.view
-		slot0 = slot0.btnGearUButton
-		slot2 = slot0
-		slot0 = slot0.CloseTooltip
-
-		slot0(slot2)
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 14-19, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.view
-		slot0 = slot0.btnGearUButton
-		slot2 = slot0
-		slot0 = slot0.OpenTooltip
-
-		slot0(slot2)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 20-20, warpins: 2 ---
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot13 = slot0.view
-	slot13 = slot13.btnGearUButton
-	slot13 = slot13.gameObject
-
-	slot8(slot10, slot11, slot12, slot13)
-
-	slot10 = slot0
-	slot8 = slot0.bindHotKeyPerform
-	slot11 = HotkeyConst
-	slot11 = slot11.INPUT_MAP_ACTION_KEY
-	slot11 = slot11.GamepadCancel
-
-	slot12 = function()
+	slot10 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.view
-		slot0 = slot0.btnGearUButton
-		slot2 = slot0
-		slot0 = slot0.CloseTooltip
+		slot0 = slot0.btnSkipUButton
+		slot0 = slot0.luaClick
 
-		slot0(slot2)
+		slot0()
 
-		return
+		slot0 = false
+
+		return slot0
 		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	slot13 = slot0.view
-	slot13 = slot13.btnGearUButton
-	slot13 = slot13.gameObject
+	slot11 = slot0.view
+	slot11 = slot11.gameObject
 
-	slot8(slot10, slot11, slot12, slot13)
+	slot6(slot8, slot9, slot10, slot11)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1272,9 +855,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.addListener = slot12
+slot12.addListener = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onShow
@@ -1294,9 +877,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onShow = slot12
+slot12.onShow = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -1332,9 +915,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.onOpen = slot12
+slot12.onOpen = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setPlaySpeed
@@ -1371,9 +954,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onInit = slot12
+slot12.onInit = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.currentSpeed
 	slot2 = CommonSkipCtrl
@@ -1421,10 +1004,10 @@ slot12 = function(slot0)
 
 end
 
-slot11.changeSpeed = slot12
+slot12.changeSpeed = slot13
 
-slot12 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.currentSpeed = slot1
 	slot3 = slot0.cmd
 	slot5 = slot3
@@ -1434,15 +1017,6 @@ slot12 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	slot3 = slot0.view
-	slot3 = slot3.speedText
-	slot4 = string
-	slot4 = slot4.format
-	slot6 = "x%.1f"
-	slot7 = slot1
-	slot4 = slot4(slot6, slot7)
-	slot3.text = slot4
-
 	return
 	--- END OF BLOCK #0 ---
 
@@ -1450,9 +1024,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.setPlaySpeed = slot12
+slot12.setPlaySpeed = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.TryChangePage
@@ -1491,9 +1065,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.refreshSpeedBtnState = slot12
+slot12.refreshSpeedBtnState = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -1511,9 +1085,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onDestroy = slot12
+slot12.onDestroy = slot13
 
-return slot11
+return slot12
 --- END OF BLOCK #0 ---
 
 

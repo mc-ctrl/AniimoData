@@ -1020,7 +1020,7 @@ end
 slot7.addListener = slot19
 
 slot19 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-44, warpins: 1 ---
+	--- BLOCK #0 1-41, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1057,12 +1057,9 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	slot11 = ClientTextUtils
 	slot11 = slot11.setText
 	slot13 = slot6
-	slot14 = pg
-	slot14 = slot14.getLocalizationText
-	slot16 = slot3.name
-	MULTRES = slot14(slot16)
+	slot14 = slot3.name
 
-	slot11(slot13, MULTRES)
+	slot11(slot13, slot14)
 
 	slot11 = slot0.hasVoted
 	--- END OF BLOCK #0 ---
@@ -1074,7 +1071,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 45-48, warpins: 1 ---
+	--- BLOCK #1 42-45, warpins: 1 ---
 	slot11 = slot0.stageId
 	slot12 = 1
 	--- END OF BLOCK #1 ---
@@ -1086,7 +1083,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 49-53, warpins: 2 ---
+	--- BLOCK #2 46-50, warpins: 2 ---
 	slot11 = false
 	slot1.interactable = slot11
 	slot11 = slot3.isMax
@@ -1099,7 +1096,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 54-73, warpins: 1 ---
+	--- BLOCK #3 51-70, warpins: 1 ---
 	slot13 = slot1
 	slot11 = slot1.TryChangePage
 	slot14 = "Percentagestate"
@@ -1128,7 +1125,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 74-92, warpins: 1 ---
+	--- BLOCK #4 71-89, warpins: 1 ---
 	slot13 = slot1
 	slot11 = slot1.TryChangePage
 	slot14 = "Percentagestate"
@@ -1158,7 +1155,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 93-93, warpins: 3 ---
+	--- BLOCK #5 90-90, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 

@@ -7,9 +7,9 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	version = 6,
 	name = "PatrolTree/PatrolSubTree/ST_CastCutsomSkill",
 	useForRoute = true,
-	version = 6,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
@@ -17,50 +17,50 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "tWaitTime",
-	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "tSkillId",
-	value = "0",
 	const = 0,
-	type = "int"
+	type = "int",
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "tSkillTargetActorId",
-	value = "0",
 	const = 0,
-	type = "int"
+	type = "int",
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
 	name = "tEmojiBubbleKey",
-	value = "",
 	const = "",
-	type = "string"
+	type = "string",
+	value = ""
 }
 slot4[4] = slot5
 slot5 = {
 	name = "tEmojiBubbleTimeout",
-	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
 	name = "tRaycastOpen",
-	value = "false",
 	const = false,
-	type = "bool"
+	type = "bool",
+	value = "false"
 }
 slot4[6] = slot5
 slot5 = {
 	name = "tCastAbilitySource",
-	value = "Normal",
-	type = "CastAbilitySourceType"
+	type = "CastAbilitySourceType",
+	value = "Normal"
 }
 slot6 = slot0.CastAbilitySourceType
 slot6 = slot6.Normal
@@ -70,8 +70,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -80,8 +80,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}
@@ -113,8 +113,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "IfElse"
+	class = "IfElse",
+	id = "3"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -123,8 +123,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "9",
-	class = "Condition"
+	class = "Condition",
+	id = "9"
 }
 slot11 = {}
 slot12 = {
@@ -152,8 +152,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	id = "7",
-	class = "Assignment"
+	class = "Assignment",
+	id = "7"
 }
 slot11 = {}
 slot12 = {
@@ -191,8 +191,8 @@ slot9.node = slot10
 slot8[2] = slot9
 slot9 = {}
 slot10 = {
-	id = "8",
-	class = "Noop"
+	class = "Noop",
+	id = "8"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -207,8 +207,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "4",
-	class = "Action"
+	class = "Action",
+	id = "4"
 }
 slot8 = {}
 slot9 = {}
@@ -252,8 +252,8 @@ slot6.node = slot7
 slot5[3] = slot6
 slot6 = {}
 slot7 = {
-	id = "5",
-	class = "Action"
+	class = "Action",
+	id = "5"
 }
 slot8 = {}
 slot9 = {}

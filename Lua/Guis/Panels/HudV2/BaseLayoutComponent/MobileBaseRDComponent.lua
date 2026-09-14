@@ -1,4 +1,4 @@
---- BLOCK #0 1-79, warpins: 1 ---
+--- BLOCK #0 1-81, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -201,7 +201,7 @@ slot13 = function(slot0)
 		isAutoLoad = true
 	}
 	slot6 = slot0.view
-	slot6 = slot6.uiNode
+	slot6 = slot6.uiWorldNode
 	slot6 = slot6.transform
 	slot5.parentTrans = slot6
 	slot6 = HudSplicingCfg
@@ -519,6 +519,53 @@ slot13 = function(slot0, slot1)
 end
 
 slot12.onExploreModeChanged = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.mobile3C
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.mobile3C
+	slot2 = slot2.notifyNormalAtkBtnStateChanged
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot2 = slot0.mobile3C
+	slot4 = slot2
+	slot2 = slot2.notifyNormalAtkBtnStateChanged
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-13, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot12.notifyNormalAtkBtnStateChanged = slot13
 
 slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

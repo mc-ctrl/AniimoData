@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-63, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -171,48 +171,32 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 6-15, warpins: 1 ---
-	slot1 = require
-	slot3 = "Const.ClientConst"
-	slot1 = slot1(slot3)
-	slot2 = NotNil
-	slot4 = slot0.owner
-	slot4 = slot4.eModel
-	slot4 = slot4.motionComponent
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 16-24, warpins: 1 ---
-	slot2 = slot0.owner
-	slot2 = slot2.eModel
-	slot2 = slot2.motionComponent
-	slot4 = slot2
-	slot2 = slot2.EnableKccFullSimulation
+	--- BLOCK #1 6-16, warpins: 1 ---
+	slot1 = slot0.owner
+	slot1 = slot1.eModel
+	slot3 = slot1
+	slot1 = slot1.EnableKccFullSimulation
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MOTION
 	slot5 = true
-	slot6 = slot1.KccControlType
+	slot6 = Const
+	slot6 = slot6.KccControlType
 	slot6 = slot6.SkillControl
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #3 25-25, warpins: 3 ---
+	--- BLOCK #2 17-17, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -230,48 +214,32 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 6-15, warpins: 1 ---
-	slot1 = require
-	slot3 = "Const.ClientConst"
-	slot1 = slot1(slot3)
-	slot2 = NotNil
-	slot4 = slot0.owner
-	slot4 = slot4.eModel
-	slot4 = slot4.motionComponent
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 16-24, warpins: 1 ---
-	slot2 = slot0.owner
-	slot2 = slot2.eModel
-	slot2 = slot2.motionComponent
-	slot4 = slot2
-	slot2 = slot2.EnableKccFullSimulation
+	--- BLOCK #1 6-16, warpins: 1 ---
+	slot1 = slot0.owner
+	slot1 = slot1.eModel
+	slot3 = slot1
+	slot1 = slot1.EnableKccFullSimulation
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MOTION
 	slot5 = false
-	slot6 = slot1.KccControlType
+	slot6 = Const
+	slot6 = slot6.KccControlType
 	slot6 = slot6.SkillControl
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #3 25-25, warpins: 3 ---
+	--- BLOCK #2 17-17, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -358,11 +326,9 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot0.owner
-	slot5 = slot5.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot3 = slot0.owner
+	slot3 = slot3.eModel
 	--- END OF BLOCK #1 ---
 
 	slot3 = if slot3 then
@@ -372,24 +338,25 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 12-21, warpins: 1 ---
+	--- BLOCK #2 10-20, warpins: 1 ---
 	slot3 = slot0.owner
 	slot3 = slot3.eModel
-	slot3 = slot3.motionComponent
 	slot5 = slot3
 	slot3 = slot3.AddDisplacementOffset
-	slot6 = slot1
-	slot7 = true
-	slot8 = slot2
+	slot6 = Const
+	slot6 = slot6.COMPONENT_MOTION
+	slot7 = slot1
+	slot8 = true
+	slot9 = slot2
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot3(slot5, slot6, slot7, slot8, slot9)
 
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 22-25, warpins: 1 ---
+	--- BLOCK #3 21-24, warpins: 1 ---
 	slot3 = slot0.owner
 	slot3 = slot3.serverAddDisplacementOffset
 	--- END OF BLOCK #3 ---
@@ -401,7 +368,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 26-32, warpins: 1 ---
+	--- BLOCK #4 25-31, warpins: 1 ---
 	slot3 = slot0.owner
 	slot5 = slot3
 	slot3 = slot3.serverAddDisplacementOffset
@@ -416,7 +383,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 33-33, warpins: 4 ---
+	--- BLOCK #5 32-32, warpins: 4 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -425,6 +392,139 @@ slot11 = function(slot0, slot1, slot2)
 end
 
 slot3.addDisplacementOffset = slot11
+
+slot11 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.checkClient
+	slot5 = slot5()
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot5 = slot0.owner
+	slot5 = slot5.eModel
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 10-21, warpins: 1 ---
+	slot5 = require
+	slot7 = "Entities.Utils.EModelUtils"
+	slot5 = slot5(slot7)
+	slot6 = slot5.setDisplacementVelocitySourceByOffset
+	slot8 = slot0.owner
+	slot9 = slot1
+	slot10 = slot2
+	slot11 = slot3
+	slot12 = true
+	slot13 = slot4
+
+	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 22-25, warpins: 1 ---
+	slot5 = slot0.owner
+	slot5 = slot5.serverAddDisplacementOffset
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-32, warpins: 1 ---
+	slot5 = slot0.owner
+	slot7 = slot5
+	slot5 = slot5.serverAddDisplacementOffset
+	slot8 = slot2
+	slot9 = true
+	slot10 = slot4
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 33-33, warpins: 4 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot3.setDisplacementVelocitySource = slot11
+
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.checkClient
+	slot2 = slot2()
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot2 = slot0.owner
+	slot2 = slot2.eModel
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-16, warpins: 1 ---
+	slot2 = require
+	slot4 = "Entities.Utils.EModelUtils"
+	slot2 = slot2(slot4)
+	slot3 = slot2.clearDisplacementVelocitySource
+	slot5 = slot0.owner
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot3.clearDisplacementVelocitySource = slot11
 
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -476,40 +576,11 @@ slot11 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #5 15-20, warpins: 1 ---
-	slot2 = NotNil
-	slot4 = slot0.owner
-	slot4 = slot4.eModel
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #5 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 21-27, warpins: 1 ---
-	slot2 = NotNil
-	slot4 = slot0.owner
-	slot4 = slot4.eModel
-	slot4 = slot4.motionComponent
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #6 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 28-45, warpins: 1 ---
+	--- BLOCK #5 15-32, warpins: 1 ---
 	slot2 = Quaternion
 	slot2 = slot2.MulVec3
 	slot4 = Quaternion
@@ -529,12 +600,12 @@ slot11 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #8 46-66, warpins: 1 ---
+	--- BLOCK #6 33-53, warpins: 1 ---
 	slot2 = Quaternion
 	slot2 = slot2.MulVec3
 	slot4 = Quaternion
@@ -558,14 +629,14 @@ slot11 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #9 67-67, warpins: 4 ---
+	--- BLOCK #7 54-54, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #7 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -399,15 +399,40 @@ slot13 = function(slot0)
 
 	--- BLOCK #2 6-10, warpins: 2 ---
 	slot1 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-24, warpins: 1 ---
+		--- BLOCK #0 1-3, warpins: 1 ---
 		slot3 = self
-		slot3.commandVisible = slot0
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= true then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-5, warpins: 1 ---
+		slot4 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 6-6, warpins: 1 ---
+		slot4 = true
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 7-30, warpins: 2 ---
+		slot3.commandVisible = slot4
 		slot3 = self
 		slot3.showType = slot1
 		slot3 = self
 		slot3.actionId = slot2
 		slot3 = self
-		slot4 = true
+		slot4 = self
+		slot4 = slot4.commandVisible
 		slot3.m_pendingSpaceFollow = slot4
 		slot3 = self
 		slot5 = slot3
@@ -425,24 +450,24 @@ slot13 = function(slot0)
 		slot3 = slot3.isTopLogoPrefabReady
 		slot3 = slot3(slot5)
 
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 		slot3 = if not slot3 then
-		JUMP TO BLOCK #1
+		JUMP TO BLOCK #4
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #1 25-25, warpins: 1 ---
+		--- BLOCK #4 31-31, warpins: 1 ---
 		return
 
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #2
+		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #2 26-34, warpins: 2 ---
+		--- BLOCK #5 32-40, warpins: 2 ---
 		slot3 = self
 		slot4 = false
 		slot3.m_pendingSpaceFollow = slot4
@@ -450,39 +475,39 @@ slot13 = function(slot0)
 		slot5 = slot3
 		slot3 = slot3.checkContainerLoaded
 		slot3 = slot3(slot5)
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
 		slot3 = if slot3 then
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #6
 		else
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #3 35-38, warpins: 1 ---
+		--- BLOCK #6 41-44, warpins: 1 ---
 		slot3 = self
 		slot3 = slot3.m_cacheSaceFollowFunc
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #6 ---
 
 		slot3 = if slot3 then
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #7
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #4 39-42, warpins: 1 ---
+		--- BLOCK #7 45-48, warpins: 1 ---
 		slot3 = self
 		slot3 = slot3.m_cacheSaceFollowFunc
 
 		slot3()
 
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #7 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #5 43-51, warpins: 1 ---
+		--- BLOCK #8 49-57, warpins: 1 ---
 		slot3 = self
 		slot5 = slot3
 		slot3 = slot3.checkAndLoadUContainerUrlSupportAsync
@@ -494,12 +519,12 @@ slot13 = function(slot0)
 
 		slot3(slot5, slot6, slot7)
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #6 52-60, warpins: 3 ---
+		--- BLOCK #9 58-66, warpins: 3 ---
 		slot3 = self
 		slot5 = slot3
 		slot3 = slot3.notifyActiveStateChanged
@@ -511,7 +536,7 @@ slot13 = function(slot0)
 		slot3(slot5, MULTRES)
 
 		return
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #9 ---
 
 
 
@@ -695,21 +720,6 @@ end
 slot8.handleCountDown = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.SPACE_FOLLOW
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot8.getComponentName = slot13
-
-slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkFinalVisible
@@ -860,19 +870,20 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 9-12, warpins: 1 ---
+	--- BLOCK #2 9-13, warpins: 1 ---
 	slot2 = slot0.onShowCountDown
 	slot4 = slot0.commandVisible
 	slot5 = slot0.showType
+	slot6 = slot0.actionId
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-13, warpins: 2 ---
+	--- BLOCK #3 14-14, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -880,7 +891,7 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-18, warpins: 2 ---
+	--- BLOCK #4 15-19, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.checkSpaceFollowItemVisible
 	slot2 = slot2(slot4)
@@ -894,7 +905,7 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 19-19, warpins: 1 ---
+	--- BLOCK #5 20-20, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -902,7 +913,7 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-23, warpins: 2 ---
+	--- BLOCK #6 21-24, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.checkAndLoadUContainerUrlSupportAsync
 

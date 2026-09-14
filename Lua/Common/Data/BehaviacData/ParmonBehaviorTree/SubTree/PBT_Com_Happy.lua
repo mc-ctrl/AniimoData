@@ -7,69 +7,69 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
-	version = 5,
+	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/PBT_Com_Happy",
-	useForRoute = false
+	agenttype = "CombatAgent",
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	const = 0,
-	type = "float",
 	value = "0",
-	name = "tWaitTime"
+	name = "tWaitTime",
+	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
 	const = "",
-	type = "string",
 	value = "",
-	name = "tAnimationKey"
+	name = "tAnimationKey",
+	type = "string"
 }
 slot4[2] = slot5
 slot5 = {
 	const = 5,
-	type = "float",
 	value = "5",
-	name = "tAnimationTimeout"
+	name = "tAnimationTimeout",
+	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
 	const = "",
-	type = "string",
 	value = "",
-	name = "tEmojiBubbleKey"
+	name = "tEmojiBubbleKey",
+	type = "string"
 }
 slot4[4] = slot5
 slot5 = {
 	const = 5,
-	type = "float",
 	value = "5",
-	name = "tEmojiBubbleTimeout"
+	name = "tEmojiBubbleTimeout",
+	type = "float"
 }
 slot4[5] = slot5
 slot5 = {
 	const = "",
-	type = "string",
 	value = "",
-	name = "tTimelineTag"
+	name = "tTimelineTag",
+	type = "string"
 }
 slot4[6] = slot5
 slot5 = {
 	const = false,
-	type = "bool",
 	value = "false",
-	name = "tNeedLoop"
+	name = "tNeedLoop",
+	type = "bool"
 }
 slot4[7] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -78,8 +78,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}
@@ -111,8 +111,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "Action"
+	class = "Action",
+	id = "3"
 }
 slot8 = {}
 slot9 = {}
@@ -156,8 +156,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "4",
-	class = "Action"
+	class = "Action",
+	id = "4"
 }
 slot8 = {}
 slot9 = {}

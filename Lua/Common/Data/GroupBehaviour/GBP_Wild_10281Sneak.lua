@@ -1,8 +1,8 @@
 --- BLOCK #0 1-136, warpins: 1 ---
 slot0 = {
+	CDAfterEnd = 0.1,
 	behavID = "BP_Wild_GroupBehav_10281Sneak",
-	GroupBehavVisionArea = "visionAreaLow",
-	CDAfterEnd = 0.1
+	GroupBehavVisionArea = "visionAreaLow"
 }
 slot1 = {}
 slot2 = {

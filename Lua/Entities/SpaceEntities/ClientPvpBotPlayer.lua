@@ -232,21 +232,19 @@ end
 slot6.getConfigData = slot22
 
 slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = IsNil
-	slot4 = slot0.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -254,7 +252,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-34, warpins: 2 ---
+	--- BLOCK #2 5-31, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.setModelLayer
 
@@ -264,8 +262,7 @@ slot22 = function(slot0, slot1)
 	slot2 = slot0.getConfigData
 	slot2 = slot2(slot4)
 	slot3 = slot0.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
+	slot3 = slot3.modelModelView
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.avatar
@@ -446,10 +443,9 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #13 55-67, warpins: 1 ---
+	--- BLOCK #13 55-66, warpins: 1 ---
 	slot8 = slot0.eModel
-	slot8 = slot8.modelComponent
-	slot8 = slot8.modelView
+	slot8 = slot8.modelModelView
 	slot8 = slot8.modelInfo
 	slot8 = slot8.partModelInfo
 	slot10 = slot8
@@ -467,7 +463,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 68-69, warpins: 3 ---
+	--- BLOCK #14 67-68, warpins: 3 ---
 	--- END OF BLOCK #14 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -475,7 +471,7 @@ slot22 = function(slot0)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 70-70, warpins: 2 ---
+	--- BLOCK #15 69-69, warpins: 2 ---
 	return
 	--- END OF BLOCK #15 ---
 

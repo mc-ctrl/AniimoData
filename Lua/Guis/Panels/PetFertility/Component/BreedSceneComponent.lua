@@ -1,40 +1,51 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-71, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.Helper.UIComponent"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "BreedSceneComponent"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Const.UIConst"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "Guis.Helper.UIComponent"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "BreedSceneComponent"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Utils.ClientModelUtils"
+slot6 = "Const.UIConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.ClientConst"
+slot7 = "Utils.ClientModelUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Timer.TimerManager"
+slot8 = "Const.ClientConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Entities.ClientSimpleVirtualEntity"
+slot9 = "Core.Timer.TimerManager"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.pet_data"
+slot10 = "Entities.ClientSimpleVirtualEntity"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.PlayableConst"
+slot11 = "Data.pet_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "GameApp.UIScene.UISceneConst"
+slot12 = "Common.Const.PlayableConst"
 slot10 = slot10(slot12)
+slot11 = require
+slot13 = "GameApp.UIScene.UISceneConst"
+slot11 = slot11(slot13)
+slot12 = require
+slot14 = "Utils.LuaUIUtils"
+slot12 = slot12(slot14)
+slot13 = "parmonAGlobalMove"
+slot14 = "parmonARotate"
+slot15 = "cameraAGlobalMove"
+slot16 = "cameraARotate"
+slot17 = "cameraAOthers"
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -57,9 +68,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.findObjects = slot11
+slot3.findObjects = slot18
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = true
 	slot0.loaded = slot4
@@ -78,9 +89,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.load = slot11
+slot3.load = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.root
@@ -121,9 +132,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.initScene = slot11
+slot3.initScene = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.breedTimelineModelReplacer
 	slot3 = slot1
@@ -138,9 +149,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.getAllPosAndRot = slot11
+slot3.getAllPosAndRot = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initModel
@@ -168,26 +179,23 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 20-25, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.entA
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #1 20-23, warpins: 1 ---
+	slot1 = slot0.entA
+	slot1 = slot1.eModel
 	--- END OF BLOCK #1 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 26-62, warpins: 1 ---
+	--- BLOCK #2 24-59, warpins: 1 ---
 	slot1 = slot0.entA
 	slot1 = slot1.eModel
-	slot1 = slot1.transform
 	slot3 = slot1
-	slot1 = slot1.SetParent
+	slot1 = slot1.SetTransformParent
 	slot4 = slot0.scene
 	slot5 = false
 
@@ -233,7 +241,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 63-65, warpins: 3 ---
+	--- BLOCK #3 60-62, warpins: 3 ---
 	slot1 = slot0.entB
 	--- END OF BLOCK #3 ---
 
@@ -244,26 +252,23 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #4 66-71, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.entB
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #4 63-66, warpins: 1 ---
+	slot1 = slot0.entB
+	slot1 = slot1.eModel
 	--- END OF BLOCK #4 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 72-108, warpins: 1 ---
+	--- BLOCK #5 67-102, warpins: 1 ---
 	slot1 = slot0.entB
 	slot1 = slot1.eModel
-	slot1 = slot1.transform
 	slot3 = slot1
-	slot1 = slot1.SetParent
+	slot1 = slot1.SetTransformParent
 	slot4 = slot0.scene
 	slot5 = false
 
@@ -309,7 +314,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 109-109, warpins: 3 ---
+	--- BLOCK #6 103-103, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -317,33 +322,31 @@ slot11 = function(slot0)
 
 end
 
-slot2.initModels = slot11
+slot3.initModels = slot18
 
-slot11 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-108, warpins: 1 ---
-	slot3 = CSEntityManager
-	slot5 = slot3
-	slot3 = slot3.GetPositionAgentByActorId
-	slot6 = slot0.entA
-	slot6 = slot6.actorId
-	slot3 = slot3(slot5, slot6)
-	slot4 = DoTweenAnimMgr
-	slot4 = slot4.Move
-	slot6 = slot3
-	slot7 = "parmonAGlobalMove"
-	slot8 = slot0.allPosAndRotTable
-	slot8 = slot8[1]
-	slot9 = slot1
-	slot10 = 0
-	slot11 = CS
-	slot11 = slot11.DG
-	slot11 = slot11.Tweening
-	slot11 = slot11.Ease
-	slot11 = slot11.__CastFrom
-	slot13 = 1
-	slot11 = slot11(slot13)
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-119, warpins: 1 ---
+	slot3 = DoTweenAnimMgr
+	slot3 = slot3.Move
+	slot5 = slot0.entA
+	slot5 = slot5.actorId
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = ID_PARMON_A_GLOBAL_MOVE
+	slot6 = slot6(slot8)
+	slot7 = slot0.allPosAndRotTable
+	slot7 = slot7[1]
+	slot8 = slot1
+	slot9 = 0
+	slot10 = CS
+	slot10 = slot10.DG
+	slot10 = slot10.Tweening
+	slot10 = slot10.Ease
+	slot10 = slot10.__CastFrom
+	slot12 = 1
+	slot10 = slot10(slot12)
 
-	slot12 = function()
+	slot11 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -358,95 +361,108 @@ slot11 = function(slot0, slot1, slot2)
 
 	end
 
-	slot13 = false
-	slot14 = nil
+	slot12 = false
+	slot13 = nil
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13)
 
-	slot4 = DoTweenAnimMgr
-	slot4 = slot4.Rotate
-	slot6 = slot3
-	slot7 = "parmonARotate"
-	slot8 = slot0.allPosAndRotTable
-	slot8 = slot8[4]
-	slot9 = slot1
-	slot10 = 0
-	slot11 = CS
-	slot11 = slot11.DG
-	slot11 = slot11.Tweening
-	slot11 = slot11.Ease
-	slot11 = slot11.__CastFrom
-	slot13 = 1
-	slot11 = slot11(slot13)
-	slot12 = nil
-	slot13 = false
+	slot3 = DoTweenAnimMgr
+	slot3 = slot3.Rotate
+	slot5 = slot0.entA
+	slot5 = slot5.actorId
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = ID_PARMON_A_ROTATE
+	slot6 = slot6(slot8)
+	slot7 = slot0.allPosAndRotTable
+	slot7 = slot7[4]
+	slot8 = slot1
+	slot9 = 0
+	slot10 = CS
+	slot10 = slot10.DG
+	slot10 = slot10.Tweening
+	slot10 = slot10.Ease
+	slot10 = slot10.__CastFrom
+	slot12 = 1
+	slot10 = slot10(slot12)
+	slot11 = nil
+	slot12 = false
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
 
-	slot4 = DoTweenAnimMgr
-	slot4 = slot4.Move
-	slot6 = slot2.transform
-	slot7 = "cameraAGlobalMove"
-	slot8 = slot0.allPosAndRotTable
-	slot8 = slot8[8]
-	slot9 = slot1
-	slot10 = 0
-	slot11 = CS
-	slot11 = slot11.DG
-	slot11 = slot11.Tweening
-	slot11 = slot11.Ease
-	slot11 = slot11.__CastFrom
-	slot13 = 1
-	slot11 = slot11(slot13)
-	slot12 = nil
-	slot13 = false
-	slot14 = nil
+	slot3 = DoTweenAnimMgr
+	slot3 = slot3.Move
+	slot5 = slot2.transform
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = ID_CAMERA_A_GLOBAL_MOVE
+	slot6 = slot6(slot8)
+	slot7 = slot0.allPosAndRotTable
+	slot7 = slot7[8]
+	slot8 = slot1
+	slot9 = 0
+	slot10 = CS
+	slot10 = slot10.DG
+	slot10 = slot10.Tweening
+	slot10 = slot10.Ease
+	slot10 = slot10.__CastFrom
+	slot12 = 1
+	slot10 = slot10(slot12)
+	slot11 = nil
+	slot12 = false
+	slot13 = nil
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13)
 
-	slot4 = DoTweenAnimMgr
-	slot4 = slot4.Rotate
-	slot6 = slot2.transform
-	slot7 = "cameraARotate"
-	slot8 = slot0.allPosAndRotTable
-	slot8 = slot8[9]
-	slot9 = slot1
-	slot10 = 0
-	slot11 = CS
-	slot11 = slot11.DG
-	slot11 = slot11.Tweening
-	slot11 = slot11.Ease
-	slot11 = slot11.__CastFrom
-	slot13 = 1
-	slot11 = slot11(slot13)
-	slot12 = nil
-	slot13 = false
+	slot3 = DoTweenAnimMgr
+	slot3 = slot3.Rotate
+	slot5 = slot2.transform
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = ID_CAMERA_A_ROTATE
+	slot6 = slot6(slot8)
+	slot7 = slot0.allPosAndRotTable
+	slot7 = slot7[9]
+	slot8 = slot1
+	slot9 = 0
+	slot10 = CS
+	slot10 = slot10.DG
+	slot10 = slot10.Tweening
+	slot10 = slot10.Ease
+	slot10 = slot10.__CastFrom
+	slot12 = 1
+	slot10 = slot10(slot12)
+	slot11 = nil
+	slot12 = false
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
 
-	slot4 = DoTweenAnimMgr
-	slot4 = slot4.DoFloat
-	slot6 = slot2
+	slot3 = DoTweenAnimMgr
+	slot3 = slot3.DoFloat
+	slot5 = slot2
+	slot6 = slot0.breedTimelineModelReplacer
+	slot8 = slot6
+	slot6 = slot6.GetCameraAFov
+	slot6 = slot6(slot8)
 	slot7 = slot0.breedTimelineModelReplacer
 	slot9 = slot7
-	slot7 = slot7.GetCameraAFov
+	slot7 = slot7.GetCameraBFov
 	slot7 = slot7(slot9)
-	slot8 = slot0.breedTimelineModelReplacer
-	slot10 = slot8
-	slot8 = slot8.GetCameraBFov
+	slot8 = LuaUIUtils
+	slot8 = slot8.TweenId
+	slot10 = ID_CAMERA_A_OTHERS
 	slot8 = slot8(slot10)
-	slot9 = "cameraAOthers"
-	slot10 = slot1
-	slot11 = 0
-	slot12 = CS
-	slot12 = slot12.DG
-	slot12 = slot12.Tweening
-	slot12 = slot12.Ease
-	slot12 = slot12.__CastFrom
-	slot14 = 1
-	slot12 = slot12(slot14)
+	slot9 = slot1
+	slot10 = 0
+	slot11 = CS
+	slot11 = slot11.DG
+	slot11 = slot11.Tweening
+	slot11 = slot11.Ease
+	slot11 = slot11.__CastFrom
+	slot13 = 1
+	slot11 = slot11(slot13)
 
-	slot13 = function()
+	slot12 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -455,7 +471,7 @@ slot11 = function(slot0, slot1, slot2)
 
 	end
 
-	slot14 = function(slot0)
+	slot13 = function(slot0)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.breedTimelineModelReplacer
@@ -490,7 +506,7 @@ slot11 = function(slot0, slot1, slot2)
 
 	end
 
-	slot15 = function()
+	slot14 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -499,9 +515,9 @@ slot11 = function(slot0, slot1, slot2)
 
 	end
 
-	slot16 = false
+	slot15 = false
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -510,9 +526,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot2.tween = slot11
+slot3.tween = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = slot0.entA
 	slot3 = slot1
@@ -570,9 +586,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.walkFinishedEvent = slot11
+slot3.walkFinishedEvent = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -598,9 +614,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.finish = slot11
+slot3.finish = slot18
 
-slot11 = function(slot0, slot1, slot2, slot3, slot4)
+slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = PetData
 	slot5 = slot5[slot1]
@@ -619,7 +635,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 6-35, warpins: 1 ---
+	--- BLOCK #2 6-39, warpins: 1 ---
 	slot6 = ClientSimpleVirtualEntity
 	slot6 = slot6.new
 	slot6 = slot6()
@@ -629,33 +645,39 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot7(slot9, slot10)
 
-	slot9 = slot6
-	slot7 = slot6.init
-	slot10 = {}
-	slot10.templateId = slot1
-	slot10.label = slot2
-	slot10.gender = slot3
+	slot7 = {}
+	slot7.templateId = slot1
+	slot7.label = slot2
+	slot7.gender = slot3
+	slot10 = slot6
+	slot8 = slot6.init
+	slot11 = slot7
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
-	slot9 = slot6
-	slot7 = slot6.start
+	slot10 = slot6
+	slot8 = slot6.postInit
+	slot11 = slot7
 
-	slot7(slot9)
+	slot8(slot10, slot11)
 
-	slot9 = slot6
-	slot7 = slot6.setModelLayer
-	slot10 = ClientConst
-	slot10 = slot10.LayerDefine
-	slot10 = slot10.LAYER_UI_SCENE
+	slot10 = slot6
+	slot8 = slot6.start
 
-	slot7(slot9, slot10)
+	slot8(slot10)
 
-	slot7 = slot6.eModel
-	slot7 = slot7.modelComponent
-	slot7 = slot7.modelView
+	slot10 = slot6
+	slot8 = slot6.setModelLayer
+	slot11 = ClientConst
+	slot11 = slot11.LayerDefine
+	slot11 = slot11.LAYER_UI_SCENE
 
-	slot8 = function()
+	slot8(slot10, slot11)
+
+	slot8 = slot6.eModel
+	slot8 = slot8.modelModelView
+
+	slot9 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -670,7 +692,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot7.luaOnModelRefreshFinshed = slot8
+	slot8.luaOnModelRefreshFinshed = slot9
 	--- END OF BLOCK #2 ---
 
 	slot4 = if slot4 then
@@ -680,11 +702,11 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #3 36-41, warpins: 1 ---
-	slot8 = TimerManager
-	slot8 = slot8.addNextFrameCb
+	--- BLOCK #3 40-45, warpins: 1 ---
+	slot9 = TimerManager
+	slot9 = slot9.addNextFrameCb
 
-	slot10 = function()
+	slot11 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = ent
 		slot2 = slot0
@@ -701,34 +723,34 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	slot8 = slot8(slot10)
-	slot0.timer1 = slot8
+	slot9 = slot9(slot11)
+	slot0.timer1 = slot9
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 42-46, warpins: 1 ---
-	slot10 = slot6
-	slot8 = slot6.playAnimation
-	slot11 = PlayableConst
-	slot11 = slot11.Idle
+	--- BLOCK #4 46-50, warpins: 1 ---
+	slot11 = slot6
+	slot9 = slot6.playAnimation
+	slot12 = PlayableConst
+	slot12 = slot12.Idle
 
-	slot8(slot10, slot11)
+	slot9(slot11, slot12)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 47-48, warpins: 2 ---
+	--- BLOCK #5 51-52, warpins: 2 ---
 	return slot6
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 49-49, warpins: 2 ---
+	--- BLOCK #6 53-53, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -736,9 +758,9 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot2.initModel = slot11
+slot3.initModel = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.refreshViewCount
 	slot1 = slot1 + 1
@@ -861,9 +883,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onBothParmonModelRefreshFinished = slot11
+slot3.onBothParmonModelRefreshFinished = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
@@ -897,16 +919,15 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 22-33, warpins: 1 ---
+	--- BLOCK #1 22-32, warpins: 1 ---
 	slot1 = slot0.entA
 	slot1 = slot1.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot2 = nil
 	slot1.luaOnModelRefreshFinshed = slot2
-	slot1 = slot0.entA
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.entA
 
 	slot1(slot3)
 
@@ -917,7 +938,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 34-36, warpins: 2 ---
+	--- BLOCK #2 33-35, warpins: 2 ---
 	slot1 = slot0.entB
 	--- END OF BLOCK #2 ---
 
@@ -928,16 +949,15 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 37-48, warpins: 1 ---
+	--- BLOCK #3 36-46, warpins: 1 ---
 	slot1 = slot0.entB
 	slot1 = slot1.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot2 = nil
 	slot1.luaOnModelRefreshFinshed = slot2
-	slot1 = slot0.entB
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.entB
 
 	slot1(slot3)
 
@@ -948,7 +968,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 49-57, warpins: 2 ---
+	--- BLOCK #4 47-55, warpins: 2 ---
 	slot1 = nil
 	slot0.parmonATId = slot1
 	slot1 = nil
@@ -965,7 +985,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #5 58-63, warpins: 1 ---
+	--- BLOCK #5 56-61, warpins: 1 ---
 	slot1 = slot0.breedTimelineModelReplacer
 	slot3 = slot1
 	slot1 = slot1.ResetCamera
@@ -979,7 +999,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 64-73, warpins: 2 ---
+	--- BLOCK #6 62-71, warpins: 2 ---
 	slot1 = nil
 	slot0.allPosAndRotTable = slot1
 	slot1 = slot0.view
@@ -998,9 +1018,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.reset = slot11
+slot3.reset = slot18
 
-slot11 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.reset
@@ -1020,9 +1040,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onDestroy = slot11
+slot3.onDestroy = slot18
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

@@ -6,37 +6,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 20,
 	maxDist = 4.5,
-	minDist = 2,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 2
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -20,
 	maxDist = 4.5,
-	minDist = 2,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 2
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2
@@ -47,37 +47,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 20,
 	maxDist = 4.5,
-	minDist = 0.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -20,
 	maxDist = 4.5,
-	minDist = 0.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2
@@ -88,37 +88,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 30,
 	maxDist = 4.5,
-	minDist = 0.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -30,
 	maxDist = 4.5,
-	minDist = 0.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2
@@ -129,37 +129,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 30,
 	maxDist = 4.5,
-	minDist = 2,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 2
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -30,
 	maxDist = 4.5,
-	minDist = 2,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 2
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2
@@ -170,37 +170,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 20,
 	maxDist = 4.5,
-	minDist = 0.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -20,
 	maxDist = 4.5,
-	minDist = 0.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2
@@ -211,37 +211,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 20,
 	maxDist = 4,
-	minDist = 1.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 1.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -20,
 	maxDist = 4,
-	minDist = 1.5,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 1.5
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2
@@ -252,37 +252,37 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 50,
 	maxDist = 2.5,
-	minDist = 1,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 1
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 4,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -50,
 	maxDist = 2.5,
-	minDist = 1,
-	simpleNum = 4,
-	areaDataType = "RelativeFocusPos"
+	minDist = 1
 }
 slot2[2] = slot3
 slot1.areaDataList = slot2
 slot2 = {}
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = 0,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[1] = slot3
 slot3 = {
+	simpleNum = 1,
+	areaDataType = "RelativeFocusPos",
 	targetAngle = -180,
 	maxDist = 1.5,
-	minDist = 0.5,
-	simpleNum = 1,
-	areaDataType = "RelativeFocusPos"
+	minDist = 0.5
 }
 slot2[2] = slot3
 slot1.backupPosDataList = slot2

@@ -90,13 +90,13 @@ slot14 = slot12
 slot16 = "Lexer"
 slot14 = slot14(slot16)
 slot15 = {
-	n = "\n",
+	f = "",
 	r = "\r",
 	t = "\t",
-	v = "",
-	f = "",
+	a = "",
+	n = "\n",
 	b = "",
-	a = ""
+	v = ""
 }
 
 slot16 = function(slot0)
@@ -1928,14 +1928,11 @@ end
 
 slot15.parsefile = slot16
 slot16 = {
+	optional = 1,
 	repeated = 3,
-	required = 2,
-	optional = 1
+	required = 2
 }
 slot17 = {
-	uint32 = 13,
-	int64 = 3,
-	int32 = 5,
 	string = 9,
 	bool = 8,
 	sfixed64 = 16,
@@ -1944,19 +1941,17 @@ slot17 = {
 	fixed32 = 7,
 	sint64 = 18,
 	sint32 = 17,
-	uint64 = 4
+	uint64 = 4,
+	uint32 = 13,
+	int64 = 3,
+	int32 = 5
 }
 slot18 = {
+	group = 10,
 	enum = 14,
-	message = 11,
-	group = 10
+	message = 11
 }
 slot19 = {
-	bytes = 12,
-	float = 2,
-	double = 1,
-	enum = 14,
-	message = 11,
 	group = 10,
 	bool = 8,
 	sfixed64 = 16,
@@ -1969,7 +1964,12 @@ slot19 = {
 	uint32 = 13,
 	int64 = 3,
 	int32 = 5,
-	string = 9
+	string = 9,
+	bytes = 12,
+	float = 2,
+	double = 1,
+	enum = 14,
+	message = 11
 }
 
 slot20 = function(slot0, slot1, slot2, slot3)
@@ -4256,8 +4256,8 @@ slot26.service = slot29
 slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = {
-		prefix = ".",
-		syntax = "proto2"
+		syntax = "proto2",
+		prefix = "."
 	}
 	slot3 = {}
 	slot2.locmap = slot3

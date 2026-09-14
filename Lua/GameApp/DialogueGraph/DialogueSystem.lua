@@ -1,131 +1,91 @@
---- BLOCK #0 1-155, warpins: 1 ---
+--- BLOCK #0 1-196, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
-slot2 = slot0.getLogger
-slot4 = "DialogueSystem"
+slot2 = require
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
-slot3 = require
-slot5 = "Const.UIConst"
+slot3 = slot1.getLogger
+slot5 = "DialogueSystem"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.Utils"
+slot6 = "Const.UIConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientUtils"
+slot7 = "Common.Utils.Utils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Framework.Class"
+slot8 = "Utils.ClientUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.EventConst"
+slot9 = "Core.Framework.Class"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Const.ClientConst"
+slot10 = "Const.EventConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.HotkeyConst"
+slot11 = "Const.ClientConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.MessageName"
+slot12 = "Const.HotkeyConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "GameApp.Core.SystemBase"
+slot13 = "Const.MessageName"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.ConflictTypes"
+slot14 = "GameApp.Core.SystemBase"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.sys_config_data"
+slot15 = "Common.ConflictTypes"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Core.Framework.SafeCallback"
+slot16 = "Data.sys_config_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Const.DialogueGraphConst"
+slot17 = "Entities.Utils.EModelUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.dialogue_graph_data"
+slot18 = "Core.Framework.SafeCallback"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "GameApp.DialogueGraph.DialogueItemCmd"
+slot19 = "Const.DialogueGraphConst"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "GameApp.DialogueGraph.DialogueGraphUtils"
+slot20 = "Data.dialogue_graph_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "GameApp.InteractionSign.InteractionSignSystem"
+slot21 = "GameApp.DialogueGraph.DialogueItemCmd"
 slot19 = slot19(slot21)
-slot20 = {}
-slot21 = slot3.TOPLOGO_COMPONENT
-slot21 = slot21.PLAYERHUB
-slot22 = true
-slot20[slot21] = slot22
+slot20 = require
+slot22 = "GameApp.DialogueGraph.DialogueGraphUtils"
+slot20 = slot20(slot22)
+slot21 = require
+slot23 = "GameApp.InteractionSign.InteractionSignSystem"
+slot21 = slot21(slot23)
+slot22 = require
+slot24 = "Core.Framework.SafeCallbackWithStatusAndReturn"
+slot22 = slot22(slot24)
+slot23 = slot17.DIALOGUE_STATE_KEY
+slot24 = slot7.LightClass
+slot26 = "DialogueSystem"
+slot27 = slot12
+slot24 = slot24(slot26, slot27)
 
-slot21 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = {}
-	slot2 = UIConst
-	slot2 = slot2.TOPLOGO_VISIBLE_KEY
-	slot2 = slot2.DIALOGUE_GRAPH_PLAYERHUB
-	slot1.visibleKey = slot2
-	slot1.visible = slot0
-	--- END OF BLOCK #0 ---
-
-	slot0 = if not slot0 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 9-10, warpins: 1 ---
-	slot2 = DIALOGUE_GRAPH_PLAYERHUB_TARGET_COMP_NAMES
-	slot1.targetCompNames = slot2
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-11, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot22 = slot6.LightClass
-slot24 = "DialogueSystem"
-slot25 = slot11
-slot22 = slot22(slot24, slot25)
-
-slot23 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+slot25 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot0.dialogueCacheList = slot1
 	slot1 = {}
 	slot0.dialogueRunningList = slot1
 	slot1 = {}
-	slot0.hideAllUIData = slot1
-	slot1 = {}
-	slot0.hideTopLogoData = slot1
-	slot1 = {}
-	slot0.hidePlayerHubData = slot1
-	slot1 = {}
-	slot0.hideEntitiesData = slot1
-	slot1 = {}
-	slot0.hideInteractionSignData = slot1
-	slot1 = {}
-	slot0.dialogueStateConflictKeys = slot1
+	slot0.stateData = slot1
 	slot1 = false
 	slot0.isEnterDialogueConflict = slot1
 	slot1 = {}
-	slot0.disableSpaceFollowData = slot1
+	slot0.pendingFinishRpcList = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -134,9 +94,45 @@ slot23 = function(slot0)
 
 end
 
-slot22.onCtor = slot23
+slot24.onCtor = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0)
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot24.initSystem = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot1 = {}
+	slot2 = MessageName
+	slot2 = slot2.UI_ON_CLOSE
+	slot3 = "onUIClose"
+	slot1[slot2] = slot3
+	slot2 = MessageName
+	slot2 = slot2.ON_PLAYER_ENTER_SPACE
+	slot3 = "onPlayerEnterSpace"
+	slot1[slot2] = slot3
+	slot2 = MessageName
+	slot2 = slot2.UI_ON_VISIBLE_CHANGE
+	slot3 = "onUIVisibleChange"
+	slot1[slot2] = slot3
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot24.getMessageBindMap = slot25
+
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -184,9 +180,41 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onSceneLoaded = slot23
+slot24.onSceneLoaded = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.playDialogueGraphList
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot24.onPlayerEnterSpace = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.retryReqToServerFinishRpc
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot24.onTick = slot25
+
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isLoadingScene
@@ -227,25 +255,25 @@ slot23 = function(slot0)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #20
 	end
 
 
 	--- BLOCK #4 16-21, warpins: 1 ---
 	slot8 = slot0
-	slot6 = slot0.canPlayTargetDialogueGraph
-	slot9 = slot5
+	slot6 = slot0.canPlayDialogueGraph
+	slot9 = slot5.dialogueId
 	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #4 ---
 
-	slot6 = if slot6 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 22-32, warpins: 1 ---
+	--- BLOCK #5 22-31, warpins: 1 ---
 	slot6 = table
 	slot6 = slot6.remove
 	slot8 = slot0.dialogueCacheList
@@ -254,23 +282,20 @@ slot23 = function(slot0)
 	slot6(slot8, slot9)
 
 	slot8 = slot0
-	slot6 = slot0.isDialoguePlaying
-	slot9 = slot5.dialogueId
-	slot6 = slot6(slot8, slot9)
+	slot6 = slot0.unloadCachedDialogueRequest
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #5 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #9
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #6 33-39, warpins: 1 ---
-	slot6 = LoggerManager
-	slot6 = slot6.checkLogger
-	slot8 = LoggerConst
-	slot8 = slot8.INFO
+	--- BLOCK #6 32-37, warpins: 1 ---
+	slot6 = DialogueGraphUtils
+	slot6 = slot6.isInWhiteList
+	slot8 = slot5.dialogueId
 	slot6 = slot6(slot8)
 	--- END OF BLOCK #6 ---
 
@@ -281,48 +306,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #7 40-45, warpins: 1 ---
-	slot6 = logger
-	slot8 = slot6
-	slot6 = slot6.info
-	slot9 = "当前对话图正在播放，先停止"
-	slot10 = slot5.dialogueId
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 46-52, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.stopDialogueGraph
-	slot9 = slot5.dialogueId
-	slot10 = DialogueGraphConst
-	slot10 = slot10.FINISHED_REASON
-	slot10 = slot10.INTERRUPTED_PLAYING
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 53-57, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.startPlayDialogue
-	slot9 = slot5
-
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 58-62, warpins: 1 ---
+	--- BLOCK #7 38-54, warpins: 1 ---
 	slot6 = table
 	slot6 = slot6.remove
 	slot8 = slot0.dialogueCacheList
@@ -330,29 +314,228 @@ slot23 = function(slot0)
 
 	slot6(slot8, slot9)
 
+	slot6 = DialogueGraphUtils
+	slot6 = slot6.unPreloadCutScenes
+	slot8 = slot5.preloadCutscenes
+
+	slot6(slot8)
+
+	slot8 = slot0
+	slot6 = slot0.completeDialogueRequest
+	slot9 = slot5.dialogueId
+	slot10 = slot5.context
+	slot11 = slot5.onFinishCallback
+	slot12 = slot5.extraData
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #8 55-63, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.resolvePlaybackDecision
+	slot9 = slot5.dialogueId
+	slot6, slot7 = slot6(slot8, slot9)
+	slot8 = DialogueGraphConst
+	slot8 = slot8.PLAYBACK_DECISION
+	slot8 = slot8.DISCARD
+	--- END OF BLOCK #8 ---
+
+	if slot6 == slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 64-73, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.remove
+	slot10 = slot0.dialogueCacheList
+	slot11 = slot4
+
+	slot8(slot10, slot11)
+
+	slot10 = slot0
+	slot8 = slot0.unloadCachedDialogueRequest
+	slot11 = slot5
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #10 74-78, warpins: 1 ---
+	slot8 = DialogueGraphConst
+	slot8 = slot8.PLAYBACK_DECISION
+	slot8 = slot8.QUEUE
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	if slot6 ~= slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #11 63-63, warpins: 3 ---
+	--- BLOCK #11 79-88, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.remove
+	slot10 = slot0.dialogueCacheList
+	slot11 = slot4
+
+	slot8(slot10, slot11)
+
+	slot8 = DialogueGraphConst
+	slot8 = slot8.PLAYBACK_DECISION
+	slot8 = slot8.INTERRUPT
 	--- END OF BLOCK #11 ---
+
+	if slot6 == slot8 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 89-92, warpins: 1 ---
+	slot8 = ipairs
+	slot10 = slot7
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 93-99, warpins: 1 ---
+	slot15 = slot0
+	slot13 = slot0.stopDialogueGraph
+	slot16 = slot12
+	slot17 = DialogueGraphConst
+	slot17 = slot17.FINISHED_REASON
+	slot17 = slot17.INTERRUPTED_PRIORITY
+
+	slot13(slot15, slot16, slot17)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 100-101, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #13
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 102-107, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.isDialoguePlaying
+	slot11 = slot5.dialogueId
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #15 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #16 108-114, warpins: 1 ---
+	slot8 = LoggerManager
+	slot8 = slot8.checkLogger
+	slot10 = LoggerConst
+	slot10 = slot10.INFO
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #16 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 115-120, warpins: 1 ---
+	slot8 = logger
+	slot10 = slot8
+	slot8 = slot8.info
+	slot11 = "当前对话图正在播放，先停止"
+	slot12 = slot5.dialogueId
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 121-127, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.stopDialogueGraph
+	slot11 = slot5.dialogueId
+	slot12 = DialogueGraphConst
+	slot12 = slot12.FINISHED_REASON
+	slot12 = slot12.INTERRUPTED_PLAYING
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 128-132, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.startPlayDialogue
+	slot11 = slot5
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 133-137, warpins: 1 ---
+	slot6 = table
+	slot6 = slot6.remove
+	slot8 = slot0.dialogueCacheList
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 138-138, warpins: 6 ---
+	--- END OF BLOCK #21 ---
 
 	for slot4=slot1, slot2, slot3
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #12
+	GO OUT TO BLOCK #22
 
-	--- BLOCK #12 64-64, warpins: 1 ---
+	--- BLOCK #22 139-139, warpins: 1 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #22 ---
 
 
 
 end
 
-slot22.playDialogueGraphList = slot23
+slot24.playDialogueGraphList = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.isDialogueGraphIdValid
@@ -363,231 +546,103 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6 = if not slot6 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
+	--- BLOCK #1 7-15, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.finishDialogueRequest
+	slot9 = slot1
+	slot10 = DialogueGraphConst
+	slot10 = slot10.RET_FLAG_FAILED
+	slot11 = slot2
+	slot12 = slot5
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	return
+
 	--- END OF BLOCK #1 ---
 
-	if slot5 ~= nil then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-11, warpins: 1 ---
-	slot6 = slot5.onStartCallback
+	--- BLOCK #2 16-21, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.isDialoguePlaying
+	slot9 = slot1
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #2 ---
 
 	slot6 = if slot6 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-14, warpins: 1 ---
-	slot6 = SafeCallback
-	slot8 = slot5.onStartCallback
-
-	slot6(slot8)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 15-16, warpins: 3 ---
-	--- END OF BLOCK #4 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #5
-	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 17-22, warpins: 1 ---
-	slot6 = SafeCallback
-	slot8 = slot2
-	slot9 = DialogueGraphConst
-	slot9 = slot9.RET_FLAG_FAILED
+	--- BLOCK #3 22-28, warpins: 1 ---
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.INFO
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 29-34, warpins: 1 ---
+	slot6 = logger
+	slot8 = slot6
+	slot6 = slot6.info
+	slot9 = "当前对话图正在播放"
 	slot10 = slot1
 
 	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 35-43, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.finishDialogueRequest
+	slot9 = slot1
+	slot10 = DialogueGraphConst
+	slot10 = slot10.RET_FLAG_FAILED
+	slot11 = slot2
+	slot12 = slot5
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	return
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 23-23, warpins: 2 ---
-	return
-
+	--- BLOCK #6 44-48, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.isLoadingScene
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 24-29, warpins: 2 ---
-	slot6 = DialogueGraphUtils
-	slot6 = slot6.isInWhiteList
-	slot8 = slot1
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #7 ---
-
 	slot6 = if slot6 then
+	JUMP TO BLOCK #7
+	else
 	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #8 30-47, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.ReqPlayDialogueGraph
-	slot9 = slot1
-	slot10 = slot4
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.ReqFinishPlayDialogueGraph
-	slot9 = slot1
-	slot10 = DialogueGraphConst
-	slot10 = slot10.RET_FLAG_SUCCESS
-	slot11 = slot4
-
-	slot6(slot8, slot9, slot10, slot11)
-
-	--- END OF BLOCK #8 ---
-
-	if slot5 ~= nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 48-50, warpins: 1 ---
-	slot6 = slot5.onStartCallback
-	--- END OF BLOCK #9 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 51-53, warpins: 1 ---
-	slot6 = SafeCallback
-	slot8 = slot5.onStartCallback
-
-	slot6(slot8)
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 54-55, warpins: 3 ---
-	--- END OF BLOCK #11 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 56-61, warpins: 1 ---
-	slot6 = SafeCallback
-	slot8 = slot2
-	slot9 = DialogueGraphConst
-	slot9 = slot9.RET_FLAG_SUCCESS
-	slot10 = slot1
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 62-62, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 63-68, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.isDialoguePlaying
-	slot9 = slot1
-	slot6 = slot6(slot8, slot9)
-	--- END OF BLOCK #14 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #15 69-75, warpins: 1 ---
-	slot6 = LoggerManager
-	slot6 = slot6.checkLogger
-	slot8 = LoggerConst
-	slot8 = slot8.INFO
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #15 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 76-81, warpins: 1 ---
-	slot6 = logger
-	slot8 = slot6
-	slot6 = slot6.info
-	slot9 = "当前对话图正在播放，先停止"
-	slot10 = slot1
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 82-88, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.stopDialogueGraph
-	slot9 = slot1
-	slot10 = DialogueGraphConst
-	slot10 = slot10.FINISHED_REASON
-	slot10 = slot10.INTERRUPTED_PLAYING
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 89-101, warpins: 2 ---
+	--- BLOCK #7 49-61, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.initDialogueGraphInfo
 	slot9 = slot1
@@ -597,80 +652,213 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot13 = slot5
 	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13)
 	slot9 = slot0
-	slot7 = slot0.isLoadingScene
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #18 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 102-108, warpins: 1 ---
-	slot7 = table
-	slot7 = slot7.insert
-	slot9 = slot0.dialogueCacheList
-	slot10 = 1
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
-
-	return
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 109-114, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.canPlayTargetDialogueGraph
-	slot10 = slot6
-	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #20 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 115-121, warpins: 1 ---
-	slot7 = table
-	slot7 = slot7.insert
-	slot9 = slot0.dialogueCacheList
-	slot10 = 1
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
-
-	return
-
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 122-126, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.startPlayDialogue
+	slot7 = slot0.insertToCacheListSorted
 	slot10 = slot6
 
 	slot7(slot9, slot10)
 
 	return
-	--- END OF BLOCK #22 ---
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 62-67, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.canPlayDialogueGraph
+	slot9 = slot1
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #8 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 68-76, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.finishDialogueRequest
+	slot9 = slot1
+	slot10 = DialogueGraphConst
+	slot10 = slot10.RET_FLAG_FAILED
+	slot11 = slot2
+	slot12 = slot5
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 77-82, warpins: 2 ---
+	slot6 = DialogueGraphUtils
+	slot6 = slot6.isInWhiteList
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 83-90, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.completeDialogueRequest
+	slot9 = slot1
+	slot10 = slot4
+	slot11 = slot2
+	slot12 = slot5
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 91-99, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.resolvePlaybackDecision
+	slot9 = slot1
+	slot6, slot7 = slot6(slot8, slot9)
+	slot8 = DialogueGraphConst
+	slot8 = slot8.PLAYBACK_DECISION
+	slot8 = slot8.DISCARD
+	--- END OF BLOCK #12 ---
+
+	if slot6 == slot8 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 100-108, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.finishDialogueRequest
+	slot11 = slot1
+	slot12 = DialogueGraphConst
+	slot12 = slot12.RET_FLAG_FAILED
+	slot13 = slot2
+	slot14 = slot5
+
+	slot8(slot10, slot11, slot12, slot13, slot14)
+
+	return
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 109-121, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.initDialogueGraphInfo
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3
+	slot14 = slot4
+	slot15 = slot5
+	slot8 = slot8(slot10, slot11, slot12, slot13, slot14, slot15)
+	slot9 = DialogueGraphConst
+	slot9 = slot9.PLAYBACK_DECISION
+	slot9 = slot9.QUEUE
+	--- END OF BLOCK #14 ---
+
+	if slot6 == slot9 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 122-127, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.insertToCacheListSorted
+	slot12 = slot8
+
+	slot9(slot11, slot12)
+
+	return
+
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #16 128-132, warpins: 1 ---
+	slot9 = DialogueGraphConst
+	slot9 = slot9.PLAYBACK_DECISION
+	slot9 = slot9.INTERRUPT
+	--- END OF BLOCK #16 ---
+
+	if slot6 == slot9 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #17 133-136, warpins: 1 ---
+	slot9 = ipairs
+	slot11 = slot7
+	slot9, slot10, slot11 = slot9(slot11)
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 137-143, warpins: 1 ---
+	slot16 = slot0
+	slot14 = slot0.stopDialogueGraph
+	slot17 = slot13
+	slot18 = DialogueGraphConst
+	slot18 = slot18.FINISHED_REASON
+	slot18 = slot18.INTERRUPTED_PRIORITY
+
+	slot14(slot16, slot17, slot18)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 144-145, warpins: 2 ---
+	--- END OF BLOCK #19 ---
+
+	for slot12, slot13 in slot9, slot10, slot11
+	LOOP BLOCK #18
+	GO OUT TO BLOCK #20
+
+
+	--- BLOCK #20 146-150, warpins: 3 ---
+	slot11 = slot0
+	slot9 = slot0.startPlayDialogue
+	slot12 = slot8
+
+	slot9(slot11, slot12)
+
+	return
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot22.playDialogueGraph = slot23
+slot24.playDialogueGraph = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = ClientUtils
 	slot2 = slot2.tryWithLogError
@@ -852,9 +1040,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.startPlayDialogue = slot23
+slot24.startPlayDialogue = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = DialogueItemCmd
 	slot4 = slot1
@@ -867,41 +1055,27 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.createDialogueCmd = slot23
+slot24.createDialogueCmd = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-19, warpins: 1 ---
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot6 = {}
 	slot6.dialogueId = slot1
 	slot7 = DialogueGraphConfig
 	slot7 = slot7[slot1]
 	slot6.config = slot7
 	slot6.onFinishCallback = slot2
-	slot7 = slot0.onGraphNodeRunning
-	slot6.nodeRunningFunc = slot7
-	slot7 = slot0.onDialogueCmdStart
-	slot6.startCmdCallback = slot7
-	slot7 = slot0.onDialogueCmdFinished
-	slot6.endCmdCallback = slot7
-	slot7 = slot0.onDialogueCmdScheduleRPC
-	slot6.scheduleRPCCallback = slot7
-	slot6.sysOwner = slot0
-	slot7 = 2
-	slot6.type = slot7
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	if slot5 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 20-25, warpins: 1 ---
-	slot7 = Utils
-	slot7 = slot7.deepCopyTable
-	slot9 = slot3
-	slot7 = slot7(slot9)
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot7 = slot5.nodeRunningFunc
 	--- END OF BLOCK #1 ---
 
 	slot7 = if not slot7 then
@@ -911,14 +1085,53 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #2 26-26, warpins: 2 ---
-	slot7 = nil
+	--- BLOCK #2 12-12, warpins: 2 ---
+	slot7 = slot0.onGraphNodeRunning
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 27-36, warpins: 2 ---
+	--- BLOCK #3 13-22, warpins: 2 ---
+	slot6.nodeRunningFunc = slot7
+	slot7 = slot0.onDialogueCmdStart
+	slot6.startCmdCallback = slot7
+	slot7 = slot0.onDialogueCmdFinished
+	slot6.endCmdCallback = slot7
+	slot7 = slot0.onDialogueCmdScheduleRPC
+	slot6.scheduleRPCCallback = slot7
+	slot6.sysOwner = slot0
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-28, warpins: 1 ---
+	slot7 = Utils
+	slot7 = slot7.deepCopyTable
+	slot9 = slot3
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #4 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-29, warpins: 2 ---
+	slot7 = nil
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-39, warpins: 2 ---
 	slot6.variables = slot7
 	slot6.context = slot4
 	slot6.extraData = slot5
@@ -930,15 +1143,15 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6.preloadCutscenes = slot7
 
 	return slot6
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot22.initDialogueGraphInfo = slot23
+slot24.initDialogueGraphInfo = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -957,7 +1170,36 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-14, warpins: 2 ---
+	--- BLOCK #2 4-13, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getGameTime
+	slot2 = slot2(slot4)
+	slot1.startTime = slot2
+	slot2 = slot1.config
+	slot2 = slot2.registMsg
+	--- END OF BLOCK #2 ---
+
+	if slot2 == true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-16, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.registAllMessage
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-27, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -969,39 +1211,39 @@ slot23 = function(slot0, slot1)
 	slot2(slot4, slot5, slot6)
 
 	slot2 = slot1.extraData
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	if slot2 ~= nil then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 15-18, warpins: 1 ---
+	--- BLOCK #5 28-31, warpins: 1 ---
 	slot2 = slot1.extraData
 	slot2 = slot2.onStartCBFunc
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 19-21, warpins: 1 ---
+	--- BLOCK #6 32-34, warpins: 1 ---
 	slot2 = slot1.extraData
 	slot2 = slot2.onStartCBFunc
 
 	slot2()
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 22-61, warpins: 3 ---
+	--- BLOCK #7 35-67, warpins: 3 ---
 	slot4 = slot0
 	slot2 = slot0.setEntitiesVisible
 	slot5 = slot1.id
@@ -1011,13 +1253,6 @@ slot23 = function(slot0, slot1)
 	slot7 = false
 
 	slot2(slot4, slot5, slot6, slot7)
-
-	slot4 = slot0
-	slot2 = slot0.setDialogueGraphPlayerHubVisible
-	slot5 = slot1.id
-	slot6 = true
-
-	slot2(slot4, slot5, slot6)
 
 	slot2 = pg
 	slot2 = slot2.global
@@ -1038,12 +1273,6 @@ slot23 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.getGameTime
-	slot2 = slot2(slot4)
-	slot0.dialogGraphStartTime = slot2
 	slot2 = DialogueGraphUtils
 	slot2 = slot2.sendDialogueGraphReport
 	slot4 = slot1.id
@@ -1051,16 +1280,45 @@ slot23 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = DialogueGraphUtils
+	slot2 = slot2.canShowID
+	slot2 = slot2()
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 68-75, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_DIALOGUE_ID
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 76-76, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot22.onDialogueCmdStart = slot23
+slot24.onDialogueCmdStart = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = DialogueGraphConst
 	slot4 = slot4.NODE_FUNC_MAP
@@ -1508,9 +1766,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.onGraphNodeRunning = slot23
+slot24.onGraphNodeRunning = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.dialogueRunningList
 	slot3 = slot3[slot1]
@@ -1604,9 +1862,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.stopDialogueGraph = slot23
+slot24.stopDialogueGraph = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = 1
 	slot3 = slot0.dialogueCacheList
@@ -1676,103 +1934,10 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.stopAllDialogueGraph = slot23
+slot24.stopAllDialogueGraph = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-
-	--- END OF BLOCK #0 ---
-
-	if slot4 == nil then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-5, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 6-7, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	if slot1 == -1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 8-14, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.INFO
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #3 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #4 15-23, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.info
-	slot7 = "剧情异常结束"
-	slot8 = slot2.id
-	slot9 = slot1
-	slot10 = slot3
-
-	slot4(slot6, slot7, slot8, slot9, slot10)
-
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #5 24-30, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.INFO
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 31-38, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.info
-	slot7 = "剧情播放结束"
-	slot8 = slot2.id
-	slot9 = slot1
-	slot10 = slot3
-
-	slot4(slot6, slot7, slot8, slot9, slot10)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 39-115, warpins: 4 ---
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-77, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot0.setDialogueStateConflict
 	slot7 = slot0
@@ -1790,14 +1955,6 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	slot4(slot6, slot7, slot8, slot9)
 
 	slot4 = SafeCallback
-	slot6 = slot0.setDialogueGraphPlayerHubVisible
-	slot7 = slot0
-	slot8 = slot2.id
-	slot9 = false
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	slot4 = SafeCallback
 	slot6 = slot0.hideAllUI
 	slot7 = slot0
 	slot8 = slot2.id
@@ -1807,6 +1964,14 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 	slot4 = SafeCallback
 	slot6 = slot0.hideInteractionSign
+	slot7 = slot0
+	slot8 = slot2.id
+	slot9 = false
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = SafeCallback
+	slot6 = slot0.hideMarkShare
 	slot7 = slot0
 	slot8 = slot2.id
 	slot9 = false
@@ -1868,18 +2033,60 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot2.id
 	slot7 = nil
 	slot5[slot6] = slot7
-	slot5 = slot2.taskInfo
-	slot5 = slot5.onFinishCallback
-	--- END OF BLOCK #7 ---
+	slot5 = pg
+	slot5 = slot5.me
+	--- END OF BLOCK #0 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #8
+	if slot5 == nil then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #8 116-121, warpins: 1 ---
+	--- BLOCK #1 78-82, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.canUnregistMsg
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 83-85, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.unregistAllMessage
+
+	slot5(slot7)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 86-86, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #4 87-90, warpins: 1 ---
+	slot5 = slot2.taskInfo
+	slot5 = slot5.onFinishCallback
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 91-96, warpins: 1 ---
 	slot5 = SafeCallback
 	slot7 = slot2.taskInfo
 	slot7 = slot7.onFinishCallback
@@ -1888,101 +2095,215 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 	slot5(slot7, slot8, slot9)
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 97-98, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot1 == -1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 99-105, warpins: 1 ---
+	slot5 = LoggerManager
+	slot5 = slot5.checkLogger
+	slot7 = LoggerConst
+	slot7 = slot7.INFO
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 106-114, warpins: 1 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.info
+	slot8 = "剧情异常结束"
+	slot9 = slot2.id
+	slot10 = slot1
+	slot11 = slot3
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #9 122-124, warpins: 2 ---
-	slot5 = 0
+	--- BLOCK #9 115-121, warpins: 1 ---
+	slot5 = LoggerManager
+	slot5 = slot5.checkLogger
+	slot7 = LoggerConst
+	slot7 = slot7.INFO
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #9 ---
 
-	if slot1 >= slot5 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 125-126, warpins: 1 ---
+	--- BLOCK #10 122-129, warpins: 1 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.info
+	slot8 = "剧情播放结束"
+	slot9 = slot2.id
+	slot10 = slot1
+	slot11 = slot3
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
 	--- END OF BLOCK #10 ---
 
-	slot5 = if not slot1 then
-	JUMP TO BLOCK #11
-	else
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 130-138, warpins: 4 ---
+	slot5 = {}
+	slot6 = slot2.id
+	slot5.id = slot6
+	slot6 = slot2.taskInfo
+	slot6 = slot6.context
+	slot5.context = slot6
+	slot6 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot1 >= slot6 then
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 127-128, warpins: 2 ---
-	slot5 = DialogueGraphConst
-	slot5 = slot5.RET_FLAG_SUCCESS
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 129-131, warpins: 2 ---
-	slot6 = 0
+	--- BLOCK #12 139-140, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	if slot1 >= slot6 then
+	slot6 = if not slot1 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 132-134, warpins: 1 ---
-	slot6 = slot2.pendingRPCList
+	--- BLOCK #13 141-142, warpins: 2 ---
+	slot6 = DialogueGraphConst
+	slot6 = slot6.RET_FLAG_SUCCESS
 	--- END OF BLOCK #13 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #14
-	else
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 143-146, warpins: 2 ---
+	slot5.sendFlag = slot6
+	slot6 = 0
+	--- END OF BLOCK #14 ---
+
+	if slot1 >= slot6 then
 	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #14 135-135, warpins: 2 ---
+	--- BLOCK #15 147-149, warpins: 1 ---
+	slot6 = slot2.pendingRPCList
+	--- END OF BLOCK #15 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 150-150, warpins: 2 ---
 	slot6 = {}
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #15 136-178, warpins: 2 ---
+	--- BLOCK #17 151-169, warpins: 2 ---
+	slot5.sendRpcInfo = slot6
+
+	slot6 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.playDialogueGraphList
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5.reqCallback = slot6
+	slot6 = SafeCallback
+	slot8 = slot0.reqToServerDialogueGraphFinish
+	slot9 = slot0
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot0
+	slot6 = slot0.isPlayingDialogueGraph
+	slot6 = slot6(slot8)
 	slot7 = pg
 	slot7 = slot7.me
-	slot9 = slot7
-	slot7 = slot7.ReqFinishPlayDialogueGraph
-	slot10 = slot2.id
-	slot11 = slot5
-	slot12 = slot2.taskInfo
-	slot12 = slot12.context
-	slot13 = slot6
-
-	slot7(slot9, slot10, slot11, slot12, slot13)
-
+	slot7.isInDialogueGraph = slot6
 	slot9 = slot0
-	slot7 = slot0.playDialogueGraphList
+	slot7 = slot0.canUnregistMsg
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #17 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 170-172, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.unregistAllMessage
 
 	slot7(slot9)
 
-	slot7 = pg
-	slot7 = slot7.me
-	slot10 = slot0
-	slot8 = slot0.isPlayingDialogueGraph
-	slot8 = slot8(slot10)
-	slot7.isInDialogueGraph = slot8
-	slot7 = facade
-	slot9 = slot7
-	slot7 = slot7.sendMsgToUI
-	slot10 = MessageName
-	slot10 = slot10.DIALOGUE_GRAPH_ON_END
+	--- END OF BLOCK #18 ---
 
-	slot7(slot9, slot10)
+	FLOW; TARGET BLOCK #19
 
+
+	--- BLOCK #19 173-175, warpins: 2 ---
+	slot7 = slot2.startTime
+	--- END OF BLOCK #19 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 176-186, warpins: 1 ---
 	slot7 = DialogueGraphUtils
 	slot7 = slot7.sendDialogueGraphReport
 	slot9 = slot2.id
@@ -1991,233 +2312,135 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	slot12 = slot10
 	slot10 = slot10.getGameTime
 	slot10 = slot10(slot12)
-	slot11 = slot0.dialogGraphStartTime
+	slot11 = slot2.startTime
 	slot10 = slot10 - slot11
 
 	slot7(slot9, slot10)
 
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 187-200, warpins: 2 ---
+	slot7 = facade
+	slot9 = slot7
+	slot7 = slot7.sendMsgToUI
+	slot10 = MessageName
+	slot10 = slot10.DIALOGUE_GRAPH_ON_END
+
+	slot7(slot9, slot10)
+
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.loading
+	slot9 = slot7
+	slot7 = slot7.isFinished
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #21 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #22 201-204, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	--- END OF BLOCK #22 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #23 205-206, warpins: 1 ---
+	--- END OF BLOCK #23 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 207-211, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.me
 	slot9 = slot7
-	slot7 = slot7.getGameTime
+	slot7 = slot7.doCacheEvents
+
+	slot7(slot9)
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 212-216, warpins: 4 ---
+	slot9 = slot0
+	slot7 = slot0.isPlayingDialogueGraph
 	slot7 = slot7(slot9)
-	slot0.dialogGraphStartTime = slot7
+	--- END OF BLOCK #25 ---
 
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #26 217-221, warpins: 1 ---
+	slot7 = DialogueGraphUtils
+	slot7 = slot7.canShowID
+	slot7 = slot7()
+	--- END OF BLOCK #26 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 222-229, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot9 = slot7
+	slot7 = slot7.close
+	slot10 = UIConst
+	slot10 = slot10.UI_ID_DIALOGUE_ID
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 230-231, warpins: 3 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 232-232, warpins: 2 ---
+	return
+	--- END OF BLOCK #29 ---
 
 
 
 end
 
-slot22.onDialogueCmdFinished = slot23
+slot24.onDialogueCmdFinished = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	if slot2 == nil then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 3-3, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 4-6, warpins: 2 ---
-	slot4 = slot2.hideAllPlayer
-	--- END OF BLOCK #2 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 7-18, warpins: 1 ---
-	slot4 = slot0.hideEntitiesData
-	slot5 = true
-	slot4[slot1] = slot5
-	slot4 = ClientUtils
-	slot4 = slot4.SetAllPlayerVisible
-	slot6 = ClientConst
-	slot6 = slot6.MODEL_VISIBLE_KEY
-	slot6 = slot6.DIALOGUE_GRAPH
-	slot7 = slot3
-	slot8 = slot2.hideMainPlayer
-	slot9 = slot2.hideTeamMate
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 19-21, warpins: 2 ---
-	slot4 = slot2.hideMainPlayerPet
-	--- END OF BLOCK #4 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-33, warpins: 1 ---
-	slot4 = slot0.hideEntitiesData
-	slot5 = true
-	slot4[slot1] = slot5
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.setCurPetVisible
-	slot7 = ClientConst
-	slot7 = slot7.MODEL_VISIBLE_KEY
-	slot7 = slot7.DIALOGUE_GRAPH
-	slot8 = slot3
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 34-36, warpins: 2 ---
-	slot4 = slot2.hideAllPuppet
-	--- END OF BLOCK #6 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 37-46, warpins: 1 ---
-	slot4 = slot0.hideEntitiesData
-	slot5 = true
-	slot4[slot1] = slot5
-	slot4 = ClientUtils
-	slot4 = slot4.SetAllPuppetVisible
-	slot6 = ClientConst
-	slot6 = slot6.MODEL_VISIBLE_KEY
-	slot6 = slot6.DIALOGUE_GRAPH
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 47-47, warpins: 2 ---
-	return
-	--- END OF BLOCK #8 ---
-
-
-
-end
-
-slot22.setEntitiesVisible = slot23
-
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = slot0.hideEntitiesData
-	slot2 = slot2[slot1]
-
-	--- END OF BLOCK #0 ---
-
-	if slot2 == nil then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-5, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 6-14, warpins: 2 ---
-	slot3 = slot0.hideEntitiesData
-	slot4 = nil
-	slot3[slot1] = slot4
-	slot3 = Utils
-	slot3 = slot3.tableIsEmptyOrNil
-	slot5 = slot0.hideEntitiesData
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 15-38, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.setCurPetVisible
-	slot6 = ClientConst
-	slot6 = slot6.MODEL_VISIBLE_KEY
-	slot6 = slot6.DIALOGUE_GRAPH
-	slot7 = true
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = ClientUtils
-	slot3 = slot3.SetAllPlayerVisible
-	slot5 = ClientConst
-	slot5 = slot5.MODEL_VISIBLE_KEY
-	slot5 = slot5.DIALOGUE_GRAPH
-	slot6 = true
-	slot7 = true
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = ClientUtils
-	slot3 = slot3.SetAllPuppetVisible
-	slot5 = ClientConst
-	slot5 = slot5.MODEL_VISIBLE_KEY
-	slot5 = slot5.DIALOGUE_GRAPH
-	slot6 = true
-
-	slot3(slot5, slot6)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 39-39, warpins: 2 ---
-	return
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot22.resetEntitiesVisible = slot23
-
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.isValid
@@ -2379,60 +2602,143 @@ slot23 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #13 61-63, warpins: 2 ---
-	slot3 = slot2.hideTopLogo
+	slot3 = slot2.hideMarkShare
 	--- END OF BLOCK #13 ---
 
-	if slot3 ~= nil then
+	if slot3 == nil then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 64-71, warpins: 1 ---
+	--- BLOCK #14 64-66, warpins: 1 ---
+	slot3 = slot2.modeType
+	--- END OF BLOCK #14 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #15 67-69, warpins: 2 ---
+	slot3 = slot2.hideMarkShare
+	--- END OF BLOCK #15 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #16 70-75, warpins: 1 ---
+	slot3 = slot2.modeType
+	slot4 = DialogueGraphConst
+	slot4 = slot4.MODE_TYPE
+	slot4 = slot4.Control
+	--- END OF BLOCK #16 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 76-77, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 78-78, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 79-79, warpins: 2 ---
+	slot2.hideMarkShare = slot3
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 80-85, warpins: 2 ---
+	slot3 = SafeCallback
+	slot5 = slot0.hideMarkShare
+	slot6 = slot0
+	slot7 = slot1.id
+	slot8 = slot2.hideMarkShare
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 86-88, warpins: 2 ---
+	slot3 = slot2.hideTopLogo
+	--- END OF BLOCK #21 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #22 89-96, warpins: 1 ---
 	slot3 = SafeCallback
 	slot5 = slot0.hideTopLogo
 	slot6 = slot0
 	slot7 = slot1.id
 	slot8 = slot2.hideTopLogo
 	slot9 = slot2.topLogoComs
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #22 ---
 
 	slot9 = if not slot9 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #15 72-72, warpins: 1 ---
+	--- BLOCK #23 97-97, warpins: 1 ---
 	slot9 = slot2.toplogoComList
+	--- END OF BLOCK #23 ---
 
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 73-73, warpins: 2 ---
-	slot3(slot5, slot6, slot7, slot8, slot9)
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #17 74-76, warpins: 2 ---
+	--- BLOCK #24 98-99, warpins: 2 ---
+	slot10 = slot2.modeType
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 100-102, warpins: 2 ---
 	slot3 = slot2.blockEvent
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #25 ---
 
 	if slot3 ~= nil then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #18 77-82, warpins: 1 ---
+	--- BLOCK #26 103-108, warpins: 1 ---
 	slot3 = SafeCallback
 	slot5 = slot0.setBlockEvent
 	slot6 = slot0
@@ -2441,68 +2747,68 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7, slot8)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #19 83-88, warpins: 2 ---
+	--- BLOCK #27 109-114, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.input
 	slot4 = slot2.resetAllActions
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #27 ---
 
 	if slot4 == true then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #20 89-92, warpins: 1 ---
+	--- BLOCK #28 115-118, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot3.resetAllActions
 	slot7 = slot3
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #21 93-95, warpins: 2 ---
+	--- BLOCK #29 119-121, warpins: 2 ---
 	slot4 = slot2.blockCameraZoom
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #29 ---
 
 	if slot4 ~= nil then
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #22 96-97, warpins: 1 ---
+	--- BLOCK #30 122-123, warpins: 1 ---
 	slot4 = slot2.blockCameraZoom
 	slot3.lockCameraZoom = slot4
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #23 98-100, warpins: 2 ---
+	--- BLOCK #31 124-126, warpins: 2 ---
 	slot4 = slot2.exitCatchMode
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #31 ---
 
 	if slot4 == true then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #24 101-110, warpins: 1 ---
+	--- BLOCK #32 127-136, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = pg
 	slot6 = slot6.game
@@ -2515,23 +2821,23 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #25 111-113, warpins: 2 ---
+	--- BLOCK #33 137-139, warpins: 2 ---
 	slot4 = slot2.changeAmbientIntensity
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #33 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #34
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #26 114-118, warpins: 1 ---
+	--- BLOCK #34 140-144, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot0.changeAmbientIntensity
 	slot7 = slot0
@@ -2539,23 +2845,23 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #34 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #27 119-121, warpins: 2 ---
+	--- BLOCK #35 145-147, warpins: 2 ---
 	slot4 = slot2.blockPlayerMove
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #35 ---
 
 	if slot4 ~= nil then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #36
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #28 122-130, warpins: 1 ---
+	--- BLOCK #36 148-156, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot3.enablePlayerInput
 	slot7 = slot3
@@ -2567,23 +2873,23 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #29
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #29 131-133, warpins: 2 ---
+	--- BLOCK #37 157-159, warpins: 2 ---
 	slot4 = slot2.turnOnPlayback
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #37 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #30 134-138, warpins: 1 ---
+	--- BLOCK #38 160-164, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot1.turnOnPlayback
 	slot7 = slot1
@@ -2591,46 +2897,46 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #31 139-141, warpins: 2 ---
+	--- BLOCK #39 165-167, warpins: 2 ---
 	slot4 = slot2.turnOffPlayback
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #39 ---
 
 	if slot4 == true then
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #40
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #32 142-145, warpins: 1 ---
+	--- BLOCK #40 168-171, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot1.turnOffPlayback
 	slot7 = slot1
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #40 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #33 146-148, warpins: 2 ---
+	--- BLOCK #41 172-174, warpins: 2 ---
 	slot4 = slot2.pauseNearbyMonsterAI
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #41 ---
 
 	if slot4 == true then
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #34 149-153, warpins: 1 ---
+	--- BLOCK #42 175-179, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = DialogueGraphUtils
 	slot6 = slot6.pauseNearbyMonsterAI
@@ -2638,23 +2944,47 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #42 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #35 154-156, warpins: 2 ---
-	slot4 = slot2.applyStateConflict
-	--- END OF BLOCK #35 ---
+	--- BLOCK #43 180-182, warpins: 2 ---
+	slot4 = slot2.resumeNearbyMonsterAI
+	--- END OF BLOCK #43 ---
 
-	if slot4 ~= nil then
-	JUMP TO BLOCK #36
+	if slot4 == true then
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #36 157-162, warpins: 1 ---
+	--- BLOCK #44 183-187, warpins: 1 ---
+	slot4 = SafeCallback
+	slot6 = DialogueGraphUtils
+	slot6 = slot6.resumeNearbyMonsterAI
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 188-190, warpins: 2 ---
+	slot4 = slot2.applyStateConflict
+	--- END OF BLOCK #45 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 191-196, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot0.setDialogueStateConflict
 	slot7 = slot0
@@ -2663,23 +2993,23 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #46 ---
 
-	FLOW; TARGET BLOCK #37
+	FLOW; TARGET BLOCK #47
 
 
-	--- BLOCK #37 163-165, warpins: 2 ---
+	--- BLOCK #47 197-199, warpins: 2 ---
 	slot4 = slot2.disableSpaceFollow
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #47 ---
 
 	if slot4 ~= nil then
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #48
 	else
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #38 166-171, warpins: 1 ---
+	--- BLOCK #48 200-205, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot0.disableSpaceFollow
 	slot7 = slot0
@@ -2688,12 +3018,39 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #48 ---
 
-	FLOW; TARGET BLOCK #39
+	FLOW; TARGET BLOCK #49
 
 
-	--- BLOCK #39 172-179, warpins: 2 ---
+	--- BLOCK #49 206-208, warpins: 2 ---
+	slot4 = slot2.disableDialogueCom
+	--- END OF BLOCK #49 ---
+
+	if slot4 == true then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 209-216, warpins: 1 ---
+	slot4 = SafeCallback
+	slot6 = DialogueGraphUtils
+	slot6 = slot6.disableEntityDialogueController
+	slot7 = slot1
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.id
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 217-224, warpins: 2 ---
 	slot4 = SafeCallback
 	slot6 = pg
 	slot6 = slot6.me
@@ -2704,16 +3061,21 @@ slot23 = function(slot0, slot1, slot2)
 	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #51 ---
 
 
 
 end
 
-slot22.setDialogueGraphModel = slot23
+slot24.setDialogueGraphModel = slot25
 
-slot23 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getStateData
+	slot6 = DialogueStateKey
+	slot6 = slot6.STATE_CONFLICT
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -2723,26 +3085,25 @@ slot23 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-8, warpins: 1 ---
-	slot3 = slot0.dialogueStateConflictKeys
+	--- BLOCK #1 8-12, warpins: 1 ---
 	slot4 = true
 	slot3[slot1] = slot4
-	slot3 = slot0.isEnterDialogueConflict
+	slot4 = slot0.isEnterDialogueConflict
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 9-17, warpins: 1 ---
-	slot3 = true
-	slot0.isEnterDialogueConflict = slot3
-	slot3 = xpcall
+	--- BLOCK #2 13-19, warpins: 1 ---
+	slot4 = true
+	slot0.isEnterDialogueConflict = slot4
+	slot4 = SafeCallbackWithStatusAndReturn
 
-	slot5 = function()
+	slot6 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
@@ -2755,7 +3116,7 @@ slot23 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 5-12, warpins: 1 ---
+		--- BLOCK #1 5-17, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
 		slot2 = slot0
@@ -2766,12 +3127,19 @@ slot23 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3, slot4)
 
+		slot0 = EModelUtils
+		slot0 = slot0.clearDisplacementVelocity
+		slot2 = pg
+		slot2 = slot2.pawn
+
+		slot0(slot2)
+
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 13-13, warpins: 2 ---
+		--- BLOCK #2 18-18, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -2779,74 +3147,71 @@ slot23 = function(slot0, slot1, slot2)
 
 	end
 
-	slot6 = debug
-	slot6 = slot6.traceback
-	slot3, slot4 = slot3(slot5, slot6)
+	slot4, slot5 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 18-24, warpins: 1 ---
-	slot5 = LoggerManager
-	slot5 = slot5.checkLogger
-	slot7 = LoggerConst
-	slot7 = slot7.ERROR
-	slot5 = slot5(slot7)
+	--- BLOCK #3 20-26, warpins: 1 ---
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.ERROR
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 25-31, warpins: 1 ---
-	slot5 = logger
-	slot7 = slot5
-	slot5 = slot5.error
-	slot8 = "setDialogueStateConflict failed %s"
-	slot9 = slot4
+	--- BLOCK #4 27-33, warpins: 1 ---
+	slot6 = logger
+	slot8 = slot6
+	slot6 = slot6.error
+	slot9 = "setDialogueStateConflict failed %s"
+	slot10 = slot5
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #5 32-40, warpins: 1 ---
-	slot3 = slot0.dialogueStateConflictKeys
+	--- BLOCK #5 34-41, warpins: 1 ---
 	slot4 = nil
 	slot3[slot1] = slot4
-	slot3 = Utils
-	slot3 = slot3.tableIsEmptyOrNil
-	slot5 = slot0.dialogueStateConflictKeys
-	slot3 = slot3(slot5)
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #5 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 41-42, warpins: 1 ---
-	slot3 = false
-	slot0.isEnterDialogueConflict = slot3
+	--- BLOCK #6 42-43, warpins: 1 ---
+	slot4 = false
+	slot0.isEnterDialogueConflict = slot4
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 43-43, warpins: 6 ---
+	--- BLOCK #7 44-44, warpins: 6 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -2854,10 +3219,15 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.setDialogueStateConflict = slot23
+slot24.setDialogueStateConflict = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.getStateData
+	slot9 = DialogueStateKey
+	slot9 = slot9.HIDE_ALL_UI
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -2867,15 +3237,15 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #1 3-11, warpins: 1 ---
-	slot6 = {}
-	slot7 = table
-	slot7 = slot7.merge
-	slot9 = slot6
-	slot10 = DialogueGraphConst
-	slot10 = slot10.HideAllUIWhiteList
+	--- BLOCK #1 8-16, warpins: 1 ---
+	slot7 = {}
+	slot8 = table
+	slot8 = slot8.merge
+	slot10 = slot7
+	slot11 = DialogueGraphConst
+	slot11 = slot11.HideAllUIWhiteList
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #1 ---
 
@@ -2886,20 +3256,20 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #2 12-16, warpins: 1 ---
-	slot7 = table
-	slot7 = slot7.merge
-	slot9 = slot6
-	slot10 = slot4
+	--- BLOCK #2 17-21, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.merge
+	slot10 = slot7
+	slot11 = slot4
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 17-18, warpins: 2 ---
+	--- BLOCK #3 22-23, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	if slot5 ~= nil then
@@ -2909,20 +3279,20 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #4 19-23, warpins: 1 ---
-	slot7 = table
-	slot7 = slot7.merge
-	slot9 = slot6
-	slot10 = slot5
+	--- BLOCK #4 24-28, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.merge
+	slot10 = slot7
+	slot11 = slot5
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 24-25, warpins: 2 ---
+	--- BLOCK #5 29-30, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	if slot3 ~= nil then
@@ -2932,47 +3302,45 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #6 26-29, warpins: 1 ---
-	slot7 = 1
-	slot8 = #slot3
-	slot9 = 1
+	--- BLOCK #6 31-34, warpins: 1 ---
+	slot8 = 1
+	slot9 = #slot3
+	slot10 = 1
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 30-33, warpins: 2 ---
-	slot11 = slot3[slot10]
-	slot12 = true
-	slot6[slot11] = slot12
+	--- BLOCK #7 35-38, warpins: 2 ---
+	slot12 = slot3[slot11]
+	slot13 = true
+	slot7[slot12] = slot13
 	--- END OF BLOCK #7 ---
 
-	for slot10=slot7, slot8, slot9
+	for slot11=slot8, slot9, slot10
 	LOOP BLOCK #7
 	GO OUT TO BLOCK #8
 
-	--- BLOCK #8 34-36, warpins: 2 ---
-	slot7 = slot0.hideAllUIData
-	slot7[slot1] = slot6
+	--- BLOCK #8 39-40, warpins: 2 ---
+	slot6[slot1] = slot7
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #9 37-40, warpins: 1 ---
-	slot6 = slot0.hideAllUIData
-	slot6 = slot6[slot1]
+	--- BLOCK #9 41-43, warpins: 1 ---
+	slot7 = slot6[slot1]
 
 	--- END OF BLOCK #9 ---
 
-	if slot6 == nil then
+	if slot7 == nil then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 41-41, warpins: 1 ---
+	--- BLOCK #10 44-44, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #10 ---
@@ -2980,8 +3348,7 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 42-44, warpins: 2 ---
-	slot6 = slot0.hideAllUIData
+	--- BLOCK #11 45-46, warpins: 2 ---
 	slot7 = nil
 	slot6[slot1] = slot7
 	--- END OF BLOCK #11 ---
@@ -2989,87 +3356,87 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 45-50, warpins: 2 ---
-	slot6 = Utils
-	slot6 = slot6.tableIsEmptyOrNil
-	slot8 = slot0.hideAllUIData
-	slot6 = slot6(slot8)
+	--- BLOCK #12 47-52, warpins: 2 ---
+	slot7 = Utils
+	slot7 = slot7.tableIsEmptyOrNil
+	slot9 = slot6
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #12 ---
 
-	slot6 = if not slot6 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #13 51-55, warpins: 1 ---
-	slot6 = {}
-	slot7 = pairs
-	slot9 = slot0.hideAllUIData
-	slot7, slot8, slot9 = slot7(slot9)
+	--- BLOCK #13 53-57, warpins: 1 ---
+	slot7 = {}
+	slot8 = pairs
+	slot10 = slot6
+	slot8, slot9, slot10 = slot8(slot10)
 	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 56-60, warpins: 1 ---
-	slot12 = table
-	slot12 = slot12.merge
-	slot14 = slot6
-	slot15 = slot11
+	--- BLOCK #14 58-62, warpins: 1 ---
+	slot13 = table
+	slot13 = slot13.merge
+	slot15 = slot7
+	slot16 = slot12
 
-	slot12(slot14, slot15)
+	slot13(slot15, slot16)
 
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 61-62, warpins: 2 ---
+	--- BLOCK #15 63-64, warpins: 2 ---
 	--- END OF BLOCK #15 ---
 
-	for slot10, slot11 in slot7, slot8, slot9
+	for slot11, slot12 in slot8, slot9, slot10
 	LOOP BLOCK #14
 	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 63-73, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.ui
-	slot9 = slot7
-	slot7 = slot7.hideAllUIByCustomKey
-	slot10 = UIConst
-	slot10 = slot10.UI_HIDE_KEY
-	slot10 = slot10.DIALOAGUE_GRAPH
-	slot11 = slot6
+	--- BLOCK #16 65-75, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.ui
+	slot10 = slot8
+	slot8 = slot8.hideAllUIByCustomKey
+	slot11 = UIConst
+	slot11 = slot11.UI_HIDE_KEY
+	slot11 = slot11.DIALOAGUE_GRAPH
+	slot12 = slot7
 
-	slot7(slot9, slot10, slot11)
+	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #17 74-82, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.ui
-	slot8 = slot6
-	slot6 = slot6.restoreAllUIByCustomKey
-	slot9 = UIConst
-	slot9 = slot9.UI_HIDE_KEY
-	slot9 = slot9.DIALOAGUE_GRAPH
+	--- BLOCK #17 76-84, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot9 = slot7
+	slot7 = slot7.restoreAllUIByCustomKey
+	slot10 = UIConst
+	slot10 = slot10.UI_HIDE_KEY
+	slot10 = slot10.DIALOAGUE_GRAPH
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 83-83, warpins: 2 ---
+	--- BLOCK #18 85-85, warpins: 2 ---
 	return
 	--- END OF BLOCK #18 ---
 
@@ -3077,10 +3444,15 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot22.hideAllUI = slot23
+slot24.hideAllUI = slot25
 
-slot23 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getStateData
+	slot6 = DialogueStateKey
+	slot6 = slot6.HIDE_INTERACTION_SIGN
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -3090,8 +3462,7 @@ slot23 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot3 = slot0.hideInteractionSignData
+	--- BLOCK #1 8-10, warpins: 1 ---
 	slot4 = true
 	slot3[slot1] = slot4
 	--- END OF BLOCK #1 ---
@@ -3099,8 +3470,7 @@ slot23 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 7-9, warpins: 1 ---
-	slot3 = slot0.hideInteractionSignData
+	--- BLOCK #2 11-12, warpins: 1 ---
 	slot4 = nil
 	slot3[slot1] = slot4
 	--- END OF BLOCK #2 ---
@@ -3108,22 +3478,22 @@ slot23 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-24, warpins: 2 ---
-	slot3 = Utils
-	slot3 = slot3.tableIsEmptyOrNil
-	slot5 = slot0.hideInteractionSignData
-	slot3 = slot3(slot5)
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.interactionSignSystem
-	slot6 = slot4
-	slot4 = slot4.setSignVisible
-	slot7 = InteractionSignSystem
-	slot7 = slot7.HIDE_KEY
-	slot7 = slot7.DIALOGUE_GRAPH
-	slot8 = slot3
+	--- BLOCK #3 13-27, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.interactionSignSystem
+	slot7 = slot5
+	slot5 = slot5.setSignVisible
+	slot8 = InteractionSignSystem
+	slot8 = slot8.HIDE_KEY
+	slot8 = slot8.DIALOGUE_GRAPH
+	slot9 = slot4
 
-	slot4(slot6, slot7, slot8)
+	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -3132,9 +3502,105 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.hideInteractionSign = slot23
+slot24.hideInteractionSign = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getStateData
+	slot6 = DialogueStateKey
+	slot6 = slot6.HIDE_MARK_SHARE
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot4 = true
+	slot3[slot1] = slot4
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-12, warpins: 1 ---
+	slot4 = nil
+	slot3[slot1] = slot4
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-18, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-25, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.markShare
+	slot4 = slot4.FORCE_HIDE_SCOPE
+	slot4 = slot4.None
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-30, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.markShare
+	slot4 = slot4.FORCE_HIDE_SCOPE
+	slot4 = slot4.All
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 31-43, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.markShare
+	slot7 = slot5
+	slot5 = slot5.setForceHide
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.markShare
+	slot8 = slot8.FORCE_HIDE_SOURCE
+	slot8 = slot8.Dialogue
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot24.hideMarkShare = slot25
+
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
@@ -3155,127 +3621,170 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.setBlockEvent = slot23
-slot23 = {
-	"multiPlayer"
-}
+slot24.setBlockEvent = slot25
 
-slot24 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot1[slot2]
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0.pendingFinishRpcList
+	slot4 = slot1.id
+	slot3[slot4] = slot1
 	--- END OF BLOCK #0 ---
 
-	if slot3 == nil then
+	if slot2 == true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-5, warpins: 1 ---
-	slot4 = false
+	--- BLOCK #1 6-12, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.ReqPlayDialogueGraph
+	slot6 = slot1.id
+	slot7 = slot1.context
 
-	return slot4
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-7, warpins: 2 ---
-	--- END OF BLOCK #2 ---
+	--- BLOCK #2 13-24, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.ReqFinishPlayDialogueGraph
+	slot6 = slot1.id
+	slot7 = slot1.sendFlag
+	slot8 = slot1.context
+	slot9 = slot1.sendRpcInfo
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
+	slot10 = function(slot0)
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.pendingFinishRpcList
+		slot2 = finishRpcInfo
+		slot2 = slot2.id
+		slot3 = nil
+		slot1[slot2] = slot3
+		slot1 = finishRpcInfo
+		slot1 = slot1.reqCallback
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 11-13, warpins: 1 ---
+		slot1 = finishRpcInfo
+		slot1 = slot1.reqCallback
+
+		slot1()
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 14-14, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
 	end
 
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
 
-	--- BLOCK #3 8-9, warpins: 1 ---
-	slot4 = true
-	slot0[slot2] = slot4
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 10-11, warpins: 2 ---
-	slot4 = true
-
-	return slot4
-	--- END OF BLOCK #4 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
+slot24.reqToServerDialogueGraphFinish = slot25
+
 slot25 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isTable
-	slot4 = slot1
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = raw_next
+	slot4 = slot0.pendingFinishRpcList
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot2 = false
-
-	return slot2
-
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 9-13, warpins: 2 ---
-	slot2 = pairs
-	slot4 = UIConst
-	slot4 = slot4.TOPLOGO_COMPONENT
+	--- BLOCK #2 10-16, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isServerLost
+	slot2 = slot2(slot4)
+
 	--- END OF BLOCK #2 ---
 
-	slot4 = if not slot4 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-14, warpins: 1 ---
-	slot4 = {}
+	--- BLOCK #3 17-17, warpins: 3 ---
+	return
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-16, warpins: 2 ---
+	--- BLOCK #4 18-21, warpins: 2 ---
+	slot2 = pairs
+	slot4 = slot0.pendingFinishRpcList
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 17-21, warpins: 1 ---
-	slot7 = m_collectHideTopLogoTargetCompName
-	slot9 = slot0
-	slot10 = slot1
+	--- BLOCK #5 22-27, warpins: 1 ---
+	slot7 = SafeCallback
+	slot9 = slot0.reqToServerDialogueGraphFinish
+	slot10 = slot0
 	slot11 = slot6
+	slot12 = slot1
 
-	slot7(slot9, slot10, slot11)
+	slot7(slot9, slot10, slot11, slot12)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 22-23, warpins: 2 ---
+	--- BLOCK #6 28-29, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -3283,337 +3792,333 @@ slot25 = function(slot0, slot1)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 24-27, warpins: 1 ---
-	slot2 = ipairs
-	slot4 = DIALOGUE_GRAPH_LEGACY_TOPLOGO_COMPONENTS
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #7 30-30, warpins: 1 ---
+	return
 	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 28-32, warpins: 1 ---
-	slot7 = m_collectHideTopLogoTargetCompName
-	slot9 = slot0
-	slot10 = slot1
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 33-34, warpins: 2 ---
-	--- END OF BLOCK #9 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #10
-
-
-	--- BLOCK #10 35-36, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot1[slot2]
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 37-38, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
-	if slot3 ~= nil then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #12 39-39, warpins: 1 ---
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 40-41, warpins: 1 ---
-	--- END OF BLOCK #13 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 42-43, warpins: 1 ---
-	slot4 = true
-	slot0[slot3] = slot4
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 44-46, warpins: 2 ---
-	slot2 = slot2 + 1
-	slot3 = slot1[slot2]
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #16 47-48, warpins: 1 ---
-	slot4 = true
-
-	return slot4
-	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot26 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = {}
-	slot2 = false
-	slot3 = pairs
-	slot5 = slot0.hideTopLogoData
+slot24.retryReqToServerFinishRpc = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot5 = if not slot5 then
+	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	slot5 = {}
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
-	slot3, slot4, slot5 = slot3(slot5)
+	--- BLOCK #2 4-11, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getStateData
+	slot7 = DialogueStateKey
+	slot7 = slot7.HIDE_ENTITIES
+	slot4 = slot4(slot6, slot7)
+	slot5 = slot2.hideAllPlayer
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #3 10-15, warpins: 1 ---
-	slot8 = m_collectHideTopLogoTargetCompNames
-	slot10 = slot1
-	slot11 = slot7
-	slot8 = slot8(slot10, slot11)
-	--- END OF BLOCK #3 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 16-16, warpins: 1 ---
-	slot2 = slot8
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 17-18, warpins: 3 ---
-	--- END OF BLOCK #5 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #6
-
-
-	--- BLOCK #6 19-20, warpins: 1 ---
-	--- END OF BLOCK #6 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 21-22, warpins: 1 ---
-	slot3 = nil
-
-	return slot3
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 23-23, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #8 ---
-
-
-
-end
-
-slot22.m_getHideTopLogoTargetCompNames = slot26
-
-slot26 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 3-4, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	if slot3 == nil then
-	JUMP TO BLOCK #2
-	else
+	slot5 = if slot5 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 5-5, warpins: 1 ---
-	return
+	--- BLOCK #3 12-22, warpins: 1 ---
+	slot5 = true
+	slot4[slot1] = slot5
+	slot5 = ClientUtils
+	slot5 = slot5.SetAllPlayerVisible
+	slot7 = ClientConst
+	slot7 = slot7.MODEL_VISIBLE_KEY
+	slot7 = slot7.DIALOGUE_GRAPH
+	slot8 = slot3
+	slot9 = slot2.hideMainPlayer
+	slot10 = slot2.hideTeamMate
 
-	--- END OF BLOCK #2 ---
+	slot5(slot7, slot8, slot9, slot10)
 
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 6-8, warpins: 2 ---
-	slot4 = slot0.hideTopLogoData
-	slot4[slot1] = slot3
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 9-12, warpins: 1 ---
-	slot4 = slot0.hideTopLogoData
-	slot4 = slot4[slot1]
-
+	--- BLOCK #4 23-25, warpins: 2 ---
+	slot5 = slot2.hideMainPlayerPet
 	--- END OF BLOCK #4 ---
 
-	if slot4 == nil then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 13-13, warpins: 1 ---
-	return
+	--- BLOCK #5 26-36, warpins: 1 ---
+	slot5 = true
+	slot4[slot1] = slot5
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.setCurPetVisible
+	slot8 = ClientConst
+	slot8 = slot8.MODEL_VISIBLE_KEY
+	slot8 = slot8.DIALOGUE_GRAPH
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 14-16, warpins: 2 ---
-	slot4 = slot0.hideTopLogoData
-	slot5 = nil
+	--- BLOCK #6 37-39, warpins: 2 ---
+	slot5 = slot2.hideAllPuppet
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 40-48, warpins: 1 ---
+	slot5 = true
 	slot4[slot1] = slot5
+	slot5 = ClientUtils
+	slot5 = slot5.SetAllPuppetVisible
+	slot7 = ClientConst
+	slot7 = slot7.MODEL_VISIBLE_KEY
+	slot7 = slot7.DIALOGUE_GRAPH
+	slot8 = slot3
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 49-49, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot24.setEntitiesVisible = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getStateData
+	slot5 = DialogueStateKey
+	slot5 = slot5.HIDE_ENTITIES
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot2[slot1]
+
+	--- END OF BLOCK #0 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-17, warpins: 2 ---
+	slot4 = nil
+	slot2[slot1] = slot4
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-41, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.setCurPetVisible
+	slot7 = ClientConst
+	slot7 = slot7.MODEL_VISIBLE_KEY
+	slot7 = slot7.DIALOGUE_GRAPH
+	slot8 = true
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = ClientUtils
+	slot4 = slot4.SetAllPlayerVisible
+	slot6 = ClientConst
+	slot6 = slot6.MODEL_VISIBLE_KEY
+	slot6 = slot6.DIALOGUE_GRAPH
+	slot7 = true
+	slot8 = true
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = ClientUtils
+	slot4 = slot4.SetAllPuppetVisible
+	slot6 = ClientConst
+	slot6 = slot6.MODEL_VISIBLE_KEY
+	slot6 = slot6.DIALOGUE_GRAPH
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot24.resetEntitiesVisible = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot1[slot2]
+	slot5 = DialogueGraphConst
+	slot5 = slot5.MODE_TYPE
+	slot5 = slot5.Control
+	--- END OF BLOCK #0 ---
+
+	if slot3 == slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	slot5 = true
+	slot0[slot2] = slot5
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-14, warpins: 2 ---
+	slot5 = true
+
+	return slot5
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-16, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 17-18, warpins: 1 ---
+	slot5 = false
+
+	return slot5
+
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 17-23, warpins: 2 ---
-	slot4 = nil
-	slot5 = Utils
-	slot5 = slot5.tableIsEmptyOrNil
-	slot7 = slot0.hideTopLogoData
-	slot5 = slot5(slot7)
+	--- BLOCK #7 19-20, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
-	slot5 = if not slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 24-41, warpins: 1 ---
-	slot5 = {
-		visible = false
-	}
-	slot6 = UIConst
-	slot6 = slot6.TOPLOGO_VISIBLE_KEY
-	slot6 = slot6.DIALOGUE_GRAPH
-	slot5.visibleKey = slot6
-	slot8 = slot0
-	slot6 = slot0.m_getHideTopLogoTargetCompNames
-	slot6 = slot6(slot8)
-	slot5.targetCompNames = slot6
-	slot4 = slot5
-	slot5 = facade
-	slot7 = slot5
-	slot5 = slot5.sendMsgToUI
-	slot8 = MessageName
-	slot8 = slot8.UI_ON_SET_TOPLOGO_COMPONENT_VISIBLE
-	slot9 = slot4
-
-	slot5(slot7, slot8, slot9)
-
+	--- BLOCK #8 21-22, warpins: 1 ---
+	slot5 = true
+	slot0[slot2] = slot5
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 42-54, warpins: 1 ---
-	slot5 = {
-		visible = true
-	}
-	slot6 = UIConst
-	slot6 = slot6.TOPLOGO_VISIBLE_KEY
-	slot6 = slot6.DIALOGUE_GRAPH
-	slot5.visibleKey = slot6
-	slot4 = slot5
-	slot5 = facade
-	slot7 = slot5
-	slot5 = slot5.sendMsgToUI
-	slot8 = MessageName
-	slot8 = slot8.UI_ON_SET_TOPLOGO_COMPONENT_VISIBLE
-	slot9 = slot4
+	--- BLOCK #9 23-24, warpins: 2 ---
+	slot5 = true
 
-	slot5(slot7, slot8, slot9)
-
+	return slot5
 	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 55-62, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.topLogo
-	slot7 = slot5
-	slot5 = slot5.registerGlobalVisibleData
-	slot8 = slot4
-
-	slot5(slot7, slot8)
-
-	return
-	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot22.hideTopLogo = slot26
-
 slot26 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot0.hidePlayerHubData
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = Utils
+	slot3 = slot3.isTable
+	slot5 = slot1
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
 	slot3 = if not slot3 then
@@ -3623,40 +4128,281 @@ slot26 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
-	slot3 = {}
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-7, warpins: 2 ---
-	slot0.hidePlayerHubData = slot3
+	--- BLOCK #2 9-13, warpins: 2 ---
+	slot3 = pairs
+	slot5 = UIConst
+	slot5 = slot5.TOPLOGO_COMPONENT
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 8-11, warpins: 1 ---
-	slot3 = slot0.hidePlayerHubData
-	slot4 = true
-	slot3[slot1] = slot4
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot5 = EMPTY_TABLE
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-16, warpins: 2 ---
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 17-22, warpins: 1 ---
+	slot8 = m_collectHideTopLogoTargetCompName
+	slot10 = slot0
+	slot11 = slot1
+	slot12 = slot7
+	slot13 = slot2
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 25-29, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = DialogueGraphConst
+	slot5 = slot5.DIALOGUE_GRAPH_LEGACY_TOPLOGO_COMPONENTS
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 30-35, warpins: 1 ---
+	slot8 = m_collectHideTopLogoTargetCompName
+	slot10 = slot0
+	slot11 = slot1
+	slot12 = slot7
+	slot13 = slot2
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 36-37, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 38-39, warpins: 1 ---
+	slot3 = 1
+	slot4 = slot1[slot3]
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 40-41, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 42-42, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 43-44, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 45-46, warpins: 1 ---
+	slot5 = true
+	slot0[slot4] = slot5
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 47-49, warpins: 2 ---
+	slot3 = slot3 + 1
+	slot4 = slot1[slot3]
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #16 50-51, warpins: 1 ---
+	slot5 = true
+
+	return slot5
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = {}
+	slot3 = false
+	slot6 = slot0
+	slot4 = slot0.getStateData
+	slot7 = DialogueStateKey
+	slot7 = slot7.HIDE_TOP_LOGO
+	slot4 = slot4(slot6, slot7)
+	slot5 = pairs
+	slot7 = slot4
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 12-18, warpins: 1 ---
+	slot10 = m_collectHideTopLogoTargetCompNames
+	slot12 = slot2
+	slot13 = slot9
+	slot14 = slot1
+	slot10 = slot10(slot12, slot13, slot14)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 19-19, warpins: 1 ---
+	slot3 = slot10
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 22-23, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-25, warpins: 1 ---
+	slot5 = nil
+
+	return slot5
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-26, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot24.m_getHideTopLogoTargetCompNames = slot27
+
+slot27 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getStateData
+	slot8 = DialogueStateKey
+	slot8 = slot8.HIDE_TOP_LOGO
+	slot5 = slot5(slot7, slot8)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	slot5[slot1] = slot3
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 12-15, warpins: 1 ---
-	slot3 = slot0.hidePlayerHubData
-	slot3 = slot3[slot1]
+	--- BLOCK #4 13-15, warpins: 1 ---
+	slot6 = slot5[slot1]
 
 	--- END OF BLOCK #4 ---
 
-	if slot3 == nil then
+	if slot6 == nil then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
@@ -3671,74 +4417,81 @@ slot26 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 17-19, warpins: 2 ---
-	slot3 = slot0.hidePlayerHubData
-	slot4 = nil
-	slot3[slot1] = slot4
+	--- BLOCK #6 17-18, warpins: 2 ---
+	slot6 = nil
+	slot5[slot1] = slot6
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 20-35, warpins: 2 ---
-	slot3 = m_createDialogueGraphPlayerHubVisibleData
-	slot5 = Utils
-	slot5 = slot5.tableIsEmptyOrNil
-	slot7 = slot0.hidePlayerHubData
-	MULTRES = slot5(slot7)
-	slot3 = slot3(MULTRES)
-	slot4 = facade
-	slot6 = slot4
-	slot4 = slot4.sendMsgToUI
-	slot7 = MessageName
-	slot7 = slot7.UI_ON_SET_TOPLOGO_COMPONENT_VISIBLE
-	slot8 = slot3
-
-	slot4(slot6, slot7, slot8)
-
-	slot4 = slot3.visible
+	--- BLOCK #7 19-25, warpins: 2 ---
+	slot6 = nil
+	slot7 = Utils
+	slot7 = slot7.tableIsEmptyOrNil
+	slot9 = slot5
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #7 ---
 
-	slot4 = if slot4 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 36-45, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.topLogo
-	slot6 = slot4
-	slot4 = slot4.unRegisterGlobalVisibleData
-	slot7 = UIConst
-	slot7 = slot7.TOPLOGO_VISIBLE_KEY
-	slot7 = slot7.DIALOGUE_GRAPH_PLAYERHUB
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #8 26-37, warpins: 1 ---
+	slot7 = {
+		visible = false
+	}
+	slot8 = UIConst
+	slot8 = slot8.TOPLOGO_VISIBLE_KEY
+	slot8 = slot8.DIALOGUE_GRAPH
+	slot7.visibleKey = slot8
+	slot10 = slot0
+	slot8 = slot0.m_getHideTopLogoTargetCompNames
+	slot11 = slot4
+	slot8 = slot8(slot10, slot11)
+	slot7.targetCompNames = slot8
+	slot6 = slot7
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 46-52, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.topLogo
-	slot6 = slot4
-	slot4 = slot4.registerGlobalVisibleData
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #9 38-43, warpins: 1 ---
+	slot7 = {
+		visible = true
+	}
+	slot8 = UIConst
+	slot8 = slot8.TOPLOGO_VISIBLE_KEY
+	slot8 = slot8.DIALOGUE_GRAPH
+	slot7.visibleKey = slot8
+	slot6 = slot7
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 53-53, warpins: 2 ---
+	--- BLOCK #10 44-58, warpins: 2 ---
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.topLogo
+	slot9 = slot7
+	slot7 = slot7.registerGlobalVisibleData
+	slot10 = slot6
+
+	slot7(slot9, slot10)
+
+	slot7 = facade
+	slot9 = slot7
+	slot7 = slot7.sendMsgToUI
+	slot10 = MessageName
+	slot10 = slot10.UI_ON_SET_TOPLOGO_COMPONENT_VISIBLE
+	slot11 = slot6
+
+	slot7(slot9, slot10, slot11)
+
 	return
 	--- END OF BLOCK #10 ---
 
@@ -3746,66 +4499,64 @@ slot26 = function(slot0, slot1, slot2)
 
 end
 
-slot22.setDialogueGraphPlayerHubVisible = slot26
+slot24.hideTopLogo = slot27
 
-slot26 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.cmdChangeAmbientIntensityId
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getStateData
+	slot5 = DialogueStateKey
+	slot5 = slot5.AMBIENT_INTENSITY
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot1.id
+	slot3 = slot2[slot3]
+
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-18, warpins: 2 ---
+	slot3 = Utils
+	slot3 = slot3.tableIsEmptyOrNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	slot4 = slot1.id
+	slot2[slot4] = slot1
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 4-10, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
+	--- BLOCK #3 19-22, warpins: 1 ---
+	slot4 = DialogueGraphUtils
+	slot4 = slot4.changeAmbientIntensity
+	slot6 = slot1
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 11-16, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "对话图%d正在修改环境光，本次修改失败！"
-	slot6 = slot0.cmdChangeAmbientIntensityId
-
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 17-17, warpins: 2 ---
-	return
+	slot4(slot6)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-24, warpins: 2 ---
-	slot2 = slot1.id
-	slot0.cmdChangeAmbientIntensityId = slot2
-	slot2 = DialogueGraphUtils
-	slot2 = slot2.changeAmbientIntensity
-	slot4 = slot1
-
-	slot2(slot4)
-
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -3813,59 +4564,81 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot22.changeAmbientIntensity = slot26
+slot24.changeAmbientIntensity = slot27
 
-slot26 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.cmdChangeAmbientIntensityId
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getStateData
+	slot5 = DialogueStateKey
+	slot5 = slot5.AMBIENT_INTENSITY
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot1.id
+	slot3 = slot2[slot3]
+
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+	if slot3 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot2 = slot0.cmdChangeAmbientIntensityId
-	slot3 = slot1.id
+	--- BLOCK #1 10-10, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	if slot2 == slot3 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-19, warpins: 2 ---
+	slot4 = slot1.id
+	slot5 = nil
+	slot2[slot4] = slot5
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 8-13, warpins: 1 ---
-	slot2 = DialogueGraphUtils
-	slot2 = slot2.restoreAmbientIntensity
-	slot4 = slot1
+	--- BLOCK #3 20-23, warpins: 1 ---
+	slot4 = DialogueGraphUtils
+	slot4 = slot4.restoreAmbientIntensity
+	slot6 = slot3
 
-	slot2(slot4)
+	slot4(slot6)
 
-	slot2 = nil
-	slot0.cmdChangeAmbientIntensityId = slot2
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 14-14, warpins: 3 ---
-	return
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-24, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot22.restoreAmbientIntensity = slot26
+slot24.restoreAmbientIntensity = slot27
 
-slot26 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot27 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getStateData
+	slot6 = DialogueStateKey
+	slot6 = slot6.DISABLE_SPACE_FOLLOW
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -3875,8 +4648,7 @@ slot26 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot3 = slot0.disableSpaceFollowData
+	--- BLOCK #1 8-10, warpins: 1 ---
 	slot4 = true
 	slot3[slot1] = slot4
 	--- END OF BLOCK #1 ---
@@ -3884,20 +4656,19 @@ slot26 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 7-10, warpins: 1 ---
-	slot3 = slot0.disableSpaceFollowData
-	slot3 = slot3[slot1]
+	--- BLOCK #2 11-13, warpins: 1 ---
+	slot4 = slot3[slot1]
 
 	--- END OF BLOCK #2 ---
 
-	if slot3 == nil then
+	if slot4 == nil then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-11, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -3905,8 +4676,7 @@ slot26 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-14, warpins: 2 ---
-	slot3 = slot0.disableSpaceFollowData
+	--- BLOCK #4 15-16, warpins: 2 ---
 	slot4 = nil
 	slot3[slot1] = slot4
 	--- END OF BLOCK #4 ---
@@ -3914,19 +4684,19 @@ slot26 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-26, warpins: 2 ---
-	slot3 = Utils
-	slot3 = slot3.tableIsEmptyOrNil
-	slot5 = slot0.disableSpaceFollowData
-	slot3 = slot3(slot5)
+	--- BLOCK #5 17-28, warpins: 2 ---
 	slot4 = Utils
-	slot4 = slot4.setSpaceFollowAvailable
-	slot6 = ClientConst
-	slot6 = slot6.DISABLE_SPACE_FOLLOW_KEY
-	slot6 = slot6.DIALOGUE_GRAPH
-	slot7 = slot3
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = Utils
+	slot5 = slot5.setSpaceFollowAvailable
+	slot7 = ClientConst
+	slot7 = slot7.DISABLE_SPACE_FOLLOW_KEY
+	slot7 = slot7.DIALOGUE_GRAPH
+	slot8 = slot4
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
 	return
 	--- END OF BLOCK #5 ---
@@ -3935,83 +4705,444 @@ slot26 = function(slot0, slot1, slot2)
 
 end
 
-slot22.disableSpaceFollow = slot26
+slot24.disableSpaceFollow = slot27
 
-slot26 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.clientFirstCreateFlag
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot0.dialogueRunningList
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 6-7, warpins: 1 ---
-	slot1 = true
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot7 = DialogueGraphUtils
+	slot7 = slot7.handleCloseUI
+	slot9 = slot6
+	slot10 = slot1
 
-	return slot1
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-11, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.me
+	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	if slot1 ~= nil then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 12-19, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.loading
-	slot3 = slot1
-	slot1 = slot1.isFinished
-	slot1 = slot1(slot3)
+	--- BLOCK #3 12-12, warpins: 1 ---
+	return
 	--- END OF BLOCK #3 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #4
+
+
+end
+
+slot24.onUIClose = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.visible
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #4 20-21, warpins: 1 ---
-	slot1 = true
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
 
-	return slot1
+	--- END OF BLOCK #1 ---
 
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot2 = pairs
+	slot4 = slot0.dialogueRunningList
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-14, warpins: 1 ---
+	slot7 = DialogueGraphUtils
+	slot7 = slot7.handleHideUI
+	slot9 = slot6
+	slot10 = slot1.uid
+	slot11 = slot1.visible
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-16, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 22-23, warpins: 3 ---
-	slot1 = false
-
-	return slot1
+	--- BLOCK #5 17-17, warpins: 1 ---
+	return
 	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot22.isLoadingScene = slot26
+slot24.onUIVisibleChange = slot27
 
-slot26 = function(slot0, slot1)
+slot27 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = DialogueGraphUtils
+	slot3 = slot3.unPreloadCutScenes
+	slot5 = slot1.preloadCutscenes
+
+	slot3(slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = DialogueGraphConst
+	slot2 = slot3.RET_FLAG_FAILED
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-16, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.finishDialogueRequest
+	slot6 = slot1.dialogueId
+	slot7 = slot2
+	slot8 = slot1.onFinishCallback
+	slot9 = slot1.extraData
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot24.unloadCachedDialogueRequest = slot27
+
+slot27 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.isServerLost
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-18, warpins: 1 ---
+	slot5 = slot0.pendingFinishRpcList
+	slot6 = {}
+	slot6.id = slot1
+	slot7 = DialogueGraphConst
+	slot7 = slot7.RET_FLAG_SUCCESS
+	slot6.sendFlag = slot7
+	slot6.context = slot2
+	slot7 = {}
+	slot6.sendRpcInfo = slot7
+	slot5[slot1] = slot6
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 19-34, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.ReqPlayDialogueGraph
+	slot8 = slot1
+	slot9 = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.ReqFinishPlayDialogueGraph
+	slot8 = slot1
+	slot9 = DialogueGraphConst
+	slot9 = slot9.RET_FLAG_SUCCESS
+	slot10 = slot2
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 35-43, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.finishDialogueRequest
+	slot8 = slot1
+	slot9 = DialogueGraphConst
+	slot9 = slot9.RET_FLAG_SUCCESS
+	slot10 = slot3
+	slot11 = slot4
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot24.completeDialogueRequest = slot27
+
+slot27 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot5 = slot4.onStartCallback
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-8, warpins: 1 ---
+	slot5 = SafeCallback
+	slot7 = slot4.onStartCallback
+
+	slot5(slot7)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-10, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-15, warpins: 1 ---
+	slot5 = SafeCallback
+	slot7 = slot3
+	slot8 = slot2
+	slot9 = slot1
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot24.finishDialogueRequest = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = slot0.stateData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = {}
+	slot3 = slot0.stateData
+	slot3[slot1] = slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot24.getStateData = slot27
+
+slot27 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.clientFirstCreateFlag
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-11, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-15, warpins: 3 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 16-20, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 21-24, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-32, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.loading
+	slot3 = slot1
+	slot1 = slot1.isFinished
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 33-34, warpins: 4 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 35-36, warpins: 2 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot24.isLoadingScene = slot27
+
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.dialogueRunningList
 	slot2 = slot2[slot1]
@@ -4047,9 +5178,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot22.isDialoguePlaying = slot26
+slot24.isDialoguePlaying = slot27
 
-slot26 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = 1
 	slot3 = slot0.dialogueCacheList
@@ -4110,9 +5241,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot22.isDialogueGraphPrepareToPlay = slot26
+slot24.isDialogueGraphPrepareToPlay = slot27
 
-slot26 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = raw_next
 	slot3 = slot0.dialogueRunningList
@@ -4149,9 +5280,61 @@ slot26 = function(slot0)
 
 end
 
-slot22.isPlayingDialogueGraph = slot26
+slot24.isPlayingDialogueGraph = slot27
 
-slot26 = function(slot0)
+slot27 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pairs
+	slot3 = slot0.dialogueRunningList
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot6 = slot5.config
+	slot6 = slot6.registMsg
+	--- END OF BLOCK #1 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	slot6 = false
+
+	return slot6
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 13-14, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot24.canUnregistMsg = slot27
+
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.dialogueCacheList
 	slot1 = #slot1
@@ -4188,9 +5371,364 @@ slot26 = function(slot0)
 
 end
 
-slot22.isPreparingToPlayDialogueGraph = slot26
+slot24.isPreparingToPlayDialogueGraph = slot27
 
-slot26 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = DialogueGraphConfig
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot3 = DialogueGraphConst
+	slot3 = slot3.PLAYBACK_DECISION
+	slot3 = slot3.QUEUE
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot3 = slot2.priority
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-17, warpins: 2 ---
+	slot4 = nil
+	slot5 = pairs
+	slot7 = slot0.dialogueRunningList
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #5 18-21, warpins: 1 ---
+	slot10 = slot9.config
+	slot10 = slot10.priority
+	--- END OF BLOCK #5 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-22, warpins: 1 ---
+	slot10 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-28, warpins: 2 ---
+	slot11 = DialogueGraphConst
+	slot11 = slot11.PRIORITY_MAP
+	slot11 = slot11[slot10]
+	slot11 = slot11[slot3]
+	--- END OF BLOCK #7 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-31, warpins: 1 ---
+	slot11 = DialogueGraphConst
+	slot11 = slot11.PLAYBACK_DECISION
+	slot11 = slot11.QUEUE
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 32-36, warpins: 2 ---
+	slot12 = DialogueGraphConst
+	slot12 = slot12.PLAYBACK_DECISION
+	slot12 = slot12.DISCARD
+	--- END OF BLOCK #9 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 37-43, warpins: 1 ---
+	slot12 = LoggerManager
+	slot12 = slot12.checkLogger
+	slot14 = LoggerConst
+	slot14 = slot14.INFO
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #10 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 44-53, warpins: 1 ---
+	slot12 = logger
+	slot14 = slot12
+	slot12 = slot12.info
+	slot15 = "对话图 %d 优先级 %d 正在播放，当前对话图%d 优先级 %d 被丢弃 decision: %d "
+	slot16 = slot9.id
+	slot17 = slot10
+	slot18 = slot1
+	slot19 = slot3
+	slot20 = slot11
+
+	slot12(slot14, slot15, slot16, slot17, slot18, slot19, slot20)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 54-57, warpins: 2 ---
+	slot12 = slot11
+	slot13 = nil
+
+	return slot12, slot13
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #13 58-62, warpins: 1 ---
+	slot12 = DialogueGraphConst
+	slot12 = slot12.PLAYBACK_DECISION
+	slot12 = slot12.QUEUE
+	--- END OF BLOCK #13 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 63-69, warpins: 1 ---
+	slot12 = LoggerManager
+	slot12 = slot12.checkLogger
+	slot14 = LoggerConst
+	slot14 = slot14.INFO
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #14 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 70-79, warpins: 1 ---
+	slot12 = logger
+	slot14 = slot12
+	slot12 = slot12.info
+	slot15 = "对话图 %d 优先级 %d 正在播放，当前对话图%d 优先级 %d 进入队列 decision: %d "
+	slot16 = slot9.id
+	slot17 = slot10
+	slot18 = slot1
+	slot19 = slot3
+	slot20 = slot11
+
+	slot12(slot14, slot15, slot16, slot17, slot18, slot19, slot20)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 80-83, warpins: 2 ---
+	slot12 = slot11
+	slot13 = nil
+
+	return slot12, slot13
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #17 84-88, warpins: 1 ---
+	slot12 = DialogueGraphConst
+	slot12 = slot12.PLAYBACK_DECISION
+	slot12 = slot12.PARALLEL
+	--- END OF BLOCK #17 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 89-92, warpins: 1 ---
+	slot12 = slot11
+	slot13 = nil
+
+	return slot12, slot13
+
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #19 93-97, warpins: 1 ---
+	slot12 = DialogueGraphConst
+	slot12 = slot12.PLAYBACK_DECISION
+	slot12 = slot12.INTERRUPT
+	--- END OF BLOCK #19 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #20 98-104, warpins: 1 ---
+	slot12 = LoggerManager
+	slot12 = slot12.checkLogger
+	slot14 = LoggerConst
+	slot14 = slot14.INFO
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #20 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 105-114, warpins: 1 ---
+	slot12 = logger
+	slot14 = slot12
+	slot12 = slot12.info
+	slot15 = "对话图 %d 优先级 %d 正在播放，当前对话图%d 优先级 %d 打断 decision: %d "
+	slot16 = slot9.id
+	slot17 = slot10
+	slot18 = slot1
+	slot19 = slot3
+	slot20 = slot11
+
+	slot12(slot14, slot15, slot16, slot17, slot18, slot19, slot20)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 115-116, warpins: 2 ---
+	--- END OF BLOCK #22 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 117-117, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 118-122, warpins: 2 ---
+	slot12 = table
+	slot12 = slot12.insert
+	slot14 = slot4
+	slot15 = slot9.id
+
+	slot12(slot14, slot15)
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 123-124, warpins: 6 ---
+	--- END OF BLOCK #25 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #26
+
+
+	--- BLOCK #26 125-126, warpins: 1 ---
+	--- END OF BLOCK #26 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 127-131, warpins: 1 ---
+	slot5 = DialogueGraphConst
+	slot5 = slot5.PLAYBACK_DECISION
+	slot5 = slot5.INTERRUPT
+	slot6 = slot4
+
+	return slot5, slot6
+
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 132-136, warpins: 2 ---
+	slot5 = DialogueGraphConst
+	slot5 = slot5.PLAYBACK_DECISION
+	slot5 = slot5.PARALLEL
+	slot6 = nil
+
+	return slot5, slot6
+	--- END OF BLOCK #28 ---
+
+
+
+end
+
+slot24.resolvePlaybackDecision = slot27
+
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4211,120 +5749,157 @@ slot26 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 2 ---
-	slot2 = slot1.config
-	slot2 = slot2.priority
+	--- BLOCK #2 5-13, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.resolvePlaybackDecision
+	slot5 = slot1.dialogueId
+	slot2 = slot2(slot4, slot5)
+	slot3 = DialogueGraphConst
+	slot3 = slot3.PLAYBACK_DECISION
+	slot3 = slot3.PARALLEL
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	if slot2 ~= slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 9-9, warpins: 1 ---
-	slot2 = 0
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot3 = DialogueGraphConst
+	slot3 = slot3.PLAYBACK_DECISION
+	slot3 = slot3.INTERRUPT
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 10-14, warpins: 2 ---
-	slot3 = true
-	slot4 = pairs
-	slot6 = slot0.dialogueRunningList
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #4 19-20, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 15-18, warpins: 1 ---
-	slot9 = slot8.config
-	slot9 = slot9.priority
+	--- BLOCK #5 21-21, warpins: 2 ---
+	slot3 = true
+
 	--- END OF BLOCK #5 ---
 
-	slot9 = if not slot9 then
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot24.canPlayTargetDialogueGraph = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = slot1.config
+	slot2 = slot2.priority
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-11, warpins: 2 ---
+	slot3 = 1
+	slot4 = 1
+	slot5 = slot0.dialogueCacheList
+	slot5 = #slot5
+	slot6 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-17, warpins: 2 ---
+	slot8 = slot0.dialogueCacheList
+	slot8 = slot8[slot7]
+	slot8 = slot8.config
+	slot8 = slot8.priority
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot8 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-20, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot2 <= slot8 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 19-19, warpins: 1 ---
-	slot9 = 0
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot3 = slot7
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 20-25, warpins: 2 ---
-	slot10 = DialogueGraphConst
-	slot10 = slot10.PRIORITY_MAP
-	slot10 = slot10[slot9]
-	slot10 = slot10[slot2]
+	--- BLOCK #7 23-24, warpins: 1 ---
+	slot3 = slot7 + 1
 	--- END OF BLOCK #7 ---
 
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #10
-	end
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #8
 
+	--- BLOCK #8 25-31, warpins: 2 ---
+	slot4 = table
+	slot4 = slot4.insert
+	slot6 = slot0.dialogueCacheList
+	slot7 = slot3
+	slot8 = slot1
 
-	--- BLOCK #8 26-33, warpins: 1 ---
-	slot3 = false
-	slot10 = LoggerManager
-	slot10 = slot10.checkLogger
-	slot12 = LoggerConst
-	slot12 = slot12.INFO
-	slot10 = slot10(slot12)
+	slot4(slot6, slot7, slot8)
+
+	return
 	--- END OF BLOCK #8 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 34-43, warpins: 1 ---
-	slot10 = logger
-	slot12 = slot10
-	slot10 = slot10.info
-	slot13 = "对话图 %d 优先级 %d 正在播放，当前对话图%d 优先级 %d 进入队列"
-	slot14 = slot8.id
-	slot15 = slot9
-	slot16 = slot1.dialogueId
-	slot17 = slot2
-
-	slot10(slot12, slot13, slot14, slot15, slot16, slot17)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 44-45, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #11
-
-
-	--- BLOCK #11 46-46, warpins: 3 ---
-	return slot3
-	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot22.canPlayTargetDialogueGraph = slot26
+slot24.insertToCacheListSorted = slot27
 
-slot26 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -4428,181 +6003,414 @@ slot26 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 40-42, warpins: 2 ---
-	slot3 = slot2.graphType
+	--- BLOCK #8 40-44, warpins: 2 ---
+	slot3 = slot0.dialogueCacheList
+	slot3 = #slot3
+	slot4 = 1
+	slot5 = -1
 	--- END OF BLOCK #8 ---
 
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 45-49, warpins: 2 ---
+	slot7 = slot0.dialogueCacheList
+	slot7 = slot7[slot6]
+	slot8 = slot7.dialogueId
+	--- END OF BLOCK #9 ---
+
+	if slot8 == slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 50-57, warpins: 1 ---
+	slot8 = logger
+	slot10 = slot8
+	slot8 = slot8.error
+	slot11 = "对话图 %s 已经在播放列表，同时触发了相同的对话图，请排查配置！"
+	slot12 = slot1
+
+	slot8(slot10, slot11, slot12)
+
+	slot8 = false
+
+	return slot8
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 58-58, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #12
+
+	--- BLOCK #12 59-60, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot24.isDialogueGraphIdValid = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = DialogueGraphConfig
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.ERROR
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-17, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = "对话图 %s 配置不存在，播放失败！"
+	slot7 = slot1
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 18-19, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-22, warpins: 2 ---
+	slot3 = slot2.graphType
+	--- END OF BLOCK #4 ---
+
 	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-23, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-28, warpins: 2 ---
+	slot4 = DialogueGraphConst
+	slot4 = slot4.GraphType
+	slot4 = slot4.SinglePlayer
+	--- END OF BLOCK #6 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 29-33, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.canPlaySinglePlayerDialogueGraph
+	slot4, slot5 = slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 34-40, warpins: 1 ---
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.INFO
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 43-43, warpins: 1 ---
-	slot3 = 1
+	--- BLOCK #9 41-47, warpins: 1 ---
+	slot6 = logger
+	slot8 = slot6
+	slot6 = slot6.info
+	slot9 = "对话图 %s 播放失败：%s"
+	slot10 = slot1
+	slot11 = slot5
+
+	slot6(slot8, slot9, slot10, slot11)
+
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 44-48, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.space
+	--- BLOCK #10 48-49, warpins: 2 ---
+	slot6 = false
+
+	return slot6
+
 	--- END OF BLOCK #10 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 49-56, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.space
-	slot6 = slot4
-	slot4 = slot4.isMultiPlayerEnv
-	slot4 = slot4(slot6)
+	--- BLOCK #11 50-51, warpins: 3 ---
+	slot4 = true
+
+	return slot4
 	--- END OF BLOCK #11 ---
 
-	slot4 = if slot4 then
+
+
+end
+
+slot24.canPlayDialogueGraph = slot27
+
+slot27 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	slot1 = nil
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-15, warpins: 1 ---
+	slot2 = false
+	slot3 = "当前场景不存在"
+
+	return slot2, slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-21, warpins: 2 ---
+	slot2 = Utils
+	slot2 = slot2.isSceneSingleWorld
+	slot4 = slot1.sceneId
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 22-26, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.isMultiPlayerEnv
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 27-31, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.isQuestInSelfSpace
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-34, warpins: 1 ---
+	slot2 = false
+	slot3 = "单人大世界组队状态下，只有当前主端可以播放单人对话图"
+
+	return slot2, slot3
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 35-37, warpins: 3 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #10 38-43, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isSceneHomeland
+	slot4 = slot1.sceneId
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #11 44-48, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.isQuestInSelfSpace
+	--- END OF BLOCK #11 ---
+
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 57-61, warpins: 1 ---
-	slot4 = DialogueGraphConst
-	slot4 = slot4.GraphType
-	slot4 = slot4.SinglePlayer
+	--- BLOCK #12 49-51, warpins: 1 ---
+	slot2 = false
+	slot3 = "家园场景客端不能播放单人对话图"
+
+	return slot2, slot3
+
 	--- END OF BLOCK #12 ---
 
-	if slot3 == slot4 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 62-68, warpins: 1 ---
-	slot4 = Utils
-	slot4 = slot4.checkIsSpaceOwner
-	slot6 = pg
-	slot6 = slot6.me
-	slot4 = slot4(slot6)
+	--- BLOCK #13 52-53, warpins: 2 ---
+	slot2 = true
+
+	return slot2
+
 	--- END OF BLOCK #13 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 69-75, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.ERROR
-	slot4 = slot4(slot6)
+	--- BLOCK #14 54-58, warpins: 3 ---
+	slot4 = slot1
+	slot2 = slot1.isMultiPlayerEnv
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #14 ---
 
-	slot4 = if slot4 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 76-81, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.info
-	slot7 = "对话图 %s 多人场景下客机不允许播放单人对话图！"
-	slot8 = slot1
+	--- BLOCK #15 59-61, warpins: 1 ---
+	slot2 = false
+	slot3 = "多人场景不允许播放单人对话图"
 
-	slot4(slot6, slot7, slot8)
+	return slot2, slot3
 
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 82-83, warpins: 2 ---
-	slot4 = false
+	--- BLOCK #16 62-63, warpins: 2 ---
+	slot2 = true
 
-	return slot4
-
+	return slot2
 	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 84-88, warpins: 5 ---
-	slot4 = slot0.dialogueCacheList
-	slot4 = #slot4
-	slot5 = 1
-	slot6 = -1
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 89-93, warpins: 2 ---
-	slot8 = slot0.dialogueCacheList
-	slot8 = slot8[slot7]
-	slot9 = slot8.dialogueId
-	--- END OF BLOCK #18 ---
-
-	if slot9 == slot1 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 94-101, warpins: 1 ---
-	slot9 = logger
-	slot11 = slot9
-	slot9 = slot9.error
-	slot12 = "对话图 %s 已经在播放列表，同时触发了相同的对话图，请排查配置！"
-	slot13 = slot1
-
-	slot9(slot11, slot12, slot13)
-
-	slot9 = false
-
-	return slot9
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 102-102, warpins: 2 ---
-	--- END OF BLOCK #20 ---
-
-	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #18
-	GO OUT TO BLOCK #21
-
-	--- BLOCK #21 103-104, warpins: 1 ---
-	slot4 = true
-
-	return slot4
-	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot22.isDialogueGraphIdValid = slot26
+slot24.canPlaySinglePlayerDialogueGraph = slot27
 
-slot26 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.playNamingDialogueGraph
@@ -4617,9 +6425,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot22.onSpaceCreated = slot26
+slot24.onSpaceCreated = slot27
 
-slot26 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playNamingDialogueGraph
@@ -4665,10 +6473,16 @@ slot26 = function(slot0)
 
 end
 
-slot22.onPlayerEnterScene = slot26
+slot24.onPlayerEnterScene = slot27
 
-slot26 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot27 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.retryReqToServerFinishRpc
+	slot4 = true
+
+	slot1(slot3, slot4)
+
 	slot3 = slot0
 	slot1 = slot0.playNamingDialogueGraph
 	slot4 = pg
@@ -4682,7 +6496,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-11, warpins: 1 ---
+	--- BLOCK #1 11-15, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot4 = slot4.space
@@ -4695,7 +6509,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #2 12-12, warpins: 2 ---
+	--- BLOCK #2 16-16, warpins: 2 ---
 	slot4 = nil
 
 	--- END OF BLOCK #2 ---
@@ -4703,7 +6517,7 @@ slot26 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-17, warpins: 2 ---
+	--- BLOCK #3 17-21, warpins: 2 ---
 	slot1(slot3, slot4)
 
 	slot1 = pg
@@ -4717,7 +6531,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #4 18-22, warpins: 1 ---
+	--- BLOCK #4 22-26, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot1 = slot1.space
@@ -4730,7 +6544,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #5 23-28, warpins: 1 ---
+	--- BLOCK #5 27-32, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot1 = slot1.space
@@ -4744,7 +6558,7 @@ slot26 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-29, warpins: 3 ---
+	--- BLOCK #6 33-33, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -4752,9 +6566,9 @@ slot26 = function(slot0)
 
 end
 
-slot22.onConnected = slot26
+slot24.onConnected = slot27
 
-slot26 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -4781,369 +6595,110 @@ slot26 = function(slot0, slot1)
 	slot2 = slot1.sceneId
 	slot3 = SysConfigData
 	slot3 = slot3.sceneInit
+
 	--- END OF BLOCK #2 ---
 
 	if slot2 ~= slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-18, warpins: 3 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
+	--- BLOCK #3 12-12, warpins: 3 ---
+	return
+
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-26, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "取名：创号取名流程未跑完 "
-	slot6 = pg
-	slot6 = slot6.me
+	--- BLOCK #4 13-17, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.playerNameFirstChanged
+
 	--- END OF BLOCK #4 ---
 
-	if slot6 ~= nil then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 27-28, warpins: 1 ---
-	slot6 = false
+	--- BLOCK #5 18-18, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-29, warpins: 1 ---
-	slot6 = true
+	--- BLOCK #6 19-25, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isDialoguePlaying
+	slot5 = DialogueGraphConst
+	slot5 = slot5.DIALOGUE_GRAPH_ID_NAMING
+	slot2 = slot2(slot4, slot5)
+
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 30-33, warpins: 2 ---
-	slot7 = pg
-	slot7 = slot7.me
-	--- END OF BLOCK #7 ---
-
-	if slot7 ~= nil then
-	JUMP TO BLOCK #8
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 34-38, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.space
+	--- BLOCK #7 26-26, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 27-33, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isDialogueGraphPrepareToPlay
+	slot5 = DialogueGraphConst
+	slot5 = slot5.DIALOGUE_GRAPH_ID_NAMING
+	slot2 = slot2(slot4, slot5)
+
 	--- END OF BLOCK #8 ---
 
-	if slot7 ~= nil then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 39-40, warpins: 2 ---
-	slot7 = false
+	--- BLOCK #9 34-34, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 41-41, warpins: 1 ---
-	slot7 = true
+	--- BLOCK #10 35-41, warpins: 2 ---
+	slot2 = LoggerManager
+	slot2 = slot2.checkLogger
+	slot4 = LoggerConst
+	slot4 = slot4.INFO
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 42-45, warpins: 2 ---
-	slot8 = pg
-	slot8 = slot8.me
-	--- END OF BLOCK #11 ---
-
-	if slot8 ~= nil then
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
 	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 46-50, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.me
-	slot8 = slot8.space
-	--- END OF BLOCK #12 ---
-
-	if slot8 ~= nil then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 51-58, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.me
-	slot8 = slot8.space
-	slot8 = slot8.sceneId
-	slot9 = SysConfigData
-	slot9 = slot9.sceneInit
-	--- END OF BLOCK #13 ---
-
-	if slot8 == slot9 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 59-60, warpins: 3 ---
-	slot8 = false
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #15 61-61, warpins: 1 ---
-	slot8 = true
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 62-62, warpins: 2 ---
-	slot2(slot4, slot5, slot6, slot7, slot8)
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 63-63, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 64-68, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.playerNameFirstChanged
-	--- END OF BLOCK #18 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #19 69-75, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #19 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #20 76-84, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "取名：已经取过名 "
-	slot6 = pg
-	slot6 = slot6.me
-	slot6 = slot6.playerNameFirstChanged
-	--- END OF BLOCK #20 ---
-
-	if slot6 ~= true then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 85-86, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
-
-
-	--- BLOCK #22 87-87, warpins: 1 ---
-	slot6 = true
-
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 88-88, warpins: 2 ---
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 89-89, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 90-96, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.isDialoguePlaying
-	slot5 = DialogueGraphConst
-	slot5 = slot5.DIALOGUE_GRAPH_ID_NAMING
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #25 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #26 97-103, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #26 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 104-110, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "取名：取名对话图正在播放 "
-	slot6 = DialogueGraphConst
-	slot6 = slot6.DIALOGUE_GRAPH_ID_NAMING
-
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 111-111, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 112-118, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.isDialogueGraphPrepareToPlay
-	slot5 = DialogueGraphConst
-	slot5 = slot5.DIALOGUE_GRAPH_ID_NAMING
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #29 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #30 119-125, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #30 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #32
-	end
-
-
-	--- BLOCK #31 126-132, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "取名：取名对话图正在待播列表 "
-	slot6 = DialogueGraphConst
-	slot6 = slot6.DIALOGUE_GRAPH_ID_NAMING
-
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #31 ---
-
-	FLOW; TARGET BLOCK #32
-
-
-	--- BLOCK #32 133-133, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #32 ---
-
-	FLOW; TARGET BLOCK #33
-
-
-	--- BLOCK #33 134-140, warpins: 2 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #33 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #34 141-147, warpins: 1 ---
+	--- BLOCK #11 42-48, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.info
@@ -5153,12 +6708,12 @@ slot26 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #35 148-153, warpins: 2 ---
+	--- BLOCK #12 49-54, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.playDialogueGraph
 	slot5 = DialogueGraphConst
@@ -5167,15 +6722,15 @@ slot26 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot22.playNamingDialogueGraph = slot26
+slot24.playNamingDialogueGraph = slot27
 
-slot26 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopAllDialogueGraph
@@ -5192,9 +6747,9 @@ slot26 = function(slot0)
 
 end
 
-slot22.onPlayerLeaveScene = slot26
+slot24.onPlayerLeaveScene = slot27
 
-slot26 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopAllDialogueGraph
@@ -5216,93 +6771,301 @@ slot26 = function(slot0)
 
 end
 
-slot22.onClear = slot26
+slot24.onClear = slot27
 
-slot26 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot27 = function(slot0)
+	--- BLOCK #0 1-72, warpins: 1 ---
+	slot1 = SafeCallback
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.topLogo
+	slot3 = slot3.unRegisterGlobalVisibleData
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.topLogo
+	slot5 = UIConst
+	slot5 = slot5.TOPLOGO_VISIBLE_KEY
+	slot5 = slot5.DIALOGUE_GRAPH
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = SafeCallback
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.restoreAllUIByCustomKey
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot5 = UIConst
+	slot5 = slot5.UI_HIDE_KEY
+	slot5 = slot5.DIALOAGUE_GRAPH
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = SafeCallback
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.interactionSignSystem
+	slot3 = slot3.setSignVisible
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.interactionSignSystem
+	slot5 = InteractionSignSystem
+	slot5 = slot5.HIDE_KEY
+	slot5 = slot5.DIALOGUE_GRAPH
+	slot6 = true
+
+	slot1(slot3, slot4, slot5, slot6)
+
+	slot1 = SafeCallback
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.markShare
+	slot3 = slot3.setForceHide
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.markShare
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.markShare
+	slot5 = slot5.FORCE_HIDE_SOURCE
+	slot5 = slot5.Dialogue
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.markShare
+	slot6 = slot6.FORCE_HIDE_SCOPE
+	slot6 = slot6.None
+
+	slot1(slot3, slot4, slot5, slot6)
+
+	slot1 = Utils
+	slot1 = slot1.setSpaceFollowAvailable
+	slot3 = ClientConst
+	slot3 = slot3.DISABLE_SPACE_FOLLOW_KEY
+	slot3 = slot3.DIALOGUE_GRAPH
+	slot4 = true
+
+	slot1(slot3, slot4)
+
 	slot1 = Utils
 	slot1 = slot1.tableIsEmptyOrNil
-	slot3 = slot0.hidePlayerHubData
+	slot3 = slot0.dialogueRunningList
 	slot1 = slot1(slot3)
+	slot1 = not slot1
+	slot2 = pairs
+	slot4 = slot0.dialogueRunningList
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 7-15, warpins: 1 ---
-	slot1 = facade
-	slot3 = slot1
-	slot1 = slot1.sendMsgToUI
-	slot4 = MessageName
-	slot4 = slot4.UI_ON_SET_TOPLOGO_COMPONENT_VISIBLE
-	slot5 = m_createDialogueGraphPlayerHubVisibleData
-	slot7 = true
-	MULTRES = slot5(slot7)
+	--- BLOCK #1 73-78, warpins: 1 ---
+	slot6 = SafeCallback
+	slot8 = slot0.setBlockEvent
+	slot9 = slot0
+	slot10 = slot5
+	slot11 = false
 
-	slot1(slot3, slot4, MULTRES)
+	slot6(slot8, slot9, slot10, slot11)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-54, warpins: 2 ---
-	slot1 = {}
-	slot0.dialogueCacheList = slot1
-	slot1 = {}
-	slot0.dialogueRunningList = slot1
-	slot1 = {}
-	slot0.hideAllUIData = slot1
-	slot1 = {}
-	slot0.hideTopLogoData = slot1
-	slot1 = {}
-	slot0.hidePlayerHubData = slot1
-	slot1 = {}
-	slot0.hideEntitiesData = slot1
-	slot1 = {}
-	slot0.hideInteractionSignData = slot1
-	slot1 = {}
-	slot0.dialogueStateConflictKeys = slot1
-	slot1 = false
-	slot0.isEnterDialogueConflict = slot1
-	slot1 = {}
-	slot0.disableSpaceFollowData = slot1
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.topLogo
-	slot3 = slot1
-	slot1 = slot1.unRegisterGlobalVisibleData
-	slot4 = UIConst
-	slot4 = slot4.TOPLOGO_VISIBLE_KEY
-	slot4 = slot4.DIALOGUE_GRAPH
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.topLogo
-	slot3 = slot1
-	slot1 = slot1.unRegisterGlobalVisibleData
-	slot4 = UIConst
-	slot4 = slot4.TOPLOGO_VISIBLE_KEY
-	slot4 = slot4.DIALOGUE_GRAPH_PLAYERHUB
-
-	slot1(slot3, slot4)
-
-	return
+	--- BLOCK #2 79-80, warpins: 2 ---
 	--- END OF BLOCK #2 ---
+
+	for slot5 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 81-90, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getStateData
+	slot5 = DialogueStateKey
+	slot5 = slot5.AMBIENT_INTENSITY
+	slot2 = slot2(slot4, slot5)
+	slot3 = next
+	slot5 = slot2
+	slot3, slot4 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 91-100, warpins: 1 ---
+	slot5 = SafeCallback
+	slot7 = DialogueGraphUtils
+	slot7 = slot7.restoreAmbientIntensity
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot5 = slot0.stateData
+	slot6 = DialogueStateKey
+	slot6 = slot6.AMBIENT_INTENSITY
+	slot7 = nil
+	slot5[slot6] = slot7
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 101-111, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.getStateData
+	slot8 = DialogueStateKey
+	slot8 = slot8.HIDE_ENTITIES
+	slot5 = slot5(slot7, slot8)
+	slot6 = Utils
+	slot6 = slot6.tableIsEmptyOrNil
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 112-115, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	--- END OF BLOCK #6 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 116-126, warpins: 1 ---
+	slot6 = SafeCallback
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.setCurPetVisible
+	slot9 = pg
+	slot9 = slot9.me
+	slot10 = ClientConst
+	slot10 = slot10.MODEL_VISIBLE_KEY
+	slot10 = slot10.DIALOGUE_GRAPH
+	slot11 = true
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 127-143, warpins: 2 ---
+	slot6 = SafeCallback
+	slot8 = ClientUtils
+	slot8 = slot8.SetAllPlayerVisible
+	slot9 = ClientConst
+	slot9 = slot9.MODEL_VISIBLE_KEY
+	slot9 = slot9.DIALOGUE_GRAPH
+	slot10 = true
+	slot11 = true
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = SafeCallback
+	slot8 = ClientUtils
+	slot8 = slot8.SetAllPuppetVisible
+	slot9 = ClientConst
+	slot9 = slot9.MODEL_VISIBLE_KEY
+	slot9 = slot9.DIALOGUE_GRAPH
+	slot10 = true
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 144-145, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 146-158, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.input
+	slot7 = SafeCallback
+	slot9 = slot6.enablePlayerInput
+	slot10 = slot6
+	slot11 = true
+	slot12 = HotkeyConst
+	slot12 = slot12.INPUT_BLOCK_FLAG
+	slot12 = slot12.Move
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	slot7 = false
+	slot6.lockCameraZoom = slot7
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 159-159, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot22.onClearData = slot26
+slot24.resetExternalState = slot27
 
-slot26 = function(slot0)
+slot27 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.resetExternalState
+
+	slot1(slot3)
+
+	slot1 = {}
+	slot0.dialogueCacheList = slot1
+	slot1 = {}
+	slot0.dialogueRunningList = slot1
+	slot1 = {}
+	slot0.stateData = slot1
+	slot1 = false
+	slot0.isEnterDialogueConflict = slot1
+	slot1 = {}
+	slot0.pendingFinishRpcList = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot24.onClearData = slot27
+
+slot27 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.onClear
@@ -5316,9 +7079,116 @@ slot26 = function(slot0)
 
 end
 
-slot22.onDestroy = slot26
+slot24.onDestroy = slot27
 
-return slot22
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot0.dialogueRunningList
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot7 = slot6.cacheActorInfo
+	slot7 = slot7[slot1]
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot8 = slot7.angleDelta
+	--- END OF BLOCK #2 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot8 = 0
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 2 ---
+	return slot8
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-15, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 16-19, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot0.dialogueRunningList
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 20-23, warpins: 1 ---
+	slot7 = slot6.virtualActorAngle
+	slot7 = slot7[slot1]
+
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 24-24, warpins: 1 ---
+	return slot7
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 25-26, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 27-28, warpins: 1 ---
+	slot2 = 0
+
+	return slot2
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot24.getExtraAngle = slot27
+
+return slot24
 --- END OF BLOCK #0 ---
 
 

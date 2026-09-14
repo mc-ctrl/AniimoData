@@ -1,4 +1,4 @@
---- BLOCK #0 1-103, warpins: 1 ---
+--- BLOCK #0 1-91, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Common.IDManager"
 slot0 = slot0(slot2)
@@ -23,61 +23,28 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Const.ClientConst"
 slot7 = slot7(slot9)
-slot8 = CS
-slot8 = slot8.FunPlus
-slot8 = slot8.WorldX
-slot8 = slot8.SDK
-slot8 = slot8.Platform
-slot8 = slot8.PlatformBridgeLuaFacade
-slot9 = {}
-slot10 = {
-	MissingTargetKey = "MissingTargetKey",
-	MissingTargetPlatformUserId = "MissingTargetPlatformUserId",
-	InvalidTokenType = "InvalidTokenType",
-	PlatformApiFailed = "PlatformApiFailed",
-	MissingInviterPlatformUserId = "MissingInviterPlatformUserId",
-	ConnectionStringFailed = "ConnectionStringFailed",
-	TokenFailed = "TokenFailed"
-}
-slot9.ShellInviteFailedReason = slot10
-slot10 = {}
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.MissingTargetPlatformUserId
-slot12 = "对方缺少平台ID，无法发送平台邀请。"
-slot10[slot11] = slot12
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.MissingTargetKey
-slot12 = "邀请目标信息不完整，无法发送平台邀请。"
-slot10[slot11] = slot12
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.TokenFailed
-slot12 = "平台邀请令牌获取失败，请稍后重试。"
-slot10[slot11] = slot12
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.ConnectionStringFailed
-slot12 = "平台邀请内容生成失败，请稍后重试。"
-slot10[slot11] = slot12
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.MissingInviterPlatformUserId
-slot12 = "本机缺少平台ID，无法发送平台邀请。"
-slot10[slot11] = slot12
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.PlatformApiFailed
-slot12 = "平台接口发送邀请失败，请稍后重试。"
-slot10[slot11] = slot12
-slot11 = slot9.ShellInviteFailedReason
-slot11 = slot11.InvalidTokenType
-slot12 = "平台邀请类型无效，无法发送邀请。"
-slot10[slot11] = slot12
-slot9.ShellInviteFailedTip = slot10
-slot10 = {
+slot8 = require
+slot10 = "SDK.Platform.PlatformNoticeUtils"
+slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Common.NoticeDef"
+slot9 = slot9(slot11)
+slot10 = CS
+slot10 = slot10.FunPlus
+slot10 = slot10.WorldX
+slot10 = slot10.SDK
+slot10 = slot10.Platform
+slot10 = slot10.PlatformBridgeLuaFacade
+slot11 = {}
+slot12 = {
 	ownerUserId = "",
 	initialized = false
 }
-slot11 = {}
-slot10.inFlightShellInvitesByTokenType = slot11
+slot13 = {}
+slot12.inFlightShellInvitesByTokenType = slot13
+slot11.state = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -118,6 +85,8 @@ slot11 = function()
 
 
 end
+
+slot11.isPlatformSupported = slot12
 
 slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -179,7 +148,9 @@ slot12 = function()
 
 end
 
-slot13 = function()
+slot11.supportsMultiplayerActivity = slot12
+
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -239,7 +210,9 @@ slot13 = function()
 
 end
 
-slot14 = function()
+slot11.isRuntimeReady = slot12
+
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -311,7 +284,9 @@ slot14 = function()
 
 end
 
-slot15 = function(slot0)
+slot11.getSignedInUserId = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -322,8 +297,9 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #1 3-5, warpins: 1 ---
-	slot1 = state
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.state
 	slot2 = ""
 	slot1.ownerUserId = slot2
 
@@ -332,7 +308,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
+	--- BLOCK #2 7-7, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -340,9 +316,12 @@ slot15 = function(slot0)
 
 end
 
-slot16 = function()
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot0 = getSignedInUserId
+slot11.resetPendingStateInternal = slot12
+
+slot12 = function()
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0 = PlatformShellInviteService
+	slot0 = slot0.getSignedInUserId
 	slot0 = slot0()
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -357,8 +336,9 @@ slot16 = function()
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
-	slot1 = resetPendingStateInternal
+	--- BLOCK #1 10-14, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.resetPendingStateInternal
 
 	slot1()
 
@@ -371,8 +351,9 @@ slot16 = function()
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-16, warpins: 2 ---
-	slot1 = state
+	--- BLOCK #2 15-19, warpins: 2 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.state
 	slot1 = slot1.ownerUserId
 	--- END OF BLOCK #2 ---
 
@@ -383,20 +364,22 @@ slot16 = function()
 	end
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
-	slot1 = resetPendingStateInternal
+	--- BLOCK #3 20-26, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.resetPendingStateInternal
 	slot3 = false
 
 	slot1(slot3)
 
-	slot1 = state
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.state
 	slot1.ownerUserId = slot0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-23, warpins: 2 ---
+	--- BLOCK #4 27-28, warpins: 2 ---
 	slot1 = true
 
 	return slot1
@@ -406,124 +389,26 @@ slot16 = function()
 
 end
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = pg
-	--- END OF BLOCK #0 ---
+slot11.bindSignedInUser = slot12
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #5
-	end
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformNoticeUtils
+	slot1 = slot1.showTextTipById
+	slot3 = slot0
 
+	slot1(slot3)
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 8-12, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 13-18, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 19-26, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.showTextTip
-	slot4 = slot0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 27-27, warpins: 5 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = PlatformShellInviteService
-	slot1 = slot1.ShellInviteFailedTip
-	slot1 = slot1[slot0]
-	slot2 = string
-	slot2 = slot2.isNilOrEmpty
-	slot4 = slot1
-	slot2 = slot2(slot4)
+slot11.showNoticeTip = slot12
 
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-10, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-14, warpins: 2 ---
-	slot2 = ShowCustomTip
-	slot4 = slot1
-
-	slot2(slot4)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot9.showShellInviteFailedTip = slot18
-
-slot18 = function(slot0, slot1, slot2, slot3, slot4)
+slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = logger
 	slot5 = slot5[slot0]
@@ -823,9 +708,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot9._logShellInviteIdentity = slot18
+slot11._logShellInviteIdentity = slot12
 
-slot18 = function()
+slot12 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -931,9 +816,9 @@ slot18 = function()
 
 end
 
-slot9.isShellActivityInviteDisabledByGm = slot18
+slot11.isShellActivityInviteDisabledByGm = slot12
 
-slot18 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1015,7 +900,9 @@ slot18 = function(slot0)
 
 end
 
-slot19 = function(slot0)
+slot11.resolveIdentity = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1038,8 +925,9 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-11, warpins: 2 ---
-	slot1 = resolveIdentity
+	--- BLOCK #2 7-12, warpins: 2 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.resolveIdentity
 	slot3 = slot0
 	slot1 = slot1(slot3)
 
@@ -1052,7 +940,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-12, warpins: 1 ---
+	--- BLOCK #3 13-13, warpins: 1 ---
 	return slot0
 
 	--- END OF BLOCK #3 ---
@@ -1060,7 +948,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-16, warpins: 2 ---
+	--- BLOCK #4 14-17, warpins: 2 ---
 	slot2 = {}
 	slot3 = slot1.platformFamily
 	--- END OF BLOCK #4 ---
@@ -1072,14 +960,14 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #5 17-17, warpins: 1 ---
+	--- BLOCK #5 18-18, warpins: 1 ---
 	slot3 = ""
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-21, warpins: 2 ---
+	--- BLOCK #6 19-22, warpins: 2 ---
 	slot2.platformFamily = slot3
 	slot3 = slot0.platform
 	--- END OF BLOCK #6 ---
@@ -1091,14 +979,14 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #7 22-22, warpins: 1 ---
+	--- BLOCK #7 23-23, warpins: 1 ---
 	slot3 = ""
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 23-26, warpins: 2 ---
+	--- BLOCK #8 24-27, warpins: 2 ---
 	slot2.platform = slot3
 	slot3 = slot0.os
 	--- END OF BLOCK #8 ---
@@ -1110,14 +998,14 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #9 27-27, warpins: 1 ---
+	--- BLOCK #9 28-28, warpins: 1 ---
 	slot3 = ""
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 28-33, warpins: 2 ---
+	--- BLOCK #10 29-34, warpins: 2 ---
 	slot2.os = slot3
 	slot3 = slot0.isAllowedCrossPlatform
 	slot2.isAllowedCrossPlatform = slot3
@@ -1131,14 +1019,14 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #11 34-34, warpins: 1 ---
+	--- BLOCK #11 35-35, warpins: 1 ---
 	slot3 = ""
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 35-38, warpins: 2 ---
+	--- BLOCK #12 36-39, warpins: 2 ---
 	slot2.platformUserId = slot3
 	slot3 = slot0.uid
 	--- END OF BLOCK #12 ---
@@ -1150,7 +1038,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #13 39-41, warpins: 1 ---
+	--- BLOCK #13 40-42, warpins: 1 ---
 	slot3 = slot0.playerId
 	--- END OF BLOCK #13 ---
 
@@ -1161,14 +1049,14 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #14 42-42, warpins: 1 ---
+	--- BLOCK #14 43-43, warpins: 1 ---
 	slot3 = ""
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 43-46, warpins: 3 ---
+	--- BLOCK #15 44-47, warpins: 3 ---
 	slot2.uid = slot3
 	slot3 = slot0.playerId
 	--- END OF BLOCK #15 ---
@@ -1180,7 +1068,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #16 47-49, warpins: 1 ---
+	--- BLOCK #16 48-50, warpins: 1 ---
 	slot3 = slot0.uid
 	--- END OF BLOCK #16 ---
 
@@ -1191,14 +1079,14 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #17 50-50, warpins: 1 ---
+	--- BLOCK #17 51-51, warpins: 1 ---
 	slot3 = ""
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 51-56, warpins: 3 ---
+	--- BLOCK #18 52-57, warpins: 3 ---
 	slot2.playerId = slot3
 	slot3 = slot0.hasMappedGameUid
 	slot2.hasMappedGameUid = slot3
@@ -1212,7 +1100,9 @@ slot19 = function(slot0)
 
 end
 
-slot20 = function(slot0)
+slot11.buildNormalizedPlayerInfo = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1296,7 +1186,9 @@ slot20 = function(slot0)
 
 end
 
-slot21 = function(slot0)
+slot11.resolveGameUid = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = PlatformIdentityUtils
 	slot1 = slot1.resolvePlatformUserId
@@ -1337,8 +1229,9 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 19-27, warpins: 2 ---
-	slot3 = resolveGameUid
+	--- BLOCK #3 19-28, warpins: 2 ---
+	slot3 = PlatformShellInviteService
+	slot3 = slot3.resolveGameUid
 	slot5 = slot0
 	slot3 = slot3(slot5)
 	slot4 = string
@@ -1354,7 +1247,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #4 28-33, warpins: 1 ---
+	--- BLOCK #4 29-34, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.format
 	slot6 = "p:%s:%s:g:%s"
@@ -1368,14 +1261,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #5 34-34, warpins: 1 ---
+	--- BLOCK #5 35-35, warpins: 1 ---
 	slot9 = ""
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-38, warpins: 2 ---
+	--- BLOCK #6 36-39, warpins: 2 ---
 	slot7 = slot7(slot9)
 	slot8 = tostring
 	--- END OF BLOCK #6 ---
@@ -1387,14 +1280,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #7 39-39, warpins: 1 ---
+	--- BLOCK #7 40-40, warpins: 1 ---
 	slot10 = ""
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 40-42, warpins: 2 ---
+	--- BLOCK #8 41-43, warpins: 2 ---
 	slot8 = slot8(slot10)
 	slot9 = slot3
 
@@ -1405,7 +1298,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-48, warpins: 2 ---
+	--- BLOCK #9 44-49, warpins: 2 ---
 	slot4 = string
 	slot4 = slot4.format
 	slot6 = "p:%s:%s"
@@ -1419,14 +1312,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #10 49-49, warpins: 1 ---
+	--- BLOCK #10 50-50, warpins: 1 ---
 	slot9 = ""
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 50-53, warpins: 2 ---
+	--- BLOCK #11 51-54, warpins: 2 ---
 	slot7 = slot7(slot9)
 	slot8 = tostring
 	--- END OF BLOCK #11 ---
@@ -1438,14 +1331,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #12 54-54, warpins: 1 ---
+	--- BLOCK #12 55-55, warpins: 1 ---
 	slot10 = ""
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 55-56, warpins: 2 ---
+	--- BLOCK #13 56-57, warpins: 2 ---
 	MULTRES = slot8(slot10)
 
 	return slot4(slot6, slot7, MULTRES)
@@ -1455,7 +1348,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 57-58, warpins: 2 ---
+	--- BLOCK #14 58-59, warpins: 2 ---
 	slot2 = ""
 
 	return slot2
@@ -1465,9 +1358,12 @@ slot21 = function(slot0)
 
 end
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = isPlatformSupported
+slot11.resolveTargetKey = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.isPlatformSupported
 	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
@@ -1478,8 +1374,9 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
-	slot1 = supportsMultiplayerActivity
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.supportsMultiplayerActivity
 	slot1 = slot1()
 
 	--- END OF BLOCK #1 ---
@@ -1487,7 +1384,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-7, warpins: 2 ---
+	--- BLOCK #2 9-9, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #2 ---
 
@@ -1495,11 +1392,12 @@ slot22 = function(slot0)
 
 end
 
-slot9.isSupported = slot22
+slot11.isSupported = slot12
 
-slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = state
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = PlatformShellInviteService
+	slot2 = slot2.state
 	slot2 = slot2.initialized
 	--- END OF BLOCK #0 ---
 
@@ -1510,7 +1408,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 6-7, warpins: 1 ---
 	slot2 = true
 
 	return slot2
@@ -1520,7 +1418,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-11, warpins: 2 ---
+	--- BLOCK #2 8-12, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.isSupported
 	slot2 = slot2(slot4)
@@ -1533,7 +1431,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 12-13, warpins: 1 ---
+	--- BLOCK #3 13-14, warpins: 1 ---
 	slot2 = false
 
 	return slot2
@@ -1543,7 +1441,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-15, warpins: 2 ---
+	--- BLOCK #4 15-16, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	if slot1 ~= true then
@@ -1553,8 +1451,9 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 16-19, warpins: 1 ---
-	slot2 = isRuntimeReady
+	--- BLOCK #5 17-21, warpins: 1 ---
+	slot2 = PlatformShellInviteService
+	slot2 = slot2.isRuntimeReady
 	slot2 = slot2()
 	--- END OF BLOCK #5 ---
 
@@ -1565,7 +1464,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 20-21, warpins: 1 ---
+	--- BLOCK #6 22-23, warpins: 1 ---
 	slot2 = false
 
 	return slot2
@@ -1575,8 +1474,9 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 22-25, warpins: 3 ---
-	slot2 = bindSignedInUser
+	--- BLOCK #7 24-28, warpins: 3 ---
+	slot2 = PlatformShellInviteService
+	slot2 = slot2.bindSignedInUser
 	slot2 = slot2()
 	--- END OF BLOCK #7 ---
 
@@ -1587,7 +1487,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 26-27, warpins: 1 ---
+	--- BLOCK #8 29-30, warpins: 1 ---
 	slot2 = false
 
 	return slot2
@@ -1597,8 +1497,9 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 28-37, warpins: 2 ---
-	slot2 = state
+	--- BLOCK #9 31-41, warpins: 2 ---
+	slot2 = PlatformShellInviteService
+	slot2 = slot2.state
 	slot3 = true
 	slot2.initialized = slot3
 	slot2 = logger
@@ -1617,11 +1518,12 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot9.init = slot22
+slot11.init = slot12
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = state
+slot12 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.state
 	slot2 = false
 	slot1.initialized = slot2
 	slot3 = slot0
@@ -1636,11 +1538,12 @@ slot22 = function(slot0)
 
 end
 
-slot9.shutdown = slot22
+slot11.shutdown = slot12
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = resetPendingStateInternal
+slot12 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PlatformShellInviteService
+	slot1 = slot1.resetPendingStateInternal
 
 	slot1()
 
@@ -1651,9 +1554,9 @@ slot22 = function(slot0)
 
 end
 
-slot9.resetPendingState = slot22
+slot11.resetPendingState = slot12
 
-slot22 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -1734,7 +1637,9 @@ slot22 = function(slot0)
 
 end
 
-slot23 = function(slot0)
+slot11.isKnownPlatformFamily = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PlatformIdentityUtils
 	slot1 = slot1.getCurrentPlatformFamily
@@ -1760,7 +1665,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-25, warpins: 2 ---
+	--- BLOCK #2 12-26, warpins: 2 ---
 	slot3 = PlatformIdentityUtils
 	slot3 = slot3.resolvePlatformUserId
 	slot5 = slot0
@@ -1770,7 +1675,8 @@ slot23 = function(slot0)
 	slot6 = slot3
 	slot4 = slot4(slot6)
 	slot4 = not slot4
-	slot5 = isKnownPlatformFamily
+	slot5 = PlatformShellInviteService
+	slot5 = slot5.isKnownPlatformFamily
 	slot7 = slot1
 	slot5 = slot5(slot7)
 	--- END OF BLOCK #2 ---
@@ -1782,8 +1688,9 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #3 26-30, warpins: 1 ---
-	slot5 = isKnownPlatformFamily
+	--- BLOCK #3 27-32, warpins: 1 ---
+	slot5 = PlatformShellInviteService
+	slot5 = slot5.isKnownPlatformFamily
 	slot7 = slot2
 	slot5 = slot5(slot7)
 	--- END OF BLOCK #3 ---
@@ -1795,7 +1702,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #4 31-32, warpins: 1 ---
+	--- BLOCK #4 33-34, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	if slot1 ~= slot2 then
@@ -1805,21 +1712,21 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #5 33-34, warpins: 1 ---
+	--- BLOCK #5 35-36, warpins: 1 ---
 	slot5 = false
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 35-35, warpins: 1 ---
+	--- BLOCK #6 37-37, warpins: 1 ---
 	slot5 = true
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 36-37, warpins: 4 ---
+	--- BLOCK #7 38-39, warpins: 4 ---
 	--- END OF BLOCK #7 ---
 
 	if slot5 ~= true then
@@ -1829,21 +1736,21 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #8 38-39, warpins: 1 ---
+	--- BLOCK #8 40-41, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 40-40, warpins: 1 ---
+	--- BLOCK #9 42-42, warpins: 1 ---
 	slot6 = true
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 41-46, warpins: 2 ---
+	--- BLOCK #10 43-48, warpins: 2 ---
 	slot7 = {}
 	slot7.currentFamily = slot1
 	slot7.targetFamily = slot2
@@ -1857,7 +1764,9 @@ slot23 = function(slot0)
 
 end
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot11.isSamePlatformFamilyShellTarget = slot12
+
+slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1868,8 +1777,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot5 = state
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot5 = PlatformShellInviteService
+	slot5 = slot5.state
 	slot5 = slot5.inFlightShellInvitesByTokenType
 	slot5 = slot5[slot0]
 	--- END OF BLOCK #1 ---
@@ -1881,14 +1791,14 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #2 9-9, warpins: 2 ---
 	slot5 = nil
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-14, warpins: 2 ---
+	--- BLOCK #3 10-15, warpins: 2 ---
 	slot6 = PlatformShellTokenUtils
 	slot6 = slot6.canBuildConnectionString
 	slot8 = slot0
@@ -1902,7 +1812,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #4 15-24, warpins: 1 ---
+	--- BLOCK #4 16-25, warpins: 1 ---
 	slot6 = logger
 	slot8 = slot6
 	slot6 = slot6.warn
@@ -1922,7 +1832,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #5 25-26, warpins: 1 ---
+	--- BLOCK #5 26-27, warpins: 1 ---
 	slot6 = nil
 	slot5[slot1] = slot6
 	--- END OF BLOCK #5 ---
@@ -1930,22 +1840,15 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 27-33, warpins: 2 ---
-	slot6 = PlatformShellInviteService
-	slot6 = slot6.showShellInviteFailedTip
-	slot8 = PlatformShellInviteService
-	slot8 = slot8.ShellInviteFailedReason
-	slot8 = slot8.InvalidTokenType
-
-	slot6(slot8)
-
+	--- BLOCK #6 28-28, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #7 34-41, warpins: 1 ---
-	slot6 = getSignedInUserId
+	--- BLOCK #7 29-37, warpins: 1 ---
+	slot6 = PlatformShellInviteService
+	slot6 = slot6.getSignedInUserId
 	slot6 = slot6()
 	slot7 = string
 	slot7 = slot7.isNilOrEmpty
@@ -1960,7 +1863,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #8 42-51, warpins: 1 ---
+	--- BLOCK #8 38-47, warpins: 1 ---
 	slot7 = logger
 	slot9 = slot7
 	slot7 = slot7.warn
@@ -1980,7 +1883,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #9 52-53, warpins: 1 ---
+	--- BLOCK #9 48-49, warpins: 1 ---
 	slot7 = nil
 	slot5[slot1] = slot7
 	--- END OF BLOCK #9 ---
@@ -1988,21 +1891,13 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 54-60, warpins: 2 ---
-	slot7 = PlatformShellInviteService
-	slot7 = slot7.showShellInviteFailedTip
-	slot9 = PlatformShellInviteService
-	slot9 = slot9.ShellInviteFailedReason
-	slot9 = slot9.MissingInviterPlatformUserId
-
-	slot7(slot9)
-
+	--- BLOCK #10 50-50, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #11 61-65, warpins: 1 ---
+	--- BLOCK #11 51-55, warpins: 1 ---
 	slot7 = type
 	slot9 = slot4
 	slot7 = slot7(slot9)
@@ -2015,7 +1910,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #12 66-67, warpins: 1 ---
+	--- BLOCK #12 56-57, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
 	slot4 = if not slot4 then
@@ -2025,14 +1920,14 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #13 68-68, warpins: 2 ---
+	--- BLOCK #13 58-58, warpins: 2 ---
 	slot4 = nil
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 69-81, warpins: 2 ---
+	--- BLOCK #14 59-71, warpins: 2 ---
 	slot7 = IDManager
 	slot7 = slot7.genStrID
 	slot7 = slot7()
@@ -2053,7 +1948,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #15 82-85, warpins: 1 ---
+	--- BLOCK #15 72-75, warpins: 1 ---
 	slot14 = pg
 	slot14 = slot14.me
 	--- END OF BLOCK #15 ---
@@ -2065,7 +1960,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #16 86-90, warpins: 1 ---
+	--- BLOCK #16 76-80, warpins: 1 ---
 	slot14 = pg
 	slot14 = slot14.me
 	slot14 = slot14.uid
@@ -2078,14 +1973,14 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #17 91-91, warpins: 3 ---
+	--- BLOCK #17 81-81, warpins: 3 ---
 	slot14 = ""
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 92-98, warpins: 2 ---
+	--- BLOCK #18 82-88, warpins: 2 ---
 	slot12 = slot12(slot14)
 	slot11.inviterGameUid = slot12
 	slot11.inviteToken = slot2
@@ -2100,7 +1995,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #19 99-101, warpins: 1 ---
+	--- BLOCK #19 89-91, warpins: 1 ---
 	slot12 = slot4.inviteWorldType
 	--- END OF BLOCK #19 ---
 
@@ -2111,14 +2006,14 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #20 102-102, warpins: 2 ---
+	--- BLOCK #20 92-92, warpins: 2 ---
 	slot12 = ""
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 103-105, warpins: 2 ---
+	--- BLOCK #21 93-95, warpins: 2 ---
 	slot11.inviteWorldType = slot12
 	--- END OF BLOCK #21 ---
 
@@ -2129,7 +2024,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #22 106-108, warpins: 1 ---
+	--- BLOCK #22 96-98, warpins: 1 ---
 	slot12 = slot4.homeCampInviteId
 	--- END OF BLOCK #22 ---
 
@@ -2140,14 +2035,14 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #23 109-109, warpins: 2 ---
+	--- BLOCK #23 99-99, warpins: 2 ---
 	slot12 = ""
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 110-117, warpins: 2 ---
+	--- BLOCK #24 100-107, warpins: 2 ---
 	slot11.homeCampInviteId = slot12
 	slot8 = slot8(slot10, slot11)
 	slot9 = string
@@ -2163,7 +2058,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #25 118-127, warpins: 1 ---
+	--- BLOCK #25 108-117, warpins: 1 ---
 	slot9 = logger
 	slot11 = slot9
 	slot9 = slot9.warn
@@ -2183,7 +2078,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #26 128-129, warpins: 1 ---
+	--- BLOCK #26 118-119, warpins: 1 ---
 	slot9 = nil
 	slot5[slot1] = slot9
 	--- END OF BLOCK #26 ---
@@ -2191,21 +2086,13 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 130-136, warpins: 2 ---
-	slot9 = PlatformShellInviteService
-	slot9 = slot9.showShellInviteFailedTip
-	slot11 = PlatformShellInviteService
-	slot11 = slot11.ShellInviteFailedReason
-	slot11 = slot11.ConnectionStringFailed
-
-	slot9(slot11)
-
+	--- BLOCK #27 120-120, warpins: 2 ---
 	--- END OF BLOCK #27 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #28 137-147, warpins: 1 ---
+	--- BLOCK #28 121-131, warpins: 1 ---
 	slot9 = PlatformBridgeLuaFacade
 	slot9 = slot9.SendMultiplayerActivityInvite
 	slot11 = slot1
@@ -2236,17 +2123,56 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 8-9, warpins: 2 ---
+		--- BLOCK #2 8-13, warpins: 2 ---
+		slot3 = tokenType
+		slot4 = PlatformShellConst
+		slot4 = slot4.TokenType
+		slot4 = slot4.InviteEnterPhotoWorld
 		--- END OF BLOCK #2 ---
 
-		slot0 = if not slot0 then
+		if slot3 == slot4 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 10-30, warpins: 1 ---
+		--- BLOCK #3 14-30, warpins: 1 ---
+		slot3 = logger
+		slot5 = slot3
+		slot3 = slot3.info
+		slot6 = "[PHOTO_SHELL] MPA send result success=%s result=%s message=%s target=%s"
+		slot7 = tostring
+		slot9 = slot0
+		slot7 = slot7(slot9)
+		slot8 = tostring
+		slot10 = slot1
+		slot8 = slot8(slot10)
+		slot9 = tostring
+		slot11 = slot2
+		slot9 = slot9(slot11)
+		slot10 = tostring
+		slot12 = targetPlatformUserId
+		MULTRES = slot10(slot12)
+
+		slot3(slot5, slot6, slot7, slot8, slot9, MULTRES)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 31-32, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 33-47, warpins: 1 ---
 		slot3 = logger
 		slot5 = slot3
 		slot3 = slot3.warn
@@ -2263,72 +2189,64 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 		slot3(slot5, slot6, slot7, slot8, MULTRES)
 
-		slot3 = PlatformShellInviteService
-		slot3 = slot3.showShellInviteFailedTip
-		slot5 = PlatformShellInviteService
-		slot5 = slot5.ShellInviteFailedReason
-		slot5 = slot5.PlatformApiFailed
-
-		slot3(slot5)
-
 		return
 
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 31-33, warpins: 2 ---
-		slot3 = pg
-		--- END OF BLOCK #4 ---
-
-		slot3 = if slot3 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #9
-		end
-
-
-		--- BLOCK #5 34-37, warpins: 1 ---
-		slot3 = pg
-		slot3 = slot3.global
 		--- END OF BLOCK #5 ---
 
-		slot3 = if slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #9
-		end
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 38-42, warpins: 1 ---
+		--- BLOCK #6 48-50, warpins: 2 ---
 		slot3 = pg
-		slot3 = slot3.global
-		slot3 = slot3.ui
 		--- END OF BLOCK #6 ---
 
 		slot3 = if slot3 then
 		JUMP TO BLOCK #7
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #7 43-48, warpins: 1 ---
+		--- BLOCK #7 51-54, warpins: 1 ---
 		slot3 = pg
 		slot3 = slot3.global
-		slot3 = slot3.ui
-		slot3 = slot3.tips
 		--- END OF BLOCK #7 ---
 
 		slot3 = if slot3 then
 		JUMP TO BLOCK #8
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #8 49-59, warpins: 1 ---
+		--- BLOCK #8 55-59, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		--- END OF BLOCK #8 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #9 60-65, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		--- END OF BLOCK #9 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 66-76, warpins: 1 ---
 		slot3 = pg
 		slot3 = slot3.global
 		slot3 = slot3.ui
@@ -2342,14 +2260,14 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 		slot3(slot5, MULTRES)
 
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #10 ---
 
-		FLOW; TARGET BLOCK #9
+		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #9 60-60, warpins: 5 ---
+		--- BLOCK #11 77-77, warpins: 5 ---
 		return
-		--- END OF BLOCK #9 ---
+		--- END OF BLOCK #11 ---
 
 
 
@@ -2363,21 +2281,21 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 148-148, warpins: 2 ---
+	--- BLOCK #29 132-132, warpins: 2 ---
 	return
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 149-149, warpins: 2 ---
+	--- BLOCK #30 133-133, warpins: 2 ---
 	return
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 150-150, warpins: 2 ---
+	--- BLOCK #31 134-134, warpins: 2 ---
 	return
 	--- END OF BLOCK #31 ---
 
@@ -2385,8 +2303,10 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot25 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot11.sendShellActivityInviteWithToken = slot12
+
+slot12 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = PlatformInviteTokenService
 	slot6 = slot4
 	slot4 = slot4.ensureToken
@@ -2421,8 +2341,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #2 12-17, warpins: 2 ---
-		slot2 = state
+		--- BLOCK #2 12-18, warpins: 2 ---
+		slot2 = PlatformShellInviteService
+		slot2 = slot2.state
 		slot2 = slot2.inFlightShellInvitesByTokenType
 		slot3 = tokenType
 		slot2 = slot2[slot3]
@@ -2435,7 +2356,7 @@ slot25 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #3 18-20, warpins: 1 ---
+		--- BLOCK #3 19-21, warpins: 1 ---
 		slot3 = targetPlatformUserId
 		slot4 = nil
 		slot2[slot3] = slot4
@@ -2444,7 +2365,7 @@ slot25 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 21-33, warpins: 2 ---
+		--- BLOCK #4 22-34, warpins: 2 ---
 		slot3 = logger
 		slot5 = slot3
 		slot3 = slot3.warn
@@ -2465,25 +2386,17 @@ slot25 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #5 34-34, warpins: 1 ---
+		--- BLOCK #5 35-35, warpins: 1 ---
 		slot11 = "empty_token"
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 35-43, warpins: 2 ---
+		--- BLOCK #6 36-38, warpins: 2 ---
 		MULTRES = slot9(slot11)
 
 		slot3(slot5, slot6, slot7, slot8, MULTRES)
-
-		slot3 = PlatformShellInviteService
-		slot3 = slot3.showShellInviteFailedTip
-		slot5 = PlatformShellInviteService
-		slot5 = slot5.ShellInviteFailedReason
-		slot5 = slot5.TokenFailed
-
-		slot3(slot5)
 
 		return
 
@@ -2492,8 +2405,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 44-51, warpins: 2 ---
-		slot2 = sendShellActivityInviteWithToken
+		--- BLOCK #7 39-47, warpins: 2 ---
+		slot2 = PlatformShellInviteService
+		slot2 = slot2.sendShellActivityInviteWithToken
 		slot4 = tokenType
 		slot5 = targetPlatformUserId
 		slot6 = slot0
@@ -2509,20 +2423,57 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot10 = false
+	--- END OF BLOCK #0 ---
 
+	slot10 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot10 = slot3.forceTokenRenew
+	--- END OF BLOCK #1 ---
+
+	if slot10 ~= true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 1 ---
+	slot10 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot10 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-17, warpins: 3 ---
 	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot26 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot4 = isPlatformSupported
+slot11.dispatchShellActivityPublish = slot12
+
+slot12 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = PlatformShellInviteService
+	slot4 = slot4.isPlatformSupported
 	slot4 = slot4()
 	--- END OF BLOCK #0 ---
 
@@ -2533,8 +2484,9 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 5-8, warpins: 1 ---
-	slot4 = supportsMultiplayerActivity
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot4 = PlatformShellInviteService
+	slot4 = slot4.supportsMultiplayerActivity
 	slot4 = slot4()
 	--- END OF BLOCK #1 ---
 
@@ -2545,7 +2497,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 9-10, warpins: 2 ---
+	--- BLOCK #2 11-12, warpins: 2 ---
 	slot4 = false
 
 	return slot4
@@ -2555,7 +2507,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-15, warpins: 2 ---
+	--- BLOCK #3 13-17, warpins: 2 ---
 	slot4 = PlatformShellInviteService
 	slot4 = slot4.isShellActivityInviteDisabledByGm
 	slot4 = slot4()
@@ -2568,7 +2520,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 16-25, warpins: 1 ---
+	--- BLOCK #4 18-27, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.info
@@ -2588,7 +2540,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 26-31, warpins: 2 ---
+	--- BLOCK #5 28-33, warpins: 2 ---
 	slot4 = PlatformShellTokenUtils
 	slot4 = slot4.canBuildConnectionString
 	slot6 = slot1
@@ -2602,7 +2554,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 32-41, warpins: 1 ---
+	--- BLOCK #6 34-43, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.warn
@@ -2622,7 +2574,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 42-47, warpins: 2 ---
+	--- BLOCK #7 44-49, warpins: 2 ---
 	slot4 = PlatformShellConst
 	slot4 = slot4.isOpenTargetTokenType
 	slot6 = slot1
@@ -2636,7 +2588,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 48-57, warpins: 1 ---
+	--- BLOCK #8 50-59, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.warn
@@ -2656,32 +2608,38 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 58-68, warpins: 2 ---
-	slot4 = buildNormalizedPlayerInfo
+	--- BLOCK #9 60-76, warpins: 2 ---
+	slot4 = PlatformShellInviteService
+	slot4 = slot4.buildNormalizedPlayerInfo
 	slot6 = slot2
 	slot4 = slot4(slot6)
-	slot5 = isSamePlatformFamilyShellTarget
+	slot5 = PlatformShellInviteService
+	slot5 = slot5.isSamePlatformFamilyShellTarget
 	slot7 = slot4
 	slot5, slot6 = slot5(slot7)
-	slot7 = resolveTargetKey
+	slot7 = PlatformShellInviteService
+	slot7 = slot7.resolveTargetKey
 	slot9 = slot4
 	slot7 = slot7(slot9)
+	slot8 = PlatformShellConst
+	slot8 = slot8.TokenType
+	slot8 = slot8.InviteEnterPhotoWorld
 	--- END OF BLOCK #9 ---
 
-	slot5 = if not slot5 then
+	if slot1 == slot8 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 69-85, warpins: 1 ---
+	--- BLOCK #10 77-93, warpins: 1 ---
 	slot8 = logger
 	slot10 = slot8
 	slot8 = slot8.info
-	slot11 = "Shell invite fallback: tokenType=%s samePlatformFamilyOnly currentFamily=%s targetFamily=%s hasPlatformUserId=%s"
+	slot11 = "[PHOTO_SHELL] sendShellActivityInvite sameFamily=%s currentFamily=%s targetFamily=%s hasPlatformUserId=%s targetKey=%s"
 	slot12 = tostring
-	slot14 = slot1
+	slot14 = slot5
 	slot12 = slot12(slot14)
 	slot13 = tostring
 	slot15 = slot6.currentFamily
@@ -2700,21 +2658,83 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #11 86-87, warpins: 1 ---
+	--- BLOCK #11 94-95, warpins: 1 ---
 	slot17 = false
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 88-88, warpins: 1 ---
+	--- BLOCK #12 96-96, warpins: 1 ---
 	slot17 = true
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 89-92, warpins: 2 ---
+	--- BLOCK #13 97-101, warpins: 2 ---
+	slot15 = slot15(slot17)
+	slot16 = tostring
+	slot18 = slot7
+	MULTRES = slot16(slot18)
+
+	slot8(slot10, slot11, slot12, slot13, slot14, slot15, MULTRES)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 102-103, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #15 104-120, warpins: 1 ---
+	slot8 = logger
+	slot10 = slot8
+	slot8 = slot8.info
+	slot11 = "Shell invite fallback: tokenType=%s samePlatformFamilyOnly currentFamily=%s targetFamily=%s hasPlatformUserId=%s"
+	slot12 = tostring
+	slot14 = slot1
+	slot12 = slot12(slot14)
+	slot13 = tostring
+	slot15 = slot6.currentFamily
+	slot13 = slot13(slot15)
+	slot14 = tostring
+	slot16 = slot6.targetFamily
+	slot14 = slot14(slot16)
+	slot15 = tostring
+	slot17 = slot6.hasPlatformUserId
+	--- END OF BLOCK #15 ---
+
+	if slot17 ~= true then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 121-122, warpins: 1 ---
+	slot17 = false
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 123-123, warpins: 1 ---
+	slot17 = true
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 124-127, warpins: 2 ---
 	MULTRES = slot15(slot17)
 
 	slot8(slot10, slot11, slot12, slot13, slot14, MULTRES)
@@ -2723,12 +2743,12 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 	return slot8
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #14 93-102, warpins: 2 ---
+	--- BLOCK #19 128-137, warpins: 2 ---
 	slot8 = PlatformIdentityUtils
 	slot8 = slot8.resolvePlatformUserId
 	slot10 = slot4
@@ -2737,16 +2757,16 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	slot9 = slot9.isNilOrEmpty
 	slot11 = slot8
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #19 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #15 103-118, warpins: 1 ---
+	--- BLOCK #20 138-147, warpins: 1 ---
 	slot9 = PlatformShellInviteService
 	slot9 = slot9._logShellInviteIdentity
 	slot11 = "error"
@@ -2757,38 +2777,30 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	slot9 = PlatformShellInviteService
-	slot9 = slot9.showShellInviteFailedTip
-	slot11 = PlatformShellInviteService
-	slot11 = slot11.ShellInviteFailedReason
-	slot11 = slot11.MissingTargetPlatformUserId
-
-	slot9(slot11)
-
 	slot9 = true
 
 	return slot9
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #16 119-124, warpins: 2 ---
+	--- BLOCK #21 148-153, warpins: 2 ---
 	slot9 = string
 	slot9 = slot9.isNilOrEmpty
 	slot11 = slot7
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #21 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #17 125-140, warpins: 1 ---
+	--- BLOCK #22 154-163, warpins: 1 ---
 	slot9 = PlatformShellInviteService
 	slot9 = slot9._logShellInviteIdentity
 	slot11 = "error"
@@ -2799,24 +2811,16 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	slot9 = PlatformShellInviteService
-	slot9 = slot9.showShellInviteFailedTip
-	slot11 = PlatformShellInviteService
-	slot11 = slot11.ShellInviteFailedReason
-	slot11 = slot11.MissingTargetKey
-
-	slot9(slot11)
-
 	slot9 = true
 
 	return slot9
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #18 141-155, warpins: 2 ---
+	--- BLOCK #23 164-180, warpins: 2 ---
 	slot9 = PlatformShellInviteService
 	slot9 = slot9._logShellInviteIdentity
 	slot11 = "info"
@@ -2827,43 +2831,46 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	slot9 = state
+	slot9 = PlatformShellInviteService
+	slot9 = slot9.state
 	slot9 = slot9.inFlightShellInvitesByTokenType
-	slot10 = state
+	slot10 = PlatformShellInviteService
+	slot10 = slot10.state
 	slot10 = slot10.inFlightShellInvitesByTokenType
 	slot10 = slot10[slot1]
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #23 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #19 156-156, warpins: 1 ---
+	--- BLOCK #24 181-181, warpins: 1 ---
 	slot10 = {}
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #20 157-163, warpins: 2 ---
+	--- BLOCK #25 182-189, warpins: 2 ---
 	slot9[slot1] = slot10
-	slot9 = state
+	slot9 = PlatformShellInviteService
+	slot9 = slot9.state
 	slot9 = slot9.inFlightShellInvitesByTokenType
 	slot9 = slot9[slot1]
 	slot9 = slot9[slot8]
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #25 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #21 164-179, warpins: 1 ---
+	--- BLOCK #26 190-202, warpins: 1 ---
 	slot9 = logger
 	slot11 = slot9
 	slot9 = slot9.debug
@@ -2877,27 +2884,24 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 	slot9(slot11, slot12, slot13, MULTRES)
 
-	slot9 = ShowCustomTip
-	slot11 = "请求过于频繁,请稍后"
-
-	slot9(slot11)
-
 	slot9 = true
 
 	return slot9
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #22 180-192, warpins: 2 ---
-	slot9 = state
+	--- BLOCK #27 203-217, warpins: 2 ---
+	slot9 = PlatformShellInviteService
+	slot9 = slot9.state
 	slot9 = slot9.inFlightShellInvitesByTokenType
 	slot9 = slot9[slot1]
 	slot10 = true
 	slot9[slot8] = slot10
-	slot9 = dispatchShellActivityPublish
+	slot9 = PlatformShellInviteService
+	slot9 = slot9.dispatchShellActivityPublish
 	slot11 = slot1
 	slot12 = slot8
 	slot13 = slot7
@@ -2908,15 +2912,15 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	slot9 = true
 
 	return slot9
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #27 ---
 
 
 
 end
 
-slot9.sendShellActivityInvite = slot26
+slot11.sendShellActivityInvite = slot12
 
-slot26 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
@@ -2941,7 +2945,33 @@ slot26 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-17, warpins: 2 ---
+	--- BLOCK #2 9-16, warpins: 2 ---
+	slot3 = PlatformIdentityUtils
+	slot3 = slot3.getCurrentPlatformFamily
+	slot3 = slot3()
+	slot4 = PlatformIdentityUtils
+	slot4 = slot4.Family
+	slot4 = slot4.PlayStation
+	--- END OF BLOCK #2 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-27, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.sendShellActivityInvite
 	slot6 = PlatformShellConst
@@ -2952,15 +2982,15 @@ slot26 = function(slot0, slot1, slot2)
 	slot8.homeCampInviteId = slot2
 
 	return slot3(slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot9.sendHomeCampInvite = slot26
+slot11.sendHomeCampInvite = slot12
 
-slot26 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.sendShellActivityInvite
@@ -2968,7 +2998,9 @@ slot26 = function(slot0, slot1)
 	slot5 = slot5.TokenType
 	slot5 = slot5.InviteExchangePet
 	slot6 = slot1
-	slot7 = {}
+	slot7 = {
+		forceTokenRenew = true
+	}
 	slot8 = Const
 	slot8 = slot8.InviteWorldType
 	slot8 = slot8.EXCHANGE_PET
@@ -2981,9 +3013,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot9.sendPetExchangeInvite = slot26
+slot11.sendPetExchangeInvite = slot12
 
-return slot9
+return slot11
 --- END OF BLOCK #0 ---
 
 

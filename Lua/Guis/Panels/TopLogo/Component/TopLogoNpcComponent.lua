@@ -1,40 +1,94 @@
---- BLOCK #0 1-90, warpins: 1 ---
+--- BLOCK #0 1-117, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.Utils.Utils"
+slot3 = "Core.Timer.TimerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.EventConst"
+slot4 = "Common.Utils.Utils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.UIConst"
+slot5 = "Const.EventConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.ClientConst"
+slot6 = "Const.UIConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.TopLogoConst"
+slot7 = "Const.ClientConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "GameApp.Quest.QuestUtils"
+slot8 = "Const.TopLogoConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.sys_config_data"
+slot9 = "GameApp.Quest.QuestUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.Panels.TopLogo.Component.TopLogoItemComponent"
+slot10 = "Data.sys_config_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.ClientTextUtils"
+slot11 = "Guis.Panels.TopLogo.Component.TopLogoItemComponent"
 slot9 = slot9(slot11)
-slot10 = slot0.LightClass
-slot12 = "TopLogoNpcComponent"
-slot13 = slot8
-slot10 = slot10(slot12, slot13)
+slot10 = require
+slot12 = "Utils.ClientTextUtils"
+slot10 = slot10(slot12)
+slot11 = slot0.LightClass
+slot13 = "TopLogoNpcComponent"
+slot14 = slot9
+slot11 = slot11(slot13, slot14)
+slot12 = nil
+slot13 = Color
+slot15 = 1
+slot16 = 1
+slot17 = 1
+slot18 = 1
+slot13 = slot13(slot15, slot16, slot17, slot18)
+slot14 = Color
+slot16 = 1
+slot17 = 0.9764706
+slot18 = 0.33333334
+slot19 = 1
+slot14 = slot14(slot16, slot17, slot18, slot19)
 
-slot11 = function(slot0, slot1, slot2)
+slot15 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = WHITE_COLOR
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	slot1 = CAREER_YELLOW_COLOR
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = TopLogoNpcComponent
 	slot3 = slot3.super
@@ -57,9 +111,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.ctor = slot11
+slot11.ctor = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.canSpecialStateRecover
@@ -269,14 +323,16 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 73-74, warpins: 2 ---
+	--- BLOCK #19 73-76, warpins: 2 ---
 	slot0.careerName = slot3
+	slot3 = false
+	slot0.m_careerNameIsMasterName = slot3
 	--- END OF BLOCK #19 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #20 75-78, warpins: 1 ---
+	--- BLOCK #20 77-80, warpins: 1 ---
 	slot3 = slot0.entity
 	slot3 = slot3.getSubName
 	--- END OF BLOCK #20 ---
@@ -288,18 +344,20 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #21 79-84, warpins: 1 ---
+	--- BLOCK #21 81-88, warpins: 1 ---
 	slot3 = slot0.entity
 	slot5 = slot3
 	slot3 = slot3.getSubName
 	slot3 = slot3(slot5)
 	slot0.careerName = slot3
+	slot3 = false
+	slot0.m_careerNameIsMasterName = slot3
 	--- END OF BLOCK #21 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #22 85-87, warpins: 1 ---
+	--- BLOCK #22 89-91, warpins: 1 ---
 	slot3 = slot0.configData
 	--- END OF BLOCK #22 ---
 
@@ -310,7 +368,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #23 88-91, warpins: 1 ---
+	--- BLOCK #23 92-95, warpins: 1 ---
 	slot3 = slot0.configData
 	slot3 = slot3.masterName
 	--- END OF BLOCK #23 ---
@@ -322,24 +380,28 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #24 92-95, warpins: 1 ---
+	--- BLOCK #24 96-101, warpins: 1 ---
 	slot3 = slot0.configData
 	slot3 = slot3.masterName
 	slot0.careerName = slot3
+	slot3 = true
+	slot0.m_careerNameIsMasterName = slot3
 	--- END OF BLOCK #24 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #25 96-97, warpins: 2 ---
+	--- BLOCK #25 102-105, warpins: 2 ---
 	slot3 = slot2.careerName
 	slot0.careerName = slot3
+	slot3 = false
+	slot0.m_careerNameIsMasterName = slot3
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 98-100, warpins: 4 ---
+	--- BLOCK #26 106-108, warpins: 4 ---
 	slot3 = slot0._isStaticNpcWithNpcTopLogo
 	--- END OF BLOCK #26 ---
 
@@ -350,7 +412,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #27 101-103, warpins: 1 ---
+	--- BLOCK #27 109-111, warpins: 1 ---
 	slot3 = slot0._isPuppet
 	--- END OF BLOCK #27 ---
 
@@ -361,14 +423,14 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #28 104-104, warpins: 1 ---
+	--- BLOCK #28 112-112, warpins: 1 ---
 	slot3 = slot0._isVirtualPuppet
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 105-106, warpins: 3 ---
+	--- BLOCK #29 113-114, warpins: 3 ---
 	--- END OF BLOCK #29 ---
 
 	slot3 = if slot3 then
@@ -378,7 +440,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #30 107-110, warpins: 1 ---
+	--- BLOCK #30 115-118, warpins: 1 ---
 	slot4 = slot0.configData
 	slot4 = slot4.masterName
 	--- END OF BLOCK #30 ---
@@ -390,14 +452,16 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #31 111-112, warpins: 1 ---
+	--- BLOCK #31 119-122, warpins: 1 ---
 	slot0.careerName = slot4
+	slot5 = true
+	slot0.m_careerNameIsMasterName = slot5
 	--- END OF BLOCK #31 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #32 113-116, warpins: 1 ---
+	--- BLOCK #32 123-126, warpins: 1 ---
 	slot5 = slot0.entity
 	slot5 = slot5.getMasterName
 	--- END OF BLOCK #32 ---
@@ -409,18 +473,20 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #33 117-121, warpins: 1 ---
+	--- BLOCK #33 127-133, warpins: 1 ---
 	slot5 = slot0.entity
 	slot7 = slot5
 	slot5 = slot5.getMasterName
 	slot5 = slot5(slot7)
 	slot0.careerName = slot5
+	slot5 = true
+	slot0.m_careerNameIsMasterName = slot5
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 122-125, warpins: 4 ---
+	--- BLOCK #34 134-137, warpins: 4 ---
 	slot4 = slot0.configData
 	slot4 = slot4.extraNameControl
 	--- END OF BLOCK #34 ---
@@ -432,7 +498,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #35 126-129, warpins: 1 ---
+	--- BLOCK #35 138-141, warpins: 1 ---
 	slot4 = slot0.configData
 	slot4 = slot4.extraNameControl
 	--- END OF BLOCK #35 ---
@@ -444,28 +510,28 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #36 130-131, warpins: 2 ---
+	--- BLOCK #36 142-143, warpins: 2 ---
 	slot4 = false
 	--- END OF BLOCK #36 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #37 132-133, warpins: 0 ---
+	--- BLOCK #37 144-145, warpins: 0 ---
 	slot4 = false
 	--- END OF BLOCK #37 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #38 134-134, warpins: 1 ---
+	--- BLOCK #38 146-146, warpins: 1 ---
 	slot4 = true
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 135-138, warpins: 3 ---
+	--- BLOCK #39 147-150, warpins: 3 ---
 	slot5 = slot0.configData
 	slot5 = slot5.extraNameControl
 	--- END OF BLOCK #39 ---
@@ -477,7 +543,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #40 139-142, warpins: 1 ---
+	--- BLOCK #40 151-154, warpins: 1 ---
 	slot5 = slot0.configData
 	slot5 = slot5.extraNameControl
 	--- END OF BLOCK #40 ---
@@ -489,28 +555,28 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #41 143-144, warpins: 2 ---
+	--- BLOCK #41 155-156, warpins: 2 ---
 	slot5 = false
 	--- END OF BLOCK #41 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #44
 
 
-	--- BLOCK #42 145-146, warpins: 0 ---
+	--- BLOCK #42 157-158, warpins: 0 ---
 	slot5 = false
 	--- END OF BLOCK #42 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #44
 
 
-	--- BLOCK #43 147-147, warpins: 1 ---
+	--- BLOCK #43 159-159, warpins: 1 ---
 	slot5 = true
 	--- END OF BLOCK #43 ---
 
 	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 148-150, warpins: 3 ---
+	--- BLOCK #44 160-162, warpins: 3 ---
 	slot6 = slot0.careerIcon
 	--- END OF BLOCK #44 ---
 
@@ -521,7 +587,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #45 151-153, warpins: 1 ---
+	--- BLOCK #45 163-165, warpins: 1 ---
 	slot6 = slot0.isShowQuest
 	slot6 = not slot6
 	--- END OF BLOCK #45 ---
@@ -529,21 +595,21 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #46 154-155, warpins: 1 ---
+	--- BLOCK #46 166-167, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #46 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #47 156-156, warpins: 0 ---
+	--- BLOCK #47 168-168, warpins: 0 ---
 	slot6 = true
 	--- END OF BLOCK #47 ---
 
 	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 157-160, warpins: 3 ---
+	--- BLOCK #48 169-172, warpins: 3 ---
 	slot0.m_validIcon = slot6
 	slot6 = slot0.name
 	--- END OF BLOCK #48 ---
@@ -555,7 +621,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #49 161-162, warpins: 1 ---
+	--- BLOCK #49 173-174, warpins: 1 ---
 	--- END OF BLOCK #49 ---
 
 	slot6 = if not slot5 then
@@ -565,28 +631,28 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #50 163-164, warpins: 1 ---
+	--- BLOCK #50 175-176, warpins: 1 ---
 	slot6 = not slot4
 	--- END OF BLOCK #50 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #53
 
 
-	--- BLOCK #51 165-166, warpins: 1 ---
+	--- BLOCK #51 177-178, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #51 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #53
 
 
-	--- BLOCK #52 167-167, warpins: 0 ---
+	--- BLOCK #52 179-179, warpins: 0 ---
 	slot6 = true
 	--- END OF BLOCK #52 ---
 
 	FLOW; TARGET BLOCK #53
 
 
-	--- BLOCK #53 168-171, warpins: 4 ---
+	--- BLOCK #53 180-183, warpins: 4 ---
 	slot0.m_validName = slot6
 	slot6 = slot0.careerName
 	--- END OF BLOCK #53 ---
@@ -598,21 +664,21 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #54 172-173, warpins: 1 ---
+	--- BLOCK #54 184-185, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #54 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #55 174-174, warpins: 1 ---
+	--- BLOCK #55 186-186, warpins: 1 ---
 	slot6 = true
 	--- END OF BLOCK #55 ---
 
 	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #56 175-176, warpins: 2 ---
+	--- BLOCK #56 187-188, warpins: 2 ---
 	slot0.m_validCareer = slot6
 
 	return
@@ -622,9 +688,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.refreshNpcInfo = slot11
+slot11.refreshNpcInfo = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isNpcInfoVisible
 	--- END OF BLOCK #0 ---
@@ -689,54 +755,185 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 17-22, warpins: 4 ---
-	slot1 = Utils
-	slot1 = slot1.isInteractNpc
-	slot3 = slot0.entity
+	--- BLOCK #6 17-24, warpins: 4 ---
+	slot3 = slot0
+	slot1 = slot0.m_getCurrentNpcUIState
 	slot1 = slot1(slot3)
+	slot2 = UIConst
+	slot2 = slot2.TOPLOGO_NPC_STATE
+	slot2 = slot2.HIDE
 	--- END OF BLOCK #6 ---
 
-	slot1 = if slot1 then
+	if slot1 ~= slot2 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 23-28, warpins: 1 ---
-	slot1 = slot0.entity
-	slot3 = slot1
-	slot1 = slot1.checkNpcInteractState
-	slot1 = slot1(slot3)
+	--- BLOCK #7 25-26, warpins: 1 ---
+	slot2 = slot0.m_validIcon
 	--- END OF BLOCK #7 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 27-28, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 29-29, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-31, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 29-29, warpins: 2 ---
-	slot1 = false
+	--- BLOCK #11 32-33, warpins: 1 ---
+	slot3 = true
 
-	--- END OF BLOCK #8 ---
+	return slot3
 
-	FLOW; TARGET BLOCK #9
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #9 30-30, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #9 ---
+	--- BLOCK #12 34-38, warpins: 2 ---
+	slot3 = UIConst
+	slot3 = slot3.TOPLOGO_NPC_STATE
+	slot3 = slot3.CLOSE
+	--- END OF BLOCK #12 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 39-41, warpins: 1 ---
+	slot3 = slot0.m_validCareer
+	--- END OF BLOCK #13 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 42-43, warpins: 1 ---
+	slot3 = slot0.m_validName
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #15 44-45, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #16 46-46, warpins: 0 ---
+	slot3 = true
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 47-48, warpins: 4 ---
+	--- END OF BLOCK #17 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 49-50, warpins: 1 ---
+	slot4 = true
+
+	return slot4
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 51-56, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.isInteractNpc
+	slot6 = slot0.entity
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #19 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 57-62, warpins: 1 ---
+	slot4 = slot0.entity
+	slot6 = slot4
+	slot4 = slot4.checkNpcInteractState
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #20 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 63-64, warpins: 1 ---
+	slot4 = true
+
+	return slot4
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 65-66, warpins: 3 ---
+	slot4 = false
+
+	return slot4
+	--- END OF BLOCK #22 ---
 
 
 
 end
 
-slot10.shouldBeActive = slot11
+slot11.shouldBeActive = slot16
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-27, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-34, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.m_clearPendingNpcEnterTransition
+
+	slot1(slot3)
+
 	slot1 = nil
 	slot0.lastUpdateState = slot1
 	slot1 = nil
@@ -753,6 +950,10 @@ slot11 = function(slot0)
 	slot0.careerUText = slot1
 	slot1 = nil
 	slot0.nameUText = slot1
+	slot1 = nil
+	slot0.m_careerTextGroup = slot1
+	slot1 = nil
+	slot0.m_appliedCareerColorIsMaster = slot1
 	slot1 = TopLogoNpcComponent
 	slot1 = slot1.super
 	slot1 = slot1.resetRender
@@ -774,10 +975,15 @@ slot11 = function(slot0)
 
 end
 
-slot10.resetRender = slot11
+slot11.resetRender = slot16
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.m_clearPendingNpcEnterTransition
+
+	slot1(slot3)
+
 	slot1 = slot0.entity
 	--- END OF BLOCK #0 ---
 
@@ -788,7 +994,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-11, warpins: 1 ---
+	--- BLOCK #1 7-14, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.eventEmitter
 	slot3 = slot1
@@ -804,7 +1010,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-21, warpins: 2 ---
+	--- BLOCK #2 15-30, warpins: 2 ---
 	slot1 = TopLogoNpcComponent
 	slot1 = slot1.super
 	slot1 = slot1.onDestroy
@@ -816,6 +1022,12 @@ slot11 = function(slot0)
 	slot0.isShowQuest = slot1
 	slot1 = nil
 	slot0.m_loadedNpcInfoCallBack = slot1
+	slot1 = nil
+	slot0.m_careerTextGroup = slot1
+	slot1 = nil
+	slot0.m_careerNameIsMasterName = slot1
+	slot1 = nil
+	slot0.m_appliedCareerColorIsMaster = slot1
 
 	return
 	--- END OF BLOCK #2 ---
@@ -824,9 +1036,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onDestroy = slot11
+slot11.onDestroy = slot16
 
-slot11 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -857,16 +1069,16 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.m_setGoActive = slot11
+slot11.m_setGoActive = slot16
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
@@ -879,41 +1091,72 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 8-17, warpins: 1 ---
+	--- BLOCK #2 8-9, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-21, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.ProgressActive
+	slot7 = true
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
 	slot6 = slot1
 	slot4 = slot1.ProgressScale
-	slot7 = slot2
+	slot7 = true
+	slot8 = slot3
+	slot9 = true
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 22-31, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.ProgressScale
+	slot7 = false
 	slot8 = slot3
 
 	slot4(slot6, slot7, slot8)
 
 	slot6 = slot1
 	slot4 = slot1.ProgressActive
-	slot7 = slot2
+	slot7 = false
 	slot8 = slot3
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 18-18, warpins: 3 ---
+	--- BLOCK #5 32-32, warpins: 4 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot10.m_setNpcWidgetVisible = slot11
+slot11.m_setNpcWidgetVisible = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.topLogoItem
 	--- END OF BLOCK #0 ---
@@ -983,9 +1226,413 @@ slot11 = function(slot0)
 
 end
 
-slot10.m_getCurrentNpcUIState = slot11
+slot11.m_getCurrentNpcUIState = slot16
 
-slot11 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.TOPLOGO_NPC_STATE
+	slot2 = slot2.HIDE
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot2 = slot0.m_validIcon
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-17, warpins: 2 ---
+	slot2 = UIConst
+	slot2 = slot2.TOPLOGO_NPC_STATE
+	slot2 = slot2.CLOSE
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 18-20, warpins: 1 ---
+	slot2 = slot0.m_validCareer
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot2 = slot0.m_validName
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 23-24, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 25-25, warpins: 0 ---
+	slot2 = true
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 26-26, warpins: 4 ---
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot11.m_hasVisibleNpcWidgetByState = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = nil
+	slot0.m_pendingNpcEnterTransition = slot1
+	slot1 = slot0.m_pendingNpcEnterTransitionFrameId
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.delFrameCb
+	slot3 = slot0.m_pendingNpcEnterTransitionFrameId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.m_pendingNpcEnterTransitionFrameId = slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot11.m_clearPendingNpcEnterTransition = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.m_pendingNpcEnterTransition
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #2 6-14, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.m_getCurrentNpcUIState
+	slot1 = slot1(slot3)
+	slot4 = slot0
+	slot2 = slot0.m_hasVisibleNpcWidgetByState
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 17-19, warpins: 1 ---
+	slot2 = slot0.m_pendingNpcEnterTransitionFrameId
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #6 22-29, warpins: 1 ---
+	slot2 = TimerManager
+	slot2 = slot2.addNextFrameCb
+
+	slot4 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.m_pendingNpcEnterTransitionFrameId = slot1
+		slot0 = self
+		slot0 = slot0.m_pendingNpcEnterTransition
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-14, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.checkContainerLoaded
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 15-20, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.checkFinalVisible
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #3 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 21-24, warpins: 2 ---
+		slot0 = self
+		slot1 = nil
+		slot0.lastUpdateState = slot1
+
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 25-35, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.m_getCurrentNpcUIState
+		slot0 = slot0(slot2)
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.m_hasVisibleNpcWidgetByState
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
+		--- END OF BLOCK #5 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 36-38, warpins: 1 ---
+		slot1 = self
+		slot1.lastUpdateState = slot0
+
+		return
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 39-49, warpins: 2 ---
+		slot1 = self
+		slot2 = nil
+		slot1.m_pendingNpcEnterTransition = slot2
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.m_refreshNpcUIByState
+		slot4 = false
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot1.lastUpdateState = slot0
+
+		return
+		--- END OF BLOCK #7 ---
+
+
+
+	end
+
+	slot2 = slot2(slot4)
+	slot0.m_pendingNpcEnterTransitionFrameId = slot2
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-30, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-31, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 32-32, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot11.m_tryDeferPendingNpcEnterTransition = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-7, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.m_tryDeferPendingNpcEnterTransition
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-13, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.m_refreshNpcUIByState
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot11.m_refreshNpcUIByStateWithPending = slot16
+
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkContainerLoaded
@@ -1145,10 +1792,15 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.m_refreshNpcUIByState = slot11
+slot11.m_refreshNpcUIByState = slot16
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-24, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.m_clearPendingNpcEnterTransition
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.m_setNpcWidgetVisible
 	slot4 = slot0.iconUImage
@@ -1173,6 +1825,8 @@ slot11 = function(slot0)
 
 	slot1(slot3, slot4, slot5, slot6)
 
+	slot1 = true
+	slot0.m_pendingNpcEnterTransition = slot1
 	slot3 = slot0
 	slot1 = slot0.markDirty
 	slot4 = EventConst
@@ -1187,9 +1841,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.initUI = slot11
+slot11.initUI = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = slot0.refUContainer
 	slot1 = slot1.content
@@ -1228,7 +1882,7 @@ slot11 = function(slot0)
 	slot4 = "nameUText"
 	slot1 = slot1(slot3, slot4)
 	slot0.nameUText = slot1
-	slot1 = slot0.m_resetRootTransforms
+	slot1 = slot0.m_cacheCareerTextGroup
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -1240,7 +1894,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #1 41-43, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.m_resetRootTransforms
+	slot1 = slot0.m_cacheCareerTextGroup
 
 	slot1(slot3)
 
@@ -1250,54 +1904,61 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #2 44-46, warpins: 2 ---
-	slot1 = slot0.m_lastShowQuest
+	slot1 = slot0.m_resetRootTransforms
 	--- END OF BLOCK #2 ---
 
-	if slot1 ~= nil then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 47-50, warpins: 1 ---
+	--- BLOCK #3 47-49, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.refreshIconByQuest
-	slot4 = slot0.m_lastShowQuest
+	slot1 = slot0.m_resetRootTransforms
 
-	slot1(slot3, slot4)
+	slot1(slot3)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 51-51, warpins: 2 ---
-	return
+	--- BLOCK #4 50-52, warpins: 2 ---
+	slot1 = slot0.m_lastShowQuest
 	--- END OF BLOCK #4 ---
 
+	if slot1 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 53-56, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshIconByQuest
+	slot4 = slot0.m_lastShowQuest
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 57-57, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
 
 
 end
 
-slot10.findObjects = slot11
+slot11.findObjects = slot16
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.NPC
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot10.getComponentName = slot11
-
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
@@ -1325,7 +1986,7 @@ slot11 = function(slot0)
 
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.m_refreshNpcUIByState
+		slot0 = slot0.m_refreshNpcUIByStateWithPending
 		slot3 = false
 
 		slot0(slot2, slot3)
@@ -1378,9 +2039,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.addEntityListener = slot11
+slot11.addEntityListener = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.topLogoItem
 	slot1 = slot1.distance
@@ -1418,9 +2079,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.checkTopLogoCompUpdate = slot11
+slot11.checkTopLogoCompUpdate = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = TopLogoNpcComponent
 	slot1 = slot1.super
@@ -1609,9 +2270,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.innerGetVisible = slot11
+slot11.innerGetVisible = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getNpcInfoState
@@ -1627,9 +2288,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onTopLogoCompUpdate = slot11
+slot11.onTopLogoCompUpdate = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkFinalVisible
@@ -1740,9 +2401,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.refreshTopLogoInfo = slot11
+slot11.refreshTopLogoInfo = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContainerLoaded
@@ -1817,7 +2478,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #6 25-29, warpins: 2 ---
 	slot5 = slot0
-	slot3 = slot0.m_refreshNpcUIByState
+	slot3 = slot0.m_refreshNpcUIByStateWithPending
 	slot6 = false
 
 	slot3(slot5, slot6)
@@ -1837,9 +2498,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.m_refreshTplNpcUI = slot11
+slot11.m_refreshTplNpcUI = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContainerLoaded
@@ -1882,9 +2543,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onLanguageChanged = slot11
+slot11.onLanguageChanged = slot16
 
-slot11 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkContainerLoaded
@@ -2039,7 +2700,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 57-68, warpins: 2 ---
+	--- BLOCK #13 57-70, warpins: 2 ---
 	slot3 = slot3(slot5)
 	slot4 = ClientTextUtils
 	slot4 = slot4.setText
@@ -2055,16 +2716,38 @@ slot11 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	return
+	slot4 = slot0.m_refreshCareerTextColor
 	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 71-73, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.m_refreshCareerTextColor
+
+	slot4(slot6)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 74-74, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot10.refreshNpcTitle = slot11
+slot11.refreshNpcTitle = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isEnemy
@@ -2117,9 +2800,285 @@ slot11 = function(slot0)
 
 end
 
-slot10.setNameColor = slot11
+slot11.setNameColor = slot16
 
-slot11 = function(slot0, slot1)
+slot16 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = nil
+	slot0.m_careerTextGroup = slot1
+	slot1 = nil
+	slot0.m_appliedCareerColorIsMaster = slot1
+	slot1 = slot0.careerUText
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot1 = IsNil
+	slot3 = slot0.careerUText
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-16, warpins: 2 ---
+	slot1 = UBASE_TEXT_TYPE
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-22, warpins: 1 ---
+	slot1 = typeof
+	slot3 = CS
+	slot3 = slot3.XGUI
+	slot3 = slot3.UBaseText
+	slot1 = slot1(slot3)
+	UBASE_TEXT_TYPE = slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-31, warpins: 2 ---
+	slot1 = slot0.careerUText
+	slot1 = slot1.transform
+	slot3 = slot1
+	slot1 = slot1.GetComponentsInChildren
+	slot4 = UBASE_TEXT_TYPE
+	slot5 = true
+	slot1 = slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-32, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 33-37, warpins: 2 ---
+	slot2 = {}
+	slot3 = 1
+	slot4 = slot1.Length
+	slot5 = 1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 38-44, warpins: 2 ---
+	slot7 = slot6 - 1
+	slot7 = slot1[slot7]
+	slot8 = NotNil
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #8 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 45-47, warpins: 1 ---
+	slot8 = #slot2
+	slot8 = slot8 + 1
+	slot2[slot8] = slot7
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 48-48, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #11
+
+	--- BLOCK #11 49-52, warpins: 1 ---
+	slot3 = #slot2
+	slot4 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 53-53, warpins: 1 ---
+	slot0.m_careerTextGroup = slot2
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 54-54, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot11.m_cacheCareerTextGroup = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.m_careerTextGroup
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot2 = slot0.m_careerNameIsMasterName
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-13, warpins: 2 ---
+	slot3 = slot0.m_appliedCareerColorIsMaster
+
+	--- END OF BLOCK #5 ---
+
+	if slot3 == slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 14-14, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 15-21, warpins: 2 ---
+	slot3 = getCareerTextColor
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	slot4 = 1
+	slot5 = #slot1
+	slot6 = 1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-27, warpins: 2 ---
+	slot8 = slot1[slot7]
+	slot9 = NotNil
+	slot11 = slot8
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #8 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 28-28, warpins: 1 ---
+	slot8.color = slot3
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 29-29, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #11
+
+	--- BLOCK #11 30-31, warpins: 1 ---
+	slot0.m_appliedCareerColorIsMaster = slot2
+
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot11.m_refreshCareerTextColor = slot16
+
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isNpcInfoVisible
 
@@ -2167,9 +3126,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.setVisibleNpcInfo = slot11
+slot11.setVisibleNpcInfo = slot16
 
-slot11 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = SysConfigData
 	slot2 = slot2.NPC_TOPLOGO_DISTANCE
@@ -2237,9 +3196,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.getNpcInfoState = slot11
+slot11.getNpcInfoState = slot16
 
-slot11 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.isShowQuest = slot1
 	slot2 = slot0.iconUImage
@@ -2272,7 +3231,7 @@ slot11 = function(slot0, slot1)
 	slot2(slot4)
 
 	slot4 = slot0
-	slot2 = slot0.m_refreshNpcUIByState
+	slot2 = slot0.m_refreshNpcUIByStateWithPending
 	slot5 = false
 
 	slot2(slot4, slot5)
@@ -2300,9 +3259,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.refreshIconByQuest = slot11
+slot11.refreshIconByQuest = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.refUContainer
 	--- END OF BLOCK #0 ---
@@ -2512,9 +3471,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.m_resetRootTransforms = slot11
+slot11.m_resetRootTransforms = slot16
 
-slot11 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2563,9 +3522,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onTopLogoCompVisibleChanged = slot11
+slot11.onTopLogoCompVisibleChanged = slot16
 
-slot11 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = SysConfigData
 	slot1 = slot1.NPC_TOPLOGO_DISTANCE
@@ -2577,9 +3536,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.getInitMaxDistance = slot11
+slot11.getInitMaxDistance = slot16
 
-return slot10
+return slot11
 --- END OF BLOCK #0 ---
 
 

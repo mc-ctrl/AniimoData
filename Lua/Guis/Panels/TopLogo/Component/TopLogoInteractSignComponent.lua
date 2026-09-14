@@ -227,19 +227,38 @@ end
 slot5.onLanguageChanged = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.INTERACT_SIGN
-
-	return slot1
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._lastRidingState
 	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot1 = TopLogoInteractSignComponent
+	slot1 = slot1.super
+	slot1 = slot1.shouldBeActive
+	slot3 = slot0
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot5.getComponentName = slot6
+slot5.shouldBeActive = slot6
 
 slot6 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
@@ -546,7 +565,7 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #2 10-14, warpins: 1 ---
+	--- BLOCK #2 10-16, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -554,32 +573,43 @@ slot6 = function(slot0)
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 15-17, warpins: 3 ---
-	slot2 = slot0._lastRidingState
+	--- BLOCK #3 17-17, warpins: 3 ---
+	slot1 = false
 	--- END OF BLOCK #3 ---
 
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-20, warpins: 2 ---
+	slot2 = slot0._lastRidingState
+	--- END OF BLOCK #4 ---
+
 	if slot2 ~= slot1 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 21-23, warpins: 1 ---
+	slot0._lastRidingState = slot1
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 18-20, warpins: 1 ---
-	slot0._lastRidingState = slot1
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 21-28, warpins: 1 ---
+	--- BLOCK #6 24-31, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setVisible
 	slot5 = false
@@ -589,12 +619,12 @@ slot6 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 29-35, warpins: 1 ---
+	--- BLOCK #7 32-38, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setVisible
 	slot5 = true
@@ -604,14 +634,14 @@ slot6 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 36-36, warpins: 3 ---
-	return
 	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 39-39, warpins: 3 ---
+	return
+	--- END OF BLOCK #8 ---
 
 
 

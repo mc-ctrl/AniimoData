@@ -1,4 +1,4 @@
---- BLOCK #0 1-69, warpins: 1 ---
+--- BLOCK #0 1-71, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -67,10 +67,34 @@ slot6 = {
 }
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = ShopARKCtrl
 	slot2 = slot2.super
 	slot2 = slot2.onCreate
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.Init
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.onCreate = slot7
+
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot2 = ShopARKCtrl
+	slot2 = slot2.super
+	slot2 = slot2._rebuildShopContext
 	slot4 = slot0
 	slot5 = slot1
 
@@ -101,13 +125,8 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-22, warpins: 2 ---
+	--- BLOCK #2 18-19, warpins: 2 ---
 	slot2(slot4, slot5, slot6)
-
-	slot4 = slot0
-	slot2 = slot0.Init
-
-	slot2(slot4)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -116,7 +135,7 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.onCreate = slot7
+slot5._rebuildShopContext = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -363,7 +382,7 @@ end
 slot5.onDestroy = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = ShopARKCtrl
 	slot1 = slot1.super
 	slot1 = slot1.addListener
@@ -371,25 +390,6 @@ slot7 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.view
-	slot1 = slot1.pbPropInfoPurchase
-
-	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.trySleepEnd
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
 	slot3 = slot0
 	slot1 = slot0.startTimer
 
@@ -544,7 +544,7 @@ slot7 = function(slot0)
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
-	slot3 = slot3.shopName
+	slot3 = slot3.txtShopName
 	slot4 = pg
 	slot4 = slot4.getLocalizationText
 	slot6 = slot0.shopClassCfg
@@ -556,7 +556,7 @@ slot7 = function(slot0)
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
-	slot3 = slot3.shopName2
+	slot3 = slot3.txtShopName2
 	slot4 = pg
 	slot4 = slot4.getLocalizationText
 	slot6 = slot0.shopClassCfg

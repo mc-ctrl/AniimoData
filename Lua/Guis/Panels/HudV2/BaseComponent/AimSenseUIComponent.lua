@@ -1,4 +1,4 @@
---- BLOCK #0 1-31, warpins: 1 ---
+--- BLOCK #0 1-37, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -12,12 +12,18 @@ slot2 = require
 slot4 = "Guis.Panels.HudV2.HudBaseComponent"
 slot2 = slot2(slot4)
 slot3 = UIUtils
-slot4 = slot1.LightClass
-slot6 = "AimSenseUIComponent"
-slot7 = slot2
-slot4 = slot4(slot6, slot7)
+slot4 = CS
+slot4 = slot4.FunPlus
+slot4 = slot4.WorldX
+slot4 = slot4.Const
+slot4 = slot4.LayerDefine
+slot4 = slot4.STABLE_GROUND_LAYERS
+slot5 = slot1.LightClass
+slot7 = "AimSenseUIComponent"
+slot8 = slot2
+slot5 = slot5(slot7, slot8)
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -37,9 +43,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.findObjects = slot5
+slot5.findObjects = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = slot0.panelRectTransform
 	slot2 = slot1.rect
@@ -67,7 +73,7 @@ slot5 = function(slot0)
 		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #7
 		end
 
 
@@ -103,22 +109,49 @@ slot5 = function(slot0)
 
 		--- BLOCK #3 24-24, warpins: 1 ---
 		slot2 = true
-
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 25-25, warpins: 2 ---
-		return slot2
+		--- BLOCK #4 25-26, warpins: 2 ---
 		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #5
+		slot3 = if slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-		--- BLOCK #5 26-26, warpins: 2 ---
-		return
+		--- BLOCK #5 27-37, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.physicsMgr
+		slot5 = slot3
+		slot3 = slot3.CheckCameraRaycastToPosEx
+		slot6 = slot0.x
+		slot7 = slot0.y
+		slot8 = slot0.z
+		slot9 = STABLE_GROUND_LAYERS
+		slot3 = slot3(slot5, slot6, slot7, slot8, slot9)
+		slot3 = not slot3
+
 		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 38-38, warpins: 2 ---
+		return slot3
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 39-39, warpins: 2 ---
+		return
+		--- END OF BLOCK #7 ---
 
 
 
@@ -156,9 +189,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.initView = slot5
+slot5.initView = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setSenseVisible
@@ -178,9 +211,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onEnterAimSense = slot5
+slot5.onEnterAimSense = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setSenseVisible
@@ -195,9 +228,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onLeaveAimSense = slot5
+slot5.onLeaveAimSense = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.senseVisible = slot1
 	slot2 = slot0.uWidget
@@ -231,9 +264,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.setSenseVisible = slot5
+slot5.setSenseVisible = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HudBaseComponent
 	slot1 = slot1.onDestroy
@@ -248,9 +281,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onDestroy = slot5
+slot5.onDestroy = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

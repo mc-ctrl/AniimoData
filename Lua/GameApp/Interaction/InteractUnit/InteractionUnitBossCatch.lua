@@ -849,56 +849,16 @@ end
 slot18.getInvalidInteractData = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.getCurSelectPropId
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-18, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	slot3 = slot1
-	slot1 = slot1.getCurSelectPropId
-
-	return slot1(slot3)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 19-25, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	slot3 = slot1
-	slot1 = slot1.getCurSelectPropId
-
-	return slot1(slot3)
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 26-26, warpins: 2 ---
-	return
-	--- END OF BLOCK #3 ---
 
 
 

@@ -7,39 +7,39 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 11,
 	useForRoute = false,
 	agenttype = "WxAgent",
-	name = "PatrolTree/PatrolMoveSubTree/ST_NPCLeadPatrol"
+	name = "PatrolTree/PatrolMoveSubTree/ST_NPCLeadPatrol",
+	version = 11
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "vector<float>",
 	name = "patrolPos",
+	type = "vector<float>",
 	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
-	type = "float",
 	name = "patrolMaxTime",
+	type = "float",
 	const = 0,
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
 	name = "tPatrolSpeed",
+	type = "float",
 	const = 0,
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "SpeedRateType",
 	name = "tBehaviorSpeedRateType",
+	type = "SpeedRateType",
 	value = "Slow"
 }
 slot6 = slot0.SpeedRateType
@@ -47,8 +47,8 @@ slot6 = slot6.Slow
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	type = "PathFindType",
 	name = "tPathFindType",
+	type = "PathFindType",
 	value = "Auto"
 }
 slot6 = slot0.PathFindType
@@ -56,22 +56,22 @@ slot6 = slot6.Auto
 slot5.const = slot6
 slot4[5] = slot5
 slot5 = {
-	type = "bool",
 	name = "tUseAccurateArrive",
+	type = "bool",
 	const = false,
 	value = "false"
 }
 slot4[6] = slot5
 slot5 = {
-	type = "int",
 	name = "tLeadTargetActorId",
+	type = "int",
 	const = 0,
 	value = "0"
 }
 slot4[7] = slot5
 slot5 = {
-	type = "SpeedRateType",
 	name = "tJudgeSpeedRateType",
+	type = "SpeedRateType",
 	value = "Slow"
 }
 slot6 = slot0.SpeedRateType
@@ -373,10 +373,10 @@ slot26[3] = slot27
 slot25.properties = slot26
 slot26 = {}
 slot27 = {
-	effector = false,
-	precondition = true,
 	class = "Precondition",
+	precondition = true,
 	transition = false,
+	effector = false,
 	id = "26"
 }
 slot28 = {}
@@ -650,10 +650,10 @@ slot26[3] = slot27
 slot25.properties = slot26
 slot26 = {}
 slot27 = {
-	effector = false,
-	precondition = true,
 	class = "Precondition",
+	precondition = true,
 	transition = false,
+	effector = false,
 	id = "26"
 }
 slot28 = {}
@@ -809,10 +809,10 @@ slot14[3] = slot15
 slot13.properties = slot14
 slot14 = {}
 slot15 = {
-	effector = false,
-	precondition = true,
 	class = "Precondition",
+	precondition = true,
 	transition = false,
+	effector = false,
 	id = "26"
 }
 slot16 = {}

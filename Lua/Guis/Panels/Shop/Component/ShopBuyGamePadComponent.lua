@@ -36,7 +36,7 @@ slot8 = function(slot0)
 	slot1 = slot1(slot3)
 	slot0.navigation = slot1
 	slot1 = slot0.navigation
-	slot2 = 2
+	slot2 = 0.55
 	slot1.longPressDelay = slot2
 	slot1 = nil
 	slot0.onRightStickMoveCallback = slot1
@@ -138,38 +138,48 @@ slot8 = function(slot0)
 	slot4 = slot4.GamepadDUp
 
 	slot5 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.ctrl
 		slot0 = slot0.shopBuyComponent
 		slot0 = slot0.maxCount
 		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.pbPropInfoNumSelector
-		slot1 = slot1.value
+		slot1 = slot1.ctrl
+		slot1 = slot1.shopBuyComponent
+		slot3 = slot1
+		slot1 = slot1.getPurchaseNumSelector
+		slot1 = slot1(slot3)
 		--- END OF BLOCK #0 ---
 
-		if slot1 ~= slot0 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 11-14, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.pbPropInfoNumSelector
-		slot1.value = slot0
-
+		--- BLOCK #1 13-15, warpins: 1 ---
+		slot2 = slot1.value
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		if slot2 ~= slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
 
 
-		--- BLOCK #2 15-15, warpins: 2 ---
-		return
+		--- BLOCK #2 16-16, warpins: 1 ---
+		slot1.value = slot0
+
 		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-17, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
@@ -186,35 +196,45 @@ slot8 = function(slot0)
 	slot4 = slot4.GamepadDDown
 
 	slot5 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.view
-		slot0 = slot0.pbPropInfoNumSelector
-		slot0 = slot0.value
+		slot0 = slot0.ctrl
+		slot0 = slot0.shopBuyComponent
+		slot2 = slot0
+		slot0 = slot0.getPurchaseNumSelector
+		slot0 = slot0(slot2)
 		--- END OF BLOCK #0 ---
 
-		if slot0 ~= 1 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 7-11, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.view
-		slot0 = slot0.pbPropInfoNumSelector
+		--- BLOCK #1 9-11, warpins: 1 ---
+		slot1 = slot0.value
+		--- END OF BLOCK #1 ---
+
+		if slot1 ~= 1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 12-13, warpins: 1 ---
 		slot1 = 1
 		slot0.value = slot1
 
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 12-12, warpins: 2 ---
-		return
 		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 14-14, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
@@ -255,36 +275,56 @@ end
 slot7.initView = slot8
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.pbPropInfoNumSelector
-	slot1 = slot1.value
-	slot2 = slot0.ctrl
-	slot2 = slot2.shopBuyComponent
-	slot2 = slot2.maxCount
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.shopBuyComponent
+	slot3 = slot1
+	slot1 = slot1.getPurchaseNumSelector
+	slot1 = slot1(slot3)
+
 	--- END OF BLOCK #0 ---
 
-	if slot1 < slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
-	slot1 = slot1 + 1
-	slot2 = slot0.view
-	slot2 = slot2.pbPropInfoNumSelector
-	slot2.value = slot1
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
-	return
+	--- BLOCK #2 9-14, warpins: 2 ---
+	slot2 = slot1.value
+	slot3 = slot0.ctrl
+	slot3 = slot3.shopBuyComponent
+	slot3 = slot3.maxCount
 	--- END OF BLOCK #2 ---
+
+	if slot2 < slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot2 = slot2 + 1
+	slot1.value = slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-17, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
@@ -293,34 +333,54 @@ end
 slot7.addCount = slot8
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.pbPropInfoNumSelector
-	slot1 = slot1.value
-	slot2 = 1
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.shopBuyComponent
+	slot3 = slot1
+	slot1 = slot1.getPurchaseNumSelector
+	slot1 = slot1(slot3)
+
 	--- END OF BLOCK #0 ---
 
-	if slot1 > slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-10, warpins: 1 ---
-	slot1 = slot1 - 1
-	slot2 = slot0.view
-	slot2 = slot2.pbPropInfoNumSelector
-	slot2.value = slot1
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-11, warpins: 2 ---
-	return
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot2 = slot1.value
+	slot3 = 1
 	--- END OF BLOCK #2 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot2 = slot2 - 1
+	slot1.value = slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
@@ -492,9 +552,9 @@ slot7.startTick = slot8
 slot8 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {
+		id = "rightStickMove",
 		actionPath = "Hud/RightStickMove",
-		isVirtual = true,
-		id = "rightStickMove"
+		isVirtual = true
 	}
 	slot2 = slot0.root
 	slot2 = slot2.gameObject
@@ -584,8 +644,8 @@ slot7.initRightStickMoveData = slot8
 slot8 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = {
-		isVirtual = true,
-		id = "gamepadLT"
+		id = "gamepadLT",
+		isVirtual = true
 	}
 	slot2 = slot0.root
 	slot2 = slot2.gameObject
@@ -698,7 +758,7 @@ slot8 = function(slot0)
 
 		end
 
-		slot6 = 0.5
+		slot6 = 0.55
 		slot7 = false
 		slot2 = slot2(slot4, slot5, slot6, slot7)
 		slot1.delayPressTimer = slot2
@@ -766,8 +826,8 @@ slot7.initGamepadLTData = slot8
 slot8 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = {
-		isVirtual = true,
-		id = "gamepadRT"
+		id = "gamepadRT",
+		isVirtual = true
 	}
 	slot2 = slot0.root
 	slot2 = slot2.gameObject
@@ -880,7 +940,7 @@ slot8 = function(slot0)
 
 		end
 
-		slot6 = 0.5
+		slot6 = 0.55
 		slot7 = false
 		slot2 = slot2(slot4, slot5, slot6, slot7)
 		slot1.delayPressTimer = slot2

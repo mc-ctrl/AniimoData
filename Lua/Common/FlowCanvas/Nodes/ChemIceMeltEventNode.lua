@@ -231,7 +231,7 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 53-71, warpins: 1 ---
+	--- BLOCK #10 53-66, warpins: 1 ---
 	slot10 = slot4
 	slot11 = "#"
 	slot12 = slot9
@@ -279,10 +279,10 @@ slot6 = function(slot0, slot1, slot2)
 
 		slot2 = context
 		slot4 = slot2
-		slot2 = slot2.removeContextEvent
-		slot5 = eventName
-		slot6 = self
-		slot6 = slot6.nodeId
+		slot2 = slot2.unregisterSpaceEventListener
+		slot5 = self
+		slot5 = slot5.nodeId
+		slot6 = eventName
 
 		slot2(slot4, slot5, slot6)
 
@@ -308,18 +308,11 @@ slot6 = function(slot0, slot1, slot2)
 
 	end
 
-	slot13 = slot3
-	slot11 = slot3.addSpaceEventListener
-	slot14 = slot4
-	slot15 = slot10
-
-	slot11(slot13, slot14, slot15)
-
 	slot13 = slot1
-	slot11 = slot1.addContextEvent
-	slot14 = slot4
-	slot15 = slot10
-	slot16 = slot0.nodeId
+	slot11 = slot1.registerSpaceEventListener
+	slot14 = slot0.nodeId
+	slot15 = slot4
+	slot16 = slot10
 
 	slot11(slot13, slot14, slot15, slot16)
 
@@ -328,7 +321,7 @@ slot6 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #11 72-78, warpins: 1 ---
+	--- BLOCK #11 67-73, warpins: 1 ---
 	slot10 = LoggerManager
 	slot10 = slot10.checkLogger
 	slot12 = LoggerConst
@@ -343,7 +336,7 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #12 79-86, warpins: 1 ---
+	--- BLOCK #12 74-81, warpins: 1 ---
 	slot10 = slot0.logger
 	slot12 = slot10
 	slot10 = slot10.warn
@@ -359,21 +352,21 @@ slot6 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 87-88, warpins: 3 ---
+	--- BLOCK #13 82-83, warpins: 3 ---
 	return
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 89-89, warpins: 2 ---
+	--- BLOCK #14 84-84, warpins: 2 ---
 	return
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 90-90, warpins: 2 ---
+	--- BLOCK #15 85-85, warpins: 2 ---
 	return
 	--- END OF BLOCK #15 ---
 

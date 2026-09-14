@@ -256,32 +256,18 @@ slot11 = function(slot0)
 		slot10 = "PET_EVOLVE_CONFIRM"
 		slot8 = slot8(slot10)
 		slot7.title = slot8
-		slot8 = pg
-		slot8 = slot8.getGameString
-		slot10 = "ACCESSORY_UNLOCK_DESC"
+		slot8 = self
+		slot10 = slot8
+		slot8 = slot8.getChangeFormConfirmTip
 		slot8 = slot8(slot10)
 		slot7.tipTop = slot8
 		slot7.data = slot2
 
 		slot8 = function()
-			--- BLOCK #0 1-17, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.me
-			slot2 = slot0
-			slot0 = slot0.serverMsg
-			slot3 = "RPC_CS_StartChangeForm"
-			slot4 = self
-			slot4 = slot4._petInfo
-			slot4 = slot4.id
-			slot5 = self
-			slot5 = slot5._targetTemplateId
-
-			slot0(slot2, slot3, slot4, slot5)
-
+			--- BLOCK #0 1-5, warpins: 1 ---
 			slot0 = self
-			slot0 = slot0.ctrl
 			slot2 = slot0
-			slot0 = slot0.dismiss
+			slot0 = slot0.requestChangeForm
 
 			slot0(slot2)
 

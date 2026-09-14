@@ -1,27 +1,27 @@
 --- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.Capture.ThrowParabola"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "GameApp.Capture.Context.ThrowBallContext"
+slot4 = "GameApp.Capture.ThrowParabola"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.Input.InputCommand"
+slot5 = "GameApp.Capture.Context.ThrowBallContext"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.EventConst"
+slot6 = "GameApp.Input.InputCommand"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientCaptureUtils"
+slot7 = "Const.EventConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.CharacterUpperState"
+slot8 = "Utils.ClientCaptureUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.ClientConst"
+slot9 = "Common.Const.CharacterUpperState"
 slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Const.AddressDataConst"
@@ -35,9 +35,9 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Common.NoticeDef"
 slot11 = slot11(slot13)
-slot12 = slot0.LightClass
+slot12 = slot1.LightClass
 slot14 = "ParabolaThrowContext"
-slot15 = slot2
+slot15 = slot3
 slot12 = slot12(slot14, slot15)
 
 slot13 = function(slot0, slot1, slot2)
@@ -60,16 +60,14 @@ end
 slot12.ctor = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-29, warpins: 1 ---
+	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = slot0.ballData
 	slot2 = slot2.animType
 	slot1.ThrowAnimType = slot2
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = true
 	slot1.AlwaysLookForward = slot2
 	slot3 = slot0
@@ -105,16 +103,21 @@ end
 slot12.enter = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-29, warpins: 1 ---
+	--- BLOCK #0 1-32, warpins: 1 ---
+	slot1 = slot0.player
+	slot3 = slot1
+	slot1 = slot1.addEModelComponent
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_CATCH
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.player
 	slot1 = slot1.eModel
 	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot1 = slot1.LoadPointer
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_CATCH
-	slot1 = slot1(slot3, slot4)
-	slot4 = slot1
-	slot2 = slot1.LoadPointer
 	slot5 = AddressDataConst
 	slot5 = slot5.PARABOLA_POINTER
 	slot6 = {}
@@ -132,77 +135,77 @@ slot13 = function(slot0)
 	slot7 = slot7(MULTRES)
 	slot6.offset = slot7
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6)
 
-	slot2 = slot0.ballEnt
+	slot1 = slot0.ballEnt
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 30-31, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #1 33-34, warpins: 1 ---
+	slot1 = false
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 32-37, warpins: 1 ---
-	slot2 = ClientCaptureUtils
-	slot2 = slot2.checkBallItem
-	slot4 = slot0.itemId
-	slot2 = slot2(slot4)
+	--- BLOCK #2 35-40, warpins: 1 ---
+	slot1 = ClientCaptureUtils
+	slot1 = slot1.checkBallItem
+	slot3 = slot0.itemId
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 38-48, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.exitCatchMode
+	--- BLOCK #3 41-51, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.exitCatchMode
 
-	slot2(slot4)
+	slot1(slot3)
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.showBubbleMessage
-	slot4 = NoticeDef
-	slot4 = slot4.ITEM_LACK_CANT_THROW
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showBubbleMessage
+	slot3 = NoticeDef
+	slot3 = slot3.ITEM_LACK_CANT_THROW
 
-	slot2(slot4)
+	slot1(slot3)
 
-	slot2 = false
+	slot1 = false
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 49-64, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._clear
+	--- BLOCK #4 52-67, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._clear
 
-	slot2(slot4)
+	slot1(slot3)
 
-	slot4 = slot0
-	slot2 = slot0.createBall
+	slot3 = slot0
+	slot1 = slot0.createBall
 
-	slot2(slot4)
+	slot1(slot3)
 
-	slot2 = slot0.eventEmitter
-	slot4 = slot2
-	slot2 = slot2.onceEventListener
-	slot5 = PlayableEventConst
-	slot5 = slot5.fireBall
+	slot1 = slot0.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.onceEventListener
+	slot4 = PlayableEventConst
+	slot4 = slot4.fireBall
 
-	slot6 = function()
+	slot5 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -217,25 +220,25 @@ slot13 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
-	slot2 = true
+	slot1 = true
 
-	return slot2
+	return slot1
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 65-65, warpins: 2 ---
-	return slot2
+	--- BLOCK #5 68-68, warpins: 2 ---
+	return slot1
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 66-66, warpins: 2 ---
-	return slot2
+	--- BLOCK #6 69-69, warpins: 2 ---
+	return slot1
 	--- END OF BLOCK #6 ---
 
 
@@ -304,7 +307,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-18, warpins: 2 ---
+	--- BLOCK #2 8-19, warpins: 2 ---
 	slot1 = ThrowBallContext
 	slot1 = slot1.fireBall
 	slot3 = slot0
@@ -313,11 +316,12 @@ slot13 = function(slot0)
 
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.catchComponent
 	slot3 = slot1
 	slot1 = slot1.UnloadPointer
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_CATCH
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -357,16 +361,16 @@ slot13 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = false
 	slot1.AlwaysLookForward = slot2
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.catchComponent
 	slot3 = slot1
 	slot1 = slot1.UnloadPointer
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_CATCH
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = ThrowBallContext
 	slot1 = slot1.destroy

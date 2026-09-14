@@ -1,4 +1,4 @@
---- BLOCK #0 1-188, warpins: 1 ---
+--- BLOCK #0 1-187, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -58,62 +58,59 @@ slot17 = require
 slot19 = "Core.Common.Time"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.Utils.FlagUtils"
+slot20 = "Common.Const.PlayerForbidConst"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Common.Const.PlayerForbidConst"
+slot21 = "Entities.Utils.EModelUtils"
 slot19 = slot19(slot21)
-slot20 = require
-slot22 = "Entities.Utils.EModelUtils"
-slot20 = slot20(slot22)
-slot21 = slot1.LightClass
-slot23 = "MarkShareEditCtrl"
-slot24 = slot2
-slot21 = slot21(slot23, slot24)
-slot22 = fingerGestures
-slot23 = {}
-slot24 = slot0.ON_ADD_INFO_STAMP_SUCCESS
-slot25 = {
+slot20 = slot1.LightClass
+slot22 = "MarkShareEditCtrl"
+slot23 = slot2
+slot20 = slot20(slot22, slot23)
+slot21 = fingerGestures
+slot22 = {}
+slot23 = slot0.ON_ADD_INFO_STAMP_SUCCESS
+slot24 = {
 	"onAddInfoStampSuccess",
 	true
 }
-slot23[slot24] = slot25
-slot24 = slot0.ON_DELETE_INFO_STAMP_SUCCESS
-slot25 = {
+slot22[slot23] = slot24
+slot23 = slot0.ON_DELETE_INFO_STAMP_SUCCESS
+slot24 = {
 	"onDeleteInfoStampSuccess",
 	true
 }
-slot23[slot24] = slot25
-slot24 = slot0.ON_REQUEST_SELF_MARK_INFO
-slot25 = {
+slot22[slot23] = slot24
+slot23 = slot0.ON_REQUEST_SELF_MARK_INFO
+slot24 = {
 	"onRequestSelfMarkInfo",
 	true
 }
-slot23[slot24] = slot25
-slot24 = slot0.INPUT_DEVICE_CHANGED
-slot25 = {
+slot22[slot23] = slot24
+slot23 = slot0.INPUT_DEVICE_CHANGED
+slot24 = {
 	"onInputDeviceChanged",
 	true
 }
-slot23[slot24] = slot25
-slot21.messages = slot23
-slot23 = {
-	editingSentenceWord = 4,
-	editingSentence = 3,
-	chooseTemplate = 2,
-	addNewMark = 1,
+slot22[slot23] = slot24
+slot20.messages = slot22
+slot22 = {
 	history = 0,
 	editingAnimation = 7,
 	editingBubble = 6,
-	editingConj = 5
+	editingConj = 5,
+	editingSentenceWord = 4,
+	editingSentence = 3,
+	chooseTemplate = 2,
+	addNewMark = 1
 }
-slot21.MAIN_PAGE_TYPE = slot23
-slot23 = "<sprite=\"Message\" index=2 anim=\"2,3,2\">"
-slot21.REPLACE_ICON_ID = slot23
-slot23 = "<sprite=\"Message\" index=0 anim=\"0,1,2\">"
-slot21.REPLACE_SINGLE_ICON_ID = slot23
+slot20.MAIN_PAGE_TYPE = slot22
+slot22 = "<sprite=\"Message\" index=2 anim=\"2,3,2\">"
+slot20.REPLACE_ICON_ID = slot22
+slot22 = "<sprite=\"Message\" index=0 anim=\"0,1,2\">"
+slot20.REPLACE_SINGLE_ICON_ID = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -283,7 +280,7 @@ slot23 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.cdTs = slot2
 
 	return
@@ -293,9 +290,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onCreate = slot23
+slot20.onCreate = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -304,12 +301,14 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onOpen = slot23
+slot20.onOpen = slot22
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.txtEdit
+slot22 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = NotNil
+	slot3 = slot0.view
+	slot3 = slot3.txtEdit
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -319,7 +318,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 5-13, warpins: 1 ---
+	--- BLOCK #1 7-15, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -336,7 +335,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-14, warpins: 2 ---
+	--- BLOCK #2 16-16, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -344,9 +343,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.onShow = slot23
+slot20.onShow = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -355,9 +354,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.onHide = slot23
+slot20.onHide = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onVisibleChange
@@ -384,9 +383,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onVisibleChange = slot23
+slot20.onVisibleChange = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.needResetCamera
 	--- END OF BLOCK #0 ---
@@ -398,7 +397,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-6, warpins: 1 ---
+	--- BLOCK #1 4-7, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.closeWristWatchCamera
 
@@ -406,10 +405,53 @@ slot23 = function(slot0)
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 7-11, warpins: 2 ---
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot1 = slot0.markShareCameraMode
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 11-17, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.camera
+	slot1 = slot1.fixedWithTargetCameraMode
+	slot2 = slot0.markShareCameraMode
+	--- END OF BLOCK #3 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-24, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.camera
+	slot3 = slot1
+	slot1 = slot1.cancelBlendToFixedWithTarget
+	slot4 = 0.5
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-31, warpins: 4 ---
+	slot1 = nil
+	slot0.markShareCameraMode = slot1
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -417,15 +459,15 @@ slot23 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot21.onDestroy = slot23
+slot20.onDestroy = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = UIConst
@@ -440,9 +482,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.getWhiteList = slot23
+slot20.getWhiteList = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshBubble
@@ -494,9 +536,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.Init = slot23
+slot20.Init = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.turnAvatarSpeed
 	slot1 = slot1.x
@@ -532,9 +574,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.startTick = slot23
+slot20.startTick = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.animationAvatarIcon
@@ -552,9 +594,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshAnimationAvatarIcon = slot23
+slot20.refreshAnimationAvatarIcon = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.bubbleTypeIcon
@@ -572,9 +614,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshBubbleIcon = slot23
+slot20.refreshBubbleIcon = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.photoTemplate
 	--- END OF BLOCK #0 ---
@@ -619,9 +661,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshTitle = slot23
+slot20.refreshTitle = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -636,100 +678,109 @@ slot23 = function(slot0)
 	slot5 = nil
 
 	slot6 = function(slot0)
-		--- BLOCK #0 1-34, warpins: 1 ---
+		--- BLOCK #0 1-38, warpins: 1 ---
 		slot1 = self
 		slot1.curEnt = slot0
 		slot1 = self
-		slot1 = slot1.curEnt
-		slot1 = slot1.eModel
-		slot1 = slot1.transform
+		slot3 = slot1
+		slot1 = slot1.getPlayerForwardPos
+		slot1 = slot1(slot3)
 		slot2 = self
+		slot2 = slot2.curEnt
+		slot2 = slot2.eModel
 		slot4 = slot2
-		slot2 = slot2.getPlayerForwardPos
-		slot2 = slot2(slot4)
-		slot1.position = slot2
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.markShare
-		slot1 = slot1.avatarHelper
-		slot3 = slot1
-		slot1 = slot1.animationTool
-		slot4 = self
-		slot4 = slot4.curEnt
-		slot5 = self
-		slot5 = slot5.animation
-		slot6 = nil
-		slot7 = true
+		slot2 = slot2.SetTransformPosition
+		slot5 = slot1.x
+		slot6 = slot1.y
+		slot7 = slot1.z
 
-		slot1(slot3, slot4, slot5, slot6, slot7)
+		slot2(slot4, slot5, slot6, slot7)
 
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.root
-		slot3 = slot1
-		slot1 = slot1.TryChangePage
-		slot4 = "showAvatar"
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.markShare
+		slot2 = slot2.avatarHelper
+		slot4 = slot2
+		slot2 = slot2.animationTool
 		slot5 = self
-		slot5 = slot5.animation
+		slot5 = slot5.curEnt
+		slot6 = self
+		slot6 = slot6.animation
+		slot7 = nil
+		slot8 = true
+
+		slot2(slot4, slot5, slot6, slot7, slot8)
+
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.root
+		slot4 = slot2
+		slot2 = slot2.TryChangePage
+		slot5 = "showAvatar"
+		slot6 = self
+		slot6 = slot6.animation
 		--- END OF BLOCK #0 ---
 
-		if slot5 == -1 then
+		if slot6 == -1 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 35-36, warpins: 1 ---
-		slot5 = 1
+		--- BLOCK #1 39-40, warpins: 1 ---
+		slot6 = 1
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 37-37, warpins: 1 ---
-		slot5 = 0
+		--- BLOCK #2 41-41, warpins: 1 ---
+		slot6 = 0
 
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 38-68, warpins: 2 ---
-		slot1(slot3, slot4, slot5)
+		--- BLOCK #3 42-75, warpins: 2 ---
+		slot2(slot4, slot5, slot6)
 
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.markShare
-		slot1 = slot1.bubbleHelper
-		slot3 = slot1
-		slot1 = slot1.setPos
-		slot4 = self
-		slot4 = slot4.curEnt
-		slot4 = slot4.eModel
-		slot4 = slot4.transform
-		slot4 = slot4.position
-		slot5 = self
-		slot5 = slot5.curEnt
-		slot5 = slot5.eModel
-		slot5 = slot5.transform
-		slot5 = slot5.up
-		slot6 = SysConfigData
-		slot6 = slot6.INFO_STAMP_BUBBLE_HEIGHT
-		slot5 = slot5 * slot6
-		slot4 = slot4 + slot5
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.markShare
+		slot2 = slot2.bubbleHelper
+		slot4 = slot2
+		slot2 = slot2.setPos
+		slot5 = Vector3
+		slot7 = self
+		slot7 = slot7.curEnt
+		slot7 = slot7.eModel
+		slot9 = slot7
+		slot7 = slot7.GetTransformPosition
+		MULTRES = slot7(slot9)
+		slot5 = slot5(MULTRES)
+		slot6 = self
+		slot6 = slot6.curEnt
+		slot6 = slot6.eModel
+		slot6 = slot6.transform
+		slot6 = slot6.up
+		slot7 = SysConfigData
+		slot7 = slot7.INFO_STAMP_BUBBLE_HEIGHT
+		slot6 = slot6 * slot7
+		slot5 = slot5 + slot6
 
-		slot1(slot3, slot4)
+		slot2(slot4, slot5)
 
-		slot1 = pg
-		slot1 = slot1.game
-		slot1 = slot1.markShare
-		slot1 = slot1.bubbleHelper
-		slot3 = slot1
-		slot1 = slot1.changeType
-		slot4 = true
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.markShare
+		slot2 = slot2.bubbleHelper
+		slot4 = slot2
+		slot2 = slot2.changeType
+		slot5 = true
 
-		slot1(slot3, slot4)
+		slot2(slot4, slot5)
 
 		return
 		--- END OF BLOCK #3 ---
@@ -756,9 +807,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.loadAvatar = slot23
+slot20.loadAvatar = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = SysConfigData
 	slot1 = slot1.INFO_STAMP_AVATAR_POSITION
@@ -784,9 +835,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.getPlayerForwardPos = slot23
+slot20.getPlayerForwardPos = slot22
 
-slot23 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = MarkShareEditCtrl
 	slot3 = slot3.MAIN_PAGE_TYPE
@@ -1067,9 +1118,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot21.switchNewOrHistoryPage = slot23
+slot20.switchNewOrHistoryPage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -1082,20 +1133,22 @@ slot23 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 8-14, warpins: 1 ---
+	--- BLOCK #1 8-16, warpins: 1 ---
 	slot7 = #slot1
 	slot7 = slot7 + 1
 	slot8 = {}
 	slot9 = slot6.createTs
 	slot8.createTs = slot9
 	slot8.key = slot5
+	slot9 = slot6.isPermanent
+	slot8.isPermanent = slot9
 	slot1[slot7] = slot8
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-16, warpins: 2 ---
+	--- BLOCK #2 17-18, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -1103,7 +1156,7 @@ slot23 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 17-60, warpins: 1 ---
+	--- BLOCK #3 19-62, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.sort
 	slot4 = slot1
@@ -1267,7 +1320,7 @@ slot23 = function(slot0)
 	slot2 = slot2.historyList
 
 	slot3 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-37, warpins: 1 ---
+		--- BLOCK #0 1-48, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -1284,31 +1337,44 @@ slot23 = function(slot0)
 		slot6 = slot3.GetRefValue
 		slot9 = "txtPositionUSDFText"
 		slot6 = slot6(slot8, slot9)
-		slot7 = ClientTextUtils
-		slot7 = slot7.setText
-		slot9 = slot4
-		slot10 = ""
+		slot9 = slot3
+		slot7 = slot3.GetRefValue
+		slot10 = "txtNameUSDFText"
+		slot7 = slot7(slot9, slot10)
+		slot8 = ClientTextUtils
+		slot8 = slot8.setText
+		slot10 = slot4
+		slot11 = ""
 
-		slot7(slot9, slot10)
+		slot8(slot10, slot11)
 
-		slot7 = ClientTextUtils
-		slot7 = slot7.setText
-		slot9 = slot5
-		slot10 = 0
+		slot8 = ClientTextUtils
+		slot8 = slot8.setText
+		slot10 = slot5
+		slot11 = 0
 
-		slot7(slot9, slot10)
+		slot8(slot10, slot11)
 
-		slot7 = ClientTextUtils
-		slot7 = slot7.setText
-		slot9 = slot6
-		slot10 = ""
+		slot8 = ClientTextUtils
+		slot8 = slot8.setText
+		slot10 = slot6
+		slot11 = ""
 
-		slot7(slot9, slot10)
+		slot8(slot10, slot11)
 
-		slot7 = slot2.key
-		slot0.name = slot7
+		slot8 = self
+		slot10 = slot8
+		slot8 = slot8._renderExpireInfo
+		slot11 = slot0
+		slot12 = slot7
+		slot13 = slot2
 
-		slot7 = function()
+		slot8(slot10, slot11, slot12, slot13)
+
+		slot8 = slot2.key
+		slot0.name = slot8
+
+		slot8 = function()
 			--- BLOCK #0 1-9, warpins: 1 ---
 			slot0 = pg
 			slot0 = slot0.game
@@ -1327,7 +1393,7 @@ slot23 = function(slot0)
 
 		end
 
-		slot0.luaClick = slot7
+		slot0.luaClick = slot8
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1364,14 +1430,14 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #4 61-62, warpins: 1 ---
+	--- BLOCK #4 63-64, warpins: 1 ---
 	slot6 = 1
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 63-63, warpins: 1 ---
+	--- BLOCK #5 65-65, warpins: 1 ---
 	slot6 = 0
 
 	--- END OF BLOCK #5 ---
@@ -1379,7 +1445,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 64-66, warpins: 2 ---
+	--- BLOCK #6 66-68, warpins: 2 ---
 	slot2(slot4, slot5, slot6)
 
 	return
@@ -1389,9 +1455,153 @@ slot23 = function(slot0)
 
 end
 
-slot21.initHistoryData = slot23
+slot20.initHistoryData = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot3.isPermanent
+	--- END OF BLOCK #0 ---
+
+	if slot4 == 1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.TryChangePage
+	slot7 = "Time"
+	slot8 = 0
+
+	slot4(slot6, slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-13, warpins: 2 ---
+	slot4 = SysConfigData
+	slot4 = slot4.MARKSHARE_ENCOURAGE_DURING_MAX
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot4 = 10
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot5 = slot3.createTs
+	--- END OF BLOCK #4 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-18, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-28, warpins: 2 ---
+	slot6 = Const
+	slot6 = slot6.SECONDS_ONE_DAY
+	slot6 = slot4 * slot6
+	slot5 = slot5 + slot6
+	slot6 = Time
+	slot6 = slot6.secondCache
+	slot6 = slot5 - slot6
+	slot7 = 0
+	--- END OF BLOCK #6 ---
+
+	if slot6 <= slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-42, warpins: 1 ---
+	slot9 = slot1
+	slot7 = slot1.TryChangePage
+	slot10 = "Time"
+	slot11 = 2
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot2
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = "MARK_SHARE_EXPIRED"
+	MULTRES = slot10(slot12)
+
+	slot7(slot9, MULTRES)
+
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 43-66, warpins: 2 ---
+	slot9 = slot1
+	slot7 = slot1.TryChangePage
+	slot10 = "Time"
+	slot11 = 1
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = math
+	slot7 = slot7.ceil
+	slot9 = Const
+	slot9 = slot9.SECONDS_ONE_DAY
+	slot9 = slot6 / slot9
+	slot7 = slot7(slot9)
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot2
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "MARK_SHARE_EXPIRE_DAYS"
+	slot13 = slot13(slot15)
+	slot14 = slot7
+	MULTRES = slot11(slot13, slot14)
+
+	slot8(slot10, MULTRES)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot20._renderExpireInfo = slot22
+
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -1409,9 +1619,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onHistoryListScroll = slot23
+slot20.onHistoryListScroll = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.historyList
@@ -1516,9 +1726,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.renderHistoryButtons = slot23
+slot20.renderHistoryButtons = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curTextContentGroupConfirm
 	slot1 = #slot1
@@ -1581,9 +1791,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.checkAllDefault = slot23
+slot20.checkAllDefault = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curTextContentGroupConfirm
 	slot1 = #slot1
@@ -1620,9 +1830,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.checkTextClipsEmpty = slot23
+slot20.checkTextClipsEmpty = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.animation
@@ -1871,9 +2081,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshConsumeList = slot23
+slot20.refreshConsumeList = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isDirty
 	--- END OF BLOCK #0 ---
@@ -2372,7 +2582,7 @@ slot23 = function(slot0)
 		slot0 = slot0.cdTs
 		slot0 = slot0 + 1
 		slot1 = Time
-		slot1 = slot1.secondCache
+		slot1 = slot1.realSecondCache
 		--- END OF BLOCK #0 ---
 
 		if slot1 < slot0 then
@@ -2471,7 +2681,7 @@ slot23 = function(slot0)
 		--- BLOCK #6 51-59, warpins: 2 ---
 		slot0 = self
 		slot1 = Time
-		slot1 = slot1.secondCache
+		slot1 = slot1.realSecondCache
 		slot0.cdTs = slot1
 		slot0 = self
 		slot2 = slot0
@@ -2576,9 +2786,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.initNewMarkEditingData = slot23
+slot20.initNewMarkEditingData = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -2627,9 +2837,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshHoldingWordDisplay = slot23
+slot20.refreshHoldingWordDisplay = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -2892,9 +3102,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshWordDisplay = slot23
+slot20.refreshWordDisplay = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isDirty
 	--- END OF BLOCK #0 ---
@@ -3409,9 +3619,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEditingPage = slot23
+slot20.refreshEditingPage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listTemplateUList
@@ -3553,9 +3763,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEditingSentencePage = slot23
+slot20.refreshEditingSentencePage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listWordUList
@@ -3899,9 +4109,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEditingWordPage = slot23
+slot20.refreshEditingWordPage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listConjUList
@@ -4041,9 +4251,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEditingConjPage = slot23
+slot20.refreshEditingConjPage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -4630,9 +4840,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEditingBubblePage = slot23
+slot20.refreshEditingBubblePage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listActionUList
@@ -5229,9 +5439,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEditingAnimationPage = slot23
+slot20.refreshEditingAnimationPage = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.historyList
@@ -5278,9 +5488,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.destroy = slot23
+slot20.destroy = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.root
@@ -5412,9 +5622,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.escFunc = slot23
+slot20.escFunc = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-42, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
@@ -5763,7 +5973,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 52-122, warpins: 2 ---
+	--- BLOCK #2 52-126, warpins: 2 ---
 	slot2 = slot0.view
 	slot2 = slot2.historyList
 	slot4 = slot2
@@ -6156,6 +6366,29 @@ slot23 = function(slot0)
 	end
 
 	slot5.luaClick = slot6
+	slot5 = slot0.view
+	slot5 = slot5.btnInfoUButton
+
+	slot6 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.openCommonPopUpTipById
+		slot3 = 42
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5.luaClick = slot6
 
 	return
 	--- END OF BLOCK #2 ---
@@ -6164,9 +6397,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.addListener = slot23
+slot20.addListener = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.destroy
@@ -6207,9 +6440,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.closePanel = slot23
+slot20.closePanel = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = fingerGestures
 	slot1 = slot1.Active
@@ -6308,9 +6541,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.initGesture = slot23
+slot20.initGesture = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = fingerGestures
 	slot1 = slot1.DeActive
@@ -6324,9 +6557,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.destroyGesture = slot23
+slot20.destroyGesture = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curEnt
 
@@ -6386,9 +6619,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onSwipeModel = slot23
+slot20.onSwipeModel = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6499,19 +6732,17 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.refreshBubble = slot23
+slot20.refreshBubble = slot22
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = FlagUtils
-	slot1 = slot1.hasFlag
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.ugcFuncSwitch
-	slot4 = PlayerForbidConst
-	slot4 = slot4.PLAYER_SWITCH
-	slot4 = slot4.PLAYER_MEDIA_MARK
-	slot1 = slot1(slot3, slot4)
+slot22 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = LuaUIUtils
+	slot1 = slot1.checkFeatureForbid
+	slot3 = PlayerForbidConst
+	slot3 = slot3.PLAYER_SWITCH
+	slot3 = slot3.PLAYER_MEDIA_MARK
+	slot1 = slot1(slot3)
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -6521,24 +6752,14 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 12-20, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.showBubbleMessageRaw
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "PLAYER_PERMISSION_LIMITED"
-	MULTRES = slot4(slot6)
-
-	slot2(MULTRES)
-
+	--- BLOCK #1 9-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 21-24, warpins: 1 ---
-	slot2 = function()
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot1 = function()
 		--- BLOCK #0 1-44, warpins: 1 ---
 		slot0 = Utils
 		slot0 = slot0.getInfoStampCostTypeList
@@ -6594,41 +6815,35 @@ slot23 = function(slot0)
 
 	end
 
-	slot3 = slot0.photoTemplate
+	slot2 = slot0.photoTemplate
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 25-27, warpins: 1 ---
-	slot3 = slot0.photoSprite
+	--- BLOCK #3 14-16, warpins: 1 ---
+	slot2 = slot0.photoSprite
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 28-41, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.addPhotoImg
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.mobileCameraMgr
-	slot8 = slot6
-	slot6 = slot6.GetSpriteCompressByte
-	slot9 = slot0.photoSprite
-	slot6 = slot6(slot8, slot9)
+	--- BLOCK #4 17-24, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.addPhotoImgSprite
+	slot5 = slot0.photoSprite
 
-	slot7 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -6660,31 +6875,31 @@ slot23 = function(slot0)
 
 	end
 
-	slot3(slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 42-43, warpins: 2 ---
-	slot3 = slot2
+	--- BLOCK #5 25-26, warpins: 2 ---
+	slot2 = slot1
 
-	slot3()
+	slot2()
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 44-45, warpins: 2 ---
+	--- BLOCK #6 27-28, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 46-46, warpins: 2 ---
+	--- BLOCK #7 29-29, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -6692,9 +6907,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.addMark = slot23
+slot20.addMark = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -6747,9 +6962,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onAddInfoStampSuccess = slot23
+slot20.onAddInfoStampSuccess = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.initHistoryData
@@ -6763,9 +6978,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onDeleteInfoStampSuccess = slot23
+slot20.onDeleteInfoStampSuccess = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -6828,9 +7043,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.revertAnimation = slot23
+slot20.revertAnimation = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = nil
 	slot0.bubbleType = slot1
@@ -6866,9 +7081,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.deleteBubble = slot23
+slot20.deleteBubble = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot0.curTextContentGroupConfirm = slot1
@@ -6884,9 +7099,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.deleteMainInfoStamp = slot23
+slot20.deleteMainInfoStamp = slot22
 
-slot23 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.result
 
@@ -6932,7 +7147,7 @@ slot23 = function(slot0, slot1)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
@@ -6985,96 +7200,130 @@ slot23 = function(slot0, slot1)
 	slot14 = slot14(slot16, slot17, slot18, slot19)
 	--- END OF BLOCK #4 ---
 
-	slot14 = if slot14 then
+	slot15 = if slot14 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 69-79, warpins: 1 ---
-	slot15 = ClientTextUtils
-	slot15 = slot15.setText
-	slot17 = slot11
-	slot18 = pg
-	slot18 = slot18.getLocalizationText
-	slot20 = MapBlockConfigData
-	slot20 = slot20[slot14]
-	slot20 = slot20.areaName
-	slot18 = slot18(slot20)
+	--- BLOCK #5 69-70, warpins: 1 ---
+	slot15 = MapBlockConfigData
+	slot15 = slot15[slot14]
 	--- END OF BLOCK #5 ---
 
-	slot18 = if not slot18 then
-	JUMP TO BLOCK #6
-	else
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 71-78, warpins: 2 ---
+	slot16 = pg
+	slot16 = slot16.me
+	slot18 = slot16
+	slot16 = slot16.getDungeonName
+	slot19 = slot13
+	slot16 = slot16(slot18, slot19)
+	--- END OF BLOCK #6 ---
+
+	slot15 = if slot15 then
 	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 80-80, warpins: 1 ---
-	slot18 = ""
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 81-81, warpins: 2 ---
-	slot15(slot17, slot18)
-
+	--- BLOCK #7 79-81, warpins: 1 ---
+	slot17 = slot15.areaName
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot17 = if slot17 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 82-100, warpins: 2 ---
-	slot15 = ClientTextUtils
-	slot15 = slot15.setText
-	slot17 = slot9
-	slot18 = pg
-	slot18 = slot18.game
-	slot18 = slot18.markShare
-	slot20 = slot18
-	slot18 = slot18.getTemplateTxt
-	slot21 = slot12
-	MULTRES = slot18(slot20, slot21)
-
-	slot15(slot17, MULTRES)
-
-	slot15 = ClientTextUtils
-	slot15 = slot15.setText
-	slot17 = slot10
-	slot18 = slot3[slot7]
-	slot18 = slot18.name
-	slot18 = slot2[slot18]
-	slot18 = slot18.likes
-
-	slot15(slot17, slot18)
-
+	--- BLOCK #8 82-86, warpins: 1 ---
+	slot17 = pg
+	slot17 = slot17.getLocalizationText
+	slot19 = slot15.areaName
+	slot17 = slot17(slot19)
+	slot16 = slot17
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 101-101, warpins: 2 ---
+	--- BLOCK #9 87-91, warpins: 3 ---
+	slot17 = ClientTextUtils
+	slot17 = slot17.setText
+	slot19 = slot11
 	--- END OF BLOCK #9 ---
+
+	slot20 = if not slot16 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 92-92, warpins: 1 ---
+	slot20 = ""
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 93-112, warpins: 2 ---
+	slot17(slot19, slot20)
+
+	slot17 = ClientTextUtils
+	slot17 = slot17.setText
+	slot19 = slot9
+	slot20 = pg
+	slot20 = slot20.game
+	slot20 = slot20.markShare
+	slot22 = slot20
+	slot20 = slot20.getTemplateTxt
+	slot23 = slot12
+	MULTRES = slot20(slot22, slot23)
+
+	slot17(slot19, MULTRES)
+
+	slot17 = ClientTextUtils
+	slot17 = slot17.setText
+	slot19 = slot10
+	slot20 = slot3[slot7]
+	slot20 = slot20.name
+	slot20 = slot2[slot20]
+	slot20 = slot20.likes
+
+	slot17(slot19, slot20)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 113-113, warpins: 2 ---
+	--- END OF BLOCK #12 ---
 
 	for slot7=slot4, slot5, slot6
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #10
+	GO OUT TO BLOCK #13
 
-	--- BLOCK #10 102-102, warpins: 1 ---
+	--- BLOCK #13 114-114, warpins: 1 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot21.onRequestSelfMarkInfo = slot23
+slot20.onRequestSelfMarkInfo = slot22
 
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot22 = function(slot0, slot1)
+	--- BLOCK #0 1-35, warpins: 1 ---
 	slot2 = SysConfigData
 	slot2 = slot2.INFO_STAMP_CAMERA_INFO
 	slot3 = {
@@ -7116,6 +7365,11 @@ slot23 = function(slot0, slot1)
 	slot8 = slot6
 	slot6 = slot6.GetFuncMenuBackFov
 	slot6 = slot6(slot8)
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.getCameraHeightInfo
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -7125,21 +7379,32 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 31-45, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.camera
-	slot9 = slot7
-	slot7 = slot7.cameraBlendToFixedWithTargetByActorId
-	slot10 = slot2[1]
-	slot11 = slot2[2]
-	slot12 = slot2[3]
-	slot13 = pg
-	slot13 = slot13.me
-	slot13 = slot13.actorId
-	slot14 = slot2[4]
+	--- BLOCK #1 36-68, warpins: 1 ---
+	slot8 = {}
+	slot9 = slot2[1]
+	slot9 = slot9[1]
+	slot8[1] = slot9
+	slot9 = slot2[1]
+	slot9 = slot9[2]
+	slot9 = slot9 - slot7
+	slot8[2] = slot9
+	slot9 = slot2[1]
+	slot9 = slot9[3]
+	slot8[3] = slot9
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.camera
+	slot11 = slot9
+	slot9 = slot9.cameraBlendToFixedWithTargetByActorId
+	slot12 = slot8
+	slot13 = slot2[2]
+	slot14 = slot2[3]
+	slot15 = pg
+	slot15 = slot15.me
+	slot15 = slot15.actorId
+	slot16 = slot2[4]
 
-	slot15 = function()
+	slot17 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -7148,28 +7413,47 @@ slot23 = function(slot0, slot1)
 
 	end
 
-	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	slot18 = {}
+	slot19 = Vector3
+	slot21 = 0
+	slot22 = slot7
+	slot23 = 0
+	slot19 = slot19(slot21, slot22, slot23)
+	slot18.pivotOffset = slot19
+
+	slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 46-59, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.camera
-	slot9 = slot7
-	slot7 = slot7.cameraBlendToFixedWithTargetByActorId
-	slot10 = slot3[1]
-	slot11 = slot3[2]
-	slot12 = slot3[3]
-	slot13 = pg
-	slot13 = slot13.me
-	slot13 = slot13.actorId
-	slot14 = slot3[4]
+	--- BLOCK #2 69-100, warpins: 1 ---
+	slot8 = {}
+	slot9 = slot3[1]
+	slot9 = slot9[1]
+	slot8[1] = slot9
+	slot9 = slot3[1]
+	slot9 = slot9[2]
+	slot9 = slot9 - slot7
+	slot8[2] = slot9
+	slot9 = slot3[1]
+	slot9 = slot9[3]
+	slot8[3] = slot9
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.camera
+	slot11 = slot9
+	slot9 = slot9.cameraBlendToFixedWithTargetByActorId
+	slot12 = slot8
+	slot13 = slot3[2]
+	slot14 = slot3[3]
+	slot15 = pg
+	slot15 = slot15.me
+	slot15 = slot15.actorId
+	slot16 = slot3[4]
 
-	slot15 = function()
+	slot17 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -7178,14 +7462,28 @@ slot23 = function(slot0, slot1)
 
 	end
 
-	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	slot18 = {}
+	slot19 = Vector3
+	slot21 = 0
+	slot22 = slot7
+	slot23 = 0
+	slot19 = slot19(slot21, slot22, slot23)
+	slot18.pivotOffset = slot19
+
+	slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 60-60, warpins: 2 ---
+	--- BLOCK #3 101-106, warpins: 2 ---
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.camera
+	slot8 = slot8.fixedWithTargetCameraMode
+	slot0.markShareCameraMode = slot8
+
 	return
 	--- END OF BLOCK #3 ---
 
@@ -7193,9 +7491,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.switchCamera = slot23
+slot20.switchCamera = slot22
 
-slot23 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.inputFieldUTMPInputField
@@ -7517,9 +7815,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.gm = slot23
+slot20.gm = slot22
 
-return slot21
+return slot20
 --- END OF BLOCK #0 ---
 
 

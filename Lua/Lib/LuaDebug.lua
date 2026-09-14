@@ -2506,11 +2506,11 @@ slot16 = function()
 	end
 
 	slot16 = {
-		["\\n"] = "\n",
-		["\\r"] = "\r",
 		["\\f"] = "",
 		["\\t"] = "\t",
-		["\\b"] = ""
+		["\\b"] = "",
+		["\\n"] = "\n",
+		["\\r"] = "\r"
 	}
 	slot17 = setmetatable
 	slot19 = slot16
@@ -2933,13 +2933,13 @@ slot16 = function()
 	end
 
 	slot17 = {
-		["\""] = "\\\"",
-		["\r"] = "\\r",
-		["\n"] = "\\n",
-		[""] = "\\f",
 		["/"] = "\\/",
+		["\""] = "\\\"",
 		["\\"] = "\\\\",
 		[""] = "\\b",
+		[""] = "\\f",
+		["\r"] = "\\r",
+		["\n"] = "\\n",
 		["\t"] = "\\t"
 	}
 
@@ -3303,10 +3303,6 @@ slot18, slot19 = nil
 slot20 = slot16
 slot20 = slot20()
 slot21 = {
-	StepNext = false,
-	StepInLevel = 0,
-	StepIn = false,
-	Run = true,
 	version = "0.9.3",
 	serVarLevel = 4,
 	DebugLuaFie = "",
@@ -3317,7 +3313,11 @@ slot21 = {
 	isProntToConsole = 1,
 	isHook = true,
 	StepOut = false,
-	StepNextLevel = 0
+	StepNextLevel = 0,
+	StepNext = false,
+	StepInLevel = 0,
+	StepIn = false,
+	Run = true
 }
 slot22 = {}
 slot21.fileMaps = slot22
@@ -3423,10 +3423,6 @@ end
 
 slot25.wrap = slot26
 slot25 = {
-	C2S_ReqVar = 6,
-	S2C_ReqVar = 5,
-	C2S_HITBreakPoint = 4,
-	S2C_RUN = 3,
 	C2S_SetBreakPoints = 2,
 	S2C_SetBreakPoints = 1,
 	C2S_ReLoadFile = 27,
@@ -3445,7 +3441,11 @@ slot25 = {
 	S2C_StepInRequest = 10,
 	C2S_NextResponseOver = 9,
 	C2S_NextResponse = 8,
-	S2C_NextRequest = 7
+	S2C_NextRequest = 7,
+	C2S_ReqVar = 6,
+	S2C_ReqVar = 5,
+	C2S_HITBreakPoint = 4,
+	S2C_RUN = 3
 }
 slot21.event = slot25
 
@@ -9331,8 +9331,8 @@ slot51 = function(slot0, slot1)
 		slot9 = slot9.event
 		slot9 = slot9.C2S_ReqVar
 		slot10 = {
-			varType = "nil",
-			isComplete = 1
+			isComplete = 1,
+			varType = "nil"
 		}
 		slot11 = variablesReference
 		slot10.variablesReference = slot11
@@ -9375,8 +9375,8 @@ slot51 = function(slot0, slot1)
 		slot5.debugSpeedIndex = slot6
 		slot6 = {}
 		slot7 = {
-			isValue = false,
 			name = "error",
+			isValue = false,
 			valueType = "string"
 		}
 		slot8 = ZZBase64

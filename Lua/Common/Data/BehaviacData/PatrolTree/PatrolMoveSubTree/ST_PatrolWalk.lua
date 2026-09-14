@@ -16,30 +16,30 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "patrolPos",
 	type = "vector<float>",
+	name = "patrolPos",
 	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
-	name = "patrolMaxTime",
 	type = "float",
 	const = 15,
+	name = "patrolMaxTime",
 	value = "15"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tPatrolSpeed",
 	type = "float",
 	const = -1,
+	name = "tPatrolSpeed",
 	value = "-1"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tPathFindType",
 	type = "PathFindType",
+	name = "tPathFindType",
 	value = "Auto"
 }
 slot6 = slot0.PathFindType
@@ -47,8 +47,8 @@ slot6 = slot6.Auto
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	name = "tBehaviorSpeedRateType",
 	type = "SpeedRateType",
+	name = "tBehaviorSpeedRateType",
 	value = "Slow"
 }
 slot6 = slot0.SpeedRateType
@@ -56,9 +56,9 @@ slot6 = slot6.Slow
 slot5.const = slot6
 slot4[5] = slot5
 slot5 = {
-	name = "tUseAccurateArrive",
 	type = "bool",
 	const = false,
+	name = "tUseAccurateArrive",
 	value = "false"
 }
 slot4[6] = slot5

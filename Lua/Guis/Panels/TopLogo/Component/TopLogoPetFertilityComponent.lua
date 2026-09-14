@@ -1,43 +1,46 @@
---- BLOCK #0 1-69, warpins: 1 ---
+--- BLOCK #0 1-70, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.Utils.Utils"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.Const"
+slot4 = "Common.Utils.Utils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.TopLogoConst"
+slot5 = "Common.Const.Const"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.EventConst"
+slot6 = "Const.TopLogoConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.sys_config_data"
+slot7 = "Const.EventConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.LuaUIUtils"
+slot8 = "Data.sys_config_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.UIConst"
+slot9 = "Utils.LuaUIUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.Panels.TopLogo.Component.TopLogoItemComponent"
+slot10 = "Const.UIConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.ClientUtils"
+slot11 = "Guis.Panels.TopLogo.Component.TopLogoItemComponent"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.ClientConst"
+slot12 = "Utils.ClientUtils"
 slot10 = slot10(slot12)
-slot11 = slot0.LightClass
-slot13 = "TopLogoPetFertilityComponent"
-slot14 = slot8
-slot11 = slot11(slot13, slot14)
+slot11 = require
+slot13 = "Const.ClientConst"
+slot11 = slot11(slot13)
+slot12 = slot1.LightClass
+slot14 = "TopLogoPetFertilityComponent"
+slot15 = slot9
+slot12 = slot12(slot14, slot15)
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot3 = Vector3
 	slot3 = slot3.New
@@ -66,9 +69,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.ctor = slot12
+slot12.ctor = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.className
@@ -113,9 +116,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onCtor = slot12
+slot12.onCtor = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.m_pendingFertilityRefresh
 	--- END OF BLOCK #0 ---
@@ -195,9 +198,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.shouldBeActive = slot12
+slot12.shouldBeActive = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = nil
 	slot0.petFertilityVisible = slot1
@@ -223,9 +226,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.resetRender = slot12
+slot12.resetRender = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = false
 	slot0.m_pendingFertilityRefresh = slot1
@@ -246,9 +249,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onDestroy = slot12
+slot12.onDestroy = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = slot0.refUContainer
 	slot1 = slot1.content
@@ -277,24 +280,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.findObjects = slot12
+slot12.findObjects = slot13
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.PET_FERTILITY
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot11.getComponentName = slot12
-
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = function()
 		--- BLOCK #0 1-18, warpins: 1 ---
@@ -392,9 +380,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.addEntityListener = slot12
+slot12.addEntityListener = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entity
 	--- END OF BLOCK #0 ---
@@ -451,9 +439,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.innerGetVisible = slot12
+slot12.innerGetVisible = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_pendingFertilityRefresh
 	--- END OF BLOCK #0 ---
@@ -486,9 +474,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.refreshTopLogoInfo = slot12
+slot12.refreshTopLogoInfo = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContainerLoaded
@@ -586,9 +574,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshPetFertility = slot12
+slot12.refreshPetFertility = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pairs
 	slot3 = pg
@@ -604,7 +592,7 @@ slot12 = function(slot0)
 
 
 	--- BLOCK #1 7-7, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -659,9 +647,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.m_getTopLogoShowHatchSlotIndex = slot12
+slot12.m_getTopLogoShowHatchSlotIndex = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkFinalVisible
@@ -794,14 +782,8 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #10 61-79, warpins: 1 ---
+	--- BLOCK #10 61-75, warpins: 1 ---
 	slot5 = 1
-	slot6 = ClientUtils
-	slot6 = slot6.setL10nUCountDownTextFunc
-	slot8 = slot0.hatchingCountDown
-
-	slot6(slot8)
-
 	slot6 = pg
 	slot6 = slot6.me
 	slot6 = slot6.hatchSlotMap
@@ -813,7 +795,7 @@ slot12 = function(slot0)
 	slot10 = slot6
 	slot11 = UIConst
 	slot11 = slot11.TimeType
-	slot11 = slot11.Full
+	slot11 = slot11.Short
 
 	slot7(slot9, slot10, slot11)
 
@@ -822,7 +804,7 @@ slot12 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #11 80-84, warpins: 1 ---
+	--- BLOCK #11 76-80, warpins: 1 ---
 	slot6 = Const
 	slot6 = slot6.PET_BALL
 	slot6 = slot6.HATCH_STATUS_SUCC
@@ -835,7 +817,7 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #12 85-89, warpins: 1 ---
+	--- BLOCK #12 81-85, warpins: 1 ---
 	slot5 = 2
 	slot6 = slot0.hatchingCountDown
 	slot8 = slot6
@@ -848,7 +830,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 90-96, warpins: 4 ---
+	--- BLOCK #13 86-92, warpins: 4 ---
 	slot6 = slot0.rootComponent
 	slot8 = slot6
 	slot6 = slot6.TryChangePage
@@ -864,9 +846,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.m_refreshTplPetFertility = slot12
+slot12.m_refreshTplPetFertility = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContainerLoaded
@@ -904,9 +886,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onLanguageChanged = slot12
+slot12.onLanguageChanged = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.entity
 	slot1 = slot1.templateId
@@ -954,9 +936,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getInitMaxDistance = slot12
+slot12.getInitMaxDistance = slot13
 
-return slot11
+return slot12
 --- END OF BLOCK #0 ---
 
 

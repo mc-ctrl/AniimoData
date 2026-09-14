@@ -585,7 +585,7 @@ slot13 = function(slot0)
 
 	--- BLOCK #3 14-16, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.startTime = slot1
 
 	--- END OF BLOCK #3 ---

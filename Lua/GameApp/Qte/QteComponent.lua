@@ -54,10 +54,12 @@ end
 slot5.ctor = slot6
 
 slot6 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.id = slot1
 	slot3 = 0
 	slot0.curTime = slot3
+	slot3 = false
+	slot0.destroyed = slot3
 	--- END OF BLOCK #0 ---
 
 	slot3 = if not slot2 then
@@ -67,14 +69,14 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 8-8, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-12, warpins: 2 ---
+	--- BLOCK #2 9-14, warpins: 2 ---
 	slot0.context = slot3
 	slot5 = slot0
 	slot3 = slot0.getPrefabResId
@@ -88,7 +90,7 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 13-16, warpins: 1 ---
+	--- BLOCK #3 15-18, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.loadPrefab
 	slot7 = slot3
@@ -100,7 +102,7 @@ slot6 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-20, warpins: 2 ---
+	--- BLOCK #4 19-22, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.onStart
 
@@ -132,11 +134,35 @@ end
 slot5.update = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = false
-
-	return slot1
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.destroyed
 	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
 
 
 
@@ -145,7 +171,9 @@ end
 slot5.isFinish = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = true
+	slot0.destroyed = slot1
 	slot3 = slot0
 	slot1 = slot0.onDestroy
 

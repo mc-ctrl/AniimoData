@@ -74,11 +74,10 @@ end
 slot10.findObjects = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.transform
-	slot3 = slot3.gameObject
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
 	slot4 = false
 
 	slot1(slot3, slot4)
@@ -93,11 +92,10 @@ end
 slot10.initView = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.transform
-	slot3 = slot3.gameObject
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
 	slot4 = true
 
 	slot1(slot3, slot4)
@@ -117,11 +115,10 @@ end
 slot10.showOperateBtns = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.transform
-	slot3 = slot3.gameObject
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
 	slot4 = false
 
 	slot1(slot3, slot4)

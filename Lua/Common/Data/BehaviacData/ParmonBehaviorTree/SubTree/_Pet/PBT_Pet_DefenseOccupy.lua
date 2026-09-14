@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 13,
-	useForRoute = false,
+	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_DefenseOccupy",
 	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_DefenseOccupy"
+	version = 13,
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "11",
-	class = "DecoratorLoop"
+	class = "DecoratorLoop",
+	id = "11"
 }
 slot5 = {}
 slot6 = {}
@@ -43,8 +43,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "12",
-	class = "Action"
+	class = "Action",
+	id = "12"
 }
 slot8 = {}
 slot9 = {}

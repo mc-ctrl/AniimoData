@@ -241,10 +241,9 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-28, warpins: 2 ---
+	--- BLOCK #2 9-26, warpins: 2 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = slot0.target
 	slot3 = slot3.actorId
 	slot2.alwaysLookForwardActorId = slot3
@@ -257,7 +256,6 @@ slot17 = function(slot0, slot1)
 
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = slot0.ballData
 	slot3 = slot3.animType
 	slot2.ThrowAnimType = slot3
@@ -271,7 +269,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 29-32, warpins: 1 ---
+	--- BLOCK #3 27-30, warpins: 1 ---
 	slot2 = slot0.target
 	slot3 = Time
 	slot3 = slot3.secondCache
@@ -281,16 +279,17 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 33-43, warpins: 2 ---
+	--- BLOCK #4 31-42, warpins: 2 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.ForceChangeToState
-	slot5 = CharacterStateConst
-	slot5 = slot5.THROWING
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = CharacterStateConst
+	slot6 = slot6.THROWING
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	slot2 = slot0.alreadyHolding
 	--- END OF BLOCK #4 ---
@@ -302,7 +301,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 44-53, warpins: 1 ---
+	--- BLOCK #5 43-52, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.addTimer
 	slot4 = 0.01
@@ -317,7 +316,7 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 54-62, warpins: 1 ---
+	--- BLOCK #6 53-61, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.addTimer
 	slot4 = 0.5
@@ -332,7 +331,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 63-64, warpins: 2 ---
+	--- BLOCK #7 62-63, warpins: 2 ---
 	slot2 = true
 
 	return slot2
@@ -423,10 +422,9 @@ end
 slot16.doThrow = slot17
 
 slot17 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = 0
 	slot1.alwaysLookForwardActorId = slot2
 	slot1 = slot0.ballEnt
@@ -439,7 +437,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
+	--- BLOCK #1 8-11, warpins: 1 ---
 	slot1 = slot0.ballEnt
 	slot1 = slot1.isModelLoaded
 	--- END OF BLOCK #1 ---
@@ -451,7 +449,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #2 13-15, warpins: 1 ---
+	--- BLOCK #2 12-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.fireBall
 
@@ -462,7 +460,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-20, warpins: 3 ---
+	--- BLOCK #3 15-19, warpins: 3 ---
 	slot1 = nil
 	slot0.target = slot1
 	slot1 = slot0.waitThrowTimer
@@ -475,7 +473,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #4 21-26, warpins: 1 ---
+	--- BLOCK #4 20-25, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
 	slot3 = slot0.waitThrowTimer
@@ -489,7 +487,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 27-31, warpins: 2 ---
+	--- BLOCK #5 26-30, warpins: 2 ---
 	slot1 = ThrowBallContext
 	slot1 = slot1.destroy
 	slot3 = slot0

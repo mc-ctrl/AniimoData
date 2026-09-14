@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10241",
 	agenttype = "PuppetAgent",
-	version = 57,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10241"
+	version = 57
 }
 slot4 = {}
 slot3.properties = slot4

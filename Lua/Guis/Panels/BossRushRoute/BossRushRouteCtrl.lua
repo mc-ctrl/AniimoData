@@ -189,8 +189,8 @@ slot14 = function(slot0)
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_BOSS_RUSH_BUFF_SELECT
 		slot4 = {
-			isShow = true,
-			tab = 0
+			tab = 0,
+			isShow = true
 		}
 
 		slot0(slot2, slot3, slot4)
@@ -216,8 +216,8 @@ slot14 = function(slot0)
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_BOSS_RUSH_BUFF_SELECT
 		slot4 = {
-			isShow = true,
-			tab = 1
+			tab = 1,
+			isShow = true
 		}
 
 		slot0(slot2, slot3, slot4)

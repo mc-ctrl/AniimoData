@@ -1,4 +1,4 @@
---- BLOCK #0 1-62, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerConst"
 slot0 = slot0(slot2)
@@ -18,38 +18,32 @@ slot5 = require
 slot7 = "Common.Ability.SkillState.CharmState"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Ability.SkillState.ForceDisplacementState"
+slot8 = "Common.Ability.SkillState.KnockBackState"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Ability.SkillState.KnockBackState"
+slot9 = "Common.Ability.SkillState.KnockUpState"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Ability.SkillState.KnockUpState"
+slot10 = "Common.Ability.SkillState.BossSpecialBreakFallState"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Ability.SkillState.PsychicControlledState"
+slot11 = "Common.Ability.SkillState.AppearDashState"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Ability.SkillState.BossSpecialBreakFallState"
+slot12 = "Common.Ability.SkillState.BossSpecialLandState"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Ability.SkillState.AppearDashState"
+slot13 = "Core.Log.LoggerManager"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Ability.SkillState.BossSpecialLandState"
+slot14 = "Common.Ability.CombatLogger"
 slot12 = slot12(slot14)
-slot13 = require
-slot15 = "Core.Log.LoggerManager"
+slot13 = slot1.LiteClass
+slot15 = "SkillStateManager"
 slot13 = slot13(slot15)
-slot14 = require
-slot16 = "Common.Ability.CombatLogger"
-slot14 = slot14(slot16)
-slot15 = slot1.LiteClass
-slot17 = "SkillStateManager"
-slot15 = slot15(slot17)
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-77, warpins: 1 ---
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-63, warpins: 1 ---
 	slot0.owner = slot1
 	slot2 = AbilityConst
 	slot2 = slot2.SKILL_STATE_NONE
@@ -79,13 +73,6 @@ slot16 = function(slot0, slot1)
 	slot2[slot3] = slot4
 	slot2 = slot0.states
 	slot3 = AbilityConst
-	slot3 = slot3.SKILL_STATE_FORCE_DISPLACEMENT
-	slot4 = ForceDisplacementState
-	slot6 = slot0.owner
-	slot4 = slot4(slot6)
-	slot2[slot3] = slot4
-	slot2 = slot0.states
-	slot3 = AbilityConst
 	slot3 = slot3.SKILL_STATE_KNOCK_BACK
 	slot4 = KnockBackState
 	slot6 = slot0.owner
@@ -95,13 +82,6 @@ slot16 = function(slot0, slot1)
 	slot3 = AbilityConst
 	slot3 = slot3.SKILL_STATE_KNOCK_UP
 	slot4 = KnockUpState
-	slot6 = slot0.owner
-	slot4 = slot4(slot6)
-	slot2[slot3] = slot4
-	slot2 = slot0.states
-	slot3 = AbilityConst
-	slot3 = slot3.SKILL_STATE_PSYCHIC_CONTROLLED
-	slot4 = PsychicControlledState
 	slot6 = slot0.owner
 	slot4 = slot4(slot6)
 	slot2[slot3] = slot4
@@ -134,9 +114,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.ctor = slot16
+slot13.ctor = slot14
 
-slot16 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkState
@@ -199,9 +179,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.tick = slot16
+slot13.tick = slot14
 
-slot16 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.currentState
 	slot2 = AbilityConst
@@ -396,9 +376,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.checkState = slot16
+slot13.checkState = slot14
 
-slot16 = function(slot0, slot1, ...)
+slot14 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -525,110 +505,9 @@ slot16 = function(slot0, slot1, ...)
 
 end
 
-slot15.switchState = slot16
+slot13.switchState = slot14
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = slot0.currentState
-	slot2 = AbilityConst
-	slot2 = slot2.SKILL_STATE_FORCE_DISPLACEMENT
-	--- END OF BLOCK #0 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-12, warpins: 1 ---
-	slot1 = slot0.states
-	slot2 = AbilityConst
-	slot2 = slot2.SKILL_STATE_FORCE_DISPLACEMENT
-	slot1 = slot1[slot2]
-	slot1 = slot1.notBlockInput
-	slot1 = not slot1
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #2 13-14, warpins: 1 ---
-	slot1 = false
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 15-15, warpins: 0 ---
-	slot1 = true
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 16-16, warpins: 3 ---
-	return slot1
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot15.forceDisplacementST = slot16
-
-slot16 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = slot0.currentState
-	slot2 = AbilityConst
-	slot2 = slot2.SKILL_STATE_FORCE_DISPLACEMENT
-	--- END OF BLOCK #0 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot1 = slot0.states
-	slot2 = AbilityConst
-	slot2 = slot2.SKILL_STATE_FORCE_DISPLACEMENT
-	slot1 = slot1[slot2]
-	slot1 = slot1.notBlockInput
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #2 12-13, warpins: 1 ---
-	slot1 = false
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 14-14, warpins: 0 ---
-	slot1 = true
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 15-15, warpins: 3 ---
-	return slot1
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot15.forceDisplacementNotBlockInputST = slot16
-
-return slot15
+return slot13
 --- END OF BLOCK #0 ---
 
 

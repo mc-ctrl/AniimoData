@@ -7,54 +7,54 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 85,
 	useForRoute = false,
 	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10027_Gold"
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10027_Gold",
+	version = 85
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "disToTgtForSkillMon",
-	value = "0"
+	value = "0",
+	const = 0,
+	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "goBackDist",
-	value = "0"
+	value = "0",
+	const = 0,
+	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "CurrentDistToTarget",
-	value = "0"
+	value = "0",
+	const = 0,
+	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "CurrentBoxDistToTarget",
-	value = "0"
+	value = "0",
+	const = 0,
+	type = "float"
 }
 slot4[4] = slot5
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "Attack",
-	value = "0"
+	value = "0",
+	const = 0,
+	type = "float"
 }
 slot4[5] = slot5
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "CurrentHpPercent",
-	value = "0"
+	value = "0",
+	const = 0,
+	type = "float"
 }
 slot4[6] = slot5
 slot3.pars = slot4
@@ -498,9 +498,9 @@ slot17 = {}
 slot18 = {
 	transition = false,
 	id = "417",
+	precondition = true,
 	class = "Precondition",
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot19 = {}
 slot20 = {

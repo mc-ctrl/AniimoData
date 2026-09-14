@@ -1,4 +1,4 @@
---- BLOCK #0 1-67, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -9,35 +9,20 @@ slot2 = require
 slot4 = "Utils.LuaUIUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.ClientConst"
+slot5 = "Core.Common.Time"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.UIConst"
+slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.Time"
+slot7 = "Const.AddressDataConst"
 slot5 = slot5(slot7)
-slot6 = require
-slot8 = "Utils.GmToolUtils"
-slot6 = slot6(slot8)
-slot7 = require
-slot9 = "Utils.ClientTextUtils"
-slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Data.player_head_icon_data"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Const.HotkeyConst"
-slot9 = slot9(slot11)
-slot10 = slot0.LightClass
-slot12 = "POIPopItem"
-slot13 = slot1
-slot10 = slot10(slot12, slot13)
-slot11 = require
-slot13 = "Common.Const.Const"
-slot11 = slot11(slot13)
+slot6 = slot0.LightClass
+slot8 = "POIPopItem"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
 
-slot12 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMaxLimit
@@ -55,9 +40,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.onInit = slot12
+slot6.onInit = slot7
 
-slot12 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.uniqueId
 	--- END OF BLOCK #0 ---
@@ -149,9 +134,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.pushData = slot12
+slot6.pushData = slot7
 
-slot12 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.state
 	--- END OF BLOCK #0 ---
@@ -372,9 +357,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.checkCanPushStack = slot12
+slot6.checkCanPushStack = slot7
 
-slot12 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryPopupItem
@@ -393,9 +378,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.onUpdate = slot12
+slot6.onUpdate = slot7
 
-slot12 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isQueueEmpty
@@ -438,7 +423,7 @@ slot12 = function(slot0)
 	slot2 = false
 	slot1.animeEnd = slot2
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.duration
 	--- END OF BLOCK #3 ---
 
@@ -478,9 +463,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.tryPopupItem = slot12
+slot6.tryPopupItem = slot7
 
-slot12 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.runList
 	slot1 = #slot1
@@ -515,9 +500,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.onClearRunningList = slot12
+slot6.onClearRunningList = slot7
 
-slot12 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isRunning
@@ -555,7 +540,7 @@ slot12 = function(slot0)
 
 	--- BLOCK #3 12-16, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 	--- END OF BLOCK #3 ---
 
@@ -586,9 +571,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.refreshRemainTime = slot12
+slot6.refreshRemainTime = slot7
 
-slot12 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.removing
 	--- END OF BLOCK #0 ---
@@ -708,9 +693,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot10.recycleToast = slot12
+slot6.recycleToast = slot7
 
-slot12 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isQueueEmpty
@@ -750,39 +735,31 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.destroyContent = slot12
+slot6.destroyContent = slot7
 
-slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = slot0.uContainer
 	slot4 = slot2
-	slot2 = slot2.CheckURLLoaded
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
+	slot2 = slot2.DestroyContent
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot2(slot4)
 
-
-	--- BLOCK #1 7-12, warpins: 1 ---
 	slot2 = slot0.uContainer
 	slot4 = slot2
-	slot2 = slot2.LoadDefaultUrlManually
+	slot2 = slot2.SetUrlWithCallback
+	slot5 = AddressDataConst
+	slot5 = slot5.UI_TOAST_POIPop
 
-	slot5 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.renderItem
-		slot3 = self
-		slot3 = slot3.uContainer
-		slot3 = slot3.content
-		slot4 = data
+	slot6 = function(slot0)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.renderItem
+		slot4 = slot0
+		slot5 = data
 
-		slot0(slot2, slot3, slot4)
+		slot1(slot3, slot4, slot5)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -791,38 +768,18 @@ slot12 = function(slot0, slot1)
 
 	end
 
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 13-18, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.renderItem
-	slot5 = slot0.uContainer
-	slot5 = slot5.content
-	slot6 = slot1
-
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 19-20, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot10.initUContainer = slot12
+slot6.initUContainer = slot7
 
-slot12 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-197, warpins: 1 ---
 	slot3 = slot1.transform
 	slot5 = slot3
@@ -1786,202 +1743,149 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #60 507-518, warpins: 1 ---
+	--- BLOCK #60 507-514, warpins: 1 ---
 	slot41 = slot35[5]
 	slot42 = slot35[4]
-	slot43 = pg
-	slot43 = slot43.me
-	slot45 = slot43
-	slot43 = slot43.serverMsg
-	slot46 = "RPC_CS_ShowMapPuppetLevel"
-	slot47 = {}
-	slot47[1] = slot41
+	slot43 = LuaUIUtils
+	slot43 = slot43.requestMapPuppetLevel
+	slot45 = slot41
 
-	slot48 = function(slot0)
-		--- BLOCK #0 1-2, warpins: 1 ---
+	slot46 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = entityId
 		--- END OF BLOCK #0 ---
 
-		slot1 = if slot0 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 3-4, warpins: 1 ---
-		slot1 = idInType
-		slot1 = slot0[slot1]
+		--- BLOCK #1 4-9, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.map
+		slot1 = slot1.puppetStaticIdInitRecord
+		slot2 = entityId
+		slot1[slot2] = slot0
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 5-6, warpins: 2 ---
+		--- BLOCK #2 10-17, warpins: 2 ---
+		slot1 = ClientTextUtils
+		slot1 = slot1.setText
+		slot3 = v
+		slot4 = string
+		slot4 = slot4.format
+		slot6 = "Lv.%s"
 		--- END OF BLOCK #2 ---
 
-		slot1 = if slot1 then
+		slot7 = if not slot0 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 7-9, warpins: 1 ---
-		slot2 = slot1[1]
-
+		--- BLOCK #3 18-21, warpins: 1 ---
+		slot7 = pg
+		slot7 = slot7.getGameString
+		slot9 = "LEVEL_NOT_VALID"
+		slot7 = slot7(slot9)
 		--- END OF BLOCK #3 ---
 
-		slot2 = if not slot2 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 10-10, warpins: 2 ---
-		return
+		--- BLOCK #4 22-29, warpins: 2 ---
+		MULTRES = slot4(slot6, slot7)
 
+		slot1(slot3, MULTRES)
+
+		slot1 = LuaUIUtils
+		slot1 = slot1.getThreatLevelState
+		slot3 = slot0
+		slot1 = slot1(slot3)
 		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #5
+		if slot1 == "dangerous" then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-		--- BLOCK #5 11-14, warpins: 2 ---
-		slot2 = slot1[1]
-		slot3 = entityId
+		--- BLOCK #5 30-36, warpins: 1 ---
+		slot2 = root
+		slot4 = slot2
+		slot2 = slot2.TryChangePage
+		slot5 = "BattleWarning"
+		slot6 = 1
+
+		slot2(slot4, slot5, slot6)
+
 		--- END OF BLOCK #5 ---
 
-		slot3 = if slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #6 15-20, warpins: 1 ---
-		slot3 = pg
-		slot3 = slot3.game
-		slot3 = slot3.map
-		slot3 = slot3.puppetStaticIdInitRecord
-		slot4 = entityId
-		slot3[slot4] = slot2
+		--- BLOCK #6 37-38, warpins: 1 ---
 		--- END OF BLOCK #6 ---
 
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 21-28, warpins: 2 ---
-		slot3 = ClientTextUtils
-		slot3 = slot3.setText
-		slot5 = v
-		slot6 = string
-		slot6 = slot6.format
-		slot8 = "Lv.%s"
-		--- END OF BLOCK #7 ---
-
-		slot9 = if not slot2 then
-		JUMP TO BLOCK #8
+		if slot1 == "veryDangerous" then
+		JUMP TO BLOCK #7
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #8 29-32, warpins: 1 ---
-		slot9 = pg
-		slot9 = slot9.getGameString
-		slot11 = "LEVEL_NOT_VALID"
-		slot9 = slot9(slot11)
+		--- BLOCK #7 39-45, warpins: 1 ---
+		slot2 = root
+		slot4 = slot2
+		slot2 = slot2.TryChangePage
+		slot5 = "BattleWarning"
+		slot6 = 2
+
+		slot2(slot4, slot5, slot6)
+
+		--- END OF BLOCK #7 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #8 46-51, warpins: 1 ---
+		slot2 = root
+		slot4 = slot2
+		slot2 = slot2.TryChangePage
+		slot5 = "BattleWarning"
+		slot6 = 0
+
+		slot2(slot4, slot5, slot6)
+
 		--- END OF BLOCK #8 ---
 
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 33-40, warpins: 2 ---
-		MULTRES = slot6(slot8, slot9)
-
-		slot3(slot5, MULTRES)
-
-		slot3 = LuaUIUtils
-		slot3 = slot3.getThreatLevelState
-		slot5 = slot2
-		slot3 = slot3(slot5)
-		--- END OF BLOCK #9 ---
-
-		if slot3 == "dangerous" then
-		JUMP TO BLOCK #10
-		else
-		JUMP TO BLOCK #11
-		end
-
-
-		--- BLOCK #10 41-47, warpins: 1 ---
-		slot4 = root
-		slot6 = slot4
-		slot4 = slot4.TryChangePage
-		slot7 = "BattleWarning"
-		slot8 = 1
-
-		slot4(slot6, slot7, slot8)
-
-		--- END OF BLOCK #10 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-		--- BLOCK #11 48-49, warpins: 1 ---
-		--- END OF BLOCK #11 ---
-
-		if slot3 == "veryDangerous" then
-		JUMP TO BLOCK #12
-		else
-		JUMP TO BLOCK #13
-		end
-
-
-		--- BLOCK #12 50-56, warpins: 1 ---
-		slot4 = root
-		slot6 = slot4
-		slot4 = slot4.TryChangePage
-		slot7 = "BattleWarning"
-		slot8 = 2
-
-		slot4(slot6, slot7, slot8)
-
-		--- END OF BLOCK #12 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-		--- BLOCK #13 57-62, warpins: 1 ---
-		slot4 = root
-		slot6 = slot4
-		slot4 = slot4.TryChangePage
-		slot7 = "BattleWarning"
-		slot8 = 0
-
-		slot4(slot6, slot7, slot8)
-
-		--- END OF BLOCK #13 ---
-
-		FLOW; TARGET BLOCK #14
-
-
-		--- BLOCK #14 63-63, warpins: 3 ---
+		--- BLOCK #9 52-52, warpins: 3 ---
 		return
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #9 ---
 
 
 
 	end
 
-	slot43(slot45, slot46, slot47, slot48)
+	slot43(slot45, slot46)
 
 	--- END OF BLOCK #60 ---
 
 	FLOW; TARGET BLOCK #61
 
 
-	--- BLOCK #61 519-520, warpins: 2 ---
+	--- BLOCK #61 515-516, warpins: 2 ---
 	--- END OF BLOCK #61 ---
 
 	if slot39 == "elementList" then
@@ -1991,7 +1895,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #62 521-523, warpins: 1 ---
+	--- BLOCK #62 517-519, warpins: 1 ---
 	slot41 = slot35[3]
 
 	--- END OF BLOCK #62 ---
@@ -2003,7 +1907,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #63 524-529, warpins: 1 ---
+	--- BLOCK #63 520-525, warpins: 1 ---
 	slot41 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot3 = LuaUIUtils
@@ -2032,13 +1936,13 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #64
 
 
-	--- BLOCK #64 530-530, warpins: 3 ---
+	--- BLOCK #64 526-526, warpins: 3 ---
 	--- END OF BLOCK #64 ---
 
 	FLOW; TARGET BLOCK #65
 
 
-	--- BLOCK #65 531-532, warpins: 2 ---
+	--- BLOCK #65 527-528, warpins: 2 ---
 	--- END OF BLOCK #65 ---
 
 	for slot39, slot40 in slot36, slot37, slot38
@@ -2046,7 +1950,7 @@ slot12 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #66
 
 
-	--- BLOCK #66 533-535, warpins: 1 ---
+	--- BLOCK #66 529-531, warpins: 1 ---
 	slot36 = slot33.POIMusic
 	--- END OF BLOCK #66 ---
 
@@ -2057,7 +1961,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #67 536-542, warpins: 1 ---
+	--- BLOCK #67 532-538, warpins: 1 ---
 	slot36 = pg
 	slot36 = slot36.game
 	slot36 = slot36.audio
@@ -2072,7 +1976,7 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #68
 
 
-	--- BLOCK #68 543-545, warpins: 2 ---
+	--- BLOCK #68 539-541, warpins: 2 ---
 	slot36 = slot33.customFunc
 	--- END OF BLOCK #68 ---
 
@@ -2083,7 +1987,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #69 546-572, warpins: 1 ---
+	--- BLOCK #69 542-568, warpins: 1 ---
 	slot38 = slot29
 	slot36 = slot29.SetActive
 	slot39 = true
@@ -2133,7 +2037,7 @@ slot12 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #71
 
 
-	--- BLOCK #70 573-576, warpins: 1 ---
+	--- BLOCK #70 569-572, warpins: 1 ---
 	slot38 = slot29
 	slot36 = slot29.SetActive
 	slot39 = false
@@ -2145,14 +2049,14 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #71
 
 
-	--- BLOCK #71 577-578, warpins: 2 ---
+	--- BLOCK #71 573-574, warpins: 2 ---
 	return
 	--- END OF BLOCK #71 ---
 
 	FLOW; TARGET BLOCK #72
 
 
-	--- BLOCK #72 579-579, warpins: 2 ---
+	--- BLOCK #72 575-575, warpins: 2 ---
 	return
 	--- END OF BLOCK #72 ---
 
@@ -2160,9 +2064,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot10.renderItem = slot12
+slot6.renderItem = slot7
 
-slot12 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.InvokeCallbackWithCallback
@@ -2190,10 +2094,15 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot10.playRootAnime = slot12
+slot6.playRootAnime = slot7
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot7 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearDataQueue
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.clearRunningList
 
@@ -2206,16 +2115,16 @@ slot12 = function(slot0)
 
 end
 
-slot10.onSceneUnload = slot12
+slot6.onSceneUnload = slot7
 
-slot12 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = 5
 	slot1.duration = slot2
 	slot2 = {
 		title = "测试",
-		subTitle = "子Title",
 		POIIcon = "$UI_Icon_POI_Decrypt_TimeLimited.png",
+		subTitle = "子Title",
 		isSuccess = true
 	}
 	slot3 = {
@@ -2232,9 +2141,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.GMPushData = slot12
+slot6.GMPushData = slot7
 
-return slot10
+return slot6
 --- END OF BLOCK #0 ---
 
 

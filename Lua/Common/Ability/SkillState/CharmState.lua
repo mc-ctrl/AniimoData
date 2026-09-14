@@ -431,11 +431,15 @@ slot15 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-20, warpins: 2 ---
+	--- BLOCK #2 15-24, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
 	slot4 = slot0.srcEntityId
 	slot2 = slot2(slot4)
+	slot3 = slot0.owner
+	slot5 = slot3
+	slot3 = slot3.SWIM_ST
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
 	if slot2 ~= nil then
@@ -445,142 +449,230 @@ slot15 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 21-23, warpins: 1 ---
-	slot3 = slot2.isDestroyed
-
+	--- BLOCK #3 25-27, warpins: 1 ---
+	slot4 = slot2.isDestroyed
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #4 24-24, warpins: 2 ---
-	return
-
+	--- BLOCK #4 28-30, warpins: 2 ---
+	slot4 = slot0.isFollow
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #5 25-42, warpins: 2 ---
-	slot3 = slot0.owner
-	slot3 = slot3.bodySize
-	slot4 = slot2.bodySize
-	slot3 = slot3 + slot4
-	slot3 = slot3 + 0.3
-	slot6 = slot2
-	slot4 = slot2.getPosition
-	slot4 = slot4(slot6)
-	slot5 = slot0.owner
-	slot7 = slot5
-	slot5 = slot5.getPosition
-	slot5 = slot5(slot7)
-	slot4 = slot4 - slot5
-	slot5 = 0
-	slot4.y = slot5
-	slot5 = slot0.isFollow
+	--- BLOCK #5 31-32, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	slot5 = if slot5 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 43-48, warpins: 1 ---
-	slot7 = slot4
-	slot5 = slot4.SqrMagnitude
-	slot5 = slot5(slot7)
-	slot6 = slot3 * slot3
+	--- BLOCK #6 33-38, warpins: 1 ---
+	slot4 = false
+	slot0.isFollow = slot4
+	slot6 = slot0
+	slot4 = slot0.stopPlayCharmWalk
+
+	slot4(slot6)
+
 	--- END OF BLOCK #6 ---
 
-	if slot5 < slot6 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #7 49-54, warpins: 1 ---
-	slot5 = false
-	slot0.isFollow = slot5
-	slot7 = slot0
-	slot5 = slot0.stopPlayCharmWalk
-
-	slot5(slot7)
-
+	--- BLOCK #7 39-41, warpins: 2 ---
+	slot4 = slot0.isFollow
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #8 55-57, warpins: 2 ---
-	slot5 = slot0.isFollow
+	--- BLOCK #8 42-43, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
-	slot5 = if not slot5 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 58-63, warpins: 1 ---
-	slot7 = slot4
-	slot5 = slot4.SqrMagnitude
-	slot5 = slot5(slot7)
-	slot6 = slot3 * slot3
+	--- BLOCK #9 44-48, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.playCharmWalk
+
+	slot4(slot6)
+
+	slot4 = true
+	slot0.isFollow = slot4
+
 	--- END OF BLOCK #9 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 64-68, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.playCharmWalk
+	--- BLOCK #10 49-49, warpins: 4 ---
+	return
 
-	slot5(slot7)
-
-	slot5 = true
-	slot0.isFollow = slot5
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 69-71, warpins: 4 ---
-	slot5 = slot0.isFollow
+	--- BLOCK #11 50-67, warpins: 2 ---
+	slot4 = slot0.owner
+	slot4 = slot4.bodySize
+	slot5 = slot2.bodySize
+	slot4 = slot4 + slot5
+	slot4 = slot4 + 0.3
+	slot7 = slot2
+	slot5 = slot2.getPosition
+	slot5 = slot5(slot7)
+	slot6 = slot0.owner
+	slot8 = slot6
+	slot6 = slot6.getPosition
+	slot6 = slot6(slot8)
+	slot5 = slot5 - slot6
+	slot6 = 0
+	slot5.y = slot6
+	slot6 = slot0.isFollow
 	--- END OF BLOCK #11 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 72-74, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.setRotation
-
-	slot5(slot7)
-
+	--- BLOCK #12 68-73, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.SqrMagnitude
+	slot6 = slot6(slot8)
+	slot7 = slot4 * slot4
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
+	if slot6 >= slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #13 75-75, warpins: 2 ---
-	return
+	--- BLOCK #13 74-75, warpins: 1 ---
 	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 76-81, warpins: 2 ---
+	slot6 = false
+	slot0.isFollow = slot6
+	slot8 = slot0
+	slot6 = slot0.stopPlayCharmWalk
+
+	slot6(slot8)
+
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #15 82-84, warpins: 2 ---
+	slot6 = slot0.isFollow
+	--- END OF BLOCK #15 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #16 85-86, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #17 87-92, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.SqrMagnitude
+	slot6 = slot6(slot8)
+	slot7 = slot4 * slot4
+	--- END OF BLOCK #17 ---
+
+	if slot6 > slot7 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 93-97, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.playCharmWalk
+
+	slot6(slot8)
+
+	slot6 = true
+	slot0.isFollow = slot6
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 98-100, warpins: 5 ---
+	slot6 = slot0.isFollow
+	--- END OF BLOCK #19 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 101-103, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.setRotation
+
+	slot6(slot8)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 104-104, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
 
 
 

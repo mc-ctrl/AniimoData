@@ -62,7 +62,7 @@ end
 slot10.initView = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.hairDyeUButton
 
@@ -101,6 +101,13 @@ slot11 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.hairBoneUButton
+	slot3 = slot1
+	slot1 = slot1.SetActiveFastest
+	slot4 = false
+
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -330,7 +337,49 @@ end
 slot10.onOptionSelectedChanged = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.avatarMgr
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.avatarMgr
+	slot4 = slot4.globalStack
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-18, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.avatarMgr
+	slot4 = slot4.globalStack
+	slot6 = slot4
+	slot4 = slot4.Clear
+
+	slot4(slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-34, warpins: 3 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.avatar
@@ -362,64 +411,34 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot4(slot6, slot7, slot8, slot9)
 
 	slot4 = slot3.claimed
-	--- END OF BLOCK #0 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 17-23, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.hairCustom
-	slot5 = slot3.id
-	slot4 = slot4[slot5]
-	--- END OF BLOCK #1 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 24-26, warpins: 1 ---
-	slot5 = slot4.index
-	--- END OF BLOCK #2 ---
-
-	if slot5 ~= 0 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 27-38, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.serverMsg
-	slot8 = "RPC_CS_SetHairCustom"
-	slot9 = slot3.id
-	slot10 = slot4.index
-	slot11 = CallbackHandler
-	slot13 = slot0
-	slot14 = "refreshHairByCustom"
-	MULTRES = slot11(slot13, slot14)
-
-	slot5(slot7, slot8, slot9, slot10, MULTRES)
-
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 39-40, warpins: 4 ---
-	return
+	--- BLOCK #4 35-42, warpins: 1 ---
+	slot4 = AvatarUtils
+	slot4 = slot4.applyHairPresetOrRuntimeDefault
+	slot6 = slot3.id
+	slot7 = CallbackHandler
+	slot9 = slot0
+	slot10 = "refreshHairByCustom"
+	MULTRES = slot7(slot9, slot10)
+
+	slot4(slot6, MULTRES)
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 43-44, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
@@ -600,11 +619,15 @@ end
 slot10.resolveTargetHairSuitId = slot11
 
 slot11 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = AvatarPresetData
-	slot4 = slot0.ctrl
-	slot4 = slot4.presetKey
-	slot3 = slot3[slot4]
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.avatar
+	slot5 = slot3
+	slot3 = slot3.getAvatarPresetData
+	slot6 = slot0.ctrl
+	slot6 = slot6.presetKey
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot3 = if not slot3 then
@@ -614,14 +637,14 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 11-11, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 12-13, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	slot4 = if not slot1 then
@@ -631,7 +654,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 10-12, warpins: 1 ---
+	--- BLOCK #3 14-16, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.resolveTargetHairSuitId
 	slot4 = slot4(slot6)
@@ -640,7 +663,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-36, warpins: 2 ---
+	--- BLOCK #4 17-40, warpins: 2 ---
 	slot5 = slot0.model
 	slot7 = slot5
 	slot5 = slot5.getHairSuitList
@@ -676,7 +699,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 37-40, warpins: 1 ---
+	--- BLOCK #5 41-44, warpins: 1 ---
 	slot6 = ipairs
 	slot8 = slot5
 	slot6, slot7, slot8 = slot6(slot8)
@@ -685,7 +708,7 @@ slot11 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 41-43, warpins: 1 ---
+	--- BLOCK #6 45-47, warpins: 1 ---
 	slot11 = slot10.id
 	--- END OF BLOCK #6 ---
 
@@ -696,7 +719,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 44-46, warpins: 1 ---
+	--- BLOCK #7 48-50, warpins: 1 ---
 	slot11 = slot10.itemId
 	--- END OF BLOCK #7 ---
 
@@ -707,7 +730,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 47-54, warpins: 2 ---
+	--- BLOCK #8 51-58, warpins: 2 ---
 	slot11 = slot0.ctrl
 	slot11 = slot11.slotOptionComponent
 	slot11 = slot11.optionUList
@@ -724,7 +747,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 55-56, warpins: 3 ---
+	--- BLOCK #9 59-60, warpins: 3 ---
 	--- END OF BLOCK #9 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
@@ -732,7 +755,7 @@ slot11 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #10 57-64, warpins: 2 ---
+	--- BLOCK #10 61-68, warpins: 2 ---
 	slot6 = slot0.ctrl
 	slot6 = slot6.slotOptionComponent
 	slot6 = slot6.optionUList

@@ -1,7 +1,6 @@
---- BLOCK #0 1-110, warpins: 1 ---
+--- BLOCK #0 1-112, warpins: 1 ---
 slot0 = bit
 slot1 = {
-	ELEMENT_TYPE_WATER = 1,
 	ELEMENT_TYPE_FIRE = 0,
 	STATE_ELECTRIC_KEY = 3,
 	STATE_FROZEN_KEY = 2,
@@ -10,7 +9,8 @@ slot1 = {
 	ELEMENT_TYPE_WIND = 5,
 	ELEMENT_TYPE_SOIL = 4,
 	ELEMENT_TYPE_CONNECT = 3,
-	ELEMENT_TYPE_ICE = 2
+	ELEMENT_TYPE_ICE = 2,
+	ELEMENT_TYPE_WATER = 1
 }
 slot2 = {}
 slot3 = slot1.ELEMENT_TYPE_ICE
@@ -27,7 +27,6 @@ slot3 = slot1.ELEMENT_TYPE_WIND
 slot2[9] = slot3
 slot1.ELEMENT_TYPE_2_ECS_ELEMENT = slot2
 slot2 = {
-	FlammableMeetWater = "FlammableMeetWater",
 	FlammableSkillFire = "FlammableSkillFire",
 	FlammableAccumulate = "FlammableAccumulate",
 	FlammableStop = "FlammableStop",
@@ -45,18 +44,19 @@ slot2 = {
 	StateFrozenStart = "StateFrozenStart",
 	ConductBoomStart = "ConductBoomStart",
 	ConductEnd = "ConductEnd",
-	ConductStart = "ConductStart"
+	ConductStart = "ConductStart",
+	FlammableMeetWater = "FlammableMeetWater"
 }
 slot1.SYS_EVENT_NAME = slot2
 slot2 = {
-	StateWetStart = "StateWetStart",
 	StateFrozenStart = "StateFrozenStart",
 	StateWetEnd = "StateWetEnd",
 	StateFrozenEnd = "StateFrozenEnd",
 	FlammableEnd = "FlammableEnd",
 	FlammableStart = "FlammableStart",
 	ConductEnd = "ConductEnd",
-	ConductStart = "ConductStart"
+	ConductStart = "ConductStart",
+	StateWetStart = "StateWetStart"
 }
 slot1.SERVER_SYS_EVENT_NAME = slot2
 slot2 = {
@@ -143,14 +143,14 @@ slot5 = slot3.Freezable
 slot4.STATE_Freezable_KEY = slot5
 slot1.AI_ABILITY_CONVERTER = slot4
 slot4 = {
-	Electric = 3,
 	Ice = 2,
 	Water = 1,
 	Fire = 0,
 	None = 7,
 	Count = 6,
 	Wind = 5,
-	Soil = 4
+	Soil = 4,
+	Electric = 3
 }
 slot1.ELEMENT_TYPE_NAME = slot4
 slot4 = {
@@ -164,21 +164,27 @@ slot4 = {
 }
 slot1.ELEMENT_NAMES = slot4
 slot4 = {
-	None = 0,
 	Impulse = 4,
 	Melt = 2,
 	Flammable = 1,
-	Explosive = 3
+	Explosive = 3,
+	None = 0
 }
 slot1.ECS_DESTROY_REASON = slot4
 slot4 = {
-	None = 0,
 	ITEM_EFFECT = 2,
-	SPAWN_ICE = 1
+	SPAWN_ICE = 1,
+	None = 0
 }
 slot1.CREATE_ENV_REASON = slot4
 slot4 = "RigidBody"
 slot1.TAG_RIGIDBODY = slot4
+slot4 = {
+	BOSS_TITLE = "BossTitle",
+	LEGACY = "Legacy",
+	TOP_LOGO = "TopLogo"
+}
+slot1.ECS_AMOUNT_NOTIFY_OWNER = slot4
 
 return slot1
 --- END OF BLOCK #0 ---

@@ -326,7 +326,7 @@ slot17 = function(slot0)
 	slot8 = slot8[slot7]
 	slot9 = slot8.endTime
 	slot10 = Time
-	slot10 = slot10.secondCache
+	slot10 = slot10.realSecondCache
 	--- END OF BLOCK #1 ---
 
 	if slot10 < slot9 then
@@ -683,33 +683,34 @@ end
 
 slot15.hideById = slot17
 
-slot17 = function(slot0)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.firstRunItem
-	slot1 = slot1(slot3)
+	slot4 = slot0
+	slot2 = slot0.firstRunItem
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-9, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.recycleToast
-	slot5 = slot1
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.recycleToast
+	slot6 = slot2
+	slot7 = slot1
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -743,44 +744,54 @@ slot17 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 4-5, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 5-10, warpins: 1 ---
+	--- BLOCK #2 6-6, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #3 7-12, warpins: 2 ---
 	slot3 = true
 	slot1.removing = slot3
 	slot3 = slot0.uContainer
 	slot3 = slot3.content
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 11-15, warpins: 1 ---
+	--- BLOCK #4 13-17, warpins: 1 ---
 	slot4 = NotNil
 	slot6 = slot3
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 16-24, warpins: 1 ---
+	--- BLOCK #5 18-26, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.CheckHasEvent
 	slot7 = CS
@@ -788,16 +799,16 @@ slot17 = function(slot0, slot1, slot2)
 	slot7 = slot7.EInvokeTime
 	slot7 = slot7.Hide
 	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 25-33, warpins: 1 ---
+	--- BLOCK #6 27-35, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.InvokeCallbackWithCallback
 	slot7 = CS
@@ -823,33 +834,33 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 34-37, warpins: 3 ---
+	--- BLOCK #7 36-39, warpins: 3 ---
 	slot6 = slot0
 	slot4 = slot0.destroyContent
 	slot7 = slot1
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 38-39, warpins: 2 ---
-	return
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 40-40, warpins: 2 ---
+	--- BLOCK #8 40-41, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
 
 
 
@@ -1174,7 +1185,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	slot12 = slot2.startTime
 	slot12 = slot12 + slot11
 	slot13 = Time
-	slot13 = slot13.secondCache
+	slot13 = slot13.realSecondCache
 	slot13 = slot12 - slot13
 	slot14 = 0
 	--- END OF BLOCK #4 ---
@@ -1195,7 +1206,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
 	--- BLOCK #6 52-56, warpins: 1 ---
@@ -1515,7 +1526,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	slot14 = if slot14 then
 	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #28
 	end
 
 
@@ -1545,193 +1556,219 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	slot16 = if slot16 then
 	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 192-213, warpins: 1 ---
+	--- BLOCK #26 192-201, warpins: 1 ---
 	slot19 = slot16
 	slot17 = slot16.SetHotKeyPaths
 	slot20 = slot14
 
 	slot17(slot19, slot20)
 
-	slot17 = slot16.gameObject
-	slot19 = slot17
-	slot17 = slot17.GetComponent
-	slot20 = "ObjectReference"
-	slot17 = slot17(slot19, slot20)
-	slot20 = slot17
-	slot18 = slot17.GetRefValue
-	slot21 = "progressPressContainerUContainer"
-	slot18 = slot18(slot20, slot21)
-	slot0.progressPressContainerUContainer = slot18
-	slot18 = slot0.progressPressContainerUContainer
-	slot20 = slot18
-	slot18 = slot18.SetActive
-	slot21 = true
+	slot17 = LuaUIUtils
+	slot17 = slot17.waitHotKeyContentObjectReference
+	slot19 = slot0
+	slot20 = slot16
 
-	slot18(slot20, slot21)
-
-	slot18 = slot0.progressPressContainerUContainer
-	--- END OF BLOCK #26 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 214-218, warpins: 1 ---
-	slot18 = slot0.progressPressContainerUContainer
-	slot20 = slot18
-	slot18 = slot18.LoadDefaultUrlManually
-
-	slot21 = function()
-		--- BLOCK #0 1-29, warpins: 1 ---
-		slot0 = self
+	slot21 = function(slot0)
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot1 = self
+		slot4 = slot0
+		slot2 = slot0.GetRefValue
+		slot5 = "progressPressContainerUContainer"
+		slot2 = slot2(slot4, slot5)
+		slot1.progressPressContainerUContainer = slot2
 		slot1 = self
 		slot1 = slot1.progressPressContainerUContainer
-		slot1 = slot1.content
-		slot0.keyProgressPress = slot1
-		slot0 = self
-		slot0 = slot0.keyProgressPress
-		slot2 = slot0
-		slot0 = slot0.ProgressToValue
-		slot3 = 0
-		slot4 = nil
+		--- END OF BLOCK #0 ---
 
-		slot0(slot2, slot3, slot4)
-
-		slot0 = KeyBindingPro
-		slot0 = slot0.GetOrAddKeyBindingByName
-		slot2 = btnCloseUButton
-		slot2 = slot2.gameObject
-		slot3 = "CountDownItemClose"
-		slot0 = slot0(slot2, slot3)
-		slot1 = true
-		slot0.isVirtual = slot1
-		slot1 = setKey
-		slot0.actionPath = slot1
-		slot1 = 1
-		slot0.priority = slot1
-		slot1 = 1
-		slot0.priority = slot1
-
-		slot1 = function(slot0)
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot1 = pg
-			slot1 = slot1.game
-			slot1 = slot1.input
-			slot3 = slot1
-			slot1 = slot1.isUsingGamepad
-			slot1 = slot1(slot3)
-			--- END OF BLOCK #0 ---
-
-			slot1 = if slot1 then
-			JUMP TO BLOCK #1
-			else
-			JUMP TO BLOCK #2
-			end
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
 
 
-			--- BLOCK #1 9-26, warpins: 1 ---
-			slot1 = UICtrl
-			slot1 = slot1.longClickLuafunction
-			slot3 = self
-			slot4 = slot0
-			slot5 = setKey
-			slot6 = 1
-			slot7 = 0.3
-			slot8 = CallbackHandler
-			slot10 = self
-			slot11 = "onCountDownItemClose"
-			slot8 = slot8(slot10, slot11)
-			slot9 = self
-			slot9 = slot9.keyProgressPress
+		--- BLOCK #1 11-11, warpins: 1 ---
+		--- END OF BLOCK #1 ---
 
-			slot10 = function()
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 12-24, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.progressPressContainerUContainer
+		slot3 = slot1
+		slot1 = slot1.SetActive
+		slot4 = true
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot1 = slot1.progressPressContainerUContainer
+		slot3 = slot1
+		slot1 = slot1.LoadDefaultUrlManually
+
+		slot4 = function()
+			--- BLOCK #0 1-27, warpins: 1 ---
+			slot0 = self
+			slot1 = self
+			slot1 = slot1.progressPressContainerUContainer
+			slot1 = slot1.content
+			slot0.keyProgressPress = slot1
+			slot0 = self
+			slot0 = slot0.keyProgressPress
+			slot2 = slot0
+			slot0 = slot0.ProgressToValue
+			slot3 = 0
+			slot4 = nil
+
+			slot0(slot2, slot3, slot4)
+
+			slot0 = KeyBindingPro
+			slot0 = slot0.GetOrAddKeyBindingByName
+			slot2 = btnCloseUButton
+			slot2 = slot2.gameObject
+			slot3 = "CountDownItemClose"
+			slot0 = slot0(slot2, slot3)
+			slot1 = true
+			slot0.isVirtual = slot1
+			slot1 = setKey
+			slot0.actionPath = slot1
+			slot1 = 1
+			slot0.priority = slot1
+
+			slot1 = function(slot0)
 				--- BLOCK #0 1-8, warpins: 1 ---
-				slot0 = self
-				slot0 = slot0.keyProgressPress
-				slot2 = slot0
-				slot0 = slot0.ProgressToValue
-				slot3 = 0
-				slot4 = nil
-
-				slot0(slot2, slot3, slot4)
-
-				return
+				slot1 = pg
+				slot1 = slot1.game
+				slot1 = slot1.input
+				slot3 = slot1
+				slot1 = slot1.isUsingGamepad
+				slot1 = slot1(slot3)
 				--- END OF BLOCK #0 ---
 
+				slot1 = if slot1 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 9-26, warpins: 1 ---
+				slot1 = UICtrl
+				slot1 = slot1.longClickLuafunction
+				slot3 = self
+				slot4 = slot0
+				slot5 = setKey
+				slot6 = 0.55
+				slot7 = 0.25
+				slot8 = CallbackHandler
+				slot10 = self
+				slot11 = "onCountDownItemClose"
+				slot8 = slot8(slot10, slot11)
+				slot9 = self
+				slot9 = slot9.keyProgressPress
+
+				slot10 = function()
+					--- BLOCK #0 1-8, warpins: 1 ---
+					slot0 = self
+					slot0 = slot0.keyProgressPress
+					slot2 = slot0
+					slot0 = slot0.ProgressToValue
+					slot3 = 0
+					slot4 = nil
+
+					slot0(slot2, slot3, slot4)
+
+					return
+					--- END OF BLOCK #0 ---
+
+
+
+				end
+
+				slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10)
+
+				slot1 = false
+
+				return slot1
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+				--- BLOCK #2 27-27, warpins: 2 ---
+				return
+				--- END OF BLOCK #2 ---
+
 
 
 			end
 
-			slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10)
+			slot0.luaTrigger = slot1
 
-			slot1 = false
-
-			return slot1
-			--- END OF BLOCK #1 ---
-
-			FLOW; TARGET BLOCK #2
-
-
-			--- BLOCK #2 27-27, warpins: 2 ---
 			return
-			--- END OF BLOCK #2 ---
+			--- END OF BLOCK #0 ---
 
 
 
 		end
 
-		slot0.luaTrigger = slot1
+		slot1(slot3, slot4)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 25-25, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
 	end
 
-	slot18(slot20, slot21)
+	slot17(slot19, slot20, slot21)
 
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 202-202, warpins: 2 ---
 	--- END OF BLOCK #27 ---
 
-	FLOW; TARGET BLOCK #28
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #28 219-219, warpins: 3 ---
-	--- END OF BLOCK #28 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
-
-
-	--- BLOCK #29 220-223, warpins: 1 ---
+	--- BLOCK #28 203-206, warpins: 1 ---
 	slot16 = slot9
 	slot14 = slot9.SetActive
 	slot17 = false
 
 	slot14(slot16, slot17)
 
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 207-208, warpins: 2 ---
 	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #30
-
-
-	--- BLOCK #30 224-225, warpins: 2 ---
-	--- END OF BLOCK #30 ---
-
 	slot3 = if slot3 then
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #31 226-232, warpins: 1 ---
+	--- BLOCK #30 209-215, warpins: 1 ---
 	slot16 = slot1
 	slot14 = slot1.InvokeCallback
 	slot17 = CS
@@ -1741,41 +1778,41 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 	slot14(slot16, slot17)
 
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 216-218, warpins: 2 ---
+	slot14 = slot2.overrideIcon
 	--- END OF BLOCK #31 ---
 
-	FLOW; TARGET BLOCK #32
-
-
-	--- BLOCK #32 233-235, warpins: 2 ---
-	slot14 = slot2.overrideIcon
-	--- END OF BLOCK #32 ---
-
 	slot14 = if slot14 then
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #33 236-237, warpins: 1 ---
+	--- BLOCK #32 219-220, warpins: 1 ---
 	slot14 = slot2.overrideIcon
 	slot10.url = slot14
 
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 221-222, warpins: 2 ---
+	return
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 238-239, warpins: 2 ---
+	--- BLOCK #34 223-223, warpins: 2 ---
 	return
 	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 240-240, warpins: 2 ---
-	return
-	--- END OF BLOCK #35 ---
 
 
 
@@ -2099,7 +2136,7 @@ slot15.resumeCountDown = slot17
 slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot1.startTime = slot2
 
 	return

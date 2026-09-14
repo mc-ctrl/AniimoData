@@ -1,4 +1,4 @@
---- BLOCK #0 1-158, warpins: 1 ---
+--- BLOCK #0 1-161, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Common.Utils.Utils"
@@ -52,13 +52,14 @@ slot20 = "Common.Utils.AIUtils"
 slot18 = slot18(slot20)
 slot19 = Vector3
 slot20 = Quaternion
-slot21 = math
-slot21 = slot21.deg
-slot22 = string
-slot22 = slot22.isNilOrEmpty
-slot23 = type
+slot21 = pg
+slot22 = math
+slot22 = slot22.deg
+slot23 = string
+slot23 = slot23.isNilOrEmpty
+slot24 = type
 
-slot24 = function(slot0, slot1, ...)
+slot25 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -116,7 +117,7 @@ slot24 = function(slot0, slot1, ...)
 
 
 	--- BLOCK #5 17-22, warpins: 2 ---
-	slot2 = AIUtils
+	slot2 = Utils
 	slot2 = slot2.checkIsAuthorityMaster
 	slot4 = slot0
 	slot2 = slot2(slot4)
@@ -243,9 +244,9 @@ slot24 = function(slot0, slot1, ...)
 
 end
 
-slot0.remoteSyncAIAction = slot24
+slot0.remoteSyncAIAction = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = AIControllerUtils
 	slot4 = slot4.setDirection
@@ -261,9 +262,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Base_TurnToDirection = slot24
+slot0.Base_TurnToDirection = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -295,9 +296,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_SetRotation = slot24
+slot0.Base_SetRotation = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot4 = Vector3
 	slot4 = slot4.enableCreateFromCache
@@ -334,9 +335,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Base_SetYawRadians = slot24
+slot0.Base_SetYawRadians = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = AIControllerUtils
 	slot4 = slot4.setYawDegrees
@@ -352,9 +353,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Base_SetYawDegrees = slot24
+slot0.Base_SetYawDegrees = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = Vector3
 	slot3 = slot3.SqrDistance
@@ -455,9 +456,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_TeleportPos = slot24
+slot0.Base_TeleportPos = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -527,9 +528,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_PlayEffect = slot24
+slot0.Base_PlayEffect = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = AIBaseMethodUtils
 	slot4 = slot4.remoteSyncAIAction
@@ -598,9 +599,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Base_PlayEffectAtTarget = slot24
+slot0.Base_PlayEffectAtTarget = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -657,9 +658,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_StopEffectAtTarget = slot24
+slot0.Base_StopEffectAtTarget = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -684,9 +685,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_PlayLipAnimation = slot24
+slot0.Base_PlayLipAnimation = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -710,9 +711,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_StopLipAnimation = slot24
+slot0.Base_StopLipAnimation = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -738,9 +739,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_PlayFacialAnimation = slot24
+slot0.Base_PlayFacialAnimation = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -764,9 +765,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_StopFacialAnimation = slot24
+slot0.Base_StopFacialAnimation = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -795,9 +796,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_StopAnimation = slot24
+slot0.Base_StopAnimation = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = AnimationUtils
 	slot4 = slot4.playAnimationState
@@ -813,9 +814,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Base_PlayAnimationState = slot24
+slot0.Base_PlayAnimationState = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AnimationUtils
 	slot2 = slot2.cancelAnimationState
@@ -829,9 +830,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_CancelAnimationState = slot24
+slot0.Base_CancelAnimationState = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -916,9 +917,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot0.Base_PlayAnimation = slot24
+slot0.Base_PlayAnimation = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot10 = AIBaseMethodUtils
 	slot10 = slot10.remoteSyncAIAction
@@ -957,9 +958,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 
 end
 
-slot0.Base_ChangeToRootMotion = slot24
+slot0.Base_ChangeToRootMotion = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-42, warpins: 1 ---
 	slot7 = AnimationUtils
 	slot7 = slot7.getID
@@ -1014,9 +1015,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot0.Base_PlaySleAnimation = slot24
+slot0.Base_PlaySleAnimation = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = AIBaseMethodUtils
 	slot1 = slot1.remoteSyncAIAction
@@ -1038,9 +1039,9 @@ slot24 = function(slot0)
 
 end
 
-slot0.Base_StopSleAnimation = slot24
+slot0.Base_StopSleAnimation = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -1068,9 +1069,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_PlayAnimationList = slot24
+slot0.Base_PlayAnimationList = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = AIBaseMethodUtils
 	slot1 = slot1.remoteSyncAIAction
@@ -1101,9 +1102,9 @@ slot24 = function(slot0)
 
 end
 
-slot0.Base_StopAnimationList = slot24
+slot0.Base_StopAnimationList = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = string_isNilOrEmpty
 	slot4 = slot1
@@ -1161,9 +1162,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_SetLayerDefaultAnimation = slot24
+slot0.Base_SetLayerDefaultAnimation = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -1243,9 +1244,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_PlayEmojiOnTeam = slot24
+slot0.Base_PlayEmojiOnTeam = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = AIBaseMethodUtils
 	slot4 = slot4.remoteSyncAIAction
@@ -1265,22 +1266,11 @@ slot24 = function(slot0, slot1, slot2, slot3)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 14-16, warpins: 1 ---
-	slot4 = slot0.topLogoItem
-	--- END OF BLOCK #1 ---
-
-	slot4 = if slot4 then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 17-26, warpins: 1 ---
+	--- BLOCK #1 14-23, warpins: 1 ---
 	slot4 = slot0.eventEmitter
 	slot6 = slot4
 	slot4 = slot4.emit
@@ -1293,22 +1283,22 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #3 27-27, warpins: 3 ---
+	--- BLOCK #2 24-24, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot0.Base_ShowEmojiBubble = slot24
+slot0.Base_ShowEmojiBubble = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -1331,8 +1321,7 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 13-15, warpins: 1 ---
-	slot3 = nil
+	--- BLOCK #1 13-14, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
@@ -1342,25 +1331,28 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 16-21, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.getEntityByActorId
-	slot6 = slot1
-	slot4 = slot4(slot6)
-	slot3 = slot4
+	--- BLOCK #2 15-20, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getEntityByActorId
+	slot5 = slot1
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 22-22, warpins: 1 ---
+	--- BLOCK #3 21-21, warpins: 2 ---
 	slot3 = slot0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-25, warpins: 2 ---
+	--- BLOCK #4 22-24, warpins: 2 ---
 	slot4 = slot3.emitEventPreCheckComp
 	--- END OF BLOCK #4 ---
 
@@ -1371,22 +1363,22 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 26-32, warpins: 1 ---
-	slot6 = slot3
-	slot4 = slot3.emitEventPreCheckComp
-	slot7 = EventConst
-	slot7 = slot7.TOPLOGO_BUBBLE
-	slot8 = false
-	slot9 = slot2
+	--- BLOCK #5 25-31, warpins: 1 ---
+	slot5 = slot4
+	slot7 = slot3
+	slot8 = EventConst
+	slot8 = slot8.TOPLOGO_BUBBLE
+	slot9 = false
+	slot10 = slot2
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot5(slot7, slot8, slot9, slot10)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 33-33, warpins: 3 ---
+	--- BLOCK #6 32-32, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -1394,9 +1386,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_HideEmojiBubble = slot24
+slot0.Base_HideEmojiBubble = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1463,9 +1455,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_ShowDialogue = slot24
+slot0.Base_ShowDialogue = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -1484,11 +1476,45 @@ slot24 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 13-21, warpins: 1 ---
+	--- BLOCK #1 13-15, warpins: 1 ---
+	slot3 = slot0.ensureTopLogoItem
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 16-21, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.ensureTopLogoItem
+	slot6 = "alert"
+	slot3 = slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-22, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 23-31, warpins: 2 ---
 	slot3 = slot0.eventEmitter
 	slot5 = slot3
 	slot3 = slot3.emit
@@ -1500,22 +1526,22 @@ slot24 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #2 22-22, warpins: 2 ---
+	--- BLOCK #5 32-32, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot0.Base_ShowQuestionMark = slot24
+slot0.Base_ShowQuestionMark = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = AIBaseMethodUtils
 	slot1 = slot1.remoteSyncAIAction
@@ -1559,9 +1585,9 @@ slot24 = function(slot0)
 
 end
 
-slot0.Base_HideQuestionMark = slot24
+slot0.Base_HideQuestionMark = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -1604,9 +1630,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_ShowBubbleMsgById = slot24
+slot0.Base_ShowBubbleMsgById = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -1649,9 +1675,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_HideBubbleMsgById = slot24
+slot0.Base_HideBubbleMsgById = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -1674,11 +1700,9 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 13-21, warpins: 1 ---
+	--- BLOCK #1 13-19, warpins: 1 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
-	slot3 = slot3.shaderView
+	slot3 = slot3.modelShaderView
 	slot5 = slot3
 	slot3 = slot3.LerpProperty
 	slot6 = slot1
@@ -1691,7 +1715,7 @@ slot24 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 22-22, warpins: 2 ---
+	--- BLOCK #2 20-20, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -1699,9 +1723,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_LerpProperty = slot24
+slot0.Base_LerpProperty = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -1760,9 +1784,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_ShowEmojiBubbleInPetList = slot24
+slot0.Base_ShowEmojiBubbleInPetList = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.checkClient
@@ -1828,9 +1852,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_SetTargetAnimationState = slot24
+slot0.Base_SetTargetAnimationState = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5, slot6 = nil
 	--- END OF BLOCK #0 ---
@@ -1881,15 +1905,13 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #5 15-25, warpins: 1 ---
+	--- BLOCK #5 15-23, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.clientCastAbilityOnTarget
 	slot10 = slot1
 	slot11 = slot2
 	slot12 = slot4
-	slot13 = {}
-	slot13.partId = slot3
-	slot7, slot8 = slot7(slot9, slot10, slot11, slot12, slot13)
+	slot7, slot8 = slot7(slot9, slot10, slot11, slot12)
 	slot6 = slot8
 	slot5 = slot7
 	--- END OF BLOCK #5 ---
@@ -1897,7 +1919,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 26-32, warpins: 1 ---
+	--- BLOCK #6 24-30, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.serverCastAbility
 	slot10 = slot1
@@ -1910,7 +1932,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 33-35, warpins: 2 ---
+	--- BLOCK #7 31-33, warpins: 2 ---
 	slot7 = slot5
 	slot8 = slot6
 
@@ -1921,9 +1943,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0.Base_CombatCastAbilityOnTarget = slot24
+slot0.Base_CombatCastAbilityOnTarget = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3, slot4 = nil
 	--- END OF BLOCK #0 ---
@@ -1995,9 +2017,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_CombatCastAbilityNoTarget = slot24
+slot0.Base_CombatCastAbilityNoTarget = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.remoteSyncAIAction
@@ -2019,10 +2041,8 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 12-22, warpins: 1 ---
-	slot2 = TablePool
-	slot2 = slot2.getTable
-	slot2 = slot2()
+	--- BLOCK #1 12-20, warpins: 1 ---
+	slot2 = {}
 	slot3 = Const
 	slot3 = slot3.ESM_INTERACT
 	slot2.source = slot3
@@ -2038,7 +2058,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 23-25, warpins: 1 ---
+	--- BLOCK #2 21-23, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getGlobalId
 	slot3 = slot3(slot5)
@@ -2047,53 +2067,30 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 26-57, warpins: 2 ---
+	--- BLOCK #3 24-34, warpins: 2 ---
 	slot2.globalId = slot3
-	slot3 = TablePool
-	slot3 = slot3.getTable
-	slot3 = slot3()
-	slot3[1] = slot1
-	slot4 = TablePool
-	slot4 = slot4.getTable
-	slot4 = slot4()
-	slot5 = "setPetAppearance"
-	slot4[1] = slot5
-	slot4[2] = slot3
-	slot5 = 0
-	slot4[3] = slot5
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.doEventByData
-	slot8 = slot4
-	slot9 = slot2
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = TablePool
-	slot5 = slot5.returnTable
-	slot7 = slot4
-
-	slot5(slot7)
-
-	slot5 = TablePool
-	slot5 = slot5.returnTable
-	slot7 = slot3
-
-	slot5(slot7)
-
-	slot5 = TablePool
-	slot5 = slot5.returnTable
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.doEventByData
+	slot6 = {
+		"setPetAppearance",
+		nil,
+		0
+	}
+	slot7 = {}
+	slot7[1] = slot1
+	slot6[2] = slot7
 	slot7 = slot2
 
-	slot5(slot7)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 58-58, warpins: 2 ---
+	--- BLOCK #4 35-35, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -2101,9 +2098,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_SetPetAppearance = slot24
+slot0.Base_SetPetAppearance = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -2171,9 +2168,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_DestroyEnvObj = slot24
+slot0.Base_DestroyEnvObj = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = AIBaseMethodUtils
 	slot4 = slot4.remoteSyncAIAction
@@ -2252,9 +2249,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Base_SetModelActive = slot24
+slot0.Base_SetModelActive = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -2320,9 +2317,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_PlaySound = slot24
+slot0.Base_PlaySound = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -2380,9 +2377,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_TriggerBluePrint = slot24
+slot0.Base_TriggerBluePrint = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2454,9 +2451,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_AddSelfHate = slot24
+slot0.Base_AddSelfHate = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = AIBaseMethodUtils
 	slot3 = slot3.remoteSyncAIAction
@@ -2726,9 +2723,137 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_SendMessageToTrigger = slot24
+slot0.Base_SendMessageToTrigger = slot25
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot3 = AIBaseMethodUtils
+	slot3 = slot3.remoteSyncAIAction
+	slot5 = slot0
+	slot6 = "Base_SendMessageToTriggerSpecial"
+	slot7 = slot1
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = Utils
+	slot3 = slot3.checkClient
+	slot3 = slot3()
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #1 13-22, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getEntityByActorId
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	slot4 = pg
+	slot4 = slot4.getEntityByActorId
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #2 23-24, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #3 25-27, warpins: 1 ---
+	slot5 = slot3.basePetPrototypeId
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 28-31, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.getBasePetPrototypeId
+	slot7 = slot3.petPrototypeId
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-37, warpins: 2 ---
+	slot6 = Utils
+	slot6 = slot6.isPlayer
+	slot8 = slot4
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 38-39, warpins: 1 ---
+	slot6 = -1
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 40-40, warpins: 1 ---
+	slot6 = slot4.petPrototypeId
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 41-50, warpins: 2 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.tryClientTrigger
+	slot10 = TriggerConst
+	slot10 = slot10.TRIGGER_TARGET_PET_AI_MSG_SPECIAL
+	slot11 = slot5
+	slot12 = 1
+	slot13 = slot6
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 51-51, warpins: 4 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot0.Base_SendMessageToTriggerSpecial = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot7 = string_isNilOrEmpty
 	slot9 = slot2
@@ -2803,7 +2928,7 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #15
 	end
 
 
@@ -2834,113 +2959,94 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	--- BLOCK #8 40-43, warpins: 2 ---
 	slot8 = slot7.eModel
-	slot8 = slot8.modelComponent
+	slot8 = slot8.modelShaderView
 	--- END OF BLOCK #8 ---
 
-	slot8 = if slot8 then
+	slot8 = if not slot8 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 44-47, warpins: 1 ---
-	slot8 = slot7.eModel
-	slot8 = slot8.modelComponent
-	slot8 = slot8.modelView
-	slot8 = slot8.shaderView
+	--- BLOCK #9 44-46, warpins: 1 ---
+	slot9 = EBTStatus
+	slot9 = slot9.BT_SUCCESS
+
+	return slot9
+
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 48-49, warpins: 2 ---
+	--- BLOCK #10 47-57, warpins: 2 ---
+	slot11 = slot7
+	slot9 = slot7.getConfigData
+	slot9 = slot9(slot11)
+	slot10 = ClientEffectUtils
+	slot10 = slot10.PlayPreset
+	slot12 = slot7
+	slot13 = slot2
+	slot14 = slot3
+	slot15 = slot4
 	--- END OF BLOCK #10 ---
 
-	slot8 = if not slot8 then
+	slot16 = if not slot5 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 50-52, warpins: 1 ---
-	slot9 = EBTStatus
-	slot9 = slot9.BT_SUCCESS
-
-	return slot9
-
+	--- BLOCK #11 58-58, warpins: 1 ---
+	slot16 = -1
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 53-62, warpins: 2 ---
-	slot11 = slot7
-	slot9 = slot7.getConfigData
-	slot9 = slot9(slot11)
-	slot12 = slot8
-	slot10 = slot8.PlayPreset
-	slot13 = slot2
-	slot14 = slot3
-	slot15 = slot4
+	--- BLOCK #12 59-61, warpins: 2 ---
+	slot17, slot18, slot19, slot20 = nil
 	--- END OF BLOCK #12 ---
 
-	slot16 = if not slot5 then
+	slot21 = if not slot6 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 63-63, warpins: 1 ---
-	slot16 = -1
+	--- BLOCK #13 62-62, warpins: 1 ---
+	slot21 = nil
+
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 64-66, warpins: 2 ---
-	slot17, slot18, slot19, slot20 = nil
-	--- END OF BLOCK #14 ---
-
-	slot21 = if not slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 67-67, warpins: 1 ---
-	slot21 = nil
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 68-68, warpins: 2 ---
+	--- BLOCK #14 63-63, warpins: 2 ---
 	slot10(slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20, slot21)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #17 69-71, warpins: 2 ---
+	--- BLOCK #15 64-66, warpins: 2 ---
 	slot7 = EBTStatus
 	slot7 = slot7.BT_SUCCESS
 
 	return slot7
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot0.Base_PlayPreset = slot24
+slot0.Base_PlayPreset = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = string_isNilOrEmpty
 	slot5 = slot2
@@ -2983,7 +3089,7 @@ slot24 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	end
 
 
@@ -3014,7 +3120,7 @@ slot24 = function(slot0, slot1, slot2)
 
 	--- BLOCK #5 30-33, warpins: 2 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
+	slot4 = slot4.modelShaderView
 	--- END OF BLOCK #5 ---
 
 	slot4 = if slot4 then
@@ -3024,52 +3130,33 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 34-37, warpins: 1 ---
-	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot4 = slot4.shaderView
+	--- BLOCK #6 34-38, warpins: 1 ---
+	slot5 = ClientEffectUtils
+	slot5 = slot5.StopPreset
+	slot7 = slot3
+	slot8 = slot2
+
+	slot5(slot7, slot8)
+
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 38-39, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 40-43, warpins: 1 ---
-	slot7 = slot4
-	slot5 = slot4.StopPreset
-	slot8 = slot2
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 44-46, warpins: 3 ---
+	--- BLOCK #7 39-41, warpins: 3 ---
 	slot3 = EBTStatus
 	slot3 = slot3.BT_SUCCESS
 
 	return slot3
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot0.Base_StopPreset = slot24
+slot0.Base_StopPreset = slot25
 
-slot24 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.checkClient
@@ -3118,9 +3205,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot0.Base_AddBuff = slot24
+slot0.Base_AddBuff = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -3167,9 +3254,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_RemoveBuff = slot24
+slot0.Base_RemoveBuff = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -3214,9 +3301,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot0.Base_StartGrabEntity = slot24
+slot0.Base_StartGrabEntity = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -3259,7 +3346,7 @@ slot24 = function(slot0)
 
 end
 
-slot0.Base_StopGrabEntity = slot24
+slot0.Base_StopGrabEntity = slot25
 
 return slot0
 --- END OF BLOCK #0 ---

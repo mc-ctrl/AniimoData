@@ -163,100 +163,77 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-28, warpins: 2 ---
+	--- BLOCK #2 14-20, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
-	slot3 = slot3.lockComponent
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.prefsCacheUtils
-	slot6 = slot4
-	slot4 = slot4.getBool
-	slot7 = "HudV2Enable"
-	slot8 = false
-	slot4 = slot4(slot6, slot7, slot8)
+	slot3 = slot3.hudV2
+	slot3 = slot3.LD
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 29-35, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.hudV2
-	slot4 = slot4.LD
+	--- BLOCK #3 21-26, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
+	slot3 = slot3.LD
+	slot3 = slot3.focus
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 36-41, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.hudV2
-	slot4 = slot4.LD
-	slot3 = slot4.focus
+	--- BLOCK #4 27-28, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 42-43, warpins: 3 ---
-	--- END OF BLOCK #5 ---
-
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 44-44, warpins: 1 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #5 29-29, warpins: 1 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #7 45-50, warpins: 1 ---
+	--- BLOCK #6 30-35, warpins: 1 ---
 	slot4 = slot3.lockStrongUProgress
 	slot4 = slot4.progressAnimLen
 	slot0.progressAnimLen = slot4
 	slot4 = slot2.isUseHoldCancelLock
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #8 51-55, warpins: 1 ---
-	slot4 = 0
-	slot0.pressingProgress = slot4
-	slot4 = slot2.forceLockActorId
-	--- END OF BLOCK #8 ---
-
-	if slot4 ~= 0 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 56-65, warpins: 1 ---
+	--- BLOCK #7 36-40, warpins: 1 ---
+	slot4 = 0
+	slot0.pressingProgress = slot4
+	slot4 = slot2.forceLockActorId
+	--- END OF BLOCK #7 ---
+
+	if slot4 ~= 0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 41-50, warpins: 1 ---
 	slot4 = slot3.lockStrongUProgress
 	slot5 = 0
 	slot4.value = slot5
@@ -349,98 +326,101 @@ slot10 = function(slot0, slot1)
 
 	slot4 = slot4(slot6, slot7)
 	slot0.lockTargetTimer = slot4
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #10 66-69, warpins: 1 ---
+	--- BLOCK #9 51-57, warpins: 1 ---
+	slot4 = slot3.lockStrongUProgress
+	slot5 = 0
+	slot4.value = slot5
 	slot6 = slot2
 	slot4 = slot2.tryForceLockTarget
 
 	slot4(slot6)
 
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #10 58-60, warpins: 1 ---
+	slot4 = slot2.forceLockActorId
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	if slot4 ~= 0 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #11 70-72, warpins: 1 ---
-	slot4 = slot2.forceLockActorId
+	--- BLOCK #11 61-63, warpins: 1 ---
+	slot4 = slot2.isUseTabSwitchTarget
 	--- END OF BLOCK #11 ---
 
-	if slot4 ~= 0 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #12 73-75, warpins: 1 ---
-	slot4 = slot2.isUseTabSwitchTarget
-	--- END OF BLOCK #12 ---
-
-	slot4 = if slot4 then
 	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 76-79, warpins: 1 ---
+	--- BLOCK #12 64-67, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.tryLockNextTarget
 
 	slot4(slot6)
 
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #13 68-70, warpins: 1 ---
+	slot4 = slot2.isUseHoldCancelLock
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #14 80-82, warpins: 1 ---
-	slot4 = slot2.isUseHoldCancelLock
-	--- END OF BLOCK #14 ---
-
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 83-86, warpins: 1 ---
+	--- BLOCK #14 71-74, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.cancelLockTarget
 
 	slot4(slot6)
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #16 87-89, warpins: 1 ---
+	--- BLOCK #15 75-77, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.tryForceLockTarget
 
 	slot4(slot6)
 
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 78-79, warpins: 6 ---
+	return
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 90-91, warpins: 6 ---
+	--- BLOCK #17 80-80, warpins: 2 ---
 	return
 	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 92-92, warpins: 2 ---
-	return
-	--- END OF BLOCK #18 ---
 
 
 
@@ -460,71 +440,48 @@ slot10 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #1 8-22, warpins: 1 ---
+	--- BLOCK #1 8-14, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
-	slot3 = slot3.lockComponent
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.prefsCacheUtils
-	slot6 = slot4
-	slot4 = slot4.getBool
-	slot7 = "HudV2Enable"
-	slot8 = false
-	slot4 = slot4(slot6, slot7, slot8)
+	slot3 = slot3.hudV2
+	slot3 = slot3.LD
 	--- END OF BLOCK #1 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 23-29, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.hudV2
-	slot4 = slot4.LD
+	--- BLOCK #2 15-20, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.hudV2
+	slot3 = slot3.LD
+	slot3 = slot3.focus
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 30-35, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.hudV2
-	slot4 = slot4.LD
-	slot3 = slot4.focus
+	--- BLOCK #3 21-22, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 36-37, warpins: 3 ---
-	--- END OF BLOCK #4 ---
-
 	slot3 = if slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 38-43, warpins: 1 ---
+	--- BLOCK #4 23-28, warpins: 1 ---
 	slot4 = slot3.lockStrongUProgress
 	slot6 = slot4
 	slot4 = slot4.ProgressToValue
@@ -533,12 +490,12 @@ slot10 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 44-52, warpins: 2 ---
+	--- BLOCK #5 29-37, warpins: 2 ---
 	slot4 = TimerManager
 	slot4 = slot4.removeTimer
 	slot6 = slot0.lockTargetTimer
@@ -548,73 +505,73 @@ slot10 = function(slot0, slot1)
 	slot4 = nil
 	slot0.lockTargetTimer = slot4
 	slot4 = slot2.forceLockActorId
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 	if slot4 ~= 0 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 53-55, warpins: 1 ---
+	--- BLOCK #6 38-40, warpins: 1 ---
 	slot4 = slot2.isUseTabSwitchTarget
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 56-59, warpins: 1 ---
+	--- BLOCK #7 41-44, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.tryLockNextTarget
 
 	slot4(slot6)
 
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 45-47, warpins: 1 ---
+	slot4 = slot2.isUseHoldCancelLock
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #9 60-62, warpins: 1 ---
-	slot4 = slot2.isUseHoldCancelLock
-	--- END OF BLOCK #9 ---
-
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 63-66, warpins: 1 ---
+	--- BLOCK #9 48-51, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.cancelLockTarget
 
 	slot4(slot6)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #11 67-69, warpins: 1 ---
+	--- BLOCK #10 52-54, warpins: 1 ---
 	slot6 = slot2
 	slot4 = slot2.tryForceLockTarget
 
 	slot4(slot6)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #12 70-70, warpins: 5 ---
+	--- BLOCK #11 55-55, warpins: 5 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 
 

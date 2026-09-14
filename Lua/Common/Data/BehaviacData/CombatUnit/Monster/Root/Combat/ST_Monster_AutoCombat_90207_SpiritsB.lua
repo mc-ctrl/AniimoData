@@ -8,18 +8,18 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	version = 15,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_90207_SpiritsB",
 	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_90207_SpiritsB"
+	version = 15
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	const = 7,
+	type = "float",
 	value = "7",
-	name = "disToTgtForSkillMon",
-	type = "float"
+	name = "disToTgtForSkillMon"
 }
 slot4[1] = slot5
 slot3.pars = slot4

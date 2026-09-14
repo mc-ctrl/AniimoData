@@ -1,4 +1,4 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-62, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -23,12 +23,18 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Utils.ClientTextUtils"
 slot7 = slot7(slot9)
-slot8 = slot0.LightClass
-slot10 = "WorkShopHomeComponent"
-slot11 = slot6
-slot8 = slot8(slot10, slot11)
+slot8 = require
+slot10 = "Utils.LuaUIUtils"
+slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Data.function_unlock_enum"
+slot9 = slot9(slot11)
+slot10 = slot0.LightClass
+slot12 = "WorkShopHomeComponent"
+slot13 = slot6
+slot10 = slot10(slot12, slot13)
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -56,9 +62,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.findObjects = slot9
+slot10.findObjects = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -77,9 +83,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.initView = slot9
+slot10.initView = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addListener
@@ -98,9 +104,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onEnterPage = slot9
+slot10.onEnterPage = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeListener
@@ -114,9 +120,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onLeavePage = slot9
+slot10.onLeavePage = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.funcList
 
@@ -230,9 +236,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.addListener = slot9
+slot10.addListener = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.funcList
 	slot2 = nil
@@ -248,9 +254,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.removeListener = slot9
+slot10.removeListener = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -265,9 +271,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onDestroy = slot9
+slot10.onDestroy = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = {}
 	slot2 = {
@@ -326,10 +332,47 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshHomePage = slot9
+slot10.refreshHomePage = slot11
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isHairEmpty
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-17, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "EMPTY_HAIR"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 18-40, warpins: 1 ---
+	slot2 = AvatarUtils
+	slot2 = slot2.cancelHairTie
+
+	slot2()
+
 	slot4 = slot0
 	slot2 = slot0.showCurEntity
 	slot5 = true
@@ -390,15 +433,124 @@ slot9 = function(slot0, slot1)
 	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 41-41, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot8.func_OpenHairDesign = slot9
+slot10.func_OpenHairDesign = slot11
 
-slot9 = function(slot0, slot1)
+slot11 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = require
+	slot3 = "Data.appearance_point_enum"
+	slot1 = slot1(slot3)
+	slot2 = slot0.avatarScene
+	slot4 = slot2
+	slot2 = slot2.getCurEntity
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot3 = slot2.getAppearanceConfigId
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-14, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-18, warpins: 2 ---
+	slot3 = slot1.Fringe
+	slot4 = slot1.Plait
+	slot5 = 1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-25, warpins: 2 ---
+	slot9 = slot2
+	slot7 = slot2.getAppearanceConfigId
+	slot10 = slot6
+	slot11 = true
+	slot7 = slot7(slot9, slot10, slot11)
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 26-27, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot7 ~= 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 28-29, warpins: 1 ---
+	slot8 = false
+
+	return slot8
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-30, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #8
+
+	--- BLOCK #8 31-32, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot10.isHairEmpty = slot11
+
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot2 = {
 		isDesignMode = true
@@ -474,10 +626,45 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.func_OpenFaceDesign = slot9
+slot10.func_OpenFaceDesign = slot11
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.checkFunctionUnlock
+	slot5 = FunctionEnum
+	slot5 = slot5.APPEARANCE_COSTUME_CUSTOM
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-20, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.showBubbleMessageRaw
+	slot4 = LuaUIUtils
+	slot4 = slot4.getFunctionUnlockDesc
+	slot6 = FunctionEnum
+	slot6 = slot6.APPEARANCE_COSTUME_CUSTOM
+	slot4 = slot4(slot6)
+	slot5 = 3
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 21-46, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showCurEntity
 	slot5 = true
@@ -539,26 +726,53 @@ slot9 = function(slot0, slot1)
 	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 47-47, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot8.func_openCostumeDesign = slot9
+slot10.func_openCostumeDesign = slot11
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.ctrl
+
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-13, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 7-17, warpins: 1 ---
 	slot2 = slot0.avatarScene
 	slot4 = slot2
 	slot2 = slot2.showAvatar
@@ -573,12 +787,12 @@ slot9 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 14-19, warpins: 1 ---
+	--- BLOCK #4 18-23, warpins: 1 ---
 	slot2 = slot0.avatarScene
 	slot4 = slot2
 	slot2 = slot2.hideEntityWithId
@@ -587,22 +801,22 @@ slot9 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 20-20, warpins: 2 ---
+	--- BLOCK #5 24-24, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot8.showCurEntity = slot9
+slot10.showCurEntity = slot11
 
-return slot8
+return slot10
 --- END OF BLOCK #0 ---
 
 

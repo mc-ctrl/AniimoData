@@ -271,7 +271,7 @@ slot14 = function(slot0)
 
 		slot13 = LuaUIUtils
 		slot13 = slot13.getLastTimeStr
-		slot15 = slot10.loginTime
+		slot15 = slot10.lastLogoutTime
 		slot13 = slot13(slot15)
 		slot14 = ClientTextUtils
 		slot14 = slot14.setText
@@ -718,15 +718,20 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
-	slot2 = AvatarPresetData
-	slot2 = slot2[slot1]
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.avatar
+	slot4 = slot2
+	slot2 = slot2.getAvatarPresetData
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-6, warpins: 2 ---
+	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -736,7 +741,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 7-9, warpins: 1 ---
+	--- BLOCK #3 12-14, warpins: 1 ---
 	slot3 = slot2.templateId
 	--- END OF BLOCK #3 ---
 
@@ -747,14 +752,14 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 10-10, warpins: 2 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
 	slot3 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 11-12, warpins: 2 ---
+	--- BLOCK #5 16-17, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	if slot3 == 4 then
@@ -764,7 +769,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 13-15, warpins: 1 ---
+	--- BLOCK #6 18-20, warpins: 1 ---
 	slot4 = GENDER_MALE
 
 	return slot4
@@ -774,7 +779,7 @@ slot14 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #7 16-17, warpins: 1 ---
+	--- BLOCK #7 21-22, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
 	if slot3 == 3 then
@@ -784,7 +789,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 18-19, warpins: 1 ---
+	--- BLOCK #8 23-24, warpins: 1 ---
 	slot4 = GENDER_FEMALE
 
 	return slot4
@@ -794,7 +799,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 20-21, warpins: 3 ---
+	--- BLOCK #9 25-26, warpins: 3 ---
 	slot4 = GENDER_UNKNOWN
 
 	return slot4

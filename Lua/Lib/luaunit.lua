@@ -282,11 +282,11 @@ slot3 = function(slot0, ...)
 end
 
 slot4 = {
+	string = 3,
 	number = 1,
 	table = 4,
-	boolean = 2,
 	other = 5,
-	string = 3
+	boolean = 2
 }
 slot5 = {}
 
@@ -1277,11 +1277,11 @@ slot16 = function(slot0)
 	slot3 = slot0
 	slot4 = "."
 	slot5 = {
-		["'"] = "&apos;",
 		[">"] = "&gt;",
-		["\""] = "&quot;",
 		["&"] = "&amp;",
-		["<"] = "&lt;"
+		["<"] = "&lt;",
+		["'"] = "&apos;",
+		["\""] = "&quot;"
 	}
 
 	return slot1(slot3, slot4, slot5)
@@ -12350,13 +12350,13 @@ slot65 = function(slot0, slot1, slot2)
 	slot3 = {
 		currentTestNumber = 0,
 		failureCount = 0,
-		suiteStarted = true,
-		currentClassName = "",
-		runCount = 0,
 		errorCount = 0,
+		runCount = 0,
 		successCount = 0,
 		skippedCount = 0,
-		notSuccessCount = 0
+		notSuccessCount = 0,
+		suiteStarted = true,
+		currentClassName = ""
 	}
 	slot3.selectedCount = slot1
 	slot3.nonSelectedCount = slot2

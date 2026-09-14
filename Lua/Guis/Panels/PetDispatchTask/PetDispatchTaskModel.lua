@@ -103,7 +103,7 @@ slot10 = function(slot0)
 
 	--- BLOCK #2 8-16, warpins: 2 ---
 	slot2 = ClientActivityUtils
-	slot2 = slot2.getTaskInfoBytaskId
+	slot2 = slot2.getTaskInfoByTaskId
 	slot4 = ActivityConst
 	slot4 = slot4.EventType
 	slot4 = slot4.PetDispatch

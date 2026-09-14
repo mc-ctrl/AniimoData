@@ -1,69 +1,72 @@
---- BLOCK #0 1-97, warpins: 1 ---
+--- BLOCK #0 1-100, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "CatchRogueEntryCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "CatchRogueEntryCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Utils.ActivityUtils"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.ActivityConst"
+slot6 = "Common.Utils.ActivityUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.LuaUIUtils"
+slot7 = "Common.Const.ActivityConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientTextUtils"
+slot8 = "Utils.LuaUIUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.UIConst"
+slot9 = "Utils.ClientTextUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.UICtrl"
+slot10 = "Const.UIConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.event_catch_rogue_data"
+slot11 = "Guis.UICtrl"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.catch_rogue_phase_data"
+slot12 = "Data.event_catch_rogue_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.limit_data"
+slot13 = "Data.catch_rogue_phase_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.NoticeDef"
+slot14 = "Data.limit_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_data"
+slot15 = "Common.NoticeDef"
 slot13 = slot13(slot15)
-slot14 = slot2.LightClass
-slot16 = "CatchRogueEntryCtrl"
-slot17 = slot8
-slot14 = slot14(slot16, slot17)
-slot15 = {}
-slot16 = slot1.SHOP_ON_BUY_ITEMS
-slot17 = {
+slot14 = require
+slot16 = "Data.pet_data"
+slot14 = slot14(slot16)
+slot15 = slot3.LightClass
+slot17 = "CatchRogueEntryCtrl"
+slot18 = slot9
+slot15 = slot15(slot17, slot18)
+slot16 = {}
+slot17 = slot2.SHOP_ON_BUY_ITEMS
+slot18 = {
 	"onBuyItems",
 	true
 }
-slot15[slot16] = slot17
-slot16 = slot1.UI_ON_SHOW
-slot17 = {
+slot16[slot17] = slot18
+slot17 = slot2.UI_ON_SHOW
+slot18 = {
 	"onUIShow",
 	true
 }
-slot15[slot16] = slot17
-slot14.messages = slot15
+slot16[slot17] = slot18
+slot15.messages = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -79,9 +82,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onCreate = slot15
+slot15.onCreate = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-66, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listElementUList
@@ -688,9 +691,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.addListener = slot15
+slot15.addListener = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.resumeGame
 	--- END OF BLOCK #0 ---
@@ -731,7 +734,7 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #3 16-16, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -819,9 +822,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onDestroy = slot15
+slot15.onDestroy = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.model
 	slot5 = slot3
@@ -860,9 +863,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.checkCanOpen = slot15
+slot15.checkCanOpen = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -883,9 +886,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onOpen = slot15
+slot15.onOpen = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -946,9 +949,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.refreshAll = slot15
+slot15.refreshAll = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -992,9 +995,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.setTempInfo = slot15
+slot15.setTempInfo = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1081,9 +1084,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.refreshTempData = slot15
+slot15.refreshTempData = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.elementBigUButton
@@ -1685,9 +1688,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.initUI = slot15
+slot15.initUI = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.resumeGame
 	--- END OF BLOCK #0 ---
@@ -1914,9 +1917,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.refreshUI = slot15
+slot15.refreshUI = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshUI
@@ -1930,9 +1933,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onShow = slot15
+slot15.onShow = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1941,9 +1944,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onHide = slot15
+slot15.onHide = slot16
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2042,9 +2045,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.renderSpecialCatchBall = slot15
+slot15.renderSpecialCatchBall = slot16
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2327,9 +2330,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.renderCommonCatchBall = slot15
+slot15.renderCommonCatchBall = slot16
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2675,9 +2678,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.renderPet = slot15
+slot15.renderPet = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot2 = nil
@@ -2724,7 +2727,7 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #3 23-23, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -2825,7 +2828,7 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #12 60-60, warpins: 1 ---
-	slot9 = {}
+	slot9 = EMPTY_TABLE
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
@@ -2894,7 +2897,7 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #18 88-88, warpins: 1 ---
-	slot10 = {}
+	slot10 = EMPTY_TABLE
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
@@ -3073,9 +3076,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.startCatchRogue = slot15
+slot15.startCatchRogue = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshUI
@@ -3089,9 +3092,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onBuyItems = slot15
+slot15.onBuyItems = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = UIConst
 	slot2 = slot2.UI_ID_LOADING
@@ -3123,9 +3126,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onUIShow = slot15
+slot15.onUIShow = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshAll
@@ -3139,9 +3142,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onCatchRogueSettle = slot15
+slot15.onCatchRogueSettle = slot16
 
-return slot14
+return slot15
 --- END OF BLOCK #0 ---
 
 

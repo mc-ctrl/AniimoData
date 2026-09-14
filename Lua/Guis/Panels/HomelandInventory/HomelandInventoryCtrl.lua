@@ -1,4 +1,4 @@
---- BLOCK #0 1-106, warpins: 1 ---
+--- BLOCK #0 1-117, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -57,24 +57,31 @@ slot16 = slot16(slot18)
 slot17 = require
 slot19 = "Const.HotkeyConst"
 slot17 = slot17(slot19)
-slot18 = "PanelBagTop"
-slot19 = "PanelWareHouseTop"
-slot20 = {}
-slot21 = slot1.HOMELAND_STORE_ITEMS_SUCC
-slot22 = {
+slot18 = require
+slot20 = "Const.AudioConst"
+slot18 = slot18(slot20)
+slot19 = CS
+slot19 = slot19.UnityEngine
+slot19 = slot19.RectTransformUtility
+slot20 = "PanelBagTop"
+slot21 = "PanelWareHouseTop"
+slot22 = 8
+slot23 = {}
+slot24 = slot1.HOMELAND_STORE_ITEMS_SUCC
+slot25 = {
 	"refreshItemList",
 	true
 }
-slot20[slot21] = slot22
-slot21 = slot1.HOMELAND_TAKE_ITEMS_SUCC
-slot22 = {
+slot23[slot24] = slot25
+slot24 = slot1.HOMELAND_TAKE_ITEMS_SUCC
+slot25 = {
 	"refreshItemList",
 	true
 }
-slot20[slot21] = slot22
-slot4.messages = slot20
+slot23[slot24] = slot25
+slot4.messages = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -116,9 +123,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot20
+slot4.onCreate = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -243,9 +250,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.syncModeByFocusedGroup = slot20
+slot4.syncModeByFocusedGroup = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.syncModeByFocusedGroup
@@ -264,9 +271,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.refreshModeHotkeyByFocusedGroup = slot20
+slot4.refreshModeHotkeyByFocusedGroup = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -363,12 +370,22 @@ slot20 = function(slot0)
 		GO OUT TO BLOCK #7
 
 
-		--- BLOCK #7 24-72, warpins: 1 ---
+		--- BLOCK #7 24-80, warpins: 1 ---
 		slot1 = pg
 		slot1 = slot1.space
 		slot3 = slot1
 		slot1 = slot1.reqStoreHomelandItems
 		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.audio
+		slot3 = slot1
+		slot1 = slot1.triggerEvent
+		slot4 = AudioConst
+		slot4 = slot4.EVENT_HOME_STOREHOUSE_TRANSFER
 
 		slot1(slot3, slot4)
 
@@ -429,7 +446,7 @@ slot20 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #8 73-126, warpins: 1 ---
+		--- BLOCK #8 81-134, warpins: 1 ---
 		slot0 = self
 		slot1 = true
 		slot0.inBagMultiSelect = slot1
@@ -501,7 +518,7 @@ slot20 = function(slot0)
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 127-127, warpins: 2 ---
+		--- BLOCK #9 135-135, warpins: 2 ---
 		return
 		--- END OF BLOCK #9 ---
 
@@ -586,12 +603,22 @@ slot20 = function(slot0)
 		GO OUT TO BLOCK #7
 
 
-		--- BLOCK #7 24-72, warpins: 1 ---
+		--- BLOCK #7 24-80, warpins: 1 ---
 		slot1 = pg
 		slot1 = slot1.space
 		slot3 = slot1
 		slot1 = slot1.reqTakeHomelandItems
 		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.audio
+		slot3 = slot1
+		slot1 = slot1.triggerEvent
+		slot4 = AudioConst
+		slot4 = slot4.EVENT_HOME_STOREHOUSE_TRANSFER
 
 		slot1(slot3, slot4)
 
@@ -652,7 +679,7 @@ slot20 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #8 73-126, warpins: 1 ---
+		--- BLOCK #8 81-134, warpins: 1 ---
 		slot0 = self
 		slot1 = true
 		slot0.inInventoryMultiSelect = slot1
@@ -724,7 +751,7 @@ slot20 = function(slot0)
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 127-127, warpins: 2 ---
+		--- BLOCK #9 135-135, warpins: 2 ---
 		return
 		--- END OF BLOCK #9 ---
 
@@ -1108,7 +1135,7 @@ slot20 = function(slot0)
 		end
 
 
-		--- BLOCK #17 83-92, warpins: 1 ---
+		--- BLOCK #17 83-100, warpins: 1 ---
 		slot4 = pg
 		slot4 = slot4.space
 		slot6 = slot4
@@ -1120,12 +1147,22 @@ slot20 = function(slot0)
 
 		slot4(slot6, slot7)
 
+		slot4 = pg
+		slot4 = slot4.game
+		slot4 = slot4.audio
+		slot6 = slot4
+		slot4 = slot4.triggerEvent
+		slot7 = AudioConst
+		slot7 = slot7.EVENT_HOME_STOREHOUSE_TRANSFER
+
+		slot4(slot6, slot7)
+
 		--- END OF BLOCK #17 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-		--- BLOCK #18 93-96, warpins: 2 ---
+		--- BLOCK #18 101-104, warpins: 2 ---
 		slot2 = self
 		slot2 = slot2.isTake
 		--- END OF BLOCK #18 ---
@@ -1137,7 +1174,7 @@ slot20 = function(slot0)
 		end
 
 
-		--- BLOCK #19 97-100, warpins: 1 ---
+		--- BLOCK #19 105-108, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.inventoryItemData
 		--- END OF BLOCK #19 ---
@@ -1149,7 +1186,7 @@ slot20 = function(slot0)
 		end
 
 
-		--- BLOCK #20 101-109, warpins: 1 ---
+		--- BLOCK #20 109-117, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.view
 		slot2 = slot2.listInventory
@@ -1166,7 +1203,7 @@ slot20 = function(slot0)
 		end
 
 
-		--- BLOCK #21 110-112, warpins: 1 ---
+		--- BLOCK #21 118-120, warpins: 1 ---
 		slot3 = 0
 		--- END OF BLOCK #21 ---
 
@@ -1177,7 +1214,7 @@ slot20 = function(slot0)
 		end
 
 
-		--- BLOCK #22 113-118, warpins: 1 ---
+		--- BLOCK #22 121-126, warpins: 1 ---
 		slot3 = self
 		slot3 = slot3.inventoryItemData
 		slot4 = slot2 + 1
@@ -1191,7 +1228,7 @@ slot20 = function(slot0)
 		end
 
 
-		--- BLOCK #23 119-127, warpins: 1 ---
+		--- BLOCK #23 127-143, warpins: 1 ---
 		slot4 = pg
 		slot4 = slot4.space
 		slot6 = slot4
@@ -1203,12 +1240,22 @@ slot20 = function(slot0)
 
 		slot4(slot6, slot7)
 
+		slot4 = pg
+		slot4 = slot4.game
+		slot4 = slot4.audio
+		slot6 = slot4
+		slot4 = slot4.triggerEvent
+		slot7 = AudioConst
+		slot7 = slot7.EVENT_HOME_STOREHOUSE_TRANSFER
+
+		slot4(slot6, slot7)
+
 		--- END OF BLOCK #23 ---
 
 		FLOW; TARGET BLOCK #24
 
 
-		--- BLOCK #24 128-128, warpins: 10 ---
+		--- BLOCK #24 144-144, warpins: 10 ---
 		return
 		--- END OF BLOCK #24 ---
 
@@ -1298,9 +1345,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.addListener = slot20
+slot4.addListener = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -1508,9 +1555,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.refreshConsoleBarState = slot20
+slot4.refreshConsoleBarState = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.keyHotKeyPutInBag
@@ -1720,9 +1767,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.refreshModeHotkey = slot20
+slot4.refreshModeHotkey = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.propTypeBag
 	--- END OF BLOCK #0 ---
@@ -1790,9 +1837,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot4.setSortAscendingOrder = slot20
+slot4.setSortAscendingOrder = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.propTypeBag
 	--- END OF BLOCK #0 ---
@@ -1856,9 +1903,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot4.setSortIdxType = slot20
+slot4.setSortIdxType = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.bagItemData
@@ -1944,9 +1991,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.cancelBagSelect = slot20
+slot4.cancelBagSelect = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.inventoryItemData
@@ -2032,9 +2079,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.cancelInventorySelect = slot20
+slot4.cancelInventorySelect = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2122,9 +2169,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.refreshItemList = slot20
+slot4.refreshItemList = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2219,9 +2266,198 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot4.dragPanelIndex = slot20
+slot4.dragPanelIndex = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot4 = slot0.view
+	slot4 = slot4.listBag
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot4 = slot0.view
+	slot4 = slot4.listInventory
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-40, warpins: 2 ---
+	slot5 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = isStore
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-10, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.space
+		slot3 = slot1
+		slot1 = slot1.reqStoreHomelandItems
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 11-16, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.space
+		slot3 = slot1
+		slot1 = slot1.reqTakeHomelandItems
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-33, warpins: 2 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.audio
+		slot3 = slot1
+		slot1 = slot1.triggerEvent
+		slot4 = AudioConst
+		slot4 = slot4.EVENT_HOME_STOREHOUSE_TRANSFER
+
+		slot1(slot3, slot4)
+
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot3 = slot1
+		slot1 = slot1.close
+		slot4 = UIConst
+		slot4 = slot4.UI_ID_COMMON_ITEM_TIP
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot6 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.lastButton
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-12, warpins: 1 ---
+		slot0 = itemList
+		slot2 = slot0
+		slot0 = slot0.DeselectAll
+
+		slot0(slot2)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 13-13, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot9 = slot7
+	slot7 = slot7.open
+	slot10 = UIConst
+	slot10 = slot10.UI_ID_COMMON_ITEM_TIP
+	slot11 = {
+		fromParamCount = true,
+		inHome = true,
+		autoHor = true
+	}
+	slot12 = slot1.id
+	slot11.id = slot12
+	slot12 = slot1.num
+	slot11.num = slot12
+	slot12 = slot1.num
+	slot11.itemCount = slot12
+	slot12 = Utils
+	slot12 = slot12.getHomeItemPrice
+	slot14 = slot1.id
+	slot12 = slot12(slot14)
+	slot11.price = slot12
+	slot11.targetRect = slot2
+	slot12 = ITEM_TIP_PADDING
+	slot11.padding = slot12
+	slot12 = AudioConst
+	slot12 = slot12.EVENT_HOME_STOREHOUSE_CONFIRM
+	slot11.confirmClickSoundUrl = slot12
+	slot11.confirmClick = slot5
+	slot11.cancelClick = slot6
+
+	slot7(slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot4.openItemTip = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-114, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2234,7 +2470,7 @@ slot20 = function(slot0)
 	slot1 = slot1.listBag
 
 	slot2 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-29, warpins: 1 ---
+		--- BLOCK #0 1-31, warpins: 1 ---
 		slot3 = function()
 			--- BLOCK #0 1-7, warpins: 1 ---
 			slot0 = self
@@ -2291,6 +2527,7 @@ slot20 = function(slot0)
 
 			slot0 = self
 			slot0 = slot0._suppressTipOnSelect
+
 			--- END OF BLOCK #2 ---
 
 			slot0 = if slot0 then
@@ -2301,129 +2538,31 @@ slot20 = function(slot0)
 
 
 			--- BLOCK #3 40-40, warpins: 1 ---
+			return
+
 			--- END OF BLOCK #3 ---
 
-			UNCONDITIONAL JUMP; TARGET BLOCK #6
+			FLOW; TARGET BLOCK #4
 
 
-			--- BLOCK #4 41-63, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.global
-			slot0 = slot0.ui
+			--- BLOCK #4 41-47, warpins: 2 ---
+			slot0 = self
 			slot2 = slot0
-			slot0 = slot0.open
-			slot3 = UIConst
-			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-			slot4 = {
-				fromParamCount = true,
-				inHome = true
-			}
-			slot5 = data
-			slot5 = slot5.id
-			slot4.id = slot5
-			slot5 = data
-			slot5 = slot5.num
-			slot4.num = slot5
-			slot5 = self
-			slot5 = slot5.view
-			slot5 = slot5.listBag
-			slot4.targetRect = slot5
+			slot0 = slot0.openItemTip
+			slot3 = data
+			slot4 = button
+			slot5 = true
 
-			slot5 = function(slot0)
-				--- BLOCK #0 1-15, warpins: 1 ---
-				slot1 = pg
-				slot1 = slot1.space
-				slot3 = slot1
-				slot1 = slot1.reqStoreHomelandItems
-				slot4 = slot0
-
-				slot1(slot3, slot4)
-
-				slot1 = pg
-				slot1 = slot1.global
-				slot1 = slot1.ui
-				slot3 = slot1
-				slot1 = slot1.close
-				slot4 = UIConst
-				slot4 = slot4.UI_ID_COMMON_ITEM_TIP
-
-				slot1(slot3, slot4)
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			slot4.confirmClick = slot5
-
-			slot5 = function(slot0)
-				--- BLOCK #0 1-4, warpins: 1 ---
-				slot1 = self
-				slot1 = slot1.view
-				--- END OF BLOCK #0 ---
-
-				slot1 = if slot1 then
-				JUMP TO BLOCK #1
-				else
-				JUMP TO BLOCK #3
-				end
-
-
-				--- BLOCK #1 5-8, warpins: 1 ---
-				slot1 = self
-				slot1 = slot1.lastButton
-				--- END OF BLOCK #1 ---
-
-				slot1 = if slot1 then
-				JUMP TO BLOCK #2
-				else
-				JUMP TO BLOCK #3
-				end
-
-
-				--- BLOCK #2 9-14, warpins: 1 ---
-				slot1 = self
-				slot1 = slot1.view
-				slot1 = slot1.listBag
-				slot3 = slot1
-				slot1 = slot1.DeselectAll
-
-				slot1(slot3)
-
-				--- END OF BLOCK #2 ---
-
-				FLOW; TARGET BLOCK #3
-
-
-				--- BLOCK #3 15-15, warpins: 3 ---
-				return
-				--- END OF BLOCK #3 ---
-
-
-
-			end
-
-			slot4.cancelClick = slot5
-
-			slot0(slot2, slot3, slot4)
+			slot0(slot2, slot3, slot4, slot5)
 
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
 
 
-			--- BLOCK #5 64-64, warpins: 2 ---
+			--- BLOCK #5 48-48, warpins: 2 ---
 			return
 			--- END OF BLOCK #5 ---
-
-			FLOW; TARGET BLOCK #6
-
-
-			--- BLOCK #6 65-65, warpins: 2 ---
-			return
-			--- END OF BLOCK #6 ---
 
 
 
@@ -2452,9 +2591,11 @@ slot20 = function(slot0)
 
 		slot3(slot5, slot6)
 
-		slot3 = slot0.luaClick
+		slot3 = AudioConst
+		slot3 = slot3.EVENT_HOME_STOREHOUSE_CLICK
+		slot0.clickSoundUrl = slot3
 
-		slot4 = function(slot0)
+		slot3 = function(slot0)
 			--- BLOCK #0 1-4, warpins: 1 ---
 			slot1 = self
 			slot1 = slot1.inBagMultiSelect
@@ -2513,10 +2654,10 @@ slot20 = function(slot0)
 
 			--- BLOCK #6 14-21, warpins: 2 ---
 			slot1._suppressTipOnSelect = slot2
-			slot1 = renderedLuaClick
-			slot3 = slot0
+			slot1 = data
+			slot1 = slot1.extraFunc
 
-			slot1(slot3)
+			slot1()
 
 			slot1 = self
 			slot2 = false
@@ -2529,9 +2670,9 @@ slot20 = function(slot0)
 
 		end
 
-		slot0.luaClick = slot4
+		slot0.luaClick = slot3
 
-		slot4 = function(slot0, slot1)
+		slot3 = function(slot0, slot1)
 			--- BLOCK #0 1-2, warpins: 1 ---
 			--- END OF BLOCK #0 ---
 
@@ -2584,7 +2725,7 @@ slot20 = function(slot0)
 			end
 
 
-			--- BLOCK #4 22-33, warpins: 2 ---
+			--- BLOCK #4 22-41, warpins: 2 ---
 			slot2 = {}
 			slot3 = data
 			slot3 = slot3.id
@@ -2599,12 +2740,22 @@ slot20 = function(slot0)
 
 			slot3(slot5, slot6)
 
+			slot3 = pg
+			slot3 = slot3.game
+			slot3 = slot3.audio
+			slot5 = slot3
+			slot3 = slot3.triggerEvent
+			slot6 = AudioConst
+			slot6 = slot6.EVENT_HOME_STOREHOUSE_TRANSFER
+
+			slot3(slot5, slot6)
+
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
 
 
-			--- BLOCK #5 34-34, warpins: 2 ---
+			--- BLOCK #5 42-42, warpins: 2 ---
 			return
 			--- END OF BLOCK #5 ---
 
@@ -2612,7 +2763,7 @@ slot20 = function(slot0)
 
 		end
 
-		slot0.luaEndDrag = slot4
+		slot0.luaEndDrag = slot3
 
 		return
 		--- END OF BLOCK #0 ---
@@ -2641,7 +2792,7 @@ slot20 = function(slot0)
 	slot1 = slot1.listInventory
 
 	slot2 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-29, warpins: 1 ---
+		--- BLOCK #0 1-31, warpins: 1 ---
 		slot3 = function()
 			--- BLOCK #0 1-7, warpins: 1 ---
 			slot0 = self
@@ -2698,6 +2849,7 @@ slot20 = function(slot0)
 
 			slot0 = self
 			slot0 = slot0._suppressTipOnSelect
+
 			--- END OF BLOCK #2 ---
 
 			slot0 = if slot0 then
@@ -2708,129 +2860,31 @@ slot20 = function(slot0)
 
 
 			--- BLOCK #3 40-40, warpins: 1 ---
+			return
+
 			--- END OF BLOCK #3 ---
 
-			UNCONDITIONAL JUMP; TARGET BLOCK #6
+			FLOW; TARGET BLOCK #4
 
 
-			--- BLOCK #4 41-63, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.global
-			slot0 = slot0.ui
+			--- BLOCK #4 41-47, warpins: 2 ---
+			slot0 = self
 			slot2 = slot0
-			slot0 = slot0.open
-			slot3 = UIConst
-			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-			slot4 = {
-				fromParamCount = true,
-				inHome = true
-			}
-			slot5 = data
-			slot5 = slot5.id
-			slot4.id = slot5
-			slot5 = data
-			slot5 = slot5.num
-			slot4.num = slot5
-			slot5 = self
-			slot5 = slot5.view
-			slot5 = slot5.listInventory
-			slot4.targetRect = slot5
+			slot0 = slot0.openItemTip
+			slot3 = data
+			slot4 = button
+			slot5 = false
 
-			slot5 = function(slot0)
-				--- BLOCK #0 1-15, warpins: 1 ---
-				slot1 = pg
-				slot1 = slot1.space
-				slot3 = slot1
-				slot1 = slot1.reqTakeHomelandItems
-				slot4 = slot0
-
-				slot1(slot3, slot4)
-
-				slot1 = pg
-				slot1 = slot1.global
-				slot1 = slot1.ui
-				slot3 = slot1
-				slot1 = slot1.close
-				slot4 = UIConst
-				slot4 = slot4.UI_ID_COMMON_ITEM_TIP
-
-				slot1(slot3, slot4)
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			slot4.confirmClick = slot5
-
-			slot5 = function(slot0)
-				--- BLOCK #0 1-4, warpins: 1 ---
-				slot1 = self
-				slot1 = slot1.view
-				--- END OF BLOCK #0 ---
-
-				slot1 = if slot1 then
-				JUMP TO BLOCK #1
-				else
-				JUMP TO BLOCK #3
-				end
-
-
-				--- BLOCK #1 5-8, warpins: 1 ---
-				slot1 = self
-				slot1 = slot1.lastButton
-				--- END OF BLOCK #1 ---
-
-				slot1 = if slot1 then
-				JUMP TO BLOCK #2
-				else
-				JUMP TO BLOCK #3
-				end
-
-
-				--- BLOCK #2 9-14, warpins: 1 ---
-				slot1 = self
-				slot1 = slot1.view
-				slot1 = slot1.listInventory
-				slot3 = slot1
-				slot1 = slot1.DeselectAll
-
-				slot1(slot3)
-
-				--- END OF BLOCK #2 ---
-
-				FLOW; TARGET BLOCK #3
-
-
-				--- BLOCK #3 15-15, warpins: 3 ---
-				return
-				--- END OF BLOCK #3 ---
-
-
-
-			end
-
-			slot4.cancelClick = slot5
-
-			slot0(slot2, slot3, slot4)
+			slot0(slot2, slot3, slot4, slot5)
 
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
 
 
-			--- BLOCK #5 64-64, warpins: 2 ---
+			--- BLOCK #5 48-48, warpins: 2 ---
 			return
 			--- END OF BLOCK #5 ---
-
-			FLOW; TARGET BLOCK #6
-
-
-			--- BLOCK #6 65-65, warpins: 2 ---
-			return
-			--- END OF BLOCK #6 ---
 
 
 
@@ -2859,9 +2913,11 @@ slot20 = function(slot0)
 
 		slot3(slot5, slot6)
 
-		slot3 = slot0.luaClick
+		slot3 = AudioConst
+		slot3 = slot3.EVENT_HOME_STOREHOUSE_CLICK
+		slot0.clickSoundUrl = slot3
 
-		slot4 = function(slot0)
+		slot3 = function(slot0)
 			--- BLOCK #0 1-4, warpins: 1 ---
 			slot1 = self
 			slot1 = slot1.inInventoryMultiSelect
@@ -2920,10 +2976,10 @@ slot20 = function(slot0)
 
 			--- BLOCK #6 14-21, warpins: 2 ---
 			slot1._suppressTipOnSelect = slot2
-			slot1 = renderedLuaClick
-			slot3 = slot0
+			slot1 = data
+			slot1 = slot1.extraFunc
 
-			slot1(slot3)
+			slot1()
 
 			slot1 = self
 			slot2 = false
@@ -2936,9 +2992,9 @@ slot20 = function(slot0)
 
 		end
 
-		slot0.luaClick = slot4
+		slot0.luaClick = slot3
 
-		slot4 = function(slot0, slot1)
+		slot3 = function(slot0, slot1)
 			--- BLOCK #0 1-2, warpins: 1 ---
 			--- END OF BLOCK #0 ---
 
@@ -2991,7 +3047,7 @@ slot20 = function(slot0)
 			end
 
 
-			--- BLOCK #4 22-33, warpins: 2 ---
+			--- BLOCK #4 22-41, warpins: 2 ---
 			slot2 = {}
 			slot3 = data
 			slot3 = slot3.id
@@ -3006,12 +3062,22 @@ slot20 = function(slot0)
 
 			slot3(slot5, slot6)
 
+			slot3 = pg
+			slot3 = slot3.game
+			slot3 = slot3.audio
+			slot5 = slot3
+			slot3 = slot3.triggerEvent
+			slot6 = AudioConst
+			slot6 = slot6.EVENT_HOME_STOREHOUSE_TRANSFER
+
+			slot3(slot5, slot6)
+
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
 
 
-			--- BLOCK #5 34-34, warpins: 2 ---
+			--- BLOCK #5 42-42, warpins: 2 ---
 			return
 			--- END OF BLOCK #5 ---
 
@@ -3019,7 +3085,7 @@ slot20 = function(slot0)
 
 		end
 
-		slot0.luaEndDrag = slot4
+		slot0.luaEndDrag = slot3
 
 		return
 		--- END OF BLOCK #0 ---
@@ -3154,9 +3220,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.initUI = slot20
+slot4.initUI = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -3219,9 +3285,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.onDestroy = slot20
+slot4.onDestroy = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -3237,9 +3303,36 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot20
+slot4.onOpen = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.audio
+	slot3 = slot1
+	slot1 = slot1.triggerEvent
+	slot4 = AudioConst
+	slot4 = slot4.EVENT_HOME_STOREHOUSE_CLOSE
+
+	slot1(slot3, slot4)
+
+	slot1 = UICtrl
+	slot1 = slot1.close
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.close = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
@@ -3435,9 +3528,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.setInitialFocus = slot20
+slot4.setInitialFocus = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setInitialFocus
@@ -3451,9 +3544,9 @@ slot20 = function(slot0)
 
 end
 
-slot4.onShow = slot20
+slot4.onShow = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -3462,7 +3555,7 @@ slot20 = function(slot0)
 
 end
 
-slot4.onHide = slot20
+slot4.onHide = slot23
 
 return slot4
 --- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-21, warpins: 1 ---
+--- BLOCK #0 1-23, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
@@ -459,6 +459,99 @@ slot5 = function(slot0, slot1, slot2)
 end
 
 slot0.refreshTeamMiniChatMessage = slot5
+
+slot5 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = PlatformNameMaskService
+	slot4 = slot4.isCurrentXboxFamily
+	slot4 = slot4()
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot4 = PlatformNameMaskService
+	slot4 = slot4.isCurrentPSNFamily
+	slot4 = slot4()
+
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-21, warpins: 3 ---
+	slot4 = PlatformNameMaskService
+	slot4 = slot4.getMaskedDisplayName
+	slot6 = {}
+	slot7 = PlatformNameMaskService
+	slot7 = slot7.Action
+	slot7 = slot7.FriendshipToastName
+	slot6.action = slot7
+	slot7 = tostring
+	--- END OF BLOCK #3 ---
+
+	slot9 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-22, warpins: 1 ---
+	slot9 = ""
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-27, warpins: 2 ---
+	slot7 = slot7(slot9)
+	slot6.uid = slot7
+	slot6.playerInfo = slot2
+	--- END OF BLOCK #5 ---
+
+	slot7 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 28-28, warpins: 1 ---
+	slot7 = ""
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-30, warpins: 2 ---
+	slot6.rawText = slot7
+
+	return slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot0.resolveFriendshipUpdateName = slot5
 
 return slot0
 --- END OF BLOCK #0 ---

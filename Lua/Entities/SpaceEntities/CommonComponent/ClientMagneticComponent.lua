@@ -60,68 +60,52 @@ end
 slot1.playMagnesisEffect = slot2
 
 slot2 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot0.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.eModel
 	--- END OF BLOCK #0 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot0.eModel
-	slot5 = slot5.effectComponent
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 12-13, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-18, warpins: 1 ---
+	--- BLOCK #1 4-5, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-10, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.stopEffectById
 	slot6 = slot2
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-22, warpins: 1 ---
+	--- BLOCK #3 11-14, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.stopEffect
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #5 23-28, warpins: 4 ---
+	--- BLOCK #4 15-20, warpins: 3 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsgNoGC
 	slot6 = "RPC_CS_SyncStopMagnesisEffect"
@@ -130,7 +114,7 @@ slot2 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
 
 

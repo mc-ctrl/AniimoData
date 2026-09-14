@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-51, warpins: 1 ---
+	--- BLOCK #0 1-96, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -68,6 +68,51 @@ slot4 = function(slot0)
 	slot5 = "refreshUComponent"
 	slot2 = slot2(slot4, slot5)
 	slot0.refreshUComponent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "coinFlyNodeUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.coinFlyNodeUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "coinGeneral"
+	slot2 = slot2(slot4, slot5)
+	slot0.coinGeneral = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtContentUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtContentUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "aITipsRectTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.aITipsRectTransform = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "aIUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.aIUContainer = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textNumberUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textNumberUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtCompletedUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtCompletedUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtTitleUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtTitleUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

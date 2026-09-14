@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-62, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -29,13 +29,18 @@ slot7 = {}
 slot3.messages = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-23, warpins: 1 ---
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.initializeManagedBlur
+
+	slot2(slot4)
 
 	slot2 = pg
 	slot2 = slot2.game
@@ -44,8 +49,10 @@ slot7 = function(slot0, slot1)
 	slot2 = slot2.switchToScene
 	slot5 = UISceneConst
 	slot5 = slot5.ITEM_VIEWER_SCENE
+	slot6, slot7, slot8 = nil
+	slot9 = slot0.module
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
 
 	slot2 = pg
 	slot2 = slot2.game
@@ -65,6 +72,37 @@ slot7 = function(slot0, slot1)
 end
 
 slot3.onCreate = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.bgBlurUIBlurEffect
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot3.getManagedBlurEffect = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-39, warpins: 1 ---
@@ -238,38 +276,7 @@ end
 slot3.addListener = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.view
-	slot3 = slot3.modelRawImage
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-15, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.uiMgr
-	slot3 = slot1
-	slot1 = slot1.ReleaseRenderTexture
-	slot4 = slot0.view
-	slot4 = slot4.modelRawImage
-	slot4 = slot4.texture
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 16-28, warpins: 2 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.uiScene
@@ -277,8 +284,11 @@ slot7 = function(slot0)
 	slot1 = slot1.switchOutScene
 	slot4 = UISceneConst
 	slot4 = slot4.ITEM_VIEWER_SCENE
+	slot5 = true
+	slot6 = nil
+	slot7 = slot0.module
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -287,7 +297,7 @@ slot7 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -296,13 +306,22 @@ end
 slot3.onDestroy = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.serverMsg
+	slot5 = "RPC_CS_OnShowContent"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -672,7 +691,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #12 78-87, warpins: 1 ---
+	--- BLOCK #12 78-94, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.imgBg
 	slot6 = slot4
@@ -687,12 +706,21 @@ slot7 = function(slot0)
 
 	slot4(slot6)
 
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.uiScene
+	slot6 = slot4
+	slot4 = slot4.setMainSceneActive
+	slot7 = true
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 88-93, warpins: 2 ---
+	--- BLOCK #13 95-100, warpins: 2 ---
 	slot4 = slot3.mode
 	slot5 = slot0.model
 	slot5 = slot5.VIEWER_MODE
@@ -706,7 +734,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #14 94-105, warpins: 1 ---
+	--- BLOCK #14 101-119, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.imgBg
 	slot6 = slot4
@@ -722,12 +750,21 @@ slot7 = function(slot0)
 
 	slot4(slot6, slot7)
 
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.uiScene
+	slot6 = slot4
+	slot4 = slot4.setMainSceneActive
+	slot7 = true
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #14 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #15 106-111, warpins: 1 ---
+	--- BLOCK #15 120-125, warpins: 1 ---
 	slot4 = slot3.mode
 	slot5 = slot0.model
 	slot5 = slot5.VIEWER_MODE
@@ -741,7 +778,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #16 112-114, warpins: 1 ---
+	--- BLOCK #16 126-128, warpins: 1 ---
 	slot4 = slot3.pictureFront
 	--- END OF BLOCK #16 ---
 
@@ -752,7 +789,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #17 115-117, warpins: 1 ---
+	--- BLOCK #17 129-131, warpins: 1 ---
 	slot4 = slot3.pictureBack
 	--- END OF BLOCK #17 ---
 
@@ -763,7 +800,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #18 118-125, warpins: 1 ---
+	--- BLOCK #18 132-139, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.rootComponent
 	slot6 = slot4
@@ -778,7 +815,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 126-132, warpins: 2 ---
+	--- BLOCK #19 140-146, warpins: 2 ---
 	slot4 = slot0.view
 	slot4 = slot4.rootComponent
 	slot6 = slot4
@@ -793,7 +830,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 133-139, warpins: 2 ---
+	--- BLOCK #20 147-153, warpins: 2 ---
 	slot4 = slot0.view
 	slot4 = slot4.imgPic
 	slot5 = slot3.pictureFront
@@ -808,7 +845,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #21 140-143, warpins: 1 ---
+	--- BLOCK #21 154-157, warpins: 1 ---
 	slot5 = #slot4
 	slot6 = 3
 	--- END OF BLOCK #21 ---
@@ -820,7 +857,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #22 144-153, warpins: 1 ---
+	--- BLOCK #22 158-167, warpins: 1 ---
 	slot5 = slot0.view
 	slot5 = slot5.picRect
 	slot6 = Quaternion
@@ -835,7 +872,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #23 154-163, warpins: 2 ---
+	--- BLOCK #23 168-177, warpins: 2 ---
 	slot5 = slot0.view
 	slot5 = slot5.picRect
 	slot6 = Quaternion
@@ -850,7 +887,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #24 164-169, warpins: 1 ---
+	--- BLOCK #24 178-183, warpins: 1 ---
 	slot4 = slot3.mode
 	slot5 = slot0.model
 	slot5 = slot5.VIEWER_MODE
@@ -864,7 +901,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #25 170-177, warpins: 1 ---
+	--- BLOCK #25 184-191, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.container
 	slot5 = slot3.contentResId
@@ -879,7 +916,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #26 178-183, warpins: 1 ---
+	--- BLOCK #26 192-197, warpins: 1 ---
 	slot4 = slot3.mode
 	slot5 = slot0.model
 	slot5 = slot5.VIEWER_MODE
@@ -893,7 +930,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #27 184-197, warpins: 1 ---
+	--- BLOCK #27 198-211, warpins: 1 ---
 	slot4 = ClientTextUtils
 	slot4 = slot4.setText
 	slot6 = slot0.view
@@ -916,7 +953,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #28 198-203, warpins: 1 ---
+	--- BLOCK #28 212-217, warpins: 1 ---
 	slot4 = slot3.mode
 	slot5 = slot0.model
 	slot5 = slot5.VIEWER_MODE
@@ -930,7 +967,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #29 204-207, warpins: 1 ---
+	--- BLOCK #29 218-221, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.setModel5Info
 	slot7 = slot3
@@ -942,7 +979,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 208-215, warpins: 7 ---
+	--- BLOCK #30 222-229, warpins: 7 ---
 	slot4 = slot0.view
 	slot4 = slot4.rootComponent
 	slot6 = slot4
@@ -958,14 +995,14 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #31 216-217, warpins: 1 ---
+	--- BLOCK #31 230-231, warpins: 1 ---
 	slot8 = 1
 	--- END OF BLOCK #31 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #32 218-218, warpins: 1 ---
+	--- BLOCK #32 232-232, warpins: 1 ---
 	slot8 = 0
 
 	--- END OF BLOCK #32 ---
@@ -973,7 +1010,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 219-227, warpins: 2 ---
+	--- BLOCK #33 233-241, warpins: 2 ---
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.view
@@ -991,14 +1028,14 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #34 228-229, warpins: 1 ---
+	--- BLOCK #34 242-243, warpins: 1 ---
 	slot8 = 1
 	--- END OF BLOCK #34 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #35 230-230, warpins: 1 ---
+	--- BLOCK #35 244-244, warpins: 1 ---
 	slot8 = 0
 
 	--- END OF BLOCK #35 ---
@@ -1006,7 +1043,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #36 231-239, warpins: 2 ---
+	--- BLOCK #36 245-253, warpins: 2 ---
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.view
@@ -1024,14 +1061,14 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #37 240-241, warpins: 1 ---
+	--- BLOCK #37 254-255, warpins: 1 ---
 	slot7 = false
 	--- END OF BLOCK #37 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #38 242-242, warpins: 1 ---
+	--- BLOCK #38 256-256, warpins: 1 ---
 	slot7 = true
 
 	--- END OF BLOCK #38 ---
@@ -1039,7 +1076,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 243-244, warpins: 2 ---
+	--- BLOCK #39 257-258, warpins: 2 ---
 	slot4(slot6, slot7)
 
 	return

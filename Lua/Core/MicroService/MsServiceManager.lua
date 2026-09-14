@@ -1,4 +1,4 @@
---- BLOCK #0 1-99, warpins: 1 ---
+--- BLOCK #0 1-101, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -53,8 +53,74 @@ slot16 = slot16(slot18)
 slot17 = slot5.getLogger
 slot19 = "MsServiceManager"
 slot17 = slot17(slot19)
+slot18 = nil
 
-slot18 = function(slot0, slot1)
+slot19 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = pg
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.component
+	--- END OF BLOCK #1 ---
+
+	if slot0 ~= "client" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot0 = nil
+
+	return slot0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-12, warpins: 2 ---
+	slot0 = MsCallRateLimiter
+	--- END OF BLOCK #3 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-16, warpins: 1 ---
+	slot0 = require
+	slot2 = "Core.MicroService.MsCallRateLimiter"
+	slot0 = slot0(slot2)
+	MsCallRateLimiter = slot0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-18, warpins: 2 ---
+	slot0 = MsCallRateLimiter
+
+	return slot0
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot0.msProxy = slot1
 	slot2 = {}
@@ -87,9 +153,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.ctor = slot18
+slot6.ctor = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot20 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot6 = type
 	slot8 = slot3
@@ -226,9 +292,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot6.toRequest = slot18
+slot6.toRequest = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -300,9 +366,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.sendRequest = slot18
+slot6.sendRequest = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -403,9 +469,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.pendingMsg = slot18
+slot6.pendingMsg = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot20 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.toRequest
@@ -433,61 +499,102 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-19, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.addRequestCallback
-	slot10 = slot6
-
-	slot7(slot9, slot10)
-
-	slot7 = slot0.msProxy
-	slot7 = slot7.connected
+	--- BLOCK #2 12-15, warpins: 2 ---
+	slot7 = getClientRateLimiter
+	slot7 = slot7()
 	--- END OF BLOCK #2 ---
 
-	slot7 = if not slot7 then
+	if slot7 ~= nil then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 20-24, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.pendingMsg
-	slot10 = slot6
-
-	slot7(slot9, slot10)
-
+	--- BLOCK #3 16-22, warpins: 1 ---
+	slot8 = slot7.tryAcquire
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot5
+	slot8, slot9 = slot8(slot10, slot11, slot12)
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 25-28, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.sendRequest
-	slot10 = slot6
+	--- BLOCK #4 23-27, warpins: 1 ---
+	slot12 = slot6
+	slot10 = slot6.onResponse
+	slot13 = slot9
 
-	slot7(slot9, slot10)
+	slot10(slot12, slot13)
+
+	return
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-30, warpins: 2 ---
-	slot7 = slot6.rid
+	--- BLOCK #5 28-35, warpins: 3 ---
+	slot10 = slot0
+	slot8 = slot0.addRequestCallback
+	slot11 = slot6
 
-	return slot7
+	slot8(slot10, slot11)
+
+	slot8 = slot0.msProxy
+	slot8 = slot8.connected
 	--- END OF BLOCK #5 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 36-40, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.pendingMsg
+	slot11 = slot6
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 41-44, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.sendRequest
+	slot11 = slot6
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 45-46, warpins: 2 ---
+	slot8 = slot6.rid
+
+	return slot8
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot6.callService = slot18
+slot6.callService = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.timerWheel
 	slot4 = slot2
@@ -505,9 +612,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.pushTimeWheel = slot18
+slot6.pushTimeWheel = slot20
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getRequestCallback
@@ -559,9 +666,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.onResponse = slot18
+slot6.onResponse = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getRequestCallback
@@ -602,9 +709,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.onRequestTimeout = slot18
+slot6.onRequestTimeout = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -668,9 +775,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.addRequestCallback = slot18
+slot6.addRequestCallback = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.delRequestCallback
@@ -692,9 +799,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.onPlayerResponse = slot18
+slot6.onPlayerResponse = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.rid2request
 	slot2 = slot2[slot1]
@@ -706,9 +813,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getRequestCallback = slot18
+slot6.getRequestCallback = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.rid2request
 	slot3 = nil
@@ -721,9 +828,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.delRequestCallback = slot18
+slot6.delRequestCallback = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = assert
 	slot5 = type
@@ -766,9 +873,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot6.addPushEndpoint = slot18
+slot6.addPushEndpoint = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = assert
 	slot4 = type
@@ -812,9 +919,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.delPushEndpoint = slot18
+slot6.delPushEndpoint = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = assert
 	slot4 = type
@@ -857,9 +964,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot6.getPushEndpoint = slot18
+slot6.getPushEndpoint = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0[slot1]
 	--- END OF BLOCK #0 ---
@@ -984,7 +1091,7 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot19 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot7 = Utils
 	slot7 = slot7.checkClient
@@ -1924,9 +2031,9 @@ slot19 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot6.onPush = slot19
+slot6.onPush = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.onRequestTimeout
@@ -1941,13 +2048,13 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot6.onCheckTimeout = slot19
+slot6.onCheckTimeout = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.getMillisecond
-	slot1 = slot1()
+	slot1 = slot1.realSecondCache
+	slot1 = slot1 * 1000
 	--- END OF BLOCK #0 ---
 
 	FLOW; TARGET BLOCK #1
@@ -2073,9 +2180,9 @@ slot19 = function(slot0)
 
 end
 
-slot6.sendPendingMsgs = slot19
+slot6.sendPendingMsgs = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getRequestCallback
@@ -2121,9 +2228,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot6.getRequestInfo = slot19
+slot6.getRequestInfo = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.sendPendingMsgs
@@ -2137,9 +2244,9 @@ slot19 = function(slot0)
 
 end
 
-slot6.onConnected = slot19
+slot6.onConnected = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = nil
 	slot0.msProxy = slot1
@@ -2171,7 +2278,7 @@ slot19 = function(slot0)
 
 end
 
-slot6.destroy = slot19
+slot6.destroy = slot21
 
 return slot6
 --- END OF BLOCK #0 ---

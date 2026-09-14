@@ -1,7 +1,7 @@
 --- BLOCK #0 1-156, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_DanceSing",
-	CDAfterEnd = 0
+	CDAfterEnd = 0,
+	behavID = "BP_Wild_GroupBehav_DanceSing"
 }
 slot1 = {}
 slot2 = {
@@ -139,8 +139,8 @@ slot5 = {
 slot4.role = slot5
 slot3[4] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -187,8 +187,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -295,8 +295,8 @@ slot5 = {
 slot4.role = slot5
 slot3[4] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"

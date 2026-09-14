@@ -9,7 +9,7 @@ slot2 = require
 slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Client.ClientEntity"
+slot5 = "Entities.SpaceEntities.GamePlayClass.ClientGamePlayEntity"
 slot3 = slot3(slot5)
 slot4 = require
 slot6 = "Common.Const.SandboxConst"
@@ -66,7 +66,7 @@ end
 slot7.ctor = slot10
 
 slot10 = function(slot0, slot1)
-	--- BLOCK #0 1-20, warpins: 1 ---
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = ClientGamePlayDitto
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -77,8 +77,6 @@ slot10 = function(slot0, slot1)
 
 	slot2 = slot1.flyTime
 	slot0.flyTime = slot2
-	slot2 = slot1.sandboxId
-	slot0.sandboxId = slot2
 	slot2 = slot1.startDialogueId
 	slot0.startDialogueId = slot2
 	slot2 = slot1.successDialogueId

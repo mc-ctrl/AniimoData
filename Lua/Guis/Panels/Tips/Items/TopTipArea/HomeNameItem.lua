@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-61, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -529,86 +529,18 @@ slot12 = function(slot0, slot1)
 	slot2 = slot0.startTimer
 
 	slot5 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #1 5-9, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.space
-		--- END OF BLOCK #1 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #2 10-19, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.isHomeland
-		slot3 = pg
-		slot3 = slot3.me
-		slot0 = slot0(slot2, slot3)
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #3 20-29, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.isSelfHomeland
-		slot3 = pg
-		slot3 = slot3.me
-		slot0 = slot0(slot2, slot3)
-		--- END OF BLOCK #3 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 30-36, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.homelandTipTimer = slot1
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.hideById
 
 		slot0(slot2)
 
-		slot0 = self
-		slot1 = nil
-		slot0.homelandTipTimer = slot1
-
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-		--- BLOCK #5 37-37, warpins: 5 ---
 		return
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #0 ---
 
 
 
@@ -669,6 +601,23 @@ slot12 = function(slot0)
 end
 
 slot10.clearHomelandTipTimer = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearAllData
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot10.onSceneUnload = slot12
 
 slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-15, warpins: 1 ---

@@ -8,37 +8,37 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/PBT_LeaveTargetAndDestroy",
 	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_LeaveTargetAndDestroy",
 	version = 7
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	const = 0,
 	name = "tTargetActorId",
+	const = 0,
+	value = "0",
 	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "5",
-	const = 5,
 	name = "tLeaveDistance",
+	const = 5,
+	value = "5",
 	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "4",
-	const = 4,
 	name = "tSpeed",
+	const = 4,
+	value = "4",
 	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
-	value = "Mid",
 	name = "tSpeedRateType",
+	value = "Mid",
 	type = "SpeedRateType"
 }
 slot6 = slot0.SpeedRateType
@@ -46,16 +46,16 @@ slot6 = slot6.Mid
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	value = "10",
-	const = 10,
 	name = "tMaxTime",
+	const = 10,
+	value = "10",
 	type = "float"
 }
 slot4[5] = slot5
 slot5 = {
-	value = "false",
-	const = false,
 	name = "tDestroyOnFail",
+	const = false,
+	value = "false",
 	type = "bool"
 }
 slot4[6] = slot5

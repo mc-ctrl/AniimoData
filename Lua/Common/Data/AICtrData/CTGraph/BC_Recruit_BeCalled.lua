@@ -1,56 +1,92 @@
---- BLOCK #0 1-73, warpins: 1 ---
+--- BLOCK #0 1-45, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {
-	"RecruitBeginTrigger"
-}
+slot1 = {}
+slot2 = slot0.SafeCall
+slot3 = slot0.DoAction
+slot4 = slot0.BeginBehaviourV2
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
+slot5 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot5 = slot0.__agent
+	slot8 = slot5
+	slot6 = slot5.clearSubTreeLocalParams
 
-	return slot0
+	slot6(slot8)
+
+	slot8 = slot5
+	slot6 = slot5.addSubTreeLocalParam
+	slot9 = "tTgtId"
+	slot10 = slot2
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot5
+	slot6 = slot5.addSubTreeLocalParam
+	slot9 = "tTargetAtYawDegree"
+	slot10 = slot3
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot5
+	slot6 = slot5.addSubTreeLocalParam
+	slot9 = "tInstant"
+	slot10 = slot4
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot0
+	slot6 = slot0.setContinue
+	slot9 = slot1
+
+	slot6(slot8, slot9)
+
+	slot6 = true
+
+	return slot6
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2.getEventTriggerList = slot5
-slot5 = {}
+slot6 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot4 = slot0.__agent
+	slot7 = slot4
+	slot5 = slot4.clearSubTreeLocalParams
 
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
+	slot5(slot7)
 
-	return slot0
+	slot7 = slot4
+	slot5 = slot4.addSubTreeLocalParam
+	slot8 = "tCharacterState"
+	slot9 = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot4
+	slot5 = slot4.addSubTreeLocalParam
+	slot8 = "tAnimationKey"
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot0
+	slot5 = slot0.setContinue
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	slot5 = true
+
+	return slot5
 	--- END OF BLOCK #0 ---
 
 
 
 end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
 
 slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -63,18 +99,36 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot2 = _M
-	slot2 = slot2._to_36_0
+	--- BLOCK #1 3-20, warpins: 1 ---
 	slot4 = slot0
+	slot2 = slot0.setActive
 
-	return slot2(slot4)
+	slot2(slot4)
+
+	slot2 = _C
+	slot4 = 35
+	slot5 = "GetSelfId"
+	slot6 = slot0
+	slot2 = slot2(slot4, slot5, slot6)
+	slot3 = _A
+	slot5 = slot0
+	slot6 = "SendMessageToTrigger"
+	slot7 = slot2
+	slot8 = 1007
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = _M
+	slot3 = slot3._to_20_0
+	slot5 = slot0
+
+	return slot3(slot5)
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-7, warpins: 2 ---
+	--- BLOCK #2 21-21, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -82,22 +136,36 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeEventTrigger = slot7
+slot1.executeEventTrigger = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._to_14_0
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
+	slot1 = slot0.setActive
 
-	return slot1(slot3)
+	slot1(slot3)
+
+	slot1 = _M
+	slot1 = slot1._get_7_1
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _A
+	slot4 = slot0
+	slot5 = "RecruitBeginFollowOneByOne"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = true
+
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2.executeEndTrigger = slot7
+slot1.executeEndTrigger = slot7
 
 slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -253,7 +321,7 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot7
 
 slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
@@ -264,288 +332,214 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-45, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 8
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TurnToTargetAtYaw"
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = _M
-	slot1 = slot1._get_7_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tTgtId"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tTargetAtYawDegree"
-	slot6 = 0
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tInstant"
-	slot6 = false
-
-	slot2(slot4, slot5, slot6)
-
-	slot4 = slot0
-	slot2 = slot0.setContinue
-	slot5 = 8
-
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot2._to_8_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_7_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 14
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "RecruitBeginFollowOneByOne"
-	slot8 = slot1
-
-	slot2(slot4, slot5, slot6, slot7, slot8)
-
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_14_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-39, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 16
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_SwitchState"
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = _M
-	slot1 = slot1._get_22_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tCharacterState"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tAnimationKey"
-	slot6 = ""
-
-	slot2(slot4, slot5, slot6)
-
-	slot4 = slot0
-	slot2 = slot0.setContinue
-	slot5 = 16
-
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot2._to_16_0 = slot7
+slot1.checkInterrupt = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_44_1
+	slot1 = _B
 	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot4 = "PBT_TurnToTargetAtYaw"
+	slot1 = slot1(slot3, slot4)
+
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-10, warpins: 1 ---
-	slot2 = _M
-	slot2 = slot2._to_16_0
-	slot4 = slot0
-
-	return slot2(slot4)
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-16, warpins: 2 ---
-	slot2 = _M
-	slot2 = slot2._get_45_1
+	--- BLOCK #2 8-18, warpins: 2 ---
+	slot1 = _M
+	slot1 = slot1._get_7_1
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _doBehaviourTail_0
 	slot4 = slot0
-	slot2 = slot2(slot4)
+	slot5 = 8
+	slot6 = slot1
+	slot7 = 0
+	slot8 = false
+
+	return slot2(slot4, slot5, slot6, slot7, slot8)
 	--- END OF BLOCK #2 ---
 
+
+
+end
+
+slot1._to_8_0 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_SwitchState"
+	slot1 = slot1(slot3, slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot1 = "LOCOMOTION"
+	slot2 = _doBehaviourTail_1
+	slot4 = slot0
+	slot5 = 16
+	slot6 = slot1
+	slot7 = ""
+
+	return slot2(slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot1._to_16_0 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = _M
+	slot1 = slot1._get_18_0
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _C
+	slot4 = 44
+	slot5 = "IsChildOrTransitionOfCharState"
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = "SNEAK"
+	slot2 = slot2(slot4, slot5, slot6, slot7, slot8)
+	--- END OF BLOCK #0 ---
+
 	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 14-17, warpins: 1 ---
+	slot3 = _M
+	slot3 = slot3._to_16_0
+	slot5 = slot0
+
+	return slot3(slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 18-30, warpins: 2 ---
+	slot3 = _M
+	slot3 = slot3._get_18_0
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	slot4 = _C
+	slot6 = 45
+	slot7 = "IsChildOrTransitionOfCharState"
+	slot8 = slot0
+	slot9 = slot3
+	slot10 = "MIMICRY"
+	slot4 = slot4(slot6, slot7, slot8, slot9, slot10)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 17-20, warpins: 1 ---
-	slot3 = _M
-	slot3 = slot3._to_39_0
-	slot5 = slot0
+	--- BLOCK #3 31-34, warpins: 1 ---
+	slot5 = _M
+	slot5 = slot5._to_39_0
+	slot7 = slot0
 
-	return slot3(slot5)
+	return slot5(slot7)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-26, warpins: 2 ---
-	slot3 = _M
-	slot3 = slot3._get_46_1
-	slot5 = slot0
-	slot3 = slot3(slot5)
+	--- BLOCK #4 35-47, warpins: 2 ---
+	slot5 = _M
+	slot5 = slot5._get_18_0
+	slot7 = slot0
+	slot5 = slot5(slot7)
+	slot6 = _C
+	slot8 = 46
+	slot9 = "IsChildOrTransitionOfCharState"
+	slot10 = slot0
+	slot11 = slot5
+	slot12 = "SWIMMIMICRY"
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 27-30, warpins: 1 ---
-	slot4 = _M
-	slot4 = slot4._to_21_0
-	slot6 = slot0
+	--- BLOCK #5 48-51, warpins: 1 ---
+	slot7 = _M
+	slot7 = slot7._to_21_0
+	slot9 = slot0
 
-	return slot4(slot6)
+	return slot7(slot9)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 31-35, warpins: 2 ---
-	slot4 = _M
-	slot4 = slot4._to_50_0
-	slot6 = slot0
+	--- BLOCK #6 52-66, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.setActive
 
-	return slot4(slot6)
+	slot7(slot9)
+
+	slot7 = _A
+	slot9 = slot0
+	slot10 = "PlayEmojiOnTarget"
+	slot11 = 0
+	slot12 = "Love"
+	slot13 = 2
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
+
+	slot7 = _M
+	slot7 = slot7._to_28_0
+	slot9 = slot0
+
+	return slot7(slot9)
 	return
 	--- END OF BLOCK #6 ---
 
@@ -553,22 +547,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_20_0 = slot7
+slot1._to_20_0 = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_SwitchState"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -576,77 +573,40 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-39, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 21
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_SwitchState"
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = _M
-	slot1 = slot1._get_23_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tCharacterState"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tAnimationKey"
-	slot6 = ""
-
-	slot2(slot4, slot5, slot6)
-
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot1 = "SWIMMING"
+	slot2 = _doBehaviourTail_1
 	slot4 = slot0
-	slot2 = slot0.setContinue
 	slot5 = 21
+	slot6 = slot1
+	slot7 = ""
 
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
+	return slot2(slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot2._to_21_0 = slot7
+slot1._to_21_0 = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_TurnToTargetAtYaw"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -654,85 +614,44 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-45, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 27
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TurnToTargetAtYaw"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-18, warpins: 2 ---
 	slot1 = _M
 	slot1 = slot1._get_7_1
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tTgtId"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tTargetAtYawDegree"
-	slot6 = 0
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tInstant"
-	slot6 = false
-
-	slot2(slot4, slot5, slot6)
-
+	slot2 = _doBehaviourTail_0
 	slot4 = slot0
-	slot2 = slot0.setContinue
 	slot5 = 27
+	slot6 = slot1
+	slot7 = 0
+	slot8 = false
 
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
+	return slot2(slot4, slot5, slot6, slot7, slot8)
 	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot2._to_27_0 = slot7
+slot1._to_27_0 = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_TurnToTargetAtYaw"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -740,282 +659,124 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-45, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 28
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TurnToTargetAtYaw"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-18, warpins: 2 ---
 	slot1 = _M
 	slot1 = slot1._get_7_1
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tTgtId"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tTargetAtYawDegree"
-	slot6 = 0
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tInstant"
-	slot6 = false
-
-	slot2(slot4, slot5, slot6)
-
+	slot2 = _doBehaviourTail_0
 	slot4 = slot0
-	slot2 = slot0.setContinue
 	slot5 = 28
-
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot2._to_28_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_35_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 36
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "SendMessageToTrigger"
-	slot8 = slot1
-	slot9 = 1007
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
-
-	slot2 = _M
-	slot2 = slot2._to_20_0
-	slot4 = slot0
-
-	return slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_36_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-41, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 37
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TurnToTargetAtYaw"
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = slot0.__agent
-	slot3 = slot1
-	slot1 = slot1.clearSubTreeLocalParams
-
-	slot1(slot3)
-
-	slot1 = slot0.__agent
-	slot3 = slot1
-	slot1 = slot1.addSubTreeLocalParam
-	slot4 = "tTgtId"
-	slot5 = 0
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = slot0.__agent
-	slot3 = slot1
-	slot1 = slot1.addSubTreeLocalParam
-	slot4 = "tTargetAtYawDegree"
-	slot5 = 0
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = slot0.__agent
-	slot3 = slot1
-	slot1 = slot1.addSubTreeLocalParam
-	slot4 = "tInstant"
-	slot5 = false
-
-	slot1(slot3, slot4, slot5)
-
-	slot3 = slot0
-	slot1 = slot0.setContinue
-	slot4 = 37
-
-	slot1(slot3, slot4)
-
-	slot1 = true
-
-	return slot1
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot2._to_37_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-39, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 39
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_SwitchState"
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = _M
-	slot1 = slot1._get_40_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tCharacterState"
 	slot6 = slot1
+	slot7 = 0
+	slot8 = false
 
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tAnimationKey"
-	slot6 = ""
-
-	slot2(slot4, slot5, slot6)
-
-	slot4 = slot0
-	slot2 = slot0.setContinue
-	slot5 = 39
-
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
+	return slot2(slot4, slot5, slot6, slot7, slot8)
 	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot2._to_39_0 = slot7
+slot1._to_28_0 = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_TurnToTargetAtYaw"
+	slot1 = slot1(slot3, slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot1 = _doBehaviourTail_0
+	slot3 = slot0
+	slot4 = 37
+	slot5 = 0
+	slot6 = 0
+	slot7 = false
+
+	return slot1(slot3, slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot1._to_37_0 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_SwitchState"
+	slot1 = slot1(slot3, slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot1 = "LOCOMOTION"
+	slot2 = _doBehaviourTail_1
+	slot4 = slot0
+	slot5 = 39
+	slot6 = slot1
+	slot7 = ""
+
+	return slot2(slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot1._to_39_0 = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 47
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "PlayEmojiOnTarget"
-	slot7 = 0
-	slot8 = "Love"
-	slot9 = 2
+	slot1 = _A
+	slot3 = slot0
+	slot4 = "PlayEmojiOnTarget"
+	slot5 = 0
+	slot6 = "Love"
+	slot7 = 2
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot1 = _M
 	slot1 = slot1._to_8_0
@@ -1028,25 +789,23 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_47_0 = slot7
+slot1._to_47_0 = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 48
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "PlayEmojiOnTarget"
-	slot7 = 0
-	slot8 = "Love"
-	slot9 = 2
+	slot1 = _A
+	slot3 = slot0
+	slot4 = "PlayEmojiOnTarget"
+	slot5 = 0
+	slot6 = "Love"
+	slot7 = 2
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot1 = _M
 	slot1 = slot1._to_37_0
@@ -1059,25 +818,23 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_48_0 = slot7
+slot1._to_48_0 = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 49
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "PlayEmojiOnTarget"
-	slot7 = 0
-	slot8 = "Love"
-	slot9 = 2
+	slot1 = _A
+	slot3 = slot0
+	slot4 = "PlayEmojiOnTarget"
+	slot5 = 0
+	slot6 = "Love"
+	slot7 = 2
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot1 = _M
 	slot1 = slot1._to_27_0
@@ -1090,38 +847,7 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_49_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 50
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "PlayEmojiOnTarget"
-	slot7 = 0
-	slot8 = "Love"
-	slot9 = 2
-
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
-
-	slot1 = _M
-	slot1 = slot1._to_28_0
-	slot3 = slot0
-
-	return slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_50_0 = slot7
+slot1._to_49_0 = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -1136,7 +862,7 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_7_1 = slot7
+slot1._get_7_1 = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -1152,130 +878,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_18_0 = slot7
+slot1._get_18_0 = slot7
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = "LOCOMOTION"
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_22_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = "SWIMMING"
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_23_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = _C
-	slot3 = 35
-	slot4 = "GetSelfId"
-	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_35_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = "LOCOMOTION"
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_40_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_18_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 44
-	slot5 = "IsChildOrTransitionOfCharState"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "SNEAK"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_44_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_18_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 45
-	slot5 = "IsChildOrTransitionOfCharState"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "MIMICRY"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_45_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_18_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 46
-	slot5 = "IsChildOrTransitionOfCharState"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "SWIMMIMICRY"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_46_1 = slot7
-
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

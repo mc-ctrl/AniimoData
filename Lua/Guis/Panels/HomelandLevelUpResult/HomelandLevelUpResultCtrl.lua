@@ -178,7 +178,7 @@ slot15 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-49, warpins: 2 ---
+	--- BLOCK #2 16-47, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.listAttribute
 	slot5 = slot3
@@ -191,11 +191,10 @@ slot15 = function(slot0, slot1)
 	slot3 = slot3.setText
 	slot5 = slot0.view
 	slot5 = slot5.txtLvNow
-	slot6 = string
-	slot6 = slot6.format
-	slot8 = "+%d"
-	slot9 = slot2.oldLv
-	MULTRES = slot6(slot8, slot9)
+	slot6 = ClientTextUtils
+	slot6 = slot6.formatShortLevel
+	slot8 = slot2.oldLv
+	MULTRES = slot6(slot8)
 
 	slot3(slot5, MULTRES)
 
@@ -203,11 +202,10 @@ slot15 = function(slot0, slot1)
 	slot3 = slot3.setText
 	slot5 = slot0.view
 	slot5 = slot5.txtLvAfter
-	slot6 = string
-	slot6 = slot6.format
-	slot8 = "+%d"
-	slot9 = slot2.newLv
-	MULTRES = slot6(slot8, slot9)
+	slot6 = ClientTextUtils
+	slot6 = slot6.formatShortLevel
+	slot8 = slot2.newLv
+	MULTRES = slot6(slot8)
 
 	slot3(slot5, MULTRES)
 
@@ -370,7 +368,7 @@ slot15 = function(slot0, slot1, slot2, slot3)
 		slot4 = if slot4 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #5
 		end
 
 
@@ -383,27 +381,38 @@ slot15 = function(slot0, slot1, slot2, slot3)
 		slot8 = if not slot8 then
 		JUMP TO BLOCK #2
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #2 21-21, warpins: 1 ---
-		slot8 = false
-
+		--- BLOCK #2 21-23, warpins: 1 ---
+		slot8 = slot2.drawingLocked
 		--- END OF BLOCK #2 ---
 
-		FLOW; TARGET BLOCK #3
+		slot8 = if not slot8 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
 
 
-		--- BLOCK #3 22-22, warpins: 2 ---
-		slot5(slot7, slot8)
+		--- BLOCK #3 24-24, warpins: 1 ---
+		slot8 = false
 
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 23-26, warpins: 2 ---
+		--- BLOCK #4 25-25, warpins: 3 ---
+		slot5(slot7, slot8)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 26-29, warpins: 2 ---
 		slot5 = function()
 			--- BLOCK #0 1-39, warpins: 1 ---
 			slot0 = HomelandFormulaData
@@ -461,8 +470,144 @@ slot15 = function(slot0, slot1, slot2, slot3)
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 41-52, warpins: 2 ---
+			--- BLOCK #2 41-45, warpins: 2 ---
 			slot8.conditionLockText = slot9
+			slot9 = _data
+			slot9 = slot9.drawingLocked
+			--- END OF BLOCK #2 ---
+
+			slot9 = if slot9 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #3 46-49, warpins: 1 ---
+			slot9 = _data
+			slot9 = slot9.conditionLocked
+			--- END OF BLOCK #3 ---
+
+			slot9 = if not slot9 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 50-56, warpins: 1 ---
+			slot9 = ClientHomelandUtils
+			slot9 = slot9.getDrawingUnlockText
+			slot11 = false
+			slot12 = false
+			slot9 = slot9(slot11, slot12)
+			--- END OF BLOCK #4 ---
+
+			slot9 = if not slot9 then
+			JUMP TO BLOCK #5
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #5 57-57, warpins: 3 ---
+			slot9 = nil
+			--- END OF BLOCK #5 ---
+
+			FLOW; TARGET BLOCK #6
+
+
+			--- BLOCK #6 58-62, warpins: 2 ---
+			slot8.lockText = slot9
+			slot9 = _data
+			slot9 = slot9.drawingLocked
+			--- END OF BLOCK #6 ---
+
+			slot9 = if slot9 then
+			JUMP TO BLOCK #7
+			else
+			JUMP TO BLOCK #9
+			end
+
+
+			--- BLOCK #7 63-66, warpins: 1 ---
+			slot9 = _data
+			slot9 = slot9.conditionLocked
+			--- END OF BLOCK #7 ---
+
+			slot9 = if not slot9 then
+			JUMP TO BLOCK #8
+			else
+			JUMP TO BLOCK #9
+			end
+
+
+			--- BLOCK #8 67-69, warpins: 1 ---
+			slot9 = slot0.unlockByItemId
+			--- END OF BLOCK #8 ---
+
+			slot9 = if not slot9 then
+			JUMP TO BLOCK #9
+			else
+			JUMP TO BLOCK #10
+			end
+
+
+			--- BLOCK #9 70-70, warpins: 3 ---
+			slot9 = nil
+			--- END OF BLOCK #9 ---
+
+			FLOW; TARGET BLOCK #10
+
+
+			--- BLOCK #10 71-75, warpins: 2 ---
+			slot8.sourceItemId = slot9
+			slot9 = _data
+			slot9 = slot9.drawingLocked
+			--- END OF BLOCK #10 ---
+
+			slot9 = if slot9 then
+			JUMP TO BLOCK #11
+			else
+			JUMP TO BLOCK #13
+			end
+
+
+			--- BLOCK #11 76-79, warpins: 1 ---
+			slot9 = _data
+			slot9 = slot9.conditionLocked
+			--- END OF BLOCK #11 ---
+
+			slot9 = if not slot9 then
+			JUMP TO BLOCK #12
+			else
+			JUMP TO BLOCK #13
+			end
+
+
+			--- BLOCK #12 80-85, warpins: 1 ---
+			slot9 = ClientHomelandUtils
+			slot9 = slot9.getDrawingSourceTitle
+			slot11 = false
+			slot9 = slot9(slot11)
+			--- END OF BLOCK #12 ---
+
+			slot9 = if not slot9 then
+			JUMP TO BLOCK #13
+			else
+			JUMP TO BLOCK #14
+			end
+
+
+			--- BLOCK #13 86-86, warpins: 3 ---
+			slot9 = nil
+			--- END OF BLOCK #13 ---
+
+			FLOW; TARGET BLOCK #14
+
+
+			--- BLOCK #14 87-98, warpins: 2 ---
+			slot8.sourceTitle = slot9
 			slot9 = Utils
 			slot9 = slot9.getHomeItemPrice
 			slot11 = slot2
@@ -510,7 +655,7 @@ slot15 = function(slot0, slot1, slot2, slot3)
 			slot4(slot6, slot7, slot8)
 
 			return
-			--- END OF BLOCK #2 ---
+			--- END OF BLOCK #14 ---
 
 
 
@@ -519,7 +664,7 @@ slot15 = function(slot0, slot1, slot2, slot3)
 		slot0.luaClick = slot5
 
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #5 ---
 
 
 

@@ -16,25 +16,25 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "tEffectName",
 	value = "",
-	const = "",
 	type = "string",
-	name = "tEffectName"
+	const = ""
 }
 slot4[1] = slot5
 slot5 = {
+	name = "tTargetActorId",
 	value = "0",
-	const = 0,
 	type = "int",
-	name = "tTargetActorId"
+	const = 0
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Action"
+	class = "Action",
+	id = "1"
 }
 slot5 = {}
 slot6 = {}

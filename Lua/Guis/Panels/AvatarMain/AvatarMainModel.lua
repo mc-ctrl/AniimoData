@@ -102,9 +102,14 @@ end
 slot4.getPresetList = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = AvatarPresetData
-	slot2 = slot2[slot1]
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.avatar
+	slot4 = slot2
+	slot2 = slot2.getAvatarPresetData
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #0 ---
 
 	slot2 = if not slot2 then
@@ -114,7 +119,7 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
+	--- BLOCK #1 10-10, warpins: 1 ---
 	slot2 = {}
 
 	--- END OF BLOCK #1 ---
@@ -122,7 +127,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #2 ---
 

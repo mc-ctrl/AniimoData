@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -36,10 +36,16 @@ slot10 = slot2.LightClass
 slot12 = "BpGiftCtrl"
 slot13 = slot3
 slot10 = slot10(slot12, slot13)
-slot11 = {}
-slot10.messages = slot11
+slot11 = CS
+slot11 = slot11.FunPlus
+slot11 = slot11.WorldX
+slot11 = slot11.SDK
+slot11 = slot11.Platform
+slot11 = slot11.PlatformBridgeLuaFacade
+slot12 = {}
+slot10.messages = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -55,9 +61,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onCreate = slot11
+slot10.onCreate = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = slot1.btnBGClose
@@ -275,10 +281,10 @@ slot11 = function(slot0)
 
 end
 
-slot10.addListener = slot11
+slot10.addListener = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = true
 	slot0._destroyed = slot1
 	slot1 = UICtrl
@@ -287,17 +293,42 @@ slot11 = function(slot0)
 
 	slot1(slot3)
 
-	return
+	slot1 = PlatformBridgeLuaFacade
+	slot3 = slot1
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-15, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.HideStoreIcon
+
+	slot1()
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot10.onDestroy = slot11
+slot10.onDestroy = slot12
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -305,16 +336,42 @@ slot11 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	return
+	slot2 = PlatformBridgeLuaFacade
+	slot4 = slot2
+	slot2 = slot2.supportsCommerce
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot2 = PlatformBridgeLuaFacade
+	slot2 = slot2.DisplayStoreIcon
+	slot4 = 3
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot10.onOpen = slot11
+slot10.onOpen = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = false
 	slot0._destroyed = slot1
@@ -466,9 +523,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onShow = slot11
+slot10.onShow = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._bpData
 	--- END OF BLOCK #0 ---
@@ -710,9 +767,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._buildTierList = slot11
+slot10._buildTierList = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -915,9 +972,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10._renderTierItem = slot11
+slot10._renderTierItem = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._tierList
 	--- END OF BLOCK #0 ---
@@ -1117,9 +1174,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._onConfirm = slot11
+slot10._onConfirm = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1128,7 +1185,7 @@ slot11 = function(slot0)
 
 end
 
-slot10.onHide = slot11
+slot10.onHide = slot12
 
 return slot10
 --- END OF BLOCK #0 ---

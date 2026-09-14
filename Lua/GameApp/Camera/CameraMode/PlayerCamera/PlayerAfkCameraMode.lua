@@ -328,63 +328,46 @@ slot7 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 16-20, warpins: 1 ---
-	slot4 = NotNil
-	slot6 = slot3.eModel
-	slot4 = slot4(slot6)
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot4 = slot3.eModel
 	--- END OF BLOCK #3 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 21-24, warpins: 1 ---
+	--- BLOCK #4 19-22, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
+	slot4 = slot4.modelModelView
 	--- END OF BLOCK #4 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 25-29, warpins: 1 ---
+	--- BLOCK #5 23-26, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
+	slot4 = slot4.modelShaderView
 	--- END OF BLOCK #5 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 30-35, warpins: 1 ---
-	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot4 = slot4.shaderView
-	--- END OF BLOCK #6 ---
-
-	slot4 = if slot4 then
 	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 36-41, warpins: 1 ---
+	--- BLOCK #6 27-32, warpins: 1 ---
 	slot7 = slot4
 	slot5 = slot4.SetMultiPassForce32Layer
 	slot8 = slot2
@@ -393,40 +376,40 @@ slot7 = function(slot0, slot1, slot2)
 
 	slot5(slot7, slot8, slot9)
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 33-34, warpins: 5 ---
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 42-43, warpins: 6 ---
-	--- END OF BLOCK #8 ---
-
 	slot2 = if slot2 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #9 44-45, warpins: 1 ---
+	--- BLOCK #8 35-36, warpins: 1 ---
 	slot0.fxEntity = slot1
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #10 46-47, warpins: 1 ---
+	--- BLOCK #9 37-38, warpins: 1 ---
 	slot4 = nil
 	slot0.fxEntity = slot4
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #11 48-48, warpins: 2 ---
+	--- BLOCK #10 39-39, warpins: 2 ---
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #10 ---
 
 
 

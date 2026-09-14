@@ -825,7 +825,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 65-107, warpins: 3 ---
+	--- BLOCK #5 65-104, warpins: 3 ---
 	slot18 = slot1
 	slot16 = slot1.TryChangePage
 	slot19 = "Prayers"
@@ -848,12 +848,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	slot16 = ClientTextUtils
 	slot16 = slot16.setText
 	slot18 = slot7
-	slot19 = pg
-	slot19 = slot19.getLocalizationText
-	slot21 = slot3.formName
-	MULTRES = slot19(slot21)
+	slot19 = slot3.formName
 
-	slot16(slot18, MULTRES)
+	slot16(slot18, slot19)
 
 	slot16 = slot3.petFunctionIcon
 	slot8.url = slot16
@@ -923,7 +920,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 108-115, warpins: 1 ---
+	--- BLOCK #6 105-112, warpins: 1 ---
 	slot16 = slot0.model
 	slot18 = slot16
 	slot16 = slot16.getWeekWishPetVoteInfo
@@ -939,7 +936,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 116-122, warpins: 1 ---
+	--- BLOCK #7 113-119, warpins: 1 ---
 	slot18 = math
 	slot18 = slot18.floor
 	slot20 = slot16 / slot17
@@ -954,14 +951,14 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 123-123, warpins: 2 ---
+	--- BLOCK #8 120-120, warpins: 2 ---
 	slot18 = 0
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 124-142, warpins: 2 ---
+	--- BLOCK #9 121-139, warpins: 2 ---
 	slot19 = ClientTextUtils
 	slot19 = slot19.setText
 	slot21 = slot12
@@ -990,7 +987,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #10 143-161, warpins: 1 ---
+	--- BLOCK #10 140-158, warpins: 1 ---
 	slot19 = ClientTextUtils
 	slot19 = slot19.setText
 	slot21 = slot13
@@ -1018,7 +1015,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 162-170, warpins: 1 ---
+	--- BLOCK #11 159-167, warpins: 1 ---
 	slot19 = ClientTextUtils
 	slot19 = slot19.setText
 	slot21 = slot13
@@ -1035,7 +1032,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 171-172, warpins: 3 ---
+	--- BLOCK #12 168-169, warpins: 3 ---
 	return
 	--- END OF BLOCK #12 ---
 

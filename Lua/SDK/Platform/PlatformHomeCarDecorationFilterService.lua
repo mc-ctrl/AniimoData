@@ -1,4 +1,4 @@
---- BLOCK #0 1-50, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformSocialService"
 slot0 = slot0(slot2)
@@ -10,8 +10,8 @@ slot4 = "SDK.Platform.PlatformLogger"
 slot2 = slot2(slot4)
 slot3 = {}
 slot4 = {
-	Unknown = "unknown",
 	Block = "block",
+	Unknown = "unknown",
 	Allow = "allow"
 }
 slot3.Decision = slot4
@@ -37,6 +37,12 @@ slot4 = "local_ugc_policy_cache_missing"
 slot3.REASON_LOCAL_UGC_POLICY_MISSING = slot4
 slot4 = "local_ugc_policy_unknown"
 slot3.REASON_LOCAL_UGC_POLICY_UNKNOWN = slot4
+slot4 = "target_ugc_permission_denied"
+slot3.REASON_TARGET_UGC_PERMISSION_DENIED = slot4
+slot4 = "target_ugc_switch_missing"
+slot3.REASON_TARGET_UGC_SWITCH_MISSING = slot4
+slot4 = "target_ugc_switch_unknown"
+slot3.REASON_TARGET_UGC_SWITCH_UNKNOWN = slot4
 
 slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
@@ -307,43 +313,77 @@ slot4 = function(slot0)
 	if slot1 ~= "table" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
 	--- BLOCK #1 6-9, warpins: 1 ---
-	slot1 = false
-	slot2 = PlatformHomeCarDecorationFilterService
-	slot2 = slot2.REASON_PLATFORM_BLOCK_LIST_UNAVAILABLE
+	slot1 = PlatformSocialService
+	slot1 = slot1.isPlatformSupported
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #2 10-15, warpins: 1 ---
-	slot1 = type
-	slot3 = PlatformSocialService
-	slot3 = slot3.peekPlatformUserBlockedByLocalUser
-	slot1 = slot1(slot3)
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot1 = PlatformSocialService
+	slot1 = slot1.isPlatformSupported
+	slot1 = slot1()
 	--- END OF BLOCK #2 ---
 
-	if slot1 ~= "function" then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 16-19, warpins: 1 ---
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot1 = nil
+	slot2 = PlatformHomeCarDecorationFilterService
+	slot2 = slot2.REASON_PLATFORM_BLOCK_LIST_PENDING
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #4 19-22, warpins: 2 ---
 	slot1 = false
 	slot2 = PlatformHomeCarDecorationFilterService
 	slot2 = slot2.REASON_PLATFORM_BLOCK_LIST_UNAVAILABLE
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #4 20-24, warpins: 1 ---
+	--- BLOCK #5 23-28, warpins: 1 ---
+	slot1 = type
+	slot3 = PlatformSocialService
+	slot3 = slot3.peekPlatformUserBlockedByLocalUser
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= "function" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 29-32, warpins: 1 ---
+	slot1 = false
+	slot2 = PlatformHomeCarDecorationFilterService
+	slot2 = slot2.REASON_PLATFORM_BLOCK_LIST_UNAVAILABLE
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #7 33-37, warpins: 1 ---
 	slot1 = pcall
 
 	slot3 = function()
@@ -361,16 +401,16 @@ slot4 = function(slot0)
 	end
 
 	slot1, slot2 = slot1(slot3)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 	slot1 = if not slot1 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 25-38, warpins: 1 ---
+	--- BLOCK #8 38-51, warpins: 1 ---
 	slot3 = logger
 	slot5 = slot3
 	slot3 = slot3.warn
@@ -388,76 +428,83 @@ slot4 = function(slot0)
 
 	return slot3, slot4, slot5
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 39-40, warpins: 2 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #9 52-53, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
 	if slot2 == nil then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 41-45, warpins: 1 ---
+	--- BLOCK #10 54-58, warpins: 1 ---
 	slot3 = nil
 	slot4 = PlatformHomeCarDecorationFilterService
 	slot4 = slot4.REASON_PLATFORM_BLOCK_LIST_PENDING
 
 	return slot3, slot4
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 46-47, warpins: 2 ---
-	--- END OF BLOCK #8 ---
-
-	if slot2 ~= true then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 48-49, warpins: 1 ---
-	slot3 = false
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 50-50, warpins: 1 ---
-	slot3 = true
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 51-53, warpins: 2 ---
+	--- BLOCK #11 59-60, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 61-62, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 63-63, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 64-66, warpins: 2 ---
 	slot4 = nil
 
 	return slot3, slot4
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #12 54-54, warpins: 2 ---
+	--- BLOCK #15 67-67, warpins: 2 ---
 	return slot1, slot2
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #13 55-55, warpins: 2 ---
+	--- BLOCK #16 68-68, warpins: 2 ---
 	return slot1, slot2
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 69-69, warpins: 2 ---
+	return slot1, slot2
+	--- END OF BLOCK #17 ---
 
 
 
@@ -661,6 +708,159 @@ end
 
 slot3.peekLocalUgcPolicy = slot4
 
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = PlatformUGCService
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot2 = type
+	slot4 = PlatformUGCService
+	slot4 = slot4.resolveTargetVisibleDecision
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= "function" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot2 = true
+	slot3 = slot1
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #3 13-17, warpins: 1 ---
+	slot2 = pcall
+
+	slot4 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = PlatformUGCService
+		slot2 = slot0
+		slot0 = slot0.resolveTargetVisibleDecision
+		slot3 = playerInfo
+		slot4 = allowReason
+
+		return slot0(slot2, slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-29, warpins: 1 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.warn
+	slot8 = "home_car_decoration_filter_target_ugc_visible_check_failed err=%s"
+	slot9 = tostring
+	slot11 = slot3
+	MULTRES = slot9(slot11)
+
+	slot5(slot7, slot8, MULTRES)
+
+	slot5 = true
+	slot6 = slot1
+
+	return slot5, slot6
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 30-31, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot3 == false then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-33, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 34-34, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 35-36, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 37-39, warpins: 1 ---
+	slot6 = slot4.ugcReason
+	--- END OF BLOCK #9 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 40-40, warpins: 2 ---
+	slot6 = slot1
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 41-42, warpins: 2 ---
+	return slot5, slot6
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 43-43, warpins: 2 ---
+	return slot2, slot3
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot3.resolveTargetUgcVisible = slot4
+
 slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
@@ -752,60 +952,90 @@ slot4 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 45-47, warpins: 2 ---
-	slot7 = nil
+	--- BLOCK #6 45-46, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	if slot5 ~= nil then
+	if slot4 == nil then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 48-51, warpins: 1 ---
-	slot8 = {}
-	slot8.blockReason = slot5
-	slot8.blockError = slot6
-	slot7 = slot8
+	--- BLOCK #7 47-58, warpins: 1 ---
+	slot7 = true
+	slot8 = slot0.Decision
+	slot8 = slot8.Unknown
+	slot9 = PlatformHomeCarDecorationFilterService
+	slot9 = slot9.makeContext
+	slot11 = slot0.Decision
+	slot11 = slot11.Unknown
+	slot12 = slot5
+	slot13 = {}
+	slot13.uid = slot3
+	MULTRES = slot9(slot11, slot12, slot13)
+
+	return slot7, slot8, MULTRES
+
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 52-58, warpins: 2 ---
-	slot8 = PlatformHomeCarDecorationFilterService
-	slot8 = slot8.peekLocalUgcPolicy
-	slot8 = slot8()
-	slot9 = PlatformUGCService
-	slot9 = slot9.LocalPolicy
+	--- BLOCK #8 59-61, warpins: 2 ---
+	slot7 = nil
 	--- END OF BLOCK #8 ---
 
-	slot9 = if not slot9 then
+	if slot5 ~= nil then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 59-59, warpins: 1 ---
-	slot9 = {}
+	--- BLOCK #9 62-65, warpins: 1 ---
+	slot8 = {}
+	slot8.blockReason = slot5
+	slot8.blockError = slot6
+	slot7 = slot8
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 60-61, warpins: 2 ---
+	--- BLOCK #10 66-72, warpins: 2 ---
+	slot8 = PlatformHomeCarDecorationFilterService
+	slot8 = slot8.peekLocalUgcPolicy
+	slot8 = slot8()
+	slot9 = PlatformUGCService
+	slot9 = slot9.LocalPolicy
 	--- END OF BLOCK #10 ---
 
-	if slot8 == nil then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 62-78, warpins: 1 ---
+	--- BLOCK #11 73-73, warpins: 1 ---
+	slot9 = {}
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 74-75, warpins: 2 ---
+	--- END OF BLOCK #12 ---
+
+	if slot8 == nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 76-92, warpins: 1 ---
 	slot10 = logger
 	slot12 = slot10
 	slot10 = slot10.error
@@ -827,33 +1057,318 @@ slot4 = function(slot0, slot1, slot2)
 
 	return slot10, slot11, MULTRES
 
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 79-81, warpins: 2 ---
-	slot10 = slot9.Allow
-	--- END OF BLOCK #12 ---
-
-	if slot8 ~= slot10 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 82-83, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
-	if slot8 == "allow" then
-	JUMP TO BLOCK #14
-	else
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 93-95, warpins: 2 ---
+	slot10 = slot9.Blocked
+	--- END OF BLOCK #14 ---
+
+	if slot8 ~= slot10 then
 	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #14 84-95, warpins: 2 ---
+	--- BLOCK #15 96-97, warpins: 1 ---
+	--- END OF BLOCK #15 ---
+
+	if slot8 ~= "blocked" then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #16 98-99, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	if slot8 ~= "deny" then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #17 100-102, warpins: 1 ---
+	slot10 = slot9.FriendsOnly
+	--- END OF BLOCK #17 ---
+
+	if slot8 ~= slot10 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 103-104, warpins: 1 ---
+	--- END OF BLOCK #18 ---
+
+	if slot8 == "friends_only" then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #19 105-110, warpins: 2 ---
+	slot10 = PlatformHomeCarDecorationFilterService
+	slot10 = slot10.peekIsPlatformFriend
+	slot12 = slot1
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #19 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #20 111-123, warpins: 1 ---
+	slot10 = true
+	slot11 = slot0.Decision
+	slot11 = slot11.Block
+	slot12 = PlatformHomeCarDecorationFilterService
+	slot12 = slot12.makeContext
+	slot14 = slot0.Decision
+	slot14 = slot14.Block
+	slot15 = PlatformHomeCarDecorationFilterService
+	slot15 = slot15.REASON_LOCAL_UGC_FRIENDS_ONLY
+	slot16 = slot7
+	MULTRES = slot12(slot14, slot15, slot16)
+
+	return slot10, slot11, MULTRES
+
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #21 124-126, warpins: 1 ---
+	slot10 = slot9.Allow
+	--- END OF BLOCK #21 ---
+
+	if slot8 ~= slot10 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #22 127-128, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	if slot8 ~= "allow" then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #23 129-131, warpins: 1 ---
+	slot10 = slot9.Fallback
+	--- END OF BLOCK #23 ---
+
+	if slot8 ~= slot10 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #24 132-133, warpins: 1 ---
+	--- END OF BLOCK #24 ---
+
+	if slot8 ~= "fallback" then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 134-145, warpins: 1 ---
+	slot10 = false
+	slot11 = slot0.Decision
+	slot11 = slot11.Unknown
+	slot12 = PlatformHomeCarDecorationFilterService
+	slot12 = slot12.makeContext
+	slot14 = slot0.Decision
+	slot14 = slot14.Unknown
+	slot15 = PlatformHomeCarDecorationFilterService
+	slot15 = slot15.REASON_LOCAL_UGC_POLICY_UNKNOWN
+	slot16 = slot7
+	MULTRES = slot12(slot14, slot15, slot16)
+
+	return slot10, slot11, MULTRES
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 146-150, warpins: 7 ---
+	slot10 = PlatformHomeCarDecorationFilterService
+	slot10 = slot10.REASON_LOCAL_UGC_ALLOW
+	slot11 = slot9.FriendsOnly
+	--- END OF BLOCK #26 ---
+
+	if slot8 ~= slot11 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 151-152, warpins: 1 ---
+	--- END OF BLOCK #27 ---
+
+	if slot8 == "friends_only" then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 153-155, warpins: 2 ---
+	slot11 = PlatformHomeCarDecorationFilterService
+	slot10 = slot11.REASON_LOCAL_UGC_FRIENDS_ONLY
+	--- END OF BLOCK #28 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
+
+
+	--- BLOCK #29 156-158, warpins: 1 ---
+	slot11 = slot9.Fallback
+	--- END OF BLOCK #29 ---
+
+	if slot8 ~= slot11 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #30 159-160, warpins: 1 ---
+	--- END OF BLOCK #30 ---
+
+	if slot8 == "fallback" then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 161-162, warpins: 2 ---
+	slot11 = PlatformHomeCarDecorationFilterService
+	slot10 = slot11.REASON_LOCAL_UGC_FALLBACK
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 163-169, warpins: 3 ---
+	slot11 = PlatformHomeCarDecorationFilterService
+	slot11 = slot11.resolveTargetUgcVisible
+	slot13 = slot1
+	slot14 = slot10
+	slot11, slot12 = slot11(slot13, slot14)
+	--- END OF BLOCK #32 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 170-180, warpins: 1 ---
+	slot13 = true
+	slot14 = slot0.Decision
+	slot14 = slot14.Block
+	slot15 = PlatformHomeCarDecorationFilterService
+	slot15 = slot15.makeContext
+	slot17 = slot0.Decision
+	slot17 = slot17.Block
+	slot18 = slot12
+	slot19 = slot7
+	MULTRES = slot15(slot17, slot18, slot19)
+
+	return slot13, slot14, MULTRES
+
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 181-184, warpins: 2 ---
+	slot13 = PlatformHomeCarDecorationFilterService
+	slot13 = slot13.REASON_TARGET_UGC_SWITCH_MISSING
+	--- END OF BLOCK #34 ---
+
+	if slot12 ~= slot13 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 185-188, warpins: 1 ---
+	slot13 = PlatformHomeCarDecorationFilterService
+	slot13 = slot13.REASON_TARGET_UGC_SWITCH_UNKNOWN
+	--- END OF BLOCK #35 ---
+
+	if slot12 == slot13 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 189-199, warpins: 2 ---
+	slot13 = false
+	slot14 = slot0.Decision
+	slot14 = slot14.Allow
+	slot15 = PlatformHomeCarDecorationFilterService
+	slot15 = slot15.makeContext
+	slot17 = slot0.Decision
+	slot17 = slot17.Allow
+	slot18 = slot12
+	slot19 = slot7
+	MULTRES = slot15(slot17, slot18, slot19)
+
+	return slot13, slot14, MULTRES
+
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 200-202, warpins: 5 ---
+	slot10 = slot9.Allow
+	--- END OF BLOCK #37 ---
+
+	if slot8 ~= slot10 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 203-204, warpins: 1 ---
+	--- END OF BLOCK #38 ---
+
+	if slot8 == "allow" then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #40
+	end
+
+
+	--- BLOCK #39 205-216, warpins: 2 ---
 	slot10 = false
 	slot11 = slot0.Decision
 	slot11 = slot11.Allow
@@ -868,33 +1383,33 @@ slot4 = function(slot0, slot1, slot2)
 
 	return slot10, slot11, MULTRES
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #39 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #15 96-98, warpins: 2 ---
+	--- BLOCK #40 217-219, warpins: 2 ---
 	slot10 = slot9.Fallback
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #40 ---
 
 	if slot8 ~= slot10 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #41
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #42
 	end
 
 
-	--- BLOCK #16 99-100, warpins: 1 ---
-	--- END OF BLOCK #16 ---
+	--- BLOCK #41 220-221, warpins: 1 ---
+	--- END OF BLOCK #41 ---
 
 	if slot8 == "fallback" then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #17 101-112, warpins: 2 ---
+	--- BLOCK #42 222-233, warpins: 2 ---
 	slot10 = false
 	slot11 = slot0.Decision
 	slot11 = slot11.Allow
@@ -909,47 +1424,33 @@ slot4 = function(slot0, slot1, slot2)
 
 	return slot10, slot11, MULTRES
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #42 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #18 113-115, warpins: 2 ---
+	--- BLOCK #43 234-236, warpins: 2 ---
 	slot10 = slot9.FriendsOnly
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #43 ---
 
 	if slot8 ~= slot10 then
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #19 116-117, warpins: 1 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #44 237-238, warpins: 1 ---
+	--- END OF BLOCK #44 ---
 
 	if slot8 == "friends_only" then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #45
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #20 118-123, warpins: 2 ---
-	slot10 = PlatformHomeCarDecorationFilterService
-	slot10 = slot10.peekIsPlatformFriend
-	slot12 = slot1
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #20 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 124-135, warpins: 1 ---
+	--- BLOCK #45 239-250, warpins: 2 ---
 	slot10 = false
 	slot11 = slot0.Decision
 	slot11 = slot11.Allow
@@ -964,63 +1465,43 @@ slot4 = function(slot0, slot1, slot2)
 
 	return slot10, slot11, MULTRES
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #45 ---
 
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 136-147, warpins: 2 ---
-	slot10 = true
-	slot11 = slot0.Decision
-	slot11 = slot11.Block
-	slot12 = PlatformHomeCarDecorationFilterService
-	slot12 = slot12.makeContext
-	slot14 = slot0.Decision
-	slot14 = slot14.Block
-	slot15 = PlatformHomeCarDecorationFilterService
-	slot15 = slot15.REASON_LOCAL_UGC_FRIENDS_ONLY
-	slot16 = slot7
-	MULTRES = slot12(slot14, slot15, slot16)
-
-	return slot10, slot11, MULTRES
-
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #23 148-150, warpins: 2 ---
+	--- BLOCK #46 251-253, warpins: 2 ---
 	slot10 = slot9.Blocked
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #46 ---
 
 	if slot8 ~= slot10 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #47
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #24 151-152, warpins: 1 ---
-	--- END OF BLOCK #24 ---
+	--- BLOCK #47 254-255, warpins: 1 ---
+	--- END OF BLOCK #47 ---
 
 	if slot8 ~= "blocked" then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #48
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #25 153-154, warpins: 1 ---
-	--- END OF BLOCK #25 ---
+	--- BLOCK #48 256-257, warpins: 1 ---
+	--- END OF BLOCK #48 ---
 
 	if slot8 == "deny" then
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #26 155-166, warpins: 3 ---
+	--- BLOCK #49 258-269, warpins: 3 ---
 	slot10 = true
 	slot11 = slot0.Decision
 	slot11 = slot11.Block
@@ -1035,12 +1516,12 @@ slot4 = function(slot0, slot1, slot2)
 
 	return slot10, slot11, MULTRES
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #49 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #27 167-178, warpins: 2 ---
+	--- BLOCK #50 270-281, warpins: 2 ---
 	slot10 = false
 	slot11 = slot0.Decision
 	slot11 = slot11.Unknown
@@ -1054,7 +1535,7 @@ slot4 = function(slot0, slot1, slot2)
 	MULTRES = slot12(slot14, slot15, slot16)
 
 	return slot10, slot11, MULTRES
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #50 ---
 
 
 

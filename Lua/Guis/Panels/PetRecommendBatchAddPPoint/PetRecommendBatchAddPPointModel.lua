@@ -1,42 +1,45 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-47, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "PetRecommendBatchAddPPointModel"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "PetRecommendBatchAddPPointModel"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UIModel"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "PetRecommendBatchAddPPointModel"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
-slot4 = require
-slot6 = "Data.pet_strength_recommend_data"
-slot4 = slot4(slot6)
+slot3 = require
+slot5 = "Guis.UIModel"
+slot3 = slot3(slot5)
+slot4 = slot2.LightClass
+slot6 = "PetRecommendBatchAddPPointModel"
+slot7 = slot3
+slot4 = slot4(slot6, slot7)
 slot5 = require
-slot7 = "Data.pet_data"
+slot7 = "Data.pet_strength_recommend_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.pet_prototype_data"
+slot8 = "Data.pet_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.PetManagementUtils"
+slot9 = "Data.pet_prototype_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.Const"
+slot10 = "Utils.PetManagementUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.formula_data"
+slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
-slot10 = math
-slot10 = slot10.floor
+slot10 = require
+slot12 = "Data.formula_data"
+slot10 = slot10(slot12)
+slot11 = math
+slot11 = slot11.floor
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PetManagementUtils
 	slot2 = slot2.getPetRecommendList
@@ -69,9 +72,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.getPetRecommendList = slot11
+slot4.getPetRecommendList = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -117,7 +120,7 @@ slot11 = function(slot0, slot1)
 
 
 	--- BLOCK #4 13-13, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -172,9 +175,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.getUsedPPointSum = slot11
+slot4.getUsedPPointSum = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = PetManagementUtils
 	slot3 = slot3.isPetNewPropApplied
@@ -188,9 +191,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot3.isPetNewPropApplied = slot11
+slot4.isPetNewPropApplied = slot12
 
-return slot3
+return slot4
 --- END OF BLOCK #0 ---
 
 

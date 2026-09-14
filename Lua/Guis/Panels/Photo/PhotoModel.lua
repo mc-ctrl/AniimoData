@@ -1,4 +1,4 @@
---- BLOCK #0 1-97, warpins: 1 ---
+--- BLOCK #0 1-98, warpins: 1 ---
 slot0 = require
 slot2 = "Data.photo_identify_data"
 slot0 = slot0(slot2)
@@ -25,31 +25,34 @@ slot7 = require
 slot9 = "Const.ClientConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.pet_data"
+slot10 = "Utils.PhotographyAssetRedDotUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.photo_official_preset_data"
+slot11 = "Data.pet_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.photo_prefab_data"
+slot12 = "Data.photo_official_preset_data"
 slot10 = slot10(slot12)
-slot11 = 521
-slot12 = {
+slot11 = require
+slot13 = "Data.photo_prefab_data"
+slot11 = slot11(slot13)
+slot12 = 521
+slot13 = {
+	WideAngle = 1,
 	FreeCamera = 0,
-	FishEye = 2,
-	WideAngle = 1
+	FishEye = 2
 }
-slot3.CameraModeIds = slot12
-slot12 = {
+slot3.CameraModeIds = slot13
+slot13 = {
+	Hot = 2,
 	Official = 1,
 	Saved = 4,
-	Liked = 3,
-	Hot = 2
+	Liked = 3
 }
-slot3.TemplateType = slot12
+slot3.TemplateType = slot13
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = UIModel
 	slot1 = slot1.ctor
 	slot3 = slot0
@@ -64,7 +67,9 @@ slot12 = function(slot0)
 	slot1 = {}
 	slot0.templateIdMap = slot1
 	slot1 = {}
-	slot0.presetImgByteMap = slot1
+	slot0.presetImgSpriteMap = slot1
+	slot1 = 0
+	slot0.presetImgRequestSerial = slot1
 	slot1 = nil
 	slot0.officialKey2Data = slot1
 	slot1 = nil
@@ -79,9 +84,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.ctor = slot12
+slot3.ctor = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.officialKey2Data
 	--- END OF BLOCK #0 ---
@@ -132,9 +137,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.getTableDataByOfficialKey = slot12
+slot3.getTableDataByOfficialKey = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.curCameraMode
 
@@ -145,9 +150,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.getCameraMode = slot12
+slot3.getCameraMode = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.curCameraMode = slot1
 
@@ -158,9 +163,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.setCameraMode = slot12
+slot3.setCameraMode = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.studioPreset = slot1
 
@@ -171,9 +176,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.setStudioPreset = slot12
+slot3.setStudioPreset = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.studioPreset
 
@@ -184,9 +189,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.getStudioPreset = slot12
+slot3.getStudioPreset = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.studioAssetsId
 
@@ -264,9 +269,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.setStudioAssetsId = slot12
+slot3.setStudioAssetsId = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.studioAssetsId
 	--- END OF BLOCK #0 ---
@@ -338,96 +343,45 @@ slot12 = function(slot0)
 
 end
 
-slot3.getStudioAssetsId = slot12
+slot3.getStudioAssetsId = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.serverMsg
-	slot8 = "RPC_CS_TakePhoto"
-	slot9 = {}
-	slot9.photoNumber = slot1
+slot13 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
+	slot1 = slot1.quickPhoto
+	slot2 = slot1.quickPhotoId
 	--- END OF BLOCK #0 ---
 
-	slot10 = if not slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-10, warpins: 1 ---
-	slot10 = 0
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot2 = slot1.curAITraitPhotoId
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-15, warpins: 2 ---
-	slot9.subjectMask = slot10
-	slot9.studioTmplId = slot4
-	slot10 = slot2
-
-	slot5(slot7, slot8, slot9, slot10)
-
-	return
+	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-
-
-end
-
-slot3.trySavePhotoToServer = slot12
-
-slot12 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-17, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot2 = slot2.quickPhoto
-	--- END OF BLOCK #1 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 18-22, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot2 = slot2.quickPhoto
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 23-25, warpins: 2 ---
-	slot3 = slot2.quickPhotoId
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot3 = PhotoIdentifyData
+	slot3 = slot3[slot2]
 	--- END OF BLOCK #3 ---
 
 	slot3 = if not slot3 then
@@ -437,62 +391,33 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #4 26-26, warpins: 1 ---
-	slot3 = slot2.curAITraitPhotoId
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot3 = {}
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 27-28, warpins: 2 ---
+	--- BLOCK #5 17-18, warpins: 2 ---
+	slot4 = slot3.desc
+
+	return slot4
 	--- END OF BLOCK #5 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-32, warpins: 1 ---
-	slot4 = PhotoIdentifyData
-	slot4 = slot4[slot3]
-	--- END OF BLOCK #6 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 33-33, warpins: 1 ---
-	slot4 = {}
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 34-35, warpins: 2 ---
-	slot5 = slot4.desc
-
-	return slot5
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 36-36, warpins: 2 ---
+	--- BLOCK #6 19-19, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot3.tryGetPhotoTitle = slot12
+slot3.tryGetPhotoTitle = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -654,9 +579,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.getPreparePetList = slot12
+slot3.getPreparePetList = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -760,9 +685,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.getCurPetIndex = slot12
+slot3.getCurPetIndex = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = pairs
 	slot6 = slot1
@@ -934,9 +859,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.getAssetsData = slot12
+slot3.getAssetsData = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -975,9 +900,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.isLikedTemplate = slot12
+slot3.isLikedTemplate = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1026,9 +951,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.likeTemplate = slot12
+slot3.likeTemplate = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1067,9 +992,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.isSavedTemplate = slot12
+slot3.isSavedTemplate = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
@@ -1088,9 +1013,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.deleteSavedTemplate = slot12
+slot3.deleteSavedTemplate = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = {}
 	--- END OF BLOCK #0 ---
@@ -1132,46 +1057,13 @@ slot12 = function(slot0, slot1)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 17-22, warpins: 1 ---
-	slot3 = table
-	slot3 = slot3.sort
+	--- BLOCK #4 17-24, warpins: 1 ---
+	slot3 = PhotographyAssetRedDotUtils
+	slot3 = slot3.sortUnlockedFirst
 	slot5 = slot2
-
-	slot6 = function(slot0, slot1)
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot2 = slot0.id
-		slot3 = slot1.id
-		--- END OF BLOCK #0 ---
-
-		if slot2 >= slot3 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-6, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 7-7, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 8-8, warpins: 2 ---
-		return slot2
-		--- END OF BLOCK #3 ---
-
-
-
-	end
+	slot6 = PhotographyAssetRedDotUtils
+	slot6 = slot6.AssetType
+	slot6 = slot6.StudioPrefab
 
 	slot3(slot5, slot6)
 
@@ -1180,7 +1072,7 @@ slot12 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 23-26, warpins: 1 ---
+	--- BLOCK #5 25-28, warpins: 1 ---
 	slot3 = pairs
 	slot5 = PhotoOfficialPresetData
 	slot3, slot4, slot5 = slot3(slot5)
@@ -1189,7 +1081,7 @@ slot12 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 27-33, warpins: 1 ---
+	--- BLOCK #6 29-35, warpins: 1 ---
 	slot8 = #slot2
 	slot8 = slot8 + 1
 	slot11 = slot0
@@ -1203,7 +1095,7 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 34-35, warpins: 2 ---
+	--- BLOCK #7 36-37, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -1211,7 +1103,7 @@ slot12 = function(slot0, slot1)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 36-37, warpins: 2 ---
+	--- BLOCK #8 38-38, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #8 ---
 
@@ -1219,9 +1111,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.getOfficialTemplate = slot12
+slot3.getOfficialTemplate = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.genPhotoPresetUniqueId
@@ -1286,9 +1178,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.genOfficialTemplateData = slot12
+slot3.genOfficialTemplateData = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = {}
 
@@ -1299,9 +1191,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.getHotTemplate = slot12
+slot3.getHotTemplate = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = {}
 	slot4 = 1
@@ -1383,9 +1275,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot3.filterTemplateList = slot12
+slot3.filterTemplateList = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.isQueryingLiked
 
@@ -1839,9 +1731,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getLikedTemplate = slot12
+slot3.getLikedTemplate = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.isQueryingSaved
 
@@ -2304,9 +2196,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getSavedTemplate = slot12
+slot3.getSavedTemplate = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2443,9 +2335,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.getPresetByQRCode = slot12
+slot3.getPresetByQRCode = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.parsePhotoPresetUniqueId
@@ -2567,11 +2459,11 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot3.queryTemplateByPresetId = slot12
+slot3.queryTemplateByPresetId = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot4 = slot0.presetImgByteMap
+	slot4 = slot0.presetImgSpriteMap
 	slot4 = slot4[slot1]
 	--- END OF BLOCK #0 ---
 
@@ -2582,16 +2474,10 @@ slot12 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 5-16, warpins: 1 ---
+	--- BLOCK #1 5-10, warpins: 1 ---
 	slot4 = slot2
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.mobileCameraMgr
-	slot8 = slot6
-	slot6 = slot6.GetSpriteByCompressByte
-	slot9 = slot0.presetImgByteMap
-	slot9 = slot9[slot1]
-	slot6 = slot6(slot8, slot9)
+	slot6 = slot0.presetImgSpriteMap
+	slot6 = slot6[slot1]
 	slot7 = slot3
 
 	slot4(slot6, slot7)
@@ -2601,24 +2487,27 @@ slot12 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 17-21, warpins: 1 ---
-	slot4 = ClientUtils
-	slot4 = slot4.pullPicture
-	slot6 = slot1
+	--- BLOCK #2 11-17, warpins: 1 ---
+	slot4 = slot0.presetImgRequestSerial
+	slot5 = ClientUtils
+	slot5 = slot5.pullPicture
+	slot7 = slot1
 
-	slot7 = function(slot0, slot1)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot2 = key
+	slot8 = function(slot0, slot1)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot2 = requestSerial
+		slot3 = self
+		slot3 = slot3.presetImgRequestSerial
 		--- END OF BLOCK #0 ---
 
-		if slot0 == slot2 then
+		if slot2 ~= slot3 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #1 4-5, warpins: 1 ---
+		--- BLOCK #1 6-7, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
 		slot1 = if slot1 then
@@ -2628,50 +2517,118 @@ slot12 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #2 6-24, warpins: 1 ---
-		slot2 = Utils
-		slot2 = slot2.decodeFromStr
-		slot4 = slot1
-		slot2 = slot2(slot4)
-		slot1 = slot2
-		slot2 = callback
-		slot4 = pg
-		slot4 = slot4.global
-		slot4 = slot4.mobileCameraMgr
-		slot6 = slot4
-		slot4 = slot4.GetSpriteByCompressByte
-		slot7 = slot1
-		slot4 = slot4(slot6, slot7)
-		slot5 = id
+		--- BLOCK #2 8-14, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.global
+		slot2 = slot2.mobileCameraMgr
+		slot4 = slot2
+		slot2 = slot2.DestroySpriteTexture
+		slot5 = slot1
 
 		slot2(slot4, slot5)
-
-		slot2 = self
-		slot2 = slot2.presetImgByteMap
-		slot3 = key
-		slot2[slot3] = slot1
 
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 25-25, warpins: 3 ---
+		--- BLOCK #3 15-15, warpins: 2 ---
 		return
+
 		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 16-18, warpins: 2 ---
+		slot2 = key
+		--- END OF BLOCK #4 ---
+
+		if slot0 == slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #5 19-20, warpins: 1 ---
+		--- END OF BLOCK #5 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #6 21-26, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.presetImgSpriteMap
+		slot3 = key
+		slot2 = slot2[slot3]
+		--- END OF BLOCK #6 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 27-35, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.mobileCameraMgr
+		slot5 = slot3
+		slot3 = slot3.DestroySpriteTexture
+		slot6 = slot1
+
+		slot3(slot5, slot6)
+
+		slot1 = slot2
+		--- END OF BLOCK #7 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #8 36-39, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.presetImgSpriteMap
+		slot4 = key
+		slot3[slot4] = slot1
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 40-43, warpins: 2 ---
+		slot3 = callback
+		slot5 = slot1
+		slot6 = id
+
+		slot3(slot5, slot6)
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 44-44, warpins: 3 ---
+		return
+		--- END OF BLOCK #10 ---
 
 
 
 	end
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 22-23, warpins: 2 ---
+	--- BLOCK #3 18-19, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -2679,27 +2636,62 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.queryPresetImg = slot12
+slot3.queryPresetImg = slot13
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = slot0.presetImgRequestSerial
+	slot1 = slot1 + 1
+	slot0.presetImgRequestSerial = slot1
 	slot1 = {}
 	slot0.templateCache = slot1
 	slot1 = {}
 	slot0.templateIdMap = slot1
+	slot1 = pairs
+	slot3 = slot0.presetImgSpriteMap
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 12-18, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.mobileCameraMgr
+	slot8 = slot6
+	slot6 = slot6.DestroySpriteTexture
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-20, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 21-23, warpins: 1 ---
 	slot1 = {}
-	slot0.presetImgByteMap = slot1
+	slot0.presetImgSpriteMap = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot3.clearTemplateCache = slot12
+slot3.clearTemplateCache = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3, slot4)
+slot13 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
@@ -2769,7 +2761,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot3.isArriveTrackPos = slot12
+slot3.isArriveTrackPos = slot13
 
 return slot3
 --- END OF BLOCK #0 ---

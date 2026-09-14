@@ -130,9 +130,39 @@ end
 slot3.registerObjects = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isPS
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-14, warpins: 1 ---
+	slot1 = slot0.btnClose
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 

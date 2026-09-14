@@ -1,4 +1,4 @@
---- BLOCK #0 1-73, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UICtrl"
 slot0 = slot0(slot2)
@@ -32,16 +32,19 @@ slot9 = slot9(slot11)
 slot10 = require
 slot12 = "Utils.DialogueUtils"
 slot10 = slot10(slot12)
-slot11 = slot2.LightClass
-slot13 = "PetSelectionPanelNewCtrl"
-slot14 = slot0
-slot11 = slot11(slot13, slot14)
-slot12 = require
-slot14 = "Const.MessageName"
-slot12 = slot12(slot14)
-slot13 = true
+slot11 = require
+slot13 = "Core.Common.Time"
+slot11 = slot11(slot13)
+slot12 = slot2.LightClass
+slot14 = "PetSelectionPanelNewCtrl"
+slot15 = slot0
+slot12 = slot12(slot14, slot15)
+slot13 = require
+slot15 = "Const.MessageName"
+slot13 = slot13(slot15)
+slot14 = true
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -57,9 +60,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.onCreate = slot14
+slot12.onCreate = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -121,9 +124,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.onOpen = slot14
+slot12.onOpen = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-96, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.leftBtn
@@ -626,9 +629,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.addListener = slot14
+slot12.addListener = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-48, warpins: 1 ---
 	slot1 = ClientUtils
 	slot1 = slot1.getCustomVariableValue
@@ -819,9 +822,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.init = slot14
+slot12.init = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -868,13 +871,11 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-26, warpins: 2 ---
+	--- BLOCK #4 15-24, warpins: 2 ---
 	slot2 = slot1.valueVec2
 	slot2 = slot2.x
 	slot3 = 0.5
-	slot4 = CS
-	slot4 = slot4.UnityEngine
-	slot4 = slot4.Time
+	slot4 = Time
 	slot4 = slot4.time
 	slot5 = slot0.lastStickInputTime
 	slot5 = slot4 - slot5
@@ -889,7 +890,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 27-27, warpins: 1 ---
+	--- BLOCK #5 25-25, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -897,7 +898,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-30, warpins: 2 ---
+	--- BLOCK #6 26-28, warpins: 2 ---
 	slot5 = -slot3
 	--- END OF BLOCK #6 ---
 
@@ -908,7 +909,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 31-36, warpins: 1 ---
+	--- BLOCK #7 29-34, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.selectPet
 	slot8 = 1
@@ -921,7 +922,7 @@ slot14 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #8 37-38, warpins: 1 ---
+	--- BLOCK #8 35-36, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
 	if slot3 < slot2 then
@@ -931,7 +932,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 39-43, warpins: 1 ---
+	--- BLOCK #9 37-41, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.selectPet
 	slot8 = 2
@@ -945,7 +946,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 44-44, warpins: 3 ---
+	--- BLOCK #10 42-42, warpins: 3 ---
 	return
 	--- END OF BLOCK #10 ---
 
@@ -953,9 +954,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.onGamepadLeftStickMove = slot14
+slot12.onGamepadLeftStickMove = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1077,9 +1078,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.onGamepadButtonSouth = slot14
+slot12.onGamepadButtonSouth = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isConfirming
 
@@ -1118,9 +1119,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.selectPet = slot14
+slot12.selectPet = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.selectIndex
 
@@ -1160,9 +1161,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.showConfirmPanel = slot14
+slot12.showConfirmPanel = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1201,9 +1202,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.confirmSelectPet = slot14
+slot12.confirmSelectPet = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	isShowBothBtn = false
 	slot2 = slot0.view
@@ -1261,9 +1262,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.switchDialogue = slot14
+slot12.switchDialogue = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.index = slot2
 	--- END OF BLOCK #0 ---
@@ -1452,9 +1453,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.showDialogueInfo = slot14
+slot12.showDialogueInfo = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1507,9 +1508,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.startMoveNextTimer = slot14
+slot12.startMoveNextTimer = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -1520,9 +1521,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.checkUIShowVirtualMouseCursor = slot14
+slot12.checkUIShowVirtualMouseCursor = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.moveNextTimer
 	--- END OF BLOCK #0 ---
@@ -1557,9 +1558,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.removeMoveNextTimer = slot14
+slot12.removeMoveNextTimer = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -1579,9 +1580,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.onDestroy = slot14
+slot12.onDestroy = slot15
 
-return slot11
+return slot12
 --- END OF BLOCK #0 ---
 
 

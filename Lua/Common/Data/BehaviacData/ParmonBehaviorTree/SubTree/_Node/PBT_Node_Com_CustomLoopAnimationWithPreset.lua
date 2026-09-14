@@ -7,110 +7,110 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 5,
-	useForRoute = true,
+	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Com_CustomLoopAnimationWithPreset",
 	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Com_CustomLoopAnimationWithPreset"
+	version = 5,
+	useForRoute = true
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
-	type = "float",
 	name = "tWaitTime",
+	type = "float",
+	const = 0,
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	const = "",
-	type = "string",
 	name = "tEmojiBubbleKey",
+	type = "string",
+	const = "",
 	value = ""
 }
 slot4[2] = slot5
 slot5 = {
-	const = 5,
-	type = "float",
 	name = "tEmojiBubbleTimeout",
+	type = "float",
+	const = 5,
 	value = "5"
 }
 slot4[3] = slot5
 slot5 = {
-	const = "",
-	type = "string",
 	name = "tAnimationStartKey",
+	type = "string",
+	const = "",
 	value = ""
 }
 slot4[4] = slot5
 slot5 = {
-	const = "",
-	type = "string",
 	name = "tAnimationLoopKey",
+	type = "string",
+	const = "",
 	value = ""
 }
 slot4[5] = slot5
 slot5 = {
-	const = "",
-	type = "string",
 	name = "tAnimationEndKey",
+	type = "string",
+	const = "",
 	value = ""
 }
 slot4[6] = slot5
 slot5 = {
-	const = 5,
-	type = "float",
 	name = "tAnimationTimeout",
+	type = "float",
+	const = 5,
 	value = "5"
 }
 slot4[7] = slot5
 slot5 = {
-	const = "",
-	type = "string",
 	name = "tTimelineTag",
+	type = "string",
+	const = "",
 	value = ""
 }
 slot4[8] = slot5
 slot5 = {
-	const = false,
-	type = "bool",
 	name = "tNeedLoop",
+	type = "bool",
+	const = false,
 	value = "false"
 }
 slot4[9] = slot5
 slot5 = {
-	const = false,
-	type = "bool",
 	name = "tAnimationPlayOnce",
+	type = "bool",
+	const = false,
 	value = "false"
 }
 slot4[10] = slot5
 slot5 = {
-	const = "",
-	type = "string",
 	name = "tPresetName",
+	type = "string",
+	const = "",
 	value = ""
 }
 slot4[11] = slot5
 slot5 = {
-	const = 0,
-	type = "int",
 	name = "tLoopCount",
+	type = "int",
+	const = 0,
 	value = "0"
 }
 slot4[12] = slot5
 slot5 = {
-	type = "vector<string>",
 	name = "tRenderNameList",
+	type = "vector<string>",
 	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[13] = slot5
 slot5 = {
-	const = 1,
-	type = "float",
 	name = "tPresetDuration",
+	type = "float",
+	const = 1,
 	value = "1"
 }
 slot4[14] = slot5
@@ -310,11 +310,11 @@ slot8[3] = slot9
 slot7.properties = slot8
 slot8 = {}
 slot9 = {
-	transition = false,
-	class = "Effector",
 	id = "7",
 	effector = true,
-	precondition = false
+	precondition = false,
+	class = "Effector",
+	transition = false
 }
 slot10 = {}
 slot11 = {

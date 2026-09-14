@@ -244,32 +244,30 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #11 50-65, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.abilityMgr
-	slot1 = slot1.combatContextPool
-	slot3 = slot1
-	slot1 = slot1.returnObject
-	slot4 = slot0.combatContext
-
-	slot1(slot3, slot4)
-
+	--- BLOCK #11 50-64, warpins: 1 ---
 	slot1 = slot0.combatContext
+	slot2 = nil
+	slot0.combatContext = slot2
 	slot2 = 0
 	slot1.refCnt = slot2
-	slot1 = slot0.combatContext
 	slot2 = true
 	slot1.isDead = slot2
-	slot1 = nil
-	slot0.combatContext = slot1
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.abilityMgr
+	slot2 = slot2.combatContextPool
+	slot4 = slot2
+	slot2 = slot2.returnObject
+	slot5 = slot1
+
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 66-66, warpins: 2 ---
+	--- BLOCK #12 65-65, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 
@@ -396,7 +394,62 @@ end
 slot14.tick = slot15
 
 slot15 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.abilityMgr
+	slot6 = slot4
+	slot4 = slot4.getTimelineTemplate
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-16, warpins: 1 ---
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.WARN
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 17-21, warpins: 1 ---
+	slot4 = CombatLogger
+	slot4 = slot4.warn
+	slot6 = "@jqj timelineTemplate not found"
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-23, warpins: 2 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-45, warpins: 2 ---
 	slot4 = slot0.pendingTimelineCmdParams
 	slot6 = slot4
 	slot4 = slot4.pushCmdSet
@@ -421,9 +474,10 @@ slot15 = function(slot0, slot1, slot2, slot3)
 	slot5 = slot5.jumpingTimelineRefCnt
 	slot5 = slot5 - 1
 	slot4.jumpingTimelineRefCnt = slot5
+	slot4 = true
 
-	return
-	--- END OF BLOCK #0 ---
+	return slot4
+	--- END OF BLOCK #4 ---
 
 
 
@@ -2421,11 +2475,16 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #3 46-60, warpins: 1 ---
+	--- BLOCK #3 46-63, warpins: 1 ---
 	slot2 = slot0.timelineParams
 	slot2 = slot2.combatParams
-	slot3 = slot2.constCasterInfo
-	slot1.constCasterInfo = slot3
+	slot5 = slot1
+	slot3 = slot1.setConstCasterInfo
+	slot6 = slot2.constCasterInfo
+	slot7 = slot2.srcActorId
+
+	slot3(slot5, slot6, slot7)
+
 	slot3 = slot2.srcType
 	slot1.srcType = slot3
 	slot3 = slot2.castingCombatContextId
@@ -2444,7 +2503,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #4 61-79, warpins: 1 ---
+	--- BLOCK #4 64-82, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.global
 	slot5 = slot5.abilityMgr
@@ -2470,7 +2529,7 @@ slot15 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 80-82, warpins: 1 ---
+	--- BLOCK #5 83-85, warpins: 1 ---
 	slot5 = nil
 	slot1.runtimeTargetInfo = slot5
 	--- END OF BLOCK #5 ---
@@ -2478,7 +2537,7 @@ slot15 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 83-89, warpins: 1 ---
+	--- BLOCK #6 86-92, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
 	slot4 = LoggerConst
@@ -2493,7 +2552,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #7 90-95, warpins: 1 ---
+	--- BLOCK #7 93-98, warpins: 1 ---
 	slot2 = CombatLogger
 	slot2 = slot2.error
 	slot4 = "Invalid timelineKind"
@@ -2507,7 +2566,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 96-99, warpins: 4 ---
+	--- BLOCK #8 99-102, warpins: 4 ---
 	slot4 = slot1
 	slot2 = slot1.initNodeMap
 

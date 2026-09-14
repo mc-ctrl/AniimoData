@@ -1,4 +1,4 @@
---- BLOCK #0 1-61, warpins: 1 ---
+--- BLOCK #0 1-62, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -36,8 +36,9 @@ slot10 = slot10(slot12, slot13)
 slot11 = require
 slot13 = "Common.Const.Const"
 slot11 = slot11(slot13)
+slot12 = "DropHintHideMove"
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMaxLimit
@@ -55,9 +56,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.onInit = slot12
+slot10.onInit = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryPopupItem
@@ -76,9 +77,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.onUpdate = slot12
+slot10.onUpdate = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isQueueEmpty
@@ -125,7 +126,7 @@ slot12 = function(slot0)
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.duration
 	--- END OF BLOCK #3 ---
 
@@ -165,9 +166,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.tryPopupItem = slot12
+slot10.tryPopupItem = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isRunning
@@ -194,7 +195,7 @@ slot12 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -228,9 +229,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.refreshRemainTime = slot12
+slot10.refreshRemainTime = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.firstRunItem
@@ -275,35 +276,53 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.hideById = slot12
+slot10.hideById = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.firstRunItem
-	slot1 = slot1(slot3)
+	slot1 = slot0.clearAllData
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+
+
+end
+
+slot10.hide = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.firstRunItem
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-9, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.recycleToast
-	slot5 = slot1
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.recycleToast
+	slot6 = slot2
+	slot7 = slot1
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -311,45 +330,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.hide = slot12
+slot10.onClearRunningList = slot13
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.firstRunItem
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-9, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.recycleToast
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-10, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot10.onClearRunningList = slot12
-
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.removing
 	--- END OF BLOCK #0 ---
@@ -492,9 +475,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot10.recycleToast = slot12
+slot10.recycleToast = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isQueueEmpty
@@ -540,9 +523,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.destroyContent = slot12
+slot10.destroyContent = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.uContainer
 	slot4 = slot2
@@ -610,9 +593,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.initUContainer = slot12
+slot10.initUContainer = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-40, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -657,7 +640,8 @@ slot12 = function(slot0, slot1, slot2)
 	slot12 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = data
-		slot0 = slot0.targetPos
+		slot0 = slot0.removing
+
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
@@ -667,7 +651,27 @@ slot12 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 5-35, warpins: 1 ---
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-9, warpins: 2 ---
+		slot0 = data
+		slot0 = slot0.targetPos
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 10-43, warpins: 1 ---
 		slot0 = UIUtils
 		slot0 = slot0.WorldToScreenPoint
 		slot2 = data
@@ -688,7 +692,10 @@ slot12 = function(slot0, slot1, slot2)
 		slot3 = DoTweenAnimMgr
 		slot3 = slot3.AnchorPositionMove
 		slot5 = rectTransform
-		slot6 = "DropHintHideMove"
+		slot6 = LuaUIUtils
+		slot6 = slot6.TweenId
+		slot8 = ID_DROP_HINT_HIDE_MOVE
+		slot6 = slot6(slot8)
 		slot7 = slot2
 		slot8 = 0.8
 		slot9 = 0
@@ -701,14 +708,14 @@ slot12 = function(slot0, slot1, slot2)
 
 		slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11)
 
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #2
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #2 36-36, warpins: 2 ---
+		--- BLOCK #4 44-44, warpins: 2 ---
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -725,7 +732,7 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot10.renderItem = slot12
+slot10.renderItem = slot13
 
 return slot10
 --- END OF BLOCK #0 ---

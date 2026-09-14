@@ -1,13 +1,13 @@
 --- BLOCK #0 1-32, warpins: 1 ---
 slot0 = {}
 slot1 = {
+	Glide = 2,
 	Swim = 1,
 	HideMimicry = 7,
 	Fly = 6,
 	SwimMimicry = 5,
 	Climb = 4,
-	SkateBoard = 3,
-	Glide = 2
+	SkateBoard = 3
 }
 slot0.AbilityType = slot1
 slot1 = {
@@ -21,19 +21,19 @@ slot1 = {
 }
 slot0.AbilityType_NAME = slot1
 slot1 = {
+	Default = 0,
 	RootMotion = 4,
 	RootRotation = 3,
 	RootPosition = 2,
-	None = 1,
-	Default = 0
+	None = 1
 }
 slot0.AIAnimationRootMotionType = slot1
 slot1 = {
+	EaseOut = 2,
 	EaseIn = 1,
 	Linear = 0,
 	Cubic = 4,
-	EaseInOut = 3,
-	EaseOut = 2
+	EaseInOut = 3
 }
 slot0.BlendType = slot1
 slot1 = {
@@ -41,25 +41,25 @@ slot1 = {
 }
 slot0.CalcQualifiedPosQueryType = slot1
 slot1 = {
+	Let_go_env_obj = 5,
 	Call_Friends = 4,
-	Normal = 0,
-	Let_go_env_obj = 5
+	Normal = 0
 }
 slot0.CastAbilitySourceType = slot1
 slot1 = {
-	ST_Root_Follow = 5,
-	ST_Root_Recruit = 4,
-	ST_Root_Sensed = 3,
-	ST_Root_Alert = 2,
-	ST_Root_Idle = 1,
-	ST_Root_Born = 0,
-	ST_Root_Dead = 100,
-	ST_Root_HomeLand = 99,
 	ST_Root_Wait = 10,
 	ST_Root_GoHome = 9,
 	ST_Root_Combat = 8,
 	ST_Root_Afk = 7,
-	ST_Root_Guide = 6
+	ST_Root_Alert = 2,
+	ST_Root_Idle = 1,
+	ST_Root_Born = 0,
+	ST_Root_Recruit = 4,
+	ST_Root_Follow = 5,
+	ST_Root_Guide = 6,
+	ST_Root_Sensed = 3,
+	ST_Root_Dead = 100,
+	ST_Root_HomeLand = 99
 }
 slot0.EBTRootState = slot1
 slot1 = {
@@ -79,33 +79,33 @@ slot1 = {
 }
 slot0.EBTRootState_NAME = slot1
 slot1 = {
+	BT_RUNNING = 3,
 	BT_FAILURE = 2,
 	BT_SUCCESS = 1,
-	BT_INVALID = 0,
-	BT_RUNNING = 3
+	BT_INVALID = 0
 }
 slot0.EBTStatus = slot1
 slot1 = {
-	Once = 99999,
 	Normal = 10,
+	Once = 99999,
 	Slow = 20,
 	Fast = 2,
 	VeryFast = 0
 }
 slot0.MoveUpdateLevel = slot1
 slot1 = {
+	Navmesh = 1,
+	Auto = 0,
 	Voxel = 5,
 	Physics = 4,
 	ForceMove = 3,
-	AirNav = 2,
-	Navmesh = 1,
-	Auto = 0
+	AirNav = 2
 }
 slot0.PathFindType = slot1
 slot1 = {
-	Catch = 0,
 	Invade = 2,
-	Peace = 1
+	Peace = 1,
+	Catch = 0
 }
 slot0.PetActionMode = slot1
 slot1 = {
@@ -113,9 +113,9 @@ slot1 = {
 	Point6 = 5,
 	Point5 = 4,
 	Point4 = 3,
-	Point1 = 0,
 	Point3 = 2,
 	Point2 = 1,
+	Point1 = 0,
 	AICustomPoint3 = 12,
 	AICustomPoint2 = 11,
 	AICustomPoint1 = 10,
@@ -124,10 +124,10 @@ slot1 = {
 }
 slot0.RootMotionSyncPointEnum = slot1
 slot1 = {
-	Burst = 3,
-	Mid = 1,
 	Slow = 0,
-	Fast = 2
+	Mid = 1,
+	Fast = 2,
+	Burst = 3
 }
 slot0.SpeedRateType = slot1
 slot1 = {

@@ -406,10 +406,58 @@ slot16 = function(slot0, slot1)
 		--- BLOCK #1 6-6, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #30
+		UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-		--- BLOCK #2 7-34, warpins: 1 ---
+		--- BLOCK #2 7-10, warpins: 1 ---
+		slot1 = info
+		slot1 = slot1.style
+		--- END OF BLOCK #2 ---
+
+		if slot1 == 3 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 11-18, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot3 = slot1
+		slot1 = slot1.runPlatformByMobile
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #3 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 19-32, warpins: 1 ---
+		slot1 = slot0.transform
+		slot1 = slot1.localScale
+		slot2 = slot0.transform
+		slot3 = CS
+		slot3 = slot3.UnityEngine
+		slot3 = slot3.Vector3
+		slot5 = slot1.x
+		slot5 = slot5 * 0.7
+		slot6 = slot1.y
+		slot6 = slot6 * 0.7
+		slot7 = slot1.z
+		slot7 = slot7 * 0.7
+		slot3 = slot3(slot5, slot6, slot7)
+		slot2.localScale = slot3
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 33-60, warpins: 3 ---
 		slot1 = ClientTextUtils
 		slot1 = slot1.setText
 		slot3 = slot0.transform
@@ -421,8 +469,8 @@ slot16 = function(slot0, slot1)
 		slot3 = slot3.GetComponent
 		slot6 = "UBaseText"
 		slot3 = slot3(slot5, slot6)
-		slot4 = pg
-		slot4 = slot4.getGameString
+		slot4 = GmToolUtils
+		slot4 = slot4.getGmGameString
 		slot6 = info
 		slot6 = slot6.label
 		MULTRES = slot4(slot6)
@@ -438,28 +486,28 @@ slot16 = function(slot0, slot1)
 		slot1.replicaSelf = slot2
 		slot2 = info
 		slot2 = slot2.style
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
 		if slot2 == 1 then
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #6
 		else
-		JUMP TO BLOCK #14
+		JUMP TO BLOCK #17
 		end
 
 
-		--- BLOCK #3 35-38, warpins: 1 ---
+		--- BLOCK #6 61-64, warpins: 1 ---
 		slot2 = info
 		slot2 = slot2.subStyle
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #6 ---
 
 		if slot2 == 0 then
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #7
 		else
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #4 39-56, warpins: 1 ---
+		--- BLOCK #7 65-82, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetChild
 		slot5 = "BtnSwitch"
@@ -476,31 +524,31 @@ slot16 = function(slot0, slot1)
 		slot8 = slot8.checkFunc
 		slot7 = slot7[slot8]
 		slot7 = slot7()
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #7 ---
 
 		slot7 = if slot7 then
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #8
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #5 57-58, warpins: 1 ---
+		--- BLOCK #8 83-84, warpins: 1 ---
 		slot7 = 0
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #8 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #7
+		UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-		--- BLOCK #6 59-59, warpins: 1 ---
+		--- BLOCK #9 85-85, warpins: 1 ---
 		slot7 = 1
 
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #9 ---
 
-		FLOW; TARGET BLOCK #7
+		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #7 60-63, warpins: 2 ---
+		--- BLOCK #10 86-89, warpins: 2 ---
 		slot3(slot5, slot6, slot7)
 
 		slot3 = function()
@@ -567,50 +615,50 @@ slot16 = function(slot0, slot1)
 		end
 
 		slot2.luaClick = slot3
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #10 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #25
+		UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-		--- BLOCK #8 64-67, warpins: 1 ---
+		--- BLOCK #11 90-93, warpins: 1 ---
 		slot2 = info
 		slot2 = slot2.subStyle
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #11 ---
 
 		if slot2 == 1 then
-		JUMP TO BLOCK #9
-		else
 		JUMP TO BLOCK #12
+		else
+		JUMP TO BLOCK #15
 		end
 
 
-		--- BLOCK #9 68-73, warpins: 1 ---
+		--- BLOCK #12 94-99, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetChild
 		slot5 = "SelectorSort"
 		slot2 = slot2(slot4, slot5)
-		--- END OF BLOCK #9 ---
+		--- END OF BLOCK #12 ---
 
 		slot2 = if slot2 then
-		JUMP TO BLOCK #10
+		JUMP TO BLOCK #13
 		else
-		JUMP TO BLOCK #25
+		JUMP TO BLOCK #28
 		end
 
 
-		--- BLOCK #10 74-77, warpins: 1 ---
+		--- BLOCK #13 100-103, warpins: 1 ---
 		slot3 = info
 		slot3 = slot3.dataFunc
-		--- END OF BLOCK #10 ---
+		--- END OF BLOCK #13 ---
 
 		slot3 = if slot3 then
-		JUMP TO BLOCK #11
+		JUMP TO BLOCK #14
 		else
-		JUMP TO BLOCK #25
+		JUMP TO BLOCK #28
 		end
 
 
-		--- BLOCK #11 78-96, warpins: 1 ---
+		--- BLOCK #14 104-122, warpins: 1 ---
 		slot5 = slot2
 		slot3 = slot2.GetComponent
 		slot6 = "USelector"
@@ -691,24 +739,24 @@ slot16 = function(slot0, slot1)
 		end
 
 		slot3.luaOptionClick = slot4
-		--- END OF BLOCK #11 ---
+		--- END OF BLOCK #14 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #25
+		UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-		--- BLOCK #12 97-100, warpins: 1 ---
+		--- BLOCK #15 123-126, warpins: 1 ---
 		slot2 = info
 		slot2 = slot2.subStyle
-		--- END OF BLOCK #12 ---
+		--- END OF BLOCK #15 ---
 
 		if slot2 == 2 then
-		JUMP TO BLOCK #13
+		JUMP TO BLOCK #16
 		else
-		JUMP TO BLOCK #25
+		JUMP TO BLOCK #28
 		end
 
 
-		--- BLOCK #13 101-111, warpins: 1 ---
+		--- BLOCK #16 127-137, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetChild
 		slot5 = "BtnConfirm"
@@ -755,36 +803,36 @@ slot16 = function(slot0, slot1)
 		end
 
 		slot2.luaClick = slot3
-		--- END OF BLOCK #13 ---
+		--- END OF BLOCK #16 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #25
+		UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-		--- BLOCK #14 112-115, warpins: 1 ---
+		--- BLOCK #17 138-141, warpins: 1 ---
 		slot2 = info
 		slot2 = slot2.style
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #17 ---
 
 		if slot2 == 2 then
-		JUMP TO BLOCK #15
+		JUMP TO BLOCK #18
 		else
-		JUMP TO BLOCK #21
+		JUMP TO BLOCK #24
 		end
 
 
-		--- BLOCK #15 116-119, warpins: 1 ---
+		--- BLOCK #18 142-145, warpins: 1 ---
 		slot2 = info
 		slot2 = slot2.subStyle
-		--- END OF BLOCK #15 ---
+		--- END OF BLOCK #18 ---
 
 		if slot2 == 0 then
-		JUMP TO BLOCK #16
+		JUMP TO BLOCK #19
 		else
-		JUMP TO BLOCK #25
+		JUMP TO BLOCK #28
 		end
 
 
-		--- BLOCK #16 120-137, warpins: 1 ---
+		--- BLOCK #19 146-163, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetChild
 		slot5 = "InputField"
@@ -801,24 +849,24 @@ slot16 = function(slot0, slot1)
 		slot5 = slot5(slot7, slot8)
 		slot6 = info
 		slot6 = slot6.tips
-		--- END OF BLOCK #16 ---
+		--- END OF BLOCK #19 ---
 
 		slot6 = if not slot6 then
-		JUMP TO BLOCK #17
+		JUMP TO BLOCK #20
 		else
-		JUMP TO BLOCK #18
+		JUMP TO BLOCK #21
 		end
 
 
-		--- BLOCK #17 138-138, warpins: 1 ---
+		--- BLOCK #20 164-164, warpins: 1 ---
 		slot6 = ""
 
-		--- END OF BLOCK #17 ---
+		--- END OF BLOCK #20 ---
 
-		FLOW; TARGET BLOCK #18
+		FLOW; TARGET BLOCK #21
 
 
-		--- BLOCK #18 139-146, warpins: 2 ---
+		--- BLOCK #21 165-172, warpins: 2 ---
 		slot3(slot5, slot6)
 
 		slot3 = ClientTextUtils
@@ -826,24 +874,24 @@ slot16 = function(slot0, slot1)
 		slot5 = slot2
 		slot6 = info
 		slot6 = slot6.defaultValue
-		--- END OF BLOCK #18 ---
+		--- END OF BLOCK #21 ---
 
 		slot6 = if not slot6 then
-		JUMP TO BLOCK #19
+		JUMP TO BLOCK #22
 		else
-		JUMP TO BLOCK #20
+		JUMP TO BLOCK #23
 		end
 
 
-		--- BLOCK #19 147-147, warpins: 1 ---
+		--- BLOCK #22 173-173, warpins: 1 ---
 		slot6 = ""
 
-		--- END OF BLOCK #19 ---
+		--- END OF BLOCK #22 ---
 
-		FLOW; TARGET BLOCK #20
+		FLOW; TARGET BLOCK #23
 
 
-		--- BLOCK #20 148-159, warpins: 2 ---
+		--- BLOCK #23 174-185, warpins: 2 ---
 		slot3(slot5, slot6)
 
 		slot5 = slot1
@@ -923,24 +971,24 @@ slot16 = function(slot0, slot1)
 		end
 
 		slot3.luaClick = slot4
-		--- END OF BLOCK #20 ---
+		--- END OF BLOCK #23 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #25
+		UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-		--- BLOCK #21 160-163, warpins: 1 ---
+		--- BLOCK #24 186-189, warpins: 1 ---
 		slot2 = info
 		slot2 = slot2.style
-		--- END OF BLOCK #21 ---
+		--- END OF BLOCK #24 ---
 
 		if slot2 == 3 then
-		JUMP TO BLOCK #22
-		else
 		JUMP TO BLOCK #25
+		else
+		JUMP TO BLOCK #28
 		end
 
 
-		--- BLOCK #22 164-187, warpins: 1 ---
+		--- BLOCK #25 190-213, warpins: 1 ---
 		slot4 = slot1
 		slot2 = slot1.GetChild
 		slot5 = "List"
@@ -1543,7 +1591,7 @@ slot16 = function(slot0, slot1)
 			slot4 = slot4(slot6, slot7)
 
 			slot5 = function()
-				--- BLOCK #0 1-14, warpins: 1 ---
+				--- BLOCK #0 1-17, warpins: 1 ---
 				slot0 = UIUtils
 				slot0 = slot0.ClipboardWriter
 				slot2 = input
@@ -1557,9 +1605,12 @@ slot16 = function(slot0, slot1)
 				slot0 = slot0.tips
 				slot2 = slot0
 				slot0 = slot0.showTextTip
-				slot3 = "复制成功"
+				slot3 = GmToolUtils
+				slot3 = slot3.getGmGameString
+				slot5 = "GM_TOAST_COPY_SUCCESS"
+				MULTRES = slot3(slot5)
 
-				slot0(slot2, slot3)
+				slot0(slot2, MULTRES)
 
 				return
 				--- END OF BLOCK #0 ---
@@ -1837,33 +1888,36 @@ slot16 = function(slot0, slot1)
 		slot3.luaClick = slot4
 		slot4 = info
 		slot4 = slot4.buttonText
-		--- END OF BLOCK #22 ---
+		--- END OF BLOCK #25 ---
 
 		slot4 = if slot4 then
-		JUMP TO BLOCK #23
+		JUMP TO BLOCK #26
 		else
-		JUMP TO BLOCK #24
+		JUMP TO BLOCK #27
 		end
 
 
-		--- BLOCK #23 188-196, warpins: 1 ---
+		--- BLOCK #26 214-225, warpins: 1 ---
 		slot4 = ClientTextUtils
 		slot4 = slot4.setText
 		slot8 = slot3
 		slot6 = slot3.GetChild
 		slot9 = "TxtName"
 		slot6 = slot6(slot8, slot9)
-		slot7 = info
-		slot7 = slot7.buttonText
+		slot7 = GmToolUtils
+		slot7 = slot7.getGmGameString
+		slot9 = info
+		slot9 = slot9.buttonText
+		MULTRES = slot7(slot9)
 
-		slot4(slot6, slot7)
+		slot4(slot6, MULTRES)
 
-		--- END OF BLOCK #23 ---
+		--- END OF BLOCK #26 ---
 
-		FLOW; TARGET BLOCK #24
+		FLOW; TARGET BLOCK #27
 
 
-		--- BLOCK #24 197-203, warpins: 2 ---
+		--- BLOCK #27 226-232, warpins: 2 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4.refreshMultiListInfo
@@ -1872,12 +1926,12 @@ slot16 = function(slot0, slot1)
 
 		slot4(slot6, slot7, slot8)
 
-		--- END OF BLOCK #24 ---
+		--- END OF BLOCK #27 ---
 
-		FLOW; TARGET BLOCK #25
+		FLOW; TARGET BLOCK #28
 
 
-		--- BLOCK #25 204-211, warpins: 10 ---
+		--- BLOCK #28 233-240, warpins: 10 ---
 		slot2 = function()
 			--- BLOCK #0 1-13, warpins: 1 ---
 			slot0 = self
@@ -2054,16 +2108,16 @@ slot16 = function(slot0, slot1)
 		slot1.luaEndDrag = slot2
 		slot2 = info
 		slot2 = slot2.label
-		--- END OF BLOCK #25 ---
+		--- END OF BLOCK #28 ---
 
 		if slot2 == "GM_LANGUAGE_REPLACE" then
-		JUMP TO BLOCK #26
+		JUMP TO BLOCK #29
 		else
-		JUMP TO BLOCK #27
+		JUMP TO BLOCK #30
 		end
 
 
-		--- BLOCK #26 212-233, warpins: 1 ---
+		--- BLOCK #29 241-262, warpins: 1 ---
 		slot2 = self
 		slot3 = slot0.transform
 		slot2.languageReplaceTransform = slot3
@@ -2519,45 +2573,49 @@ slot16 = function(slot0, slot1)
 		end
 
 		slot3.luaClick = slot4
-		--- END OF BLOCK #26 ---
+		--- END OF BLOCK #29 ---
 
-		FLOW; TARGET BLOCK #27
+		FLOW; TARGET BLOCK #30
 
 
-		--- BLOCK #27 234-237, warpins: 2 ---
+		--- BLOCK #30 263-270, warpins: 2 ---
 		slot2 = info
 		slot2 = slot2.label
-		--- END OF BLOCK #27 ---
+		slot3 = GmToolUtils
+		slot3 = slot3.getGmGameString
+		slot5 = "GM_EMPTY_FUNC"
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #30 ---
 
-		if slot2 == "景深调节" then
-		JUMP TO BLOCK #28
+		if slot2 == slot3 then
+		JUMP TO BLOCK #31
 		else
-		JUMP TO BLOCK #29
+		JUMP TO BLOCK #32
 		end
 
 
-		--- BLOCK #28 238-242, warpins: 1 ---
+		--- BLOCK #31 271-275, warpins: 1 ---
 		slot2 = self
 		slot2.dofObj = slot0
 		slot2 = self
 		slot3 = info
 		slot2.dofInfo = slot3
 
-		--- END OF BLOCK #28 ---
+		--- END OF BLOCK #31 ---
 
-		FLOW; TARGET BLOCK #29
+		FLOW; TARGET BLOCK #32
 
 
-		--- BLOCK #29 243-244, warpins: 2 ---
+		--- BLOCK #32 276-277, warpins: 2 ---
 		return
-		--- END OF BLOCK #29 ---
+		--- END OF BLOCK #32 ---
 
-		FLOW; TARGET BLOCK #30
+		FLOW; TARGET BLOCK #33
 
 
-		--- BLOCK #30 245-245, warpins: 2 ---
+		--- BLOCK #33 278-278, warpins: 2 ---
 		return
-		--- END OF BLOCK #30 ---
+		--- END OF BLOCK #33 ---
 
 
 
@@ -2592,16 +2650,19 @@ slot16 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #1 6-22, warpins: 1 ---
+	--- BLOCK #1 6-25, warpins: 1 ---
 	slot9 = {}
-	slot10 = pg
-	slot10 = slot10.getGameString
+	slot10 = GmToolUtils
+	slot10 = slot10.getGmGameString
 	slot12 = slot8.label
 	slot10 = slot10(slot12)
 	slot9.label = slot10
 	slot10 = slot8.style
 	slot9.tIndex = slot10
-	slot10 = slot8.tips
+	slot10 = GmToolUtils
+	slot10 = slot10.getGmGameString
+	slot12 = slot8.tips
+	slot10 = slot10(slot12)
 	slot9.tips = slot10
 	slot10 = slot8.func
 	slot9.func = slot10
@@ -2617,7 +2678,7 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 23-28, warpins: 1 ---
+	--- BLOCK #2 26-31, warpins: 1 ---
 	slot10 = GmToolUtils
 	slot10 = slot10.getDefaultValue
 	slot12 = slot8
@@ -2631,7 +2692,7 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 29-30, warpins: 1 ---
+	--- BLOCK #3 32-33, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot10 ~= "" then
@@ -2641,14 +2702,14 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 31-31, warpins: 1 ---
+	--- BLOCK #4 34-34, warpins: 1 ---
 	slot9.defaultValue = slot10
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 32-34, warpins: 4 ---
+	--- BLOCK #5 35-37, warpins: 4 ---
 	slot10 = slot8.style
 	--- END OF BLOCK #5 ---
 
@@ -2659,7 +2720,7 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 35-40, warpins: 1 ---
+	--- BLOCK #6 38-43, warpins: 1 ---
 	slot10 = slot8.dataFunc
 	slot11 = GmToolUtils
 	slot11 = slot11[slot10]
@@ -2670,7 +2731,7 @@ slot16 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #7 41-43, warpins: 1 ---
+	--- BLOCK #7 44-46, warpins: 1 ---
 	slot10 = slot8.style
 	--- END OF BLOCK #7 ---
 
@@ -2681,7 +2742,7 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 44-49, warpins: 1 ---
+	--- BLOCK #8 47-52, warpins: 1 ---
 	slot10 = slot8.checkFunc
 	slot11 = GmToolUtils
 	slot11 = slot11[slot10]
@@ -2692,7 +2753,7 @@ slot16 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #9 50-52, warpins: 1 ---
+	--- BLOCK #9 53-55, warpins: 1 ---
 	slot10 = slot8.style
 	--- END OF BLOCK #9 ---
 
@@ -2703,7 +2764,7 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 53-61, warpins: 1 ---
+	--- BLOCK #10 56-64, warpins: 1 ---
 	slot10 = slot8.minValue
 	slot9.minValue = slot10
 	slot10 = slot8.maxValue
@@ -2720,14 +2781,14 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #11 62-62, warpins: 1 ---
+	--- BLOCK #11 65-65, warpins: 1 ---
 	slot10 = 0.1
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 63-68, warpins: 2 ---
+	--- BLOCK #12 66-71, warpins: 2 ---
 	slot9.step = slot10
 	slot10 = slot8.funcParam
 	slot9.funcParam = slot10
@@ -2741,7 +2802,7 @@ slot16 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 69-74, warpins: 1 ---
+	--- BLOCK #13 72-77, warpins: 1 ---
 	slot10 = GmToolUtils
 	slot11 = slot8.getValueFunc
 	slot10 = slot10[slot11]
@@ -2753,7 +2814,7 @@ slot16 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 75-77, warpins: 5 ---
+	--- BLOCK #14 78-80, warpins: 5 ---
 	slot10 = #slot3
 	slot10 = slot10 + 1
 	slot3[slot10] = slot9
@@ -2762,7 +2823,7 @@ slot16 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 78-79, warpins: 2 ---
+	--- BLOCK #15 81-82, warpins: 2 ---
 	--- END OF BLOCK #15 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -2770,7 +2831,7 @@ slot16 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 80-84, warpins: 1 ---
+	--- BLOCK #16 83-87, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.SetList
 	slot7 = slot3

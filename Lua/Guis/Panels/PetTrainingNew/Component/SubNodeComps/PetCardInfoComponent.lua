@@ -1,4 +1,4 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-77, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -36,20 +36,26 @@ slot11 = require
 slot13 = "Utils.PetManagementUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_data"
+slot14 = "Utils.PetRenameValidator"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_config_data"
+slot15 = "Data.pet_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.pet_level_data"
+slot16 = "Data.pet_config_data"
 slot14 = slot14(slot16)
-slot15 = math
-slot15 = slot15.floor
-slot16 = string
-slot16 = slot16.format
+slot15 = require
+slot17 = "Data.pet_level_data"
+slot15 = slot15(slot17)
+slot16 = require
+slot18 = "Common.NoticeDef"
+slot16 = slot16(slot18)
+slot17 = math
+slot17 = slot17.floor
+slot18 = string
+slot18 = slot18.format
 
-slot17 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -153,7 +159,7 @@ slot17 = function(slot0, slot1, slot2)
 	slot4 = slot0.listTagUList
 
 	slot5 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-19, warpins: 1 ---
+		--- BLOCK #0 1-25, warpins: 1 ---
 		slot3 = LuaUIUtils
 		slot3 = slot3.renderPetTagList
 		slot5 = slot0
@@ -172,7 +178,13 @@ slot17 = function(slot0, slot1, slot2)
 		slot9 = self
 		slot9 = slot9.petInfo
 		slot9 = slot9.label
-		MULTRES = slot6(slot8, slot9)
+		slot10 = self
+		slot10 = slot10.petInfo
+		slot10 = slot10.bodySizeType
+		slot11 = self
+		slot11 = slot11.petInfo
+		slot11 = slot11.shinyStyle
+		MULTRES = slot6(slot8, slot9, slot10, slot11)
 
 		slot3(slot5, MULTRES)
 
@@ -321,9 +333,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot4.ctor = slot17
+slot4.ctor = slot19
 
-slot17 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot3 = slot1.id
 	slot0.petId = slot3
@@ -621,9 +633,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot4.renderPetInfoCard = slot17
+slot4.renderPetInfoCard = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PetManagementUtils
 	slot2 = slot2.refreshFavoriteBtn
@@ -639,9 +651,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot4.resetFavouriteBtnState = slot17
+slot4.resetFavouriteBtnState = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -721,9 +733,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot4.refreshLevelInfo = slot17
+slot4.refreshLevelInfo = slot19
 
-slot17 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = ""
 	--- END OF BLOCK #0 ---
@@ -792,9 +804,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot4.refreshPetName = slot17
+slot4.refreshPetName = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petId
 
@@ -830,9 +842,9 @@ slot17 = function(slot0)
 
 end
 
-slot4.onClickFavoriteBtn = slot17
+slot4.onClickFavoriteBtn = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petId
 	--- END OF BLOCK #0 ---
@@ -847,10 +859,37 @@ slot17 = function(slot0)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 5-33, warpins: 1 ---
+	--- BLOCK #2 5-9, warpins: 1 ---
+	slot1 = PetRenameValidator
+	slot1 = slot1.canRenamePet
+	slot1 = slot1()
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-16, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showBubbleMessage
+	slot3 = NoticeDef
+	slot3 = slot3.FORBID_CHANGE_PET_NAME
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 17-45, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getGameString
 	slot3 = "RENAME_TIPS_PET"
@@ -929,44 +968,51 @@ slot17 = function(slot0)
 	slot10 = {
 		characterLimit = 14
 	}
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	slot11 = if not slot3 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 34-34, warpins: 1 ---
+	--- BLOCK #5 46-46, warpins: 1 ---
 	slot11 = ""
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 35-38, warpins: 2 ---
+	--- BLOCK #6 47-50, warpins: 2 ---
 	slot10.text = slot11
 
 	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 39-39, warpins: 2 ---
+	--- BLOCK #7 51-51, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 52-52, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot4.showRename = slot17
+slot4.showRename = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_refreshStarUpContainer
@@ -983,9 +1029,9 @@ slot17 = function(slot0)
 
 end
 
-slot4.refreshStarUpContainer = slot17
+slot4.refreshStarUpContainer = slot19
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot19 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1172,9 +1218,9 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.m_refreshStarUpContainer = slot17
+slot4.m_refreshStarUpContainer = slot19
 
-slot17 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petId
 
@@ -1275,7 +1321,7 @@ slot17 = function(slot0)
 
 end
 
-slot4.onPetLvUpClick = slot17
+slot4.onPetLvUpClick = slot19
 
 return slot4
 --- END OF BLOCK #0 ---

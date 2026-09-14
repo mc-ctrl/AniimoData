@@ -1,64 +1,111 @@
---- BLOCK #0 1-143, warpins: 1 ---
+--- BLOCK #0 1-151, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Utils.ClientUtils"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.SceneUtils"
+slot4 = "Utils.ClientUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.MessageName"
+slot5 = "Common.Utils.SceneUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.level_item_config_data"
+slot6 = "Const.MessageName"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.ClientConst"
+slot7 = "Data.level_item_config_data"
 slot5 = slot5(slot7)
-slot5 = slot5.ShareDataType
 slot6 = require
-slot8 = "Core.Timer.TimerManager"
+slot8 = "Const.ClientConst"
 slot6 = slot6(slot8)
+slot6 = slot6.ShareDataType
 slot7 = require
-slot9 = "Utils.ShareMem"
+slot9 = "Core.Timer.TimerManager"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Core.Log.LoggerManager"
+slot10 = "Utils.ShareMem"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Core.Log.LoggerConst"
+slot11 = "Core.Log.LoggerManager"
 slot9 = slot9(slot11)
-slot10 = slot8.getLogger
-slot12 = "LevelItem"
-slot13 = "Sandbox"
-slot14 = slot9.ERROR
-slot10 = slot10(slot12, slot13, slot14)
-slot11 = require
-slot13 = "Common.Const.TriggerConst"
-slot11 = slot11(slot13)
+slot10 = require
+slot12 = "Core.Log.LoggerConst"
+slot10 = slot10(slot12)
+slot11 = slot9.getLogger
+slot13 = "LevelItem"
+slot14 = "Sandbox"
+slot15 = slot10.ERROR
+slot11 = slot11(slot13, slot14, slot15)
 slot12 = require
-slot14 = "Common.Const.SandboxConst"
+slot14 = "Common.Const.TriggerConst"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.ClientLevelUtils"
+slot15 = "Common.Const.SandboxConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.Const"
+slot16 = "Utils.ClientLevelUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Data.level_item_prefab_data"
+slot17 = "Common.Const.Const"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "GameApp.SandBox.SandBoxConfig"
+slot18 = "Common.Data.level_item_prefab_data"
 slot16 = slot16(slot18)
-slot17 = slot0.LightClass
-slot19 = "LevelItem"
+slot17 = require
+slot19 = "GameApp.Sandbox.SandBoxConfig"
 slot17 = slot17(slot19)
+slot18 = slot1.LightClass
+slot20 = "LevelItem"
+slot18 = slot18(slot20)
+slot19 = rawget
+slot20 = setmetatable
+slot21 = {}
 
-slot18 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-34, warpins: 1 ---
+slot22 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = rawget
+	slot4 = slot0
+	slot5 = 1
+	slot2 = slot2(slot4, slot5)
+	slot2 = slot2[slot1]
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-14, warpins: 2 ---
+	slot3 = rawget
+	slot5 = slot0
+	slot6 = 2
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot3[slot1]
+
+	return slot3
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot21.__index = slot22
+
+slot22 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot4 = {}
 	slot0._timerIds = slot4
 	slot4 = slot2.id
@@ -72,84 +119,199 @@ slot18 = function(slot0, slot1, slot2, slot3)
 	slot0.editorName = slot4
 	slot4 = SandBoxConfig
 	slot4 = slot4.convertToLuaTable
-	slot6 = slot2.customInfo
-	slot4 = slot4(slot6)
-	slot0.customInfo = slot4
-	slot4 = SandBoxConfig
-	slot4 = slot4.convertToLuaTable
 	slot6 = slot2.componentsInfo
 	slot4 = slot4(slot6)
 	slot0.componentsInfo = slot4
 	slot4 = logger
 	slot0.logger = slot4
 	slot0.syncInfo = slot3
-	slot4 = {}
-	slot0._interactionCache = slot4
-	slot4 = {}
-	slot0._interactSBs = slot4
-	slot4 = {}
-	slot0.subComps = slot4
-	slot4 = pairs
-	slot6 = slot0.componentsInfo
-	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #1 35-37, warpins: 1 ---
-	slot9 = slot8.subCompType
+	--- BLOCK #1 22-24, warpins: 1 ---
+	slot4 = slot3.ecsSyncObject
 	--- END OF BLOCK #1 ---
 
-	slot9 = if slot9 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 38-42, warpins: 1 ---
-	slot11 = slot0
-	slot9 = slot0.addSubComp
-	slot12 = slot7
-	slot13 = slot8
+	--- BLOCK #2 25-31, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.ecs
+	slot6 = slot4
+	slot4 = slot4.registerSyncObject
+	slot7 = slot3.ecsSyncObject
 
-	slot9(slot11, slot12, slot13)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 43-44, warpins: 3 ---
+	--- BLOCK #3 32-42, warpins: 3 ---
+	slot4 = {}
+	slot0._interactionCache = slot4
+	slot4 = {}
+	slot0._interactSBs = slot4
+	slot4 = {}
+	slot0.subComps = slot4
+	slot4 = level_item_prefab_data
+	slot5 = slot0.configId
+	slot4 = slot4[slot5]
 	--- END OF BLOCK #3 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 45-51, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.onInit
+	--- BLOCK #4 43-43, warpins: 1 ---
+	slot4 = EMPTY_TABLE
+	--- END OF BLOCK #4 ---
 
-	slot4(slot6)
+	FLOW; TARGET BLOCK #5
 
-	slot6 = slot0
-	slot4 = slot0.initShareMem
 
-	slot4(slot6)
+	--- BLOCK #5 44-46, warpins: 2 ---
+	slot5 = slot0.componentsInfo
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 47-47, warpins: 1 ---
+	slot5 = EMPTY_TABLE
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 48-51, warpins: 2 ---
+	slot6 = pairs
+	slot8 = slot4
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #8 52-54, warpins: 1 ---
+	slot11 = slot10.subCompType
+	--- END OF BLOCK #8 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #9 55-58, warpins: 1 ---
+	slot11 = slot10
+	slot12 = slot5[slot9]
+	--- END OF BLOCK #9 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 59-61, warpins: 1 ---
+	slot13 = slot12.subCompType
+	--- END OF BLOCK #10 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 62-63, warpins: 1 ---
+	--- END OF BLOCK #11 ---
+
+	if slot12 ~= slot10 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 64-70, warpins: 1 ---
+	slot13 = setmetatable
+	slot15 = {}
+	slot15[1] = slot12
+	slot15[2] = slot10
+	slot16 = subCompInfoMeta
+	slot13 = slot13(slot15, slot16)
+	slot11 = slot13
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 71-75, warpins: 4 ---
+	slot15 = slot0
+	slot13 = slot0.addSubComp
+	slot16 = slot9
+	slot17 = slot11
+
+	slot13(slot15, slot16, slot17)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 76-77, warpins: 3 ---
+	--- END OF BLOCK #14 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 78-84, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.onInit
+
+	slot6(slot8)
+
+	slot8 = slot0
+	slot6 = slot0.initShareMem
+
+	slot6(slot8)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot17.ctor = slot18
+slot18.ctor = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -158,9 +320,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onInit = slot18
+slot18.onInit = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0.shell = slot1
 	slot4 = slot1
@@ -186,9 +348,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.bindShell = slot18
+slot18.bindShell = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -197,9 +359,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onSandboxReady = slot18
+slot18.onSandboxReady = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = NotNil
 	slot3 = slot0.shell
@@ -211,9 +373,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.isValid = slot18
+slot18.isValid = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.configId
 	--- END OF BLOCK #0 ---
@@ -264,9 +426,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getConfigData = slot18
+slot18.getConfigData = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.syncInfo
 	slot1 = slot1.position
@@ -300,9 +462,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getPosition = slot18
+slot18.getPosition = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.syncInfo
 	slot1 = slot1.rotation
@@ -337,9 +499,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getRotation = slot18
+slot18.getRotation = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot1 = ShareMem
 	slot1 = slot1.new
@@ -400,9 +562,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.initShareMem = slot18
+slot18.initShareMem = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -411,9 +573,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.onInitShareMem = slot18
+slot18.onInitShareMem = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.majorConfig
 	--- END OF BLOCK #0 ---
@@ -502,9 +664,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.getMajorConfig = slot18
+slot18.getMajorConfig = slot22
 
-slot18 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot1
@@ -555,9 +717,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.setSyncInfo = slot18
+slot18.setSyncInfo = slot22
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4)
+slot22 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -598,9 +760,9 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot17.onValueChange = slot18
+slot18.onValueChange = slot22
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -609,9 +771,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.onLevelItemValueChange = slot18
+slot18.onLevelItemValueChange = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.sandbox
 	slot4 = slot2
@@ -628,9 +790,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.syncFieldValue = slot18
+slot18.syncFieldValue = slot22
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = {}
 	slot4[slot1] = slot2
@@ -679,9 +841,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.syncSingleFieldValue = slot18
+slot18.syncSingleFieldValue = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.sandbox
 	slot4 = slot2
@@ -698,10 +860,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.sendSandboxEvent = slot18
+slot18.sendSandboxEvent = slot22
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+slot22 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killAllTimer
 
@@ -721,8 +883,6 @@ slot18 = function(slot0)
 	slot1 = nil
 	slot0.shareMem = slot1
 	slot1 = nil
-	slot0.customInfo = slot1
-	slot1 = nil
 	slot0.componentsInfo = slot1
 	slot1 = nil
 	slot0.shell = slot1
@@ -734,9 +894,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.destroy = slot18
+slot18.destroy = slot22
 
-slot18 = function(slot0, slot1, ...)
+slot22 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.sandbox
 	--- END OF BLOCK #0 ---
@@ -788,9 +948,9 @@ slot18 = function(slot0, slot1, ...)
 
 end
 
-slot17.serverMsg = slot18
+slot18.serverMsg = slot22
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = nil
 	--- END OF BLOCK #0 ---
@@ -854,9 +1014,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.addTimer = slot18
+slot18.addTimer = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.removeTimer
@@ -875,9 +1035,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.removeTimer = slot18
+slot18.removeTimer = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0._timerIds
@@ -918,9 +1078,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.killAllTimer = slot18
+slot18.killAllTimer = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -959,9 +1119,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getInteractGlobalId = slot18
+slot18.getInteractGlobalId = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getConfigData
@@ -1105,9 +1265,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getInteractionListData = slot18
+slot18.getInteractionListData = slot22
 
-slot18 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.sandbox
 	slot5 = slot3
@@ -1122,9 +1282,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.checkPermission = slot18
+slot18.checkPermission = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1136,56 +1296,57 @@ slot18 = function(slot0, slot1)
 
 
 	--- BLOCK #1 3-6, warpins: 1 ---
-	slot2 = slot0._interactSBs
-	slot2 = slot2[slot1]
+	slot3 = slot0._interactSBs
+	slot3 = slot3[slot1]
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 7-34, warpins: 1 ---
-	slot3 = slot2.transform
-	slot3 = slot3.rotation
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.forbidPositionCheck
-	slot7 = {}
-	slot8 = Const
-	slot8 = slot8.FORBID_POSITION_REASON
-	slot8 = slot8.LEVEL_ITEM_INTERACT
-	slot7[1] = slot8
-	slot8 = slot0.id
-	slot7[2] = slot8
-	slot8 = slot2.transform
+	--- BLOCK #2 7-35, warpins: 1 ---
+	slot4 = slot3.transform
+	slot4 = slot4.rotation
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.forbidPositionCheck
+	slot8 = {}
+	slot9 = Const
+	slot9 = slot9.FORBID_POSITION_REASON
+	slot9 = slot9.LEVEL_ITEM_INTERACT
+	slot8[1] = slot9
+	slot9 = slot0.id
+	slot8[2] = slot9
+	slot9 = slot3.transform
+	slot9 = slot9.position
+	slot8[3] = slot9
+	slot9 = slot0.sandbox
+	slot9 = slot9.id
+	slot8[4] = slot9
+
+	slot5(slot7, slot8)
+
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot7 = slot5
+	slot5 = slot5.forceSetPosRot
+	slot8 = slot3.transform
 	slot8 = slot8.position
-	slot7[3] = slot8
-	slot8 = slot0.sandbox
-	slot8 = slot8.id
-	slot7[4] = slot8
+	slot9 = slot4
+	slot10 = slot2
 
-	slot4(slot6, slot7)
-
-	slot4 = pg
-	slot4 = slot4.pawn
-	slot6 = slot4
-	slot4 = slot4.forceSetPosRot
-	slot7 = slot2.transform
-	slot7 = slot7.position
-	slot8 = slot3
-
-	slot4(slot6, slot7, slot8)
+	slot5(slot7, slot8, slot9, slot10)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 35-35, warpins: 3 ---
+	--- BLOCK #3 36-36, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1193,9 +1354,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.playerFaceToInteractUnit = slot18
+slot18.playerFaceToInteractUnit = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1252,9 +1413,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.informServerInteract = slot18
+slot18.informServerInteract = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1302,9 +1463,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.registerInteractSB = slot18
+slot18.registerInteractSB = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1427,9 +1588,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.enterInteractRange = slot18
+slot18.enterInteractRange = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1535,9 +1696,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.leaveInteractRange = slot18
+slot18.leaveInteractRange = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0._interactionCache
@@ -1592,9 +1753,9 @@ slot18 = function(slot0)
 
 end
 
-slot17.clearInteractData = slot18
+slot18.clearInteractData = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1603,9 +1764,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.onInteract = slot18
+slot18.onInteract = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = true
 
@@ -1616,9 +1777,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.checkCanInteract = slot18
+slot18.checkCanInteract = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.shareMem
 	slot4 = slot2
@@ -1641,9 +1802,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.setIsActive = slot18
+slot18.setIsActive = slot22
 
-slot18 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.spawnInfo
 	slot1 = slot1.defaultValue
@@ -1677,77 +1838,54 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-16, warpins: 3 ---
+	--- BLOCK #3 10-15, warpins: 3 ---
 	slot4 = slot0
 	slot2 = slot0.getConfigData
 	slot2 = slot2(slot4)
-	slot3 = slot0.customInfo
-	slot3 = slot3.resId
+	slot3 = IS_MOBILE
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 17-19, warpins: 1 ---
-	slot3 = slot0.customInfo
-	slot3 = slot3.resId
-
-	return slot3
-
+	--- BLOCK #4 16-18, warpins: 1 ---
+	slot3 = slot2.mobileResId
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 20-22, warpins: 2 ---
-	slot3 = IS_MOBILE
-	--- END OF BLOCK #5 ---
-
 	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
 	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 23-25, warpins: 1 ---
-	slot3 = slot2.mobileResId
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 26-27, warpins: 1 ---
+	--- BLOCK #5 19-20, warpins: 1 ---
 	slot3 = slot2.mobileResId
 
 	return slot3
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #8 28-29, warpins: 3 ---
+	--- BLOCK #6 21-22, warpins: 3 ---
 	slot3 = slot2.resId
 
 	return slot3
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot17.getResId = slot18
+slot18.getResId = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = {}
 	slot3 = SceneUtils
@@ -1844,9 +1982,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.queryStaticEntInitPosRot = slot18
+slot18.queryStaticEntInitPosRot = slot22
 
-slot18 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0.sandbox
 	slot5 = slot3
@@ -1864,9 +2002,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.registerPlayerPropertyChangedCB = slot18
+slot18.registerPlayerPropertyChangedCB = slot22
 
-slot18 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.subComps
 	slot2 = slot2[slot1]
@@ -1878,9 +2016,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot17.getSubComp = slot18
+slot18.getSubComp = slot22
 
-slot18 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = ClientLevelUtils
 	slot3 = slot3.getSubCompCls
@@ -1962,9 +2100,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.addSubComp = slot18
+slot18.addSubComp = slot22
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getSubComp
@@ -2010,9 +2148,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.RPC_SC_SubCompMsg = slot18
+slot18.RPC_SC_SubCompMsg = slot22
 
-slot18 = function(slot0, slot1, slot2, ...)
+slot22 = function(slot0, slot1, slot2, ...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.sandbox
 	--- END OF BLOCK #0 ---
@@ -2066,9 +2204,9 @@ slot18 = function(slot0, slot1, slot2, ...)
 
 end
 
-slot17.subCompServerMsg = slot18
+slot18.subCompServerMsg = slot22
 
-slot18 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0.shareMem
 	slot5 = slot3
@@ -2099,9 +2237,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot17.setPosRot = slot18
+slot18.setPosRot = slot22
 
-return slot17
+return slot18
 --- END OF BLOCK #0 ---
 
 

@@ -142,7 +142,7 @@ slot12 = function(slot0)
 	slot3 = math
 	slot3 = slot3.clamp
 	slot5 = Time
-	slot5 = slot5.secondCache
+	slot5 = slot5.realSecondCache
 	slot6 = slot0.data
 	slot6 = slot6.startTime
 	slot5 = slot5 - slot6
@@ -282,34 +282,35 @@ end
 
 slot10.tryPopupItem = slot12
 
-slot12 = function(slot0)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.runList
-	slot1 = #slot1
-	slot2 = slot1
-	slot3 = 1
-	slot4 = -1
+	slot2 = slot0.runList
+	slot2 = #slot2
+	slot3 = slot2
+	slot4 = 1
+	slot5 = -1
 	--- END OF BLOCK #0 ---
 
 	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 7-13, warpins: 2 ---
-	slot6 = slot0.runList
-	slot6 = slot6[slot5]
-	slot9 = slot0
-	slot7 = slot0.recycleToast
-	slot10 = slot6
+	--- BLOCK #1 7-14, warpins: 2 ---
+	slot7 = slot0.runList
+	slot7 = slot7[slot6]
+	slot10 = slot0
+	slot8 = slot0.recycleToast
+	slot11 = slot7
+	slot12 = slot1
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #1 ---
 
-	for slot5=slot2, slot3, slot4
+	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #2
 
-	--- BLOCK #2 14-14, warpins: 1 ---
+	--- BLOCK #2 15-15, warpins: 1 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -327,44 +328,54 @@ slot12 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 4-5, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 5-10, warpins: 1 ---
+	--- BLOCK #2 6-6, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #3 7-12, warpins: 2 ---
 	slot3 = true
 	slot1.removing = slot3
 	slot3 = slot0.uContainer
 	slot3 = slot3.content
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 11-15, warpins: 1 ---
+	--- BLOCK #4 13-17, warpins: 1 ---
 	slot4 = NotNil
 	slot6 = slot3
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 16-24, warpins: 1 ---
+	--- BLOCK #5 18-26, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.CheckHasEvent
 	slot7 = CS
@@ -372,16 +383,16 @@ slot12 = function(slot0, slot1, slot2)
 	slot7 = slot7.EInvokeTime
 	slot7 = slot7.User2
 	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 25-33, warpins: 1 ---
+	--- BLOCK #6 27-35, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.InvokeCallbackWithCallback
 	slot7 = CS
@@ -407,33 +418,33 @@ slot12 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 34-37, warpins: 3 ---
+	--- BLOCK #7 36-39, warpins: 3 ---
 	slot6 = slot0
 	slot4 = slot0.destroyContent
 	slot7 = slot1
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 38-39, warpins: 2 ---
-	return
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 40-40, warpins: 2 ---
+	--- BLOCK #8 40-41, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
 
 
 
@@ -646,7 +657,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 42-46, warpins: 1 ---
+	--- BLOCK #3 42-47, warpins: 1 ---
 	slot8 = ClientTextUtils
 	slot8 = slot8.setText
 	slot10 = slot6
@@ -656,12 +667,28 @@ slot12 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 47-47, warpins: 2 ---
-	return
+	--- BLOCK #4 48-55, warpins: 1 ---
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot6
+	slot11 = pg
+	slot11 = slot11.getLocalizationText
+	slot13 = 1663226021
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 56-56, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 

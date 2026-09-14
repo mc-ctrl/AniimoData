@@ -70,7 +70,7 @@ end
 slot10.onCreate = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-40, warpins: 1 ---
+	--- BLOCK #0 1-36, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.backUButton
 
@@ -694,6 +694,32 @@ slot12 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 37-43, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.backgroundSelectorUSelector
+	slot3 = slot1
+	slot1 = slot1.SetActiveFastest
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 44-49, warpins: 1 ---
 	slot1 = AvatarUtils
 	slot1 = slot1.renderBackGroundSwitchSelector
 	slot3 = slot0.view
@@ -702,8 +728,14 @@ slot12 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 50-51, warpins: 2 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
@@ -885,13 +917,18 @@ slot12 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 23-31, warpins: 1 ---
+	--- BLOCK #3 23-34, warpins: 1 ---
 	slot4 = slot0.avatarScene
 	slot6 = slot4
 	slot4 = slot4.changeClothes
 	slot7 = slot3
 
 	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.stopAnimation
+
+	slot4(slot6)
 
 	slot6 = slot0
 	slot4 = slot0.dismiss

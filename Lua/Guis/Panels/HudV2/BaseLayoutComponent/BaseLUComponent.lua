@@ -1,4 +1,4 @@
---- BLOCK #0 1-97, warpins: 1 ---
+--- BLOCK #0 1-101, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -90,7 +90,7 @@ slot14[slot15] = slot16
 slot13.messages = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-41, warpins: 1 ---
+	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -101,6 +101,16 @@ slot14 = function(slot0)
 	slot5 = "teamPanelUContainer"
 	slot2 = slot2(slot4, slot5)
 	slot0.teamPanelUContainer = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnQuitUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnQuitUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnQuitHotKeyContent"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnQuitHotKeyContent = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "layerUBaseText"
@@ -133,6 +143,17 @@ slot14 = function(slot0)
 
 	slot2(slot4, slot5)
 
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "showAnim"
+	slot2 = slot2(slot4, slot5)
+	slot0.showAnim = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "bossRushBtnInfoUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.bossRushBtnInfoUContainer = slot2
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -143,7 +164,7 @@ end
 slot13.findObjects = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-125, warpins: 1 ---
+	--- BLOCK #0 1-142, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBaseComponentCls
 	slot4 = HudSplicingCfg
@@ -283,6 +304,26 @@ slot14 = function(slot0)
 	slot5.compName = slot6
 	slot1 = slot1(slot3, slot4, slot5)
 	slot0.towerInfo = slot1
+	slot3 = slot0
+	slot1 = slot0.getBaseComponentCls
+	slot4 = HudSplicingCfg
+	slot4 = slot4.componentName
+	slot4 = slot4.bossRushBtnInfo
+	slot1 = slot1(slot3, slot4)
+	slot1 = slot1.new
+	slot3 = slot0
+	slot4 = slot0.bossRushBtnInfoUContainer
+	slot4 = slot4.transform
+	slot5 = {
+		isAutoLoad = true,
+		isContainer = true
+	}
+	slot6 = HudSplicingCfg
+	slot6 = slot6.componentName
+	slot6 = slot6.bossRushBtnInfo
+	slot5.compName = slot6
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0.bossRushBtnInfo = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1006,21 +1047,31 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 37-50, warpins: 2 ---
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.layerUBaseText
-	slot5 = slot1.floor
-	slot6 = "/"
+	--- BLOCK #7 37-60, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "TOWER_ROGUE_FLOOR_NAME"
+	slot2 = slot2(slot4)
+	slot3 = string
+	slot3 = slot3.format
+	slot5 = "%d/%d"
+	slot6 = slot1.floor
 	slot7 = RogueUtils
 	slot7 = slot7.getCurRogueLevelTotalLayerCount
-	slot7 = slot7()
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "TOWER_ROGUE_FLOOR_NAME"
-	MULTRES = slot8(slot10)
+	MULTRES = slot7()
+	slot3 = slot3(slot5, slot6, MULTRES)
+	slot4 = string
+	slot4 = slot4.gsub
+	slot6 = slot2
+	slot7 = "{floor}"
+	slot8 = slot3
+	slot4, slot5 = slot4(slot6, slot7, slot8)
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot0.layerUBaseText
+	slot9 = slot4
 
-	slot2(slot4, slot5, slot6, slot7, MULTRES)
+	slot6(slot8, slot9)
 
 	return
 	--- END OF BLOCK #7 ---
@@ -1360,6 +1411,82 @@ slot14 = function(slot0)
 end
 
 slot13.onDestroy = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.showAnim
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.showAnim
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Show
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot13.playShowAnim = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.showAnim
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.showAnim
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Hide
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot13.playHideAnim = slot14
 
 return slot13
 --- END OF BLOCK #0 ---

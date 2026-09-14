@@ -1,4 +1,4 @@
---- BLOCK #0 1-46, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Const.ClientConst"
 slot0 = slot0(slot2)
@@ -11,18 +11,21 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Core.Common.Time"
 slot3 = slot3(slot5)
-slot4 = slot1.LightClass
-slot6 = "PlayerEnhanceScene"
-slot7 = slot2
-slot4 = slot4(slot6, slot7)
-slot5 = {
+slot4 = require
+slot6 = "Common.Const.Const"
+slot4 = slot4(slot6)
+slot5 = slot1.LightClass
+slot7 = "PlayerEnhanceScene"
+slot8 = slot2
+slot5 = slot5(slot7, slot8)
+slot6 = {
+	MAIN = 0,
 	EQUIP_EXPLORE = 2,
-	EQUIP_COMBATS = 1,
-	MAIN = 0
+	EQUIP_COMBATS = 1
 }
-slot4.SCENE_MODE = slot5
+slot5.SCENE_MODE = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-117, warpins: 1 ---
 	slot1 = slot0.scene
 	slot1 = slot1.transform
@@ -149,9 +152,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onStart = slot5
+slot5.onStart = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0.firstEnter = slot1
 	slot2 = slot0.GIRL_TIMELINE_MAP
@@ -169,36 +172,37 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.initDefaultSceneMode = slot5
+slot5.initDefaultSceneMode = slot6
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-29, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.copyMainPlayer
 	slot4 = 87728445
 	slot1 = slot1(slot3, slot4)
 	slot2 = slot1.eModel
-	slot2 = slot2.playableComponent
 	slot4 = slot2
 	slot2 = slot2.SetFacialStubEnabled
-	slot5 = false
+	slot5 = Const
+	slot5 = slot5.COMPONENT_IDX_PLAYABLE
+	slot6 = false
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
 	slot4 = slot2
-	slot2 = slot2.SetParent
+	slot2 = slot2.SetTransformParent
 	slot5 = slot0.modelRoot
 	slot6 = false
 
 	slot2(slot4, slot5, slot6)
 
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
-	slot3 = Vector3
-	slot3 = slot3.zero
-	slot2.localPosition = slot3
+	slot4 = slot2
+	slot2 = slot2.SetTransformLocalPosition
+
+	slot2(slot4)
+
 	slot4 = slot1
 	slot2 = slot1.setModelLayer
 	slot5 = ClientConst
@@ -214,9 +218,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.createPlayer = slot5
+slot5.createPlayer = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getEntity
@@ -308,9 +312,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onAllEntityLoaded = slot5
+slot5.onAllEntityLoaded = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.entityLoaded
 	--- END OF BLOCK #0 ---
@@ -348,9 +352,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.playEnterTimeline = slot5
+slot5.playEnterTimeline = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.operationTmMap
 	--- END OF BLOCK #0 ---
@@ -459,9 +463,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4._playEnterTimelineInner = slot5
+slot5._playEnterTimelineInner = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.operationTmMap
@@ -556,9 +560,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.switch2_MAIN_Mode = slot5
+slot5.switch2_MAIN_Mode = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.operationTmMap
@@ -645,9 +649,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.switch2_EQUIP_COMBATS_Mode = slot5
+slot5.switch2_EQUIP_COMBATS_Mode = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = nil
 	slot2 = slot0.operationTmMap
@@ -734,9 +738,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.switch2_EQUIP_EXPLORE_Mode = slot5
+slot5.switch2_EQUIP_EXPLORE_Mode = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot1.gameObject
 	slot5 = slot3
@@ -859,9 +863,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.playTimeLine = slot5
+slot5.playTimeLine = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = IsNil
 	slot4 = slot0.scene
@@ -900,9 +904,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.setPlayerActive = slot5
+slot5.setPlayerActive = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeEntity
@@ -924,9 +928,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.refreshModelView = slot5
+slot5.refreshModelView = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = nil
 	slot0.playerEnt = slot1
@@ -955,9 +959,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onDestroy = slot5
+slot5.onDestroy = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

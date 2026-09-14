@@ -1,4 +1,4 @@
---- BLOCK #0 1-140, warpins: 1 ---
+--- BLOCK #0 1-142, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -138,7 +138,7 @@ slot22 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 10-47, warpins: 1 ---
+	--- BLOCK #3 10-52, warpins: 1 ---
 	slot1 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot1 = self
@@ -356,6 +356,31 @@ slot22 = function(slot0)
 		slot4 = isActive
 		slot6 = TimelineConfigType
 		slot6 = slot6.DisableAuxEnvBus
+		MULTRES = slot4(slot6)
+
+		slot0(slot2, slot3, MULTRES)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2[slot3] = slot4
+	slot2 = slot0.cutsceneSettingFuncs
+	slot3 = TimelineConfigType
+	slot3 = slot3.DisableWorldAudio
+
+	slot4 = function()
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0 = SafeCallback
+		slot2 = self
+		slot2 = slot2.setAttenGroupState
+		slot3 = self
+		slot4 = isActive
+		slot6 = TimelineConfigType
+		slot6 = slot6.DisableWorldAudio
 		MULTRES = slot4(slot6)
 
 		slot0(slot2, slot3, MULTRES)
@@ -2027,26 +2052,24 @@ slot22 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot3 = IsNil
-	slot5 = slot2.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot2.eModel
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #2 6-6, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 9-38, warpins: 1 ---
+	--- BLOCK #3 7-36, warpins: 1 ---
 	slot3 = slot2.eModel
 	slot5 = slot3
 	slot3 = slot3.GetPositionAgentPosEx
@@ -2101,7 +2124,7 @@ slot22 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 39-39, warpins: 2 ---
+	--- BLOCK #4 37-37, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -2419,7 +2442,7 @@ slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #2 7-11, warpins: 1 ---
@@ -2686,7 +2709,35 @@ slot22 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 108-113, warpins: 2 ---
+	--- BLOCK #19 108-110, warpins: 2 ---
+	slot6 = slot3.disableWorldAudio
+	--- END OF BLOCK #19 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 111-119, warpins: 1 ---
+	slot6 = slot5
+	slot10 = slot0
+	slot8 = slot0.cutsceneSettingSetChange
+	slot11 = TimelineConfigType
+	slot11 = slot11.DisableWorldAudio
+	slot12 = slot1.id
+	slot13 = slot2
+	MULTRES = slot8(slot10, slot11, slot12, slot13)
+
+	slot6(MULTRES)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 120-125, warpins: 2 ---
 	slot8 = slot0
 	slot6 = slot0.applyCutsceneSetting
 	slot9 = slot4
@@ -2694,14 +2745,14 @@ slot22 = function(slot0, slot1, slot2)
 	slot6(slot8, slot9)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #20 114-114, warpins: 2 ---
+	--- BLOCK #22 126-126, warpins: 2 ---
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
 
 
@@ -3020,7 +3071,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-37, warpins: 1 ---
+	--- BLOCK #1 3-53, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -3051,7 +3102,23 @@ slot22 = function(slot0, slot1)
 	slot8 = true
 	slot6[slot7] = slot8
 	slot7 = UIConst
+	slot7 = slot7.UI_ID_DIALOGUE_SKIP
+	slot8 = true
+	slot6[slot7] = slot8
+	slot7 = UIConst
 	slot7 = slot7.UI_ID_GAMEPLAY_PROGRESS
+	slot8 = true
+	slot6[slot7] = slot8
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_NET_LOADING
+	slot8 = true
+	slot6[slot7] = slot8
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_DIALOGUE_ID
+	slot8 = true
+	slot6[slot7] = slot8
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_CONFIG_TOPPING
 	slot8 = true
 	slot6[slot7] = slot8
 
@@ -3062,7 +3129,7 @@ slot22 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 38-46, warpins: 1 ---
+	--- BLOCK #2 54-62, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -3079,7 +3146,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 47-47, warpins: 2 ---
+	--- BLOCK #3 63-63, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -3334,6 +3401,29 @@ slot22 = function(slot0, slot1)
 end
 
 slot19.disableAuxEnvBus = slot22
+
+slot22 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.setAttenGroupState
+	slot5 = AudioConst
+	slot5 = slot5.AttenGroupStateReason
+	slot5 = slot5.Cutscene
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot19.setAttenGroupState = slot22
 
 slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---

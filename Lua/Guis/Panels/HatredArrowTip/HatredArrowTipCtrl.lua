@@ -1,4 +1,4 @@
---- BLOCK #0 1-157, warpins: 1 ---
+--- BLOCK #0 1-194, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -39,6 +39,19 @@ slot12 = slot4.LightClass
 slot14 = "HatredArrowTipCtrl"
 slot15 = slot6
 slot12 = slot12(slot14, slot15)
+slot13 = {
+	VISIBLE = 1,
+	HIDDEN = 0
+}
+slot12.TRACK_DISPLAY_STATE = slot13
+slot13 = {
+	MAP_MARK = 100,
+	QUEST = 300,
+	NORMAL_TRACK = 200
+}
+slot12.TRACK_PRIORITY = slot13
+slot13 = 0.001
+slot12.SAME_TRACK_TARGET_SQR_DISTANCE = slot13
 slot13 = ToBool
 slot14 = Quaternion
 slot15 = Vector3
@@ -65,6 +78,12 @@ slot17[slot18] = slot19
 slot18 = slot0.QUEST_ON_TRACE_CHANGE
 slot19 = {
 	"onQuestTraceChange",
+	true
+}
+slot17[slot18] = slot19
+slot18 = slot0.QUEST_ON_RUN_STATE_CHANGE
+slot19 = {
+	"onQuestRunStateChange",
 	true
 }
 slot17[slot18] = slot19
@@ -131,6 +150,30 @@ slot17[slot18] = slot19
 slot18 = slot0.CUSTOM_MARK_ICON_CHANGED
 slot19 = {
 	"onCustomMarkIconChanged",
+	true
+}
+slot17[slot18] = slot19
+slot18 = slot0.NPC_DUEL_STATE_CHANGED
+slot19 = {
+	"onNpcDuelStateChanged",
+	true
+}
+slot17[slot18] = slot19
+slot18 = slot0.ON_MAP_MARK_BIND_ENTITY
+slot19 = {
+	"onMapMarkBindEntity",
+	true
+}
+slot17[slot18] = slot19
+slot18 = slot0.ON_MAP_MARK_UNBIND_ENTITY
+slot19 = {
+	"onMapMarkUnbindEntity",
+	true
+}
+slot17[slot18] = slot19
+slot18 = slot0.PLAYER_DESTROY
+slot19 = {
+	"onPlayerDestroyed",
 	true
 }
 slot17[slot18] = slot19
@@ -411,6 +454,40 @@ end
 slot12.onShow = slot17
 
 slot17 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.mapMarkTipComponent
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.mapMarkTipComponent
+	slot3 = slot1
+	slot1 = slot1.clearPlayerReferences
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.onPlayerDestroyed = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearDangerTimer
@@ -613,7 +690,36 @@ slot17 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 7-40, warpins: 2 ---
+		--- BLOCK #2 7-10, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.dangerList
+		--- END OF BLOCK #2 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 11-18, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.global
+		slot2 = slot2.resMgr
+		slot4 = slot2
+		slot2 = slot2.ResDestroyObject
+		slot5 = slot0
+
+		slot2(slot4, slot5)
+
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 19-52, warpins: 2 ---
 		slot2 = {}
 		slot2.obj = slot0
 		slot3 = slot0.transform
@@ -652,7 +758,7 @@ slot17 = function(slot0)
 		slot4(slot6, slot7)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -1497,6 +1603,196 @@ end
 
 slot12.hideDangerTip = slot17
 
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-12, warpins: 1 ---
+	slot3 = Vector3
+	slot3 = slot3.SqrDistance
+	slot5 = slot1
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	slot4 = slot0.SAME_TRACK_TARGET_SQR_DISTANCE
+	--- END OF BLOCK #2 ---
+
+	if slot3 >= slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 3 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot12.isSameTrackTarget = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.questArrowComponent
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot2 = slot0.questArrowComponent
+	slot4 = slot2
+	slot2 = slot2.isTrackDisplayActiveAt
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-13, warpins: 1 ---
+	slot2 = slot0.TRACK_PRIORITY
+	slot2 = slot2.QUEST
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-16, warpins: 3 ---
+	slot2 = slot0.normalTrack
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 17-23, warpins: 1 ---
+	slot2 = slot0.normalTrack
+	slot4 = slot2
+	slot2 = slot2.isTrackDisplayActiveAt
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-26, warpins: 1 ---
+	slot2 = slot0.TRACK_PRIORITY
+	slot2 = slot2.NORMAL_TRACK
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-29, warpins: 3 ---
+	slot2 = slot0.TRACK_PRIORITY
+	slot2 = slot2.MAP_MARK
+
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot12.resolveTrackPriority = slot17
+
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.resolveTrackPriority
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	if slot3 > slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 9-9, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-10, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot12.canShowTrack = slot17
+
 slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
@@ -2239,6 +2535,24 @@ end
 
 slot12.onQuestTraceChange = slot17
 
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = slot0.questArrowComponent
+	slot4 = slot2
+	slot2 = slot2.onQuestRunStateChange
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.onQuestRunStateChange = slot17
+
 slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.questArrowComponent
@@ -2417,6 +2731,111 @@ slot17 = function(slot0, slot1)
 end
 
 slot12.onCustomMarkIconChanged = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.mapMarkTipComponent
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot2 = slot0.mapMarkTipComponent
+	slot4 = slot2
+	slot2 = slot2.onDuelStateChanged
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.onNpcDuelStateChanged = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.mapMarkTipComponent
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot2 = slot0.mapMarkTipComponent
+	slot4 = slot2
+	slot2 = slot2.onMapMarkBindEntity
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.onMapMarkBindEntity = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.mapMarkTipComponent
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot2 = slot0.mapMarkTipComponent
+	slot4 = slot2
+	slot2 = slot2.onMapMarkUnbindEntity
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.onMapMarkUnbindEntity = slot17
 
 return slot12
 --- END OF BLOCK #0 ---

@@ -8,26 +8,26 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = true,
-	version = 5,
+	name = "PatrolTree/PatrolSubTree/ST_SwitchToFly",
 	agenttype = "CombatAgent",
-	name = "PatrolTree/PatrolSubTree/ST_SwitchToFly"
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "5",
 	type = "float",
-	const = 5,
 	name = "tFlyHeight",
-	value = "5"
+	const = 5
 }
 slot4[1] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Action"
+	class = "Action",
+	id = "1"
 }
 slot5 = {}
 slot6 = {}

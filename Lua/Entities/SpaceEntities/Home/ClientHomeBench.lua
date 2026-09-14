@@ -1,4 +1,4 @@
---- BLOCK #0 1-42, warpins: 1 ---
+--- BLOCK #0 1-44, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -137,6 +137,71 @@ slot10 = function(slot0, slot1)
 end
 
 slot8.postInit = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = ClientHomeBench
+	slot1 = slot1.super
+	slot1 = slot1.getInteractionListData
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot4 = slot0
+	slot2 = slot0.getHomelandConfigData
+	slot2 = slot2(slot4)
+	slot2 = slot2.interactDistance
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 12-13, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 14-17, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 18-18, warpins: 1 ---
+	slot7.overrideInteractDis = slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-20, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 21-21, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot8.getInteractionListData = slot10
 
 slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

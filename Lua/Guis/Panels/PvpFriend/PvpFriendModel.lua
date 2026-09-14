@@ -13,9 +13,9 @@ slot3 = require
 slot5 = "Common.Const.MatchConst"
 slot3 = slot3(slot5)
 slot4 = {
-	OUTLINE = 0,
 	BUSY = 2,
-	FREE = 1
+	FREE = 1,
+	OUTLINE = 0
 }
 slot2.PLAYER_STATE = slot4
 

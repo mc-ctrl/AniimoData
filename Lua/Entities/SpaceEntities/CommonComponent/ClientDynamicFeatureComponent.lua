@@ -1,4 +1,4 @@
---- BLOCK #0 1-49, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -169,7 +169,7 @@ slot5 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
+	--- BLOCK #1 5-12, warpins: 1 ---
 	slot8 = slot5
 	slot6 = slot5.onLeaveSpace
 
@@ -180,12 +180,14 @@ slot5 = function(slot0)
 
 	slot6(slot8)
 
+	slot6 = nil
+	slot0[slot4] = slot6
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-12, warpins: 2 ---
+	--- BLOCK #2 13-14, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -193,7 +195,7 @@ slot5 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 13-15, warpins: 1 ---
+	--- BLOCK #3 15-17, warpins: 1 ---
 	slot1 = {}
 	slot0.features = slot1
 
@@ -678,6 +680,56 @@ slot5 = function(slot0)
 end
 
 slot4.EVENT_LoseControlled = slot5
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pairs
+	slot3 = slot0.features
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot6 = slot5.EVENT_OnLifterIdChanged
+	--- END OF BLOCK #1 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.EVENT_OnLifterIdChanged
+
+	slot6(slot8)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.EVENT_OnLifterIdChanged = slot5
 
 slot5 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---

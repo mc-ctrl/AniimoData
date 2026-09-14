@@ -1,4 +1,4 @@
---- BLOCK #0 1-64, warpins: 1 ---
+--- BLOCK #0 1-70, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Camera.CameraMode.CameraMode"
 slot0 = slot0(slot2)
@@ -191,8 +191,10 @@ end
 slot4.getRotationDir = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot2 = slot1.eulerAngles
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetEulerAnglesY
+	slot2 = slot2(slot4)
 	slot3 = slot0.cameraMode
 	slot3 = slot3.cameraController
 	slot5 = slot3
@@ -200,7 +202,7 @@ slot5 = function(slot0, slot1)
 	slot6 = Quaternion
 	slot6 = slot6.Euler
 	slot8 = 45
-	slot9 = slot2.y
+	slot9 = slot2
 	slot10 = 0
 	MULTRES = slot6(slot8, slot9, slot10)
 
@@ -234,16 +236,97 @@ end
 
 slot4.setRotation = slot5
 
-slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.Clone
-	slot2 = slot2(slot4)
-	slot3 = slot0.basePosition
-	slot3 = slot3.y
-	slot2.y = slot3
-	slot3 = slot0.cameraMode
-	slot3.centerPosition = slot1
+slot5 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot2 = slot0.moveBounds
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-8, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.Clone
+
+	return slot3(slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-38, warpins: 2 ---
+	slot3 = Matrix4x4
+	slot3 = slot3.TRS
+	slot5 = slot0.basePosition
+	slot6 = slot0.baseRotation
+	slot7 = Vector3
+	slot7 = slot7.constOne
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = slot3.inverse
+	slot6 = slot4
+	slot4 = slot4.MultiplyPoint
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = math
+	slot5 = slot5.clamp
+	slot7 = slot4.x
+	slot8 = slot2[1]
+	slot9 = slot2[2]
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4.x = slot5
+	slot5 = math
+	slot5 = slot5.clamp
+	slot7 = slot4.z
+	slot8 = slot2[3]
+	slot9 = slot2[4]
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4.z = slot5
+	slot7 = slot3
+	slot5 = slot3.MultiplyPoint
+	slot8 = slot4
+
+	return slot5(slot7, slot8)
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.clampPosition = slot5
+
+slot5 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.clampPosition
+	slot6 = slot1
+	slot7 = slot2
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = slot0.basePosition
+	slot4 = slot4.y
+	slot3.y = slot4
+	slot4 = slot0.cameraMode
+	slot4.centerPosition = slot3
 
 	return
 	--- END OF BLOCK #0 ---
@@ -481,6 +564,34 @@ slot5 = function(slot0, slot1)
 end
 
 slot4.setEditorFov = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.cameraMode
+	slot2.heightOffset = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.setHeightOffset = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.cameraMode
+	slot2.groundClearance = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.setGroundClearance = slot5
 
 slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---

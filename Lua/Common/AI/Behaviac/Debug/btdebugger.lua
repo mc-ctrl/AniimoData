@@ -661,20 +661,20 @@ slot21 = function(slot0)
 end
 
 slot22 = {
-	m_seq = 0,
-	m_host = "127.0.0.1",
-	m_enable = true,
+	m_applogFilter = false,
 	_DESCRIPTION = "Online debugger for behavior tree",
 	_COPYRIGHT = "n.lee",
 	_NAME = "btdebugger",
-	m_applogFilter = false,
+	_VERSION = "1.0",
 	m_profiling = false,
 	m_texts = "",
 	m_frame = 0,
-	_VERSION = "1.0",
+	m_seq = 0,
 	m_running = false,
 	m_client = false,
-	m_server = false
+	m_server = false,
+	m_host = "127.0.0.1",
+	m_enable = true
 }
 slot23 = {}
 slot22.m_sendBuffer = slot23
@@ -683,17 +683,17 @@ slot22.m_breakpoints = slot23
 slot23 = {}
 slot22.m_actions_count = slot23
 slot23 = {
-	kProperty = "[property]",
 	kBreakpoint = "[breakpoint]",
-	kDebugTargetInfo = "[DebugTargetInfo]",
-	kWorkspace = "[workspace] lua \\\"\\\"\n",
 	kPlatform = "[platform] Windows \n",
 	kHitNumber = "Hit=",
-	kAppLogFilter = "[applogfilter]",
+	kWorkspace = "[workspace] lua \\\"\\\"\n",
 	kCloseConnection = "[closeconnection]",
-	kStart = "[start]",
+	kDebugTargetInfo = "[DebugTargetInfo]",
 	kContinue = "[continue]",
-	kProfiling = "[profiling]"
+	kAppLogFilter = "[applogfilter]",
+	kStart = "[start]",
+	kProfiling = "[profiling]",
+	kProperty = "[property]"
 }
 slot24 = {
 	CMDID_TEXT = 2,
@@ -703,18 +703,18 @@ slot25 = {
 	WINDOWS = 0
 }
 slot26 = {
-	EAR_none = 0,
-	EAR_all = 3,
 	EAR_failure = 2,
-	EAR_success = 1
+	EAR_success = 1,
+	EAR_none = 0,
+	EAR_all = 3
 }
 slot27 = {
+	ELM_breaked = 1,
+	ELM_tick = 0,
 	ELM_log = 5,
 	ELM_return = 4,
 	ELM_jump = 3,
-	ELM_continue = 2,
-	ELM_breaked = 1,
-	ELM_tick = 0
+	ELM_continue = 2
 }
 slot28 = 2048
 
@@ -2636,8 +2636,8 @@ slot22.tryDebugger = slot42
 slot42 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {
-		btname = false,
-		hit_config = 0
+		hit_config = 0,
+		btname = false
 	}
 	slot2 = constEActionResult
 	slot2 = slot2.EAR_all

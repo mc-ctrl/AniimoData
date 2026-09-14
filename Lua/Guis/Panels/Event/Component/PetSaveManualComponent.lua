@@ -1,49 +1,52 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-62, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Common.Time"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.UIConst"
+slot4 = "Core.Common.Time"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.RedDotConst"
+slot5 = "Const.UIConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientTextUtils"
+slot6 = "Const.RedDotConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.LuaUIUtils"
+slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientActivityUtils"
+slot8 = "Utils.LuaUIUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.Utils"
+slot9 = "Utils.ClientActivityUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.Const"
+slot10 = "Common.Utils.Utils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.game_event_data"
+slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.event_petsave_manual_data"
+slot12 = "Data.game_event_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.sys_config_data"
+slot13 = "Data.event_petsave_manual_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Guis.Helper.UIComponent"
+slot14 = "Data.sys_config_data"
 slot12 = slot12(slot14)
-slot13 = slot0.LightClass
-slot15 = "PetSaveManualComponent"
-slot16 = slot12
-slot13 = slot13(slot15, slot16)
+slot13 = require
+slot15 = "Guis.Helper.UIComponent"
+slot13 = slot13(slot15)
+slot14 = slot1.LightClass
+slot16 = "PetSaveManualComponent"
+slot17 = slot13
+slot14 = slot14(slot16, slot17)
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-55, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -107,9 +110,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.findObjects = slot14
+slot14.findObjects = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot1.eventId
 	slot0.eventId = slot2
@@ -145,9 +148,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onCtor = slot14
+slot14.onCtor = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addListener
@@ -166,9 +169,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.initView = slot14
+slot14.initView = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.btnViewUButton
 
@@ -313,9 +316,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.addListener = slot14
+slot14.addListener = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = GameEventData
 	slot2 = slot0.eventId
@@ -531,7 +534,7 @@ slot14 = function(slot0)
 
 
 	--- BLOCK #11 126-126, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
@@ -587,8 +590,8 @@ slot14 = function(slot0)
 	slot5 = slot5(slot7)
 	slot6 = math
 	slot6 = slot6.ceil
-	slot8 = slot5.eventEndDayTime
-	slot9 = slot5.eventStartDayTime
+	slot8 = slot5.tabEndDayTime
+	slot9 = slot5.tabStartDayTime
 	slot8 = slot8 - slot9
 	slot9 = Const
 	slot9 = slot9.SECONDS_ONE_DAY
@@ -637,9 +640,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshPage = slot14
+slot14.refreshPage = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -664,9 +667,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshNodeRedDot = slot14
+slot14.refreshNodeRedDot = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.tIndex
 
@@ -802,9 +805,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13.renderManualItem = slot14
+slot14.renderManualItem = slot15
 
-return slot13
+return slot14
 --- END OF BLOCK #0 ---
 
 

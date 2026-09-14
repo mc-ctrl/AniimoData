@@ -1,4 +1,4 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-43, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -6,31 +6,26 @@ slot0 = slot0.getLogger
 slot2 = "BossRushRewardCtrl"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Guis.UICtrl"
 slot2 = slot2(slot4)
-slot3 = require
-slot5 = "Guis.UICtrl"
-slot3 = slot3(slot5)
-slot4 = slot2.LightClass
-slot6 = "BossRushRewardCtrl"
-slot7 = slot3
-slot4 = slot4(slot6, slot7)
+slot3 = slot1.LightClass
+slot5 = "BossRushRewardCtrl"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
+slot4 = require
+slot6 = "Utils.BossRushUtils"
+slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.BossRushUtils"
+slot7 = "Utils.LuaUIUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.LuaUIUtils"
+slot8 = "Data.bossrush_reward_data"
 slot6 = slot6(slot8)
-slot7 = require
-slot9 = "Data.bossrush_reward_data"
-slot7 = slot7(slot9)
-slot8 = {}
-slot4.messages = slot8
 
-slot8 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -91,9 +86,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot8
+slot3.onCreate = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
@@ -122,9 +117,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.addListener = slot8
+slot3.addListener = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = 0
@@ -197,7 +192,7 @@ slot8 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 25-33, warpins: 2 ---
+		--- BLOCK #3 25-35, warpins: 2 ---
 		slot7 = LuaUIUtils
 		slot7 = slot7.setRewardListByDropId
 		slot9 = slot5
@@ -205,8 +200,24 @@ slot8 = function(slot0)
 		slot11 = self
 		slot11 = slot11.minShowCount
 		slot12 = slot6
+		slot13, slot14 = nil
 
-		slot7(slot9, slot10, slot11, slot12)
+		slot15 = function()
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.close
+
+			slot0(slot2)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
 
 		return
 		--- END OF BLOCK #3 ---
@@ -331,9 +342,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.initUI = slot8
+slot3.initUI = slot7
 
-slot8 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -407,9 +418,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot4.getDropId = slot8
+slot3.getDropId = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -424,9 +435,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.onDestroy = slot8
+slot3.onDestroy = slot7
 
-slot8 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -442,9 +453,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot8
+slot3.onOpen = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -453,9 +464,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.onShow = slot8
+slot3.onShow = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -464,9 +475,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.onHide = slot8
+slot3.onHide = slot7
 
-return slot4
+return slot3
 --- END OF BLOCK #0 ---
 
 

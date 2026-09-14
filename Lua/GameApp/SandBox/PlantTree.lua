@@ -1,31 +1,34 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.Sandbox.LevelItem"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "GameApp.Timeline.LuaTimeline"
+slot4 = "GameApp.Sandbox.LevelItem"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.ClientConst"
+slot5 = "GameApp.Timeline.LuaTimeline"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.Const"
+slot6 = "Const.ClientConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.SandboxConst"
+slot7 = "Common.Const.Const"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.InteractionConst"
+slot8 = "Common.Const.SandboxConst"
 slot6 = slot6(slot8)
-slot7 = slot0.LightClass
-slot9 = "PlantTree"
-slot10 = slot1
-slot7 = slot7(slot9, slot10)
+slot7 = require
+slot9 = "Common.Const.InteractionConst"
+slot7 = slot7(slot9)
+slot8 = slot1.LightClass
+slot10 = "PlantTree"
+slot11 = slot2
+slot8 = slot8(slot10, slot11)
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot4 = PlantTree
 	slot4 = slot4.super
@@ -115,9 +118,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.ctor = slot8
+slot8.ctor = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = PlantTree
 	slot1 = slot1.super
@@ -145,9 +148,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onSandboxReady = slot8
+slot8.onSandboxReady = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopTreeGrowAnim
@@ -177,9 +180,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.destroy = slot8
+slot8.destroy = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.syncFieldValue
@@ -195,9 +198,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.setTreeState = slot8
+slot8.setTreeState = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.syncInfo
 	slot1 = slot1.state
@@ -226,9 +229,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.getTreeState = slot8
+slot8.getTreeState = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.spawnInfo
 	slot1 = slot1.defaultValue
@@ -242,7 +245,7 @@ slot8 = function(slot0)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot1 = {}
+	slot1 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -275,9 +278,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.getSlotData = slot8
+slot8.getSlotData = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -328,9 +331,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.createChild = slot8
+slot8.createChild = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3, slot4)
+slot9 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -476,9 +479,9 @@ slot8 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot7.onValueChange = slot8
+slot8.onValueChange = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isValid
@@ -528,9 +531,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.getSlotTransform = slot8
+slot8.getSlotTransform = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.treeGrowTimeline
 	--- END OF BLOCK #0 ---
@@ -565,9 +568,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.stopTreeGrowAnim = slot8
+slot8.stopTreeGrowAnim = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.syncInfo
 	slot2 = slot2.envObjInfo
@@ -622,9 +625,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.getChildEntity = slot8
+slot8.getChildEntity = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.treeGrowTimeline
 	--- END OF BLOCK #0 ---
@@ -658,9 +661,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.isInGrowAnim = slot8
+slot8.isInGrowAnim = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.stopTreeGrowAnim
@@ -736,9 +739,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.playTreeGrowAnim = slot8
+slot8.playTreeGrowAnim = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -804,9 +807,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.alignToSlotTransform = slot8
+slot8.alignToSlotTransform = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = slot0.slotData
@@ -886,9 +889,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.setChildTrans = slot8
+slot8.setChildTrans = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = slot0.slotData
@@ -964,9 +967,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.resetChildTrans = slot8
+slot8.resetChildTrans = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -981,9 +984,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.doDrop = slot8
+slot8.doDrop = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -998,9 +1001,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.startShining = slot8
+slot8.startShining = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.interactionType
 	slot3 = InteractionConst
@@ -1046,9 +1049,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.checkCanInteract = slot8
+slot8.checkCanInteract = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.interactionType
 	slot3 = InteractionConst
@@ -1081,9 +1084,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onInteract = slot8
+slot8.onInteract = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.updatePlayerShinyTimer
 	--- END OF BLOCK #0 ---
@@ -1275,10 +1278,10 @@ slot8 = function(slot0)
 
 end
 
-slot7.refreshShining = slot8
+slot8.refreshShining = slot9
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot9 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPosition
 	slot1 = slot1(slot3)
@@ -1287,69 +1290,74 @@ slot8 = function(slot0)
 	slot4 = slot2
 	slot2 = slot2.getPosition
 	slot2 = slot2(slot4)
-	slot3 = slot2 - slot1
-	slot4 = slot3.y
-	slot5 = slot0.shiningRadius
+	slot3 = slot2.y
+	slot4 = slot1.y
+	slot3 = slot3 - slot4
+	slot4 = slot0.shiningRadius
 	--- END OF BLOCK #0 ---
 
-	if slot5 < slot4 then
+	if slot4 < slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 14-15, warpins: 1 ---
-	slot5 = false
+	--- BLOCK #1 15-16, warpins: 1 ---
+	slot4 = false
 
-	return slot5
+	return slot4
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-25, warpins: 2 ---
-	slot5 = 0
-	slot3.y = slot5
-	slot7 = slot3
-	slot5 = slot3.SqrMagnitude
-	slot5 = slot5(slot7)
-	slot6 = slot0.shiningRadius
+	--- BLOCK #2 17-30, warpins: 2 ---
+	slot4 = slot2.x
+	slot5 = slot1.x
+	slot4 = slot4 - slot5
+	slot5 = slot2.z
+	slot6 = slot1.z
+	slot5 = slot5 - slot6
+	slot6 = slot4 * slot4
+	slot7 = slot5 * slot5
+	slot6 = slot6 + slot7
 	slot7 = slot0.shiningRadius
-	slot6 = slot6 * slot7
+	slot8 = slot0.shiningRadius
+	slot7 = slot7 * slot8
 	--- END OF BLOCK #2 ---
 
-	if slot5 > slot6 then
+	if slot6 > slot7 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 26-27, warpins: 1 ---
-	slot6 = false
+	--- BLOCK #3 31-32, warpins: 1 ---
+	slot7 = false
 
-	return slot6
+	return slot7
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 28-29, warpins: 2 ---
-	slot6 = true
+	--- BLOCK #4 33-34, warpins: 2 ---
+	slot7 = true
 
-	return slot6
+	return slot7
 	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot7.checkDistanceInShingRange = slot8
+slot8.checkDistanceInShingRange = slot9
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

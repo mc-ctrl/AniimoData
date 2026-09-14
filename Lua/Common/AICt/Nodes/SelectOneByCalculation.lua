@@ -10,8 +10,8 @@ slot4 = "SelectOneByCalculation"
 slot5 = slot0
 slot2 = slot2(slot4, slot5)
 slot3 = {
-	Max = 1,
-	Min = 2
+	Min = 2,
+	Max = 1
 }
 
 slot4 = function(slot0)

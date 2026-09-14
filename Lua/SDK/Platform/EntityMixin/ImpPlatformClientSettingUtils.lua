@@ -1,4 +1,4 @@
---- BLOCK #0 1-20, warpins: 1 ---
+--- BLOCK #0 1-22, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Const.UIConst"
@@ -286,6 +286,77 @@ slot4 = function(slot0)
 end
 
 slot0.set_crossPlatform = slot4
+
+slot4 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isConsoleFamily
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-15, warpins: 2 ---
+	slot1 = ClientSettingUtils
+	slot1 = slot1.ACCOUNT_BIND_SOCIAL_TYPE
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-17, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-26, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.sdkManager
+	slot4 = slot2
+	slot2 = slot2.bindSocial
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot0.handleAccountBindClick = slot4
 
 return slot0
 --- END OF BLOCK #0 ---

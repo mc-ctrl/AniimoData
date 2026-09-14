@@ -1,4 +1,4 @@
---- BLOCK #0 1-147, warpins: 1 ---
+--- BLOCK #0 1-177, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -59,19 +59,39 @@ slot21 = require
 slot23 = "Data.sys_notice_data"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Core.Log.LoggerManager"
+slot24 = "Common.Const.TriggerConst"
 slot22 = slot22(slot24)
-slot22 = slot22.getLogger
-slot24 = "NormalPhotoUIComponent"
-slot22 = slot22(slot24)
-slot23 = {
+slot23 = require
+slot25 = "Data.trigger_data"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Data.custom_trigger_data"
+slot24 = slot24(slot26)
+slot25 = require
+slot27 = "Data.custom_trigger_map_data"
+slot25 = slot25(slot27)
+slot26 = require
+slot28 = "Common.Utils.TriggerUtils"
+slot26 = slot26(slot28)
+slot27 = require
+slot29 = "Utils.ClientSettingUtils"
+slot27 = slot27(slot29)
+slot28 = require
+slot30 = "Core.Log.LoggerManager"
+slot28 = slot28(slot30)
+slot28 = slot28.getLogger
+slot30 = "NormalPhotoUIComponent"
+slot28 = slot28(slot30)
+slot29 = {
 	Selfie = "Selfie",
 	Normal = "Normal",
 	Follow = "Follow"
 }
-slot14.PhotoType = slot23
+slot14.PhotoType = slot29
+slot29 = 0.2
+slot14.PHOTO_EVENT_REFRESH_INTERVAL = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -101,10 +121,10 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.onCtor = slot23
+slot14.onCtor = slot29
 
-slot23 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-91, warpins: 1 ---
+slot29 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-98, warpins: 1 ---
 	slot3 = UIComponent
 	slot3 = slot3.ctor
 	slot5 = slot0
@@ -238,7 +258,32 @@ slot23 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 9-21, warpins: 2 ---
+		--- BLOCK #2 9-16, warpins: 2 ---
+		slot2 = pg
+		slot2 = slot2.global
+		slot2 = slot2.ui
+		slot4 = slot2
+		slot2 = slot2.runPlatformByMobile
+		slot2 = slot2(slot4)
+
+		--- END OF BLOCK #2 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 17-17, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 18-30, warpins: 2 ---
 		slot2 = pg
 		slot2 = slot2.game
 		slot2 = slot2.input
@@ -254,7 +299,7 @@ slot23 = function(slot0, slot1, slot2)
 		slot2(slot4, slot5, slot6)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -542,6 +587,17 @@ slot23 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
+	slot5 = slot0
+	slot3 = slot0.initPhotoEventConditions
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.setPhotoEventTopVisible
+	slot6 = false
+
+	slot3(slot5, slot6)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -549,9 +605,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot14.ctor = slot23
+slot14.ctor = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.boxSlider
@@ -573,9 +629,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.findObjects = slot23
+slot14.findObjects = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnReset
@@ -590,9 +646,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.onShow = slot23
+slot14.onShow = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ctrl
 	--- END OF BLOCK #0 ---
@@ -624,7 +680,12 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 8-12, warpins: 2 ---
+	--- BLOCK #3 8-15, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.tryRefreshPhotoEventTop
+
+	slot1(slot3)
+
 	slot1 = slot0.curPhotoType
 	slot2 = slot0.PhotoType
 	slot2 = slot2.Follow
@@ -637,7 +698,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #4 13-16, warpins: 1 ---
+	--- BLOCK #4 16-19, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryUpdateInvestigateTarget
 
@@ -650,7 +711,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-22, warpins: 2 ---
+	--- BLOCK #5 20-25, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.input
@@ -664,7 +725,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #6 23-30, warpins: 1 ---
+	--- BLOCK #6 26-33, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.input
@@ -681,7 +742,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #7 31-31, warpins: 1 ---
+	--- BLOCK #7 34-34, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #7 ---
@@ -689,7 +750,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 32-35, warpins: 3 ---
+	--- BLOCK #8 35-38, warpins: 3 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.moveX
 	--- END OF BLOCK #8 ---
@@ -701,7 +762,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #9 36-39, warpins: 1 ---
+	--- BLOCK #9 39-42, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.moveY
 	--- END OF BLOCK #9 ---
@@ -713,21 +774,21 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #10 40-41, warpins: 1 ---
+	--- BLOCK #10 43-44, warpins: 1 ---
 	slot1 = false
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 42-42, warpins: 2 ---
+	--- BLOCK #11 45-45, warpins: 2 ---
 	slot1 = true
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 43-45, warpins: 2 ---
+	--- BLOCK #12 46-48, warpins: 2 ---
 	slot2 = slot0.moveState
 	--- END OF BLOCK #12 ---
 
@@ -738,7 +799,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #13 46-48, warpins: 1 ---
+	--- BLOCK #13 49-51, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.tryUpdateFocusDis
 
@@ -749,7 +810,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 49-79, warpins: 2 ---
+	--- BLOCK #14 52-82, warpins: 2 ---
 	slot0.moveState = slot1
 	slot2 = slot0.ctrl
 	slot2 = slot2.photoFuncMenuUIComponent
@@ -793,9 +854,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.update = slot23
+slot14.update = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = true
 	slot0.openPlayerLookAtFollow = slot1
@@ -807,9 +868,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.openPlayerLookAtFollow = slot23
+slot14.openPlayerLookAtFollow = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = false
 	slot0.openPlayerLookAtFollow = slot1
@@ -828,9 +889,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.closePlayerLookAtFollow = slot23
+slot14.closePlayerLookAtFollow = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.openPlayerLookAtFollow
 	--- END OF BLOCK #0 ---
@@ -873,9 +934,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.updateLookAt = slot23
+slot14.updateLookAt = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._targetTemplateId
 	--- END OF BLOCK #0 ---
@@ -1071,9 +1132,634 @@ slot23 = function(slot0)
 
 end
 
-slot14.tryUpdateInvestigateTarget = slot23
+slot14.tryUpdateInvestigateTarget = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = {}
+	slot0.photoEventConditions = slot1
+	slot1 = 0
+	slot0.nextPhotoEventRefreshTime = slot1
+	slot1 = TriggerData
+	slot1 = slot1.TAKE_PHOTO_BY_POS_AND_OBJECT
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot2 = slot1.trigger
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-13, warpins: 1 ---
+	slot3 = CustomTriggerMapData
+	slot3 = slot3[slot2]
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-16, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-21, warpins: 2 ---
+	slot4 = {}
+	slot5 = pairs
+	slot7 = slot3
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #7 22-25, warpins: 1 ---
+	slot10 = ipairs
+	slot12 = slot9
+	slot10, slot11, slot12 = slot10(slot12)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #8 26-38, warpins: 1 ---
+	slot15 = TriggerConst
+	slot15 = slot15.parseCustomTriggerKey
+	slot17 = slot14
+	slot15, slot16 = slot15(slot17)
+	slot17 = string
+	slot17 = slot17.format
+	slot19 = "%d_%d"
+	slot20 = slot15
+	slot21 = slot16
+	slot17 = slot17(slot19, slot20, slot21)
+	slot18 = slot4[slot17]
+	--- END OF BLOCK #8 ---
+
+	slot18 = if not slot18 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #9 39-42, warpins: 1 ---
+	slot18 = CustomTriggerData
+	slot18 = slot18[slot15]
+	--- END OF BLOCK #9 ---
+
+	slot19 = if slot18 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 43-45, warpins: 1 ---
+	slot19 = slot18.condition
+	--- END OF BLOCK #10 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 46-47, warpins: 1 ---
+	slot19 = slot18.condition
+	slot19 = slot19[slot16]
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 48-49, warpins: 3 ---
+	--- END OF BLOCK #12 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 50-54, warpins: 1 ---
+	slot20 = TriggerConst
+	slot20 = slot20.CUSTOM_TRIGGER_NAME_POS
+	slot20 = slot19[slot20]
+	--- END OF BLOCK #13 ---
+
+	if slot20 == "TAKE_PHOTO_BY_POS_AND_OBJECT" then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 55-67, warpins: 1 ---
+	slot20 = slot0.photoEventConditions
+	slot21 = slot0.photoEventConditions
+	slot21 = #slot21
+	slot21 = slot21 + 1
+	slot22 = {}
+	slot22.customDataId = slot15
+	slot23 = TriggerConst
+	slot23 = slot23.CUSTOM_TRIGGER_EXTAR_TARGET_POS
+	slot23 = slot19[slot23]
+	slot22.extraArg = slot23
+	slot20[slot21] = slot22
+	slot20 = true
+	slot4[slot17] = slot20
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 68-69, warpins: 5 ---
+	--- END OF BLOCK #15 ---
+
+	for slot13, slot14 in slot10, slot11, slot12
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #16
+
+
+	--- BLOCK #16 70-71, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 72-72, warpins: 1 ---
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot14.initPhotoEventConditions = slot29
+
+slot29 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.eventTopUWidget
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-11, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.SetActive
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot14.setPhotoEventTopVisible = slot29
+
+slot29 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot2 = TriggerUtils
+	slot2 = slot2._checkPhotoPosition
+	slot4 = slot1
+	slot5 = pg
+	slot5 = slot5.space
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.space
+	slot5 = slot5.sceneId
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-22, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.getPosition
+	MULTRES = slot6(slot8)
+	slot2 = slot2(slot4, slot5, MULTRES)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-23, warpins: 2 ---
+	slot2 = false
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-24, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot14.isInPhotoEventRange = slot29
+
+slot29 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = Time
+	slot1 = slot1.realtimeSinceStartup
+	slot2 = slot0.nextPhotoEventRefreshTime
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot2 = 0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 < slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-16, warpins: 2 ---
+	slot2 = slot0.PHOTO_EVENT_REFRESH_INTERVAL
+	slot2 = slot1 + slot2
+	slot0.nextPhotoEventRefreshTime = slot2
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-19, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.triggerMap
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-21, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 22-24, warpins: 1 ---
+	slot3 = slot0.photoEventConditions
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 25-28, warpins: 1 ---
+	slot3 = slot0.photoEventConditions
+	slot3 = #slot3
+	--- END OF BLOCK #8 ---
+
+	if slot3 == 0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 29-33, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.setPhotoEventTopVisible
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 34-38, warpins: 2 ---
+	slot3 = nil
+	slot4 = ipairs
+	slot6 = slot0.photoEventConditions
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #11 39-44, warpins: 1 ---
+	slot11 = slot2
+	slot9 = slot2.isRegister
+	slot12 = slot8.customDataId
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #11 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #12 45-50, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.isInPhotoEventRange
+	slot12 = slot8.extraArg
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #12 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #13 51-58, warpins: 1 ---
+	slot9 = math
+	slot9 = slot9.max
+	slot11 = tonumber
+	slot13 = slot8.extraArg
+	slot13 = slot13[4]
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #13 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 59-59, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 60-63, warpins: 2 ---
+	slot12 = 0
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #15 ---
+
+	if slot9 == 0 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 64-68, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.setPhotoEventTopVisible
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	return
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 69-70, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 71-75, warpins: 1 ---
+	slot10 = slot0.ctrl
+	slot12 = slot10
+	slot10 = slot10._computeSubjectMask
+	slot10 = slot10(slot12)
+	slot3 = slot10
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 76-83, warpins: 2 ---
+	slot10 = TriggerUtils
+	slot10 = slot10._checkPhotoByPosAndObject
+	slot12 = slot8.extraArg
+	slot13 = {}
+	slot14 = pg
+	slot14 = slot14.space
+	--- END OF BLOCK #19 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 84-86, warpins: 1 ---
+	slot14 = pg
+	slot14 = slot14.space
+	slot14 = slot14.sceneId
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 87-97, warpins: 2 ---
+	slot13[1] = slot14
+	slot14 = pg
+	slot14 = slot14.me
+	slot16 = slot14
+	slot14 = slot14.getPosition
+	slot14 = slot14(slot16)
+	slot13[2] = slot14
+	slot13[3] = slot3
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #21 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 98-102, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.setPhotoEventTopVisible
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	return
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 103-104, warpins: 5 ---
+	--- END OF BLOCK #23 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #24
+
+
+	--- BLOCK #24 105-109, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setPhotoEventTopVisible
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #24 ---
+
+
+
+end
+
+slot14.tryRefreshPhotoEventTop = slot29
+
+slot29 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curPhotoType
 	slot2 = slot0.PhotoType
@@ -1115,9 +1801,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.tryUpdateFocusDis = slot23
+slot14.tryUpdateFocusDis = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
@@ -1180,9 +1866,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.findMinAndMaxDistance = slot23
+slot14.findMinAndMaxDistance = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.getConfigData
@@ -1241,9 +1927,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.findIconDisplayDistanceSection = slot23
+slot14.findIconDisplayDistanceSection = slot29
 
-slot23 = function(slot0, slot1, slot2)
+slot29 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0.inRangeEntities
 	slot3[slot1] = slot2
@@ -1257,9 +1943,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot14.onEntityEnterView = slot23
+slot14.onEntityEnterView = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.view
 
@@ -1292,9 +1978,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.onEntityExitView = slot23
+slot14.onEntityExitView = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1303,10 +1989,10 @@ slot23 = function(slot0)
 
 end
 
-slot14.onHide = slot23
+slot14.onHide = slot29
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-55, warpins: 1 ---
+slot29 = function(slot0)
+	--- BLOCK #0 1-57, warpins: 1 ---
 	slot1 = 3
 	slot0.moveSpeedRate = slot1
 	slot1 = false
@@ -1359,39 +2045,101 @@ slot23 = function(slot0)
 	slot1 = slot1[slot2]
 	slot0.curPhotoType = slot1
 	slot1 = slot0.ctrl
-	slot1 = slot1.isSnapshot
+	slot3 = slot1
+	slot1 = slot1.isHomelandMode
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 56-60, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkIsDialogue
-	slot1 = slot1(slot3)
+	--- BLOCK #1 58-66, warpins: 1 ---
+	slot1 = slot0.PhotoType
+	slot1 = slot1.Normal
+	slot0.curPhotoType = slot1
+	slot1 = slot0.view
+	slot1 = slot1.btnCameraMode
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 67-70, warpins: 2 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.isSnapshot
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 61-63, warpins: 2 ---
+	--- BLOCK #3 71-75, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkIsDialogue
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 76-78, warpins: 2 ---
 	slot1 = slot0.PhotoType
 	slot1 = slot1.Follow
 	slot0.curPhotoType = slot1
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 64-190, warpins: 2 ---
+	--- BLOCK #5 79-86, warpins: 2 ---
+	slot1 = slot0.curPhotoType
+	slot0.lastPhotoType = slot1
+	slot1 = slot0.ctrl
+	slot2 = slot0.curPhotoType
+	slot3 = slot0.PhotoType
+	slot3 = slot3.Follow
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 87-88, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 89-89, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 90-212, warpins: 2 ---
+	slot1.keepPetActionOnExit = slot2
 	slot1 = {
 		0.2,
 		2.5,
@@ -1423,7 +2171,7 @@ slot23 = function(slot0)
 		slot3 = slot3._takePhotoCb
 		slot4 = self
 		slot6 = slot4
-		slot4 = slot4.checkIsNormalMode
+		slot4 = slot4.needConfirmPhoto
 		slot4 = slot4(slot6)
 		slot4 = not slot4
 
@@ -1647,6 +2395,78 @@ slot23 = function(slot0)
 	slot1 = slot0.view
 	slot1 = slot1.joyStick
 
+	slot2 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 == nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-17, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setJoyStickVisible
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.joyStickArea
+		slot0 = slot0.gameObject
+		slot0 = slot0.activeInHierarchy
+		--- END OF BLOCK #2 ---
+
+		if slot0 == true then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 18-25, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.joyStick
+		slot0 = slot0.transform
+		slot2 = slot0
+		slot0 = slot0.SetSiblingIndex
+		slot3 = -1
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 26-26, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot1.luaValueChangedWhileDragging = slot2
+	slot1 = slot0.view
+	slot1 = slot1.joyStick
+
 	slot2 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot3 = self
@@ -1669,60 +2489,22 @@ slot23 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 6-17, warpins: 2 ---
+		--- BLOCK #2 6-12, warpins: 2 ---
 		slot3 = self
-		slot5 = slot3
-		slot3 = slot3.setJoyStickVisible
-		slot6 = true
-
-		slot3(slot5, slot6)
-
-		slot3 = self
-		slot3 = slot3.view
-		slot3 = slot3.joyStickArea
-		slot3 = slot3.gameObject
-		slot3 = slot3.activeInHierarchy
+		slot3 = slot3.curPhotoType
+		slot4 = self
+		slot4 = slot4.PhotoType
+		slot4 = slot4.Follow
 		--- END OF BLOCK #2 ---
 
-		if slot3 == true then
+		if slot3 == slot4 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 18-25, warpins: 1 ---
-		slot3 = self
-		slot3 = slot3.view
-		slot3 = slot3.joyStick
-		slot3 = slot3.transform
-		slot5 = slot3
-		slot3 = slot3.SetSiblingIndex
-		slot6 = -1
-
-		slot3(slot5, slot6)
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 26-32, warpins: 2 ---
-		slot3 = self
-		slot3 = slot3.curPhotoType
-		slot4 = self
-		slot4 = slot4.PhotoType
-		slot4 = slot4.Follow
-		--- END OF BLOCK #4 ---
-
-		if slot3 == slot4 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #5 33-42, warpins: 1 ---
+		--- BLOCK #3 13-22, warpins: 1 ---
 		slot3 = pg
 		slot3 = slot3.global
 		slot3 = slot3.inputMgr
@@ -1736,12 +2518,12 @@ slot23 = function(slot0)
 
 		return
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #6 43-49, warpins: 2 ---
+		--- BLOCK #4 23-29, warpins: 2 ---
 		slot3 = self
 		slot3 = slot3.ctrl
 		slot3.moveX = slot0
@@ -1750,7 +2532,7 @@ slot23 = function(slot0)
 		slot3.moveY = slot1
 
 		return
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -2616,11 +3398,41 @@ slot23 = function(slot0)
 		FLOW; TARGET BLOCK #63
 
 
-		--- BLOCK #63 247-248, warpins: 2 ---
+		--- BLOCK #63 247-254, warpins: 2 ---
+		slot0.renderOpacity = slot1
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.pictureQualityUWidget
+		slot1 = self
+		slot1 = slot1.hide
+		--- END OF BLOCK #63 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #64
+		else
+		JUMP TO BLOCK #65
+		end
+
+
+		--- BLOCK #64 255-256, warpins: 1 ---
+		slot1 = 0
+		--- END OF BLOCK #64 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #66
+
+
+		--- BLOCK #65 257-257, warpins: 1 ---
+		slot1 = 1
+		--- END OF BLOCK #65 ---
+
+		FLOW; TARGET BLOCK #66
+
+
+		--- BLOCK #66 258-259, warpins: 2 ---
 		slot0.renderOpacity = slot1
 
 		return
-		--- END OF BLOCK #63 ---
+		--- END OF BLOCK #66 ---
 
 
 
@@ -2631,12 +3443,21 @@ slot23 = function(slot0)
 	slot1 = slot1.btnTimePauseUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-18, warpins: 1 ---
 		slot0 = self
 		slot1 = self
 		slot1 = slot1.timePause
 		slot1 = not slot1
 		slot0.timePause = slot1
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.camera
+		slot0 = slot0.photoCameraMode
+		slot0 = slot0.cameraMode
+		slot1 = self
+		slot1 = slot1.timePause
+		slot1 = not slot1
+		slot0.isUseTimeScale = slot1
 		slot0 = self
 		slot0 = slot0.timePause
 		--- END OF BLOCK #0 ---
@@ -2648,15 +3469,25 @@ slot23 = function(slot0)
 		end
 
 
-		--- BLOCK #1 10-27, warpins: 1 ---
+		--- BLOCK #1 19-44, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.space
 		slot2 = slot0
-		slot0 = slot0.pauseGameByName
-		slot3 = "Photo"
+		slot0 = slot0.pauseGameByType
+		slot3 = Const
+		slot3 = slot3.GameTimeScaleType
+		slot3 = slot3.PHOTO
 		slot4 = -1
 
 		slot0(slot2, slot3, slot4)
+
+		slot0 = self
+		slot0 = slot0.ctrl
+		slot0 = slot0.photoFuncMenuUIComponent
+		slot2 = slot0
+		slot0 = slot0.pausePhotoSubjects
+
+		slot0(slot2)
 
 		slot0 = pg
 		slot0 = slot0.game
@@ -2675,14 +3506,24 @@ slot23 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 28-43, warpins: 1 ---
+		--- BLOCK #2 45-68, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.space
 		slot2 = slot0
-		slot0 = slot0.resumeGameByName
-		slot3 = "Photo"
+		slot0 = slot0.resumeGameByType
+		slot3 = Const
+		slot3 = slot3.GameTimeScaleType
+		slot3 = slot3.PHOTO
 
 		slot0(slot2, slot3)
+
+		slot0 = self
+		slot0 = slot0.ctrl
+		slot0 = slot0.photoFuncMenuUIComponent
+		slot2 = slot0
+		slot0 = slot0.resumePhotoSubjects
+
+		slot0(slot2)
 
 		slot0 = pg
 		slot0 = slot0.game
@@ -2701,7 +3542,7 @@ slot23 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 44-53, warpins: 2 ---
+		--- BLOCK #3 69-78, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.view
 		slot0 = slot0.btnTimePauseUButton
@@ -2719,14 +3560,14 @@ slot23 = function(slot0)
 		end
 
 
-		--- BLOCK #4 54-55, warpins: 1 ---
+		--- BLOCK #4 79-80, warpins: 1 ---
 		slot4 = 1
 		--- END OF BLOCK #4 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 56-56, warpins: 1 ---
+		--- BLOCK #5 81-81, warpins: 1 ---
 		slot4 = 0
 
 		--- END OF BLOCK #5 ---
@@ -2734,7 +3575,7 @@ slot23 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 57-58, warpins: 2 ---
+		--- BLOCK #6 82-83, warpins: 2 ---
 		slot0(slot2, slot3, slot4)
 
 		return
@@ -3036,6 +3877,33 @@ slot23 = function(slot0)
 	slot2 = slot0.view
 	slot2 = slot2.mobileCameraCtrlUButton
 	slot2.luaClick = slot1
+	slot2 = ClientSettingUtils
+	slot2 = slot2.isCloudGame
+	slot2 = slot2()
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 213-219, warpins: 1 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.captureTip
+	slot5 = ""
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 220-228, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -3047,32 +3915,38 @@ slot23 = function(slot0)
 
 	slot2(slot4, MULTRES)
 
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 229-233, warpins: 2 ---
 	slot2 = slot0.curPhotoType
 	slot3 = slot0.PhotoType
 	slot3 = slot3.Normal
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #11 ---
 
 	if slot2 ~= slot3 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #4 191-195, warpins: 1 ---
+	--- BLOCK #12 234-238, warpins: 1 ---
 	slot2 = slot0.curPhotoType
 	slot3 = slot0.PhotoType
 	slot3 = slot3.Selfie
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #12 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #5 196-215, warpins: 2 ---
+	--- BLOCK #13 239-258, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.camera
@@ -3096,25 +3970,25 @@ slot23 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #6 216-220, warpins: 1 ---
+	--- BLOCK #14 259-263, warpins: 1 ---
 	slot2 = slot0.curPhotoType
 	slot3 = slot0.PhotoType
 	slot3 = slot3.Follow
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #14 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #7 221-230, warpins: 1 ---
+	--- BLOCK #15 264-273, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -3123,16 +3997,16 @@ slot23 = function(slot0)
 	slot5 = UIConst
 	slot5 = slot5.UI_ID_FUNC_MENU
 	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #15 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #8 231-237, warpins: 1 ---
+	--- BLOCK #16 274-280, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -3142,35 +4016,35 @@ slot23 = function(slot0)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #9 238-240, warpins: 4 ---
+	--- BLOCK #17 281-283, warpins: 4 ---
 	slot2 = slot0.preset
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #17 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #10 241-245, warpins: 1 ---
+	--- BLOCK #18 284-288, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.applyPreset
 	slot5 = slot0.preset
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #11 246-251, warpins: 1 ---
+	--- BLOCK #19 289-294, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshMoveOperateUI
 
@@ -3181,22 +4055,22 @@ slot23 = function(slot0)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #12 252-253, warpins: 2 ---
+	--- BLOCK #20 295-296, warpins: 2 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot14.initView = slot23
+slot14.initView = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.curPhotoType
 	slot3 = slot0.PhotoType
@@ -3249,7 +4123,7 @@ slot23 = function(slot0, slot1)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #2 35-39, warpins: 1 ---
@@ -3265,7 +4139,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 40-76, warpins: 1 ---
+	--- BLOCK #3 40-77, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.camera
@@ -3326,8 +4200,9 @@ slot23 = function(slot0, slot1)
 	slot2 = slot0.ctrl
 	slot4 = slot2
 	slot2 = slot2.stopAllPetAction
+	slot5 = true
 
-	slot2(slot4)
+	slot2(slot4, slot5)
 
 	slot2 = slot0.ctrl
 	slot2 = slot2.lockModeComponent
@@ -3336,11 +4211,11 @@ slot23 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #4 77-80, warpins: 1 ---
+	--- BLOCK #4 78-81, warpins: 1 ---
 	slot5 = slot2
 	slot3 = slot2.closeLockModel
 
@@ -3348,10 +4223,10 @@ slot23 = function(slot0, slot1)
 
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #5 81-85, warpins: 1 ---
+	--- BLOCK #5 82-86, warpins: 1 ---
 	slot2 = slot0.curPhotoType
 	slot3 = slot0.PhotoType
 	slot3 = slot3.Follow
@@ -3360,11 +4235,47 @@ slot23 = function(slot0, slot1)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #6 86-103, warpins: 1 ---
+	--- BLOCK #6 87-89, warpins: 1 ---
+	slot2 = slot0.hasRefreshedPhotoType
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 90-94, warpins: 1 ---
+	slot2 = slot0.lastPhotoType
+	slot3 = slot0.PhotoType
+	slot3 = slot3.Follow
+	--- END OF BLOCK #7 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 95-98, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.resetAllPetAction
+
+	slot2(slot4)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 99-112, warpins: 3 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.camera
@@ -3383,80 +4294,107 @@ slot23 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	slot2 = slot0.ctrl
-	slot4 = slot2
-	slot2 = slot2.stopAllPetAction
-
-	slot2(slot4)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 104-109, warpins: 5 ---
-	slot2 = slot0.ctrl
-	slot3 = slot0.curPhotoType
-	slot4 = slot0.PhotoType
-	slot4 = slot4.Follow
-	--- END OF BLOCK #7 ---
-
-	if slot3 ~= slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 110-111, warpins: 1 ---
-	slot3 = false
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 112-112, warpins: 1 ---
-	slot3 = true
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 113-116, warpins: 2 ---
-	slot2.shouldBlockAction = slot3
-	slot2 = slot0.changePhotoTypeTimer
+	--- BLOCK #10 113-122, warpins: 5 ---
+	slot2 = slot0.curPhotoType
+	slot0.lastPhotoType = slot2
+	slot2 = true
+	slot0.hasRefreshedPhotoType = slot2
+	slot2 = slot0.ctrl
+	slot3 = slot0.curPhotoType
+	slot4 = slot0.PhotoType
+	slot4 = slot4.Follow
 	--- END OF BLOCK #10 ---
 
-	slot2 = if slot2 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 117-120, warpins: 1 ---
+	--- BLOCK #11 123-124, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 125-125, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 126-132, warpins: 2 ---
+	slot2.keepPetActionOnExit = slot3
+	slot2 = slot0.ctrl
+	slot3 = slot0.curPhotoType
+	slot4 = slot0.PhotoType
+	slot4 = slot4.Follow
+	--- END OF BLOCK #13 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 133-134, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 135-135, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 136-139, warpins: 2 ---
+	slot2.shouldBlockAction = slot3
+	slot2 = slot0.changePhotoTypeTimer
+	--- END OF BLOCK #16 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 140-143, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.killTimer
 	slot5 = slot0.changePhotoTypeTimer
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #12 121-122, warpins: 2 ---
-	--- END OF BLOCK #12 ---
+	--- BLOCK #18 144-145, warpins: 2 ---
+	--- END OF BLOCK #18 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #13 123-129, warpins: 1 ---
+	--- BLOCK #19 146-152, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.startTimer
 
@@ -3490,12 +4428,12 @@ slot23 = function(slot0, slot1)
 	slot6 = 0.6
 	slot2 = slot2(slot4, slot5, slot6)
 	slot0.changePhotoTypeTimer = slot2
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #14 130-138, warpins: 1 ---
+	--- BLOCK #20 153-161, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.camera
@@ -3507,12 +4445,12 @@ slot23 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #15 139-149, warpins: 2 ---
+	--- BLOCK #21 162-172, warpins: 2 ---
 	slot2 = slot0.ctrl
 	slot4 = slot2
 	slot2 = slot2.refreshFishEyeEffect
@@ -3527,15 +4465,15 @@ slot23 = function(slot0, slot1)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot14.refreshPhotoType = slot23
+slot14.refreshPhotoType = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -3555,9 +4493,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.refreshPhotoTypeUI = slot23
+slot14.refreshPhotoTypeUI = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curPhotoType
 	slot2 = slot0.PhotoType
@@ -3666,9 +4604,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.refreshMoveOperateUI = slot23
+slot14.refreshMoveOperateUI = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3867,9 +4805,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.applyPreset = slot23
+slot14.applyPreset = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-78, warpins: 1 ---
 	slot2 = slot0.curPhotoType
 	slot1.photoType = slot2
@@ -3963,9 +4901,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.saveToPreset = slot23
+slot14.saveToPreset = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -4006,9 +4944,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.retainDecimalPlaces = slot23
+slot14.retainDecimalPlaces = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -4024,9 +4962,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.checkCanTimePause = slot23
+slot14.checkCanTimePause = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curPhotoType
 	slot2 = slot0.PhotoType
@@ -4049,7 +4987,33 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-25, warpins: 2 ---
+	--- BLOCK #2 7-10, warpins: 2 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.photoCameraTargetInfo
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.applyPhotoCameraTarget
+
+	slot1(slot3)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-34, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.boxSlider
 	slot1 = slot1.content
@@ -4071,19 +5035,18 @@ slot23 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot14.reset = slot23
+slot14.reset = slot29
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = nil
-	slot0._targetTemplateId = slot1
-	slot1 = slot0.timerId
+slot29 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -4093,7 +5056,36 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-12, warpins: 1 ---
+	--- BLOCK #1 5-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot3 = slot1
+	slot1 = slot1.resumeGameTimeScaleRequestsByType
+	slot4 = Const
+	slot4 = slot4.GameTimeScaleType
+	slot4 = slot4.PHOTO
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-17, warpins: 2 ---
+	slot1 = nil
+	slot0._targetTemplateId = slot1
+	slot1 = slot0.timerId
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-24, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
 	slot1 = slot1.killTimer
@@ -4103,12 +5095,12 @@ slot23 = function(slot0)
 
 	slot1 = nil
 	slot0.timerId = slot1
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 13-28, warpins: 2 ---
+	--- BLOCK #4 25-40, warpins: 2 ---
 	slot1 = {}
 	slot0.entityTable = slot1
 	slot1 = pg
@@ -4125,30 +5117,30 @@ slot23 = function(slot0)
 	slot1 = {}
 	slot0.totalInRangeEntities = slot1
 	slot1 = slot0.openPlayerLookAtFollow
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 29-34, warpins: 1 ---
+	--- BLOCK #5 41-46, warpins: 1 ---
 	slot1 = false
 	slot0.openPlayerLookAtFollow = slot1
 	slot1 = pg
 	slot1 = slot1.me
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 35-40, warpins: 1 ---
+	--- BLOCK #6 47-52, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -4157,12 +5149,12 @@ slot23 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 41-57, warpins: 3 ---
+	--- BLOCK #7 53-69, warpins: 3 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.input
@@ -4182,42 +5174,60 @@ slot23 = function(slot0)
 	slot1(slot3)
 
 	slot1 = slot0.timePause
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 58-61, warpins: 1 ---
+	--- BLOCK #8 70-82, warpins: 1 ---
+	slot1 = false
+	slot0.timePause = slot1
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.camera
+	slot1 = slot1.photoCameraMode
+	slot1 = slot1.cameraMode
+	slot2 = true
+	slot1.isUseTimeScale = slot2
 	slot1 = pg
 	slot1 = slot1.space
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 62-67, warpins: 1 ---
+	--- BLOCK #9 83-90, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
-	slot1 = slot1.resumeGameByName
-	slot4 = "Photo"
+	slot1 = slot1.resumeGameByType
+	slot4 = Const
+	slot4 = slot4.GameTimeScaleType
+	slot4 = slot4.PHOTO
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 68-79, warpins: 2 ---
+	--- BLOCK #10 91-105, warpins: 2 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.photoFuncMenuUIComponent
+	slot3 = slot1
+	slot1 = slot1.resumePhotoSubjects
+
+	slot1(slot3)
+
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.input
@@ -4230,14 +5240,12 @@ slot23 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = false
-	slot0.timePause = slot1
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 80-115, warpins: 2 ---
+	--- BLOCK #11 106-141, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.input
@@ -4278,28 +5286,28 @@ slot23 = function(slot0)
 	slot1(slot3, slot4, slot5)
 
 	slot1 = slot0.dialogueKeyLeftConsoleForceInactive
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 116-119, warpins: 1 ---
+	--- BLOCK #12 142-145, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setDialogueKeyLeftConsoleForceInactive
 	slot4 = false
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #11 120-124, warpins: 2 ---
+	--- BLOCK #13 146-150, warpins: 2 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -4307,15 +5315,15 @@ slot23 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot14.onDestroy = slot23
+slot14.onDestroy = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.view
 
@@ -4399,9 +5407,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.setJoyStickVisible = slot23
+slot14.setJoyStickVisible = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 99999999
 	slot2 = nil
@@ -4471,14 +5479,14 @@ slot23 = function(slot0)
 
 end
 
-slot14.findClosetEntityToScreenCenter = slot23
+slot14.findClosetEntityToScreenCenter = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.photoSaved
+	slot4 = slot0.photoSaved
 	--- END OF BLOCK #0 ---
 
-	if slot2 == true then
+	if slot4 == true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -4486,134 +5494,512 @@ slot23 = function(slot0, slot1)
 
 
 	--- BLOCK #1 4-12, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.showBubbleMessageRaw
 	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "PHOTO_HAS_SAVED"
-	MULTRES = slot4(slot6)
+	slot4 = slot4.global
+	slot4 = slot4.showBubbleMessageRaw
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "PHOTO_HAS_SAVED"
+	MULTRES = slot6(slot8)
 
-	slot2(MULTRES)
-
-	return
+	slot4(MULTRES)
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #2 13-43, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.eModel
-	slot4 = slot2
-	slot2 = slot2.GetPositionAgentPosEx
-	slot2, slot3, slot4 = slot2(slot4)
-	slot5 = Vector3
-	slot5 = slot5.New
-	slot7 = slot2
-	slot8 = slot3
+	--- BLOCK #2 13-26, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.eModel
+	slot6 = slot4
+	slot4 = slot4.GetPositionAgentPosEx
+	slot4, slot5, slot6 = slot4(slot6)
+	slot7 = Vector3
+	slot7 = slot7.New
 	slot9 = slot4
-	slot5 = slot5(slot7, slot8, slot9)
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.mobileCameraMgr
-	slot8 = slot6
-	slot6 = slot6.GetPetPhotoInfo
-	slot9 = os
-	slot9 = slot9.time
-	slot9 = slot9()
 	slot10 = slot5
-	slot11 = pg
-	slot11 = slot11.me
-	slot11 = slot11.space
-	slot11 = slot11.sceneId
-	slot12 = slot0.curTemplateIds
-	slot13 = slot0.curGenderInfos
-	slot14 = slot0.curGenderInfos
-	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	slot11 = slot6
+	slot7 = slot7(slot9, slot10, slot11)
 	--- END OF BLOCK #2 ---
 
-	slot1 = if not slot1 then
+	slot8 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 44-61, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.mobileCameraMgr
-	slot9 = slot7
-	slot7 = slot7.SaveImageToAlbum
-	slot10 = slot6
-	slot7 = slot7(slot9, slot10)
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.event
-	slot10 = slot8
-	slot8 = slot8.takePetPhoto
-	slot11 = slot0.curTemplateIds
-	slot12 = slot0.curPhotoType
-	slot13 = slot0.PhotoType
-	slot13 = slot13.Selfie
+	--- BLOCK #3 27-29, warpins: 1 ---
+	slot8 = slot0.curPhotoInfo
 	--- END OF BLOCK #3 ---
 
-	if slot12 ~= slot13 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 62-63, warpins: 1 ---
-	slot12 = false
+	--- BLOCK #4 30-33, warpins: 1 ---
+	slot8 = slot0.curPhotoInfo
+	slot8 = slot8.ts
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 64-64, warpins: 1 ---
-	slot12 = true
+	--- BLOCK #5 34-36, warpins: 2 ---
+	slot8 = os
+	slot8 = slot8.time
+	slot8 = slot8()
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 65-66, warpins: 2 ---
-	slot13 = slot7
-
-	slot8(slot10, slot11, slot12, slot13)
-
+	--- BLOCK #6 37-38, warpins: 3 ---
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot9 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 67-76, warpins: 2 ---
-	slot0.curPhotoInfo = slot6
-	slot7 = true
-	slot0.photoSaved = slot7
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.showBubbleMessage
-	slot9 = NoticeDef
-	slot9 = slot9.SAVE_PHOTOGRAPH
+	--- BLOCK #7 39-39, warpins: 1 ---
+	slot9 = slot0.curPhotoImgUrl
+	--- END OF BLOCK #7 ---
 
-	slot7(slot9)
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 40-56, warpins: 2 ---
+	slot10 = pg
+	slot10 = slot10.global
+	slot10 = slot10.mobileCameraMgr
+	slot12 = slot10
+	slot10 = slot10.GetPetPhotoInfo
+	slot13 = slot8
+	slot14 = slot7
+	slot15 = pg
+	slot15 = slot15.me
+	slot15 = slot15.space
+	slot15 = slot15.sceneId
+	slot16 = slot0.curTemplateIds
+	slot17 = slot0.curGenderInfos
+	slot18 = slot0.curGenderInfos
+	slot10 = slot10(slot12, slot13, slot14, slot15, slot16, slot17, slot18)
+	--- END OF BLOCK #8 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #9 57-69, warpins: 1 ---
+	slot11 = ClientSettingUtils
+	slot11 = slot11.getPhotoStorageMode
+	slot11 = slot11()
+	slot12 = ClientSettingUtils
+	slot12 = slot12.shouldSavePhotoToLocal
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	slot13 = ClientSettingUtils
+	slot13 = slot13.shouldSavePhotoToCloud
+	slot15 = slot11
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #9 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 70-77, warpins: 1 ---
+	slot14 = Utils
+	slot14 = slot14.uploadPhotoToOSS
+	slot16 = slot9
+	slot17 = slot10.ts
+
+	slot18 = function(slot0, slot1)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 3-16, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.event
+		slot4 = slot2
+		slot2 = slot2.takePetPhoto
+		slot5 = self
+		slot5 = slot5.curTemplateIds
+		slot6 = self
+		slot6 = slot6.curPhotoType
+		slot7 = self
+		slot7 = slot7.PhotoType
+		slot7 = slot7.Selfie
+		--- END OF BLOCK #1 ---
+
+		if slot6 ~= slot7 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 17-18, warpins: 1 ---
+		slot6 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 19-19, warpins: 1 ---
+		slot6 = true
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 20-39, warpins: 2 ---
+		slot7 = nil
+
+		slot2(slot4, slot5, slot6, slot7)
+
+		slot2 = self
+		slot3 = photoInfo
+		slot2.curPhotoInfo = slot3
+		slot2 = self
+		slot3 = nil
+		slot2.curPhotoImgUrl = slot3
+		slot2 = self
+		slot3 = true
+		slot2.photoSaved = slot3
+		slot2 = pg
+		slot2 = slot2.global
+		slot2 = slot2.showBubbleMessageRaw
+		slot4 = ClientSettingUtils
+		slot4 = slot4.getPhotoSaveSuccessText
+		slot6 = storageMode
+		MULTRES = slot4(slot6)
+
+		slot2(MULTRES)
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #5 40-45, warpins: 1 ---
+		slot2 = ClientSettingUtils
+		slot2 = slot2.getPhotoSaveFailureText
+		slot4 = slot1
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #5 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 46-50, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.showBubbleMessageRaw
+		slot5 = slot2
+
+		slot3(slot5)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 51-51, warpins: 3 ---
+		return
+		--- END OF BLOCK #7 ---
+
+
+
+	end
+
+	slot14(slot16, slot17, slot18)
 
 	return
-	--- END OF BLOCK #7 ---
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 78-88, warpins: 2 ---
+	slot14 = pg
+	slot14 = slot14.global
+	slot14 = slot14.mobileCameraMgr
+	slot16 = slot14
+	slot14 = slot14.SaveImageToAlbum
+	slot17 = slot10
+
+	slot18 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #1 3-4, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		if slot0 ~= "" then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #2 5-18, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.event
+		slot3 = slot1
+		slot1 = slot1.takePetPhoto
+		slot4 = self
+		slot4 = slot4.curTemplateIds
+		slot5 = self
+		slot5 = slot5.curPhotoType
+		slot6 = self
+		slot6 = slot6.PhotoType
+		slot6 = slot6.Selfie
+		--- END OF BLOCK #2 ---
+
+		if slot5 ~= slot6 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 19-20, warpins: 1 ---
+		slot5 = false
+		--- END OF BLOCK #3 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #4 21-21, warpins: 1 ---
+		slot5 = true
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 22-35, warpins: 2 ---
+		slot6 = slot0
+
+		slot1(slot3, slot4, slot5, slot6)
+
+		slot1 = self
+		slot2 = photoInfo
+		slot1.curPhotoInfo = slot2
+		slot1 = self
+		slot2 = nil
+		slot1.curPhotoImgUrl = slot2
+		slot1 = self
+		slot2 = true
+		slot1.photoSaved = slot2
+		slot1 = saveToCloud
+		--- END OF BLOCK #5 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 36-43, warpins: 1 ---
+		slot1 = Utils
+		slot1 = slot1.uploadPhotoToOSS
+		slot3 = photoImgUrl
+		slot4 = photoInfo
+		slot4 = slot4.ts
+
+		slot5 = function(slot0, slot1)
+			--- BLOCK #0 1-3, warpins: 1 ---
+			slot2 = nil
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 4-10, warpins: 1 ---
+			slot3 = ClientSettingUtils
+			slot3 = slot3.getPhotoSaveSuccessText
+			slot5 = storageMode
+			slot6 = photoPath
+			slot3 = slot3(slot5, slot6)
+			slot2 = slot3
+			--- END OF BLOCK #1 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+			--- BLOCK #2 11-17, warpins: 1 ---
+			slot3 = ClientSettingUtils
+			slot3 = slot3.getPhotoSaveFailureText
+			slot5 = slot1
+			slot6 = photoPath
+			slot3 = slot3(slot5, slot6)
+			--- END OF BLOCK #2 ---
+
+			slot2 = if not slot3 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 18-25, warpins: 1 ---
+			slot3 = ClientSettingUtils
+			slot3 = slot3.getPhotoSaveSuccessText
+			slot5 = ClientConst
+			slot5 = slot5.PhotoStorageMode
+			slot5 = slot5.Local
+			slot6 = photoPath
+			slot3 = slot3(slot5, slot6)
+			slot2 = slot3
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 26-31, warpins: 3 ---
+			slot3 = pg
+			slot3 = slot3.global
+			slot3 = slot3.showBubbleMessageRaw
+			slot5 = slot2
+
+			slot3(slot5)
+
+			return
+			--- END OF BLOCK #4 ---
+
+
+
+		end
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #7 44-53, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.showBubbleMessageRaw
+		slot3 = ClientSettingUtils
+		slot3 = slot3.getPhotoSaveSuccessText
+		slot5 = storageMode
+		slot6 = slot0
+		MULTRES = slot3(slot5, slot6)
+
+		slot1(MULTRES)
+
+		--- END OF BLOCK #7 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #8 54-59, warpins: 2 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.showBubbleMessage
+		slot3 = NoticeDef
+		slot3 = slot3.SAVE_PHOTOGRAPH_FAILED_DISC_FULL
+
+		slot1(slot3)
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 60-61, warpins: 3 ---
+		return
+		--- END OF BLOCK #9 ---
+
+
+
+	end
+
+	slot14(slot16, slot17, slot18)
+
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 89-99, warpins: 2 ---
+	slot0.curPhotoInfo = slot10
+	slot11 = true
+	slot0.photoSaved = slot11
+	slot11 = pg
+	slot11 = slot11.global
+	slot11 = slot11.showBubbleMessage
+	slot13 = NoticeDef
+	slot13 = slot13.SAVE_PHOTOGRAPH
+
+	slot11(slot13)
+
+	return
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 100-100, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot14.savePhoto = slot23
+slot14.savePhoto = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPuppetInViewport
@@ -4696,9 +6082,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.postPetInView = slot23
+slot14.postPetInView = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -4795,10 +6181,10 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.tryNotifyArkCarnPhotoSave = slot23
+slot14.tryNotifyArkCarnPhotoSave = slot29
 
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-32, warpins: 1 ---
+slot29 = function(slot0, slot1)
+	--- BLOCK #0 1-29, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.curPhotoInfo
 	slot3 = slot3.ts
@@ -4821,14 +6207,11 @@ slot23 = function(slot0, slot1)
 	slot4 = slot4(slot6)
 	slot2.preset = slot4
 	slot2.needSave = slot1
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.prefsCacheUtils
-	slot6 = slot4
-	slot4 = slot4.getBool
-	slot7 = "HudV2Enable"
-	slot8 = false
-	slot4 = slot4(slot6, slot7, slot8)
+	slot4 = slot0.ctrl
+	slot4 = slot4.currentCaptureImageKey
+	slot2.imgKey = slot4
+	slot4 = slot0.ctrl
+	slot4 = slot4.usePhotoCallback
 	--- END OF BLOCK #0 ---
 
 	slot4 = if slot4 then
@@ -4838,138 +6221,145 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 33-39, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot5 = slot5.hudV2
-	slot5 = slot5.quickPhoto
+	--- BLOCK #1 30-34, warpins: 1 ---
+	slot4 = slot0.ctrl
+	slot4 = slot4.usePhotoCallback
+	slot2.usePhotoCallback = slot4
+	slot4 = true
+	slot2.onlySave = slot4
 	--- END OF BLOCK #1 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 40-44, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot5 = slot5.hud
-	slot5 = slot5.quickPhoto
+	--- BLOCK #2 35-42, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.hudV2
+	slot4 = slot4.quickPhoto
+	slot5 = slot4.quickPhotoId
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 45-47, warpins: 2 ---
-	slot6 = slot5.quickPhotoId
+	--- BLOCK #3 43-43, warpins: 1 ---
+	slot5 = slot4.curAITraitPhotoId
 	--- END OF BLOCK #3 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 48-48, warpins: 1 ---
-	slot6 = slot5.curAITraitPhotoId
+	--- BLOCK #4 44-45, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 49-50, warpins: 2 ---
-	--- END OF BLOCK #5 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #6
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 51-51, warpins: 1 ---
-	slot2.traitId = slot6
+	--- BLOCK #5 46-46, warpins: 1 ---
+	slot2.traitId = slot5
 
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 47-47, warpins: 2 ---
+	return slot2
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 52-52, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #7 ---
-
 
 
 end
 
-slot14.getCurPhotoSprite = slot23
+slot14.getCurPhotoSprite = slot29
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-47, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.eModel
-	slot3 = slot1
-	slot1 = slot1.GetPositionAgentPosEx
-	slot1, slot2, slot3 = slot1(slot3)
-	slot4 = Vector3
-	slot4 = slot4.New
-	slot6 = slot1
-	slot7 = slot2
+slot29 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.eModel
+	slot5 = slot3
+	slot3 = slot3.GetPositionAgentPosEx
+	slot3, slot4, slot5 = slot3(slot5)
+	slot6 = Vector3
+	slot6 = slot6.New
 	slot8 = slot3
-	slot4 = slot4(slot6, slot7, slot8)
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.mobileCameraMgr
-	slot7 = slot5
-	slot5 = slot5.GetPetPhotoInfo
-	slot8 = os
-	slot8 = slot8.time
-	slot8 = slot8()
 	slot9 = slot4
-	slot10 = pg
-	slot10 = slot10.me
-	slot10 = slot10.space
-	slot10 = slot10.sceneId
-	slot11 = slot0.curTemplateIds
-	slot12 = slot0.curGenderInfos
-	slot13 = slot0.curGenderInfos
-	slot5 = slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13)
-	slot0.curPhotoInfo = slot5
-	slot8 = slot0
-	slot6 = slot0.getCurPhotoSprite
-	slot9 = true
-	slot6 = slot6(slot8, slot9)
-	slot5 = slot6
-	slot6 = slot5.sprite
-	slot0.curSprite = slot6
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.ui
-	slot6 = slot6.albumPhoto
-	slot8 = slot6
-	slot6 = slot6.open
-	slot9 = {}
-	slot9.photoInfo = slot5
-
-	slot6(slot8, slot9)
-
-	return
+	slot10 = slot5
+	slot6 = slot6(slot8, slot9, slot10)
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.mobileCameraMgr
+	slot9 = slot7
+	slot7 = slot7.GetPetPhotoInfo
 	--- END OF BLOCK #0 ---
 
+	slot10 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 20-22, warpins: 1 ---
+	slot10 = os
+	slot10 = slot10.time
+	slot10 = slot10()
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 23-50, warpins: 2 ---
+	slot11 = slot6
+	slot12 = pg
+	slot12 = slot12.me
+	slot12 = slot12.space
+	slot12 = slot12.sceneId
+	slot13 = slot0.curTemplateIds
+	slot14 = slot0.curGenderInfos
+	slot15 = slot0.curGenderInfos
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	slot0.curPhotoInfo = slot7
+	slot0.curPhotoImgUrl = slot2
+	slot10 = slot0
+	slot8 = slot0.getCurPhotoSprite
+	slot11 = true
+	slot8 = slot8(slot10, slot11)
+	slot7 = slot8
+	slot8 = slot7.sprite
+	slot0.curSprite = slot8
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.ui
+	slot8 = slot8.albumPhoto
+	slot10 = slot8
+	slot8 = slot8.open
+	slot11 = {}
+	slot11.photoInfo = slot7
+
+	slot8(slot10, slot11)
+
+	return
+	--- END OF BLOCK #2 ---
+
 
 
 end
 
-slot14.openAlbumToSave = slot23
+slot14.openAlbumToSave = slot29
 
-slot23 = function(slot0, slot1, slot2)
+slot29 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = {}
 	slot4 = {}
@@ -5510,9 +6900,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot14.getPuppetInViewport = slot23
+slot14.getPuppetInViewport = slot29
 
-slot23 = function(slot0, slot1, slot2)
+slot29 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0._targetTemplateId = slot1
 
@@ -5630,9 +7020,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot14.applyInvestigateInfo = slot23
+slot14.applyInvestigateInfo = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.photoMode
@@ -5671,9 +7061,9 @@ slot23 = function(slot0)
 
 end
 
-slot14.checkIsDialogue = slot23
+slot14.checkIsDialogue = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.photoMode
@@ -5685,36 +7075,107 @@ slot23 = function(slot0)
 	if slot1 ~= slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
-	slot1 = false
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.usePhotoCallback
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 10-10, warpins: 1 ---
-	slot1 = true
-
+	--- BLOCK #2 12-13, warpins: 1 ---
+	slot1 = false
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 11-11, warpins: 2 ---
-	return slot1
+	--- BLOCK #3 14-14, warpins: 2 ---
+	slot1 = true
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-15, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot14.checkIsNormalMode = slot23
+slot14.needConfirmPhoto = slot29
 
-slot23 = function(slot0, slot1)
+slot29 = function(slot0)
+	--- BLOCK #0 1-37, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnAppearanceUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnAlbumUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnSettingUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnScanCodeUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnFocusUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnTimePauseUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot14.initHomelandMode = slot29
+
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -5766,9 +7227,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot14.setDialogueKeyLeftConsoleForceInactive = slot23
+slot14.setDialogueKeyLeftConsoleForceInactive = slot29
 
-slot23 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-108, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.widget
@@ -5962,96 +7423,43 @@ slot23 = function(slot0)
 
 end
 
-slot14.initDialogueMode = slot23
+slot14.initDialogueMode = slot29
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
-	slot1 = LuaUIUtils
-	slot1 = slot1.sendCustomLog
-	slot3 = Const
-	slot3 = slot3.BILogName
-	slot3 = slot3.TAKE_PHOTO_TIME
-	slot4 = {}
-	slot5 = os
-	slot5 = slot5.date
-	slot7 = "%Y-%m-%d %H:%M:%S"
-	slot8 = Time
-	slot8 = slot8.secondCache
-	slot5 = slot5(slot7, slot8)
-	slot4.take_photo_time = slot5
-
-	slot1(slot3, slot4)
-
+slot29 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = PhotoEntityTypeIdentification
 	slot1 = slot1.getIdentifiedTypesInViewport
 	slot1 = slot1()
+	slot2 = {}
+	slot3 = slot0.petReportData
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 20-23, warpins: 1 ---
-	slot2 = #slot1
-	slot3 = 0
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot3 = slot0.petReportData
+	slot3 = #slot3
+	slot4 = 0
 	--- END OF BLOCK #1 ---
 
-	if slot2 > slot3 then
+	if slot3 > slot4 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 24-31, warpins: 1 ---
-	slot2 = LuaUIUtils
-	slot2 = slot2.sendCustomLog
-	slot4 = Const
-	slot4 = slot4.BILogName
-	slot4 = slot4.TAKE_PHOTO_CONTENT
-	slot5 = {}
-	slot5.take_photo_content = slot1
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 32-34, warpins: 3 ---
-	slot2 = slot0.petReportData
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 35-39, warpins: 1 ---
-	slot2 = slot0.petReportData
-	slot2 = #slot2
-	slot3 = 0
-	--- END OF BLOCK #4 ---
+	--- BLOCK #2 13-22, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot0.petReportData
 
-	if slot2 > slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #5 40-49, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.sort
-	slot4 = slot0.petReportData
-
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot0.dis
 		slot3 = slot1.dis
@@ -6087,133 +7495,147 @@ slot23 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = 1
-	slot3 = slot0.petReportData
-	slot3 = #slot3
-	slot4 = 1
+	slot3 = 1
+	slot4 = slot0.petReportData
+	slot4 = #slot4
+	slot5 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 23-33, warpins: 2 ---
+	slot7 = slot0.petReportData
+	slot7 = slot7[slot6]
+	slot8 = {}
+	slot9 = tostring
+	slot11 = slot7.templateId
+	slot9 = slot9(slot11)
+	slot8.pet_id = slot9
+	slot9 = slot7.label
+	slot8.label = slot9
+	slot2[slot6] = slot8
+	--- END OF BLOCK #3 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #4
+
+	--- BLOCK #4 34-38, warpins: 3 ---
+	slot3 = tonumber
+	slot5 = pg
+	slot5 = slot5.space
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 39-41, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.space
+	slot5 = slot5.sceneId
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 50-54, warpins: 2 ---
-	slot6 = slot0.petReportData
-	slot6 = slot6[slot5]
-	slot7 = nil
-	slot6.dis = slot7
+	--- BLOCK #6 42-44, warpins: 2 ---
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #6 ---
 
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #7
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
-	--- BLOCK #7 55-63, warpins: 1 ---
-	slot2 = LuaUIUtils
-	slot2 = slot2.sendCustomLog
-	slot4 = Const
-	slot4 = slot4.BILogName
-	slot4 = slot4.TAKE_PHOTO_PET
-	slot5 = {}
-	slot6 = slot0.petReportData
-	slot5.take_photo_pet = slot6
 
-	slot2(slot4, slot5)
-
+	--- BLOCK #7 45-45, warpins: 1 ---
+	slot3 = 0
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 64-67, warpins: 3 ---
-	slot2 = pg
-	slot2 = slot2.space
+	--- BLOCK #8 46-48, warpins: 2 ---
+	slot4 = 0
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
+	if slot3 ~= 0 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 68-70, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.space
-	slot2 = slot2.sceneId
+	--- BLOCK #9 49-70, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.getPosition
+	slot5 = slot5(slot7)
+	slot6 = tonumber
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.map
+	slot10 = slot8
+	slot8 = slot8.inWhichBlock
+	slot11 = slot3
+	slot12 = false
+	slot13 = {}
+	slot14 = slot5[1]
+	slot13.x = slot14
+	slot14 = slot5[3]
+	slot13.z = slot14
+	MULTRES = slot8(slot10, slot11, slot12, slot13)
+	slot6 = slot6(MULTRES)
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 71-72, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #11
+	slot4 = if not slot6 then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #11 73-101, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.getPosition
-	slot3 = slot3(slot5)
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.map
-	slot6 = slot4
-	slot4 = slot4.inWhichBlock
-	slot7 = slot2
-	slot8 = false
-	slot9 = {}
-	slot10 = slot3[1]
-	slot9.x = slot10
-	slot10 = slot3[3]
-	slot9.z = slot10
-	slot4 = slot4(slot6, slot7, slot8, slot9)
-	slot5 = LuaUIUtils
-	slot5 = slot5.sendCustomLog
-	slot7 = Const
-	slot7 = slot7.BILogName
-	slot7 = slot7.TAKE_PHOTO_ADDRESS
-	slot8 = {}
-	slot9 = {}
-	slot9[1] = slot2
-	slot9[2] = slot4
-	slot8.take_photo_address = slot9
+	--- BLOCK #10 71-71, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #10 ---
 
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #12 102-111, warpins: 2 ---
-	slot3 = LuaUIUtils
-	slot3 = slot3.sendCustomLog
-	slot5 = Const
-	slot5 = slot5.BILogName
-	slot5 = slot5.TAKE_PHOTO_TYPE
-	slot6 = {}
-	slot7 = slot0.curPhotoTypeIndex
-	slot6.take_photo_type = slot7
+	--- BLOCK #11 72-86, warpins: 3 ---
+	slot5 = {}
+	slot5.content = slot1
+	slot5.pet_list = slot2
+	slot5.scene_id = slot3
+	slot5.area_id = slot4
+	slot6 = slot0.curPhotoTypeIndex
+	slot5.type = slot6
+	slot6 = LuaUIUtils
+	slot6 = slot6.sendCustomLog
+	slot8 = Const
+	slot8 = slot8.BILogName
+	slot8 = slot8.PHOTO_POINT
+	slot9 = slot5
 
-	slot3(slot5, slot6)
+	slot6(slot8, slot9)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot14.reportPhotoLog = slot23
+slot14.reportPhotoLog = slot29
 
 return slot14
 --- END OF BLOCK #0 ---

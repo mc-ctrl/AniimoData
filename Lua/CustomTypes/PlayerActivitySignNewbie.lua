@@ -23,15 +23,15 @@ end
 
 slot2.getContinueTotalSignNum = slot3
 
-slot3 = function(slot0)
+slot3 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.activityBase
-	slot3 = slot1
-	slot1 = slot1.isGoing
-	slot1 = slot1(slot3)
+	slot3 = slot0.activityBase
+	slot5 = slot3
+	slot3 = slot3.isGoing
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
@@ -39,10 +39,10 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #1 7-9, warpins: 1 ---
-	slot1 = slot0.opened
+	slot3 = slot0.opened
 	--- END OF BLOCK #1 ---
 
-	if slot1 == 1 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -50,9 +50,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #2 10-11, warpins: 1 ---
-	slot1 = false
+	slot3 = false
 
-	return slot1
+	return slot3
 
 	--- END OF BLOCK #2 ---
 
@@ -60,9 +60,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #3 12-13, warpins: 3 ---
-	slot1 = true
+	slot3 = true
 
-	return slot1
+	return slot3
 	--- END OF BLOCK #3 ---
 
 
@@ -71,15 +71,15 @@ end
 
 slot2.canTabOpen = slot3
 
-slot3 = function(slot0)
+slot3 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.activityBase
-	slot3 = slot1
-	slot1 = slot1.isGoing
-	slot1 = slot1(slot3)
+	slot3 = slot0.activityBase
+	slot5 = slot3
+	slot3 = slot3.isGoing
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
@@ -87,10 +87,10 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #1 7-9, warpins: 1 ---
-	slot1 = slot0.opened
+	slot3 = slot0.opened
 	--- END OF BLOCK #1 ---
 
-	if slot1 == 1 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -98,9 +98,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #2 10-11, warpins: 1 ---
-	slot1 = false
+	slot3 = false
 
-	return slot1
+	return slot3
 
 	--- END OF BLOCK #2 ---
 
@@ -108,9 +108,9 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #3 12-13, warpins: 3 ---
-	slot1 = true
+	slot3 = true
 
-	return slot1
+	return slot3
 	--- END OF BLOCK #3 ---
 
 

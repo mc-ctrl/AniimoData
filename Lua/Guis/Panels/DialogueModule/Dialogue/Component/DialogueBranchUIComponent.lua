@@ -1,4 +1,4 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-50, warpins: 1 ---
 slot0 = require
 slot2 = "Utils.LuaUIUtils"
 slot0 = slot0(slot2)
@@ -53,7 +53,7 @@ end
 slot6.findObjects = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.dialogueBranchList
 
 	slot2 = function(slot0, slot1, slot2)
@@ -76,58 +76,6 @@ slot7 = function(slot0)
 	end
 
 	slot1.luaRenderItem = slot2
-	slot1 = slot0.ctrl
-	slot3 = slot1
-	slot1 = slot1.bindHotKeyPerform
-	slot4 = "Common/GamepadConfirm"
-
-	slot5 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.selectedBtn
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-9, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.selectedBtn
-		slot0 = slot0.luaClick
-
-		slot0()
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 10-11, warpins: 1 ---
-		slot0 = true
-
-		return slot0
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 12-12, warpins: 2 ---
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot6 = slot0.gameObject
-	slot7 = "Common/GamepadConfirm"
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
-
 	slot3 = slot0
 	slot1 = slot0.show
 
@@ -397,7 +345,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 7-17, warpins: 1 ---
+	--- BLOCK #2 7-22, warpins: 1 ---
 	slot2 = slot0.selectedBtn
 	slot3 = slot0.selectedBtn
 	slot3 = slot3.customData
@@ -409,12 +357,17 @@ slot7 = function(slot0, slot1)
 	slot2 = slot2.keyBind
 	slot3 = ""
 	slot2.actionPath = slot3
+	slot2 = slot0.selectedBtn
+	slot2 = slot2.customData
+	slot2 = slot2.keyBind
+	slot3 = 0
+	slot2.priority = slot3
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 18-33, warpins: 3 ---
+	--- BLOCK #3 23-43, warpins: 3 ---
 	slot0.selectedBtn = slot1
 	slot2 = slot0.selectedBtn
 	slot3 = true
@@ -426,6 +379,11 @@ slot7 = function(slot0, slot1)
 	slot3 = slot3.customData
 	slot3 = slot3.actionPath
 	slot2.actionPath = slot3
+	slot2 = slot0.selectedBtn
+	slot2 = slot2.customData
+	slot2 = slot2.keyBind
+	slot3 = 1000
+	slot2.priority = slot3
 	slot4 = slot0
 	slot2 = slot0.setSelectData
 	slot5 = slot1.customData
@@ -829,17 +787,25 @@ end
 slot6.onGamepadSwitch = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = {}
+	slot3 = true
+	slot0.allNotImportant = slot3
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.getGameTime
+	slot3 = slot3(slot5)
+	slot0.showTime = slot3
 	slot3 = pairs
 	slot5 = slot1
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #1 6-9, warpins: 1 ---
+	--- BLOCK #1 14-17, warpins: 1 ---
 	slot8 = {}
 	slot9 = slot7.btnIcon
 	--- END OF BLOCK #1 ---
@@ -851,7 +817,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 10-11, warpins: 1 ---
+	--- BLOCK #2 18-19, warpins: 1 ---
 	slot9 = AddressDataConst
 	slot9 = slot9.BRANCH_OPTION_ICON
 	--- END OF BLOCK #2 ---
@@ -859,12 +825,10 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 12-31, warpins: 2 ---
+	--- BLOCK #3 20-42, warpins: 2 ---
 	slot8.btnIcon = slot9
 	slot9 = slot7.optionText
 	slot8.btnTitle = slot9
-	slot9 = "Hud/Interact"
-	slot8.actionPath = slot9
 	slot9 = slot7.dialogueId
 	slot8.dialogueId = slot9
 	slot9 = slot7.id
@@ -877,26 +841,108 @@ slot7 = function(slot0, slot1)
 	slot8.hasSelected = slot9
 	slot9 = slot7.callback
 	slot8.callback = slot9
+	slot9 = slot7.important
+	slot8.important = slot9
 	slot9 = #slot2
 	slot9 = slot9 + 1
 	slot2[slot9] = slot8
-
+	slot9 = slot7.important
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot9 = if slot9 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 32-33, warpins: 2 ---
+	--- BLOCK #4 43-44, warpins: 1 ---
+	slot9 = false
+	slot0.allNotImportant = slot9
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 45-46, warpins: 3 ---
+	--- END OF BLOCK #5 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #5
+	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #5 34-34, warpins: 1 ---
+	--- BLOCK #6 47-49, warpins: 1 ---
+	slot3 = slot0.allNotImportant
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 50-53, warpins: 1 ---
+	slot3 = pairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 54-55, warpins: 1 ---
+	slot8 = "Hud/InteractSouth"
+	slot7.actionPath = slot8
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 56-57, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 58-58, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #11 59-62, warpins: 1 ---
+	slot3 = pairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 63-64, warpins: 1 ---
+	slot8 = "Hud/Interact"
+	slot7.actionPath = slot8
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 65-66, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 67-67, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #14 ---
 
 
 
@@ -904,144 +950,268 @@ end
 
 slot6.getCurrentDialogueBranchInfo = slot7
 
-slot7 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-35, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.GetComponent
-	slot7 = "ObjectReference"
-	slot4 = slot4(slot6, slot7)
-	slot5 = slot1.customData
-	slot8 = slot1
-	slot6 = slot1.GetComponent
-	slot9 = "KeyBindingPro"
-	slot6 = slot6(slot8, slot9)
-	slot5.keyBind = slot6
-	slot7 = slot4
-	slot5 = slot4.GetRefValue
-	slot8 = "iconUImage"
+slot7 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-33, warpins: 1 ---
+	slot7 = slot1
+	slot5 = slot1.GetComponent
+	slot8 = "ObjectReference"
 	slot5 = slot5(slot7, slot8)
-	slot8 = slot4
-	slot6 = slot4.GetRefValue
-	slot9 = "txtNameOneUSDFText"
-	slot6 = slot6(slot8, slot9)
-	slot9 = slot4
-	slot7 = slot4.GetRefValue
-	slot10 = "txtNameTwoUSDFText"
+	slot6 = slot1.customData
+	slot9 = slot1
+	slot7 = slot1.GetComponent
+	slot10 = "KeyBindingPro"
 	slot7 = slot7(slot9, slot10)
-	slot10 = slot6
-	slot8 = slot6.SetActive
-	slot11 = false
+	slot6.keyBind = slot7
+	slot8 = slot5
+	slot6 = slot5.GetRefValue
+	slot9 = "iconUImage"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot5
+	slot7 = slot5.GetRefValue
+	slot10 = "txtNameOneUSDFText"
+	slot7 = slot7(slot9, slot10)
+	slot10 = slot5
+	slot8 = slot5.GetRefValue
+	slot11 = "txtNameTwoUSDFText"
+	slot8 = slot8(slot10, slot11)
+	slot11 = slot7
+	slot9 = slot7.SetActive
+	slot12 = false
 
-	slot8(slot10, slot11)
+	slot9(slot11, slot12)
 
-	slot10 = slot7
-	slot8 = slot7.SetActive
-	slot11 = false
+	slot11 = slot8
+	slot9 = slot8.SetActive
+	slot12 = false
 
-	slot8(slot10, slot11)
+	slot9(slot11, slot12)
 
-	slot8 = slot3.btnIcon
-	slot5.url = slot8
-	slot8 = slot3.btnIcon
+	slot9 = slot3.btnIcon
 	--- END OF BLOCK #0 ---
 
-	if slot8 == nil then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 36-41, warpins: 1 ---
-	slot8 = LuaUIUtils
-	slot8 = slot8.setUIViewVisible
-	slot10 = slot5
-	slot11 = false
-
-	slot8(slot10, slot11)
-
+	--- BLOCK #1 34-39, warpins: 1 ---
+	slot12 = slot9
+	slot10 = slot9.match
+	slot13 = "^%$(.+)%.png$"
+	slot10 = slot10(slot12, slot13)
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot10 = if slot10 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 42-46, warpins: 1 ---
-	slot8 = LuaUIUtils
-	slot8 = slot8.setUIViewVisible
-	slot10 = slot5
-	slot11 = true
-
-	slot8(slot10, slot11)
-
+	--- BLOCK #2 40-50, warpins: 1 ---
+	slot12 = slot9
+	slot10 = slot9.match
+	slot13 = "^%$(.+)%.png$"
+	slot10 = slot10(slot12, slot13)
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = "%s[%s]"
+	slot14 = slot9
+	slot15 = slot10
+	slot11 = slot11(slot13, slot14, slot15)
+	slot9 = slot11
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 47-64, warpins: 2 ---
-	slot8 = ClientTextUtils
-	slot8 = slot8.setText
-	slot10 = slot6
-	slot11 = LuaUIUtils
-	slot11 = slot11.getReplacedDialogueText
-	slot13 = slot3.btnTitle
-	MULTRES = slot11(slot13)
+	--- BLOCK #3 51-58, warpins: 3 ---
+	slot12 = slot6
+	slot10 = slot6.SetUrlWithCallback
+	slot13 = slot9
 
-	slot8(slot10, MULTRES)
+	slot14 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = icon
+		slot2 = slot0
+		slot0 = slot0.GetSpriteSize
+		slot0 = slot0(slot2)
+		slot0 = slot0[1]
+		slot1 = 100
+		--- END OF BLOCK #0 ---
 
-	slot8 = true
-	slot1.enabledVisualSelect = slot8
-	slot8 = slot3.hasSelected
-	slot8 = not slot8
-	slot1.visualInteractable = slot8
-	slot10 = slot6
-	slot8 = slot6.IsTextOverflowing
-	slot8 = slot8(slot10)
+		if slot0 >= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-15, warpins: 1 ---
+		slot1 = button
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "stage"
+		slot5 = 1
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #2 16-18, warpins: 1 ---
+		slot1 = 36
+		--- END OF BLOCK #2 ---
+
+		if slot0 <= slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 19-25, warpins: 1 ---
+		slot1 = button
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "stage"
+		slot5 = 0
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #3 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #4 26-31, warpins: 1 ---
+		slot1 = button
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "stage"
+		slot5 = 2
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 32-32, warpins: 3 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot10(slot12, slot13, slot14)
+
+	slot10 = slot3.btnIcon
 	--- END OF BLOCK #3 ---
 
-	slot8 = if slot8 then
+	if slot10 == nil then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 65-77, warpins: 1 ---
-	slot8 = ClientTextUtils
-	slot8 = slot8.setText
-	slot10 = slot7
-	slot11 = LuaUIUtils
-	slot11 = slot11.getReplacedDialogueText
-	slot13 = slot3.btnTitle
-	MULTRES = slot11(slot13)
+	--- BLOCK #4 59-64, warpins: 1 ---
+	slot10 = LuaUIUtils
+	slot10 = slot10.setUIViewVisible
+	slot12 = slot6
+	slot13 = false
 
-	slot8(slot10, MULTRES)
-
-	slot10 = slot7
-	slot8 = slot7.SetActive
-	slot11 = true
-
-	slot8(slot10, slot11)
+	slot10(slot12, slot13)
 
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 78-81, warpins: 1 ---
-	slot10 = slot6
-	slot8 = slot6.SetActive
-	slot11 = true
+	--- BLOCK #5 65-69, warpins: 1 ---
+	slot10 = LuaUIUtils
+	slot10 = slot10.setUIViewVisible
+	slot12 = slot6
+	slot13 = true
 
-	slot8(slot10, slot11)
+	slot10(slot12, slot13)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 82-100, warpins: 2 ---
-	slot8 = function()
+	--- BLOCK #6 70-87, warpins: 2 ---
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot7
+	slot13 = LuaUIUtils
+	slot13 = slot13.getReplacedDialogueText
+	slot15 = slot3.btnTitle
+	MULTRES = slot13(slot15)
+
+	slot10(slot12, MULTRES)
+
+	slot10 = true
+	slot1.enabledVisualSelect = slot10
+	slot10 = slot3.hasSelected
+	slot10 = not slot10
+	slot1.visualInteractable = slot10
+	slot12 = slot7
+	slot10 = slot7.IsTextOverflowing
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #6 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 88-100, warpins: 1 ---
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot8
+	slot13 = LuaUIUtils
+	slot13 = slot13.getReplacedDialogueText
+	slot15 = slot3.btnTitle
+	MULTRES = slot13(slot15)
+
+	slot10(slot12, MULTRES)
+
+	slot12 = slot8
+	slot10 = slot8.SetActive
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 101-104, warpins: 1 ---
+	slot12 = slot7
+	slot10 = slot7.SetActive
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 105-123, warpins: 2 ---
+	slot10 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = button
 		slot0 = slot0.isSelected
@@ -1088,16 +1258,57 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaHover = slot8
-	slot8 = LuaUIUtils
-	slot8 = slot8.setUIViewVisible
-	slot10 = slot1
-	slot11 = true
+	slot1.luaHover = slot10
+	slot10 = LuaUIUtils
+	slot10 = slot10.setUIViewVisible
+	slot12 = slot1
+	slot13 = true
 
-	slot8(slot10, slot11)
+	slot10(slot12, slot13)
 
-	slot8 = function()
-		--- BLOCK #0 1-14, warpins: 1 ---
+	slot10 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.showTime
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-15, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.getGameTime
+		slot0 = slot0(slot2)
+		slot1 = self
+		slot1 = slot1.showTime
+		slot0 = slot0 - slot1
+		slot1 = 0.5
+		--- END OF BLOCK #1 ---
+
+		if slot0 < slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 16-17, warpins: 2 ---
+		slot0 = false
+
+		return slot0
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 18-31, warpins: 2 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.communication
@@ -1112,16 +1323,16 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 		slot0 = data
 		slot0 = slot0.callback
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 		slot0 = if slot0 then
-		JUMP TO BLOCK #1
+		JUMP TO BLOCK #4
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #1 15-20, warpins: 1 ---
+		--- BLOCK #4 32-39, warpins: 1 ---
 		slot0 = data
 		slot0 = slot0.callback
 		slot2 = data
@@ -1129,12 +1340,16 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2)
 
-		--- END OF BLOCK #1 ---
+		slot0 = false
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
+		return slot0
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #2 21-29, warpins: 1 ---
+		--- BLOCK #5 40-49, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.ctrl
 		slot2 = slot0
@@ -1143,31 +1358,34 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		slot3 = slot3.nextDialogueId
 		slot4 = data
 		slot4 = slot4.index
+		slot5 = customInfo
 
-		slot0(slot2, slot3, slot4)
+		slot0(slot2, slot3, slot4, slot5)
 
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
-		FLOW; TARGET BLOCK #3
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #3 30-30, warpins: 2 ---
-		return
-		--- END OF BLOCK #3 ---
+		--- BLOCK #6 50-51, warpins: 2 ---
+		slot0 = true
+
+		return slot0
+		--- END OF BLOCK #6 ---
 
 
 
 	end
 
-	slot1.luaClick = slot8
-	slot8 = slot1.customData
-	slot8 = slot8.keyBind
-	slot9 = true
-	slot8.isVirtual = slot9
-	slot8 = slot1.customData
-	slot8 = slot8.keyBind
+	slot1.luaClick = slot10
+	slot10 = slot1.customData
+	slot10 = slot10.keyBind
+	slot11 = true
+	slot10.isVirtual = slot11
+	slot10 = slot1.customData
+	slot10 = slot10.keyBind
 
-	slot9 = function(slot0)
+	slot11 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #0 ---
@@ -1199,10 +1417,10 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot8.luaTrigger = slot9
+	slot10.luaTrigger = slot11
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -1362,6 +1580,102 @@ slot7 = function(slot0)
 end
 
 slot6.onInputDeviceChange = slot7
+
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.selectedBtn
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.selectedBtn
+	slot2 = slot2.customData
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot3 = slot2.isImportant
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-16, warpins: 1 ---
+	slot3 = slot0.selectedBtn
+	slot3 = slot3.luaClick
+
+	slot3()
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #5 17-19, warpins: 2 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 20-23, warpins: 1 ---
+	slot3 = slot0.selectedBtn
+	slot3 = slot3.luaClick
+
+	slot3()
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 24-25, warpins: 1 ---
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-26, warpins: 4 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot6.clickSelectData = slot7
 
 return slot6
 --- END OF BLOCK #0 ---

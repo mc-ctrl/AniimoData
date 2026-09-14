@@ -271,7 +271,7 @@ slot28 = function(slot0, slot1)
 end
 
 slot29 = function(slot0)
-	--- BLOCK #0 1-92, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.getLogger
 	slot3 = "LockHelper"
@@ -287,12 +287,31 @@ slot29 = function(slot0)
 	slot0.lastAutoLockTime = slot1
 	slot1 = true
 	slot0.isUseLockOnExtendCamera = slot1
-	slot1 = ClientSettingUtils
-	slot1 = slot1.getDefaultSettingValue
-	slot3 = ClientConst
-	slot3 = slot3.SettingFuncType
-	slot3 = slot3.UseExtendLockCamera
-	slot1 = slot1(slot3)
+	slot1 = tonumber
+	slot3 = ClientSettingUtils
+	slot3 = slot3.getDefaultSettingValue
+	slot5 = ClientConst
+	slot5 = slot5.SettingFuncType
+	slot5 = slot5.UseExtendLockCamera
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 26-26, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 27-36, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.setting
@@ -301,16 +320,71 @@ slot29 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.PrefKey
 	slot5 = slot5.UseExtendLockCamera
-	slot6 = ToBool
-	slot8 = slot1
-	MULTRES = slot6(slot8)
-	slot2 = slot2(slot4, slot5, MULTRES)
+	--- END OF BLOCK #2 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 37-38, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 39-39, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 40-51, warpins: 2 ---
+	slot2 = slot2(slot4, slot5, slot6)
 	slot0.isUseLockOnExtendCamera = slot2
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.setting
+	slot4 = slot2
+	slot2 = slot2.getBool
+	slot5 = ClientConst
+	slot5 = slot5.PrefKey
+	slot5 = slot5.IsForceLockTarget
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= 1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 52-53, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 54-54, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 55-95, warpins: 2 ---
+	slot2 = slot2(slot4, slot5, slot6)
+	slot0.isUseLockOnCamera = slot2
 	slot2 = ClientSettingUtils
 	slot2 = slot2.getDefaultSettingValue
 	slot4 = ClientConst
 	slot4 = slot4.SettingFuncType
-	slot4 = slot4.IsForceLockTarget
+	slot4 = slot4.IsEnableManualClickForceLockEnemy
 	slot2 = slot2(slot4)
 	slot3 = pg
 	slot3 = slot3.game
@@ -319,92 +393,73 @@ slot29 = function(slot0)
 	slot3 = slot3.getBool
 	slot6 = ClientConst
 	slot6 = slot6.PrefKey
-	slot6 = slot6.IsForceLockTarget
+	slot6 = slot6.IsEnableManualClickForceLockEnemy
 	slot7 = ToBool
 	slot9 = slot2
 	MULTRES = slot7(slot9)
 	slot3 = slot3(slot5, slot6, MULTRES)
-	slot0.isUseLockOnCamera = slot3
-	slot3 = ClientSettingUtils
-	slot3 = slot3.getDefaultSettingValue
-	slot5 = ClientConst
-	slot5 = slot5.SettingFuncType
-	slot5 = slot5.IsEnableManualClickForceLockEnemy
-	slot3 = slot3(slot5)
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.setting
-	slot6 = slot4
-	slot4 = slot4.getBool
-	slot7 = ClientConst
-	slot7 = slot7.PrefKey
-	slot7 = slot7.IsEnableManualClickForceLockEnemy
-	slot8 = ToBool
-	slot10 = slot3
-	MULTRES = slot8(slot10)
-	slot4 = slot4(slot6, slot7, MULTRES)
-	slot0.isEnableManualClickForceLockEnemy = slot4
-	slot4 = false
-	slot0.isUseTabSwitchTarget = slot4
-	slot4 = false
-	slot0.isUseHoldCancelLock = slot4
-	slot4 = {}
-	slot0.lockRecord = slot4
-	slot4 = 1
-	slot0.scrollGroup = slot4
-	slot4 = {}
-	slot0.scrollVisited = slot4
-	slot4 = 0
-	slot0.lastScrollTime = slot4
-	slot4 = false
-	slot0.isUseLockCD = slot4
-	slot4 = 0
-	slot0.lastLockByDisTime = slot4
-	slot4 = SysConfigData
-	slot4 = slot4.scrollChangeTargetCd
-	--- END OF BLOCK #0 ---
+	slot0.isEnableManualClickForceLockEnemy = slot3
+	slot3 = false
+	slot0.isUseTabSwitchTarget = slot3
+	slot3 = false
+	slot0.isUseHoldCancelLock = slot3
+	slot3 = {}
+	slot0.lockRecord = slot3
+	slot3 = 1
+	slot0.scrollGroup = slot3
+	slot3 = {}
+	slot0.scrollVisited = slot3
+	slot3 = 0
+	slot0.lastScrollTime = slot3
+	slot3 = false
+	slot0.isUseLockCD = slot3
+	slot3 = 0
+	slot0.lastLockByDisTime = slot3
+	slot3 = SysConfigData
+	slot3 = slot3.scrollChangeTargetCd
+	--- END OF BLOCK #8 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #1
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #1 93-93, warpins: 1 ---
-	slot4 = 0.5
-	--- END OF BLOCK #1 ---
+	--- BLOCK #9 96-96, warpins: 1 ---
+	slot3 = 0.5
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #2 94-115, warpins: 2 ---
-	slot0.scrollChangeTargetCd = slot4
-	slot4 = AbilitySettingGlobalConstData
-	slot4 = slot4.forceLockDis
-	slot0.lockDis = slot4
-	slot6 = slot0
-	slot4 = slot0.onInputDeviceChange
+	--- BLOCK #10 97-118, warpins: 2 ---
+	slot0.scrollChangeTargetCd = slot3
+	slot3 = AbilitySettingGlobalConstData
+	slot3 = slot3.forceLockDis
+	slot0.lockDis = slot3
+	slot5 = slot0
+	slot3 = slot0.onInputDeviceChange
 
-	slot4(slot6)
+	slot3(slot5)
 
-	slot4 = nil
-	slot0.forceLockMasterActorId = slot4
-	slot4 = {}
-	slot0.flashlightLockSet = slot4
-	slot4 = LuaCSharpArr
-	slot4 = slot4.New
-	slot6 = MAX_SEARCH_CNT
-	slot4 = slot4(slot6)
-	slot0.actorList = slot4
-	slot4 = LuaCSharpArr
-	slot4 = slot4.New
-	slot6 = MAX_SEARCH_CNT
-	slot4 = slot4(slot6)
-	slot0.envList = slot4
+	slot3 = nil
+	slot0.forceLockMasterActorId = slot3
+	slot3 = {}
+	slot0.flashlightLockSet = slot3
+	slot3 = LuaCSharpArr
+	slot3 = slot3.New
+	slot5 = MAX_SEARCH_CNT
+	slot3 = slot3(slot5)
+	slot0.actorList = slot3
+	slot3 = LuaCSharpArr
+	slot3 = slot3.New
+	slot5 = MAX_SEARCH_CNT
+	slot3 = slot3(slot5)
+	slot0.envList = slot3
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -1025,7 +1080,7 @@ slot29 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #26 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
 	--- BLOCK #27 138-143, warpins: 1 ---
@@ -1053,7 +1108,7 @@ slot29 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 147-163, warpins: 2 ---
+	--- BLOCK #29 147-161, warpins: 2 ---
 	slot12 = AIUtils
 	slot12 = slot12.searchInteractEnvObj
 	slot14 = slot3.actorId
@@ -1061,6 +1116,22 @@ slot29 = function(slot0, slot1, slot2)
 	slot11 = slot14
 	slot9 = slot13
 	slot8 = slot12
+	slot12 = LoggerManager
+	slot12 = slot12.checkLogger
+	slot14 = LoggerConst
+	slot14 = slot14.DEBUG
+	slot15 = "AI"
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #29 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #30 162-169, warpins: 1 ---
 	slot12 = slot0.logger
 	slot14 = slot12
 	slot12 = slot12.debug
@@ -1071,16 +1142,22 @@ slot29 = function(slot0, slot1, slot2)
 
 	slot12(slot14, slot15, slot16, slot17, slot18)
 
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 170-171, warpins: 2 ---
+	--- END OF BLOCK #31 ---
 
 	if slot8 == 0 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #30 164-171, warpins: 1 ---
+	--- BLOCK #32 172-179, warpins: 1 ---
 	slot12 = pg
 	slot12 = slot12.me
 	slot12 = slot12.lockedActorId
@@ -1091,25 +1168,25 @@ slot29 = function(slot0, slot1, slot2)
 
 	return slot12, slot13, slot14
 
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #31 172-175, warpins: 2 ---
+	--- BLOCK #33 180-183, warpins: 2 ---
 	slot12 = slot8
 	slot13 = slot9
 	slot14 = slot11
 
 	return slot12, slot13, slot14
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #33 ---
 
-	FLOW; TARGET BLOCK #32
+	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #32 176-176, warpins: 2 ---
+	--- BLOCK #34 184-184, warpins: 2 ---
 	return
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #34 ---
 
 
 
@@ -1168,7 +1245,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot9 = slot2
 	slot10 = Const
 	slot10 = slot10.SEARCH_USR_TYPE_LOCKABLE
-	slot11 = 15
+	slot11 = 25
 	slot12 = slot0.actorList
 	slot13 = true
 	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13)
@@ -2470,7 +2547,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	--- BLOCK #38 147-154, warpins: 2 ---
 	slot12 = Time
-	slot12 = slot12.secondCache
+	slot12 = slot12.realSecondCache
 	slot0.lastAutoLockTime = slot12
 	slot12 = ToBool
 	slot14 = slot1
@@ -2947,7 +3024,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot11(slot13, slot14, slot15)
 
 	slot11 = Time
-	slot11 = slot11.secondCache
+	slot11 = slot11.realSecondCache
 	slot0.lastLockByDisTime = slot11
 	slot11 = math
 	slot11 = slot11.max
@@ -3541,7 +3618,7 @@ slot33 = function(slot0)
 
 	--- BLOCK #4 25-32, warpins: 1 ---
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.lastLockByDisTime
 	slot3 = slot3 - slot4
 	slot4 = AbilitySettingGlobalConstData
@@ -5301,7 +5378,7 @@ slot33 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastTickTime
 	--- END OF BLOCK #16 ---
 
@@ -6049,7 +6126,7 @@ slot33 = function(slot0, slot1)
 
 	--- BLOCK #3 11-17, warpins: 2 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot0.lastScrollTime
 	slot2 = slot2 - slot3
 	slot3 = slot0.scrollChangeTargetCd
@@ -6074,7 +6151,7 @@ slot33 = function(slot0, slot1)
 
 	--- BLOCK #5 20-26, warpins: 2 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.lastScrollTime = slot2
 	slot2, slot3 = nil
 	slot4 = 0
@@ -6150,52 +6227,81 @@ end
 slot16.onMouseScroll = slot33
 
 slot33 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = ToBool
 	slot4 = slot1
 	slot2 = slot2(slot4)
 	slot1 = slot2
 	slot0.isUseLockOnExtendCamera = slot1
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.camera
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-15, warpins: 1 ---
+	--- BLOCK #1 11-14, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.camera
 	slot2 = slot2.playerCameraMode
-	slot4 = slot2
-	slot2 = slot2.setLockOnCameraTarget
-	slot5 = nil
-
-	slot2(slot4, slot5)
-
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-26, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.setting
-	slot4 = slot2
-	slot2 = slot2.setBool
-	slot5 = ClientConst
-	slot5 = slot5.PrefKey
-	slot5 = slot5.UseExtendLockCamera
-	slot6 = slot1
+	--- BLOCK #2 15-16, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
-	slot2(slot4, slot5, slot6)
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-22, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.setLockOnCameraTarget
+	slot6 = nil
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-33, warpins: 3 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.setting
+	slot5 = slot3
+	slot3 = slot3.setBool
+	slot6 = ClientConst
+	slot6 = slot6.PrefKey
+	slot6 = slot6.UseExtendLockCamera
+	slot7 = slot1
+
+	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -6204,7 +6310,7 @@ end
 slot16.setIsUseLockOnExtendCamera = slot33
 
 slot33 = function(slot0, slot1)
-	--- BLOCK #0 1-23, warpins: 1 ---
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = ToBool
 	slot4 = slot1
 	slot2 = slot2(slot4)
@@ -6225,13 +6331,59 @@ slot33 = function(slot0, slot1)
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.camera
-	slot2 = slot2.playerCameraMode
-	slot2 = slot2.lockOnExtendCamera
-	slot2 = slot2.cameraMode
-	slot2.isForceLockTarget = slot1
-
-	return
 	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 21-24, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.camera
+	slot2 = slot2.playerCameraMode
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 25-26, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 27-29, warpins: 1 ---
+	slot3 = slot2.lockOnExtendCamera
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 30-32, warpins: 1 ---
+	slot3 = slot2.lockOnExtendCamera
+	slot3 = slot3.cameraMode
+	slot3.isForceLockTarget = slot1
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 33-33, warpins: 3 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 

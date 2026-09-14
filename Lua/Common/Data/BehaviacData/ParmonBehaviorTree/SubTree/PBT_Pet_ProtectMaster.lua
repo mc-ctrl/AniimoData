@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_Pet_ProtectMaster",
 	agenttype = "PetAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_Pet_ProtectMaster",
 	version = 6,
 	useForRoute = false
 }
@@ -16,10 +16,10 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	name = "tEnemyId",
 	type = "int",
-	value = "0"
+	value = "0",
+	const = 0
 }
 slot4[1] = slot5
 slot3.pars = slot4
@@ -52,7 +52,7 @@ slot9.Opl = slot10
 slot8[2] = slot9
 slot9 = {}
 slot10 = {
-	func = "getLetGoTarget"
+	func = "getTarget"
 }
 slot9.Opr = slot10
 slot8[3] = slot9

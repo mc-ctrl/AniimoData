@@ -1,4 +1,4 @@
---- BLOCK #0 1-155, warpins: 1 ---
+--- BLOCK #0 1-163, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -21,85 +21,91 @@ slot6 = require
 slot8 = "Const.UIConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.Utils"
+slot9 = "Const.RedDotConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.Const"
+slot10 = "Common.Utils.Utils"
 slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.NoticeDef"
+slot12 = "Common.Const.Const"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.LuaUIUtils"
+slot13 = "Common.NoticeDef"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.MessageName"
+slot14 = "Utils.LuaUIUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.ClientUtils"
+slot15 = "Const.MessageName"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.TimeUtils"
+slot16 = "Utils.ClientUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Utils.ItemUtils"
+slot17 = "Common.Utils.TimeUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Utils.ClientTextUtils"
+slot18 = "Common.Utils.ItemUtils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Core.Timer.TimerManager"
+slot19 = "Utils.ClientTextUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.Utils.HomeLandUtils"
+slot20 = "Core.Timer.TimerManager"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Utils.PetManagementUtils"
+slot21 = "Common.Utils.HomeLandUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Utils.HomeCampUtils"
+slot22 = "Utils.PetManagementUtils"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.pet_data"
+slot23 = "Utils.HomeCampUtils"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.pet_config_data"
+slot24 = "Data.pet_data"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Data.pet_level_data"
+slot25 = "Data.pet_config_data"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "Data.pet_dispatch_data"
+slot26 = "Data.pet_level_data"
 slot24 = slot24(slot26)
-slot25 = math
-slot25 = slot25.floor
-slot26 = string
-slot26 = slot26.format
-slot27 = {
+slot25 = require
+slot27 = "Data.pet_dispatch_data"
+slot25 = slot25(slot27)
+slot26 = require
+slot28 = "Common.CommonSwitch"
+slot26 = slot26(slot28)
+slot27 = math
+slot27 = slot27.floor
+slot28 = string
+slot28 = slot28.format
+slot29 = {
 	Pet = 1,
 	DispatchType = 2
 }
-slot28 = {
-	NoPet_Unlock = 1,
-	HasPet = 0,
+slot30 = {
 	WaitDispatch = 3,
-	NoPet_Lock = 2
+	NoPet_Lock = 2,
+	NoPet_Unlock = 1,
+	HasPet = 0
 }
-slot29 = {
+slot31 = {
 	"HOME_CAMP_CAR_PET_DISP_S_FOOTING",
 	"HOME_CAMP_CAR_PET_DISP_S_TRIP",
 	"HOME_CAMP_CAR_PET_DISP_S_CAMPING"
 }
-slot30 = {
+slot32 = {
 	"$UI_Img_Home_CampManage_Hiking.png",
 	"$UI_Img_Home_CampManage_Explore.png",
 	"$UI_Img_Home_CampManage_Camping.png"
 }
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.resetData
@@ -123,7 +129,7 @@ slot31 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-81, warpins: 2 ---
+	--- BLOCK #2 8-71, warpins: 2 ---
 	slot0.parentModel = slot3
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -180,8 +186,36 @@ slot31 = function(slot0, slot1, slot2)
 	slot4 = slot4(slot6, slot7)
 	slot0.confirmUImage = slot4
 	slot4 = slot0.listUList
+	slot4 = slot4.transform
+	slot4 = slot4.parent
+	slot6 = slot4
+	slot4 = slot4.Find
+	slot7 = "LayoutBox"
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #2 ---
 
-	slot5 = function(slot0, slot1, slot2)
+	slot5 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 72-75, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.GetComponent
+	slot8 = "UWidget"
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 76-95, warpins: 2 ---
+	slot0.modalControlsUWidget = slot5
+	slot5 = slot0.listUList
+
+	slot6 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot3 = self
 		slot5 = slot3
@@ -199,10 +233,10 @@ slot31 = function(slot0, slot1, slot2)
 
 	end
 
-	slot4.luaRenderItem = slot5
-	slot4 = slot0.btnConfirmUButton
+	slot5.luaRenderItem = slot6
+	slot5 = slot0.btnConfirmUButton
 
-	slot5 = function()
+	slot6 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -217,10 +251,10 @@ slot31 = function(slot0, slot1, slot2)
 
 	end
 
-	slot4.luaClick = slot5
-	slot4 = slot0.btnBackUButton
+	slot5.luaClick = slot6
+	slot5 = slot0.btnBackUButton
 
-	slot5 = function()
+	slot6 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -235,12 +269,12 @@ slot31 = function(slot0, slot1, slot2)
 
 	end
 
-	slot4.luaClick = slot5
-	slot4 = TimerManager
-	slot4 = slot4.addRepeatTimer
-	slot6 = 1
+	slot5.luaClick = slot6
+	slot5 = TimerManager
+	slot5 = slot5.addRepeatTimer
+	slot7 = 1
 
-	slot7 = function()
+	slot8 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -255,21 +289,21 @@ slot31 = function(slot0, slot1, slot2)
 
 	end
 
-	slot4 = slot4(slot6, slot7)
-	slot0.m_secondUpdateTimerId = slot4
-	slot4 = true
-	slot0.isCreated = slot4
+	slot5 = slot5(slot7, slot8)
+	slot0.m_secondUpdateTimerId = slot5
+	slot5 = true
+	slot0.isCreated = slot5
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot4.ctor = slot31
+slot4.ctor = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.m_secondUpdateTimerId
 	--- END OF BLOCK #0 ---
@@ -296,19 +330,44 @@ slot31 = function(slot0)
 
 
 	--- BLOCK #2 10-12, warpins: 2 ---
+	slot1 = slot0.m_focusDispatchTypeTimerId
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.m_focusDispatchTypeTimerId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.m_focusDispatchTypeTimerId = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-21, warpins: 2 ---
 	slot1 = false
 	slot0.isCreated = slot1
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot4.onDestroy = slot31
+slot4.onDestroy = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -342,9 +401,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.getCampCarEnt = slot31
+slot4.getCampCarEnt = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -389,9 +448,58 @@ slot31 = function(slot0)
 
 end
 
-slot4.getCampCarEntPetsState = slot31
+slot4.getCampCarEntPetsState = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCampCarEntPetsState
+	slot1 = slot1(slot3)
+	slot2 = UIConst
+	slot2 = slot2.HOME_CAMP_DISPATCH_STATE
+	slot2 = slot2.UnDispatch
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot1 = slot0.m_isReadyToDispatch
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 11-12, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 13-13, warpins: 0 ---
+	slot1 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-14, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4.isShowingDispatchTypes = slot33
+
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -434,9 +542,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.getCampCarDispatchId = slot31
+slot4.getCampCarDispatchId = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = UIConst
 	slot1 = slot1.HOME_CAMP_MANAGER_PAGE_TYPE
@@ -454,10 +562,35 @@ slot31 = function(slot0)
 
 end
 
-slot4.resetData = slot31
+slot4.resetData = slot33
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot33 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.m_focusDispatchTypeTimerId
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.m_focusDispatchTypeTimerId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.m_focusDispatchTypeTimerId = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-22, warpins: 2 ---
 	slot1 = HomeCampUtils
 	slot1 = slot1.getCampPreSelectedDispatchedId
 	slot1 = slot1()
@@ -472,15 +605,15 @@ slot31 = function(slot0)
 	slot0.m_isTryStopDispatch = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot4.resetSelectedData = slot31
+slot4.resetSelectedData = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -530,9 +663,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot4.setDataAndRefresh = slot31
+slot4.setDataAndRefresh = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_tryChangePage
@@ -556,9 +689,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.refreshUI = slot31
+slot4.refreshUI = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_refreshTimeCountDown
@@ -572,9 +705,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_secondUpdate = slot31
+slot4.m_secondUpdate = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEntPetsState
@@ -626,9 +759,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_getChangePageIndex = slot31
+slot4.m_getChangePageIndex = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_getChangePageIndex
@@ -720,9 +853,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_tryChangePage = slot31
+slot4.m_tryChangePage = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -774,8 +907,10 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #4 20-26, warpins: 1 ---
+	--- BLOCK #4 20-28, warpins: 1 ---
 	slot3 = true
+	slot4 = {}
+	slot0.m_dispathButtomItmes = slot4
 	slot4 = HomeCampUtils
 	slot6 = slot4
 	slot4 = slot4.getCampPetDispatchSortTypes
@@ -789,14 +924,14 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #5 27-27, warpins: 1 ---
+	--- BLOCK #5 29-29, warpins: 1 ---
 	slot4 = {}
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-31, warpins: 2 ---
+	--- BLOCK #6 30-33, warpins: 2 ---
 	slot5 = ipairs
 	slot7 = slot4
 	slot5, slot6, slot7 = slot5(slot7)
@@ -805,7 +940,7 @@ slot31 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 32-43, warpins: 1 ---
+	--- BLOCK #7 34-45, warpins: 1 ---
 	slot10 = #slot2
 	slot10 = slot10 + 1
 	slot11 = {}
@@ -823,7 +958,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 44-45, warpins: 2 ---
+	--- BLOCK #8 46-47, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
@@ -831,7 +966,7 @@ slot31 = function(slot0)
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 46-47, warpins: 3 ---
+	--- BLOCK #9 48-49, warpins: 3 ---
 	--- END OF BLOCK #9 ---
 
 	slot3 = if not slot3 then
@@ -841,7 +976,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #10 48-75, warpins: 1 ---
+	--- BLOCK #10 50-77, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getCampCarEnt
 	slot4 = slot4(slot6)
@@ -877,21 +1012,21 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #11 76-77, warpins: 1 ---
+	--- BLOCK #11 78-79, warpins: 1 ---
 	slot10 = false
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 78-78, warpins: 1 ---
+	--- BLOCK #12 80-80, warpins: 1 ---
 	slot10 = true
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 79-82, warpins: 2 ---
+	--- BLOCK #13 81-84, warpins: 2 ---
 	slot11 = 1
 	slot12 = slot9
 	slot13 = 1
@@ -900,7 +1035,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 83-84, warpins: 2 ---
+	--- BLOCK #14 85-86, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	if slot14 > slot8 then
@@ -910,21 +1045,21 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #15 85-86, warpins: 1 ---
+	--- BLOCK #15 87-88, warpins: 1 ---
 	slot15 = false
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 87-87, warpins: 1 ---
+	--- BLOCK #16 89-89, warpins: 1 ---
 	slot15 = true
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 88-89, warpins: 2 ---
+	--- BLOCK #17 90-91, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
 	if slot6 >= slot14 then
@@ -934,21 +1069,21 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #18 90-91, warpins: 1 ---
+	--- BLOCK #18 92-93, warpins: 1 ---
 	slot16 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 92-92, warpins: 1 ---
+	--- BLOCK #19 94-94, warpins: 1 ---
 	slot16 = true
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 93-94, warpins: 2 ---
+	--- BLOCK #20 95-96, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
 	slot5 = if slot5 then
@@ -958,7 +1093,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #21 95-97, warpins: 1 ---
+	--- BLOCK #21 97-99, warpins: 1 ---
 	slot17 = slot5[slot14]
 	--- END OF BLOCK #21 ---
 
@@ -969,7 +1104,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #22 98-101, warpins: 1 ---
+	--- BLOCK #22 100-103, warpins: 1 ---
 	slot17 = slot5[slot14]
 	slot17 = slot17.id
 	--- END OF BLOCK #22 ---
@@ -981,14 +1116,14 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #23 102-102, warpins: 3 ---
+	--- BLOCK #23 104-104, warpins: 3 ---
 	slot17 = 0
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 103-110, warpins: 2 ---
+	--- BLOCK #24 105-112, warpins: 2 ---
 	slot18 = #slot2
 	slot18 = slot18 + 1
 	slot19 = {}
@@ -1004,7 +1139,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #25 111-113, warpins: 1 ---
+	--- BLOCK #25 113-115, warpins: 1 ---
 	slot20 = slot5[slot14]
 	--- END OF BLOCK #25 ---
 
@@ -1015,14 +1150,14 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #26 114-114, warpins: 2 ---
+	--- BLOCK #26 116-116, warpins: 2 ---
 	slot20 = nil
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 115-117, warpins: 2 ---
+	--- BLOCK #27 117-119, warpins: 2 ---
 	slot19.campPetInfo = slot20
 	--- END OF BLOCK #27 ---
 
@@ -1033,7 +1168,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #28 118-121, warpins: 1 ---
+	--- BLOCK #28 120-123, warpins: 1 ---
 	slot20 = ListItemTempIds
 	slot20 = slot20.HasPet
 	--- END OF BLOCK #28 ---
@@ -1045,7 +1180,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #29 122-123, warpins: 2 ---
+	--- BLOCK #29 124-125, warpins: 2 ---
 	--- END OF BLOCK #29 ---
 
 	slot16 = if slot16 then
@@ -1055,7 +1190,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #30 124-127, warpins: 1 ---
+	--- BLOCK #30 126-129, warpins: 1 ---
 	slot20 = ListItemTempIds
 	slot20 = slot20.NoPet_Lock
 	--- END OF BLOCK #30 ---
@@ -1067,7 +1202,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #31 128-129, warpins: 2 ---
+	--- BLOCK #31 130-131, warpins: 2 ---
 	slot20 = ListItemTempIds
 	slot20 = slot20.NoPet_Unlock
 	--- END OF BLOCK #31 ---
@@ -1075,7 +1210,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 130-135, warpins: 3 ---
+	--- BLOCK #32 132-137, warpins: 3 ---
 	slot19.tIndex = slot20
 	slot19.isLock = slot16
 	slot19.dispatchState = slot1
@@ -1087,7 +1222,7 @@ slot31 = function(slot0)
 	LOOP BLOCK #14
 	GO OUT TO BLOCK #33
 
-	--- BLOCK #33 136-141, warpins: 2 ---
+	--- BLOCK #33 138-145, warpins: 2 ---
 	slot4 = slot0.listUList
 	slot6 = slot4
 	slot4 = slot4.SetList
@@ -1095,16 +1230,116 @@ slot31 = function(slot0)
 
 	slot4(slot6, slot7)
 
-	return
+	slot4 = slot0.modalControlsUWidget
 	--- END OF BLOCK #33 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #34 146-150, warpins: 1 ---
+	slot4 = IsNil
+	slot6 = slot0.modalControlsUWidget
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #34 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #35 151-159, warpins: 1 ---
+	slot4 = slot0.modalControlsUWidget
+	slot6 = slot4
+	slot4 = slot4.SetActive
+	slot7 = slot0.m_pageType
+	slot8 = UIConst
+	slot8 = slot8.HOME_CAMP_MANAGER_PAGE_TYPE
+	slot8 = slot8.DispatchMgr
+	--- END OF BLOCK #35 ---
+
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 160-161, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #36 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #38
+
+
+	--- BLOCK #37 162-162, warpins: 1 ---
+	slot7 = true
+
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 163-163, warpins: 2 ---
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 164-166, warpins: 3 ---
+	slot4 = slot0.parentCtrl
+	--- END OF BLOCK #39 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #40 167-170, warpins: 1 ---
+	slot4 = slot0.parentCtrl
+	slot4 = slot4.refreshPetListNavigationState
+	--- END OF BLOCK #40 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 171-175, warpins: 1 ---
+	slot4 = slot0.parentCtrl
+	slot6 = slot4
+	slot4 = slot4.refreshPetListNavigationState
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 176-176, warpins: 3 ---
+	return
+	--- END OF BLOCK #42 ---
 
 
 
 end
 
-slot4.m_refreshList = slot31
+slot4.m_refreshList = slot33
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot33 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = false
 	slot1.draggable = slot4
@@ -1332,9 +1567,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.m_renderItem = slot31
+slot4.m_renderItem = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1343,9 +1578,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot4.renderHomePetHeadLock = slot31
+slot4.renderHomePetHeadLock = slot33
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot33 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1485,9 +1720,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.m_onClickPetItem = slot31
+slot4.m_onClickPetItem = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1636,9 +1871,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot4.m_removeFocusedCampPet = slot31
+slot4.m_removeFocusedCampPet = slot33
 
-slot31 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1701,9 +1936,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot4.m_setSelectedToRemovePetIds = slot31
+slot4.m_setSelectedToRemovePetIds = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.parentModel
 	slot3 = slot1
@@ -1718,9 +1953,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_isExistDiffCachePetIds = slot31
+slot4.m_isExistDiffCachePetIds = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -1760,9 +1995,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_getIsExistCampPets = slot31
+slot4.m_getIsExistCampPets = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1898,9 +2133,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot4.m_tryRefreshSelectedToRemovePets = slot31
+slot4.m_tryRefreshSelectedToRemovePets = slot33
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot33 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1962,9 +2197,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.m_setPetHeadCancelBtn = slot31
+slot4.m_setPetHeadCancelBtn = slot33
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot33 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.dispatchTypeInfo
 	--- END OF BLOCK #0 ---
@@ -2139,16 +2374,17 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 	slot1.luaRenderTooltip = slot11
 
-	slot11 = function()
-		--- BLOCK #0 1-8, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.m_onClickDispatchType
-		slot3 = button
-		slot4 = index
-		slot5 = data
+	slot11 = function(slot0)
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.m_onClickDispatchType
+		slot4 = button
+		slot5 = index
+		slot6 = data
+		slot7 = slot0
 
-		slot0(slot2, slot3, slot4, slot5)
+		slot1(slot3, slot4, slot5, slot6, slot7)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -2383,15 +2619,14 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.renderDispatchTypeItem = slot31
+slot4.renderDispatchTypeItem = slot33
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot4 = slot3.dispatchTypeInfo
-
+	slot5 = slot3.dispatchTypeInfo
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -2399,39 +2634,179 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #2 5-16, warpins: 2 ---
-	slot5 = slot4.id
-	slot0.m_selectDispatchTypeId = slot5
-	slot5 = HomeCampUtils
-	slot5 = slot5.setCampPreSelectedDispatchedId
-	slot7 = slot4.id
+	--- BLOCK #2 5-7, warpins: 1 ---
+	slot6 = slot0.m_dispathButtomItmes
+	--- END OF BLOCK #2 ---
 
-	slot5(slot7)
+	slot6 = if slot6 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
-	slot5 = true
-	slot1.isSelected = slot5
-	slot7 = slot0
-	slot5 = slot0.m_refreshList
 
-	slot5(slot7)
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot6 = slot0.m_dispathButtomItmes
+	slot7 = slot0.m_selectDispatchTypeId
+	slot6 = slot6[slot7]
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-12, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 13-17, warpins: 1 ---
+	slot7 = IsNil
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #5 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 18-19, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot6 ~= slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 20-21, warpins: 1 ---
+	slot7 = false
+	slot6.isSelected = slot7
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-31, warpins: 4 ---
+	slot7 = slot5.id
+	slot0.m_selectDispatchTypeId = slot7
+	slot7 = HomeCampUtils
+	slot7 = slot7.setCampPreSelectedDispatchedId
+	slot9 = slot5.id
+
+	slot7(slot9)
+
+	slot7 = true
+	slot1.isSelected = slot7
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 32-39, warpins: 1 ---
+	slot7 = false
+	slot1.enabledTooltip = slot7
+	slot7 = TimerManager
+	slot7 = slot7.addNextFrameCb
+
+	slot9 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.isCreated
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 5-7, warpins: 1 ---
+		slot0 = button
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 8-12, warpins: 1 ---
+		slot0 = IsNil
+		slot2 = button
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 13-15, warpins: 1 ---
+		slot0 = button
+		slot1 = true
+		slot0.enabledTooltip = slot1
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 16-16, warpins: 4 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot7(slot9)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 40-41, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot4.m_onClickDispatchType = slot31
+slot4.m_onClickDispatchType = slot33
 
-slot31 = function(slot0, slot1, slot2)
+slot33 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2442,7 +2817,7 @@ slot31 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-25, warpins: 1 ---
+	--- BLOCK #1 3-30, warpins: 1 ---
 	slot5 = slot2
 	slot3 = slot2.GetComponent
 	slot6 = "ObjectReference"
@@ -2451,63 +2826,68 @@ slot31 = function(slot0, slot1, slot2)
 	slot4 = slot3.GetRefValue
 	slot7 = "txtNameUSDFText"
 	slot4 = slot4(slot6, slot7)
-	slot5 = HomeLandUtils
-	slot5 = slot5.getCarDispatchBelongTypeRewardInfo
-	slot9 = slot0
-	slot7 = slot0.getCampCarEnt
-	slot7 = slot7(slot9)
-	slot8 = slot0.m_selectDispatchTypeId
-	slot5 = slot5(slot7, slot8)
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot4
-	slot9 = ClientTextUtils
-	slot9 = slot9.getLocalizationText
-	slot11 = slot5.itemDescKey
+	slot5 = slot0.parentCtrl
+	slot7 = slot5
+	slot5 = slot5.getSelectedExploreAreaId
+	slot5 = slot5(slot7)
+	slot6 = HomeCampUtils
+	slot6 = slot6.getCarDispatchBelongTypeRewardInfo
+	slot10 = slot0
+	slot8 = slot0.getCampCarEnt
+	slot8 = slot8(slot10)
+	slot9 = slot0.m_selectDispatchTypeId
+	slot10 = slot5
+	slot6 = slot6(slot8, slot9, slot10)
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot4
+	slot10 = ClientTextUtils
+	slot10 = slot10.getLocalizationText
+	slot12 = slot6.itemDescKey
 	--- END OF BLOCK #1 ---
 
-	slot11 = if not slot11 then
+	slot12 = if not slot12 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 26-26, warpins: 1 ---
-	slot11 = ""
+	--- BLOCK #2 31-31, warpins: 1 ---
+	slot12 = ""
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 27-29, warpins: 2 ---
-	slot9 = slot9(slot11)
+	--- BLOCK #3 32-34, warpins: 2 ---
+	slot10 = slot10(slot12)
 	--- END OF BLOCK #3 ---
 
-	slot9 = if not slot9 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 30-30, warpins: 1 ---
-	slot9 = ""
+	--- BLOCK #4 35-35, warpins: 1 ---
+	slot10 = ""
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 31-31, warpins: 2 ---
-	slot6(slot8, slot9)
+	--- BLOCK #5 36-36, warpins: 2 ---
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-32, warpins: 2 ---
+	--- BLOCK #6 37-37, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -2515,9 +2895,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot4.m_toolTipDispatchType = slot31
+slot4.m_toolTipDispatchType = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isCreated
 
@@ -2787,9 +3167,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_refreshTimeCountDown = slot31
+slot4.m_refreshTimeCountDown = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = ""
 	slot4 = slot0
@@ -3021,141 +3401,193 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 83-85, warpins: 3 ---
-	slot5 = slot0.parentCtrl
+	--- BLOCK #21 83-88, warpins: 3 ---
+	slot5 = slot0.m_pageType
+	slot6 = UIConst
+	slot6 = slot6.HOME_CAMP_MANAGER_PAGE_TYPE
+	slot6 = slot6.CampMgr
 	--- END OF BLOCK #21 ---
 
-	slot5 = if slot5 then
+	if slot5 == slot6 then
 	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 86-89, warpins: 1 ---
-	slot5 = slot0.parentCtrl
-	slot5 = slot5.m_refreshBtnConfirmHotKey
+	--- BLOCK #22 89-93, warpins: 1 ---
+	slot5 = UIConst
+	slot5 = slot5.HOME_CAMP_DISPATCH_STATE
+	slot5 = slot5.Finished
 	--- END OF BLOCK #22 ---
 
-	slot5 = if slot5 then
+	if slot2 ~= slot5 then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #23 90-93, warpins: 1 ---
-	slot5 = slot0.parentCtrl
-	slot7 = slot5
-	slot5 = slot5.m_refreshBtnConfirmHotKey
-
-	slot5(slot7)
-
+	--- BLOCK #23 94-95, warpins: 2 ---
+	slot5 = false
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #24 94-97, warpins: 2 ---
-	slot5 = slot0.parentCtrl
-	slot5 = slot5.refreshConsoleBarState
+	--- BLOCK #24 96-96, warpins: 1 ---
+	slot5 = true
 	--- END OF BLOCK #24 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #25
-	else
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 97-111, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.setRedDot
+	slot8 = RedDotConst
+	slot8 = slot8.RedDotPath
+	slot8 = slot8.HOME_CAMP_DISPATCH_REWARD_CONFIRM
+	slot9 = slot0.btnConfirmUButton
+	slot10 = slot5
+	slot11 = RedDotConst
+	slot11 = slot11.RedDotStyle
+	slot11 = slot11.REWARD
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = slot0.parentCtrl
+	--- END OF BLOCK #25 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #25 98-101, warpins: 1 ---
-	slot5 = slot0.parentCtrl
-	slot7 = slot5
-	slot5 = slot5.refreshConsoleBarState
-
-	slot5(slot7)
-
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 102-102, warpins: 3 ---
-	return
+	--- BLOCK #26 112-115, warpins: 1 ---
+	slot6 = slot0.parentCtrl
+	slot6 = slot6.refreshConsoleBarState
 	--- END OF BLOCK #26 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 116-119, warpins: 1 ---
+	slot6 = slot0.parentCtrl
+	slot8 = slot6
+	slot6 = slot6.refreshConsoleBarState
+
+	slot6(slot8)
+
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 120-120, warpins: 3 ---
+	return
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot4.m_refreshBtnConfirm = slot31
+slot4.m_refreshBtnConfirm = slot33
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.m_pageType
-	slot2 = UIConst
-	slot2 = slot2.HOME_CAMP_MANAGER_PAGE_TYPE
-	slot2 = slot2.DispatchMgr
+slot33 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = CommonSwitch
+	slot1 = slot1.CAMP_MANAGER
+
 	--- END OF BLOCK #0 ---
 
-	if slot1 == slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-11, warpins: 1 ---
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-11, warpins: 2 ---
+	slot1 = slot0.m_pageType
+	slot2 = UIConst
+	slot2 = slot2.HOME_CAMP_MANAGER_PAGE_TYPE
+	slot2 = slot2.DispatchMgr
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-16, warpins: 1 ---
 	slot1 = slot0.parentCtrl
 	slot3 = slot1
 	slot1 = slot1.backUI
 
 	slot1(slot3)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #2 12-19, warpins: 1 ---
+	--- BLOCK #4 17-24, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEntPetsState
 	slot1 = slot1(slot3)
 	slot2 = UIConst
 	slot2 = slot2.HOME_CAMP_DISPATCH_STATE
 	slot2 = slot2.UnDispatch
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #3 20-22, warpins: 1 ---
+	--- BLOCK #5 25-27, warpins: 1 ---
 	slot2 = slot0.m_isReadyToDispatch
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 23-26, warpins: 1 ---
+	--- BLOCK #6 28-31, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.m_tryStartDispatch
 
 	slot2(slot4)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #5 27-36, warpins: 1 ---
+	--- BLOCK #7 32-41, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.m_tryReadyDispatch
 
@@ -3167,43 +3599,19 @@ slot31 = function(slot0)
 	slot2(slot4)
 
 	slot4 = slot0
-	slot2 = slot0.m_tryAutoToolTip
-
-	slot2(slot4)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #6 37-41, warpins: 1 ---
-	slot2 = UIConst
-	slot2 = slot2.HOME_CAMP_DISPATCH_STATE
-	slot2 = slot2.Dispatching
-	--- END OF BLOCK #6 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 42-45, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.m_tryStopDispatch
+	slot2 = slot0.m_tryFocusSelectedDispatchType
 
 	slot2(slot4)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #8 46-50, warpins: 1 ---
+	--- BLOCK #8 42-46, warpins: 1 ---
 	slot2 = UIConst
 	slot2 = slot2.HOME_CAMP_DISPATCH_STATE
-	slot2 = slot2.Finished
+	slot2 = slot2.Dispatching
 	--- END OF BLOCK #8 ---
 
 	if slot1 == slot2 then
@@ -3213,28 +3621,52 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #9 51-53, warpins: 1 ---
+	--- BLOCK #9 47-50, warpins: 1 ---
 	slot4 = slot0
-	slot2 = slot0.m_tryFinishDispatch
+	slot2 = slot0.m_tryStopDispatch
 
 	slot2(slot4)
 
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #10 54-54, warpins: 6 ---
-	return
+	--- BLOCK #10 51-55, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.HOME_CAMP_DISPATCH_STATE
+	slot2 = slot2.Finished
 	--- END OF BLOCK #10 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 56-58, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.m_tryFinishDispatch
+
+	slot2(slot4)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 59-59, warpins: 6 ---
+	return
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot4.m_onClickConfirm = slot31
+slot4.m_onClickConfirm = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = false
 	slot0.m_isReadyToDispatch = slot1
@@ -3250,9 +3682,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_onClickCancel = slot31
+slot4.m_onClickCancel = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_isExistDiffCachePetIds
@@ -3309,9 +3741,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_trySetCampPets = slot31
+slot4.m_trySetCampPets = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -3392,11 +3824,11 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_tryReadyDispatch = slot31
+slot4.m_tryReadyDispatch = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.delayToolTipTimer
+	slot1 = slot0.m_focusDispatchTypeTimerId
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -3409,24 +3841,26 @@ slot31 = function(slot0)
 	--- BLOCK #1 4-9, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
-	slot3 = slot0.delayToolTipTimer
+	slot3 = slot0.m_focusDispatchTypeTimerId
 
 	slot1(slot3)
 
 	slot1 = nil
-	slot0.delayToolTipTimer = slot1
+	slot0.m_focusDispatchTypeTimerId = slot1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-17, warpins: 2 ---
+	--- BLOCK #2 10-16, warpins: 2 ---
 	slot1 = TimerManager
-	slot1 = slot1.addTimer
-	slot3 = 0.3
+	slot1 = slot1.addNextFrameCb
 
-	slot4 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.m_focusDispatchTypeTimerId = slot1
 		slot0 = self
 		slot0 = slot0.m_dispathButtomItmes
 		--- END OF BLOCK #0 ---
@@ -3434,75 +3868,90 @@ slot31 = function(slot0)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 5-10, warpins: 1 ---
+		--- BLOCK #1 8-12, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.m_dispathButtomItmes
-		slot0 = #slot0
-		slot1 = 0
+		slot1 = self
+		slot1 = slot1.m_selectDispatchTypeId
+		slot0 = slot0[slot1]
 		--- END OF BLOCK #1 ---
 
-		if slot0 > slot1 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #5
-		end
+		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-14, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.m_selectDispatchTypeId
+		--- BLOCK #2 13-14, warpins: 2 ---
 		--- END OF BLOCK #2 ---
 
 		slot0 = if slot0 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #4
 		end
 
 
 		--- BLOCK #3 15-19, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.m_selectDispatchTypeId
-		slot1 = 0
+		slot1 = IsNil
+		slot3 = slot0
+		slot1 = slot1(slot3)
+
 		--- END OF BLOCK #3 ---
 
-		if slot0 > slot1 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #4
 		else
 		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #4 20-27, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.m_dispathButtomItmes
-		slot1 = self
-		slot1 = slot1.m_selectDispatchTypeId
-		slot0 = slot0[slot1]
-		slot3 = slot0
-		slot1 = slot0.OpenTooltip
-
-		slot1(slot3)
+		--- BLOCK #4 20-20, warpins: 2 ---
+		return
 
 		--- END OF BLOCK #4 ---
 
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 28-28, warpins: 5 ---
-		return
+		--- BLOCK #5 21-27, warpins: 2 ---
+		slot1 = CS
+		slot1 = slot1.XGUI
+		slot1 = slot1.Navigation
+		slot1 = slot1.NavManager
+		slot1 = slot1.Instance
 		--- END OF BLOCK #5 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 28-31, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.PushFocusItem
+		slot5 = slot0
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 32-32, warpins: 2 ---
+		return
+		--- END OF BLOCK #7 ---
 
 
 
 	end
 
-	slot1 = slot1(slot3, slot4)
-	slot0.delayToolTipTimer = slot1
+	slot1 = slot1(slot3)
+	slot0.m_focusDispatchTypeTimerId = slot1
 
 	return
 	--- END OF BLOCK #2 ---
@@ -3511,9 +3960,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_tryAutoToolTip = slot31
+slot4.m_tryFocusSelectedDispatchType = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -3575,12 +4024,17 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-25, warpins: 2 ---
-	slot4 = slot1
-	slot2 = slot1.dispatchPet
-	slot5 = slot0.m_selectDispatchTypeId
+	--- BLOCK #5 21-30, warpins: 2 ---
+	slot2 = slot0.parentCtrl
+	slot4 = slot2
+	slot2 = slot2.getSelectedExploreAreaId
+	slot2 = slot2(slot4)
+	slot5 = slot1
+	slot3 = slot1.dispatchPet
+	slot6 = slot0.m_selectDispatchTypeId
+	slot7 = slot2
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6, slot7)
 
 	return
 	--- END OF BLOCK #5 ---
@@ -3589,9 +4043,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_tryStartDispatch = slot31
+slot4.m_tryStartDispatch = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -3681,9 +4135,9 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_tryStopDispatch = slot31
+slot4.m_tryStopDispatch = slot33
 
-slot31 = function(slot0)
+slot33 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -3719,7 +4173,7 @@ slot31 = function(slot0)
 
 end
 
-slot4.m_tryFinishDispatch = slot31
+slot4.m_tryFinishDispatch = slot33
 
 return slot4
 --- END OF BLOCK #0 ---

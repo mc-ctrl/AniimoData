@@ -8,81 +8,81 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	version = 42,
+	name = "ParmonBehaviorTree/SubTree/_Wild/10212_Irisal/PBT_AutoCombat_10212",
 	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/_Wild/10212_Irisal/PBT_AutoCombat_10212"
+	version = 42
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "CurrentEP",
 	value = "0",
-	name = "CurrentEP"
+	type = "float",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "maxSkillDist",
 	value = "0",
-	name = "maxSkillDist"
+	type = "float",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "skillStopDist",
 	value = "0",
-	name = "skillStopDist"
+	type = "float",
+	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "goBackDist",
 	value = "0",
-	name = "goBackDist"
+	type = "float",
+	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "CurrentBoxDistToTarget",
 	value = "0",
-	name = "CurrentBoxDistToTarget"
+	type = "float",
+	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	type = "int",
-	const = 0,
+	name = "tSkillUsed",
 	value = "0",
-	name = "tSkillUsed"
+	type = "int",
+	const = 0
 }
 slot4[6] = slot5
 slot5 = {
-	type = "int",
-	const = 0,
+	name = "skillId",
 	value = "0",
-	name = "skillId"
+	type = "int",
+	const = 0
 }
 slot4[7] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "CurrentDistToTarget",
 	value = "0",
-	name = "CurrentDistToTarget"
+	type = "float",
+	const = 0
 }
 slot4[8] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
+	name = "CurrentHpPercent",
 	value = "0",
-	name = "CurrentHpPercent"
+	type = "float",
+	const = 0
 }
 slot4[9] = slot5
 slot5 = {
-	type = "int",
-	const = 0,
+	name = "Weight_RunBack",
 	value = "0",
-	name = "Weight_RunBack"
+	type = "int",
+	const = 0
 }
 slot4[10] = slot5
 slot3.pars = slot4
@@ -125,7 +125,7 @@ slot12.Opl = slot13
 slot11[2] = slot12
 slot12 = {}
 slot13 = {
-	func = "getLetGoTarget"
+	func = "getTarget"
 }
 slot12.Opr = slot13
 slot11[3] = slot12
@@ -1754,8 +1754,8 @@ slot20 = {}
 slot21 = {
 	precondition = true,
 	transition = false,
-	effector = false,
 	id = "356",
+	effector = false,
 	class = "Precondition"
 }
 slot22 = {}

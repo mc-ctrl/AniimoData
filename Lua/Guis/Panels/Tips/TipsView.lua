@@ -11,7 +11,7 @@ slot5 = slot0
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-97, warpins: 1 ---
+	--- BLOCK #0 1-114, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -54,6 +54,13 @@ slot3 = function(slot0)
 	slot4 = "questUContainer"
 	slot1 = slot1(slot3, slot4)
 	slot0.quest = slot1
+	slot1 = slot0.quest
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -108,6 +115,18 @@ slot3 = function(slot0)
 	slot4 = "dangerUContainer"
 	slot1 = slot1(slot3, slot4)
 	slot0.dangerUContainer = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "spaceBuffToastUContainer"
+	slot1 = slot1(slot3, slot4)
+	slot0.spaceBuffToastUContainer = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "questAreaUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.questAreaUWidget = slot1
 
 	return
 	--- END OF BLOCK #0 ---

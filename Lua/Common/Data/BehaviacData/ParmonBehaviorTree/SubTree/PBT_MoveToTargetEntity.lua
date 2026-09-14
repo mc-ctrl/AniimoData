@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_MoveToTargetEntity",
 	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_MoveToTargetEntity",
 	version = 11,
 	useForRoute = false
 }
@@ -16,79 +16,79 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tTargetActorId",
 	type = "int",
-	const = 0,
-	value = "0"
+	value = "0",
+	name = "tTargetActorId",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tStopDist",
 	type = "float",
-	const = 0.2,
-	value = "0.2"
+	value = "0.2",
+	name = "tStopDist",
+	const = 0.2
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tMaxTimeout",
 	type = "float",
-	const = 5,
-	value = "5"
+	value = "5",
+	name = "tMaxTimeout",
+	const = 5
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tFaceTarget",
 	type = "bool",
-	const = true,
-	value = "true"
+	value = "true",
+	name = "tFaceTarget",
+	const = true
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tSpeed",
 	type = "float",
-	const = 0,
-	value = "0"
+	value = "0",
+	name = "tSpeed",
+	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tMoveUpdateLevel",
 	type = "MoveUpdateLevel",
-	value = "Once"
+	value = "Once",
+	name = "tMoveUpdateLevel"
 }
 slot6 = slot0.MoveUpdateLevel
 slot6 = slot6.Once
 slot5.const = slot6
 slot4[6] = slot5
 slot5 = {
-	name = "tPathFindType",
 	type = "PathFindType",
-	value = "Auto"
+	value = "Auto",
+	name = "tPathFindType"
 }
 slot6 = slot0.PathFindType
 slot6 = slot6.Auto
 slot5.const = slot6
 slot4[7] = slot5
 slot5 = {
-	name = "tSpeedRateType",
 	type = "SpeedRateType",
-	value = "Slow"
+	value = "Slow",
+	name = "tSpeedRateType"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Slow
 slot5.const = slot6
 slot4[8] = slot5
 slot5 = {
-	name = "tUseAccurateArrive",
 	type = "bool",
-	const = false,
-	value = "false"
+	value = "false",
+	name = "tUseAccurateArrive",
+	const = false
 }
 slot4[9] = slot5
 slot5 = {
-	name = "tNoBodySize",
 	type = "bool",
-	const = false,
-	value = "false"
+	value = "false",
+	name = "tNoBodySize",
+	const = false
 }
 slot4[10] = slot5
 slot3.pars = slot4

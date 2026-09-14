@@ -1,4 +1,4 @@
---- BLOCK #0 1-72, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Net.Http.HttpClientProxy"
 slot0 = slot0(slot2)
@@ -37,76 +37,223 @@ slot13 = "ServerListHelper"
 slot11 = slot11(slot13)
 slot12 = 120
 slot13 = 10
-slot14 = false
-slot15 = {
-	_pullSeq = 0,
-	normalHostIsOk = false,
-	lastPullCategory = "idle"
+slot14 = 12
+slot15 = false
+slot16 = {
+	_pullSeq = 0
 }
 
-slot16 = function(slot0)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = ClientUtils
-	slot1 = slot1.getServerInfo
-	slot1 = slot1()
+	slot2 = ClientRepo
+	slot2 = slot2.confJson
+	slot2 = slot2.enableOnlineServerList
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= nil then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot2 = slot1.Status
-	--- END OF BLOCK #1 ---
-
-	if slot2 ~= nil then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 9-11, warpins: 1 ---
-	slot2 = slot1.Status
-	--- END OF BLOCK #2 ---
-
-	if slot2 ~= 1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 12-19, warpins: 1 ---
-	slot2 = ServerListHelper
-	slot2 = slot2.pullServerListFast
-
-	slot2()
-
+	--- BLOCK #1 6-11, warpins: 1 ---
 	slot2 = ServerListHelper
 	slot2 = slot2.reqServerList
+	slot4 = false
+	slot5 = slot1
 
-	slot2()
+	slot2(slot4, slot5)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #1 ---
 
-	slot0 = if slot0 then
-	JUMP TO BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #2 12-19, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._prefetchedResult
+	slot3 = ServerListHelper
+	slot4 = nil
+	slot3._prefetchedResult = slot4
+	slot3 = false
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 20-26, warpins: 1 ---
-	slot2 = ClientUtils
-	slot2 = slot2.showConfirmRaw
-	slot4 = slot1.Title
-	slot5 = slot1.Msg
+	--- BLOCK #3 20-26, warpins: 1 ---
+	slot4 = ServerListHelper
+	slot4 = slot4._finishPullSuccess
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	slot3 = slot4
+	--- END OF BLOCK #3 ---
 
-	slot6 = function()
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #4 27-31, warpins: 1 ---
+	slot4 = ClientUtils
+	slot4 = slot4.getDirConf
+	slot4 = slot4()
+	--- END OF BLOCK #4 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 32-34, warpins: 1 ---
+	slot5 = slot4.localDirData
+	--- END OF BLOCK #5 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 35-38, warpins: 1 ---
+	slot5 = slot4.localDirData
+	slot5 = #slot5
+	--- END OF BLOCK #6 ---
+
+	if slot5 == 0 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #7 39-42, warpins: 3 ---
+	slot5 = ServerListHelper
+	slot5 = slot5._tryApplyLocalFallback
+
+	slot5()
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #8 43-46, warpins: 1 ---
+	slot4 = ClientRepo
+	slot4 = slot4.ServerGroupDataOnline
+	--- END OF BLOCK #8 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 47-53, warpins: 1 ---
+	slot4 = ServerListHelper
+	slot4 = slot4._finishPullSuccess
+	slot6 = ClientRepo
+	slot6 = slot6.ServerGroupDataOnline
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 54-57, warpins: 1 ---
+	slot4 = ServerListHelper
+	slot4 = slot4._tryApplyLocalFallback
+
+	slot4()
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 58-60, warpins: 1 ---
+	slot4 = ServerListHelper
+	slot4 = slot4._tryApplyLocalFallback
+
+	slot4()
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 61-65, warpins: 6 ---
+	slot4 = ClientUtils
+	slot4 = slot4.getServerInfo
+	slot4 = slot4()
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #13 66-68, warpins: 1 ---
+	slot5 = slot4.Status
+	--- END OF BLOCK #13 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 69-71, warpins: 1 ---
+	slot5 = slot4.Status
+	--- END OF BLOCK #14 ---
+
+	if slot5 ~= 1 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 72-76, warpins: 1 ---
+	slot5 = ServerListHelper
+	slot5 = slot5.pullServerListFast
+
+	slot5()
+
+	--- END OF BLOCK #15 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 77-84, warpins: 1 ---
+	slot5 = ClientUtils
+	slot5 = slot5.showConfirmRaw
+	slot7 = slot4.Title
+	slot8 = slot4.Msg
+
+	slot9 = function()
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -115,88 +262,137 @@ slot16 = function(slot0)
 
 	end
 
-	slot7 = true
+	slot10 = true
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot5(slot7, slot8, slot9, slot10)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #5 27-28, warpins: 2 ---
+	--- BLOCK #17 85-87, warpins: 3 ---
+	slot5 = ServerListHelper
+	slot5 = slot5.pullServerListNormal
+
+	slot5()
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 88-91, warpins: 3 ---
+	slot5 = ServerListHelper
+	slot5 = slot5._pendingPull
+	--- END OF BLOCK #18 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #19 92-93, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 94-94, warpins: 1 ---
+	slot5.onFailure = slot1
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 95-96, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 97-98, warpins: 2 ---
+	--- END OF BLOCK #22 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 99-100, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #6 29-35, warpins: 4 ---
-	slot2 = ServerListHelper
-	slot2 = slot2.pullServerListNormal
+	--- BLOCK #24 101-106, warpins: 2 ---
+	slot6 = ServerListHelper
+	slot6 = slot6.reqServerList
+	slot8 = false
+	slot9 = slot1
 
-	slot2()
-
-	slot2 = ServerListHelper
-	slot2 = slot2.reqServerList
-
-	slot2()
+	slot6(slot8, slot9)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 107-107, warpins: 2 ---
+	return
+	--- END OF BLOCK #25 ---
 
 
 
 end
 
-slot15.startPullServerList = slot16
+slot16.startPullServerList = slot17
 
-slot16 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = ServerListHelper
-	slot0 = slot0._stopPullServerListTimer
+slot17 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = ClientRepo
+	slot0 = slot0.confJson
+	slot0 = slot0.enableOnlineServerList
 
-	slot0()
-
-	return
 	--- END OF BLOCK #0 ---
 
-
-
-end
-
-slot15.stopPullServerList = slot16
-
-slot16 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = ServerListHelper
-	slot0 = slot0.pullServerListTimer
-	--- END OF BLOCK #0 ---
-
-	if slot0 == nil then
+	slot0 = if not slot0 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-12, warpins: 1 ---
-	slot0 = ServerListHelper
-	slot1 = TimerManager
-	slot1 = slot1.addRepeatTimer
-	slot3 = ServerListPullDelayNormal
-	slot4 = ServerListHelper
-	slot4 = slot4.reqServerList
-	slot1 = slot1(slot3, slot4)
-	slot0.pullServerListTimer = slot1
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot0 = ServerListHelper
+	slot0 = slot0._requestServerList
+	slot2 = false
+	slot3 = nil
+	slot4 = true
+
+	slot0(slot2, slot3, slot4)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -204,9 +400,53 @@ slot16 = function()
 
 end
 
-slot15._startPullServerListTimer = slot16
+slot16.prefetchServerList = slot17
 
-slot16 = function()
+slot17 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = ServerListHelper
+	slot0 = slot0._stopPullServerListTimer
+
+	slot0()
+
+	slot0 = ServerListHelper
+	slot0 = slot0._pendingPull
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-14, warpins: 1 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._cancelPullDeadline
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = ServerListHelper
+	slot2 = nil
+	slot1._pendingPull = slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.stopPullServerList = slot17
+
+slot17 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = ServerListHelper
 	slot0 = slot0.pullServerListTimer
@@ -244,9 +484,9 @@ slot16 = function()
 
 end
 
-slot15._stopPullServerListTimer = slot16
+slot16._stopPullServerListTimer = slot17
 
-slot16 = function()
+slot17 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = ServerListHelper
 	slot0 = slot0._stopPullServerListTimer
@@ -269,9 +509,9 @@ slot16 = function()
 
 end
 
-slot15.pullServerListNormal = slot16
+slot16.pullServerListNormal = slot17
 
-slot16 = function()
+slot17 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = ServerListHelper
 	slot0 = slot0._stopPullServerListTimer
@@ -294,9 +534,9 @@ slot16 = function()
 
 end
 
-slot15.pullServerListFast = slot16
+slot16.pullServerListFast = slot17
 
-slot16 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = {}
 	slot3.source = slot0
@@ -341,9 +581,550 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15._buildPullError = slot16
+slot16._buildPullError = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._pendingPull
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.seq
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16._isCurrentPull = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = slot0.deadlineTimer
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-11, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.deadlineTimer
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.deadlineTimer = slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-12, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16._cancelPullDeadline = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._isCurrentPull
+	slot3 = slot0
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-17, warpins: 2 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._pendingPull
+	slot2 = ServerListHelper
+	slot2 = slot2._cancelPullDeadline
+	slot4 = slot1
+
+	slot2(slot4)
+
+	slot2 = ServerListHelper
+	slot3 = nil
+	slot2._pendingPull = slot3
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16._completePull = slot17
+
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = ServerListHelper
+	slot3 = slot3._isCurrentPull
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-16, warpins: 2 ---
+	slot3 = ServerListHelper
+	slot3 = slot3._pendingPull
+	slot4 = slot1
+	slot5 = "Done"
+	slot4 = slot4 .. slot5
+	slot5 = slot3[slot4]
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 1 ---
+	slot5 = true
+
+	return slot5
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-25, warpins: 2 ---
+	slot5 = ServerListHelper
+	slot5 = slot5._acceptPullResult
+	slot7 = slot2
+	slot8 = slot3.isPrefetch
+	slot5, slot6 = slot5(slot7, slot8)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-28, warpins: 1 ---
+	slot7 = false
+	slot8 = slot6
+
+	return slot7, slot8
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-32, warpins: 2 ---
+	slot7 = true
+	slot3[slot4] = slot7
+	--- END OF BLOCK #6 ---
+
+	if slot1 == "backup" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 33-35, warpins: 1 ---
+	slot7 = slot3.mainDone
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 36-39, warpins: 1 ---
+	slot7 = true
+	slot3.hasSuccess = slot7
+	slot7 = true
+
+	return slot7
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 40-45, warpins: 3 ---
+	slot7 = ServerListHelper
+	slot7 = slot7._completePull
+	slot9 = slot0
+
+	slot7(slot9)
+
+	slot7 = true
+
+	return slot7
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot16._finishPullSuccessForSeq = slot17
+
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._isCurrentPull
+	slot4 = slot0
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-23, warpins: 2 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._pendingPull
+	slot3 = slot2.onFailure
+	slot4 = ServerListHelper
+	slot4 = slot4._completePull
+	slot6 = slot0
+
+	slot4(slot6)
+
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "ServerListHelper pull failed"
+
+	slot4(slot6, slot7)
+
+	slot4 = ServerListHelper
+	slot4 = slot4.pullServerListTimer
+
+	--- END OF BLOCK #2 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 24-24, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 25-29, warpins: 2 ---
+	slot4 = ClientUtils
+	slot4 = slot4.getDirConf
+	slot4 = slot4()
+	--- END OF BLOCK #4 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 30-32, warpins: 1 ---
+	slot5 = slot4.localDirData
+	--- END OF BLOCK #5 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 33-37, warpins: 1 ---
+	slot5 = slot4.localDirData
+	slot5 = #slot5
+	slot6 = 0
+
+	--- END OF BLOCK #6 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 38-38, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 39-43, warpins: 4 ---
+	slot5 = ServerListHelper
+	slot5 = slot5._tryApplyLocalFallback
+	slot5 = slot5()
+
+	--- END OF BLOCK #8 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 44-44, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 45-46, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #11 47-50, warpins: 1 ---
+	slot5 = slot3
+	slot7 = slot1.category
+	--- END OF BLOCK #11 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 51-51, warpins: 1 ---
+	slot7 = "network"
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 52-53, warpins: 2 ---
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 54-54, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot16._finishPullFailure = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._isCurrentPull
+	slot3 = slot0
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-28, warpins: 2 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._pendingPull
+	slot2 = nil
+	slot1.deadlineTimer = slot2
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "server-list deadline seq=%s mainDone=%s backupDone=%s"
+	slot6 = tostring
+	slot8 = slot0
+	slot6 = slot6(slot8)
+	slot7 = tostring
+	slot9 = slot1.mainDone
+	slot7 = slot7(slot9)
+	slot8 = tostring
+	slot10 = slot1.backupDone
+	MULTRES = slot8(slot10)
+
+	slot2(slot4, slot5, slot6, slot7, MULTRES)
+
+	slot2 = slot1.hasSuccess
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 29-33, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._completePull
+	slot4 = slot0
+
+	slot2(slot4)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 34-44, warpins: 2 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._finishPullFailure
+	slot4 = slot0
+	slot5 = ServerListHelper
+	slot5 = slot5._buildPullError
+	slot7 = "round"
+	slot8 = "network"
+	slot9 = "server-list round timeout"
+	MULTRES = slot5(slot7, slot8, slot9)
+
+	slot2(slot4, MULTRES)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16._onPullDeadline = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -508,49 +1289,108 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15._parseServerListReply = slot16
+slot16._parseServerListReply = slot17
 
-slot16 = function()
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot0 = logger
-	slot2 = slot0
-	slot0 = slot0.error
-	slot3 = "ServerListHelper _notifyPullFailed"
-
-	slot0(slot2, slot3)
-
-	slot0 = ServerListHelper
-	slot0 = slot0._finishPullSuccess
-	slot2 = {}
-	slot3 = ClientRepo
-	slot3 = slot3.confJson
-	slot3 = slot3.serverGroupData
-	slot2.serverGroupData = slot3
-	slot3 = false
-
-	slot0(slot2, slot3)
-
-	return
+slot17 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = ClientRepo
+	slot0 = slot0.confJson
+	slot0 = slot0.serverGroupData
 	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot1 = ServerListHelper
+	slot1 = slot1._finishPullSuccess
+	slot3 = {}
+	slot3.serverGroupData = slot0
+
+	return slot1(slot3)
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot15._notifyPullFailed = slot16
+slot16._tryApplyLocalFallback = slot17
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = ClientRepo
-	slot2 = slot2.ServerGroupDataOnline
-	slot3 = ClientRepo
-	slot3.ServerGroupDataOnline = slot0
-	slot3 = ClientUtils
-	slot3 = slot3.getDirConf
-	slot3, slot4 = slot3()
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot3 == nil then
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2 = slot2.pullServerListTimer
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-10, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2._prefetchedResult = slot0
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-14, warpins: 3 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._finishPullSuccess
+	slot4 = slot0
+
+	return slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16._acceptPullResult = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = ClientRepo
+	slot1 = slot1.ServerGroupDataOnline
+	slot2 = ClientRepo
+	slot2.ServerGroupDataOnline = slot0
+	slot2 = ClientUtils
+	slot2 = slot2.getDirConf
+	slot2, slot3 = slot2()
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -558,34 +1398,34 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #1 10-34, warpins: 1 ---
-	slot5 = logger
-	slot7 = slot5
-	slot5 = slot5.error
-	slot8 = "ServerListHelper serverGroup data error: dirConf is nil, %s, %s, %s, %s"
-	slot9 = ClientConfigServerGroup
-	slot10 = ClientConfigLuaReview
-	slot11 = ClientConst
-	slot11 = slot11.OPEN_MIRROR_SERVER
-	slot12 = inspect
-	slot14 = ClientRepo
-	slot14 = slot14.ServerGroupDataOnline
-	MULTRES = slot12(slot14)
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "ServerListHelper serverGroup data error: dirConf is nil, %s, %s, %s, %s"
+	slot8 = ClientConfigServerGroup
+	slot9 = ClientConfigLuaReview
+	slot10 = ClientConst
+	slot10 = slot10.OPEN_MIRROR_SERVER
+	slot11 = inspect
+	slot13 = ClientRepo
+	slot13 = slot13.ServerGroupDataOnline
+	MULTRES = slot11(slot13)
 
-	slot5(slot7, slot8, slot9, slot10, slot11, MULTRES)
+	slot4(slot6, slot7, slot8, slot9, slot10, MULTRES)
 
-	slot5 = ClientRepo
-	slot5.ServerGroupDataOnline = slot2
-	slot5 = false
-	slot6 = ServerListHelper
-	slot6 = slot6._buildPullError
-	slot8 = "serverGroup"
-	slot9 = "data"
-	slot10 = tostring
-	slot12 = slot4
-	MULTRES = slot10(slot12)
-	MULTRES = slot6(slot8, slot9, MULTRES)
+	slot4 = ClientRepo
+	slot4.ServerGroupDataOnline = slot1
+	slot4 = false
+	slot5 = ServerListHelper
+	slot5 = slot5._buildPullError
+	slot7 = "serverGroup"
+	slot8 = "data"
+	slot9 = tostring
+	slot11 = slot3
+	MULTRES = slot9(slot11)
+	MULTRES = slot5(slot7, slot8, MULTRES)
 
-	return slot5, MULTRES
+	return slot4, MULTRES
 
 	--- END OF BLOCK #1 ---
 
@@ -593,10 +1433,10 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #2 35-37, warpins: 2 ---
-	slot5 = slot3.localDirData
+	slot4 = slot2.localDirData
 	--- END OF BLOCK #2 ---
 
-	if slot5 ~= nil then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -604,11 +1444,11 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #3 38-41, warpins: 1 ---
-	slot5 = slot3.localDirData
-	slot5 = #slot5
+	slot4 = slot2.localDirData
+	slot4 = #slot4
 	--- END OF BLOCK #3 ---
 
-	if slot5 == 0 then
+	if slot4 == 0 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -616,186 +1456,174 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #4 42-65, warpins: 2 ---
-	slot5 = logger
-	slot7 = slot5
-	slot5 = slot5.error
-	slot8 = "ServerListHelper serverGroup data error: localDirData is empty, %s, %s, %s, %s"
-	slot9 = ClientConfigServerGroup
-	slot10 = ClientConfigLuaReview
-	slot11 = ClientConst
-	slot11 = slot11.OPEN_MIRROR_SERVER
-	slot12 = inspect
-	slot14 = slot3
-	MULTRES = slot12(slot14)
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "ServerListHelper serverGroup data error: localDirData is empty, %s, %s, %s, %s"
+	slot8 = ClientConfigServerGroup
+	slot9 = ClientConfigLuaReview
+	slot10 = ClientConst
+	slot10 = slot10.OPEN_MIRROR_SERVER
+	slot11 = inspect
+	slot13 = slot2
+	MULTRES = slot11(slot13)
 
-	slot5(slot7, slot8, slot9, slot10, slot11, MULTRES)
+	slot4(slot6, slot7, slot8, slot9, slot10, MULTRES)
 
-	slot5 = ClientRepo
-	slot5.ServerGroupDataOnline = slot2
-	slot5 = false
-	slot6 = ServerListHelper
-	slot6 = slot6._buildPullError
-	slot8 = "serverGroup"
-	slot9 = "empty"
-	slot10 = tostring
-	slot12 = slot4
-	MULTRES = slot10(slot12)
-	MULTRES = slot6(slot8, slot9, MULTRES)
+	slot4 = ClientRepo
+	slot4.ServerGroupDataOnline = slot1
+	slot4 = false
+	slot5 = ServerListHelper
+	slot5 = slot5._buildPullError
+	slot7 = "serverGroup"
+	slot8 = "empty"
+	slot9 = tostring
+	slot11 = slot3
+	MULTRES = slot9(slot11)
+	MULTRES = slot5(slot7, slot8, MULTRES)
 
-	return slot5, MULTRES
+	return slot4, MULTRES
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 66-67, warpins: 2 ---
+	--- BLOCK #5 66-75, warpins: 2 ---
+	slot4 = ClientUtils
+	slot4 = slot4.updateServerList
+
+	slot4()
+
+	slot4 = GlobalData
+	slot4 = slot4.DefaultServerManager
+	slot6 = slot4
+	slot4 = slot4.latencyDetect
+
+	slot4(slot6)
+
+	slot4 = true
+
+	return slot4
 	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 68-70, warpins: 1 ---
-	slot5 = ServerListHelper
-	slot6 = true
-	slot5.normalHostIsOk = slot6
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 71-86, warpins: 2 ---
-	slot5 = ServerListHelper
-	slot6 = "success"
-	slot5.lastPullCategory = slot6
-	slot5 = ServerListHelper
-	slot6 = nil
-	slot5.lastPullError = slot6
-	slot5 = ClientUtils
-	slot5 = slot5.updateServerList
-
-	slot5()
-
-	slot5 = GlobalData
-	slot5 = slot5.DefaultServerManager
-	slot7 = slot5
-	slot5 = slot5.latencyDetect
-
-	slot5(slot7)
-
-	slot5 = true
-
-	return slot5
-	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot15._finishPullSuccess = slot16
+slot16._finishPullSuccess = slot17
 
-slot16 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = ServerListHelper
-	slot3 = slot3._pendingPull
+	slot3 = slot3._isCurrentPull
+	slot5 = slot0
+	slot3 = slot3(slot5)
+
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= nil then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot4 = slot3.seq
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
-	if slot4 ~= slot0 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 9-21, warpins: 2 ---
+	--- BLOCK #2 8-15, warpins: 2 ---
+	slot3 = ServerListHelper
+	slot3 = slot3._pendingPull
 	slot4 = slot1
 	slot5 = "Done"
 	slot4 = slot4 .. slot5
-	slot5 = true
-	slot3[slot4] = slot5
-	slot4 = slot3.errors
-	slot5 = slot3.errors
-	slot5 = #slot5
-	slot5 = slot5 + 1
-	slot4[slot5] = slot2
-	slot4 = slot3.mainDone
+	slot5 = slot3[slot4]
+
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-16, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #3 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #4
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-26, warpins: 2 ---
+	slot5 = true
+	slot3[slot4] = slot5
+	slot5 = slot3.errors
+	slot6 = slot3.errors
+	slot6 = #slot6
+	slot6 = slot6 + 1
+	slot5[slot6] = slot2
+	slot5 = slot3.hasSuccess
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-31, warpins: 1 ---
+	slot5 = ServerListHelper
+	slot5 = slot5._completePull
+	slot7 = slot0
+
+	slot5(slot7)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 32-34, warpins: 2 ---
+	slot5 = slot3.mainDone
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 22-24, warpins: 1 ---
-	slot4 = slot3.backupExpected
-	--- END OF BLOCK #4 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #5 25-26, warpins: 1 ---
-	slot4 = slot3.backupDone
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #6 27-28, warpins: 0 ---
-	slot4 = false
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 29-29, warpins: 1 ---
-	slot4 = true
+	--- BLOCK #7 35-35, warpins: 1 ---
+	slot5 = slot3.backupDone
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 30-31, warpins: 4 ---
+	--- BLOCK #8 36-37, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 32-32, warpins: 1 ---
+	--- BLOCK #9 38-38, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #9 ---
@@ -803,109 +1631,144 @@ slot16 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 33-37, warpins: 2 ---
-	slot5 = "network"
-	slot6 = ipairs
-	slot8 = slot3.errors
-	slot6, slot7, slot8 = slot6(slot8)
+	--- BLOCK #10 39-44, warpins: 2 ---
+	slot6 = slot3.errors
+	slot6 = slot6[1]
+	slot7 = ipairs
+	slot9 = slot3.errors
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #11 38-40, warpins: 1 ---
-	slot11 = slot10.category
+	--- BLOCK #11 45-47, warpins: 1 ---
+	slot12 = slot11.category
 	--- END OF BLOCK #11 ---
 
-	if slot11 == "data" then
+	if slot12 == "data" then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 41-42, warpins: 1 ---
-	slot5 = "data"
+	--- BLOCK #12 48-49, warpins: 1 ---
+	slot6 = slot11
 	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #13 50-50, warpins: 0 ---
+	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #13 43-43, warpins: 0 ---
-	--- END OF BLOCK #13 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #14 44-46, warpins: 1 ---
-	slot11 = slot10.category
+	--- BLOCK #14 51-53, warpins: 1 ---
+	slot12 = slot11.category
 	--- END OF BLOCK #14 ---
 
-	if slot11 == "empty" then
+	if slot12 == "empty" then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #15 47-47, warpins: 1 ---
-	slot5 = "empty"
+	--- BLOCK #15 54-56, warpins: 1 ---
+	slot12 = slot6.category
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	if slot12 == "network" then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 48-49, warpins: 4 ---
+	--- BLOCK #16 57-57, warpins: 1 ---
+	slot6 = slot11
 	--- END OF BLOCK #16 ---
 
-	for slot9, slot10 in slot6, slot7, slot8
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 58-59, warpins: 5 ---
+	--- END OF BLOCK #17 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
 	LOOP BLOCK #11
-	GO OUT TO BLOCK #17
+	GO OUT TO BLOCK #18
 
 
-	--- BLOCK #17 50-64, warpins: 2 ---
-	slot6 = ServerListHelper
-	slot6.lastPullCategory = slot5
-	slot6 = ServerListHelper
-	slot7 = slot3.errors
-	slot8 = slot3.errors
-	slot8 = #slot8
-	slot7 = slot7[slot8]
-	slot6.lastPullError = slot7
-	slot6 = ServerListHelper
-	slot7 = nil
-	slot6._pendingPull = slot7
-	slot6 = ServerListHelper
-	slot6 = slot6._notifyPullFailed
+	--- BLOCK #18 60-65, warpins: 2 ---
+	slot7 = ServerListHelper
+	slot7 = slot7._finishPullFailure
+	slot9 = slot0
+	slot10 = slot6
 
-	slot6()
+	slot7(slot9, slot10)
 
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot15._recordPullFailure = slot16
+slot16._recordPullFailure = slot17
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._isCurrentPull
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-15, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "ignore stale server-list callback source=main seq=%s"
+	slot6 = tostring
+	slot8 = slot1
+	MULTRES = slot6(slot8)
+
+	slot2(slot4, slot5, MULTRES)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-22, warpins: 2 ---
 	slot2 = ServerListHelper
 	slot2 = slot2._parseServerListReply
 	slot4 = slot0
 	slot5 = "_OnResponse"
 	slot2, slot3 = slot2(slot4, slot5)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 8-19, warpins: 1 ---
+	--- BLOCK #3 23-35, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.info
@@ -914,35 +1777,30 @@ slot16 = function(slot0, slot1)
 	slot4(slot6, slot7)
 
 	slot4 = ServerListHelper
-	slot4 = slot4._finishPullSuccess
-	slot6 = slot3
-	slot7 = true
-	slot4, slot5 = slot4(slot6, slot7)
-	--- END OF BLOCK #1 ---
+	slot4 = slot4._finishPullSuccessForSeq
+	slot6 = slot1
+	slot7 = "main"
+	slot8 = slot3
+	slot4, slot5 = slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #3 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 20-23, warpins: 1 ---
-	slot6 = ServerListHelper
-	slot7 = nil
-	slot6._pendingPull = slot7
-
+	--- BLOCK #4 36-36, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 24-33, warpins: 2 ---
-	slot6 = ServerListHelper
-	slot7 = false
-	slot6.normalHostIsOk = slot7
+	--- BLOCK #5 37-43, warpins: 2 ---
 	slot6 = ServerListHelper
 	slot6 = slot6._recordPullFailure
 	slot8 = slot1
@@ -953,15 +1811,12 @@ slot16 = function(slot0, slot1)
 
 	return
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 34-43, warpins: 2 ---
-	slot4 = ServerListHelper
-	slot5 = false
-	slot4.normalHostIsOk = slot5
+	--- BLOCK #6 44-50, warpins: 2 ---
 	slot4 = ServerListHelper
 	slot4 = slot4._recordPullFailure
 	slot6 = slot1
@@ -971,29 +1826,40 @@ slot16 = function(slot0, slot1)
 	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15._OnResponse = slot16
+slot16._OnResponse = slot17
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = ServerListHelper
-	slot2 = slot2.normalHostIsOk
-
+	slot2 = slot2._isCurrentPull
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
+	--- BLOCK #1 7-15, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "ignore stale server-list callback source=backup seq=%s"
+	slot6 = tostring
+	slot8 = slot1
+	MULTRES = slot6(slot8)
+
+	slot2(slot4, slot5, MULTRES)
+
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1001,7 +1867,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-12, warpins: 2 ---
+	--- BLOCK #2 16-22, warpins: 2 ---
 	slot2 = ServerListHelper
 	slot2 = slot2._parseServerListReply
 	slot4 = slot0
@@ -1016,7 +1882,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 13-24, warpins: 1 ---
+	--- BLOCK #3 23-35, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.info
@@ -1025,10 +1891,12 @@ slot16 = function(slot0, slot1)
 	slot4(slot6, slot7)
 
 	slot4 = ServerListHelper
-	slot4 = slot4._finishPullSuccess
-	slot6 = slot3
-	slot7 = false
-	slot4, slot5 = slot4(slot6, slot7)
+	slot4 = slot4._finishPullSuccessForSeq
+	slot6 = slot1
+	slot7 = "backup"
+	slot8 = slot3
+	slot4, slot5 = slot4(slot6, slot7, slot8)
+
 	--- END OF BLOCK #3 ---
 
 	slot4 = if slot4 then
@@ -1038,11 +1906,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 25-28, warpins: 1 ---
-	slot6 = ServerListHelper
-	slot7 = nil
-	slot6._pendingPull = slot7
-
+	--- BLOCK #4 36-36, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #4 ---
@@ -1050,7 +1914,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-35, warpins: 2 ---
+	--- BLOCK #5 37-43, warpins: 2 ---
 	slot6 = ServerListHelper
 	slot6 = slot6._recordPullFailure
 	slot8 = slot1
@@ -1066,7 +1930,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 36-42, warpins: 2 ---
+	--- BLOCK #6 44-50, warpins: 2 ---
 	slot4 = ServerListHelper
 	slot4 = slot4._recordPullFailure
 	slot6 = slot1
@@ -1082,330 +1946,426 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15._OnResponseVolc = slot16
+slot16._OnResponseVolc = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = ClientRepo
-	slot1 = slot1.confJson
-	slot1 = slot1.enableOnlineServerList
+	slot3 = ClientRepo
+	slot3 = slot3.confJson
+	slot3 = slot3.enableOnlineServerList
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot3 = _G_IsDebugMode
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #2 7-10, warpins: 1 ---
-	slot1 = ServerListHelper
-	slot1 = slot1._pendingPull
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot3 = ClientUtils
+	slot3 = slot3.getDirConf
+	slot3 = slot3()
 	--- END OF BLOCK #2 ---
 
-	if slot1 ~= nil then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-12, warpins: 1 ---
+	--- BLOCK #3 14-19, warpins: 1 ---
+	slot4 = ClientRepo
+	slot4 = slot4.loginAgent
+	slot6 = slot4
+	slot4 = slot4.getServerInfosByConfig
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #3 ---
 
-	slot0 = if not slot0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-13, warpins: 1 ---
+	--- BLOCK #4 20-20, warpins: 3 ---
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #5 14-25, warpins: 2 ---
-	slot1 = ServerListHelper
-	slot1 = slot1._startPullServerListTimer
-
-	slot1()
-
-	slot1 = HttpClientProxy
-	slot1 = slot1()
-	slot2 = ClientConst
-	slot2 = slot2.SERVER_LIST
-	slot2 = slot2.URL_TEST
-	slot3 = ClientConfigEnvType
-	slot4 = 0
+	--- BLOCK #5 21-24, warpins: 1 ---
+	slot3 = ServerListHelper
+	slot3 = slot3._pendingPull
 	--- END OF BLOCK #5 ---
 
-	if slot3 > slot4 then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 26-28, warpins: 1 ---
-	slot3 = ClientConst
-	slot3 = slot3.SERVER_LIST
-	slot2 = slot3.URL_PUBLISH
+	--- BLOCK #6 25-26, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #7 29-34, warpins: 2 ---
-	slot3 = ClientConst
-	slot3 = slot3.SERVER_LIST
-	slot3 = slot3.CN_HOST
-	slot4 = ClientConfigAppCountry
+	--- BLOCK #7 27-28, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
-	if slot4 ~= "cn" then
+	if slot1 ~= nil then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 35-37, warpins: 1 ---
-	slot4 = ClientConst
-	slot4 = slot4.SERVER_LIST
-	slot3 = slot4.GLOBAL_HOST
+	--- BLOCK #8 29-31, warpins: 1 ---
+	slot3 = ServerListHelper
+	slot3 = slot3._pendingPull
+	slot3.onFailure = slot1
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 38-42, warpins: 2 ---
-	slot4 = ServerListHelper
-	slot5 = ServerListHelper
-	slot5 = slot5._pullSeq
+	--- BLOCK #9 32-32, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #10 43-43, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #10 33-49, warpins: 1 ---
+	slot3 = ServerListHelper
+	slot3 = slot3._pendingPull
+	slot4 = ServerListHelper
+	slot4 = slot4._cancelPullDeadline
+	slot6 = slot3
+
+	slot4(slot6)
+
+	slot4 = ServerListHelper
+	slot5 = nil
+	slot4._pendingPull = slot5
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.warn
+	slot7 = "force restart server-list pull staleSeq=%s"
+	slot8 = tostring
+	slot10 = slot3.seq
+	MULTRES = slot8(slot10)
+
+	slot4(slot6, slot7, MULTRES)
+
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 44-66, warpins: 2 ---
-	slot5 = slot5 + 1
-	slot4._pullSeq = slot5
-	slot4 = ServerListHelper
-	slot4 = slot4._pullSeq
-	slot5 = ServerListHelper
-	slot5 = slot5.normalHostIsOk
-	slot5 = not slot5
-	slot6 = ServerListHelper
-	slot7 = "pending"
-	slot6.lastPullCategory = slot7
-	slot6 = ServerListHelper
-	slot7 = nil
-	slot6.lastPullError = slot7
-	slot6 = ServerListHelper
-	slot7 = {
-		mainDone = false,
-		backupDone = false
-	}
-	slot7.seq = slot4
-	slot7.backupExpected = slot5
-	slot8 = {}
-	slot7.errors = slot8
-	slot6._pendingPull = slot7
-	slot6 = ServerListPullUseCSImp
+	--- BLOCK #11 50-58, warpins: 2 ---
+	slot3 = HttpClientProxy
+	slot3 = slot3()
+	slot4 = ClientConst
+	slot4 = slot4.SERVER_LIST
+	slot4 = slot4.URL_TEST
+	slot5 = ClientConfigEnvType
+	slot6 = 0
 	--- END OF BLOCK #11 ---
 
-	if slot6 == true then
+	if slot5 > slot6 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 67-75, warpins: 1 ---
-	slot6 = ServerListHelper
-	slot6 = slot6.csReqServerList
-	slot8 = true
-	slot9 = slot3
-	slot10 = slot2
-	slot11 = 5000
-
-	slot12 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot1 = ServerListHelper
-		slot1 = slot1._OnResponse
-		slot3 = slot0
-		slot4 = seq
-
-		slot1(slot3, slot4)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot6(slot8, slot9, slot10, slot11, slot12)
-
+	--- BLOCK #12 59-61, warpins: 1 ---
+	slot5 = ClientConst
+	slot5 = slot5.SERVER_LIST
+	slot4 = slot5.URL_PUBLISH
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 76-92, warpins: 1 ---
-	slot6 = HttpRequest
-	slot8 = slot3
-	slot9 = nil
-	slot10 = HttpRequest
-	slot10 = slot10.Method
-	slot10 = slot10.GET
-	slot11 = slot2
-	slot12, slot13 = nil
-	slot14 = true
-	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
-	slot9 = slot1
-	slot7 = slot1.httpRequest
-	slot10 = slot6
-	slot11 = 5000
-
-	slot12 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot1 = ServerListHelper
-		slot1 = slot1._OnResponse
-		slot3 = slot0
-		slot4 = seq
-
-		slot1(slot3, slot4)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot13 = false
-
-	slot7(slot9, slot10, slot11, slot12, slot13)
-
+	--- BLOCK #13 62-67, warpins: 2 ---
+	slot5 = ClientConst
+	slot5 = slot5.SERVER_LIST
+	slot5 = slot5.CN_HOST
+	slot6 = ClientConfigAppCountry
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 93-94, warpins: 2 ---
-	--- END OF BLOCK #14 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #15
+	if slot6 ~= "cn" then
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #15 95-102, warpins: 1 ---
-	slot6 = HttpClientProxy
-	slot6 = slot6()
-	slot7 = ClientConst
-	slot7 = slot7.SERVER_LIST
-	slot7 = slot7.CN_HOST_BACKUP
-	slot8 = ClientConfigAppCountry
+	--- BLOCK #14 68-70, warpins: 1 ---
+	slot6 = ClientConst
+	slot6 = slot6.SERVER_LIST
+	slot5 = slot6.GLOBAL_HOST
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 71-75, warpins: 2 ---
+	slot6 = ServerListHelper
+	slot7 = ServerListHelper
+	slot7 = slot7._pullSeq
 	--- END OF BLOCK #15 ---
 
-	if slot8 ~= "cn" then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 103-105, warpins: 1 ---
-	slot8 = ClientConst
-	slot8 = slot8.SERVER_LIST
-	slot7 = slot8.GLOBAL_HOST_BACKUP
+	--- BLOCK #16 76-76, warpins: 1 ---
+	slot7 = 0
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 106-108, warpins: 2 ---
-	slot8 = ServerListPullUseCSImp
+	--- BLOCK #17 77-88, warpins: 2 ---
+	slot7 = slot7 + 1
+	slot6._pullSeq = slot7
+	slot6 = ServerListHelper
+	slot6 = slot6._pullSeq
+	slot7 = ServerListHelper
+	slot8 = {
+		backupDone = false,
+		mainDone = false
+	}
+	slot8.seq = slot6
+	slot9 = {}
+	slot8.errors = slot9
+	slot8.onFailure = slot1
 	--- END OF BLOCK #17 ---
 
-	if slot8 == true then
+	if slot2 ~= true then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 109-117, warpins: 1 ---
-	slot8 = ServerListHelper
-	slot8 = slot8.csReqServerList
-	slot10 = true
-	slot11 = slot7
-	slot12 = slot2
-	slot13 = 5000
-
-	slot14 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot1 = ServerListHelper
-		slot1 = slot1._OnResponseVolc
-		slot3 = slot0
-		slot4 = seq
-
-		slot1(slot3, slot4)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot8(slot10, slot11, slot12, slot13, slot14)
-
+	--- BLOCK #18 89-90, warpins: 1 ---
+	slot9 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 118-134, warpins: 1 ---
-	slot8 = HttpRequest
-	slot10 = slot7
-	slot11 = nil
-	slot12 = HttpRequest
-	slot12 = slot12.Method
-	slot12 = slot12.GET
-	slot13 = slot2
-	slot14, slot15 = nil
-	slot16 = true
-	slot8 = slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16)
-	slot11 = slot6
-	slot9 = slot6.httpRequest
-	slot12 = slot8
-	slot13 = 5000
+	--- BLOCK #19 91-91, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #19 ---
 
-	slot14 = function(slot0)
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 92-115, warpins: 2 ---
+	slot8.isPrefetch = slot9
+	slot7._pendingPull = slot8
+	slot7 = ServerListHelper
+	slot7 = slot7._pendingPull
+	slot8 = TimerManager
+	slot8 = slot8.addTimer
+	slot10 = ServerListRoundTimeout
+
+	slot11 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = ServerListHelper
+		slot0 = slot0._onPullDeadline
+		slot2 = seq
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot8 = slot8(slot10, slot11)
+	slot7.deadlineTimer = slot8
+	slot7 = logger
+	slot9 = slot7
+	slot7 = slot7.info
+	slot10 = "server-list begin seq=%s timeout=%s"
+	slot11 = tostring
+	slot13 = slot6
+	slot11 = slot11(slot13)
+	slot12 = tostring
+	slot14 = ServerListRoundTimeout
+	MULTRES = slot12(slot14)
+
+	slot7(slot9, slot10, slot11, MULTRES)
+
+	slot7 = ServerListPullUseCSImp
+	--- END OF BLOCK #20 ---
+
+	if slot7 == true then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 116-124, warpins: 1 ---
+	slot7 = ServerListHelper
+	slot7 = slot7.csReqServerList
+	slot9 = true
+	slot10 = slot5
+	slot11 = slot4
+	slot12 = 5000
+
+	slot13 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = ServerListHelper
+		slot1 = slot1._OnResponse
+		slot3 = slot0
+		slot4 = seq
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #22 125-141, warpins: 1 ---
+	slot7 = HttpRequest
+	slot9 = slot5
+	slot10 = nil
+	slot11 = HttpRequest
+	slot11 = slot11.Method
+	slot11 = slot11.GET
+	slot12 = slot4
+	slot13, slot14 = nil
+	slot15 = true
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	slot10 = slot3
+	slot8 = slot3.httpRequest
+	slot11 = slot7
+	slot12 = 5000
+
+	slot13 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = ServerListHelper
+		slot1 = slot1._OnResponse
+		slot3 = slot0
+		slot4 = seq
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot14 = false
+
+	slot8(slot10, slot11, slot12, slot13, slot14)
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 142-147, warpins: 2 ---
+	slot7 = ServerListHelper
+	slot7 = slot7._isCurrentPull
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #23 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #24 148-155, warpins: 1 ---
+	slot7 = HttpClientProxy
+	slot7 = slot7()
+	slot8 = ClientConst
+	slot8 = slot8.SERVER_LIST
+	slot8 = slot8.CN_HOST_BACKUP
+	slot9 = ClientConfigAppCountry
+	--- END OF BLOCK #24 ---
+
+	if slot9 ~= "cn" then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 156-158, warpins: 1 ---
+	slot9 = ClientConst
+	slot9 = slot9.SERVER_LIST
+	slot8 = slot9.GLOBAL_HOST_BACKUP
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 159-161, warpins: 2 ---
+	slot9 = ServerListPullUseCSImp
+	--- END OF BLOCK #26 ---
+
+	if slot9 == true then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 162-170, warpins: 1 ---
+	slot9 = ServerListHelper
+	slot9 = slot9.csReqServerList
+	slot11 = true
+	slot12 = slot8
+	slot13 = slot4
+	slot14 = 5000
+
+	slot15 = function(slot0)
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot1 = ServerListHelper
 		slot1 = slot1._OnResponseVolc
@@ -1421,40 +2381,98 @@ slot16 = function(slot0)
 
 	end
 
-	slot15 = false
-
 	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #27 ---
 
-	FLOW; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #20 135-136, warpins: 3 ---
+	--- BLOCK #28 171-187, warpins: 1 ---
+	slot9 = HttpRequest
+	slot11 = slot8
+	slot12 = nil
+	slot13 = HttpRequest
+	slot13 = slot13.Method
+	slot13 = slot13.GET
+	slot14 = slot4
+	slot15, slot16 = nil
+	slot17 = true
+	slot9 = slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17)
+	slot12 = slot7
+	slot10 = slot7.httpRequest
+	slot13 = slot9
+	slot14 = 5000
+
+	slot15 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = ServerListHelper
+		slot1 = slot1._OnResponseVolc
+		slot3 = slot0
+		slot4 = seq
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot16 = false
+
+	slot10(slot12, slot13, slot14, slot15, slot16)
+
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 188-189, warpins: 3 ---
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #21 137-137, warpins: 2 ---
+	--- BLOCK #30 190-190, warpins: 2 ---
 	return
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #22 138-138, warpins: 2 ---
+	--- BLOCK #31 191-191, warpins: 2 ---
 	return
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #31 ---
 
 
 
 end
 
-slot15.reqServerList = slot16
+slot16._requestServerList = slot17
 
-slot16 = function(slot0, slot1, slot2, slot3, slot4)
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = ServerListHelper
+	slot2 = slot2._requestServerList
+	slot4 = slot0
+	slot5 = slot1
+	slot6 = false
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.reqServerList = slot17
+
+slot17 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = "http"
 	--- END OF BLOCK #0 ---
@@ -1546,9 +2564,9 @@ slot16 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot15.csReqServerList = slot16
+slot16.csReqServerList = slot17
 
-return slot15
+return slot16
 --- END OF BLOCK #0 ---
 
 

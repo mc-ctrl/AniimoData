@@ -1,4 +1,4 @@
---- BLOCK #0 1-105, warpins: 1 ---
+--- BLOCK #0 1-108, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -26,114 +26,117 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Const.AddressDataConst"
 slot8 = slot8(slot10)
-slot9 = slot0.LightClass
-slot11 = "GrabEggModeScene"
-slot12 = slot1
-slot9 = slot9(slot11, slot12)
-slot10 = {}
-slot11 = {
+slot9 = require
+slot11 = "Common.Const.Const"
+slot9 = slot9(slot11)
+slot10 = slot0.LightClass
+slot12 = "GrabEggModeScene"
+slot13 = slot1
+slot10 = slot10(slot12, slot13)
+slot11 = {}
+slot12 = {
 	weatherProfilerName = "WeatherProfile_Snow_Heavy"
 }
-slot12 = {
+slot13 = {
 	12,
 	0,
 	0
 }
-slot11.time = slot12
-slot12 = {
+slot12.time = slot13
+slot13 = {
 	-82.63,
 	0,
 	572.67
 }
-slot11.boatInitPos = slot12
-slot12 = {
+slot12.boatInitPos = slot13
+slot13 = {
 	0,
 	-35,
 	0
 }
-slot11.boatInitRot = slot12
-slot10[1] = slot11
-slot11 = {
+slot12.boatInitRot = slot13
+slot11[1] = slot12
+slot12 = {
 	weatherProfilerName = "WeatherProfile_Rain_Storm"
 }
-slot12 = {
+slot13 = {
 	18,
 	0,
 	0
 }
-slot11.time = slot12
-slot12 = {
+slot12.time = slot13
+slot13 = {
 	-74.32,
 	0,
 	567.45
 }
-slot11.boatInitPos = slot12
-slot12 = {
+slot12.boatInitPos = slot13
+slot13 = {
 	0,
 	147.886,
 	0
 }
-slot11.boatInitRot = slot12
-slot10[2] = slot11
-slot11 = {}
+slot12.boatInitRot = slot13
+slot11[2] = slot12
 slot12 = {}
-slot13 = {
+slot13 = {}
+slot14 = {
 	-82.63,
 	0,
 	572.67
 }
-slot12.boatPos = slot13
-slot13 = {
+slot13.boatPos = slot14
+slot14 = {
 	0,
 	-35,
 	0
 }
-slot12.boatRot = slot13
-slot11[1] = slot12
-slot12 = {}
-slot13 = {
+slot13.boatRot = slot14
+slot12[1] = slot13
+slot13 = {}
+slot14 = {
 	-81.39,
 	0,
 	572.39
 }
-slot12.boatPos = slot13
-slot13 = {
+slot13.boatPos = slot14
+slot14 = {
 	0,
 	0,
 	0
 }
-slot12.boatRot = slot13
-slot11[2] = slot12
-slot12 = {}
-slot13 = {
+slot13.boatRot = slot14
+slot12[2] = slot13
+slot13 = {}
+slot14 = {
 	-74.32,
 	0,
 	567.45
 }
-slot12.boatPos = slot13
-slot13 = {
+slot13.boatPos = slot14
+slot14 = {
 	0,
 	147.886,
 	0
 }
-slot12.boatRot = slot13
-slot11[3] = slot12
-slot12 = {}
-slot13 = {
+slot13.boatRot = slot14
+slot12[3] = slot13
+slot13 = {}
+slot14 = {
 	-74.32,
 	0,
 	567.45
 }
-slot12.boatPos = slot13
-slot13 = {
+slot13.boatPos = slot14
+slot14 = {
 	0,
 	147.886,
 	0
 }
-slot12.boatRot = slot13
-slot11[4] = slot12
+slot13.boatRot = slot14
+slot12[4] = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 1
 	slot0.mode = slot1
@@ -147,9 +150,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.onCtor = slot12
+slot10.onCtor = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-82, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -261,9 +264,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.onStart = slot12
+slot10.onStart = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.entPool
 	slot2 = pg
@@ -334,9 +337,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.onAllEntityLoaded = slot12
+slot10.onAllEntityLoaded = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = IsNil
 	slot3 = slot0.boatCutscene
@@ -392,9 +395,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.ensureBoatCutsceneLayer = slot12
+slot10.ensureBoatCutsceneLayer = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = IsNil
 	slot3 = slot0.boatCutscene
@@ -441,9 +444,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.tryPlayBoatTimeline = slot12
+slot10.tryPlayBoatTimeline = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -454,20 +457,18 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = slot0.eModel
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 6-7, warpins: 2 ---
 	slot1 = false
 
 	return slot1
@@ -477,13 +478,14 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-17, warpins: 2 ---
+	--- BLOCK #3 8-16, warpins: 2 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.playableComponent
 	slot3 = slot1
 	slot1 = slot1.GetCurrentPlayableState
-	slot4 = 2
-	slot1 = slot1(slot3, slot4)
+	slot4 = Const
+	slot4 = slot4.COMPONENT_IDX_PLAYABLE
+	slot5 = 2
+	slot1 = slot1(slot3, slot4, slot5)
 	--- END OF BLOCK #3 ---
 
 	slot1 = if not slot1 then
@@ -493,13 +495,14 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #4 18-23, warpins: 1 ---
+	--- BLOCK #4 17-23, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.playableComponent
 	slot3 = slot1
 	slot1 = slot1.GetCurrentPlayableState
-	slot4 = 0
-	slot1 = slot1(slot3, slot4)
+	slot4 = Const
+	slot4 = slot4.COMPONENT_IDX_PLAYABLE
+	slot5 = 0
+	slot1 = slot1(slot3, slot4, slot5)
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -542,10 +545,10 @@ slot12 = function(slot0)
 
 	--- BLOCK #8 35-38, warpins: 2 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
+	slot2 = slot2.modelModelView
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
@@ -553,45 +556,26 @@ slot12 = function(slot0)
 
 
 	--- BLOCK #9 39-41, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot5 = slot2
+	slot3 = slot2.CheckRendererLoaded
+	slot3 = slot3(slot5)
+
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 42-43, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	slot3 = if slot2 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 44-46, warpins: 1 ---
-	slot5 = slot2
-	slot3 = slot2.CheckRendererLoaded
-	slot3 = slot3(slot5)
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 47-47, warpins: 2 ---
+	--- BLOCK #10 42-42, warpins: 2 ---
 	return slot3
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot9._isVirtualPlayerReady = slot12
+slot10._isVirtualPlayerReady = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #0 ---
@@ -687,9 +671,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot9._waitAndPlayTimeline = slot12
+slot10._waitAndPlayTimeline = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -792,17 +776,16 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.setInitParam = slot12
+slot10.setInitParam = slot13
 
-slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.copyMainPlayer
 	slot2 = slot2(slot4)
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
 	slot5 = slot3
-	slot3 = slot3.SetParent
+	slot3 = slot3.SetTransformParent
 	slot6 = slot1.rootObject
 	--- END OF BLOCK #0 ---
 
@@ -813,7 +796,7 @@ slot12 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 11-12, warpins: 1 ---
+	--- BLOCK #1 10-11, warpins: 1 ---
 	slot6 = slot0.boatCutscene
 	slot6 = slot6.transform
 
@@ -822,24 +805,31 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-30, warpins: 2 ---
+	--- BLOCK #2 12-30, warpins: 2 ---
 	slot3(slot5, slot6)
 
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.localPosition = slot4
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalPosition
+
+	slot3(slot5)
+
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.localEulerAngles = slot4
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalRotation
+	slot6 = 0
+	slot7 = 0
+	slot8 = 0
+	slot9 = 1
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.one
-	slot3.localScale = slot4
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalScale
+
+	slot3(slot5)
+
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot2 then
@@ -865,9 +855,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.createTrackRefVirtualEntity = slot12
+slot10.createTrackRefVirtualEntity = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.mode = slot1
 
@@ -878,9 +868,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.setMode = slot12
+slot10.setMode = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.mode = slot1
 	slot2 = 1
@@ -1013,9 +1003,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.switchMode = slot12
+slot10.switchMode = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.entPool
 	slot2 = pg
@@ -1083,9 +1073,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.setOriPos = slot12
+slot10.setOriPos = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = 1
 	slot3 = #slot1
@@ -1127,9 +1117,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.createEggs = slot12
+slot10.createEggs = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.mainPlayer
 	--- END OF BLOCK #0 ---
@@ -1267,9 +1257,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot9.onActiveChanged = slot12
+slot10.onActiveChanged = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.eggs
@@ -1279,9 +1269,10 @@ slot12 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -1290,7 +1281,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1298,7 +1289,7 @@ slot12 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 11-11, warpins: 1 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1306,9 +1297,9 @@ slot12 = function(slot0)
 
 end
 
-slot9.onDestroy = slot12
+slot10.onDestroy = slot13
 
-return slot9
+return slot10
 --- END OF BLOCK #0 ---
 
 

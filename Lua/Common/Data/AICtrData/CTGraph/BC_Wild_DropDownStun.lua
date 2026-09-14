@@ -1,58 +1,12 @@
---- BLOCK #0 1-35, warpins: 1 ---
+--- BLOCK #0 1-14, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {
-	"OnLandStateEnterTrigger"
-}
+slot1 = {}
+slot2 = slot0.SafeCall
+slot3 = slot0.DoAction
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -82,9 +36,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeEventTrigger = slot7
+slot1.executeEventTrigger = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_8_2
@@ -99,22 +53,20 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-21, warpins: 1 ---
+	--- BLOCK #1 7-19, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActive
 
 	slot2(slot4)
 
-	slot2 = _C
-	slot4 = 5
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "AddBuff"
+	slot2 = _A
+	slot4 = slot0
+	slot5 = "AddBuff"
+	slot6 = 0
+	slot7 = 10072
 	slot8 = 0
-	slot9 = 10072
-	slot10 = 0
 
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	slot2 = true
 
@@ -125,7 +77,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 22-24, warpins: 1 ---
+	--- BLOCK #2 20-22, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActiveFail
 
@@ -136,7 +88,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 25-25, warpins: 2 ---
+	--- BLOCK #3 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -144,166 +96,104 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_5_0 = slot7
+slot1._to_5_0 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot4 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getContextValue
 	slot4 = "height"
-
-	return slot1(slot3, slot4)
+	slot1 = slot1(slot3, slot4)
+	slot2 = 5
 	--- END OF BLOCK #0 ---
 
-
-
-end
-
-slot2._get_2_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_2_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 3
-	slot5 = "IsGreaterOrEqual"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = 5
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_3_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_7_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 6
-	slot5 = "CheckHasAbility"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "Fly"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_6_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = _C
-	slot3 = 7
-	slot4 = "GetSelfId"
-	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_7_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_3_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
+	if slot1 < slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
+	--- BLOCK #1 8-9, warpins: 1 ---
 	slot2 = false
-
-	return slot2
-
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 9-14, warpins: 2 ---
-	slot2 = _M
-	slot2 = slot2._get_9_1
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #2 10-10, warpins: 1 ---
+	slot2 = true
 	--- END OF BLOCK #2 ---
 
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 15-16, warpins: 1 ---
+	--- BLOCK #4 13-14, warpins: 1 ---
 	slot3 = false
 
 	return slot3
 
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-18, warpins: 2 ---
-	slot3 = true
-
-	return slot3
 	--- END OF BLOCK #4 ---
 
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-29, warpins: 2 ---
+	slot3 = _C
+	slot5 = 7
+	slot6 = "GetSelfId"
+	slot7 = slot0
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = _C
+	slot6 = 6
+	slot7 = "CheckHasAbility"
+	slot8 = slot0
+	slot9 = slot3
+	slot10 = "Fly"
+	slot4 = slot4(slot6, slot7, slot8, slot9, slot10)
+	slot5 = not slot4
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-31, warpins: 1 ---
+	slot6 = false
+
+	return slot6
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 32-33, warpins: 2 ---
+	slot6 = true
+
+	return slot6
+	--- END OF BLOCK #7 ---
+
 
 
 end
 
-slot2._get_8_2 = slot7
+slot1._get_8_2 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_6_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 9
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_9_1 = slot7
-
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

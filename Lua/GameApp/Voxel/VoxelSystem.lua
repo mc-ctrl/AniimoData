@@ -1,4 +1,4 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-81, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Core.SystemBase"
 slot0 = slot0(slot2)
@@ -21,17 +21,109 @@ slot6 = require
 slot8 = "Const.ClientConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.VoxelUtils"
+slot9 = "Common.Const.VoxelConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Entities.Utils.EModelUtils"
+slot10 = "Const.MessageName"
 slot8 = slot8(slot10)
-slot9 = slot1.LightClass
-slot11 = "VoxelSystem"
-slot12 = slot0
-slot9 = slot9(slot11, slot12)
+slot9 = require
+slot11 = "Common.Utils.VoxelUtils"
+slot9 = slot9(slot11)
+slot10 = require
+slot12 = "Entities.Utils.EModelUtils"
+slot10 = slot10(slot12)
+slot11 = slot1.LightClass
+slot13 = "VoxelSystem"
+slot14 = slot0
+slot11 = slot11(slot13, slot14)
 
-slot10 = function(slot0)
+slot12 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = {}
+	slot2 = MessageName
+	slot2 = slot2.TIMESCALE_CHANGE
+	slot3 = "onTimeScaleChange"
+	slot1[slot2] = slot3
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot11.getMessageBindMap = slot12
+
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.space
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot3 = VoxelUtils
+	slot3 = slot3.setVoxelTimeScale
+	slot5 = slot2.id
+	--- END OF BLOCK #2 ---
+
+	slot6 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-11, warpins: 1 ---
+	slot6 = 1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-13, warpins: 2 ---
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot11.onTimeScaleChange = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = nil
+	slot0.mutableRegionSpaceId = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot11.resetMutableRegionCache = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-120, warpins: 1 ---
 	slot1 = nil
 	slot0.loadedCallback = slot1
@@ -140,7 +232,7 @@ slot10 = function(slot0)
 		1
 	}
 	slot18 = {
-		2
+		2.8
 	}
 	slot19 = 10
 	slot20 = 15
@@ -173,20 +265,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.onCtor = slot10
+slot11.onCtor = slot12
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot9.onDestroy = slot10
-
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.loadNearbyRegions
@@ -241,9 +322,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.onTick = slot10
+slot11.onTick = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = FREE_WALK
 
@@ -269,124 +350,186 @@ slot10 = function(slot0)
 	slot1 = slot1.pawn
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 9-11, warpins: 1 ---
+	--- BLOCK #3 9-9, warpins: 1 ---
 	slot2 = slot1.space
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-20, warpins: 1 ---
-	slot2 = slot1.space
-	slot4 = slot2
-	slot2 = slot2.getVoxelLoadType
-	slot2 = slot2(slot4)
-	slot3 = ClientConst
-	slot3 = slot3.VoxelLoadType
-	slot3 = slot3.MAP_LOAD_ALL
-
+	--- BLOCK #4 10-11, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	if slot2 == slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 21-21, warpins: 1 ---
-	return
+	--- BLOCK #5 12-19, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.getVoxelLoadType
+	slot3 = slot3(slot5)
+	slot4 = ClientConst
+	slot4 = slot4.VoxelLoadType
+	slot4 = slot4.MAP_LOAD_ALL
 
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 22-40, warpins: 2 ---
-	slot4 = slot1
-	slot2 = slot1.getPosition
-	slot2 = slot2(slot4)
-	slot3 = VoxelUtils
-	slot3 = slot3.loadPartitionRegionsByPoint
-	slot5 = slot1.space
-	slot5 = slot5.id
-	slot6 = slot2.x
-	slot7 = slot2.y
-	slot8 = slot2.z
-	slot9 = 2
-	slot10 = 3
-
-	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
-
-	slot3 = slot1.space
-	slot5 = slot3
-	slot3 = slot3.checkEnableMutableVoxel
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
+	if slot3 == slot4 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 41-50, warpins: 1 ---
-	slot3 = VoxelUtils
-	slot3 = slot3.setMutableRegionRange
-	slot5 = slot1.space
-	slot5 = slot5.id
-	slot6 = slot2.x
-	slot7 = slot2.y
-	slot8 = slot2.z
-	slot9 = 2
+	--- BLOCK #6 20-20, warpins: 2 ---
+	return
 
-	slot3(slot5, slot6, slot7, slot8, slot9)
+	--- END OF BLOCK #6 ---
 
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-52, warpins: 2 ---
+	slot5 = slot1
+	slot3 = slot1.getPosition
+	slot3 = slot3(slot5)
+	slot4 = slot2.id
+	slot5 = VoxelUtils
+	slot5 = slot5.loadPartitionRegionsByPoint
+	slot7 = slot4
+	slot8 = slot3.x
+	slot9 = slot3.y
+	slot10 = slot3.z
+	slot11 = 2
+	slot12 = 3
+
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+
+	slot5 = math
+	slot5 = slot5.floor
+	slot7 = slot3.x
+	slot8 = VoxelConst
+	slot8 = slot8.REGION_LENGTH
+	slot7 = slot7 / slot8
+	slot5 = slot5(slot7)
+	slot6 = math
+	slot6 = slot6.floor
+	slot8 = slot3.z
+	slot9 = VoxelConst
+	slot9 = slot9.REGION_LENGTH
+	slot8 = slot8 / slot9
+	slot6 = slot6(slot8)
+	slot9 = slot2
+	slot7 = slot2.checkEnableMutableVoxel
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 51-59, warpins: 1 ---
-	slot3 = VoxelUtils
-	slot3 = slot3.setMutableRegionRange
-	slot5 = slot1.space
-	slot5 = slot5.id
-	slot6 = slot2.x
-	slot7 = slot2.y
-	slot8 = slot2.z
-	slot9 = -1
-
-	slot3(slot5, slot6, slot7, slot8, slot9)
-
+	--- BLOCK #8 53-54, warpins: 1 ---
+	slot7 = 2
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 60-60, warpins: 4 ---
-	return
+	--- BLOCK #9 55-55, warpins: 1 ---
+	slot7 = -1
 	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 56-58, warpins: 2 ---
+	slot8 = slot0.mutableRegionSpaceId
+	--- END OF BLOCK #10 ---
+
+	if slot8 == slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #11 59-61, warpins: 1 ---
+	slot8 = slot0.mutableRegionX
+	--- END OF BLOCK #11 ---
+
+	if slot8 == slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 62-64, warpins: 1 ---
+	slot8 = slot0.mutableRegionZ
+	--- END OF BLOCK #12 ---
+
+	if slot8 == slot6 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 65-67, warpins: 1 ---
+	slot8 = slot0.mutableRegionSize
+	--- END OF BLOCK #13 ---
+
+	if slot8 ~= slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 68-79, warpins: 4 ---
+	slot0.mutableRegionSpaceId = slot4
+	slot0.mutableRegionX = slot5
+	slot0.mutableRegionZ = slot6
+	slot0.mutableRegionSize = slot7
+	slot8 = VoxelUtils
+	slot8 = slot8.setMutableRegionRange
+	slot10 = slot4
+	slot11 = slot3.x
+	slot12 = slot3.y
+	slot13 = slot3.z
+	slot14 = slot7
+
+	slot8(slot10, slot11, slot12, slot13, slot14)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 80-80, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot9.loadNearbyRegions = slot10
+slot11.loadNearbyRegions = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -433,9 +576,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.isLoadingRegion = slot10
+slot11.isLoadingRegion = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.loadedCallback = slot1
 
@@ -446,9 +589,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.setRegionLoadedCallback = slot10
+slot11.setRegionLoadedCallback = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.clear
@@ -594,9 +737,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.registerVoxelRegionLoadCallback = slot10
+slot11.registerVoxelRegionLoadCallback = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.voxelChangeDirty
 	--- END OF BLOCK #0 ---
@@ -660,9 +803,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.checkVoxelLoadChangeCallback = slot10
+slot11.checkVoxelLoadChangeCallback = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.world
@@ -715,9 +858,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.updateVoxelPath = slot10
+slot11.updateVoxelPath = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -736,9 +879,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onSceneLoaded = slot10
+slot11.onSceneLoaded = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -757,9 +900,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onSceneUnloaded = slot10
+slot11.onSceneUnloaded = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = {
 		heightDown = 0.5,
@@ -798,9 +941,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.testPlanGrass = slot10
+slot11.testPlanGrass = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = {
 		heightDown = 0.5,
@@ -839,9 +982,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.testIgnite = slot10
+slot11.testIgnite = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = {
 		heightDown = 0.5,
@@ -880,9 +1023,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.testForceIgnite = slot10
+slot11.testForceIgnite = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = {
 		heightDown = 0.5,
@@ -921,9 +1064,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.testGrowFlower = slot10
+slot11.testGrowFlower = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = {
 		heightDown = 0.5,
@@ -962,9 +1105,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.testBurn = slot10
+slot11.testBurn = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = require
 	slot3 = "Common.Const.AbilityConst"
@@ -998,78 +1141,73 @@ slot10 = function(slot0)
 
 end
 
-slot9.testGetGrowFlowerNum = slot10
+slot11.testGetGrowFlowerNum = slot12
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-64, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-59, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot1 = slot1.space
 	slot1 = slot1.id
 	slot2 = "plantGrass"
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.cameraMgr
-	slot3 = slot3.worldCameraInst
-	slot3 = slot3.transform
-	slot4 = EModelUtils
-	slot4 = slot4.setAgentPositionAndRotation
-	slot6 = pg
-	slot6 = slot6.pawn
-	slot7 = Vector3
+	slot3 = EModelUtils
+	slot3 = slot3.setAgentPositionAndRotation
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot6 = Vector3
+	slot8 = 0
+	slot9 = 0
+	slot10 = 0
+	slot6 = slot6(slot8, slot9, slot10)
+	slot7 = Quaternion
 	slot9 = 0
 	slot10 = 0
 	slot11 = 0
-	slot7 = slot7(slot9, slot10, slot11)
-	slot8 = Quaternion
-	slot10 = 0
-	slot11 = 0
-	slot12 = 0
-	slot13 = 1
-	slot8 = slot8(slot10, slot11, slot12, slot13)
-	slot9 = true
+	slot12 = 1
+	slot7 = slot7(slot9, slot10, slot11, slot12)
+	slot8 = true
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot3(slot5, slot6, slot7, slot8)
 
+	slot3 = pg
+	slot3 = slot3.pawn
+	slot5 = slot3
+	slot3 = slot3.getPosition
+	slot3 = slot3(slot5)
 	slot4 = pg
 	slot4 = slot4.pawn
 	slot6 = slot4
-	slot4 = slot4.getPosition
+	slot4 = slot4.getRotation
 	slot4 = slot4(slot6)
-	slot5 = pg
-	slot5 = slot5.pawn
-	slot7 = slot5
-	slot5 = slot5.getRotation
-	slot5 = slot5(slot7)
+	slot5 = 1
 	slot6 = 1
 	slot7 = 1
-	slot8 = 1
-	slot9 = 10
-	slot10 = VoxelUtils
-	slot10 = slot10.doSweepBoxVoxelReact
-	slot12 = slot1
-	slot13 = slot2
+	slot8 = 10
+	slot9 = VoxelUtils
+	slot9 = slot9.doSweepBoxVoxelReact
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3
 	slot14 = slot4
 	slot15 = slot5
 	slot16 = slot6
 	slot17 = slot7
 	slot18 = slot8
-	slot19 = slot9
 
-	slot10(slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+	slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18)
 
-	slot10 = require
-	slot12 = "Utils.ClientDebugUtils"
-	slot10 = slot10(slot12)
-	slot11 = slot10.drawBoxSweep
+	slot9 = require
+	slot11 = "Utils.ClientDebugUtils"
+	slot9 = slot9(slot11)
+	slot10 = slot9.drawBoxSweep
+	slot12 = slot3
 	slot13 = slot4
 	slot14 = slot5
 	slot15 = slot6
 	slot16 = slot7
 	slot17 = slot8
-	slot18 = slot9
 
-	slot11(slot13, slot14, slot15, slot16, slot17, slot18)
+	slot10(slot12, slot13, slot14, slot15, slot16, slot17)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1078,9 +1216,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.testBoxSweepPlantGrass = slot10
+slot11.testBoxSweepPlantGrass = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1089,9 +1227,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.test = slot10
+slot11.test = slot12
 
-return slot9
+return slot11
 --- END OF BLOCK #0 ---
 
 

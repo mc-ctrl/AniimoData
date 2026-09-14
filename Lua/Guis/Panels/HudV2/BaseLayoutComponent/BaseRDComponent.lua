@@ -86,7 +86,7 @@ end
 slot10.initView = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-108, warpins: 1 ---
+	--- BLOCK #0 1-106, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBaseComponentCls
 	slot4 = HudSplicingCfg
@@ -95,9 +95,7 @@ slot11 = function(slot0)
 	slot1 = slot1(slot3, slot4)
 	slot1 = slot1.new
 	slot3 = slot0
-	slot4 = slot0.view
-	slot4 = slot4.uiNode
-	slot4 = slot4.transform
+	slot4 = nil
 	slot5 = {
 		isAutoLoad = true
 	}
@@ -156,7 +154,7 @@ slot11 = function(slot0)
 		isAutoLoad = true
 	}
 	slot6 = slot0.view
-	slot6 = slot6.uiNode
+	slot6 = slot6.uiWorldNode
 	slot6 = slot6.transform
 	slot5.parentTrans = slot6
 	slot6 = HudSplicingCfg

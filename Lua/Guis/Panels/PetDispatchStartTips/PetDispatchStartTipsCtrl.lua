@@ -1,4 +1,4 @@
---- BLOCK #0 1-46, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -23,14 +23,17 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Data.sys_config_data"
 slot7 = slot7(slot9)
-slot8 = slot0.LightClass
-slot10 = "PetDispatchStartTipsCtrl"
-slot11 = slot1
-slot8 = slot8(slot10, slot11)
-slot9 = {}
-slot8.messages = slot9
+slot8 = require
+slot10 = "Const.ClientConst"
+slot8 = slot8(slot10)
+slot9 = slot0.LightClass
+slot11 = "PetDispatchStartTipsCtrl"
+slot12 = slot1
+slot9 = slot9(slot11, slot12)
+slot10 = {}
+slot9.messages = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -46,9 +49,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onCreate = slot9
+slot9.onCreate = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listPetSelectUList
@@ -76,7 +79,19 @@ slot9 = function(slot0)
 	slot1 = slot1.btnBack
 
 	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
+		--- BLOCK #0 1-15, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.input
+		slot2 = slot0
+		slot0 = slot0.playRumbleByName
+		slot3 = ClientConst
+		slot3 = slot3.RumbleLayer
+		slot3 = slot3.DEFAULT
+		slot4 = "CommonLight"
+
+		slot0(slot2, slot3, slot4)
+
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.dismiss
@@ -99,9 +114,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.addListener = slot9
+slot9.addListener = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -116,9 +131,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onDestroy = slot9
+slot9.onDestroy = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-33, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -332,9 +347,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onOpen = slot9
+slot9.onOpen = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.tIndex
 	--- END OF BLOCK #0 ---
@@ -342,11 +357,11 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	if slot4 == 0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 4-14, warpins: 1 ---
+	--- BLOCK #1 4-20, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -355,80 +370,44 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	slot5 = slot4.GetRefValue
 	slot8 = "iconUImage"
 	slot5 = slot5(slot7, slot8)
-	slot6 = slot1.TryChangePage
+	slot6 = LuaUIUtils
+	slot6 = slot6.renderPetHeadFlashBgAndFrame
+	slot8 = slot4
+	slot9 = slot3.petInfo
+	slot9 = slot9.isShiny
+	slot10 = slot3.petInfo
+	slot10 = slot10.shinyStyle
 	--- END OF BLOCK #1 ---
 
-	slot6 = if slot6 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #2 15-18, warpins: 1 ---
-	slot6 = slot3.petInfo
-	slot6 = slot6.isShiny
-	--- END OF BLOCK #2 ---
-
-	slot6 = if slot6 then
 	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
-	slot8 = slot1
-	slot6 = slot1.TryChangePage
-	slot9 = "Type"
-	slot10 = 1
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #4 25-28, warpins: 1 ---
-	slot6 = slot3.petInfo
-	slot6 = slot6.isMagic
-	--- END OF BLOCK #4 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 29-34, warpins: 1 ---
-	slot8 = slot1
-	slot6 = slot1.TryChangePage
-	slot9 = "Type"
-	slot10 = 2
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 35-39, warpins: 1 ---
-	slot8 = slot1
-	slot6 = slot1.TryChangePage
-	slot9 = "Type"
+	--- BLOCK #2 21-21, warpins: 1 ---
 	slot10 = 0
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-25, warpins: 2 ---
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #6 ---
+	slot6 = slot1.TryChangePage
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #7
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #7 40-44, warpins: 3 ---
+	--- BLOCK #4 26-30, warpins: 1 ---
 	slot8 = slot1
 	slot6 = slot1.TryChangePage
 	slot9 = "state"
@@ -436,12 +415,12 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #8 45-54, warpins: 2 ---
+	--- BLOCK #5 31-40, warpins: 2 ---
 	slot6 = LuaUIUtils
 	slot6 = slot6.getPetIcon
 	slot8 = slot3.petInfo
@@ -453,22 +432,22 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot6(slot8, slot9, slot10)
 	slot5.url = slot6
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #9 55-55, warpins: 2 ---
+	--- BLOCK #6 41-41, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot8.onRenderPetItem = slot9
+slot9.onRenderPetItem = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -477,9 +456,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onShow = slot9
+slot9.onShow = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -488,9 +467,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onHide = slot9
+slot9.onHide = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

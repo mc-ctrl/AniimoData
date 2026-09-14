@@ -39,11 +39,11 @@ slot10 = slot5.LINE_STATE_CROWD
 slot9[3] = slot10
 slot8.RANGE_OF_LINE = slot9
 slot9 = {
+	FULL = 0,
+	BUSY = 1,
 	GOOD = 2,
 	FREE = 3,
-	MAINTENANCE = 4,
-	FULL = 0,
-	BUSY = 1
+	MAINTENANCE = 4
 }
 slot8.LINE_STATE = slot9
 

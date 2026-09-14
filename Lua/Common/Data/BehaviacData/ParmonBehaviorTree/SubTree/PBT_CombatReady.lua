@@ -7,35 +7,35 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_CombatReady",
+	agenttype = "CombatAgent",
 	version = 5,
-	useForRoute = false,
-	agenttype = "CombatAgent"
+	name = "ParmonBehaviorTree/SubTree/PBT_CombatReady",
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "tBornPos",
 	value = "0:",
-	type = "vector<float>",
-	name = "tBornPos"
+	type = "vector<float>"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
+	name = "tBehaviorTgtActorId",
 	value = "0",
-	const = 0,
 	type = "int",
-	name = "tBehaviorTgtActorId"
+	const = 0
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "1"
+	id = "1",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -44,8 +44,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Assignment",
-	id = "2"
+	id = "2",
+	class = "Assignment"
 }
 slot8 = {}
 slot9 = {
@@ -73,8 +73,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "3"
+	id = "3",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -118,8 +118,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "5"
+	id = "5",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

@@ -7,32 +7,32 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	name = "ParmonBehaviorTree/SubTree/PBT_TurnToTargetAtYaw",
 	version = 6,
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/PBT_TurnToTargetAtYaw",
 	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
-	const = 0,
 	name = "tTgtId",
+	const = 0,
+	type = "int",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	name = "tTargetAtYawDegree",
+	const = 0,
+	type = "float",
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "bool",
-	const = false,
 	name = "tInstant",
+	const = false,
+	type = "bool",
 	value = "false"
 }
 slot4[3] = slot5

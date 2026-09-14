@@ -8,25 +8,25 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = true,
-	version = 5,
 	agenttype = "CombatAgent",
+	version = 5,
 	name = "PatrolTree/PatrolSubTree/ST_Dialogue"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	name = "tDialogueId",
+	type = "int",
 	const = 0,
-	type = "int"
+	value = "0",
+	name = "tDialogueId"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
-	name = "tWaitTime",
+	type = "float",
 	const = 0,
-	type = "float"
+	value = "0",
+	name = "tWaitTime"
 }
 slot4[2] = slot5
 slot3.pars = slot4

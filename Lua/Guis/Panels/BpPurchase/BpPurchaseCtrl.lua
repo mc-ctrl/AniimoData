@@ -1,4 +1,4 @@
---- BLOCK #0 1-78, warpins: 1 ---
+--- BLOCK #0 1-103, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -36,31 +36,49 @@ slot11 = require
 slot13 = "Utils.LuaUIUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.event_battlepass_data"
+slot14 = "Core.Log.LoggerManager"
+slot12 = slot12(slot14)
+slot12 = slot12.getLogger
+slot14 = "BpPurchaseCtrl"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Guis.Panels.CashShop.Component.AvatarPreviewComponent"
+slot15 = "Data.event_battlepass_data"
 slot13 = slot13(slot15)
-slot14 = slot0.LightClass
-slot16 = "BpPurchaseCtrl"
-slot17 = slot1
-slot14 = slot14(slot16, slot17)
-slot15 = {}
-slot16 = slot10.BATTLEPASS_CHANGE
-slot17 = {
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.SDK
+slot14 = slot14.Platform
+slot14 = slot14.PlatformBridgeLuaFacade
+slot15 = require
+slot17 = "Guis.Panels.CashShop.Component.AvatarPreviewComponent"
+slot15 = slot15(slot17)
+slot16 = slot0.LightClass
+slot18 = "BpPurchaseCtrl"
+slot19 = slot1
+slot16 = slot16(slot18, slot19)
+slot17 = {}
+slot18 = slot10.BATTLEPASS_CHANGE
+slot19 = {
 	"onBattlePassChange",
 	true
 }
-slot15[slot16] = slot17
-slot16 = slot10.CASH_SHOP_REWARD_CHANGED
-slot17 = {
+slot17[slot18] = slot19
+slot18 = slot10.CASH_SHOP_REWARD_CHANGED
+slot19 = {
 	"_refreshBPInfo",
 	true
 }
-slot15[slot16] = slot17
-slot14.messages = slot15
+slot17[slot18] = slot19
+slot18 = slot10.COMMON_SWITCH_STATE_CHANGED
+slot19 = {
+	"_refreshMoneyList",
+	true
+}
+slot17[slot18] = slot19
+slot16.messages = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.avatarComponent
 
@@ -269,9 +287,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14._showBattlePassPet = slot15
+slot16._showBattlePassPet = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -310,9 +328,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onCreate = slot15
+slot16.onCreate = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = slot1.btnBack
@@ -358,9 +376,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.addListener = slot15
+slot16.addListener = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.avatarComponent
 	--- END OF BLOCK #0 ---
@@ -400,10 +418,14 @@ slot15 = function(slot0)
 
 end
 
-slot14.onDestroy = slot15
+slot16.onDestroy = slot17
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot2 = false
+	slot0._closeRequested = slot2
+	slot2 = false
+	slot0._destroyRequested = slot2
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -418,9 +440,89 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onOpen = slot15
+slot16.onOpen = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._closeRequested
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot1 = true
+	slot0._closeRequested = slot1
+	slot1 = UICtrl
+	slot1 = slot1.close
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.close = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._destroyRequested
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-13, warpins: 2 ---
+	slot1 = true
+	slot0._closeRequested = slot1
+	slot1 = true
+	slot0._destroyRequested = slot1
+	slot1 = UICtrl
+	slot1 = slot1.closeImmediately
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.closeImmediately = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = slot1.rootUComponent
@@ -442,7 +544,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-30, warpins: 2 ---
+	--- BLOCK #2 6-36, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.audio
@@ -475,6 +577,16 @@ slot15 = function(slot0)
 
 	slot2(slot4, slot5)
 
+	slot4 = slot0
+	slot2 = slot0.DisplayStoreIcon
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0._refreshMoneyList
+
+	slot2(slot4)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -482,9 +594,27 @@ slot15 = function(slot0)
 
 end
 
-slot14.onShow = slot15
+slot16.onShow = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = RechargeUtils
+	slot1 = slot1.setupMoneyList
+	slot3 = slot0.view
+	slot3 = slot3.moneyListUButton
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16._refreshMoneyList = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = RechargeUtils
 	slot2 = slot2.getProductsInfo
@@ -556,9 +686,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14._onBuyClick = slot15
+slot16._onBuyClick = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = slot1.rootUComponent
@@ -615,9 +745,9 @@ slot15 = function(slot0)
 
 end
 
-slot14._refreshBPInfo = slot15
+slot16._refreshBPInfo = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._refreshBPInfo
@@ -637,10 +767,15 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onBattlePassChange = slot15
+slot16.onBattlePassChange = slot17
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.HideStoreIcon
+
+	slot1(slot3)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -648,9 +783,104 @@ slot15 = function(slot0)
 
 end
 
-slot14.onHide = slot15
+slot16.onHide = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.setPSIconUIVisiable
+	slot3 = "BpPurchaseCtrl"
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	slot1 = PlatformBridgeLuaFacade
+	slot3 = slot1
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.DisplayStoreIcon
+	slot3 = 2
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.DisplayStoreIcon = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.setPSIconUIVisiable
+	slot3 = "BpPurchaseCtrl"
+	slot4 = false
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-13, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot3 = slot1
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-16, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.HideStoreIcon
+
+	slot1()
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16.HideStoreIcon = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.avatarComponent
 	--- END OF BLOCK #0 ---
@@ -715,7 +945,17 @@ slot15 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-20, warpins: 3 ---
+	--- BLOCK #6 20-28, warpins: 3 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "BpPurchaseCtrl:onVisibleChange visible:%s"
+	slot6 = tostring
+	slot8 = slot1
+	MULTRES = slot6(slot8)
+
+	slot2(slot4, slot5, MULTRES)
+
 	return
 	--- END OF BLOCK #6 ---
 
@@ -723,9 +963,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onVisibleChange = slot15
+slot16.onVisibleChange = slot17
 
-return slot14
+return slot16
 --- END OF BLOCK #0 ---
 
 

@@ -35,8 +35,8 @@ slot3 = function(slot0)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		TAB = 1,
-		SUB_ITEM = 2
+		SUB_ITEM = 2,
+		TAB = 1
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

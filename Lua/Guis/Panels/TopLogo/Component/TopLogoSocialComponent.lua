@@ -1,4 +1,4 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -280,21 +280,6 @@ end
 slot5.findObjects = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.SOCIAL
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot5.getComponentName = slot6
-
-slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.entity
 
@@ -464,12 +449,36 @@ slot6 = function(slot0, slot1)
 	--- BLOCK #1 3-3, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #2 4-18, warpins: 1 ---
+	--- BLOCK #2 4-7, warpins: 1 ---
 	slot0.selectFrameInfo = slot1
+	slot2 = slot1.show
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
 	slot2 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-23, warpins: 2 ---
 	slot0.m_pendingSocialRefresh = slot2
 	slot4 = slot0
 	slot2 = slot0.notifyActiveStateChanged
@@ -483,37 +492,75 @@ slot6 = function(slot0, slot1)
 	slot4 = slot2
 	slot2 = slot2.isTopLogoPrefabReady
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 19-19, warpins: 1 ---
-	--- END OF BLOCK #3 ---
+	--- BLOCK #6 24-24, warpins: 1 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #4 20-25, warpins: 1 ---
+	--- BLOCK #7 25-30, warpins: 1 ---
 	slot2 = false
 	slot0.m_pendingSocialRefresh = slot2
 	slot0.m_cbCacheSocialInfos = slot1
-	slot2 = slot0.m_cbCacheSocialFunc
+	slot2 = slot1.show
+	--- END OF BLOCK #7 ---
 
-	--- END OF BLOCK #4 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #5
+	if slot2 ~= true then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 26-27, warpins: 1 ---
+	--- BLOCK #8 31-35, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.checkContainerLoaded
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #8 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 36-42, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.notifyActiveStateChanged
+	slot7 = slot0
+	slot5 = slot0.shouldBeActive
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #10 43-45, warpins: 2 ---
+	slot2 = slot0.m_cbCacheSocialFunc
+
+	--- END OF BLOCK #10 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 46-47, warpins: 1 ---
 	slot2 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = self
@@ -553,37 +600,35 @@ slot6 = function(slot0, slot1)
 	end
 
 	slot0.m_cbCacheSocialFunc = slot2
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #6 28-32, warpins: 2 ---
+	--- BLOCK #12 48-52, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.checkContainerLoaded
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #12 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #7 33-36, warpins: 1 ---
+	--- BLOCK #13 53-55, warpins: 1 ---
 	slot2 = slot0.m_cbCacheSocialFunc
 
 	slot2()
 
-	return
+	--- END OF BLOCK #13 ---
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #8 37-45, warpins: 2 ---
+	--- BLOCK #14 56-62, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkAndLoadUContainerUrlSupportAsync
 	slot5 = slot0.m_cbCacheSocialFunc
@@ -593,22 +638,43 @@ slot6 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 63-70, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.notifyActiveStateChanged
+	slot7 = slot0
+	slot5 = slot0.shouldBeActive
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #9 46-46, warpins: 2 ---
+	--- BLOCK #16 71-71, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #10 47-47, warpins: 2 ---
+	--- BLOCK #17 72-72, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 73-73, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
 
 
 

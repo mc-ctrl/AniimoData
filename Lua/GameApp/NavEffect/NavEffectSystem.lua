@@ -1374,11 +1374,52 @@ end
 slot13.unPath = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = nil
 	slot0.guidingLineData = slot1
 	slot1 = nil
 	slot0.recordPath = slot1
+	slot1 = pg
+	slot1 = slot1.game
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.map
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-21, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.map
+	slot3 = slot1
+	slot1 = slot1.setTrackPathStart
+	slot4 = "nav"
+	slot5 = nil
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-29, warpins: 3 ---
 	slot1 = slot0.lastPlayerPosition
 	slot3 = slot1
 	slot1 = slot1.Set
@@ -1389,7 +1430,7 @@ slot14 = function(slot0)
 	slot1(slot3, slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 

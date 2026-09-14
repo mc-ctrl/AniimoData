@@ -7,60 +7,60 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Common_Rogue_1019201",
 	version = 98,
 	useForRoute = false,
-	agenttype = "PuppetAgent"
+	agenttype = "PuppetAgent",
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Common_Rogue_1019201"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	const = 0,
 	type = "float",
 	name = "CurrentDistToTarget",
-	const = 0,
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	const = 0,
 	type = "float",
 	name = "CurrentBoxDistToTarget",
-	const = 0,
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	const = 0,
 	type = "float",
 	name = "goBackDist",
-	const = 0,
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
+	const = 0,
 	type = "float",
 	name = "skillStopDist",
-	const = 0,
 	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
+	const = 0,
 	type = "int",
 	name = "tWeight_Group_SideWalk",
-	const = 0,
 	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
+	const = 0,
 	type = "int",
 	name = "tWeight_Group_Wait",
-	const = 0,
 	value = "0"
 }
 slot4[6] = slot5
 slot5 = {
+	const = 0,
 	type = "int",
 	name = "tWeight_Group_Angry",
-	const = 0,
 	value = "0"
 }
 slot4[7] = slot5

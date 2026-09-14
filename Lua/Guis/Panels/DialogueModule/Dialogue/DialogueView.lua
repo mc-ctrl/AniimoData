@@ -26,7 +26,7 @@ slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-103, warpins: 1 ---
+	--- BLOCK #0 1-109, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -96,12 +96,6 @@ slot7 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "hintULayoutBox"
-	slot1 = slot1(slot3, slot4)
-	slot0.hintULayoutBox = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "reviewLogBtn"
 	slot1 = slot1(slot3, slot4)
 	slot0.reviewLogBtn = slot1
@@ -129,6 +123,18 @@ slot7 = function(slot0)
 	slot4 = "btnTipsUSDFText"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnTipsUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "belogginginUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.belogginginUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "imgNextUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.imgNextUWidget = slot1
 
 	return
 	--- END OF BLOCK #0 ---

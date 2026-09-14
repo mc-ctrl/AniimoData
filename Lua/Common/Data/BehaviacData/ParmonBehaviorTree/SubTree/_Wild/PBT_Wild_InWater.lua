@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
 	version = 11,
+	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/_Wild/PBT_Wild_InWater",
 	agenttype = "PuppetAgent"
 }

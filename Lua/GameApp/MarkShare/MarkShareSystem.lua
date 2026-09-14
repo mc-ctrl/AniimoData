@@ -1,93 +1,102 @@
---- BLOCK #0 1-168, warpins: 1 ---
+--- BLOCK #0 1-235, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.Core.SystemBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.UIConst"
+slot4 = "GameApp.Core.SystemBase"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.Const"
+slot5 = "Const.UIConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "GameApp.ResLoad.ResLoader"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.AddressDataConst"
+slot7 = "GameApp.ResLoad.ResLoader"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "GameApp.MarkShare.Helper.MarkShareSystemAvatarHelper"
+slot8 = "Const.AddressDataConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "GameApp.MarkShare.Helper.MarkShareSystemBubbleHelper"
+slot9 = "GameApp.MarkShare.Helper.MarkShareSystemAvatarHelper"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "json"
+slot10 = "GameApp.MarkShare.Helper.MarkShareSystemBubbleHelper"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.MessageName"
+slot11 = "json"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Utils.SceneUtils"
+slot12 = "Const.MessageName"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Const.InteractionConst"
+slot13 = "Common.Utils.SceneUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Utils.Utils"
+slot14 = "Common.Const.InteractionConst"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.info_stamp_preset_content_data"
+slot15 = "Common.Utils.Utils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.info_stamp_concat_content_data"
+slot16 = "Data.info_stamp_preset_content_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.info_stamp_custom_bubble_config_data"
+slot17 = "Data.info_stamp_concat_content_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.sys_config_data"
+slot18 = "Data.info_stamp_custom_bubble_config_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.puppet_data"
+slot19 = "Data.sys_config_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Utils.ClientTextUtils"
+slot20 = "Data.puppet_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.pet_data"
+slot21 = "Utils.ClientTextUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Data.item_data"
+slot22 = "Data.pet_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.ability_param_data"
+slot23 = "Data.item_data"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Utils.LuaUIUtils"
+slot24 = "Data.ability_param_data"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Data.scene_data"
+slot25 = "Utils.LuaUIUtils"
 slot23 = slot23(slot25)
-slot24 = slot0.LightClass
-slot26 = "MarkShareSystem"
-slot27 = slot1
-slot24 = slot24(slot26, slot27)
-slot25 = CS
-slot25 = slot25.UnityEngine
-slot25 = slot25.GameObject
-slot26 = CS
-slot26 = slot26.UnityEngine
-slot26 = slot26.Object
-slot27 = {
+slot24 = require
+slot26 = "Data.scene_data"
+slot24 = slot24(slot26)
+slot25 = require
+slot27 = "Utils.ClientSettingUtils"
+slot25 = slot25(slot27)
+slot26 = require
+slot28 = "Core.Common.Time"
+slot26 = slot26(slot28)
+slot27 = slot1.LightClass
+slot29 = "MarkShareSystem"
+slot30 = slot2
+slot27 = slot27(slot29, slot30)
+slot28 = CS
+slot28 = slot28.UnityEngine
+slot28 = slot28.GameObject
+slot29 = CS
+slot29 = slot29.UnityEngine
+slot29 = slot29.Object
+slot30 = {
+	Preset = 3,
 	Self = 2,
-	OtherPlayer = 1,
-	Preset = 3
+	OtherPlayer = 1
 }
-slot24.AVATAR_TYPE = slot27
-slot27 = {
+slot27.AVATAR_TYPE = slot30
+slot30 = {
 	4,
 	5,
 	6,
@@ -97,11 +106,29 @@ slot27 = {
 	1,
 	3
 }
-slot24.CLUE_WEIGHT = slot27
-slot27 = 100
-slot24.SYS_PRESET_MARK_NEAR_DIS = slot27
+slot27.CLUE_WEIGHT = slot30
+slot30 = 100
+slot27.SYS_PRESET_MARK_NEAR_DIS = slot30
+slot30 = {
+	Active = 1,
+	Permanent = 0,
+	Expired = 2
+}
+slot27.EXPIRE_STATE = slot30
+slot30 = {
+	PlayerMarkers = 1,
+	None = 0,
+	All = 2
+}
+slot27.FORCE_HIDE_SCOPE = slot30
+slot30 = {
+	Photo = "Photo",
+	Area = "Area",
+	Dialogue = "Dialogue"
+}
+slot27.FORCE_HIDE_SOURCE = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = SystemBase
 	slot1 = slot1.onCtor
@@ -127,7 +154,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-97, warpins: 2 ---
+	--- BLOCK #2 10-121, warpins: 2 ---
 	slot1 = GameObject
 	slot3 = "AvatarReplicationGroup"
 	slot1 = slot1(slot3)
@@ -216,6 +243,30 @@ slot27 = function(slot0)
 	slot0.focusGold = slot1
 	slot1 = false
 	slot0.mute = slot1
+	slot1 = false
+	slot0.settingDirty = slot1
+	slot1 = false
+	slot0.mediaMarkerViewSettingDirty = slot1
+	slot1 = nil
+	slot0.pendingMediaMarkerViewSetting = slot1
+	slot1 = {}
+	slot0.infoStampRandomValues = slot1
+	slot1 = {}
+	slot2 = {}
+	slot1.systemMarkers = slot2
+	slot2 = {}
+	slot1.selfMarkers = slot2
+	slot2 = {}
+	slot1.friendMarkers = slot2
+	slot2 = {}
+	slot1.strangerMarkers = slot2
+	slot0.infoStampCandidateCache = slot1
+	slot1 = false
+	slot0.infoStampCandidateCacheReady = slot1
+	slot1 = nil
+	slot0.infoStampCandidateCacheSceneId = slot1
+	slot1 = {}
+	slot0.forceHideScopes = slot1
 	slot1 = MarkShareSystem
 	slot1 = slot1._platformHooks
 	--- END OF BLOCK #2 ---
@@ -227,7 +278,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #3 98-100, warpins: 1 ---
+	--- BLOCK #3 122-124, warpins: 1 ---
 	slot2 = slot1.onCtor
 	--- END OF BLOCK #3 ---
 
@@ -238,7 +289,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #4 101-103, warpins: 1 ---
+	--- BLOCK #4 125-127, warpins: 1 ---
 	slot2 = slot1.onCtor
 	slot4 = slot0
 
@@ -249,7 +300,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 104-104, warpins: 3 ---
+	--- BLOCK #5 128-128, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -257,9 +308,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.onCtor = slot27
+slot27.onCtor = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Color
 	slot4 = slot1[1]
@@ -274,16 +325,26 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.tableToColor = slot27
+slot27.tableToColor = slot30
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot30 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = nil
 	slot0.aroundMarkInfoStampGroup = slot1
 	slot1 = nil
 	slot0.infoStampInfoTrans = slot1
 	slot1 = nil
 	slot0.infoStampInfoKeys = slot1
+	slot1 = nil
+	slot0.infoStampRandomValues = slot1
+	slot1 = nil
+	slot0.infoStampCandidateCache = slot1
+	slot1 = false
+	slot0.infoStampCandidateCacheReady = slot1
+	slot1 = nil
+	slot0.infoStampCandidateCacheSceneId = slot1
+	slot1 = nil
+	slot0.forceHideScopes = slot1
 	slot1 = slot0.poolHelper
 	--- END OF BLOCK #0 ---
 
@@ -294,7 +355,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-13, warpins: 1 ---
+	--- BLOCK #1 20-23, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.poolHelper
 	slot1, slot2, slot3 = slot1(slot3)
@@ -303,7 +364,7 @@ slot27 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 14-17, warpins: 1 ---
+	--- BLOCK #2 24-27, warpins: 1 ---
 	slot6 = slot5.loader
 	slot8 = slot6
 	slot6 = slot6.destroy
@@ -315,7 +376,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 18-19, warpins: 2 ---
+	--- BLOCK #3 28-29, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -323,7 +384,7 @@ slot27 = function(slot0)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 20-36, warpins: 2 ---
+	--- BLOCK #4 30-46, warpins: 2 ---
 	slot1 = nil
 	slot0.poolHelper = slot1
 	slot3 = slot0
@@ -352,7 +413,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #5 37-39, warpins: 1 ---
+	--- BLOCK #5 47-49, warpins: 1 ---
 	slot2 = slot1.onDestroy
 	--- END OF BLOCK #5 ---
 
@@ -363,7 +424,7 @@ slot27 = function(slot0)
 	end
 
 
-	--- BLOCK #6 40-42, warpins: 1 ---
+	--- BLOCK #6 50-52, warpins: 1 ---
 	slot2 = slot1.onDestroy
 	slot4 = slot0
 
@@ -374,7 +435,7 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 43-43, warpins: 3 ---
+	--- BLOCK #7 53-53, warpins: 3 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -382,10 +443,10 @@ slot27 = function(slot0)
 
 end
 
-slot24.onDestroy = slot27
+slot27.onDestroy = slot30
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot30 = function(slot0)
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = {}
 	slot2 = MessageName
 	slot2 = slot2.UPDATE_INTERACT_VIEW
@@ -399,6 +460,14 @@ slot27 = function(slot0)
 	slot2 = slot2.ON_PLAYER_LEAVE_SCENE
 	slot3 = "onPlayerLeaveScene"
 	slot1[slot2] = slot3
+	slot2 = MessageName
+	slot2 = slot2.PLAYER_LEVEL_CHANGE
+	slot3 = "onPlayerLevelChanged"
+	slot1[slot2] = slot3
+	slot2 = MessageName
+	slot2 = slot2.UI_ON_CLOSE
+	slot3 = "onUIClose"
+	slot1[slot2] = slot3
 
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -407,9 +476,2132 @@ slot27 = function(slot0)
 
 end
 
-slot24.getMessageBindMap = slot27
+slot27.getMessageBindMap = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = true
+	slot0.settingDirty = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.markSettingDirty = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0.pendingMediaMarkerViewSetting = slot1
+	slot2 = true
+	slot0.mediaMarkerViewSettingDirty = slot2
+	slot2 = true
+	slot0.settingDirty = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.markMediaMarkerViewSettingDirty = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.pendingMediaMarkerViewSetting
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.pendingMediaMarkerViewSetting
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 10-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.mediaMarkerViewSetting
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.mediaMarkerViewSetting
+
+	return slot1
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-22, warpins: 3 ---
+	slot1 = Const
+	slot1 = slot1.MARKER_SETTINGS
+	slot1 = slot1.DEFAULT
+
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot27.getMediaMarkerViewSetting = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getForceHideScope
+	slot1 = slot1(slot3)
+	slot2 = MarkShareSystem
+	slot2 = slot2.FORCE_HIDE_SCOPE
+	slot2 = slot2.None
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-16, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getMediaMarkerViewSetting
+	slot1 = slot1(slot3)
+	slot2 = Const
+	slot2 = slot2.MARKER_SETTINGS
+	slot2 = slot2.SELF_HIDE
+	--- END OF BLOCK #1 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 17-18, warpins: 2 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 19-19, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-20, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot27.shouldShowOwnMediaMarker = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = MarkShareSystem
+	slot1 = slot1.FORCE_HIDE_SCOPE
+	slot1 = slot1.None
+	slot2 = pairs
+	slot4 = slot0.forceHideScopes
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot4 = EMPTY_TABLE
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 11-16, warpins: 1 ---
+	slot7 = math
+	slot7 = slot7.max
+	slot9 = slot1
+	slot10 = slot6
+	slot7 = slot7(slot9, slot10)
+	slot1 = slot7
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-18, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 19-19, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot27.getForceHideScope = slot30
+
+slot30 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot0.forceHideScopes
+
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-8, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 9-11, warpins: 1 ---
+	slot3 = MarkShareSystem
+	slot3 = slot3.FORCE_HIDE_SCOPE
+	slot2 = slot3.None
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-16, warpins: 2 ---
+	slot3 = MarkShareSystem
+	slot3 = slot3.FORCE_HIDE_SCOPE
+	slot3 = slot3.None
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 17-21, warpins: 1 ---
+	slot3 = MarkShareSystem
+	slot3 = slot3.FORCE_HIDE_SCOPE
+	slot3 = slot3.PlayerMarkers
+	--- END OF BLOCK #6 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 22-26, warpins: 1 ---
+	slot3 = MarkShareSystem
+	slot3 = slot3.FORCE_HIDE_SCOPE
+	slot3 = slot3.All
+
+	--- END OF BLOCK #7 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 27-27, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 28-35, warpins: 4 ---
+	slot5 = slot0
+	slot3 = slot0.getForceHideScope
+	slot3 = slot3(slot5)
+	slot4 = MarkShareSystem
+	slot4 = slot4.FORCE_HIDE_SCOPE
+	slot4 = slot4.None
+	--- END OF BLOCK #9 ---
+
+	if slot2 == slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 36-39, warpins: 1 ---
+	slot4 = slot0.forceHideScopes
+	slot5 = nil
+	slot4[slot1] = slot5
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 40-41, warpins: 1 ---
+	slot4 = slot0.forceHideScopes
+	slot4[slot1] = slot2
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 42-46, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getForceHideScope
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #12 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 47-47, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 48-54, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.refreshInfoStampVisibility
+
+	slot4(slot6)
+
+	slot6 = slot0
+	slot4 = slot0.refreshOwnMediaMarkerMapVisibility
+
+	slot4(slot6)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot27.setForceHide = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getForceHideScope
+	slot1 = slot1(slot3)
+	slot2 = MarkShareSystem
+	slot2 = slot2.FORCE_HIDE_SCOPE
+	slot2 = slot2.All
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-12, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.shouldShowSystemMediaMarker = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getForceHideScope
+	slot1 = slot1(slot3)
+	slot2 = MarkShareSystem
+	slot2 = slot2.FORCE_HIDE_SCOPE
+	slot2 = slot2.None
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-12, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.shouldShowPlayerMediaMarker = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = SysConfigData
+	slot1 = slot1.INFO_STAMP_PLAYER_LEVEL
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.shouldShowPlayerMediaMarker
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 15-19, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.level
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-22, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-24, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 25-25, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 26-26, warpins: 4 ---
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot27.shouldShowOtherPlayerMediaMarker = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-14, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.customCheckStates
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.specialStateBanOperate
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= "INFO_DISABLE_ST" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 17-19, warpins: 1 ---
+	slot2 = slot1.INFO_DISABLE_1_ST
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot2 = slot1.INFO_DISABLE_2_ST
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 25-26, warpins: 0 ---
+	slot2 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 27-27, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 28-28, warpins: 5 ---
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot27.isInfoStampDisabledArea = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isInfoStampDisabledArea
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot1 = MarkShareSystem
+	slot1 = slot1.FORCE_HIDE_SCOPE
+	slot1 = slot1.PlayerMarkers
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-13, warpins: 2 ---
+	slot1 = MarkShareSystem
+	slot1 = slot1.FORCE_HIDE_SCOPE
+	slot1 = slot1.None
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-21, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.setForceHide
+	slot5 = MarkShareSystem
+	slot5 = slot5.FORCE_HIDE_SOURCE
+	slot5 = slot5.Area
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.refreshInfoStampAreaForceHide = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.mediaMarker
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.map
+
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-19, warpins: 4 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-26, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.shouldShowOwnMediaMarker
+	slot1 = slot1(slot3)
+	slot2 = pg
+	slot2 = slot2.space
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 27-35, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.map
+	slot4 = slot2
+	slot2 = slot2.convertSceneId
+	slot5 = pg
+	slot5 = slot5.space
+	slot5 = slot5.sceneId
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 36-41, warpins: 2 ---
+	slot3 = pairs
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.mediaMarker
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #8 42-50, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.map
+	slot10 = slot8
+	slot8 = slot8.convertSceneId
+	slot11 = slot7.sceneId
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #8 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 51-59, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.map
+	slot11 = slot9
+	slot9 = slot9.removeTempMark
+	slot12 = slot8
+	slot13 = slot6
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #10 60-61, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	if slot8 == slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 62-64, warpins: 1 ---
+	slot9 = slot7.pos
+	--- END OF BLOCK #11 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 65-80, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.map
+	slot11 = slot9
+	slot9 = slot9.addOrUpdateTempMark
+	slot12 = slot8
+	slot13 = slot7.pos
+	slot13 = slot13[1]
+	slot14 = slot7.pos
+	slot14 = slot14[2]
+	slot15 = slot7.pos
+	slot15 = slot15[3]
+	slot16 = slot6
+	slot17 = Const
+	slot17 = slot17.MAP_MARK_SHARE
+
+	slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 81-82, warpins: 5 ---
+	--- END OF BLOCK #13 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 83-83, warpins: 1 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot27.refreshOwnMediaMarkerMapVisibility = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_SETTING
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot0.settingDirty
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-13, warpins: 2 ---
+	slot2 = false
+	slot0.settingDirty = slot2
+	slot2 = slot0.mediaMarkerViewSettingDirty
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 14-18, warpins: 1 ---
+	slot2 = false
+	slot0.mediaMarkerViewSettingDirty = slot2
+	slot2 = slot0.pendingMediaMarkerViewSetting
+	--- END OF BLOCK #4 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 19-22, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 23-28, warpins: 1 ---
+	slot2 = slot0.pendingMediaMarkerViewSetting
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.mediaMarkerViewSetting
+	--- END OF BLOCK #6 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-34, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.setMediaMarkerView
+	slot5 = slot0.pendingMediaMarkerViewSetting
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 35-37, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshOwnMediaMarkerMapVisibility
+
+	slot2(slot4)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 38-44, warpins: 4 ---
+	slot4 = slot0
+	slot2 = slot0.refreshInfoStampSettingValues
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.refreshInfoStampVisibility
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot27.onUIClose = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = ClientSettingUtils
+	slot1 = slot1.getInfoStampSystemVisibleValue
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-18, warpins: 2 ---
+	slot0.infoStampSystemVisible = slot1
+	slot1 = ClientSettingUtils
+	slot1 = slot1.get_infoStampFriendCount
+	slot1 = slot1()
+	slot0.infoStampFriendCount = slot1
+	slot1 = ClientSettingUtils
+	slot1 = slot1.get_infoStampStrangerCount
+	slot1 = slot1()
+	slot0.infoStampStrangerCount = slot1
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.refreshInfoStampSettingValues = slot30
+
+slot30 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0.infoStampRandomValues
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot4 = math
+	slot4 = slot4.random
+	slot4 = slot4()
+	slot3 = slot4
+	slot4 = slot0.infoStampRandomValues
+	slot4[slot1] = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-14, warpins: 2 ---
+	slot4 = 1
+	slot5 = slot2.encourageDays
+	--- END OF BLOCK #2 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-15, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-18, warpins: 2 ---
+	slot6 = 0
+	--- END OF BLOCK #4 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 19-22, warpins: 1 ---
+	slot5 = SysConfigData
+	slot5 = slot5.MARK_SHARE_ENCOURAGE_WEIGHT_INCREASE
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-23, warpins: 1 ---
+	slot5 = 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-29, warpins: 2 ---
+	slot6 = math
+	slot6 = slot6.max
+	slot8 = 1 + slot5
+	slot9 = 0.01
+	slot6 = slot6(slot8, slot9)
+	slot4 = slot6
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 30-32, warpins: 2 ---
+	slot5 = 1 / slot4
+	slot5 = slot3^slot5
+
+	return slot5
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot27.getInfoStampRandomPriority = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = slot0.priority
+	slot3 = slot1.priority
+	--- END OF BLOCK #0 ---
+
+	if slot3 >= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-8, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.compareInfoStampCandidatePriority = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = MarkShareSystem
+	slot2 = slot2._platformHooks
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot3 = slot2.checkInfoStampVisible
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot3 = slot2.checkInfoStampVisible
+	slot5 = slot0
+	slot6 = slot1
+
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.checkPlatformInfoStampVisible = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot7 = slot0.aroundMarkInfoStampGroup
+	slot7[slot5] = slot6
+	slot9 = slot0
+	slot7 = slot0.refreshMarkColor
+	slot10 = slot5
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 13-13, warpins: 1 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.addInfoStampGroup = slot30
+
+slot30 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = 0
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 <= slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-12, warpins: 2 ---
+	slot3 = 1
+	slot4 = math
+	slot4 = slot4.min
+	slot6 = slot2
+	slot7 = #slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-22, warpins: 2 ---
+	slot7 = slot1[slot6]
+	slot8 = slot0.aroundMarkInfoStampGroup
+	slot9 = slot7.id
+	slot10 = slot7.value
+	slot8[slot9] = slot10
+	slot10 = slot0
+	slot8 = slot0.refreshMarkColor
+	slot11 = slot7.id
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #3 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #4
+
+	--- BLOCK #4 23-23, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot27.addInfoStampCandidates = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-24, warpins: 1 ---
+	slot1 = slot0.infoStampCandidateCache
+	slot2 = table
+	slot2 = slot2.clear
+	slot4 = slot1.systemMarkers
+
+	slot2(slot4)
+
+	slot2 = table
+	slot2 = slot2.clear
+	slot4 = slot1.selfMarkers
+
+	slot2(slot4)
+
+	slot2 = table
+	slot2 = slot2.clear
+	slot4 = slot1.friendMarkers
+
+	slot2(slot4)
+
+	slot2 = table
+	slot2 = slot2.clear
+	slot4 = slot1.strangerMarkers
+
+	slot2(slot4)
+
+	slot2 = false
+	slot0.infoStampCandidateCacheReady = slot2
+	slot2 = {}
+	slot3 = pg
+	slot3 = slot3.space
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 25-27, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.space
+	slot3 = slot3.mediaMarkers
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 28-29, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #3 30-33, warpins: 1 ---
+	slot4 = pairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #4 34-37, warpins: 1 ---
+	slot9 = pairs
+	slot11 = slot8
+	slot9, slot10, slot11 = slot9(slot11)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #5 38-43, warpins: 1 ---
+	slot14 = slot13.type
+	slot15 = Const
+	slot15 = slot15.MediaMarkerType
+	slot15 = slot15.SystemText
+	--- END OF BLOCK #5 ---
+
+	if slot14 == slot15 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 44-46, warpins: 1 ---
+	slot14 = slot1.systemMarkers
+	slot14[slot12] = slot13
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #7 47-53, warpins: 1 ---
+	slot14 = true
+	slot2[slot12] = slot14
+	slot14 = type
+	slot16 = slot13.content
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #7 ---
+
+	if slot14 == "string" then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 54-59, warpins: 1 ---
+	slot14 = json
+	slot14 = slot14.decode
+	slot16 = slot13.content
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #8 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 60-60, warpins: 2 ---
+	slot14 = slot13.content
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 61-67, warpins: 2 ---
+	slot13.content = slot14
+	slot15 = pg
+	slot15 = slot15.me
+	slot15 = slot15.uid
+	slot16 = slot13.uid
+	--- END OF BLOCK #10 ---
+
+	if slot15 ~= slot16 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 68-72, warpins: 1 ---
+	slot17 = slot0
+	slot15 = slot0.inMyOwnKey
+	slot18 = slot12
+	slot15 = slot15(slot17, slot18)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #12 73-74, warpins: 0 ---
+	slot15 = false
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 75-75, warpins: 1 ---
+	slot15 = true
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 76-77, warpins: 3 ---
+	--- END OF BLOCK #14 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 78-80, warpins: 1 ---
+	slot16 = slot1.selfMarkers
+	slot16[slot12] = slot13
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #16 81-90, warpins: 1 ---
+	slot16 = pg
+	slot16 = slot16.game
+	slot16 = slot16.chat
+	slot18 = slot16
+	slot16 = slot16.checkFriendList
+	slot19 = slot13.uid
+	slot16 = slot16(slot18, slot19)
+	slot17 = slot13.setting
+	--- END OF BLOCK #16 ---
+
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 91-93, warpins: 1 ---
+	slot17 = Const
+	slot17 = slot17.MARKER_SETTINGS
+	slot17 = slot17.DEFAULT
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 94-98, warpins: 2 ---
+	slot18 = Const
+	slot18 = slot18.MARKER_SETTINGS
+	slot18 = slot18.OTHER_HIDE
+	--- END OF BLOCK #18 ---
+
+	if slot17 ~= slot18 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #19 99-103, warpins: 1 ---
+	slot18 = Const
+	slot18 = slot18.MARKER_SETTINGS
+	slot18 = slot18.STRANGER_HIDE
+	--- END OF BLOCK #19 ---
+
+	if slot17 == slot18 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 104-105, warpins: 1 ---
+	--- END OF BLOCK #20 ---
+
+	slot18 = if slot16 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #21 106-110, warpins: 2 ---
+	slot20 = slot0
+	slot18 = slot0.checkPlatformInfoStampVisible
+	slot21 = slot13
+	slot18 = slot18(slot20, slot21)
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #22 111-112, warpins: 1 ---
+	slot18 = false
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #23 113-113, warpins: 0 ---
+	slot18 = true
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 114-115, warpins: 4 ---
+	--- END OF BLOCK #24 ---
+
+	slot18 = if slot18 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #25 116-126, warpins: 1 ---
+	slot19 = {}
+	slot19.id = slot12
+	slot19.value = slot13
+	slot22 = slot0
+	slot20 = slot0.getInfoStampRandomPriority
+	slot23 = slot12
+	slot24 = slot13
+	slot20 = slot20(slot22, slot23, slot24)
+	slot19.priority = slot20
+	--- END OF BLOCK #25 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 127-132, warpins: 1 ---
+	slot20 = table
+	slot20 = slot20.insert
+	slot22 = slot1.friendMarkers
+	slot23 = slot19
+
+	slot20(slot22, slot23)
+
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #27 133-137, warpins: 1 ---
+	slot20 = table
+	slot20 = slot20.insert
+	slot22 = slot1.strangerMarkers
+	slot23 = slot19
+
+	slot20(slot22, slot23)
+
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 138-139, warpins: 6 ---
+	--- END OF BLOCK #28 ---
+
+	for slot12, slot13 in slot9, slot10, slot11
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #29
+
+
+	--- BLOCK #29 140-141, warpins: 2 ---
+	--- END OF BLOCK #29 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #30
+
+
+	--- BLOCK #30 142-164, warpins: 2 ---
+	slot4 = table
+	slot4 = slot4.sort
+	slot6 = slot1.friendMarkers
+	slot7 = MarkShareSystem
+	slot7 = slot7.compareInfoStampCandidatePriority
+
+	slot4(slot6, slot7)
+
+	slot4 = table
+	slot4 = slot4.sort
+	slot6 = slot1.strangerMarkers
+	slot7 = MarkShareSystem
+	slot7 = slot7.compareInfoStampCandidatePriority
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.cleanupInfoStampRandomValues
+	slot7 = slot2
+
+	slot4(slot6, slot7)
+
+	slot4 = pg
+	slot4 = slot4.space
+	slot4 = slot4.sceneId
+	slot0.infoStampCandidateCacheSceneId = slot4
+	slot4 = true
+	slot0.infoStampCandidateCacheReady = slot4
+
+	return
+	--- END OF BLOCK #30 ---
+
+
+
+end
+
+slot27.rebuildInfoStampCandidateCache = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-12, warpins: 2 ---
+	slot1 = slot0.infoStampCandidateCacheReady
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-18, warpins: 1 ---
+	slot1 = slot0.infoStampCandidateCacheSceneId
+	slot2 = pg
+	slot2 = slot2.space
+	slot2 = slot2.sceneId
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 19-21, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.refreshAroundInfoStamp
+
+	return slot1(slot3)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-25, warpins: 2 ---
+	slot1 = {}
+	slot2 = slot0.aroundMarkInfoStampGroup
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-27, warpins: 1 ---
+	slot2 = {}
+	slot0.aroundMarkInfoStampGroup = slot2
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-31, warpins: 2 ---
+	slot2 = pairs
+	slot4 = slot0.aroundMarkInfoStampGroup
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 32-33, warpins: 1 ---
+	slot7 = true
+	slot1[slot5] = slot7
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 34-35, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 36-45, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.clear
+	slot4 = slot0.aroundMarkInfoStampGroup
+
+	slot2(slot4)
+
+	slot2 = slot0.infoStampCandidateCache
+	slot5 = slot0
+	slot3 = slot0.checkCanShow
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #11 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #12 46-48, warpins: 1 ---
+	slot3 = slot0.infoStampSystemVisible
+	--- END OF BLOCK #12 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 49-53, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.shouldShowSystemMediaMarker
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 54-57, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.addInfoStampGroup
+	slot6 = slot2.systemMarkers
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 58-62, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.shouldShowPlayerMediaMarker
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #16 63-70, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getMediaMarkerViewSetting
+	slot3 = slot3(slot5)
+	slot4 = Const
+	slot4 = slot4.MARKER_SETTINGS
+	slot4 = slot4.SELF_HIDE
+	--- END OF BLOCK #16 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 71-74, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.addInfoStampGroup
+	slot6 = slot2.selfMarkers
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 75-79, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.shouldShowOtherPlayerMediaMarker
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #18 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 80-89, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.addInfoStampCandidates
+	slot6 = slot2.friendMarkers
+	slot7 = slot0.infoStampFriendCount
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.addInfoStampCandidates
+	slot6 = slot2.strangerMarkers
+	slot7 = slot0.infoStampStrangerCount
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 90-97, warpins: 4 ---
+	slot5 = slot0
+	slot3 = slot0.addPresetMark
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.onAroundInfoStampUpdated
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #20 ---
+
+
+
+end
+
+slot27.refreshInfoStampVisibility = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot0.infoStampRandomValues
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot7 = slot1[slot5]
+	--- END OF BLOCK #1 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot7 = slot0.infoStampRandomValues
+	slot8 = nil
+	slot7[slot5] = slot8
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot27.cleanupInfoStampRandomValues = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshInfoStampVisibility
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.onPlayerLevelChanged = slot30
+
+slot30 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.bubbleHelper
 	--- END OF BLOCK #0 ---
@@ -441,9 +2633,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.onTick = slot27
+slot27.onTick = slot30
 
-slot27 = function(slot0, slot1, slot2, slot3, slot4)
+slot30 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
@@ -622,9 +2814,9 @@ slot27 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot24.createAvatarReplication = slot27
+slot27.createAvatarReplication = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearAvatarEntity
@@ -641,9 +2833,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.destroyAvatar = slot27
+slot27.destroyAvatar = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.avatarHelper
 	--- END OF BLOCK #0 ---
@@ -676,9 +2868,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.clearAvatarEntity = slot27
+slot27.clearAvatarEntity = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = SceneData
 	slot2 = pg
@@ -719,42 +2911,96 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-22, warpins: 3 ---
+	--- BLOCK #4 14-24, warpins: 3 ---
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
 	slot3 = slot3.checkStatus
 	slot6 = "INFO_STAMP"
-	slot7, slot8, slot9, slot10, slot11 = nil
+	slot7, slot8 = nil
+	slot9 = true
+	slot10, slot11 = nil
 	slot3 = slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11)
 	--- END OF BLOCK #4 ---
 
-	slot4 = if slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 23-23, warpins: 1 ---
-	slot4 = slot3
-
+	--- BLOCK #5 25-27, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isInfoStampDisabledArea
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 24-24, warpins: 2 ---
-	return slot4
+	--- BLOCK #6 28-29, warpins: 2 ---
 	--- END OF BLOCK #6 ---
+
+	slot4 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 30-31, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 32-39, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getForceHideScope
+	slot4 = slot4(slot6)
+	slot5 = MarkShareSystem
+	slot5 = slot5.FORCE_HIDE_SCOPE
+	slot5 = slot5.All
+	--- END OF BLOCK #8 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 40-41, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 42-42, warpins: 1 ---
+	slot4 = true
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 43-43, warpins: 4 ---
+	return slot4
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot24.checkCanShow = slot27
+slot27.checkCanShow = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -777,383 +3023,44 @@ slot27 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-10, warpins: 2 ---
-	slot1 = {}
-	slot2 = slot0.aroundMarkInfoStampGroup
+	--- BLOCK #2 7-15, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.refreshInfoStampSettingValues
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.rebuildInfoStampCandidateCache
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshInfoStampVisibility
+
+	return slot1(slot3)
 	--- END OF BLOCK #2 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 11-12, warpins: 1 ---
-	slot2 = {}
-	slot0.aroundMarkInfoStampGroup = slot2
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 13-16, warpins: 2 ---
-	slot2 = pairs
-	slot4 = slot0.aroundMarkInfoStampGroup
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 17-18, warpins: 1 ---
-	slot7 = true
-	slot1[slot5] = slot7
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 19-20, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 21-31, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.clear
-	slot4 = slot0.aroundMarkInfoStampGroup
-
-	slot2(slot4)
-
-	slot2 = 0
-	slot3 = 0
-	slot4 = pg
-	slot4 = slot4.space
-	slot4 = slot4.mediaMarkers
-	--- END OF BLOCK #7 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #8 32-36, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.checkCanShow
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #8 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #9 37-40, warpins: 1 ---
-	slot5 = pairs
-	slot7 = slot4
-	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
-
-
-	--- BLOCK #10 41-44, warpins: 1 ---
-	slot10 = pairs
-	slot12 = slot9
-	slot10, slot11, slot12 = slot10(slot12)
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #11 45-50, warpins: 1 ---
-	slot15 = slot14.type
-	slot16 = Const
-	slot16 = slot16.MediaMarkerType
-	slot16 = slot16.SystemText
-	--- END OF BLOCK #11 ---
-
-	if slot15 == slot16 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 51-53, warpins: 1 ---
-	slot15 = slot0.aroundMarkInfoStampGroup
-	slot15[slot13] = slot14
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #13 54-58, warpins: 1 ---
-	slot15 = type
-	slot17 = slot14.content
-	slot15 = slot15(slot17)
-	--- END OF BLOCK #13 ---
-
-	if slot15 == "string" then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 59-64, warpins: 1 ---
-	slot15 = json
-	slot15 = slot15.decode
-	slot17 = slot14.content
-	slot15 = slot15(slot17)
-	--- END OF BLOCK #14 ---
-
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 65-65, warpins: 2 ---
-	slot15 = slot14.content
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 66-71, warpins: 2 ---
-	slot16 = pg
-	slot16 = slot16.me
-	slot16 = slot16.uid
-	slot17 = slot14.uid
-	--- END OF BLOCK #16 ---
-
-	if slot16 == slot17 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 72-75, warpins: 1 ---
-	slot14.content = slot15
-	slot16 = slot0.aroundMarkInfoStampGroup
-	slot16[slot13] = slot14
-	--- END OF BLOCK #17 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #18 76-84, warpins: 1 ---
-	slot16 = pg
-	slot16 = slot16.game
-	slot16 = slot16.chat
-	slot18 = slot16
-	slot16 = slot16.checkFriendList
-	slot19 = slot14.uid
-	slot16 = slot16(slot18, slot19)
-	--- END OF BLOCK #18 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #19 85-88, warpins: 1 ---
-	slot16 = SysConfigData
-	slot16 = slot16.INFO_STAMP_FRIEND_MAX_LIMIT
-	--- END OF BLOCK #19 ---
-
-	if slot2 < slot16 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #20 89-101, warpins: 1 ---
-	slot16 = Vector3
-	slot16 = slot16.Distance
-	slot18 = pg
-	slot18 = slot18.me
-	slot20 = slot18
-	slot18 = slot18.getPosition
-	slot18 = slot18(slot20)
-	slot19 = slot15.pos
-	slot16 = slot16(slot18, slot19)
-	slot17 = SysConfigData
-	slot17 = slot17.INFO_STAMP_FRIEND_LOAD_DISTANCE
-	--- END OF BLOCK #20 ---
-
-	if slot16 <= slot17 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #21 102-106, warpins: 1 ---
-	slot14.content = slot15
-	slot16 = slot0.aroundMarkInfoStampGroup
-	slot16[slot13] = slot14
-	slot2 = slot2 + 1
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #22 107-110, warpins: 1 ---
-	slot16 = SysConfigData
-	slot16 = slot16.INFO_STAMP_STRANGERS_MAX_LIMIT
-	--- END OF BLOCK #22 ---
-
-	if slot3 < slot16 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #23 111-123, warpins: 1 ---
-	slot16 = Vector3
-	slot16 = slot16.Distance
-	slot18 = pg
-	slot18 = slot18.me
-	slot20 = slot18
-	slot18 = slot18.getPosition
-	slot18 = slot18(slot20)
-	slot19 = slot15.pos
-	slot16 = slot16(slot18, slot19)
-	slot17 = SysConfigData
-	slot17 = slot17.INFO_STAMP_STRANGERS_LOAD_DISTANCE
-	--- END OF BLOCK #23 ---
-
-	if slot16 <= slot17 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #24 124-127, warpins: 1 ---
-	slot14.content = slot15
-	slot16 = slot0.aroundMarkInfoStampGroup
-	slot16[slot13] = slot14
-	slot3 = slot3 + 1
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 128-131, warpins: 8 ---
-	slot17 = slot0
-	slot15 = slot0.refreshMarkColor
-	slot18 = slot13
-
-	slot15(slot17, slot18)
-
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 132-133, warpins: 2 ---
-	--- END OF BLOCK #26 ---
-
-	for slot13, slot14 in slot10, slot11, slot12
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #27
-
-
-	--- BLOCK #27 134-135, warpins: 2 ---
-	--- END OF BLOCK #27 ---
-
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #28
-
-
-	--- BLOCK #28 136-143, warpins: 3 ---
-	slot7 = slot0
-	slot5 = slot0.addPresetMark
-
-	slot5(slot7)
-
-	slot7 = slot0
-	slot5 = slot0.onAroundInfoStampUpdated
-	slot8 = slot1
-
-	slot5(slot7, slot8)
-
-	return
-	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot24._refreshAroundInfoStampImpl = slot27
+slot27._refreshAroundInfoStampImpl = slot30
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = MarkShareSystem
-	slot1 = slot1._platformHooks
+slot30 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._refreshAroundInfoStampImpl
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot2 = slot1.refreshAroundInfoStamp
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-10, warpins: 1 ---
-	slot2 = slot1.refreshAroundInfoStamp
-	slot4 = slot0
-
-	return slot2(slot4)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 11-13, warpins: 3 ---
-	slot4 = slot0
-	slot2 = slot0._refreshAroundInfoStampImpl
-
-	return slot2(slot4)
-	--- END OF BLOCK #3 ---
-
 
 
 end
 
-slot24.refreshAroundInfoStamp = slot27
+slot27.refreshAroundInfoStamp = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -1320,25 +3227,58 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.onAroundInfoStampUpdated = slot27
+slot27.onAroundInfoStampUpdated = slot30
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.sceneId
-	slot2 = slot0.sceneMarkDataGroup
-	slot2 = slot2[slot1]
+slot30 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.infoStampSystemVisible
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-16, warpins: 1 ---
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.shouldShowSystemMediaMarker
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-16, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot1 = slot1.sceneId
+	slot2 = slot0.sceneMarkDataGroup
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-25, warpins: 1 ---
 	slot2 = slot0.sceneMarkDataGroup
 	slot3 = SceneUtils
 	slot3 = slot3.getSceneMarkData
@@ -1348,36 +3288,36 @@ slot27 = function(slot0)
 	slot6 = slot6.id
 	slot3 = slot3(slot5, slot6)
 	slot2[slot1] = slot3
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #2 17-23, warpins: 2 ---
+	--- BLOCK #5 26-32, warpins: 2 ---
 	slot2 = slot0.sceneMarkDataGroup
 	slot2 = slot2[slot1]
 	slot3 = Const
 	slot3 = slot3.MAP_MARK_INFO_STAMP
 	slot2 = slot2[slot3]
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 24-24, warpins: 1 ---
+	--- BLOCK #6 33-33, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 25-32, warpins: 2 ---
+	--- BLOCK #7 34-41, warpins: 2 ---
 	slot2 = pairs
 	slot4 = slot0.sceneMarkDataGroup
 	slot4 = slot4[slot1]
@@ -1385,235 +3325,107 @@ slot27 = function(slot0)
 	slot5 = slot5.MAP_MARK_INFO_STAMP
 	slot4 = slot4[slot5]
 	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #5 33-35, warpins: 1 ---
+	--- BLOCK #8 42-44, warpins: 1 ---
 	slot7 = slot6.informationId
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #6 36-40, warpins: 1 ---
+	--- BLOCK #9 45-49, warpins: 1 ---
 	slot7 = InfoStampPresetContentData
 	slot8 = slot6.informationId
 	slot7 = slot7[slot8]
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #7 41-48, warpins: 1 ---
+	--- BLOCK #10 50-57, warpins: 1 ---
 	slot7 = Utils
 	slot7 = slot7.getSysMediaMarkerIdByNo
 	slot9 = slot6.informationId
 	slot7 = slot7(slot9)
 	slot8 = slot0.aroundMarkInfoStampGroup
 	slot8 = slot8[slot7]
-	--- END OF BLOCK #7 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #8 49-55, warpins: 1 ---
-	slot8 = type
-	slot10 = slot0.aroundMarkInfoStampGroup
-	slot10 = slot10[slot7]
-	slot10 = slot10.content
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #8 ---
-
-	if slot8 ~= "table" then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #9 56-65, warpins: 1 ---
-	slot8 = InfoStampPresetContentData
-	slot9 = slot6.informationId
-	slot8 = slot8[slot9]
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "MYSTERIOUS_ADVENTURER"
-	slot9 = slot9(slot11)
-	slot10 = slot8.playerName
-	--- END OF BLOCK #9 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 66-71, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.getLocalizationText
-	slot12 = slot8.playerName
-	slot10 = slot10(slot12)
-	slot9 = slot10
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #11 72-74, warpins: 1 ---
-	slot10 = slot8.npcId
-	--- END OF BLOCK #11 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 75-83, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.getLocalizationText
-	slot12 = PuppetName
-	slot13 = slot8.npcId
-	slot12 = slot12[slot13]
-	slot12 = slot12.name
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #12 ---
-
-	slot9 = if not slot10 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #13 84-116, warpins: 4 ---
-	slot10 = {}
-	slot11 = {}
-	slot12 = slot6.markPosition
-	slot12 = slot12[1]
-	slot11[1] = slot12
-	slot12 = slot6.markPosition
-	slot12 = slot12[2]
-	slot11[2] = slot12
-	slot12 = slot6.markPosition
-	slot12 = slot12[3]
-	slot11[3] = slot12
-	slot10.pos = slot11
-	slot11 = Quaternion
-	slot11 = slot11.Euler
-	slot13 = slot8.rotation
-	slot13 = slot13[1]
-	slot14 = slot8.rotation
-	slot14 = slot14[2]
-	slot15 = slot8.rotation
-	slot15 = slot15[3]
-	slot11 = slot11(slot13, slot14, slot15)
-	slot10.rot = slot11
-	slot10.playerName = slot9
-	slot11 = slot8.informationType
-	slot10.informationType = slot11
-	slot11 = slot10.pos
-	slot14 = slot0
-	slot12 = slot0.checkSysPresetMarkIsAroundSelf
-	slot15 = slot11[1]
-	slot16 = slot11[3]
-	slot12 = slot12(slot14, slot15, slot16)
-	--- END OF BLOCK #13 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 117-120, warpins: 1 ---
-	slot12 = slot0.aroundMarkInfoStampGroup
-	slot13 = nil
-	slot12[slot7] = slot13
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
-
-
-	--- BLOCK #15 121-124, warpins: 1 ---
-	slot12 = slot0.aroundMarkInfoStampGroup
-	slot12 = slot12[slot7]
-	slot12.content = slot10
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
-
-
-	--- BLOCK #16 125-128, warpins: 2 ---
-	slot8 = slot0.aroundMarkInfoStampGroup
-	slot8 = slot8[slot7]
-	--- END OF BLOCK #16 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #17 129-138, warpins: 1 ---
-	slot8 = InfoStampPresetContentData
-	slot9 = slot6.informationId
-	slot8 = slot8[slot9]
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "MYSTERIOUS_ADVENTURER"
-	slot9 = slot9(slot11)
-	slot10 = slot8.playerName
-	--- END OF BLOCK #17 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #18
+	slot8 = if slot8 then
+	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 139-144, warpins: 1 ---
+	--- BLOCK #11 58-64, warpins: 1 ---
+	slot8 = type
+	slot10 = slot0.aroundMarkInfoStampGroup
+	slot10 = slot10[slot7]
+	slot10 = slot10.content
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #11 ---
+
+	if slot8 ~= "table" then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #12 65-74, warpins: 1 ---
+	slot8 = InfoStampPresetContentData
+	slot9 = slot6.informationId
+	slot8 = slot8[slot9]
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = "MYSTERIOUS_ADVENTURER"
+	slot9 = slot9(slot11)
+	slot10 = slot8.playerName
+	--- END OF BLOCK #12 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 75-80, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.getLocalizationText
 	slot12 = slot8.playerName
 	slot10 = slot10(slot12)
 	slot9 = slot10
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #19 145-147, warpins: 1 ---
+	--- BLOCK #14 81-83, warpins: 1 ---
 	slot10 = slot8.npcId
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #14 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #20 148-156, warpins: 1 ---
+	--- BLOCK #15 84-92, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.getLocalizationText
 	slot12 = PuppetName
@@ -1621,16 +3433,16 @@ slot27 = function(slot0)
 	slot12 = slot12[slot13]
 	slot12 = slot12.name
 	slot10 = slot10(slot12)
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #15 ---
 
 	slot9 = if not slot10 then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #21 157-189, warpins: 4 ---
+	--- BLOCK #16 93-125, warpins: 4 ---
 	slot10 = {}
 	slot11 = {}
 	slot12 = slot6.markPosition
@@ -1662,51 +3474,179 @@ slot27 = function(slot0)
 	slot15 = slot11[1]
 	slot16 = slot11[3]
 	slot12 = slot12(slot14, slot15, slot16)
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #16 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #22
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #22 190-195, warpins: 1 ---
+	--- BLOCK #17 126-129, warpins: 1 ---
 	slot12 = slot0.aroundMarkInfoStampGroup
-	slot13 = {
-		dislikes = 0
-	}
-	slot13.content = slot10
-	slot14 = slot8.thumbsUp
+	slot13 = nil
+	slot12[slot7] = slot13
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
+
+
+	--- BLOCK #18 130-133, warpins: 1 ---
+	slot12 = slot0.aroundMarkInfoStampGroup
+	slot12 = slot12[slot7]
+	slot12.content = slot10
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
+
+
+	--- BLOCK #19 134-137, warpins: 2 ---
+	slot8 = slot0.aroundMarkInfoStampGroup
+	slot8 = slot8[slot7]
+	--- END OF BLOCK #19 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #20 138-147, warpins: 1 ---
+	slot8 = InfoStampPresetContentData
+	slot9 = slot6.informationId
+	slot8 = slot8[slot9]
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = "MYSTERIOUS_ADVENTURER"
+	slot9 = slot9(slot11)
+	slot10 = slot8.playerName
+	--- END OF BLOCK #20 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 148-153, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.getLocalizationText
+	slot12 = slot8.playerName
+	slot10 = slot10(slot12)
+	slot9 = slot10
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #22 154-156, warpins: 1 ---
+	slot10 = slot8.npcId
 	--- END OF BLOCK #22 ---
 
-	slot14 = if not slot14 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #23 196-196, warpins: 1 ---
-	slot14 = 0
+	--- BLOCK #23 157-165, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.getLocalizationText
+	slot12 = PuppetName
+	slot13 = slot8.npcId
+	slot12 = slot12[slot13]
+	slot12 = slot12.name
+	slot10 = slot10(slot12)
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
+	slot9 = if not slot10 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #24
+	end
 
 
-	--- BLOCK #24 197-203, warpins: 2 ---
+	--- BLOCK #24 166-198, warpins: 4 ---
+	slot10 = {}
+	slot11 = {}
+	slot12 = slot6.markPosition
+	slot12 = slot12[1]
+	slot11[1] = slot12
+	slot12 = slot6.markPosition
+	slot12 = slot12[2]
+	slot11[2] = slot12
+	slot12 = slot6.markPosition
+	slot12 = slot12[3]
+	slot11[3] = slot12
+	slot10.pos = slot11
+	slot11 = Quaternion
+	slot11 = slot11.Euler
+	slot13 = slot8.rotation
+	slot13 = slot13[1]
+	slot14 = slot8.rotation
+	slot14 = slot14[2]
+	slot15 = slot8.rotation
+	slot15 = slot15[3]
+	slot11 = slot11(slot13, slot14, slot15)
+	slot10.rot = slot11
+	slot10.playerName = slot9
+	slot11 = slot8.informationType
+	slot10.informationType = slot11
+	slot11 = slot10.pos
+	slot14 = slot0
+	slot12 = slot0.checkSysPresetMarkIsAroundSelf
+	slot15 = slot11[1]
+	slot16 = slot11[3]
+	slot12 = slot12(slot14, slot15, slot16)
+	--- END OF BLOCK #24 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #25 199-204, warpins: 1 ---
+	slot12 = slot0.aroundMarkInfoStampGroup
+	slot13 = {
+		dislikes = 0
+	}
+	slot13.content = slot10
+	slot14 = slot8.thumbsUp
+	--- END OF BLOCK #25 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 205-205, warpins: 1 ---
+	slot14 = 0
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 206-212, warpins: 2 ---
 	slot13.likes = slot14
 	slot14 = Const
 	slot14 = slot14.MediaMarkerType
 	slot14 = slot14.SystemText
 	slot13.type = slot14
 	slot12[slot7] = slot13
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #25 204-214, warpins: 1 ---
+	--- BLOCK #28 213-223, warpins: 1 ---
 	slot8 = slot0.aroundMarkInfoStampGroup
 	slot8 = slot8[slot7]
 	slot8 = slot8.content
@@ -1716,44 +3656,44 @@ slot27 = function(slot0)
 	slot12 = slot8[1]
 	slot13 = slot8[3]
 	slot9 = slot9(slot11, slot12, slot13)
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #28 ---
 
 	slot9 = if not slot9 then
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #26 215-217, warpins: 1 ---
+	--- BLOCK #29 224-226, warpins: 1 ---
 	slot9 = slot0.aroundMarkInfoStampGroup
 	slot10 = nil
 	slot9[slot7] = slot10
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #27
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #27 218-219, warpins: 9 ---
-	--- END OF BLOCK #27 ---
+	--- BLOCK #30 227-228, warpins: 9 ---
+	--- END OF BLOCK #30 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #28
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #31
 
 
-	--- BLOCK #28 220-220, warpins: 1 ---
+	--- BLOCK #31 229-229, warpins: 1 ---
 	return
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #31 ---
 
 
 
 end
 
-slot24.addPresetMark = slot27
+slot27.addPresetMark = slot30
 
-slot27 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -1813,9 +3753,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.checkSysPresetMarkIsAroundSelf = slot27
+slot27.checkSysPresetMarkIsAroundSelf = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1875,9 +3815,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.checkId = slot27
+slot27.checkId = slot30
 
-slot27 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -2083,9 +4023,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.addMark = slot27
+slot27.addMark = slot30
 
-slot27 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.mute
 	--- END OF BLOCK #0 ---
@@ -2110,8 +4050,8 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	slot7 = MessageName
 	slot7 = slot7.ENTER_TRIGGER
 	slot8 = {
-		dist = 1.5,
-		actionPrototypeId = 161
+		actionPrototypeId = 161,
+		dist = 1.5
 	}
 	slot8.globalId = slot1
 	slot9 = InteractionConst
@@ -2329,9 +4269,9 @@ slot27 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot24.enterInfoStampArea = slot27
+slot27.enterInfoStampArea = slot30
 
-slot27 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = facade
 	slot5 = slot3
@@ -2390,9 +4330,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.leaveInfoStampArea = slot27
+slot27.leaveInfoStampArea = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -2434,9 +4374,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.leaveFarAwayInfoStampArea = slot27
+slot27.leaveFarAwayInfoStampArea = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.mute = slot1
 	--- END OF BLOCK #0 ---
@@ -2466,7 +4406,7 @@ slot27 = function(slot0, slot1)
 
 
 	--- BLOCK #2 11-11, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -2531,9 +4471,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.muteInfoStampSystem = slot27
+slot27.muteInfoStampSystem = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.infoStampInfoTrans = slot1
 
@@ -2544,9 +4484,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.recordInfoStampTrans = slot27
+slot27.recordInfoStampTrans = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.infoStampInfoTrans
 
@@ -2637,9 +4577,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.dealInfoStampVisible = slot27
+slot27.dealInfoStampVisible = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.poolHelper
 	slot2 = slot2[slot1]
@@ -2899,9 +4839,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.refreshMarkColor = slot27
+slot27.refreshMarkColor = slot30
 
-slot27 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
@@ -3532,7 +5472,14 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 251-257, warpins: 2 ---
+	--- BLOCK #44 251-262, warpins: 2 ---
+	slot15 = slot5.gameObject
+	slot17 = slot15
+	slot15 = slot15.SetActiveEx
+	slot18 = true
+
+	slot15(slot17, slot18)
+
 	slot15 = slot5.gameObject
 	slot15 = slot15.transform
 	slot16 = Vector3
@@ -3544,7 +5491,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #57
 
 
-	--- BLOCK #45 258-260, warpins: 1 ---
+	--- BLOCK #45 263-265, warpins: 1 ---
 	slot13 = slot12[1]
 	--- END OF BLOCK #45 ---
 
@@ -3555,7 +5502,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #46 261-266, warpins: 1 ---
+	--- BLOCK #46 266-271, warpins: 1 ---
 	slot13 = "$ui_item_1000.png"
 	slot14 = ItemData
 	slot15 = slot12[2]
@@ -3569,7 +5516,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #47 267-272, warpins: 1 ---
+	--- BLOCK #47 272-277, warpins: 1 ---
 	slot14 = ItemData
 	slot15 = slot12[2]
 	slot14 = slot14[slot15]
@@ -3583,14 +5530,14 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #48 273-273, warpins: 2 ---
+	--- BLOCK #48 278-278, warpins: 2 ---
 	slot14 = slot13
 	--- END OF BLOCK #48 ---
 
 	FLOW; TARGET BLOCK #49
 
 
-	--- BLOCK #49 274-275, warpins: 2 ---
+	--- BLOCK #49 279-280, warpins: 2 ---
 	--- END OF BLOCK #49 ---
 
 	slot14 = if not slot14 then
@@ -3600,14 +5547,21 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #50 276-276, warpins: 1 ---
+	--- BLOCK #50 281-281, warpins: 1 ---
 	slot14 = slot13
 	--- END OF BLOCK #50 ---
 
 	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #51 277-283, warpins: 2 ---
+	--- BLOCK #51 282-293, warpins: 2 ---
+	slot15 = slot5.gameObject
+	slot17 = slot15
+	slot15 = slot15.SetActiveEx
+	slot18 = true
+
+	slot15(slot17, slot18)
+
 	slot15 = slot5.gameObject
 	slot15 = slot15.transform
 	slot16 = Vector3
@@ -3619,7 +5573,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #57
 
 
-	--- BLOCK #52 284-286, warpins: 1 ---
+	--- BLOCK #52 294-296, warpins: 1 ---
 	slot13 = slot12[1]
 	--- END OF BLOCK #52 ---
 
@@ -3630,7 +5584,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #53 287-289, warpins: 1 ---
+	--- BLOCK #53 297-299, warpins: 1 ---
 	slot13 = slot12[1]
 	--- END OF BLOCK #53 ---
 
@@ -3641,7 +5595,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #54 290-292, warpins: 1 ---
+	--- BLOCK #54 300-302, warpins: 1 ---
 	slot13 = slot12[1]
 	--- END OF BLOCK #54 ---
 
@@ -3652,7 +5606,14 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #55 293-307, warpins: 3 ---
+	--- BLOCK #55 303-322, warpins: 3 ---
+	slot13 = slot5.gameObject
+	slot15 = slot13
+	slot13 = slot13.SetActiveEx
+	slot16 = true
+
+	slot13(slot15, slot16)
+
 	slot13 = slot5.gameObject
 	slot13 = slot13.transform
 	slot14 = Vector3
@@ -3672,7 +5633,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #57
 
 
-	--- BLOCK #56 308-312, warpins: 1 ---
+	--- BLOCK #56 323-327, warpins: 1 ---
 	slot13 = slot4.gameObject
 	slot13 = slot13.transform
 	slot14 = Vector3
@@ -3684,7 +5645,7 @@ slot27 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #57
 
 
-	--- BLOCK #57 313-313, warpins: 6 ---
+	--- BLOCK #57 328-328, warpins: 6 ---
 	return
 	--- END OF BLOCK #57 ---
 
@@ -3692,9 +5653,9 @@ slot27 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot24.renderTipFirstIcon = slot27
+slot27.renderTipFirstIcon = slot30
 
-slot27 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -3741,9 +5702,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.removeKey = slot27
+slot27.removeKey = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -3791,9 +5752,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.inMyOwnKey = slot27
+slot27.inMyOwnKey = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -3841,9 +5802,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.isInfoStampBeLikedOrDislikedByMe = slot27
+slot27.isInfoStampBeLikedOrDislikedByMe = slot30
 
-slot27 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -3865,9 +5826,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.openInfoStamp = slot27
+slot27.openInfoStamp = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -3888,9 +5849,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.openInfoStampSimple = slot27
+slot27.openInfoStampSimple = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -3926,9 +5887,25 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.onInteractionChanged = slot27
+slot27.onInteractionChanged = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshInfoStampAreaForceHide
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.onPlayerEnterScene = slot30
+
+slot30 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -3937,20 +5914,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.onPlayerEnterScene = slot27
+slot27.onPlayerLeaveScene = slot30
 
-slot27 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot24.onPlayerLeaveScene = slot27
-
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = ""
 	slot3 = ""
@@ -4148,24 +6114,40 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.getTemplateTxt = slot27
+slot27.getTemplateTxt = slot30
 
-slot27 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = {}
-	slot4 = slot0.aroundMarkInfoStampGroup
-	slot4 = slot4[slot2]
-	slot5 = nil
+slot30 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = {}
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-28, warpins: 1 ---
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot5 = slot0.aroundMarkInfoStampGroup
+	slot3 = slot5[slot2]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot5 = nil
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-30, warpins: 1 ---
 	slot6 = Utils
 	slot6 = slot6.getNoBySysMediaMarkerId
 	slot8 = slot2
@@ -4176,7 +6158,7 @@ slot27 = function(slot0, slot1, slot2)
 	slot7 = slot7.getLocalizationText
 	slot9 = slot5.txtCustom
 	slot7 = slot7(slot9)
-	slot3.txtCustom = slot7
+	slot4.txtCustom = slot7
 	slot7 = Quaternion
 	slot7 = slot7.Euler
 	slot9 = slot5.rotation
@@ -4186,131 +6168,131 @@ slot27 = function(slot0, slot1, slot2)
 	slot11 = slot5.rotation
 	slot11 = slot11[3]
 	slot7 = slot7(slot9, slot10, slot11)
-	slot3.rot = slot7
-	--- END OF BLOCK #1 ---
+	slot4.rot = slot7
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 29-33, warpins: 1 ---
-	slot5 = slot4.content
+	--- BLOCK #4 31-35, warpins: 1 ---
+	slot5 = slot3.content
 	slot6 = slot5.txtCustom
-	slot3.txtCustom = slot6
+	slot4.txtCustom = slot6
 	slot6 = slot5.rot
-	slot3.rot = slot6
-	--- END OF BLOCK #2 ---
+	slot4.rot = slot6
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 34-47, warpins: 2 ---
+	--- BLOCK #5 36-49, warpins: 2 ---
 	slot6 = pg
 	slot6 = slot6.getLocalizationText
-	slot8 = slot4.content
+	slot8 = slot3.content
 	slot8 = slot8.playerName
 	slot6 = slot6(slot8)
-	slot3.playerName = slot6
+	slot4.playerName = slot6
 	slot8 = slot0
 	slot6 = slot0.getTemplateTxt
 	slot9 = slot5
 	slot6 = slot6(slot8, slot9)
-	slot3.txtClips = slot6
+	slot4.txtClips = slot6
 	slot6 = slot5.animation
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 48-54, warpins: 1 ---
+	--- BLOCK #6 50-56, warpins: 1 ---
 	slot6 = tonumber
 	slot8 = slot5.animation
 	slot6 = slot6(slot8)
-	slot3.animation = slot6
+	slot4.animation = slot6
 	slot6 = slot5.animation
-	--- END OF BLOCK #4 ---
-
-	if slot6 == -1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 55-59, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "MYSTERIOUS_ADVENTURER"
-	slot6 = slot6(slot8)
-	slot3.playerName = slot6
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 60-62, warpins: 3 ---
-	slot6 = slot5.bubbleType
 	--- END OF BLOCK #6 ---
 
-	slot6 = if slot6 then
+	if slot6 == -1 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 63-67, warpins: 1 ---
-	slot6 = InfoStampCustomBubbleConfigData
-	slot7 = slot5.bubbleType
-	slot6 = slot6[slot7]
-	slot6 = slot6.bubbleRes
-	slot3.bubbleType = slot6
+	--- BLOCK #7 57-61, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "MYSTERIOUS_ADVENTURER"
+	slot6 = slot6(slot8)
+	slot4.playerName = slot6
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 68-73, warpins: 2 ---
-	slot6 = slot4.likes
-	slot3.likes = slot6
-	slot6 = slot5.photoTemplate
-	slot3.photoTemplate = slot6
+	--- BLOCK #8 62-64, warpins: 3 ---
+	slot6 = slot5.bubbleType
 	--- END OF BLOCK #8 ---
 
-	slot1 = if slot1 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 74-78, warpins: 1 ---
-	slot8 = slot0
-	slot6 = slot0.injectSysOtherRichInfos
-	slot9 = slot3
-	slot10 = slot2
-
-	slot6(slot8, slot9, slot10)
-
+	--- BLOCK #9 65-69, warpins: 1 ---
+	slot6 = InfoStampCustomBubbleConfigData
+	slot7 = slot5.bubbleType
+	slot6 = slot6[slot7]
+	slot6 = slot6.bubbleRes
+	slot4.bubbleType = slot6
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 79-79, warpins: 2 ---
-	return slot3
+	--- BLOCK #10 70-75, warpins: 2 ---
+	slot6 = slot3.likes
+	slot4.likes = slot6
+	slot6 = slot5.photoTemplate
+	slot4.photoTemplate = slot6
 	--- END OF BLOCK #10 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 76-80, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.injectSysOtherRichInfos
+	slot9 = slot4
+	slot10 = slot2
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 81-81, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot24.parseInfoStamp = slot27
+slot27.parseInfoStamp = slot30
 
-slot27 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = {}
 	slot4 = Utils
@@ -4572,9 +6554,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.injectSysOtherRichInfos = slot27
+slot27.injectSysOtherRichInfos = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -4609,9 +6591,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.getSelfMarkSceneId = slot27
+slot27.getSelfMarkSceneId = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -4653,9 +6635,9 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.getSelfTxtClips = slot27
+slot27.getSelfTxtClips = slot30
 
-slot27 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4711,9 +6693,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.closeViewUI = slot27
+slot27.closeViewUI = slot30
 
-slot27 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = function(slot0, slot1)
 		--- BLOCK #0 1-14, warpins: 1 ---
@@ -4869,9 +6851,216 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot24.onFocusChanged = slot27
+slot27.onFocusChanged = slot30
 
-return slot24
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.mediaMarker
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot3 = MarkShareSystem
+	slot3 = slot3.EXPIRE_STATE
+	slot3 = slot3.Permanent
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-14, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.getExpireInfo
+	slot6 = slot2
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot27.getMyExpireInfoById = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot2 = MarkShareSystem
+	slot2 = slot2.EXPIRE_STATE
+	slot2 = slot2.Permanent
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot2 = slot1.isPermanent
+	--- END OF BLOCK #2 ---
+
+	if slot2 == 1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot2 = MarkShareSystem
+	slot2 = slot2.EXPIRE_STATE
+	slot2 = slot2.Permanent
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-16, warpins: 2 ---
+	slot2 = slot1.createTs
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-20, warpins: 1 ---
+	slot2 = MarkShareSystem
+	slot2 = slot2.EXPIRE_STATE
+	slot2 = slot2.Permanent
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-34, warpins: 2 ---
+	slot2 = slot1.createTs
+	slot3 = MarkShareSystem
+	slot3 = slot3.getMaxDayCount
+	slot3 = slot3()
+	slot4 = Const
+	slot4 = slot4.SECONDS_ONE_DAY
+	slot3 = slot3 * slot4
+	slot2 = slot2 + slot3
+	slot3 = Time
+	slot3 = slot3.secondCache
+	slot3 = slot2 - slot3
+	slot4 = 0
+	--- END OF BLOCK #6 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 35-42, warpins: 1 ---
+	slot4 = MarkShareSystem
+	slot4 = slot4.EXPIRE_STATE
+	slot4 = slot4.Expired
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "MARK_SHARE_EXPIRED"
+	MULTRES = slot5(slot7)
+
+	return slot4, MULTRES
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 43-60, warpins: 2 ---
+	slot4 = math
+	slot4 = slot4.ceil
+	slot6 = Const
+	slot6 = slot6.SECONDS_ONE_DAY
+	slot6 = slot3 / slot6
+	slot4 = slot4(slot6)
+	slot5 = MarkShareSystem
+	slot5 = slot5.EXPIRE_STATE
+	slot5 = slot5.Active
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "MARK_SHARE_EXPIRE_DAYS"
+	slot8 = slot8(slot10)
+	slot9 = slot4
+	MULTRES = slot6(slot8, slot9)
+
+	return slot5, MULTRES
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot27.getExpireInfo = slot30
+
+slot30 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = SysConfigData
+	slot0 = slot0.MARKSHARE_ENCOURAGE_DURING_MAX
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot0 = 10
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot27.getMaxDayCount = slot30
+
+return slot27
 --- END OF BLOCK #0 ---
 
 

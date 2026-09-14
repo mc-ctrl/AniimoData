@@ -1,4 +1,4 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -23,11 +23,14 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Core.Common.CallbackHandler"
 slot7 = slot7(slot9)
-slot8 = slot3.Component
-slot10 = "ClientPlayerTargetComponent"
+slot8 = require
+slot10 = "GameApp.CmdSocket.HomelandDemoCmdImplement"
 slot8 = slot8(slot10)
+slot9 = slot3.Component
+slot11 = "ClientPlayerTargetComponent"
+slot9 = slot9(slot11)
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -36,9 +39,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.ctor = slot9
+slot9.ctor = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -47,9 +50,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.start = slot9
+slot9.start = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -159,9 +162,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_ShowTarget = slot9
+slot9.RPC_SC_ShowTarget = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -215,9 +218,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.RPC_SC_UpdateTarget = slot9
+slot9.RPC_SC_UpdateTarget = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -249,7 +252,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-38, warpins: 2 ---
+	--- BLOCK #2 16-41, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.target
@@ -274,16 +277,117 @@ slot9 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	return
+	slot4 = pg
+	slot4 = slot4.space
 	--- END OF BLOCK #2 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 42-46, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.space
+	slot4 = slot4.demoMode
+	--- END OF BLOCK #3 ---
+
+	if slot4 ~= true then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 47-50, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.me
+	--- END OF BLOCK #4 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 51-55, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+	--- END OF BLOCK #5 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 56-61, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+	slot4 = slot4.demoMode
+	--- END OF BLOCK #6 ---
+
+	if slot4 ~= true then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 62-63, warpins: 3 ---
+	slot4 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 64-64, warpins: 2 ---
+	slot4 = true
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 65-66, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 67-71, warpins: 1 ---
+	slot5 = HomelandDemoCmdImplement
+	slot5 = slot5._onTargetSubTargetsCompleted
+	slot7 = slot1
+	slot8 = slot2
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 72-72, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot8.RPC_SC_CompleteSubTarget = slot9
+slot9.RPC_SC_CompleteSubTarget = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3, slot4)
+slot10 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = LoggerManager
 	slot5 = slot5.checkLogger
@@ -353,9 +457,9 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot8.RPC_SC_FlushSubTarget = slot9
+slot9.RPC_SC_FlushSubTarget = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -417,9 +521,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_DelTarget = slot9
+slot9.RPC_SC_DelTarget = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -465,9 +569,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.resetTarget = slot9
+slot9.resetTarget = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -515,9 +619,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_timerStart = slot9
+slot9.RPC_SC_timerStart = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -567,9 +671,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.RPC_SC_timerClose = slot9
+slot9.RPC_SC_timerClose = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -617,9 +721,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.RPC_SC_setTimerTxt = slot9
+slot9.RPC_SC_setTimerTxt = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -666,9 +770,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.RPC_SC_resetTimerTxt = slot9
+slot9.RPC_SC_resetTimerTxt = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -718,9 +822,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.RPC_SC_SynTimer = slot9
+slot9.RPC_SC_SynTimer = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

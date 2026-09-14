@@ -13,24 +13,24 @@ slot4 = slot0.LiteClass
 slot6 = "ProjectileParams"
 slot4 = slot4(slot6)
 
-slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11)
 	--- BLOCK #0 1-18, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.global
-	slot10 = slot10.abilityMgr
-	slot10 = slot10.projectileParamsPool
-	slot12 = slot10
-	slot10 = slot10.get
-	slot13 = true
-	slot10 = slot10(slot12, slot13)
-	slot10.srcAbilityId = slot0
-	slot10.srcAbilityStoreType = slot1
-	slot10.srcActorId = slot2
-	slot10.targetActorId = slot3
-	slot10.pos = slot6
-	slot10.rotation = slot7
-	slot10.templateId = slot4
-	slot10.instanceId = slot5
+	slot12 = pg
+	slot12 = slot12.global
+	slot12 = slot12.abilityMgr
+	slot12 = slot12.projectileParamsPool
+	slot14 = slot12
+	slot12 = slot12.get
+	slot15 = true
+	slot12 = slot12(slot14, slot15)
+	slot12.srcAbilityId = slot0
+	slot12.srcAbilityStoreType = slot1
+	slot12.srcActorId = slot2
+	slot12.targetActorId = slot3
+	slot12.pos = slot6
+	slot12.rotation = slot7
+	slot12.templateId = slot4
+	slot12.instanceId = slot5
 	--- END OF BLOCK #0 ---
 
 	if slot8 ~= nil then
@@ -41,20 +41,22 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, 
 
 
 	--- BLOCK #1 19-23, warpins: 1 ---
-	slot11 = Vector3
-	slot11 = slot11.Clone
-	slot13 = slot8
-	slot11 = slot11(slot13)
-	slot10.targetPosition = slot11
+	slot13 = Vector3
+	slot13 = slot13.Clone
+	slot15 = slot8
+	slot13 = slot13(slot15)
+	slot12.targetPosition = slot13
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 24-25, warpins: 2 ---
-	slot10.srcCombatContextId = slot9
+	--- BLOCK #2 24-27, warpins: 2 ---
+	slot12.srcCombatContextId = slot9
+	slot12.castingCombatContextId = slot10
+	slot12.soundId = slot11
 
-	return slot10
+	return slot12
 	--- END OF BLOCK #2 ---
 
 

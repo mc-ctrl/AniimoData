@@ -295,7 +295,7 @@ slot6 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-55, warpins: 2 ---
+	--- BLOCK #9 43-52, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.getContextValue
 	slot6 = slot1
@@ -304,34 +304,53 @@ slot6 = function(slot0, slot1, slot2)
 	slot6 = slot1
 	slot4 = slot1.getSpace
 	slot4 = slot4(slot6)
-	slot7 = slot4
-	slot5 = slot4.getMainPlayer
-	slot5 = slot5(slot7)
+
 	--- END OF BLOCK #9 ---
 
-	slot5 = if not slot5 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 56-62, warpins: 1 ---
+	--- BLOCK #10 53-53, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 54-58, warpins: 2 ---
+	slot7 = slot4
+	slot5 = slot4.getMainPlayer
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #11 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 59-65, warpins: 1 ---
 	slot6 = LoggerManager
 	slot6 = slot6.checkLogger
 	slot8 = LoggerConst
 	slot8 = slot8.ERROR
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 63-68, warpins: 1 ---
+	--- BLOCK #13 66-71, warpins: 1 ---
 	slot6 = slot0.logger
 	slot8 = slot6
 	slot6 = slot6.error
@@ -340,20 +359,20 @@ slot6 = function(slot0, slot1, slot2)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #12 69-69, warpins: 2 ---
+	--- BLOCK #14 72-72, warpins: 2 ---
 	return
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #13 70-82, warpins: 2 ---
+	--- BLOCK #15 73-85, warpins: 2 ---
 	slot6 = CustomVariableOp
 	slot7 = slot0.Operation
 	slot6 = slot6[slot7]
@@ -371,7 +390,7 @@ slot6 = function(slot0, slot1, slot2)
 	slot6(slot8, slot9)
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
 
 

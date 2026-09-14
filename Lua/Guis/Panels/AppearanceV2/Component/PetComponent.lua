@@ -1,112 +1,170 @@
---- BLOCK #0 1-306, warpins: 1 ---
+--- BLOCK #0 1-422, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.lume"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
-slot3 = slot0.getLogger
-slot5 = "Avatar"
+slot3 = require
+slot5 = "Core.Common.lume"
 slot3 = slot3(slot5)
-slot4 = require
-slot6 = "Core.Framework.Class"
+slot4 = slot1.getLogger
+slot6 = "Avatar"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.UIConst"
+slot7 = "Core.Framework.Class"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.RedDotConst"
+slot8 = "Const.UIConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Const.RedDotConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.PlayableConst"
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "GameApp.UIScene.UISceneConst"
+slot11 = "Common.Const.PlayableConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Guis.Helper.UIComponent"
+slot12 = "GameApp.UIScene.UISceneConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Guis.Utils.AvatarUtils"
+slot13 = "Guis.Helper.UIComponent"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Utils.ClientTextUtils"
+slot14 = "Guis.Utils.AvatarUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.LuaUIUtils"
+slot15 = "Utils.ClientTextUtils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Guis.Utils.PetResearchUtils"
+slot16 = "Utils.LuaUIUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Guis.Panels.AppearanceV2.Component.Common.SlotOptionComponent"
+slot17 = "Guis.Utils.PetResearchUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Guis.Panels.AppearanceV2.Component.Common.SliderBubbleComponent"
+slot18 = "Guis.Panels.AppearanceV2.Component.Common.SlotOptionComponent"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.appearance_jewelry_pet_data"
+slot19 = "Guis.Panels.AppearanceV2.Component.Common.SliderBubbleComponent"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.Avatar.avatar_accessory_classify_data"
+slot20 = "Data.appearance_jewelry_pet_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.item_data"
+slot21 = "Data.Avatar.avatar_accessory_classify_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Const.AddressDataConst"
+slot22 = "Data.item_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Const.HotkeyConst"
+slot23 = "Const.AddressDataConst"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.energy_match_theme_data"
+slot24 = "Const.HotkeyConst"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Common.Utils.Utils"
+slot25 = "Data.energy_match_theme_data"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "Data.energy_match_accessories_data"
+slot26 = "Common.Utils.Utils"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Data.energy_accessories_tag_data"
+slot27 = "Data.energy_match_accessories_data"
 slot25 = slot25(slot27)
 slot26 = require
-slot28 = "Common.Utils.ActivityUtils"
+slot28 = "Data.energy_accessories_tag_data"
 slot26 = slot26(slot28)
 slot27 = require
-slot29 = "Const.MessageName"
+slot29 = "Data.pet_data"
 slot27 = slot27(slot29)
 slot28 = require
-slot30 = "Common.NoticeDef"
+slot30 = "Data.pet_config_data"
 slot28 = slot28(slot30)
 slot29 = require
-slot31 = "Utils.PetJewelryOssCache"
+slot31 = "Common.Utils.ActivityUtils"
 slot29 = slot29(slot31)
 slot30 = require
-slot32 = "Core.Timer.TimerManager"
+slot32 = "Const.MessageName"
 slot30 = slot30(slot32)
-slot31 = slot4.LightClass
-slot33 = "PetComponent"
-slot34 = slot10
-slot31 = slot31(slot33, slot34)
-slot32 = {}
-slot33 = slot27.PET_BOX_SELECTED
-slot34 = {
+slot31 = require
+slot33 = "Common.NoticeDef"
+slot31 = slot31(slot33)
+slot32 = require
+slot34 = "Utils.PetJewelryOssCache"
+slot32 = slot32(slot34)
+slot33 = require
+slot35 = "Core.Timer.TimerManager"
+slot33 = slot33(slot35)
+slot34 = require
+slot36 = "Core.Common.Time"
+slot34 = slot34(slot36)
+slot35 = require
+slot37 = "Const.EffectConst"
+slot35 = slot35(slot37)
+slot36 = slot5.LightClass
+slot38 = "PetComponent"
+slot39 = slot11
+slot36 = slot36(slot38, slot39)
+slot37 = {}
+slot38 = slot30.PET_BOX_SELECTED
+slot39 = {
 	"onPetBoxSelected"
 }
-slot32[slot33] = slot34
-slot31.messages = slot32
-slot32 = 200
-slot31.MAPPING_LENGTH = slot32
+slot37[slot38] = slot39
+slot36.messages = slot37
+slot37 = 200
+slot36.MAPPING_LENGTH = slot37
+slot37 = {
+	SNAP_POINT = 3,
+	ALL_POINTS = 2,
+	LOCK_POINT = 1
+}
+slot38 = 1e-06
+slot39 = 3
+slot40 = 7
+slot41 = {}
+slot42 = {
+	mode = 1,
+	text = "APPEARANCE_PET_ACCESSORY_ADJUST_MODE_NORMAL",
+	tIndex = 0
+}
+slot41[1] = slot42
+slot42 = {
+	mode = 2,
+	text = "APPEARANCE_PET_ACCESSORY_ADJUST_MODE_ADVANCED",
+	tIndex = 2
+}
+slot41[2] = slot42
+slot42 = {}
+slot43 = {
+	text = "APPEARANCE_PET_ACCESSORY_SNAP_POINT",
+	icon = 2
+}
+slot44 = slot37.SNAP_POINT
+slot43.optionType = slot44
+slot42[1] = slot43
+slot43 = {
+	text = "APPEARANCE_PET_ACCESSORY_LOCK_POINT",
+	icon = 1
+}
+slot44 = slot37.LOCK_POINT
+slot43.optionType = slot44
+slot42[2] = slot43
+slot43 = {
+	text = "APPEARANCE_PET_ACCESSORY_ALL_POINTS",
+	icon = 0
+}
+slot44 = slot37.ALL_POINTS
+slot43.optionType = slot44
+slot42[3] = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot1.petId
 	slot0.curPetId = slot2
@@ -153,10 +211,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.onCtor = slot32
+slot36.onCtor = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-271, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-282, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -253,6 +311,17 @@ slot32 = function(slot0)
 	slot4 = "petBoxUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.petBoxUButton = slot1
+	slot1 = slot0.petBoxUButton
+	slot1 = slot1.transform
+	slot3 = slot1
+	slot1 = slot1.Find
+	slot4 = "Mask/Icon"
+	slot1 = slot1(slot3, slot4)
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "UImage"
+	slot1 = slot1(slot3, slot4)
+	slot0.petBoxIconUImage = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -435,10 +504,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.findObjects = slot32
+slot36.findObjects = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-120, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-180, warpins: 1 ---
 	slot1 = slot0.rightTransform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -554,6 +623,66 @@ slot32 = function(slot0)
 	slot5 = "btnFashionValue"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnFashionValue = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnBackAlterUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnBackAlterUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "tMPUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.tMPUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textSelectorTitleUBaseText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textSelectorTitleUBaseText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "selectorPointUSelector"
+	slot2 = slot2(slot4, slot5)
+	slot0.selectorPointUSelector = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textPointUBaseText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textPointUBaseText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "listAdjustModeUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listAdjustModeUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnResetUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnResetUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "listAdjustOptionUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listAdjustOptionUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnInfoAdjustUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnInfoAdjustUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textAdjustInfoUBaseText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textAdjustInfoUBaseText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "tabAdjustModeUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.tabAdjustModeUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "editUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.editUWidget = slot2
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.gmMode
@@ -566,7 +695,7 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #1 121-126, warpins: 1 ---
+	--- BLOCK #1 181-186, warpins: 1 ---
 	slot2 = slot0.btnExportUButton
 	slot2 = slot2.gameObject
 	slot4 = slot2
@@ -580,7 +709,7 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 127-127, warpins: 2 ---
+	--- BLOCK #2 187-187, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -588,10 +717,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.registerObjects = slot32
+slot36.registerObjects = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-46, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-63, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.uiScene
@@ -616,6 +745,13 @@ slot32 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = slot0.btnAdsorptionSiteUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.accessoryUComponent
 	slot1 = slot1.gameObject
 	slot3 = slot1
@@ -628,6 +764,12 @@ slot32 = function(slot0)
 	slot1 = slot1.gameObject
 	slot3 = slot1
 	slot1 = slot1.SetActiveEx
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.refreshAdjustButtonVisible
 	slot4 = false
 
 	slot1(slot3, slot4)
@@ -649,6 +791,16 @@ slot32 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.tMPUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "BACK_TO_PRE"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -656,9 +808,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.initView = slot32
+slot36.initView = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-49, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -727,9 +879,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.setVitalityTtitle = slot32
+slot36.setVitalityTtitle = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = SlotOptionComponent
 	slot1 = slot1.new
@@ -755,9 +907,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.initComponents = slot32
+slot36.initComponents = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -890,23 +1042,48 @@ slot32 = function(slot0)
 
 end
 
-slot31.getFilterRule = slot32
+slot36.getFilterRule = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = PetJewelryOssCache
-	slot1 = slot1.isReady
-	slot1 = slot1()
+slot43 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.curComponentName
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	if slot1 == "pet" then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = slot0.btnAdsorptionSiteUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-14, warpins: 2 ---
+	slot1 = PetJewelryOssCache
+	slot1 = slot1.isReady
+	slot1 = slot1()
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-20, warpins: 1 ---
 	slot1 = PetJewelryOssCache
 	slot1 = slot1.ensureLoaded
 
@@ -929,25 +1106,17 @@ slot32 = function(slot0)
 
 	return
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 12-52, warpins: 2 ---
+	--- BLOCK #4 21-49, warpins: 2 ---
 	slot1 = slot0.slotOptionComponent
 	slot3 = slot1
 	slot1 = slot1.addListener
 
 	slot1(slot3)
-
-	slot1 = slot0.slotOptionComponent
-	slot1 = slot1.bagUButton
-	slot3 = slot1
-	slot1 = slot1.SetActiveFastest
-	slot4 = false
-
-	slot1(slot3, slot4)
 
 	slot1 = slot0.slotOptionComponent
 	slot1 = slot1.hideUIUButton
@@ -959,14 +1128,6 @@ slot32 = function(slot0)
 
 	slot1 = slot0.slotOptionComponent
 	slot1 = slot1.roleHideUButton
-	slot3 = slot1
-	slot1 = slot1.SetActiveFastest
-	slot4 = false
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.slotOptionComponent
-	slot1 = slot1.petHideUButton
 	slot3 = slot1
 	slot1 = slot1.SetActiveFastest
 	slot4 = false
@@ -988,26 +1149,6 @@ slot32 = function(slot0)
 
 	slot1 = slot0.ctrl
 	slot1 = slot1.vitalityPhase
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 53-54, warpins: 1 ---
-	slot1 = slot0.ctrl
-	slot1 = slot1.vitalityThemeId
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 55-58, warpins: 2 ---
-	slot0.inVitality = slot1
-	slot1 = slot0.inVitality
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
@@ -1017,7 +1158,27 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #5 59-77, warpins: 1 ---
+	--- BLOCK #5 50-51, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.vitalityThemeId
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 52-55, warpins: 2 ---
+	slot0.inVitality = slot1
+	slot1 = slot0.inVitality
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 56-74, warpins: 1 ---
 	slot1 = true
 	slot0.needRecordDefaultAccessory = slot1
 	slot1 = pg
@@ -1039,12 +1200,12 @@ slot32 = function(slot0)
 
 	slot2 = false
 	slot0.inGetVitalityScore = slot2
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 78-118, warpins: 2 ---
+	--- BLOCK #8 75-115, warpins: 2 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.initAccessDataList
@@ -1096,16 +1257,16 @@ slot32 = function(slot0)
 	slot2(slot4, slot5)
 
 	slot2 = slot0.inVitality
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #7 119-144, warpins: 1 ---
+	--- BLOCK #9 116-141, warpins: 1 ---
 	slot2 = {}
 	slot0.vitalitySelectedAccessMap = slot2
 	slot2 = slot0.bottomTabUComponent
@@ -1134,35 +1295,35 @@ slot32 = function(slot0)
 	slot3 = slot3.setBackground
 	slot6 = AddressDataConst
 	slot6 = slot6.UI_VITALITY_CONTEST_SCENE
-	--- END OF BLOCK #7 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 145-147, warpins: 1 ---
-	slot7 = slot2.bgNo
-	--- END OF BLOCK #8 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 148-148, warpins: 2 ---
-	slot7 = 1
-
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 149-183, warpins: 2 ---
+	--- BLOCK #10 142-144, warpins: 1 ---
+	slot7 = slot2.bgNo
+	--- END OF BLOCK #10 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 145-145, warpins: 2 ---
+	slot7 = 1
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 146-186, warpins: 2 ---
 	slot3(slot5, slot6, slot7)
 
 	slot3 = slot0.view
@@ -1203,6 +1364,14 @@ slot32 = function(slot0)
 
 	slot3(slot5, slot6)
 
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "activity"
+	slot7 = 1
+
+	slot3(slot5, slot6, slot7)
+
 	slot5 = slot0
 	slot3 = slot0.refreshVitalityScore
 
@@ -1213,12 +1382,12 @@ slot32 = function(slot0)
 
 	slot3(slot5)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #11 184-191, warpins: 2 ---
+	--- BLOCK #13 187-194, warpins: 2 ---
 	slot2 = slot0.adjustUComponent
 	slot4 = slot2
 	slot2 = slot2.TryChangePage
@@ -1228,16 +1397,63 @@ slot32 = function(slot0)
 	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot31.onEnterPage = slot32
+slot36.onEnterPage = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.inVitality
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-17, warpins: 2 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getSelectAccessData
+	slot1 = slot1(slot3)
+	slot4 = slot0
+	slot2 = slot0.refreshBaseView
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.refreshAllList
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot36.refreshPage = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.slotOptionComponent
 	slot3 = slot1
 	slot1 = slot1.removeListener
@@ -1246,11 +1462,6 @@ slot32 = function(slot0)
 
 	slot3 = slot0
 	slot1 = slot0.removeListener
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.cancelPetAccessFixAttachTemp
 
 	slot1(slot3)
 
@@ -1264,7 +1475,7 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #1 14-17, warpins: 1 ---
+	--- BLOCK #1 11-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.showLit
 	slot4 = false
@@ -1276,7 +1487,7 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-34, warpins: 2 ---
+	--- BLOCK #2 15-31, warpins: 2 ---
 	slot1 = slot0.avatarScene
 	slot2 = false
 	slot1.waitLoadEntity = slot2
@@ -1301,7 +1512,7 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #3 35-39, warpins: 1 ---
+	--- BLOCK #3 32-36, warpins: 1 ---
 	slot2 = slot0.avatarScene
 	slot4 = slot2
 	slot2 = slot2.hideEntityWithId
@@ -1314,7 +1525,7 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 40-40, warpins: 2 ---
+	--- BLOCK #4 37-37, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -1322,10 +1533,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.onLeavePage = slot32
+slot36.onLeavePage = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-62, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-87, warpins: 1 ---
 	slot1 = slot0.operationUList
 
 	slot2 = function(slot0, slot1, slot2)
@@ -1393,7 +1604,7 @@ slot32 = function(slot0)
 			end
 
 
-			--- BLOCK #1 4-19, warpins: 1 ---
+			--- BLOCK #1 4-24, warpins: 1 ---
 			slot3 = self
 			slot5 = slot3
 			slot3 = slot3.parseSliderInfoWithOpName
@@ -1401,14 +1612,9 @@ slot32 = function(slot0)
 			slot3, slot4, slot5 = slot3(slot5, slot6)
 			slot2.minValue = slot3
 			slot2.maxValue = slot4
-			slot6 = AvatarUtils
-			slot6 = slot6.renderSlider
-			slot8 = slot0
-			slot9 = slot2
-			slot10 = slot5
 
-			slot11 = function(slot0)
-				--- BLOCK #0 1-41, warpins: 1 ---
+			slot6 = function(slot0)
+				--- BLOCK #0 1-38, warpins: 1 ---
 				slot1 = AvatarUtils
 				slot1 = slot1.parseSliderMapValue
 				slot3 = subData
@@ -1442,26 +1648,33 @@ slot32 = function(slot0)
 				slot5 = slot3
 				slot3 = slot3.getSelectAccessInstanceId
 				slot3 = slot3(slot5)
-				slot4 = slot2.eModel
-				slot4 = slot4.modelView
-				slot6 = slot4
-				slot4 = slot4.RefreshAttachParent
-				slot7 = slot3
-
-				slot4(slot6, slot7)
-
 				slot4 = self
-				slot4 = slot4.isLock
+				slot4 = slot4.model
+				slot6 = slot4
+				slot4 = slot4.isPetAccessorySimpleMode
+				slot4 = slot4(slot6)
 				--- END OF BLOCK #0 ---
 
 				slot4 = if not slot4 then
 				JUMP TO BLOCK #1
 				else
-				JUMP TO BLOCK #2
+				JUMP TO BLOCK #3
 				end
 
 
-				--- BLOCK #1 42-55, warpins: 1 ---
+				--- BLOCK #1 39-42, warpins: 1 ---
+				slot4 = self
+				slot4 = slot4.isLock
+				--- END OF BLOCK #1 ---
+
+				slot4 = if not slot4 then
+				JUMP TO BLOCK #2
+				else
+				JUMP TO BLOCK #3
+				end
+
+
+				--- BLOCK #2 43-50, warpins: 1 ---
 				slot4 = slot2.eModel
 				slot4 = slot4.modelView
 				slot6 = slot4
@@ -1469,36 +1682,69 @@ slot32 = function(slot0)
 				slot7 = slot3
 				slot4 = slot4(slot6, slot7)
 				slot5 = self
-				slot5 = slot5.model
-				slot7 = slot5
-				slot5 = slot5.setAccessAttachBone
-				slot8 = slot4
-
-				slot5(slot7, slot8)
-
-				slot5 = self
 				slot5.nearestBoneName = slot4
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #2 ---
 
-				FLOW; TARGET BLOCK #2
+				FLOW; TARGET BLOCK #3
 
 
-				--- BLOCK #2 56-61, warpins: 2 ---
+				--- BLOCK #3 51-61, warpins: 3 ---
 				slot4 = self
 				slot4.curAttachInstanceId = slot3
 				slot4 = self
-				slot5 = true
+				slot5 = self
+				slot5 = slot5.model
+				slot7 = slot5
+				slot5 = slot5.isPetAccessorySimpleMode
+				slot5 = slot5(slot7)
+				slot5 = not slot5
 				slot4.boneSliderChanged = slot5
 
 				return
-				--- END OF BLOCK #2 ---
+				--- END OF BLOCK #3 ---
 
 
 
 			end
 
-			slot12 = function()
-				--- BLOCK #0 1-22, warpins: 1 ---
+			slot7 = function()
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = self
+				slot0 = slot0.model
+				slot2 = slot0
+				slot0 = slot0.isPetAccessorySimpleMode
+				slot0 = slot0(slot2)
+				--- END OF BLOCK #0 ---
+
+				slot0 = if slot0 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 8-17, warpins: 1 ---
+				slot0 = self
+				slot0 = slot0.model
+				slot2 = slot0
+				slot0 = slot0.recordOperationStep
+
+				slot0(slot2)
+
+				slot0 = self
+				slot2 = slot0
+				slot0 = slot0.refreshAdjustButtonState
+
+				slot0(slot2)
+
+				return
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+				--- BLOCK #2 18-32, warpins: 2 ---
 				slot0 = self
 				slot0 = slot0.avatarScene
 				slot2 = slot0
@@ -1509,66 +1755,184 @@ slot32 = function(slot0)
 				slot3 = slot1
 				slot1 = slot1.getSelectAccessInstanceId
 				slot1 = slot1(slot3)
-				slot2 = slot0.eModel
-				slot2 = slot2.modelView
-				slot4 = slot2
-				slot2 = slot2.RefreshAttachParent
-				slot5 = slot1
-				slot6 = self
-				slot6 = slot6.lockBoneName
+				slot2 = nil
+				slot3 = self
+				slot3 = slot3.isLock
+				--- END OF BLOCK #2 ---
 
-				slot2(slot4, slot5, slot6)
-
-				slot2 = self
-				slot2 = slot2.isLock
-				--- END OF BLOCK #0 ---
-
-				slot2 = if not slot2 then
-				JUMP TO BLOCK #1
+				slot3 = if slot3 then
+				JUMP TO BLOCK #3
 				else
-				JUMP TO BLOCK #2
+				JUMP TO BLOCK #4
 				end
 
 
-				--- BLOCK #1 23-30, warpins: 1 ---
-				slot2 = self
+				--- BLOCK #3 33-35, warpins: 1 ---
+				slot3 = self
+				slot2 = slot3.lockBoneName
+				--- END OF BLOCK #3 ---
+
+				UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+				--- BLOCK #4 36-37, warpins: 1 ---
+				slot3 = self
+				slot2 = slot3.nearestBoneName
+				--- END OF BLOCK #4 ---
+
+				FLOW; TARGET BLOCK #5
+
+
+				--- BLOCK #5 38-43, warpins: 2 ---
+				slot3 = string
+				slot3 = slot3.isNilOrEmpty
+				slot5 = slot2
+				slot3 = slot3(slot5)
+				--- END OF BLOCK #5 ---
+
+				slot3 = if slot3 then
+				JUMP TO BLOCK #6
+				else
+				JUMP TO BLOCK #7
+				end
+
+
+				--- BLOCK #6 44-50, warpins: 1 ---
 				slot3 = slot0.eModel
 				slot3 = slot3.modelView
 				slot5 = slot3
 				slot3 = slot3.GetNearestBoneName
 				slot6 = slot1
 				slot3 = slot3(slot5, slot6)
-				slot2.nearestBoneName = slot3
-				--- END OF BLOCK #1 ---
+				slot2 = slot3
+				--- END OF BLOCK #6 ---
 
-				FLOW; TARGET BLOCK #2
+				FLOW; TARGET BLOCK #7
 
 
-				--- BLOCK #2 31-42, warpins: 2 ---
-				slot2 = self
-				slot2.curAttachInstanceId = slot1
-				slot2 = self
-				slot2 = slot2.model
-				slot4 = slot2
-				slot2 = slot2.recordOperationStep
+				--- BLOCK #7 51-56, warpins: 2 ---
+				slot3 = string
+				slot3 = slot3.isNilOrEmpty
+				slot5 = slot2
+				slot3 = slot3(slot5)
+				--- END OF BLOCK #7 ---
 
-				slot2(slot4)
+				slot3 = if slot3 then
+				JUMP TO BLOCK #8
+				else
+				JUMP TO BLOCK #9
+				end
 
-				slot2 = self
-				slot4 = slot2
-				slot2 = slot2.refreshAdjustButtonState
 
-				slot2(slot4)
+				--- BLOCK #8 57-61, warpins: 1 ---
+				slot3 = self
+				slot5 = slot3
+				slot3 = slot3.getSavedBoneName
+				slot3 = slot3(slot5)
+				slot2 = slot3
+				--- END OF BLOCK #8 ---
+
+				FLOW; TARGET BLOCK #9
+
+
+				--- BLOCK #9 62-67, warpins: 2 ---
+				slot3 = string
+				slot3 = slot3.isNilOrEmpty
+				slot5 = slot2
+				slot3 = slot3(slot5)
+
+				--- END OF BLOCK #9 ---
+
+				slot3 = if slot3 then
+				JUMP TO BLOCK #10
+				else
+				JUMP TO BLOCK #11
+				end
+
+
+				--- BLOCK #10 68-68, warpins: 1 ---
+				return
+
+				--- END OF BLOCK #10 ---
+
+				FLOW; TARGET BLOCK #11
+
+
+				--- BLOCK #11 69-100, warpins: 2 ---
+				slot3 = slot0.eModel
+				slot3 = slot3.modelView
+				slot5 = slot3
+				slot3 = slot3.RefreshAttachParent
+				slot6 = slot1
+				slot7 = slot2
+
+				slot3(slot5, slot6, slot7)
+
+				slot3 = self
+				slot3 = slot3.model
+				slot5 = slot3
+				slot3 = slot3.setAccessAttachBone
+				slot6 = slot2
+
+				slot3(slot5, slot6)
+
+				slot3 = self
+				slot3.nearestBoneName = slot2
+				slot3 = self
+				slot3 = slot3.model
+				slot5 = slot3
+				slot3 = slot3.adjustTransform
+
+				slot3(slot5)
+
+				slot3 = self
+				slot3.curAttachInstanceId = slot1
+				slot3 = self
+				slot3 = slot3.model
+				slot5 = slot3
+				slot3 = slot3.recordOperationStep
+
+				slot3(slot5)
+
+				slot3 = self
+				slot5 = slot3
+				slot3 = slot3.refreshAdjustButtonState
+
+				slot3(slot5)
 
 				return
-				--- END OF BLOCK #2 ---
+				--- END OF BLOCK #11 ---
 
 
 
 			end
 
-			slot13 = function()
-				--- BLOCK #0 1-20, warpins: 1 ---
+			slot8 = function()
+				--- BLOCK #0 1-7, warpins: 1 ---
+				slot0 = self
+				slot0 = slot0.model
+				slot2 = slot0
+				slot0 = slot0.isPetAccessorySimpleMode
+				slot0 = slot0(slot2)
+
+				--- END OF BLOCK #0 ---
+
+				slot0 = if slot0 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 8-8, warpins: 1 ---
+				return
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+				--- BLOCK #2 9-28, warpins: 2 ---
 				slot0 = self
 				slot0 = slot0.avatarScene
 				slot2 = slot0
@@ -1589,16 +1953,16 @@ slot32 = function(slot0)
 
 				slot2 = self
 				slot2 = slot2.isLock
-				--- END OF BLOCK #0 ---
+				--- END OF BLOCK #2 ---
 
 				slot2 = if not slot2 then
-				JUMP TO BLOCK #1
+				JUMP TO BLOCK #3
 				else
-				JUMP TO BLOCK #2
+				JUMP TO BLOCK #4
 				end
 
 
-				--- BLOCK #1 21-28, warpins: 1 ---
+				--- BLOCK #3 29-36, warpins: 1 ---
 				slot2 = self
 				slot3 = slot0.eModel
 				slot3 = slot3.modelView
@@ -1607,12 +1971,12 @@ slot32 = function(slot0)
 				slot6 = slot1
 				slot3 = slot3(slot5, slot6)
 				slot2.nearestBoneName = slot3
-				--- END OF BLOCK #1 ---
+				--- END OF BLOCK #3 ---
 
-				FLOW; TARGET BLOCK #2
+				FLOW; TARGET BLOCK #4
 
 
-				--- BLOCK #2 29-34, warpins: 2 ---
+				--- BLOCK #4 37-42, warpins: 2 ---
 				slot2 = self
 				slot2.curAttachInstanceId = slot1
 				slot2 = self
@@ -1620,20 +1984,31 @@ slot32 = function(slot0)
 				slot2.boneSliderChanged = slot3
 
 				return
-				--- END OF BLOCK #2 ---
+				--- END OF BLOCK #4 ---
 
 
 
 			end
 
-			slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+			slot9 = AvatarUtils
+			slot9 = slot9.renderSlider
+			slot11 = slot0
+			slot12 = slot2
+			slot13 = slot5
+			slot14 = slot6
+			slot15 = slot7
+			slot16 = slot8
+			slot17 = nil
+			slot18 = 0.01
+
+			slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18)
 
 			--- END OF BLOCK #1 ---
 
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 20-21, warpins: 2 ---
+			--- BLOCK #2 25-26, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -1674,6 +2049,893 @@ slot32 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.listAdjustModeUList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-23, warpins: 1 ---
+		slot5 = slot0
+		slot3 = slot0.GetComponent
+		slot6 = "ObjectReference"
+		slot3 = slot3(slot5, slot6)
+		slot6 = slot3
+		slot4 = slot3.GetRefValue
+		slot7 = "txtNameUBaseText"
+		slot4 = slot4(slot6, slot7)
+		slot5 = ClientTextUtils
+		slot5 = slot5.setText
+		slot7 = slot4
+		slot8 = pg
+		slot8 = slot8.getGameString
+		slot10 = slot2.text
+		MULTRES = slot8(slot10)
+
+		slot5(slot7, MULTRES)
+
+		slot5 = slot2.mode
+		slot6 = self
+		slot6 = slot6.model
+		slot6 = slot6.PET_ACCESSORY_ADJUST_MODE
+		slot6 = slot6.SIMPLE
+		--- END OF BLOCK #0 ---
+
+		if slot5 == slot6 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 24-29, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.model
+		slot7 = slot5
+		slot5 = slot5.hasPetAccessorySimpleMode
+		slot5 = slot5(slot7)
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #2 30-31, warpins: 0 ---
+		slot5 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 32-32, warpins: 1 ---
+		slot5 = true
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 33-34, warpins: 3 ---
+		slot0.visualInteractable = slot5
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.listAdjustModeUList
+
+	slot2 = function(slot0, slot1)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot2 = slot1.mode
+		slot3 = self
+		slot3 = slot3.model
+		slot3 = slot3.PET_ACCESSORY_ADJUST_MODE
+		slot3 = slot3.SIMPLE
+		--- END OF BLOCK #0 ---
+
+		if slot2 == slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 8-14, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.model
+		slot4 = slot2
+		slot2 = slot2.hasPetAccessorySimpleMode
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #1 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 15-19, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshAdjustModeView
+
+		slot2(slot4)
+
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 20-27, warpins: 3 ---
+		slot2 = self
+		slot2 = slot2.model
+		slot4 = slot2
+		slot2 = slot2.setPetAccessoryAdjustMode
+		slot5 = slot1.mode
+		slot2 = slot2(slot4, slot5)
+		--- END OF BLOCK #3 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 28-45, warpins: 1 ---
+		slot2 = self
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.getSavedBoneName
+		slot3 = slot3(slot5)
+		slot2.nearestBoneName = slot3
+		slot2 = self
+		slot3 = nil
+		slot2.boneSliderChanged = slot3
+		slot2 = self
+		slot2 = slot2.operationUList
+		slot4 = slot2
+		slot2 = slot2.SetList
+		slot5 = self
+		slot5 = slot5.model
+		slot5 = slot5.Operation
+		slot5 = slot5.operations
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 46-54, warpins: 2 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshAdjustModeView
+
+		slot2(slot4)
+
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshAdjustButtonState
+
+		slot2(slot4)
+
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.selectorPointUSelector
+
+	slot2 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.refreshingAdjustUI
+
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-8, warpins: 2 ---
+		slot1 = slot0.selectedItem
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 9-18, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.model
+		slot4 = slot2
+		slot2 = slot2.selectPetAccessoryPoint
+		slot5 = slot1.pointIndex
+		slot6 = nil
+		slot7 = true
+		slot2 = slot2(slot4, slot5, slot6, slot7)
+		--- END OF BLOCK #3 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 19-38, warpins: 1 ---
+		slot2 = self
+		slot3 = slot1.boneName
+		slot2.nearestBoneName = slot3
+		slot2 = self
+		slot2 = slot2.operationUList
+		slot4 = slot2
+		slot2 = slot2.SetList
+		slot5 = self
+		slot5 = slot5.model
+		slot5 = slot5.Operation
+		slot5 = slot5.operations
+
+		slot2(slot4, slot5)
+
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshAdjustButtonState
+
+		slot2(slot4)
+
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.showPetAccessoryHighlight
+
+		slot2(slot4)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 39-43, warpins: 3 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshPetAccessoryPointSelector
+
+		slot2(slot4)
+
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot1.luaSelectedChanged = slot2
+	slot1 = slot0.listAdjustOptionUList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-26, warpins: 1 ---
+		slot5 = slot0
+		slot3 = slot0.GetComponent
+		slot6 = "ObjectReference"
+		slot3 = slot3(slot5, slot6)
+		slot6 = slot3
+		slot4 = slot3.GetRefValue
+		slot7 = "textUBaseText"
+		slot4 = slot4(slot6, slot7)
+		slot5 = ClientTextUtils
+		slot5 = slot5.setText
+		slot7 = slot4
+		slot8 = pg
+		slot8 = slot8.getGameString
+		slot10 = slot2.text
+		MULTRES = slot8(slot10)
+
+		slot5(slot7, MULTRES)
+
+		slot7 = slot0
+		slot5 = slot0.TryChangePage
+		slot8 = "Icon"
+		slot9 = slot2.icon
+
+		slot5(slot7, slot8, slot9)
+
+		slot5 = slot2.optionType
+		slot6 = ADJUST_OPTION_TYPE
+		slot6 = slot6.LOCK_POINT
+		--- END OF BLOCK #0 ---
+
+		if slot5 == slot6 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 27-30, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.isLock
+		--- END OF BLOCK #1 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #2 31-35, warpins: 2 ---
+		slot5 = slot2.optionType
+		slot6 = ADJUST_OPTION_TYPE
+		slot6 = slot6.ALL_POINTS
+		--- END OF BLOCK #2 ---
+
+		if slot5 == slot6 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 36-39, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.showAllAttachPoints
+		--- END OF BLOCK #3 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #4 40-44, warpins: 2 ---
+		slot5 = slot2.optionType
+		slot6 = ADJUST_OPTION_TYPE
+		slot6 = slot6.SNAP_POINT
+		--- END OF BLOCK #4 ---
+
+		if slot5 ~= slot6 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 45-46, warpins: 1 ---
+		slot5 = false
+		--- END OF BLOCK #5 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #6 47-47, warpins: 1 ---
+		slot5 = true
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 48-52, warpins: 4 ---
+		slot8 = slot0
+		slot6 = slot0.TryChangePage
+		slot9 = "State"
+		--- END OF BLOCK #7 ---
+
+		slot5 = if slot5 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 53-54, warpins: 1 ---
+		slot10 = 0
+		--- END OF BLOCK #8 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+		--- BLOCK #9 55-55, warpins: 1 ---
+		slot10 = 1
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 56-57, warpins: 2 ---
+		slot6(slot8, slot9, slot10)
+
+		return
+		--- END OF BLOCK #10 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.listAdjustOptionUList
+
+	slot2 = function(slot0, slot1)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot2 = slot1.optionType
+		slot3 = ADJUST_OPTION_TYPE
+		slot3 = slot3.LOCK_POINT
+		--- END OF BLOCK #0 ---
+
+		if slot2 == slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-15, warpins: 1 ---
+		slot2 = self
+		slot3 = self
+		slot3 = slot3.isLock
+		slot3 = not slot3
+		slot2.isLock = slot3
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshLockBtnStates
+
+		slot2(slot4)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+		--- BLOCK #2 16-20, warpins: 1 ---
+		slot2 = slot1.optionType
+		slot3 = ADJUST_OPTION_TYPE
+		slot3 = slot3.ALL_POINTS
+		--- END OF BLOCK #2 ---
+
+		if slot2 == slot3 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 21-33, warpins: 1 ---
+		slot2 = self
+		slot3 = self
+		slot3 = slot3.showAllAttachPoints
+		slot3 = not slot3
+		slot2.showAllAttachPoints = slot3
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshAdjustOptionList
+
+		slot2(slot4)
+
+		slot2 = self
+		slot2 = slot2.showAllAttachPoints
+		--- END OF BLOCK #3 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #19
+		end
+
+
+		--- BLOCK #4 34-38, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.clearAdvancedAttachPointCaches
+
+		slot2(slot4)
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+		--- BLOCK #5 39-43, warpins: 1 ---
+		slot2 = slot1.optionType
+		slot3 = ADJUST_OPTION_TYPE
+		slot3 = slot3.SNAP_POINT
+		--- END OF BLOCK #5 ---
+
+		if slot2 == slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #19
+		end
+
+
+		--- BLOCK #6 44-50, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.avatarScene
+		slot4 = slot2
+		slot2 = slot2.getCurEntity
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #6 ---
+
+		slot3 = if slot2 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #7 51-53, warpins: 1 ---
+		slot3 = slot2.eModel
+		--- END OF BLOCK #7 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 54-55, warpins: 1 ---
+		slot3 = slot2.eModel
+		slot3 = slot3.modelView
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 56-62, warpins: 3 ---
+		slot4 = self
+		slot4 = slot4.model
+		slot6 = slot4
+		slot4 = slot4.getSelectAccessInstanceId
+		slot4 = slot4(slot6)
+
+		--- END OF BLOCK #9 ---
+
+		if slot3 ~= nil then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 63-64, warpins: 1 ---
+		--- END OF BLOCK #10 ---
+
+		if slot4 == nil then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 65-65, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 66-69, warpins: 2 ---
+		slot5 = self
+		slot5 = slot5.isLock
+		--- END OF BLOCK #12 ---
+
+		slot5 = if slot5 then
+		JUMP TO BLOCK #13
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #13 70-73, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.lockBoneName
+		--- END OF BLOCK #13 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #14
+		else
+		JUMP TO BLOCK #15
+		end
+
+
+		--- BLOCK #14 74-74, warpins: 2 ---
+		slot5 = nil
+		--- END OF BLOCK #14 ---
+
+		FLOW; TARGET BLOCK #15
+
+
+		--- BLOCK #15 75-80, warpins: 2 ---
+		slot6 = string
+		slot6 = slot6.isNilOrEmpty
+		slot8 = slot5
+		slot6 = slot6(slot8)
+		--- END OF BLOCK #15 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #16
+		else
+		JUMP TO BLOCK #17
+		end
+
+
+		--- BLOCK #16 81-85, warpins: 1 ---
+		slot8 = slot3
+		slot6 = slot3.GetNearestBoneName
+		slot9 = slot4
+		slot6 = slot6(slot8, slot9)
+		slot5 = slot6
+		--- END OF BLOCK #16 ---
+
+		FLOW; TARGET BLOCK #17
+
+
+		--- BLOCK #17 86-93, warpins: 2 ---
+		slot6 = self
+		slot6 = slot6.model
+		slot8 = slot6
+		slot6 = slot6.snapPetAccessoryToAttachPoint
+		slot9 = slot5
+		slot6 = slot6(slot8, slot9)
+		--- END OF BLOCK #17 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #18
+		else
+		JUMP TO BLOCK #19
+		end
+
+
+		--- BLOCK #18 94-111, warpins: 1 ---
+		slot6 = self
+		slot6.nearestBoneName = slot5
+		slot6 = self
+		slot7 = true
+		slot6.boneSliderChanged = slot7
+		slot6 = self
+		slot6 = slot6.operationUList
+		slot8 = slot6
+		slot6 = slot6.SetList
+		slot9 = self
+		slot9 = slot9.model
+		slot9 = slot9.Operation
+		slot9 = slot9.operations
+
+		slot6(slot8, slot9)
+
+		slot6 = self
+		slot8 = slot6
+		slot6 = slot6.refreshAdjustButtonState
+
+		slot6(slot8)
+
+		--- END OF BLOCK #18 ---
+
+		FLOW; TARGET BLOCK #19
+
+
+		--- BLOCK #19 112-112, warpins: 6 ---
+		return
+		--- END OF BLOCK #19 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.btnResetUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.isPetAccessorySimpleMode
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 8-14, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.resetSelectedPetAccessoryPoint
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #2 15-16, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+		--- BLOCK #3 17-23, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.resetOperation
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #3 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 24-24, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 25-39, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.setPetAccessoryAdjustMode
+		slot3 = self
+		slot3 = slot3.model
+		slot3 = slot3.PET_ACCESSORY_ADJUST_MODE
+		slot3 = slot3.ADVANCED
+		slot4 = false
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.recordOperationStep
+
+		slot0(slot2)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 40-66, warpins: 3 ---
+		slot0 = self
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.getSavedBoneName
+		slot1 = slot1(slot3)
+		slot0.nearestBoneName = slot1
+		slot0 = self
+		slot1 = nil
+		slot0.boneSliderChanged = slot1
+		slot0 = self
+		slot0 = slot0.operationUList
+		slot2 = slot0
+		slot0 = slot0.SetList
+		slot3 = self
+		slot3 = slot3.model
+		slot3 = slot3.Operation
+		slot3 = slot3.operations
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshAdjustModeView
+
+		slot0(slot2)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshAdjustButtonState
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.btnInfoAdjustUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = PetConfigData
+		slot0 = slot0.PET_ACCESSORY_ADJUST_HELP_ID
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-15, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot3 = slot1
+		slot1 = slot1.open
+		slot4 = UIConst
+		slot4 = slot4.UI_ID_HELP
+		slot5 = {}
+		slot5.helpId = slot0
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 16-23, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot3 = slot1
+		slot1 = slot1.open
+		slot4 = UIConst
+		slot4 = slot4.UI_ID_HELP
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 24-24, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
 	slot1 = slot0.btnTryInfoUButton
 
 	slot2 = function(slot0, slot1)
@@ -1707,7 +2969,26 @@ slot32 = function(slot0)
 	slot1 = slot0.designUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-18, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.ctrl
+		slot0 = slot0.curComponentName
+		--- END OF BLOCK #0 ---
+
+		if slot0 == "player" then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 7-24, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.showAjust
@@ -1747,7 +3028,14 @@ slot32 = function(slot0)
 		slot0(slot2, slot3, slot4, slot5, slot6)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 25-25, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
@@ -1798,10 +3086,63 @@ slot32 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.btnBackAlterUButton
+	slot2 = slot0.cancelUButton
+	slot2 = slot2.luaClick
+	slot1.luaClick = slot2
 	slot1 = slot0.btnAdjustUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-18, warpins: 1 ---
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshAdjustButtonVisible
+		slot3 = self
+		slot3 = slot3.model
+		slot5 = slot3
+		slot3 = slot3.getSelectAccessData
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #0 ---
+
+		if slot3 == nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 11-12, warpins: 1 ---
+		slot3 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 13-13, warpins: 1 ---
+		slot3 = true
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 14-16, warpins: 2 ---
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #3 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 17-17, warpins: 1 ---
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+		--- BLOCK #5 18-35, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.showAjust
@@ -1841,7 +3182,14 @@ slot32 = function(slot0)
 		slot0(slot2, slot3, slot4, slot5, slot6)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 36-36, warpins: 2 ---
+		return
+		--- END OF BLOCK #6 ---
 
 
 
@@ -1884,7 +3232,13 @@ slot32 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #2 19-35, warpins: 1 ---
+		--- BLOCK #2 19-44, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.cancelAdjustInit
+
+		slot1(slot3)
+
 		slot1 = self
 		slot1 = slot1.model
 		slot3 = slot1
@@ -1931,6 +3285,13 @@ slot32 = function(slot0)
 		slot1(slot3, slot4)
 
 		slot1 = self
+		slot1 = slot1.model
+		slot3 = slot1
+		slot1 = slot1.commitOperationSnapshot
+
+		slot1(slot3)
+
+		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.topbarUWidget
 		slot3 = slot1
@@ -1950,19 +3311,20 @@ slot32 = function(slot0)
 		end
 
 
-		--- BLOCK #3 36-40, warpins: 1 ---
+		--- BLOCK #3 45-50, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.hideAjust
+		slot4 = false
 
-		slot1(slot3)
+		slot1(slot3, slot4)
 
 		--- END OF BLOCK #3 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #4 41-47, warpins: 1 ---
+		--- BLOCK #4 51-62, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.rootUComponent
 		slot3 = slot1
@@ -1972,12 +3334,19 @@ slot32 = function(slot0)
 
 		slot1(slot3, slot4, slot5)
 
+		slot1 = self
+		slot1 = slot1.model
+		slot3 = slot1
+		slot1 = slot1.clearOperationCache
+
+		slot1(slot3)
+
 		--- END OF BLOCK #4 ---
 
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 48-73, warpins: 2 ---
+		--- BLOCK #5 63-94, warpins: 2 ---
 		slot1 = self
 		slot1 = slot1.rootUComponent
 		slot3 = slot1
@@ -2020,13 +3389,21 @@ slot32 = function(slot0)
 
 		slot1(slot3, slot4, slot5, slot6, slot7)
 
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.passToRightInfoComponent
+		slot4 = self
+		slot4 = slot4.rootUComponent
+
+		slot1(slot3, slot4)
+
 		return
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 74-74, warpins: 2 ---
+		--- BLOCK #6 95-95, warpins: 2 ---
 		return
 		--- END OF BLOCK #6 ---
 
@@ -2399,52 +3776,12 @@ slot32 = function(slot0)
 	slot1 = slot0.outfitUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-15, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.ui
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.open
-		slot3 = UIConst
-		slot3 = slot3.UI_ID_PET_ACCESSORY_PRESET
-		slot4 = {}
-		slot5 = self
-		slot5 = slot5.curPetId
-		slot4.petId = slot5
+		slot0 = slot0.openPetAccessoryPreset
 
-		slot5 = function(slot0)
-			--- BLOCK #0 1-6, warpins: 1 ---
-			slot1 = PetJewelryOssCache
-			slot1 = slot1.ensureLoaded
-
-			slot3 = function()
-				--- BLOCK #0 1-6, warpins: 1 ---
-				slot0 = self
-				slot2 = slot0
-				slot0 = slot0.showPetModel
-				slot3 = petId
-
-				slot0(slot2, slot3)
-
-				return
-				--- END OF BLOCK #0 ---
-
-
-
-			end
-
-			slot1(slot3)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot4.selectCallback = slot5
-
-		slot0(slot2, slot3, slot4)
+		slot0(slot2)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -2583,7 +3920,7 @@ slot32 = function(slot0)
 		end
 
 
-		--- BLOCK #1 8-20, warpins: 1 ---
+		--- BLOCK #1 8-24, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.operationUList
 		slot2 = slot0
@@ -2597,6 +3934,12 @@ slot32 = function(slot0)
 
 		slot0 = self
 		slot2 = slot0
+		slot0 = slot0.refreshAdjustModeView
+
+		slot0(slot2)
+
+		slot0 = self
+		slot2 = slot0
 		slot0 = slot0.refreshAdjustButtonState
 
 		slot0(slot2)
@@ -2606,7 +3949,7 @@ slot32 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 21-21, warpins: 2 ---
+		--- BLOCK #2 25-25, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -2633,7 +3976,7 @@ slot32 = function(slot0)
 		end
 
 
-		--- BLOCK #1 8-20, warpins: 1 ---
+		--- BLOCK #1 8-24, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.operationUList
 		slot2 = slot0
@@ -2647,6 +3990,12 @@ slot32 = function(slot0)
 
 		slot0 = self
 		slot2 = slot0
+		slot0 = slot0.refreshAdjustModeView
+
+		slot0(slot2)
+
+		slot0 = self
+		slot2 = slot0
 		slot0 = slot0.refreshAdjustButtonState
 
 		slot0(slot2)
@@ -2656,7 +4005,7 @@ slot32 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 21-21, warpins: 2 ---
+		--- BLOCK #2 25-25, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -2673,9 +4022,301 @@ slot32 = function(slot0)
 
 end
 
-slot31.addListener = slot32
+slot36.addListener = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.inVitality
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.avatarScene
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.restoreVitalityPetSceneState
+
+	slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-26, warpins: 3 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_PET_ACCESSORY_PRESET
+	slot5 = {}
+	slot6 = slot0.curPetId
+	slot5.petId = slot6
+
+	slot6 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = PetJewelryOssCache
+		slot1 = slot1.ensureLoaded
+
+		slot3 = function()
+			--- BLOCK #0 1-6, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.showPetModel
+			slot3 = petId
+
+			slot0(slot2, slot3)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5.selectCallback = slot6
+	slot6 = nil
+
+	slot7 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onPetAccessoryPresetClosed
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot36.openPetAccessoryPreset = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.inVitality
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.avatarScene
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.restoreVitalityPetSceneState
+
+	slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-10, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot36.onPetAccessoryPresetClosed = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.avatarScene
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot1 = slot0.avatarScene
+	slot1 = slot1.camera
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-12, warpins: 1 ---
+	slot1 = slot0.avatarScene
+	slot1 = slot1.camera
+	slot2 = true
+	slot1.enabled = slot2
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-16, warpins: 2 ---
+	slot1 = slot0.avatarScene
+	slot1 = slot1.CAMERA
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-23, warpins: 1 ---
+	slot1 = slot0.avatarScene
+	slot3 = slot1
+	slot1 = slot1.enableCameraMode
+	slot4 = slot0.avatarScene
+	slot4 = slot4.CAMERA
+	slot4 = slot4.PET
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-29, warpins: 2 ---
+	slot1 = EnergyMatchThemeData
+	slot2 = slot0.ctrl
+	slot2 = slot2.vitalityPhase
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 30-36, warpins: 1 ---
+	slot1 = EnergyMatchThemeData
+	slot2 = slot0.ctrl
+	slot2 = slot2.vitalityPhase
+	slot1 = slot1[slot2]
+	slot2 = slot0.ctrl
+	slot2 = slot2.vitalityThemeId
+	slot1 = slot1[slot2]
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 37-43, warpins: 2 ---
+	slot2 = slot0.avatarScene
+	slot4 = slot2
+	slot2 = slot2.setBackground
+	slot5 = AddressDataConst
+	slot5 = slot5.UI_VITALITY_CONTEST_SCENE
+	--- END OF BLOCK #8 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 44-46, warpins: 1 ---
+	slot6 = slot1.bgNo
+	--- END OF BLOCK #9 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 47-47, warpins: 2 ---
+	slot6 = 1
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 48-49, warpins: 2 ---
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot36.restoreVitalityPetSceneState = slot43
+
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -3035,9 +4676,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.onAutoMatchClick = slot32
+slot36.onAutoMatchClick = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getPetEntityAndModelView
@@ -3071,14 +4712,8 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-24, warpins: 2 ---
+	--- BLOCK #3 10-20, warpins: 2 ---
 	slot4 = slot3.modelInfo
-	slot7 = slot0
-	slot5 = slot0.cancelPetAccessFixAttachTemp
-	slot8 = slot2
-
-	slot5(slot7, slot8)
-
 	slot5 = slot0.model
 	slot7 = slot5
 	slot5 = slot5.clearTryAccessData
@@ -3095,7 +4730,7 @@ slot32 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #4 25-39, warpins: 1 ---
+	--- BLOCK #4 21-35, warpins: 1 ---
 	slot10 = slot9.slot
 	slot11 = slot9.data
 	slot0.selectTabIdx = slot10
@@ -3120,7 +4755,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 40-46, warpins: 1 ---
+	--- BLOCK #5 36-42, warpins: 1 ---
 	slot13 = slot0.model
 	slot15 = slot13
 	slot13 = slot13.setPreviewData
@@ -3135,21 +4770,21 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 47-48, warpins: 1 ---
+	--- BLOCK #6 43-44, warpins: 1 ---
 	slot17 = false
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 49-49, warpins: 1 ---
+	--- BLOCK #7 45-45, warpins: 1 ---
 	slot17 = true
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 50-54, warpins: 2 ---
+	--- BLOCK #8 46-50, warpins: 2 ---
 	slot18 = slot11
 
 	slot13(slot15, slot16, slot17, slot18)
@@ -3164,7 +4799,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 55-65, warpins: 1 ---
+	--- BLOCK #9 51-61, warpins: 1 ---
 	slot13 = slot0.model
 	slot15 = slot13
 	slot13 = slot13.setSelectAccessData
@@ -3184,7 +4819,7 @@ slot32 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 66-72, warpins: 1 ---
+	--- BLOCK #10 62-68, warpins: 1 ---
 	slot13 = slot0.model
 	slot15 = slot13
 	slot13 = slot13.dropTryAccessData
@@ -3199,7 +4834,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 73-91, warpins: 3 ---
+	--- BLOCK #11 69-87, warpins: 3 ---
 	slot13 = slot0.model
 	slot15 = slot13
 	slot13 = slot13.parseDefaultAccessInfo
@@ -3228,7 +4863,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 92-93, warpins: 2 ---
+	--- BLOCK #12 88-89, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
@@ -3236,7 +4871,7 @@ slot32 = function(slot0, slot1)
 	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #13 94-118, warpins: 1 ---
+	--- BLOCK #13 90-114, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.removeStalePetAccessAttaches
 	slot8 = slot3
@@ -3282,9 +4917,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.applyAutoMatchSelections = slot32
+slot36.applyAutoMatchSelections = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot1
@@ -3371,9 +5006,9 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.getAutoMatchFirstAccessory = slot32
+slot36.getAutoMatchFirstAccessory = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3447,26 +5082,162 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.getAutoMatchAccessoryKey = slot32
+slot36.getAutoMatchAccessoryKey = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
-	slot1 = slot1.initOperationData
-	slot4 = slot0.modelSliderInfo
+	slot1 = slot1.getPetAccessoryPointList
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
 
-	slot1(slot3, slot4)
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
-	slot1 = slot0.view
-	slot1 = slot1.topbarUWidget
-	slot3 = slot1
-	slot1 = slot1.SetActiveFastest
-	slot4 = false
 
-	slot1(slot3, slot4)
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot1 = EMPTY_TABLE
+	--- END OF BLOCK #1 ---
 
-	slot1 = slot0.inVitality
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot2 = {}
+	slot3 = ipairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot8 = #slot2
+	slot8 = slot8 + 1
+	slot9 = {}
+	slot10 = slot7.isDefault
+	--- END OF BLOCK #3 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = slot7.name
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #4 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-28, warpins: 2 ---
+	slot10 = pg
+	slot10 = slot10.getLocalizationText
+	slot12 = slot7.name
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-34, warpins: 2 ---
+	slot9.label = slot10
+	slot10 = slot7.index
+	slot9.pointIndex = slot10
+	slot10 = slot7.boneName
+	slot9.boneName = slot10
+	slot2[slot8] = slot9
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 35-36, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 37-50, warpins: 1 ---
+	slot3 = slot0.refreshingAdjustUI
+	slot4 = true
+	slot0.refreshingAdjustUI = slot4
+	slot4 = slot0.selectorPointUSelector
+	slot6 = slot4
+	slot4 = slot4.SetOptions
+	slot7 = slot2
+
+	slot4(slot6, slot7)
+
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getSelectedPetAccessoryPointIndex
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 51-53, warpins: 1 ---
+	slot5 = slot2[slot4]
+	--- END OF BLOCK #9 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 54-59, warpins: 1 ---
+	slot5 = slot0.selectorPointUSelector
+	slot7 = slot5
+	slot5 = slot5.ForceSelect
+	slot8 = slot4 - 1
+	slot9 = false
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 60-61, warpins: 3 ---
+	slot0.refreshingAdjustUI = slot3
+
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot36.refreshPetAccessoryPointSelector = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.petAccessoryHighlightTimer
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -3476,77 +5247,22 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #1 15-26, warpins: 1 ---
-	slot1 = slot0.accessoryUComponent
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.petAccessoryHighlightTimer
 
-	slot1(slot3, slot4)
+	slot1(slot3)
 
-	slot1 = slot0.btnCompleteUButton
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
-
-	slot1(slot3, slot4)
+	slot1 = nil
+	slot0.petAccessoryHighlightTimer = slot1
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 27-61, warpins: 2 ---
-	slot1 = slot0.rootUComponent
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "State"
-	slot5 = 1
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = slot0.rootUComponent
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "Edit"
-	slot5 = 1
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = slot0.operationUList
-	slot3 = slot1
-	slot1 = slot1.SetList
-	slot4 = slot0.model
-	slot4 = slot4.Operation
-	slot4 = slot4.operations
-
-	slot1(slot3, slot4)
-
-	slot3 = slot0
-	slot1 = slot0.refreshIdleButton
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.showLit
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = false
-	slot0.isLock = slot1
-	slot3 = slot0
-	slot1 = slot0.refreshLockBtnStates
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.refreshAdjustButtonState
-
-	slot1(slot3)
-
+	--- BLOCK #2 10-10, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -3554,111 +5270,1608 @@ slot32 = function(slot0)
 
 end
 
-slot31.showAjust = slot32
+slot36.removePetAccessoryHighlightTimer = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.topbarUWidget
-	slot3 = slot1
-	slot1 = slot1.SetActiveFastest
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.inVitality
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.petAccessoryHighlightShaderView
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.petAccessoryHighlightMaterialActive
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot1 = slot0.petAccessoryHighlightMaterialRequested
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 2 ---
+	slot1 = slot0.petAccessoryHighlightShaderView
+	slot3 = slot1
+	slot1 = slot1.ResetMaterial
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-22, warpins: 3 ---
+	slot1 = nil
+	slot0.petAccessoryHighlightShaderView = slot1
+	slot1 = nil
+	slot0.petAccessoryHighlightResId = slot1
+	slot1 = false
+	slot0.petAccessoryHighlightMaterialActive = slot1
+	slot1 = false
+	slot0.petAccessoryHighlightMaterialRequested = slot1
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot36.clearPetAccessoryHighlightMaterial = slot43
+
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.removePetAccessoryHighlightTimer
+
+	slot2(slot4)
+
+	slot2 = nil
+	slot3 = TimerManager
+	slot3 = slot3.addTimer
+	slot5 = PET_ACCESSORY_HIGHLIGHT_DURATION
+
+	slot6 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.petAccessoryHighlightTimer
+		slot1 = timerId
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-14, warpins: 2 ---
+		slot0 = self
+		slot1 = nil
+		slot0.petAccessoryHighlightTimer = slot1
+		slot0 = requestSeq
+		slot1 = self
+		slot1 = slot1.petAccessoryHighlightRequestSeq
+
+		--- END OF BLOCK #2 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 15-15, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 16-23, warpins: 2 ---
+		slot0 = self
+		slot1 = false
+		slot0.petAccessoryHighlightWanted = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.clearPetAccessoryHighlightMaterial
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	slot0.petAccessoryHighlightTimer = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36.schedulePetAccessoryHighlightEnd = slot43
+
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.petAccessoryHighlightRequestSeq
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot0.petAccessoryHighlightWanted
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-12, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.isPetAccessorySimpleMode
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-13, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #4 14-19, warpins: 1 ---
+	slot2 = slot0.avatarScene
+	slot4 = slot2
+	slot2 = slot2.getCurEntity
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot3 = slot2.eModel
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot3 = slot2.eModel
+	slot3 = slot3.modelView
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-26, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 27-27, warpins: 1 ---
+	slot4 = slot3.shaderView
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 28-33, warpins: 2 ---
+	slot5 = slot0.model
+	slot7 = slot5
+	slot5 = slot5.getOperationData
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #9 ---
+
+	slot6 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 34-34, warpins: 1 ---
+	slot6 = slot5.resId
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 35-36, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 37-42, warpins: 1 ---
+	slot7 = string
+	slot7 = slot7.isNilOrEmpty
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #12 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 43-43, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #14 44-46, warpins: 1 ---
+	slot7 = slot0.petAccessoryHighlightMaterialActive
+	--- END OF BLOCK #14 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 47-49, warpins: 1 ---
+	slot7 = slot0.petAccessoryHighlightShaderView
+	--- END OF BLOCK #15 ---
+
+	if slot7 == slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 50-52, warpins: 1 ---
+	slot7 = slot0.petAccessoryHighlightResId
+	--- END OF BLOCK #16 ---
+
+	if slot7 == slot6 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 53-57, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.schedulePetAccessoryHighlightEnd
+	slot10 = slot1
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #18 58-60, warpins: 3 ---
+	slot7 = slot0.petAccessoryHighlightShaderView
+	--- END OF BLOCK #18 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #19 61-63, warpins: 1 ---
+	slot7 = slot0.petAccessoryHighlightShaderView
+	--- END OF BLOCK #19 ---
+
+	if slot7 ~= slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 64-66, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.clearPetAccessoryHighlightMaterial
+
+	slot7(slot9)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 67-82, warpins: 3 ---
+	slot0.petAccessoryHighlightShaderView = slot4
+	slot0.petAccessoryHighlightResId = slot6
+	slot7 = true
+	slot0.petAccessoryHighlightMaterialRequested = slot7
+	slot9 = slot4
+	slot7 = slot4.ChangeEffectMaterial
+	slot10 = {}
+	slot11 = AddressDataConst
+	slot11 = slot11.PET_ACCESSORY_HIGHLIGHT_MATERIAL
+	slot10[1] = slot11
+
+	slot11 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = requestSeq
+		slot1 = self
+		slot1 = slot1.petAccessoryHighlightRequestSeq
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 6-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.petAccessoryHighlightShaderView
+		slot1 = shaderView
+		--- END OF BLOCK #1 ---
+
+		if slot0 == slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 11-14, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.petAccessoryHighlightWanted
+		--- END OF BLOCK #2 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 15-18, warpins: 2 ---
+		slot0 = shaderView
+		slot2 = slot0
+		slot0 = slot0.ResetMaterial
+
+		slot0(slot2)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 19-19, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 20-23, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.petAccessoryHighlightWanted
+		--- END OF BLOCK #5 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 24-30, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.isPetAccessorySimpleMode
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #6 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #7 31-39, warpins: 2 ---
+		slot0 = shaderView
+		slot2 = slot0
+		slot0 = slot0.ResetMaterial
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.petAccessoryHighlightShaderView
+		slot1 = shaderView
+		--- END OF BLOCK #7 ---
+
+		if slot0 == slot1 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 40-51, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.petAccessoryHighlightShaderView = slot1
+		slot0 = self
+		slot1 = nil
+		slot0.petAccessoryHighlightResId = slot1
+		slot0 = self
+		slot1 = false
+		slot0.petAccessoryHighlightMaterialActive = slot1
+		slot0 = self
+		slot1 = false
+		slot0.petAccessoryHighlightMaterialRequested = slot1
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 52-52, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 53-64, warpins: 2 ---
+		slot0 = self
+		slot1 = false
+		slot0.petAccessoryHighlightMaterialRequested = slot1
+		slot0 = self
+		slot1 = true
+		slot0.petAccessoryHighlightMaterialActive = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.schedulePetAccessoryHighlightEnd
+		slot3 = requestSeq
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #10 ---
+
+
+
+	end
+
+	slot12 = nil
+	slot13 = slot6
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
+
+	return
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 83-83, warpins: 2 ---
+	return
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 84-84, warpins: 2 ---
+	return
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 85-85, warpins: 2 ---
+	return
+	--- END OF BLOCK #24 ---
+
+
+
+end
+
+slot36.applyPetAccessoryHighlight = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.isPetAccessorySimpleMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-34, warpins: 1 ---
-	slot1 = slot0.accessoryUComponent
-	slot1 = slot1.gameObject
+	--- BLOCK #1 7-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.removePetAccessoryHighlightTimer
+
+	slot1(slot3)
+
+	slot1 = slot0.petAccessoryHighlightRequestSeq
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-22, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0.petAccessoryHighlightRequestSeq = slot1
+	slot1 = true
+	slot0.petAccessoryHighlightWanted = slot1
+	slot1 = slot0.petAccessoryHighlightRequestSeq
+	slot2 = slot0.petAccessoryHighlightEffectLoaded
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-27, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.applyPetAccessoryHighlight
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #6 28-30, warpins: 1 ---
+	slot2 = slot0.petAccessoryHighlightEffectLoading
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-31, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #8 32-34, warpins: 1 ---
+	slot2 = slot0.petAccessoryHighlightEffectSeq
+	--- END OF BLOCK #8 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 35-35, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-65, warpins: 2 ---
+	slot2 = slot2 + 1
+	slot0.petAccessoryHighlightEffectSeq = slot2
+	slot2 = slot0.petAccessoryHighlightEffectSeq
+	slot3 = true
+	slot0.petAccessoryHighlightEffectLoading = slot3
+	slot3 = {
+		duration = -1
+	}
+	slot4 = EffectConst
+	slot4 = slot4.FollowType
+	slot4 = slot4.Global
+	slot3.followType = slot4
+	slot4 = EffectConst
+	slot4 = slot4.MountType
+	slot4 = slot4.Camera
+	slot3.mountType = slot4
+
+	slot4 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = effectSeq
+		slot2 = self
+		slot2 = slot2.petAccessoryHighlightEffectSeq
+
+		--- END OF BLOCK #0 ---
+
+		if slot1 ~= slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-8, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 9-9, warpins: 1 ---
+		slot1 = slot0.effectObj
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 10-11, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #5 12-16, warpins: 1 ---
+		slot2 = IsNil
+		slot4 = slot1
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #5 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #6 17-27, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.GetComponent
+		slot5 = typeof
+		slot7 = CS
+		slot7 = slot7.UnityEngine
+		slot7 = slot7.Rendering
+		slot7 = slot7.Volume
+		MULTRES = slot5(slot7)
+		slot2 = slot2(slot4, MULTRES)
+		--- END OF BLOCK #6 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #7 28-32, warpins: 1 ---
+		slot3 = IsNil
+		slot5 = slot2
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #7 ---
+
+		slot3 = if not slot3 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 33-34, warpins: 1 ---
+		slot3 = PET_ACCESSORY_HIGHLIGHT_VOLUME_PRIORITY
+		slot2.priority = slot3
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 35-44, warpins: 5 ---
+		slot2 = self
+		slot3 = false
+		slot2.petAccessoryHighlightEffectLoading = slot3
+		slot2 = self
+		slot3 = true
+		slot2.petAccessoryHighlightEffectLoaded = slot3
+		slot2 = self
+		slot2 = slot2.petAccessoryHighlightWanted
+		--- END OF BLOCK #9 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 45-50, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.applyPetAccessoryHighlight
+		slot5 = self
+		slot5 = slot5.petAccessoryHighlightRequestSeq
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 51-51, warpins: 2 ---
+		return
+		--- END OF BLOCK #11 ---
+
+
+
+	end
+
+	slot3.loadCallback = slot4
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.effect
+	slot6 = slot4
+	slot4 = slot4.playRawEffect
+	slot7 = nil
+	slot8 = AddressDataConst
+	slot8 = slot8.PET_ACCESSORY_HIGHLIGHT_EFFECT
+	slot9 = slot3
+	slot4 = slot4(slot6, slot7, slot8, slot9)
+	slot0.petAccessoryHighlightEffectId = slot4
+	slot4 = slot0.petAccessoryHighlightEffectId
+	--- END OF BLOCK #10 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 66-67, warpins: 1 ---
+	slot4 = false
+	slot0.petAccessoryHighlightEffectLoading = slot4
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 68-69, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 70-70, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 71-71, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 72-72, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot36.showPetAccessoryHighlight = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.petAccessoryHighlightRequestSeq
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0.petAccessoryHighlightRequestSeq = slot1
+	slot1 = slot0.petAccessoryHighlightEffectSeq
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-27, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0.petAccessoryHighlightEffectSeq = slot1
+	slot1 = false
+	slot0.petAccessoryHighlightWanted = slot1
+	slot1 = false
+	slot0.petAccessoryHighlightEffectLoading = slot1
+	slot1 = false
+	slot0.petAccessoryHighlightEffectLoaded = slot1
+	slot3 = slot0
+	slot1 = slot0.removePetAccessoryHighlightTimer
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.clearPetAccessoryHighlightMaterial
+
+	slot1(slot3)
+
+	slot1 = slot0.petAccessoryHighlightEffectId
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-37, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.effect
 	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.btnCompleteUButton
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.rootUComponent
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "State"
-	slot5 = 0
+	slot1 = slot1.stopEffect
+	slot4 = nil
+	slot5 = slot0.petAccessoryHighlightEffectId
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = slot0.btnFashionValueIcon2UButton
-	slot1 = slot1.gameObject
+	slot1 = nil
+	slot0.petAccessoryHighlightEffectId = slot1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-38, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot36.stopPetAccessoryHighlight = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.listAdjustOptionUList
 	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
+	slot1 = slot1.SetList
+	slot4 = ADJUST_OPTION_LIST
 
 	slot1(slot3, slot4)
 
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36.refreshAdjustOptionList = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.isPetAccessorySimpleMode
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.stopPetAccessoryHighlight
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-28, warpins: 2 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getPetAccessoryAdjustMode
+	slot2 = slot2(slot4)
+	slot3 = slot0.tabAdjustModeUWidget
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = slot0.model
+	slot8 = slot6
+	slot6 = slot6.hasPetAccessorySimpleMode
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot5 = slot0
+	slot3 = slot0.getSavedBoneName
+	slot3 = slot3(slot5)
+	slot0.nearestBoneName = slot3
+	slot3 = slot0.isLock
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 29-30, warpins: 1 ---
+	slot3 = slot0.nearestBoneName
+	slot0.lockBoneName = slot3
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 31-37, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.infoRightUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "EditState"
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 38-39, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 40-40, warpins: 1 ---
+	slot7 = 1
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 41-56, warpins: 2 ---
+	slot3(slot5, slot6, slot7)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.textSelectorTitleUBaseText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "APPEARANCE_PET_ACCESSORY_ATTACH_PART"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.textPointUBaseText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	--- END OF BLOCK #7 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 57-58, warpins: 1 ---
+	slot8 = "APPEARANCE_PET_ACCESSORY_POINT_LABEL"
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 59-59, warpins: 1 ---
+	slot8 = "APPEARANCE_PET_ACCESSORY_ADVANCED_POINT_TIP"
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 60-76, warpins: 2 ---
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.textAdjustInfoUBaseText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "APPEARANCE_PET_ACCESSORY_ADJUST_HELP"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.listAdjustModeUList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = ADJUST_MODE_LIST
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 77-87, warpins: 1 ---
+	slot3 = slot0.listAdjustModeUList
+	slot5 = slot3
+	slot3 = slot3.SelectItem
+	slot6 = slot2 - 1
+	slot7 = false
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.listAdjustModeUList
+	slot5 = slot3
+	slot3 = slot3.SetUListSwitchCurrentIndex
+	slot6 = slot2 - 1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 88-95, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshPetAccessoryPointSelector
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.refreshAdjustOptionList
+
+	slot3(slot5)
+
+	--- END OF BLOCK #12 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 96-99, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.clearAdvancedAttachPointCaches
+
+	slot3(slot5)
+
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 100-102, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.clearSimpleAttachPointCaches
+
+	slot3(slot5)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 103-103, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot36.refreshAdjustModeView = slot43
+
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 35-40, warpins: 1 ---
-	slot1 = slot0.rootUComponent
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "State"
-	slot5 = 2
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot8 = UIUtils
+	slot8 = slot8.ClearScreenPointCache
+	slot10 = slot7
 
-	slot1(slot3, slot4, slot5)
+	slot8(slot10)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 41-57, warpins: 2 ---
-	slot1 = slot0.rootUComponent
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "Edit"
-	slot5 = 0
+	--- BLOCK #3 12-13, warpins: 2 ---
+	--- END OF BLOCK #3 ---
 
-	slot1(slot3, slot4, slot5)
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #4
 
+
+	--- BLOCK #4 14-16, warpins: 2 ---
+	slot3 = nil
+	slot0[slot1] = slot3
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot36.clearScreenPointCacheList = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.showLit
-	slot4 = false
+	slot1 = slot0.clearScreenPointCacheList
+	slot4 = "simpleAttachPointCacheKeys"
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getSelectAccessData
-	slot1 = slot1(slot3)
-	slot2 = slot1.isPreview
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36.clearSimpleAttachPointCaches = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearScreenPointCacheList
+	slot4 = "advancedAttachPointCacheKeys"
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36.clearAdvancedAttachPointCaches = slot43
+
+slot43 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0[slot1]
+	--- END OF BLOCK #0 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot4 = {}
+	slot0[slot1] = slot4
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot5 = slot4[slot3]
+	--- END OF BLOCK #2 ---
+
+	if slot5 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-12, warpins: 1 ---
+	slot6 = slot2
+	slot7 = slot3
+	slot5 = slot6 .. slot7
+	slot4[slot3] = slot5
 
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot36.getAttachPointCacheKey = slot43
+
+slot43 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0[slot1]
+
+	--- END OF BLOCK #0 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot4 = #slot3
+	slot5 = slot2 + 1
+	slot6 = -1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-15, warpins: 2 ---
+	slot8 = UIUtils
+	slot8 = slot8.ClearScreenPointCache
+	slot10 = slot3[slot7]
+
+	slot8(slot10)
+
+	slot8 = nil
+	slot3[slot7] = slot8
+
+	--- END OF BLOCK #3 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #4
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot36.trimAttachPointCaches = slot43
+
+slot43 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot4 = UIUtils
+	slot4 = slot4.DrawScreenPointWithWorldPosition
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = slot0.view
+	slot8 = slot8.rootUComponent
+	slot8 = slot8.transform
+	slot9 = slot0.avatarScene
+	slot9 = slot9.camera
+
+	slot10 = function(slot0)
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.GetComponent
+		slot4 = "UComponent"
+		slot1 = slot1(slot3, slot4)
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "state"
+		slot5 = state
+
+		slot1(slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36.drawAttachPoint = slot43
+
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = slot0.advancedAttachBoneList
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-12, warpins: 1 ---
+	slot7 = Vector3
+	slot7 = slot7.SqrMagnitude
+	slot9 = slot6.worldPosition
+	slot9 = slot9 - slot1
+	slot7 = slot7(slot9)
+	slot8 = ATTACH_POINT_POSITION_EPSILON_SQR
+
+	--- END OF BLOCK #1 ---
+
+	if slot7 <= slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 1 ---
+	return slot6
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot36.findAdvancedAttachPoint = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = {}
+	slot0.advancedAttachBoneList = slot1
+	slot1, slot2 = nil
+	slot3 = slot0.avatarScene
+	slot5 = slot3
+	slot3 = slot3.getCurEntity
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot4 = slot3.eModel
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-14, warpins: 1 ---
+	slot4 = slot3.eModel
+	slot4 = slot4.modelView
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	if slot4 == nil then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 58-58, warpins: 1 ---
+	--- BLOCK #4 17-17, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #4 ---
@@ -3666,28 +6879,633 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 59-63, warpins: 2 ---
-	slot2 = slot0.model
-	slot4 = slot2
-	slot2 = slot2.discardOperationData
-
-	slot2(slot4)
-
-	return
+	--- BLOCK #5 18-25, warpins: 2 ---
+	slot7 = slot4
+	slot5 = slot4.GetAttachBoneNames
+	slot5 = slot5(slot7)
+	slot6 = 0
+	slot7 = slot5.Length
+	slot7 = slot7 - 1
+	slot8 = 1
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-34, warpins: 2 ---
+	slot10 = slot5[slot9]
+	slot13 = slot4
+	slot11 = slot4.TryGetAttachPointWorldPosition
+	slot14 = slot10
+	slot15 = Vector3
+	slot15 = slot15.zero
+	slot11, slot12 = slot11(slot13, slot14, slot15)
+	--- END OF BLOCK #6 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 35-40, warpins: 1 ---
+	slot15 = slot0
+	slot13 = slot0.findAdvancedAttachPoint
+	slot16 = slot12
+	slot13 = slot13(slot15, slot16)
+	--- END OF BLOCK #7 ---
+
+	if slot13 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 41-51, warpins: 1 ---
+	slot14 = {}
+	slot14.boneName = slot10
+	slot15 = {}
+	slot14.boneNames = slot15
+	slot14.worldPosition = slot12
+	slot13 = slot14
+	slot14 = slot0.advancedAttachBoneList
+	slot15 = slot0.advancedAttachBoneList
+	slot15 = #slot15
+	slot15 = slot15 + 1
+	slot14[slot15] = slot13
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 52-54, warpins: 2 ---
+	slot14 = slot13.boneNames
+	slot15 = true
+	slot14[slot10] = slot15
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 55-65, warpins: 2 ---
+	slot15 = slot4
+	slot13 = slot4.TryConvertAttachBoneLocalToRoot
+	slot16 = slot10
+	slot17 = Vector3
+	slot17 = slot17.zero
+	slot18 = Vector3
+	slot18 = slot18.zero
+	slot19 = 1
+	slot13, slot14 = slot13(slot15, slot16, slot17, slot18, slot19)
+	--- END OF BLOCK #10 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #11 66-67, warpins: 1 ---
+	--- END OF BLOCK #11 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 68-74, warpins: 1 ---
+	slot15 = math
+	slot15 = slot15.min
+	slot17 = slot1
+	slot18 = slot14.z
+	slot15 = slot15(slot17, slot18)
+	--- END OF BLOCK #12 ---
+
+	slot1 = if not slot15 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 75-75, warpins: 2 ---
+	slot1 = slot14.z
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 76-77, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 78-84, warpins: 1 ---
+	slot15 = math
+	slot15 = slot15.max
+	slot17 = slot2
+	slot18 = slot14.z
+	slot15 = slot15(slot17, slot18)
+	--- END OF BLOCK #15 ---
+
+	slot2 = if not slot15 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 85-85, warpins: 2 ---
+	slot2 = slot14.z
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 86-86, warpins: 3 ---
+	--- END OF BLOCK #17 ---
+
+	for slot9=slot6, slot7, slot8
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #18
+
+	--- BLOCK #18 87-89, warpins: 1 ---
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot6, slot7
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot31.hideAjust = slot32
+slot36.buildAdvancedAttachBoneList = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.adjustInitSeq
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0.adjustInitSeq = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot36.cancelAdjustInit = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-24, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.cancelAdjustInit
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.stopPetAccessoryHighlight
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.advancedAttachBoneList = slot1
+	slot1 = false
+	slot0.showAllAttachPoints = slot1
+	slot1 = slot0.btnAdsorptionSiteUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.topbarUWidget
+	slot3 = slot1
+	slot1 = slot1.SetActiveFastest
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.inVitality
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 25-42, warpins: 1 ---
+	slot1 = slot0.accessoryUComponent
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.btnCompleteUButton
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.rootUComponent
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "activity"
+	slot5 = 0
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 43-69, warpins: 2 ---
+	slot1 = slot0.rootUComponent
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "State"
+	slot5 = 1
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = slot0.rootUComponent
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "Edit"
+	slot5 = 1
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0.showLit
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.adjustInitSeq
+	slot2 = TimerManager
+	slot2 = slot2.addNextFrameCb
+
+	slot4 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = seq
+		slot1 = self
+		slot1 = slot1.adjustInitSeq
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-59, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshPetJewelrySliderDepthRange
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.initOperationData
+		slot3 = self
+		slot3 = slot3.modelSliderInfo
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.getSelectAccessInstanceId
+		slot0 = slot0(slot2)
+		slot1 = self
+		slot1.curAttachInstanceId = slot0
+		slot1 = self
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.getSavedBoneName
+		slot2 = slot2(slot4)
+		slot1.nearestBoneName = slot2
+		slot1 = self
+		slot1 = slot1.operationUList
+		slot3 = slot1
+		slot1 = slot1.SetList
+		slot4 = self
+		slot4 = slot4.model
+		slot4 = slot4.Operation
+		slot4 = slot4.operations
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshIdleButton
+
+		slot1(slot3)
+
+		slot1 = self
+		slot2 = false
+		slot1.isLock = slot2
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshLockBtnStates
+
+		slot1(slot3)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshAdjustModeView
+
+		slot1(slot3)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshAdjustButtonState
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.passToRightInfoComponent
+	slot5 = slot0.rootUComponent
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot36.showAjust = slot43
+
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.cancelAdjustInit
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.stopPetAccessoryHighlight
+
+	slot2(slot4)
+
+	slot2 = slot0.view
+	slot2 = slot2.topbarUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActiveFastest
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.inVitality
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 16-46, warpins: 1 ---
+	slot2 = slot0.accessoryUComponent
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.btnCompleteUButton
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "State"
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.btnFashionValueIcon2UButton
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "activity"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 47-52, warpins: 1 ---
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "State"
+	slot6 = 2
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 53-69, warpins: 2 ---
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Edit"
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.showLit
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getSelectAccessData
+	slot2 = slot2(slot4)
+	slot3 = slot2.isPreview
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 70-74, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.passToRightInfoComponent
+	slot6 = slot0.rootUComponent
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 75-76, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= false then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 77-81, warpins: 1 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.discardOperationData
+
+	slot3(slot5)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 82-85, warpins: 1 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.clearOperationCache
+
+	slot3(slot5)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 86-90, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.passToRightInfoComponent
+	slot6 = slot0.rootUComponent
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot36.hideAjust = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = slot0.sourceUList
 	slot2 = nil
 	slot1.luaRenderItem = slot2
 	slot1 = slot0.sourceUList
+	slot2 = nil
+	slot1.luaClick = slot2
+	slot1 = slot0.listAdjustModeUList
+	slot2 = nil
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.listAdjustModeUList
+	slot2 = nil
+	slot1.luaClick = slot2
+	slot1 = slot0.selectorPointUSelector
+	slot2 = nil
+	slot1.luaSelectedChanged = slot2
+	slot1 = slot0.listAdjustOptionUList
+	slot2 = nil
+	slot1.luaRenderItem = slot2
+	slot1 = slot0.listAdjustOptionUList
+	slot2 = nil
+	slot1.luaClick = slot2
+	slot1 = slot0.btnResetUButton
+	slot2 = nil
+	slot1.luaClick = slot2
+	slot1 = slot0.btnInfoAdjustUButton
 	slot2 = nil
 	slot1.luaClick = slot2
 
@@ -3698,10 +7516,37 @@ slot32 = function(slot0)
 
 end
 
-slot31.removeListener = slot32
+slot36.removeListener = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-21, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopPetAccessoryHighlight
+
+	slot1(slot3)
+
+	slot1 = UIUtils
+	slot1 = slot1.ClearScreenPointCache
+	slot3 = "petNearestBone"
+
+	slot1(slot3)
+
+	slot1 = UIUtils
+	slot1 = slot1.ClearScreenPointCache
+	slot3 = "petCurAttach"
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.clearSimpleAttachPointCaches
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.clearAdvancedAttachPointCaches
+
+	slot1(slot3)
+
 	slot1 = ipairs
 	slot3 = slot0.needDestroyDownloadSprite
 	slot1, slot2, slot3 = slot1(slot3)
@@ -3710,7 +7555,7 @@ slot32 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-11, warpins: 1 ---
+	--- BLOCK #1 22-28, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.global
 	slot6 = slot6.mobileCameraMgr
@@ -3725,7 +7570,7 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-13, warpins: 2 ---
+	--- BLOCK #2 29-30, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -3733,7 +7578,7 @@ slot32 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 14-18, warpins: 1 ---
+	--- BLOCK #3 31-35, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -3747,9 +7592,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.onDestroy = slot32
+slot36.onDestroy = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.backwardUButton
 	--- END OF BLOCK #0 ---
@@ -3805,9 +7650,106 @@ slot32 = function(slot0)
 
 end
 
-slot31.refreshAdjustButtonState = slot32
+slot36.refreshAdjustButtonState = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot0.curPetId
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getPetInfo
+	slot5 = slot0.curPetId
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-16, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 17-17, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-19, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-23, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 24-24, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-31, warpins: 3 ---
+	slot4 = slot0.btnAdjustUButton
+	slot4 = slot4.gameObject
+	slot6 = slot4
+	slot4 = slot4.SetActiveEx
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot36.refreshAdjustButtonVisible = slot43
+
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isLock
 	--- END OF BLOCK #0 ---
@@ -3885,8 +7827,13 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-36, warpins: 2 ---
+	--- BLOCK #6 35-39, warpins: 2 ---
 	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0.refreshAdjustOptionList
+
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #6 ---
@@ -3895,9 +7842,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.refreshLockBtnStates = slot32
+slot36.refreshLockBtnStates = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3938,7 +7885,7 @@ slot32 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 26-47, warpins: 1 ---
+	--- BLOCK #2 26-57, warpins: 1 ---
 	slot2 = slot0.avatarScene
 	slot3 = nil
 	slot2.checkAllEntityReadyWhiteList = slot3
@@ -3955,6 +7902,10 @@ slot32 = function(slot0, slot1)
 	slot0.curAttachInstanceId = slot2
 	slot2 = nil
 	slot0.boneSliderChanged = slot2
+	slot2 = nil
+	slot0.advancedAttachBoneList = slot2
+	slot2 = nil
+	slot0.showAllAttachPoints = slot2
 	slot2 = UIUtils
 	slot2 = slot2.ClearScreenPointCache
 	slot4 = "petNearestBone"
@@ -3967,12 +7918,22 @@ slot32 = function(slot0, slot1)
 
 	slot2(slot4)
 
+	slot4 = slot0
+	slot2 = slot0.clearSimpleAttachPointCaches
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.clearAdvancedAttachPointCaches
+
+	slot2(slot4)
+
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 48-48, warpins: 2 ---
+	--- BLOCK #3 58-58, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -3980,9 +7941,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.showLit = slot32
+slot36.showLit = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.enableTick
 	--- END OF BLOCK #0 ---
@@ -3997,7 +7958,7 @@ slot32 = function(slot0)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
 	--- BLOCK #2 5-10, warpins: 1 ---
@@ -4017,242 +7978,502 @@ slot32 = function(slot0)
 	--- BLOCK #3 11-11, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #40
 
 
-	--- BLOCK #4 12-14, warpins: 1 ---
-	slot2 = slot0.boneSliderChanged
+	--- BLOCK #4 12-16, warpins: 1 ---
+	slot2 = slot1.eModel
+	slot2 = slot2.modelView
+	slot3 = slot0.boneSliderChanged
 	--- END OF BLOCK #4 ---
 
-	slot2 = if not slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 15-17, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.checkCurAccessoryHasBoned
-	slot2 = slot2(slot4)
+	--- BLOCK #5 17-19, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.checkCurAccessoryHasBoned
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-20, warpins: 2 ---
-	slot3 = slot0.nearestBoneName
+	--- BLOCK #6 20-25, warpins: 2 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.isPetAccessorySimpleMode
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #7
 	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-28, warpins: 1 ---
+	slot5 = slot0.nearestBoneName
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-29, warpins: 2 ---
+	slot5 = nil
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 30-33, warpins: 2 ---
+	slot6 = nil
+	slot7 = slot0.curAttachInstanceId
+	--- END OF BLOCK #9 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #10
+	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 21-28, warpins: 1 ---
-	slot3 = slot1.eModel
-	slot3 = slot3.modelView
-	slot5 = slot3
-	slot3 = slot3.GetBonePosByBoneName
-	slot6 = slot0.nearestBoneName
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #7 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #8 29-30, warpins: 1 ---
-	--- END OF BLOCK #8 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 31-42, warpins: 1 ---
-	slot4 = UIUtils
-	slot4 = slot4.DrawScreenPointWithWorldPosition
-	slot6 = "petNearestBone"
-	slot7 = slot3
-	slot8 = slot0.view
-	slot8 = slot8.rootUComponent
-	slot8 = slot8.transform
-	slot9 = slot0.avatarScene
-	slot9 = slot9.camera
-
-	slot10 = function(slot0)
-		--- BLOCK #0 1-10, warpins: 1 ---
-		slot3 = slot0
-		slot1 = slot0.GetComponent
-		slot4 = "UComponent"
-		slot1 = slot1(slot3, slot4)
-		slot3 = slot1
-		slot1 = slot1.TryChangePage
-		slot4 = "state"
-		slot5 = 1
-
-		slot1(slot3, slot4, slot5)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot4(slot6, slot7, slot8, slot9, slot10)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 43-46, warpins: 2 ---
-	slot4 = UIUtils
-	slot4 = slot4.ClearScreenPointCache
-	slot6 = "petNearestBone"
-
-	slot4(slot6)
-
+	--- BLOCK #10 34-38, warpins: 1 ---
+	slot9 = slot2
+	slot7 = slot2.GetCurAttachPos
+	slot10 = slot0.curAttachInstanceId
+	slot7 = slot7(slot9, slot10)
+	slot6 = slot7
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 47-49, warpins: 3 ---
-	slot3 = slot0.curAttachInstanceId
+	--- BLOCK #11 39-40, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 41-50, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.clearAdvancedAttachPointCaches
+
+	slot7(slot9)
+
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.getSelectedPetAccessoryPointIndex
+	slot7 = slot7(slot9)
+	slot8 = 0
+	--- END OF BLOCK #12 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 50-57, warpins: 1 ---
-	slot3 = slot1.eModel
-	slot3 = slot3.modelView
-	slot5 = slot3
-	slot3 = slot3.GetCurAttachPos
-	slot6 = slot0.curAttachInstanceId
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #12 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 58-69, warpins: 1 ---
-	slot4 = UIUtils
-	slot4 = slot4.DrawScreenPointWithWorldPosition
-	slot6 = "petCurAttach"
-	slot7 = slot3
-	slot8 = slot0.view
-	slot8 = slot8.rootUComponent
-	slot8 = slot8.transform
-	slot9 = slot0.avatarScene
-	slot9 = slot9.camera
-
-	slot10 = function(slot0)
-		--- BLOCK #0 1-10, warpins: 1 ---
-		slot3 = slot0
-		slot1 = slot0.GetComponent
-		slot4 = "UComponent"
-		slot1 = slot1(slot3, slot4)
-		slot3 = slot1
-		slot1 = slot1.TryChangePage
-		slot4 = "state"
-		slot5 = hasBoned
-		--- END OF BLOCK #0 ---
-
-		slot5 = if slot5 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 11-12, warpins: 1 ---
-		slot5 = 1
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 13-13, warpins: 1 ---
-		slot5 = 0
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 14-15, warpins: 2 ---
-		slot1(slot3, slot4, slot5)
-
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot4(slot6, slot7, slot8, slot9, slot10)
-
+	--- BLOCK #13 51-57, warpins: 1 ---
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.getPetAccessoryPointWorldPosition
+	slot12 = slot7
+	slot9, slot10 = slot9(slot11, slot12)
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	slot9 = if slot9 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #14 70-73, warpins: 1 ---
-	slot4 = UIUtils
-	slot4 = slot4.ClearScreenPointCache
-	slot6 = "petCurAttach"
+	--- BLOCK #14 58-70, warpins: 1 ---
+	slot8 = slot8 + 1
+	slot13 = slot0
+	slot11 = slot0.getAttachPointCacheKey
+	slot14 = "simpleAttachPointCacheKeys"
+	slot15 = "petSimpleAttachPoint"
+	slot16 = slot8
+	slot11 = slot11(slot13, slot14, slot15, slot16)
+	slot14 = slot0
+	slot12 = slot0.drawAttachPoint
+	slot15 = slot11
+	slot16 = slot10
+	slot17 = 1
 
-	slot4(slot6)
+	slot12(slot14, slot15, slot16, slot17)
 
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 74-75, warpins: 3 ---
-	return
+	--- BLOCK #15 71-76, warpins: 3 ---
+	slot11 = slot0
+	slot9 = slot0.trimAttachPointCaches
+	slot12 = "simpleAttachPointCacheKeys"
+	slot13 = slot8
+
+	slot9(slot11, slot12, slot13)
+
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #16 76-76, warpins: 2 ---
-	return
+	--- BLOCK #16 77-82, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.clearSimpleAttachPointCaches
+
+	slot7(slot9)
+
+	slot7 = slot0.showAllAttachPoints
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	slot7 = if slot7 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #28
+	end
 
 
-	--- BLOCK #17 77-77, warpins: 2 ---
-	return
+	--- BLOCK #17 83-85, warpins: 1 ---
+	slot7 = slot0.advancedAttachBoneList
 	--- END OF BLOCK #17 ---
+
+	if slot7 == nil then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 86-88, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.buildAdvancedAttachBoneList
+
+	slot7(slot9)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 89-93, warpins: 2 ---
+	slot7 = 0
+	slot8 = ipairs
+	slot10 = slot0.advancedAttachBoneList
+	--- END OF BLOCK #19 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 94-94, warpins: 1 ---
+	slot10 = EMPTY_TABLE
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 95-96, warpins: 2 ---
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #22 97-98, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 99-102, warpins: 1 ---
+	slot13 = slot12.boneNames
+	slot13 = slot13[slot5]
+	--- END OF BLOCK #23 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #24 103-110, warpins: 2 ---
+	slot15 = slot2
+	slot13 = slot2.TryGetAttachPointWorldPosition
+	slot16 = slot12.boneName
+	slot17 = Vector3
+	slot17 = slot17.zero
+	slot13, slot14 = slot13(slot15, slot16, slot17)
+	--- END OF BLOCK #24 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 111-123, warpins: 1 ---
+	slot7 = slot7 + 1
+	slot17 = slot0
+	slot15 = slot0.getAttachPointCacheKey
+	slot18 = "advancedAttachPointCacheKeys"
+	slot19 = "petAdvancedAttachPoint"
+	slot20 = slot7
+	slot15 = slot15(slot17, slot18, slot19, slot20)
+	slot18 = slot0
+	slot16 = slot0.drawAttachPoint
+	slot19 = slot15
+	slot20 = slot14
+	slot21 = 0
+
+	slot16(slot18, slot19, slot20, slot21)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 124-125, warpins: 4 ---
+	--- END OF BLOCK #26 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #22
+	GO OUT TO BLOCK #27
+
+
+	--- BLOCK #27 126-131, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.trimAttachPointCaches
+	slot11 = "advancedAttachPointCacheKeys"
+	slot12 = slot7
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #27 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #28 132-134, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.clearAdvancedAttachPointCaches
+
+	slot7(slot9)
+
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 135-136, warpins: 3 ---
+	--- END OF BLOCK #29 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #30 137-138, warpins: 1 ---
+	--- END OF BLOCK #30 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #31 139-144, warpins: 1 ---
+	slot9 = slot2
+	slot7 = slot2.GetBonePosByBoneName
+	slot10 = slot5
+	slot7 = slot7(slot9, slot10)
+	--- END OF BLOCK #31 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 145-156, warpins: 1 ---
+	slot8 = UIUtils
+	slot8 = slot8.DrawScreenPointWithWorldPosition
+	slot10 = "petNearestBone"
+	slot11 = slot7
+	slot12 = slot0.view
+	slot12 = slot12.rootUComponent
+	slot12 = slot12.transform
+	slot13 = slot0.avatarScene
+	slot13 = slot13.camera
+
+	slot14 = function(slot0)
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.GetComponent
+		slot4 = "UComponent"
+		slot1 = slot1(slot3, slot4)
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "state"
+		slot5 = 1
+
+		slot1(slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot8(slot10, slot11, slot12, slot13, slot14)
+
+	--- END OF BLOCK #32 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
+
+
+	--- BLOCK #33 157-161, warpins: 1 ---
+	slot8 = UIUtils
+	slot8 = slot8.ClearScreenPointCache
+	slot10 = "petNearestBone"
+
+	slot8(slot10)
+
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
+
+
+	--- BLOCK #34 162-165, warpins: 2 ---
+	slot7 = UIUtils
+	slot7 = slot7.ClearScreenPointCache
+	slot9 = "petNearestBone"
+
+	slot7(slot9)
+
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 166-167, warpins: 3 ---
+	--- END OF BLOCK #35 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 168-179, warpins: 1 ---
+	slot7 = UIUtils
+	slot7 = slot7.DrawScreenPointWithWorldPosition
+	slot9 = "petCurAttach"
+	slot10 = slot6
+	slot11 = slot0.view
+	slot11 = slot11.rootUComponent
+	slot11 = slot11.transform
+	slot12 = slot0.avatarScene
+	slot12 = slot12.camera
+
+	slot13 = function(slot0)
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.GetComponent
+		slot4 = "UComponent"
+		slot1 = slot1(slot3, slot4)
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "state"
+		slot5 = 0
+
+		slot1(slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot7(slot9, slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #36 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #38
+
+
+	--- BLOCK #37 180-183, warpins: 1 ---
+	slot7 = UIUtils
+	slot7 = slot7.ClearScreenPointCache
+	slot9 = "petCurAttach"
+
+	slot7(slot9)
+
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 184-184, warpins: 2 ---
+	return
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 185-185, warpins: 2 ---
+	return
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 186-186, warpins: 2 ---
+	return
+	--- END OF BLOCK #40 ---
 
 
 
 end
 
-slot31.updatePetBone = slot32
+slot36.updatePetBone = slot43
 
-slot32 = function(slot0, slot1, slot2, slot3)
+slot43 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -4345,9 +8566,9 @@ slot32 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot31.postRenderSlotList = slot32
+slot36.postRenderSlotList = slot43
 
-slot32 = function(slot0, slot1, slot2, slot3)
+slot43 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.instanceId
 	--- END OF BLOCK #0 ---
@@ -4409,9 +8630,9 @@ slot32 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot31.postRenderOptionList = slot32
+slot36.postRenderOptionList = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -4420,9 +8641,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.onSlotSelectedChanged = slot32
+slot36.onSlotSelectedChanged = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot2.state
 	slot4 = LuaUIUtils
@@ -4446,34 +8667,129 @@ slot32 = function(slot0, slot1, slot2)
 
 	slot3(slot5)
 
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-17, warpins: 1 ---
+	--- BLOCK #2 14-15, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #3 16-17, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #4 18-23, warpins: 1 ---
+	slot3 = slot2.state
+	slot4 = LuaUIUtils
+	slot4 = slot4.SLOT_STATE
+	slot4 = slot4.HAVE
+	--- END OF BLOCK #4 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 24-26, warpins: 1 ---
+	slot3 = slot2.genId
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 27-29, warpins: 1 ---
+	slot3 = slot2.isTry
+	--- END OF BLOCK #6 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 30-36, warpins: 1 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getAccessDataInDataList
+	slot6 = slot2.genId
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 37-40, warpins: 1 ---
+	slot4 = slot3.refPetId
+	slot5 = slot0.curPetId
+	--- END OF BLOCK #8 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 41-47, warpins: 1 ---
+	slot4 = slot2.tabIndex
+	slot0.selectTabIdx = slot4
+	slot6 = slot0
+	slot4 = slot0.unloadPartAccess
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 48-52, warpins: 8 ---
 	slot5 = slot0
 	slot3 = slot0.onFocusSlot
 	slot6 = slot2
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 18-18, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot31.onSlotClicked = slot32
+slot36.onSlotClicked = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -4482,9 +8798,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.onOptionSelectedChanged = slot32
+slot36.onOptionSelectedChanged = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -4526,9 +8842,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.setVitalityPrefs = slot32
+slot36.setVitalityPrefs = slot43
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4)
+slot43 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.clearSubListSelect
@@ -5116,9 +9432,9 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot31.onOptionClicked = slot32
+slot36.onOptionClicked = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -5247,9 +9563,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.showVitalityTips = slot32
+slot36.showVitalityTips = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSavedBoneName
@@ -5286,9 +9602,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.checkCurAccessoryHasBoned = slot32
+slot36.checkCurAccessoryHasBoned = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.model
 	slot1 = slot1.operationDATAS
@@ -5301,9 +9617,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.getSavedBoneName = slot32
+slot36.getSavedBoneName = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.filterFunc = slot2
 	slot5 = slot0
@@ -5319,9 +9635,9 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.onFilterSelectedChanged = slot32
+slot36.onFilterSelectedChanged = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.filterFunc = slot2
 	slot5 = slot0
@@ -5337,9 +9653,9 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.onFilterClicked = slot32
+slot36.onFilterClicked = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.filterFunc = slot2
 	slot5 = slot0
@@ -5355,9 +9671,9 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.onSearchChanged = slot32
+slot36.onSearchChanged = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.forceRefreshAccessList
@@ -5371,9 +9687,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.onBuyItems = slot32
+slot36.onBuyItems = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot1.tabIndex
 	slot0.selectTabIdx = slot2
@@ -5396,9 +9712,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.onFocusSlot = slot32
+slot36.onFocusSlot = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -5507,10 +9823,101 @@ slot32 = function(slot0)
 
 end
 
-slot31.forceRefreshAccessList = slot32
+slot36.forceRefreshAccessList = slot43
 
-slot32 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.petBoxIconUImage
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-11, warpins: 2 ---
+	slot2 = PetData
+	slot3 = slot1.templateId
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot3 = slot2.iconName
+
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-15, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 16-26, warpins: 2 ---
+	slot3 = slot0.petBoxIconUImage
+	slot4 = LuaUIUtils
+	slot4 = slot4.getPetIcon
+	slot6 = slot2.iconName
+	slot7 = LuaUIUtils
+	slot7 = slot7.PET_ICON
+	slot8 = slot1.label
+	slot9 = slot1.gender
+	slot4 = slot4(slot6, slot7, slot8, slot9)
+	slot3.url = slot4
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot36.refreshPetBoxIcon = slot43
+
+slot43 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshAdjustButtonVisible
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
 	slot4 = slot0.curPetId
@@ -5524,7 +9931,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 7-17, warpins: 1 ---
+	--- BLOCK #1 11-21, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -5543,7 +9950,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-23, warpins: 2 ---
+	--- BLOCK #2 22-27, warpins: 2 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
 	slot4 = slot1
@@ -5558,7 +9965,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 24-24, warpins: 1 ---
+	--- BLOCK #3 28-28, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -5566,7 +9973,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-36, warpins: 2 ---
+	--- BLOCK #4 29-40, warpins: 2 ---
 	slot0.curPetId = slot1
 	slot2 = slot0.model
 	slot4 = slot2
@@ -5589,7 +9996,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 37-37, warpins: 1 ---
+	--- BLOCK #5 41-41, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -5597,7 +10004,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 38-49, warpins: 2 ---
+	--- BLOCK #6 42-57, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.refreshTabView
 
@@ -5609,6 +10016,12 @@ slot32 = function(slot0, slot1)
 	slot3 = slot3.getPetInfo
 	slot6 = slot1
 	slot3 = slot3(slot5, slot6)
+	slot6 = slot0
+	slot4 = slot0.refreshPetBoxIcon
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
 	slot4 = slot3.height
 	--- END OF BLOCK #6 ---
 
@@ -5619,14 +10032,14 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 50-50, warpins: 1 ---
+	--- BLOCK #7 58-58, warpins: 1 ---
 	slot4 = 1
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 51-67, warpins: 2 ---
+	--- BLOCK #8 59-76, warpins: 2 ---
 	slot5 = slot4 * 1.2
 	slot0.adjustHeight = slot5
 	slot5 = AvatarUtils
@@ -5634,7 +10047,8 @@ slot32 = function(slot0, slot1)
 	slot7 = slot4
 	slot8 = slot2.scale
 	slot9 = 1.5
-	slot5 = slot5(slot7, slot8, slot9)
+	slot10 = slot3.sizeLevel
+	slot5 = slot5(slot7, slot8, slot9, slot10)
 	slot0.modelSliderInfo = slot5
 	slot5 = slot0.avatarScene
 	slot7 = slot5
@@ -5652,10 +10066,32 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.showPetModel = slot32
+slot36.showPetModel = slot43
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-34, warpins: 1 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.buildAdvancedAttachBoneList
+	slot1, slot2 = slot1(slot3)
+	slot3 = AvatarUtils
+	slot3 = slot3.refreshPetJewelrySliderDepthRange
+	slot5 = slot0.modelSliderInfo
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36.refreshPetJewelrySliderDepthRange = slot43
+
+slot43 = function(slot0)
+	--- BLOCK #0 1-31, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.initTabDataList
@@ -5690,46 +10126,158 @@ slot32 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.slotOptionComponent
-	slot2 = slot2.slotUList
-	slot4 = slot2
-	slot2 = slot2.TryGetChildAt
-	slot5 = 0
-	slot2, slot3 = slot2(slot4, slot5)
-
+	slot2 = 1
+	slot3 = ipairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #1 32-37, warpins: 1 ---
+	slot8 = slot7.state
+	slot9 = LuaUIUtils
+	slot9 = slot9.SLOT_STATE
+	slot9 = slot9.HAVE
+	--- END OF BLOCK #1 ---
+
+	if slot8 == slot9 then
 	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 35-35, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 36-39, warpins: 2 ---
-	slot6 = slot3
-	slot4 = slot3.OnClickSimulate
-
-	slot4(slot6)
-
-	return
+	--- BLOCK #2 38-40, warpins: 1 ---
+	slot8 = slot7.genId
 	--- END OF BLOCK #2 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 41-43, warpins: 1 ---
+	slot8 = slot7.isPreview
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 44-46, warpins: 1 ---
+	slot8 = slot7.isTry
+	--- END OF BLOCK #4 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 47-48, warpins: 1 ---
+	slot2 = slot7.tabIndex
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 49-50, warpins: 5 ---
+	--- END OF BLOCK #6 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 51-58, warpins: 2 ---
+	slot3 = slot0.slotOptionComponent
+	slot3 = slot3.slotUList
+	slot5 = slot3
+	slot3 = slot3.TryGetChildAt
+	slot6 = slot2 - 1
+	slot3, slot4 = slot3(slot5, slot6)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 59-60, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot2 ~= 1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 61-68, warpins: 1 ---
+	slot5 = slot0.slotOptionComponent
+	slot5 = slot5.slotUList
+	slot7 = slot5
+	slot5 = slot5.TryGetChildAt
+	slot8 = 0
+	slot5, slot6 = slot5(slot7, slot8)
+	slot4 = slot6
+	slot3 = slot5
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 69-70, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 71-71, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 72-79, warpins: 2 ---
+	slot7 = slot4
+	slot5 = slot4.OnClickSimulate
+
+	slot5(slot7)
+
+	slot7 = slot0
+	slot5 = slot0.passToRightInfoComponent
+	slot8 = slot0.rootUComponent
+
+	slot5(slot7, slot8)
+
+	return
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot31.refreshTabView = slot32
+slot36.refreshTabView = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -5772,9 +10320,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.refreshAllList = slot32
+slot36.refreshAllList = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot2 = slot2.vitalityPhase
@@ -5795,7 +10343,7 @@ slot32 = function(slot0, slot1)
 	if slot2 == nil then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
@@ -5886,17 +10434,29 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 41-41, warpins: 3 ---
-	return
+	--- BLOCK #9 41-44, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.passToRightInfoComponent
+	slot5 = slot0.rootUComponent
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 45-45, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot31.checkRefreshOperationState = slot32
+slot36.checkRefreshOperationState = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6012,11 +10572,72 @@ slot32 = function(slot0, slot1)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #9 51-55, warpins: 1 ---
+	--- BLOCK #9 51-57, warpins: 1 ---
+	slot5 = 0
+	slot6 = slot0.slotOptionComponent
+	slot6 = slot6.optionUList
+	slot6 = slot6.itemCount
+	slot6 = slot6 - 1
+	slot7 = 1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 58-65, warpins: 2 ---
+	slot9 = slot0.slotOptionComponent
+	slot9 = slot9.optionUList
+	slot11 = slot9
+	slot9 = slot9.GetData
+	slot12 = slot8
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #10 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 66-69, warpins: 1 ---
+	slot10 = slot9.instanceId
+	slot11 = slot4.instanceId
+	--- END OF BLOCK #11 ---
+
+	if slot10 == slot11 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 70-76, warpins: 1 ---
+	slot10 = slot0.slotOptionComponent
+	slot10 = slot10.optionUList
+	slot12 = slot10
+	slot10 = slot10.SelectItem
+	slot13 = slot8
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 77-77, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	for slot8=slot5, slot6, slot7
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #14
+
+	--- BLOCK #14 78-82, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0.selectSubItem
 	slot8 = slot4
@@ -6024,22 +10645,22 @@ slot32 = function(slot0, slot1)
 
 	slot5(slot7, slot8, slot9)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #10 56-56, warpins: 2 ---
+	--- BLOCK #15 83-83, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot31.refreshAccessListView = slot32
+slot36.refreshAccessListView = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -6047,7 +10668,7 @@ slot32 = function(slot0, slot1)
 	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -6113,7 +10734,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 29-39, warpins: 2 ---
+	--- BLOCK #3 29-53, warpins: 2 ---
 	MULTRES = slot5(slot7)
 
 	slot2(slot4, MULTRES)
@@ -6129,22 +10750,190 @@ slot32 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
+	slot3 = {}
+	slot4 = {}
+	slot5 = slot1.name
+	slot4.name = slot5
+	slot5 = slot1.fashion
+	slot4.fashion = slot5
+	slot5 = pg
+	slot5 = slot5.getLocalizationText
+	slot7 = ItemData
+	slot8 = slot1.accessoryId
+	slot7 = slot7[slot8]
+	slot7 = slot7.itemDes
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 40-41, warpins: 2 ---
-	return
+	--- BLOCK #4 54-54, warpins: 1 ---
+	slot7 = ""
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 55-69, warpins: 2 ---
+	slot5 = slot5(slot7)
+	slot4.desc = slot5
+	slot5 = slot1.accessoryId
+	slot4.id = slot5
+	slot5 = slot1.owner
+	slot4.claimed = slot5
+
+	slot5 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.getSelectAccessData
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #1 8-10, warpins: 1 ---
+		slot1 = slot0.refPetId
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #2 11-15, warpins: 1 ---
+		slot1 = slot0.refPetId
+		slot2 = self
+		slot2 = slot2.curPetId
+		--- END OF BLOCK #2 ---
+
+		if slot1 == slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #3 16-20, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.selectTabIdx
+		slot2 = slot0.slot
+		--- END OF BLOCK #3 ---
+
+		if slot1 == slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #4 21-26, warpins: 1 ---
+		slot1 = slot0.state
+		slot2 = LuaUIUtils
+		slot2 = slot2.SELECT_STATE
+		slot2 = slot2.PET_WEAR
+		--- END OF BLOCK #4 ---
+
+		if slot1 == slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 27-34, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.rootUComponent
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "detail"
+		slot5 = 0
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #5 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #6 35-41, warpins: 5 ---
+		slot1 = self
+		slot1 = slot1.rootUComponent
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "detail"
+		slot5 = 1
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 42-56, warpins: 2 ---
+		slot1 = extra
+		slot2 = true
+		slot1.claimed = slot2
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.passToRightInfoComponent
+		slot4 = self
+		slot4 = slot4.rootUComponent
+		slot5 = extra
+
+		slot1(slot3, slot4, slot5)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshPage
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #7 ---
+
+
+
+	end
+
+	slot4.refreshCallback = slot5
+	slot3 = slot4
+	slot6 = slot0
+	slot4 = slot0.passToRightInfoComponent
+	slot7 = slot0.rootUComponent
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 70-71, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot31.refreshBaseView = slot32
+slot36.refreshBaseView = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-36, warpins: 1 ---
 	slot2 = slot0.titleUButton
 	slot4 = slot2
@@ -6301,9 +11090,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.refreshTitleButton = slot32
+slot36.refreshTitleButton = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -6328,9 +11117,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.reEnterPanel = slot32
+slot36.reEnterPanel = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = AppearanceJewelryPetData
@@ -6657,9 +11446,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.getSourceList = slot32
+slot36.getSourceList = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -6742,9 +11531,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.getButtonIndexWithTmpId = slot32
+slot36.getButtonIndexWithTmpId = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.slotOptionComponent
 	slot1 = slot1.optionUList
@@ -6760,18 +11549,11 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 11-22, warpins: 2 ---
+	--- BLOCK #1 11-17, warpins: 2 ---
 	slot6 = slot1[slot5]
 	slot9 = slot6
 	slot7 = slot6.TryChangePage
 	slot10 = "GamePadFocus"
-	slot11 = 0
-
-	slot7(slot9, slot10, slot11)
-
-	slot9 = slot6
-	slot7 = slot6.TryChangePage
-	slot10 = "button"
 	slot11 = 0
 
 	slot7(slot9, slot10, slot11)
@@ -6782,7 +11564,7 @@ slot32 = function(slot0)
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #2
 
-	--- BLOCK #2 23-33, warpins: 1 ---
+	--- BLOCK #2 18-36, warpins: 1 ---
 	slot2 = slot0.rootUComponent
 	slot4 = slot2
 	slot2 = slot2.TryChangePage
@@ -6792,8 +11574,20 @@ slot32 = function(slot0)
 	slot2(slot4, slot5, slot6)
 
 	slot4 = slot0
+	slot2 = slot0.refreshAdjustButtonVisible
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
 	slot2 = slot0.setVitalityAccessoryScoreText
 	slot5 = 0
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.passToRightInfoComponent
+	slot5 = slot0.rootUComponent
 
 	slot2(slot4, slot5)
 
@@ -6804,76 +11598,125 @@ slot32 = function(slot0)
 
 end
 
-slot31.clearSubListSelect = slot32
+slot36.clearSubListSelect = slot43
 
-slot32 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot43 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getButtonIndexWithTmpId
 	slot6 = slot1.instanceId
 	slot3, slot4 = slot3(slot5, slot6)
+	slot7 = slot0
+	slot5 = slot0.refreshAdjustButtonVisible
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
-	slot5 = slot0.inVitality
+	--- BLOCK #1 9-10, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot5 = if slot5 then
+	slot8 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 10-15, warpins: 1 ---
-	slot5 = slot0.accessoryUComponent
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Show"
+	--- BLOCK #2 11-12, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	if slot1 == nil then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
-	slot9 = 1
+	--- BLOCK #3 13-14, warpins: 2 ---
+	slot8 = false
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 18-18, warpins: 1 ---
-	slot9 = 0
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot8 = true
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-21, warpins: 2 ---
-	slot5(slot7, slot8, slot9)
+	--- BLOCK #5 16-18, warpins: 3 ---
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #6 22-27, warpins: 1 ---
+	--- BLOCK #6 19-21, warpins: 1 ---
+	slot5 = slot0.inVitality
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #7 22-27, warpins: 1 ---
+	slot5 = slot0.accessoryUComponent
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "Show"
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 28-29, warpins: 1 ---
+	slot9 = 1
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 30-30, warpins: 1 ---
+	slot9 = 0
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 31-33, warpins: 2 ---
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 34-39, warpins: 1 ---
 	slot5 = slot0.btnCompleteUButton
 	slot5 = slot5.gameObject
 	slot7 = slot5
@@ -6882,32 +11725,25 @@ slot32 = function(slot0, slot1, slot2)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #7 28-29, warpins: 3 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #12 40-41, warpins: 3 ---
+	--- END OF BLOCK #12 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
 	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #8 30-55, warpins: 1 ---
+	--- BLOCK #13 42-62, warpins: 1 ---
 	slot7 = slot4
 	slot5 = slot4.TryChangePage
 	slot8 = "GamePadFocus"
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot7 = slot4
-	slot5 = slot4.TryChangePage
-	slot8 = "button"
 	slot9 = 1
 
 	slot5(slot7, slot8, slot9)
@@ -6932,81 +11768,6 @@ slot32 = function(slot0, slot1, slot2)
 	slot5(slot7, slot8)
 
 	slot5 = slot0.inVitality
-	--- END OF BLOCK #8 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 56-62, warpins: 1 ---
-	slot5 = slot0.rootUComponent
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "State"
-	slot9 = 2
-
-	slot5(slot7, slot8, slot9)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 63-66, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.refreshVitalityView
-	slot8 = slot1
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 67-69, warpins: 2 ---
-	slot5 = slot1.isTry
-	--- END OF BLOCK #11 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #12 70-75, warpins: 1 ---
-	slot5 = slot0.model
-	slot7 = slot5
-	slot5 = slot5.equipTryAccessData
-	slot8 = slot0.selectTabIdx
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #13 76-88, warpins: 1 ---
-	slot7 = slot4
-	slot5 = slot4.TryChangePage
-	slot8 = "GamePadFocus"
-	slot9 = 0
-
-	slot5(slot7, slot8, slot9)
-
-	slot7 = slot4
-	slot5 = slot4.TryChangePage
-	slot8 = "button"
-	slot9 = 0
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.inVitality
 	--- END OF BLOCK #13 ---
 
 	slot5 = if not slot5 then
@@ -7016,7 +11777,75 @@ slot32 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #14 89-94, warpins: 1 ---
+	--- BLOCK #14 63-69, warpins: 1 ---
+	slot5 = slot0.rootUComponent
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "State"
+	slot9 = 2
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 70-73, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.refreshVitalityView
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 74-76, warpins: 2 ---
+	slot5 = slot1.isTry
+	--- END OF BLOCK #16 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #17 77-82, warpins: 1 ---
+	slot5 = slot0.model
+	slot7 = slot5
+	slot5 = slot5.equipTryAccessData
+	slot8 = slot0.selectTabIdx
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #18 83-90, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.TryChangePage
+	slot8 = "GamePadFocus"
+	slot9 = 0
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = slot0.inVitality
+	--- END OF BLOCK #18 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 91-96, warpins: 1 ---
 	slot5 = slot0.rootUComponent
 	slot7 = slot5
 	slot5 = slot5.TryChangePage
@@ -7025,23 +11854,23 @@ slot32 = function(slot0, slot1, slot2)
 
 	slot5(slot7, slot8, slot9)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #15 95-97, warpins: 2 ---
+	--- BLOCK #20 97-99, warpins: 2 ---
 	slot5 = slot1.isTry
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #20 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #16 98-106, warpins: 1 ---
+	--- BLOCK #21 100-108, warpins: 1 ---
 	slot5 = slot0.model
 	slot7 = slot5
 	slot5 = slot5.dropTryAccessData
@@ -7055,22 +11884,34 @@ slot32 = function(slot0, slot1, slot2)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #17 107-107, warpins: 5 ---
+	--- BLOCK #22 109-112, warpins: 4 ---
+	slot7 = slot0
+	slot5 = slot0.passToRightInfoComponent
+	slot8 = slot0.rootUComponent
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 113-113, warpins: 2 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot31.selectSubItem = slot32
+slot36.selectSubItem = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -7082,7 +11923,7 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-33, warpins: 1 ---
+	--- BLOCK #1 4-32, warpins: 1 ---
 	slot1 = EnergyMatchThemeData
 	slot2 = slot0.ctrl
 	slot2 = slot2.vitalityPhase
@@ -7102,7 +11943,6 @@ slot32 = function(slot0)
 	slot7 = slot7.vitalityPhase
 	slot8 = pg
 	slot8 = slot8.me
-	slot8 = slot8.invInfo
 	slot3, slot4 = slot3(slot5, slot6, slot7, slot8)
 	slot0.accessoryScoreData = slot4
 	slot7 = slot0
@@ -7122,7 +11962,7 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 34-34, warpins: 2 ---
+	--- BLOCK #2 33-33, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -7130,9 +11970,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.refreshVitalityScore = slot32
+slot36.refreshVitalityScore = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.inVitality
 
@@ -7169,9 +12009,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.updateVitalityCompleteButton = slot32
+slot36.updateVitalityCompleteButton = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -7203,9 +12043,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.setVitalityAccessoryScoreText = slot32
+slot36.setVitalityAccessoryScoreText = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -7260,9 +12100,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.setVitalityTotalScoreText = slot32
+slot36.setVitalityTotalScoreText = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.inVitality
@@ -7334,7 +12174,7 @@ slot32 = function(slot0)
 
 
 	--- BLOCK #6 25-25, warpins: 2 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
@@ -7394,9 +12234,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.getVitalityRecommendTagList = slot32
+slot36.getVitalityRecommendTagList = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -7445,9 +12285,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.refreshVitalityRecommendTags = slot32
+slot36.refreshVitalityRecommendTags = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = next
 	slot3 = slot0.petEquipAccessMap
@@ -7461,7 +12301,7 @@ slot32 = function(slot0)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -7596,9 +12436,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.hasCurrentPetAccessory = slot32
+slot36.hasCurrentPetAccessory = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.inVitality
 
@@ -7683,9 +12523,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.refreshVitalityAccessoryShowState = slot32
+slot36.refreshVitalityAccessoryShowState = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -7791,7 +12631,7 @@ slot32 = function(slot0)
 
 
 	--- BLOCK #10 34-34, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
@@ -7846,9 +12686,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.getCurrentPetAccessoryData = slot32
+slot36.getCurrentPetAccessoryData = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.inVitality
@@ -7874,7 +12714,7 @@ slot32 = function(slot0, slot1)
 
 
 	--- BLOCK #2 9-9, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -8069,9 +12909,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.getAccessoryList = slot32
+slot36.getAccessoryList = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.inVitality
 
@@ -8145,9 +12985,9 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.setVitalitySelectedAccessory = slot32
+slot36.setVitalitySelectedAccessory = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.inVitality
 	--- END OF BLOCK #0 ---
@@ -8201,9 +13041,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.clearVitalitySelectedAccessory = slot32
+slot36.clearVitalitySelectedAccessory = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8260,7 +13100,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 26-56, warpins: 2 ---
+	--- BLOCK #4 26-55, warpins: 2 ---
 	MULTRES = slot5(slot7)
 
 	slot2(slot4, MULTRES)
@@ -8282,7 +13122,6 @@ slot32 = function(slot0, slot1)
 	slot7 = slot7.vitalityPhase
 	slot8 = pg
 	slot8 = slot8.me
-	slot8 = slot8.invInfo
 	slot3, slot4 = slot3(slot5, slot6, slot7, slot8)
 	slot7 = slot0
 	slot5 = slot0.setVitalityAccessoryScoreText
@@ -8303,7 +13142,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 57-57, warpins: 1 ---
+	--- BLOCK #5 56-56, warpins: 1 ---
 	slot8 = 0
 
 	--- END OF BLOCK #5 ---
@@ -8311,7 +13150,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 58-68, warpins: 2 ---
+	--- BLOCK #6 57-67, warpins: 2 ---
 	slot5(slot7, slot8)
 
 	slot5 = ClientTextUtils
@@ -8333,7 +13172,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 69-72, warpins: 1 ---
+	--- BLOCK #7 68-71, warpins: 1 ---
 	slot6 = pairs
 	slot8 = slot5.accessoryTag
 	slot6, slot7, slot8 = slot6(slot8)
@@ -8342,7 +13181,7 @@ slot32 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 73-74, warpins: 1 ---
+	--- BLOCK #8 72-73, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
 	if slot9 == 1 then
@@ -8352,7 +13191,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 75-85, warpins: 1 ---
+	--- BLOCK #9 74-84, warpins: 1 ---
 	slot11 = ClientTextUtils
 	slot11 = slot11.setText
 	slot13 = slot0.tag1Text
@@ -8370,7 +13209,7 @@ slot32 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 86-95, warpins: 1 ---
+	--- BLOCK #10 85-94, warpins: 1 ---
 	slot11 = ClientTextUtils
 	slot11 = slot11.setText
 	slot13 = slot0.tag2Text
@@ -8388,7 +13227,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 96-97, warpins: 3 ---
+	--- BLOCK #11 95-96, warpins: 3 ---
 	--- END OF BLOCK #11 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
@@ -8396,7 +13235,7 @@ slot32 = function(slot0, slot1)
 	GO OUT TO BLOCK #12
 
 
-	--- BLOCK #12 98-106, warpins: 1 ---
+	--- BLOCK #12 97-105, warpins: 1 ---
 	slot6 = slot0.tag1LabelUComponent
 	slot6 = slot6.gameObject
 	slot8 = slot6
@@ -8413,14 +13252,14 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 107-108, warpins: 1 ---
+	--- BLOCK #13 106-107, warpins: 1 ---
 	slot9 = false
 	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 109-109, warpins: 1 ---
+	--- BLOCK #14 108-108, warpins: 1 ---
 	slot9 = true
 
 	--- END OF BLOCK #14 ---
@@ -8428,7 +13267,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 110-111, warpins: 2 ---
+	--- BLOCK #15 109-110, warpins: 2 ---
 	slot6(slot8, slot9)
 
 	--- END OF BLOCK #15 ---
@@ -8436,7 +13275,7 @@ slot32 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 112-123, warpins: 1 ---
+	--- BLOCK #16 111-122, warpins: 1 ---
 	slot6 = slot0.tag1LabelUComponent
 	slot6 = slot6.gameObject
 	slot8 = slot6
@@ -8458,7 +13297,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 124-142, warpins: 2 ---
+	--- BLOCK #17 123-141, warpins: 2 ---
 	slot8 = slot0
 	slot6 = slot0.getSourceList
 	slot9 = slot1.accessoryId
@@ -8487,14 +13326,14 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 143-144, warpins: 1 ---
+	--- BLOCK #18 142-143, warpins: 1 ---
 	slot10 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 145-145, warpins: 1 ---
+	--- BLOCK #19 144-144, warpins: 1 ---
 	slot10 = true
 
 	--- END OF BLOCK #19 ---
@@ -8502,7 +13341,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 146-147, warpins: 2 ---
+	--- BLOCK #20 145-146, warpins: 2 ---
 	slot7(slot9, slot10)
 
 	return
@@ -8512,9 +13351,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.refreshVitalityView = slot32
+slot36.refreshVitalityView = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = EnergyMatchThemeData
 	slot3 = slot0.ctrl
@@ -8605,14 +13444,16 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.getMatchTagCount = slot32
-slot32 = {
+slot36.getMatchTagCount = slot43
+slot43 = {
 	0.05,
 	0.2
 }
-slot31.STALE_PET_ACCESS_CLEANUP_DELAYS = slot32
+slot36.STALE_PET_ACCESS_CLEANUP_DELAYS = slot43
+slot43 = 0.3
+slot36.UNOWNED_PREVIEW_DEBOUNCE = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	--- END OF BLOCK #0 ---
@@ -8644,20 +13485,18 @@ slot32 = function(slot0)
 	end
 
 
-	--- BLOCK #3 10-14, warpins: 1 ---
-	slot2 = IsNil
-	slot4 = slot1.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot2 = slot1.eModel
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 15-16, warpins: 2 ---
+	--- BLOCK #4 13-14, warpins: 2 ---
 	slot2, slot3 = nil
 
 	return slot2, slot3
@@ -8667,7 +13506,7 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-20, warpins: 2 ---
+	--- BLOCK #5 15-18, warpins: 2 ---
 	slot2 = slot1
 	slot3 = slot1.eModel
 	slot3 = slot3.modelView
@@ -8679,9 +13518,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.getPetEntityAndModelView = slot32
+slot36.getPetEntityAndModelView = slot43
 
-slot32 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -8727,9 +13566,9 @@ slot32 = function(slot0)
 
 end
 
-slot31.buildValidPetAccessInstanceIdSet = slot32
+slot36.buildValidPetAccessInstanceIdSet = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8791,74 +13630,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.syncPetAccessValidIds = slot32
+slot36.syncPetAccessValidIds = slot43
 
-slot32 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 3-5, warpins: 1 ---
-	slot2 = slot0.avatarScene
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 6-10, warpins: 1 ---
-	slot2 = slot0.avatarScene
-	slot4 = slot2
-	slot2 = slot2.getCurEntity
-	slot2 = slot2(slot4)
-	slot1 = slot2
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 11-12, warpins: 3 ---
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 13-16, warpins: 1 ---
-	slot2 = AvatarUtils
-	slot2 = slot2.cancelFixAttachTemp
-	slot4 = slot1
-
-	slot2(slot4)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 17-17, warpins: 2 ---
-	return
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot31.cancelPetAccessFixAttachTemp = slot32
-
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8976,9 +13750,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.removeStalePetAccessAttaches = slot32
+slot36.removeStalePetAccessAttaches = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.curPetAccessMap
 	slot3 = nil
@@ -8999,9 +13773,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.clearSlotPetAccessRecord = slot32
+slot36.clearSlotPetAccessRecord = slot43
 
-slot32 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9071,15 +13845,10 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.detachSlotPetAccess = slot32
+slot36.detachSlotPetAccess = slot43
 
-slot32 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.cancelPetAccessFixAttachTemp
-
-	slot4(slot6)
-
+slot43 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -9089,7 +13858,7 @@ slot32 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 6-7, warpins: 1 ---
+	--- BLOCK #1 3-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	slot3 = if slot3 then
@@ -9099,7 +13868,7 @@ slot32 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 8-9, warpins: 1 ---
+	--- BLOCK #2 5-6, warpins: 1 ---
 	slot4 = slot0.curPetAccessMap
 	slot4[slot2] = slot3
 	--- END OF BLOCK #2 ---
@@ -9107,7 +13876,7 @@ slot32 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-14, warpins: 3 ---
+	--- BLOCK #3 7-11, warpins: 3 ---
 	slot6 = slot0
 	slot4 = slot0.syncPetAccessValidIds
 
@@ -9122,7 +13891,7 @@ slot32 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 15-18, warpins: 1 ---
+	--- BLOCK #4 12-15, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.removeStalePetAccessAttaches
 	slot7 = slot1
@@ -9134,7 +13903,7 @@ slot32 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-19, warpins: 2 ---
+	--- BLOCK #5 16-16, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -9142,9 +13911,9 @@ slot32 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot31.preparePetAccessChange = slot32
+slot36.preparePetAccessChange = slot43
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot43 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.preparePetAccessChange
@@ -9182,9 +13951,9 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot31.applyPetAccessAndRefresh = slot32
+slot36.applyPetAccessAndRefresh = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9310,9 +14079,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.scheduleStalePetAccessCleanup = slot32
+slot36.scheduleStalePetAccessCleanup = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1.slot
 	slot3 = slot0.selectTabIdx
@@ -9357,9 +14126,9 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.checkUnloadOrSwitch = slot32
+slot36.checkUnloadOrSwitch = slot43
 
-slot32 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkCanUnload
@@ -9459,9 +14228,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.unloadPartAccess = slot32
+slot36.unloadPartAccess = slot43
+slot43 = "unloadPartAccessCallback"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -9516,13 +14286,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 31-58, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.cancelPetAccessFixAttachTemp
-	slot8 = slot3
-
-	slot5(slot7, slot8)
-
+	--- BLOCK #2 31-54, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0.detachSlotPetAccess
 	slot8 = slot4
@@ -9565,9 +14329,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.unloadPartAccessCallback = slot32
+slot36[slot43] = slot44
+slot43 = "checkCanUnload"
 
-slot32 = function(slot0, slot1, slot2)
+slot44 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.curPetId
 	--- END OF BLOCK #0 ---
@@ -9679,9 +14444,10 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.checkCanUnload = slot32
+slot36[slot43] = slot44
+slot43 = "equipPartAccess"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = {}
 	slot3 = {
@@ -9753,9 +14519,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.equipPartAccess = slot32
+slot36[slot43] = slot44
+slot43 = "equipAccessCallback"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -9831,9 +14598,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.equipAccessCallback = slot32
+slot36[slot43] = slot44
+slot43 = "switchPartAccess"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = {}
 	slot3 = {
@@ -9905,9 +14673,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.switchPartAccess = slot32
+slot36[slot43] = slot44
+slot43 = "switchPartAccessCallback"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = slot1.slot
 	slot5 = slot0
@@ -10001,13 +14770,14 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.switchPartAccessCallback = slot32
+slot36[slot43] = slot44
+slot43 = "parseServerCacheAccessInfo"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
-	slot2 = slot2.parseDefaultAccessInfo
+	slot2 = slot2.getServerCacheAccessInfo
 	slot5 = slot1
 	slot6 = slot0.modelSliderInfo
 
@@ -10018,72 +14788,199 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.parseServerCacheAccessInfo = slot32
+slot36[slot43] = slot44
+slot43 = "shouldDebounceUnownedPreview"
 
-slot32 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot2 = slot0.model
-	slot4 = slot2
-	slot2 = slot2.getTabInTabDataList
-	slot5 = slot0.selectTabIdx
-	slot2 = slot2(slot4, slot5)
-	slot3 = slot2.isPreview
+slot44 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
-	slot3 = slot2.previewInstId
-	slot4 = slot1.instanceId
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot2 = slot1.state
+	slot3 = LuaUIUtils
+	slot3 = slot3.SELECT_STATE
+	slot3 = slot3.LOCKED
 	--- END OF BLOCK #1 ---
 
-	if slot3 == slot4 then
+	if slot2 ~= slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 13-17, warpins: 1 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-15, warpins: 2 ---
+	slot2 = Time
+	slot2 = slot2.realSecondCache
+	slot3 = slot0._unownedPreviewDebounce
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 16-19, warpins: 1 ---
+	slot4 = slot3.instanceId
+	slot5 = slot1.instanceId
+	--- END OF BLOCK #4 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 20-25, warpins: 1 ---
+	slot4 = slot3.time
+	slot4 = slot2 - slot4
+	slot5 = PetComponent
+	slot5 = slot5.UNOWNED_PREVIEW_DEBOUNCE
+	--- END OF BLOCK #5 ---
+
+	if slot4 < slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-27, warpins: 1 ---
+	slot4 = true
+
+	return slot4
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 28-34, warpins: 4 ---
+	slot4 = {}
+	slot5 = slot1.instanceId
+	slot4.instanceId = slot5
+	slot4.time = slot2
+	slot0._unownedPreviewDebounce = slot4
+	slot4 = false
+
+	return slot4
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot36[slot43] = slot44
+slot43 = "checkPreviewAccess"
+
+slot44 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.shouldDebounceUnownedPreview
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-15, warpins: 2 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getTabInTabDataList
+	slot5 = slot0.selectTabIdx
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot2.isPreview
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 16-19, warpins: 1 ---
+	slot3 = slot2.previewInstId
+	slot4 = slot1.instanceId
+	--- END OF BLOCK #3 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-24, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.previewUnloadAccess
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 18-21, warpins: 2 ---
+	--- BLOCK #5 25-28, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.previewEquipAccess
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 22-22, warpins: 2 ---
+	--- BLOCK #6 29-29, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot31.checkPreviewAccess = slot32
+slot36[slot43] = slot44
+slot43 = "previewEquipAccess"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -10133,13 +15030,11 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 28-36, warpins: 2 ---
-	slot5 = slot0.model
-	slot7 = slot5
-	slot5 = slot5.parseDefaultAccessInfo
+	--- BLOCK #2 28-34, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.parseServerCacheAccessInfo
 	slot8 = slot1
-	slot9 = slot0.modelSliderInfo
-	slot5 = slot5(slot7, slot8, slot9)
+	slot5 = slot5(slot7, slot8)
 	slot6 = slot1.isPreview
 	--- END OF BLOCK #2 ---
 
@@ -10150,7 +15045,7 @@ slot32 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 37-38, warpins: 1 ---
+	--- BLOCK #3 35-36, warpins: 1 ---
 	slot6 = slot1.isTry
 	slot6 = not slot6
 	--- END OF BLOCK #3 ---
@@ -10158,7 +15053,7 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 39-51, warpins: 2 ---
+	--- BLOCK #4 37-49, warpins: 2 ---
 	slot9 = slot0
 	slot7 = slot0.applyPetAccessAndRefresh
 	slot10 = slot4
@@ -10182,9 +15077,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.previewEquipAccess = slot32
+slot36[slot43] = slot44
+slot43 = "previewUnloadAccess"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshAllList
@@ -10266,7 +15162,7 @@ slot32 = function(slot0, slot1)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
@@ -10283,62 +15179,53 @@ slot32 = function(slot0, slot1)
 	slot9 = slot9(slot11, slot12)
 	--- END OF BLOCK #3 ---
 
-	slot10 = if slot9 then
+	slot10 = if slot8 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 66-70, warpins: 1 ---
-	slot10 = PetJewelryOssCache
-	slot10 = slot10.get
-	slot12 = slot0.curPetId
-	slot13 = slot9.accessoryId
-	slot10 = slot10(slot12, slot13)
+	--- BLOCK #4 66-66, warpins: 1 ---
+	slot10 = slot8[slot6]
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 71-72, warpins: 2 ---
+	--- BLOCK #5 67-68, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
-	slot11 = if not slot10 then
+	slot11 = if slot9 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 73-74, warpins: 1 ---
+	--- BLOCK #6 69-74, warpins: 1 ---
+	slot11 = PetJewelryOssCache
+	slot11 = slot11.getSavedTransform
+	slot13 = slot0.curPetId
+	slot14 = slot9.accessoryId
+	slot15 = slot10
+	slot11 = slot11(slot13, slot14, slot15)
 	--- END OF BLOCK #6 ---
 
-	slot11 = if slot8 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 75-75, warpins: 1 ---
-	slot11 = slot8[slot6]
+	--- BLOCK #7 75-76, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 76-77, warpins: 3 ---
-	--- END OF BLOCK #8 ---
-
 	slot11 = if slot11 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #9 78-87, warpins: 1 ---
+	--- BLOCK #8 77-86, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.equipServerAccess
 	slot15 = slot4
@@ -10348,12 +15235,12 @@ slot32 = function(slot0, slot1)
 	slot19 = true
 	slot12 = slot12(slot14, slot15, slot16, slot17, slot18, slot19)
 	slot1 = slot12
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #10 88-97, warpins: 1 ---
+	--- BLOCK #9 87-96, warpins: 1 ---
 	slot12 = slot8.customShow
 	slot12 = slot12[slot6]
 	slot15 = slot0
@@ -10364,22 +15251,22 @@ slot32 = function(slot0, slot1)
 	slot19 = true
 	slot13 = slot13(slot15, slot16, slot17, slot18, slot19)
 	slot1 = slot13
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 97-98, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 98-99, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
 	slot1 = if slot1 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #12 100-104, warpins: 1 ---
+	--- BLOCK #11 99-103, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.selectSubItem
 	slot15 = slot1
@@ -10387,12 +15274,12 @@ slot32 = function(slot0, slot1)
 
 	slot12(slot14, slot15, slot16)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #13 105-115, warpins: 3 ---
+	--- BLOCK #12 104-114, warpins: 3 ---
 	slot10 = slot4
 	slot8 = slot4.RefreshAttachModel
 
@@ -10410,15 +15297,16 @@ slot32 = function(slot0, slot1)
 	slot8(slot10)
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot31.previewUnloadAccess = slot32
+slot36[slot43] = slot44
+slot43 = "checkClearOldPreview"
 
-slot32 = function(slot0)
+slot44 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -10497,9 +15385,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.checkClearOldPreview = slot32
+slot36[slot43] = slot44
+slot43 = "showPartAccessInternal"
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot44 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot6 = slot0.curPetAccessMap
 	slot7 = slot2.instanceId
@@ -10522,7 +15411,7 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-29, warpins: 2 ---
+	--- BLOCK #2 9-30, warpins: 2 ---
 	slot8 = slot0
 	slot6 = slot0.syncPetAccessValidIds
 
@@ -10542,8 +15431,9 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot13 = slot2.localPosition
 	slot14 = slot2.localRotation
 	slot15 = slot6
+	slot16 = false
 
-	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16)
 
 	slot7 = slot0.inVitality
 	--- END OF BLOCK #2 ---
@@ -10555,7 +15445,7 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #3 30-31, warpins: 1 ---
+	--- BLOCK #3 31-32, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	slot4 = if not slot4 then
@@ -10565,7 +15455,7 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #4 32-33, warpins: 1 ---
+	--- BLOCK #4 33-34, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	slot5 = if not slot5 then
@@ -10575,7 +15465,7 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #5 34-38, warpins: 1 ---
+	--- BLOCK #5 35-39, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.setVitalitySelectedAccessory
 	slot10 = slot3
@@ -10588,7 +15478,7 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 39-41, warpins: 3 ---
+	--- BLOCK #6 40-42, warpins: 3 ---
 	slot9 = slot0
 	slot7 = slot0.refreshVitalityScore
 
@@ -10599,7 +15489,7 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 42-42, warpins: 2 ---
+	--- BLOCK #7 43-43, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -10607,9 +15497,10 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot31.showPartAccessInternal = slot32
+slot36[slot43] = slot44
+slot43 = "refreshIdleButton"
 
-slot32 = function(slot0)
+slot44 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	slot3 = slot1
@@ -10629,9 +15520,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.refreshIdleButton = slot32
+slot36[slot43] = slot44
+slot43 = "onBtnPetIdle"
 
-slot32 = function(slot0)
+slot44 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	slot3 = slot1
@@ -10697,9 +15589,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.onBtnPetIdle = slot32
+slot36[slot43] = slot44
+slot43 = "setPetIdle"
 
-slot32 = function(slot0)
+slot44 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	slot2 = false
@@ -10749,9 +15642,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.setPetIdle = slot32
+slot36[slot43] = slot44
+slot43 = "setPetTPose"
 
-slot32 = function(slot0)
+slot44 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.avatarScene
 	slot2 = true
@@ -10816,9 +15710,10 @@ slot32 = function(slot0)
 
 end
 
-slot31.setPetTPose = slot32
+slot36[slot43] = slot44
+slot43 = "parseSliderInfoWithOpName"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.opName
 	slot3, slot4, slot5 = nil
@@ -10977,7 +15872,60 @@ slot32 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 77-95, warpins: 6 ---
+	--- BLOCK #12 77-82, warpins: 6 ---
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.isPetAccessorySimpleMode
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #12 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #13 83-85, warpins: 1 ---
+	slot7 = 1
+	--- END OF BLOCK #13 ---
+
+	if slot2 >= slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 86-88, warpins: 1 ---
+	slot7 = 3
+	--- END OF BLOCK #14 ---
+
+	if slot2 <= slot7 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 89-99, warpins: 1 ---
+	slot7 = math
+	slot7 = slot7.abs
+	slot9 = slot6.maxOffset
+	slot9 = slot9.x
+	slot10 = slot6.minOffset
+	slot10 = slot10.x
+	slot9 = slot9 - slot10
+	slot7 = slot7(slot9)
+	slot7 = slot7 * 0.5
+	slot3 = -slot7
+	slot4 = slot7
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 100-118, warpins: 4 ---
 	slot1.oldMin = slot3
 	slot1.oldMax = slot4
 	slot7 = slot6.mapPosLength
@@ -10998,44 +15946,40 @@ slot32 = function(slot0, slot1)
 	slot10 = slot7
 
 	return slot8, slot9, slot10
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot31.parseSliderInfoWithOpName = slot32
+slot36[slot43] = slot44
+slot43 = "onModelSkeletonLoaded"
 
-slot32 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = slot0.avatarScene
-	slot3 = slot1
-	slot1 = slot1.getCurEntity
-	slot1 = slot1(slot3)
+slot44 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.model
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= nil then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-11, warpins: 1 ---
-	slot2 = IsNil
-	slot4 = slot1.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.avatarScene
 
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 12-12, warpins: 2 ---
+	--- BLOCK #2 7-7, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #2 ---
@@ -11043,7 +15987,46 @@ slot32 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-24, warpins: 2 ---
+	--- BLOCK #3 8-13, warpins: 2 ---
+	slot1 = slot0.avatarScene
+	slot3 = slot1
+	slot1 = slot1.getCurEntity
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot2 = slot1.eModel
+
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-32, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshPetJewelrySliderDepthRange
+
+	slot2(slot4)
+
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.setAvatarScene
@@ -11057,34 +16040,34 @@ slot32 = function(slot0)
 	slot3 = slot0.curPetId
 	slot2 = slot2[slot3]
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 	if slot2 == nil then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 25-25, warpins: 1 ---
+	--- BLOCK #7 33-33, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #5 26-30, warpins: 2 ---
+	--- BLOCK #8 34-38, warpins: 2 ---
 	slot3 = slot2.customShow
 	slot5 = slot3
 	slot3 = slot3.items
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #6 31-42, warpins: 1 ---
+	--- BLOCK #9 39-50, warpins: 1 ---
 	slot8 = slot0.model
 	slot10 = slot8
 	slot8 = slot8.getAccessDataInDataList
@@ -11095,27 +16078,27 @@ slot32 = function(slot0)
 	slot9 = slot9.getTabInTabDataList
 	slot12 = slot6
 	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #7 43-45, warpins: 1 ---
+	--- BLOCK #10 51-53, warpins: 1 ---
 	slot10 = slot9.isPreview
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 46-56, warpins: 1 ---
+	--- BLOCK #11 54-64, warpins: 1 ---
 	slot10 = slot0.curPetAccessMap
 	slot11 = slot8.instanceId
 	slot10[slot6] = slot11
@@ -11129,42 +16112,42 @@ slot32 = function(slot0)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #9 57-58, warpins: 4 ---
-	--- END OF BLOCK #9 ---
+	--- BLOCK #12 65-66, warpins: 4 ---
+	--- END OF BLOCK #12 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #10
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #10 59-61, warpins: 1 ---
+	--- BLOCK #13 67-69, warpins: 1 ---
 	slot3 = slot0.needRecordDefaultAccessory
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #11 62-67, warpins: 1 ---
+	--- BLOCK #14 70-75, warpins: 1 ---
 	slot3 = {}
 	slot0.recordAccessory = slot3
 	slot3 = pairs
 	slot5 = slot0.curPetAccessMap
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #12 68-72, warpins: 1 ---
+	--- BLOCK #15 76-80, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot0.recordAccessory
@@ -11172,20 +16155,20 @@ slot32 = function(slot0)
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #13 73-74, warpins: 2 ---
-	--- END OF BLOCK #13 ---
+	--- BLOCK #16 81-82, warpins: 2 ---
+	--- END OF BLOCK #16 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #12
-	GO OUT TO BLOCK #14
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #17
 
 
-	--- BLOCK #14 75-87, warpins: 2 ---
+	--- BLOCK #17 83-95, warpins: 2 ---
 	slot3 = false
 	slot0.needRecordDefaultAccessory = slot3
 	slot5 = slot0
@@ -11205,15 +16188,16 @@ slot32 = function(slot0)
 	slot3(slot5)
 
 	return
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot31.onModelSkeletonLoaded = slot32
+slot36[slot43] = slot44
+slot43 = "equipDefaultAccess"
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4)
+slot44 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot5 = slot1.modelInfo
 	slot6 = slot0.model
@@ -11293,9 +16277,10 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot31.equipDefaultAccess = slot32
+slot36[slot43] = slot44
+slot43 = "equipServerAccess"
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot44 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot0.model
 	slot8 = slot6
@@ -11392,9 +16377,10 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot31.equipServerAccess = slot32
+slot36[slot43] = slot44
+slot43 = "parseServerAccess"
 
-slot32 = function(slot0, slot1, slot2)
+slot44 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot3 = Vector3
 	slot3 = slot3.New
@@ -11431,9 +16417,10 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot31.parseServerAccess = slot32
+slot36[slot43] = slot44
+slot43 = "onPetBoxSelected"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showPetModel
@@ -11448,9 +16435,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.onPetBoxSelected = slot32
+slot36[slot43] = slot44
+slot43 = "afterRefreshModel"
 
-slot32 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.petAccessRefreshSeq
 	--- END OF BLOCK #0 ---
@@ -11523,7 +16511,7 @@ slot32 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 15-32, warpins: 2 ---
+		--- BLOCK #4 15-25, warpins: 2 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.removeStalePetAccessAttaches
@@ -11535,15 +16523,6 @@ slot32 = function(slot0, slot1)
 		slot3 = slot1
 		slot1 = slot1.syncPetAccessValidIds
 		slot4 = slot0
-
-		slot1(slot3, slot4)
-
-		slot1 = AvatarUtils
-		slot1 = slot1.fixAttachTemp
-		slot3 = slot0
-		slot4 = self
-		slot4 = slot4.model
-		slot4 = slot4.adjustPetCurId
 
 		slot1(slot3, slot4)
 
@@ -11563,9 +16542,27 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot31.afterRefreshModel = slot32
+slot36[slot43] = slot44
+slot43 = "passToRightInfoComponent"
 
-return slot31
+slot44 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot5 = slot3
+	slot3 = slot3.passToRightInfoComponent
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot36[slot43] = slot44
+
+return slot36
 --- END OF BLOCK #0 ---
 
 

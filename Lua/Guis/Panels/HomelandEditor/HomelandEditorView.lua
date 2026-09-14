@@ -1,9 +1,9 @@
---- BLOCK #0 1-22, warpins: 1 ---
+--- BLOCK #0 1-24, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
 slot0 = slot0.getLogger
-slot2 = "InteractSecondView"
+slot2 = "HomelandEditorView"
 slot0 = slot0(slot2)
 slot1 = require
 slot3 = "Core.Framework.Class"
@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-125, warpins: 1 ---
+	--- BLOCK #0 1-179, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -123,6 +123,36 @@ slot4 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
+	slot4 = "btnDisplayUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnDisplayUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "selectorMetreUSelector"
+	slot1 = slot1(slot3, slot4)
+	slot0.selectorMetreUSelector = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtNumUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtCameraHeightUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtMUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtMUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "furnitureComposeUContainer"
+	slot1 = slot1(slot3, slot4)
+	slot0.furnitureComposeUContainer = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
 	slot4 = "globalEditingUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.globalEditingUWidget = slot1
@@ -142,6 +172,30 @@ slot4 = function(slot0)
 	slot4 = "joyStickUJoyStick"
 	slot1 = slot1(slot3, slot4)
 	slot0.moveJoyStick = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnAreaUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnAreaUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "progressUProgress"
+	slot1 = slot1(slot3, slot4)
+	slot0.progressUProgress = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtDisplayUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtDisplayUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtMetreUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtMetreUSDFText = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -153,7 +207,7 @@ end
 slot3.findObjects = slot4
 
 slot4 = function(slot0, slot1)
-	--- BLOCK #0 1-81, warpins: 1 ---
+	--- BLOCK #0 1-96, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
 	slot5 = "ObjectReference"
@@ -234,6 +288,21 @@ slot4 = function(slot0, slot1)
 	slot6 = "btnEditUButton"
 	slot3 = slot3(slot5, slot6)
 	slot0.btnEditUButton = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtNumLiveUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtNumLiveUSDFText = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtTitleLiveUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtTitleLiveUSDFText = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "btnLiveUButton"
+	slot3 = slot3(slot5, slot6)
+	slot0.btnLiveUButton = slot3
 
 	return
 	--- END OF BLOCK #0 ---
@@ -243,6 +312,94 @@ slot4 = function(slot0, slot1)
 end
 
 slot3.registerPetDetail = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-77, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot0.composeInfoContent = slot1
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtNameUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtNameUSDFText = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtTypeUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtTypeUSDFText = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtDetailsUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtDetailsUSDFText = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "scrollRectUScrollRect"
+	slot3 = slot3(slot5, slot6)
+	slot0.scrollRectUScrollRect = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "btnViewUButton"
+	slot3 = slot3(slot5, slot6)
+	slot0.btnViewUButton = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "btnPlaceUButton"
+	slot3 = slot3(slot5, slot6)
+	slot0.btnPlaceUButton = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "txtBtnSetUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot0.txtBtnSetUSDFText = slot3
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "iconComposeUImage"
+	slot3 = slot3(slot5, slot6)
+	slot0.iconComposeUImage = slot3
+	slot3 = slot0.scrollRectUScrollRect
+	slot3 = slot3.content
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "ObjectReference"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "txtLivabilityValueUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.txtLivabilityValueUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "txtLoadValueUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.txtLoadValueUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "txtTiteSizeUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.txtTiteSizeUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "txtSizeNumUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.txtSizeNumUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "txtDescUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.txtDescUSDFText = slot4
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.registerComposeDetail = slot4
 
 return slot3
 --- END OF BLOCK #0 ---

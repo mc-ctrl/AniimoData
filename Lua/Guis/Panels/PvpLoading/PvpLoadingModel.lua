@@ -25,10 +25,10 @@ slot6 = slot6(slot8)
 slot7 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.endTime = slot1
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.startTime = slot1
 
 	return
@@ -44,7 +44,7 @@ slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.endTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 
 	--- END OF BLOCK #0 ---
 
@@ -84,7 +84,7 @@ slot7 = function(slot0)
 
 	--- BLOCK #4 12-16, warpins: 2 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.showTime
 	--- END OF BLOCK #4 ---
 
@@ -106,7 +106,7 @@ slot7 = function(slot0)
 	slot2 = slot2 + slot3
 	slot0.endTime = slot2
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.startTime = slot2
 
 	return
@@ -122,7 +122,7 @@ slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.endTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #0 ---
 
 	if slot1 > slot2 then
@@ -160,7 +160,7 @@ slot2.checkLoadingFinished = slot7
 slot7 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.startTime
 	slot1 = slot1 - slot2
 	slot2 = slot0.endTime

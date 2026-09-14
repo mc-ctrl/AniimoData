@@ -18,7 +18,7 @@ slot4 = function(slot0)
 	slot1 = {}
 	slot0.timelineList = slot1
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.lastTickTime = slot1
 
 	return
@@ -85,7 +85,7 @@ slot3.addTimeline = slot4
 slot4 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastTickTime
 	slot2 = slot1 - slot2
 	slot3 = nil

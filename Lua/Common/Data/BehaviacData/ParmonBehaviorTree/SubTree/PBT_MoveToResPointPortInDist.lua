@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
+	version = 8,
 	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_MoveToResPointPortInDist",
-	version = 8
+	name = "ParmonBehaviorTree/SubTree/PBT_MoveToResPointPortInDist"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -18,22 +18,22 @@ slot4 = {}
 slot5 = {
 	type = "int",
 	name = "tPointId",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	type = "int",
 	name = "tPortId",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
 	type = "float",
 	name = "tTimeout",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
@@ -48,36 +48,36 @@ slot4[4] = slot5
 slot5 = {
 	type = "float",
 	name = "tSpeed",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
 	type = "float",
 	name = "tInteractDist",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[6] = slot5
 slot5 = {
 	type = "bool",
 	name = "tIgnoreSelfBodySize",
-	value = "true",
-	const = true
+	const = true,
+	value = "true"
 }
 slot4[7] = slot5
 slot5 = {
 	type = "bool",
 	name = "tIgnorePointBodySize",
-	value = "true",
-	const = true
+	const = true,
+	value = "true"
 }
 slot4[8] = slot5
 slot5 = {
 	type = "bool",
 	name = "tUseAccurateArrive",
-	value = "false",
-	const = false
+	const = false,
+	value = "false"
 }
 slot4[9] = slot5
 slot3.pars = slot4

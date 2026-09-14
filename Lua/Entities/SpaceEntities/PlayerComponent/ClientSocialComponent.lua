@@ -1,4 +1,4 @@
---- BLOCK #0 1-37, warpins: 1 ---
+--- BLOCK #0 1-45, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -11,11 +11,14 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Common.Const.SocialConst"
 slot3 = slot3(slot5)
-slot4 = slot0.Component
-slot6 = "ClientSocialComponent"
+slot4 = require
+slot6 = "SDK.Platform.PlatformSocialService"
 slot4 = slot4(slot6)
+slot5 = slot0.Component
+slot7 = "ClientSocialComponent"
+slot5 = slot5(slot7)
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = nil
 	slot0.curSocialInfo = slot1
@@ -27,9 +30,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.ctor = slot5
+slot5.ctor = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = unpack
 	slot6 = slot3
@@ -82,20 +85,65 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.RPC_SC_SocialQueryReply = slot5
+slot5.RPC_SC_SocialQueryReply = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot4 = SocialConst
-	slot4 = slot4.SocialInviteDef
-	slot4 = slot4[slot1]
-	slot4 = slot4.clientRecvInviteFunc
-	slot5 = slot0[slot4]
-	slot7 = slot0
-	slot8 = slot2
-	slot9 = slot3
+slot6 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.queryPlayerInfo
+	slot7 = slot2
+	slot8 = nil
+	slot9 = true
 
-	slot5(slot7, slot8, slot9)
+	slot10 = function(slot0)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = PlatformSocialService
+		slot3 = slot1
+		slot1 = slot1.peekPlatformUserBlockedByLocalUser
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
+
+		--- END OF BLOCK #0 ---
+
+		if slot1 == true then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-20, warpins: 2 ---
+		slot1 = SocialConst
+		slot1 = slot1.SocialInviteDef
+		slot2 = soType
+		slot1 = slot1[slot2]
+		slot1 = slot1.clientRecvInviteFunc
+		slot2 = self
+		slot2 = slot2[slot1]
+		slot4 = self
+		slot5 = invitorUid
+		slot6 = inviteInfo
+
+		slot2(slot4, slot5, slot6)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -104,9 +152,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.RPC_SC_SocialInvite = slot5
+slot5.RPC_SC_SocialInvite = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot4 = unpack
 	slot6 = slot3
@@ -130,9 +178,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.RPC_SC_SocialInviteReply = slot5
+slot5.RPC_SC_SocialInviteReply = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.curSocialId
 	--- END OF BLOCK #0 ---
@@ -183,9 +231,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.RPC_SC_OnSocialStart = slot5
+slot5.RPC_SC_OnSocialStart = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.curSocialInfo = slot1
 	slot3 = SocialConst
@@ -208,9 +256,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4._startSocial = slot5
+slot5._startSocial = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.notNilOrEmpty
@@ -255,9 +303,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onEnterSpace = slot5
+slot5.onEnterSpace = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -389,9 +437,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.sendSocialOperation = slot5
+slot5.sendSocialOperation = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.curSocialId
 	--- END OF BLOCK #0 ---
@@ -490,9 +538,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.RPC_SC_SocialClientNotify = slot5
+slot5.RPC_SC_SocialClientNotify = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curSocialId
 	--- END OF BLOCK #0 ---
@@ -544,9 +592,128 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.RPC_SC_OnSocialEnd = slot5
+slot5.RPC_SC_OnSocialEnd = slot6
 
-return slot4
+slot6 = function(slot0, slot1, ...)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = ClientSocialComponent
+	slot2 = slot2._platformHooks
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot3 = slot2[slot0]
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot3 = slot2[slot0]
+	slot5 = slot1
+	MULTRES = ...
+	slot3 = slot3(slot5, MULTRES)
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-15, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-17, warpins: 4 ---
+	return slot3
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.serverMsg
+	slot5 = "RPC_CS_SyncPsnAuthCode"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot5.syncPsnAuthCode = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = tryPlatformHook
+	slot3 = "RPC_SC_PsnAuthCodeRequired"
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.RPC_SC_PsnAuthCodeRequired = slot7
+
+return slot5
 --- END OF BLOCK #0 ---
 
 

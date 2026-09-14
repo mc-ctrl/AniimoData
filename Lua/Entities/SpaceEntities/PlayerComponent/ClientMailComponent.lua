@@ -1,4 +1,4 @@
---- BLOCK #0 1-79, warpins: 1 ---
+--- BLOCK #0 1-83, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -62,29 +62,30 @@ end
 
 slot8.destroy = slot9
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-21, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.callService
-	slot5 = "MailService"
-	slot6 = "getUserMailList"
-	slot7 = {}
-	slot8 = slot0.uid
-	slot7[1] = slot8
-	slot7[2] = slot1
-	slot8 = Const
-	slot8 = slot8.MAIL
-	slot8 = slot8.PAGE_LIMIT
-	slot7[3] = slot8
-	slot8 = CallbackHandler
-	slot10 = slot0
-	slot11 = "_getUserMailListCallback"
-	slot8 = slot8(slot10, slot11)
-	slot9 = {}
-	slot10 = slot0.uid
-	slot9.callerId = slot10
+slot9 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-22, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.callService
+	slot6 = "MailService"
+	slot7 = "getUserMailList"
+	slot8 = {}
+	slot9 = slot0.uid
+	slot8[1] = slot9
+	slot8[2] = slot1
+	slot9 = Const
+	slot9 = slot9.MAIL
+	slot9 = slot9.PAGE_LIMIT
+	slot8[3] = slot9
+	slot9 = CallbackHandler
+	slot11 = slot0
+	slot12 = "_getUserMailListCallback"
+	slot13 = slot2
+	slot9 = slot9(slot11, slot12, slot13)
+	slot10 = {}
+	slot11 = slot0.uid
+	slot10.callerId = slot11
 
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -95,12 +96,12 @@ end
 
 slot8.getUserMailList = slot9
 
-slot9 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot1.status
+	slot4 = slot2.status
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -114,14 +115,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 5-11, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.ERROR
-	slot3 = slot3(slot5)
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.ERROR
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -129,34 +130,35 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #3 12-22, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.error
-	slot6 = "%s ClientMailComponent _getUserMailListCallback failed;"
-	slot9 = slot0
-	slot7 = slot0.repr
-	slot7 = slot7(slot9)
-	slot8 = inspect
-	slot10 = slot1
-	MULTRES = slot8(slot10)
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "%s ClientMailComponent _getUserMailListCallback failed;"
+	slot10 = slot0
+	slot8 = slot0.repr
+	slot8 = slot8(slot10)
+	slot9 = inspect
+	slot11 = slot2
+	MULTRES = slot9(slot11)
 
-	slot3(slot5, slot6, slot7, MULTRES)
+	slot4(slot6, slot7, slot8, MULTRES)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-31, warpins: 3 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot5 = slot3
-	slot3 = slot3.recvUserMailListCallback
-	slot6 = slot1
+	--- BLOCK #4 23-32, warpins: 3 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot6 = slot4
+	slot4 = slot4.recvUserMailListCallback
 	slot7 = slot2
+	slot8 = slot3
+	slot9 = slot1
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -224,6 +226,126 @@ slot9 = function(slot0, slot1, slot2, slot3)
 end
 
 slot8._getMailContentCallback = slot9
+
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = #slot1
+
+	--- END OF BLOCK #1 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-15, warpins: 2 ---
+	slot2 = {}
+	slot3 = {}
+	slot4 = ipairs
+	slot6 = slot1
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 16-25, warpins: 1 ---
+	slot9 = #slot2
+	slot9 = slot9 + 1
+	slot2[slot9] = slot8
+	slot9 = #slot3
+	slot9 = slot9 + 1
+	slot10 = IDManager
+	slot10 = slot10.strToBytes
+	slot12 = slot8
+	slot10 = slot10(slot12)
+	slot3[slot9] = slot10
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-27, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 28-45, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.callService
+	slot7 = "MailService"
+	slot8 = "getMailContents"
+	slot9 = {}
+	slot10 = slot0.uid
+	slot9[1] = slot10
+	slot9[2] = slot3
+	slot10 = CallbackHandler
+	slot12 = slot0
+	slot13 = "_getMailContentsCallback"
+	slot14 = slot2
+	slot10 = slot10(slot12, slot13, slot14)
+	slot11 = {}
+	slot12 = slot0.uid
+	slot11.callerId = slot12
+
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot8.getMailContents = slot9
+
+slot9 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot6 = slot4
+	slot4 = slot4.recvMailContentsCallback
+	slot7 = slot2
+	slot8 = slot3
+	slot9 = slot1
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8._getMailContentsCallback = slot9
 
 slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---

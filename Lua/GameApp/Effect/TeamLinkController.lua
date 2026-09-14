@@ -1,4 +1,4 @@
---- BLOCK #0 1-70, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -162,47 +162,58 @@ slot17 = function(slot0)
 	slot0 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot3 = slot0
+	--- BLOCK #1 3-5, warpins: 1 ---
 	slot1 = slot0.isControllingPet
-	slot1 = slot1(slot3)
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 8-12, warpins: 1 ---
+	--- BLOCK #2 6-10, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.getCurPetEntity
+	slot1 = slot0.isControllingPet
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 13-13, warpins: 3 ---
-	slot1 = slot0
-
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCurPetEntity
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 14-14, warpins: 2 ---
-	return slot1
+	--- BLOCK #4 16-16, warpins: 4 ---
+	slot1 = slot0
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #5 ---
 
 
 
@@ -371,6 +382,312 @@ slot18 = function(slot0, slot1)
 end
 
 slot7.removeFollowEff = slot18
+
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot1.eModel
+
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot3 = slot1.teamHandEffectId
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-17, warpins: 1 ---
+	slot3 = slot1.eModel
+	slot5 = slot3
+	slot3 = slot3.SetEffectVisibleById
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_EFFECT
+	slot7 = slot1.teamHandEffectId
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-20, warpins: 2 ---
+	slot3 = slot1.teamFollowEffectId
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-28, warpins: 1 ---
+	slot3 = slot1.eModel
+	slot5 = slot3
+	slot3 = slot3.SetEffectVisibleById
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_EFFECT
+	slot7 = slot1.teamFollowEffectId
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot7.setEntityLinkEffectVisible = slot18
+
+slot18 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.setEntityLinkEffectVisible
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = getControlEnt
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-15, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setEntityLinkEffectVisible
+	slot7 = slot3
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.setFollowLinkEffectVisible = slot18
+
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = slot0.followInfo
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot2 = slot0.follow2LeaderMap
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-10, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-14, warpins: 1 ---
+	slot3 = slot0.followInfo
+	slot3 = slot3[slot2]
+
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-15, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 16-21, warpins: 2 ---
+	slot3 = false
+	slot4 = pairs
+	slot6 = slot0.followInfo
+	slot6 = slot6[slot2]
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #7 22-27, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.getEntityByUid
+	slot11 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #7 ---
+
+	if slot9 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 28-33, warpins: 1 ---
+	slot10 = slot9.followState
+	slot11 = Const
+	slot11 = slot11.SpaceFollowMemberState
+	slot11 = slot11.OutOfRange
+	--- END OF BLOCK #8 ---
+
+	if slot10 == slot11 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 34-35, warpins: 2 ---
+	slot10 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 36-36, warpins: 1 ---
+	slot10 = true
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 37-43, warpins: 2 ---
+	slot13 = slot0
+	slot11 = slot0.setFollowLinkEffectVisible
+	slot14 = slot9
+	slot15 = slot10
+
+	slot11(slot13, slot14, slot15)
+
+	--- END OF BLOCK #11 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 44-44, warpins: 1 ---
+	slot3 = slot10
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 45-46, warpins: 3 ---
+	--- END OF BLOCK #13 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 47-55, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setFollowLinkEffectVisible
+	slot7 = pg
+	slot7 = slot7.getEntityByUid
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot7.refreshOutOfRangeEffectVisible = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -799,75 +1116,88 @@ end
 slot7.addHandEffect = slot18
 
 slot18 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByUid
-	slot5 = slot1
+	slot5 = slot2
 	slot3 = slot3(slot5)
-	slot4 = getControlEnt
-	slot6 = slot3
-	slot4 = slot4(slot6)
-	slot3 = slot4
-
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-11, warpins: 1 ---
-	return
-
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot4 = getControlEnt
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot3 = slot4
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-21, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.addLeaderEff
-	slot7 = slot1
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #2 11-20, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.getEntityByUid
-	slot6 = slot2
+	slot6 = slot1
 	slot4 = slot4(slot6)
+	slot5 = getControlEnt
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	slot4 = slot5
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 22-25, warpins: 1 ---
-	slot5 = getControlEnt
-	slot7 = slot4
-	slot5 = slot5(slot7)
-	slot4 = slot5
+	--- BLOCK #3 21-26, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.setFollowLinkEffectVisible
+	slot8 = slot3
+	slot9 = false
+
+	slot5(slot7, slot8, slot9)
+
+	return
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 26-27, warpins: 2 ---
+	--- BLOCK #4 27-33, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.addLeaderEff
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	slot5 = slot4.teamHandEffectId
 	--- END OF BLOCK #4 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 28-28, warpins: 1 ---
+	--- BLOCK #5 34-39, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.setFollowLinkEffectVisible
+	slot8 = slot3
+	slot9 = false
+
+	slot5(slot7, slot8, slot9)
+
 	return
 
 	--- END OF BLOCK #5 ---
@@ -875,82 +1205,301 @@ slot18 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-31, warpins: 2 ---
-	slot5 = slot4.teamHandEffectId
+	--- BLOCK #6 40-42, warpins: 2 ---
+	slot5 = slot4.eModel
 	--- END OF BLOCK #6 ---
 
-	slot5 = if not slot5 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 32-36, warpins: 1 ---
+	--- BLOCK #7 43-49, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.hasEModelComponent
+	slot8 = Const
+	slot8 = slot8.COMPONENT_INDEX_EFFECT
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 50-55, warpins: 2 ---
 	slot7 = slot0
-	slot5 = slot0.addHandEffect
-	slot8 = slot4
+	slot5 = slot0.setFollowLinkEffectVisible
+	slot8 = slot3
 	slot9 = false
 
 	slot5(slot7, slot8, slot9)
 
-	--- END OF BLOCK #7 ---
+	return
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 37-39, warpins: 2 ---
-	slot5 = slot4.teamFollowEffectId
 	--- END OF BLOCK #8 ---
 
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 56-64, warpins: 2 ---
+	slot5 = slot4.eModel
+	slot7 = slot5
+	slot5 = slot5.GetEffect
+	slot8 = Const
+	slot8 = slot8.COMPONENT_INDEX_EFFECT
+	slot9 = slot4.teamHandEffectId
+	slot5 = slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #9 ---
+
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #9
-	else
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 40-70, warpins: 1 ---
-	slot5 = slot4.eModel
-	slot5 = slot5.effectComponent
-	slot7 = slot5
-	slot5 = slot5.GetEffect
-	slot8 = slot4.teamHandEffectId
-	slot5 = slot5(slot7, slot8)
-	slot8 = slot4
-	slot6 = slot4.playEffectOn
-	slot9 = LINK_EFF_ID
-	slot10 = nil
-	slot11 = slot5
-	slot12 = true
-	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
-	slot4.teamFollowEffectId = slot6
-	slot6 = slot4.eModel
-	slot6 = slot6.effectComponent
+	--- BLOCK #10 65-70, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.setFollowLinkEffectVisible
+	slot9 = slot3
+	slot10 = false
+
+	slot6(slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 71-72, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 73-73, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 74-76, warpins: 2 ---
+	slot6 = slot3.teamHandEffectId
+	--- END OF BLOCK #13 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 77-81, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.addHandEffect
+	slot9 = slot3
+	slot10 = false
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 82-84, warpins: 2 ---
+	slot6 = slot3.teamHandEffectId
+	--- END OF BLOCK #15 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 85-90, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.setFollowLinkEffectVisible
+	slot9 = slot3
+	slot10 = false
+
+	slot6(slot8, slot9, slot10)
+
+	return
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 91-93, warpins: 2 ---
+	slot6 = slot3.eModel
+	--- END OF BLOCK #17 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 94-100, warpins: 1 ---
+	slot8 = slot3
+	slot6 = slot3.hasEModelComponent
+	slot9 = Const
+	slot9 = slot9.COMPONENT_INDEX_EFFECT
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #18 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 101-106, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.setFollowLinkEffectVisible
+	slot9 = slot3
+	slot10 = false
+
+	slot6(slot8, slot9, slot10)
+
+	return
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 107-109, warpins: 2 ---
+	slot6 = slot3.teamFollowEffectId
+	--- END OF BLOCK #20 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #21 110-118, warpins: 1 ---
+	slot6 = slot3.eModel
 	slot8 = slot6
 	slot6 = slot6.GetEffect
-	slot9 = slot4.teamFollowEffectId
-	slot6 = slot6(slot8, slot9)
+	slot9 = Const
+	slot9 = slot9.COMPONENT_INDEX_EFFECT
+	slot10 = slot3.teamHandEffectId
+	slot6 = slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #21 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 119-124, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.setFollowLinkEffectVisible
+	slot10 = slot3
+	slot11 = false
+
+	slot7(slot9, slot10, slot11)
+
+	return
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 125-132, warpins: 2 ---
+	slot9 = slot3
+	slot7 = slot3.playEffectOn
+	slot10 = LINK_EFF_ID
+	slot11 = nil
+	slot12 = slot6
+	slot13 = true
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13)
+	slot3.teamFollowEffectId = slot7
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 133-141, warpins: 2 ---
+	slot6 = slot3.eModel
+	slot8 = slot6
+	slot6 = slot6.GetEffect
+	slot9 = Const
+	slot9 = slot9.COMPONENT_INDEX_EFFECT
+	slot10 = slot3.teamFollowEffectId
+	slot6 = slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #24 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 142-152, warpins: 1 ---
 	slot7 = TeamLinkCustomEffect
 	slot7 = slot7.GetOrAdd
 	slot9 = slot6
 	slot7 = slot7(slot9)
-	slot8 = slot3.eModel
-	slot8 = slot8.effectComponent
-	slot10 = slot8
-	slot8 = slot8.GetEffect
-	slot11 = slot3.teamHandEffectId
-	slot8 = slot8(slot10, slot11)
-	slot7.linkTarget = slot8
+	slot7.linkTarget = slot5
+	slot10 = slot0
+	slot8 = slot0.setFollowLinkEffectVisible
+	slot11 = slot3
+	slot12 = true
 
-	--- END OF BLOCK #9 ---
+	slot8(slot10, slot11, slot12)
 
-	FLOW; TARGET BLOCK #10
+	--- END OF BLOCK #25 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #10 71-71, warpins: 2 ---
+	--- BLOCK #26 153-157, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.setFollowLinkEffectVisible
+	slot10 = slot3
+	slot11 = false
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 158-162, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.refreshOutOfRangeEffectVisible
+	slot10 = slot1
+
+	slot7(slot9, slot10)
+
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #27 ---
 
 
 
@@ -1109,7 +1658,7 @@ slot18 = function(slot0, slot1, slot2, slot3)
 	slot2 = if not slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
@@ -1123,7 +1672,7 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
 	--- BLOCK #8 34-37, warpins: 2 ---
@@ -1188,7 +1737,7 @@ slot18 = function(slot0, slot1, slot2, slot3)
 	slot6 = if slot6 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
@@ -1241,19 +1790,30 @@ slot18 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 77-79, warpins: 2 ---
+	--- BLOCK #17 77-80, warpins: 2 ---
 	slot6 = slot0.followInfo
 	slot7 = nil
 	slot6[slot4] = slot7
-
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 80-80, warpins: 5 ---
-	return
+	--- BLOCK #18 81-84, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.refreshOutOfRangeEffectVisible
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 85-85, warpins: 5 ---
+	return
+	--- END OF BLOCK #19 ---
 
 
 
@@ -1367,7 +1927,7 @@ slot18 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #38
 	end
 
 
@@ -1397,41 +1957,181 @@ slot18 = function(slot0, slot1)
 
 	--- BLOCK #2 19-21, warpins: 1 ---
 	slot3 = slot2.teamHandEffectId
-
 	--- END OF BLOCK #2 ---
 
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #3 22-22, warpins: 2 ---
-	return
-
+	--- BLOCK #3 22-26, warpins: 2 ---
+	slot3 = pairs
+	slot5 = slot0.followInfo
+	slot5 = slot5[slot1]
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 23-30, warpins: 2 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.effectComponent
-	slot5 = slot3
-	slot3 = slot3.GetEffect
-	slot6 = slot2.teamHandEffectId
-	slot3 = slot3(slot5, slot6)
+	--- BLOCK #4 27-34, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getEntityByUid
+	slot10 = slot6
+	slot8 = slot8(slot10)
+	slot11 = slot0
+	slot9 = slot0.setFollowLinkEffectVisible
 	--- END OF BLOCK #4 ---
 
-	slot3 = if not slot3 then
+	slot12 = if slot8 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 31-38, warpins: 1 ---
+	--- BLOCK #5 35-37, warpins: 1 ---
+	slot12 = getControlEnt
+	slot14 = slot8
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-39, warpins: 2 ---
+	slot13 = false
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 40-41, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 42-42, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 43-45, warpins: 2 ---
+	slot3 = slot2.eModel
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 46-52, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.hasEModelComponent
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_EFFECT
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #10 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #11 53-57, warpins: 2 ---
+	slot3 = pairs
+	slot5 = slot0.followInfo
+	slot5 = slot5[slot1]
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #12 58-65, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getEntityByUid
+	slot10 = slot6
+	slot8 = slot8(slot10)
+	slot11 = slot0
+	slot9 = slot0.setFollowLinkEffectVisible
+	--- END OF BLOCK #12 ---
+
+	slot12 = if slot8 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 66-68, warpins: 1 ---
+	slot12 = getControlEnt
+	slot14 = slot8
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 69-70, warpins: 2 ---
+	slot13 = false
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 71-72, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #16
+
+
+	--- BLOCK #16 73-73, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 74-82, warpins: 2 ---
+	slot3 = slot2.eModel
+	slot5 = slot3
+	slot3 = slot3.GetEffect
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_EFFECT
+	slot7 = slot2.teamHandEffectId
+	slot3 = slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #17 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #18 83-94, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
 	slot4 = slot4.logger
@@ -1441,100 +2141,202 @@ slot18 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	return
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 39-43, warpins: 2 ---
 	slot4 = pairs
 	slot6 = slot0.followInfo
 	slot6 = slot6[slot1]
 	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #7 44-49, warpins: 1 ---
+	--- BLOCK #19 95-102, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getEntityByUid
 	slot11 = slot7
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #7 ---
+	slot12 = slot0
+	slot10 = slot0.setFollowLinkEffectVisible
+	--- END OF BLOCK #19 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #8
+	slot13 = if slot9 then
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #8 50-55, warpins: 1 ---
+	--- BLOCK #20 103-105, warpins: 1 ---
+	slot13 = getControlEnt
+	slot15 = slot9
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 106-107, warpins: 2 ---
+	slot14 = false
+
+	slot10(slot12, slot13, slot14)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 108-109, warpins: 2 ---
+	--- END OF BLOCK #22 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #19
+	GO OUT TO BLOCK #23
+
+
+	--- BLOCK #23 110-110, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 111-115, warpins: 2 ---
+	slot4 = pairs
+	slot6 = slot0.followInfo
+	slot6 = slot6[slot1]
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #25 116-121, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.getEntityByUid
+	slot11 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #25 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #26 122-127, warpins: 1 ---
 	slot10 = getControlEnt
 	slot12 = slot9
 	slot10 = slot10(slot12)
 	slot9 = slot10
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #26 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #9 56-58, warpins: 1 ---
+	--- BLOCK #27 128-130, warpins: 1 ---
 	slot10 = slot9.teamFollowEffectId
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #27 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #10 59-66, warpins: 1 ---
+	--- BLOCK #28 131-137, warpins: 1 ---
+	slot12 = slot9
+	slot10 = slot9.hasEModelComponent
+	slot13 = Const
+	slot13 = slot13.COMPONENT_INDEX_EFFECT
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #28 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #29 138-146, warpins: 1 ---
 	slot10 = slot9.eModel
-	slot10 = slot10.effectComponent
 	slot12 = slot10
 	slot10 = slot10.GetEffect
-	slot13 = slot9.teamFollowEffectId
-	slot10 = slot10(slot12, slot13)
-	--- END OF BLOCK #10 ---
+	slot13 = Const
+	slot13 = slot13.COMPONENT_INDEX_EFFECT
+	slot14 = slot9.teamFollowEffectId
+	slot10 = slot10(slot12, slot13, slot14)
+	--- END OF BLOCK #29 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #11
+	slot10 = if slot10 then
+	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #11 67-72, warpins: 1 ---
+	--- BLOCK #30 147-152, warpins: 1 ---
 	slot11 = TeamLinkCustomEffect
 	slot11 = slot11.GetOrAdd
 	slot13 = slot10
 	slot11 = slot11(slot13)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #30 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #12 73-74, warpins: 1 ---
+	--- BLOCK #31 153-159, warpins: 1 ---
 	slot11.linkTarget = slot3
-	--- END OF BLOCK #12 ---
+	slot14 = slot0
+	slot12 = slot0.setFollowLinkEffectVisible
+	slot15 = slot9
+	slot16 = true
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	slot12(slot14, slot15, slot16)
+
+	--- END OF BLOCK #31 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #13 75-80, warpins: 2 ---
+	--- BLOCK #32 160-165, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.setFollowLinkEffectVisible
+	slot15 = slot9
+	slot16 = false
+
+	slot12(slot14, slot15, slot16)
+
+	--- END OF BLOCK #32 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #33 166-171, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.setFollowLinkEffectVisible
+	slot14 = slot9
+	slot15 = false
+
+	slot11(slot13, slot14, slot15)
+
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #34 172-177, warpins: 3 ---
 	slot12 = slot0
 	slot10 = slot0.addFollowEff
 	slot13 = slot1
@@ -1542,12 +2344,12 @@ slot18 = function(slot0, slot1)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #14 81-88, warpins: 1 ---
+	--- BLOCK #35 178-185, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.me
 	slot10 = slot10.logger
@@ -1558,40 +2360,46 @@ slot18 = function(slot0, slot1)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #15 89-90, warpins: 6 ---
-	--- END OF BLOCK #15 ---
+	--- BLOCK #36 186-187, warpins: 6 ---
+	--- END OF BLOCK #36 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #16
+	LOOP BLOCK #25
+	GO OUT TO BLOCK #37
 
 
-	--- BLOCK #16 91-91, warpins: 1 ---
+	--- BLOCK #37 188-192, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.refreshOutOfRangeEffectVisible
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
 	return
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #37 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #38
 
 
-	--- BLOCK #17 92-95, warpins: 2 ---
+	--- BLOCK #38 193-196, warpins: 2 ---
 	slot2 = slot0.follow2LeaderMap
 	slot2 = slot2[slot1]
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #38 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #18 96-101, warpins: 1 ---
+	--- BLOCK #39 197-202, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.addFollowEff
 	slot5 = slot0.follow2LeaderMap
@@ -1600,14 +2408,14 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #39 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #19 102-102, warpins: 2 ---
+	--- BLOCK #40 203-203, warpins: 2 ---
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #40 ---
 
 
 

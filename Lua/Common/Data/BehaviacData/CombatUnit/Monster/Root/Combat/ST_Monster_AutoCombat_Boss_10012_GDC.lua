@@ -1,4 +1,4 @@
---- BLOCK #0 1-5680, warpins: 1 ---
+--- BLOCK #0 1-5599, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -9,8 +9,8 @@ slot2 = {}
 slot3 = {
 	useForRoute = false,
 	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10012_GDC",
-	version = 14
+	version = 16,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10012_GDC"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -457,11 +457,11 @@ slot20 = {}
 slot19.properties = slot20
 slot20 = {}
 slot21 = {
-	effector = false,
-	transition = false,
-	id = "42",
 	precondition = true,
-	class = "Precondition"
+	id = "42",
+	class = "Precondition",
+	transition = false,
+	effector = false
 }
 slot22 = {}
 slot23 = {
@@ -964,60 +964,6 @@ slot18.node = slot19
 slot17[4] = slot18
 slot18 = {}
 slot19 = {
-	id = "38",
-	class = "Action"
-}
-slot20 = {}
-slot21 = {}
-slot22 = {
-	func = "castSkill"
-}
-slot23 = {}
-slot24 = {
-	field = "tgt"
-}
-slot23[1] = slot24
-slot24 = {
-	const = 10120603
-}
-slot23[2] = slot24
-slot24 = {
-	const = false
-}
-slot23[3] = slot24
-slot24 = {
-	const = 0
-}
-slot23[4] = slot24
-slot24 = {
-	const = true
-}
-slot23[5] = slot24
-slot24 = {}
-slot25 = slot0.CastAbilitySourceType
-slot25 = slot25.Normal
-slot24.const = slot25
-slot23[6] = slot24
-slot22.params = slot23
-slot21.Method = slot22
-slot20[1] = slot21
-slot21 = {
-	ResultOption = "BT_INVALID"
-}
-slot20[2] = slot21
-slot21 = {
-	ResultResumeOption = "BT_ResumeSelf"
-}
-slot20[3] = slot21
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot19.children = slot20
-slot18.node = slot19
-slot17[5] = slot18
-slot18 = {}
-slot19 = {
 	id = "39",
 	class = "Action"
 }
@@ -1040,6 +986,43 @@ slot21 = {
 slot20[2] = slot21
 slot21 = {
 	ResultResumeOption = "BT_None"
+}
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[5] = slot18
+slot18 = {}
+slot19 = {
+	id = "412",
+	class = "Action"
+}
+slot20 = {}
+slot21 = {}
+slot22 = {
+	func = "addBuff"
+}
+slot23 = {}
+slot24 = {
+	const = 1000601
+}
+slot23[1] = slot24
+slot24 = {
+	const = 8
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Method = slot22
+slot20[1] = slot21
+slot21 = {
+	ResultOption = "BT_INVALID"
+}
+slot20[2] = slot21
+slot21 = {
+	ResultResumeOption = "BT_ResumeTree"
 }
 slot20[3] = slot21
 slot19.properties = slot20
@@ -1473,60 +1456,6 @@ slot32 = {}
 slot31.children = slot32
 slot30.node = slot31
 slot29[3] = slot30
-slot30 = {}
-slot31 = {
-	id = "58",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "castSkill"
-}
-slot35 = {}
-slot36 = {
-	field = "tgt"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 10120603
-}
-slot35[2] = slot36
-slot36 = {
-	const = false
-}
-slot35[3] = slot36
-slot36 = {
-	const = 0
-}
-slot35[4] = slot36
-slot36 = {
-	const = true
-}
-slot35[5] = slot36
-slot36 = {}
-slot37 = slot0.CastAbilitySourceType
-slot37 = slot37.Normal
-slot36.const = slot37
-slot35[6] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[4] = slot30
 slot28.children = slot29
 slot27.node = slot28
 slot26[2] = slot27
@@ -1811,60 +1740,6 @@ slot32 = {}
 slot31.children = slot32
 slot30.node = slot31
 slot29[3] = slot30
-slot30 = {}
-slot31 = {
-	id = "72",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "castSkill"
-}
-slot35 = {}
-slot36 = {
-	field = "tgt"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 10120603
-}
-slot35[2] = slot36
-slot36 = {
-	const = false
-}
-slot35[3] = slot36
-slot36 = {
-	const = 0
-}
-slot35[4] = slot36
-slot36 = {
-	const = true
-}
-slot35[5] = slot36
-slot36 = {}
-slot37 = slot0.CastAbilitySourceType
-slot37 = slot37.Normal
-slot36.const = slot37
-slot35[6] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[4] = slot30
 slot28.children = slot29
 slot27.node = slot28
 slot26[1] = slot27
@@ -3607,11 +3482,11 @@ slot26 = {}
 slot25.properties = slot26
 slot26 = {}
 slot27 = {
-	effector = false,
-	transition = false,
-	id = "152",
 	precondition = true,
-	class = "Precondition"
+	id = "152",
+	class = "Precondition",
+	transition = false,
+	effector = false
 }
 slot28 = {}
 slot29 = {
@@ -5333,11 +5208,11 @@ slot26 = {}
 slot25.properties = slot26
 slot26 = {}
 slot27 = {
-	effector = false,
-	transition = false,
-	id = "152",
 	precondition = true,
-	class = "Precondition"
+	id = "152",
+	class = "Precondition",
+	transition = false,
+	effector = false
 }
 slot28 = {}
 slot29 = {

@@ -1,4 +1,4 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -21,10 +21,14 @@ slot5 = slot5(slot7, slot8)
 slot6 = require
 slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
-slot7 = {}
-slot5.messages = slot7
+slot7 = require
+slot9 = "Utils.LuaUIUtils"
+slot7 = slot7(slot9)
+slot8 = "loadingValue"
+slot9 = {}
+slot5.messages = slot9
 
-slot7 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -40,9 +44,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.onCreate = slot7
+slot5.onCreate = slot9
 
-slot7 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -51,16 +55,19 @@ slot7 = function(slot0)
 
 end
 
-slot5.addListener = slot7
+slot5.addListener = slot9
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot9 = function(slot0)
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = DoTweenAnimMgr
 	slot1 = slot1.Kill
 	slot3 = slot0.view
 	slot3 = slot3.widget
 	slot3 = slot3.gameObject
-	slot4 = "loadingValue"
+	slot4 = LuaUIUtils
+	slot4 = slot4.TweenId
+	slot6 = LOADING_VALUE_TWEEN_ID
+	slot4 = slot4(slot6)
 	slot5 = true
 
 	slot1(slot3, slot4, slot5)
@@ -78,10 +85,10 @@ slot7 = function(slot0)
 
 end
 
-slot5.onDestroy = slot7
+slot5.onDestroy = slot9
 
-slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-43, warpins: 1 ---
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-46, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -107,7 +114,10 @@ slot7 = function(slot0, slot1)
 	slot4 = slot4.gameObject
 	slot5 = 0
 	slot6 = 100
-	slot7 = "loadingValue"
+	slot7 = LuaUIUtils
+	slot7 = slot7.TweenId
+	slot9 = LOADING_VALUE_TWEEN_ID
+	slot7 = slot7(slot9)
 	slot8 = 1.5
 	slot9 = 0.37
 	slot10 = CS
@@ -196,9 +206,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot5.onOpen = slot7
+slot5.onOpen = slot9
 
-slot7 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -207,9 +217,9 @@ slot7 = function(slot0)
 
 end
 
-slot5.onShow = slot7
+slot5.onShow = slot9
 
-slot7 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -218,7 +228,7 @@ slot7 = function(slot0)
 
 end
 
-slot5.onHide = slot7
+slot5.onHide = slot9
 
 return slot5
 --- END OF BLOCK #0 ---

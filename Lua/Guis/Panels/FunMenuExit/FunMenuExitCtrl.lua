@@ -1,4 +1,4 @@
---- BLOCK #0 1-82, warpins: 1 ---
+--- BLOCK #0 1-88, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -63,7 +63,15 @@ end
 slot7.addListener = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.npcDuelInfoTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.npcDuelInfoTimer = slot1
 	slot3 = slot0
 	slot1 = slot0.resumeGameTime
 
@@ -85,7 +93,7 @@ end
 slot7.onDestroy = slot9
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-38, warpins: 1 ---
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -109,6 +117,68 @@ slot9 = function(slot0, slot1)
 
 	slot2(slot4)
 
+	slot2 = pg
+	slot2 = slot2.space
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 20-26, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.space
+	slot4 = slot2
+	slot2 = slot2.isNpcDuel
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 27-37, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "State"
+	slot6 = "BattleRoom"
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.loadNpcDuelInfo
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 38-44, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "State"
+	slot6 = "Normal"
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 45-67, warpins: 2 ---
 	slot2 = LuaUIUtils
 	slot2 = slot2.setCommonConsoleBarList
 	slot4 = slot0.view
@@ -138,7 +208,7 @@ slot9 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -191,12 +261,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #2 11-19, warpins: 1 ---
+	--- BLOCK #2 11-21, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
-	slot1 = slot1.pauseGameByName
-	slot4 = "FunMenuExitCtrl"
+	slot1 = slot1.pauseGameByType
+	slot4 = Const
+	slot4 = slot4.GameTimeScaleType
+	slot4 = slot4.FUNC_MENU_EXIT
 	slot5 = -1
 
 	slot1(slot3, slot4, slot5)
@@ -209,7 +281,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-20, warpins: 3 ---
+	--- BLOCK #3 22-22, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -243,12 +315,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #2 8-15, warpins: 1 ---
+	--- BLOCK #2 8-17, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
-	slot1 = slot1.resumeGameByName
-	slot4 = "FunMenuExitCtrl"
+	slot1 = slot1.resumeGameByType
+	slot4 = Const
+	slot4 = slot4.GameTimeScaleType
+	slot4 = slot4.FUNC_MENU_EXIT
 
 	slot1(slot3, slot4)
 
@@ -260,7 +334,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-16, warpins: 3 ---
+	--- BLOCK #3 18-18, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1549,6 +1623,529 @@ slot9 = function(slot0)
 end
 
 slot7.checkUIShowVirtualMouseCursor = slot9
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.battleRoomInfoUContainer
+	slot3 = slot1
+	slot1 = slot1.CheckURLLoaded
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-21, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.battleRoomInfoUContainer
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.battleRoomInfoUContainer
+	slot1 = slot1.content
+	slot2 = IsNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 22-26, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshNpcDuelInfo
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 27-32, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.battleRoomInfoUContainer
+	slot3 = slot1
+	slot1 = slot1.LoadDefaultUrlManually
+
+	slot4 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = IsNil
+		slot3 = slot0
+		slot1 = slot1(slot3)
+
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-12, warpins: 2 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshNpcDuelInfo
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 33-34, warpins: 3 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot7.loadNpcDuelInfo = slot9
+
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-50, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "textUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "listUList"
+	slot4 = slot4(slot6, slot7)
+
+	slot5 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-19, warpins: 1 ---
+		slot5 = slot0
+		slot3 = slot0.GetComponent
+		slot6 = "ObjectReference"
+		slot3 = slot3(slot5, slot6)
+		slot6 = slot3
+		slot4 = slot3.GetRefValue
+		slot7 = "txtNameUSDFText"
+		slot4 = slot4(slot6, slot7)
+		slot7 = slot3
+		slot5 = slot3.GetRefValue
+		slot8 = "skillBuffUComponent"
+		slot5 = slot5(slot7, slot8)
+		slot8 = slot3
+		slot6 = slot3.GetRefValue
+		slot9 = "textUSDFText"
+		slot6 = slot6(slot8, slot9)
+		slot7 = slot2.buffInfo
+		--- END OF BLOCK #0 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 20-52, warpins: 1 ---
+		slot7 = slot5.gameObject
+		slot9 = slot7
+		slot7 = slot7.SetActiveEx
+		slot10 = true
+
+		slot7(slot9, slot10)
+
+		slot7 = slot5.gameObject
+		slot9 = slot7
+		slot7 = slot7.GetComponent
+		slot10 = "ObjectReference"
+		slot7 = slot7(slot9, slot10)
+		slot10 = slot7
+		slot8 = slot7.GetRefValue
+		slot11 = "iconUImage"
+		slot8 = slot8(slot10, slot11)
+		slot9 = slot2.buffInfo
+		slot10 = ClientTextUtils
+		slot10 = slot10.setText
+		slot12 = slot4
+		slot13 = pg
+		slot13 = slot13.getGameString
+		slot15 = "NPCDUEL_BATTLE_FIELD_EFFECT"
+		MULTRES = slot13(slot15)
+
+		slot10(slot12, MULTRES)
+
+		slot10 = ClientTextUtils
+		slot10 = slot10.setText
+		slot12 = slot6
+		slot13 = slot9.buffName
+
+		slot10(slot12, slot13)
+
+		slot10 = slot9.buffIcon
+		slot8.url = slot10
+
+		slot10 = function(slot0, slot1)
+			--- BLOCK #0 1-6, warpins: 1 ---
+			slot2 = self
+			slot4 = slot2
+			slot2 = slot2.RenderNpcDuelBuffPopup
+			slot5 = slot1
+
+			slot2(slot4, slot5)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot5.luaRenderTooltip = slot10
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #2 53-55, warpins: 1 ---
+		slot7 = slot2.winConditon
+		--- END OF BLOCK #2 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 56-73, warpins: 1 ---
+		slot7 = slot5.gameObject
+		slot9 = slot7
+		slot7 = slot7.SetActiveEx
+		slot10 = false
+
+		slot7(slot9, slot10)
+
+		slot7 = ClientTextUtils
+		slot7 = slot7.setText
+		slot9 = slot4
+		slot10 = pg
+		slot10 = slot10.getGameString
+		slot12 = "NPCDUEL_BATTLE_WIN_CONDITION"
+		MULTRES = slot10(slot12)
+
+		slot7(slot9, MULTRES)
+
+		slot7 = ClientTextUtils
+		slot7 = slot7.setText
+		slot9 = slot6
+		slot10 = slot2.winConditon
+
+		slot7(slot9, slot10)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 74-74, warpins: 3 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot4.luaRenderItem = slot5
+	slot5 = pg
+	slot5 = slot5.space
+	slot7 = slot5
+	slot5 = slot5.npcDuelLeftTime
+	slot5 = slot5(slot7)
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot3
+	slot9 = LuaUIUtils
+	slot9 = slot9.getCountDownFormateText
+	slot11 = slot5
+	slot12 = false
+	MULTRES = slot9(slot11, slot12)
+
+	slot6(slot8, MULTRES)
+
+	slot8 = slot0
+	slot6 = slot0.killTimer
+	slot9 = slot0.npcDuelInfoTimer
+
+	slot6(slot8, slot9)
+
+	slot8 = slot0
+	slot6 = slot0.startTimer
+
+	slot9 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.space
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.space
+		slot0 = slot0.npcDuelLeftTime
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 10-24, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.space
+		slot2 = slot0
+		slot0 = slot0.npcDuelLeftTime
+		slot0 = slot0(slot2)
+		slot1 = ClientTextUtils
+		slot1 = slot1.setText
+		slot3 = textUSDFText
+		slot4 = LuaUIUtils
+		slot4 = slot4.getCountDownFormateText
+		slot6 = slot0
+		slot7 = false
+		MULTRES = slot4(slot6, slot7)
+
+		slot1(slot3, MULTRES)
+
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 25-33, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.killTimer
+		slot3 = self
+		slot3 = slot3.npcDuelInfoTimer
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot1 = nil
+		slot0.npcDuelInfoTimer = slot1
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 34-34, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot10 = 1
+	slot11 = true
+	slot6 = slot6(slot8, slot9, slot10, slot11)
+	slot0.npcDuelInfoTimer = slot6
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.getCurBuffInfo
+	slot6 = slot6(slot8)
+	slot7 = {}
+	slot8 = next
+	slot10 = slot6
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #0 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 51-55, warpins: 1 ---
+	slot8 = #slot7
+	slot8 = slot8 + 1
+	slot9 = {}
+	slot9.buffInfo = slot6
+	slot7[slot8] = slot9
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 56-66, warpins: 2 ---
+	slot8 = pg
+	slot8 = slot8.me
+	slot10 = slot8
+	slot8 = slot8.getNpcDuelWinCondDesc
+	slot8 = slot8(slot10)
+	slot9 = string
+	slot9 = slot9.isNilOrEmpty
+	slot11 = slot8
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #2 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 67-71, warpins: 1 ---
+	slot9 = #slot7
+	slot9 = slot9 + 1
+	slot10 = {}
+	slot10.winConditon = slot8
+	slot7[slot9] = slot10
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 72-77, warpins: 2 ---
+	slot11 = slot4
+	slot9 = slot4.SetList
+	slot12 = slot7
+
+	slot9(slot11, slot12)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot7.refreshNpcDuelInfo = slot9
+
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-30, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "rootCmp"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "buffNameUText"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot2
+	slot5 = slot2.GetRefValue
+	slot8 = "buffDetailUText"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot2
+	slot6 = slot2.GetRefValue
+	slot9 = "iconUImage"
+	slot6 = slot6(slot8, slot9)
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.getCurBuffInfo
+	slot7 = slot7(slot9)
+	slot8 = next
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #0 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 31-47, warpins: 1 ---
+	slot10 = slot3
+	slot8 = slot3.TryChangePage
+	slot11 = "InfoState"
+	slot12 = "Icon"
+
+	slot8(slot10, slot11, slot12)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot4
+	slot11 = slot7.buffName
+
+	slot8(slot10, slot11)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot5
+	slot11 = slot7.buffDesc
+
+	slot8(slot10, slot11)
+
+	slot8 = slot7.buffIcon
+	slot6.url = slot8
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 48-48, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.RenderNpcDuelBuffPopup = slot9
 
 return slot7
 --- END OF BLOCK #0 ---

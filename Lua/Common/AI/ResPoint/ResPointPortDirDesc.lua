@@ -853,7 +853,12 @@ slot5 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 9-21, warpins: 1 ---
+	--- BLOCK #2 9-27, warpins: 1 ---
+	slot4 = Vector3
+	slot4 = slot4.enableCreateFromCache
+
+	slot4()
+
 	slot6 = slot0
 	slot4 = slot0.getRefDirection
 	slot7 = slot0.dirTowardsRefType
@@ -867,13 +872,17 @@ slot5 = function(slot0, slot1, slot2)
 	slot5 = slot5(MULTRES)
 	slot6 = slot0.dirTowardsAngle
 	slot3 = slot5 + slot6
+	slot5 = Vector3
+	slot5 = slot5.disableCreateFromCache
+
+	slot5()
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 22-22, warpins: 2 ---
+	--- BLOCK #3 28-28, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #3 ---
 

@@ -1169,41 +1169,39 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-52, warpins: 2 ---
+	--- BLOCK #4 21-49, warpins: 2 ---
 	slot6 = math
 	slot6 = slot6.random
 	slot8 = 1
 	slot9 = slot5
 	slot6 = slot6(slot8, slot9)
-	slot9 = slot1
-	slot7 = slot1.PushRenderItem
-	slot10 = {}
+	slot7 = {}
+	slot8 = {}
+	slot9 = pg
+	slot9 = slot9.getLocalizationText
+	slot11 = slot4[slot6]
+	slot9 = slot9(slot11)
+	slot8.name = slot9
+	slot7[1] = slot8
+	slot10 = slot1
+	slot8 = slot1.PushRenderItem
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.itemQueue
+	slot10 = slot8
+	slot8 = slot8.enQueue
 	slot11 = {}
-	slot12 = pg
-	slot12 = slot12.getLocalizationText
-	slot14 = slot4[slot6]
-	slot12 = slot12(slot14)
-	slot11.name = slot12
-	slot10[1] = slot11
+	slot11.ulist = slot1
+	slot11.itemData = slot7
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
-	slot7 = slot0.itemQueue
-	slot9 = slot7
-	slot7 = slot7.enQueue
-	slot10 = {}
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
-	slot13 = slot4[slot6]
-	slot11 = slot11(slot13)
-	slot10.name = slot11
+	slot10 = slot0
+	slot8 = slot0.startTimer
 
-	slot7(slot9, slot10)
-
-	slot9 = slot0
-	slot7 = slot0.startTimer
-
-	slot10 = function()
+	slot11 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.itemQueue
@@ -1235,10 +1233,10 @@ slot9 = function(slot0, slot1, slot2)
 
 
 		--- BLOCK #2 15-19, warpins: 1 ---
-		slot1 = ulist
+		slot1 = slot0.ulist
 		slot3 = slot1
 		slot1 = slot1.DestroyItem
-		slot4 = slot0
+		slot4 = slot0.itemData
 
 		slot1(slot3, slot4)
 
@@ -1255,17 +1253,16 @@ slot9 = function(slot0, slot1, slot2)
 
 	end
 
-	slot11 = 3
-	slot12 = true
+	slot12 = 3
 
-	slot7(slot9, slot10, slot11, slot12)
+	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 53-54, warpins: 2 ---
+	--- BLOCK #5 50-51, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 

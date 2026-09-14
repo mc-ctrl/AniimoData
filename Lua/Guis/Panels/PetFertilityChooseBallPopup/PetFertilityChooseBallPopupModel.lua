@@ -1,28 +1,31 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "PetFertilityChooseBallPopupModel"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "PetFertilityChooseBallPopupModel"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UIModel"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.Panels.PetFertilityChooseBall.PetFertilityChooseBallModel"
+slot5 = "Guis.UIModel"
 slot3 = slot3(slot5)
-slot4 = slot1.LightClass
-slot6 = "PetFertilityChooseBallPopupModel"
-slot7 = slot2
-slot4 = slot4(slot6, slot7)
-slot5 = require
-slot7 = "Common.Utils.CaptureUtils"
-slot5 = slot5(slot7)
+slot4 = require
+slot6 = "Guis.Panels.PetFertilityChooseBall.PetFertilityChooseBallModel"
+slot4 = slot4(slot6)
+slot5 = slot2.LightClass
+slot7 = "PetFertilityChooseBallPopupModel"
+slot8 = slot3
+slot5 = slot5(slot7, slot8)
+slot6 = require
+slot8 = "Common.Utils.CaptureUtils"
+slot6 = slot6(slot8)
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4)
+slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -288,9 +291,9 @@ slot6 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot4.setup = slot6
+slot5.setup = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.cubeList
 	--- END OF BLOCK #0 ---
@@ -318,9 +321,9 @@ slot6 = function(slot0)
 
 end
 
-slot4.getCubeList = slot6
+slot5.getCubeList = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.selectedItemId
 
@@ -331,9 +334,9 @@ slot6 = function(slot0)
 
 end
 
-slot4.getSelectedItemId = slot6
+slot5.getSelectedItemId = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.selectedItemId = slot1
 
@@ -344,9 +347,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot4.setSelectedItemId = slot6
+slot5.setSelectedItemId = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -380,7 +383,7 @@ slot6 = function(slot0, slot1)
 
 
 	--- BLOCK #3 9-9, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -431,9 +434,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot4.getCubeInfoById = slot6
+slot5.getCubeInfoById = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCubeInfoById
@@ -446,9 +449,9 @@ slot6 = function(slot0)
 
 end
 
-slot4.getSelectedInfo = slot6
+slot5.getSelectedInfo = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.selectedItemId
 	--- END OF BLOCK #0 ---
@@ -495,9 +498,9 @@ slot6 = function(slot0)
 
 end
 
-slot4.isSuggestSelected = slot6
+slot5.isSuggestSelected = slot7
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

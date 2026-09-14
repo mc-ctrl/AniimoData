@@ -213,41 +213,51 @@ end
 slot4.onDestroy = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-10, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.imageUImage2
 	slot2 = 0
 	slot1.renderOpacity = slot2
+	slot1 = slot0.lastFade
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.imageUImage
+	slot2 = 0
+	slot1.renderOpacity = slot2
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-19, warpins: 3 ---
 	slot1 = UICtrl
 	slot1 = slot1.close
 	slot3 = slot0
 
 	slot1(slot3)
 
-	slot1 = slot0.lastFade
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 12-15, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.imageUImage
-	slot2 = 0
-	slot1.renderOpacity = slot2
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 16-16, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
 
 

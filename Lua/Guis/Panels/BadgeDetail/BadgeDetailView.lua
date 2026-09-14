@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-117, warpins: 1 ---
+	--- BLOCK #0 1-122, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -128,6 +128,11 @@ slot4 = function(slot0)
 	slot5 = "detailsAnimation"
 	slot2 = slot2(slot4, slot5)
 	slot0.detailsAnimation = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "tagUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.tagUWidget = slot2
 	slot2 = slot0.transform
 	slot4 = slot2
 	slot2 = slot2.GetComponent

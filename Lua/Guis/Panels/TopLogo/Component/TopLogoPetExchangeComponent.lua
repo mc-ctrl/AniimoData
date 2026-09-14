@@ -1,4 +1,4 @@
---- BLOCK #0 1-46, warpins: 1 ---
+--- BLOCK #0 1-48, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -125,19 +125,41 @@ end
 slot5.findObjects = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.PET_EXCHANGE
-
-	return slot1
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.commandVisible
 	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot5.getComponentName = slot6
+slot5.shouldBeActive = slot6
 
 slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -249,17 +271,51 @@ slot5.refreshTopLogoInfo = slot6
 slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = function(slot0)
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = self
-		slot1.commandVisible = slot0
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= true then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-5, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 6-6, warpins: 1 ---
+		slot2 = true
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 7-20, warpins: 2 ---
+		slot1.commandVisible = slot2
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.refreshVisible
 
 		slot1(slot3)
 
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.notifyActiveStateChanged
+		slot4 = self
+		slot6 = slot4
+		slot4 = slot4.shouldBeActive
+		MULTRES = slot4(slot6)
+
+		slot1(slot3, MULTRES)
+
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -301,6 +357,68 @@ slot6 = function(slot0)
 end
 
 slot5.addEntityListener = slot6
+
+slot6 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.entity
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0.entity
+	slot3 = slot3.curSocialId
+	slot1 = slot1(slot3)
+	slot1 = not slot1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 11-12, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 13-13, warpins: 0 ---
+	slot1 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-24, warpins: 3 ---
+	slot0.commandVisible = slot1
+	slot3 = slot0
+	slot1 = slot0.refreshVisible
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.notifyActiveStateChanged
+	slot6 = slot0
+	slot4 = slot0.shouldBeActive
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot5.restoreStateFromEntity = slot6
 slot6 = require
 slot8 = "Data.sys_config_data"
 slot6 = slot6(slot8)

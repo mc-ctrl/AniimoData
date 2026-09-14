@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = true,
 	agenttype = "CombatAgent",
-	version = 9,
 	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_ChangeVisionArea_Default",
-	useForRoute = true
+	version = 9
 }
 slot4 = {}
 slot3.properties = slot4
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Action",
-	id = "19"
+	id = "19",
+	class = "Action"
 }
 slot5 = {}
 slot6 = {}

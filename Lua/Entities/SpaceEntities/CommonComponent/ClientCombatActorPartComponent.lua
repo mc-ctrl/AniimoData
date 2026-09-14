@@ -111,9 +111,7 @@ slot10 = function(slot0)
 	slot13 = slot4
 	slot11 = slot11(slot13)
 	slot9 = slot9 .. slot10 .. slot11
-	slot10 = {
-		isClientEnt = true
-	}
+	slot10 = {}
 	slot11 = slot0.actorId
 	slot10.actorId = slot11
 	slot11 = Vector3
@@ -173,9 +171,10 @@ slot10 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -184,7 +183,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -192,7 +191,7 @@ slot10 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 10-12, warpins: 1 ---
+	--- BLOCK #3 11-13, warpins: 1 ---
 	slot1 = {}
 	slot0.actorPartUnits = slot1
 

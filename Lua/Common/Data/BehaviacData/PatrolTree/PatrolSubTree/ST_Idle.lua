@@ -8,26 +8,26 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = true,
-	version = 5,
+	name = "PatrolTree/PatrolSubTree/ST_Idle",
 	agenttype = "CombatAgent",
-	name = "PatrolTree/PatrolSubTree/ST_Idle"
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	type = "float",
-	const = 4,
 	value = "4",
-	name = "idleTimeout"
+	name = "idleTimeout",
+	const = 4
 }
 slot4[1] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -36,8 +36,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "Action"
+	class = "Action",
+	id = "3"
 }
 slot8 = {}
 slot9 = {}

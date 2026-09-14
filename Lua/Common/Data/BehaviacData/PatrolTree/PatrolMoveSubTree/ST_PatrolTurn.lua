@@ -8,17 +8,17 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	version = 6,
-	name = "PatrolTree/PatrolMoveSubTree/ST_PatrolTurn",
 	useForRoute = false,
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	name = "PatrolTree/PatrolMoveSubTree/ST_PatrolTurn"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	value = "0",
-	type = "float",
 	const = 0,
+	type = "float",
 	name = "tTurnYaw"
 }
 slot4[1] = slot5
@@ -26,8 +26,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Action",
-	id = "1"
+	id = "1",
+	class = "Action"
 }
 slot5 = {}
 slot6 = {}

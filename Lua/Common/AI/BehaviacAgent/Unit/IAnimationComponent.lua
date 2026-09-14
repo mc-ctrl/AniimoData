@@ -1583,7 +1583,17 @@ end
 slot20.stopEffectOnTarget = slot21
 
 slot21 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-7, warpins: 1 ---
 	slot2 = AIBaseMethodUtils
 	slot2 = slot2.Base_ShowDialogue
 	slot4 = slot0.ent
@@ -1591,11 +1601,17 @@ slot21 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
 	slot2 = EBTStatus
 	slot2 = slot2.BT_SUCCESS
 
 	return slot2
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -1841,7 +1857,7 @@ slot21 = function(slot0, slot1)
 	if slot1 == slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
@@ -1904,40 +1920,25 @@ slot21 = function(slot0, slot1)
 	if slot1 == slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 34-38, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.checkClient
-	slot2 = slot2()
-	--- END OF BLOCK #7 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 39-44, warpins: 1 ---
-	slot2 = slot0.ent
-	slot2 = slot2.eModel
-	slot2 = slot2.aiControllerComponent
-	slot4 = slot2
-	slot2 = slot2.ResetJumpInRunWarping
+	--- BLOCK #7 34-37, warpins: 1 ---
+	slot2 = AIControllerUtils
+	slot2 = slot2.resetJumpInRunWarping
+	slot4 = slot0.ent
 
 	slot2(slot4)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #9 45-45, warpins: 4 ---
+	--- BLOCK #8 38-38, warpins: 3 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -1994,12 +1995,10 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #3 25-32, warpins: 1 ---
-	slot8 = slot0.ent
-	slot8 = slot8.eModel
-	slot8 = slot8.aiControllerComponent
-	slot10 = slot8
-	slot8 = slot8.SetJumpInRunWarping
+	--- BLOCK #3 25-30, warpins: 1 ---
+	slot8 = AIControllerUtils
+	slot8 = slot8.setJumpInRunWarping
+	slot10 = slot0.ent
 	slot11 = slot0.x_playJumpActionToPos_targetPos
 	--- END OF BLOCK #3 ---
 
@@ -2010,7 +2009,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #4 33-33, warpins: 1 ---
+	--- BLOCK #4 31-31, warpins: 1 ---
 	slot12 = false
 
 	--- END OF BLOCK #4 ---
@@ -2018,7 +2017,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 34-34, warpins: 2 ---
+	--- BLOCK #5 32-32, warpins: 2 ---
 	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #5 ---
@@ -2026,7 +2025,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-43, warpins: 2 ---
+	--- BLOCK #6 33-41, warpins: 2 ---
 	slot8 = AIBaseMethodUtils
 	slot8 = slot8.Base_PlayAnimationState
 	slot10 = slot0.ent
@@ -2043,7 +2042,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #7 44-44, warpins: 1 ---
+	--- BLOCK #7 42-42, warpins: 1 ---
 	slot12 = 0
 
 	--- END OF BLOCK #7 ---
@@ -2051,7 +2050,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 45-48, warpins: 2 ---
+	--- BLOCK #8 43-46, warpins: 2 ---
 	slot8(slot10, slot11, slot12)
 
 	slot0.x_playJumpActionToPos_animStateName = slot1
@@ -2064,14 +2063,14 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #9 49-49, warpins: 1 ---
+	--- BLOCK #9 47-47, warpins: 1 ---
 	slot2 = -1
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 50-53, warpins: 2 ---
+	--- BLOCK #10 48-51, warpins: 2 ---
 	slot8 = AiConst
 	slot8 = slot8.EPSILON
 	--- END OF BLOCK #10 ---
@@ -2083,7 +2082,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #11 54-55, warpins: 1 ---
+	--- BLOCK #11 52-53, warpins: 1 ---
 	slot8 = AiConst
 	slot2 = slot8.JUMP_TIME_OUT
 	--- END OF BLOCK #11 ---
@@ -2091,7 +2090,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 56-63, warpins: 2 ---
+	--- BLOCK #12 54-61, warpins: 2 ---
 	slot10 = slot0
 	slot8 = slot0._settingCustomTimeout
 	slot11 = "playJumpActionToPos"
@@ -2109,7 +2108,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 64-75, warpins: 3 ---
+	--- BLOCK #13 62-73, warpins: 3 ---
 	slot8 = AIControllerUtils
 	slot8 = slot8.getCurrentAnimationState
 	slot10 = slot0.ent
@@ -2129,7 +2128,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #14 76-83, warpins: 1 ---
+	--- BLOCK #14 74-81, warpins: 1 ---
 	slot9 = CharacterStateConst
 	slot9 = slot9.isChildOfState
 	slot11 = slot8
@@ -2145,7 +2144,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #15 84-89, warpins: 1 ---
+	--- BLOCK #15 82-87, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0._checkAndRemoveCustomTimeout
 	slot12 = "playJumpActionToPos"
@@ -2159,7 +2158,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	end
 
 
-	--- BLOCK #16 90-92, warpins: 3 ---
+	--- BLOCK #16 88-90, warpins: 3 ---
 	slot9 = EBTStatus
 	slot9 = slot9.BT_SUCCESS
 
@@ -2170,7 +2169,7 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 93-95, warpins: 2 ---
+	--- BLOCK #17 91-93, warpins: 2 ---
 	slot9 = EBTStatus
 	slot9 = slot9.BT_RUNNING
 
@@ -2918,11 +2917,11 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-33, warpins: 1 ---
+	--- BLOCK #1 7-51, warpins: 1 ---
 	slot4 = AnimationUtils
 	slot4 = slot4.getPlayableClipLength
 	slot6 = slot0.ent
@@ -2947,24 +2946,9 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot6(slot8, slot9, slot10)
 
-	slot6 = Utils
-	slot6 = slot6.checkClient
-	slot6 = slot6()
-	--- END OF BLOCK #1 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 34-52, warpins: 1 ---
-	slot6 = slot0.ent
-	slot6 = slot6.eModel
-	slot6 = slot6.aiControllerComponent
-	slot8 = slot6
-	slot6 = slot6.SetPerformParams
+	slot6 = AIControllerUtils
+	slot6 = slot6.setPerformParams
+	slot8 = slot0.ent
 	slot9 = AnimationUtils
 	slot9 = slot9.getID
 	slot11 = slot1
@@ -2981,12 +2965,6 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot6(slot8, slot9, slot10, slot11, slot12)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 53-58, warpins: 2 ---
 	slot6 = AIBaseMethodUtils
 	slot6 = slot6.Base_PlayAnimationState
 	slot8 = slot0.ent
@@ -2995,49 +2973,49 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot6(slot8, slot9)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #4 59-64, warpins: 2 ---
+	--- BLOCK #2 52-57, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0._checkCustomTimeout
 	slot7 = "switchToPerformStateOnce"
 	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #5 65-68, warpins: 1 ---
+	--- BLOCK #3 58-61, warpins: 1 ---
 	slot4 = EBTStatus
 	slot4 = slot4.BT_RUNNING
 
 	return slot4
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #6 69-71, warpins: 1 ---
+	--- BLOCK #4 62-64, warpins: 1 ---
 	slot4 = EBTStatus
 	slot4 = slot4.BT_SUCCESS
 
 	return slot4
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #7 72-72, warpins: 2 ---
+	--- BLOCK #5 65-65, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -3134,11 +3112,11 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 	slot5 = if not slot5 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-34, warpins: 1 ---
+	--- BLOCK #1 7-52, warpins: 1 ---
 	slot5 = AnimationUtils
 	slot5 = slot5.getPlayableClipLength
 	slot7 = slot0.ent
@@ -3164,24 +3142,9 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot7(slot9, slot10, slot11)
 
-	slot7 = Utils
-	slot7 = slot7.checkClient
-	slot7 = slot7()
-	--- END OF BLOCK #1 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 35-53, warpins: 1 ---
-	slot7 = slot0.ent
-	slot7 = slot7.eModel
-	slot7 = slot7.aiControllerComponent
-	slot9 = slot7
-	slot7 = slot7.SetPerformParams
+	slot7 = AIControllerUtils
+	slot7 = slot7.setPerformParams
+	slot9 = slot0.ent
 	slot10 = AnimationUtils
 	slot10 = slot10.getID
 	slot12 = slot1
@@ -3198,12 +3161,6 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot7(slot9, slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 54-59, warpins: 2 ---
 	slot7 = AIBaseMethodUtils
 	slot7 = slot7.Base_PlayAnimationState
 	slot9 = slot0.ent
@@ -3212,49 +3169,49 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot7(slot9, slot10)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #4 60-65, warpins: 2 ---
+	--- BLOCK #2 53-58, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0._checkCustomTimeout
 	slot8 = "switchToPerformStateMultiTime"
 	slot5 = slot5(slot7, slot8)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #5 66-69, warpins: 1 ---
+	--- BLOCK #3 59-62, warpins: 1 ---
 	slot5 = EBTStatus
 	slot5 = slot5.BT_RUNNING
 
 	return slot5
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #6 70-72, warpins: 1 ---
+	--- BLOCK #4 63-65, warpins: 1 ---
 	slot5 = EBTStatus
 	slot5 = slot5.BT_SUCCESS
 
 	return slot5
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #7 73-73, warpins: 2 ---
+	--- BLOCK #5 66-66, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -3351,11 +3308,11 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 	slot5 = if not slot5 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-29, warpins: 1 ---
+	--- BLOCK #1 7-47, warpins: 1 ---
 	slot5 = AnimationUtils
 	slot5 = slot5.getPlayableClipLength
 	slot7 = slot0.ent
@@ -3376,24 +3333,9 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot9(slot11, slot12, slot13)
 
-	slot9 = Utils
-	slot9 = slot9.checkClient
-	slot9 = slot9()
-	--- END OF BLOCK #1 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 30-48, warpins: 1 ---
-	slot9 = slot0.ent
-	slot9 = slot9.eModel
-	slot9 = slot9.aiControllerComponent
-	slot11 = slot9
-	slot9 = slot9.SetPerformParams
+	slot9 = AIControllerUtils
+	slot9 = slot9.setPerformParams
+	slot11 = slot0.ent
 	slot12 = AnimationUtils
 	slot12 = slot12.getID
 	slot14 = slot1
@@ -3410,12 +3352,6 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 49-54, warpins: 2 ---
 	slot9 = AIBaseMethodUtils
 	slot9 = slot9.Base_PlayAnimationState
 	slot11 = slot0.ent
@@ -3424,49 +3360,49 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #4 55-60, warpins: 2 ---
+	--- BLOCK #2 48-53, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0._checkCustomTimeout
 	slot8 = "switchToPerformStateFixTime"
 	slot5 = slot5(slot7, slot8)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #5 61-64, warpins: 1 ---
+	--- BLOCK #3 54-57, warpins: 1 ---
 	slot5 = EBTStatus
 	slot5 = slot5.BT_RUNNING
 
 	return slot5
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #6 65-67, warpins: 1 ---
+	--- BLOCK #4 58-60, warpins: 1 ---
 	slot5 = EBTStatus
 	slot5 = slot5.BT_SUCCESS
 
 	return slot5
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #7 68-68, warpins: 2 ---
+	--- BLOCK #5 61-61, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
 
 

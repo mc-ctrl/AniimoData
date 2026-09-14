@@ -1,4 +1,4 @@
---- BLOCK #0 1-117, warpins: 1 ---
+--- BLOCK #0 1-109, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformLogger"
 slot0 = slot0(slot2)
@@ -6,45 +6,39 @@ slot1 = require
 slot3 = "SDK.Platform.PlatformIdentityUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.EventConst"
+slot4 = "SDK.Platform.PlatformNoticeUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.ClientConst"
+slot5 = "Common.NoticeDef"
 slot3 = slot3(slot5)
-slot4 = CS
-slot4 = slot4.FunPlus
-slot4 = slot4.WorldX
-slot4 = slot4.SDK
-slot4 = slot4.Platform
-slot4 = slot4.PlatformBridgeLuaFacade
-slot5 = {}
-slot6 = slot1.Family
-slot5.Family = slot6
-slot6 = {
+slot4 = require
+slot6 = "Common.Const.EventConst"
+slot4 = slot4(slot6)
+slot5 = require
+slot7 = "Const.ClientConst"
+slot5 = slot5(slot7)
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
+slot6 = slot6.SDK
+slot6 = slot6.Platform
+slot6 = slot6.PlatformBridgeLuaFacade
+slot7 = {}
+slot8 = slot1.Family
+slot7.Family = slot8
+slot8 = {
+	EnterWorld = "enter_world",
 	Team = "team",
-	Match = "match",
-	EnterWorld = "enter_world"
+	Match = "match"
 }
-slot5.Context = slot6
-slot6 = "跨平台设置不一致,无法加入队伍"
-slot5.FAMILY_CONFLICT_TOAST = slot6
-slot6 = "对方未开启跨平台功能,无法进行操作"
-slot5.CROSS_PLATFORM_DISABLED_TOAST = slot6
-slot6 = "跨平台操作被拒绝"
-slot5.CROSS_PLATFORM_GENERIC_REJECTED_TOAST = slot6
-slot6 = {}
-slot7 = slot5.FAMILY_CONFLICT_TOAST
-slot6.family_mismatch = slot7
-slot7 = slot5.CROSS_PLATFORM_DISABLED_TOAST
-slot6.cross_platform_disabled = slot7
-slot5.SERVER_REJECT_REASON_TOASTS = slot6
-slot6 = {
-	runtime_not_ready = true,
-	user_not_signed_in = true
+slot7.Context = slot8
+slot8 = {
+	user_not_signed_in = true,
+	runtime_not_ready = true
 }
-slot5.TRANSIENT_INFRA_REASONS = slot6
+slot7.TRANSIENT_INFRA_REASONS = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -110,9 +104,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getCrossPlatformDefaultSettingValue = slot6
+slot7.getCrossPlatformDefaultSettingValue = slot8
 
-slot6 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -208,9 +202,9 @@ slot6 = function()
 
 end
 
-slot5.getCrossPlatformEnabledPreference = slot6
+slot7.getCrossPlatformEnabledPreference = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -290,9 +284,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.setCrossPlatformEnabledPreference = slot6
+slot7.setCrossPlatformEnabledPreference = slot8
 
-slot6 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -357,9 +351,9 @@ slot6 = function()
 
 end
 
-slot5.getMultiplayerPrivilegeFailureReason = slot6
+slot7.getMultiplayerPrivilegeFailureReason = slot8
 
-slot6 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -424,9 +418,9 @@ slot6 = function()
 
 end
 
-slot5.getCrossPlayPrivilegeFailureReason = slot6
+slot7.getCrossPlayPrivilegeFailureReason = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PlatformCrossPlatformService
 	slot1 = slot1.getMultiplayerPrivilegeFailureReason
@@ -520,9 +514,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.composeLocalPrivilegeFailureReason = slot6
+slot7.composeLocalPrivilegeFailureReason = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -573,9 +567,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.isTransientInfraFailure = slot6
+slot7.isTransientInfraFailure = slot8
 
-slot6 = function()
+slot8 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = PlatformCrossPlatformService
 	slot0 = slot0.composeLocalPrivilegeFailureReason
@@ -626,9 +620,9 @@ slot6 = function()
 
 end
 
-slot5.getSystemCrossPlatformBlockReason = slot6
+slot7.getSystemCrossPlatformBlockReason = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PlatformCrossPlatformService
 
@@ -974,30 +968,233 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.resolveLocalPrivilegeChain = slot6
-slot6 = {
-	firstCrossNetworkSessionShown = false,
-	initialized = false
+slot7.resolveLocalPrivilegeChain = slot8
+slot8 = {
+	initialized = false,
+	crossPlayPrivilegeUiPending = false,
+	firstCrossNetworkSessionShown = false
 }
-slot5.state = slot6
+slot7.state = slot8
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.isNilOrEmpty
-	slot3 = slot0
-	slot1 = slot1(slot3)
-
+slot8 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = PlatformIdentityUtils
+	slot0 = slot0.getCurrentPlatformFamily
+	slot0 = slot0()
+	slot1 = PlatformIdentityUtils
+	slot1 = slot1.Family
+	slot1 = slot1.Xbox
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	if slot0 ~= slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #2 11-13, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	--- END OF BLOCK #2 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 14-17, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.ResolveLocalCrossPlayPrivilege
+	--- END OF BLOCK #3 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-22, warpins: 1 ---
+	slot0 = PlatformCrossPlatformService
+	slot0 = slot0.state
+	slot0 = slot0.crossPlayPrivilegeUiPending
+	--- END OF BLOCK #4 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-24, warpins: 3 ---
+	slot0 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #6 25-38, warpins: 1 ---
+	slot0 = PlatformCrossPlatformService
+	slot0 = slot0.state
+	slot1 = true
+	slot0.crossPlayPrivilegeUiPending = slot1
+	slot0 = logger
+	slot2 = slot0
+	slot0 = slot0.info
+	slot3 = "Dispatch Xbox CrossPlay privilege UI"
+
+	slot0(slot2, slot3)
+
+	slot0 = pcall
+
+	slot2 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = PlatformBridgeLuaFacade
+		slot0 = slot0.ResolveLocalCrossPlayPrivilege
+		slot2 = 0
+
+		slot3 = function(slot0, slot1, slot2)
+			--- BLOCK #0 1-20, warpins: 1 ---
+			slot3 = PlatformCrossPlatformService
+			slot3 = slot3.state
+			slot4 = false
+			slot3.crossPlayPrivilegeUiPending = slot4
+			slot3 = logger
+			slot5 = slot3
+			slot3 = slot3.info
+			slot6 = "Xbox CrossPlay privilege UI completed allowed=%s code=%s reason=%s"
+			slot7 = tostring
+			slot9 = slot0
+			slot7 = slot7(slot9)
+			slot8 = tostring
+			slot10 = slot1
+			slot8 = slot8(slot10)
+			slot9 = tostring
+			slot11 = slot2
+			MULTRES = slot9(slot11)
+
+			slot3(slot5, slot6, slot7, slot8, MULTRES)
+
+			--- END OF BLOCK #0 ---
+
+			if slot0 == true then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 21-28, warpins: 1 ---
+			slot3 = PlatformCrossPlatformService
+			slot5 = slot3
+			slot3 = slot3.revalidateAgainstSystemPrivilege
+
+			slot3(slot5)
+
+			slot3 = PlatformCrossPlatformService
+			slot5 = slot3
+			slot3 = slot3.syncCurrentSettingToServer
+
+			slot3(slot5)
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 29-29, warpins: 2 ---
+			return
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot0, slot1 = slot0(slot2)
+	--- END OF BLOCK #6 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 39-50, warpins: 1 ---
+	slot2 = PlatformCrossPlatformService
+	slot2 = slot2.state
+	slot3 = false
+	slot2.crossPlayPrivilegeUiPending = slot3
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "Show Xbox CrossPlay privilege UI failed: %s"
+	slot6 = tostring
+	slot8 = slot1
+	MULTRES = slot6(slot8)
+
+	slot2(slot4, slot5, MULTRES)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 51-52, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 53-53, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 54-54, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot7.showCrossPlayPrivilegeUi = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1005,83 +1202,46 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-10, warpins: 2 ---
-	slot1 = pg
+	--- BLOCK #2 4-11, warpins: 2 ---
+	slot1 = PlatformNoticeUtils
+	slot1 = slot1.showTextTipById
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = NoticeDef
+	slot1 = slot1.CROSS_PLATFORM_MISMATCH
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	if slot0 == slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-14, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot1 = PlatformCrossPlatformService
+	slot1 = slot1.showCrossPlayPrivilegeUi
+
+	slot1()
+
 	--- END OF BLOCK #3 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-19, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #5 20-25, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 26-33, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.showTextTip
-	slot4 = slot0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 34-34, warpins: 5 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot5.showTextTip = slot6
+slot7.showNoticeTip = slot8
 
-slot6 = function()
+slot8 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = PlatformCrossPlatformService
 	slot0 = slot0.state
@@ -1210,9 +1370,9 @@ slot6 = function()
 
 end
 
-slot5.ensureSettingChangedListenerRegistered = slot6
+slot7.ensureSettingChangedListenerRegistered = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlatformIdentityUtils
 	slot1 = slot1.resolvePlayerInfoFamily
@@ -1225,9 +1385,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.resolveFamilyFromPlayerInfo = slot6
+slot7.resolveFamilyFromPlayerInfo = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformCrossPlatformService
 	slot1 = slot1.state
@@ -1293,9 +1453,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.init = slot6
+slot7.init = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -1377,9 +1537,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.shutdown = slot6
+slot7.shutdown = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = PlatformIdentityUtils
 	slot1 = slot1.getCurrentPlatformFamily
@@ -1442,9 +1602,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.isCrossPlatformEnabled = slot6
+slot7.isCrossPlatformEnabled = slot8
 
-slot6 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1661,9 +1821,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.setCrossPlatformEnabled = slot6
+slot7.setCrossPlatformEnabled = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -1767,9 +1927,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.syncCurrentSettingToServer = slot6
+slot7.syncCurrentSettingToServer = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isCrossPlatformSettingReadOnly
@@ -1909,9 +2069,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.revalidateAgainstSystemPrivilege = slot6
+slot7.revalidateAgainstSystemPrivilege = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isCrossPlatformSettingReadOnly
@@ -2130,9 +2290,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.requestEnableCrossPlatform = slot6
+slot7.requestEnableCrossPlatform = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -2171,31 +2331,81 @@ slot6 = function(slot0)
 	slot2 = if slot1 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	end
 
 
 	--- BLOCK #4 13-15, warpins: 1 ---
+	slot2 = slot1.isConsole
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 16-20, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.isConsole
 	slot2 = slot2(slot4)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 16-16, warpins: 2 ---
-	return slot2
 	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 21-23, warpins: 1 ---
+	slot2 = slot1.isPS
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 24-28, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.isPS
+	slot2 = slot2(slot4)
+	slot2 = not slot2
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 29-30, warpins: 0 ---
+	slot2 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 31-31, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 32-32, warpins: 6 ---
+	return slot2
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot5.isCrossPlatformSettingReadOnly = slot6
+slot7.isCrossPlatformSettingReadOnly = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PlatformCrossPlatformService
 	slot2 = slot2.resolveFamilyFromPlayerInfo
@@ -2208,9 +2418,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.getPlayerInfoFamily = slot6
+slot7.getPlayerInfoFamily = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -2294,9 +2504,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.canInteractWithFamily = slot6
+slot7.canInteractWithFamily = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2305,9 +2515,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.showMatchPermissionDeniedToast = slot6
+slot7.showMatchPermissionDeniedToast = slot8
 
-slot6 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2365,14 +2575,14 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.showPermissionDeniedToast = slot6
+slot7.showPermissionDeniedToast = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PlatformCrossPlatformService
-	slot1 = slot1.showTextTip
-	slot3 = PlatformCrossPlatformService
-	slot3 = slot3.FAMILY_CONFLICT_TOAST
+	slot1 = slot1.showNoticeTip
+	slot3 = NoticeDef
+	slot3 = slot3.CROSS_PLATFORM_MISMATCH
 
 	slot1(slot3)
 
@@ -2383,9 +2593,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.showFamilyConflictToast = slot6
+slot7.showFamilyConflictToast = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = PlatformIdentityUtils
 	slot2 = slot2.getCurrentPlatformFamily
@@ -2452,9 +2662,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.getLocalPermissionFailureReason = slot6
+slot7.getLocalPermissionFailureReason = slot8
 
-slot6 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot2
@@ -2622,9 +2832,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.resolveLocalPermission = slot6
+slot7.resolveLocalPermission = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getLocalPermissionFailureReason
@@ -2636,7 +2846,7 @@ slot6 = function(slot0, slot1)
 	slot4 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -2645,91 +2855,80 @@ slot6 = function(slot0, slot1)
 
 	--- BLOCK #1 11-14, warpins: 1 ---
 	slot7 = slot0
-	slot5 = slot0._showFirstCrossNetworkSessionNotification
-
-	slot5(slot7)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 15-18, warpins: 1 ---
-	slot7 = slot0
 	slot5 = slot0.showMatchPermissionDeniedToast
 	slot8 = slot3
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #3 19-23, warpins: 2 ---
+	--- BLOCK #2 15-19, warpins: 2 ---
 	slot5 = type
 	slot7 = slot1
 	slot5 = slot5(slot7)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 	if slot5 == "function" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 20-23, warpins: 1 ---
+	slot5 = slot1
+	slot7 = slot4
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	end
 
 
 	--- BLOCK #4 24-27, warpins: 1 ---
-	slot5 = slot1
-	slot7 = slot4
+	slot8 = string
+	slot8 = slot8.Empty
 	--- END OF BLOCK #4 ---
 
-	slot4 = if slot4 then
+	slot8 = if not slot8 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 28-31, warpins: 1 ---
-	slot8 = string
-	slot8 = slot8.Empty
+	--- BLOCK #5 28-28, warpins: 2 ---
+	slot8 = slot2
+
 	--- END OF BLOCK #5 ---
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-32, warpins: 2 ---
-	slot8 = slot2
+	--- BLOCK #6 29-29, warpins: 2 ---
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 33-33, warpins: 2 ---
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 34-34, warpins: 2 ---
+	--- BLOCK #7 30-30, warpins: 2 ---
 	return slot4
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot5.checkMatchPermission = slot6
+slot7.checkMatchPermission = slot8
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getPlayerInfoFamily
@@ -2852,9 +3051,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.checkPlayerInteraction = slot6
+slot7.checkPlayerInteraction = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -2932,9 +3131,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.checkTeamInvitePermission = slot6
+slot7.checkTeamInvitePermission = slot8
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
@@ -3088,9 +3287,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.checkPlayerInteractionByUid = slot6
+slot7.checkPlayerInteractionByUid = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3350,9 +3549,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.onCrossPlatformSettingChanged = slot6
+slot7.onCrossPlatformSettingChanged = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3430,9 +3629,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.syncCrossPlatformEnabledToBridge = slot6
+slot7.syncCrossPlatformEnabledToBridge = slot8
 
-slot6 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3487,9 +3686,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5._handleSettingChangedEvent = slot6
+slot7._handleSettingChangedEvent = slot8
 
-slot6 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot4 = slot0
@@ -3508,9 +3707,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.buildReservedMatchFlags = slot6
+slot7.buildReservedMatchFlags = slot8
 
-slot6 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot2
@@ -3636,155 +3835,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot5.tryHandleIncomingCrossPlatformConflict = slot6
+slot7.tryHandleIncomingCrossPlatformConflict = slot8
 
-slot6 = function(slot0, slot1)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot2 = tostring
-	slot4 = slot1
-	slot2 = slot2(slot4)
-	slot3 = PlatformCrossPlatformService
-	slot3 = slot3.SERVER_REJECT_REASON_TOASTS
-	slot3 = slot3[slot2]
-	slot4 = string
-	slot4 = slot4.isNilOrEmpty
-	slot6 = slot3
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #0 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 13-17, warpins: 1 ---
-	slot4 = PlatformCrossPlatformService
-	slot4 = slot4.showTextTip
-	slot6 = slot3
-
-	slot4(slot6)
-
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 18-29, warpins: 2 ---
-	slot4 = PlatformCrossPlatformService
-	slot4 = slot4.showTextTip
-	slot6 = PlatformCrossPlatformService
-	slot6 = slot6.CROSS_PLATFORM_GENERIC_REJECTED_TOAST
-
-	slot4(slot6)
-
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.warn
-	slot7 = "Unknown server cross-platform reject reasonCode=%s"
-	slot8 = slot2
-
-	slot4(slot6, slot7, slot8)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot5.onServerCrossPlatformRejected = slot6
-
-slot6 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = PlatformCrossPlatformService
-	slot1 = slot1.state
-	slot1 = slot1.firstCrossNetworkSessionShown
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-11, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.isCrossPlatformEnabled
-	slot1 = slot1(slot3)
-
-	--- END OF BLOCK #2 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 12-12, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 13-23, warpins: 2 ---
-	slot1 = PlatformCrossPlatformService
-	slot1 = slot1.state
-	slot2 = true
-	slot1.firstCrossNetworkSessionShown = slot2
-	slot1 = PlatformIdentityUtils
-	slot1 = slot1.getCurrentPlatformFamily
-	slot1 = slot1()
-	slot2 = slot0.Family
-	slot2 = slot2.Other
-	--- END OF BLOCK #4 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 24-27, warpins: 1 ---
-	slot2 = PlatformCrossPlatformService
-	slot2 = slot2.showTextTip
-	slot4 = "跨网络游戏已启用"
-
-	slot2(slot4)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 28-28, warpins: 2 ---
-	return
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot5._showFirstCrossNetworkSessionNotification = slot6
-
-return slot5
+return slot7
 --- END OF BLOCK #0 ---
 
 

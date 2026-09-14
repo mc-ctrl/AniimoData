@@ -63,17 +63,18 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 21-41, warpins: 2 ---
+	--- BLOCK #3 21-42, warpins: 2 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
 	slot4 = slot4.textNameUBaseText
 	slot5 = pg
 	slot5 = slot5.me
-	slot5 = slot5.npcDuelBotInfo
-	slot5 = slot5.name
+	slot7 = slot5
+	slot5 = slot5.getCurNpcDuelBotName
+	MULTRES = slot5(slot7)
 
-	slot2(slot4, slot5)
+	slot2(slot4, MULTRES)
 
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText

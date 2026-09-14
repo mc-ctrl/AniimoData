@@ -287,7 +287,7 @@ slot2 = function(slot0, slot1)
 	if slot3 <= slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
@@ -313,44 +313,66 @@ slot2 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-15, warpins: 2 ---
-	return
-
+	--- BLOCK #5 15-17, warpins: 2 ---
+	slot3 = slot0.clearFunc
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 16-23, warpins: 2 ---
-	slot3 = slot0.availableObjects
-	slot4 = slot0.availableObjects
-	slot4 = #slot4
-	slot4 = slot4 + 1
-	slot3[slot4] = slot1
-	slot3 = slot0.clearFunc
-	--- END OF BLOCK #6 ---
-
 	slot3 = if slot3 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 24-26, warpins: 1 ---
+	--- BLOCK #6 18-20, warpins: 1 ---
 	slot3 = slot0.clearFunc
 	slot5 = slot1
 
 	slot3(slot5)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-21, warpins: 2 ---
+	return
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 27-27, warpins: 2 ---
-	return
+	--- BLOCK #8 22-29, warpins: 2 ---
+	slot3 = slot0.availableObjects
+	slot4 = slot0.availableObjects
+	slot4 = #slot4
+	slot4 = slot4 + 1
+	slot3[slot4] = slot1
+	slot3 = slot0.clearFunc
 	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 30-32, warpins: 1 ---
+	slot3 = slot0.clearFunc
+	slot5 = slot1
+
+	slot3(slot5)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 33-33, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 

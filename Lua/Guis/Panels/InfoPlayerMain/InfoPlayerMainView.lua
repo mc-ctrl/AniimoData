@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-152, warpins: 1 ---
+	--- BLOCK #0 1-170, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -66,6 +66,12 @@ slot3 = function(slot0)
 	slot4 = "topTitleUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.topTitleUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "dIYPreviewRootRectTransform"
+	slot1 = slot1(slot3, slot4)
+	slot0.dIYPreviewRootRectTransform = slot1
 	slot1 = slot0.panelInfoWidget
 	slot1 = slot1.transform
 	slot3 = slot1
@@ -163,6 +169,18 @@ slot3 = function(slot0)
 	slot4 = "panelInfoBadgeUList"
 	slot1 = slot1(slot3, slot4)
 	slot0.panelInfoBadgeUList = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "onlineIDImage"
+	slot1 = slot1(slot3, slot4)
+	slot0.onlineIDImage = slot1
+	slot1 = slot0.panelInfoObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "onlineIDText"
+	slot1 = slot1(slot3, slot4)
+	slot0.onlineIDText = slot1
 
 	return
 	--- END OF BLOCK #0 ---

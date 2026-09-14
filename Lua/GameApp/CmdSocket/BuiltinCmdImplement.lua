@@ -57,30 +57,119 @@ slot4 = function(slot0, slot1, slot2)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #4 16-22, warpins: 1 ---
+	--- BLOCK #4 16-24, warpins: 1 ---
 	slot4 = slot0.authedConns
 	slot5 = true
 	slot4[slot1] = slot5
-	slot4 = {
-		ok = true
-	}
-	slot5 = {
-		authed = true
-	}
-	slot4.data = slot5
-
-	return slot4
-
+	slot4 = pcall
+	slot6 = require
+	slot7 = "GameApp.CmdSocket.HomelandDemoCmdImplement"
+	slot4, slot5 = slot4(slot6, slot7)
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #5 23-30, warpins: 2 ---
+	--- BLOCK #5 25-29, warpins: 1 ---
+	slot6 = type
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	if slot6 == "table" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 30-34, warpins: 1 ---
+	slot6 = type
+	slot8 = slot5._onConnectionAuthed
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #6 ---
+
+	if slot6 == "function" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 35-41, warpins: 1 ---
+	slot6 = xpcall
+
+	slot8 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = homelandDemoCmdImplement
+		slot0 = slot0._onConnectionAuthed
+		slot2 = connId
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot9 = debug
+	slot9 = slot9.traceback
+	slot6, slot7 = slot6(slot8, slot9)
+	--- END OF BLOCK #7 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 42-52, warpins: 1 ---
+	slot8 = logger
+	slot10 = slot8
+	slot8 = slot8.warn
+	slot11 = "homelandDemo auth hook failed connId=%s err=%s"
+	slot12 = tostring
+	slot14 = slot1
+	slot12 = slot12(slot14)
+	slot13 = tostring
+	slot15 = slot7
+	MULTRES = slot13(slot15)
+
+	slot8(slot10, slot11, slot12, MULTRES)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 53-58, warpins: 5 ---
+	slot6 = {
+		ok = true
+	}
+	slot7 = {
+		authed = true
+	}
+	slot6.data = slot7
+
+	return slot6
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 59-67, warpins: 2 ---
 	slot4 = {
 		ok = false
 	}
@@ -94,7 +183,7 @@ slot4 = function(slot0, slot1, slot2)
 	slot4.error = slot5
 
 	return slot4
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
 
 

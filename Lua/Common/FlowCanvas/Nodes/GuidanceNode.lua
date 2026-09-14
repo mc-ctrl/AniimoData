@@ -1,4 +1,4 @@
---- BLOCK #0 1-34, warpins: 1 ---
+--- BLOCK #0 1-36, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -38,7 +38,7 @@ end
 slot4.ctor = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-35, warpins: 1 ---
+	--- BLOCK #0 1-31, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addValueInput
 	slot4 = "TimeOutSecond"
@@ -48,10 +48,6 @@ slot5 = function(slot0)
 	slot2 = "timer"
 	slot1 = slot1 .. slot2
 	slot0.timerKey = slot1
-	slot1 = "eventName"
-	slot2 = slot0.nodeId
-	slot1 = slot1 .. slot2
-	slot0.eventNameKey = slot1
 	slot3 = slot0
 	slot1 = slot0.addFlowOutput
 	slot4 = "Out"
@@ -215,34 +211,20 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-27, warpins: 2 ---
+	--- BLOCK #2 7-17, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0.addTimer
 	slot8 = slot1
 
 	slot5(slot7, slot8)
 
-	slot7 = slot4
-	slot5 = slot4.addSpaceEventListener
-	slot8 = slot2
-	slot9 = slot3
-
-	slot5(slot7, slot8, slot9)
-
 	slot7 = slot1
-	slot5 = slot1.addContextEvent
-	slot8 = slot2
-	slot9 = slot3
-	slot10 = slot0.nodeId
+	slot5 = slot1.registerSpaceEventListener
+	slot8 = slot0.nodeId
+	slot9 = slot2
+	slot10 = slot3
 
 	slot5(slot7, slot8, slot9, slot10)
-
-	slot7 = slot1
-	slot5 = slot1.setContextValue
-	slot8 = slot0.eventNameKey
-	slot9 = slot2
-
-	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -254,39 +236,15 @@ end
 slot4.addEventListen = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot1
-	slot2 = slot1.getContextValue
-	slot5 = slot0.eventNameKey
-	slot2 = slot2(slot4, slot5)
+	slot2 = slot1.unregisterSpaceEventListeners
+	slot5 = slot0.nodeId
 
+	slot2(slot4, slot5)
+
+	return
 	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-7, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-13, warpins: 2 ---
-	slot5 = slot1
-	slot3 = slot1.removeContextEvent
-	slot6 = slot2
-	slot7 = slot0.nodeId
-
-	slot3(slot5, slot6, slot7)
-
-	return
-	--- END OF BLOCK #2 ---
 
 
 
@@ -429,6 +387,47 @@ slot5 = function(slot0, slot1)
 end
 
 slot4.On_Timeout = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.removeTimer
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot2 = GuidanceNode
+	slot2 = slot2.super
+	slot2 = slot2.onContextDestroy
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot4.onContextDestroy = slot5
 
 return slot4
 --- END OF BLOCK #0 ---

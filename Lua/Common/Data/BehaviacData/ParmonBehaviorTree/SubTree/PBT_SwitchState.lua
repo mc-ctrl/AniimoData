@@ -7,25 +7,25 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_SwitchState",
+	version = 5,
 	useForRoute = false,
-	agenttype = "WxAgent",
-	version = 5
+	name = "ParmonBehaviorTree/SubTree/PBT_SwitchState",
+	agenttype = "WxAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tCharacterState",
 	const = "",
 	type = "string",
+	name = "tCharacterState",
 	value = ""
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tAnimationKey",
 	const = "",
 	type = "string",
+	name = "tAnimationKey",
 	value = ""
 }
 slot4[2] = slot5

@@ -14,13 +14,13 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Common.Utils.Utils"
 slot3 = slot3(slot5)
-slot4 = require
-slot6 = "Data.pet_data"
-slot4 = slot4(slot6)
-slot5 = slot1.LightClass
-slot7 = "PetPreviewModel"
-slot8 = slot2
-slot5 = slot5(slot7, slot8)
+slot4 = slot1.LightClass
+slot6 = "PetPreviewModel"
+slot7 = slot2
+slot4 = slot4(slot6, slot7)
+slot5 = require
+slot7 = "Common.Const.Const"
+slot5 = slot5(slot7)
 
 slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -32,93 +32,97 @@ slot6 = function(slot0, slot1)
 	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #1 8-12, warpins: 1 ---
-	slot10 = PetData
-	slot10 = slot10[slot9]
-	slot11 = slot10.formName
+	--- BLOCK #1 8-13, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.isRainbowType
+	slot12 = slot9
+	slot10 = slot10(slot12)
 	--- END OF BLOCK #1 ---
 
-	if slot11 == "rainbow" then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 13-19, warpins: 1 ---
-	slot12 = table
-	slot12 = slot12.insert
-	slot14 = slot2
-	slot15 = {}
-	slot15.templateId = slot9
+	--- BLOCK #2 14-20, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot2
+	slot13 = {}
+	slot13.templateId = slot9
 
-	slot12(slot14, slot15)
+	slot10(slot12, slot13)
 
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 20-21, warpins: 1 ---
+	--- BLOCK #3 21-35, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.matchFormTypeByTempId
+	slot12 = slot9
+	slot13 = {}
+	slot14 = Const
+	slot14 = slot14.FormName2Id
+	slot14 = slot14.thunderstorm
+	slot13[1] = slot14
+	slot14 = Const
+	slot14 = slot14.FormName2Id
+	slot14 = slot14.snow
+	slot13[2] = slot14
+	slot10 = slot10(slot12, slot13)
 	--- END OF BLOCK #3 ---
 
-	if slot11 ~= "thunderstorm" then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 22-23, warpins: 1 ---
+	--- BLOCK #4 36-42, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot3
+	slot13 = {}
+	slot13.templateId = slot9
+
+	slot10(slot12, slot13)
+
 	--- END OF BLOCK #4 ---
 
-	if slot11 == "snow" then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 24-30, warpins: 2 ---
-	slot12 = table
-	slot12 = slot12.insert
-	slot14 = slot3
-	slot15 = {}
-	slot15.templateId = slot9
+	--- BLOCK #5 43-48, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot4
+	slot13 = {}
+	slot13.templateId = slot9
 
-	slot12(slot14, slot15)
+	slot10(slot12, slot13)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 31-36, warpins: 1 ---
-	slot12 = table
-	slot12 = slot12.insert
-	slot14 = slot4
-	slot15 = {}
-	slot15.templateId = slot9
-
-	slot12(slot14, slot15)
-
+	--- BLOCK #6 49-50, warpins: 4 ---
 	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 37-38, warpins: 4 ---
-	--- END OF BLOCK #7 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #8
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #8 39-64, warpins: 1 ---
+	--- BLOCK #7 51-76, warpins: 1 ---
 	slot5 = {}
 	slot6 = {}
 	slot7 = pg
@@ -146,13 +150,13 @@ slot6 = function(slot0, slot1)
 	slot5[3] = slot6
 
 	return slot5
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot5.getPreviewInfo = slot6
+slot4.getPreviewInfo = slot6
 
 slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -210,9 +214,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.getBaseTemplateIds = slot6
+slot4.getBaseTemplateIds = slot6
 
-return slot5
+return slot4
 --- END OF BLOCK #0 ---
 
 

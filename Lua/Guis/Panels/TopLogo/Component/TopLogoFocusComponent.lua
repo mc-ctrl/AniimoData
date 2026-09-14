@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-50, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -235,21 +235,6 @@ end
 slot5.findObjects = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.FOCUS
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot5.getComponentName = slot7
-
-slot7 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
@@ -303,7 +288,7 @@ slot7 = function(slot0)
 		--- BLOCK #5 14-14, warpins: 1 ---
 		--- END OF BLOCK #5 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #13
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
 		--- BLOCK #6 15-34, warpins: 2 ---
@@ -339,7 +324,7 @@ slot7 = function(slot0)
 		--- BLOCK #7 35-35, warpins: 1 ---
 		--- END OF BLOCK #7 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #14
+		UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
 		--- BLOCK #8 36-42, warpins: 1 ---
@@ -453,21 +438,19 @@ slot7 = function(slot0)
 		end
 
 
-		--- BLOCK #11 52-57, warpins: 1 ---
+		--- BLOCK #11 52-56, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.m_cbCacheFocusCallback
 		slot4 = true
 
 		slot2(slot4)
 
-		return
-
 		--- END OF BLOCK #11 ---
 
-		FLOW; TARGET BLOCK #12
+		UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-		--- BLOCK #12 58-75, warpins: 2 ---
+		--- BLOCK #12 57-65, warpins: 1 ---
 		slot2 = self
 		slot4 = slot2
 		slot2 = slot2.checkAndLoadUContainerUrlSupportAsync
@@ -479,6 +462,12 @@ slot7 = function(slot0)
 
 		slot2(slot4, slot5, slot6)
 
+		--- END OF BLOCK #12 ---
+
+		FLOW; TARGET BLOCK #13
+
+
+		--- BLOCK #13 66-74, warpins: 2 ---
 		slot2 = self
 		slot4 = slot2
 		slot2 = slot2.notifyActiveStateChanged
@@ -490,21 +479,21 @@ slot7 = function(slot0)
 		slot2(slot4, MULTRES)
 
 		return
-		--- END OF BLOCK #12 ---
-
-		FLOW; TARGET BLOCK #13
-
-
-		--- BLOCK #13 76-76, warpins: 2 ---
-		return
 		--- END OF BLOCK #13 ---
 
 		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #14 77-77, warpins: 2 ---
+		--- BLOCK #14 75-75, warpins: 2 ---
 		return
 		--- END OF BLOCK #14 ---
+
+		FLOW; TARGET BLOCK #15
+
+
+		--- BLOCK #15 76-76, warpins: 2 ---
+		return
+		--- END OF BLOCK #15 ---
 
 
 

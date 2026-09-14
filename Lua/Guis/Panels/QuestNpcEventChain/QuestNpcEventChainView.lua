@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-76, warpins: 1 ---
+	--- BLOCK #0 1-98, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -87,6 +87,28 @@ slot3 = function(slot0)
 	slot5 = "dialogueBtn"
 	slot2 = slot2(slot4, slot5)
 	slot0.dialogueBtn = slot2
+	slot2 = slot0.dialogueSimpleUWidget
+	slot2 = slot2.transform
+	slot4 = slot2
+	slot2 = slot2.Find
+	slot5 = "Panel/Hint"
+	slot2 = slot2(slot4, slot5)
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "UWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.hintUWidget = slot2
+	slot2 = slot0.dialogueSimpleUWidget
+	slot2 = slot2.transform
+	slot4 = slot2
+	slot2 = slot2.Find
+	slot5 = "Panel/Beloggingin"
+	slot2 = slot2(slot4, slot5)
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "UWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.belogginginUWidget = slot2
 
 	return
 	--- END OF BLOCK #0 ---

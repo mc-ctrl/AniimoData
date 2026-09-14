@@ -105,7 +105,39 @@ slot7 = function(slot0, slot1, ...)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-10, warpins: 2 ---
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot3 = slot2[slot1]
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-20, warpins: 1 ---
+	slot3 = require
+	slot5 = "Core.Log.LoggerManager"
+	slot3 = slot3(slot5)
+	slot4 = slot3.getLogger
+	slot6 = "HandlerManager"
+	slot4 = slot4(slot6)
+	slot7 = slot4
+	slot5 = slot4.error
+	slot8 = "RpcHandlerCallbackOnMethod: funcName=%s not found"
+	slot9 = slot1
+
+	slot5(slot7, slot8, slot9)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-25, warpins: 2 ---
 	slot3 = slot2[slot1]
 	slot5 = slot2
 	MULTRES = ...
@@ -113,7 +145,7 @@ slot7 = function(slot0, slot1, ...)
 	slot3(slot5, MULTRES)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 

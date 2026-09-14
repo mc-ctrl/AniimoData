@@ -8,75 +8,75 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	agenttype = "CombatAgent",
+	useForRoute = true,
 	name = "PatrolTree/PatrolSubTree/ST_CustomLoopAnimation",
-	version = 5,
-	useForRoute = true
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	const = 0,
-	type = "float",
+	name = "tWaitTime",
 	value = "0",
-	name = "tWaitTime"
+	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
 	const = "",
-	type = "string",
+	name = "tEmojiBubbleKey",
 	value = "",
-	name = "tEmojiBubbleKey"
+	type = "string"
 }
 slot4[2] = slot5
 slot5 = {
 	const = 5,
-	type = "float",
+	name = "tEmojiBubbleTimeout",
 	value = "5",
-	name = "tEmojiBubbleTimeout"
+	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
 	const = "",
-	type = "string",
+	name = "tAnimationStartKey",
 	value = "",
-	name = "tAnimationStartKey"
+	type = "string"
 }
 slot4[4] = slot5
 slot5 = {
 	const = "",
-	type = "string",
+	name = "tAnimationLoopKey",
 	value = "",
-	name = "tAnimationLoopKey"
+	type = "string"
 }
 slot4[5] = slot5
 slot5 = {
 	const = "",
-	type = "string",
+	name = "tAnimationEndKey",
 	value = "",
-	name = "tAnimationEndKey"
+	type = "string"
 }
 slot4[6] = slot5
 slot5 = {
 	const = 5,
-	type = "float",
+	name = "tAnimationTimeout",
 	value = "5",
-	name = "tAnimationTimeout"
+	type = "float"
 }
 slot4[7] = slot5
 slot5 = {
 	const = false,
-	type = "bool",
+	name = "tIsLoop",
 	value = "false",
-	name = "tIsLoop"
+	type = "bool"
 }
 slot4[8] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -85,8 +85,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}
@@ -118,8 +118,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "Action"
+	class = "Action",
+	id = "3"
 }
 slot8 = {}
 slot9 = {}
@@ -163,8 +163,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "4",
-	class = "Action"
+	class = "Action",
+	id = "4"
 }
 slot8 = {}
 slot9 = {}

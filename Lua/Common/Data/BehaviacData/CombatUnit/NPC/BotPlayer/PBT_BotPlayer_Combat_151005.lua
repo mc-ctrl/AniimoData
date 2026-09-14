@@ -3210,10 +3210,10 @@ slot19.properties = slot20
 slot20 = {}
 slot21 = {
 	id = "155",
-	effector = false,
-	precondition = true,
 	class = "Precondition",
-	transition = false
+	transition = false,
+	effector = false,
+	precondition = true
 }
 slot22 = {}
 slot23 = {
@@ -3300,10 +3300,10 @@ slot16.properties = slot17
 slot17 = {}
 slot18 = {
 	id = "155",
-	effector = false,
-	precondition = true,
 	class = "Precondition",
-	transition = false
+	transition = false,
+	effector = false,
+	precondition = true
 }
 slot19 = {}
 slot20 = {

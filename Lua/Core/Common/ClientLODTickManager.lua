@@ -195,8 +195,8 @@ slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #2 11-11, warpins: 1 ---
 	slot4 = {
 		kind = 0,
-		arg = false,
-		entity = false
+		entity = false,
+		arg = false
 	}
 	--- END OF BLOCK #2 ---
 

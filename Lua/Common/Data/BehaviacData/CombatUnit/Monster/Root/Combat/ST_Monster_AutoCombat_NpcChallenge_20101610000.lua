@@ -7,40 +7,40 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NpcChallenge_20101610000",
-	version = 146,
 	useForRoute = false,
-	agenttype = "PuppetAgent"
+	agenttype = "PuppetAgent",
+	version = 146,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NpcChallenge_20101610000"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "skillStopDist",
-	const = 0,
 	type = "float",
-	value = "0"
+	value = "0",
+	name = "skillStopDist",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tPlayer",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tPlayer",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	name = "FirstSneakDone",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "FirstSneakDone",
+	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	name = "",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "",
+	const = 0
 }
 slot4[4] = slot5
 slot3.pars = slot4

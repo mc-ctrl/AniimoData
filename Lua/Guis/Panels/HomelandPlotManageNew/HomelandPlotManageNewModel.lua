@@ -1,114 +1,216 @@
---- BLOCK #0 1-127, warpins: 1 ---
+--- BLOCK #0 1-90, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "HomelandPlotManageNewModel"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "HomelandPlotManageNewModel"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UIModel"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "HomelandPlotManageNewModel"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
-slot4 = require
-slot6 = "Utils.ClientTextUtils"
-slot4 = slot4(slot6)
+slot3 = require
+slot5 = "Guis.UIModel"
+slot3 = slot3(slot5)
+slot4 = slot2.LightClass
+slot6 = "HomelandPlotManageNewModel"
+slot7 = slot3
+slot4 = slot4(slot6, slot7)
 slot5 = require
-slot7 = "Common.Utils.Utils"
+slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.ClientConst"
+slot8 = "Common.Utils.Utils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Common.Utils.HomeLandUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.LuaUIUtils"
+slot10 = "Const.ClientConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.ClientUtils"
+slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.AddressDataConst"
+slot12 = "Utils.LuaUIUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.homeland_zone_unlock_config_data"
+slot13 = "Utils.ClientUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.drop_data"
+slot14 = "Const.AddressDataConst"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.home_object_data"
+slot15 = "Common.CommonSwitch"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.revert_home_upgrade_data"
+slot16 = "Data.drop_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.homeland_formula_data"
+slot17 = "Data.home_object_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.homeland_config_data"
+slot18 = "Data.revert_home_upgrade_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.homeland_operate_data"
+slot19 = "Data.homeland_formula_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.home_upgrade_data"
+slot20 = "Data.homeland_formula_period_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.homeland_facility_data"
+slot21 = "Data.homeland_config_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.Utils.HomeLandUtils"
+slot22 = "Data.homeland_operate_data"
 slot20 = slot20(slot22)
-slot21 = {
+slot21 = require
+slot23 = "Data.home_upgrade_data"
+slot21 = slot21(slot23)
+slot22 = require
+slot24 = "Data.homeland_facility_data"
+slot22 = slot22(slot24)
+slot23 = require
+slot25 = "Common.Utils.HomeLandUtils"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Utils.ClientHomelandUtils"
+slot24 = slot24(slot26)
+slot25 = {
+	Unlocked = 0,
 	CannotUnlock = 2,
-	Unlockable = 1,
-	Unlocked = 0
+	Unlockable = 1
 }
-slot3.ENABLEUNLOCK_TYPE = slot21
-slot21 = 180
-slot3.UNIT_LENGTH = slot21
-slot21 = 20
-slot3.ZONE_WIDTH = slot21
-slot21 = 15
-slot3.ZONE_HEIGHT = slot21
+slot4.ENABLEUNLOCK_TYPE = slot25
+slot25 = 180
+slot4.UNIT_LENGTH = slot25
+slot25 = 20
+slot4.ZONE_WIDTH = slot25
+slot25 = 15
+slot4.ZONE_HEIGHT = slot25
+slot25 = slot13.HOMELAND_NEW_MAP
+--- END OF BLOCK #0 ---
 
-slot21 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = {}
-	slot2 = HomelandPlotManageNewModel
-	slot2 = slot2.ZONE_WIDTH
-	slot3 = HomelandPlotManageNewModel
-	slot3 = slot3.ZONE_HEIGHT
-	slot4 = ipairs
-	slot6 = HomelandZoneUnlockConfigData
+slot25 = if slot25 then
+JUMP TO BLOCK #1
+else
+JUMP TO BLOCK #2
+end
+
+
+--- BLOCK #1 91-92, warpins: 1 ---
+slot25 = 4
+--- END OF BLOCK #1 ---
+
+UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+--- BLOCK #2 93-93, warpins: 1 ---
+slot25 = 5
+--- END OF BLOCK #2 ---
+
+FLOW; TARGET BLOCK #3
+
+
+--- BLOCK #3 94-97, warpins: 2 ---
+slot4.GRID_COLUMN_COUNT = slot25
+slot25 = slot13.HOMELAND_NEW_MAP
+--- END OF BLOCK #3 ---
+
+slot25 = if slot25 then
+JUMP TO BLOCK #4
+else
+JUMP TO BLOCK #5
+end
+
+
+--- BLOCK #4 98-99, warpins: 1 ---
+slot25 = 4
+--- END OF BLOCK #4 ---
+
+UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+--- BLOCK #5 100-100, warpins: 1 ---
+slot25 = 5
+--- END OF BLOCK #5 ---
+
+FLOW; TARGET BLOCK #6
+
+
+--- BLOCK #6 101-161, warpins: 2 ---
+slot4.GRID_LINE_COUNT = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = {}
+	slot3 = HomeLandUtils
+	slot3 = slot3.getHomelandZoneUnlockData
+	slot3 = slot3()
+	slot4 = pairs
+	slot6 = slot3
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #1 10-15, warpins: 1 ---
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot9 = slot8.areaId
+	--- END OF BLOCK #1 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-12, warpins: 1 ---
+	slot9 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-14, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #4 15-17, warpins: 1 ---
+	slot9 = slot8.prefabPos
+	--- END OF BLOCK #4 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #5 18-23, warpins: 1 ---
 	slot9 = HomelandPlotManageNewModel
 	slot9 = slot9.ENABLEUNLOCK_TYPE
 	slot9 = slot9.CannotUnlock
 	slot10 = slot8.unlockCondition
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #5 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #2 16-24, warpins: 1 ---
+	--- BLOCK #6 24-32, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.me
 	slot10 = slot10.triggerMap
@@ -116,25 +218,25 @@ slot21 = function(slot0)
 	slot10 = slot10.isCompleteOrMeetCondition
 	slot13 = slot8.unlockCondition
 	slot10 = slot10(slot12, slot13)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #6 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #3 25-27, warpins: 1 ---
+	--- BLOCK #7 33-35, warpins: 1 ---
 	slot10 = HomelandPlotManageNewModel
 	slot10 = slot10.ENABLEUNLOCK_TYPE
 	slot9 = slot10.Unlockable
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #4 28-36, warpins: 3 ---
+	--- BLOCK #8 36-44, warpins: 3 ---
 	slot10 = pg
 	slot10 = slot10.game
 	slot10 = slot10.home
@@ -142,50 +244,60 @@ slot21 = function(slot0)
 	slot10 = slot10.isHomelandZoneUnlock
 	slot13 = slot7
 	slot10 = slot10(slot12, slot13)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 37-39, warpins: 1 ---
+	--- BLOCK #9 45-47, warpins: 1 ---
 	slot10 = HomelandPlotManageNewModel
 	slot10 = slot10.ENABLEUNLOCK_TYPE
 	slot9 = slot10.Unlocked
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #6 40-62, warpins: 2 ---
-	slot10 = slot7
-	slot11 = slot8.prefabPos
-	slot11 = slot11[2]
-	slot11 = slot11 / slot3
-	slot11 = 3 - slot11
-	slot12 = slot8.prefabPos
-	slot12 = slot12[1]
-	slot12 = slot12 / slot2
-	slot12 = 3 + slot12
-	slot13 = table
-	slot13 = slot13.insert
-	slot15 = slot1
-	slot16 = {}
-	slot16.level = slot10
-	slot16.line = slot11
-	slot16.row = slot12
-	slot16.enableUnlock = slot9
+	--- BLOCK #10 48-61, warpins: 2 ---
+	slot12 = slot0
+	slot10 = slot0.getZoneGridPosition
+	slot13 = slot8
+	slot14 = slot1
+	slot10, slot11 = slot10(slot12, slot13, slot14)
+	slot12 = table
+	slot12 = slot12.insert
+	slot14 = slot2
+	slot15 = {}
+	slot15.level = slot7
+	slot15.line = slot10
+	slot15.row = slot11
+	slot15.enableUnlock = slot9
 
-	slot13(slot15, slot16)
+	slot12(slot14, slot15)
 
-	slot13 = table
-	slot13 = slot13.sort
-	slot15 = slot1
+	--- END OF BLOCK #10 ---
 
-	slot16 = function(slot0, slot1)
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 62-63, warpins: 4 ---
+	--- END OF BLOCK #11 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 64-70, warpins: 1 ---
+	slot4 = table
+	slot4 = slot4.sort
+	slot6 = slot2
+
+	slot7 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot0.line
 		slot3 = slot1.line
@@ -275,410 +387,683 @@ slot21 = function(slot0)
 
 	end
 
-	slot13(slot15, slot16)
+	slot4(slot6, slot7)
 
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 63-64, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 65-66, warpins: 1 ---
-	return slot1
-	--- END OF BLOCK #8 ---
-
-
-
-end
-
-slot3.getPlotList = slot21
-
-slot21 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot2 = HomelandZoneUnlockConfigData
-	slot2 = slot2[slot1]
-	slot3 = HomelandPlotManageNewModel
-	slot3 = slot3.ZONE_WIDTH
-	slot4 = HomelandPlotManageNewModel
-	slot4 = slot4.ZONE_HEIGHT
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 9-21, warpins: 1 ---
-	slot5 = slot2.prefabPos
-	slot5 = slot5[2]
-	slot5 = slot5 / slot4
-	slot5 = 3 - slot5
-	slot6 = slot2.prefabPos
-	slot6 = slot6[1]
-	slot6 = slot6 / slot3
-	slot6 = 3 + slot6
-	slot7 = slot5 - 1
-	slot7 = slot7 * 5
-	slot7 = slot7 + slot6
-	slot7 = slot7 - 1
-
-	return slot7
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 22-22, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot3.getZoneIndexByLevel = slot21
-
-slot21 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-21, warpins: 1 ---
-	slot3 = HomelandPlotManageNewModel
-	slot3 = slot3.ZONE_WIDTH
-	slot4 = HomelandPlotManageNewModel
-	slot4 = slot4.ZONE_HEIGHT
-	slot5 = math
-	slot5 = slot5.floor
-	slot7 = 2.5 * slot3
-	slot7 = slot1 + slot7
-	slot7 = slot7 / slot3
-	slot5 = slot5(slot7)
-	slot5 = slot5 + 1
-	slot6 = math
-	slot6 = slot6.floor
-	slot8 = 2.5 * slot4
-	slot8 = slot8 - slot2
-	slot8 = slot8 / slot4
-	slot6 = slot6(slot8)
-	slot6 = slot6 + 1
-	slot7 = 1
-	--- END OF BLOCK #0 ---
-
-	if slot5 >= slot7 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 22-24, warpins: 1 ---
-	slot7 = 5
-	--- END OF BLOCK #1 ---
-
-	if slot5 <= slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 25-27, warpins: 1 ---
-	slot7 = 1
-	--- END OF BLOCK #2 ---
-
-	if slot6 >= slot7 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 28-30, warpins: 1 ---
-	slot7 = 5
-	--- END OF BLOCK #3 ---
-
-	if slot6 > slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 31-32, warpins: 4 ---
-	slot7 = 22
-
-	return slot7
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 33-37, warpins: 2 ---
-	slot7 = slot6 - 1
-	slot7 = slot7 * 5
-	slot7 = slot7 + slot5
-	slot7 = slot7 - 1
-
-	return slot7
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot3.getZoneIndexByPos = slot21
-
-slot21 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = {}
-	slot3 = HomelandZoneUnlockConfigData
-	slot3 = slot3[slot1]
-	slot3 = slot3.rewardId
-	--- END OF BLOCK #0 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #1 7-10, warpins: 1 ---
-	slot4 = DropData
-	slot4 = slot4[slot3]
-	--- END OF BLOCK #1 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 11-14, warpins: 1 ---
-	slot5 = pairs
-	slot7 = slot4.displayReward
-	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 15-24, warpins: 1 ---
-	slot10 = {}
-	slot11 = slot9[1]
-	slot10.id = slot11
-	slot11 = slot9[2]
-	slot10.num = slot11
-	slot11 = table
-	slot11 = slot11.insert
-	slot13 = slot2
-	slot14 = slot10
-
-	slot11(slot13, slot14)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 25-26, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 27-27, warpins: 3 ---
 	return slot2
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot3.getRewardData = slot21
-
-slot21 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = {}
-	slot2 = pairs
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.space
-	slot4 = slot4.ornament
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #1 9-13, warpins: 1 ---
-	slot7 = HomeObjectData
-	slot8 = slot6.homeId
-	slot7 = slot7[slot8]
-	--- END OF BLOCK #1 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #2 14-16, warpins: 1 ---
-	slot8 = slot7.type
-	--- END OF BLOCK #2 ---
-
-	if slot8 == 1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #3 17-19, warpins: 1 ---
-	slot8 = slot6.trashId
-	--- END OF BLOCK #3 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 20-22, warpins: 1 ---
-	slot8 = slot6.trashId
-	--- END OF BLOCK #4 ---
-
-	if slot8 == 0 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #5 23-50, warpins: 2 ---
-	slot8 = Utils
-	slot8 = slot8.yawAngleIntToQuaternion
-	slot10 = slot6.yawAngle
-	slot8 = slot8(slot10)
-	slot9 = Utils
-	slot9 = slot9.checkRotationIsVertical
-	slot11 = slot8
-	slot9 = slot9(slot11)
-	slot10 = {}
-	slot11 = slot6.pos3
-	slot11 = slot11[1]
-	slot11 = slot11 * 0.01
-	slot12 = HomelandPlotManageNewModel
-	slot12 = slot12.UNIT_LENGTH
-	slot11 = slot11 * slot12
-	slot10.x = slot11
-	slot11 = slot6.pos3
-	slot11 = slot11[3]
-	slot11 = slot11 * 0.01
-	slot12 = HomelandPlotManageNewModel
-	slot12 = slot12.UNIT_LENGTH
-	slot11 = slot11 * slot12
-	slot10.y = slot11
-	slot11 = RevertHomeUpgradeData
-	slot12 = slot6.homeId
-	slot11 = slot11[slot12]
-	--- END OF BLOCK #5 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 51-53, warpins: 1 ---
-	slot12 = slot11[2]
-	--- END OF BLOCK #6 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 54-54, warpins: 2 ---
-	slot12 = 1
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 55-57, warpins: 2 ---
-	slot13 = slot7.plotIconId
-	--- END OF BLOCK #8 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 58-59, warpins: 1 ---
-	slot13 = AddressDataConst
-	slot13 = slot13.UI_HOME_PLOT_NORMAL_ICON
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 60-72, warpins: 2 ---
-	slot14 = {}
-	slot14.ornamentId = slot5
-	slot15 = slot6.homeId
-	slot14.homeId = slot15
-	slot15 = slot6.electricMode
-	slot14.electricMode = slot15
-	slot14.pos = slot10
-	slot14.isRotate = slot9
-	slot14.level = slot12
-	slot14.iconId = slot13
-	slot15 = slot7.subType
-	slot14.ornamentType = slot15
-	slot1[slot5] = slot14
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 73-74, warpins: 5 ---
-	--- END OF BLOCK #11 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #12
-
-
-	--- BLOCK #12 75-75, warpins: 1 ---
-	return slot1
 	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot3.getOrnamentInfos = slot21
+slot4.getPlotList = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = HomeLandUtils
+	slot3 = slot3.getHomelandZoneUnlockData
+	slot3 = slot3()
+	slot4 = slot3[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot5 = slot4.prefabPos
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 10-12, warpins: 1 ---
+	slot5 = slot4.areaId
+	--- END OF BLOCK #2 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-13, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	if slot5 == slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-27, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getZoneGridPosition
+	slot8 = slot4
+	slot9 = slot2
+	slot5, slot6 = slot5(slot7, slot8, slot9)
+	slot7 = slot5 - 1
+	slot8 = HomelandPlotManageNewModel
+	slot8 = slot8.GRID_COLUMN_COUNT
+	slot7 = slot7 * slot8
+	slot7 = slot7 + slot6
+	slot7 = slot7 - 1
+
+	return slot7
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-28, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot4.getZoneIndexByLevel = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.getHomelandZoneUnlockData
+	slot2 = slot2()
+	slot3 = nil
+	slot4 = pairs
+	slot6 = slot2
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot9 = slot8.areaId
+	--- END OF BLOCK #1 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot9 = Const
+	slot9 = slot9.HOMELAND_AREA_TYPE
+	slot9 = slot9.PRODUCE
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 17-19, warpins: 1 ---
+	slot9 = slot8.isUnlock
+	--- END OF BLOCK #4 ---
+
+	if slot9 == 1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-23, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot7 < slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 24-24, warpins: 2 ---
+	slot3 = slot7
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-26, warpins: 5 ---
+	--- END OF BLOCK #8 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 27-28, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 29-33, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getZoneIndexByLevel
+	slot7 = slot3
+	slot8 = slot1
+
+	return slot4(slot6, slot7, slot8)
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-34, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot4.getDefaultZoneIndex = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot4 = HomelandPlotManageNewModel
+	slot4 = slot4.ZONE_WIDTH
+	slot5 = HomelandPlotManageNewModel
+	slot5 = slot5.ZONE_HEIGHT
+	slot6 = HomelandPlotManageNewModel
+	slot6 = slot6.GRID_COLUMN_COUNT
+	slot7 = HomelandPlotManageNewModel
+	slot7 = slot7.GRID_LINE_COUNT
+	slot8 = slot6 * slot4
+	slot8 = slot8 * 0.5
+	slot9 = slot7 * slot5
+	slot9 = slot9 * 0.5
+	slot10 = -slot8
+	--- END OF BLOCK #0 ---
+
+	if slot1 >= slot10 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 16-17, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot8 >= slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 18-20, warpins: 1 ---
+	slot10 = -slot9
+	--- END OF BLOCK #2 ---
+
+	if slot2 >= slot10 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-22, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot9 < slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-26, warpins: 4 ---
+	slot12 = slot0
+	slot10 = slot0.getDefaultZoneIndex
+	slot13 = slot3
+
+	return slot10(slot12, slot13)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-59, warpins: 2 ---
+	slot10 = math
+	slot10 = slot10.min
+	slot12 = math
+	slot12 = slot12.floor
+	slot14 = slot1 + slot8
+	slot14 = slot14 / slot4
+	slot12 = slot12(slot14)
+	slot12 = slot12 + 1
+	slot13 = slot6
+	slot10 = slot10(slot12, slot13)
+	slot11 = math
+	slot11 = slot11.min
+	slot13 = math
+	slot13 = slot13.floor
+	slot15 = slot9 - slot2
+	slot15 = slot15 / slot5
+	slot13 = slot13(slot15)
+	slot13 = slot13 + 1
+	slot14 = slot7
+	slot11 = slot11(slot13, slot14)
+	slot14 = slot0
+	slot12 = slot0.getDisplayZoneGridPosition
+	slot15 = slot11
+	slot16 = slot10
+	slot17 = slot3
+	slot12, slot13 = slot12(slot14, slot15, slot16, slot17)
+	slot10 = slot13
+	slot11 = slot12
+	slot12 = slot11 - 1
+	slot12 = slot12 * slot6
+	slot12 = slot12 + slot10
+	slot12 = slot12 - 1
+
+	return slot12
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot4.getZoneIndexByPos = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = Const
+	slot4 = slot4.HOMELAND_AREA_TYPE
+	slot4 = slot4.BUILD
+	--- END OF BLOCK #0 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot4 = HomelandPlotManageNewModel
+	slot4 = slot4.GRID_LINE_COUNT
+	slot4 = slot4 + 1
+	slot1 = slot4 - slot1
+	slot4 = HomelandPlotManageNewModel
+	slot4 = slot4.GRID_COLUMN_COUNT
+	slot4 = slot4 + 1
+	slot2 = slot4 - slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-16, warpins: 2 ---
+	slot4 = slot1
+	slot5 = slot2
+
+	return slot4, slot5
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot4.getDisplayZoneGridPosition = slot25
+
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-26, warpins: 1 ---
+	slot3 = HomelandPlotManageNewModel
+	slot3 = slot3.GRID_LINE_COUNT
+	slot3 = slot3 + 1
+	slot3 = slot3 * 0.5
+	slot4 = HomelandPlotManageNewModel
+	slot4 = slot4.GRID_COLUMN_COUNT
+	slot4 = slot4 + 1
+	slot4 = slot4 * 0.5
+	slot5 = slot1.prefabPos
+	slot5 = slot5[2]
+	slot6 = HomelandPlotManageNewModel
+	slot6 = slot6.ZONE_HEIGHT
+	slot5 = slot5 / slot6
+	slot5 = slot3 - slot5
+	slot6 = slot1.prefabPos
+	slot6 = slot6[1]
+	slot7 = HomelandPlotManageNewModel
+	slot7 = slot7.ZONE_WIDTH
+	slot6 = slot6 / slot7
+	slot6 = slot4 + slot6
+	slot9 = slot0
+	slot7 = slot0.getDisplayZoneGridPosition
+	slot10 = slot5
+	slot11 = slot6
+	slot12 = slot2
+
+	return slot7(slot9, slot10, slot11, slot12)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.getZoneGridPosition = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.getHomelandZoneUnlockData
+	slot2 = slot2()
+	slot3 = {}
+	slot4 = slot2[slot1]
+	slot4 = slot4.rewardId
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 9-12, warpins: 1 ---
+	slot5 = DropData
+	slot5 = slot5[slot4]
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot6 = pairs
+	slot8 = slot5.displayReward
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 17-26, warpins: 1 ---
+	slot11 = {}
+	slot12 = slot10[1]
+	slot11.id = slot12
+	slot12 = slot10[2]
+	slot11.num = slot12
+	slot12 = table
+	slot12 = slot12.insert
+	slot14 = slot3
+	slot15 = slot11
+
+	slot12(slot14, slot15)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 27-28, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 29-29, warpins: 3 ---
+	return slot3
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot4.getRewardData = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = {}
+	slot3 = pairs
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.space
+	slot5 = slot5.ornament
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #1 9-14, warpins: 1 ---
+	slot8 = HomeObjectData
+	slot9 = slot7.homeId
+	slot8 = slot8[slot9]
+	slot9 = slot7.areaId
+	--- END OF BLOCK #1 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-15, warpins: 1 ---
+	slot9 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-17, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #4 18-19, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot10 = slot8.type
+	--- END OF BLOCK #5 ---
+
+	if slot10 == 1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #6 23-25, warpins: 1 ---
+	slot10 = slot7.trashId
+	--- END OF BLOCK #6 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-28, warpins: 1 ---
+	slot10 = slot7.trashId
+	--- END OF BLOCK #7 ---
+
+	if slot10 == 0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #8 29-55, warpins: 2 ---
+	slot10 = slot7.rotY
+	slot11 = Utils
+	slot11 = slot11.yawAngleIntToQuaternion
+	slot13 = slot10
+	slot11 = slot11(slot13)
+	slot12 = Utils
+	slot12 = slot12.checkRotationIsVertical
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	slot13 = slot7.posX
+	slot14 = slot7.posZ
+	slot15 = {}
+	slot16 = slot13 * 0.01
+	slot17 = HomelandPlotManageNewModel
+	slot17 = slot17.UNIT_LENGTH
+	slot16 = slot16 * slot17
+	slot15.x = slot16
+	slot16 = slot14 * 0.01
+	slot17 = HomelandPlotManageNewModel
+	slot17 = slot17.UNIT_LENGTH
+	slot16 = slot16 * slot17
+	slot15.y = slot16
+	slot16 = RevertHomeUpgradeData
+	slot17 = slot7.homeId
+	slot16 = slot16[slot17]
+	--- END OF BLOCK #8 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 56-58, warpins: 1 ---
+	slot17 = slot16[2]
+	--- END OF BLOCK #9 ---
+
+	slot17 = if not slot17 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 59-59, warpins: 2 ---
+	slot17 = 1
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 60-62, warpins: 2 ---
+	slot18 = slot8.plotIconId
+	--- END OF BLOCK #11 ---
+
+	slot18 = if not slot18 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 63-64, warpins: 1 ---
+	slot18 = AddressDataConst
+	slot18 = slot18.UI_HOME_PLOT_NORMAL_ICON
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 65-77, warpins: 2 ---
+	slot19 = {}
+	slot19.ornamentId = slot6
+	slot20 = slot7.homeId
+	slot19.homeId = slot20
+	slot20 = slot7.electricMode
+	slot19.electricMode = slot20
+	slot19.pos = slot15
+	slot19.isRotate = slot12
+	slot19.level = slot17
+	slot19.iconId = slot18
+	slot20 = slot8.subType
+	slot19.ornamentType = slot20
+	slot2[slot6] = slot19
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 78-79, warpins: 6 ---
+	--- END OF BLOCK #14 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 80-80, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot4.getOrnamentInfos = slot25
+
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = HomeObjectData
 	slot3 = slot3[slot1]
@@ -749,9 +1134,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getOrnamentSize = slot21
+slot4.getOrnamentSize = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.getHomeOrnamentUpgradeInfo
@@ -818,9 +1203,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.checkOrnamentCanLevelUp = slot21
+slot4.checkOrnamentCanLevelUp = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -1120,9 +1505,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.getEnvFacilityRunningIndex = slot21
+slot4.getEnvFacilityRunningIndex = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1285,9 +1670,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getOperateIcon = slot21
+slot4.getOperateIcon = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1463,9 +1848,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.checkHasEntDoingOper = slot21
+slot4.checkHasEntDoingOper = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = false
 	slot4 = slot1.facilityState
@@ -1620,9 +2005,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getStatePaused = slot21
+slot4.getStatePaused = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #0 ---
@@ -1731,9 +2116,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getProgressWorkloadState = slot21
+slot4.getProgressWorkloadState = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1894,9 +2279,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.calcCurrWorkload = slot21
+slot4.calcCurrWorkload = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1917,11 +2302,12 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-10, warpins: 2 ---
+	--- BLOCK #2 5-11, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.space
 	slot3 = slot3.ornament
 	slot3 = slot3[slot1]
+	slot4 = slot2.formulaList
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
@@ -1931,496 +2317,673 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 11-16, warpins: 1 ---
-	slot4 = slot2.facilityType
-	slot5 = Const
-	slot5 = slot5.HOMELAND_FACILITY_TYPE
-	slot5 = slot5.ElectricReqSwitch
+	--- BLOCK #3 12-17, warpins: 1 ---
+	slot5 = slot2.facilityType
+	slot6 = Const
+	slot6 = slot6.HOMELAND_FACILITY_TYPE
+	slot6 = slot6.ElectricReqSwitch
 	--- END OF BLOCK #3 ---
 
-	if slot4 == slot5 then
+	if slot5 == slot6 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 17-19, warpins: 1 ---
-	slot4 = slot3.electricMode
+	--- BLOCK #4 18-20, warpins: 1 ---
+	slot5 = slot3.electricMode
 	--- END OF BLOCK #4 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 20-21, warpins: 1 ---
+	--- BLOCK #5 21-21, warpins: 1 ---
 	slot4 = slot2.electricModeFormulaList
-
-	return slot4
-
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 22-23, warpins: 4 ---
-	slot4 = slot2.formulaList
-
-	return slot4
+	--- BLOCK #6 22-25, warpins: 4 ---
+	slot5 = {}
+	slot6 = ipairs
 	--- END OF BLOCK #6 ---
 
-
-
-end
-
-slot3.getFinalFormulaList = slot21
-
-slot21 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 3-4, warpins: 1 ---
-	slot3 = {}
-
-	return slot3
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-9, warpins: 2 ---
-	slot3 = RevertHomeUpgradeData
-	slot3 = slot3[slot2]
-	slot4 = {}
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #3 10-16, warpins: 1 ---
-	slot5 = slot3[1]
-	slot6 = slot3[2]
-	slot7 = {}
-	slot8 = HomelandUpgradeData
-	slot8 = slot8[slot5]
-	--- END OF BLOCK #3 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 17-17, warpins: 1 ---
-	slot8 = {}
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 18-21, warpins: 2 ---
-	slot9 = ipairs
-	slot11 = slot8
-	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #6 22-30, warpins: 1 ---
-	slot14 = {}
-	slot15 = Utils
-	slot15 = slot15.getHomeObjectFacilityId
-	slot17 = slot13.homeTemplateId
-	slot15 = slot15(slot17)
-	slot16 = HomelandFacilityData
-	slot16 = slot16[slot15]
-	--- END OF BLOCK #6 ---
-
-	slot16 = if slot16 then
+	slot8 = if not slot4 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 31-39, warpins: 1 ---
-	slot19 = slot0
-	slot17 = slot0.getFinalFormulaList
-	slot20 = slot1
-	slot21 = slot16
-	slot17 = slot17(slot19, slot20, slot21)
-	slot18 = ipairs
-	slot20 = slot17
-	slot18, slot19, slot20 = slot18(slot20)
+	--- BLOCK #7 26-26, warpins: 1 ---
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 40-42, warpins: 1 ---
-	slot23 = slot7[slot22]
+	--- BLOCK #8 27-28, warpins: 2 ---
+	slot6, slot7, slot8 = slot6(slot8)
 	--- END OF BLOCK #8 ---
 
-	slot23 = if not slot23 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #19
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #9 43-48, warpins: 1 ---
-	slot23 = true
-	slot7[slot22] = slot23
-	slot23 = HomelandFormulaData
-	slot23 = slot23[slot22]
+	--- BLOCK #9 29-32, warpins: 1 ---
+	slot11 = HomelandFormulaData
+	slot11 = slot11[slot10]
 	--- END OF BLOCK #9 ---
 
-	slot23 = if slot23 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 49-54, warpins: 1 ---
-	slot24 = {}
-	slot25 = slot23.output
-	slot24.id = slot25
-	slot25 = slot23.previewItemId
+	--- BLOCK #10 33-38, warpins: 1 ---
+	slot11 = HomeLandUtils
+	slot11 = slot11.isHomelandFormulaTimeValid
+	slot13 = slot10
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #10 ---
 
-	slot25 = if not slot25 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 55-55, warpins: 1 ---
-	slot25 = slot23.output
+	--- BLOCK #11 39-43, warpins: 1 ---
+	slot11 = table
+	slot11 = slot11.insert
+	slot13 = slot5
+	slot14 = slot10
+
+	slot11(slot13, slot14)
+
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 56-61, warpins: 2 ---
-	slot26 = {}
-	slot26.id = slot25
-	slot27 = false
-	slot28 = slot23.unlockCondition
+	--- BLOCK #12 44-45, warpins: 4 ---
 	--- END OF BLOCK #12 ---
 
-	slot28 = if slot28 then
-	JUMP TO BLOCK #13
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 46-46, warpins: 1 ---
+	return slot5
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot4.getFinalFormulaList = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot7 = HomelandFormulaData
+	slot7 = slot7[slot4]
+
+	--- END OF BLOCK #0 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #13 62-70, warpins: 1 ---
-	slot28 = pg
-	slot28 = slot28.me
-	slot28 = slot28.triggerMap
-	slot30 = slot28
-	slot28 = slot28.isCompleteOrMeetCondition
-	slot31 = slot23.unlockCondition
-	slot28 = slot28(slot30, slot31)
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot8 = HomeLandUtils
+	slot8 = slot8.getDisplayOutputItemId
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	slot9 = slot7.previewItemId
+	--- END OF BLOCK #2 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-13, warpins: 1 ---
+	slot9 = slot8
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-37, warpins: 2 ---
+	slot10 = ClientHomelandUtils
+	slot10 = slot10.getFormulaUnlockState
+	slot12 = slot4
+	slot10 = slot10(slot12)
+	slot11 = {}
+	slot11.formulaId = slot4
+	slot12 = {}
+	slot12.id = slot9
+	slot11.previewItemInfo = slot12
+	slot12 = {}
+	slot12.id = slot8
+	slot11.itemInfo = slot12
+	slot12 = slot10.conditionLocked
+	slot11.conditionLocked = slot12
+	slot12 = slot10.drawingLocked
+	slot11.drawingLocked = slot12
+	slot12 = slot10.isLocked
+	slot11.unlockLocked = slot12
+	slot12 = slot10.lockText
+	slot11.lockText = slot12
+	slot12 = slot10.unlockItemId
+	slot11.unlockItemId = slot12
+	--- END OF BLOCK #4 ---
+
+	if slot6 >= slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 38-39, warpins: 1 ---
+	slot12 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 40-40, warpins: 1 ---
+	slot12 = true
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 41-44, warpins: 2 ---
+	slot11.isLocked = slot12
+	slot12 = slot7.timePeriodId
+	--- END OF BLOCK #7 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 45-46, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot12 == 0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 47-52, warpins: 2 ---
+	slot13 = table
+	slot13 = slot13.insert
+	slot15 = slot1
+	slot16 = slot11
+
+	slot13(slot15, slot16)
+
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 53-55, warpins: 2 ---
+	slot13 = slot2[slot12]
+	--- END OF BLOCK #10 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #11 56-59, warpins: 1 ---
+	slot14 = HomelandFormulaPeriodData
+	slot14 = slot14[slot12]
+	--- END OF BLOCK #11 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 60-60, warpins: 1 ---
+	slot14 = {}
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 61-71, warpins: 2 ---
+	slot15 = {}
+	slot15.timePeriodId = slot12
+	slot16 = slot14.name
+	slot15.name = slot16
+	slot15.level = slot5
+	slot16 = slot14.periodType
+	slot15.periodType = slot16
+	slot16 = {}
+	slot15.formulaList = slot16
 	--- END OF BLOCK #13 ---
 
-	slot28 = if not slot28 then
+	if slot6 >= slot5 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 71-71, warpins: 1 ---
-	slot27 = true
+	--- BLOCK #14 72-73, warpins: 1 ---
+	slot16 = false
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 72-81, warpins: 3 ---
-	slot28 = table
-	slot28 = slot28.insert
-	slot30 = slot14
-	slot31 = {}
-	slot31.formulaId = slot22
-	slot31.previewItemInfo = slot26
-	slot31.itemInfo = slot24
-	slot31.conditionLocked = slot27
+	--- BLOCK #15 74-74, warpins: 1 ---
+	slot16 = true
 	--- END OF BLOCK #15 ---
 
-	if slot6 >= slot12 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 82-83, warpins: 1 ---
-	slot32 = false
+	--- BLOCK #16 75-82, warpins: 2 ---
+	slot15.isLocked = slot16
+	slot13 = slot15
+	slot2[slot12] = slot13
+	slot15 = table
+	slot15 = slot15.insert
+	slot17 = slot3
+	slot18 = slot13
+
+	slot15(slot17, slot18)
+
 	--- END OF BLOCK #16 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 84-84, warpins: 1 ---
-	slot32 = true
+	--- BLOCK #17 83-88, warpins: 2 ---
+	slot14 = table
+	slot14 = slot14.insert
+	slot16 = slot13.formulaList
+	slot17 = slot11
+
+	slot14(slot16, slot17)
+
+	return
 	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 85-86, warpins: 2 ---
-	slot31.isLocked = slot32
-
-	slot28(slot30, slot31)
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 87-88, warpins: 4 ---
-	--- END OF BLOCK #19 ---
-
-	for slot21, slot22 in slot18, slot19, slot20
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #20
-
-
-	--- BLOCK #20 89-92, warpins: 2 ---
-	slot17 = #slot14
-	slot18 = 0
-	--- END OF BLOCK #20 ---
-
-	if slot17 > slot18 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #21 93-100, warpins: 1 ---
-	slot17 = table
-	slot17 = slot17.insert
-	slot19 = slot4
-	slot20 = {}
-	slot20.level = slot12
-	slot20.formulaList = slot14
-	--- END OF BLOCK #21 ---
-
-	if slot6 >= slot12 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 101-102, warpins: 1 ---
-	slot21 = false
-	--- END OF BLOCK #22 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
-
-
-	--- BLOCK #23 103-103, warpins: 1 ---
-	slot21 = true
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 104-105, warpins: 2 ---
-	slot20.isLocked = slot21
-
-	slot17(slot19, slot20)
-
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 106-107, warpins: 3 ---
-	--- END OF BLOCK #25 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #26
-
-
-	--- BLOCK #26 108-108, warpins: 1 ---
-	--- END OF BLOCK #26 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
-
-
-	--- BLOCK #27 109-117, warpins: 1 ---
-	slot5 = Utils
-	slot5 = slot5.getHomeObjectFacilityId
-	slot7 = slot0.homeTemplateId
-	slot5 = slot5(slot7)
-	slot6 = HomelandFacilityData
-	slot6 = slot6[slot5]
-	slot7 = {}
-	--- END OF BLOCK #27 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #28 118-126, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.getFinalFormulaList
-	slot11 = slot1
-	slot12 = slot6
-	slot8 = slot8(slot10, slot11, slot12)
-	slot9 = ipairs
-	slot11 = slot8
-	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #28 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #29 127-134, warpins: 1 ---
-	slot14 = HomelandFormulaData
-	slot14 = slot14[slot13]
-	slot15 = {}
-	slot16 = slot14.output
-	slot15.id = slot16
-	slot16 = slot14.previewItemId
-	--- END OF BLOCK #29 ---
-
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #31
-	end
-
-
-	--- BLOCK #30 135-135, warpins: 1 ---
-	slot16 = slot14.output
-	--- END OF BLOCK #30 ---
-
-	FLOW; TARGET BLOCK #31
-
-
-	--- BLOCK #31 136-141, warpins: 2 ---
-	slot17 = {}
-	slot17.id = slot16
-	slot18 = false
-	slot19 = slot14.unlockCondition
-	--- END OF BLOCK #31 ---
-
-	slot19 = if slot19 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #32 142-150, warpins: 1 ---
-	slot19 = pg
-	slot19 = slot19.me
-	slot19 = slot19.triggerMap
-	slot21 = slot19
-	slot19 = slot19.isCompleteOrMeetCondition
-	slot22 = slot14.unlockCondition
-	slot19 = slot19(slot21, slot22)
-	--- END OF BLOCK #32 ---
-
-	slot19 = if not slot19 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #33 151-151, warpins: 1 ---
-	slot18 = true
-	--- END OF BLOCK #33 ---
-
-	FLOW; TARGET BLOCK #34
-
-
-	--- BLOCK #34 152-160, warpins: 3 ---
-	slot19 = table
-	slot19 = slot19.insert
-	slot21 = slot7
-	slot22 = {
-		isLocked = false
-	}
-	slot22.formulaId = slot13
-	slot22.conditionLocked = slot18
-	slot22.previewItemInfo = slot17
-	slot22.itemInfo = slot15
-
-	slot19(slot21, slot22)
-
-	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 161-162, warpins: 2 ---
-	--- END OF BLOCK #35 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #29
-	GO OUT TO BLOCK #36
-
-
-	--- BLOCK #36 163-168, warpins: 2 ---
-	slot8 = table
-	slot8 = slot8.insert
-	slot10 = slot4
-	slot11 = {
-		level = 1,
-		isLocked = false
-	}
-	slot11.formulaList = slot7
-
-	slot8(slot10, slot11)
-
-	--- END OF BLOCK #36 ---
-
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 169-169, warpins: 2 ---
-	return slot4
-	--- END OF BLOCK #37 ---
 
 
 
 end
 
-slot3.getFormulaListInfo = slot21
+slot4.addFormulaListItem = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot3 = {}
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot3 = RevertHomeUpgradeData
+	slot3 = slot3[slot2]
+	slot4 = {}
+	slot5 = {}
+	slot6 = {}
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #3 12-18, warpins: 1 ---
+	slot7 = slot3[1]
+	slot8 = slot3[2]
+	slot9 = {}
+	slot10 = HomelandUpgradeData
+	slot10 = slot10[slot7]
+	--- END OF BLOCK #3 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-19, warpins: 1 ---
+	slot10 = {}
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-23, warpins: 2 ---
+	slot11 = ipairs
+	slot13 = slot10
+	slot11, slot12, slot13 = slot11(slot13)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #6 24-32, warpins: 1 ---
+	slot16 = {}
+	slot17 = Utils
+	slot17 = slot17.getHomeObjectFacilityId
+	slot19 = slot15.homeTemplateId
+	slot17 = slot17(slot19)
+	slot18 = HomelandFacilityData
+	slot18 = slot18[slot17]
+	--- END OF BLOCK #6 ---
+
+	slot18 = if slot18 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 33-41, warpins: 1 ---
+	slot21 = slot0
+	slot19 = slot0.getFinalFormulaList
+	slot22 = slot1
+	slot23 = slot18
+	slot19 = slot19(slot21, slot22, slot23)
+	slot20 = ipairs
+	slot22 = slot19
+	slot20, slot21, slot22 = slot20(slot22)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 42-44, warpins: 1 ---
+	slot25 = slot9[slot24]
+	--- END OF BLOCK #8 ---
+
+	slot25 = if not slot25 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 45-55, warpins: 1 ---
+	slot25 = true
+	slot9[slot24] = slot25
+	slot27 = slot0
+	slot25 = slot0.addFormulaListItem
+	slot28 = slot16
+	slot29 = slot6
+	slot30 = slot5
+	slot31 = slot24
+	slot32 = slot14
+	slot33 = slot8
+
+	slot25(slot27, slot28, slot29, slot30, slot31, slot32, slot33)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 56-57, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	for slot23, slot24 in slot20, slot21, slot22
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 58-61, warpins: 2 ---
+	slot19 = #slot16
+	slot20 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot19 > slot20 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 62-69, warpins: 1 ---
+	slot19 = table
+	slot19 = slot19.insert
+	slot21 = slot4
+	slot22 = {}
+	slot22.level = slot14
+	slot22.formulaList = slot16
+	--- END OF BLOCK #12 ---
+
+	if slot8 >= slot14 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 70-71, warpins: 1 ---
+	slot23 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 72-72, warpins: 1 ---
+	slot23 = true
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 73-74, warpins: 2 ---
+	slot22.isLocked = slot23
+
+	slot19(slot21, slot22)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 75-76, warpins: 3 ---
+	--- END OF BLOCK #16 ---
+
+	for slot14, slot15 in slot11, slot12, slot13
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 77-77, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #18 78-86, warpins: 1 ---
+	slot7 = Utils
+	slot7 = slot7.getHomeObjectFacilityId
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	slot8 = HomelandFacilityData
+	slot8 = slot8[slot7]
+	slot9 = {}
+	--- END OF BLOCK #18 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #19 87-95, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.getFinalFormulaList
+	slot13 = slot1
+	slot14 = slot8
+	slot10 = slot10(slot12, slot13, slot14)
+	slot11 = ipairs
+	slot13 = slot10
+	slot11, slot12, slot13 = slot11(slot13)
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 96-104, warpins: 1 ---
+	slot18 = slot0
+	slot16 = slot0.addFormulaListItem
+	slot19 = slot9
+	slot20 = slot6
+	slot21 = slot5
+	slot22 = slot15
+	slot23 = 1
+	slot24 = 1
+
+	slot16(slot18, slot19, slot20, slot21, slot22, slot23, slot24)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 105-106, warpins: 2 ---
+	--- END OF BLOCK #21 ---
+
+	for slot14, slot15 in slot11, slot12, slot13
+	LOOP BLOCK #20
+	GO OUT TO BLOCK #22
+
+
+	--- BLOCK #22 107-110, warpins: 2 ---
+	slot10 = #slot9
+	slot11 = 0
+	--- END OF BLOCK #22 ---
+
+	if slot10 > slot11 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 111-116, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot4
+	slot13 = {
+		isLocked = false,
+		level = 1
+	}
+	slot13.formulaList = slot9
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 117-120, warpins: 3 ---
+	slot7 = ipairs
+	slot9 = slot5
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #25 121-126, warpins: 1 ---
+	slot12 = table
+	slot12 = slot12.insert
+	slot14 = slot4
+	slot15 = slot10
+	slot16 = slot11
+
+	slot12(slot14, slot15, slot16)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 127-128, warpins: 2 ---
+	--- END OF BLOCK #26 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #25
+	GO OUT TO BLOCK #27
+
+
+	--- BLOCK #27 129-129, warpins: 1 ---
+	return slot4
+	--- END OF BLOCK #27 ---
+
+
+
+end
+
+slot4.getFormulaListInfo = slot25
+
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = HomelandFormulaData
 	slot2 = slot2[slot1]
@@ -2655,9 +3218,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.getFormulaListDetailInfo = slot21
+slot4.getFormulaListDetailInfo = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2857,7 +3420,7 @@ slot21 = function(slot0, slot1)
 
 
 	--- BLOCK #19 61-61, warpins: 1 ---
-	slot16 = {}
+	slot16 = EMPTY_TABLE
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
@@ -2920,7 +3483,7 @@ slot21 = function(slot0, slot1)
 
 
 	--- BLOCK #26 79-79, warpins: 1 ---
-	slot16 = {}
+	slot16 = EMPTY_TABLE
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
@@ -2990,9 +3553,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.getMaxAllowedUpgradeInfo = slot21
+slot4.getMaxAllowedUpgradeInfo = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3086,9 +3649,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.getOrnamentTypeId = slot21
+slot4.getOrnamentTypeId = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3423,9 +3986,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot3.getFormulaUnlockLevel = slot21
+slot4.getFormulaUnlockLevel = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3524,9 +4087,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.canHomeObjectUpgrade = slot21
+slot4.canHomeObjectUpgrade = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3659,9 +4222,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.canHomeObjectEnvironment = slot21
+slot4.canHomeObjectEnvironment = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.getHomeObjectFacilityId
@@ -3774,9 +4337,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.getEnvFacilityInfo = slot21
+slot4.getEnvFacilityInfo = slot25
 
-slot21 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3907,9 +4470,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot3.canHomeObjectSwitchFormula = slot21
+slot4.canHomeObjectSwitchFormula = slot25
 
-slot21 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4068,9 +4631,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot3.canHomeObjectPlacePet = slot21
+slot4.canHomeObjectPlacePet = slot25
 
-slot21 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = "home"
 	slot0.HOME_TAG = slot1
@@ -4088,10 +4651,10 @@ slot21 = function(slot0)
 
 end
 
-slot3.ctor = slot21
+slot4.ctor = slot25
 
-return slot3
---- END OF BLOCK #0 ---
+return slot4
+--- END OF BLOCK #6 ---
 
 
 

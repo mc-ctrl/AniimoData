@@ -1,4 +1,4 @@
---- BLOCK #0 1-92, warpins: 1 ---
+--- BLOCK #0 1-96, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -349,7 +349,7 @@ slot19 = function(slot0)
 		FLOW; TARGET BLOCK #12
 
 
-		--- BLOCK #12 58-83, warpins: 2 ---
+		--- BLOCK #12 58-91, warpins: 2 ---
 		slot8 = slot2
 		slot6 = slot2.BindEnterEvent
 
@@ -411,11 +411,21 @@ slot19 = function(slot0)
 		slot6 = slot6.bloomQuality
 		slot7 = self
 		slot9 = slot7
-		slot7 = slot7.createRingAndPillar
+		slot7 = slot7.createRing
 		slot10 = slot2
 		slot11 = slot6
 
 		slot7(slot9, slot10, slot11)
+
+		slot7 = self
+		slot9 = slot7
+		slot7 = slot7.refreshFlowerPillarEffect
+		slot10 = flowerId
+		slot11 = v
+		slot11 = slot11.flowerState
+		slot12 = slot6
+
+		slot7(slot9, slot10, slot11, slot12)
 
 		return
 		--- END OF BLOCK #12 ---
@@ -423,21 +433,21 @@ slot19 = function(slot0)
 		FLOW; TARGET BLOCK #13
 
 
-		--- BLOCK #13 84-84, warpins: 2 ---
+		--- BLOCK #13 92-92, warpins: 2 ---
 		return
 		--- END OF BLOCK #13 ---
 
 		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #14 85-85, warpins: 2 ---
+		--- BLOCK #14 93-93, warpins: 2 ---
 		return
 		--- END OF BLOCK #14 ---
 
 		FLOW; TARGET BLOCK #15
 
 
-		--- BLOCK #15 86-86, warpins: 2 ---
+		--- BLOCK #15 94-94, warpins: 2 ---
 		return
 		--- END OF BLOCK #15 ---
 
@@ -635,8 +645,7 @@ end
 slot18.claTributeItems = slot19
 
 slot19 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3, slot4 = nil
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -646,106 +655,168 @@ slot19 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = 0
 	--- END OF BLOCK #1 ---
 
-	if slot2 <= slot5 then
+	if slot2 <= slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 7-7, warpins: 2 ---
+	--- BLOCK #2 6-6, warpins: 2 ---
 	slot2 = 1
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 8-11, warpins: 2 ---
-	slot5 = PlentyHappenEffectData
-	slot5 = slot5[slot2]
+	--- BLOCK #3 7-10, warpins: 2 ---
+	slot3 = PlentyHappenEffectData
+	slot3 = slot3[slot2]
 	--- END OF BLOCK #3 ---
 
-	slot5 = if not slot5 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 12-12, warpins: 1 ---
-	slot5 = {}
+	--- BLOCK #4 11-11, warpins: 1 ---
+	slot3 = {}
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 13-15, warpins: 2 ---
-	slot6 = slot5.resId1
+	--- BLOCK #5 12-14, warpins: 2 ---
+	slot4 = slot3.resId1
 	--- END OF BLOCK #5 ---
 
-	slot3 = if not slot6 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 16-16, warpins: 1 ---
-	slot3 = ""
+	--- BLOCK #6 15-15, warpins: 1 ---
+	slot4 = ""
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 17-19, warpins: 2 ---
-	slot6 = slot5.resId2
-	--- END OF BLOCK #7 ---
+	--- BLOCK #7 16-23, warpins: 2 ---
+	slot7 = slot1
+	slot5 = slot1.CreateLeylineAsset
+	slot8 = slot4
+	slot9 = LeylineTreeSystem
+	slot9 = slot9.FLOWER_INST_STATE
+	slot9 = slot9.ShowRing
 
-	slot4 = if not slot6 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 20-20, warpins: 1 ---
-	slot4 = ""
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 21-35, warpins: 2 ---
-	slot8 = slot1
-	slot6 = slot1.CreateLeylineAsset
-	slot9 = slot3
-	slot10 = LeylineTreeSystem
-	slot10 = slot10.FLOWER_INST_STATE
-	slot10 = slot10.ShowRing
-
-	slot6(slot8, slot9, slot10)
-
-	slot8 = slot1
-	slot6 = slot1.CreateLeylineAsset
-	slot9 = slot4
-	slot10 = LeylineTreeSystem
-	slot10 = slot10.FLOWER_INST_STATE
-	slot10 = slot10.ShowPillar
-
-	slot6(slot8, slot9, slot10)
+	slot5(slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot18.createRingAndPillar = slot19
+slot18.createRing = slot19
+
+slot19 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.getEntityByStaticId
+	slot8 = slot1
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-18, warpins: 1 ---
+	slot6 = slot5.refreshPlentyPillarEffect
+
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 19-19, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 20-25, warpins: 2 ---
+	slot8 = slot5
+	slot6 = slot5.refreshPlentyPillarEffect
+	slot9 = slot2
+	slot10 = slot3
+
+	slot6(slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot18.refreshFlowerPillarEffect = slot19
 
 slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -948,11 +1019,15 @@ end
 slot18.flowerCountDown = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = {}
 	slot2 = MessageName
 	slot2 = slot2.LEYLINEFLOWER_FLOWER_STATE_CHANGED
 	slot3 = "onLeylineFlowerStateChanged"
+	slot1[slot2] = slot3
+	slot2 = MessageName
+	slot2 = slot2.LEYLINEFLOWER_RAINBOW_STAGE_CHANGED
+	slot3 = "onLeylineFlowerRainbowStageChanged"
 	slot1[slot2] = slot3
 	slot2 = MessageName
 	slot2 = slot2.EVENT_ECO_TRACE_SEARCH_CHANGE
@@ -969,6 +1044,132 @@ end
 slot18.getMessageBindMap = slot19
 
 slot19 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot1.leylineFlowerId
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-8, warpins: 1 ---
+	slot2 = slot1.rainbowStage
+
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-13, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-16, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.space
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 19-22, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.getEntityByStaticId
+	slot6 = slot1.leylineFlowerId
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 23-24, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 25-27, warpins: 1 ---
+	slot4 = slot3.refreshRainbowStageAppearance
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 28-31, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.refreshRainbowStageAppearance
+	slot7 = slot1.rainbowStage
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 32-32, warpins: 3 ---
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot18.onLeylineFlowerRainbowStageChanged = slot19
+
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.leylineFlowerId
 	--- END OF BLOCK #0 ---
@@ -983,20 +1184,16 @@ slot19 = function(slot0, slot1)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #2 5-16, warpins: 1 ---
-	slot2 = MapHelper
-	slot2 = slot2.getLeylineFlowerPlentyInfo
-	slot4 = slot1.leylineFlowerId
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.getCurFlowerCreateId
-	slot8 = slot1.leylineFlowerId
-	MULTRES = slot5(slot7, slot8)
-	slot2 = slot2(slot4, MULTRES)
+	--- BLOCK #2 5-12, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getCurFlowerInfo
+	slot5 = slot1.leylineFlowerId
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #2 ---
 
 	slot2 = if not slot2 then
@@ -1006,56 +1203,99 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 17-22, warpins: 1 ---
-	slot3 = slot0.poolHelper
-	slot5 = slot3
-	slot3 = slot3.recycleToPool
-	slot6 = slot1.leylineFlowerId
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #3 13-13, warpins: 1 ---
+	slot2 = {}
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-28, warpins: 1 ---
-	slot3 = slot1.newValue
-	slot4 = LeylineFlowerConst
-	slot4 = slot4.FLOWER_STATE
-	slot4 = slot4.Budding
+	--- BLOCK #4 14-25, warpins: 2 ---
+	slot3 = MapHelper
+	slot3 = slot3.getLeylineFlowerPlentyInfo
+	slot5 = slot1.leylineFlowerId
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.getCurFlowerCreateId
+	slot9 = slot1.leylineFlowerId
+	MULTRES = slot6(slot8, slot9)
+	slot3 = slot3(slot5, MULTRES)
 	--- END OF BLOCK #4 ---
 
-	if slot3 ~= slot4 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 29-34, warpins: 1 ---
-	slot3 = slot1.newValue
-	slot4 = LeylineFlowerConst
-	slot4 = slot4.FLOWER_STATE
-	slot4 = slot4.Blooming
+	--- BLOCK #5 26-37, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.refreshFlowerPillarEffect
+	slot7 = slot1.leylineFlowerId
+	slot8 = nil
+	slot9 = slot2.bloomQuality
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = slot0.poolHelper
+	slot6 = slot4
+	slot4 = slot4.recycleToPool
+	slot7 = slot1.leylineFlowerId
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #5 ---
 
-	if slot3 == slot4 then
-	JUMP TO BLOCK #6
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #6 38-49, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.refreshFlowerPillarEffect
+	slot7 = slot1.leylineFlowerId
+	slot8 = slot1.newValue
+	slot9 = slot2.bloomQuality
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = slot1.newValue
+	slot5 = LeylineFlowerConst
+	slot5 = slot5.FLOWER_STATE
+	slot5 = slot5.Budding
+	--- END OF BLOCK #6 ---
+
+	if slot4 ~= slot5 then
 	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 35-43, warpins: 2 ---
-	slot3 = slot0.poolHelper
-	slot5 = slot3
-	slot3 = slot3.createFromPool
-	slot6 = slot1.leylineFlowerId
-	slot7 = Const
-	slot7 = slot7.MAP_MARK_LeylineTree_Create
+	--- BLOCK #7 50-55, warpins: 1 ---
+	slot4 = slot1.newValue
+	slot5 = LeylineFlowerConst
+	slot5 = slot5.FLOWER_STATE
+	slot5 = slot5.Blooming
+	--- END OF BLOCK #7 ---
 
-	slot8 = function(slot0)
+	if slot4 == slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 56-64, warpins: 2 ---
+	slot4 = slot0.poolHelper
+	slot6 = slot4
+	slot4 = slot4.createFromPool
+	slot7 = slot1.leylineFlowerId
+	slot8 = Const
+	slot8 = slot8.MAP_MARK_LeylineTree_Create
+
+	slot9 = function(slot0)
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot1 = pg
 		slot1 = slot1.game
@@ -1076,7 +1316,7 @@ slot19 = function(slot0, slot1)
 		--- BLOCK #1 10-10, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #17
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
 		--- BLOCK #2 11-17, warpins: 1 ---
@@ -1097,7 +1337,7 @@ slot19 = function(slot0, slot1)
 		--- BLOCK #3 18-18, warpins: 1 ---
 		--- END OF BLOCK #3 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #18
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
 		--- BLOCK #4 19-29, warpins: 1 ---
@@ -1174,7 +1414,7 @@ slot19 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 52-76, warpins: 2 ---
+		--- BLOCK #10 52-78, warpins: 2 ---
 		slot7 = slot2
 		slot5 = slot2.BindEnterEvent
 
@@ -1235,144 +1475,81 @@ slot19 = function(slot0, slot1)
 
 		slot5(slot7, slot8, slot9)
 
-		slot5 = pg
-		slot5 = slot5.me
-		slot7 = slot5
-		slot5 = slot5.getSpaceOwnerSceneLeylineFlowerInfoMap
-		slot5 = slot5(slot7)
+		slot5 = flowerInfo
+		slot5 = slot5.bloomQuality
+		slot6 = self
+		slot8 = slot6
+		slot6 = slot6.createRing
+		slot9 = slot2
+		slot10 = slot5
+
+		slot6(slot8, slot9, slot10)
+
+		return
 		--- END OF BLOCK #10 ---
 
-		slot5 = if not slot5 then
-		JUMP TO BLOCK #11
-		else
-		JUMP TO BLOCK #12
-		end
+		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #11 77-82, warpins: 1 ---
-		slot5 = pg
-		slot5 = slot5.me
-		slot5 = slot5.leylineFlowerInfoMap
-		slot7 = slot5
-		slot5 = slot5.getRawTable
-		slot5 = slot5(slot7)
+		--- BLOCK #11 79-79, warpins: 2 ---
+		return
 		--- END OF BLOCK #11 ---
 
 		FLOW; TARGET BLOCK #12
 
 
-		--- BLOCK #12 83-84, warpins: 2 ---
+		--- BLOCK #12 80-80, warpins: 2 ---
+		return
 		--- END OF BLOCK #12 ---
-
-		slot5 = if not slot5 then
-		JUMP TO BLOCK #13
-		else
-		JUMP TO BLOCK #14
-		end
-
-
-		--- BLOCK #13 85-85, warpins: 1 ---
-		slot5 = {}
-		--- END OF BLOCK #13 ---
-
-		FLOW; TARGET BLOCK #14
-
-
-		--- BLOCK #14 86-90, warpins: 2 ---
-		slot6 = info
-		slot6 = slot6.leylineFlowerId
-		slot6 = slot5[slot6]
-		--- END OF BLOCK #14 ---
-
-		slot6 = if not slot6 then
-		JUMP TO BLOCK #15
-		else
-		JUMP TO BLOCK #16
-		end
-
-
-		--- BLOCK #15 91-91, warpins: 1 ---
-		slot6 = {}
-		--- END OF BLOCK #15 ---
-
-		FLOW; TARGET BLOCK #16
-
-
-		--- BLOCK #16 92-99, warpins: 2 ---
-		slot7 = slot6.bloomQuality
-		slot8 = self
-		slot10 = slot8
-		slot8 = slot8.createRingAndPillar
-		slot11 = slot2
-		slot12 = slot7
-
-		slot8(slot10, slot11, slot12)
-
-		return
-		--- END OF BLOCK #16 ---
-
-		FLOW; TARGET BLOCK #17
-
-
-		--- BLOCK #17 100-100, warpins: 2 ---
-		return
-		--- END OF BLOCK #17 ---
-
-		FLOW; TARGET BLOCK #18
-
-
-		--- BLOCK #18 101-101, warpins: 2 ---
-		return
-		--- END OF BLOCK #18 ---
 
 
 
 	end
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 44-53, warpins: 1 ---
-	slot3 = slot0.poolHelper
-	slot5 = slot3
-	slot3 = slot3.recycleToPool
-	slot6 = slot1.leylineFlowerId
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.flowerCountDown
-	slot6 = slot1.leylineFlowerId
-	slot7 = false
-
-	slot3(slot5, slot6, slot7)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 54-55, warpins: 2 ---
-	return
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 56-56, warpins: 2 ---
-	return
+	--- BLOCK #9 65-74, warpins: 1 ---
+	slot4 = slot0.poolHelper
+	slot6 = slot4
+	slot4 = slot4.recycleToPool
+	slot7 = slot1.leylineFlowerId
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.flowerCountDown
+	slot7 = slot1.leylineFlowerId
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 57-57, warpins: 2 ---
+	--- BLOCK #10 75-76, warpins: 2 ---
 	return
 	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 77-77, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 78-78, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
 
 
 
@@ -1382,107 +1559,135 @@ slot18.onLeylineFlowerStateChanged = slot19
 
 slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.ecoTraceSearchMarkId
+	slot1 = ClientActivityUtils
+	slot1 = slot1.getEcoTraceActivityData
+	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
-	if slot1 == 0 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
 	--- BLOCK #1 6-8, warpins: 1 ---
-	slot2 = slot0.ecoTraceSearchMarkId
+	slot2 = slot1.ecoTraceSearchMarkId
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 9-22, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.tips
-	slot4 = slot2
-	slot2 = slot2.showTextTip
-	slot5 = pg
-	slot5 = slot5.getGameString
-	slot7 = "ECOLOGICAL_SEARCH_END_TIP"
-	MULTRES = slot5(slot7)
-
-	slot2(slot4, MULTRES)
-
-	slot4 = slot0
-	slot2 = slot0.onEcoTraceSearchEnd
-
-	slot2(slot4)
-
+	--- BLOCK #2 9-9, warpins: 2 ---
+	slot2 = 0
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 23-23, warpins: 2 ---
+	--- BLOCK #3 10-11, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	if slot2 == 0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #4 24-29, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.map
-	slot2 = slot2.sceneMarkPointData
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot3 = slot0.ecoTraceSearchMarkId
 	--- END OF BLOCK #4 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 30-36, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.map
-	slot2 = slot2.sceneMarkPointData
-	slot2 = slot2[slot1]
+	--- BLOCK #5 15-28, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "ECOLOGICAL_SEARCH_END_TIP"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot5 = slot0
+	slot3 = slot0.onEcoTraceSearchEnd
+
+	slot3(slot5)
+
 	--- END OF BLOCK #5 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #6
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-29, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #7 30-35, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.map
+	slot3 = slot3.sceneMarkPointData
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 37-37, warpins: 2 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #8 36-42, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.map
+	slot3 = slot3.sceneMarkPointData
+	slot3 = slot3[slot2]
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #7 38-51, warpins: 1 ---
-	slot2 = ClientActivityUtils
-	slot2 = slot2.getEcoTraceMarkRadius
-	slot2 = slot2()
-	slot0.ecoTraceSearchMarkId = slot1
-	slot3 = slot0.poolHelper
-	slot5 = slot3
-	slot3 = slot3.createFromPool
-	slot6 = slot1
-	slot7 = Const
-	slot7 = slot7.MAP_MARK_EcoTrace_Search
+	--- BLOCK #9 43-43, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
-	slot8 = function(slot0)
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #10 44-57, warpins: 1 ---
+	slot3 = ClientActivityUtils
+	slot3 = slot3.getEcoTraceMarkRadius
+	slot3 = slot3()
+	slot0.ecoTraceSearchMarkId = slot2
+	slot4 = slot0.poolHelper
+	slot6 = slot4
+	slot4 = slot4.createFromPool
+	slot7 = slot2
+	slot8 = Const
+	slot8 = slot8.MAP_MARK_EcoTrace_Search
+
+	slot9 = function(slot0)
 		--- BLOCK #0 1-26, warpins: 1 ---
 		slot1 = slot0.gameObject
 		slot1 = slot1.transform
@@ -1517,24 +1722,24 @@ slot19 = function(slot0)
 
 	end
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #8 52-52, warpins: 2 ---
+	--- BLOCK #11 58-58, warpins: 2 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #9 53-53, warpins: 2 ---
+	--- BLOCK #12 59-59, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-49, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Helper.UIComponent"
 slot0 = slot0(slot2)
@@ -36,67 +36,62 @@ slot11 = "Data.sys_config_data"
 slot9 = slot9(slot11)
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-61, warpins: 1 ---
+	--- BLOCK #0 1-56, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
-	slot0.objectReference = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "itemListUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.itemListUList = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "buttonSearchUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.buttonSearchUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "selectorUSelector"
-	slot1 = slot1(slot3, slot4)
-	slot0.selectorUSelector = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "bgCloseUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.bgCloseUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnCloseUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnCloseUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "selectorNameUSDFText"
-	slot1 = slot1(slot3, slot4)
-	slot0.selectorNameUSDFText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnConfirmUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnConfirmUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "inputField"
-	slot1 = slot1(slot3, slot4)
-	slot0.inputField = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "propInfoUComponent"
-	slot1 = slot1(slot3, slot4)
-	slot0.propInfoUComponent = slot1
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "itemListUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.itemListUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "buttonSearchUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.buttonSearchUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "selectorUSelector"
+	slot2 = slot2(slot4, slot5)
+	slot0.selectorUSelector = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "bgCloseUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.bgCloseUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnCloseUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnCloseUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "selectorNameUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.selectorNameUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnConfirmUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnConfirmUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "inputField"
+	slot2 = slot2(slot4, slot5)
+	slot0.inputField = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "propInfoUComponent"
+	slot2 = slot2(slot4, slot5)
+	slot0.propInfoUComponent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnScreenUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnScreenUButton = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -108,7 +103,7 @@ end
 slot2.findObjects = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-55, warpins: 1 ---
+	--- BLOCK #0 1-93, warpins: 1 ---
 	slot1 = slot0.bgCloseUButton
 
 	slot2 = function()
@@ -219,52 +214,56 @@ slot10 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 6-14, warpins: 2 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.chat
-		slot2 = slot0
-		slot0 = slot0.getWorldMessageCD
-		slot0 = slot0(slot2)
-		slot1 = 0
-		--- END OF BLOCK #2 ---
-
-		if slot0 > slot1 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #3 15-24, warpins: 1 ---
+		--- BLOCK #2 6-19, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.view
 		slot0 = slot0.channelListUList
 		slot0 = slot0.selectedItem
 		slot0 = slot0.channelId
 		slot1 = pg
-		slot1 = slot1.me
-		slot1 = slot1.worldChatGroupId
+		slot1 = slot1.game
+		slot1 = slot1.chat
+		slot3 = slot1
+		slot1 = slot1.getWorldMessageCD
+		slot1 = slot1(slot3)
+		slot2 = 0
+		--- END OF BLOCK #2 ---
+
+		if slot1 > slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 20-28, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.chat
+		slot3 = slot1
+		slot1 = slot1.isWorldChatGroupId
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #3 ---
 
-		if slot0 == slot1 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #4
 		else
 		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #4 25-34, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.showBubbleMessageRaw
-		slot2 = pg
-		slot2 = slot2.getGameString
-		slot4 = "CHAT_SEND_CD"
-		slot2 = slot2(slot4)
-		slot3 = 2
+		--- BLOCK #4 29-38, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.showBubbleMessageRaw
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "CHAT_SEND_CD"
+		slot3 = slot3(slot5)
+		slot4 = 2
 
-		slot0(slot2, slot3)
+		slot1(slot3, slot4)
 
 		return
 
@@ -273,69 +272,69 @@ slot10 = function(slot0)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 35-57, warpins: 3 ---
-		slot0 = pg
-		slot0 = slot0.getGameString
-		slot2 = "PROP"
-		slot0 = slot0(slot2)
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.channelListUList
-		slot1 = slot1.selectedItem
-		slot2 = pg
-		slot2 = slot2.game
-		slot2 = slot2.chat
-		slot4 = slot2
-		slot2 = slot2.sendMessage
-		slot5 = slot0
-		slot6 = pg
-		slot6 = slot6.game
-		slot6 = slot6.chat
-		slot6 = slot6.subMessageType
-		slot6 = slot6.Text
-		slot7 = slot1.type
-		slot8 = slot1.channelId
+		--- BLOCK #5 39-61, warpins: 3 ---
+		slot1 = pg
+		slot1 = slot1.getGameString
+		slot3 = "PROP"
+		slot1 = slot1(slot3)
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.channelListUList
+		slot2 = slot2.selectedItem
+		slot3 = pg
+		slot3 = slot3.game
+		slot3 = slot3.chat
+		slot5 = slot3
+		slot3 = slot3.sendMessage
+		slot6 = slot1
+		slot7 = pg
+		slot7 = slot7.game
+		slot7 = slot7.chat
+		slot7 = slot7.subMessageType
+		slot7 = slot7.Text
+		slot8 = slot2.type
+		slot9 = slot2.channelId
 		--- END OF BLOCK #5 ---
 
-		slot8 = if not slot8 then
+		slot9 = if not slot9 then
 		JUMP TO BLOCK #6
 		else
 		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #6 58-58, warpins: 1 ---
-		slot8 = slot1.playerId
+		--- BLOCK #6 62-62, warpins: 1 ---
+		slot9 = slot2.playerId
 		--- END OF BLOCK #6 ---
 
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 59-78, warpins: 2 ---
-		slot9 = {}
-		slot10 = Const
-		slot10 = slot10.CHAT_EXTRA_TYPE
-		slot10 = slot10.Item
-		slot11 = self
-		slot11 = slot11.selectedPropData
-		slot9[slot10] = slot11
+		--- BLOCK #7 63-82, warpins: 2 ---
+		slot10 = {}
+		slot11 = Const
+		slot11 = slot11.CHAT_EXTRA_TYPE
+		slot11 = slot11.Item
+		slot12 = self
+		slot12 = slot12.selectedPropData
+		slot10[slot11] = slot12
 
-		slot2(slot4, slot5, slot6, slot7, slot8, slot9)
+		slot3(slot5, slot6, slot7, slot8, slot9, slot10)
 
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot2 = slot2.chatComponent
-		slot4 = slot2
-		slot2 = slot2.checkSendButtonState
+		slot3 = self
+		slot3 = slot3.ctrl
+		slot3 = slot3.chatComponent
+		slot5 = slot3
+		slot3 = slot3.checkSendButtonState
 
-		slot2(slot4)
+		slot3(slot5)
 
-		slot2 = self
-		slot4 = slot2
-		slot2 = slot2.onClose
-		slot5 = true
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.onClose
+		slot6 = true
 
-		slot2(slot4, slot5)
+		slot3(slot5, slot6)
 
 		return
 		--- END OF BLOCK #7 ---
@@ -352,87 +351,45 @@ slot10 = function(slot0)
 		slot0 = self
 		slot0 = slot0.uWidget
 		slot2 = slot0
-		slot0 = slot0.TryGetCurrentPage
+		slot0 = slot0.TryChangePage
 		slot3 = "Search"
-		slot0, slot1 = slot0(slot2, slot3)
-		--- END OF BLOCK #0 ---
+		slot4 = 1
 
-		if slot1 == 0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 9-16, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.uWidget
-		slot4 = slot2
-		slot2 = slot2.TryChangePage
-		slot5 = "Search"
-		slot6 = 1
-
-		slot2(slot4, slot5, slot6)
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 17-27, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.uWidget
-		slot4 = slot2
-		slot2 = slot2.TryChangePage
-		slot5 = "Search"
-		slot6 = 0
-
-		slot2(slot4, slot5, slot6)
-
-		slot2 = self
-		slot2 = slot2.inputField
-		slot3 = ""
-		slot2.text = slot3
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 28-34, warpins: 2 ---
-		slot2 = self
-		slot2 = slot2.uWidget
-		slot4 = slot2
-		slot2 = slot2.TryChangePage
-		slot5 = "Search"
-		--- END OF BLOCK #3 ---
-
-		if slot1 == 0 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 35-36, warpins: 1 ---
-		slot6 = 1
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-		--- BLOCK #5 37-37, warpins: 1 ---
-		slot6 = 0
-
-		--- END OF BLOCK #5 ---
-
-		FLOW; TARGET BLOCK #6
-
-
-		--- BLOCK #6 38-39, warpins: 2 ---
-		slot2(slot4, slot5, slot6)
+		slot0(slot2, slot3, slot4)
 
 		return
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	slot2 = slot0.btnScreenUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.uWidget
+		slot2 = slot0
+		slot0 = slot0.TryChangePage
+		slot3 = "Search"
+		slot4 = 0
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = self
+		slot0 = slot0.inputField
+		slot1 = ""
+		slot0.text = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshInputDeleteButton
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
 
 
 
@@ -461,7 +418,14 @@ slot10 = function(slot0)
 	slot2 = slot0.inputField
 
 	slot3 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshInputDeleteButton
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.doSearch
@@ -477,21 +441,62 @@ slot10 = function(slot0)
 	end
 
 	slot2.luaValueChanged = slot3
-	slot2 = slot0.btnConfirmUButton
-	slot3 = false
-	slot2.interactable = slot3
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.inventory
-	slot2 = slot2.model
+	slot2 = slot0.inputField
 	slot4 = slot2
-	slot2 = slot2.getTabList
-	slot2 = slot2(slot4)
-	slot0.selectorTabs = slot2
-	slot2 = slot0.selectorUSelector
+	slot2 = slot2.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "placeHolderUSDFText"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "btnDeleteUButton"
+	slot4 = slot4(slot6, slot7)
+	slot0.btnDeleteUButton = slot4
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "keyHotKeyContent"
+	slot4 = slot4(slot6, slot7)
+	slot5 = LuaUIUtils
+	slot5 = slot5.bindInputFieldGamepad
+	slot7 = slot0.inputField
+	slot8 = slot4
+	slot9 = slot0.btnDeleteUButton
 
-	slot3 = function(slot0, slot1)
+	slot5(slot7, slot8, slot9)
+
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot3
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "CHAT_TIP_INPUT_ITEM_NAME"
+	MULTRES = slot8(slot10)
+
+	slot5(slot7, MULTRES)
+
+	slot7 = slot0
+	slot5 = slot0.refreshInputDeleteButton
+
+	slot5(slot7)
+
+	slot5 = slot0.btnConfirmUButton
+	slot6 = false
+	slot5.interactable = slot6
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.inventory
+	slot5 = slot5.model
+	slot7 = slot5
+	slot5 = slot5.getTabList
+	slot5 = slot5(slot7)
+	slot0.selectorTabs = slot5
+	slot5 = slot0.selectorUSelector
+
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-15, warpins: 1 ---
 		slot2 = function(slot0, slot1, slot2)
 			--- BLOCK #0 1-17, warpins: 1 ---
@@ -606,10 +611,10 @@ slot10 = function(slot0)
 
 	end
 
-	slot2.luaRenderPopup = slot3
-	slot2 = slot0.uWidget
+	slot5.luaRenderPopup = slot6
+	slot5 = slot0.uWidget
 
-	slot3 = function(slot0, slot1, slot2)
+	slot6 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -630,9 +635,34 @@ slot10 = function(slot0)
 		end
 
 
-		--- BLOCK #2 5-19, warpins: 1 ---
+		--- BLOCK #2 5-38, warpins: 1 ---
+		slot3 = CS
+		slot3 = slot3.XGUI
+		slot3 = slot3.Navigation
+		slot3 = slot3.ConsoleBar
+		slot3 = slot3.SetManualDimForAll
+		slot5 = false
+
+		slot3(slot5)
+
 		slot3 = self
 		slot3 = slot3.buttonSearchUButton
+		slot5 = slot3
+		slot3 = slot3.SetHotkeyForceHidden
+		slot6 = false
+
+		slot3(slot5, slot6)
+
+		slot3 = self
+		slot3 = slot3.inputField
+		slot5 = slot3
+		slot3 = slot3.SetHotkeyForceHidden
+		slot6 = false
+
+		slot3(slot5, slot6)
+
+		slot3 = self
+		slot3 = slot3.selectorUSelector
 		slot5 = slot3
 		slot3 = slot3.SetHotkeyForceHidden
 		slot6 = false
@@ -654,9 +684,34 @@ slot10 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #3 20-33, warpins: 1 ---
+		--- BLOCK #3 39-71, warpins: 1 ---
+		slot3 = CS
+		slot3 = slot3.XGUI
+		slot3 = slot3.Navigation
+		slot3 = slot3.ConsoleBar
+		slot3 = slot3.SetManualDimForAll
+		slot5 = true
+
+		slot3(slot5)
+
 		slot3 = self
 		slot3 = slot3.buttonSearchUButton
+		slot5 = slot3
+		slot3 = slot3.SetHotkeyForceHidden
+		slot6 = true
+
+		slot3(slot5, slot6)
+
+		slot3 = self
+		slot3 = slot3.inputField
+		slot5 = slot3
+		slot3 = slot3.SetHotkeyForceHidden
+		slot6 = true
+
+		slot3(slot5, slot6)
+
+		slot3 = self
+		slot3 = slot3.selectorUSelector
 		slot5 = slot3
 		slot3 = slot3.SetHotkeyForceHidden
 		slot6 = true
@@ -678,7 +733,7 @@ slot10 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 34-34, warpins: 3 ---
+		--- BLOCK #4 72-72, warpins: 3 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -686,7 +741,7 @@ slot10 = function(slot0)
 
 	end
 
-	slot2.luaTryChangePage = slot3
+	slot5.luaTryChangePage = slot6
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1086,7 +1141,7 @@ end
 slot2.refreshItemList = slot10
 
 slot10 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-31, warpins: 1 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1119,29 +1174,59 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot7(slot9, slot10, slot11)
 
 	slot7 = function()
-		--- BLOCK #0 1-38, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.input
+		slot2 = slot0
+		slot0 = slot0.isUsingGamepad
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-9, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-16, warpins: 2 ---
 		slot0 = self
-		slot1 = {}
-		slot2 = data
-		slot2 = slot2.name
-		slot1.name = slot2
-		slot2 = data
-		slot2 = slot2.itemId
-		slot1.itemId = slot2
-		slot2 = data
-		slot2 = slot2.count
-		slot1.itemCount = slot2
-		slot2 = data
-		slot2 = slot2.genID
-		slot1.genID = slot2
-		slot0.selectedPropData = slot1
+		slot2 = slot0
+		slot0 = slot0.selectPropItem
+		slot3 = button
+		slot4 = data
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaNavFocused = slot7
+
+	slot7 = function()
+		--- BLOCK #0 1-22, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.btnConfirmUButton
-		slot1 = true
-		slot0.interactable = slot1
-		slot0 = self
-		slot1 = button
-		slot0.curSelectedButton = slot1
+		slot2 = slot0
+		slot0 = slot0.selectPropItem
+		slot3 = button
+		slot4 = data
+
+		slot0(slot2, slot3, slot4)
+
 		slot0 = self
 		slot0 = slot0.uWidget
 		slot2 = slot0
@@ -1178,6 +1263,32 @@ slot10 = function(slot0, slot1, slot2, slot3)
 end
 
 slot2.renderPropItem = slot10
+
+slot10 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot3 = {}
+	slot4 = slot2.name
+	slot3.name = slot4
+	slot4 = slot2.itemId
+	slot3.itemId = slot4
+	slot4 = slot2.count
+	slot3.itemCount = slot4
+	slot4 = slot2.genID
+	slot3.genID = slot4
+	slot0.selectedPropData = slot3
+	slot3 = slot0.btnConfirmUButton
+	slot4 = true
+	slot3.interactable = slot4
+	slot0.curSelectedButton = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.selectPropItem = slot10
 
 slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -1329,6 +1440,46 @@ end
 slot2.doSearch = slot10
 
 slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = slot0.inputField
+	slot1 = slot2.text
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-14, warpins: 2 ---
+	slot2 = slot0.btnDeleteUButton
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot1
+	slot5 = slot5(slot7)
+	slot5 = not slot5
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.refreshInputDeleteButton = slot10
+
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.uWidget
 	slot4 = slot2
@@ -1374,7 +1525,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-45, warpins: 3 ---
+	--- BLOCK #3 20-48, warpins: 3 ---
 	slot4 = slot0.uWidget
 	slot6 = slot4
 	slot4 = slot4.TryChangePage
@@ -1386,6 +1537,11 @@ slot10 = function(slot0, slot1)
 	slot4 = slot0.inputField
 	slot5 = ""
 	slot4.text = slot5
+	slot6 = slot0
+	slot4 = slot0.refreshInputDeleteButton
+
+	slot4(slot6)
+
 	slot4 = nil
 	slot0.curSelectedButton = slot4
 	slot4 = nil

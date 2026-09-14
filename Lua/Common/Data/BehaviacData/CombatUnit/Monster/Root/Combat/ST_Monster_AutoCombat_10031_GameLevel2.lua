@@ -7,68 +7,68 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_10031_GameLevel2",
-	useForRoute = false,
 	version = 68,
+	useForRoute = false,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_10031_GameLevel2",
 	agenttype = "PuppetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "CurrentDistToTarget",
-	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	name = "CurrentDistToTarget",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "CurrentBoxDistToTarget",
-	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	name = "CurrentBoxDistToTarget",
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "goBackDist",
-	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	name = "goBackDist",
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "skillStopDist",
-	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	name = "skillStopDist",
+	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tWeight_Group_SideWalk",
-	value = "100",
 	const = 100,
-	type = "int"
+	type = "int",
+	name = "tWeight_Group_SideWalk",
+	value = "100"
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tWeight_Group_Wait",
-	value = "100",
 	const = 100,
-	type = "int"
+	type = "int",
+	name = "tWeight_Group_Wait",
+	value = "100"
 }
 slot4[6] = slot5
 slot5 = {
-	name = "tWeight_Group_Angry",
-	value = "100",
 	const = 100,
-	type = "int"
+	type = "int",
+	name = "tWeight_Group_Angry",
+	value = "100"
 }
 slot4[7] = slot5
 slot5 = {
-	name = "goBackTime",
-	value = "0",
 	const = 0,
-	type = "int"
+	type = "int",
+	name = "goBackTime",
+	value = "0"
 }
 slot4[8] = slot5
 slot3.pars = slot4

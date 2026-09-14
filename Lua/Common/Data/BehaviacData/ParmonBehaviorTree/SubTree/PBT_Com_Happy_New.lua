@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	agenttype = "CombatAgent",
-	version = 6,
 	name = "ParmonBehaviorTree/SubTree/PBT_Com_Happy_New",
+	version = 6,
 	useForRoute = false
 }
 slot4 = {}
@@ -17,29 +17,29 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	type = "float",
-	name = "tAnimationTimeout",
 	value = "5",
+	name = "tAnimationTimeout",
 	const = 5
 }
 slot4[1] = slot5
 slot5 = {
 	type = "string",
-	name = "tTimelineTag",
 	value = "",
+	name = "tTimelineTag",
 	const = ""
 }
 slot4[2] = slot5
 slot5 = {
 	type = "bool",
-	name = "tNeedLoop",
 	value = "false",
+	name = "tNeedLoop",
 	const = false
 }
 slot4[3] = slot5
 slot5 = {
 	type = "bool",
-	name = "tPlayOnce",
 	value = "false",
+	name = "tPlayOnce",
 	const = false
 }
 slot4[4] = slot5

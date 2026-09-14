@@ -561,146 +561,292 @@ end
 
 slot5.clearFastFindInfo = slot6
 
-slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11)
 	--- BLOCK #0 1-28, warpins: 1 ---
-	slot8 = table
-	slot8 = slot8.clear
-	slot10 = slot6
+	slot12 = table
+	slot12 = slot12.clear
+	slot14 = slot6
 
-	slot8(slot10)
+	slot12(slot14)
 
-	slot8 = table
-	slot8 = slot8.clear
-	slot10 = slot0.tempCheckedIds
+	slot12 = table
+	slot12 = slot12.clear
+	slot14 = slot0.tempCheckedIds
 
-	slot8(slot10)
+	slot12(slot14)
 
-	slot10 = slot0
-	slot8 = slot0.getChunkValue
-	slot11 = slot1
-	slot8 = slot8(slot10, slot11)
-	slot11 = slot0
-	slot9 = slot0.getChunkValue
-	slot12 = slot3
-	slot9 = slot9(slot11, slot12)
-	slot12 = slot0
-	slot10 = slot0.getChunkValue
-	slot13 = slot2
-	slot10 = slot10(slot12, slot13)
-	slot13 = slot0
-	slot11 = slot0.getChunkValue
-	slot14 = slot4
-	slot11 = slot11(slot13, slot14)
-	slot12 = slot8
-	slot13 = slot10
-	slot14 = 1
+	slot14 = slot0
+	slot12 = slot0.getChunkValue
+	slot15 = slot1
+	slot12 = slot12(slot14, slot15)
+	slot15 = slot0
+	slot13 = slot0.getChunkValue
+	slot16 = slot3
+	slot13 = slot13(slot15, slot16)
+	slot16 = slot0
+	slot14 = slot0.getChunkValue
+	slot17 = slot2
+	slot14 = slot14(slot16, slot17)
+	slot17 = slot0
+	slot15 = slot0.getChunkValue
+	slot18 = slot4
+	slot15 = slot15(slot17, slot18)
+	slot16 = slot12
+	slot17 = slot14
+	slot18 = 1
 	--- END OF BLOCK #0 ---
 
 	FLOW; TARGET BLOCK #1
 
 
 	--- BLOCK #1 29-32, warpins: 2 ---
-	slot16 = slot9
-	slot17 = slot11
-	slot18 = 1
+	slot20 = slot13
+	slot21 = slot15
+	slot22 = 1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
 	--- BLOCK #2 33-41, warpins: 2 ---
-	slot22 = slot0
-	slot20 = slot0.getChunkId
-	slot23 = slot15
-	slot24 = slot19
-	slot20 = slot20(slot22, slot23, slot24)
-	slot21 = slot0.chunkFastFindMap
-	slot21 = slot21[slot20]
+	slot26 = slot0
+	slot24 = slot0.getChunkId
+	slot27 = slot19
+	slot28 = slot23
+	slot24 = slot24(slot26, slot27, slot28)
+	slot25 = slot0.chunkFastFindMap
+	slot25 = slot25[slot24]
 	--- END OF BLOCK #2 ---
 
-	slot21 = if slot21 then
+	slot25 = if slot25 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #22
 	end
 
 
 	--- BLOCK #3 42-45, warpins: 1 ---
-	slot22 = pairs
-	slot24 = slot21
-	slot22, slot23, slot24 = slot22(slot24)
+	slot26 = pairs
+	slot28 = slot25
+	slot26, slot27, slot28 = slot26(slot28)
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #4 46-49, warpins: 1 ---
-	slot27 = slot0.tempCheckedIds
-	slot27 = slot27[slot25]
+	--- BLOCK #4 46-47, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
-	slot27 = if not slot27 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 50-63, warpins: 1 ---
-	slot27 = slot0.tempCheckedIds
-	slot28 = true
-	slot27[slot25] = slot28
-	slot29 = slot26
-	slot27 = slot26.checkInRange
-	slot30 = slot1
-	slot31 = slot2
-	slot32 = slot3
-	slot33 = slot4
-	slot34 = slot5
-	slot35 = slot7
-	slot27 = slot27(slot29, slot30, slot31, slot32, slot33, slot34, slot35)
+	--- BLOCK #5 48-53, warpins: 1 ---
+	slot31 = slot10
+	slot33 = slot29
+	slot34 = slot30
+	slot31 = slot31(slot33, slot34)
 	--- END OF BLOCK #5 ---
 
-	slot27 = if slot27 then
+	slot31 = if not slot31 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 64-64, warpins: 1 ---
-	slot6[slot25] = slot26
-
+	--- BLOCK #6 54-54, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #7 65-66, warpins: 4 ---
+	--- BLOCK #7 55-58, warpins: 2 ---
+	slot31 = slot0.tempCheckedIds
+	slot31 = slot31[slot29]
 	--- END OF BLOCK #7 ---
 
-	for slot25, slot26 in slot22, slot23, slot24
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #8
+	slot31 = if not slot31 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #8 67-67, warpins: 2 ---
+	--- BLOCK #8 59-64, warpins: 1 ---
+	slot31 = slot0.tempCheckedIds
+	slot32 = true
+	slot31[slot29] = slot32
+	slot31 = true
 	--- END OF BLOCK #8 ---
 
-	for slot19=slot16, slot17, slot18
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #9
+	slot8 = if slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #15
+	end
 
-	--- BLOCK #9 68-68, warpins: 1 ---
+
+	--- BLOCK #9 65-66, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	for slot15=slot12, slot13, slot14
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #10
+	slot9 = if slot9 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #15
+	end
 
-	--- BLOCK #10 69-69, warpins: 1 ---
-	return
+
+	--- BLOCK #10 67-69, warpins: 1 ---
+	slot32 = slot30.extraInfo
 	--- END OF BLOCK #10 ---
+
+	slot32 = if slot32 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 70-73, warpins: 1 ---
+	slot32 = slot30.extraInfo
+	slot32 = slot32.height
+	--- END OF BLOCK #11 ---
+
+	slot32 = if slot32 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 74-80, warpins: 1 ---
+	slot32 = slot30.position
+	slot32 = slot32.y
+	slot33 = slot30.extraInfo
+	slot33 = slot33.height
+	slot33 = slot32 + slot33
+	--- END OF BLOCK #12 ---
+
+	if slot8 <= slot33 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 81-82, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	if slot9 < slot32 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 83-83, warpins: 2 ---
+	slot31 = false
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 84-85, warpins: 6 ---
+	--- END OF BLOCK #15 ---
+
+	slot31 = if slot31 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #16 86-96, warpins: 1 ---
+	slot34 = slot30
+	slot32 = slot30.checkInRange
+	slot35 = slot1
+	slot36 = slot2
+	slot37 = slot3
+	slot38 = slot4
+	slot39 = slot5
+	slot40 = slot7
+	slot32 = slot32(slot34, slot35, slot36, slot37, slot38, slot39, slot40)
+	--- END OF BLOCK #16 ---
+
+	slot32 = if slot32 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #17 97-98, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 99-104, warpins: 1 ---
+	slot32 = slot11
+	slot34 = slot29
+	slot35 = slot30
+	slot32 = slot32(slot34, slot35)
+	--- END OF BLOCK #18 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 105-105, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 106-106, warpins: 2 ---
+	slot6[slot29] = slot30
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 107-108, warpins: 7 ---
+	--- END OF BLOCK #21 ---
+
+	for slot29, slot30 in slot26, slot27, slot28
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #22
+
+
+	--- BLOCK #22 109-109, warpins: 2 ---
+	--- END OF BLOCK #22 ---
+
+	for slot23=slot20, slot21, slot22
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #23
+
+	--- BLOCK #23 110-110, warpins: 1 ---
+	--- END OF BLOCK #23 ---
+
+	for slot19=slot16, slot17, slot18
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #24
+
+	--- BLOCK #24 111-111, warpins: 1 ---
+	return
+	--- END OF BLOCK #24 ---
 
 
 

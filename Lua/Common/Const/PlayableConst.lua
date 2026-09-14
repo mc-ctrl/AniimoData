@@ -32,23 +32,23 @@ slot2 = slot2.loaded
 slot3 = nil
 slot2["Common.Data.PlayableConstImp"] = slot3
 slot2 = {
-	INTERRUPT = 1,
 	PLAYBACK = 0,
-	DESTROY = 2
+	DESTROY = 2,
+	INTERRUPT = 1
 }
 slot1.END_REASON = slot2
 slot2 = {
-	PetLift = 2,
 	Default = 1,
-	Max = 4
+	Max = 4,
+	PetLift = 2
 }
 slot1.AnimGroupKey = slot2
 slot2 = {
-	HUMAN_LAYER_FULLBODYLOWPRIORITY = 1,
 	HUMAN_LAYER_BASE = 0,
 	LAYER_FULLBODY = 2,
 	HUMAN_LAYER_FULLBODYADDITIVE = 3,
-	HUMAN_LAYER_FULLBODY = 2
+	HUMAN_LAYER_FULLBODY = 2,
+	HUMAN_LAYER_FULLBODYLOWPRIORITY = 1
 }
 slot1.AnimationLayer = slot2
 slot2 = {}
@@ -84,15 +84,15 @@ slot3 = slot0.Face_Worried
 slot2.Worried = slot3
 slot1.FacialConst = slot2
 slot2 = {
-	Transition = 0,
-	State = 1
+	State = 1,
+	Transition = 0
 }
 slot1.PackType = slot2
 slot2 = {
-	NormalizedTime = 1,
 	FixedTime = 0,
 	NormalizedTimeAndNormalizedOffset = 4,
-	FixedTimeAndNormalizedOffset = 2
+	FixedTimeAndNormalizedOffset = 2,
+	NormalizedTime = 1
 }
 slot1.PlayableTransitionType = slot2
 slot2 = {

@@ -1,17 +1,17 @@
 --- BLOCK #0 1-194, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	Formation = 2,
 	Dynamic = 1,
-	Static = 0
+	Static = 0,
+	Formation = 2
 }
 slot0.PointType = slot1
 slot1 = {
-	WorldNorth = 3,
-	PortToPoint = 2,
 	PointForward = 1,
 	NoLimit = 0,
-	EntToPort = 4
+	EntToPort = 4,
+	WorldNorth = 3,
+	PortToPoint = 2
 }
 slot0.DirRefType = slot1
 slot1 = {
@@ -20,10 +20,10 @@ slot1 = {
 }
 slot0.DirDescType = slot1
 slot1 = {
-	OnlyYaw = 2,
-	None = 1,
 	All = 0,
-	FormationFollow = 10
+	FormationFollow = 10,
+	OnlyYaw = 2,
+	None = 1
 }
 slot0.FollowRotateType = slot1
 slot1 = {
@@ -32,9 +32,9 @@ slot1 = {
 }
 slot0.PortInteractState = slot1
 slot1 = {
+	dirInteractMaxNum = -1,
 	towardsYawType = 0,
-	limitYawRangeType = 0,
-	dirInteractMaxNum = -1
+	limitYawRangeType = 0
 }
 slot0.DefaultDirDescConfig = slot1
 slot1 = {
@@ -67,13 +67,13 @@ slot1 = {
 }
 slot0.ActiveRange = slot1
 slot1 = {
-	POINT_TAG_NOT_MATCH = 4,
-	RANGE_EXCEED = 3,
 	HEIGHT_EXCEED = 2,
 	CAN_NOT_BE_SEARCH = 1,
 	NONE = 0,
 	PORT_TAG_NOT_MATCH = 6,
-	PORT_FULL = 5
+	PORT_FULL = 5,
+	POINT_TAG_NOT_MATCH = 4,
+	RANGE_EXCEED = 3
 }
 slot0.SearchFailReason = slot1
 slot1 = 5

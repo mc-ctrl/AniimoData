@@ -113,21 +113,22 @@ end
 
 slot7.removeCommonModifier = slot8
 
-slot8 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.initCommonModifier
+slot8 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.initCommonModifier
 
-	slot4(slot6)
+	slot5(slot7)
 
-	slot4 = slot0.commonModifier
-	slot6 = slot4
-	slot4 = slot4.BlendToDistance
-	slot7 = slot1
-	slot8 = slot2
-	slot9 = slot3
+	slot5 = slot0.commonModifier
+	slot7 = slot5
+	slot5 = slot5.BlendToDistance
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+	slot11 = slot4
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot5(slot7, slot8, slot9, slot10, slot11)
 
 	return
 	--- END OF BLOCK #0 ---

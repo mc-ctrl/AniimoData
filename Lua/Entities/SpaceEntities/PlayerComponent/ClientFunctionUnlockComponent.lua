@@ -172,9 +172,164 @@ slot12 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #10 52-52, warpins: 1 ---
-	return
+	--- BLOCK #10 52-61, warpins: 1 ---
+	slot3 = Const
+	slot3 = slot3.FUNCTION_NAME
+	slot3 = slot3.CHAT
+	slot3 = slot1[slot3]
+	slot4 = Const
+	slot4 = slot4.FUNCTION_NAME
+	slot4 = slot4.CHAT
+	slot4 = slot2[slot4]
 	--- END OF BLOCK #10 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #11 62-66, warpins: 1 ---
+	slot5 = Const
+	slot5 = slot5.FUNCTION_UNLOCK_STATE
+	slot5 = slot5.UNLOCK
+	--- END OF BLOCK #11 ---
+
+	if slot3 ~= slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 67-71, warpins: 1 ---
+	slot5 = Const
+	slot5 = slot5.FUNCTION_UNLOCK_STATE
+	slot5 = slot5.UNLOCK
+	--- END OF BLOCK #12 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #13 72-75, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	--- END OF BLOCK #13 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 76-80, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	--- END OF BLOCK #14 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 81-86, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	slot7 = slot5
+	slot5 = slot5.tryInitChatData
+
+	slot5(slot7)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 87-90, warpins: 6 ---
+	slot5 = ClientFunctionUnlockComponent
+	slot5 = slot5._platformHooks
+	--- END OF BLOCK #16 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #17 91-93, warpins: 1 ---
+	slot6 = slot5.on_functionUnlocks_changed
+	--- END OF BLOCK #17 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 94-98, warpins: 1 ---
+	slot6 = slot5.on_functionUnlocks_changed
+	slot8 = slot0
+	slot9 = slot1
+	slot10 = slot2
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 99-102, warpins: 3 ---
+	slot6 = ClientFunctionUnlockComponent
+	slot6 = slot6._discordHooks
+	--- END OF BLOCK #19 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 103-105, warpins: 1 ---
+	slot7 = slot6.onFunctionUnlocksChanged
+	--- END OF BLOCK #20 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 106-110, warpins: 1 ---
+	slot7 = slot6.onFunctionUnlocksChanged
+	slot9 = slot0
+	slot10 = slot1
+	slot11 = slot2
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 111-111, warpins: 3 ---
+	return
+	--- END OF BLOCK #22 ---
 
 
 

@@ -7,9 +7,9 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/_Monster/PBT_Monster_ClousterBoss_SummonRunAway",
-	useForRoute = false,
 	version = 10,
+	useForRoute = false,
+	name = "ParmonBehaviorTree/SubTree/_Monster/PBT_Monster_ClousterBoss_SummonRunAway",
 	agenttype = "PuppetAgent"
 }
 slot4 = {}

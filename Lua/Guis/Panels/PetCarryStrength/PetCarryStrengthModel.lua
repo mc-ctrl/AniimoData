@@ -1,4 +1,4 @@
---- BLOCK #0 1-88, warpins: 1 ---
+--- BLOCK #0 1-93, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -25,46 +25,55 @@ slot6 = require
 slot8 = "Common.Const.ItemConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.item_data"
+slot9 = "Common.Utils.ItemUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Core.Common.lume"
+slot10 = "Data.item_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Guis.Panels.PetCarryStrength.Helper.CarryStrengthChecker"
+slot11 = "Core.Common.lume"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.core_carry_level_data"
+slot12 = "Guis.Panels.PetCarryStrength.Helper.CarryStrengthChecker"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Utils.Utils"
+slot13 = "Data.core_carry_level_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.core_carry_data"
+slot14 = "Common.Utils.Utils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.pet_config_data"
+slot15 = "Data.core_carry_data"
 slot13 = slot13(slot15)
-slot14 = {
+slot14 = require
+slot16 = "Data.pet_config_data"
+slot14 = slot14(slot16)
+slot15 = {
 	"EPIC_FOLLOWING_MATERIAL",
 	"LEGEND_FOLLOWING_MATERIAL",
 	"RARE_FOLLOWING_MATERIAL"
 }
-slot3.CARRY_STRENGTH_FILTER = slot14
-slot14 = {
+slot3.CARRY_STRENGTH_FILTER = slot15
+slot15 = {
 	5,
 	4,
 	3
 }
-slot3.FILTER_QUALITY_MAP = slot14
-slot14 = {
+slot3.CARRY_STRENGTH_FILTER_QUALITY = slot15
+slot15 = {
+	5,
+	4,
+	3
+}
+slot3.FILTER_QUALITY_MAP = slot15
+slot15 = {
 	"DEFAULT_SORT",
 	"QUALITY",
 	"STRENGTH_LEVEL"
 }
-slot3.CARRY_STRENGTH_SORT = slot14
+slot3.CARRY_STRENGTH_SORT = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot0.expItems = slot1
@@ -129,9 +138,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.ctor = slot14
+slot3.ctor = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.strengthCarry = slot1
 
@@ -142,9 +151,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot3.setStrengthCarry = slot14
+slot3.setStrengthCarry = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -186,9 +195,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getCarrySortOptions = slot14
+slot3.getCarrySortOptions = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.sortOptionIdx = slot1
 
@@ -199,9 +208,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot3.setSortOption = slot14
+slot3.setSortOption = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.sortOptionIdx
 	--- END OF BLOCK #0 ---
@@ -229,9 +238,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getSortOption = slot14
+slot3.getSortOption = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.sortAscending
 	slot1 = not slot1
@@ -244,9 +253,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.switchSortAscending = slot14
+slot3.switchSortAscending = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.sortAscending
 
@@ -257,9 +266,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getSortAscending = slot14
+slot3.getSortAscending = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -270,7 +279,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 6-13, warpins: 1 ---
+	--- BLOCK #1 6-16, warpins: 1 ---
 	slot7 = {}
 	slot7.sortId = slot5
 	slot8 = pg
@@ -278,6 +287,9 @@ slot14 = function(slot0)
 	slot10 = slot6
 	slot8 = slot8(slot10)
 	slot7.label = slot8
+	slot8 = slot0.CARRY_STRENGTH_FILTER_QUALITY
+	slot8 = slot8[slot5]
+	slot7.quality = slot8
 	slot1[slot5] = slot7
 
 	--- END OF BLOCK #1 ---
@@ -285,7 +297,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-15, warpins: 2 ---
+	--- BLOCK #2 17-18, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -293,7 +305,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 16-16, warpins: 1 ---
+	--- BLOCK #3 19-19, warpins: 1 ---
 	return slot1
 	--- END OF BLOCK #3 ---
 
@@ -301,9 +313,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getCarryFilterOptions = slot14
+slot3.getCarryFilterOptions = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.filterOptionIdx = slot1
 
@@ -314,9 +326,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot3.setFilterOption = slot14
+slot3.setFilterOption = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.filterOptionIdx
 	--- END OF BLOCK #0 ---
@@ -344,9 +356,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getFilterOption = slot14
+slot3.getFilterOption = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.strengthCarry
 	slot1 = slot1.familyId
@@ -540,12 +552,13 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #18 65-71, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.invInfo
-	slot8 = slot6.invId
-	slot7 = slot7[slot8]
+	--- BLOCK #18 65-72, warpins: 1 ---
+	slot7 = ItemUtils
+	slot7 = slot7.getTypedBag
+	slot9 = pg
+	slot9 = slot9.me
+	slot10 = slot6.invId
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #18 ---
 
 	slot7 = if not slot7 then
@@ -555,14 +568,14 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #19 72-72, warpins: 1 ---
+	--- BLOCK #19 73-73, warpins: 1 ---
 	slot7 = {}
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 73-76, warpins: 2 ---
+	--- BLOCK #20 74-77, warpins: 2 ---
 	slot8 = slot7.count
 	slot9 = 0
 	--- END OF BLOCK #20 ---
@@ -574,7 +587,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #21 77-80, warpins: 1 ---
+	--- BLOCK #21 78-81, warpins: 1 ---
 	slot10 = slot7
 	slot8 = slot7.items
 	slot8, slot9, slot10 = slot8(slot10)
@@ -583,7 +596,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #22 81-85, warpins: 1 ---
+	--- BLOCK #22 82-86, warpins: 1 ---
 	slot13 = slot0.expItems
 	slot14 = slot12.id
 	slot13 = slot13[slot14]
@@ -596,7 +609,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #23 86-100, warpins: 1 ---
+	--- BLOCK #23 87-101, warpins: 1 ---
 	slot13 = {}
 	slot14 = slot12.id
 	slot13.itemId = slot14
@@ -621,14 +634,14 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #24 101-101, warpins: 1 ---
+	--- BLOCK #24 102-102, warpins: 1 ---
 	slot14 = 0
 	--- END OF BLOCK #24 ---
 
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 102-106, warpins: 2 ---
+	--- BLOCK #25 103-107, warpins: 2 ---
 	slot13.selectedNum = slot14
 	slot14 = slot12.id
 	slot14 = slot4[slot14]
@@ -641,21 +654,21 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #26 107-108, warpins: 1 ---
+	--- BLOCK #26 108-109, warpins: 1 ---
 	slot14 = true
 	--- END OF BLOCK #26 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #27 109-109, warpins: 1 ---
+	--- BLOCK #27 110-110, warpins: 1 ---
 	slot14 = false
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 110-115, warpins: 2 ---
+	--- BLOCK #28 111-116, warpins: 2 ---
 	slot13.selectedAsExp = slot14
 	slot14 = table
 	slot14 = slot14.insert
@@ -669,7 +682,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 116-117, warpins: 3 ---
+	--- BLOCK #29 117-118, warpins: 3 ---
 	--- END OF BLOCK #29 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
@@ -677,7 +690,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #30
 
 
-	--- BLOCK #30 118-130, warpins: 5 ---
+	--- BLOCK #30 119-131, warpins: 5 ---
 	slot6 = pg
 	slot6 = slot6.global
 	slot6 = slot6.ui
@@ -1074,7 +1087,7 @@ slot14 = function(slot0)
 
 
 		--- BLOCK #30 76-77, warpins: 1 ---
-		slot2 = true
+		slot2 = false
 
 		return slot2
 		--- END OF BLOCK #30 ---
@@ -1156,7 +1169,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #31 131-135, warpins: 1 ---
+	--- BLOCK #31 132-136, warpins: 1 ---
 	slot7 = next
 	slot9 = slot6
 	slot7 = slot7(slot9)
@@ -1169,7 +1182,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #32 136-139, warpins: 1 ---
+	--- BLOCK #32 137-140, warpins: 1 ---
 	slot7 = ipairs
 	slot9 = slot6
 	slot7, slot8, slot9 = slot7(slot9)
@@ -1178,7 +1191,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #33 140-144, warpins: 1 ---
+	--- BLOCK #33 141-145, warpins: 1 ---
 	slot12 = table
 	slot12 = slot12.insert
 	slot14 = slot0.carryDataList
@@ -1191,7 +1204,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 145-146, warpins: 2 ---
+	--- BLOCK #34 146-147, warpins: 2 ---
 	--- END OF BLOCK #34 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -1199,7 +1212,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #35
 
 
-	--- BLOCK #35 147-149, warpins: 3 ---
+	--- BLOCK #35 148-150, warpins: 3 ---
 	slot7 = slot0.carryDataList
 
 	return slot7
@@ -1209,9 +1222,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getCarryDataList = slot14
+slot3.getCarryDataList = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.carryDataList
 	--- END OF BLOCK #0 ---
@@ -1358,111 +1371,109 @@ slot14 = function(slot0, slot1)
 	slot8 = slot5
 
 	slot9 = function(slot0, slot1)
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.expItems
 		slot3 = slot0.itemId
 		slot2 = slot2[slot3]
-		slot3 = self
-		slot3 = slot3.expItems
-		slot4 = slot1.itemId
-		slot3 = slot3[slot4]
 		--- END OF BLOCK #0 ---
 
-		if slot2 ~= slot3 then
+		if slot2 == nil then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 11-12, warpins: 1 ---
+		--- BLOCK #1 7-8, warpins: 1 ---
+		slot2 = false
 		--- END OF BLOCK #1 ---
 
-		slot4 = if slot2 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 13-13, warpins: 1 ---
-		slot4 = not slot3
-
+		--- BLOCK #2 9-9, warpins: 1 ---
+		slot2 = true
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 14-15, warpins: 2 ---
-		return slot4
-
+		--- BLOCK #3 10-15, warpins: 2 ---
+		slot3 = self
+		slot3 = slot3.expItems
+		slot4 = slot1.itemId
+		slot3 = slot3[slot4]
 		--- END OF BLOCK #3 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #10
+		if slot3 == nil then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
 
 
 		--- BLOCK #4 16-17, warpins: 1 ---
+		slot3 = false
 		--- END OF BLOCK #4 ---
 
-		if slot2 == slot3 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #10
-		end
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 18-19, warpins: 1 ---
+		--- BLOCK #5 18-18, warpins: 1 ---
+		slot3 = true
+
 		--- END OF BLOCK #5 ---
 
-		if slot2 == 1 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #10
-		end
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 20-23, warpins: 1 ---
-		slot4 = slot0.itemId
-		slot5 = slot1.itemId
+		--- BLOCK #6 19-20, warpins: 2 ---
 		--- END OF BLOCK #6 ---
 
-		if slot4 >= slot5 then
+		if slot2 ~= slot3 then
 		JUMP TO BLOCK #7
 		else
 		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #7 24-25, warpins: 1 ---
-		slot4 = false
+		--- BLOCK #7 21-21, warpins: 1 ---
+		return slot2
+
 		--- END OF BLOCK #7 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
+		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 26-26, warpins: 1 ---
-		slot4 = true
-
+		--- BLOCK #8 22-23, warpins: 2 ---
 		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #9
+		slot2 = if slot2 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #22
+		end
 
 
-		--- BLOCK #9 27-27, warpins: 2 ---
-		return slot4
-
+		--- BLOCK #9 24-27, warpins: 1 ---
+		slot4 = slot0.itemId
+		slot5 = slot1.itemId
 		--- END OF BLOCK #9 ---
 
-		FLOW; TARGET BLOCK #10
+		if slot4 ~= slot5 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #14
+		end
 
 
-		--- BLOCK #10 28-31, warpins: 4 ---
-		slot4 = slot0.quality
-		slot5 = slot1.quality
+		--- BLOCK #10 28-31, warpins: 1 ---
+		slot4 = slot0.itemId
+		slot5 = slot1.itemId
 		--- END OF BLOCK #10 ---
 
-		if slot4 < slot5 then
+		if slot4 >= slot5 then
 		JUMP TO BLOCK #11
 		else
 		JUMP TO BLOCK #12
@@ -1470,45 +1481,319 @@ slot14 = function(slot0, slot1)
 
 
 		--- BLOCK #11 32-33, warpins: 1 ---
-		slot4 = true
-
-		return slot4
-
+		slot4 = false
 		--- END OF BLOCK #11 ---
 
-		FLOW; TARGET BLOCK #12
+		UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-		--- BLOCK #12 34-37, warpins: 2 ---
-		slot4 = slot0.cLevel
-		slot5 = slot1.cLevel
+		--- BLOCK #12 34-34, warpins: 1 ---
+		slot4 = true
+
 		--- END OF BLOCK #12 ---
 
-		if slot4 >= slot5 then
-		JUMP TO BLOCK #13
+		FLOW; TARGET BLOCK #13
+
+
+		--- BLOCK #13 35-35, warpins: 2 ---
+		return slot4
+
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 36-38, warpins: 2 ---
+		slot4 = slot0.genID
+		--- END OF BLOCK #14 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #15
 		else
-		JUMP TO BLOCK #14
+		JUMP TO BLOCK #16
 		end
 
 
-		--- BLOCK #13 38-39, warpins: 1 ---
+		--- BLOCK #15 39-39, warpins: 1 ---
+		slot4 = 0
+		--- END OF BLOCK #15 ---
+
+		FLOW; TARGET BLOCK #16
+
+
+		--- BLOCK #16 40-42, warpins: 2 ---
+		slot5 = slot1.genID
+		--- END OF BLOCK #16 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #17
+		else
+		JUMP TO BLOCK #18
+		end
+
+
+		--- BLOCK #17 43-43, warpins: 1 ---
+		slot5 = 0
+		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #18
+
+
+		--- BLOCK #18 44-45, warpins: 2 ---
+		--- END OF BLOCK #18 ---
+
+		if slot4 >= slot5 then
+		JUMP TO BLOCK #19
+		else
+		JUMP TO BLOCK #20
+		end
+
+
+		--- BLOCK #19 46-47, warpins: 1 ---
 		slot4 = false
-		--- END OF BLOCK #13 ---
+		--- END OF BLOCK #19 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #15
+		UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-		--- BLOCK #14 40-40, warpins: 1 ---
+		--- BLOCK #20 48-48, warpins: 1 ---
 		slot4 = true
 
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #20 ---
 
-		FLOW; TARGET BLOCK #15
+		FLOW; TARGET BLOCK #21
 
 
-		--- BLOCK #15 41-41, warpins: 2 ---
+		--- BLOCK #21 49-49, warpins: 2 ---
 		return slot4
-		--- END OF BLOCK #15 ---
+
+		--- END OF BLOCK #21 ---
+
+		FLOW; TARGET BLOCK #22
+
+
+		--- BLOCK #22 50-52, warpins: 2 ---
+		slot4 = slot0.quality
+		--- END OF BLOCK #22 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #23
+		else
+		JUMP TO BLOCK #24
+		end
+
+
+		--- BLOCK #23 53-53, warpins: 1 ---
+		slot4 = 0
+		--- END OF BLOCK #23 ---
+
+		FLOW; TARGET BLOCK #24
+
+
+		--- BLOCK #24 54-56, warpins: 2 ---
+		slot5 = slot1.quality
+		--- END OF BLOCK #24 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #25
+		else
+		JUMP TO BLOCK #26
+		end
+
+
+		--- BLOCK #25 57-57, warpins: 1 ---
+		slot5 = 0
+		--- END OF BLOCK #25 ---
+
+		FLOW; TARGET BLOCK #26
+
+
+		--- BLOCK #26 58-59, warpins: 2 ---
+		--- END OF BLOCK #26 ---
+
+		if slot4 ~= slot5 then
+		JUMP TO BLOCK #27
+		else
+		JUMP TO BLOCK #31
+		end
+
+
+		--- BLOCK #27 60-61, warpins: 1 ---
+		--- END OF BLOCK #27 ---
+
+		if slot4 >= slot5 then
+		JUMP TO BLOCK #28
+		else
+		JUMP TO BLOCK #29
+		end
+
+
+		--- BLOCK #28 62-63, warpins: 1 ---
+		slot6 = false
+		--- END OF BLOCK #28 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #30
+
+
+		--- BLOCK #29 64-64, warpins: 1 ---
+		slot6 = true
+
+		--- END OF BLOCK #29 ---
+
+		FLOW; TARGET BLOCK #30
+
+
+		--- BLOCK #30 65-65, warpins: 2 ---
+		return slot6
+
+		--- END OF BLOCK #30 ---
+
+		FLOW; TARGET BLOCK #31
+
+
+		--- BLOCK #31 66-68, warpins: 2 ---
+		slot6 = slot0.cLevel
+		--- END OF BLOCK #31 ---
+
+		slot6 = if not slot6 then
+		JUMP TO BLOCK #32
+		else
+		JUMP TO BLOCK #33
+		end
+
+
+		--- BLOCK #32 69-69, warpins: 1 ---
+		slot6 = 0
+		--- END OF BLOCK #32 ---
+
+		FLOW; TARGET BLOCK #33
+
+
+		--- BLOCK #33 70-72, warpins: 2 ---
+		slot7 = slot1.cLevel
+		--- END OF BLOCK #33 ---
+
+		slot7 = if not slot7 then
+		JUMP TO BLOCK #34
+		else
+		JUMP TO BLOCK #35
+		end
+
+
+		--- BLOCK #34 73-73, warpins: 1 ---
+		slot7 = 0
+		--- END OF BLOCK #34 ---
+
+		FLOW; TARGET BLOCK #35
+
+
+		--- BLOCK #35 74-75, warpins: 2 ---
+		--- END OF BLOCK #35 ---
+
+		if slot6 ~= slot7 then
+		JUMP TO BLOCK #36
+		else
+		JUMP TO BLOCK #40
+		end
+
+
+		--- BLOCK #36 76-77, warpins: 1 ---
+		--- END OF BLOCK #36 ---
+
+		if slot6 >= slot7 then
+		JUMP TO BLOCK #37
+		else
+		JUMP TO BLOCK #38
+		end
+
+
+		--- BLOCK #37 78-79, warpins: 1 ---
+		slot8 = false
+		--- END OF BLOCK #37 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+		--- BLOCK #38 80-80, warpins: 1 ---
+		slot8 = true
+
+		--- END OF BLOCK #38 ---
+
+		FLOW; TARGET BLOCK #39
+
+
+		--- BLOCK #39 81-81, warpins: 2 ---
+		return slot8
+
+		--- END OF BLOCK #39 ---
+
+		FLOW; TARGET BLOCK #40
+
+
+		--- BLOCK #40 82-84, warpins: 2 ---
+		slot8 = slot0.genID
+		--- END OF BLOCK #40 ---
+
+		slot8 = if not slot8 then
+		JUMP TO BLOCK #41
+		else
+		JUMP TO BLOCK #42
+		end
+
+
+		--- BLOCK #41 85-85, warpins: 1 ---
+		slot8 = 0
+		--- END OF BLOCK #41 ---
+
+		FLOW; TARGET BLOCK #42
+
+
+		--- BLOCK #42 86-88, warpins: 2 ---
+		slot9 = slot1.genID
+		--- END OF BLOCK #42 ---
+
+		slot9 = if not slot9 then
+		JUMP TO BLOCK #43
+		else
+		JUMP TO BLOCK #44
+		end
+
+
+		--- BLOCK #43 89-89, warpins: 1 ---
+		slot9 = 0
+		--- END OF BLOCK #43 ---
+
+		FLOW; TARGET BLOCK #44
+
+
+		--- BLOCK #44 90-91, warpins: 2 ---
+		--- END OF BLOCK #44 ---
+
+		if slot8 >= slot9 then
+		JUMP TO BLOCK #45
+		else
+		JUMP TO BLOCK #46
+		end
+
+
+		--- BLOCK #45 92-93, warpins: 1 ---
+		slot8 = false
+		--- END OF BLOCK #45 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #47
+
+
+		--- BLOCK #46 94-94, warpins: 1 ---
+		slot8 = true
+
+		--- END OF BLOCK #46 ---
+
+		FLOW; TARGET BLOCK #47
+
+
+		--- BLOCK #47 95-95, warpins: 2 ---
+		return slot8
+		--- END OF BLOCK #47 ---
 
 
 
@@ -1537,9 +1822,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot3.autoSelectedCarries = slot14
+slot3.autoSelectedCarries = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.carryDataList
@@ -1623,8 +1908,8 @@ slot14 = function(slot0)
 	slot8 = #slot1
 	slot8 = slot8 + 1
 	slot9 = {
-		tIndex = 1,
-		isEmpty = true
+		isEmpty = true,
+		tIndex = 1
 	}
 	slot1[slot8] = slot9
 
@@ -1642,9 +1927,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getSelectedCarries = slot14
+slot3.getSelectedCarries = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.carryDataList
 	--- END OF BLOCK #0 ---
@@ -1775,9 +2060,9 @@ slot14 = function(slot0)
 
 end
 
-slot3.getConsumeDataList = slot14
+slot3.getConsumeDataList = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot1.cLevel
 	--- END OF BLOCK #0 ---
@@ -1977,9 +2262,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.getPropertyUpInfo = slot14
+slot3.getPropertyUpInfo = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -1999,9 +2284,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot3.overrideCarryData = slot14
+slot3.overrideCarryData = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = nil
 	slot0.carryDataList = slot1
@@ -2013,7 +2298,7 @@ slot14 = function(slot0)
 
 end
 
-slot3.clearData = slot14
+slot3.clearData = slot15
 
 return slot3
 --- END OF BLOCK #0 ---

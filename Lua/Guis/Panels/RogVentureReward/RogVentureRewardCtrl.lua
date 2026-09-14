@@ -206,8 +206,8 @@ slot7 = function(slot0, slot1)
 	slot3 = slot3.insert
 	slot5 = slot2
 	slot6 = {
-		tIndex = 0,
-		type = 0
+		type = 0,
+		tIndex = 0
 	}
 	slot7 = ItemConst
 	slot7 = slot7.ITEM_SPECIAL_ROGUE_COIN
@@ -236,9 +236,9 @@ slot7 = function(slot0, slot1)
 	slot8 = slot8.insert
 	slot10 = slot2
 	slot11 = {
+		type = 2,
 		num = 1,
-		tIndex = 0,
-		type = 2
+		tIndex = 0
 	}
 	slot11.id = slot7
 

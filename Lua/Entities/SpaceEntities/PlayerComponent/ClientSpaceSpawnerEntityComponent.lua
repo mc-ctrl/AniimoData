@@ -1,4 +1,4 @@
---- BLOCK #0 1-58, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -20,11 +20,14 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Core.Client.GlobalData"
 slot6 = slot6(slot8)
-slot7 = slot2.Component
-slot9 = "ClientSpaceSpawnerEntityComponent"
+slot7 = require
+slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
+slot8 = slot2.Component
+slot10 = "ClientSpaceSpawnerEntityComponent"
+slot8 = slot8(slot10)
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -33,9 +36,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.start = slot8
+slot8.start = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -44,9 +47,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.tick = slot8
+slot8.tick = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshShowEntityDictVisible
@@ -65,9 +68,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onEnterSpace = slot8
+slot8.onEnterSpace = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.space
 	slot5 = slot3
@@ -111,9 +114,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_hideShowEntityDict_entry_added = slot8
+slot8.on_hideShowEntityDict_entry_added = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -167,9 +170,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_hideShowEntityDict_entry_deleted = slot8
+slot8.on_hideShowEntityDict_entry_deleted = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0.space
 	slot6 = slot4
@@ -213,9 +216,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.on_hideShowEntityDict_item_changed = slot8
+slot8.on_hideShowEntityDict_item_changed = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.hideShowEntityDict
@@ -267,9 +270,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.refreshShowEntityDictVisible = slot8
+slot8.refreshShowEntityDictVisible = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.space
 	slot5 = slot3
@@ -313,9 +316,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_hideShowEntityInfo_entry_added = slot8
+slot8.on_hideShowEntityInfo_entry_added = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -369,9 +372,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_hideShowEntityInfo_entry_deleted = slot8
+slot8.on_hideShowEntityInfo_entry_deleted = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0.space
 	slot6 = slot4
@@ -415,9 +418,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.on_hideShowEntityInfo_item_changed = slot8
+slot8.on_hideShowEntityInfo_item_changed = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.hideShowEntityInfo
 	--- END OF BLOCK #0 ---
@@ -493,9 +496,92 @@ slot8 = function(slot0)
 
 end
 
-slot7.refreshShowEntityInfoVisible = slot8
+slot8.refreshShowEntityInfoVisible = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0.space
+	slot5 = slot3
+	slot3 = slot3.getEntityByStaticId
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot4 = slot3.refreshIsNpcEntity
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-13, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.refreshIsNpcEntity
+
+	slot4(slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot8.on_specialNpcDict_entry_deleted = slot9
+
+slot9 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0.space
+	slot5 = slot3
+	slot3 = slot3.getEntityByStaticId
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	slot4 = true
+	slot3.isNpcEntity = slot4
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot8.on_specialNpcDict_entry_added = slot9
+
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntitiesByTemplateId
@@ -536,9 +622,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_hideShowTitleDict_entry_added = slot8
+slot8.on_hideShowTitleDict_entry_added = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.getEntitiesByTemplateId
@@ -579,9 +665,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.on_hideShowTitleDict_item_changed = slot8
+slot8.on_hideShowTitleDict_item_changed = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
@@ -601,9 +687,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.on_specialContentDict_item_changed = slot8
+slot8.on_specialContentDict_item_changed = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -652,9 +738,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_specialContentDict_entry_added = slot8
+slot8.on_specialContentDict_entry_added = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -703,9 +789,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.on_specialContentDict_entry_deleted = slot8
+slot8.on_specialContentDict_entry_deleted = slot9
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

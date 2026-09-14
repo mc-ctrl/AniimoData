@@ -1,4 +1,4 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-61, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformTextCommunicationService"
 slot0 = slot0(slot2)
@@ -9,17 +9,23 @@ slot2 = require
 slot4 = "SDK.Platform.PlatformSocialService"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "SDK.Platform.PlatformLogger"
+slot5 = "SDK.Platform.PlatformNoticeUtils"
 slot3 = slot3(slot5)
-slot4 = {}
-slot5 = "由于对方的平台隐私设置或屏蔽限制，无法查看该玩家的内容。"
-slot4.DEFAULT_BLOCKED_CONTENT_TEXT = slot5
-slot5 = "NO_PLAYER_SIGNATURE"
-slot4.NO_PLAYER_SIGNATURE_KEY = slot5
-slot5 = "pending"
-slot4.PENDING_DECISION = slot5
+slot4 = require
+slot6 = "Common.NoticeDef"
+slot4 = slot4(slot6)
+slot5 = require
+slot7 = "SDK.Platform.PlatformLogger"
+slot5 = slot5(slot7)
+slot6 = {}
+slot7 = slot4.PRIVACY_SETTING_MISSMATCH
+slot6.BLOCKED_CONTENT_NOTICE_ID = slot7
+slot7 = "NO_PLAYER_SIGNATURE"
+slot6.NO_PLAYER_SIGNATURE_KEY = slot7
+slot7 = "pending"
+slot6.PENDING_DECISION = slot7
 
-slot5 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = {}
 	slot3.textDecision = slot0
@@ -75,9 +81,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.makeContext = slot5
+slot6.makeContext = slot7
 
-slot5 = function()
+slot7 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -130,9 +136,9 @@ slot5 = function()
 
 end
 
-slot4.getChatSystem = slot5
+slot6.getChatSystem = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PlatformTextMaskService
 	slot1 = slot1.getChatSystem
@@ -193,9 +199,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getCachedPlayerInfo = slot5
+slot6.getCachedPlayerInfo = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -230,9 +236,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.resolveSeedPlayerInfo = slot5
+slot6.resolveSeedPlayerInfo = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = pg
 	--- END OF BLOCK #0 ---
@@ -516,9 +522,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isLocalPlayer = slot5
+slot6.isLocalPlayer = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = type
 	slot3 = PlatformSocialService
@@ -556,9 +562,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.peekPlatformBlocked = slot5
+slot6.peekPlatformBlocked = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -630,9 +636,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.peekIsPlatformFriend = slot5
+slot6.peekIsPlatformFriend = slot7
 
-slot5 = function()
+slot7 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformUGCService
 	--- END OF BLOCK #0 ---
@@ -729,9 +735,9 @@ slot5 = function()
 
 end
 
-slot4.resolveLocalPolicyNow = slot5
+slot6.resolveLocalPolicyNow = slot7
 
-slot5 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = PlatformTextMaskService
 	slot3 = slot3.resolveSeedPlayerInfo
@@ -751,8 +757,8 @@ slot5 = function(slot0, slot1, slot2)
 
 	--- BLOCK #1 10-10, warpins: 1 ---
 	slot4 = {
-		Allow = "allow",
-		Deny = "deny"
+		Deny = "deny",
+		Allow = "allow"
 	}
 	--- END OF BLOCK #1 ---
 
@@ -976,7 +982,7 @@ slot5 = function(slot0, slot1, slot2)
 	if slot6 == "friends_only" then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #38
 	end
 
 
@@ -1071,7 +1077,121 @@ slot5 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 131-140, warpins: 2 ---
+	--- BLOCK #27 131-132, warpins: 2 ---
+	--- END OF BLOCK #27 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #28 133-135, warpins: 1 ---
+	slot11 = PlatformUGCService
+	--- END OF BLOCK #28 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #29 136-141, warpins: 1 ---
+	slot11 = type
+	slot13 = PlatformUGCService
+	slot13 = slot13.resolveTargetVisibleDecision
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #29 ---
+
+	if slot11 == "function" then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #30 142-149, warpins: 1 ---
+	slot11 = PlatformUGCService
+	slot13 = slot11
+	slot11 = slot11.resolveTargetVisibleDecision
+	slot14 = slot3
+	slot15 = "local_ugc_privacy_friends_only"
+	slot11, slot12 = slot11(slot13, slot14, slot15)
+	--- END OF BLOCK #30 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 150-152, warpins: 1 ---
+	slot13 = slot4.Allow
+	--- END OF BLOCK #31 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 153-153, warpins: 2 ---
+	slot13 = slot4.Deny
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 154-162, warpins: 2 ---
+	slot14 = slot13
+	slot15 = slot11
+	slot16 = slot3
+	slot17 = PlatformTextMaskService
+	slot17 = slot17.makeContext
+	slot19 = slot13
+	slot20 = slot11
+	--- END OF BLOCK #33 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 163-165, warpins: 1 ---
+	slot21 = slot12.ugcReason
+	--- END OF BLOCK #34 ---
+
+	slot21 = if not slot21 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 166-166, warpins: 2 ---
+	slot21 = "local_ugc_privacy_friends_only"
+	--- END OF BLOCK #35 ---
+
+	FLOW; TARGET BLOCK #36
+
+
+	--- BLOCK #36 167-168, warpins: 2 ---
+	MULTRES = slot17(slot19, slot20, slot21)
+
+	return slot14, slot15, slot16, MULTRES
+
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 169-178, warpins: 4 ---
 	slot11 = slot10
 	slot12 = slot9
 	slot13 = slot3
@@ -1084,47 +1204,151 @@ slot5 = function(slot0, slot1, slot2)
 
 	return slot11, slot12, slot13, MULTRES
 
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #37 ---
 
-	FLOW; TARGET BLOCK #28
+	FLOW; TARGET BLOCK #38
 
 
-	--- BLOCK #28 141-143, warpins: 2 ---
+	--- BLOCK #38 179-181, warpins: 2 ---
 	slot8 = slot7.Fallback
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #38 ---
 
 	if slot6 ~= slot8 then
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #29 144-145, warpins: 1 ---
-	--- END OF BLOCK #29 ---
+	--- BLOCK #39 182-183, warpins: 1 ---
+	--- END OF BLOCK #39 ---
 
 	if slot6 == "fallback" then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #40
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #30 146-147, warpins: 2 ---
+	--- BLOCK #40 184-185, warpins: 2 ---
 	slot8 = "local_ugc_privacy_fallback"
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #40 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #31 148-148, warpins: 1 ---
+	--- BLOCK #41 186-186, warpins: 1 ---
 	slot8 = "local_ugc_privacy_allow"
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #32
+	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #32 149-158, warpins: 2 ---
+	--- BLOCK #42 187-189, warpins: 2 ---
+	slot9 = PlatformUGCService
+	--- END OF BLOCK #42 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #43 190-195, warpins: 1 ---
+	slot9 = type
+	slot11 = PlatformUGCService
+	slot11 = slot11.resolveTargetVisibleDecision
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #43 ---
+
+	if slot9 == "function" then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #44 196-203, warpins: 1 ---
+	slot9 = PlatformUGCService
+	slot11 = slot9
+	slot9 = slot9.resolveTargetVisibleDecision
+	slot12 = slot3
+	slot13 = slot8
+	slot9, slot10 = slot9(slot11, slot12, slot13)
+	--- END OF BLOCK #44 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #45 204-206, warpins: 1 ---
+	slot11 = slot4.Allow
+	--- END OF BLOCK #45 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 207-207, warpins: 2 ---
+	slot11 = slot4.Deny
+	--- END OF BLOCK #46 ---
+
+	FLOW; TARGET BLOCK #47
+
+
+	--- BLOCK #47 208-216, warpins: 2 ---
+	slot12 = slot11
+	slot13 = slot9
+	slot14 = slot3
+	slot15 = PlatformTextMaskService
+	slot15 = slot15.makeContext
+	slot17 = slot11
+	slot18 = slot9
+	--- END OF BLOCK #47 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #48 217-219, warpins: 1 ---
+	slot19 = slot10.ugcReason
+	--- END OF BLOCK #48 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #50
+	end
+
+
+	--- BLOCK #49 220-220, warpins: 2 ---
+	slot19 = slot8
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 221-222, warpins: 2 ---
+	MULTRES = slot15(slot17, slot18, slot19)
+
+	return slot12, slot13, slot14, MULTRES
+
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 223-232, warpins: 3 ---
 	slot9 = slot4.Allow
 	slot10 = true
 	slot11 = slot3
@@ -1136,15 +1360,15 @@ slot5 = function(slot0, slot1, slot2)
 	MULTRES = slot12(slot14, slot15, slot16)
 
 	return slot9, slot10, slot11, MULTRES
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #51 ---
 
 
 
 end
 
-slot4.evaluateVisibility = slot5
+slot6.evaluateVisibility = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0.requestState
@@ -1192,9 +1416,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isRequestGuardEnabled = slot5
+slot6.isRequestGuardEnabled = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PlatformTextMaskService
 	slot1 = slot1.isRequestGuardEnabled
@@ -1252,9 +1476,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.nextRequestId = slot5
+slot6.nextRequestId = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0.isAlive
@@ -1333,12 +1557,11 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isBindingAlive = slot5
+slot6.isBindingAlive = slot7
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = PlatformTextMaskService
-	slot1 = slot1.DEFAULT_BLOCKED_CONTENT_TEXT
+slot7 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = ""
 
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -1347,9 +1570,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getBlockedContentText = slot5
+slot6.getBlockedContentText = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -1438,9 +1661,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getBlockedSignatureText = slot5
+slot6.getBlockedSignatureText = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -1507,9 +1730,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.checkTextVisibilityNow = slot5
+slot6.checkTextVisibilityNow = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -1924,9 +2147,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.bindText = slot5
+slot6.bindText = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1935,9 +2158,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.clearCache = slot5
+slot6.clearCache = slot7
 
-return slot4
+return slot6
 --- END OF BLOCK #0 ---
 
 

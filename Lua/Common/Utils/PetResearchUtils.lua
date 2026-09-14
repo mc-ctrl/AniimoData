@@ -1,22 +1,25 @@
---- BLOCK #0 1-26, warpins: 1 ---
+--- BLOCK #0 1-29, warpins: 1 ---
 slot0 = require
-slot2 = "Common.Const.Const"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.Utils.Utils"
+slot3 = "Common.Const.Const"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Data.pet_research_content_data"
+slot4 = "Common.Utils.Utils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Data.pet_trait_data"
+slot5 = "Data.pet_research_content_data"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.pet_evolve_data"
+slot6 = "Data.pet_trait_data"
 slot4 = slot4(slot6)
-slot5 = {}
+slot5 = require
+slot7 = "Data.pet_evolve_data"
+slot5 = slot5(slot7)
+slot6 = {}
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = require
 	slot3 = "Globals"
@@ -58,7 +61,7 @@ slot6 = function(slot0)
 
 
 	--- BLOCK #3 17-17, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -106,7 +109,7 @@ slot6 = function(slot0)
 
 
 	--- BLOCK #8 34-34, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -141,9 +144,7 @@ slot6 = function(slot0)
 
 	--- BLOCK #12 45-52, warpins: 1 ---
 	slot4 = slot1.cachePetHandbookInitDict
-	slot5 = {
-		firstCreate = false
-	}
+	slot5 = {}
 	slot5.traitResearchMap = slot2
 	slot5.evolveResearchMap = slot3
 	slot4[slot0] = slot5
@@ -157,9 +158,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.genPetHandbookInitDict = slot6
+slot6.genPetHandbookInitDict = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PetTraitData
 	slot2 = slot2[slot0]
@@ -213,9 +214,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.genTraitResearchInfoInitDict = slot6
+slot6.genTraitResearchInfoInitDict = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PetEvolveData
 	slot2 = slot2[slot0]
@@ -319,7 +320,7 @@ slot6 = function(slot0, slot1)
 
 
 	--- BLOCK #9 37-37, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -364,7 +365,7 @@ slot6 = function(slot0, slot1)
 
 
 	--- BLOCK #14 51-51, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
@@ -405,9 +406,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.genEvolveResearchInfoInitDict = slot6
+slot6.genEvolveResearchInfoInitDict = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {}
 	slot2 = PetResearchContentData
@@ -492,9 +493,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.getSumNeededExpForUpgrade = slot6
+slot6.getSumNeededExpForUpgrade = slot7
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

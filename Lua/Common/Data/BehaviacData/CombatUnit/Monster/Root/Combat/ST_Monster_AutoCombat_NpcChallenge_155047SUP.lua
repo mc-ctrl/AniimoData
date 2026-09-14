@@ -1,0 +1,3316 @@
+--- BLOCK #0 1-2159, warpins: 1 ---
+slot0 = require
+slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Common.AI.Behaviac.Enums"
+slot1 = slot1(slot3)
+slot2 = {}
+slot3 = {
+	agenttype = "PetAgent",
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NpcChallenge_155047SUP",
+	version = 326,
+	useForRoute = false
+}
+slot4 = {}
+slot3.properties = slot4
+slot4 = {}
+slot5 = {
+	type = "bool",
+	value = "false",
+	name = "tShow50PCBubble",
+	const = false
+}
+slot4[1] = slot5
+slot5 = {
+	type = "bool",
+	value = "false",
+	name = "tShow20PCBubble",
+	const = false
+}
+slot4[2] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "CurrentDistToTarget",
+	const = 0
+}
+slot4[3] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "CurrentEP",
+	const = 0
+}
+slot4[4] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "CurrentHpPercent",
+	const = 0
+}
+slot4[5] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "Weight_JumpBack",
+	const = 0
+}
+slot4[6] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "Weight_RunBack",
+	const = 0
+}
+slot4[7] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "Weight_Skill",
+	const = 0
+}
+slot4[8] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "Weight_CommonAttack",
+	const = 0
+}
+slot4[9] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "Weight_NothingToDo",
+	const = 0
+}
+slot4[10] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "maxSkillDist",
+	const = 0
+}
+slot4[11] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "skillStopDist",
+	const = 0
+}
+slot4[12] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "goBackDist",
+	const = 0
+}
+slot4[13] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "tNewTargetForCatchMode",
+	const = 0
+}
+slot4[14] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "CurrentBoxDistToTarget",
+	const = 0
+}
+slot4[15] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "tAngryPrepare",
+	const = 0
+}
+slot4[16] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "tDrowningDepth",
+	const = 0
+}
+slot4[17] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "tFlyHeight",
+	const = 0
+}
+slot4[18] = slot5
+slot5 = {
+	type = "float",
+	value = "0",
+	name = "tVerticalDistToTgt",
+	const = 0
+}
+slot4[19] = slot5
+slot5 = {
+	type = "string",
+	value = "0",
+	name = "tSkillPlan",
+	const = "0"
+}
+slot4[20] = slot5
+slot5 = {
+	type = "int",
+	value = "0",
+	name = "tSkillUsed",
+	const = 0
+}
+slot4[21] = slot5
+slot5 = {
+	type = "string",
+	value = "0",
+	name = "tCurrentTactics",
+	const = "0"
+}
+slot4[22] = slot5
+slot3.pars = slot4
+slot4 = {}
+slot3.attachments = slot4
+slot4 = {
+	id = "569",
+	class = "Sequence"
+}
+slot5 = {}
+slot4.properties = slot5
+slot5 = {}
+slot4.attachments = slot5
+slot5 = {}
+slot6 = {}
+slot7 = {
+	id = "687",
+	class = "Compute"
+}
+slot8 = {}
+slot9 = {
+	Operator = "Mul"
+}
+slot8[1] = slot9
+slot9 = {}
+slot10 = {
+	field = "tDrowningDepth"
+}
+slot9.Opl = slot10
+slot8[2] = slot9
+slot9 = {}
+slot10 = {
+	func = "getBodyHeight"
+}
+slot11 = {}
+slot12 = {
+	field = "selfId"
+}
+slot11[1] = slot12
+slot10.params = slot11
+slot9.Opr1 = slot10
+slot8[3] = slot9
+slot9 = {}
+slot10 = {
+	const = -0.6
+}
+slot9.Opr2 = slot10
+slot8[4] = slot9
+slot7.properties = slot8
+slot8 = {}
+slot7.attachments = slot8
+slot8 = {}
+slot7.children = slot8
+slot6.node = slot7
+slot5[1] = slot6
+slot6 = {}
+slot7 = {
+	id = "686",
+	class = "Assignment"
+}
+slot8 = {}
+slot9 = {
+	CastRight = "false"
+}
+slot8[1] = slot9
+slot9 = {}
+slot10 = {
+	field = "tAngryPrepare"
+}
+slot9.Opl = slot10
+slot8[2] = slot9
+slot9 = {}
+slot10 = {
+	const = 0
+}
+slot9.Opr = slot10
+slot8[3] = slot9
+slot7.properties = slot8
+slot8 = {}
+slot7.attachments = slot8
+slot8 = {}
+slot7.children = slot8
+slot6.node = slot7
+slot5[2] = slot6
+slot6 = {}
+slot7 = {
+	id = "570",
+	class = "DecoratorLoop"
+}
+slot8 = {}
+slot9 = {}
+slot10 = {
+	const = -1
+}
+slot9.Count = slot10
+slot8[1] = slot9
+slot9 = {
+	DecorateWhenChildEnds = "true"
+}
+slot8[2] = slot9
+slot9 = {
+	DoneWithinFrame = "false"
+}
+slot8[3] = slot9
+slot7.properties = slot8
+slot8 = {}
+slot7.attachments = slot8
+slot8 = {}
+slot9 = {}
+slot10 = {
+	id = "10",
+	class = "Parallel"
+}
+slot11 = {}
+slot12 = {
+	ChildFinishPolicy = "CHILDFINISH_LOOP"
+}
+slot11[1] = slot12
+slot12 = {
+	ExitPolicy = "EXIT_ABORT_RUNNINGSIBLINGS"
+}
+slot11[2] = slot12
+slot12 = {
+	FailurePolicy = "FAIL_ON_ONE"
+}
+slot11[3] = slot12
+slot12 = {
+	SuccessPolicy = "SUCCEED_ON_ALL"
+}
+slot11[4] = slot12
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot12 = {}
+slot13 = {
+	id = "464",
+	class = "Sequence"
+}
+slot14 = {}
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot15 = {}
+slot16 = {
+	id = "117",
+	class = "Sequence"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "1398",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tgt"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	func = "getTarget"
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "116",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "CurrentDistToTarget"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	func = "getDistByTgt"
+}
+slot23 = {}
+slot24 = {
+	field = "tgt"
+}
+slot23[1] = slot24
+slot24 = {
+	const = false
+}
+slot23[2] = slot24
+slot24 = {
+	const = true
+}
+slot23[3] = slot24
+slot24 = {
+	const = 0
+}
+slot23[4] = slot24
+slot22.params = slot23
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot18 = {}
+slot19 = {
+	id = "550",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "CurrentBoxDistToTarget"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	func = "getDistByTgt"
+}
+slot23 = {}
+slot24 = {
+	field = "tgt"
+}
+slot23[1] = slot24
+slot24 = {
+	const = false
+}
+slot23[2] = slot24
+slot24 = {
+	const = false
+}
+slot23[3] = slot24
+slot24 = {
+	const = 0
+}
+slot23[4] = slot24
+slot22.params = slot23
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[3] = slot18
+slot18 = {}
+slot19 = {
+	id = "121",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "CurrentHpPercent"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	func = "getHpPercent"
+}
+slot23 = {}
+slot24 = {
+	field = "selfId"
+}
+slot23[1] = slot24
+slot22.params = slot23
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[4] = slot18
+slot18 = {}
+slot19 = {
+	id = "118",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "CurrentEP"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	func = "getEp"
+}
+slot23 = {}
+slot24 = {
+	field = "selfId"
+}
+slot23[1] = slot24
+slot22.params = slot23
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[5] = slot18
+slot18 = {}
+slot19 = {
+	id = "229",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "skillId"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[6] = slot18
+slot18 = {}
+slot19 = {
+	id = "252",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "Weight_JumpBack"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[7] = slot18
+slot18 = {}
+slot19 = {
+	id = "249",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "Weight_RunBack"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[8] = slot18
+slot18 = {}
+slot19 = {
+	id = "250",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "Weight_Skill"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[9] = slot18
+slot18 = {}
+slot19 = {
+	id = "251",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "Weight_CommonAttack"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[10] = slot18
+slot18 = {}
+slot19 = {
+	id = "458",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "Weight_NothingToDo"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[11] = slot18
+slot18 = {}
+slot19 = {
+	id = "1123",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tSkillUsed"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[12] = slot18
+slot18 = {}
+slot19 = {
+	id = "1366",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tCurrentTactics"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	func = "getMasterCombatTactic"
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[13] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[1] = slot15
+slot15 = {}
+slot16 = {
+	id = "6",
+	class = "Selector"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "624",
+	class = "Sequence"
+}
+slot20 = {}
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "623",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Equal"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "checkTargetBlocked"
+}
+slot26 = {}
+slot27 = {
+	field = "selfId"
+}
+slot26[1] = slot27
+slot27 = {
+	field = "tgt"
+}
+slot26[2] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = true
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "640",
+	class = "IfElse"
+}
+slot23 = {}
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	id = "641",
+	class = "And"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	id = "635",
+	class = "Condition"
+}
+slot29 = {}
+slot30 = {
+	Operator = "GreaterEqual"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	func = "getVerticalDis"
+}
+slot32 = {}
+slot33 = {
+	field = "selfId"
+}
+slot32[1] = slot33
+slot33 = {
+	field = "tgt"
+}
+slot32[2] = slot33
+slot31.params = slot32
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = 0.5
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	id = "642",
+	class = "Condition"
+}
+slot29 = {}
+slot30 = {
+	Operator = "LessEqual"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	func = "getVerticalDis"
+}
+slot32 = {}
+slot33 = {
+	field = "selfId"
+}
+slot32[1] = slot33
+slot33 = {
+	field = "tgt"
+}
+slot32[2] = slot33
+slot31.params = slot32
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = 4
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	id = "638",
+	class = "Sequence"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	id = "649",
+	class = "Action"
+}
+slot29 = {}
+slot30 = {}
+slot31 = {
+	func = "moveToTarget"
+}
+slot32 = {}
+slot33 = {
+	field = "tgt"
+}
+slot32[1] = slot33
+slot33 = {
+	const = 1
+}
+slot32[2] = slot33
+slot33 = {
+	const = 5
+}
+slot32[3] = slot33
+slot33 = {
+	const = false
+}
+slot32[4] = slot33
+slot33 = {
+	const = false
+}
+slot32[5] = slot33
+slot33 = {
+	const = true
+}
+slot32[6] = slot33
+slot33 = {
+	const = 0
+}
+slot32[7] = slot33
+slot33 = {}
+slot34 = slot0.MoveUpdateLevel
+slot34 = slot34.Slow
+slot33.const = slot34
+slot32[8] = slot33
+slot33 = {}
+slot34 = slot0.PathFindType
+slot34 = slot34.Voxel
+slot33.const = slot34
+slot32[9] = slot33
+slot33 = {}
+slot34 = slot0.SpeedRateType
+slot34 = slot34.Mid
+slot33.const = slot34
+slot32[10] = slot33
+slot33 = {
+	const = 0
+}
+slot32[11] = slot33
+slot33 = {
+	const = false
+}
+slot32[12] = slot33
+slot31.params = slot32
+slot30.Method = slot31
+slot29[1] = slot30
+slot30 = {
+	ResultOption = "BT_SUCCESS"
+}
+slot29[2] = slot30
+slot30 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	id = "648",
+	class = "Action"
+}
+slot29 = {}
+slot30 = {}
+slot31 = {
+	func = "playJumpAction"
+}
+slot32 = {}
+slot33 = {
+	const = "Jump"
+}
+slot32[1] = slot33
+slot33 = {
+	const = 5
+}
+slot32[2] = slot33
+slot33 = {
+	const = 0
+}
+slot32[3] = slot33
+slot33 = {
+	const = 3
+}
+slot32[4] = slot33
+slot33 = {}
+slot34 = slot0.RootMotionSyncPointEnum
+slot34 = slot34.AICustomPoint1
+slot33.const = slot34
+slot32[5] = slot33
+slot31.params = slot32
+slot30.Method = slot31
+slot29[1] = slot30
+slot30 = {
+	ResultOption = "BT_INVALID"
+}
+slot29[2] = slot30
+slot30 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	id = "689",
+	class = "Sequence"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	id = "690",
+	class = "Assignment"
+}
+slot29 = {}
+slot30 = {
+	CastRight = "false"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	field = "tVerticalDistToTgt"
+}
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	func = "getVerticalDis"
+}
+slot32 = {}
+slot33 = {
+	field = "tgt"
+}
+slot32[1] = slot33
+slot33 = {
+	field = "selfId"
+}
+slot32[2] = slot33
+slot31.params = slot32
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	id = "645",
+	class = "IfElse"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	id = "653",
+	class = "And"
+}
+slot32 = {}
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "636",
+	class = "Condition"
+}
+slot35 = {}
+slot36 = {
+	Operator = "GreaterEqual"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "tVerticalDistToTgt"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 0.25
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "678",
+	class = "Condition"
+}
+slot35 = {}
+slot36 = {
+	Operator = "LessEqual"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "tVerticalDistToTgt"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 3
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	id = "679",
+	class = "IfElse"
+}
+slot32 = {}
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "652",
+	class = "Condition"
+}
+slot35 = {}
+slot36 = {
+	Operator = "Equal"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	func = "checkCanFly"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = true
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "661",
+	class = "Sequence"
+}
+slot35 = {}
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "691",
+	class = "Compute"
+}
+slot38 = {}
+slot39 = {
+	Operator = "Add"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "tFlyHeight"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	field = "tVerticalDistToTgt"
+}
+slot39.Opr1 = slot40
+slot38[3] = slot39
+slot39 = {}
+slot40 = {
+	const = 1.5
+}
+slot39.Opr2 = slot40
+slot38[4] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "659",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "switchToFly"
+}
+slot41 = {}
+slot42 = {
+	field = "tFlyHeight"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 5
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	id = "658",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "moveToTarget"
+}
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	field = "minAttackDist"
+}
+slot41[2] = slot42
+slot42 = {
+	const = 5
+}
+slot41[3] = slot42
+slot42 = {
+	const = false
+}
+slot41[4] = slot42
+slot42 = {
+	const = false
+}
+slot41[5] = slot42
+slot42 = {
+	const = true
+}
+slot41[6] = slot42
+slot42 = {
+	const = 0
+}
+slot41[7] = slot42
+slot42 = {}
+slot43 = slot0.MoveUpdateLevel
+slot43 = slot43.Slow
+slot42.const = slot43
+slot41[8] = slot42
+slot42 = {}
+slot43 = slot0.PathFindType
+slot44 = "AirNav"
+slot43 = slot43[slot44]
+slot42.const = slot43
+slot41[9] = slot42
+slot42 = {}
+slot43 = slot0.SpeedRateType
+slot43 = slot43.Mid
+slot42.const = slot43
+slot41[10] = slot42
+slot42 = {
+	const = 0
+}
+slot41[11] = slot42
+slot42 = {
+	const = false
+}
+slot41[12] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_SUCCESS"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[3] = slot36
+slot36 = {}
+slot37 = {
+	id = "660",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "switchToState"
+}
+slot41 = {}
+slot42 = {
+	const = "LOCOMOTION"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 5
+}
+slot41[2] = slot42
+slot42 = {
+	const = ""
+}
+slot41[3] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[4] = slot36
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	id = "680",
+	class = "Sequence"
+}
+slot35 = {}
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "682",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "moveToTarget"
+}
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 1
+}
+slot41[2] = slot42
+slot42 = {
+	const = 5
+}
+slot41[3] = slot42
+slot42 = {
+	const = false
+}
+slot41[4] = slot42
+slot42 = {
+	const = false
+}
+slot41[5] = slot42
+slot42 = {
+	const = true
+}
+slot41[6] = slot42
+slot42 = {
+	const = 0
+}
+slot41[7] = slot42
+slot42 = {}
+slot43 = slot0.MoveUpdateLevel
+slot43 = slot43.Slow
+slot42.const = slot43
+slot41[8] = slot42
+slot42 = {}
+slot43 = slot0.PathFindType
+slot43 = slot43.Voxel
+slot42.const = slot43
+slot41[9] = slot42
+slot42 = {}
+slot43 = slot0.SpeedRateType
+slot43 = slot43.Mid
+slot42.const = slot43
+slot41[10] = slot42
+slot42 = {
+	const = 0
+}
+slot41[11] = slot42
+slot42 = {
+	const = false
+}
+slot41[12] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_SUCCESS"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "681",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "playJumpAction"
+}
+slot41 = {}
+slot42 = {
+	const = "Jump"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 5
+}
+slot41[2] = slot42
+slot42 = {
+	const = 0
+}
+slot41[3] = slot42
+slot42 = {
+	const = 3
+}
+slot41[4] = slot42
+slot42 = {}
+slot43 = slot0.RootMotionSyncPointEnum
+slot43 = slot43.AICustomPoint1
+slot42.const = slot43
+slot41[5] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
+slot34.children = slot35
+slot33.node = slot34
+slot32[3] = slot33
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	id = "664",
+	class = "Selector"
+}
+slot32 = {}
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "627",
+	class = "Sequence"
+}
+slot35 = {}
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "677",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "calcQualifiedPosByTarget"
+}
+slot41 = {}
+slot42 = {
+	field = "selfId"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot42 = {
+	field = "CurrentBoxDistToTarget"
+}
+slot41[3] = slot42
+slot42 = {}
+slot43 = "CalcQualifiedPosQueryType"
+slot43 = slot0[slot43]
+slot44 = "EightCompassDirections"
+slot43 = slot43[slot44]
+slot42.const = slot43
+slot41[4] = slot42
+slot42 = {
+	const = 4
+}
+slot41[5] = slot42
+slot42 = {
+	field = "tgt"
+}
+slot41[6] = slot42
+slot42 = {
+	const = true
+}
+slot41[7] = slot42
+slot42 = {
+	const = true
+}
+slot41[8] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "628",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "moveToQualifiedPos"
+}
+slot41 = {}
+slot42 = {
+	field = "selfId"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 5
+}
+slot41[2] = slot42
+slot42 = {
+	const = 0
+}
+slot41[3] = slot42
+slot42 = {}
+slot43 = slot0.SpeedRateType
+slot43 = slot43.Mid
+slot42.const = slot43
+slot41[4] = slot42
+slot42 = {
+	const = true
+}
+slot41[5] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "665",
+	class = "IfElse"
+}
+slot35 = {}
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "663",
+	class = "Condition"
+}
+slot38 = {}
+slot39 = {
+	Operator = "Equal"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	func = "checkCanMoveToTarget"
+}
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	field = "attackStopBoxDist"
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = true
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "669",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "moveToTarget"
+}
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0.5
+}
+slot41[2] = slot42
+slot42 = {
+	const = 5
+}
+slot41[3] = slot42
+slot42 = {
+	const = false
+}
+slot41[4] = slot42
+slot42 = {
+	const = false
+}
+slot41[5] = slot42
+slot42 = {
+	const = true
+}
+slot41[6] = slot42
+slot42 = {
+	const = 0
+}
+slot41[7] = slot42
+slot42 = {}
+slot43 = slot0.MoveUpdateLevel
+slot44 = "Normal"
+slot43 = slot43[slot44]
+slot42.const = slot43
+slot41[8] = slot42
+slot42 = {}
+slot43 = slot0.PathFindType
+slot43 = slot43.Voxel
+slot42.const = slot43
+slot41[9] = slot42
+slot42 = {}
+slot43 = slot0.SpeedRateType
+slot43 = slot43.Mid
+slot42.const = slot43
+slot41[10] = slot42
+slot42 = {
+	const = 0
+}
+slot41[11] = slot42
+slot42 = {
+	const = false
+}
+slot41[12] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_SUCCESS"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	id = "671",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "sideWalk"
+}
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	const = 1.5
+}
+slot41[2] = slot42
+slot42 = {
+	const = -35
+}
+slot41[3] = slot42
+slot42 = {
+	const = -1
+}
+slot41[4] = slot42
+slot42 = {
+	const = true
+}
+slot41[5] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_SUCCESS"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[3] = slot36
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
+slot31.children = slot32
+slot30.node = slot31
+slot29[3] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[3] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "1402",
+	class = "Sequence"
+}
+slot20 = {}
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "1401",
+	class = "DecoratorAlwaysSuccess"
+}
+slot23 = {}
+slot24 = {
+	DecorateWhenChildEnds = "true"
+}
+slot23[1] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	id = "1400",
+	class = "Sequence"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	id = "1369",
+	class = "Condition"
+}
+slot29 = {}
+slot30 = {
+	Operator = "Equal"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	field = "tCurrentTactics"
+}
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = "SUP"
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	id = "1386",
+	class = "Sequence"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	id = "1388",
+	class = "Assignment"
+}
+slot32 = {}
+slot33 = {
+	CastRight = "false"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "skillId"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	func = "getSkillIdByFeature"
+}
+slot35 = {}
+slot36 = {
+	const = 6
+}
+slot35[1] = slot36
+slot36 = {
+	const = true
+}
+slot35[2] = slot36
+slot36 = {
+	const = 0
+}
+slot35[3] = slot36
+slot36 = {
+	const = false
+}
+slot35[4] = slot36
+slot36 = {
+	const = 0
+}
+slot35[5] = slot36
+slot36 = {
+	const = true
+}
+slot35[6] = slot36
+slot36 = {
+	const = true
+}
+slot35[7] = slot36
+slot34.params = slot35
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	id = "1391",
+	class = "Condition"
+}
+slot32 = {}
+slot33 = {
+	Operator = "NotEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "skillId"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	id = "1390",
+	class = "Action"
+}
+slot32 = {}
+slot33 = {}
+slot34 = {
+	func = "castSkill"
+}
+slot35 = {}
+slot36 = {
+	field = "tgt"
+}
+slot35[1] = slot36
+slot36 = {
+	field = "skillId"
+}
+slot35[2] = slot36
+slot36 = {
+	const = false
+}
+slot35[3] = slot36
+slot36 = {
+	const = 0
+}
+slot35[4] = slot36
+slot36 = {
+	const = true
+}
+slot35[5] = slot36
+slot36 = {}
+slot37 = "CastAbilitySourceType"
+slot37 = slot0[slot37]
+slot38 = "Normal"
+slot37 = slot37[slot38]
+slot36.const = slot37
+slot35[6] = slot36
+slot34.params = slot35
+slot33.Method = slot34
+slot32[1] = slot33
+slot33 = {
+	ResultOption = "BT_INVALID"
+}
+slot32[2] = slot33
+slot33 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[3] = slot30
+slot30 = {}
+slot31 = {
+	id = "1403",
+	class = "Action"
+}
+slot32 = {}
+slot33 = {}
+slot34 = {
+	func = "waitTime"
+}
+slot35 = {}
+slot36 = {
+	const = 0.5
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Method = slot34
+slot32[1] = slot33
+slot33 = {
+	ResultOption = "BT_INVALID"
+}
+slot32[2] = slot33
+slot33 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[4] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "1394",
+	class = "Selector"
+}
+slot23 = {}
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	id = "1346",
+	class = "Sequence"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	id = "1404",
+	class = "Condition"
+}
+slot29 = {}
+slot30 = {
+	Operator = "Equal"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	field = "tCurrentTactics"
+}
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = "DPS"
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	id = "1152",
+	class = "ReferencedBehavior"
+}
+slot29 = {}
+slot30 = {}
+slot31 = {
+	const = "PBT_AutoCombat_Attack"
+}
+slot32 = "ReferenceBehavior"
+slot30[slot32] = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {}
+slot32 = {
+	Type = "Self",
+	Name = "tShow50PCBubble"
+}
+slot33 = {
+	field = "tShow50PCBubble"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[1] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tShow20PCBubble"
+}
+slot33 = {
+	field = "tShow20PCBubble"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[2] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "CurrentDistToTarget"
+}
+slot33 = {
+	field = "CurrentDistToTarget"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[3] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "CurrentEP"
+}
+slot33 = {
+	field = "CurrentEP"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[4] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "CurrentHpPercent"
+}
+slot33 = {
+	field = "CurrentHpPercent"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[5] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "Weight_JumpBack"
+}
+slot33 = {
+	field = "Weight_JumpBack"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[6] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "Weight_RunBack"
+}
+slot33 = {
+	field = "Weight_RunBack"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[7] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "Weight_Skill"
+}
+slot33 = {
+	field = "Weight_Skill"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[8] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "Weight_CommonAttack"
+}
+slot33 = {
+	field = "Weight_CommonAttack"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[9] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "Weight_NothingToDo"
+}
+slot33 = {
+	field = "Weight_NothingToDo"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[10] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "maxSkillDist"
+}
+slot33 = {
+	field = "maxSkillDist"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[11] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "skillStopDist"
+}
+slot33 = {
+	field = "skillStopDist"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[12] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "goBackDist"
+}
+slot33 = {
+	field = "goBackDist"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[13] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tNewTargetForCatchMode"
+}
+slot33 = {
+	field = "tNewTargetForCatchMode"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[14] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "CurrentBoxDistToTarget"
+}
+slot33 = {
+	field = "CurrentBoxDistToTarget"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[15] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tAngryPrepare"
+}
+slot33 = {
+	field = "tAngryPrepare"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[16] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tDrowningDepth"
+}
+slot33 = {
+	field = "tDrowningDepth"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[17] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tFlyHeight"
+}
+slot33 = {
+	field = "tFlyHeight"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[18] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tVerticalDistToTgt"
+}
+slot33 = {
+	field = "tVerticalDistToTgt"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[19] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tSkillPlan"
+}
+slot33 = {
+	field = "tSkillPlan"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[20] = slot32
+slot32 = {
+	Type = "Self",
+	Name = "tSkillUsed"
+}
+slot33 = {
+	field = "tSkillUsed"
+}
+slot34 = "Value"
+slot32[slot34] = slot33
+slot31[21] = slot32
+slot32 = "subTreeProperties"
+slot30[slot32] = slot31
+slot29[2] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	id = "758",
+	class = "IfElse"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	id = "757",
+	class = "Or"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	id = "755",
+	class = "Condition"
+}
+slot32 = {}
+slot33 = {
+	Operator = "Less"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "CurrentDistToTarget"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	field = "minAttackDist"
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	id = "756",
+	class = "Condition"
+}
+slot32 = {}
+slot33 = {
+	Operator = "Greater"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "CurrentDistToTarget"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	field = "maxAttackDist"
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	id = "759",
+	class = "Sequence"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	id = "760",
+	class = "Action"
+}
+slot32 = {}
+slot33 = {}
+slot34 = {
+	func = "moveToTarget"
+}
+slot35 = {}
+slot36 = {
+	field = "tgt"
+}
+slot35[1] = slot36
+slot36 = {
+	field = "attackStopBoxDist"
+}
+slot35[2] = slot36
+slot36 = {
+	const = 5
+}
+slot35[3] = slot36
+slot36 = {
+	const = false
+}
+slot35[4] = slot36
+slot36 = {
+	const = false
+}
+slot35[5] = slot36
+slot36 = {
+	const = true
+}
+slot35[6] = slot36
+slot36 = {
+	const = 0
+}
+slot35[7] = slot36
+slot36 = {}
+slot37 = slot0.MoveUpdateLevel
+slot38 = "Normal"
+slot37 = slot37[slot38]
+slot36.const = slot37
+slot35[8] = slot36
+slot36 = {}
+slot37 = slot0.PathFindType
+slot37 = slot37.Voxel
+slot36.const = slot37
+slot35[9] = slot36
+slot36 = {}
+slot37 = slot0.SpeedRateType
+slot37 = slot37.Mid
+slot36.const = slot37
+slot35[10] = slot36
+slot36 = {
+	const = 0
+}
+slot35[11] = slot36
+slot36 = {
+	const = false
+}
+slot35[12] = slot36
+slot34.params = slot35
+slot33.Method = slot34
+slot32[1] = slot33
+slot33 = {
+	ResultOption = "BT_INVALID"
+}
+slot32[2] = slot33
+slot33 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	id = "761",
+	class = "Action"
+}
+slot32 = {}
+slot33 = {}
+slot34 = {
+	func = "castNormalAtkCombo"
+}
+slot35 = {}
+slot36 = {
+	field = "tgt"
+}
+slot35[1] = slot36
+slot36 = {
+	const = 0
+}
+slot35[2] = slot36
+slot36 = {
+	const = true
+}
+slot35[3] = slot36
+slot36 = {
+	const = 2
+}
+slot35[4] = slot36
+slot36 = {
+	const = true
+}
+slot35[5] = slot36
+slot36 = {}
+slot37 = "CastAbilitySourceType"
+slot37 = slot0[slot37]
+slot38 = "Normal"
+slot37 = slot37[slot38]
+slot36.const = slot37
+slot35[6] = slot36
+slot34.params = slot35
+slot33.Method = slot34
+slot32[1] = slot33
+slot33 = {
+	ResultOption = "BT_INVALID"
+}
+slot32[2] = slot33
+slot33 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot27 = {}
+slot28 = {
+	id = "762",
+	class = "Action"
+}
+slot29 = {}
+slot30 = {}
+slot31 = {
+	func = "castNormalAtkCombo"
+}
+slot32 = {}
+slot33 = {
+	field = "tgt"
+}
+slot32[1] = slot33
+slot33 = {
+	const = 0
+}
+slot32[2] = slot33
+slot33 = {
+	const = true
+}
+slot32[3] = slot33
+slot33 = {
+	const = 2
+}
+slot32[4] = slot33
+slot33 = {
+	const = true
+}
+slot32[5] = slot33
+slot33 = {}
+slot34 = "CastAbilitySourceType"
+slot34 = slot0[slot34]
+slot35 = "Normal"
+slot34 = slot34[slot35]
+slot33.const = slot34
+slot32[6] = slot33
+slot31.params = slot32
+slot30.Method = slot31
+slot29[1] = slot30
+slot30 = {
+	ResultOption = "BT_INVALID"
+}
+slot29[2] = slot30
+slot30 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot30 = {
+	precondition = true,
+	transition = false,
+	id = "356",
+	class = "Precondition",
+	effector = false
+}
+slot31 = {}
+slot32 = {
+	BinaryOperator = "And"
+}
+slot31[1] = slot32
+slot32 = {
+	Operator = "LessEqual"
+}
+slot31[2] = slot32
+slot32 = {}
+slot33 = {
+	field = "CurrentDistToTarget"
+}
+slot32.Opl = slot33
+slot31[3] = slot32
+slot32 = {}
+slot33 = {
+	field = "maxAttackDist"
+}
+slot32.Opr2 = slot33
+slot31[4] = slot32
+slot32 = {
+	Phase = "Update"
+}
+slot31[5] = slot32
+slot30.properties = slot31
+slot29[1] = slot30
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[3] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[2] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[2] = slot15
+slot13.children = slot14
+slot12.node = slot13
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	id = "80",
+	class = "Selector"
+}
+slot14 = {}
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot15 = {}
+slot16 = {
+	id = "87",
+	class = "Sequence"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "100",
+	class = "And"
+}
+slot20 = {}
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "101",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Less"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "getHpPercent"
+}
+slot26 = {}
+slot27 = {
+	const = 0
+}
+slot26[1] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = 0.5
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "102",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Equal"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	field = "tShow50PCBubble"
+}
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = false
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "93",
+	class = "Action"
+}
+slot20 = {}
+slot21 = {}
+slot22 = {
+	func = "showEmojiBubble"
+}
+slot23 = {}
+slot24 = {
+	const = "Cry"
+}
+slot23[1] = slot24
+slot24 = {
+	const = 3
+}
+slot23[2] = slot24
+slot24 = {
+	const = false
+}
+slot23[3] = slot24
+slot24 = {
+	const = false
+}
+slot23[4] = slot24
+slot22.params = slot23
+slot21.Method = slot22
+slot20[1] = slot21
+slot21 = {
+	ResultOption = "BT_INVALID"
+}
+slot20[2] = slot21
+slot21 = {
+	ResultResumeOption = "BT_None"
+}
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot18 = {}
+slot19 = {
+	id = "92",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "true"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tShow50PCBubble"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[3] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[1] = slot15
+slot15 = {}
+slot16 = {
+	id = "88",
+	class = "Sequence"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "94",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "GreaterEqual"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "getHpPercent"
+}
+slot23 = {}
+slot24 = {
+	const = 0
+}
+slot23[1] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0.5
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "95",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "true"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tShow50PCBubble"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = false
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[2] = slot15
+slot15 = {}
+slot16 = {
+	id = "89",
+	class = "Sequence"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "103",
+	class = "And"
+}
+slot20 = {}
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "104",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Less"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "getHpPercent"
+}
+slot26 = {}
+slot27 = {
+	const = 0
+}
+slot26[1] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = 0.2
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "105",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Equal"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	field = "tShow20PCBubble"
+}
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = false
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "96",
+	class = "Action"
+}
+slot20 = {}
+slot21 = {}
+slot22 = {
+	func = "showEmojiBubble"
+}
+slot23 = {}
+slot24 = {
+	const = "Cry"
+}
+slot23[1] = slot24
+slot24 = {
+	const = 3
+}
+slot23[2] = slot24
+slot24 = {
+	const = false
+}
+slot23[3] = slot24
+slot24 = {
+	const = false
+}
+slot23[4] = slot24
+slot22.params = slot23
+slot21.Method = slot22
+slot20[1] = slot21
+slot21 = {
+	ResultOption = "BT_INVALID"
+}
+slot20[2] = slot21
+slot21 = {
+	ResultResumeOption = "BT_None"
+}
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot18 = {}
+slot19 = {
+	id = "97",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "true"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tShow20PCBubble"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[3] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[3] = slot15
+slot15 = {}
+slot16 = {
+	id = "90",
+	class = "Sequence"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "98",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "GreaterEqual"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "getHpPercent"
+}
+slot23 = {}
+slot24 = {
+	const = 0
+}
+slot23[1] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0.2
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "99",
+	class = "Assignment"
+}
+slot20 = {}
+slot21 = {
+	CastRight = "true"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "tShow20PCBubble"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = false
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[4] = slot15
+slot15 = {}
+slot16 = {
+	id = "91",
+	class = "Noop"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot16.children = slot17
+slot15.node = slot16
+slot14[5] = slot15
+slot13.children = slot14
+slot12.node = slot13
+slot11[2] = slot12
+slot10.children = slot11
+slot9.node = slot10
+slot8[1] = slot9
+slot7.children = slot8
+slot6.node = slot7
+slot5[3] = slot6
+slot4.children = slot5
+slot3.node = slot4
+slot4 = "behavior"
+slot2[slot4] = slot3
+
+return slot2
+--- END OF BLOCK #0 ---
+
+
+

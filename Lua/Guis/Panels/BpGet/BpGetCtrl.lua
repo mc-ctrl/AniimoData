@@ -1,4 +1,4 @@
---- BLOCK #0 1-56, warpins: 1 ---
+--- BLOCK #0 1-79, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,19 +30,38 @@ slot8 = slot2.LightClass
 slot10 = "BpGetCtrl"
 slot11 = slot3
 slot8 = slot8(slot10, slot11)
-slot9 = {}
-slot8.messages = slot9
-slot9 = {}
-slot10 = slot6.BattlePassGear
-slot10 = slot10.Pay1
-slot11 = "BATTLEPASS_PURCHASE_UNLOCKED1"
-slot9[slot10] = slot11
-slot10 = slot6.BattlePassGear
-slot10 = slot10.Pay2
-slot11 = "BATTLEPASS_PURCHASE_UNLOCKED2"
-slot9[slot10] = slot11
+slot9 = 3
+slot10 = {}
+slot8.messages = slot10
+slot10 = {}
+slot11 = slot6.BattlePassGear
+slot11 = slot11.Pay1
+slot12 = "BATTLEPASS_PURCHASE_UNLOCKED1"
+slot10[slot11] = slot12
+slot11 = slot6.BattlePassGear
+slot11 = slot11.Pay2
+slot12 = "BATTLEPASS_PURCHASE_UNLOCKED2"
+slot10[slot11] = slot12
+slot11 = {}
+slot12 = slot6.BattlePassGear
+slot12 = slot12.Pay1
+slot13 = 3
+slot11[slot12] = slot13
+slot12 = slot6.BattlePassGear
+slot12 = slot12.Pay2
+slot13 = 4
+slot11[slot12] = slot13
+slot12 = {}
+slot13 = slot6.BattlePassGear
+slot13 = slot13.Pay1
+slot14 = 1
+slot12[slot13] = slot14
+slot13 = slot6.BattlePassGear
+slot13 = slot13.Pay2
+slot14 = 2
+slot12[slot13] = slot14
 
-slot10 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -58,10 +77,10 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.onCreate = slot10
+slot8.onCreate = slot13
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
 
@@ -81,6 +100,57 @@ slot10 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnNext
+
+	slot2 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.rootUComponent
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-16, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.rootUComponent
+		slot2 = slot0
+		slot0 = slot0.TryChangePage
+		slot3 = "Type"
+		slot4 = GEAR_TO_NEXT_TYPE
+		slot5 = self
+		slot5 = slot5._gear
+		slot4 = slot4[slot5]
+
+		slot0(slot2, slot3, slot4)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 17-21, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0._startDismissTimer
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -89,10 +159,96 @@ slot10 = function(slot0)
 
 end
 
-slot8.addListener = slot10
+slot8.addListener = slot13
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._dismissTimer
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0._dismissTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0._dismissTimer = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot8._stopDismissTimer = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._stopDismissTimer
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.startTimer
+
+	slot4 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0._dismissTimer = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.dismiss
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = AUTO_DISMISS_DELAY
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0._dismissTimer = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8._startDismissTimer = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._stopDismissTimer
+
+	slot1(slot3)
+
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -106,9 +262,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onDestroy = slot10
+slot8.onDestroy = slot13
 
-slot10 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -185,9 +341,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.onOpen = slot10
+slot8.onOpen = slot13
 
-slot10 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.view
 	slot2 = ActivityUtils
@@ -340,12 +496,14 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #15 46-51, warpins: 1 ---
+	--- BLOCK #15 46-53, warpins: 1 ---
 	slot5 = slot1.rootUComponent
 	slot7 = slot5
 	slot5 = slot5.TryChangePage
 	slot8 = "Type"
-	slot9 = slot0._gear
+	slot9 = GEAR_TO_DEFAULT_TYPE
+	slot10 = slot0._gear
+	slot9 = slot9[slot10]
 
 	slot5(slot7, slot8, slot9)
 
@@ -354,73 +512,98 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 52-54, warpins: 2 ---
-	slot5 = slot1.nameTxt
+	--- BLOCK #16 54-56, warpins: 2 ---
+	slot5 = slot1.btnNext
 	--- END OF BLOCK #16 ---
 
 	slot5 = if slot5 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 55-60, warpins: 1 ---
+	--- BLOCK #17 57-62, warpins: 1 ---
+	slot5 = slot1.btnNext
+	slot5 = slot5.gameObject
+	slot7 = slot5
+	slot5 = slot5.SetActiveEx
+	slot8 = true
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 63-65, warpins: 2 ---
+	slot5 = slot1.nameTxt
+	--- END OF BLOCK #18 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #19 66-71, warpins: 1 ---
 	slot5 = ClientTextUtils
 	slot5 = slot5.setText
 	slot7 = slot1.nameTxt
 	slot8 = slot0._name
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #19 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #18 61-66, warpins: 1 ---
+	--- BLOCK #20 72-77, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.getLocalizationText
 	slot10 = slot0._name
 	slot8 = slot8(slot10)
-	--- END OF BLOCK #18 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 67-67, warpins: 2 ---
-	slot8 = ""
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 68-68, warpins: 2 ---
-	slot5(slot7, slot8)
-
 	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 69-71, warpins: 2 ---
-	slot5 = slot1.InfoText
-	--- END OF BLOCK #21 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #22
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #22 72-81, warpins: 1 ---
+	--- BLOCK #21 78-78, warpins: 2 ---
+	slot8 = ""
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 79-79, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 80-82, warpins: 2 ---
+	slot5 = slot1.InfoText
+	--- END OF BLOCK #23 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #24 83-92, warpins: 1 ---
 	slot5 = ClientTextUtils
 	slot5 = slot5.setText
 	slot7 = slot1.InfoText
@@ -429,47 +612,47 @@ slot10 = function(slot0)
 	slot10 = GEAR_TO_INFO_TEXT
 	slot11 = slot0._gear
 	slot10 = slot10[slot11]
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #24 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #23 82-82, warpins: 1 ---
+	--- BLOCK #25 93-93, warpins: 1 ---
 	slot10 = "BATTLEPASS_PURCHASE_UNLOCKED1"
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #24 83-84, warpins: 2 ---
+	--- BLOCK #26 94-95, warpins: 2 ---
 	MULTRES = slot8(slot10)
 
 	slot5(slot7, MULTRES)
 
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #25 85-90, warpins: 2 ---
+	--- BLOCK #27 96-101, warpins: 2 ---
 	slot5 = slot0._gear
 	slot6 = ActivityConst
 	slot6 = slot6.BattlePassGear
 	slot6 = slot6.Pay2
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #27 ---
 
 	if slot5 == slot6 then
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #26 91-98, warpins: 1 ---
+	--- BLOCK #28 102-109, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.game
 	slot5 = slot5.audio
@@ -479,12 +662,12 @@ slot10 = function(slot0)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #28 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #27 99-105, warpins: 1 ---
+	--- BLOCK #29 110-116, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.game
 	slot5 = slot5.audio
@@ -494,22 +677,22 @@ slot10 = function(slot0)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #28
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #28 106-106, warpins: 2 ---
+	--- BLOCK #30 117-117, warpins: 2 ---
 	return
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #30 ---
 
 
 
 end
 
-slot8.onShow = slot10
+slot8.onShow = slot13
 
-slot10 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -518,7 +701,7 @@ slot10 = function(slot0)
 
 end
 
-slot8.onHide = slot10
+slot8.onHide = slot13
 
 return slot8
 --- END OF BLOCK #0 ---

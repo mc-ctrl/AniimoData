@@ -1,4 +1,4 @@
---- BLOCK #0 1-65, warpins: 1 ---
+--- BLOCK #0 1-72, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -27,25 +27,28 @@ slot7 = require
 slot9 = "Const.ClientConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Core.Framework.Class"
+slot10 = "Const.HotkeyConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Guis.UICtrl"
+slot11 = "Core.Framework.Class"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Utils.Utils"
+slot12 = "Guis.UICtrl"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Const.ActivityConst"
+slot13 = "Common.Utils.Utils"
 slot11 = slot11(slot13)
-slot12 = slot8.LightClass
-slot14 = "EventPhotoRecognizeCtrl"
-slot15 = slot9
-slot12 = slot12(slot14, slot15)
-slot13 = {}
-slot12.messages = slot13
+slot12 = require
+slot14 = "Common.Const.ActivityConst"
+slot12 = slot12(slot14)
+slot13 = slot9.LightClass
+slot15 = "EventPhotoRecognizeCtrl"
+slot16 = slot10
+slot13 = slot13(slot15, slot16)
+slot14 = {}
+slot13.messages = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -61,10 +64,22 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onCreate = slot13
+slot13.onCreate = slot14
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot14 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnClose
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
 
@@ -84,6 +99,12 @@ slot13 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-16, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.clueUList
 
@@ -108,6 +129,18 @@ slot13 = function(slot0)
 	slot1.luaRenderItem = slot2
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-28, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnCloseUButton
 
 	slot2 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -126,10 +159,29 @@ slot13 = function(slot0)
 
 	slot1.luaClick = slot2
 	slot1 = slot0.view
+	slot1 = slot1.btnCloseUButton
+	slot3 = slot1
+	slot1 = slot1.SetGamepadAction
+	slot4 = HotkeyConst
+	slot4 = slot4.INPUT_MAP_ACTION_KEY
+	slot4 = slot4.GamepadConfirm
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 29-34, warpins: 2 ---
+	slot1 = slot0.view
 	slot1 = slot1.clueUList
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-14, warpins: 1 ---
+		--- BLOCK #0 1-17, warpins: 1 ---
+		slot1 = self
+		slot2 = true
+		slot1.isRecognizeFinished = slot2
 		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.widget
@@ -153,7 +205,7 @@ slot13 = function(slot0)
 		end
 
 
-		--- BLOCK #1 15-21, warpins: 1 ---
+		--- BLOCK #1 18-24, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.startTimer
@@ -182,7 +234,7 @@ slot13 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 22-28, warpins: 1 ---
+		--- BLOCK #2 25-31, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.btnCloseUButton
@@ -197,7 +249,7 @@ slot13 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 29-29, warpins: 2 ---
+		--- BLOCK #3 32-32, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -208,15 +260,15 @@ slot13 = function(slot0)
 	slot1.luaFinishRender = slot2
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot12.addListener = slot13
+slot13.addListener = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -255,9 +307,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onOpen = slot13
+slot13.onOpen = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -266,9 +318,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onShow = slot13
+slot13.onShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -277,9 +329,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onHide = slot13
+slot13.onHide = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.reportPhotoData
@@ -306,9 +358,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot13.onDestroy = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.widget
@@ -483,7 +535,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 85-115, warpins: 2 ---
+	--- BLOCK #12 85-117, warpins: 2 ---
 	slot4 = ClientTextUtils
 	slot4 = slot4.setText
 	slot6 = slot0.view
@@ -510,6 +562,8 @@ slot13 = function(slot0)
 	slot8 = slot0.targetTemplateId
 	slot4 = slot4(slot6, slot7, slot8)
 	slot0.clueList = slot4
+	slot4 = false
+	slot0.isRecognizeFinished = slot4
 	slot4 = slot0.view
 	slot4 = slot4.clueUList
 	slot6 = slot4
@@ -525,10 +579,10 @@ slot13 = function(slot0)
 
 end
 
-slot12.initUI = slot13
+slot13.initUI = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot14 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-37, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -564,16 +618,149 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 	slot7(slot9, slot10)
 
-	return
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.input
+	slot9 = slot7
+	slot7 = slot7.isUsingGamepad
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #1 38-40, warpins: 1 ---
+	slot7 = slot3.state
+	--- END OF BLOCK #1 ---
+
+	if slot7 ~= 1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 41-43, warpins: 1 ---
+	slot7 = slot3.state
+	--- END OF BLOCK #2 ---
+
+	if slot7 ~= 2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 44-45, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 46-46, warpins: 2 ---
+	slot7 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 47-48, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 49-50, warpins: 1 ---
+	slot8 = "CommonHigh"
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 51-51, warpins: 1 ---
+	slot8 = "CommonLight"
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 52-61, warpins: 2 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.input
+	slot11 = slot9
+	slot9 = slot9.playRumbleByName
+	slot12 = ClientConst
+	slot12 = slot12.RumbleLayer
+	slot12 = slot12.DEFAULT
+	slot13 = slot8
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 62-62, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot12.renderClueItem = slot13
+slot13.renderClueItem = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.isRecognizeFinished
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.dismiss
+
+	slot1(slot3)
+
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot13.tryDismiss = slot14
+
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.photoTemplateId
 	--- END OF BLOCK #0 ---
@@ -768,9 +955,22 @@ slot13 = function(slot0)
 
 end
 
-slot12.reportPhotoData = slot13
+slot13.reportPhotoData = slot14
 
-return slot12
+slot14 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot13.checkUIShowVirtualMouseCursor = slot14
+
+return slot13
 --- END OF BLOCK #0 ---
 
 

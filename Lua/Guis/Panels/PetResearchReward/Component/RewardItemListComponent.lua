@@ -112,9 +112,9 @@ slot5 = function(slot0)
 		slot5 = UIConst
 		slot5 = slot5.UI_ID_COMMON_ITEM_TIP
 		slot6 = {
+			scale = 0.8,
 			enableBtn = 0,
-			autoVer = true,
-			scale = 0.8
+			autoVer = true
 		}
 		slot7 = slot1.itemId
 		slot6.id = slot7

@@ -1,4 +1,4 @@
---- BLOCK #0 1-45, warpins: 1 ---
+--- BLOCK #0 1-47, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
@@ -61,6 +61,44 @@ slot11 = function(slot0)
 end
 
 slot10.getFetilityCubeCfg = slot11
+
+slot11 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PetCubeItemData
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-8, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot10.isHatchCubeItem = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---

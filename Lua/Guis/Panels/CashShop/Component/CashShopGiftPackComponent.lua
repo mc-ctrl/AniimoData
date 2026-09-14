@@ -1,73 +1,268 @@
---- BLOCK #0 1-99, warpins: 1 ---
+--- BLOCK #0 1-120, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.Helper.UIComponent"
+slot3 = "Core.Common.Time"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Utils.ClientTextUtils"
+slot4 = "Guis.Helper.UIComponent"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.LuaUIUtils"
+slot5 = "Utils.ClientTextUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientUtils"
+slot6 = "Utils.LuaUIUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientCashShopUtils"
+slot7 = "Utils.ClientUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.ItemUtils"
+slot8 = "Utils.ClientCashShopUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.shopmall_tab_group_data"
+slot9 = "Common.Utils.ItemUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.shopmall_commodity_data"
+slot10 = "Data.shopmall_tab_group_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.shopmall_gift_data"
+slot11 = "Data.shopmall_commodity_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.item_data"
+slot12 = "Data.shopmall_gift_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Guis.Panels.CashShop.Component.CashShopContainerComponent"
+slot13 = "Data.item_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.CashShopConst"
+slot14 = "Guis.Panels.CashShop.Component.CashShopContainerComponent"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Utils.Utils"
+slot15 = "Const.CashShopConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.TimeUtils"
+slot16 = "Common.Utils.Utils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Const.UIConst"
+slot17 = "Common.Utils.TimeUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Const.RedDotConst"
+slot18 = "Const.UIConst"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Utils.CashShopRedDotUtils"
+slot19 = "Const.RedDotConst"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Const.ClientConst"
+slot20 = "Utils.CashShopRedDotUtils"
 slot18 = slot18(slot20)
 slot19 = require
 slot21 = "Const.MessageName"
 slot19 = slot19(slot21)
-slot20 = slot0.LightClass
-slot22 = "CashShopGiftPackComponent"
-slot23 = slot11
-slot20 = slot20(slot22, slot23)
-slot21 = 3
-slot22 = 2
-slot20.FIX_LIST_ROWS = slot22
+slot20 = require
+slot22 = "Const.HotkeyConst"
+slot20 = slot20(slot22)
+slot21 = slot0.LightClass
+slot23 = "CashShopGiftPackComponent"
+slot24 = slot12
+slot21 = slot21(slot23, slot24)
+slot22 = 3
+slot23 = 2
+slot21.FIX_LIST_ROWS = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot4 = CashShopContainerComponent
+	slot4 = slot4.ctor
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot6 = slot0
+	slot4 = slot0.scheduleGiftPackTimeRefresh
+
+	slot4(slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot21.ctor = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.giftPackTimeRefreshTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.giftPackTimeRefreshTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.giftPackTimeRefreshTimer = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-14, warpins: 2 ---
+	slot1 = CashShopRedDotUtils
+	slot1 = slot1.getNextGiftPackRefreshTime
+	slot1 = slot1()
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-15, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 16-30, warpins: 1 ---
+	slot2 = math
+	slot2 = slot2.max
+	slot4 = 1
+	slot5 = Time
+	slot5 = slot5.secondCache
+	slot5 = slot1 - slot5
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot0
+	slot3 = slot0.startTimer
+
+	slot6 = function()
+		--- BLOCK #0 1-14, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.giftPackTimeRefreshTimer
+		slot1 = self
+		slot2 = nil
+		slot1.giftPackTimeRefreshTimer = slot2
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.killTimer
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot1 = slot1.refUContainer
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 15-19, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.refUContainer
+		slot1 = slot1.gameObjectActive
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 20-25, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.checkContentLoaded
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 26-29, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshPage
+
+		slot1(slot3)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 30-43, warpins: 4 ---
+		slot1 = CashShopRedDotUtils
+		slot1 = slot1.refreshGiftPackTabRedDots
+
+		slot1()
+
+		slot1 = CashShopRedDotUtils
+		slot1 = slot1.refreshRedDot
+		slot3 = CashShopConst
+		slot3 = slot3.CategoryType
+		slot3 = slot3.GIFTPACK
+
+		slot1(slot3)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.scheduleGiftPackTimeRefresh
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot7 = slot2
+	slot3 = slot3(slot5, slot6, slot7)
+	slot0.giftPackTimeRefreshTimer = slot3
+
+	return
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 31-31, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot21.scheduleGiftPackTimeRefresh = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -90,7 +285,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-161, warpins: 2 ---
+	--- BLOCK #2 7-166, warpins: 2 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetChild
@@ -245,6 +440,11 @@ slot22 = function(slot0)
 	slot5 = "timeCustomizablePackUCountDown"
 	slot2 = slot2(slot4, slot5)
 	slot0.timeCustomizablePackUCountDown = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtCustomTipsUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtCustomTipsUSDFText = slot2
 
 	return
 	--- END OF BLOCK #2 ---
@@ -253,9 +453,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.findObjects = slot22
+slot21.findObjects = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -328,7 +528,12 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 28-40, warpins: 2 ---
+		--- BLOCK #2 28-43, warpins: 2 ---
+		slot9 = slot0
+		slot7 = slot0.ClearRedDot
+
+		slot7(slot9)
+
 		slot7 = string
 		slot7 = slot7.format
 		slot9 = RedDotConst
@@ -349,53 +554,87 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #3 41-53, warpins: 1 ---
+		--- BLOCK #3 44-54, warpins: 1 ---
+		slot8 = self
+		slot8.fixTabButton = slot0
 		slot8 = pg
 		slot8 = slot8.global
-		slot8 = slot8.setRedDot
+		slot8 = slot8.setPreViewRedDot
 		slot10 = slot7
 		slot11 = slot0
 		slot12 = CashShopRedDotUtils
-		slot12 = slot12.getCashShopGIFTPACK_DAILY_RedDotStyle
-		slot12 = slot12()
-		slot13 = RedDotConst
-		slot13 = slot13.RedDotStyle
-		slot13 = slot13.REWARD
+		slot12 = slot12.getCashShopGIFTPACK_FIX_RedDotStyle
 
-		slot8(slot10, slot11, slot12, slot13)
+		slot8(slot10, slot11, slot12)
 
 		--- END OF BLOCK #3 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #5
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-		--- BLOCK #4 54-68, warpins: 1 ---
-		slot8 = CashShopRedDotUtils
-		slot8 = slot8.getCashShopGIFTPACK_OPTIONAL_RedDotStyle
-		slot8 = slot8()
-		slot9 = pg
-		slot9 = slot9.global
-		slot9 = slot9.setRedDot
-		slot11 = slot7
-		slot12 = slot0
-		slot13 = slot8
-		slot14 = RedDotConst
-		slot14 = slot14.RedDotStyle
-		slot14 = slot14.REWARD
-
-		slot9(slot11, slot12, slot13, slot14)
-
-		slot9 = self
-		slot9.optionalTabButton = slot0
-
+		--- BLOCK #4 55-60, warpins: 1 ---
+		slot8 = slot2.id
+		slot9 = CashShopConst
+		slot9 = slot9.GiftPackTabType
+		slot9 = slot9.Optional
 		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #5
+		if slot8 == slot9 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-		--- BLOCK #5 69-69, warpins: 2 ---
-		return
+		--- BLOCK #5 61-69, warpins: 1 ---
+		slot8 = pg
+		slot8 = slot8.global
+		slot8 = slot8.setPreViewRedDot
+		slot10 = slot7
+		slot11 = slot0
+		slot12 = CashShopRedDotUtils
+		slot12 = slot12.getCashShopGIFTPACK_OPTIONAL_RedDotStyle
+
+		slot8(slot10, slot11, slot12)
+
 		--- END OF BLOCK #5 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #6 70-75, warpins: 1 ---
+		slot8 = slot2.id
+		slot9 = CashShopConst
+		slot9 = slot9.GiftPackTabType
+		slot9 = slot9.Weekly
+		--- END OF BLOCK #6 ---
+
+		if slot8 == slot9 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 76-83, warpins: 1 ---
+		slot8 = pg
+		slot8 = slot8.global
+		slot8 = slot8.setPreViewRedDot
+		slot10 = slot7
+		slot11 = slot0
+		slot12 = CashShopRedDotUtils
+		slot12 = slot12.getCashShopGIFTPACK_WEEKLY_RedDotStyle
+
+		slot8(slot10, slot11, slot12)
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 84-84, warpins: 4 ---
+		return
+		--- END OF BLOCK #8 ---
 
 
 
@@ -418,7 +657,7 @@ slot22 = function(slot0)
 		--- BLOCK #1 3-8, warpins: 1 ---
 		slot2 = self
 		slot4 = slot2
-		slot2 = slot2.refreshTabPage
+		slot2 = slot2.switchTabPage
 		slot5 = slot0.selectedItem
 		slot5 = slot5.id
 
@@ -481,7 +720,15 @@ slot22 = function(slot0)
 	slot1 = slot0.fixUList
 
 	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-15, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.markGiftPackCommodityRead
+		slot5 = slot0
+		slot6 = slot1.id
+
+		slot2(slot4, slot5, slot6)
+
 		slot2 = ShopMallCommodityData
 		slot3 = slot1.id
 		slot2 = slot2[slot3]
@@ -498,7 +745,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #1 10-18, warpins: 1 ---
+		--- BLOCK #1 16-24, warpins: 1 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4.requestBuyItem
@@ -517,7 +764,7 @@ slot22 = function(slot0)
 			end
 
 
-			--- BLOCK #1 3-26, warpins: 1 ---
+			--- BLOCK #1 3-20, warpins: 1 ---
 			slot1 = string
 			slot1 = slot1.format
 			slot3 = RedDotConst
@@ -538,20 +785,12 @@ slot22 = function(slot0)
 
 			slot2(slot4, slot5, slot6, slot7)
 
-			slot2 = facade
-			slot4 = slot2
-			slot2 = slot2.sendMsgToUI
-			slot5 = MessageName
-			slot5 = slot5.CASH_SHOP_REWARD_CHANGED
-
-			slot2(slot4, slot5)
-
 			--- END OF BLOCK #1 ---
 
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 27-27, warpins: 2 ---
+			--- BLOCK #2 21-21, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -566,7 +805,7 @@ slot22 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 19-32, warpins: 1 ---
+		--- BLOCK #2 25-38, warpins: 1 ---
 		slot4 = self
 		slot5 = slot1.id
 		slot4.lastBuyCommodityId = slot5
@@ -588,7 +827,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 33-34, warpins: 2 ---
+		--- BLOCK #3 39-40, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -642,7 +881,7 @@ slot22 = function(slot0)
 		slot4 = if slot4 then
 		JUMP TO BLOCK #2
 		else
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #10
 		end
 
 
@@ -657,7 +896,7 @@ slot22 = function(slot0)
 		slot4.luaClick = slot6
 		--- END OF BLOCK #2 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 		--- BLOCK #3 36-43, warpins: 1 ---
@@ -685,7 +924,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 45-53, warpins: 2 ---
+		--- BLOCK #5 45-56, warpins: 2 ---
 		slot6 = false
 
 		slot7 = function()
@@ -795,16 +1034,126 @@ slot22 = function(slot0)
 		end
 
 		slot0.luaBeginLongPress = slot7
+		slot7 = IsNil
+		slot9 = slot0
+		slot7 = slot7(slot9)
 		--- END OF BLOCK #5 ---
 
-		slot4 = if slot4 then
+		slot7 = if not slot7 then
 		JUMP TO BLOCK #6
 		else
 		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #6 54-59, warpins: 1 ---
+		--- BLOCK #6 57-74, warpins: 1 ---
+		slot9 = slot0
+		slot7 = slot0.SetGamepadLongPress
+		slot10 = HotkeyConst
+		slot10 = slot10.INPUT_MAP_ACTION_KEY
+		slot10 = slot10.GamepadButtonSouth
+		slot11 = nil
+		slot12 = 0
+
+		slot13 = function()
+			--- BLOCK #0 1-10, warpins: 1 ---
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.ui
+			slot2 = slot0
+			slot0 = slot0.checkUIShow
+			slot3 = UIConst
+			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
+			slot0 = slot0(slot2, slot3)
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 11-20, warpins: 1 ---
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.ui
+			slot2 = slot0
+			slot0 = slot0.close
+			slot3 = UIConst
+			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
+
+			slot0(slot2, slot3)
+
+			slot0 = false
+
+			return slot0
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 21-39, warpins: 2 ---
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.ui
+			slot2 = slot0
+			slot0 = slot0.open
+			slot3 = UIConst
+			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
+			slot4 = {}
+			slot5 = data
+			slot5 = slot5.id
+			slot4.id = slot5
+			slot5 = data
+			slot5 = slot5.num
+			slot4.num = slot5
+			slot5 = button
+			slot4.targetRect = slot5
+
+			slot0(slot2, slot3, slot4)
+
+			slot0 = false
+
+			return slot0
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		slot7(slot9, slot10, slot11, slot12, slot13)
+
+		slot9 = slot0
+		slot7 = slot0.SetHotkeyActiveOnlyInCurrentItem
+		slot10 = true
+
+		slot7(slot9, slot10)
+
+		slot9 = slot0
+		slot7 = slot0.SetHotkeyConsoleBar
+		slot10 = "GIFTPACK_TIPS"
+		slot11 = 0
+
+		slot7(slot9, slot10, slot11)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 75-76, warpins: 2 ---
+		--- END OF BLOCK #7 ---
+
+		slot4 = if slot4 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 77-82, warpins: 1 ---
 		slot9 = slot4
 		slot7 = slot4.SetActive
 		slot10 = true
@@ -829,20 +1178,20 @@ slot22 = function(slot0)
 
 		slot4.luaClick = slot7
 
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 60-60, warpins: 2 ---
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 61-62, warpins: 3 ---
-		return
 		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 83-83, warpins: 2 ---
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 84-85, warpins: 3 ---
+		return
+		--- END OF BLOCK #10 ---
 
 
 
@@ -1070,9 +1419,122 @@ slot22 = function(slot0)
 
 end
 
-slot20.addListener = slot22
+slot21.addListener = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = ShopMallCommodityData
+	slot3 = slot3[slot2]
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot4, slot5 = nil
+	slot6 = slot3.tabGroupId
+	slot7 = CashShopConst
+	slot7 = slot7.GiftPackTabType
+	slot7 = slot7.Weekly
+	--- END OF BLOCK #2 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-26, warpins: 1 ---
+	slot6 = CashShopRedDotUtils
+	slot6 = slot6.markWeeklyGiftPackRead
+	slot8 = slot2
+	slot6 = slot6(slot8)
+	slot4 = slot6
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = RedDotConst
+	slot8 = slot8.RedDotPath
+	slot8 = slot8.CASH_SHOP_GIFTPACK_WEEKLY_ITEM
+	slot9 = slot2
+	slot6 = slot6(slot8, slot9)
+	slot5 = slot6
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 27-39, warpins: 1 ---
+	slot6 = CashShopRedDotUtils
+	slot6 = slot6.markSeasonGiftPackRead
+	slot8 = slot2
+	slot6 = slot6(slot8)
+	slot4 = slot6
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = RedDotConst
+	slot8 = slot8.RedDotPath
+	slot8 = slot8.CASH_SHOP_GIFTPACK_SEASON_ITEM
+	slot9 = slot2
+	slot6 = slot6(slot8, slot9)
+	slot5 = slot6
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 40-41, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 42-51, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.setRedDot
+	slot8 = slot5
+	slot9 = slot1
+	slot10 = false
+	slot11 = RedDotConst
+	slot11 = slot11.RedDotStyle
+	slot11 = slot11.NEW
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 52-52, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot21.markGiftPackCommodityRead = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = CashShopContainerComponent
 	slot1 = slot1.onEnterPage
@@ -1087,105 +1549,265 @@ slot22 = function(slot0)
 
 end
 
-slot20.onEnterPage = slot22
+slot21.onEnterPage = slot23
 
-slot22 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = {}
-	slot0.selectItems = slot1
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getGiftPackTabData
-	slot1 = slot1(slot3)
-	slot2 = #slot1
-	slot3 = 1
+slot23 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.markCurrentTabRead
+
+	slot1(slot3)
+
+	slot1 = CashShopContainerComponent
+	slot1 = slot1.onBeforeExitPage
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
 	--- END OF BLOCK #0 ---
 
-	if slot2 <= slot3 then
-	JUMP TO BLOCK #1
+
+
+end
+
+slot21.onBeforeExitPage = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.markCurrentTabRead
+
+	slot1(slot3)
+
+	slot1 = CashShopContainerComponent
+	slot1 = slot1.onDestroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot21.onDestroy = slot23
+
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot8 = slot7.id
+
+	--- END OF BLOCK #1 ---
+
+	if slot8 == slot2 then
+	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 11-19, warpins: 1 ---
-	slot2 = slot0.listTabUList
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = false
-
-	slot2(slot4, slot5)
-
-	slot2 = slot1[1]
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 20-30, warpins: 1 ---
-	slot2 = slot0.listTabUList
-	slot4 = slot2
-	slot2 = slot2.SetList
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.refreshTabPage
-	slot5 = slot1[1]
-	slot5 = slot5.id
-
-	slot2(slot4, slot5)
+	--- BLOCK #2 8-8, warpins: 1 ---
+	return slot6
 
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 31-46, warpins: 1 ---
-	slot2 = slot0.listTabUList
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.listTabUList
-	slot4 = slot2
-	slot2 = slot2.SetList
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.listTabUList
-	slot4 = slot2
-	slot2 = slot2.SelectItem
-	slot5 = 0
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #3 9-10, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 47-47, warpins: 3 ---
-	return
+	--- BLOCK #4 11-12, warpins: 1 ---
+	slot3 = 1
+
+	return slot3
 	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot20.refreshPage = slot22
+slot21.getGiftPackTabIndex = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot1 = {}
+	slot0.selectItems = slot1
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getGiftPackTabData
+	slot1 = slot1(slot3)
+	slot4 = slot0
+	slot2 = slot0.getGiftPackTabIndex
+	slot5 = slot1
+	slot6 = slot0.curTabId
+	slot2 = slot2(slot4, slot5, slot6)
+	slot3 = slot1[slot2]
+	slot4 = slot0.listTabUList
+	slot4 = slot4.gameObject
+	slot6 = slot4
+	slot4 = slot4.SetActiveEx
+	slot7 = #slot1
+	slot8 = 1
+	--- END OF BLOCK #0 ---
+
+	if slot7 <= slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 21-22, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 23-23, warpins: 1 ---
+	slot7 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-31, warpins: 2 ---
+	slot4(slot6, slot7)
+
+	slot4 = slot0.listTabUList
+	slot6 = slot4
+	slot4 = slot4.SetList
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 32-32, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 33-43, warpins: 2 ---
+	slot4 = slot0.listTabUList
+	slot6 = slot4
+	slot4 = slot4.SelectItem
+	slot7 = slot2 - 1
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.switchTabPage
+	slot7 = slot3.id
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot21.refreshPage = slot23
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = CashShopRedDotUtils
+	slot1 = slot1.markGiftPackTabRead
+	slot3 = slot0.curTabId
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot21.markCurrentTabRead = slot23
+
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.curTabId
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot0.curTabId
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.markCurrentTabRead
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-14, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.refreshTabPage
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot21.switchTabPage = slot23
+
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -1205,13 +1827,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 12-62, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.refreshOptionalPage
-	slot6 = slot2
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #1 12-29, warpins: 1 ---
 	slot3 = slot0.uiRoot
 	slot5 = slot3
 	slot3 = slot3.TryChangePage
@@ -1220,78 +1836,27 @@ slot22 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	slot3 = slot0.btnBuyUButton
-	slot4 = false
-	slot3.interactable = slot4
-	slot3 = string
-	slot3 = slot3.format
-	slot5 = RedDotConst
-	slot5 = slot5.RedDotPath
-	slot5 = slot5.CASH_SHOP_GIFTPACK_TAB_LIST_ITEM
-	slot6 = slot1
-	slot3 = slot3(slot5, slot6)
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.setRedDot
-	slot6 = slot3
-	slot7 = slot0.optionalTabButton
-	slot8 = false
-	slot9 = RedDotConst
-	slot9 = slot9.RedDotStyle
-	slot9 = slot9.REWARD
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.prefsCacheUtils
-	slot6 = slot4
-	slot4 = slot4.setInt
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.uid
-	slot8 = ClientConst
-	slot8 = slot8.PrefKey
-	slot8 = slot8.CashShopGiftPackTab
-	slot7 = slot7 .. slot8
-	slot8 = 1
-
-	slot4(slot6, slot7, slot8)
-
-	slot4 = CashShopRedDotUtils
-	slot4 = slot4.refreshRedDot
-	slot6 = CashShopConst
-	slot6 = slot6.CategoryType
-	slot6 = slot6.GIFTPACK
-
-	slot4(slot6)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #2 63-67, warpins: 1 ---
-	slot3 = CashShopConst
-	slot3 = slot3.GiftPackTabType
-	slot3 = slot3.Fix
-	--- END OF BLOCK #2 ---
-
-	if slot1 == slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 68-78, warpins: 1 ---
-	slot3 = slot0.fixUList
-	slot5 = slot3
-	slot3 = slot3.SetList
+	slot5 = slot0
+	slot3 = slot0.refreshOptionalPage
 	slot6 = slot2
 
 	slot3(slot5, slot6)
 
+	slot3 = slot0.btnBuyUButton
+	slot4 = false
+	slot3.interactable = slot4
+	slot3 = CashShopRedDotUtils
+	slot3 = slot3.markGiftPackTabRead
+	slot5 = slot1
+
+	slot3(slot5)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 30-40, warpins: 1 ---
 	slot3 = slot0.uiRoot
 	slot5 = slot3
 	slot3 = slot3.TryChangePage
@@ -1300,22 +1865,29 @@ slot22 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #3 ---
+	slot3 = slot0.fixUList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = slot2
 
-	FLOW; TARGET BLOCK #4
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #4 79-79, warpins: 3 ---
+	--- BLOCK #3 41-41, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot20.refreshTabPage = slot22
+slot21.refreshTabPage = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = CashShopGiftPackComponent
@@ -1383,9 +1955,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.reorderFixListRowFirst = slot22
+slot21.reorderFixListRowFirst = slot23
 
-slot22 = function(slot0, slot1, slot2, slot3, slot4)
+slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0.lastBuyCommodityId = slot1
 	slot5 = ClientCashShopUtils
@@ -1404,9 +1976,9 @@ slot22 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot20.requestBuyItem = slot22
+slot21.requestBuyItem = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.success
 	--- END OF BLOCK #0 ---
@@ -1414,222 +1986,52 @@ slot22 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
+	--- BLOCK #1 4-12, warpins: 1 ---
 	slot2 = ShopMallCommodityData
 	slot3 = slot0.lastBuyCommodityId
 	slot2 = slot2[slot3]
 	slot3 = ShopmallGiftData
 	slot4 = slot2.itemId
 	slot3 = slot3[slot4]
-	slot4 = {}
-	slot5 = slot3.giftPackType
+	slot4 = slot3.giftPackType
 	--- END OF BLOCK #1 ---
 
-	if slot5 == 2 then
+	if slot4 ~= 2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 14-17, warpins: 1 ---
-	slot5 = ipairs
-	slot7 = slot3.FixItems
-	slot5, slot6, slot7 = slot5(slot7)
+	--- BLOCK #2 13-18, warpins: 1 ---
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.sendMsgToUI
+	slot7 = MessageName
+	slot7 = slot7.CASH_SHOP_REWARD_CHANGED
+
+	slot4(slot6, slot7)
+
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 18-26, warpins: 1 ---
-	slot10 = table
-	slot10 = slot10.insert
-	slot12 = slot4
-	slot13 = {}
-	slot14 = slot9[1]
-	slot13.itemId = slot14
-	slot14 = slot9[2]
-	slot13.itemCount = slot14
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 27-28, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 29-33, warpins: 1 ---
-	slot5 = 1
-	slot6 = ipairs
-	slot8 = slot3.selectItems
-	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #6 34-37, warpins: 1 ---
-	slot11 = ipairs
-	slot13 = slot10
-	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #7 38-43, warpins: 1 ---
-	slot16 = slot15[1]
-	slot17 = slot0.selectItems
-	slot17 = slot17[slot5]
-	slot17 = slot17.id
-	--- END OF BLOCK #7 ---
-
-	if slot16 == slot17 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 44-52, warpins: 1 ---
-	slot16 = table
-	slot16 = slot16.insert
-	slot18 = slot4
-	slot19 = {}
-	slot20 = slot15[1]
-	slot19.itemId = slot20
-	slot20 = slot15[2]
-	slot19.itemCount = slot20
-
-	slot16(slot18, slot19)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 53-54, warpins: 3 ---
-	--- END OF BLOCK #9 ---
-
-	for slot14, slot15 in slot11, slot12, slot13
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #10
-
-
-	--- BLOCK #10 55-55, warpins: 1 ---
-	slot5 = slot5 + 1
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 56-57, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #12
-
-
-	--- BLOCK #12 58-58, warpins: 1 ---
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #13 59-62, warpins: 1 ---
-	slot5 = ipairs
-	slot7 = slot3.FixItems
-	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #13 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #14 63-71, warpins: 1 ---
-	slot10 = table
-	slot10 = slot10.insert
-	slot12 = slot4
-	slot13 = {}
-	slot14 = slot9[1]
-	slot13.itemId = slot14
-	slot14 = slot9[2]
-	slot13.itemCount = slot14
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 72-73, warpins: 2 ---
-	--- END OF BLOCK #15 ---
-
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #16
-
-
-	--- BLOCK #16 74-85, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot5 = slot5.itemObtain
-	slot7 = slot5
-	slot5 = slot5.open
-	slot8 = {}
-	slot8.itemList = slot4
-
-	slot5(slot7, slot8)
-
-	slot5 = slot3.giftPackType
-	--- END OF BLOCK #16 ---
-
-	if slot5 ~= 2 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 86-91, warpins: 1 ---
-	slot5 = facade
-	slot7 = slot5
-	slot5 = slot5.sendMsgToUI
-	slot8 = MessageName
-	slot8 = slot8.CASH_SHOP_REWARD_CHANGED
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 92-92, warpins: 3 ---
+	--- BLOCK #3 19-19, warpins: 3 ---
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot20.onBuyItemResult = slot22
+slot21.onBuyItemResult = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.max
@@ -1660,9 +2062,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.getOptionalItemDisplayCount = slot22
+slot21.getOptionalItemDisplayCount = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1711,9 +2113,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.removeOptionalSelectedItem = slot22
+slot21.removeOptionalSelectedItem = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot2 = slot1[slot2]
@@ -2095,7 +2497,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 171-244, warpins: 2 ---
+	--- BLOCK #28 171-252, warpins: 2 ---
 	slot0.optionalCommodityCost = slot12
 	slot15 = slot0.btnBuyUButton
 	slot16 = false
@@ -2175,6 +2577,16 @@ slot22 = function(slot0, slot1)
 
 	slot15(slot17, MULTRES)
 
+	slot15 = ClientTextUtils
+	slot15 = slot15.setText
+	slot17 = slot0.txtCustomTipsUSDFText
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "GIFTPACK_TIPS"
+	MULTRES = slot18(slot20)
+
+	slot15(slot17, MULTRES)
+
 	slot15 = slot0.rightDownUComponent
 	slot17 = slot15
 	slot15 = slot15.TryChangePage
@@ -2193,7 +2605,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #29 245-248, warpins: 1 ---
+	--- BLOCK #29 253-256, warpins: 1 ---
 	slot15 = slot7.limitNum
 	slot16 = 0
 	--- END OF BLOCK #29 ---
@@ -2205,7 +2617,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #30 249-268, warpins: 1 ---
+	--- BLOCK #30 257-276, warpins: 1 ---
 	slot15 = ClientCashShopUtils
 	slot15 = slot15.getCommodityLeftLimit
 	slot17 = slot0.optionalCommodityId
@@ -2235,7 +2647,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #31 269-282, warpins: 1 ---
+	--- BLOCK #31 277-290, warpins: 1 ---
 	slot16 = ClientTextUtils
 	slot16 = slot16.setText
 	slot18 = slot0.soldOutUBaseText
@@ -2259,7 +2671,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 283-286, warpins: 4 ---
+	--- BLOCK #32 291-294, warpins: 4 ---
 	slot17 = slot0
 	slot15 = slot0._syncOptionalSelectionUI
 
@@ -2272,9 +2684,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.refreshOptionalPage = slot22
+slot21.refreshOptionalPage = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = 1
@@ -2481,9 +2893,9 @@ slot22 = function(slot0)
 
 end
 
-slot20._syncOptionalSelectionUI = slot22
+slot21._syncOptionalSelectionUI = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2531,9 +2943,95 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20._onOptionalSelectionChanged = slot22
+slot21._onOptionalSelectionChanged = slot23
 
-slot22 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.checkUIShow
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_COMMON_ITEM_TIP
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-19, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.close
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_COMMON_ITEM_TIP
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 20-22, warpins: 2 ---
+	slot3 = slot2.extraFunc
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-25, warpins: 1 ---
+	slot3 = slot2.extraFunc
+
+	slot3()
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 26-40, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.open
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_COMMON_ITEM_TIP
+	slot7 = {}
+	slot8 = slot2.id
+	slot7.id = slot8
+	slot8 = slot2.num
+	slot7.num = slot8
+	slot7.targetRect = slot1
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot21._toggleOptionalItemTip = slot23
+
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -2841,105 +3339,93 @@ slot22 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 44-51, warpins: 2 ---
+		--- BLOCK #10 44-54, warpins: 2 ---
 		slot5 = nil
 		slot0.luaClick = slot5
 		slot5 = true
 		slot0.enabledLongPress = slot5
 
 		slot5 = function()
-			--- BLOCK #0 1-10, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.global
-			slot0 = slot0.ui
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot0 = self
 			slot2 = slot0
-			slot0 = slot0.checkUIShow
-			slot3 = UIConst
-			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-			slot0 = slot0(slot2, slot3)
-			--- END OF BLOCK #0 ---
-
-			slot0 = if slot0 then
-			JUMP TO BLOCK #1
-			else
-			JUMP TO BLOCK #2
-			end
-
-
-			--- BLOCK #1 11-19, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.global
-			slot0 = slot0.ui
-			slot2 = slot0
-			slot0 = slot0.close
-			slot3 = UIConst
-			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-
-			slot0(slot2, slot3)
-
-			return
-
-			--- END OF BLOCK #1 ---
-
-			FLOW; TARGET BLOCK #2
-
-
-			--- BLOCK #2 20-23, warpins: 2 ---
-			slot0 = itemData
-			slot0 = slot0.extraFunc
-			--- END OF BLOCK #2 ---
-
-			if slot0 ~= nil then
-			JUMP TO BLOCK #3
-			else
-			JUMP TO BLOCK #4
-			end
-
-
-			--- BLOCK #3 24-27, warpins: 1 ---
-			slot0 = itemData
-			slot0 = slot0.extraFunc
-
-			slot0()
-
-			return
-
-			--- END OF BLOCK #3 ---
-
-			FLOW; TARGET BLOCK #4
-
-
-			--- BLOCK #4 28-45, warpins: 2 ---
-			slot0 = pg
-			slot0 = slot0.global
-			slot0 = slot0.ui
-			slot2 = slot0
-			slot0 = slot0.open
-			slot3 = UIConst
-			slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-			slot4 = {}
-			slot5 = itemData
-			slot5 = slot5.id
-			slot4.id = slot5
-			slot5 = itemData
-			slot5 = slot5.num
-			slot4.num = slot5
-			slot5 = itemButton
-			slot4.targetRect = slot5
+			slot0 = slot0._toggleOptionalItemTip
+			slot3 = itemButton
+			slot4 = itemData
 
 			slot0(slot2, slot3, slot4)
 
 			return
-			--- END OF BLOCK #4 ---
+			--- END OF BLOCK #0 ---
 
 
 
 		end
 
 		slot0.luaBeginLongPress = slot5
-
-		return
+		slot5 = IsNil
+		slot7 = slot0
+		slot5 = slot5(slot7)
 		--- END OF BLOCK #10 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 55-72, warpins: 1 ---
+		slot7 = slot0
+		slot5 = slot0.SetGamepadLongPress
+		slot8 = HotkeyConst
+		slot8 = slot8.INPUT_MAP_ACTION_KEY
+		slot8 = slot8.GamepadButtonSouth
+		slot9 = nil
+		slot10 = 0
+
+		slot11 = function()
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0._toggleOptionalItemTip
+			slot3 = itemButton
+			slot4 = itemData
+
+			slot0(slot2, slot3, slot4)
+
+			slot0 = false
+
+			return slot0
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot5(slot7, slot8, slot9, slot10, slot11)
+
+		slot7 = slot0
+		slot5 = slot0.SetHotkeyActiveOnlyInCurrentItem
+		slot8 = true
+
+		slot5(slot7, slot8)
+
+		slot7 = slot0
+		slot5 = slot0.SetHotkeyConsoleBar
+		slot8 = "GIFTPACK_TIPS"
+		slot9 = 0
+
+		slot5(slot7, slot8, slot9)
+
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 73-74, warpins: 2 ---
+		return
+		--- END OF BLOCK #12 ---
 
 
 
@@ -3354,10 +3840,10 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot20.renderOptionalTabItem = slot22
+slot21.renderOptionalTabItem = slot23
 
-slot22 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-84, warpins: 1 ---
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-81, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
@@ -3422,580 +3908,798 @@ slot22 = function(slot0, slot1, slot2)
 	slot18 = slot3.GetRefValue
 	slot21 = "gift1UImage"
 	slot18 = slot18(slot20, slot21)
-	slot19 = ShopMallCommodityData
-	slot20 = slot2.id
-	slot19 = slot19[slot20]
-	slot20 = ShopmallGiftData
-	slot21 = slot19.itemId
-	slot20 = slot20[slot21]
-	slot21 = ClientTextUtils
-	slot21 = slot21.setText
-	slot23 = slot6
-	slot24 = pg
-	slot24 = slot24.getLocalizationText
-	slot26 = slot20.giftPackName
-	MULTRES = slot24(slot26)
-
-	slot21(slot23, MULTRES)
-
-	slot23 = slot4
-	slot21 = slot4.TryChangePage
-	slot24 = "Type"
-	slot25 = slot20.giftPackType
+	slot21 = slot3
+	slot19 = slot3.GetRefValue
+	slot22 = "definitiveUWidget"
+	slot19 = slot19(slot21, slot22)
+	slot22 = slot3
+	slot20 = slot3.GetRefValue
+	slot23 = "getTxt"
+	slot20 = slot20(slot22, slot23)
+	slot21 = ShopMallCommodityData
+	slot22 = slot2.id
+	slot21 = slot21[slot22]
+	slot22 = ShopmallGiftData
+	slot23 = slot21.itemId
+	slot22 = slot22[slot23]
+	slot23 = slot22.limitType
 	--- END OF BLOCK #0 ---
 
-	if slot25 == 1 then
+	slot23 = if slot23 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 85-86, warpins: 1 ---
-	slot25 = 0
+	--- BLOCK #1 82-84, warpins: 1 ---
+	slot23 = slot22.limitType
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 87-87, warpins: 1 ---
-	slot25 = 1
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 88-115, warpins: 2 ---
-	slot21(slot23, slot24, slot25)
-
-	slot21 = slot20.giftPackIcon
-	slot5.url = slot21
-	slot21 = slot20.giftPackIcon
-	slot18.url = slot21
-	slot23 = slot4
-	slot21 = slot4.TryChangePage
-	slot24 = "Quality"
-	slot25 = slot20.giftQuality
-	slot25 = slot25 - 1
-
-	slot21(slot23, slot24, slot25)
-
-	slot21 = Utils
-	slot21 = slot21.getConfigTimeOfArea
-	slot23 = slot19
-	slot24 = "specialStartTime"
-	slot21 = slot21(slot23, slot24)
-	slot22 = Utils
-	slot22 = slot22.getConfigTimeOfArea
-	slot24 = slot19
-	slot25 = "specialEndTime"
-	slot22 = slot22(slot24, slot25)
-	slot23 = Utils
-	slot23 = slot23.getConfigTimeOfArea
-	slot25 = slot19
-	slot26 = "endTime"
-	slot23 = slot23(slot25, slot26)
-	--- END OF BLOCK #3 ---
-
-	slot24 = if slot21 then
-	JUMP TO BLOCK #4
+	if slot23 ~= 1 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #4 116-117, warpins: 1 ---
+	--- BLOCK #2 85-86, warpins: 1 ---
+	slot23 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 87-87, warpins: 1 ---
+	slot23 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 88-104, warpins: 3 ---
+	slot26 = slot1
+	slot24 = slot1.ClearRedDot
+
+	slot24(slot26)
+
+	slot24 = ClientTextUtils
+	slot24 = slot24.setText
+	slot26 = slot6
+	slot27 = pg
+	slot27 = slot27.getLocalizationText
+	slot29 = slot22.giftPackName
+	MULTRES = slot27(slot29)
+
+	slot24(slot26, MULTRES)
+
+	slot26 = slot4
+	slot24 = slot4.TryChangePage
+	slot27 = "Type"
+	slot28 = slot22.giftPackType
 	--- END OF BLOCK #4 ---
 
-	slot24 = if slot22 then
+	if slot28 == 1 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 118-122, warpins: 1 ---
-	slot24 = TimeUtils
-	slot24 = slot24.isInRangeTimestamp
-	slot26 = slot21
-	slot27 = slot22
-	slot24 = slot24(slot26, slot27)
+	--- BLOCK #5 105-106, warpins: 1 ---
+	slot28 = 0
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 123-139, warpins: 3 ---
-	slot25 = LuaUIUtils
-	slot25 = slot25.setCountDownTime
-	slot27 = slot7
-	slot28 = slot23
-	slot29 = UIConst
-	slot29 = slot29.TimeType
-	slot29 = slot29.Short
-
-	slot25(slot27, slot28, slot29)
-
-	slot25 = ClientCashShopUtils
-	slot25 = slot25.getCommodityPrimaryCost
-	slot27 = slot2.id
+	--- BLOCK #6 107-107, warpins: 1 ---
 	slot28 = 1
-	slot29 = {}
-	slot29.isInDiscount = slot24
-	slot25 = slot25(slot27, slot28, slot29)
+
 	--- END OF BLOCK #6 ---
 
-	slot25 = if slot25 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 140-142, warpins: 1 ---
-	slot26 = slot25[1]
+	--- BLOCK #7 108-124, warpins: 2 ---
+	slot24(slot26, slot27, slot28)
+
+	slot24 = slot22.giftPackIcon
+	slot5.url = slot24
+	slot24 = slot22.giftPackIcon
+	slot18.url = slot24
+	slot26 = slot4
+	slot24 = slot4.TryChangePage
+	slot27 = "Quality"
+	slot28 = slot22.giftQuality
+	slot28 = slot28 - 1
+
+	slot24(slot26, slot27, slot28)
+
+	slot24 = slot21.tabGroupId
+	slot25 = CashShopConst
+	slot25 = slot25.GiftPackTabType
+	slot25 = slot25.Weekly
 	--- END OF BLOCK #7 ---
 
-	slot26 = if not slot26 then
+	if slot24 == slot25 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 143-145, warpins: 2 ---
-	slot26 = slot19.cost
-	slot26 = slot26[1]
-	slot26 = slot26[1]
+	--- BLOCK #8 125-145, warpins: 1 ---
+	slot24 = string
+	slot24 = slot24.format
+	slot26 = RedDotConst
+	slot26 = slot26.RedDotPath
+	slot26 = slot26.CASH_SHOP_GIFTPACK_WEEKLY_ITEM
+	slot27 = slot2.id
+	slot24 = slot24(slot26, slot27)
+	slot25 = pg
+	slot25 = slot25.global
+	slot25 = slot25.setRedDot
+	slot27 = slot24
+	slot28 = slot1
+	slot29 = CashShopRedDotUtils
+	slot29 = slot29.isWeeklyGiftPackNew
+	slot31 = slot2.id
+	slot29 = slot29(slot31)
+	slot30 = RedDotConst
+	slot30 = slot30.RedDotStyle
+	slot30 = slot30.NEW
+
+	slot25(slot27, slot28, slot29, slot30)
+
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #9 146-147, warpins: 2 ---
+	--- BLOCK #9 146-147, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	slot25 = if slot25 then
+	slot23 = if slot23 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 148-150, warpins: 1 ---
-	slot27 = slot25[2]
+	--- BLOCK #10 148-167, warpins: 1 ---
+	slot24 = string
+	slot24 = slot24.format
+	slot26 = RedDotConst
+	slot26 = slot26.RedDotPath
+	slot26 = slot26.CASH_SHOP_GIFTPACK_SEASON_ITEM
+	slot27 = slot2.id
+	slot24 = slot24(slot26, slot27)
+	slot25 = pg
+	slot25 = slot25.global
+	slot25 = slot25.setRedDot
+	slot27 = slot24
+	slot28 = slot1
+	slot29 = CashShopRedDotUtils
+	slot29 = slot29.isSeasonGiftPackNew
+	slot31 = slot2.id
+	slot29 = slot29(slot31)
+	slot30 = RedDotConst
+	slot30 = slot30.RedDotStyle
+	slot30 = slot30.NEW
+
+	slot25(slot27, slot28, slot29, slot30)
+
 	--- END OF BLOCK #10 ---
 
-	slot27 = if not slot27 then
-	JUMP TO BLOCK #11
-	else
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 168-184, warpins: 3 ---
+	slot24 = Utils
+	slot24 = slot24.getConfigTimeOfArea
+	slot26 = slot21
+	slot27 = "specialStartTime"
+	slot24 = slot24(slot26, slot27)
+	slot25 = Utils
+	slot25 = slot25.getConfigTimeOfArea
+	slot27 = slot21
+	slot28 = "specialEndTime"
+	slot25 = slot25(slot27, slot28)
+	slot26 = Utils
+	slot26 = slot26.getConfigTimeOfArea
+	slot28 = slot21
+	slot29 = "endTime"
+	slot26 = slot26(slot28, slot29)
+	--- END OF BLOCK #11 ---
+
+	slot27 = if slot24 then
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 151-153, warpins: 2 ---
-	slot27 = slot19.cost
-	slot27 = slot27[1]
-	slot27 = slot27[2]
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 154-156, warpins: 2 ---
-	slot28 = slot19.specialCostText
+	--- BLOCK #12 185-186, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	slot28 = if slot28 then
+	slot27 = if slot25 then
 	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 187-191, warpins: 1 ---
+	slot27 = TimeUtils
+	slot27 = slot27.isInRangeTimestamp
+	slot29 = slot24
+	slot30 = slot25
+	slot27 = slot27(slot29, slot30)
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 192-208, warpins: 3 ---
+	slot28 = LuaUIUtils
+	slot28 = slot28.setCountDownTime
+	slot30 = slot7
+	slot31 = slot26
+	slot32 = UIConst
+	slot32 = slot32.TimeType
+	slot32 = slot32.Short
+
+	slot28(slot30, slot31, slot32)
+
+	slot28 = ClientCashShopUtils
+	slot28 = slot28.getCommodityPrimaryCost
+	slot30 = slot2.id
+	slot31 = 1
+	slot32 = {}
+	slot32.isInDiscount = slot27
+	slot28 = slot28(slot30, slot31, slot32)
+	--- END OF BLOCK #14 ---
+
+	slot28 = if slot28 then
+	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #13 157-159, warpins: 1 ---
-	slot28 = slot19.specialCostText
-	--- END OF BLOCK #13 ---
-
-	if slot28 == "" then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 160-161, warpins: 1 ---
-	slot28 = false
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #15 162-162, warpins: 1 ---
-	slot28 = true
+	--- BLOCK #15 209-211, warpins: 1 ---
+	slot29 = slot28[1]
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	slot29 = if not slot29 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 163-164, warpins: 3 ---
+	--- BLOCK #16 212-214, warpins: 2 ---
+	slot29 = slot21.cost
+	slot29 = slot29[1]
+	slot29 = slot29[1]
 	--- END OF BLOCK #16 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 165-169, warpins: 1 ---
-	slot29 = slot9.gameObject
-	slot31 = slot29
-	slot29 = slot29.SetActiveEx
-	slot32 = slot28
-
-	slot29(slot31, slot32)
-
+	--- BLOCK #17 215-216, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	slot28 = if slot28 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #18 170-171, warpins: 2 ---
+	--- BLOCK #18 217-219, warpins: 1 ---
+	slot30 = slot28[2]
 	--- END OF BLOCK #18 ---
 
-	slot28 = if slot28 then
+	slot30 = if not slot30 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 172-173, warpins: 1 ---
+	--- BLOCK #19 220-222, warpins: 2 ---
+	slot30 = slot21.cost
+	slot30 = slot30[1]
+	slot30 = slot30[2]
 	--- END OF BLOCK #19 ---
 
-	slot13 = if slot13 then
-	JUMP TO BLOCK #20
-	else
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 223-225, warpins: 2 ---
+	slot31 = slot21.specialCostText
+	--- END OF BLOCK #20 ---
+
+	slot31 = if slot31 then
 	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #20 174-181, warpins: 1 ---
-	slot29 = ClientTextUtils
-	slot29 = slot29.setText
-	slot31 = slot13
-	slot32 = pg
-	slot32 = slot32.getLocalizationText
-	slot34 = slot19.specialCostText
-	MULTRES = slot32(slot34)
-
-	slot29(slot31, MULTRES)
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 182-196, warpins: 3 ---
-	slot29 = ItemData
-	slot29 = slot29[slot26]
-	slot29 = slot29.icon
-	slot11.url = slot29
-	slot29 = ClientTextUtils
-	slot29 = slot29.setText
-	slot31 = slot12
-	slot32 = slot27
-
-	slot29(slot31, slot32)
-
-	slot29 = slot8.gameObject
-	slot31 = slot29
-	slot29 = slot29.SetActiveEx
-	slot32 = slot20.giftPackType
+	--- BLOCK #21 226-228, warpins: 1 ---
+	slot31 = slot21.specialCostText
 	--- END OF BLOCK #21 ---
 
-	if slot32 ~= 3 then
+	if slot31 == "" then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 197-198, warpins: 1 ---
-	slot32 = false
+	--- BLOCK #22 229-230, warpins: 1 ---
+	slot31 = false
 	--- END OF BLOCK #22 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #23 199-199, warpins: 1 ---
-	slot32 = true
-
+	--- BLOCK #23 231-231, warpins: 1 ---
+	slot31 = true
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 200-203, warpins: 2 ---
-	slot29(slot31, slot32)
-
-	slot29 = slot20.giftPackType
+	--- BLOCK #24 232-233, warpins: 3 ---
 	--- END OF BLOCK #24 ---
 
-	if slot29 == 3 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #25
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 204-219, warpins: 1 ---
-	slot29 = ClientTextUtils
-	slot29 = slot29.setText
-	slot31 = slot14
-	slot32 = pg
-	slot32 = slot32.getGameString
-	slot34 = "SHOPMALL_FREE_TEXT"
-	MULTRES = slot32(slot34)
+	--- BLOCK #25 234-238, warpins: 1 ---
+	slot32 = slot9.gameObject
+	slot34 = slot32
+	slot32 = slot32.SetActiveEx
+	slot35 = slot31
 
-	slot29(slot31, MULTRES)
-
-	slot29 = ClientTextUtils
-	slot29 = slot29.setText
-	slot31 = slot15
-	slot32 = pg
-	slot32 = slot32.getGameString
-	slot34 = "SHOPMALL_FREECLAIM_TEXT"
-	MULTRES = slot32(slot34)
-
-	slot29(slot31, MULTRES)
+	slot32(slot34, slot35)
 
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 220-222, warpins: 2 ---
-	slot29 = slot19.limitNum
+	--- BLOCK #26 239-240, warpins: 2 ---
 	--- END OF BLOCK #26 ---
 
-	slot29 = if slot29 then
+	slot31 = if slot31 then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #27 223-226, warpins: 1 ---
-	slot29 = slot19.limitNum
-	slot30 = 0
+	--- BLOCK #27 241-242, warpins: 1 ---
 	--- END OF BLOCK #27 ---
 
-	if slot29 > slot30 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #28 227-255, warpins: 1 ---
-	slot29 = ClientCashShopUtils
-	slot29 = slot29.getCommodityLeftLimit
-	slot31 = slot2.id
-	slot29 = slot29(slot31)
-	slot30 = string
-	slot30 = slot30.format
-	slot32 = "：%d/%d"
-	slot33 = slot29
-	slot34 = slot19.limitNum
-	slot30 = slot30(slot32, slot33, slot34)
-	slot31 = LuaUIUtils
-	slot31 = slot31.getLimitTitleString
-	slot33 = slot19.limitType
-	slot31 = slot31(slot33)
-	slot32 = ClientTextUtils
-	slot32 = slot32.setText
-	slot34 = slot10
-	slot35 = slot31
-	slot36 = slot30
-	slot35 = slot35 .. slot36
-
-	slot32(slot34, slot35)
-
-	slot32 = slot10.gameObject
-	slot34 = slot32
-	slot32 = slot32.SetActiveEx
-	slot35 = true
-
-	slot32(slot34, slot35)
-
-	slot32 = 0
-	--- END OF BLOCK #28 ---
-
-	if slot29 <= slot32 then
 	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #29 256-268, warpins: 1 ---
-	slot34 = slot4
-	slot32 = slot4.TryChangePage
-	slot35 = "Status"
-	slot36 = 2
-
-	slot32(slot34, slot35, slot36)
-
+	--- BLOCK #28 243-250, warpins: 1 ---
 	slot32 = ClientTextUtils
 	slot32 = slot32.setText
-	slot34 = slot17
+	slot34 = slot13
 	slot35 = pg
-	slot35 = slot35.getGameString
-	slot37 = "CASH_SHOP_SOLD_OUT"
+	slot35 = slot35.getLocalizationText
+	slot37 = slot21.specialCostText
 	MULTRES = slot35(slot37)
 
 	slot32(slot34, MULTRES)
 
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 251-265, warpins: 3 ---
+	slot32 = ItemData
+	slot32 = slot32[slot29]
+	slot32 = slot32.icon
+	slot11.url = slot32
+	slot32 = ClientTextUtils
+	slot32 = slot32.setText
+	slot34 = slot12
+	slot35 = slot30
+
+	slot32(slot34, slot35)
+
+	slot32 = slot8.gameObject
+	slot34 = slot32
+	slot32 = slot32.SetActiveEx
+	slot35 = slot22.giftPackType
 	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #30
+	if slot35 ~= 3 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
 
 
-	--- BLOCK #30 269-271, warpins: 2 ---
-	slot32 = slot20.giftPackType
+	--- BLOCK #30 266-267, warpins: 1 ---
+	slot35 = false
 	--- END OF BLOCK #30 ---
 
-	if slot32 == 3 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #36
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 272-286, warpins: 1 ---
-	slot32 = string
-	slot32 = slot32.format
-	slot34 = RedDotConst
-	slot34 = slot34.RedDotPath
-	slot34 = slot34.CASH_SHOP_GIFTPACK_DAILY_REWARD_ITEM
-	slot35 = slot2.id
-	slot32 = slot32(slot34, slot35)
-	slot33 = pg
-	slot33 = slot33.global
-	slot33 = slot33.setRedDot
-	slot35 = slot32
-	slot36 = slot1
-	slot37 = 0
+	--- BLOCK #31 268-268, warpins: 1 ---
+	slot35 = true
+
 	--- END OF BLOCK #31 ---
 
-	if slot29 <= slot37 then
-	JUMP TO BLOCK #32
-	else
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 269-272, warpins: 2 ---
+	slot32(slot34, slot35)
+
+	slot32 = slot22.giftPackType
+	--- END OF BLOCK #32 ---
+
+	if slot32 == 3 then
 	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #32 287-288, warpins: 1 ---
-	slot37 = false
-	--- END OF BLOCK #32 ---
+	--- BLOCK #33 273-288, warpins: 1 ---
+	slot32 = ClientTextUtils
+	slot32 = slot32.setText
+	slot34 = slot14
+	slot35 = pg
+	slot35 = slot35.getGameString
+	slot37 = "SHOPMALL_FREE_TEXT"
+	MULTRES = slot35(slot37)
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
+	slot32(slot34, MULTRES)
 
+	slot32 = ClientTextUtils
+	slot32 = slot32.setText
+	slot34 = slot15
+	slot35 = pg
+	slot35 = slot35.getGameString
+	slot37 = "SHOPMALL_FREECLAIM_TEXT"
+	MULTRES = slot35(slot37)
 
-	--- BLOCK #33 289-289, warpins: 1 ---
-	slot37 = true
+	slot32(slot34, MULTRES)
+
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 290-294, warpins: 2 ---
-	slot38 = RedDotConst
-	slot38 = slot38.RedDotStyle
-	slot38 = slot38.REWARD
-
-	slot33(slot35, slot36, slot37, slot38)
-
+	--- BLOCK #34 289-291, warpins: 2 ---
+	slot32 = slot21.limitNum
 	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	slot32 = if slot32 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #44
+	end
 
 
-	--- BLOCK #35 295-299, warpins: 2 ---
-	slot29 = slot10.gameObject
-	slot31 = slot29
-	slot29 = slot29.SetActiveEx
-	slot32 = false
-
-	slot29(slot31, slot32)
-
+	--- BLOCK #35 292-295, warpins: 1 ---
+	slot32 = slot21.limitNum
+	slot33 = 0
 	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #36
+	if slot32 > slot33 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #44
+	end
 
 
-	--- BLOCK #36 300-302, warpins: 3 ---
-	slot29 = slot19.condition
+	--- BLOCK #36 296-324, warpins: 1 ---
+	slot32 = ClientCashShopUtils
+	slot32 = slot32.getCommodityLeftLimit
+	slot34 = slot2.id
+	slot32 = slot32(slot34)
+	slot33 = string
+	slot33 = slot33.format
+	slot35 = "：%d/%d"
+	slot36 = slot32
+	slot37 = slot21.limitNum
+	slot33 = slot33(slot35, slot36, slot37)
+	slot34 = LuaUIUtils
+	slot34 = slot34.getLimitTitleString
+	slot36 = slot21.limitType
+	slot34 = slot34(slot36)
+	slot35 = ClientTextUtils
+	slot35 = slot35.setText
+	slot37 = slot10
+	slot38 = slot34
+	slot39 = slot33
+	slot38 = slot38 .. slot39
+
+	slot35(slot37, slot38)
+
+	slot35 = slot10.gameObject
+	slot37 = slot35
+	slot35 = slot35.SetActiveEx
+	slot38 = true
+
+	slot35(slot37, slot38)
+
+	slot35 = 0
 	--- END OF BLOCK #36 ---
 
-	slot29 = if slot29 then
+	if slot32 <= slot35 then
 	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #38
 	end
 
 
-	--- BLOCK #37 303-308, warpins: 1 ---
-	slot29 = ClientCashShopUtils
-	slot29 = slot29.checkConditions
-	slot31 = slot19.condition
-	slot29 = slot29(slot31)
+	--- BLOCK #37 325-338, warpins: 1 ---
+	slot37 = slot4
+	slot35 = slot4.TryChangePage
+	slot38 = "Status"
+	slot39 = 2
+
+	slot35(slot37, slot38, slot39)
+
+	slot35 = ClientTextUtils
+	slot35 = slot35.setText
+	slot37 = slot17
+	slot38 = pg
+	slot38 = slot38.getGameString
+	slot40 = "CASH_SHOP_SOLD_OUT"
+	MULTRES = slot38(slot40)
+
+	slot35(slot37, MULTRES)
+
 	--- END OF BLOCK #37 ---
 
-	slot29 = if not slot29 then
-	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #39
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #38 309-321, warpins: 1 ---
-	slot31 = slot4
-	slot29 = slot4.TryChangePage
-	slot32 = "Status"
-	slot33 = 1
+	--- BLOCK #38 339-343, warpins: 1 ---
+	slot37 = slot4
+	slot35 = slot4.TryChangePage
+	slot38 = "Status"
+	slot39 = 0
 
-	slot29(slot31, slot32, slot33)
-
-	slot29 = ClientTextUtils
-	slot29 = slot29.setText
-	slot31 = slot16
-	slot32 = LuaUIUtils
-	slot32 = slot32.getConditionUnlockDesc
-	slot34 = slot19.condition
-	MULTRES = slot32(slot34)
-
-	slot29(slot31, MULTRES)
+	slot35(slot37, slot38, slot39)
 
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 322-322, warpins: 3 ---
-	return
+	--- BLOCK #39 344-346, warpins: 2 ---
+	slot35 = slot22.giftPackType
 	--- END OF BLOCK #39 ---
+
+	if slot35 == 3 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #45
+	end
+
+
+	--- BLOCK #40 347-361, warpins: 1 ---
+	slot35 = string
+	slot35 = slot35.format
+	slot37 = RedDotConst
+	slot37 = slot37.RedDotPath
+	slot37 = slot37.CASH_SHOP_GIFTPACK_DAILY_REWARD_ITEM
+	slot38 = slot2.id
+	slot35 = slot35(slot37, slot38)
+	slot36 = pg
+	slot36 = slot36.global
+	slot36 = slot36.setRedDot
+	slot38 = slot35
+	slot39 = slot1
+	slot40 = 0
+	--- END OF BLOCK #40 ---
+
+	if slot32 <= slot40 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 362-363, warpins: 1 ---
+	slot40 = false
+	--- END OF BLOCK #41 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
+
+
+	--- BLOCK #42 364-364, warpins: 1 ---
+	slot40 = true
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 365-369, warpins: 2 ---
+	slot41 = RedDotConst
+	slot41 = slot41.RedDotStyle
+	slot41 = slot41.REWARD
+
+	slot36(slot38, slot39, slot40, slot41)
+
+	--- END OF BLOCK #43 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
+
+
+	--- BLOCK #44 370-374, warpins: 2 ---
+	slot32 = slot10.gameObject
+	slot34 = slot32
+	slot32 = slot32.SetActiveEx
+	slot35 = false
+
+	slot32(slot34, slot35)
+
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 375-377, warpins: 3 ---
+	slot32 = slot21.condition
+	--- END OF BLOCK #45 ---
+
+	slot32 = if slot32 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #48
+	end
+
+
+	--- BLOCK #46 378-383, warpins: 1 ---
+	slot32 = ClientCashShopUtils
+	slot32 = slot32.checkConditions
+	slot34 = slot21.condition
+	slot32 = slot32(slot34)
+	--- END OF BLOCK #46 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #47
+	else
+	JUMP TO BLOCK #48
+	end
+
+
+	--- BLOCK #47 384-396, warpins: 1 ---
+	slot34 = slot4
+	slot32 = slot4.TryChangePage
+	slot35 = "Status"
+	slot36 = 1
+
+	slot32(slot34, slot35, slot36)
+
+	slot32 = ClientTextUtils
+	slot32 = slot32.setText
+	slot34 = slot16
+	slot35 = LuaUIUtils
+	slot35 = slot35.getConditionUnlockDesc
+	slot37 = slot21.condition
+	MULTRES = slot35(slot37)
+
+	slot32(slot34, MULTRES)
+
+	--- END OF BLOCK #47 ---
+
+	FLOW; TARGET BLOCK #48
+
+
+	--- BLOCK #48 397-398, warpins: 3 ---
+	--- END OF BLOCK #48 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #50
+	end
+
+
+	--- BLOCK #49 399-403, warpins: 1 ---
+	slot32 = slot19.gameObject
+	slot34 = slot32
+	slot32 = slot32.SetActiveEx
+	slot35 = slot23
+
+	slot32(slot34, slot35)
+
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 404-405, warpins: 2 ---
+	--- END OF BLOCK #50 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #55
+	end
+
+
+	--- BLOCK #51 406-410, warpins: 1 ---
+	slot32 = ClientTextUtils
+	slot32 = slot32.setText
+	slot34 = slot20
+	--- END OF BLOCK #51 ---
+
+	slot23 = if slot23 then
+	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #52 411-416, warpins: 1 ---
+	slot35 = pg
+	slot35 = slot35.getGameString
+	slot37 = "CASH_LIMIT_TITLE"
+	slot35 = slot35(slot37)
+	--- END OF BLOCK #52 ---
+
+	slot35 = if not slot35 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #54
+	end
+
+
+	--- BLOCK #53 417-417, warpins: 2 ---
+	slot35 = ""
+
+	--- END OF BLOCK #53 ---
+
+	FLOW; TARGET BLOCK #54
+
+
+	--- BLOCK #54 418-418, warpins: 2 ---
+	slot32(slot34, slot35)
+
+	--- END OF BLOCK #54 ---
+
+	FLOW; TARGET BLOCK #55
+
+
+	--- BLOCK #55 419-419, warpins: 2 ---
+	return
+	--- END OF BLOCK #55 ---
 
 
 
 end
 
-slot20.renderFixTabItem = slot22
+slot21.renderFixTabItem = slot23
 
-return slot20
+return slot21
 --- END OF BLOCK #0 ---
 
 

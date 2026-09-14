@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-73, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -41,20 +41,26 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Utils.ClientTextUtils"
 slot12 = slot12(slot14)
-slot13 = slot1.LightClass
-slot15 = "MobileExploreUIComponent"
-slot16 = slot10
-slot13 = slot13(slot15, slot16)
-slot14 = {}
-slot15 = slot2.PLAYER_COMBAT_STATUS_UPDATE
-slot16 = {
+slot13 = require
+slot15 = "Common.Const.Const"
+slot13 = slot13(slot15)
+slot14 = require
+slot16 = "Data.scene_data"
+slot14 = slot14(slot16)
+slot15 = slot1.LightClass
+slot17 = "MobileExploreUIComponent"
+slot18 = slot10
+slot15 = slot15(slot17, slot18)
+slot16 = {}
+slot17 = slot2.PLAYER_COMBAT_STATUS_UPDATE
+slot18 = {
 	"onCombatStatusChange",
 	true
 }
-slot14[slot15] = slot16
-slot13.messages = slot14
+slot16[slot17] = slot18
+slot15.messages = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -84,9 +90,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.findObjects = slot14
+slot15.findObjects = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshSkillList
@@ -100,9 +106,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.initView = slot14
+slot15.initView = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot2 = CharacterStateConst
@@ -118,37 +124,89 @@ slot14 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #1 12-18, warpins: 1 ---
+	--- BLOCK #1 12-15, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.isInCombat
-	slot2 = slot2(slot4)
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 19-56, warpins: 1 ---
-	slot3 = {}
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "HUD_FLOAT_BUTTON_DOWN"
-	slot4 = slot4(slot6)
-	slot3.btnText = slot4
-	slot4 = AddressDataConst
-	slot4 = slot4.EXPORE_SKILL_FLY_DROP
-	slot3.btnIcon = slot4
+	--- BLOCK #2 16-18, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.space
+	--- END OF BLOCK #2 ---
 
-	slot4 = function()
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-20, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-25, warpins: 1 ---
+	slot3 = SceneData
+	slot4 = slot2.sceneId
+	slot3 = slot3[slot4]
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-27, warpins: 2 ---
+	slot3 = Const
+	slot3 = slot3.CACHED_EMPTY_TABLE
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-34, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.isInCombat
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #7 35-49, warpins: 1 ---
+	slot5 = {}
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "HUD_FLOAT_BUTTON_DOWN"
+	slot6 = slot6(slot8)
+	slot5.btnText = slot6
+	slot6 = AddressDataConst
+	slot6 = slot6.EXPORE_SKILL_FLY_DROP
+	slot5.btnIcon = slot6
+
+	slot6 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
@@ -164,9 +222,9 @@ slot14 = function(slot0)
 
 	end
 
-	slot3.luaPress = slot4
+	slot5.luaPress = slot6
 
-	slot4 = function()
+	slot6 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
@@ -182,26 +240,61 @@ slot14 = function(slot0)
 
 	end
 
-	slot3.luaRelease = slot4
-	slot3.isDisabled = slot2
-	slot4 = table
-	slot4 = slot4.insert
-	slot6 = slot1
-	slot7 = slot3
+	slot5.luaRelease = slot6
+	--- END OF BLOCK #7 ---
 
-	slot4(slot6, slot7)
+	slot6 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
 
-	slot4 = {}
-	slot5 = pg
-	slot5 = slot5.getGameString
-	slot7 = "HUD_FLOAT_BUTTON_UP"
-	slot5 = slot5(slot7)
-	slot4.btnText = slot5
-	slot5 = AddressDataConst
-	slot5 = slot5.EXPORE_SKILL_FLY_RISE
-	slot4.btnIcon = slot5
 
-	slot5 = function()
+	--- BLOCK #8 50-52, warpins: 1 ---
+	slot6 = slot3.canFlyVerticalAndSprint
+	--- END OF BLOCK #8 ---
+
+	if slot6 == 1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 53-54, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 55-55, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 56-76, warpins: 3 ---
+	slot5.isDisabled = slot6
+	slot6 = table
+	slot6 = slot6.insert
+	slot8 = slot1
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	slot6 = {}
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "HUD_FLOAT_BUTTON_UP"
+	slot7 = slot7(slot9)
+	slot6.btnText = slot7
+	slot7 = AddressDataConst
+	slot7 = slot7.EXPORE_SKILL_FLY_RISE
+	slot6.btnIcon = slot7
+
+	slot7 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
@@ -217,9 +310,9 @@ slot14 = function(slot0)
 
 	end
 
-	slot4.luaPress = slot5
+	slot6.luaPress = slot7
 
-	slot5 = function()
+	slot7 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
@@ -235,21 +328,56 @@ slot14 = function(slot0)
 
 	end
 
-	slot4.luaRelease = slot5
-	slot4.isDisabled = slot2
-	slot5 = table
-	slot5 = slot5.insert
-	slot7 = slot1
-	slot8 = slot4
+	slot6.luaRelease = slot7
+	--- END OF BLOCK #11 ---
 
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
+	slot7 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #3 57-67, warpins: 3 ---
+	--- BLOCK #12 77-79, warpins: 1 ---
+	slot7 = slot3.canFlyVerticalAndSprint
+	--- END OF BLOCK #12 ---
+
+	if slot7 == 1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 80-81, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 82-82, warpins: 1 ---
+	slot7 = true
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 83-88, warpins: 3 ---
+	slot6.isDisabled = slot7
+	slot7 = table
+	slot7 = slot7.insert
+	slot9 = slot1
+	slot10 = slot6
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 89-99, warpins: 3 ---
 	slot2 = {}
 	slot3 = slot0.btn1UButton
 	slot2[1] = slot3
@@ -260,53 +388,24 @@ slot14 = function(slot0)
 	slot3 = 1
 	slot4 = 3
 	slot5 = 1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #4 68-73, warpins: 2 ---
+	--- BLOCK #17 100-103, warpins: 2 ---
 	slot7 = slot2[slot6]
 	slot8 = slot1[slot6]
-	slot11 = slot7
-	slot9 = slot7.SetActive
-	--- END OF BLOCK #4 ---
-
-	if slot8 == nil then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 74-75, warpins: 1 ---
-	slot12 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 76-76, warpins: 1 ---
-	slot12 = true
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 77-79, warpins: 2 ---
-	slot9(slot11, slot12)
-
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #17 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #8 80-99, warpins: 1 ---
+	--- BLOCK #18 104-123, warpins: 1 ---
 	slot11 = slot7
 	slot9 = slot7.GetComponent
 	slot12 = "ObjectReference"
@@ -327,82 +426,110 @@ slot14 = function(slot0)
 	slot12(slot14, slot15)
 
 	slot12 = slot8.btnIcon
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #18 ---
 
 	slot12 = if not slot12 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #9 100-100, warpins: 1 ---
+	--- BLOCK #19 124-124, warpins: 1 ---
 	slot12 = ""
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #10 101-111, warpins: 2 ---
+	--- BLOCK #20 125-139, warpins: 2 ---
 	slot11.url = slot12
 	slot12 = slot8.luaPress
 	slot7.luaPress = slot12
 	slot12 = slot8.luaRelease
 	slot7.luaRelease = slot12
 	slot14 = slot7
+	slot12 = slot7.SetActive
+	slot15 = true
+
+	slot12(slot14, slot15)
+
+	slot14 = slot7
 	slot12 = slot7.TryChangePage
 	slot15 = "button"
 	slot16 = slot8.isDisabled
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #20 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #11 112-113, warpins: 1 ---
+	--- BLOCK #21 140-141, warpins: 1 ---
 	slot16 = 4
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #12 114-114, warpins: 1 ---
+	--- BLOCK #22 142-142, warpins: 1 ---
 	slot16 = 0
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #13 115-115, warpins: 2 ---
+	--- BLOCK #23 143-147, warpins: 2 ---
 	slot12(slot14, slot15, slot16)
 
-	--- END OF BLOCK #13 ---
+	slot12 = slot8.isDisabled
+	slot12 = not slot12
+	slot7.interactable = slot12
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #14 116-116, warpins: 2 ---
-	--- END OF BLOCK #14 ---
+	--- BLOCK #24 148-156, warpins: 1 ---
+	slot11 = slot7
+	slot9 = slot7.TryChangePage
+	slot12 = "button"
+	slot13 = 0
+
+	slot9(slot11, slot12, slot13)
+
+	slot11 = slot7
+	slot9 = slot7.SetActive
+	slot12 = false
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 157-157, warpins: 2 ---
+	--- END OF BLOCK #25 ---
 
 	for slot6=slot3, slot4, slot5
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #15
+	LOOP BLOCK #17
+	GO OUT TO BLOCK #26
 
-	--- BLOCK #15 117-117, warpins: 1 ---
+	--- BLOCK #26 158-158, warpins: 1 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #26 ---
 
 
 
 end
 
-slot13.refreshSkillList = slot14
+slot15.refreshSkillList = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshSkillList
@@ -416,9 +543,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onCombatStatusChange = slot14
+slot15.onCombatStatusChange = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HudBaseComponent
 	slot1 = slot1.onDestroy
@@ -433,9 +560,85 @@ slot14 = function(slot0)
 
 end
 
-slot13.onDestroy = slot14
+slot15.onDestroy = slot16
 
-return slot13
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.uWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Show
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15.playShowAnim = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.uWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Hide
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15.playHideAnim = slot16
+
+return slot15
 --- END OF BLOCK #0 ---
 
 

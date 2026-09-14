@@ -103,20 +103,28 @@ slot4 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 46-50, warpins: 1 ---
-	slot6 = slot5.sceneId
-	slot7 = slot0.ctrl
-	slot7 = slot7.sceneId
+	--- BLOCK #6 46-58, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.map
+	slot8 = slot6
+	slot6 = slot6.convertSceneId
+	slot9 = pg
+	slot9 = slot9.me
+	slot9 = slot9.space
+	slot9 = slot9.sceneId
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot5.sceneId
 	--- END OF BLOCK #6 ---
 
-	if slot6 == slot7 then
+	if slot6 ~= slot7 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 51-55, warpins: 1 ---
+	--- BLOCK #7 59-63, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.differentSceneTrack
 	slot9 = slot4
@@ -128,7 +136,7 @@ slot4 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 56-57, warpins: 2 ---
+	--- BLOCK #8 64-65, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -136,7 +144,7 @@ slot4 = function(slot0)
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 58-58, warpins: 3 ---
+	--- BLOCK #9 66-66, warpins: 3 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -203,7 +211,7 @@ slot4 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #2 9-9, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #3 10-15, warpins: 1 ---
@@ -314,11 +322,11 @@ slot4 = function(slot0, slot1, slot2, slot3)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 51-53, warpins: 1 ---
+	--- BLOCK #7 51-54, warpins: 1 ---
 	slot8 = slot2
 	slot6 = slot2.OnClickSimulate
 
@@ -326,19 +334,34 @@ slot4 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 54-55, warpins: 3 ---
-	return
+	--- BLOCK #8 55-61, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.map
+	slot8 = slot6
+	slot6 = slot6.canCelScrollDisabled
+
+	slot6(slot8)
+
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 56-56, warpins: 2 ---
+	--- BLOCK #9 62-63, warpins: 3 ---
 	return
 	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 64-64, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 
@@ -1073,7 +1096,15 @@ slot4 = function(slot0, slot1)
 			FLOW; TARGET BLOCK #8
 
 
-			--- BLOCK #8 76-82, warpins: 2 ---
+			--- BLOCK #8 76-88, warpins: 2 ---
+			slot2 = self
+			slot2 = slot2.ctrl
+			slot4 = slot2
+			slot2 = slot2.ensureStartMarkLoaded
+			slot5 = slot0.startSpawnerId
+
+			slot2(slot4, slot5)
+
 			slot2 = self
 			slot2 = slot2.ctrl
 			slot2 = slot2.markCaches
@@ -1088,7 +1119,7 @@ slot4 = function(slot0, slot1)
 			end
 
 
-			--- BLOCK #9 83-96, warpins: 1 ---
+			--- BLOCK #9 89-102, warpins: 1 ---
 			slot2 = self
 			slot2 = slot2.ctrl
 			slot3 = slot0.startSpawnerId
@@ -1109,7 +1140,7 @@ slot4 = function(slot0, slot1)
 			UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-			--- BLOCK #10 97-112, warpins: 1 ---
+			--- BLOCK #10 103-118, warpins: 1 ---
 			slot2 = self
 			slot4 = slot2
 			slot2 = slot2.drawNavEffLine
@@ -1133,7 +1164,7 @@ slot4 = function(slot0, slot1)
 			FLOW; TARGET BLOCK #11
 
 
-			--- BLOCK #11 113-113, warpins: 3 ---
+			--- BLOCK #11 119-119, warpins: 3 ---
 			return
 			--- END OF BLOCK #11 ---
 

@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 10,
 	name = "ParmonBehaviorTree/SubTree/PBT_FlyToTarget",
+	version = 10,
 	useForRoute = true,
 	agenttype = "CombatAgent"
 }
@@ -16,66 +16,66 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
-	const = 0,
 	name = "tActorId",
-	value = "0"
+	const = 0,
+	value = "0",
+	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	name = "tStopDist",
-	value = "0"
+	const = 0,
+	value = "0",
+	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	name = "tHeight",
-	value = "0"
+	const = 0,
+	value = "0",
+	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	name = "tTimeout",
-	value = "0"
+	const = 0,
+	value = "0",
+	type = "float"
 }
 slot4[4] = slot5
 slot5 = {
-	type = "bool",
-	const = false,
 	name = "tNotFaceToPos",
-	value = "false"
+	const = false,
+	value = "false",
+	type = "bool"
 }
 slot4[5] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	name = "tMinHoldTime",
-	value = "0"
+	const = 0,
+	value = "0",
+	type = "float"
 }
 slot4[6] = slot5
 slot5 = {
-	type = "bool",
-	const = false,
 	name = "tIgnoreVertical",
-	value = "false"
+	const = false,
+	value = "false",
+	type = "bool"
 }
 slot4[7] = slot5
 slot5 = {
-	type = "bool",
-	const = false,
 	name = "tIgnoreHorizontal",
-	value = "false"
+	const = false,
+	value = "false",
+	type = "bool"
 }
 slot4[8] = slot5
 slot5 = {
-	type = "float",
-	const = 0,
 	name = "tSpeed",
-	value = "0"
+	const = 0,
+	value = "0",
+	type = "float"
 }
 slot4[9] = slot5
 slot3.pars = slot4

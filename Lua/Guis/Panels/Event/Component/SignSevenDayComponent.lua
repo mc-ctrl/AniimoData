@@ -283,7 +283,7 @@ end
 slot5.refreshPage = slot6
 
 slot6 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-60, warpins: 1 ---
+	--- BLOCK #0 1-49, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -337,6 +337,16 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 	slot12(slot14, slot15)
 
+	--- END OF BLOCK #0 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 50-54, warpins: 1 ---
 	slot12 = ClientTextUtils
 	slot12 = slot12.setText
 	slot14 = slot8
@@ -344,63 +354,69 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 	slot12(slot14, slot15)
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 55-62, warpins: 2 ---
 	slot12 = LuaUIUtils
 	slot12 = slot12.getRewardItemByDropId
 	slot14 = slot3.taskAward
 	slot15 = ActivityConst
 	slot15 = slot15.TaskState
 	slot15 = slot15.Received
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	if slot9 ~= slot15 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 61-62, warpins: 1 ---
+	--- BLOCK #3 63-64, warpins: 1 ---
 	slot15 = false
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 63-63, warpins: 1 ---
+	--- BLOCK #4 65-65, warpins: 1 ---
 	slot15 = true
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 64-68, warpins: 2 ---
+	--- BLOCK #5 66-70, warpins: 2 ---
 	slot16 = ActivityConst
 	slot16 = slot16.TaskState
 	slot16 = slot16.Finihed_CanRecv
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	if slot9 ~= slot16 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 69-70, warpins: 1 ---
+	--- BLOCK #6 71-72, warpins: 1 ---
 	slot16 = false
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 71-71, warpins: 1 ---
+	--- BLOCK #7 73-73, warpins: 1 ---
 	slot16 = true
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 72-85, warpins: 2 ---
+	--- BLOCK #8 74-87, warpins: 2 ---
 	slot12 = slot12(slot14, slot15, slot16)
 	slot13 = ClientTextUtils
 	slot13 = slot13.setText
@@ -415,56 +431,56 @@ slot6 = function(slot0, slot1, slot2, slot3)
 	slot13(slot15, MULTRES)
 
 	slot13 = slot3.eventIcon
-	--- END OF BLOCK #6 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 86-90, warpins: 1 ---
-	slot13 = LuaUIUtils
-	slot13 = slot13.getIconByItemId
-	slot15 = slot12[1]
-	slot15 = slot15.id
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 91-96, warpins: 2 ---
-	slot5.url = slot13
-	slot13 = ActivityConst
-	slot13 = slot13.TaskState
-	slot13 = slot13.Finihed_CanRecv
 	--- END OF BLOCK #8 ---
 
-	if slot9 ~= slot13 then
+	slot13 = if not slot13 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 97-98, warpins: 1 ---
-	slot13 = false
+	--- BLOCK #9 88-92, warpins: 1 ---
+	slot13 = LuaUIUtils
+	slot13 = slot13.getIconByItemId
+	slot15 = slot12[1]
+	slot15 = slot15.id
+	slot13 = slot13(slot15)
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 99-99, warpins: 1 ---
-	slot13 = true
-
+	--- BLOCK #10 93-98, warpins: 2 ---
+	slot5.url = slot13
+	slot13 = ActivityConst
+	slot13 = slot13.TaskState
+	slot13 = slot13.Finihed_CanRecv
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	if slot9 ~= slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 100-110, warpins: 2 ---
+	--- BLOCK #11 99-100, warpins: 1 ---
+	slot13 = false
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 101-101, warpins: 1 ---
+	slot13 = true
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 102-112, warpins: 2 ---
 	slot14 = function()
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot0 = canGet
@@ -529,7 +545,7 @@ slot6 = function(slot0, slot1, slot2, slot3)
 	slot14(slot16, slot17, slot18, slot19)
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
 
 

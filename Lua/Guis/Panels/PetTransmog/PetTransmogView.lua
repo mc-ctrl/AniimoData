@@ -284,7 +284,7 @@ slot4 = function(slot0)
 	slot3 = slot0.txtbtnComfirmPlanMain
 	slot4 = pg
 	slot4 = slot4.getGameString
-	slot6 = "PETTRANSMOGRIFY_APPLY"
+	slot6 = "PETTRANSMOGRIFY_SAVE_CUSTOM"
 	MULTRES = slot4(slot6)
 
 	slot1(slot3, MULTRES)

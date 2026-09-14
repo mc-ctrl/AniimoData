@@ -948,10 +948,24 @@ slot11 = function(slot0)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 7-14, warpins: 1 ---
+	--- BLOCK #1 7-12, warpins: 1 ---
+	slot7 = slot6.status
+	slot8 = Const
+	slot8 = slot8.PET_BALL
+	slot8 = slot8.HATCH_STATUS_START
+	--- END OF BLOCK #1 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-20, warpins: 1 ---
 	slot7 = math
 	slot7 = slot7.min
 	slot9 = slot1
@@ -961,22 +975,22 @@ slot11 = function(slot0)
 	slot7 = slot7(slot9, MULTRES)
 	slot1 = slot7
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 15-16, warpins: 2 ---
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 21-22, warpins: 3 ---
+	--- END OF BLOCK #3 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
+	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #3 17-17, warpins: 1 ---
+	--- BLOCK #4 23-23, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 
 

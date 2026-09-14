@@ -9,79 +9,79 @@ slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/PBT_CustomLoopAnimation",
 	version = 9,
-	agenttype = "CombatAgent",
-	useForRoute = true
+	useForRoute = true,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	name = "tWaitTime",
 	type = "float",
+	const = 0,
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	const = "",
 	name = "tEmojiBubbleKey",
 	type = "string",
+	const = "",
 	value = ""
 }
 slot4[2] = slot5
 slot5 = {
-	const = 5,
 	name = "tEmojiBubbleTimeout",
 	type = "float",
+	const = 5,
 	value = "5"
 }
 slot4[3] = slot5
 slot5 = {
-	const = "",
 	name = "tAnimationStartKey",
 	type = "string",
+	const = "",
 	value = ""
 }
 slot4[4] = slot5
 slot5 = {
-	const = "",
 	name = "tAnimationLoopKey",
 	type = "string",
+	const = "",
 	value = ""
 }
 slot4[5] = slot5
 slot5 = {
-	const = "",
 	name = "tAnimationEndKey",
 	type = "string",
+	const = "",
 	value = ""
 }
 slot4[6] = slot5
 slot5 = {
-	const = 5,
 	name = "tAnimationTimeout",
 	type = "float",
+	const = 5,
 	value = "5"
 }
 slot4[7] = slot5
 slot5 = {
-	const = "",
 	name = "tTimelineTag",
 	type = "string",
+	const = "",
 	value = ""
 }
 slot4[8] = slot5
 slot5 = {
-	const = false,
 	name = "tNeedLoop",
 	type = "bool",
+	const = false,
 	value = "false"
 }
 slot4[9] = slot5
 slot5 = {
-	const = false,
 	name = "tAnimationPlayOnce",
 	type = "bool",
+	const = false,
 	value = "false"
 }
 slot4[10] = slot5
@@ -89,8 +89,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -99,8 +99,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}
@@ -132,8 +132,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "Action"
+	class = "Action",
+	id = "3"
 }
 slot8 = {}
 slot9 = {}
@@ -177,8 +177,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "4",
-	class = "Action"
+	class = "Action",
+	id = "4"
 }
 slot8 = {}
 slot9 = {}

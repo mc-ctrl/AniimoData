@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UICtrl"
 slot0 = slot0(slot2)
@@ -39,8 +39,14 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Utils.PetManagementUtils"
 slot12 = slot12(slot14)
+slot13 = require
+slot15 = "Common.Utils.PetAttributeCalcUtils"
+slot13 = slot13(slot15)
+slot14 = require
+slot16 = "Common.Utils.Utils"
+slot14 = slot14(slot16)
 
-slot13 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -66,9 +72,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot13
+slot4.onCreate = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
@@ -97,9 +103,9 @@ slot13 = function(slot0)
 
 end
 
-slot4.addListener = slot13
+slot4.addListener = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
@@ -124,9 +130,9 @@ slot13 = function(slot0)
 
 end
 
-slot4.closePanel = slot13
+slot4.closePanel = slot15
 
-slot13 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -505,9 +511,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot4.insertData = slot13
+slot4.insertData = slot15
 
-slot13 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -521,13 +527,21 @@ slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #1 3-3, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #2 4-28, warpins: 1 ---
+	--- BLOCK #2 4-36, warpins: 1 ---
 	slot3 = slot1.basePropertyList
-	slot4 = slot1.propertyEnhanced
-	slot5 = slot1.attributeCacheMap
+	slot4 = Utils
+	slot4 = slot4.isPetPropertyEnhanced
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	slot5 = PetAttributeCalcUtils
+	slot5 = slot5.getAttributeMapByPetInfo
+	slot7 = pg
+	slot7 = slot7.me
+	slot8 = slot1
+	slot5 = slot5(slot7, slot8)
 	slot6 = slot1.templateId
 	slot7 = PetData
 	slot7 = slot7[slot6]
@@ -554,7 +568,7 @@ slot13 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 29-34, warpins: 2 ---
+	--- BLOCK #3 37-42, warpins: 2 ---
 	slot15 = PetManagementDataHelper
 	slot15 = slot15.CUR_PROP
 	slot15 = slot15[slot14]
@@ -568,14 +582,14 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 35-35, warpins: 1 ---
+	--- BLOCK #4 43-43, warpins: 1 ---
 	slot15 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 36-39, warpins: 2 ---
+	--- BLOCK #5 44-47, warpins: 2 ---
 	slot16 = slot2[slot14]
 	slot16 = slot16.total
 	--- END OF BLOCK #5 ---
@@ -587,7 +601,7 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 40-71, warpins: 1 ---
+	--- BLOCK #6 48-79, warpins: 1 ---
 	slot16 = slot0.propCmpGroup
 	slot16 = slot16[slot14]
 	slot18 = slot16
@@ -632,7 +646,7 @@ slot13 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 72-78, warpins: 1 ---
+	--- BLOCK #7 80-86, warpins: 1 ---
 	slot16 = slot0.propCmpGroup
 	slot16 = slot16[slot14]
 	slot18 = slot16
@@ -647,13 +661,13 @@ slot13 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 79-98, warpins: 2 ---
+	--- BLOCK #8 87-106, warpins: 2 ---
 	slot16 = ClientTextUtils
 	slot16 = slot16.setText
 	slot18 = slot0.propLevelGroup
 	slot18 = slot18[slot14]
 	slot19 = slot3[slot14]
-	slot19 = slot19.individualLevel
+	slot19 = slot19.indLv
 
 	slot16(slot18, slot19)
 
@@ -738,7 +752,7 @@ slot13 = function(slot0, slot1, slot2)
 
 	slot16.luaRenderTooltip = slot17
 	slot16 = slot3[slot14]
-	slot16 = slot16.individualLevelByLearn
+	slot16 = slot16.iLvLn
 	slot17 = 0
 	--- END OF BLOCK #8 ---
 
@@ -749,7 +763,7 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 99-113, warpins: 1 ---
+	--- BLOCK #9 107-121, warpins: 1 ---
 	slot16 = slot0.propCmpGroup
 	slot16 = slot16[slot14]
 	slot18 = slot16
@@ -773,7 +787,7 @@ slot13 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 114-127, warpins: 1 ---
+	--- BLOCK #10 122-135, warpins: 1 ---
 	slot16 = slot0.propCmpGroup
 	slot16 = slot16[slot14]
 	slot18 = slot16
@@ -797,7 +811,7 @@ slot13 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 128-134, warpins: 2 ---
+	--- BLOCK #11 136-142, warpins: 2 ---
 	slot16 = LuaUIUtils
 	slot16 = slot16.tableContains
 	slot18 = slot8
@@ -808,195 +822,186 @@ slot13 = function(slot0, slot1, slot2)
 	slot16 = if slot16 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 135-148, warpins: 1 ---
-	slot16 = slot0.propCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "GoodState"
-	slot20 = 1
-
-	slot16(slot18, slot19, slot20)
-
-	slot16 = slot0.propLevelCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "Updated"
+	--- BLOCK #12 143-144, warpins: 1 ---
+	slot16 = 1
 	--- END OF BLOCK #12 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 149-150, warpins: 1 ---
-	slot20 = 1
+	--- BLOCK #13 145-145, warpins: 1 ---
+	slot16 = 0
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 151-151, warpins: 1 ---
-	slot20 = 0
-
+	--- BLOCK #14 146-147, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 152-154, warpins: 2 ---
-	slot16(slot18, slot19, slot20)
-
-	--- END OF BLOCK #15 ---
-
 	slot4 = if slot4 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #16 155-162, warpins: 1 ---
-	slot16 = slot0.propLevelCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "State"
-	slot20 = 1
+	--- BLOCK #15 148-149, warpins: 1 ---
+	slot17 = 1
+	--- END OF BLOCK #15 ---
 
-	slot16(slot18, slot19, slot20)
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
+
+	--- BLOCK #16 150-150, warpins: 1 ---
+	slot17 = 0
 	--- END OF BLOCK #16 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 163-176, warpins: 1 ---
-	slot16 = slot0.propCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "GoodState"
-	slot20 = 0
+	--- BLOCK #17 151-166, warpins: 2 ---
+	slot18 = slot0.propCmpGroup
+	slot18 = slot18[slot14]
+	slot20 = slot18
+	slot18 = slot18.TryChangePage
+	slot21 = "GoodState"
+	slot22 = slot16
 
-	slot16(slot18, slot19, slot20)
+	slot18(slot20, slot21, slot22)
 
-	slot16 = slot0.propLevelCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "Updated"
-	slot20 = 0
+	slot18 = slot0.propLevelCmpGroup
+	slot18 = slot18[slot14]
+	slot20 = slot18
+	slot18 = slot18.TryChangePage
+	slot21 = "Updated"
+	slot22 = slot17
 
-	slot16(slot18, slot19, slot20)
+	slot18(slot20, slot21, slot22)
 
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	if slot17 == 1 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #18 177-182, warpins: 3 ---
-	slot16 = slot3[slot14]
-	slot16 = slot16.individualLevel
-	slot17 = PetPropLevelMaxData
-	slot17 = slot17[slot14]
+	--- BLOCK #18 167-173, warpins: 1 ---
+	slot18 = slot0.propLevelCmpGroup
+	slot18 = slot18[slot14]
+	slot20 = slot18
+	slot18 = slot18.TryChangePage
+	slot21 = "State"
+	slot22 = 1
+
+	slot18(slot20, slot21, slot22)
+
 	--- END OF BLOCK #18 ---
 
-	if slot17 <= slot16 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 183-196, warpins: 1 ---
-	slot16 = slot0.propCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "State"
-	slot20 = 2
-
-	slot16(slot18, slot19, slot20)
-
-	slot16 = slot0.propLevelCmpGroup
-	slot16 = slot16[slot14]
-	slot18 = slot16
-	slot16 = slot16.TryChangePage
-	slot19 = "State"
-	slot20 = 2
-
-	slot16(slot18, slot19, slot20)
-
+	--- BLOCK #19 174-179, warpins: 2 ---
+	slot18 = slot3[slot14]
+	slot18 = slot18.indLv
+	slot19 = PetPropLevelMaxData
+	slot19 = slot19[slot14]
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	if slot19 <= slot18 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #20 197-217, warpins: 2 ---
-	slot16 = slot0.defaultRatioGroup
-	slot17 = slot3[slot14]
-	slot17 = slot17.individualLevel
-	slot18 = slot3[slot14]
-	slot18 = slot18.individualLevelByLearn
-	slot17 = slot17 - slot18
-	slot18 = PetPropLevelMaxData
+	--- BLOCK #20 180-193, warpins: 1 ---
+	slot18 = slot0.propCmpGroup
 	slot18 = slot18[slot14]
-	slot17 = slot17 / slot18
-	slot16[slot14] = slot17
-	slot16 = slot0.addedRatioGroup
-	slot17 = slot3[slot14]
-	slot17 = slot17.individualLevel
-	slot18 = PetPropLevelMaxData
+	slot20 = slot18
+	slot18 = slot18.TryChangePage
+	slot21 = "State"
+	slot22 = 2
+
+	slot18(slot20, slot21, slot22)
+
+	slot18 = slot0.propLevelCmpGroup
 	slot18 = slot18[slot14]
-	slot17 = slot17 / slot18
-	slot16[slot14] = slot17
-	slot16 = slot3[slot14]
-	slot16 = slot16.individualLevelByLearn
+	slot20 = slot18
+	slot18 = slot18.TryChangePage
+	slot21 = "State"
+	slot22 = 2
+
+	slot18(slot20, slot21, slot22)
+
 	--- END OF BLOCK #20 ---
 
-	slot16 = if slot16 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #23
-	end
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 218-222, warpins: 1 ---
-	slot16 = slot3[slot14]
-	slot16 = slot16.individualLevelByLearn
-	slot17 = 0
+	--- BLOCK #21 194-214, warpins: 2 ---
+	slot18 = slot0.defaultRatioGroup
+	slot19 = slot3[slot14]
+	slot19 = slot19.indLv
+	slot20 = slot3[slot14]
+	slot20 = slot20.iLvLn
+	slot19 = slot19 - slot20
+	slot20 = PetPropLevelMaxData
+	slot20 = slot20[slot14]
+	slot19 = slot19 / slot20
+	slot18[slot14] = slot19
+	slot18 = slot0.addedRatioGroup
+	slot19 = slot3[slot14]
+	slot19 = slot19.indLv
+	slot20 = PetPropLevelMaxData
+	slot20 = slot20[slot14]
+	slot19 = slot19 / slot20
+	slot18[slot14] = slot19
+	slot18 = slot3[slot14]
+	slot18 = slot18.iLvLn
 	--- END OF BLOCK #21 ---
 
-	if slot16 > slot17 then
+	slot18 = if slot18 then
 	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #22 223-223, warpins: 1 ---
-	slot10 = slot10 + 1
+	--- BLOCK #22 215-219, warpins: 1 ---
+	slot18 = slot3[slot14]
+	slot18 = slot18.iLvLn
+	slot19 = 0
 	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #23
+	if slot18 > slot19 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
 
 
-	--- BLOCK #23 224-225, warpins: 3 ---
+	--- BLOCK #23 220-220, warpins: 1 ---
+	slot10 = slot10 + 1
 	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 221-222, warpins: 3 ---
+	--- END OF BLOCK #24 ---
 
 	for slot14=slot11, slot12, slot13
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #24
+	GO OUT TO BLOCK #25
 
-	--- BLOCK #24 226-292, warpins: 1 ---
+	--- BLOCK #25 223-289, warpins: 1 ---
 	slot11 = slot0.view
 	slot11 = slot11.defaultRadar
 	slot13 = slot11
@@ -1066,48 +1071,48 @@ slot13 = function(slot0, slot1, slot2)
 	slot13 = slot11
 	slot11 = slot11.SetActiveEx
 	slot14 = 0
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #25 ---
 
 	if slot10 <= slot14 then
-	JUMP TO BLOCK #25
-	else
 	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #25 293-294, warpins: 1 ---
+	--- BLOCK #26 290-291, warpins: 1 ---
 	slot14 = false
-	--- END OF BLOCK #25 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
-
-
-	--- BLOCK #26 295-295, warpins: 1 ---
-	slot14 = true
-
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #27 296-298, warpins: 2 ---
-	slot11(slot13, slot14)
+	--- BLOCK #27 292-292, warpins: 1 ---
+	slot14 = true
 
-	return
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 299-299, warpins: 2 ---
+	--- BLOCK #28 293-295, warpins: 2 ---
+	slot11(slot13, slot14)
+
 	return
 	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 296-296, warpins: 2 ---
+	return
+	--- END OF BLOCK #29 ---
 
 
 
 end
 
-slot4.setTotalAttribute = slot13
+slot4.setTotalAttribute = slot15
 
 return slot4
 --- END OF BLOCK #0 ---

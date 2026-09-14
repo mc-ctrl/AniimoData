@@ -1,12 +1,14 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-54, warpins: 1 ---
 slot0 = {}
 slot1 = {
 	Pc = "pc",
-	Ios = "ios",
-	PlayStation = "playstation",
-	Other = "other",
 	Xbox = "xbox",
-	Android = "android"
+	Android = "android",
+	Epic = "epic",
+	Other = "other",
+	Steam = "steam",
+	Ios = "ios",
+	PlayStation = "playstation"
 }
 slot0.Family = slot1
 slot1 = "unknown"
@@ -81,7 +83,9 @@ slot2 = function(slot0)
 
 end
 
-slot3 = function(slot0, slot1)
+slot0.isNilOrEmpty = slot2
+
+slot2 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -125,8 +129,9 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 9-11, warpins: 2 ---
-	slot2 = isNilOrEmpty
+	--- BLOCK #5 9-12, warpins: 2 ---
+	slot2 = PlatformUtils
+	slot2 = slot2.isNilOrEmpty
 	slot4 = slot1
 
 	return slot2(slot4)
@@ -136,9 +141,9 @@ slot3 = function(slot0, slot1)
 
 end
 
-slot0.isMissingIdentityField = slot3
+slot0.isMissingIdentityField = slot2
 
-slot3 = function(slot0, slot1)
+slot2 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -206,9 +211,9 @@ slot3 = function(slot0, slot1)
 
 end
 
-slot0.getIdentityField = slot3
+slot0.getIdentityField = slot2
 
-slot3 = function(slot0, slot1, slot2)
+slot2 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -283,9 +288,9 @@ slot3 = function(slot0, slot1, slot2)
 
 end
 
-slot0.setIdentityField = slot3
+slot0.setIdentityField = slot2
 
-slot3 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -461,9 +466,12 @@ slot3 = function(slot0)
 
 end
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = normalizeStringFamily
+slot0.normalizeStringFamily = slot2
+
+slot2 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PlatformUtils
+	slot1 = slot1.normalizeStringFamily
 	slot3 = slot0
 
 	return slot1(slot3)
@@ -473,9 +481,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.normalizeFamily = slot4
+slot0.normalizeFamily = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = tostring
 	--- END OF BLOCK #0 ---
@@ -715,9 +723,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.resolveRawPlatformFamily = slot4
+slot0.resolveRawPlatformFamily = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = FAMILY
 	slot1 = slot1.Xbox
@@ -765,9 +773,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.isConsoleFamily = slot4
+slot0.isConsoleFamily = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -982,35 +990,64 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 101-109, warpins: 2 ---
-	slot9 = {}
-	slot9.platformUserId = slot4
-	slot9.platformFamily = slot5
-	slot9.platformDisplayName = slot6
-	slot9.platform = slot7
-	slot9.os = slot8
-	slot9.isPlatformFriend = slot3
-	slot9.isAllowedCrossPlatform = slot2
-
-	return slot9
+	--- BLOCK #16 101-107, warpins: 2 ---
+	slot9 = PlatformUtils
+	slot9 = slot9.getIdentityField
+	slot11 = slot0
+	slot12 = "platformUGCSwitch"
+	slot9 = slot9(slot11, slot12)
 	--- END OF BLOCK #16 ---
+
+	if slot9 == nil then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 108-113, warpins: 1 ---
+	slot10 = PlatformUtils
+	slot10 = slot10.getIdentityField
+	slot12 = slot1
+	slot13 = "platformUGCSwitch"
+	slot10 = slot10(slot12, slot13)
+	slot9 = slot10
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 114-123, warpins: 2 ---
+	slot10 = {}
+	slot10.platformUserId = slot4
+	slot10.platformFamily = slot5
+	slot10.platformDisplayName = slot6
+	slot10.platform = slot7
+	slot10.os = slot8
+	slot10.isPlatformFriend = slot3
+	slot10.isAllowedCrossPlatform = slot2
+	slot10.platformUGCSwitch = slot9
+
+	return slot10
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot0.resolvePlayerIdentity = slot4
-slot4 = {
+slot0.resolvePlayerIdentity = slot2
+slot2 = {
 	"platformUserId",
 	"platformFamily",
 	"platformDisplayName",
 	"platform",
 	"os",
-	"isAllowedCrossPlatform"
+	"isAllowedCrossPlatform",
+	"platformUGCSwitch"
 }
-slot0.PlatformIdentityAttributes = slot4
+slot0.PlatformIdentityAttributes = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -1067,9 +1104,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.appendPlatformIdentityAttributes = slot4
+slot0.appendPlatformIdentityAttributes = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1090,7 +1127,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-42, warpins: 2 ---
+	--- BLOCK #2 5-48, warpins: 2 ---
 	slot1 = {}
 	slot2 = PlatformUtils
 	slot2 = slot2.getIdentityField
@@ -1128,6 +1165,12 @@ slot4 = function(slot0)
 	slot5 = "isAllowedCrossPlatform"
 	slot2 = slot2(slot4, slot5)
 	slot1.isAllowedCrossPlatform = slot2
+	slot2 = PlatformUtils
+	slot2 = slot2.getIdentityField
+	slot4 = slot0
+	slot5 = "platformUGCSwitch"
+	slot2 = slot2(slot4, slot5)
+	slot1.platformUGCSwitch = slot2
 
 	return slot1
 	--- END OF BLOCK #2 ---
@@ -1136,9 +1179,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.buildPlayerInfoFromAttributes = slot4
+slot0.buildPlayerInfoFromAttributes = slot2
 
-slot4 = function(slot0, slot1)
+slot2 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1245,9 +1288,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot0.fillMissingFlatIdentityFields = slot4
+slot0.fillMissingFlatIdentityFields = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1306,9 +1349,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.normalizeAllowCrossNetwork = slot4
+slot0.normalizeAllowCrossNetwork = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1364,9 +1407,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.normalizePlatformFamily = slot4
+slot0.normalizePlatformFamily = slot2
 
-slot4 = function(slot0, slot1)
+slot2 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = PlatformUtils
 	slot2 = slot2.normalizeAllowCrossNetwork
@@ -1456,9 +1499,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot0.isCrossNetworkCompatible = slot4
+slot0.isCrossNetworkCompatible = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1495,9 +1538,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.resolvePlayerInfoFamily = slot4
+slot0.resolvePlayerInfoFamily = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1518,13 +1561,14 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-14, warpins: 2 ---
+	--- BLOCK #2 5-15, warpins: 2 ---
 	slot1 = PlatformUtils
 	slot1 = slot1.resolvePlayerIdentity
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	slot2 = slot1.platformUserId
-	slot3 = isNilOrEmpty
+	slot3 = PlatformUtils
+	slot3 = slot3.isNilOrEmpty
 	slot5 = slot2
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
@@ -1536,7 +1580,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #3 15-16, warpins: 1 ---
+	--- BLOCK #3 16-17, warpins: 1 ---
 	slot3 = nil
 
 	return slot3
@@ -1546,7 +1590,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-19, warpins: 2 ---
+	--- BLOCK #4 18-20, warpins: 2 ---
 	slot3 = tostring
 	slot5 = slot2
 
@@ -1557,9 +1601,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.resolvePlatformUserId = slot4
+slot0.resolvePlatformUserId = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PlatformUtils
 	slot1 = slot1.resolvePlatformUserId
@@ -1597,9 +1641,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.hasPlatformUserId = slot4
+slot0.hasPlatformUserId = slot2
 
-slot4 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1658,9 +1702,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.isPlatformFriend = slot4
+slot0.isPlatformFriend = slot2
 
-slot4 = function()
+slot2 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1733,11 +1777,12 @@ slot4 = function()
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-32, warpins: 2 ---
+	--- BLOCK #6 25-33, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getRaw
 	slot1 = slot1(slot3)
-	slot2 = isNilOrEmpty
+	slot2 = PlatformUtils
+	slot2 = slot2.isNilOrEmpty
 	slot4 = slot1
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #6 ---
@@ -1749,7 +1794,7 @@ slot4 = function()
 	end
 
 
-	--- BLOCK #7 33-34, warpins: 1 ---
+	--- BLOCK #7 34-35, warpins: 1 ---
 	slot2 = ""
 
 	return slot2
@@ -1758,7 +1803,7 @@ slot4 = function()
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-35, warpins: 2 ---
+	--- BLOCK #8 36-36, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #8 ---
 
@@ -1766,15 +1811,16 @@ slot4 = function()
 
 end
 
-slot0.getCurrentRawPlatform = slot4
+slot0.getCurrentRawPlatform = slot2
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot2 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = PlatformUtils
 	slot1 = slot1.resolvePlayerIdentity
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = isNilOrEmpty
+	slot2 = PlatformUtils
+	slot2 = slot2.isNilOrEmpty
 	slot4 = slot1.platform
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
@@ -1786,7 +1832,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-12, warpins: 1 ---
+	--- BLOCK #1 11-13, warpins: 1 ---
 	slot2 = tostring
 	slot4 = slot1.platform
 
@@ -1797,8 +1843,9 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-17, warpins: 2 ---
-	slot2 = isNilOrEmpty
+	--- BLOCK #2 14-19, warpins: 2 ---
+	slot2 = PlatformUtils
+	slot2 = slot2.isNilOrEmpty
 	slot4 = slot1.os
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #2 ---
@@ -1810,7 +1857,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #3 18-20, warpins: 1 ---
+	--- BLOCK #3 20-22, warpins: 1 ---
 	slot2 = tostring
 	slot4 = slot1.os
 
@@ -1821,11 +1868,12 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-28, warpins: 2 ---
+	--- BLOCK #4 23-31, warpins: 2 ---
 	slot2 = PlatformUtils
 	slot2 = slot2.getCurrentRawPlatform
 	slot2 = slot2()
-	slot3 = isNilOrEmpty
+	slot3 = PlatformUtils
+	slot3 = slot3.isNilOrEmpty
 	slot5 = slot2
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #4 ---
@@ -1837,7 +1885,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #5 29-30, warpins: 1 ---
+	--- BLOCK #5 32-33, warpins: 1 ---
 	slot3 = ""
 
 	return slot3
@@ -1847,7 +1895,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 31-33, warpins: 2 ---
+	--- BLOCK #6 34-36, warpins: 2 ---
 	slot3 = tostring
 	slot5 = slot2
 
@@ -1858,15 +1906,16 @@ slot4 = function(slot0)
 
 end
 
-slot0.resolvePlayerPlatform = slot4
+slot0.resolvePlayerPlatform = slot2
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot2 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = PlatformUtils
 	slot1 = slot1.resolvePlayerIdentity
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = isNilOrEmpty
+	slot2 = PlatformUtils
+	slot2 = slot2.isNilOrEmpty
 	slot4 = slot1.os
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
@@ -1878,7 +1927,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-12, warpins: 1 ---
+	--- BLOCK #1 11-13, warpins: 1 ---
 	slot2 = tostring
 	slot4 = slot1.os
 
@@ -1889,7 +1938,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-16, warpins: 2 ---
+	--- BLOCK #2 14-17, warpins: 2 ---
 	slot2 = PlatformUtils
 	slot2 = slot2.resolvePlayerPlatform
 	slot4 = slot0
@@ -1901,7 +1950,7 @@ slot4 = function(slot0)
 
 end
 
-slot0.resolvePlayerOs = slot4
+slot0.resolvePlayerOs = slot2
 
 return slot0
 --- END OF BLOCK #0 ---

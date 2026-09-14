@@ -327,7 +327,7 @@ slot11 = function(slot0)
 	if slot4 == slot7 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #14
 	end
 
 
@@ -423,7 +423,7 @@ slot11 = function(slot0)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #16
 	end
 
 
@@ -441,7 +441,7 @@ slot11 = function(slot0)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #16
 	end
 
 
@@ -449,8 +449,8 @@ slot11 = function(slot0)
 	slot7 = #slot1
 	slot7 = slot7 + 1
 	slot8 = {
-		isAssignBtn = true,
-		actionPath = "Skill/PutItem"
+		actionPath = "Skill/PutItem",
+		isAssignBtn = true
 	}
 	slot9 = HoldEntPanelConfig
 	slot9 = slot9.petArrangeSkillIcon
@@ -464,25 +464,35 @@ slot11 = function(slot0)
 	slot1[slot7] = slot8
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #10 91-97, warpins: 1 ---
+	--- BLOCK #10 91-92, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 93-99, warpins: 1 ---
 	slot7 = lume
 	slot7 = slot7.find
 	slot9 = slot2.petPrepareList
 	slot10 = slot3.id
 	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #11 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 98-113, warpins: 1 ---
+	--- BLOCK #12 100-115, warpins: 1 ---
 	slot7 = #slot1
 	slot7 = slot7 + 1
 	slot8 = {
@@ -516,12 +526,12 @@ slot11 = function(slot0)
 
 	slot8.func = slot9
 	slot1[slot7] = slot8
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #12 114-129, warpins: 1 ---
+	--- BLOCK #13 116-131, warpins: 2 ---
 	slot7 = #slot1
 	slot7 = slot7 + 1
 	slot8 = {
@@ -555,25 +565,25 @@ slot11 = function(slot0)
 
 	slot8.func = slot9
 	slot1[slot7] = slot8
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #13 130-134, warpins: 1 ---
+	--- BLOCK #14 132-136, warpins: 1 ---
 	slot7 = Const
 	slot7 = slot7.CARRY_TYPE
 	slot7 = slot7.ITEM
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #14 ---
 
 	if slot4 == slot7 then
-	JUMP TO BLOCK #14
-	else
 	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #14 135-149, warpins: 1 ---
+	--- BLOCK #15 137-151, warpins: 1 ---
 	slot7 = #slot1
 	slot7 = slot7 + 1
 	slot8 = {
@@ -608,14 +618,14 @@ slot11 = function(slot0)
 	slot8.func = slot9
 	slot1[slot7] = slot8
 
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 150-151, warpins: 7 ---
-	return slot1
 	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 152-153, warpins: 7 ---
+	return slot1
+	--- END OF BLOCK #16 ---
 
 
 

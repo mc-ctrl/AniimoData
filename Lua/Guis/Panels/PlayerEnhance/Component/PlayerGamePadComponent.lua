@@ -145,9 +145,6 @@ slot5 = function(slot0)
 	--- BLOCK #0 1-354, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		MODE_PLAYER_EQUIP = 3,
-		MODE_PLAYER_REWARD = 2,
-		MODE_PLAYER_EXE = 1,
 		MODE_REWARD_DETAIL = 11,
 		MODE_REWARD_PAGE = 10,
 		MODE_SKILL_EQUIP_PAGE2 = 9,
@@ -155,7 +152,10 @@ slot5 = function(slot0)
 		MODE_SKILL_TREE_PAGE3 = 7,
 		MODE_SKILL_TREE_PAGE2 = 6,
 		MODE_SKILL_TREE_PAGE1 = 5,
-		MODE_PLAYER_SKILL = 4
+		MODE_PLAYER_SKILL = 4,
+		MODE_PLAYER_EQUIP = 3,
+		MODE_PLAYER_REWARD = 2,
+		MODE_PLAYER_EXE = 1
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

@@ -177,34 +177,46 @@ slot9 = function(slot0)
 		end
 
 
-		--- BLOCK #6 27-56, warpins: 1 ---
-		slot2 = pg
-		slot2 = slot2.global
-		slot2 = slot2.ui
-		slot2 = slot2.commonUseConfirm
-		slot4 = slot2
-		slot2 = slot2.open
-		slot5 = {}
-		slot6 = pg
-		slot6 = slot6.getGameString
-		slot8 = "UNLOCK_TITLE"
-		slot6 = slot6(slot8)
-		slot5.title = slot6
-		slot6 = pg
-		slot6 = slot6.getGameString
-		slot8 = "UNLOCK_DESC"
-		slot6 = slot6(slot8)
-		slot5.tipTop = slot6
-		slot6 = {}
+		--- BLOCK #6 27-66, warpins: 1 ---
+		slot2 = LuaUIUtils
+		slot2 = slot2.getItemCountConsumeShowText
+		slot4 = slot1.costItemId
+		slot5 = slot1.costNum
+		slot6 = true
+		slot2 = slot2(slot4, slot5, slot6)
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.commonUseConfirm
+		slot5 = slot3
+		slot3 = slot3.open
+		slot6 = {
+			type = 4
+		}
+		slot7 = pg
+		slot7 = slot7.getGameString
+		slot9 = "UNLOCK_TITLE"
+		slot7 = slot7(slot9)
+		slot6.title = slot7
+		slot7 = string
+		slot7 = slot7.format
+		slot9 = pg
+		slot9 = slot9.getGameString
+		slot11 = "HOME_BUY_DESC"
+		slot9 = slot9(slot11)
+		slot10 = slot2
+		slot7 = slot7(slot9, slot10)
+		slot6.tipTop = slot7
 		slot7 = {}
-		slot8 = slot1.costItemId
+		slot8 = {}
+		slot9 = slot1.costItemId
+		slot8[1] = slot9
+		slot9 = slot1.costNum
+		slot8[2] = slot9
 		slot7[1] = slot8
-		slot8 = slot1.costNum
-		slot7[2] = slot8
-		slot6[1] = slot7
-		slot5.data = slot6
+		slot6.data = slot7
 
-		slot6 = function()
+		slot7 = function()
 			--- BLOCK #0 1-8, warpins: 1 ---
 			slot0 = self
 			slot0 = slot0.openData
@@ -309,9 +321,9 @@ slot9 = function(slot0)
 
 		end
 
-		slot5.confirmCb = slot6
+		slot6.confirmCb = slot7
 
-		slot6 = function()
+		slot7 = function()
 			--- BLOCK #0 1-8, warpins: 1 ---
 			slot0 = self
 			slot0 = slot0.view
@@ -329,23 +341,23 @@ slot9 = function(slot0)
 
 		end
 
-		slot5.cancelCb = slot6
+		slot6.cancelCb = slot7
 
-		slot2(slot4, slot5)
+		slot3(slot5, slot6)
 
 		--- END OF BLOCK #6 ---
 
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 57-57, warpins: 3 ---
+		--- BLOCK #7 67-67, warpins: 3 ---
 		return
 		--- END OF BLOCK #7 ---
 
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 58-58, warpins: 2 ---
+		--- BLOCK #8 68-68, warpins: 2 ---
 		return
 		--- END OF BLOCK #8 ---
 

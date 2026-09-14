@@ -1,4 +1,4 @@
---- BLOCK #0 1-12, warpins: 1 ---
+--- BLOCK #0 1-14, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "SDK.Platform.PlatformNameMaskService"
@@ -174,7 +174,9 @@ slot2 = function(slot0, slot1, slot2)
 
 end
 
-slot3 = function(slot0)
+slot0.getPlayerInfo = slot2
+
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -323,7 +325,9 @@ slot3 = function(slot0)
 
 end
 
-slot4 = function(slot0, slot1, slot2)
+slot0.getPlayerInfoByEnt = slot2
+
+slot2 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = PlatformNameMaskService
 	slot3 = slot3.getMaskedDisplayName
@@ -348,9 +352,10 @@ slot4 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-17, warpins: 2 ---
+	--- BLOCK #2 11-18, warpins: 2 ---
 	slot5.uid = slot6
-	slot6 = getPlayerInfoByEnt
+	slot6 = M
+	slot6 = slot6.getPlayerInfoByEnt
 	slot8 = slot1
 	slot6 = slot6(slot8)
 	slot5.playerInfo = slot6
@@ -363,14 +368,14 @@ slot4 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 18-18, warpins: 1 ---
+	--- BLOCK #3 19-19, warpins: 1 ---
 	slot6 = ""
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-20, warpins: 2 ---
+	--- BLOCK #4 20-21, warpins: 2 ---
 	slot5.rawText = slot6
 
 	return slot3(slot5)
@@ -380,10 +385,10 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.getMaskedEntDisplayName = slot4
+slot0.getMaskedEntDisplayName = slot2
 
-slot4 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot2 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot4 = PlatformNameMaskService
 	slot4 = slot4.getMaskedDisplayName
 	slot6 = {}
@@ -392,7 +397,8 @@ slot4 = function(slot0, slot1, slot2, slot3)
 	slot7 = slot7.BossRushChallengeMemberName
 	slot6.action = slot7
 	slot6.uid = slot1
-	slot7 = getPlayerInfo
+	slot7 = M
+	slot7 = slot7.getPlayerInfo
 	slot9 = slot1
 	slot10 = slot2
 	slot11 = slot3
@@ -407,14 +413,14 @@ slot4 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 17-17, warpins: 1 ---
+	--- BLOCK #1 18-18, warpins: 1 ---
 	slot7 = ""
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-19, warpins: 2 ---
+	--- BLOCK #2 19-20, warpins: 2 ---
 	slot6.rawText = slot7
 
 	return slot4(slot6)
@@ -424,7 +430,7 @@ slot4 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.getMaskedPlayerDisplayName = slot4
+slot0.getMaskedPlayerDisplayName = slot2
 
 return slot0
 --- END OF BLOCK #0 ---

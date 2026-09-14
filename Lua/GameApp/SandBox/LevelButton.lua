@@ -107,7 +107,7 @@ slot5 = function(slot0, slot1)
 	slot3 = slot0.interactCD
 	slot2 = slot2 + slot3
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	--- END OF BLOCK #2 ---
 
 	if slot2 >= slot3 then
@@ -239,7 +239,7 @@ slot2.getInteractionListData = slot5
 slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.lastInteractTime = slot2
 	slot2 = slot0.shell
 	slot4 = slot2

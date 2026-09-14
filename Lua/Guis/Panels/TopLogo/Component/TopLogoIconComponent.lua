@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-45, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -302,21 +302,6 @@ slot6 = function(slot0)
 end
 
 slot5.findObjects = slot6
-
-slot6 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.ICON
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot5.getComponentName = slot6
 
 slot6 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---

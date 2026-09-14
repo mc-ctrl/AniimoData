@@ -1,4 +1,4 @@
---- BLOCK #0 1-91, warpins: 1 ---
+--- BLOCK #0 1-94, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -41,22 +41,25 @@ slot12 = slot12(slot14)
 slot13 = require
 slot15 = "Common.Const.ItemConst"
 slot13 = slot13(slot15)
-slot14 = slot0.LightClass
-slot16 = "CashShopAccessoryAdjustCtrl"
-slot17 = slot1
-slot14 = slot14(slot16, slot17)
-slot14.modelClz = slot3
-slot14.viewClz = slot4
-slot15 = {}
-slot16 = slot10.CASH_SHOP_ON_BUY_ITEM
-slot17 = {
+slot14 = require
+slot16 = "Common.Utils.ItemUtils"
+slot14 = slot14(slot16)
+slot15 = slot0.LightClass
+slot17 = "CashShopAccessoryAdjustCtrl"
+slot18 = slot1
+slot15 = slot15(slot17, slot18)
+slot15.modelClz = slot3
+slot15.viewClz = slot4
+slot16 = {}
+slot17 = slot10.CASH_SHOP_ON_BUY_ITEM
+slot18 = {
 	"onBuyItemResult",
 	true
 }
-slot15[slot16] = slot17
-slot14.messages = slot15
+slot16[slot17] = slot18
+slot15.messages = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -150,9 +153,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onCreate = slot15
+slot15.onCreate = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -211,9 +214,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onOpen = slot15
+slot15.onOpen = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = nil
 	slot0.avatarEditComponent = slot1
@@ -234,9 +237,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onDestroy = slot15
+slot15.onDestroy = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onHide
@@ -256,9 +259,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onHide = slot15
+slot15.onHide = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -481,9 +484,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.addListener = slot15
+slot15.addListener = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.model
 	slot3.selectedAccessoryId = slot1
@@ -521,9 +524,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.setSelectedAccessory = slot15
+slot15.setSelectedAccessory = slot16
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot16 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0.model
 	slot4.selectedPetAccessoryId = slot1
@@ -581,9 +584,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.setSelectedPetAccessory = slot15
+slot15.setSelectedPetAccessory = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.avatarEditComponent
 	--- END OF BLOCK #0 ---
@@ -662,9 +665,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.resetEditContext = slot15
+slot15.resetEditContext = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -716,9 +719,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.updateAdjustContext = slot15
+slot15.updateAdjustContext = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = false
 	slot2 = slot0.hostCtrl
@@ -1249,9 +1252,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.openAvatarAdjust = slot15
+slot15.openAvatarAdjust = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.avatarEditComponent
 	--- END OF BLOCK #0 ---
@@ -1306,9 +1309,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.hideAvatarAdjust = slot15
+slot15.hideAvatarAdjust = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.avatarEditComponent
 	--- END OF BLOCK #0 ---
@@ -1480,9 +1483,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.saveAvatarAdjust = slot15
+slot15.saveAvatarAdjust = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.hostCtrl
 	--- END OF BLOCK #0 ---
@@ -1528,9 +1531,9 @@ slot15 = function(slot0)
 
 end
 
-slot14._getCurrentCommodityId = slot15
+slot15._getCurrentCommodityId = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._getCurrentCommodityId
@@ -1610,9 +1613,9 @@ slot15 = function(slot0)
 
 end
 
-slot14._getCurCommodityData = slot15
+slot15._getCurCommodityData = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2046,139 +2049,109 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onBuyItemResult = slot15
+slot15.onBuyItemResult = slot16
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = ItemUtils
+	slot2 = slot2.getTypedBag
+	slot4 = pg
+	slot4 = slot4.me
+	slot5 = ItemConst
+	slot5 = slot5.INV_TYPE_PET_JEWELRY
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-9, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.invInfo
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 10-15, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.invInfo
-	slot3 = ItemConst
-	slot3 = slot3.INV_TYPE_PET_JEWELRY
-	slot2 = slot2[slot3]
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 16-17, warpins: 3 ---
-	--- END OF BLOCK #3 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 18-19, warpins: 1 ---
+	--- BLOCK #1 10-11, warpins: 1 ---
 	slot3 = nil
 
 	return slot3
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #5 20-24, warpins: 2 ---
+	--- BLOCK #2 12-16, warpins: 2 ---
 	slot5 = slot2
 	slot3 = slot2.getAll
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 1 ---
+	slot4 = nil
+
+	return slot4
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-22, warpins: 2 ---
+	slot4 = pairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 23-25, warpins: 1 ---
+	slot9 = slot8.id
+
+	--- END OF BLOCK #5 ---
+
+	if slot9 == slot1 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 25-26, warpins: 1 ---
-	slot4 = nil
-
-	return slot4
+	--- BLOCK #6 26-26, warpins: 1 ---
+	return slot7
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-30, warpins: 2 ---
-	slot4 = pairs
-	slot6 = slot3
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #7 27-28, warpins: 3 ---
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #8 31-33, warpins: 1 ---
-	slot9 = slot8.id
-
-	--- END OF BLOCK #8 ---
-
-	if slot9 == slot1 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 34-34, warpins: 1 ---
-	return slot7
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 35-36, warpins: 3 ---
-	--- END OF BLOCK #10 ---
-
 	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #11
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #11 37-38, warpins: 1 ---
+	--- BLOCK #8 29-30, warpins: 1 ---
 	slot4 = nil
 
 	return slot4
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot14._findPetJewelryGenId = slot15
+slot15._findPetJewelryGenId = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2374,9 +2347,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14._getEffectiveCost = slot15
+slot15._getEffectiveCost = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -2761,9 +2734,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.refreshBottomBar = slot15
+slot15.refreshBottomBar = slot16
 
-return slot14
+return slot15
 --- END OF BLOCK #0 ---
 
 

@@ -9,24 +9,24 @@ slot2 = {}
 slot3 = {
 	useForRoute = true,
 	agenttype = "CombatAgent",
-	version = 13,
-	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Com_MoveAndPlayAnimation"
+	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Com_MoveAndPlayAnimation",
+	version = 13
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "0",
 	name = "tTargetActorId",
 	const = 0,
-	type = "int",
-	value = "0"
+	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
+	value = "",
 	name = "tAnimationKey",
 	const = "",
-	type = "string",
-	value = ""
+	type = "string"
 }
 slot4[2] = slot5
 slot3.pars = slot4

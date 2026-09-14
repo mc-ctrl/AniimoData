@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = true,
 	agenttype = "CombatAgent",
 	name = "PatrolTree/PatrolSubTree/ST_Angry",
-	version = 9,
-	useForRoute = true
+	version = 9
 }
 slot4 = {}
 slot3.properties = slot4

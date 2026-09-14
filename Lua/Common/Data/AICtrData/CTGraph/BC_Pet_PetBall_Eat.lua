@@ -1,56 +1,11 @@
---- BLOCK #0 1-33, warpins: 1 ---
+--- BLOCK #0 1-17, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {}
+slot1 = {}
+slot2 = slot0.SafeCall
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = 1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._to_21_0
@@ -63,9 +18,9 @@ slot7 = function(slot0)
 
 end
 
-slot2.executeTickLodTrigger = slot7
+slot1.executeTickLodTrigger = slot3
 
-slot7 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -93,9 +48,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot3
 
-slot7 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -125,9 +80,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot3
 
-slot7 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -148,11 +103,12 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-15, warpins: 2 ---
-	slot1 = _M
-	slot1 = slot1._get_20_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	--- BLOCK #2 5-16, warpins: 2 ---
+	slot1 = _C
+	slot3 = 20
+	slot4 = "IsInPetBallExpAction"
+	slot5 = slot0
+	slot1 = slot1(slot3, slot4, slot5)
 	slot2 = _M
 	slot2 = slot2.checkInterrupt
 	slot4 = slot0
@@ -167,7 +123,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
+	--- BLOCK #3 17-18, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	slot2 = if not slot2 then
@@ -177,7 +133,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #4 18-43, warpins: 1 ---
+	--- BLOCK #4 19-44, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setActive
 
@@ -220,7 +176,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 44-46, warpins: 2 ---
+	--- BLOCK #5 45-47, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.setActiveFail
 
@@ -231,7 +187,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 47-47, warpins: 2 ---
+	--- BLOCK #6 48-48, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -239,62 +195,27 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_21_0 = slot7
+slot1._to_21_0 = slot3
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = _C
-	slot3 = 20
-	slot4 = "IsInPetBallExpAction"
-	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_20_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot3 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = _C
 	slot3 = 22
 	slot4 = "IsInPetBallExpAction"
 	slot5 = slot0
+	slot1 = slot1(slot3, slot4, slot5)
+	slot2 = not slot1
 
-	return slot1(slot3, slot4, slot5)
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2._get_22_0 = slot7
+slot1._get_23_1 = slot3
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_22_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 23
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_23_1 = slot7
-
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

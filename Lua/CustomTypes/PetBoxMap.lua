@@ -528,7 +528,7 @@ end
 
 slot7.getValidEmptySlot = slot11
 
-slot11 = function(slot0, slot1, slot2, slot3, slot4)
+slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -547,14 +547,14 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #2 4-9, warpins: 2 ---
-	slot5 = nil
-	slot6 = Const
-	slot6 = slot6.PET_BOX_SORT
-	slot6 = slot6.TIME
+	slot6 = nil
+	slot7 = Const
+	slot7 = slot7.PET_BOX_SORT
+	slot7 = slot7.TIME
 
 	--- END OF BLOCK #2 ---
 
-	if slot3 == slot6 then
+	if slot3 == slot7 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -562,7 +562,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #3 10-11, warpins: 1 ---
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-15, warpins: 1 ---
 		slot2 = pets
 		slot2 = slot2[slot0]
@@ -701,17 +701,17 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #4 12-16, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.PET_BOX_SORT
-	slot6 = slot6.SCORE
+	slot7 = Const
+	slot7 = slot7.PET_BOX_SORT
+	slot7 = slot7.SCORE
 
 	--- END OF BLOCK #4 ---
 
-	if slot3 == slot6 then
+	if slot3 == slot7 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
@@ -719,7 +719,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #5 17-18, warpins: 1 ---
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-15, warpins: 1 ---
 		slot2 = pets
 		slot2 = slot2[slot0]
@@ -858,17 +858,17 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #6 19-23, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.PET_BOX_SORT
-	slot6 = slot6.NUMBER
+	slot7 = Const
+	slot7 = slot7.PET_BOX_SORT
+	slot7 = slot7.NUMBER
 
 	--- END OF BLOCK #6 ---
 
-	if slot3 == slot6 then
+	if slot3 == slot7 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
@@ -876,7 +876,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #7 24-25, warpins: 1 ---
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-15, warpins: 1 ---
 		slot2 = pets
 		slot2 = slot2[slot0]
@@ -1015,17 +1015,17 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #8 26-30, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.PET_BOX_SORT
-	slot6 = slot6.LEVEL
+	slot7 = Const
+	slot7 = slot7.PET_BOX_SORT
+	slot7 = slot7.LEVEL
 
 	--- END OF BLOCK #8 ---
 
-	if slot3 == slot6 then
+	if slot3 == slot7 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
@@ -1033,7 +1033,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #9 31-32, warpins: 1 ---
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-15, warpins: 1 ---
 		slot2 = pets
 		slot2 = slot2[slot0]
@@ -1172,17 +1172,17 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #10 33-37, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.PET_BOX_SORT
-	slot6 = slot6.RATING
+	slot7 = Const
+	slot7 = slot7.PET_BOX_SORT
+	slot7 = slot7.RATING
 
 	--- END OF BLOCK #10 ---
 
-	if slot3 == slot6 then
+	if slot3 == slot7 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
@@ -1190,7 +1190,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #11 38-39, warpins: 1 ---
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-15, warpins: 1 ---
 		slot2 = pets
 		slot2 = slot2[slot0]
@@ -1329,76 +1329,143 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #12 40-44, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.PET_BOX_SORT
-	slot6 = slot6.FAMILY
+	slot7 = Const
+	slot7 = slot7.PET_BOX_SORT
+	slot7 = slot7.FAMILY
 	--- END OF BLOCK #12 ---
 
-	if slot3 == slot6 then
+	if slot3 == slot7 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #13 45-49, warpins: 1 ---
-	slot6 = {}
-	slot7 = pairs
-	slot9 = slot2
-	slot7, slot8, slot9 = slot7(slot9)
+	--- BLOCK #13 45-47, warpins: 1 ---
+	slot7 = {}
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #14 50-56, warpins: 1 ---
-	slot14 = slot11
-	slot12 = slot11.getEthnicGroup
-	slot12 = slot12(slot14)
-	slot13 = slot11.countId
-	slot14 = slot6[slot12]
-	--- END OF BLOCK #14 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #15
+	slot5 = if slot5 then
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #15 57-59, warpins: 1 ---
-	slot14 = slot6[slot12]
+	--- BLOCK #14 48-51, warpins: 1 ---
+	slot8 = ipairs
+	slot10 = slot1
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #15 52-59, warpins: 1 ---
+	slot13 = slot2[slot12]
+	slot16 = slot13
+	slot14 = slot13.getEthnicGroup
+	slot14 = slot14(slot16)
+	slot15 = slot13.countId
+	slot16 = slot7[slot14]
 	--- END OF BLOCK #15 ---
 
-	if slot13 < slot14 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 60-60, warpins: 2 ---
-	slot6[slot12] = slot13
-
+	--- BLOCK #16 60-62, warpins: 1 ---
+	slot16 = slot7[slot14]
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	if slot15 < slot16 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #17 61-62, warpins: 3 ---
+	--- BLOCK #17 63-63, warpins: 2 ---
+	slot7[slot14] = slot15
 	--- END OF BLOCK #17 ---
 
-	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #18
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 63-64, warpins: 1 ---
-	slot5 = function(slot0, slot1)
+	--- BLOCK #18 64-65, warpins: 3 ---
+	--- END OF BLOCK #18 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #19
+
+
+	--- BLOCK #19 66-66, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #20 67-70, warpins: 1 ---
+	slot8 = pairs
+	slot10 = slot2
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #21 71-77, warpins: 1 ---
+	slot15 = slot12
+	slot13 = slot12.getEthnicGroup
+	slot13 = slot13(slot15)
+	slot14 = slot12.countId
+	slot15 = slot7[slot13]
+	--- END OF BLOCK #21 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 78-80, warpins: 1 ---
+	slot15 = slot7[slot13]
+	--- END OF BLOCK #22 ---
+
+	if slot14 < slot15 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 81-81, warpins: 2 ---
+	slot7[slot13] = slot14
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 82-83, warpins: 3 ---
+	--- END OF BLOCK #24 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #21
+	GO OUT TO BLOCK #25
+
+
+	--- BLOCK #25 84-85, warpins: 2 ---
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-16, warpins: 1 ---
 		slot2 = pets
 		slot2 = slot2[slot0]
@@ -1600,36 +1667,36 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 	end
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #19 65-66, warpins: 7 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #26 86-87, warpins: 7 ---
+	--- END OF BLOCK #26 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #20
+	slot6 = if slot6 then
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #20 67-70, warpins: 1 ---
-	slot6 = table_sort
-	slot8 = slot1
-	slot9 = slot5
+	--- BLOCK #27 88-91, warpins: 1 ---
+	slot7 = table_sort
+	slot9 = slot1
+	slot10 = slot6
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #27 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #21 71-72, warpins: 2 ---
+	--- BLOCK #28 92-93, warpins: 2 ---
 	return slot1
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #28 ---
 
 
 

@@ -1,10 +1,10 @@
 --- BLOCK #0 1-112, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	BT_RUNNING = 3,
-	BT_FAILURE = 2,
 	BT_SUCCESS = 1,
-	BT_INVALID = 0
+	BT_INVALID = 0,
+	BT_RUNNING = 3,
+	BT_FAILURE = 2
 }
 slot0.EBTStatus = slot1
 slot1 = {
@@ -15,43 +15,43 @@ slot1 = {
 }
 slot0.EBTStatusName = slot1
 slot1 = {
-	ETP_Success = 1,
-	ETP_Always = 0,
 	ETP_Exit = 3,
-	ETP_Failure = 2
+	ETP_Failure = 2,
+	ETP_Success = 1,
+	ETP_Always = 0
 }
 slot0.ETransitionPhase = slot1
 slot1 = {
-	E_SUCCESS = 0,
 	E_BOTH = 2,
-	E_FAILURE = 1
+	E_FAILURE = 1,
+	E_SUCCESS = 0
 }
 slot0.ENodePhase = slot1
 slot1 = {
-	E_ENTER = 0,
 	E_BOTH = 2,
-	E_UPDATE = 1
+	E_UPDATE = 1,
+	E_ENTER = 0
 }
 slot0.EPreconditionPhase = slot1
 slot1 = {
+	TM_Reload = 3,
 	TM_Return = 2,
-	TM_Transfer = 1,
-	TM_Reload = 3
+	TM_Transfer = 1
 }
 slot0.TriggerMode = slot1
 slot1 = {
+	E_SUB = 3,
+	E_ADD = 2,
 	E_ASSIGN = 1,
 	E_INVALID = 0,
+	E_LESS = 9,
 	E_GREATEREQUAL = 10,
 	E_LESSEQUAL = 11,
-	E_LESS = 9,
 	E_GREATER = 8,
 	E_NOTEQUAL = 7,
 	E_EQUAL = 6,
 	E_DIV = 5,
-	E_MUL = 4,
-	E_SUB = 3,
-	E_ADD = 2
+	E_MUL = 4
 }
 slot0.EOperatorType = slot1
 slot1 = {
@@ -102,10 +102,6 @@ slot1 = {
 }
 slot0.constPropertyValueType = slot1
 slot1 = {
-	BT_String = 2,
-	BT_Double = 1,
-	BT_None = 0,
-	BT_ParameterElement = 35,
 	BT_Custom = 34,
 	BT_MethodElement = 33,
 	BT_MethodsElement = 32,
@@ -137,7 +133,11 @@ slot1 = {
 	BT_Undefined = 6,
 	BT_Binary = 5,
 	BT_Array = 4,
-	BT_Object = 3
+	BT_Object = 3,
+	BT_String = 2,
+	BT_Double = 1,
+	BT_None = 0,
+	BT_ParameterElement = 35
 }
 slot0.constBsonElementType = slot1
 slot1 = {}

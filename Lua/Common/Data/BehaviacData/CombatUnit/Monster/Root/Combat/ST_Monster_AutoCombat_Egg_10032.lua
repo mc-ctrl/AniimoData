@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10032",
-	version = 55,
 	useForRoute = false,
+	version = 55,
 	agenttype = "PuppetAgent"
 }
 slot4 = {}
@@ -18,50 +18,50 @@ slot4 = {}
 slot5 = {
 	name = "CurrentDistToTarget",
 	type = "float",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "CurrentBoxDistToTarget",
 	type = "float",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "goBackDist",
 	type = "float",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
 	name = "skillStopDist",
 	type = "float",
-	value = "0",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
 	name = "tWeight_Group_SideWalk",
 	type = "int",
-	value = "100",
-	const = 100
+	const = 100,
+	value = "100"
 }
 slot4[5] = slot5
 slot5 = {
 	name = "tWeight_Group_Wait",
 	type = "int",
-	value = "100",
-	const = 100
+	const = 100,
+	value = "100"
 }
 slot4[6] = slot5
 slot5 = {
 	name = "tWeight_Group_Angry",
 	type = "int",
-	value = "100",
-	const = 100
+	const = 100,
+	value = "100"
 }
 slot4[7] = slot5
 slot3.pars = slot4

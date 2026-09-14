@@ -14,7 +14,7 @@ slot6 = slot1
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-36, warpins: 1 ---
+	--- BLOCK #0 1-46, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -50,6 +50,16 @@ slot4 = function(slot0)
 	slot5 = "txtBtnSave"
 	slot2 = slot2(slot4, slot5)
 	slot0.txtBtnSave = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rootUComponent"
+	slot2 = slot2(slot4, slot5)
+	slot0.rootUComponent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtEmptyTextPlus"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtEmptyTextPlus = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -72,7 +82,7 @@ end
 slot3.registerObjects = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-25, warpins: 1 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.txtBtnSave
@@ -99,6 +109,16 @@ slot4 = function(slot0)
 	slot4 = pg
 	slot4 = slot4.getGameString
 	slot6 = "PETTRANSMOGRIFY_AUTO_TEMP_TIP"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtEmptyTextPlus
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "PETTRANSMOGRIFY_HISTORY"
 	MULTRES = slot4(slot6)
 
 	slot1(slot3, MULTRES)

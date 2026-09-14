@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/_Common/PBT_Com_MoveToBornPos",
-	version = 5
+	version = 5,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -27,8 +27,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "3"
+	id = "3",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -37,8 +37,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Assignment",
-	id = "7"
+	id = "7",
+	class = "Assignment"
 }
 slot8 = {}
 slot9 = {
@@ -66,8 +66,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Selector",
-	id = "4"
+	id = "4",
+	class = "Selector"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -76,8 +76,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	class = "Action",
-	id = "1"
+	id = "1",
+	class = "Action"
 }
 slot11 = {}
 slot12 = {}
@@ -143,8 +143,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	class = "Action",
-	id = "9"
+	id = "9",
+	class = "Action"
 }
 slot11 = {}
 slot12 = {}

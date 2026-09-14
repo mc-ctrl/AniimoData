@@ -1,49 +1,52 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "GameApp.Core.SystemBase"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Framework.Class"
+slot5 = "GameApp.Core.SystemBase"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Common.Time"
+slot6 = "Core.Framework.Class"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Utils.Utils"
+slot7 = "Core.Common.Time"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.Const"
+slot8 = "Common.Utils.Utils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Core.Log.LoggerManager"
+slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
-slot8 = slot7.getLogger
-slot10 = "ChatTriggerSystem"
+slot8 = require
+slot10 = "Core.Log.LoggerManager"
 slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Core.Framework.SafeCallback"
+slot9 = slot8.getLogger
+slot11 = "ChatTriggerSystem"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_chat_condition_data"
+slot12 = "Core.Framework.SafeCallback"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.pet_chat_condition_params_data"
+slot13 = "Data.pet_chat_condition_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_chat_data"
+slot14 = "Data.pet_chat_condition_params_data"
 slot12 = slot12(slot14)
-slot13 = slot3.LightClass
-slot15 = "ChatTriggerSystem"
-slot16 = slot2
-slot13 = slot13(slot15, slot16)
+slot13 = require
+slot15 = "Data.pet_chat_data"
+slot13 = slot13(slot15)
+slot14 = slot4.LightClass
+slot16 = "ChatTriggerSystem"
+slot17 = slot3
+slot14 = slot14(slot16, slot17)
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot0.petChatTriggerInfo = slot1
@@ -81,9 +84,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onCtor = slot14
+slot14.onCtor = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = SafeCallback
 	slot6 = slot0._innerOnTrigger
@@ -101,9 +104,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13.onTrigger = slot14
+slot14.onTrigger = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.getEntityByActorId
@@ -144,9 +147,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13._innerOnTrigger = slot14
+slot14._innerOnTrigger = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0.petChatTriggerInfo
 	slot4 = slot4[slot1]
@@ -184,7 +187,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #3 13-13, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -432,9 +435,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13._innerOnPetTrigger = slot14
+slot14._innerOnPetTrigger = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.petChatTriggerInfo
 	slot2 = slot2[slot1]
@@ -446,9 +449,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.getPetChatTriggerInfo = slot14
+slot14.getPetChatTriggerInfo = slot15
 
-return slot13
+return slot14
 --- END OF BLOCK #0 ---
 
 

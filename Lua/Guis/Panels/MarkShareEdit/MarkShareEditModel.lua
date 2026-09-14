@@ -31,9 +31,9 @@ slot11 = "MarkShareEditModel"
 slot12 = slot1
 slot9 = slot9(slot11, slot12)
 slot10 = {
-	SENTENCE = 1,
 	CONJ = 3,
-	WORD = 2
+	WORD = 2,
+	SENTENCE = 1
 }
 slot9.CONTENT_TYPE = slot10
 

@@ -7,9 +7,9 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	name = "ParmonBehaviorTree/SubTree/_Wild/10501_Cubbo/ST_Wild_10501_Idle",
 	version = 15,
 	useForRoute = true,
-	name = "ParmonBehaviorTree/SubTree/_Wild/10501_Cubbo/ST_Wild_10501_Idle",
 	agenttype = "CombatAgent"
 }
 slot4 = {}
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "29",
-	class = "Action"
+	class = "Action",
+	id = "29"
 }
 slot5 = {}
 slot6 = {}

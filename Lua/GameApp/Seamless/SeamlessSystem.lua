@@ -1,4 +1,4 @@
---- BLOCK #0 1-238, warpins: 1 ---
+--- BLOCK #0 1-249, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Core.SystemBase"
 slot0 = slot0(slot2)
@@ -31,54 +31,57 @@ slot9 = require
 slot11 = "Data.scene_seamless_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.scene_data"
+slot12 = "Data.region_sync_config_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.map_line_config_data"
+slot13 = "Data.scene_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.map_level_config_load_data"
+slot14 = "Data.map_line_config_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Const.Const"
+slot15 = "Data.map_level_config_load_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.InteractionConst"
+slot16 = "Common.Const.Const"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Const.MessageName"
+slot17 = "Common.Const.InteractionConst"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Utils.Utils"
+slot18 = "Const.MessageName"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Core.Common.Const"
+slot19 = "Common.Utils.Utils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Const.ClientConst"
+slot20 = "Core.Common.Const"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Utils.ClientUtils"
+slot21 = "Const.ClientConst"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.CommonSwitch"
+slot22 = "Utils.ClientUtils"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Entities.Utils.EModelUtils"
+slot23 = "Common.CommonSwitch"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Common.Utils.VirtualEntUtils"
+slot24 = "Entities.Utils.EModelUtils"
 slot22 = slot22(slot24)
-slot23 = appFacade
-slot23 = slot23.areaManager
-slot24 = Vector3
-slot25 = Vector2
-slot26 = Quaternion
-slot27 = appFacade
-slot27 = slot27.entityManager
-slot28 = 1
+slot23 = require
+slot25 = "Common.Utils.VirtualEntUtils"
+slot23 = slot23(slot25)
+slot24 = appFacade
+slot24 = slot24.areaManager
+slot25 = Vector3
+slot26 = Vector2
+slot27 = Quaternion
+slot28 = appFacade
+slot28 = slot28.entityManager
+slot29 = 1
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.UnityEngine
@@ -117,9 +120,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.onCtor = slot29
+slot7.onCtor = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = MessageName
@@ -134,9 +137,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.getMessageBindMap = slot29
+slot7.getMessageBindMap = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.seam_sys_clearRuntimeAreas
@@ -232,7 +235,7 @@ slot29 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 41-68, warpins: 2 ---
+	--- BLOCK #7 41-74, warpins: 2 ---
 	slot0.__isDynamicSeamless = slot3
 	slot3 = false
 	slot0.__isEventSeamless = slot3
@@ -255,6 +258,11 @@ slot29 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	slot5 = slot0
+	slot3 = slot0.seam_sys_onInitRegionAreas
+
+	slot3(slot5)
+
+	slot5 = slot0
 	slot3 = slot0.seam_sys_onInitDynamicArea
 	slot6 = slot1
 
@@ -272,6 +280,11 @@ slot29 = function(slot0, slot1, slot2)
 
 	slot3(slot5)
 
+	slot5 = slot0
+	slot3 = slot0.seam_sys_checkEnterMappingRegion
+
+	slot3(slot5)
+
 	return
 	--- END OF BLOCK #7 ---
 
@@ -279,9 +292,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.onSceneLoaded = slot29
+slot7.onSceneLoaded = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -330,9 +343,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.onSceneUnloaded = slot29
+slot7.onSceneUnloaded = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -369,9 +382,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.onStartReloadCurScene = slot29
+slot7.onStartReloadCurScene = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -408,9 +421,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.onSceneReset = slot29
+slot7.onSceneReset = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -529,9 +542,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_initDefaultCacheArea = slot29
+slot7.seam_sys_initDefaultCacheArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.__seamlessAreas
 	slot2 = slot2[slot1]
@@ -620,9 +633,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_removeSingleArea = slot29
+slot7.seam_sys_removeSingleArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = SceneData
 	slot2 = slot2[slot1]
@@ -681,9 +694,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_updateSeamlessType = slot29
+slot7.seam_sys_updateSeamlessType = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = MapLineData
 	slot2 = slot2[slot1]
@@ -753,9 +766,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_onInitBranchAreas = slot29
+slot7.seam_sys_onInitBranchAreas = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = MapLevelConfigLoadData
 	slot2 = slot2[slot1]
@@ -814,9 +827,89 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_onInitMapLayerAreas = slot29
+slot7.seam_sys_onInitMapLayerAreas = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = slot0.__seamlessMainSceneId
+	slot2 = SceneUtils
+	slot2 = slot2.getSceneAreaData
+	slot4 = slot1
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot3 = pairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.seam_sys_isMappingRegionType
+	slot11 = slot7.areaLoadType
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #3 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.seam_sys_addSceneAreaCom
+	slot11 = slot7
+	slot12 = slot1
+	slot13 = false
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-26, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 27-27, warpins: 1 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.seam_sys_onInitRegionAreas = slot30
+
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = SceneSeamlessData
 	slot3 = slot0.__seamlessMainSceneId
@@ -908,9 +1001,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_onInitSeamlessAreas = slot29
+slot7.seam_sys_onInitSeamlessAreas = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_isSwitchSeamless
@@ -948,9 +1041,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_onInitDynamicArea = slot29
+slot7.seam_sys_onInitDynamicArea = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.__isDynamicSeamless = slot2
 	slot5 = slot0
@@ -1066,9 +1159,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_addDynamicArea = slot29
+slot7.seam_sys_addDynamicArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = SceneData
 	slot2 = slot2[slot1]
@@ -1124,9 +1217,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_removeDynamicArea = slot29
+slot7.seam_sys_removeDynamicArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_parseOverlapPos
@@ -1265,9 +1358,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_checkAreaOverlap = slot29
+slot7.seam_sys_checkAreaOverlap = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot1.radius
 	slot4 = slot2.radius
@@ -1311,9 +1404,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_checkCylinder_Cylinder = slot29
+slot7.seam_sys_checkCylinder_Cylinder = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot1.position
 	slot4 = Vector2
@@ -1337,9 +1430,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_checkCylinder_Polygon = slot29
+slot7.seam_sys_checkCylinder_Polygon = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot1.overlapPos
 	slot4 = slot2.overlapPos
@@ -1355,9 +1448,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_checkPolygon_Polygon = slot29
+slot7.seam_sys_checkPolygon_Polygon = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot4 = slot2[2]
 	slot5 = slot1[2]
@@ -1427,9 +1520,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.seam_sys_orientation = slot29
+slot7.seam_sys_orientation = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot2[1]
 	slot5 = math
@@ -1514,9 +1607,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.seam_sys_onSegment = slot29
+slot7.seam_sys_onSegment = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4)
+slot30 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.seam_sys_orientation
@@ -1725,9 +1818,9 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot7.seam_sys_doIntersect = slot29
+slot7.seam_sys_doIntersect = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = #slot1
 	slot4 = 3
@@ -1870,9 +1963,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_isInsidePolygon = slot29
+slot7.seam_sys_isInsidePolygon = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = 1
 	slot4 = #slot1
@@ -2030,9 +2123,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_polygonsIntersect = slot29
+slot7.seam_sys_polygonsIntersect = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-36, warpins: 1 ---
 	slot4 = slot2[1]
 	slot5 = slot1[1]
@@ -2077,9 +2170,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.seam_sys_closestPointOnSegment = slot29
+slot7.seam_sys_closestPointOnSegment = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4)
+slot30 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.seam_sys_closestPointOnSegment
@@ -2126,9 +2219,9 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot7.seam_sys_lineIntersectsCircle = slot29
+slot7.seam_sys_lineIntersectsCircle = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = 1
 	slot5 = #slot1
@@ -2210,9 +2303,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.seam_sys_polygonIntersectsCircle = slot29
+slot7.seam_sys_polygonIntersectsCircle = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.overlapPos
 
@@ -2307,9 +2400,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_parseOverlapPos = slot29
+slot7.seam_sys_parseOverlapPos = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_getAreaData
@@ -2352,9 +2445,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_addAreaById = slot29
+slot7.seam_sys_addAreaById = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.id
 	slot3 = slot1.areaShapeType
@@ -2498,9 +2591,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_addAreaByData = slot29
+slot7.seam_sys_addAreaByData = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.AREA_LAYER
@@ -2538,9 +2631,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_removeArea = slot29
+slot7.seam_sys_removeArea = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.__seamlessAreas
@@ -2584,9 +2677,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_clearRuntimeAreas = slot29
+slot7.seam_sys_clearRuntimeAreas = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.__seamlessMainSceneId
 	--- END OF BLOCK #0 ---
@@ -2645,9 +2738,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_getSceneAreaData = slot29
+slot7.seam_sys_getSceneAreaData = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.__seamlessAreas
 	slot2 = slot2[slot1]
@@ -2684,9 +2777,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_getAreaData = slot29
+slot7.seam_sys_getAreaData = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.getRawTable
 	--- END OF BLOCK #0 ---
@@ -2730,9 +2823,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_getRawAreaData = slot29
+slot7.seam_sys_getRawAreaData = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__seamlessAreas
 
@@ -2743,9 +2836,231 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_getAllAreas = slot29
+slot7.seam_sys_getAllAreas = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.AREA_LOAD_TYPE
+	slot2 = slot2.MAPPING_REGION
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot7.seam_sys_isMappingRegionType = slot30
+
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = RegionSyncData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot3 = slot2.mainScene
+	slot4 = slot0.__seamlessMainSceneId
+
+	--- END OF BLOCK #1 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-15, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.seam_sys_getAreaData
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #3 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-21, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.seam_sys_isMappingRegionType
+	slot7 = slot3.areaLoadType
+	slot4 = slot4(slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-25, warpins: 2 ---
+	slot4 = slot2
+	slot5 = slot3
+
+	return slot4, slot5
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.seam_sys_getMappingRegionConfig = slot30
+
+slot30 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-14, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.getPosition
+	slot1 = slot1(slot3)
+	slot2 = pairs
+	slot4 = RegionSyncData
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 15-20, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.seam_sys_getMappingRegionConfig
+	slot10 = slot5
+	slot7, slot8 = slot7(slot9, slot10)
+	--- END OF BLOCK #3 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 21-27, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.seam_sys_inSeamlessArea
+	slot12 = slot1
+	slot13 = slot8
+	slot9 = slot9(slot11, slot12, slot13)
+	--- END OF BLOCK #4 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-35, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.me
+	slot11 = slot9
+	slot9 = slot9.seamless_mappingRegionEnter
+	slot12 = slot5
+	slot13 = slot7
+
+	slot9(slot11, slot12, slot13)
+
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 36-37, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 38-38, warpins: 1 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot7.seam_sys_checkEnterMappingRegion = slot30
+
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = 1
@@ -2813,9 +3128,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_getAreaLayers = slot29
+slot7.seam_sys_getAreaLayers = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot1.seamlessRange
 	slot4 = slot3[1]
@@ -2931,9 +3246,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_addSceneAreaInternal = slot29
+slot7.seam_sys_addSceneAreaInternal = slot30
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3117,9 +3432,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot7.seam_sys_addSceneAreaCom = slot29
+slot7.seam_sys_addSceneAreaCom = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = slot1.areaShapeType
 	slot3 = math
@@ -3279,9 +3594,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_parseAreaBoxInfo = slot29
+slot7.seam_sys_parseAreaBoxInfo = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.areaShapeType
 	--- END OF BLOCK #0 ---
@@ -3345,9 +3660,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_initAirWallForShape = slot29
+slot7.seam_sys_initAirWallForShape = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_LoadAirWallInternal
@@ -3405,9 +3720,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_initCylinderAir = slot29
+slot7.seam_sys_initCylinderAir = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot1.areaPoints
@@ -3593,9 +3908,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_initCustomAir = slot29
+slot7.seam_sys_initCustomAir = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -3653,9 +3968,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_LoadAirWallInternal = slot29
+slot7.seam_sys_LoadAirWallInternal = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = CoreConst
 	slot2 = slot2.CreateClientEntityMode
@@ -3689,9 +4004,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_createChannelEntity = slot29
+slot7.seam_sys_createChannelEntity = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.__isInSwitching = slot1
 	--- END OF BLOCK #0 ---
@@ -3705,7 +4020,7 @@ slot29 = function(slot0, slot1)
 
 	--- BLOCK #1 4-6, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.lastSeamlessSwitchTime = slot2
 
 	--- END OF BLOCK #1 ---
@@ -3721,9 +4036,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_setSwitchState = slot29
+slot7.seam_sys_setSwitchState = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.AREA_LOAD_TYPE
@@ -3760,138 +4075,218 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_isSeamlessType = slot29
+slot7.seam_sys_isSeamlessType = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_getAreaData
 	slot5 = slot1
 	slot2 = slot2(slot4, slot5)
+
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-12, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.seam_sys_isSeamlessType
-	slot6 = slot2.areaLoadType
-	slot3 = slot3(slot5, slot6)
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.seam_sys_getMappingRegionConfig
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
+	--- BLOCK #3 14-21, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.seamless_mappingRegionEnter
+	slot7 = slot1
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
 	return
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #3 14-23, warpins: 2 ---
-	slot3 = {
+	--- BLOCK #4 22-27, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.seam_sys_isSeamlessType
+	slot7 = slot2.areaLoadType
+	slot4 = slot4(slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-28, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-38, warpins: 2 ---
+	slot4 = {
 		isEnter = true
 	}
-	slot3.areaId = slot1
-	slot0._currentTrigger = slot3
-	slot3 = facade
-	slot5 = slot3
-	slot3 = slot3.sendMsgToUI
-	slot6 = MessageName
-	slot6 = slot6.ENTER_SEAMLESS
+	slot4.areaId = slot1
+	slot0._currentTrigger = slot4
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.sendMsgToUI
+	slot7 = MessageName
+	slot7 = slot7.ENTER_SEAMLESS
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot7.seam_sys_enterArea = slot29
+slot7.seam_sys_enterArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_getAreaData
 	slot5 = slot1
 	slot2 = slot2(slot4, slot5)
+
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-12, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.seam_sys_isSeamlessType
-	slot6 = slot2.areaLoadType
-	slot3 = slot3(slot5, slot6)
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.seam_sys_getMappingRegionConfig
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
+	--- BLOCK #3 14-21, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.seamless_mappingRegionExit
+	slot7 = slot1
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
 	return
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #3 14-28, warpins: 2 ---
-	slot3 = {
+	--- BLOCK #4 22-27, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.seam_sys_isSeamlessType
+	slot7 = slot2.areaLoadType
+	slot4 = slot4(slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-28, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-43, warpins: 2 ---
+	slot4 = {
 		isEnter = false
 	}
-	slot3.areaId = slot1
-	slot0._currentTrigger = slot3
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.seamless_event_TriggerAutoExitSeamless
+	slot4.areaId = slot1
+	slot0._currentTrigger = slot4
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.seamless_event_TriggerAutoExitSeamless
 
-	slot3(slot5)
+	slot4(slot6)
 
-	slot3 = facade
-	slot5 = slot3
-	slot3 = slot3.sendMsgToUI
-	slot6 = MessageName
-	slot6 = slot6.EXIT_SEAMLESS
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.sendMsgToUI
+	slot7 = MessageName
+	slot7 = slot7.EXIT_SEAMLESS
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot7.seam_sys_exitArea = slot29
+slot7.seam_sys_exitArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.__LastTipArea = slot1
 
@@ -3902,9 +4297,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_setLastTipArea = slot29
+slot7.seam_sys_setLastTipArea = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__LastTipArea
 
@@ -3915,9 +4310,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_getLastTipArea = slot29
+slot7.seam_sys_getLastTipArea = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__isDynamicSeamless
 
@@ -3928,9 +4323,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_checkIsDynamic = slot29
+slot7.seam_sys_checkIsDynamic = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__isEventSeamless
 
@@ -3941,9 +4336,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_checkIsEventArea = slot29
+slot7.seam_sys_checkIsEventArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_setSwitchState
@@ -3966,9 +4361,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_onSwitchFinished = slot29
+slot7.seam_sys_onSwitchFinished = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__isInSwitching
 
@@ -3979,9 +4374,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_isSwitchSeamless = slot29
+slot7.seam_sys_isSwitchSeamless = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.sceneId
 	slot0._lastSceneId = slot2
@@ -3993,9 +4388,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_destroySpace = slot29
+slot7.seam_sys_destroySpace = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4118,9 +4513,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_isForbidAutoEnter = slot29
+slot7.seam_sys_isForbidAutoEnter = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = slot1.isDynamicPhase
 	slot0.__isDynamicSeamless = slot2
@@ -4151,9 +4546,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_enterSeamless = slot29
+slot7.seam_sys_enterSeamless = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.seam_sys_checkIsEventArea
@@ -4194,9 +4589,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_exitSeamless = slot29
+slot7.seam_sys_exitSeamless = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._currentTrigger
 	--- END OF BLOCK #0 ---
@@ -4231,9 +4626,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_getLastAreaInfo = slot29
+slot7.seam_sys_getLastAreaInfo = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__recorderSeamlessSceneId
 
@@ -4244,9 +4639,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.seam_sys_getLastSeamlessId = slot29
+slot7.seam_sys_getLastSeamlessId = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.seam_sys_getLastAreaInfo
@@ -4263,9 +4658,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.seam_sys_inLastSeamlessArea = slot29
+slot7.seam_sys_inLastSeamlessArea = slot30
 
-slot29 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4512,9 +4907,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot7.seam_sys_inSeamlessArea = slot29
+slot7.seam_sys_inSeamlessArea = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CommonSwitch
 	slot2 = slot2.SEAM_LESS
@@ -4568,7 +4963,7 @@ slot29 = function(slot0, slot1)
 	if slot1 ~= nil then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
@@ -4579,7 +4974,7 @@ slot29 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
@@ -4590,31 +4985,54 @@ slot29 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
 	--- BLOCK #7 24-26, warpins: 1 ---
 	slot2 = slot1.active
-
 	--- END OF BLOCK #7 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 27-27, warpins: 4 ---
-	return
-
+	--- BLOCK #8 27-29, warpins: 1 ---
+	slot2 = slot1.onVehicleActorId
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #9 28-35, warpins: 2 ---
+	--- BLOCK #9 30-33, warpins: 1 ---
+	slot2 = slot1.onVehicleActorId
+	slot3 = 0
+
+	--- END OF BLOCK #9 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 34-34, warpins: 5 ---
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 35-42, warpins: 3 ---
 	slot4 = slot0
 	slot2 = slot0.createTempPlayer
 	slot5 = slot1
@@ -4627,15 +5045,15 @@ slot29 = function(slot0, slot1)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot7.recordEntity = slot29
+slot7.recordEntity = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = nil
 	--- END OF BLOCK #0 ---
@@ -4643,43 +5061,53 @@ slot29 = function(slot0, slot1)
 	if slot1 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot3 = slot0.tempNpcEModel
-	slot2 = slot3[slot1]
+	--- BLOCK #1 4-5, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	if slot2 ~= nil then
+	if slot1 ~= 0 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 8-10, warpins: 1 ---
+	--- BLOCK #2 6-9, warpins: 1 ---
+	slot3 = slot0.tempNpcEModel
+	slot2 = slot3[slot1]
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
 	slot3 = slot0.tempNpcEModel
 	slot4 = nil
 	slot3[slot1] = slot4
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 11-11, warpins: 3 ---
-	return slot2
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 4 ---
+	return slot2
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot7.useRecordTempNpcEModel = slot29
+slot7.useRecordTempNpcEModel = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.isNpc
@@ -4772,56 +5200,88 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.isReuseType = slot29
+slot7.isReuseType = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.tempPlayer
+	slot2 = slot1.staticId
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.staticId
+	--- END OF BLOCK #1 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-11, warpins: 2 ---
+	slot2 = slot0.tempPlayer
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-16, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isReuseType
 	slot5 = slot1
 	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 9-10, warpins: 1 ---
+	--- BLOCK #5 17-18, warpins: 1 ---
 	slot2 = false
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #3 11-11, warpins: 0 ---
+	--- BLOCK #6 19-19, warpins: 0 ---
 	slot2 = true
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 12-12, warpins: 3 ---
+	--- BLOCK #7 20-20, warpins: 3 ---
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot7.needRecordTempNpcEModel = slot29
+slot7.needRecordTempNpcEModel = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.tempNpcEModel
 	slot3 = slot1.staticId
@@ -4899,9 +5359,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.recordTempNpcEModel = slot29
+slot7.recordTempNpcEModel = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.tempNpcEModel
@@ -4946,9 +5406,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.removeTempNpcEModel = slot29
+slot7.removeTempNpcEModel = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isLastPawn
@@ -5006,9 +5466,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.isModelViewLoadDisable = slot29
+slot7.isModelViewLoadDisable = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.tempNpcRecreate
 	slot3 = slot1.staticId
@@ -5021,16 +5481,16 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.markTempNpc = slot29
+slot7.markTempNpc = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.tempNpcRecreate
 	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
 	--- BLOCK #1 5-7, warpins: 1 ---
@@ -5040,7 +5500,7 @@ slot29 = function(slot0)
 	slot6 = if not slot6 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
@@ -5051,47 +5511,34 @@ slot29 = function(slot0)
 	slot6 = if slot6 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-18, warpins: 1 ---
+	--- BLOCK #3 11-17, warpins: 1 ---
 	slot6 = slot5.eModel
 	slot8 = slot6
-	slot6 = slot6.GetComponent
-	slot9 = ClientConst
+	slot6 = slot6.EnableModelViewLoad
+	slot9 = Const
 	slot9 = slot9.COMPONENT_INDEX_MODEL
-	slot6 = slot6(slot8, slot9)
-	--- END OF BLOCK #3 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 19-22, warpins: 1 ---
-	slot9 = slot6
-	slot7 = slot6.EnableModelViewLoad
 	slot10 = true
 
-	slot7(slot9, slot10)
+	slot6(slot8, slot9, slot10)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-19, warpins: 4 ---
 	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 23-24, warpins: 5 ---
-	--- END OF BLOCK #5 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #6
+	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #6 25-29, warpins: 1 ---
+	--- BLOCK #5 20-24, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.clear
 	slot3 = slot0.tempNpcRecreate
@@ -5099,16 +5546,16 @@ slot29 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot7.resetTempNpc = slot29
+slot7.resetTempNpc = slot30
 
-slot29 = function(slot0, slot1)
-	--- BLOCK #0 1-42, warpins: 1 ---
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-46, warpins: 1 ---
 	slot2 = require
 	slot4 = "Core.Common.EntityFactory"
 	slot2 = slot2(slot4)
@@ -5134,6 +5581,10 @@ slot29 = function(slot0, slot1)
 	slot4.lastPawnId = slot9
 	slot9 = slot1.isMainPlayer
 	slot4.isMainPlayer = slot9
+	slot9 = slot1.deformContext
+	slot4.deformContext = slot9
+	slot9 = slot1.deformData
+	slot4.deformData = slot9
 
 	slot9 = function()
 		--- BLOCK #0 1-30, warpins: 1 ---
@@ -5211,9 +5662,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.createTempPlayer = slot29
+slot7.createTempPlayer = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.tempPlayer
 	--- END OF BLOCK #0 ---
@@ -5286,9 +5737,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.replaceTempPlayer = slot29
+slot7.replaceTempPlayer = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.tempPlayer
 	--- END OF BLOCK #0 ---
@@ -5323,9 +5774,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.destroyTempPlayer = slot29
+slot7.destroyTempPlayer = slot30
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.tempPlayer
 	--- END OF BLOCK #0 ---
@@ -5373,78 +5824,111 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot7.isLastPawn = slot29
+slot7.isLastPawn = slot30
 
-slot29 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = slot1.eModel
-	slot2 = slot2.modelComponent
-	slot3 = slot0.tempPlayer
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.tempPlayer
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= nil then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 6-9, warpins: 1 ---
-	slot3 = slot0.tempPlayer
-	slot3 = slot3.eModel
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot2 = slot0.tempPlayer
+	slot4 = slot2
+	slot2 = slot2.hasEModelComponent
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_MODEL
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #1 ---
 
-	if slot3 ~= nil then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 10-21, warpins: 1 ---
-	slot3 = slot0.tempPlayer
-	slot3 = slot3.eModel
-	slot3 = slot3.modelComponent
-	slot6 = slot2
-	slot4 = slot2.SeizeModel
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
-	slot6 = slot2
-	slot4 = slot2.EnableModelViewLoad
-	slot7 = true
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #2 12-22, warpins: 1 ---
+	slot2 = slot0.tempPlayer
+	slot4 = slot2
+	slot2 = slot2.getEModelComponent
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_MODEL
+	slot2 = slot2(slot4, slot5)
+	slot3 = NotNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 22-25, warpins: 2 ---
-	slot5 = slot2
-	slot3 = slot2.EnableModelViewLoad
-	slot6 = true
+	--- BLOCK #3 23-29, warpins: 1 ---
+	slot3 = slot1.eModel
+	slot5 = slot3
+	slot3 = slot3.SeizeModel
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_MODEL
+	slot7 = slot2
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 26-26, warpins: 2 ---
-	return
+	--- BLOCK #4 30-37, warpins: 2 ---
+	slot3 = slot1.eModel
+	slot5 = slot3
+	slot3 = slot3.EnableModelViewLoad
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_MODEL
+	slot7 = true
+
+	slot3(slot5, slot6, slot7)
+
 	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 38-44, warpins: 2 ---
+	slot2 = slot1.eModel
+	slot4 = slot2
+	slot2 = slot2.EnableModelViewLoad
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_MODEL
+	slot6 = true
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 45-45, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot7.seizeTempPlayerModel = slot29
+slot7.seizeTempPlayerModel = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = CommonSwitch
 	slot1 = slot1.SEAM_LESS
@@ -5617,9 +6101,9 @@ slot29 = function(slot0)
 
 end
 
-slot7.startCheckClientReady = slot29
+slot7.startCheckClientReady = slot30
 
-slot29 = function(slot0)
+slot30 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.clientReadyTimerId
 	--- END OF BLOCK #0 ---
@@ -5657,24 +6141,35 @@ slot29 = function(slot0)
 	end
 
 
-	--- BLOCK #3 14-24, warpins: 1 ---
+	--- BLOCK #3 14-35, warpins: 1 ---
 	slot4 = slot1.lastPawnId
-	slot5 = slot0.tempPlayer
+	slot5 = slot1.eModel
 	slot7 = slot5
-	slot5 = slot5.getPosition
-	slot5 = slot5(slot7)
-	slot2 = slot5
-	slot5 = slot0.tempPlayer
-	slot7 = slot5
-	slot5 = slot5.getRotation
-	slot5 = slot5(slot7)
-	slot3 = slot5
+	slot5 = slot5.GetPositionAgentPosEx
+	slot5, slot6, slot7 = slot5(slot7)
+	slot8 = Vector3
+	slot10 = slot5
+	slot11 = slot6
+	slot12 = slot7
+	slot8 = slot8(slot10, slot11, slot12)
+	slot2 = slot8
+	slot8 = slot1.eModel
+	slot10 = slot8
+	slot8 = slot8.GetPositionAgentRotationEx
+	slot8, slot9, slot10, slot11 = slot8(slot10)
+	slot12 = Quaternion
+	slot14 = slot8
+	slot15 = slot9
+	slot16 = slot10
+	slot17 = slot11
+	slot12 = slot12(slot14, slot15, slot16, slot17)
+	slot3 = slot12
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-35, warpins: 2 ---
+	--- BLOCK #4 36-46, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot6 = pg
@@ -5695,7 +6190,7 @@ slot29 = function(slot0)
 	end
 
 
-	--- BLOCK #5 36-65, warpins: 1 ---
+	--- BLOCK #5 47-76, warpins: 1 ---
 	slot8 = slot5
 	slot6 = slot5.setVisible
 	slot9 = ClientConst
@@ -5739,7 +6234,7 @@ slot29 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 66-67, warpins: 2 ---
+	--- BLOCK #6 77-78, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	if slot1 == nil then
@@ -5749,7 +6244,7 @@ slot29 = function(slot0)
 	end
 
 
-	--- BLOCK #7 68-68, warpins: 1 ---
+	--- BLOCK #7 79-79, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #7 ---
@@ -5757,7 +6252,7 @@ slot29 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 69-74, warpins: 2 ---
+	--- BLOCK #8 80-85, warpins: 2 ---
 	slot6 = pg
 	slot6 = slot6.getEntity
 	slot8 = slot4
@@ -5767,11 +6262,11 @@ slot29 = function(slot0)
 	if slot6 ~= nil then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #9 75-76, warpins: 1 ---
+	--- BLOCK #9 86-87, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
 	if slot2 ~= nil then
@@ -5781,7 +6276,7 @@ slot29 = function(slot0)
 	end
 
 
-	--- BLOCK #10 77-100, warpins: 1 ---
+	--- BLOCK #10 88-101, warpins: 1 ---
 	slot7 = EModelUtils
 	slot7 = slot7.setAgentPositionAndRotation
 	slot9 = slot6
@@ -5794,20 +6289,6 @@ slot29 = function(slot0)
 
 	slot7(slot9, slot10, slot11, slot12, slot13)
 
-	slot9 = slot6
-	slot7 = slot6.onSyncPos
-	slot10 = slot2.x
-	slot11 = slot2.y
-	slot12 = slot2.z
-
-	slot7(slot9, slot10, slot11, slot12)
-
-	slot9 = slot6
-	slot7 = slot6.forceSetPos
-	slot10 = slot2
-
-	slot7(slot9, slot10)
-
 	slot9 = slot0
 	slot7 = slot0.seizeTempPlayerModel
 	slot10 = slot6
@@ -5819,31 +6300,31 @@ slot29 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 101-103, warpins: 2 ---
-	slot7 = slot5.curCombatPetId
-	--- END OF BLOCK #11 ---
-
-	if slot7 == slot4 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #12 104-108, warpins: 1 ---
+	--- BLOCK #11 102-106, warpins: 2 ---
 	slot9 = slot5
 	slot7 = slot5.isControllingPet
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #12 107-109, warpins: 1 ---
+	slot7 = slot5.curCombatPetId
+	--- END OF BLOCK #12 ---
+
+	if slot7 == slot4 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 109-113, warpins: 1 ---
+	--- BLOCK #13 110-114, warpins: 1 ---
 	slot9 = slot5
 	slot7 = slot5.onPetReady
 	slot10 = slot6
@@ -5852,10 +6333,50 @@ slot29 = function(slot0)
 
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #14 114-121, warpins: 2 ---
+	--- BLOCK #14 115-119, warpins: 1 ---
+	slot9 = slot5
+	slot7 = slot5.getCurPetEntity
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #14 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 120-125, warpins: 1 ---
+	slot10 = slot5
+	slot8 = slot5.switchToPet
+	slot11 = Const
+	slot11 = slot11.EVENT_ENTER_SCENE
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #16 126-132, warpins: 1 ---
+	slot10 = slot5
+	slot8 = slot5.requestSwitchToPlayer
+	slot11 = Const
+	slot11 = slot11.CLIENT_SWITCH_REASON
+	slot11 = slot11.ManualSwitch
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 133-145, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.game
 	slot7 = slot7.controller
@@ -5866,12 +6387,19 @@ slot29 = function(slot0)
 
 	slot7(slot9, slot10, slot11)
 
-	--- END OF BLOCK #14 ---
+	slot9 = slot5
+	slot7 = slot5.switchToPlayer
+	slot10 = Const
+	slot10 = slot10.EVENT_ENTER_SCENE
 
-	FLOW; TARGET BLOCK #15
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #15 122-131, warpins: 3 ---
+	--- BLOCK #18 146-155, warpins: 5 ---
 	slot9 = slot0
 	slot7 = slot0.destroyTempPlayer
 
@@ -5882,16 +6410,16 @@ slot29 = function(slot0)
 	slot9 = LoggerConst
 	slot9 = slot9.INFO
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #18 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #16 132-136, warpins: 1 ---
+	--- BLOCK #19 156-160, warpins: 1 ---
 	slot7 = logger
 	slot9 = slot7
 	slot7 = slot7.info
@@ -5899,20 +6427,20 @@ slot29 = function(slot0)
 
 	slot7(slot9, slot10)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #17 137-137, warpins: 2 ---
+	--- BLOCK #20 161-161, warpins: 2 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot7.afterClientReady = slot29
+slot7.afterClientReady = slot30
 
 return slot7
 --- END OF BLOCK #0 ---

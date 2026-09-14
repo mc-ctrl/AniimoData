@@ -135,25 +135,26 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #2 8-13, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.pawn
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
-	slot1 = not slot1
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot1 = slot0.pawn
+	slot1 = slot1.eModel
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	if slot1 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 14-15, warpins: 1 ---
+	--- BLOCK #3 12-13, warpins: 2 ---
 	slot1 = false
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 16-16, warpins: 0 ---
+	--- BLOCK #4 14-14, warpins: 1 ---
 	slot1 = true
 
 	--- END OF BLOCK #4 ---
@@ -161,7 +162,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-17, warpins: 4 ---
+	--- BLOCK #5 15-15, warpins: 3 ---
 	return slot1
 	--- END OF BLOCK #5 ---
 

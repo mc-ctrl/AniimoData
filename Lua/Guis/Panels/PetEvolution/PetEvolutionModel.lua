@@ -131,7 +131,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 28-89, warpins: 2 ---
+	--- BLOCK #7 28-94, warpins: 2 ---
 	slot5 = slot2.gender
 	slot3.gender = slot5
 	slot7 = slot0
@@ -161,15 +161,20 @@ slot11 = function(slot0, slot1)
 	slot7 = slot7(slot9)
 	slot3.isBoss = slot7
 	slot7 = Utils
+	slot7 = slot7.isLabelRainbow
+	slot9 = slot2.label
+	slot7 = slot7(slot9)
+	slot3.isMini = slot7
+	slot7 = Utils
 	slot7 = slot7.isLabelShiny
 	slot9 = slot2.label
 	slot7 = slot7(slot9)
 	slot3.isShiny = slot7
 	slot7 = Utils
-	slot7 = slot7.isLabelMagic
+	slot7 = slot7.isLabelDark
 	slot9 = slot2.label
 	slot7 = slot7(slot9)
-	slot3.isMagic = slot7
+	slot3.isDark = slot7
 	slot7 = Utils
 	slot7 = slot7.isLabelVariant
 	slot9 = slot2.label
@@ -201,14 +206,14 @@ slot11 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 90-90, warpins: 1 ---
+	--- BLOCK #8 95-95, warpins: 1 ---
 	slot8 = {}
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 91-124, warpins: 2 ---
+	--- BLOCK #9 96-129, warpins: 2 ---
 	slot9 = LuaUIUtils
 	slot9 = slot9.getElementInfo
 	slot11 = slot4.elementType

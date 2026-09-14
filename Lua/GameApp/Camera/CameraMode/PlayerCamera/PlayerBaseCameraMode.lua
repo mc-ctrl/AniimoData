@@ -1,4 +1,4 @@
---- BLOCK #0 1-102, warpins: 1 ---
+--- BLOCK #0 1-88, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Camera.CameraMode.CameraMode"
 slot0 = slot0(slot2)
@@ -84,12 +84,10 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-24, warpins: 2 ---
+	--- BLOCK #4 16-22, warpins: 2 ---
 	slot0.targetFov = slot1
 	slot1 = nil
 	slot0.fovSpeed = slot1
-	slot1 = false
-	slot0.inClimbState = slot1
 	slot3 = slot0
 	slot1 = slot0.initBaseCamera
 
@@ -103,43 +101,6 @@ slot11 = function(slot0)
 end
 
 slot8.onCtor = slot11
-
-slot11 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.changePivotDampTimer
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot1 = TimerManager
-	slot1 = slot1.removeTimer
-	slot3 = slot0.changePivotDampTimer
-
-	slot1(slot3)
-
-	slot1 = nil
-	slot0.changePivotDampTimer = slot1
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-10, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot8.onDestroy = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -512,12 +473,7 @@ end
 slot8.applyDistanceInfo = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.cancelPivotTimer
-
-	slot1(slot3)
-
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.cameraMode
 	slot1 = slot1.pivotInterp
 	slot2 = Vector3
@@ -539,43 +495,6 @@ slot11 = function(slot0)
 end
 
 slot8.resetPivotDamp = slot11
-
-slot11 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.changePivotDampTimer
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot1 = TimerManager
-	slot1 = slot1.removeTimer
-	slot3 = slot0.changePivotDampTimer
-
-	slot1(slot3)
-
-	slot1 = nil
-	slot0.changePivotDampTimer = slot1
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 10-10, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot8.cancelPivotTimer = slot11
 
 slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -935,50 +854,6 @@ slot11 = function(slot0)
 	slot2 = Vector3
 	slot4 = 0
 	slot5 = 0
-	slot6 = 0
-	slot2 = slot2(slot4, slot5, slot6)
-	slot1.farDistance = slot2
-	slot1 = slot0.cameraMode
-	slot1 = slot1.localOffsetDamper
-	slot2 = Vector3
-	slot4 = 0
-	slot5 = 0
-	slot6 = 0
-	slot2 = slot2(slot4, slot5, slot6)
-	slot1.dampMulti = slot2
-	slot1 = slot0.cameraMode
-	slot1 = slot1.globalOffsetDamper
-	slot2 = Vector3
-	slot4 = 3
-	slot5 = 2
-	slot6 = 3
-	slot2 = slot2(slot4, slot5, slot6)
-	slot1.dampMulti = slot2
-	slot1 = slot0.cameraMode
-	slot1 = slot1.globalOffsetDamper
-	slot2 = Vector3
-	slot4 = 1
-	slot5 = 0.8
-	slot6 = 1
-	slot2 = slot2(slot4, slot5, slot6)
-	slot1.farDistance = slot2
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot8.setClimbDamp = slot11
-
-slot11 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
-	slot1 = slot0.cameraMode
-	slot1 = slot1.localOffsetDamper
-	slot2 = Vector3
-	slot4 = 0
-	slot5 = 0
 	slot6 = 1
 	slot2 = slot2(slot4, slot5, slot6)
 	slot1.dampMulti = slot2
@@ -1189,12 +1064,7 @@ end
 slot8.setCameraFov = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setClimbStateChangePivotDamper
-
-	slot1(slot3)
-
+	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
 
@@ -1203,117 +1073,6 @@ slot11 = function(slot0)
 end
 
 slot8.addCollideMinRadius = slot11
-
-slot11 = function(slot0)
-	--- BLOCK #0 1-23, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.cancelPivotTimer
-
-	slot1(slot3)
-
-	slot1 = slot0.cameraMode
-	slot1 = slot1.pivotInterp
-	slot2 = Vector3
-	slot4 = 0
-	slot5 = 2.5
-	slot6 = 0
-	slot2 = slot2(slot4, slot5, slot6)
-	slot1.dampTime = slot2
-	slot1 = slot0.cameraMode
-	slot1 = slot1.springArm
-	slot2 = 0.5
-	slot1.collideMinRadius = slot2
-	slot1 = TimerManager
-	slot1 = slot1.addTimer
-	slot3 = 3
-
-	slot4 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.resetPivotDamp
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1 = slot1(slot3, slot4)
-	slot0.changePivotDampTimer = slot1
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot8.setClimbStateChangePivotDamper = slot11
-
-slot11 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = slot0.parent
-	slot1 = slot1.targetPlayer
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-6, warpins: 1 ---
-	slot2 = false
-
-	return slot2
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-13, warpins: 2 ---
-	slot4 = slot1
-	slot2 = slot1.isCurrentPlayableHasTag
-	slot5 = TagMask
-	slot5 = slot5.Climb
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 14-19, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.isCurrentPlayableHasTag
-	slot5 = TagMask
-	slot5 = slot5.ClimbSwitching
-	slot2 = slot2(slot4, slot5)
-	slot2 = not slot2
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 20-20, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot8.checkPlayerInClimbing = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -1363,12 +1122,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-20, warpins: 3 ---
-	slot5 = slot0
-	slot3 = slot0.updateClimbState
-
-	slot3(slot5)
-
+	--- BLOCK #3 10-17, warpins: 3 ---
 	slot5 = slot0
 	slot3 = slot0.updateCameraFocusBone
 
@@ -1409,151 +1163,16 @@ slot11 = function(slot0, slot1)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 8-10, warpins: 1 ---
-	slot2 = slot0.inClimbState
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #3 11-18, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.controller
-	slot4 = slot2
-	slot2 = slot2.isInControlEnt
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 19-27, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.controller
-	slot2 = slot2.pawn
-	slot4 = slot2
-	slot2 = slot2.isDeformToPlayer
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #4 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 28-31, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setClimbDamp
-
-	slot2(slot4)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #6 32-35, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.resetCameraDamp
-
-	slot2(slot4)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #7 36-43, warpins: 1 ---
+	--- BLOCK #2 8-15, warpins: 1 ---
 	slot2 = CharacterStateConst
 	slot2 = slot2.isChildOfState
 	slot4 = slot1
 	slot5 = CharacterStateConst
 	slot5 = slot5.GLIDING
 	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #7 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 44-47, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setGlideDamp
-
-	slot2(slot4)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 48-50, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.resetCameraDamp
-
-	slot2(slot4)
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 51-51, warpins: 5 ---
-	return
-	--- END OF BLOCK #10 ---
-
-
-
-end
-
-slot8.refreshCameraDampByState = slot11
-
-slot11 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkPlayerInClimbing
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setInClimbState
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #2 11-13, warpins: 1 ---
-	slot2 = slot0.inClimbState
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -1563,27 +1182,37 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 14-17, warpins: 1 ---
+	--- BLOCK #3 16-19, warpins: 1 ---
 	slot4 = slot0
-	slot2 = slot0.setInClimbState
-	slot5 = false
+	slot2 = slot0.setGlideDamp
 
-	slot2(slot4, slot5)
+	slot2(slot4)
 
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 18-18, warpins: 3 ---
-	return
+	--- BLOCK #4 20-22, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.resetCameraDamp
+
+	slot2(slot4)
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-23, warpins: 3 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot8.updateClimbState = slot11
+slot8.refreshCameraDampByState = slot11
 
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -1620,220 +1249,20 @@ slot11 = function(slot0)
 	slot2 = false
 
 	return slot2
-
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-14, warpins: 2 ---
-	slot4 = slot1
-	slot2 = slot1.isCurrentPlayableHasTag
-	slot5 = TagMask
-	slot5 = slot5.CameraModeBone
-	slot2 = slot2(slot4, slot5)
-	slot3 = slot0.isCameraBoneMode
-	--- END OF BLOCK #2 ---
-
-	if slot3 ~= slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 15-16, warpins: 1 ---
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 17-26, warpins: 1 ---
-	slot3 = slot0.cameraMode
-	slot4 = false
-	slot3.useFollowTransformRotation = slot4
-	slot3 = slot0.cameraMode
-	slot5 = slot3
-	slot3 = slot3.SetFollowEntity
-	slot6 = slot1.eModel
-	slot7 = "Bip001 Pelvis"
-
-	slot3(slot5, slot6, slot7)
-
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 27-29, warpins: 1 ---
-	slot3 = slot0.cameraMode
-	slot4 = nil
-	slot3.followTransform = slot4
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 30-30, warpins: 3 ---
+	--- BLOCK #2 7-7, warpins: 2 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
 slot8.updateCameraFocusBone = slot11
-
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.inClimbState
-	--- END OF BLOCK #0 ---
-
-	if slot2 ~= slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot0.inClimbState = slot1
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #2 7-14, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.controller
-	slot4 = slot2
-	slot2 = slot2.isInControlEnt
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 15-21, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.pawn
-	slot4 = slot2
-	slot2 = slot2.isDeformToPlayer
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 22-39, warpins: 1 ---
-	slot2 = slot0.cameraMode
-	slot3 = true
-	slot2.overridePivot = slot3
-	slot2 = slot0.cameraMode
-	slot3 = Vector3
-	slot5 = 0
-	slot6 = pg
-	slot6 = slot6.pawn
-	slot8 = slot6
-	slot6 = slot6.getCameraClimbHeightInfo
-	slot6 = slot6(slot8)
-	slot7 = 0
-	slot3 = slot3(slot5, slot6, slot7)
-	slot2.overridePivotOffset = slot3
-	slot4 = slot0
-	slot2 = slot0.setClimbStateChangePivotDamper
-
-	slot2(slot4)
-
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #5 40-50, warpins: 1 ---
-	slot2 = slot0.cameraMode
-	slot3 = Vector3
-	slot3 = slot3.zero
-	slot2.overridePivotOffset = slot3
-	slot2 = slot0.cameraMode
-	slot3 = true
-	slot2.overridePivot = slot3
-	slot4 = slot0
-	slot2 = slot0.setClimbStateChangePivotDamper
-
-	slot2(slot4)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #6 51-68, warpins: 1 ---
-	slot2 = slot0.cameraMode
-	slot3 = Vector3
-	slot5 = 0
-	slot6 = pg
-	slot6 = slot6.pawn
-	slot8 = slot6
-	slot6 = slot6.getCameraClimbHeightInfo
-	slot6 = slot6(slot8)
-	slot7 = 0
-	slot3 = slot3(slot5, slot6, slot7)
-	slot2.overridePivotOffset = slot3
-	slot2 = slot0.cameraMode
-	slot3 = true
-	slot2.overridePivot = slot3
-	slot4 = slot0
-	slot2 = slot0.setClimbStateChangePivotDamper
-
-	slot2(slot4)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 69-74, warpins: 1 ---
-	slot2 = slot0.cameraMode
-	slot3 = false
-	slot2.overridePivot = slot3
-	slot4 = slot0
-	slot2 = slot0.setClimbStateChangePivotDamper
-
-	slot2(slot4)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 75-75, warpins: 5 ---
-	return
-	--- END OF BLOCK #8 ---
-
-
-
-end
-
-slot8.setInClimbState = slot11
 
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---

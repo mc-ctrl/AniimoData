@@ -1,11 +1,11 @@
 --- BLOCK #0 1-9, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	RPC_CS_Heartbeat = true,
 	RPC_CS_SyncAIState = true,
-	RPC_CS_OnEcsWorldUpdate = true,
+	RPC_CS_EcsUploadState = true,
 	RPC_CS_CharacterStateChange = true,
-	RPC_SC_Heartbeat = true
+	RPC_SC_Heartbeat = true,
+	RPC_CS_Heartbeat = true
 }
 slot0.RpcLogExclulde = slot1
 

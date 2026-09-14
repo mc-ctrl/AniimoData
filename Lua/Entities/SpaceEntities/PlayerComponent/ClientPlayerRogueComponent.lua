@@ -1,75 +1,84 @@
---- BLOCK #0 1-186, warpins: 1 ---
+--- BLOCK #0 1-211, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.MessageName"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.random_buff_data"
+slot6 = "Const.MessageName"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.buff_config_data"
+slot7 = "Data.random_buff_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.extra_random_buff"
+slot8 = "Data.buff_config_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.DungeonConst"
+slot9 = "Data.extra_random_buff"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.roguelike_data"
+slot10 = "Common.Const.DungeonConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.AbilityConst"
+slot11 = "Data.roguelike_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.ItemConst"
+slot12 = "Data.rogue_difficulty_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Const.UIConst"
+slot13 = "Common.Const.AbilityConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Const.Const"
+slot14 = "Common.Const.ItemConst"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Core.Common.lume"
+slot15 = "Const.UIConst"
 slot13 = slot13(slot15)
-slot14 = slot0.getLogger
-slot16 = "Rogue"
+slot14 = require
+slot16 = "Common.Const.Const"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Utils.Utils"
+slot17 = "Core.Common.lume"
 slot15 = slot15(slot17)
-slot16 = require
-slot18 = "Utils.RogueUtils"
+slot16 = slot1.getLogger
+slot18 = "Rogue"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Utils.ClientAbilityUtils"
+slot19 = "Common.Utils.Utils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.CommonSwitch"
+slot20 = "Utils.RogueUtils"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Core.Common.CallbackHandler"
+slot21 = "Utils.ClientActivityUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Const.RedDotConst"
+slot22 = "Utils.ClientAbilityUtils"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Const.ClientConst"
+slot23 = "Common.CommonSwitch"
 slot21 = slot21(slot23)
-slot22 = slot2.Component
-slot24 = "ClientPlayerRogueComponent"
+slot22 = require
+slot24 = "Core.Common.CallbackHandler"
 slot22 = slot22(slot24)
+slot23 = require
+slot25 = "Const.RedDotConst"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Const.ClientConst"
+slot24 = slot24(slot26)
+slot25 = slot3.Component
+slot27 = "ClientPlayerRogueComponent"
+slot25 = slot25(slot27)
 
-slot23 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clientInit
@@ -83,9 +92,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.ctor = slot23
+slot25.ctor = slot26
 
-slot23 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = true
 
@@ -96,9 +105,88 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.init = slot23
+slot25.init = slot26
 
-slot23 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = false
+	slot3 = slot0.rogueWeeklyLevelPassInfo
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot4 = ipairs
+	slot6 = RogueDifficultyData
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot9 = slot8.elementType
+	--- END OF BLOCK #3 ---
+
+	if slot9 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 13-16, warpins: 1 ---
+	slot2 = true
+	slot9 = slot3[slot7]
+	--- END OF BLOCK #4 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-18, warpins: 1 ---
+	slot9 = false
+
+	return slot9
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-20, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 21-21, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot25.isRogueElementAllLevelPassed = slot26
+
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.buffQuality
 	slot3 = slot1.buffQuality
@@ -181,7 +269,7 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.rogueBuffs
 	--- END OF BLOCK #0 ---
@@ -396,9 +484,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.getRogueBuffLists = slot24
+slot25.getRogueBuffLists = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getRogueBuffLists
@@ -429,9 +517,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.getRogueBuffListWithType = slot24
+slot25.getRogueBuffListWithType = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = RandomBuffData
 	slot2 = slot2[slot1]
@@ -484,9 +572,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.getRogueBuffListWithBuffId = slot24
+slot25.getRogueBuffListWithBuffId = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #0 ---
@@ -577,9 +665,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.getRogueBuffCount = slot24
+slot25.getRogueBuffCount = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = ItemConst
 	slot4 = slot4.ITEM_SPECIAL_ROGUE_COIN
@@ -627,9 +715,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.EVNET_OnMoneyChange = slot24
+slot25.EVNET_OnMoneyChange = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.rogueBuffs
 	--- END OF BLOCK #0 ---
@@ -750,9 +838,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.getRogueBuffs = slot24
+slot25.getRogueBuffs = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = facade
 	slot5 = slot3
@@ -769,9 +857,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueTalentLevelUnlockChanged = slot24
+slot25.onRogueTalentLevelUnlockChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = facade
 	slot5 = slot3
@@ -788,9 +876,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueTalentNodeLvMapChanged = slot24
+slot25.onRogueTalentNodeLvMapChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = facade
 	slot5 = slot3
@@ -807,9 +895,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueTalentExpChanged = slot24
+slot25.onRogueTalentExpChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -852,9 +940,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueWeeklyBossKillCountChanged = slot24
+slot25.onRogueWeeklyBossKillCountChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -906,9 +994,218 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueWeeklyBossRewardInfoChanged = slot24
+slot25.onRogueWeeklyBossRewardInfoChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.clearTowerLevelDetailWeeklyRecordCache
+
+	slot3(slot5)
+
+	slot3 = ClientActivityUtils
+	slot3 = slot3.refreshMockBattleRedDot
+
+	slot3()
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.ROGUE_SEASON_CHANGE
+	slot7 = {}
+	slot7.oldV = slot1
+	slot7.newV = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot25.onRogueSeasonIdChanged = slot27
+
+slot27 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.INFO
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-18, warpins: 1 ---
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "onRogueSeasonLevelPassInfoChanged ov:%s, nv:%s"
+	slot7 = inspect
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	slot8 = inspect
+	slot10 = slot2
+	MULTRES = slot8(slot10)
+
+	slot3(slot5, slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-29, warpins: 2 ---
+	slot3 = ClientActivityUtils
+	slot3 = slot3.refreshMockBattleRedDot
+
+	slot3()
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.ROGUE_SEASON_WEEKLY_REWARD_UPDATE
+	slot7 = {}
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot25.onRogueSeasonLevelPassInfoChanged = slot27
+
+slot27 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.INFO
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-18, warpins: 1 ---
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "onRogueWeeklyLevelPassInfoChanged ov:%s, nv:%s"
+	slot7 = inspect
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	slot8 = inspect
+	slot10 = slot2
+	MULTRES = slot8(slot10)
+
+	slot3(slot5, slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-29, warpins: 2 ---
+	slot3 = ClientActivityUtils
+	slot3 = slot3.refreshMockBattleRedDot
+
+	slot3()
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.ROGUE_SEASON_WEEKLY_REWARD_UPDATE
+	slot7 = {}
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot25.onRogueWeeklyLevelPassInfoChanged = slot27
+
+slot27 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.INFO
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-18, warpins: 1 ---
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "onRogueWeeklyLevelRewardInfoChanged ov:%s, nv:%s"
+	slot7 = inspect
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	slot8 = inspect
+	slot10 = slot2
+	MULTRES = slot8(slot10)
+
+	slot3(slot5, slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-29, warpins: 2 ---
+	slot3 = ClientActivityUtils
+	slot3 = slot3.refreshMockBattleRedDot
+
+	slot3()
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.ROGUE_SEASON_WEEKLY_REWARD_UPDATE
+	slot7 = {}
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot25.onRogueWeeklyLevelRewardInfoChanged = slot27
+
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -960,9 +1257,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onCurRogueLayerChanged = slot24
+slot25.onCurRogueLayerChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -1014,9 +1311,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onCurRogueLevelChanged = slot24
+slot25.onCurRogueLevelChanged = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot4 = slot0.subject
 	slot6 = slot4
@@ -1045,9 +1342,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.onRogueDataValueChange = slot24
+slot25.onRogueDataValueChange = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0.subject
 	slot5 = slot3
@@ -1076,9 +1373,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueDataValueAdd = slot24
+slot25.onRogueDataValueAdd = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0.subject
 	slot5 = slot3
@@ -1107,9 +1404,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueDataValueRemove = slot24
+slot25.onRogueDataValueRemove = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = RandomBuffData
 	slot3 = slot3[slot1]
@@ -1183,9 +1480,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueBuffsValueAdd = slot24
+slot25.onRogueBuffsValueAdd = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = RandomBuffData
 	slot3 = slot3[slot1]
@@ -1259,9 +1556,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueBuffsValueRemove = slot24
+slot25.onRogueBuffsValueRemove = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = RandomBuffData
 	slot4 = slot4[slot3]
@@ -1335,9 +1632,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.onRogueBuffsValueChanged = slot24
+slot25.onRogueBuffsValueChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = facade
 	slot5 = slot3
@@ -1354,9 +1651,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onCurOptionListChanged = slot24
+slot25.onCurOptionListChanged = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = facade
 	slot5 = slot3
@@ -1373,9 +1670,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.onRogueHarvestPendingRewardsChanged = slot24
+slot25.onRogueHarvestPendingRewardsChanged = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -1391,9 +1688,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.setRoguePets = slot24
+slot25.setRoguePets = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CommonSwitch
 	slot2 = slot2.ROGUELIKE
@@ -1443,9 +1740,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.startRogue = slot24
+slot25.startRogue = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -1461,9 +1758,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.reStartRogue = slot24
+slot25.reStartRogue = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -1479,9 +1776,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.startRandomRogue = slot24
+slot25.startRandomRogue = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -1525,9 +1822,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.resetRogue = slot24
+slot25.resetRogue = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1536,9 +1833,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.clientInit = slot24
+slot25.clientInit = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = RogueUtils
 	slot2 = false
@@ -1561,9 +1858,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.clientClear = slot24
+slot25.clientClear = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -1772,10 +2069,44 @@ slot24 = function(slot0)
 
 end
 
-slot22.getRogueBattleRecord = slot24
+slot25.getRogueBattleRecord = slot27
 
-slot24 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot27 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.checkUIOpen
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_TOWER_EVENT_DIALOGUE
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.close
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_TOWER_EVENT_DIALOGUE
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-25, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -1785,15 +2116,15 @@ slot24 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot22.RPC_SC_StartRogue = slot24
+slot25.RPC_SC_StartRogue = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
@@ -1879,9 +2210,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.RPC_SC_AddRogueUltimateAbility = slot24
+slot25.RPC_SC_AddRogueUltimateAbility = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1890,9 +2221,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.RPC_SC_UpgradeRogueUltimateAbility = slot24
+slot25.RPC_SC_UpgradeRogueUltimateAbility = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = RogueUtils
 	slot1 = slot1.isInRogueSpace
@@ -1931,9 +2262,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.RPC_SC_BeforeRogueDiceReward = slot24
+slot25.RPC_SC_BeforeRogueDiceReward = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3)
+slot27 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = 0
 	--- END OF BLOCK #0 ---
@@ -1985,9 +2316,9 @@ slot24 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot22.RPC_SC_SyncRogueDiceReward = slot24
+slot25.RPC_SC_SyncRogueDiceReward = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -2026,7 +2357,7 @@ slot24 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
@@ -2045,7 +2376,7 @@ slot24 = function(slot0, slot1)
 
 
 	--- BLOCK #4 25-25, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -2069,7 +2400,31 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 30-39, warpins: 2 ---
+	--- BLOCK #7 30-33, warpins: 2 ---
+	slot4 = slot0.space
+	slot4 = slot4.resetGroundReady
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 34-37, warpins: 1 ---
+	slot4 = slot0.space
+	slot6 = slot4
+	slot4 = slot4.resetGroundReady
+
+	slot4(slot6)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 38-47, warpins: 2 ---
 	slot6 = slot2
 	slot4 = slot2.ChangeSceneLevelId
 	slot7 = slot3
@@ -2080,16 +2435,16 @@ slot24 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 40-46, warpins: 1 ---
+	--- BLOCK #10 48-54, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.audio
@@ -2099,22 +2454,22 @@ slot24 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 47-47, warpins: 3 ---
+	--- BLOCK #11 55-55, warpins: 3 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot22.playRougeSceneScan = slot24
+slot25.playRougeSceneScan = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.selectRoguePets
@@ -2255,9 +2610,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.getCurSelectPetsInner = slot24
+slot25.getCurSelectPetsInner = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getCurSelectPetsInner
@@ -2274,7 +2629,7 @@ slot24 = function(slot0, slot1)
 	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
 	--- BLOCK #1 15-20, warpins: 1 ---
@@ -2287,7 +2642,7 @@ slot24 = function(slot0, slot1)
 	slot10 = if slot10 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
@@ -2298,11 +2653,27 @@ slot24 = function(slot0, slot1)
 	if slot11 <= slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 24-28, warpins: 1 ---
+	--- BLOCK #3 24-31, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.me
+	slot13 = slot11
+	slot11 = slot11.isPetPutInHomeland
+	slot14 = slot10
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #3 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 32-36, warpins: 1 ---
 	slot11 = table
 	slot11 = slot11.insert
 	slot13 = slot3
@@ -2310,30 +2681,30 @@ slot24 = function(slot0, slot1)
 
 	slot11(slot13, slot14)
 
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 29-30, warpins: 4 ---
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 37-38, warpins: 5 ---
+	--- END OF BLOCK #5 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #5
+	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #5 31-31, warpins: 1 ---
+	--- BLOCK #6 39-39, warpins: 1 ---
 	return slot3
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot22.getCurSelectPets = slot24
+slot25.getCurSelectPets = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getClientInfo
@@ -2351,9 +2722,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.getRogueLevelHistoryBattlePet = slot24
+slot25.getRogueLevelHistoryBattlePet = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getClientInfo
@@ -2397,9 +2768,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.setRogueLevelHistoryBattlePet = slot24
+slot25.setRogueLevelHistoryBattlePet = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getClientInfo
@@ -2415,9 +2786,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.getRogueTalentLastCheckLevel = slot24
+slot25.getRogueTalentLastCheckLevel = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setClientInfo
@@ -2436,9 +2807,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.setRogueTalentLastCheckLevel = slot24
+slot25.setRogueTalentLastCheckLevel = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -2454,9 +2825,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.reqRogueExchangeReward = slot24
+slot25.reqRogueExchangeReward = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot27 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot6 = facade
 	slot8 = slot6
@@ -2673,9 +3044,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot22.RPC_SC_ReqRogueExchangeRewardResult = slot24
+slot25.RPC_SC_ReqRogueExchangeRewardResult = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -2691,9 +3062,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.initRogueSeriesInfo = slot24
+slot25.initRogueSeriesInfo = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -2726,9 +3097,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.selectRogueSeries = slot24
+slot25.selectRogueSeries = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -2744,9 +3115,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.unlockTalent = slot24
+slot25.unlockTalent = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -2762,9 +3133,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.upgradeTalent = slot24
+slot25.upgradeTalent = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot27 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.serverMsg
@@ -2787,9 +3158,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.reqSweepLevel = slot24
+slot25.reqSweepLevel = slot27
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot27 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot7 = slot2
@@ -2804,9 +3175,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22._reqSweepLevelCallback = slot24
+slot25._reqSweepLevelCallback = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -2821,9 +3192,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.resetRogueTalent = slot24
+slot25.resetRogueTalent = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -2839,9 +3210,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22.getRogueWeeklyReward = slot24
+slot25.getRogueWeeklyReward = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -2856,9 +3227,45 @@ slot24 = function(slot0)
 
 end
 
-slot22.getRogueAllWeeklyReward = slot24
+slot25.getRogueAllWeeklyReward = slot27
 
-slot24 = function(slot0)
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.serverMsg
+	slot5 = "RPC_CS_GetRogueWeeklyLevelReward"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot25.getRogueSeasonWeeklyReward = slot27
+
+slot27 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.serverMsg
+	slot5 = "RPC_CS_GetAllRogueWeeklyLevelReward"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot25.getAllRogueSeasonWeeklyReward = slot27
+
+slot27 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -2873,9 +3280,9 @@ slot24 = function(slot0)
 
 end
 
-slot22.getDailyReward = slot24
+slot25.getDailyReward = slot27
 
-slot24 = function(slot0, slot1, slot2)
+slot27 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -2896,9 +3303,9 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot22.selectRogueEventOption = slot24
+slot25.selectRogueEventOption = slot27
 
-slot24 = function(slot0, slot1)
+slot27 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2907,9 +3314,105 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot22._selectRogueEventOptionCallback = slot24
+slot25._selectRogueEventOptionCallback = slot27
 
-return slot22
+slot27 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = {}
+	slot2 = ClientConst
+	slot2 = slot2.CACHE_TYPE_FLAG
+	slot2 = slot2.USER
+	slot3 = ipairs
+	slot5 = RogueDifficultyData
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot8 = slot7.elementType
+	--- END OF BLOCK #1 ---
+
+	if slot8 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot9 = slot1[slot8]
+	--- END OF BLOCK #2 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-46, warpins: 1 ---
+	slot9 = true
+	slot1[slot8] = slot9
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.prefsCacheUtils
+	slot11 = slot9
+	slot9 = slot9.deleteKey
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "%s_%s"
+	slot15 = ClientConst
+	slot15 = slot15.PrefKey
+	slot15 = slot15.TowerLevelDetailOpenWeek
+	slot16 = slot8
+	slot12 = slot12(slot14, slot15, slot16)
+	slot13 = slot2
+
+	slot9(slot11, slot12, slot13)
+
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.prefsCacheUtils
+	slot11 = slot9
+	slot9 = slot9.deleteKey
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "%s_%s"
+	slot15 = ClientConst
+	slot15 = slot15.PrefKey
+	slot15 = slot15.TowerLevelDetailLastDifficulty
+	slot16 = slot8
+	slot12 = slot12(slot14, slot15, slot16)
+	slot13 = slot2
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 47-48, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 49-49, warpins: 1 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot25.clearTowerLevelDetailWeeklyRecordCache = slot27
+
+return slot25
 --- END OF BLOCK #0 ---
 
 

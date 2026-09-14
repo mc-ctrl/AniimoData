@@ -1,4 +1,4 @@
---- BLOCK #0 1-478, warpins: 1 ---
+--- BLOCK #0 1-516, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -8,25 +8,25 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	version = 93,
+	useForRoute = false,
 	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_RogueLike_Gauntlet_FarBurst1",
-	useForRoute = false
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_RogueLike_Gauntlet_FarBurst1"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	const = 0,
-	value = "0",
+	type = "float",
 	name = "disToTgtForSkillMon",
-	type = "float"
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	const = 0,
-	value = "0",
+	type = "float",
 	name = "goBackDist",
-	type = "float"
+	value = "0"
 }
 slot4[2] = slot5
 slot3.pars = slot4
@@ -532,169 +532,227 @@ slot12.node = slot13
 slot11[5] = slot12
 slot12 = {}
 slot13 = {
-	id = "377",
-	class = "SelectorProbability"
+	id = "381",
+	class = "Selector"
 }
 slot14 = {}
-slot15 = {
-	UntilSuccessOrEnd = false
-}
-slot14[1] = slot15
 slot13.properties = slot14
 slot14 = {}
 slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "378",
-	class = "DecoratorWeight"
+	id = "377",
+	class = "SelectorProbability"
 }
 slot17 = {}
 slot18 = {
-	DecorateWhenChildEnds = "false"
+	UntilSuccessOrEnd = false
 }
 slot17[1] = slot18
-slot18 = {}
-slot19 = {
-	const = 1
-}
-slot18.Weight = slot19
-slot17[2] = slot18
 slot16.properties = slot17
 slot17 = {}
 slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "365",
-	class = "Action"
+	id = "378",
+	class = "DecoratorWeight"
 }
 slot20 = {}
+slot21 = {
+	DecorateWhenChildEnds = "false"
+}
+slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	func = "castSkill"
+	const = 1
 }
-slot23 = {}
-slot24 = {
-	field = "tgt"
-}
-slot23[1] = slot24
-slot24 = {
-	const = 70020201
-}
-slot23[2] = slot24
-slot24 = {
-	const = false
-}
-slot23[3] = slot24
-slot24 = {
-	const = 0
-}
-slot23[4] = slot24
-slot24 = {
-	const = true
-}
-slot23[5] = slot24
-slot24 = {}
-slot25 = slot0.CastAbilitySourceType
-slot25 = slot25.Normal
-slot24.const = slot25
-slot23[6] = slot24
-slot22.params = slot23
-slot21.Method = slot22
-slot20[1] = slot21
-slot21 = {
-	ResultOption = "BT_INVALID"
-}
+slot21.Weight = slot22
 slot20[2] = slot21
-slot21 = {
-	ResultResumeOption = "BT_ResumeTree"
-}
-slot20[3] = slot21
 slot19.properties = slot20
 slot20 = {}
 slot19.attachments = slot20
 slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "365",
+	class = "Action"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	func = "castSkill"
+}
+slot26 = {}
+slot27 = {
+	field = "tgt"
+}
+slot26[1] = slot27
+slot27 = {
+	const = 70020201
+}
+slot26[2] = slot27
+slot27 = {
+	const = false
+}
+slot26[3] = slot27
+slot27 = {
+	const = 0
+}
+slot26[4] = slot27
+slot27 = {
+	const = true
+}
+slot26[5] = slot27
+slot27 = {}
+slot28 = slot0.CastAbilitySourceType
+slot28 = slot28.Normal
+slot27.const = slot28
+slot26[6] = slot27
+slot25.params = slot26
+slot24.Method = slot25
+slot23[1] = slot24
+slot24 = {
+	ResultOption = "BT_INVALID"
+}
+slot23[2] = slot24
+slot24 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "379",
+	class = "DecoratorWeight"
+}
+slot20 = {}
+slot21 = {
+	DecorateWhenChildEnds = "false"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	const = 1
+}
+slot21.Weight = slot22
+slot20[2] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "376",
+	class = "Action"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	func = "castSkill"
+}
+slot26 = {}
+slot27 = {
+	field = "tgt"
+}
+slot26[1] = slot27
+slot27 = {
+	const = 70020100
+}
+slot26[2] = slot27
+slot27 = {
+	const = false
+}
+slot26[3] = slot27
+slot27 = {
+	const = 0
+}
+slot26[4] = slot27
+slot27 = {
+	const = true
+}
+slot26[5] = slot27
+slot27 = {}
+slot28 = slot0.CastAbilitySourceType
+slot28 = slot28.Normal
+slot27.const = slot28
+slot26[6] = slot27
+slot25.params = slot26
+slot24.Method = slot25
+slot23[1] = slot24
+slot24 = {
+	ResultOption = "BT_INVALID"
+}
+slot23[2] = slot24
+slot24 = {
+	ResultResumeOption = "BT_ResumeTree"
+}
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[1] = slot15
 slot15 = {}
 slot16 = {
-	id = "379",
-	class = "DecoratorWeight"
+	id = "380",
+	class = "Action"
 }
 slot17 = {}
-slot18 = {
-	DecorateWhenChildEnds = "false"
-}
-slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	const = 1
+	func = "turnToTarget"
 }
-slot18.Weight = slot19
+slot20 = {}
+slot21 = {
+	field = "tgt"
+}
+slot20[1] = slot21
+slot21 = {
+	const = false
+}
+slot20[2] = slot21
+slot21 = {
+	const = 3
+}
+slot20[3] = slot21
+slot21 = {
+	const = false
+}
+slot20[4] = slot21
+slot19.params = slot20
+slot18.Method = slot19
+slot17[1] = slot18
+slot18 = {
+	ResultOption = "BT_INVALID"
+}
 slot17[2] = slot18
+slot18 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot17[3] = slot18
 slot16.properties = slot17
 slot17 = {}
 slot16.attachments = slot17
 slot17 = {}
-slot18 = {}
-slot19 = {
-	id = "376",
-	class = "Action"
-}
-slot20 = {}
-slot21 = {}
-slot22 = {
-	func = "castSkill"
-}
-slot23 = {}
-slot24 = {
-	field = "tgt"
-}
-slot23[1] = slot24
-slot24 = {
-	const = 70020100
-}
-slot23[2] = slot24
-slot24 = {
-	const = false
-}
-slot23[3] = slot24
-slot24 = {
-	const = 0
-}
-slot23[4] = slot24
-slot24 = {
-	const = true
-}
-slot23[5] = slot24
-slot24 = {}
-slot25 = slot0.CastAbilitySourceType
-slot25 = slot25.Normal
-slot24.const = slot25
-slot23[6] = slot24
-slot22.params = slot23
-slot21.Method = slot22
-slot20[1] = slot21
-slot21 = {
-	ResultOption = "BT_INVALID"
-}
-slot20[2] = slot21
-slot21 = {
-	ResultResumeOption = "BT_ResumeTree"
-}
-slot20[3] = slot21
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot19.children = slot20
-slot18.node = slot19
-slot17[1] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[2] = slot15

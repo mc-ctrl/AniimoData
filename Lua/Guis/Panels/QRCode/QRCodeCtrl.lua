@@ -141,7 +141,7 @@ slot8 = function(slot0, slot1)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #7
 	end
 
 
@@ -152,14 +152,14 @@ slot8 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #7
 	end
 
 
 	--- BLOCK #5 20-24, warpins: 1 ---
-	slot2 = LuaUIUtils
-	slot2 = slot2.isOverseas
-	slot2 = slot2()
+	slot2 = EventOfficialGroupData
+	slot3 = slot1.id
+	slot2 = slot2[slot3]
 	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
@@ -169,72 +169,26 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 25-26, warpins: 1 ---
-	slot2 = 2
+	--- BLOCK #6 25-33, warpins: 1 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.text1UBaseText
+	slot6 = pg
+	slot6 = slot6.getLocalizationText
+	slot8 = slot2.qrcodeDesc
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-27, warpins: 1 ---
-	slot2 = 1
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 28-31, warpins: 2 ---
-	slot3 = EventOfficialGroupData
-	slot3 = slot3[slot2]
-	--- END OF BLOCK #8 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 32-35, warpins: 1 ---
-	slot3 = EventOfficialGroupData
-	slot3 = slot3[slot2]
-	slot4 = slot1.id
-	slot3 = slot3[slot4]
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 36-37, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 38-46, warpins: 1 ---
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot0.view
-	slot6 = slot6.text1UBaseText
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
-	slot9 = slot3.qrcodeDesc
-	MULTRES = slot7(slot9)
-
-	slot4(slot6, MULTRES)
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 47-47, warpins: 4 ---
+	--- BLOCK #7 34-34, warpins: 4 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #7 ---
 
 
 

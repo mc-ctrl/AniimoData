@@ -265,8 +265,8 @@ slot10 = function(slot0)
 	--- BLOCK #0 1-75, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		MODE_REWARD = 2,
-		MODE_PET = 1
+		MODE_PET = 1,
+		MODE_REWARD = 2
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

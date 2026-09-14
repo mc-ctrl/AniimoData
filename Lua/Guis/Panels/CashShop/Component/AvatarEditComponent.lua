@@ -1,27 +1,27 @@
 --- BLOCK #0 1-99, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.Helper.UIComponent"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.Utils"
+slot4 = "Guis.Helper.UIComponent"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.ClientModelUtils"
+slot5 = "Common.Utils.Utils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Guis.Utils.AvatarUtils"
+slot6 = "Utils.ClientModelUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.appearance_point_enum"
+slot7 = "Guis.Utils.AvatarUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.appearance_data"
+slot8 = "Data.appearance_point_enum"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.Avatar.avatar_preset_detail_data"
+slot9 = "Data.appearance_data"
 slot7 = slot7(slot9)
 slot8 = require
 slot10 = "CustomTypes.AppearanceJewelryInfo"
@@ -29,9 +29,9 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Data.appearance_color_jewelry_data"
 slot9 = slot9(slot11)
-slot10 = slot0.LightClass
+slot10 = slot1.LightClass
 slot12 = "AvatarEditComponent"
-slot13 = slot1
+slot13 = slot2
 slot10 = slot10(slot12, slot13)
 slot11 = pg
 slot11 = slot11.global
@@ -1189,14 +1189,13 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 34-49, warpins: 2 ---
+	--- BLOCK #12 34-48, warpins: 2 ---
 	slot0.accessoryId = slot1
 	slot5 = ClientModelUtils
 	slot5 = slot5.getAccessoryReactionKeyAndKindKey
 	slot7 = slot1
 	slot8 = slot3.eModel
-	slot8 = slot8.modelComponent
-	slot8 = slot8.modelView
+	slot8 = slot8.modelModelView
 	slot8 = slot8.modelInfo
 	slot10 = slot8
 	slot8 = slot8.GetMakeUpPartAssetId
@@ -1213,7 +1212,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 50-51, warpins: 1 ---
+	--- BLOCK #13 49-50, warpins: 1 ---
 	slot5 = false
 
 	return slot5
@@ -1223,7 +1222,7 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 52-58, warpins: 2 ---
+	--- BLOCK #14 51-57, warpins: 2 ---
 	slot7 = slot3
 	slot5 = slot3.getAppearanceConfigId
 	slot8 = slot0.slotId
@@ -1238,7 +1237,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #15 59-64, warpins: 1 ---
+	--- BLOCK #15 58-63, warpins: 1 ---
 	slot6 = slot0.avatarComponent
 	slot8 = slot6
 	slot6 = slot6.equipAccessory
@@ -1252,7 +1251,7 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 65-76, warpins: 2 ---
+	--- BLOCK #16 64-75, warpins: 2 ---
 	slot6 = avatarMgr
 	slot6 = slot6.avatarMakeup
 	slot8 = slot6
@@ -2482,10 +2481,9 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-26, warpins: 2 ---
+	--- BLOCK #5 17-25, warpins: 2 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
+	slot4 = slot4.modelModelView
 	slot4 = slot4.modelInfo
 	slot6 = slot4
 	slot4 = slot4.GetAttachModelInfo
@@ -2500,7 +2498,7 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 27-28, warpins: 1 ---
+	--- BLOCK #6 26-27, warpins: 1 ---
 	slot5 = {}
 
 	return slot5
@@ -2510,7 +2508,7 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 29-54, warpins: 2 ---
+	--- BLOCK #7 28-53, warpins: 2 ---
 	slot5 = {}
 	slot5.configId = slot1
 	slot6 = slot4.attachHp
@@ -2570,66 +2568,56 @@ slot12 = function(slot0, slot1)
 
 	--- BLOCK #2 6-9, warpins: 2 ---
 	slot2 = slot0.avatarComponent
-	slot2 = slot2.curPresetKey
+	slot2 = slot2.avatarScene
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-11, warpins: 1 ---
-	slot3 = AvatarPresetDetailData
-	slot3 = slot3[slot2]
+	--- BLOCK #3 10-14, warpins: 1 ---
+	slot2 = slot0.avatarComponent
+	slot2 = slot2.avatarScene
+	slot4 = slot2
+	slot2 = slot2.getCurEntity
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-13, warpins: 2 ---
+	--- BLOCK #4 15-24, warpins: 2 ---
+	slot3 = slot0.avatarComponent
+	slot3 = slot3.curPresetKey
+	slot4 = AvatarUtils
+	slot4 = slot4.getPartAssetId
+	slot6 = slot2
+	slot7 = "makeup"
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
 	--- END OF BLOCK #4 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 14-15, warpins: 1 ---
-	slot4 = nil
+	--- BLOCK #5 25-26, warpins: 1 ---
+	slot5 = nil
 
-	return slot4
+	return slot5
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 16-18, warpins: 2 ---
-	slot4 = slot3.makeup
-	--- END OF BLOCK #6 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 19-20, warpins: 1 ---
-	slot5 = nil
-
-	return slot5
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 21-30, warpins: 2 ---
+	--- BLOCK #6 27-36, warpins: 2 ---
 	slot5 = require
 	slot7 = string
 	slot7 = slot7.format
@@ -2638,93 +2626,93 @@ slot12 = function(slot0, slot1)
 	MULTRES = slot7(slot9, slot10)
 	slot5 = slot5(MULTRES)
 	slot6 = pairs
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #6 ---
 
 	slot8 = if not slot5 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #9 31-31, warpins: 1 ---
-	slot8 = {}
-	--- END OF BLOCK #9 ---
+	--- BLOCK #7 37-37, warpins: 1 ---
+	slot8 = EMPTY_TABLE
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #10 32-33, warpins: 2 ---
+	--- BLOCK #8 38-39, warpins: 2 ---
 	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #11 34-37, warpins: 1 ---
+	--- BLOCK #9 40-43, warpins: 1 ---
 	slot11 = ipairs
 	slot13 = slot10.reactionList
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #9 ---
 
 	slot13 = if not slot13 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #12 38-38, warpins: 1 ---
-	slot13 = {}
-	--- END OF BLOCK #12 ---
+	--- BLOCK #10 44-44, warpins: 1 ---
+	slot13 = EMPTY_TABLE
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #13 39-40, warpins: 2 ---
+	--- BLOCK #11 45-46, warpins: 2 ---
 	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #14 41-43, warpins: 1 ---
+	--- BLOCK #12 47-49, warpins: 1 ---
 	slot16 = slot15.key
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #12 ---
 
 	if slot16 == slot1 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #15 44-44, warpins: 1 ---
+	--- BLOCK #13 50-50, warpins: 1 ---
 	return slot15
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #16 45-46, warpins: 3 ---
-	--- END OF BLOCK #16 ---
+	--- BLOCK #14 51-52, warpins: 3 ---
+	--- END OF BLOCK #14 ---
 
 	for slot14, slot15 in slot11, slot12, slot13
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #17
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #17 47-48, warpins: 2 ---
-	--- END OF BLOCK #17 ---
+	--- BLOCK #15 53-54, warpins: 2 ---
+	--- END OF BLOCK #15 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #18
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #18 49-49, warpins: 1 ---
+	--- BLOCK #16 55-55, warpins: 1 ---
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #16 ---
 
 
 

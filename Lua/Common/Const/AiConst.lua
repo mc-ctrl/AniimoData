@@ -1,4 +1,4 @@
---- BLOCK #0 1-82, warpins: 1 ---
+--- BLOCK #0 1-90, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -16,6 +16,7 @@ slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = {}
 slot6 = {
+	MODE = true,
 	NAVMESH_LOG = false,
 	SELFIE = false,
 	PERCEPTIBILITY_NO_IMP = false,
@@ -23,15 +24,16 @@ slot6 = {
 	PERCEPTIBILITY = false,
 	EVENT_LOG = false,
 	PORT = 60779,
-	ENT_ID = 0,
-	MODE = true
+	ENT_ID = 0
 }
+slot7 = UNITY_EDITOR
+slot6.REGISTRATION_INFO = slot7
 slot7 = {
+	Console_Receive = false,
 	Console_Send_Process = false,
 	Console_Send_Property = false,
 	EntId = -1,
-	Enable = false,
-	Console_Receive = false
+	Enable = false
 }
 slot6.NODE_LOG = slot7
 slot5.AI_DEBUG = slot6
@@ -41,11 +43,20 @@ slot6 = true
 slot5.CT_V2 = slot6
 slot6 = true
 slot5.GLOBAL_OPEN_TICK = slot6
-slot6 = {}
+slot6 = slot4.CACHED_EMPTY_TABLE
 slot5.DefaultNullTable = slot6
 slot6 = {
-	Normal = 2,
-	Special = 1
+	AllShinning = "allShinningBehavTable",
+	ShinningAdditive = "shinningAdditiveBehavTable",
+	All = "allBehavTable",
+	EliteAdditive = "eliteAdditiveBehavTable",
+	Additive = "additiveBehavTable",
+	AllElite = "allEliteBehavTable"
+}
+slot5.BEHAVIOR_TABLE_SLOT = slot6
+slot6 = {
+	Special = 1,
+	Normal = 2
 }
 slot5.TICK_INTERVAL = slot6
 slot6 = 0.5
@@ -53,18 +64,18 @@ slot5.PERCEPTIBILITY_INTERVAL = slot6
 slot6 = 1
 slot5.PERCEPTIBILITY_NO_IMP_INTERVAL = slot6
 slot6 = {
+	High = 1,
 	VeryLow = 10,
 	Low = 5,
-	Mid = 2,
-	High = 1
+	Mid = 2
 }
 slot5.LOD = slot6
 slot6 = {
+	High = 1,
 	AllMulti = 300,
 	VeryLow = 25,
 	Low = 10,
-	Mid = 3,
-	High = 1
+	Mid = 3
 }
 slot5.TICK_TRIGGER_LOD = slot6
 slot6 = "TickTriggerLOD"
@@ -72,34 +83,54 @@ slot5.TICK_TRIGGER_LOD_NAME = slot6
 slot6 = "TickTrigger"
 slot5.TICK_TRIGGER_NAME = slot6
 slot6 = {
-	Default = 0,
-	AFKMode = 1
+	AFKMode = 1,
+	Default = 0
 }
 slot5.ForceRunBtReason = slot6
 slot6 = {
+	resume = 4,
 	pause = 3,
 	enter = 1,
-	exit = 2,
-	resume = 4
+	exit = 2
 }
 slot5.ResetStateType = slot6
 slot6 = {
+	Capture = 16,
+	ClientVisible = 15,
+	Dead = 14,
+	KnockUp = 13,
+	KnockBack = 12,
+	Charm = 11,
+	BreakFall = 10,
+	AppearDash = 9,
+	Break = 8,
+	Authority = 7,
+	Summon = 6,
+	InHit = 5,
+	Stun = 4,
+	Visible = 3,
+	Control = 2,
+	GM = 1,
+	HomeInitPetData = 34,
+	UltimateAbility = 35,
+	SupportAbility = 36,
+	SheepGather = 37,
+	BeCarry = 38,
 	Default = 0,
+	Vehicle = 39,
+	NpcDuelStart = 40,
+	FishingCapture = 41,
+	ArkPropshop = 42,
+	PetCafeInteract = 43,
+	ClientModelActive = 44,
+	AnimatorReady = 45,
+	SupportPet = 46,
+	TouchPet = 47,
+	SneakOutByHit = 48,
 	NpcInteractUIEnd = 1999,
 	NpcInteractUIStart = 1000,
-	SupportPet = 46,
-	AnimatorReady = 45,
-	ClientModelActive = 44,
-	PetCafeInteract = 43,
-	ArkPropshop = 42,
-	FishingCapture = 41,
-	NpcDuelStart = 40,
-	Vehicle = 39,
-	BeCarry = 38,
-	SheepGather = 37,
-	SupportAbility = 36,
-	UltimateAbility = 35,
-	HomeInitPetData = 34,
+	SceneLoading = 50,
+	PhotoTimePause = 49,
 	SkeletonLoaded = 33,
 	DialogueControl = 32,
 	HideShowEntityDic = 31,
@@ -116,29 +147,13 @@ slot6 = {
 	DialogueGraph = 20,
 	Attach = 19,
 	Photo = 18,
-	PlayAnimationScript = 17,
-	Capture = 16,
-	ClientVisible = 15,
-	Dead = 14,
-	KnockUp = 13,
-	KnockBack = 12,
-	Charm = 11,
-	BreakFall = 10,
-	AppearDash = 9,
-	Break = 8,
-	Authority = 7,
-	Summon = 6,
-	InHit = 5,
-	Stun = 4,
-	Visible = 3,
-	Control = 2,
-	GM = 1
+	PlayAnimationScript = 17
 }
 slot5.PauseBtReason = slot6
 slot6 = {
-	GamePlay = 2,
+	InPetBall = 1,
 	Route = 0,
-	InPetBall = 1
+	GamePlay = 2
 }
 slot5.IgnoreAILodReason = slot6
 slot6 = 1
@@ -152,6 +167,10 @@ slot7 = slot5.PauseBtReason
 slot7 = slot7.Capture
 slot8 = true
 slot6[slot7] = slot8
+slot7 = slot5.PauseBtReason
+slot7 = slot7.TouchPet
+slot8 = true
+slot6[slot7] = slot8
 slot5.PauseBtReasonNeedBreakPlan = slot6
 slot6 = {
 	FIND_PATH = 1,
@@ -161,14 +180,14 @@ slot6 = {
 }
 slot5.SERVICE_REQUEST_TYPE = slot6
 slot6 = {
-	PlayAnim = 3,
-	Random = 2,
-	Sequence = 1,
-	Wait = 0,
 	MoveMode = 7,
 	TemplateRef = 6,
 	State = 5,
-	ShowBubble = 4
+	ShowBubble = 4,
+	PlayAnim = 3,
+	Random = 2,
+	Sequence = 1,
+	Wait = 0
 }
 slot5.ACTION_TYPE = slot6
 slot6 = {
@@ -179,11 +198,11 @@ slot6 = {
 }
 slot5.PATH_STATE = slot6
 slot6 = {
+	ST_PatrolWalk = 1,
+	ST_None = 0,
 	ST_Sleep = 4,
 	ST_Rest = 3,
-	ST_PatrolRun = 2,
-	ST_PatrolWalk = 1,
-	ST_None = 0
+	ST_PatrolRun = 2
 }
 slot5.PATROL_SUB_STATE = slot6
 slot6 = 30
@@ -202,7 +221,7 @@ slot6, slot7, slot8 = slot6(slot8)
 UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
---- BLOCK #1 83-84, warpins: 1 ---
+--- BLOCK #1 91-92, warpins: 1 ---
 slot11 = slot5.PATROL_SUB_STATE_REV
 slot11[slot10] = slot9
 --- END OF BLOCK #1 ---
@@ -210,7 +229,7 @@ slot11[slot10] = slot9
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 85-86, warpins: 2 ---
+--- BLOCK #2 93-94, warpins: 2 ---
 --- END OF BLOCK #2 ---
 
 for slot9, slot10 in slot6, slot7, slot8
@@ -218,7 +237,7 @@ LOOP BLOCK #1
 GO OUT TO BLOCK #3
 
 
---- BLOCK #3 87-520, warpins: 1 ---
+--- BLOCK #3 95-637, warpins: 1 ---
 slot6 = {
 	Sequence = 0,
 	SelectorProbability = 1
@@ -248,6 +267,10 @@ slot6 = 0.5
 slot5.FOLLOW_TOO_CLOSE = slot6
 slot6 = 1.5
 slot5.FOLLOW_CLOSE = slot6
+slot6 = slot5.FOLLOW_CLOSE
+slot7 = slot5.FOLLOW_CLOSE
+slot6 = slot6 * slot7
+slot5.FOLLOW_CLOSE_POW_2 = slot6
 slot6 = 4
 slot5.FOLLOW_MID = slot6
 slot6 = 5.5
@@ -359,12 +382,12 @@ slot5.LEAVE_REPTAH_CD = slot6
 slot6 = 0.7
 slot5.DEFAULT_REPATH_CD = slot6
 slot6 = {
+	SuccessCD = 2,
+	StartCD = 1,
 	ActiveFailCD = 6,
 	FailGCD = 5,
 	SuccessGCD = 4,
-	FailCD = 3,
-	SuccessCD = 2,
-	StartCD = 1
+	FailCD = 3
 }
 slot5.BEHAVIOR_CD_REASON = slot6
 slot6 = 18
@@ -392,53 +415,53 @@ slot5.COMBO_INTERRUPT_PROB = slot6
 slot6 = 0.1
 slot5.PET_COMBO_INTERRUPT_PROB = slot6
 slot6 = {
+	Capture = 2,
 	Default = 1,
-	Battle = 4,
-	Capture = 2
+	Battle = 4
 }
 slot5.AI_CONTROL_FLAG = slot6
 slot6 = 5
 slot5.PET_FEAR_LEVEL = slot6
 slot6 = {
-	MinDegree = 45,
-	MaxDegree = 75
+	MaxDegree = 75,
+	MinDegree = 45
 }
 slot5.PET_TELEPORT_DEGREE = slot6
 slot6 = 0.5
 slot5.VOXEL_SEARCH_HEIGHT = slot6
 slot6 = {
+	WayPointBehaviorTurn = 5,
 	WayPointBehavior = 4,
 	MovingBehavior = 3,
 	IntermittentPatrol = 2,
-	Wait = 7,
-	Init = 0,
 	Patrol = 1,
+	Init = 0,
+	Wait = 7,
 	Jump = 9,
 	Climb = 8,
-	Disable = 6,
-	WayPointBehaviorTurn = 5
+	Disable = 6
 }
 slot5.PATROL_STATE = slot6
 slot6 = {
+	ClimbEmoji = 3,
 	ClimbWait = 2,
 	ClimbMove = 1,
 	ClimbOn = 0,
 	ClimbDisable = 5,
-	ClimbOff = 4,
-	ClimbEmoji = 3
+	ClimbOff = 4
 }
 slot5.CLIMB_STATE = slot6
 slot6 = {
+	ClimbEmoji = 2,
 	ClimbWait = 1,
-	ClimbMove = 0,
-	ClimbEmoji = 2
+	ClimbMove = 0
 }
 slot5.ClimbType = slot6
 slot6 = {
+	Skill = 4,
 	Charge = 3,
 	initCharged = 2,
-	Uncharged = 1,
-	Skill = 4
+	Uncharged = 1
 }
 slot5.CHARGE_SKILL_STATE = slot6
 slot6 = "MBTree/MBSubTree/"
@@ -450,8 +473,8 @@ slot5.DEFAULT_PLAN_MIN_PRIORITY = slot6
 slot6 = -10
 slot5.DEFAULT_PERCEPTIBLITY_ATTENUATION = slot6
 slot6 = {
-	Normal = 1,
-	Conductor = 2
+	Conductor = 2,
+	Normal = 1
 }
 slot5.PET_COMMAND_MODE = slot6
 slot6 = 0
@@ -465,10 +488,10 @@ slot5.RemoteSyncSqrtDistance = slot6
 slot6 = 2
 slot5.DefaultGlideVelocityY = slot6
 slot6 = {
+	REQ_LOCAL_ID = 99,
 	REQ_FAILED_ID = 0,
 	REQ_MAX_ID = 2147483647,
-	REQ_MIN_ID = 100,
-	REQ_LOCAL_ID = 99
+	REQ_MIN_ID = 100
 }
 slot5.NAVMESH_SERVICE = slot6
 slot6 = {
@@ -618,31 +641,31 @@ slot8 = slot8.PBT_Behav_Home_IdlePatrol
 slot6[slot7] = slot8
 slot5.PetSMDefaultBaseState = slot6
 slot6 = {
+	EventPlan = 1,
 	None = 999,
 	NPCLeadPlan = 7,
 	ClimbPlan = 6,
 	SensorPlan = 5,
 	BornPlan = 4,
-	PatrolPlan = 3,
-	EventPlan = 1
+	PatrolPlan = 3
 }
 slot5.ParmonPlanType = slot6
 slot6 = {
+	Glide = 2,
 	Normal = 1,
 	Climb = 3,
-	NPCLead = 4,
-	Glide = 2
+	NPCLead = 4
 }
 slot5.PatrolType = slot6
 slot6 = {
-	base = "base",
-	additive = "additive"
+	additive = "additive",
+	base = "base"
 }
 slot5.BehavType = slot6
 slot6 = {
+	CanInterruptedByEP = 4,
 	CanInterruptedBySelf = 2,
-	CanInterruptedByHighPriority = 1,
-	CanInterruptedByEP = 4
+	CanInterruptedByHighPriority = 1
 }
 slot5.AIBeInterruptedType = slot6
 slot6 = {
@@ -654,20 +677,21 @@ slot6 = {
 }
 slot5.Follow_Type = slot6
 slot6 = {
+	Running = 1,
 	Abort = 3,
 	None = 0,
-	Finish = 2,
-	Running = 1
+	Finish = 2
 }
 slot5.NpcStatusType = slot6
 slot6 = {
+	EnableStaticRVO = 1,
 	EnableDynamicRVO = 2,
-	Disable = 0,
-	EnableStaticRVO = 1
+	Disable = 0
 }
 slot5.EnvObjRVOType = slot6
 slot6 = {
 	SimpleMoveEntityFarDistance = 14,
+	FarDistance = 14,
 	BeGrab = 13,
 	StaticSpawn = 12,
 	NoCollision = 11,
@@ -675,9 +699,9 @@ slot6 = {
 	HomePetEvent = 9,
 	ControlPlayerSwitchToPet = 8,
 	BeUnSummoned = 5,
-	Airing = 3,
-	BeStick = 6,
 	Authority = 4,
+	BeStick = 6,
+	Airing = 3,
 	Visible = 7,
 	Climb = 2,
 	Disable = 1
@@ -690,18 +714,18 @@ slot5.CatchMode_LowHPPercent = slot6
 slot6 = 15
 slot5.InvadeMode_PetCombatRange = slot6
 slot6 = {
-	SceneLoading = 1,
 	ReasonNone = 0,
+	BeStick = 16,
 	Summon = 128,
-	SkeletonLoaded = 2048,
+	SwitchController = 512,
 	SandBoxLoading = 2,
 	SpaceLoading = 64,
 	VoxelLoading = 4,
 	Authority = 1024,
-	BeStick = 16,
-	SwitchController = 512,
+	BeControlled = 8,
 	BeCaptured = 32,
-	BeControlled = 8
+	SceneLoading = 1,
+	SkeletonLoaded = 2048
 }
 slot5.AIControllerDisableReason = slot6
 slot6 = {}
@@ -719,32 +743,32 @@ slot7 = {
 slot6.ArriveStrategyType = slot7
 slot5.MovementConst = slot6
 slot6 = {
-	distance = 5,
-	height = 2
+	height = 2,
+	distance = 5
 }
 slot5.TrapNearBy = slot6
 slot6 = {
-	Fake = 2,
+	Defense = 1,
 	None = 0,
-	Defense = 1
+	Fake = 2
 }
 slot5.MimicryState = slot6
 slot6 = {
 	Jump = 1,
-	Climb = 2,
-	Common = 0
+	Common = 0,
+	Climb = 2
 }
 slot5.EBehaviorPatrolMoveType = slot6
 slot6 = {
-	Primitive = 1,
+	Compound = 2,
 	None = 0,
-	Compound = 2
+	Primitive = 1
 }
 slot5.HTNTaskType = slot6
 slot6 = {
-	Night = 2,
+	Day = 1,
 	None = 0,
-	Day = 1
+	Night = 2
 }
 slot5.AIDayTimeType = slot6
 slot6 = {}
@@ -782,14 +806,14 @@ slot5.NpcReactionRange = slot6
 slot6 = 0.2
 slot5.CombatDodgeMaxTime = slot6
 slot6 = {
+	PetAgent = 5,
+	PetBallAgent = 6,
+	PuppetAgent = 7,
 	BotPlayerAgent = 4,
 	CombatAgent = 3,
 	WxAgent = 2,
 	luaAgent = 1,
-	VirtualAIAgent = 8,
-	PuppetAgent = 7,
-	PetBallAgent = 6,
-	PetAgent = 5
+	VirtualAIAgent = 8
 }
 slot5.EAgentType = slot6
 slot6 = slot3.TE_Par_GroupCombat_TokenHolder
@@ -797,32 +821,400 @@ slot6 = slot6.value
 slot5.CombatTag = slot6
 slot6 = "Common"
 slot5.BotPlayerDefaultCombatTactic = slot6
-slot6 = 1000
-slot5.LuaMethodResetStateOffset = slot6
-slot6 = {
+slot6 = "LuaMethodResetStateOffset"
+slot7 = 1000
+slot5[slot6] = slot7
+slot6 = "DecelerationDisableReason"
+slot7 = {
 	AIDefault = 2,
-	None = 0,
-	Logic = 1
+	Logic = 1,
+	None = 0
 }
-slot5.DecelerationDisableReason = slot6
-slot6 = {
-	FollowEntity = 4,
-	None = 0,
+slot5[slot6] = slot7
+slot6 = "SimpleMoveBehaviorMode"
+slot7 = {
+	PlaySleAnim = 3,
 	PlaySingleAnim = 2,
+	None = 0,
 	Router = 1,
-	PlaySleAnim = 3
+	FollowEntity = 4
 }
-slot5.SimpleMoveBehaviorMode = slot6
-slot6 = {
-	Default = 0,
-	Simple = 1
+slot5[slot6] = slot7
+slot6 = "RouteType"
+slot7 = {
+	Simple = 1,
+	Default = 0
 }
-slot5.RouteType = slot6
+slot5[slot6] = slot7
 slot6 = "DefaultPathFindInvalidId"
 slot7 = 0
 slot5[slot6] = slot7
 slot6 = "OfflineBehavGroupId"
 slot7 = "BG_Wild_Com_IdlePatrol"
+slot5[slot6] = slot7
+slot6 = "BattleFieldRadius"
+slot7 = 30
+slot5[slot6] = slot7
+slot6 = "clientMoveStateMap"
+slot7 = {}
+slot8 = "SNEAK"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.SNEAKMOVE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "GROUND"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.GROUNDWALK
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "FLYING"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.FLYMOVE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "CLIMBING"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.CLIMBMOVE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "GLIDING"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.GLIDEMOVE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "MIMICRY"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.MIMICRYIDLE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "STATICSPAWN"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.STATICSPAWNIDLE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "SPECIALMOVE"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.SPECIALMOVEFORWARD
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "SWIMMING"
+slot8 = slot1[slot8]
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = BaseEnum
+	slot1 = slot1.SpeedRateType
+	slot1 = slot1.Fast
+	--- END OF BLOCK #0 ---
+
+	if slot0 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.SWIMFASTMOVE
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.SWIMMOVE
+
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "LOCOMOTION"
+slot8 = slot1[slot8]
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = BaseEnum
+	slot1 = slot1.SpeedRateType
+	slot1 = slot1.Slow
+	--- END OF BLOCK #0 ---
+
+	if slot0 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.WALK
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot1 = BaseEnum
+	slot1 = slot1.SpeedRateType
+	slot1 = slot1.Fast
+	--- END OF BLOCK #2 ---
+
+	if slot0 == slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.SPRINT
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 19-23, warpins: 1 ---
+	slot1 = BaseEnum
+	slot1 = slot1.SpeedRateType
+	slot1 = slot1.Burst
+	--- END OF BLOCK #4 ---
+
+	if slot0 == slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-26, warpins: 1 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.SPEEDBURSTLOOP
+
+	return slot1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-29, warpins: 4 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.RUN
+
+	return slot1
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot5[slot6] = slot7
+slot6 = "serverMoveStateMap"
+slot7 = {}
+slot8 = "FLYING"
+slot8 = slot1[slot8]
+
+slot9 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = CharacterStateConst
+	slot0 = slot0.FLYMOVE
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot8 = "LOCOMOTION"
+slot8 = slot1[slot8]
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = BaseEnum
+	slot1 = slot1.SpeedRateType
+	slot1 = slot1.Slow
+	--- END OF BLOCK #0 ---
+
+	if slot0 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.WALK
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot1 = CharacterStateConst
+	slot1 = slot1.RUN
+
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7[slot8] = slot9
+slot5[slot6] = slot7
+slot6 = "idleStateMap"
+slot7 = {}
+slot8 = "SNEAK"
+slot8 = slot1[slot8]
+slot9 = "SNEAKIDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "FLYING"
+slot8 = slot1[slot8]
+slot9 = "FLYHOVER"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "GROUND"
+slot8 = slot1[slot8]
+slot9 = "GROUNDIDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "CLIMBING"
+slot8 = slot1[slot8]
+slot9 = "CLIMBIDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "MIMICRY"
+slot8 = slot1[slot8]
+slot9 = "MIMICRYIDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "GLIDING"
+slot8 = slot1[slot8]
+slot9 = "GLIDEIDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "SWIMMING"
+slot8 = slot1[slot8]
+slot9 = "SWIMIDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
+slot8 = "LOCOMOTION"
+slot8 = slot1[slot8]
+slot9 = "IDLE"
+slot9 = slot1[slot9]
+slot7[slot8] = slot9
 slot5[slot6] = slot7
 
 return slot5

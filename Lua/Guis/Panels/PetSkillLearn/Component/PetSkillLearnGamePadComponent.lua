@@ -108,8 +108,8 @@ slot4 = function(slot0)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		LIST_AREA = 1,
-		EMPTY_AREA = 2
+		EMPTY_AREA = 2,
+		LIST_AREA = 1
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

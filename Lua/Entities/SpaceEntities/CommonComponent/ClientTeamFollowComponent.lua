@@ -1,42 +1,45 @@
---- BLOCK #0 1-134, warpins: 1 ---
+--- BLOCK #0 1-141, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.Const"
+slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Common.Time"
+slot5 = "Common.Const.Const"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.CharacterStateConst"
+slot6 = "Core.Common.Time"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.sys_config_data"
+slot7 = "Common.Const.CharacterStateConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.Utils"
+slot8 = "Data.sys_config_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.EffectConst"
+slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.rigidbody_data"
+slot10 = "Const.EffectConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.MessageName"
+slot11 = "Data.rigidbody_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Utils.AnimationUtils"
+slot12 = "Const.MessageName"
 slot10 = slot10(slot12)
-slot11 = slot0.Component
-slot13 = "ClientTeamFollowComponent"
+slot11 = require
+slot13 = "Common.Utils.AnimationUtils"
 slot11 = slot11(slot13)
+slot12 = slot1.Component
+slot14 = "ClientTeamFollowComponent"
+slot12 = slot12(slot14)
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = "Eff_Player_Link_Follow"
 
@@ -47,9 +50,9 @@ slot12 = function()
 
 end
 
-slot11.getTeamFollowButterflyEffect = slot12
+slot12.getTeamFollowButterflyEffect = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = "Bip001 Pelvis"
 
@@ -60,9 +63,9 @@ slot12 = function()
 
 end
 
-slot11.getTeamFollowAttachHp = slot12
+slot12.getTeamFollowAttachHp = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = SysConfigData
 	slot0 = slot0.FollowBackToNormalDelay
@@ -91,9 +94,9 @@ slot12 = function()
 
 end
 
-slot11.getAwayStateDelayTime = slot12
+slot12.getAwayStateDelayTime = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = SysConfigData
 	slot0 = slot0.FollowBackToNormalCountdown
@@ -122,9 +125,9 @@ slot12 = function()
 
 end
 
-slot11.getAwayStateCountdownTime = slot12
+slot12.getAwayStateCountdownTime = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = SysConfigData
 	slot0 = slot0.FollowBackToNormalInterruptCountLimit
@@ -153,9 +156,9 @@ slot12 = function()
 
 end
 
-slot11.getAwayQuitInterruptLimit = slot12
+slot12.getAwayQuitInterruptLimit = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Const
 	slot1 = slot1.SpaceFollowMemberState
@@ -258,9 +261,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getSpaceFollowStateFunc = slot12
+slot12.getSpaceFollowStateFunc = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = CharacterStateConst
 	slot1 = slot1.SWIMMING
@@ -332,9 +335,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.isSpaceFollowDynamicCharacterState = slot12
+slot12.isSpaceFollowDynamicCharacterState = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -405,9 +408,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getControlEnt = slot12
+slot12.getControlEnt = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -468,9 +471,9 @@ slot12 = function()
 
 end
 
-slot11.getMySpaceFollowLeaderUid = slot12
+slot12.getMySpaceFollowLeaderUid = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -624,9 +627,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.shouldHideByMySpaceFollowTeam = slot12
+slot12.shouldHideByMySpaceFollowTeam = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1006,9 +1009,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshTeamFollowAllyMark = slot12
+slot12.refreshTeamFollowAllyMark = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getEntityByUid
@@ -1059,9 +1062,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshMySpaceFollowTeamEntUI = slot12
+slot12.refreshMySpaceFollowTeamEntUI = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -1157,7 +1160,7 @@ slot12 = function()
 
 
 	--- BLOCK #8 31-31, warpins: 2 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -1198,9 +1201,9 @@ slot12 = function()
 
 end
 
-slot11.refreshMySpaceFollowTeamUI = slot12
+slot12.refreshMySpaceFollowTeamUI = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	--- END OF BLOCK #0 ---
@@ -1252,9 +1255,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getAttachEntList = slot12
+slot12.getAttachEntList = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isTable
@@ -1291,9 +1294,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getTeamFollowEffectData = slot12
+slot12.getTeamFollowEffectData = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -1407,9 +1410,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.setTeamFollowEffectIds = slot12
+slot12.setTeamFollowEffectIds = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1477,9 +1480,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getTeamFollowEffectId = slot12
+slot12.getTeamFollowEffectId = slot13
 
-slot12 = function()
+slot13 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -1511,9 +1514,9 @@ slot12 = function()
 
 end
 
-slot11.clearTeamFollowEffectIds = slot12
+slot12.clearTeamFollowEffectIds = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1677,9 +1680,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.restoreTeamFollowAttachedEnt = slot12
+slot12.restoreTeamFollowAttachedEnt = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1862,9 +1865,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getAttachOffset = slot12
+slot12.getAttachOffset = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = ClientTeamFollowComponent
 	slot2 = slot2.getAttachOffset
@@ -2240,9 +2243,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.getAttachEffectPosition = slot12
+slot12.getAttachEffectPosition = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2288,16 +2291,16 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.refreshAttachEffectPosition = slot12
+slot12.refreshAttachEffectPosition = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
@@ -2307,7 +2310,7 @@ slot12 = function(slot0, slot1, slot2)
 	if slot1 ~= 0 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
@@ -2317,7 +2320,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot0 = if slot0 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
@@ -2328,48 +2331,37 @@ slot12 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 10-13, warpins: 1 ---
-	slot3 = slot0.eModel
-	slot3 = slot3.effectComponent
-	--- END OF BLOCK #4 ---
-
-	slot3 = if slot3 then
 	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 14-20, warpins: 1 ---
+	--- BLOCK #4 10-17, warpins: 1 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.effectComponent
 	slot5 = slot3
 	slot3 = slot3.SetEffectVisibleById
-	slot6 = slot1
-	slot7 = slot2
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_EFFECT
+	slot7 = slot1
+	slot8 = slot2
 
-	slot3(slot5, slot6, slot7)
+	slot3(slot5, slot6, slot7, slot8)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 21-21, warpins: 6 ---
+	--- BLOCK #5 18-18, warpins: 5 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot11.setEffectVisibleById = slot12
+slot12.setEffectVisibleById = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2418,9 +2410,23 @@ slot12 = function(slot0)
 
 end
 
-slot11.checkIsSpecialCharacterState = slot12
+slot12.checkIsSpecialCharacterState = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = {}
+	slot0.keepAwayStateMap = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.ctor = slot13
+
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2429,20 +2435,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.ctor = slot12
+slot12.init = slot13
 
-slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot11.init = slot12
-
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearAwayState
@@ -2490,9 +2485,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.destroy = slot12
+slot12.preDestroy = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -2582,9 +2577,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.EVENT_OnCharacterStateChange = slot12
+slot12.EVENT_OnCharacterStateChange = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.followState
 	--- END OF BLOCK #0 ---
@@ -2631,9 +2626,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onSkeletonLoaded = slot12
+slot12.onSkeletonLoaded = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -2697,74 +2692,134 @@ slot12 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 26-28, warpins: 2 ---
-	slot5 = slot0.uid
+	--- BLOCK #5 26-30, warpins: 2 ---
+	slot5 = Const
+	slot5 = slot5.SpaceFollowMemberState
+	slot5 = slot5.OutOfRange
 	--- END OF BLOCK #5 ---
 
-	if slot3 == slot5 then
+	if slot1 ~= slot5 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 29-34, warpins: 1 ---
+	--- BLOCK #6 31-35, warpins: 1 ---
+	slot5 = Const
+	slot5 = slot5.SpaceFollowMemberState
+	slot5 = slot5.OutOfRange
+	--- END OF BLOCK #6 ---
+
+	if slot2 == slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 36-45, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.effect
+	slot7 = slot5
+	slot5 = slot5.getTeamLinkController
+	slot5 = slot5(slot7)
+	slot7 = slot5
+	slot5 = slot5.refreshOutOfRangeEffectVisible
+	--- END OF BLOCK #7 ---
+
+	slot8 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 46-46, warpins: 1 ---
+	slot8 = slot0.uid
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 47-47, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 48-50, warpins: 2 ---
+	slot5 = slot0.uid
+	--- END OF BLOCK #10 ---
+
+	if slot3 == slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #11 51-56, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot5 = slot5.uid
 	slot6 = slot0.uid
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #11 ---
 
 	if slot5 ~= slot6 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #7 35-36, warpins: 1 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #12 57-58, warpins: 1 ---
+	--- END OF BLOCK #12 ---
 
 	if slot4 == slot3 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #8 37-44, warpins: 1 ---
+	--- BLOCK #13 59-66, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot5 = slot5.followState
 	slot6 = Const
 	slot6 = slot6.SpaceFollowMemberState
 	slot6 = slot6.Normal
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #13 ---
 
 	if slot5 ~= slot6 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #9 45-52, warpins: 1 ---
+	--- BLOCK #14 67-74, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot5 = slot5.followState
 	slot6 = Const
 	slot6 = slot6.SpaceFollowMemberState
 	slot6 = slot6.Attach
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #14 ---
 
 	if slot5 == slot6 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #10 53-61, warpins: 2 ---
+	--- BLOCK #15 75-83, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
@@ -2772,119 +2827,119 @@ slot12 = function(slot0, slot1, slot2)
 	slot8 = Const
 	slot8 = slot8.SpaceFollowMemberState
 	slot8 = slot8.SpecialCharacterState
-	--- END OF BLOCK #10 ---
-
-	if slot2 == slot8 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 62-66, warpins: 1 ---
-	slot8 = Const
-	slot8 = slot8.SpaceFollowMemberState
-	slot8 = slot8.Attach
-	--- END OF BLOCK #11 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 67-69, warpins: 2 ---
-	slot8 = Const
-	slot8 = slot8.SpaceFollowMemberState
-	slot8 = slot8.Normal
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 70-71, warpins: 2 ---
-	slot5(slot7, slot8)
-
-	return
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 72-76, warpins: 5 ---
-	slot5 = Const
-	slot5 = slot5.SpaceFollowMemberState
-	slot5 = slot5.Away
-	--- END OF BLOCK #14 ---
-
-	if slot2 == slot5 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #15 77-79, warpins: 1 ---
-	slot5 = slot0.isMainPlayer
-
 	--- END OF BLOCK #15 ---
 
-	slot5 = if not slot5 then
+	if slot2 == slot8 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 80-80, warpins: 1 ---
-	return
-
+	--- BLOCK #16 84-88, warpins: 1 ---
+	slot8 = Const
+	slot8 = slot8.SpaceFollowMemberState
+	slot8 = slot8.Attach
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 81-86, warpins: 3 ---
-	slot5 = ClientTeamFollowComponent
-	slot5 = slot5.getSpaceFollowStateFunc
-	slot7 = slot2
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #17 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #18
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #18 87-90, warpins: 1 ---
-	slot6 = slot0[slot5]
-	slot8 = slot0
-	slot9 = slot1
+	--- BLOCK #17 89-91, warpins: 2 ---
+	slot8 = Const
+	slot8 = slot8.SpaceFollowMemberState
+	slot8 = slot8.Normal
 
-	slot6(slot8, slot9)
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 92-93, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	return
 
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 91-93, warpins: 2 ---
-	slot6 = slot0.isMainPlayer
+	--- BLOCK #19 94-98, warpins: 5 ---
+	slot5 = Const
+	slot5 = slot5.SpaceFollowMemberState
+	slot5 = slot5.Away
 	--- END OF BLOCK #19 ---
 
-	slot6 = if slot6 then
+	if slot2 == slot5 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #20 94-103, warpins: 1 ---
+	--- BLOCK #20 99-101, warpins: 1 ---
+	slot5 = slot0.isMainPlayer
+
+	--- END OF BLOCK #20 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 102-102, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 103-108, warpins: 3 ---
+	slot5 = ClientTeamFollowComponent
+	slot5 = slot5.getSpaceFollowStateFunc
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #22 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 109-112, warpins: 1 ---
+	slot6 = slot0[slot5]
+	slot8 = slot0
+	slot9 = slot1
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 113-115, warpins: 2 ---
+	slot6 = slot0.isMainPlayer
+	--- END OF BLOCK #24 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #25 116-125, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.game
 	slot6 = slot6.input
@@ -2893,29 +2948,29 @@ slot12 = function(slot0, slot1, slot2)
 	slot9 = Const
 	slot9 = slot9.SpaceFollowMemberState
 	slot9 = slot9.Attach
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #25 ---
 
 	if slot2 == slot9 then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #21 104-108, warpins: 1 ---
+	--- BLOCK #26 126-130, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.me
 	slot9 = slot9.space
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #26 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #22 109-119, warpins: 1 ---
+	--- BLOCK #27 131-141, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.me
 	slot9 = slot9.space
@@ -2926,27 +2981,27 @@ slot12 = function(slot0, slot1, slot2)
 	slot12 = slot12.uid
 	slot9 = slot9(slot11, slot12)
 	slot9 = not slot9
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #23 120-121, warpins: 0 ---
+	--- BLOCK #28 142-143, warpins: 0 ---
 	slot9 = false
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #28 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #24 122-122, warpins: 2 ---
+	--- BLOCK #29 144-144, warpins: 2 ---
 	slot9 = true
 
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #25 123-132, warpins: 3 ---
+	--- BLOCK #30 145-154, warpins: 3 ---
 	slot6(slot8, slot9)
 
 	slot6 = facade
@@ -2956,118 +3011,118 @@ slot12 = function(slot0, slot1, slot2)
 	slot9 = slot9.SPACE_FOLLOW_UPDATE
 	slot10 = {}
 	slot11 = slot0.space
-	--- END OF BLOCK #25 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #26 133-136, warpins: 1 ---
-	slot11 = slot0.space
-	slot11 = slot11.followInfo
-	--- END OF BLOCK #26 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #27 137-137, warpins: 2 ---
-	slot11 = {}
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 138-139, warpins: 2 ---
-	slot10.followInfo = slot11
-
-	slot6(slot8, slot9, slot10)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 140-144, warpins: 2 ---
-	slot6 = Const
-	slot6 = slot6.SpaceFollowMemberState
-	slot6 = slot6.Attach
-	--- END OF BLOCK #29 ---
-
-	if slot1 ~= slot6 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #30 145-149, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.SpaceFollowMemberState
-	slot6 = slot6.Attach
 	--- END OF BLOCK #30 ---
 
-	if slot2 ~= slot6 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #31 150-154, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.SpaceFollowMemberState
-	slot6 = slot6.SpecialCharacterState
+	--- BLOCK #31 155-158, warpins: 1 ---
+	slot11 = slot0.space
+	slot11 = slot11.followInfo
 	--- END OF BLOCK #31 ---
 
-	if slot1 ~= slot6 then
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 155-159, warpins: 1 ---
-	slot6 = Const
-	slot6 = slot6.SpaceFollowMemberState
-	slot6 = slot6.SpecialCharacterState
+	--- BLOCK #32 159-159, warpins: 2 ---
+	slot11 = {}
 	--- END OF BLOCK #32 ---
 
-	if slot2 == slot6 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 160-162, warpins: 4 ---
-	slot6 = ClientTeamFollowComponent
-	slot6 = slot6.refreshMySpaceFollowTeamUI
+	--- BLOCK #33 160-161, warpins: 2 ---
+	slot10.followInfo = slot11
 
-	slot6()
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 163-163, warpins: 2 ---
-	return
+	--- BLOCK #34 162-166, warpins: 2 ---
+	slot6 = Const
+	slot6 = slot6.SpaceFollowMemberState
+	slot6 = slot6.Attach
 	--- END OF BLOCK #34 ---
+
+	if slot1 ~= slot6 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #35 167-171, warpins: 1 ---
+	slot6 = Const
+	slot6 = slot6.SpaceFollowMemberState
+	slot6 = slot6.Attach
+	--- END OF BLOCK #35 ---
+
+	if slot2 ~= slot6 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #36 172-176, warpins: 1 ---
+	slot6 = Const
+	slot6 = slot6.SpaceFollowMemberState
+	slot6 = slot6.SpecialCharacterState
+	--- END OF BLOCK #36 ---
+
+	if slot1 ~= slot6 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 177-181, warpins: 1 ---
+	slot6 = Const
+	slot6 = slot6.SpaceFollowMemberState
+	slot6 = slot6.SpecialCharacterState
+	--- END OF BLOCK #37 ---
+
+	if slot2 == slot6 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 182-184, warpins: 4 ---
+	slot6 = ClientTeamFollowComponent
+	slot6 = slot6.refreshMySpaceFollowTeamUI
+
+	slot6()
+
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 185-185, warpins: 2 ---
+	return
+	--- END OF BLOCK #39 ---
 
 
 
 end
 
-slot11.on_followState_changed = slot12
+slot12.on_followState_changed = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot1
 	slot3 = slot0.isMainPlayer
@@ -3101,9 +3156,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.setFollowState = slot12
+slot12.setFollowState = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.clearAwayState
@@ -3170,9 +3225,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.switchToNormalState = slot12
+slot12.switchToNormalState = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isMainPlayer
 
@@ -3215,9 +3270,271 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.switchToMovingState = slot12
+slot12.switchToMovingState = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = next
+	slot3 = slot0.keepAwayStateMap
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot12.hasKeepAwayState = slot13
+
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.isMainPlayer
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #3 7-10, warpins: 1 ---
+	slot3 = slot0.keepAwayStateMap
+	slot3 = slot3[slot1]
+
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-11, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-19, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.hasKeepAwayState
+	slot3 = slot3(slot5)
+	slot4 = slot0.keepAwayStateMap
+	slot5 = true
+	slot4[slot1] = slot5
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 20-22, warpins: 1 ---
+	slot4 = slot0.space
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-29, warpins: 1 ---
+	slot4 = slot0.space
+	slot6 = slot4
+	slot4 = slot4.isSpaceFollowMember
+	slot7 = slot0.uid
+	slot4 = slot4(slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 30-30, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 31-41, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.clearAwayState
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.setFollowState
+	slot7 = Const
+	slot7 = slot7.SpaceFollowMemberState
+	slot7 = slot7.Away
+
+	slot4(slot6, slot7)
+
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 42-45, warpins: 2 ---
+	slot3 = slot0.keepAwayStateMap
+	slot3 = slot3[slot1]
+
+	--- END OF BLOCK #10 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 46-46, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 47-54, warpins: 2 ---
+	slot3 = slot0.keepAwayStateMap
+	slot4 = nil
+	slot3[slot1] = slot4
+	slot5 = slot0
+	slot3 = slot0.hasKeepAwayState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #12 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #13 55-57, warpins: 1 ---
+	slot3 = slot0.space
+	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #14 58-64, warpins: 1 ---
+	slot3 = slot0.space
+	slot5 = slot3
+	slot3 = slot3.isSpaceFollowMember
+	slot6 = slot0.uid
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #14 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 65-70, warpins: 1 ---
+	slot3 = slot0.followState
+	slot4 = Const
+	slot4 = slot4.SpaceFollowMemberState
+	slot4 = slot4.Away
+	--- END OF BLOCK #15 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 71-73, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.switchToAwayState
+
+	slot3(slot5)
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 74-74, warpins: 5 ---
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot12.setKeepAwayState = slot13
+
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.awayQuitTimer
 	--- END OF BLOCK #0 ---
@@ -3382,9 +3699,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.tryInterruptAwayQuitTimer = slot12
+slot12.tryInterruptAwayQuitTimer = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isMainPlayer
 	--- END OF BLOCK #0 ---
@@ -3399,10 +3716,29 @@ slot12 = function(slot0, slot1)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 5-18, warpins: 1 ---
+	--- BLOCK #2 5-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.hasKeepAwayState
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 11-24, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.clearAwayState
 	slot5 = true
@@ -3439,7 +3775,7 @@ slot12 = function(slot0, slot1)
 
 		--- BLOCK #2 9-41, warpins: 1 ---
 		slot0 = Time
-		slot0 = slot0.secondCache
+		slot0 = slot0.realSecondCache
 		slot1 = self
 		slot2 = true
 		slot1.awayControlPanelShowing = slot2
@@ -3566,7 +3902,6 @@ slot12 = function(slot0, slot1)
 			slot1 = slot1.getEntityByUid
 			slot3 = slot0
 			slot1 = slot1(slot3)
-
 			--- END OF BLOCK #7 ---
 
 			slot1 = if not slot1 then
@@ -3576,7 +3911,16 @@ slot12 = function(slot0, slot1)
 			end
 
 
-			--- BLOCK #8 43-43, warpins: 1 ---
+			--- BLOCK #8 43-50, warpins: 1 ---
+			slot2 = self
+			slot4 = slot2
+			slot2 = slot2.setFollowState
+			slot5 = Const
+			slot5 = slot5.SpaceFollowMemberState
+			slot5 = slot5.Normal
+
+			slot2(slot4, slot5)
+
 			return
 
 			--- END OF BLOCK #8 ---
@@ -3584,7 +3928,7 @@ slot12 = function(slot0, slot1)
 			FLOW; TARGET BLOCK #9
 
 
-			--- BLOCK #9 44-49, warpins: 2 ---
+			--- BLOCK #9 51-56, warpins: 2 ---
 			slot2 = slot1.followState
 			slot3 = Const
 			slot3 = slot3.SpaceFollowMemberState
@@ -3598,7 +3942,7 @@ slot12 = function(slot0, slot1)
 			end
 
 
-			--- BLOCK #10 50-57, warpins: 1 ---
+			--- BLOCK #10 57-64, warpins: 1 ---
 			slot2 = self
 			slot4 = slot2
 			slot2 = slot2.setFollowState
@@ -3610,92 +3954,27 @@ slot12 = function(slot0, slot1)
 
 			--- END OF BLOCK #10 ---
 
-			UNCONDITIONAL JUMP; TARGET BLOCK #14
+			UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-			--- BLOCK #11 58-82, warpins: 1 ---
-			slot2 = ClientTeamFollowComponent
-			slot2 = slot2.getControlEnt
-			slot4 = slot1
-			slot2 = slot2(slot4)
-			slot3 = ClientTeamFollowComponent
-			slot3 = slot3.getControlEnt
-			slot5 = self
-			slot3 = slot3(slot5)
-			slot6 = slot2
-			slot4 = slot2.getRotation
-			slot4 = slot4(slot6)
-			slot7 = slot2
-			slot5 = slot2.getPosition
-			slot5 = slot5(slot7)
-			slot8 = slot4
-			slot6 = slot4.MulVec3
-			slot9 = Vector3
-			slot11 = 0
-			slot12 = 0
-			slot13 = -1
-			MULTRES = slot9(slot11, slot12, slot13)
-			slot6 = slot6(slot8, MULTRES)
-			slot5 = slot5 + slot6
+			--- BLOCK #11 65-71, warpins: 1 ---
+			slot2 = self
+			slot4 = slot2
+			slot2 = slot2.setFollowState
+			slot5 = Const
+			slot5 = slot5.SpaceFollowMemberState
+			slot5 = slot5.Normal
+
+			slot2(slot4, slot5)
+
 			--- END OF BLOCK #11 ---
 
-			slot3 = if slot3 then
-			JUMP TO BLOCK #12
-			else
-			JUMP TO BLOCK #13
-			end
+			FLOW; TARGET BLOCK #12
 
 
-			--- BLOCK #12 83-104, warpins: 1 ---
-			slot8 = slot3
-			slot6 = slot3.serverMsg
-			slot9 = "RPC_CS_BlackScreenTeleport"
-			slot10 = pg
-			slot10 = slot10.me
-			slot10 = slot10.space
-			slot10 = slot10.sceneId
-			slot11 = {}
-			slot12 = slot5.x
-			slot11[1] = slot12
-			slot12 = slot5.y
-			slot11[2] = slot12
-			slot12 = slot5.z
-			slot11[3] = slot12
-
-			slot6(slot8, slot9, slot10, slot11)
-
-			slot8 = slot3
-			slot6 = slot3.forceSetPosRot
-			slot9 = slot5
-			slot10 = slot4
-			slot11 = true
-			slot12 = true
-
-			slot6(slot8, slot9, slot10, slot11, slot12)
-
-			--- END OF BLOCK #12 ---
-
-			FLOW; TARGET BLOCK #13
-
-
-			--- BLOCK #13 105-111, warpins: 2 ---
-			slot6 = self
-			slot8 = slot6
-			slot6 = slot6.setFollowState
-			slot9 = Const
-			slot9 = slot9.SpaceFollowMemberState
-			slot9 = slot9.Normal
-
-			slot6(slot8, slot9)
-
-			--- END OF BLOCK #13 ---
-
-			FLOW; TARGET BLOCK #14
-
-
-			--- BLOCK #14 112-112, warpins: 2 ---
+			--- BLOCK #12 72-72, warpins: 2 ---
 			return
-			--- END OF BLOCK #14 ---
+			--- END OF BLOCK #12 ---
 
 
 
@@ -3722,22 +4001,29 @@ slot12 = function(slot0, slot1)
 	slot0.awayDelayTimer = slot2
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 19-19, warpins: 2 ---
+	--- BLOCK #5 25-25, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-26, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot11.switchToAwayState = slot12
+slot12.switchToAwayState = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.clearAwayState
@@ -3760,9 +4046,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.switchToAttachState = slot12
+slot12.switchToAttachState = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.awayDelayTimer
 	--- END OF BLOCK #0 ---
@@ -3899,9 +4185,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.clearAwayState = slot12
+slot12.clearAwayState = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isMainPlayer
 	--- END OF BLOCK #0 ---
@@ -3909,7 +4195,7 @@ slot12 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
@@ -3920,7 +4206,7 @@ slot12 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
@@ -3930,104 +4216,117 @@ slot12 = function(slot0, slot1)
 	slot2 = slot2.isSpaceFollowMember
 	slot5 = slot0.uid
 	slot2 = slot2(slot4, slot5)
-
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-14, warpins: 3 ---
-	return
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.hasKeepAwayState
+	slot2 = slot2(slot4)
 
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 15-16, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 17-21, warpins: 1 ---
+	--- BLOCK #4 19-19, warpins: 4 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-21, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 22-26, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.tryInterruptAwayQuitTimer
 	slot2 = slot2(slot4)
 
-	--- END OF BLOCK #5 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 22-22, warpins: 1 ---
-	return
-
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 23-26, warpins: 3 ---
-	slot4 = slot0
-	slot2 = slot0.setFollowState
-	--- END OF BLOCK #7 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #8
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 27-31, warpins: 1 ---
-	slot5 = Const
-	slot5 = slot5.SpaceFollowMemberState
-	slot5 = slot5.Moving
+	--- BLOCK #7 27-27, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-31, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.setFollowState
 	--- END OF BLOCK #8 ---
 
-	slot5 = if not slot5 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 32-34, warpins: 2 ---
+	--- BLOCK #9 32-36, warpins: 1 ---
+	slot5 = Const
+	slot5 = slot5.SpaceFollowMemberState
+	slot5 = slot5.Moving
+	--- END OF BLOCK #9 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 37-39, warpins: 2 ---
 	slot5 = Const
 	slot5 = slot5.SpaceFollowMemberState
 	slot5 = slot5.Away
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #10 35-36, warpins: 2 ---
+	--- BLOCK #11 40-41, warpins: 2 ---
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot11.EVENT_OnMoveInputStateChanged = slot12
+slot12.EVENT_OnMoveInputStateChanged = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -4327,10 +4626,10 @@ slot12 = function(slot0, slot1)
 	slot14 = slot11
 	slot12 = slot11.attachByTable
 	slot15 = {
-		freeRotation = true,
 		isPhysics = false,
 		ignoreEntityCollide = true,
-		ignoreGroundWall = true
+		ignoreGroundWall = true,
+		freeRotation = true
 	}
 	slot16 = slot3.id
 	slot15.entId = slot16
@@ -4393,9 +4692,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.attachToTeamFollowLeader = slot12
+slot12.attachToTeamFollowLeader = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4536,9 +4835,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.stopTeamFollowButterflyEffect = slot12
+slot12.stopTeamFollowButterflyEffect = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -4683,9 +4982,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.stopAllTeamFollowButterflyEffects = slot12
+slot12.stopAllTeamFollowButterflyEffects = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5017,9 +5316,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.refreshTeamFollowButterflyEffects = slot12
+slot12.refreshTeamFollowButterflyEffects = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -5096,9 +5395,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshTeamFollowAttachOnControlEntChanged = slot12
+slot12.refreshTeamFollowAttachOnControlEntChanged = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshTeamFollowAttachOnControlEntChanged
@@ -5112,9 +5411,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.EVENT_onControlPetSwitchToPlayer = slot12
+slot12.EVENT_onControlPetSwitchToPlayer = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshTeamFollowAttachOnControlEntChanged
@@ -5128,9 +5427,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.EVENT_onControlPlayerSwitchToPet = slot12
+slot12.EVENT_onControlPlayerSwitchToPet = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshTeamFollowAttachOnControlEntChanged
@@ -5144,9 +5443,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.EVENT_onControlPetSwitchToAnotherPet = slot12
+slot12.EVENT_onControlPetSwitchToAnotherPet = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -5290,9 +5589,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.EVENT_OnPetStart = slot12
+slot12.EVENT_OnPetStart = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ClientTeamFollowComponent
 	slot1 = slot1.getAttachEntList
@@ -5399,9 +5698,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.detachToNormal = slot12
+slot12.detachToNormal = slot13
 
-return slot11
+return slot12
 --- END OF BLOCK #0 ---
 
 

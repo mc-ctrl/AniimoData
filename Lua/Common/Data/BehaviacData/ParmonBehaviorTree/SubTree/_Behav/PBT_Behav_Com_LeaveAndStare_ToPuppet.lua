@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_LeaveAndStare_ToPuppet",
 	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_LeaveAndStare_ToPuppet",
 	version = 265,
 	useForRoute = false
 }
@@ -16,31 +16,31 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tTargetActorId",
+	const = 0,
 	type = "int",
-	value = "0",
-	const = 0
+	name = "tTargetActorId",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tStareCount",
+	const = 0,
 	type = "int",
-	value = "0",
-	const = 0
+	name = "tStareCount",
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "LeaveCount",
+	const = 0,
 	type = "int",
-	value = "0",
-	const = 0
+	name = "LeaveCount",
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tStareCount",
+	const = 0,
 	type = "int",
-	value = "0",
-	const = 0
+	name = "tStareCount",
+	value = "0"
 }
 slot4[4] = slot5
 slot3.pars = slot4
@@ -125,7 +125,7 @@ slot13 = {
 }
 slot14 = {}
 slot15 = {
-	DecorateWhenChildEnds = "false"
+	DecorateWhenChildEnds = "true"
 }
 slot14[1] = slot15
 slot13.properties = slot14
@@ -422,11 +422,11 @@ slot17 = {}
 slot16.properties = slot17
 slot17 = {}
 slot18 = {
+	effector = false,
 	transition = false,
 	id = "316",
 	precondition = true,
-	class = "Precondition",
-	effector = false
+	class = "Precondition"
 }
 slot19 = {}
 slot20 = {
@@ -474,11 +474,11 @@ slot19[5] = slot20
 slot18.properties = slot19
 slot17[1] = slot18
 slot18 = {
+	effector = true,
 	transition = false,
 	id = "288",
 	precondition = false,
-	class = "Effector",
-	effector = true
+	class = "Effector"
 }
 slot19 = {}
 slot20 = {

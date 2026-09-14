@@ -1,4 +1,4 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -41,27 +41,66 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Common.Const.Const"
 slot12 = slot12(slot14)
-slot13 = slot2.LightClass
-slot15 = "TowerWeeklyRewardCtrl"
-slot16 = slot3
-slot13 = slot13(slot15, slot16)
-slot14 = {}
-slot15 = slot1.ROGUE_WEEKLY_REWARD_UPDATE
-slot16 = {
+slot13 = require
+slot15 = "Common.Utils.RewardStateUtils"
+slot13 = slot13(slot15)
+slot14 = slot2.LightClass
+slot16 = "TowerWeeklyRewardCtrl"
+slot17 = slot3
+slot14 = slot14(slot16, slot17)
+slot15 = {}
+slot16 = slot1.ROGUE_WEEKLY_REWARD_UPDATE
+slot17 = {
 	"refreshReward",
 	true
 }
-slot14[slot15] = slot16
-slot13.messages = slot14
+slot15[slot16] = slot17
+slot14.messages = slot15
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.staticUIBlurEffect
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot14.getManagedBlurEffect = slot15
+
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.initializeManagedBlur
+
+	slot2(slot4)
 
 	slot4 = slot0
 	slot2 = slot0.initUI
@@ -75,9 +114,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onCreate = slot14
+slot14.onCreate = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -151,9 +190,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.addListener = slot14
+slot14.addListener = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -327,9 +366,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.initUI = slot14
+slot14.initUI = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = false
 	slot0.canGet = slot1
@@ -362,11 +401,19 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 14-18, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.btnClaimAllUButton
-	slot2 = slot0.canGet
-	slot1.interactable = slot2
+	--- BLOCK #3 14-25, warpins: 1 ---
+	slot1 = RewardStateUtils
+	slot1 = slot1.applyClaimButton
+	slot3 = slot0.view
+	slot3 = slot3.btnClaimAllUButton
+	slot4 = slot0.canGet
+	slot5 = RedDotConst
+	slot5 = slot5.RedDotPath
+	slot5 = slot5.TOWER_WEEKLY_REWARD
+	slot6 = true
+	slot7 = "claimAll"
+
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -375,9 +422,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshReward = slot14
+slot14.refreshReward = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-45, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -519,79 +566,73 @@ slot14 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 81-82, warpins: 2 ---
+	--- BLOCK #8 81-87, warpins: 2 ---
+	slot14 = RewardStateUtils
+	slot14 = slot14.applyItemState
+	slot16 = slot1
+	slot17 = {}
+	slot17.hasGet = slot13
 	--- END OF BLOCK #8 ---
 
-	slot13 = if slot13 then
+	slot18 = if slot12 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 83-88, warpins: 1 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "Status"
-	slot18 = 1
-
-	slot14(slot16, slot17, slot18)
-
+	--- BLOCK #9 88-88, warpins: 1 ---
+	slot18 = not slot13
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 89-90, warpins: 1 ---
+	--- BLOCK #10 89-94, warpins: 2 ---
+	slot17.canGet = slot18
+	slot18 = "Status"
+	slot14 = slot14(slot16, slot17, slot18)
+	slot15 = slot0.canGet
 	--- END OF BLOCK #10 ---
 
-	slot12 = if slot12 then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 91-92, warpins: 1 ---
+	--- BLOCK #11 95-99, warpins: 1 ---
+	slot15 = RewardStateUtils
+	slot15 = slot15.State
+	slot15 = slot15.ReadyToClaim
 	--- END OF BLOCK #11 ---
 
-	slot13 = if not slot13 then
+	if slot14 ~= slot15 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 93-100, warpins: 1 ---
-	slot14 = true
-	slot0.canGet = slot14
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "Status"
-	slot18 = 2
-
-	slot14(slot16, slot17, slot18)
-
+	--- BLOCK #12 100-101, warpins: 1 ---
+	slot15 = false
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 101-105, warpins: 2 ---
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "Status"
-	slot18 = 0
-
-	slot14(slot16, slot17, slot18)
-
+	--- BLOCK #13 102-102, warpins: 1 ---
+	slot15 = true
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 106-120, warpins: 3 ---
-	slot14 = function(slot0)
+	--- BLOCK #14 103-118, warpins: 3 ---
+	slot0.canGet = slot15
+
+	slot15 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = canGet
 		--- END OF BLOCK #0 ---
@@ -716,18 +757,18 @@ slot14 = function(slot0, slot1, slot2)
 
 	end
 
-	slot1.luaClick = slot14
-	slot14 = pg
-	slot14 = slot14.global
-	slot14 = slot14.setPreViewRedDot
-	slot16 = RedDotConst
-	slot16 = slot16.RedDotPath
-	slot16 = slot16.TOWER_WEEKLY_REWARD_ITEM
-	slot17 = slot2
-	slot16 = slot16 .. slot17
-	slot17 = slot1
+	slot1.luaClick = slot15
+	slot15 = pg
+	slot15 = slot15.global
+	slot15 = slot15.setPreViewRedDot
+	slot17 = RedDotConst
+	slot17 = slot17.RedDotPath
+	slot17 = slot17.TOWER_WEEKLY_REWARD_ITEM
+	slot18 = slot2
+	slot17 = slot17 .. slot18
+	slot18 = slot1
 
-	slot18 = function()
+	slot19 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = RogueUtils
 		slot0 = slot0.getRedDotWeeklyRewardBtnState
@@ -740,7 +781,7 @@ slot14 = function(slot0, slot1, slot2)
 
 	end
 
-	slot14(slot16, slot17, slot18)
+	slot15(slot17, slot18, slot19)
 
 	return
 	--- END OF BLOCK #14 ---
@@ -749,9 +790,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot13.setRewardBtn = slot14
+slot14.setRewardBtn = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -766,9 +807,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onDestroy = slot14
+slot14.onDestroy = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -784,9 +825,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onOpen = slot14
+slot14.onOpen = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -795,9 +836,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onShow = slot14
+slot14.onShow = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -806,9 +847,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onHide = slot14
+slot14.onHide = slot15
 
-return slot13
+return slot14
 --- END OF BLOCK #0 ---
 
 

@@ -1,25 +1,28 @@
---- BLOCK #0 1-37, warpins: 1 ---
+--- BLOCK #0 1-40, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Entities.ClientVirtualEntity"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.ClientConst"
+slot4 = "Entities.ClientVirtualEntity"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.MessageName"
+slot5 = "Const.ClientConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientModelUtils"
+slot6 = "Const.MessageName"
 slot4 = slot4(slot6)
-slot5 = slot0.Class
-slot7 = "ClientHomeFurnitureStoreEntity"
-slot8 = slot1
-slot5 = slot5(slot7, slot8)
+slot5 = require
+slot7 = "Utils.ClientModelUtils"
+slot5 = slot5(slot7)
+slot6 = slot1.Class
+slot8 = "ClientHomeFurnitureStoreEntity"
+slot9 = slot2
+slot6 = slot6(slot8, slot9)
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientHomeFurnitureStoreEntity
 	slot2 = slot2.super
@@ -36,9 +39,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.init = slot6
+slot6.init = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientHomeFurnitureStoreEntity
 	slot1 = slot1.super
@@ -54,14 +57,13 @@ slot6 = function(slot0)
 
 end
 
-slot5.initializeComponents = slot6
+slot6.initializeComponents = slot7
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -73,9 +75,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.addVirtualEntityComponent = slot6
+slot6.addVirtualEntityComponent = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.space = slot1
 	slot4 = slot0
@@ -90,9 +92,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot5.enterSpace = slot6
+slot6.enterSpace = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = ClientHomeFurnitureStoreEntity
 	slot1 = slot1.super
@@ -138,9 +140,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.onModelRefreshed = slot6
+slot6.onModelRefreshed = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.modelLoadedCallback
 	--- END OF BLOCK #0 ---
@@ -170,10 +172,10 @@ slot6 = function(slot0)
 
 end
 
-slot5.onItemModelLoaded = slot6
+slot6.onItemModelLoaded = slot7
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-36, warpins: 1 ---
+slot7 = function(slot0)
+	--- BLOCK #0 1-35, warpins: 1 ---
 	slot1 = ClientHomeFurnitureStoreEntity
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -185,23 +187,23 @@ slot6 = function(slot0)
 	slot1 = slot0.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.itemModelView
 	slot3 = false
 	slot2.keepPrefabLayer = slot3
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
 	slot4 = slot2
 	slot2 = slot2.SetModelResId
-	slot5 = slot1.modelResId
-	slot6 = ClientConst
-	slot6 = slot6.InstantiatePriority
-	slot6 = slot6.Urgent
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_IDX_ITEM
+	slot6 = slot1.modelResId
 	slot7 = ClientConst
 	slot7 = slot7.InstantiatePriority
-	slot7 = slot7.High
+	slot7 = slot7.Urgent
+	slot8 = ClientConst
+	slot8 = slot8.InstantiatePriority
+	slot8 = slot8.High
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	slot4 = slot0
 	slot2 = slot0.setModelLayer
@@ -209,8 +211,7 @@ slot6 = function(slot0)
 	slot2(slot4)
 
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.itemModelView
 	slot4 = slot2
 	slot2 = slot2.SetRendererLod
 	slot5 = 0
@@ -224,13 +225,11 @@ slot6 = function(slot0)
 
 end
 
-slot5.refreshAppearance = slot6
+slot6.refreshAppearance = slot7
 
-slot6 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+slot7 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -240,7 +239,7 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-12, warpins: 1 ---
+	--- BLOCK #1 4-10, warpins: 1 ---
 	slot1 = slot0.eModel
 	slot3 = slot1
 	slot1 = slot1.SetModelLayer
@@ -255,7 +254,7 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -263,9 +262,9 @@ slot6 = function(slot0)
 
 end
 
-slot5.setModelLayer = slot6
+slot6.setModelLayer = slot7
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

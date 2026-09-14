@@ -1,63 +1,66 @@
---- BLOCK #0 1-42, warpins: 1 ---
+--- BLOCK #0 1-45, warpins: 1 ---
 slot0 = require
-slot2 = "Common.Utils.Utils"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.ObjHelper"
+slot3 = "Common.Utils.Utils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.PropertySync.CustomDict"
+slot4 = "Common.ObjHelper"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Framework.Class"
+slot5 = "Core.PropertySync.CustomDict"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.Const"
+slot6 = "Core.Framework.Class"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.pet_attr_convert_data"
+slot7 = "Common.Const.Const"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.formula_data"
+slot8 = "Data.pet_attr_convert_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.pet_prototype_data"
+slot9 = "Data.formula_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.primaryproperty_revert_data"
+slot10 = "Data.pet_prototype_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.pet_resonance_data"
+slot11 = "Data.primaryproperty_revert_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_strength_recommend_data"
+slot12 = "Data.pet_resonance_data"
 slot10 = slot10(slot12)
-slot11 = slot3.LiteClass
-slot13 = "BasePrimaryPropertys"
-slot14 = slot2
-slot11 = slot11(slot13, slot14)
-slot12 = math
-slot12 = slot12.floor
-slot13 = UNITY_EDITOR
+slot11 = require
+slot13 = "Data.pet_strength_recommend_data"
+slot11 = slot11(slot13)
+slot12 = slot4.LiteClass
+slot14 = "BasePrimaryPropertys"
+slot15 = slot3
+slot12 = slot12(slot14, slot15)
+slot13 = math
+slot13 = slot13.floor
+slot14 = UNITY_EDITOR
 --- END OF BLOCK #0 ---
 
-slot13 = if slot13 then
+slot14 = if slot14 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 43-52, warpins: 1 ---
-slot13 = {}
-slot14 = slot1.TYPE_PET_INFO
-slot13[1] = slot14
-slot14 = slot1.TYPE_PUPPET
-slot13[2] = slot14
-slot14 = slot1.TYPE_PET
-slot13[3] = slot14
+--- BLOCK #1 46-55, warpins: 1 ---
+slot14 = {}
+slot15 = slot2.TYPE_PET_INFO
+slot14[1] = slot15
+slot15 = slot2.TYPE_PUPPET
+slot14[2] = slot15
+slot15 = slot2.TYPE_PET
+slot14[3] = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetInfoType
@@ -109,15 +112,15 @@ slot14 = function(slot0)
 
 end
 
-slot11.getObj = slot14
+slot12.getObj = slot15
 
 --- END OF BLOCK #1 ---
 
 UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
---- BLOCK #2 53-54, warpins: 1 ---
-slot13 = function(slot0)
+--- BLOCK #2 56-57, warpins: 1 ---
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetInfoType
@@ -161,15 +164,15 @@ slot13 = function(slot0)
 
 end
 
-slot11.getObj = slot13
+slot12.getObj = slot14
 
 --- END OF BLOCK #2 ---
 
 FLOW; TARGET BLOCK #3
 
 
---- BLOCK #3 55-68, warpins: 2 ---
-slot13 = function(slot0, slot1)
+--- BLOCK #3 58-71, warpins: 2 ---
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = 0
 	slot0.potentialPointSum = slot2
@@ -220,9 +223,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot11.genInitDict = slot13
+slot12.genInitDict = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -441,9 +444,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot11.checkAddStrengPointSum = slot13
+slot12.checkAddStrengPointSum = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -641,9 +644,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot11.checkSubStrengPointSum = slot13
+slot12.checkSubStrengPointSum = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PetPrototypeData
 	slot3 = slot1.templateId
@@ -735,7 +738,7 @@ slot13 = function(slot0, slot1)
 
 
 	--- BLOCK #8 30-30, warpins: 1 ---
-	slot13 = {}
+	slot13 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -1075,9 +1078,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot11.getPreAllocateList = slot13
+slot12.getPreAllocateList = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = 0
 	slot3 = 1
@@ -1187,9 +1190,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot11.getSupportGroupPotentialPoint = slot13
+slot12.getSupportGroupPotentialPoint = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PetAttrConvertData
 	slot2 = slot2[slot1]
@@ -1229,9 +1232,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot11.getPropertyIdByName = slot13
+slot12.getPropertyIdByName = slot14
 
-return slot11
+return slot12
 --- END OF BLOCK #3 ---
 
 

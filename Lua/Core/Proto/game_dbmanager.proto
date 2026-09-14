@@ -122,6 +122,17 @@ message RedisPipelineReq {
 	optional bytes context = 3;     // Opentracing使用 
 }
 
+message BulkWriteReq {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required string db = 2;         // db name
+	required string collection = 3; // collection name
+	required bytes operations = 4;  // msgpack编码的bulk write操作列表
+	optional bool ordered = 5 [default = true]; // 遇到错误时是否停止后续操作
+	optional bool wMajority = 6;    // 写操作是否需要同步给大多数节点后再返回
+	optional bytes strand = 7;      // 保序的键值
+	optional bytes context = 8;     // Opentracing使用
+}
+
 //////////////////////////////////////////////////////////////////////////////
 
 message FindDocReply {
@@ -190,6 +201,14 @@ message RedisPipelineReply {
 	optional bytes context = 5;     // Opentracing使用
 }
 
+message BulkWriteReply {
+	required uint32 callbackId = 1; // callback的唯一ID
+	required bool status = 2;       // bulk write操作是否全部成功
+	required bytes result = 3;      // msgpack编码的执行结果，失败时可包含部分成功结果
+	optional bytes errmsg = 4;      // 错误消息
+	optional bytes context = 5;     // Opentracing使用
+}
+
 
 // Game2DBManager
 service IGame2DBManagerService {
@@ -202,6 +221,7 @@ service IGame2DBManagerService {
 	rpc dbCountDoc(InsertDocReq) returns (Void);
 	rpc redisCmdRequest(RedisCommandReq) returns (Void);
 	rpc redisPipelineRequest(RedisPipelineReq) returns (Void);
+	rpc dbBulkWrite(BulkWriteReq) returns (Void);
 }
 
 // DBManager2Game
@@ -215,4 +235,5 @@ service IDBManager2GameService {
 	rpc dbCountDocReply(CountDocReq) returns (Void);
 	rpc redisCmdReply(RedisCommandReply) returns (Void);
 	rpc redisPipelineReply(RedisPipelineReply) returns (Void);
+	rpc dbBulkWriteReply(BulkWriteReply) returns (Void);
 } 

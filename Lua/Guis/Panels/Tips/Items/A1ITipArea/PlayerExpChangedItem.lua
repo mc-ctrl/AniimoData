@@ -1,4 +1,4 @@
---- BLOCK #0 1-65, warpins: 1 ---
+--- BLOCK #0 1-66, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -40,8 +40,9 @@ slot12 = slot12(slot14)
 slot13 = require
 slot15 = "Guis.Panels.Tips.TipAreaConst"
 slot13 = slot13(slot15)
+slot14 = "imgProgress"
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMaxLimit
@@ -59,9 +60,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.onInit = slot14
+slot11.onInit = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.dataQueue
 	slot2 = #slot2
@@ -109,9 +110,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.pushData = slot14
+slot11.pushData = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot1.addExp
 	slot4 = slot2.addExp
@@ -152,9 +153,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.batchData = slot14
+slot11.batchData = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryPopupItem
@@ -173,9 +174,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.onUpdate = slot14
+slot11.onUpdate = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isQueueEmpty
@@ -216,7 +217,7 @@ slot14 = function(slot0)
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.duration
 	--- END OF BLOCK #3 ---
 
@@ -256,9 +257,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.tryPopupItem = slot14
+slot11.tryPopupItem = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.runList
 	slot1 = #slot1
@@ -293,9 +294,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.onClearRunningList = slot14
+slot11.onClearRunningList = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isRunning
@@ -322,7 +323,7 @@ slot14 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -356,9 +357,9 @@ slot14 = function(slot0)
 
 end
 
-slot11.refreshRemainTime = slot14
+slot11.refreshRemainTime = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.removing
 	--- END OF BLOCK #0 ---
@@ -478,9 +479,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.recycleToast = slot14
+slot11.recycleToast = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isQueueEmpty
@@ -520,9 +521,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.destroyContent = slot14
+slot11.destroyContent = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.uContainer
 	slot4 = slot2
@@ -590,9 +591,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot11.initUContainer = slot14
+slot11.initUContainer = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-69, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -864,14 +865,17 @@ slot14 = function(slot0, slot1, slot2)
 			slot3 = expEndValue
 
 			slot4 = function()
-				--- BLOCK #0 1-22, warpins: 1 ---
+				--- BLOCK #0 1-25, warpins: 1 ---
 				slot0 = DoTweenAnimMgr
 				slot0 = slot0.DoFloat
 				slot2 = imgProgress
 				slot2 = slot2.gameObject
 				slot3 = 1
 				slot4 = 0
-				slot5 = "imgProgress"
+				slot5 = LuaUIUtils
+				slot5 = slot5.TweenId
+				slot7 = ID_IMG_PROGRESS
+				slot5 = slot5(slot7)
 				slot6 = 0.5
 				slot7 = 0
 				slot8 = CS
@@ -1004,14 +1008,17 @@ slot14 = function(slot0, slot1, slot2)
 		slot3 = expEndValue
 
 		slot4 = function()
-			--- BLOCK #0 1-22, warpins: 1 ---
+			--- BLOCK #0 1-25, warpins: 1 ---
 			slot0 = DoTweenAnimMgr
 			slot0 = slot0.DoFloat
 			slot2 = imgProgress
 			slot2 = slot2.gameObject
 			slot3 = 1
 			slot4 = 0
-			slot5 = "imgProgress"
+			slot5 = LuaUIUtils
+			slot5 = slot5.TweenId
+			slot7 = ID_IMG_PROGRESS
+			slot5 = slot5(slot7)
 			slot6 = 0.5
 			slot7 = 0
 			slot8 = CS
@@ -1098,7 +1105,7 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot11.renderItem = slot14
+slot11.renderItem = slot15
 
 return slot11
 --- END OF BLOCK #0 ---

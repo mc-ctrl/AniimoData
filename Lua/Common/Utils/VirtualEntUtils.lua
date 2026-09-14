@@ -1,29 +1,32 @@
---- BLOCK #0 1-39, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Common.IDManager"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.AttributeConst"
+slot4 = "Core.Common.IDManager"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "CustomTypes.Ability"
+slot5 = "Common.Const.AttributeConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.AbilityConst"
+slot6 = "CustomTypes.Ability"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.Const"
+slot7 = "Common.Const.AbilityConst"
 slot5 = slot5(slot7)
-slot6 = slot0.OldLightClass
-slot8 = "VirtualEntUtils"
-slot9 = nil
-slot10 = true
-slot6 = slot6(slot8, slot9, slot10)
+slot6 = require
+slot8 = "Common.Const.Const"
+slot6 = slot6(slot8)
+slot7 = slot1.OldLightClass
+slot9 = "VirtualEntUtils"
+slot10 = nil
+slot11 = true
+slot7 = slot7(slot9, slot10, slot11)
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = 0
 	slot0.actorId = slot1
@@ -35,9 +38,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.ctor = slot7
+slot7.ctor = slot8
 
-slot7 = function()
+slot8 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = VirtualEntUtils
 	slot0 = slot0.GetInstance
@@ -54,9 +57,9 @@ slot7 = function()
 
 end
 
-slot6.getNewVirtualEntActorId = slot7
+slot7.getNewVirtualEntActorId = slot8
 
-slot7 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = IdManager
 	slot0 = slot0.genB64ID
@@ -68,9 +71,9 @@ slot7 = function()
 
 end
 
-slot6.getNewVirtualEntityId = slot7
+slot7.getNewVirtualEntityId = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.buffDataList
 	--- END OF BLOCK #0 ---
@@ -159,7 +162,7 @@ slot7 = function(slot0, slot1)
 
 
 	--- BLOCK #7 38-38, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -221,9 +224,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.setDefaultAbility = slot7
+slot7.setDefaultAbility = slot8
 
-slot7 = function(slot0, slot1, slot2, slot3, slot4)
+slot8 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.global
@@ -477,9 +480,9 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot6.createDefaultAbility = slot7
+slot7.createDefaultAbility = slot8
 
-slot7 = function()
+slot8 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = {}
 	slot1 = AttributeConst
@@ -510,9 +513,9 @@ slot7 = function()
 
 end
 
-slot6.getVirtualDefaultAttribute = slot7
+slot7.getVirtualDefaultAttribute = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.LIFE_ALIVE
@@ -525,9 +528,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.setDefaultCombat = slot7
+slot7.setDefaultCombat = slot8
 
-return slot6
+return slot7
 --- END OF BLOCK #0 ---
 
 

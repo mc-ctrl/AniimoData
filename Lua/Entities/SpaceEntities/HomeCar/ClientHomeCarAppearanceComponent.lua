@@ -9,13 +9,14 @@ slot2 = slot0.Component
 slot4 = "ClientHomeCarAppearanceComponent"
 slot2 = slot2(slot4)
 
-slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot3 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.basicInfo = slot1
-	slot4 = slot0
-	slot2 = slot0.refreshCarAppearance
+	slot0.needUpgradeEffect = slot2
+	slot5 = slot0
+	slot3 = slot0.refreshCarAppearance
 
-	slot2(slot4)
+	slot3(slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -40,18 +41,18 @@ slot3 = function(slot0)
 
 	--- BLOCK #1 4-16, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot2 = ClientModelUtils
 	slot2 = slot2.applyHomeCarAppearance
 	slot4 = slot1
 	slot5 = slot0.basicInfo
+	slot6 = slot0.needUpgradeEffect
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	slot4 = slot1
 	slot2 = slot1.RefreshModels
-	slot5 = 0
+	slot5 = -1
 	slot6 = false
 
 	slot2(slot4, slot5, slot6)
@@ -100,10 +101,9 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-16, warpins: 1 ---
+	--- BLOCK #1 4-15, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot2 = ClientModelUtils
 	slot2 = slot2.applyHomeCarDecorationAppearance
 	slot4 = slot1
@@ -113,7 +113,7 @@ slot3 = function(slot0)
 
 	slot4 = slot1
 	slot2 = slot1.RefreshModels
-	slot5 = 0
+	slot5 = -1
 	slot6 = false
 
 	slot2(slot4, slot5, slot6)
@@ -123,7 +123,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-17, warpins: 2 ---
+	--- BLOCK #2 16-16, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

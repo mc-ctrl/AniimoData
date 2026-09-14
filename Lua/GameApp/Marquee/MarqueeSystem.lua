@@ -1,4 +1,4 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -15,18 +15,21 @@ slot4 = require
 slot6 = "Core.Timer.TimerManager"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.Time"
+slot7 = "Const.MessageName"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Common.lume"
+slot8 = "Core.Common.Time"
 slot6 = slot6(slot8)
-slot7 = slot0.getLogger
-slot9 = "MarqueeSystem"
+slot7 = require
+slot9 = "Core.Common.lume"
 slot7 = slot7(slot9)
-slot8 = ToBool
-slot9 = 3
+slot8 = slot0.getLogger
+slot10 = "MarqueeSystem"
+slot8 = slot8(slot10)
+slot9 = ToBool
+slot10 = 3
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -104,12 +107,29 @@ slot10 = function(slot0)
 
 end
 
-slot11 = slot2.LightClass
-slot13 = "MarqueeSystem"
-slot14 = slot3
-slot11 = slot11(slot13, slot14)
+slot12 = slot2.LightClass
+slot14 = "MarqueeSystem"
+slot15 = slot3
+slot12 = slot12(slot14, slot15)
 
-slot12 = function(slot0)
+slot13 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = {}
+	slot2 = MessageName
+	slot2 = slot2.ON_LOADING_PANEL_SHOW
+	slot3 = "onLoadingProgressShow"
+	slot1[slot2] = slot3
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.getMessageBindMap = slot13
+
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	slot0.marqueeInfo = slot1
@@ -121,25 +141,88 @@ slot12 = function(slot0)
 
 end
 
-slot11.onCtor = slot12
+slot12.onCtor = slot13
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.tryTriggerMarquee
+slot13 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	--- END OF BLOCK #0 ---
 
-	slot1(slot3)
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.loadProgress
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 12-16, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.checkUIShow
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-24, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.clearMarquee
+
+	slot2(slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-28, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.tryTriggerMarquee
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot11.onTick = slot12
+slot12.onTick = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -163,9 +246,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onClear = slot12
+slot12.onClear = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = nil
 	slot0.marqueeInfo = slot1
@@ -177,9 +260,29 @@ slot12 = function(slot0)
 
 end
 
-slot11.onDestroy = slot12
+slot12.onDestroy = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.clearMarquee
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.onLoadingProgressShow = slot13
+
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ToBool
 	slot4 = slot1
@@ -397,9 +500,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.updateMarqueeInfo = slot12
+slot12.updateMarqueeInfo = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = ToBool
 	slot3 = slot0.marqueeInfo
@@ -519,9 +622,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.tryTriggerMarquee = slot12
+slot12.tryTriggerMarquee = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3, slot4)
+slot13 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot2.isObsolete
 
@@ -664,9 +767,9 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot11.tryTriggerNextMarquee = slot12
+slot12.tryTriggerNextMarquee = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = false
 	slot3 = false
@@ -975,9 +1078,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.checkMarqueeChannel = slot12
+slot12.checkMarqueeChannel = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.endTime
 	--- END OF BLOCK #0 ---
@@ -1222,9 +1325,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.calculateNextTriggerInfo = slot12
+slot12.calculateNextTriggerInfo = slot13
 
-return slot11
+return slot12
 --- END OF BLOCK #0 ---
 
 

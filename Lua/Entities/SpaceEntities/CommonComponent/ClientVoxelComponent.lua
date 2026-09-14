@@ -1,36 +1,37 @@
---- BLOCK #0 1-45, warpins: 1 ---
+--- BLOCK #0 1-46, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Common.Time"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.AbilityConst"
+slot4 = "Core.Common.Time"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.ClientConst"
+slot5 = "Common.Const.AbilityConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.Utils"
+slot6 = "Const.ClientConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Utils.VoxelUtils"
+slot7 = "Common.Utils.Utils"
 slot5 = slot5(slot7)
-slot6 = slot0.Component
-slot8 = "ClientVoxelComponent"
+slot6 = require
+slot8 = "Common.Utils.VoxelUtils"
 slot6 = slot6(slot8)
+slot7 = slot1.Component
+slot9 = "ClientVoxelComponent"
+slot7 = slot7(slot9)
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = 0
 	slot0.voxelCustomData = slot1
 	slot1 = 0
 	slot0.surfaceVoxelCustomData = slot1
 	slot1 = 0
 	slot0.voxelState = slot1
-	slot1 = nil
-	slot0.voxelComponent = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -39,17 +40,16 @@ slot7 = function(slot0)
 
 end
 
-slot6.ctor = slot7
+slot7.ctor = slot8
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+slot8 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_VOXEL
-	slot1 = slot1(slot3, slot4)
-	slot0.voxelComponent = slot1
+
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -58,9 +58,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.EVENT_AddEComponent = slot7
+slot7.EVENT_AddEComponent = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initVoxelComponent
@@ -79,9 +79,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.onEnterSpace = slot7
+slot7.onEnterSpace = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshVoxelRegionLoadedState
@@ -95,9 +95,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.voxelRegionChanged = slot7
+slot7.voxelRegionChanged = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -240,9 +240,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.checkVoxelRegionLoaded = slot7
+slot7.checkVoxelRegionLoaded = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkVoxelRegionLoaded
@@ -278,9 +278,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.refreshVoxelRegionLoadedState = slot7
+slot7.refreshVoxelRegionLoadedState = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.voxelRegionLoaded
 	--- END OF BLOCK #0 ---
@@ -324,9 +324,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.EVENT_OnVoxelRegionChanged = slot7
+slot7.EVENT_OnVoxelRegionChanged = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isEnvObj
@@ -365,9 +365,9 @@ slot7 = function(slot0)
 	--- BLOCK #3 14-19, warpins: 2 ---
 	slot1 = slot1 * 0.6
 	slot1 = slot1 + 0.1
-	slot2 = slot0.voxelComponent
+	slot2 = slot0.eModel
 	slot2.checkVoxelUpRange = slot1
-	slot2 = slot0.voxelComponent
+	slot2 = slot0.eModel
 	slot2.checkVoxelDownRange = slot1
 	--- END OF BLOCK #3 ---
 
@@ -397,7 +397,7 @@ slot7 = function(slot0)
 
 
 	--- BLOCK #6 26-28, warpins: 2 ---
-	slot1 = slot0.voxelComponent
+	slot1 = slot0.eModel
 	slot2 = true
 	slot1.betterWaterCheck = slot2
 
@@ -414,9 +414,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.initVoxelComponent = slot7
+slot7.initVoxelComponent = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -448,13 +448,15 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-16, warpins: 3 ---
-	slot2 = slot0.voxelComponent
+	--- BLOCK #3 10-18, warpins: 3 ---
+	slot2 = slot0.eModel
 	slot4 = slot2
 	slot2 = slot2.SetEnableVoxelUpdate
-	slot5 = slot1
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_VOXEL
+	slot6 = slot1
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #3 ---
 
@@ -465,7 +467,7 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 17-22, warpins: 1 ---
+	--- BLOCK #4 19-24, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.onVoxelChanged
 	slot5 = 0
@@ -479,7 +481,7 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 23-23, warpins: 2 ---
+	--- BLOCK #5 25-25, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -487,9 +489,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.setEnableVoxelUpdate = slot7
+slot7.setEnableVoxelUpdate = slot8
 
-slot7 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.voxelCustomData
 	--- END OF BLOCK #0 ---
@@ -561,23 +563,9 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.onVoxelChanged = slot7
+slot7.onVoxelChanged = slot8
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = nil
-	slot0.voxelComponent = slot1
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot6.destroy = slot7
-
-return slot6
+return slot7
 --- END OF BLOCK #0 ---
 
 

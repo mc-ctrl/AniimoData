@@ -1,4 +1,4 @@
---- BLOCK #0 1-56, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -223,27 +223,59 @@ slot9 = function(slot0)
 	slot2 = slot2.inputField
 
 	slot3 = function(slot0)
-		--- BLOCK #0 1-17, warpins: 1 ---
+		--- BLOCK #0 1-4, warpins: 1 ---
 		slot1 = self
-		slot2 = ClientTextUtils
-		slot2 = slot2.getValidName
-		slot4 = slot0
-		slot5 = SysConfigData
-		slot5 = slot5.playerNameMaxLen
-		slot2 = slot2(slot4, slot5)
-		slot1.newArgs = slot2
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.inputField
-		slot3 = slot1
-		slot1 = slot1.SetTextWithoutNotify
-		slot4 = self
-		slot4 = slot4.newArgs
+		slot1 = slot1.argData
+		--- END OF BLOCK #0 ---
 
-		slot1(slot3, slot4)
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.argData
+		slot1 = slot1.maxLen
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 10-11, warpins: 2 ---
+		slot1 = SysConfigData
+		slot1 = slot1.playerNameMaxLen
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 12-27, warpins: 2 ---
+		slot2 = self
+		slot3 = ClientTextUtils
+		slot3 = slot3.getValidName
+		slot5 = slot0
+		slot6 = slot1
+		slot3 = slot3(slot5, slot6)
+		slot2.newArgs = slot3
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.inputField
+		slot4 = slot2
+		slot2 = slot2.SetTextWithoutNotify
+		slot5 = self
+		slot5 = slot5.newArgs
+
+		slot2(slot4, slot5)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -330,11 +362,11 @@ slot9 = function(slot0)
 	if slot1 == "Rename" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 5-28, warpins: 1 ---
+	--- BLOCK #1 5-22, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -353,23 +385,66 @@ slot9 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.inputField
-	slot3 = slot3.placeHolder
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.playerName
-
-	slot1(slot3, slot4)
-
+	slot1 = slot0.argData
+	slot1 = slot1.placeholder
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 29-53, warpins: 1 ---
+	--- BLOCK #2 23-25, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.playerName
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 26-36, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.inputField
+	slot4 = slot4.placeHolder
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.argData
+	slot2 = slot2.initialText
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 37-47, warpins: 1 ---
+	slot2 = slot0.argData
+	slot2 = slot2.initialText
+	slot0.newArgs = slot2
+	slot2 = slot0.view
+	slot2 = slot2.inputField
+	slot4 = slot2
+	slot2 = slot2.SetTextWithoutNotify
+	slot5 = slot0.argData
+	slot5 = slot5.initialText
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 48-72, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootComponent
 	slot3 = slot1
@@ -397,29 +472,29 @@ slot9 = function(slot0)
 	slot2 = slot2.TryGetChildAt
 	slot5 = 0
 	slot2, slot3 = slot2(slot4, slot5)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 54-56, warpins: 1 ---
+	--- BLOCK #6 73-75, warpins: 1 ---
 	slot6 = slot3
 	slot4 = slot3.OnClickSimulate
 
 	slot4(slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 57-57, warpins: 3 ---
+	--- BLOCK #7 76-76, warpins: 4 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -727,6 +802,50 @@ slot9 = function(slot0)
 end
 
 slot3.onBtnConfirm = slot9
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.argData
+	slot1 = slot1.mode
+	--- END OF BLOCK #0 ---
+
+	if slot1 == "Rename" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.inputField
+	slot1 = slot1.placeHolder
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-16, warpins: 2 ---
+	slot1 = UICtrl
+	slot1 = slot1.close
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot3.close = slot9
 
 slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---

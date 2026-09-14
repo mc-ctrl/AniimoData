@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-96, warpins: 1 ---
+	--- BLOCK #0 1-126, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -113,6 +113,36 @@ slot4 = function(slot0)
 	slot5 = "selectBox"
 	slot2 = slot2(slot4, slot5)
 	slot0.selectBoxRect = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnDisplayUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnDisplayUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "selectorMetreUSelector"
+	slot2 = slot2(slot4, slot5)
+	slot0.selectorMetreUSelector = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNumUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtCameraHeightUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtMUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtMUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtDisplayUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtDisplayUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtMetreUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtMetreUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

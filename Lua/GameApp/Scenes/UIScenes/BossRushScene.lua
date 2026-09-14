@@ -1,31 +1,31 @@
---- BLOCK #0 1-58, warpins: 1 ---
+--- BLOCK #0 1-64, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.UIScene.UISceneBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "BossRushScene"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Const.ClientConst"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "GameApp.UIScene.UISceneBase"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "BossRushScene"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Utils.ClientVirtualEntityUtils"
+slot6 = "Const.ClientConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Entities.ClientSimpleVirtualPlayer"
+slot7 = "Utils.ClientVirtualEntityUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.Const"
+slot8 = "Entities.ClientSimpleVirtualPlayer"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.EffectConst"
+slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.bossrush_cycle_data"
+slot10 = "Const.EffectConst"
 slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Data.bossrush_guanka_data"
@@ -35,13 +35,15 @@ slot12 = "Utils.BossRushUtils"
 slot10 = slot10(slot12)
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-19, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = nil
 	slot0.leftEntity = slot2
 	slot2 = nil
 	slot0.rightEntity = slot2
 	slot2 = nil
 	slot0.midEntity = slot2
+	slot2 = nil
+	slot0.seasonPlayerEntity = slot2
 	slot2 = nil
 	slot0.leftMiniGameEntity = slot2
 	slot2 = nil
@@ -63,10 +65,10 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.onStart = slot11
+slot3.onStart = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-221, warpins: 1 ---
+	--- BLOCK #0 1-257, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
 	slot4 = slot2
@@ -264,6 +266,46 @@ slot11 = function(slot0, slot1)
 	slot5 = "pBossRushUISceneEnv"
 	slot2 = slot2(slot4, slot5)
 	slot0.pBossRushUISceneEnv = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "seasonVirtualCamera"
+	slot2 = slot2(slot4, slot5)
+	slot0.seasonVirtualCamera = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "playerSeasonTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.playerSeasonTransform = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "mountainTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.mountainTransform = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "courseTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.courseTransform = slot2
+	slot2 = slot0.leftArrowTransform
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.rightArrowTransform
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	slot2 = {}
 	slot3 = slot0.player1Transform
 	slot2[1] = slot3
@@ -298,7 +340,7 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.initScene = slot11
+slot3.initScene = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -568,7 +610,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot2.setEntityParam = slot11
+slot3.setEntityParam = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -596,9 +638,9 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 
 	--- BLOCK #2 9-14, warpins: 1 ---
-	slot7 = slot0.leftEntity
-	slot9 = slot7
-	slot7 = slot7.destroy
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.leftEntity
 
 	slot7(slot9)
 
@@ -609,7 +651,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 15-50, warpins: 2 ---
+	--- BLOCK #3 15-51, warpins: 2 ---
 	slot7 = ClientVirtualEntityUtils
 	slot7 = slot7.createSimpleVirtualNpc
 	slot9 = slot1
@@ -617,9 +659,8 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0.leftEntity = slot7
 	slot7 = slot0.leftEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
 	slot9 = slot7
-	slot7 = slot7.SetParent
+	slot7 = slot7.SetTransformParent
 	slot10 = slot0.bossLeftTransform
 	slot11 = false
 
@@ -627,10 +668,11 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.leftEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
-	slot8 = Vector3
-	slot8 = slot8.zero
-	slot7.localPosition = slot8
+	slot9 = slot7
+	slot7 = slot7.SetTransformLocalPosition
+
+	slot7(slot9)
+
 	slot7 = slot0.leftEntity
 	slot9 = slot7
 	slot7 = slot7.setModelLayer
@@ -642,10 +684,13 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.leftEntity
 	slot9 = slot7
-	slot7 = slot7.toggleLodTick
-	slot10 = false
+	slot7 = slot7.setLodTickEnable
+	slot10 = Const
+	slot10 = slot10.LOD_TICK_KEY
+	slot10 = slot10.DEFAULT
+	slot11 = false
 
-	slot7(slot9, slot10)
+	slot7(slot9, slot10, slot11)
 
 	slot7 = BossRushLevelData
 	slot8 = slot6.bossLeft
@@ -659,7 +704,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #4 51-73, warpins: 1 ---
+	--- BLOCK #4 52-74, warpins: 1 ---
 	slot8 = {}
 	slot9 = slot7.leftModelPosition
 	slot8.modelPos = slot9
@@ -690,31 +735,25 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 74-76, warpins: 2 ---
+	--- BLOCK #5 75-77, warpins: 2 ---
 	slot8 = slot0.leftEntity
 
 	slot9 = function()
-		--- BLOCK #0 1-24, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.leftEntity
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		--- BLOCK #0 1-18, warpins: 1 ---
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPreset
+		slot2 = self
+		slot2 = slot2.leftEntity
 		slot3 = "Digital_Boss_Blue"
 		slot4 = -1
 		slot5 = false
 
 		slot0(slot2, slot3, slot4, slot5)
 
-		slot0 = self
-		slot0 = slot0.leftEntity
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPresetWithFilterMark
+		slot2 = self
+		slot2 = slot2.leftEntity
 		slot3 = "BossRush_RedEyes_Frenel"
 		slot4 = -1
 		slot5 = false
@@ -735,7 +774,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 77-78, warpins: 2 ---
+	--- BLOCK #6 78-79, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	slot2 = if slot2 then
@@ -745,7 +784,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #7 79-81, warpins: 1 ---
+	--- BLOCK #7 80-82, warpins: 1 ---
 	slot7 = slot0.rightEntity
 	--- END OF BLOCK #7 ---
 
@@ -756,10 +795,10 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #8 82-87, warpins: 1 ---
-	slot7 = slot0.rightEntity
-	slot9 = slot7
-	slot7 = slot7.destroy
+	--- BLOCK #8 83-88, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.rightEntity
 
 	slot7(slot9)
 
@@ -770,7 +809,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 88-123, warpins: 2 ---
+	--- BLOCK #9 89-125, warpins: 2 ---
 	slot7 = ClientVirtualEntityUtils
 	slot7 = slot7.createSimpleVirtualNpc
 	slot9 = slot2
@@ -778,9 +817,8 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0.rightEntity = slot7
 	slot7 = slot0.rightEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
 	slot9 = slot7
-	slot7 = slot7.SetParent
+	slot7 = slot7.SetTransformParent
 	slot10 = slot0.bossRightTransform
 	slot11 = false
 
@@ -788,10 +826,11 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.rightEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
-	slot8 = Vector3
-	slot8 = slot8.zero
-	slot7.localPosition = slot8
+	slot9 = slot7
+	slot7 = slot7.SetTransformLocalPosition
+
+	slot7(slot9)
+
 	slot7 = slot0.rightEntity
 	slot9 = slot7
 	slot7 = slot7.setModelLayer
@@ -803,10 +842,13 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.rightEntity
 	slot9 = slot7
-	slot7 = slot7.toggleLodTick
-	slot10 = false
+	slot7 = slot7.setLodTickEnable
+	slot10 = Const
+	slot10 = slot10.LOD_TICK_KEY
+	slot10 = slot10.DEFAULT
+	slot11 = false
 
-	slot7(slot9, slot10)
+	slot7(slot9, slot10, slot11)
 
 	slot7 = BossRushLevelData
 	slot8 = slot6.bossRight
@@ -820,7 +862,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #10 124-146, warpins: 1 ---
+	--- BLOCK #10 126-148, warpins: 1 ---
 	slot8 = {}
 	slot9 = slot7.rightModelPosition
 	slot8.modelPos = slot9
@@ -851,31 +893,25 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 147-149, warpins: 2 ---
+	--- BLOCK #11 149-151, warpins: 2 ---
 	slot8 = slot0.rightEntity
 
 	slot9 = function()
-		--- BLOCK #0 1-24, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.rightEntity
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		--- BLOCK #0 1-18, warpins: 1 ---
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPreset
+		slot2 = self
+		slot2 = slot2.rightEntity
 		slot3 = "Digital_Boss_Blue"
 		slot4 = -1
 		slot5 = false
 
 		slot0(slot2, slot3, slot4, slot5)
 
-		slot0 = self
-		slot0 = slot0.rightEntity
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPresetWithFilterMark
+		slot2 = self
+		slot2 = slot2.rightEntity
 		slot3 = "BossRush_RedEyes_Frenel"
 		slot4 = -1
 		slot5 = false
@@ -896,7 +932,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 150-151, warpins: 2 ---
+	--- BLOCK #12 152-153, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	slot3 = if slot3 then
@@ -906,7 +942,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #13 152-154, warpins: 1 ---
+	--- BLOCK #13 154-156, warpins: 1 ---
 	slot7 = slot0.midEntity
 	--- END OF BLOCK #13 ---
 
@@ -917,10 +953,10 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #14 155-160, warpins: 1 ---
-	slot7 = slot0.midEntity
-	slot9 = slot7
-	slot7 = slot7.destroy
+	--- BLOCK #14 157-162, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.midEntity
 
 	slot7(slot9)
 
@@ -931,7 +967,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 161-202, warpins: 2 ---
+	--- BLOCK #15 163-205, warpins: 2 ---
 	slot7 = ClientVirtualEntityUtils
 	slot7 = slot7.createSimpleVirtualNpc
 	slot9 = slot3
@@ -939,9 +975,8 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0.midEntity = slot7
 	slot7 = slot0.midEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
 	slot9 = slot7
-	slot7 = slot7.SetParent
+	slot7 = slot7.SetTransformParent
 	slot10 = slot0.bossMidTransform
 	slot11 = false
 
@@ -949,10 +984,11 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.midEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
-	slot8 = Vector3
-	slot8 = slot8.zero
-	slot7.localPosition = slot8
+	slot9 = slot7
+	slot7 = slot7.SetTransformLocalPosition
+
+	slot7(slot9)
+
 	slot7 = slot0.midEntity
 	slot9 = slot7
 	slot7 = slot7.setModelLayer
@@ -972,10 +1008,13 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.midEntity
 	slot9 = slot7
-	slot7 = slot7.toggleLodTick
-	slot10 = false
+	slot7 = slot7.setLodTickEnable
+	slot10 = Const
+	slot10 = slot10.LOD_TICK_KEY
+	slot10 = slot10.DEFAULT
+	slot11 = false
 
-	slot7(slot9, slot10)
+	slot7(slot9, slot10, slot11)
 
 	slot7 = BossRushLevelData
 	slot8 = slot6.bossMid
@@ -989,7 +1028,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #16 203-225, warpins: 1 ---
+	--- BLOCK #16 206-228, warpins: 1 ---
 	slot8 = {}
 	slot9 = slot7.midModelPosition
 	slot8.modelPos = slot9
@@ -1020,31 +1059,25 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 226-228, warpins: 2 ---
+	--- BLOCK #17 229-231, warpins: 2 ---
 	slot8 = slot0.midEntity
 
 	slot9 = function()
-		--- BLOCK #0 1-24, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.midEntity
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		--- BLOCK #0 1-18, warpins: 1 ---
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPreset
+		slot2 = self
+		slot2 = slot2.midEntity
 		slot3 = "Digital_Boss_Gold"
 		slot4 = -1
 		slot5 = false
 
 		slot0(slot2, slot3, slot4, slot5)
 
-		slot0 = self
-		slot0 = slot0.midEntity
-		slot0 = slot0.eModel
-		slot0 = slot0.modelView
-		slot0 = slot0.shaderView
-		slot2 = slot0
+		slot0 = ClientEffectUtils
 		slot0 = slot0.PlayPresetWithFilterMark
+		slot2 = self
+		slot2 = slot2.midEntity
 		slot3 = "BossRush_RedEyes_Frenel"
 		slot4 = -1
 		slot5 = false
@@ -1065,7 +1098,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 229-230, warpins: 2 ---
+	--- BLOCK #18 232-233, warpins: 2 ---
 	--- END OF BLOCK #18 ---
 
 	slot4 = if slot4 then
@@ -1075,7 +1108,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #19 231-233, warpins: 1 ---
+	--- BLOCK #19 234-236, warpins: 1 ---
 	slot7 = slot0.leftMiniGameEntity
 	--- END OF BLOCK #19 ---
 
@@ -1086,10 +1119,10 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #20 234-239, warpins: 1 ---
-	slot7 = slot0.leftMiniGameEntity
-	slot9 = slot7
-	slot7 = slot7.destroy
+	--- BLOCK #20 237-242, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.leftMiniGameEntity
 
 	slot7(slot9)
 
@@ -1100,7 +1133,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 240-265, warpins: 2 ---
+	--- BLOCK #21 243-266, warpins: 2 ---
 	slot7 = ClientVirtualEntityUtils
 	slot7 = slot7.createSimpleVirtualNpc
 	slot9 = slot4
@@ -1108,9 +1141,8 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0.leftMiniGameEntity = slot7
 	slot7 = slot0.leftMiniGameEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
 	slot9 = slot7
-	slot7 = slot7.SetParent
+	slot7 = slot7.SetTransformParent
 	slot10 = slot0.miniGameLeftTransform
 	slot11 = false
 
@@ -1118,10 +1150,11 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.leftMiniGameEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
-	slot8 = Vector3
-	slot8 = slot8.zero
-	slot7.localPosition = slot8
+	slot9 = slot7
+	slot7 = slot7.SetTransformLocalPosition
+
+	slot7(slot9)
+
 	slot7 = slot0.leftMiniGameEntity
 	slot9 = slot7
 	slot7 = slot7.setModelLayer
@@ -1136,7 +1169,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 266-267, warpins: 2 ---
+	--- BLOCK #22 267-268, warpins: 2 ---
 	--- END OF BLOCK #22 ---
 
 	slot5 = if slot5 then
@@ -1146,7 +1179,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #23 268-270, warpins: 1 ---
+	--- BLOCK #23 269-271, warpins: 1 ---
 	slot7 = slot0.rightMiniGameEntity
 	--- END OF BLOCK #23 ---
 
@@ -1157,10 +1190,10 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #24 271-276, warpins: 1 ---
-	slot7 = slot0.rightMiniGameEntity
-	slot9 = slot7
-	slot7 = slot7.destroy
+	--- BLOCK #24 272-277, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.rightMiniGameEntity
 
 	slot7(slot9)
 
@@ -1171,7 +1204,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 277-302, warpins: 2 ---
+	--- BLOCK #25 278-301, warpins: 2 ---
 	slot7 = ClientVirtualEntityUtils
 	slot7 = slot7.createSimpleVirtualNpc
 	slot9 = slot5
@@ -1179,9 +1212,8 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot0.rightMiniGameEntity = slot7
 	slot7 = slot0.rightMiniGameEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
 	slot9 = slot7
-	slot7 = slot7.SetParent
+	slot7 = slot7.SetTransformParent
 	slot10 = slot0.miniGameRightTransform
 	slot11 = false
 
@@ -1189,10 +1221,11 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot7 = slot0.rightMiniGameEntity
 	slot7 = slot7.eModel
-	slot7 = slot7.transform
-	slot8 = Vector3
-	slot8 = slot8.zero
-	slot7.localPosition = slot8
+	slot9 = slot7
+	slot7 = slot7.SetTransformLocalPosition
+
+	slot7(slot9)
+
 	slot7 = slot0.rightMiniGameEntity
 	slot9 = slot7
 	slot7 = slot7.setModelLayer
@@ -1207,7 +1240,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 303-304, warpins: 2 ---
+	--- BLOCK #26 302-303, warpins: 2 ---
 	return
 	--- END OF BLOCK #26 ---
 
@@ -1215,7 +1248,281 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot2.setEntities = slot11
+slot3.setEntities = slot11
+
+slot11 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = BossRushUtils
+	slot1 = slot1.getCycleData
+	slot1 = slot1()
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot2 = BossRushLevelData
+	slot3 = slot1.bossLeft
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot3 = slot2.bossId
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-19, warpins: 1 ---
+	slot3 = {
+		applyAnim = true
+	}
+	slot4 = slot2.bossId
+	slot3.templateId = slot4
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 3 ---
+	slot3 = nil
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-25, warpins: 2 ---
+	slot4 = BossRushLevelData
+	slot5 = slot1.bossRight
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 26-28, warpins: 1 ---
+	slot5 = slot4.bossId
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-33, warpins: 1 ---
+	slot5 = {
+		applyAnim = true
+	}
+	slot6 = slot4.bossId
+	slot5.templateId = slot6
+	--- END OF BLOCK #8 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 34-34, warpins: 3 ---
+	slot5 = nil
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 35-39, warpins: 2 ---
+	slot6 = BossRushLevelData
+	slot7 = slot1.bossMid
+	slot6 = slot6[slot7]
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 40-42, warpins: 1 ---
+	slot7 = slot6.bossId
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 43-47, warpins: 1 ---
+	slot7 = {
+		applyAnim = true
+	}
+	slot8 = slot6.bossId
+	slot7.templateId = slot8
+	--- END OF BLOCK #12 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 48-48, warpins: 3 ---
+	slot7 = nil
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 49-53, warpins: 2 ---
+	slot8 = BossRushLevelData
+	slot9 = slot1.miniGameLeft
+	slot8 = slot8[slot9]
+	--- END OF BLOCK #14 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 54-56, warpins: 1 ---
+	slot9 = slot8.bossId
+	--- END OF BLOCK #15 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 57-61, warpins: 1 ---
+	slot9 = {}
+	slot10 = slot8.bossId
+	slot9.templateId = slot10
+	--- END OF BLOCK #16 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 62-62, warpins: 3 ---
+	slot9 = nil
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 63-67, warpins: 2 ---
+	slot10 = BossRushLevelData
+	slot11 = slot1.miniGameRight
+	slot10 = slot10[slot11]
+	--- END OF BLOCK #18 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #19 68-70, warpins: 1 ---
+	slot11 = slot10.bossId
+	--- END OF BLOCK #19 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 71-75, warpins: 1 ---
+	slot11 = {}
+	slot12 = slot10.bossId
+	slot11.templateId = slot12
+	--- END OF BLOCK #20 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 76-76, warpins: 3 ---
+	slot11 = nil
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 77-88, warpins: 2 ---
+	slot14 = slot0
+	slot12 = slot0.setEntities
+	slot15 = slot3
+	slot16 = slot5
+	slot17 = slot7
+	slot18 = slot9
+	slot19 = slot11
+
+	slot12(slot14, slot15, slot16, slot17, slot18, slot19)
+
+	slot14 = slot0
+	slot12 = slot0.refreshPlayerModel
+
+	slot12(slot14)
+
+	return
+	--- END OF BLOCK #22 ---
+
+
+
+end
+
+slot3.showModels = slot11
 
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
@@ -1224,7 +1531,7 @@ slot11 = function(slot0, slot1)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #1 5-7, warpins: 1 ---
@@ -1284,10 +1591,10 @@ slot11 = function(slot0, slot1)
 
 
 	--- BLOCK #6 21-31, warpins: 2 ---
-	slot8 = slot0.playerModels
-	slot8 = slot8[slot5]
-	slot10 = slot8
-	slot8 = slot8.destroy
+	slot8 = ClientUtils
+	slot8 = slot8.safeDestroy
+	slot10 = slot0.playerModels
+	slot10 = slot10[slot5]
 
 	slot8(slot10)
 
@@ -1309,7 +1616,7 @@ slot11 = function(slot0, slot1)
 	slot8 = if not slot8 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #10
 	end
 
 
@@ -1321,132 +1628,336 @@ slot11 = function(slot0, slot1)
 	slot8 = if not slot8 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #9 39-45, warpins: 1 ---
-	slot8 = nil
-	slot9 = slot7.uid
-	slot10 = pg
-	slot10 = slot10.me
-	slot10 = slot10.uid
-	--- END OF BLOCK #9 ---
-
-	if slot9 == slot10 then
 	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 46-60, warpins: 1 ---
-	slot9 = ClientSimpleVirtualPlayer
-	slot9 = slot9.new
-	slot9 = slot9()
-	slot8 = slot9
-	slot11 = slot8
-	slot9 = slot8.init
-	slot12 = {}
-	slot13 = pg
-	slot13 = slot13.me
-	slot12.copyEntity = slot13
-
-	slot9(slot11, slot12)
-
-	slot11 = slot8
-	slot9 = slot8.start
-
-	slot9(slot11)
-
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #11 61-67, warpins: 1 ---
-	slot9 = ClientVirtualEntityUtils
-	slot9 = slot9.createVirtualPlayer
-	slot11 = slot7.avatarConfig
-	slot12 = slot7.curShow
-	slot13 = slot7.avatarPresetKey
-	slot9 = slot9(slot11, slot12, slot13)
-	slot8 = slot9
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 68-102, warpins: 2 ---
-	slot11 = slot8
-	slot9 = slot8.setScaleNumber
-	slot12 = 0.3
-
-	slot9(slot11, slot12)
-
-	slot9 = slot8.eModel
-	slot9 = slot9.transform
-	slot11 = slot9
-	slot9 = slot9.SetParent
+	--- BLOCK #9 39-48, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.createPlayer
+	slot11 = slot7
 	slot12 = slot6
-
-	slot9(slot11, slot12)
-
-	slot9 = slot8.eModel
-	slot9 = slot9.transform
-	slot10 = Vector3
-	slot10 = slot10.zero
-	slot9.localPosition = slot10
-	slot9 = slot8.eModel
-	slot9 = slot9.transform
-	slot10 = Vector3
-	slot10 = slot10.zero
-	slot9.localRotation = slot10
-	slot11 = slot8
-	slot9 = slot8.setModelLayer
-	slot12 = ClientConst
-	slot12 = slot12.LayerDefine
-	slot12 = slot12.LAYER_UI_SCENE
-
-	slot9(slot11, slot12)
-
-	slot11 = slot8
-	slot9 = slot8.toggleLodTick
-	slot12 = false
-
-	slot9(slot11, slot12)
-
+	slot8 = slot8(slot10, slot11, slot12)
 	slot9 = slot0.playerModels
 	slot9[slot5] = slot8
 	slot9 = slot0.playerModelUids
 	slot10 = slot7.uid
 	slot9[slot5] = slot10
+	--- END OF BLOCK #9 ---
 
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #13 103-104, warpins: 4 ---
-	--- END OF BLOCK #13 ---
+	--- BLOCK #10 49-50, warpins: 4 ---
+	--- END OF BLOCK #10 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #14
+	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #14 105-105, warpins: 1 ---
-	return
+	--- BLOCK #11 51-54, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #12 55-60, warpins: 1 ---
+	slot7 = slot6.uid
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.uid
+	--- END OF BLOCK #12 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #13 61-63, warpins: 1 ---
+	slot7 = slot0.seasonPlayerEntity
+	--- END OF BLOCK #13 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 64-67, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.seasonPlayerEntity
+
+	slot7(slot9)
+
 	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 68-74, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.createPlayer
+	slot10 = slot6
+	slot11 = slot0.playerSeasonTransform
+	slot7 = slot7(slot9, slot10, slot11)
+	slot0.seasonPlayerEntity = slot7
+
+	return
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 75-76, warpins: 3 ---
+	--- END OF BLOCK #16 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 77-77, warpins: 1 ---
+	return
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot2.setPlayers = slot11
+slot3.setPlayers = slot11
+
+slot11 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = {}
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isInTeam
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 9-18, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getCurTeamInfo
+	slot2 = slot2(slot4)
+	slot3 = slot2.membersInfo
+	slot4 = ipairs
+	slot6 = slot2.sortList
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 19-31, warpins: 1 ---
+	slot9 = slot3[slot8]
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot1
+	slot13 = {}
+	slot13.uid = slot8
+	slot14 = slot9.avatarConfig
+	slot13.avatarConfig = slot14
+	slot14 = slot9.curShow
+	slot13.curShow = slot14
+	slot14 = slot9.avatarPresetKey
+	slot13.avatarPresetKey = slot14
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 32-33, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 34-34, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 35-43, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.insert
+	slot4 = slot1
+	slot5 = {}
+	slot6 = pg
+	slot6 = slot6.me
+	slot6 = slot6.uid
+	slot5.uid = slot6
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 44-48, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.setPlayers
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot3.refreshPlayerModel = slot11
+
+slot11 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = nil
+	slot4 = slot1.uid
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.uid
+	--- END OF BLOCK #0 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-33, warpins: 1 ---
+	slot4 = ClientSimpleVirtualPlayer
+	slot4 = slot4.new
+	slot4 = slot4()
+	slot3 = slot4
+	slot4 = {}
+	slot5 = pg
+	slot5 = slot5.me
+	slot4.copyEntity = slot5
+	slot7 = slot0
+	slot5 = slot0.getPlayerOriginInitDict
+	slot8 = slot4
+	slot9 = ClientSimpleVirtualPlayer
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4 = slot5
+	slot7 = slot3
+	slot5 = slot3.init
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot7 = slot3
+	slot5 = slot3.postInit
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot7 = slot3
+	slot5 = slot3.start
+
+	slot5(slot7)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 34-40, warpins: 1 ---
+	slot4 = ClientVirtualEntityUtils
+	slot4 = slot4.createVirtualPlayer
+	slot6 = slot1.avatarConfig
+	slot7 = slot1.curShow
+	slot8 = slot1.avatarPresetKey
+	slot4 = slot4(slot6, slot7, slot8)
+	slot3 = slot4
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 41-75, warpins: 2 ---
+	slot6 = slot3
+	slot4 = slot3.setScaleNumber
+	slot7 = 0.3
+
+	slot4(slot6, slot7)
+
+	slot4 = slot3.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformParent
+	slot7 = slot2
+
+	slot4(slot6, slot7)
+
+	slot4 = slot3.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
+
+	slot4(slot6)
+
+	slot4 = slot3.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalRotation
+	slot7 = 0
+	slot8 = 0
+	slot9 = 0
+	slot10 = 1
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot6 = slot3
+	slot4 = slot3.setModelLayer
+	slot7 = ClientConst
+	slot7 = slot7.LayerDefine
+	slot7 = slot7.LAYER_UI_SCENE
+
+	slot4(slot6, slot7)
+
+	slot6 = slot3
+	slot4 = slot3.setLodTickEnable
+	slot7 = Const
+	slot7 = slot7.LOD_TICK_KEY
+	slot7 = slot7.DEFAULT
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	return slot3
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot3.createPlayer = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-29, warpins: 1 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot2 = slot0.mainVirtualCamera
 	slot3 = 0
 	slot2.Priority = slot3
@@ -1457,6 +1968,9 @@ slot11 = function(slot0, slot1)
 	slot3 = 0
 	slot2.Priority = slot3
 	slot2 = slot0.rightVirtualCamera
+	slot3 = 0
+	slot2.Priority = slot3
+	slot2 = slot0.seasonVirtualCamera
 	slot3 = 0
 	slot2.Priority = slot3
 	slot2 = slot0.bossInfoUComponent
@@ -1480,16 +1994,59 @@ slot11 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = slot0.seasonPlayerEntity
 	--- END OF BLOCK #0 ---
 
-	if slot1 == nil then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 30-78, warpins: 1 ---
+	--- BLOCK #1 34-53, warpins: 1 ---
+	slot2 = slot0.seasonPlayerEntity
+	slot4 = slot2
+	slot2 = slot2.setActive
+	slot5 = ClientConst
+	slot5 = slot5.MODEL_VISIBLE_KEY
+	slot5 = slot5.BOSS_RUSH_SCENE
+	slot6 = false
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.mountainTransform
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.courseTransform
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 54-55, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 56-92, warpins: 1 ---
 	slot2 = slot0.mainVirtualCamera
 	slot3 = 10
 	slot2.Priority = slot3
@@ -1538,46 +2095,14 @@ slot11 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.leftArrowTransform
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.rightArrowTransform
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = true
-
-	slot2(slot4, slot5)
-
 	return
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 79-128, warpins: 2 ---
-	slot2 = slot0.leftArrowTransform
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = false
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.rightArrowTransform
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = false
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #4 93-130, warpins: 2 ---
 	slot2 = slot0.pointBossUButton
 	slot4 = slot2
 	slot2 = slot2.SetActive
@@ -1626,16 +2151,16 @@ slot11 = function(slot0, slot1)
 	slot2 = Const
 	slot2 = slot2.BossRushTeleportTarget
 	slot2 = slot2.BossLeft
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 129-143, warpins: 1 ---
+	--- BLOCK #5 131-145, warpins: 1 ---
 	slot2 = slot0.leftVirtualCamera
 	slot3 = 10
 	slot2.Priority = slot3
@@ -1654,25 +2179,25 @@ slot11 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #4 144-148, warpins: 1 ---
+	--- BLOCK #6 146-150, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.BossRushTeleportTarget
 	slot2 = slot2.BossMid
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 149-163, warpins: 1 ---
+	--- BLOCK #7 151-165, warpins: 1 ---
 	slot2 = slot0.midVirtualCamera
 	slot3 = 10
 	slot2.Priority = slot3
@@ -1691,25 +2216,25 @@ slot11 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #6 164-168, warpins: 1 ---
+	--- BLOCK #8 166-170, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.BossRushTeleportTarget
 	slot2 = slot2.BossRight
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 169-182, warpins: 1 ---
+	--- BLOCK #9 171-185, warpins: 1 ---
 	slot2 = slot0.rightVirtualCamera
 	slot3 = 10
 	slot2.Priority = slot3
@@ -1728,20 +2253,68 @@ slot11 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #8 183-183, warpins: 4 ---
+	--- BLOCK #10 186-190, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.BossRushTeleportTarget
+	slot2 = slot2.Season
+	--- END OF BLOCK #10 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 191-213, warpins: 1 ---
+	slot2 = slot0.seasonVirtualCamera
+	slot3 = 10
+	slot2.Priority = slot3
+	slot2 = slot0.seasonPlayerEntity
+	slot4 = slot2
+	slot2 = slot2.setActive
+	slot5 = ClientConst
+	slot5 = slot5.MODEL_VISIBLE_KEY
+	slot5 = slot5.BOSS_RUSH_SCENE
+	slot6 = true
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.mountainTransform
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.courseTransform
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 214-214, warpins: 5 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot2.switchCameraPos = slot11
+slot3.switchCameraPos = slot11
 
 slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
@@ -1769,12 +2342,11 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-49, warpins: 2 ---
+	--- BLOCK #2 10-47, warpins: 2 ---
 	slot3 = slot0.luckyPetEntity
 	slot3 = slot3.eModel
-	slot3 = slot3.transform
 	slot5 = slot3
-	slot3 = slot3.SetParent
+	slot3 = slot3.SetTransformParent
 	slot6 = slot0.luckyPetTransform
 	slot7 = false
 
@@ -1782,10 +2354,11 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot3 = slot0.luckyPetEntity
 	slot3 = slot3.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.localPosition = slot4
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalPosition
+
+	slot3(slot5)
+
 	slot3 = slot0.luckyPetEntity
 	slot5 = slot3
 	slot3 = slot3.setModelLayer
@@ -1824,7 +2397,7 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot2.setLuckyPetModel = slot11
+slot3.setLuckyPetModel = slot11
 
 slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -1881,7 +2454,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.setModelVisible = slot11
+slot3.setModelVisible = slot11
 
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -2032,7 +2605,7 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.setAllModelVisible = slot11
+slot3.setAllModelVisible = slot11
 
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -2067,7 +2640,7 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.setEnvComponentEnable = slot11
+slot3.setEnvComponentEnable = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -2082,9 +2655,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #1 4-9, warpins: 1 ---
-	slot1 = slot0.leftEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.leftEntity
 
 	slot1(slot3)
 
@@ -2107,9 +2680,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #3 13-18, warpins: 1 ---
-	slot1 = slot0.midEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.midEntity
 
 	slot1(slot3)
 
@@ -2132,9 +2705,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #5 22-27, warpins: 1 ---
-	slot1 = slot0.rightEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.rightEntity
 
 	slot1(slot3)
 
@@ -2157,9 +2730,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #7 31-36, warpins: 1 ---
-	slot1 = slot0.leftMiniGameEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.leftMiniGameEntity
 
 	slot1(slot3)
 
@@ -2182,9 +2755,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #9 40-45, warpins: 1 ---
-	slot1 = slot0.rightMiniGameEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.rightMiniGameEntity
 
 	slot1(slot3)
 
@@ -2207,9 +2780,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #11 49-54, warpins: 1 ---
-	slot1 = slot0.luckyPetEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.luckyPetEntity
 
 	slot1(slot3)
 
@@ -2220,50 +2793,76 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 55-58, warpins: 2 ---
-	slot1 = ipairs
-	slot3 = slot0.playerModels
-	slot1, slot2, slot3 = slot1(slot3)
+	--- BLOCK #12 55-57, warpins: 2 ---
+	slot1 = slot0.seasonPlayerEntity
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #13 59-61, warpins: 1 ---
-	slot8 = slot5
-	slot6 = slot5.destroy
+	--- BLOCK #13 58-63, warpins: 1 ---
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.seasonPlayerEntity
 
-	slot6(slot8)
+	slot1(slot3)
 
+	slot1 = nil
+	slot0.seasonPlayerEntity = slot1
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 62-63, warpins: 2 ---
+	--- BLOCK #14 64-67, warpins: 2 ---
+	slot1 = ipairs
+	slot3 = slot0.playerModels
+	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #14 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 68-71, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
+	slot8 = slot5
+
+	slot6(slot8)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 72-73, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
 	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #13
-	GO OUT TO BLOCK #15
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #17
 
 
-	--- BLOCK #15 64-68, warpins: 1 ---
+	--- BLOCK #17 74-78, warpins: 1 ---
 	slot1 = {}
 	slot0.playerModels = slot1
 	slot1 = {}
 	slot0.playerModelUids = slot1
 
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot2.onDestroy = slot11
+slot3.onDestroy = slot11
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

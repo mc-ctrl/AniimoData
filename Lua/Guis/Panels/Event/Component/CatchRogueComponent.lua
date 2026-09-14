@@ -1,73 +1,76 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-84, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "CatchRogueComponent"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "CatchRogueComponent"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.Helper.UIComponent"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.Panels.Event.Component.EventContainerComponent"
+slot5 = "Guis.Helper.UIComponent"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.game_event_data"
+slot6 = "Guis.Panels.Event.Component.EventContainerComponent"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.RedDotConst"
+slot7 = "Data.game_event_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.UIConst"
+slot8 = "Const.RedDotConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Const.UIConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientTextUtils"
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.LuaUIUtils"
+slot11 = "Utils.ClientTextUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.ClientActivityUtils"
+slot12 = "Utils.LuaUIUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Utils.ActivityUtils"
+slot13 = "Utils.ClientActivityUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Core.Common.Time"
+slot14 = "Common.Utils.ActivityUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.ClientConst"
+slot15 = "Core.Common.Time"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.Utils"
+slot16 = "Const.ClientConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.pet_data"
+slot17 = "Common.Utils.Utils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.pet_avatar_data"
+slot18 = "Data.pet_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.limit_data"
+slot19 = "Data.pet_avatar_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.event_catch_rogue_data"
+slot20 = "Data.limit_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.catch_rogue_phase_data"
+slot21 = "Data.event_catch_rogue_data"
 slot19 = slot19(slot21)
-slot20 = slot1.LightClass
-slot22 = "CatchRogueComponent"
-slot23 = slot3
-slot20 = slot20(slot22, slot23)
+slot20 = require
+slot22 = "Data.catch_rogue_phase_data"
+slot20 = slot20(slot22)
+slot21 = slot2.LightClass
+slot23 = "CatchRogueComponent"
+slot24 = slot4
+slot21 = slot21(slot23, slot24)
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -223,9 +226,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.findObjects = slot21
+slot21.findObjects = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = slot0.listRewardUList
 
@@ -372,9 +375,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.addListener = slot21
+slot21.addListener = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = EventContainerComponent
 	slot1 = slot1.onBeforeRefreshPage
@@ -400,9 +403,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.onBeforeRefreshPage = slot21
+slot21.onBeforeRefreshPage = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = GameEventData
 	slot2 = slot0.eventId
@@ -524,7 +527,7 @@ slot21 = function(slot0)
 	slot3 = slot3.getEventTimeConfig
 	slot5 = slot0.eventId
 	slot3 = slot3(slot5)
-	slot4 = slot3.eventEndDayTime
+	slot4 = slot3.tabEndDayTime
 	slot5 = Time
 	slot5 = slot5.secondCache
 	slot4 = slot4 - slot5
@@ -618,7 +621,7 @@ slot21 = function(slot0)
 
 
 	--- BLOCK #12 122-122, warpins: 1 ---
-	slot13 = {}
+	slot13 = EMPTY_TABLE
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
@@ -843,9 +846,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.refreshPage = slot21
+slot21.refreshPage = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = EventCatchRogueData
 	slot2 = slot0.eventPhase
@@ -912,9 +915,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.onBtnGoClick = slot21
+slot21.onBtnGoClick = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1118,9 +1121,9 @@ slot21 = function(slot0)
 
 end
 
-slot20.onBtnTrackClick = slot21
+slot21.onBtnTrackClick = slot22
 
-return slot20
+return slot21
 --- END OF BLOCK #0 ---
 
 

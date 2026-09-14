@@ -2144,13 +2144,13 @@ slot23 = function(slot0)
 	--- BLOCK #4 21-28, warpins: 2 ---
 	slot3 = slot3[slot4]
 	slot4 = slot1.eModel
-	slot4 = slot4.transform
-	slot4 = slot4.localScale
-	slot4 = slot4.x
-	slot5 = slot3.topbarHeight
+	slot6 = slot4
+	slot4 = slot4.GetTransformLocalScale
+	slot4, slot5, slot6 = slot4(slot6)
+	slot7 = slot3.topbarHeight
 	--- END OF BLOCK #4 ---
 
-	slot5 = if slot5 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
@@ -2158,11 +2158,11 @@ slot23 = function(slot0)
 
 
 	--- BLOCK #5 29-32, warpins: 1 ---
-	slot5 = slot3.topbarHeight
-	slot5 = slot5 * slot4
+	slot7 = slot3.topbarHeight
+	slot7 = slot7 * slot4
 	--- END OF BLOCK #5 ---
 
-	slot5 = if not slot5 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
@@ -2170,20 +2170,20 @@ slot23 = function(slot0)
 
 
 	--- BLOCK #6 33-33, warpins: 2 ---
-	slot5 = nil
+	slot7 = nil
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
 	--- BLOCK #7 34-39, warpins: 2 ---
-	slot8 = slot1
-	slot6 = slot1.getHeight
-	slot6 = slot6(slot8)
-	slot6 = slot6 * slot4
+	slot10 = slot1
+	slot8 = slot1.getHeight
+	slot8 = slot8(slot10)
+	slot8 = slot8 * slot4
 	--- END OF BLOCK #7 ---
 
-	slot7 = if not slot5 then
+	slot9 = if not slot7 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
@@ -2191,7 +2191,7 @@ slot23 = function(slot0)
 
 
 	--- BLOCK #8 40-40, warpins: 1 ---
-	slot7 = slot6 + 0.3
+	slot9 = slot8 + 0.3
 
 	--- END OF BLOCK #8 ---
 
@@ -2199,7 +2199,7 @@ slot23 = function(slot0)
 
 
 	--- BLOCK #9 41-41, warpins: 2 ---
-	return slot7
+	return slot9
 	--- END OF BLOCK #9 ---
 
 

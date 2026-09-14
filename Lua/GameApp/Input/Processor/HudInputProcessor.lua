@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -29,20 +29,18 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Const.HotkeyConst"
 slot9 = slot9(slot11)
-slot10 = CS
-slot10 = slot10.UnityEngine
-slot10 = slot10.Time
-slot11 = pg
-slot12 = ToBool
-slot13 = slot0.LightClass
-slot15 = "HudInputProcessor"
-slot16 = slot1
-slot13 = slot13(slot15, slot16)
-slot14 = 0.2
+slot10 = pg
+slot11 = ToBool
+slot12 = slot0.LightClass
+slot14 = "HudInputProcessor"
+slot15 = slot1
+slot12 = slot12(slot14, slot15)
+slot13 = 0.2
+slot14 = slot13 + 0.1
 slot15 = "GamepadMenuRelease"
 
 slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = HudInputProcessor
 	slot2 = slot2.super
 	slot2 = slot2.ctor
@@ -55,6 +53,12 @@ slot16 = function(slot0, slot1)
 	slot0.gamepadMenuTimer = slot2
 	slot2 = 0
 	slot0.gamepadMenuPressTime = slot2
+	slot2 = false
+	slot0.cancelNextGamepadMenuPress = slot2
+	slot2 = false
+	slot0.cancelGamepadMenuPressUntilRelease = slot2
+	slot2 = nil
+	slot0.cancelGamepadMenuPressTimer = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -63,7 +67,133 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot13.ctor = slot16
+slot12.ctor = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.cancelGamepadMenuPressTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.cancelGamepadMenuPressTimer
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.cancelGamepadMenuPressTimer = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-14, warpins: 2 ---
+	slot1 = false
+	slot0.cancelNextGamepadMenuPress = slot1
+	slot1 = false
+	slot0.cancelGamepadMenuPressUntilRelease = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.clearCancelGamepadMenuPressState = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.cancelGamepadMenuPressTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.cancelGamepadMenuPressTimer
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.cancelGamepadMenuPressTimer = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-28, warpins: 2 ---
+	slot1 = true
+	slot0.cancelNextGamepadMenuPress = slot1
+	slot1 = true
+	slot0.cancelGamepadMenuPressUntilRelease = slot1
+	slot3 = slot0
+	slot1 = slot0.stopGamepadMenuLongPress
+
+	slot1(slot3)
+
+	slot1 = TimerManager
+	slot1 = slot1.addNextFrameCb
+
+	slot3 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot1 = false
+		slot0.cancelNextGamepadMenuPress = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3)
+
+	slot1 = TimerManager
+	slot1 = slot1.addTimer
+	slot3 = CANCEL_GAMEPAD_MENU_PRESS_TIMEOUT
+
+	slot4 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.clearCancelGamepadMenuPressState
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1 = slot1(slot3, slot4)
+	slot0.cancelGamepadMenuPressTimer = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.cancelNextGamepadMenuAction = slot16
 
 slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -189,7 +319,7 @@ slot17 = function(slot0)
 
 end
 
-slot13.stopGamepadMenuLongPress = slot17
+slot12.stopGamepadMenuLongPress = slot17
 
 slot17 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
@@ -383,59 +513,113 @@ slot18 = function(slot0, slot1)
 	if slot2 == "Checked" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot2 = canOpenGamepadMenu
-	slot2 = slot2()
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot0.cancelGamepadMenuPressUntilRelease
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-9, warpins: 1 ---
+	--- BLOCK #2 7-8, warpins: 1 ---
 	slot2 = true
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #3 10-10, warpins: 0 ---
+	--- BLOCK #3 9-12, warpins: 1 ---
+	slot2 = canOpenGamepadMenu
+	slot2 = slot2()
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #23
+	end
 
 
-	--- BLOCK #4 11-13, warpins: 1 ---
-	slot2 = slot1.phase
+	--- BLOCK #4 13-14, warpins: 1 ---
+	slot2 = true
 	--- END OF BLOCK #4 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #5 15-15, warpins: 0 ---
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #6 16-18, warpins: 1 ---
+	slot2 = slot1.phase
+	--- END OF BLOCK #6 ---
+
 	if slot2 == "Performed" then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #7 19-21, warpins: 1 ---
+	slot2 = slot0.cancelNextGamepadMenuPress
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 22-24, warpins: 1 ---
+	slot2 = slot0.cancelGamepadMenuPressUntilRelease
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 14-17, warpins: 1 ---
+	--- BLOCK #9 25-31, warpins: 2 ---
+	slot2 = false
+	slot0.cancelNextGamepadMenuPress = slot2
+	slot4 = slot0
+	slot2 = slot0.stopGamepadMenuLongPress
+
+	slot2(slot4)
+
+	slot2 = true
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #10 32-35, warpins: 1 ---
 	slot2 = canOpenGamepadMenu
 	slot2 = slot2()
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #10 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #6 18-27, warpins: 1 ---
+	--- BLOCK #11 36-45, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -447,12 +631,12 @@ slot18 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = true
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #7 28-39, warpins: 1 ---
+	--- BLOCK #12 46-57, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.stopGamepadMenuLongPress
 
@@ -465,16 +649,16 @@ slot18 = function(slot0, slot1)
 	slot3 = HotkeyConst
 	slot3 = slot3.GAMEPAD_INPUT_CONTROL_MODE
 	slot3 = slot3.CombineMode
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #12 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #8 40-46, warpins: 1 ---
+	--- BLOCK #13 58-64, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.addRepeatTimer
 	slot4 = 0
@@ -520,7 +704,7 @@ slot18 = function(slot0, slot1)
 		slot0 = self
 		slot1 = self
 		slot1 = slot1.gamepadMenuPressTime
-		slot2 = UnityTime
+		slot2 = Time
 		slot2 = slot2.unscaledDeltaTime
 		slot1 = slot1 + slot2
 		slot0.gamepadMenuPressTime = slot1
@@ -595,12 +779,12 @@ slot18 = function(slot0, slot1)
 
 	slot2 = slot2(slot4, slot5)
 	slot0.gamepadMenuTimer = slot2
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #9 47-55, warpins: 1 ---
+	--- BLOCK #14 65-73, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -611,23 +795,54 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #10 56-58, warpins: 1 ---
+	--- BLOCK #15 74-76, warpins: 1 ---
 	slot2 = slot1.phase
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #15 ---
 
 	if slot2 == "Canceled" then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #11 59-67, warpins: 1 ---
+	--- BLOCK #16 77-79, warpins: 1 ---
+	slot2 = slot0.cancelGamepadMenuPressUntilRelease
+	--- END OF BLOCK #16 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 80-88, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.clearCancelGamepadMenuPressState
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.stopGamepadMenuLongPress
+
+	slot2(slot4)
+
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 89-97, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.input
@@ -635,27 +850,27 @@ slot18 = function(slot0, slot1)
 	slot3 = HotkeyConst
 	slot3 = slot3.GAMEPAD_INPUT_CONTROL_MODE
 	slot3 = slot3.CombineMode
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #18 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #12 68-70, warpins: 1 ---
+	--- BLOCK #19 98-100, warpins: 1 ---
 	slot2 = slot0.gamepadMenuTimer
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #19 ---
 
 	if slot2 ~= nil then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #13 71-82, warpins: 1 ---
+	--- BLOCK #20 101-112, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.stopGamepadMenuLongPress
 
@@ -673,27 +888,27 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #14 83-89, warpins: 2 ---
+	--- BLOCK #21 113-119, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
 	slot2 = slot2.gamepadMenuNew
 	slot2 = slot2.isOpen
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #21 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #15 90-98, warpins: 1 ---
+	--- BLOCK #22 120-128, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -705,34 +920,48 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #16 99-100, warpins: 8 ---
+	--- BLOCK #23 129-130, warpins: 8 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #17 101-101, warpins: 2 ---
+	--- BLOCK #24 131-131, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #18 102-102, warpins: 2 ---
+	--- BLOCK #25 132-132, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 133-133, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 134-134, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #27 ---
 
 
 
 end
 
-slot13.handleGamepadMenuAction = slot18
+slot12.handleGamepadMenuAction = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -794,7 +1023,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot13.handleGamepadMenuLeftStickAction = slot18
+slot12.handleGamepadMenuLeftStickAction = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -807,7 +1036,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot13.handleGamepadConfigMenuAction = slot18
+slot12.handleGamepadConfigMenuAction = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -871,7 +1100,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot13.handleExitGhostEyeAction = slot18
+slot12.handleExitGhostEyeAction = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -930,7 +1159,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot13.handleOpenVlogAction = slot18
+slot12.handleOpenVlogAction = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
@@ -1008,7 +1237,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot13.handleOpenVlogActionPerformed = slot18
+slot12.handleOpenVlogActionPerformed = slot18
 
 slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
@@ -1061,9 +1290,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot13.handleOpenVlogActionCanceled = slot18
+slot12.handleOpenVlogActionCanceled = slot18
 
-return slot13
+return slot12
 --- END OF BLOCK #0 ---
 
 

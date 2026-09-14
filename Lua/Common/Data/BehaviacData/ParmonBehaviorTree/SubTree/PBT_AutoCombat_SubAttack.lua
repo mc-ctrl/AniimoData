@@ -1,4 +1,4 @@
---- BLOCK #0 1-3735, warpins: 1 ---
+--- BLOCK #0 1-3651, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,158 +7,158 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = false,
 	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_AutoCombat_SubAttack",
-	version = 266,
-	useForRoute = false
+	version = 273,
+	name = "ParmonBehaviorTree/SubTree/PBT_AutoCombat_SubAttack"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tShow50PCBubble",
-	value = "false",
 	type = "bool",
+	value = "false",
+	name = "tShow50PCBubble",
 	const = false
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tShow20PCBubble",
-	value = "false",
 	type = "bool",
+	value = "false",
+	name = "tShow20PCBubble",
 	const = false
 }
 slot4[2] = slot5
 slot5 = {
-	name = "CurrentDistToTarget",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "CurrentDistToTarget",
 	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	name = "CurrentEP",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "CurrentEP",
 	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	name = "CurrentHpPercent",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "CurrentHpPercent",
 	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	name = "Weight_JumpBack",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "Weight_JumpBack",
 	const = 0
 }
 slot4[6] = slot5
 slot5 = {
-	name = "Weight_RunBack",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "Weight_RunBack",
 	const = 0
 }
 slot4[7] = slot5
 slot5 = {
-	name = "Weight_Skill",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "Weight_Skill",
 	const = 0
 }
 slot4[8] = slot5
 slot5 = {
-	name = "Weight_CommonAttack",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "Weight_CommonAttack",
 	const = 0
 }
 slot4[9] = slot5
 slot5 = {
-	name = "Weight_NothingToDo",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "Weight_NothingToDo",
 	const = 0
 }
 slot4[10] = slot5
 slot5 = {
-	name = "maxSkillDist",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "maxSkillDist",
 	const = 0
 }
 slot4[11] = slot5
 slot5 = {
-	name = "skillStopDist",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "skillStopDist",
 	const = 0
 }
 slot4[12] = slot5
 slot5 = {
-	name = "goBackDist",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "goBackDist",
 	const = 0
 }
 slot4[13] = slot5
 slot5 = {
-	name = "tNewTargetForCatchMode",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "tNewTargetForCatchMode",
 	const = 0
 }
 slot4[14] = slot5
 slot5 = {
-	name = "CurrentBoxDistToTarget",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "CurrentBoxDistToTarget",
 	const = 0
 }
 slot4[15] = slot5
 slot5 = {
-	name = "tAngryPrepare",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "tAngryPrepare",
 	const = 0
 }
 slot4[16] = slot5
 slot5 = {
-	name = "tDrowningDepth",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "tDrowningDepth",
 	const = 0
 }
 slot4[17] = slot5
 slot5 = {
-	name = "tFlyHeight",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "tFlyHeight",
 	const = 0
 }
 slot4[18] = slot5
 slot5 = {
-	name = "tVerticalDistToTgt",
-	value = "0",
 	type = "float",
+	value = "0",
+	name = "tVerticalDistToTgt",
 	const = 0
 }
 slot4[19] = slot5
 slot5 = {
-	name = "tSkillUsed",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "tSkillUsed",
 	const = 0
 }
 slot4[20] = slot5
 slot5 = {
-	name = "tSkillComboCount",
-	value = "0",
 	type = "int",
+	value = "0",
+	name = "tSkillComboCount",
 	const = 0
 }
 slot4[21] = slot5
@@ -651,7 +651,7 @@ slot24 = {
 }
 slot23[4] = slot24
 slot24 = {
-	const = false
+	const = true
 }
 slot23[5] = slot24
 slot24 = {
@@ -712,7 +712,7 @@ slot21 = {
 }
 slot20[4] = slot21
 slot21 = {
-	const = false
+	const = true
 }
 slot20[5] = slot21
 slot21 = {
@@ -2228,43 +2228,6 @@ slot15.node = slot16
 slot14[4] = slot15
 slot15 = {}
 slot16 = {
-	id = "1021",
-	class = "Compute"
-}
-slot17 = {}
-slot18 = {
-	Operator = "Sub"
-}
-slot17[1] = slot18
-slot18 = {}
-slot19 = {
-	field = "skillStopDist"
-}
-slot18.Opl = slot19
-slot17[2] = slot18
-slot18 = {}
-slot19 = {
-	field = "skillStopDist"
-}
-slot20 = "Opr1"
-slot18[slot20] = slot19
-slot17[3] = slot18
-slot18 = {}
-slot19 = {
-	const = 1
-}
-slot20 = "Opr2"
-slot18[slot20] = slot19
-slot17[4] = slot18
-slot16.properties = slot17
-slot17 = {}
-slot16.attachments = slot17
-slot17 = {}
-slot16.children = slot17
-slot15.node = slot16
-slot14[5] = slot15
-slot15 = {}
-slot16 = {
 	id = "909",
 	class = "IfElse"
 }
@@ -2420,7 +2383,7 @@ slot27 = {
 }
 slot26[4] = slot27
 slot27 = {
-	const = false
+	const = true
 }
 slot26[5] = slot27
 slot27 = {
@@ -2481,7 +2444,7 @@ slot24 = {
 }
 slot23[4] = slot24
 slot24 = {
-	const = false
+	const = true
 }
 slot23[5] = slot24
 slot24 = {
@@ -2513,7 +2476,7 @@ slot18.node = slot19
 slot17[3] = slot18
 slot16.children = slot17
 slot15.node = slot16
-slot14[6] = slot15
+slot14[5] = slot15
 slot13.children = slot14
 slot12.node = slot13
 slot11[2] = slot12
@@ -3212,8 +3175,8 @@ slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "1091",
-	class = "Sequence"
+	id = "1092",
+	class = "IfElse"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -3222,34 +3185,26 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "1093",
-	class = "Compute"
+	id = "1089",
+	class = "Condition"
 }
 slot26 = {}
 slot27 = {
-	Operator = "Sub"
+	Operator = "GreaterEqual"
 }
 slot26[1] = slot27
 slot27 = {}
 slot28 = {
-	field = "skillStopDist"
+	field = "CurrentDistToTarget"
 }
 slot27.Opl = slot28
 slot26[2] = slot27
 slot27 = {}
 slot28 = {
-	field = "skillStopDist"
+	field = "maxSkillDist"
 }
-slot29 = "Opr1"
-slot27[slot29] = slot28
+slot27.Opr = slot28
 slot26[3] = slot27
-slot27 = {}
-slot28 = {
-	const = 1
-}
-slot29 = "Opr2"
-slot27[slot29] = slot28
-slot26[4] = slot27
 slot25.properties = slot26
 slot26 = {}
 slot25.attachments = slot26
@@ -3259,8 +3214,8 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "1092",
-	class = "IfElse"
+	id = "1094",
+	class = "Sequence"
 }
 slot26 = {}
 slot25.properties = slot26
@@ -3269,25 +3224,76 @@ slot25.attachments = slot26
 slot26 = {}
 slot27 = {}
 slot28 = {
-	id = "1089",
-	class = "Condition"
+	id = "1080",
+	class = "Action"
 }
 slot29 = {}
-slot30 = {
-	Operator = "GreaterEqual"
+slot30 = {}
+slot31 = {
+	func = "moveToTarget"
 }
+slot32 = {}
+slot33 = {
+	field = "tgt"
+}
+slot32[1] = slot33
+slot33 = {
+	field = "skillStopDist"
+}
+slot32[2] = slot33
+slot33 = {
+	const = 5
+}
+slot32[3] = slot33
+slot33 = {
+	const = false
+}
+slot32[4] = slot33
+slot33 = {
+	const = false
+}
+slot32[5] = slot33
+slot33 = {
+	const = true
+}
+slot32[6] = slot33
+slot33 = {
+	const = 0
+}
+slot32[7] = slot33
+slot33 = {}
+slot34 = slot0.MoveUpdateLevel
+slot34 = slot34.Normal
+slot33.const = slot34
+slot32[8] = slot33
+slot33 = {}
+slot34 = slot0.PathFindType
+slot34 = slot34.Voxel
+slot33.const = slot34
+slot32[9] = slot33
+slot33 = {}
+slot34 = slot0.SpeedRateType
+slot34 = slot34.Mid
+slot33.const = slot34
+slot32[10] = slot33
+slot33 = {
+	const = 0
+}
+slot32[11] = slot33
+slot33 = {
+	const = false
+}
+slot32[12] = slot33
+slot31.params = slot32
+slot30.Method = slot31
 slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	field = "CurrentDistToTarget"
+slot30 = {
+	ResultOption = "BT_INVALID"
 }
-slot30.Opl = slot31
 slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	field = "maxSkillDist"
+slot30 = {
+	ResultResumeOption = "BT_ResumeTree"
 }
-slot30.Opr = slot31
 slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
@@ -3298,158 +3304,7 @@ slot27.node = slot28
 slot26[1] = slot27
 slot27 = {}
 slot28 = {
-	id = "1094",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "1080",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "moveToTarget"
-}
-slot35 = {}
-slot36 = {
-	field = "tgt"
-}
-slot35[1] = slot36
-slot36 = {
-	field = "skillStopDist"
-}
-slot35[2] = slot36
-slot36 = {
-	const = 5
-}
-slot35[3] = slot36
-slot36 = {
-	const = false
-}
-slot35[4] = slot36
-slot36 = {
-	const = false
-}
-slot35[5] = slot36
-slot36 = {
-	const = true
-}
-slot35[6] = slot36
-slot36 = {
-	const = 0
-}
-slot35[7] = slot36
-slot36 = {}
-slot37 = slot0.MoveUpdateLevel
-slot37 = slot37.Normal
-slot36.const = slot37
-slot35[8] = slot36
-slot36 = {}
-slot37 = slot0.PathFindType
-slot37 = slot37.Voxel
-slot36.const = slot37
-slot35[9] = slot36
-slot36 = {}
-slot37 = slot0.SpeedRateType
-slot37 = slot37.Mid
-slot36.const = slot37
-slot35[10] = slot36
-slot36 = {
-	const = 0
-}
-slot35[11] = slot36
-slot36 = {
-	const = false
-}
-slot35[12] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_ResumeTree"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
 	id = "1081",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "castChargetSkill"
-}
-slot35 = {}
-slot36 = {
-	field = "tgt"
-}
-slot35[1] = slot36
-slot36 = {
-	field = "skillId"
-}
-slot35[2] = slot36
-slot36 = {
-	const = 1
-}
-slot35[3] = slot36
-slot36 = {
-	const = 0
-}
-slot35[4] = slot36
-slot36 = {
-	const = false
-}
-slot35[5] = slot36
-slot36 = {
-	const = true
-}
-slot35[6] = slot36
-slot36 = {}
-slot37 = slot0.CastAbilitySourceType
-slot37 = slot37.Normal
-slot36.const = slot37
-slot35[7] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	id = "1095",
 	class = "Action"
 }
 slot29 = {}
@@ -3475,7 +3330,7 @@ slot33 = {
 }
 slot32[4] = slot33
 slot33 = {
-	const = false
+	const = true
 }
 slot32[5] = slot33
 slot33 = {
@@ -3504,10 +3359,68 @@ slot28.attachments = slot29
 slot29 = {}
 slot28.children = slot29
 slot27.node = slot28
-slot26[3] = slot27
+slot26[2] = slot27
 slot25.children = slot26
 slot24.node = slot25
 slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	id = "1095",
+	class = "Action"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	func = "castChargetSkill"
+}
+slot29 = {}
+slot30 = {
+	field = "tgt"
+}
+slot29[1] = slot30
+slot30 = {
+	field = "skillId"
+}
+slot29[2] = slot30
+slot30 = {
+	const = 1
+}
+slot29[3] = slot30
+slot30 = {
+	const = 0
+}
+slot29[4] = slot30
+slot30 = {
+	const = true
+}
+slot29[5] = slot30
+slot30 = {
+	const = true
+}
+slot29[6] = slot30
+slot30 = {}
+slot31 = slot0.CastAbilitySourceType
+slot31 = slot31.Normal
+slot30.const = slot31
+slot29[7] = slot30
+slot28.params = slot29
+slot27.Method = slot28
+slot26[1] = slot27
+slot27 = {
+	ResultOption = "BT_INVALID"
+}
+slot26[2] = slot27
+slot27 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot26[3] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[3] = slot24
 slot22.children = slot23
 slot21.node = slot22
 slot20[2] = slot21
@@ -3780,18 +3693,28 @@ slot16 = {
 }
 slot17 = {}
 slot18 = {
-	Operator = "NotEqual"
+	Operator = "Equal"
 }
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	field = "tSkillComboCount"
+	func = "hasAITag"
 }
+slot20 = {}
+slot21 = {
+	field = "selfId"
+}
+slot20[1] = slot21
+slot21 = {
+	const = "tSkillComboCount"
+}
+slot20[2] = slot21
+slot19.params = slot20
 slot18.Opl = slot19
 slot17[2] = slot18
 slot18 = {}
 slot19 = {
-	const = 0
+	const = true
 }
 slot18.Opr = slot19
 slot17[3] = slot18
@@ -3982,25 +3905,33 @@ slot21.node = slot22
 slot20[2] = slot21
 slot21 = {}
 slot22 = {
-	id = "1130",
-	class = "Assignment"
+	id = "1163",
+	class = "Action"
 }
 slot23 = {}
-slot24 = {
-	CastRight = "false"
+slot24 = {}
+slot25 = {
+	func = "removeAITag"
 }
+slot26 = {}
+slot27 = {
+	field = "selfId"
+}
+slot26[1] = slot27
+slot27 = {
+	const = "tSkillComboCount"
+}
+slot26[2] = slot27
+slot25.params = slot26
+slot24.Method = slot25
 slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	field = "tSkillComboCount"
+slot24 = {
+	ResultOption = "BT_INVALID"
 }
-slot24.Opl = slot25
 slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = 0
+slot24 = {
+	ResultResumeOption = "BT_None"
 }
-slot24.Opr = slot25
 slot23[3] = slot24
 slot22.properties = slot23
 slot23 = {}
@@ -4999,25 +4930,33 @@ slot27.node = slot28
 slot26[2] = slot27
 slot27 = {}
 slot28 = {
-	id = "1100",
-	class = "Assignment"
+	id = "1162",
+	class = "Action"
 }
 slot29 = {}
-slot30 = {
-	CastRight = "false"
+slot30 = {}
+slot31 = {
+	func = "addAITag"
 }
+slot32 = {}
+slot33 = {
+	field = "selfId"
+}
+slot32[1] = slot33
+slot33 = {
+	const = "tSkillComboCount"
+}
+slot32[2] = slot33
+slot31.params = slot32
+slot30.Method = slot31
 slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	field = "tSkillComboCount"
+slot30 = {
+	ResultOption = "BT_INVALID"
 }
-slot30.Opl = slot31
 slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = 1
+slot30 = {
+	ResultResumeOption = "BT_None"
 }
-slot30.Opr = slot31
 slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
@@ -5073,8 +5012,8 @@ slot30.node = slot31
 slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	id = "1026",
-	class = "Sequence"
+	id = "1025",
+	class = "IfElse"
 }
 slot32 = {}
 slot31.properties = slot32
@@ -5083,34 +5022,26 @@ slot31.attachments = slot32
 slot32 = {}
 slot33 = {}
 slot34 = {
-	id = "1027",
-	class = "Compute"
+	id = "953",
+	class = "Condition"
 }
 slot35 = {}
 slot36 = {
-	Operator = "Sub"
+	Operator = "GreaterEqual"
 }
 slot35[1] = slot36
 slot36 = {}
 slot37 = {
-	field = "skillStopDist"
+	field = "CurrentDistToTarget"
 }
 slot36.Opl = slot37
 slot35[2] = slot36
 slot36 = {}
 slot37 = {
-	field = "skillStopDist"
+	field = "maxSkillDist"
 }
-slot38 = "Opr1"
-slot36[slot38] = slot37
+slot36.Opr = slot37
 slot35[3] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot38 = "Opr2"
-slot36[slot38] = slot37
-slot35[4] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
@@ -5120,8 +5051,8 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "1025",
-	class = "IfElse"
+	id = "1029",
+	class = "Sequence"
 }
 slot35 = {}
 slot34.properties = slot35
@@ -5130,25 +5061,76 @@ slot34.attachments = slot35
 slot35 = {}
 slot36 = {}
 slot37 = {
-	id = "953",
-	class = "Condition"
+	id = "951",
+	class = "Action"
 }
 slot38 = {}
-slot39 = {
-	Operator = "GreaterEqual"
+slot39 = {}
+slot40 = {
+	func = "moveToTarget"
 }
+slot41 = {}
+slot42 = {
+	field = "tgt"
+}
+slot41[1] = slot42
+slot42 = {
+	field = "skillStopDist"
+}
+slot41[2] = slot42
+slot42 = {
+	const = 5
+}
+slot41[3] = slot42
+slot42 = {
+	const = false
+}
+slot41[4] = slot42
+slot42 = {
+	const = false
+}
+slot41[5] = slot42
+slot42 = {
+	const = true
+}
+slot41[6] = slot42
+slot42 = {
+	const = 0
+}
+slot41[7] = slot42
+slot42 = {}
+slot43 = slot0.MoveUpdateLevel
+slot43 = slot43.Normal
+slot42.const = slot43
+slot41[8] = slot42
+slot42 = {}
+slot43 = slot0.PathFindType
+slot43 = slot43.Voxel
+slot42.const = slot43
+slot41[9] = slot42
+slot42 = {}
+slot43 = slot0.SpeedRateType
+slot43 = slot43.Mid
+slot42.const = slot43
+slot41[10] = slot42
+slot42 = {
+	const = 0
+}
+slot41[11] = slot42
+slot42 = {
+	const = false
+}
+slot41[12] = slot42
+slot40.params = slot41
+slot39.Method = slot40
 slot38[1] = slot39
-slot39 = {}
-slot40 = {
-	field = "CurrentDistToTarget"
+slot39 = {
+	ResultOption = "BT_INVALID"
 }
-slot39.Opl = slot40
 slot38[2] = slot39
-slot39 = {}
-slot40 = {
-	field = "maxSkillDist"
+slot39 = {
+	ResultResumeOption = "BT_ResumeTree"
 }
-slot39.Opr = slot40
 slot38[3] = slot39
 slot37.properties = slot38
 slot38 = {}
@@ -5159,158 +5141,7 @@ slot36.node = slot37
 slot35[1] = slot36
 slot36 = {}
 slot37 = {
-	id = "1029",
-	class = "Sequence"
-}
-slot38 = {}
-slot37.properties = slot38
-slot38 = {}
-slot37.attachments = slot38
-slot38 = {}
-slot39 = {}
-slot40 = {
-	id = "951",
-	class = "Action"
-}
-slot41 = {}
-slot42 = {}
-slot43 = {
-	func = "moveToTarget"
-}
-slot44 = {}
-slot45 = {
-	field = "tgt"
-}
-slot44[1] = slot45
-slot45 = {
-	field = "skillStopDist"
-}
-slot44[2] = slot45
-slot45 = {
-	const = 5
-}
-slot44[3] = slot45
-slot45 = {
-	const = false
-}
-slot44[4] = slot45
-slot45 = {
-	const = false
-}
-slot44[5] = slot45
-slot45 = {
-	const = true
-}
-slot44[6] = slot45
-slot45 = {
-	const = 0
-}
-slot44[7] = slot45
-slot45 = {}
-slot46 = slot0.MoveUpdateLevel
-slot46 = slot46.Normal
-slot45.const = slot46
-slot44[8] = slot45
-slot45 = {}
-slot46 = slot0.PathFindType
-slot46 = slot46.Voxel
-slot45.const = slot46
-slot44[9] = slot45
-slot45 = {}
-slot46 = slot0.SpeedRateType
-slot46 = slot46.Mid
-slot45.const = slot46
-slot44[10] = slot45
-slot45 = {
-	const = 0
-}
-slot44[11] = slot45
-slot45 = {
-	const = false
-}
-slot44[12] = slot45
-slot43.params = slot44
-slot42.Method = slot43
-slot41[1] = slot42
-slot42 = {
-	ResultOption = "BT_INVALID"
-}
-slot41[2] = slot42
-slot42 = {
-	ResultResumeOption = "BT_ResumeTree"
-}
-slot41[3] = slot42
-slot40.properties = slot41
-slot41 = {}
-slot40.attachments = slot41
-slot41 = {}
-slot40.children = slot41
-slot39.node = slot40
-slot38[1] = slot39
-slot39 = {}
-slot40 = {
 	id = "1030",
-	class = "Action"
-}
-slot41 = {}
-slot42 = {}
-slot43 = {
-	func = "castChargetSkill"
-}
-slot44 = {}
-slot45 = {
-	field = "tgt"
-}
-slot44[1] = slot45
-slot45 = {
-	field = "skillId"
-}
-slot44[2] = slot45
-slot45 = {
-	const = 1
-}
-slot44[3] = slot45
-slot45 = {
-	const = 0
-}
-slot44[4] = slot45
-slot45 = {
-	const = false
-}
-slot44[5] = slot45
-slot45 = {
-	const = true
-}
-slot44[6] = slot45
-slot45 = {}
-slot46 = slot0.CastAbilitySourceType
-slot46 = slot46.Normal
-slot45.const = slot46
-slot44[7] = slot45
-slot43.params = slot44
-slot42.Method = slot43
-slot41[1] = slot42
-slot42 = {
-	ResultOption = "BT_INVALID"
-}
-slot41[2] = slot42
-slot42 = {
-	ResultResumeOption = "BT_ResumeSelf"
-}
-slot41[3] = slot42
-slot40.properties = slot41
-slot41 = {}
-slot40.attachments = slot41
-slot41 = {}
-slot40.children = slot41
-slot39.node = slot40
-slot38[2] = slot39
-slot37.children = slot38
-slot36.node = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	id = "1031",
 	class = "Action"
 }
 slot38 = {}
@@ -5365,10 +5196,68 @@ slot37.attachments = slot38
 slot38 = {}
 slot37.children = slot38
 slot36.node = slot37
-slot35[3] = slot36
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	id = "1031",
+	class = "Action"
+}
+slot35 = {}
+slot36 = {}
+slot37 = {
+	func = "castChargetSkill"
+}
+slot38 = {}
+slot39 = {
+	field = "tgt"
+}
+slot38[1] = slot39
+slot39 = {
+	field = "skillId"
+}
+slot38[2] = slot39
+slot39 = {
+	const = 1
+}
+slot38[3] = slot39
+slot39 = {
+	const = 0
+}
+slot38[4] = slot39
+slot39 = {
+	const = false
+}
+slot38[5] = slot39
+slot39 = {
+	const = true
+}
+slot38[6] = slot39
+slot39 = {}
+slot40 = slot0.CastAbilitySourceType
+slot40 = slot40.Normal
+slot39.const = slot40
+slot38[7] = slot39
+slot37.params = slot38
+slot36.Method = slot37
+slot35[1] = slot36
+slot36 = {
+	ResultOption = "BT_INVALID"
+}
+slot35[2] = slot36
+slot36 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[3] = slot33
 slot31.children = slot32
 slot30.node = slot31
 slot29[2] = slot30

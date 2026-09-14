@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-36, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -33,6 +33,26 @@ slot4 = function(slot0)
 	slot5 = "backGroundCloseUButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.backGroundCloseUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtAreaUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtAreaUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnConfirmUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnConfirmUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnAgainUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnAgainUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "againText"
+	slot2 = slot2(slot4, slot5)
+	slot0.againText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

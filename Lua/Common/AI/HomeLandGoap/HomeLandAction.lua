@@ -127,9 +127,9 @@ slot5 = {
 	cost = 1
 }
 slot6 = {
+	hasWorkTarget = true,
 	entityNeedWork = true,
-	moveToTarget = true,
-	hasWorkTarget = true
+	moveToTarget = true
 }
 slot5.preconditions = slot6
 slot6 = {

@@ -1,4 +1,4 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
@@ -11,7 +11,7 @@ slot1 = {
 slot2 = {
 	6000,
 	6000,
-	8000,
+	9000,
 	12800,
 	25600,
 	51200,
@@ -19,8 +19,18 @@ slot2 = {
 }
 slot1.lod_level_ranges = slot2
 slot2 = {
-	PC = 1,
-	Phone = 0.9
+	5400,
+	5400,
+	7200,
+	11520,
+	23040,
+	46080,
+	92160
+}
+slot1.mobile_lod_level_ranges = slot2
+slot2 = {
+	Phone = 1,
+	PC = 1
 }
 slot1.aoiScaleRatioMap = slot2
 slot2 = 1

@@ -25,10 +25,7 @@ slot7 = function(slot0)
 	slot0.items = slot1
 	slot1 = {}
 	slot0.stackcount = slot1
-	slot1 = {
-		[true] = 0,
-		[false] = 0
-	}
+	slot1 = 0
 	slot0.totalCount = slot1
 
 	return
@@ -40,103 +37,119 @@ end
 
 slot5.ctor = slot7
 
-slot7 = function(slot0, slot1)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
-	slot2 = slot0.items
-	slot3 = ItemUtils
-	slot3 = slot3.genItemCountBindInfo
+	slot3 = slot0.items
 	slot4 = ItemUtils
-	slot4 = slot4.modifyItemCountToRet
+	slot4 = slot4.genItemCountBindInfo
 	slot5 = ItemUtils
-	slot5 = slot5.getItemCountFromCountPairWithBind
-	slot8 = slot1
-	slot6 = slot1.items
-	slot6, slot7, slot8 = slot6(slot8)
+	slot5 = slot5.modifyItemCountToRet
+	slot6 = ItemUtils
+	slot6 = slot6.getItemCountFromCountPairWithBind
+	slot9 = slot1
+	slot7 = slot1.items
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #1 12-16, warpins: 1 ---
-	slot11 = slot10.id
-	slot12 = slot10.isBind
-	slot13 = slot2[slot11]
+	--- BLOCK #1 12-13, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	if slot13 == nil then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 17-24, warpins: 1 ---
-	slot13 = slot3
-	slot13 = slot13()
-	slot2[slot11] = slot13
-	slot13 = slot0.stackcount
-	slot16 = slot10
-	slot14 = slot10.maxCount
-	slot14 = slot14(slot16)
-	slot13[slot11] = slot14
+	--- BLOCK #2 14-16, warpins: 1 ---
+	slot12 = slot2
+	slot14 = slot11
+
+	slot12(slot14)
+
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 25-30, warpins: 2 ---
-	slot13 = slot5
-	slot15 = slot2[slot11]
-	slot16 = slot12
-	slot13 = slot13(slot15, slot16)
+	--- BLOCK #3 17-20, warpins: 2 ---
+	slot12 = slot11.id
+	slot13 = slot3[slot12]
 	--- END OF BLOCK #3 ---
 
-	if slot13 == 0 then
+	if slot13 == nil then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 31-35, warpins: 1 ---
-	slot13 = slot0.totalCount
-	slot14 = slot0.totalCount
-	slot14 = slot14[slot12]
-	slot14 = slot14 + 1
+	--- BLOCK #4 21-28, warpins: 1 ---
+	slot13 = slot4
+	slot13 = slot13()
+	slot3[slot12] = slot13
+	slot13 = slot0.stackcount
+	slot16 = slot11
+	slot14 = slot11.maxCount
+	slot14 = slot14(slot16)
 	slot13[slot12] = slot14
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 36-44, warpins: 2 ---
-	slot13 = slot4
-	slot15 = slot2
-	slot16 = slot11
-	slot17 = slot10.count
-	slot18 = slot12
-	slot21 = slot10
-	slot19 = slot10.isStatusLocked
-	MULTRES = slot19(slot21)
-
-	slot13(slot15, slot16, slot17, slot18, MULTRES)
-
+	--- BLOCK #5 29-33, warpins: 2 ---
+	slot13 = slot6
+	slot15 = slot3[slot12]
+	slot13 = slot13(slot15)
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot13 == 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 45-46, warpins: 2 ---
+	--- BLOCK #6 34-36, warpins: 1 ---
+	slot13 = slot0.totalCount
+	slot13 = slot13 + 1
+	slot0.totalCount = slot13
 	--- END OF BLOCK #6 ---
 
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #7
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 47-47, warpins: 1 ---
-	return slot2
+	--- BLOCK #7 37-44, warpins: 2 ---
+	slot13 = slot5
+	slot15 = slot3
+	slot16 = slot12
+	slot17 = slot11.count
+	slot20 = slot11
+	slot18 = slot11.isStatusLocked
+	MULTRES = slot18(slot20)
+
+	slot13(slot15, slot16, slot17, MULTRES)
+
 	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 45-46, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 47-47, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #9 ---
 
 
 
@@ -161,76 +174,71 @@ slot7 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #1 12-16, warpins: 1 ---
+	--- BLOCK #1 12-15, warpins: 1 ---
 	slot11 = slot10.id
-	slot12 = slot10.isBind
-	slot13 = slot2[slot11]
+	slot12 = slot2[slot11]
 	--- END OF BLOCK #1 ---
 
-	if slot13 == nil then
+	if slot12 == nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 17-24, warpins: 1 ---
-	slot13 = slot3
-	slot13 = slot13()
-	slot2[slot11] = slot13
-	slot13 = slot0.stackcount
-	slot16 = slot10
-	slot14 = slot10.maxCount
-	slot14 = slot14(slot16)
-	slot13[slot11] = slot14
+	--- BLOCK #2 16-23, warpins: 1 ---
+	slot12 = slot3
+	slot12 = slot12()
+	slot2[slot11] = slot12
+	slot12 = slot0.stackcount
+	slot15 = slot10
+	slot13 = slot10.maxCount
+	slot13 = slot13(slot15)
+	slot12[slot11] = slot13
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 25-30, warpins: 2 ---
-	slot13 = slot5
-	slot15 = slot2[slot11]
-	slot16 = slot12
-	slot13 = slot13(slot15, slot16)
+	--- BLOCK #3 24-28, warpins: 2 ---
+	slot12 = slot5
+	slot14 = slot2[slot11]
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #3 ---
 
-	if slot13 == 0 then
+	if slot12 == 0 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 31-35, warpins: 1 ---
-	slot13 = slot0.totalCount
-	slot14 = slot0.totalCount
-	slot14 = slot14[slot12]
-	slot14 = slot14 + 1
-	slot13[slot12] = slot14
+	--- BLOCK #4 29-31, warpins: 1 ---
+	slot12 = slot0.totalCount
+	slot12 = slot12 + 1
+	slot0.totalCount = slot12
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 36-44, warpins: 2 ---
-	slot13 = slot4
-	slot15 = slot2
-	slot16 = slot11
-	slot17 = slot10.count
-	slot18 = slot12
-	slot21 = slot10
-	slot19 = slot10.isStatusLocked
-	MULTRES = slot19(slot21)
+	--- BLOCK #5 32-39, warpins: 2 ---
+	slot12 = slot4
+	slot14 = slot2
+	slot15 = slot11
+	slot16 = slot10.count
+	slot19 = slot10
+	slot17 = slot10.isStatusLocked
+	MULTRES = slot17(slot19)
 
-	slot13(slot15, slot16, slot17, slot18, MULTRES)
+	slot12(slot14, slot15, slot16, MULTRES)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 45-46, warpins: 2 ---
+	--- BLOCK #6 40-41, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
@@ -238,7 +246,7 @@ slot7 = function(slot0, slot1)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 47-47, warpins: 1 ---
+	--- BLOCK #7 42-42, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #7 ---
 
@@ -258,7 +266,7 @@ slot7 = function(slot0)
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
 	--- BLOCK #1 8-12, warpins: 1 ---
@@ -313,67 +321,46 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 30-33, warpins: 2 ---
-	slot9 = pairs
-	slot11 = {
-		true,
-		false
-	}
-	slot9, slot10, slot11 = slot9(slot11)
+	--- BLOCK #5 30-42, warpins: 2 ---
+	slot9 = slot2
+	slot11 = slot7
+	slot12 = true
+	slot9 = slot9(slot11, slot12)
+	slot10 = math
+	slot10 = slot10.modf
+	slot12 = slot9 / slot8
+	slot10 = slot10(slot12)
+	slot1 = slot1 + slot10
+	slot11 = slot9 % slot8
+	slot12 = 0
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #6 34-47, warpins: 1 ---
-	slot14 = slot2
-	slot16 = slot7
-	slot17 = slot13
-	slot18 = true
-	slot14 = slot14(slot16, slot17, slot18)
-	slot15 = math
-	slot15 = slot15.modf
-	slot17 = slot14 / slot8
-	slot15 = slot15(slot17)
-	slot1 = slot1 + slot15
-	slot16 = slot14 % slot8
-	slot17 = 0
-	--- END OF BLOCK #6 ---
-
-	if slot16 > slot17 then
-	JUMP TO BLOCK #7
+	if slot11 > slot12 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 48-48, warpins: 1 ---
+	--- BLOCK #6 43-43, warpins: 1 ---
 	slot1 = slot1 + 1
 
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 44-45, warpins: 3 ---
 	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 49-50, warpins: 3 ---
-	--- END OF BLOCK #8 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #9
-
-
-	--- BLOCK #9 51-52, warpins: 2 ---
-	--- END OF BLOCK #9 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #10
+	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #10 53-53, warpins: 1 ---
+	--- BLOCK #8 46-46, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -382,14 +369,8 @@ end
 slot5.getTotalPiles = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.totalCount
-	slot2 = true
-	slot1 = slot1[slot2]
-	slot2 = slot0.totalCount
-	slot3 = false
-	slot2 = slot2[slot3]
-	slot1 = slot1 + slot2
 
 	return slot1
 	--- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -13,25 +13,26 @@ slot5 = "PetTransmogModel"
 slot6 = slot1
 slot3 = slot3(slot5, slot6)
 slot4 = {
-	PREVIEW = 2,
-	CUSTOM = 1
+	CUSTOM = 1,
+	PREVIEW = 2
 }
 slot3.SCHEME_SOURCE = slot4
 slot4 = {
-	PREVIEW = 2,
-	CUSTOM = 1
+	CUSTOM = 1,
+	PREVIEW = 2
 }
 slot3.PLAN_TAB = slot4
 slot4 = {
 	HIDDEN = 2,
 	PLAN = 1,
-	NORMAL = 0
+	NORMAL = 0,
+	Scheme = 3
 }
 slot3.UI_STATE = slot4
 slot4 = {
-	PURPLE_RESULT = 2,
 	RESULT = 1,
-	IDLE = 0
+	IDLE = 0,
+	PURPLE_RESULT = 2
 }
 slot3.BAPTIZE_STATE = slot4
 
@@ -255,6 +256,66 @@ slot4 = function(slot0)
 end
 
 slot3.clearLockedHoles = slot4
+
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = {}
+	slot0.lockedHoles = slot2
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot7 = slot0.lockedHoles
+	slot8 = true
+	slot7[slot5] = slot8
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot3.setLockedHolesFromSet = slot4
 
 slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---

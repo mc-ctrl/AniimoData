@@ -1,4 +1,4 @@
---- BLOCK #0 1-127, warpins: 1 ---
+--- BLOCK #0 1-129, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Timeline.LuaTimeline"
 slot0 = slot0(slot2)
@@ -402,24 +402,40 @@ slot34 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.curPlayerEnt
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
-
+	slot1 = slot0.curPlayerEnt
+	slot1 = slot1.eModel
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return slot1
+	--- BLOCK #2 8-9, warpins: 1 ---
+	slot1 = false
 	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #4 ---
 
 
 
@@ -435,24 +451,40 @@ slot34 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.curPetEnt
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
-
+	slot1 = slot0.curPetEnt
+	slot1 = slot1.eModel
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return slot1
+	--- BLOCK #2 8-9, warpins: 1 ---
+	slot1 = false
 	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #4 ---
 
 
 
@@ -480,16 +512,13 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 12-21, warpins: 1 ---
+	--- BLOCK #1 12-18, warpins: 1 ---
 	slot6 = Quaternion
 	slot6 = slot6.LookRotation
 	slot8 = slot4
 	slot9 = Vector3
-	slot11 = 0
-	slot12 = 1
-	slot13 = 0
-	MULTRES = slot9(slot11, slot12, slot13)
-	slot6 = slot6(slot8, MULTRES)
+	slot9 = slot9.constUp
+	slot6 = slot6(slot8, slot9)
 	slot5 = slot6
 
 	--- END OF BLOCK #1 ---
@@ -497,7 +526,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 22-22, warpins: 2 ---
+	--- BLOCK #2 19-19, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #2 ---
 
@@ -631,9 +660,9 @@ slot34 = function(slot0, slot1, slot2)
 		--- BLOCK #3 18-22, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
 		slot1 = false
-		slot0.enable = slot1
+		slot0.enableFollow = slot1
 
 		--- END OF BLOCK #3 ---
 
@@ -852,7 +881,7 @@ slot34 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #3 16-59, warpins: 1 ---
+		--- BLOCK #3 16-65, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.curPetEnt
 		slot4 = slot2
@@ -860,6 +889,11 @@ slot34 = function(slot0, slot1, slot2)
 		slot2 = slot2(slot4)
 		slot3 = moveDuration
 		slot3 = slot1 / slot3
+		slot4 = Vector3
+		slot4 = slot4.enableCreateFromCache
+
+		slot4()
+
 		slot4 = Vector3
 		slot4 = slot4.Lerp
 		slot6 = initPlayerPos
@@ -894,6 +928,11 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot10(slot12, slot13, slot14, slot15)
 
+		slot10 = Vector3
+		slot10 = slot10.disableCreateFromCache
+
+		slot10()
+
 		slot10 = self
 		slot10 = slot10.curPetEnt
 		slot12 = slot10
@@ -906,7 +945,7 @@ slot34 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 60-60, warpins: 4 ---
+		--- BLOCK #4 66-66, warpins: 4 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -1111,9 +1150,9 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
 		slot1 = true
-		slot0.enable = slot1
+		slot0.enableFollow = slot1
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -1226,7 +1265,7 @@ slot34 = function(slot0, slot1, slot2)
 	slot8 = slot2
 	slot6 = slot2.setSwitchEndTime
 	slot9 = Time
-	slot9 = slot9.secondCache
+	slot9 = slot9.realSecondCache
 	slot9 = slot9 + slot3
 	slot10 = true
 
@@ -1410,9 +1449,9 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
 		slot1 = false
-		slot0.enable = slot1
+		slot0.enableFollow = slot1
 
 		--- END OF BLOCK #3 ---
 
@@ -1748,7 +1787,7 @@ slot34 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #2 13-51, warpins: 1 ---
+		--- BLOCK #2 13-57, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.curPetEnt
 		slot4 = slot2
@@ -1756,6 +1795,11 @@ slot34 = function(slot0, slot1, slot2)
 		slot2 = slot2(slot4)
 		slot3 = moveDuration
 		slot3 = slot1 / slot3
+		slot4 = Vector3
+		slot4 = slot4.enableCreateFromCache
+
+		slot4()
+
 		slot4 = Vector3
 		slot4 = slot4.Lerp
 		slot6 = initPlayerPos
@@ -1790,12 +1834,17 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot10(slot12, slot13, slot14, slot15)
 
+		slot10 = Vector3
+		slot10 = slot10.disableCreateFromCache
+
+		slot10()
+
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 52-52, warpins: 3 ---
+		--- BLOCK #3 58-58, warpins: 3 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -2056,9 +2105,9 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
 		slot1 = true
-		slot0.enable = slot1
+		slot0.enableFollow = slot1
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -2255,7 +2304,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot8 = slot2
 	slot6 = slot2.setSwitchEndTime
 	slot9 = Time
-	slot9 = slot9.secondCache
+	slot9 = slot9.realSecondCache
 	slot9 = slot9 + slot4
 	slot10 = true
 
@@ -2542,7 +2591,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #7
 		end
 
 
@@ -2610,10 +2659,15 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 37-41, warpins: 2 ---
+		--- BLOCK #5 37-46, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
+		slot1 = false
+		slot0.enableFollow = slot1
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot0 = slot0.setInLinkAnim
 		--- END OF BLOCK #5 ---
 
 		slot0 = if slot0 then
@@ -2623,31 +2677,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #6 42-46, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
-		slot1 = false
-		slot0.enable = slot1
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 47-51, warpins: 2 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.setInLinkAnim
-		--- END OF BLOCK #7 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #8
-		else
-		JUMP TO BLOCK #9
-		end
-
-
-		--- BLOCK #8 52-57, warpins: 1 ---
+		--- BLOCK #6 47-52, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -2656,14 +2686,14 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2, slot3)
 
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #6 ---
 
-		FLOW; TARGET BLOCK #9
+		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #9 58-58, warpins: 3 ---
+		--- BLOCK #7 53-53, warpins: 3 ---
 		return
-		--- END OF BLOCK #9 ---
+		--- END OF BLOCK #7 ---
 
 
 
@@ -3250,14 +3280,19 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #16
 		else
-		JUMP TO BLOCK #20
+		JUMP TO BLOCK #18
 		end
 
 
-		--- BLOCK #16 145-149, warpins: 1 ---
+		--- BLOCK #16 145-154, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
+		slot1 = true
+		slot0.enableFollow = slot1
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot0 = slot0.setSwitchEndTime
 		--- END OF BLOCK #16 ---
 
 		slot0 = if slot0 then
@@ -3267,31 +3302,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #17 150-154, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
-		slot1 = true
-		slot0.enable = slot1
-		--- END OF BLOCK #17 ---
-
-		FLOW; TARGET BLOCK #18
-
-
-		--- BLOCK #18 155-159, warpins: 2 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.setSwitchEndTime
-		--- END OF BLOCK #18 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #19
-		else
-		JUMP TO BLOCK #20
-		end
-
-
-		--- BLOCK #19 160-165, warpins: 1 ---
+		--- BLOCK #17 155-160, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3300,14 +3311,14 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2, slot3)
 
-		--- END OF BLOCK #19 ---
+		--- END OF BLOCK #17 ---
 
-		FLOW; TARGET BLOCK #20
+		FLOW; TARGET BLOCK #18
 
 
-		--- BLOCK #20 166-166, warpins: 3 ---
+		--- BLOCK #18 161-161, warpins: 3 ---
 		return
-		--- END OF BLOCK #20 ---
+		--- END OF BLOCK #18 ---
 
 
 
@@ -3369,11 +3380,11 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #3 29-40, warpins: 1 ---
+		--- BLOCK #3 29-45, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3385,7 +3396,12 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
+		slot0 = slot0.eModel
+		slot1 = true
+		slot0.enableFollow = slot1
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot0 = slot0.setSwitchEndTime
 		--- END OF BLOCK #3 ---
 
 		slot0 = if slot0 then
@@ -3395,21 +3411,24 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #4 41-45, warpins: 1 ---
+		--- BLOCK #4 46-51, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.followComponent
-		slot1 = true
-		slot0.enable = slot1
+		slot2 = slot0
+		slot0 = slot0.setSwitchEndTime
+		slot3 = nil
+
+		slot0(slot2, slot3)
+
 		--- END OF BLOCK #4 ---
 
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 46-50, warpins: 2 ---
+		--- BLOCK #5 52-56, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.setSwitchEndTime
+		slot0 = slot0.setInLinkAnim
 		--- END OF BLOCK #5 ---
 
 		slot0 = if slot0 then
@@ -3419,34 +3438,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #6 51-56, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot2 = slot0
-		slot0 = slot0.setSwitchEndTime
-		slot3 = nil
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 57-61, warpins: 2 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot0 = slot0.setInLinkAnim
-		--- END OF BLOCK #7 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #8
-		else
-		JUMP TO BLOCK #9
-		end
-
-
-		--- BLOCK #8 62-67, warpins: 1 ---
+		--- BLOCK #6 57-62, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3455,29 +3447,58 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2, slot3)
 
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #6 ---
 
-		FLOW; TARGET BLOCK #9
+		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #9 68-73, warpins: 3 ---
+		--- BLOCK #7 63-68, warpins: 3 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.isCurPetValid
 		slot0 = slot0(slot2)
-		--- END OF BLOCK #9 ---
+		--- END OF BLOCK #7 ---
 
 		slot0 = if slot0 then
-		JUMP TO BLOCK #10
+		JUMP TO BLOCK #8
 		else
-		JUMP TO BLOCK #12
+		JUMP TO BLOCK #10
 		end
 
 
-		--- BLOCK #10 74-78, warpins: 1 ---
+		--- BLOCK #8 69-73, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPetEnt
 		slot0 = slot0.setInSwitchAnimScale
+		--- END OF BLOCK #8 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 74-79, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curPetEnt
+		slot2 = slot0
+		slot0 = slot0.setInSwitchAnimScale
+		slot3 = nil
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 80-86, warpins: 3 ---
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot1 = false
+		slot0.captureSwitchFlag = slot1
+		slot0 = finishedCallback
 		--- END OF BLOCK #10 ---
 
 		slot0 = if slot0 then
@@ -3487,48 +3508,19 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #11 79-84, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curPetEnt
-		slot2 = slot0
-		slot0 = slot0.setInSwitchAnimScale
-		slot3 = nil
+		--- BLOCK #11 87-88, warpins: 1 ---
+		slot0 = finishedCallback
 
-		slot0(slot2, slot3)
+		slot0()
 
 		--- END OF BLOCK #11 ---
 
 		FLOW; TARGET BLOCK #12
 
 
-		--- BLOCK #12 85-91, warpins: 3 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot1 = false
-		slot0.captureSwitchFlag = slot1
-		slot0 = finishedCallback
-		--- END OF BLOCK #12 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #13
-		else
-		JUMP TO BLOCK #14
-		end
-
-
-		--- BLOCK #13 92-93, warpins: 1 ---
-		slot0 = finishedCallback
-
-		slot0()
-
-		--- END OF BLOCK #13 ---
-
-		FLOW; TARGET BLOCK #14
-
-
-		--- BLOCK #14 94-94, warpins: 2 ---
+		--- BLOCK #12 89-89, warpins: 2 ---
 		return
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #12 ---
 
 
 
@@ -3568,50 +3560,16 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-17, warpins: 2 ---
+	--- BLOCK #2 4-12, warpins: 2 ---
 	slot6 = slot1
 	slot4 = slot1.getHeight
 	slot4 = slot4(slot6)
 	slot4 = slot4 + slot3
-	slot5 = {}
+	slot7 = slot1
+	slot5 = slot1.playEffect
+	slot8 = "Eff_VEG_Switch_Disappear"
 
-	slot6 = function(slot0)
-		--- BLOCK #0 1-16, warpins: 1 ---
-		slot3 = slot0
-		slot1 = slot0.SetVegFloat
-		slot4 = "Height"
-		slot5 = height
-
-		slot1(slot3, slot4, slot5)
-
-		slot3 = slot0
-		slot1 = slot0.SetVegFloat
-		slot4 = "Duration"
-		slot5 = duration
-
-		slot1(slot3, slot4, slot5)
-
-		slot3 = slot0
-		slot1 = slot0.SetVegBool
-		slot4 = "Reverse"
-		slot5 = true
-
-		slot1(slot3, slot4, slot5)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot5.loadCallback = slot6
-	slot8 = slot1
-	slot6 = slot1.playEffect
-	slot9 = "Eff_VEG_Switch_Disappear"
-	slot10 = slot5
-
-	slot6(slot8, slot9, slot10)
+	slot5(slot7, slot8)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -3855,7 +3813,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #3 25-37, warpins: 1 ---
+		--- BLOCK #3 25-35, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPetEnt
 		slot2 = slot0
@@ -3866,17 +3824,15 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot3 = slot3(slot5)
 		slot4 = nil
 		slot5 = 0
-		slot6 = false
-		slot7 = false
 
-		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
+		slot0(slot2, slot3, slot4, slot5)
 
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 38-43, warpins: 3 ---
+		--- BLOCK #4 36-41, warpins: 3 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.isCurPlayerValid
@@ -3890,7 +3846,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #5 44-46, warpins: 1 ---
+		--- BLOCK #5 42-44, warpins: 1 ---
 		slot0 = forcePlay
 		--- END OF BLOCK #5 ---
 
@@ -3901,7 +3857,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #6 47-53, warpins: 1 ---
+		--- BLOCK #6 45-51, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3916,7 +3872,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #7 54-60, warpins: 2 ---
+		--- BLOCK #7 52-58, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3931,7 +3887,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 61-63, warpins: 2 ---
+		--- BLOCK #8 59-61, warpins: 2 ---
 		slot0 = isIdyllSwitch
 		--- END OF BLOCK #8 ---
 
@@ -3942,7 +3898,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #9 64-78, warpins: 1 ---
+		--- BLOCK #9 62-76, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3964,7 +3920,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-		--- BLOCK #10 79-91, warpins: 1 ---
+		--- BLOCK #10 77-87, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -3975,17 +3931,15 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		slot3 = slot3(slot5)
 		slot4 = nil
 		slot5 = 0
-		slot6 = false
-		slot7 = false
 
-		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
+		slot0(slot2, slot3, slot4, slot5)
 
 		--- END OF BLOCK #10 ---
 
 		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #11 92-96, warpins: 2 ---
+		--- BLOCK #11 88-92, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.playSwitchToPlayerEffect
@@ -3998,7 +3952,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #12
 
 
-		--- BLOCK #12 97-97, warpins: 2 ---
+		--- BLOCK #12 93-93, warpins: 2 ---
 		return
 		--- END OF BLOCK #12 ---
 
@@ -4248,11 +4202,24 @@ slot34 = function(slot0, slot1, slot2)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #1 7-25, warpins: 1 ---
+		--- BLOCK #1 7-11, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot0 = slot0.disableMotion
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 12-20, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -4264,6 +4231,12 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3, slot4)
 
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 21-30, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -4276,14 +4249,14 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3, slot4, slot5)
 
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #2
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #2 26-26, warpins: 2 ---
+		--- BLOCK #4 31-31, warpins: 2 ---
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -4348,7 +4321,12 @@ slot34 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 7-19, warpins: 1 ---
+		--- BLOCK #1 7-25, warpins: 1 ---
+		slot2 = Vector3
+		slot2 = slot2.enableCreateFromCache
+
+		slot2()
+
 		slot2 = Vector3
 		slot2 = slot2.Lerp
 		slot4 = initPlayerPos
@@ -4364,12 +4342,17 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot3(slot5, slot6)
 
+		slot3 = Vector3
+		slot3 = slot3.disableCreateFromCache
+
+		slot3()
+
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 20-20, warpins: 2 ---
+		--- BLOCK #2 26-26, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -4401,13 +4384,14 @@ slot34 = function(slot0, slot1, slot2)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #1 7-10, warpins: 1 ---
-		slot0 = playerEnt
-		slot0 = slot0.isMainPlayer
+		--- BLOCK #1 7-11, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot0 = slot0.disableMotion
 		--- END OF BLOCK #1 ---
 
 		slot0 = if slot0 then
@@ -4417,7 +4401,7 @@ slot34 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #2 11-49, warpins: 1 ---
+		--- BLOCK #2 12-20, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -4429,6 +4413,12 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3, slot4)
 
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 21-50, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -4467,19 +4457,19 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0(slot2)
 
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #3
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #3 50-54, warpins: 3 ---
+		--- BLOCK #4 51-55, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot1 = false
 		slot0.captureSwitchFlag = slot1
 
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -4618,223 +4608,51 @@ end
 
 slot33.playSwitchToExplorePlayerAnim = slot34
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.curEffectItem
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot2 = slot0.curPetEnt
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 7-35, warpins: 1 ---
-	slot2 = slot0.curEffectItem
-	slot4 = slot2
-	slot2 = slot2.SetVegSkinnedMeshRenderer
-	slot5 = "SkinnedMeshRenderer1"
-	slot6 = slot0.curPetEnt
-	slot6 = slot6.eModel
-	slot6 = slot6.modelComponent
-	slot6 = slot6.modelView
-	slot6 = slot6.shaderView
-	slot6 = slot6.vfxRender
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.curEffectItem
-	slot4 = slot2
-	slot2 = slot2.SetVegVector3
-	slot5 = "Transform1_scale"
-	slot6 = Vector3
-	slot8 = 0.01
-	slot9 = 0.01
-	slot10 = 0.01
-	MULTRES = slot6(slot8, slot9, slot10)
-
-	slot2(slot4, slot5, MULTRES)
-
-	slot2 = slot0.curEffectItem
-	slot4 = slot2
-	slot2 = slot2.SetVegTransformByActorId
-	slot5 = "Transform1"
-	slot6 = slot0.curPetEnt
-	slot6 = slot6.actorId
-	slot7 = false
-
-	slot2(slot4, slot5, slot6, slot7)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 36-38, warpins: 2 ---
-	slot2 = slot0.curPlayerEnt
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 39-59, warpins: 1 ---
-	slot2 = slot0.curEffectItem
-	slot4 = slot2
-	slot2 = slot2.SetVegSkinnedMeshRenderer
-	slot5 = "SkinnedMeshRenderer2"
-	slot6 = slot0.curPlayerEnt
-	slot6 = slot6.eModel
-	slot6 = slot6.modelComponent
-	slot6 = slot6.modelView
-	slot6 = slot6.shaderView
-	slot6 = slot6.vfxRender
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.curEffectItem
-	slot4 = slot2
-	slot2 = slot2.SetVegVector3
-	slot5 = "Transform2_scale"
-	slot6 = Vector3
-	slot8 = 1
-	slot9 = 1
-	slot10 = 1
-	MULTRES = slot6(slot8, slot9, slot10)
-
-	slot2(slot4, slot5, MULTRES)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 60-65, warpins: 2 ---
-	slot2 = slot0.curEffectItem
-	slot4 = slot2
-	slot2 = slot2.SetVegFloat
-	slot5 = "Life"
-	slot6 = slot1
-
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 66-66, warpins: 2 ---
-	return
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot33.initVegEffect = slot34
-
-slot34 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.curEffectItem
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot1 = slot0.curPlayerEnt
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 7-14, warpins: 1 ---
-	slot1 = slot0.curEffectItem
-	slot3 = slot1
-	slot1 = slot1.SetVegTransformByActorId
-	slot4 = "Transform2"
+slot34 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot4 = nil
+	slot7 = slot0
+	slot5 = slot0.getFashionSwitchToPetEffectResId
+	slot8 = slot3
+	slot5 = slot5(slot7, slot8)
+	slot3 = slot5
 	slot5 = slot0.curPlayerEnt
-	slot5 = slot5.actorId
-	slot6 = false
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 15-15, warpins: 3 ---
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot33.updateVegEffect = slot34
-
-slot34 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0.curPlayerEnt
-	slot3 = slot3.captureSwitchFlag
+	slot5 = slot5.captureSwitchFlag
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot3 = slot0.curPlayerEnt
-	slot5 = slot3
-	slot3 = slot3.playEffect
-	slot6 = "Eff_Common_Parmon_Switch"
+	--- BLOCK #1 11-16, warpins: 1 ---
+	slot5 = slot0.curPlayerEnt
+	slot7 = slot5
+	slot5 = slot5.playEffect
+	slot8 = "Eff_Common_Parmon_Switch"
 
-	slot3(slot5, slot6)
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #2 11-23, warpins: 1 ---
-	slot3 = {}
-	slot4 = Vector3
-	slot6 = 0
-	slot7 = slot0.curPetEnt
-	slot9 = slot7
-	slot7 = slot7.getHeight
-	slot7 = slot7(slot9)
-	slot7 = slot7 * 0.5
+	--- BLOCK #2 17-30, warpins: 1 ---
+	slot5 = {}
+	slot6 = Vector3
 	slot8 = 0
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3.position = slot4
+	slot9 = slot0.curPetEnt
+	slot11 = slot9
+	slot9 = slot9.getHeight
+	slot9 = slot9(slot11)
+	slot9 = slot9 * 0.5
+	slot10 = 0
+	slot6 = slot6(slot8, slot9, slot10)
+	slot5.position = slot6
+	slot4 = slot5
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -4844,28 +4662,28 @@ slot34 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 24-26, warpins: 1 ---
-	slot4 = switchingHitResId_Idyll
+	--- BLOCK #3 31-33, warpins: 1 ---
+	slot5 = switchingHitResId_Idyll
 	--- END OF BLOCK #3 ---
 
-	slot4 = if not slot4 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
-	slot4 = switchingHitResId
+	--- BLOCK #4 34-34, warpins: 2 ---
+	slot5 = switchingHitResId
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-32, warpins: 2 ---
-	slot5 = slot0.curPetEnt
-	slot7 = slot5
-	slot5 = slot5.playEffect
+	--- BLOCK #5 35-39, warpins: 2 ---
+	slot6 = slot0.curPetEnt
+	slot8 = slot6
+	slot6 = slot6.playEffect
 	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
@@ -4875,37 +4693,61 @@ slot34 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 33-35, warpins: 1 ---
-	slot8 = switchingHitNormalResId
+	--- BLOCK #6 40-42, warpins: 1 ---
+	slot9 = switchingHitNormalResId
 	--- END OF BLOCK #6 ---
 
-	slot8 = if not slot8 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 36-36, warpins: 2 ---
-	slot8 = slot4
+	--- BLOCK #7 43-43, warpins: 2 ---
+	slot9 = slot5
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 37-38, warpins: 2 ---
-	slot9 = slot3
+	--- BLOCK #8 44-45, warpins: 2 ---
+	slot10 = slot4
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 39-39, warpins: 2 ---
-	return
+	--- BLOCK #9 46-47, warpins: 2 ---
 	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 48-53, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0._playFashionSwitchEffect
+	slot8 = slot0.curPetEnt
+	slot9 = slot3
+	slot10 = slot4
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 54-54, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
@@ -4913,34 +4755,39 @@ end
 
 slot33.playSwitchToPetEffect = slot34
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = slot0.curPlayerEnt
-	slot2 = slot2.captureSwitchFlag
+slot34 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = nil
+	slot6 = slot0
+	slot4 = slot0.getFashionSwitchToPlayerEffectResId
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
+	slot2 = slot4
+	slot4 = slot0.curPlayerEnt
+	slot4 = slot4.captureSwitchFlag
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot2 = slot0.curPlayerEnt
-	slot4 = slot2
-	slot2 = slot2.playEffect
-	slot5 = "Eff_Common_Parmon_Switch"
+	--- BLOCK #1 11-16, warpins: 1 ---
+	slot4 = slot0.curPlayerEnt
+	slot6 = slot4
+	slot4 = slot4.playEffect
+	slot7 = "Eff_Common_Parmon_Switch"
 
-	slot2(slot4, slot5)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #2 11-13, warpins: 1 ---
-	slot2 = nil
+	--- BLOCK #2 17-18, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
 	slot1 = if not slot1 then
@@ -4950,25 +4797,25 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 14-25, warpins: 1 ---
-	slot3 = {}
-	slot4 = Vector3
-	slot6 = 0
-	slot7 = slot0.curPlayerEnt
-	slot9 = slot7
-	slot7 = slot7.getHeight
-	slot7 = slot7(slot9)
-	slot7 = slot7 * 0.5
-	slot8 = 0
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3.position = slot4
-	slot2 = slot3
+	--- BLOCK #3 19-30, warpins: 1 ---
+	slot4 = {}
+	slot5 = Vector3
+	slot7 = 0
+	slot8 = slot0.curPlayerEnt
+	slot10 = slot8
+	slot8 = slot8.getHeight
+	slot8 = slot8(slot10)
+	slot8 = slot8 * 0.5
+	slot9 = 0
+	slot5 = slot5(slot7, slot8, slot9)
+	slot4.position = slot5
+	slot3 = slot4
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 26-27, warpins: 2 ---
+	--- BLOCK #4 31-32, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
@@ -4978,32 +4825,32 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 28-30, warpins: 1 ---
-	slot3 = switchingHitQuitResId_Idyll
+	--- BLOCK #5 33-35, warpins: 1 ---
+	slot4 = switchingHitQuitResId_Idyll
 	--- END OF BLOCK #5 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 31-31, warpins: 2 ---
-	slot3 = switchingHitNormalResId
+	--- BLOCK #6 36-36, warpins: 2 ---
+	slot4 = switchingHitNormalResId
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 32-39, warpins: 2 ---
-	slot4 = slot0.curPlayerEnt
-	slot6 = slot4
-	slot4 = slot4.playEffect
-	slot7 = slot3
-	slot8 = slot2
+	--- BLOCK #7 37-44, warpins: 2 ---
+	slot5 = slot0.curPlayerEnt
+	slot7 = slot5
+	slot5 = slot5.playEffect
+	slot8 = slot4
+	slot9 = slot3
 
-	slot4(slot6, slot7, slot8)
+	slot5(slot7, slot8, slot9)
 
 	--- END OF BLOCK #7 ---
 
@@ -5014,23 +4861,47 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 40-45, warpins: 1 ---
-	slot4 = slot0.curPetEnt
-	slot6 = slot4
-	slot4 = slot4.playEffect
-	slot7 = slot3
-	slot8 = slot2
+	--- BLOCK #8 45-50, warpins: 1 ---
+	slot5 = slot0.curPetEnt
+	slot7 = slot5
+	slot5 = slot5.playEffect
+	slot8 = slot4
+	slot9 = slot3
 
-	slot4(slot6, slot7, slot8)
+	slot5(slot7, slot8, slot9)
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 46-46, warpins: 3 ---
-	return
+	--- BLOCK #9 51-52, warpins: 3 ---
 	--- END OF BLOCK #9 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 53-58, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._playFashionSwitchEffect
+	slot7 = slot0.curPlayerEnt
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 59-59, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
@@ -5046,7 +4917,7 @@ slot34 = function(slot0, slot1, slot2)
 	slot8 = slot2
 	slot6 = slot2.setSwitchEndTime
 	slot9 = Time
-	slot9 = slot9.secondCache
+	slot9 = slot9.realSecondCache
 	slot9 = slot9 + slot3
 	slot10 = true
 
@@ -5276,22 +5147,61 @@ slot34 = function(slot0, slot1, slot2)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #1 7-9, warpins: 1 ---
-		slot0 = isMainPlayer
+		--- BLOCK #1 7-13, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot2 = slot0
+		slot0 = slot0.isControllingEgg
+		slot0 = slot0(slot2)
 		--- END OF BLOCK #1 ---
 
-		slot0 = if slot0 then
+		slot0 = if not slot0 then
 		JUMP TO BLOCK #2
 		else
 		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #2 10-18, warpins: 1 ---
+		--- BLOCK #2 14-26, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot2 = slot0
+		slot0 = slot0.setInLinkAnim
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot0 = slot0.curPlayerEnt
+		slot2 = slot0
+		slot0 = slot0.setSwitchEndTime
+		slot3 = nil
+
+		slot0(slot2, slot3)
+
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 27-29, warpins: 2 ---
+		slot0 = isMainPlayer
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 30-38, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.camera
@@ -5303,12 +5213,12 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot0(slot2, slot3, slot4)
 
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #3
+		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #3 19-99, warpins: 2 ---
+		--- BLOCK #5 39-119, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.curPlayerEnt
 		slot2 = slot0
@@ -5398,65 +5308,68 @@ slot34 = function(slot0, slot1, slot2)
 		slot3(slot5, slot6)
 
 		slot3 = isMainPlayer
-		--- END OF BLOCK #3 ---
-
-		slot3 = if slot3 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #4 100-102, warpins: 1 ---
-		slot3 = eggEnt
-		--- END OF BLOCK #4 ---
-
-		slot3 = if slot3 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #5 103-108, warpins: 1 ---
-		slot3 = NotNil
-		slot5 = eggEnt
-		slot5 = slot5.eModel
-		slot3 = slot3(slot5)
 		--- END OF BLOCK #5 ---
 
 		slot3 = if slot3 then
 		JUMP TO BLOCK #6
 		else
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #6 109-122, warpins: 1 ---
+		--- BLOCK #6 120-122, warpins: 1 ---
+		slot3 = eggEnt
+		--- END OF BLOCK #6 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #7 123-126, warpins: 1 ---
+		slot3 = eggEnt
+		slot3 = slot3.eModel
+		--- END OF BLOCK #7 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 127-143, warpins: 1 ---
+		slot3 = eggEnt
+		slot5 = slot3
+		slot3 = slot3.addEModelComponent
+		slot6 = Const
+		slot6 = slot6.COMPONENT_PHYSIC_CONTROLLER
+
+		slot3(slot5, slot6)
+
 		slot3 = eggEnt
 		slot3 = slot3.eModel
 		slot5 = slot3
-		slot3 = slot3.GetOrAddComponent
-		slot6 = ClientConst
+		slot3 = slot3.SetupController
+		slot6 = Const
 		slot6 = slot6.COMPONENT_PHYSIC_CONTROLLER
-		slot3 = slot3(slot5, slot6)
-		slot6 = slot3
-		slot4 = slot3.SetupController
 		slot7 = self
 		slot7 = slot7.curPlayerEnt
 		slot7 = slot7.eModel
 		slot8 = 0
 
-		slot4(slot6, slot7, slot8)
+		slot3(slot5, slot6, slot7, slot8)
 
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #7
+		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #7 123-123, warpins: 5 ---
+		--- BLOCK #9 144-144, warpins: 5 ---
 		return
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #9 ---
 
 
 
@@ -5494,13 +5407,18 @@ slot34 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 7-44, warpins: 1 ---
+		--- BLOCK #1 7-50, warpins: 1 ---
 		slot2 = eggEnt
 		slot4 = slot2
 		slot2 = slot2.getPosition
 		slot2 = slot2(slot4)
 		slot3 = moveDuration
 		slot3 = slot1 / slot3
+		slot4 = Vector3
+		slot4 = slot4.enableCreateFromCache
+
+		slot4()
+
 		slot4 = Vector3
 		slot4 = slot4.Lerp
 		slot6 = initPlayerPos
@@ -5535,12 +5453,17 @@ slot34 = function(slot0, slot1, slot2)
 
 		slot10(slot12, slot13, slot14, slot15)
 
+		slot10 = Vector3
+		slot10 = slot10.disableCreateFromCache
+
+		slot10()
+
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 45-45, warpins: 2 ---
+		--- BLOCK #2 51-51, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
 
@@ -5761,222 +5684,380 @@ end
 
 slot33.playSwitchToEggAnimSpecial = slot34
 
-slot34 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.stopCurTimeline
-
-	slot3(slot5)
-
-	slot3 = 0.5
-	slot4 = LuaTimeline
-	slot4 = slot4.new
-	slot4 = slot4()
-	slot0.switchTimeline = slot4
-	slot5 = petEnt
-	slot0.curPetEnt = slot5
-	slot0.curPlayerEnt = slot2
+slot34 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = slot1
+	slot3 = string
+	slot3 = slot3.sub
+	slot5 = slot2
+	slot6 = 1
+	slot7 = 1
+	slot3 = slot3(slot5, slot6, slot7)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	if slot3 ~= "$" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 14-16, warpins: 1 ---
-	slot5 = slot2.isMainPlayer
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot3 = "$"
+	slot4 = slot2
+	slot2 = slot3 .. slot4
 	--- END OF BLOCK #1 ---
 
-	slot5 = if not slot5 then
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-19, warpins: 2 ---
+	slot3 = string
+	slot3 = slot3.sub
+	slot5 = slot2
+	slot6 = -7
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= ".prefab" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-22, warpins: 1 ---
+	slot3 = slot2
+	slot4 = ".prefab"
+	slot2 = slot3 .. slot4
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 23-23, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot33._getFashionSwitchRawEffectResId = slot34
+
+slot34 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 17-19, warpins: 1 ---
-	slot5 = forcePlay
+	--- BLOCK #2 9-10, warpins: 2 ---
+	slot4 = nil
+
+	return slot4
+
 	--- END OF BLOCK #2 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-17, warpins: 2 ---
+	slot6 = slot1
+	slot4 = slot1.playEffect
+	slot7 = slot2
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 20-22, warpins: 2 ---
-	slot5 = slot2.setSwitchEndTime
+	--- BLOCK #4 18-19, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot4 ~= 0 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 1 ---
+	return slot4
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-23, warpins: 3 ---
+	slot5 = slot1.playEffectRaw
+	--- END OF BLOCK #6 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 24-25, warpins: 1 ---
+	slot5 = nil
+
+	return slot5
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-32, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0._getFashionSwitchRawEffectResId
+	slot8 = slot2
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot1.stopEffect
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 33-37, warpins: 1 ---
+	slot8 = slot1
+	slot6 = slot1.stopEffect
+	slot9 = slot5
+	slot10 = true
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 38-39, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 40-40, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 41-43, warpins: 2 ---
+	slot6 = slot3.mountType
+	--- END OF BLOCK #12 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 44-46, warpins: 1 ---
+	slot6 = EffectConst
+	slot6 = slot6.MountType
+	slot6 = slot6.Entity
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 47-52, warpins: 2 ---
+	slot3.mountType = slot6
+	slot8 = slot1
+	slot6 = slot1.playEffectRaw
+	slot9 = slot5
+	slot10 = slot3
+
+	return slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot33._playFashionSwitchEffect = slot34
+
+slot34 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot2 = slot0.curPlayerEnt
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = slot0.curPlayerEnt
+	slot2 = slot2.getFashionSwitchToPetEffectResId
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 23-26, warpins: 1 ---
-	slot7 = slot2
-	slot5 = slot2.setSwitchEndTime
-	slot8 = nil
+	--- BLOCK #4 15-18, warpins: 1 ---
+	slot2 = slot0.curPlayerEnt
+	slot4 = slot2
+	slot2 = slot2.getFashionSwitchToPetEffectResId
 
-	slot5(slot7, slot8)
+	return slot2(slot4)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 27-29, warpins: 2 ---
-	slot5 = slot2.setInLinkAnim
+	--- BLOCK #5 19-20, warpins: 3 ---
+	slot2 = nil
+
+	return slot2
 	--- END OF BLOCK #5 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 30-33, warpins: 1 ---
-	slot7 = slot2
-	slot5 = slot2.setInLinkAnim
-	slot8 = false
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 34-51, warpins: 4 ---
-	slot7 = slot4
-	slot5 = slot4.setDuration
-	slot8 = slot3
-
-	slot5(slot7, slot8)
-
-	slot7 = slot4
-	slot5 = slot4.createAndAddTrigger
-	slot8 = 0
-
-	slot9 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.isCurPlayerValid
-		slot0 = slot0(slot2)
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 7-30, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot2 = slot0
-		slot0 = slot0.playSoundEvent
-		slot3 = AudioConst
-		slot3 = slot3.EVENT_AVATAR_MERGE_APPEAR
-
-		slot0(slot2, slot3)
-
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot2 = slot0
-		slot0 = slot0.playSwitchAppearEffect
-		slot3 = self
-		slot5 = slot3
-		slot3 = slot3.getDissolveAppearTime
-		slot3 = slot3(slot5)
-		slot4 = nil
-		slot5 = 0
-		slot6 = false
-		slot7 = false
-
-		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
-
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.playSwitchToPlayerEffect
-
-		slot0(slot2)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 31-31, warpins: 2 ---
-		return
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot5(slot7, slot8, slot9)
-
-	slot7 = slot4
-	slot5 = slot4.setStopCallback
-
-	slot8 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.isCurPlayerValid
-		slot0 = slot0(slot2)
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 7-10, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curPlayerEnt
-		slot1 = false
-		slot0.captureSwitchFlag = slot1
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 11-11, warpins: 2 ---
-		return
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot5(slot7, slot8)
-
-	slot7 = slot4
-	slot5 = slot4.start
-
-	slot5(slot7)
-
-	return
-	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot33.playSwitchToPlayerFronEggAnim = slot34
+slot33.getFashionSwitchToPetEffectResId = slot34
+
+slot34 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot2 = slot0.curPlayerEnt
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = slot0.curPlayerEnt
+	slot2 = slot2.getFashionSwitchToPlayerEffectResId
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-18, warpins: 1 ---
+	slot2 = slot0.curPlayerEnt
+	slot4 = slot2
+	slot2 = slot2.getFashionSwitchToPlayerEffectResId
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-20, warpins: 3 ---
+	slot2 = nil
+
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot33.getFashionSwitchToPlayerEffectResId = slot34
 
 return slot33
 --- END OF BLOCK #0 ---

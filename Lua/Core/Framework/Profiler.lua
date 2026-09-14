@@ -1,4 +1,4 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-46, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -9,8 +9,51 @@ slot2 = slot0.getLogger
 slot4 = "Profiler"
 slot2 = slot2(slot4)
 slot3 = {}
+slot4 = nil
 
-slot4 = function(slot0, slot1)
+slot5 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = UNITY_PS5
+	--- END OF BLOCK #0 ---
+
+	if slot0 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot0 = jit
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 6-7, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 8-8, warpins: 0 ---
+	slot0 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-9, warpins: 3 ---
+	return slot0
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.name
 	--- END OF BLOCK #0 ---
@@ -84,9 +127,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3._func_title = slot4
+slot3._func_title = slot6
 
-slot4 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._func_title
@@ -136,9 +179,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3._func_report = slot4
+slot3._func_report = slot6
 
-slot4 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._func_report
@@ -159,9 +202,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3._profiling_call = slot4
+slot3._profiling_call = slot6
 
-slot4 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = os
 	slot2 = slot2.clock
@@ -214,9 +257,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3._profiling_return = slot4
+slot3._profiling_return = slot6
 
-slot4 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = debug
 	slot1 = slot1.getinfo
@@ -276,10 +319,10 @@ slot4 = function(slot0)
 
 end
 
-slot3._profiling_handler = slot4
-slot4 = string
+slot3._profiling_handler = slot6
+slot6 = string
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -328,9 +371,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.endsWith = slot5
+slot6.endsWith = slot7
 
-slot4 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = debug
 	slot1 = slot1.getinfo
@@ -472,9 +515,9 @@ slot4 = function(slot0)
 
 end
 
-slot3._tracing_handler = slot4
+slot3._tracing_handler = slot6
 
-slot4 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = collectgarbage
 	slot3 = "stop"
@@ -549,141 +592,214 @@ slot4 = function(slot0)
 
 end
 
-slot3.start = slot4
+slot3.start = slot6
 
-slot4 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = require
-	slot5 = "jit.profile"
-	slot3 = slot3(slot5)
+slot6 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = jitprof
+
 	--- END OF BLOCK #0 ---
 
-	if slot2 == "C" then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #1
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #1 6-12, warpins: 2 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.DEBUG
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #1 ---
+	--- BLOCK #2 5-6, warpins: 2 ---
+	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #2
+	if slot2 == "C" then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 13-21, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.debug
-	slot7 = "---------------- profiler_callback"
-	slot8 = inspect
-	slot10 = slot1
-	slot8 = slot8(slot10)
-	slot9 = slot2
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	--- END OF BLOCK #2 ---
+	--- BLOCK #3 7-7, warpins: 1 ---
+	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 22-28, warpins: 2 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.DEBUG
-	slot4 = slot4(slot6)
+	--- BLOCK #3 7-13, warpins: 2 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 29-37, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.debug
-	slot7 = slot3.dumpstack
-	slot9 = slot0
-	slot10 = "pfFlZ"
-	slot11 = -100
-	MULTRES = slot7(slot9, slot10, slot11)
+	--- BLOCK #4 14-22, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = "---------------- profiler_callback"
+	slot7 = inspect
+	slot9 = slot1
+	slot7 = slot7(slot9)
+	slot8 = slot2
 
-	slot4(slot6, MULTRES)
+	slot3(slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 38-39, warpins: 2 ---
-	slot4 = slot1
-
-	return
+	--- BLOCK #5 23-29, warpins: 2 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-39, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = jitprof
+	slot6 = slot6.dumpstack
+	slot8 = slot0
+	slot9 = "pfFlZ"
+	slot10 = -100
+	MULTRES = slot6(slot8, slot9, slot10)
+
+	slot3(slot5, MULTRES)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 40-41, warpins: 2 ---
+	slot3 = slot1
+
+	return
+	--- END OF BLOCK #7 ---
+
 
 
 end
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot7 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = isJitEnabled
+	slot1 = slot1()
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot1 = jitprof
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
 	slot1 = require
 	slot3 = "jit.profile"
 	slot1 = slot1(slot3)
-	slot2 = slot1.start
-	slot4 = "fl"
-	slot5 = profiler_callback
+	--- END OF BLOCK #3 ---
 
-	slot2(slot4, slot5)
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-18, warpins: 2 ---
+	jitprof = slot1
+	slot1 = jitprof
+	slot1 = slot1.start
+	slot3 = "fl"
+	slot4 = profiler_callback
+
+	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot3.startJit = slot5
+slot3.startJit = slot7
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = require
-	slot3 = "jit.profile"
-	slot1 = slot1(slot3)
-	slot2 = slot1.stop
-
-	slot2()
-
-	return
+slot7 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = jitprof
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = jitprof
+	slot1 = slot1.stop
+
+	slot1()
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot3.stopJit = slot5
+slot3.stopJit = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.mode
@@ -942,9 +1058,9 @@ slot5 = function(slot0)
 
 end
 
-slot3.stop = slot5
+slot3.stop = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0._reporter = slot1
 
@@ -955,9 +1071,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot3.setReporter = slot5
+slot3.setReporter = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0._tracer = slot1
 
@@ -968,9 +1084,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot3.setTracer = slot5
+slot3.setTracer = slot7
 
-slot5 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0._mode = slot1
 
@@ -981,9 +1097,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot3.setMode = slot5
+slot3.setMode = slot7
 
-slot5 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._mode
 	--- END OF BLOCK #0 ---
@@ -1015,7 +1131,7 @@ slot5 = function(slot0)
 
 end
 
-slot3.mode = slot5
+slot3.mode = slot7
 
 return slot3
 --- END OF BLOCK #0 ---

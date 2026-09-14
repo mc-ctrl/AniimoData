@@ -1,31 +1,40 @@
---- BLOCK #0 1-13, warpins: 1 ---
+--- BLOCK #0 1-16, warpins: 1 ---
 slot0 = pg
 slot1 = {
+	formula_data = true,
+	dye_config_data = true,
+	custom_default_register_map = true,
+	trigger_map_data = true,
+	CharacterStateConstImp = true,
+	stamina_config_data = true,
+	scene_block_info = true,
+	puppet_state_conflict_data = true,
 	skill_state_conflict_data = true,
 	state_conflict_data = true,
 	ecs_editor_export_chem_material_data = true,
 	anim_state_lookat_priority_data = true,
-	anim_tag_lookat_priority_data = true,
-	formula_data = true,
-	custom_default_register_map = true,
-	trigger_map_data = true,
-	stamina_config_data = true,
-	scene_block_info = true,
-	puppet_state_conflict_data = true
+	anim_tag_lookat_priority_data = true
 }
 slot0.bddIgnore = slot1
 slot0 = pg
 slot1 = {
+	["GroupBehaviour."] = true,
 	["AICtrData."] = true,
 	["BehaviacData."] = true,
-	["Input."] = true,
-	["GroupBehaviour."] = true
+	["DialogueGraph."] = true,
+	["Input."] = true
 }
 slot0.bddIgnoreFolders = slot1
 slot0 = pg
 slot1 = {
-	custom_trigger_map_data = true,
-	custom_trigger_data = true
+	["%f[%w_]scene_route_data_[^.]+$"] = true,
+	["%f[%w_]scene_entity_data_[^.]+$"] = true
+}
+slot0.bddIgnoreLuaPatterns = slot1
+slot0 = pg
+slot1 = {
+	custom_trigger_data = true,
+	custom_trigger_map_data = true
 }
 slot0.bddLineCached = slot1
 slot0 = pg

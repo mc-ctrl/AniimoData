@@ -17,52 +17,52 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "CurrentEP",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "maxSkillDist",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "skillStopDist",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
 	name = "goBackDist",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
 	name = "CurrentBoxDistToTarget",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
 	name = "tSkillUsed",
+	const = 0,
 	type = "int",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[6] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "3",
-	class = "DecoratorAlwaysFailure"
+	class = "DecoratorAlwaysFailure",
+	id = "3"
 }
 slot5 = {}
 slot6 = {
@@ -75,8 +75,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "1",
-	class = "Noop"
+	class = "Noop",
+	id = "1"
 }
 slot8 = {}
 slot7.properties = slot8

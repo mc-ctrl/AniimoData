@@ -534,7 +534,13 @@ end
 slot3.addListener = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = pgI18N
+	slot1 = slot1.LocalizationText
+	slot1 = slot1.ClearFixedLanguageCache
+
+	slot1()
+
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -642,8 +648,8 @@ slot11 = function(slot0)
 
 	--- BLOCK #3 16-30, warpins: 1 ---
 	slot7 = {}
-	slot8 = pg
-	slot8 = slot8.getGameString
+	slot8 = GmToolUtils
+	slot8 = slot8.getGmGameString
 	slot10 = slot6.label
 	slot8 = slot8(slot10)
 	slot7.label = slot8
@@ -2935,7 +2941,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 		slot4 = slot4(slot6, slot7)
 
 		slot5 = function()
-			--- BLOCK #0 1-14, warpins: 1 ---
+			--- BLOCK #0 1-17, warpins: 1 ---
 			slot0 = UIUtils
 			slot0 = slot0.ClipboardWriter
 			slot2 = input
@@ -2949,9 +2955,12 @@ slot11 = function(slot0, slot1, slot2, slot3)
 			slot0 = slot0.tips
 			slot2 = slot0
 			slot0 = slot0.showTextTip
-			slot3 = "复制成功"
+			slot3 = GmToolUtils
+			slot3 = slot3.getGmGameString
+			slot5 = "GM_TOAST_COPY_SUCCESS"
+			MULTRES = slot3(slot5)
 
-			slot0(slot2, slot3)
+			slot0(slot2, MULTRES)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -3097,7 +3106,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 				end
 
 
-				--- BLOCK #1 10-19, warpins: 1 ---
+				--- BLOCK #1 10-16, warpins: 1 ---
 				slot1 = pg
 				slot1 = slot1.global
 				slot1 = slot1.mobileCameraMgr
@@ -3107,17 +3116,12 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 				slot1(slot3, slot4)
 
-				slot1 = print
-				slot3 = "kuangye test: destroy"
-
-				slot1(slot3)
-
 				--- END OF BLOCK #1 ---
 
 				FLOW; TARGET BLOCK #2
 
 
-				--- BLOCK #2 20-22, warpins: 2 ---
+				--- BLOCK #2 17-19, warpins: 2 ---
 				slot1 = refreshBugImageList
 
 				slot1()
@@ -3875,8 +3879,8 @@ slot11 = function(slot0)
 
 
 		--- BLOCK #5 40-46, warpins: 1 ---
-		slot11 = pg
-		slot11 = slot11.getGameString
+		slot11 = GmToolUtils
+		slot11 = slot11.getGmGameString
 		slot13 = slot10.label
 		slot11 = slot11(slot13)
 		slot12 = slot10.cmdName
@@ -4089,13 +4093,16 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #23 123-132, warpins: 1 ---
+		--- BLOCK #23 123-135, warpins: 1 ---
 		slot14 = slot10.dataFunc
 		slot15 = GmToolUtils
 		slot15 = slot15[slot14]
 		slot15 = slot15()
 		slot12.itemData = slot15
-		slot15 = slot10.tips
+		slot15 = GmToolUtils
+		slot15 = slot15.getGmGameString
+		slot17 = slot10.tips
+		slot15 = slot15(slot17)
 		slot12.tips = slot15
 		slot15 = slot10.selectedFun
 		slot12.selectedFun = slot15
@@ -4104,7 +4111,7 @@ slot11 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-		--- BLOCK #24 133-135, warpins: 1 ---
+		--- BLOCK #24 136-138, warpins: 1 ---
 		slot14 = slot10.subStyle
 		--- END OF BLOCK #24 ---
 
@@ -4115,15 +4122,18 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #25 136-137, warpins: 1 ---
-		slot14 = slot10.buttonText
+		--- BLOCK #25 139-143, warpins: 1 ---
+		slot14 = GmToolUtils
+		slot14 = slot14.getGmGameString
+		slot16 = slot10.buttonText
+		slot14 = slot14(slot16)
 		slot12.buttonText = slot14
 		--- END OF BLOCK #25 ---
 
 		FLOW; TARGET BLOCK #26
 
 
-		--- BLOCK #26 138-143, warpins: 6 ---
+		--- BLOCK #26 144-149, warpins: 6 ---
 		slot14 = slot4.items
 		slot15 = slot4.items
 		slot15 = #slot15
@@ -4134,7 +4144,7 @@ slot11 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #72
 
 
-		--- BLOCK #27 144-145, warpins: 1 ---
+		--- BLOCK #27 150-151, warpins: 1 ---
 		--- END OF BLOCK #27 ---
 
 		if slot5 == 2 then
@@ -4144,10 +4154,13 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #28 146-159, warpins: 1 ---
+		--- BLOCK #28 152-168, warpins: 1 ---
 		slot14 = slot10.subStyle
 		slot12.tIndex = slot14
-		slot14 = slot10.tips
+		slot14 = GmToolUtils
+		slot14 = slot14.getGmGameString
+		slot16 = slot10.tips
+		slot14 = slot14(slot16)
 		slot12.tips = slot14
 		slot14 = slot10.defaultValue
 		slot12.defaultValue = slot14
@@ -4166,7 +4179,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #29 160-161, warpins: 1 ---
+		--- BLOCK #29 169-170, warpins: 1 ---
 		--- END OF BLOCK #29 ---
 
 		if slot14 ~= "" then
@@ -4176,14 +4189,14 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #30 162-162, warpins: 1 ---
+		--- BLOCK #30 171-171, warpins: 1 ---
 		slot12.defaultValue = slot14
 		--- END OF BLOCK #30 ---
 
 		FLOW; TARGET BLOCK #31
 
 
-		--- BLOCK #31 163-170, warpins: 3 ---
+		--- BLOCK #31 172-179, warpins: 3 ---
 		slot15 = slot10.paramType
 		slot12.paramType = slot15
 		slot15 = slot3.items
@@ -4196,7 +4209,7 @@ slot11 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #72
 
 
-		--- BLOCK #32 171-172, warpins: 1 ---
+		--- BLOCK #32 180-181, warpins: 1 ---
 		--- END OF BLOCK #32 ---
 
 		if slot5 ~= 3 then
@@ -4206,7 +4219,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #33 173-174, warpins: 1 ---
+		--- BLOCK #33 182-183, warpins: 1 ---
 		--- END OF BLOCK #33 ---
 
 		if slot5 == 4 then
@@ -4216,10 +4229,13 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #34 175-181, warpins: 2 ---
+		--- BLOCK #34 184-193, warpins: 2 ---
 		slot14 = slot10.style
 		slot12.tIndex = slot14
-		slot14 = slot10.buttonText
+		slot14 = GmToolUtils
+		slot14 = slot14.getGmGameString
+		slot16 = slot10.buttonText
+		slot14 = slot14(slot16)
 		slot12.buttonText = slot14
 		slot14 = slot10.dataFunc
 		--- END OF BLOCK #34 ---
@@ -4231,7 +4247,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #35 182-187, warpins: 1 ---
+		--- BLOCK #35 194-199, warpins: 1 ---
 		slot14 = GmToolUtils
 		slot15 = slot10.dataFunc
 		slot14 = slot14[slot15]
@@ -4245,14 +4261,14 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #36 188-188, warpins: 1 ---
+		--- BLOCK #36 200-200, warpins: 1 ---
 		slot14 = {}
 		--- END OF BLOCK #36 ---
 
 		FLOW; TARGET BLOCK #37
 
 
-		--- BLOCK #37 189-191, warpins: 2 ---
+		--- BLOCK #37 201-203, warpins: 2 ---
 		slot15 = filterString
 		--- END OF BLOCK #37 ---
 
@@ -4263,7 +4279,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #38 192-194, warpins: 1 ---
+		--- BLOCK #38 204-206, warpins: 1 ---
 		slot15 = filterString
 		--- END OF BLOCK #38 ---
 
@@ -4274,14 +4290,14 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #39 195-196, warpins: 2 ---
+		--- BLOCK #39 207-208, warpins: 2 ---
 		slot12.itemData = slot14
 		--- END OF BLOCK #39 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #49
 
 
-		--- BLOCK #40 197-202, warpins: 1 ---
+		--- BLOCK #40 209-214, warpins: 1 ---
 		slot15 = {}
 		slot12.itemData = slot15
 		slot15 = 1
@@ -4292,7 +4308,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #41
 
 
-		--- BLOCK #41 203-209, warpins: 2 ---
+		--- BLOCK #41 215-221, warpins: 2 ---
 		slot19 = slot14[slot18]
 		slot19 = slot19.label
 		slot20 = type
@@ -4307,7 +4323,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #42 210-213, warpins: 1 ---
+		--- BLOCK #42 222-225, warpins: 1 ---
 		slot20 = tostring
 		slot22 = slot19
 		slot20 = slot20(slot22)
@@ -4317,7 +4333,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #43
 
 
-		--- BLOCK #43 214-225, warpins: 2 ---
+		--- BLOCK #43 226-237, warpins: 2 ---
 		slot20 = string
 		slot20 = slot20.lower
 		slot22 = slot19
@@ -4337,7 +4353,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #44 226-229, warpins: 1 ---
+		--- BLOCK #44 238-241, warpins: 1 ---
 		slot21 = tostring
 		slot23 = slot20
 		slot21 = slot21(slot23)
@@ -4347,7 +4363,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #45
 
 
-		--- BLOCK #45 230-242, warpins: 2 ---
+		--- BLOCK #45 242-254, warpins: 2 ---
 		slot21 = string
 		slot21 = slot21.lower
 		slot23 = slot20
@@ -4368,7 +4384,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #46 243-250, warpins: 1 ---
+		--- BLOCK #46 255-262, warpins: 1 ---
 		slot21 = self
 		slot23 = slot21
 		slot21 = slot21.checkSearch
@@ -4384,7 +4400,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #47 251-256, warpins: 2 ---
+		--- BLOCK #47 263-268, warpins: 2 ---
 		slot21 = slot12.itemData
 		slot22 = slot12.itemData
 		slot22 = #slot22
@@ -4396,14 +4412,14 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #48
 
 
-		--- BLOCK #48 257-257, warpins: 2 ---
+		--- BLOCK #48 269-269, warpins: 2 ---
 		--- END OF BLOCK #48 ---
 
 		for slot18=slot15, slot16, slot17
 		LOOP BLOCK #41
 		GO OUT TO BLOCK #49
 
-		--- BLOCK #49 258-263, warpins: 3 ---
+		--- BLOCK #49 270-275, warpins: 3 ---
 		slot14 = {}
 		slot12.subItems = slot14
 		slot14 = pairs
@@ -4414,16 +4430,19 @@ slot11 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #64
 
 
-		--- BLOCK #50 264-289, warpins: 1 ---
+		--- BLOCK #50 276-304, warpins: 1 ---
 		slot19 = {}
-		slot20 = pg
-		slot20 = slot20.getGameString
+		slot20 = GmToolUtils
+		slot20 = slot20.getGmGameString
 		slot22 = slot18.label
 		slot20 = slot20(slot22)
 		slot19.label = slot20
 		slot20 = slot18.style
 		slot19.tIndex = slot20
-		slot20 = slot18.tips
+		slot20 = GmToolUtils
+		slot20 = slot20.getGmGameString
+		slot22 = slot18.tips
+		slot20 = slot20(slot22)
 		slot19.tips = slot20
 		slot20 = slot18.id
 		slot19.id = slot20
@@ -4448,7 +4467,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #51 290-291, warpins: 1 ---
+		--- BLOCK #51 305-306, warpins: 1 ---
 		--- END OF BLOCK #51 ---
 
 		if slot20 ~= "" then
@@ -4458,14 +4477,14 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #52 292-292, warpins: 1 ---
+		--- BLOCK #52 307-307, warpins: 1 ---
 		slot19.defaultValue = slot20
 		--- END OF BLOCK #52 ---
 
 		FLOW; TARGET BLOCK #53
 
 
-		--- BLOCK #53 293-297, warpins: 3 ---
+		--- BLOCK #53 308-312, warpins: 3 ---
 		slot21 = slot18.func
 		slot19.func = slot21
 		slot21 = slot18.style
@@ -4478,7 +4497,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #54 298-303, warpins: 1 ---
+		--- BLOCK #54 313-318, warpins: 1 ---
 		slot21 = slot18.dataFunc
 		slot22 = GmToolUtils
 		slot22 = slot22[slot21]
@@ -4489,7 +4508,7 @@ slot11 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-		--- BLOCK #55 304-306, warpins: 1 ---
+		--- BLOCK #55 319-321, warpins: 1 ---
 		slot21 = slot18.style
 		--- END OF BLOCK #55 ---
 
@@ -4500,7 +4519,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #56 307-309, warpins: 1 ---
+		--- BLOCK #56 322-324, warpins: 1 ---
 		slot21 = slot18.checkFunc
 		--- END OF BLOCK #56 ---
 
@@ -4511,7 +4530,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #57 310-314, warpins: 1 ---
+		--- BLOCK #57 325-329, warpins: 1 ---
 		slot22 = GmToolUtils
 		slot22 = slot22[slot21]
 		slot22 = slot22()
@@ -4521,7 +4540,7 @@ slot11 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-		--- BLOCK #58 315-317, warpins: 1 ---
+		--- BLOCK #58 330-332, warpins: 1 ---
 		slot21 = slot18.style
 		--- END OF BLOCK #58 ---
 
@@ -4532,7 +4551,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #59 318-326, warpins: 1 ---
+		--- BLOCK #59 333-341, warpins: 1 ---
 		slot21 = slot18.minValue
 		slot19.minValue = slot21
 		slot21 = slot18.maxValue
@@ -4549,14 +4568,14 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #60 327-327, warpins: 1 ---
+		--- BLOCK #60 342-342, warpins: 1 ---
 		slot21 = 0.1
 		--- END OF BLOCK #60 ---
 
 		FLOW; TARGET BLOCK #61
 
 
-		--- BLOCK #61 328-333, warpins: 2 ---
+		--- BLOCK #61 343-348, warpins: 2 ---
 		slot19.step = slot21
 		slot21 = slot18.funcParam
 		slot19.funcParam = slot21
@@ -4570,7 +4589,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #62 334-339, warpins: 1 ---
+		--- BLOCK #62 349-354, warpins: 1 ---
 		slot21 = GmToolUtils
 		slot22 = slot18.getValueFunc
 		slot21 = slot21[slot22]
@@ -4582,7 +4601,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #63
 
 
-		--- BLOCK #63 340-344, warpins: 6 ---
+		--- BLOCK #63 355-359, warpins: 6 ---
 		slot21 = slot12.subItems
 		slot22 = slot12.subItems
 		slot22 = #slot22
@@ -4593,7 +4612,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #64
 
 
-		--- BLOCK #64 345-346, warpins: 2 ---
+		--- BLOCK #64 360-361, warpins: 2 ---
 		--- END OF BLOCK #64 ---
 
 		for slot17, slot18 in slot14, slot15, slot16
@@ -4601,7 +4620,7 @@ slot11 = function(slot0)
 		GO OUT TO BLOCK #65
 
 
-		--- BLOCK #65 347-349, warpins: 1 ---
+		--- BLOCK #65 362-364, warpins: 1 ---
 		slot14 = slot12.itemData
 		--- END OF BLOCK #65 ---
 
@@ -4612,7 +4631,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #66 350-354, warpins: 1 ---
+		--- BLOCK #66 365-369, warpins: 1 ---
 		slot14 = slot12.itemData
 		slot14 = #slot14
 		slot15 = 0
@@ -4625,7 +4644,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #67 355-358, warpins: 1 ---
+		--- BLOCK #67 370-373, warpins: 1 ---
 		slot14 = self
 		slot14 = slot14.curTypeIndex
 		--- END OF BLOCK #67 ---
@@ -4637,7 +4656,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #68 359-366, warpins: 1 ---
+		--- BLOCK #68 374-381, warpins: 1 ---
 		slot14 = {}
 		slot15 = slot12.label
 		slot14.label = slot15
@@ -4651,7 +4670,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #69
 
 
-		--- BLOCK #69 367-369, warpins: 4 ---
+		--- BLOCK #69 382-384, warpins: 4 ---
 		slot14 = slot12.itemData
 		--- END OF BLOCK #69 ---
 
@@ -4662,7 +4681,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #70 370-374, warpins: 1 ---
+		--- BLOCK #70 385-389, warpins: 1 ---
 		slot14 = slot12.itemData
 		slot14 = #slot14
 		slot15 = 0
@@ -4675,7 +4694,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #71 375-377, warpins: 2 ---
+		--- BLOCK #71 390-392, warpins: 2 ---
 		slot14 = #slot2
 		slot14 = slot14 + 1
 		slot2[slot14] = slot12
@@ -4684,7 +4703,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #72
 
 
-		--- BLOCK #72 378-379, warpins: 8 ---
+		--- BLOCK #72 393-394, warpins: 8 ---
 		--- END OF BLOCK #72 ---
 
 		for slot9, slot10 in slot6, slot7, slot8
@@ -4692,7 +4711,7 @@ slot11 = function(slot0)
 		GO OUT TO BLOCK #73
 
 
-		--- BLOCK #73 380-383, warpins: 1 ---
+		--- BLOCK #73 395-398, warpins: 1 ---
 		slot6 = #slot2
 		slot7 = 0
 		--- END OF BLOCK #73 ---
@@ -4704,7 +4723,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #74 384-388, warpins: 1 ---
+		--- BLOCK #74 399-403, warpins: 1 ---
 		slot6 = slot3.items
 		slot6 = #slot6
 		slot7 = 0
@@ -4717,7 +4736,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #75 389-393, warpins: 1 ---
+		--- BLOCK #75 404-408, warpins: 1 ---
 		slot6 = slot4.items
 		slot6 = #slot6
 		slot7 = 0
@@ -4730,7 +4749,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #76 394-397, warpins: 3 ---
+		--- BLOCK #76 409-412, warpins: 3 ---
 		slot6 = GmToolUtils
 		slot6 = slot6.fullSearch
 		--- END OF BLOCK #76 ---
@@ -4742,7 +4761,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #77 398-400, warpins: 1 ---
+		--- BLOCK #77 413-415, warpins: 1 ---
 		slot6 = filterString
 		--- END OF BLOCK #77 ---
 
@@ -4753,7 +4772,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #78 401-403, warpins: 1 ---
+		--- BLOCK #78 416-418, warpins: 1 ---
 		slot6 = filterString
 		--- END OF BLOCK #78 ---
 
@@ -4764,10 +4783,10 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #79 404-416, warpins: 1 ---
+		--- BLOCK #79 419-431, warpins: 1 ---
 		slot6 = {}
-		slot7 = pg
-		slot7 = slot7.getGameString
+		slot7 = GmToolUtils
+		slot7 = slot7.getGmGameString
 		slot9 = slot1.label
 		slot7 = slot7(slot9)
 		slot6.label = slot7
@@ -4783,7 +4802,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #80
 
 
-		--- BLOCK #80 417-421, warpins: 4 ---
+		--- BLOCK #80 432-436, warpins: 4 ---
 		slot6 = slot3.items
 		slot6 = #slot6
 		slot7 = 0
@@ -4796,7 +4815,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #81 422-426, warpins: 1 ---
+		--- BLOCK #81 437-441, warpins: 1 ---
 		slot6 = itemData
 		slot7 = itemData
 		slot7 = #slot7
@@ -4807,7 +4826,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #82
 
 
-		--- BLOCK #82 427-431, warpins: 2 ---
+		--- BLOCK #82 442-446, warpins: 2 ---
 		slot6 = slot4.items
 		slot6 = #slot6
 		slot7 = 0
@@ -4820,7 +4839,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #83 432-436, warpins: 1 ---
+		--- BLOCK #83 447-451, warpins: 1 ---
 		slot6 = itemData
 		slot7 = itemData
 		slot7 = #slot7
@@ -4831,7 +4850,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #84
 
 
-		--- BLOCK #84 437-440, warpins: 2 ---
+		--- BLOCK #84 452-455, warpins: 2 ---
 		slot6 = 1
 		slot7 = #slot2
 		slot8 = 1
@@ -4840,7 +4859,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #85
 
 
-		--- BLOCK #85 441-444, warpins: 2 ---
+		--- BLOCK #85 456-459, warpins: 2 ---
 		slot10 = slot2[slot9]
 		slot10 = slot10.tIndex
 		--- END OF BLOCK #85 ---
@@ -4852,7 +4871,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #86 445-450, warpins: 1 ---
+		--- BLOCK #86 460-465, warpins: 1 ---
 		slot10 = itemData
 		slot11 = itemData
 		slot11 = #slot11
@@ -4864,14 +4883,14 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #87
 
 
-		--- BLOCK #87 451-451, warpins: 2 ---
+		--- BLOCK #87 466-466, warpins: 2 ---
 		--- END OF BLOCK #87 ---
 
 		for slot9=slot6, slot7, slot8
 		LOOP BLOCK #85
 		GO OUT TO BLOCK #88
 
-		--- BLOCK #88 452-455, warpins: 1 ---
+		--- BLOCK #88 467-470, warpins: 1 ---
 		slot6 = 1
 		slot7 = #slot2
 		slot8 = 1
@@ -4880,7 +4899,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #89
 
 
-		--- BLOCK #89 456-459, warpins: 2 ---
+		--- BLOCK #89 471-474, warpins: 2 ---
 		slot10 = slot2[slot9]
 		slot10 = slot10.tIndex
 		--- END OF BLOCK #89 ---
@@ -4892,7 +4911,7 @@ slot11 = function(slot0)
 		end
 
 
-		--- BLOCK #90 460-465, warpins: 1 ---
+		--- BLOCK #90 475-480, warpins: 1 ---
 		slot10 = itemData
 		slot11 = itemData
 		slot11 = #slot11
@@ -4905,14 +4924,14 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #91
 
 
-		--- BLOCK #91 466-466, warpins: 2 ---
+		--- BLOCK #91 481-481, warpins: 2 ---
 		--- END OF BLOCK #91 ---
 
 		for slot9=slot6, slot7, slot8
 		LOOP BLOCK #89
 		GO OUT TO BLOCK #92
 
-		--- BLOCK #92 467-467, warpins: 5 ---
+		--- BLOCK #92 482-482, warpins: 5 ---
 		return
 		--- END OF BLOCK #92 ---
 
@@ -5290,7 +5309,7 @@ slot11 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 20-53, warpins: 2 ---
+		--- BLOCK #2 20-56, warpins: 2 ---
 		slot1 = pg
 		slot1 = slot1.global
 		slot1 = slot1.prefsCacheUtils
@@ -5326,9 +5345,12 @@ slot11 = function(slot0, slot1, slot2)
 		slot2 = slot2.tips
 		slot4 = slot2
 		slot2 = slot2.showTextTip
-		slot5 = "添加成功"
+		slot5 = GmToolUtils
+		slot5 = slot5.getGmGameString
+		slot7 = "GM_TOAST_ADD_SUCCESS"
+		MULTRES = slot5(slot7)
 
-		slot2(slot4, slot5)
+		slot2(slot4, MULTRES)
 
 		return
 		--- END OF BLOCK #2 ---
@@ -5436,7 +5458,7 @@ slot11 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 35-83, warpins: 2 ---
+		--- BLOCK #8 35-86, warpins: 2 ---
 		slot2 = pg
 		slot2 = slot2.global
 		slot2 = slot2.prefsCacheUtils
@@ -5477,9 +5499,12 @@ slot11 = function(slot0, slot1, slot2)
 		slot4 = slot4.tips
 		slot6 = slot4
 		slot4 = slot4.showTextTip
-		slot7 = "移除成功"
+		slot7 = GmToolUtils
+		slot7 = slot7.getGmGameString
+		slot9 = "GM_TOAST_REMOVE_SUCCESS"
+		MULTRES = slot7(slot9)
 
-		slot4(slot6, slot7)
+		slot4(slot6, MULTRES)
 
 		slot4 = self
 		slot6 = slot4

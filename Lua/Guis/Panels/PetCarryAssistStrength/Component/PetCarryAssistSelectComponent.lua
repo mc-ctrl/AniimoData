@@ -964,7 +964,7 @@ end
 slot2.refreshSelectState = slot8
 
 slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-28, warpins: 1 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot2 = slot1.selectedIndex
 	slot0.oldSelectIndex = slot2
 	slot2 = slot1.selectedItem
@@ -976,10 +976,11 @@ slot8 = function(slot0, slot1)
 	slot6 = UIConst
 	slot6 = slot6.UI_ID_COMMON_ITEM_TIP
 	slot7 = {
+		autoHor = true,
 		autoClose = true,
-		shouldAddGraphicRaycaster = false,
 		checkTouchBegin = false,
 		padding = 160,
+		shouldAddGraphicRaycaster = false,
 		hierarchyMode = 0
 	}
 	slot8 = slot2.itemId
@@ -992,6 +993,11 @@ slot8 = function(slot0, slot1)
 	slot7.genID = slot8
 	slot8 = slot0.listUList
 	slot7.targetRect = slot8
+	slot8 = CS
+	slot8 = slot8.XGUI
+	slot8 = slot8.EVerticalAlignment
+	slot8 = slot8.Top
+	slot7.verAlign = slot8
 
 	slot8 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---

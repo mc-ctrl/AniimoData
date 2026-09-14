@@ -1,4 +1,4 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -33,19 +33,16 @@ slot9 = slot9(slot11)
 slot10 = require
 slot12 = "Common.Const.PlayerForbidConst"
 slot10 = slot10(slot12)
-slot11 = require
-slot13 = "Common.Utils.FlagUtils"
-slot11 = slot11(slot13)
-slot12 = {}
-slot13 = slot9.PLAYER_VOICE_SIGNATURE_CHANGE
-slot14 = {
+slot11 = {}
+slot12 = slot9.PLAYER_VOICE_SIGNATURE_CHANGE
+slot13 = {
 	"refreshVoiceSignatureState",
 	true
 }
-slot12[slot13] = slot14
-slot2.messages = slot12
+slot11[slot12] = slot13
+slot2.messages = slot11
 
-slot12 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.playerInfo
 	slot0.playerInfo = slot2
@@ -76,9 +73,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot2.onCtor = slot12
+slot2.onCtor = slot11
 
-slot12 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-109, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -168,7 +165,7 @@ slot12 = function(slot0)
 	slot2 = slot0.btnEditName
 
 	slot3 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.speech
@@ -177,15 +174,13 @@ slot12 = function(slot0)
 
 		slot0(slot2)
 
-		slot0 = FlagUtils
-		slot0 = slot0.hasFlag
-		slot2 = pg
-		slot2 = slot2.me
-		slot2 = slot2.ugcFuncSwitch
-		slot3 = PlayerForbidConst
-		slot3 = slot3.PLAYER_SWITCH
-		slot3 = slot3.CHANGE_PLAYER_NAME
-		slot0 = slot0(slot2, slot3)
+		slot0 = LuaUIUtils
+		slot0 = slot0.checkFeatureForbid
+		slot2 = PlayerForbidConst
+		slot2 = slot2.PLAYER_SWITCH
+		slot2 = slot2.CHANGE_PLAYER_NAME
+		slot0 = slot0(slot2)
+
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
@@ -195,17 +190,7 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #1 18-26, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.showBubbleMessageRaw
-		slot3 = pg
-		slot3 = slot3.getGameString
-		slot5 = "PLAYER_PERMISSION_LIMITED"
-		MULTRES = slot3(slot5)
-
-		slot1(MULTRES)
-
+		--- BLOCK #1 15-15, warpins: 1 ---
 		return
 
 		--- END OF BLOCK #1 ---
@@ -213,38 +198,38 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 27-39, warpins: 2 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.ui
-		slot3 = slot1
-		slot1 = slot1.open
-		slot4 = UIConst
-		slot4 = slot4.UI_ID_CHANGE_NAME
-		slot5 = {}
-		slot6 = self
-		slot6 = slot6.playerInfo
-		slot6 = slot6.playerName
+		--- BLOCK #2 16-28, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_CHANGE_NAME
+		slot4 = {}
+		slot5 = self
+		slot5 = slot5.playerInfo
+		slot5 = slot5.playerName
 		--- END OF BLOCK #2 ---
 
-		slot6 = if not slot6 then
+		slot5 = if not slot5 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 40-40, warpins: 1 ---
-		slot6 = ""
+		--- BLOCK #3 29-29, warpins: 1 ---
+		slot5 = ""
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 41-43, warpins: 2 ---
-		slot5.initialInputText = slot6
+		--- BLOCK #4 30-32, warpins: 2 ---
+		slot4.initialInputText = slot5
 
-		slot1(slot3, slot4, slot5)
+		slot0(slot2, slot3, slot4)
 
 		return
 		--- END OF BLOCK #4 ---
@@ -257,7 +242,7 @@ slot12 = function(slot0)
 	slot2 = slot0.btnEditSignature
 
 	slot3 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.speech
@@ -266,15 +251,12 @@ slot12 = function(slot0)
 
 		slot0(slot2)
 
-		slot0 = FlagUtils
-		slot0 = slot0.hasFlag
-		slot2 = pg
-		slot2 = slot2.me
-		slot2 = slot2.ugcFuncSwitch
-		slot3 = PlayerForbidConst
-		slot3 = slot3.PLAYER_SWITCH
-		slot3 = slot3.CHANGE_PLAYER_SIGNATURE
-		slot0 = slot0(slot2, slot3)
+		slot0 = LuaUIUtils
+		slot0 = slot0.checkFeatureForbid
+		slot2 = PlayerForbidConst
+		slot2 = slot2.PLAYER_SWITCH
+		slot2 = slot2.CHANGE_PLAYER_SIGNATURE
+		slot0 = slot0(slot2)
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
@@ -284,89 +266,76 @@ slot12 = function(slot0)
 		end
 
 
-		--- BLOCK #1 18-26, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.showBubbleMessageRaw
-		slot3 = pg
-		slot3 = slot3.getGameString
-		slot5 = "PLAYER_PERMISSION_LIMITED"
-		MULTRES = slot3(slot5)
-
-		slot1(MULTRES)
-
+		--- BLOCK #1 15-15, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-		--- BLOCK #2 27-44, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.ui
-		slot3 = slot1
-		slot1 = slot1.open
-		slot4 = UIConst
-		slot4 = slot4.UI_ID_COMMON_TEXT_INPUT
-		slot5 = {}
-		slot6 = pg
-		slot6 = slot6.getGameString
-		slot8 = "EDIT_SHOW_SIGNATURE"
-		slot6 = slot6(slot8)
-		slot5.title = slot6
-		slot6 = self
-		slot6 = slot6.playerInfo
-		slot6 = slot6.showSignature
+		--- BLOCK #2 16-33, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_COMMON_TEXT_INPUT
+		slot4 = {}
+		slot5 = pg
+		slot5 = slot5.getGameString
+		slot7 = "EDIT_SHOW_SIGNATURE"
+		slot5 = slot5(slot7)
+		slot4.title = slot5
+		slot5 = self
+		slot5 = slot5.playerInfo
+		slot5 = slot5.showSignature
 		--- END OF BLOCK #2 ---
 
-		slot6 = if not slot6 then
+		slot5 = if not slot5 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 45-45, warpins: 1 ---
-		slot6 = ""
+		--- BLOCK #3 34-34, warpins: 1 ---
+		slot5 = ""
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 46-50, warpins: 2 ---
-		slot5.initialInputText = slot6
-		slot6 = SysConfigData
-		slot6 = slot6.playerSignatureMaxLen
+		--- BLOCK #4 35-39, warpins: 2 ---
+		slot4.initialInputText = slot5
+		slot5 = SysConfigData
+		slot5 = slot5.playerSignatureMaxLen
 		--- END OF BLOCK #4 ---
 
-		slot6 = if not slot6 then
+		slot5 = if not slot5 then
 		JUMP TO BLOCK #5
 		else
 		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #5 51-51, warpins: 1 ---
-		slot6 = 20
+		--- BLOCK #5 40-40, warpins: 1 ---
+		slot5 = 20
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 52-56, warpins: 2 ---
-		slot5.maxLen = slot6
+		--- BLOCK #6 41-45, warpins: 2 ---
+		slot4.maxLen = slot5
 
-		slot6 = function(slot0)
-			--- BLOCK #0 1-11, warpins: 1 ---
-			slot1 = FlagUtils
-			slot1 = slot1.hasFlag
-			slot3 = pg
-			slot3 = slot3.me
-			slot3 = slot3.ugcFuncSwitch
-			slot4 = PlayerForbidConst
-			slot4 = slot4.PLAYER_SWITCH
-			slot4 = slot4.CHANGE_PLAYER_SIGNATURE
-			slot1 = slot1(slot3, slot4)
+		slot5 = function(slot0)
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot1 = LuaUIUtils
+			slot1 = slot1.checkFeatureForbid
+			slot3 = PlayerForbidConst
+			slot3 = slot3.PLAYER_SWITCH
+			slot3 = slot3.CHANGE_PLAYER_SIGNATURE
+			slot1 = slot1(slot3)
 			--- END OF BLOCK #0 ---
 
 			slot1 = if slot1 then
@@ -376,30 +345,20 @@ slot12 = function(slot0)
 			end
 
 
-			--- BLOCK #1 12-20, warpins: 1 ---
-			slot2 = pg
-			slot2 = slot2.global
-			slot2 = slot2.showBubbleMessageRaw
-			slot4 = pg
-			slot4 = slot4.getGameString
-			slot6 = "PLAYER_PERMISSION_LIMITED"
-			MULTRES = slot4(slot6)
-
-			slot2(MULTRES)
-
+			--- BLOCK #1 9-9, warpins: 1 ---
 			--- END OF BLOCK #1 ---
 
 			UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-			--- BLOCK #2 21-30, warpins: 1 ---
-			slot2 = pg
-			slot2 = slot2.me
-			slot4 = slot2
-			slot2 = slot2.sensitiveWordsCheck
-			slot5 = slot0
+			--- BLOCK #2 10-19, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.me
+			slot3 = slot1
+			slot1 = slot1.sensitiveWordsCheck
+			slot4 = slot0
 
-			slot6 = function(slot0)
+			slot5 = function(slot0)
 				--- BLOCK #0 1-8, warpins: 1 ---
 				slot1 = pg
 				slot1 = slot1.me
@@ -417,7 +376,7 @@ slot12 = function(slot0)
 
 			end
 
-			slot7 = function()
+			slot6 = function()
 				--- BLOCK #0 1-1, warpins: 1 ---
 				return
 				--- END OF BLOCK #0 ---
@@ -426,7 +385,7 @@ slot12 = function(slot0)
 
 			end
 
-			slot2(slot4, slot5, slot6, slot7)
+			slot1(slot3, slot4, slot5, slot6)
 
 			return
 			--- END OF BLOCK #2 ---
@@ -434,7 +393,7 @@ slot12 = function(slot0)
 			FLOW; TARGET BLOCK #3
 
 
-			--- BLOCK #3 31-31, warpins: 2 ---
+			--- BLOCK #3 20-20, warpins: 2 ---
 			return
 			--- END OF BLOCK #3 ---
 
@@ -442,9 +401,9 @@ slot12 = function(slot0)
 
 		end
 
-		slot5.confirmCb = slot6
+		slot4.confirmCb = slot5
 
-		slot1(slot3, slot4, slot5)
+		slot0(slot2, slot3, slot4)
 
 		return
 		--- END OF BLOCK #6 ---
@@ -452,7 +411,7 @@ slot12 = function(slot0)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 57-57, warpins: 2 ---
+		--- BLOCK #7 46-46, warpins: 2 ---
 		return
 		--- END OF BLOCK #7 ---
 
@@ -560,7 +519,7 @@ slot12 = function(slot0)
 	slot2 = slot0.btnListenUButton
 
 	slot3 = function()
-		--- BLOCK #0 1-15, warpins: 1 ---
+		--- BLOCK #0 1-16, warpins: 1 ---
 		slot0 = string
 		slot0 = slot0.split
 		slot2 = pg
@@ -575,7 +534,25 @@ slot12 = function(slot0)
 		slot1 = slot1.PlayRecordedFile
 		slot4 = slot0[2]
 
-		slot1(slot3, slot4)
+		slot5 = function(slot0, slot1)
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot2 = pg
+			slot2 = slot2.game
+			slot2 = slot2.speech
+			slot4 = slot2
+			slot2 = slot2.onPlayFileComplete
+			slot5 = slot1
+
+			slot2(slot4, slot5)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot1(slot3, slot4, slot5)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -618,7 +595,7 @@ slot12 = function(slot0)
 	slot2 = slot0.btnVoiceNewUButton
 
 	slot3 = function()
-		--- BLOCK #0 1-19, warpins: 1 ---
+		--- BLOCK #0 1-21, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.speech
@@ -635,16 +612,110 @@ slot12 = function(slot0)
 
 		slot0(slot2)
 
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.gmeManager
-		slot2 = slot0
-		slot0 = slot0.StartRecording
-
-		slot0(slot2)
-
-		return
+		slot0 = self
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.gmeManager
+		slot3 = slot1
+		slot1 = slot1.StartRecording
+		slot1 = slot1(slot3)
 		--- END OF BLOCK #0 ---
+
+		if slot1 ~= true then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 22-23, warpins: 1 ---
+		slot1 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 24-24, warpins: 1 ---
+		slot1 = true
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 25-29, warpins: 2 ---
+		slot0.voiceRecording = slot1
+		slot0 = self
+		slot0 = slot0.voiceRecording
+		--- END OF BLOCK #3 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #4 30-33, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		--- END OF BLOCK #4 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #5 34-48, warpins: 1 ---
+		slot0 = string
+		slot0 = slot0.isNilOrEmpty
+		slot2 = pg
+		slot2 = slot2.me
+		slot2 = slot2.voiceSignature
+		slot0 = slot0(slot2)
+		slot0 = not slot0
+		slot1 = self
+		slot1 = slot1.view
+		slot1 = slot1.panelEditWidget
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "VoiceSignature"
+		--- END OF BLOCK #5 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 49-50, warpins: 1 ---
+		slot5 = 1
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 51-51, warpins: 1 ---
+		slot5 = 0
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 52-52, warpins: 2 ---
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 53-53, warpins: 3 ---
+		return
+		--- END OF BLOCK #9 ---
 
 
 
@@ -654,28 +725,65 @@ slot12 = function(slot0)
 	slot2 = slot0.btnVoiceNewUButton
 
 	slot3 = function()
-		--- BLOCK #0 1-8, warpins: 1 ---
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.voiceRecording
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 6-16, warpins: 1 ---
+		slot0 = self
+		slot1 = false
+		slot0.voiceRecording = slot1
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.gmeManager
 		slot2 = slot0
 		slot0 = slot0.StopRecording
 
-		slot3 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-			--- BLOCK #0 1-4, warpins: 1 ---
-			slot6 = self
-			slot6 = slot6.view
+		slot3 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+			--- BLOCK #0 1-18, warpins: 1 ---
+			slot8 = pg
+			slot8 = slot8.game
+			slot8 = slot8.speech
+			slot10 = slot8
+			slot8 = slot8.onRecordStopped
+			slot11 = slot0
+			slot12 = slot1
+			slot13 = slot2
+			slot14 = slot3
+			slot15 = slot4
+			slot16 = slot5
+			slot17 = slot6
+			slot18 = slot7
+
+			slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18)
+
+			slot8 = self
+			slot8 = slot8.view
 
 			--- END OF BLOCK #0 ---
 
-			slot6 = if not slot6 then
+			slot8 = if not slot8 then
 			JUMP TO BLOCK #1
 			else
 			JUMP TO BLOCK #2
 			end
 
 
-			--- BLOCK #1 5-5, warpins: 1 ---
+			--- BLOCK #1 19-19, warpins: 1 ---
 			return
 
 			--- END OF BLOCK #1 ---
@@ -683,7 +791,7 @@ slot12 = function(slot0)
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 6-7, warpins: 2 ---
+			--- BLOCK #2 20-21, warpins: 2 ---
 			--- END OF BLOCK #2 ---
 
 			slot0 = if slot0 then
@@ -693,28 +801,28 @@ slot12 = function(slot0)
 			end
 
 
-			--- BLOCK #3 8-20, warpins: 1 ---
-			slot6 = pg
-			slot6 = slot6.me
-			slot8 = slot6
-			slot6 = slot6.serverMsg
-			slot9 = "RPC_CS_SetVoiceSignature"
-			slot10 = math
-			slot10 = slot10.floor
-			slot12 = slot3 / 1000
-			slot10 = slot10(slot12)
-			slot11 = "|"
-			slot12 = slot0
-			slot10 = slot10 .. slot11 .. slot12
+			--- BLOCK #3 22-34, warpins: 1 ---
+			slot8 = pg
+			slot8 = slot8.me
+			slot10 = slot8
+			slot8 = slot8.serverMsg
+			slot11 = "RPC_CS_SetVoiceSignature"
+			slot12 = math
+			slot12 = slot12.floor
+			slot14 = slot3 / 1000
+			slot12 = slot12(slot14)
+			slot13 = "|"
+			slot14 = slot0
+			slot12 = slot12 .. slot13 .. slot14
 
-			slot6(slot8, slot9, slot10)
+			slot8(slot10, slot11, slot12)
 
 			--- END OF BLOCK #3 ---
 
 			FLOW; TARGET BLOCK #4
 
 
-			--- BLOCK #4 21-21, warpins: 2 ---
+			--- BLOCK #4 35-35, warpins: 2 ---
 			return
 			--- END OF BLOCK #4 ---
 
@@ -725,7 +833,14 @@ slot12 = function(slot0)
 		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-17, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
@@ -792,9 +907,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.initView = slot12
+slot2.initView = slot11
 
-slot12 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -876,9 +991,9 @@ slot12 = function(slot0)
 
 end
 
-slot2.refreshEditBasicBarPanel = slot12
+slot2.refreshEditBasicBarPanel = slot11
 
-slot12 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -987,9 +1102,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot2.refreshVoiceSignatureState = slot12
+slot2.refreshVoiceSignatureState = slot11
 
-slot12 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1007,7 +1122,7 @@ slot12 = function(slot0)
 
 end
 
-slot2.onDestroy = slot12
+slot2.onDestroy = slot11
 
 return slot2
 --- END OF BLOCK #0 ---

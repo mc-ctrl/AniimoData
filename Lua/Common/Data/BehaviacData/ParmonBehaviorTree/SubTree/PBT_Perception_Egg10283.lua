@@ -7,42 +7,42 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_Perception_Egg10283",
-	version = 71,
 	useForRoute = false,
-	agenttype = "CombatAgent"
+	version = 71
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "0",
 	name = "tSensorTgtId",
-	const = 0,
 	type = "int",
-	value = "0"
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
+	value = "0",
 	name = "tLeaveTimeOut",
-	const = 0,
 	type = "float",
-	value = "0"
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
+	value = "Mid",
 	name = "tSpeedRateType",
-	type = "SpeedRateType",
-	value = "Mid"
+	type = "SpeedRateType"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Mid
 slot5.const = slot6
 slot4[3] = slot5
 slot5 = {
+	value = "3.5",
 	name = "tSpeed",
-	const = 3.5,
 	type = "float",
-	value = "3.5"
+	const = 3.5
 }
 slot4[4] = slot5
 slot3.pars = slot4
@@ -56,11 +56,11 @@ slot5 = {}
 slot4.properties = slot5
 slot5 = {}
 slot6 = {
-	transition = false,
-	effector = true,
 	precondition = false,
+	transition = false,
+	id = "5",
 	class = "Effector",
-	id = "5"
+	effector = true
 }
 slot7 = {}
 slot8 = {

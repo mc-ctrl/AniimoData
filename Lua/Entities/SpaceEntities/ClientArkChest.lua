@@ -90,7 +90,7 @@ slot21 = slot22
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 79-138, warpins: 2 ---
+--- BLOCK #2 79-140, warpins: 2 ---
 slot22 = slot0.AddComponents
 slot24 = slot20
 slot25 = slot21
@@ -794,16 +794,14 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 25-37, warpins: 1 ---
+	--- BLOCK #3 25-35, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getConfigData
 	slot4 = slot4(slot6)
 	slot4 = slot4.unlockPresetDuration
-	slot5 = slot0.eModel
-	slot5 = slot5.modelView
-	slot5 = slot5.shaderView
-	slot7 = slot5
+	slot5 = ClientEffectUtils
 	slot5 = slot5.PlayPreset
+	slot7 = slot0
 	slot8 = slot3
 	slot9 = slot4
 	slot10 = false
@@ -815,7 +813,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 38-40, warpins: 2 ---
+	--- BLOCK #4 36-38, warpins: 2 ---
 	slot4 = slot0.active
 	--- END OF BLOCK #4 ---
 
@@ -826,7 +824,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 41-43, warpins: 1 ---
+	--- BLOCK #5 39-41, warpins: 1 ---
 	slot4 = slot0.visible
 	--- END OF BLOCK #5 ---
 
@@ -837,7 +835,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 44-46, warpins: 1 ---
+	--- BLOCK #6 42-44, warpins: 1 ---
 	slot4 = slot0.unlockSound
 	--- END OF BLOCK #6 ---
 
@@ -848,7 +846,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 47-50, warpins: 1 ---
+	--- BLOCK #7 45-48, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.playSoundAtSelfPos
 	slot7 = slot0.unlockSound
@@ -860,7 +858,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 51-59, warpins: 4 ---
+	--- BLOCK #8 49-57, warpins: 4 ---
 	slot6 = slot0
 	slot4 = slot0.playChestTrailEffect
 	slot7 = slot1
@@ -1932,15 +1930,7 @@ end
 slot20.on_status_changed = slot22
 
 slot22 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = slot0.eventEmitter
-	slot3 = slot1
-	slot1 = slot1.emit
-	slot4 = EventConst
-	slot4 = slot4.VIRTUAL_CHEST_DESTROY
-
-	slot1(slot3, slot4)
-
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.effectId
 	--- END OF BLOCK #0 ---
 
@@ -1951,7 +1941,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-15, warpins: 1 ---
+	--- BLOCK #1 4-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopEffectById
 	slot4 = slot0.effectId
@@ -1965,7 +1955,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-18, warpins: 2 ---
+	--- BLOCK #2 10-12, warpins: 2 ---
 	slot1 = slot0.beforeOpenEffectId
 	--- END OF BLOCK #2 ---
 
@@ -1976,7 +1966,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 13-18, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopEffectById
 	slot4 = slot0.beforeOpenEffectId
@@ -1990,11 +1980,37 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-33, warpins: 2 ---
+	--- BLOCK #4 19-27, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.playDestroyEffect
 
 	slot1(slot3)
+
+	slot1 = ClientArkChest
+	slot1 = slot1.super
+	slot1 = slot1.preDestroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.preDestroy = slot22
+
+slot22 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = slot0.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.emit
+	slot4 = EventConst
+	slot4 = slot4.VIRTUAL_CHEST_DESTROY
+
+	slot1(slot3, slot4)
 
 	slot1 = ClientArkChest
 	slot1 = slot1.super
@@ -2004,7 +2020,7 @@ slot22 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #0 ---
 
 
 

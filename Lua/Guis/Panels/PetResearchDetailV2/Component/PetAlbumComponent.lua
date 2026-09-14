@@ -1,4 +1,4 @@
---- BLOCK #0 1-65, warpins: 1 ---
+--- BLOCK #0 1-68, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,8 +30,11 @@ slot8 = slot8(slot10, slot11)
 slot9 = require
 slot11 = "Utils.ClientTextUtils"
 slot9 = slot9(slot11)
+slot10 = require
+slot12 = "Utils.ClientUtils"
+slot10 = slot10(slot12)
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -77,9 +80,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.findObjects = slot10
+slot8.findObjects = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = {}
 	slot0.needDestroySprites = slot1
@@ -177,9 +180,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.initView = slot10
+slot8.initView = slot11
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -269,9 +272,9 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.renderAlbum = slot10
+slot8.renderAlbum = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -374,36 +377,118 @@ slot10 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 3-26, warpins: 1 ---
-		slot2 = pg
-		slot2 = slot2.global
-		slot2 = slot2.mobileCameraMgr
-		slot4 = slot2
-		slot2 = slot2.GetSpriteByCompressByte
-		slot5 = slot1
-		slot2 = slot2(slot4, slot5)
-		slot3 = photoUImage
-		slot3.sprite = slot2
-		slot3 = self
-		slot3 = slot3.needDestroySprites
-		slot4 = self
-		slot4 = slot4.needDestroySprites
-		slot4 = #slot4
-		slot4 = slot4 + 1
-		slot3[slot4] = slot2
-		slot3 = self
-		slot3 = slot3.photoIdPic
-		slot4 = data
-		slot4 = slot4.photoId
-		slot3[slot4] = slot2
-		slot3 = data
-		slot3.sprite = slot2
+		--- BLOCK #1 3-8, warpins: 1 ---
+		slot2 = ClientUtils
+		slot2 = slot2.loadSpriteFromPhotoUrl
+		slot4 = slot1
+
+		slot5 = function(slot0)
+			--- BLOCK #0 1-2, warpins: 1 ---
+			--- END OF BLOCK #0 ---
+
+			slot0 = if not slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 3-3, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 4-10, warpins: 2 ---
+			slot1 = self
+			slot1 = slot1.ctrl
+			slot3 = slot1
+			slot1 = slot1.checkUIOpen
+			slot1 = slot1(slot3)
+			--- END OF BLOCK #2 ---
+
+			slot1 = if not slot1 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 11-18, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.global
+			slot1 = slot1.mobileCameraMgr
+			slot3 = slot1
+			slot1 = slot1.DestroySpriteTexture
+			slot4 = slot0
+
+			slot1(slot3, slot4)
+
+			return
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 19-41, warpins: 2 ---
+			slot1 = self
+			slot1 = slot1.needDestroySprites
+			slot2 = self
+			slot2 = slot2.needDestroySprites
+			slot2 = #slot2
+			slot2 = slot2 + 1
+			slot1[slot2] = slot0
+			slot1 = self
+			slot1 = slot1.photoIdPic
+			slot2 = data
+			slot2 = slot2.photoId
+			slot1[slot2] = slot0
+			slot1 = data
+			slot1.sprite = slot0
+			slot1 = self
+			slot1 = slot1.listUList
+			slot3 = slot1
+			slot1 = slot1.GetData
+			slot4 = button
+			slot1 = slot1(slot3, slot4)
+			slot2 = data
+			--- END OF BLOCK #4 ---
+
+			if slot1 == slot2 then
+			JUMP TO BLOCK #5
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #5 42-43, warpins: 1 ---
+			slot1 = photoUImage
+			slot1.sprite = slot0
+
+			--- END OF BLOCK #5 ---
+
+			FLOW; TARGET BLOCK #6
+
+
+			--- BLOCK #6 44-44, warpins: 2 ---
+			return
+			--- END OF BLOCK #6 ---
+
+
+
+		end
+
+		slot2(slot4, slot5)
+
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #2 27-33, warpins: 1 ---
+		--- BLOCK #2 9-15, warpins: 1 ---
 		slot2 = LoggerManager
 		slot2 = slot2.checkLogger
 		slot4 = LoggerConst
@@ -418,7 +503,7 @@ slot10 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #3 34-38, warpins: 1 ---
+		--- BLOCK #3 16-20, warpins: 1 ---
 		slot2 = logger
 		slot4 = slot2
 		slot2 = slot2.info
@@ -431,7 +516,7 @@ slot10 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 39-39, warpins: 3 ---
+		--- BLOCK #4 21-21, warpins: 3 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -546,9 +631,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot8.renderPhoto = slot10
+slot8.renderPhoto = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.petScene
@@ -565,9 +650,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onDeselectThisTab = slot10
+slot8.onDeselectThisTab = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -622,9 +707,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onDestroy = slot10
+slot8.onDestroy = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.petScene
@@ -688,9 +773,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.onSelectTopicAlbumPage = slot10
+slot8.onSelectTopicAlbumPage = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot4 = slot2
@@ -720,9 +805,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.onSelectThisPage = slot10
+slot8.onSelectThisPage = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPetPhotos
@@ -780,9 +865,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.refreshPhotoList = slot10
+slot8.refreshPhotoList = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getAlbumSprite
@@ -794,9 +879,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.getPetPhotos = slot10
+slot8.getPetPhotos = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1182,9 +1267,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.getAlbumSprite = slot10
+slot8.getAlbumSprite = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1276,9 +1361,9 @@ slot10 = function(slot0)
 
 end
 
-slot8.getServerSprites = slot10
+slot8.getServerSprites = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot2 = os
 	slot2 = slot2.date
@@ -1334,9 +1419,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.getWeeklyByTs = slot10
+slot8.getWeeklyByTs = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = {}
 
@@ -1347,9 +1432,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.getSpriteInfo = slot10
+slot8.getSpriteInfo = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1381,9 +1466,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.refreshPhoto = slot10
+slot8.refreshPhoto = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1402,31 +1487,97 @@ slot10 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #1 3-19, warpins: 1 ---
-		slot2 = pg
-		slot2 = slot2.global
-		slot2 = slot2.mobileCameraMgr
-		slot4 = slot2
-		slot2 = slot2.GetSpriteByCompressByte
-		slot5 = slot1.content
-		slot2 = slot2(slot4, slot5)
-		slot3 = self
-		slot5 = slot3
-		slot3 = slot3.refreshPhoto
-		slot6 = slot2
+		--- BLOCK #1 3-8, warpins: 1 ---
+		slot2 = ClientUtils
+		slot2 = slot2.loadSpriteFromPhotoUrl
+		slot4 = slot1
 
-		slot3(slot5, slot6)
+		slot5 = function(slot0)
+			--- BLOCK #0 1-2, warpins: 1 ---
+			--- END OF BLOCK #0 ---
 
-		slot3 = self
-		slot3 = slot3.photoPool
-		slot4 = photoId
-		slot3[slot4] = slot2
+			slot0 = if not slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 3-3, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 4-10, warpins: 2 ---
+			slot1 = self
+			slot1 = slot1.ctrl
+			slot3 = slot1
+			slot1 = slot1.checkUIOpen
+			slot1 = slot1(slot3)
+			--- END OF BLOCK #2 ---
+
+			slot1 = if not slot1 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 11-18, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.global
+			slot1 = slot1.mobileCameraMgr
+			slot3 = slot1
+			slot1 = slot1.DestroySpriteTexture
+			slot4 = slot0
+
+			slot1(slot3, slot4)
+
+			return
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 19-35, warpins: 2 ---
+			slot1 = self
+			slot3 = slot1
+			slot1 = slot1.refreshPhoto
+			slot4 = slot0
+
+			slot1(slot3, slot4)
+
+			slot1 = self
+			slot1 = slot1.photoPool
+			slot2 = photoId
+			slot1[slot2] = slot0
+			slot1 = self
+			slot1 = slot1.needDestroySprites
+			slot2 = self
+			slot2 = slot2.needDestroySprites
+			slot2 = #slot2
+			slot2 = slot2 + 1
+			slot1[slot2] = slot0
+
+			return
+			--- END OF BLOCK #4 ---
+
+
+
+		end
+
+		slot2(slot4, slot5)
+
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #2 20-26, warpins: 1 ---
+		--- BLOCK #2 9-15, warpins: 1 ---
 		slot2 = LoggerManager
 		slot2 = slot2.checkLogger
 		slot4 = LoggerConst
@@ -1441,7 +1592,7 @@ slot10 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #3 27-31, warpins: 1 ---
+		--- BLOCK #3 16-20, warpins: 1 ---
 		slot2 = logger
 		slot4 = slot2
 		slot2 = slot2.info
@@ -1454,7 +1605,7 @@ slot10 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 32-32, warpins: 3 ---
+		--- BLOCK #4 21-21, warpins: 3 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -1471,7 +1622,7 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot8.loadPhotoById = slot10
+slot8.loadPhotoById = slot11
 
 return slot8
 --- END OF BLOCK #0 ---

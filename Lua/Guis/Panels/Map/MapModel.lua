@@ -1,4 +1,4 @@
---- BLOCK #0 1-121, warpins: 1 ---
+--- BLOCK #0 1-141, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UIModel"
 slot0 = slot0(slot2)
@@ -12,80 +12,139 @@ slot3 = require
 slot5 = "Data.level_reward_linked_data"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.pet_data"
+slot6 = "Data.chest_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.gameplay_target_data"
+slot7 = "Data.drop_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.map_level_config_data"
+slot8 = "Data.pet_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.map_filtrate_config_data"
+slot9 = "Data.gameplay_target_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.default_map_mark_data"
+slot10 = "Data.map_level_config_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.LuaUIUtils"
+slot11 = "Data.map_filtrate_config_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.element_name_to_id"
+slot12 = "Data.default_map_mark_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.ClientUtils"
+slot13 = "Utils.LuaUIUtils"
 slot11 = slot11(slot13)
-slot12 = slot2.LightClass
-slot14 = "MapModel"
-slot15 = slot0
-slot12 = slot12(slot14, slot15)
+slot12 = require
+slot14 = "Data.element_name_to_id"
+slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Core.Common.Time"
+slot15 = "Utils.ClientUtils"
 slot13 = slot13(slot15)
-slot14 = require
-slot16 = "Data.map_overlap_scene"
-slot14 = slot14(slot16)
+slot14 = slot2.LightClass
+slot16 = "MapModel"
+slot17 = slot0
+slot14 = slot14(slot16, slot17)
 slot15 = require
-slot17 = "Data.scene_data"
+slot17 = "Core.Common.Time"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.npc_duel_data"
+slot18 = "Data.map_overlap_scene"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.map_block_config_data"
+slot19 = "Data.scene_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.scene_distribute_area_data"
+slot20 = "Data.npc_duel_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Guis.Utils.MapUtils"
+slot21 = "Data.map_block_config_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Data.map_area_config_data"
+slot22 = "Data.scene_distribute_area_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.teleport_mark_event_data"
+slot23 = "Guis.Utils.MapUtils"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.mark_id_to_npc_duel_id_data"
+slot24 = "Data.map_area_config_data"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Const.UIConst"
+slot25 = "Data.teleport_mark_event_data"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "GameApp.Map.MapHelper"
+slot26 = "Data.mark_id_to_npc_duel_id_data"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Common.Utils.TimeUtils"
+slot27 = "Const.UIConst"
 slot25 = slot25(slot27)
-slot26 = {
+slot26 = require
+slot28 = "GameApp.Map.MapHelper"
+slot26 = slot26(slot28)
+slot27 = require
+slot29 = "Common.Utils.TimeUtils"
+slot27 = slot27(slot29)
+slot28 = require
+slot30 = "Guis.Utils.PetResearchUtils"
+slot28 = slot28(slot30)
+slot29 = require
+slot31 = "Common.Utils.NpcDuelSharedUtils"
+slot29 = slot29(slot31)
+slot30 = {
+	IDYLL_WATER = 3003,
 	ARK = 501,
-	IDYLL = 3000,
-	IDYLL_WATER = 3003
+	IDYLL = 3000
 }
-slot12.MAPS = slot26
+slot14.MAPS = slot30
+slot30 = slot28.PET_SHOW_TAB
+slot30 = slot30.FORM
 
-slot26 = function(slot0)
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = PetResearchUtils
+	slot2 = slot2.PET_SHOW_TAB
+	slot2 = slot2.FORM
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	PET_SHOW_TAB = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot14.refreshPetShowTab = slot31
+
+slot31 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = PET_SHOW_TAB
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot14.getPetShowTab = slot31
+
+slot31 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -164,9 +223,9 @@ slot26 = function(slot0)
 
 end
 
-slot12.getCurrencyDataList = slot26
+slot14.getCurrencyDataList = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = string
 	slot2 = slot2.split
@@ -242,9 +301,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getSpawnerIdByMarkName = slot26
+slot14.getSpawnerIdByMarkName = slot31
 
-slot26 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = MapHelper
 	slot3 = slot3.getCustomMarkGenId
@@ -353,9 +412,9 @@ slot26 = function(slot0, slot1, slot2)
 
 end
 
-slot12.getCustomMarkName = slot26
+slot14.getCustomMarkName = slot31
 
-slot26 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = LevelRewardLinkedData
 	slot4 = slot4[slot2]
@@ -378,59 +437,60 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-16, warpins: 2 ---
+	--- BLOCK #2 7-17, warpins: 2 ---
 	slot5 = slot4.helpID
 	slot6 = slot4.PropertyOrNot
 	slot7 = slot4.requirePet
 	slot8 = slot4.requireSkill
 	slot9 = slot4.recommenSkill
-	slot10 = slot4.playerNum
-	slot11 = nil
-	slot12 = slot4.cratesInfoFromTarget
+	slot10 = slot4.recommendPet
+	slot11 = slot4.playerNum
+	slot12 = nil
+	slot13 = slot4.cratesInfoFromTarget
 	--- END OF BLOCK #2 ---
 
-	slot12 = if slot12 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 17-20, warpins: 1 ---
-	slot13 = GameplayTargetData
-	slot13 = slot13[slot12]
+	--- BLOCK #3 18-21, warpins: 1 ---
+	slot14 = GameplayTargetData
+	slot14 = slot14[slot13]
 	--- END OF BLOCK #3 ---
 
-	slot13 = if slot13 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 21-21, warpins: 1 ---
-	slot11 = slot13.chest
+	--- BLOCK #4 22-22, warpins: 1 ---
+	slot12 = slot14.chest
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 22-38, warpins: 3 ---
-	slot13 = pg
-	slot13 = slot13.game
-	slot13 = slot13.map
-	slot15 = slot13
-	slot13 = slot13.isPOIPopupBelongsToFightType
-	slot16 = slot1
-	slot17 = slot2
-	slot13 = slot13(slot15, slot16, slot17)
-	slot14 = slot13[1]
-	slot15 = slot13[2]
-	slot16 = slot13[3]
-	slot17 = slot13[4]
-	slot18 = slot13[5]
-	slot19 = slot13[6]
-	slot20 = 0
+	--- BLOCK #5 23-39, warpins: 3 ---
+	slot14 = pg
+	slot14 = slot14.game
+	slot14 = slot14.map
+	slot16 = slot14
+	slot14 = slot14.isPOIPopupBelongsToFightType
+	slot17 = slot1
+	slot18 = slot2
+	slot14 = slot14(slot16, slot17, slot18)
+	slot15 = slot14[1]
+	slot16 = slot14[2]
+	slot17 = slot14[3]
+	slot18 = slot14[4]
+	slot19 = slot14[5]
+	slot20 = slot14[6]
+	slot21 = 0
 	--- END OF BLOCK #5 ---
 
 	slot7 = if not slot7 then
@@ -440,7 +500,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 39-40, warpins: 1 ---
+	--- BLOCK #6 40-41, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	slot8 = if slot8 then
@@ -450,57 +510,57 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 41-46, warpins: 2 ---
-	slot20 = 1
+	--- BLOCK #7 42-47, warpins: 2 ---
+	slot21 = 1
 	slot7 = {}
-	slot21 = pairs
-	slot23 = slot4.requirePet
-	slot21, slot22, slot23 = slot21(slot23)
+	slot22 = pairs
+	slot24 = slot4.requirePet
+	slot22, slot23, slot24 = slot22(slot24)
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 47-50, warpins: 1 ---
-	slot26 = PetData
-	slot26 = slot26[slot25]
+	--- BLOCK #8 48-51, warpins: 1 ---
+	slot27 = PetData
+	slot27 = slot27[slot26]
 	--- END OF BLOCK #8 ---
 
-	slot26 = if not slot26 then
+	slot27 = if not slot27 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 51-51, warpins: 1 ---
-	slot26 = {}
+	--- BLOCK #9 52-52, warpins: 1 ---
+	slot27 = {}
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 52-57, warpins: 2 ---
-	slot27 = #slot7
-	slot27 = slot27 + 1
-	slot28 = {}
-	slot29 = slot26.iconName
-	slot28.iconName = slot29
-	slot7[slot27] = slot28
+	--- BLOCK #10 53-58, warpins: 2 ---
+	slot28 = #slot7
+	slot28 = slot28 + 1
+	slot29 = {}
+	slot30 = slot27.iconName
+	slot29.iconName = slot30
+	slot7[slot28] = slot29
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 58-59, warpins: 2 ---
+	--- BLOCK #11 59-60, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
-	for slot24, slot25 in slot21, slot22, slot23
+	for slot25, slot26 in slot22, slot23, slot24
 	LOOP BLOCK #8
 	GO OUT TO BLOCK #12
 
 
-	--- BLOCK #12 60-61, warpins: 1 ---
+	--- BLOCK #12 61-62, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
 	slot8 = if slot8 then
@@ -510,36 +570,36 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #13 62-66, warpins: 1 ---
+	--- BLOCK #13 63-67, warpins: 1 ---
 	slot8 = {}
-	slot21 = pairs
-	slot23 = slot4.requireSkill
-	slot21, slot22, slot23 = slot21(slot23)
+	slot22 = pairs
+	slot24 = slot4.requireSkill
+	slot22, slot23, slot24 = slot22(slot24)
 	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 67-71, warpins: 1 ---
-	slot26 = #slot8
-	slot26 = slot26 + 1
-	slot27 = {}
-	slot27.skillParamId = slot25
-	slot8[slot26] = slot27
+	--- BLOCK #14 68-72, warpins: 1 ---
+	slot27 = #slot8
+	slot27 = slot27 + 1
+	slot28 = {}
+	slot28.skillParamId = slot26
+	slot8[slot27] = slot28
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 72-73, warpins: 2 ---
+	--- BLOCK #15 73-74, warpins: 2 ---
 	--- END OF BLOCK #15 ---
 
-	for slot24, slot25 in slot21, slot22, slot23
+	for slot25, slot26 in slot22, slot23, slot24
 	LOOP BLOCK #14
 	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 74-75, warpins: 3 ---
+	--- BLOCK #16 75-76, warpins: 3 ---
 	--- END OF BLOCK #16 ---
 
 	if slot6 == 1 then
@@ -549,37 +609,37 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #17 76-77, warpins: 1 ---
+	--- BLOCK #17 77-78, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
-	slot14 = if slot14 then
+	slot15 = if slot15 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #18 78-79, warpins: 1 ---
+	--- BLOCK #18 79-80, warpins: 1 ---
 	--- END OF BLOCK #18 ---
 
-	slot15 = if slot15 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 80-81, warpins: 1 ---
+	--- BLOCK #19 81-82, warpins: 1 ---
 	--- END OF BLOCK #19 ---
 
-	slot16 = if not slot16 then
+	slot17 = if not slot17 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 82-83, warpins: 4 ---
+	--- BLOCK #20 83-84, warpins: 4 ---
 	--- END OF BLOCK #20 ---
 
 	slot9 = if slot9 then
@@ -589,8 +649,8 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #21 84-86, warpins: 2 ---
-	slot20 = 2
+	--- BLOCK #21 85-87, warpins: 2 ---
+	slot21 = 2
 	--- END OF BLOCK #21 ---
 
 	slot9 = if slot9 then
@@ -600,112 +660,115 @@ slot26 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #22 87-91, warpins: 1 ---
+	--- BLOCK #22 88-92, warpins: 1 ---
 	slot9 = {}
-	slot21 = pairs
-	slot23 = slot4.recommenSkill
-	slot21, slot22, slot23 = slot21(slot23)
+	slot22 = pairs
+	slot24 = slot4.recommenSkill
+	slot22, slot23, slot24 = slot22(slot24)
 	--- END OF BLOCK #22 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #23 92-96, warpins: 1 ---
-	slot26 = #slot9
-	slot26 = slot26 + 1
-	slot27 = {}
-	slot27.skillParamId = slot25
-	slot9[slot26] = slot27
+	--- BLOCK #23 93-97, warpins: 1 ---
+	slot27 = #slot9
+	slot27 = slot27 + 1
+	slot28 = {}
+	slot28.skillParamId = slot26
+	slot9[slot27] = slot28
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 97-98, warpins: 2 ---
+	--- BLOCK #24 98-99, warpins: 2 ---
 	--- END OF BLOCK #24 ---
 
-	for slot24, slot25 in slot21, slot22, slot23
+	for slot25, slot26 in slot22, slot23, slot24
 	LOOP BLOCK #23
 	GO OUT TO BLOCK #25
 
 
-	--- BLOCK #25 99-100, warpins: 3 ---
+	--- BLOCK #25 100-101, warpins: 3 ---
 	--- END OF BLOCK #25 ---
 
-	if slot20 == 0 then
+	if slot21 == 0 then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 101-110, warpins: 1 ---
-	slot21 = {}
-	slot21.helpID = slot5
-	slot21.dungenLimit = slot20
-	slot21.playerNum = slot10
-	slot21.cratesInfo = slot11
-	slot21.entityId = slot17
-	slot21.idInType = slot18
-	slot21.markConfigId = slot3
+	--- BLOCK #26 102-112, warpins: 1 ---
+	slot22 = {}
+	slot22.helpID = slot5
+	slot22.dungenLimit = slot21
+	slot22.playerNum = slot11
+	slot22.cratesInfo = slot12
+	slot22.entityId = slot18
+	slot22.idInType = slot19
+	slot22.markConfigId = slot3
+	slot22.recommendPet = slot10
 
-	return slot21
+	return slot22
 
 	--- END OF BLOCK #26 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #27 111-112, warpins: 1 ---
+	--- BLOCK #27 113-114, warpins: 1 ---
 	--- END OF BLOCK #27 ---
 
-	if slot20 == 1 then
+	if slot21 == 1 then
 	JUMP TO BLOCK #28
 	else
 	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #28 113-124, warpins: 1 ---
-	slot21 = {}
-	slot21.helpID = slot5
-	slot21.dungenLimit = slot20
-	slot21.playerNum = slot10
-	slot21.cratesInfo = slot11
-	slot21.requirePet = slot7
-	slot21.requireSkill = slot8
-	slot21.entityId = slot17
-	slot21.idInType = slot18
-	slot21.markConfigId = slot3
+	--- BLOCK #28 115-127, warpins: 1 ---
+	slot22 = {}
+	slot22.helpID = slot5
+	slot22.dungenLimit = slot21
+	slot22.playerNum = slot11
+	slot22.cratesInfo = slot12
+	slot22.requirePet = slot7
+	slot22.requireSkill = slot8
+	slot22.entityId = slot18
+	slot22.idInType = slot19
+	slot22.markConfigId = slot3
+	slot22.recommendPet = slot10
 
-	return slot21
+	return slot22
 
 	--- END OF BLOCK #28 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #29 125-137, warpins: 1 ---
-	slot21 = {}
-	slot21.helpID = slot5
-	slot21.dungenLimit = slot20
-	slot21.playerNum = slot10
-	slot21.cratesInfo = slot11
-	slot21.maxLevelRequire = slot15
-	slot21.propertyPrefer = slot16
-	slot21.extraProperties = slot19
-	slot21.recommenSkill = slot9
-	slot21.entityId = slot17
-	slot21.idInType = slot18
-	slot21.markConfigId = slot3
+	--- BLOCK #29 128-141, warpins: 1 ---
+	slot22 = {}
+	slot22.helpID = slot5
+	slot22.dungenLimit = slot21
+	slot22.playerNum = slot11
+	slot22.cratesInfo = slot12
+	slot22.maxLevelRequire = slot16
+	slot22.propertyPrefer = slot17
+	slot22.extraProperties = slot20
+	slot22.recommenSkill = slot9
+	slot22.entityId = slot18
+	slot22.idInType = slot19
+	slot22.markConfigId = slot3
+	slot22.recommendPet = slot10
 
-	return slot21
+	return slot22
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 138-138, warpins: 3 ---
+	--- BLOCK #30 142-142, warpins: 3 ---
 	return
 	--- END OF BLOCK #30 ---
 
@@ -713,9 +776,9 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.getLocationInfo = slot26
+slot14.getLocationInfo = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -778,9 +841,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.hasSpecialPetInArea = slot26
+slot14.hasSpecialPetInArea = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-53, warpins: 1 ---
 	slot2 = {}
 	slot3 = {}
@@ -1179,9 +1242,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getWeatherData = slot26
+slot14.getWeatherData = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pairs
 	slot4 = UIConst
@@ -1229,9 +1292,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getWeatherStateName = slot26
+slot14.getWeatherStateName = slot31
 
-slot26 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = {}
 	slot4 = MapLevelConfigData
@@ -1474,9 +1537,9 @@ slot26 = function(slot0, slot1, slot2)
 
 end
 
-slot12.getLayerData = slot26
+slot14.getLayerData = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -1614,9 +1677,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getSortTagListData = slot26
+slot14.getSortTagListData = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -1766,9 +1829,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getSortNormalListData = slot26
+slot14.getSortNormalListData = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = DefaultMapMarkData
 	slot2 = slot2[slot1]
@@ -1826,9 +1889,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getNameByMarkType = slot26
+slot14.getNameByMarkType = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = DefaultMapMarkData
 	slot2 = slot2[slot1]
@@ -1886,9 +1949,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getIconByMarkType = slot26
+slot14.getIconByMarkType = slot31
 
-slot26 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = {}
 	slot4 = pairs
@@ -2062,9 +2125,9 @@ slot26 = function(slot0, slot1, slot2)
 
 end
 
-slot12.getSearchListData = slot26
+slot14.getSearchListData = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -2236,9 +2299,305 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getPlayerLevelPeriodRewards = slot26
+slot14.getPlayerLevelPeriodRewards = slot31
 
-slot26 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.useLimitMap
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-15, warpins: 2 ---
+	slot3 = LevelRewardLinkedData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-16, warpins: 1 ---
+	slot4 = slot3.chestId
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 19-20, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot4 == 0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 21-22, warpins: 2 ---
+	slot5 = nil
+
+	return slot5
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 23-26, warpins: 2 ---
+	slot5 = ChestData
+	slot5 = slot5[slot4]
+	--- END OF BLOCK #9 ---
+
+	slot6 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 27-27, warpins: 1 ---
+	slot6 = slot5.reward
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 28-29, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 30-30, warpins: 1 ---
+	slot7 = slot5.needItem
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 31-32, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 33-34, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	if slot6 ~= 0 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 35-36, warpins: 1 ---
+	--- END OF BLOCK #15 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 37-38, warpins: 3 ---
+	slot8 = nil
+
+	return slot8
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 39-42, warpins: 2 ---
+	slot8 = DropData
+	slot8 = slot8[slot6]
+	--- END OF BLOCK #17 ---
+
+	slot9 = if slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 43-43, warpins: 1 ---
+	slot9 = slot8.limitId
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 44-47, warpins: 2 ---
+	slot10 = slot7[1]
+	slot11 = slot7[2]
+	--- END OF BLOCK #19 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #20 48-49, warpins: 1 ---
+	--- END OF BLOCK #20 ---
+
+	if slot9 ~= 0 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #21 50-51, warpins: 1 ---
+	--- END OF BLOCK #21 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 52-53, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 54-55, warpins: 4 ---
+	slot12 = nil
+
+	return slot12
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 56-61, warpins: 2 ---
+	slot14 = slot2
+	slot12 = slot2.getTotalCount
+	slot15 = slot9
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #24 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 62-64, warpins: 1 ---
+	slot13 = 0
+	--- END OF BLOCK #25 ---
+
+	if slot12 <= slot13 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 65-66, warpins: 2 ---
+	slot13 = nil
+
+	return slot13
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 67-79, warpins: 2 ---
+	slot13 = {}
+	slot13.chestId = slot4
+	slot13.rewardId = slot6
+	slot13.limitId = slot9
+	slot13.costItemId = slot10
+	slot13.costItemNum = slot11
+	slot16 = slot2
+	slot14 = slot2.getRemainCount
+	slot17 = slot9
+	slot14 = slot14(slot16, slot17)
+	slot13.remainCount = slot14
+	slot13.totalCount = slot12
+
+	return slot13
+	--- END OF BLOCK #27 ---
+
+
+
+end
+
+slot14.getBossChallengeInfo = slot31
+
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = pairs
 	slot6 = slot1
@@ -2517,9 +2876,9 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.findPosMark = slot26
+slot14.findPosMark = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = SceneData
@@ -2879,9 +3238,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getQuickTeleportData = slot26
+slot14.getQuickTeleportData = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = MapHelper
 	slot2 = slot2.getRootScene
@@ -3066,9 +3425,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getAllSmallAreaInfo = slot26
+slot14.getAllSmallAreaInfo = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3154,102 +3513,162 @@ slot26 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 23-31, warpins: 2 ---
-	slot5 = slot3.helpId
-	slot4.helpID = slot5
-	slot5 = 2
-	slot4.dungenLimit = slot5
-	slot5 = slot3.recommendedLevel
-	slot4.maxLevelRequire = slot5
-	slot5 = slot3.recommendedElements
+	--- BLOCK #8 23-38, warpins: 2 ---
+	slot6 = slot3.helpId
+	slot4.helpID = slot6
+	slot6 = 2
+	slot4.dungenLimit = slot6
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.npcDuel
+	slot8 = slot6
+	slot6 = slot6.getNpcDuelLevelByDuelId
+	slot9 = slot2
+	slot10 = slot5
+	slot6 = slot6(slot8, slot9, slot10)
+	slot4.maxLevelRequire = slot6
+	slot6 = slot3.recommendedElements
 	--- END OF BLOCK #8 ---
 
-	slot5 = if not slot5 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 32-32, warpins: 1 ---
-	slot5 = {}
+	--- BLOCK #9 39-39, warpins: 1 ---
+	slot6 = {}
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 33-37, warpins: 2 ---
-	slot6 = {}
-	slot7 = pairs
-	slot9 = slot5
-	slot7, slot8, slot9 = slot7(slot9)
+	--- BLOCK #10 40-44, warpins: 2 ---
+	slot7 = {}
+	slot8 = pairs
+	slot10 = slot6
+	slot8, slot9, slot10 = slot8(slot10)
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #11 38-41, warpins: 1 ---
-	slot12 = ElementNameToId
-	slot12 = slot12[slot11]
+	--- BLOCK #11 45-48, warpins: 1 ---
+	slot13 = ElementNameToId
+	slot13 = slot13[slot12]
 	--- END OF BLOCK #11 ---
 
-	slot12 = if slot12 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 42-44, warpins: 1 ---
-	slot13 = {}
-	slot13.elementId = slot12
-	slot6[slot10] = slot13
+	--- BLOCK #12 49-51, warpins: 1 ---
+	slot14 = {}
+	slot14.elementId = slot13
+	slot7[slot11] = slot14
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 45-46, warpins: 3 ---
+	--- BLOCK #13 52-53, warpins: 3 ---
 	--- END OF BLOCK #13 ---
 
-	for slot10, slot11 in slot7, slot8, slot9
+	for slot11, slot12 in slot8, slot9, slot10
 	LOOP BLOCK #11
 	GO OUT TO BLOCK #14
 
 
-	--- BLOCK #14 47-52, warpins: 1 ---
-	slot4.propertyPrefer = slot6
-	slot7 = next
-	slot9 = slot4
-	slot7 = slot7(slot9)
-
+	--- BLOCK #14 54-64, warpins: 1 ---
+	slot4.propertyPrefer = slot7
+	slot8 = NpcDuelSharedUtils
+	slot10 = slot8
+	slot8 = slot8.getCurrentVariantStartCondition
+	slot11 = pg
+	slot11 = slot11.me
+	slot12 = slot2
+	slot8 = slot8(slot10, slot11, slot12)
+	slot9 = slot8.startCondition
 	--- END OF BLOCK #14 ---
 
-	slot7 = if not slot7 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #15 53-53, warpins: 1 ---
-	return
+	--- BLOCK #15 65-68, warpins: 1 ---
+	slot9 = slot8.startCondition
+	slot10 = 0
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	if slot9 > slot10 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 54-54, warpins: 2 ---
-	return slot4
+	--- BLOCK #16 69-85, warpins: 1 ---
+	slot9 = LuaUIUtils
+	slot9 = slot9.getConditionUnlockDesc
+	slot11 = slot8.startCondition
+	slot9 = slot9(slot11)
+	slot10 = slot8.startCondition
+	slot4.startCondition = slot10
+	slot10 = slot8.result
+	slot4.startConditionMet = slot10
+	slot10 = pg
+	slot10 = slot10.getFormatText
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "NPCDUEL_PET_LOCKED"
+	slot12 = slot12(slot14)
+	slot13 = slot9
+	slot10 = slot10(slot12, slot13)
+	slot4.startConditionDesc = slot10
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 86-90, warpins: 3 ---
+	slot9 = next
+	slot11 = slot4
+	slot9 = slot9(slot11)
+
+	--- END OF BLOCK #17 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 91-91, warpins: 1 ---
+	return
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 92-92, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot12.getDuelMarkInfo = slot26
+slot14.getDuelMarkInfo = slot31
 
-slot26 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3376,9 +3795,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot12.getDuelMarkRewards = slot26
+slot14.getDuelMarkRewards = slot31
 
-return slot12
+return slot14
 --- END OF BLOCK #0 ---
 
 

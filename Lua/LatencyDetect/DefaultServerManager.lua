@@ -463,31 +463,9 @@ end
 slot11._onLatencyConnect = slot12
 
 slot12 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot0.defaultClusterName
-	--- END OF BLOCK #0 ---
-
-	if slot3 == slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot3 = nil
-	slot0.defaultClusterName = slot3
-	slot3 = nil
-	slot0.defaultClusterId = slot3
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #0 1-1, warpins: 1 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -571,76 +549,21 @@ slot12 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 33-38, warpins: 1 ---
+	--- BLOCK #6 33-37, warpins: 1 ---
 	slot0.defaultClusterName = slot1
 	slot4 = slot0.clusterName2GateClient
 	slot4 = slot4[slot1]
 	slot4 = slot4.clusterId
 	slot0.defaultClusterId = slot4
+
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 39-43, warpins: 1 ---
-	slot4 = slot0.clusterName2GateClient
-	slot5 = slot0.defaultClusterName
-	slot4 = slot4[slot5]
-	--- END OF BLOCK #7 ---
-
-	if slot4 ~= nil then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #8 44-49, warpins: 1 ---
-	slot4 = slot0.clusterName2GateClient
-	slot5 = slot0.defaultClusterName
-	slot4 = slot4[slot5]
-	slot4 = slot4.delta
-	--- END OF BLOCK #8 ---
-
-	if slot4 ~= nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 50-58, warpins: 1 ---
-	slot4 = slot0.clusterName2GateClient
-	slot5 = slot0.defaultClusterName
-	slot4 = slot4[slot5]
-	slot4 = slot4.delta
-	slot5 = slot0.clusterName2GateClient
-	slot5 = slot5[slot1]
-	slot5 = slot5.delta
-	--- END OF BLOCK #9 ---
-
-	if slot5 < slot4 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 59-63, warpins: 1 ---
-	slot0.defaultClusterName = slot1
-	slot4 = slot0.clusterName2GateClient
-	slot4 = slot4[slot1]
-	slot4 = slot4.clusterId
-	slot0.defaultClusterId = slot4
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 64-64, warpins: 5 ---
+	--- BLOCK #7 38-38, warpins: 2 ---
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -655,10 +578,21 @@ slot12 = function(slot0)
 	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 5-10, warpins: 1 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot6 = slot5.client
+	--- END OF BLOCK #1 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-13, warpins: 1 ---
 	slot6 = slot5.client
 	slot8 = slot6
 	slot6 = slot6.close
@@ -667,62 +601,62 @@ slot12 = function(slot0)
 
 	slot6 = nil
 	slot5.client = slot6
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-12, warpins: 2 ---
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 3 ---
+	--- END OF BLOCK #3 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
-
-
-	--- BLOCK #3 13-15, warpins: 1 ---
-	slot1 = slot0.defaultClusterId
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
+	GO OUT TO BLOCK #4
 
 
 	--- BLOCK #4 16-18, warpins: 1 ---
-	slot1 = slot0.defaultClusterName
+	slot1 = slot0.defaultClusterId
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 19-28, warpins: 1 ---
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot1 = slot0.defaultClusterName
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-31, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.login
 	slot1 = slot1.loginServerComponent
 	slot3 = slot1
-	slot1 = slot1.forceSwitchServer
+	slot1 = slot1.updateRecommendServer
 	slot4 = slot0.defaultClusterId
 	slot5 = slot0.defaultClusterName
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 29-29, warpins: 3 ---
-	return
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 32-32, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 

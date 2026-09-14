@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -27,21 +27,16 @@ slot8 = require
 slot10 = "Common.Const.BehaviorXConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.ClientSwitch"
+slot11 = "SDK.SDKLoginConfig"
 slot9 = slot9(slot11)
 slot10 = pg
-slot11 = CS
-slot11 = slot11.FunPlus
-slot11 = slot11.WorldX
-slot11 = slot11.Utils
-slot11 = slot11.LuaUtils
-slot11 = slot11.GetUnityTimes
-slot12 = {}
+slot11 = {}
 
-slot13 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = ClientSwitch
-	slot0 = slot0.EnableSDKLogin
+slot12 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = SDKLoginConfig
+	slot0 = slot0.isEnabled
+	slot0 = slot0()
 	--- END OF BLOCK #0 ---
 
 	slot0 = if not slot0 then
@@ -51,7 +46,7 @@ slot13 = function()
 	end
 
 
-	--- BLOCK #1 5-9, warpins: 1 ---
+	--- BLOCK #1 6-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.platform
@@ -64,7 +59,7 @@ slot13 = function()
 	end
 
 
-	--- BLOCK #2 10-15, warpins: 1 ---
+	--- BLOCK #2 11-16, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.platform
@@ -78,7 +73,7 @@ slot13 = function()
 	end
 
 
-	--- BLOCK #3 16-21, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.platform
@@ -92,7 +87,7 @@ slot13 = function()
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-27, warpins: 4 ---
+	--- BLOCK #4 23-28, warpins: 4 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.platform
@@ -106,7 +101,7 @@ slot13 = function()
 	end
 
 
-	--- BLOCK #5 28-35, warpins: 1 ---
+	--- BLOCK #5 29-36, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.platform
@@ -122,7 +117,7 @@ slot13 = function()
 	end
 
 
-	--- BLOCK #6 36-38, warpins: 1 ---
+	--- BLOCK #6 37-39, warpins: 1 ---
 	slot0 = require
 	slot2 = "SDK.Platform.UIBridge.PlatformUIBridgeLoader"
 
@@ -133,15 +128,56 @@ slot13 = function()
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 39-39, warpins: 3 ---
-	return
+	--- BLOCK #7 40-45, warpins: 3 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.platform
+	slot0 = slot0.shouldLoadDiscordBridge
 	--- END OF BLOCK #7 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 46-53, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.platform
+	slot2 = slot0
+	slot0 = slot0.shouldLoadDiscordBridge
+	slot0 = slot0(slot2)
+	--- END OF BLOCK #8 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 54-56, warpins: 1 ---
+	slot0 = require
+	slot2 = "SDK.Discord.UIBridge.DiscordUIBridgeLoader"
+
+	slot0(slot2)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 57-57, warpins: 3 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot14 = function()
+slot13 = function()
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot0 = pg
 	slot1 = GameApp
@@ -171,45 +207,70 @@ slot14 = function()
 
 end
 
-slot12.main = slot14
+slot11.main = slot13
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-30, warpins: 1 ---
-	slot1 = Vector3
-	slot1 = slot1.checkCache
-
-	slot1()
-
-	slot1 = CallbackHandlerNoGC
-	slot1 = slot1.checkAutoDisposeCache
-
-	slot1()
-
+slot13 = function()
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot0 = Time
 	slot1 = Time
-	slot1.unityDeltaTime = slot0
+	slot1 = slot1.getMillisecondUTC
+	slot1 = slot1()
+	slot0.millisecondCache = slot1
+	slot0 = Time
 	slot1 = Time
-	slot2 = Time
-	slot3 = Time
-	slot4 = Time
-	slot5 = Time
-	slot6 = Time
-	slot7 = GetUnityTimes
-	slot7, slot8, slot9, slot10, slot11, slot12 = slot7()
-	slot6.timeScale = slot12
-	slot5.frameCount = slot11
-	slot4.realtimeSinceStartup = slot10
-	slot3.time = slot9
-	slot2.unscaledDeltaTime = slot8
-	slot1.deltaTime = slot7
+	slot1 = slot1.millisecondCache
+	slot1 = slot1 * 0.001
+	slot0.secondCache = slot1
+	slot0 = Time
 	slot1 = Time
-	slot2 = Time
-	slot2 = slot2.frameCount
-	slot1.unityFrameCount = slot2
-	slot1 = GlobalData
-	slot1 = slot1.Space
+	slot1 = slot1.getTickSecond
+	slot1 = slot1()
+	slot0.realSecondCache = slot1
+
+	return
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+
+
+end
+
+slot11.updateTimeCache = slot13
+
+slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-30, warpins: 1 ---
+	slot7 = Vector3
+	slot7 = slot7.checkCache
+
+	slot7()
+
+	slot7 = Time
+	slot7.deltaTime = slot0
+	slot7 = Time
+	slot7.unscaledDeltaTime = slot1
+	slot7 = Time
+	slot7.time = slot2
+	slot7 = Time
+	slot7.unscaledTime = slot3
+	slot7 = Time
+	slot7.realtimeSinceStartup = slot4
+	slot7 = Time
+	slot7.frameCount = slot5
+	slot7 = Time
+	slot7.timeScale = slot6
+	slot7 = Time
+	slot8 = Time
+	slot8 = slot8.frameCount
+	slot7.unityFrameCount = slot8
+	slot7 = Time
+	slot8 = Time
+	slot8 = slot8.luaFrameCount
+	slot8 = slot8 + 1
+	slot7.luaFrameCount = slot8
+	slot7 = GlobalData
+	slot7 = slot7.Space
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -217,29 +278,23 @@ slot14 = function(slot0)
 
 
 	--- BLOCK #1 31-35, warpins: 1 ---
-	slot1 = GlobalData
-	slot1 = slot1.Space
-	slot3 = slot1
-	slot1 = slot1.tickClientTime
+	slot7 = GlobalData
+	slot7 = slot7.Space
+	slot9 = slot7
+	slot7 = slot7.tickClientTime
 
-	slot1(slot3)
+	slot7(slot9)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 36-46, warpins: 2 ---
-	slot1 = Time
-	slot2 = Time
-	slot2 = slot2.getMillisecondUTC
-	slot2 = slot2()
-	slot1.millisecondCache = slot2
-	slot1 = Time
-	slot2 = Time
-	slot2 = slot2.millisecondCache
-	slot2 = slot2 * 0.001
-	slot1.secondCache = slot2
+	--- BLOCK #2 36-39, warpins: 2 ---
+	slot7 = _M
+	slot7 = slot7.updateTimeCache
+
+	slot7()
 
 	return
 	--- END OF BLOCK #2 ---
@@ -248,20 +303,26 @@ slot14 = function(slot0)
 
 end
 
-slot12.updateTime = slot14
+slot11.updateTime = slot13
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1.updateTime
-	slot3 = slot0
+slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot7 = _M
+	slot7 = slot7.updateTime
+	slot9 = slot0
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot3
+	slot13 = slot4
+	slot14 = slot5
+	slot15 = slot6
 
-	slot1(slot3)
+	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
 
-	slot1 = Client
-	slot1 = slot1.update
+	slot7 = Client
+	slot7 = slot7.update
 
-	slot1()
+	slot7()
 
 	return
 	--- END OF BLOCK #0 ---
@@ -270,9 +331,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.tick = slot14
+slot11.tick = slot13
 
-slot14 = function()
+slot13 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -288,9 +349,9 @@ slot14 = function()
 
 end
 
-slot12.beforeAnimation = slot14
+slot11.beforeAnimation = slot13
 
-slot14 = function()
+slot13 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = Time
 	slot0 = slot0.secondCache
@@ -302,9 +363,9 @@ slot14 = function()
 
 end
 
-slot12.getServerTime = slot14
+slot11.getServerTime = slot13
 
-slot14 = function()
+slot13 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = Client
 	slot0 = slot0.dispose
@@ -323,9 +384,9 @@ slot14 = function()
 
 end
 
-slot12.dispose = slot14
+slot11.dispose = slot13
 
-return slot12
+return slot11
 --- END OF BLOCK #0 ---
 
 

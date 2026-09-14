@@ -1,4 +1,4 @@
---- BLOCK #0 1-56, warpins: 1 ---
+--- BLOCK #0 1-63, warpins: 1 ---
 slot0 = require
 slot2 = "phonestcore"
 slot0 = slot0(slot2)
@@ -133,10 +133,10 @@ slot1.getServerDelta = slot2
 
 slot2 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot0 = pgUtils
-	slot0 = slot0.GetCurrentFrameCount
+	slot0 = Time
+	slot0 = slot0.frameCount
 
-	return slot0()
+	return slot0
 	--- END OF BLOCK #0 ---
 
 
@@ -222,12 +222,17 @@ slot1.millisecondCache = slot2
 slot2 = slot1.millisecondCache
 slot2 = slot2 * 0.001
 slot1.secondCache = slot2
+slot2 = slot1.getTickSecond
+slot2 = slot2()
+slot1.realSecondCache = slot2
 slot2 = 0
 slot1.deltaTime = slot2
 slot2 = 0
 slot1.unscaledDeltaTime = slot2
 slot2 = 0
 slot1.time = slot2
+slot2 = 0
+slot1.unscaledTime = slot2
 slot2 = 0
 slot1.realtimeSinceStartup = slot2
 slot2 = 0
@@ -236,6 +241,8 @@ slot2 = 0
 slot1.unityFrameCount = slot2
 slot2 = 1
 slot1.timeScale = slot2
+slot2 = 0
+slot1.luaFrameCount = slot2
 
 return slot1
 --- END OF BLOCK #0 ---

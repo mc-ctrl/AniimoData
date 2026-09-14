@@ -1,4 +1,4 @@
---- BLOCK #0 1-85, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -21,37 +21,28 @@ slot5 = require
 slot7 = "Utils.LuaUIUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.RedDotConst"
+slot8 = "Common.Utils.Utils"
 slot6 = slot6(slot8)
-slot7 = require
-slot9 = "Utils.RedDotUtils"
-slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Common.Utils.Utils"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Common.Const.Const"
-slot9 = slot9(slot11)
-slot10 = slot2.LightClass
-slot12 = "HomePlantsManualCtrl"
-slot13 = slot3
-slot10 = slot10(slot12, slot13)
-slot11 = {}
-slot12 = slot1.ON_HOME_PLANT_PROCESS_REWARD_CHANGED
-slot13 = {
+slot7 = slot2.LightClass
+slot9 = "HomePlantsManualCtrl"
+slot10 = slot3
+slot7 = slot7(slot9, slot10)
+slot8 = {}
+slot9 = slot1.ON_HOME_PLANT_PROCESS_REWARD_CHANGED
+slot10 = {
 	"onProcessRewardChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.ON_HOME_PLANT_SINGLE_REWARD_CHANGED
-slot13 = {
+slot8[slot9] = slot10
+slot9 = slot1.ON_HOME_PLANT_SINGLE_REWARD_CHANGED
+slot10 = {
 	"onSingleRewardChanged",
 	true
 }
-slot11[slot12] = slot13
-slot10.messages = slot11
+slot8[slot9] = slot10
+slot7.messages = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -67,9 +58,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onCreate = slot11
+slot7.onCreate = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -202,7 +193,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 67-83, warpins: 2 ---
+		--- BLOCK #5 67-70, warpins: 2 ---
 		slot9 = function()
 			--- BLOCK #0 1-9, warpins: 1 ---
 			slot0 = pg
@@ -223,68 +214,6 @@ slot11 = function(slot0)
 		end
 
 		slot0.luaClick = slot9
-		slot9 = string
-		slot9 = slot9.format
-		slot11 = RedDotConst
-		slot11 = slot11.RedDotPath
-		slot11 = slot11.HOMELAND_PLANT_MANUAL_PLANT_REWARD
-		slot12 = slot2.id
-		slot9 = slot9(slot11, slot12)
-		slot10 = RedDotUtils
-		slot10 = slot10.setPreViewRedDot
-		slot12 = slot9
-		slot13 = slot0
-
-		slot14 = function()
-			--- BLOCK #0 1-9, warpins: 1 ---
-			slot0 = LuaUIUtils
-			slot0 = slot0.HomePlantManual_HasPlantRewardCanGet
-			slot2 = data
-			slot2 = slot2.formulaId
-			slot3 = data
-			slot3 = slot3.numMax
-			slot0 = slot0(slot2, slot3)
-			--- END OF BLOCK #0 ---
-
-			if slot0 == true then
-			JUMP TO BLOCK #1
-			else
-			JUMP TO BLOCK #2
-			end
-
-
-			--- BLOCK #1 10-14, warpins: 1 ---
-			slot0 = RedDotConst
-			slot0 = slot0.RedDotStyle
-			slot0 = slot0.REWARD
-
-			return slot0
-
-			--- END OF BLOCK #1 ---
-
-			UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-			--- BLOCK #2 15-18, warpins: 1 ---
-			slot0 = RedDotConst
-			slot0 = slot0.RedDotStyle
-			slot0 = slot0.NONE
-
-			return slot0
-			--- END OF BLOCK #2 ---
-
-			FLOW; TARGET BLOCK #3
-
-
-			--- BLOCK #3 19-19, warpins: 2 ---
-			return
-			--- END OF BLOCK #3 ---
-
-
-
-		end
-
-		slot10(slot12, slot13, slot14)
 
 		return
 		--- END OF BLOCK #5 ---
@@ -292,7 +221,7 @@ slot11 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 84-84, warpins: 2 ---
+		--- BLOCK #6 71-71, warpins: 2 ---
 		return
 		--- END OF BLOCK #6 ---
 
@@ -488,9 +417,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.addListener = slot11
+slot7.addListener = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -635,9 +564,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10._computePreferredRewardIndex0 = slot11
+slot7._computePreferredRewardIndex0 = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -891,9 +820,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._onFocusCursorMovedForRewardList = slot11
+slot7._onFocusCursorMovedForRewardList = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -940,9 +869,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onDestroy = slot11
+slot7.onDestroy = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-33, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -1035,9 +964,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onOpen = slot11
+slot7.onOpen = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1046,9 +975,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onShow = slot11
+slot7.onShow = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1057,9 +986,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onHide = slot11
+slot7.onHide = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnArrow1UButton
@@ -1125,7 +1054,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-37, warpins: 2 ---
+	--- BLOCK #6 25-34, warpins: 2 ---
 	slot1(slot3, slot4)
 
 	slot1 = slot0.totalPage
@@ -1133,183 +1062,96 @@ slot11 = function(slot0)
 	slot2 = slot0.curPageIndex
 	slot2 = slot2 + 1
 	slot0.nextPage = slot2
-	slot2 = RedDotConst
-	slot2 = slot2.RedDotStyle
-	slot2 = slot2.NONE
-	slot3 = slot0.nextPage
-	slot4 = slot1
-	slot5 = 1
+	slot2 = slot0.nextPage
+	slot3 = slot1
+	slot4 = 1
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 38-44, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.checkPageHasReward
-	slot10 = slot0.allPageData
-	slot10 = slot10[slot6]
-	slot7 = slot7(slot9, slot10)
+	--- BLOCK #7 35-41, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.checkPageHasReward
+	slot9 = slot0.allPageData
+	slot9 = slot9[slot5]
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #7 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 45-49, warpins: 1 ---
-	slot0.nextPage = slot6
-	slot7 = RedDotConst
-	slot7 = slot7.RedDotStyle
-	slot2 = slot7.REWARD
+	--- BLOCK #8 42-43, warpins: 1 ---
+	slot0.nextPage = slot5
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 50-50, warpins: 1 ---
+	--- BLOCK #9 44-44, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	for slot6=slot3, slot4, slot5
+	for slot5=slot2, slot3, slot4
 	LOOP BLOCK #7
 	GO OUT TO BLOCK #10
 
-	--- BLOCK #10 51-60, warpins: 2 ---
-	slot3 = slot0.curPageIndex
-	slot3 = slot3 - 1
-	slot0.prePage = slot3
-	slot3 = RedDotConst
-	slot3 = slot3.RedDotStyle
-	slot3 = slot3.NONE
-	slot4 = slot0.prePage
-	slot5 = 0
-	slot6 = -1
+	--- BLOCK #10 45-51, warpins: 2 ---
+	slot2 = slot0.curPageIndex
+	slot2 = slot2 - 1
+	slot0.prePage = slot2
+	slot2 = slot0.prePage
+	slot3 = 0
+	slot4 = -1
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 61-67, warpins: 2 ---
-	slot10 = slot0
-	slot8 = slot0.checkPageHasReward
-	slot11 = slot0.allPageData
-	slot11 = slot11[slot7]
-	slot8 = slot8(slot10, slot11)
+	--- BLOCK #11 52-58, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.checkPageHasReward
+	slot9 = slot0.allPageData
+	slot9 = slot9[slot5]
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #11 ---
 
-	slot8 = if slot8 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 68-72, warpins: 1 ---
-	slot0.prePage = slot7
-	slot8 = RedDotConst
-	slot8 = slot8.RedDotStyle
-	slot3 = slot8.REWARD
+	--- BLOCK #12 59-60, warpins: 1 ---
+	slot0.prePage = slot5
+
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 73-73, warpins: 1 ---
+	--- BLOCK #13 61-61, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
-	for slot7=slot4, slot5, slot6
+	for slot5=slot2, slot3, slot4
 	LOOP BLOCK #11
 	GO OUT TO BLOCK #14
 
-	--- BLOCK #14 74-85, warpins: 2 ---
-	slot4 = RedDotUtils
-	slot4 = slot4.setRedDot
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotPath
-	slot6 = slot6.HOMELAND_PLANT_MANUAL_ARROW1
-	slot7 = slot0.view
-	slot7 = slot7.btnArrow1UButton
-	slot8 = RedDotConst
-	slot8 = slot8.RedDotStyle
-	slot8 = slot8.REWARD
-	--- END OF BLOCK #14 ---
-
-	if slot3 ~= slot8 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 86-87, warpins: 1 ---
-	slot8 = false
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #16 88-88, warpins: 1 ---
-	slot8 = true
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 89-102, warpins: 2 ---
-	slot9 = slot3
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	slot4 = RedDotUtils
-	slot4 = slot4.setRedDot
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotPath
-	slot6 = slot6.HOMELAND_PLANT_MANUAL_ARROW2
-	slot7 = slot0.view
-	slot7 = slot7.btnArrow2UButton
-	slot8 = RedDotConst
-	slot8 = slot8.RedDotStyle
-	slot8 = slot8.REWARD
-	--- END OF BLOCK #17 ---
-
-	if slot2 ~= slot8 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 103-104, warpins: 1 ---
-	slot8 = false
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #19 105-105, warpins: 1 ---
-	slot8 = true
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 106-108, warpins: 2 ---
-	slot9 = slot2
-
-	slot4(slot6, slot7, slot8, slot9)
-
+	--- BLOCK #14 62-62, warpins: 2 ---
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot10.refreshArrowAndRedStyle = slot11
+slot7.refreshArrowTarget = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot1
@@ -1362,9 +1204,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.checkPageHasReward = slot11
+slot7.checkPageHasReward = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-44, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.getPlantBookSum
@@ -1425,9 +1267,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.refreshProcessReward = slot11
+slot7.refreshProcessReward = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = 0
 	slot3 = ipairs
@@ -1492,9 +1334,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.refreshProcessIndex = slot11
+slot7.refreshProcessIndex = slot8
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1569,7 +1411,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 43-64, warpins: 3 ---
+	--- BLOCK #5 43-56, warpins: 3 ---
 	slot8 = LuaUIUtils
 	slot8 = slot8.getRewardItemByDropId
 	slot10 = slot3.rewardId
@@ -1582,96 +1424,55 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	slot10(slot12, slot13)
 
-	slot10 = string
-	slot10 = slot10.format
-	slot12 = RedDotConst
-	slot12 = slot12.RedDotPath
-	slot12 = slot12.HOMELAND_PLANT_MANUAL_SLIDER_REWARD
-	slot13 = slot3.id
-	slot10 = slot10(slot12, slot13)
-	slot11 = false
-	slot12 = slot0.curProcessNum
-	slot13 = slot3.numMax
+	slot10 = slot0.curProcessNum
+	slot11 = slot3.numMax
 	--- END OF BLOCK #5 ---
 
-	if slot13 <= slot12 then
+	if slot11 <= slot10 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 65-67, warpins: 1 ---
-	slot12 = slot3.isGet
+	--- BLOCK #6 57-59, warpins: 1 ---
+	slot10 = slot3.isGet
 	--- END OF BLOCK #6 ---
 
-	if slot12 == false then
+	if slot10 ~= false then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 68-70, warpins: 1 ---
-	slot12 = RedDotConst
-	slot12 = slot12.RedDotStyle
-	slot11 = slot12.REWARD
+	--- BLOCK #7 60-61, warpins: 2 ---
+	slot10 = false
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 71-79, warpins: 3 ---
-	slot12 = RedDotUtils
-	slot12 = slot12.setRedDot
-	slot14 = slot10
-	slot15 = slot1
-	slot16 = RedDotConst
-	slot16 = slot16.RedDotStyle
-	slot16 = slot16.REWARD
+	--- BLOCK #8 62-62, warpins: 1 ---
+	slot10 = true
+
 	--- END OF BLOCK #8 ---
 
-	if slot11 ~= slot16 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 80-81, warpins: 1 ---
-	slot16 = false
+	--- BLOCK #9 63-64, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 82-82, warpins: 1 ---
-	slot16 = true
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 83-89, warpins: 2 ---
-	slot17 = slot11
-
-	slot12(slot14, slot15, slot16, slot17)
-
-	slot12 = RedDotConst
-	slot12 = slot12.RedDotStyle
-	slot12 = slot12.REWARD
-
-	--- END OF BLOCK #11 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #12
+	slot10 = if slot10 then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #12 90-92, warpins: 1 ---
-	slot12 = function()
+	--- BLOCK #10 65-67, warpins: 1 ---
+	slot11 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -1686,77 +1487,77 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot9.extraFunc = slot12
+	slot9.extraFunc = slot11
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 68-69, warpins: 1 ---
+	slot11 = nil
+	slot9.extraFunc = slot11
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 70-74, warpins: 2 ---
+	slot11 = 0
+	slot12 = slot0.curProcessNum
+	slot13 = slot3.numMax
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	if slot13 <= slot12 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #13 93-94, warpins: 1 ---
-	slot12 = nil
-	slot9.extraFunc = slot12
+	--- BLOCK #13 75-77, warpins: 1 ---
+	slot12 = slot3.isGet
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	if slot12 == true then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #14 95-99, warpins: 2 ---
-	slot12 = 0
-	slot13 = slot0.curProcessNum
-	slot14 = slot3.numMax
+	--- BLOCK #14 78-79, warpins: 1 ---
+	slot11 = 1
 	--- END OF BLOCK #14 ---
 
-	if slot14 <= slot13 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #18
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 100-102, warpins: 1 ---
-	slot13 = slot3.isGet
+	--- BLOCK #15 80-80, warpins: 1 ---
+	slot11 = 2
 	--- END OF BLOCK #15 ---
 
-	if slot13 == true then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 103-104, warpins: 1 ---
-	slot12 = 1
-	--- END OF BLOCK #16 ---
+	--- BLOCK #16 81-88, warpins: 3 ---
+	slot9.state = slot11
+	slot12 = LuaUIUtils
+	slot12 = slot12.renderRewardItem
+	slot14 = slot5
+	slot15 = slot9
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #17 105-105, warpins: 1 ---
-	slot12 = 2
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 106-113, warpins: 3 ---
-	slot9.state = slot12
-	slot13 = LuaUIUtils
-	slot13 = slot13.renderRewardItem
-	slot15 = slot5
-	slot16 = slot9
-
-	slot13(slot15, slot16)
+	slot12(slot14, slot15)
 
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot10.renderOneReward = slot11
+slot7.renderOneReward = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1793,9 +1594,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.reqGetReward = slot11
+slot7.reqGetReward = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 0
 	--- END OF BLOCK #0 ---
@@ -1843,7 +1644,7 @@ slot11 = function(slot0, slot1)
 	slot2(slot4)
 
 	slot4 = slot0
-	slot2 = slot0.refreshArrowAndRedStyle
+	slot2 = slot0.refreshArrowTarget
 
 	slot2(slot4)
 
@@ -1854,9 +1655,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.gotoPage = slot11
+slot7.gotoPage = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.allPageData
 	slot2 = slot2[slot1]
@@ -1875,9 +1676,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.refreshPlantList = slot11
+slot7.refreshPlantList = slot8
 
-slot11 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1966,9 +1767,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.setImage = slot11
+slot7.setImage = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2014,9 +1815,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onProcessRewardChanged = slot11
+slot7.onProcessRewardChanged = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.gotoPage
@@ -2031,9 +1832,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onSingleRewardChanged = slot11
+slot7.onSingleRewardChanged = slot8
 
-return slot10
+return slot7
 --- END OF BLOCK #0 ---
 
 

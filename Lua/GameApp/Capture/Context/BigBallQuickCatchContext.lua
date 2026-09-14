@@ -244,16 +244,17 @@ end
 slot13.throwBreak = slot14
 
 slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.ForceChangeToUpperState
-	slot5 = CharacterUpperState
-	slot5 = slot5.EMPTY
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = CharacterUpperState
+	slot6 = slot6.EMPTY
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -289,7 +290,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-22, warpins: 2 ---
+	--- BLOCK #2 9-21, warpins: 2 ---
 	slot2 = slot0.player
 	slot4 = slot2
 	slot2 = slot2.faceToTarget
@@ -299,7 +300,6 @@ slot14 = function(slot0, slot1)
 
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = slot0.ballData
 	slot3 = slot3.animType
 	slot2.ThrowAnimType = slot3
@@ -313,7 +313,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 23-26, warpins: 1 ---
+	--- BLOCK #3 22-25, warpins: 1 ---
 	slot2 = slot0.target
 	slot3 = Time
 	slot3 = slot3.secondCache
@@ -323,7 +323,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-28, warpins: 2 ---
+	--- BLOCK #4 26-27, warpins: 2 ---
 	slot2 = true
 
 	return slot2

@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-96, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -33,21 +33,27 @@ slot10 = require
 slot12 = "GameApp.Map.MapHelper"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.ClientTextUtils"
+slot13 = "Guis.Utils.MapUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.map_mark_resource_data"
+slot14 = "Utils.ClientTextUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "GameApp.GrabEgg.GrabEggMapMarkUtils"
+slot15 = "Data.map_mark_resource_data"
 slot13 = slot13(slot15)
-slot14 = slot0.LightClass
-slot16 = "MarkBubbleComponent"
-slot17 = slot5
-slot14 = slot14(slot16, slot17)
+slot14 = require
+slot16 = "GameApp.GrabEgg.GrabEggMapMarkUtils"
+slot14 = slot14(slot16)
+slot15 = require
+slot17 = "Guis.Utils.MapMarkPrefabPoolManager"
+slot15 = slot15(slot17)
+slot16 = slot0.LightClass
+slot18 = "MarkBubbleComponent"
+slot19 = slot5
+slot16 = slot16(slot18, slot19)
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-89, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-86, warpins: 1 ---
 	slot1 = 0.9
 	slot0.SCALE_COE = slot1
 	slot1 = Screen
@@ -85,9 +91,6 @@ slot15 = function(slot0)
 	slot1 = slot0.ctrl
 	slot1 = slot1.tempMarkPointData
 	slot0.tempMarkPointData = slot1
-	slot1 = slot0.ctrl
-	slot1 = slot1.miniMapComponent
-	slot0.miniMapComponent = slot1
 	slot1 = slot0.view
 	slot1 = slot1.mineMarkTrans
 	slot0.mineMark = slot1
@@ -147,9 +150,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.findObjects = slot15
+slot16.findObjects = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -182,9 +185,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.initView = slot15
+slot16.initView = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -248,9 +251,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.tick = slot15
+slot16.tick = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -385,63 +388,63 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 57-61, warpins: 4 ---
-	slot1 = slot0.miniMapComponent
-	slot2 = pairs
-	slot4 = slot0.sceneMarkPointData
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #10 57-60, warpins: 4 ---
+	slot1 = pairs
+	slot3 = slot0.sceneMarkPointData
+	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #11 62-65, warpins: 1 ---
-	slot7 = slot0.markCaches
-	slot7 = slot7[slot5]
+	--- BLOCK #11 61-64, warpins: 1 ---
+	slot6 = slot0.markCaches
+	slot6 = slot6[slot4]
 	--- END OF BLOCK #11 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #12 66-70, warpins: 1 ---
-	slot7 = DefaultMapMarkData
-	slot8 = slot6.markConfigId
-	slot7 = slot7[slot8]
+	--- BLOCK #12 65-69, warpins: 1 ---
+	slot6 = DefaultMapMarkData
+	slot7 = slot5.markConfigId
+	slot6 = slot6[slot7]
 	--- END OF BLOCK #12 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 71-76, warpins: 1 ---
-	slot7 = DefaultMapMarkData
-	slot8 = slot6.markConfigId
-	slot7 = slot7[slot8]
-	slot7 = slot7.globalBubble
+	--- BLOCK #13 70-75, warpins: 1 ---
+	slot6 = DefaultMapMarkData
+	slot7 = slot5.markConfigId
+	slot6 = slot6[slot7]
+	slot6 = slot6.globalBubble
 	--- END OF BLOCK #13 ---
 
-	if slot7 ~= 1 then
+	if slot6 ~= 1 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 77-82, warpins: 2 ---
-	slot9 = slot1
-	slot7 = slot1.checkTrackMarkExists
-	slot10 = slot5
-	slot7 = slot7(slot9, slot10)
+	--- BLOCK #14 76-82, warpins: 2 ---
+	slot6 = slot0.ctrl
+	slot8 = slot6
+	slot6 = slot6._checkTrackMarkExists
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #14 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #23
@@ -449,14 +452,14 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #15 83-89, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.isValidMark
-	slot10 = slot6.markType
-	slot11 = slot5
-	slot7 = slot7(slot9, slot10, slot11)
+	slot8 = slot0
+	slot6 = slot0.isValidMark
+	slot9 = slot5.markType
+	slot10 = slot4
+	slot6 = slot6(slot8, slot9, slot10)
 	--- END OF BLOCK #15 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #23
@@ -464,23 +467,23 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #16 90-105, warpins: 1 ---
-	slot7 = {}
-	slot8 = slot0.markCaches
-	slot8 = slot8[slot5]
-	slot8 = slot8.anchoredPositionX
-	slot7[1] = slot8
-	slot8 = slot0.markCaches
-	slot8 = slot8[slot5]
-	slot8 = slot8.anchoredPositionY
-	slot7[2] = slot8
-	slot10 = slot0
-	slot8 = slot0.isOutOfViewPort
-	slot11 = slot7[1]
-	slot12 = slot7[2]
-	slot8 = slot8(slot10, slot11, slot12)
+	slot6 = {}
+	slot7 = slot0.markCaches
+	slot7 = slot7[slot4]
+	slot7 = slot7.anchoredPositionX
+	slot6[1] = slot7
+	slot7 = slot0.markCaches
+	slot7 = slot7[slot4]
+	slot7 = slot7.anchoredPositionY
+	slot6[2] = slot7
+	slot9 = slot0
+	slot7 = slot0.isOutOfViewPort
+	slot10 = slot6[1]
+	slot11 = slot6[2]
+	slot7 = slot7(slot9, slot10, slot11)
 	--- END OF BLOCK #16 ---
 
-	slot8 = if slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #20
@@ -488,11 +491,11 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #17 106-109, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot8 = slot8[slot5]
+	slot7 = slot0.bubbleMarks
+	slot7 = slot7[slot4]
 	--- END OF BLOCK #17 ---
 
-	slot8 = if not slot8 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
@@ -500,23 +503,23 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #18 110-126, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot9 = {}
-	slot9.pos = slot7
-	slot10 = slot6.markType
-	slot9.markType = slot10
-	slot8[slot5] = slot9
-	slot10 = slot0
-	slot8 = slot0.onBubbleMarksAdded
-	slot11 = slot5
-	slot12 = {}
-	slot12.pos = slot7
-	slot13 = slot6.markType
-	slot12.markType = slot13
-	slot13 = slot6.type
-	slot12.type = slot13
+	slot7 = slot0.bubbleMarks
+	slot8 = {}
+	slot8.pos = slot6
+	slot9 = slot5.markType
+	slot8.markType = slot9
+	slot7[slot4] = slot8
+	slot9 = slot0
+	slot7 = slot0.onBubbleMarksAdded
+	slot10 = slot4
+	slot11 = {}
+	slot11.pos = slot6
+	slot12 = slot5.markType
+	slot11.markType = slot12
+	slot12 = slot5.type
+	slot11.type = slot12
 
-	slot8(slot10, slot11, slot12)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #18 ---
 
@@ -524,20 +527,20 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #19 127-130, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot8 = slot8[slot5]
-	slot8.pos = slot7
+	slot7 = slot0.bubbleMarks
+	slot7 = slot7[slot4]
+	slot7.pos = slot6
 	--- END OF BLOCK #19 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #20 131-134, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot8 = slot8[slot5]
+	slot7 = slot0.bubbleMarks
+	slot7 = slot7[slot4]
 	--- END OF BLOCK #20 ---
 
-	slot8 = if slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
@@ -545,11 +548,11 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #21 135-138, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.onBubbleMarksDeleted
-	slot11 = slot5
+	slot9 = slot0
+	slot7 = slot0.onBubbleMarksDeleted
+	slot10 = slot4
 
-	slot8(slot10, slot11)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #21 ---
 
@@ -557,20 +560,20 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #22 139-142, warpins: 2 ---
-	slot8 = slot0.bubbleMarks
-	slot9 = nil
-	slot8[slot5] = slot9
+	slot7 = slot0.bubbleMarks
+	slot8 = nil
+	slot7[slot4] = slot8
 	--- END OF BLOCK #22 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #23 143-146, warpins: 3 ---
-	slot7 = slot0.bubbleMarks
-	slot7 = slot7[slot5]
+	slot6 = slot0.bubbleMarks
+	slot6 = slot6[slot4]
 	--- END OF BLOCK #23 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
@@ -578,11 +581,11 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #24 147-150, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.onBubbleMarksDeleted
-	slot10 = slot5
+	slot8 = slot0
+	slot6 = slot0.onBubbleMarksDeleted
+	slot9 = slot4
 
-	slot7(slot9, slot10)
+	slot6(slot8, slot9)
 
 	--- END OF BLOCK #24 ---
 
@@ -590,9 +593,9 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #25 151-153, warpins: 2 ---
-	slot7 = slot0.bubbleMarks
-	slot8 = nil
-	slot7[slot5] = slot8
+	slot6 = slot0.bubbleMarks
+	slot7 = nil
+	slot6[slot4] = slot7
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
@@ -601,26 +604,26 @@ slot15 = function(slot0)
 	--- BLOCK #26 154-155, warpins: 5 ---
 	--- END OF BLOCK #26 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
+	for slot4, slot5 in slot1, slot2, slot3
 	LOOP BLOCK #11
 	GO OUT TO BLOCK #27
 
 
 	--- BLOCK #27 156-159, warpins: 1 ---
-	slot2 = pairs
-	slot4 = slot0.tempMarkPointData
-	slot2, slot3, slot4 = slot2(slot4)
+	slot1 = pairs
+	slot3 = slot0.tempMarkPointData
+	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #27 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
 	--- BLOCK #28 160-163, warpins: 1 ---
-	slot7 = slot0.markCaches
-	slot7 = slot7[slot5]
+	slot6 = slot0.markCaches
+	slot6 = slot6[slot4]
 	--- END OF BLOCK #28 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #29
 	else
 	JUMP TO BLOCK #40
@@ -628,12 +631,12 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #29 164-168, warpins: 1 ---
-	slot7 = DefaultMapMarkData
-	slot8 = slot6.markConfigId
-	slot7 = slot7[slot8]
+	slot6 = DefaultMapMarkData
+	slot7 = slot5.markConfigId
+	slot6 = slot6[slot7]
 	--- END OF BLOCK #29 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
@@ -641,193 +644,194 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #30 169-174, warpins: 1 ---
-	slot7 = DefaultMapMarkData
-	slot8 = slot6.markConfigId
-	slot7 = slot7[slot8]
-	slot7 = slot7.globalBubble
+	slot6 = DefaultMapMarkData
+	slot7 = slot5.markConfigId
+	slot6 = slot6[slot7]
+	slot6 = slot6.globalBubble
 	--- END OF BLOCK #30 ---
 
-	if slot7 ~= 1 then
+	if slot6 ~= 1 then
 	JUMP TO BLOCK #31
 	else
 	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #31 175-180, warpins: 2 ---
-	slot9 = slot1
-	slot7 = slot1.checkTrackMarkExists
-	slot10 = slot5
-	slot7 = slot7(slot9, slot10)
+	--- BLOCK #31 175-181, warpins: 2 ---
+	slot6 = slot0.ctrl
+	slot8 = slot6
+	slot6 = slot6._checkTrackMarkExists
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #31 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #32 181-187, warpins: 2 ---
-	slot9 = slot0
-	slot7 = slot0.isValidMark
-	slot10 = slot6.markType
-	slot11 = slot5
-	slot7 = slot7(slot9, slot10, slot11)
+	--- BLOCK #32 182-188, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.isValidMark
+	slot9 = slot5.markType
+	slot10 = slot4
+	slot6 = slot6(slot8, slot9, slot10)
 	--- END OF BLOCK #32 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #33
 	else
 	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #33 188-203, warpins: 1 ---
-	slot7 = {}
-	slot8 = slot0.markCaches
-	slot8 = slot8[slot5]
-	slot8 = slot8.anchoredPositionX
-	slot7[1] = slot8
-	slot8 = slot0.markCaches
-	slot8 = slot8[slot5]
-	slot8 = slot8.anchoredPositionY
-	slot7[2] = slot8
-	slot10 = slot0
-	slot8 = slot0.isOutOfViewPort
-	slot11 = slot7[1]
-	slot12 = slot7[2]
-	slot8 = slot8(slot10, slot11, slot12)
+	--- BLOCK #33 189-204, warpins: 1 ---
+	slot6 = {}
+	slot7 = slot0.markCaches
+	slot7 = slot7[slot4]
+	slot7 = slot7.anchoredPositionX
+	slot6[1] = slot7
+	slot7 = slot0.markCaches
+	slot7 = slot7[slot4]
+	slot7 = slot7.anchoredPositionY
+	slot6[2] = slot7
+	slot9 = slot0
+	slot7 = slot0.isOutOfViewPort
+	slot10 = slot6[1]
+	slot11 = slot6[2]
+	slot7 = slot7(slot9, slot10, slot11)
 	--- END OF BLOCK #33 ---
 
-	slot8 = if slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #34
 	else
 	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #34 204-207, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot8 = slot8[slot5]
+	--- BLOCK #34 205-208, warpins: 1 ---
+	slot7 = slot0.bubbleMarks
+	slot7 = slot7[slot4]
 	--- END OF BLOCK #34 ---
 
-	slot8 = if not slot8 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #35
 	else
 	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #35 208-224, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot9 = {}
-	slot9.pos = slot7
-	slot10 = slot6.markType
-	slot9.markType = slot10
-	slot8[slot5] = slot9
-	slot10 = slot0
-	slot8 = slot0.onBubbleMarksAdded
-	slot11 = slot5
-	slot12 = {}
-	slot12.pos = slot7
-	slot13 = slot6.markType
-	slot12.markType = slot13
-	slot13 = slot6.type
-	slot12.type = slot13
+	--- BLOCK #35 209-225, warpins: 1 ---
+	slot7 = slot0.bubbleMarks
+	slot8 = {}
+	slot8.pos = slot6
+	slot9 = slot5.markType
+	slot8.markType = slot9
+	slot7[slot4] = slot8
+	slot9 = slot0
+	slot7 = slot0.onBubbleMarksAdded
+	slot10 = slot4
+	slot11 = {}
+	slot11.pos = slot6
+	slot12 = slot5.markType
+	slot11.markType = slot12
+	slot12 = slot5.type
+	slot11.type = slot12
 
-	slot8(slot10, slot11, slot12)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #35 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #36 225-228, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot8 = slot8[slot5]
-	slot8.pos = slot7
+	--- BLOCK #36 226-229, warpins: 1 ---
+	slot7 = slot0.bubbleMarks
+	slot7 = slot7[slot4]
+	slot7.pos = slot6
 	--- END OF BLOCK #36 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #37 229-232, warpins: 1 ---
-	slot8 = slot0.bubbleMarks
-	slot8 = slot8[slot5]
+	--- BLOCK #37 230-233, warpins: 1 ---
+	slot7 = slot0.bubbleMarks
+	slot7 = slot7[slot4]
 	--- END OF BLOCK #37 ---
 
-	slot8 = if slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #38
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #38 233-236, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.onBubbleMarksDeleted
-	slot11 = slot5
+	--- BLOCK #38 234-237, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.onBubbleMarksDeleted
+	slot10 = slot4
 
-	slot8(slot10, slot11)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 237-240, warpins: 2 ---
-	slot8 = slot0.bubbleMarks
-	slot9 = nil
-	slot8[slot5] = slot9
+	--- BLOCK #39 238-241, warpins: 2 ---
+	slot7 = slot0.bubbleMarks
+	slot8 = nil
+	slot7[slot4] = slot8
 	--- END OF BLOCK #39 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #40 241-244, warpins: 3 ---
-	slot7 = slot0.bubbleMarks
-	slot7 = slot7[slot5]
+	--- BLOCK #40 242-245, warpins: 3 ---
+	slot6 = slot0.bubbleMarks
+	slot6 = slot6[slot4]
 	--- END OF BLOCK #40 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #41
 	else
 	JUMP TO BLOCK #42
 	end
 
 
-	--- BLOCK #41 245-248, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.onBubbleMarksDeleted
-	slot10 = slot5
+	--- BLOCK #41 246-249, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.onBubbleMarksDeleted
+	slot9 = slot4
 
-	slot7(slot9, slot10)
+	slot6(slot8, slot9)
 
 	--- END OF BLOCK #41 ---
 
 	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 249-251, warpins: 2 ---
-	slot7 = slot0.bubbleMarks
-	slot8 = nil
-	slot7[slot5] = slot8
+	--- BLOCK #42 250-252, warpins: 2 ---
+	slot6 = slot0.bubbleMarks
+	slot7 = nil
+	slot6[slot4] = slot7
 
 	--- END OF BLOCK #42 ---
 
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 252-253, warpins: 5 ---
+	--- BLOCK #43 253-254, warpins: 5 ---
 	--- END OF BLOCK #43 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
+	for slot4, slot5 in slot1, slot2, slot3
 	LOOP BLOCK #28
 	GO OUT TO BLOCK #44
 
 
-	--- BLOCK #44 254-254, warpins: 1 ---
+	--- BLOCK #44 255-255, warpins: 1 ---
 	return
 	--- END OF BLOCK #44 ---
 
@@ -835,9 +839,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.updateBubbleMarksTableData = slot15
+slot16.updateBubbleMarksTableData = slot17
 
-slot15 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot3 = true
 
@@ -848,9 +852,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.isValidMark = slot15
+slot16.isValidMark = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.bubbleMarksObjCaches
@@ -966,9 +970,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.updateBubbleMarksObjCaches = slot15
+slot16.updateBubbleMarksObjCaches = slot17
 
-slot15 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0.objPool
 	slot5 = slot3
@@ -1184,9 +1188,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.onBubbleMarksAdded = slot15
+slot16.onBubbleMarksAdded = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.bubbleMarksObjCaches
 	slot2 = slot2[slot1]
@@ -1199,34 +1203,36 @@ slot15 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-9, warpins: 1 ---
-	slot2 = slot0.bubbleMarksObjCaches
-	slot2 = slot2[slot1]
-	slot2 = slot2.innerMark
+	--- BLOCK #1 5-15, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0._clearBubbleCommonIcon
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0._clearTeamTrackBadge
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot3 = slot2.innerMark
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 10-20, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._clearTeamTrackBadge
-	slot5 = slot1
+	--- BLOCK #2 16-20, warpins: 1 ---
+	slot3 = slot0.view
+	slot5 = slot3
+	slot3 = slot3.destroyInstance
+	slot6 = slot2.innerMark
 
-	slot2(slot4, slot5)
-
-	slot2 = slot0.view
-	slot4 = slot2
-	slot2 = slot2.destroyInstance
-	slot5 = slot0.bubbleMarksObjCaches
-	slot5 = slot5[slot1]
-	slot5 = slot5.innerMark
-
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
 	--- END OF BLOCK #2 ---
 
@@ -1234,12 +1240,12 @@ slot15 = function(slot0, slot1)
 
 
 	--- BLOCK #3 21-28, warpins: 3 ---
-	slot2 = slot0.objPool
-	slot4 = slot2
-	slot2 = slot2.recycleToPool
-	slot5 = slot1
+	slot3 = slot0.objPool
+	slot5 = slot3
+	slot3 = slot3.recycleToPool
+	slot6 = slot1
 
-	slot6 = function()
+	slot7 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.bubbleMarksObjCaches
@@ -1254,7 +1260,7 @@ slot15 = function(slot0, slot1)
 
 	end
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -1263,9 +1269,441 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onBubbleMarksDeleted = slot15
+slot16.onBubbleMarksDeleted = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = slot0.bubbleMarksObjCaches
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #2 6-9, warpins: 1 ---
+	slot4.commonIconUrl = slot3
+	slot5 = slot4.commonIconLease
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 10-14, warpins: 1 ---
+	slot5 = NotNil
+	slot7 = slot4.commonIconObj
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 15-21, warpins: 1 ---
+	slot5 = slot4.commonIconObj
+	slot7 = slot5
+	slot5 = slot5.GetComponent
+	slot8 = "UImage"
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 1 ---
+	slot6 = ""
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 2 ---
+	slot5.url = slot6
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #7 25-35, warpins: 1 ---
+	slot5 = MapMarkPrefabPoolManager
+	slot7 = slot5
+	slot5 = slot5.Release
+	slot8 = slot4.commonIconLease
+	slot9 = slot4
+	slot10 = true
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot5 = nil
+	slot4.commonIconLease = slot5
+	slot5 = nil
+	slot4.commonIconObj = slot5
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 36-38, warpins: 2 ---
+	slot5 = slot4.commonIconRequest
+	--- END OF BLOCK #8 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-39, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #10 40-42, warpins: 1 ---
+	slot5 = slot4.commonIconGeneration
+	--- END OF BLOCK #10 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 43-43, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 44-61, warpins: 2 ---
+	slot5 = slot5 + 1
+	slot4.commonIconGeneration = slot5
+	slot5 = slot4.commonIconGeneration
+	slot6 = MapMarkPrefabPoolManager
+	slot8 = slot6
+	slot6 = slot6.Acquire
+	slot9 = AddressDataConst
+	slot9 = slot9.UI_MARK_NODE_MARK_COMMON_ICON
+	slot10 = slot4
+	slot11 = slot5
+	slot12 = slot2
+
+	slot13 = function(slot0, slot1)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot2 = cache
+		slot3 = nil
+		slot2.commonIconRequest = slot3
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-10, warpins: 1 ---
+		slot2 = IsNil
+		slot4 = slot0
+		slot2 = slot2(slot4)
+
+		--- END OF BLOCK #1 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 11-11, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 12-18, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.bubbleMarksObjCaches
+		slot3 = key
+		slot2 = slot2[slot3]
+		slot3 = cache
+		--- END OF BLOCK #3 ---
+
+		if slot2 == slot3 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 19-23, warpins: 1 ---
+		slot2 = cache
+		slot2 = slot2.commonIconGeneration
+		slot3 = generation
+		--- END OF BLOCK #4 ---
+
+		if slot2 ~= slot3 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 24-30, warpins: 2 ---
+		slot2 = MapMarkPrefabPoolManager
+		slot4 = slot2
+		slot2 = slot2.Release
+		slot5 = slot1
+		slot6 = cache
+
+		slot2(slot4, slot5, slot6)
+
+		return
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 31-42, warpins: 2 ---
+		slot2 = cache
+		slot2.commonIconLease = slot1
+		slot2 = cache
+		slot2.commonIconObj = slot0
+		slot4 = slot0
+		slot2 = slot0.GetComponent
+		slot5 = "UImage"
+		slot2 = slot2(slot4, slot5)
+		slot3 = cache
+		slot3 = slot3.commonIconUrl
+		--- END OF BLOCK #6 ---
+
+		slot3 = if not slot3 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 43-43, warpins: 1 ---
+		slot3 = ""
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 44-45, warpins: 2 ---
+		slot2.url = slot3
+
+		return
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot14 = MapMarkPrefabPoolManager
+	slot14 = slot14.OwnerTag
+	slot14 = slot14.BIG_MAP_BUBBLE_COMMON_ICON
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	--- END OF BLOCK #12 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 62-64, warpins: 1 ---
+	slot7 = slot6.completed
+	--- END OF BLOCK #13 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 65-65, warpins: 1 ---
+	slot4.commonIconRequest = slot6
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 66-67, warpins: 3 ---
+	return
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 68-68, warpins: 2 ---
+	return
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 69-69, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 70-70, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot16._bindBubbleCommonIcon = slot17
+
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0.bubbleMarksObjCaches
+	slot3 = slot3[slot1]
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot4 = slot3.commonIconGeneration
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-14, warpins: 2 ---
+	slot4 = slot4 + 1
+	slot3.commonIconGeneration = slot4
+	slot4 = slot3.commonIconRequest
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-22, warpins: 1 ---
+	slot4 = MapMarkPrefabPoolManager
+	slot6 = slot4
+	slot4 = slot4.CancelRequest
+	slot7 = slot3.commonIconRequest
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = nil
+	slot3.commonIconRequest = slot4
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-25, warpins: 2 ---
+	slot4 = slot3.commonIconLease
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-32, warpins: 1 ---
+	slot4 = MapMarkPrefabPoolManager
+	slot6 = slot4
+	slot4 = slot4.Release
+	slot7 = slot3.commonIconLease
+	slot8 = slot3
+	slot9 = slot2
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-39, warpins: 2 ---
+	slot4 = nil
+	slot3.commonIconLease = slot4
+	slot4 = nil
+	slot3.commonIconObj = slot4
+	slot4 = nil
+	slot3.commonIconUrl = slot4
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot16._clearBubbleCommonIcon = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = math
 	slot1 = slot1.maxFloat
@@ -1449,9 +1887,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.showOrHideQuestMarkBubbles = slot15
+slot16.showOrHideQuestMarkBubbles = slot17
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot17 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1541,9 +1979,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.renderMark = slot15
+slot16.renderMark = slot17
 
-slot15 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot3 = Vector2
 	slot5 = 0.5
@@ -1732,26 +2170,21 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 117-130, warpins: 1 ---
-	slot11 = slot0.view
-	slot13 = slot11
-	slot11 = slot11.addPrefabWithPathSync
-	slot14 = slot7
-	slot15 = AddressDataConst
-	slot15 = slot15.UI_MARK_NODE_MARK_COMMON_ICON
-	slot11 = slot11(slot13, slot14, slot15)
-	slot12 = slot11.gameObject
-	slot14 = slot12
-	slot12 = slot12.GetComponent
-	slot15 = "UImage"
-	slot12 = slot12(slot14, slot15)
-	slot12.url = slot10
+	--- BLOCK #10 117-123, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0._bindBubbleCommonIcon
+	slot14 = slot2
+	slot15 = slot7
+	slot16 = slot10
+
+	slot11(slot13, slot14, slot15, slot16)
+
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #11 131-137, warpins: 1 ---
+	--- BLOCK #11 124-130, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
@@ -1766,7 +2199,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #12 138-142, warpins: 1 ---
+	--- BLOCK #12 131-135, warpins: 1 ---
 	slot11 = slot5.markStatus
 	slot12 = Const
 	slot12 = slot12.MAP_MARK_STATUS_LOCKED
@@ -1779,7 +2212,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 143-179, warpins: 1 ---
+	--- BLOCK #13 136-172, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -1818,10 +2251,10 @@ slot15 = function(slot0, slot1, slot2)
 	slot13.url = slot14
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #14 180-214, warpins: 1 ---
+	--- BLOCK #14 173-207, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -1858,10 +2291,10 @@ slot15 = function(slot0, slot1, slot2)
 	slot13.url = slot14
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #15 215-221, warpins: 1 ---
+	--- BLOCK #15 208-214, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
@@ -1876,7 +2309,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #16 222-226, warpins: 1 ---
+	--- BLOCK #16 215-219, warpins: 1 ---
 	slot11 = slot5.markStatus
 	slot12 = Const
 	slot12 = slot12.MAP_MARK_STATUS_LOCKED
@@ -1889,7 +2322,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #17 227-263, warpins: 1 ---
+	--- BLOCK #17 220-256, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -1928,10 +2361,10 @@ slot15 = function(slot0, slot1, slot2)
 	slot13.url = slot14
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #18 264-298, warpins: 1 ---
+	--- BLOCK #18 257-291, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -1968,10 +2401,10 @@ slot15 = function(slot0, slot1, slot2)
 	slot13.url = slot14
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #19 299-305, warpins: 1 ---
+	--- BLOCK #19 292-298, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
@@ -1986,26 +2419,21 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #20 306-319, warpins: 1 ---
-	slot11 = slot0.view
-	slot13 = slot11
-	slot11 = slot11.addPrefabWithPathSync
-	slot14 = slot7
-	slot15 = AddressDataConst
-	slot15 = slot15.UI_MARK_NODE_MARK_COMMON_ICON
-	slot11 = slot11(slot13, slot14, slot15)
-	slot12 = slot11.gameObject
-	slot14 = slot12
-	slot12 = slot12.GetComponent
-	slot15 = "UImage"
-	slot12 = slot12(slot14, slot15)
-	slot12.url = slot10
+	--- BLOCK #20 299-305, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0._bindBubbleCommonIcon
+	slot14 = slot2
+	slot15 = slot7
+	slot16 = slot10
+
+	slot11(slot13, slot14, slot15, slot16)
+
 	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #21 320-326, warpins: 1 ---
+	--- BLOCK #21 306-312, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
@@ -2020,7 +2448,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #22 327-367, warpins: 1 ---
+	--- BLOCK #22 313-353, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -2069,7 +2497,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #23 368-373, warpins: 1 ---
+	--- BLOCK #23 354-359, warpins: 1 ---
 	slot19 = slot18.styleType
 	slot20 = QuestConst
 	slot20 = slot20.QUEST_SHOW_TYPE
@@ -2083,7 +2511,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #24 374-384, warpins: 1 ---
+	--- BLOCK #24 360-370, warpins: 1 ---
 	slot21 = slot14
 	slot19 = slot14.TryChangePage
 	slot22 = "OtherTask"
@@ -2103,7 +2531,7 @@ slot15 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #25 385-386, warpins: 2 ---
+	--- BLOCK #25 371-372, warpins: 2 ---
 	--- END OF BLOCK #25 ---
 
 	slot18 = if slot18 then
@@ -2113,7 +2541,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #26 387-392, warpins: 1 ---
+	--- BLOCK #26 373-378, warpins: 1 ---
 	slot19 = slot18.styleType
 	slot20 = QuestConst
 	slot20 = slot20.QUEST_SHOW_TYPE
@@ -2127,7 +2555,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #27 393-399, warpins: 1 ---
+	--- BLOCK #27 379-385, warpins: 1 ---
 	slot21 = slot14
 	slot19 = slot14.TryChangePage
 	slot22 = "OtherTask"
@@ -2142,7 +2570,7 @@ slot15 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 400-415, warpins: 4 ---
+	--- BLOCK #28 386-401, warpins: 4 ---
 	slot21 = slot14
 	slot19 = slot14.TryChangePage
 	slot22 = "Arrow"
@@ -2166,10 +2594,10 @@ slot15 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #28 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #29 416-422, warpins: 1 ---
+	--- BLOCK #29 402-408, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
@@ -2184,7 +2612,7 @@ slot15 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #30 423-445, warpins: 1 ---
+	--- BLOCK #30 409-431, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -2211,10 +2639,10 @@ slot15 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #30 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #31 446-452, warpins: 1 ---
+	--- BLOCK #31 432-438, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
@@ -2225,60 +2653,61 @@ slot15 = function(slot0, slot1, slot2)
 	if slot11 == slot12 then
 	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #32 453-479, warpins: 1 ---
+	--- BLOCK #32 439-455, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
 	slot14 = slot7
 	slot15 = AddressDataConst
-	slot15 = slot15.UI_MARK_NODE_LEYLINE_FLOWER
+	slot15 = slot15.UI_MARK_NODE_PLENTY
 	slot11 = slot11(slot13, slot14, slot15)
-	slot12 = slot11.gameObject
-	slot14 = slot12
-	slot12 = slot12.GetComponent
-	slot15 = "ObjectReference"
-	slot12 = slot12(slot14, slot15)
-	slot15 = slot12
-	slot13 = slot12.GetRefValue
-	slot16 = "imgGlowUImage"
-	slot13 = slot13(slot15, slot16)
-	slot16 = slot12
-	slot14 = slot12.GetRefValue
-	slot17 = "bgUImage"
-	slot14 = slot14(slot16, slot17)
-	slot14.url = slot10
-	slot15 = slot13.gameObject
-	slot17 = slot15
-	slot15 = slot15.SetActiveEx
-	slot18 = false
+	slot12 = MapUtils
+	slot12 = slot12.renderLeylineFlowerMark
+	slot14 = slot11.gameObject
+	slot15 = slot10
+	slot16 = false
 
-	slot15(slot17, slot18)
+	slot12(slot14, slot15, slot16)
 
+	slot12 = slot0.bubbleMarksObjCaches
+	slot12 = slot12[slot2]
 	--- END OF BLOCK #32 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	slot12 = if slot12 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #56
+	end
 
 
-	--- BLOCK #33 480-486, warpins: 1 ---
+	--- BLOCK #33 456-458, warpins: 1 ---
+	slot13 = slot11.gameObject
+	slot12.leylineFlowerMarkObj = slot13
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
+
+
+	--- BLOCK #34 459-465, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
 	slot12 = slot12.TYPE
 	slot12 = slot12.ECO_TRACE
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #34 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #34
-	else
 	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #34 487-513, warpins: 1 ---
+	--- BLOCK #35 466-492, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -2307,57 +2736,121 @@ slot15 = function(slot0, slot1, slot2)
 
 	slot15(slot17, slot18)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #35 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #35 514-520, warpins: 1 ---
+	--- BLOCK #36 493-499, warpins: 1 ---
+	slot11 = slot5.type
+	slot12 = Const
+	slot12 = slot12.MAP_CONST
+	slot12 = slot12.TYPE
+	slot12 = slot12.GOLD
+	--- END OF BLOCK #36 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 500-526, warpins: 1 ---
+	slot11 = slot0.view
+	slot13 = slot11
+	slot11 = slot11.addPrefabWithPathSync
+	slot14 = slot7
+	slot15 = AddressDataConst
+	slot15 = slot15.UI_MARK_NODE_GOLD_TRACE
+	slot11 = slot11(slot13, slot14, slot15)
+	slot12 = slot11.gameObject
+	slot14 = slot12
+	slot12 = slot12.GetComponent
+	slot15 = "ObjectReference"
+	slot12 = slot12(slot14, slot15)
+	slot15 = slot12
+	slot13 = slot12.GetRefValue
+	slot16 = "imgGlowUImage"
+	slot13 = slot13(slot15, slot16)
+	slot16 = slot12
+	slot14 = slot12.GetRefValue
+	slot17 = "bgUImage"
+	slot14 = slot14(slot16, slot17)
+	slot14.url = slot10
+	slot15 = slot13.gameObject
+	slot17 = slot15
+	slot15 = slot15.SetActiveEx
+	slot18 = false
+
+	slot15(slot17, slot18)
+
+	--- END OF BLOCK #37 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
+
+
+	--- BLOCK #38 527-533, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
 	slot12 = slot12.TYPE
 	slot12 = slot12.DYNAMIC
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #38 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #36 521-528, warpins: 1 ---
+	--- BLOCK #39 534-541, warpins: 1 ---
 	slot11 = slot0.ctrl
 	slot11 = slot11.dynamicMarkComponent
 	slot13 = slot11
-	slot11 = slot11.renderBubble
+	slot11 = slot11.getBubbleIcon
 	slot14 = slot2
-	slot15 = slot7
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #39 ---
 
-	slot11(slot13, slot14, slot15)
+	slot11 = if slot11 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #56
+	end
 
-	--- END OF BLOCK #36 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	--- BLOCK #40 542-548, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0._bindBubbleCommonIcon
+	slot15 = slot2
+	slot16 = slot7
+	slot17 = slot11
+
+	slot12(slot14, slot15, slot16, slot17)
+
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #37 529-535, warpins: 1 ---
+	--- BLOCK #41 549-555, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
 	slot12 = slot12.TYPE
 	slot12 = slot12.ALLY
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #41 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #38 536-553, warpins: 1 ---
+	--- BLOCK #42 556-573, warpins: 1 ---
 	slot11 = slot0.view
 	slot13 = slot11
 	slot11 = slot11.addPrefabWithPathSync
@@ -2374,43 +2867,43 @@ slot15 = function(slot0, slot1, slot2)
 	slot13 = slot13.getEntity
 	slot15 = slot2
 	slot13 = slot13(slot15)
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #42 ---
 
 	slot13 = if slot13 then
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #43
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #39 554-556, warpins: 1 ---
+	--- BLOCK #43 574-576, warpins: 1 ---
 	slot14 = slot13.uid
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #43 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #40 557-564, warpins: 1 ---
+	--- BLOCK #44 577-584, warpins: 1 ---
 	slot14 = pg
 	slot14 = slot14.me
 	slot16 = slot14
 	slot14 = slot14.getCurTeamInfo
 	slot14 = slot14(slot16)
 	slot14 = slot14.sortList
-	--- END OF BLOCK #40 ---
+	--- END OF BLOCK #44 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #45
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #41 565-576, warpins: 1 ---
+	--- BLOCK #45 585-596, warpins: 1 ---
 	slot14 = LuaUIUtils
 	slot14 = slot14.tableContains
 	slot16 = pg
@@ -2421,29 +2914,29 @@ slot15 = function(slot0, slot1, slot2)
 	slot16 = slot16.sortList
 	slot17 = slot13.uid
 	slot14, slot15 = slot14(slot16, slot17)
-	--- END OF BLOCK #41 ---
+	--- END OF BLOCK #45 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #46
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #42 577-581, warpins: 1 ---
+	--- BLOCK #46 597-601, warpins: 1 ---
 	slot16 = NotNil
 	slot18 = slot12
 	slot16 = slot16(slot18)
-	--- END OF BLOCK #42 ---
+	--- END OF BLOCK #46 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #47
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #43 582-587, warpins: 1 ---
+	--- BLOCK #47 602-607, warpins: 1 ---
 	slot18 = slot12
 	slot16 = slot12.TryChangePage
 	slot19 = "Teammate"
@@ -2451,70 +2944,70 @@ slot15 = function(slot0, slot1, slot2)
 
 	slot16(slot18, slot19, slot20)
 
-	--- END OF BLOCK #43 ---
+	--- END OF BLOCK #47 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #44 588-594, warpins: 1 ---
+	--- BLOCK #48 608-614, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
 	slot12 = slot12.TYPE
 	slot12 = slot12.GRAB_EGG
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #48 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #45 595-602, warpins: 1 ---
+	--- BLOCK #49 615-622, warpins: 1 ---
 	slot11 = MapMarkResourceData
 	slot12 = slot5.markConfigId
 	slot11 = slot11[slot12]
 	slot12 = slot0.ctrl
 	slot12 = slot12.sceneId
 	slot11 = slot11[slot12]
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #49 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #50
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #51
 	end
 
 
-	--- BLOCK #46 603-606, warpins: 1 ---
+	--- BLOCK #50 623-626, warpins: 1 ---
 	slot11 = MapMarkResourceData
 	slot12 = slot5.markConfigId
 	slot11 = slot11[slot12]
 	slot11 = slot11[0]
-	--- END OF BLOCK #46 ---
+	--- END OF BLOCK #50 ---
 
-	FLOW; TARGET BLOCK #47
+	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #47 607-608, warpins: 2 ---
-	--- END OF BLOCK #47 ---
+	--- BLOCK #51 627-628, warpins: 2 ---
+	--- END OF BLOCK #51 ---
 
 	slot12 = if slot11 then
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #52
 	else
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #48 609-609, warpins: 1 ---
+	--- BLOCK #52 629-629, warpins: 1 ---
 	slot12 = slot11.icon
-	--- END OF BLOCK #48 ---
+	--- END OF BLOCK #52 ---
 
-	FLOW; TARGET BLOCK #49
+	FLOW; TARGET BLOCK #53
 
 
-	--- BLOCK #49 610-632, warpins: 2 ---
+	--- BLOCK #53 630-652, warpins: 2 ---
 	slot13 = GrabEggMapMarkUtils
 	slot13 = slot13.getEggView
 	slot15 = slot2
@@ -2539,76 +3032,122 @@ slot15 = function(slot0, slot1, slot2)
 
 	slot16(slot18, slot19, slot20)
 
-	--- END OF BLOCK #49 ---
+	--- END OF BLOCK #53 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
-	--- BLOCK #50 633-639, warpins: 1 ---
+	--- BLOCK #54 653-659, warpins: 1 ---
 	slot11 = slot5.type
 	slot12 = Const
 	slot12 = slot12.MAP_CONST
 	slot12 = slot12.TYPE
 	slot12 = slot12.DUEL
-	--- END OF BLOCK #50 ---
+	--- END OF BLOCK #54 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #55
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #51 640-652, warpins: 1 ---
-	slot11 = slot0.view
-	slot13 = slot11
-	slot11 = slot11.addPrefabWithPathSync
-	slot14 = slot7
-	slot15 = AddressDataConst
-	slot15 = slot15.UI_MARK_NODE_MARK_COMMON_ICON
-	slot11 = slot11(slot13, slot14, slot15)
-	slot12 = slot11.gameObject
-	slot14 = slot12
-	slot12 = slot12.GetComponent
-	slot15 = "UImage"
-	slot12 = slot12(slot14, slot15)
-	slot12.url = slot10
-	--- END OF BLOCK #51 ---
+	--- BLOCK #55 660-665, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0._bindBubbleCommonIcon
+	slot14 = slot2
+	slot15 = slot7
+	slot16 = slot10
 
-	FLOW; TARGET BLOCK #52
+	slot11(slot13, slot14, slot15, slot16)
+
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #52 653-656, warpins: 20 ---
+	--- BLOCK #56 666-669, warpins: 23 ---
 	slot11 = slot0.bubbleMarksObjCaches
 	slot11 = slot11[slot2]
-	--- END OF BLOCK #52 ---
+	--- END OF BLOCK #56 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #57
 	else
-	JUMP TO BLOCK #54
+	JUMP TO BLOCK #58
 	end
 
 
-	--- BLOCK #53 657-657, warpins: 1 ---
+	--- BLOCK #57 670-670, warpins: 1 ---
 	slot11.upperDynamicLoadTransform = slot8
 
-	--- END OF BLOCK #53 ---
+	--- END OF BLOCK #57 ---
 
-	FLOW; TARGET BLOCK #54
+	FLOW; TARGET BLOCK #58
 
 
-	--- BLOCK #54 658-658, warpins: 2 ---
+	--- BLOCK #58 671-671, warpins: 2 ---
 	return
-	--- END OF BLOCK #54 ---
+	--- END OF BLOCK #58 ---
 
 
 
 end
 
-slot14.renderInnerMark = slot15
+slot16.renderInnerMark = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0.bubbleMarksObjCaches
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot4 = slot3.leylineFlowerMarkObj
+
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-15, warpins: 2 ---
+	slot4 = MapUtils
+	slot4 = slot4.renderLeylineFlowerMark
+	slot6 = slot3.leylineFlowerMarkObj
+	slot7 = slot2
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16.refreshLeylineFlowerMark = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.markCaches
 	slot2 = slot2[slot1]
@@ -3036,9 +3575,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.renderTeamTrackBadge = slot15
+slot16.renderTeamTrackBadge = slot17
 
-slot15 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.bubbleMarksObjCaches
 	slot3 = slot3[slot1]
@@ -3170,9 +3709,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14._updateTeamTrackBadgeUI = slot15
+slot16._updateTeamTrackBadgeUI = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.bubbleMarksObjCaches
 	slot2 = slot2[slot1]
@@ -3263,9 +3802,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14._clearTeamTrackBadge = slot15
+slot16._clearTeamTrackBadge = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.bubbleMarksObjCaches
@@ -3313,9 +3852,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onTeamMarkTrackChange = slot15
+slot16.onTeamMarkTrackChange = slot17
 
-slot15 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3457,9 +3996,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.isOutOfViewPort = slot15
+slot16.isOutOfViewPort = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.timer
 	--- END OF BLOCK #0 ---
@@ -3484,20 +4023,74 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-13, warpins: 2 ---
+	--- BLOCK #2 9-14, warpins: 2 ---
 	slot1 = nil
 	slot0.timer = slot1
-	slot1 = slot0.objPool
+	slot1 = pairs
+	slot3 = slot0.bubbleMarksObjCaches
+	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	if slot1 ~= nil then
-	JUMP TO BLOCK #3
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 15-26, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0._clearBubbleCommonIcon
+	slot9 = slot4
+	slot10 = true
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot0
+	slot6 = slot0._clearTeamTrackBadge
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
+	slot6 = slot5.innerMark
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 14-23, warpins: 1 ---
+	--- BLOCK #4 27-31, warpins: 1 ---
+	slot6 = slot0.view
+	slot8 = slot6
+	slot6 = slot6.destroyInstance
+	slot9 = slot5.innerMark
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-33, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 34-36, warpins: 1 ---
+	slot1 = slot0.objPool
+	--- END OF BLOCK #6 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 37-46, warpins: 1 ---
 	slot1 = slot0.objPool
 	slot3 = slot1
 	slot1 = slot1.recycleAll
@@ -3512,27 +4105,27 @@ slot15 = function(slot0)
 
 	slot1 = nil
 	slot0.objPool = slot1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #4 24-28, warpins: 2 ---
+	--- BLOCK #8 47-51, warpins: 2 ---
 	slot1 = {}
 	slot0.bubbleMarks = slot1
 	slot1 = {}
 	slot0.bubbleMarksObjCaches = slot1
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot14.destroy = slot15
+slot16.destroy = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.destroy
@@ -3552,9 +4145,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onDestroy = slot15
+slot16.onDestroy = slot17
 
-return slot14
+return slot16
 --- END OF BLOCK #0 ---
 
 

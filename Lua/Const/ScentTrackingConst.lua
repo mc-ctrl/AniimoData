@@ -6,9 +6,9 @@ slot0 = {
 	MaxTrackCnt = 3
 }
 slot1 = {
+	Tracking = 3,
 	Ready = 2,
-	None = 1,
-	Tracking = 3
+	None = 1
 }
 slot0.ScentTrackingState = slot1
 

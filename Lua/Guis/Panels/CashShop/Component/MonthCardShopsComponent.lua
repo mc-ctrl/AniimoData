@@ -1,40 +1,52 @@
---- BLOCK #0 1-46, warpins: 1 ---
+--- BLOCK #0 1-70, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Log.LoggerManager"
+slot0 = slot0(slot2)
+slot0 = slot0.getLogger
+slot2 = "MonthCardShopsComponent"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Utils.LuaUIUtils"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Utils.ClientCashShopUtils"
+slot4 = "Utils.LuaUIUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.Recharge.RechargeUtils"
+slot5 = "Utils.ClientCashShopUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "GameApp.Recharge.RechargeConst"
+slot6 = "GameApp.Recharge.RechargeUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.CashShopConst"
+slot7 = "GameApp.Recharge.RechargeConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.ActivityUtils"
+slot8 = "Const.CashShopConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.ActivityConst"
+slot9 = "Common.Utils.ActivityUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.event_battlepass_data"
+slot10 = "Common.Const.ActivityConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Guis.Panels.CashShop.Component.CashShopContainerComponent"
+slot11 = "Data.event_battlepass_data"
 slot9 = slot9(slot11)
-slot10 = slot0.LightClass
-slot12 = "MonthCardShopsComponent"
-slot13 = slot9
-slot10 = slot10(slot12, slot13)
+slot10 = require
+slot12 = "Guis.Panels.CashShop.Component.CashShopContainerComponent"
+slot10 = slot10(slot12)
+slot11 = CS
+slot11 = slot11.FunPlus
+slot11 = slot11.WorldX
+slot11 = slot11.SDK
+slot11 = slot11.Platform
+slot11 = slot11.PlatformBridgeLuaFacade
+slot12 = slot1.LightClass
+slot14 = "MonthCardShopsComponent"
+slot15 = slot10
+slot12 = slot12(slot14, slot15)
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -57,7 +69,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-35, warpins: 2 ---
+	--- BLOCK #2 7-45, warpins: 2 ---
 	slot1 = CashShopContainerComponent
 	slot1 = slot1.findObjects
 	slot3 = slot0
@@ -88,6 +100,16 @@ slot11 = function(slot0)
 	slot5 = "rootUComponent"
 	slot2 = slot2(slot4, slot5)
 	slot0.rootUComponent = slot2
+	slot2 = slot0.battlePassTransform
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "ObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "moneyListUButton"
+	slot3 = slot3(slot5, slot6)
+	slot0.moneyListUButton = slot3
 
 	return
 	--- END OF BLOCK #2 ---
@@ -96,9 +118,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.findObjects = slot11
+slot12.findObjects = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -115,7 +137,7 @@ slot11 = function(slot0)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #60
+	UNCONDITIONAL JUMP; TARGET BLOCK #66
 
 
 	--- BLOCK #2 7-16, warpins: 1 ---
@@ -462,38 +484,122 @@ slot11 = function(slot0)
 	--- BLOCK #33 122-126, warpins: 5 ---
 	slot6 = CashShopConst
 	slot6 = slot6.CardShopType
-	slot6 = slot6.MonthCard
+	slot6 = slot6.BattlePass
 	--- END OF BLOCK #33 ---
 
-	if slot5 == slot6 then
+	if slot5 ~= slot6 then
 	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 127-128, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #34 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #35 129-129, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #35 ---
+
+	FLOW; TARGET BLOCK #36
+
+
+	--- BLOCK #36 130-147, warpins: 2 ---
+	slot7 = slot0.ctrl
+	slot7 = slot7.view
+	slot7 = slot7.moneyListUButton
+	slot8 = slot7.gameObject
+	slot10 = slot8
+	slot8 = slot8.SetActiveEx
+	slot11 = not slot6
+
+	slot8(slot10, slot11)
+
+	slot8 = slot0.moneyListUButton
+	slot8 = slot8.gameObject
+	slot10 = slot8
+	slot8 = slot8.SetActiveEx
+	slot11 = slot6
+
+	slot8(slot10, slot11)
+
+	slot8 = RechargeUtils
+	slot8 = slot8.setupMoneyList
+	--- END OF BLOCK #36 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #37
 	else
 	JUMP TO BLOCK #38
 	end
 
 
-	--- BLOCK #34 127-131, warpins: 1 ---
-	slot6 = false
-	slot0._showingBP = slot6
-	slot6 = slot0.monthlyCard
-	--- END OF BLOCK #34 ---
+	--- BLOCK #37 148-150, warpins: 1 ---
+	slot10 = slot0.moneyListUButton
+	--- END OF BLOCK #37 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #35
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #57
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #35 132-143, warpins: 1 ---
-	slot6 = RechargeUtils
-	slot6 = slot6.getProductsInfo
-	slot6 = slot6()
-	slot7 = LuaUIUtils
-	slot7 = slot7.renderMonthCard
-	slot9 = slot0.monthlyCard
+	--- BLOCK #38 151-151, warpins: 2 ---
+	slot10 = slot7
 
-	slot10 = function()
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 152-161, warpins: 2 ---
+	slot8(slot10)
+
+	slot10 = slot0
+	slot8 = slot0._syncEnvironment
+	slot11 = slot6
+
+	slot8(slot10, slot11)
+
+	slot8 = CashShopConst
+	slot8 = slot8.CardShopType
+	slot8 = slot8.MonthCard
+	--- END OF BLOCK #39 ---
+
+	if slot5 == slot8 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #44
+	end
+
+
+	--- BLOCK #40 162-166, warpins: 1 ---
+	slot8 = false
+	slot0._showingBP = slot8
+	slot8 = slot0.monthlyCard
+	--- END OF BLOCK #40 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #41 167-178, warpins: 1 ---
+	slot8 = RechargeUtils
+	slot8 = slot8.getProductsInfo
+	slot8 = slot8()
+	slot9 = LuaUIUtils
+	slot9 = slot9.renderMonthCard
+	slot11 = slot0.monthlyCard
+
+	slot12 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.ctrl
@@ -511,245 +617,245 @@ slot11 = function(slot0)
 
 	end
 
-	slot7(slot9, slot10)
+	slot9(slot11, slot12)
 
-	slot7 = slot0.ctrl
-	slot7 = slot7.avatarComponent
-	--- END OF BLOCK #35 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #37
-	end
-
-
-	--- BLOCK #36 144-146, warpins: 1 ---
-	slot10 = slot7
-	slot8 = slot7.hideAllEntities
-
-	slot8(slot10)
-
-	--- END OF BLOCK #36 ---
-
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 147-153, warpins: 2 ---
-	slot8 = false
-	slot0._showingModel = slot8
-	slot10 = slot0
-	slot8 = slot0._syncBackground
-
-	slot8(slot10)
-
-	--- END OF BLOCK #37 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #57
-
-
-	--- BLOCK #38 154-157, warpins: 1 ---
-	slot6 = slot0.ctrl
-	slot6 = slot6.avatarComponent
-	--- END OF BLOCK #38 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #55
-	end
-
-
-	--- BLOCK #39 158-167, warpins: 1 ---
-	slot7 = ActivityUtils
-	slot7 = slot7.getActivityData
-	slot9 = pg
-	slot9 = slot9.me
-	slot10 = ActivityConst
-	slot10 = slot10.EventType
-	slot10 = slot10.BattlePass
-	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #39 ---
-
-	slot8 = if slot7 then
-	JUMP TO BLOCK #40
-	else
-	JUMP TO BLOCK #42
-	end
-
-
-	--- BLOCK #40 168-170, warpins: 1 ---
-	slot8 = slot7.activityBase
-	--- END OF BLOCK #40 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #42
-	end
-
-
-	--- BLOCK #41 171-172, warpins: 1 ---
-	slot8 = slot7.activityBase
-	slot8 = slot8.activityPhase
+	slot9 = slot0.ctrl
+	slot9 = slot9.avatarComponent
 	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #42
+	slot9 = if slot9 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #43
+	end
 
 
-	--- BLOCK #42 173-174, warpins: 3 ---
+	--- BLOCK #42 179-181, warpins: 1 ---
+	slot12 = slot9
+	slot10 = slot9.hideAllEntities
+
+	slot10(slot12)
+
 	--- END OF BLOCK #42 ---
 
-	slot9 = if slot8 then
-	JUMP TO BLOCK #43
-	else
-	JUMP TO BLOCK #44
-	end
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 175-176, warpins: 1 ---
-	slot9 = BattlePassData
-	slot9 = slot9[slot8]
+	--- BLOCK #43 182-188, warpins: 2 ---
+	slot10 = false
+	slot0._showingModel = slot10
+	slot12 = slot0
+	slot10 = slot0._syncBackground
+
+	slot10(slot12)
+
 	--- END OF BLOCK #43 ---
 
-	FLOW; TARGET BLOCK #44
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-	--- BLOCK #44 177-178, warpins: 2 ---
+	--- BLOCK #44 189-192, warpins: 1 ---
+	slot8 = slot0.ctrl
+	slot8 = slot8.avatarComponent
 	--- END OF BLOCK #44 ---
 
-	slot9 = if slot9 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #45
 	else
-	JUMP TO BLOCK #55
+	JUMP TO BLOCK #61
 	end
 
 
-	--- BLOCK #45 179-181, warpins: 1 ---
-	slot10 = slot9.passPetModelingId
+	--- BLOCK #45 193-202, warpins: 1 ---
+	slot9 = ActivityUtils
+	slot9 = slot9.getActivityData
+	slot11 = pg
+	slot11 = slot11.me
+	slot12 = ActivityConst
+	slot12 = slot12.EventType
+	slot12 = slot12.BattlePass
+	slot9 = slot9(slot11, slot12)
 	--- END OF BLOCK #45 ---
 
-	slot10 = if slot10 then
+	slot10 = if slot9 then
 	JUMP TO BLOCK #46
 	else
-	JUMP TO BLOCK #55
+	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #46 182-187, warpins: 1 ---
-	slot10 = CashShopConst
-	slot10 = slot10.PetActionType
-	slot10 = slot10.CashShop
-	slot11 = slot9.passPetMovementId
+	--- BLOCK #46 203-205, warpins: 1 ---
+	slot10 = slot9.activityBase
 	--- END OF BLOCK #46 ---
 
-	slot11 = if slot11 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #47
 	else
 	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #47 188-189, warpins: 1 ---
-	slot11 = slot9.passPetMovementId
-	slot11 = slot11[slot10]
+	--- BLOCK #47 206-207, warpins: 1 ---
+	slot10 = slot9.activityBase
+	slot10 = slot10.activityPhase
 	--- END OF BLOCK #47 ---
 
 	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 190-192, warpins: 2 ---
-	slot12 = slot9.postionIndex
+	--- BLOCK #48 208-209, warpins: 3 ---
 	--- END OF BLOCK #48 ---
 
-	slot12 = if slot12 then
+	slot11 = if slot10 then
 	JUMP TO BLOCK #49
 	else
 	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #49 193-194, warpins: 1 ---
-	slot12 = slot9.postionIndex
-	slot12 = slot12[slot10]
+	--- BLOCK #49 210-211, warpins: 1 ---
+	slot11 = BattlePassData
+	slot11 = slot11[slot10]
 	--- END OF BLOCK #49 ---
 
 	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #50 195-197, warpins: 2 ---
-	slot13 = slot9.rotationIndex
+	--- BLOCK #50 212-213, warpins: 2 ---
 	--- END OF BLOCK #50 ---
 
-	slot13 = if slot13 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #51
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #61
 	end
 
 
-	--- BLOCK #51 198-199, warpins: 1 ---
-	slot13 = slot9.rotationIndex
-	slot13 = slot13[slot10]
+	--- BLOCK #51 214-216, warpins: 1 ---
+	slot12 = slot11.passPetModelingId
 	--- END OF BLOCK #51 ---
 
-	FLOW; TARGET BLOCK #52
+	slot12 = if slot12 then
+	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #61
+	end
 
 
-	--- BLOCK #52 200-202, warpins: 2 ---
-	slot14 = slot9.scaleIndex
+	--- BLOCK #52 217-222, warpins: 1 ---
+	slot12 = CashShopConst
+	slot12 = slot12.PetActionType
+	slot12 = slot12.CashShop
+	slot13 = slot11.passPetMovementId
 	--- END OF BLOCK #52 ---
 
-	slot14 = if slot14 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #53
 	else
 	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #53 203-204, warpins: 1 ---
-	slot14 = slot9.scaleIndex
-	slot14 = slot14[slot10]
+	--- BLOCK #53 223-224, warpins: 1 ---
+	slot13 = slot11.passPetMovementId
+	slot13 = slot13[slot12]
 	--- END OF BLOCK #53 ---
 
 	FLOW; TARGET BLOCK #54
 
 
-	--- BLOCK #54 205-212, warpins: 2 ---
-	slot17 = slot6
-	slot15 = slot6.showPetByModelingId
-	slot18 = slot9.passPetModelingId
-	slot19 = slot11
-	slot20 = slot12
-	slot21 = slot13
-	slot22 = slot14
-
-	slot15(slot17, slot18, slot19, slot20, slot21, slot22)
-
+	--- BLOCK #54 225-227, warpins: 2 ---
+	slot14 = slot11.postionIndex
 	--- END OF BLOCK #54 ---
 
-	FLOW; TARGET BLOCK #55
-
-
-	--- BLOCK #55 213-217, warpins: 4 ---
-	slot7 = true
-	slot0._showingBP = slot7
-	slot7 = slot0.battlePassTransform
-	--- END OF BLOCK #55 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #56
+	slot14 = if slot14 then
+	JUMP TO BLOCK #55
 	else
-	JUMP TO BLOCK #57
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #56 218-222, warpins: 1 ---
-	slot7 = ClientCashShopUtils
-	slot7 = slot7.renderBPInfo
-	slot9 = slot0.battlePassTransform
+	--- BLOCK #55 228-229, warpins: 1 ---
+	slot14 = slot11.postionIndex
+	slot14 = slot14[slot12]
+	--- END OF BLOCK #55 ---
 
-	slot10 = function(slot0)
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 230-232, warpins: 2 ---
+	slot15 = slot11.rotationIndex
+	--- END OF BLOCK #56 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #58
+	end
+
+
+	--- BLOCK #57 233-234, warpins: 1 ---
+	slot15 = slot11.rotationIndex
+	slot15 = slot15[slot12]
+	--- END OF BLOCK #57 ---
+
+	FLOW; TARGET BLOCK #58
+
+
+	--- BLOCK #58 235-237, warpins: 2 ---
+	slot16 = slot11.scaleIndex
+	--- END OF BLOCK #58 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #59
+	else
+	JUMP TO BLOCK #60
+	end
+
+
+	--- BLOCK #59 238-239, warpins: 1 ---
+	slot16 = slot11.scaleIndex
+	slot16 = slot16[slot12]
+	--- END OF BLOCK #59 ---
+
+	FLOW; TARGET BLOCK #60
+
+
+	--- BLOCK #60 240-247, warpins: 2 ---
+	slot19 = slot8
+	slot17 = slot8.showPetByModelingId
+	slot20 = slot11.passPetModelingId
+	slot21 = slot13
+	slot22 = slot14
+	slot23 = slot15
+	slot24 = slot16
+
+	slot17(slot19, slot20, slot21, slot22, slot23, slot24)
+
+	--- END OF BLOCK #60 ---
+
+	FLOW; TARGET BLOCK #61
+
+
+	--- BLOCK #61 248-252, warpins: 4 ---
+	slot9 = true
+	slot0._showingBP = slot9
+	slot9 = slot0.battlePassTransform
+	--- END OF BLOCK #61 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #62
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #62 253-257, warpins: 1 ---
+	slot9 = ClientCashShopUtils
+	slot9 = slot9.renderBPInfo
+	slot11 = slot0.battlePassTransform
+
+	slot12 = function(slot0)
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot1 = RechargeUtils
 		slot1 = slot1.getProductsInfo
@@ -824,63 +930,63 @@ slot11 = function(slot0)
 
 	end
 
-	slot7(slot9, slot10)
+	slot9(slot11, slot12)
 
-	--- END OF BLOCK #56 ---
+	--- END OF BLOCK #62 ---
 
-	FLOW; TARGET BLOCK #57
+	FLOW; TARGET BLOCK #63
 
 
-	--- BLOCK #57 223-232, warpins: 4 ---
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "Type"
-	slot10 = slot5
+	--- BLOCK #63 258-267, warpins: 4 ---
+	slot8 = slot0.rootUComponent
+	slot10 = slot8
+	slot8 = slot8.TryChangePage
+	slot11 = "Type"
+	slot12 = slot5
 
-	slot6(slot8, slot9, slot10)
+	slot8(slot10, slot11, slot12)
 
-	slot6 = slot0.ctrl
-	slot6 = slot6._refreshBPRotateConsoleBar
-	--- END OF BLOCK #57 ---
+	slot8 = slot0.ctrl
+	slot8 = slot8._refreshBPRotateConsoleBar
+	--- END OF BLOCK #63 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #58
+	slot8 = if slot8 then
+	JUMP TO BLOCK #64
 	else
-	JUMP TO BLOCK #59
+	JUMP TO BLOCK #65
 	end
 
 
-	--- BLOCK #58 233-236, warpins: 1 ---
-	slot6 = slot0.ctrl
-	slot8 = slot6
-	slot6 = slot6._refreshBPRotateConsoleBar
+	--- BLOCK #64 268-271, warpins: 1 ---
+	slot8 = slot0.ctrl
+	slot10 = slot8
+	slot8 = slot8._refreshBPRotateConsoleBar
 
-	slot6(slot8)
+	slot8(slot10)
 
-	--- END OF BLOCK #58 ---
+	--- END OF BLOCK #64 ---
 
-	FLOW; TARGET BLOCK #59
+	FLOW; TARGET BLOCK #65
 
 
-	--- BLOCK #59 237-238, warpins: 2 ---
+	--- BLOCK #65 272-273, warpins: 2 ---
 	return
-	--- END OF BLOCK #59 ---
+	--- END OF BLOCK #65 ---
 
-	FLOW; TARGET BLOCK #60
+	FLOW; TARGET BLOCK #66
 
 
-	--- BLOCK #60 239-239, warpins: 2 ---
+	--- BLOCK #66 274-274, warpins: 2 ---
 	return
-	--- END OF BLOCK #60 ---
+	--- END OF BLOCK #66 ---
 
 
 
 end
 
-slot10.refreshPage = slot11
+slot12.refreshPage = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._showingBP
 	--- END OF BLOCK #0 ---
@@ -915,9 +1021,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.isShowingBP = slot11
+slot12.isShowingBP = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.rootUComponent
 
@@ -928,9 +1034,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._getMonthCardInvokeTarget = slot11
+slot12._getMonthCardInvokeTarget = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshPage
@@ -944,9 +1050,282 @@ slot11 = function(slot0)
 
 end
 
-slot10.onBattlePassChange = slot11
+slot12.onBattlePassChange = slot13
 
-return slot10
+slot13 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.setPSIconUIVisiable
+	slot3 = "MonthCardShopsComponent"
+	slot4 = false
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1()
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-15, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.HideStoreIcon
+
+	slot1()
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-16, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot12.HideStoreIcon = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.supportsCommerce
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot1 = PlatformBridgeLuaFacade
+	slot1 = slot1.DisplayStoreIcon
+	slot3 = 1
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-15, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.setPSIconUIVisiable
+	slot3 = "MonthCardShopsComponent"
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.ShowStoreIcon = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot1 = false
+	slot0.entered = slot1
+	slot1 = CashShopContainerComponent
+	slot1 = slot1.onExitPage
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = slot0.ctrl
+	slot1 = slot1.view
+	slot1 = slot1.moneyListUButton
+	slot2 = slot1.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0._showingBP
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 18-21, warpins: 1 ---
+	slot2 = RechargeUtils
+	slot2 = slot2.setupMoneyList
+	slot4 = slot1
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 22-25, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.HideStoreIcon
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot12.onExitPage = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = true
+	slot0.entered = slot2
+	slot2 = CashShopContainerComponent
+	slot2 = slot2.onEnterPage
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.ShowStoreIcon
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.onEnterPage = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = false
+	slot0.entered = slot1
+	slot1 = CashShopContainerComponent
+	slot1 = slot1.onDestroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.HideStoreIcon
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.onDestroy = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "MonthCardShopsComponent:onVisibleChange visible:%s, self.entered:%s"
+	slot6 = tostring
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	slot7 = tostring
+	slot9 = slot0.entered
+	MULTRES = slot7(slot9)
+
+	slot2(slot4, slot5, slot6, MULTRES)
+
+	slot2 = CashShopContainerComponent
+	slot2 = slot2.onVisibleChange
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 19-21, warpins: 1 ---
+	slot2 = slot0.entered
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 22-25, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.ShowStoreIcon
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 26-28, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.HideStoreIcon
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot12.onVisibleChange = slot13
+
+return slot12
 --- END OF BLOCK #0 ---
 
 

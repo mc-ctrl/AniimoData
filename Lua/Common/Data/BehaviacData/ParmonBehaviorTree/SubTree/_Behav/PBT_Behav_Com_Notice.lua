@@ -7,9 +7,9 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 17,
 	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_Notice",
+	version = 17,
 	useForRoute = false
 }
 slot4 = {}
@@ -17,15 +17,15 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	const = 0,
-	type = "int",
 	name = "tTargetActorId",
+	type = "int",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
 	const = true,
-	type = "bool",
 	name = "tWait",
+	type = "bool",
 	value = "true"
 }
 slot4[2] = slot5

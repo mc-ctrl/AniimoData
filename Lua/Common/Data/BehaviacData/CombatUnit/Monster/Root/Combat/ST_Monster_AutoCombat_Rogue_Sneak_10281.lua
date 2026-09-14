@@ -8,60 +8,60 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Rogue_Sneak_10281",
-	version = 132,
 	useForRoute = false,
+	version = 132,
 	agenttype = "PuppetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "CurrentDistToTarget",
 	type = "float",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "CurrentDistToTarget"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "CurrentBoxDistToTarget",
 	type = "float",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "CurrentBoxDistToTarget"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "goBackDist",
 	type = "float",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "goBackDist"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "skillStopDist",
 	type = "float",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "skillStopDist"
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tWeight_Group_SideWalk",
 	type = "int",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "tWeight_Group_SideWalk"
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tWeight_Group_Wait",
 	type = "int",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "tWeight_Group_Wait"
 }
 slot4[6] = slot5
 slot5 = {
-	name = "tWeight_Group_Angry",
 	type = "int",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "tWeight_Group_Angry"
 }
 slot4[7] = slot5
 slot3.pars = slot4

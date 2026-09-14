@@ -1,22 +1,5 @@
 --- BLOCK #0 1-2, warpins: 1 ---
 slot0 = {
-	Hit = 5,
-	Skill = 4,
-	AIRootMotion = 3,
-	Air = 2,
-	Movement = 1,
-	None = 0,
-	Max = 255,
-	Sleep = 127,
-	Behav = 39,
-	FootIK = 38,
-	CameraModeBone = 37,
-	ClimbSwitching = 36,
-	ActionStartNoTransition = 35,
-	Drumming = 34,
-	Sneak = 33,
-	ActionStart = 32,
-	SkillStart = 31,
 	ActionEnd = 30,
 	SkillEnd = 29,
 	LookAt = 28,
@@ -35,7 +18,24 @@ slot0 = {
 	Dash = 12,
 	Run = 11,
 	Walk = 10,
-	Idle = 9
+	Idle = 9,
+	Hit = 5,
+	Skill = 4,
+	AIRootMotion = 3,
+	Air = 2,
+	Movement = 1,
+	None = 0,
+	Max = 255,
+	Sleep = 127,
+	Behav = 39,
+	FootIK = 38,
+	CameraModeBone = 37,
+	ClimbSwitching = 36,
+	ActionStartNoTransition = 35,
+	Drumming = 34,
+	Sneak = 33,
+	ActionStart = 32,
+	SkillStart = 31
 }
 
 return slot0

@@ -1,4 +1,4 @@
---- BLOCK #0 1-268, warpins: 1 ---
+--- BLOCK #0 1-275, warpins: 1 ---
 slot0 = {}
 slot1 = CS
 slot1 = slot1.System
@@ -9,9 +9,12 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Common.Const.PlatformShellConst"
 slot3 = slot3(slot5)
-slot4 = slot3.TokenType
-slot0.TokenType = slot4
-slot4 = {
+slot4 = require
+slot6 = "Core.Client.GlobalData"
+slot4 = slot4(slot6)
+slot5 = slot3.TokenType
+slot0.TokenType = slot5
+slot5 = {
 	"tokenType",
 	"inviteId",
 	"inviteToken",
@@ -20,8 +23,8 @@ slot4 = {
 	"targetKey",
 	"serverId"
 }
-slot0.JOIN_GAME_REQUIRED_CONNECTION_FIELDS = slot4
-slot4 = {
+slot0.JOIN_GAME_REQUIRED_CONNECTION_FIELDS = slot5
+slot5 = {
 	"tokenType",
 	"inviteId",
 	"inviteToken",
@@ -31,8 +34,8 @@ slot4 = {
 	"targetKey",
 	"serverId"
 }
-slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS = slot4
-slot4 = {
+slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS = slot5
+slot5 = {
 	"tokenType",
 	"inviteId",
 	"inviteToken",
@@ -43,8 +46,8 @@ slot4 = {
 	"serverId",
 	"inviteWorldType"
 }
-slot0.INVITE_WORLD_REQUIRED_CONNECTION_FIELDS = slot4
-slot4 = {
+slot0.INVITE_WORLD_REQUIRED_CONNECTION_FIELDS = slot5
+slot5 = {
 	"tokenType",
 	"inviteId",
 	"inviteToken",
@@ -55,107 +58,107 @@ slot4 = {
 	"serverId",
 	"homeCampInviteId"
 }
-slot0.HOME_CAMP_REQUIRED_CONNECTION_FIELDS = slot4
-slot4 = {}
-slot5 = slot0.TokenType
-slot5 = slot5.JoinGameByShell
-slot6 = {
+slot0.HOME_CAMP_REQUIRED_CONNECTION_FIELDS = slot5
+slot5 = {}
+slot6 = slot0.TokenType
+slot6 = slot6.JoinGameByShell
+slot7 = {
 	BuildConnectionString = "buildExistingTeamConnectionString"
 }
-slot7 = slot0.JOIN_GAME_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteJoinTeam
-slot6 = {
+slot8 = slot0.JOIN_GAME_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteJoinTeam
+slot7 = {
 	BuildConnectionString = "buildDirectTeamInviteConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.RequestJoinTeam
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.RequestJoinTeam
+slot7 = {
 	BuildConnectionString = "buildTeamRequestJoinInviteConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteEnterWorld
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteEnterWorld
+slot7 = {
 	BuildConnectionString = "buildEnterWorldInviteConnectionString"
 }
-slot7 = slot0.INVITE_WORLD_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.RequestEnterWorld
-slot6 = {
+slot8 = slot0.INVITE_WORLD_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.RequestEnterWorld
+slot7 = {
 	BuildConnectionString = "buildEnterWorldInviteConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteExchangePet
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteExchangePet
+slot7 = {
 	BuildConnectionString = "buildEnterWorldInviteConnectionString"
 }
-slot7 = slot0.INVITE_WORLD_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteEnterPhotoWorld
-slot6 = {
+slot8 = slot0.INVITE_WORLD_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteEnterPhotoWorld
+slot7 = {
 	BuildConnectionString = "buildPhotoWorldConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteSpaceFollow
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteSpaceFollow
+slot7 = {
 	BuildConnectionString = "buildSpaceFollowInviteConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.ReuquestSpaceFollow
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.ReuquestSpaceFollow
+slot7 = {
 	BuildConnectionString = "buildSpaceFollowRequestInviteConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteQuickSpaceFollow
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteQuickSpaceFollow
+slot7 = {
 	BuildConnectionString = "buildQuickTeamSpaceFollowInviteConnectionString"
 }
-slot7 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteHomeCamp
-slot6 = {
+slot8 = slot0.DIRECTED_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteHomeCamp
+slot7 = {
 	BuildConnectionString = "buildHomeCampInviteConnectionString"
 }
-slot7 = slot0.HOME_CAMP_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.RequestHomeCamp
-slot6 = {
+slot8 = slot0.HOME_CAMP_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.RequestHomeCamp
+slot7 = {
 	BuildConnectionString = "buildHomeCampInviteConnectionString"
 }
-slot7 = slot0.HOME_CAMP_REQUIRED_CONNECTION_FIELDS
-slot6.requiredFields = slot7
-slot4[slot5] = slot6
-slot0._ConnectionStringFieldConfig = slot4
+slot8 = slot0.HOME_CAMP_REQUIRED_CONNECTION_FIELDS
+slot7.requiredFields = slot8
+slot5[slot6] = slot7
+slot0._ConnectionStringFieldConfig = slot5
 
-slot4 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot2.tokenType = slot1
@@ -357,163 +360,169 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot0.buildShellInvitePayload = slot4
-slot4 = {}
-slot5 = slot0.TokenType
-slot5 = slot5.JoinGameByShell
-slot6 = {
+slot0.buildShellInvitePayload = slot5
+slot5 = {}
+slot6 = slot0.TokenType
+slot6 = slot6.JoinGameByShell
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
+	"xboxTeamFunctionLocked",
 	"teamFunctionLocked",
 	"preparingRoomConfirm",
 	"alreadyInTeam",
 	"matchStatus"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteJoinTeam
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteJoinTeam
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
+	"xboxTeamFunctionLocked",
 	"teamFunctionLocked",
 	"preparingRoomConfirm",
 	"alreadyInTeam",
 	"matchStatus"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.RequestJoinTeam
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.RequestJoinTeam
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
+	"xboxTeamFunctionLocked",
 	"teamFunctionLocked",
 	"matchStatus"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteEnterWorld
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteEnterWorld
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
+	"xboxTeamFunctionLocked",
 	"preparingRoomBlockEnterWorld",
+	"alreadyInTeam",
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.RequestEnterWorld
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.RequestEnterWorld
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
+	"xboxTeamFunctionLocked",
 	"requestEnterWorldDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteExchangePet
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteExchangePet
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteEnterPhotoWorld
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteEnterPhotoWorld
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteSpaceFollow
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteSpaceFollow
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.ReuquestSpaceFollow
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.ReuquestSpaceFollow
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteQuickSpaceFollow
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteQuickSpaceFollow
+slot7 = {
 	requireOwnerInfo = false
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.InviteHomeCamp
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.InviteHomeCamp
+slot7 = {
 	requireOwnerInfo = true
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot5 = slot0.TokenType
-slot5 = slot5.RequestHomeCamp
-slot6 = {
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot6 = slot0.TokenType
+slot6 = slot6.RequestHomeCamp
+slot7 = {
 	requireOwnerInfo = true
 }
-slot7 = {
+slot8 = {
 	"ugcDestinationEntryFilter"
 }
-slot6.preAcceptDropChecks = slot7
-slot7 = slot0.buildShellInvitePayload
-slot6.buildPayload = slot7
-slot4[slot5] = slot6
-slot0._AcceptTokenConfig = slot4
+slot7.preAcceptDropChecks = slot8
+slot8 = slot0.buildShellInvitePayload
+slot7.buildPayload = slot8
+slot5[slot6] = slot7
+slot0._AcceptTokenConfig = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = tostring
 	--- END OF BLOCK #0 ---
@@ -602,9 +611,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.escapeValue = slot4
+slot0.escapeValue = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = tostring
 	--- END OF BLOCK #0 ---
@@ -693,9 +702,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.unescapeValue = slot4
+slot0.unescapeValue = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -782,9 +791,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.encodeConnectionString = slot4
+slot0.encodeConnectionString = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -821,9 +830,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.joinFields = slot4
+slot0.joinFields = slot5
 
-slot4 = function()
+slot5 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = tostring
 	slot2 = pg
@@ -877,9 +886,73 @@ slot4 = function()
 
 end
 
-slot0.getServerId = slot4
+slot0.getServerId = slot5
 
-slot4 = function(slot0)
+slot5 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = tostring
+	slot2 = GlobalData
+	slot2 = slot2.ServerId
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot2 = ""
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return slot0(slot2)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.getClusterId = slot5
+
+slot5 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = tostring
+	slot2 = GlobalData
+	slot2 = slot2.ServerName
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot2 = ""
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return slot0(slot2)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.getClusterName = slot5
+
+slot5 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return slot0
 	--- END OF BLOCK #0 ---
@@ -888,9 +961,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.normalizeTokenKey = slot4
+slot0.normalizeTokenKey = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = type
@@ -947,9 +1020,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.copyArray = slot4
+slot0.copyArray = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformShellTokenUtils
 	slot1 = slot1._ConnectionStringFieldConfig
@@ -981,9 +1054,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.getConnectionStringFieldConfig = slot4
+slot0.getConnectionStringFieldConfig = slot5
 
-slot4 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = {}
 	slot3 = #slot1
@@ -1085,9 +1158,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot0.findMissingRequiredFields = slot4
+slot0.findMissingRequiredFields = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = type
@@ -1144,9 +1217,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.copyFieldMap = slot4
+slot0.copyFieldMap = slot5
 
-slot4 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = PlatformShellTokenUtils
 	slot2 = slot2.copyFieldMap
@@ -1171,23 +1244,71 @@ slot4 = function(slot0, slot1)
 	slot3 = slot3.getServerId
 	slot3 = slot3()
 	slot2.serverId = slot3
-
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-16, warpins: 2 ---
-	return slot2
+	--- BLOCK #2 16-21, warpins: 2 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2.clusterId
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-25, warpins: 1 ---
+	slot3 = PlatformShellTokenUtils
+	slot3 = slot3.getClusterId
+	slot3 = slot3()
+	slot2.clusterId = slot3
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 26-31, warpins: 2 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2.clusterName
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 32-35, warpins: 1 ---
+	slot3 = PlatformShellTokenUtils
+	slot3 = slot3.getClusterName
+	slot3 = slot3()
+	slot2.clusterName = slot3
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 36-36, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot0.normalizeConnectionFields = slot4
+slot0.normalizeConnectionFields = slot5
 
-slot4 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = ipairs
@@ -1228,9 +1349,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot0.buildRequiredConnectionFields = slot4
+slot0.buildRequiredConnectionFields = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.findMissingRequiredFields
@@ -1301,9 +1422,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.validateBuildRequiredFields = slot4
+slot0.validateBuildRequiredFields = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1379,26 +1500,82 @@ slot4 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 24-32, warpins: 2 ---
+	--- BLOCK #7 24-34, warpins: 2 ---
 	slot4 = PlatformShellTokenUtils
 	slot4 = slot4.buildRequiredConnectionFields
 	slot6 = slot1
 	slot7 = slot3
 	slot4 = slot4(slot6, slot7)
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot1.clusterId
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 35-40, warpins: 1 ---
+	slot5 = #slot4
+	slot5 = slot5 + 1
+	slot6 = {
+		key = "clusterId"
+	}
+	slot7 = slot1.clusterId
+	slot6.value = slot7
+	slot4[slot5] = slot6
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 41-46, warpins: 2 ---
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot1.clusterName
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #9 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 47-52, warpins: 1 ---
+	slot5 = #slot4
+	slot5 = slot5 + 1
+	slot6 = {
+		key = "clusterName"
+	}
+	slot7 = slot1.clusterName
+	slot6.value = slot7
+	slot4[slot5] = slot6
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 53-56, warpins: 2 ---
 	slot5 = PlatformShellTokenUtils
 	slot5 = slot5.encodeConnectionString
 	slot7 = slot4
 
 	return slot5(slot7)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot0.buildConfiguredConnectionString = slot4
+slot0.buildConfiguredConnectionString = slot5
 
-slot4 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = PlatformShellTokenUtils
 	slot2 = slot2.normalizeConnectionFields
@@ -1539,9 +1716,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot0.buildConnectionString = slot4
+slot0.buildConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot8 = PlatformShellTokenUtils
 	slot8 = slot8.buildConnectionString
@@ -1715,9 +1892,9 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot0.buildInviteConnectionString = slot4
+slot0.buildInviteConnectionString = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = PlatformShellTokenUtils
 	slot1 = slot1.getConnectionStringFieldConfig
@@ -1789,9 +1966,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.canBuildConnectionString = slot4
+slot0.canBuildConnectionString = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = PlatformShellTokenUtils
 	slot1 = slot1.canBuildConnectionString
@@ -1804,9 +1981,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.canBuildInviteConnectionString = slot4
+slot0.canBuildInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1821,9 +1998,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildExistingTeamConnectionString = slot4
+slot0.buildExistingTeamConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1838,9 +2015,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildPendingCreateConnectionString = slot4
+slot0.buildPendingCreateConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1855,9 +2032,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildPhotoWorldConnectionString = slot4
+slot0.buildPhotoWorldConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1872,9 +2049,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildEnterWorldInviteConnectionString = slot4
+slot0.buildEnterWorldInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1889,9 +2066,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildDirectTeamInviteConnectionString = slot4
+slot0.buildDirectTeamInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1906,9 +2083,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildDirectTeamPendingCreateConnectionString = slot4
+slot0.buildDirectTeamPendingCreateConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1923,9 +2100,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildPhotoWorldInviteConnectionString = slot4
+slot0.buildPhotoWorldInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1940,9 +2117,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildSpaceFollowInviteConnectionString = slot4
+slot0.buildSpaceFollowInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1957,9 +2134,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildSpaceFollowRequestInviteConnectionString = slot4
+slot0.buildSpaceFollowRequestInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1974,9 +2151,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildQuickTeamSpaceFollowInviteConnectionString = slot4
+slot0.buildQuickTeamSpaceFollowInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -1991,9 +2168,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildHomeCampInviteConnectionString = slot4
+slot0.buildHomeCampInviteConnectionString = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = PlatformShellTokenUtils
 	slot3 = slot3.buildConfiguredConnectionString
@@ -2008,9 +2185,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot0.buildTeamRequestJoinInviteConnectionString = slot4
+slot0.buildTeamRequestJoinInviteConnectionString = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {}
 	slot2 = tostring
@@ -2199,9 +2376,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.parseConnectionString = slot4
+slot0.parseConnectionString = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformShellConst
 	slot1 = slot1.KnownTokenTypes
@@ -2257,9 +2434,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.isKnownTokenType = slot4
+slot0.isKnownTokenType = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = PlatformShellTokenUtils
 	slot1 = slot1.getConnectionStringFieldConfig
@@ -2292,9 +2469,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.getRequiredFields = slot4
+slot0.getRequiredFields = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformShellTokenUtils
 	slot1 = slot1._AcceptTokenConfig
@@ -2326,9 +2503,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.getAcceptTokenConfig = slot4
+slot0.getAcceptTokenConfig = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2402,9 +2579,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.validateRequiredFields = slot4
+slot0.validateRequiredFields = slot5
 
-slot4 = function()
+slot5 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -2446,7 +2623,7 @@ slot4 = function()
 
 end
 
-slot0.scanConnectionStringFieldConfig = slot4
+slot0.scanConnectionStringFieldConfig = slot5
 
 return slot0
 --- END OF BLOCK #0 ---

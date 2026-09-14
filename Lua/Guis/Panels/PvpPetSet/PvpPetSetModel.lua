@@ -1245,7 +1245,7 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-89, warpins: 2 ---
+	--- BLOCK #6 28-98, warpins: 2 ---
 	slot4.level = slot5
 	slot4 = slot1.configData
 	slot5 = TmpPetTemplateData
@@ -1271,6 +1271,15 @@ slot24 = function(slot0, slot1)
 	slot7 = slot7.label
 	slot5 = slot5(slot7)
 	slot4.isBoss = slot5
+	slot4 = slot1.configData
+	slot5 = Utils
+	slot5 = slot5.isLabelRainbow
+	slot7 = TmpPetTemplateData
+	slot8 = slot1.templateId
+	slot7 = slot7[slot8]
+	slot7 = slot7.label
+	slot5 = slot5(slot7)
+	slot4.isMini = slot5
 	slot4 = slot1.configData
 	slot5 = Utils
 	slot5 = slot5.isLabelShiny
@@ -1312,7 +1321,7 @@ slot24 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #7 90-94, warpins: 2 ---
+	--- BLOCK #7 99-103, warpins: 2 ---
 	slot3 = slot1.configData
 	slot4 = slot1.serverData
 	slot4 = slot4.level
@@ -1325,14 +1334,14 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 95-95, warpins: 1 ---
+	--- BLOCK #8 104-104, warpins: 1 ---
 	slot4 = 1
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 96-150, warpins: 2 ---
+	--- BLOCK #9 105-168, warpins: 2 ---
 	slot3.level = slot4
 	slot3 = slot1.configData
 	slot4 = slot1.serverData
@@ -1352,6 +1361,13 @@ slot24 = function(slot0, slot1)
 	slot6 = slot6.label
 	slot4 = slot4(slot6)
 	slot3.isBoss = slot4
+	slot3 = slot1.configData
+	slot4 = Utils
+	slot4 = slot4.isLabelRainbow
+	slot6 = slot1.serverData
+	slot6 = slot6.label
+	slot4 = slot4(slot6)
+	slot3.isMini = slot4
 	slot3 = slot1.configData
 	slot4 = Utils
 	slot4 = slot4.isLabelShiny
@@ -1385,15 +1401,17 @@ slot24 = function(slot0, slot1)
 	slot4 = slot4.weight
 	slot3.weight = slot4
 	slot3 = slot1.configData
-	slot4 = slot1.serverData
-	slot4 = slot4.propertyEnhanced
+	slot4 = Utils
+	slot4 = slot4.isPetPropertyEnhanced
+	slot6 = slot1.serverData
+	slot4 = slot4(slot6)
 	slot3.propertyEnhanced = slot4
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 151-154, warpins: 2 ---
+	--- BLOCK #10 169-172, warpins: 2 ---
 	slot3 = PetData
 	slot3 = slot3[slot2]
 	--- END OF BLOCK #10 ---
@@ -1405,14 +1423,14 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 155-155, warpins: 1 ---
+	--- BLOCK #11 173-173, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 156-171, warpins: 2 ---
+	--- BLOCK #12 174-189, warpins: 2 ---
 	slot4 = slot1.configData
 	slot4.templateId = slot2
 	slot4 = slot1.configData
@@ -1436,14 +1454,14 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 172-172, warpins: 1 ---
+	--- BLOCK #13 190-190, warpins: 1 ---
 	slot5 = {}
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 173-188, warpins: 2 ---
+	--- BLOCK #14 191-206, warpins: 2 ---
 	slot6 = LuaUIUtils
 	slot6 = slot6.getElementInfo
 	slot8 = slot3.elementType
@@ -1467,7 +1485,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 189-191, warpins: 1 ---
+	--- BLOCK #15 207-209, warpins: 1 ---
 	slot10 = slot3.canClimb
 	--- END OF BLOCK #15 ---
 
@@ -1478,14 +1496,14 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 192-192, warpins: 2 ---
+	--- BLOCK #16 210-210, warpins: 2 ---
 	slot10 = nil
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 193-196, warpins: 2 ---
+	--- BLOCK #17 211-214, warpins: 2 ---
 	slot9.canClimb = slot10
 	slot10 = slot3.canGlide
 	--- END OF BLOCK #17 ---
@@ -1497,7 +1515,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 197-199, warpins: 1 ---
+	--- BLOCK #18 215-217, warpins: 1 ---
 	slot10 = slot3.canGlide
 	--- END OF BLOCK #18 ---
 
@@ -1508,14 +1526,14 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #19 200-200, warpins: 2 ---
+	--- BLOCK #19 218-218, warpins: 2 ---
 	slot10 = nil
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 201-204, warpins: 2 ---
+	--- BLOCK #20 219-222, warpins: 2 ---
 	slot9.canGlide = slot10
 	slot10 = slot3.canSwim
 	--- END OF BLOCK #20 ---
@@ -1527,7 +1545,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #21 205-207, warpins: 1 ---
+	--- BLOCK #21 223-225, warpins: 1 ---
 	slot10 = slot3.canSwim
 	--- END OF BLOCK #21 ---
 
@@ -1538,14 +1556,14 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #22 208-208, warpins: 2 ---
+	--- BLOCK #22 226-226, warpins: 2 ---
 	slot10 = nil
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 209-215, warpins: 2 ---
+	--- BLOCK #23 227-233, warpins: 2 ---
 	slot9.canSwim = slot10
 	slot8.exploreSkillsLevel = slot9
 	slot10 = slot0
@@ -1635,11 +1653,7 @@ slot24 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 40-55, warpins: 1 ---
-	slot8 = slot1.configData
-	slot8 = slot8.talentPointDetail
-	slot9 = slot7.talentPoint
-	slot8[slot6] = slot9
+	--- BLOCK #5 40-51, warpins: 1 ---
 	slot8 = slot1.configData
 	slot8 = slot8.strengthenPointDetail
 	slot9 = slot7.strengthenPoint
@@ -1657,7 +1671,7 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 56-57, warpins: 2 ---
+	--- BLOCK #6 52-53, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -1665,7 +1679,7 @@ slot24 = function(slot0, slot1)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 58-65, warpins: 1 ---
+	--- BLOCK #7 54-61, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.pvp
@@ -1681,7 +1695,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 66-69, warpins: 1 ---
+	--- BLOCK #8 62-65, warpins: 1 ---
 	slot3 = slot0.context
 	slot3 = slot3.isRogue
 	--- END OF BLOCK #8 ---
@@ -1693,7 +1707,7 @@ slot24 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 70-82, warpins: 1 ---
+	--- BLOCK #9 66-78, warpins: 1 ---
 	slot3 = slot1.configData
 	slot6 = slot0
 	slot4 = slot0.getRemainStrengthenPoint
@@ -1711,7 +1725,7 @@ slot24 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 83-88, warpins: 2 ---
+	--- BLOCK #10 79-84, warpins: 2 ---
 	slot3 = slot1.configData
 	slot4 = 0
 	slot3.remainStrengthenPoints = slot4
@@ -1724,7 +1738,7 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 89-89, warpins: 2 ---
+	--- BLOCK #11 85-85, warpins: 2 ---
 	return
 	--- END OF BLOCK #11 ---
 

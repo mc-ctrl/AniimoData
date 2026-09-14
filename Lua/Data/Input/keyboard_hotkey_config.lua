@@ -1,4 +1,4 @@
---- BLOCK #0 1-348, warpins: 1 ---
+--- BLOCK #0 1-344, warpins: 1 ---
 slot0 = {
 	groupName = "Keyboard&Mouse"
 }
@@ -15,7 +15,8 @@ slot1 = {
 	"<Keyboard>/leftAlt",
 	"<Keyboard>/rightAlt",
 	"<Keyboard>/escape",
-	"<Keyboard>/anykey"
+	"<Keyboard>/anykey",
+	"<Keyboard>/n"
 }
 slot0.hotkeyExcludes = slot1
 slot1 = {}
@@ -78,8 +79,6 @@ slot1["Bind/SpecialAbility"] = slot2
 slot2 = {}
 slot1["Bind/OpenPetBall"] = slot2
 slot2 = {}
-slot1["Bind/OpenFeedback"] = slot2
-slot2 = {}
 slot1["Bind/OpenSetup"] = slot2
 slot2 = {}
 slot1["Bind/OpenHelp"] = slot2
@@ -118,8 +117,6 @@ slot1["Bind/SwitchPetTeam"] = slot2
 slot2 = {}
 slot1["Bind/SwitchPetMode"] = slot2
 slot2 = {}
-slot1["Bind/SwitchSkillGroup"] = slot2
-slot2 = {}
 slot1["Bind/SkillChainAttack"] = slot2
 slot2 = {}
 slot1["Bind/ItemDetail"] = slot2
@@ -129,8 +126,6 @@ slot2 = {}
 slot1["Bind/TrackOpenSpecial"] = slot2
 slot2 = {}
 slot1["Bind/OpenSpecialTrain"] = slot2
-slot2 = {}
-slot1["Bind/CallFriends"] = slot2
 slot2 = {}
 slot1["Bind/SwitchPage"] = slot2
 slot2 = {}
@@ -166,507 +161,512 @@ slot1["Bind/HomelandManage"] = slot2
 slot0.hotkeyActions = slot1
 slot1 = {}
 slot2 = {
+	target = "Player/Move",
 	bindingIndex = 1,
-	src = "Bind/MoveUp",
-	target = "Player/Move"
+	src = "Bind/MoveUp"
 }
 slot1[1] = slot2
 slot2 = {
+	target = "Player/Move",
 	bindingIndex = 2,
-	src = "Bind/MoveDown",
-	target = "Player/Move"
+	src = "Bind/MoveDown"
 }
 slot1[2] = slot2
 slot2 = {
+	target = "Player/Move",
 	bindingIndex = 3,
-	src = "Bind/MoveLeft",
-	target = "Player/Move"
+	src = "Bind/MoveLeft"
 }
 slot1[3] = slot2
 slot2 = {
+	target = "Player/Move",
 	bindingIndex = 4,
-	src = "Bind/MoveRight",
-	target = "Player/Move"
+	src = "Bind/MoveRight"
 }
 slot1[4] = slot2
 slot2 = {
-	src = "Bind/Jump",
-	target = "Player/Jump"
+	target = "Player/Jump",
+	src = "Bind/Jump"
 }
 slot1[5] = slot2
 slot2 = {
-	src = "Bind/Sprint",
-	target = "Player/StartSprint"
+	target = "Player/StartSprint",
+	src = "Bind/Sprint"
 }
 slot1[6] = slot2
 slot2 = {
-	src = "Bind/ClimbJump",
-	target = "Player/ClimbJump"
+	target = "Player/ClimbJump",
+	src = "Bind/ClimbJump"
 }
 slot1[7] = slot2
 slot2 = {
+	target = "Player/ClimbJump2",
 	bindingIndex = 2,
-	src = "Bind/Jump",
-	target = "Player/ClimbJump2"
+	src = "Bind/Jump"
 }
 slot1[8] = slot2
 slot2 = {
-	src = "Bind/SpecialAbility",
-	target = "Player/SpecialAbility"
+	target = "Player/SpecialAbility",
+	src = "Bind/SpecialAbility"
 }
 slot1[9] = slot2
 slot2 = {
-	src = "Bind/Sprint",
-	target = "Player/FastClimb"
+	target = "Player/FastClimb",
+	src = "Bind/Sprint"
 }
 slot1[10] = slot2
 slot2 = {
-	src = "Bind/Pet1",
-	target = "Hud/Pet1"
+	target = "Hud/Pet1",
+	src = "Bind/Pet1"
 }
 slot1[11] = slot2
 slot2 = {
-	src = "Bind/Pet2",
-	target = "Hud/Pet2"
+	target = "Hud/Pet2",
+	src = "Bind/Pet2"
 }
 slot1[12] = slot2
 slot2 = {
-	src = "Bind/Pet3",
-	target = "Hud/Pet3"
+	target = "Hud/Pet3",
+	src = "Bind/Pet3"
 }
 slot1[13] = slot2
 slot2 = {
-	src = "Bind/Pet4",
-	target = "Hud/Pet4"
+	target = "Hud/Pet4",
+	src = "Bind/Pet4"
 }
 slot1[14] = slot2
 slot2 = {
-	src = "Bind/SwitchPet",
-	target = "Hud/SwitchPet"
+	target = "Hud/SwitchPet",
+	src = "Bind/SwitchPet"
 }
 slot1[15] = slot2
 slot2 = {
-	src = "Bind/NormalAttack",
-	target = "Hud/ExitDelayExplore"
+	target = "Hud/ExitDelayExplore",
+	src = "Bind/NormalAttack"
 }
 slot1[16] = slot2
 slot2 = {
-	src = "Bind/Skill1",
-	target = "Hud/SkillQ"
+	target = "Hud/SkillQ",
+	src = "Bind/Skill1"
 }
 slot1[17] = slot2
 slot2 = {
-	src = "Bind/Skill2",
-	target = "Hud/SkillE"
+	target = "Hud/SkillE",
+	src = "Bind/Skill2"
 }
 slot1[18] = slot2
 slot2 = {
-	src = "Bind/Skill3",
-	target = "Hud/SkillR"
+	target = "Hud/SkillR",
+	src = "Bind/Skill3"
 }
 slot1[19] = slot2
 slot2 = {
-	src = "Bind/ExploreSkill",
-	target = "Hud/ExploreSkill"
+	target = "Hud/ExploreSkill",
+	src = "Bind/ExploreSkill"
 }
 slot1[20] = slot2
 slot2 = {
-	src = "Bind/Item1",
-	target = "Hud/Extra1"
+	target = "Hud/Extra1",
+	src = "Bind/Item1"
 }
 slot1[21] = slot2
 slot2 = {
-	src = "Bind/Item2",
-	target = "Hud/Extra2"
+	target = "Hud/Extra2",
+	src = "Bind/Item2"
 }
 slot1[22] = slot2
 slot2 = {
-	src = "Bind/Item3",
-	target = "Hud/Extra3"
+	target = "Hud/Extra3",
+	src = "Bind/Item3"
 }
 slot1[23] = slot2
 slot2 = {
-	src = "Bind/Item4",
-	target = "Hud/Extra4"
+	target = "Hud/Extra4",
+	src = "Bind/Item4"
 }
 slot1[24] = slot2
 slot2 = {
-	src = "Bind/NormalAttack",
-	target = "Hud/NormalAttack"
+	target = "Hud/NormalAttack",
+	src = "Bind/NormalAttack"
 }
 slot1[25] = slot2
 slot2 = {
-	src = "Bind/Go",
-	target = "Hud/Go"
+	target = "Hud/Go",
+	src = "Bind/Go"
 }
 slot1[26] = slot2
 slot2 = {
-	src = "Bind/Stop",
-	target = "Hud/Stop"
+	target = "Hud/Stop",
+	src = "Bind/Stop"
 }
 slot1[27] = slot2
 slot2 = {
-	src = "Bind/ItemModifier",
-	target = "Hud/BallMenu"
+	target = "Hud/BallMenu",
+	src = "Bind/ItemModifier"
 }
 slot1[28] = slot2
 slot2 = {
-	src = "Bind/Interact",
-	target = "Hud/Interact"
+	target = "Hud/Interact",
+	src = "Bind/Interact"
 }
 slot1[29] = slot2
 slot2 = {
-	src = "Bind/Skill1",
-	target = "Hud/QteLeft"
+	target = "Hud/QteLeft",
+	src = "Bind/Skill1"
 }
 slot1[30] = slot2
 slot2 = {
-	src = "Bind/Skill2",
-	target = "Hud/QteRight"
+	target = "Hud/QteRight",
+	src = "Bind/Skill2"
 }
 slot1[31] = slot2
 slot2 = {
-	src = "Bind/QuickPhoto",
-	target = "Hud/QuickPhoto"
+	target = "Hud/QuickPhoto",
+	src = "Bind/QuickPhoto"
 }
 slot1[32] = slot2
 slot2 = {
-	src = "Bind/OpenHandBook",
-	target = "Hud/OpenHandBook"
+	target = "Hud/OpenHandBook",
+	src = "Bind/OpenHandBook"
 }
 slot1[33] = slot2
 slot2 = {
-	src = "Bind/OpenBag",
-	target = "Hud/OpenBag"
+	target = "Hud/PetFirstOpenPetHandBook",
+	src = "Bind/OpenHandBook"
 }
 slot1[34] = slot2
 slot2 = {
-	src = "Bind/OpenInformation",
-	target = "Hud/OpenInformation"
+	target = "Hud/OpenBag",
+	src = "Bind/OpenBag"
 }
 slot1[35] = slot2
 slot2 = {
-	src = "Bind/OpenPet",
-	target = "Hud/OpenPet"
+	target = "Hud/OpenInformation",
+	src = "Bind/OpenInformation"
 }
 slot1[36] = slot2
 slot2 = {
-	src = "Bind/OpenMap",
-	target = "Hud/OpenMap"
+	target = "Hud/OpenPet",
+	src = "Bind/OpenPet"
 }
 slot1[37] = slot2
 slot2 = {
-	src = "Bind/OpenMap",
-	target = "Hud/AIAssistantOpenMap"
+	target = "Hud/GetSinglePet",
+	src = "Bind/OpenPet"
 }
 slot1[38] = slot2
 slot2 = {
-	src = "Bind/OpenMission",
-	target = "Hud/OpenMission"
+	target = "Hud/OpenMap",
+	src = "Bind/OpenMap"
 }
 slot1[39] = slot2
 slot2 = {
-	src = "Bind/OpenHelp",
-	target = "Hud/OpenHelp"
+	target = "Hud/AIAssistantOpenMap",
+	src = "Bind/OpenMap"
 }
 slot1[40] = slot2
 slot2 = {
-	src = "Bind/battlePass",
-	target = "Hud/battlePass"
+	target = "Hud/OpenMission",
+	src = "Bind/OpenMission"
 }
 slot1[41] = slot2
 slot2 = {
-	src = "Bind/OpenFeedback",
-	target = "Hud/OpenFeedback"
+	target = "Hud/OpenHelp",
+	src = "Bind/OpenHelp"
 }
 slot1[42] = slot2
 slot2 = {
-	src = "Bind/SwitchPetTeam",
-	target = "Hud/SwitchPetTeam"
+	target = "Hud/battlePass",
+	src = "Bind/battlePass"
 }
 slot1[43] = slot2
 slot2 = {
-	src = "Bind/SwitchPetMode",
-	target = "Hud/SwitchPetMode"
+	target = "Hud/SwitchPetTeam",
+	src = "Bind/SwitchPetTeam"
 }
 slot1[44] = slot2
 slot2 = {
-	src = "Bind/OpenPVP",
-	target = "Hud/OpenPVP"
+	target = "Hud/SwitchPetMode",
+	src = "Bind/SwitchPetMode"
 }
 slot1[45] = slot2
 slot2 = {
-	src = "Bind/OpenPetBall",
-	target = "Hud/OpenPetBall"
+	target = "Hud/OpenPVP",
+	src = "Bind/OpenPVP"
 }
 slot1[46] = slot2
 slot2 = {
-	src = "Bind/SwitchSkillGroup",
-	target = "Hud/SwitchSkillGroup"
+	target = "Hud/OpenPetBall",
+	src = "Bind/OpenPetBall"
 }
 slot1[47] = slot2
 slot2 = {
-	src = "Bind/SkillChainAttack",
-	target = "Hud/SkillChainAttack"
+	target = "Hud/SkillChainAttack",
+	src = "Bind/SkillChainAttack"
 }
 slot1[48] = slot2
 slot2 = {
-	src = "Bind/ItemDetail",
-	target = "Hud/ItemDetail"
+	target = "Hud/ItemDetail",
+	src = "Bind/ItemDetail"
 }
 slot1[49] = slot2
 slot2 = {
-	src = "Bind/VoiceChannel",
-	target = "Hud/TeamSpeech"
+	target = "Hud/TeamSpeech",
+	src = "Bind/VoiceChannel"
 }
 slot1[50] = slot2
 slot2 = {
-	src = "Bind/VoiceChannel",
-	target = "Hud/PushTalk"
+	target = "Hud/PushTalk",
+	src = "Bind/VoiceChannel"
 }
 slot1[51] = slot2
 slot2 = {
-	src = "Bind/OpenOrb",
-	target = "Hud/OpenOrb"
+	target = "Hud/OpenOrb",
+	src = "Bind/OpenOrb"
 }
 slot1[52] = slot2
 slot2 = {
-	src = "Bind/OpenPetBall",
-	target = "Hud/OpenPetBall"
+	target = "Hud/OpenPetBall",
+	src = "Bind/OpenPetBall"
 }
 slot1[53] = slot2
 slot2 = {
-	src = "Bind/TrackOpenSpecial",
-	target = "Hud/TrackOpenSpecial"
+	target = "Hud/TrackOpenSpecial",
+	src = "Bind/TrackOpenSpecial"
 }
 slot1[54] = slot2
 slot2 = {
-	src = "Bind/OpenSpecialTrain",
-	target = "Hud/OpenSpecialTrain"
+	target = "Hud/OpenSpecialTrain",
+	src = "Bind/OpenSpecialTrain"
 }
 slot1[55] = slot2
 slot2 = {
-	src = "Bind/CallFriends",
-	target = "Hud/CallFriends"
+	target = "Hud/SwitchPage",
+	src = "Bind/SwitchPage"
 }
 slot1[56] = slot2
 slot2 = {
-	src = "Bind/SwitchPage",
-	target = "Hud/SwitchPage"
+	target = "Hud/Extra1",
+	src = "Bind/Extra1"
 }
 slot1[57] = slot2
 slot2 = {
-	src = "Bind/Extra1",
-	target = "Hud/Extra1"
+	target = "Hud/Service",
+	src = "Bind/Service"
 }
 slot1[58] = slot2
 slot2 = {
-	src = "Bind/Service",
-	target = "Hud/Service"
+	target = "Hud/OpenSchoolGuide",
+	src = "Bind/OpenSchoolGuide"
 }
 slot1[59] = slot2
 slot2 = {
-	src = "Bind/OpenSchoolGuide",
-	target = "Hud/OpenSchoolGuide"
+	target = "Hud/HomelandLog",
+	src = "Bind/HomelandLog"
 }
 slot1[60] = slot2
 slot2 = {
-	src = "Bind/HomelandLog",
-	target = "Hud/HomelandLog"
+	target = "Hud/HomelandPet",
+	src = "Bind/HomelandPet"
 }
 slot1[61] = slot2
 slot2 = {
-	src = "Bind/HomelandPet",
-	target = "Hud/HomelandPet"
+	target = "Hud/HomelandBuild",
+	src = "Bind/HomelandBuild"
 }
 slot1[62] = slot2
 slot2 = {
-	src = "Bind/HomelandBuild",
-	target = "Hud/HomelandBuild"
+	target = "Hud/HomelandStore",
+	src = "Bind/HomelandStore"
 }
 slot1[63] = slot2
 slot2 = {
-	src = "Bind/HomelandStore",
-	target = "Hud/HomelandStore"
+	target = "Hud/HomelandManage",
+	src = "Bind/HomelandManage"
 }
 slot1[64] = slot2
 slot2 = {
-	src = "Bind/HomelandManage",
-	target = "Hud/HomelandManage"
+	target = "Hud/DungeonPhoto",
+	src = "Bind/QuickPhoto"
 }
 slot1[65] = slot2
 slot2 = {
-	src = "Bind/QuickPhoto",
-	target = "Hud/DungeonPhoto"
+	target = "Hud/Snapshot",
+	src = "Bind/Snapshot"
 }
 slot1[66] = slot2
 slot2 = {
-	src = "Bind/Snapshot",
-	target = "Hud/Snapshot"
+	target = "Hud/OpenEmotion",
+	src = "Bind/OpenEmotion"
 }
 slot1[67] = slot2
 slot2 = {
-	src = "Bind/OpenEmotion",
-	target = "Hud/OpenEmotion"
+	target = "Hud/HomelandFurnitureStore",
+	src = "Bind/HomelandFurnitureStore"
 }
 slot1[68] = slot2
 slot2 = {
-	src = "Bind/HomelandFurnitureStore",
-	target = "Hud/HomelandFurnitureStore"
+	target = "Hud/HomelandPlantBook",
+	src = "Bind/HomelandPlantBook"
 }
 slot1[69] = slot2
 slot2 = {
-	src = "Bind/HomelandPlantBook",
-	target = "Hud/HomelandPlantBook"
+	target = "Hud/HomelandMainPage",
+	src = "Bind/HomelandMainPage"
 }
 slot1[70] = slot2
 slot2 = {
-	src = "Bind/HomelandMainPage",
-	target = "Hud/HomelandMainPage"
+	target = "Hud/HomelandDesign",
+	src = "Bind/HomelandDesign"
 }
 slot1[71] = slot2
 slot2 = {
-	src = "Bind/Shop",
-	target = "Hud/Shop"
+	target = "Hud/HomelandSeason",
+	src = "Bind/HomelandSeason"
 }
 slot1[72] = slot2
 slot2 = {
-	src = "Bind/Rule",
-	target = "Hud/Rule"
+	target = "Hud/Shop",
+	src = "Bind/Shop"
 }
 slot1[73] = slot2
 slot2 = {
-	src = "Bind/ShowCursor",
-	target = "Camera/ShowCursor"
+	target = "Hud/Rule",
+	src = "Bind/Rule"
 }
 slot1[74] = slot2
 slot2 = {
-	src = "Bind/CameraZoom",
-	target = "Camera/CameraZoom"
+	target = "Camera/ShowCursor",
+	src = "Bind/ShowCursor"
 }
 slot1[75] = slot2
 slot2 = {
-	src = "Bind/Confirm",
-	target = "Common/Confirm"
+	target = "Camera/CameraZoom",
+	src = "Bind/CameraZoom"
 }
 slot1[76] = slot2
 slot2 = {
-	src = "Bind/CancelBind",
-	target = "Common/Cancel"
+	target = "Common/Confirm",
+	src = "Bind/Confirm"
 }
 slot1[77] = slot2
 slot2 = {
-	src = "Bind/Lock",
-	target = "Skill/LockTarget"
+	target = "Common/Cancel",
+	src = "Bind/CancelBind"
 }
 slot1[78] = slot2
 slot2 = {
-	bindingIndex = 2,
-	src = "Bind/Pet1",
-	target = "Skill/SupportSkill1"
+	target = "Skill/LockTarget",
+	src = "Bind/Lock"
 }
 slot1[79] = slot2
 slot2 = {
+	target = "Skill/SupportSkill1",
 	bindingIndex = 2,
-	src = "Bind/Pet2",
-	target = "Skill/SupportSkill2"
+	src = "Bind/Pet1"
 }
 slot1[80] = slot2
 slot2 = {
+	target = "Skill/SupportSkill2",
 	bindingIndex = 2,
-	src = "Bind/Pet3",
-	target = "Skill/SupportSkill3"
+	src = "Bind/Pet2"
 }
 slot1[81] = slot2
 slot2 = {
+	target = "Skill/SupportSkill3",
 	bindingIndex = 2,
-	src = "Bind/Pet4",
-	target = "Skill/SupportSkill4"
+	src = "Bind/Pet3"
 }
 slot1[82] = slot2
 slot2 = {
-	src = "Bind/NormalAttack",
-	target = "Skill/PutItem"
+	target = "Skill/SupportSkill4",
+	bindingIndex = 2,
+	src = "Bind/Pet4"
 }
 slot1[83] = slot2
 slot2 = {
-	src = "Bind/SwitchTeamNegative",
-	target = "Pet/SwitchTeamNegative"
+	target = "Skill/PutItem",
+	src = "Bind/NormalAttack"
 }
 slot1[84] = slot2
 slot2 = {
-	src = "Bind/SwitchTeamPositive",
-	target = "Pet/SwitchTeamPositive"
+	target = "Pet/SwitchTeamNegative",
+	src = "Bind/SwitchTeamNegative"
 }
 slot1[85] = slot2
 slot2 = {
-	src = "Bind/NormalAttack",
-	target = "Catch/Throw"
+	target = "Pet/SwitchTeamPositive",
+	src = "Bind/SwitchTeamPositive"
 }
 slot1[86] = slot2
 slot2 = {
-	src = "Bind/SwitchCatchMode",
-	target = "Catch/SwitchCatchMode"
+	target = "Catch/Throw",
+	src = "Bind/NormalAttack"
 }
 slot1[87] = slot2
 slot2 = {
-	src = "Bind/Lock",
-	target = "Catch/Focus"
+	target = "Catch/SwitchCatchMode",
+	src = "Bind/SwitchCatchMode"
 }
 slot1[88] = slot2
 slot2 = {
-	bindingIndex = 2,
-	src = "Bind/MoveUp",
-	target = "BallDrive/Move"
+	target = "Catch/Focus",
+	src = "Bind/Lock"
 }
 slot1[89] = slot2
 slot2 = {
-	bindingIndex = 3,
-	src = "Bind/MoveDown",
-	target = "BallDrive/Move"
+	target = "BallDrive/Move",
+	bindingIndex = 2,
+	src = "Bind/MoveUp"
 }
 slot1[90] = slot2
 slot2 = {
-	bindingIndex = 4,
-	src = "Bind/MoveLeft",
-	target = "BallDrive/Move"
+	target = "BallDrive/Move",
+	bindingIndex = 3,
+	src = "Bind/MoveDown"
 }
 slot1[91] = slot2
 slot2 = {
-	bindingIndex = 5,
-	src = "Bind/MoveRight",
-	target = "BallDrive/Move"
+	target = "BallDrive/Move",
+	bindingIndex = 4,
+	src = "Bind/MoveLeft"
 }
 slot1[92] = slot2
 slot2 = {
-	src = "Bind/Skill2",
-	target = "BallDrive/Cancel"
+	target = "BallDrive/Move",
+	bindingIndex = 5,
+	src = "Bind/MoveRight"
 }
 slot1[93] = slot2
 slot2 = {
-	bindingIndex = 2,
-	src = "Bind/Pet1",
-	target = "Temp/SupportSkill1"
+	target = "BallDrive/Cancel",
+	src = "Bind/Skill2"
 }
 slot1[94] = slot2
 slot2 = {
+	target = "Temp/SupportSkill1",
 	bindingIndex = 2,
-	src = "Bind/Pet2",
-	target = "Temp/SupportSkill2"
+	src = "Bind/Pet1"
 }
 slot1[95] = slot2
 slot2 = {
+	target = "Temp/SupportSkill2",
 	bindingIndex = 2,
-	src = "Bind/Pet3",
-	target = "Temp/SupportSkill3"
+	src = "Bind/Pet2"
 }
 slot1[96] = slot2
 slot2 = {
+	target = "Temp/SupportSkill3",
 	bindingIndex = 2,
-	src = "Bind/Pet4",
-	target = "Temp/SupportSkill4"
+	src = "Bind/Pet3"
 }
 slot1[97] = slot2
+slot2 = {
+	target = "Temp/SupportSkill4",
+	bindingIndex = 2,
+	src = "Bind/Pet4"
+}
+slot1[98] = slot2
 slot0.relativeActions = slot1
 
 return slot0

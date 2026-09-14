@@ -385,9 +385,9 @@ slot4 = function(slot0, slot1)
 	slot14 = slot10
 	slot11 = slot11(slot13, slot14)
 	slot12 = {
-		loadType = -1,
 		statesStr = "",
-		logicIdx = -1
+		logicIdx = -1,
+		loadType = -1
 	}
 	slot12.id = slot10
 	slot13 = {}

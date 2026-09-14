@@ -1,4 +1,4 @@
---- BLOCK #0 1-143, warpins: 1 ---
+--- BLOCK #0 1-183, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,13 +30,13 @@ slot9 = require
 slot11 = "Utils.GuideUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.HotkeyConst"
+slot12 = "Data.guide_step_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.guide_step_data"
+slot13 = "Const.MessageName"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.MessageName"
+slot14 = "GameApp.Guide.GuideInputUtils"
 slot12 = slot12(slot14)
 slot13 = CS
 slot13 = slot13.FunPlus
@@ -57,17 +57,19 @@ slot17 = slot17(slot19, slot20)
 slot18 = require
 slot20 = "Utils.ClientTextUtils"
 slot18 = slot18(slot20)
-slot19 = {}
-slot20 = slot12.INPUT_DEVICE_CHANGED
-slot21 = {
+slot19 = "guidePanelDrag"
+slot20 = 0.083
+slot21 = {}
+slot22 = slot11.INPUT_DEVICE_CHANGED
+slot23 = {
 	"onInputDeviceChanged",
 	true
 }
-slot19[slot20] = slot21
-slot17.messages = slot19
+slot21[slot22] = slot23
+slot17.messages = slot21
 
-slot19 = function(slot0, slot1)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -77,6 +79,10 @@ slot19 = function(slot0, slot1)
 
 	slot2 = 0.77
 	slot0.aiCallORFinishAnimTime = slot2
+	slot2 = slot0.view
+	slot2 = slot2.uGuide
+	slot2 = slot2.maskAnimType
+	slot0.defaultMaskAnimType = slot2
 	slot4 = slot0
 	slot2 = slot0.init
 
@@ -89,10 +95,54 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.onCreate = slot19
+slot17.onCreate = slot21
 
-slot19 = function(slot0, slot1)
-	--- BLOCK #0 1-1, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.uGuide
+	slot2 = slot0.stepInfo
+	slot2 = slot2.maskAnimType
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot2 = slot0.defaultMaskAnimType
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot1.maskAnimType = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.refreshMaskAnimType = slot21
+
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshNextStepHotKeyContent
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.refreshGroupSkipHotKeyContent
+
+	slot2(slot4)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -100,9 +150,111 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.onInputDeviceChanged = slot19
+slot17.onInputDeviceChanged = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.curStepCfg
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.view
+
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-15, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.getNextStepActionPath
+	slot1 = slot1(slot3)
+	slot2 = NotNil
+	slot4 = slot0.guidePopupKeyHotKeyContent
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-20, warpins: 1 ---
+	slot2 = slot0.guidePopupKeyHotKeyContent
+	slot4 = slot2
+	slot2 = slot2.SetHotKeyPaths
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-31, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.aiCallOR
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "keyHotKeyContent"
+	slot2 = slot2(slot4, slot5)
+	slot3 = NotNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-35, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.SetHotKeyPaths
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 36-36, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot17.refreshNextStepHotKeyContent = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	slot0.guideVXCache = slot1
@@ -114,9 +266,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.init = slot19
+slot17.init = slot21
 
-slot19 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = xpcall
 
@@ -230,138 +382,35 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot17.progressToValueSafely = slot19
+slot17.progressToValueSafely = slot21
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-63, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.virtualBtn
+slot21 = function(slot0)
+	--- BLOCK #0 1-53, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.addNextStepBindings
+	slot3 = slot0
+	slot4 = slot0.view
+	slot4 = slot4.widget
+	slot4 = slot4.gameObject
+	slot5 = "guideNextStep"
+	slot6 = 100
 
-	slot2 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.curStepId
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.onSimulateClickTargetBtn
+	slot1(slot3, slot4, slot5, slot6)
 
-		slot1(slot3)
-
-		slot1 = self
-		slot1 = slot1.curStepId
-		--- END OF BLOCK #0 ---
-
-		if slot1 == slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #1 11-16, warpins: 1 ---
-		slot1 = NotNil
-		slot3 = self
-		slot3 = slot3.view
-		slot1 = slot1(slot3)
-		--- END OF BLOCK #1 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #2 17-22, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.uGuide
-		slot1 = slot1.onCloseGuideStep
-		--- END OF BLOCK #2 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 23-32, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.uGuide
-		slot1 = slot1.onCloseGuideStep
-		slot3 = self
-		slot3 = slot3.curStepId
-		slot4 = Const
-		slot4 = slot4.GUIDE_STEP_FINISH_REASON
-		slot4 = slot4.CLICK_VIRTUAL_BTN
-
-		slot1(slot3, slot4)
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 33-33, warpins: 4 ---
-		return
-		--- END OF BLOCK #4 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
-	slot1 = slot0.view
-	slot1 = slot1.alphaMaskBtn
-
-	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.closeAICallPanel
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
-	slot1 = slot0.view
-	slot1 = slot1.blackMaskBtn
-
-	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.closeAICallPanel
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
 	slot3 = slot0.view
-	slot3 = slot3.aiCallOR
+	slot3 = slot3.widget
 	slot3 = slot3.gameObject
-	slot4 = "skipTypewriter"
+	slot4 = "guideGroupSkipKeyboardBind"
 	slot1 = slot1(slot3, slot4)
-	slot2 = "Common/MouseLeftButton"
-	slot1.actionPath = slot2
 	slot2 = true
 	slot1.isVirtual = slot2
+	slot2 = 102
+	slot1.priority = slot2
+	slot2 = GuideInputUtils
+	slot2 = slot2.GROUP_SKIP_KEYBOARD_ACTION
+	slot1.actionPath = slot2
 
 	slot2 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
@@ -371,137 +420,259 @@ slot19 = function(slot0)
 		if slot1 == "Performed" then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #1 4-7, warpins: 1 ---
+		--- BLOCK #1 4-11, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.input
+		slot3 = slot1
+		slot1 = slot1.isUsingGamepad
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 12-15, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.groupSkipEnabled
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 16-21, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
-		slot1 = slot1.closeAICallPanel
+		slot1 = slot1.onGroupSkipClick
 
 		slot1(slot3)
 
-		--- END OF BLOCK #1 ---
+		slot1 = false
 
-		FLOW; TARGET BLOCK #2
+		return slot1
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #2 8-9, warpins: 2 ---
+		--- BLOCK #4 22-23, warpins: 4 ---
 		slot1 = true
 
 		return slot1
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 
 
 	end
 
 	slot1.luaTrigger = slot2
-	slot2 = KeyBindingPro
-	slot2 = slot2.GetOrAddKeyBindingByName
-	slot4 = slot0.view
-	slot4 = slot4.aiCallOR
-	slot4 = slot4.gameObject
-	slot5 = "confirmBind"
+	slot2 = GuideInputUtils
+	slot2 = slot2.addGamepadGroupSkipBinding
+	slot4 = slot0
+	slot5 = slot0.view
+	slot5 = slot5.widget
+	slot5 = slot5.gameObject
+	slot6 = "guideGroupSkipGamepadBind"
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.view
+	slot2 = slot2.virtualBtn
+
+	slot3 = function()
+		--- BLOCK #0 1-12, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curStepId
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.onSimulateClickTargetBtn
+		slot4 = self
+		slot4 = slot4.virtualBtnTargetTrans
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot1 = slot1.curStepId
+		--- END OF BLOCK #0 ---
+
+		if slot1 == slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #1 13-23, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.navMgr
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.input
+		slot4 = slot2
+		slot2 = slot2.isUsingGamepad
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #1 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #2 24-25, warpins: 1 ---
+		--- END OF BLOCK #2 ---
+
+		if slot1 ~= nil then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #3 26-28, warpins: 1 ---
+		slot2 = slot1.IsVirtualMouseMode
+		--- END OF BLOCK #3 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #4 29-32, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.stepInfo
+		--- END OF BLOCK #4 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 33-37, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.stepInfo
+		slot2 = slot2.onVirtualMouseConfirm
+		--- END OF BLOCK #5 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #6 38-43, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.stepInfo
+		slot2 = slot2.onVirtualMouseConfirm
+		slot2 = slot2()
+
+		--- END OF BLOCK #6 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 44-44, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 45-50, warpins: 7 ---
+		slot2 = NotNil
+		slot4 = self
+		slot4 = slot4.view
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #8 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #9 51-56, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.uGuide
+		slot2 = slot2.onCloseGuideStep
+		--- END OF BLOCK #9 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 57-66, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.uGuide
+		slot2 = slot2.onCloseGuideStep
+		slot4 = self
+		slot4 = slot4.curStepId
+		slot5 = Const
+		slot5 = slot5.GUIDE_STEP_FINISH_REASON
+		slot5 = slot5.CLICK_VIRTUAL_BTN
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 67-67, warpins: 4 ---
+		return
+		--- END OF BLOCK #11 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	slot2 = slot0.view
+	slot2 = slot2.aiCallOR
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "nextBtn"
 	slot2 = slot2(slot4, slot5)
-	slot3 = true
-	slot2.isVirtual = slot3
-	slot3 = 100
-	slot2.priority = slot3
-	slot3 = HotkeyConst
-	slot3 = slot3.INPUT_MAP_ACTION_KEY
-	slot3 = slot3.Confirm
-	slot2.actionPath = slot3
+	slot2 = slot2.gameObject
+	slot3 = GuideInputUtils
+	slot3 = slot3.addNextStepBindings
+	slot5 = slot0
+	slot6 = slot2
+	slot7 = "next"
+	slot8 = 101
 
-	slot3 = function(slot0)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot1 = slot0.phase
-		--- END OF BLOCK #0 ---
-
-		if slot1 == "Performed" then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.closeAICallPanel
-
-		slot1(slot3)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 8-9, warpins: 2 ---
-		slot1 = true
-
-		return slot1
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot2.luaTrigger = slot3
-	slot3 = slot0.view
-	slot3 = slot3.aiCallOR
-	slot4 = KeyBindingPro
-	slot4 = slot4.GetOrAddKeyBindingByName
-	slot8 = slot3
-	slot6 = slot3.GetRefValue
-	slot9 = "nextBtn"
-	slot6 = slot6(slot8, slot9)
-	slot6 = slot6.gameObject
-	slot7 = "nextBind"
-	slot4 = slot4(slot6, slot7)
-	slot5 = true
-	slot4.isVirtual = slot5
-	slot5 = 101
-	slot4.priority = slot5
-	slot5 = "Hud/TipEnter"
-	slot4.actionPath = slot5
-
-	slot5 = function(slot0)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot1 = slot0.phase
-		--- END OF BLOCK #0 ---
-
-		if slot1 == "Performed" then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.closeAICallPanel
-
-		slot1(slot3)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 8-9, warpins: 2 ---
-		slot1 = true
-
-		return slot1
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot4.luaTrigger = slot5
+	slot3(slot5, slot6, slot7, slot8)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -510,10 +681,10 @@ slot19 = function(slot0)
 
 end
 
-slot17.addListener = slot19
+slot17.addListener = slot21
 
-slot19 = function(slot0, slot1)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -521,74 +692,295 @@ slot19 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot4 = slot0
+	slot2 = slot0.clearPopupTipTimer
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.clearGroupSkipHoldTimer
+
+	slot2(slot4)
+
+	slot2 = false
+	slot0.groupSkipGamepadPressConsumed = slot2
 	slot0.stepInfo = slot1
 	slot2 = slot1.stepId
 	slot0.curStepId = slot2
-	slot2 = slot1.toastGuidePanel
+	slot2 = nil
+	slot0.guidePopupMainCom = slot2
+	slot2 = nil
+	slot0.guidePopupStepId = slot2
+	slot2 = slot1.canSkipGroup
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	if slot2 ~= true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 12-15, warpins: 1 ---
+	--- BLOCK #1 24-25, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 26-26, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 27-32, warpins: 2 ---
+	slot0.groupSkipInputBlocked = slot2
+	slot2 = false
+	slot0.groupSkipEnabled = slot2
+	slot2 = slot1.toastGuidePanel
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 33-36, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshToastGuidePanel
 
 	slot2(slot4)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #2 16-18, warpins: 1 ---
+	--- BLOCK #5 37-39, warpins: 1 ---
 	slot2 = slot1.showMask
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 19-22, warpins: 1 ---
+	--- BLOCK #6 40-43, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshGuideMaskPanel
 
 	slot2(slot4)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 23-25, warpins: 1 ---
+	--- BLOCK #7 44-46, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshGuidePanel
 
 	slot2(slot4)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #5 26-26, warpins: 3 ---
+	--- BLOCK #8 47-47, warpins: 3 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot17.onOpen = slot19
+slot17.onOpen = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.stepInfo
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.stepInfo
+	slot1 = slot1.sameTypeStepGroupInfo
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot2 = slot1.canPlayPanelAnim
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 11-12, warpins: 1 ---
+	slot2 = slot1.isFirstStep
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 13-14, warpins: 0 ---
+	slot2 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 15-15, warpins: 2 ---
+	slot2 = true
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 16-16, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot17.shouldPlaySameTypeGroupShow = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.showGroupSkip
+	slot3 = slot0
+	slot4 = logger
+	slot5 = slot0.stepInfo
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	slot5 = slot0.stepInfo
+	slot5 = slot5.guideId
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot6 = slot0.curStepId
+
+	slot1(slot3, slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.showGroupSkip = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.refreshGroupSkipHotKeyContent
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17.refreshGroupSkipHotKeyContent = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.clearGroupSkipUI
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17.clearGroupSkipUI = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.clearGroupSkipHoldTimer
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17.clearGroupSkipHoldTimer = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.onGroupSkipClick
+	slot3 = slot0
+
+	return slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17.onGroupSkipClick = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setIsModel
@@ -635,10 +1027,15 @@ slot19 = function(slot0)
 
 end
 
-slot17.refreshGuideMaskPanel = slot19
+slot17.refreshGuideMaskPanel = slot21
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-32, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-37, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearPopupTipTimer
+
+	slot1(slot3)
+
 	slot1 = GuideStepData
 	slot2 = slot0.curStepId
 	slot1 = slot1[slot2]
@@ -653,116 +1050,18 @@ slot19 = function(slot0)
 	slot2 = slot2.uGuide
 
 	slot3 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-4, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
 		slot3 = self
-		slot3 = slot3.view
+		slot5 = slot3
+		slot3 = slot3.refreshBerthTip
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
 
+		slot3(slot5, slot6, slot7, slot8)
+
+		return
 		--- END OF BLOCK #0 ---
-
-		if slot3 == nil then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-5, warpins: 1 ---
-		return
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 6-46, warpins: 2 ---
-		slot5 = slot1
-		slot3 = slot1.GetComponent
-		slot6 = "ObjectReference"
-		slot3 = slot3(slot5, slot6)
-		slot6 = slot3
-		slot4 = slot3.GetRefValue
-		slot7 = "contentTxt"
-		slot4 = slot4(slot6, slot7)
-		slot7 = slot3
-		slot5 = slot3.GetRefValue
-		slot8 = "mainCom"
-		slot5 = slot5(slot7, slot8)
-		slot8 = slot3
-		slot6 = slot3.GetRefValue
-		slot9 = "leftProgress"
-		slot6 = slot6(slot8, slot9)
-		slot9 = slot3
-		slot7 = slot3.GetRefValue
-		slot10 = "rightProgress"
-		slot7 = slot7(slot9, slot10)
-		slot8 = ClientTextUtils
-		slot8 = slot8.setText
-		slot10 = slot4
-		slot11 = pg
-		slot11 = slot11.getLocalizationText
-		slot13 = stepCfg
-		slot13 = slot13.msg
-		MULTRES = slot11(slot13)
-
-		slot8(slot10, MULTRES)
-
-		slot10 = slot5
-		slot8 = slot5.TryChangePage
-		slot11 = "TipsType"
-		slot12 = 0
-
-		slot8(slot10, slot11, slot12)
-
-		slot8 = self
-		slot10 = slot8
-		slot8 = slot8.checkIsCountDown
-		slot11 = stepCfg
-		slot8, slot9 = slot8(slot10, slot11)
-		--- END OF BLOCK #2 ---
-
-		slot8 = if slot8 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 47-67, warpins: 1 ---
-		slot12 = slot5
-		slot10 = slot5.TryChangePage
-		slot13 = "CountDown"
-		slot14 = 1
-
-		slot10(slot12, slot13, slot14)
-
-		slot10 = 1
-		slot6.value = slot10
-		slot10 = self
-		slot12 = slot10
-		slot10 = slot10.progressToValueSafely
-		slot13 = slot6
-		slot14 = slot9
-
-		slot10(slot12, slot13, slot14)
-
-		slot10 = 1
-		slot7.value = slot10
-		slot10 = self
-		slot12 = slot10
-		slot10 = slot10.progressToValueSafely
-		slot13 = slot7
-		slot14 = slot9
-
-		slot10(slot12, slot13, slot14)
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 68-68, warpins: 2 ---
-		return
-		--- END OF BLOCK #4 ---
 
 
 
@@ -777,6 +1076,8 @@ slot19 = function(slot0)
 
 	slot2(slot4, slot5)
 
+	slot2 = nil
+	slot0.virtualBtnTargetTrans = slot2
 	slot4 = slot0
 	slot2 = slot0.changeMaskPage
 	slot5 = 0
@@ -802,7 +1103,7 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #1 33-36, warpins: 1 ---
+	--- BLOCK #1 38-41, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.forceTakeOver
 	slot5 = slot1
@@ -814,7 +1115,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 37-46, warpins: 2 ---
+	--- BLOCK #2 42-51, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.refreshAICallPanel
 	slot5 = slot1
@@ -830,160 +1131,54 @@ slot19 = function(slot0)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 47-64, warpins: 1 ---
+	--- BLOCK #3 52-69, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.refreshTopTips
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
 	slot2 = slot0.view
-	slot2 = slot2.topTipsOR
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "mainCom"
-	slot3 = slot3(slot5, slot6)
-	slot6 = slot3
-	slot4 = slot3.TryChangePage
-	slot7 = "Type"
-	slot8 = 0
+	slot2 = slot2.uGuide
+	slot4 = slot2
+	slot2 = slot2.PauseGuide
+	slot5 = true
 
-	slot4(slot6, slot7, slot8)
+	slot2(slot4, slot5)
 
-	slot6 = slot3
-	slot4 = slot3.TryChangePage
-	slot7 = "CountDown"
-	slot8 = slot0.stepInfo
-	slot8 = slot8.isCountDown
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.triggerEvent
+	slot5 = "UI_NoviceGuide_Tips"
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #3 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #4 65-66, warpins: 1 ---
-	slot8 = 1
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 67-67, warpins: 1 ---
-	slot8 = 0
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 68-89, warpins: 2 ---
-	slot4(slot6, slot7, slot8)
-
-	slot6 = slot3
-	slot4 = slot3.TryChangePage
-	slot7 = "TipsType"
-	slot8 = 0
-
-	slot4(slot6, slot7, slot8)
-
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "tipText"
-	slot4 = slot4(slot6, slot7)
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot4
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
-	slot10 = slot1.msg
-	MULTRES = slot8(slot10)
-
-	slot5(slot7, MULTRES)
-
-	slot5 = slot0.stepInfo
-	slot5 = slot5.isCountDown
-	--- END OF BLOCK #6 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 90-113, warpins: 1 ---
-	slot7 = slot2
-	slot5 = slot2.GetRefValue
-	slot8 = "leftProgress"
-	slot5 = slot5(slot7, slot8)
-	slot6 = 1
-	slot5.value = slot6
-	slot8 = slot0
-	slot6 = slot0.progressToValueSafely
-	slot9 = slot5
-	slot10 = slot0.stepInfo
-	slot10 = slot10.countDownTime
-
-	slot6(slot8, slot9, slot10)
-
-	slot8 = slot2
-	slot6 = slot2.GetRefValue
-	slot9 = "rightProgress"
-	slot6 = slot6(slot8, slot9)
-	slot7 = 1
-	slot6.value = slot7
-	slot9 = slot0
-	slot7 = slot0.progressToValueSafely
-	slot10 = slot6
-	slot11 = slot0.stepInfo
-	slot11 = slot11.countDownTime
-
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 114-127, warpins: 2 ---
-	slot5 = slot0.view
-	slot5 = slot5.uGuide
-	slot7 = slot5
-	slot5 = slot5.PauseGuide
-	slot8 = true
-
-	slot5(slot7, slot8)
-
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.audio
-	slot7 = slot5
-	slot5 = slot5.triggerEvent
-	slot8 = "UI_NoviceGuide_Tips"
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #9 128-133, warpins: 1 ---
+	--- BLOCK #4 70-75, warpins: 1 ---
 	slot2 = slot1.type
 	slot3 = Const
 	slot3 = slot3.GUIDE_TYPE
 	slot3 = slot3.GT_FLOATING_AI
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #4 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #10 134-147, warpins: 1 ---
+	--- BLOCK #5 76-89, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.uGuide
 	slot4 = slot2
@@ -1001,26 +1196,26 @@ slot19 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #11 148-153, warpins: 1 ---
+	--- BLOCK #6 90-95, warpins: 1 ---
 	slot2 = slot1.type
 	slot3 = Const
 	slot3 = slot3.GUIDE_TYPE
 	slot3 = slot3.GT_FLOATING_DRAG
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #6 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #12 154-161, warpins: 1 ---
+	--- BLOCK #7 96-103, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setDragAnimPos
 
@@ -1032,52 +1227,52 @@ slot19 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #13 162-167, warpins: 1 ---
+	--- BLOCK #8 104-109, warpins: 1 ---
 	slot2 = slot1.type
 	slot3 = Const
 	slot3 = slot3.GUIDE_TYPE
 	slot3 = slot3.GT_FOCUS
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #8 ---
 
 	if slot2 ~= slot3 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #14 168-173, warpins: 1 ---
+	--- BLOCK #9 110-115, warpins: 1 ---
 	slot2 = slot1.type
 	slot3 = Const
 	slot3 = slot3.GUIDE_TYPE
 	slot3 = slot3.GT_SPECIFIC_HIGHLIGHT
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #9 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #15 174-177, warpins: 2 ---
+	--- BLOCK #10 116-119, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.openFocusGuide
 	slot5 = slot1
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #16 178-187, warpins: 5 ---
+	--- BLOCK #11 120-129, warpins: 5 ---
 	slot4 = slot0
 	slot2 = slot0.showGuideVX
 	slot5 = slot1
@@ -1091,15 +1286,368 @@ slot19 = function(slot0)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot17.refreshGuidePanel = slot19
+slot17.refreshGuidePanel = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot4 = slot0.curStepId
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #3 8-11, warpins: 1 ---
+	slot4 = GuideStepData
+	slot4 = slot4[slot1]
+	--- END OF BLOCK #3 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-12, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #5 13-18, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.isNextStepEnabled
+	slot8 = slot4
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 19-24, warpins: 1 ---
+	slot6 = CS
+	slot6 = slot6.XGUI
+	slot6 = slot6.EVisibility
+	slot6 = slot6.SelfHitTestInvisible
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-28, warpins: 2 ---
+	slot6 = CS
+	slot6 = slot6.XGUI
+	slot6 = slot6.EVisibility
+	slot6 = slot6.HitTestInvisible
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 29-102, warpins: 2 ---
+	slot2.visibility = slot6
+	slot8 = slot2
+	slot6 = slot2.GetComponent
+	slot9 = "ObjectReference"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot6
+	slot7 = slot6.GetRefValue
+	slot10 = "contentTxt"
+	slot7 = slot7(slot9, slot10)
+	slot10 = slot6
+	slot8 = slot6.GetRefValue
+	slot11 = "mainCom"
+	slot8 = slot8(slot10, slot11)
+	slot11 = slot6
+	slot9 = slot6.GetRefValue
+	slot12 = "keyHotKeyContent"
+	slot9 = slot9(slot11, slot12)
+	slot12 = slot6
+	slot10 = slot6.GetRefValue
+	slot13 = "btnNext"
+	slot10 = slot10(slot12, slot13)
+	slot13 = slot6
+	slot11 = slot6.GetRefValue
+	slot14 = "progressCountDown"
+	slot11 = slot11(slot13, slot14)
+	slot0.guidePopupKeyHotKeyContent = slot9
+	slot0.guidePopupMainCom = slot8
+	slot0.guidePopupStepId = slot1
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot7
+	slot15 = pg
+	slot15 = slot15.getLocalizationText
+	slot17 = slot4.msg
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
+	slot14 = slot8
+	slot12 = slot8.TryChangePage
+	slot15 = "TipsType"
+	slot16 = 0
+
+	slot12(slot14, slot15, slot16)
+
+	slot14 = slot8
+	slot12 = slot8.TryChangePage
+	slot15 = "Next"
+	slot16 = 0
+
+	slot12(slot14, slot15, slot16)
+
+	slot14 = slot0
+	slot12 = slot0.clearPopupTipTimer
+
+	slot12(slot14)
+
+	slot12 = slot0.curStepId
+	slot15 = slot0
+	slot13 = slot0.startTimer
+
+	slot16 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.popupTipTimer = slot1
+		slot0 = self
+		slot0 = slot0.view
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= nil then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 8-12, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.curStepId
+		slot1 = requestStepId
+		--- END OF BLOCK #1 ---
+
+		if slot0 == slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 13-17, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.guidePopupStepId
+		slot1 = requestStepId
+
+		--- END OF BLOCK #2 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 18-18, warpins: 3 ---
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 19-21, warpins: 2 ---
+		slot0 = nextStepEnabled
+		--- END OF BLOCK #4 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 22-27, warpins: 1 ---
+		slot0 = mainCom
+		slot2 = slot0
+		slot0 = slot0.TryChangePage
+		slot3 = "Next"
+		slot4 = 1
+
+		slot0(slot2, slot3, slot4)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 28-36, warpins: 2 ---
+		slot0 = mainCom
+		slot2 = slot0
+		slot0 = slot0.InvokeCallback
+		slot3 = CS
+		slot3 = slot3.XGUI
+		slot3 = slot3.EInvokeTime
+		slot3 = slot3.Show
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #6 ---
+
+
+
+	end
+
+	slot17 = ANIM_SHOW_DELAY_TIME
+	slot18 = false
+	slot13 = slot13(slot15, slot16, slot17, slot18)
+	slot0.popupTipTimer = slot13
+	slot15 = slot9
+	slot13 = slot9.SetHotKeyPaths
+	slot18 = slot0
+	slot16 = slot0.getNextStepActionPath
+	MULTRES = slot16(slot18)
+
+	slot13(slot15, MULTRES)
+
+	slot13 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onNextStepClick
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot10.luaClick = slot13
+	slot15 = slot0
+	slot13 = slot0.checkIsCountDown
+	slot16 = slot4
+	slot13, slot14 = slot13(slot15, slot16)
+	slot17 = slot8
+	slot15 = slot8.TryChangePage
+	slot18 = "CountDown"
+	--- END OF BLOCK #8 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 103-104, warpins: 1 ---
+	slot19 = 1
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 105-105, warpins: 1 ---
+	slot19 = 0
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 106-111, warpins: 2 ---
+	slot15(slot17, slot18, slot19)
+
+	slot17 = slot11
+	slot15 = slot11.Stop
+
+	slot15(slot17)
+
+	--- END OF BLOCK #11 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 112-115, warpins: 1 ---
+	slot17 = slot11
+	slot15 = slot11.Play
+	slot18 = slot14
+
+	slot15(slot17, slot18)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 116-117, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 118-118, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 119-119, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot17.refreshBerthTip = slot21
+
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.vxResId
 	--- END OF BLOCK #0 ---
@@ -1253,9 +1801,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.showGuideVX = slot19
+slot17.showGuideVX = slot21
 
-slot19 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2[1]
 	--- END OF BLOCK #0 ---
@@ -1491,9 +2039,9 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot17.setGuideVXLocation = slot19
+slot17.setGuideVXLocation = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.vxLoadTaksId
 	--- END OF BLOCK #0 ---
@@ -1559,9 +2107,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.closeGuideVX = slot19
+slot17.closeGuideVX = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.vxLoadTaksId
 	--- END OF BLOCK #0 ---
@@ -1634,9 +2182,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.unloadGuideVX = slot19
+slot17.unloadGuideVX = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = nil
 	slot3 = NotNil
@@ -1866,123 +2414,405 @@ slot19 = function(slot0, slot1)
 	slot3 = slot3.uGuide
 
 	slot4 = function(slot0, slot1)
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot2 = LoggerManager
-		slot2 = slot2.checkLogger
-		slot4 = LoggerConst
-		slot4 = slot4.ERROR
-		slot2 = slot2(slot4)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curStepId
 		--- END OF BLOCK #0 ---
 
-		slot2 = if slot2 then
+		if slot2 ~= nil then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 8-10, warpins: 1 ---
-		slot2 = nil
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curStepId
 		--- END OF BLOCK #1 ---
 
-		if slot1 == 1 then
+		if slot2 ~= slot0 then
 		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 11-12, warpins: 1 ---
-		slot2 = "activeInHierarchy"
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-		--- BLOCK #3 13-14, warpins: 1 ---
-		--- END OF BLOCK #3 ---
-
-		if slot1 == 2 then
-		JUMP TO BLOCK #4
 		else
 		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #4 15-16, warpins: 1 ---
-		slot2 = "scale is 0"
-		--- END OF BLOCK #4 ---
+		--- BLOCK #2 9-15, warpins: 2 ---
+		slot2 = LoggerManager
+		slot2 = slot2.checkLogger
+		slot4 = LoggerConst
+		slot4 = slot4.WARN
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #2 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-		--- BLOCK #5 17-18, warpins: 1 ---
-		--- END OF BLOCK #5 ---
-
-		if slot1 == 3 then
-		JUMP TO BLOCK #6
+		slot2 = if slot2 then
+		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #6 19-19, warpins: 1 ---
-		slot2 = "actualRenderOpacity"
+		--- BLOCK #3 16-30, warpins: 1 ---
+		slot2 = logger
+		slot4 = slot2
+		slot2 = slot2.warn
+		slot5 = "[GuideFocusTargetLost] ignore stale callback, callbackStepId[%s] currentStepId[%s] errorCode[%s]"
+		slot6 = tostring
+		slot8 = slot0
+		slot6 = slot6(slot8)
+		slot7 = tostring
+		slot9 = self
+		slot9 = slot9.curStepId
+		slot7 = slot7(slot9)
+		slot8 = tostring
+		slot10 = slot1
+		MULTRES = slot8(slot10)
+
+		slot2(slot4, slot5, slot6, slot7, MULTRES)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 31-31, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 32-40, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.stepInfo
+		slot3 = LoggerManager
+		slot3 = slot3.checkLogger
+		slot5 = LoggerConst
+		slot5 = slot5.WARN
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #5 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #27
+		end
+
+
+		--- BLOCK #6 41-43, warpins: 1 ---
+		slot3 = {
+			"目标控件已离开激活层级(activeInHierarchy=false)",
+			"目标控件或父节点的缩放接近0(lossyScale≈0)",
+			"实际显示控件的最终渲染透明度为0(actualRenderOpacity=0)"
+		}
 		--- END OF BLOCK #6 ---
 
-		FLOW; TARGET BLOCK #7
+		slot4 = if slot2 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
 
 
-		--- BLOCK #7 20-30, warpins: 4 ---
-		slot3 = logger
-		slot5 = slot3
-		slot3 = slot3.error
-		slot6 = "%d 引导指向的控件已 %s ,请检查 !!!"
-		slot7 = slot0
-		slot8 = slot2
-		slot9 = inspect
-		slot11 = stepCfg
-		slot11 = slot11.directionParams
-		MULTRES = slot9(slot11)
-
-		slot3(slot5, slot6, slot7, slot8, MULTRES)
-
+		--- BLOCK #7 44-44, warpins: 1 ---
+		slot4 = slot2.targetBtnTrans
 		--- END OF BLOCK #7 ---
 
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 31-39, warpins: 2 ---
-		slot2 = self
-		slot2 = slot2.stepInfo
-		slot2 = slot2.onIncorrectCloseGuide
-		slot3 = self
-		slot3 = slot3.stepInfo
-		slot4 = nil
-		slot3.onIncorrectCloseGuide = slot4
+		--- BLOCK #8 45-50, warpins: 2 ---
+		slot5 = nil
+		slot6 = NotNil
+		slot8 = slot4
+		slot6 = slot6(slot8)
 		--- END OF BLOCK #8 ---
 
-		slot2 = if slot2 then
+		slot6 = if slot6 then
 		JUMP TO BLOCK #9
 		else
 		JUMP TO BLOCK #10
 		end
 
 
-		--- BLOCK #9 40-42, warpins: 1 ---
-		slot3 = slot2
-		slot5 = slot0
-
-		slot3(slot5)
-
+		--- BLOCK #9 51-55, warpins: 1 ---
+		slot8 = slot4
+		slot6 = slot4.GetComponent
+		slot9 = "UWidget"
+		slot6 = slot6(slot8, slot9)
+		slot5 = slot6
 		--- END OF BLOCK #9 ---
 
 		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 43-43, warpins: 2 ---
-		return
+		--- BLOCK #10 56-65, warpins: 2 ---
+		slot6 = logger
+		slot8 = slot6
+		slot6 = slot6.warn
+		slot9 = "[GuideFocusTargetLost] guideId[%s] callbackStepId[%s] currentStepId[%s] "
+		slot10 = "errorCode[%s] reason[%s] panelId[%s] directionParams[%s] targetName[%s] "
+		slot11 = "activeInHierarchy[%s] sourceActualRenderOpacity[%s] lossyScale[%s]"
+		slot9 = slot9 .. slot10 .. slot11
+		slot10 = tostring
 		--- END OF BLOCK #10 ---
+
+		slot12 = if slot2 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 66-66, warpins: 1 ---
+		slot12 = slot2.guideId
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 67-80, warpins: 2 ---
+		slot10 = slot10(slot12)
+		slot11 = tostring
+		slot13 = slot0
+		slot11 = slot11(slot13)
+		slot12 = tostring
+		slot14 = self
+		slot14 = slot14.curStepId
+		slot12 = slot12(slot14)
+		slot13 = tostring
+		slot15 = slot1
+		slot13 = slot13(slot15)
+		slot14 = slot3[slot1]
+		--- END OF BLOCK #12 ---
+
+		slot14 = if not slot14 then
+		JUMP TO BLOCK #13
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #13 81-81, warpins: 1 ---
+		slot14 = "未知错误"
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 82-96, warpins: 2 ---
+		slot15 = tostring
+		slot17 = GuideUtils
+		slot17 = slot17.getPanelId
+		slot19 = stepCfg
+		MULTRES = slot17(slot19)
+		slot15 = slot15(MULTRES)
+		slot16 = inspect
+		slot18 = stepCfg
+		slot18 = slot18.directionParams
+		slot16 = slot16(slot18)
+		slot17 = NotNil
+		slot19 = slot4
+		slot17 = slot17(slot19)
+		--- END OF BLOCK #14 ---
+
+		slot17 = if slot17 then
+		JUMP TO BLOCK #15
+		else
+		JUMP TO BLOCK #16
+		end
+
+
+		--- BLOCK #15 97-101, warpins: 1 ---
+		slot17 = tostring
+		slot19 = slot4.name
+		slot17 = slot17(slot19)
+		--- END OF BLOCK #15 ---
+
+		slot17 = if not slot17 then
+		JUMP TO BLOCK #16
+		else
+		JUMP TO BLOCK #17
+		end
+
+
+		--- BLOCK #16 102-102, warpins: 2 ---
+		slot17 = "nil"
+		--- END OF BLOCK #16 ---
+
+		FLOW; TARGET BLOCK #17
+
+
+		--- BLOCK #17 103-107, warpins: 2 ---
+		slot18 = NotNil
+		slot20 = slot4
+		slot18 = slot18(slot20)
+		--- END OF BLOCK #17 ---
+
+		slot18 = if slot18 then
+		JUMP TO BLOCK #18
+		else
+		JUMP TO BLOCK #19
+		end
+
+
+		--- BLOCK #18 108-113, warpins: 1 ---
+		slot18 = tostring
+		slot20 = slot4.gameObject
+		slot20 = slot20.activeInHierarchy
+		slot18 = slot18(slot20)
+		--- END OF BLOCK #18 ---
+
+		slot18 = if not slot18 then
+		JUMP TO BLOCK #19
+		else
+		JUMP TO BLOCK #20
+		end
+
+
+		--- BLOCK #19 114-114, warpins: 2 ---
+		slot18 = "nil"
+		--- END OF BLOCK #19 ---
+
+		FLOW; TARGET BLOCK #20
+
+
+		--- BLOCK #20 115-119, warpins: 2 ---
+		slot19 = NotNil
+		slot21 = slot5
+		slot19 = slot19(slot21)
+		--- END OF BLOCK #20 ---
+
+		slot19 = if slot19 then
+		JUMP TO BLOCK #21
+		else
+		JUMP TO BLOCK #22
+		end
+
+
+		--- BLOCK #21 120-124, warpins: 1 ---
+		slot19 = tostring
+		slot21 = slot5.actualRenderOpacity
+		slot19 = slot19(slot21)
+		--- END OF BLOCK #21 ---
+
+		slot19 = if not slot19 then
+		JUMP TO BLOCK #22
+		else
+		JUMP TO BLOCK #23
+		end
+
+
+		--- BLOCK #22 125-125, warpins: 2 ---
+		slot19 = "nil"
+		--- END OF BLOCK #22 ---
+
+		FLOW; TARGET BLOCK #23
+
+
+		--- BLOCK #23 126-130, warpins: 2 ---
+		slot20 = NotNil
+		slot22 = slot4
+		slot20 = slot20(slot22)
+		--- END OF BLOCK #23 ---
+
+		slot20 = if slot20 then
+		JUMP TO BLOCK #24
+		else
+		JUMP TO BLOCK #25
+		end
+
+
+		--- BLOCK #24 131-135, warpins: 1 ---
+		slot20 = tostring
+		slot22 = slot4.lossyScale
+		slot20 = slot20(slot22)
+		--- END OF BLOCK #24 ---
+
+		slot20 = if not slot20 then
+		JUMP TO BLOCK #25
+		else
+		JUMP TO BLOCK #26
+		end
+
+
+		--- BLOCK #25 136-136, warpins: 2 ---
+		slot20 = "nil"
+
+		--- END OF BLOCK #25 ---
+
+		FLOW; TARGET BLOCK #26
+
+
+		--- BLOCK #26 137-137, warpins: 2 ---
+		slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20)
+
+		--- END OF BLOCK #26 ---
+
+		FLOW; TARGET BLOCK #27
+
+
+		--- BLOCK #27 138-139, warpins: 2 ---
+		--- END OF BLOCK #27 ---
+
+		slot3 = if slot2 then
+		JUMP TO BLOCK #28
+		else
+		JUMP TO BLOCK #29
+		end
+
+
+		--- BLOCK #28 140-140, warpins: 1 ---
+		slot3 = slot2.onIncorrectCloseGuide
+		--- END OF BLOCK #28 ---
+
+		FLOW; TARGET BLOCK #29
+
+
+		--- BLOCK #29 141-142, warpins: 2 ---
+		--- END OF BLOCK #29 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #30
+		else
+		JUMP TO BLOCK #31
+		end
+
+
+		--- BLOCK #30 143-144, warpins: 1 ---
+		slot4 = nil
+		slot2.onIncorrectCloseGuide = slot4
+		--- END OF BLOCK #30 ---
+
+		FLOW; TARGET BLOCK #31
+
+
+		--- BLOCK #31 145-146, warpins: 2 ---
+		--- END OF BLOCK #31 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #32
+		else
+		JUMP TO BLOCK #33
+		end
+
+
+		--- BLOCK #32 147-149, warpins: 1 ---
+		slot4 = slot3
+		slot6 = slot0
+
+		slot4(slot6)
+
+		--- END OF BLOCK #32 ---
+
+		FLOW; TARGET BLOCK #33
+
+
+		--- BLOCK #33 150-150, warpins: 2 ---
+		return
+		--- END OF BLOCK #33 ---
 
 
 
@@ -2033,7 +2863,12 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 103-106, warpins: 2 ---
+	--- BLOCK #15 103-109, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshMaskAnimType
+
+	slot3(slot5)
+
 	slot3 = slot0.stepInfo
 	slot3 = slot3.addClickLinstener
 	--- END OF BLOCK #15 ---
@@ -2045,7 +2880,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 107-109, warpins: 1 ---
+	--- BLOCK #16 110-112, warpins: 1 ---
 	slot3 = slot1.pressBlack
 	--- END OF BLOCK #16 ---
 
@@ -2056,7 +2891,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 110-112, warpins: 1 ---
+	--- BLOCK #17 113-115, warpins: 1 ---
 	slot3 = slot1.force
 	--- END OF BLOCK #17 ---
 
@@ -2067,7 +2902,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 113-117, warpins: 1 ---
+	--- BLOCK #18 116-120, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.uGuide
 	slot5 = slot3
@@ -2080,7 +2915,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 118-120, warpins: 4 ---
+	--- BLOCK #19 121-123, warpins: 4 ---
 	slot3 = slot1.orientation
 	--- END OF BLOCK #19 ---
 
@@ -2091,7 +2926,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 121-122, warpins: 1 ---
+	--- BLOCK #20 124-125, warpins: 1 ---
 	--- END OF BLOCK #20 ---
 
 	if slot3 == 0 then
@@ -2101,7 +2936,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #21 123-132, warpins: 2 ---
+	--- BLOCK #21 126-135, warpins: 2 ---
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
 	slot6 = slot4
@@ -2118,7 +2953,7 @@ slot19 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #22 133-134, warpins: 1 ---
+	--- BLOCK #22 136-137, warpins: 1 ---
 	--- END OF BLOCK #22 ---
 
 	if slot3 == 1 then
@@ -2128,7 +2963,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #23 135-144, warpins: 1 ---
+	--- BLOCK #23 138-147, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
 	slot6 = slot4
@@ -2145,7 +2980,7 @@ slot19 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #24 145-146, warpins: 1 ---
+	--- BLOCK #24 148-149, warpins: 1 ---
 	--- END OF BLOCK #24 ---
 
 	if slot3 == 2 then
@@ -2155,7 +2990,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #25 147-156, warpins: 1 ---
+	--- BLOCK #25 150-159, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
 	slot6 = slot4
@@ -2172,7 +3007,7 @@ slot19 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #26 157-158, warpins: 1 ---
+	--- BLOCK #26 160-161, warpins: 1 ---
 	--- END OF BLOCK #26 ---
 
 	if slot3 == 3 then
@@ -2182,7 +3017,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #27 159-168, warpins: 1 ---
+	--- BLOCK #27 162-171, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
 	slot6 = slot4
@@ -2199,7 +3034,7 @@ slot19 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #28 169-170, warpins: 1 ---
+	--- BLOCK #28 172-173, warpins: 1 ---
 	--- END OF BLOCK #28 ---
 
 	if slot3 == 4 then
@@ -2209,7 +3044,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #29 171-179, warpins: 1 ---
+	--- BLOCK #29 174-182, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
 	slot6 = slot4
@@ -2226,7 +3061,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 180-184, warpins: 6 ---
+	--- BLOCK #30 183-187, warpins: 6 ---
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
 	slot5 = slot1.force
@@ -2239,21 +3074,21 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #31 185-186, warpins: 1 ---
+	--- BLOCK #31 188-189, warpins: 1 ---
 	slot5 = false
 	--- END OF BLOCK #31 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #32 187-187, warpins: 1 ---
+	--- BLOCK #32 190-190, warpins: 1 ---
 	slot5 = true
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 188-193, warpins: 2 ---
+	--- BLOCK #33 191-196, warpins: 2 ---
 	slot4.force = slot5
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
@@ -2267,21 +3102,21 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #34 194-195, warpins: 1 ---
+	--- BLOCK #34 197-198, warpins: 1 ---
 	slot5 = false
 	--- END OF BLOCK #34 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #35 196-196, warpins: 1 ---
+	--- BLOCK #35 199-199, warpins: 1 ---
 	slot5 = true
 	--- END OF BLOCK #35 ---
 
 	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #36 197-202, warpins: 2 ---
+	--- BLOCK #36 200-205, warpins: 2 ---
 	slot4.canSkip = slot5
 	slot4 = slot0.view
 	slot4 = slot4.uGuide
@@ -2295,7 +3130,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 203-204, warpins: 2 ---
+	--- BLOCK #37 206-207, warpins: 2 ---
 	--- END OF BLOCK #37 ---
 
 	if slot2 ~= nil then
@@ -2305,7 +3140,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #38 205-209, warpins: 1 ---
+	--- BLOCK #38 208-212, warpins: 1 ---
 	slot3 = 0
 	slot4 = slot2.Length
 	slot4 = slot4 - 1
@@ -2315,7 +3150,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 210-213, warpins: 2 ---
+	--- BLOCK #39 213-216, warpins: 2 ---
 	slot7 = slot2[slot6]
 	slot8 = true
 	slot7.enabled = slot8
@@ -2326,14 +3161,14 @@ slot19 = function(slot0, slot1)
 	LOOP BLOCK #39
 	GO OUT TO BLOCK #40
 
-	--- BLOCK #40 214-215, warpins: 2 ---
+	--- BLOCK #40 217-218, warpins: 2 ---
 	return
 	--- END OF BLOCK #40 ---
 
 	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 216-216, warpins: 2 ---
+	--- BLOCK #41 219-219, warpins: 2 ---
 	return
 	--- END OF BLOCK #41 ---
 
@@ -2341,9 +3176,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.openFocusGuide = slot19
+slot17.openFocusGuide = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2522,7 +3357,12 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 75-79, warpins: 2 ---
+	--- BLOCK #9 75-82, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshMaskAnimType
+
+	slot2(slot4)
+
 	slot2 = slot0.view
 	slot2 = slot2.uGuide
 	slot3 = slot1.force
@@ -2535,21 +3375,21 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 80-81, warpins: 1 ---
+	--- BLOCK #10 83-84, warpins: 1 ---
 	slot3 = false
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 82-82, warpins: 1 ---
+	--- BLOCK #11 85-85, warpins: 1 ---
 	slot3 = true
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 83-88, warpins: 2 ---
+	--- BLOCK #12 86-91, warpins: 2 ---
 	slot2.force = slot3
 	slot2 = slot0.view
 	slot2 = slot2.uGuide
@@ -2563,21 +3403,21 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 89-90, warpins: 1 ---
+	--- BLOCK #13 92-93, warpins: 1 ---
 	slot3 = false
 	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 91-91, warpins: 1 ---
+	--- BLOCK #14 94-94, warpins: 1 ---
 	slot3 = true
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 92-97, warpins: 2 ---
+	--- BLOCK #15 95-100, warpins: 2 ---
 	slot2.canSkip = slot3
 	slot2 = slot0.view
 	slot2 = slot2.uGuide
@@ -2591,14 +3431,14 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 98-99, warpins: 2 ---
+	--- BLOCK #16 101-102, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 100-100, warpins: 2 ---
+	--- BLOCK #17 103-103, warpins: 2 ---
 	return
 	--- END OF BLOCK #17 ---
 
@@ -2606,9 +3446,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.openDragGuide = slot19
+slot17.openDragGuide = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.uGuide
@@ -2625,9 +3465,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.pauseGuide = slot19
+slot17.pauseGuide = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -2944,9 +3784,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.setDragAnimPos = slot19
+slot17.setDragAnimPos = slot21
 
-slot19 = function(slot0, slot1, slot2, slot3)
+slot21 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot1
 	slot5 = slot2
@@ -3313,9 +4153,9 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot17.moveAnimation = slot19
+slot17.moveAnimation = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 2 - slot1
 	slot2 = slot1 * slot2
@@ -3327,9 +4167,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.easeOutQuad = slot19
+slot17.easeOutQuad = slot21
 
-slot19 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = 1
 	slot4 = Vector3
@@ -3348,9 +4188,9 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot17.getDisRate = slot19
+slot17.getDisRate = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.updateTimer
 	--- END OF BLOCK #0 ---
@@ -3385,9 +4225,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.clearUpdateTimer = slot19
+slot17.clearUpdateTimer = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.canClickSkipTimer
 	--- END OF BLOCK #0 ---
@@ -3422,9 +4262,46 @@ slot19 = function(slot0)
 
 end
 
-slot17.clearCanClickSkipTimer = slot19
+slot17.clearCanClickSkipTimer = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.popupTipTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.popupTipTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.popupTipTimer = slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.clearPopupTipTimer = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.uGuide
@@ -3452,9 +4329,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.refreshToastGuidePanel = slot19
+slot17.refreshToastGuidePanel = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.endCheck
 	--- END OF BLOCK #0 ---
@@ -3503,12 +4380,11 @@ slot19 = function(slot0, slot1)
 	if slot9 == slot10 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #4 23-25, warpins: 1 ---
-	slot3 = true
+	--- BLOCK #4 23-24, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	if slot4 == 1 then
@@ -3518,7 +4394,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 26-28, warpins: 1 ---
+	--- BLOCK #5 25-27, warpins: 1 ---
 	slot10 = slot1.endCheckArg
 	--- END OF BLOCK #5 ---
 
@@ -3529,7 +4405,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 29-30, warpins: 2 ---
+	--- BLOCK #6 28-29, warpins: 2 ---
 	slot10 = slot1.endCheckArg
 	slot10 = slot10[slot8]
 	--- END OF BLOCK #6 ---
@@ -3537,53 +4413,180 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 31-35, warpins: 2 ---
+	--- BLOCK #7 30-35, warpins: 2 ---
+	slot11 = slot1.type
+	slot12 = Const
+	slot12 = slot12.GUIDE_TYPE
+	slot12 = slot12.GT_SPECIFIC_HIGHLIGHT
+	--- END OF BLOCK #7 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 36-41, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.tryAddSpecificHighlightVirtualBtnBinding
+	slot14 = slot10
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot11 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #9 42-42, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #10 43-48, warpins: 1 ---
+	slot3 = true
 	slot13 = slot0
 	slot11 = slot0.addVirtualBtnBinding
 	slot14 = slot10
 
 	slot11(slot13, slot14)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #8 36-40, warpins: 1 ---
+	--- BLOCK #11 49-53, warpins: 1 ---
 	slot10 = Const
 	slot10 = slot10.GUIDE_STEP_END
 	slot10 = slot10.GSC_INPUT_TRIGGERED
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 	if slot9 == slot10 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #9 41-46, warpins: 1 ---
+	--- BLOCK #12 54-60, warpins: 1 ---
 	slot10 = slot1.endCheckArg
 	slot10 = slot10[slot8]
+	slot11 = type
+	slot13 = slot10
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #12 ---
+
+	if slot11 == "table" then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 61-63, warpins: 1 ---
+	slot11 = slot1.endCheckArg
+	slot11 = slot11[slot8]
+	slot10 = slot11[1]
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 64-72, warpins: 2 ---
 	slot13 = slot0
 	slot11 = slot0.addKeyBinding
 	slot14 = slot10
 
 	slot11(slot13, slot14)
 
-	--- END OF BLOCK #9 ---
+	slot11 = pg
+	slot11 = slot11.global
+	slot11 = slot11.navMgr
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #10
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #10 47-47, warpins: 3 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #15 73-80, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.game
+	slot12 = slot12.input
+	slot14 = slot12
+	slot12 = slot12.isUsingGamepad
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #15 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #16 81-82, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	if slot11 ~= nil then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #17 83-85, warpins: 1 ---
+	slot12 = slot11.IsVirtualMouseMode
+	--- END OF BLOCK #17 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 86-91, warpins: 1 ---
+	slot12 = NotNil
+	slot14 = slot0.stepInfo
+	slot14 = slot14.targetBtnTrans
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #18 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 92-95, warpins: 1 ---
+	slot3 = true
+	slot14 = slot0
+	slot12 = slot0.addVirtualBtnBinding
+
+	slot12(slot14)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 96-96, warpins: 9 ---
+	--- END OF BLOCK #20 ---
 
 	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #11
+	GO OUT TO BLOCK #21
 
-	--- BLOCK #11 48-58, warpins: 1 ---
+	--- BLOCK #21 97-107, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.changeMaskPage
 	slot8 = 2
@@ -3599,15 +4602,149 @@ slot19 = function(slot0, slot1)
 	slot5(slot7, slot8)
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot17.forceTakeOver = slot19
+slot17.forceTakeOver = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-27, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.topTipsOR
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "mainCom"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "tipText"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot2
+	slot5 = slot2.GetRefValue
+	slot8 = "progressCountDown"
+	slot5 = slot5(slot7, slot8)
+	slot0.guidePopupMainCom = slot3
+	slot8 = slot3
+	slot6 = slot3.TryChangePage
+	slot9 = "Type"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot3
+	slot6 = slot3.TryChangePage
+	slot9 = "CountDown"
+	slot10 = slot0.stepInfo
+	slot10 = slot10.isCountDown
+	--- END OF BLOCK #0 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 28-29, warpins: 1 ---
+	slot10 = 1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 30-30, warpins: 1 ---
+	slot10 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 31-48, warpins: 2 ---
+	slot6(slot8, slot9, slot10)
+
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot4
+	slot9 = pg
+	slot9 = slot9.getLocalizationText
+	slot11 = slot1.msg
+	MULTRES = slot9(slot11)
+
+	slot6(slot8, MULTRES)
+
+	slot8 = slot0
+	slot6 = slot0.checkIsCountDown
+	slot9 = slot1
+	slot6, slot7 = slot6(slot8, slot9)
+	slot10 = slot5
+	slot8 = slot5.Stop
+
+	slot8(slot10)
+
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 49-52, warpins: 1 ---
+	slot10 = slot5
+	slot8 = slot5.Play
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 53-57, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.shouldPlaySameTypeGroupShow
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #5 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 58-64, warpins: 1 ---
+	slot10 = slot3
+	slot8 = slot3.InvokeCallback
+	slot11 = CS
+	slot11 = slot11.XGUI
+	slot11 = slot11.EInvokeTime
+	slot11 = slot11.Show
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 65-65, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot17.refreshTopTips = slot21
+
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.aiCallText
 	--- END OF BLOCK #0 ---
@@ -3694,7 +4831,7 @@ slot19 = function(slot0, slot1)
 	--- BLOCK #7 31-31, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #8 32-35, warpins: 1 ---
@@ -3721,7 +4858,7 @@ slot19 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #10 41-82, warpins: 2 ---
+	--- BLOCK #10 41-70, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.aiCallOR
 	slot6 = slot3
@@ -3734,30 +4871,18 @@ slot19 = function(slot0, slot1)
 	slot5 = slot5(slot7, slot8)
 	slot8 = slot3
 	slot6 = slot3.GetRefValue
-	slot9 = "titleNameText"
+	slot9 = "keyHotKeyContent"
 	slot6 = slot6(slot8, slot9)
 	slot9 = slot3
 	slot7 = slot3.GetRefValue
-	slot10 = "leftProgress"
+	slot10 = "nextBtn"
 	slot7 = slot7(slot9, slot10)
 	slot10 = slot3
 	slot8 = slot3.GetRefValue
-	slot11 = "rightProgress"
+	slot11 = "progressCountDown"
 	slot8 = slot8(slot10, slot11)
-	slot11 = slot3
-	slot9 = slot3.GetRefValue
-	slot12 = "tipsTxt"
-	slot9 = slot9(slot11, slot12)
-	slot12 = slot3
-	slot10 = slot3.GetRefValue
-	slot13 = "keyHotKeyContent"
-	slot10 = slot10(slot12, slot13)
-	slot13 = slot3
-	slot11 = slot3.GetRefValue
-	slot14 = "nextBtn"
-	slot11 = slot11(slot13, slot14)
 
-	slot12 = function()
+	slot9 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -3772,190 +4897,176 @@ slot19 = function(slot0, slot1)
 
 	end
 
-	slot11.luaClick = slot12
-	slot12 = slot1.type
-	slot13 = Const
-	slot13 = slot13.GUIDE_TYPE
-	slot13 = slot13.GT_FLOATING_AI
+	slot7.luaClick = slot9
+	slot9 = slot1.type
+	slot10 = Const
+	slot10 = slot10.GUIDE_TYPE
+	slot10 = slot10.GT_FLOATING_AI
 	--- END OF BLOCK #10 ---
 
-	if slot12 == slot13 then
+	if slot9 == slot10 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 83-91, warpins: 1 ---
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot5
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot1.msg
-	MULTRES = slot15(slot17)
+	--- BLOCK #11 71-79, warpins: 1 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot5
+	slot12 = pg
+	slot12 = slot12.getLocalizationText
+	slot14 = slot1.msg
+	MULTRES = slot12(slot14)
 
-	slot12(slot14, MULTRES)
+	slot9(slot11, MULTRES)
 
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 92-99, warpins: 1 ---
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot5
-	slot15 = pg
-	slot15 = slot15.getLocalizationText
-	slot17 = slot1.aiCallText
-	MULTRES = slot15(slot17)
+	--- BLOCK #12 80-87, warpins: 1 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot5
+	slot12 = pg
+	slot12 = slot12.getLocalizationText
+	slot14 = slot1.aiCallText
+	MULTRES = slot12(slot14)
 
-	slot12(slot14, MULTRES)
+	slot9(slot11, MULTRES)
 
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 100-135, warpins: 2 ---
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot9
-	slot15 = pg
-	slot15 = slot15.getGameString
-	slot17 = "CLICK_TO_CLOSE"
-	MULTRES = slot15(slot17)
+	--- BLOCK #13 88-112, warpins: 2 ---
+	slot11 = slot4
+	slot9 = slot4.TryChangePage
+	slot12 = "Next"
+	slot13 = 0
 
-	slot12(slot14, MULTRES)
+	slot9(slot11, slot12, slot13)
 
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot6
-	slot15 = pg
-	slot15 = slot15.getGameString
-	slot17 = "AI_NAME"
-	MULTRES = slot15(slot17)
-
-	slot12(slot14, MULTRES)
-
-	slot14 = slot10
-	slot12 = slot10.SetHotKeyPaths
-	slot15 = "Hud/TipEnter"
-
-	slot12(slot14, slot15)
-
-	slot14 = slot4
-	slot12 = slot4.TryChangePage
-	slot15 = "Skip"
-	slot16 = 0
-
-	slot12(slot14, slot15, slot16)
-
-	slot12 = LuaUIUtils
-	slot12 = slot12.setUIViewVisible
-	slot14 = slot10
-	slot15 = false
-
-	slot12(slot14, slot15)
-
+	slot11 = slot6
+	slot9 = slot6.SetHotKeyPaths
 	slot14 = slot0
-	slot12 = slot0.checkIsCountDown
-	slot15 = slot1
-	slot12, slot13 = slot12(slot14, slot15)
+	slot12 = slot0.getNextStepActionPath
+	MULTRES = slot12(slot14)
+
+	slot9(slot11, MULTRES)
+
+	slot9 = LuaUIUtils
+	slot9 = slot9.setUIViewVisible
+	slot11 = slot6
+	slot12 = false
+
+	slot9(slot11, slot12)
+
+	slot11 = slot0
+	slot9 = slot0.checkIsCountDown
+	slot12 = slot1
+	slot9, slot10 = slot9(slot11, slot12)
+	slot13 = slot4
+	slot11 = slot4.TryChangePage
+	slot14 = "CountDown"
 	--- END OF BLOCK #13 ---
 
-	slot12 = if slot12 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 136-159, warpins: 1 ---
-	slot16 = slot4
-	slot14 = slot4.TryChangePage
-	slot17 = "CountDown"
-	slot18 = 0
-
-	slot14(slot16, slot17, slot18)
-
-	slot16 = slot4
-	slot14 = slot4.TryChangePage
-	slot17 = "CountDown"
-	slot18 = 1
-
-	slot14(slot16, slot17, slot18)
-
-	slot14 = 1
-	slot7.value = slot14
-	slot16 = slot0
-	slot14 = slot0.progressToValueSafely
-	slot17 = slot7
-	slot18 = slot13
-
-	slot14(slot16, slot17, slot18)
-
-	slot14 = 1
-	slot8.value = slot14
-	slot16 = slot0
-	slot14 = slot0.progressToValueSafely
-	slot17 = slot8
-	slot18 = slot13
-
-	slot14(slot16, slot17, slot18)
-
+	--- BLOCK #14 113-114, warpins: 1 ---
+	slot15 = 1
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 160-165, warpins: 2 ---
-	slot14 = slot1.type
-	slot15 = Const
-	slot15 = slot15.GUIDE_TYPE
-	slot15 = slot15.GT_FLOATING_AI
+	--- BLOCK #15 115-115, warpins: 1 ---
+	slot15 = 0
+
 	--- END OF BLOCK #15 ---
 
-	if slot14 == slot15 then
-	JUMP TO BLOCK #16
-	else
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 116-121, warpins: 2 ---
+	slot11(slot13, slot14, slot15)
+
+	slot13 = slot8
+	slot11 = slot8.Stop
+
+	slot11(slot13)
+
+	--- END OF BLOCK #16 ---
+
+	slot9 = if slot9 then
 	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #16 166-177, warpins: 1 ---
-	slot14 = false
-	slot0.canClickSkip = slot14
-	slot16 = slot0
-	slot14 = slot0.clearCanClickSkipTimer
+	--- BLOCK #17 122-125, warpins: 1 ---
+	slot13 = slot8
+	slot11 = slot8.Play
+	slot14 = slot10
 
-	slot14(slot16)
+	slot11(slot13, slot14)
 
-	slot16 = slot0
-	slot14 = slot0.startTimer
+	--- END OF BLOCK #17 ---
 
-	slot17 = function()
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 126-131, warpins: 2 ---
+	slot11 = slot1.type
+	slot12 = Const
+	slot12 = slot12.GUIDE_TYPE
+	slot12 = slot12.GT_FLOATING_AI
+	--- END OF BLOCK #18 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #19 132-140, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.clearCanClickSkipTimer
+
+	slot11(slot13)
+
+	slot11 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
-		slot1 = true
-		slot0.canClickSkip = slot1
-		slot0 = stepCfg
-		slot0 = slot0.notSkip
+		slot2 = slot0
+		slot0 = slot0.isNextStepEnabled
+		slot3 = stepCfg
+		slot0 = slot0(slot2, slot3)
 		--- END OF BLOCK #0 ---
 
-		if slot0 ~= 1 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 8-18, warpins: 1 ---
+		--- BLOCK #1 8-26, warpins: 1 ---
 		slot0 = mainCom
 		slot2 = slot0
 		slot0 = slot0.TryChangePage
-		slot3 = "Skip"
+		slot3 = "Next"
 		slot4 = 1
 
 		slot0(slot2, slot3, slot4)
@@ -3967,47 +5078,112 @@ slot19 = function(slot0, slot1)
 
 		slot0(slot2, slot3)
 
+		slot0 = keyHotKeyContent
+		slot2 = slot0
+		slot0 = slot0.SetHotKeyPaths
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.getNextStepActionPath
+		MULTRES = slot3(slot5)
+
+		slot0(slot2, MULTRES)
+
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 19-19, warpins: 2 ---
-		return
+		--- BLOCK #2 27-32, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.shouldPlaySameTypeGroupShow
+		slot0 = slot0(slot2)
 		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 33-40, warpins: 1 ---
+		slot0 = mainCom
+		slot2 = slot0
+		slot0 = slot0.InvokeCallback
+		slot3 = CS
+		slot3 = slot3.XGUI
+		slot3 = slot3.EInvokeTime
+		slot3 = slot3.Show
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 41-41, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
 
 
 
 	end
 
-	slot18 = 1
-	slot19 = false
-	slot14 = slot14(slot16, slot17, slot18, slot19)
-	slot0.canClickSkipTimer = slot14
+	slot14 = slot0
+	slot12 = slot0.shouldPlaySameTypeGroupShow
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #19 ---
 
-	--- END OF BLOCK #16 ---
+	slot12 = if slot12 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
 
-	FLOW; TARGET BLOCK #17
+
+	--- BLOCK #20 141-148, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.startTimer
+	slot15 = slot11
+	slot16 = ANIM_SHOW_DELAY_TIME
+	slot17 = false
+	slot12 = slot12(slot14, slot15, slot16, slot17)
+	slot0.canClickSkipTimer = slot12
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #17 178-179, warpins: 2 ---
+	--- BLOCK #21 149-150, warpins: 1 ---
+	slot12 = slot11
+
+	slot12()
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 151-152, warpins: 3 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #18 180-180, warpins: 2 ---
+	--- BLOCK #23 153-153, warpins: 2 ---
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot17.refreshAICallPanel = slot19
+slot17.refreshAICallPanel = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -4078,9 +5254,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.isShowAICallPanel = slot19
+slot17.isShowAICallPanel = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curStepCfg
 	--- END OF BLOCK #0 ---
@@ -4116,48 +5292,30 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 12-15, warpins: 2 ---
-	slot1 = slot0.curStepCfg
-	slot1 = slot1.notSkip
+	--- BLOCK #3 12-17, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.isNextStepEnabled
+	slot4 = slot0.curStepCfg
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #3 ---
 
-	if slot1 == 1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 16-17, warpins: 1 ---
+	--- BLOCK #4 18-18, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 18-20, warpins: 1 ---
-	slot1 = slot0.canClickSkip
-
-	--- END OF BLOCK #5 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 21-21, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 22-32, warpins: 3 ---
+	--- BLOCK #5 19-29, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.aiCallOR
 	slot4 = slot1
@@ -4167,6 +5325,29 @@ slot19 = function(slot0)
 	slot5 = slot2
 	slot3 = slot2.IsRunningTypewriter
 	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-33, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.TryFinishedStoryText
+
+	slot3(slot5)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 34-37, warpins: 1 ---
+	slot3 = slot0.stepInfo
+	slot3 = slot3.onCloseGuideStep
 	--- END OF BLOCK #7 ---
 
 	slot3 = if slot3 then
@@ -4176,52 +5357,504 @@ slot19 = function(slot0)
 	end
 
 
-	--- BLOCK #8 33-36, warpins: 1 ---
-	slot5 = slot2
-	slot3 = slot2.TryFinishedStoryText
-
-	slot3(slot5)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #9 37-40, warpins: 1 ---
-	slot3 = slot0.stepInfo
-	slot3 = slot3.onCloseGuideStep
-	--- END OF BLOCK #9 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 41-44, warpins: 1 ---
+	--- BLOCK #8 38-41, warpins: 1 ---
 	slot3 = slot0.stepInfo
 	slot3 = slot3.onCloseGuideStep
 	slot5 = slot0.curStepId
 
 	slot3(slot5)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #11 45-45, warpins: 3 ---
+	--- BLOCK #9 42-42, warpins: 3 ---
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot17.closeAICallPanel = slot19
+slot17.closeAICallPanel = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.stepInfo
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.stepInfo
+	slot2 = slot2.isNextStepEnabled
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-13, warpins: 2 ---
+	slot2 = slot0.stepInfo
+	slot2 = slot2.isNextStepEnabled
+	slot4 = slot1
+
+	return slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot17.isNextStepEnabled = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.getNextStepActionPath
+
+	return slot1()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17.getNextStepActionPath = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = GuideInputUtils
+	slot1 = slot1.getGroupSkipActionPath
+
+	return slot1()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot17.getSkipGroupActionPath = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.stepInfo
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.stepInfo
+	slot1 = slot1.onNextStep
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-12, warpins: 2 ---
+	slot1 = slot0.stepInfo
+	slot1 = slot1.onNextStep
+
+	return slot1()
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot17.onNextStepClick = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.curStepCfg
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-15, warpins: 2 ---
+	slot1 = slot0.curStepCfg
+	slot1 = slot1.type
+	slot2 = Const
+	slot2 = slot2.GUIDE_TYPE
+	slot2 = slot2.GT_FLOATING_AUTO
+	--- END OF BLOCK #3 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-22, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.topTipsOR
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "mainCom"
+
+	return slot1(slot3, slot4)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 23-29, warpins: 1 ---
+	slot1 = slot0.curStepCfg
+	slot1 = slot1.type
+	slot2 = Const
+	slot2 = slot2.GUIDE_TYPE
+	slot2 = slot2.GT_FLOATING_AI
+	--- END OF BLOCK #5 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-35, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.aiCallOR
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "mainCom"
+
+	return slot1(slot3, slot4)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 36-39, warpins: 3 ---
+	slot1 = slot0.guidePopupStepId
+	slot2 = slot0.curStepId
+	--- END OF BLOCK #7 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 40-41, warpins: 1 ---
+	slot1 = slot0.guidePopupMainCom
+
+	return slot1
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 42-43, warpins: 2 ---
+	slot1 = nil
+
+	return slot1
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot17.getCurrentGuideAnimMainCom = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.curStepCfg
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-16, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.getCurrentGuideAnimMainCom
+	slot1 = slot1(slot3)
+	slot2 = IsNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-18, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-25, warpins: 2 ---
+	slot2 = slot0.curStepCfg
+	slot2 = slot2.type
+	slot3 = Const
+	slot3 = slot3.GUIDE_TYPE
+	slot3 = slot3.GT_FLOATING_AUTO
+	--- END OF BLOCK #5 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-47, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.TryChangePage
+	slot5 = "Type"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot1
+	slot2 = slot1.TryChangePage
+	slot5 = "TipsType"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.view
+	slot2 = slot2.mainCom
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "ShowAICall"
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.changeMaskPage
+	slot5 = 0
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #7 48-54, warpins: 1 ---
+	slot2 = slot0.curStepCfg
+	slot2 = slot2.type
+	slot3 = Const
+	slot3 = slot3.GUIDE_TYPE
+	slot3 = slot3.GT_FLOATING_AI
+	--- END OF BLOCK #7 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 55-66, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.mainCom
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "ShowAICall"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.changeMaskPage
+	slot5 = 0
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 67-71, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.TryChangePage
+	slot5 = "TipsType"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 72-80, warpins: 3 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.triggerEvent
+	slot5 = "UI_NoviceGuide_Finish"
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot17.playFinishedState = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCurrentGuideAnimMainCom
+	slot1 = slot1(slot3)
+	slot2 = IsNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-19, warpins: 2 ---
+	slot4 = slot1
+	slot2 = slot1.InvokeCallback
+	slot5 = CS
+	slot5 = slot5.XGUI
+	slot5 = slot5.EInvokeTime
+	slot5 = slot5.Hide
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.playHide = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curStepCfg
 	--- END OF BLOCK #0 ---
@@ -4253,170 +5886,40 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 8-17, warpins: 2 ---
+	--- BLOCK #3 8-44, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.clearUpdateTimer
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.clearCanClickSkipTimer
 
 	slot1(slot3)
 
-	slot1 = slot0.curStepCfg
-	slot1 = slot1.type
-	slot2 = Const
-	slot2 = slot2.GUIDE_TYPE
-	slot2 = slot2.GT_FLOATING_AUTO
-	--- END OF BLOCK #3 ---
+	slot3 = slot0
+	slot1 = slot0.clearPopupTipTimer
 
-	if slot1 == slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	slot1(slot3)
 
+	slot1 = nil
+	slot0.guidePopupKeyHotKeyContent = slot1
+	slot3 = slot0
+	slot1 = slot0.clearGroupSkipUI
 
-	--- BLOCK #4 18-52, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.topTipsOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "mainCom"
-	slot1 = slot1(slot3, slot4)
-	slot4 = slot1
-	slot2 = slot1.TryChangePage
-	slot5 = "Type"
-	slot6 = 1
-
-	slot2(slot4, slot5, slot6)
-
-	slot4 = slot1
-	slot2 = slot1.TryChangePage
-	slot5 = "TipsType"
-	slot6 = 1
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.view
-	slot2 = slot2.mainCom
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "ShowAICall"
-	slot6 = 0
-
-	slot2(slot4, slot5, slot6)
-
-	slot4 = slot0
-	slot2 = slot0.changeMaskPage
-	slot5 = 0
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.audio
-	slot4 = slot2
-	slot2 = slot2.triggerEvent
-	slot5 = "UI_NoviceGuide_Finish"
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #5 53-59, warpins: 1 ---
-	slot1 = slot0.curStepCfg
-	slot1 = slot1.type
-	slot2 = Const
-	slot2 = slot2.GUIDE_TYPE
-	slot2 = slot2.GT_FLOATING_AI
-	--- END OF BLOCK #5 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #6 60-80, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.mainCom
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "ShowAICall"
-	slot5 = 1
-
-	slot1(slot3, slot4, slot5)
+	slot1(slot3)
 
 	slot3 = slot0
-	slot1 = slot0.changeMaskPage
-	slot4 = 0
+	slot1 = slot0.clearGroupSkipHoldTimer
 
-	slot1(slot3, slot4)
+	slot1(slot3)
 
-	slot1 = slot0.view
-	slot1 = slot1.aiCallOR
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "mainCom"
-	slot1 = slot1(slot3, slot4)
-	slot2 = slot0.curStepCfg
-	slot2 = slot2.notSkip
-	--- END OF BLOCK #6 ---
-
-	if slot2 == 1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 81-88, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.InvokeCallback
-	slot5 = CS
-	slot5 = slot5.XGUI
-	slot5 = slot5.EInvokeTime
-	slot5 = slot5.Hide
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 89-95, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.InvokeCallback
-	slot5 = CS
-	slot5 = slot5.XGUI
-	slot5 = slot5.EInvokeTime
-	slot5 = slot5.User1
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 96-102, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.audio
-	slot4 = slot2
-	slot2 = slot2.triggerEvent
-	slot5 = "UI_NoviceGuide_Finish"
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 103-116, warpins: 3 ---
+	slot1 = false
+	slot0.groupSkipGamepadPressConsumed = slot1
+	slot1 = false
+	slot0.groupSkipInputBlocked = slot1
+	slot1 = false
+	slot0.groupSkipEnabled = slot1
 	slot3 = slot0
 	slot1 = slot0.closeGuideVX
 
@@ -4437,32 +5940,75 @@ slot19 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot17.finshGuideStep = slot19
+slot17.finshGuideStep = slot21
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-47, warpins: 1 ---
+	slot1 = nil
+	slot0.guidePopupKeyHotKeyContent = slot1
+	slot1 = nil
+	slot0.guidePopupMainCom = slot1
+	slot1 = nil
+	slot0.guidePopupStepId = slot1
+	slot3 = slot0
+	slot1 = slot0.clearUpdateTimer
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.clearPopupTipTimer
+
+	slot1(slot3)
+
 	slot1 = slot0.view
-	slot1 = slot1.mainCom
+	slot1 = slot1.aiCallOR
 	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "GuideType"
-	slot5 = 0
+	slot1 = slot1.GetRefValue
+	slot4 = "progressCountDown"
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot1
+	slot2 = slot1.Stop
 
-	slot1(slot3, slot4, slot5)
+	slot2(slot4)
 
-	slot1 = slot0.view
-	slot1 = slot1.uGuide
-	slot3 = slot1
-	slot1 = slot1.PauseGuide
-	slot4 = true
+	slot4 = slot0
+	slot2 = slot0.clearGroupSkipUI
 
-	slot1(slot3, slot4)
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.clearGroupSkipHoldTimer
+
+	slot2(slot4)
+
+	slot2 = false
+	slot0.groupSkipGamepadPressConsumed = slot2
+	slot2 = false
+	slot0.groupSkipInputBlocked = slot2
+	slot2 = false
+	slot0.groupSkipEnabled = slot2
+	slot2 = slot0.view
+	slot2 = slot2.mainCom
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "GuideType"
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.view
+	slot2 = slot2.uGuide
+	slot4 = slot2
+	slot2 = slot2.PauseGuide
+	slot5 = true
+
+	slot2(slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -4471,10 +6017,10 @@ slot19 = function(slot0)
 
 end
 
-slot17.onHide = slot19
+slot17.onHide = slot21
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -4492,6 +6038,16 @@ slot19 = function(slot0)
 	slot1(slot3)
 
 	slot3 = slot0
+	slot1 = slot0.clearPopupTipTimer
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.clearGroupSkipHoldTimer
+
+	slot1(slot3)
+
+	slot3 = slot0
 	slot1 = slot0.unloadGuideVX
 
 	slot1(slot3)
@@ -4503,9 +6059,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.onDestroy = slot19
+slot17.onDestroy = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.endCheck
 
@@ -4574,7 +6130,7 @@ slot19 = function(slot0, slot1)
 	if slot9 == slot11 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #16
 	end
 
 
@@ -4619,24 +6175,68 @@ slot19 = function(slot0, slot1)
 
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
 	--- BLOCK #10 43-48, warpins: 2 ---
+	slot11 = slot1.type
+	slot12 = Const
+	slot12 = slot12.GUIDE_TYPE
+	slot12 = slot12.GT_SPECIFIC_HIGHLIGHT
+	--- END OF BLOCK #10 ---
+
+	if slot11 == slot12 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 49-54, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.tryAddSpecificHighlightVirtualBtnBinding
+	slot14 = slot10
+	slot11 = slot11(slot13, slot14)
+	--- END OF BLOCK #11 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #12 55-63, warpins: 1 ---
+	slot12 = GuideUtils
+	slot12 = slot12.getFocusTarget
+	slot14 = slot10
+	slot12 = slot12(slot14)
+	slot15 = slot0
+	slot13 = slot0.addCustomBtnClickListener
+	slot16 = slot12
+
+	slot13(slot15, slot16)
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #13 64-69, warpins: 1 ---
 	slot11 = NotNil
 	slot13 = slot0.stepInfo
 	slot13 = slot13.targetBtnTrans
 	slot11 = slot11(slot13)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #11 49-59, warpins: 1 ---
+	--- BLOCK #14 70-80, warpins: 1 ---
 	slot11 = slot0.stepInfo
 	slot11 = slot11.targetBtnTrans
 	slot13 = slot11
@@ -4646,65 +6246,65 @@ slot19 = function(slot0, slot1)
 	slot12 = IsNil
 	slot14 = slot11
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #12 60-64, warpins: 1 ---
+	--- BLOCK #15 81-85, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.addVirtualBtnBinding
 	slot15 = slot10
 
 	slot12(slot14, slot15)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #13 65-69, warpins: 1 ---
+	--- BLOCK #16 86-90, warpins: 1 ---
 	slot11 = Const
 	slot11 = slot11.GUIDE_STEP_END
 	slot11 = slot11.GSC_INPUT_DRAG
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #16 ---
 
 	if slot9 == slot11 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #14 70-70, warpins: 1 ---
-	--- END OF BLOCK #14 ---
+	--- BLOCK #17 91-91, warpins: 1 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #14 70-70, warpins: 6 ---
-	--- END OF BLOCK #14 ---
+	--- BLOCK #17 91-91, warpins: 8 ---
+	--- END OF BLOCK #17 ---
 
 	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #15
+	GO OUT TO BLOCK #18
 
-	--- BLOCK #15 71-71, warpins: 1 ---
+	--- BLOCK #18 92-92, warpins: 1 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot17.refreshEndCheck = slot19
+slot17.refreshEndCheck = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setIsModel
@@ -4755,9 +6355,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.refreshUIModel = slot19
+slot17.refreshUIModel = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4833,74 +6433,393 @@ slot19 = function(slot0, slot1)
 		if slot1 == "Performed" then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #23
 		end
 
 
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.curStepCfg
+		--- BLOCK #1 4-14, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.navMgr
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.input
+		slot4 = slot2
+		slot2 = slot2.isUsingGamepad
+		slot2 = slot2(slot4)
 		--- END OF BLOCK #1 ---
 
-		if slot1 ~= nil then
+		slot2 = if slot2 then
 		JUMP TO BLOCK #2
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #2 8-15, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.curStepCfg
-		slot1 = slot1.directionMethod
-		slot2 = Const
-		slot2 = slot2.GUIDE_DIRECTION_TYPE
-		slot2 = slot2.GUIDE_PORINT_TYPE_CONTROL
+		--- BLOCK #2 15-16, warpins: 1 ---
 		--- END OF BLOCK #2 ---
 
-		if slot1 ~= slot2 then
+		if slot1 ~= nil then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #3 16-17, warpins: 2 ---
-		slot1 = true
-
-		return slot1
-
+		--- BLOCK #3 17-19, warpins: 1 ---
+		slot2 = slot1.IsVirtualMouseMode
 		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #4
+		slot2 = if slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #7
+		end
 
 
-		--- BLOCK #4 18-24, warpins: 2 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.onSimulateClickTargetBtn
-		slot1 = slot1(slot3)
-		slot2 = not slot1
+		--- BLOCK #4 20-23, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curStepCfg
+		--- END OF BLOCK #4 ---
+
+		if slot2 ~= nil then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #5 24-31, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curStepCfg
+		slot2 = slot2.directionMethod
+		slot3 = Const
+		slot3 = slot3.GUIDE_DIRECTION_TYPE
+		slot3 = slot3.GUIDE_PORINT_TYPE_CONTROL
+		--- END OF BLOCK #5 ---
+
+		if slot2 ~= slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 32-33, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+		--- BLOCK #7 34-37, warpins: 5 ---
+		slot2 = self
+		slot2 = slot2.curStepCfg
+		--- END OF BLOCK #7 ---
+
+		if slot2 ~= nil then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 38-45, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curStepCfg
+		slot2 = slot2.directionMethod
+		slot3 = Const
+		slot3 = slot3.GUIDE_DIRECTION_TYPE
+		slot3 = slot3.GUIDE_PORINT_TYPE_CONTROL
+		--- END OF BLOCK #8 ---
+
+		if slot2 ~= slot3 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #9 46-53, warpins: 2 ---
+		slot2 = string
+		slot2 = slot2.sub
+		slot4 = actionMapKey
+		slot5 = 1
+		slot6 = 4
+		slot2 = slot2(slot4, slot5, slot6)
+		--- END OF BLOCK #9 ---
+
+		if slot2 == "Raw/" then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #13
+		end
+
+
+		--- BLOCK #10 54-59, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.curStepId
+		slot3 = self
+		slot3 = slot3.stepInfo
+		--- END OF BLOCK #10 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 60-62, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.stepInfo
+		slot3 = slot3.onCloseGuideStep
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 63-70, warpins: 2 ---
+		slot4 = self
+		slot6 = slot4
+		slot4 = slot4.startTimer
+
+		slot7 = function()
+			--- BLOCK #0 1-5, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.curStepId
+			slot1 = stepId
+			--- END OF BLOCK #0 ---
+
+			if slot0 == slot1 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #1 6-9, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.curStepCfg
+			--- END OF BLOCK #1 ---
+
+			if slot0 ~= nil then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #2 10-13, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.stepInfo
+			--- END OF BLOCK #2 ---
+
+			if slot0 ~= nil then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #3 14-19, warpins: 1 ---
+			slot0 = self
+			slot0 = slot0.stepInfo
+			slot0 = slot0.onCloseGuideStep
+			slot1 = onCloseGuideStep
+			--- END OF BLOCK #3 ---
+
+			if slot0 == slot1 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #4 20-22, warpins: 1 ---
+			slot0 = onCloseGuideStep
+			--- END OF BLOCK #4 ---
+
+			if slot0 ~= nil then
+			JUMP TO BLOCK #5
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #5 23-28, warpins: 1 ---
+			slot0 = onCloseGuideStep
+			slot2 = stepId
+			slot3 = Const
+			slot3 = slot3.GUIDE_STEP_FINISH_REASON
+			slot3 = slot3.ACTION_TRIGGERED
+
+			slot0(slot2, slot3)
+
+			--- END OF BLOCK #5 ---
+
+			FLOW; TARGET BLOCK #6
+
+
+			--- BLOCK #6 29-29, warpins: 6 ---
+			return
+			--- END OF BLOCK #6 ---
+
+
+
+		end
+
+		slot8 = 0
+		slot9 = false
+
+		slot4(slot6, slot7, slot8, slot9)
+
+		--- END OF BLOCK #12 ---
+
+		FLOW; TARGET BLOCK #13
+
+
+		--- BLOCK #13 71-73, warpins: 2 ---
+		slot2 = true
 
 		return slot2
 
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #13 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #5 25-26, warpins: 1 ---
+		--- BLOCK #14 74-79, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.curStepId
+		slot3 = self
+		slot3 = slot3.stepInfo
+		--- END OF BLOCK #14 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #15
+		else
+		JUMP TO BLOCK #16
+		end
+
+
+		--- BLOCK #15 80-82, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.stepInfo
+		slot3 = slot3.onCloseGuideStep
+		--- END OF BLOCK #15 ---
+
+		FLOW; TARGET BLOCK #16
+
+
+		--- BLOCK #16 83-88, warpins: 2 ---
+		slot4 = self
+		slot6 = slot4
+		slot4 = slot4.onSimulateClickTargetBtn
+		slot4 = slot4(slot6)
+		--- END OF BLOCK #16 ---
+
+		slot4 = if slot4 then
+		JUMP TO BLOCK #17
+		else
+		JUMP TO BLOCK #22
+		end
+
+
+		--- BLOCK #17 89-92, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.curStepId
+		--- END OF BLOCK #17 ---
+
+		if slot5 == slot2 then
+		JUMP TO BLOCK #18
+		else
+		JUMP TO BLOCK #22
+		end
+
+
+		--- BLOCK #18 93-96, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.stepInfo
+		--- END OF BLOCK #18 ---
+
+		if slot5 ~= nil then
+		JUMP TO BLOCK #19
+		else
+		JUMP TO BLOCK #22
+		end
+
+
+		--- BLOCK #19 97-101, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.stepInfo
+		slot5 = slot5.onCloseGuideStep
+		--- END OF BLOCK #19 ---
+
+		if slot5 == slot3 then
+		JUMP TO BLOCK #20
+		else
+		JUMP TO BLOCK #22
+		end
+
+
+		--- BLOCK #20 102-103, warpins: 1 ---
+		--- END OF BLOCK #20 ---
+
+		if slot3 ~= nil then
+		JUMP TO BLOCK #21
+		else
+		JUMP TO BLOCK #22
+		end
+
+
+		--- BLOCK #21 104-113, warpins: 1 ---
+		slot5 = self
+		slot5 = slot5.stepInfo
+		slot6 = nil
+		slot5.onCloseGuideStep = slot6
+		slot5 = slot3
+		slot7 = slot2
+		slot8 = Const
+		slot8 = slot8.GUIDE_STEP_FINISH_REASON
+		slot8 = slot8.ACTION_TRIGGERED
+
+		slot5(slot7, slot8)
+
+		--- END OF BLOCK #21 ---
+
+		FLOW; TARGET BLOCK #22
+
+
+		--- BLOCK #22 114-117, warpins: 6 ---
+		slot5 = not slot4
+
+		return slot5
+
+		--- END OF BLOCK #22 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+		--- BLOCK #23 118-120, warpins: 1 ---
 		slot1 = true
 
 		return slot1
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #23 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #24
 
 
-		--- BLOCK #6 27-27, warpins: 2 ---
+		--- BLOCK #24 121-121, warpins: 2 ---
 		return
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #24 ---
+
+		FLOW; TARGET BLOCK #25
+
+
+		--- BLOCK #25 122-122, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #25 ---
 
 
 
@@ -4929,9 +6848,99 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.addKeyBinding = slot19
+slot17.addKeyBinding = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = GuideUtils
+	slot2 = slot2.getFocusTarget
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot3 = IsNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-16, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.ERROR
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 17-22, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = "目标按钮为空，无法绑定虚拟按钮，检查是否为指定高亮引导！"
+	slot7 = slot0.curStepId
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 23-24, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 25-43, warpins: 2 ---
+	slot0.virtualBtnTargetTrans = slot2
+	slot3 = LuaUIUtils
+	slot3 = slot3.setUIViewVisible
+	slot5 = slot0.view
+	slot5 = slot5.virtualBtn
+	slot6 = true
+
+	slot3(slot5, slot6)
+
+	slot3 = GuideUtils
+	slot3 = slot3.rectSameAs
+	slot5 = slot0.view
+	slot5 = slot5.virtualBtn
+	slot5 = slot5.rectTransform
+	slot8 = slot2
+	slot6 = slot2.GetComponent
+	slot9 = "RectTransform"
+	MULTRES = slot6(slot8, slot9)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot17.tryAddSpecificHighlightVirtualBtnBinding = slot21
+
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5031,9 +7040,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.addVirtualBtnBinding = slot19
+slot17.addVirtualBtnBinding = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.stepInfo
 	slot1 = slot1.targetBtnTransStart
@@ -5077,106 +7086,132 @@ slot19 = function(slot0)
 
 end
 
-slot17.onDragFinish = slot19
+slot17.onDragFinish = slot21
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.stepInfo
-	slot3 = slot3.targetBtnTrans
-	slot1 = slot1(slot3)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot1 = false
-
-	return slot1
-
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0.virtualBtnTargetTrans
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot1 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 9-16, warpins: 2 ---
-	slot1 = slot0.stepInfo
-	slot1 = slot1.targetBtnTrans
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "UButton"
-	slot1 = slot1(slot3, slot4)
+	--- BLOCK #2 6-7, warpins: 1 ---
+	slot2 = slot0.stepInfo
+	slot1 = slot2.targetBtnTrans
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
+	--- BLOCK #3 8-12, warpins: 3 ---
+	slot2 = IsNil
 	slot4 = slot1
-	slot2 = slot1.OnClickSimulate
-
-	slot2(slot4)
-
-	slot2 = true
-
-	return slot2
-
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 22-28, warpins: 2 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.WARN
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #4 ---
-
 	slot2 = if slot2 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 29-34, warpins: 1 ---
-	slot2 = logger
-	slot4 = slot2
-	slot2 = slot2.warn
-	slot5 = "%d 引导指向的控件未包含 UButton 组件，将无法触发模拟点击功能 ,请检查 !!!"
-	slot6 = slot0.curStepId
-
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 35-36, warpins: 2 ---
+	--- BLOCK #4 13-14, warpins: 1 ---
 	slot2 = false
 
 	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-20, warpins: 2 ---
+	slot4 = slot1
+	slot2 = slot1.GetComponent
+	slot5 = "UButton"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-25, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.OnClickSimulate
+
+	slot3(slot5)
+
+	slot3 = true
+
+	return slot3
+
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 26-32, warpins: 2 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.WARN
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 33-38, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.warn
+	slot6 = "%d 引导指向的控件未包含 UButton 组件，将无法触发模拟点击功能 ,请检查 !!!"
+	slot7 = slot0.curStepId
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 39-40, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot17.onSimulateClickTargetBtn = slot19
+slot17.onSimulateClickTargetBtn = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = IsNil
 	slot4 = slot1
@@ -5298,9 +7333,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.addCustomBtnClickListener = slot19
+slot17.addCustomBtnClickListener = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = IsNil
 	slot3 = slot0.customEndCheckBtnTrans
@@ -5327,7 +7362,7 @@ slot19 = function(slot0)
 	slot1 = slot0.view
 	slot1 = slot1.uGuide
 	slot3 = slot1
-	slot1 = slot1.AddCustomBtnClickLinster
+	slot1 = slot1.RemoveCustomBtnClickLinster
 	slot4 = slot0.customEndCheckBtnTrans
 
 	slot1(slot3, slot4)
@@ -5342,9 +7377,9 @@ slot19 = function(slot0)
 
 end
 
-slot17.removeCustomBtnClickLinster = slot19
+slot17.removeCustomBtnClickLinster = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.mainCom
@@ -5362,9 +7397,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.changeMaskPage = slot19
+slot17.changeMaskPage = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.stepOneTime
 	--- END OF BLOCK #0 ---
@@ -5562,7 +7597,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot17.checkIsCountDown = slot19
+slot17.checkIsCountDown = slot21
 
 return slot17
 --- END OF BLOCK #0 ---

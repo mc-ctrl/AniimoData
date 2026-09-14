@@ -1,4 +1,4 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -36,15 +36,18 @@ slot10 = require
 slot12 = "Common.Const.ItemConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.ClientCaptureUtils"
+slot13 = "Common.Utils.ItemUtils"
 slot11 = slot11(slot13)
-slot12 = slot1.LightClass
-slot14 = "CatchBossModel"
-slot15 = slot2
-slot12 = slot12(slot14, slot15)
-slot13 = 110003
+slot12 = require
+slot14 = "Utils.ClientCaptureUtils"
+slot12 = slot12(slot14)
+slot13 = slot1.LightClass
+slot15 = "CatchBossModel"
+slot16 = slot2
+slot13 = slot13(slot15, slot16)
+slot14 = 110003
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientUtils
 	slot2 = slot2.getItemCountById
@@ -74,7 +77,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-49, warpins: 2 ---
+	--- BLOCK #3 11-51, warpins: 2 ---
 	slot3 = {}
 	slot4 = CatchProbContext
 	slot4 = slot4.clientGet
@@ -110,10 +113,12 @@ slot14 = function(slot0, slot1)
 
 	slot6 = pg
 	slot6 = slot6.me
-	slot7 = slot6.invInfo
-	slot8 = ItemConst
-	slot8 = slot8.INV_TYPE_BALL
-	slot7 = slot7[slot8]
+	slot7 = ItemUtils
+	slot7 = slot7.getTypedBag
+	slot9 = slot6
+	slot10 = ItemConst
+	slot10 = slot10.INV_TYPE_BALL
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #3 ---
 
 	slot7 = if not slot7 then
@@ -123,14 +128,14 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 50-50, warpins: 1 ---
+	--- BLOCK #4 52-52, warpins: 1 ---
 	slot7 = {}
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 51-54, warpins: 2 ---
+	--- BLOCK #5 53-56, warpins: 2 ---
 	slot10 = slot7
 	slot8 = slot7.items
 	slot8, slot9, slot10 = slot8(slot10)
@@ -139,7 +144,7 @@ slot14 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #6 55-61, warpins: 1 ---
+	--- BLOCK #6 57-63, warpins: 1 ---
 	slot13 = LuaUIUtils
 	slot13 = slot13.getItemClientInfoById
 	slot15 = slot12.id
@@ -154,7 +159,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 62-64, warpins: 1 ---
+	--- BLOCK #7 64-66, warpins: 1 ---
 	slot15 = BEST_BALL_ID
 	--- END OF BLOCK #7 ---
 
@@ -165,7 +170,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 65-68, warpins: 1 ---
+	--- BLOCK #8 67-70, warpins: 1 ---
 	slot15 = ItemData
 	slot15 = slot15[slot14]
 	--- END OF BLOCK #8 ---
@@ -177,7 +182,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 69-74, warpins: 1 ---
+	--- BLOCK #9 71-76, warpins: 1 ---
 	slot15 = ClientCaptureUtils
 	slot15 = slot15.checkBallCanThrow
 	slot17 = slot14
@@ -191,7 +196,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 75-105, warpins: 1 ---
+	--- BLOCK #10 77-107, warpins: 1 ---
 	slot15 = ClientUtils
 	slot15 = slot15.getItemCountById
 	slot17 = slot14
@@ -230,7 +235,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 106-107, warpins: 1 ---
+	--- BLOCK #11 108-109, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
 	slot19 = if slot19 then
@@ -240,7 +245,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 108-110, warpins: 1 ---
+	--- BLOCK #12 110-112, warpins: 1 ---
 	slot20 = slot19.canQuickCaptureInHand
 	--- END OF BLOCK #12 ---
 
@@ -251,7 +256,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 111-113, warpins: 1 ---
+	--- BLOCK #13 113-115, warpins: 1 ---
 	slot20 = #slot3
 	slot20 = slot20 + 1
 	slot3[slot20] = slot17
@@ -260,7 +265,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 114-115, warpins: 9 ---
+	--- BLOCK #14 116-117, warpins: 9 ---
 	--- END OF BLOCK #14 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
@@ -268,7 +273,7 @@ slot14 = function(slot0, slot1)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 116-123, warpins: 1 ---
+	--- BLOCK #15 118-125, warpins: 1 ---
 	slot8 = lume
 	slot8 = slot8.sort
 	slot10 = slot3
@@ -319,9 +324,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.getBossCapturePropInfos = slot14
+slot13.getBossCapturePropInfos = slot15
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

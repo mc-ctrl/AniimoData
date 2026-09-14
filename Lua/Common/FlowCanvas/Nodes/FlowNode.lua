@@ -1,4 +1,4 @@
---- BLOCK #0 1-65, warpins: 1 ---
+--- BLOCK #0 1-67, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -106,6 +106,17 @@ slot11 = function(slot0)
 end
 
 slot7.registerPorts = slot11
+
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.onContextDestroy = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---

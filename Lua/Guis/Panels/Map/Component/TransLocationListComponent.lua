@@ -133,6 +133,7 @@ slot7 = function(slot0, slot1, slot2)
 		slot1 = pg
 		slot1 = slot1.me
 		slot1 = slot1.sceneId
+
 		--- END OF BLOCK #0 ---
 
 		if slot1 == slot0 then
@@ -143,34 +144,20 @@ slot7 = function(slot0, slot1, slot2)
 
 
 		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
+		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 9-20, warpins: 1 ---
+		--- BLOCK #2 9-20, warpins: 2 ---
 		slot1 = ClientUtils
-		slot1 = slot1.playTeleportDissolveEffectAndTeleportByFunc
+		slot1 = slot1.playTeleportDissolveEffectAndTeleport
+		slot3 = slot0
+		slot4 = 0
 
-		slot3 = function()
-			--- BLOCK #0 1-8, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.me
-			slot2 = slot0
-			slot0 = slot0.tryTeleportToScene
-			slot3 = sceneId
-			slot4 = 0
-
-			slot0(slot2, slot3, slot4)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot1(slot3)
+		slot1(slot3, slot4)
 
 		slot1 = self
 		slot1 = slot1.ctrl
@@ -182,13 +169,6 @@ slot7 = function(slot0, slot1, slot2)
 
 		return
 		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 21-21, warpins: 2 ---
-		return
-		--- END OF BLOCK #3 ---
 
 
 

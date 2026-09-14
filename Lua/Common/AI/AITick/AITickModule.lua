@@ -329,7 +329,7 @@ slot9 = function(slot0, slot1)
 
 	--- BLOCK #20 84-92, warpins: 2 ---
 	slot6 = Time
-	slot6 = slot6.secondCache
+	slot6 = slot6.realSecondCache
 	slot7 = slot0.subTickQueueTickEntCountLimit
 	slot0.subTickQueueTickEntCounter = slot7
 	slot7 = slot0.subTickIndex

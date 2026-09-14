@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-62, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -232,63 +232,65 @@ end
 
 slot7.addMediaMarker = slot8
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-11, warpins: 1 ---
-	slot4 = json
-	slot4 = slot4.decode
-	slot6 = slot3
-	slot4 = slot4(slot6)
-	slot5 = LoggerManager
-	slot5 = slot5.checkLogger
-	slot7 = LoggerConst
-	slot7 = slot7.DEBUG
+	slot5 = json
+	slot5 = slot5.decode
+	slot7 = slot3
 	slot5 = slot5(slot7)
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.DEBUG
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #0 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 12-21, warpins: 1 ---
-	slot5 = slot0.logger
-	slot7 = slot5
-	slot5 = slot5.debug
-	slot8 = "RPC_SC_AddMediaMarkerRet===: %s, %s, %s"
-	slot9 = slot1
-	slot10 = slot2
-	slot11 = inspect
+	--- BLOCK #1 12-22, warpins: 1 ---
+	slot6 = slot0.logger
+	slot8 = slot6
+	slot6 = slot6.debug
+	slot9 = "RPC_SC_AddMediaMarkerRet===: %s, %s, %s, %s"
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = inspect
+	slot14 = slot5
+	slot12 = slot12(slot14)
 	slot13 = slot4
-	MULTRES = slot11(slot13)
 
-	slot5(slot7, slot8, slot9, slot10, MULTRES)
+	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 22-37, warpins: 2 ---
-	slot5 = facade
-	slot7 = slot5
-	slot5 = slot5.SendMessageCommand
-	slot8 = MessageName
-	slot8 = slot8.ON_ADD_INFO_STAMP_SUCCESS
-	slot9 = {}
-	slot9.markerId = slot1
+	--- BLOCK #2 23-39, warpins: 2 ---
+	slot6 = facade
+	slot8 = slot6
+	slot6 = slot6.SendMessageCommand
+	slot9 = MessageName
+	slot9 = slot9.ON_ADD_INFO_STAMP_SUCCESS
+	slot10 = {}
+	slot10.markerId = slot1
+	slot10.encourageDays = slot4
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.audio
-	slot7 = slot5
-	slot5 = slot5.triggerEvent
-	slot8 = "SFX_UI_SendMessage"
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.audio
+	slot8 = slot6
+	slot6 = slot6.triggerEvent
+	slot9 = "SFX_UI_SendMessage"
 
-	slot5(slot7, slot8)
+	slot6(slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -316,6 +318,129 @@ slot8 = function(slot0, slot1)
 end
 
 slot7.removeMediaMarker = slot8
+
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "number" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.MARKER_SETTINGS
+	slot2 = slot2.DEFAULT
+	--- END OF BLOCK #1 ---
+
+	if slot1 >= slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.MARKER_SETTINGS
+	slot2 = slot2.STRANGER_HIDE
+	--- END OF BLOCK #2 ---
+
+	if slot2 < slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 16-22, warpins: 3 ---
+	slot2 = LoggerManager
+	slot2 = slot2.checkLogger
+	slot4 = LoggerConst
+	slot4 = slot4.ERROR
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-28, warpins: 1 ---
+	slot2 = slot0.logger
+	slot4 = slot2
+	slot2 = slot2.error
+	slot5 = "setMediaMarkerView setting=%s error"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-29, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-36, warpins: 2 ---
+	slot2 = LoggerManager
+	slot2 = slot2.checkLogger
+	slot4 = LoggerConst
+	slot4 = slot4.INFO
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 37-42, warpins: 1 ---
+	slot2 = slot0.logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "RPC_CS_SetMediaMarkerView setting=%s"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 43-48, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.serverMsg
+	slot5 = "RPC_CS_SetMediaMarkerView"
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot7.setMediaMarkerView = slot8
 
 slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
@@ -439,58 +564,62 @@ end
 
 slot7.likeSysMediaMarker = slot8
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-7, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.DEBUG
-	slot4 = slot4(slot6)
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.DEBUG
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-15, warpins: 1 ---
-	slot4 = slot0.logger
-	slot6 = slot4
-	slot4 = slot4.debug
-	slot7 = "RPC_SC_LikeMediaMarkerRet===: %s, %s, %s"
-	slot8 = slot1
-	slot9 = slot2
-	slot10 = slot3
+	--- BLOCK #1 8-17, warpins: 1 ---
+	slot6 = slot0.logger
+	slot8 = slot6
+	slot6 = slot6.debug
+	slot9 = "RPC_SC_LikeMediaMarkerRet===: %s, %s, %s, %s, %s"
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot3
+	slot13 = slot4
+	slot14 = slot5
 
-	slot4(slot6, slot7, slot8, slot9, slot10)
+	slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-32, warpins: 2 ---
-	slot4 = facade
-	slot6 = slot4
-	slot4 = slot4.SendMessageCommand
-	slot7 = MessageName
-	slot7 = slot7.ON_INFO_STAMP_BE_LIKED
-	slot8 = {}
-	slot8.markerId = slot1
-	slot8.likes = slot2
+	--- BLOCK #2 18-36, warpins: 2 ---
+	slot6 = facade
+	slot8 = slot6
+	slot6 = slot6.SendMessageCommand
+	slot9 = MessageName
+	slot9 = slot9.ON_INFO_STAMP_BE_LIKED
+	slot10 = {}
+	slot10.markerId = slot1
+	slot10.likes = slot2
+	slot10.encourageDays = slot4
+	slot10.isPermanent = slot5
 
-	slot4(slot6, slot7, slot8)
+	slot6(slot8, slot9, slot10)
 
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.audio
-	slot6 = slot4
-	slot4 = slot4.triggerEvent
-	slot7 = "SFX_UI_Like"
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.audio
+	slot8 = slot6
+	slot6 = slot6.triggerEvent
+	slot9 = "SFX_UI_Like"
 
-	slot4(slot6, slot7)
+	slot6(slot8, slot9)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -742,7 +871,7 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 43-59, warpins: 2 ---
+	--- BLOCK #8 43-61, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.callService
 	slot5 = "MediaMarkerService"
@@ -751,6 +880,8 @@ slot8 = function(slot0, slot1)
 	slot8 = {}
 	slot7[1] = slot8
 	slot7[2] = slot1
+	slot8 = {}
+	slot7[3] = slot8
 	slot8 = CallbackHandler
 	slot10 = slot0
 	slot11 = "batchFindMediaMarkerCb"

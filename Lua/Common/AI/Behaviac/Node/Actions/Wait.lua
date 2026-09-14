@@ -389,7 +389,7 @@ end
 slot17.onExit = slot19
 
 slot19 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = common
 	slot4 = slot4.getClock
 	slot4 = slot4()
@@ -397,37 +397,61 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	slot5 = slot0.getStart
 	slot8 = slot2
 	slot5 = slot5(slot7, slot8)
-	slot5 = slot4 - slot5
-	slot8 = slot0
-	slot6 = slot0.getTime
-	slot9 = slot2
-	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #0 ---
 
-	if slot6 <= slot5 then
+	if slot4 < slot5 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 15-17, warpins: 1 ---
-	slot5 = EBTStatus
-	slot5 = slot5.BT_SUCCESS
+	--- BLOCK #1 10-15, warpins: 1 ---
+	slot5 = slot4
+	slot8 = slot0
+	slot6 = slot0.setStart
+	slot9 = slot2
+	slot10 = slot5
 
-	return slot5
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-20, warpins: 2 ---
-	slot5 = EBTStatus
-	slot5 = slot5.BT_RUNNING
-
-	return slot5
+	--- BLOCK #2 16-22, warpins: 2 ---
+	slot6 = slot4 - slot5
+	slot9 = slot0
+	slot7 = slot0.getTime
+	slot10 = slot2
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #2 ---
+
+	if slot7 <= slot6 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-25, warpins: 1 ---
+	slot6 = EBTStatus
+	slot6 = slot6.BT_SUCCESS
+
+	return slot6
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 26-28, warpins: 2 ---
+	slot6 = EBTStatus
+	slot6 = slot6.BT_RUNNING
+
+	return slot6
+	--- END OF BLOCK #4 ---
 
 
 

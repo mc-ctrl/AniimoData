@@ -24,7 +24,7 @@ slot7 = require
 slot9 = "Data.pet_prototype_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.pet_avatar_data"
+slot10 = "Utils.LuaUIUtils"
 slot8 = slot8(slot10)
 slot9 = slot0.LightClass
 slot11 = "ArkPartyChoiceModel"
@@ -89,13 +89,12 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-49, warpins: 3 ---
+	--- BLOCK #4 31-48, warpins: 3 ---
 	slot12.index = slot10
-	slot14 = PetAvatarData
-	slot15 = slot13.petPrototypeId
-	slot14 = slot14[slot15]
-	slot14 = slot14[0]
-	slot14 = slot14.formName
+	slot14 = LuaUIUtils
+	slot14 = slot14.getPetFormNameByPrototypeId
+	slot16 = slot13.petPrototypeId
+	slot14 = slot14(slot16)
 	slot12.name = slot14
 	slot14 = pg
 	slot14 = slot14.game
@@ -116,7 +115,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 50-60, warpins: 1 ---
+	--- BLOCK #5 49-59, warpins: 1 ---
 	slot14 = slot12.voteNum
 	slot15 = pg
 	slot15 = slot15.game
@@ -132,7 +131,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 61-64, warpins: 1 ---
+	--- BLOCK #6 60-63, warpins: 1 ---
 	slot14 = 0
 	slot12.voteNum = slot14
 	slot14 = 0
@@ -142,7 +141,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 65-67, warpins: 2 ---
+	--- BLOCK #7 64-66, warpins: 2 ---
 	slot14 = slot12.voteNum
 	--- END OF BLOCK #7 ---
 
@@ -153,14 +152,14 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 68-68, warpins: 1 ---
+	--- BLOCK #8 67-67, warpins: 1 ---
 	slot6 = slot12.voteNum
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 69-73, warpins: 2 ---
+	--- BLOCK #9 68-72, warpins: 2 ---
 	slot14 = table
 	slot14 = slot14.insert
 	slot16 = slot5
@@ -173,7 +172,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 74-75, warpins: 2 ---
+	--- BLOCK #10 73-74, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -181,7 +180,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 76-79, warpins: 1 ---
+	--- BLOCK #11 75-78, warpins: 1 ---
 	slot7 = ipairs
 	slot9 = slot5
 	slot7, slot8, slot9 = slot7(slot9)
@@ -190,7 +189,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 80-82, warpins: 1 ---
+	--- BLOCK #12 79-81, warpins: 1 ---
 	slot12 = slot11.voteNum
 	--- END OF BLOCK #12 ---
 
@@ -201,7 +200,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 83-85, warpins: 1 ---
+	--- BLOCK #13 82-84, warpins: 1 ---
 	slot12 = true
 	slot11.isMax = slot12
 
@@ -210,7 +209,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 86-87, warpins: 2 ---
+	--- BLOCK #14 85-86, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -218,7 +217,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 88-88, warpins: 2 ---
+	--- BLOCK #15 87-87, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #15 ---
 
@@ -286,13 +285,12 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-49, warpins: 3 ---
+	--- BLOCK #4 31-48, warpins: 3 ---
 	slot12.index = slot10
-	slot14 = PetAvatarData
-	slot15 = slot13.petPrototypeId
-	slot14 = slot14[slot15]
-	slot14 = slot14[0]
-	slot14 = slot14.formName
+	slot14 = LuaUIUtils
+	slot14 = slot14.getPetFormNameByPrototypeId
+	slot16 = slot13.petPrototypeId
+	slot14 = slot14(slot16)
 	slot12.name = slot14
 	slot14 = pg
 	slot14 = slot14.game
@@ -313,7 +311,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 50-60, warpins: 1 ---
+	--- BLOCK #5 49-59, warpins: 1 ---
 	slot14 = slot12.voteNum
 	slot15 = pg
 	slot15 = slot15.game
@@ -329,7 +327,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 61-64, warpins: 1 ---
+	--- BLOCK #6 60-63, warpins: 1 ---
 	slot14 = 0
 	slot12.voteNum = slot14
 	slot14 = 0
@@ -339,7 +337,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 65-67, warpins: 2 ---
+	--- BLOCK #7 64-66, warpins: 2 ---
 	slot14 = slot12.voteNum
 	--- END OF BLOCK #7 ---
 
@@ -350,14 +348,14 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 68-68, warpins: 1 ---
+	--- BLOCK #8 67-67, warpins: 1 ---
 	slot6 = slot12.voteNum
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 69-73, warpins: 2 ---
+	--- BLOCK #9 68-72, warpins: 2 ---
 	slot14 = table
 	slot14 = slot14.insert
 	slot16 = slot5
@@ -370,7 +368,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 74-75, warpins: 2 ---
+	--- BLOCK #10 73-74, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -378,7 +376,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 76-79, warpins: 1 ---
+	--- BLOCK #11 75-78, warpins: 1 ---
 	slot7 = ipairs
 	slot9 = slot5
 	slot7, slot8, slot9 = slot7(slot9)
@@ -387,7 +385,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 80-82, warpins: 1 ---
+	--- BLOCK #12 79-81, warpins: 1 ---
 	slot12 = slot11.voteNum
 	--- END OF BLOCK #12 ---
 
@@ -398,7 +396,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 83-85, warpins: 1 ---
+	--- BLOCK #13 82-84, warpins: 1 ---
 	slot12 = true
 	slot11.isMax = slot12
 
@@ -407,7 +405,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 86-87, warpins: 2 ---
+	--- BLOCK #14 85-86, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -415,7 +413,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 88-88, warpins: 2 ---
+	--- BLOCK #15 87-87, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #15 ---
 
@@ -483,13 +481,12 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-49, warpins: 3 ---
+	--- BLOCK #4 31-48, warpins: 3 ---
 	slot12.index = slot10
-	slot14 = PetAvatarData
-	slot15 = slot13.petPrototypeId
-	slot14 = slot14[slot15]
-	slot14 = slot14[0]
-	slot14 = slot14.formName
+	slot14 = LuaUIUtils
+	slot14 = slot14.getPetFormNameByPrototypeId
+	slot16 = slot13.petPrototypeId
+	slot14 = slot14(slot16)
 	slot12.name = slot14
 	slot14 = pg
 	slot14 = slot14.game
@@ -510,7 +507,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 50-60, warpins: 1 ---
+	--- BLOCK #5 49-59, warpins: 1 ---
 	slot14 = slot12.voteNum
 	slot15 = pg
 	slot15 = slot15.game
@@ -526,7 +523,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 61-64, warpins: 1 ---
+	--- BLOCK #6 60-63, warpins: 1 ---
 	slot14 = 0
 	slot12.voteNum = slot14
 	slot14 = 0
@@ -536,7 +533,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 65-67, warpins: 2 ---
+	--- BLOCK #7 64-66, warpins: 2 ---
 	slot14 = slot12.voteNum
 	--- END OF BLOCK #7 ---
 
@@ -547,14 +544,14 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 68-68, warpins: 1 ---
+	--- BLOCK #8 67-67, warpins: 1 ---
 	slot6 = slot12.voteNum
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 69-73, warpins: 2 ---
+	--- BLOCK #9 68-72, warpins: 2 ---
 	slot14 = table
 	slot14 = slot14.insert
 	slot16 = slot5
@@ -567,7 +564,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 74-75, warpins: 2 ---
+	--- BLOCK #10 73-74, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -575,7 +572,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 76-79, warpins: 1 ---
+	--- BLOCK #11 75-78, warpins: 1 ---
 	slot7 = ipairs
 	slot9 = slot5
 	slot7, slot8, slot9 = slot7(slot9)
@@ -584,7 +581,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 80-82, warpins: 1 ---
+	--- BLOCK #12 79-81, warpins: 1 ---
 	slot12 = slot11.voteNum
 	--- END OF BLOCK #12 ---
 
@@ -595,7 +592,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 83-85, warpins: 1 ---
+	--- BLOCK #13 82-84, warpins: 1 ---
 	slot12 = true
 	slot11.isMax = slot12
 
@@ -604,7 +601,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 86-87, warpins: 2 ---
+	--- BLOCK #14 85-86, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -612,7 +609,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 88-88, warpins: 2 ---
+	--- BLOCK #15 87-87, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #15 ---
 
@@ -680,13 +677,12 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-49, warpins: 3 ---
+	--- BLOCK #4 31-48, warpins: 3 ---
 	slot12.index = slot10
-	slot14 = PetAvatarData
-	slot15 = slot13.petPrototypeId
-	slot14 = slot14[slot15]
-	slot14 = slot14[0]
-	slot14 = slot14.formName
+	slot14 = LuaUIUtils
+	slot14 = slot14.getPetFormNameByPrototypeId
+	slot16 = slot13.petPrototypeId
+	slot14 = slot14(slot16)
 	slot12.name = slot14
 	slot14 = pg
 	slot14 = slot14.game
@@ -707,7 +703,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 50-60, warpins: 1 ---
+	--- BLOCK #5 49-59, warpins: 1 ---
 	slot14 = slot12.voteNum
 	slot15 = pg
 	slot15 = slot15.game
@@ -723,7 +719,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 61-64, warpins: 1 ---
+	--- BLOCK #6 60-63, warpins: 1 ---
 	slot14 = 0
 	slot12.voteNum = slot14
 	slot14 = 0
@@ -733,7 +729,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 65-67, warpins: 2 ---
+	--- BLOCK #7 64-66, warpins: 2 ---
 	slot14 = slot12.voteNum
 	--- END OF BLOCK #7 ---
 
@@ -744,14 +740,14 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 68-68, warpins: 1 ---
+	--- BLOCK #8 67-67, warpins: 1 ---
 	slot6 = slot12.voteNum
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 69-73, warpins: 2 ---
+	--- BLOCK #9 68-72, warpins: 2 ---
 	slot14 = table
 	slot14 = slot14.insert
 	slot16 = slot5
@@ -764,7 +760,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 74-75, warpins: 2 ---
+	--- BLOCK #10 73-74, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -772,7 +768,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 76-79, warpins: 1 ---
+	--- BLOCK #11 75-78, warpins: 1 ---
 	slot7 = ipairs
 	slot9 = slot5
 	slot7, slot8, slot9 = slot7(slot9)
@@ -781,7 +777,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 80-82, warpins: 1 ---
+	--- BLOCK #12 79-81, warpins: 1 ---
 	slot12 = slot11.voteNum
 	--- END OF BLOCK #12 ---
 
@@ -792,7 +788,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 83-85, warpins: 1 ---
+	--- BLOCK #13 82-84, warpins: 1 ---
 	slot12 = true
 	slot11.isMax = slot12
 
@@ -801,7 +797,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 86-87, warpins: 2 ---
+	--- BLOCK #14 85-86, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -809,7 +805,7 @@ slot10 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 88-88, warpins: 2 ---
+	--- BLOCK #15 87-87, warpins: 2 ---
 	return slot5
 	--- END OF BLOCK #15 ---
 

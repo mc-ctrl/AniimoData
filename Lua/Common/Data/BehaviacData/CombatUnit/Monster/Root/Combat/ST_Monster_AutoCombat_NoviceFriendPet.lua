@@ -8,32 +8,32 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NoviceFriendPet",
 	agenttype = "PuppetAgent",
-	version = 15
+	version = 15,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_NoviceFriendPet"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	const = 0,
 	name = "disToTgtForSkillMon",
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	const = 0,
 	name = "goBackDist",
 	type = "float",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	const = 0,
 	name = "tPlayersPetID",
 	type = "int",
-	value = "0",
-	const = 0
+	value = "0"
 }
 slot4[3] = slot5
 slot3.pars = slot4

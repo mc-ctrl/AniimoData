@@ -1,49 +1,52 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.PropertySync.CustomList"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Framework.Class"
+slot5 = "Core.PropertySync.CustomList"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Common.lume"
+slot6 = "Core.Framework.Class"
 slot4 = slot4(slot6)
-slot5 = slot0.getLogger
-slot7 = "TalentList"
+slot5 = require
+slot7 = "Core.Common.lume"
 slot5 = slot5(slot7)
-slot6 = require
-slot8 = "Common.Const.Const"
+slot6 = slot1.getLogger
+slot8 = "TalentList"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.Utils"
+slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.AbilityConst"
+slot10 = "Common.Utils.Utils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.pet_prototype_data"
+slot11 = "Common.Const.AbilityConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_talent_group_data"
+slot12 = "Data.pet_prototype_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.pet_talent_pool_to_ids"
+slot13 = "Data.pet_talent_group_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_talent_data"
+slot14 = "Data.pet_talent_pool_to_ids"
 slot12 = slot12(slot14)
-slot13 = slot3.LiteClass
-slot15 = "TalentList"
-slot16 = slot2
-slot13 = slot13(slot15, slot16)
+slot13 = require
+slot15 = "Data.pet_talent_data"
+slot13 = slot13(slot15)
+slot14 = slot4.LiteClass
+slot16 = "TalentList"
+slot17 = slot3
+slot14 = slot14(slot16, slot17)
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.values
@@ -57,9 +60,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.getTalentIds = slot14
+slot14.getTalentIds = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = Const
 	slot3 = slot3.PET_TALENT
@@ -604,9 +607,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot13.initByTemplate = slot14
+slot14.initByTemplate = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -671,9 +674,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.genInitDict = slot14
+slot14.genInitDict = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = PetTalentData
 	slot2 = slot2[slot0]
@@ -739,7 +742,7 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #5 26-26, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -792,9 +795,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.genSingleTalentInitDict = slot14
+slot14.genSingleTalentInitDict = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = unpack
 	slot4 = slot0
@@ -1029,9 +1032,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.getSingleTalentPropValue = slot14
+slot14.getSingleTalentPropValue = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1040,9 +1043,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshTotal = slot14
+slot14.refreshTotal = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot4 = slot0
@@ -1079,7 +1082,7 @@ slot14 = function(slot0)
 
 
 	--- BLOCK #3 15-15, warpins: 1 ---
-	slot10 = {}
+	slot10 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -1175,9 +1178,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.getPropInfo = slot14
+slot14.getPropInfo = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1346,7 +1349,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #15 57-57, warpins: 1 ---
-	slot12 = {}
+	slot12 = EMPTY_TABLE
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
@@ -1434,9 +1437,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13.applyProperty = slot14
+slot14.applyProperty = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1576,9 +1579,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot13.unapplyProperty = slot14
+slot14.unapplyProperty = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = #slot0
 	--- END OF BLOCK #0 ---
@@ -1710,9 +1713,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.petInfoInitByTemplate = slot14
+slot14.petInfoInitByTemplate = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshTotal
@@ -1743,12 +1746,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-21, warpins: 2 ---
-	slot5 = slot1
-	slot3 = slot1.tryAttributeCacheRefresh
-
-	slot3(slot5)
-
+	--- BLOCK #2 13-18, warpins: 2 ---
 	slot3 = logger
 	slot5 = slot3
 	slot3 = slot3.debug
@@ -1762,7 +1760,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 22-26, warpins: 1 ---
+	--- BLOCK #3 19-23, warpins: 1 ---
 	slot9 = slot2
 	slot7 = slot2.repr
 	slot7 = slot7(slot9)
@@ -1775,14 +1773,14 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
+	--- BLOCK #4 24-24, warpins: 2 ---
 	slot7 = "nil"
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-32, warpins: 2 ---
+	--- BLOCK #5 25-29, warpins: 2 ---
 	slot10 = slot1
 	slot8 = slot1.repr
 	MULTRES = slot8(slot10)
@@ -1796,9 +1794,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.petInfoOnModifyTalent = slot14
+slot14.petInfoOnModifyTalent = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.applyProperty
@@ -1816,9 +1814,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.petInfoApplyProperty = slot14
+slot14.petInfoApplyProperty = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot4 = slot0
@@ -1871,9 +1869,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.getCpValue = slot14
+slot14.getCpValue = slot15
 
-return slot13
+return slot14
 --- END OF BLOCK #0 ---
 
 

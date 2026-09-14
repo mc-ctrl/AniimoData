@@ -10,12 +10,12 @@ slot4 = "Selector"
 slot5 = slot0
 slot2 = slot2(slot4, slot5)
 slot3 = {
-	List = 1,
-	Table = 2
+	Table = 2,
+	List = 1
 }
 slot4 = {
-	value = 2,
-	Key = 1
+	Key = 1,
+	value = 2
 }
 
 slot5 = function(slot0, slot1, slot2, slot3)

@@ -10,10 +10,25 @@ slot4 = "Common.Utils.Utils"
 slot2 = slot2(slot4)
 
 slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0.ornamentId = slot1
 	slot2 = {}
 	slot0.chunkIds = slot2
+	slot2 = Vector3
+	slot2 = slot2.ForceNew
+	slot4 = 0
+	slot5 = 0
+	slot6 = 0
+	slot2 = slot2(slot4, slot5, slot6)
+	slot0.position = slot2
+	slot2 = Quaternion
+	slot2 = slot2.NewReadOnly
+	slot4 = 0
+	slot5 = 0
+	slot6 = 0
+	slot7 = 1
+	slot2 = slot2(slot4, slot5, slot6, slot7)
+	slot0.rotation = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -56,8 +71,24 @@ end
 slot1.setExtraInfo = slot3
 
 slot3 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot0.position = slot1
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot3 = slot0.position
+	slot5 = slot3
+	slot3 = slot3.Copy
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.rotation
+	slot5 = slot3
+	slot3 = slot3.refreshReadOnly
+	slot6 = slot2[1]
+	slot7 = slot2[2]
+	slot8 = slot2[3]
+	slot9 = slot2[4]
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
 	slot3 = Utils
 	slot3 = slot3.checkRotationIsVertical
 	slot5 = slot2

@@ -1,4 +1,4 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -510,7 +510,12 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 94-94, warpins: 2 ---
+	--- BLOCK #9 94-97, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshConsoleBarState
+
+	slot3(slot5)
+
 	return
 	--- END OF BLOCK #9 ---
 
@@ -519,6 +524,72 @@ slot10 = function(slot0)
 end
 
 slot9.refreshUI = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = MonthCardUtils
+	slot1 = slot1.getStoredRewardDays
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot2 = 0
+	--- END OF BLOCK #2 ---
+
+	if slot1 <= slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 12-12, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-21, warpins: 2 ---
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.Navigation
+	slot2 = slot2.ConsoleBar
+	slot2 = slot2.SetStateForAll
+	slot4 = "canStickPress"
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot9.refreshConsoleBarState = slot10
 
 slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---

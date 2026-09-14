@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -26,9 +26,12 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
-slot9 = 521
+slot9 = require
+slot11 = "Const.MessageName"
+slot9 = slot9(slot11)
+slot10 = 521
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = -1
 	slot0.studioAssetsId = slot1
@@ -44,9 +47,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.ctor = slot10
+slot4.ctor = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = true
 
@@ -57,9 +60,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.init = slot10
+slot4.init = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -68,19 +71,12 @@ slot10 = function(slot0)
 
 end
 
-slot4.destroy = slot10
+slot4.destroy = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot2 = print
-		slot4 = "sssssssssssss-reqPhotoStudioUnlock-callback: "
-		slot5 = slot0
-		slot6 = slot1
-
-		slot2(slot4, slot5, slot6)
-
+		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
@@ -103,9 +99,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.reqPhotoStudioUnlock = slot10
+slot4.reqPhotoStudioUnlock = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -165,9 +161,49 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.isPhotoUnlock = slot10
+slot4.isPhotoUnlock = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.PHOTO_ASSET_UNLOCK_CHANGED
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot4.on_photoStudioUnlockMap_changed = slot11
+
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isScenePhoto
@@ -340,9 +376,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.EVENT_EnterScene = slot10
+slot4.EVENT_EnterScene = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isScenePhoto
@@ -404,9 +440,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.onEnterSpace = slot10
+slot4.onEnterSpace = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isScenePhoto
@@ -448,9 +484,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.onLeaveSpace = slot10
+slot4.onLeaveSpace = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.studioAssetsId
 
@@ -461,9 +497,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.getPhotoStudioAssetsId = slot10
+slot4.getPhotoStudioAssetsId = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -479,9 +515,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.notifyPhotoStudioMsg = slot10
+slot4.notifyPhotoStudioMsg = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = print
 	slot4 = "sssssssssssss-RPC_SC_NotifyPhotoStudioMsg: "
@@ -543,9 +579,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.RPC_SC_NotifyPhotoStudioMsg = slot10
+slot4.RPC_SC_NotifyPhotoStudioMsg = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -561,9 +597,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.sendMainPhotoStudioMsg = slot10
+slot4.sendMainPhotoStudioMsg = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = print
 	slot4 = "sssssssssssss-RPC_SC_SendMainPhotoStudioMsg: "
@@ -618,9 +654,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.RPC_SC_SendMainPhotoStudioMsg = slot10
+slot4.RPC_SC_SendMainPhotoStudioMsg = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -637,9 +673,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.sendSpecifyPhotoStudioMsg = slot10
+slot4.sendSpecifyPhotoStudioMsg = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = print
 	slot4 = "sssssssssssss-RPC_SC_SendSpecifyPhotoStudioMsg: "
@@ -702,9 +738,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.RPC_SC_SendSpecifyPhotoStudioMsg = slot10
+slot4.RPC_SC_SendSpecifyPhotoStudioMsg = slot11
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = Utils
 	slot4 = slot4.isScenePhoto
@@ -1068,9 +1104,9 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.changeStudioPrefab = slot10
+slot4.changeStudioPrefab = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.callService
@@ -1098,9 +1134,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.applyPhotoStudio = slot10
+slot4.applyPhotoStudio = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = print
 	slot4 = "sssssssssssss-_applyPhotoStudioCallback: "
@@ -1117,9 +1153,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4._applyPhotoStudioCallback = slot10
+slot4._applyPhotoStudioCallback = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.callService
@@ -1147,9 +1183,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.acceptPhotoStudio = slot10
+slot4.acceptPhotoStudio = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = print
 	slot5 = "sssssssssssss-_acceptPhotoStudioCallback: "
@@ -1167,9 +1203,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4._acceptPhotoStudioCallback = slot10
+slot4._acceptPhotoStudioCallback = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.callService
@@ -1198,9 +1234,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.refusePhotoStudio = slot10
+slot4.refusePhotoStudio = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = print
 	slot5 = "sssssssssssss-_refusePhotoStudioCallback: "
@@ -1218,9 +1254,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4._refusePhotoStudioCallback = slot10
+slot4._refusePhotoStudioCallback = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.callService
@@ -1249,9 +1285,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.removePhotoStudio = slot10
+slot4.removePhotoStudio = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = print
 	slot5 = "sssssssssssss-_removePhotoStudioCallback: "
@@ -1269,9 +1305,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4._removePhotoStudioCallback = slot10
+slot4._removePhotoStudioCallback = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = print
 	slot5 = "sssssssssssss-onPhotoStudioApply: "
@@ -1287,9 +1323,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.FriendService_onPhotoStudioApply = slot10
+slot4.FriendService_onPhotoStudioApply = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = print
 	slot4 = "sssssssssssss-onPhotoStudioAccept: "
@@ -1304,9 +1340,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.FriendService_onPhotoStudioAccept = slot10
+slot4.FriendService_onPhotoStudioAccept = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = print
 	slot5 = "sssssssssssss-onPhotoStudioRefuse: "
@@ -1322,7 +1358,7 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.FriendService_onPhotoStudioRefuse = slot10
+slot4.FriendService_onPhotoStudioRefuse = slot11
 
 return slot4
 --- END OF BLOCK #0 ---

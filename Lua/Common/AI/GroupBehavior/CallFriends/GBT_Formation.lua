@@ -238,11 +238,11 @@ slot5 = function(slot0)
 	if slot5 ~= slot1 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 30-47, warpins: 1 ---
+	--- BLOCK #5 30-43, warpins: 1 ---
 	slot0.envObj = slot1
 	slot5 = -1
 	slot0.playerIndex = slot5
@@ -253,12 +253,6 @@ slot5 = function(slot0)
 	slot8 = slot0.positionsAccess
 	slot5 = slot5(slot7, slot8)
 	slot0.posCount = slot5
-	slot5 = table
-	slot5 = slot5.clearArray
-	slot7 = slot0.posArray
-
-	slot5(slot7)
-
 	slot5 = 1
 	slot6 = slot0.posCount
 	slot7 = 1
@@ -267,7 +261,19 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 48-63, warpins: 2 ---
+	--- BLOCK #6 44-47, warpins: 2 ---
+	slot9 = slot0.posArray
+	slot9 = slot9[slot8]
+	--- END OF BLOCK #6 ---
+
+	if slot9 == nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 48-63, warpins: 1 ---
 	slot9 = slot0.posArray
 	slot10 = Vector3
 	slot12 = slot0.positions
@@ -283,38 +289,68 @@ slot5 = function(slot0)
 	slot14 = slot14[slot15]
 	slot10 = slot10(slot12, slot13, slot14)
 	slot9[slot8] = slot10
-	--- END OF BLOCK #6 ---
-
-	for slot8=slot5, slot6, slot7
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #7
-
-	--- BLOCK #7 64-67, warpins: 2 ---
-	slot5 = slot0.posCount
-	slot6 = 0
 	--- END OF BLOCK #7 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 68-70, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0._relocationPlayer
+	--- BLOCK #8 64-79, warpins: 1 ---
+	slot9 = slot0.posArray
+	slot9 = slot9[slot8]
+	slot11 = slot9
+	slot9 = slot9.Set
+	slot12 = slot0.positions
+	slot13 = slot8 * 3
+	slot13 = slot13 - 2
+	slot12 = slot12[slot13]
+	slot13 = slot0.positions
+	slot14 = slot8 * 3
+	slot14 = slot14 - 1
+	slot13 = slot13[slot14]
+	slot14 = slot0.positions
+	slot15 = slot8 * 3
+	slot14 = slot14[slot15]
 
-	slot5(slot7)
+	slot9(slot11, slot12, slot13, slot14)
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 71-71, warpins: 2 ---
-	return
+	--- BLOCK #9 80-80, warpins: 2 ---
 	--- END OF BLOCK #9 ---
+
+	for slot8=slot5, slot6, slot7
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #10
+
+	--- BLOCK #10 81-84, warpins: 2 ---
+	slot5 = slot0.posCount
+	slot6 = 0
+	--- END OF BLOCK #10 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 85-87, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0._relocationPlayer
+
+	slot5(slot7)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 88-88, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
 
 
 

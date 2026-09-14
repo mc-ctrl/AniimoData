@@ -1,4 +1,4 @@
---- BLOCK #0 1-64, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -39,8 +39,16 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Data.home_ability_level_data"
 slot12 = slot12(slot14)
+slot13 = require
+slot15 = "Common.NoticeDef"
+slot13 = slot13(slot15)
+slot14 = require
+slot16 = "Common.Const.ItemConst"
+slot14 = slot14(slot16)
+slot15 = 510002
+slot3.PERSONALITY_FRUIT_ITEM_ID = slot15
 
-slot13 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -56,9 +64,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot13
+slot3.onCreate = slot15
 
-slot13 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -112,9 +120,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot3.onOpen = slot13
+slot3.onOpen = slot15
 
-slot13 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -146,10 +154,10 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot3.checkCanOpen = slot13
+slot3.checkCanOpen = slot15
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.tabHomeUButton
 
@@ -247,44 +255,73 @@ slot13 = function(slot0)
 	end
 
 	slot1.luaCloseAction = slot2
-
-	return
+	slot3 = slot0
+	slot1 = slot0.canUsePersonalityFruit
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 18-30, warpins: 1 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtNameUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "PET_CHANGE_PERSONALITY"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.view
+	slot2 = slot2.btnUseUButton
+
+	slot3 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onUsePersonalityFruitClick
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 31-32, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot3.addListener = slot13
+slot3.addListener = slot15
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-30, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.bgSelHomeUImage
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.view
-	slot1 = slot1.bgSelBattleUImage
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
-
-	slot1(slot3, slot4)
-
+slot15 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = UIConst
 	slot1 = slot1.GIFT_TYPE
 	slot1 = slot1.HOME
 	slot0.tab = slot1
-	slot1 = slot0.view
-	slot1 = slot1.listUList
-	slot3 = slot1
-	slot1 = slot1.RefreshList
+	slot3 = slot0
+	slot1 = slot0.generalReplayRefrersh
 
 	slot1(slot3)
 
@@ -302,7 +339,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 31-40, warpins: 1 ---
+	--- BLOCK #1 15-24, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -319,7 +356,7 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 41-49, warpins: 1 ---
+	--- BLOCK #2 25-33, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -336,7 +373,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 50-50, warpins: 2 ---
+	--- BLOCK #3 34-34, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -344,36 +381,119 @@ slot13 = function(slot0)
 
 end
 
-slot3.onHomeClick = slot13
+slot3.onHomeClick = slot15
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.bgSelHomeUImage
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
+slot15 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.iData
+	--- END OF BLOCK #0 ---
 
-	slot1(slot3, slot4)
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
-	slot1 = slot0.view
-	slot1 = slot1.bgSelBattleUImage
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = true
 
-	slot1(slot3, slot4)
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.iData
+	slot1 = slot1.petId
+	--- END OF BLOCK #1 ---
 
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-13, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-15, warpins: 3 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 16-23, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getPetInfo
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #6 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 24-25, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 26-26, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 27-27, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot3.canUsePersonalityFruit = slot15
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = UIConst
 	slot1 = slot1.GIFT_TYPE
 	slot1 = slot1.BATTLE
 	slot0.tab = slot1
-	slot1 = slot0.view
-	slot1 = slot1.listUList
-	slot3 = slot1
-	slot1 = slot1.RefreshList
+	slot3 = slot0
+	slot1 = slot0.generalReplayRefrersh
 
 	slot1(slot3)
 
@@ -395,9 +515,154 @@ slot13 = function(slot0)
 
 end
 
-slot3.onBattleClick = slot13
+slot3.onBattleClick = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.canUsePersonalityFruit
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-19, warpins: 2 ---
+	slot1 = PetGiftTipsCtrl
+	slot1 = slot1.PERSONALITY_FRUIT_ITEM_ID
+	slot2 = slot0.iData
+	slot2 = slot2.petId
+	slot3 = LuaUIUtils
+	slot3 = slot3.getInventoryProps
+	slot5 = ItemConst
+	slot5 = slot5.INV_TYPE_PET
+	slot6 = nil
+	slot7 = slot1
+	slot3 = slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-20, warpins: 1 ---
+	slot4 = slot3[1]
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-22, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-29, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.showBubbleMessageById
+	slot7 = NoticeDef
+	slot7 = slot7.ITEM_COUNT_LACK
+
+	slot5(slot7)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-33, warpins: 2 ---
+	slot5 = slot0.iData
+	slot5 = slot5.extra
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 34-38, warpins: 1 ---
+	slot5 = slot0.iData
+	slot5 = slot5.extra
+	slot5 = slot5.closeFun
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 39-42, warpins: 1 ---
+	slot5 = slot0.iData
+	slot5 = slot5.extra
+	slot5 = slot5.closeFun
+
+	slot5()
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 43-60, warpins: 3 ---
+	slot7 = slot0
+	slot5 = slot0.close
+
+	slot5(slot7)
+
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot7 = slot5
+	slot5 = slot5.open
+	slot8 = UIConst
+	slot8 = slot8.UI_ID_INVENTORY_PET_PROP_USE
+	slot9 = {}
+	slot9.propData = slot4
+	slot10 = ItemConst
+	slot10 = slot10.USEITEM_TYPE_RANDOM_TO_TALENT
+	slot9.sType = slot10
+	slot9.petId = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot3.onUsePersonalityFruitClick = slot15
+
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -412,9 +677,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.onDestroy = slot13
+slot3.onDestroy = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.iData
 
@@ -473,7 +738,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 15-32, warpins: 2 ---
+	--- BLOCK #6 15-25, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.rootCmp
 	slot5 = slot3
@@ -483,6 +748,52 @@ slot13 = function(slot0)
 
 	slot3(slot5, slot6, slot7)
 
+	slot3 = slot0.iData
+	slot3 = slot3.hierarchyMode
+	--- END OF BLOCK #6 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 26-35, warpins: 1 ---
+	slot3 = slot0.view
+	slot3 = slot3.rootCmp
+	slot5 = slot3
+	slot3 = slot3.SetHierarchy
+	slot6 = slot0.iData
+	slot6 = slot6.hierarchyMode
+	slot7 = slot0.iData
+	slot7 = slot7.sortingOrder
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 36-36, warpins: 1 ---
+	slot7 = 1
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 37-37, warpins: 2 ---
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 38-48, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.rootCmp
 	slot5 = slot3
@@ -494,68 +805,68 @@ slot13 = function(slot0)
 
 	slot3 = slot0.iData
 	slot3 = slot3.type
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #10 ---
 
 	if slot3 ~= nil then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #7 33-39, warpins: 1 ---
+	--- BLOCK #11 49-55, warpins: 1 ---
 	slot3 = slot0.iData
 	slot3 = slot3.type
 	slot4 = UIConst
 	slot4 = slot4.GIFT_TYPE
 	slot4 = slot4.HOME
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #11 ---
 
 	if slot3 == slot4 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #8 40-43, warpins: 2 ---
+	--- BLOCK #12 56-59, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.onHomeClick
 
 	slot3(slot5)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #9 44-46, warpins: 1 ---
+	--- BLOCK #13 60-62, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.onBattleClick
 
 	slot3(slot5)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #10 47-50, warpins: 2 ---
+	--- BLOCK #14 63-66, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.refreshGiftInfo
 
 	slot3(slot5)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot3.onShow = slot13
+slot3.onShow = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.iData
 	slot2 = slot0.view
@@ -961,9 +1272,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.refreshGiftInfo = slot13
+slot3.refreshGiftInfo = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -972,9 +1283,9 @@ slot13 = function(slot0)
 
 end
 
-slot3.onHide = slot13
+slot3.onHide = slot15
 
-slot13 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -985,7 +1296,98 @@ slot13 = function(slot0)
 
 end
 
-slot3.checkUIShowVirtualMouseCursor = slot13
+slot3.checkUIShowVirtualMouseCursor = slot15
+
+slot15 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.tab
+	slot2 = UIConst
+	slot2 = slot2.GIFT_TYPE
+	slot2 = slot2.BATTLE
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 9-9, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-11, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.canUsePersonalityFruit
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-40, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.widgetBtnUWidget
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.view
+	slot3 = slot3.listUList
+	slot5 = slot3
+	slot3 = slot3.RefreshList
+
+	slot3(slot5)
+
+	slot3 = slot0.view
+	slot3 = slot3.bgSelHomeUImage
+	slot3 = slot3.gameObject
+	slot5 = slot3
+	slot3 = slot3.SetActiveEx
+	slot6 = not slot1
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.view
+	slot3 = slot3.bgSelBattleUImage
+	slot3 = slot3.gameObject
+	slot5 = slot3
+	slot3 = slot3.SetActiveEx
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot3.generalReplayRefrersh = slot15
 
 return slot3
 --- END OF BLOCK #0 ---

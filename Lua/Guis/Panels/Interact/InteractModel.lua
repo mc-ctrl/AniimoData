@@ -207,13 +207,13 @@ slot9 = function(slot0)
 	slot1 = 19
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #4 14-18, warpins: 1 ---
 	slot2 = slot0.abilityIndex
 	slot3 = AbilityConst
-	slot3 = slot3.SPECIFIC_ABILITY_INDEX_GLIDE
+	slot3 = slot3.SPECIFIC_ABILITY_INDEX_WATERFALL
 	--- END OF BLOCK #4 ---
 
 	if slot2 == slot3 then
@@ -224,16 +224,16 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #5 19-20, warpins: 1 ---
-	slot1 = 20
+	slot1 = 83
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
 	--- BLOCK #6 21-25, warpins: 1 ---
 	slot2 = slot0.abilityIndex
 	slot3 = AbilityConst
-	slot3 = slot3.SPECIFIC_ABILITY_INDEX_SWIM
+	slot3 = slot3.SPECIFIC_ABILITY_INDEX_GLIDE
 	--- END OF BLOCK #6 ---
 
 	if slot2 == slot3 then
@@ -243,34 +243,54 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #7 26-26, warpins: 1 ---
-	slot1 = 21
+	--- BLOCK #7 26-27, warpins: 1 ---
+	slot1 = 20
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #8 27-28, warpins: 4 ---
+	--- BLOCK #8 28-32, warpins: 1 ---
+	slot2 = slot0.abilityIndex
+	slot3 = AbilityConst
+	slot3 = slot3.SPECIFIC_ABILITY_INDEX_SWIM
 	--- END OF BLOCK #8 ---
 
-	slot1 = if not slot1 then
+	if slot2 == slot3 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 29-30, warpins: 1 ---
-	slot2 = {}
-
-	return slot2
-
+	--- BLOCK #9 33-33, warpins: 1 ---
+	slot1 = 21
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 31-43, warpins: 2 ---
+	--- BLOCK #10 34-35, warpins: 5 ---
+	--- END OF BLOCK #10 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 36-37, warpins: 1 ---
+	slot2 = {}
+
+	return slot2
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 38-50, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -282,16 +302,16 @@ slot9 = function(slot0)
 	slot5 = ""
 	slot6 = ""
 	slot7, slot8 = nil
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #11 44-54, warpins: 1 ---
+	--- BLOCK #13 51-61, warpins: 1 ---
 	slot9 = slot2.templateId
 	slot10 = PetData
 	slot10 = slot10[slot9]
@@ -301,265 +321,265 @@ slot9 = function(slot0)
 	slot14 = LuaUIUtils
 	slot14 = slot14.PET_ICON
 	slot11 = slot11(slot13, slot14)
-	--- END OF BLOCK #11 ---
-
-	slot3 = if not slot11 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 55-55, warpins: 1 ---
-	slot3 = ""
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 56-59, warpins: 2 ---
-	slot4 = slot2.hpRatio
-	slot11 = slot2.customName
 	--- END OF BLOCK #13 ---
 
-	slot5 = if not slot11 then
+	slot3 = if not slot11 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 60-60, warpins: 1 ---
-	slot5 = ""
+	--- BLOCK #14 62-62, warpins: 1 ---
+	slot3 = ""
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 61-64, warpins: 3 ---
-	slot9 = pg
-	slot9 = slot9.getEntity
+	--- BLOCK #15 63-66, warpins: 2 ---
+	slot4 = slot2.hpRatio
+	slot11 = slot2.customName
 	--- END OF BLOCK #15 ---
 
-	slot9 = if slot9 then
+	slot5 = if not slot11 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 65-70, warpins: 1 ---
+	--- BLOCK #16 67-67, warpins: 1 ---
+	slot5 = ""
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 68-71, warpins: 3 ---
+	slot9 = pg
+	slot9 = slot9.getEntity
+	--- END OF BLOCK #17 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 72-77, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getEntity
 	slot11 = slot0.switchGlobalId
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #16 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 71-71, warpins: 2 ---
-	slot9 = nil
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 72-73, warpins: 2 ---
 	--- END OF BLOCK #18 ---
 
-	slot9 = if slot9 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 74-76, warpins: 1 ---
-	slot10 = slot9.playerName
+	--- BLOCK #19 78-78, warpins: 2 ---
+	slot9 = nil
 	--- END OF BLOCK #19 ---
 
-	if slot10 ~= nil then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #33
-	end
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 77-79, warpins: 1 ---
-	slot10 = slot9.playerName
+	--- BLOCK #20 79-80, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
-	if slot10 ~= "" then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #21 80-83, warpins: 1 ---
-	slot6 = slot9.playerName
-	slot10 = slot9.uid
+	--- BLOCK #21 81-83, warpins: 1 ---
+	slot10 = slot9.playerName
 	--- END OF BLOCK #21 ---
 
-	slot7 = if not slot10 then
+	if slot10 ~= nil then
 	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #22 84-84, warpins: 1 ---
-	slot7 = slot9.playerId
+	--- BLOCK #22 84-86, warpins: 1 ---
+	slot10 = slot9.playerName
 	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #23
+	if slot10 ~= "" then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #35
+	end
 
 
-	--- BLOCK #23 85-88, warpins: 2 ---
-	slot10 = pg
-	slot10 = slot10.game
+	--- BLOCK #23 87-90, warpins: 1 ---
+	slot6 = slot9.playerName
+	slot10 = slot9.uid
 	--- END OF BLOCK #23 ---
 
-	slot10 = if slot10 then
+	slot7 = if not slot10 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 89-93, warpins: 1 ---
+	--- BLOCK #24 91-91, warpins: 1 ---
+	slot7 = slot9.playerId
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 92-95, warpins: 2 ---
+	slot10 = pg
+	slot10 = slot10.game
+	--- END OF BLOCK #25 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 96-100, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.game
 	slot10 = slot10.chat
-	--- END OF BLOCK #24 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 94-94, warpins: 2 ---
-	slot10 = nil
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 95-96, warpins: 2 ---
 	--- END OF BLOCK #26 ---
 
-	slot10 = if slot10 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 97-99, warpins: 1 ---
-	slot11 = slot10.getPlayerInfo
+	--- BLOCK #27 101-101, warpins: 2 ---
+	slot10 = nil
 	--- END OF BLOCK #27 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #31
-	end
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 100-101, warpins: 1 ---
+	--- BLOCK #28 102-103, warpins: 2 ---
 	--- END OF BLOCK #28 ---
 
-	if slot7 ~= nil then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #29 102-103, warpins: 1 ---
+	--- BLOCK #29 104-106, warpins: 1 ---
+	slot11 = slot10.getPlayerInfo
 	--- END OF BLOCK #29 ---
 
-	if slot7 ~= "" then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #30 104-108, warpins: 1 ---
-	slot13 = slot10
-	slot11 = slot10.getPlayerInfo
-	slot14 = slot7
-	slot11 = slot11(slot13, slot14)
-	slot8 = slot11
+	--- BLOCK #30 107-108, warpins: 1 ---
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
+	if slot7 ~= nil then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #33
+	end
 
 
-	--- BLOCK #31 109-113, warpins: 5 ---
-	slot11 = type
-	slot13 = slot8
-	slot11 = slot11(slot13)
+	--- BLOCK #31 109-110, warpins: 1 ---
 	--- END OF BLOCK #31 ---
 
-	if slot11 ~= "table" then
+	if slot7 ~= "" then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 114-117, warpins: 1 ---
-	slot11 = {}
-	slot11.uid = slot7
-	slot11.playerName = slot6
+	--- BLOCK #32 111-115, warpins: 1 ---
+	slot13 = slot10
+	slot11 = slot10.getPlayerInfo
+	slot14 = slot7
+	slot11 = slot11(slot13, slot14)
 	slot8 = slot11
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 118-121, warpins: 5 ---
-	slot10 = {}
-	slot10.iconId = slot3
+	--- BLOCK #33 116-120, warpins: 5 ---
+	slot11 = type
+	slot13 = slot8
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #33 ---
 
-	slot1 = if slot1 then
+	if slot11 ~= "table" then
 	JUMP TO BLOCK #34
 	else
 	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #34 122-126, warpins: 1 ---
-	slot11 = InteractData
-	slot11 = slot11[slot1]
-	slot11 = slot11.actionName
+	--- BLOCK #34 121-124, warpins: 1 ---
+	slot11 = {}
+	slot11.uid = slot7
+	slot11.playerName = slot6
+	slot8 = slot11
 	--- END OF BLOCK #34 ---
 
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #35
-	else
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 125-128, warpins: 5 ---
+	slot10 = {}
+	slot10.iconId = slot3
+	--- END OF BLOCK #35 ---
+
+	slot1 = if slot1 then
 	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #35 127-127, warpins: 2 ---
+	--- BLOCK #36 129-133, warpins: 1 ---
+	slot11 = InteractData
+	slot11 = slot11[slot1]
+	slot11 = slot11.actionName
+	--- END OF BLOCK #36 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 134-134, warpins: 2 ---
 	slot11 = ""
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #37 ---
 
-	FLOW; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #38
 
 
-	--- BLOCK #36 128-145, warpins: 2 ---
+	--- BLOCK #38 135-152, warpins: 2 ---
 	slot10.actionName = slot11
 	slot11 = InteractData
 	slot11 = slot11[slot1]
@@ -576,40 +596,40 @@ slot9 = function(slot0)
 	slot10.targetPlayerInfo = slot8
 	slot11 = pg
 	slot11 = slot11.me
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #38 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #37 146-150, warpins: 1 ---
+	--- BLOCK #39 153-157, warpins: 1 ---
 	slot11 = pg
 	slot11 = slot11.me
 	slot11 = slot11.uid
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #39 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #40
 	else
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #38 151-151, warpins: 2 ---
+	--- BLOCK #40 158-158, warpins: 2 ---
 	slot11 = nil
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #40 ---
 
-	FLOW; TARGET BLOCK #39
+	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #39 152-153, warpins: 2 ---
+	--- BLOCK #41 159-160, warpins: 2 ---
 	slot10.ownerUid = slot11
 
 	return slot10
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #41 ---
 
 
 

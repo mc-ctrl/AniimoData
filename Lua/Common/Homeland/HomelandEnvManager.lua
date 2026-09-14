@@ -1,4 +1,4 @@
---- BLOCK #0 1-134, warpins: 1 ---
+--- BLOCK #0 1-136, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -65,6 +65,65 @@ end
 
 slot8.ctor = slot10
 
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.areaId
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.HOMELAND_AREA_TYPE
+	slot2 = slot2.PRODUCE
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot3 = Const
+	slot3 = slot3.HOMELAND_AREA_TYPE
+	slot3 = slot3.PRODUCE
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-13, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-15, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot8.isProduceAreaOrnament = slot10
+
 slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot0.space = slot1
@@ -90,10 +149,24 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #1 19-29, warpins: 1 ---
+	--- BLOCK #1 19-24, warpins: 1 ---
+	slot14 = slot0
+	slot12 = slot0.isProduceAreaOrnament
+	slot15 = slot11
+	slot12 = slot12(slot14, slot15)
+	--- END OF BLOCK #1 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 25-35, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.addEnvTypeDict
 	slot15 = slot10
@@ -105,16 +178,16 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot12 = slot12.isHomeEnvFacility
 	slot14 = slot11.homeId
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #2
-	else
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 30-48, warpins: 1 ---
+	--- BLOCK #3 36-54, warpins: 1 ---
 	slot12 = slot0.homeEnvFastFindMap
 	slot14 = slot12
 	slot12 = slot12.addOrUpdateFastFindInfo
@@ -136,26 +209,26 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	slot12(slot14, slot15, slot16, slot17, slot18, MULTRES)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #3 49-54, warpins: 2 ---
+	--- BLOCK #4 55-60, warpins: 2 ---
 	slot12 = Utils
 	slot12 = slot12.isHomeEnvOrnament
 	slot14 = slot11.homeId
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 55-73, warpins: 1 ---
+	--- BLOCK #5 61-79, warpins: 1 ---
 	slot12 = slot0.homeEnvOrnamentFastFindMap
 	slot14 = slot12
 	slot12 = slot12.addOrUpdateFastFindInfo
@@ -177,22 +250,22 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	slot12(slot14, slot15, slot16, slot17, slot18, MULTRES)
 
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 74-75, warpins: 3 ---
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 80-81, warpins: 4 ---
+	--- END OF BLOCK #6 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #6
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #6 76-76, warpins: 1 ---
+	--- BLOCK #7 82-82, warpins: 1 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -317,7 +390,30 @@ end
 slot8.clear = slot10
 
 slot10 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isProduceAreaOrnament
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-18, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.addEnvTypeDict
 	slot6 = slot1
@@ -329,16 +425,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeEnvFacility
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 12-36, warpins: 1 ---
+	--- BLOCK #3 19-43, warpins: 1 ---
 	slot3 = slot0.homeEnvFastFindMap
 	slot5 = slot3
 	slot3 = slot3.addOrUpdateFastFindInfo
@@ -364,16 +460,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 37-41, warpins: 1 ---
+	--- BLOCK #4 44-48, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.addHomeLinkInfo
 	slot6 = slot1
@@ -381,38 +477,38 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 42-45, warpins: 2 ---
+	--- BLOCK #5 49-52, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvFacility
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 46-51, warpins: 2 ---
+	--- BLOCK #6 53-58, warpins: 2 ---
 	slot3 = Utils
 	slot3 = slot3.isHomeEnvOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 52-76, warpins: 1 ---
+	--- BLOCK #7 59-83, warpins: 1 ---
 	slot3 = slot0.homeEnvOrnamentFastFindMap
 	slot5 = slot3
 	slot3 = slot3.addOrUpdateFastFindInfo
@@ -438,16 +534,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 77-81, warpins: 1 ---
+	--- BLOCK #8 84-88, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.addHomeLinkInfo
 	slot6 = slot1
@@ -455,12 +551,12 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 82-89, warpins: 2 ---
+	--- BLOCK #9 89-96, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvRef
 	slot6 = slot1
@@ -473,14 +569,14 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 90-90, warpins: 2 ---
+	--- BLOCK #10 97-97, warpins: 2 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -540,20 +636,43 @@ slot8.onOrnamentRemove = slot10
 
 slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isProduceAreaOrnament
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
 	slot3 = Utils
 	slot3 = slot3.isHomeEnvFacility
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 7-31, warpins: 1 ---
+	--- BLOCK #3 14-38, warpins: 1 ---
 	slot3 = slot0.homeEnvFastFindMap
 	slot5 = slot3
 	slot3 = slot3.addOrUpdateFastFindInfo
@@ -579,16 +698,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 32-36, warpins: 1 ---
+	--- BLOCK #4 39-43, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeLinkInfo
 	slot6 = slot1
@@ -596,38 +715,38 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 37-40, warpins: 2 ---
+	--- BLOCK #5 44-47, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvFacility
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 41-46, warpins: 2 ---
+	--- BLOCK #6 48-53, warpins: 2 ---
 	slot3 = Utils
 	slot3 = slot3.isHomeEnvOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #5 47-71, warpins: 1 ---
+	--- BLOCK #7 54-78, warpins: 1 ---
 	slot3 = slot0.homeEnvOrnamentFastFindMap
 	slot5 = slot3
 	slot3 = slot3.addOrUpdateFastFindInfo
@@ -653,16 +772,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 72-76, warpins: 1 ---
+	--- BLOCK #8 79-83, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeLinkInfo
 	slot6 = slot1
@@ -670,12 +789,12 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 77-86, warpins: 2 ---
+	--- BLOCK #9 84-93, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvRef
 	slot6 = slot1
@@ -686,43 +805,43 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot0.checkIsEnvReqFacility
 	slot6 = slot1
 	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #8
-	else
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 87-92, warpins: 1 ---
+	--- BLOCK #10 94-99, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updateOrnamentElectricCost
 	slot6 = slot1
 	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 93-95, warpins: 1 ---
+	--- BLOCK #11 100-102, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.markElectricStateDirty
 
 	slot3(slot5)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #10 96-96, warpins: 4 ---
+	--- BLOCK #12 103-103, warpins: 4 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 
 
@@ -732,20 +851,43 @@ slot8.onOrnamentUpgrade = slot10
 
 slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isProduceAreaOrnament
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
 	slot3 = Utils
 	slot3 = slot3.isHomeEnvFacility
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 7-23, warpins: 1 ---
+	--- BLOCK #3 14-30, warpins: 1 ---
 	slot3 = slot0.homeEnvFastFindMap
 	slot5 = slot3
 	slot3 = slot3.refreshFastFindInfo
@@ -763,16 +905,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 24-28, warpins: 1 ---
+	--- BLOCK #4 31-35, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeLinkInfo
 	slot6 = slot1
@@ -780,38 +922,38 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 29-32, warpins: 2 ---
+	--- BLOCK #5 36-39, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvFacility
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 33-38, warpins: 2 ---
+	--- BLOCK #6 40-45, warpins: 2 ---
 	slot3 = Utils
 	slot3 = slot3.isHomeEnvOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 39-55, warpins: 1 ---
+	--- BLOCK #7 46-62, warpins: 1 ---
 	slot3 = slot0.homeEnvOrnamentFastFindMap
 	slot5 = slot3
 	slot3 = slot3.refreshFastFindInfo
@@ -829,16 +971,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 56-60, warpins: 1 ---
+	--- BLOCK #8 63-67, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeLinkInfo
 	slot6 = slot1
@@ -846,26 +988,26 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 61-64, warpins: 2 ---
+	--- BLOCK #9 68-71, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvRef
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 65-65, warpins: 2 ---
+	--- BLOCK #10 72-72, warpins: 2 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -874,7 +1016,30 @@ end
 slot8.onOrnamentPosChange = slot10
 
 slot10 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isProduceAreaOrnament
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-16, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.checkIsFacilityType
 	slot6 = slot1
@@ -882,16 +1047,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot7 = slot7.HOMELAND_FACILITY_TYPE
 	slot7 = slot7.ElectricReqSwitch
 	slot3 = slot3(slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 10-29, warpins: 1 ---
+	--- BLOCK #3 17-36, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.addEnvTypeDict
 	slot6 = slot1
@@ -914,16 +1079,16 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.isHomeLinkOrnament
 	slot5 = slot2.homeId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 30-34, warpins: 1 ---
+	--- BLOCK #4 37-41, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeLinkInfo
 	slot6 = slot1
@@ -931,12 +1096,12 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 35-45, warpins: 2 ---
+	--- BLOCK #5 42-52, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.updateHomeEnvRef
 	slot6 = slot1
@@ -954,14 +1119,14 @@ slot10 = function(slot0, slot1, slot2)
 
 	slot3(slot5)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 46-46, warpins: 2 ---
+	--- BLOCK #6 53-53, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 

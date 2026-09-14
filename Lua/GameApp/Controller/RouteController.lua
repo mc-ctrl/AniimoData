@@ -214,7 +214,14 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 10-13, warpins: 1 ---
+	--- BLOCK #3 10-18, warpins: 1 ---
+	slot3 = slot0.vehicle
+	slot5 = slot3
+	slot3 = slot3.onVehicleMoveStateChanged
+	slot6 = false
+
+	slot3(slot5, slot6)
+
 	slot3 = slot0.controllerData
 	slot3 = slot3.reachEndExit
 	--- END OF BLOCK #3 ---
@@ -226,7 +233,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #4 14-18, warpins: 1 ---
+	--- BLOCK #4 19-23, warpins: 1 ---
 	slot3 = slot0.vehicle
 	slot5 = slot3
 	slot3 = slot3.serverMsg
@@ -239,7 +246,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-19, warpins: 2 ---
+	--- BLOCK #5 24-24, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -247,7 +254,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-23, warpins: 2 ---
+	--- BLOCK #6 25-28, warpins: 2 ---
 	slot3 = slot0.vehicle
 	slot3 = slot3.featureVehicle
 
@@ -260,7 +267,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #7 24-24, warpins: 1 ---
+	--- BLOCK #7 29-29, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #7 ---
@@ -268,7 +275,14 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 25-32, warpins: 2 ---
+	--- BLOCK #8 30-42, warpins: 2 ---
+	slot4 = slot0.vehicle
+	slot6 = slot4
+	slot4 = slot4.onVehicleMoveStateChanged
+	slot7 = true
+
+	slot4(slot6, slot7)
+
 	slot6 = slot3
 	slot4 = slot3.Move
 	slot7 = slot2.position
@@ -309,13 +323,19 @@ slot7 = function(slot0)
 
 	slot1 = nil
 	slot0.mountDelayTimer = slot1
-
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 10-15, warpins: 2 ---
+	slot1 = slot0.vehicle
+	slot3 = slot1
+	slot1 = slot1.onVehicleMoveStateChanged
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	return
 	--- END OF BLOCK #2 ---
 

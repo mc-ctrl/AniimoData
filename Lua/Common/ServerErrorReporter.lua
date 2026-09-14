@@ -267,9 +267,9 @@ slot23 = function(slot0, slot1)
 	slot2 = {}
 	slot3 = {}
 	slot4 = {
-		error_from = "game_server",
+		error_type = "code_error",
 		batch_count = 1,
-		error_type = "code_error"
+		error_from = "game_server"
 	}
 	slot5 = TimeUtils
 	slot5 = slot5.timeStampToUtcString

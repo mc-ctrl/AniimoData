@@ -1,47 +1,53 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-87, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.Helper.UIComponent"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "PlacePetUIComponent"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Const.AddressDataConst"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "Guis.Helper.UIComponent"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "PlacePetUIComponent"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Utils.ClientVirtualEntityUtils"
+slot6 = "Const.AddressDataConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.pet_data"
+slot7 = "Utils.ClientVirtualEntityUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.Utils"
+slot8 = "Data.pet_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.ClientConst"
+slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Const.HotkeyConst"
+slot10 = "Const.ClientConst"
 slot8 = slot8(slot10)
-slot9 = CS
-slot9 = slot9.FunPlus
-slot9 = slot9.WorldX
-slot9 = slot9.GUIS
-slot9 = slot9.Panels
-slot9 = slot9.Utils
-slot9 = slot9.KeyBindingPro
+slot9 = require
+slot11 = "Const.HotkeyConst"
+slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Entities.Utils.EModelUtils"
+slot12 = "Core.Common.Time"
 slot10 = slot10(slot12)
-slot11 = 800
-slot12 = 120
-slot13 = 0.15
+slot11 = CS
+slot11 = slot11.FunPlus
+slot11 = slot11.WorldX
+slot11 = slot11.GUIS
+slot11 = slot11.Panels
+slot11 = slot11.Utils
+slot11 = slot11.KeyBindingPro
+slot12 = require
+slot14 = "Entities.Utils.EModelUtils"
+slot12 = slot12(slot14)
+slot13 = 800
+slot14 = 120
+slot15 = 0.15
 
-slot14 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot3 = UIComponent
 	slot3 = slot3.ctor
@@ -139,9 +145,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.ctor = slot14
+slot3.ctor = slot16
 
-slot14 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -575,9 +581,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.selectPetEntity = slot14
+slot3.selectPetEntity = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.petEntity
 	slot2 = slot2[slot1]
@@ -637,9 +643,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.createPet = slot14
+slot3.createPet = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.resObj
 	--- END OF BLOCK #0 ---
@@ -753,9 +759,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.updateUIAttach = slot14
+slot3.updateUIAttach = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curSelectedPetEntity
 
@@ -808,9 +814,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.onDragPetStart = slot14
+slot3.onDragPetStart = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curSelectedPetEntity
 
@@ -922,9 +928,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.onDragPetUpdate = slot14
+slot3.onDragPetUpdate = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = nil
 	slot0.dragPositionDiff = slot2
@@ -938,9 +944,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.onDragPetEnd = slot14
+slot3.onDragPetEnd = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curSelectedPetEntity
 	--- END OF BLOCK #0 ---
@@ -994,9 +1000,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.onRotatePet = slot14
+slot3.onRotatePet = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ctrl
 	--- END OF BLOCK #0 ---
@@ -1106,9 +1112,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.canMovePet = slot14
+slot3.canMovePet = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -1129,9 +1135,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.refreshCanMovePetState = slot14
+slot3.refreshCanMovePetState = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-54, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.transform
@@ -1653,9 +1659,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.initGamepad = slot14
+slot3.initGamepad = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.canMovePet
@@ -1680,10 +1686,8 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-24, warpins: 2 ---
-	slot1 = CS
-	slot1 = slot1.UnityEngine
-	slot1 = slot1.Time
+	--- BLOCK #2 9-22, warpins: 2 ---
+	slot1 = Time
 	slot1 = slot1.deltaTime
 	slot2 = slot0.curSelectedPetEntity
 	slot3 = slot0.gamepadStick
@@ -1704,7 +1708,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #3 25-31, warpins: 1 ---
+	--- BLOCK #3 23-29, warpins: 1 ---
 	slot5 = math
 	slot5 = slot5.abs
 	slot7 = slot4
@@ -1719,7 +1723,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #4 32-34, warpins: 2 ---
+	--- BLOCK #4 30-32, warpins: 2 ---
 	slot5 = slot0.gamepadVirtualCursor
 	--- END OF BLOCK #4 ---
 
@@ -1730,7 +1734,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #5 35-45, warpins: 1 ---
+	--- BLOCK #5 33-43, warpins: 1 ---
 	slot5 = UIUtils
 	slot5 = slot5.GetPositionScreenPoint
 	slot9 = slot2
@@ -1747,7 +1751,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 46-75, warpins: 2 ---
+	--- BLOCK #6 44-73, warpins: 2 ---
 	slot5 = Vector2
 	slot7 = slot0.gamepadVirtualCursor
 	slot7 = slot7.x
@@ -1785,7 +1789,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #7 76-80, warpins: 1 ---
+	--- BLOCK #7 74-78, warpins: 1 ---
 	slot8 = ClientConst
 	slot8 = slot8.LayerDefine
 	slot8 = slot8.LAYER_WATER
@@ -1798,21 +1802,21 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #8 81-82, warpins: 2 ---
+	--- BLOCK #8 79-80, warpins: 2 ---
 	slot8 = false
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 83-83, warpins: 1 ---
+	--- BLOCK #9 81-81, warpins: 1 ---
 	slot8 = true
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 84-85, warpins: 2 ---
+	--- BLOCK #10 82-83, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	slot5 = if slot5 then
@@ -1822,7 +1826,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #11 86-87, warpins: 1 ---
+	--- BLOCK #11 84-85, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
 	slot8 = if not slot8 then
@@ -1832,7 +1836,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #12 88-98, warpins: 1 ---
+	--- BLOCK #12 86-96, warpins: 1 ---
 	slot9 = EModelUtils
 	slot9 = slot9.setAgentPosition
 	slot11 = slot2
@@ -1852,7 +1856,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 99-100, warpins: 1 ---
+	--- BLOCK #13 97-98, warpins: 1 ---
 	slot5 = nil
 	slot0.gamepadVirtualCursor = slot5
 	--- END OF BLOCK #13 ---
@@ -1860,7 +1864,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 101-103, warpins: 4 ---
+	--- BLOCK #14 99-101, warpins: 4 ---
 	slot5 = slot0.gamepadRotateDir
 	--- END OF BLOCK #14 ---
 
@@ -1871,7 +1875,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #15 104-108, warpins: 1 ---
+	--- BLOCK #15 102-106, warpins: 1 ---
 	slot5 = slot0.rotationMap
 	slot6 = slot2.id
 	slot5 = slot5[slot6]
@@ -1884,14 +1888,14 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #16 109-109, warpins: 1 ---
+	--- BLOCK #16 107-107, warpins: 1 ---
 	slot5 = 0
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 110-133, warpins: 2 ---
+	--- BLOCK #17 108-131, warpins: 2 ---
 	slot6 = slot0.gamepadRotateDir
 	slot7 = GAMEPAD_ROTATE_SPEED
 	slot6 = slot6 * slot7
@@ -1927,7 +1931,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #18 134-138, warpins: 1 ---
+	--- BLOCK #18 132-136, warpins: 1 ---
 	slot7 = NotNil
 	slot9 = slot0.rotationSlider
 	slot7 = slot7(slot9)
@@ -1940,7 +1944,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #19 139-143, warpins: 1 ---
+	--- BLOCK #19 137-141, warpins: 1 ---
 	slot7 = slot0.rotationSlider
 	slot9 = slot7
 	slot7 = slot7.SetValueWithoutCallback
@@ -1953,7 +1957,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 144-148, warpins: 3 ---
+	--- BLOCK #20 142-146, warpins: 3 ---
 	slot7 = slot0.ctrl
 	slot9 = slot7
 	slot7 = slot7.setPetEditMap
@@ -1966,7 +1970,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 149-149, warpins: 2 ---
+	--- BLOCK #21 147-147, warpins: 2 ---
 	return
 	--- END OF BLOCK #21 ---
 
@@ -1974,9 +1978,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.gamepadTick = slot14
+slot3.gamepadTick = slot16
 
-slot14 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.petEntity
 	slot3 = slot3[slot1]
@@ -2100,9 +2104,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot2.setPetVisible = slot14
+slot3.setPetVisible = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = Vector2
 	slot3 = Screen
@@ -2200,9 +2204,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.getOriPetPos = slot14
+slot3.getOriPetPos = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.petEntity
 	slot2 = slot2[slot1]
@@ -2232,9 +2236,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.getPetEntity = slot14
+slot3.getPetEntity = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2295,9 +2299,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.onPageChange = slot14
+slot3.onPageChange = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = NotNil
 	slot4 = slot0.resObj
@@ -2332,9 +2336,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.showUI = slot14
+slot3.showUI = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.virtualToRealIdMap
 	slot2 = slot2[slot1]
@@ -2346,9 +2350,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot2.getRealEntityId = slot14
+slot3.getRealEntityId = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.gamepadTickTimer
 	--- END OF BLOCK #0 ---
@@ -2467,9 +2471,10 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #9 48-50, warpins: 1 ---
+	--- BLOCK #9 48-51, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -2478,7 +2483,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 51-52, warpins: 3 ---
+	--- BLOCK #10 52-53, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -2486,7 +2491,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 53-55, warpins: 1 ---
+	--- BLOCK #11 54-56, warpins: 1 ---
 	slot1 = slot0.curPet
 	--- END OF BLOCK #11 ---
 
@@ -2497,7 +2502,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #12 56-63, warpins: 1 ---
+	--- BLOCK #12 57-64, warpins: 1 ---
 	slot1 = slot0.curPet
 	slot3 = slot1
 	slot1 = slot1.setVisible
@@ -2513,7 +2518,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 64-74, warpins: 2 ---
+	--- BLOCK #13 65-75, warpins: 2 ---
 	slot1 = {}
 	slot0.petEntity = slot1
 	slot1 = {}
@@ -2532,9 +2537,9 @@ slot14 = function(slot0)
 
 end
 
-slot2.destroy = slot14
+slot3.destroy = slot16
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

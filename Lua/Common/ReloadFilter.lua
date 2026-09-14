@@ -9,7 +9,7 @@ slot1 = {
 	"Network/.*",
 	"Utils/LuaCSharpArr",
 	"Utils/LuaCSharpList",
-	"Utils/ClientSwitch",
+	"Common/ClientSwitch",
 	"Common/Math/.*",
 	"Common/AI/Behaviac/.*",
 	"Common/profiler",
@@ -39,24 +39,24 @@ slot1 = {
 }
 slot0.deleteKeyModels = slot1
 slot1 = {
-	CustomTypesServerMethods = true,
-	CustomTypes = true,
 	TestCase = true,
 	GameServer = true,
 	Common = true,
 	Utils = true,
 	Data = true,
-	Entities = true
+	Entities = true,
+	CustomTypesServerMethods = true,
+	CustomTypes = true
 }
 slot0.reloadAllfilterMap = slot1
 slot1 = {
-	CustomTypesServerMethods = true,
-	CustomTypes = true,
 	TestCase = true,
 	GameServer = true,
 	Common = true,
 	Utils = true,
-	Entities = true
+	Entities = true,
+	CustomTypesServerMethods = true,
+	CustomTypes = true
 }
 slot0.reloadScriptfilterMap = slot1
 slot1 = {

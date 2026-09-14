@@ -1,9 +1,6 @@
 --- BLOCK #0 1-9, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	JoinGameByShell = "JoinGameByShell",
-	RequestHomeCamp = "RequestHomeCamp",
-	InviteHomeCamp = "InviteHomeCamp",
 	InviteQuickSpaceFollow = "InviteQuickSpaceFollow",
 	ReuquestSpaceFollow = "ReuquestSpaceFollow",
 	InviteSpaceFollow = "InviteSpaceFollow",
@@ -12,7 +9,10 @@ slot1 = {
 	RequestEnterWorld = "RequestEnterWorld",
 	InviteEnterWorld = "InviteEnterWorld",
 	RequestJoinTeam = "RequestJoinTeam",
-	InviteJoinTeam = "InviteJoinTeam"
+	InviteJoinTeam = "InviteJoinTeam",
+	JoinGameByShell = "JoinGameByShell",
+	RequestHomeCamp = "RequestHomeCamp",
+	InviteHomeCamp = "InviteHomeCamp"
 }
 slot0.TokenType = slot1
 slot1 = {}
@@ -42,9 +42,11 @@ LOOP BLOCK #1
 GO OUT TO BLOCK #3
 
 
---- BLOCK #3 15-28, warpins: 1 ---
+--- BLOCK #3 15-30, warpins: 1 ---
 slot1 = "ingame_enter_world_invite"
 slot0.InGameDestinationQueryMode = slot1
+slot1 = "ingame_enter_world"
+slot0.InGameEnterWorldDestinationQueryMode = slot1
 slot1 = {}
 slot2 = slot0.TokenType
 slot2 = slot2.JoinGameByShell

@@ -1,4 +1,4 @@
---- BLOCK #0 1-18, warpins: 1 ---
+--- BLOCK #0 1-32, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -9,9 +9,15 @@ slot2 = slot0.LightClass
 slot4 = "DeadPanelView"
 slot5 = slot1
 slot2 = slot2(slot4, slot5)
+slot3 = require
+slot5 = "Utils.ClientTextUtils"
+slot3 = slot3(slot5)
+slot4 = require
+slot6 = "Data.sys_config_data"
+slot4 = slot4(slot6)
 
-slot3 = function(slot0)
-	--- BLOCK #0 1-181, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-223, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -90,6 +96,48 @@ slot3 = function(slot0)
 	slot4 = "rootAnimation"
 	slot1 = slot1(slot3, slot4)
 	slot0.rootAnimation = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "canReviveCDUCountDown"
+	slot1 = slot1(slot3, slot4)
+	slot0.canReviveCDUCountDown = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtRebornNumNoneUBaseText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtRebornNumNoneUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtRebornNumUBaseText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtRebornNumUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtRebornNumUBaseTextMini"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtRebornNumUBaseTextMini = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "canReviveCDUCountDownMini"
+	slot1 = slot1(slot3, slot4)
+	slot0.canReviveCDUCountDownMini = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtRebornNumNoneUBaseTextMini"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtRebornNumNoneUBaseTextMini = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "chatUComponent"
+	slot1 = slot1(slot3, slot4)
+	slot0.chatUComponent = slot1
 	slot1 = slot0.btnAbandonUButton
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -200,9 +248,9 @@ slot3 = function(slot0)
 
 end
 
-slot2.findObjects = slot3
+slot2.findObjects = slot5
 
-slot3 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -211,10 +259,43 @@ slot3 = function(slot0)
 
 end
 
-slot2.registerObjects = slot3
+slot2.registerObjects = slot5
 
-slot3 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtRebornNumNoneUBaseText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "BOSS_RUSH_REVIVE_TIP2"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtRebornNumNoneUBaseTextMini
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "BOSS_RUSH_REVIVE_TIP2"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = slot0.canReviveCDUCountDown
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "BOSS_RUSH_REVIVE_TIP1"
+	slot2 = slot2(slot4)
+	slot1.formatText = slot2
+	slot1 = slot0.canReviveCDUCountDownMini
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "BOSS_RUSH_REVIVE_TIP1"
+	slot2 = slot2(slot4)
+	slot1.formatText = slot2
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -222,7 +303,127 @@ slot3 = function(slot0)
 
 end
 
-slot2.initView = slot3
+slot2.initView = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.txtRebornNumUBaseText
+	slot5 = pg
+	slot5 = slot5.getFormatText
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "BOSS_RUSH_REVIVE_TIP3"
+	slot7 = slot7(slot9)
+	slot8 = slot1
+	slot9 = SysConfigData
+	slot9 = slot9.BossRushRespawnNum
+	MULTRES = slot5(slot7, slot8, slot9)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.txtRebornNumUBaseTextMini
+	slot5 = pg
+	slot5 = slot5.getFormatText
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "BOSS_RUSH_REVIVE_TIP3"
+	slot7 = slot7(slot9)
+	slot8 = slot1
+	slot9 = SysConfigData
+	slot9 = slot9.BossRushRespawnNum
+	MULTRES = slot5(slot7, slot8, slot9)
+
+	slot2(slot4, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.SetReviveTipText = slot5
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = slot0.canReviveCDUCountDown
+	slot3 = slot1
+	slot1 = slot1.Play
+	slot4 = SysConfigData
+	slot4 = slot4.BossRushRespawnTime
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.canReviveCDUCountDownMini
+	slot3 = slot1
+	slot1 = slot1.Play
+	slot4 = SysConfigData
+	slot4 = slot4.BossRushRespawnTime
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.StartReviveCD = slot5
+
+slot5 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = slot0.canReviveCDUCountDown
+	slot3 = slot1
+	slot1 = slot1.Stop
+
+	slot1(slot3)
+
+	slot1 = slot0.canReviveCDUCountDownMini
+	slot3 = slot1
+	slot1 = slot1.Stop
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.StopReviveCD = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot2 = slot0.txtRebornNumUBaseText
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.txtRebornNumUBaseTextMini
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.SetReviveTips = slot5
 
 return slot2
 --- END OF BLOCK #0 ---

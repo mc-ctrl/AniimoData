@@ -1,4 +1,4 @@
---- BLOCK #0 1-111, warpins: 1 ---
+--- BLOCK #0 1-117, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -48,28 +48,32 @@ slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Common.Const.Const"
 slot14 = slot14(slot16)
-slot15 = slot1.LightClass
-slot17 = "LeylineTreeCtrl"
-slot18 = slot2
-slot15 = slot15(slot17, slot18)
-slot16 = {}
-slot17 = slot0.NOURISH_COUNT_CHANGED
-slot18 = {
+slot15 = require
+slot17 = "Data.sys_config_data"
+slot15 = slot15(slot17)
+slot16 = "progress"
+slot17 = slot1.LightClass
+slot19 = "LeylineTreeCtrl"
+slot20 = slot2
+slot17 = slot17(slot19, slot20)
+slot18 = {}
+slot19 = slot0.NOURISH_COUNT_CHANGED
+slot20 = {
 	"onNourishCountChanged",
 	true
 }
-slot16[slot17] = slot18
-slot17 = slot0.LEYLINEFLOWER_NOURISH_COUNT_CHANGED
-slot18 = {
+slot18[slot19] = slot20
+slot19 = slot0.LEYLINEFLOWER_NOURISH_COUNT_CHANGED
+slot20 = {
 	"onNourishCountChanged",
 	true
 }
-slot16[slot17] = slot18
-slot15.messages = slot16
-slot16 = "VX_Pb_Map_LeylinesTree_ClickLeaf_In0%s"
-slot15.ANI_CLIP_PREFIX = slot16
+slot18[slot19] = slot20
+slot17.messages = slot18
+slot18 = "VX_Pb_Map_LeylinesTree_ClickLeaf_In0%s"
+slot17.ANI_CLIP_PREFIX = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.leylineTreeId
 	--- END OF BLOCK #0 ---
@@ -166,9 +170,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.checkInfoValid = slot16
+slot17.checkInfoValid = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -220,9 +224,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.onCreate = slot16
+slot17.onCreate = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -231,9 +235,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onShow = slot16
+slot17.onShow = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -242,9 +246,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onHide = slot16
+slot17.onHide = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.destroy
@@ -264,9 +268,51 @@ slot16 = function(slot0)
 
 end
 
-slot15.onDestroy = slot16
+slot17.onDestroy = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.onItemObtainPanelClose
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.removeEventListener
+	slot4 = EventConst
+	slot4 = slot4.ON_ITEM_OBTAIN_CLOSE_PANEL
+	slot5 = slot0.onItemObtainPanelClose
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = nil
+	slot0.onItemObtainPanelClose = slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17._removeItemObtainPanelCloseListener = slot18
+
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = slot0.view
 	slot4 = slot2
@@ -302,9 +348,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.create = slot16
+slot17.create = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1442,13 +1488,12 @@ slot16 = function(slot0)
 
 end
 
-slot15.renderBasicInfo = slot16
+slot17.renderBasicInfo = slot18
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.nourishCount
+slot18 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = SysConfigData
+	slot1 = slot1.LEYLINEFLOWER_NOURISH_FREEMAXCOUNT
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -1458,402 +1503,422 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot1 = -3
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = 0
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-17, warpins: 2 ---
-	slot2 = 86400
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.lastDayUpdateTs
-	slot4 = slot3 + slot2
-	slot5 = Time
-	slot5 = slot5.secondCache
-	slot4 = slot4 - slot5
-	slot5 = -3
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.nourishCount
 	--- END OF BLOCK #2 ---
 
-	if slot1 <= slot5 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 18-84, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.tipsUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = false
-
-	slot5(slot7, slot8)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 1
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 1
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 1
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
+	--- BLOCK #3 11-11, warpins: 1 ---
+	slot2 = -slot1
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 85-101, warpins: 1 ---
-	slot5 = LuaUIUtils
-	slot5 = slot5.setCountDownTime
-	slot7 = slot0.view
-	slot7 = slot7.countDownUCountDown
-	slot8 = slot3 + slot2
-	slot9 = UIConst
-	slot9 = slot9.TimeType
-	slot9 = slot9.Short
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.tipsUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = true
-
-	slot5(slot7, slot8)
-
+	--- BLOCK #4 12-22, warpins: 2 ---
+	slot3 = 86400
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.lastDayUpdateTs
+	slot5 = slot4 + slot3
+	slot6 = Time
+	slot6 = slot6.secondCache
+	slot5 = slot5 - slot6
+	slot6 = -slot1
 	--- END OF BLOCK #4 ---
 
-	if slot1 == -2 then
+	if slot2 <= slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 102-162, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 1
+	--- BLOCK #5 23-89, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.tipsUWidget
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot8 = slot6
+	slot6 = slot6.Reset
 	slot9 = 1
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 1
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot8 = slot6
+	slot6 = slot6.Reset
 	slot9 = 1
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot7 = slot5
-	slot5 = slot5.Play
-	slot8 = slot4
-	slot9 = slot2
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot8 = slot6
+	slot6 = slot6.Reset
 	slot9 = 1
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 1
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 0
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #6 163-164, warpins: 1 ---
+	--- BLOCK #6 90-106, warpins: 1 ---
+	slot6 = LuaUIUtils
+	slot6 = slot6.setCountDownTime
+	slot8 = slot0.view
+	slot8 = slot8.countDownUCountDown
+	slot9 = slot4 + slot3
+	slot10 = UIConst
+	slot10 = slot10.TimeType
+	slot10 = slot10.Short
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.tipsUWidget
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = true
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #6 ---
 
-	if slot1 == -1 then
+	if slot2 == -2 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 165-225, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 1
+	--- BLOCK #7 107-167, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot8 = slot6
+	slot6 = slot6.Reset
 	slot9 = 1
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot7 = slot5
-	slot5 = slot5.Play
-	slot8 = slot4
-	slot9 = slot2
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 0
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot8 = slot6
+	slot6 = slot6.Reset
 	slot9 = 1
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 1
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot8 = slot6
+	slot6 = slot6.Play
+	slot9 = slot5
+	slot10 = slot3
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 0
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 0
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 1
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #8 226-285, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot7 = slot5
-	slot5 = slot5.Play
-	slot8 = slot4
-	slot9 = slot2
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 0
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot7 = slot5
-	slot5 = slot5.Reset
-	slot8 = 0
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown1
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 0
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown2
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 0
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.view
-	slot5 = slot5.progressCountDown3
-	slot5 = slot5.transform
-	slot5 = slot5.parent
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UButton"
-	slot5 = slot5(slot7, slot8)
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Energy"
-	slot9 = 0
-
-	slot5(slot7, slot8, slot9)
-
+	--- BLOCK #8 168-169, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	if slot2 == -1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #9 286-286, warpins: 4 ---
-	return
+	--- BLOCK #9 170-230, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot8 = slot6
+	slot6 = slot6.Reset
+	slot9 = 1
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot8 = slot6
+	slot6 = slot6.Play
+	slot9 = slot5
+	slot10 = slot3
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot8 = slot6
+	slot6 = slot6.Reset
+	slot9 = 0
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
 	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 231-290, warpins: 1 ---
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot8 = slot6
+	slot6 = slot6.Play
+	slot9 = slot5
+	slot10 = slot3
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot8 = slot6
+	slot6 = slot6.Reset
+	slot9 = 0
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot8 = slot6
+	slot6 = slot6.Reset
+	slot9 = 0
+	slot10 = 1
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown1
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown2
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot0.view
+	slot6 = slot6.progressCountDown3
+	slot6 = slot6.transform
+	slot6 = slot6.parent
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UButton"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Energy"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 291-291, warpins: 4 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot15.renderNourishBtn = slot16
+slot17.renderNourishBtn = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.imprintList
 	--- END OF BLOCK #0 ---
@@ -1988,9 +2053,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.renderImprintPoints = slot16
+slot17.renderImprintPoints = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.imprintList
 
@@ -2084,10 +2149,15 @@ slot16 = function(slot0)
 
 end
 
-slot15.checkIfBigPoint = slot16
+slot17.checkIfBigPoint = slot18
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot18 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._removeItemObtainPanelCloseListener
+
+	slot1(slot3)
+
 	slot1 = nil
 	slot0.bigPointFragRecord = slot1
 	slot1 = slot0.delayTimer
@@ -2100,7 +2170,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
+	--- BLOCK #1 9-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killTimer
 	slot4 = slot0.delayTimer
@@ -2114,7 +2184,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-14, warpins: 2 ---
+	--- BLOCK #2 15-17, warpins: 2 ---
 	slot1 = slot0.startDelay
 	--- END OF BLOCK #2 ---
 
@@ -2125,7 +2195,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #3 15-17, warpins: 1 ---
+	--- BLOCK #3 18-20, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.realDoInject
 
@@ -2136,7 +2206,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-20, warpins: 2 ---
+	--- BLOCK #4 21-23, warpins: 2 ---
 	slot1 = nil
 	slot0.startDelay = slot1
 
@@ -2147,9 +2217,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.destroy = slot16
+slot17.destroy = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
@@ -2687,20 +2757,14 @@ slot16 = function(slot0)
 
 end
 
-slot15.addListener = slot16
+slot17.addListener = slot18
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.eventEmitter
-	slot3 = slot1
-	slot1 = slot1.removeEventListener
-	slot4 = EventConst
-	slot4 = slot4.ON_ITEM_OBTAIN_CLOSE_PANEL
-	slot5 = slot0.onItemObtainPanelClose
+slot18 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._removeItemObtainPanelCloseListener
 
-	slot1(slot3, slot4, slot5)
+	slot1(slot3)
 
 	slot1 = pg
 	slot1 = slot1.global
@@ -2722,7 +2786,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 21-27, warpins: 1 ---
+	--- BLOCK #1 15-21, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot1 = slot1.leylineTreeMap
@@ -2738,7 +2802,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #2 28-28, warpins: 1 ---
+	--- BLOCK #2 22-22, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #2 ---
@@ -2746,7 +2810,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 29-34, warpins: 2 ---
+	--- BLOCK #3 23-28, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
 	slot4 = slot1
@@ -2761,7 +2825,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #4 35-35, warpins: 1 ---
+	--- BLOCK #4 29-29, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #4 ---
@@ -2769,7 +2833,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 36-38, warpins: 2 ---
+	--- BLOCK #5 30-32, warpins: 2 ---
 	slot5 = slot2
 	slot3 = slot2.phaseLevelUp
 
@@ -2780,7 +2844,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 39-39, warpins: 2 ---
+	--- BLOCK #6 33-33, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -2788,9 +2852,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.closePanel = slot16
+slot17.closePanel = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.imprintNum
 	slot3 = 0
@@ -3296,7 +3360,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 280-309, warpins: 2 ---
+	--- BLOCK #27 280-312, warpins: 2 ---
 	slot4 = slot0.view
 	slot4 = slot4.progressAddUSlider
 	slot4.value = slot3
@@ -3309,7 +3373,10 @@ slot16 = function(slot0, slot1)
 	slot7 = slot7.progressNowUSlider
 	slot7 = slot7.value
 	slot8 = slot3
-	slot9 = "progress"
+	slot9 = LuaUIUtils
+	slot9 = slot9.TweenId
+	slot11 = PROGRESS_TWEEN_ID
+	slot9 = slot9(slot11)
 	slot10 = 0.7
 	slot11 = 0
 	slot12 = CS
@@ -3366,7 +3433,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #28 310-316, warpins: 1 ---
+	--- BLOCK #28 313-319, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.pointLUImage
 	slot4 = slot4.gameObject
@@ -3381,7 +3448,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 317-319, warpins: 2 ---
+	--- BLOCK #29 320-322, warpins: 2 ---
 	slot4 = 1
 	--- END OF BLOCK #29 ---
 
@@ -3392,7 +3459,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #30 320-326, warpins: 1 ---
+	--- BLOCK #30 323-329, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.pointRUImage
 	slot4 = slot4.gameObject
@@ -3407,7 +3474,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 327-356, warpins: 2 ---
+	--- BLOCK #31 330-359, warpins: 2 ---
 	slot4 = ClientTextUtils
 	slot4 = slot4.setText
 	slot6 = slot0.view
@@ -3449,7 +3516,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #32 357-361, warpins: 1 ---
+	--- BLOCK #32 360-364, warpins: 1 ---
 	slot8 = slot0.view
 	slot8 = slot8.buffBtnGroup
 	slot8 = #slot8
@@ -3462,7 +3529,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #33 362-381, warpins: 1 ---
+	--- BLOCK #33 365-384, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.game
 	slot8 = slot8.audio
@@ -3494,14 +3561,14 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #34 382-382, warpins: 1 ---
+	--- BLOCK #34 385-385, warpins: 1 ---
 	slot8 = {}
 	--- END OF BLOCK #34 ---
 
 	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 383-385, warpins: 2 ---
+	--- BLOCK #35 386-388, warpins: 2 ---
 	slot9 = slot8[slot2]
 	--- END OF BLOCK #35 ---
 
@@ -3512,7 +3579,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #36 386-395, warpins: 1 ---
+	--- BLOCK #36 389-398, warpins: 1 ---
 	slot10 = string
 	slot10 = slot10.format
 	slot12 = RedDotConst
@@ -3530,21 +3597,21 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #37 396-397, warpins: 1 ---
+	--- BLOCK #37 399-400, warpins: 1 ---
 	slot11 = false
 	--- END OF BLOCK #37 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #38 398-398, warpins: 1 ---
+	--- BLOCK #38 401-401, warpins: 1 ---
 	slot11 = true
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 399-410, warpins: 2 ---
+	--- BLOCK #39 402-413, warpins: 2 ---
 	slot12 = pg
 	slot12 = slot12.global
 	slot12 = slot12.setRedDot
@@ -3564,7 +3631,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #40 411-415, warpins: 2 ---
+	--- BLOCK #40 414-418, warpins: 2 ---
 	slot10 = slot0.view
 	slot10 = slot10.buffVxDown
 	slot10 = slot10[slot2]
@@ -3577,7 +3644,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #41 416-423, warpins: 1 ---
+	--- BLOCK #41 419-426, warpins: 1 ---
 	slot10 = slot0.view
 	slot10 = slot10.buffVxDown
 	slot10 = slot10[slot2]
@@ -3593,7 +3660,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 424-437, warpins: 2 ---
+	--- BLOCK #42 427-440, warpins: 2 ---
 	slot10 = slot0.view
 	slot10 = slot10.vXLeylinesTreeNewBuffUpUWidget
 	slot10 = slot10.gameObject
@@ -3617,7 +3684,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 438-464, warpins: 2 ---
+	--- BLOCK #43 441-467, warpins: 2 ---
 	slot8 = slot0.view
 	slot8 = slot8.levelUpTransform
 	slot8 = slot8.gameObject
@@ -3656,7 +3723,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 465-478, warpins: 2 ---
+	--- BLOCK #44 468-481, warpins: 2 ---
 	slot8 = slot0.model
 	slot10 = slot8
 	slot8 = slot8.getCurBuffLevel
@@ -3680,7 +3747,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #45 479-495, warpins: 1 ---
+	--- BLOCK #45 482-498, warpins: 1 ---
 	slot9 = true
 	slot0.gradeIsUp = slot9
 	slot9 = slot0.view
@@ -3707,7 +3774,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #46 496-503, warpins: 1 ---
+	--- BLOCK #46 499-506, warpins: 1 ---
 	slot11 = slot0.view
 	slot11 = slot11.btnCultivateUButton
 	slot13 = slot11
@@ -3722,7 +3789,7 @@ slot16 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #47 504-517, warpins: 1 ---
+	--- BLOCK #47 507-520, warpins: 1 ---
 	slot9 = slot0.view
 	slot9 = slot9.btnCultivateUButton
 	slot11 = slot9
@@ -3746,7 +3813,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 518-521, warpins: 3 ---
+	--- BLOCK #48 521-524, warpins: 3 ---
 	slot9 = slot0.imprintInjectedCount
 	slot10 = slot0.requiredWeatherPoints
 	--- END OF BLOCK #48 ---
@@ -3758,7 +3825,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #49 522-536, warpins: 1 ---
+	--- BLOCK #49 525-539, warpins: 1 ---
 	slot9 = slot0.view
 	slot9 = slot9.btnWeatherUButton
 	slot11 = slot9
@@ -3783,7 +3850,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #50 537-544, warpins: 1 ---
+	--- BLOCK #50 540-547, warpins: 1 ---
 	slot11 = slot0.view
 	slot11 = slot11.btnWeatherUButton
 	slot13 = slot11
@@ -3798,7 +3865,7 @@ slot16 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #52
 
 
-	--- BLOCK #51 545-558, warpins: 1 ---
+	--- BLOCK #51 548-561, warpins: 1 ---
 	slot9 = slot0.view
 	slot9 = slot9.btnWeatherUButton
 	slot11 = slot9
@@ -3822,7 +3889,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #52
 
 
-	--- BLOCK #52 559-565, warpins: 3 ---
+	--- BLOCK #52 562-568, warpins: 3 ---
 	slot11 = slot0
 	slot9 = slot0.checkIfBigPoint
 
@@ -3839,7 +3906,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #53 566-569, warpins: 1 ---
+	--- BLOCK #53 569-572, warpins: 1 ---
 	slot9 = slot0.imprintInjectedCount
 	slot10 = slot0.leylineTreeMaxImprintCount
 	--- END OF BLOCK #53 ---
@@ -3851,7 +3918,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #54 570-571, warpins: 1 ---
+	--- BLOCK #54 573-574, warpins: 1 ---
 	slot9 = true
 	slot0.gradeIsUp = slot9
 	--- END OF BLOCK #54 ---
@@ -3859,7 +3926,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #55
 
 
-	--- BLOCK #55 572-606, warpins: 2 ---
+	--- BLOCK #55 575-609, warpins: 2 ---
 	slot9 = slot0.view
 	slot9 = slot9.btnInjectUButton
 	slot11 = slot9
@@ -3912,7 +3979,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #56 607-609, warpins: 1 ---
+	--- BLOCK #56 610-612, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.delayRun
 
@@ -3923,21 +3990,21 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #57
 
 
-	--- BLOCK #57 610-611, warpins: 3 ---
+	--- BLOCK #57 613-614, warpins: 3 ---
 	return
 	--- END OF BLOCK #57 ---
 
 	FLOW; TARGET BLOCK #58
 
 
-	--- BLOCK #58 612-612, warpins: 2 ---
+	--- BLOCK #58 615-615, warpins: 2 ---
 	return
 	--- END OF BLOCK #58 ---
 
 	FLOW; TARGET BLOCK #59
 
 
-	--- BLOCK #59 613-613, warpins: 2 ---
+	--- BLOCK #59 616-616, warpins: 2 ---
 	return
 	--- END OF BLOCK #59 ---
 
@@ -3945,9 +4012,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.inject = slot16
+slot17.inject = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.delayTimer
 	--- END OF BLOCK #0 ---
@@ -4033,30 +4100,42 @@ slot16 = function(slot0)
 
 end
 
-slot15.delayRun = slot16
+slot17.delayRun = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.usedCount
-
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.usedCount
+	slot2 = 0
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot1 <= slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 5-15, warpins: 2 ---
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-19, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -4071,15 +4150,15 @@ slot16 = function(slot0)
 	slot0.usedCount = slot1
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot15.realDoInject = slot16
+slot17.realDoInject = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.imprintInjectedCount
 	slot2 = slot0.leylineTreeMaxImprintCount
@@ -4146,9 +4225,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.setBtnText = slot16
+slot17.setBtnText = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4337,9 +4416,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.showPopup = slot16
+slot17.showPopup = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.view
@@ -4484,21 +4563,52 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.renderNextLargeBuffTip = slot16
+slot17.renderNextLargeBuffTip = slot18
 
-slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot0.model
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-13, warpins: 2 ---
 	slot2 = 1
 	slot3 = slot0.view
 	slot3 = slot3.flowGroup
 	slot3 = #slot3
 	slot4 = 1
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #1
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #1 7-15, warpins: 2 ---
+	--- BLOCK #4 14-22, warpins: 2 ---
 	slot6 = slot0.view
 	slot6 = slot6.flowGroup
 	slot6 = slot6[slot5]
@@ -4509,13 +4619,13 @@ slot16 = function(slot0, slot1)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
 	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #2
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #5
 
-	--- BLOCK #2 16-24, warpins: 1 ---
+	--- BLOCK #5 23-31, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
 	slot2 = slot2.getCurBuffLevel
@@ -4523,16 +4633,16 @@ slot16 = function(slot0, slot1)
 	slot6 = slot0.imprintInjectedCount
 	slot2 = slot2(slot4, slot5, slot6)
 	slot3 = slot0.recordBuffLevel
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	if slot3 < slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 25-29, warpins: 1 ---
+	--- BLOCK #6 32-36, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.showPopup
 	slot6 = slot2
@@ -4541,22 +4651,22 @@ slot16 = function(slot0, slot1)
 
 	slot0.recordBuffLevel = slot2
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 30-30, warpins: 2 ---
+	--- BLOCK #7 37-37, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot15.onItemObtainPanelCloseFunc = slot16
+slot17.onItemObtainPanelCloseFunc = slot18
 
-slot16 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.leylineTreeId
 	--- END OF BLOCK #0 ---
@@ -4611,9 +4721,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.onNourishCountChanged = slot16
+slot17.onNourishCountChanged = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4637,9 +4747,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onNourishBtnClick = slot16
+slot17.onNourishBtnClick = slot18
 
-slot16 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4663,9 +4773,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onWeatherBtnClick = slot16
+slot17.onWeatherBtnClick = slot18
 
-return slot15
+return slot17
 --- END OF BLOCK #0 ---
 
 

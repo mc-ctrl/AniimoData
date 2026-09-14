@@ -1,8 +1,6 @@
 --- BLOCK #0 1-6, warpins: 1 ---
 slot0 = {}
-slot1 = {
-	battlepass = false
-}
+slot1 = {}
 
 slot2 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---

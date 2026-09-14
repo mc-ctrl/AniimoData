@@ -7,41 +7,41 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "PatrolTree/PatrolMoveSubTree/ST_PatrolRun",
+	agenttype = "WxAgent",
 	useForRoute = false,
-	version = 5,
-	agenttype = "WxAgent"
+	name = "PatrolTree/PatrolMoveSubTree/ST_PatrolRun",
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0:",
 	name = "patrolPos",
+	value = "0:",
 	type = "vector<float>"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
-	const = 15,
-	value = "15",
 	name = "patrolMaxTime",
-	type = "float"
+	value = "15",
+	type = "float",
+	const = 15
 }
 slot4[2] = slot5
 slot5 = {
-	const = -1,
-	value = "-1",
 	name = "tPatrolSpeed",
-	type = "float"
+	value = "-1",
+	type = "float",
+	const = -1
 }
 slot4[3] = slot5
 slot5 = {
-	const = "RUN",
-	value = "RUN",
 	name = "tPatrolAnimationState",
-	type = "string"
+	value = "RUN",
+	type = "string",
+	const = "RUN"
 }
 slot4[4] = slot5
 slot3.pars = slot4

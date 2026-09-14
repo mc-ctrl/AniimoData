@@ -9,25 +9,14 @@ slot2 = slot0.getLogger
 slot4 = "AccessControl"
 slot2 = slot2(slot4)
 slot3 = {}
-slot4 = setmetatable
-slot6 = {}
-slot7 = {
+slot4 = next
+slot5 = setmetatable
+slot7 = {}
+slot8 = {
 	__mode = "k"
 }
-slot4 = slot4(slot6, slot7)
-slot3.RawDataMap = slot4
-
-slot5 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = rawDataMap
-	slot1 = slot1[slot0]
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
+slot5 = slot5(slot7, slot8)
+slot3.RawDataMap = slot5
 
 slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
@@ -141,20 +130,19 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #4 10-12, warpins: 1 ---
-	slot2 = getRaw
-	slot4 = slot0
+	slot2 = rawDataMap
+	slot2 = slot2[slot0]
 
-	return slot2(slot4)
+	return slot2
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 13-17, warpins: 3 ---
-	slot2 = getRaw
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #5 13-16, warpins: 3 ---
+	slot2 = rawDataMap
+	slot2 = slot2[slot0]
 	slot3 = slot2[slot1]
 
 	return slot3
@@ -167,10 +155,9 @@ end
 slot8.__index = slot9
 
 slot9 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot3 = getRaw
-	slot5 = slot0
-	slot3 = slot3(slot5)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = rawDataMap
+	slot3 = slot3[slot0]
 	slot4 = pg
 	slot4 = slot4.isReloading
 	--- END OF BLOCK #0 ---
@@ -182,7 +169,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 8-11, warpins: 1 ---
+	--- BLOCK #1 7-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.isRuningScript
 	--- END OF BLOCK #1 ---
@@ -194,7 +181,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 12-18, warpins: 1 ---
+	--- BLOCK #2 11-17, warpins: 1 ---
 	slot4 = LoggerManager
 	slot4 = slot4.checkLogger
 	slot6 = LoggerConst
@@ -209,7 +196,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 19-26, warpins: 1 ---
+	--- BLOCK #3 18-25, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.error
@@ -225,7 +212,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
+	--- BLOCK #4 26-26, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #4 ---
@@ -233,7 +220,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-33, warpins: 3 ---
+	--- BLOCK #5 27-32, warpins: 3 ---
 	slot4 = rawset
 	slot6 = slot3
 	slot7 = slot1
@@ -251,10 +238,9 @@ end
 slot8.__newindex = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = getRaw
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = rawDataMap
+	slot1 = slot1[slot0]
 	slot2 = pairsIterator
 	slot3 = slot1
 	slot4 = nil
@@ -269,10 +255,9 @@ end
 slot8.__pairs = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = getRaw
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = rawDataMap
+	slot1 = slot1[slot0]
 	slot2 = ipairsIterator
 	slot3 = slot1
 	slot4 = 0
@@ -287,10 +272,9 @@ end
 slot8.__ipairs = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = getRaw
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = rawDataMap
+	slot1 = slot1[slot0]
 	slot2 = #slot1
 
 	return slot2
@@ -347,9 +331,9 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #4 12-15, warpins: 2 ---
-	slot1 = pairs
-	slot3 = slot0
-	slot1, slot2, slot3 = slot1(slot3)
+	slot1 = raw_next
+	slot2 = slot0
+	slot3 = nil
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
@@ -450,9 +434,9 @@ slot9 = function(slot0, slot1)
 
 	--- BLOCK #4 10-14, warpins: 2 ---
 	slot3 = {}
-	slot4 = pairs
-	slot6 = slot2
-	slot4, slot5, slot6 = slot4(slot6)
+	slot4 = raw_next
+	slot5 = slot2
+	slot6 = nil
 	--- END OF BLOCK #4 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8

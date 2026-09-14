@@ -7,61 +7,61 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "PuppetAgent",
 	version = 57,
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Egg_10203",
+	agenttype = "PuppetAgent",
 	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	type = "float",
 	value = "0",
-	name = "CurrentDistToTarget"
+	name = "CurrentDistToTarget",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	type = "float",
 	value = "0",
-	name = "CurrentBoxDistToTarget"
+	name = "CurrentBoxDistToTarget",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	const = 0,
 	type = "float",
 	value = "0",
-	name = "goBackDist"
+	name = "goBackDist",
+	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	const = 0,
 	type = "float",
 	value = "0",
-	name = "skillStopDist"
+	name = "skillStopDist",
+	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	const = 100,
 	type = "int",
 	value = "100",
-	name = "tWeight_Group_SideWalk"
+	name = "tWeight_Group_SideWalk",
+	const = 100
 }
 slot4[5] = slot5
 slot5 = {
-	const = 100,
 	type = "int",
 	value = "100",
-	name = "tWeight_Group_Wait"
+	name = "tWeight_Group_Wait",
+	const = 100
 }
 slot4[6] = slot5
 slot5 = {
-	const = 100,
 	type = "int",
 	value = "100",
-	name = "tWeight_Group_Angry"
+	name = "tWeight_Group_Angry",
+	const = 100
 }
 slot4[7] = slot5
 slot3.pars = slot4

@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/_Wild/90213_Irily/PBT_Wild_90213_Combat_Prepare",
-	version = 18,
 	useForRoute = false,
+	version = 18,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
@@ -17,9 +17,9 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "tSensorTgtId",
-	value = "0",
+	const = 0,
 	type = "int",
-	const = 0
+	value = "0"
 }
 slot4[1] = slot5
 slot3.pars = slot4

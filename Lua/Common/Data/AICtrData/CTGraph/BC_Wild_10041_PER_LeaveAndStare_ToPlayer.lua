@@ -1,4 +1,4 @@
---- BLOCK #0 1-43, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
@@ -137,30 +137,9 @@ end
 slot2.executeContinue = slot7
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	if slot1 == 12 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot2 = _M
-	slot2 = slot2._get_13_3
-	slot4 = slot0
-
-	return slot2(slot4)
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-7, warpins: 2 ---
+	--- BLOCK #0 1-1, warpins: 1 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -292,98 +271,64 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-11, warpins: 2 ---
-	slot1 = _M
-	slot1 = slot1.checkInterrupt
+	--- BLOCK #2 5-45, warpins: 2 ---
 	slot3 = slot0
-	slot4 = 12
-	slot1 = slot1(slot3, slot4)
-	--- END OF BLOCK #2 ---
+	slot1 = slot0.setActive
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	slot1(slot3)
 
-
-	--- BLOCK #3 12-53, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setActive
-
-	slot2(slot4)
-
-	slot2 = _C
-	slot4 = 12
-	slot5 = "DoBehaviour"
-	slot6 = slot0
-	slot7 = "PBT_Behav_Com_LeaveAndStare_ToPlayer"
-
-	slot2(slot4, slot5, slot6, slot7)
-
-	slot2 = _M
-	slot2 = slot2._get_10_2
-	slot4 = slot0
-	slot2 = slot2(slot4)
-	slot3 = slot0.__agent
-	slot5 = slot3
-	slot3 = slot3.clearSubTreeLocalParams
-
-	slot3(slot5)
-
-	slot3 = slot0.__agent
-	slot5 = slot3
-	slot3 = slot3.addSubTreeLocalParam
-	slot6 = "tTargetActorId"
-	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.__agent
-	slot5 = slot3
-	slot3 = slot3.addSubTreeLocalParam
-	slot6 = "LeaveCount"
-	slot7 = 0
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.__agent
-	slot5 = slot3
-	slot3 = slot3.addSubTreeLocalParam
-	slot6 = "tStareCount"
-	slot7 = 0
-
-	slot3(slot5, slot6, slot7)
-
+	slot1 = _C
+	slot3 = 12
+	slot4 = "DoBehaviour"
 	slot5 = slot0
-	slot3 = slot0.setContinue
-	slot6 = 12
+	slot6 = "PBT_Behav_Com_LeaveAndStare_ToPlayer"
 
-	slot3(slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6)
 
-	slot3 = true
-
-	return slot3
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 54-56, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setActiveFail
+	slot1 = _M
+	slot1 = slot1._get_10_2
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = slot0.__agent
+	slot4 = slot2
+	slot2 = slot2.clearSubTreeLocalParams
 
 	slot2(slot4)
 
-	--- END OF BLOCK #4 ---
+	slot2 = slot0.__agent
+	slot4 = slot2
+	slot2 = slot2.addSubTreeLocalParam
+	slot5 = "tTargetActorId"
+	slot6 = slot1
 
-	FLOW; TARGET BLOCK #5
+	slot2(slot4, slot5, slot6)
 
+	slot2 = slot0.__agent
+	slot4 = slot2
+	slot2 = slot2.addSubTreeLocalParam
+	slot5 = "LeaveCount"
+	slot6 = 0
 
-	--- BLOCK #5 57-57, warpins: 2 ---
-	return
-	--- END OF BLOCK #5 ---
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.__agent
+	slot4 = slot2
+	slot2 = slot2.addSubTreeLocalParam
+	slot5 = "tStareCount"
+	slot6 = 0
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.setContinue
+	slot5 = 12
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #2 ---
 
 
 
@@ -490,42 +435,6 @@ slot7 = function(slot0)
 end
 
 slot2._get_10_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-22, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getSubMacro
-	slot4 = "BCM_Common_CheckPER"
-	slot1 = slot1(slot3, slot4)
-	slot2 = _M
-	slot2 = slot2._get_10_2
-	slot4 = slot0
-	slot2 = slot2(slot4)
-	slot5 = slot1
-	slot3 = slot1.setContextValue
-	slot6 = "tActorId"
-	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
-
-	slot5 = slot1
-	slot3 = slot1.getMacroValue
-	slot6 = "tIsPlayerInterrupt"
-	slot3 = slot3(slot5, slot6)
-	slot6 = slot0
-	slot4 = slot0.clearSubMacro
-	slot7 = slot1
-
-	slot4(slot6, slot7)
-
-	return slot3
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_13_3 = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---

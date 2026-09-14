@@ -1,4 +1,4 @@
---- BLOCK #0 1-41, warpins: 1 ---
+--- BLOCK #0 1-44, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -27,8 +27,11 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Data.item_data"
 slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Utils.GmToolUtils"
+slot9 = slot9(slot11)
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.value
 	slot3 = slot1.value
@@ -86,7 +89,7 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -127,8 +130,8 @@ slot10 = function(slot0)
 	}
 	slot9 = slot5
 	slot10 = " "
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
+	slot11 = GmToolUtils
+	slot11 = slot11.getGmLocalizationText
 	slot13 = slot6.name
 	slot11 = slot11(slot13)
 	slot9 = slot9 .. slot10 .. slot11
@@ -163,9 +166,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.getSceneList = slot10
+slot4.getSceneList = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -247,8 +250,8 @@ slot10 = function(slot0)
 	}
 	slot9 = slot5
 	slot10 = " "
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
+	slot11 = GmToolUtils
+	slot11 = slot11.getGmLocalizationText
 	slot13 = slot6.name
 	slot11 = slot11(slot13)
 	slot9 = slot9 .. slot10 .. slot11
@@ -293,9 +296,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.getPuppetList = slot10
+slot4.getPuppetList = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -314,8 +317,8 @@ slot10 = function(slot0)
 	}
 	slot9 = slot5
 	slot10 = " "
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
+	slot11 = GmToolUtils
+	slot11 = slot11.getGmLocalizationText
 	slot13 = slot6.name
 	slot11 = slot11(slot13)
 	slot9 = slot9 .. slot10 .. slot11
@@ -362,9 +365,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.getPetList = slot10
+slot4.getPetList = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -383,8 +386,8 @@ slot10 = function(slot0)
 	}
 	slot9 = slot5
 	slot10 = " "
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
+	slot11 = GmToolUtils
+	slot11 = slot11.getGmLocalizationText
 	slot13 = slot6.itemName
 	slot11 = slot11(slot13)
 	slot9 = slot9 .. slot10 .. slot11
@@ -424,9 +427,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.getItemList = slot10
+slot4.getItemList = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot2 = {
@@ -457,7 +460,7 @@ slot10 = function(slot0)
 
 end
 
-slot4.getFrameList = slot10
+slot4.getFrameList = slot11
 
 return slot4
 --- END OF BLOCK #0 ---

@@ -130,11 +130,10 @@ slot5 = function(slot0, slot1)
 	slot2 = slot0.startTimer
 
 	slot5 = function()
-		--- BLOCK #0 1-22, warpins: 1 ---
+		--- BLOCK #0 1-21, warpins: 1 ---
 		slot0 = info
 		slot0 = slot0.curLockedEntity
 		slot0 = slot0.eModel
-		slot0 = slot0.modelView
 		slot0 = slot0.shaderView
 		slot2 = slot0
 		slot0 = slot0.PlayPhotoIdentifyEffect

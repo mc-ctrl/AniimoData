@@ -1,4 +1,4 @@
---- BLOCK #0 1-147, warpins: 1 ---
+--- BLOCK #0 1-153, warpins: 1 ---
 slot0 = require
 slot2 = "SDK.Platform.PlatformLogger"
 slot0 = slot0(slot2)
@@ -45,7 +45,7 @@ slot14 = require
 slot16 = "SDK.Platform.PlatformImageMaskService"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Utils.ClientSwitch"
+slot17 = "SDK.SDKLoginConfig"
 slot15 = slot15(slot17)
 slot16 = require
 slot18 = "Core.Timer.TimerManager"
@@ -71,19 +71,22 @@ slot21.NOT_SUPPORTED_RESULT = slot22
 slot22 = -2
 slot21.RUNTIME_NOT_READY_RESULT = slot22
 slot22 = {
-	runtimeReadySynced = false,
-	activeUserId = "",
-	signingIn = false,
-	initialized = false,
 	controllerReconnectConfirmShown = false,
 	deviceAssociationCallbackRegistered = false,
-	userCallbackRegistered = false
+	userCallbackRegistered = false,
+	runtimeReadySynced = false,
+	signedOut = false,
+	activeUserId = "",
+	signingIn = false,
+	initialized = false
 }
 slot21.state = slot22
 
 slot22 = function()
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot0 = PlatformBridgeLuaFacade
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = PlatformLoginService
+	slot0 = slot0.isNativeSignInSkipped
+	slot0 = slot0()
 	--- END OF BLOCK #0 ---
 
 	slot0 = if slot0 then
@@ -93,53 +96,74 @@ slot22 = function()
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot0 = PlatformBridgeLuaFacade
-	slot0 = slot0.GetSignedInDisplayName
-	--- END OF BLOCK #1 ---
-
-	slot0 = if not slot0 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #1 6-7, warpins: 1 ---
 	slot0 = ""
 
 	return slot0
 
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot0 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 10-15, warpins: 2 ---
-	slot0 = tostring
-	slot2 = PlatformBridgeLuaFacade
-	slot2 = slot2.GetSignedInDisplayName
-	slot2 = slot2()
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.GetSignedInDisplayName
 	--- END OF BLOCK #3 ---
 
-	slot2 = if not slot2 then
+	slot0 = if not slot0 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 16-16, warpins: 1 ---
-	slot2 = ""
+	--- BLOCK #4 15-16, warpins: 2 ---
+	slot0 = ""
+
+	return slot0
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-17, warpins: 2 ---
-	return slot0(slot2)
+	--- BLOCK #5 17-22, warpins: 2 ---
+	slot0 = tostring
+	slot2 = PlatformBridgeLuaFacade
+	slot2 = slot2.GetSignedInDisplayName
+	slot2 = slot2()
 	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-23, warpins: 1 ---
+	slot2 = ""
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-24, warpins: 2 ---
+	return slot0(slot2)
+	--- END OF BLOCK #7 ---
 
 
 
@@ -148,8 +172,10 @@ end
 slot21.getBridgeDisplayName = slot22
 
 slot22 = function()
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot0 = PlatformBridgeLuaFacade
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = PlatformLoginService
+	slot0 = slot0.isNativeSignInSkipped
+	slot0 = slot0()
 	--- END OF BLOCK #0 ---
 
 	slot0 = if slot0 then
@@ -159,29 +185,54 @@ slot22 = function()
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot0 = PlatformBridgeLuaFacade
-	slot0 = slot0.GetSignedInUserId
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.platform
+	slot2 = slot0
+	slot0 = slot0.getSdkFpId
+
+	return slot0(slot2)
+
 	--- END OF BLOCK #1 ---
 
-	slot0 = if not slot0 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-14, warpins: 2 ---
+	slot0 = PlatformBridgeLuaFacade
+	--- END OF BLOCK #2 ---
+
+	slot0 = if slot0 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.GetSignedInUserId
+	--- END OF BLOCK #3 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-20, warpins: 2 ---
 	slot0 = ""
 
 	return slot0
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 10-18, warpins: 2 ---
+	--- BLOCK #5 21-29, warpins: 2 ---
 	slot0 = PlatformBridgeLuaFacade
 	slot0 = slot0.GetSignedInUserId
 	slot0 = slot0()
@@ -189,37 +240,37 @@ slot22 = function()
 	slot1 = slot1.isNilOrEmpty
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 19-20, warpins: 1 ---
+	--- BLOCK #6 30-31, warpins: 1 ---
 	slot1 = ""
 
 	return slot1
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 21-23, warpins: 2 ---
+	--- BLOCK #7 32-34, warpins: 2 ---
 	slot1 = tostring
 	slot3 = slot0
 
 	return slot1(slot3)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot21.getBridgeUserId = slot22
+slot21.getUserId = slot22
 
 slot22 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -282,6 +333,68 @@ slot22 = function()
 end
 
 slot21.hasBridgeSignedInUser = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.IsIdentitySkipped
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot0 = PlatformBridgeLuaFacade
+	slot0 = slot0.IsIdentitySkipped
+	slot0 = slot0()
+	--- END OF BLOCK #2 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 4 ---
+	return slot0
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot21.isNativeSignInSkipped = slot22
 
 slot22 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -404,6 +517,45 @@ slot22 = function()
 end
 
 slot21.resetActiveUser = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = PlatformLoginService
+	slot0 = slot0.state
+	slot0 = slot0.signedOut
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot21.hasSignedOut = slot22
 
 slot22 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -619,8 +771,8 @@ slot22 = function()
 	slot1 = ClientUtils
 	slot1 = slot1.showConfirmByConfig
 	slot3 = {
-		hideCancel = true,
-		showNextBtn = false
+		showNextBtn = false,
+		hideCancel = true
 	}
 	--- END OF BLOCK #7 ---
 
@@ -699,7 +851,14 @@ end
 slot21.showControllerReconnectConfirm = slot22
 
 slot22 = function()
-	--- BLOCK #0 1-37, warpins: 1 ---
+	--- BLOCK #0 1-47, warpins: 1 ---
+	slot0 = PlatformUGCService
+	slot2 = slot0
+	slot0 = slot0.cancelDeferredServerSync
+	slot3 = "reset_user_bound_platform_state"
+
+	slot0(slot2, slot3)
+
 	slot0 = PlatformShellInviteService
 	slot2 = slot0
 	slot0 = slot0.resetPendingState
@@ -741,6 +900,15 @@ slot22 = function()
 	slot0 = slot0.shutdown
 
 	slot0(slot2)
+
+	slot0 = PlatformTextCommunicationService
+	slot2 = slot0
+	slot0 = slot0.clearPermissionCache
+	slot3 = {
+		clearUGCService = false
+	}
+
+	slot0(slot2, slot3)
 
 	slot0 = PlatformTextMaskService
 	slot2 = slot0
@@ -900,9 +1068,85 @@ slot21.isInitialized = slot22
 
 slot22 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformLoginService
+	slot1 = slot1.isNativeSignInSkipped
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = PlatformLoginService
+	slot3 = slot3.getUserId
+	MULTRES = slot3()
+	slot1 = slot1(MULTRES)
+	slot1 = not slot1
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-18, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.isSupported
 	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 19-23, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.ensureRuntimeReady
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-26, warpins: 1 ---
+	slot1 = PlatformLoginService
+	slot1 = slot1.hasBridgeSignedInUser
+	slot1 = slot1()
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-27, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot21.isSignedIn = slot22
+
+slot22 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PlatformLoginService
+	slot1 = slot1.state
+	slot1 = slot1.initialized
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -913,37 +1157,133 @@ slot22 = function(slot0)
 
 
 	--- BLOCK #1 6-10, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.ensureRuntimeReady
-	slot1 = slot1(slot3)
+	slot1 = PlatformLoginService
+	slot1 = slot1.state
+	slot1 = slot1.signingIn
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-13, warpins: 1 ---
-	slot1 = PlatformLoginService
-	slot1 = slot1.hasBridgeSignedInUser
-	slot1 = slot1()
-
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.ensureRuntimeReady
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 14-14, warpins: 3 ---
+	--- BLOCK #3 16-17, warpins: 3 ---
+	slot1 = false
+
 	return slot1
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-23, warpins: 2 ---
+	slot1 = tostring
+	slot3 = PlatformLoginService
+	slot3 = slot3.state
+	slot3 = slot3.activeUserId
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-24, warpins: 1 ---
+	slot3 = ""
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-31, warpins: 2 ---
+	slot1 = slot1(slot3)
+	slot2 = tostring
+	slot4 = PlatformLoginService
+	slot4 = slot4.getUserId
+	slot4 = slot4()
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 32-32, warpins: 1 ---
+	slot4 = ""
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-39, warpins: 2 ---
+	slot2 = slot2(slot4)
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 40-41, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 42-43, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 44-44, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 45-45, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot21.isSignedIn = slot22
+slot21.isShellJoinUserSessionReady = slot22
 
 slot22 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -971,7 +1311,7 @@ slot22 = function(slot0)
 
 	--- BLOCK #2 8-16, warpins: 2 ---
 	slot1 = PlatformLoginService
-	slot1 = slot1.getBridgeUserId
+	slot1 = slot1.getUserId
 	slot1 = slot1()
 	slot2 = string
 	slot2 = slot2.isNilOrEmpty
@@ -1015,19 +1355,105 @@ slot21.getCurrentUser = slot22
 
 slot22 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.isSupported
-	slot1 = slot1(slot3)
+	slot1 = PlatformLoginService
+	slot1 = slot1.isNativeSignInSkipped
+	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 6-11, warpins: 1 ---
+	--- BLOCK #1 6-14, warpins: 1 ---
+	slot1 = PlatformLoginService
+	slot1 = slot1.getUserId
+	slot1 = slot1()
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 15-22, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = PlatformLoginService
+	slot4 = slot4.state
+	slot4 = slot4.activeUserId
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-30, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.warn
+	slot5 = "FPX SDK 登录用户状态同步检测到 vendor uid 已失效，按签出处理。"
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.onSignedOut
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 31-33, warpins: 2 ---
+	slot2 = false
+	slot3 = ""
+
+	return slot2, slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 34-36, warpins: 2 ---
+	slot2 = true
+	slot3 = slot1
+
+	return slot2, slot3
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 37-41, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.isSupported
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 42-47, warpins: 1 ---
 	slot1 = PlatformLoginService
 	slot1 = slot1.resetActiveUser
 
@@ -1038,95 +1464,95 @@ slot22 = function(slot0)
 
 	return slot1, slot2
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #2 12-17, warpins: 2 ---
+	--- BLOCK #8 48-53, warpins: 2 ---
 	slot1 = PlatformLoginService
 	slot1 = slot1.hasBridgeSignedInUser
 	slot1 = slot1()
 	slot2 = ""
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #8 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #3 18-27, warpins: 1 ---
+	--- BLOCK #9 54-63, warpins: 1 ---
 	slot3 = PlatformLoginService
-	slot3 = slot3.getBridgeUserId
+	slot3 = slot3.getUserId
 	slot3 = slot3()
 	slot2 = slot3
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
 	slot5 = slot2
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #9 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #4 28-31, warpins: 1 ---
+	--- BLOCK #10 64-67, warpins: 1 ---
 	slot3 = ""
 	slot4 = pg
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #10 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #5 32-35, warpins: 1 ---
+	--- BLOCK #11 68-71, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #11 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #6 36-40, warpins: 1 ---
+	--- BLOCK #12 72-76, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.platform
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #12 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #7 41-46, warpins: 1 ---
+	--- BLOCK #13 77-82, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.platform
 	slot4 = slot4.getSdkVendorUid
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #13 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #8 47-53, warpins: 1 ---
+	--- BLOCK #14 83-89, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.platform
@@ -1134,50 +1560,50 @@ slot22 = function(slot0)
 	slot4 = slot4.getSdkVendorUid
 	slot4 = slot4(slot6)
 	slot3 = slot4
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #9 54-59, warpins: 5 ---
+	--- BLOCK #15 90-95, warpins: 5 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
 	slot6 = slot3
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #15 ---
 
 	slot4 = if not slot4 then
-	JUMP TO BLOCK #10
-	else
 	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #10 60-61, warpins: 1 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #16 96-97, warpins: 1 ---
+	--- END OF BLOCK #16 ---
 
 	if slot3 ~= slot2 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #11 62-67, warpins: 1 ---
+	--- BLOCK #17 98-103, warpins: 1 ---
 	slot4 = PlatformPrivacyUtils
 	slot6 = slot4
 	slot4 = slot4.shouldRedactSensitiveLogs
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #17 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #12 68-73, warpins: 1 ---
+	--- BLOCK #18 104-109, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.warn
@@ -1185,12 +1611,12 @@ slot22 = function(slot0)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #13 74-85, warpins: 1 ---
+	--- BLOCK #19 110-121, warpins: 1 ---
 	slot4 = logger
 	slot6 = slot4
 	slot4 = slot4.warn
@@ -1204,28 +1630,28 @@ slot22 = function(slot0)
 
 	slot4(slot6, slot7, slot8, MULTRES)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #14 86-93, warpins: 1 ---
+	--- BLOCK #20 122-129, warpins: 1 ---
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
 	slot5 = PlatformLoginService
 	slot5 = slot5.state
 	slot5 = slot5.activeUserId
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #20 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #15 94-104, warpins: 1 ---
+	--- BLOCK #21 130-140, warpins: 1 ---
 	slot3 = logger
 	slot5 = slot3
 	slot3 = slot3.warn
@@ -1243,17 +1669,17 @@ slot22 = function(slot0)
 
 	return slot3, slot4
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #16 105-107, warpins: 7 ---
+	--- BLOCK #22 141-143, warpins: 7 ---
 	slot3 = slot1
 	slot4 = slot2
 
 	return slot3, slot4
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #22 ---
 
 
 
@@ -1583,7 +2009,7 @@ slot22 = function(slot0)
 	slot4 = slot4.PLATFORM_USER_SIGNED_IN
 	slot5 = {}
 	slot6 = PlatformLoginService
-	slot6 = slot6.getBridgeUserId
+	slot6 = slot6.getUserId
 	slot6 = slot6()
 	slot5.platformUserId = slot6
 	--- END OF BLOCK #3 ---
@@ -1642,7 +2068,7 @@ slot22 = function(slot0)
 
 	--- BLOCK #2 4-12, warpins: 2 ---
 	slot2 = PlatformLoginService
-	slot2 = slot2.getBridgeUserId
+	slot2 = slot2.getUserId
 	slot2 = slot2()
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
@@ -1666,7 +2092,11 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-57, warpins: 2 ---
+	--- BLOCK #4 16-61, warpins: 2 ---
+	slot3 = PlatformLoginService
+	slot3 = slot3.state
+	slot4 = false
+	slot3.signedOut = slot4
 	slot3 = PlatformRecentPlayerService
 	slot5 = slot3
 	slot3 = slot3.init
@@ -1786,78 +2216,91 @@ slot22 = function(slot0, slot1)
 
 	--- BLOCK #4 15-19, warpins: 2 ---
 	slot2 = PlatformLoginService
-	slot2 = slot2.hasBridgeSignedInUser
+	slot2 = slot2.isNativeSignInSkipped
 	slot2 = slot2()
 	--- END OF BLOCK #4 ---
 
 	slot2 = if not slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 20-21, warpins: 1 ---
+	--- BLOCK #5 20-24, warpins: 1 ---
+	slot2 = PlatformLoginService
+	slot2 = slot2.hasBridgeSignedInUser
+	slot2 = slot2()
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-26, warpins: 1 ---
 	slot2 = false
 
 	return slot2
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #6 22-26, warpins: 2 ---
+	--- BLOCK #7 27-31, warpins: 3 ---
 	slot4 = slot0
 	slot2 = slot0.syncBridgeUserState
 	slot2, slot3 = slot2(slot4)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 27-32, warpins: 1 ---
+	--- BLOCK #8 32-37, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
 	slot6 = slot3
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #7 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 33-37, warpins: 1 ---
-	slot4 = PlatformLoginService
-	slot4 = slot4.state
-	slot4 = slot4.activeUserId
 	--- END OF BLOCK #8 ---
 
-	if slot4 == slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 38-39, warpins: 3 ---
+	--- BLOCK #9 38-42, warpins: 1 ---
+	slot4 = PlatformLoginService
+	slot4 = slot4.state
+	slot4 = slot4.activeUserId
+	--- END OF BLOCK #9 ---
+
+	if slot4 == slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 43-44, warpins: 3 ---
 	slot4 = false
 
 	return slot4
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #10 40-46, warpins: 2 ---
+	--- BLOCK #11 45-51, warpins: 2 ---
 	slot4 = PlatformLoginService
 	slot4 = slot4.resetUserBoundPlatformState
 
@@ -1865,30 +2308,30 @@ slot22 = function(slot0, slot1)
 
 	slot4 = PlatformLoginService
 	slot4 = slot4.activateSignedInUser
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #11 ---
 
 	slot6 = if not slot1 then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 47-47, warpins: 1 ---
+	--- BLOCK #12 52-52, warpins: 1 ---
 	slot6 = "platform_late_signed_in"
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #12 48-50, warpins: 2 ---
+	--- BLOCK #13 53-55, warpins: 2 ---
 	slot4(slot6)
 
 	slot4 = true
 
 	return slot4
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #13 ---
 
 
 
@@ -2286,7 +2729,7 @@ end
 slot21.onUserChanged = slot22
 
 slot22 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = logger
 	slot3 = slot1
 	slot1 = slot1.info
@@ -2294,6 +2737,10 @@ slot22 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	slot1 = PlatformLoginService
+	slot1 = slot1.state
+	slot2 = true
+	slot1.signedOut = slot2
 	slot3 = slot0
 	slot1 = slot0.onExternalLogoutSuccess
 	slot4 = true
@@ -2513,19 +2960,24 @@ slot21.signInWithUI = slot22
 
 slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.isSupported
-	slot3 = slot3(slot5)
+	slot3 = PlatformLoginService
+	slot3 = slot3.isNativeSignInSkipped
+	slot3 = slot3()
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 6-10, warpins: 1 ---
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.onSignInSuccess
+
+	slot3(slot5)
+
 	slot3 = type
 	slot5 = slot2
 	slot3 = slot3(slot5)
@@ -2538,12 +2990,11 @@ slot22 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 11-16, warpins: 1 ---
+	--- BLOCK #2 14-18, warpins: 1 ---
 	slot3 = slot2
-	slot5 = false
-	slot6 = PlatformLoginService
-	slot6 = slot6.NOT_SUPPORTED_RESULT
-	slot7 = "platform_not_supported"
+	slot5 = true
+	slot6 = 0
+	slot7 = "fpx_sdk_signed_in"
 
 	slot3(slot5, slot6, slot7)
 
@@ -2552,16 +3003,23 @@ slot22 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 17-18, warpins: 2 ---
-	slot3 = false
+	--- BLOCK #3 19-25, warpins: 2 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "isNativeSignInSkipped onSignInSuccess"
+
+	slot3(slot5, slot6)
+
+	slot3 = true
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #4 19-23, warpins: 1 ---
+	--- BLOCK #4 26-30, warpins: 1 ---
 	slot5 = slot0
-	slot3 = slot0.ensureRuntimeReady
+	slot3 = slot0.isSupported
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #4 ---
 
@@ -2572,7 +3030,7 @@ slot22 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 24-28, warpins: 1 ---
+	--- BLOCK #5 31-35, warpins: 1 ---
 	slot3 = type
 	slot5 = slot2
 	slot3 = slot3(slot5)
@@ -2585,12 +3043,12 @@ slot22 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 29-34, warpins: 1 ---
+	--- BLOCK #6 36-41, warpins: 1 ---
 	slot3 = slot2
 	slot5 = false
 	slot6 = PlatformLoginService
-	slot6 = slot6.RUNTIME_NOT_READY_RESULT
-	slot7 = "runtime_not_ready"
+	slot6 = slot6.NOT_SUPPORTED_RESULT
+	slot7 = "platform_not_supported"
 
 	slot3(slot5, slot6, slot7)
 
@@ -2599,27 +3057,74 @@ slot22 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 35-36, warpins: 2 ---
+	--- BLOCK #7 42-43, warpins: 2 ---
 	slot3 = false
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #8 37-41, warpins: 1 ---
-	slot3 = PlatformLoginService
-	slot3 = slot3.state
-	slot3 = slot3.signingIn
+	--- BLOCK #8 44-48, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.ensureRuntimeReady
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #8 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 42-48, warpins: 1 ---
+	--- BLOCK #9 49-53, warpins: 1 ---
+	slot3 = type
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #9 ---
+
+	if slot3 == "function" then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 54-59, warpins: 1 ---
+	slot3 = slot2
+	slot5 = false
+	slot6 = PlatformLoginService
+	slot6 = slot6.RUNTIME_NOT_READY_RESULT
+	slot7 = "runtime_not_ready"
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 60-61, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #12 62-66, warpins: 1 ---
+	slot3 = PlatformLoginService
+	slot3 = slot3.state
+	slot3 = slot3.signingIn
+	--- END OF BLOCK #12 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 67-73, warpins: 1 ---
 	slot3 = logger
 	slot5 = slot3
 	slot3 = slot3.warn
@@ -2628,42 +3133,42 @@ slot22 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	slot3 = false
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #10 49-56, warpins: 1 ---
+	--- BLOCK #14 74-81, warpins: 1 ---
 	slot3 = PlatformLoginService
 	slot3 = slot3.state
 	slot4 = true
 	slot3.signingIn = slot4
 	slot3 = PlatformBridgeLuaFacade
 	slot3 = slot3.SignIn
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #14 ---
 
 	if slot1 ~= true then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #11 57-58, warpins: 1 ---
+	--- BLOCK #15 82-83, warpins: 1 ---
 	slot5 = false
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #12 59-59, warpins: 1 ---
+	--- BLOCK #16 84-84, warpins: 1 ---
 	slot5 = true
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #13 60-65, warpins: 2 ---
+	--- BLOCK #17 85-90, warpins: 2 ---
 	slot6 = 0
 
 	slot7 = function(slot0, slot1, slot2)
@@ -2747,28 +3252,35 @@ slot22 = function(slot0, slot1, slot2)
 	slot3 = true
 
 	return slot3
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #14 66-66, warpins: 2 ---
+	--- BLOCK #18 91-91, warpins: 2 ---
 	return slot3
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #15 67-67, warpins: 2 ---
+	--- BLOCK #19 92-92, warpins: 2 ---
 	return slot3
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #16 68-68, warpins: 2 ---
+	--- BLOCK #20 93-93, warpins: 2 ---
 	return slot3
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 94-94, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #21 ---
 
 
 
@@ -2915,9 +3427,10 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 4-7, warpins: 2 ---
-		slot1 = ClientSwitch
-		slot1 = slot1.EnableSDKLogin
+		--- BLOCK #2 4-8, warpins: 2 ---
+		slot1 = SDKLoginConfig
+		slot1 = slot1.isEnabled
+		slot1 = slot1()
 		--- END OF BLOCK #2 ---
 
 		slot1 = if slot1 then
@@ -2927,7 +3440,7 @@ slot22 = function(slot0)
 		end
 
 
-		--- BLOCK #3 8-13, warpins: 1 ---
+		--- BLOCK #3 9-14, warpins: 1 ---
 		slot1 = logger
 		slot3 = slot1
 		slot1 = slot1.warn
@@ -2942,7 +3455,7 @@ slot22 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 14-24, warpins: 2 ---
+		--- BLOCK #4 15-25, warpins: 2 ---
 		slot1 = logger
 		slot3 = slot1
 		slot1 = slot1.info
@@ -3376,7 +3889,14 @@ end
 slot21.onSignInFailed = slot22
 
 slot22 = function(slot0)
-	--- BLOCK #0 1-44, warpins: 1 ---
+	--- BLOCK #0 1-49, warpins: 1 ---
+	slot1 = PlatformUGCService
+	slot3 = slot1
+	slot1 = slot1.cancelDeferredServerSync
+	slot4 = "platform_login_shutdown"
+
+	slot1(slot3, slot4)
+
 	slot1 = PlatformLoginService
 	slot1 = slot1.closeControllerReconnectConfirm
 
@@ -3448,7 +3968,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 45-49, warpins: 1 ---
+	--- BLOCK #1 50-54, warpins: 1 ---
 	slot1 = PlatformLoginService
 	slot1 = slot1.supportsUserChangedCallback
 	slot1 = slot1()
@@ -3461,7 +3981,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #2 50-52, warpins: 1 ---
+	--- BLOCK #2 55-57, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #2 ---
 
@@ -3472,7 +3992,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #3 53-56, warpins: 1 ---
+	--- BLOCK #3 58-61, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	slot1 = slot1.RegisterUserChangedCallback
 	--- END OF BLOCK #3 ---
@@ -3484,7 +4004,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #4 57-60, warpins: 1 ---
+	--- BLOCK #4 62-65, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	slot1 = slot1.RegisterUserChangedCallback
 	slot3 = nil
@@ -3496,7 +4016,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 61-65, warpins: 5 ---
+	--- BLOCK #5 66-70, warpins: 5 ---
 	slot1 = PlatformLoginService
 	slot1 = slot1.state
 	slot1 = slot1.deviceAssociationCallbackRegistered
@@ -3509,7 +4029,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #6 66-68, warpins: 1 ---
+	--- BLOCK #6 71-73, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #6 ---
 
@@ -3520,7 +4040,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #7 69-72, warpins: 1 ---
+	--- BLOCK #7 74-77, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	slot1 = slot1.RegisterControllerChangedCallback
 	--- END OF BLOCK #7 ---
@@ -3532,7 +4052,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #8 73-76, warpins: 1 ---
+	--- BLOCK #8 78-81, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	slot1 = slot1.RegisterControllerChangedCallback
 	slot3 = nil
@@ -3544,7 +4064,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 77-102, warpins: 4 ---
+	--- BLOCK #9 82-107, warpins: 4 ---
 	slot1 = PlatformLoginService
 	slot1 = slot1.state
 	slot2 = false
@@ -3580,7 +4100,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #10 103-106, warpins: 1 ---
+	--- BLOCK #10 108-111, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	slot1 = slot1.ResetUserState
 	--- END OF BLOCK #10 ---
@@ -3592,7 +4112,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #11 107-109, warpins: 1 ---
+	--- BLOCK #11 112-114, warpins: 1 ---
 	slot1 = PlatformBridgeLuaFacade
 	slot1 = slot1.ResetUserState
 
@@ -3603,7 +4123,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 110-110, warpins: 3 ---
+	--- BLOCK #12 115-115, warpins: 3 ---
 	return
 	--- END OF BLOCK #12 ---
 

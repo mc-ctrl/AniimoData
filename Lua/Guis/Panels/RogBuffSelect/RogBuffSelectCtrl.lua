@@ -524,8 +524,8 @@ slot13 = function(slot0, slot1)
 	}
 	slot3 = slot1.isShow
 	slot2.isShow = slot3
-	slot3 = slot1.curCount
-	slot2.curCount = slot3
+	slot3 = slot1.curCounts
+	slot2.curCounts = slot3
 
 	slot3 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UICtrl"
 slot0 = slot0(slot2)
@@ -435,6 +435,19 @@ slot8 = function(slot0)
 end
 
 slot6.onDestroy = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.checkUIShowVirtualMouseCursor = slot8
 
 return slot6
 --- END OF BLOCK #0 ---

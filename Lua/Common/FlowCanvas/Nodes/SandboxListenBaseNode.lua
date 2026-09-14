@@ -1,4 +1,4 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-40, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -38,7 +38,7 @@ end
 slot4.ctor = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-41, warpins: 1 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addFlowOutput
 	slot4 = "TimeOut"
@@ -58,14 +58,6 @@ slot5 = function(slot0)
 	slot4 = "DoOnce"
 	slot1 = slot1(slot3, slot4)
 	slot0.valueInput_DoOnce = slot1
-	slot1 = "sbEventName"
-	slot2 = slot0.nodeId
-	slot1 = slot1 .. slot2
-	slot0.sbEventNameKey = slot1
-	slot1 = "sbListener"
-	slot2 = slot0.nodeId
-	slot1 = slot1 .. slot2
-	slot0.sbListenerKey = slot1
 	slot3 = slot0
 	slot1 = slot0.addFlowInput
 	slot4 = "In"
@@ -120,7 +112,7 @@ slot5 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 42-52, warpins: 1 ---
+	--- BLOCK #1 34-44, warpins: 1 ---
 	slot6 = "valueOutput_"
 	slot7 = slot5
 	slot6 = slot6 .. slot7
@@ -202,7 +194,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 53-54, warpins: 2 ---
+	--- BLOCK #2 45-46, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -210,7 +202,7 @@ slot5 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 55-56, warpins: 1 ---
+	--- BLOCK #3 47-48, warpins: 1 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -343,42 +335,20 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-39, warpins: 2 ---
+	--- BLOCK #4 13-23, warpins: 2 ---
 	slot9 = slot0
 	slot7 = slot0.addTimer
 	slot10 = slot1
 
 	slot7(slot9, slot10)
 
-	slot9 = slot6
-	slot7 = slot6.addEventListener
-	slot10 = slot2
-	slot11 = slot3
-
-	slot7(slot9, slot10, slot11)
-
 	slot9 = slot1
-	slot7 = slot1.addContextEvent
-	slot10 = slot2
-	slot11 = slot3
-	slot12 = slot0.nodeId
-	slot13 = slot6
-
-	slot7(slot9, slot10, slot11, slot12, slot13)
-
-	slot9 = slot1
-	slot7 = slot1.setContextValue
-	slot10 = slot0.sbEventNameKey
+	slot7 = slot1.registerSandboxEventListener
+	slot10 = slot0.nodeId
 	slot11 = slot2
+	slot12 = slot3
 
-	slot7(slot9, slot10, slot11)
-
-	slot9 = slot1
-	slot7 = slot1.setContextValue
-	slot10 = slot0.sbListenerKey
-	slot11 = slot3
-
-	slot7(slot9, slot10, slot11)
+	slot7(slot9, slot10, slot11, slot12)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -390,67 +360,15 @@ end
 slot4.addSbEventListen = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot1
-	slot2 = slot1.getContextValue
-	slot5 = slot0.sbEventNameKey
-	slot2 = slot2(slot4, slot5)
-	slot5 = slot1
-	slot3 = slot1.getContextValue
-	slot6 = slot0.sbListenerKey
-	slot3 = slot3(slot5, slot6)
+	slot2 = slot1.unregisterSandboxEventListeners
+	slot5 = slot0.nodeId
 
+	slot2(slot4, slot5)
+
+	return
 	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-12, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 13-13, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 14-29, warpins: 2 ---
-	slot6 = slot1
-	slot4 = slot1.removeContextEvent
-	slot7 = slot2
-	slot8 = slot0.nodeId
-
-	slot4(slot6, slot7, slot8)
-
-	slot6 = slot1
-	slot4 = slot1.setContextValue
-	slot7 = slot0.sbEventNameKey
-	slot8 = nil
-
-	slot4(slot6, slot7, slot8)
-
-	slot6 = slot1
-	slot4 = slot1.setContextValue
-	slot7 = slot0.sbListenerKey
-	slot8 = nil
-
-	slot4(slot6, slot7, slot8)
-
-	return
-	--- END OF BLOCK #3 ---
 
 
 
@@ -614,6 +532,47 @@ slot5 = function(slot0, slot1)
 end
 
 slot4.On_Timeout = slot5
+
+slot5 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.removeTimer
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-13, warpins: 2 ---
+	slot2 = SandboxListenBaseNode
+	slot2 = slot2.super
+	slot2 = slot2.onContextDestroy
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot4.onContextDestroy = slot5
 
 return slot4
 --- END OF BLOCK #0 ---

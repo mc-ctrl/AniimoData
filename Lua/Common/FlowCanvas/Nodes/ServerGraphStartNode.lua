@@ -55,39 +55,7 @@ end
 slot4.registerPorts = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.INFO
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 8-16, warpins: 1 ---
-	slot2 = slot0.logger
-	slot4 = slot2
-	slot2 = slot2.info
-	slot5 = "onGraphStart"
-	slot6 = slot1.space
-	slot6 = slot6.id
-	slot7 = slot0.graph
-	slot7 = slot7.graphId
-
-	slot2(slot4, slot5, slot6, slot7)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 17-22, warpins: 2 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.flowOut_Out
 	slot4 = slot2
 	slot2 = slot2.call
@@ -96,7 +64,7 @@ slot5 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 

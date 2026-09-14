@@ -1,107 +1,110 @@
---- BLOCK #0 1-69, warpins: 1 ---
+--- BLOCK #0 1-72, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
-slot1 = slot0.getLogger
-slot3 = "HomeCmdImplement"
+slot1 = require
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
-slot2 = require
-slot4 = "Common.Const.Const"
+slot2 = slot1.getLogger
+slot4 = "HomeCmdImplement"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Utils.Utils"
+slot5 = "Common.Const.Const"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.HomeLandUtils"
+slot6 = "Common.Utils.Utils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.home_addon_data"
+slot7 = "Common.Utils.HomeLandUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.home_object_data"
+slot8 = "Data.home_addon_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.home_object_place_data"
+slot9 = "Data.home_object_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.homeland_config_data"
+slot10 = "Data.home_object_place_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.homeland_facility_data"
+slot11 = "Data.homeland_config_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.homeland_formula_data"
+slot12 = "Data.homeland_facility_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.homeland_operate_data"
+slot13 = "Data.homeland_formula_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.homeland_zone_unlock_config_data"
+slot14 = "Data.homeland_operate_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.item_data"
+slot15 = "Data.homeland_zone_unlock_config_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.order_library_data"
+slot16 = "Data.item_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.order_refresh_data"
+slot17 = "Data.order_library_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.order_shop_desc_data"
+slot18 = "Data.order_refresh_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.order_shop_type_data"
+slot19 = "Data.order_shop_desc_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.pet_data"
+slot20 = "Data.order_shop_type_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Common.Const.HomeOrderConst"
+slot21 = "Data.pet_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.OpDef"
+slot22 = "Common.Const.HomeOrderConst"
 slot20 = slot20(slot22)
-slot21 = {}
-slot22 = 0.01
-slot23 = -900000000
-slot24 = slot2.HOMELAND_EXTRA_STATES
+slot21 = require
+slot23 = "Common.OpDef"
+slot21 = slot21(slot23)
+slot22 = {}
+slot23 = 0.01
+slot24 = -900000000
+slot25 = slot3.HOMELAND_EXTRA_STATES
 --- END OF BLOCK #0 ---
 
-slot24 = if not slot24 then
+slot25 = if not slot25 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 70-70, warpins: 1 ---
-slot24 = {}
+--- BLOCK #1 73-73, warpins: 1 ---
+slot25 = {}
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 71-73, warpins: 2 ---
-slot25 = slot2.HOMELAND_FACILITY_OP_TYPE
+--- BLOCK #2 74-76, warpins: 2 ---
+slot26 = slot3.HOMELAND_FACILITY_OP_TYPE
 --- END OF BLOCK #2 ---
 
-slot25 = if not slot25 then
+slot26 = if not slot26 then
 JUMP TO BLOCK #3
 else
 JUMP TO BLOCK #4
 end
 
 
---- BLOCK #3 74-74, warpins: 1 ---
-slot25 = {}
+--- BLOCK #3 77-77, warpins: 1 ---
+slot26 = {}
 --- END OF BLOCK #3 ---
 
 FLOW; TARGET BLOCK #4
 
 
---- BLOCK #4 75-78, warpins: 2 ---
-slot26 = {
+--- BLOCK #4 78-81, warpins: 2 ---
+slot27 = {
 	[0] = "IDLE",
 	nil,
 	nil,
@@ -118,187 +121,187 @@ slot26 = {
 	[5000.0] = "ENV_UNSUITABLE",
 	[100301.0] = "MINING"
 }
-slot27 = slot25.NONE
+slot28 = slot26.NONE
 --- END OF BLOCK #4 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #5
 else
 JUMP TO BLOCK #6
 end
 
 
---- BLOCK #5 79-79, warpins: 1 ---
-slot27 = 0
+--- BLOCK #5 82-82, warpins: 1 ---
+slot28 = 0
 --- END OF BLOCK #5 ---
 
 FLOW; TARGET BLOCK #6
 
 
---- BLOCK #6 80-84, warpins: 2 ---
-slot28 = "IDLE"
-slot26[slot27] = slot28
-slot27 = slot25.MOVING
+--- BLOCK #6 83-87, warpins: 2 ---
+slot29 = "IDLE"
+slot27[slot28] = slot29
+slot28 = slot26.MOVING
 --- END OF BLOCK #6 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #7
 else
 JUMP TO BLOCK #8
 end
 
 
---- BLOCK #7 85-85, warpins: 1 ---
-slot27 = 1000
+--- BLOCK #7 88-88, warpins: 1 ---
+slot28 = 1000
 --- END OF BLOCK #7 ---
 
 FLOW; TARGET BLOCK #8
 
 
---- BLOCK #8 86-90, warpins: 2 ---
-slot28 = "MOVING"
-slot26[slot27] = slot28
-slot27 = slot25.TRANSPORT
+--- BLOCK #8 89-93, warpins: 2 ---
+slot29 = "MOVING"
+slot27[slot28] = slot29
+slot28 = slot26.TRANSPORT
 --- END OF BLOCK #8 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #9
 else
 JUMP TO BLOCK #10
 end
 
 
---- BLOCK #9 91-91, warpins: 1 ---
-slot27 = 1001
+--- BLOCK #9 94-94, warpins: 1 ---
+slot28 = 1001
 --- END OF BLOCK #9 ---
 
 FLOW; TARGET BLOCK #10
 
 
---- BLOCK #10 92-96, warpins: 2 ---
-slot28 = "TRANSPORT"
-slot26[slot27] = slot28
-slot27 = slot25.GOTO_TRANSPORT
+--- BLOCK #10 95-99, warpins: 2 ---
+slot29 = "TRANSPORT"
+slot27[slot28] = slot29
+slot28 = slot26.GOTO_TRANSPORT
 --- END OF BLOCK #10 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #11
 else
 JUMP TO BLOCK #12
 end
 
 
---- BLOCK #11 97-97, warpins: 1 ---
-slot27 = 1002
+--- BLOCK #11 100-100, warpins: 1 ---
+slot28 = 1002
 --- END OF BLOCK #11 ---
 
 FLOW; TARGET BLOCK #12
 
 
---- BLOCK #12 98-102, warpins: 2 ---
-slot28 = "GOTO_TRANSPORT"
-slot26[slot27] = slot28
-slot27 = slot25.TRANSPORT_TO_STORE
+--- BLOCK #12 101-105, warpins: 2 ---
+slot29 = "GOTO_TRANSPORT"
+slot27[slot28] = slot29
+slot28 = slot26.TRANSPORT_TO_STORE
 --- END OF BLOCK #12 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #13
 else
 JUMP TO BLOCK #14
 end
 
 
---- BLOCK #13 103-103, warpins: 1 ---
-slot27 = 1003
+--- BLOCK #13 106-106, warpins: 1 ---
+slot28 = 1003
 --- END OF BLOCK #13 ---
 
 FLOW; TARGET BLOCK #14
 
 
---- BLOCK #14 104-108, warpins: 2 ---
-slot28 = "TRANSPORT_TO_STORE"
-slot26[slot27] = slot28
-slot27 = slot25.WELLCOME
+--- BLOCK #14 107-111, warpins: 2 ---
+slot29 = "TRANSPORT_TO_STORE"
+slot27[slot28] = slot29
+slot28 = slot26.WELLCOME
 --- END OF BLOCK #14 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #15
 else
 JUMP TO BLOCK #16
 end
 
 
---- BLOCK #15 109-109, warpins: 1 ---
-slot27 = 1004
+--- BLOCK #15 112-112, warpins: 1 ---
+slot28 = 1004
 --- END OF BLOCK #15 ---
 
 FLOW; TARGET BLOCK #16
 
 
---- BLOCK #16 110-114, warpins: 2 ---
-slot28 = "WELLCOME"
-slot26[slot27] = slot28
-slot27 = slot25.CLEAN
+--- BLOCK #16 113-117, warpins: 2 ---
+slot29 = "WELLCOME"
+slot27[slot28] = slot29
+slot28 = slot26.CLEAN
 --- END OF BLOCK #16 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #17
 else
 JUMP TO BLOCK #18
 end
 
 
---- BLOCK #17 115-115, warpins: 1 ---
-slot27 = 5001
+--- BLOCK #17 118-118, warpins: 1 ---
+slot28 = 5001
 --- END OF BLOCK #17 ---
 
 FLOW; TARGET BLOCK #18
 
 
---- BLOCK #18 116-120, warpins: 2 ---
-slot28 = "CLEAN"
-slot26[slot27] = slot28
-slot27 = slot24.UNDER_CONSUME
+--- BLOCK #18 119-123, warpins: 2 ---
+slot29 = "CLEAN"
+slot27[slot28] = slot29
+slot28 = slot25.UNDER_CONSUME
 --- END OF BLOCK #18 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #19
 else
 JUMP TO BLOCK #20
 end
 
 
---- BLOCK #19 121-121, warpins: 1 ---
-slot27 = 2
+--- BLOCK #19 124-124, warpins: 1 ---
+slot28 = 2
 --- END OF BLOCK #19 ---
 
 FLOW; TARGET BLOCK #20
 
 
---- BLOCK #20 122-126, warpins: 2 ---
-slot28 = "UNDER_CONSUME"
-slot26[slot27] = slot28
-slot27 = slot24.OUTPUT_LIMIT
+--- BLOCK #20 125-129, warpins: 2 ---
+slot29 = "UNDER_CONSUME"
+slot27[slot28] = slot29
+slot28 = slot25.OUTPUT_LIMIT
 --- END OF BLOCK #20 ---
 
-slot27 = if not slot27 then
+slot28 = if not slot28 then
 JUMP TO BLOCK #21
 else
 JUMP TO BLOCK #22
 end
 
 
---- BLOCK #21 127-127, warpins: 1 ---
-slot27 = 3
+--- BLOCK #21 130-130, warpins: 1 ---
+slot28 = 3
 --- END OF BLOCK #21 ---
 
 FLOW; TARGET BLOCK #22
 
 
---- BLOCK #22 128-847, warpins: 2 ---
-slot28 = "OUTPUT_LIMIT"
-slot26[slot27] = slot28
-slot27 = {
+--- BLOCK #22 131-858, warpins: 2 ---
+slot29 = "OUTPUT_LIMIT"
+slot27[slot28] = slot29
+slot28 = {
 	[1006.0] = "鼓风",
 	[1008.0] = "发光",
 	[1001.0] = "播种",
@@ -313,19 +316,19 @@ slot27 = {
 	[1102.0] = "陪玩",
 	[1103.0] = "制香"
 }
-slot28 = {}
 slot29 = {}
-slot30 = {
+slot30 = {}
+slot31 = {
 	"itemName",
 	"itemDes",
 	"funcRep"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.item_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.item_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"name",
 	"BossShowName",
 	"EliteShowName",
@@ -334,518 +337,524 @@ slot30 = {
 	"weather1",
 	"clue"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.pet_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.pet_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"name",
 	"unlockDesc"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_object_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_object_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"name"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_addon_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_addon_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_type_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_sub_type_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_type_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_upgrade_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_trash_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_sub_type_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.home_order_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_config_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_upgrade_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_facility_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_trash_data = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.home_order_data = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_config_data = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_facility_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"workingName",
 	"workingNameWithoutEllipsis"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_operate_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_operate_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_formula_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_food_item = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_formula_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_material_config_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_material_shop_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_food_item = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_material_config_data = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_material_shop_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"name",
 	"showName",
 	"desc"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.homeland_zone_unlock_config_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.homeland_zone_unlock_config_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.order_library_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.order_shop_type_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.order_library_data = slot29
-slot29 = {}
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.order_refresh_data = slot30
 slot30 = {}
-slot29.localizeFields = slot30
+slot31 = {}
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.order_shop_desc_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.order_shop_type_data = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.order_refresh_data = slot29
-slot29 = {}
-slot30 = {}
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.order_shop_desc_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"displayName",
 	"desc"
 }
-slot29.localizeFields = slot30
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.trigger_data = slot30
 slot30 = {}
-slot29.hiddenFields = slot30
-slot28.trigger_data = slot29
-slot29 = {}
-slot30 = {
+slot31 = {
 	"displayName",
 	"desc"
 }
-slot29.localizeFields = slot30
-slot30 = {}
-slot29.hiddenFields = slot30
-slot28.custom_trigger_data = slot29
-slot21.CONFIG_TABLES = slot28
-slot28 = {}
-slot29 = {
+slot30.localizeFields = slot31
+slot31 = {}
+slot30.hiddenFields = slot31
+slot29.custom_trigger_data = slot30
+slot22.CONFIG_TABLES = slot29
+slot29 = {}
+slot30 = {
 	desc = "检测当前是否在家园场景 / 是否在自己家园（vs. 串门），并返回 spaceType / spaceId / 自家 homelandKey / 当前家园 owner",
 	category = "query"
 }
-slot28.isInHomeland = slot29
-slot29 = {
+slot29.isInHomeland = slot30
+slot30 = {
 	desc = "列出所有允许查询的配置表（白名单），含每张表预配的本地化字段",
 	category = "query"
 }
-slot28.getConfigTables = slot29
-slot29 = {
+slot29.getConfigTables = slot30
+slot30 = {
 	category = "query",
 	params = "{table, id, localizeFields?}",
 	desc = "查询白名单配置表的指定行，自动把 i18n 字段转成本地化文本"
 }
-slot28.getConfig = slot29
-slot29 = {
+slot29.getConfig = slot30
+slot30 = {
 	category = "query",
 	params = "{facilityId}",
 	desc = "查询指定家园设施 / 杂物的完整信息：位置 / 模板 / 配方 / 工作 / 环境 / 电力链 / isTrash"
 }
-slot28.getFacility = slot29
-slot29 = {
+slot29.getFacility = slot30
+slot30 = {
 	category = "query",
 	params = "{type?, containsTrash?:bool=false, trashOnly?:bool=false}",
 	desc = "列出当前家园里的所有设施 / 杂物，支持 containsTrash 返回全集、trashOnly 只看杂物，每条带 isTrash 标记"
 }
-slot28.getFacilities = slot29
-slot29 = {
+slot29.getFacilities = slot30
+slot30 = {
 	category = "query",
 	params = "{zoneId?:int}",
 	desc = "查询当前家园环境源 / 地块环境概况，数据源 pg.space.homeEnvMap"
 }
-slot28.getEnvironment = slot29
-slot29 = {
+slot29.getEnvironment = slot30
+slot30 = {
 	category = "query",
 	params = "{zoneId?:int}",
 	desc = "home.getEnvironment 的兼容别名；返回 base/final/currentSeason/currentWeather 等字段"
 }
-slot28.getZoneEnvironment = slot29
-slot29 = {
+slot29.getZoneEnvironment = slot30
+slot30 = {
 	category = "query",
 	params = "{homeTemplateId:int}",
 	desc = "按 homeTemplateId 查询设施模板提供的环境效果配置：光照 / 温度 / 电力 / 范围 / 激活宠物能力。纯配置查询，不做方案评估"
 }
-slot28.getFacilityEnvEffect = slot29
-slot29 = {
+slot29.getFacilityEnvEffect = slot30
+slot30 = {
+	category = "query",
+	params = "{homeTemplateId:int, position:{x,y,z}, yawAngle?:num=0, targetFacilityIds?:[int]}",
+	desc = "dry-run 预测：把某个环境源设施（日光灯 / 制冷机 / 热能炉 / 噼啪发电杆等）放在指定位置后，会覆盖家园里哪些 ornament。基于 envBounds + yaw 旋转的 AABB 判定，复用 HomelandEnvManager 同款算法。用来回答外部 AI 的『我要放在哪才能让目标设施拿到加成』"
+}
+slot29.previewEnvCoverage = slot30
+slot30 = {
 	category = "query",
 	params = "{x, z, threshold?:num=2.0, containsTrash?:bool=true}",
 	desc = "查询某个 (x,z) 位置附近的设施 / 杂物（XZ 距离阈值过滤，按距离排序）"
 }
-slot28.getFacilityAtPosition = slot29
-slot29 = {
+slot29.getFacilityAtPosition = slot30
+slot30 = {
 	category = "query",
 	params = "{homeTemplateId, position:{x,y,z}, yawAngle?:num=0, scale?:{x,y,z}, excludeFacilityId?}",
 	desc = "dry-run 检查指定位置能否放置某种设施；使用 placeFacility 同款客户端预检和 UI 同款碰撞检测"
 }
-slot28.checkPlacement = slot29
-slot29 = {
+slot29.checkPlacement = slot30
+slot30 = {
 	desc = "家园所有地块的解锁状态 / 解锁消耗 / 解锁条件 / 增加宠物上限 / 中心点（含本地化名称）",
 	category = "query"
 }
-slot28.getZoneUnlocks = slot29
-slot29 = {
+slot29.getZoneUnlocks = slot30
+slot30 = {
 	desc = "每个家园地块的几何范围（XZ 平面 center/min/max），含统一的 zoneSize；不要求在家园里",
 	category = "query"
 }
-slot28.getZoneBounds = slot29
-slot29 = {
+slot29.getZoneBounds = slot30
+slot30 = {
 	category = "query",
 	params = "{includeHomeland?:bool=false}",
 	desc = "玩家宠物背包列表（默认排除已上家园；includeHomeland=true 时包含并标记 isInHomeland；每只带 homeAbility / homeAbilityList）"
 }
-slot28.getBagPets = slot29
-slot29 = {
-	desc = "家园内宠物列表 + 当前 / 最大数量；数据源对齐 UI 的 petBoxMap[1]，每只带 homeAbility / homeAbilityList",
+slot29.getBagPets = slot30
+slot30 = {
+	desc = "家园内宠物列表 + 当前 / 最大数量；当前数据源为默认生产区，每只带 homeAbility / homeAbilityList",
 	category = "query"
 }
-slot28.getHomePets = slot29
-slot29 = {
+slot29.getHomePets = slot30
+slot30 = {
 	desc = "每日订单系统当前订单列表（含订单名 / 描述 / 所需物品 / 可提交状态 / 刷新信息）",
 	category = "query"
 }
-slot28.getDailyOrders = slot29
-slot29 = {
+slot29.getDailyOrders = slot30
+slot30 = {
 	desc = "家园仓库道具列表",
 	category = "query"
 }
-slot28.getWarehouse = slot29
-slot29 = {
+slot29.getWarehouse = slot30
+slot30 = {
 	category = "query",
 	params = "{itemIds?}",
 	desc = "玩家身上道具数量；建议传 itemIds 过滤"
 }
-slot28.getBagItems = slot29
-slot29 = {
+slot29.getBagItems = slot30
+slot30 = {
 	category = "query",
 	params = "{templateId, operId}",
 	desc = "判断指定模板的宠物能否做指定 operate 任务，requiredAbility 带可读 abilityName"
 }
-slot28.canPetDoOper = slot29
-slot29 = {
+slot29.canPetDoOper = slot30
+slot30 = {
 	category = "query",
 	params = "{formulaId}",
 	desc = "反查指定配方需要的宠物 homeAbility 和等级要求，返回 abilityName"
 }
-slot28.getRequiredAbility = slot29
-slot29 = {
+slot29.getRequiredAbility = slot30
+slot30 = {
 	desc = "玩家房车信息：等级 / 模型等级 / 各组件等级 / 当前营地",
 	category = "query"
 }
-slot28.getCar = slot29
-slot29 = {
+slot29.getCar = slot30
+slot30 = {
 	desc = "家园食物状态：食物槽 / 总食物量 / 速度 / 预计耗尽时间",
 	category = "query"
 }
-slot28.getFoodState = slot29
-slot29 = {
+slot29.getFoodState = slot30
+slot30 = {
 	category = "query",
 	params = "{facilityId}",
 	desc = "获取某个设施能够**主动设置**的配方列表(facilityData.formulaList,每条带 homeland_formula_data 行完整字段)。环境源副产配方(发电桩 / 灯 / 热能炉等)和电力模式配方不在这里,要查用 home.getFacilityEnvEffect。total=0 可能表示该设施没有可主动设置的配方"
 }
-slot28.getFacilityFormulas = slot29
-slot29 = {
+slot29.getFacilityFormulas = slot30
+slot30 = {
 	category = "query",
 	params = "{conditionId}",
 	desc = "检测某个 conditionId 是否完成（pg.me.triggerMap:isCompleteOrMeetCondition）"
 }
-slot28.checkCondition = slot29
-slot29 = {
+slot29.checkCondition = slot30
+slot30 = {
 	desc = "获取家园支持的查询 / 操作指令清单（即本 cmd）",
 	category = "query"
 }
-slot28.getCmdList = slot29
-slot29 = {
+slot29.getCmdList = slot30
+slot30 = {
 	desc = "查询家园基础信息：相关货币 / 凭证道具 id 列表（来自 homeland_config_data）",
 	category = "query"
 }
-slot28.getCurrencies = slot29
-slot29 = {
+slot29.getCurrencies = slot30
+slot30 = {
 	category = "query",
 	params = "{homeTemplateId}",
 	desc = "查询某种 homeTemplateId 设施的当前已放置数量与上限（home_object_data.maxNum）"
 }
-slot28.getFacilityMaxCount = slot29
-slot29 = {
+slot29.getFacilityMaxCount = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId, formulaId}",
 	desc = "设置设施配方"
 }
-slot28.setFormula = slot29
-slot29 = {
+slot29.setFormula = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId, formulaId}",
 	desc = "取消设施当前配方"
 }
-slot28.removeFormula = slot29
-slot29 = {
+slot29.removeFormula = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId, paused:bool}",
 	desc = "暂停 / 取消暂停某个设施的工作（底层是 setProduceDisable）"
 }
-slot28.setFacilityPause = slot29
-slot29 = {
+slot29.setFacilityPause = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId, enable:bool}",
 	desc = "启用 / 禁用设施的电力模式（pg.me.space:setProduceElectricMode）"
 }
-slot28.setFacilityElectricMode = slot29
-slot29 = {
+slot29.setFacilityElectricMode = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{homeTemplateId, position:{x,y,z}, yawAngle?:num=0, scale?:{x,y,z}={1,1,1}}",
 	desc = "在家园摆放一件家具 / 设施（addOrnament，自带数量与位置基础校验）"
 }
-slot28.placeFacility = slot29
-slot29 = {
+slot29.placeFacility = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId, position:{x,y,z}, yawAngle?:num, scale?:{x,y,z}}",
 	desc = "移动家园里已存在的设施 / 家具到新位置（updateOrnament，自带位置校验，自身从碰撞中排除）"
 }
-slot28.moveFacility = slot29
-slot29 = {
+slot29.moveFacility = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId}",
 	desc = "回收家园里的设施 / 家具（removeOrnament）"
 }
-slot28.recycleFacility = slot29
-slot29 = {
+slot29.recycleFacility = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petId}",
 	desc = "把宠物从玩家宠物背包放入家园（addHomelandPetBatch），派发前预检出战 / 探索 / 已在家园状态"
 }
-slot28.placePet = slot29
-slot29 = {
+slot29.placePet = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{count?:int, petIds?:string[]}",
 	desc = "批量把可用宠物放入家园；跳过出战、探索、已在家园宠物，并按家园宠物容量截断"
 }
-slot28.placeHomePets = slot29
-slot29 = {
+slot29.placeHomePets = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petId}",
 	desc = "把宠物从家园收回到玩家宠物背包（removeHomelandPetBatch）"
 }
-slot28.recallPet = slot29
-slot29 = {
+slot29.recallPet = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petIds?:string[]}",
 	desc = "批量把家园内宠物收回玩家背包（removeHomelandPetBatch）"
 }
-slot28.recallAllPets = slot29
-slot29 = {
+slot29.recallAllPets = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petId, facilityId, force?:bool=false}",
 	desc = "分配宠物到设施工作（派发 MOVING，让宠物先移动过去）"
 }
-slot28.assignPetWork = slot29
-slot29 = {
+slot29.assignPetWork = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petId, facilityId}",
 	desc = "分配宠物到设施搬运（派发 GOTO_TRANSPORT）"
 }
-slot28.assignPetTransport = slot29
-slot29 = {
+slot29.assignPetTransport = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petId}",
 	desc = "解除宠物当前设施上的工作；通常会触发服务端再分配"
 }
-slot28.unassignPetWork = slot29
-slot29 = {
+slot29.unassignPetWork = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId}",
 	desc = "自动召唤一只合适的宠物到设施工作（按 workload 挑选，派发 MOVING）"
 }
-slot28.callPetWork = slot29
-slot29 = {
+slot29.callPetWork = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{serverIndex?|orderId?|orderName?}",
 	desc = "提交一个每日订单；支持 serverIndex / orderId / orderName 定位"
 }
-slot28.submitDailyOrder = slot29
-slot29 = {
+slot29.submitDailyOrder = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{serverIndex?|orderId?|orderName?}",
 	desc = "免费刷新一个每日订单；支持 serverIndex / orderId / orderName 定位"
 }
-slot28.refreshDailyOrder = slot29
-slot29 = {
+slot29.refreshDailyOrder = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{serverIndex?|orderId?|orderName?}",
 	desc = "付费刷新一个每日订单；支持 serverIndex / orderId / orderName 定位"
 }
-slot28.payRefreshDailyOrder = slot29
-slot29 = {
+slot29.payRefreshDailyOrder = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityId, upgradeHomeTemplateId?}",
 	desc = "升级指定家园设施；仅允许不消耗家园币的材料升级，消耗家园币时返回阻塞"
 }
-slot28.upgradeFacility = slot29
-slot29 = {
+slot29.upgradeFacility = slot30
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{petId}",
 	desc = "消除宠物的异常状态（占位，未实现 —— 当前返回 not_implemented）"
 }
-slot28.curePetAbnormal = slot29
-slot21.CMD_META = slot28
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.curePetAbnormal = slot30
+slot22.CMD_META = slot29
+slot29 = slot22.CMD_META
+slot30 = {
 	category = "query",
 	params = "{includeOrders?:bool=true, includeFood?:bool=true}",
 	desc = "一次性获取常用的家园运行时聚合快照：设施、宠物、仓库、订单、食物。减少外部 AI 反复搜表的往返开销。"
 }
-slot28.getRuntimeSnapshot = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.getRuntimeSnapshot = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	category = "query",
 	params = "{sinceSeq?:int=0}",
 	desc = "拉取最近 N 条家园 ornament RPC 真实回执(addOrnament / addOrnaments / removeOrnament / removeOrnaments / updateOrnament)。修复 placeFacility / placeOrnamentBatch / recycleFacility 等异步操作的『假成功』问题:服务端 RPC 回包(成功 / ERROR_ORNAMENT_COUNT_MAX 等)以前只弹气泡,现在通过这个 cmd 暴露给外部 AI。派发响应里带 callbackSinceSeq;1~2s 后用该 sinceSeq 调本 cmd 拿到 seq 大于它的新结果。"
 }
-slot28.getLastOrnamentResult = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.getLastOrnamentResult = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	category = "query",
 	params = "{zoneId:int, homeTemplateId:int}",
 	desc = "在指定地块内搜索一个不与现有 ornament 碰撞的放置点。先尝试地块中心，再按碰撞阈值螺旋扩展。"
 }
-slot28.findPlacementPoint = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.findPlacementPoint = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	category = "query",
 	params = "{entType?:int, subEntType?:int, ownedOnly?:bool=false}",
 	desc = "过滤 home_object_data 查家具 / 装饰 / 积木道具。按 entType / subEntType 过滤；ownedOnly=true 时叠加玩家背包持有数。"
 }
-slot28.queryDecorItems = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.queryDecorItems = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	category = "query",
 	params = "{name:string, type?:\"item\"|\"facility\"|\"pet\"|\"any\", limit?:int=8}",
 	desc = "按中文名反查 item/facility/pet 的 id。item 会用 home_object_place_data 中文名兜底；纯配置查询,不带规划/打分。"
 }
-slot28.resolveName = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.resolveName = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	category = "query",
 	params = "{itemId:int}",
 	desc = "按产出物 itemId 反查所有产出该物品的配方,并附上支持这些配方的设施模板。纯配置查询。"
 }
-slot28.findFormulasByOutput = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.findFormulasByOutput = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{compId?:int}",
 	desc = "升级家园房车。不传 compId 升级整车；传 compId 升级指定组件。底层走 pg.me:requestHomeCampOp。"
 }
-slot28.upgradeCar = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.upgradeCar = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{items:[{homeTemplateId:int,position:{x,y,z},yawAngle?:num=0,scale?:{x,y,z}}]}",
 	desc = "批量放置家具 / 设施。每件单独走 placeFacility 同款预检（模板、数量上限、背包拥有量、地块、碰撞）；任意一件失败则整批拒绝。"
 }
-slot28.placeOrnamentBatch = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.placeOrnamentBatch = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{items:[{facilityId:int,position:{x,y,z},yawAngle?:num,scale?:{x,y,z}}]}",
 	desc = "批量移动现有家具。每件单独走 moveFacility 同款预检；任意一件失败则整批拒绝。"
 }
-slot28.moveOrnamentBatch = slot29
-slot28 = slot21.CMD_META
-slot29 = {
+slot29.moveOrnamentBatch = slot30
+slot29 = slot22.CMD_META
+slot30 = {
 	async = true,
 	category = "action",
 	params = "{facilityIds:int[]}",
 	desc = "批量回收家具。每件单独走 checkHomelandRemoveOrnament 预检；任意一件失败则整批拒绝。**不可逆**，外部 AI 调用前应让玩家明确授权。"
 }
-slot28.recycleOrnamentBatch = slot29
+slot29.recycleOrnamentBatch = slot30
 
-slot28 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = {
 		ok = false
@@ -862,9 +871,9 @@ slot28 = function(slot0, slot1)
 
 end
 
-slot21._err = slot28
+slot22._err = slot29
 
-slot28 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {
 		ok = true
@@ -895,13 +904,13 @@ slot28 = function(slot0)
 
 end
 
-slot21._ok = slot28
+slot22._ok = slot29
 
-slot28 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {
-		async = true,
-		dispatched = true
+		dispatched = true,
+		async = true
 	}
 	--- END OF BLOCK #0 ---
 
@@ -949,9 +958,9 @@ slot28 = function(slot0)
 
 end
 
-slot21._asyncOk = slot28
+slot22._asyncOk = slot29
 
-slot28 = function()
+slot29 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -1047,9 +1056,9 @@ slot28 = function()
 
 end
 
-slot21._requireHomeland = slot28
+slot22._requireHomeland = slot29
 
-slot28 = function()
+slot29 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1147,9 +1156,9 @@ slot28 = function()
 
 end
 
-slot21._isAddOrnamentLocked = slot28
-slot28 = 16
-slot29 = {
+slot22._isAddOrnamentLocked = slot29
+slot29 = 16
+slot30 = {
 	[0] = "SUCCESS",
 	"ERROR_CHECK_FAIL",
 	"ERROR_NOT_HOME",
@@ -1170,7 +1179,7 @@ slot29 = {
 	"ERROR_HOMECAR_ORNAMENT_COUNT_MAX"
 }
 
-slot30 = function()
+slot31 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = rawget
 	slot2 = HomeCmdImplement
@@ -1187,9 +1196,9 @@ slot30 = function()
 
 	--- BLOCK #1 7-15, warpins: 1 ---
 	slot1 = {
-		seq = 0,
 		head = 0,
-		size = 0
+		size = 0,
+		seq = 0
 	}
 	slot2 = {}
 	slot1.items = slot2
@@ -1214,9 +1223,9 @@ slot30 = function()
 
 end
 
-slot21._getOrnamentResultRing = slot30
+slot22._getOrnamentResultRing = slot31
 
-slot30 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot4 = HomeCmdImplement
 	slot4 = slot4._getOrnamentResultRing
@@ -1321,9 +1330,9 @@ slot30 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21._pushOrnamentResult = slot30
+slot22._pushOrnamentResult = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = HomeCmdImplement
 	slot1 = slot1._getOrnamentResultRing
@@ -1433,43 +1442,80 @@ slot30 = function(slot0)
 
 end
 
-slot21._collectOrnamentResults = slot30
+slot22._collectOrnamentResults = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = type
-	slot5 = slot0
-	slot3 = slot3(slot5)
+	slot1 = type
+	slot3 = slot0
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= "table" then
+	if slot1 ~= "table" then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot3 = type
-	slot5 = slot0
-	slot3 = slot3(slot5)
+	--- BLOCK #1 6-7, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	if slot3 ~= "userdata" then
+	if slot1 ~= "userdata" then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 1 ---
-	slot3 = false
+	--- BLOCK #2 8-9, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 13-21, warpins: 2 ---
+	--- BLOCK #3 10-10, warpins: 2 ---
+	slot2 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot22._isTableLike = slot31
+
+slot31 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = HomeCmdImplement
+	slot3 = slot3._isTableLike
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #2 9-17, warpins: 1 ---
 	slot3 = "_cmdSocketPatched_"
 	slot4 = slot1
 	slot3 = slot3 .. slot4
@@ -1477,44 +1523,44 @@ slot30 = function(slot0, slot1, slot2)
 	slot6 = slot0
 	slot7 = slot3
 	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #4 22-23, warpins: 1 ---
+	--- BLOCK #3 18-19, warpins: 1 ---
 	slot4 = true
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 24-29, warpins: 1 ---
+	--- BLOCK #4 20-25, warpins: 1 ---
 	slot4 = slot0[slot1]
 	slot5 = type
 	slot7 = slot4
 	slot5 = slot5(slot7)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
 	if slot5 ~= "function" then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 30-31, warpins: 1 ---
+	--- BLOCK #5 26-27, warpins: 1 ---
 	slot5 = false
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #7 32-44, warpins: 1 ---
+	--- BLOCK #6 28-40, warpins: 1 ---
 	slot5 = rawset
 	slot7 = slot0
 	slot8 = slot1
@@ -1530,7 +1576,7 @@ slot30 = function(slot0, slot1, slot2)
 			slot2 = op
 			slot3 = code
 			slot4 = ornamentId
-			slot5 = itemNo
+			slot5 = homeId
 
 			slot0(slot2, slot3, slot4, slot5)
 
@@ -1594,36 +1640,36 @@ slot30 = function(slot0, slot1, slot2)
 	slot5 = true
 
 	return slot5
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 41-41, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 45-45, warpins: 2 ---
-	return slot3
+	--- BLOCK #8 42-42, warpins: 2 ---
+	return slot4
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 46-46, warpins: 2 ---
-	return slot4
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 47-47, warpins: 2 ---
+	--- BLOCK #9 43-43, warpins: 2 ---
 	return slot5
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot21._patchOrnamentCallback = slot30
+slot22._patchOrnamentCallback = slot31
 
-slot30 = function()
+slot31 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -1734,9 +1780,9 @@ slot30 = function()
 
 end
 
-slot21._ensureOrnamentCallbackHooks = slot30
+slot22._ensureOrnamentCallbackHooks = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1822,9 +1868,9 @@ slot30 = function(slot0)
 
 end
 
-slot21._vec3 = slot30
+slot22._vec3 = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1943,207 +1989,92 @@ slot30 = function(slot0)
 
 end
 
-slot21._localize = slot30
+slot22._localize = slot31
 
-slot30 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 3-7, warpins: 1 ---
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #0 ---
 
 	if slot2 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = #slot1
+
+	--- END OF BLOCK #1 ---
+
+	if slot2 == 0 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-10, warpins: 1 ---
-	slot2 = #slot1
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return slot0
 
 	--- END OF BLOCK #2 ---
 
-	if slot2 == 0 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-11, warpins: 3 ---
-	return slot0
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 12-16, warpins: 2 ---
+	--- BLOCK #3 10-14, warpins: 2 ---
 	slot2 = {}
 	slot3 = pairs
 	slot5 = slot0
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 17-17, warpins: 1 ---
-	slot2[slot6] = slot7
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 18-19, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 20-23, warpins: 1 ---
-	slot3 = ipairs
-	slot5 = slot1
-	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #8 24-26, warpins: 1 ---
-	slot8 = slot2[slot7]
-	--- END OF BLOCK #8 ---
-
-	if slot8 ~= nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 27-31, warpins: 1 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._localize
-	slot10 = slot2[slot7]
-	slot8 = slot8(slot10)
-	slot2[slot7] = slot8
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 32-33, warpins: 3 ---
-	--- END OF BLOCK #10 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #11
-
-
-	--- BLOCK #11 34-34, warpins: 1 ---
-	return slot2
-	--- END OF BLOCK #11 ---
-
-
-
-end
-
-slot21._applyLocalize = slot30
-
-slot30 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot2 = type
-	slot4 = slot1
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
-
-	if slot2 == "table" then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-10, warpins: 1 ---
-	slot2 = #slot1
-
-	--- END OF BLOCK #2 ---
-
-	if slot2 == 0 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 11-11, warpins: 3 ---
-	return slot0
-
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 12-16, warpins: 2 ---
-	slot2 = {}
-	slot3 = pairs
-	slot5 = slot0
-	slot3, slot4, slot5 = slot3(slot5)
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot2[slot6] = slot7
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-17, warpins: 1 ---
-	slot2[slot6] = slot7
+	--- BLOCK #5 16-17, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 18-19, warpins: 2 ---
-	--- END OF BLOCK #6 ---
-
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #7
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #7 20-23, warpins: 1 ---
+	--- BLOCK #6 18-21, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot1
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 24-25, warpins: 1 ---
-	slot8 = nil
+	--- BLOCK #7 22-24, warpins: 1 ---
+	slot8 = slot2[slot7]
+	--- END OF BLOCK #7 ---
+
+	if slot8 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 25-29, warpins: 1 ---
+	slot8 = HomeCmdImplement
+	slot8 = slot8._localize
+	slot10 = slot2[slot7]
+	slot8 = slot8(slot10)
 	slot2[slot7] = slot8
 
 	--- END OF BLOCK #8 ---
@@ -2151,15 +2082,15 @@ slot30 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 26-27, warpins: 2 ---
+	--- BLOCK #9 30-31, warpins: 3 ---
 	--- END OF BLOCK #9 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #8
+	LOOP BLOCK #7
 	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #10 28-28, warpins: 1 ---
+	--- BLOCK #10 32-32, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #10 ---
 
@@ -2167,106 +2098,191 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot21._applyHiddenFields = slot30
+slot22._applyLocalize = slot31
 
-slot30 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = {}
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	if slot2 == "table" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot3 = type
-	slot5 = slot1
-	slot3 = slot3(slot5)
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = #slot1
+
 	--- END OF BLOCK #1 ---
 
-	if slot3 == "table" then
+	if slot2 == 0 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 9-12, warpins: 1 ---
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return slot0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-14, warpins: 2 ---
+	slot2 = {}
+	slot3 = pairs
+	slot5 = slot0
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot2[slot6] = slot7
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-17, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 18-21, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot1
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 13-14, warpins: 1 ---
-	slot8 = true
-	slot2[slot7] = slot8
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 15-16, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 17-21, warpins: 3 ---
-	slot3 = {}
-	slot4 = pairs
-	slot6 = slot0
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 22-24, warpins: 1 ---
-	slot9 = slot2[slot7]
-	--- END OF BLOCK #6 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 25-25, warpins: 1 ---
-	slot3[slot7] = slot8
+	--- BLOCK #7 22-23, warpins: 1 ---
+	slot8 = nil
+	slot2[slot7] = slot8
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 26-27, warpins: 3 ---
+	--- BLOCK #8 24-25, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #6
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #7
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 28-28, warpins: 1 ---
-	return slot3
+	--- BLOCK #9 26-26, warpins: 1 ---
+	return slot2
 	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot21._applyWhiteList = slot30
+slot22._applyHiddenFields = slot31
 
-slot30 = function(slot0, ...)
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = {}
+	slot3 = type
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot3 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot3 = ipairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-12, warpins: 1 ---
+	slot8 = true
+	slot2[slot7] = slot8
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-14, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 15-19, warpins: 2 ---
+	slot3 = {}
+	slot4 = pairs
+	slot6 = slot0
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot9 = slot2[slot7]
+	--- END OF BLOCK #5 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-23, warpins: 1 ---
+	slot3[slot7] = slot8
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-25, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 26-26, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot22._applyWhiteList = slot31
+
+slot31 = function(slot0, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pcall
 	slot3 = slot0
@@ -2303,9 +2319,9 @@ slot30 = function(slot0, ...)
 
 end
 
-slot21._safeCall = slot30
+slot22._safeCall = slot31
 
-slot30 = function()
+slot31 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -2393,9 +2409,9 @@ slot30 = function()
 
 end
 
-slot21._getRuntimeSpace = slot30
+slot22._getRuntimeSpace = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = HomeCmdImplement
 	slot2 = slot2._getRuntimeSpace
@@ -2527,9 +2543,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot21._getRuntimeMapValue = slot30
+slot22._getRuntimeMapValue = slot31
 
-slot30 = function()
+slot31 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -2655,9 +2671,9 @@ slot30 = function()
 
 end
 
-slot21._getHomeOrderRawList = slot30
+slot22._getHomeOrderRawList = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -2864,9 +2880,9 @@ slot30 = function(slot0)
 
 end
 
-slot21._getHomeOrderNeedItemData = slot30
+slot22._getHomeOrderNeedItemData = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -2947,9 +2963,10 @@ slot30 = function(slot0)
 
 end
 
-slot21._getHomeOrderRewardData = slot30
+slot22._getHomeOrderRewardData = slot31
+slot31 = "_getHomeOrderItemCount"
 
-slot30 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3087,9 +3104,10 @@ slot30 = function(slot0)
 
 end
 
-slot21._getHomeOrderItemCount = slot30
+slot22[slot31] = slot32
+slot31 = "_getHomeOrderRefreshLevelCfg"
 
-slot30 = function()
+slot32 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -3167,10 +3185,10 @@ slot30 = function()
 
 end
 
-slot21._getHomeOrderRefreshLevelCfg = slot30
-slot30 = "_getHomeOrderPayRefreshCost"
+slot22[slot31] = slot32
+slot31 = "_getHomeOrderPayRefreshCost"
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = HomelandConfigData
 	slot0 = slot0.homeOrderRefreshCost
@@ -3325,10 +3343,10 @@ slot31 = function()
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_normalizeCmdText"
+slot22[slot31] = slot32
+slot31 = "_normalizeCmdText"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3363,10 +3381,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_matchCmdText"
+slot22[slot31] = slot32
+slot31 = "_matchCmdText"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = HomeCmdImplement
 	slot2 = slot2._normalizeCmdText
@@ -3455,10 +3473,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_serializeDailyOrder"
+slot22[slot31] = slot32
+slot31 = "_serializeDailyOrder"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4064,7 +4082,7 @@ slot31 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #59
 
 
-	--- BLOCK #59 189-203, warpins: 2 ---
+	--- BLOCK #59 189-207, warpins: 2 ---
 	slot13.shopType = slot14
 	slot13.title = slot6
 	slot13.orderName = slot6
@@ -4078,7 +4096,11 @@ slot31 = function(slot0, slot1)
 	slot13.rewardData = slot14
 	slot13.canSubmit = slot12
 	slot13.missingItems = slot11
-	slot13.template = slot3
+	slot14 = HomeCmdImplement
+	slot14 = slot14._cloneForCmd
+	slot16 = slot3
+	slot14 = slot14(slot16)
+	slot13.template = slot14
 
 	return slot13
 	--- END OF BLOCK #59 ---
@@ -4087,10 +4109,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectDailyOrders"
+slot22[slot31] = slot32
+slot31 = "_collectDailyOrders"
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = HomeCmdImplement
 	slot0 = slot0._getHomeOrderRawList
@@ -4247,10 +4269,10 @@ slot31 = function()
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_resolveDailyOrder"
+slot22[slot31] = slot32
+slot31 = "_resolveDailyOrder"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HomeCmdImplement
 	slot1 = slot1._collectDailyOrders
@@ -4743,10 +4765,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_serializeFacility"
+slot22[slot31] = slot32
+slot31 = "_serializeFacility"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = HomeCmdImplement
 	slot1 = slot1._getRuntimeMapValue
@@ -5543,14 +5565,14 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_serializePet"
+slot22[slot31] = slot32
+slot31 = "_serializePet"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot0 = if not slot0 then
+	if slot0 == nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -5567,19 +5589,22 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 2 ---
+	--- BLOCK #2 5-11, warpins: 2 ---
 	slot1 = slot0.templateId
 	slot2 = slot0.homeAbility
+	slot3 = type
+	slot5 = slot2
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	if slot2 == nil then
+	if slot3 ~= "table" then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 9-10, warpins: 1 ---
+	--- BLOCK #3 12-13, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot1 ~= nil then
@@ -5589,7 +5614,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #4 11-14, warpins: 1 ---
+	--- BLOCK #4 14-17, warpins: 1 ---
 	slot3 = PetData
 	slot3 = slot3[slot1]
 	--- END OF BLOCK #4 ---
@@ -5601,7 +5626,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #5 15-17, warpins: 1 ---
+	--- BLOCK #5 18-20, warpins: 1 ---
 	slot4 = slot3.homeAbility
 	--- END OF BLOCK #5 ---
 
@@ -5612,14 +5637,14 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #6 18-18, warpins: 2 ---
+	--- BLOCK #6 21-21, warpins: 2 ---
 	slot2 = nil
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 19-43, warpins: 4 ---
+	--- BLOCK #7 22-46, warpins: 4 ---
 	slot3 = {}
 	slot4 = slot0.id
 	slot3.id = slot4
@@ -5652,10 +5677,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getHomeSpace"
+slot22[slot31] = slot32
+slot31 = "_getHomeSpace"
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = HomeCmdImplement
 	slot0 = slot0._getRuntimeSpace
@@ -5667,10 +5692,10 @@ slot31 = function()
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getHomePetBox"
+slot22[slot31] = slot32
+slot31 = "_getHomePetBox"
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -5722,9 +5747,12 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #5 14-17, warpins: 1 ---
+	--- BLOCK #5 14-20, warpins: 1 ---
 	slot1 = slot0.petBoxMap
-	slot1 = slot1[1]
+	slot2 = Const
+	slot2 = slot2.HOMELAND_AREA_TYPE
+	slot2 = slot2.PRODUCE
+	slot1 = slot1[slot2]
 	--- END OF BLOCK #5 ---
 
 	slot1 = if not slot1 then
@@ -5734,7 +5762,7 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #6 18-18, warpins: 3 ---
+	--- BLOCK #6 21-21, warpins: 3 ---
 	slot1 = nil
 
 	--- END OF BLOCK #6 ---
@@ -5742,7 +5770,7 @@ slot31 = function()
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 19-20, warpins: 2 ---
+	--- BLOCK #7 22-23, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	slot1 = if slot1 then
@@ -5752,7 +5780,7 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #8 21-21, warpins: 1 ---
+	--- BLOCK #8 24-24, warpins: 1 ---
 	return slot1
 
 	--- END OF BLOCK #8 ---
@@ -5760,7 +5788,7 @@ slot31 = function()
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 22-24, warpins: 2 ---
+	--- BLOCK #9 25-27, warpins: 2 ---
 	slot2 = pg
 	--- END OF BLOCK #9 ---
 
@@ -5771,7 +5799,7 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #10 25-28, warpins: 1 ---
+	--- BLOCK #10 28-31, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	--- END OF BLOCK #10 ---
@@ -5783,7 +5811,7 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #11 29-33, warpins: 1 ---
+	--- BLOCK #11 32-36, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.space
@@ -5796,14 +5824,14 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #12 34-34, warpins: 3 ---
+	--- BLOCK #12 37-37, warpins: 3 ---
 	slot2 = nil
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 35-36, warpins: 2 ---
+	--- BLOCK #13 38-39, warpins: 2 ---
 	--- END OF BLOCK #13 ---
 
 	slot2 = if slot2 then
@@ -5813,7 +5841,7 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #14 37-39, warpins: 1 ---
+	--- BLOCK #14 40-42, warpins: 1 ---
 	slot3 = slot2.petBoxMap
 	--- END OF BLOCK #14 ---
 
@@ -5824,9 +5852,12 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #15 40-43, warpins: 1 ---
+	--- BLOCK #15 43-49, warpins: 1 ---
 	slot3 = slot2.petBoxMap
-	slot3 = slot3[1]
+	slot4 = Const
+	slot4 = slot4.HOMELAND_AREA_TYPE
+	slot4 = slot4.PRODUCE
+	slot3 = slot3[slot4]
 	--- END OF BLOCK #15 ---
 
 	slot3 = if not slot3 then
@@ -5836,7 +5867,7 @@ slot31 = function()
 	end
 
 
-	--- BLOCK #16 44-44, warpins: 3 ---
+	--- BLOCK #16 50-50, warpins: 3 ---
 	slot3 = nil
 
 	--- END OF BLOCK #16 ---
@@ -5844,7 +5875,7 @@ slot31 = function()
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 45-45, warpins: 2 ---
+	--- BLOCK #17 51-51, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #17 ---
 
@@ -5852,10 +5883,10 @@ slot31 = function()
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectHomePetIds"
+slot22[slot31] = slot32
+slot31 = "_collectHomePetIds"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = nil
 	slot2 = type
@@ -6026,73 +6057,76 @@ slot31 = function(slot0)
 	end
 
 	slot5 = HomeCmdImplement
-	slot5 = slot5._getHomePetBox
+	slot5 = slot5._getHomeSpace
 	slot5 = slot5()
 	--- END OF BLOCK #5 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot5 then
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 29-29, warpins: 1 ---
+	slot6 = slot5.petBoxMap
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-31, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #6 29-33, warpins: 1 ---
-	slot6 = tonumber
-	slot8 = slot5.slotCount
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #6 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 34-34, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 35-38, warpins: 2 ---
-	slot7 = 1
-	slot8 = slot6
-	slot9 = 1
+	--- BLOCK #8 32-38, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.getSlotCount
+	slot7 = slot7(slot9)
+	slot8 = 1
+	slot9 = slot7
+	slot10 = 1
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 39-42, warpins: 2 ---
-	slot11 = slot4
-	slot13 = slot5[slot10]
+	--- BLOCK #9 39-48, warpins: 2 ---
+	slot12 = slot4
+	slot16 = slot6
+	slot14 = slot6.getPetId
+	slot17 = Const
+	slot17 = slot17.HOMELAND_AREA_TYPE
+	slot17 = slot17.PRODUCE
+	slot18 = slot11
+	MULTRES = slot14(slot16, slot17, slot18)
 
-	slot11(slot13)
+	slot12(MULTRES)
 
 	--- END OF BLOCK #9 ---
 
-	for slot10=slot7, slot8, slot9
+	for slot11=slot8, slot9, slot10
 	LOOP BLOCK #9
 	GO OUT TO BLOCK #10
 
-	--- BLOCK #10 43-47, warpins: 2 ---
-	slot6 = HomeCmdImplement
-	slot6 = slot6._getHomeSpace
-	slot6 = slot6()
+	--- BLOCK #10 49-50, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
-	slot6 = if slot6 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #11 48-50, warpins: 1 ---
-	slot7 = slot6.pets
+	--- BLOCK #11 51-53, warpins: 1 ---
+	slot7 = slot5.pets
 	--- END OF BLOCK #11 ---
 
 	slot7 = if slot7 then
@@ -6102,16 +6136,16 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #12 51-54, warpins: 1 ---
+	--- BLOCK #12 54-57, warpins: 1 ---
 	slot7 = pairs
-	slot9 = slot6.pets
+	slot9 = slot5.pets
 	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 55-57, warpins: 1 ---
+	--- BLOCK #13 58-60, warpins: 1 ---
 	slot11 = slot4
 	slot13 = slot10
 
@@ -6122,7 +6156,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 58-59, warpins: 2 ---
+	--- BLOCK #14 61-62, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot10 in slot7, slot8, slot9
@@ -6130,18 +6164,18 @@ slot31 = function(slot0)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 60-61, warpins: 3 ---
+	--- BLOCK #15 63-64, warpins: 3 ---
 	--- END OF BLOCK #15 ---
 
-	slot6 = if slot6 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #16 62-64, warpins: 1 ---
-	slot7 = slot6.allocation
+	--- BLOCK #16 65-67, warpins: 1 ---
+	slot7 = slot5.allocation
 	--- END OF BLOCK #16 ---
 
 	slot7 = if slot7 then
@@ -6151,16 +6185,16 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #17 65-68, warpins: 1 ---
+	--- BLOCK #17 68-71, warpins: 1 ---
 	slot7 = pairs
-	slot9 = slot6.allocation
+	slot9 = slot5.allocation
 	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 69-71, warpins: 1 ---
+	--- BLOCK #18 72-74, warpins: 1 ---
 	slot11 = slot4
 	slot13 = slot10
 
@@ -6171,7 +6205,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 72-73, warpins: 2 ---
+	--- BLOCK #19 75-76, warpins: 2 ---
 	--- END OF BLOCK #19 ---
 
 	for slot10 in slot7, slot8, slot9
@@ -6179,7 +6213,7 @@ slot31 = function(slot0)
 	GO OUT TO BLOCK #20
 
 
-	--- BLOCK #20 74-80, warpins: 3 ---
+	--- BLOCK #20 77-83, warpins: 3 ---
 	slot7 = table
 	slot7 = slot7.sort
 	slot9 = slot3
@@ -6233,10 +6267,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getPetMapValue"
+slot22[slot31] = slot32
+slot31 = "_getPetMapValue"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6343,10 +6377,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getPetInfoById"
+slot22[slot31] = slot32
+slot31 = "_getPetInfoById"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot2 = pg
@@ -6459,10 +6493,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildHomePetEntry"
+slot22[slot31] = slot32
+slot31 = "_buildHomePetEntry"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = HomeCmdImplement
 	slot2 = slot2._getPetInfoById
@@ -6899,10 +6933,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_countFacilityByHomeId"
+slot22[slot31] = slot32
+slot31 = "_countFacilityByHomeId"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = pg
@@ -6975,10 +7009,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getFacilityMaxNum"
+slot22[slot31] = slot32
+slot31 = "_getFacilityMaxNum"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = HomeObjectData
 	slot1 = slot1[slot0]
@@ -7011,10 +7045,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_toXYZArray"
+slot22[slot31] = slot32
+slot31 = "_toXYZArray"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0
@@ -7255,10 +7289,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_makeYawQuaternion"
+slot22[slot31] = slot32
+slot31 = "_makeYawQuaternion"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7352,10 +7386,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_isInUnlockedZone"
+slot22[slot31] = slot32
+slot31 = "_isInUnlockedZone"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.HomelandZoneWidth
@@ -7566,10 +7600,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_nextVirtualPlacementId"
+slot22[slot31] = slot32
+slot31 = "_nextVirtualPlacementId"
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = CMD_SOCKET_VIRTUAL_ORNAMENT_ID
 	slot0 = slot0 - 1
@@ -7583,10 +7617,10 @@ slot31 = function()
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_positionObjectFromArray"
+slot22[slot31] = slot32
+slot31 = "_positionObjectFromArray"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7640,10 +7674,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_positionDataFromArray"
+slot22[slot31] = slot32
+slot31 = "_positionDataFromArray"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7697,10 +7731,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_scaleArrayFromAny"
+slot22[slot31] = slot32
+slot31 = "_scaleArrayFromAny"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8056,10 +8090,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getPlacementLayer"
+slot22[slot31] = slot32
+slot31 = "_getPlacementLayer"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = HomeObjectData
 	slot1 = slot1[slot0]
@@ -8174,10 +8208,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getPlacementBoundSize"
+slot22[slot31] = slot32
+slot31 = "_getPlacementBoundSize"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = HomeObjectData
 	slot2 = slot2[slot0]
@@ -8334,10 +8368,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildPlacementGeometry"
+slot22[slot31] = slot32
+slot31 = "_buildPlacementGeometry"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = HomeObjectData
 	slot4 = slot4[slot0]
@@ -8554,10 +8588,10 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_placementGeometriesOverlap"
+slot22[slot31] = slot32
+slot31 = "_placementGeometriesOverlap"
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8787,10 +8821,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_isExcludedOrnamentId"
+slot22[slot31] = slot32
+slot31 = "_isExcludedOrnamentId"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8916,10 +8950,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_removeExcludedCollisionIds"
+slot22[slot31] = slot32
+slot31 = "_removeExcludedCollisionIds"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9019,10 +9053,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findCollideOrnamentByUiFastMap"
+slot22[slot31] = slot32
+slot31 = "_findCollideOrnamentByUiFastMap"
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot6 = pg
 	--- END OF BLOCK #0 ---
@@ -9066,7 +9100,7 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 
 	--- BLOCK #4 13-15, warpins: 1 ---
-	slot7 = slot6.fastFindMap
+	slot7 = slot6.getFastFindMap
 	--- END OF BLOCK #4 ---
 
 	slot7 = if slot7 then
@@ -9092,45 +9126,95 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot8 = "ui_fast_map_unavailable"
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #7 22-51, warpins: 1 ---
-	slot7 = HomeCmdImplement
-	slot7 = slot7._nextVirtualPlacementId
-	slot7 = slot7()
-	slot8 = {}
+	--- BLOCK #7 22-24, warpins: 1 ---
+	slot7 = slot6.LOCK_ZONE_AREA_ID
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 25-25, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 26-32, warpins: 2 ---
+	slot10 = slot6
+	slot8 = slot6.getFastFindMap
+	slot11 = slot7
+	slot12 = true
+	slot8 = slot8(slot10, slot11, slot12)
+	--- END OF BLOCK #9 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 33-35, warpins: 1 ---
+	slot9 = nil
+	slot10 = "ui_fast_map_unavailable"
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #11 36-75, warpins: 1 ---
 	slot9 = HomeCmdImplement
-	slot9 = slot9._positionObjectFromArray
-	slot11 = slot1
-	slot9 = slot9(slot11)
-	slot10 = HomeCmdImplement
-	slot10 = slot10._getPlacementBoundSize
-	slot12 = slot0
-	slot13 = slot3
-	slot10 = slot10(slot12, slot13)
-	slot11 = {}
-	slot12 = HomeCmdImplement
-	slot12 = slot12._getPlacementLayer
-	slot14 = slot0
-	slot12 = slot12(slot14)
-	slot11.layer = slot12
-	slot12 = {
+	slot9 = slot9._nextVirtualPlacementId
+	slot9 = slot9()
+	slot10 = {}
+	slot11 = HomeCmdImplement
+	slot11 = slot11._positionObjectFromArray
+	slot13 = slot1
+	slot11 = slot11(slot13)
+	slot14 = slot6
+	slot12 = slot6.getLocalPosition
+	slot15 = slot7
+	slot16 = slot11
+	slot12 = slot12(slot14, slot15, slot16)
+	slot15 = slot6
+	slot13 = slot6.getLocalRotation
+	slot16 = slot7
+	slot17 = slot2
+	slot13 = slot13(slot15, slot16, slot17)
+	slot14 = HomeCmdImplement
+	slot14 = slot14._getPlacementBoundSize
+	slot16 = slot0
+	slot17 = slot3
+	slot14 = slot14(slot16, slot17)
+	slot15 = {}
+	slot16 = HomeCmdImplement
+	slot16 = slot16._getPlacementLayer
+	slot18 = slot0
+	slot16 = slot16(slot18)
+	slot15.layer = slot16
+	slot16 = {
 		visible = true
 	}
-	slot11.ent = slot12
-	slot12 = pcall
+	slot15.ent = slot16
+	slot16 = pcall
 
-	slot14 = function()
+	slot18 = function()
 		--- BLOCK #0 1-18, warpins: 1 ---
-		slot0 = home
-		slot0 = slot0.fastFindMap
+		slot0 = fastFindMap
 		slot2 = slot0
 		slot0 = slot0.addOrUpdateFastFindInfo
 		slot3 = virtualId
 		slot4 = boundSize
-		slot5 = positionObj
-		slot6 = rotation
+		slot5 = localPositionObj
+		slot6 = localRotation
 		slot7 = extraInfo
 
 		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
@@ -9138,12 +9222,13 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot0 = home
 		slot2 = slot0
 		slot0 = slot0.checkPosCollide
-		slot3 = virtualId
-		slot4 = collideOrnaments
-		slot5 = threshold
+		slot3 = areaId
+		slot4 = virtualId
+		slot5 = collideOrnaments
+		slot6 = threshold
 		--- END OF BLOCK #0 ---
 
-		slot5 = if not slot5 then
+		slot6 = if not slot6 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
@@ -9151,7 +9236,7 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 
 		--- BLOCK #1 19-19, warpins: 1 ---
-		slot5 = PLACEMENT_COLLISION_THRESHOLD
+		slot6 = PLACEMENT_COLLISION_THRESHOLD
 
 		--- END OF BLOCK #1 ---
 
@@ -9159,7 +9244,7 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 
 		--- BLOCK #2 20-21, warpins: 2 ---
-		slot0(slot2, slot3, slot4, slot5)
+		slot0(slot2, slot3, slot4, slot5, slot6)
 
 		return
 		--- END OF BLOCK #2 ---
@@ -9168,14 +9253,13 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot12, slot13 = slot12(slot14)
-	slot14 = HomeCmdImplement
-	slot14 = slot14._safeCall
+	slot16, slot17 = slot16(slot18)
+	slot18 = HomeCmdImplement
+	slot18 = slot18._safeCall
 
-	slot16 = function()
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot0 = home
-		slot0 = slot0.fastFindMap
+	slot20 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = fastFindMap
 		slot2 = slot0
 		slot0 = slot0.removeFastFindInfo
 		slot3 = virtualId
@@ -9189,95 +9273,95 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot14(slot16)
+	slot18(slot20)
 
-	--- END OF BLOCK #7 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 52-55, warpins: 1 ---
-	slot14 = nil
-	slot15 = slot13
-
-	return slot14, slot15
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 56-65, warpins: 2 ---
-	slot14 = HomeCmdImplement
-	slot14 = slot14._removeExcludedCollisionIds
-	slot16 = slot8
-	slot17 = slot4
-
-	slot14(slot16, slot17)
-
-	slot14, slot15 = nil
-	slot16 = pairs
-	slot18 = slot8
-	slot16, slot17, slot18 = slot16(slot18)
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #10 66-69, warpins: 1 ---
-	slot20 = pg
-	slot20 = slot20.space
-	--- END OF BLOCK #10 ---
-
-	slot20 = if slot20 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #11 70-74, warpins: 1 ---
-	slot20 = pg
-	slot20 = slot20.space
-	slot20 = slot20.ornament
 	--- END OF BLOCK #11 ---
 
-	slot20 = if slot20 then
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 75-78, warpins: 1 ---
-	slot20 = pg
-	slot20 = slot20.space
-	slot20 = slot20.ornament
-	slot20 = slot20[slot19]
+	--- BLOCK #12 76-79, warpins: 1 ---
+	slot18 = nil
+	slot19 = slot17
+
+	return slot18, slot19
+
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 79-80, warpins: 3 ---
+	--- BLOCK #13 80-89, warpins: 2 ---
+	slot18 = HomeCmdImplement
+	slot18 = slot18._removeExcludedCollisionIds
+	slot20 = slot10
+	slot21 = slot4
+
+	slot18(slot20, slot21)
+
+	slot18, slot19 = nil
+	slot20 = pairs
+	slot22 = slot10
+	slot20, slot21, slot22 = slot20(slot22)
 	--- END OF BLOCK #13 ---
 
-	slot21 = if slot20 then
-	JUMP TO BLOCK #14
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #14 90-93, warpins: 1 ---
+	slot24 = pg
+	slot24 = slot24.space
+	--- END OF BLOCK #14 ---
+
+	slot24 = if slot24 then
 	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #14 81-84, warpins: 1 ---
-	slot21 = HomeCmdImplement
-	slot21 = slot21._safeCall
+	--- BLOCK #15 94-98, warpins: 1 ---
+	slot24 = pg
+	slot24 = slot24.space
+	slot24 = slot24.ornament
+	--- END OF BLOCK #15 ---
 
-	slot23 = function()
+	slot24 = if slot24 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 99-102, warpins: 1 ---
+	slot24 = pg
+	slot24 = slot24.space
+	slot24 = slot24.ornament
+	slot24 = slot24[slot23]
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 103-104, warpins: 3 ---
+	--- END OF BLOCK #17 ---
+
+	slot25 = if slot24 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 105-108, warpins: 1 ---
+	slot25 = HomeCmdImplement
+	slot25 = slot25._safeCall
+
+	slot27 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = info
 		slot2 = slot0
@@ -9290,102 +9374,109 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot21 = slot21(slot23)
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 85-87, warpins: 2 ---
-	slot22 = 0
-	--- END OF BLOCK #15 ---
-
-	slot21 = if slot21 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 88-96, warpins: 1 ---
-	slot23 = slot21.x
-	slot24 = slot1[1]
-	slot23 = slot23 - slot24
-	slot24 = slot21.z
-	slot25 = slot1[3]
-	slot24 = slot24 - slot25
-	slot25 = slot23 * slot23
-	slot26 = slot24 * slot24
-	slot22 = slot25 + slot26
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 97-98, warpins: 2 ---
-	--- END OF BLOCK #17 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 99-100, warpins: 1 ---
+	slot25 = slot25(slot27)
 	--- END OF BLOCK #18 ---
 
-	if slot22 < slot15 then
-	JUMP TO BLOCK #19
-	else
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 109-111, warpins: 2 ---
+	slot26 = 0
+	--- END OF BLOCK #19 ---
+
+	slot25 = if slot25 then
 	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #19 101-102, warpins: 2 ---
-	slot14 = slot19
-	slot15 = slot22
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 103-103, warpins: 2 ---
+	--- BLOCK #20 112-120, warpins: 1 ---
+	slot27 = slot25.x
+	slot28 = slot1[1]
+	slot27 = slot27 - slot28
+	slot28 = slot25.z
+	slot29 = slot1[3]
+	slot28 = slot28 - slot29
+	slot29 = slot27 * slot27
+	slot30 = slot28 * slot28
+	slot26 = slot29 + slot30
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 104-105, warpins: 2 ---
+	--- BLOCK #21 121-122, warpins: 2 ---
 	--- END OF BLOCK #21 ---
 
-	for slot19 in slot16, slot17, slot18
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #22
+	slot18 = if slot18 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
 
 
-	--- BLOCK #22 106-109, warpins: 1 ---
-	slot16 = slot14
-	slot17 = nil
-
-	return slot16, slot17
+	--- BLOCK #22 123-124, warpins: 1 ---
 	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #23
+	if slot26 < slot19 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
 
 
-	--- BLOCK #23 110-110, warpins: 2 ---
-	return slot7, slot8
+	--- BLOCK #23 125-126, warpins: 2 ---
+	slot18 = slot23
+	slot19 = slot26
 	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 127-127, warpins: 2 ---
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 128-129, warpins: 2 ---
+	--- END OF BLOCK #25 ---
+
+	for slot23 in slot20, slot21, slot22
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #26
+
+
+	--- BLOCK #26 130-133, warpins: 1 ---
+	slot20 = slot18
+	slot21 = nil
+
+	return slot20, slot21
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 134-134, warpins: 2 ---
+	return slot7, slot8
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 135-135, warpins: 2 ---
+	return slot9, slot10
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findCollideOrnament"
+slot22[slot31] = slot32
+slot31 = "_findCollideOrnament"
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9545,10 +9636,10 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildCollisionData"
+slot22[slot31] = slot32
+slot31 = "_buildCollisionData"
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9763,10 +9854,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_placementFailure"
+slot22[slot31] = slot32
+slot31 = "_placementFailure"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = {
 		valid = false
@@ -9802,10 +9893,10 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_placementFailureToErr"
+slot22[slot31] = slot32
+slot31 = "_placementFailureToErr"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9932,10 +10023,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_checkPlacementBoundsLocked"
+slot22[slot31] = slot32
+slot31 = "_checkPlacementBoundsLocked"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = pg
 	--- END OF BLOCK #0 ---
@@ -10007,12 +10098,31 @@ slot31 = function(slot0, slot1, slot2, slot3)
 		slot0 = home
 		slot2 = slot0
 		slot0 = slot0.checkBoundsLock
-		slot3 = positionObj
-		slot4 = rotation
-		slot5 = boundSize
-
-		return slot0(slot2, slot3, slot4, slot5)
+		slot3 = home
+		slot3 = slot3.LOCK_ZONE_AREA_ID
 		--- END OF BLOCK #0 ---
+
+		slot3 = if not slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		slot3 = 0
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-12, warpins: 2 ---
+		slot4 = positionObj
+		slot5 = rotation
+		slot6 = boundSize
+
+		return slot0(slot2, slot3, slot4, slot5, slot6)
+		--- END OF BLOCK #2 ---
 
 
 
@@ -10082,10 +10192,10 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_validatePlacement"
+slot22[slot31] = slot32
+slot31 = "_validatePlacement"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -10862,10 +10972,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findCollidePreparedPlacement"
+slot22[slot31] = slot32
+slot31 = "_findCollidePreparedPlacement"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -10959,10 +11069,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_describeCollideOrnament"
+slot22[slot31] = slot32
+slot31 = "_describeCollideOrnament"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11187,10 +11297,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getFacilityStateName"
+slot22[slot31] = slot32
+slot31 = "_getFacilityStateName"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11310,10 +11420,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_makeAbilityName"
+slot22[slot31] = slot32
+slot31 = "_makeAbilityName"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -11367,10 +11477,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_resolveAbilityName"
+slot22[slot31] = slot32
+slot31 = "_resolveAbilityName"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11479,10 +11589,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getAbilityInfo"
+slot22[slot31] = slot32
+slot31 = "_getAbilityInfo"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11690,10 +11800,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getOperateDisplayInfo"
+slot22[slot31] = slot32
+slot31 = "_getOperateDisplayInfo"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11801,10 +11911,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildHomeAbilityList"
+slot22[slot31] = slot32
+slot31 = "_buildHomeAbilityList"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = type
@@ -11815,119 +11925,129 @@ slot31 = function(slot0)
 	if slot2 ~= "table" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 7-8, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #2 8-11, warpins: 1 ---
-	slot2 = pairs
-	slot4 = slot0
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #3 12-16, warpins: 1 ---
-	slot7 = tonumber
-	slot9 = slot5
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #3 ---
-
-	if slot7 ~= nil then
-	JUMP TO BLOCK #4
+	if slot2 ~= "userdata" then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #4 17-21, warpins: 1 ---
-	slot8 = type
+	--- BLOCK #2 9-9, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #3 10-13, warpins: 2 ---
+	slot3 = pairs
+	slot5 = slot0
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #4 14-18, warpins: 1 ---
+	slot8 = tonumber
 	slot10 = slot6
 	slot8 = slot8(slot10)
 	--- END OF BLOCK #4 ---
 
-	if slot8 == "number" then
+	if slot8 ~= nil then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #5 19-23, warpins: 1 ---
+	slot9 = type
+	slot11 = slot7
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #5 ---
+
+	if slot9 == "number" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #6 24-29, warpins: 1 ---
+	slot9 = HomeCmdImplement
+	slot9 = slot9._getAbilityInfo
+	slot11 = slot8
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #6 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 30-30, warpins: 1 ---
+	slot9 = {}
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-37, warpins: 2 ---
+	slot10 = #slot1
+	slot10 = slot10 + 1
+	slot11 = {}
+	slot11.abilityId = slot8
+	slot12 = slot9.abilityName
+	--- END OF BLOCK #8 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 22-27, warpins: 1 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._getAbilityInfo
-	slot10 = slot7
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #5 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 28-28, warpins: 1 ---
-	slot8 = {}
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 29-35, warpins: 2 ---
-	slot9 = #slot1
-	slot9 = slot9 + 1
-	slot10 = {}
-	slot10.abilityId = slot7
-	slot11 = slot8.abilityName
-	--- END OF BLOCK #7 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 36-38, warpins: 1 ---
-	slot11 = tostring
-	slot13 = slot7
-	slot11 = slot11(slot13)
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 39-41, warpins: 2 ---
-	slot10.abilityName = slot11
-	slot10.level = slot6
-	slot1[slot9] = slot10
+	--- BLOCK #9 38-40, warpins: 1 ---
+	slot12 = tostring
+	slot14 = slot8
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 42-43, warpins: 4 ---
+	--- BLOCK #10 41-43, warpins: 2 ---
+	slot11.abilityName = slot12
+	slot11.level = slot7
+	slot1[slot10] = slot11
 	--- END OF BLOCK #10 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #11
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 44-50, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.sort
-	slot4 = slot1
+	--- BLOCK #11 44-45, warpins: 4 ---
+	--- END OF BLOCK #11 ---
 
-	slot5 = function(slot0, slot1)
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 46-52, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot1
+
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot2 = slot0.abilityId
 		--- END OF BLOCK #0 ---
@@ -11997,37 +12117,37 @@ slot31 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	return slot1
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 51-51, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 53-53, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvTypeDesc"
+slot22[slot31] = slot32
+slot31 = "_getEnvTypeDesc"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = {
-		temperature = "温度",
-		environmentState = "环境状态",
-		light = "光照",
-		electric = "电力",
 		envRequireOperate = "环境状态匹配",
-		operate = "操作",
 		facilityState = "设施状态",
 		envWorkRatio = "环境效率",
-		humidity = "湿度"
+		operate = "操作",
+		environmentState = "环境状态",
+		humidity = "湿度",
+		temperature = "温度",
+		light = "光照",
+		electric = "电力"
 	}
 	slot2 = slot1[slot0]
 	--- END OF BLOCK #0 ---
@@ -12057,10 +12177,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvValueDesc"
+slot22[slot31] = slot32
+slot31 = "_getEnvValueDesc"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -12308,10 +12428,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvRequireDesc"
+slot22[slot31] = slot32
+slot31 = "_getEnvRequireDesc"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -12646,10 +12766,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_decorateEnvUnmetRequirement"
+slot22[slot31] = slot32
+slot31 = "_decorateEnvUnmetRequirement"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -13145,10 +13265,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_normalizeEnvUnmetRequirements"
+slot22[slot31] = slot32
+slot31 = "_normalizeEnvUnmetRequirements"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -13209,10 +13329,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildEnvRequirementsDesc"
+slot22[slot31] = slot32
+slot31 = "_buildEnvRequirementsDesc"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -13224,183 +13344,268 @@ slot31 = function(slot0)
 	if slot3 ~= "table" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot3 = "无特殊环境要求"
-	slot1.summary = slot3
-
-	return slot1
-
+	--- BLOCK #1 8-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-13, warpins: 2 ---
-	slot3 = slot0.lightRequire
-	--- END OF BLOCK #2 ---
-
-	if slot3 ~= nil then
+	if slot3 ~= "userdata" then
+	JUMP TO BLOCK #2
+	else
 	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 14-22, warpins: 1 ---
-	slot3 = HomeCmdImplement
-	slot3 = slot3._getEnvRequireDesc
-	slot5 = "light"
-	slot6 = slot0.lightRequire
-	slot3 = slot3(slot5, slot6)
-	slot1.light = slot3
-	slot3 = slot1.light
-	--- END OF BLOCK #3 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 23-26, warpins: 1 ---
-	slot3 = #slot2
-	slot3 = slot3 + 1
-	slot4 = slot1.light
-	slot2[slot3] = slot4
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 27-29, warpins: 3 ---
-	slot3 = slot0.temperatureRequire
-	--- END OF BLOCK #5 ---
-
-	if slot3 ~= nil then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 30-38, warpins: 1 ---
-	slot3 = HomeCmdImplement
-	slot3 = slot3._getEnvRequireDesc
-	slot5 = "temperature"
-	slot6 = slot0.temperatureRequire
-	slot3 = slot3(slot5, slot6)
-	slot1.temperature = slot3
-	slot3 = slot1.temperature
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 39-42, warpins: 1 ---
-	slot3 = #slot2
-	slot3 = slot3 + 1
-	slot4 = slot1.temperature
-	slot2[slot3] = slot4
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 43-45, warpins: 3 ---
-	slot3 = slot0.humidityRequire
-	--- END OF BLOCK #8 ---
-
-	if slot3 ~= nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 46-54, warpins: 1 ---
-	slot3 = HomeCmdImplement
-	slot3 = slot3._getEnvRequireDesc
-	slot5 = "humidity"
-	slot6 = slot0.humidityRequire
-	slot3 = slot3(slot5, slot6)
-	slot1.humidity = slot3
-	slot3 = slot1.humidity
-	--- END OF BLOCK #9 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 55-58, warpins: 1 ---
-	slot3 = #slot2
-	slot3 = slot3 + 1
-	slot4 = slot1.humidity
-	slot2[slot3] = slot4
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 59-62, warpins: 3 ---
-	slot3 = #slot2
-	slot4 = 0
-	--- END OF BLOCK #11 ---
-
-	if slot3 > slot4 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 63-69, warpins: 1 ---
-	slot3 = table
-	slot3 = slot3.concat
-	slot5 = slot2
-	slot6 = "，"
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #12 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 70-70, warpins: 2 ---
-	slot3 = "无特殊环境要求"
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 71-72, warpins: 2 ---
-	slot1.summary = slot3
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot4 = "无特殊环境要求"
+	slot1.summary = slot4
+	slot4 = false
+	slot1.needsEnvironment = slot4
 
 	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-17, warpins: 3 ---
+	slot4 = slot0.lightRequire
+	--- END OF BLOCK #3 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 18-28, warpins: 1 ---
+	slot4 = HomeCmdImplement
+	slot4 = slot4._getEnvRequireDesc
+	slot6 = "light"
+	slot7 = slot0.lightRequire
+	slot4 = slot4(slot6, slot7)
+	slot1.light = slot4
+	slot4 = slot0.lightRequire
+	slot1.lightRequire = slot4
+	slot4 = slot1.light
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-32, warpins: 1 ---
+	slot4 = #slot2
+	slot4 = slot4 + 1
+	slot5 = slot1.light
+	slot2[slot4] = slot5
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-35, warpins: 3 ---
+	slot4 = slot0.temperatureRequire
+	--- END OF BLOCK #6 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 36-46, warpins: 1 ---
+	slot4 = HomeCmdImplement
+	slot4 = slot4._getEnvRequireDesc
+	slot6 = "temperature"
+	slot7 = slot0.temperatureRequire
+	slot4 = slot4(slot6, slot7)
+	slot1.temperature = slot4
+	slot4 = slot0.temperatureRequire
+	slot1.temperatureRequire = slot4
+	slot4 = slot1.temperature
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 47-50, warpins: 1 ---
+	slot4 = #slot2
+	slot4 = slot4 + 1
+	slot5 = slot1.temperature
+	slot2[slot4] = slot5
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 51-53, warpins: 3 ---
+	slot4 = slot0.humidityRequire
+	--- END OF BLOCK #9 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 54-64, warpins: 1 ---
+	slot4 = HomeCmdImplement
+	slot4 = slot4._getEnvRequireDesc
+	slot6 = "humidity"
+	slot7 = slot0.humidityRequire
+	slot4 = slot4(slot6, slot7)
+	slot1.humidity = slot4
+	slot4 = slot0.humidityRequire
+	slot1.humidityRequire = slot4
+	slot4 = slot1.humidity
+	--- END OF BLOCK #10 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 65-68, warpins: 1 ---
+	slot4 = #slot2
+	slot4 = slot4 + 1
+	slot5 = slot1.humidity
+	slot2[slot4] = slot5
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 69-71, warpins: 3 ---
+	slot4 = slot0.envRequireOperate
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 72-82, warpins: 1 ---
+	slot4 = HomeCmdImplement
+	slot4 = slot4._getEnvRequireDesc
+	slot6 = "envRequireOperate"
+	slot7 = slot0.envRequireOperate
+	slot4 = slot4(slot6, slot7)
+	slot1.envRequireOperate = slot4
+	slot4 = slot0.envRequireOperate
+	slot1.envRequireOperateId = slot4
+	slot4 = slot1.envRequireOperate
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 83-86, warpins: 1 ---
+	slot4 = #slot2
+	slot4 = slot4 + 1
+	slot5 = slot1.envRequireOperate
+	slot2[slot4] = slot5
 	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 87-90, warpins: 3 ---
+	slot4 = #slot2
+	slot5 = 0
+	--- END OF BLOCK #15 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 91-97, warpins: 1 ---
+	slot4 = table
+	slot4 = slot4.concat
+	slot6 = slot2
+	slot7 = "，"
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #16 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 98-98, warpins: 2 ---
+	slot4 = "无特殊环境要求"
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 99-103, warpins: 2 ---
+	slot1.summary = slot4
+	slot4 = #slot2
+	slot5 = 0
+	--- END OF BLOCK #18 ---
+
+	if slot4 <= slot5 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 104-105, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 106-106, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 107-108, warpins: 2 ---
+	slot1.needsEnvironment = slot4
+
+	return slot1
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvLevelDesc"
+slot22[slot31] = slot32
+slot31 = "_getEnvLevelDesc"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -13542,10 +13747,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_makeEnvValue"
+slot22[slot31] = slot32
+slot31 = "_makeEnvValue"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -13584,10 +13789,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_mapKeysToSortedList"
+slot22[slot31] = slot32
+slot31 = "_mapKeysToSortedList"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = type
@@ -13682,10 +13887,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvNumber"
+slot22[slot31] = slot32
+slot31 = "_getEnvNumber"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0
@@ -13759,10 +13964,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildEnvAxis"
+slot22[slot31] = slot32
+slot31 = "_buildEnvAxis"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-77, warpins: 1 ---
 	slot2 = HomeCmdImplement
 	slot2 = slot2._getEnvNumber
@@ -13904,10 +14109,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_putEnvAxis"
+slot22[slot31] = slot32
+slot31 = "_putEnvAxis"
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = HomeCmdImplement
 	slot5 = slot5._buildEnvAxis
@@ -13944,10 +14149,10 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_nilIfEmptyMap"
+slot22[slot31] = slot32
+slot31 = "_nilIfEmptyMap"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -14000,10 +14205,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildEnvContributors"
+slot22[slot31] = slot32
+slot31 = "_buildEnvContributors"
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #0 ---
@@ -14772,10 +14977,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_addEnvUnmetRequirement"
+slot22[slot31] = slot32
+slot31 = "_addEnvUnmetRequirement"
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot5 = #slot0
 	slot5 = slot5 + 1
@@ -14797,10 +15002,10 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildEnvSuitability"
+slot22[slot31] = slot32
+slot31 = "_buildEnvSuitability"
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -15616,10 +15821,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_serializeEnvironmentSource"
+slot22[slot31] = slot32
+slot31 = "_serializeEnvironmentSource"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = HomeCmdImplement
 	slot2 = slot2._getRuntimeMapValue
@@ -16312,10 +16517,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvProvideInfo"
+slot22[slot31] = slot32
+slot31 = "_getEnvProvideInfo"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = {}
 	slot3, slot4 = nil
@@ -16360,7 +16565,7 @@ slot31 = function(slot0, slot1)
 
 
 	--- BLOCK #4 14-14, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -16456,8 +16661,8 @@ slot31 = function(slot0, slot1)
 	slot2.temperature = slot6
 	slot6 = {}
 	slot7 = {
-		min = 1,
-		max = 2
+		max = 2,
+		min = 1
 	}
 	slot6.temperature = slot7
 	slot3 = slot6
@@ -16482,8 +16687,8 @@ slot31 = function(slot0, slot1)
 	slot2.temperature = slot6
 	slot6 = {}
 	slot7 = {
-		min = -2,
-		max = -1
+		max = -1,
+		min = -2
 	}
 	slot6.temperature = slot7
 	slot3 = slot6
@@ -16522,10 +16727,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getEnvStackInfo"
+slot22[slot31] = slot32
+slot31 = "_getEnvStackInfo"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = Const
 	slot1 = slot1.HOMELAND_FACILITY_TYPE
@@ -16632,10 +16837,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildFacilityEnvEffect"
+slot22[slot31] = slot32
+slot31 = "_buildFacilityEnvEffect"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = {}
 	slot5 = false
@@ -16662,7 +16867,7 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 10-10, warpins: 2 ---
-	slot9 = {}
+	slot9 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -17025,192 +17230,180 @@ slot31 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 114-118, warpins: 2 ---
-	slot13 = type
+	--- BLOCK #39 114-119, warpins: 2 ---
+	slot13 = HomeCmdImplement
+	slot13 = slot13._isTableLike
 	slot15 = slot12
 	slot13 = slot13(slot15)
 	--- END OF BLOCK #39 ---
 
-	if slot13 ~= "table" then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #40
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #40 119-123, warpins: 1 ---
-	slot13 = type
-	slot15 = slot12
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #40 ---
-
-	if slot13 == "userdata" then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #47
-	end
-
-
-	--- BLOCK #41 124-127, warpins: 2 ---
-	slot13 = pairs
-	slot15 = slot12
-	slot13, slot14, slot15 = slot13(slot15)
-	--- END OF BLOCK #41 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #46
-
-
-	--- BLOCK #42 128-132, warpins: 1 ---
-	slot18 = type
-	slot20 = slot17
-	slot18 = slot18(slot20)
-	--- END OF BLOCK #42 ---
-
-	if slot18 == "number" then
-	JUMP TO BLOCK #43
 	else
 	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #43 133-136, warpins: 1 ---
-	slot18 = math
-	slot18 = slot18.max
-	--- END OF BLOCK #43 ---
+	--- BLOCK #40 120-123, warpins: 1 ---
+	slot13 = pairs
+	slot15 = slot12
+	slot13, slot14, slot15 = slot13(slot15)
+	--- END OF BLOCK #40 ---
 
-	slot20 = if not slot11 then
-	JUMP TO BLOCK #44
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
+
+
+	--- BLOCK #41 124-128, warpins: 1 ---
+	slot18 = type
+	slot20 = slot17
+	slot18 = slot18(slot20)
+	--- END OF BLOCK #41 ---
+
+	if slot18 == "number" then
+	JUMP TO BLOCK #42
 	else
 	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #44 137-137, warpins: 1 ---
+	--- BLOCK #42 129-132, warpins: 1 ---
+	slot18 = math
+	slot18 = slot18.max
+	--- END OF BLOCK #42 ---
+
+	slot20 = if not slot11 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #44
+	end
+
+
+	--- BLOCK #43 133-133, warpins: 1 ---
 	slot20 = 0
+	--- END OF BLOCK #43 ---
+
+	FLOW; TARGET BLOCK #44
+
+
+	--- BLOCK #44 134-136, warpins: 2 ---
+	slot21 = slot17
+	slot18 = slot18(slot20, slot21)
+	slot11 = slot18
 	--- END OF BLOCK #44 ---
 
 	FLOW; TARGET BLOCK #45
 
 
-	--- BLOCK #45 138-140, warpins: 2 ---
-	slot21 = slot17
-	slot18 = slot18(slot20, slot21)
-	slot11 = slot18
+	--- BLOCK #45 137-138, warpins: 3 ---
 	--- END OF BLOCK #45 ---
 
-	FLOW; TARGET BLOCK #46
-
-
-	--- BLOCK #46 141-142, warpins: 3 ---
-	--- END OF BLOCK #46 ---
-
 	for slot16, slot17 in slot13, slot14, slot15
-	LOOP BLOCK #42
-	GO OUT TO BLOCK #47
+	LOOP BLOCK #41
+	GO OUT TO BLOCK #46
 
 
-	--- BLOCK #47 143-146, warpins: 2 ---
+	--- BLOCK #46 139-142, warpins: 2 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._getEnvStackInfo
-	--- END OF BLOCK #47 ---
+	--- END OF BLOCK #46 ---
 
 	slot15 = if slot3 then
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #47
 	else
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #48 147-147, warpins: 1 ---
+	--- BLOCK #47 143-143, warpins: 1 ---
 	slot15 = slot3.facilityType
-	--- END OF BLOCK #48 ---
+	--- END OF BLOCK #47 ---
 
-	FLOW; TARGET BLOCK #49
+	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #49 148-154, warpins: 2 ---
+	--- BLOCK #48 144-150, warpins: 2 ---
 	slot13, slot14 = slot13(slot15)
 	slot15 = {}
 	slot15.homeTemplateId = slot0
 	slot16 = HomeCmdImplement
 	slot16 = slot16._localize
-	--- END OF BLOCK #49 ---
+	--- END OF BLOCK #48 ---
 
 	slot18 = if slot1 then
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #50 155-155, warpins: 1 ---
+	--- BLOCK #49 151-151, warpins: 1 ---
 	slot18 = slot1.name
-	--- END OF BLOCK #50 ---
+	--- END OF BLOCK #49 ---
 
-	FLOW; TARGET BLOCK #51
+	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #51 156-160, warpins: 2 ---
+	--- BLOCK #50 152-156, warpins: 2 ---
 	slot16 = slot16(slot18)
 	slot15.facilityName = slot16
 	slot15.facilityTemplateId = slot2
-	--- END OF BLOCK #51 ---
+	--- END OF BLOCK #50 ---
 
 	slot3 = if slot3 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
+
+
+	--- BLOCK #51 157-159, warpins: 1 ---
+	slot16 = slot3.facilityType
+	--- END OF BLOCK #51 ---
+
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #52
 	else
 	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #52 161-163, warpins: 1 ---
-	slot16 = slot3.facilityType
+	--- BLOCK #52 160-160, warpins: 2 ---
+	slot16 = nil
 	--- END OF BLOCK #52 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #53
-	else
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 161-163, warpins: 2 ---
+	slot15.facilityType = slot16
+	--- END OF BLOCK #53 ---
+
+	slot3 = if slot3 then
 	JUMP TO BLOCK #54
+	else
+	JUMP TO BLOCK #55
 	end
 
 
-	--- BLOCK #53 164-164, warpins: 2 ---
-	slot16 = nil
-	--- END OF BLOCK #53 ---
-
-	FLOW; TARGET BLOCK #54
-
-
-	--- BLOCK #54 165-167, warpins: 2 ---
-	slot15.facilityType = slot16
+	--- BLOCK #54 164-166, warpins: 1 ---
+	slot16 = slot3.typeName
 	--- END OF BLOCK #54 ---
 
-	slot3 = if slot3 then
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #55
 	else
 	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #55 168-170, warpins: 1 ---
-	slot16 = slot3.typeName
+	--- BLOCK #55 167-167, warpins: 2 ---
+	slot16 = nil
 	--- END OF BLOCK #55 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #56
-	else
-	JUMP TO BLOCK #57
-	end
+	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #56 171-171, warpins: 2 ---
-	slot16 = nil
-	--- END OF BLOCK #56 ---
-
-	FLOW; TARGET BLOCK #57
-
-
-	--- BLOCK #57 172-185, warpins: 2 ---
+	--- BLOCK #56 168-181, warpins: 2 ---
 	slot15.facilityTypeName = slot16
 	slot15.provides = slot9
 	slot15.provideRange = slot10
@@ -17223,155 +17416,155 @@ slot31 = function(slot0, slot1, slot2, slot3)
 	slot15.stackable = slot13
 	slot15.maxStack = slot14
 	slot15.needPet = slot5
-	--- END OF BLOCK #57 ---
+	--- END OF BLOCK #56 ---
 
 	slot6 = if slot6 then
+	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #58
+	end
+
+
+	--- BLOCK #57 182-184, warpins: 1 ---
+	slot16 = slot6.abilityId
+	--- END OF BLOCK #57 ---
+
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #58
 	else
 	JUMP TO BLOCK #59
 	end
 
 
-	--- BLOCK #58 186-188, warpins: 1 ---
-	slot16 = slot6.abilityId
+	--- BLOCK #58 185-185, warpins: 2 ---
+	slot16 = nil
 	--- END OF BLOCK #58 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #59
-	else
+	FLOW; TARGET BLOCK #59
+
+
+	--- BLOCK #59 186-188, warpins: 2 ---
+	slot15.petAbilityRequired = slot16
+	--- END OF BLOCK #59 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #61
 	end
 
 
-	--- BLOCK #59 189-189, warpins: 2 ---
-	slot16 = nil
-	--- END OF BLOCK #59 ---
-
-	FLOW; TARGET BLOCK #60
-
-
-	--- BLOCK #60 190-192, warpins: 2 ---
-	slot15.petAbilityRequired = slot16
+	--- BLOCK #60 189-191, warpins: 1 ---
+	slot16 = slot6.requiredLevel
 	--- END OF BLOCK #60 ---
 
-	slot6 = if slot6 then
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #61
 	else
 	JUMP TO BLOCK #62
 	end
 
 
-	--- BLOCK #61 193-195, warpins: 1 ---
-	slot16 = slot6.requiredLevel
+	--- BLOCK #61 192-192, warpins: 2 ---
+	slot16 = nil
 	--- END OF BLOCK #61 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #62
-	else
+	FLOW; TARGET BLOCK #62
+
+
+	--- BLOCK #62 193-195, warpins: 2 ---
+	slot15.petAbilityLevel = slot16
+	--- END OF BLOCK #62 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #63
+	else
+	JUMP TO BLOCK #64
 	end
 
 
-	--- BLOCK #62 196-196, warpins: 2 ---
-	slot16 = nil
-	--- END OF BLOCK #62 ---
-
-	FLOW; TARGET BLOCK #63
-
-
-	--- BLOCK #63 197-199, warpins: 2 ---
-	slot15.petAbilityLevel = slot16
+	--- BLOCK #63 196-198, warpins: 1 ---
+	slot16 = slot6.operateName
 	--- END OF BLOCK #63 ---
 
-	slot6 = if slot6 then
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #64
 	else
 	JUMP TO BLOCK #65
 	end
 
 
-	--- BLOCK #64 200-202, warpins: 1 ---
-	slot16 = slot6.operateName
+	--- BLOCK #64 199-199, warpins: 2 ---
+	slot16 = nil
 	--- END OF BLOCK #64 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #65
-	else
-	JUMP TO BLOCK #66
-	end
+	FLOW; TARGET BLOCK #65
 
 
-	--- BLOCK #65 203-203, warpins: 2 ---
-	slot16 = nil
-	--- END OF BLOCK #65 ---
-
-	FLOW; TARGET BLOCK #66
-
-
-	--- BLOCK #66 204-208, warpins: 2 ---
+	--- BLOCK #65 200-204, warpins: 2 ---
 	slot15.petAbilityName = slot16
 	slot16 = HomeCmdImplement
 	slot16 = slot16._cloneForCmd
-	--- END OF BLOCK #66 ---
+	--- END OF BLOCK #65 ---
 
 	slot18 = if slot3 then
-	JUMP TO BLOCK #67
+	JUMP TO BLOCK #66
 	else
-	JUMP TO BLOCK #68
+	JUMP TO BLOCK #67
 	end
 
 
-	--- BLOCK #67 209-209, warpins: 1 ---
+	--- BLOCK #66 205-205, warpins: 1 ---
 	slot18 = slot3.envFormulaList
-	--- END OF BLOCK #67 ---
+	--- END OF BLOCK #66 ---
 
-	FLOW; TARGET BLOCK #68
+	FLOW; TARGET BLOCK #67
 
 
-	--- BLOCK #68 210-215, warpins: 2 ---
+	--- BLOCK #67 206-211, warpins: 2 ---
 	slot16 = slot16(slot18)
 	slot15.envFormulaList = slot16
 	slot15.envFormulas = slot4
 	slot15.addonId = slot7
-	--- END OF BLOCK #68 ---
+	--- END OF BLOCK #67 ---
 
 	slot8 = if slot8 then
+	JUMP TO BLOCK #68
+	else
+	JUMP TO BLOCK #69
+	end
+
+
+	--- BLOCK #68 212-214, warpins: 1 ---
+	slot16 = slot8.element
+	--- END OF BLOCK #68 ---
+
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #69
 	else
 	JUMP TO BLOCK #70
 	end
 
 
-	--- BLOCK #69 216-218, warpins: 1 ---
-	slot16 = slot8.element
+	--- BLOCK #69 215-215, warpins: 2 ---
+	slot16 = nil
 	--- END OF BLOCK #69 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #70
-	else
-	JUMP TO BLOCK #71
-	end
+	FLOW; TARGET BLOCK #70
 
 
-	--- BLOCK #70 219-219, warpins: 2 ---
-	slot16 = nil
+	--- BLOCK #70 216-218, warpins: 2 ---
+	slot15.addonType = slot16
 	--- END OF BLOCK #70 ---
 
-	FLOW; TARGET BLOCK #71
-
-
-	--- BLOCK #71 220-222, warpins: 2 ---
-	slot15.addonType = slot16
-	--- END OF BLOCK #71 ---
-
 	slot8 = if slot8 then
-	JUMP TO BLOCK #72
+	JUMP TO BLOCK #71
 	else
-	JUMP TO BLOCK #73
+	JUMP TO BLOCK #72
 	end
 
 
-	--- BLOCK #72 223-236, warpins: 1 ---
+	--- BLOCK #71 219-232, warpins: 1 ---
 	slot16 = {}
 	slot16.addonId = slot7
 	slot17 = slot8.element
@@ -17387,23 +17580,23 @@ slot31 = function(slot0, slot1, slot2, slot3)
 	slot16.buffId = slot17
 	slot15.addon = slot16
 
-	--- END OF BLOCK #72 ---
+	--- END OF BLOCK #71 ---
 
-	FLOW; TARGET BLOCK #73
+	FLOW; TARGET BLOCK #72
 
 
-	--- BLOCK #73 237-237, warpins: 2 ---
+	--- BLOCK #72 233-233, warpins: 2 ---
 	return slot15
-	--- END OF BLOCK #73 ---
+	--- END OF BLOCK #72 ---
 
 
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_cloneForCmd"
+slot22[slot31] = slot32
+slot31 = "_cloneForCmd"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -17431,155 +17624,175 @@ slot31 = function(slot0, slot1)
 	if slot2 ~= "table" then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 9-9, warpins: 1 ---
-	return slot0
-
+	--- BLOCK #3 9-10, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 10-12, warpins: 2 ---
-	slot2 = 4
-	--- END OF BLOCK #4 ---
-
-	if slot1 > slot2 then
-	JUMP TO BLOCK #5
+	if slot2 ~= "userdata" then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 13-14, warpins: 1 ---
-	slot2 = nil
+	--- BLOCK #4 11-11, warpins: 1 ---
+	return slot0
 
-	return slot2
+	--- END OF BLOCK #4 ---
 
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-14, warpins: 3 ---
+	slot3 = 4
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot1 > slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 15-19, warpins: 2 ---
-	slot2 = {}
-	slot3 = pairs
-	slot5 = slot0
-	slot3, slot4, slot5 = slot3(slot5)
+	--- BLOCK #6 15-16, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 20-27, warpins: 1 ---
-	slot8 = type
-	slot10 = slot6
-	slot8 = slot8(slot10)
+	--- BLOCK #7 17-21, warpins: 2 ---
+	slot3 = {}
+	slot4 = pairs
+	slot6 = slot0
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #8 22-29, warpins: 1 ---
 	slot9 = type
 	slot11 = slot7
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #7 ---
-
-	if slot8 ~= "string" then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 28-29, warpins: 1 ---
+	slot10 = type
+	slot12 = slot8
+	slot10 = slot10(slot12)
 	--- END OF BLOCK #8 ---
 
-	if slot8 == "number" then
+	if slot9 ~= "string" then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 30-31, warpins: 2 ---
+	--- BLOCK #9 30-31, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	if slot9 ~= "string" then
+	if slot9 == "number" then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #10 32-33, warpins: 1 ---
+	--- BLOCK #10 32-33, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
-	if slot9 ~= "number" then
+	if slot10 ~= "string" then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #13
 	end
 
 
 	--- BLOCK #11 34-35, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
-	if slot9 == "boolean" then
+	if slot10 ~= "number" then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 36-37, warpins: 3 ---
-	slot2[slot6] = slot7
+	--- BLOCK #12 36-37, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #13 38-39, warpins: 1 ---
-	--- END OF BLOCK #13 ---
-
-	if slot9 == "table" then
-	JUMP TO BLOCK #14
+	if slot10 == "boolean" then
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #14 40-45, warpins: 1 ---
-	slot10 = HomeCmdImplement
-	slot10 = slot10._cloneForCmd
-	slot12 = slot7
-	slot13 = slot1 + 1
-	slot10 = slot10(slot12, slot13)
-	slot2[slot6] = slot10
+	--- BLOCK #13 38-39, warpins: 3 ---
+	slot3[slot7] = slot8
+	--- END OF BLOCK #13 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #14 40-41, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	if slot10 ~= "table" then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #15 46-47, warpins: 5 ---
+	--- BLOCK #15 42-43, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #16
+	if slot10 == "userdata" then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 48-48, warpins: 1 ---
-	return slot2
+	--- BLOCK #16 44-49, warpins: 2 ---
+	slot11 = HomeCmdImplement
+	slot11 = slot11._cloneForCmd
+	slot13 = slot8
+	slot14 = slot1 + 1
+	slot11 = slot11(slot13, slot14)
+	slot3[slot7] = slot11
+
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 50-51, warpins: 5 ---
+	--- END OF BLOCK #17 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #18
+
+
+	--- BLOCK #18 52-52, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_bddDeepClone"
+slot22[slot31] = slot32
+slot31 = "_bddDeepClone"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0
@@ -17754,10 +17967,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_itemName"
+slot22[slot31] = slot32
+slot31 = "_itemName"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -17835,10 +18048,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_addItemCount"
+slot22[slot31] = slot32
+slot31 = "_addItemCount"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = type
 	slot6 = slot2
@@ -17948,45 +18161,47 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectFormulaOutputs"
+slot22[slot31] = slot32
+slot31 = "_collectFormulaOutputs"
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
-	slot3 = type
+	slot3 = HomeCmdImplement
+	slot3 = slot3._isTableLike
 	slot5 = slot0
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= "table" then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-8, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #2 9-13, warpins: 1 ---
-	slot3 = type
+	--- BLOCK #2 10-15, warpins: 1 ---
+	slot3 = HomeCmdImplement
+	slot3 = slot3._isTableLike
 	slot5 = slot0.outputs
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	if slot3 == "table" then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #3 14-17, warpins: 1 ---
+	--- BLOCK #3 16-19, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot0.outputs
 	slot3, slot4, slot5 = slot3(slot5)
@@ -17995,20 +18210,21 @@ slot31 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 18-22, warpins: 1 ---
-	slot8 = type
+	--- BLOCK #4 20-25, warpins: 1 ---
+	slot8 = HomeCmdImplement
+	slot8 = slot8._isTableLike
 	slot10 = slot7
 	slot8 = slot8(slot10)
 	--- END OF BLOCK #4 ---
 
-	if slot8 == "table" then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 23-30, warpins: 1 ---
+	--- BLOCK #5 26-33, warpins: 1 ---
 	slot8 = HomeCmdImplement
 	slot8 = slot8._addItemCount
 	slot10 = slot1
@@ -18024,7 +18240,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #6 31-31, warpins: 1 ---
+	--- BLOCK #6 34-34, warpins: 1 ---
 	slot13 = 1
 
 	--- END OF BLOCK #6 ---
@@ -18032,7 +18248,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 32-32, warpins: 2 ---
+	--- BLOCK #7 35-35, warpins: 2 ---
 	slot8(slot10, slot11, slot12, slot13)
 
 	--- END OF BLOCK #7 ---
@@ -18040,7 +18256,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 33-34, warpins: 3 ---
+	--- BLOCK #8 36-37, warpins: 3 ---
 	--- END OF BLOCK #8 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -18048,7 +18264,7 @@ slot31 = function(slot0)
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 35-37, warpins: 2 ---
+	--- BLOCK #9 38-40, warpins: 2 ---
 	slot3 = #slot1
 	--- END OF BLOCK #9 ---
 
@@ -18059,7 +18275,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #10 38-45, warpins: 1 ---
+	--- BLOCK #10 41-48, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._addItemCount
 	slot5 = slot1
@@ -18075,7 +18291,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #11 46-46, warpins: 1 ---
+	--- BLOCK #11 49-49, warpins: 1 ---
 	slot8 = 1
 
 	--- END OF BLOCK #11 ---
@@ -18083,7 +18299,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 47-47, warpins: 2 ---
+	--- BLOCK #12 50-50, warpins: 2 ---
 	slot3(slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #12 ---
@@ -18091,7 +18307,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 48-54, warpins: 2 ---
+	--- BLOCK #13 51-57, warpins: 2 ---
 	slot3 = table
 	slot3 = slot3.sort
 	slot5 = slot1
@@ -18174,7 +18390,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 55-55, warpins: 2 ---
+	--- BLOCK #14 58-58, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #14 ---
 
@@ -18182,32 +18398,33 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectFormulaConsumables"
+slot22[slot31] = slot32
+slot31 = "_collectFormulaConsumables"
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
-	slot3 = type
+	slot3 = HomeCmdImplement
+	slot3 = slot3._isTableLike
 	slot5 = slot0
 	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= "table" then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-8, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 9-12, warpins: 1 ---
+	--- BLOCK #2 10-13, warpins: 1 ---
 	slot3 = 1
 	slot4 = 5
 	slot5 = 1
@@ -18216,7 +18433,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-30, warpins: 2 ---
+	--- BLOCK #3 14-31, warpins: 2 ---
 	slot7 = HomeCmdImplement
 	slot7 = slot7._addItemCount
 	slot9 = slot1
@@ -18242,7 +18459,7 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #4 31-31, warpins: 1 ---
+	--- BLOCK #4 32-32, warpins: 1 ---
 	slot12 = 1
 
 	--- END OF BLOCK #4 ---
@@ -18250,7 +18467,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 32-33, warpins: 2 ---
+	--- BLOCK #5 33-34, warpins: 2 ---
 	slot7(slot9, slot10, slot11, slot12)
 
 	--- END OF BLOCK #5 ---
@@ -18259,7 +18476,7 @@ slot31 = function(slot0)
 	LOOP BLOCK #3
 	GO OUT TO BLOCK #6
 
-	--- BLOCK #6 34-40, warpins: 1 ---
+	--- BLOCK #6 35-41, warpins: 1 ---
 	slot3 = table
 	slot3 = slot3.sort
 	slot5 = slot1
@@ -18342,7 +18559,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 41-41, warpins: 2 ---
+	--- BLOCK #7 42-42, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #7 ---
 
@@ -18350,11 +18567,11 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectFormulaOperateIds"
+slot22[slot31] = slot32
+slot31 = "_collectFormulaOperateIds"
 
-slot31 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot32 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
 
@@ -18421,19 +18638,20 @@ slot31 = function(slot0)
 
 	end
 
-	slot4 = type
+	slot4 = HomeCmdImplement
+	slot4 = slot4._isTableLike
 	slot6 = slot0
 	slot4 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	if slot4 == "table" then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
+	--- BLOCK #1 10-13, warpins: 1 ---
 	slot4 = ipairs
 	slot6 = slot0.preOperateList
 	--- END OF BLOCK #1 ---
@@ -18445,21 +18663,21 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #2 13-13, warpins: 1 ---
-	slot6 = {}
+	--- BLOCK #2 14-14, warpins: 1 ---
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 14-15, warpins: 2 ---
+	--- BLOCK #3 15-16, warpins: 2 ---
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 16-18, warpins: 1 ---
+	--- BLOCK #4 17-19, warpins: 1 ---
 	slot9 = slot3
 	slot11 = slot8
 
@@ -18470,7 +18688,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-20, warpins: 2 ---
+	--- BLOCK #5 20-21, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -18478,7 +18696,7 @@ slot31 = function(slot0)
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 21-24, warpins: 1 ---
+	--- BLOCK #6 22-25, warpins: 1 ---
 	slot4 = ipairs
 	slot6 = slot0.postOperateList
 	--- END OF BLOCK #6 ---
@@ -18490,21 +18708,21 @@ slot31 = function(slot0)
 	end
 
 
-	--- BLOCK #7 25-25, warpins: 1 ---
-	slot6 = {}
+	--- BLOCK #7 26-26, warpins: 1 ---
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 26-27, warpins: 2 ---
+	--- BLOCK #8 27-28, warpins: 2 ---
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 28-30, warpins: 1 ---
+	--- BLOCK #9 29-31, warpins: 1 ---
 	slot9 = slot3
 	slot11 = slot8
 
@@ -18515,7 +18733,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 31-32, warpins: 2 ---
+	--- BLOCK #10 32-33, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -18523,7 +18741,7 @@ slot31 = function(slot0)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 33-38, warpins: 1 ---
+	--- BLOCK #11 34-39, warpins: 1 ---
 	slot4 = slot3
 	slot6 = slot0.timerState
 
@@ -18539,7 +18757,7 @@ slot31 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 39-44, warpins: 2 ---
+	--- BLOCK #12 40-45, warpins: 2 ---
 	slot4 = table
 	slot4 = slot4.sort
 	slot6 = slot1
@@ -18553,10 +18771,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectFacilityFormulaIds"
+slot22[slot31] = slot32
+slot31 = "_collectFacilityFormulaIds"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = {}
 	slot3 = {}
@@ -18711,7 +18929,7 @@ slot31 = function(slot0, slot1)
 
 
 	--- BLOCK #8 29-29, warpins: 1 ---
-	slot9 = {}
+	slot9 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -18756,7 +18974,7 @@ slot31 = function(slot0, slot1)
 
 
 	--- BLOCK #13 41-41, warpins: 1 ---
-	slot9 = {}
+	slot9 = EMPTY_TABLE
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
@@ -18801,7 +19019,7 @@ slot31 = function(slot0, slot1)
 
 
 	--- BLOCK #18 53-53, warpins: 1 ---
-	slot9 = {}
+	slot9 = EMPTY_TABLE
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
@@ -18841,16 +19059,16 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getOperateRequirement"
+slot22[slot31] = slot32
+slot31 = "_getOperateRequirement"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = HomelandOperateData
 	slot1 = slot1[slot0]
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	if slot1 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -18861,7 +19079,7 @@ slot31 = function(slot0)
 	slot2 = slot1.homeAbility
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
+	if slot2 == nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -18976,10 +19194,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getFacilityRequiredAbility"
+slot22[slot31] = slot32
+slot31 = "_getFacilityRequiredAbility"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -19098,10 +19316,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getPetAbilityLevel"
+slot22[slot31] = slot32
+slot31 = "_getPetAbilityLevel"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -19216,10 +19434,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_petCanDoOperate"
+slot22[slot31] = slot32
+slot31 = "_petCanDoOperate"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -19446,10 +19664,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_petCanDoOperateList"
+slot22[slot31] = slot32
+slot31 = "_petCanDoOperateList"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -19533,10 +19751,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_collectFacilityPets"
+slot22[slot31] = slot32
+slot31 = "_collectFacilityPets"
 
-slot31 = function()
+slot32 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = {}
 	slot1 = {}
@@ -20035,7 +20253,7 @@ slot31 = function()
 
 
 	--- BLOCK #9 55-55, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
@@ -20270,153 +20488,174 @@ slot31 = function()
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getPetBoxCapacity"
+slot22[slot31] = slot32
+slot31 = "_getPetBoxCapacity"
 
-slot31 = function()
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot32 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = HomeCmdImplement
 	slot0 = slot0._getHomePetBox
 	slot0 = slot0()
+	slot1 = HomeCmdImplement
+	slot1 = slot1._getHomeSpace
+	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
-	slot0 = if slot0 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot1 = slot0.slotCount
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot2 = slot1.petBoxMap
 	--- END OF BLOCK #1 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 9-10, warpins: 1 ---
-	slot1 = 0
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 11-11, warpins: 1 ---
-	slot1 = 0
+	--- BLOCK #3 12-16, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.getSlotCount
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 12-13, warpins: 3 ---
-	--- END OF BLOCK #4 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #5
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 14-16, warpins: 1 ---
-	slot2 = slot0.count
+	--- BLOCK #4 17-17, warpins: 2 ---
+	slot3 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-19, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
-	slot2 = if not slot2 then
+	slot0 = if slot0 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 17-18, warpins: 1 ---
-	slot2 = 0
+	--- BLOCK #6 20-22, warpins: 1 ---
+	slot4 = slot0.count
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #7 19-19, warpins: 1 ---
-	slot2 = 0
+	--- BLOCK #7 23-24, warpins: 1 ---
+	slot4 = 0
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 20-21, warpins: 3 ---
+	--- BLOCK #8 25-25, warpins: 1 ---
+	slot4 = 0
 	--- END OF BLOCK #8 ---
 
-	slot0 = if slot0 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 22-26, warpins: 1 ---
-	slot3 = 0
-	slot4 = 1
-	slot5 = slot1
-	slot6 = 1
+	--- BLOCK #9 26-27, warpins: 3 ---
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #22
+	end
 
 
-	--- BLOCK #10 27-29, warpins: 2 ---
-	slot8 = slot0[slot7]
+	--- BLOCK #10 28-32, warpins: 1 ---
+	slot5 = 0
+	slot6 = 1
+	slot7 = slot3
+	slot8 = 1
 	--- END OF BLOCK #10 ---
 
-	if slot8 ~= nil then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 30-31, warpins: 1 ---
+	--- BLOCK #11 33-41, warpins: 2 ---
+	slot12 = slot2
+	slot10 = slot2.getPetId
+	slot13 = Const
+	slot13 = slot13.HOMELAND_AREA_TYPE
+	slot13 = slot13.PRODUCE
+	slot14 = slot9
+	slot10 = slot10(slot12, slot13, slot14)
 	--- END OF BLOCK #11 ---
 
-	if slot8 ~= 0 then
+	if slot10 ~= nil then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 32-33, warpins: 1 ---
+	--- BLOCK #12 42-43, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	if slot8 ~= "" then
+	if slot10 ~= 0 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 34-34, warpins: 1 ---
-	slot3 = slot3 + 1
+	--- BLOCK #13 44-45, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	if slot10 ~= "" then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #14 35-35, warpins: 4 ---
+	--- BLOCK #14 46-46, warpins: 1 ---
+	slot5 = slot5 + 1
 	--- END OF BLOCK #14 ---
 
-	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #15
+	FLOW; TARGET BLOCK #15
 
-	--- BLOCK #15 36-41, warpins: 1 ---
-	slot4 = HomeCmdImplement
-	slot4 = slot4._safeCall
 
-	slot6 = function()
+	--- BLOCK #15 47-47, warpins: 4 ---
+	--- END OF BLOCK #15 ---
+
+	for slot9=slot6, slot7, slot8
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #16
+
+	--- BLOCK #16 48-53, warpins: 1 ---
+	slot6 = HomeCmdImplement
+	slot6 = slot6._safeCall
+
+	slot8 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = HomeLandUtils
 		slot0 = slot0.getPetCurCount
@@ -20431,83 +20670,115 @@ slot31 = function()
 
 	end
 
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #15 ---
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #16 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #16
-	else
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #16 42-42, warpins: 1 ---
-	slot4 = 0
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 43-49, warpins: 2 ---
-	slot5 = math
-	slot5 = slot5.max
-	slot7 = slot2
-	slot8 = slot3
-	slot9 = slot4
-	slot5 = slot5(slot7, slot8, slot9)
-	slot2 = slot5
+	--- BLOCK #17 54-54, warpins: 1 ---
+	slot6 = 0
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 50-60, warpins: 2 ---
-	slot3 = {}
-	slot3.count = slot2
-	slot3.slotCount = slot1
-	slot4 = math
-	slot4 = slot4.max
-	slot6 = 0
-	slot7 = slot1 - slot2
-	slot4 = slot4(slot6, slot7)
-	slot3.remaining = slot4
+	--- BLOCK #18 55-57, warpins: 2 ---
+	slot7 = slot2.getTotalPetCount
 	--- END OF BLOCK #18 ---
 
-	if slot0 == nil then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 61-62, warpins: 1 ---
-	slot4 = false
+	--- BLOCK #19 58-62, warpins: 1 ---
+	slot9 = slot2
+	slot7 = slot2.getTotalPetCount
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #20 63-63, warpins: 1 ---
-	slot4 = true
+	--- BLOCK #20 63-63, warpins: 2 ---
+	slot7 = 0
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 64-66, warpins: 2 ---
-	slot3.ready = slot4
-
-	return slot3
+	--- BLOCK #21 64-71, warpins: 2 ---
+	slot8 = math
+	slot8 = slot8.max
+	slot10 = slot4
+	slot11 = slot5
+	slot12 = slot6
+	slot13 = slot7
+	slot8 = slot8(slot10, slot11, slot12, slot13)
+	slot4 = slot8
 	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 72-82, warpins: 2 ---
+	slot5 = {}
+	slot5.count = slot4
+	slot5.slotCount = slot3
+	slot6 = math
+	slot6 = slot6.max
+	slot8 = 0
+	slot9 = slot3 - slot4
+	slot6 = slot6(slot8, slot9)
+	slot5.remaining = slot6
+	--- END OF BLOCK #22 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 83-84, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #23 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #24 85-85, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 86-88, warpins: 2 ---
+	slot5.ready = slot6
+
+	return slot5
+	--- END OF BLOCK #25 ---
 
 
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_getFacilityTemplateId"
+slot22[slot31] = slot32
+slot31 = "_getFacilityTemplateId"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = type
 	slot3 = Utils
@@ -20624,10 +20895,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildMaterialStatus"
+slot22[slot31] = slot32
+slot31 = "_buildMaterialStatus"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -20643,7 +20914,7 @@ slot31 = function(slot0)
 
 
 	--- BLOCK #1 7-7, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -20832,10 +21103,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildFormulaWorkInfo"
+slot22[slot31] = slot32
+slot31 = "_buildFormulaWorkInfo"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -20992,10 +21263,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findAssignedPet"
+slot22[slot31] = slot32
+slot31 = "_findAssignedPet"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = ipairs
 	--- END OF BLOCK #0 ---
@@ -21019,7 +21290,7 @@ slot31 = function(slot0, slot1)
 
 
 	--- BLOCK #2 7-7, warpins: 2 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -21070,10 +21341,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findEligibleHomePet"
+slot22[slot31] = slot32
+slot31 = "_findEligibleHomePet"
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = ipairs
 	--- END OF BLOCK #0 ---
@@ -21097,7 +21368,7 @@ slot31 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 7-7, warpins: 2 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -21201,10 +21472,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findEligibleBagPet"
+slot22[slot31] = slot32
+slot31 = "_findEligibleBagPet"
 
-slot31 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = ipairs
 	--- END OF BLOCK #0 ---
@@ -21228,7 +21499,7 @@ slot31 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 7-7, warpins: 2 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -21321,10 +21592,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_makeFacilityAction"
+slot22[slot31] = slot32
+slot31 = "_makeFacilityAction"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = {
 		riskLevel = "safe"
@@ -21358,10 +21629,10 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildFacilityWorkPlan"
+slot22[slot31] = slot32
+slot31 = "_buildFacilityWorkPlan"
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -22110,10 +22381,10 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_normalizeMaxActions"
+slot22[slot31] = slot32
+slot31 = "_normalizeMaxActions"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -22212,10 +22483,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_selectFacilityBatchActions"
+slot22[slot31] = slot32
+slot31 = "_selectFacilityBatchActions"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -22429,10 +22700,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildUpgradeCostList"
+slot22[slot31] = slot32
+slot31 = "_buildUpgradeCostList"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = true
@@ -22447,7 +22718,7 @@ slot31 = function(slot0)
 
 
 	--- BLOCK #1 6-6, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -22724,10 +22995,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildSingleFacilityUpgradePlan"
+slot22[slot31] = slot32
+slot31 = "_buildSingleFacilityUpgradePlan"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -23027,10 +23298,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildSetFromList"
+slot22[slot31] = slot32
+slot31 = "_buildSetFromList"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = type
@@ -23092,10 +23363,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_normalizePlacePetCount"
+slot22[slot31] = slot32
+slot31 = "_normalizePlacePetCount"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -23192,10 +23463,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_buildPlaceHomePetsPlanData"
+slot22[slot31] = slot32
+slot31 = "_buildPlaceHomePetsPlanData"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HomeCmdImplement
 	slot1 = slot1._requireHomeland
@@ -23277,7 +23548,7 @@ slot31 = function(slot0)
 	slot6 = Const
 	slot6 = slot6.CMD_SOCKET_ERROR
 	slot6 = slot6.PARAM
-	slot7 = "petBoxMap[1] not ready"
+	slot7 = "petBoxMap not ready"
 	MULTRES = slot4(slot6, slot7)
 	--- END OF BLOCK #6 ---
 
@@ -24095,9 +24366,9 @@ slot31 = function(slot0)
 
 	--- BLOCK #65 315-335, warpins: 3 ---
 	slot19 = {
-		safetyRule = "批量放宠物只选择玩家背包中可加入家园的宠物；跳过出战、探索、已在家园宠物；按家园宠物剩余容量截断。",
 		snapshotId = "placeHomePetsPlan",
-		bridgeVersion = "v2"
+		bridgeVersion = "v2",
+		safetyRule = "批量放宠物只选择玩家背包中可加入家园的宠物；跳过出战、探索、已在家园宠物；按家园宠物剩余容量截断。"
 	}
 	slot19.planStatus = slot16
 	slot19.petBox = slot2
@@ -24146,9 +24417,9 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
+slot22[slot31] = slot32
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -24496,9 +24767,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.isInHomeland = slot30
+slot22.isInHomeland = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = {}
 	slot4 = pairs
@@ -24671,9 +24942,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getConfigTables = slot30
+slot22.getConfigTables = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -24792,7 +25063,7 @@ slot30 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 43-52, warpins: 2 ---
+	--- BLOCK #10 43-55, warpins: 2 ---
 	slot6 = "Data."
 	slot7 = slot3
 	slot6 = slot6 .. slot7
@@ -24801,29 +25072,19 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = require
 	slot10 = slot6
 	slot7, slot8 = slot7(slot9, slot10)
+	slot9 = type
+	slot11 = slot7
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #10 ---
 
-	slot7 = if slot7 then
+	if slot9 ~= "table" then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 53-57, warpins: 1 ---
-	slot9 = type
-	slot11 = slot7
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #11 ---
-
-	if slot9 ~= "table" then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 58-70, warpins: 2 ---
+	--- BLOCK #11 56-68, warpins: 1 ---
 	slot9 = HomeCmdImplement
 	slot9 = slot9._err
 	slot11 = Const
@@ -24839,23 +25100,23 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot9(slot11, slot12)
 
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 69-71, warpins: 2 ---
+	slot9 = slot7[slot4]
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 71-73, warpins: 2 ---
-	slot9 = slot7[slot4]
-	--- END OF BLOCK #13 ---
-
 	slot9 = if not slot9 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #14 74-86, warpins: 1 ---
+	--- BLOCK #13 72-84, warpins: 1 ---
 	slot10 = HomeCmdImplement
 	slot10 = slot10._err
 	slot12 = Const
@@ -24871,95 +25132,95 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot10(slot12, slot13)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #15 87-94, warpins: 2 ---
+	--- BLOCK #14 85-92, warpins: 2 ---
 	slot10 = HomeCmdImplement
 	slot10 = slot10._bddDeepClone
 	slot12 = slot9
 	slot10 = slot10(slot12)
 	slot9 = slot10
 	slot10 = slot2.localizeFields
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #14 ---
 
 	if slot10 == nil then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #16 95-95, warpins: 1 ---
+	--- BLOCK #15 93-93, warpins: 1 ---
 	slot10 = slot5.localizeFields
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 94-96, warpins: 2 ---
+	slot11 = slot5.useWhiteList
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	slot11 = if slot11 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #17 96-98, warpins: 2 ---
-	slot11 = slot5.useWhiteList
+	--- BLOCK #17 97-98, warpins: 1 ---
+	slot11 = true
 	--- END OF BLOCK #17 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 99-100, warpins: 1 ---
-	slot11 = true
+	--- BLOCK #18 99-99, warpins: 1 ---
+	slot11 = false
 	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 101-101, warpins: 1 ---
-	slot11 = false
+	--- BLOCK #19 100-102, warpins: 2 ---
+	slot12 = nil
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 102-104, warpins: 2 ---
-	slot12 = nil
-	--- END OF BLOCK #20 ---
-
 	slot11 = if slot11 then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #21 105-111, warpins: 1 ---
+	--- BLOCK #20 103-109, warpins: 1 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._applyWhiteList
 	slot15 = slot9
 	slot16 = slot5.showFields
 	slot13 = slot13(slot15, slot16)
 	slot12 = slot13
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #22 112-117, warpins: 1 ---
+	--- BLOCK #21 110-115, warpins: 1 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._applyHiddenFields
 	slot15 = slot9
 	slot16 = slot5.hiddenFields
 	slot13 = slot13(slot15, slot16)
 	slot12 = slot13
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #23 118-131, warpins: 2 ---
+	--- BLOCK #22 116-129, warpins: 2 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._applyLocalize
 	slot15 = slot12
@@ -24972,74 +25233,74 @@ slot30 = function(slot0, slot1, slot2)
 	slot15.table = slot3
 	slot15.id = slot4
 	slot15.row = slot12
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #22 ---
 
 	slot16 = if not slot10 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #24 132-132, warpins: 1 ---
+	--- BLOCK #23 130-130, warpins: 1 ---
 	slot16 = {}
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #25 133-137, warpins: 2 ---
+	--- BLOCK #24 131-135, warpins: 2 ---
 	slot15.localizedFields = slot16
 	slot15.useWhiteList = slot11
 	slot16 = slot5.showFields
+	--- END OF BLOCK #24 ---
+
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 136-136, warpins: 1 ---
+	slot16 = {}
 	--- END OF BLOCK #25 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 138-138, warpins: 1 ---
-	slot16 = {}
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 139-142, warpins: 2 ---
+	--- BLOCK #26 137-140, warpins: 2 ---
 	slot15.showFields = slot16
 	slot16 = slot5.hiddenFields
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #26 ---
 
 	slot16 = if not slot16 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #28 143-143, warpins: 1 ---
+	--- BLOCK #27 141-141, warpins: 1 ---
 	slot16 = {}
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #27 ---
 
-	FLOW; TARGET BLOCK #29
+	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #29 144-145, warpins: 2 ---
+	--- BLOCK #28 142-143, warpins: 2 ---
 	slot15.hiddenFields = slot16
 
 	return slot13(slot15)
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot21.getConfig = slot30
+slot22.getConfig = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -25149,9 +25410,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFacility = slot30
+slot22.getFacility = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -25472,9 +25733,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFacilities = slot30
+slot22.getFacilities = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -25728,9 +25989,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getEnvironment = slot30
+slot22.getEnvironment = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3.getEnvironment
@@ -25745,9 +26006,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getZoneEnvironment = slot30
+slot22.getZoneEnvironment = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -25876,9 +26137,1158 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFacilityEnvEffect = slot30
+slot22.getFacilityEnvEffect = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = HomeCmdImplement
+	slot3 = slot3._requireHomeland
+	slot3 = slot3()
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #89
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	slot2 = {}
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-15, warpins: 2 ---
+	slot4 = slot2.homeTemplateId
+	slot5 = type
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	if slot5 ~= "number" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-22, warpins: 1 ---
+	slot5 = HomeCmdImplement
+	slot5 = slot5._err
+	slot7 = Const
+	slot7 = slot7.CMD_SOCKET_ERROR
+	slot7 = slot7.PARAM
+	slot8 = "missing params.homeTemplateId"
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #90
+
+
+	--- BLOCK #6 23-28, warpins: 1 ---
+	slot5 = slot2.position
+	slot6 = type
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #6 ---
+
+	if slot6 == "table" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 29-33, warpins: 1 ---
+	slot6 = type
+	slot8 = slot5.x
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #7 ---
+
+	if slot6 == "number" then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 34-38, warpins: 1 ---
+	slot6 = type
+	slot8 = slot5.z
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
+
+	if slot6 ~= "number" then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-45, warpins: 3 ---
+	slot6 = HomeCmdImplement
+	slot6 = slot6._err
+	slot8 = Const
+	slot8 = slot8.CMD_SOCKET_ERROR
+	slot8 = slot8.PARAM
+	slot9 = "missing params.position {x,y,z}"
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #91
+
+
+	--- BLOCK #10 46-50, warpins: 1 ---
+	slot6 = tonumber
+	slot8 = slot2.yawAngle
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #10 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 51-51, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 52-55, warpins: 2 ---
+	slot7 = HomeObjectData
+	slot7 = slot7[slot4]
+	--- END OF BLOCK #12 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 56-66, warpins: 1 ---
+	slot8 = HomeCmdImplement
+	slot8 = slot8._err
+	slot10 = Const
+	slot10 = slot10.CMD_SOCKET_ERROR
+	slot10 = slot10.PARAM
+	slot11 = "home object not found: "
+	slot12 = tostring
+	slot14 = slot4
+	slot12 = slot12(slot14)
+	slot11 = slot11 .. slot12
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
+
+
+	--- BLOCK #14 67-72, warpins: 1 ---
+	slot8 = HomeCmdImplement
+	slot8 = slot8._getFacilityTemplateId
+	slot10 = slot4
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #14 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 73-76, warpins: 1 ---
+	slot9 = HomelandFacilityData
+	slot9 = slot9[slot8]
+	--- END OF BLOCK #15 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 77-77, warpins: 2 ---
+	slot9 = nil
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 78-79, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 80-90, warpins: 1 ---
+	slot10 = HomeCmdImplement
+	slot10 = slot10._err
+	slot12 = Const
+	slot12 = slot12.CMD_SOCKET_ERROR
+	slot12 = slot12.PARAM
+	slot13 = "facility data not found for homeTemplateId "
+	slot14 = tostring
+	slot16 = slot4
+	slot14 = slot14(slot16)
+	slot13 = slot13 .. slot14
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #93
+
+
+	--- BLOCK #19 91-96, warpins: 1 ---
+	slot10 = slot9.envBounds
+	slot11 = type
+	slot13 = slot10
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #19 ---
+
+	if slot11 == "table" then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 97-101, warpins: 1 ---
+	slot11 = type
+	slot13 = slot10[1]
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #20 ---
+
+	if slot11 == "number" then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 102-106, warpins: 1 ---
+	slot11 = type
+	slot13 = slot10[2]
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #21 ---
+
+	if slot11 ~= "number" then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 107-117, warpins: 3 ---
+	slot11 = HomeCmdImplement
+	slot11 = slot11._err
+	slot13 = Const
+	slot13 = slot13.CMD_SOCKET_ERROR
+	slot13 = slot13.PARAM
+	slot14 = "this facility has no envBounds (not an env source): homeTemplateId="
+	slot15 = tostring
+	slot17 = slot4
+	slot15 = slot15(slot17)
+	slot14 = slot14 .. slot15
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #94
+
+
+	--- BLOCK #23 118-129, warpins: 1 ---
+	slot11 = slot10[1]
+	slot11 = slot11 * 0.5
+	slot12 = slot10[2]
+	slot12 = slot12 * 0.5
+	slot13 = slot6 % 180
+	slot14 = math
+	slot14 = slot14.abs
+	slot16 = slot13 - 90
+	slot14 = slot14(slot16)
+	slot15 = 1
+	--- END OF BLOCK #23 ---
+
+	if slot14 >= slot15 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 130-131, warpins: 1 ---
+	slot14 = false
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #25 132-132, warpins: 1 ---
+	slot14 = true
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 133-134, warpins: 2 ---
+	--- END OF BLOCK #26 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 135-137, warpins: 1 ---
+	slot15 = slot12
+	slot12 = slot11
+	slot11 = slot15
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 138-150, warpins: 2 ---
+	slot15 = slot5.x
+	slot15 = slot15 - slot11
+	slot16 = slot5.x
+	slot16 = slot16 + slot11
+	slot17 = slot5.z
+	slot17 = slot17 - slot12
+	slot18 = slot5.z
+	slot18 = slot18 + slot12
+	slot19 = slot9.facilityType
+	slot20 = Const
+	slot20 = slot20.HOMELAND_ENV_FACILITY_RELATED_INFO
+	--- END OF BLOCK #28 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 151-153, warpins: 1 ---
+	slot21 = slot20[slot19]
+	--- END OF BLOCK #29 ---
+
+	slot21 = if not slot21 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #30 154-154, warpins: 2 ---
+	slot21 = nil
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 155-159, warpins: 2 ---
+	slot22 = HomeCmdImplement
+	slot22 = slot22._getRuntimeSpace
+	slot22 = slot22()
+	--- END OF BLOCK #31 ---
+
+	slot22 = if slot22 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 160-162, warpins: 1 ---
+	slot23 = slot22.ornament
+	--- END OF BLOCK #32 ---
+
+	slot23 = if not slot23 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 163-163, warpins: 2 ---
+	slot23 = nil
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 164-168, warpins: 2 ---
+	slot24 = type
+	slot26 = slot23
+	slot24 = slot24(slot26)
+	--- END OF BLOCK #34 ---
+
+	if slot24 ~= "table" then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 169-175, warpins: 1 ---
+	slot24 = HomeCmdImplement
+	slot24 = slot24._err
+	slot26 = Const
+	slot26 = slot26.CMD_SOCKET_ERROR
+	slot26 = slot26.PARAM
+	slot27 = "no space.ornament map"
+	--- END OF BLOCK #35 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #95
+
+
+	--- BLOCK #36 176-180, warpins: 1 ---
+	slot24 = {}
+	slot25 = pairs
+	slot27 = slot23
+	slot25, slot26, slot27 = slot25(slot27)
+	--- END OF BLOCK #36 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #37 181-186, warpins: 1 ---
+	slot30 = HomeCmdImplement
+	slot30 = slot30._safeCall
+
+	slot32 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = ornamentInfo
+		slot2 = slot0
+		slot0 = slot0.getPosition
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot30 = slot30(slot32)
+	--- END OF BLOCK #37 ---
+
+	if slot30 ~= nil then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #38 187-189, warpins: 1 ---
+	slot31 = slot30.x
+	--- END OF BLOCK #38 ---
+
+	if slot31 ~= nil then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #39 190-192, warpins: 1 ---
+	slot31 = slot30.z
+	--- END OF BLOCK #39 ---
+
+	if slot31 ~= nil then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #40 193-195, warpins: 1 ---
+	slot31 = slot30.x
+	--- END OF BLOCK #40 ---
+
+	if slot15 <= slot31 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #41 196-198, warpins: 1 ---
+	slot31 = slot30.x
+	--- END OF BLOCK #41 ---
+
+	if slot31 <= slot16 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #42 199-201, warpins: 1 ---
+	slot31 = slot30.z
+	--- END OF BLOCK #42 ---
+
+	if slot17 <= slot31 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #43 202-204, warpins: 1 ---
+	slot31 = slot30.z
+	--- END OF BLOCK #43 ---
+
+	if slot31 <= slot18 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #44 205-207, warpins: 1 ---
+	slot31 = slot29.homeId
+	--- END OF BLOCK #44 ---
+
+	slot32 = if slot31 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #45 208-211, warpins: 1 ---
+	slot32 = HomeCmdImplement
+	slot32 = slot32._getFacilityTemplateId
+	slot34 = slot31
+	slot32 = slot32(slot34)
+	--- END OF BLOCK #45 ---
+
+	FLOW; TARGET BLOCK #46
+
+
+	--- BLOCK #46 212-213, warpins: 2 ---
+	--- END OF BLOCK #46 ---
+
+	slot32 = if slot32 then
+	JUMP TO BLOCK #47
+	else
+	JUMP TO BLOCK #48
+	end
+
+
+	--- BLOCK #47 214-217, warpins: 1 ---
+	slot33 = HomelandFacilityData
+	slot33 = slot33[slot32]
+	--- END OF BLOCK #47 ---
+
+	slot33 = if not slot33 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #48 218-218, warpins: 2 ---
+	slot33 = nil
+	--- END OF BLOCK #48 ---
+
+	FLOW; TARGET BLOCK #49
+
+
+	--- BLOCK #49 219-220, warpins: 2 ---
+	--- END OF BLOCK #49 ---
+
+	slot33 = if slot33 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 221-223, warpins: 1 ---
+	slot34 = slot33.facilityType
+	--- END OF BLOCK #50 ---
+
+	slot34 = if not slot34 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
+
+
+	--- BLOCK #51 224-224, warpins: 2 ---
+	slot34 = nil
+	--- END OF BLOCK #51 ---
+
+	FLOW; TARGET BLOCK #52
+
+
+	--- BLOCK #52 225-226, warpins: 2 ---
+	--- END OF BLOCK #52 ---
+
+	if slot21 ~= nil then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #53 227-228, warpins: 1 ---
+	--- END OF BLOCK #53 ---
+
+	if slot34 ~= nil then
+	JUMP TO BLOCK #54
+	else
+	JUMP TO BLOCK #55
+	end
+
+
+	--- BLOCK #54 229-231, warpins: 1 ---
+	slot35 = slot21[slot34]
+	--- END OF BLOCK #54 ---
+
+	if slot35 ~= true then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #55 232-233, warpins: 2 ---
+	slot35 = false
+	--- END OF BLOCK #55 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #57
+
+
+	--- BLOCK #56 234-234, warpins: 2 ---
+	slot35 = true
+	--- END OF BLOCK #56 ---
+
+	FLOW; TARGET BLOCK #57
+
+
+	--- BLOCK #57 235-249, warpins: 2 ---
+	slot36 = slot30.x
+	slot37 = slot5.x
+	slot36 = slot36 - slot37
+	slot37 = slot30.z
+	slot38 = slot5.z
+	slot37 = slot37 - slot38
+	slot38 = #slot24
+	slot38 = slot38 + 1
+	slot39 = {}
+	slot39.ornamentId = slot28
+	slot39.homeTemplateId = slot31
+	slot40 = HomeCmdImplement
+	slot40 = slot40._localize
+	--- END OF BLOCK #57 ---
+
+	slot42 = if slot31 then
+	JUMP TO BLOCK #58
+	else
+	JUMP TO BLOCK #60
+	end
+
+
+	--- BLOCK #58 250-253, warpins: 1 ---
+	slot42 = HomeObjectData
+	slot42 = slot42[slot31]
+	--- END OF BLOCK #58 ---
+
+	slot42 = if slot42 then
+	JUMP TO BLOCK #59
+	else
+	JUMP TO BLOCK #60
+	end
+
+
+	--- BLOCK #59 254-256, warpins: 1 ---
+	slot42 = HomeObjectData
+	slot42 = slot42[slot31]
+	slot42 = slot42.name
+	--- END OF BLOCK #59 ---
+
+	FLOW; TARGET BLOCK #60
+
+
+	--- BLOCK #60 257-261, warpins: 3 ---
+	slot40 = slot40(slot42)
+	slot39.facilityName = slot40
+	slot39.facilityType = slot34
+	--- END OF BLOCK #60 ---
+
+	slot33 = if slot33 then
+	JUMP TO BLOCK #61
+	else
+	JUMP TO BLOCK #62
+	end
+
+
+	--- BLOCK #61 262-264, warpins: 1 ---
+	slot40 = slot33.typeName
+	--- END OF BLOCK #61 ---
+
+	slot40 = if not slot40 then
+	JUMP TO BLOCK #62
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #62 265-265, warpins: 2 ---
+	slot40 = nil
+	--- END OF BLOCK #62 ---
+
+	FLOW; TARGET BLOCK #63
+
+
+	--- BLOCK #63 266-280, warpins: 2 ---
+	slot39.facilityTypeName = slot40
+	slot40 = HomeCmdImplement
+	slot40 = slot40._vec3
+	slot42 = slot30
+	slot40 = slot40(slot42)
+	slot39.position = slot40
+	slot40 = math
+	slot40 = slot40.sqrt
+	slot42 = slot36 * slot36
+	slot43 = slot37 * slot37
+	slot42 = slot42 + slot43
+	slot40 = slot40(slot42)
+	slot39.distance = slot40
+	slot39.relevantToEnvSource = slot35
+	slot24[slot38] = slot39
+	--- END OF BLOCK #63 ---
+
+	FLOW; TARGET BLOCK #64
+
+
+	--- BLOCK #64 281-281, warpins: 8 ---
+	--- END OF BLOCK #64 ---
+
+	FLOW; TARGET BLOCK #65
+
+
+	--- BLOCK #65 282-283, warpins: 2 ---
+	--- END OF BLOCK #65 ---
+
+	for slot28, slot29 in slot25, slot26, slot27
+	LOOP BLOCK #37
+	GO OUT TO BLOCK #66
+
+
+	--- BLOCK #66 284-293, warpins: 1 ---
+	slot25 = table
+	slot25 = slot25.sort
+	slot27 = slot24
+
+	slot28 = function(slot0, slot1)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot2 = slot0.distance
+		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-4, warpins: 1 ---
+		slot2 = 0
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 5-7, warpins: 2 ---
+		slot3 = slot1.distance
+		--- END OF BLOCK #2 ---
+
+		slot3 = if not slot3 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 8-8, warpins: 1 ---
+		slot3 = 0
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 9-10, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 11-12, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #5 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #6 13-13, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 14-14, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #7 ---
+
+
+
+	end
+
+	slot25(slot27, slot28)
+
+	slot25 = 0
+	slot26 = ipairs
+	slot28 = slot24
+	slot26, slot27, slot28 = slot26(slot28)
+	--- END OF BLOCK #66 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #69
+
+
+	--- BLOCK #67 294-296, warpins: 1 ---
+	slot31 = slot30.relevantToEnvSource
+	--- END OF BLOCK #67 ---
+
+	slot31 = if slot31 then
+	JUMP TO BLOCK #68
+	else
+	JUMP TO BLOCK #69
+	end
+
+
+	--- BLOCK #68 297-297, warpins: 1 ---
+	slot25 = slot25 + 1
+	--- END OF BLOCK #68 ---
+
+	FLOW; TARGET BLOCK #69
+
+
+	--- BLOCK #69 298-299, warpins: 3 ---
+	--- END OF BLOCK #69 ---
+
+	for slot29, slot30 in slot26, slot27, slot28
+	LOOP BLOCK #67
+	GO OUT TO BLOCK #70
+
+
+	--- BLOCK #70 300-305, warpins: 1 ---
+	slot26 = nil
+	slot27 = type
+	slot29 = slot2.targetFacilityIds
+	slot27 = slot27(slot29)
+	--- END OF BLOCK #70 ---
+
+	if slot27 == "table" then
+	JUMP TO BLOCK #71
+	else
+	JUMP TO BLOCK #86
+	end
+
+
+	--- BLOCK #71 306-311, warpins: 1 ---
+	slot26 = {}
+	slot27 = {}
+	slot28 = ipairs
+	slot30 = slot24
+	slot28, slot29, slot30 = slot28(slot30)
+	--- END OF BLOCK #71 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #73
+
+
+	--- BLOCK #72 312-313, warpins: 1 ---
+	slot33 = slot32.ornamentId
+	slot27[slot33] = slot32
+	--- END OF BLOCK #72 ---
+
+	FLOW; TARGET BLOCK #73
+
+
+	--- BLOCK #73 314-315, warpins: 2 ---
+	--- END OF BLOCK #73 ---
+
+	for slot31, slot32 in slot28, slot29, slot30
+	LOOP BLOCK #72
+	GO OUT TO BLOCK #74
+
+
+	--- BLOCK #74 316-319, warpins: 1 ---
+	slot28 = ipairs
+	slot30 = slot2.targetFacilityIds
+	slot28, slot29, slot30 = slot28(slot30)
+	--- END OF BLOCK #74 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #85
+
+
+	--- BLOCK #75 320-326, warpins: 1 ---
+	slot33 = slot27[slot32]
+	slot34 = #slot26
+	slot34 = slot34 + 1
+	slot35 = {}
+	slot35.facilityId = slot32
+	--- END OF BLOCK #75 ---
+
+	if slot33 == nil then
+	JUMP TO BLOCK #76
+	else
+	JUMP TO BLOCK #77
+	end
+
+
+	--- BLOCK #76 327-328, warpins: 1 ---
+	slot36 = false
+	--- END OF BLOCK #76 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #78
+
+
+	--- BLOCK #77 329-329, warpins: 1 ---
+	slot36 = true
+	--- END OF BLOCK #77 ---
+
+	FLOW; TARGET BLOCK #78
+
+
+	--- BLOCK #78 330-332, warpins: 2 ---
+	slot35.covered = slot36
+	--- END OF BLOCK #78 ---
+
+	if slot33 ~= nil then
+	JUMP TO BLOCK #79
+	else
+	JUMP TO BLOCK #80
+	end
+
+
+	--- BLOCK #79 333-335, warpins: 1 ---
+	slot36 = slot33.relevantToEnvSource
+	--- END OF BLOCK #79 ---
+
+	slot36 = if not slot36 then
+	JUMP TO BLOCK #80
+	else
+	JUMP TO BLOCK #81
+	end
+
+
+	--- BLOCK #80 336-336, warpins: 2 ---
+	slot36 = false
+	--- END OF BLOCK #80 ---
+
+	FLOW; TARGET BLOCK #81
+
+
+	--- BLOCK #81 337-339, warpins: 2 ---
+	slot35.relevantToEnvSource = slot36
+	--- END OF BLOCK #81 ---
+
+	if slot33 ~= nil then
+	JUMP TO BLOCK #82
+	else
+	JUMP TO BLOCK #83
+	end
+
+
+	--- BLOCK #82 340-342, warpins: 1 ---
+	slot36 = slot33.distance
+	--- END OF BLOCK #82 ---
+
+	slot36 = if not slot36 then
+	JUMP TO BLOCK #83
+	else
+	JUMP TO BLOCK #84
+	end
+
+
+	--- BLOCK #83 343-343, warpins: 2 ---
+	slot36 = nil
+	--- END OF BLOCK #83 ---
+
+	FLOW; TARGET BLOCK #84
+
+
+	--- BLOCK #84 344-345, warpins: 2 ---
+	slot35.distance = slot36
+	slot26[slot34] = slot35
+	--- END OF BLOCK #84 ---
+
+	FLOW; TARGET BLOCK #85
+
+
+	--- BLOCK #85 346-347, warpins: 2 ---
+	--- END OF BLOCK #85 ---
+
+	for slot31, slot32 in slot28, slot29, slot30
+	LOOP BLOCK #75
+	GO OUT TO BLOCK #86
+
+
+	--- BLOCK #86 348-377, warpins: 2 ---
+	slot27 = HomeCmdImplement
+	slot27 = slot27._getEnvProvideInfo
+	slot29 = slot19
+	slot30 = {}
+	slot27 = slot27(slot29, slot30)
+	slot28 = HomeCmdImplement
+	slot28 = slot28._ok
+	slot30 = {}
+	slot30.homeTemplateId = slot4
+	slot31 = HomeCmdImplement
+	slot31 = slot31._localize
+	slot33 = slot7.name
+	slot31 = slot31(slot33)
+	slot30.facilityName = slot31
+	slot30.facilityTemplateId = slot8
+	slot30.facilityType = slot19
+	slot31 = slot9.typeName
+	slot30.facilityTypeName = slot31
+	slot30.provides = slot27
+	slot31 = HomeCmdImplement
+	slot31 = slot31._cloneForCmd
+	slot33 = slot10
+	slot31 = slot31(slot33)
+	slot30.envBounds = slot31
+	slot31 = {}
+	slot32 = slot5.x
+	slot31.x = slot32
+	slot32 = slot5.y
+	--- END OF BLOCK #86 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #87
+	else
+	JUMP TO BLOCK #88
+	end
+
+
+	--- BLOCK #87 378-378, warpins: 1 ---
+	slot32 = 0
+	--- END OF BLOCK #87 ---
+
+	FLOW; TARGET BLOCK #88
+
+
+	--- BLOCK #88 379-397, warpins: 2 ---
+	slot31.y = slot32
+	slot32 = slot5.z
+	slot31.z = slot32
+	slot30.position = slot31
+	slot30.yawAngle = slot6
+	slot30.isVerticalRotation = slot14
+	slot31 = {}
+	slot31.minX = slot15
+	slot31.maxX = slot16
+	slot31.minZ = slot17
+	slot31.maxZ = slot18
+	slot30.aabb = slot31
+	slot30.coveredOrnaments = slot24
+	slot31 = #slot24
+	slot30.coveredCount = slot31
+	slot30.relevantCount = slot25
+	slot30.targetCoverage = slot26
+
+	return slot28(slot30)
+	--- END OF BLOCK #88 ---
+
+	FLOW; TARGET BLOCK #89
+
+
+	--- BLOCK #89 398-398, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #89 ---
+
+	FLOW; TARGET BLOCK #90
+
+
+	--- BLOCK #90 399-399, warpins: 2 ---
+	return slot5(slot7, slot8)
+	--- END OF BLOCK #90 ---
+
+	FLOW; TARGET BLOCK #91
+
+
+	--- BLOCK #91 400-400, warpins: 2 ---
+	return slot6(slot8, slot9)
+	--- END OF BLOCK #91 ---
+
+	FLOW; TARGET BLOCK #92
+
+
+	--- BLOCK #92 401-401, warpins: 2 ---
+	return slot8(slot10, slot11)
+	--- END OF BLOCK #92 ---
+
+	FLOW; TARGET BLOCK #93
+
+
+	--- BLOCK #93 402-402, warpins: 2 ---
+	return slot10(slot12, slot13)
+	--- END OF BLOCK #93 ---
+
+	FLOW; TARGET BLOCK #94
+
+
+	--- BLOCK #94 403-403, warpins: 2 ---
+	return slot11(slot13, slot14)
+	--- END OF BLOCK #94 ---
+
+	FLOW; TARGET BLOCK #95
+
+
+	--- BLOCK #95 404-404, warpins: 2 ---
+	return slot24(slot26, slot27)
+	--- END OF BLOCK #95 ---
+
+
+
+end
+
+slot22.previewEnvCoverage = slot31
+
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -26289,9 +27699,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getBagPets = slot30
+slot22.getBagPets = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -26308,85 +27718,142 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
 	--- BLOCK #2 7-13, warpins: 1 ---
 	slot4 = {}
 	slot5 = {}
 	slot6 = HomeCmdImplement
-	slot6 = slot6._getHomePetBox
+	slot6 = slot6._getHomeSpace
 	slot6 = slot6()
 	--- END OF BLOCK #2 ---
 
-	slot6 = if slot6 then
+	slot7 = if slot6 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot7 = slot6.petBoxMap
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-16, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #3 14-18, warpins: 1 ---
-	slot7 = tonumber
-	slot9 = slot6.slotCount
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #3 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 19-19, warpins: 1 ---
-	slot7 = 0
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 20-23, warpins: 2 ---
-	slot8 = 1
-	slot9 = slot7
-	slot10 = 1
+	--- BLOCK #5 17-23, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.getSlotCount
+	slot8 = slot8(slot10)
+	slot9 = 1
+	slot10 = slot8
+	slot11 = 1
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 24-26, warpins: 2 ---
-	slot12 = slot6[slot11]
+	--- BLOCK #6 24-32, warpins: 2 ---
+	slot15 = slot7
+	slot13 = slot7.getPetId
+	slot16 = Const
+	slot16 = slot16.HOMELAND_AREA_TYPE
+	slot16 = slot16.PRODUCE
+	slot17 = slot12
+	slot13 = slot13(slot15, slot16, slot17)
 	--- END OF BLOCK #6 ---
 
-	if slot12 ~= nil then
+	if slot13 ~= nil then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 27-28, warpins: 1 ---
+	--- BLOCK #7 33-34, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
-	if slot12 ~= 0 then
+	if slot13 ~= 0 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 29-30, warpins: 1 ---
+	--- BLOCK #8 35-36, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
-	if slot12 ~= "" then
+	if slot13 ~= "" then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 31-43, warpins: 1 ---
+	--- BLOCK #9 37-49, warpins: 1 ---
+	slot14 = tostring
+	slot16 = slot13
+	slot14 = slot14(slot16)
+	slot15 = true
+	slot5[slot14] = slot15
+	slot14 = #slot4
+	slot14 = slot14 + 1
+	slot15 = HomeCmdImplement
+	slot15 = slot15._buildHomePetEntry
+	slot17 = slot13
+	slot18 = slot12
+	slot15 = slot15(slot17, slot18)
+	slot4[slot14] = slot15
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 50-50, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
+	for slot12=slot9, slot10, slot11
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #11
+
+	--- BLOCK #11 51-56, warpins: 2 ---
+	slot8 = ipairs
+	slot10 = HomeCmdImplement
+	slot10 = slot10._collectHomePetIds
+	MULTRES = slot10()
+	slot8, slot9, slot10 = slot8(MULTRES)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #12 57-62, warpins: 1 ---
+	slot13 = tostring
+	slot15 = slot12
+	slot13 = slot13(slot15)
+	slot13 = slot5[slot13]
+	--- END OF BLOCK #12 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 63-75, warpins: 1 ---
 	slot13 = tostring
 	slot15 = slot12
 	slot13 = slot13(slot15)
@@ -26397,79 +27864,28 @@ slot30 = function(slot0, slot1, slot2)
 	slot14 = HomeCmdImplement
 	slot14 = slot14._buildHomePetEntry
 	slot16 = slot12
-	slot17 = slot11
+	slot17 = nil
 	slot14 = slot14(slot16, slot17)
 	slot4[slot13] = slot14
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 44-44, warpins: 4 ---
-	--- END OF BLOCK #10 ---
-
-	for slot11=slot8, slot9, slot10
-	LOOP BLOCK #6
-	GO OUT TO BLOCK #11
-
-	--- BLOCK #11 45-50, warpins: 2 ---
-	slot7 = ipairs
-	slot9 = HomeCmdImplement
-	slot9 = slot9._collectHomePetIds
-	MULTRES = slot9()
-	slot7, slot8, slot9 = slot7(MULTRES)
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #12 51-56, warpins: 1 ---
-	slot12 = tostring
-	slot14 = slot11
-	slot12 = slot12(slot14)
-	slot12 = slot5[slot12]
-	--- END OF BLOCK #12 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 57-69, warpins: 1 ---
-	slot12 = tostring
-	slot14 = slot11
-	slot12 = slot12(slot14)
-	slot13 = true
-	slot5[slot12] = slot13
-	slot12 = #slot4
-	slot12 = slot12 + 1
-	slot13 = HomeCmdImplement
-	slot13 = slot13._buildHomePetEntry
-	slot15 = slot11
-	slot16 = nil
-	slot13 = slot13(slot15, slot16)
-	slot4[slot12] = slot13
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 70-71, warpins: 3 ---
+	--- BLOCK #14 76-77, warpins: 3 ---
 	--- END OF BLOCK #14 ---
 
-	for slot10, slot11 in slot7, slot8, slot9
+	for slot11, slot12 in slot8, slot9, slot10
 	LOOP BLOCK #12
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 72-78, warpins: 1 ---
-	slot7 = table
-	slot7 = slot7.sort
-	slot9 = slot4
+	--- BLOCK #15 78-85, warpins: 1 ---
+	slot8 = table
+	slot8 = slot8.sort
+	slot10 = slot4
 
-	slot10 = function(slot0, slot1)
+	slot11 = function(slot0, slot1)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot2 = slot0.slotIdx
 		--- END OF BLOCK #0 ---
@@ -26588,42 +28004,40 @@ slot30 = function(slot0, slot1, slot2)
 
 	end
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
+	slot8 = petBox
 	--- END OF BLOCK #15 ---
 
-	slot6 = if slot6 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 79-83, warpins: 1 ---
-	slot7 = tonumber
-	slot9 = slot6.slotCount
-	slot7 = slot7(slot9)
+	--- BLOCK #16 86-94, warpins: 1 ---
+	slot8 = HomeCmdImplement
+	slot8 = slot8._getHomeSpace
+	slot8 = slot8()
+	slot8 = slot8.petBoxMap
+	slot10 = slot8
+	slot8 = slot8.getSlotCount
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #16 ---
 
-	slot7 = if not slot7 then
+	slot8 = if not slot8 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 84-85, warpins: 1 ---
-	slot7 = 0
-	--- END OF BLOCK #17 ---
+	--- BLOCK #17 95-100, warpins: 2 ---
+	slot8 = HomeCmdImplement
+	slot8 = slot8._safeCall
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #18 86-91, warpins: 1 ---
-	slot7 = HomeCmdImplement
-	slot7 = slot7._safeCall
-
-	slot9 = function()
+	slot10 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = HomeLandUtils
 		slot0 = slot0.getPetMaxCount
@@ -26638,49 +28052,49 @@ slot30 = function(slot0, slot1, slot2)
 
 	end
 
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #18 ---
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #17 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #19
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #19 92-92, warpins: 1 ---
-	slot7 = 0
+	--- BLOCK #18 101-101, warpins: 1 ---
+	slot8 = 0
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 102-110, warpins: 3 ---
+	slot9 = HomeCmdImplement
+	slot9 = slot9._ok
+	slot11 = {}
+	slot11.pets = slot4
+	slot12 = #slot4
+	slot11.current = slot12
+	slot11.max = slot8
+
+	return slot9(slot11)
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 93-101, warpins: 4 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._ok
-	slot10 = {}
-	slot10.pets = slot4
-	slot11 = #slot4
-	slot10.current = slot11
-	slot10.max = slot7
-
-	return slot8(slot10)
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 102-102, warpins: 2 ---
+	--- BLOCK #20 111-111, warpins: 2 ---
 	return slot3
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot21.getHomePets = slot30
+slot22.getHomePets = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -27007,9 +28421,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getDailyOrders = slot30
+slot22.getDailyOrders = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -27094,9 +28508,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getWarehouse = slot30
+slot22.getWarehouse = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -27414,9 +28828,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getBagItems = slot30
+slot22.getBagItems = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -27748,9 +29162,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.canPetDoOper = slot30
+slot22.canPetDoOper = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -27886,9 +29300,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getRequiredAbility = slot30
+slot22.getRequiredAbility = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -28233,9 +29647,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFoodState = slot30
+slot22.getFoodState = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -28492,9 +29906,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getCar = slot30
+slot22.getCar = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -28948,9 +30362,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFacilityAtPosition = slot30
+slot22.getFacilityAtPosition = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -29119,11 +30533,17 @@ slot30 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 54-69, warpins: 2 ---
+	--- BLOCK #17 54-75, warpins: 2 ---
 	slot15.canUnlock = slot16
-	slot16 = slot12.unlockCost
+	slot16 = HomeCmdImplement
+	slot16 = slot16._cloneForCmd
+	slot18 = slot12.unlockCost
+	slot16 = slot16(slot18)
 	slot15.unlockCost = slot16
-	slot16 = slot12.unlockCondition
+	slot16 = HomeCmdImplement
+	slot16 = slot16._cloneForCmd
+	slot18 = slot12.unlockCondition
+	slot16 = slot16(slot18)
 	slot15.unlockCondition = slot16
 	slot16 = slot12.addPetNum
 	slot15.addPetNum = slot16
@@ -29143,7 +30563,7 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #18 70-77, warpins: 1 ---
+	--- BLOCK #18 76-83, warpins: 1 ---
 	slot16 = {}
 	slot17 = slot12.prefabPos
 	slot17 = slot17[1]
@@ -29157,7 +30577,7 @@ slot30 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 78-80, warpins: 2 ---
+	--- BLOCK #19 84-86, warpins: 2 ---
 	slot16 = #slot6
 	slot16 = slot16 + 1
 	slot6[slot16] = slot15
@@ -29166,7 +30586,7 @@ slot30 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 81-82, warpins: 2 ---
+	--- BLOCK #20 87-88, warpins: 2 ---
 	--- END OF BLOCK #20 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
@@ -29174,7 +30594,7 @@ slot30 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #21 83-96, warpins: 1 ---
+	--- BLOCK #21 89-102, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.sort
 	slot10 = slot6
@@ -29231,7 +30651,7 @@ slot30 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 97-97, warpins: 2 ---
+	--- BLOCK #22 103-103, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #22 ---
 
@@ -29239,9 +30659,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getZoneUnlocks = slot30
+slot22.getZoneUnlocks = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = Const
 	slot3 = slot3.HomelandZoneWidth
@@ -29462,9 +30882,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getZoneBounds = slot30
+slot22.getZoneBounds = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -29805,9 +31225,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFacilityFormulas = slot30
+slot22.getFacilityFormulas = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -29986,9 +31406,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.checkCondition = slot30
+slot22.checkCondition = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = {}
 	slot4 = {}
@@ -30254,9 +31674,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getCmdList = slot30
+slot22.getCmdList = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = {}
 	slot4 = HomelandConfigData
@@ -30274,8 +31694,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot4 = #slot3
 	slot4 = slot4 + 1
 	slot5 = {
-		key = "homeCurrencyId",
-		label = "家园主货币"
+		label = "家园主货币",
+		key = "homeCurrencyId"
 	}
 	slot6 = HomelandConfigData
 	slot6 = slot6.homeCurrencyId
@@ -30302,8 +31722,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot4 = #slot3
 	slot4 = slot4 + 1
 	slot5 = {
-		key = "homeVoucherId",
-		label = "家园凭证"
+		label = "家园凭证",
+		key = "homeVoucherId"
 	}
 	slot6 = HomelandConfigData
 	slot6 = slot6.homeVoucherId
@@ -30329,9 +31749,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getCurrencies = slot30
+slot22.getCurrencies = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -30419,9 +31839,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getFacilityMaxCount = slot30
+slot22.getFacilityMaxCount = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -30459,9 +31879,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getLastOrnamentResult = slot30
+slot22.getLastOrnamentResult = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -30500,8 +31920,8 @@ slot30 = function(slot0, slot1, slot2)
 
 	--- BLOCK #4 10-22, warpins: 1 ---
 	slot4 = {
-		snapshotId = "homeRuntimeSnapshot",
-		bridgeVersion = "v1"
+		bridgeVersion = "v1",
+		snapshotId = "homeRuntimeSnapshot"
 	}
 	slot5 = {}
 	slot4.errors = slot5
@@ -30790,9 +32210,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.getRuntimeSnapshot = slot30
+slot22.getRuntimeSnapshot = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -30958,9 +32378,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.setFormula = slot30
+slot22.setFormula = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -31126,9 +32546,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.removeFormula = slot30
+slot22.removeFormula = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -31145,7 +32565,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #41
+	UNCONDITIONAL JUMP; TARGET BLOCK #37
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -31184,81 +32604,48 @@ slot30 = function(slot0, slot1, slot2)
 	slot8 = "missing params.petId"
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #42
+	UNCONDITIONAL JUMP; TARGET BLOCK #38
 
 
-	--- BLOCK #6 19-23, warpins: 1 ---
+	--- BLOCK #6 19-24, warpins: 1 ---
 	slot5 = HomeCmdImplement
-	slot5 = slot5._getHomePetBox
+	slot5 = slot5._getPetBoxCapacity
 	slot5 = slot5()
+	slot6 = slot5.ready
 	--- END OF BLOCK #6 ---
 
-	slot5 = if not slot5 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 24-30, warpins: 1 ---
+	--- BLOCK #7 25-31, warpins: 1 ---
 	slot6 = HomeCmdImplement
 	slot6 = slot6._err
 	slot8 = Const
 	slot8 = slot8.CMD_SOCKET_ERROR
 	slot8 = slot8.PARAM
-	slot9 = "petBoxMap[1] not ready"
+	slot9 = "petBoxMap not ready"
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #43
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #8 31-33, warpins: 1 ---
-	slot6 = slot5.count
+	--- BLOCK #8 32-35, warpins: 1 ---
+	slot6 = slot5.remaining
+	slot7 = 1
 	--- END OF BLOCK #8 ---
 
-	slot6 = if not slot6 then
+	if slot6 < slot7 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 34-34, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 35-37, warpins: 2 ---
-	slot7 = slot5.slotCount
-	--- END OF BLOCK #10 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 38-38, warpins: 1 ---
-	slot7 = 0
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 39-40, warpins: 2 ---
-	--- END OF BLOCK #12 ---
-
-	if slot6 >= slot7 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 41-55, warpins: 1 ---
+	--- BLOCK #9 36-50, warpins: 1 ---
 	slot6 = HomeCmdImplement
 	slot6 = slot6._err
 	slot8 = Const
@@ -31273,41 +32660,41 @@ slot30 = function(slot0, slot1, slot2)
 	slot14 = slot5.slotCount
 	slot12 = slot12(slot14)
 	slot9 = slot9 .. slot10 .. slot11 .. slot12
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #44
+	UNCONDITIONAL JUMP; TARGET BLOCK #40
 
 
-	--- BLOCK #14 56-60, warpins: 1 ---
+	--- BLOCK #10 51-55, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.me
 	slot6 = slot6.checkHomelandAddPet
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #10 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #15 61-68, warpins: 1 ---
+	--- BLOCK #11 56-63, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.me
 	slot8 = slot6
 	slot6 = slot6.checkHomelandAddPet
 	slot9 = slot4
 	slot6 = slot6(slot8, slot9)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #11 ---
 
 	slot6 = if not slot6 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #16 69-79, warpins: 2 ---
+	--- BLOCK #12 64-74, warpins: 2 ---
 	slot6 = HomeCmdImplement
 	slot6 = slot6._err
 	slot8 = Const
@@ -31318,52 +32705,52 @@ slot30 = function(slot0, slot1, slot2)
 	slot12 = slot4
 	slot10 = slot10(slot12)
 	slot9 = slot9 .. slot10
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
+	UNCONDITIONAL JUMP; TARGET BLOCK #41
 
 
-	--- BLOCK #17 80-87, warpins: 1 ---
+	--- BLOCK #13 75-82, warpins: 1 ---
 	slot6 = tostring
 	slot8 = slot4
 	slot6 = slot6(slot8)
 	slot7 = pg
 	slot7 = slot7.me
 	slot7 = slot7.petPrepareList
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #13 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #18 88-93, warpins: 1 ---
+	--- BLOCK #14 83-88, warpins: 1 ---
 	slot7 = pairs
 	slot9 = pg
 	slot9 = slot9.me
 	slot9 = slot9.petPrepareList
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #19 94-98, warpins: 1 ---
+	--- BLOCK #15 89-93, warpins: 1 ---
 	slot12 = tostring
 	slot14 = slot11
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #15 ---
 
 	if slot12 == slot6 then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #20 99-107, warpins: 1 ---
+	--- BLOCK #16 94-102, warpins: 1 ---
 	slot12 = HomeCmdImplement
 	slot12 = slot12._err
 	slot14 = Const
@@ -31372,57 +32759,57 @@ slot30 = function(slot0, slot1, slot2)
 	slot15 = "pet_busy: pet is in prepare team: "
 	slot16 = slot6
 	slot15 = slot15 .. slot16
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #16 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #46
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #21 108-109, warpins: 2 ---
-	--- END OF BLOCK #21 ---
+	--- BLOCK #17 103-104, warpins: 2 ---
+	--- END OF BLOCK #17 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #19
-	GO OUT TO BLOCK #22
+	LOOP BLOCK #15
+	GO OUT TO BLOCK #18
 
 
-	--- BLOCK #22 110-114, warpins: 2 ---
+	--- BLOCK #18 105-109, warpins: 2 ---
 	slot7 = pg
 	slot7 = slot7.me
 	slot7 = slot7.petExploreList
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #18 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #23 115-120, warpins: 1 ---
+	--- BLOCK #19 110-115, warpins: 1 ---
 	slot7 = pairs
 	slot9 = pg
 	slot9 = slot9.me
 	slot9 = slot9.petExploreList
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #24 121-125, warpins: 1 ---
+	--- BLOCK #20 116-120, warpins: 1 ---
 	slot12 = tostring
 	slot14 = slot11
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #20 ---
 
 	if slot12 == slot6 then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #25 126-134, warpins: 1 ---
+	--- BLOCK #21 121-129, warpins: 1 ---
 	slot12 = HomeCmdImplement
 	slot12 = slot12._err
 	slot14 = Const
@@ -31431,55 +32818,55 @@ slot30 = function(slot0, slot1, slot2)
 	slot15 = "pet_busy: pet is in explore team: "
 	slot16 = slot6
 	slot15 = slot15 .. slot16
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #47
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #26 135-136, warpins: 2 ---
-	--- END OF BLOCK #26 ---
+	--- BLOCK #22 130-131, warpins: 2 ---
+	--- END OF BLOCK #22 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #24
-	GO OUT TO BLOCK #27
+	LOOP BLOCK #20
+	GO OUT TO BLOCK #23
 
 
-	--- BLOCK #27 137-141, warpins: 2 ---
+	--- BLOCK #23 132-136, warpins: 2 ---
 	slot7 = HomeCmdImplement
 	slot7 = slot7._collectHomePetIds
 	slot7 = slot7()
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #23 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #28 142-145, warpins: 1 ---
+	--- BLOCK #24 137-140, warpins: 1 ---
 	slot8 = ipairs
 	slot10 = slot7
 	slot8, slot9, slot10 = slot8(slot10)
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #24 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #29 146-150, warpins: 1 ---
+	--- BLOCK #25 141-145, warpins: 1 ---
 	slot13 = tostring
 	slot15 = slot12
 	slot13 = slot13(slot15)
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #25 ---
 
 	if slot13 == slot6 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #30 151-159, warpins: 1 ---
+	--- BLOCK #26 146-154, warpins: 1 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._err
 	slot15 = Const
@@ -31488,20 +32875,20 @@ slot30 = function(slot0, slot1, slot2)
 	slot16 = "pet_already_in_home: "
 	slot17 = slot6
 	slot16 = slot16 .. slot17
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #26 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #48
+	UNCONDITIONAL JUMP; TARGET BLOCK #44
 
 
-	--- BLOCK #31 160-161, warpins: 2 ---
-	--- END OF BLOCK #31 ---
+	--- BLOCK #27 155-156, warpins: 2 ---
+	--- END OF BLOCK #27 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #29
-	GO OUT TO BLOCK #32
+	LOOP BLOCK #25
+	GO OUT TO BLOCK #28
 
 
-	--- BLOCK #32 162-167, warpins: 2 ---
+	--- BLOCK #28 157-162, warpins: 2 ---
 	slot8 = HomeCmdImplement
 	slot8 = slot8._safeCall
 
@@ -31526,16 +32913,16 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot8, slot9 = slot8(slot10)
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #28 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #33 168-179, warpins: 1 ---
+	--- BLOCK #29 163-174, warpins: 1 ---
 	slot10 = HomeCmdImplement
 	slot10 = slot10._err
 	slot12 = Const
@@ -31549,12 +32936,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot10(slot12, slot13)
 
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #34 180-187, warpins: 2 ---
+	--- BLOCK #30 175-182, warpins: 2 ---
 	slot10 = {
 		note = "placePet 是 fire-and-forget RPC,客户端 pg.space.pets 需要 ~1 秒更新。派发后等 1 秒再调 home.getHomePets 才能看到新宠物。",
 		noteWaitSeconds = 1
@@ -31604,43 +32991,43 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot11 = slot11(slot13)
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #30 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #35 188-192, warpins: 1 ---
+	--- BLOCK #31 183-187, warpins: 1 ---
 	slot12 = pg
 	slot12 = slot12.me
 	slot12 = slot12.pets
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #31 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #36 193-198, warpins: 1 ---
+	--- BLOCK #32 188-193, warpins: 1 ---
 	slot12 = pg
 	slot12 = slot12.me
 	slot12 = slot12.pets
 	slot12 = slot12[slot4]
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #32 ---
 
 	slot11 = if not slot12 then
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #33
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #37 199-205, warpins: 1 ---
+	--- BLOCK #33 194-200, warpins: 1 ---
 	slot12 = pg
 	slot12 = slot12.me
 	slot12 = slot12.pets
@@ -31648,103 +33035,103 @@ slot30 = function(slot0, slot1, slot2)
 	slot15 = slot4
 	slot13 = slot13(slot15)
 	slot11 = slot12[slot13]
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #33 ---
 
-	FLOW; TARGET BLOCK #38
+	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #38 206-211, warpins: 4 ---
+	--- BLOCK #34 201-206, warpins: 4 ---
 	slot12 = HomeCmdImplement
 	slot12 = slot12._serializePet
 	slot14 = slot11
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #34 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #39 212-212, warpins: 1 ---
+	--- BLOCK #35 207-207, warpins: 1 ---
 	slot10.pet = slot12
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #40
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #40 213-217, warpins: 2 ---
+	--- BLOCK #36 208-212, warpins: 2 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._asyncOk
 	slot15 = slot10
 
 	return slot13(slot15)
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 213-213, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 214-214, warpins: 2 ---
+	return slot5(slot7, slot8)
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 215-215, warpins: 2 ---
+	return slot6(slot8, slot9)
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 216-216, warpins: 2 ---
+	return slot6(slot8, slot9)
 	--- END OF BLOCK #40 ---
 
 	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 218-218, warpins: 2 ---
-	return slot3
+	--- BLOCK #41 217-217, warpins: 2 ---
+	return slot6(slot8, slot9)
 	--- END OF BLOCK #41 ---
 
 	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 219-219, warpins: 2 ---
-	return slot5(slot7, slot8)
+	--- BLOCK #42 218-218, warpins: 2 ---
+	return slot12(slot14, slot15)
 	--- END OF BLOCK #42 ---
 
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 220-220, warpins: 2 ---
-	return slot6(slot8, slot9)
+	--- BLOCK #43 219-219, warpins: 2 ---
+	return slot12(slot14, slot15)
 	--- END OF BLOCK #43 ---
 
 	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 221-221, warpins: 2 ---
-	return slot6(slot8, slot9)
-	--- END OF BLOCK #44 ---
-
-	FLOW; TARGET BLOCK #45
-
-
-	--- BLOCK #45 222-222, warpins: 2 ---
-	return slot6(slot8, slot9)
-	--- END OF BLOCK #45 ---
-
-	FLOW; TARGET BLOCK #46
-
-
-	--- BLOCK #46 223-223, warpins: 2 ---
-	return slot12(slot14, slot15)
-	--- END OF BLOCK #46 ---
-
-	FLOW; TARGET BLOCK #47
-
-
-	--- BLOCK #47 224-224, warpins: 2 ---
-	return slot12(slot14, slot15)
-	--- END OF BLOCK #47 ---
-
-	FLOW; TARGET BLOCK #48
-
-
-	--- BLOCK #48 225-225, warpins: 2 ---
+	--- BLOCK #44 220-220, warpins: 2 ---
 	return slot13(slot15, slot16)
-	--- END OF BLOCK #48 ---
+	--- END OF BLOCK #44 ---
 
 
 
 end
 
-slot21.placePet = slot30
+slot22.placePet = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -31839,9 +33226,9 @@ slot30 = function(slot0, slot1, slot2)
 	slot7 = HomeCmdImplement
 	slot7 = slot7._ok
 	slot9 = {
-		async = false,
+		dispatched = false,
 		reason = "no pets selected",
-		dispatched = false
+		async = false
 	}
 	slot10 = slot3.planStatus
 	slot9.planStatus = slot10
@@ -31871,7 +33258,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = Const
 	slot10 = slot10.CMD_SOCKET_ERROR
 	slot10 = slot10.PARAM
-	slot11 = "petBoxMap[1] not ready"
+	slot11 = "petBoxMap not ready"
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
@@ -32073,9 +33460,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.placeHomePets = slot30
+slot22.placeHomePets = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -32092,7 +33479,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -32131,7 +33518,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot8 = "missing params.petId"
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
 	--- BLOCK #6 19-22, warpins: 1 ---
@@ -32189,15 +33576,47 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = slot9 .. slot10
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #11 42-47, warpins: 2 ---
-	slot6 = HomeCmdImplement
-	slot6 = slot6._safeCall
+	--- BLOCK #11 42-49, warpins: 2 ---
+	slot6 = HomeLandUtils
+	slot6 = slot6.getHomePetAreaId
+	slot8 = pg
+	slot8 = slot8.space
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #11 ---
 
-	slot8 = function()
-		--- BLOCK #0 1-11, warpins: 1 ---
+	if slot6 == nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 50-60, warpins: 1 ---
+	slot7 = HomeCmdImplement
+	slot7 = slot7._err
+	slot9 = Const
+	slot9 = slot9.CMD_SOCKET_ERROR
+	slot9 = slot9.PARAM
+	slot10 = "home pet area not found: "
+	slot11 = tostring
+	slot13 = slot4
+	slot11 = slot11(slot13)
+	slot10 = slot10 .. slot11
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #13 61-66, warpins: 1 ---
+	slot7 = HomeCmdImplement
+	slot7 = slot7._safeCall
+
+	slot9 = function()
+		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot0 = slot0.space
@@ -32207,8 +33626,9 @@ slot30 = function(slot0, slot1, slot2)
 		slot4 = petId
 		slot3[1] = slot4
 		slot4 = -1
+		slot5 = areaId
 
-		slot0(slot2, slot3, slot4)
+		slot0(slot2, slot3, slot4, slot5)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -32217,72 +33637,79 @@ slot30 = function(slot0, slot1, slot2)
 
 	end
 
-	slot6, slot7 = slot6(slot8)
-	--- END OF BLOCK #11 ---
+	slot7, slot8 = slot7(slot9)
+	--- END OF BLOCK #13 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #12
+	slot8 = if slot8 then
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 48-59, warpins: 1 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._err
-	slot10 = Const
-	slot10 = slot10.CMD_SOCKET_ERROR
-	slot10 = slot10.INTERNAL
-	slot11 = "removeHomelandPetBatch failed: "
-	slot12 = tostring
-	slot14 = slot7
-	slot12 = slot12(slot14)
-	slot11 = slot11 .. slot12
+	--- BLOCK #14 67-78, warpins: 1 ---
+	slot9 = HomeCmdImplement
+	slot9 = slot9._err
+	slot11 = Const
+	slot11 = slot11.CMD_SOCKET_ERROR
+	slot11 = slot11.INTERNAL
+	slot12 = "removeHomelandPetBatch failed: "
+	slot13 = tostring
+	slot15 = slot8
+	slot13 = slot13(slot15)
+	slot12 = slot12 .. slot13
 
-	return slot8(slot10, slot11)
+	return slot9(slot11, slot12)
 
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 60-65, warpins: 2 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._asyncOk
-	slot10 = {}
-	slot10.petId = slot4
-
-	return slot8(slot10)
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 66-66, warpins: 2 ---
-	return slot3
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 67-67, warpins: 2 ---
-	return slot5(slot7, slot8)
+	--- BLOCK #15 79-84, warpins: 2 ---
+	slot9 = HomeCmdImplement
+	slot9 = slot9._asyncOk
+	slot11 = {}
+	slot11.petId = slot4
+
+	return slot9(slot11)
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 68-68, warpins: 2 ---
-	return slot6(slot8, slot9)
+	--- BLOCK #16 85-85, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 86-86, warpins: 2 ---
+	return slot5(slot7, slot8)
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 87-87, warpins: 2 ---
+	return slot6(slot8, slot9)
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 88-88, warpins: 2 ---
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot21.recallPet = slot30
+slot22.recallPet = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -32299,7 +33726,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -32362,7 +33789,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot8 = "params.petIds must be array"
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
 	--- BLOCK #8 27-34, warpins: 2 ---
@@ -32385,109 +33812,264 @@ slot30 = function(slot0, slot1, slot2)
 	slot6 = HomeCmdImplement
 	slot6 = slot6._ok
 	slot8 = {
+		dispatched = false,
 		async = false,
-		count = 0,
 		alreadyEmpty = true,
-		dispatched = false
+		count = 0
 	}
 	slot9 = {}
 	slot8.petIds = slot9
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #10 41-46, warpins: 1 ---
-	slot6 = HomeCmdImplement
-	slot6 = slot6._safeCall
-
-	slot8 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.removeHomelandPetBatch
-		slot3 = petIds
-		slot4 = -1
-
-		slot0(slot2, slot3, slot4)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot6, slot7 = slot6(slot8)
+	--- BLOCK #10 41-44, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.space
 	--- END OF BLOCK #10 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 47-58, warpins: 1 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._err
-	slot10 = Const
-	slot10 = slot10.CMD_SOCKET_ERROR
-	slot10 = slot10.INTERNAL
-	slot11 = "removeHomelandPetBatch failed: "
-	slot12 = tostring
-	slot14 = slot7
-	slot12 = slot12(slot14)
-	slot11 = slot11 .. slot12
-
-	return slot8(slot10, slot11)
-
+	--- BLOCK #11 45-49, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.space
+	slot6 = slot6.petsPlaceData
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #12 59-66, warpins: 2 ---
-	slot8 = HomeCmdImplement
-	slot8 = slot8._asyncOk
-	slot10 = {}
-	slot10.petIds = slot5
-	slot11 = #slot5
-	slot10.count = slot11
-
-	return slot8(slot10)
+	--- BLOCK #12 50-56, warpins: 2 ---
+	slot6 = HomeCmdImplement
+	slot6 = slot6._err
+	slot8 = Const
+	slot8 = slot8.CMD_SOCKET_ERROR
+	slot8 = slot8.PARAM
+	slot9 = "petsPlaceData not ready"
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #13 67-67, warpins: 2 ---
-	return slot3
+	--- BLOCK #13 57-61, warpins: 1 ---
+	slot6 = {}
+	slot7 = ipairs
+	slot9 = slot5
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #14 68-68, warpins: 2 ---
-	return slot5(slot7, slot8)
+	--- BLOCK #14 62-69, warpins: 1 ---
+	slot12 = HomeLandUtils
+	slot12 = slot12.getHomePetAreaId
+	slot14 = pg
+	slot14 = slot14.space
+	slot15 = slot11
+	slot12 = slot12(slot14, slot15)
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	if slot12 == nil then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #15 69-69, warpins: 2 ---
-	return slot6(slot8)
+	--- BLOCK #15 70-80, warpins: 1 ---
+	slot13 = HomeCmdImplement
+	slot13 = slot13._err
+	slot15 = Const
+	slot15 = slot15.CMD_SOCKET_ERROR
+	slot15 = slot15.PARAM
+	slot16 = "home pet area not found: "
+	slot17 = tostring
+	slot19 = slot11
+	slot17 = slot17(slot19)
+	slot16 = slot16 .. slot17
 	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #16 81-83, warpins: 1 ---
+	slot13 = slot6[slot12]
+	--- END OF BLOCK #16 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 84-84, warpins: 1 ---
+	slot13 = {}
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 85-90, warpins: 2 ---
+	slot6[slot12] = slot13
+	slot13 = slot6[slot12]
+	slot14 = slot6[slot12]
+	slot14 = #slot14
+	slot14 = slot14 + 1
+	slot13[slot14] = slot11
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 91-92, warpins: 2 ---
+	--- END OF BLOCK #19 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #20
+
+
+	--- BLOCK #20 93-98, warpins: 1 ---
+	slot7 = HomeCmdImplement
+	slot7 = slot7._safeCall
+
+	slot9 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = pairs
+		slot2 = petIdsByArea
+		slot0, slot1, slot2 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+		--- BLOCK #1 5-13, warpins: 1 ---
+		slot5 = pg
+		slot5 = slot5.me
+		slot5 = slot5.space
+		slot7 = slot5
+		slot5 = slot5.removeHomelandPetBatch
+		slot8 = slot4
+		slot9 = -1
+		slot10 = slot3
+
+		slot5(slot7, slot8, slot9, slot10)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 14-15, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		for slot3, slot4 in slot0, slot1, slot2
+		LOOP BLOCK #1
+		GO OUT TO BLOCK #3
+
+
+		--- BLOCK #3 16-16, warpins: 1 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot7, slot8 = slot7(slot9)
+	--- END OF BLOCK #20 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 99-110, warpins: 1 ---
+	slot9 = HomeCmdImplement
+	slot9 = slot9._err
+	slot11 = Const
+	slot11 = slot11.CMD_SOCKET_ERROR
+	slot11 = slot11.INTERNAL
+	slot12 = "removeHomelandPetBatch failed: "
+	slot13 = tostring
+	slot15 = slot8
+	slot13 = slot13(slot15)
+	slot12 = slot12 .. slot13
+
+	return slot9(slot11, slot12)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 111-118, warpins: 2 ---
+	slot9 = HomeCmdImplement
+	slot9 = slot9._asyncOk
+	slot11 = {}
+	slot11.petIds = slot5
+	slot12 = #slot5
+	slot11.count = slot12
+
+	return slot9(slot11)
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 119-119, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 120-120, warpins: 2 ---
+	return slot5(slot7, slot8)
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 121-121, warpins: 2 ---
+	return slot6(slot8)
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 122-122, warpins: 2 ---
+	return slot6(slot8, slot9)
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 123-123, warpins: 2 ---
+	return slot13(slot15, slot16)
+	--- END OF BLOCK #27 ---
 
 
 
 end
 
-slot21.recallAllPets = slot30
+slot22.recallAllPets = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -32504,7 +34086,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -32594,7 +34176,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = "missing params.petId"
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
 	--- BLOCK #12 28-29, warpins: 1 ---
@@ -32616,7 +34198,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = "missing params.facilityId"
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
 	--- BLOCK #14 37-41, warpins: 1 ---
@@ -32641,7 +34223,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = "params.force must be boolean"
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
 	--- BLOCK #16 49-52, warpins: 1 ---
@@ -32696,7 +34278,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = slot10 .. slot11
 	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
 	--- BLOCK #20 75-79, warpins: 1 ---
@@ -32739,10 +34321,42 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = slot10 .. slot11
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #23 97-102, warpins: 2 ---
+	--- BLOCK #23 97-104, warpins: 2 ---
+	slot7 = HomeLandUtils
+	slot7 = slot7.isHomePetInProduceArea
+	slot9 = pg
+	slot9 = slot9.space
+	slot10 = slot4
+	slot7 = slot7(slot9, slot10)
+	--- END OF BLOCK #23 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 105-115, warpins: 1 ---
+	slot7 = HomeCmdImplement
+	slot7 = slot7._err
+	slot9 = Const
+	slot9 = slot9.CMD_SOCKET_ERROR
+	slot9 = slot9.PARAM
+	slot10 = "pet not in produce area: "
+	slot11 = tostring
+	slot13 = slot4
+	slot11 = slot11(slot13)
+	slot10 = slot10 .. slot11
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
+
+
+	--- BLOCK #25 116-121, warpins: 1 ---
 	slot7 = HomeCmdImplement
 	slot7 = slot7._safeCall
 
@@ -32770,16 +34384,16 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot7, slot8 = slot7(slot9)
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #25 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #24 103-114, warpins: 1 ---
+	--- BLOCK #26 122-133, warpins: 1 ---
 	slot9 = HomeCmdImplement
 	slot9 = slot9._err
 	slot11 = Const
@@ -32793,12 +34407,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot9(slot11, slot12)
 
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #25 115-126, warpins: 2 ---
+	--- BLOCK #27 134-145, warpins: 2 ---
 	slot9 = HomeCmdImplement
 	slot9 = slot9._asyncOk
 	slot11 = {}
@@ -32811,57 +34425,64 @@ slot30 = function(slot0, slot1, slot2)
 	slot11.force = slot6
 
 	return slot9(slot11)
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 127-127, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 128-128, warpins: 2 ---
-	return slot7(slot9, slot10)
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 129-129, warpins: 2 ---
-	return slot7(slot9, slot10)
+	--- BLOCK #28 146-146, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 130-130, warpins: 2 ---
+	--- BLOCK #29 147-147, warpins: 2 ---
 	return slot7(slot9, slot10)
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 131-131, warpins: 2 ---
+	--- BLOCK #30 148-148, warpins: 2 ---
 	return slot7(slot9, slot10)
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 132-132, warpins: 2 ---
+	--- BLOCK #31 149-149, warpins: 2 ---
 	return slot7(slot9, slot10)
 	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 150-150, warpins: 2 ---
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 151-151, warpins: 2 ---
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 152-152, warpins: 2 ---
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #34 ---
 
 
 
 end
 
-slot21.assignPetWork = slot30
+slot22.assignPetWork = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -32878,7 +34499,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -32934,7 +34555,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = "missing params.petId"
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
 	--- BLOCK #8 22-23, warpins: 1 ---
@@ -32956,7 +34577,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = "missing params.facilityId"
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
 	--- BLOCK #10 31-34, warpins: 1 ---
@@ -33011,7 +34632,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = slot9 .. slot10
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
 	--- BLOCK #14 57-61, warpins: 1 ---
@@ -33060,36 +34681,68 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = slot10 .. slot11
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #18 79-84, warpins: 1 ---
-	slot7 = type
-	slot9 = Utils
-	slot9 = slot9.checkHomePetCanDoOperId
-	slot7 = slot7(slot9)
+	--- BLOCK #18 79-86, warpins: 1 ---
+	slot7 = HomeLandUtils
+	slot7 = slot7.isHomePetInProduceArea
+	slot9 = pg
+	slot9 = slot9.space
+	slot10 = slot4
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #18 ---
 
-	if slot7 ~= "function" then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 85-91, warpins: 1 ---
+	--- BLOCK #19 87-97, warpins: 1 ---
+	slot7 = HomeCmdImplement
+	slot7 = slot7._err
+	slot9 = Const
+	slot9 = slot9.CMD_SOCKET_ERROR
+	slot9 = slot9.PARAM
+	slot10 = "pet not in produce area: "
+	slot11 = tostring
+	slot13 = slot4
+	slot11 = slot11(slot13)
+	slot10 = slot10 .. slot11
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
+
+
+	--- BLOCK #20 98-103, warpins: 1 ---
+	slot7 = type
+	slot9 = Utils
+	slot9 = slot9.checkHomePetCanDoOperId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #20 ---
+
+	if slot7 ~= "function" then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 104-110, warpins: 1 ---
 	slot7 = HomeCmdImplement
 	slot7 = slot7._err
 	slot9 = Const
 	slot9 = slot9.CMD_SOCKET_ERROR
 	slot9 = slot9.INTERNAL
 	slot10 = "Utils.checkHomePetCanDoOperId unavailable"
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #20 92-100, warpins: 1 ---
+	--- BLOCK #22 111-119, warpins: 1 ---
 	slot7 = Utils
 	slot7 = slot7.checkHomePetCanDoOperId
 	slot9 = slot6.templateId
@@ -33097,16 +34750,16 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = slot10.HOMELAND_FACILITY_OP_TYPE
 	slot10 = slot10.TRANSPORT
 	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #21 101-115, warpins: 1 ---
+	--- BLOCK #23 120-134, warpins: 1 ---
 	slot8 = HomeCmdImplement
 	slot8 = slot8._err
 	slot10 = Const
@@ -33121,12 +34774,12 @@ slot30 = function(slot0, slot1, slot2)
 	slot16 = slot6.templateId
 	slot14 = slot14(slot16)
 	slot11 = slot11 .. slot12 .. slot13 .. slot14
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #22 116-121, warpins: 1 ---
+	--- BLOCK #24 135-140, warpins: 1 ---
 	slot8 = HomeCmdImplement
 	slot8 = slot8._safeCall
 
@@ -33154,16 +34807,16 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot8, slot9 = slot8(slot10)
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #24 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #23 122-133, warpins: 1 ---
+	--- BLOCK #25 141-152, warpins: 1 ---
 	slot10 = HomeCmdImplement
 	slot10 = slot10._err
 	slot12 = Const
@@ -33177,12 +34830,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot10(slot12, slot13)
 
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #24 134-144, warpins: 2 ---
+	--- BLOCK #26 153-163, warpins: 2 ---
 	slot10 = HomeCmdImplement
 	slot10 = slot10._asyncOk
 	slot12 = {}
@@ -33194,64 +34847,71 @@ slot30 = function(slot0, slot1, slot2)
 	slot12.opId = slot13
 
 	return slot10(slot12)
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 145-145, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 146-146, warpins: 2 ---
-	return slot6(slot8, slot9)
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 147-147, warpins: 2 ---
-	return slot6(slot8, slot9)
+	--- BLOCK #27 164-164, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 148-148, warpins: 2 ---
+	--- BLOCK #28 165-165, warpins: 2 ---
 	return slot6(slot8, slot9)
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 149-149, warpins: 2 ---
-	return slot7(slot9, slot10)
+	--- BLOCK #29 166-166, warpins: 2 ---
+	return slot6(slot8, slot9)
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 150-150, warpins: 2 ---
-	return slot7(slot9, slot10)
+	--- BLOCK #30 167-167, warpins: 2 ---
+	return slot6(slot8, slot9)
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 151-151, warpins: 2 ---
-	return slot8(slot10, slot11)
+	--- BLOCK #31 168-168, warpins: 2 ---
+	return slot7(slot9, slot10)
 	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 169-169, warpins: 2 ---
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 170-170, warpins: 2 ---
+	return slot7(slot9, slot10)
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 171-171, warpins: 2 ---
+	return slot8(slot10, slot11)
+	--- END OF BLOCK #34 ---
 
 
 
 end
 
-slot21.assignPetTransport = slot30
+slot22.assignPetTransport = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -33452,9 +35112,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.unassignPetWork = slot30
+slot22.unassignPetWork = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -33471,7 +35131,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #58
+	UNCONDITIONAL JUMP; TARGET BLOCK #59
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -33510,7 +35170,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot8 = "missing params.facilityId"
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #59
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
 	--- BLOCK #6 19-22, warpins: 1 ---
@@ -33571,7 +35231,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = slot9 .. slot10
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #60
+	UNCONDITIONAL JUMP; TARGET BLOCK #61
 
 
 	--- BLOCK #11 45-48, warpins: 1 ---
@@ -33632,7 +35292,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot10 = slot10 .. slot11
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #61
+	UNCONDITIONAL JUMP; TARGET BLOCK #62
 
 
 	--- BLOCK #16 71-73, warpins: 1 ---
@@ -33678,7 +35338,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot11 = slot11 .. slot12 .. slot13
 	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #62
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
 	--- BLOCK #20 90-99, warpins: 1 ---
@@ -33728,7 +35388,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot15 = "ornament has no facility template id"
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #63
+	UNCONDITIONAL JUMP; TARGET BLOCK #64
 
 
 	--- BLOCK #24 113-119, warpins: 1 ---
@@ -33799,7 +35459,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot15 = if slot15 then
 	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #54
 	end
 
 
@@ -33812,7 +35472,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot15 = if slot15 then
 	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #54
 	end
 
 
@@ -33824,7 +35484,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot15, slot16, slot17 = slot15(slot17)
 	--- END OF BLOCK #30 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
 
 
 	--- BLOCK #31 146-150, warpins: 1 ---
@@ -33891,7 +35551,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot21 = if not slot21 then
 	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #52
 	end
 
 
@@ -33901,21 +35561,37 @@ slot30 = function(slot0, slot1, slot2)
 	slot19 = if slot19 then
 	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #52
 	end
 
 
-	--- BLOCK #39 167-168, warpins: 1 ---
+	--- BLOCK #39 167-174, warpins: 1 ---
+	slot22 = HomeLandUtils
+	slot22 = slot22.isHomePetInProduceArea
+	slot24 = pg
+	slot24 = slot24.space
+	slot25 = slot18
+	slot22 = slot22(slot24, slot25)
 	--- END OF BLOCK #39 ---
 
-	slot8 = if slot8 then
+	slot22 = if slot22 then
 	JUMP TO BLOCK #40
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #52
 	end
 
 
-	--- BLOCK #40 169-174, warpins: 1 ---
+	--- BLOCK #40 175-176, warpins: 1 ---
+	--- END OF BLOCK #40 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 177-182, warpins: 1 ---
 	slot22 = HomeCmdImplement
 	slot22 = slot22._safeCall
 
@@ -33935,74 +35611,74 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot22 = slot22(slot24)
-	--- END OF BLOCK #40 ---
-
-	slot22 = if not slot22 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #42
-	end
-
-
-	--- BLOCK #41 175-175, warpins: 2 ---
-	slot22 = false
 	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #42
+	slot22 = if not slot22 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #43
+	end
 
 
-	--- BLOCK #42 176-177, warpins: 2 ---
+	--- BLOCK #42 183-183, warpins: 2 ---
+	slot22 = false
 	--- END OF BLOCK #42 ---
 
-	slot22 = if slot22 then
-	JUMP TO BLOCK #43
-	else
-	JUMP TO BLOCK #51
-	end
+	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 178-179, warpins: 1 ---
+	--- BLOCK #43 184-185, warpins: 2 ---
 	--- END OF BLOCK #43 ---
 
-	slot23 = if slot9 then
+	slot22 = if slot22 then
 	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #52
 	end
 
 
-	--- BLOCK #44 180-183, warpins: 1 ---
+	--- BLOCK #44 186-187, warpins: 1 ---
+	--- END OF BLOCK #44 ---
+
+	slot23 = if slot9 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #45 188-191, warpins: 1 ---
 	slot23 = slot9
 	slot25 = slot19.templateId
 	slot26 = slot7
 	slot23 = slot23(slot25, slot26)
-	--- END OF BLOCK #44 ---
-
-	FLOW; TARGET BLOCK #45
-
-
-	--- BLOCK #45 184-185, warpins: 2 ---
 	--- END OF BLOCK #45 ---
 
-	slot23 = if slot23 then
-	JUMP TO BLOCK #46
-	else
-	JUMP TO BLOCK #51
-	end
+	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #46 186-188, warpins: 1 ---
-	slot24 = 0
+	--- BLOCK #46 192-193, warpins: 2 ---
 	--- END OF BLOCK #46 ---
 
-	slot10 = if slot10 then
+	slot23 = if slot23 then
 	JUMP TO BLOCK #47
 	else
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #52
 	end
 
 
-	--- BLOCK #47 189-194, warpins: 1 ---
+	--- BLOCK #47 194-196, warpins: 1 ---
+	slot24 = 0
+	--- END OF BLOCK #47 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #50
+	end
+
+
+	--- BLOCK #48 197-202, warpins: 1 ---
 	slot25 = HomeCmdImplement
 	slot25 = slot25._safeCall
 
@@ -34022,65 +35698,65 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot25 = slot25(slot27)
-	--- END OF BLOCK #47 ---
-
-	slot24 = if not slot25 then
-	JUMP TO BLOCK #48
-	else
-	JUMP TO BLOCK #49
-	end
-
-
-	--- BLOCK #48 195-195, warpins: 1 ---
-	slot24 = 0
 	--- END OF BLOCK #48 ---
 
-	FLOW; TARGET BLOCK #49
-
-
-	--- BLOCK #49 196-197, warpins: 3 ---
-	--- END OF BLOCK #49 ---
-
-	if slot14 < slot24 then
-	JUMP TO BLOCK #50
+	slot24 = if not slot25 then
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #50 198-199, warpins: 1 ---
-	slot13 = slot18
-	slot14 = slot24
+	--- BLOCK #49 203-203, warpins: 1 ---
+	slot24 = 0
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 204-205, warpins: 3 ---
 	--- END OF BLOCK #50 ---
 
-	FLOW; TARGET BLOCK #51
+	if slot14 < slot24 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
 
 
-	--- BLOCK #51 200-200, warpins: 6 ---
+	--- BLOCK #51 206-207, warpins: 1 ---
+	slot13 = slot18
+	slot14 = slot24
 	--- END OF BLOCK #51 ---
 
 	FLOW; TARGET BLOCK #52
 
 
-	--- BLOCK #52 201-202, warpins: 2 ---
+	--- BLOCK #52 208-208, warpins: 7 ---
 	--- END OF BLOCK #52 ---
+
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 209-210, warpins: 2 ---
+	--- END OF BLOCK #53 ---
 
 	for slot18, slot19 in slot15, slot16, slot17
 	LOOP BLOCK #31
-	GO OUT TO BLOCK #53
+	GO OUT TO BLOCK #54
 
 
-	--- BLOCK #53 203-204, warpins: 3 ---
-	--- END OF BLOCK #53 ---
+	--- BLOCK #54 211-212, warpins: 3 ---
+	--- END OF BLOCK #54 ---
 
 	slot13 = if not slot13 then
-	JUMP TO BLOCK #54
-	else
 	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #54 205-220, warpins: 1 ---
+	--- BLOCK #55 213-228, warpins: 1 ---
 	slot15 = HomeCmdImplement
 	slot15 = slot15._err
 	slot17 = Const
@@ -34098,12 +35774,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot15(slot17, slot18)
 
-	--- END OF BLOCK #54 ---
+	--- END OF BLOCK #55 ---
 
-	FLOW; TARGET BLOCK #55
+	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #55 221-226, warpins: 2 ---
+	--- BLOCK #56 229-234, warpins: 2 ---
 	slot15 = HomeCmdImplement
 	slot15 = slot15._safeCall
 
@@ -34131,16 +35807,16 @@ slot30 = function(slot0, slot1, slot2)
 	end
 
 	slot15, slot16 = slot15(slot17)
-	--- END OF BLOCK #55 ---
+	--- END OF BLOCK #56 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #56
-	else
 	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #58
 	end
 
 
-	--- BLOCK #56 227-238, warpins: 1 ---
+	--- BLOCK #57 235-246, warpins: 1 ---
 	slot17 = HomeCmdImplement
 	slot17 = slot17._err
 	slot19 = Const
@@ -34154,12 +35830,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	return slot17(slot19, slot20)
 
-	--- END OF BLOCK #56 ---
+	--- END OF BLOCK #57 ---
 
-	FLOW; TARGET BLOCK #57
+	FLOW; TARGET BLOCK #58
 
 
-	--- BLOCK #57 239-246, warpins: 2 ---
+	--- BLOCK #58 247-254, warpins: 2 ---
 	slot17 = HomeCmdImplement
 	slot17 = slot17._asyncOk
 	slot19 = {}
@@ -34168,57 +35844,57 @@ slot30 = function(slot0, slot1, slot2)
 	slot19.operId = slot7
 
 	return slot17(slot19)
-	--- END OF BLOCK #57 ---
-
-	FLOW; TARGET BLOCK #58
-
-
-	--- BLOCK #58 247-247, warpins: 2 ---
-	return slot3
 	--- END OF BLOCK #58 ---
 
 	FLOW; TARGET BLOCK #59
 
 
-	--- BLOCK #59 248-248, warpins: 2 ---
-	return slot5(slot7, slot8)
+	--- BLOCK #59 255-255, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #59 ---
 
 	FLOW; TARGET BLOCK #60
 
 
-	--- BLOCK #60 249-249, warpins: 2 ---
-	return slot6(slot8, slot9)
+	--- BLOCK #60 256-256, warpins: 2 ---
+	return slot5(slot7, slot8)
 	--- END OF BLOCK #60 ---
 
 	FLOW; TARGET BLOCK #61
 
 
-	--- BLOCK #61 250-250, warpins: 2 ---
-	return slot7(slot9, slot10)
+	--- BLOCK #61 257-257, warpins: 2 ---
+	return slot6(slot8, slot9)
 	--- END OF BLOCK #61 ---
 
 	FLOW; TARGET BLOCK #62
 
 
-	--- BLOCK #62 251-251, warpins: 2 ---
-	return slot8(slot10, slot11)
+	--- BLOCK #62 258-258, warpins: 2 ---
+	return slot7(slot9, slot10)
 	--- END OF BLOCK #62 ---
 
 	FLOW; TARGET BLOCK #63
 
 
-	--- BLOCK #63 252-252, warpins: 2 ---
-	return slot12(slot14, slot15)
+	--- BLOCK #63 259-259, warpins: 2 ---
+	return slot8(slot10, slot11)
 	--- END OF BLOCK #63 ---
+
+	FLOW; TARGET BLOCK #64
+
+
+	--- BLOCK #64 260-260, warpins: 2 ---
+	return slot12(slot14, slot15)
+	--- END OF BLOCK #64 ---
 
 
 
 end
 
-slot21.callPetWork = slot30
+slot22.callPetWork = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -34457,9 +36133,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.submitDailyOrder = slot30
+slot22.submitDailyOrder = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -34722,9 +36398,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.refreshDailyOrder = slot30
+slot22.refreshDailyOrder = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -34996,9 +36672,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.payRefreshDailyOrder = slot30
+slot22.payRefreshDailyOrder = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -35185,9 +36861,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.setFacilityPause = slot30
+slot22.setFacilityPause = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -35437,9 +37113,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.setFacilityElectricMode = slot30
+slot22.setFacilityElectricMode = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -35578,8 +37254,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = HomeCmdImplement
 	slot9 = slot9._asyncOk
 	slot11 = {
-		callbackWaitSeconds = 2,
-		callbackHint = "home.getLastOrnamentResult"
+		callbackHint = "home.getLastOrnamentResult",
+		callbackWaitSeconds = 2
 	}
 	slot12 = slot5.homeTemplateId
 	slot11.homeTemplateId = slot12
@@ -35617,9 +37293,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.placeFacility = slot30
+slot22.placeFacility = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -35660,8 +37336,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot6 = HomeCmdImplement
 	slot6 = slot6._ok
 	slot8 = {
-		reason = "可以放置",
-		valid = true
+		valid = true,
+		reason = "可以放置"
 	}
 
 	return slot6(slot8)
@@ -35691,9 +37367,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.checkPlacement = slot30
+slot22.checkPlacement = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -36157,8 +37833,8 @@ slot30 = function(slot0, slot1, slot2)
 
 	--- BLOCK #30 163-169, warpins: 2 ---
 	slot18 = {
-		callbackWaitSeconds = 2,
-		callbackHint = "home.getLastOrnamentResult"
+		callbackHint = "home.getLastOrnamentResult",
+		callbackWaitSeconds = 2
 	}
 	slot18.facilityId = slot4
 	slot19 = slot13.position
@@ -36220,9 +37896,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.moveFacility = slot30
+slot22.moveFacility = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -36493,9 +38169,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.recycleFacility = slot30
+slot22.recycleFacility = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -36836,9 +38512,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.upgradeFacility = slot30
+slot22.upgradeFacility = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -36918,10 +38594,10 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.curePetAbnormal = slot30
-slot30 = "_getPlacementThreshold"
+slot22.curePetAbnormal = slot31
+slot31 = "_getPlacementThreshold"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = HomeObjectData
 	slot1 = slot1[slot0]
@@ -37033,10 +38709,10 @@ slot31 = function(slot0)
 
 end
 
-slot21[slot30] = slot31
-slot30 = "_findPlacementPointInZone"
+slot22[slot31] = slot32
+slot31 = "_findPlacementPointInZone"
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -37313,8 +38989,8 @@ slot31 = function(slot0, slot1)
 		slot5.z = slot1
 		slot4.position = slot5
 		slot5 = {
-			skipCount = true,
-			skipInventory = true
+			skipInventory = true,
+			skipCount = true
 		}
 		slot2 = slot2(slot4, slot5)
 		--- END OF BLOCK #5 ---
@@ -37584,9 +39260,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot21[slot30] = slot31
+slot22[slot31] = slot32
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -37764,7 +39440,7 @@ slot30 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #15 61-61, warpins: 1 ---
-	slot10 = {}
+	slot10 = EMPTY_TABLE
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
@@ -37914,8 +39590,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot11.z = slot12
 	slot10.position = slot11
 	slot11 = {
-		skipBounds = true,
-		skipCollision = true
+		skipCollision = true,
+		skipBounds = true
 	}
 	slot8, slot9 = slot8(slot10, slot11)
 	--- END OF BLOCK #28 ---
@@ -38001,9 +39677,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.findPlacementPoint = slot30
+slot22.findPlacementPoint = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -38381,9 +40057,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.queryDecorItems = slot30
+slot22.queryDecorItems = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -38434,7 +40110,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot7 = "missing params.name"
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #84
+	UNCONDITIONAL JUMP; TARGET BLOCK #78
 
 
 	--- BLOCK #5 19-21, warpins: 1 ---
@@ -38459,8 +40135,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot5 = {
 		item = true,
 		facility = true,
-		pet = true,
-		any = true
+		any = true,
+		pet = true
 	}
 	slot6 = slot5[slot4]
 	--- END OF BLOCK #7 ---
@@ -38481,7 +40157,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot9 = "params.type must be item/facility/pet/any"
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #85
+	UNCONDITIONAL JUMP; TARGET BLOCK #79
 
 
 	--- BLOCK #9 34-42, warpins: 1 ---
@@ -38632,7 +40308,7 @@ slot30 = function(slot0, slot1, slot2)
 	if slot4 == "item" then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #44
 	end
 
 
@@ -38642,38 +40318,26 @@ slot30 = function(slot0, slot1, slot2)
 	slot11, slot12, slot13 = slot11(slot13)
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #14 60-66, warpins: 1 ---
+	--- BLOCK #14 60-67, warpins: 1 ---
 	slot15 = ItemData
 	slot15 = slot15[slot14]
-	slot16 = type
+	slot16 = HomeCmdImplement
+	slot16 = slot16._isTableLike
 	slot18 = slot15
 	slot16 = slot16(slot18)
 	--- END OF BLOCK #14 ---
 
-	if slot16 ~= "table" then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #15 67-71, warpins: 1 ---
-	slot16 = type
-	slot18 = slot15
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #15 ---
-
-	if slot16 == "userdata" then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #16 72-80, warpins: 2 ---
+	--- BLOCK #15 68-76, warpins: 1 ---
 	slot16 = HomeCmdImplement
 	slot16 = slot16._localize
 	slot18 = slot15.itemName
@@ -38681,26 +40345,26 @@ slot30 = function(slot0, slot1, slot2)
 	slot17 = type
 	slot19 = slot16
 	slot17 = slot17(slot19)
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #15 ---
 
 	if slot17 == "string" then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #17 81-82, warpins: 1 ---
-	--- END OF BLOCK #17 ---
+	--- BLOCK #16 77-78, warpins: 1 ---
+	--- END OF BLOCK #16 ---
 
 	if slot16 == slot3 then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #18 83-89, warpins: 1 ---
+	--- BLOCK #17 79-85, warpins: 1 ---
 	slot17 = slot10
 	slot19 = slot14
 	slot20 = slot16
@@ -38709,12 +40373,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot17(slot19, slot20, slot21, slot22)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 90-98, warpins: 1 ---
+	--- BLOCK #18 86-94, warpins: 1 ---
 	slot17 = string
 	slot17 = slot17.find
 	slot19 = slot16
@@ -38722,16 +40386,16 @@ slot30 = function(slot0, slot1, slot2)
 	slot21 = 1
 	slot22 = true
 	slot17 = slot17(slot19, slot20, slot21, slot22)
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #18 ---
 
 	slot17 = if slot17 then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #20 99-104, warpins: 1 ---
+	--- BLOCK #19 95-100, warpins: 1 ---
 	slot17 = slot10
 	slot19 = slot14
 	slot20 = slot16
@@ -38740,69 +40404,57 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot17(slot19, slot20, slot21, slot22)
 
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 101-102, warpins: 6 ---
 	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 105-106, warpins: 6 ---
-	--- END OF BLOCK #21 ---
 
 	for slot14 in slot11, slot12, slot13
 	LOOP BLOCK #14
-	GO OUT TO BLOCK #22
+	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #22 107-110, warpins: 1 ---
+	--- BLOCK #21 103-106, warpins: 1 ---
 	slot11 = pairs
 	slot13 = HomeObjectData
 	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #47
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #23 111-116, warpins: 1 ---
+	--- BLOCK #22 107-112, warpins: 1 ---
 	slot15 = HomeObjectData
 	slot15 = slot15[slot14]
 	slot16 = ItemData
 	slot16 = slot16[slot14]
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #22 ---
 
 	if slot16 ~= nil then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #23 113-118, warpins: 1 ---
+	slot16 = HomeCmdImplement
+	slot16 = slot16._isTableLike
+	slot18 = slot15
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #23 ---
+
+	slot16 = if slot16 then
 	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #24 117-121, warpins: 1 ---
-	slot16 = type
-	slot18 = slot15
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #24 ---
-
-	if slot16 ~= "table" then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 122-126, warpins: 1 ---
-	slot16 = type
-	slot18 = slot15
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #25 ---
-
-	if slot16 == "userdata" then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #47
-	end
-
-
-	--- BLOCK #26 127-136, warpins: 2 ---
+	--- BLOCK #24 119-128, warpins: 1 ---
 	slot16 = {}
 	slot17 = HomeCmdImplement
 	slot17 = slot17._localize
@@ -38811,187 +40463,163 @@ slot30 = function(slot0, slot1, slot2)
 	slot18 = type
 	slot20 = slot17
 	slot18 = slot18(slot20)
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #24 ---
 
 	if slot18 == "string" then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 129-131, warpins: 1 ---
+	slot18 = #slot16
+	slot18 = slot18 + 1
+	slot16[slot18] = slot17
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 132-134, warpins: 2 ---
+	slot18 = slot15.placeId
+	--- END OF BLOCK #26 ---
+
+	slot18 = if slot18 then
 	JUMP TO BLOCK #27
 	else
 	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 137-139, warpins: 1 ---
-	slot18 = #slot16
-	slot18 = slot18 + 1
-	slot16[slot18] = slot17
-	--- END OF BLOCK #27 ---
-
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 140-142, warpins: 2 ---
-	slot18 = slot15.placeId
-	--- END OF BLOCK #28 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #29 143-147, warpins: 1 ---
+	--- BLOCK #27 135-139, warpins: 1 ---
 	slot18 = HomeObjectPlaceData
 	slot19 = slot15.placeId
 	slot18 = slot18[slot19]
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #27 ---
 
 	slot18 = if not slot18 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #30 148-148, warpins: 2 ---
+	--- BLOCK #28 140-140, warpins: 2 ---
 	slot18 = nil
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #31
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #31 149-153, warpins: 2 ---
-	slot19 = type
+	--- BLOCK #29 141-146, warpins: 2 ---
+	slot19 = HomeCmdImplement
+	slot19 = slot19._isTableLike
 	slot21 = slot18
 	slot19 = slot19(slot21)
+	--- END OF BLOCK #29 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #30 147-150, warpins: 1 ---
+	slot19 = pairs
+	slot21 = slot18
+	slot19, slot20, slot21 = slot19(slot21)
+	--- END OF BLOCK #30 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #31 151-156, warpins: 1 ---
+	slot24 = HomeCmdImplement
+	slot24 = slot24._isTableLike
+	slot26 = slot23
+	slot24 = slot24(slot26)
 	--- END OF BLOCK #31 ---
 
-	if slot19 ~= "table" then
+	slot24 = if slot24 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 154-158, warpins: 1 ---
-	slot19 = type
-	slot21 = slot18
-	slot19 = slot19(slot21)
+	--- BLOCK #32 157-162, warpins: 1 ---
+	slot24 = HomeCmdImplement
+	slot24 = slot24._localize
+	slot26 = slot23.name
+	slot24 = slot24(slot26)
 	--- END OF BLOCK #32 ---
 
-	if slot19 == "userdata" then
+	slot24 = if not slot24 then
 	JUMP TO BLOCK #33
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #33 159-162, warpins: 2 ---
-	slot19 = pairs
-	slot21 = slot18
-	slot19, slot20, slot21 = slot19(slot21)
+	--- BLOCK #33 163-163, warpins: 2 ---
+	slot24 = nil
 	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
+	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 163-167, warpins: 1 ---
-	slot24 = type
-	slot26 = slot23
-	slot24 = slot24(slot26)
+	--- BLOCK #34 164-168, warpins: 2 ---
+	slot25 = type
+	slot27 = slot24
+	slot25 = slot25(slot27)
 	--- END OF BLOCK #34 ---
 
-	if slot24 ~= "table" then
+	if slot25 == "string" then
 	JUMP TO BLOCK #35
 	else
 	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #35 168-172, warpins: 1 ---
-	slot24 = type
-	slot26 = slot23
-	slot24 = slot24(slot26)
+	--- BLOCK #35 169-171, warpins: 1 ---
+	slot25 = #slot16
+	slot25 = slot25 + 1
+	slot16[slot25] = slot24
 	--- END OF BLOCK #35 ---
 
-	if slot24 == "userdata" then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #37
-	end
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #36 173-178, warpins: 2 ---
-	slot24 = HomeCmdImplement
-	slot24 = slot24._localize
-	slot26 = slot23.name
-	slot24 = slot24(slot26)
+	--- BLOCK #36 172-173, warpins: 3 ---
 	--- END OF BLOCK #36 ---
 
-	slot24 = if not slot24 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #38
-	end
+	for slot22, slot23 in slot19, slot20, slot21
+	LOOP BLOCK #31
+	GO OUT TO BLOCK #37
 
 
-	--- BLOCK #37 179-179, warpins: 2 ---
-	slot24 = nil
+	--- BLOCK #37 174-177, warpins: 2 ---
+	slot19 = ipairs
+	slot21 = slot16
+	slot19, slot20, slot21 = slot19(slot21)
 	--- END OF BLOCK #37 ---
 
-	FLOW; TARGET BLOCK #38
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #38 180-184, warpins: 2 ---
-	slot25 = type
-	slot27 = slot24
-	slot25 = slot25(slot27)
+	--- BLOCK #38 178-179, warpins: 1 ---
 	--- END OF BLOCK #38 ---
 
-	if slot25 == "string" then
+	if slot23 == slot3 then
 	JUMP TO BLOCK #39
 	else
 	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #39 185-187, warpins: 1 ---
-	slot25 = #slot16
-	slot25 = slot25 + 1
-	slot16[slot25] = slot24
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 188-189, warpins: 3 ---
-	--- END OF BLOCK #40 ---
-
-	for slot22, slot23 in slot19, slot20, slot21
-	LOOP BLOCK #34
-	GO OUT TO BLOCK #41
-
-
-	--- BLOCK #41 190-193, warpins: 2 ---
-	slot19 = ipairs
-	slot21 = slot16
-	slot19, slot20, slot21 = slot19(slot21)
-	--- END OF BLOCK #41 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #46
-
-
-	--- BLOCK #42 194-195, warpins: 1 ---
-	--- END OF BLOCK #42 ---
-
-	if slot23 == slot3 then
-	JUMP TO BLOCK #43
-	else
-	JUMP TO BLOCK #44
-	end
-
-
-	--- BLOCK #43 196-203, warpins: 1 ---
+	--- BLOCK #39 180-187, warpins: 1 ---
 	slot24 = slot10
 	slot26 = slot14
 	slot27 = slot23
@@ -39001,12 +40629,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot24(slot26, slot27, slot28, slot29, slot30)
 
-	--- END OF BLOCK #43 ---
+	--- END OF BLOCK #39 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #46
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #44 204-212, warpins: 1 ---
+	--- BLOCK #40 188-196, warpins: 1 ---
 	slot24 = string
 	slot24 = slot24.find
 	slot26 = slot23
@@ -39014,16 +40642,16 @@ slot30 = function(slot0, slot1, slot2)
 	slot28 = 1
 	slot29 = true
 	slot24 = slot24(slot26, slot27, slot28, slot29)
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #40 ---
 
 	slot24 = if slot24 then
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #41
 	else
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #42
 	end
 
 
-	--- BLOCK #45 213-219, warpins: 1 ---
+	--- BLOCK #41 197-203, warpins: 1 ---
 	slot24 = slot10
 	slot26 = slot14
 	slot27 = slot23
@@ -39033,222 +40661,198 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot24(slot26, slot27, slot28, slot29, slot30)
 
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #46
+	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #46 220-221, warpins: 4 ---
-	--- END OF BLOCK #46 ---
+	--- BLOCK #42 204-205, warpins: 4 ---
+	--- END OF BLOCK #42 ---
 
 	for slot22, slot23 in slot19, slot20, slot21
-	LOOP BLOCK #42
-	GO OUT TO BLOCK #47
+	LOOP BLOCK #38
+	GO OUT TO BLOCK #43
 
 
-	--- BLOCK #47 222-223, warpins: 4 ---
-	--- END OF BLOCK #47 ---
+	--- BLOCK #43 206-207, warpins: 4 ---
+	--- END OF BLOCK #43 ---
 
 	for slot14 in slot11, slot12, slot13
-	LOOP BLOCK #23
-	GO OUT TO BLOCK #48
+	LOOP BLOCK #22
+	GO OUT TO BLOCK #44
 
 
-	--- BLOCK #48 224-225, warpins: 2 ---
-	--- END OF BLOCK #48 ---
+	--- BLOCK #44 208-209, warpins: 2 ---
+	--- END OF BLOCK #44 ---
 
 	if slot4 ~= "any" then
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #45
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #49 226-227, warpins: 1 ---
-	--- END OF BLOCK #49 ---
+	--- BLOCK #45 210-211, warpins: 1 ---
+	--- END OF BLOCK #45 ---
 
 	if slot4 == "facility" then
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #46
 	else
-	JUMP TO BLOCK #59
+	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #50 228-231, warpins: 2 ---
+	--- BLOCK #46 212-215, warpins: 2 ---
 	slot11 = pairs
 	slot13 = HomeObjectData
 	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #50 ---
+	--- END OF BLOCK #46 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #58
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
 
 
-	--- BLOCK #51 232-238, warpins: 1 ---
+	--- BLOCK #47 216-223, warpins: 1 ---
 	slot15 = HomeObjectData
 	slot15 = slot15[slot14]
-	slot16 = type
+	slot16 = HomeCmdImplement
+	slot16 = slot16._isTableLike
 	slot18 = slot15
 	slot16 = slot16(slot18)
+	--- END OF BLOCK #47 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #48 224-232, warpins: 1 ---
+	slot16 = HomeCmdImplement
+	slot16 = slot16._localize
+	slot18 = slot15.name
+	slot16 = slot16(slot18)
+	slot17 = type
+	slot19 = slot16
+	slot17 = slot17(slot19)
+	--- END OF BLOCK #48 ---
+
+	if slot17 == "string" then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #49 233-234, warpins: 1 ---
+	--- END OF BLOCK #49 ---
+
+	if slot16 == slot3 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 235-241, warpins: 1 ---
+	slot17 = slot10
+	slot19 = slot14
+	slot20 = slot16
+	slot21 = "exact"
+	slot22 = "facility"
+
+	slot17(slot19, slot20, slot21, slot22)
+
+	--- END OF BLOCK #50 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
+
+
+	--- BLOCK #51 242-250, warpins: 1 ---
+	slot17 = string
+	slot17 = slot17.find
+	slot19 = slot16
+	slot20 = slot3
+	slot21 = 1
+	slot22 = true
+	slot17 = slot17(slot19, slot20, slot21, slot22)
 	--- END OF BLOCK #51 ---
 
-	if slot16 ~= "table" then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #52
 	else
 	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #52 239-243, warpins: 1 ---
-	slot16 = type
-	slot18 = slot15
-	slot16 = slot16(slot18)
+	--- BLOCK #52 251-256, warpins: 1 ---
+	slot17 = slot10
+	slot19 = slot14
+	slot20 = slot16
+	slot21 = "contains"
+	slot22 = "facility"
+
+	slot17(slot19, slot20, slot21, slot22)
+
 	--- END OF BLOCK #52 ---
 
-	if slot16 == "userdata" then
-	JUMP TO BLOCK #53
-	else
-	JUMP TO BLOCK #58
-	end
+	FLOW; TARGET BLOCK #53
 
 
-	--- BLOCK #53 244-252, warpins: 2 ---
-	slot16 = HomeCmdImplement
-	slot16 = slot16._localize
-	slot18 = slot15.name
-	slot16 = slot16(slot18)
-	slot17 = type
-	slot19 = slot16
-	slot17 = slot17(slot19)
+	--- BLOCK #53 257-258, warpins: 6 ---
 	--- END OF BLOCK #53 ---
 
-	if slot17 == "string" then
-	JUMP TO BLOCK #54
-	else
-	JUMP TO BLOCK #58
-	end
+	for slot14 in slot11, slot12, slot13
+	LOOP BLOCK #47
+	GO OUT TO BLOCK #54
 
 
-	--- BLOCK #54 253-254, warpins: 1 ---
+	--- BLOCK #54 259-260, warpins: 2 ---
 	--- END OF BLOCK #54 ---
 
-	if slot16 == slot3 then
+	if slot4 ~= "any" then
 	JUMP TO BLOCK #55
 	else
 	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #55 255-261, warpins: 1 ---
-	slot17 = slot10
-	slot19 = slot14
-	slot20 = slot16
-	slot21 = "exact"
-	slot22 = "facility"
-
-	slot17(slot19, slot20, slot21, slot22)
-
+	--- BLOCK #55 261-262, warpins: 1 ---
 	--- END OF BLOCK #55 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #58
-
-
-	--- BLOCK #56 262-270, warpins: 1 ---
-	slot17 = string
-	slot17 = slot17.find
-	slot19 = slot16
-	slot20 = slot3
-	slot21 = 1
-	slot22 = true
-	slot17 = slot17(slot19, slot20, slot21, slot22)
-	--- END OF BLOCK #56 ---
-
-	slot17 = if slot17 then
-	JUMP TO BLOCK #57
-	else
-	JUMP TO BLOCK #58
-	end
-
-
-	--- BLOCK #57 271-276, warpins: 1 ---
-	slot17 = slot10
-	slot19 = slot14
-	slot20 = slot16
-	slot21 = "contains"
-	slot22 = "facility"
-
-	slot17(slot19, slot20, slot21, slot22)
-
-	--- END OF BLOCK #57 ---
-
-	FLOW; TARGET BLOCK #58
-
-
-	--- BLOCK #58 277-278, warpins: 6 ---
-	--- END OF BLOCK #58 ---
-
-	for slot14 in slot11, slot12, slot13
-	LOOP BLOCK #51
-	GO OUT TO BLOCK #59
-
-
-	--- BLOCK #59 279-280, warpins: 2 ---
-	--- END OF BLOCK #59 ---
-
-	if slot4 ~= "any" then
-	JUMP TO BLOCK #60
-	else
-	JUMP TO BLOCK #61
-	end
-
-
-	--- BLOCK #60 281-282, warpins: 1 ---
-	--- END OF BLOCK #60 ---
-
 	if slot4 == "pet" then
-	JUMP TO BLOCK #61
+	JUMP TO BLOCK #56
 	else
-	JUMP TO BLOCK #70
+	JUMP TO BLOCK #64
 	end
 
 
-	--- BLOCK #61 283-286, warpins: 2 ---
+	--- BLOCK #56 263-266, warpins: 2 ---
 	slot11 = pairs
 	slot13 = PetData
 	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #61 ---
+	--- END OF BLOCK #56 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #69
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-	--- BLOCK #62 287-293, warpins: 1 ---
+	--- BLOCK #57 267-274, warpins: 1 ---
 	slot15 = PetData
 	slot15 = slot15[slot14]
-	slot16 = type
+	slot16 = HomeCmdImplement
+	slot16 = slot16._isTableLike
 	slot18 = slot15
 	slot16 = slot16(slot18)
-	--- END OF BLOCK #62 ---
+	--- END OF BLOCK #57 ---
 
-	if slot16 ~= "table" then
+	slot16 = if slot16 then
+	JUMP TO BLOCK #58
+	else
 	JUMP TO BLOCK #63
-	else
-	JUMP TO BLOCK #64
 	end
 
 
-	--- BLOCK #63 294-298, warpins: 1 ---
-	slot16 = type
-	slot18 = slot15
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #63 ---
-
-	if slot16 == "userdata" then
-	JUMP TO BLOCK #64
-	else
-	JUMP TO BLOCK #69
-	end
-
-
-	--- BLOCK #64 299-307, warpins: 2 ---
+	--- BLOCK #58 275-283, warpins: 1 ---
 	slot16 = HomeCmdImplement
 	slot16 = slot16._localize
 	slot18 = slot15.name
@@ -39256,26 +40860,26 @@ slot30 = function(slot0, slot1, slot2)
 	slot17 = type
 	slot19 = slot16
 	slot17 = slot17(slot19)
-	--- END OF BLOCK #64 ---
+	--- END OF BLOCK #58 ---
 
 	if slot17 == "string" then
-	JUMP TO BLOCK #65
+	JUMP TO BLOCK #59
 	else
-	JUMP TO BLOCK #69
+	JUMP TO BLOCK #63
 	end
 
 
-	--- BLOCK #65 308-309, warpins: 1 ---
-	--- END OF BLOCK #65 ---
+	--- BLOCK #59 284-285, warpins: 1 ---
+	--- END OF BLOCK #59 ---
 
 	if slot16 == slot3 then
-	JUMP TO BLOCK #66
+	JUMP TO BLOCK #60
 	else
-	JUMP TO BLOCK #67
+	JUMP TO BLOCK #61
 	end
 
 
-	--- BLOCK #66 310-316, warpins: 1 ---
+	--- BLOCK #60 286-292, warpins: 1 ---
 	slot17 = slot10
 	slot19 = slot14
 	slot20 = slot16
@@ -39284,12 +40888,12 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot17(slot19, slot20, slot21, slot22)
 
-	--- END OF BLOCK #66 ---
+	--- END OF BLOCK #60 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #69
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-	--- BLOCK #67 317-325, warpins: 1 ---
+	--- BLOCK #61 293-301, warpins: 1 ---
 	slot17 = string
 	slot17 = slot17.find
 	slot19 = slot16
@@ -39297,16 +40901,16 @@ slot30 = function(slot0, slot1, slot2)
 	slot21 = 1
 	slot22 = true
 	slot17 = slot17(slot19, slot20, slot21, slot22)
-	--- END OF BLOCK #67 ---
+	--- END OF BLOCK #61 ---
 
 	slot17 = if slot17 then
-	JUMP TO BLOCK #68
+	JUMP TO BLOCK #62
 	else
-	JUMP TO BLOCK #69
+	JUMP TO BLOCK #63
 	end
 
 
-	--- BLOCK #68 326-331, warpins: 1 ---
+	--- BLOCK #62 302-307, warpins: 1 ---
 	slot17 = slot10
 	slot19 = slot14
 	slot20 = slot16
@@ -39315,107 +40919,107 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot17(slot19, slot20, slot21, slot22)
 
-	--- END OF BLOCK #68 ---
+	--- END OF BLOCK #62 ---
 
-	FLOW; TARGET BLOCK #69
+	FLOW; TARGET BLOCK #63
 
 
-	--- BLOCK #69 332-333, warpins: 6 ---
-	--- END OF BLOCK #69 ---
+	--- BLOCK #63 308-309, warpins: 6 ---
+	--- END OF BLOCK #63 ---
 
 	for slot14 in slot11, slot12, slot13
-	LOOP BLOCK #62
-	GO OUT TO BLOCK #70
+	LOOP BLOCK #57
+	GO OUT TO BLOCK #64
 
 
-	--- BLOCK #70 334-338, warpins: 2 ---
+	--- BLOCK #64 310-314, warpins: 2 ---
 	slot11 = {}
 	slot12 = ipairs
 	slot14 = slot7
 	slot12, slot13, slot14 = slot12(slot14)
+	--- END OF BLOCK #64 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #68
+
+
+	--- BLOCK #65 315-317, warpins: 1 ---
+	slot17 = #slot11
+	--- END OF BLOCK #65 ---
+
+	if slot6 <= slot17 then
+	JUMP TO BLOCK #66
+	else
+	JUMP TO BLOCK #67
+	end
+
+
+	--- BLOCK #66 318-318, warpins: 1 ---
+	--- END OF BLOCK #66 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #69
+
+
+	--- BLOCK #67 319-321, warpins: 1 ---
+	slot17 = #slot11
+	slot17 = slot17 + 1
+	slot11[slot17] = slot16
+	--- END OF BLOCK #67 ---
+
+	FLOW; TARGET BLOCK #68
+
+
+	--- BLOCK #68 322-323, warpins: 2 ---
+	--- END OF BLOCK #68 ---
+
+	for slot15, slot16 in slot12, slot13, slot14
+	LOOP BLOCK #65
+	GO OUT TO BLOCK #69
+
+
+	--- BLOCK #69 324-327, warpins: 2 ---
+	slot12 = ipairs
+	slot14 = slot8
+	slot12, slot13, slot14 = slot12(slot14)
+	--- END OF BLOCK #69 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #73
+
+
+	--- BLOCK #70 328-330, warpins: 1 ---
+	slot17 = #slot11
 	--- END OF BLOCK #70 ---
+
+	if slot6 <= slot17 then
+	JUMP TO BLOCK #71
+	else
+	JUMP TO BLOCK #72
+	end
+
+
+	--- BLOCK #71 331-331, warpins: 1 ---
+	--- END OF BLOCK #71 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #74
 
 
-	--- BLOCK #71 339-341, warpins: 1 ---
+	--- BLOCK #72 332-334, warpins: 1 ---
 	slot17 = #slot11
-	--- END OF BLOCK #71 ---
-
-	if slot6 <= slot17 then
-	JUMP TO BLOCK #72
-	else
-	JUMP TO BLOCK #73
-	end
-
-
-	--- BLOCK #72 342-342, warpins: 1 ---
+	slot17 = slot17 + 1
+	slot11[slot17] = slot16
 	--- END OF BLOCK #72 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #75
+	FLOW; TARGET BLOCK #73
 
 
-	--- BLOCK #73 343-345, warpins: 1 ---
-	slot17 = #slot11
-	slot17 = slot17 + 1
-	slot11[slot17] = slot16
+	--- BLOCK #73 335-336, warpins: 2 ---
 	--- END OF BLOCK #73 ---
 
-	FLOW; TARGET BLOCK #74
-
-
-	--- BLOCK #74 346-347, warpins: 2 ---
-	--- END OF BLOCK #74 ---
-
 	for slot15, slot16 in slot12, slot13, slot14
-	LOOP BLOCK #71
-	GO OUT TO BLOCK #75
+	LOOP BLOCK #70
+	GO OUT TO BLOCK #74
 
 
-	--- BLOCK #75 348-351, warpins: 2 ---
-	slot12 = ipairs
-	slot14 = slot8
-	slot12, slot13, slot14 = slot12(slot14)
-	--- END OF BLOCK #75 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #79
-
-
-	--- BLOCK #76 352-354, warpins: 1 ---
-	slot17 = #slot11
-	--- END OF BLOCK #76 ---
-
-	if slot6 <= slot17 then
-	JUMP TO BLOCK #77
-	else
-	JUMP TO BLOCK #78
-	end
-
-
-	--- BLOCK #77 355-355, warpins: 1 ---
-	--- END OF BLOCK #77 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #80
-
-
-	--- BLOCK #78 356-358, warpins: 1 ---
-	slot17 = #slot11
-	slot17 = slot17 + 1
-	slot11[slot17] = slot16
-	--- END OF BLOCK #78 ---
-
-	FLOW; TARGET BLOCK #79
-
-
-	--- BLOCK #79 359-360, warpins: 2 ---
-	--- END OF BLOCK #79 ---
-
-	for slot15, slot16 in slot12, slot13, slot14
-	LOOP BLOCK #76
-	GO OUT TO BLOCK #80
-
-
-	--- BLOCK #80 361-370, warpins: 2 ---
+	--- BLOCK #74 337-346, warpins: 2 ---
 	slot12 = HomeCmdImplement
 	slot12 = slot12._ok
 	slot14 = {}
@@ -39424,57 +41028,57 @@ slot30 = function(slot0, slot1, slot2)
 	slot14.total = slot15
 	slot15 = #slot11
 	slot16 = 1
-	--- END OF BLOCK #80 ---
+	--- END OF BLOCK #74 ---
 
 	if slot15 <= slot16 then
-	JUMP TO BLOCK #81
+	JUMP TO BLOCK #75
 	else
-	JUMP TO BLOCK #82
+	JUMP TO BLOCK #76
 	end
 
 
-	--- BLOCK #81 371-372, warpins: 1 ---
+	--- BLOCK #75 347-348, warpins: 1 ---
 	slot15 = false
-	--- END OF BLOCK #81 ---
+	--- END OF BLOCK #75 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #83
+	UNCONDITIONAL JUMP; TARGET BLOCK #77
 
 
-	--- BLOCK #82 373-373, warpins: 1 ---
+	--- BLOCK #76 349-349, warpins: 1 ---
 	slot15 = true
-	--- END OF BLOCK #82 ---
+	--- END OF BLOCK #76 ---
 
-	FLOW; TARGET BLOCK #83
+	FLOW; TARGET BLOCK #77
 
 
-	--- BLOCK #83 374-376, warpins: 2 ---
+	--- BLOCK #77 350-352, warpins: 2 ---
 	slot14.ambiguous = slot15
 
 	return slot12(slot14)
-	--- END OF BLOCK #83 ---
+	--- END OF BLOCK #77 ---
 
-	FLOW; TARGET BLOCK #84
+	FLOW; TARGET BLOCK #78
 
 
-	--- BLOCK #84 377-377, warpins: 2 ---
+	--- BLOCK #78 353-353, warpins: 2 ---
 	return slot4(slot6, slot7)
-	--- END OF BLOCK #84 ---
+	--- END OF BLOCK #78 ---
 
-	FLOW; TARGET BLOCK #85
+	FLOW; TARGET BLOCK #79
 
 
-	--- BLOCK #85 378-378, warpins: 2 ---
+	--- BLOCK #79 354-354, warpins: 2 ---
 	return slot6(slot8, slot9)
-	--- END OF BLOCK #85 ---
+	--- END OF BLOCK #79 ---
 
 
 
 end
 
-slot21.resolveName = slot30
-slot30 = "_getHomeTemplateIdsByFacilityTemplate"
+slot22.resolveName = slot31
+slot31 = "_getHomeTemplateIdsByFacilityTemplate"
 
-slot31 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -39482,61 +41086,49 @@ slot31 = function(slot0)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot7 = type
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot7 = HomeCmdImplement
+	slot7 = slot7._isTableLike
 	slot9 = slot6
 	slot7 = slot7(slot9)
 	--- END OF BLOCK #1 ---
 
-	if slot7 ~= "table" then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 11-15, warpins: 1 ---
-	slot7 = type
-	slot9 = slot6
-	slot7 = slot7(slot9)
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot7 = slot6.facilityId
 	--- END OF BLOCK #2 ---
 
-	if slot7 == "userdata" then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 16-18, warpins: 2 ---
-	slot7 = slot6.facilityId
-	--- END OF BLOCK #3 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 19-24, warpins: 1 ---
+	--- BLOCK #3 15-20, warpins: 1 ---
 	slot8 = type
 	slot10 = Utils
 	slot10 = slot10.getHomeObjectFacilityId
 	slot8 = slot8(slot10)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 	if slot8 == "function" then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 25-29, warpins: 1 ---
+	--- BLOCK #4 21-25, warpins: 1 ---
 	slot8 = HomeCmdImplement
 	slot8 = slot8._safeCall
 
@@ -39555,45 +41147,45 @@ slot31 = function(slot0)
 
 	slot8 = slot8(slot10)
 	slot7 = slot8
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-27, warpins: 3 ---
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 30-31, warpins: 3 ---
-	--- END OF BLOCK #6 ---
-
 	if slot7 == slot0 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 32-34, warpins: 1 ---
+	--- BLOCK #6 28-30, warpins: 1 ---
 	slot8 = #slot1
 	slot8 = slot8 + 1
 	slot1[slot8] = slot5
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 31-31, warpins: 3 ---
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-35, warpins: 3 ---
+	--- BLOCK #8 32-33, warpins: 2 ---
 	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 36-37, warpins: 2 ---
-	--- END OF BLOCK #9 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #10
+	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #10 38-43, warpins: 1 ---
+	--- BLOCK #9 34-39, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.sort
 	slot4 = slot1
@@ -39601,15 +41193,15 @@ slot31 = function(slot0)
 	slot2(slot4)
 
 	return slot1
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot21[slot30] = slot31
+slot22[slot31] = slot32
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -39660,38 +41252,26 @@ slot30 = function(slot0, slot1, slot2)
 	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #5 22-28, warpins: 1 ---
+	--- BLOCK #5 22-29, warpins: 1 ---
 	slot9 = HomelandFormulaData
 	slot9 = slot9[slot8]
-	slot10 = type
+	slot10 = HomeCmdImplement
+	slot10 = slot10._isTableLike
 	slot12 = slot9
 	slot10 = slot10(slot12)
 	--- END OF BLOCK #5 ---
 
-	if slot10 ~= "table" then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #6 29-33, warpins: 1 ---
-	slot10 = type
-	slot12 = slot9
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #6 ---
-
-	if slot10 == "userdata" then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #7 34-41, warpins: 2 ---
+	--- BLOCK #6 30-37, warpins: 1 ---
 	slot10 = HomeCmdImplement
 	slot10 = slot10._collectFormulaOutputs
 	slot12 = slot9
@@ -39699,80 +41279,114 @@ slot30 = function(slot0, slot1, slot2)
 	slot11 = ipairs
 	slot13 = slot10
 	slot11, slot12, slot13 = slot11(slot13)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #7 38-40, warpins: 1 ---
+	slot16 = slot15.itemId
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	if slot16 == slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #8 42-44, warpins: 1 ---
-	slot16 = slot15.itemId
+	--- BLOCK #8 41-55, warpins: 1 ---
+	slot16 = HomeCmdImplement
+	slot16 = slot16._buildEnvRequirementsDesc
+	slot18 = slot9
+	slot16 = slot16(slot18)
+	slot17 = #slot4
+	slot17 = slot17 + 1
+	slot18 = {}
+	slot18.formulaId = slot8
+	slot19 = slot15.itemId
+	slot18.output = slot19
+	slot19 = slot15.count
+	slot18.outputNum = slot19
+	slot19 = slot9.timeCost
 	--- END OF BLOCK #8 ---
 
-	if slot16 == slot3 then
+	slot19 = if not slot19 then
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 56-56, warpins: 1 ---
+	slot19 = slot9.time
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 57-67, warpins: 2 ---
+	slot18.timeCost = slot19
+	slot19 = HomeCmdImplement
+	slot19 = slot19._collectFormulaConsumables
+	slot21 = slot9
+	slot19 = slot19(slot21)
+	slot18.inputs = slot19
+	slot19 = slot9.workload
+	slot18.workload = slot19
+	slot18.envRequirementsDesc = slot16
+	--- END OF BLOCK #10 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 45-55, warpins: 1 ---
-	slot16 = #slot4
-	slot16 = slot16 + 1
-	slot17 = {}
-	slot17.formulaId = slot8
-	slot18 = slot15.itemId
-	slot17.output = slot18
-	slot18 = slot15.count
-	slot17.outputNum = slot18
-	slot18 = slot9.timeCost
-	--- END OF BLOCK #9 ---
+	--- BLOCK #11 68-70, warpins: 1 ---
+	slot19 = slot16.needsEnvironment
+	--- END OF BLOCK #11 ---
 
-	slot18 = if not slot18 then
-	JUMP TO BLOCK #10
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 56-56, warpins: 1 ---
-	slot18 = slot9.time
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 57-66, warpins: 2 ---
-	slot17.timeCost = slot18
-	slot18 = HomeCmdImplement
-	slot18 = slot18._collectFormulaConsumables
-	slot20 = slot9
-	slot18 = slot18(slot20)
-	slot17.inputs = slot18
-	slot18 = slot9.workload
-	slot17.workload = slot18
-	slot4[slot16] = slot17
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #12 67-68, warpins: 2 ---
+	--- BLOCK #12 71-71, warpins: 2 ---
+	slot19 = false
 	--- END OF BLOCK #12 ---
 
-	for slot14, slot15 in slot11, slot12, slot13
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #13
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 69-70, warpins: 4 ---
+	--- BLOCK #13 72-74, warpins: 2 ---
+	slot18.needsEnvironment = slot19
+	slot4[slot17] = slot18
 	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 75-76, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	for slot14, slot15 in slot11, slot12, slot13
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 77-78, warpins: 4 ---
+	--- END OF BLOCK #15 ---
 
 	for slot8 in slot5, slot6, slot7
 	LOOP BLOCK #5
-	GO OUT TO BLOCK #14
+	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #14 71-79, warpins: 1 ---
+	--- BLOCK #16 79-87, warpins: 1 ---
 	slot5 = table
 	slot5 = slot5.sort
 	slot7 = slot4
@@ -39852,76 +41466,52 @@ slot30 = function(slot0, slot1, slot2)
 	slot5 = ipairs
 	slot7 = slot4
 	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #15 80-84, warpins: 1 ---
+	--- BLOCK #17 88-92, warpins: 1 ---
 	slot10 = {}
 	slot11 = pairs
 	slot13 = HomelandFacilityData
 	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #16 85-91, warpins: 1 ---
+	--- BLOCK #18 93-100, warpins: 1 ---
 	slot15 = HomelandFacilityData
 	slot15 = slot15[slot14]
-	slot16 = type
+	slot16 = HomeCmdImplement
+	slot16 = slot16._isTableLike
 	slot18 = slot15
 	slot16 = slot16(slot18)
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #18 ---
 
-	if slot16 ~= "table" then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 92-96, warpins: 1 ---
-	slot16 = type
-	slot18 = slot15
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #17 ---
-
-	if slot16 == "userdata" then
-	JUMP TO BLOCK #18
+	slot16 = if slot16 then
+	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #18 97-101, warpins: 2 ---
-	slot16 = type
-	slot18 = slot15.formulaList
-	slot16 = slot16(slot18)
-	--- END OF BLOCK #18 ---
-
-	if slot16 ~= "table" then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 102-106, warpins: 1 ---
-	slot16 = type
+	--- BLOCK #19 101-106, warpins: 1 ---
+	slot16 = HomeCmdImplement
+	slot16 = slot16._isTableLike
 	slot18 = slot15.formulaList
 	slot16 = slot16(slot18)
 	--- END OF BLOCK #19 ---
 
-	if slot16 == "userdata" then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #20 107-110, warpins: 2 ---
+	--- BLOCK #20 107-110, warpins: 1 ---
 	slot16 = ipairs
 	slot18 = slot15.formulaList
 	slot16, slot17, slot18 = slot16(slot18)
@@ -39977,7 +41567,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- END OF BLOCK #24 ---
 
 	for slot14 in slot11, slot12, slot13
-	LOOP BLOCK #16
+	LOOP BLOCK #18
 	GO OUT TO BLOCK #25
 
 
@@ -40068,7 +41658,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- END OF BLOCK #26 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #15
+	LOOP BLOCK #17
 	GO OUT TO BLOCK #27
 
 
@@ -40094,9 +41684,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.findFormulasByOutput = slot30
+slot22.findFormulasByOutput = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -40287,9 +41877,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.upgradeCar = slot30
+slot22.upgradeCar = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -40306,7 +41896,7 @@ slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #53
+	UNCONDITIONAL JUMP; TARGET BLOCK #51
 
 
 	--- BLOCK #2 7-8, warpins: 1 ---
@@ -40360,7 +41950,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot8 = "params.items must be non-empty array"
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #52
 
 
 	--- BLOCK #7 26-32, warpins: 1 ---
@@ -40414,7 +42004,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot17 = slot17 .. slot18 .. slot19
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #55
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
 
 
 	--- BLOCK #12 48-51, warpins: 1 ---
@@ -40444,7 +42034,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot17 = slot17 .. slot18 .. slot19 .. slot20
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #56
+	UNCONDITIONAL JUMP; TARGET BLOCK #54
 
 
 	--- BLOCK #14 65-70, warpins: 1 ---
@@ -40473,7 +42063,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot18 = slot18 .. slot19 .. slot20
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #57
+	UNCONDITIONAL JUMP; TARGET BLOCK #55
 
 
 	--- BLOCK #16 81-90, warpins: 1 ---
@@ -40579,7 +42169,7 @@ slot30 = function(slot0, slot1, slot2)
 	slot24 = slot24 .. slot25 .. slot26 .. slot27 .. slot28 .. slot29
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #58
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
 
 
 	--- BLOCK #24 126-128, warpins: 2 ---
@@ -40738,8 +42328,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot23 = slot23(slot25)
 	slot22.scale = slot23
 	slot23 = {
-		skipCount = true,
-		skipInventory = true
+		skipInventory = true,
+		skipCount = true
 	}
 	slot20, slot21 = slot20(slot22, slot23)
 	--- END OF BLOCK #34 ---
@@ -40950,106 +42540,43 @@ slot30 = function(slot0, slot1, slot2)
 	slot13, slot14, slot15 = slot13(slot15)
 	--- END OF BLOCK #47 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #51
+	UNCONDITIONAL JUMP; TARGET BLOCK #49
 
 
-	--- BLOCK #48 292-297, warpins: 1 ---
-	slot18 = HomeCmdImplement
-	slot18 = slot18._safeCall
-
-	slot20 = function()
-		--- BLOCK #0 1-15, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.addOrnament
-		slot3 = p
-		slot3 = slot3.homeId
-		slot4 = p
-		slot4 = slot4.pos
-		slot5 = p
-		slot5 = slot5.rotation
-		slot6 = p
-		slot6 = slot6.scale
-
-		slot0(slot2, slot3, slot4, slot5, slot6)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot18, slot19 = slot18(slot20)
+	--- BLOCK #48 292-310, warpins: 1 ---
+	slot18 = #slot12
+	slot18 = slot18 + 1
+	slot19 = {}
+	slot20 = slot17.homeId
+	slot19.homeTemplateId = slot20
+	slot20 = {}
+	slot21 = slot17.pos
+	slot21 = slot21[1]
+	slot20.x = slot21
+	slot21 = slot17.pos
+	slot21 = slot21[2]
+	slot20.y = slot21
+	slot21 = slot17.pos
+	slot21 = slot21[3]
+	slot20.z = slot21
+	slot19.position = slot20
+	slot20 = slot17.yawAngle
+	slot19.yawAngle = slot20
+	slot12[slot18] = slot19
 	--- END OF BLOCK #48 ---
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #49
-	else
-	JUMP TO BLOCK #50
-	end
+	FLOW; TARGET BLOCK #49
 
 
-	--- BLOCK #49 298-314, warpins: 1 ---
-	slot20 = HomeCmdImplement
-	slot20 = slot20._err
-	slot22 = Const
-	slot22 = slot22.CMD_SOCKET_ERROR
-	slot22 = slot22.INTERNAL
-	slot23 = "items["
-	slot24 = slot16
-	slot25 = "]: addOrnament failed: "
-	slot26 = tostring
-	slot28 = slot19
-	slot26 = slot26(slot28)
-	slot27 = " (already dispatched: "
-	slot28 = #slot12
-	slot29 = ")"
-	slot23 = slot23 .. slot24 .. slot25 .. slot26 .. slot27 .. slot28 .. slot29
-
-	return slot20(slot22, slot23)
-
+	--- BLOCK #49 311-312, warpins: 2 ---
 	--- END OF BLOCK #49 ---
-
-	FLOW; TARGET BLOCK #50
-
-
-	--- BLOCK #50 315-334, warpins: 2 ---
-	slot20 = #slot12
-	slot20 = slot20 + 1
-	slot21 = {}
-	slot22 = slot17.homeId
-	slot21.homeTemplateId = slot22
-	slot22 = {}
-	slot23 = slot17.pos
-	slot23 = slot23[1]
-	slot22.x = slot23
-	slot23 = slot17.pos
-	slot23 = slot23[2]
-	slot22.y = slot23
-	slot23 = slot17.pos
-	slot23 = slot23[3]
-	slot22.z = slot23
-	slot21.position = slot22
-	slot22 = slot17.yawAngle
-	slot21.yawAngle = slot22
-	slot12[slot20] = slot21
-	--- END OF BLOCK #50 ---
-
-	FLOW; TARGET BLOCK #51
-
-
-	--- BLOCK #51 335-336, warpins: 2 ---
-	--- END OF BLOCK #51 ---
 
 	for slot16, slot17 in slot13, slot14, slot15
 	LOOP BLOCK #48
-	GO OUT TO BLOCK #52
+	GO OUT TO BLOCK #50
 
 
-	--- BLOCK #52 337-345, warpins: 1 ---
+	--- BLOCK #50 313-321, warpins: 1 ---
 	slot13 = HomeCmdImplement
 	slot13 = slot13._asyncOk
 	slot15 = {
@@ -41062,57 +42589,57 @@ slot30 = function(slot0, slot1, slot2)
 	slot15.callbackSinceSeq = slot8
 
 	return slot13(slot15)
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 322-322, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #51 ---
+
+	FLOW; TARGET BLOCK #52
+
+
+	--- BLOCK #52 323-323, warpins: 2 ---
+	return slot5(slot7, slot8)
 	--- END OF BLOCK #52 ---
 
 	FLOW; TARGET BLOCK #53
 
 
-	--- BLOCK #53 346-346, warpins: 2 ---
-	return slot3
+	--- BLOCK #53 324-324, warpins: 2 ---
+	return slot14(slot16, slot17)
 	--- END OF BLOCK #53 ---
 
 	FLOW; TARGET BLOCK #54
 
 
-	--- BLOCK #54 347-347, warpins: 2 ---
-	return slot5(slot7, slot8)
+	--- BLOCK #54 325-325, warpins: 2 ---
+	return slot14(slot16, slot17)
 	--- END OF BLOCK #54 ---
 
 	FLOW; TARGET BLOCK #55
 
 
-	--- BLOCK #55 348-348, warpins: 2 ---
-	return slot14(slot16, slot17)
+	--- BLOCK #55 326-326, warpins: 2 ---
+	return slot15(slot17, slot18)
 	--- END OF BLOCK #55 ---
 
 	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #56 349-349, warpins: 2 ---
-	return slot14(slot16, slot17)
-	--- END OF BLOCK #56 ---
-
-	FLOW; TARGET BLOCK #57
-
-
-	--- BLOCK #57 350-350, warpins: 2 ---
-	return slot15(slot17, slot18)
-	--- END OF BLOCK #57 ---
-
-	FLOW; TARGET BLOCK #58
-
-
-	--- BLOCK #58 351-351, warpins: 2 ---
+	--- BLOCK #56 327-327, warpins: 2 ---
 	return slot21(slot23, slot24)
-	--- END OF BLOCK #58 ---
+	--- END OF BLOCK #56 ---
 
 
 
 end
 
-slot21.placeOrnamentBatch = slot30
+slot22.placeOrnamentBatch = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -41842,9 +43369,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.moveOrnamentBatch = slot30
+slot22.moveOrnamentBatch = slot31
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = HomeCmdImplement
 	slot3 = slot3._requireHomeland
@@ -42213,9 +43740,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot21.recycleOrnamentBatch = slot30
+slot22.recycleOrnamentBatch = slot31
 
-return slot21
+return slot22
 --- END OF BLOCK #22 ---
 
 

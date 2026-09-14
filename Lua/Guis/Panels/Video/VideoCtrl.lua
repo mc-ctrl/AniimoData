@@ -1,4 +1,4 @@
---- BLOCK #0 1-117, warpins: 1 ---
+--- BLOCK #0 1-119, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -27,57 +27,59 @@ slot7 = slot7(slot9, slot10)
 slot8 = require
 slot10 = "Utils.LuaUIUtils"
 slot8 = slot8(slot10)
-slot9 = typeof
-slot10 = {}
-slot11 = slot4.VideoType
-slot11 = slot11.PV
-slot12 = "canPlayPV"
-slot10[slot11] = slot12
-slot11 = slot4.VideoType
-slot11 = slot11.NormalVideo
-slot12 = "canPlayNormalVideo"
-slot10[slot11] = slot12
-slot11 = slot4.VideoType
-slot11 = slot11.BlackTransition
-slot12 = "canPlayBlackTransition"
-slot10[slot11] = slot12
-slot7.VIDEO_TYPE_CHECK_CAN_PLAY_FUNC = slot10
-slot10 = {}
-slot11 = slot4.VideoType
-slot11 = slot11.PV
-slot12 = "playPV"
-slot10[slot11] = slot12
-slot11 = slot4.VideoType
-slot11 = slot11.NormalVideo
-slot12 = "playNormalVideo"
-slot10[slot11] = slot12
-slot11 = slot4.VideoType
-slot11 = slot11.BlackTransition
-slot12 = "playBlackTransition"
-slot10[slot11] = slot12
-slot7.VIDEO_TYPE_DO_PLAY_FUNC = slot10
-slot10 = {}
-slot11 = slot4.VideoType
-slot11 = slot11.PV
-slot12 = "onPVEnd"
-slot10[slot11] = slot12
-slot11 = slot4.VideoType
-slot11 = slot11.NormalVideo
-slot12 = "onNormalVideoEnd"
-slot10[slot11] = slot12
-slot11 = slot4.VideoType
-slot11 = slot11.BlackTransition
-slot12 = "onBlackTransitionEnd"
-slot10[slot11] = slot12
-slot7.VIDEO_TYPE_END_CALLBACK = slot10
-slot10 = 0.5
-slot7.DEFAULT_FADE_OUT_TIME = slot10
-slot10 = 2.5
-slot7.DEFAULT_PV_FADE_OUT_TIME = slot10
-slot10 = {}
-slot7.messages = slot10
+slot9 = "PVFadeOut"
+slot10 = "BlackTransition"
+slot11 = typeof
+slot12 = {}
+slot13 = slot4.VideoType
+slot13 = slot13.PV
+slot14 = "canPlayPV"
+slot12[slot13] = slot14
+slot13 = slot4.VideoType
+slot13 = slot13.NormalVideo
+slot14 = "canPlayNormalVideo"
+slot12[slot13] = slot14
+slot13 = slot4.VideoType
+slot13 = slot13.BlackTransition
+slot14 = "canPlayBlackTransition"
+slot12[slot13] = slot14
+slot7.VIDEO_TYPE_CHECK_CAN_PLAY_FUNC = slot12
+slot12 = {}
+slot13 = slot4.VideoType
+slot13 = slot13.PV
+slot14 = "playPV"
+slot12[slot13] = slot14
+slot13 = slot4.VideoType
+slot13 = slot13.NormalVideo
+slot14 = "playNormalVideo"
+slot12[slot13] = slot14
+slot13 = slot4.VideoType
+slot13 = slot13.BlackTransition
+slot14 = "playBlackTransition"
+slot12[slot13] = slot14
+slot7.VIDEO_TYPE_DO_PLAY_FUNC = slot12
+slot12 = {}
+slot13 = slot4.VideoType
+slot13 = slot13.PV
+slot14 = "onPVEnd"
+slot12[slot13] = slot14
+slot13 = slot4.VideoType
+slot13 = slot13.NormalVideo
+slot14 = "onNormalVideoEnd"
+slot12[slot13] = slot14
+slot13 = slot4.VideoType
+slot13 = slot13.BlackTransition
+slot14 = "onBlackTransitionEnd"
+slot12[slot13] = slot14
+slot7.VIDEO_TYPE_END_CALLBACK = slot12
+slot12 = 0.5
+slot7.DEFAULT_FADE_OUT_TIME = slot12
+slot12 = 2.5
+slot7.DEFAULT_PV_FADE_OUT_TIME = slot12
+slot12 = {}
+slot7.messages = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -161,9 +163,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot7.onCreate = slot10
+slot7.onCreate = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -172,9 +174,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.addListener = slot10
+slot7.addListener = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSoundEvent
 	--- END OF BLOCK #0 ---
@@ -217,9 +219,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.onDestroy = slot10
+slot7.onDestroy = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onShow
@@ -241,9 +243,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.onShow = slot10
+slot7.onShow = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.canPlayVideo
@@ -279,9 +281,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot7.startPlayVideo = slot10
+slot7.startPlayVideo = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.videoPlayer
@@ -350,9 +352,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.onSkipBtnClick = slot10
+slot7.onSkipBtnClick = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LuaUIUtils
 	slot2 = slot2.setUIViewVisible
@@ -369,9 +371,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot7.enableSkipBtn = slot10
+slot7.enableSkipBtn = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.VIDEO_TYPE_CHECK_CAN_PLAY_FUNC
 	slot2 = slot2[slot1]
@@ -416,9 +418,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot7.canPlayVideo = slot10
+slot7.canPlayVideo = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0.VIDEO_TYPE_DO_PLAY_FUNC
 	slot3 = slot3[slot1]
@@ -470,9 +472,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot7.doPlayVideo = slot10
+slot7.doPlayVideo = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.VIDEO_TYPE_END_CALLBACK
 	slot2 = slot2[slot1]
@@ -536,9 +538,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot7.onVideoEndCallback = slot10
+slot7.onVideoEndCallback = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -587,9 +589,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.canPlayPV = slot10
+slot7.canPlayPV = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -625,9 +627,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.canPlayNormalVideo = slot10
+slot7.canPlayNormalVideo = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -663,9 +665,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.canPlayBlackTransition = slot10
+slot7.canPlayBlackTransition = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -824,7 +826,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.videoPlayer
 
 	slot4 = function()
-		--- BLOCK #0 1-26, warpins: 1 ---
+		--- BLOCK #0 1-29, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.enableSkipBtn
@@ -837,7 +839,10 @@ slot10 = function(slot0, slot1, slot2)
 		slot2 = self
 		slot2 = slot2.view
 		slot2 = slot2.videoPlayer
-		slot3 = "PVFadeOut"
+		slot3 = LuaUIUtils
+		slot3 = slot3.TweenId
+		slot5 = ID_PV_FADE_OUT
+		slot3 = slot3(slot5)
 		slot4 = 0
 		slot5 = fadeOutTime
 		slot6 = 0
@@ -891,9 +896,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot7.playPV = slot10
+slot7.playPV = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.space
@@ -906,20 +911,24 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-9, warpins: 1 ---
+	--- BLOCK #1 5-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.space
 	slot4 = slot2
-	slot2 = slot2.stopGameTime
+	slot2 = slot2.pauseGameByType
+	slot5 = Const
+	slot5 = slot5.GameTimeScaleType
+	slot5 = slot5.VIDEO
+	slot6 = -1
 
-	slot2(slot4)
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-12, warpins: 2 ---
+	--- BLOCK #2 14-16, warpins: 2 ---
 	slot2 = slot0.curSoundEvent
 	--- END OF BLOCK #2 ---
 
@@ -930,7 +939,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 13-19, warpins: 1 ---
+	--- BLOCK #3 17-23, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.audio
@@ -945,7 +954,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-27, warpins: 2 ---
+	--- BLOCK #4 24-31, warpins: 2 ---
 	slot2 = slot0.videoSoundEvent
 	slot0.curSoundEvent = slot2
 	slot2 = string
@@ -961,7 +970,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 28-34, warpins: 1 ---
+	--- BLOCK #5 32-38, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.audio
@@ -976,7 +985,7 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-68, warpins: 2 ---
+	--- BLOCK #6 39-72, warpins: 2 ---
 	slot2 = LuaUIUtils
 	slot2 = slot2.setUIViewVisible
 	slot4 = slot0.view
@@ -1097,9 +1106,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot7.playNormalVideo = slot10
+slot7.playNormalVideo = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SysConfigData
 	slot1 = slot1.BlackTransitionDuration
@@ -1119,7 +1128,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-43, warpins: 2 ---
+	--- BLOCK #2 6-46, warpins: 2 ---
 	slot2 = slot0.DEFAULT_FADE_OUT_TIME
 	slot5 = slot0
 	slot3 = slot0.enableSkipBtn
@@ -1147,7 +1156,10 @@ slot10 = function(slot0)
 	slot3 = slot3.DoAlpha
 	slot5 = slot0.view
 	slot5 = slot5.background
-	slot6 = "BlackTransition"
+	slot6 = LuaUIUtils
+	slot6 = slot6.TweenId
+	slot8 = ID_BLACK_TRANSITION
+	slot6 = slot6(slot8)
 	slot7 = 0
 	slot8 = slot2
 	slot9 = slot1
@@ -1185,9 +1197,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.playBlackTransition = slot10
+slot7.playBlackTransition = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1231,9 +1243,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.onPVEnd = slot10
+slot7.onPVEnd = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1258,20 +1270,23 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #2 9-13, warpins: 1 ---
+	--- BLOCK #2 9-16, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
 	slot3 = slot1
-	slot1 = slot1.startGameTime
+	slot1 = slot1.resumeGameByType
+	slot4 = Const
+	slot4 = slot4.GameTimeScaleType
+	slot4 = slot4.VIDEO
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 14-17, warpins: 3 ---
+	--- BLOCK #3 17-20, warpins: 3 ---
 	slot3 = slot0
 	slot1 = slot0.close
 
@@ -1284,9 +1299,9 @@ slot10 = function(slot0)
 
 end
 
-slot7.onNormalVideoEnd = slot10
+slot7.onNormalVideoEnd = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.background
@@ -1318,7 +1333,7 @@ slot10 = function(slot0)
 
 end
 
-slot7.onBlackTransitionEnd = slot10
+slot7.onBlackTransitionEnd = slot12
 
 return slot7
 --- END OF BLOCK #0 ---

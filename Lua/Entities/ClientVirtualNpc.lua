@@ -1,4 +1,4 @@
---- BLOCK #0 1-130, warpins: 1 ---
+--- BLOCK #0 1-132, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -110,8 +110,6 @@ slot26 = function(slot0, slot1)
 
 	slot2 = slot1.templateId
 	slot0.templateId = slot2
-	slot2 = true
-	slot0.isClientEnt = slot2
 	slot2 = ClientConst
 	slot2 = slot2.TopLogoType
 	slot2 = slot2.Pet
@@ -129,6 +127,8 @@ slot26 = function(slot0, slot1)
 	slot0.initPosition = slot2
 	slot2 = slot1.rotation
 	slot0.initRotation = slot2
+	slot2 = true
+	slot0.useSimpleTimeScale = slot2
 	slot2 = ActorManager
 	slot2 = slot2.addEntity
 	slot4 = slot0.actorId
@@ -182,12 +182,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-11, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.onLeaveSpace
-
-	slot1(slot3)
-
+	--- BLOCK #1 4-8, warpins: 1 ---
 	slot1 = slot0.space
 	slot3 = slot1
 	slot1 = slot1.onEntityLeave
@@ -200,7 +195,7 @@ slot26 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-21, warpins: 2 ---
+	--- BLOCK #2 9-19, warpins: 2 ---
 	slot1 = ClientVirtualNpc
 	slot1 = slot1.super
 	slot1 = slot1.destroy
@@ -211,6 +206,47 @@ slot26 = function(slot0)
 	slot1 = ActorManager
 	slot1 = slot1.removeEntity
 	slot3 = slot0.actorId
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot19.destroy = slot26
+
+slot26 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.onLeaveSpace
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-12, warpins: 2 ---
+	slot1 = ClientVirtualNpc
+	slot1 = slot1.super
+	slot1 = slot1.preDestroy
+	slot3 = slot0
 
 	slot1(slot3)
 
@@ -221,7 +257,7 @@ slot26 = function(slot0)
 
 end
 
-slot19.destroy = slot26
+slot19.preDestroy = slot26
 
 slot26 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
@@ -677,7 +713,7 @@ end
 slot19.onTriggerExit = slot26
 
 slot26 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = ClientVirtualNpc
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -685,20 +721,18 @@ slot26 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-11, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -706,13 +740,12 @@ slot26 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-34, warpins: 2 ---
+	--- BLOCK #2 10-31, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = ClientModelUtils
 	slot3 = slot3.getModelExtraInfo
 	slot5 = slot1
@@ -739,7 +772,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #3 35-43, warpins: 1 ---
+	--- BLOCK #3 32-40, warpins: 1 ---
 	slot6 = ClientModelUtils
 	slot6 = slot6.applyModelAppearance
 	slot8 = slot2.modelInfo
@@ -758,7 +791,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #4 44-47, warpins: 1 ---
+	--- BLOCK #4 41-44, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.attachBaseEffects
 	slot9 = slot3.attachEffects
@@ -770,7 +803,7 @@ slot26 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 48-50, warpins: 2 ---
+	--- BLOCK #5 45-47, warpins: 2 ---
 	slot6 = slot1.appearanceResID
 	--- END OF BLOCK #5 ---
 
@@ -781,7 +814,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #6 51-55, warpins: 1 ---
+	--- BLOCK #6 48-52, warpins: 1 ---
 	slot6 = NpcAvatarData
 	slot7 = slot1.appearanceResID
 	slot6 = slot6[slot7]
@@ -794,14 +827,14 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #7 56-56, warpins: 1 ---
+	--- BLOCK #7 53-53, warpins: 1 ---
 	slot6 = {}
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 57-59, warpins: 2 ---
+	--- BLOCK #8 54-56, warpins: 2 ---
 	slot7 = slot6.avatarId
 	--- END OF BLOCK #8 ---
 
@@ -812,7 +845,7 @@ slot26 = function(slot0)
 	end
 
 
-	--- BLOCK #9 60-69, warpins: 1 ---
+	--- BLOCK #9 57-66, warpins: 1 ---
 	slot8 = slot2.modelInfo
 	slot10 = slot8
 	slot8 = slot8.ParseAvatarRuntimeData
@@ -831,7 +864,7 @@ slot26 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 70-76, warpins: 1 ---
+	--- BLOCK #10 67-73, warpins: 1 ---
 	slot3.prefabResID = slot5
 	slot6 = ClientModelUtils
 	slot6 = slot6.applyModelAppearance
@@ -846,7 +879,7 @@ slot26 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 77-80, warpins: 4 ---
+	--- BLOCK #11 74-77, warpins: 4 ---
 	slot8 = slot2
 	slot6 = slot2.RefreshModels
 

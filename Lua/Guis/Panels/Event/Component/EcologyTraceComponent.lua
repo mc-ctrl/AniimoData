@@ -1,4 +1,4 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-79, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -274,50 +274,7 @@ end
 slot9.findObjects = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkContentLoaded
-	slot1 = slot1(slot3)
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-13, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.addListener
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.refreshPage
-
-	slot1(slot3)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot9.initView = slot14
-
-slot14 = function(slot0)
-	--- BLOCK #0 1-52, warpins: 1 ---
+	--- BLOCK #0 1-40, warpins: 1 ---
 	slot1 = slot0.btnInfoCostSearch
 	slot2 = false
 	slot1.enabledTooltip = slot2
@@ -563,41 +520,8 @@ slot14 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.txtResearchCenter
-	slot4 = pg
-	slot4 = slot4.getFormatText
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "ECOLOGICAL_RESARCH_NAME"
-	slot6 = slot6(slot8)
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.ecoTraceSearchProjStage
-	--- END OF BLOCK #0 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 53-53, warpins: 1 ---
-	slot7 = 1
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 54-57, warpins: 2 ---
-	MULTRES = slot4(slot6, slot7)
-
-	slot1(slot3, MULTRES)
-
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -642,7 +566,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-72, warpins: 2 ---
+	--- BLOCK #3 13-59, warpins: 2 ---
 	slot4 = slot0.imgPetUImage
 	slot5 = string
 	slot5 = slot5.format
@@ -694,24 +618,79 @@ slot14 = function(slot0, slot1)
 	slot4 = slot4.global
 	slot4 = slot4.ui
 	slot4 = slot4.eventEcoTraceTask
-	slot4 = slot4.model
-	slot6 = slot4
-	slot4 = slot4.getTaskCompleteInfo
-	slot4, slot5 = slot4(slot6)
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.txtEcologicalTaskNum
-	slot9 = string
-	slot9 = slot9.format
-	slot11 = "%d/%d"
-	slot12 = slot4
-	slot13 = slot5
-	MULTRES = slot9(slot11, slot12, slot13)
+	--- END OF BLOCK #3 ---
 
-	slot6(slot8, MULTRES)
+	slot5 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 60-60, warpins: 1 ---
+	slot5 = slot4.model
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 61-65, warpins: 2 ---
+	slot6 = 0
+	slot7 = 0
+	slot8 = 0
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 66-74, warpins: 1 ---
+	slot11 = slot5
+	slot9 = slot5.getResearchCompleteInfo
+	slot9 = slot9(slot11)
+	slot6 = slot9
+	slot11 = slot5
+	slot9 = slot5.getTaskCompleteInfo
+	slot9, slot10 = slot9(slot11)
+	slot8 = slot10
+	slot7 = slot9
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 75-97, warpins: 2 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.txtResearchCenter
+	slot12 = pg
+	slot12 = slot12.getFormatText
+	slot14 = pg
+	slot14 = slot14.getGameString
+	slot16 = "ECOLOGICAL_RESARCH_NAME"
+	slot14 = slot14(slot16)
+	slot15 = slot6
+	MULTRES = slot12(slot14, slot15)
+
+	slot9(slot11, MULTRES)
+
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.txtEcologicalTaskNum
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "%d/%d"
+	slot15 = slot7
+	slot16 = slot8
+	MULTRES = slot12(slot14, slot15, slot16)
+
+	slot9(slot11, MULTRES)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -1139,228 +1118,286 @@ slot9.refreshSearchCostInfo = slot14
 
 slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
-	slot3 = slot0.model
-	slot5 = slot3
-	slot3 = slot3.getCurEcoTraceSearched
-	slot3 = slot3(slot5)
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.ecoTraceSearchCnt
+	slot3 = ClientActivityUtils
+	slot3 = slot3.getEcoTraceActivityData
+	slot3 = slot3()
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getCurEcoTraceSearched
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-10, warpins: 1 ---
-	slot4 = 0
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot5 = slot3.ecoTraceSearchCnt
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-15, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.ecoTraceSearchCostCnt
-	--- END OF BLOCK #2 ---
-
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 16-16, warpins: 1 ---
+	--- BLOCK #2 13-13, warpins: 2 ---
 	slot5 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 17-22, warpins: 2 ---
-	slot6 = slot4 + slot5
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.ecoTraceSearchMarkId
+	--- BLOCK #4 16-18, warpins: 1 ---
+	slot6 = slot3.ecoTraceSearchCostCnt
 	--- END OF BLOCK #4 ---
 
-	if slot7 ~= 0 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 23-24, warpins: 1 ---
-	slot7 = false
+	--- BLOCK #5 19-19, warpins: 2 ---
+	slot6 = 0
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-25, warpins: 1 ---
-	slot7 = true
+	--- BLOCK #6 20-22, warpins: 2 ---
+	slot7 = slot5 + slot6
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #7 26-58, warpins: 2 ---
-	slot8 = pg
-	slot8 = slot8.getFormatText
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "ECOLOGICAL_SEARCH_LEFT_COUNT"
-	slot10 = slot10(slot12)
-	slot11 = slot6
-	slot12 = SysConfigData
-	slot12 = slot12.ECOLOGICAL_PERIOD_CONSUME_COUNT
-	slot13 = SysConfigData
-	slot13 = slot13.ECOLOGICAL_PERIOD_FREE_COUNT
-	slot12 = slot12 + slot13
-	slot8 = slot8(slot10, slot11, slot12)
-	slot9 = ClientTextUtils
-	slot9 = slot9.setText
-	slot11 = slot0.txtFreeSearch
-	slot12 = slot8
-
-	slot9(slot11, slot12)
-
-	slot9 = ClientTextUtils
-	slot9 = slot9.setText
-	slot11 = slot0.txtCostSearch
-	slot12 = slot8
-
-	slot9(slot11, slot12)
-
-	slot11 = slot0
-	slot9 = slot0.getSearchButtonType
-	slot12 = slot7
-	slot13 = slot3
-	slot14 = slot5
-	slot9 = slot9(slot11, slot12, slot13, slot14)
-	slot0.btnType = slot9
-	slot9 = slot0.btnType
+	--- BLOCK #7 23-25, warpins: 1 ---
+	slot8 = slot3.ecoTraceSearchMarkId
 	--- END OF BLOCK #7 ---
 
-	if slot9 == 0 then
+	if slot8 ~= 0 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 59-64, warpins: 1 ---
-	slot11 = slot0
-	slot9 = slot0.refreshSearchCostInfo
-	slot12 = slot1
-	slot13 = slot3
-
-	slot9(slot11, slot12, slot13)
-
+	--- BLOCK #8 26-27, warpins: 1 ---
+	slot8 = false
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 65-66, warpins: 1 ---
-	slot9 = true
-	slot0.costEnough = slot9
+	--- BLOCK #9 28-28, warpins: 2 ---
+	slot8 = true
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 67-72, warpins: 2 ---
-	slot9 = slot0.rewardPreviewUComponent
-	slot11 = slot9
-	slot9 = slot9.TryChangePage
-	slot12 = "status"
+	--- BLOCK #10 29-61, warpins: 2 ---
+	slot9 = pg
+	slot9 = slot9.getFormatText
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "ECOLOGICAL_SEARCH_LEFT_COUNT"
+	slot11 = slot11(slot13)
+	slot12 = slot7
+	slot13 = SysConfigData
+	slot13 = slot13.ECOLOGICAL_PERIOD_CONSUME_COUNT
+	slot14 = SysConfigData
+	slot14 = slot14.ECOLOGICAL_PERIOD_FREE_COUNT
+	slot13 = slot13 + slot14
+	slot9 = slot9(slot11, slot12, slot13)
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot0.txtFreeSearch
+	slot13 = slot9
+
+	slot10(slot12, slot13)
+
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot0.txtCostSearch
+	slot13 = slot9
+
+	slot10(slot12, slot13)
+
+	slot12 = slot0
+	slot10 = slot0.getSearchButtonType
+	slot13 = slot8
+	slot14 = slot4
+	slot15 = slot6
+	slot10 = slot10(slot12, slot13, slot14, slot15)
+	slot0.btnType = slot10
+	slot10 = slot0.btnType
 	--- END OF BLOCK #10 ---
 
-	slot3 = if slot3 then
+	if slot10 == 0 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 73-74, warpins: 1 ---
-	slot13 = 1
+	--- BLOCK #11 62-67, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.refreshSearchCostInfo
+	slot13 = slot1
+	slot14 = slot4
+
+	slot10(slot12, slot13, slot14)
+
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 75-75, warpins: 1 ---
-	slot13 = 0
-
+	--- BLOCK #12 68-69, warpins: 1 ---
+	slot10 = true
+	slot0.costEnough = slot10
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 76-118, warpins: 2 ---
-	slot9(slot11, slot12, slot13)
+	--- BLOCK #13 70-75, warpins: 2 ---
+	slot10 = slot0.rewardPreviewUComponent
+	slot12 = slot10
+	slot10 = slot10.TryChangePage
+	slot13 = "status"
+	--- END OF BLOCK #13 ---
 
-	slot9 = slot0.rewardPreviewUComponent
-	slot11 = slot9
-	slot9 = slot9.TryChangePage
-	slot12 = "Button"
-	slot13 = slot0.btnType
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
-	slot9(slot11, slot12, slot13)
 
-	slot9 = ClientActivityUtils
-	slot9 = slot9.getNextEcoTraceSearchTime
-	slot9 = slot9()
-	slot10 = LuaUIUtils
-	slot10 = slot10.setCountDownTime
-	slot12 = slot0.countDownSearch
-	slot13 = slot9
-	slot14 = UIConst
-	slot14 = slot14.TimeType
-	slot14 = slot14.Short
+	--- BLOCK #14 76-77, warpins: 1 ---
+	slot14 = 1
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 78-78, warpins: 1 ---
+	slot14 = 0
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 79-94, warpins: 2 ---
+	slot10(slot12, slot13, slot14)
+
+	slot10 = slot0.rewardPreviewUComponent
+	slot12 = slot10
+	slot10 = slot10.TryChangePage
+	slot13 = "Button"
+	slot14 = slot0.btnType
 
 	slot10(slot12, slot13, slot14)
 
-	slot10 = LuaUIUtils
-	slot10 = slot10.setCountDownTime
-	slot12 = slot0.countDownSearch2
-	slot13 = slot9
-	slot14 = UIConst
-	slot14 = slot14.TimeType
-	slot14 = slot14.Short
+	slot10 = ClientActivityUtils
+	slot10 = slot10.getNextEcoTraceSearchTime
+	slot10 = slot10()
+	slot11 = slot0.rootUComponent
+	slot13 = slot11
+	slot11 = slot11.TryChangePage
+	slot14 = "lastCycle"
+	--- END OF BLOCK #16 ---
 
-	slot10(slot12, slot13, slot14)
+	if slot10 == 0 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot0.txtCountDownInfo
-	slot13 = pg
-	slot13 = slot13.getGameString
-	slot15 = "ECOLOGICAL_SEARCH_RESET"
-	MULTRES = slot13(slot15)
 
-	slot10(slot12, MULTRES)
+	--- BLOCK #17 95-96, warpins: 1 ---
+	slot15 = 1
+	--- END OF BLOCK #17 ---
 
-	slot10 = ClientTextUtils
-	slot10 = slot10.setText
-	slot12 = slot0.txtCountDownInfo2
-	slot13 = pg
-	slot13 = slot13.getGameString
-	slot15 = "ECOLOGICAL_SEARCH_RESET"
-	MULTRES = slot13(slot15)
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
-	slot10(slot12, MULTRES)
+
+	--- BLOCK #18 97-97, warpins: 1 ---
+	slot15 = 0
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 98-131, warpins: 2 ---
+	slot11(slot13, slot14, slot15)
+
+	slot11 = LuaUIUtils
+	slot11 = slot11.setCountDownTime
+	slot13 = slot0.countDownSearch
+	slot14 = slot10
+	slot15 = UIConst
+	slot15 = slot15.TimeType
+	slot15 = slot15.Short
+
+	slot11(slot13, slot14, slot15)
+
+	slot11 = LuaUIUtils
+	slot11 = slot11.setCountDownTime
+	slot13 = slot0.countDownSearch2
+	slot14 = slot10
+	slot15 = UIConst
+	slot15 = slot15.TimeType
+	slot15 = slot15.Short
+
+	slot11(slot13, slot14, slot15)
+
+	slot11 = ClientTextUtils
+	slot11 = slot11.setText
+	slot13 = slot0.txtCountDownInfo
+	slot14 = pg
+	slot14 = slot14.getGameString
+	slot16 = "ECOLOGICAL_SEARCH_RESET"
+	MULTRES = slot14(slot16)
+
+	slot11(slot13, MULTRES)
+
+	slot11 = ClientTextUtils
+	slot11 = slot11.setText
+	slot13 = slot0.txtCountDownInfo2
+	slot14 = pg
+	slot14 = slot14.getGameString
+	slot16 = "ECOLOGICAL_SEARCH_RESET"
+	MULTRES = slot14(slot16)
+
+	slot11(slot13, MULTRES)
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #19 ---
 
 
 
@@ -1369,103 +1406,92 @@ end
 slot9.refreshSearchInfo = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.setRedDot
-	slot3 = RedDotConst
-	slot3 = slot3.RedDotPath
-	slot3 = slot3.EVENT_ECO_TRACE_QUEST
-	slot4 = slot0.btnEcologicalUButton
-	slot5 = ClientActivityUtils
-	slot5 = slot5.checkEcologyQusetPoint
-	slot5 = slot5()
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotStyle
-	slot6 = slot6.REWARD
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.setRedDot
-	slot3 = RedDotConst
-	slot3 = slot3.RedDotPath
-	slot3 = slot3.EVENT_ECO_TRACE_SEARCH
-	slot4 = slot0.btnSearchUButton
-	slot5 = ClientActivityUtils
-	slot5 = slot5.checkEcologySearchPoint
-	slot5 = slot5()
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotStyle
-	slot6 = slot6.POINT
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.ecoTraceFinishRewardFlag
+	slot1 = slot1.ui
+	slot1 = slot1.eventEcoTraceTask
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= true then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 34-35, warpins: 1 ---
-	slot1 = false
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot2 = slot1.model
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 36-36, warpins: 1 ---
-	slot1 = true
+	--- BLOCK #2 8-9, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 37-48, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.setRedDot
-	slot4 = RedDotConst
-	slot4 = slot4.RedDotPath
-	slot4 = slot4.EVENT_ECO_TRACE_CENTER_REWARD
-	slot5 = slot0.btnResearchUButton
-	slot6 = ClientActivityUtils
-	slot6 = slot6.checkEcologyCenterPoint
-	slot6 = slot6()
+	--- BLOCK #3 10-14, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.hasRewardCanGet
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	slot6 = if slot6 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 49-49, warpins: 1 ---
-	slot6 = not slot1
+	--- BLOCK #4 15-15, warpins: 2 ---
+	slot3 = false
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 50-57, warpins: 2 ---
-	slot7 = RedDotConst
-	slot7 = slot7.RedDotStyle
-	slot7 = slot7.REWARD
+	--- BLOCK #5 16-45, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.setRedDot
+	slot6 = RedDotConst
+	slot6 = slot6.RedDotPath
+	slot6 = slot6.EVENT_ECO_TRACE_QUEST
+	slot7 = slot0.btnEcologicalUButton
+	slot8 = slot3
+	slot9 = RedDotConst
+	slot9 = slot9.RedDotStyle
+	slot9 = slot9.REWARD
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8, slot9)
 
-	slot4 = slot0
-	slot2 = slot0.refreshCommonNodeRedDot
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.setRedDot
+	slot6 = RedDotConst
+	slot6 = slot6.RedDotPath
+	slot6 = slot6.EVENT_ECO_TRACE_SEARCH
+	slot7 = slot0.btnSearchUButton
+	slot8 = ClientActivityUtils
+	slot8 = slot8.checkEcologySearchPoint
+	slot8 = slot8()
+	slot9 = RedDotConst
+	slot9 = slot9.RedDotStyle
+	slot9 = slot9.POINT
 
-	slot2(slot4)
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot6 = slot0
+	slot4 = slot0.refreshCommonNodeRedDot
+
+	slot4(slot6)
 
 	return
 	--- END OF BLOCK #5 ---
@@ -1547,7 +1573,7 @@ slot14 = function(slot0)
 	slot7 = slot0
 	slot5 = slot0.setEventTitle
 	slot8 = slot0.eventTitleUContainer
-	slot9 = slot4.eventEndDayTime
+	slot9 = slot4.tabEndDayTime
 
 	slot5(slot7, slot8, slot9)
 
@@ -1743,9 +1769,9 @@ slot14 = function(slot0)
 
 
 	--- BLOCK #4 33-37, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.ecoTraceSearchCostCnt
+	slot1 = ClientActivityUtils
+	slot1 = slot1.getEcoTraceActivityData
+	slot1 = slot1()
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
@@ -1755,69 +1781,67 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #5 38-42, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.ecoTraceSearchCostCnt
+	--- BLOCK #5 38-40, warpins: 1 ---
+	slot2 = slot1.ecoTraceSearchCostCnt
 	--- END OF BLOCK #5 ---
 
-	if slot1 == 0 then
+	if slot2 == 0 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 43-54, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.showTextTip
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "ECOLOGICAL_SEARCH_TIME_NOT_ENOUGH"
-	MULTRES = slot4(slot6)
+	--- BLOCK #6 41-52, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "ECOLOGICAL_SEARCH_TIME_NOT_ENOUGH"
+	MULTRES = slot5(slot7)
 
-	slot1(slot3, MULTRES)
+	slot2(slot4, MULTRES)
 
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #7 55-57, warpins: 2 ---
-	slot1 = slot0.costEnough
+	--- BLOCK #7 53-55, warpins: 2 ---
+	slot2 = slot0.costEnough
 	--- END OF BLOCK #7 ---
 
-	slot1 = if not slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 58-69, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.showTextTip
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "ECOLOGICAL_SEARCH_ITEM_NOT_ENOUGH"
-	MULTRES = slot4(slot6)
+	--- BLOCK #8 56-67, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "ECOLOGICAL_SEARCH_ITEM_NOT_ENOUGH"
+	MULTRES = slot5(slot7)
 
-	slot1(slot3, MULTRES)
+	slot2(slot4, MULTRES)
 
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #9 70-78, warpins: 2 ---
+	--- BLOCK #9 68-76, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -1878,21 +1902,21 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 79-79, warpins: 2 ---
+	--- BLOCK #10 77-77, warpins: 2 ---
 	return
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 80-80, warpins: 2 ---
+	--- BLOCK #11 78-78, warpins: 2 ---
 	return
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 81-81, warpins: 2 ---
+	--- BLOCK #12 79-79, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 

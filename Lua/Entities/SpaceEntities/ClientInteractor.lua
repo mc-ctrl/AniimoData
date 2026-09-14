@@ -1,4 +1,4 @@
---- BLOCK #0 1-57, warpins: 1 ---
+--- BLOCK #0 1-61, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -45,41 +45,45 @@ slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Entities.SpaceEntities.CommonComponent.ClientAnimatorComponent"
 slot14 = slot14(slot16)
-slot15 = {}
-slot15[1] = slot8
-slot15[2] = slot10
-slot15[3] = slot14
-slot15[4] = slot9
-slot15[5] = slot11
-slot15[6] = slot12
-slot15[7] = slot13
-slot16 = EnableBotTest
+slot15 = require
+slot17 = "Entities.SpaceEntities.CommonComponent.ClientEcsComponent"
+slot15 = slot15(slot17)
+slot16 = {}
+slot16[1] = slot8
+slot16[2] = slot10
+slot16[3] = slot14
+slot16[4] = slot9
+slot16[5] = slot11
+slot16[6] = slot12
+slot16[7] = slot13
+slot16[8] = slot15
+slot17 = EnableBotTest
 --- END OF BLOCK #0 ---
 
-slot16 = if slot16 then
+slot17 = if slot17 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 58-60, warpins: 1 ---
-slot16 = {}
-slot16[1] = slot8
-slot15 = slot16
+--- BLOCK #1 62-64, warpins: 1 ---
+slot17 = {}
+slot17[1] = slot8
+slot16 = slot17
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 61-86, warpins: 2 ---
-slot16 = slot2.AddComponents
-slot18 = slot7
-slot19 = slot15
+--- BLOCK #2 65-90, warpins: 2 ---
+slot17 = slot2.AddComponents
+slot19 = slot7
+slot20 = slot16
 
-slot16(slot18, slot19)
+slot17(slot19, slot20)
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = ClientInteractor
 	slot2 = slot2.super
@@ -102,9 +106,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot7.ctor = slot16
+slot7.ctor = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = ClientInteractor
 	slot2 = slot2.super
@@ -133,9 +137,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot7.init = slot16
+slot7.init = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientInteractor
 	slot1 = slot1.super
@@ -151,9 +155,9 @@ slot16 = function(slot0)
 
 end
 
-slot7.start = slot16
+slot7.start = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -197,10 +201,10 @@ slot16 = function(slot0)
 
 end
 
-slot7.getInteractionListData = slot16
+slot7.getInteractionListData = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = ClientInteractor
 	slot1 = slot1.super
 	slot1 = slot1.initializeComponents
@@ -208,10 +212,9 @@ slot16 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddMonoComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelMonoComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_PHYSX
 
 	slot1(slot3, slot4)
@@ -223,9 +226,9 @@ slot16 = function(slot0)
 
 end
 
-slot7.initializeComponents = slot16
+slot7.initializeComponents = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientInteractor
 	slot1 = slot1.super
@@ -241,9 +244,9 @@ slot16 = function(slot0)
 
 end
 
-slot7.onEnterScene = slot16
+slot7.onEnterScene = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.levelCondition
 	slot3 = Const
@@ -277,9 +280,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot7.checkCanInteract = slot16
+slot7.checkCanInteract = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -288,9 +291,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot7.interact = slot16
+slot7.interact = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -307,9 +310,9 @@ slot16 = function(slot0)
 
 end
 
-slot7.repr = slot16
+slot7.repr = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientInteractor
 	slot1 = slot1.super
@@ -325,7 +328,7 @@ slot16 = function(slot0)
 
 end
 
-slot7.destroy = slot16
+slot7.destroy = slot17
 
 return slot7
 --- END OF BLOCK #2 ---

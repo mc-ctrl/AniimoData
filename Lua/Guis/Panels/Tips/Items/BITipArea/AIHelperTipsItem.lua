@@ -134,7 +134,9 @@ end
 slot16.onInit = slot17
 
 slot17 = function(slot0)
-	--- BLOCK #0 1-59, warpins: 1 ---
+	--- BLOCK #0 1-61, warpins: 1 ---
+	slot1 = nil
+	slot0.titleNameText = slot1
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
 	slot3 = slot1
@@ -218,7 +220,11 @@ end
 slot16.initViewManualJump = slot17
 
 slot17 = function(slot0)
-	--- BLOCK #0 1-63, warpins: 1 ---
+	--- BLOCK #0 1-67, warpins: 1 ---
+	slot1 = nil
+	slot0.hotKeyContent = slot1
+	slot1 = nil
+	slot0.btnTipsUText = slot1
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
 	slot3 = slot1
@@ -669,7 +675,7 @@ slot17 = function(slot0)
 	slot3 = AiAssistantData
 	slot3 = slot3[slot2]
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot5 = slot3.time
 	--- END OF BLOCK #9 ---
 
@@ -772,7 +778,7 @@ slot17 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -1199,11 +1205,11 @@ slot17 = function(slot0, slot1)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 34-57, warpins: 1 ---
+	--- BLOCK #5 34-56, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
@@ -1244,8 +1250,35 @@ slot17 = function(slot0, slot1)
 
 	end
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot10 = nil
+	slot11 = "other"
 
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+
+	slot4 = slot2.action1
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 57-61, warpins: 1 ---
+	slot4 = NotNil
+	slot6 = slot0.hotKeyContent
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 62-67, warpins: 1 ---
 	slot4 = slot0.hotKeyContent
 	slot6 = slot4
 	slot4 = slot4.SetHotKeyPaths
@@ -1253,12 +1286,12 @@ slot17 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 58-64, warpins: 1 ---
+	--- BLOCK #8 68-74, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
@@ -1268,12 +1301,12 @@ slot17 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 65-101, warpins: 2 ---
+	--- BLOCK #9 75-111, warpins: 4 ---
 	slot4 = slot0.rayBox
 	slot6 = slot4
 	slot4 = slot4.SetActive
@@ -1343,16 +1376,16 @@ slot17 = function(slot0, slot1)
 	slot6 = slot4
 	slot4 = slot4.runPlatformByMobile
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 102-106, warpins: 1 ---
+	--- BLOCK #10 112-116, warpins: 1 ---
 	slot4 = slot0.nextBtn
 	slot6 = slot4
 	slot4 = slot4.EnableListenNonAOI
@@ -1381,23 +1414,23 @@ slot17 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 107-109, warpins: 2 ---
+	--- BLOCK #11 117-119, warpins: 2 ---
 	slot4 = slot2.action1
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 110-125, warpins: 1 ---
+	--- BLOCK #12 120-135, warpins: 1 ---
 	slot4 = KeyBindingPro
 	slot4 = slot4.GetOrAddKeyBindingByName
 	slot6 = slot0.nextBtn
@@ -1436,34 +1469,34 @@ slot17 = function(slot0, slot1)
 	end
 
 	slot0.jumpEvent = slot4
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #11 126-130, warpins: 1 ---
+	--- BLOCK #13 136-140, warpins: 1 ---
 	slot4 = nil
 	slot0.jumpEvent = slot4
 	slot4 = slot0.jumpBind
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 131-133, warpins: 1 ---
+	--- BLOCK #14 141-143, warpins: 1 ---
 	slot4 = slot0.jumpBind
 	slot5 = nil
 	slot4.actionPath = slot5
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #13 134-147, warpins: 3 ---
+	--- BLOCK #15 144-157, warpins: 3 ---
 	slot6 = slot0
 	slot4 = slot0.show
 
@@ -1481,7 +1514,7 @@ slot17 = function(slot0, slot1)
 	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
 
 

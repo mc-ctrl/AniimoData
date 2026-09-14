@@ -58,21 +58,19 @@ end
 slot5.init = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -80,7 +78,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-35, warpins: 2 ---
+	--- BLOCK #2 5-32, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setModelLayer
 	slot4 = ClientConst
@@ -94,8 +92,7 @@ slot7 = function(slot0)
 	slot1 = slot1.getConfigData
 	slot1 = slot1(slot3)
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot3 = ClientModelUtils
 	slot3 = slot3.getModelExtraInfo
 	slot5 = slot1
@@ -119,7 +116,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 36-42, warpins: 1 ---
+	--- BLOCK #3 33-39, warpins: 1 ---
 	slot4 = ClientModelUtils
 	slot4 = slot4.applyModelAppearance
 	slot6 = slot2.modelInfo
@@ -133,7 +130,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 43-62, warpins: 1 ---
+	--- BLOCK #4 40-59, warpins: 1 ---
 	slot4 = ClientModelUtils
 	slot4 = slot4.getModelExtraInfo
 	slot6 = slot1
@@ -163,7 +160,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 63-66, warpins: 2 ---
+	--- BLOCK #5 60-63, warpins: 2 ---
 	slot6 = slot2
 	slot4 = slot2.RefreshModels
 

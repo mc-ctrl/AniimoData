@@ -1,4 +1,4 @@
---- BLOCK #0 1-110, warpins: 1 ---
+--- BLOCK #0 1-112, warpins: 1 ---
 slot0 = require
 slot2 = "Core.PropertySync.CustomDict"
 slot0 = slot0(slot2)
@@ -1254,37 +1254,45 @@ end
 slot9.init = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = OriginMap
+	slot1 = slot1.super
+	slot1 = slot1.getPersistentValue
 	slot3 = slot0
-	slot1 = slot0._getPersist
-	slot1 = slot1(slot3)
-	slot2 = PropertyTypes
-	slot2 = slot2.PS_PER
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= slot2 then
+
+
+end
+
+slot9.getPersistentValue = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = {}
+	slot2 = FIXED_KEY
+	slot3 = slot0._properties
+	slot4 = FIXED_KEY
+	slot3 = slot3[slot4]
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
-	slot1 = nil
-
-	return slot1
-
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot3 = "{}"
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-16, warpins: 2 ---
-	slot1 = {}
-	slot2 = FIXED_KEY
-	slot3 = slot0._properties
-	slot4 = FIXED_KEY
-	slot3 = slot3[slot4]
+	--- BLOCK #2 9-10, warpins: 2 ---
 	slot1[slot2] = slot3
 
 	return slot1
@@ -1294,7 +1302,7 @@ slot16 = function(slot0)
 
 end
 
-slot9.getPersistentValue = slot16
+slot9._getPersistentValue = slot16
 
 slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---

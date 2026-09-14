@@ -1,4 +1,4 @@
---- BLOCK #0 1-71, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -9,46 +9,49 @@ slot2 = require
 slot4 = "Common.Utils.HomeLandUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.Const"
+slot5 = "Const.MessageName"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.ClientConst"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.home_camp_car_data"
+slot7 = "Const.ClientConst"
 slot5 = slot5(slot7)
-slot6 = slot0.Class
-slot8 = "ClientCampCar"
-slot9 = slot1
-slot6 = slot6(slot8, slot9)
-slot7 = require
-slot9 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
-slot7 = slot7(slot9)
+slot6 = require
+slot8 = "Data.home_camp_car_data"
+slot6 = slot6(slot8)
+slot7 = slot0.Class
+slot9 = "ClientCampCar"
+slot10 = slot1
+slot7 = slot7(slot9, slot10)
 slot8 = require
-slot10 = "Entities.SpaceEntities.CommonComponent.ClientAuthorityComponent"
+slot10 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Entities.SpaceEntities.HomeCampComponent.ClientCampCarPetsComponent"
+slot11 = "Entities.SpaceEntities.CommonComponent.ClientAuthorityComponent"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Entities.SpaceEntities.HomeCampComponent.ClientCampCarOrnamentComponent"
+slot12 = "Entities.SpaceEntities.HomeCampComponent.ClientCampCarPetsComponent"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Entities.SpaceEntities.PlayerComponent.ClientEffectComponent"
+slot13 = "Entities.SpaceEntities.HomeCampComponent.ClientCampCarOrnamentComponent"
 slot11 = slot11(slot13)
-slot12 = {}
-slot12[1] = slot7
-slot12[2] = slot8
-slot12[3] = slot9
-slot12[4] = slot10
-slot12[5] = slot11
-slot13 = slot0.AddComponents
-slot15 = slot6
-slot16 = slot12
+slot12 = require
+slot14 = "Entities.SpaceEntities.PlayerComponent.ClientEffectComponent"
+slot12 = slot12(slot14)
+slot13 = {}
+slot13[1] = slot8
+slot13[2] = slot9
+slot13[3] = slot10
+slot13[4] = slot11
+slot13[5] = slot12
+slot14 = slot0.AddComponents
+slot16 = slot7
+slot17 = slot13
 
-slot13(slot15, slot16)
+slot14(slot16, slot17)
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = ClientCampCar
 	slot2 = slot2.super
@@ -69,9 +72,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot6.ctor = slot13
+slot7.ctor = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot2 = ClientCampCar
 	slot2 = slot2.super
@@ -121,9 +124,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot6.init = slot13
+slot7.init = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientCampCar
 	slot1 = slot1.super
@@ -139,9 +142,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.start = slot13
+slot7.start = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resetCampData
@@ -162,9 +165,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.destroy = slot13
+slot7.destroy = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -197,9 +200,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.repr = slot13
+slot7.repr = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HomeCampCarData
 	slot2 = slot0.placeId
@@ -229,9 +232,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.getConfigData = slot13
+slot7.getConfigData = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.carGroup
 	slot3 = slot1
@@ -248,9 +251,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.loadCampData = slot13
+slot7.loadCampData = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = HomeCampCarData
 	slot2 = slot0.placeId
@@ -280,9 +283,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.getHomePlaceConfig = slot13
+slot7.getHomePlaceConfig = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.carGroup
 	--- END OF BLOCK #0 ---
@@ -317,9 +320,9 @@ slot13 = function(slot0)
 
 end
 
-slot6.resetCampData = slot13
+slot7.resetCampData = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.carGroup
 	--- END OF BLOCK #0 ---
@@ -352,9 +355,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot6.on_basicInfoChanged = slot13
+slot7.on_basicInfoChanged = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.carGroup
 	--- END OF BLOCK #0 ---
@@ -386,9 +389,31 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot6.on_likeCntChanged = slot13
+slot7.on_likeCntChanged = slot14
 
-return slot6
+slot14 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.HOMELAND_EDITOR_LOAD_REFRESH
+	slot7 = {}
+	slot8 = slot0.id
+	slot7.campCarEntId = slot8
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.on_CampCarLoadValueChanged = slot14
+
+return slot7
 --- END OF BLOCK #0 ---
 
 

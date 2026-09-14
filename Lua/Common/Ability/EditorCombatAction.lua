@@ -1,4 +1,4 @@
---- BLOCK #0 1-78, warpins: 1 ---
+--- BLOCK #0 1-82, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -67,6 +67,23 @@ slot27 = slot1
 slot24 = slot24(slot26, slot27)
 
 slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.doActionInternal
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = false
+
+	return slot3(slot5, slot6, slot7, slot8)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot24.doAction = slot25
+
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.nodeMap
 	--- END OF BLOCK #0 ---
@@ -79,292 +96,290 @@ slot25 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 4-12, warpins: 1 ---
-	slot3 = CombatLogger
+	slot3 = CombatActionTool
 	slot3 = slot3.logError
 	slot5 = slot2
 	slot6 = {}
-	slot6.nodeID = slot1
+	slot6.NodeID = slot1
 	slot7 = "combatContext.nodeMap not found"
 
 	slot3(slot5, slot6, slot7)
 
 	slot3 = false
+
+	return slot3
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-17, warpins: 1 ---
-	slot3 = type
-	slot5 = slot1
-	slot3 = slot3(slot5)
+	--- BLOCK #2 13-16, warpins: 2 ---
+	slot3 = slot2.nodeMap
+	slot3 = slot3[slot1]
 	--- END OF BLOCK #2 ---
 
-	if slot3 ~= "number" then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 18-19, warpins: 1 ---
-	slot3 = false
+	--- BLOCK #3 17-25, warpins: 1 ---
+	slot4 = CombatActionTool
+	slot4 = slot4.logError
+	slot6 = slot2
+	slot7 = {}
+	slot7.NodeID = slot1
+	slot8 = "actionData not found"
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = false
+
+	return slot4
+
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-20, warpins: 1 ---
-	slot3 = true
+	--- BLOCK #4 26-31, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.doActionInternal
+	slot7 = slot3
+	slot8 = slot2
+	slot9 = true
+
+	return slot4(slot6, slot7, slot8, slot9)
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-22, warpins: 2 ---
+end
+
+slot24.doActionById = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.isTable
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot4 = CombatActionTool
+	slot4 = slot4.logError
+	slot6 = slot2
+	slot7 = {}
+	slot8 = "actionData not found"
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #46
+
+
+	--- BLOCK #2 15-19, warpins: 1 ---
+	slot4 = slot1.name
+	slot4 = slot0[slot4]
+	slot5 = slot1.BPName
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-21, warpins: 1 ---
+	slot5 = slot1.BPName
+	slot2.BPName = slot5
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-27, warpins: 2 ---
+	slot5 = AbilityDebugTool
+	slot5 = slot5.checkRuntimeDebug
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #5 28-30, warpins: 1 ---
+	slot5 = slot1.NodeID
 	--- END OF BLOCK #5 ---
 
-	slot3 = if slot3 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 23-26, warpins: 1 ---
-	slot4 = slot2.nodeMap
-	slot4 = slot4[slot1]
+	--- BLOCK #6 31-38, warpins: 1 ---
+	slot5 = CS
+	slot5 = slot5.FunPlus
+	slot5 = slot5.WorldX
+	slot5 = slot5.FlowCanvas
+	slot5 = slot5.SkillBPRuntimeData
+	slot5 = slot5.SetRuntimeNodeInfo
+	slot7 = slot1.NodeID
+
+	slot5(slot7)
+
 	--- END OF BLOCK #6 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-27, warpins: 2 ---
-	slot4 = slot1
+	--- BLOCK #7 39-42, warpins: 2 ---
+	slot5 = false
+	slot6 = slot1.NodeID
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 28-29, warpins: 2 ---
-	--- END OF BLOCK #8 ---
-
-	if slot4 == nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 30-38, warpins: 1 ---
-	slot5 = CombatActionTool
-	slot5 = slot5.logError
-	slot7 = slot2
-	slot8 = {}
-	slot8.nodeID = slot1
-	slot9 = "actionData not found"
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = false
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #55
-
-
-	--- BLOCK #10 39-43, warpins: 1 ---
-	slot5 = slot4.name
-	slot5 = slot0[slot5]
-	slot6 = slot4.BPName
-	--- END OF BLOCK #10 ---
-
 	slot6 = if slot6 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 44-45, warpins: 1 ---
-	slot6 = slot4.BPName
-	slot2.BPName = slot6
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 46-51, warpins: 2 ---
-	slot6 = AbilityDebugTool
-	slot6 = slot6.checkRuntimeDebug
-	slot8 = slot2
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #12 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #13 52-54, warpins: 1 ---
-	slot6 = slot4.NodeID
-	--- END OF BLOCK #13 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 55-62, warpins: 1 ---
+	--- BLOCK #8 43-52, warpins: 1 ---
 	slot6 = CS
 	slot6 = slot6.FunPlus
 	slot6 = slot6.WorldX
 	slot6 = slot6.FlowCanvas
 	slot6 = slot6.SkillBPRuntimeData
-	slot6 = slot6.SetRuntimeNodeInfo
-	slot8 = slot4.NodeID
+	slot6 = slot6.IsNodeBreakpoint
+	slot8 = slot1.NodeID
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
 
-	slot6(slot8)
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
 
+
+	--- BLOCK #9 53-60, warpins: 1 ---
+	slot5 = true
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.DEBUG
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #9 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 61-67, warpins: 1 ---
+	slot6 = CombatLogger
+	slot6 = slot6.debug
+	slot8 = "@hyj triggered breakpoint"
+	slot9 = slot2.BPName
+	slot10 = slot1.name
+	slot11 = slot1.NodeID
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 68-70, warpins: 2 ---
+	slot6 = coroutine
+	slot6 = slot6.yield
+
+	slot6()
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 71-72, warpins: 3 ---
+	--- END OF BLOCK #12 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 73-73, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 74-84, warpins: 3 ---
+	slot7 = slot2
+	slot5 = slot2.clone
+	slot5 = slot5(slot7)
+	slot6 = CombatActionTool
+	slot6 = slot6.parseActorId
+	slot8 = slot2
+	slot9 = AbilityConst
+	slot9 = slot9.COMBAT_TARGET_TYPE_OWNER
+	slot6 = slot6(slot8, slot9)
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	slot4 = if slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #41
+	end
 
 
-	--- BLOCK #15 63-66, warpins: 2 ---
-	slot6 = false
-	slot7 = slot4.NodeID
+	--- BLOCK #15 85-90, warpins: 1 ---
+	slot7 = AbilityDebugTool
+	slot7 = slot7.checkRuntimeDebug
+	slot9 = slot2
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #15 ---
 
 	slot7 = if slot7 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #16 67-76, warpins: 1 ---
-	slot7 = CS
-	slot7 = slot7.FunPlus
-	slot7 = slot7.WorldX
-	slot7 = slot7.FlowCanvas
-	slot7 = slot7.SkillBPRuntimeData
-	slot7 = slot7.IsNodeBreakpoint
-	slot9 = slot4.NodeID
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #16 ---
+	--- BLOCK #16 91-101, warpins: 1 ---
+	slot7, slot8 = nil
+	slot9 = xpcall
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #17 77-84, warpins: 1 ---
-	slot6 = true
-	slot7 = LoggerManager
-	slot7 = slot7.checkLogger
-	slot9 = LoggerConst
-	slot9 = slot9.DEBUG
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #17 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 85-91, warpins: 1 ---
-	slot7 = CombatLogger
-	slot7 = slot7.debug
-	slot9 = "@hyj triggered breakpoint"
-	slot10 = slot2.BPName
-	slot11 = slot4.name
-	slot12 = slot4.NodeID
-
-	slot7(slot9, slot10, slot11, slot12)
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 92-94, warpins: 2 ---
-	slot7 = coroutine
-	slot7 = slot7.yield
-
-	slot7()
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 95-96, warpins: 3 ---
-	--- END OF BLOCK #20 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 97-97, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 98-108, warpins: 3 ---
-	slot8 = slot2
-	slot6 = slot2.clone
-	slot6 = slot6(slot8)
-	slot7 = CombatActionTool
-	slot7 = slot7.parseActorId
-	slot9 = slot2
-	slot10 = AbilityConst
-	slot10 = slot10.COMBAT_TARGET_TYPE_OWNER
-	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #22 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #49
-	end
-
-
-	--- BLOCK #23 109-114, warpins: 1 ---
-	slot8 = AbilityDebugTool
-	slot8 = slot8.checkRuntimeDebug
-	slot10 = slot2
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #23 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #44
-	end
-
-
-	--- BLOCK #24 115-125, warpins: 1 ---
-	slot8, slot9 = nil
-	slot10 = xpcall
-
-	slot12 = function()
+	slot11 = function()
 		--- BLOCK #0 1-11, warpins: 1 ---
 		slot0 = coroutine
 		slot0 = slot0.create
@@ -399,7 +414,7 @@ slot25 = function(slot0, slot1, slot2)
 
 
 			--- BLOCK #1 19-21, warpins: 1 ---
-			slot1 = isNodeIdNumber
+			slot1 = isNodeId
 			--- END OF BLOCK #1 ---
 
 			slot1 = if slot1 then
@@ -536,275 +551,275 @@ slot25 = function(slot0, slot1, slot2)
 
 	end
 
-	slot13 = debug
-	slot13 = slot13.traceback
-	slot10, slot11 = slot10(slot12, slot13)
-	slot12 = type
-	slot14 = slot8
-	slot12 = slot12(slot14)
-	--- END OF BLOCK #24 ---
+	slot12 = debug
+	slot12 = slot12.traceback
+	slot9, slot10 = slot9(slot11, slot12)
+	slot11 = type
+	slot13 = slot7
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #16 ---
 
-	if slot12 == "function" then
-	JUMP TO BLOCK #25
+	if slot11 == "function" then
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #25 126-127, warpins: 1 ---
-	--- END OF BLOCK #25 ---
+	--- BLOCK #17 102-103, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 104-110, warpins: 1 ---
+	slot11 = coroutine
+	slot11 = slot11.yield
+
+	slot11()
+
+	slot11 = slot7
+	slot11, slot12 = slot11()
+	slot10 = slot12
+	slot9 = slot11
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 111-117, warpins: 3 ---
+	slot11 = LoggerManager
+	slot11 = slot11.checkLogger
+	slot13 = LoggerConst
+	slot13 = slot13.DEBUG
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #19 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 118-125, warpins: 1 ---
+	slot11 = CombatLogger
+	slot11 = slot11.debug
+	slot13 = "@hyj runtime debug action"
+	slot14 = slot2.BPName
+	slot15 = slot1.name
+	slot16 = slot1.NodeID
+	slot17 = slot9
+
+	slot11(slot13, slot14, slot15, slot16, slot17)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 126-128, warpins: 2 ---
+	slot11 = nil
+	--- END OF BLOCK #21 ---
 
 	slot9 = if slot9 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #22 129-133, warpins: 1 ---
+	slot12 = type
+	slot14 = slot10
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #22 ---
+
+	if slot12 ~= "boolean" then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 134-135, warpins: 1 ---
+	slot12 = false
+	--- END OF BLOCK #23 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #24 136-136, warpins: 1 ---
+	slot12 = true
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 137-141, warpins: 2 ---
+	slot13 = string
+	slot13 = slot13.format
+	slot15 = "Client Execute result: %s, ret = %s\n"
+	--- END OF BLOCK #25 ---
+
+	slot12 = if slot12 then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 128-134, warpins: 1 ---
-	slot12 = coroutine
-	slot12 = slot12.yield
-
-	slot12()
-
-	slot12 = slot8
-	slot12, slot13 = slot12()
-	slot11 = slot13
-	slot10 = slot12
+	--- BLOCK #26 142-146, warpins: 1 ---
+	slot16 = tostring
+	slot18 = slot10
+	slot16 = slot16(slot18)
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
 
 
-	--- BLOCK #27 135-141, warpins: 3 ---
+	--- BLOCK #27 147-147, warpins: 2 ---
+	slot16 = "true"
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 148-161, warpins: 2 ---
+	slot17 = tostring
+	slot19 = slot10
+	MULTRES = slot17(slot19)
+	slot13 = slot13(slot15, slot16, MULTRES)
+	slot11 = slot13
+	slot13 = AbilityDebugTool
+	slot13 = slot13.getCombinedNecessaryResult
+	slot15 = slot5
+	slot16 = slot1
+	slot17 = slot11
+	slot13 = slot13(slot15, slot16, slot17)
+	slot11 = slot13
+	--- END OF BLOCK #28 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #29 162-163, warpins: 1 ---
+	slot9 = slot10
+	--- END OF BLOCK #29 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
+
+
+	--- BLOCK #30 164-177, warpins: 1 ---
+	slot12 = string
+	slot12 = slot12.gsub
+	slot14 = slot10
+	slot15 = "\nstack traceback"
+	slot16 = "\nlog_error_stack"
+	slot12 = slot12(slot14, slot15, slot16)
+	slot10 = slot12
 	slot12 = LoggerManager
 	slot12 = slot12.checkLogger
 	slot14 = LoggerConst
-	slot14 = slot14.DEBUG
+	slot14 = slot14.ERROR
 	slot12 = slot12(slot14)
-	--- END OF BLOCK #27 ---
-
-	slot12 = if slot12 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #28 142-149, warpins: 1 ---
-	slot12 = CombatLogger
-	slot12 = slot12.debug
-	slot14 = "@hyj runtime debug action"
-	slot15 = slot2.BPName
-	slot16 = slot4.name
-	slot17 = slot4.NodeID
-	slot18 = slot10
-
-	slot12(slot14, slot15, slot16, slot17, slot18)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 150-152, warpins: 2 ---
-	slot12 = nil
-	--- END OF BLOCK #29 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #30 153-157, warpins: 1 ---
-	slot13 = type
-	slot15 = slot11
-	slot13 = slot13(slot15)
 	--- END OF BLOCK #30 ---
 
-	if slot13 ~= "boolean" then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #31
 	else
 	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #31 158-159, warpins: 1 ---
-	slot13 = false
+	--- BLOCK #31 178-185, warpins: 1 ---
+	slot12 = CombatLogger
+	slot12 = slot12.logException
+	slot14 = "do action error"
+	slot15 = slot2.BPName
+	slot16 = slot1.name
+	slot17 = slot1.NodeID
+	slot18 = slot10
+
+	slot12(slot14, slot15, slot16, slot17, slot18)
+
 	--- END OF BLOCK #31 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 160-160, warpins: 1 ---
-	slot13 = true
+	--- BLOCK #32 186-192, warpins: 2 ---
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "Client Execute result: false\n%s\n"
+	slot15 = slot10
+	slot12 = slot12(slot14, slot15)
+	slot11 = slot12
+	slot10 = false
 	--- END OF BLOCK #32 ---
 
 	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 161-165, warpins: 2 ---
-	slot14 = string
-	slot14 = slot14.format
-	slot16 = "Client Execute result: %s, ret = %s\n"
+	--- BLOCK #33 193-195, warpins: 3 ---
+	slot12 = slot1.NodeID
 	--- END OF BLOCK #33 ---
 
-	slot13 = if slot13 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #34
 	else
 	JUMP TO BLOCK #35
 	end
 
 
-	--- BLOCK #34 166-170, warpins: 1 ---
-	slot17 = tostring
-	slot19 = slot11
-	slot17 = slot17(slot19)
+	--- BLOCK #34 196-205, warpins: 1 ---
+	slot12 = CS
+	slot12 = slot12.FunPlus
+	slot12 = slot12.WorldX
+	slot12 = slot12.FlowCanvas
+	slot12 = slot12.SkillBPRuntimeData
+	slot12 = slot12.SetRuntimeFuncResult
+	slot14 = slot1.NodeID
+	slot15 = slot9
+	slot16 = slot11
+
+	slot12(slot14, slot15, slot16)
+
 	--- END OF BLOCK #34 ---
 
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #36
-	end
+	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 171-171, warpins: 2 ---
-	slot17 = "true"
+	--- BLOCK #35 206-208, warpins: 2 ---
+	return slot10
+
 	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #36
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
 
 
-	--- BLOCK #36 172-185, warpins: 2 ---
-	slot18 = tostring
-	slot20 = slot11
-	MULTRES = slot18(slot20)
-	slot14 = slot14(slot16, slot17, MULTRES)
-	slot12 = slot14
-	slot14 = AbilityDebugTool
-	slot14 = slot14.getCombinedNecessaryResult
-	slot16 = slot6
-	slot17 = slot4
-	slot18 = slot12
-	slot14 = slot14(slot16, slot17, slot18)
-	slot12 = slot14
-	--- END OF BLOCK #36 ---
+	--- BLOCK #36 209-222, warpins: 1 ---
+	slot9 = slot2
+	slot7 = slot2.pushNodeIdToStack
+	slot10 = slot1.NodeID
 
-	slot13 = if slot13 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #41
-	end
+	slot7(slot9, slot10)
 
+	slot7 = xpcall
 
-	--- BLOCK #37 186-187, warpins: 1 ---
-	slot10 = slot11
-	--- END OF BLOCK #37 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #41
-
-
-	--- BLOCK #38 188-201, warpins: 1 ---
-	slot13 = string
-	slot13 = slot13.gsub
-	slot15 = slot11
-	slot16 = "\nstack traceback"
-	slot17 = "\nlog_error_stack"
-	slot13 = slot13(slot15, slot16, slot17)
-	slot11 = slot13
-	slot13 = LoggerManager
-	slot13 = slot13.checkLogger
-	slot15 = LoggerConst
-	slot15 = slot15.ERROR
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #38 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #40
-	end
-
-
-	--- BLOCK #39 202-209, warpins: 1 ---
-	slot13 = CombatLogger
-	slot13 = slot13.logException
-	slot15 = "do action error"
-	slot16 = slot2.BPName
-	slot17 = slot4.name
-	slot18 = slot4.NodeID
-	slot19 = slot11
-
-	slot13(slot15, slot16, slot17, slot18, slot19)
-
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 210-216, warpins: 2 ---
-	slot13 = string
-	slot13 = slot13.format
-	slot15 = "Client Execute result: false\n%s\n"
-	slot16 = slot11
-	slot13 = slot13(slot15, slot16)
-	slot12 = slot13
-	slot11 = false
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 217-219, warpins: 3 ---
-	slot13 = slot4.NodeID
-	--- END OF BLOCK #41 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
-
-
-	--- BLOCK #42 220-229, warpins: 1 ---
-	slot13 = CS
-	slot13 = slot13.FunPlus
-	slot13 = slot13.WorldX
-	slot13 = slot13.FlowCanvas
-	slot13 = slot13.SkillBPRuntimeData
-	slot13 = slot13.SetRuntimeFuncResult
-	slot15 = slot4.NodeID
-	slot16 = slot10
-	slot17 = slot12
-
-	slot13(slot15, slot16, slot17)
-
-	--- END OF BLOCK #42 ---
-
-	FLOW; TARGET BLOCK #43
-
-
-	--- BLOCK #43 230-232, warpins: 2 ---
-	return slot11
-
-	--- END OF BLOCK #43 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #53
-
-
-	--- BLOCK #44 233-246, warpins: 1 ---
-	slot10 = slot2
-	slot8 = slot2.pushNodeIdToStack
-	slot11 = slot4.NodeID
-
-	slot8(slot10, slot11)
-
-	slot8 = xpcall
-
-	slot10 = function()
+	slot9 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = actionFun
 		slot2 = self
@@ -818,133 +833,133 @@ slot25 = function(slot0, slot1, slot2)
 
 	end
 
-	slot11 = debug
-	slot11 = slot11.traceback
-	slot8, slot9 = slot8(slot10, slot11)
-	slot12 = slot2
-	slot10 = slot2.popNodeIdFromStack
+	slot10 = debug
+	slot10 = slot10.traceback
+	slot7, slot8 = slot7(slot9, slot10)
+	slot11 = slot2
+	slot9 = slot2.popNodeIdFromStack
 
-	slot10(slot12)
+	slot9(slot11)
 
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #36 ---
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #45
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #37
 	else
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #45 247-260, warpins: 1 ---
-	slot10 = string
-	slot10 = slot10.gsub
-	slot12 = slot9
-	slot13 = "\nstack traceback"
-	slot14 = "\nlog_error_stack"
-	slot10 = slot10(slot12, slot13, slot14)
-	slot9 = slot10
-	slot10 = LoggerManager
-	slot10 = slot10.checkLogger
-	slot12 = LoggerConst
-	slot12 = slot12.ERROR
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #45 ---
+	--- BLOCK #37 223-236, warpins: 1 ---
+	slot9 = string
+	slot9 = slot9.gsub
+	slot11 = slot8
+	slot12 = "\nstack traceback"
+	slot13 = "\nlog_error_stack"
+	slot9 = slot9(slot11, slot12, slot13)
+	slot8 = slot9
+	slot9 = LoggerManager
+	slot9 = slot9.checkLogger
+	slot11 = LoggerConst
+	slot11 = slot11.ERROR
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #37 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #46
+	slot9 = if slot9 then
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #46 261-268, warpins: 1 ---
-	slot10 = CombatLogger
-	slot10 = slot10.logException
-	slot12 = "do action error"
-	slot13 = slot2.BPName
-	slot14 = slot4.name
-	slot15 = slot4.NodeID
-	slot16 = slot9
+	--- BLOCK #38 237-244, warpins: 1 ---
+	slot9 = CombatLogger
+	slot9 = slot9.logException
+	slot11 = "do action error"
+	slot12 = slot2.BPName
+	slot13 = slot1.name
+	slot14 = slot1.NodeID
+	slot15 = slot8
 
-	slot10(slot12, slot13, slot14, slot15, slot16)
+	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	--- END OF BLOCK #46 ---
+	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #47
-
-
-	--- BLOCK #47 269-269, warpins: 2 ---
-	slot9 = false
-
-	--- END OF BLOCK #47 ---
-
-	FLOW; TARGET BLOCK #48
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #48 270-272, warpins: 2 ---
-	return slot9
+	--- BLOCK #39 245-245, warpins: 2 ---
+	slot8 = false
 
-	--- END OF BLOCK #48 ---
+	--- END OF BLOCK #39 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #53
+	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #49 273-274, warpins: 1 ---
-	--- END OF BLOCK #49 ---
+	--- BLOCK #40 246-248, warpins: 2 ---
+	return slot8
+
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
+
+
+	--- BLOCK #41 249-250, warpins: 1 ---
+	--- END OF BLOCK #41 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #50 275-280, warpins: 1 ---
-	slot8 = AbilityDebugTool
-	slot8 = slot8.debugActionType
-	slot9 = slot4.name
-	slot8 = slot8[slot9]
-	--- END OF BLOCK #50 ---
+	--- BLOCK #42 251-256, warpins: 1 ---
+	slot7 = AbilityDebugTool
+	slot7 = slot7.debugActionType
+	slot8 = slot1.name
+	slot7 = slot7[slot8]
+	--- END OF BLOCK #42 ---
 
-	if slot8 == 2 then
-	JUMP TO BLOCK #51
+	if slot7 == 2 then
+	JUMP TO BLOCK #43
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #51 281-286, warpins: 1 ---
-	slot8 = AbilityDebugTool
-	slot8 = slot8.checkRuntimeDebug
-	slot10 = slot2
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #51 ---
+	--- BLOCK #43 257-262, warpins: 1 ---
+	slot7 = AbilityDebugTool
+	slot7 = slot7.checkRuntimeDebug
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #43 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #52
+	slot7 = if slot7 then
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #52 287-303, warpins: 1 ---
-	slot8 = CS
-	slot8 = slot8.FunPlus
-	slot8 = slot8.WorldX
-	slot8 = slot8.FlowCanvas
-	slot8 = slot8.SkillBPRuntimeData
-	slot8 = slot8.CallXLuaEntServerMsg
-	slot10 = slot7
-	slot11 = "RPC_CS_DebugModeCallDoAction"
-	slot12 = {}
-	slot13 = slot4.NodeID
-	slot12[1] = slot13
-	slot15 = slot2
-	slot13 = slot2.getDynamicInfo
-	MULTRES = slot13(slot15)
-	slot12[MULTRES] = MULTRES
+	--- BLOCK #44 263-279, warpins: 1 ---
+	slot7 = CS
+	slot7 = slot7.FunPlus
+	slot7 = slot7.WorldX
+	slot7 = slot7.FlowCanvas
+	slot7 = slot7.SkillBPRuntimeData
+	slot7 = slot7.CallXLuaEntServerMsg
+	slot9 = slot6
+	slot10 = "RPC_CS_DebugModeCallDoAction"
+	slot11 = {}
+	slot12 = slot1.NodeID
+	slot11[1] = slot12
+	slot14 = slot2
+	slot12 = slot2.getDynamicInfo
+	MULTRES = slot12(slot14)
+	slot11[MULTRES] = MULTRES
 
-	slot13 = function(slot0, slot1)
+	slot12 = function(slot0, slot1)
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot2 = AbilityDebugTool
 		slot2 = slot2.abilityDebugModeCallBack
@@ -962,38 +977,31 @@ slot25 = function(slot0, slot1, slot2)
 
 	end
 
-	slot8(slot10, slot11, slot12, slot13)
+	slot7(slot9, slot10, slot11, slot12)
 
-	--- END OF BLOCK #52 ---
+	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #53
-
-
-	--- BLOCK #53 304-306, warpins: 6 ---
-	slot8 = false
-
-	return slot8
-	--- END OF BLOCK #53 ---
-
-	FLOW; TARGET BLOCK #54
+	FLOW; TARGET BLOCK #45
 
 
-	--- BLOCK #54 307-307, warpins: 2 ---
-	return slot3
-	--- END OF BLOCK #54 ---
+	--- BLOCK #45 280-282, warpins: 6 ---
+	slot7 = false
 
-	FLOW; TARGET BLOCK #55
+	return slot7
+	--- END OF BLOCK #45 ---
+
+	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #55 308-308, warpins: 2 ---
-	return slot5
-	--- END OF BLOCK #55 ---
+	--- BLOCK #46 283-283, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #46 ---
 
 
 
 end
 
-slot24.doAction = slot25
+slot24.doActionInternal = slot25
 
 slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
@@ -1010,7 +1018,7 @@ slot25 = function(slot0, slot1, slot2)
 	if slot3 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #33
 	end
 
 
@@ -1069,309 +1077,348 @@ slot25 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-45, warpins: 2 ---
+	--- BLOCK #6 28-35, warpins: 2 ---
 	slot8 = slot0
 	slot6 = slot0.getVal
 	slot9 = slot1.timelineId
 	slot10 = slot2
 	slot6 = slot6(slot8, slot9, slot10)
-	slot7 = ActionTimelineParams
-	slot7 = slot7.CombatActionTimelineParam
-	slot7 = slot7()
-	slot10 = slot3
-	slot8 = slot3.genCombatContextId
-	slot8 = slot8(slot10)
-	slot7.combatContextId = slot8
-	slot8 = nil
-	slot9 = slot2.ctxType
-	slot10 = AbilityConst
-	slot10 = slot10.COMBAT_CONTEXT_TYPE_ABILITY
+	slot7 = slot1.playRate
 	--- END OF BLOCK #6 ---
 
-	if slot9 == slot10 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 46-52, warpins: 1 ---
-	slot8 = slot7.combatContextId
-	slot11 = slot3
-	slot9 = slot3.startHitTriggerRecord
-	slot12 = slot8
-	slot13 = slot2
-
-	slot9(slot11, slot12, slot13)
-
+	--- BLOCK #7 36-36, warpins: 1 ---
+	slot7 = 1
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 53-53, warpins: 1 ---
-	slot8 = slot2.castingCombatContextId
+	--- BLOCK #8 37-39, warpins: 2 ---
+	slot8 = slot2.attackSpeed
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 54-57, warpins: 2 ---
-	slot7.castingCombatContextId = slot8
-	slot9 = slot2.constCasterInfo
-	--- END OF BLOCK #9 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #10
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #10 58-61, warpins: 1 ---
-	slot9 = slot2.constCasterInfo
-	slot9 = slot9.actorId
+	--- BLOCK #9 40-40, warpins: 1 ---
+	slot8 = 1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 41-55, warpins: 2 ---
+	slot7 = slot7 * slot8
+	slot9 = ActionTimelineParams
+	slot9 = slot9.CombatActionTimelineParam
+	slot9 = slot9()
+	slot12 = slot3
+	slot10 = slot3.genCombatContextId
+	slot10 = slot10(slot12)
+	slot9.combatContextId = slot10
+	slot9.attackSpeed = slot8
+	slot10 = nil
+	slot11 = slot2.ctxType
+	slot12 = AbilityConst
+	slot12 = slot12.COMBAT_CONTEXT_TYPE_ABILITY
 	--- END OF BLOCK #10 ---
 
-	slot9 = if not slot9 then
+	if slot11 == slot12 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 62-67, warpins: 2 ---
-	slot9 = CombatActionTool
-	slot9 = slot9.parseActorId
-	slot11 = slot2
-	slot12 = AbilityConst
-	slot12 = slot12.COMBAT_TARGET_TYPE_OWNER
-	slot9 = slot9(slot11, slot12)
+	--- BLOCK #11 56-62, warpins: 1 ---
+	slot10 = slot9.combatContextId
+	slot13 = slot3
+	slot11 = slot3.startHitTriggerRecord
+	slot14 = slot10
+	slot15 = slot2
+
+	slot11(slot13, slot14, slot15)
+
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 68-76, warpins: 2 ---
-	slot7.srcActorId = slot9
-	slot7.srcAbilityId = slot5
-	slot9 = slot2.abilityStoreType
-	slot7.srcAbilityStoreType = slot9
-	slot9 = slot2.randomPointPos
-	slot7.randomPointPos = slot9
-	slot9 = slot2.runtimeTargetInfo
+	--- BLOCK #12 63-63, warpins: 1 ---
+	slot10 = slot2.castingCombatContextId
 	--- END OF BLOCK #12 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #13
-	else
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 64-67, warpins: 2 ---
+	slot9.castingCombatContextId = slot10
+	slot11 = slot2.constCasterInfo
+	--- END OF BLOCK #13 ---
+
+	slot11 = if slot11 then
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 77-78, warpins: 1 ---
-	slot9 = slot2.runtimeTargetInfo
-	slot9 = slot9.actorId
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 79-82, warpins: 2 ---
-	slot7.targetActorId = slot9
-	slot9 = slot2.runtimeTargetInfo
+	--- BLOCK #14 68-71, warpins: 1 ---
+	slot11 = slot2.constCasterInfo
+	slot11 = slot11.actorId
 	--- END OF BLOCK #14 ---
 
-	slot9 = if slot9 then
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 83-84, warpins: 1 ---
-	slot9 = slot2.runtimeTargetInfo
-	slot9 = slot9.hitPos
+	--- BLOCK #15 72-77, warpins: 2 ---
+	slot11 = CombatActionTool
+	slot11 = slot11.parseActorId
+	slot13 = slot2
+	slot14 = AbilityConst
+	slot14 = slot14.COMBAT_TARGET_TYPE_OWNER
+	slot11 = slot11(slot13, slot14)
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 85-88, warpins: 2 ---
-	slot7.hitPos = slot9
-	slot9 = slot2.runtimeTargetInfo
+	--- BLOCK #16 78-86, warpins: 2 ---
+	slot9.srcActorId = slot11
+	slot9.srcAbilityId = slot5
+	slot11 = slot2.abilityStoreType
+	slot9.srcAbilityStoreType = slot11
+	slot11 = slot2.randomPointPos
+	slot9.randomPointPos = slot11
+	slot11 = slot2.runtimeTargetInfo
 	--- END OF BLOCK #16 ---
 
-	slot9 = if slot9 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 89-90, warpins: 1 ---
-	slot9 = slot2.runtimeTargetInfo
-	slot9 = slot9.hitDir
+	--- BLOCK #17 87-88, warpins: 1 ---
+	slot11 = slot2.runtimeTargetInfo
+	slot11 = slot11.actorId
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 91-94, warpins: 2 ---
-	slot7.hitDir = slot9
-	slot9 = slot2.runtimeTargetInfo
+	--- BLOCK #18 89-92, warpins: 2 ---
+	slot9.targetActorId = slot11
+	slot11 = slot2.runtimeTargetInfo
 	--- END OF BLOCK #18 ---
 
-	slot9 = if slot9 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 95-96, warpins: 1 ---
-	slot9 = slot2.runtimeTargetInfo
-	slot9 = slot9.hitIdx
+	--- BLOCK #19 93-94, warpins: 1 ---
+	slot11 = slot2.runtimeTargetInfo
+	slot11 = slot11.hitPos
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 97-108, warpins: 2 ---
-	slot7.hitIdx = slot9
-	slot9 = slot2.srcType
-	slot7.srcType = slot9
-	slot9 = slot2.constCasterInfo
-	slot7.constCasterInfo = slot9
-	slot9 = LoggerManager
-	slot9 = slot9.checkLogger
-	slot11 = LoggerConst
-	slot11 = slot11.DEBUG
-	slot9 = slot9(slot11)
+	--- BLOCK #20 95-98, warpins: 2 ---
+	slot9.hitPos = slot11
+	slot11 = slot2.runtimeTargetInfo
 	--- END OF BLOCK #20 ---
 
-	slot9 = if slot9 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 109-114, warpins: 1 ---
-	slot9 = CombatLogger
-	slot9 = slot9.debug
-	slot11 = "setCombatActionTimeline"
-	slot12 = slot3.actorId
-	slot13 = slot6
-
-	slot9(slot11, slot12, slot13)
-
+	--- BLOCK #21 99-100, warpins: 1 ---
+	slot11 = slot2.runtimeTargetInfo
+	slot11 = slot11.hitDir
 	--- END OF BLOCK #21 ---
 
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 115-120, warpins: 2 ---
-	slot9 = AbilityDebugTool
-	slot9 = slot9.checkRuntimeDebug
-	slot11 = slot2
-	slot9 = slot9(slot11)
+	--- BLOCK #22 101-104, warpins: 2 ---
+	slot9.hitDir = slot11
+	slot11 = slot2.runtimeTargetInfo
 	--- END OF BLOCK #22 ---
 
-	slot9 = if slot9 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #23 121-124, warpins: 1 ---
-	slot9 = AbilityDebugTool
-	slot9 = slot9.registerCurrentDebugTimelines
-	slot11 = slot6
-
-	slot9(slot11)
-
+	--- BLOCK #23 105-106, warpins: 1 ---
+	slot11 = slot2.runtimeTargetInfo
+	slot11 = slot11.hitIdx
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 125-140, warpins: 2 ---
-	slot9 = CS
-	slot9 = slot9.FunPlus
-	slot9 = slot9.WorldX
-	slot9 = slot9.FlowCanvas
-	slot9 = slot9.SkillBPRuntimeData
-	slot9 = slot9.CallXLuaEntServerMsgNoCb
-	slot11 = slot3.actorId
-	slot12 = "RPC_CS_SetCombatActionTimeline"
-	slot13 = {
-		nil,
-		0
-	}
-	slot13[1] = slot6
-	slot13[3] = slot7
-	slot14 = slot2.id
-	slot13[4] = slot14
-	slot14 = slot2.nodeStack
+	--- BLOCK #24 107-112, warpins: 2 ---
+	slot9.hitIdx = slot11
+	slot11 = slot2.srcType
+	slot9.srcType = slot11
+	slot11 = slot2.constCasterInfo
 	--- END OF BLOCK #24 ---
 
-	slot14 = if not slot14 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #25
 	else
 	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 141-141, warpins: 1 ---
-	slot14 = {}
+	--- BLOCK #25 113-116, warpins: 1 ---
+	slot11 = slot2.constCasterInfo
+	slot13 = slot11
+	slot11 = slot11.clone
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 142-150, warpins: 2 ---
-	slot13[5] = slot14
-
-	slot9(slot11, slot12, slot13)
-
-	slot9 = slot3.actorTimeline
-	slot11 = slot9
-	slot9 = slot9.setTimeline
-	slot12 = slot6
-	slot13 = slot1.playRate
+	--- BLOCK #26 117-124, warpins: 2 ---
+	slot9.constCasterInfo = slot11
+	slot11 = LoggerManager
+	slot11 = slot11.checkLogger
+	slot13 = LoggerConst
+	slot13 = slot13.DEBUG
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #26 ---
 
-	slot13 = if not slot13 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #27
 	else
 	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 151-151, warpins: 1 ---
-	slot13 = 1
+	--- BLOCK #27 125-130, warpins: 1 ---
+	slot11 = CombatLogger
+	slot11 = slot11.debug
+	slot13 = "setCombatActionTimeline"
+	slot14 = slot3.actorId
+	slot15 = slot6
+
+	slot11(slot13, slot14, slot15)
+
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 152-153, warpins: 2 ---
-	slot14 = slot7
-
-	slot9(slot11, slot12, slot13, slot14)
-
+	--- BLOCK #28 131-136, warpins: 2 ---
+	slot11 = AbilityDebugTool
+	slot11 = slot11.checkRuntimeDebug
+	slot13 = slot2
+	slot11 = slot11(slot13)
 	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #29
+	slot11 = if slot11 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
 
 
-	--- BLOCK #29 154-155, warpins: 2 ---
+	--- BLOCK #29 137-140, warpins: 1 ---
+	slot11 = AbilityDebugTool
+	slot11 = slot11.registerCurrentDebugTimelines
+	slot13 = slot6
+
+	slot11(slot13)
+
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 141-157, warpins: 2 ---
+	slot11 = CS
+	slot11 = slot11.FunPlus
+	slot11 = slot11.WorldX
+	slot11 = slot11.FlowCanvas
+	slot11 = slot11.SkillBPRuntimeData
+	slot11 = slot11.CallXLuaEntServerMsgNoCb
+	slot13 = slot3.actorId
+	slot14 = "RPC_CS_SetCombatActionTimeline"
+	slot15 = {}
+	slot15[1] = slot6
+	slot15[2] = slot7
+	slot15[3] = slot9
+	slot16 = slot2.id
+	slot15[4] = slot16
+	slot16 = slot2.nodeStack
+	--- END OF BLOCK #30 ---
+
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 158-158, warpins: 1 ---
+	slot16 = {}
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 159-167, warpins: 2 ---
+	slot15[5] = slot16
+
+	slot11(slot13, slot14, slot15)
+
+	slot11 = slot3.actorTimeline
+	slot13 = slot11
+	slot11 = slot11.setTimeline
+	slot14 = slot6
+	slot15 = slot7
+	slot16 = slot9
+
+	slot11(slot13, slot14, slot15, slot16)
+
+	--- END OF BLOCK #32 ---
+
+	FLOW; TARGET BLOCK #33
+
+
+	--- BLOCK #33 168-169, warpins: 2 ---
 	slot4 = true
 
 	return slot4
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #33 ---
 
 
 
@@ -1488,12 +1535,12 @@ slot25 = function(slot0, slot1, slot2)
 
 	--- BLOCK #2 13-62, warpins: 2 ---
 	slot6 = slot0
-	slot4 = slot0.doAction
+	slot4 = slot0.doActionById
 	slot7 = slot1.startPosNodeId
 	slot8 = slot2
 	slot4 = slot4(slot6, slot7, slot8)
 	slot7 = slot0
-	slot5 = slot0.doAction
+	slot5 = slot0.doActionById
 	slot8 = slot1.rotationNodeId
 	slot9 = slot2
 	slot5 = slot5(slot7, slot8, slot9)
@@ -1585,17 +1632,13 @@ slot25 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 70-102, warpins: 2 ---
+	--- BLOCK #8 70-98, warpins: 2 ---
 	slot21 = slot10
 	slot22 = slot11
 	slot23 = slot12
-	slot24 = AbilityUtils
-	slot24 = slot24.getBpAbilityType
-	slot26 = slot2.abilityId
-	slot24 = slot24(slot26)
-	slot25 = slot13
+	slot24 = slot13
 
-	slot14(slot16, slot17, slot18, slot19, slot20, slot21, slot22, slot23, slot24, slot25)
+	slot14(slot16, slot17, slot18, slot19, slot20, slot21, slot22, slot23, slot24)
 
 	slot14 = pg
 	slot14 = slot14.global
@@ -1628,7 +1671,7 @@ slot25 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 103-109, warpins: 1 ---
+	--- BLOCK #9 99-105, warpins: 1 ---
 	slot15 = CombatLogger
 	slot15 = slot15.debug
 	slot17 = "actOnSweepTargets"
@@ -1643,7 +1686,7 @@ slot25 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 110-114, warpins: 2 ---
+	--- BLOCK #10 106-110, warpins: 2 ---
 	slot15 = ToBool
 	slot17 = slot14
 	slot15 = slot15(slot17)
@@ -1656,7 +1699,7 @@ slot25 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #11 115-133, warpins: 1 ---
+	--- BLOCK #11 111-129, warpins: 1 ---
 	slot17 = slot9
 	slot15 = slot9.serverMsg
 	slot18 = "RPC_CS_DoActOnSweepTargetsActions"
@@ -1685,7 +1728,7 @@ slot25 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 134-141, warpins: 2 ---
+	--- BLOCK #12 130-137, warpins: 2 ---
 	slot15 = pg
 	slot15 = slot15.global
 	slot15 = slot15.physicsMgr
@@ -1740,7 +1783,7 @@ slot25 = function(slot0, slot1, slot2)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #28
 	end
 
 
@@ -1781,147 +1824,246 @@ slot25 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 52-63, warpins: 2 ---
-	slot9 = slot1.speed
-	slot10 = slot1.endTarget
-	slot11 = slot1.offsetXYZ
-	slot12 = slot1.offsetRotation
-	slot13 = CombatActionTool
-	slot13 = slot13.parseActorId
-	slot15 = slot2
-	slot16 = slot10
-	slot13 = slot13(slot15, slot16)
-	slot14 = {}
+	--- BLOCK #3 52-54, warpins: 2 ---
+	slot9 = slot2.actorId
 	--- END OF BLOCK #3 ---
 
-	slot9 = if slot9 then
+	if slot3 == slot9 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 64-66, warpins: 1 ---
-	slot15 = 0
+	--- BLOCK #4 55-57, warpins: 1 ---
+	slot9 = slot2.attackSpeed
 	--- END OF BLOCK #4 ---
 
-	if slot9 > slot15 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 67-68, warpins: 1 ---
+	--- BLOCK #5 58-58, warpins: 2 ---
+	slot9 = 1
 	--- END OF BLOCK #5 ---
 
-	slot15 = if not slot9 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 69-69, warpins: 3 ---
-	slot15 = nil
+	--- BLOCK #6 59-61, warpins: 2 ---
+	slot10 = slot1.speed
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 70-79, warpins: 2 ---
-	slot14.speed = slot15
-	slot14.position = slot11
-	slot14.rotation = slot12
-	slot17 = slot0
-	slot15 = slot0.setEffectExtraData
-	slot18 = slot14
-	slot19 = slot2
-
-	slot15(slot17, slot18, slot19)
-
+	--- BLOCK #7 62-62, warpins: 1 ---
+	slot10 = 1
 	--- END OF BLOCK #7 ---
 
-	if slot13 == 0 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 80-83, warpins: 1 ---
-	slot15 = AbilityConst
-	slot15 = slot15.COMBAT_TARGET_TYPE_PROJECTILE
+	--- BLOCK #8 63-74, warpins: 2 ---
+	slot10 = slot10 * slot9
+	slot11 = slot1.endTarget
+	slot12 = slot1.offsetXYZ
+	slot13 = slot1.offsetRotation
+	slot14 = CombatActionTool
+	slot14 = slot14.parseActorId
+	slot16 = slot2
+	slot17 = slot11
+	slot14 = slot14(slot16, slot17)
+	slot15 = {}
 	--- END OF BLOCK #8 ---
 
-	if slot10 == slot15 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 84-85, warpins: 2 ---
+	--- BLOCK #9 75-77, warpins: 1 ---
+	slot16 = 0
 	--- END OF BLOCK #9 ---
 
-	if slot13 ~= 0 then
+	if slot10 > slot16 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 86-91, warpins: 1 ---
-	slot15 = pg
-	slot15 = slot15.getEntityByActorId
-	slot17 = slot13
-	slot15 = slot15(slot17)
+	--- BLOCK #10 78-79, warpins: 1 ---
 	--- END OF BLOCK #10 ---
 
-	slot15 = if not slot15 then
+	slot16 = if not slot10 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 92-94, warpins: 2 ---
-	slot17 = slot2
-	slot15 = slot2.projectile
-	slot15 = slot15(slot17)
+	--- BLOCK #11 80-80, warpins: 3 ---
+	slot16 = nil
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 95-96, warpins: 2 ---
+	--- BLOCK #12 81-90, warpins: 2 ---
+	slot15.speed = slot16
+	slot15.position = slot12
+	slot15.rotation = slot13
+	slot18 = slot0
+	slot16 = slot0.setEffectExtraData
+	slot19 = slot15
+	slot20 = slot2
+
+	slot16(slot18, slot19, slot20)
+
 	--- END OF BLOCK #12 ---
 
-	if slot15 ~= nil then
+	if slot14 == 0 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 97-105, warpins: 1 ---
-	slot18 = slot6
-	slot16 = slot6.playLinkEffect
-	slot19 = slot8
-	slot20 = slot15
-	slot21 = slot14
-	slot16 = slot16(slot18, slot19, slot20, slot21)
-	slot17 = slot1.isAbilityEndRemove
+	--- BLOCK #13 91-94, warpins: 1 ---
+	slot16 = AbilityConst
+	slot16 = slot16.COMBAT_TARGET_TYPE_PROJECTILE
 	--- END OF BLOCK #13 ---
 
-	if slot17 == true then
+	if slot11 == slot16 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #14 106-115, warpins: 1 ---
+	--- BLOCK #14 95-96, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	if slot14 ~= 0 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 97-102, warpins: 1 ---
+	slot16 = pg
+	slot16 = slot16.getEntityByActorId
+	slot18 = slot14
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #15 ---
+
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 103-105, warpins: 2 ---
+	slot18 = slot2
+	slot16 = slot2.projectile
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 106-107, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	if slot16 ~= nil then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #18 108-116, warpins: 1 ---
+	slot19 = slot6
+	slot17 = slot6.playLinkEffect
+	slot20 = slot8
+	slot21 = slot16
+	slot22 = slot15
+	slot17 = slot17(slot19, slot20, slot21, slot22)
+	slot18 = slot1.isAbilityEndRemove
+	--- END OF BLOCK #18 ---
+
+	if slot18 == true then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #19 117-126, warpins: 1 ---
+	slot18 = CombatActionTool
+	slot18 = slot18.getCasterAbility
+	slot20 = slot2
+	slot18 = slot18(slot20)
+	slot21 = slot7
+	slot19 = slot7.addAbilityEffect
+	slot22 = slot5.actorId
+	slot23 = slot4
+	--- END OF BLOCK #19 ---
+
+	slot24 = if slot18 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 127-127, warpins: 1 ---
+	slot24 = slot18.abilityId
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 128-131, warpins: 2 ---
+	slot25 = slot17
+	slot26 = false
+
+	slot19(slot21, slot22, slot23, slot24, slot25, slot26)
+
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #22 132-139, warpins: 1 ---
+	slot18 = slot5
+	slot16 = slot5.playEffect
+	slot19 = slot8
+	slot20 = slot15
+	slot16 = slot16(slot18, slot19, slot20)
+	slot17 = slot1.isAbilityEndRemove
+	--- END OF BLOCK #22 ---
+
+	if slot17 == true then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #23 140-149, warpins: 1 ---
 	slot17 = CombatActionTool
 	slot17 = slot17.getCasterAbility
 	slot19 = slot2
@@ -1930,121 +2072,69 @@ slot25 = function(slot0, slot1, slot2)
 	slot18 = slot7.addAbilityEffect
 	slot21 = slot5.actorId
 	slot22 = slot4
-	--- END OF BLOCK #14 ---
-
-	slot23 = if slot17 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 116-116, warpins: 1 ---
-	slot23 = slot17.abilityId
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 117-120, warpins: 2 ---
-	slot24 = slot16
-	slot25 = false
-
-	slot18(slot20, slot21, slot22, slot23, slot24, slot25)
-
-	--- END OF BLOCK #16 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
-
-
-	--- BLOCK #17 121-128, warpins: 1 ---
-	slot17 = slot5
-	slot15 = slot5.playEffect
-	slot18 = slot8
-	slot19 = slot14
-	slot15 = slot15(slot17, slot18, slot19)
-	slot16 = slot1.isAbilityEndRemove
-	--- END OF BLOCK #17 ---
-
-	if slot16 == true then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #18 129-138, warpins: 1 ---
-	slot16 = CombatActionTool
-	slot16 = slot16.getCasterAbility
-	slot18 = slot2
-	slot16 = slot16(slot18)
-	slot19 = slot7
-	slot17 = slot7.addAbilityEffect
-	slot20 = slot5.actorId
-	slot21 = slot4
-	--- END OF BLOCK #18 ---
-
-	slot22 = if slot16 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 139-139, warpins: 1 ---
-	slot22 = slot16.abilityId
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 140-142, warpins: 2 ---
-	slot23 = slot15
-	slot24 = false
-
-	slot17(slot19, slot20, slot21, slot22, slot23, slot24)
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 143-144, warpins: 2 ---
-	slot16 = true
-
-	return slot16
-
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 145-147, warpins: 4 ---
-	slot15 = true
-
-	return slot15
-
-	--- END OF BLOCK #22 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #23 148-154, warpins: 1 ---
-	slot8 = LoggerManager
-	slot8 = slot8.checkLogger
-	slot10 = LoggerConst
-	slot10 = slot10.ERROR
-	slot8 = slot8(slot10)
 	--- END OF BLOCK #23 ---
 
-	slot8 = if slot8 then
+	slot23 = if slot17 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 155-160, warpins: 1 ---
+	--- BLOCK #24 150-150, warpins: 1 ---
+	slot23 = slot17.abilityId
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 151-153, warpins: 2 ---
+	slot24 = slot16
+	slot25 = false
+
+	slot18(slot20, slot21, slot22, slot23, slot24, slot25)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 154-155, warpins: 2 ---
+	slot17 = true
+
+	return slot17
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 156-158, warpins: 4 ---
+	slot16 = true
+
+	return slot16
+
+	--- END OF BLOCK #27 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
+
+
+	--- BLOCK #28 159-165, warpins: 1 ---
+	slot8 = LoggerManager
+	slot8 = slot8.checkLogger
+	slot10 = LoggerConst
+	slot10 = slot10.ERROR
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #28 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 166-171, warpins: 1 ---
 	slot8 = CombatLogger
 	slot8 = slot8.error
 	slot10 = "EditorCombatAction:playEffectStrRandomAsync failed, targetEntity is nil"
@@ -2053,23 +2143,23 @@ slot25 = function(slot0, slot1, slot2)
 
 	slot8(slot10, slot11, slot12)
 
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #29 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #25 161-162, warpins: 2 ---
+	--- BLOCK #30 172-173, warpins: 2 ---
 	slot8 = false
 
 	return slot8
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #26
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #26 163-163, warpins: 2 ---
+	--- BLOCK #31 174-174, warpins: 2 ---
 	return
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #31 ---
 
 
 

@@ -1328,8 +1328,8 @@ slot13 = function(slot0)
 end
 
 slot14 = {
-	host = "",
 	path = "/",
+	host = "",
 	scheme = "http"
 }
 slot15 = slot8.PORT

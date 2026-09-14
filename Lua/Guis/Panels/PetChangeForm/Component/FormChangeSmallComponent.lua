@@ -1,46 +1,34 @@
---- BLOCK #0 1-66, warpins: 1 ---
+--- BLOCK #0 1-58, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "FormChangeSmallComponent"
+slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Common.Utils.Utils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.Utils"
+slot4 = "Utils.LuaUIUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.LuaUIUtils"
+slot5 = "Data.pet_data"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.pet_data"
+slot6 = "Const.UIConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.UIConst"
+slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientTextUtils"
+slot8 = "Common.NoticeDef"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.pet_avatar_data"
+slot9 = "Guis.Helper.UIComponent"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Common.NoticeDef"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Guis.Utils.PetResearchUtils"
-slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Guis.Helper.UIComponent"
-slot10 = slot10(slot12)
-slot11 = slot1.LightClass
-slot13 = "FormChangeSmallComponent"
-slot14 = slot10
-slot11 = slot11(slot13, slot14)
+slot8 = slot0.LightClass
+slot10 = "FormChangeSmallComponent"
+slot11 = slot7
+slot8 = slot8(slot10, slot11)
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-64, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -113,9 +101,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.findObjects = slot12
+slot8.findObjects = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.cancelBtn
 
@@ -228,32 +216,18 @@ slot12 = function(slot0)
 		slot10 = "CHANGE_FORM"
 		slot8 = slot8(slot10)
 		slot7.title = slot8
-		slot8 = pg
-		slot8 = slot8.getGameString
-		slot10 = "ACCESSORY_UNLOCK_DESC"
+		slot8 = self
+		slot10 = slot8
+		slot8 = slot8.getChangeFormConfirmTip
 		slot8 = slot8(slot10)
 		slot7.tipTop = slot8
 		slot7.data = slot2
 
 		slot8 = function()
-			--- BLOCK #0 1-17, warpins: 1 ---
-			slot0 = pg
-			slot0 = slot0.me
-			slot2 = slot0
-			slot0 = slot0.serverMsg
-			slot3 = "RPC_CS_StartChangeForm"
-			slot4 = self
-			slot4 = slot4._petInfo
-			slot4 = slot4.id
-			slot5 = self
-			slot5 = slot5._targetTemplateId
-
-			slot0(slot2, slot3, slot4, slot5)
-
+			--- BLOCK #0 1-5, warpins: 1 ---
 			slot0 = self
-			slot0 = slot0.ctrl
 			slot2 = slot0
-			slot0 = slot0.dismiss
+			slot0 = slot0.requestChangeForm
 
 			slot0(slot2)
 
@@ -410,9 +384,131 @@ slot12 = function(slot0)
 
 end
 
-slot11.initView = slot12
+slot8.initView = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = nil
+	slot2 = slot0._petInfo
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-13, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getPetInfo
+	slot5 = slot0._petInfo
+	slot5 = slot5.id
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-14, warpins: 1 ---
+	slot2 = slot0._petInfo
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 17-22, warpins: 1 ---
+	slot3 = Utils
+	slot3 = slot3.isLabelDark
+	slot5 = slot2.label
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-28, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "PET_DARK_DISAPPEAR_CONVERT_DESC"
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 29-33, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "ACCESSORY_UNLOCK_DESC"
+	slot3 = slot3(slot5)
+	slot1 = slot3
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 34-34, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot8.getChangeFormConfirmTip = slot9
+
+slot9 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.serverMsg
+	slot4 = "RPC_CS_StartChangeForm"
+	slot5 = slot0._petInfo
+	slot5 = slot5.id
+	slot6 = slot0._targetTemplateId
+
+	slot1(slot3, slot4, slot5, slot6)
+
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.dismiss
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot8.requestChangeForm = slot9
+
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -427,9 +523,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onDestroy = slot12
+slot8.onDestroy = slot9
 
-slot12 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0._targetTemplateId = slot1
 	slot0._curItemId = slot2
@@ -441,16 +537,11 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.setChangeFormTarget = slot12
+slot8.setChangeFormTarget = slot9
 
-slot12 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot9 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0._petInfo = slot1
-	slot3 = Utils
-	slot3 = slot3.isLabelMagic
-	slot5 = slot1.label
-	slot3 = slot3(slot5)
-	slot0._isMagic = slot3
 	slot3 = slot1.templateId
 	slot0._fromTemplateId = slot3
 	slot0._curItemId = slot2
@@ -466,9 +557,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.setInfo = slot12
+slot8.setInfo = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshAvatar
@@ -487,9 +578,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshInfo = slot12
+slot8.refreshInfo = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = 1
 	slot2 = 2
@@ -529,11 +620,11 @@ slot12 = function(slot0)
 	if slot4 == 1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 31-54, warpins: 1 ---
+	--- BLOCK #2 31-79, warpins: 1 ---
 	slot11 = PetData
 	slot12 = slot0._fromTemplateId
 	slot11 = slot11[slot12]
@@ -555,64 +646,47 @@ slot12 = function(slot0)
 	slot17 = slot17.gender
 	slot12 = slot12(slot14, slot15, slot16, slot17)
 	slot7.url = slot12
-	slot12 = PetAvatarData
-	slot13 = slot0._fromTemplateId
-	slot12 = slot12[slot13]
-	--- END OF BLOCK #2 ---
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot8
+	slot15 = LuaUIUtils
+	slot15 = slot15.getPetFormName
+	slot17 = slot0._fromTemplateId
+	MULTRES = slot15(slot17)
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	slot12(slot14, MULTRES)
 
+	slot12 = LuaUIUtils
+	slot12 = slot12.renderFormItem
+	slot14 = slot10
+	slot15 = slot0._fromTemplateId
 
-	--- BLOCK #3 55-61, warpins: 1 ---
-	slot12 = PetAvatarData
-	slot13 = slot0._fromTemplateId
-	slot12 = slot12[slot13]
-	slot12 = slot12[0]
-	slot12 = slot12.formName
-	--- END OF BLOCK #3 ---
+	slot12(slot14, slot15)
 
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 62-62, warpins: 2 ---
-	slot12 = ""
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 63-76, warpins: 2 ---
-	slot13 = ClientTextUtils
-	slot13 = slot13.setText
-	slot15 = slot8
-	slot16 = pg
-	slot16 = slot16.getLocalizationText
-	slot18 = slot12
-	MULTRES = slot16(slot18)
+	slot14 = slot10
+	slot12 = slot10.GetComponent
+	slot15 = "UButton"
+	slot12 = slot12(slot14, slot15)
+	slot13 = LuaUIUtils
+	slot13 = slot13.setPetTagLabelToolTip
+	slot15 = slot12
+	slot16 = LuaUIUtils
+	slot16 = slot16.getPetTagInfo
+	slot18 = slot0._fromTemplateId
+	slot19 = slot0._petInfo
+	slot19 = slot19.label
+	slot20 = slot0.bodySizeType
+	slot21 = slot0.shinyStyle
+	MULTRES = slot16(slot18, slot19, slot20, slot21)
 
 	slot13(slot15, MULTRES)
 
-	slot13 = PetResearchUtils
-	slot13 = slot13.renderFormItem
-	slot15 = slot10
-	slot16 = slot0._fromTemplateId
+	--- END OF BLOCK #2 ---
 
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 77-91, warpins: 1 ---
+	--- BLOCK #3 80-100, warpins: 1 ---
 	slot11 = PetData
 	slot12 = slot0._targetTemplateId
 	slot11 = slot11[slot12]
@@ -623,152 +697,138 @@ slot12 = function(slot0)
 	slot15 = slot15.PET_ICON
 	slot12 = slot12(slot14, slot15)
 	slot7.url = slot12
-	slot12 = PetAvatarData
-	slot13 = slot0._targetTemplateId
-	slot12 = slot12[slot13]
-	--- END OF BLOCK #6 ---
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot8
+	slot15 = LuaUIUtils
+	slot15 = slot15.getPetFormName
+	slot17 = slot0._targetTemplateId
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
+	slot12 = slot0._isMagic
+	--- END OF BLOCK #3 ---
 
 	slot12 = if slot12 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 92-95, warpins: 1 ---
-	slot13 = slot12[0]
-	slot13 = slot13.formName
+	--- BLOCK #4 101-106, warpins: 1 ---
+	slot12 = Utils
+	slot12 = slot12.petHasDemonicAvatar
+	slot14 = slot0._targetTemplateId
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #4 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 107-112, warpins: 1 ---
+	slot14 = slot5
+	slot12 = slot5.TryChangePage
+	slot15 = "State"
+	slot16 = 1
+
+	slot12(slot14, slot15, slot16)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 113-126, warpins: 1 ---
+	slot14 = slot5
+	slot12 = slot5.TryChangePage
+	slot15 = "State"
+	slot16 = 2
+
+	slot12(slot14, slot15, slot16)
+
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot9
+	slot15 = pg
+	slot15 = slot15.getGameString
+	slot17 = "BLACK_SHINY_NOT_OPEN"
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 127-131, warpins: 1 ---
+	slot14 = slot5
+	slot12 = slot5.TryChangePage
+	slot15 = "State"
+	slot16 = 1
+
+	slot12(slot14, slot15, slot16)
+
 	--- END OF BLOCK #7 ---
 
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 96-96, warpins: 2 ---
-	slot13 = ""
+	--- BLOCK #8 132-152, warpins: 3 ---
+	slot12 = LuaUIUtils
+	slot12 = slot12.renderFormItem
+	slot14 = slot10
+	slot15 = slot0._targetTemplateId
+
+	slot12(slot14, slot15)
+
+	slot14 = slot10
+	slot12 = slot10.GetComponent
+	slot15 = "UButton"
+	slot12 = slot12(slot14, slot15)
+	slot13 = LuaUIUtils
+	slot13 = slot13.setPetTagLabelToolTip
+	slot15 = slot12
+	slot16 = LuaUIUtils
+	slot16 = slot16.getPetTagInfo
+	slot18 = slot0._targetTemplateId
+	slot19 = slot0._petInfo
+	slot19 = slot19.label
+	slot20 = slot0.bodySizeType
+	slot21 = slot0.shinyStyle
+	MULTRES = slot16(slot18, slot19, slot20, slot21)
+
+	slot13(slot15, MULTRES)
+
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 97-107, warpins: 2 ---
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot8
-	slot17 = pg
-	slot17 = slot17.getLocalizationText
-	slot19 = slot13
-	MULTRES = slot17(slot19)
-
-	slot14(slot16, MULTRES)
-
-	slot14 = slot0._isMagic
+	--- BLOCK #9 153-153, warpins: 2 ---
 	--- END OF BLOCK #9 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #10 108-113, warpins: 1 ---
-	slot14 = Utils
-	slot14 = slot14.petHasDemonicAvatar
-	slot16 = slot0._targetTemplateId
-	slot14 = slot14(slot16)
-	--- END OF BLOCK #10 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 114-119, warpins: 1 ---
-	slot16 = slot5
-	slot14 = slot5.TryChangePage
-	slot17 = "State"
-	slot18 = 1
-
-	slot14(slot16, slot17, slot18)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #12 120-133, warpins: 1 ---
-	slot16 = slot5
-	slot14 = slot5.TryChangePage
-	slot17 = "State"
-	slot18 = 2
-
-	slot14(slot16, slot17, slot18)
-
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot9
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "BLACK_SHINY_NOT_OPEN"
-	MULTRES = slot17(slot19)
-
-	slot14(slot16, MULTRES)
-
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 134-138, warpins: 1 ---
-	slot16 = slot5
-	slot14 = slot5.TryChangePage
-	slot17 = "State"
-	slot18 = 1
-
-	slot14(slot16, slot17, slot18)
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 139-143, warpins: 3 ---
-	slot14 = PetResearchUtils
-	slot14 = slot14.renderFormItem
-	slot16 = slot10
-	slot17 = slot0._targetTemplateId
-
-	slot14(slot16, slot17)
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 144-144, warpins: 2 ---
-	--- END OF BLOCK #15 ---
 
 	for slot4=slot1, slot2, slot3
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #16
+	GO OUT TO BLOCK #10
 
-	--- BLOCK #16 145-145, warpins: 1 ---
+	--- BLOCK #10 154-154, warpins: 1 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot11.refreshAvatar = slot12
+slot8.refreshAvatar = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -793,7 +853,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-30, warpins: 2 ---
+	--- BLOCK #2 9-33, warpins: 2 ---
 	slot2 = slot1.ownNum
 	slot3 = slot1.altOwnNum
 	slot2 = slot2 + slot3
@@ -814,161 +874,157 @@ slot12 = function(slot0)
 	slot3 = slot2.GetRefValue
 	slot6 = "txtNumUText"
 	slot3 = slot3(slot5, slot6)
-	slot4 = nil
-	slot5 = slot1.res
+	slot4 = slot1.ownNum
+	slot5 = slot1.altOwnNum
+	slot4 = slot4 + slot5
+	slot5 = slot1.ownNum
+	slot6 = slot1.needNum
 	--- END OF BLOCK #2 ---
 
-	if slot5 == false then
+	if slot5 < slot6 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 31-44, warpins: 1 ---
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = "<color=#C75050>%s</color>/%s"
-	slot8 = tostring
-	slot10 = slot1.ownNum
-	slot11 = slot1.altOwnNum
-	slot10 = slot10 + slot11
-	slot8 = slot8(slot10)
-	slot9 = tostring
-	slot11 = slot1.needNum
-	MULTRES = slot9(slot11)
-	slot5 = slot5(slot7, slot8, MULTRES)
-	slot4 = slot5
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #4 45-48, warpins: 1 ---
+	--- BLOCK #3 34-37, warpins: 1 ---
 	slot5 = slot1.altOwnNum
 	slot6 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 38-39, warpins: 2 ---
+	slot5 = false
 	--- END OF BLOCK #4 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 49-62, warpins: 1 ---
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = "<color=#B8F56B>%s</color>/%s"
-	slot8 = tostring
-	slot10 = slot1.ownNum
-	slot11 = slot1.altOwnNum
-	slot10 = slot10 + slot11
-	slot8 = slot8(slot10)
-	slot9 = tostring
-	slot11 = slot1.needNum
-	MULTRES = slot9(slot11)
-	slot5 = slot5(slot7, slot8, MULTRES)
-	slot4 = slot5
+	--- BLOCK #5 40-40, warpins: 1 ---
+	slot5 = true
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 63-73, warpins: 1 ---
-	slot5 = string
-	slot5 = slot5.format
-	slot7 = "%s/%s"
-	slot8 = tostring
-	slot10 = slot1.ownNum
-	slot8 = slot8(slot10)
-	slot9 = tostring
-	slot11 = slot1.needNum
-	MULTRES = slot9(slot11)
-	slot5 = slot5(slot7, slot8, MULTRES)
-	slot4 = slot5
+	--- BLOCK #6 41-42, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 74-85, warpins: 3 ---
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot3
-	slot8 = slot4
-
-	slot5(slot7, slot8)
-
-	slot5 = ""
-	slot8 = slot0
-	slot6 = slot0.canChangeMagic
-	slot6 = slot6(slot8)
-	slot7 = slot1.res
+	--- BLOCK #7 43-47, warpins: 1 ---
+	slot6 = UIConst
+	slot6 = slot6.ITEM_STATE
+	slot6 = slot6.EXCHANGE
 	--- END OF BLOCK #7 ---
 
-	slot7 = if not slot7 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 86-87, warpins: 1 ---
+	--- BLOCK #8 48-50, warpins: 2 ---
+	slot6 = UIConst
+	slot6 = slot6.ITEM_STATE
+	slot6 = slot6.FULL
 	--- END OF BLOCK #8 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #9
-	else
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 51-64, warpins: 2 ---
+	slot7 = LuaUIUtils
+	slot7 = slot7.renderConsumeText
+	slot9 = slot3
+	slot10 = slot4
+	slot11 = slot1.needNum
+	slot12 = slot6
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	slot7 = ""
+	slot10 = slot0
+	slot8 = slot0.canChangeMagic
+	slot8 = slot8(slot10)
+	slot9 = slot1.res
+	--- END OF BLOCK #9 ---
+
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 88-88, warpins: 1 ---
-	slot5 = "ITEM_NUM_LESS"
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 89-92, warpins: 2 ---
-	slot7 = slot0.confirmBtn
-	slot8 = false
-	slot7.visualInteractable = slot8
+	--- BLOCK #10 65-66, warpins: 1 ---
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	slot8 = if slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 93-94, warpins: 1 ---
-	slot7 = slot0.confirmBtn
-	slot7.visualInteractable = slot6
+	--- BLOCK #11 67-67, warpins: 1 ---
+	slot7 = "ITEM_NUM_LESS"
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 95-103, warpins: 2 ---
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot0.txtWarningUBaseText
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = slot5
-	MULTRES = slot10(slot12)
+	--- BLOCK #12 68-71, warpins: 2 ---
+	slot9 = slot0.confirmBtn
+	slot10 = false
+	slot9.visualInteractable = slot10
+	--- END OF BLOCK #12 ---
 
-	slot7(slot9, MULTRES)
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 72-73, warpins: 1 ---
+	slot9 = slot0.confirmBtn
+	slot9.visualInteractable = slot8
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 74-82, warpins: 2 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.txtWarningUBaseText
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = slot7
+	MULTRES = slot12(slot14)
+
+	slot9(slot11, MULTRES)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot11.refreshItem = slot12
+slot8.refreshItem = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0._fromTemplateId
 
@@ -979,9 +1035,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getFromTemplateId = slot12
+slot8.getFromTemplateId = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._isMagic
 	--- END OF BLOCK #0 ---
@@ -1022,9 +1078,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.canChangeMagic = slot12
+slot8.canChangeMagic = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.blurPopUWidget
@@ -1059,9 +1115,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onHide = slot12
+slot8.onHide = slot9
 
-slot12 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.blurPopUWidget
@@ -1096,9 +1152,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.onShow = slot12
+slot8.onShow = slot9
 
-return slot11
+return slot8
 --- END OF BLOCK #0 ---
 
 

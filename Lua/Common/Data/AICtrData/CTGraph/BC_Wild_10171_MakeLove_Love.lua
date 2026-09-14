@@ -1,58 +1,13 @@
---- BLOCK #0 1-85, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {}
+slot1 = {}
+slot2 = slot0.SafeCall
+slot3 = slot0.DoAction
+slot4 = slot0.BeginBehaviourV2
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {
-	"Msg_MakeLove_Start"
-}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -82,9 +37,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeMessageTrigger = slot7
+slot1.executeMessageTrigger = slot5
 
-slot7 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._to_114_0
@@ -97,9 +52,9 @@ slot7 = function(slot0)
 
 end
 
-slot2.executeEndTrigger = slot7
+slot1.executeEndTrigger = slot5
 
-slot7 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -171,9 +126,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot5
 
-slot7 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -182,22 +137,25 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot5 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_MoveToTargetEntity"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -205,20 +163,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-87, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 13
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_MoveToTargetEntity"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-81, warpins: 2 ---
 	slot1 = _M
 	slot1 = slot1._get_97_2
 	slot3 = slot0
@@ -324,29 +269,28 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_13_0 = slot7
+slot1._to_13_0 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _M
-	slot1 = slot1._get_51_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 14
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "LerpProperty"
-	slot8 = true
-	slot9 = 2
-	slot10 = slot1
+	slot1 = _C
+	slot3 = 51
+	slot4 = "GetSelfId"
+	slot5 = slot0
+	slot1 = slot1(slot3, slot4, slot5)
+	slot2 = _A
+	slot4 = slot0
+	slot5 = "LerpProperty"
+	slot6 = true
+	slot7 = 2
+	slot8 = slot1
 
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	slot2 = _M
 	slot2 = slot2._to_113_0
@@ -359,22 +303,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_14_0 = slot7
+slot1._to_14_0 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot5 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_CustomLoopAnimation"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -382,20 +329,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-83, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 15
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_CustomLoopAnimation"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-77, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -497,94 +431,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_15_0 = slot7
+slot1._to_15_0 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
 	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_87_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 86
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "LerpProperty"
-	slot8 = false
-	slot9 = 1
-	slot10 = slot1
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
-
-	slot2 = _M
-	slot2 = slot2._to_102_0
-	slot4 = slot0
-
-	return slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_86_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-22, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_97_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot4 = slot0
-	slot2 = slot0.getMessageContext
-	slot2 = slot2(slot4)
-	slot3 = slot0.__actorId
-	slot2.sourceActorId = slot3
-	slot5 = slot0
-	slot3 = slot0.sendMessage
-	slot6 = slot1
-	slot7 = "Msg_MakeLove_End"
-	slot8 = slot2
-
-	slot3(slot5, slot6, slot7, slot8)
-
-	slot3 = _M
-	slot3 = slot3._to_86_0
-	slot5 = slot0
-
-	return slot3(slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_88_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+	slot4 = "PBT_TurnToTargetAtYaw"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -592,20 +457,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-45, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 101
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TurnToTargetAtYaw"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-39, warpins: 2 ---
 	slot1 = _M
 	slot1 = slot1._get_97_2
 	slot3 = slot0
@@ -655,51 +507,20 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_101_0 = slot7
+slot1._to_101_0 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _M
-	slot1 = slot1._get_87_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 102
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "HideEmojiOnTarget"
-	slot8 = slot1
-	slot9 = ""
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
-
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_102_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_112_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = _C
+	slot3 = 112
+	slot4 = "GetSelfId"
+	slot5 = slot0
+	slot1 = slot1(slot3, slot4, slot5)
 	slot4 = slot0
 	slot2 = slot0.getMessageContext
 	slot2 = slot2(slot4)
@@ -722,9 +543,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_111_0 = slot7
+slot1._to_111_0 = slot5
 
-slot7 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addTimer
@@ -746,9 +567,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_113_0 = slot7
+slot1._to_113_0 = slot5
 
-slot7 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_123_3
@@ -763,24 +584,152 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-10, warpins: 1 ---
-	slot2 = _M
-	slot2 = slot2._to_124_0
+	--- BLOCK #1 7-67, warpins: 1 ---
 	slot4 = slot0
+	slot2 = slot0.setActive
 
-	return slot2(slot4)
+	slot2(slot4)
+
+	slot2 = _C
+	slot4 = 125
+	slot5 = "GetSelfId"
+	slot6 = slot0
+	slot2 = slot2(slot4, slot5, slot6)
+	slot3 = _A
+	slot5 = slot0
+	slot6 = "SendMessageToTrigger"
+	slot7 = slot2
+	slot8 = 1018103
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot5 = slot0
+	slot3 = slot0.setActive
+
+	slot3(slot5)
+
+	slot3 = _M
+	slot3 = slot3._get_97_2
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	slot6 = slot0
+	slot4 = slot0.getMessageContext
+	slot4 = slot4(slot6)
+	slot5 = slot0.__actorId
+	slot4.sourceActorId = slot5
+	slot7 = slot0
+	slot5 = slot0.sendMessage
+	slot8 = slot3
+	slot9 = "Msg_MakeLove_End"
+	slot10 = slot4
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot7 = slot0
+	slot5 = slot0.setActive
+
+	slot5(slot7)
+
+	slot5 = _M
+	slot5 = slot5._get_128_0
+	slot7 = slot0
+	slot5 = slot5(slot7)
+	slot6 = _A
+	slot8 = slot0
+	slot9 = "LerpProperty"
+	slot10 = false
+	slot11 = 1
+	slot12 = slot5
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
+	slot8 = slot0
+	slot6 = slot0.setActive
+
+	slot6(slot8)
+
+	slot6 = _M
+	slot6 = slot6._get_128_0
+	slot8 = slot0
+	slot6 = slot6(slot8)
+	slot7 = _A
+	slot9 = slot0
+	slot10 = "HideEmojiOnTarget"
+	slot11 = slot6
+	slot12 = ""
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	slot7 = true
+
+	return slot7
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-15, warpins: 2 ---
-	slot2 = _M
-	slot2 = slot2._to_88_0
+	--- BLOCK #2 68-115, warpins: 2 ---
 	slot4 = slot0
+	slot2 = slot0.setActive
 
-	return slot2(slot4)
+	slot2(slot4)
+
+	slot2 = _M
+	slot2 = slot2._get_97_2
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	slot5 = slot0
+	slot3 = slot0.getMessageContext
+	slot3 = slot3(slot5)
+	slot4 = slot0.__actorId
+	slot3.sourceActorId = slot4
+	slot6 = slot0
+	slot4 = slot0.sendMessage
+	slot7 = slot2
+	slot8 = "Msg_MakeLove_End"
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot6 = slot0
+	slot4 = slot0.setActive
+
+	slot4(slot6)
+
+	slot4 = _M
+	slot4 = slot4._get_87_0
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = _A
+	slot7 = slot0
+	slot8 = "LerpProperty"
+	slot9 = false
+	slot10 = 1
+	slot11 = slot4
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
+	slot7 = slot0
+	slot5 = slot0.setActive
+
+	slot5(slot7)
+
+	slot5 = _M
+	slot5 = slot5._get_87_0
+	slot7 = slot0
+	slot5 = slot5(slot7)
+	slot6 = _A
+	slot8 = slot0
+	slot9 = "HideEmojiOnTarget"
+	slot10 = slot5
+	slot11 = ""
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = true
+
+	return slot6
 	return
 	--- END OF BLOCK #2 ---
 
@@ -788,163 +737,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_114_0 = slot7
+slot1._to_114_0 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_125_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 124
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "SendMessageToTrigger"
-	slot8 = slot1
-	slot9 = 1018103
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
-
-	slot2 = _M
-	slot2 = slot2._to_127_0
-	slot4 = slot0
-
-	return slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_124_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_128_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 126
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "HideEmojiOnTarget"
-	slot8 = slot1
-	slot9 = ""
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
-
-	slot2 = true
-
-	return slot2
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_126_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-22, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_97_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot4 = slot0
-	slot2 = slot0.getMessageContext
-	slot2 = slot2(slot4)
-	slot3 = slot0.__actorId
-	slot2.sourceActorId = slot3
-	slot5 = slot0
-	slot3 = slot0.sendMessage
-	slot6 = slot1
-	slot7 = "Msg_MakeLove_End"
-	slot8 = slot2
-
-	slot3(slot5, slot6, slot7, slot8)
-
-	slot3 = _M
-	slot3 = slot3._to_129_0
-	slot5 = slot0
-
-	return slot3(slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_127_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_128_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 129
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "LerpProperty"
-	slot8 = false
-	slot9 = 1
-	slot10 = slot1
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
-
-	slot2 = _M
-	slot2 = slot2._to_126_0
-	slot4 = slot0
-
-	return slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_129_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = _C
-	slot3 = 51
-	slot4 = "GetSelfId"
-	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_51_0 = slot7
-
-slot7 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = _C
 	slot3 = 87
@@ -958,9 +753,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_87_0 = slot7
+slot1._get_87_0 = slot5
 
-slot7 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getContextValue
@@ -973,212 +768,172 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_97_2 = slot7
+slot1._get_97_2 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = _C
-	slot3 = 112
-	slot4 = "GetSelfId"
-	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_112_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_130_3
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 118
-	slot5 = "IsGreaterOrEqual"
-	slot6 = slot0
-	slot7 = 12
-	slot8 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_118_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_133_1
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	slot2 = _C
-	slot4 = 119
-	slot5 = "IsControllingPet"
+	slot4 = 130
+	slot5 = "GetDistance"
 	slot6 = slot0
 	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
+	slot8 = 0
+	slot9 = false
+	slot2 = slot2(slot4, slot5, slot6, slot7, slot8, slot9)
+	slot3 = 12
 	--- END OF BLOCK #0 ---
 
-
-
-end
-
-slot2._get_119_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_133_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 120
-	slot5 = "GetControllingPetActorId"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_120_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_131_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 121
-	slot5 = "IsEqual"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = 1018100
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_121_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_118_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
+	if slot2 > slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot2 = false
-
-	return slot2
-
+	--- BLOCK #1 16-17, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 9-14, warpins: 2 ---
-	slot2 = _M
-	slot2 = slot2._get_119_1
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #2 18-18, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 15-16, warpins: 1 ---
-	slot3 = false
-
-	return slot3
-
+	--- BLOCK #3 19-20, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 17-22, warpins: 2 ---
-	slot3 = _M
-	slot3 = slot3._get_121_2
-	slot5 = slot0
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #4 ---
-
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 23-24, warpins: 1 ---
+	--- BLOCK #4 21-22, warpins: 1 ---
 	slot4 = false
 
 	return slot4
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-34, warpins: 2 ---
+	slot4 = _M
+	slot4 = slot4._get_133_1
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = _C
+	slot7 = 119
+	slot8 = "IsControllingPet"
+	slot9 = slot0
+	slot10 = slot4
+	slot5 = slot5(slot7, slot8, slot9, slot10)
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 25-26, warpins: 2 ---
-	slot4 = true
+	--- BLOCK #6 35-36, warpins: 1 ---
+	slot6 = false
 
-	return slot4
+	return slot6
+
 	--- END OF BLOCK #6 ---
 
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 37-57, warpins: 2 ---
+	slot6 = _M
+	slot6 = slot6._get_133_1
+	slot8 = slot0
+	slot6 = slot6(slot8)
+	slot7 = _C
+	slot9 = 120
+	slot10 = "GetControllingPetActorId"
+	slot11 = slot0
+	slot12 = slot6
+	slot7 = slot7(slot9, slot10, slot11, slot12)
+	slot8 = _C
+	slot10 = 131
+	slot11 = "GetPetData"
+	slot12 = slot0
+	slot13 = slot7
+	slot14 = "baseFormPet"
+	slot15 = true
+	slot16 = 0
+	slot8 = slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16)
+	--- END OF BLOCK #7 ---
+
+	if slot8 ~= 1018100 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 58-59, warpins: 1 ---
+	slot9 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 60-60, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 61-62, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 63-64, warpins: 1 ---
+	slot10 = false
+
+	return slot10
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 65-66, warpins: 2 ---
+	slot10 = true
+
+	return slot10
+	--- END OF BLOCK #12 ---
+
 
 
 end
 
-slot2._get_123_3 = slot7
+slot1._get_123_3 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = _C
-	slot3 = 125
-	slot4 = "GetSelfId"
-	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_125_0 = slot7
-
-slot7 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = _C
 	slot3 = 128
@@ -1192,77 +947,15 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_128_0 = slot7
+slot1._get_128_0 = slot5
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_133_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 130
-	slot5 = "GetDistance"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = 0
-	slot9 = false
-
-	return slot2(slot4, slot5, slot6, slot7, slot8, slot9)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_130_3 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_120_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 131
-	slot5 = "GetPetData"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "baseFormPet"
-	slot9 = true
-	slot10 = 0
-
-	return slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_131_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot5 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = _C
 	slot3 = 132
 	slot4 = "GetPerceptibilityTable"
 	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_132_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_132_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1(slot3, slot4, slot5)
 
 	--- END OF BLOCK #0 ---
 
@@ -1273,7 +966,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 8-8, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1281,7 +974,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-15, warpins: 2 ---
+	--- BLOCK #2 9-16, warpins: 2 ---
 	slot2 = next
 	slot4 = slot1
 	slot2 = slot2(slot4)
@@ -1294,7 +987,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
+	--- BLOCK #3 17-18, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot3 < slot8 then
@@ -1304,7 +997,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #4 18-20, warpins: 1 ---
+	--- BLOCK #4 19-21, warpins: 1 ---
 	slot9 = slot7
 	slot3 = slot8
 	slot2 = slot9
@@ -1314,7 +1007,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-22, warpins: 3 ---
+	--- BLOCK #5 22-23, warpins: 3 ---
 	--- END OF BLOCK #5 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -1322,7 +1015,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 23-23, warpins: 1 ---
+	--- BLOCK #6 24-24, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #6 ---
 
@@ -1330,9 +1023,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_133_1 = slot7
+slot1._get_133_1 = slot5
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

@@ -40,7 +40,10 @@ slot11 = {}
 slot10.stack = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = ConditionUtils
+	slot3 = {}
+	slot2.stack = slot3
 	slot2 = ConditionUtils
 	slot2.debugModeSimple = slot0
 	--- END OF BLOCK #0 ---
@@ -52,7 +55,7 @@ slot11 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-12, warpins: 1 ---
+	--- BLOCK #1 8-15, warpins: 1 ---
 	slot2 = CTRGraph
 	slot2 = slot2.Debug
 
@@ -81,7 +84,7 @@ slot11 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 13-16, warpins: 1 ---
+	--- BLOCK #2 16-19, warpins: 1 ---
 	slot2 = CTRGraph
 	slot2 = slot2.Debug
 	slot3 = nil
@@ -92,7 +95,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 17-17, warpins: 2 ---
+	--- BLOCK #3 20-20, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 

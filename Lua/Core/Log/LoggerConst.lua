@@ -3,8 +3,8 @@ slot0 = require
 slot2 = "phonestcore"
 slot0 = slot0(slot2)
 slot1 = {
-	TRACEBACK_PREFIX = " ",
-	ENABLE = true
+	ENABLE = true,
+	TRACEBACK_PREFIX = " "
 }
 slot2 = slot0.SPDLOG_LEVEL_DEBUG
 slot1.DEBUG = slot2

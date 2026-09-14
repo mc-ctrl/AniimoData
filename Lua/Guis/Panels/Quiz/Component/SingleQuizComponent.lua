@@ -434,7 +434,7 @@ end
 slot3.readyStage = slot6
 
 slot6 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-64, warpins: 1 ---
+	--- BLOCK #0 1-66, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.root
 	slot5 = slot3
@@ -462,6 +462,8 @@ slot6 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6, slot7)
 
+	slot3 = false
+	slot0.hasAnswered = slot3
 	slot5 = slot0
 	slot3 = slot0.muteAnswer
 	slot6 = false
@@ -489,7 +491,7 @@ slot6 = function(slot0, slot1, slot2)
 		if slot0 < slot1 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #8
 		end
 
 
@@ -501,14 +503,38 @@ slot6 = function(slot0, slot1, slot2)
 		slot1 = if not slot1 then
 		JUMP TO BLOCK #2
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #2 9-33, warpins: 1 ---
+		--- BLOCK #2 9-15, warpins: 1 ---
 		slot1 = self
 		slot2 = true
 		slot1.answerTimeTriggered = slot2
+		slot1 = self
+		slot1 = slot1.hasAnswered
+
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 16-16, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 17-41, warpins: 2 ---
+		slot1 = self
+		slot2 = true
+		slot1.hasAnswered = slot2
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.muteAnswer
@@ -531,31 +557,31 @@ slot6 = function(slot0, slot1, slot2)
 		slot4 = slot2
 		slot2 = slot2.answerQuiz
 		slot5 = 0
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 		if slot1 == nil then
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #5
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #3 34-35, warpins: 1 ---
+		--- BLOCK #5 42-43, warpins: 1 ---
 		slot6 = false
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #5 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #5
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-		--- BLOCK #4 36-36, warpins: 1 ---
+		--- BLOCK #6 44-44, warpins: 1 ---
 		slot6 = true
 
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #6 ---
 
-		FLOW; TARGET BLOCK #5
+		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #5 37-42, warpins: 2 ---
+		--- BLOCK #7 45-50, warpins: 2 ---
 		slot2(slot4, slot5, slot6)
 
 		slot2 = self
@@ -565,14 +591,14 @@ slot6 = function(slot0, slot1, slot2)
 
 		slot2(slot4, slot5)
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #7 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #6 43-43, warpins: 3 ---
+		--- BLOCK #8 51-51, warpins: 3 ---
 		return
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #8 ---
 
 
 
@@ -892,19 +918,57 @@ slot6 = function(slot0, slot1, slot2)
 		slot7(slot9, slot10, slot11)
 
 		slot7 = function()
-			--- BLOCK #0 1-4, warpins: 1 ---
-			slot0 = self
-			slot0 = slot0.view
+			--- BLOCK #0 1-6, warpins: 1 ---
+			slot0 = IsNil
+			slot2 = self
+			slot2 = slot2.view
+			slot0 = slot0(slot2)
+
 			--- END OF BLOCK #0 ---
 
 			slot0 = if slot0 then
 			JUMP TO BLOCK #1
 			else
-			JUMP TO BLOCK #11
+			JUMP TO BLOCK #2
 			end
 
 
-			--- BLOCK #1 5-33, warpins: 1 ---
+			--- BLOCK #1 7-7, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 8-11, warpins: 2 ---
+			slot0 = self
+			slot0 = slot0.hasAnswered
+
+			--- END OF BLOCK #2 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 12-12, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 13-53, warpins: 2 ---
+			slot0 = self
+			slot1 = true
+			slot0.hasAnswered = slot1
+			slot0 = self
+			slot1 = true
+			slot0.answerTimeTriggered = slot1
 			slot0 = button
 			slot1 = true
 			slot0.isSelected = slot1
@@ -914,6 +978,14 @@ slot6 = function(slot0, slot1, slot2)
 			slot3 = true
 
 			slot0(slot2, slot3)
+
+			slot0 = self
+			slot0 = slot0.view
+			slot0 = slot0.countDownUCountDown
+			slot2 = slot0
+			slot0 = slot0.Stop
+
+			slot0(slot2)
 
 			slot0 = self
 			slot0 = slot0.model
@@ -934,43 +1006,43 @@ slot6 = function(slot0, slot1, slot2)
 			slot1 = slot1.answerQuiz
 			slot4 = index
 			slot4 = slot4 + 1
-			--- END OF BLOCK #1 ---
-
-			if slot0 == nil then
-			JUMP TO BLOCK #2
-			else
-			JUMP TO BLOCK #3
-			end
-
-
-			--- BLOCK #2 34-35, warpins: 1 ---
-			slot5 = false
-			--- END OF BLOCK #2 ---
-
-			UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-			--- BLOCK #3 36-36, warpins: 1 ---
-			slot5 = true
-
-			--- END OF BLOCK #3 ---
-
-			FLOW; TARGET BLOCK #4
-
-
-			--- BLOCK #4 37-39, warpins: 2 ---
-			slot1(slot3, slot4, slot5)
-
 			--- END OF BLOCK #4 ---
 
-			slot0 = if slot0 then
+			if slot0 == nil then
 			JUMP TO BLOCK #5
 			else
 			JUMP TO BLOCK #6
 			end
 
 
-			--- BLOCK #5 40-55, warpins: 1 ---
+			--- BLOCK #5 54-55, warpins: 1 ---
+			slot5 = false
+			--- END OF BLOCK #5 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+			--- BLOCK #6 56-56, warpins: 1 ---
+			slot5 = true
+
+			--- END OF BLOCK #6 ---
+
+			FLOW; TARGET BLOCK #7
+
+
+			--- BLOCK #7 57-59, warpins: 2 ---
+			slot1(slot3, slot4, slot5)
+
+			--- END OF BLOCK #7 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #8
+			else
+			JUMP TO BLOCK #9
+			end
+
+
+			--- BLOCK #8 60-69, warpins: 1 ---
 			slot1 = self
 			slot3 = slot1
 			slot1 = slot1.playOptionDialogue
@@ -980,23 +1052,15 @@ slot6 = function(slot0, slot1, slot2)
 
 			slot1 = self
 			slot1 = slot1.view
-			slot1 = slot1.countDownUCountDown
-			slot3 = slot1
-			slot1 = slot1.Stop
-
-			slot1(slot3)
-
-			slot1 = self
-			slot1 = slot1.view
 			slot1 = slot1.countDownWaitUCountDown
 			slot2 = nil
 			slot1.luaFinished = slot2
-			--- END OF BLOCK #5 ---
+			--- END OF BLOCK #8 ---
 
-			FLOW; TARGET BLOCK #6
+			FLOW; TARGET BLOCK #9
 
 
-			--- BLOCK #6 56-72, warpins: 2 ---
+			--- BLOCK #9 70-86, warpins: 2 ---
 			slot1 = self
 			slot1 = slot1.view
 			slot1 = slot1.root
@@ -1014,16 +1078,16 @@ slot6 = function(slot0, slot1, slot2)
 			slot2 = slot2.options
 			slot2 = #slot2
 			slot1 = slot1[slot2]
-			--- END OF BLOCK #6 ---
+			--- END OF BLOCK #9 ---
 
 			slot1 = if slot1 then
-			JUMP TO BLOCK #7
-			else
 			JUMP TO BLOCK #10
+			else
+			JUMP TO BLOCK #13
 			end
 
 
-			--- BLOCK #7 73-86, warpins: 1 ---
+			--- BLOCK #10 87-100, warpins: 1 ---
 			slot1 = self
 			slot1 = slot1.view
 			slot1 = slot1.sliderUSlider
@@ -1036,44 +1100,44 @@ slot6 = function(slot0, slot1, slot2)
 			slot3 = index
 			slot3 = slot3 + 1
 			slot2 = slot2[slot3]
-			--- END OF BLOCK #7 ---
+			--- END OF BLOCK #10 ---
 
 			slot2 = if not slot2 then
-			JUMP TO BLOCK #8
+			JUMP TO BLOCK #11
 			else
-			JUMP TO BLOCK #9
+			JUMP TO BLOCK #12
 			end
 
 
-			--- BLOCK #8 87-87, warpins: 1 ---
+			--- BLOCK #11 101-101, warpins: 1 ---
 			slot2 = 1
-			--- END OF BLOCK #8 ---
+			--- END OF BLOCK #11 ---
 
-			FLOW; TARGET BLOCK #9
+			FLOW; TARGET BLOCK #12
 
 
-			--- BLOCK #9 88-89, warpins: 2 ---
+			--- BLOCK #12 102-103, warpins: 2 ---
 			slot1.value = slot2
-			--- END OF BLOCK #9 ---
+			--- END OF BLOCK #12 ---
 
-			UNCONDITIONAL JUMP; TARGET BLOCK #11
+			UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-			--- BLOCK #10 90-94, warpins: 1 ---
+			--- BLOCK #13 104-108, warpins: 1 ---
 			slot1 = self
 			slot1 = slot1.view
 			slot1 = slot1.sliderUSlider
 			slot2 = 1
 			slot1.value = slot2
 
-			--- END OF BLOCK #10 ---
+			--- END OF BLOCK #13 ---
 
-			FLOW; TARGET BLOCK #11
+			FLOW; TARGET BLOCK #14
 
 
-			--- BLOCK #11 95-95, warpins: 3 ---
+			--- BLOCK #14 109-109, warpins: 2 ---
 			return
-			--- END OF BLOCK #11 ---
+			--- END OF BLOCK #14 ---
 
 
 

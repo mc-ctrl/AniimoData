@@ -60,15 +60,13 @@ end
 slot12.ctor = slot13
 
 slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-29, warpins: 1 ---
+	--- BLOCK #0 1-27, warpins: 1 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = true
 	slot2.AlwaysLookForward = slot3
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = slot0.ballData
 	slot3 = slot3.animType
 	slot2.ThrowAnimType = slot3
@@ -273,31 +271,11 @@ end
 slot12._clear = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot1 = slot0.player
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = false
 	slot1.AlwaysLookForward = slot2
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-23, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -315,7 +293,7 @@ slot13 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 

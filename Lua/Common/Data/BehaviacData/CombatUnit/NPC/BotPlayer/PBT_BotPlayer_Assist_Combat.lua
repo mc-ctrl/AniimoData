@@ -1,4 +1,4 @@
---- BLOCK #0 1-3243, warpins: 1 ---
+--- BLOCK #0 1-2646, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	agenttype = "BotPlayerAgent",
 	name = "CombatUnit/NPC/BotPlayer/PBT_BotPlayer_Assist_Combat",
-	version = 79
+	agenttype = "BotPlayerAgent",
+	version = 127
 }
 slot4 = {}
 slot3.properties = slot4
@@ -30,74 +30,67 @@ slot5 = {
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tCurrentTactics",
-	value = "0",
-	const = "0",
-	type = "string"
-}
-slot4[3] = slot5
-slot5 = {
 	name = "tSwitchPetId",
 	value = "0",
 	const = 0,
 	type = "int"
 }
-slot4[4] = slot5
+slot4[3] = slot5
 slot5 = {
 	name = "tTargetSkillId",
 	value = "0",
 	const = 0,
 	type = "int"
 }
-slot4[5] = slot5
+slot4[4] = slot5
 slot5 = {
 	name = "tCurrentEp",
 	value = "0",
 	const = 0,
 	type = "float"
 }
-slot4[6] = slot5
+slot4[5] = slot5
 slot5 = {
 	name = "tTeammateId1",
 	value = "0",
 	const = 0,
 	type = "int"
 }
-slot4[7] = slot5
+slot4[6] = slot5
 slot5 = {
 	name = "tTeammateId2",
 	value = "0",
 	const = 0,
 	type = "int"
 }
-slot4[8] = slot5
+slot4[7] = slot5
 slot5 = {
 	name = "tTeammateId3",
 	value = "0",
 	const = 0,
 	type = "int"
 }
-slot4[9] = slot5
+slot4[8] = slot5
 slot5 = {
 	name = "tCurrentBreakPercent",
 	value = "0",
 	const = 0,
 	type = "float"
 }
-slot4[10] = slot5
+slot4[9] = slot5
 slot5 = {
 	name = "tCurrentSp",
 	value = "0",
 	const = 0,
 	type = "float"
 }
-slot4[11] = slot5
+slot4[10] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "2",
-	class = "Sequence"
+	class = "Sequence",
+	id = "2"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -106,8 +99,47 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "1",
-	class = "DecoratorLoop"
+	class = "Assignment",
+	id = "381"
+}
+slot8 = {}
+slot9 = {
+	CastRight = "false"
+}
+slot8[1] = slot9
+slot9 = {}
+slot10 = {
+	field = "tCurrentPet"
+}
+slot9.Opl = slot10
+slot8[2] = slot9
+slot9 = {}
+slot10 = {
+	func = "getBattlePetActorId"
+}
+slot11 = {}
+slot12 = {
+	field = "selfId"
+}
+slot11[1] = slot12
+slot12 = {
+	const = false
+}
+slot11[2] = slot12
+slot10.params = slot11
+slot9.Opr = slot10
+slot8[3] = slot9
+slot7.properties = slot8
+slot8 = {}
+slot7.attachments = slot8
+slot8 = {}
+slot7.children = slot8
+slot6.node = slot7
+slot5[1] = slot6
+slot6 = {}
+slot7 = {
+	class = "DecoratorLoop",
+	id = "1"
 }
 slot8 = {}
 slot9 = {}
@@ -130,8 +162,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "11",
-	class = "Sequence"
+	class = "Sequence",
+	id = "11"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -140,8 +172,8 @@ slot10.attachments = slot11
 slot11 = {}
 slot12 = {}
 slot13 = {
-	id = "5",
-	class = "Sequence"
+	class = "Sequence",
+	id = "5"
 }
 slot14 = {}
 slot13.properties = slot14
@@ -150,43 +182,8 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "124",
-	class = "Assignment"
-}
-slot17 = {}
-slot18 = {
-	CastRight = "false"
-}
-slot17[1] = slot18
-slot18 = {}
-slot19 = {
-	field = "tCurrentPet"
-}
-slot18.Opl = slot19
-slot17[2] = slot18
-slot18 = {}
-slot19 = {
-	func = "getPetActorId"
-}
-slot20 = {}
-slot21 = {
-	const = 0
-}
-slot20[1] = slot21
-slot19.params = slot20
-slot18.Opr = slot19
-slot17[3] = slot18
-slot16.properties = slot17
-slot17 = {}
-slot16.attachments = slot17
-slot17 = {}
-slot16.children = slot17
-slot15.node = slot16
-slot14[1] = slot15
-slot15 = {}
-slot16 = {
-	id = "6",
-	class = "Assignment"
+	class = "Assignment",
+	id = "6"
 }
 slot17 = {}
 slot18 = {
@@ -217,11 +214,11 @@ slot16.attachments = slot17
 slot17 = {}
 slot16.children = slot17
 slot15.node = slot16
-slot14[2] = slot15
+slot14[1] = slot15
 slot15 = {}
 slot16 = {
-	id = "12",
-	class = "Assignment"
+	class = "Assignment",
+	id = "12"
 }
 slot17 = {}
 slot18 = {
@@ -230,13 +227,13 @@ slot18 = {
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	field = "tCurrentTactics"
+	field = "combatTactic"
 }
 slot18.Opl = slot19
 slot17[2] = slot18
 slot18 = {}
 slot19 = {
-	const = "common"
+	const = "Common"
 }
 slot18.Opr = slot19
 slot17[3] = slot18
@@ -246,11 +243,11 @@ slot16.attachments = slot17
 slot17 = {}
 slot16.children = slot17
 slot15.node = slot16
-slot14[3] = slot15
+slot14[2] = slot15
 slot15 = {}
 slot16 = {
-	id = "115",
-	class = "Assignment"
+	class = "Assignment",
+	id = "115"
 }
 slot17 = {}
 slot18 = {
@@ -281,11 +278,11 @@ slot16.attachments = slot17
 slot17 = {}
 slot16.children = slot17
 slot15.node = slot16
-slot14[4] = slot15
+slot14[3] = slot15
 slot15 = {}
 slot16 = {
-	id = "126",
-	class = "Assignment"
+	class = "Assignment",
+	id = "126"
 }
 slot17 = {}
 slot18 = {
@@ -310,11 +307,11 @@ slot16.attachments = slot17
 slot17 = {}
 slot16.children = slot17
 slot15.node = slot16
-slot14[5] = slot15
+slot14[4] = slot15
 slot15 = {}
 slot16 = {
-	id = "127",
-	class = "Sequence"
+	class = "Sequence",
+	id = "127"
 }
 slot17 = {}
 slot16.properties = slot17
@@ -323,8 +320,8 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "128",
-	class = "Assignment"
+	class = "Assignment",
+	id = "128"
 }
 slot20 = {}
 slot21 = {
@@ -358,8 +355,8 @@ slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "129",
-	class = "Assignment"
+	class = "Assignment",
+	id = "129"
 }
 slot20 = {}
 slot21 = {
@@ -393,8 +390,8 @@ slot18.node = slot19
 slot17[2] = slot18
 slot18 = {}
 slot19 = {
-	id = "130",
-	class = "Assignment"
+	class = "Assignment",
+	id = "130"
 }
 slot20 = {}
 slot21 = {
@@ -428,11 +425,11 @@ slot18.node = slot19
 slot17[3] = slot18
 slot16.children = slot17
 slot15.node = slot16
-slot14[6] = slot15
+slot14[5] = slot15
 slot15 = {}
 slot16 = {
-	id = "288",
-	class = "Assignment"
+	class = "Assignment",
+	id = "288"
 }
 slot17 = {}
 slot18 = {
@@ -463,11 +460,11 @@ slot16.attachments = slot17
 slot17 = {}
 slot16.children = slot17
 slot15.node = slot16
-slot14[7] = slot15
+slot14[6] = slot15
 slot15 = {}
 slot16 = {
-	id = "289",
-	class = "Assignment"
+	class = "Assignment",
+	id = "289"
 }
 slot17 = {}
 slot18 = {
@@ -498,24 +495,72 @@ slot16.attachments = slot17
 slot17 = {}
 slot16.children = slot17
 slot15.node = slot16
-slot14[8] = slot15
+slot14[7] = slot15
 slot13.children = slot14
 slot12.node = slot13
 slot11[1] = slot12
 slot12 = {}
 slot13 = {
-	id = "339",
-	class = "Sequence"
+	class = "Selector",
+	id = "4"
 }
 slot14 = {}
 slot13.properties = slot14
 slot14 = {}
+slot15 = {
+	class = "Precondition",
+	transition = false,
+	effector = false,
+	precondition = true,
+	id = "462"
+}
+slot16 = {}
+slot17 = {
+	BinaryOperator = "And"
+}
+slot16[1] = slot17
+slot17 = {
+	Operator = "Equal"
+}
+slot16[2] = slot17
+slot17 = {}
+slot18 = {
+	func = "checkTargetHasBuffById"
+}
+slot19 = {}
+slot20 = {
+	field = "tCurrentPet"
+}
+slot19[1] = slot20
+slot20 = {
+	const = 4003032
+}
+slot19[2] = slot20
+slot20 = {
+	const = 1
+}
+slot19[3] = slot20
+slot18.params = slot19
+slot17.Opl = slot18
+slot16[3] = slot17
+slot17 = {}
+slot18 = {
+	const = false
+}
+slot17.Opr2 = slot18
+slot16[4] = slot17
+slot17 = {
+	Phase = "Both"
+}
+slot16[5] = slot17
+slot15.properties = slot16
+slot14[1] = slot15
 slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "4",
-	class = "Selector"
+	class = "Sequence",
+	id = "75"
 }
 slot17 = {}
 slot16.properties = slot17
@@ -524,776 +569,47 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "75",
-	class = "Sequence"
+	class = "Condition",
+	id = "132"
 }
 slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkTargetIsFunctionId"
+}
+slot23 = {}
+slot24 = {
+	field = "tCurrentPet"
+}
+slot23[1] = slot24
+slot24 = {
+	const = "DPS"
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
 slot19.properties = slot20
 slot20 = {}
 slot19.attachments = slot20
 slot20 = {}
-slot21 = {}
-slot22 = {
-	id = "132",
-	class = "Condition"
-}
-slot23 = {}
-slot24 = {
-	Operator = "Equal"
-}
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	func = "checkTargetIsFunctionId"
-}
-slot26 = {}
-slot27 = {
-	field = "tCurrentPet"
-}
-slot26[1] = slot27
-slot27 = {
-	const = "DPS"
-}
-slot26[2] = slot27
-slot25.params = slot26
-slot24.Opl = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = true
-}
-slot24.Opr = slot25
-slot23[3] = slot24
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot22.children = slot23
-slot21.node = slot22
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	id = "133",
-	class = "Selector"
-}
-slot23 = {}
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "134",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "137",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "139",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "LessEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getHpPercent"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 0.3
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "141",
-	class = "Or"
-}
-slot32 = {}
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot33 = {}
-slot34 = {
-	id = "142",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId1"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	id = "143",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId2"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	id = "144",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId3"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[3] = slot33
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "147",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "146",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 2
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "148",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 3
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	id = "149",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 4
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[3] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "150",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "155",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffTag"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "154",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	id = "156",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "SUP"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 6
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[3] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "157",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "158",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "LessEqual"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "getEp"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = 5
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "160",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "ENERGY"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 5
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
-slot24 = {}
-slot25 = {
-	id = "163",
-	class = "Selector"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "161",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "162",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "GreaterEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getEp"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 60
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "164",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "BREAK"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 0
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "165",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "166",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "GreaterEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getBreakPercent"
-}
-slot35 = {}
-slot36 = {
-	field = "tgt"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 0.25
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "168",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "BREAK"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 0
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[4] = slot24
-slot22.children = slot23
-slot21.node = slot22
-slot20[2] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "169",
-	class = "Sequence"
+	class = "Selector",
+	id = "133"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -1302,36 +618,110 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "170",
-	class = "Condition"
+	class = "ReferencedBehavior",
+	id = "376"
 }
 slot23 = {}
-slot24 = {
-	Operator = "Equal"
-}
-slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	func = "checkTargetIsFunctionId"
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_HEAL"
 }
-slot26 = {}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
 slot27 = {
 	field = "tCurrentPet"
 }
-slot26[1] = slot27
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
 slot27 = {
-	const = "BREAK"
+	field = "tCurrentPetHpPercent"
 }
-slot26[2] = slot27
-slot25.params = slot26
-slot24.Opl = slot25
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
 slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = true
-}
-slot24.Opr = slot25
-slot23[3] = slot24
 slot22.properties = slot23
 slot23 = {}
 slot22.attachments = slot23
@@ -1341,2588 +731,366 @@ slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "171",
-	class = "Selector"
+	class = "ReferencedBehavior",
+	id = "385"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_ENERGY"
+}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tSwitchPetId"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	class = "ReferencedBehavior",
+	id = "386"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_SUP"
+}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tSwitchPetId"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[3] = slot21
+slot21 = {}
+slot22 = {
+	class = "ReferencedBehavior",
+	id = "387"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_BREAK"
+}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tSwitchPetId"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[4] = slot21
+slot21 = {}
+slot22 = {
+	class = "Noop",
+	id = "388"
 }
 slot23 = {}
 slot22.properties = slot23
 slot23 = {}
 slot22.attachments = slot23
 slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "172",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "173",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "174",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "LessEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getHpPercent"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 0.3
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "175",
-	class = "Or"
-}
-slot32 = {}
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot33 = {}
-slot34 = {
-	id = "176",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId1"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	id = "177",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId2"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	id = "178",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId3"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[3] = slot33
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "180",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "179",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 2
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "181",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 3
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	id = "182",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 4
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[3] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "183",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "185",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffTag"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "184",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	id = "186",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "SUP"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 6
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[3] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "187",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "188",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "LessEqual"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "getEp"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = 5
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "189",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "ENERGY"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 5
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
-slot24 = {}
-slot25 = {
-	id = "190",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "197",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffById"
-}
-slot32 = {}
-slot33 = {
-	field = "tgt"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 10003
-}
-slot32[2] = slot33
-slot33 = {
-	const = 1
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = true
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "193",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "DPS"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 0
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[4] = slot24
 slot22.children = slot23
 slot21.node = slot22
-slot20[2] = slot21
+slot20[5] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[2] = slot18
-slot18 = {}
-slot19 = {
-	id = "229",
-	class = "Sequence"
-}
-slot20 = {}
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot21 = {}
-slot22 = {
-	id = "223",
-	class = "And"
-}
-slot23 = {}
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "226",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "GreaterEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tCurrentPet"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "225",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "GreaterEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId1"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "227",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "GreaterEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId2"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
-slot24 = {}
-slot25 = {
-	id = "228",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "GreaterEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId3"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[4] = slot24
-slot22.children = slot23
-slot21.node = slot22
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	id = "211",
-	class = "Sequence"
-}
-slot23 = {}
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "210",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "Equal"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "checkTargetIsFunctionId"
-}
-slot29 = {}
-slot30 = {
-	field = "tCurrentPet"
-}
-slot29[1] = slot30
-slot30 = {
-	const = "HEAL"
-}
-slot29[2] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = true
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "199",
-	class = "Selector"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "212",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "214",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "Equal"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "checkTargetHasBuffTag"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot36 = {
-	const = "Positive"
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = false
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "213",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "Equal"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot36 = {
-	const = "Positive"
-}
-slot35[2] = slot36
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[3] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = false
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	id = "215",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "SUP"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 6
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[3] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "216",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "217",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "LessEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getEp"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 5
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "218",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "ENERGY"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 5
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	id = "219",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "220",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "Equal"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "checkTargetHasBuffById"
-}
-slot35 = {}
-slot36 = {
-	field = "tgt"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 10003
-}
-slot35[2] = slot36
-slot36 = {
-	const = 1
-}
-slot35[3] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = true
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "221",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "DPS"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 0
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[3] = slot27
-slot27 = {}
-slot28 = {
-	id = "230",
-	class = "Sequence"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "231",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "Equal"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getEp"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 0
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "233",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "BREAK"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 0
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[4] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot22.children = slot23
-slot21.node = slot22
-slot20[2] = slot21
-slot19.children = slot20
-slot18.node = slot19
-slot17[3] = slot18
-slot18 = {}
-slot19 = {
-	id = "236",
-	class = "Sequence"
-}
-slot20 = {}
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot21 = {}
-slot22 = {
-	id = "235",
-	class = "Condition"
-}
-slot23 = {}
-slot24 = {
-	Operator = "Equal"
-}
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	func = "checkTargetIsFunctionId"
-}
-slot26 = {}
-slot27 = {
-	field = "tCurrentPet"
-}
-slot26[1] = slot27
-slot27 = {
-	const = "SUP"
-}
-slot26[2] = slot27
-slot25.params = slot26
-slot24.Opl = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = true
-}
-slot24.Opr = slot25
-slot23[3] = slot24
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot22.children = slot23
-slot21.node = slot22
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	id = "234",
-	class = "Selector"
-}
-slot23 = {}
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "251",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "252",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "260",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "LessEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getHpPercent"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 0.3
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "253",
-	class = "Or"
-}
-slot32 = {}
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot33 = {}
-slot34 = {
-	id = "254",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId1"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	id = "255",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId2"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	id = "256",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId3"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[3] = slot33
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "258",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "257",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 2
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "259",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 3
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	id = "250",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 4
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[3] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "241",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "242",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "LessEqual"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "getEp"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = 5
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "243",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "ENERGY"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 5
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "244",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "245",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffById"
-}
-slot32 = {}
-slot33 = {
-	field = "tgt"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 10003
-}
-slot32[2] = slot33
-slot33 = {
-	const = 1
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = true
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "246",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "DPS"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 0
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
-slot24 = {}
-slot25 = {
-	id = "247",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "248",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "getEp"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = 0
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "249",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "BREAK"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 0
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[4] = slot24
-slot22.children = slot23
-slot21.node = slot22
-slot20[2] = slot21
-slot19.children = slot20
-slot18.node = slot19
-slot17[4] = slot18
-slot18 = {}
-slot19 = {
-	id = "263",
-	class = "Sequence"
-}
-slot20 = {}
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot21 = {}
-slot22 = {
-	id = "262",
-	class = "Condition"
-}
-slot23 = {}
-slot24 = {
-	Operator = "Equal"
-}
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	func = "checkTargetIsFunctionId"
-}
-slot26 = {}
-slot27 = {
-	field = "tCurrentPet"
-}
-slot26[1] = slot27
-slot27 = {
-	const = "ENERGY"
-}
-slot26[2] = slot27
-slot25.params = slot26
-slot24.Opl = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = true
-}
-slot24.Opr = slot25
-slot23[3] = slot24
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot22.children = slot23
-slot21.node = slot22
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	id = "261",
-	class = "Selector"
-}
-slot23 = {}
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "273",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "278",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "274",
-	class = "Condition"
-}
-slot32 = {}
-slot33 = {
-	Operator = "LessEqual"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	func = "getHpPercent"
-}
-slot35 = {}
-slot36 = {
-	field = "tCurrentPet"
-}
-slot35[1] = slot36
-slot34.params = slot35
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 0.3
-}
-slot33.Opr = slot34
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "279",
-	class = "Or"
-}
-slot32 = {}
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot33 = {}
-slot34 = {
-	id = "275",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId1"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	id = "280",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId2"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	id = "281",
-	class = "Condition"
-}
-slot35 = {}
-slot36 = {
-	Operator = "LessEqual"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	func = "getHpPercent"
-}
-slot38 = {}
-slot39 = {
-	field = "tTeammateId3"
-}
-slot38[1] = slot39
-slot37.params = slot38
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 0.3
-}
-slot36.Opr = slot37
-slot35[3] = slot36
-slot34.properties = slot35
-slot35 = {}
-slot34.attachments = slot35
-slot35 = {}
-slot34.children = slot35
-slot33.node = slot34
-slot32[3] = slot33
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "276",
-	class = "Selector"
-}
-slot29 = {}
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot30 = {}
-slot31 = {
-	id = "282",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 2
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	id = "283",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 3
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	id = "277",
-	class = "Action"
-}
-slot32 = {}
-slot33 = {}
-slot34 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot35 = {}
-slot36 = {
-	const = "HEAL"
-}
-slot35[1] = slot36
-slot36 = {
-	const = 4
-}
-slot35[2] = slot36
-slot34.params = slot35
-slot33.Method = slot34
-slot32[1] = slot33
-slot33 = {
-	ResultOption = "BT_INVALID"
-}
-slot32[2] = slot33
-slot33 = {
-	ResultResumeOption = "BT_None"
-}
-slot32[3] = slot33
-slot31.properties = slot32
-slot32 = {}
-slot31.attachments = slot32
-slot32 = {}
-slot31.children = slot32
-slot30.node = slot31
-slot29[3] = slot30
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "287",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "285",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffTag"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "284",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	id = "286",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "SUP"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 6
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[3] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "267",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "268",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffById"
-}
-slot32 = {}
-slot33 = {
-	field = "tgt"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 10003
-}
-slot32[2] = slot33
-slot33 = {
-	const = 1
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = true
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "269",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "DPS"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 0
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
-slot24 = {}
-slot25 = {
-	id = "270",
-	class = "Sequence"
-}
-slot26 = {}
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "271",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "getEp"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = 0
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "272",
-	class = "Action"
-}
-slot29 = {}
-slot30 = {}
-slot31 = {
-	func = "tryCommandPetCastSupportSkill"
-}
-slot32 = {}
-slot33 = {
-	const = "BREAK"
-}
-slot32[1] = slot33
-slot33 = {
-	const = 0
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Method = slot31
-slot29[1] = slot30
-slot30 = {
-	ResultOption = "BT_INVALID"
-}
-slot29[2] = slot30
-slot30 = {
-	ResultResumeOption = "BT_None"
-}
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
-slot25.children = slot26
-slot24.node = slot25
-slot23[4] = slot24
-slot22.children = slot23
-slot21.node = slot22
-slot20[2] = slot21
-slot19.children = slot20
-slot18.node = slot19
-slot17[5] = slot18
-slot18 = {}
-slot19 = {
-	id = "125",
-	class = "Noop"
-}
-slot20 = {}
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot19.children = slot20
-slot18.node = slot19
-slot17[6] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[1] = slot15
 slot15 = {}
 slot16 = {
-	id = "340",
-	class = "Selector"
+	class = "Sequence",
+	id = "169"
 }
 slot17 = {}
 slot16.properties = slot17
@@ -3931,8 +1099,47 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "298",
-	class = "Sequence"
+	class = "Condition",
+	id = "170"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkTargetIsFunctionId"
+}
+slot23 = {}
+slot24 = {
+	field = "tCurrentPet"
+}
+slot23[1] = slot24
+slot24 = {
+	const = "BREAK"
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	class = "Selector",
+	id = "171"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -3941,144 +1148,223 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "345",
-	class = "Or"
+	class = "ReferencedBehavior",
+	id = "392"
 }
 slot23 = {}
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_DPS"
+}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tSwitchPetId"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
+slot23[2] = slot24
 slot22.properties = slot23
 slot23 = {}
 slot22.attachments = slot23
 slot23 = {}
-slot24 = {}
-slot25 = {
-	id = "341",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "LessEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId1"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	id = "343",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "LessEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId2"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "342",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "LessEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getHpPercent"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId3"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 0.7
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
 slot22.children = slot23
 slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "295",
-	class = "Assignment"
+	class = "ReferencedBehavior",
+	id = "389"
 }
 slot23 = {}
-slot24 = {
-	CastRight = "false"
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_HEAL"
 }
+slot24.ReferenceBehavior = slot25
 slot23[1] = slot24
 slot24 = {}
-slot25 = {
-	field = "tCurrentTactics"
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
 }
-slot24.Opl = slot25
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
 slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = "Tactics_HEAL"
-}
-slot24.Opr = slot25
-slot23[3] = slot24
 slot22.properties = slot23
 slot23 = {}
 slot22.attachments = slot23
@@ -4086,13 +1372,304 @@ slot23 = {}
 slot22.children = slot23
 slot21.node = slot22
 slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	class = "ReferencedBehavior",
+	id = "390"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_ENERGY"
+}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tSwitchPetId"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[3] = slot21
+slot21 = {}
+slot22 = {
+	class = "ReferencedBehavior",
+	id = "391"
+}
+slot23 = {}
+slot24 = {}
+slot25 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_SUP"
+}
+slot24.ReferenceBehavior = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {}
+slot26 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPet"
+}
+slot26.Value = slot27
+slot25[1] = slot26
+slot26 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentPetHpPercent"
+}
+slot26.Value = slot27
+slot25[2] = slot26
+slot26 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tSwitchPetId"
+}
+slot26.Value = slot27
+slot25[3] = slot26
+slot26 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTargetSkillId"
+}
+slot26.Value = slot27
+slot25[4] = slot26
+slot26 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentEp"
+}
+slot26.Value = slot27
+slot25[5] = slot26
+slot26 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId1"
+}
+slot26.Value = slot27
+slot25[6] = slot26
+slot26 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId2"
+}
+slot26.Value = slot27
+slot25[7] = slot26
+slot26 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot27 = {
+	field = "tTeammateId3"
+}
+slot26.Value = slot27
+slot25[8] = slot26
+slot26 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentBreakPercent"
+}
+slot26.Value = slot27
+slot25[9] = slot26
+slot26 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot27 = {
+	field = "tCurrentSp"
+}
+slot26.Value = slot27
+slot25[10] = slot26
+slot24.subTreeProperties = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[4] = slot21
+slot21 = {}
+slot22 = {
+	class = "Noop",
+	id = "393"
+}
+slot23 = {}
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[5] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[2] = slot15
+slot15 = {}
+slot16 = {
+	class = "Sequence",
+	id = "211"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	class = "Condition",
+	id = "210"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkTargetIsFunctionId"
+}
+slot23 = {}
+slot24 = {
+	field = "tCurrentPet"
+}
+slot23[1] = slot24
+slot24 = {
+	const = "HEAL"
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
 slot19.children = slot20
 slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "309",
-	class = "Sequence"
+	class = "Selector",
+	id = "411"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -4101,8 +1678,8 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "348",
-	class = "Or"
+	class = "Sequence",
+	id = "416"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -4111,64 +1688,404 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "346",
-	class = "Condition"
+	class = "Sequence",
+	id = "445"
 }
 slot26 = {}
-slot27 = {
-	Operator = "LessEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getEp"
-}
-slot29 = {}
-slot30 = {
-	field = "tCurrentPet"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 10
-}
-slot27.Opr = slot28
-slot26[3] = slot27
 slot25.properties = slot26
 slot26 = {}
 slot25.attachments = slot26
 slot26 = {}
+slot27 = {}
+slot28 = {
+	class = "Selector",
+	id = "412"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "409"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getHpPercent"
+}
+slot35 = {}
+slot36 = {
+	field = "tTeammateId1"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0.7
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "413"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getHpPercent"
+}
+slot35 = {}
+slot36 = {
+	field = "tTeammateId2"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0.7
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "414"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getHpPercent"
+}
+slot35 = {}
+slot36 = {
+	field = "tTeammateId3"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0.7
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[3] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "415"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getHpPercent"
+}
+slot35 = {}
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0.7
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[4] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	class = "Selector",
+	id = "448"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	class = "Sequence",
+	id = "465"
+}
+slot32 = {}
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot33 = {}
+slot34 = {
+	class = "Assignment",
+	id = "446"
+}
+slot35 = {}
+slot36 = {
+	CastRight = "false"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "tTargetSkillId"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	func = "getSkillIdByFeature"
+}
+slot38 = {}
+slot39 = {
+	const = 2
+}
+slot38[1] = slot39
+slot39 = {
+	const = true
+}
+slot38[2] = slot39
+slot39 = {
+	const = 0
+}
+slot38[3] = slot39
+slot39 = {
+	const = false
+}
+slot38[4] = slot39
+slot39 = {
+	field = "tCurrentPet"
+}
+slot38[5] = slot39
+slot39 = {
+	const = true
+}
+slot38[6] = slot39
+slot39 = {
+	const = true
+}
+slot38[7] = slot39
+slot37.params = slot38
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	class = "Condition",
+	id = "447"
+}
+slot35 = {}
+slot36 = {
+	Operator = "NotEqual"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "tTargetSkillId"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 0
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	class = "Sequence",
+	id = "467"
+}
+slot32 = {}
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot33 = {}
+slot34 = {
+	class = "Assignment",
+	id = "449"
+}
+slot35 = {}
+slot36 = {
+	CastRight = "false"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "tTargetSkillId"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	func = "getSkillIdByFeature"
+}
+slot38 = {}
+slot39 = {
+	const = 3
+}
+slot38[1] = slot39
+slot39 = {
+	const = true
+}
+slot38[2] = slot39
+slot39 = {
+	const = 0
+}
+slot38[3] = slot39
+slot39 = {
+	const = false
+}
+slot38[4] = slot39
+slot39 = {
+	field = "tCurrentPet"
+}
+slot38[5] = slot39
+slot39 = {
+	const = true
+}
+slot38[6] = slot39
+slot39 = {
+	const = true
+}
+slot38[7] = slot39
+slot37.params = slot38
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	class = "Condition",
+	id = "466"
+}
+slot35 = {}
+slot36 = {
+	Operator = "NotEqual"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "tTargetSkillId"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 0
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
 slot25.children = slot26
 slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "350",
-	class = "Condition"
+	class = "Assignment",
+	id = "418"
 }
 slot26 = {}
 slot27 = {
-	Operator = "LessEqual"
+	CastRight = "false"
 }
 slot26[1] = slot27
 slot27 = {}
 slot28 = {
-	func = "getEp"
+	field = "combatTactic"
 }
-slot29 = {}
-slot30 = {
-	field = "tTeammateId1"
-}
-slot29[1] = slot30
-slot28.params = slot29
 slot27.Opl = slot28
 slot26[2] = slot27
 slot27 = {}
 slot28 = {
-	const = 10
+	const = "Tactics_Heal"
 }
 slot27.Opr = slot28
 slot26[3] = slot27
@@ -4179,115 +2096,581 @@ slot26 = {}
 slot25.children = slot26
 slot24.node = slot25
 slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	id = "351",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "LessEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getEp"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId2"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 10
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[3] = slot24
-slot24 = {}
-slot25 = {
-	id = "352",
-	class = "Condition"
-}
-slot26 = {}
-slot27 = {
-	Operator = "LessEqual"
-}
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	func = "getEp"
-}
-slot29 = {}
-slot30 = {
-	field = "tTeammateId3"
-}
-slot29[1] = slot30
-slot28.params = slot29
-slot27.Opl = slot28
-slot26[2] = slot27
-slot27 = {}
-slot28 = {
-	const = 10
-}
-slot27.Opr = slot28
-slot26[3] = slot27
-slot25.properties = slot26
-slot26 = {}
-slot25.attachments = slot26
-slot26 = {}
-slot25.children = slot26
-slot24.node = slot25
-slot23[4] = slot24
 slot22.children = slot23
 slot21.node = slot22
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "310",
-	class = "Assignment"
+	class = "Selector",
+	id = "199"
 }
 slot23 = {}
-slot24 = {
-	CastRight = "false"
-}
-slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	field = "tCurrentTactics"
-}
-slot24.Opl = slot25
-slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = "Tactics_ENERGY"
-}
-slot24.Opr = slot25
-slot23[3] = slot24
 slot22.properties = slot23
 slot23 = {}
 slot22.attachments = slot23
 slot23 = {}
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "397"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_DPS"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "395"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_ENERGY"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "396"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_SUP"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[3] = slot24
+slot24 = {}
+slot25 = {
+	class = "Sequence",
+	id = "451"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	class = "Condition",
+	id = "450"
+}
+slot29 = {}
+slot30 = {
+	Operator = "GreaterEqual"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	func = "getEp"
+}
+slot32 = {}
+slot33 = {
+	field = "selfId"
+}
+slot32[1] = slot33
+slot31.params = slot32
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = 30
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	class = "ReferencedBehavior",
+	id = "398"
+}
+slot29 = {}
+slot30 = {}
+slot31 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_BREAK"
+}
+slot30.ReferenceBehavior = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {}
+slot32 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentPet"
+}
+slot32.Value = slot33
+slot31[1] = slot32
+slot32 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentPetHpPercent"
+}
+slot32.Value = slot33
+slot31[2] = slot32
+slot32 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot33 = {
+	field = "tSwitchPetId"
+}
+slot32.Value = slot33
+slot31[3] = slot32
+slot32 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTargetSkillId"
+}
+slot32.Value = slot33
+slot31[4] = slot32
+slot32 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentEp"
+}
+slot32.Value = slot33
+slot31[5] = slot32
+slot32 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId1"
+}
+slot32.Value = slot33
+slot31[6] = slot32
+slot32 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId2"
+}
+slot32.Value = slot33
+slot31[7] = slot32
+slot32 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId3"
+}
+slot32.Value = slot33
+slot31[8] = slot32
+slot32 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentBreakPercent"
+}
+slot32.Value = slot33
+slot31[9] = slot32
+slot32 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentSp"
+}
+slot32.Value = slot33
+slot31[10] = slot32
+slot30.subTreeProperties = slot31
+slot29[2] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[4] = slot24
 slot22.children = slot23
 slot21.node = slot22
 slot20[2] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[2] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[3] = slot15
+slot15 = {}
+slot16 = {
+	class = "Sequence",
+	id = "236"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "325",
-	class = "Sequence"
+	class = "Condition",
+	id = "235"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkTargetIsFunctionId"
+}
+slot23 = {}
+slot24 = {
+	field = "tCurrentPet"
+}
+slot23[1] = slot24
+slot24 = {
+	const = "SUP"
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	class = "Selector",
+	id = "429"
 }
 slot20 = {}
 slot19.properties = slot20
@@ -4296,8 +2679,8 @@ slot19.attachments = slot20
 slot20 = {}
 slot21 = {}
 slot22 = {
-	id = "353",
-	class = "Or"
+	class = "Sequence",
+	id = "430"
 }
 slot23 = {}
 slot22.properties = slot23
@@ -4306,8 +2689,8 @@ slot22.attachments = slot23
 slot23 = {}
 slot24 = {}
 slot25 = {
-	id = "330",
-	class = "And"
+	class = "Selector",
+	id = "433"
 }
 slot26 = {}
 slot25.properties = slot26
@@ -4316,83 +2699,289 @@ slot25.attachments = slot26
 slot26 = {}
 slot27 = {}
 slot28 = {
-	id = "320",
-	class = "Condition"
+	class = "Sequence",
+	id = "434"
 }
 slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffTag"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = true
-}
-slot30.Opr = slot31
-slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot28.attachments = slot29
 slot29 = {}
+slot30 = {}
+slot31 = {
+	class = "Assignment",
+	id = "435"
+}
+slot32 = {}
+slot33 = {
+	CastRight = "false"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "tTargetSkillId"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	func = "getSkillIdByFeature"
+}
+slot35 = {}
+slot36 = {
+	const = 6
+}
+slot35[1] = slot36
+slot36 = {
+	const = true
+}
+slot35[2] = slot36
+slot36 = {
+	const = 0
+}
+slot35[3] = slot36
+slot36 = {
+	const = false
+}
+slot35[4] = slot36
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[5] = slot36
+slot36 = {
+	const = true
+}
+slot35[6] = slot36
+slot36 = {
+	const = true
+}
+slot35[7] = slot36
+slot34.params = slot35
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "436"
+}
+slot32 = {}
+slot33 = {
+	Operator = "NotEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "tTargetSkillId"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "464"
+}
+slot32 = {}
+slot33 = {
+	Operator = "Equal"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "checkTargetHasBuffFromSource"
+}
+slot35 = {}
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[1] = slot36
+slot36 = {
+	const = "Positive"
+}
+slot35[2] = slot36
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[3] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = false
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[3] = slot30
 slot28.children = slot29
 slot27.node = slot28
 slot26[1] = slot27
 slot27 = {}
 slot28 = {
-	id = "328",
-	class = "Condition"
+	class = "Sequence",
+	id = "440"
 }
 slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot32 = {}
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot28.attachments = slot29
 slot29 = {}
+slot30 = {}
+slot31 = {
+	class = "Assignment",
+	id = "437"
+}
+slot32 = {}
+slot33 = {
+	CastRight = "false"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "tTargetSkillId"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	func = "getSkillIdByFeature"
+}
+slot35 = {}
+slot36 = {
+	const = 7
+}
+slot35[1] = slot36
+slot36 = {
+	const = true
+}
+slot35[2] = slot36
+slot36 = {
+	const = 0
+}
+slot35[3] = slot36
+slot36 = {
+	const = false
+}
+slot35[4] = slot36
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[5] = slot36
+slot36 = {
+	const = true
+}
+slot35[6] = slot36
+slot36 = {
+	const = true
+}
+slot35[7] = slot36
+slot34.params = slot35
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "438"
+}
+slot32 = {}
+slot33 = {
+	Operator = "NotEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	field = "tTargetSkillId"
+}
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 0
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "463"
+}
+slot32 = {}
+slot33 = {
+	Operator = "Equal"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "checkTargetHasBuffFromSource"
+}
+slot35 = {}
+slot36 = {
+	field = "tgt"
+}
+slot35[1] = slot36
+slot36 = {
+	const = "Negative"
+}
+slot35[2] = slot36
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[3] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = false
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[3] = slot30
 slot28.children = slot29
 slot27.node = slot28
 slot26[2] = slot27
@@ -4401,198 +2990,389 @@ slot24.node = slot25
 slot23[1] = slot24
 slot24 = {}
 slot25 = {
-	id = "354",
-	class = "And"
+	class = "Assignment",
+	id = "431"
 }
 slot26 = {}
+slot27 = {
+	CastRight = "false"
+}
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	field = "combatTactic"
+}
+slot27.Opl = slot28
+slot26[2] = slot27
+slot27 = {}
+slot28 = {
+	const = "Tactics_Sup"
+}
+slot27.Opr = slot28
+slot26[3] = slot27
 slot25.properties = slot26
 slot26 = {}
 slot25.attachments = slot26
 slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[2] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	class = "Selector",
+	id = "234"
+}
+slot23 = {}
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "401"
+}
+slot26 = {}
 slot27 = {}
 slot28 = {
-	id = "355",
-	class = "Condition"
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_DPS"
 }
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffTag"
-}
-slot32 = {}
-slot33 = {
-	field = "tTeammateId1"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = true
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
+slot27.ReferenceBehavior = slot28
 slot26[1] = slot27
 slot27 = {}
-slot28 = {
-	id = "356",
-	class = "Condition"
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
 }
-slot29 = {}
 slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot32 = {}
-slot33 = {
-	field = "tTeammateId1"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot33 = {
 	field = "tCurrentPet"
 }
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
 }
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
 slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "403"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_HEAL"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
 slot25.children = slot26
 slot24.node = slot25
 slot23[2] = slot24
 slot24 = {}
 slot25 = {
-	id = "357",
-	class = "And"
+	class = "ReferencedBehavior",
+	id = "399"
 }
 slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_ENERGY"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
 slot25.properties = slot26
 slot26 = {}
 slot25.attachments = slot26
 slot26 = {}
-slot27 = {}
-slot28 = {
-	id = "359",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffTag"
-}
-slot32 = {}
-slot33 = {
-	field = "tTeammateId2"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = true
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[1] = slot27
-slot27 = {}
-slot28 = {
-	id = "358",
-	class = "Condition"
-}
-slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
-slot30 = {}
-slot31 = {
-	func = "checkTargetHasBuffFromSource"
-}
-slot32 = {}
-slot33 = {
-	field = "tTeammateId2"
-}
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
-slot33 = {
-	field = "tCurrentPet"
-}
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
-}
-slot30.Opr = slot31
-slot29[3] = slot30
-slot28.properties = slot29
-slot29 = {}
-slot28.attachments = slot29
-slot29 = {}
-slot28.children = slot29
-slot27.node = slot28
-slot26[2] = slot27
 slot25.children = slot26
 slot24.node = slot25
 slot23[3] = slot24
 slot24 = {}
 slot25 = {
-	id = "360",
-	class = "And"
+	class = "Sequence",
+	id = "453"
 }
 slot26 = {}
 slot25.properties = slot26
@@ -4601,33 +3381,29 @@ slot25.attachments = slot26
 slot26 = {}
 slot27 = {}
 slot28 = {
-	id = "361",
-	class = "Condition"
+	class = "Condition",
+	id = "452"
 }
 slot29 = {}
 slot30 = {
-	Operator = "Equal"
+	Operator = "GreaterEqual"
 }
 slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	func = "checkTargetHasBuffTag"
+	func = "getEp"
 }
 slot32 = {}
 slot33 = {
-	field = "tTeammateId3"
+	field = "selfId"
 }
 slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
 slot31.params = slot32
 slot30.Opl = slot31
 slot29[2] = slot30
 slot30 = {}
 slot31 = {
-	const = true
+	const = 30
 }
 slot30.Opr = slot31
 slot29[3] = slot30
@@ -4640,40 +3416,110 @@ slot27.node = slot28
 slot26[1] = slot27
 slot27 = {}
 slot28 = {
-	id = "362",
-	class = "Condition"
+	class = "ReferencedBehavior",
+	id = "400"
 }
 slot29 = {}
-slot30 = {
-	Operator = "Equal"
-}
-slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	func = "checkTargetHasBuffFromSource"
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_BREAK"
 }
-slot32 = {}
-slot33 = {
-	field = "tTeammateId3"
+slot30.ReferenceBehavior = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {}
+slot32 = {
+	Name = "tCurrentPet",
+	Type = "Self"
 }
-slot32[1] = slot33
-slot33 = {
-	const = "Positive"
-}
-slot32[2] = slot33
 slot33 = {
 	field = "tCurrentPet"
 }
-slot32[3] = slot33
-slot31.params = slot32
-slot30.Opl = slot31
-slot29[2] = slot30
-slot30 = {}
-slot31 = {
-	const = false
+slot32.Value = slot33
+slot31[1] = slot32
+slot32 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
 }
-slot30.Opr = slot31
-slot29[3] = slot30
+slot33 = {
+	field = "tCurrentPetHpPercent"
+}
+slot32.Value = slot33
+slot31[2] = slot32
+slot32 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot33 = {
+	field = "tSwitchPetId"
+}
+slot32.Value = slot33
+slot31[3] = slot32
+slot32 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTargetSkillId"
+}
+slot32.Value = slot33
+slot31[4] = slot32
+slot32 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentEp"
+}
+slot32.Value = slot33
+slot31[5] = slot32
+slot32 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId1"
+}
+slot32.Value = slot33
+slot31[6] = slot32
+slot32 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId2"
+}
+slot32.Value = slot33
+slot31[7] = slot32
+slot32 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId3"
+}
+slot32.Value = slot33
+slot31[8] = slot32
+slot32 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentBreakPercent"
+}
+slot32.Value = slot33
+slot31[9] = slot32
+slot32 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentSp"
+}
+slot32.Value = slot33
+slot31[10] = slot32
+slot30.subTreeProperties = slot31
+slot29[2] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot28.attachments = slot29
@@ -4686,49 +3532,894 @@ slot24.node = slot25
 slot23[4] = slot24
 slot22.children = slot23
 slot21.node = slot22
+slot20[2] = slot21
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot16.children = slot17
+slot15.node = slot16
+slot14[4] = slot15
+slot15 = {}
+slot16 = {
+	class = "Sequence",
+	id = "263"
+}
+slot17 = {}
+slot16.properties = slot17
+slot17 = {}
+slot16.attachments = slot17
+slot17 = {}
+slot18 = {}
+slot19 = {
+	class = "Condition",
+	id = "262"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
 slot20[1] = slot21
 slot21 = {}
 slot22 = {
-	id = "326",
-	class = "Assignment"
+	func = "checkTargetIsFunctionId"
 }
 slot23 = {}
 slot24 = {
-	CastRight = "false"
+	field = "tCurrentPet"
 }
 slot23[1] = slot24
-slot24 = {}
-slot25 = {
-	field = "tCurrentTactics"
+slot24 = {
+	const = "ENERGY"
 }
-slot24.Opl = slot25
 slot23[2] = slot24
-slot24 = {}
-slot25 = {
-	const = "Tactics_SUP"
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
 }
-slot24.Opr = slot25
-slot23[3] = slot24
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	class = "Selector",
+	id = "426"
+}
+slot20 = {}
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot21 = {}
+slot22 = {
+	class = "Sequence",
+	id = "424"
+}
+slot23 = {}
 slot22.properties = slot23
 slot23 = {}
 slot22.attachments = slot23
 slot23 = {}
+slot24 = {}
+slot25 = {
+	class = "Sequence",
+	id = "442"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	class = "Assignment",
+	id = "443"
+}
+slot29 = {}
+slot30 = {
+	CastRight = "false"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	field = "tTargetSkillId"
+}
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	func = "getSkillIdByFeature"
+}
+slot32 = {}
+slot33 = {
+	const = 5
+}
+slot32[1] = slot33
+slot33 = {
+	const = true
+}
+slot32[2] = slot33
+slot33 = {
+	const = 0
+}
+slot32[3] = slot33
+slot33 = {
+	const = false
+}
+slot32[4] = slot33
+slot33 = {
+	field = "tCurrentPet"
+}
+slot32[5] = slot33
+slot33 = {
+	const = true
+}
+slot32[6] = slot33
+slot33 = {
+	const = true
+}
+slot32[7] = slot33
+slot31.params = slot32
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	class = "Condition",
+	id = "444"
+}
+slot29 = {}
+slot30 = {
+	Operator = "NotEqual"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	field = "tTargetSkillId"
+}
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = 0
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot27 = {}
+slot28 = {
+	class = "Selector",
+	id = "420"
+}
+slot29 = {}
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "419"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getEp"
+}
+slot35 = {}
+slot36 = {
+	field = "tCurrentPet"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 20
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "421"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getEp"
+}
+slot35 = {}
+slot36 = {
+	field = "tTeammateId1"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 20
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "427"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getEp"
+}
+slot35 = {}
+slot36 = {
+	field = "tTeammateId2"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 20
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[3] = slot30
+slot30 = {}
+slot31 = {
+	class = "Condition",
+	id = "428"
+}
+slot32 = {}
+slot33 = {
+	Operator = "LessEqual"
+}
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	func = "getEp"
+}
+slot35 = {}
+slot36 = {
+	field = "tTeammateId3"
+}
+slot35[1] = slot36
+slot34.params = slot35
+slot33.Opl = slot34
+slot32[2] = slot33
+slot33 = {}
+slot34 = {
+	const = 20
+}
+slot33.Opr = slot34
+slot32[3] = slot33
+slot31.properties = slot32
+slot32 = {}
+slot31.attachments = slot32
+slot32 = {}
+slot31.children = slot32
+slot30.node = slot31
+slot29[4] = slot30
+slot28.children = slot29
+slot27.node = slot28
+slot26[3] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	class = "Assignment",
+	id = "425"
+}
+slot26 = {}
+slot27 = {
+	CastRight = "false"
+}
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	field = "combatTactic"
+}
+slot27.Opl = slot28
+slot26[2] = slot27
+slot27 = {}
+slot28 = {
+	const = "Tactics_Energy"
+}
+slot27.Opr = slot28
+slot26[3] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[2] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	class = "Selector",
+	id = "261"
+}
+slot23 = {}
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "405"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_DPS"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "406"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_HEAL"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	class = "ReferencedBehavior",
+	id = "408"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_SUP"
+}
+slot27.ReferenceBehavior = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {}
+slot29 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPet"
+}
+slot29.Value = slot30
+slot28[1] = slot29
+slot29 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentPetHpPercent"
+}
+slot29.Value = slot30
+slot28[2] = slot29
+slot29 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tSwitchPetId"
+}
+slot29.Value = slot30
+slot28[3] = slot29
+slot29 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTargetSkillId"
+}
+slot29.Value = slot30
+slot28[4] = slot29
+slot29 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentEp"
+}
+slot29.Value = slot30
+slot28[5] = slot29
+slot29 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId1"
+}
+slot29.Value = slot30
+slot28[6] = slot29
+slot29 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId2"
+}
+slot29.Value = slot30
+slot28[7] = slot29
+slot29 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot30 = {
+	field = "tTeammateId3"
+}
+slot29.Value = slot30
+slot28[8] = slot29
+slot29 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentBreakPercent"
+}
+slot29.Value = slot30
+slot28[9] = slot29
+slot29 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot30 = {
+	field = "tCurrentSp"
+}
+slot29.Value = slot30
+slot28[10] = slot29
+slot27.subTreeProperties = slot28
+slot26[2] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[3] = slot24
+slot24 = {}
+slot25 = {
+	class = "Sequence",
+	id = "455"
+}
+slot26 = {}
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot27 = {}
+slot28 = {
+	class = "Condition",
+	id = "456"
+}
+slot29 = {}
+slot30 = {
+	Operator = "GreaterEqual"
+}
+slot29[1] = slot30
+slot30 = {}
+slot31 = {
+	func = "getEp"
+}
+slot32 = {}
+slot33 = {
+	field = "selfId"
+}
+slot32[1] = slot33
+slot31.params = slot32
+slot30.Opl = slot31
+slot29[2] = slot30
+slot30 = {}
+slot31 = {
+	const = 30
+}
+slot30.Opr = slot31
+slot29[3] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[1] = slot27
+slot27 = {}
+slot28 = {
+	class = "ReferencedBehavior",
+	id = "454"
+}
+slot29 = {}
+slot30 = {}
+slot31 = {
+	const = "PBT_BotPlayer_Assist_Combat_BACKSTAGE_BREAK"
+}
+slot30.ReferenceBehavior = slot31
+slot29[1] = slot30
+slot30 = {}
+slot31 = {}
+slot32 = {
+	Name = "tCurrentPet",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentPet"
+}
+slot32.Value = slot33
+slot31[1] = slot32
+slot32 = {
+	Name = "tCurrentPetHpPercent",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentPetHpPercent"
+}
+slot32.Value = slot33
+slot31[2] = slot32
+slot32 = {
+	Name = "tSwitchPetId",
+	Type = "Self"
+}
+slot33 = {
+	field = "tSwitchPetId"
+}
+slot32.Value = slot33
+slot31[3] = slot32
+slot32 = {
+	Name = "tTargetSkillId",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTargetSkillId"
+}
+slot32.Value = slot33
+slot31[4] = slot32
+slot32 = {
+	Name = "tCurrentEp",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentEp"
+}
+slot32.Value = slot33
+slot31[5] = slot32
+slot32 = {
+	Name = "tTeammateId1",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId1"
+}
+slot32.Value = slot33
+slot31[6] = slot32
+slot32 = {
+	Name = "tTeammateId2",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId2"
+}
+slot32.Value = slot33
+slot31[7] = slot32
+slot32 = {
+	Name = "tTeammateId3",
+	Type = "Self"
+}
+slot33 = {
+	field = "tTeammateId3"
+}
+slot32.Value = slot33
+slot31[8] = slot32
+slot32 = {
+	Name = "tCurrentBreakPercent",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentBreakPercent"
+}
+slot32.Value = slot33
+slot31[9] = slot32
+slot32 = {
+	Name = "tCurrentSp",
+	Type = "Self"
+}
+slot33 = {
+	field = "tCurrentSp"
+}
+slot32.Value = slot33
+slot31[10] = slot32
+slot30.subTreeProperties = slot31
+slot29[2] = slot30
+slot28.properties = slot29
+slot29 = {}
+slot28.attachments = slot29
+slot29 = {}
+slot28.children = slot29
+slot27.node = slot28
+slot26[2] = slot27
+slot25.children = slot26
+slot24.node = slot25
+slot23[4] = slot24
 slot22.children = slot23
 slot21.node = slot22
 slot20[2] = slot21
 slot19.children = slot20
 slot18.node = slot19
-slot17[3] = slot18
+slot17[2] = slot18
 slot16.children = slot17
 slot15.node = slot16
-slot14[2] = slot15
+slot14[5] = slot15
 slot13.children = slot14
 slot12.node = slot13
 slot11[2] = slot12
 slot12 = {}
 slot13 = {
-	id = "80",
-	class = "Action"
+	class = "Action",
+	id = "80"
 }
 slot14 = {}
 slot15 = {}
@@ -4741,7 +4432,8 @@ slot18 = {
 }
 slot17[1] = slot18
 slot16.params = slot17
-slot15.Method = slot16
+slot17 = "Method"
+slot15[slot17] = slot16
 slot14[1] = slot15
 slot15 = {
 	ResultOption = "BT_INVALID"
@@ -4763,7 +4455,7 @@ slot9.node = slot10
 slot8[1] = slot9
 slot7.children = slot8
 slot6.node = slot7
-slot5[1] = slot6
+slot5[2] = slot6
 slot4.children = slot5
 slot3.node = slot4
 slot4 = "behavior"

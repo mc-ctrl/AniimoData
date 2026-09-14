@@ -7,40 +7,40 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "BotPlayerAgent",
-	name = "RootTree/SM_BotPlayer_Root",
 	version = 15,
-	useForRoute = false
+	useForRoute = false,
+	name = "RootTree/SM_BotPlayer_Root",
+	agenttype = "BotPlayerAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	type = "string",
+	const = "",
 	name = "tCurrentPlan",
-	value = "",
-	const = ""
+	value = ""
 }
 slot4[1] = slot5
 slot5 = {
 	type = "string",
+	const = "",
 	name = "tSubTreePath",
-	value = "",
-	const = ""
+	value = ""
 }
 slot4[2] = slot5
 slot5 = {
 	type = "bool",
+	const = false,
 	name = "tRunPlan",
-	value = "false",
-	const = false
+	value = "false"
 }
 slot4[3] = slot5
 slot5 = {
 	type = "string",
+	const = "",
 	name = "tCurrentPlanId",
-	value = "",
-	const = ""
+	value = ""
 }
 slot4[4] = slot5
 slot3.pars = slot4

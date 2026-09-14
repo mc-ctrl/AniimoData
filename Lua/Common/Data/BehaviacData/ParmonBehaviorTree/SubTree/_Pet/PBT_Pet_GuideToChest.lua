@@ -7,46 +7,46 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_GuideToChest",
+	version = 15,
 	agenttype = "PetAgent",
-	version = 15
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	const = 0,
 	name = "tTargetActorId",
 	type = "int",
-	const = 0,
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	const = 0,
 	name = "tStopDist",
 	type = "float",
-	const = 0,
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	const = 0,
 	name = "tMaxTimeout",
 	type = "float",
-	const = 0,
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
+	const = false,
 	name = "tFaceTarget",
 	type = "bool",
-	const = false,
 	value = "false"
 }
 slot4[4] = slot5
 slot5 = {
+	const = 0,
 	name = "tSpeed",
 	type = "float",
-	const = 0,
 	value = "0"
 }
 slot4[5] = slot5

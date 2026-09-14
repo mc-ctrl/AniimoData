@@ -7,34 +7,34 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = true,
 	agenttype = "CombatAgent",
-	version = 5,
-	name = "PatrolTree/PatrolSubTree/ST_SwitchToState"
+	name = "PatrolTree/PatrolSubTree/ST_SwitchToState",
+	useForRoute = true,
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "",
-	type = "string",
+	name = "tStateName",
 	const = "",
-	name = "tStateName"
+	type = "string",
+	value = ""
 }
 slot4[1] = slot5
 slot5 = {
-	value = "",
-	type = "string",
+	name = "tAnimationKey",
 	const = "",
-	name = "tAnimationKey"
+	type = "string",
+	value = ""
 }
 slot4[2] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Action",
-	id = "1"
+	id = "1",
+	class = "Action"
 }
 slot5 = {}
 slot6 = {}

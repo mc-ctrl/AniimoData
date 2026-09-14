@@ -7,52 +7,52 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
-	version = 7,
 	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_GuideToChestNoHappy"
+	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_GuideToChestNoHappy",
+	version = 7,
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tTargetActorId",
-	const = 0,
 	type = "int",
-	value = "0"
+	name = "tTargetActorId",
+	value = "0",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tStopDist",
-	const = 0.2,
 	type = "float",
-	value = "0.2"
+	name = "tStopDist",
+	value = "0.2",
+	const = 0.2
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tMaxTimeout",
-	const = 5,
 	type = "float",
-	value = "5"
+	name = "tMaxTimeout",
+	value = "5",
+	const = 5
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tFaceTarget",
-	const = false,
 	type = "bool",
-	value = "false"
+	name = "tFaceTarget",
+	value = "false",
+	const = false
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tSpeed",
-	const = 0,
 	type = "float",
-	value = "0"
+	name = "tSpeed",
+	value = "0",
+	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tMoveUpdateLevel",
 	type = "MoveUpdateLevel",
+	name = "tMoveUpdateLevel",
 	value = "Once"
 }
 slot6 = slot0.MoveUpdateLevel
@@ -60,8 +60,8 @@ slot6 = slot6.Once
 slot5.const = slot6
 slot4[6] = slot5
 slot5 = {
-	name = "tPathFindType",
 	type = "PathFindType",
+	name = "tPathFindType",
 	value = "Auto"
 }
 slot6 = slot0.PathFindType
@@ -72,8 +72,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Action",
-	id = "1"
+	id = "1",
+	class = "Action"
 }
 slot5 = {}
 slot6 = {}

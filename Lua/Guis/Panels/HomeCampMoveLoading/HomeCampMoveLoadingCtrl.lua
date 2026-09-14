@@ -1,4 +1,4 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -190,7 +190,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #2 10-21, warpins: 2 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.startTime = slot1
 	slot3 = slot0
 	slot1 = slot0.startTimer
@@ -238,7 +238,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #1 4-10, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.startTime
 	slot1 = slot1 - slot2
 	slot2 = 6
@@ -266,7 +266,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #3 16-22, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.startTime
 	slot1 = slot1 - slot2
 	slot2 = 10
@@ -296,7 +296,7 @@ slot11 = function(slot0)
 	slot3 = slot0
 	slot1 = slot0.setProgress
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot5 = slot0.startTime
 	slot4 = slot4 - slot5
 	slot4 = slot4 / 5.5
@@ -413,6 +413,19 @@ slot11 = function(slot0, slot1)
 end
 
 slot10.setProgress = slot11
+
+slot11 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot10.checkUIShowVirtualMouseCursor = slot11
 
 return slot10
 --- END OF BLOCK #0 ---

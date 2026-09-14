@@ -486,7 +486,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #11 39-74, warpins: 1 ---
@@ -638,7 +638,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 130-140, warpins: 2 ---
+	--- BLOCK #16 130-180, warpins: 2 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.setRenderNewPetSkillAttrsList
 	slot6 = slot0.listAttributeUList
@@ -648,224 +648,102 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 	slot4(slot6, slot7, slot8)
 
-	slot4 = slot0.skillInfoData
-	slot4 = slot4.attackType
+	slot4 = slot0.uComponent
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "Details"
+	slot8 = 1
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.longDescScrollRectUScrollRect
+	slot4 = slot4.content
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UBaseText"
+	slot4 = slot4(slot6, slot7)
+	slot5 = LuaUIUtils
+	slot5 = slot5.getSkillDesc
+	slot7 = slot0.skillInfoData
+	slot8 = slot0.petInfo
+	slot5 = slot5(slot7, slot8)
+	slot6 = LuaUIUtils
+	slot6 = slot6.customRichTextData
+	slot7 = slot0.petInfo
+	slot6.petInfo = slot7
+	slot6 = LuaUIUtils
+	slot6 = slot6.customSetText
+	slot8 = slot4
+	slot9 = slot5
+	slot10 = true
+	slot11 = nil
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = LuaUIUtils
+	slot6 = slot6.customRichTextData
+	slot7 = nil
+	slot6.petInfo = slot7
+	slot6 = LuaUIUtils
+	slot6 = slot6.generalRefreshSkillTags
+	slot8 = slot0.tagTypeUWidget
+	slot9 = slot0.listTagUList
+	slot10 = slot0.skillInfoData
+	slot11 = slot0.skillInfoData
+	slot11 = slot11.tagList
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	slot6 = slot0.customData
+	slot6 = slot6.showRealGlazeType
 	--- END OF BLOCK #16 ---
 
-	slot4 = if slot4 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #17 141-154, warpins: 1 ---
-	slot5 = slot0.tagTypeUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = true
-
-	slot5(slot7, slot8)
-
-	slot5 = slot0.tagTypeUWidget
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "TagType"
-	slot9 = UIConst
-	slot9 = slot9.SkillAtkType2UITag
-	slot9 = slot9[slot4]
+	--- BLOCK #17 181-190, warpins: 1 ---
+	slot6 = slot0.uComponent
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Type"
+	slot10 = slot0.pos
+	slot11 = UIConst
+	slot11 = slot11.GlazeSkillPos
+	slot11 = slot11.After
 	--- END OF BLOCK #17 ---
 
-	slot9 = if not slot9 then
+	if slot10 == slot11 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 155-155, warpins: 1 ---
-	slot9 = 0
-
+	--- BLOCK #18 191-192, warpins: 1 ---
+	slot10 = 2
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 156-166, warpins: 2 ---
-	slot5(slot7, slot8, slot9)
+	--- BLOCK #19 193-193, warpins: 1 ---
+	slot10 = 1
 
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.txtTypeUSDFText
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = UIConst
-	slot10 = slot10.SkillAtkTypeTagStrKey
-	slot10 = slot10[slot4]
 	--- END OF BLOCK #19 ---
 
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 167-167, warpins: 1 ---
-	slot10 = ""
-	--- END OF BLOCK #20 ---
+	--- BLOCK #20 194-198, warpins: 2 ---
+	slot6(slot8, slot9, slot10)
 
-	FLOW; TARGET BLOCK #21
+	slot6 = slot0.btnStrengthenUButton
 
-
-	--- BLOCK #21 168-170, warpins: 2 ---
-	MULTRES = slot8(slot10)
-
-	slot5(slot7, MULTRES)
-
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
-
-
-	--- BLOCK #22 171-175, warpins: 1 ---
-	slot5 = slot0.tagTypeUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = false
-
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 176-220, warpins: 2 ---
-	slot5 = slot0.uComponent
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "Details"
-	slot9 = 1
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.longDescScrollRectUScrollRect
-	slot5 = slot5.content
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UBaseText"
-	slot5 = slot5(slot7, slot8)
-	slot6 = LuaUIUtils
-	slot6 = slot6.getSkillDesc
-	slot8 = slot0.skillInfoData
-	slot9 = slot0.petInfo
-	slot6 = slot6(slot8, slot9)
-	slot7 = LuaUIUtils
-	slot7 = slot7.customRichTextData
-	slot8 = slot0.petInfo
-	slot7.petInfo = slot8
-	slot7 = LuaUIUtils
-	slot7 = slot7.customSetText
-	slot9 = slot5
-	slot10 = slot6
-	slot11 = true
-	slot12 = nil
-
-	slot7(slot9, slot10, slot11, slot12)
-
-	slot7 = LuaUIUtils
-	slot7 = slot7.customRichTextData
-	slot8 = nil
-	slot7.petInfo = slot8
-	slot7 = slot0.listTagUList
-
-	slot8 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-17, warpins: 1 ---
-		slot5 = slot0
-		slot3 = slot0.GetComponent
-		slot6 = "ObjectReference"
-		slot3 = slot3(slot5, slot6)
-		slot6 = slot3
-		slot4 = slot3.GetRefValue
-		slot7 = "txtNameUText"
-		slot4 = slot4(slot6, slot7)
-		slot5 = ClientTextUtils
-		slot5 = slot5.setText
-		slot7 = slot4
-		slot8 = pg
-		slot8 = slot8.getLocalizationText
-		slot10 = slot2.tagName
-		MULTRES = slot8(slot10)
-
-		slot5(slot7, MULTRES)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot7.luaRenderItem = slot8
-	slot7 = slot0.listTagUList
-	slot9 = slot7
-	slot7 = slot7.SetList
-	slot10 = slot0.skillInfoData
-	slot10 = slot10.tagList
-
-	slot7(slot9, slot10)
-
-	slot7 = slot0.customData
-	slot7 = slot7.showRealGlazeType
-	--- END OF BLOCK #23 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #28
-	end
-
-
-	--- BLOCK #24 221-230, warpins: 1 ---
-	slot7 = slot0.uComponent
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "Type"
-	slot11 = slot0.pos
-	slot12 = UIConst
-	slot12 = slot12.GlazeSkillPos
-	slot12 = slot12.After
-	--- END OF BLOCK #24 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 231-232, warpins: 1 ---
-	slot11 = 2
-	--- END OF BLOCK #25 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
-
-
-	--- BLOCK #26 233-233, warpins: 1 ---
-	slot11 = 1
-
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 234-238, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
-
-	slot7 = slot0.btnStrengthenUButton
-
-	slot8 = function()
+	slot7 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -880,36 +758,36 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot7.luaClick = slot8
-	--- END OF BLOCK #27 ---
+	slot6.luaClick = slot7
+	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
-
-
-	--- BLOCK #28 239-244, warpins: 1 ---
-	slot7 = slot0.uComponent
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "Type"
-	slot11 = 0
-
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #29 245-246, warpins: 2 ---
+	--- BLOCK #21 199-204, warpins: 1 ---
+	slot6 = slot0.uComponent
+	slot8 = slot6
+	slot6 = slot6.TryChangePage
+	slot9 = "Type"
+	slot10 = 0
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 205-206, warpins: 2 ---
 	return
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #30 247-247, warpins: 2 ---
+	--- BLOCK #23 207-207, warpins: 2 ---
 	return
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #23 ---
 
 
 

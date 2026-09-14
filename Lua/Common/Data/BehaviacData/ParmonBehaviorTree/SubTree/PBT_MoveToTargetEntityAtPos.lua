@@ -7,68 +7,68 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = false,
 	agenttype = "CombatAgent",
 	version = 6,
-	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/PBT_MoveToTargetEntityAtPos"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
 	value = "0",
 	type = "int",
-	name = "tTargetActorId"
+	name = "tTargetActorId",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0.2,
 	value = "0.2",
 	type = "float",
-	name = "tStopDist"
+	name = "tStopDist",
+	const = 0.2
 }
 slot4[2] = slot5
 slot5 = {
-	const = 5,
 	value = "5",
 	type = "float",
-	name = "tMaxTimeout"
+	name = "tMaxTimeout",
+	const = 5
 }
 slot4[3] = slot5
 slot5 = {
-	const = true,
 	value = "true",
 	type = "bool",
-	name = "tFaceTarget"
+	name = "tFaceTarget",
+	const = true
 }
 slot4[4] = slot5
 slot5 = {
-	const = 0,
 	value = "0",
 	type = "float",
-	name = "tTargetYaw"
+	name = "tTargetYaw",
+	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	const = 0,
 	value = "0",
 	type = "float",
-	name = "tTargetDistance"
+	name = "tTargetDistance",
+	const = 0
 }
 slot4[6] = slot5
 slot5 = {
-	const = false,
 	value = "false",
 	type = "bool",
-	name = "tNoBodySize"
+	name = "tNoBodySize",
+	const = false
 }
 slot4[7] = slot5
 slot5 = {
-	const = 0,
 	value = "0",
 	type = "float",
-	name = "tSpeed"
+	name = "tSpeed",
+	const = 0
 }
 slot4[8] = slot5
 slot5 = {
@@ -81,10 +81,10 @@ slot6 = slot6.Slow
 slot5.const = slot6
 slot4[9] = slot5
 slot5 = {
-	const = false,
 	value = "false",
 	type = "bool",
-	name = "tUseAccurateArrive"
+	name = "tUseAccurateArrive",
+	const = false
 }
 slot4[10] = slot5
 slot3.pars = slot4

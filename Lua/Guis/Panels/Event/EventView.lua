@@ -26,7 +26,7 @@ slot9 = slot2
 slot6 = slot6(slot8, slot9)
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-217, warpins: 1 ---
+	--- BLOCK #0 1-141, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -63,12 +63,6 @@ slot7 = function(slot0)
 	slot4 = "petSaveUContainer"
 	slot1 = slot1(slot3, slot4)
 	slot0.petSaveUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "reunionUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.reunionUContainer = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -171,81 +165,155 @@ slot7 = function(slot0)
 	slot4 = "blurUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.blurUWidget = slot1
-	slot1 = slot0.objectReference
+	slot1 = slot0.blurUWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 142-147, warpins: 1 ---
+	slot1 = slot0.blurUWidget
+	slot1 = slot1.transform
 	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "blackBgUWidget"
+	slot1 = slot1.Find
+	slot4 = "BgBlur"
 	slot1 = slot1(slot3, slot4)
-	slot0.blackBgUWidget = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "currencyUComponent"
-	slot1 = slot1(slot3, slot4)
-	slot0.currencyUComponent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "listCurrencyUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.listCurrencyUList = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "reunionTrainingUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.reunionTrainingUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "signNewbieUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.signNewbieUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "signVersionUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.signVersionUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "commonGuideUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.commonGuideUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "themeMonthUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.themeMonthUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "paidWipeTestUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.paidWipeTestUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "growthGiftUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.growthGiftUContainer = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "leftTabUWidget"
-	slot1 = slot1(slot3, slot4)
-	slot0.leftTabUWidget = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "titleUWidget"
-	slot1 = slot1(slot3, slot4)
-	slot0.titleUWidget = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 148-149, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 150-153, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetComponent
+	slot5 = "UIBlurEffect"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 154-257, warpins: 2 ---
+	slot0.bgBlurUIBlurEffect = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "currencyUComponent"
+	slot2 = slot2(slot4, slot5)
+	slot0.currencyUComponent = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "listCurrencyUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listCurrencyUList = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "reunionTrainingUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.reunionTrainingUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "signNewbieUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.signNewbieUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "signVersionUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.signVersionUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "commonGuideUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.commonGuideUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "themeMonthUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.themeMonthUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "paidWipeTestUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.paidWipeTestUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "growthGiftUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.growthGiftUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "newHandSigninUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.newHandSigninUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "tikTokUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.littleFireFestivalUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "bindAccountUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.bindAccountUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "firstTopupUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.firstTopupUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "bossCatchUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.bossCatchUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "totalloginsUContainer"
+	slot2 = slot2(slot4, slot5)
+	slot0.totalloginsUContainer = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "leftTabUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.leftTabUWidget = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "titleUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.titleUWidget = slot2
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 

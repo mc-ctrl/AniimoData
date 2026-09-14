@@ -116,7 +116,7 @@ end
 slot24.ctor = slot29
 
 slot29 = function(slot0, slot1)
-	--- BLOCK #0 1-31, warpins: 1 ---
+	--- BLOCK #0 1-29, warpins: 1 ---
 	slot2 = ClientPartUnit
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -125,8 +125,6 @@ slot29 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot1.isClientEnt
-	slot0.isClientEnt = slot2
 	slot2 = slot1.actorPartIdx
 	slot0.actorPartIdx = slot2
 	slot2 = slot1.actorId
@@ -233,7 +231,7 @@ end
 slot24.start = slot29
 
 slot29 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = ClientPartUnit
 	slot1 = slot1.super
 	slot1 = slot1.destroy
@@ -244,8 +242,9 @@ slot29 = function(slot0)
 	slot1 = ActorManager
 	slot1 = slot1.removeEntity
 	slot3 = slot0.fakeActorId
+	slot4 = slot0
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #0 ---

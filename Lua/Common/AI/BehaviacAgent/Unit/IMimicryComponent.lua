@@ -157,14 +157,12 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-22, warpins: 1 ---
+	--- BLOCK #1 4-20, warpins: 1 ---
 	slot2 = 1
 	slot0.x_switchToHideMimicryIn_state = slot2
-	slot2 = slot0.ent
-	slot2 = slot2.eModel
-	slot2 = slot2.aiControllerComponent
-	slot4 = slot2
-	slot2 = slot2.SetJumpInRunWarping
+	slot2 = AIControllerUtils
+	slot2 = slot2.setJumpInRunWarping
+	slot4 = slot0.ent
 	slot5 = slot1
 	slot6 = false
 
@@ -188,7 +186,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 23-30, warpins: 2 ---
+	--- BLOCK #2 21-28, warpins: 2 ---
 	slot2 = AIControllerUtils
 	slot2 = slot2.getCurrentAnimationState
 	slot4 = slot0.ent
@@ -204,7 +202,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 31-33, warpins: 1 ---
+	--- BLOCK #3 29-31, warpins: 1 ---
 	slot2 = EBTStatus
 	slot2 = slot2.BT_RUNNING
 
@@ -215,7 +213,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 34-36, warpins: 2 ---
+	--- BLOCK #4 32-34, warpins: 2 ---
 	slot2 = EBTStatus
 	slot2 = slot2.BT_SUCCESS
 
@@ -337,7 +335,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 33-47, warpins: 1 ---
+	--- BLOCK #7 33-45, warpins: 1 ---
 	slot3 = slot0.envQueryAbility
 	slot5 = slot3
 	slot3 = slot3.queryBestPosByTarget
@@ -345,11 +343,9 @@ slot9 = function(slot0, slot1, slot2)
 	slot6 = slot6.actorId
 	slot3 = slot3(slot5, slot6)
 	slot0.x_switchToHideMimicryOut_targetPos = slot3
-	slot3 = slot0.ent
-	slot3 = slot3.eModel
-	slot3 = slot3.aiControllerComponent
-	slot5 = slot3
-	slot3 = slot3.SetJumpInRunWarping
+	slot3 = AIControllerUtils
+	slot3 = slot3.setJumpInRunWarping
+	slot5 = slot0.ent
 	slot6 = slot0.x_switchToHideMimicryOut_targetPos
 	slot7 = true
 
@@ -360,12 +356,10 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 48-63, warpins: 2 ---
-	slot3 = slot0.ent
-	slot3 = slot3.eModel
-	slot3 = slot3.aiControllerComponent
-	slot5 = slot3
-	slot3 = slot3.SetHideMimicryOutType
+	--- BLOCK #8 46-59, warpins: 2 ---
+	slot3 = AIControllerUtils
+	slot3 = slot3.setHideMimicryOutType
+	slot5 = slot0.ent
 	slot6 = slot1
 
 	slot3(slot5, slot6)
@@ -388,7 +382,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 64-71, warpins: 2 ---
+	--- BLOCK #9 60-67, warpins: 2 ---
 	slot3 = AIControllerUtils
 	slot3 = slot3.getCurrentAnimationState
 	slot5 = slot0.ent
@@ -404,7 +398,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 72-74, warpins: 1 ---
+	--- BLOCK #10 68-70, warpins: 1 ---
 	slot3 = EBTStatus
 	slot3 = slot3.BT_RUNNING
 
@@ -415,7 +409,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 75-77, warpins: 2 ---
+	--- BLOCK #11 71-73, warpins: 2 ---
 	slot3 = EBTStatus
 	slot3 = slot3.BT_SUCCESS
 

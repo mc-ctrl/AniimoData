@@ -32,22 +32,32 @@ end
 slot2.ctor = slot3
 
 slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
 	slot4 = slot1
 	slot2 = slot2(slot4)
-	slot3 = slot2.isMainAuthority
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 8-12, warpins: 1 ---
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot2.isMainAuthority
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
 	slot6 = "RPC_CS_AddBuff"
@@ -55,14 +65,14 @@ slot3 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 13-13, warpins: 2 ---
-	return
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-15, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
@@ -71,22 +81,32 @@ end
 slot2.addBuff = slot3
 
 slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
 	slot4 = slot1
 	slot2 = slot2(slot4)
-	slot3 = slot2.isMainAuthority
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 8-12, warpins: 1 ---
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot2.isMainAuthority
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
 	slot6 = "RPC_CS_RemoveBuff"
@@ -94,14 +114,14 @@ slot3 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 13-13, warpins: 2 ---
-	return
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-15, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 

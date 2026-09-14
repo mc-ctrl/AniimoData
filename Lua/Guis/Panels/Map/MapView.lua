@@ -23,7 +23,7 @@ slot6 = slot6.UnityEngine
 slot6 = slot6.GameObject
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-308, warpins: 1 ---
+	--- BLOCK #0 1-323, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -308,78 +308,93 @@ slot7 = function(slot0)
 	slot4 = "petDistributionUContainer"
 	slot1 = slot1(slot3, slot4)
 	slot0.petDistributionUContainer = slot1
-	slot1 = slot0.petDistributionUContainer
-	slot2 = true
-	slot1.forceSyncLoad = slot2
-	slot1 = slot0.petDistributionUContainer
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.mapScroll
-	slot1 = slot1.transform
-	slot3 = slot1
-	slot1 = slot1.Find
-	slot4 = "View"
-	slot1 = slot1(slot3, slot4)
+	slot1 = slot0.gatherInfoUComponent
 	slot3 = slot1
 	slot1 = slot1.GetComponent
-	slot4 = "RectTransform"
+	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
-	slot0.mapScrollView = slot1
-	slot1 = pg
-	slot1 = slot1.me
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "globalTipsRectTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.teaPartyGlobalTips = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "arkTipsRectTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.teaPartyArkTips = slot2
+	slot2 = slot0.petDistributionUContainer
+	slot3 = true
+	slot2.forceSyncLoad = slot3
+	slot2 = slot0.petDistributionUContainer
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.mapScroll
+	slot2 = slot2.transform
+	slot4 = slot2
+	slot2 = slot2.Find
+	slot5 = "View"
+	slot2 = slot2(slot4, slot5)
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "RectTransform"
+	slot2 = slot2(slot4, slot5)
+	slot0.mapScrollView = slot2
+	slot2 = pg
+	slot2 = slot2.me
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= nil then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 309-313, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.space
+	--- BLOCK #1 324-328, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.space
 	--- END OF BLOCK #1 ---
 
-	if slot1 ~= nil then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 314-326, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.insertSceneId
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.map
-	slot6 = slot4
-	slot4 = slot4.convertSceneId
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.space
-	slot7 = slot7.sceneId
-	MULTRES = slot4(slot6, slot7)
+	--- BLOCK #2 329-341, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.insertSceneId
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.map
+	slot7 = slot5
+	slot5 = slot5.convertSceneId
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.space
+	slot8 = slot8.sceneId
+	MULTRES = slot5(slot7, slot8)
 
-	slot1(slot3, MULTRES)
+	slot2(slot4, MULTRES)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 327-330, warpins: 3 ---
-	slot3 = slot0
-	slot1 = slot0.refreshNode
+	--- BLOCK #3 342-345, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.refreshNode
 
-	slot1(slot3)
+	slot2(slot4)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -406,7 +421,7 @@ slot7 = function(slot0, slot1)
 	--- BLOCK #1 5-5, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #30
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
 	--- BLOCK #2 6-8, warpins: 1 ---
@@ -423,7 +438,7 @@ slot7 = function(slot0, slot1)
 	--- BLOCK #3 9-9, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
 	--- BLOCK #4 10-30, warpins: 1 ---
@@ -858,10 +873,10 @@ slot7 = function(slot0, slot1)
 		slot3 = slot3.markerListTransform
 		slot2.parent = slot3
 		slot3 = Vector3
-		slot3 = slot3.zero
+		slot3 = slot3.constZero
 		slot2.localPosition = slot3
 		slot3 = Vector3
-		slot3 = slot3.one
+		slot3 = slot3.constOne
 		slot2.localScale = slot3
 		slot3 = Vector2
 		slot3 = slot3.zero
@@ -900,7 +915,7 @@ slot7 = function(slot0, slot1)
 	LOOP BLOCK #26
 	GO OUT TO BLOCK #27
 
-	--- BLOCK #27 257-271, warpins: 1 ---
+	--- BLOCK #27 257-279, warpins: 1 ---
 	slot12 = slot11
 	slot14 = 99
 
@@ -917,29 +932,6 @@ slot7 = function(slot0, slot1)
 	slot15 = "UIMapInputEventHandler"
 	slot12 = slot12(slot14, slot15)
 	slot0.mapInputEventHandler = slot12
-	slot12 = slot0.fogMapFogGenerator
-	--- END OF BLOCK #27 ---
-
-	slot12 = if slot12 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #28 272-275, warpins: 1 ---
-	slot12 = slot0.fogMapFogGenerator
-	slot14 = slot12
-	slot12 = slot12.LoadMapFogBitMasks
-
-	slot12(slot14)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 276-286, warpins: 2 ---
 	slot12 = slot0.listTransLocUWidget
 	slot13 = 1
 	slot12.renderOpacity = slot13
@@ -952,21 +944,21 @@ slot7 = function(slot0, slot1)
 	slot12(slot14, slot15)
 
 	return
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 280-280, warpins: 2 ---
+	return
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 281-281, warpins: 2 ---
+	return
 	--- END OF BLOCK #29 ---
-
-	FLOW; TARGET BLOCK #30
-
-
-	--- BLOCK #30 287-287, warpins: 2 ---
-	return
-	--- END OF BLOCK #30 ---
-
-	FLOW; TARGET BLOCK #31
-
-
-	--- BLOCK #31 288-288, warpins: 2 ---
-	return
-	--- END OF BLOCK #31 ---
 
 
 

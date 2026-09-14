@@ -35,7 +35,7 @@ slot12 = slot8
 slot9(slot11, slot12)
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-22, warpins: 1 ---
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = VirtualEntUtils
 	slot2 = slot2.getNewVirtualEntActorId
 	slot2 = slot2()
@@ -46,8 +46,6 @@ slot9 = function(slot0, slot1)
 	slot2 = Const
 	slot2 = slot2.CLEN_USE_TYPE_HOME
 	slot0.clenUsrType = slot2
-	slot2 = true
-	slot0.isClientEnt = slot2
 	slot2 = true
 	slot0.forbiddenTopLogo = slot2
 	slot2 = ClientHomelandDisplayCar
@@ -70,13 +68,14 @@ end
 slot7.init = slot9
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.basicInfo = slot1
 	slot4 = slot0
 	slot2 = slot0.setShapeInfo
 	slot5 = slot1
+	slot6 = true
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -152,19 +151,17 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-17, warpins: 1 ---
+	--- BLOCK #1 4-15, warpins: 1 ---
 	slot1 = slot0.eModel
 	slot1 = slot1.modelView
 	slot3 = slot1
 	slot1 = slot1.SetModelPartRotation
 	slot4 = Quaternion
 	slot4 = slot4.Euler
-	slot6 = Vector3
+	slot6 = 0
+	slot7 = -90
 	slot8 = 0
-	slot9 = -90
-	slot10 = 0
-	MULTRES = slot6(slot8, slot9, slot10)
-	slot4 = slot4(MULTRES)
+	slot4 = slot4(slot6, slot7, slot8)
 	slot5 = "HomeCarDoor"
 
 	slot1(slot3, slot4, slot5)
@@ -174,7 +171,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-18, warpins: 2 ---
+	--- BLOCK #2 16-16, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-40, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -26,21 +26,40 @@ slot6 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
+	--- BLOCK #1 4-10, warpins: 1 ---
 	slot2 = slot1.homeTemplateId
 	slot0.homeTemplateId = slot2
 	slot2 = slot1.ornamentId
 	slot0.ornamentId = slot2
+	slot2 = slot1.areaId
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 8-14, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot2 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-12, warpins: 2 ---
+	slot0.areaId = slot2
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-19, warpins: 2 ---
 	slot2 = Utils
 	slot2 = slot2.isHomeTrashOrnament
 	slot4 = slot0.homeTemplateId
@@ -49,7 +68,7 @@ slot6 = function(slot0, slot1)
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -134,7 +153,7 @@ slot6 = function(slot0)
 	slot1 = slot1.game
 	slot1 = slot1.home
 	slot3 = slot1
-	slot1 = slot1.unregisterHomeEnt
+	slot1 = slot1.registerShadowLight
 	slot4 = slot0.ornamentId
 	slot5 = slot0
 
@@ -146,6 +165,64 @@ slot6 = function(slot0)
 
 
 	--- BLOCK #3 15-15, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot5.EVENT_onModelLoaded = slot6
+
+slot6 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.ornamentId
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.ornamentId
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-21, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.unregisterHomeEnt
+	slot4 = slot0.ornamentId
+	slot5 = slot0
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.unregisterShadowLight
+	slot4 = slot0.ornamentId
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-22, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 

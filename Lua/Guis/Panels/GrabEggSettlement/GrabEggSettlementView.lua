@@ -20,12 +20,17 @@ slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-116, warpins: 1 ---
+	--- BLOCK #0 1-151, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "bg"
+	slot2 = slot2(slot4, slot5)
+	slot0.bg = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "txtMapNameUBaseText"
@@ -53,11 +58,6 @@ slot5 = function(slot0)
 	slot0.txtDefeatUBaseText = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "listRewardUList"
-	slot2 = slot2(slot4, slot5)
-	slot0.listRewardUList = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
 	slot5 = "btnOrganizeUButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnOrganizeUButton = slot2
@@ -71,6 +71,11 @@ slot5 = function(slot0)
 	slot5 = "rootUComponent"
 	slot2 = slot2(slot4, slot5)
 	slot0.rootUComponent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtDifficultyUBaseText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtDifficultyUBaseText = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "btnHarvestDetailsUButton"
@@ -118,24 +123,54 @@ slot5 = function(slot0)
 	slot0.txtTitleProfitUBaseText = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "rewardUWidget"
+	slot5 = "treasureChestUWidget"
 	slot2 = slot2(slot4, slot5)
-	slot0.rewardUWidget = slot2
+	slot0.treasureChestUWidget = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "textBoxTipsUBaseText"
+	slot5 = "rewardBoxIconUImage"
 	slot2 = slot2(slot4, slot5)
-	slot0.textBoxTipsUBaseText = slot2
+	slot0.rewardBoxIconUImage = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "textBoxColorUBaseText"
+	slot5 = "textTimeTitleUSDFText"
 	slot2 = slot2(slot4, slot5)
-	slot0.textBoxColorUBaseText = slot2
+	slot0.textTimeTitleUSDFText = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "rewardTipsUWidget"
+	slot5 = "textTimeSubUSDFText"
 	slot2 = slot2(slot4, slot5)
-	slot0.rewardTipsUWidget = slot2
+	slot0.textTimeSubUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textLuckyBoxTitleUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textLuckyBoxTitleUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnLuckyInfoUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnLuckyInfoUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textGetBoxNumUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textGetBoxNumUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textFullGetUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textFullGetUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "protectInfoUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.protectInfoUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "protectInfoUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.protectInfoUWidget = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -158,13 +193,23 @@ end
 slot3.registerObjects = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-26, warpins: 1 ---
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
-	slot3 = slot0.textBoxTipsUBaseText
+	slot3 = slot0.textTimeTitleUSDFText
 	slot4 = pg
 	slot4 = slot4.getGameString
-	slot6 = "GRAB_EGG_SETTLEMENT_BOX_TIPS"
+	slot6 = "BOX_OPEN_REMAINING_TIME_TITLE"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.textLuckyBoxTitleUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "GRABEGG_LUCKYCHEST_TITLE"
 	MULTRES = slot4(slot6)
 
 	slot1(slot3, MULTRES)

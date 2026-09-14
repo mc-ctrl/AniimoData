@@ -9,7 +9,7 @@ slot2 = slot0.LightClass
 slot4 = "FishingCaptureHistoryModel"
 slot5 = slot1
 slot2 = slot2(slot4, slot5)
-slot3 = 5
+slot3 = 3
 
 slot4 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---

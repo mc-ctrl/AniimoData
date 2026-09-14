@@ -90,7 +90,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-20, warpins: 2 ---
+	--- BLOCK #2 4-22, warpins: 2 ---
 	slot2 = slot1.defaultPlayerActive
 	slot0.defaultPlayerActive = slot2
 	slot2 = slot1.defaultMode
@@ -107,9 +107,35 @@ slot22 = function(slot0, slot1)
 	slot0.defaultSelectSkillId = slot2
 	slot2 = slot1.firstEnter
 	slot0.firstEnter = slot2
+	slot2 = slot1.firstEnter
+	--- END OF BLOCK #2 ---
+
+	if slot2 == true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-24, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 25-25, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-27, warpins: 2 ---
+	slot0.canShowNavigationArrow = slot2
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -228,7 +254,7 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-41, warpins: 2 ---
+	--- BLOCK #2 13-45, warpins: 2 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.redDot_CheckSaveDirty
@@ -255,6 +281,10 @@ slot22 = function(slot0)
 	slot0.firstEnter = slot1
 	slot1 = nil
 	slot0.pendingPlayModelEnterTimeline = slot1
+	slot1 = nil
+	slot0.canShowNavigationArrow = slot1
+	slot1 = nil
+	slot0.pendingNavigationFocus = slot1
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -944,25 +974,72 @@ slot22 = function(slot0)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #6
 		end
 
 
 		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.canShowNavigationArrow
+		--- END OF BLOCK #1 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #2 9-14, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.navMgr
+		slot1 = slot0.CurrentFocusedUContent
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 15-19, warpins: 1 ---
+		slot2 = self
+		slot2.pendingNavigationFocus = slot1
+		slot4 = slot0
+		slot2 = slot0.ClearFocus
+
+		slot2(slot4)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 20-20, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 21-24, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.refreshConsoleBarState
 
 		slot0(slot2)
 
-		--- END OF BLOCK #1 ---
+		--- END OF BLOCK #5 ---
 
-		FLOW; TARGET BLOCK #2
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #2 9-9, warpins: 2 ---
+		--- BLOCK #6 25-25, warpins: 2 ---
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #6 ---
 
 
 
@@ -1048,7 +1125,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
+	--- BLOCK #1 4-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.startTimer
 
@@ -1080,26 +1157,14 @@ slot22 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = slot0.modelScene
-	slot3 = slot1
-	slot1 = slot1.playEnterAnimation
-
-	slot1(slot3)
-
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 14-20, warpins: 1 ---
+	--- BLOCK #2 10-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playUIInAnim
-
-	slot1(slot3)
-
-	slot1 = slot0.modelScene
-	slot3 = slot1
-	slot1 = slot1.playEnterAnimation
 
 	slot1(slot3)
 
@@ -1108,7 +1173,13 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 21-22, warpins: 2 ---
+	--- BLOCK #3 13-18, warpins: 2 ---
+	slot1 = slot0.modelScene
+	slot3 = slot1
+	slot1 = slot1.playEnterAnimation
+
+	slot1(slot3)
+
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1152,66 +1223,176 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-35, warpins: 2 ---
-	slot1 = slot0.view
-	slot1 = slot1.mainPanelAnimation
-	slot3 = slot1
-	slot1 = slot1.Play
-	slot4 = UI_IN_ANIM
+	--- BLOCK #2 18-21, warpins: 2 ---
+	slot1 = nil
+	slot2 = slot0.firstEnter
 
-	slot1(slot3, slot4)
-
-	slot1 = slot0.view
-	slot1 = slot1.topBackUWidget
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot3 = slot0
-	slot1 = slot0.initTabShow
-
-	slot1(slot3)
-
-	slot1 = slot0.firstEnter
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 36-45, warpins: 1 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getBadgeTabData
-	slot1 = slot1(slot3)
-	slot2 = slot0.view
-	slot2 = slot2.badgeUList
-	slot4 = slot2
-	slot2 = slot2.SetList
-	slot5 = slot1
+	--- BLOCK #3 22-23, warpins: 1 ---
+	slot1 = function()
+		--- BLOCK #0 1-15, warpins: 1 ---
+		slot0 = self
+		slot1 = true
+		slot0.canShowNavigationArrow = slot1
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.navMgr
+		slot1 = self
+		slot1 = slot1.pendingNavigationFocus
+		slot2 = self
+		slot3 = nil
+		slot2.pendingNavigationFocus = slot3
+		slot2 = self
+		slot2 = slot2.view
+		--- END OF BLOCK #0 ---
 
-	slot2(slot4, slot5)
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 16-17, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #2 18-19, warpins: 1 ---
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 20-27, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.input
+		slot4 = slot2
+		slot2 = slot2.isUsingGamepad
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #3 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 28-31, warpins: 1 ---
+		slot4 = slot0
+		slot2 = slot0.FocusItem
+		slot5 = slot1
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 32-32, warpins: 5 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
 
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 46-52, warpins: 2 ---
-	slot1 = nil
-	slot0.firstEnter = slot1
-	slot1 = nil
-	slot0.badgeTabIndex = slot1
-	slot1 = nil
-	slot0.badgeIdLook = slot1
+	--- BLOCK #4 24-27, warpins: 1 ---
+	slot2 = true
+	slot0.canShowNavigationArrow = slot2
+	slot2 = nil
+	slot0.pendingNavigationFocus = slot2
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 28-46, warpins: 2 ---
+	slot2 = UIUtils
+	slot2 = slot2.PlayAnimation
+	slot4 = slot0.view
+	slot4 = slot4.mainPanelAnimation
+	slot5 = UI_IN_ANIM
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.view
+	slot2 = slot2.topBackUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.initTabShow
+
+	slot2(slot4)
+
+	slot2 = slot0.firstEnter
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 47-56, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getBadgeTabData
+	slot2 = slot2(slot4)
+	slot3 = slot0.view
+	slot3 = slot3.badgeUList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 57-64, warpins: 2 ---
+	slot2 = nil
+	slot0.firstEnter = slot2
+	slot2 = nil
+	slot0.badgeTabIndex = slot2
+	slot2 = nil
+	slot0.badgeIdLook = slot2
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -1511,15 +1692,50 @@ slot22 = function(slot0)
 
 
 	--- BLOCK #5 16-21, warpins: 2 ---
-	slot5 = slot1
-	slot3 = slot1.SetConsoleBarState
-	slot6 = "onSkillTreePage"
-	slot7 = slot2
+	slot3 = slot0.page
+	slot4 = slot0.model
+	slot4 = slot4.MODEL_STATE
+	slot4 = slot4.BADGE_PAGE
+	--- END OF BLOCK #5 ---
 
-	slot3(slot5, slot6, slot7)
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-23, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 24-24, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-35, warpins: 2 ---
+	slot6 = slot1
+	slot4 = slot1.SetConsoleBarState
+	slot7 = "onSkillTreePage"
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot1
+	slot4 = slot1.SetConsoleBarState
+	slot7 = "onBadgePage"
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -3750,8 +3966,8 @@ slot22 = function(slot0)
 	slot4 = UIConst
 	slot4 = slot4.UI_ID_PET_MANAGEMENT
 	slot5 = {
-		tab = 2,
-		hideOtherTab = true
+		hideOtherTab = true,
+		tab = 2
 	}
 
 	slot6 = function()

@@ -137,7 +137,7 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-46, warpins: 2 ---
+	--- BLOCK #4 25-39, warpins: 2 ---
 	slot6 = reload
 	slot6 = slot6.initEnv
 	slot8 = {}
@@ -153,8 +153,32 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot6 = class
 	slot6 = slot6.setReload
 	slot8 = true
+	--- END OF BLOCK #4 ---
 
-	slot6(slot8)
+	if slot1 ~= "data" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 40-41, warpins: 1 ---
+	slot9 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 42-42, warpins: 1 ---
+	slot9 = true
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 43-51, warpins: 2 ---
+	slot6(slot8, slot9)
 
 	slot6 = pg
 	slot7 = true
@@ -163,12 +187,12 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot7 = ipairs
 	slot9 = slot2
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #5 47-73, warpins: 1 ---
+	--- BLOCK #8 52-78, warpins: 1 ---
 	slot12 = string
 	slot12 = slot12.gsub
 	slot14 = slot11
@@ -200,36 +224,36 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot12(slot14, MULTRES)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 74-75, warpins: 2 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #9 79-80, warpins: 2 ---
+	--- END OF BLOCK #9 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #7
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #7 76-83, warpins: 1 ---
+	--- BLOCK #10 81-88, warpins: 1 ---
 	slot7 = reload
 	slot7 = slot7.reload
 	slot9 = slot6
 	slot10 = slot3
 	slot11 = slot4
 	slot7, slot8 = slot7(slot9, slot10, slot11)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #8 84-92, warpins: 1 ---
+	--- BLOCK #11 89-97, warpins: 1 ---
 	slot9 = _LOGGER
 	slot11 = slot9
 	slot9 = slot9.error
@@ -239,71 +263,71 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot9(slot11, slot12, slot13)
 
 	slot9 = slot0.exceptionHook
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 93-95, warpins: 1 ---
+	--- BLOCK #12 98-100, warpins: 1 ---
 	slot9 = slot0.exceptionHook
 	slot11 = slot8
 
 	slot9(slot11)
 
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 96-99, warpins: 3 ---
-	slot9 = pg
-	slot9 = slot9.component
-	--- END OF BLOCK #10 ---
-
-	if slot9 == "client" then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #11 100-103, warpins: 1 ---
-	slot9 = Switch
-	slot9 = slot9.ReadLuaData
-	--- END OF BLOCK #11 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #12 104-105, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	if slot1 ~= "all" then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 106-107, warpins: 1 ---
+	--- BLOCK #13 101-104, warpins: 3 ---
+	slot9 = pg
+	slot9 = slot9.component
 	--- END OF BLOCK #13 ---
 
-	if slot1 == "data" then
+	if slot9 == "client" then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #14 108-115, warpins: 2 ---
+	--- BLOCK #14 105-108, warpins: 1 ---
+	slot9 = Switch
+	slot9 = slot9.ReadLuaData
+	--- END OF BLOCK #14 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 109-110, warpins: 1 ---
+	--- END OF BLOCK #15 ---
+
+	if slot1 ~= "all" then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 111-112, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	if slot1 == "data" then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 113-120, warpins: 2 ---
 	slot9 = require
 	slot11 = "Core.Framework.BddDataMgr"
 	slot9 = slot9(slot11)
@@ -314,32 +338,56 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot10(slot12)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #15 116-125, warpins: 4 ---
+	--- BLOCK #18 121-125, warpins: 4 ---
 	slot9 = class
 	slot9 = slot9.setReload
 	slot11 = false
+	--- END OF BLOCK #18 ---
 
-	slot9(slot11)
+	if slot1 ~= "data" then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 126-127, warpins: 1 ---
+	slot12 = false
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 128-128, warpins: 1 ---
+	slot12 = true
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 129-135, warpins: 2 ---
+	slot9(slot11, slot12)
 
 	slot9 = pg
 	slot10 = nil
 	slot9.isReloading = slot10
 	slot9 = slot0.postReloadHook
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #21 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #16 126-132, warpins: 1 ---
+	--- BLOCK #22 136-142, warpins: 1 ---
 	slot9 = _LOGGER
 	slot11 = slot9
 	slot9 = slot9.info
@@ -347,39 +395,39 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #22 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #17 133-137, warpins: 1 ---
+	--- BLOCK #23 143-147, warpins: 1 ---
 	slot9 = slot0.postReloadHook
 	slot11 = slot1
 	slot12 = slot8
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #18 138-140, warpins: 1 ---
+	--- BLOCK #24 148-150, warpins: 1 ---
 	slot9 = slot0.postReloadHook
 	slot11 = slot1
 
 	slot9(slot11)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #19 141-146, warpins: 3 ---
+	--- BLOCK #25 151-156, warpins: 3 ---
 	slot9 = _LOGGER
 	slot11 = slot9
 	slot9 = slot9.info
@@ -388,7 +436,7 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot9(slot11, slot12)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #25 ---
 
 
 

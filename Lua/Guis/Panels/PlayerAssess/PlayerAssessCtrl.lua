@@ -65,8 +65,8 @@ slot9 = function(slot0)
 		slot2 = slot0
 		slot0 = slot0.open
 		slot3 = {
-			defaultTab = 2,
-			defaultMode = 2
+			defaultMode = 2,
+			defaultTab = 2
 		}
 
 		slot0(slot2, slot3)
@@ -162,62 +162,24 @@ end
 slot4.addListener = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-16, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.hudV2
-	--- END OF BLOCK #1 ---
+	slot3 = slot1
+	slot1 = slot1.tryPlayFuncUnlock
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	slot1(slot3)
 
+	slot1 = UICtrl
+	slot1 = slot1.onDestroy
+	slot3 = slot0
 
-	--- BLOCK #2 17-20, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 21-28, warpins: 2 ---
-	slot4 = slot1
-	slot2 = slot1.tryPlayFuncUnlock
-
-	slot2(slot4)
-
-	slot2 = UICtrl
-	slot2 = slot2.onDestroy
-	slot4 = slot0
-
-	slot2(slot4)
+	slot1(slot3)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 

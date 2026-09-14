@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_SwimMimicryIn",
+	version = 16,
 	useForRoute = false,
-	agenttype = "CombatAgent",
-	version = 16
+	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_SwimMimicryIn",
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "2",
-	class = "Sequence"
+	class = "Sequence",
+	id = "2"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -29,8 +29,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "7",
-	class = "Action"
+	class = "Action",
+	id = "7"
 }
 slot8 = {}
 slot9 = {}

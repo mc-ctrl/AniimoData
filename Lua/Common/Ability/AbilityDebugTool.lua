@@ -1161,7 +1161,7 @@ slot21 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 50-63, warpins: 2 ---
+		--- BLOCK #8 50-62, warpins: 2 ---
 		slot6 = ToBool
 		slot8 = pg
 		slot8 = slot8.global
@@ -1171,8 +1171,7 @@ slot21 = function(slot0, slot1)
 		slot8 = slot8.doAction
 		slot11 = slot5
 		slot12 = combatContext
-		slot13 = true
-		MULTRES = slot8(slot10, slot11, slot12, slot13)
+		MULTRES = slot8(slot10, slot11, slot12)
 		slot6 = slot6(MULTRES)
 
 		--- END OF BLOCK #8 ---
@@ -1184,7 +1183,7 @@ slot21 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #9 64-65, warpins: 3 ---
+		--- BLOCK #9 63-64, warpins: 3 ---
 		--- END OF BLOCK #9 ---
 
 		for slot4, slot5 in slot1, slot2, slot3
@@ -1192,7 +1191,7 @@ slot21 = function(slot0, slot1)
 		GO OUT TO BLOCK #10
 
 
-		--- BLOCK #10 66-66, warpins: 1 ---
+		--- BLOCK #10 65-65, warpins: 1 ---
 		return slot0
 		--- END OF BLOCK #10 ---
 
@@ -3708,199 +3707,210 @@ slot21 = function(slot0, slot1, slot2)
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 10-13, warpins: 2 ---
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot3 = slot0.getEntityCacheVal
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-16, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getEntityCacheVal
 	slot6 = slot1
 	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 14-15, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-18, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
 	if slot3 == nil then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 16-18, warpins: 1 ---
+	--- BLOCK #5 19-21, warpins: 1 ---
 	slot4 = "nil"
 
 	return slot4
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #5 19-23, warpins: 1 ---
+	--- BLOCK #6 22-26, warpins: 1 ---
 	slot4 = type
 	slot6 = "function"
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
 	if slot3 == slot4 then
-	JUMP TO BLOCK #6
-	else
 	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 24-26, warpins: 1 ---
+	--- BLOCK #7 27-29, warpins: 1 ---
 	slot4 = "unknown function"
 
 	return slot4
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #7 27-31, warpins: 1 ---
+	--- BLOCK #8 30-34, warpins: 1 ---
 	slot4 = type
 	slot6 = "table"
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #8 ---
 
 	if slot3 == slot4 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #8 32-34, warpins: 1 ---
+	--- BLOCK #9 35-37, warpins: 1 ---
 	slot4 = slot3.className
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #9 ---
 
 	if slot4 == "Vector3" then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #10 38-43, warpins: 1 ---
+	slot4 = string
+	slot4 = slot4.format
+	slot6 = "Vector3(%.2f, %.2f, %.2f)"
+	slot7 = slot3[1]
+	--- END OF BLOCK #10 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 44-44, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 45-47, warpins: 2 ---
+	slot8 = slot3[2]
+	--- END OF BLOCK #12 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 48-48, warpins: 1 ---
+	slot8 = 0
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 49-51, warpins: 2 ---
+	slot9 = slot3[3]
+	--- END OF BLOCK #14 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #9 35-40, warpins: 1 ---
-	slot4 = string
-	slot4 = slot4.format
-	slot6 = "Vector3(%.2f, %.2f, %.2f)"
-	slot7 = slot3[1]
-	--- END OF BLOCK #9 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 41-41, warpins: 1 ---
-	slot7 = 0
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 42-44, warpins: 2 ---
-	slot8 = slot3[2]
-	--- END OF BLOCK #11 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 45-45, warpins: 1 ---
-	slot8 = 0
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 46-48, warpins: 2 ---
-	slot9 = slot3[3]
-	--- END OF BLOCK #13 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 49-49, warpins: 1 ---
+	--- BLOCK #15 52-52, warpins: 1 ---
 	slot9 = 0
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 50-51, warpins: 2 ---
-	return slot4(slot6, slot7, slot8, slot9)
 
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 52-54, warpins: 1 ---
-	slot4 = slot3.class
+	--- BLOCK #16 53-54, warpins: 2 ---
+	return slot4(slot6, slot7, slot8, slot9)
+
 	--- END OF BLOCK #16 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #17 55-57, warpins: 1 ---
+	slot4 = slot3.class
+	--- END OF BLOCK #17 ---
+
 	if slot4 == "Quaternion" then
-	JUMP TO BLOCK #17
-	else
 	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 55-58, warpins: 1 ---
+	--- BLOCK #18 58-61, warpins: 1 ---
 	slot4 = tostring
 	slot6 = slot3
 
 	return slot4(slot6)
 
-	--- END OF BLOCK #17 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #18 59-61, warpins: 1 ---
-	slot4 = slot3.actorId
 	--- END OF BLOCK #18 ---
 
-	if slot4 ~= nil then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #21
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #19 62-65, warpins: 1 ---
+	--- BLOCK #19 62-64, warpins: 1 ---
 	slot4 = slot3.actorId
-	slot5 = 0
 	--- END OF BLOCK #19 ---
 
-	if slot4 > slot5 then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #20 66-71, warpins: 1 ---
+	--- BLOCK #20 65-68, warpins: 1 ---
+	slot4 = slot3.actorId
+	slot5 = 0
+	--- END OF BLOCK #20 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 69-74, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.format
 	slot6 = "Entity(actorId = %d)"
@@ -3908,55 +3918,55 @@ slot21 = function(slot0, slot1, slot2)
 
 	return slot4(slot6, slot7)
 
-	--- END OF BLOCK #20 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #21 72-74, warpins: 2 ---
-	slot4 = slot3.className
 	--- END OF BLOCK #21 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #22 75-77, warpins: 2 ---
+	slot4 = slot3.className
+	--- END OF BLOCK #22 ---
+
 	if slot4 ~= nil then
-	JUMP TO BLOCK #22
-	else
 	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #22 75-77, warpins: 1 ---
-	slot4 = slot3.className
-
-	return slot4
-
-	--- END OF BLOCK #22 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
 	--- BLOCK #23 78-80, warpins: 1 ---
-	slot4 = "unknown table"
+	slot4 = slot3.className
 
 	return slot4
 
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #24 81-83, warpins: 1 ---
+	slot4 = "unknown table"
+
+	return slot4
+
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #25 84-86, warpins: 1 ---
 	slot4 = tostring
 	slot6 = slot3
 
 	return slot4(slot6)
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 84-84, warpins: 8 ---
-	return
 	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 87-87, warpins: 8 ---
+	return
+	--- END OF BLOCK #26 ---
 
 
 

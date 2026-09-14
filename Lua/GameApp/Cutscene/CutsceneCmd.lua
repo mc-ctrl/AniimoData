@@ -1,4 +1,4 @@
---- BLOCK #0 1-128, warpins: 1 ---
+--- BLOCK #0 1-130, warpins: 1 ---
 slot0 = require
 slot2 = "Utils.LuaUIUtils"
 slot0 = slot0(slot2)
@@ -103,7 +103,7 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 31-48, warpins: 2 ---
+	--- BLOCK #6 31-43, warpins: 2 ---
 	slot0.rotation = slot7
 	slot7 = pg
 	slot7 = slot7.global
@@ -115,29 +115,57 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot12 = slot0
 	slot13 = slot0.position
 	slot14 = slot0.rotation
-	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14)
-	slot0.cutscene = slot7
-	slot7 = true
-	slot8 = slot0.extraData
-	slot8 = slot8.applySoundListener
 	--- END OF BLOCK #6 ---
 
-	if slot8 ~= nil then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 49-50, warpins: 1 ---
-	slot8 = slot0.extraData
-	slot7 = slot8.applySoundListener
+	--- BLOCK #7 44-46, warpins: 1 ---
+	slot15 = slot6.isSetActiveNoRebind
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 51-60, warpins: 2 ---
+	--- BLOCK #8 47-47, warpins: 2 ---
+	slot15 = false
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 48-54, warpins: 2 ---
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	slot0.cutscene = slot7
+	slot7 = true
+	slot8 = slot0.extraData
+	slot8 = slot8.applySoundListener
+	--- END OF BLOCK #9 ---
+
+	if slot8 ~= nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 55-56, warpins: 1 ---
+	slot8 = slot0.extraData
+	slot7 = slot8.applySoundListener
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 57-66, warpins: 2 ---
 	slot8 = slot0.cutscene
 	slot10 = slot8
 	slot8 = slot8.SetApplySoundListener
@@ -148,61 +176,61 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot8 = TimelineDataInfo
 	slot9 = slot0.defaultResId
 	slot8 = slot8[slot9]
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 	if slot8 ~= nil then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #9 61-65, warpins: 1 ---
+	--- BLOCK #12 67-71, warpins: 1 ---
 	slot9 = true
 	slot0.isDialogueCutscene = slot9
 	slot9 = slot8.updateShadow
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
 	if slot9 == 1 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 66-68, warpins: 1 ---
+	--- BLOCK #13 72-74, warpins: 1 ---
 	slot9 = slot0.cutscene
 	slot10 = true
 	slot9.enableUpdateShadow = slot10
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #11 69-71, warpins: 2 ---
+	--- BLOCK #14 75-77, warpins: 2 ---
 	slot9 = slot8.disableShadow
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
 	if slot9 == 1 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #12 72-74, warpins: 1 ---
+	--- BLOCK #15 78-80, warpins: 1 ---
 	slot9 = slot0.cutscene
 	slot10 = true
 	slot9.isDisableShadow = slot10
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #13 75-75, warpins: 3 ---
+	--- BLOCK #16 81-81, warpins: 3 ---
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #16 ---
 
 
 
@@ -475,111 +503,156 @@ end
 slot9.getBindSlot = slot10
 
 slot10 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = ClientSimpleVirtualEntity
 	slot2 = slot2.new
 	slot2 = slot2()
 	slot3 = true
 	slot2.isCutsceneVirtualEntity = slot3
-	slot5 = slot2
-	slot3 = slot2.start
-
-	slot3(slot5)
-
-	slot5 = slot2
-	slot3 = slot2.setModelLayer
-	slot6 = ClientConst
-	slot6 = slot6.LayerDefine
-	slot6 = slot6.LAYER_CUTSCENE
-
-	slot3(slot5, slot6)
-
+	slot3 = {
+		isIgnoreEffectLod = true
+	}
+	slot4 = slot0.extraData
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 17-19, warpins: 1 ---
-	slot3 = slot1.parentTransform
+	--- BLOCK #1 10-13, warpins: 1 ---
+	slot4 = slot0.extraData
+	slot4 = slot4.gender
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 20-26, warpins: 1 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot5 = slot3
-	slot3 = slot3.SetParent
-	slot6 = slot1.parentTransform
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #2 14-14, warpins: 2 ---
+	slot4 = nil
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 27-34, warpins: 2 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot5 = slot3
-	slot3 = slot3.SetParent
-	slot6 = slot0.cutscene
-	slot6 = slot6.rootObject
-	slot6 = slot6.transform
+	--- BLOCK #3 15-34, warpins: 2 ---
+	slot3.gender = slot4
+	slot6 = slot2
+	slot4 = slot2.init
+	slot7 = slot3
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
+
+	slot6 = slot2
+	slot4 = slot2.postInit
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	slot6 = slot2
+	slot4 = slot2.start
+
+	slot4(slot6)
+
+	slot6 = slot2
+	slot4 = slot2.setModelLayer
+	slot7 = ClientConst
+	slot7 = slot7.LayerDefine
+	slot7 = slot7.LAYER_CUTSCENE
+
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #4 35-60, warpins: 2 ---
-	slot5 = slot2
-	slot3 = slot2.setDisableEffectLod
-	slot6 = true
+	--- BLOCK #4 35-37, warpins: 1 ---
+	slot4 = slot1.parentTransform
+	--- END OF BLOCK #4 ---
 
-	slot3(slot5, slot6)
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
-	slot5 = slot2
-	slot3 = slot2.setLodTickEnable
-	slot6 = Const
-	slot6 = slot6.LOD_TICK_KEY
-	slot6 = slot6.VIRTUAL_ENT
-	slot7 = false
 
-	slot3(slot5, slot6, slot7)
+	--- BLOCK #5 38-43, warpins: 1 ---
+	slot4 = slot2.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformParent
+	slot7 = slot1.parentTransform
 
-	slot5 = slot2
-	slot3 = slot2.setRendererLod
-	slot6 = 0
+	slot4(slot6, slot7)
 
-	slot3(slot5, slot6)
+	--- END OF BLOCK #5 ---
 
-	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.localPosition = slot4
-	slot3 = table
-	slot3 = slot3.insert
-	slot5 = slot0.virtualEntities
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 44-50, warpins: 2 ---
+	slot4 = slot2.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformParent
+	slot7 = slot0.cutscene
+	slot7 = slot7.rootObject
+	slot7 = slot7.transform
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 51-75, warpins: 2 ---
 	slot6 = slot2
+	slot4 = slot2.setDisableEffectLod
+	slot7 = true
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
+
+	slot6 = slot2
+	slot4 = slot2.setLodTickEnable
+	slot7 = Const
+	slot7 = slot7.LOD_TICK_KEY
+	slot7 = slot7.VIRTUAL_ENT
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot2
+	slot4 = slot2.setRendererLod
+	slot7 = 0
+
+	slot4(slot6, slot7)
+
+	slot4 = slot2.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
+
+	slot4(slot6)
+
+	slot4 = table
+	slot4 = slot4.insert
+	slot6 = slot0.virtualEntities
+	slot7 = slot2
+
+	slot4(slot6, slot7)
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -607,9 +680,10 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 7-15, warpins: 1 ---
+	--- BLOCK #2 7-16, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
 	slot9 = slot6
-	slot7 = slot6.destroy
 
 	slot7(slot9)
 
@@ -625,7 +699,7 @@ slot10 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 16-17, warpins: 2 ---
+	--- BLOCK #3 17-18, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -633,7 +707,7 @@ slot10 = function(slot0, slot1)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 18-18, warpins: 2 ---
+	--- BLOCK #4 19-19, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -653,9 +727,10 @@ slot10 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -664,7 +739,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -672,7 +747,7 @@ slot10 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 10-12, warpins: 1 ---
+	--- BLOCK #3 11-13, warpins: 1 ---
 	slot1 = {}
 	slot0.virtualEntities = slot1
 
@@ -881,11 +956,10 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 15-21, warpins: 1 ---
+	--- BLOCK #1 15-20, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
 	slot6 = slot4
-	slot4 = slot4.SetParent
+	slot4 = slot4.SetTransformParent
 	slot7 = slot1.rootObject
 	--- END OF BLOCK #1 ---
 
@@ -896,7 +970,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 22-24, warpins: 1 ---
+	--- BLOCK #2 21-23, warpins: 1 ---
 	slot7 = slot0.cutscene
 	slot7 = slot7.cutsceneRoot
 	slot7 = slot7.transform
@@ -906,24 +980,31 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 25-45, warpins: 2 ---
+	--- BLOCK #3 24-45, warpins: 2 ---
 	slot4(slot6, slot7)
 
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localPosition = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
+
+	slot4(slot6)
+
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localEulerAngles = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalRotation
+	slot7 = 0
+	slot8 = 0
+	slot9 = 0
+	slot10 = 1
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.one
-	slot4.localScale = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalScale
+
+	slot4(slot6)
+
 	slot4 = table
 	slot4 = slot4.insert
 	slot6 = slot0.virtualEntities
@@ -1230,11 +1311,10 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 14-20, warpins: 1 ---
+	--- BLOCK #1 14-19, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
 	slot6 = slot4
-	slot4 = slot4.SetParent
+	slot4 = slot4.SetTransformParent
 	slot7 = slot1.rootObject
 	--- END OF BLOCK #1 ---
 
@@ -1245,7 +1325,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 21-23, warpins: 1 ---
+	--- BLOCK #2 20-22, warpins: 1 ---
 	slot7 = slot0.cutscene
 	slot7 = slot7.cutsceneRoot
 	slot7 = slot7.transform
@@ -1255,24 +1335,31 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 24-44, warpins: 2 ---
+	--- BLOCK #3 23-44, warpins: 2 ---
 	slot4(slot6, slot7)
 
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localPosition = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
+
+	slot4(slot6)
+
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localEulerAngles = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalRotation
+	slot7 = 0
+	slot8 = 0
+	slot9 = 0
+	slot10 = 1
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.one
-	slot4.localScale = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalScale
+
+	slot4(slot6)
+
 	slot4 = table
 	slot4 = slot4.insert
 	slot6 = slot0.virtualEntities
@@ -1335,11 +1422,10 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 16-22, warpins: 1 ---
+	--- BLOCK #3 16-21, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
 	slot6 = slot4
-	slot4 = slot4.SetParent
+	slot4 = slot4.SetTransformParent
 	slot7 = slot1.rootObject
 	--- END OF BLOCK #3 ---
 
@@ -1350,7 +1436,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 23-25, warpins: 1 ---
+	--- BLOCK #4 22-24, warpins: 1 ---
 	slot7 = slot0.cutscene
 	slot7 = slot7.cutsceneRoot
 	slot7 = slot7.transform
@@ -1360,24 +1446,31 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 26-46, warpins: 2 ---
+	--- BLOCK #5 25-46, warpins: 2 ---
 	slot4(slot6, slot7)
 
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localPosition = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
+
+	slot4(slot6)
+
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.zero
-	slot4.localEulerAngles = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalRotation
+	slot7 = 0
+	slot8 = 0
+	slot9 = 0
+	slot10 = 1
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot5 = slot5.one
-	slot4.localScale = slot5
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalScale
+
+	slot4(slot6)
+
 	slot4 = table
 	slot4 = slot4.insert
 	slot6 = slot0.virtualEntities
@@ -1897,17 +1990,20 @@ end
 
 slot9.stop = slot10
 
-slot10 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot5 = slot0.cutscene
-	slot7 = slot5
-	slot5 = slot5.Rebind
-	slot8 = slot1
-	slot9 = slot2
-	slot10 = slot3
-	slot11 = slot4
+slot10 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot8 = slot0.cutscene
+	slot10 = slot8
+	slot8 = slot8.Rebind
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3
+	slot14 = slot4
+	slot15 = slot5
+	slot16 = slot6
+	slot17 = slot7
 
-	slot5(slot7, slot8, slot9, slot10, slot11)
+	slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1917,6 +2013,24 @@ slot10 = function(slot0, slot1, slot2, slot3, slot4)
 end
 
 slot9.rebind = slot10
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = slot0.cutscene
+	slot4 = slot2
+	slot2 = slot2.RebindAnimator
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.rebindAnimator = slot10
 
 slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
@@ -2005,10 +2119,8 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 8-12, warpins: 1 ---
-	slot4 = NotNil
-	slot6 = slot2.eModel
-	slot4 = slot4(slot6)
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot4 = slot2.eModel
 	--- END OF BLOCK #1 ---
 
 	slot4 = if slot4 then
@@ -2018,7 +2130,7 @@ slot10 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 13-18, warpins: 1 ---
+	--- BLOCK #2 11-16, warpins: 1 ---
 	slot4 = slot0.cutscene
 	slot6 = slot4
 	slot4 = slot4.SetRefEntity
@@ -2032,7 +2144,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 19-19, warpins: 3 ---
+	--- BLOCK #3 17-17, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -2359,10 +2471,21 @@ end
 slot9.onTimelineResInvalid = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = ClientConst
 	slot1 = slot1.CUTSCENE_STATE_STOP
 	slot0.playState = slot1
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.camera
+	slot3 = slot1
+	slot1 = slot1.tryResetWorldCameraEnable
+	slot4 = ClientConst
+	slot4 = slot4.CameraDisableReason
+	slot4 = slot4.Cutscene
+
+	slot1(slot3, slot4)
+
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.cutscene
@@ -2382,7 +2505,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #1 14-16, warpins: 1 ---
+	--- BLOCK #1 23-25, warpins: 1 ---
 	slot1 = slot0.endCallback
 	slot3 = slot0
 
@@ -2393,7 +2516,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-20, warpins: 2 ---
+	--- BLOCK #2 26-29, warpins: 2 ---
 	slot1 = slot0.extraData
 	slot1 = slot1.endCallback
 	--- END OF BLOCK #2 ---
@@ -2405,7 +2528,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #3 21-24, warpins: 1 ---
+	--- BLOCK #3 30-33, warpins: 1 ---
 	slot1 = slot0.extraData
 	slot1 = slot1.endCallback
 	slot3 = slot0
@@ -2417,7 +2540,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-28, warpins: 2 ---
+	--- BLOCK #4 34-37, warpins: 2 ---
 	slot1 = slot0.extraData
 	slot1 = slot1.playEndCallback
 	--- END OF BLOCK #4 ---
@@ -2429,7 +2552,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #5 29-32, warpins: 1 ---
+	--- BLOCK #5 38-41, warpins: 1 ---
 	slot1 = slot0.extraData
 	slot1 = slot1.playEndCallback
 	slot3 = slot0
@@ -2441,7 +2564,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 33-36, warpins: 2 ---
+	--- BLOCK #6 42-45, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	--- END OF BLOCK #6 ---
@@ -2453,7 +2576,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #7 37-55, warpins: 1 ---
+	--- BLOCK #7 46-64, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.sendCustomLog
 	slot3 = Const
@@ -2480,7 +2603,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #8 56-64, warpins: 1 ---
+	--- BLOCK #8 65-73, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
@@ -2497,14 +2620,14 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #9 65-65, warpins: 2 ---
+	--- BLOCK #9 74-74, warpins: 2 ---
 	slot5 = 0
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 66-67, warpins: 2 ---
+	--- BLOCK #10 75-76, warpins: 2 ---
 	slot4.duration = slot5
 
 	slot1(slot3, slot4)
@@ -2514,7 +2637,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 68-68, warpins: 2 ---
+	--- BLOCK #11 77-77, warpins: 2 ---
 	return
 	--- END OF BLOCK #11 ---
 

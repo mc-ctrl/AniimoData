@@ -86,11 +86,9 @@ end
 slot7.destroy = slot8
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = NotNil
-	slot3 = slot0.master
-	slot3 = slot3.eModel
-	slot1 = slot1(slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.master
+	slot1 = slot1.eModel
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -100,7 +98,7 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
 	slot1 = slot0.isTriggered
 	--- END OF BLOCK #1 ---
 
@@ -111,7 +109,7 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #2 10-16, warpins: 1 ---
+	--- BLOCK #2 8-14, warpins: 1 ---
 	slot1 = slot0.master
 	slot1 = slot1.eModel
 	slot3 = slot1
@@ -125,7 +123,7 @@ slot8 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 17-22, warpins: 1 ---
+	--- BLOCK #3 15-20, warpins: 1 ---
 	slot1 = slot0.master
 	slot1 = slot1.eModel
 	slot3 = slot1
@@ -139,7 +137,7 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-23, warpins: 3 ---
+	--- BLOCK #4 21-21, warpins: 3 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -150,11 +148,9 @@ end
 slot7.onMasterModelLoaded = slot8
 
 slot8 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot0.master
-	slot5 = slot5.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0.master
+	slot3 = slot3.eModel
 	--- END OF BLOCK #0 ---
 
 	slot3 = if slot3 then
@@ -164,7 +160,7 @@ slot8 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 7-9, warpins: 1 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
 	slot3 = slot0.isTriggered
 	--- END OF BLOCK #1 ---
 
@@ -175,7 +171,7 @@ slot8 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #2 10-16, warpins: 1 ---
+	--- BLOCK #2 8-14, warpins: 1 ---
 	slot3 = slot0.master
 	slot3 = slot3.eModel
 	slot5 = slot3
@@ -189,7 +185,7 @@ slot8 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 17-22, warpins: 1 ---
+	--- BLOCK #3 15-20, warpins: 1 ---
 	slot3 = slot0.master
 	slot3 = slot3.eModel
 	slot5 = slot3
@@ -203,7 +199,7 @@ slot8 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-23, warpins: 3 ---
+	--- BLOCK #4 21-21, warpins: 3 ---
 	return
 	--- END OF BLOCK #4 ---
 

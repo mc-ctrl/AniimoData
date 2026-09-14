@@ -1,4 +1,4 @@
---- BLOCK #0 1-27, warpins: 1 ---
+--- BLOCK #0 1-29, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -39,6 +39,95 @@ slot6 = function(slot0, slot1, slot2, slot3)
 end
 
 slot2.ctor = slot6
+
+slot6 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.getSpace
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot3 = slot2.sandboxes
+	slot4 = slot1.sandboxId
+	slot3 = slot3[slot4]
+
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-17, warpins: 2 ---
+	slot6 = slot3
+	slot4 = slot3.getGameplay
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 18-22, warpins: 1 ---
+	slot5 = slot4.type
+	slot6 = Const
+	slot6 = slot6.GAME_PLAY_RACING_TEMPLE
+
+	--- END OF BLOCK #5 ---
+
+	if slot5 == slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-23, warpins: 1 ---
+	return slot4
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot2.getGameplay = slot6
 
 slot6 = function(slot0)
 	--- BLOCK #0 1-97, warpins: 1 ---
@@ -152,9 +241,12 @@ slot6 = function(slot0)
 	slot4 = "Status"
 
 	slot5 = function(slot0)
-		--- BLOCK #0 1-4, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.gameplay
+		slot3 = slot1
+		slot1 = slot1.getGameplay
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #0 ---
 
 		slot1 = if slot1 then
@@ -164,22 +256,20 @@ slot6 = function(slot0)
 		end
 
 
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.gameplay
-		slot1 = slot1.status
+		--- BLOCK #1 8-9, warpins: 1 ---
+		slot2 = slot1.status
 
-		return slot1
+		return slot2
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 9-10, warpins: 2 ---
-		slot1 = 0
+		--- BLOCK #2 10-11, warpins: 2 ---
+		slot2 = 0
 
-		return slot1
+		return slot2
 		--- END OF BLOCK #2 ---
 
 
@@ -193,9 +283,12 @@ slot6 = function(slot0)
 	slot4 = "Stage"
 
 	slot5 = function(slot0)
-		--- BLOCK #0 1-4, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.gameplay
+		slot3 = slot1
+		slot1 = slot1.getGameplay
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #0 ---
 
 		slot1 = if slot1 then
@@ -205,22 +298,20 @@ slot6 = function(slot0)
 		end
 
 
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.gameplay
-		slot1 = slot1.curStage
+		--- BLOCK #1 8-9, warpins: 1 ---
+		slot2 = slot1.curStage
 
-		return slot1
+		return slot2
 
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 9-10, warpins: 2 ---
-		slot1 = 0
+		--- BLOCK #2 10-11, warpins: 2 ---
+		slot2 = 0
 
-		return slot1
+		return slot2
 		--- END OF BLOCK #2 ---
 
 
@@ -278,7 +369,7 @@ slot6 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 13-70, warpins: 1 ---
+	--- BLOCK #4 13-69, warpins: 1 ---
 	slot6 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
@@ -506,8 +597,8 @@ slot6 = function(slot0, slot1, slot2)
 	slot20 = slot0.valueInput_RestartDelayTime
 	slot16 = slot16(slot18, slot19, slot20)
 	slot15.restartDelayTime = slot16
-	slot11 = slot11(slot13, slot14, slot15)
-	slot0.gameplay = slot11
+
+	slot11(slot13, slot14, slot15)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -515,14 +606,14 @@ slot6 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 71-71, warpins: 2 ---
+	--- BLOCK #5 70-70, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 72-72, warpins: 2 ---
+	--- BLOCK #6 71-71, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 

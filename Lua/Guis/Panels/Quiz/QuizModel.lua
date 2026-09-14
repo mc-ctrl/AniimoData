@@ -16,9 +16,9 @@ slot6 = "QuizModel"
 slot7 = slot0
 slot4 = slot4(slot6, slot7)
 slot5 = {
+	STORY = 3,
 	MULTI = 2,
-	SINGLE = 1,
-	STORY = 3
+	SINGLE = 1
 }
 slot4.MODE = slot5
 slot5 = {

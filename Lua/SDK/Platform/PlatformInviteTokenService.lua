@@ -15,11 +15,11 @@ slot4 = {}
 slot5 = slot3.TokenType
 slot4.TokenType = slot5
 slot5 = {
-	TIMEOUT = "timeout",
 	CLEARED = "cleared",
-	SEND_FAILED = "send_failed",
 	INVALID_TOKEN_TYPE = "invalid_token_type",
-	SUCCESS = "success"
+	SUCCESS = "success",
+	TIMEOUT = "timeout",
+	SEND_FAILED = "send_failed"
 }
 slot4.ErrorCode = slot5
 slot5 = 10
@@ -162,10 +162,10 @@ slot5 = function(slot0, slot1)
 
 	--- BLOCK #1 15-27, warpins: 1 ---
 	slot4 = {
-		reqSt = 0,
 		reqSeq = 0,
 		expireSt = 0,
-		token = ""
+		token = "",
+		reqSt = 0
 	}
 	slot5 = PlatformInviteTokenService
 	slot5 = slot5.normalizeTokenType

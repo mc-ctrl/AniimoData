@@ -1,4 +1,4 @@
---- BLOCK #0 1-94, warpins: 1 ---
+--- BLOCK #0 1-99, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -23,13 +23,16 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
-slot8 = slot3.LiteClass
-slot10 = "DungeonNode"
-slot11 = slot5
-slot8 = slot8(slot10, slot11)
-slot9 = unpack
+slot8 = require
+slot10 = "Entities.SpaceEntities.PlayerComponent.PlayerRogue.rogueservice.RougeStartLogic"
+slot8 = slot8(slot10)
+slot9 = slot3.LiteClass
+slot11 = "DungeonNode"
+slot12 = slot5
+slot9 = slot9(slot11, slot12)
+slot10 = unpack
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -84,7 +87,7 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -139,7 +142,7 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -199,7 +202,7 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 2
@@ -270,7 +273,7 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -312,7 +315,7 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -378,7 +381,7 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -442,7 +445,7 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -502,7 +505,7 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot18 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.players
@@ -539,7 +542,7 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.players
@@ -595,7 +598,7 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 3
@@ -664,7 +667,7 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot21 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -724,7 +727,7 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -803,7 +806,7 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -863,7 +866,7 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -936,7 +939,7 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 2
@@ -1110,15 +1113,15 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot26 = 43200
-slot27 = {}
-slot28 = {
+slot27 = 43200
+slot28 = {}
+slot29 = {
 	1,
 	102410001
 }
-slot27[1] = slot28
+slot28[1] = slot29
 
-slot28 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getMainPlayer
@@ -1143,7 +1146,7 @@ slot28 = function(slot0, slot1)
 
 end
 
-slot29 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 2
@@ -1209,7 +1212,7 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 1
@@ -1315,7 +1318,7 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot31 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = #slot1
 	slot3 = 2
@@ -1381,7 +1384,7 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot32 = function(slot0, slot1)
+slot33 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = arg
 	slot2 = #slot2
@@ -1448,47 +1451,6 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot33 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 3-5, warpins: 1 ---
-	slot2 = slot0.forceEnterCombat
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 6-8, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.forceEnterCombat
-
-	slot2(slot4)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 9-9, warpins: 3 ---
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
 slot34 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
@@ -1501,7 +1463,7 @@ slot34 = function(slot0, slot1)
 
 
 	--- BLOCK #1 3-5, warpins: 1 ---
-	slot2 = slot0.forceLeaveCombat
+	slot2 = slot0.forceEnterCombat
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
@@ -1513,7 +1475,7 @@ slot34 = function(slot0, slot1)
 
 	--- BLOCK #2 6-8, warpins: 1 ---
 	slot4 = slot0
-	slot2 = slot0.forceLeaveCombat
+	slot2 = slot0.forceEnterCombat
 
 	slot2(slot4)
 
@@ -1542,6 +1504,47 @@ slot35 = function(slot0, slot1)
 
 
 	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0.forceLeaveCombat
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-8, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.forceLeaveCombat
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot36 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
 	slot2 = slot0.RogueSendSomeReward
 	--- END OF BLOCK #1 ---
 
@@ -1571,7 +1574,7 @@ slot35 = function(slot0, slot1)
 
 end
 
-slot36 = function(slot0, slot1)
+slot37 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1613,34 +1616,104 @@ slot36 = function(slot0, slot1)
 
 end
 
-slot37 = {}
-slot37.fbCreateSpawner = slot10
-slot37.fbDestroySpawner = slot11
-slot37.fbTeleportPlayer = slot12
-slot37.fbTeleportEntity = slot13
-slot37.fbAddBuff = slot15
-slot37.fbRemoveBuff = slot17
-slot37.fbRemoveAllBuff = slot18
-slot37.fbRemoveAllPetAllbuff = slot19
-slot37.fbRecoverPlayerHp = slot21
-slot37.fbRecoverAllPetHp = slot22
-slot37.fbPlayerCastAbility = slot23
-slot37.fbPetCastAbility = slot24
-slot37.fbSelectBuff = slot14
-slot37.fbForceTmpPetTeam = slot25
-slot37.fbForceMorphlingPet = slot28
-slot37.fbShowStage = slot29
-slot37.fbShowChallengeSuccess = slot30
-slot37.fbSelectBuffByArgs = slot31
-slot37.fbAddBuffByArgs = slot32
-slot37.fbForceEnterCombat = slot33
-slot37.fbForceLeaveCombat = slot34
-slot37.fbRogueSendSomeReward = slot35
-slot37.fbLevelStart = slot36
-slot37.fbRogueAddPuppetBuff = slot16
-slot37.fbRemoveRogueBuffs = slot20
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
 
-slot38 = function(slot0, slot1, slot2, slot3)
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot2 = #slot1
+	slot3 = 1
+
+	--- END OF BLOCK #1 ---
+
+	if slot2 < slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-12, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.getMainPlayer
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-13, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-19, warpins: 2 ---
+	slot3 = RougeStartLogic
+	slot3 = slot3.startRogue
+	slot5 = slot2
+	slot6 = slot1[1]
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot39 = {}
+slot39.fbCreateSpawner = slot11
+slot39.fbDestroySpawner = slot12
+slot39.fbTeleportPlayer = slot13
+slot39.fbTeleportEntity = slot14
+slot39.fbAddBuff = slot16
+slot39.fbRemoveBuff = slot18
+slot39.fbRemoveAllBuff = slot19
+slot39.fbRemoveAllPetAllbuff = slot20
+slot39.fbRecoverPlayerHp = slot22
+slot39.fbRecoverAllPetHp = slot23
+slot39.fbPlayerCastAbility = slot24
+slot39.fbPetCastAbility = slot25
+slot39.fbSelectBuff = slot15
+slot39.fbForceTmpPetTeam = slot26
+slot39.fbForceMorphlingPet = slot29
+slot39.fbShowStage = slot30
+slot39.fbShowChallengeSuccess = slot31
+slot39.fbSelectBuffByArgs = slot32
+slot39.fbAddBuffByArgs = slot33
+slot39.fbForceEnterCombat = slot34
+slot39.fbForceLeaveCombat = slot35
+slot39.fbRogueSendSomeReward = slot36
+slot39.fbLevelStart = slot37
+slot39.fbRogueAddPuppetBuff = slot17
+slot39.fbRemoveRogueBuffs = slot21
+slot39.fbStartNewRogue = slot38
+
+slot40 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = DungeonNode
 	slot4 = slot4.super
@@ -1659,9 +1732,9 @@ slot38 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.ctor = slot38
+slot9.ctor = slot40
 
-slot38 = function(slot0)
+slot40 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = DungeonNode
 	slot1 = slot1.super
@@ -1748,9 +1821,9 @@ slot38 = function(slot0)
 
 end
 
-slot8.registerPorts = slot38
+slot9.registerPorts = slot40
 
-slot38 = function(slot0, slot1, slot2)
+slot40 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1883,9 +1956,9 @@ slot38 = function(slot0, slot1, slot2)
 
 end
 
-slot8.doActions = slot38
+slot9.doActions = slot40
 
-slot38 = function(slot0, slot1, slot2)
+slot40 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
@@ -2124,9 +2197,9 @@ slot38 = function(slot0, slot1, slot2)
 
 end
 
-slot8.On_In_PortCalled = slot38
+slot9.On_In_PortCalled = slot40
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

@@ -88,146 +88,217 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-10, warpins: 2 ---
-	slot1 = slot0.needCheckDis
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.getEntity
+	slot1 = slot1(slot3)
+	slot2 = slot0.dist
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-13, warpins: 1 ---
-	slot1 = slot0.targetPos
+	--- BLOCK #3 14-16, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getConfigDis
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #3 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-27, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getConfigDis
-	slot1 = slot1(slot3)
-	slot2 = Vector3
-	slot2 = slot2.Distance
-	slot4 = pg
-	slot4 = slot4.pawn
-	slot6 = slot4
-	slot4 = slot4.getPosition
-	slot4 = slot4(slot6)
-	slot5 = slot0.targetPos
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #4 17-18, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	if slot1 ~= 0 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 28-29, warpins: 1 ---
+	--- BLOCK #5 19-20, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	if slot1 < slot2 then
+	if slot2 ~= 0 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 30-31, warpins: 1 ---
+	--- BLOCK #6 21-33, warpins: 1 ---
+	slot3 = Vector3
+	slot3 = slot3.Distance
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot7 = slot5
+	slot5 = slot5.getPosition
+	slot5 = slot5(slot7)
+	slot8 = slot1
+	slot6 = slot1.getPosition
+	MULTRES = slot6(slot8)
+	slot3 = slot3(slot5, MULTRES)
+	--- END OF BLOCK #6 ---
+
+	if slot2 < slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 34-35, warpins: 1 ---
 	slot3 = false
 
 	return slot3
 
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 32-38, warpins: 5 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.isInCatchMode
-	slot1 = slot1(slot3)
 	--- END OF BLOCK #7 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 39-40, warpins: 1 ---
-	slot1 = false
-
-	return slot1
-
+	--- BLOCK #8 36-38, warpins: 4 ---
+	slot3 = slot0.needCheckDis
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 41-43, warpins: 2 ---
-	slot1 = slot0.canInteractiveFunc
-	--- END OF BLOCK #9 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #10
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 44-46, warpins: 1 ---
-	slot1 = slot0.canInteractiveFunc
-	slot3 = slot0
+	--- BLOCK #9 39-41, warpins: 1 ---
+	slot3 = slot0.targetPos
+	--- END OF BLOCK #9 ---
 
-	return slot1(slot3)
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
 
+
+	--- BLOCK #10 42-52, warpins: 1 ---
+	slot3 = Vector3
+	slot3 = slot3.Distance
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot7 = slot5
+	slot5 = slot5.getPosition
+	slot5 = slot5(slot7)
+	slot6 = slot0.targetPos
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #11 47-49, warpins: 2 ---
-	slot1 = slot0.checkEntity
+	--- BLOCK #11 53-54, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
-	slot1 = if slot1 then
+	if slot2 < slot3 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 50-54, warpins: 1 ---
-	slot1 = InteractionUnitPlayerFunc
-	slot1 = slot1.super
-	slot1 = slot1.canInteractive
-	slot3 = slot0
+	--- BLOCK #12 55-56, warpins: 1 ---
+	slot4 = false
 
-	return slot1(slot3)
+	return slot4
 
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 55-56, warpins: 2 ---
-	slot1 = true
-
-	return slot1
+	--- BLOCK #13 57-63, warpins: 5 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInCatchMode
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 64-65, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 66-68, warpins: 2 ---
+	slot3 = slot0.canInteractiveFunc
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 69-71, warpins: 1 ---
+	slot3 = slot0.canInteractiveFunc
+	slot5 = slot0
+
+	return slot3(slot5)
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 72-74, warpins: 2 ---
+	slot3 = slot0.checkEntity
+	--- END OF BLOCK #17 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 75-79, warpins: 1 ---
+	slot3 = InteractionUnitPlayerFunc
+	slot3 = slot3.super
+	slot3 = slot3.canInteractive
+	slot5 = slot0
+
+	return slot3(slot5)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 80-81, warpins: 2 ---
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #19 ---
 
 
 

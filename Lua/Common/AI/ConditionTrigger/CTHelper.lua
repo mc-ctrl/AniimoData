@@ -1,4 +1,4 @@
---- BLOCK #0 1-370, warpins: 1 ---
+--- BLOCK #0 1-382, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.Meta.BehaviorPathMapData"
 slot0 = slot0(slot2)
@@ -80,223 +80,227 @@ slot25 = slot25(slot27)
 slot26 = require
 slot28 = "Common.Math.vector3"
 slot26 = slot26(slot28)
-slot27 = {}
-slot28 = {}
-slot29 = slot16.add
-slot28.Add = slot29
-slot29 = slot18.checkCanMoveToTarget
-slot28.CheckCanMoveToTarget = slot29
-slot29 = slot15.checkCanUseSkill
-slot28.CheckCanUseSkill = slot29
-slot29 = slot15.checkIsBreakST
-slot28.CheckEntIsBreak = slot29
-slot29 = slot15.checkIsChargeSkill
-slot28.CheckEntIsChargeSkill = slot29
-slot29 = slot21.checkEntityExist
-slot28.CheckEntityExist = slot29
-slot29 = slot21.checkHasAbility
-slot28.CheckHasAbility = slot29
-slot29 = slot21.checkHasChemState
-slot28.CheckHasChemState = slot29
-slot29 = slot21.checkEntityHasTag
-slot28.CheckHasEntityTag = slot29
-slot29 = slot21.checkInAIState
-slot28.CheckInAIState = slot29
-slot29 = slot21.checkInDialog
-slot28.CheckInDialog = slot29
-slot29 = slot15.checkIsCamouflage
-slot28.CheckIsCamouflage = slot29
-slot29 = slot15.checkIsDead
-slot28.CheckIsDead = slot29
-slot29 = slot15.checkIsInCapture
-slot28.CheckIsInCapture = slot29
-slot29 = slot18.checkIsInRangeTgt2D
-slot28.CheckIsInRangeTgt2D = slot29
-slot29 = slot19.checkPetActionMode
-slot28.CheckPetActionMode = slot29
-slot29 = slot21.checkRelation
-slot28.CheckRelation = slot29
-slot29 = slot17.checkRouteIdIsValid
-slot28.CheckRouteIdIsValid = slot29
-slot29 = slot17.checkRouteIdIsValidSimple
-slot28.CheckRouteIdIsValidSimple = slot29
-slot29 = slot15.checkSkillCanCast
-slot28.CheckSkillCanCast = slot29
-slot29 = slot21.checkTargetLabel
-slot28.CheckTargetLabel = slot29
-slot29 = slot21.checkTargetMBTI
-slot28.CheckTargetMBTI = slot29
-slot29 = slot16.div
-slot28.Div = slot29
-slot29 = slot21.getActorId
-slot28.GetActorId = slot29
-slot29 = slot17.getAIBlackboardValue
-slot28.GetAIBlackboardValue = slot29
-slot29 = slot21.getAngleByEntity
-slot28.GetAngleByEntity = slot29
-slot29 = slot17.getAnimTagDuration
-slot28.GetAnimTagDuration = slot29
-slot29 = slot17.getAuthorityPlayer
-slot28.GetAuthorityPlayer = slot29
-slot29 = slot21.getBodyHeight
-slot28.GetBodyHeight = slot29
-slot29 = slot17.getBornState
-slot28.GetBornState = slot29
-slot29 = slot21.getChestGuideLevel
-slot28.GetChestGuideLevel = slot29
-slot29 = slot20.getClimbDataIdFromResPoint
-slot28.GetClimbDataIdFromResPoint = slot29
-slot29 = slot21.getControllingPetActorId
-slot28.GetControllingPetActorId = slot29
-slot29 = slot21.getCurMeteorologyId
-slot28.GetCurMeteorologyId = slot29
-slot29 = slot21.getCurWeatherId
-slot28.GetCurWeatherId = slot29
-slot29 = slot17.getDayTime
-slot28.GetDayTime = slot29
-slot29 = slot21.getDistance
-slot28.GetDistance = slot29
-slot29 = slot20.getDistanceFromEntityToResPointPort
-slot28.GetDistanceFromEntityToResPointPort = slot29
-slot29 = slot17.getEntConfigData
-slot28.GetEntConfigData = slot29
-slot29 = slot21.getEntityCacheValue
-slot28.GetEntityCacheValue = slot29
-slot29 = slot20.getEntityIdByResPointId
-slot28.GetEntityIdByResPointId = slot29
-slot29 = slot17.getEntPosition
-slot28.GetEntPosition = slot29
-slot29 = slot17.getEntProperty
-slot28.GetEntProperty = slot29
-slot29 = slot17.getForbidFollowMasterCharStateList
-slot28.GetForbidFollowMasterCharStateList = slot29
-slot29 = slot17.getGameTime
-slot28.GetGameTime = slot29
-slot29 = slot15.getHpPercent
-slot28.GetHpPercent = slot29
-slot29 = slot17.getId
-slot28.GetId = slot29
-slot29 = slot15.getInteractEnvObj
-slot28.GetInteractEnvObj = slot29
-slot29 = slot17.getLeaderId
-slot28.GetLeaderId = slot29
-slot29 = slot21.getNpcStatusConfigData
-slot28.GetNpcStatusConfigData = slot29
-slot29 = slot21.getNpcStatusServerData
-slot28.GetNpcStatusServerData = slot29
-slot29 = slot17.getPartnerIds
-slot28.GetPartnerIds = slot29
-slot29 = slot17.getPerceptibilityTable
-slot28.GetPerceptibilityTable = slot29
-slot29 = slot17.getPerceptibilityValue
-slot28.GetPerceptibilityValue = slot29
-slot29 = slot17.getPetData
-slot28.GetPetData = slot29
-slot29 = slot17.getPetLockedId
-slot28.GetPetLockedId = slot29
-slot29 = slot15.getMasterId
-slot28.GetPetMaster = slot29
-slot29 = slot21.getPlayerVar
-slot28.GetPlayerVar = slot29
-slot29 = slot17.getPuppetData
-slot28.GetPuppetData = slot29
-slot29 = slot20.getResPointPortPosition
-slot28.GetResPointPortPosition = slot29
-slot29 = slot17.getRouteIdFromEntity
-slot28.GetRouteIdFromEntity = slot29
-slot29 = slot17.getRouteIdFromEntitySimple
-slot28.GetRouteIdFromEntitySimple = slot29
-slot29 = slot17.getRouteIdFromResPoint
-slot28.GetRouteIdFromResPoint = slot29
-slot29 = slot17.getSkillProperty
-slot28.GetSkillProperty = slot29
-slot29 = slot17.getSkillType
-slot28.GetSkillType = slot29
-slot29 = slot21.getStaticId
-slot28.GetStaticId = slot29
-slot29 = slot16.getTableLength
-slot28.GetTableLength = slot29
-slot29 = slot16.getTableValueByKey
-slot28.GetTableValueByKey = slot29
-slot29 = slot15.getTargetBuffLayerCount
-slot28.GetTargetBuffLayerCount = slot29
-slot29 = slot21.isChildOfCharState
-slot28.IsChildOfCharState = slot29
-slot29 = slot21.isChildOrTransitionOfCharState
-slot28.IsChildOrTransitionOfCharState = slot29
-slot29 = slot21.isControllingPet
-slot28.IsControllingPet = slot29
-slot29 = slot21.isCurCombatPet
-slot28.IsCurCombatPet = slot29
-slot29 = slot21.isEntityType
-slot28.IsEntityType = slot29
-slot29 = slot21.isEnvObjCanInteract
-slot28.IsEnvObjCanInteract = slot29
-slot29 = slot16.isEqual
-slot28.IsEqual = slot29
-slot29 = slot21.isEthnicGroup
-slot28.IsEthnicGroup = slot29
-slot29 = slot16.isGreaterOrEqual
-slot28.IsGreaterOrEqual = slot29
-slot29 = slot16.isGreaterThan
-slot28.IsGreaterThan = slot29
-slot29 = slot21.isInAnimState
-slot28.IsInAnimState = slot29
-slot29 = slot21.isInAnimTag
-slot28.IsInAnimTag = slot29
-slot29 = slot21.isInBehavTag
-slot28.IsInBehavTag = slot29
-slot29 = slot21.isInCatchMode
-slot28.IsInCatchMode = slot29
-slot29 = slot21.isInCharState
-slot28.IsInCharState = slot29
-slot29 = slot21.isInCrouch
-slot28.IsInCrouch = slot29
-slot29 = slot21.isInGroupBehaviour
-slot28.IsInGroupBehaviour = slot29
-slot29 = slot21.isInMagnesisMode
-slot28.IsInMagnesisMode = slot29
-slot29 = slot21.isInPetBallExpAction
-slot28.IsInPetBallExpAction = slot29
-slot29 = slot21.isInSelfieMode
-slot28.IsInSelfieMode = slot29
-slot29 = slot15.isInSkill
-slot28.IsInSkill = slot29
-slot29 = slot15.isInUltimateSkill
-slot28.IsInUltimateSkill = slot29
-slot29 = slot16.isLessOrEqual
-slot28.IsLessOrEqual = slot29
-slot29 = slot16.isLessThan
-slot28.IsLessThan = slot29
-slot29 = slot16.isNil
-slot28.IsNil = slot29
-slot29 = slot22.isOnWater
-slot28.IsOnWater = slot29
-slot29 = slot15.isInCombat
-slot28.IsPlayerInCombat = slot29
-slot29 = slot21.isPlayerTwinPet
-slot28.IsPlayerTwinPet = slot29
-slot29 = slot21.isPuppetInCallFriend
-slot28.IsPuppetInCallFriend = slot29
-slot29 = slot16.isEqual
-slot28.IsSameDayTime = slot29
-slot29 = slot21.isSameSpecies
-slot28.IsSameSpecies = slot29
-slot29 = slot16.isTableEmpty
-slot28.IsTableEmpty = slot29
-slot29 = slot21.isTwinPet
-slot28.IsTwinPet = slot29
-slot29 = slot16.mod
-slot28.Mod = slot29
-slot29 = slot16.mul
-slot28.Mul = slot29
-slot29 = slot16.randomInteger
-slot28.RandomInteger = slot29
-slot29 = slot16.sub
-slot28.Sub = slot29
-slot29 = {}
+slot27 = select
+slot28 = ipairs
+slot29 = pairs
+slot30 = pg
+slot31 = {}
+slot32 = {}
+slot33 = slot16.add
+slot32.Add = slot33
+slot33 = slot18.checkCanMoveToTarget
+slot32.CheckCanMoveToTarget = slot33
+slot33 = slot15.checkCanUseSkill
+slot32.CheckCanUseSkill = slot33
+slot33 = slot15.checkIsBreakST
+slot32.CheckEntIsBreak = slot33
+slot33 = slot15.checkIsChargeSkill
+slot32.CheckEntIsChargeSkill = slot33
+slot33 = slot21.checkEntityExist
+slot32.CheckEntityExist = slot33
+slot33 = slot21.checkHasAbility
+slot32.CheckHasAbility = slot33
+slot33 = slot21.checkHasChemState
+slot32.CheckHasChemState = slot33
+slot33 = slot21.checkEntityHasTag
+slot32.CheckHasEntityTag = slot33
+slot33 = slot21.checkInAIState
+slot32.CheckInAIState = slot33
+slot33 = slot21.checkInDialog
+slot32.CheckInDialog = slot33
+slot33 = slot15.checkIsCamouflage
+slot32.CheckIsCamouflage = slot33
+slot33 = slot15.checkIsDead
+slot32.CheckIsDead = slot33
+slot33 = slot15.checkIsInCapture
+slot32.CheckIsInCapture = slot33
+slot33 = slot18.checkIsInRangeTgt2D
+slot32.CheckIsInRangeTgt2D = slot33
+slot33 = slot19.checkPetActionMode
+slot32.CheckPetActionMode = slot33
+slot33 = slot21.checkRelation
+slot32.CheckRelation = slot33
+slot33 = slot17.checkRouteIdIsValid
+slot32.CheckRouteIdIsValid = slot33
+slot33 = slot17.checkRouteIdIsValidSimple
+slot32.CheckRouteIdIsValidSimple = slot33
+slot33 = slot15.checkSkillCanCast
+slot32.CheckSkillCanCast = slot33
+slot33 = slot21.checkTargetLabel
+slot32.CheckTargetLabel = slot33
+slot33 = slot21.checkTargetMBTI
+slot32.CheckTargetMBTI = slot33
+slot33 = slot16.div
+slot32.Div = slot33
+slot33 = slot21.getActorId
+slot32.GetActorId = slot33
+slot33 = slot17.getAIBlackboardValue
+slot32.GetAIBlackboardValue = slot33
+slot33 = slot21.getAngleByEntity
+slot32.GetAngleByEntity = slot33
+slot33 = slot17.getAnimTagDuration
+slot32.GetAnimTagDuration = slot33
+slot33 = slot17.getAuthorityPlayer
+slot32.GetAuthorityPlayer = slot33
+slot33 = slot21.getBodyHeight
+slot32.GetBodyHeight = slot33
+slot33 = slot17.getBornState
+slot32.GetBornState = slot33
+slot33 = slot21.getChestGuideLevel
+slot32.GetChestGuideLevel = slot33
+slot33 = slot20.getClimbDataIdFromResPoint
+slot32.GetClimbDataIdFromResPoint = slot33
+slot33 = slot21.getControllingPetActorId
+slot32.GetControllingPetActorId = slot33
+slot33 = slot21.getCurMeteorologyId
+slot32.GetCurMeteorologyId = slot33
+slot33 = slot21.getCurWeatherId
+slot32.GetCurWeatherId = slot33
+slot33 = slot17.getDayTime
+slot32.GetDayTime = slot33
+slot33 = slot21.getDistance
+slot32.GetDistance = slot33
+slot33 = slot20.getDistanceFromEntityToResPointPort
+slot32.GetDistanceFromEntityToResPointPort = slot33
+slot33 = slot17.getEntConfigData
+slot32.GetEntConfigData = slot33
+slot33 = slot21.getEntityCacheValue
+slot32.GetEntityCacheValue = slot33
+slot33 = slot20.getEntityIdByResPointId
+slot32.GetEntityIdByResPointId = slot33
+slot33 = slot17.getEntPosition
+slot32.GetEntPosition = slot33
+slot33 = slot17.getEntProperty
+slot32.GetEntProperty = slot33
+slot33 = slot17.getForbidFollowMasterCharStateList
+slot32.GetForbidFollowMasterCharStateList = slot33
+slot33 = slot17.getGameTime
+slot32.GetGameTime = slot33
+slot33 = slot15.getHpPercent
+slot32.GetHpPercent = slot33
+slot33 = slot17.getId
+slot32.GetId = slot33
+slot33 = slot15.getInteractEnvObj
+slot32.GetInteractEnvObj = slot33
+slot33 = slot17.getLeaderId
+slot32.GetLeaderId = slot33
+slot33 = slot21.getNpcStatusConfigData
+slot32.GetNpcStatusConfigData = slot33
+slot33 = slot21.getNpcStatusServerData
+slot32.GetNpcStatusServerData = slot33
+slot33 = slot17.getPartnerIds
+slot32.GetPartnerIds = slot33
+slot33 = slot17.getPerceptibilityTable
+slot32.GetPerceptibilityTable = slot33
+slot33 = slot17.getPerceptibilityValue
+slot32.GetPerceptibilityValue = slot33
+slot33 = slot17.getPetData
+slot32.GetPetData = slot33
+slot33 = slot17.getPetLockedId
+slot32.GetPetLockedId = slot33
+slot33 = slot15.getMasterId
+slot32.GetPetMaster = slot33
+slot33 = slot21.getPlayerVar
+slot32.GetPlayerVar = slot33
+slot33 = slot17.getPuppetData
+slot32.GetPuppetData = slot33
+slot33 = slot20.getResPointPortPosition
+slot32.GetResPointPortPosition = slot33
+slot33 = slot17.getRouteIdFromEntity
+slot32.GetRouteIdFromEntity = slot33
+slot33 = slot17.getRouteIdFromEntitySimple
+slot32.GetRouteIdFromEntitySimple = slot33
+slot33 = slot17.getRouteIdFromResPoint
+slot32.GetRouteIdFromResPoint = slot33
+slot33 = slot17.getSkillProperty
+slot32.GetSkillProperty = slot33
+slot33 = slot17.getSkillType
+slot32.GetSkillType = slot33
+slot33 = slot21.getStaticId
+slot32.GetStaticId = slot33
+slot33 = slot16.getTableLength
+slot32.GetTableLength = slot33
+slot33 = slot16.getTableValueByKey
+slot32.GetTableValueByKey = slot33
+slot33 = slot15.getTargetBuffLayerCount
+slot32.GetTargetBuffLayerCount = slot33
+slot33 = slot21.isChildOfCharState
+slot32.IsChildOfCharState = slot33
+slot33 = slot21.isChildOrTransitionOfCharState
+slot32.IsChildOrTransitionOfCharState = slot33
+slot33 = slot21.isControllingPet
+slot32.IsControllingPet = slot33
+slot33 = slot21.isCurCombatPet
+slot32.IsCurCombatPet = slot33
+slot33 = slot21.isEntityType
+slot32.IsEntityType = slot33
+slot33 = slot21.isEnvObjCanInteract
+slot32.IsEnvObjCanInteract = slot33
+slot33 = slot16.isEqual
+slot32.IsEqual = slot33
+slot33 = slot21.isEthnicGroup
+slot32.IsEthnicGroup = slot33
+slot33 = slot16.isGreaterOrEqual
+slot32.IsGreaterOrEqual = slot33
+slot33 = slot16.isGreaterThan
+slot32.IsGreaterThan = slot33
+slot33 = slot21.isInAnimState
+slot32.IsInAnimState = slot33
+slot33 = slot21.isInAnimTag
+slot32.IsInAnimTag = slot33
+slot33 = slot21.isInBehavTag
+slot32.IsInBehavTag = slot33
+slot33 = slot21.isInCatchMode
+slot32.IsInCatchMode = slot33
+slot33 = slot21.isInCharState
+slot32.IsInCharState = slot33
+slot33 = slot21.isInCrouch
+slot32.IsInCrouch = slot33
+slot33 = slot21.isInGroupBehaviour
+slot32.IsInGroupBehaviour = slot33
+slot33 = slot21.isInMagnesisMode
+slot32.IsInMagnesisMode = slot33
+slot33 = slot21.isInPetBallExpAction
+slot32.IsInPetBallExpAction = slot33
+slot33 = slot21.isInSelfieMode
+slot32.IsInSelfieMode = slot33
+slot33 = slot15.isInSkill
+slot32.IsInSkill = slot33
+slot33 = slot15.isInUltimateSkill
+slot32.IsInUltimateSkill = slot33
+slot33 = slot16.isLessOrEqual
+slot32.IsLessOrEqual = slot33
+slot33 = slot16.isLessThan
+slot32.IsLessThan = slot33
+slot33 = slot16.isNil
+slot32.IsNil = slot33
+slot33 = slot22.isOnWater
+slot32.IsOnWater = slot33
+slot33 = slot15.isInCombat
+slot32.IsPlayerInCombat = slot33
+slot33 = slot21.isPlayerTwinPet
+slot32.IsPlayerTwinPet = slot33
+slot33 = slot21.isPuppetInCallFriend
+slot32.IsPuppetInCallFriend = slot33
+slot33 = slot16.isEqual
+slot32.IsSameDayTime = slot33
+slot33 = slot21.isSameSpecies
+slot32.IsSameSpecies = slot33
+slot33 = slot16.isTableEmpty
+slot32.IsTableEmpty = slot33
+slot33 = slot21.isTwinPet
+slot32.IsTwinPet = slot33
+slot33 = slot16.mod
+slot32.Mod = slot33
+slot33 = slot16.mul
+slot32.Mul = slot33
+slot33 = slot16.randomInteger
+slot32.RandomInteger = slot33
+slot33 = slot16.sub
+slot32.Sub = slot33
+slot33 = {}
 
-slot30 = function(slot0, slot1)
+slot34 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = __useTimeCounter
 	slot2 = slot2[slot0]
@@ -367,7 +371,7 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot31 = function()
+slot35 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = {}
 	__useTimeCounter = slot0
@@ -379,9 +383,9 @@ slot31 = function()
 
 end
 
-slot27.ClearResult = slot31
+slot31.ClearResult = slot35
 
-slot31 = function()
+slot35 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -469,9 +473,9 @@ slot31 = function()
 
 end
 
-slot27.GetResult = slot31
+slot31.GetResult = slot35
 
-slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, ...)
+slot35 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, ...)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot8 = CTHelper
 	slot8 = slot8[slot6]
@@ -727,9 +731,9 @@ slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, ...)
 
 end
 
-slot27.SafeCallDebug = slot31
+slot31.SafeCallDebug = slot35
 
-slot31 = function(slot0, slot1, slot2, ...)
+slot35 = function(slot0, slot1, slot2, ...)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = CTHelper
 	slot3 = slot3[slot1]
@@ -785,9 +789,9 @@ slot31 = function(slot0, slot1, slot2, ...)
 
 end
 
-slot27.SafeCall = slot31
+slot31.SafeCall = slot35
 
-slot31 = function(slot0, slot1, slot2)
+slot35 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getValidActorId
@@ -812,9 +816,10 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot27.AddEntityTag = slot31
+slot31.AddEntityTag = slot35
+slot35 = "And"
 
-slot31 = function(slot0, ...)
+slot36 = function(slot0, ...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = select
 	slot3 = "#"
@@ -869,9 +874,10 @@ slot31 = function(slot0, ...)
 
 end
 
-slot27.And = slot31
+slot31[slot35] = slot36
+slot35 = "CreateEntityGroupBehaviour"
 
-slot31 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -976,10 +982,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot27.CreateEntityGroupBehaviour = slot31
-slot31 = "DoAction"
+slot31[slot35] = slot36
+slot35 = "DoAction"
 
-slot32 = function(slot0, slot1, ...)
+slot36 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = CTActionFunc
 	slot2 = slot2[slot1]
@@ -995,10 +1001,10 @@ slot32 = function(slot0, slot1, ...)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "DoBehaviour"
+slot31[slot35] = slot36
+slot35 = "DoBehaviour"
 
-slot32 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = BehaviorTreePlanUtils
 	slot2 = slot2.startEcologyPlanByState
@@ -1016,10 +1022,59 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "DoPatrolBehavior"
+slot31[slot35] = slot36
+slot35 = "BeginBehaviourV2"
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4)
+slot36 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.__isAdditive
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-17, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.setActive
+
+	slot2(slot4)
+
+	slot2 = BehaviorTreePlanUtils
+	slot2 = slot2.startEcologyPlanByState
+	slot4 = slot0.__agent
+	slot5 = BehaviorPathMapData
+	slot5 = slot5.EnumNameMap
+	slot5 = slot5[slot1]
+
+	slot2(slot4, slot5)
+
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot31[slot35] = slot36
+slot35 = "DoPatrolBehavior"
+
+slot36 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0.__owner
 	slot6 = nil
@@ -1282,10 +1337,10 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "GetAnimState"
+slot31[slot35] = slot36
+slot35 = "GetAnimState"
 
-slot32 = function(slot0, slot1, slot2)
+slot36 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = AICtrConstData
 	slot3 = slot3.getAnimState
@@ -1344,10 +1399,10 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "GetAoiEntityTableByLevel"
+slot31[slot35] = slot36
+slot35 = "GetAoiEntityTableByLevel"
 
-slot32 = function(slot0, slot1, slot2, slot3)
+slot36 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getTempList
@@ -1393,10 +1448,10 @@ slot32 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "GetAoiResPointPortTableByLevel"
+slot31[slot35] = slot36
+slot35 = "GetAoiResPointPortTableByLevel"
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot36 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.getValidActorId
@@ -1470,10 +1525,10 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "GetContextValue"
+slot31[slot35] = slot36
+slot35 = "GetContextValue"
 
-slot32 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getContextValue
@@ -1486,10 +1541,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "GetSelfId"
+slot31[slot35] = slot36
+slot35 = "GetSelfId"
 
-slot32 = function(slot0)
+slot36 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.__actorId
 
@@ -1500,10 +1555,10 @@ slot32 = function(slot0)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "GlobalBlackBoard"
+slot31[slot35] = slot36
+slot35 = "GlobalBlackBoard"
 
-slot32 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = BlackBoardData
 	slot2 = slot2[slot1]
@@ -1515,10 +1570,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "HasAITag"
+slot31[slot35] = slot36
+slot35 = "HasAITag"
 
-slot32 = function(slot0, slot1, ...)
+slot36 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getValidActorId
@@ -1607,10 +1662,10 @@ slot32 = function(slot0, slot1, ...)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "HasEntityTag"
+slot31[slot35] = slot36
+slot35 = "HasEntityTag"
 
-slot32 = function(slot0, slot1, ...)
+slot36 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getValidActorId
@@ -1689,10 +1744,10 @@ slot32 = function(slot0, slot1, ...)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "IsInRange"
+slot31[slot35] = slot36
+slot35 = "IsInRange"
 
-slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
+slot36 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot13 = slot0.__owner
 	slot14 = pg
@@ -1915,10 +1970,10 @@ slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 
 end
 
-slot27[slot31] = slot32
-slot31 = "Not"
+slot31[slot35] = slot36
+slot35 = "Not"
 
-slot32 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = not slot1
 
@@ -1929,10 +1984,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "Or"
+slot31[slot35] = slot36
+slot35 = "Or"
 
-slot32 = function(slot0, ...)
+slot36 = function(slot0, ...)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = select
 	slot3 = "#"
@@ -1987,10 +2042,10 @@ slot32 = function(slot0, ...)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "RemoveEntityTag"
+slot31[slot35] = slot36
+slot35 = "RemoveEntityTag"
 
-slot32 = function(slot0, slot1, slot2)
+slot36 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getValidActorId
@@ -2015,10 +2070,10 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "SelectOneByRandom"
+slot31[slot35] = slot36
+slot35 = "SelectOneByRandom"
 
-slot32 = function(slot0, slot1)
+slot36 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2065,10 +2120,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "SetAIBlackboardValue"
+slot31[slot35] = slot36
+slot35 = "SetAIBlackboardValue"
 
-slot32 = function(slot0, slot1, slot2, slot3)
+slot36 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getValidActorId
@@ -2121,10 +2176,30 @@ slot32 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "SetEntityCacheValue"
+slot31[slot35] = slot36
+slot35 = "SetCache"
 
-slot32 = function(slot0, slot1, slot2, slot3)
+slot36 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setCache
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot31[slot35] = slot36
+slot35 = "SetEntityCacheValue"
+
+slot36 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getValidActorId
@@ -2166,10 +2241,10 @@ slot32 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27[slot31] = slot32
-slot31 = "UnpackResPointPort"
+slot31[slot35] = slot36
+slot35 = "UnpackResPointPort"
 
-slot32 = function(slot0, slot1, slot2)
+slot36 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2207,9 +2282,9 @@ slot32 = function(slot0, slot1, slot2)
 
 end
 
-slot27[slot31] = slot32
+slot31[slot35] = slot36
 
-return slot27
+return slot31
 --- END OF BLOCK #0 ---
 
 

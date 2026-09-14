@@ -1,4 +1,4 @@
---- BLOCK #0 1-1310, warpins: 1 ---
+--- BLOCK #0 1-1393, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -8,81 +8,81 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
+	version = 45,
 	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/_Wild/10021_Defense/PBT_AutoCombat_10021",
-	version = 45
+	name = "ParmonBehaviorTree/SubTree/_Wild/10021_Defense/PBT_AutoCombat_10021"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "CurrentEP",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "maxSkillDist",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "skillStopDist",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[3] = slot5
 slot5 = {
 	name = "goBackDist",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[4] = slot5
 slot5 = {
 	name = "CurrentBoxDistToTarget",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[5] = slot5
 slot5 = {
 	name = "tSkillUsed",
-	type = "int",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "int"
 }
 slot4[6] = slot5
 slot5 = {
 	name = "skillId",
-	type = "int",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "int"
 }
 slot4[7] = slot5
 slot5 = {
 	name = "CurrentDistToTarget",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[8] = slot5
 slot5 = {
 	name = "CurrentHpPercent",
-	type = "float",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "float"
 }
 slot4[9] = slot5
 slot5 = {
 	name = "Weight_RunBack",
-	type = "int",
 	const = 0,
-	value = "0"
+	value = "0",
+	type = "int"
 }
 slot4[10] = slot5
 slot3.pars = slot4
@@ -125,7 +125,7 @@ slot12.Opl = slot13
 slot11[2] = slot12
 slot12 = {}
 slot13 = {
-	func = "getLetGoTarget"
+	func = "getTarget"
 }
 slot12.Opr = slot13
 slot11[3] = slot12
@@ -232,6 +232,129 @@ slot9.node = slot10
 slot8[3] = slot9
 slot9 = {}
 slot10 = {
+	id = "131",
+	class = "IfElse"
+}
+slot11 = {}
+slot10.properties = slot11
+slot11 = {}
+slot10.attachments = slot11
+slot11 = {}
+slot12 = {}
+slot13 = {
+	id = "132",
+	class = "Condition"
+}
+slot14 = {}
+slot15 = {
+	Operator = "Equal"
+}
+slot14[1] = slot15
+slot15 = {}
+slot16 = {
+	func = "checkTargetHasBuffById"
+}
+slot17 = {}
+slot18 = {
+	field = "selfId"
+}
+slot17[1] = slot18
+slot18 = {
+	const = 2102107
+}
+slot17[2] = slot18
+slot18 = {
+	const = 1
+}
+slot17[3] = slot18
+slot16.params = slot17
+slot15.Opl = slot16
+slot14[2] = slot15
+slot15 = {}
+slot16 = {
+	const = true
+}
+slot15.Opr = slot16
+slot14[3] = slot15
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot13.children = slot14
+slot12.node = slot13
+slot11[1] = slot12
+slot12 = {}
+slot13 = {
+	id = "134",
+	class = "Action"
+}
+slot14 = {}
+slot15 = {}
+slot16 = {
+	func = "castSkill"
+}
+slot17 = {}
+slot18 = {
+	field = "tgt"
+}
+slot17[1] = slot18
+slot18 = {
+	const = 10210401
+}
+slot17[2] = slot18
+slot18 = {
+	const = false
+}
+slot17[3] = slot18
+slot18 = {
+	const = 0
+}
+slot17[4] = slot18
+slot18 = {
+	const = true
+}
+slot17[5] = slot18
+slot18 = {}
+slot19 = slot0.CastAbilitySourceType
+slot19 = slot19.Normal
+slot18.const = slot19
+slot17[6] = slot18
+slot16.params = slot17
+slot15.Method = slot16
+slot14[1] = slot15
+slot15 = {
+	ResultOption = "BT_INVALID"
+}
+slot14[2] = slot15
+slot15 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot14[3] = slot15
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot13.children = slot14
+slot12.node = slot13
+slot11[2] = slot12
+slot12 = {}
+slot13 = {
+	id = "133",
+	class = "Noop"
+}
+slot14 = {}
+slot13.properties = slot14
+slot14 = {}
+slot13.attachments = slot14
+slot14 = {}
+slot13.children = slot14
+slot12.node = slot13
+slot11[3] = slot12
+slot10.children = slot11
+slot9.node = slot10
+slot8[4] = slot9
+slot9 = {}
+slot10 = {
 	id = "56",
 	class = "Assignment"
 }
@@ -258,7 +381,7 @@ slot10.attachments = slot11
 slot11 = {}
 slot10.children = slot11
 slot9.node = slot10
-slot8[4] = slot9
+slot8[5] = slot9
 slot9 = {}
 slot10 = {
 	id = "127",
@@ -293,7 +416,7 @@ slot10.attachments = slot11
 slot11 = {}
 slot10.children = slot11
 slot9.node = slot10
-slot8[5] = slot9
+slot8[6] = slot9
 slot9 = {}
 slot10 = {
 	id = "57",
@@ -322,7 +445,7 @@ slot10.attachments = slot11
 slot11 = {}
 slot10.children = slot11
 slot9.node = slot10
-slot8[6] = slot9
+slot8[7] = slot9
 slot9 = {}
 slot10 = {
 	id = "64",
@@ -351,7 +474,7 @@ slot10.attachments = slot11
 slot11 = {}
 slot10.children = slot11
 slot9.node = slot10
-slot8[7] = slot9
+slot8[8] = slot9
 slot7.children = slot8
 slot6.node = slot7
 slot5[1] = slot6
@@ -1916,11 +2039,11 @@ slot23[3] = slot24
 slot22.properties = slot23
 slot23 = {}
 slot24 = {
-	transition = false,
-	class = "Precondition",
-	id = "356",
 	effector = false,
-	precondition = true
+	transition = false,
+	id = "356",
+	precondition = true,
+	class = "Precondition"
 }
 slot25 = {}
 slot26 = {

@@ -1,12 +1,16 @@
---- BLOCK #0 1-24, warpins: 1 ---
+--- BLOCK #0 1-28, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
-slot1 = slot0.LightClass
-slot3 = "EvolutionScene"
+slot1 = require
+slot3 = "Utils.LuaUIUtils"
 slot1 = slot1(slot3)
+slot2 = "evoSceneMoveCamera"
+slot3 = slot0.LightClass
+slot5 = "EvolutionScene"
+slot3 = slot3(slot5)
 
-slot2 = function(slot0, slot1, slot2, slot3)
+slot4 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.resId = slot1
 	slot0.pos = slot2
@@ -19,9 +23,9 @@ slot2 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot1.ctor = slot2
+slot3.ctor = slot4
 
-slot2 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -51,9 +55,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot1.startLoad = slot2
+slot3.startLoad = slot4
 
-slot2 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot0.mainCamera = slot1
@@ -87,9 +91,9 @@ slot2 = function(slot0)
 
 end
 
-slot1.destroy = slot2
+slot3.destroy = slot4
 
-slot2 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.initMainCamera
@@ -123,9 +127,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot1.onCutsceneLoaded = slot2
+slot3.onCutsceneLoaded = slot4
 
-slot2 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.scene
 	--- END OF BLOCK #0 ---
@@ -179,9 +183,9 @@ slot2 = function(slot0)
 
 end
 
-slot1.initMainCamera = slot2
+slot3.initMainCamera = slot4
 
-slot2 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.mainCamera
 	--- END OF BLOCK #0 ---
@@ -215,9 +219,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot1.setCameraOffset = slot2
+slot3.setCameraOffset = slot4
 
-slot2 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.cameraTarget
 	--- END OF BLOCK #0 ---
@@ -251,9 +255,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot1.setCameraTarget = slot2
+slot3.setCameraTarget = slot4
 
-slot2 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -286,7 +290,7 @@ slot2 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-30, warpins: 2 ---
+	--- BLOCK #3 9-33, warpins: 2 ---
 	slot2 = slot0.mainCamera
 	slot2 = slot2.transform
 	slot3 = slot2.position
@@ -294,7 +298,10 @@ slot2 = function(slot0, slot1)
 	slot5 = DoTweenAnimMgr
 	slot5 = slot5.GlobalMove
 	slot7 = slot2
-	slot8 = "evoSceneMoveCamera"
+	slot8 = LuaUIUtils
+	slot8 = slot8.TweenId
+	slot10 = ID_EVO_SCENE_MOVE_CAMERA
+	slot8 = slot8(slot10)
 	slot9 = slot4
 	slot10 = 0.75
 	slot11 = 0
@@ -317,9 +324,9 @@ slot2 = function(slot0, slot1)
 
 end
 
-slot1.tweenMoveCamera = slot2
+slot3.tweenMoveCamera = slot4
 
-return slot1
+return slot3
 --- END OF BLOCK #0 ---
 
 

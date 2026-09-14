@@ -799,18 +799,11 @@ slot14 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #3 12-30, warpins: 1 ---
+		--- BLOCK #3 12-25, warpins: 1 ---
 		slot0 = self
 		slot1 = data
 		slot1 = slot1.areaId
 		slot0.selectAreaId = slot1
-		slot0 = PetResearchUtils
-		slot0 = slot0.savePetResearchAreaId
-		slot2 = data
-		slot2 = slot2.areaId
-
-		slot0(slot2)
-
 		slot0 = facade
 		slot2 = slot0
 		slot0 = slot0.sendMsgToUI
@@ -828,24 +821,77 @@ slot14 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 31-42, warpins: 2 ---
+		--- BLOCK #4 26-40, warpins: 2 ---
+		slot0 = PetResearchUtils
+		slot0 = slot0.savePetResearchAreaId
+		slot2 = data
+		slot2 = slot2.areaId
+
+		slot0(slot2)
+
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.dismiss
 
 		slot0(slot2)
 
-		slot0 = PetResearchUtils
-		slot0 = slot0.CountryPageUIGoToPetResearchUI
-		slot2 = {}
-		slot3 = data
-		slot3 = slot3.areaId
-		slot2.areaId = slot3
+		slot0 = {}
+		slot1 = pairs
+		slot3 = self
+		slot3 = slot3.openInfo
+		--- END OF BLOCK #4 ---
 
-		slot0(slot2)
+		slot3 = if not slot3 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 41-41, warpins: 1 ---
+		slot3 = {}
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 42-43, warpins: 2 ---
+		slot1, slot2, slot3 = slot1(slot3)
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 44-44, warpins: 1 ---
+		slot0[slot4] = slot5
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 45-46, warpins: 2 ---
+		--- END OF BLOCK #8 ---
+
+		for slot4, slot5 in slot1, slot2, slot3
+		LOOP BLOCK #7
+		GO OUT TO BLOCK #9
+
+
+		--- BLOCK #9 47-57, warpins: 1 ---
+		slot1 = data
+		slot1 = slot1.areaId
+		slot0.areaId = slot1
+		slot1 = self
+		slot1 = slot1.showTab
+		slot0.showTab = slot1
+		slot1 = PetResearchUtils
+		slot1 = slot1.CountryPageUIGoToPetResearchUI
+		slot3 = slot0
+
+		slot1(slot3)
 
 		return
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #9 ---
 
 
 
@@ -1218,7 +1264,7 @@ end
 slot10.onDestroy = slot14
 
 slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-22, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -1226,13 +1272,42 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot0.openInfo = slot1
 	slot2 = PetResearchUtils
-	slot2 = slot2.getLastPetResearchAreaId
-	slot2 = slot2()
+	slot2 = slot2.resolvePetResearchAreaId
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	slot0.areaId = slot2
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 14-16, warpins: 1 ---
+	slot2 = slot1.showTab
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 17-19, warpins: 2 ---
 	slot2 = PetResearchUtils
 	slot2 = slot2.getLastPetShowTab
 	slot2 = slot2()
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-29, warpins: 2 ---
 	slot0.showTab = slot2
 	slot2 = slot0.areaId
 	slot0.selectAreaId = slot2
@@ -1247,7 +1322,7 @@ slot14 = function(slot0, slot1)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 

@@ -17,15 +17,15 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	value = "0",
-	name = "disToTgtForSkillMon",
 	const = 0,
+	name = "disToTgtForSkillMon",
 	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
 	value = "0",
-	name = "goBackDist",
 	const = 0,
+	name = "goBackDist",
 	type = "float"
 }
 slot4[2] = slot5

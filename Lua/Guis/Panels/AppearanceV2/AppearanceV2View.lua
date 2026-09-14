@@ -14,7 +14,7 @@ slot6 = slot1
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-85, warpins: 1 ---
+	--- BLOCK #0 1-109, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -99,6 +99,30 @@ slot4 = function(slot0)
 	slot4 = "leftLayoutBoxUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.leftLayoutBoxUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "photographRoomTransform"
+	slot1 = slot1(slot3, slot4)
+	slot0.photographRoomTransform = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "wardrobeUContainer"
+	slot1 = slot1(slot3, slot4)
+	slot0.wardrobeUContainer = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnHairTieUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnHairTieUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "infoRightUComponent"
+	slot1 = slot1(slot3, slot4)
+	slot0.infoRightUComponent = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -121,7 +145,16 @@ end
 slot3.registerObjects = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = slot0.wardrobeUContainer
+	slot1 = slot1.content
+	slot2 = slot1.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	return
 	--- END OF BLOCK #0 ---
 

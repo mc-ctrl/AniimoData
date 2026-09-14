@@ -83,9 +83,9 @@ slot3 = function(slot0, slot1)
 
 	--- BLOCK #1 6-7, warpins: 1 ---
 	slot3 = {
+		x = 0,
 		z = 0,
-		y = 0,
-		x = 0
+		y = 0
 	}
 
 	return slot3
@@ -118,9 +118,9 @@ slot3 = function(slot0, slot1)
 
 	--- BLOCK #3 21-22, warpins: 1 ---
 	slot6 = {
+		x = 0,
 		z = 0,
-		y = 0,
-		x = 0
+		y = 0
 	}
 
 	return slot6

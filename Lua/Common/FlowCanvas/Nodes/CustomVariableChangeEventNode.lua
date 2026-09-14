@@ -169,7 +169,7 @@ slot6 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 21-39, warpins: 1 ---
+	--- BLOCK #4 21-34, warpins: 1 ---
 	slot5 = ServerEventConst
 	slot5 = slot5.CUSTOM_VARIABLE_CHANGE
 	slot6 = slot4.id
@@ -194,19 +194,12 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 	slot9 = slot1
-	slot7 = slot1.addContextEvent
-	slot10 = slot5
-	slot11 = slot6
-	slot12 = slot0.nodeId
+	slot7 = slot1.registerSpaceEventListener
+	slot10 = slot0.nodeId
+	slot11 = slot5
+	slot12 = slot6
 
 	slot7(slot9, slot10, slot11, slot12)
-
-	slot9 = slot3
-	slot7 = slot3.addSpaceEventListener
-	slot10 = slot5
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -214,7 +207,7 @@ slot6 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 40-40, warpins: 2 ---
+	--- BLOCK #5 35-35, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 

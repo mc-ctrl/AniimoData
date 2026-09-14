@@ -16,67 +16,67 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "tAnimationKey",
 	const = "Behav_Love",
-	type = "string",
 	value = "Behav_Love",
-	name = "tAnimationKey"
+	type = "string"
 }
 slot4[1] = slot5
 slot5 = {
+	name = "tAnimationTimeout",
 	const = 5,
-	type = "float",
 	value = "5",
-	name = "tAnimationTimeout"
+	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
+	name = "tEmojiBubbleKey",
 	const = "",
-	type = "string",
 	value = "",
-	name = "tEmojiBubbleKey"
+	type = "string"
 }
 slot4[3] = slot5
 slot5 = {
+	name = "tEmojiBubbleTimeout",
 	const = 5,
-	type = "float",
 	value = "5",
-	name = "tEmojiBubbleTimeout"
+	type = "float"
 }
 slot4[4] = slot5
 slot5 = {
+	name = "tTimelineTag",
 	const = "",
-	type = "string",
 	value = "",
-	name = "tTimelineTag"
+	type = "string"
 }
 slot4[5] = slot5
 slot5 = {
+	name = "tNeedLoop",
 	const = false,
-	type = "bool",
 	value = "false",
-	name = "tNeedLoop"
+	type = "bool"
 }
 slot4[6] = slot5
 slot5 = {
+	name = "tTgtId",
 	const = 0,
-	type = "int",
 	value = "0",
-	name = "tTgtId"
+	type = "int"
 }
 slot4[7] = slot5
 slot5 = {
+	name = "tTargetAtYawDegree",
 	const = 0,
-	type = "float",
 	value = "0",
-	name = "tTargetAtYawDegree"
+	type = "float"
 }
 slot4[8] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "2",
-	class = "Sequence"
+	class = "Sequence",
+	id = "2"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -85,8 +85,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "1",
-	class = "Action"
+	class = "Action",
+	id = "1"
 }
 slot8 = {}
 slot9 = {}
@@ -134,8 +134,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "4",
-	class = "Action"
+	class = "Action",
+	id = "4"
 }
 slot8 = {}
 slot9 = {}
@@ -179,8 +179,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "5",
-	class = "Action"
+	class = "Action",
+	id = "5"
 }
 slot8 = {}
 slot9 = {}

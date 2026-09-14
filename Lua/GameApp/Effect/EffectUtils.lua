@@ -29,7 +29,7 @@ slot8 = slot8(slot10)
 slot9 = {}
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = EffectConst
 	slot1 = slot1.FIXED_EFFECT_KEYS
 	slot1 = slot1.EFF_EVIL
@@ -46,8 +46,7 @@ slot10 = function(slot0)
 	slot2(slot4, slot5)
 
 	slot2 = slot0.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
+	slot2 = slot2.modelModelView
 	slot4 = slot2
 	slot2 = slot2.SendVisualEffectEvent
 	slot5 = EffectConst

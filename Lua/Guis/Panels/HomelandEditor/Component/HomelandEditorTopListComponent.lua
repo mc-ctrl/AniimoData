@@ -124,7 +124,7 @@ end
 slot18.onDestroy = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-49, warpins: 1 ---
+	--- BLOCK #0 1-67, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -173,6 +173,24 @@ slot19 = function(slot0)
 	slot4 = "txtShopTipsUSDFText"
 	slot1 = slot1(slot3, slot4)
 	slot0.txtShopTipsUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnDesignUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnDesignUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtDesignTipsUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtDesignTipsUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "designHotKeyContent"
+	slot1 = slot1(slot3, slot4)
+	slot0.designHotKeyContent = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -184,7 +202,7 @@ end
 slot18.findObjects = slot19
 
 slot19 = function(slot0)
-	--- BLOCK #0 1-58, warpins: 1 ---
+	--- BLOCK #0 1-83, warpins: 1 ---
 	slot1 = slot0.topListUList
 
 	slot2 = function(slot0, slot1, slot2)
@@ -416,7 +434,7 @@ slot19 = function(slot0)
 	slot1 = slot0.btnSettingUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-15, warpins: 1 ---
+		--- BLOCK #0 1-22, warpins: 1 ---
 		slot0 = GlobalData
 		slot0 = slot0.BILogger
 		slot2 = slot0
@@ -434,11 +452,56 @@ slot19 = function(slot0)
 		slot0 = slot0.homelandPlayerEditorSetting
 		slot2 = slot0
 		slot0 = slot0.open
+		slot3 = {}
+		slot4 = self
+		slot4 = slot4.editor
+		slot3.editor = slot4
+		slot4 = self
+		slot4 = slot4.ctrl
+		slot4 = slot4.carGroup
+		--- END OF BLOCK #0 ---
 
-		slot0(slot2)
+		slot4 = if slot4 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 23-24, warpins: 1 ---
+		slot4 = -1
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #2 25-29, warpins: 1 ---
+		slot4 = self
+		slot4 = slot4.ctrl
+		slot4 = slot4.areaId
+		--- END OF BLOCK #2 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 30-30, warpins: 1 ---
+		slot4 = 0
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 31-33, warpins: 3 ---
+		slot3.areaId = slot4
+
+		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -488,6 +551,33 @@ slot19 = function(slot0)
 		--- BLOCK #2 18-18, warpins: 2 ---
 		return
 		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot1 = slot0.btnDesignUButton
+
+	slot2 = function()
+		--- BLOCK #0 1-14, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_HOMELAND_FURNITURE_DESIGN
+		slot4 = {}
+		slot5 = self
+		slot5 = slot5.ctrl
+		slot5 = slot5.carGroup
+		slot4.carGroup = slot5
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
 
 
 
@@ -560,6 +650,39 @@ slot19 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.bindHotKeyPerform
+	slot4 = "Hud/HomelandTopDesign"
+
+	slot5 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.btnDesignUButton
+		slot0 = slot0.luaClick
+
+		slot0()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6 = slot0.btnDesignUButton
+	slot6 = slot6.gameObject
+	slot7 = "Hud/HomelandTopDesign"
+
+	slot1(slot3, slot4, slot5, slot6, slot7)
+
+	slot1 = slot0.designHotKeyContent
+	slot3 = slot1
+	slot1 = slot1.SetHotKeyPaths
+	slot4 = "Hud/HomelandTopDesign"
+
+	slot1(slot3, slot4)
+
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.txtSettingTipsUSDFText
@@ -576,6 +699,16 @@ slot19 = function(slot0)
 	slot4 = pg
 	slot4 = slot4.getGameString
 	slot6 = "HOMELAND_FURNITURE_STORE_TIPS"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtDesignTipsUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "HOMELAND_COMPOSE_DESIGN_TITLE"
 	MULTRES = slot4(slot6)
 
 	slot1(slot3, MULTRES)

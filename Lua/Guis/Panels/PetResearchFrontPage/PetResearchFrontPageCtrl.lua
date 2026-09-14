@@ -1675,16 +1675,15 @@ end
 slot13.setTargetReward = slot15
 
 slot15 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
-	slot1 = slot1.serverMsg
-	slot4 = "RPC_CS_GetPetHandbookCountryLevelReward"
-	slot5 = slot0.countryId
-	slot6 = slot0.rewardLevel
+	slot1 = slot1.getPetHandbookCountryLevelReward
+	slot4 = slot0.countryId
+	slot5 = slot0.rewardLevel
 
-	slot1(slot3, slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---

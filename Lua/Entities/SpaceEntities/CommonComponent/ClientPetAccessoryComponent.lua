@@ -1,18 +1,15 @@
---- BLOCK #0 1-28, warpins: 1 ---
+--- BLOCK #0 1-25, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.Utils.AvatarUtils"
+slot3 = "Utils.ClientModelUtils"
 slot1 = slot1(slot3)
-slot2 = require
-slot4 = "Utils.ClientModelUtils"
+slot2 = slot0.Component
+slot4 = "ClientPetAccessoryComponent"
 slot2 = slot2(slot4)
-slot3 = slot0.Component
-slot5 = "ClientPetAccessoryComponent"
-slot3 = slot3(slot5)
 
-slot4 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -21,9 +18,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.start = slot4
+slot2.start = slot3
 
-slot4 = function(slot0, slot1, slot2)
+slot3 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.reloadAccessory
@@ -37,9 +34,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot3.on_petJewelryInfo_Changed = slot4
+slot2.on_petJewelryInfo_Changed = slot3
 
-slot4 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.applyPetAccesses
@@ -54,9 +51,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3.Event_BeforeRefreshModels = slot4
+slot2.Event_BeforeRefreshModels = slot3
 
-slot4 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -65,32 +62,32 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3.Event_AfterRefreshModels = slot4
+slot2.Event_AfterRefreshModels = slot3
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+slot3 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
+
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-22, warpins: 1 ---
+	--- BLOCK #2 5-14, warpins: 2 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.modelModelView
 	slot4 = slot0
 	slot2 = slot0.applyPetAccesses
 	slot5 = slot1
@@ -102,45 +99,16 @@ slot4 = function(slot0)
 
 	slot2(slot4)
 
-	slot4 = slot1
-	slot2 = slot1.SetAllAttachTransformRefreshedCb
-
-	slot5 = function()
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot0 = AvatarUtils
-		slot0 = slot0.fixAttachTemp
-		slot2 = self
-		slot3 = self
-		slot3 = slot3.id
-
-		slot0(slot2, slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot2(slot4, slot5)
-
 	return
 	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 23-23, warpins: 2 ---
-	return
-	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot3.reloadAccessory = slot4
+slot2.reloadAccessory = slot3
 
-slot4 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.tempJewelryInfo = slot1
 	slot4 = slot0
@@ -155,9 +123,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3.setTempJewelryInfo = slot4
+slot2.setTempJewelryInfo = slot3
 
-slot4 = function(slot0, slot1)
+slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.InitAttachModel
@@ -257,9 +225,9 @@ slot4 = function(slot0, slot1)
 
 end
 
-slot3.applyPetAccesses = slot4
+slot2.applyPetAccesses = slot3
 
-return slot3
+return slot2
 --- END OF BLOCK #0 ---
 
 

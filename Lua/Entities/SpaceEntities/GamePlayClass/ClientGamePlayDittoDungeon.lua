@@ -1,89 +1,76 @@
---- BLOCK #0 1-96, warpins: 1 ---
+--- BLOCK #0 1-100, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Client.ClientEntity"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.SandboxConst"
+slot6 = "Entities.SpaceEntities.GamePlayClass.ClientGamePlayEntity"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.ClientConst"
+slot7 = "Common.Const.SandboxConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Common.CallbackHandler"
+slot8 = "Const.ClientConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.MessageName"
+slot9 = "Core.Common.CallbackHandler"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientUtils"
+slot10 = "Const.MessageName"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Core.Common.Time"
+slot11 = "Utils.ClientUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Utils.Utils"
+slot12 = "Core.Common.Time"
 slot10 = slot10(slot12)
-slot11 = CS
-slot11 = slot11.FunPlus
-slot11 = slot11.WorldX
-slot11 = slot11.Effect
-slot11 = slot11.EffectShaderViewComponent
+slot11 = require
+slot13 = "Common.Utils.Utils"
+slot11 = slot11(slot13)
 slot12 = CS
 slot12 = slot12.FunPlus
 slot12 = slot12.WorldX
-slot12 = slot12.Physx
-slot12 = slot12.AirWallProgressDisengage
-slot13 = require
-slot15 = "Common.Utils.SceneUtils"
-slot13 = slot13(slot15)
+slot12 = slot12.Effect
+slot12 = slot12.EffectShaderViewComponent
+slot13 = CS
+slot13 = slot13.FunPlus
+slot13 = slot13.WorldX
+slot13 = slot13.Physx
+slot13 = slot13.AirWallProgressDisengage
 slot14 = require
-slot16 = "Utils.LuaUIUtils"
+slot16 = "Common.Utils.SceneUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.default_map_mark_data"
+slot17 = "Utils.LuaUIUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.sys_config_data"
+slot18 = "Data.default_map_mark_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Const.AddressDataConst"
+slot19 = "Data.sys_config_data"
 slot17 = slot17(slot19)
-slot18 = Vector3
-slot19 = slot2.Class
-slot21 = "ClientGamePlayDittoDungeon"
-slot22 = slot3
-slot19 = slot19(slot21, slot22)
+slot18 = require
+slot20 = "Const.AddressDataConst"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "Const.UIConst"
+slot19 = slot19(slot21)
+slot20 = Vector3
+slot21 = slot3.Class
+slot23 = "ClientGamePlayDittoDungeon"
+slot24 = slot4
+slot21 = slot21(slot23, slot24)
 
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot2 = ClientGamePlayDittoDungeon
-	slot2 = slot2.super
-	slot2 = slot2.ctor
-	slot4 = slot0
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot19.ctor = slot20
-
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot22 = function(slot0, slot1)
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = ClientGamePlayDittoDungeon
 	slot2 = slot2.super
 	slot2 = slot2.init
@@ -92,8 +79,6 @@ slot20 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot1.sandboxId
-	slot0.sandboxId = slot2
 	slot2 = slot1.failRadius
 	slot0.failRadius = slot2
 	slot2 = slot1.entryPoiId
@@ -111,9 +96,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.init = slot20
+slot21.init = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0.space = slot1
 	slot4 = slot1
@@ -144,22 +129,48 @@ slot20 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-19, warpins: 2 ---
+	--- BLOCK #2 15-23, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot3 = true
 	slot2.inMorphling = slot3
-
-	return
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.updateStateCache
 	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 24-29, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.updateStateCache
+	slot5 = "MORPHLING_NO_ATTACK"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot19.enterSpace = slot20
+slot21.enterSpace = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -168,9 +179,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.start = slot20
+slot21.start = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.status
 	slot2 = SandboxConst
@@ -251,7 +262,7 @@ slot20 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 43-69, warpins: 2 ---
+	--- BLOCK #4 43-59, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.prefsCacheUtils
@@ -270,57 +281,6 @@ slot20 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.resMgr
-	slot3 = slot1
-	slot1 = slot1.GetInstanceFromCacheByLua
-	slot4 = AddressDataConst
-	slot4 = slot4.DITTO_ENTRY_CAMERA_EFFECT
-
-	slot5 = function(slot0, slot1)
-		--- BLOCK #0 1-28, warpins: 1 ---
-		slot2 = self
-		slot2.cameraEffect = slot0
-		slot4 = slot0
-		slot2 = slot0.SetActiveEx
-		slot5 = false
-
-		slot2(slot4, slot5)
-
-		slot2 = slot0.transform
-		slot4 = slot2
-		slot2 = slot2.SetParent
-		slot5 = pg
-		slot5 = slot5.global
-		slot5 = slot5.cameraMgr
-		slot5 = slot5.worldCameraInst
-		slot5 = slot5.transform
-
-		slot2(slot4, slot5)
-
-		slot2 = slot0.transform
-		slot3 = Vector3
-		slot3 = slot3.zero
-		slot2.localPosition = slot3
-		slot2 = slot0.transform
-		slot3 = Quaternion
-		slot3 = slot3.identity
-		slot2.localRotation = slot3
-		slot2 = slot0.transform
-		slot3 = Vector3
-		slot3 = slot3.one
-		slot2.localScale = slot3
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1(slot3, slot4, slot5)
-
 	return
 	--- END OF BLOCK #4 ---
 
@@ -328,9 +288,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.onSandboxReady = slot20
+slot21.onSandboxReady = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = SandboxConst
 	slot3 = slot3.DITTO_DUNGEON_STATE
@@ -545,7 +505,7 @@ slot20 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 105-122, warpins: 2 ---
+	--- BLOCK #15 105-124, warpins: 2 ---
 	slot7 = slot7(slot9)
 	slot8 = 3
 
@@ -557,24 +517,28 @@ slot20 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
-	slot3 = slot0.cameraEffect
+	slot3 = facade
 	slot5 = slot3
-	slot3 = slot3.SetActiveEx
-	slot6 = true
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.MORPHLING_STATE_CHANGE
+	slot7 = 1
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	slot5 = slot0
 	slot3 = slot0.addTimer
 	slot6 = 3
 
 	slot7 = function()
-		--- BLOCK #0 1-12, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.cameraEffect
+		--- BLOCK #0 1-14, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
 		slot2 = slot0
-		slot0 = slot0.SetActiveEx
-		slot3 = false
+		slot0 = slot0.close
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_Morphling
 
 		slot0(slot2, slot3)
 
@@ -591,7 +555,7 @@ slot20 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 13-29, warpins: 1 ---
+		--- BLOCK #1 15-31, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -631,7 +595,7 @@ slot20 = function(slot0, slot1, slot2)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 30-32, warpins: 1 ---
+		--- BLOCK #2 32-34, warpins: 1 ---
 		slot0 = ClientUtils
 		slot0 = slot0.exitDungeon
 
@@ -642,7 +606,7 @@ slot20 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 33-33, warpins: 2 ---
+		--- BLOCK #3 35-35, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -658,7 +622,7 @@ slot20 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 123-124, warpins: 2 ---
+	--- BLOCK #16 125-126, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -666,9 +630,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.on_status_changed = slot20
+slot21.on_status_changed = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -677,9 +641,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.on_endTime_changed = slot20
+slot21.on_endTime_changed = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.sandbox
 
@@ -759,10 +723,10 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.setOuterPuppetVisible = slot20
-slot20 = "$Eff_BossArea_Common_30X30.prefab"
+slot21.setOuterPuppetVisible = slot22
+slot22 = "$Eff_BossArea_Common_30X30.prefab"
 
-slot21 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -985,9 +949,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot19.refreshAreaEffect = slot21
+slot21.refreshAreaEffect = slot23
 
-slot21 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1190,9 +1154,9 @@ slot21 = function(slot0, slot1)
 
 end
 
-slot19.refreshCollision = slot21
+slot21.refreshCollision = slot23
 
-slot21 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1240,9 +1204,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.onSwimmingDie = slot21
+slot21.onSwimmingDie = slot23
 
-slot21 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshCollision
@@ -1316,14 +1280,41 @@ slot21 = function(slot0)
 
 end
 
-slot19.onSandboxDisabled = slot21
+slot21.onSandboxDisabled = slot23
 
-slot21 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot2 = false
 	slot1.inMorphling = slot2
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.updateStateCache
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.updateStateCache
+	slot4 = "MORPHLING_NO_ATTACK"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-26, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.refreshCollision
 	slot4 = true
@@ -1337,16 +1328,16 @@ slot21 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = slot0.endTime
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	if slot1 ~= 0 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 16-23, warpins: 1 ---
+	--- BLOCK #3 27-34, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -1357,23 +1348,23 @@ slot21 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 24-26, warpins: 2 ---
+	--- BLOCK #4 35-37, warpins: 2 ---
 	slot1 = slot0._exitTimer
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 27-32, warpins: 1 ---
+	--- BLOCK #5 38-43, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
 	slot4 = slot0._exitTimer
@@ -1382,28 +1373,12 @@ slot21 = function(slot0)
 
 	slot1 = nil
 	slot0._exitTimer = slot1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 33-57, warpins: 2 ---
-	slot1 = slot0.cameraEffect
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.resMgr
-	slot3 = slot1
-	slot1 = slot1.RemoveInstanceToCache
-	slot4 = slot0.cameraEffect
-
-	slot1(slot3, slot4)
-
+	--- BLOCK #6 44-56, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -1421,15 +1396,15 @@ slot21 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot19.destroy = slot21
+slot21.destroy = slot23
 
-slot21 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = SceneUtils
 	slot1 = slot1.getSceneMarkPointData
@@ -1481,9 +1456,9 @@ slot21 = function(slot0)
 
 end
 
-slot19.getMarkConfigData = slot21
+slot21.getMarkConfigData = slot23
 
-slot21 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.clearToastPoiPopup
@@ -1523,7 +1498,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 18-18, warpins: 1 ---
-	slot10 = {}
+	slot10 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -1576,9 +1551,9 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot19.toastPoiPopup = slot21
+slot21.toastPoiPopup = slot23
 
-return slot19
+return slot21
 --- END OF BLOCK #0 ---
 
 

@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	version = 10,
 	agenttype = "WxAgent",
-	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_IdlePatrol"
+	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_IdlePatrol",
+	version = 10
 }
 slot4 = {}
 slot3.properties = slot4
@@ -18,14 +18,14 @@ slot4 = {}
 slot5 = {
 	name = "tNoIdleSpProb",
 	const = 0,
-	type = "int",
-	value = "0"
+	value = "0",
+	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "SpeedRateType",
-	type = "SpeedRateType",
-	value = "Slow"
+	value = "Slow",
+	type = "SpeedRateType"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Slow
@@ -34,8 +34,8 @@ slot4[2] = slot5
 slot5 = {
 	name = "Speed",
 	const = 1,
-	type = "float",
-	value = "1"
+	value = "1",
+	type = "float"
 }
 slot4[3] = slot5
 slot3.pars = slot4

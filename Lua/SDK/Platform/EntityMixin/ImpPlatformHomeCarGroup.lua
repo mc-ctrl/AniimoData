@@ -1,21 +1,24 @@
---- BLOCK #0 1-49, warpins: 1 ---
-slot0 = {}
-slot1 = require
-slot3 = "Common.Const.EventConst"
-slot1 = slot1(slot3)
+--- BLOCK #0 1-54, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Common.EmptyTable"
+slot0 = slot0(slot2)
+slot1 = {}
 slot2 = require
-slot4 = "SDK.Platform.PlatformHomeCarDecorationFilterService"
+slot4 = "Common.Const.EventConst"
 slot2 = slot2(slot4)
-slot3 = {}
-slot4 = slot1.PLATFORM_UGC_POLICY_CHANGED
-slot3[1] = slot4
-slot4 = slot1.PLATFORM_BLOCK_LIST_CHANGED
-slot3[2] = slot4
-slot4 = slot1.PLATFORM_FRIEND_LIST_CHANGED
-slot3[3] = slot4
-slot0.RefreshEvents = slot3
+slot3 = require
+slot5 = "SDK.Platform.PlatformHomeCarDecorationFilterService"
+slot3 = slot3(slot5)
+slot4 = {}
+slot5 = slot2.PLATFORM_UGC_POLICY_CHANGED
+slot4[1] = slot5
+slot5 = slot2.PLATFORM_BLOCK_LIST_CHANGED
+slot4[2] = slot5
+slot5 = slot2.PLATFORM_FRIEND_LIST_CHANGED
+slot4[3] = slot5
+slot1.RefreshEvents = slot4
 
-slot3 = function()
+slot4 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -28,9 +31,9 @@ slot3 = function()
 
 end
 
-slot0.getEventEmitter = slot3
+slot1.getEventEmitter = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -97,9 +100,130 @@ slot3 = function(slot0)
 
 end
 
-slot0.getHomeOwnerPlayerInfo = slot3
+slot1.getHomeOwnerPlayerInfo = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-12, warpins: 1 ---
+	slot2 = M
+	slot2 = slot2.getHomeOwnerPlayerInfo
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 13-17, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-25, warpins: 1 ---
+	slot2 = type
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.getPlayerInfoFromServer
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= "function" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-26, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 27-37, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	slot4 = slot2
+	slot2 = slot2.getPlayerInfoFromServer
+	slot5 = slot0
+	slot6 = nil
+
+	slot7 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-5, warpins: 1 ---
+		slot1 = onFetched
+		slot3 = slot0
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-6, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-38, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot1.fetchHomeOwnerPlayerInfoIfNeeded = slot4
+
+slot4 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -161,9 +285,9 @@ slot3 = function(slot0)
 
 end
 
-slot0.shouldShowHomeCarGroupDecoration = slot3
+slot1.shouldShowHomeCarGroupDecoration = slot4
 
-slot3 = function()
+slot4 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -207,9 +331,9 @@ slot3 = function()
 
 end
 
-slot0.refreshHomeCarShadows = slot3
+slot1.refreshHomeCarShadows = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = rawget
 	slot3 = slot0
@@ -302,9 +426,9 @@ slot3 = function(slot0)
 
 end
 
-slot0.unregisterGroupListeners = slot3
+slot1.unregisterGroupListeners = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = M
 	slot1 = slot1.getEventEmitter
@@ -412,9 +536,9 @@ slot3 = function(slot0)
 
 end
 
-slot0.registerGroupListeners = slot3
+slot1.registerGroupListeners = slot4
 
-slot3 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.ornamentEntities
 	--- END OF BLOCK #0 ---
@@ -473,9 +597,9 @@ slot3 = function(slot0, slot1)
 
 end
 
-slot0.destroyGroupOrnamentById = slot3
+slot1.destroyGroupOrnamentById = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ornamentEntities
 	--- END OF BLOCK #0 ---
@@ -546,9 +670,9 @@ slot3 = function(slot0)
 
 end
 
-slot0.destroyGroupOrnaments = slot3
+slot1.destroyGroupOrnaments = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = rawget
 	slot3 = slot0
@@ -619,90 +743,121 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 24-28, warpins: 2 ---
-	slot2 = false
-	slot3 = pairs
-	slot5 = slot1
-	slot3, slot4, slot5 = slot3(slot5)
+	--- BLOCK #6 24-32, warpins: 2 ---
+	slot2 = rawget
+	slot4 = slot0
+	slot5 = "platformHomeCarOrnamentSource"
+	slot2 = slot2(slot4, slot5)
+	slot3 = false
+	slot4 = pairs
+	slot6 = slot1
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #7 29-32, warpins: 1 ---
-	slot8 = slot0.ornamentEntities
-	slot8 = slot8[slot6]
+	--- BLOCK #7 33-34, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
-	slot8 = if not slot8 then
+	slot8 = if slot2 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 33-39, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.createHomeCarEntity
-	slot11 = slot6
-	slot12 = slot7
-	slot8 = slot8(slot10, slot11, slot12)
+	--- BLOCK #8 35-35, warpins: 1 ---
+	slot8 = slot2[slot7]
 	--- END OF BLOCK #8 ---
 
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 36-37, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
 	slot8 = if slot8 then
-	JUMP TO BLOCK #9
-	else
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 40-40, warpins: 1 ---
-	slot2 = true
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 41-42, warpins: 4 ---
+	--- BLOCK #10 38-41, warpins: 1 ---
+	slot9 = slot0.ornamentEntities
+	slot9 = slot9[slot7]
 	--- END OF BLOCK #10 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #11
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #11 43-44, warpins: 1 ---
+	--- BLOCK #11 42-48, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.createHomeCarEntity
+	slot12 = slot7
+	slot13 = slot8
+	slot9 = slot9(slot11, slot12, slot13)
 	--- END OF BLOCK #11 ---
 
-	slot2 = if slot2 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 45-47, warpins: 1 ---
-	slot3 = M
-	slot3 = slot3.refreshHomeCarShadows
-
-	slot3()
-
+	--- BLOCK #12 49-49, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 48-48, warpins: 2 ---
-	return
+	--- BLOCK #13 50-51, warpins: 5 ---
 	--- END OF BLOCK #13 ---
+
+	for slot7 in slot4, slot5, slot6
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 52-53, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 54-56, warpins: 1 ---
+	slot4 = M
+	slot4 = slot4.refreshHomeCarShadows
+
+	slot4()
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 57-57, warpins: 2 ---
+	return
+	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot0.applyHomeCarGroupDecorationVisibility = slot3
+slot1.applyHomeCarGroupDecorationVisibility = slot4
 
-slot3 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = rawset
 	slot4 = slot0
@@ -723,7 +878,7 @@ slot3 = function(slot0, slot1)
 
 
 	--- BLOCK #1 10-10, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -752,7 +907,7 @@ slot3 = function(slot0, slot1)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 17-35, warpins: 1 ---
+	--- BLOCK #5 17-40, warpins: 1 ---
 	slot3 = rawset
 	slot5 = slot0
 	slot6 = "platformHomeCarOrnamentData"
@@ -765,6 +920,47 @@ slot3 = function(slot0, slot1)
 	slot5 = slot0
 
 	slot3(slot5)
+
+	slot3 = M
+	slot3 = slot3.fetchHomeOwnerPlayerInfoIfNeeded
+	slot5 = slot0.playerUID
+
+	slot6 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = rawget
+		slot3 = group
+		slot4 = "platformHomeCarOrnamentData"
+		slot1 = slot1(slot3, slot4)
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 7-10, warpins: 1 ---
+		slot1 = M
+		slot1 = slot1.applyHomeCarGroupDecorationVisibility
+		slot3 = group
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 11-11, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot3(slot5, slot6)
 
 	slot3 = M
 	slot3 = slot3.destroyGroupOrnaments
@@ -783,7 +979,7 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 36-37, warpins: 1 ---
+	--- BLOCK #6 41-42, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
@@ -793,7 +989,7 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 38-40, warpins: 1 ---
+	--- BLOCK #7 43-45, warpins: 1 ---
 	slot4 = M
 	slot4 = slot4.refreshHomeCarShadows
 
@@ -804,7 +1000,7 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 41-42, warpins: 2 ---
+	--- BLOCK #8 46-48, warpins: 2 ---
 	slot4 = true
 
 	return slot4
@@ -814,7 +1010,7 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-45, warpins: 2 ---
+	--- BLOCK #9 49-51, warpins: 2 ---
 	slot4 = pairs
 	--- END OF BLOCK #9 ---
 
@@ -825,21 +1021,21 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 46-46, warpins: 1 ---
-	slot6 = {}
+	--- BLOCK #10 52-52, warpins: 1 ---
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 47-48, warpins: 2 ---
+	--- BLOCK #11 53-54, warpins: 2 ---
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 49-55, warpins: 1 ---
+	--- BLOCK #12 55-61, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.createHomeCarEntity
 	slot12 = slot7
@@ -854,14 +1050,14 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 56-56, warpins: 1 ---
+	--- BLOCK #13 62-62, warpins: 1 ---
 	slot3 = true
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 57-58, warpins: 3 ---
+	--- BLOCK #14 63-64, warpins: 3 ---
 	--- END OF BLOCK #14 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -869,7 +1065,7 @@ slot3 = function(slot0, slot1)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 59-60, warpins: 1 ---
+	--- BLOCK #15 65-66, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
 	slot3 = if slot3 then
@@ -879,7 +1075,7 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 61-63, warpins: 1 ---
+	--- BLOCK #16 67-69, warpins: 1 ---
 	slot4 = M
 	slot4 = slot4.refreshHomeCarShadows
 
@@ -890,7 +1086,7 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 64-65, warpins: 2 ---
+	--- BLOCK #17 70-72, warpins: 2 ---
 	slot4 = true
 
 	return slot4
@@ -900,9 +1096,9 @@ slot3 = function(slot0, slot1)
 
 end
 
-slot0.onCreateHomeCarEntities = slot3
+slot1.onCreateHomeCarEntities = slot4
 
-slot3 = function(slot0, slot1, slot2)
+slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = rawget
 	slot5 = slot0
@@ -987,9 +1183,9 @@ slot3 = function(slot0, slot1, slot2)
 
 end
 
-slot0.onCreateHomeCarEntity = slot3
+slot1.onCreateHomeCarEntity = slot4
 
-slot3 = function(slot0, slot1, slot2)
+slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = rawget
 	slot5 = slot0
@@ -1120,9 +1316,9 @@ slot3 = function(slot0, slot1, slot2)
 
 end
 
-slot0.onUpdateHomeCarEntity = slot3
+slot1.onUpdateHomeCarEntity = slot4
 
-slot3 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = M
 	slot2 = slot2.onCreateHomeCarEntities
@@ -1136,9 +1332,9 @@ slot3 = function(slot0, slot1)
 
 end
 
-slot0.createHomeCarEntities = slot3
+slot1.createHomeCarEntities = slot4
 
-slot3 = function(slot0, slot1, slot2)
+slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = M
 	slot3 = slot3.onCreateHomeCarEntity
@@ -1153,9 +1349,9 @@ slot3 = function(slot0, slot1, slot2)
 
 end
 
-slot0.createHomeCarEntity = slot3
+slot1.createHomeCarEntity = slot4
 
-slot3 = function(slot0, slot1, slot2)
+slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = M
 	slot3 = slot3.onUpdateHomeCarEntity
@@ -1170,9 +1366,9 @@ slot3 = function(slot0, slot1, slot2)
 
 end
 
-slot0.updateHomeCarEntity = slot3
+slot1.updateHomeCarEntity = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = M
 	slot1 = slot1.unregisterGroupListeners
@@ -1187,9 +1383,9 @@ slot3 = function(slot0)
 
 end
 
-slot0.destroy = slot3
+slot1.destroy = slot4
 
-return slot0
+return slot1
 --- END OF BLOCK #0 ---
 
 

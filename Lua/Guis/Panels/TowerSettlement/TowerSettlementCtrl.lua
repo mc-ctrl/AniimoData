@@ -84,8 +84,8 @@ slot26 = {
 slot24[slot25] = slot26
 slot4.messages = slot24
 slot24 = {
-	Equipment = "RogueBossSkill",
-	Boss = "BossEquipmentBuff"
+	Boss = "BossEquipmentBuff",
+	Equipment = "RogueBossSkill"
 }
 slot25 = slot13.NEW_PET_BATTLE_TYPE
 slot25 = slot25.DPS
@@ -696,7 +696,7 @@ slot24 = function(slot0)
 	--- BLOCK #1 11-11, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #71
+	UNCONDITIONAL JUMP; TARGET BLOCK #76
 
 
 	--- BLOCK #2 12-14, warpins: 1 ---
@@ -1131,7 +1131,7 @@ slot24 = function(slot0)
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 201-238, warpins: 2 ---
+	--- BLOCK #34 201-239, warpins: 2 ---
 	slot12 = slot0.view
 	slot12 = slot12.equipmentUList
 
@@ -1392,236 +1392,230 @@ slot24 = function(slot0)
 	slot14 = slot14.me
 	slot14 = slot14.lastRoguePassLayer
 	slot13 = slot13[slot14]
+	slot14 = false
 	--- END OF BLOCK #34 ---
 
 	slot13 = if slot13 then
 	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #35 239-247, warpins: 1 ---
-	slot14 = pg
-	slot14 = slot14.me
-	slot14 = slot14.rogueSettlementCnt
+	--- BLOCK #35 240-248, warpins: 1 ---
 	slot15 = pg
 	slot15 = slot15.me
-	slot15 = slot15.lastRoguePassLayer
-	slot14 = slot14[slot15]
+	slot15 = slot15.rogueSettlementCnt
+	slot16 = pg
+	slot16 = slot16.me
+	slot16 = slot16.lastRoguePassLayer
+	slot15 = slot15[slot16]
 	--- END OF BLOCK #35 ---
 
-	slot14 = if slot14 then
+	slot15 = if slot15 then
 	JUMP TO BLOCK #36
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #36 248-257, warpins: 1 ---
-	slot14 = pg
-	slot14 = slot14.me
-	slot14 = slot14.rogueSettlementCnt
+	--- BLOCK #36 249-258, warpins: 1 ---
 	slot15 = pg
 	slot15 = slot15.me
-	slot15 = slot15.lastRoguePassLayer
-	slot14 = slot14[slot15]
-	slot15 = 0
+	slot15 = slot15.rogueSettlementCnt
+	slot16 = pg
+	slot16 = slot16.me
+	slot16 = slot16.lastRoguePassLayer
+	slot15 = slot15[slot16]
+	slot16 = 0
 	--- END OF BLOCK #36 ---
 
-	if slot14 <= slot15 then
+	if slot15 <= slot16 then
 	JUMP TO BLOCK #37
 	else
 	JUMP TO BLOCK #38
 	end
 
 
-	--- BLOCK #37 258-259, warpins: 1 ---
-	slot14 = false
+	--- BLOCK #37 259-260, warpins: 1 ---
+	slot15 = false
 	--- END OF BLOCK #37 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #38 260-260, warpins: 1 ---
-	slot14 = true
+	--- BLOCK #38 261-261, warpins: 1 ---
+	slot15 = true
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 261-262, warpins: 3 ---
+	--- BLOCK #39 262-263, warpins: 3 ---
 	--- END OF BLOCK #39 ---
 
-	slot14 = if not slot14 then
+	slot15 = if not slot15 then
 	JUMP TO BLOCK #40
 	else
 	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #40 263-265, warpins: 1 ---
-	slot15 = slot0.hasFinish
+	--- BLOCK #40 264-266, warpins: 1 ---
+	slot16 = slot0.hasFinish
 	--- END OF BLOCK #40 ---
 
-	slot15 = if slot15 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #41
 	else
 	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #41 266-268, warpins: 1 ---
-	slot15 = slot13.firstSettlementRewardId
+	--- BLOCK #41 267-269, warpins: 1 ---
+	slot16 = slot13.firstSettlementRewardId
 	--- END OF BLOCK #41 ---
 
-	slot15 = if slot15 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #42
 	else
 	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #42 269-275, warpins: 1 ---
-	slot15 = table
-	slot15 = slot15.insert
-	slot17 = slot12
-	slot18 = {
+	--- BLOCK #42 270-277, warpins: 1 ---
+	slot16 = table
+	slot16 = slot16.insert
+	slot18 = slot12
+	slot19 = {
 		firstReward = true
 	}
-	slot19 = slot13.firstSettlementRewardId
-	slot18.dropId = slot19
+	slot20 = slot13.firstSettlementRewardId
+	slot19.dropId = slot20
 
-	slot15(slot17, slot18)
+	slot16(slot18, slot19)
 
+	slot14 = true
 	--- END OF BLOCK #42 ---
 
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 276-278, warpins: 4 ---
-	slot15 = slot13.settlementRewardId
+	--- BLOCK #43 278-280, warpins: 4 ---
+	slot16 = slot13.settlementRewardId
 	--- END OF BLOCK #43 ---
 
-	slot15 = if slot15 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #44
 	else
 	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #44 279-285, warpins: 1 ---
-	slot15 = table
-	slot15 = slot15.insert
-	slot17 = slot12
-	slot18 = {}
-	slot19 = slot13.settlementRewardId
-	slot18.dropId = slot19
+	--- BLOCK #44 281-288, warpins: 1 ---
+	slot16 = table
+	slot16 = slot16.insert
+	slot18 = slot12
+	slot19 = {}
+	slot20 = slot13.settlementRewardId
+	slot19.dropId = slot20
 
-	slot15(slot17, slot18)
+	slot16(slot18, slot19)
 
 	--- END OF BLOCK #44 ---
 
-	FLOW; TARGET BLOCK #45
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
 
 
-	--- BLOCK #45 286-298, warpins: 3 ---
-	slot14 = LuaUIUtils
-	slot14 = slot14.setRewardListByDropIds
+	--- BLOCK #45 289-295, warpins: 2 ---
 	slot16 = slot0.view
-	slot16 = slot16.listRewardUList
-	slot17 = slot12
-
-	slot14(slot16, slot17)
-
-	slot14 = {}
-	slot15 = pairs
-	slot17 = pg
-	slot17 = slot17.me
-	slot17 = slot17.rogueExchangeRewardInfo
-	slot15, slot16, slot17 = slot15(slot17)
+	slot16 = slot16.rootUComponent
+	slot18 = slot16
+	slot16 = slot16.TryChangePage
+	slot19 = "State"
 	--- END OF BLOCK #45 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 296-297, warpins: 1 ---
+	slot20 = 0
+	--- END OF BLOCK #46 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #46 299-302, warpins: 1 ---
-	slot20 = ItemData
-	slot20 = slot20[slot18]
-	--- END OF BLOCK #46 ---
-
-	slot20 = if slot20 then
-	JUMP TO BLOCK #47
-	else
-	JUMP TO BLOCK #48
-	end
-
-
-	--- BLOCK #47 303-311, warpins: 1 ---
-	slot21 = table
-	slot21 = slot21.insert
-	slot23 = slot14
-	slot24 = {
-		tIndex = 0,
-		type = 0
-	}
-	slot24.num = slot19
-	slot24.id = slot18
-	slot25 = slot20.quality
-	slot24.quality = slot25
-
-	slot21(slot23, slot24)
+	--- BLOCK #47 298-298, warpins: 1 ---
+	slot20 = 1
 
 	--- END OF BLOCK #47 ---
 
 	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 312-313, warpins: 3 ---
+	--- BLOCK #48 299-300, warpins: 2 ---
+	slot16(slot18, slot19, slot20)
+
 	--- END OF BLOCK #48 ---
 
-	for slot18, slot19 in slot15, slot16, slot17
-	LOOP BLOCK #46
-	GO OUT TO BLOCK #49
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #49 314-327, warpins: 1 ---
-	slot15 = ClientActivityUtils
-	slot15 = slot15.isRogueRewardUp
-	slot15 = slot15()
-	slot16 = ClientActivityUtils
-	slot16 = slot16.initRogueRewardUpWidget
-	slot18 = slot0.view
-	slot18 = slot18.doubleRewardUWidget
+	--- BLOCK #49 301-307, warpins: 1 ---
+	slot15 = slot0.view
+	slot15 = slot15.rootUComponent
+	slot17 = slot15
+	slot15 = slot15.TryChangePage
+	slot18 = "State"
+	slot19 = 1
 
-	slot16(slot18)
+	slot15(slot17, slot18, slot19)
 
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 308-320, warpins: 2 ---
+	slot15 = LuaUIUtils
+	slot15 = slot15.setRewardListByDropIds
+	slot17 = slot0.view
+	slot17 = slot17.listRewardUList
+	slot18 = slot12
+
+	slot15(slot17, slot18)
+
+	slot15 = {}
 	slot16 = pairs
 	slot18 = pg
 	slot18 = slot18.me
-	slot18 = slot18.upRogueExchangeRewardInfo
+	slot18 = slot18.rogueExchangeRewardInfo
 	slot16, slot17, slot18 = slot16(slot18)
-	--- END OF BLOCK #49 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #52
-
-
-	--- BLOCK #50 328-331, warpins: 1 ---
-	slot21 = ItemData
-	slot21 = slot21[slot19]
 	--- END OF BLOCK #50 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
+
+
+	--- BLOCK #51 321-324, warpins: 1 ---
+	slot21 = ItemData
+	slot21 = slot21[slot19]
+	--- END OF BLOCK #51 ---
+
 	slot21 = if slot21 then
-	JUMP TO BLOCK #51
-	else
 	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #53
 	end
 
 
-	--- BLOCK #51 332-341, warpins: 1 ---
+	--- BLOCK #52 325-333, warpins: 1 ---
 	slot22 = table
 	slot22 = slot22.insert
-	slot24 = slot14
+	slot24 = slot15
 	slot25 = {
 		tIndex = 0,
 		type = 0
@@ -1630,29 +1624,90 @@ slot24 = function(slot0)
 	slot25.id = slot19
 	slot26 = slot21.quality
 	slot25.quality = slot26
-	slot25.isExtra = slot15
 
 	slot22(slot24, slot25)
 
-	--- END OF BLOCK #51 ---
-
-	FLOW; TARGET BLOCK #52
-
-
-	--- BLOCK #52 342-343, warpins: 3 ---
 	--- END OF BLOCK #52 ---
 
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 334-335, warpins: 3 ---
+	--- END OF BLOCK #53 ---
+
 	for slot19, slot20 in slot16, slot17, slot18
-	LOOP BLOCK #50
-	GO OUT TO BLOCK #53
+	LOOP BLOCK #51
+	GO OUT TO BLOCK #54
 
 
-	--- BLOCK #53 344-352, warpins: 1 ---
-	slot16 = table
-	slot16 = slot16.sort
-	slot18 = slot14
+	--- BLOCK #54 336-349, warpins: 1 ---
+	slot16 = ClientActivityUtils
+	slot16 = slot16.isRogueRewardUp
+	slot16 = slot16()
+	slot17 = ClientActivityUtils
+	slot17 = slot17.initRogueRewardUpWidget
+	slot19 = slot0.view
+	slot19 = slot19.doubleRewardUWidget
 
-	slot19 = function(slot0, slot1)
+	slot17(slot19)
+
+	slot17 = pairs
+	slot19 = pg
+	slot19 = slot19.me
+	slot19 = slot19.upRogueExchangeRewardInfo
+	slot17, slot18, slot19 = slot17(slot19)
+	--- END OF BLOCK #54 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #57
+
+
+	--- BLOCK #55 350-353, warpins: 1 ---
+	slot22 = ItemData
+	slot22 = slot22[slot20]
+	--- END OF BLOCK #55 ---
+
+	slot22 = if slot22 then
+	JUMP TO BLOCK #56
+	else
+	JUMP TO BLOCK #57
+	end
+
+
+	--- BLOCK #56 354-363, warpins: 1 ---
+	slot23 = table
+	slot23 = slot23.insert
+	slot25 = slot15
+	slot26 = {
+		tIndex = 0,
+		type = 0
+	}
+	slot26.num = slot21
+	slot26.id = slot20
+	slot27 = slot22.quality
+	slot26.quality = slot27
+	slot26.isExtra = slot16
+
+	slot23(slot25, slot26)
+
+	--- END OF BLOCK #56 ---
+
+	FLOW; TARGET BLOCK #57
+
+
+	--- BLOCK #57 364-365, warpins: 3 ---
+	--- END OF BLOCK #57 ---
+
+	for slot20, slot21 in slot17, slot18, slot19
+	LOOP BLOCK #55
+	GO OUT TO BLOCK #58
+
+
+	--- BLOCK #58 366-374, warpins: 1 ---
+	slot17 = table
+	slot17 = slot17.sort
+	slot19 = slot15
+
+	slot20 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot0.quality
 		slot3 = slot1.quality
@@ -1688,225 +1743,225 @@ slot24 = function(slot0)
 
 	end
 
-	slot16(slot18, slot19)
-
-	slot16 = ipairs
-	slot18 = slot14
-	slot16, slot17, slot18 = slot16(slot18)
-	--- END OF BLOCK #53 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #55
-
-
-	--- BLOCK #54 353-358, warpins: 1 ---
-	slot21 = slot0.view
-	slot21 = slot21.listRewardUList
-	slot23 = slot21
-	slot21 = slot21.AddElement
-	slot24 = slot20
-
-	slot21(slot23, slot24)
-
-	--- END OF BLOCK #54 ---
-
-	FLOW; TARGET BLOCK #55
-
-
-	--- BLOCK #55 359-360, warpins: 2 ---
-	--- END OF BLOCK #55 ---
-
-	for slot19, slot20 in slot16, slot17, slot18
-	LOOP BLOCK #54
-	GO OUT TO BLOCK #56
-
-
-	--- BLOCK #56 361-364, warpins: 1 ---
-	slot16 = slot0.view
-	slot16 = slot16.listRewardUList
-	slot16 = slot16.itemData
-	slot16 = slot16.Count
-	--- END OF BLOCK #56 ---
-
-	FLOW; TARGET BLOCK #57
-
-
-	--- BLOCK #57 365-367, warpins: 2 ---
-	slot17 = 8
-	--- END OF BLOCK #57 ---
-
-	if slot16 < slot17 then
-	JUMP TO BLOCK #58
-	else
-	JUMP TO BLOCK #60
-	end
-
-
-	--- BLOCK #58 368-368, warpins: 1 ---
-	--- END OF BLOCK #58 ---
-
-	FLOW; TARGET BLOCK #59
-
-
-	--- BLOCK #59 369-376, warpins: 1 ---
-	slot17 = slot0.view
-	slot17 = slot17.listRewardUList
-	slot19 = slot17
-	slot17 = slot17.AddElement
-	slot20 = {
-		tIndex = 1
-	}
-
 	slot17(slot19, slot20)
 
-	slot16 = slot16 + 1
+	slot17 = ipairs
+	slot19 = slot15
+	slot17, slot18, slot19 = slot17(slot19)
+	--- END OF BLOCK #58 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
+
+
+	--- BLOCK #59 375-380, warpins: 1 ---
+	slot22 = slot0.view
+	slot22 = slot22.listRewardUList
+	slot24 = slot22
+	slot22 = slot22.AddElement
+	slot25 = slot21
+
+	slot22(slot24, slot25)
+
 	--- END OF BLOCK #59 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #57
+	FLOW; TARGET BLOCK #60
 
 
-	--- BLOCK #60 377-381, warpins: 1 ---
-	slot17 = pg
-	slot17 = slot17.me
-	slot17 = slot17.rogueLevelBossKillCount
+	--- BLOCK #60 381-382, warpins: 2 ---
 	--- END OF BLOCK #60 ---
 
-	slot17 = if not slot17 then
-	JUMP TO BLOCK #61
-	else
-	JUMP TO BLOCK #62
-	end
+	for slot20, slot21 in slot17, slot18, slot19
+	LOOP BLOCK #59
+	GO OUT TO BLOCK #61
 
 
-	--- BLOCK #61 382-382, warpins: 1 ---
-	slot17 = 0
+	--- BLOCK #61 383-386, warpins: 1 ---
+	slot17 = slot0.view
+	slot17 = slot17.listRewardUList
+	slot17 = slot17.itemData
+	slot17 = slot17.Count
 	--- END OF BLOCK #61 ---
 
 	FLOW; TARGET BLOCK #62
 
 
-	--- BLOCK #62 383-400, warpins: 2 ---
-	slot18 = pg
-	slot18 = slot18.me
-	slot18 = slot18.rogueWeeklyBossKillCount
-	slot19 = ClientTextUtils
-	slot19 = slot19.setText
-	slot21 = slot0.view
-	slot21 = slot21.killCountUBaseText
-	slot22 = "+"
-	slot23 = slot17
-
-	slot19(slot21, slot22, slot23)
-
-	slot19 = slot0.view
-	slot19 = slot19.maxUWidget
-	slot21 = slot19
-	slot19 = slot19.SetActive
-	slot22 = RogueWeekBossRewardData
-	slot22 = #slot22
+	--- BLOCK #62 387-389, warpins: 2 ---
+	slot18 = 8
 	--- END OF BLOCK #62 ---
 
-	if slot18 < slot22 then
+	if slot17 < slot18 then
 	JUMP TO BLOCK #63
 	else
-	JUMP TO BLOCK #64
+	JUMP TO BLOCK #65
 	end
 
 
-	--- BLOCK #63 401-402, warpins: 1 ---
-	slot22 = false
+	--- BLOCK #63 390-390, warpins: 1 ---
 	--- END OF BLOCK #63 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #65
+	FLOW; TARGET BLOCK #64
 
 
-	--- BLOCK #64 403-403, warpins: 1 ---
-	slot22 = true
+	--- BLOCK #64 391-398, warpins: 1 ---
+	slot18 = slot0.view
+	slot18 = slot18.listRewardUList
+	slot20 = slot18
+	slot18 = slot18.AddElement
+	slot21 = {
+		tIndex = 1
+	}
 
+	slot18(slot20, slot21)
+
+	slot17 = slot17 + 1
 	--- END OF BLOCK #64 ---
 
-	FLOW; TARGET BLOCK #65
+	UNCONDITIONAL JUMP; TARGET BLOCK #62
 
 
-	--- BLOCK #65 404-406, warpins: 2 ---
-	slot19(slot21, slot22)
-
+	--- BLOCK #65 399-403, warpins: 1 ---
+	slot18 = pg
+	slot18 = slot18.me
+	slot18 = slot18.rogueLevelBossKillCount
 	--- END OF BLOCK #65 ---
 
-	slot2 = if slot2 then
+	slot18 = if not slot18 then
 	JUMP TO BLOCK #66
 	else
-	JUMP TO BLOCK #70
+	JUMP TO BLOCK #67
 	end
 
 
-	--- BLOCK #66 407-410, warpins: 1 ---
-	slot19 = pg
-	slot19 = slot19.global
+	--- BLOCK #66 404-404, warpins: 1 ---
+	slot18 = 0
 	--- END OF BLOCK #66 ---
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #67
-	else
-	JUMP TO BLOCK #70
-	end
+	FLOW; TARGET BLOCK #67
 
 
-	--- BLOCK #67 411-415, warpins: 1 ---
-	slot19 = pg
-	slot19 = slot19.global
-	slot19 = slot19.eventEmitter
-	--- END OF BLOCK #67 ---
-
-	slot19 = if slot19 then
-	JUMP TO BLOCK #68
-	else
-	JUMP TO BLOCK #70
-	end
-
-
-	--- BLOCK #68 416-419, warpins: 1 ---
+	--- BLOCK #67 405-422, warpins: 2 ---
 	slot19 = pg
 	slot19 = slot19.me
-	--- END OF BLOCK #68 ---
+	slot19 = slot19.rogueWeeklyBossKillCount
+	slot20 = ClientTextUtils
+	slot20 = slot20.setText
+	slot22 = slot0.view
+	slot22 = slot22.killCountUBaseText
+	slot23 = "+"
+	slot24 = slot18
 
-	slot19 = if slot19 then
-	JUMP TO BLOCK #69
+	slot20(slot22, slot23, slot24)
+
+	slot20 = slot0.view
+	slot20 = slot20.maxUWidget
+	slot22 = slot20
+	slot20 = slot20.SetActive
+	slot23 = RogueWeekBossRewardData
+	slot23 = #slot23
+	--- END OF BLOCK #67 ---
+
+	if slot19 < slot23 then
+	JUMP TO BLOCK #68
 	else
-	JUMP TO BLOCK #70
+	JUMP TO BLOCK #69
 	end
 
 
-	--- BLOCK #69 420-432, warpins: 1 ---
-	slot19 = pg
-	slot19 = slot19.global
-	slot19 = slot19.eventEmitter
-	slot21 = slot19
-	slot19 = slot19.emit
-	slot22 = EventConst
-	slot22 = slot22.PLATFORM_ACHIEVEMENT_ROGUE_PASSED
-	slot23 = {}
-	slot24 = pg
-	slot24 = slot24.me
-	slot24 = slot24.curRogueLevel
-	slot23.levelId = slot24
+	--- BLOCK #68 423-424, warpins: 1 ---
+	slot23 = false
+	--- END OF BLOCK #68 ---
 
-	slot19(slot21, slot22, slot23)
+	UNCONDITIONAL JUMP; TARGET BLOCK #70
+
+
+	--- BLOCK #69 425-425, warpins: 1 ---
+	slot23 = true
 
 	--- END OF BLOCK #69 ---
 
 	FLOW; TARGET BLOCK #70
 
 
-	--- BLOCK #70 433-434, warpins: 5 ---
-	return
+	--- BLOCK #70 426-428, warpins: 2 ---
+	slot20(slot22, slot23)
+
 	--- END OF BLOCK #70 ---
 
-	FLOW; TARGET BLOCK #71
+	slot2 = if slot2 then
+	JUMP TO BLOCK #71
+	else
+	JUMP TO BLOCK #75
+	end
 
 
-	--- BLOCK #71 435-435, warpins: 2 ---
-	return
+	--- BLOCK #71 429-432, warpins: 1 ---
+	slot20 = pg
+	slot20 = slot20.global
 	--- END OF BLOCK #71 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #72
+	else
+	JUMP TO BLOCK #75
+	end
+
+
+	--- BLOCK #72 433-437, warpins: 1 ---
+	slot20 = pg
+	slot20 = slot20.global
+	slot20 = slot20.eventEmitter
+	--- END OF BLOCK #72 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #73
+	else
+	JUMP TO BLOCK #75
+	end
+
+
+	--- BLOCK #73 438-441, warpins: 1 ---
+	slot20 = pg
+	slot20 = slot20.me
+	--- END OF BLOCK #73 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #74
+	else
+	JUMP TO BLOCK #75
+	end
+
+
+	--- BLOCK #74 442-454, warpins: 1 ---
+	slot20 = pg
+	slot20 = slot20.global
+	slot20 = slot20.eventEmitter
+	slot22 = slot20
+	slot20 = slot20.emit
+	slot23 = EventConst
+	slot23 = slot23.PLATFORM_ACHIEVEMENT_ROGUE_PASSED
+	slot24 = {}
+	slot25 = pg
+	slot25 = slot25.me
+	slot25 = slot25.curRogueLevel
+	slot24.levelId = slot25
+
+	slot20(slot22, slot23, slot24)
+
+	--- END OF BLOCK #74 ---
+
+	FLOW; TARGET BLOCK #75
+
+
+	--- BLOCK #75 455-456, warpins: 5 ---
+	return
+	--- END OF BLOCK #75 ---
+
+	FLOW; TARGET BLOCK #76
+
+
+	--- BLOCK #76 457-457, warpins: 2 ---
+	return
+	--- END OF BLOCK #76 ---
 
 
 
@@ -2932,7 +2987,7 @@ end
 slot4.clearRogueInfo = slot24
 
 slot24 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -2941,12 +2996,8 @@ slot24 = function(slot0)
 
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -2956,49 +3007,15 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #1 15-20, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 21-24, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 25-26, warpins: 2 ---
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 27-28, warpins: 1 ---
+	--- BLOCK #1 11-12, warpins: 1 ---
 	slot2 = true
 	slot1.needOpenTowerMain = slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #5 29-34, warpins: 2 ---
+	--- BLOCK #2 13-18, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -3007,7 +3024,7 @@ slot24 = function(slot0)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 

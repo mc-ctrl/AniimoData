@@ -15,7 +15,7 @@ slot3 = slot3(slot5, slot6)
 slot4 = ToBool
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-57, warpins: 1 ---
+	--- BLOCK #0 1-38, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -53,25 +53,6 @@ slot5 = function(slot0)
 	slot4 = "keyHotKeyContent"
 	slot1 = slot1(slot3, slot4)
 	slot0.keyHotKeyContent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "sneakModeUContainer"
-	slot1 = slot1(slot3, slot4)
-	slot0.sneakModeUContainer = slot1
-	slot1 = slot0.sneakModeUContainer
-	slot1 = slot1.content
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "ObjectReference"
-	slot1 = slot1(slot3, slot4)
-	slot0.sneakModeUContainerReference = slot1
-	slot1 = slot0.sneakModeUContainerReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "sneakMode"
-	slot1 = slot1(slot3, slot4)
-	slot0.sneakMode = slot1
 
 	return
 	--- END OF BLOCK #0 ---

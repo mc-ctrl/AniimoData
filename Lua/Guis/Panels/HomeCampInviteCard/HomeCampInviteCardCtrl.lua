@@ -241,15 +241,12 @@ slot11 = function(slot0, slot1)
 	slot4(slot6)
 
 	slot4 = false
-
-	return slot4
-
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #4 21-23, warpins: 2 ---
+	--- BLOCK #4 21-23, warpins: 1 ---
 	slot4 = slot0.inviteInfo
 	--- END OF BLOCK #4 ---
 
@@ -268,7 +265,64 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 26-32, warpins: 2 ---
+	--- BLOCK #6 26-27, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 28-48, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.queryPlayerInfoList
+	slot8 = {}
+	slot9 = tostring
+	slot11 = slot4
+	MULTRES = slot9(slot11)
+	slot8[MULTRES] = MULTRES
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot9 = slot9.queryPlayerInfoType
+	slot9 = slot9.ShowPlayerInfo
+	slot10 = true
+	slot11 = nil
+
+	slot12 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.acceptCampInvite
+		slot3 = inviteId
+		slot4 = ownerUid
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+
+	slot5 = true
+
+	return slot5
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 49-56, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
@@ -277,7 +331,14 @@ slot11 = function(slot0, slot1)
 	slot9 = slot4
 
 	return slot5(slot7, slot8, slot9)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 57-57, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #9 ---
 
 
 

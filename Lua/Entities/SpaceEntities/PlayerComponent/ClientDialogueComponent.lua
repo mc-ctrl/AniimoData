@@ -71,16 +71,16 @@ end
 
 slot2.ReqPlayDialogueGraph = slot3
 
-slot3 = function(slot0, slot1, slot2, slot3, slot4)
+slot3 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-7, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.serverMsg
-	slot8 = "RPC_CS_FinishPlayDialogueGraph"
-	slot9 = slot1
-	slot10 = slot2
+	slot8 = slot0
+	slot6 = slot0.serverMsg
+	slot9 = "RPC_CS_FinishPlayDialogueGraph"
+	slot10 = slot1
+	slot11 = slot2
 	--- END OF BLOCK #0 ---
 
-	slot11 = if not slot3 then
+	slot12 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -88,7 +88,7 @@ slot3 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #1 8-8, warpins: 1 ---
-	slot11 = {}
+	slot12 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -97,7 +97,7 @@ slot3 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #2 9-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot12 = if not slot4 then
+	slot13 = if not slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -105,15 +105,46 @@ slot3 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #3 11-11, warpins: 1 ---
-	slot12 = {}
+	slot13 = {}
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-13, warpins: 2 ---
-	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+	--- BLOCK #4 12-15, warpins: 2 ---
+	slot14 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = callback
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-6, warpins: 1 ---
+		slot1 = callback
+		slot3 = slot0
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-7, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
 
 	return
 	--- END OF BLOCK #4 ---

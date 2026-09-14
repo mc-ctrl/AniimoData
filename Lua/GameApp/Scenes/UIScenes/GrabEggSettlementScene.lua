@@ -1,4 +1,4 @@
---- BLOCK #0 1-46, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -15,20 +15,23 @@ slot4 = require
 slot6 = "Utils.ClientUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.ItemConst"
+slot7 = "Const.Const"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.PlayableConst"
+slot8 = "Common.Const.ItemConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Entities.Utils.EModelUtils"
+slot9 = "Common.Const.PlayableConst"
 slot7 = slot7(slot9)
-slot8 = slot0.LightClass
-slot10 = "GrabEggSettlementScene"
-slot11 = slot1
-slot8 = slot8(slot10, slot11)
+slot8 = require
+slot10 = "Entities.Utils.EModelUtils"
+slot8 = slot8(slot10)
+slot9 = slot0.LightClass
+slot11 = "GrabEggSettlementScene"
+slot12 = slot1
+slot9 = slot9(slot11, slot12)
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 	slot0.egg = slot1
@@ -44,9 +47,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onCtor = slot9
+slot9.onCtor = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-52, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -99,7 +102,7 @@ slot9 = function(slot0, slot1)
 	slot5 = slot3
 	slot3 = slot3.SetKccEnable
 	slot6 = false
-	slot7 = ClientConst
+	slot7 = Const
 	slot7 = slot7.KccDisableReason
 	slot7 = slot7.StaticSpawn
 
@@ -112,9 +115,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onStart = slot9
+slot9.onStart = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.egg
 	--- END OF BLOCK #0 ---
@@ -127,9 +130,9 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.egg
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.egg
 
 	slot1(slot3)
 
@@ -150,9 +153,9 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #3 11-14, warpins: 1 ---
-	slot1 = slot0.pet
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.pet
 
 	slot1(slot3)
 
@@ -170,9 +173,10 @@ slot9 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 19-21, warpins: 1 ---
+	--- BLOCK #5 19-22, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -181,7 +185,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 22-23, warpins: 2 ---
+	--- BLOCK #6 23-24, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -189,13 +193,13 @@ slot9 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 24-33, warpins: 1 ---
+	--- BLOCK #7 25-34, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
 	slot3 = slot1
 	slot1 = slot1.SetKccEnable
 	slot4 = true
-	slot5 = ClientConst
+	slot5 = Const
 	slot5 = slot5.KccDisableReason
 	slot5 = slot5.StaticSpawn
 
@@ -208,25 +212,25 @@ slot9 = function(slot0)
 
 end
 
-slot8.onDestroy = slot9
+slot9.onDestroy = slot10
 
-slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-41, warpins: 1 ---
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-44, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.copyMainPlayer
 	slot2 = slot2(slot4)
 	slot3 = slot2.eModel
-	slot3 = slot3.playableComponent
 	slot5 = slot3
 	slot3 = slot3.SetFacialStubEnabled
-	slot6 = false
+	slot6 = Const
+	slot6 = slot6.COMPONENT_IDX_PLAYABLE
+	slot7 = false
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
 	slot5 = slot3
-	slot3 = slot3.SetParent
+	slot3 = slot3.SetTransformParent
 	slot6 = slot0.scene
 	slot6 = slot6.transform
 	slot7 = false
@@ -234,27 +238,36 @@ slot9 = function(slot0, slot1)
 	slot3(slot5, slot6, slot7)
 
 	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalPosition
 	slot6 = 0.273
 	slot7 = 0
 	slot8 = 0.51
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3.localPosition = slot4
-	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Quaternion
-	slot4 = slot4.Euler
-	slot6 = 0
-	slot7 = 23.3
-	slot8 = 0
-	slot4 = slot4(slot6, slot7, slot8)
-	slot3.localRotation = slot4
-	slot3 = slot2.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.one
-	slot3.localScale = slot4
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = Quaternion
+	slot3 = slot3.Euler
+	slot5 = 0
+	slot6 = 23.3
+	slot7 = 0
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = slot2.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalRotation
+	slot7 = slot3.x
+	slot8 = slot3.y
+	slot9 = slot3.z
+	slot10 = slot3.w
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot4 = slot2.eModel
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalScale
+
+	slot4(slot6)
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -264,33 +277,33 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 42-47, warpins: 1 ---
-	slot5 = slot2
-	slot3 = slot2.playAnimation
-	slot6 = PlayableConst
-	slot6 = slot6.Die
+	--- BLOCK #1 45-50, warpins: 1 ---
+	slot6 = slot2
+	slot4 = slot2.playAnimation
+	slot7 = PlayableConst
+	slot7 = slot7.Die
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 48-52, warpins: 1 ---
-	slot5 = slot2
-	slot3 = slot2.playAnimation
-	slot6 = PlayableConst
-	slot6 = slot6.Show_Dance02
+	--- BLOCK #2 51-55, warpins: 1 ---
+	slot6 = slot2
+	slot4 = slot2.playAnimation
+	slot7 = PlayableConst
+	slot7 = slot7.Show_Dance02
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 53-53, warpins: 2 ---
+	--- BLOCK #3 56-56, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -298,9 +311,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.createPlayer = slot9
+slot9.createPlayer = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.egg
 
@@ -390,9 +403,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.createEggInBag = slot9
+slot9.createEggInBag = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.egg
 
@@ -434,9 +447,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.createPlayerBecomeEgg = slot9
+slot9.createPlayerBecomeEgg = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.pet
 
@@ -457,7 +470,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-28, warpins: 2 ---
+	--- BLOCK #2 5-33, warpins: 2 ---
 	slot1 = ClientVirtualEntityUtils
 	slot1 = slot1.createPetVirtualEntityWithPetId
 	slot3 = petId
@@ -473,15 +486,22 @@ slot9 = function(slot0)
 
 	slot2(slot4, MULTRES)
 
-	slot2 = slot1.eModel
-	slot2 = slot2.transform
-	slot3 = Quaternion
-	slot3 = slot3.Euler
-	slot5 = 0
-	slot6 = 15.6
-	slot7 = 0
-	slot3 = slot3(slot5, slot6, slot7)
-	slot2.localRotation = slot3
+	slot2 = Quaternion
+	slot2 = slot2.Euler
+	slot4 = 0
+	slot5 = 15.6
+	slot6 = 0
+	slot2 = slot2(slot4, slot5, slot6)
+	slot3 = slot1.eModel
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalRotation
+	slot6 = slot2.x
+	slot7 = slot2.y
+	slot8 = slot2.z
+	slot9 = slot2.w
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
 	slot0.pet = slot1
 
 	return
@@ -491,9 +511,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.createPet = slot9
+slot9.createPet = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = ClientUtils
 	slot3 = slot3.createVirtualGrabEggEntity
@@ -514,9 +534,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.createBagItem = slot9
+slot9.createBagItem = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

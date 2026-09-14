@@ -113,7 +113,7 @@ slot10 = function(slot0)
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.duration
 	--- END OF BLOCK #3 ---
 
@@ -182,7 +182,7 @@ slot10 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -581,7 +581,7 @@ slot8.renderItem = slot10
 slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot1.countDownBeginTime = slot2
 
 	return

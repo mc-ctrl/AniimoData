@@ -1,4 +1,4 @@
---- BLOCK #0 1-106, warpins: 1 ---
+--- BLOCK #0 1-119, warpins: 1 ---
 slot0 = require
 slot2 = "CustomTypes.AppearanceCustomOne"
 slot0 = slot0(slot2)
@@ -37,6 +37,15 @@ slot10 = require
 slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = {}
+slot12 = "Eff_UI_TeamFormation"
+slot11.TEAM_FORMATION_EFFECT = slot12
+slot12 = setmetatable
+slot14 = {}
+slot15 = {
+	__mode = "k"
+}
+slot12 = slot12(slot14, slot15)
+slot11.teamMemberTooltipEffectInfos = slot12
 slot12 = 5
 slot13 = slot12 * slot12
 
@@ -601,13 +610,402 @@ end
 
 slot11.comeToMe = slot14
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = nil
-	slot3 = 0
-	slot0.tooltipMode = slot3
+slot14 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	--- END OF BLOCK #0 ---
 
-	slot3 = function(slot0, slot1)
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.teamRoom
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot2 = slot1.uiScene
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-18, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 19-21, warpins: 1 ---
+	slot3 = slot2.getPlayerModelByUid
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 22-25, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.getPlayerModelByUid
+	slot6 = slot0
+
+	return slot3(slot5, slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-27, warpins: 3 ---
+	slot3 = nil
+
+	return slot3
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot11.getTeamRoomScenePlayerModel = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = TeamUtils
+	slot1 = slot1.teamMemberTooltipEffectInfos
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot2 = slot1.model
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 11-14, warpins: 1 ---
+	slot2 = slot1.model
+	slot2 = slot2.stopEffectById
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-19, warpins: 1 ---
+	slot2 = slot1.model
+	slot4 = slot2
+	slot2 = slot2.stopEffectById
+	slot5 = slot1.effectId
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-23, warpins: 3 ---
+	slot2 = TeamUtils
+	slot2 = slot2.teamMemberTooltipEffectInfos
+	slot3 = nil
+	slot2[slot0] = slot3
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-24, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot11.stopTeamMemberTooltipEffect = slot14
+
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot2 = TeamUtils
+	slot2 = slot2.stopTeamMemberTooltipEffect
+	slot4 = slot0
+
+	slot2(slot4)
+
+	slot2 = TeamUtils
+	slot2 = slot2.getTeamRoomScenePlayerModel
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 11-13, warpins: 1 ---
+	slot3 = slot2.eModel
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 14-23, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.playEffectOn
+	slot6 = TeamUtils
+	slot6 = slot6.TEAM_FORMATION_EFFECT
+	slot7 = nil
+	slot8 = slot2.eModel
+	slot8 = slot8.transform
+	slot3 = slot3(slot5, slot6, slot7, slot8)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 24-29, warpins: 1 ---
+	slot4 = TeamUtils
+	slot4 = slot4.teamMemberTooltipEffectInfos
+	slot5 = {}
+	slot5.model = slot2
+	slot5.effectId = slot3
+	slot4[slot0] = slot5
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 30-30, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot11.playTeamMemberTooltipEffect = slot14
+
+slot14 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot4 = nil
+	slot5 = 0
+	slot0.tooltipMode = slot5
+	slot5 = TeamUtils
+	slot5 = slot5.stopTeamMemberTooltipEffect
+	slot7 = slot0
+
+	slot5(slot7)
+
+	--- END OF BLOCK #0 ---
+
+	if slot3 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-23, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.ClosePopup
+
+	slot5(slot7)
+
+	slot5 = nil
+	slot0.luaTooltipPopup = slot5
+	slot5 = nil
+	slot0.luaRenderTooltip = slot5
+	slot5 = nil
+	slot0.luaClick = slot5
+	slot5 = NotNil
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 24-28, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.TryChangePage
+	slot8 = "Selected"
+	slot9 = 0
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 29-33, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.SetActive
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 34-45, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.SetActive
+	slot8 = true
+
+	slot5(slot7, slot8)
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot2 = NotNil
+		slot4 = playerButton
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 6-11, warpins: 1 ---
+		slot2 = playerButton
+		slot4 = slot2
+		slot2 = slot2.TryChangePage
+		slot5 = "Selected"
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 12-13, warpins: 1 ---
+		slot6 = 1
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 14-14, warpins: 1 ---
+		slot6 = 0
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 15-15, warpins: 2 ---
+		slot2(slot4, slot5, slot6)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 16-16, warpins: 2 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot0.luaTooltipPopup = slot5
+
+	slot5 = function(slot0, slot1)
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot2 = TeamUtils
 		slot2 = slot2.renderPlayerToolTip
@@ -627,9 +1025,9 @@ slot14 = function(slot0, slot1)
 
 	end
 
-	slot0.luaRenderTooltip = slot3
+	slot0.luaRenderTooltip = slot5
 
-	slot3 = function()
+	slot5 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
 		cachedFuncData = nil
 		slot0 = TeamUtils
@@ -697,10 +1095,17 @@ slot14 = function(slot0, slot1)
 
 	end
 
-	slot0.luaClick = slot3
+	slot0.luaClick = slot5
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 46-46, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
@@ -1077,7 +1482,7 @@ slot14 = function(slot0)
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
 	--- BLOCK #6 37-39, warpins: 1 ---
@@ -1211,7 +1616,7 @@ slot14 = function(slot0)
 	slot9 = if not slot9 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #24
 	end
 
 
@@ -1221,26 +1626,52 @@ slot14 = function(slot0)
 	slot10 = if slot10 then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #20 83-89, warpins: 1 ---
+	--- BLOCK #20 83-87, warpins: 1 ---
 	slot11 = TeamUtils
 	slot12 = slot8.checkFunc
 	slot11 = slot11[slot12]
-	slot13 = slot0
-	slot11 = slot11(slot13)
 	--- END OF BLOCK #20 ---
 
 	slot11 = if slot11 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #21 90-101, warpins: 1 ---
+	--- BLOCK #21 88-92, warpins: 1 ---
+	slot11 = TeamUtils
+	slot12 = slot8.func
+	slot11 = slot11[slot12]
+	--- END OF BLOCK #21 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #22 93-99, warpins: 1 ---
+	slot11 = TeamUtils
+	slot12 = slot8.checkFunc
+	slot11 = slot11[slot12]
+	slot13 = slot0
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #22 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 100-111, warpins: 1 ---
 	slot11 = #slot1
 	slot11 = slot11 + 1
 	slot12 = {}
@@ -1254,22 +1685,22 @@ slot14 = function(slot0)
 	slot12.icon = slot13
 	slot1[slot11] = slot12
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #22 102-103, warpins: 5 ---
-	--- END OF BLOCK #22 ---
+	--- BLOCK #24 112-113, warpins: 7 ---
+	--- END OF BLOCK #24 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
 	LOOP BLOCK #6
-	GO OUT TO BLOCK #23
+	GO OUT TO BLOCK #25
 
 
-	--- BLOCK #23 104-104, warpins: 1 ---
+	--- BLOCK #25 114-114, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #25 ---
 
 
 

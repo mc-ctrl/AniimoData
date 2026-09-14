@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 8,
 	useForRoute = true,
+	version = 8,
 	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Com_StopEffectOnTarget"
 }
@@ -16,15 +16,15 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = "",
 	value = "",
+	const = "",
 	name = "tEffectName",
 	type = "string"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 0,
 	value = "0",
+	const = 0,
 	name = "tTargetActorId",
 	type = "int"
 }
@@ -33,8 +33,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "4"
+	id = "4",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -43,8 +43,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "IfElse",
-	id = "7"
+	id = "7",
+	class = "IfElse"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -53,8 +53,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	class = "Condition",
-	id = "5"
+	id = "5",
+	class = "Condition"
 }
 slot11 = {}
 slot12 = {
@@ -82,8 +82,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	class = "Assignment",
-	id = "6"
+	id = "6",
+	class = "Assignment"
 }
 slot11 = {}
 slot12 = {
@@ -111,8 +111,8 @@ slot9.node = slot10
 slot8[2] = slot9
 slot9 = {}
 slot10 = {
-	class = "Noop",
-	id = "8"
+	id = "8",
+	class = "Noop"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -127,8 +127,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "3"
+	id = "3",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

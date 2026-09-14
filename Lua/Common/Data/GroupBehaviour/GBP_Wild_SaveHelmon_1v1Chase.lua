@@ -1,7 +1,7 @@
 --- BLOCK #0 1-72, warpins: 1 ---
 slot0 = {
-	CDAfterEnd = 0.1,
-	behavID = "BP_Wild_GroupBehav_SaveHelmon_1v1Chase"
+	behavID = "BP_Wild_GroupBehav_SaveHelmon_1v1Chase",
+	CDAfterEnd = 0.1
 }
 slot1 = {}
 slot2 = {
@@ -38,8 +38,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPoint01"
+	para = "GBPMsg_ResPoint01",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -59,8 +59,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPoint01"
+	para = "GBPMsg_ResPoint01",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"

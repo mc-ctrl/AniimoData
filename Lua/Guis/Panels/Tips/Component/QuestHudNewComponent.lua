@@ -1,4 +1,4 @@
---- BLOCK #0 1-514, warpins: 1 ---
+--- BLOCK #0 1-782, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -108,6 +108,18 @@ slot27 = {
 	true
 }
 slot25[slot26] = slot27
+slot26 = slot23.FIRST_ENTER_TEAM
+slot27 = {
+	"onTeamChanged",
+	true
+}
+slot25[slot26] = slot27
+slot26 = slot23.LEAVE_TEAM
+slot27 = {
+	"onTeamChanged",
+	true
+}
+slot25[slot26] = slot27
 slot15.messages = slot25
 slot25 = 1.2
 slot26 = 1
@@ -119,10 +131,34 @@ slot31 = {}
 slot32 = {}
 slot33 = 10000
 slot34 = 1000
-slot35 = 0.3
-slot36 = 1
+slot35 = 0.25
+slot36 = 0.55
+slot37 = 0.45
 
-slot37 = function(slot0)
+slot38 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot1 = math
+	slot1 = slot1.min
+	slot3 = math
+	slot3 = slot3.max
+	slot5 = LONG_PRESS_TIME
+	slot5 = slot0 - slot5
+	slot6 = LONG_PRESS_DURATION
+	slot7 = LONG_PRESS_TIME
+	slot6 = slot6 - slot7
+	slot5 = slot5 / slot6
+	slot6 = 0
+	slot3 = slot3(slot5, slot6)
+	slot4 = 1
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot39 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -170,10 +206,10 @@ slot37 = function(slot0)
 
 end
 
-slot15.findObjects = slot37
+slot15.findObjects = slot39
 
-slot37 = function(slot0, slot1)
-	--- BLOCK #0 1-123, warpins: 1 ---
+slot39 = function(slot0, slot1)
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
 	slot5 = "ObjectReference"
@@ -186,133 +222,202 @@ slot37 = function(slot0, slot1)
 	slot3 = slot2.questHUDNewUComponent
 	slot0.rootUComponent = slot3
 	slot5 = slot0
-	slot3 = slot0.getQuestTabStateItemComs
-	slot6 = slot2.questTabStateObjectReference
-	slot3 = slot3(slot5, slot6)
-	slot0.questTabStateObjectReference = slot3
-	slot3 = slot0.questTabStateObjectReference
-	slot3 = slot3.rootUComponent
-	slot0.questTabStateUComponent = slot3
-	slot3 = slot0.questTabStateObjectReference
-	slot3 = slot3.textNameUSDFText
-	slot0.questTabTextNameUSDFText = slot3
+	slot3 = slot0.initQuestTabRefs
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
 	slot5 = slot0
-	slot3 = slot0.getQuestTabComs
-	slot6 = slot2.questTabObjectReference
-	slot3 = slot3(slot5, slot6)
-	slot4 = slot3.listUList
-	slot0.pageList = slot4
-	slot4 = slot3.keyHotKeyContent
-	slot0.switchPageKey = slot4
-	slot4 = slot0.switchPageKey
-	slot4 = slot4.transform
-	slot6 = slot4
-	slot4 = slot4.GetComponent
-	slot7 = "ObjectReference"
-	slot4 = slot4(slot6, slot7)
-	slot0.switchPageObjectReference = slot4
-	slot6 = slot0
-	slot4 = slot0.getQuestDetailsItemComs
-	slot7 = slot2.mainDetailsObjectReference
-	slot4 = slot4(slot6, slot7)
-	slot5 = slot4.questListUList
-	slot0.storyTracingList = slot5
-	slot5 = slot4.clickHintBtnUButton
-	slot0.clickStoryHintUButton = slot5
-	slot5 = slot4.vButtonUButton
-	slot0.vStoryButtonUButton = slot5
-	slot5 = slot4.questTitleUComponent
-	slot0.curtainQuestButton = slot5
-	slot7 = slot0
-	slot5 = slot0.getQuestDetailsItemComs
-	slot8 = slot2.branchDetailsObjectReference
-	slot5 = slot5(slot7, slot8)
-	slot6 = slot5.questListUList
-	slot0.growTracingList = slot6
-	slot6 = slot5.clickHintBtnUButton
-	slot0.clickGrowHintUButton = slot6
-	slot6 = slot5.vButtonUButton
-	slot0.vGrowButtonUButton = slot6
-	slot6 = slot5.questTitleUComponent
-	slot0.growTitleQuestButton = slot6
-	slot8 = slot0
-	slot6 = slot0.getQuestDetailsItemComs
-	slot9 = slot2.questDetailsObjectReference
-	slot6 = slot6(slot8, slot9)
-	slot7 = slot6.questListUList
-	slot0.questTracingList = slot7
-	slot7 = slot6.clickHintBtnUButton
-	slot0.clickQuestHintUButton = slot7
-	slot7 = slot6.vButtonUButton
-	slot0.vQuestButtonUButton = slot7
-	slot7 = slot6.questTitleUComponent
-	slot0.questTitleQuestButton = slot7
-	slot9 = slot0
-	slot7 = slot0.getQuestTabStateItemComs
-	slot10 = slot2.addonTabStateObjectReference
-	slot7 = slot7(slot9, slot10)
-	slot0.questTabStateItemComs = slot7
-	slot7 = slot0.questTabStateItemComs
-	slot7 = slot7.rootUComponent
-	slot0.questAddTabStateUComponent = slot7
-	slot7 = slot0.questTabStateItemComs
-	slot7 = slot7.textNameUSDFText
-	slot0.questAddTextNameUSDFText = slot7
-	slot9 = slot0
-	slot7 = slot0.getQuestTabComs
-	slot10 = slot2.addonTabObjectReference
-	slot7 = slot7(slot9, slot10)
-	slot0.questTabItemComs = slot7
-	slot9 = slot0
-	slot7 = slot0.getQuestDetailsItemComs
-	slot10 = slot2.addonDetailsObjectReference
-	slot7 = slot7(slot9, slot10)
-	slot8 = slot7.questListUList
-	slot0.untracingQuestList = slot8
-	slot8 = slot7.clickHintBtnUButton
-	slot0.untraceBtnUButton = slot8
-	slot8 = slot7.vButtonUButton
-	slot0.vUntraceUButton = slot8
-	slot8 = slot7.questTitleUComponent
-	slot0.unTrackPopUButton = slot8
-	slot10 = slot0
-	slot8 = slot0.getQuestTabComs
-	slot11 = slot2.addonTabObjectReference
-	slot8 = slot8(slot10, slot11)
-	slot9 = slot8.listUList
-	slot0.unTrackPageList = slot9
-	slot9 = {}
-	slot0.progressPresss = slot9
-	slot9 = slot0.switchPageObjectReference
-	slot11 = slot9
-	slot9 = slot9.GetRefValue
-	slot12 = "progressPressContainerUContainer"
-	slot9 = slot9(slot11, slot12)
-	slot0.keyProgressPressUContainer = slot9
-	slot9 = slot0.keyProgressPressUContainer
-	slot11 = slot9
-	slot9 = slot9.SetActive
-	slot12 = true
+	slot3 = slot0.initQuestDetailsRefs
+	slot6 = slot2
 
-	slot9(slot11, slot12)
+	slot3(slot5, slot6)
 
-	slot9 = slot0.keyProgressPressUContainer
+	slot5 = slot0
+	slot3 = slot0.initAddonRefs
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.initProgressPressRef
+
+	slot3(slot5)
+
+	slot3 = slot2.tipsMainUButton
+	slot0.tipsMainUButton = slot3
+	slot3 = slot2.tipsBranchUButton
+	slot0.tipsBranchUButton = slot3
+	slot3 = slot2.tipsQuestUButton
+	slot0.tipsQuestUButton = slot3
+
+	return
 	--- END OF BLOCK #0 ---
 
-	slot9 = if slot9 then
+
+
+end
+
+slot15.initObjectRef = slot39
+
+slot39 = function(slot0, slot1)
+	--- BLOCK #0 1-27, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getQuestTabStateItemComs
+	slot5 = slot1.questTabStateObjectReference
+	slot2 = slot2(slot4, slot5)
+	slot0.questTabStateObjectReference = slot2
+	slot2 = slot0.questTabStateObjectReference
+	slot2 = slot2.rootUComponent
+	slot0.questTabStateUComponent = slot2
+	slot2 = slot0.questTabStateObjectReference
+	slot2 = slot2.textNameUSDFText
+	slot0.questTabTextNameUSDFText = slot2
+	slot4 = slot0
+	slot2 = slot0.getQuestTabComs
+	slot5 = slot1.questTabObjectReference
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot2.listUList
+	slot0.pageList = slot3
+	slot3 = slot2.keyHotKeyContent
+	slot0.switchPageKey = slot3
+	slot3 = slot0.switchPageKey
+	slot3 = slot3.transform
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "ObjectReference"
+	slot3 = slot3(slot5, slot6)
+	slot0.switchPageObjectReference = slot3
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.initQuestTabRefs = slot39
+
+slot39 = function(slot0, slot1)
+	--- BLOCK #0 1-31, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getQuestDetailsItemComs
+	slot5 = slot1.mainDetailsObjectReference
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot2.questListUList
+	slot0.storyTracingList = slot3
+	slot3 = slot2.clickHintBtnUButton
+	slot0.clickStoryHintUButton = slot3
+	slot3 = slot2.questTitleUComponent
+	slot0.curtainQuestButton = slot3
+	slot5 = slot0
+	slot3 = slot0.getQuestDetailsItemComs
+	slot6 = slot1.branchDetailsObjectReference
+	slot3 = slot3(slot5, slot6)
+	slot4 = slot3.questListUList
+	slot0.growTracingList = slot4
+	slot4 = slot3.clickHintBtnUButton
+	slot0.clickGrowHintUButton = slot4
+	slot4 = slot3.questTitleUComponent
+	slot0.growTitleQuestButton = slot4
+	slot6 = slot0
+	slot4 = slot0.getQuestDetailsItemComs
+	slot7 = slot1.questDetailsObjectReference
+	slot4 = slot4(slot6, slot7)
+	slot5 = slot4.questListUList
+	slot0.questTracingList = slot5
+	slot5 = slot4.clickHintBtnUButton
+	slot0.clickQuestHintUButton = slot5
+	slot5 = slot4.questTitleUComponent
+	slot0.questTitleQuestButton = slot5
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.initQuestDetailsRefs = slot39
+
+slot39 = function(slot0, slot1)
+	--- BLOCK #0 1-33, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getQuestTabStateItemComs
+	slot5 = slot1.addonTabStateObjectReference
+	slot2 = slot2(slot4, slot5)
+	slot0.questTabStateItemComs = slot2
+	slot2 = slot0.questTabStateItemComs
+	slot2 = slot2.rootUComponent
+	slot0.questAddTabStateUComponent = slot2
+	slot2 = slot0.questTabStateItemComs
+	slot2 = slot2.textNameUSDFText
+	slot0.questAddTextNameUSDFText = slot2
+	slot4 = slot0
+	slot2 = slot0.getQuestTabComs
+	slot5 = slot1.addonTabObjectReference
+	slot2 = slot2(slot4, slot5)
+	slot0.questTabItemComs = slot2
+	slot4 = slot0
+	slot2 = slot0.getQuestDetailsItemComs
+	slot5 = slot1.addonDetailsObjectReference
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot2.questListUList
+	slot0.untracingQuestList = slot3
+	slot3 = slot2.clickHintBtnUButton
+	slot0.untraceBtnUButton = slot3
+	slot3 = slot2.questTitleUComponent
+	slot0.unTrackPopUButton = slot3
+	slot5 = slot0
+	slot3 = slot0.getQuestTabComs
+	slot6 = slot1.addonTabObjectReference
+	slot3 = slot3(slot5, slot6)
+	slot4 = slot3.listUList
+	slot0.unTrackPageList = slot4
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.initAddonRefs = slot39
+
+slot39 = function(slot0)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot1 = {}
+	slot0.progressPresss = slot1
+	slot1 = slot0.switchPageObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "progressPressContainerUContainer"
+	slot1 = slot1(slot3, slot4)
+	slot0.keyProgressPressUContainer = slot1
+	slot1 = slot0.keyProgressPressUContainer
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.keyProgressPressUContainer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 124-128, warpins: 1 ---
-	slot9 = slot0.keyProgressPressUContainer
-	slot11 = slot9
-	slot9 = slot9.LoadDefaultUrlManually
+	--- BLOCK #1 17-21, warpins: 1 ---
+	slot1 = slot0.keyProgressPressUContainer
+	slot3 = slot1
+	slot1 = slot1.LoadDefaultUrlManually
 
-	slot12 = function()
-		--- BLOCK #0 1-27, warpins: 1 ---
+	slot4 = function()
+		--- BLOCK #0 1-28, warpins: 1 ---
 		slot0 = self
 		slot1 = self
 		slot1 = slot1.keyProgressPressUContainer
@@ -324,8 +429,9 @@ slot37 = function(slot0, slot1)
 		slot0 = slot0.ProgressToValue
 		slot3 = 0
 		slot4 = nil
+		slot5 = 0
 
-		slot0(slot2, slot3, slot4)
+		slot0(slot2, slot3, slot4, slot5)
 
 		slot0 = table
 		slot0 = slot0.insert
@@ -351,7 +457,7 @@ slot37 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #1 28-35, warpins: 1 ---
+		--- BLOCK #1 29-36, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.keyProgressPressComponent
 		slot0 = slot0.gameObject
@@ -366,7 +472,7 @@ slot37 = function(slot0, slot1)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 36-42, warpins: 1 ---
+		--- BLOCK #2 37-43, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.keyProgressPressComponent
 		slot0 = slot0.gameObject
@@ -381,7 +487,7 @@ slot37 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 43-43, warpins: 2 ---
+		--- BLOCK #3 44-44, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -389,21 +495,14 @@ slot37 = function(slot0, slot1)
 
 	end
 
-	slot9(slot11, slot12)
+	slot1(slot3, slot4)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 129-136, warpins: 2 ---
-	slot9 = slot2.tipsMainUButton
-	slot0.tipsMainUButton = slot9
-	slot9 = slot2.tipsBranchUButton
-	slot0.tipsBranchUButton = slot9
-	slot9 = slot2.tipsQuestUButton
-	slot0.tipsQuestUButton = slot9
-
+	--- BLOCK #2 22-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -411,11 +510,11 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot15.initObjectRef = slot37
-slot37 = false
-slot38 = {}
+slot15.initProgressPressRef = slot39
+slot39 = false
+slot40 = {}
 
-slot39 = function(slot0, slot1)
+slot41 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questComs
 	slot2 = slot2[slot1]
@@ -513,10 +612,10 @@ slot39 = function(slot0, slot1)
 
 end
 
-slot15.getQuestComs = slot39
-slot39 = {}
+slot15.getQuestComs = slot41
+slot41 = {}
 
-slot40 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questTabStateItemComs
 	slot2 = slot2[slot1]
@@ -568,10 +667,10 @@ slot40 = function(slot0, slot1)
 
 end
 
-slot15.getQuestTabStateItemComs = slot40
-slot40 = {}
+slot15.getQuestTabStateItemComs = slot42
+slot42 = {}
 
-slot41 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questTabItemComs
 	slot2 = slot2[slot1]
@@ -629,10 +728,10 @@ slot41 = function(slot0, slot1)
 
 end
 
-slot15.getQuestTabComs = slot41
-slot41 = {}
+slot15.getQuestTabComs = slot43
+slot43 = {}
 
-slot42 = function(slot0, slot1)
+slot44 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questIconComs
 	slot2 = slot2[slot1]
@@ -696,10 +795,10 @@ slot42 = function(slot0, slot1)
 
 end
 
-slot15.getQuestIconComs = slot42
-slot42 = {}
+slot15.getQuestIconComs = slot44
+slot44 = {}
 
-slot43 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questDetailsItemComs
 	slot2 = slot2[slot1]
@@ -712,7 +811,7 @@ slot43 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-36, warpins: 1 ---
+	--- BLOCK #1 5-31, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -723,11 +822,6 @@ slot43 = function(slot0, slot1)
 	slot7 = "rootObj"
 	slot4 = slot4(slot6, slot7)
 	slot2.rootUComponent = slot4
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
-	slot7 = "vButtonUButton"
-	slot4 = slot4(slot6, slot7)
-	slot2.vButtonUButton = slot4
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
 	slot7 = "questListUList"
@@ -750,7 +844,7 @@ slot43 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 37-39, warpins: 2 ---
+	--- BLOCK #2 32-34, warpins: 2 ---
 	slot2 = questDetailsItemComs
 	slot2 = slot2[slot1]
 
@@ -761,10 +855,10 @@ slot43 = function(slot0, slot1)
 
 end
 
-slot15.getQuestDetailsItemComs = slot43
-slot43 = {}
+slot15.getQuestDetailsItemComs = slot45
+slot45 = {}
 
-slot44 = function(slot0, slot1)
+slot46 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questTitleNewItemComs
 	slot2 = slot2[slot1]
@@ -777,7 +871,7 @@ slot44 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-23, warpins: 1 ---
+	--- BLOCK #1 5-33, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -794,6 +888,16 @@ slot44 = function(slot0, slot1)
 	slot7 = "textTitleUSDFText"
 	slot4 = slot4(slot6, slot7)
 	slot2.textTitleUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "closeTag"
+	slot4 = slot4(slot6, slot7)
+	slot2.closeTag = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "btnClickUButton"
+	slot4 = slot4(slot6, slot7)
+	slot2.btnClickUButton = slot4
 	slot4 = questTitleNewItemComs
 	slot4[slot1] = slot2
 	cachesDirty = true
@@ -802,7 +906,7 @@ slot44 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 24-26, warpins: 2 ---
+	--- BLOCK #2 34-36, warpins: 2 ---
 	slot2 = questTitleNewItemComs
 	slot2 = slot2[slot1]
 
@@ -813,10 +917,10 @@ slot44 = function(slot0, slot1)
 
 end
 
-slot15.getQuestTitleNewItemComs = slot44
-slot44 = {}
+slot15.getQuestTitleNewItemComs = slot46
+slot46 = {}
 
-slot45 = function(slot0, slot1)
+slot47 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = trackQuestObjcvItemComs
 	slot2 = slot2[slot1]
@@ -829,7 +933,7 @@ slot45 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-57, warpins: 1 ---
+	--- BLOCK #1 5-62, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -880,6 +984,11 @@ slot45 = function(slot0, slot1)
 	slot7 = "textLevelUSDFText"
 	slot4 = slot4(slot6, slot7)
 	slot2.textLevelUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "btnClickUButton"
+	slot4 = slot4(slot6, slot7)
+	slot2.btnClickUButton = slot4
 	slot4 = trackQuestObjcvItemComs
 	slot4[slot1] = slot2
 	cachesDirty = true
@@ -888,7 +997,7 @@ slot45 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 58-60, warpins: 2 ---
+	--- BLOCK #2 63-65, warpins: 2 ---
 	slot2 = trackQuestObjcvItemComs
 	slot2 = slot2[slot1]
 
@@ -899,10 +1008,10 @@ slot45 = function(slot0, slot1)
 
 end
 
-slot15.getTrackQuestObjcvItemComs = slot45
-slot45 = {}
+slot15.getTrackQuestObjcvItemComs = slot47
+slot47 = {}
 
-slot46 = function(slot0, slot1)
+slot48 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questTipComs
 	slot2 = slot2[slot1]
@@ -911,11 +1020,11 @@ slot46 = function(slot0, slot1)
 	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-95, warpins: 1 ---
+	--- BLOCK #1 5-37, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -933,16 +1042,6 @@ slot46 = function(slot0, slot1)
 	slot2.btnRefuseUButton = slot4
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
-	slot7 = "uCloseKeyBindingPro"
-	slot4 = slot4(slot6, slot7)
-	slot2.uCloseKeyBindingPro = slot4
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
-	slot7 = "uIBackKeyBindingPro"
-	slot4 = slot4(slot6, slot7)
-	slot2.uIBackKeyBindingPro = slot4
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
 	slot7 = "tipRootButton"
 	slot4 = slot4(slot6, slot7)
 	slot2.tipRootButton = slot4
@@ -953,181 +1052,32 @@ slot46 = function(slot0, slot1)
 	slot2.textUBaseText = slot4
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
-	slot7 = "uCloseUButton"
+	slot7 = "listKeyUList"
 	slot4 = slot4(slot6, slot7)
-	slot2.uCloseUButton = slot4
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
-	slot7 = "uIBackUButton"
-	slot4 = slot4(slot6, slot7)
-	slot2.uIBackUButton = slot4
-	slot4 = slot2.uCloseUButton
-	slot6 = slot4
-	slot4 = slot4.GetComponent
-	slot7 = "ObjectReference"
-	slot4 = slot4(slot6, slot7)
-	slot7 = slot4
-	slot5 = slot4.GetRefValue
-	slot8 = "keyHotKeyContent"
-	slot5 = slot5(slot7, slot8)
-	slot2.uCloseHotKeyContent = slot5
-	slot7 = slot4
-	slot5 = slot4.GetRefValue
-	slot8 = "btnTipsUText"
-	slot5 = slot5(slot7, slot8)
-	slot2.closeBtnTips = slot5
-	slot5 = slot2.uIBackUButton
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "ObjectReference"
-	slot5 = slot5(slot7, slot8)
-	slot8 = slot5
-	slot6 = slot5.GetRefValue
-	slot9 = "keyHotKeyContent"
-	slot6 = slot6(slot8, slot9)
-	slot2.uBackHotKeyContent = slot6
-	slot8 = slot5
-	slot6 = slot5.GetRefValue
-	slot9 = "btnTipsUText"
-	slot6 = slot6(slot8, slot9)
-	slot2.backBtnTips = slot6
-	slot6 = slot2.uCloseHotKeyContent
-	slot6 = slot6.transform
-	slot8 = slot6
-	slot6 = slot6.GetComponent
-	slot9 = "ObjectReference"
-	slot6 = slot6(slot8, slot9)
-	slot9 = slot6
-	slot7 = slot6.GetRefValue
-	slot10 = "progressPressContainerUContainer"
-	slot7 = slot7(slot9, slot10)
-	slot10 = slot7
-	slot8 = slot7.SetActive
-	slot11 = true
-
-	slot8(slot10, slot11)
-
+	slot2.listKeyUList = slot4
+	slot4 = questTipComs
+	slot4[slot1] = slot2
+	cachesDirty = true
 	--- END OF BLOCK #1 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 96-99, warpins: 1 ---
-	slot10 = slot7
-	slot8 = slot7.LoadDefaultUrlManually
-
-	slot11 = function()
-		--- BLOCK #0 1-26, warpins: 1 ---
-		slot0 = coms
-		slot1 = keyProgressPressUContainer
-		slot1 = slot1.content
-		slot0.keyProgressPressComponent = slot1
-		slot0 = table
-		slot0 = slot0.insert
-		slot2 = self
-		slot2 = slot2.progressPresss
-		slot3 = coms
-		slot3 = slot3.keyProgressPressComponent
-
-		slot0(slot2, slot3)
-
-		slot0 = coms
-		slot0 = slot0.keyProgressPressComponent
-		slot2 = slot0
-		slot0 = slot0.ProgressToValue
-		slot3 = 0
-		slot4 = nil
-
-		slot0(slot2, slot3, slot4)
-
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.input
-		slot2 = slot0
-		slot0 = slot0.isUsingGamepad
-		slot0 = slot0(slot2)
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 27-34, warpins: 1 ---
-		slot0 = coms
-		slot0 = slot0.keyProgressPressComponent
-		slot0 = slot0.gameObject
-		slot2 = slot0
-		slot0 = slot0.SetActiveEx
-		slot3 = true
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 35-41, warpins: 1 ---
-		slot0 = coms
-		slot0 = slot0.keyProgressPressComponent
-		slot0 = slot0.gameObject
-		slot2 = slot0
-		slot0 = slot0.SetActiveEx
-		slot3 = false
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 42-42, warpins: 2 ---
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot8(slot10, slot11)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 100-103, warpins: 2 ---
-	slot8 = questTipComs
-	slot8[slot1] = slot2
-	cachesDirty = true
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 104-107, warpins: 2 ---
+	--- BLOCK #2 38-40, warpins: 2 ---
 	slot2 = questTipComs
 	slot2 = slot2[slot1]
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot15.getQuestTipComs = slot46
-slot46 = {}
+slot15.getQuestTipComs = slot48
+slot48 = {}
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = trackQuestHintComs
 	slot2 = slot2[slot1]
@@ -1140,7 +1090,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-33, warpins: 1 ---
+	--- BLOCK #1 5-38, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -1167,6 +1117,11 @@ slot47 = function(slot0, slot1)
 	slot7 = "animation"
 	slot4 = slot4(slot6, slot7)
 	slot2.animation = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "noDoTipText"
+	slot4 = slot4(slot6, slot7)
+	slot2.noDoTipText = slot4
 	slot4 = trackQuestHintComs
 	slot4[slot1] = slot2
 	cachesDirty = true
@@ -1175,7 +1130,7 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 34-36, warpins: 2 ---
+	--- BLOCK #2 39-41, warpins: 2 ---
 	slot2 = trackQuestHintComs
 	slot2 = slot2[slot1]
 
@@ -1186,9 +1141,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.getTrackQuestHintComs = slot47
+slot15.getTrackQuestHintComs = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot1.enable
 	slot0.enableModule = slot2
@@ -1208,9 +1163,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onModuleEnableChanged = slot47
+slot15.onModuleEnableChanged = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = nil
 	slot0.preFlagQuest = slot1
@@ -1318,14 +1273,17 @@ slot47 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 38-110, warpins: 2 ---
+	--- BLOCK #10 38-131, warpins: 2 ---
 	NEED_SWITCH_STORY_QUEST_TIME = slot1
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.quest
-	slot3 = slot1
-	slot1 = slot1.getCurTab
-	slot1 = slot1(slot3)
+	slot3 = slot0
+	slot1 = slot0.getValidPageType
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.quest
+	slot6 = slot4
+	slot4 = slot4.getCurTab
+	MULTRES = slot4(slot6)
+	slot1 = slot1(slot3, MULTRES)
 	slot0.showTab = slot1
 	slot1 = 1
 	slot0.curSelIndex = slot1
@@ -1374,6 +1332,24 @@ slot47 = function(slot0)
 
 	slot1(slot3, slot4)
 
+	slot1 = 0
+	slot0.pressAITipsProgress = slot1
+	slot1 = {}
+	slot0._objChangeCooldowns = slot1
+	slot1 = {}
+	slot0._objChangePending = slot1
+	slot1 = {}
+	slot0._objChangeIdleCount = slot1
+	slot1 = {}
+	slot0._objChangeLastRendered = slot1
+	slot1 = {}
+	slot0.trackObjcvDataByPage = slot1
+	slot1 = {}
+	slot0.trackButtonByPage = slot1
+	slot1 = {}
+	slot0.trackHintDelayTypeByPage = slot1
+	slot1 = {}
+	slot0.trackHintDelayTimerByPage = slot1
 	slot1 = false
 	slot0.isSwitchTracking = slot1
 	slot1 = pg
@@ -1402,9 +1378,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.initData = slot47
+slot15.initData = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = false
 	slot0.clickSwitchCd = slot1
@@ -1424,10 +1400,41 @@ slot47 = function(slot0)
 
 end
 
-slot15.resetFlag = slot47
+slot15.resetFlag = slot49
 
-slot47 = function(slot0)
-	--- BLOCK #0 1-84, warpins: 1 ---
+slot49 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.bindTracingListRenderItem
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.bindSwitchPageKey
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.bindTitleForwardAndAiTips
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.initShowState
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.afterInitObjectRef = slot49
+
+slot49 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = slot0.storyTracingList
 
 	slot2 = function(slot0, slot1, slot2)
@@ -1533,6 +1540,39 @@ slot47 = function(slot0)
 	end
 
 	slot1.luaRenderItem = slot2
+	slot1 = slot0.untracingQuestList
+
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.onRefreshUntracingQuestItem
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
+
+		slot3(slot5, slot6, slot7, slot8)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.bindTracingListRenderItem = slot49
+
+slot49 = function(slot0)
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
 	slot3 = slot0.switchPageKey
@@ -1799,74 +1839,58 @@ slot47 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.untracingQuestList
-
-	slot3 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-8, warpins: 1 ---
-		slot3 = self
-		slot5 = slot3
-		slot3 = slot3.onRefreshUntracingQuestItem
-		slot6 = slot0
-		slot7 = slot1
-		slot8 = slot2
-
-		slot3(slot5, slot6, slot7, slot8)
-
-		return
-		--- END OF BLOCK #0 ---
+	return
+	--- END OF BLOCK #0 ---
 
 
 
-	end
+end
 
-	slot2.luaRenderItem = slot3
-	slot4 = slot0
-	slot2 = slot0.setupVButtonForward
-	slot5 = slot0.vStoryButtonUButton
-	slot6 = slot0.clickStoryHintUButton
+slot15.bindSwitchPageKey = slot49
 
-	slot2(slot4, slot5, slot6)
+slot49 = function(slot0)
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.bindTitleClickForward
+	slot4 = slot0.curtainQuestButton
+	slot5 = "clickStoryHintUButton"
 
-	slot4 = slot0
-	slot2 = slot0.setupVButtonForward
-	slot5 = slot0.vGrowButtonUButton
-	slot6 = slot0.clickGrowHintUButton
+	slot1(slot3, slot4, slot5)
 
-	slot2(slot4, slot5, slot6)
+	slot3 = slot0
+	slot1 = slot0.bindTitleClickForward
+	slot4 = slot0.growTitleQuestButton
+	slot5 = "clickGrowHintUButton"
 
-	slot4 = slot0
-	slot2 = slot0.setupVButtonForward
-	slot5 = slot0.vQuestButtonUButton
-	slot6 = slot0.clickQuestHintUButton
+	slot1(slot3, slot4, slot5)
 
-	slot2(slot4, slot5, slot6)
+	slot3 = slot0
+	slot1 = slot0.bindTitleClickForward
+	slot4 = slot0.questTitleQuestButton
+	slot5 = "clickQuestHintUButton"
 
-	slot4 = slot0
-	slot2 = slot0.setupVButtonForward
-	slot5 = slot0.vUntraceUButton
-	slot6 = slot0.untraceBtnUButton
+	slot1(slot3, slot4, slot5)
 
-	slot2(slot4, slot5, slot6)
+	slot3 = slot0
+	slot1 = slot0.bindTitleClickForward
+	slot4 = slot0.unTrackPopUButton
+	slot5 = "untraceBtnUButton"
 
-	slot4 = slot0
-	slot2 = slot0.aiTipBtn
-	slot5 = slot0.tipsBranchUButton
+	slot1(slot3, slot4, slot5)
 
-	slot2(slot4, slot5)
+	slot3 = slot0
+	slot1 = slot0.aiTipBtn
+	slot4 = slot0.tipsQuestUButton
 
-	slot4 = slot0
-	slot2 = slot0.aiTipBtn
-	slot5 = slot0.tipsQuestUButton
+	slot1(slot3, slot4)
 
-	slot2(slot4, slot5)
+	slot1 = slot0.rootUComponent
 
-	slot2 = slot0.rootUComponent
-
-	slot3 = function(slot0, slot1, slot2)
+	slot2 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
-		if slot0 == "tips" then
+		if slot0 == "Tips" then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
@@ -1895,70 +1919,88 @@ slot47 = function(slot0)
 
 	end
 
-	slot2.luaTryChangePage = slot3
-	slot4 = slot0
-	slot2 = slot0.clearRunningList
+	slot1.luaTryChangePage = slot2
 
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.showQuest
-
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.onUpdate
-
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.setFirstShowUpdate
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.keyProgressPressComponent
+	return
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+
+
+end
+
+slot15.bindTitleForwardAndAiTips = slot49
+
+slot49 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearRunningList
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.showQuest
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshCheckShowState
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.onUpdate
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.setFirstShowUpdate
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.keyProgressPressComponent
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 85-101, warpins: 1 ---
-	slot2 = slot0.keyProgressPressComponent
-	slot2 = slot2.gameObject
-	slot4 = slot2
-	slot2 = slot2.SetActiveEx
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.input
-	slot7 = slot5
-	slot5 = slot5.isUsingGamepad
-	MULTRES = slot5(slot7)
+	--- BLOCK #1 20-37, warpins: 1 ---
+	slot1 = slot0.keyProgressPressComponent
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.input
+	slot6 = slot4
+	slot4 = slot4.isUsingGamepad
+	MULTRES = slot4(slot6)
 
-	slot2(slot4, MULTRES)
+	slot1(slot3, MULTRES)
 
-	slot2 = slot0.keyProgressPressComponent
-	slot4 = slot2
-	slot2 = slot2.ProgressToValue
-	slot5 = 0
-	slot6 = nil
+	slot1 = slot0.keyProgressPressComponent
+	slot3 = slot1
+	slot1 = slot1.ProgressToValue
+	slot4 = 0
+	slot5 = nil
+	slot6 = 0
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 102-106, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.refreshSwitchKeyVisible
+	--- BLOCK #2 38-41, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.refreshSwitchKeyVisible
 
-	slot2(slot4)
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -1967,36 +2009,163 @@ slot47 = function(slot0)
 
 end
 
-slot15.afterInitObjectRef = slot47
+slot15.initShowState = slot49
 
-slot47 = function(slot0, slot1, slot2)
+slot49 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
+	--- BLOCK #1 3-3, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 4-9, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getQuestTitleNewItemComs
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 5-5, warpins: 2 ---
+	--- BLOCK #3 10-10, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 11-17, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setupHintForward
+	slot7 = slot3.btnClickUButton
+
+	slot8 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot1 = hintButtonField
+		slot0 = slot0[slot1]
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-18, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15.bindTitleClickForward = slot49
+
+slot49 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getTrackQuestObjcvItemComs
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-14, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setupHintForward
+	slot7 = slot3.btnClickUButton
+
+	slot8 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot1 = hintButtonField
+		slot0 = slot0[slot1]
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8)
+
+	return
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 6-9, warpins: 1 ---
+	--- BLOCK #3 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15.bindObjectiveClickForward = slot49
+
+slot49 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 4-7, warpins: 1 ---
 	slot3 = function()
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0 = pg
@@ -2024,80 +2193,88 @@ slot47 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-15, warpins: 2 ---
-		slot0 = NotNil
-		slot2 = hintButton
-		slot0 = slot0(slot2)
+		--- BLOCK #2 11-14, warpins: 2 ---
+		slot0 = getHintButton
+		slot0 = slot0()
 		--- END OF BLOCK #2 ---
 
 		slot0 = if slot0 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #3 16-20, warpins: 1 ---
-		slot0 = hintButton
-		slot0 = slot0.gameObject
-		slot0 = slot0.activeSelf
-
+		--- BLOCK #3 15-19, warpins: 1 ---
+		slot1 = NotNil
+		slot3 = slot0
+		slot1 = slot1(slot3)
 		--- END OF BLOCK #3 ---
 
-		slot0 = if not slot0 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #4
 		else
 		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #4 21-21, warpins: 2 ---
-		return
+		--- BLOCK #4 20-23, warpins: 1 ---
+		slot1 = slot0.gameObject
+		slot1 = slot1.activeSelf
 
 		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #5
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-		--- BLOCK #5 22-25, warpins: 2 ---
-		slot0 = hintButton
-		slot0 = slot0.luaClick
+		--- BLOCK #5 24-24, warpins: 3 ---
+		return
+
 		--- END OF BLOCK #5 ---
 
-		slot0 = if slot0 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #8
-		end
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 26-29, warpins: 1 ---
-		slot0 = hintButton
-		slot0 = slot0.OnClickSimulate
+		--- BLOCK #6 25-27, warpins: 2 ---
+		slot1 = slot0.luaClick
 		--- END OF BLOCK #6 ---
 
-		slot0 = if slot0 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #7
 		else
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #7 30-33, warpins: 1 ---
-		slot0 = hintButton
-		slot2 = slot0
-		slot0 = slot0.OnClickSimulate
-
-		slot0(slot2)
-
+		--- BLOCK #7 28-30, warpins: 1 ---
+		slot1 = slot0.OnClickSimulate
 		--- END OF BLOCK #7 ---
 
-		FLOW; TARGET BLOCK #8
+		slot1 = if slot1 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
 
 
-		--- BLOCK #8 34-34, warpins: 3 ---
-		return
+		--- BLOCK #8 31-33, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.OnClickSimulate
+
+		slot1(slot3)
+
 		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 34-34, warpins: 3 ---
+		return
+		--- END OF BLOCK #9 ---
 
 
 
@@ -2106,22 +2283,22 @@ slot47 = function(slot0, slot1, slot2)
 	slot1.luaClick = slot3
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #4 10-10, warpins: 2 ---
+	--- BLOCK #3 8-8, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot15.setupVButtonForward = slot47
+slot15.setupHintForward = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getQuestTipComs
@@ -2142,7 +2319,7 @@ slot47 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 8-67, warpins: 1 ---
+	--- BLOCK #2 8-34, warpins: 1 ---
 	slot3 = slot2.btnAgreeUButton
 
 	slot4 = function()
@@ -2181,15 +2358,165 @@ slot47 = function(slot0, slot1)
 	end
 
 	slot3.luaClick = slot4
-	slot3 = slot2.uIBackKeyBindingPro
-	slot4 = "Hud/TrackOpenSpecial"
-	slot3.actionPath = slot4
-	slot3 = slot2.uIBackKeyBindingPro
-	slot4 = 10
-	slot3.priority = slot4
-	slot3 = slot2.uIBackKeyBindingPro
+	slot3 = slot2.listKeyUList
 
-	slot4 = function(slot0)
+	slot4 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.onRenderAiTipsKeyItem
+		slot6 = coms
+		slot7 = slot0
+		slot8 = slot1
+		slot9 = slot2
+
+		slot3(slot5, slot6, slot7, slot8, slot9)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot3.luaRenderItem = slot4
+	slot5 = slot0
+	slot3 = slot0.getTipsListKeyList
+	slot3 = slot3(slot5)
+	slot4 = slot2.listKeyUList
+	slot6 = slot4
+	slot4 = slot4.SetList
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot2.textUBaseText
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "QUEST_AI_TRACK_TIPS_TEXT"
+	MULTRES = slot7(slot9)
+
+	slot4(slot6, MULTRES)
+
+	return
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 35-35, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15.aiTipBtn = slot49
+
+slot49 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-22, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.GetComponent
+	slot8 = "ObjectReference"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot2
+	slot6 = slot2.GetComponent
+	slot9 = "KeyBindingPro"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot5
+	slot7 = slot5.GetRefValue
+	slot10 = "keyHotKeyContent"
+	slot7 = slot7(slot9, slot10)
+	slot10 = slot5
+	slot8 = slot5.GetRefValue
+	slot11 = "btnTipsUText"
+	slot8 = slot8(slot10, slot11)
+	slot11 = slot5
+	slot9 = slot5.GetRefValue
+	slot12 = "progressPressContainerUContainer"
+	slot9 = slot9(slot11, slot12)
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 23-24, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 25-33, warpins: 1 ---
+	slot12 = slot7
+	slot10 = slot7.SetHotKeyPaths
+	slot13 = slot4.path
+
+	slot10(slot12, slot13)
+
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot8
+	slot13 = slot4.text
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 34-35, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 36-41, warpins: 1 ---
+	slot10 = slot4.path
+	slot6.actionPath = slot10
+	slot10 = 11
+	slot6.priority = slot10
+	--- END OF BLOCK #4 ---
+
+	if slot3 == 0 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 42-49, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.bindAiTipsCloseKeyTrigger
+	slot13 = slot6
+	slot14 = slot1
+	slot15 = slot4
+	slot16 = slot9
+
+	slot10(slot12, slot13, slot14, slot15, slot16)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 50-51, warpins: 1 ---
+	slot10 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #0 ---
@@ -2222,33 +2549,26 @@ slot47 = function(slot0, slot1)
 
 	end
 
-	slot3.luaTrigger = slot4
-	slot3 = slot2.uBackHotKeyContent
-	slot5 = slot3
-	slot3 = slot3.SetHotKeyPaths
-	slot6 = "Hud/TrackOpenSpecial"
+	slot6.luaTrigger = slot10
 
-	slot3(slot5, slot6)
+	--- END OF BLOCK #6 ---
 
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot2.backBtnTips
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "QUEST_TRACK_TIPS_TEXT"
-	MULTRES = slot6(slot8)
+	FLOW; TARGET BLOCK #7
 
-	slot3(slot5, MULTRES)
 
-	slot3 = slot2.uCloseKeyBindingPro
-	slot4 = "Hud/TrackCloseSpecial"
-	slot3.actionPath = slot4
-	slot3 = slot2.uCloseKeyBindingPro
-	slot4 = 10
-	slot3.priority = slot4
-	slot3 = slot2.uCloseKeyBindingPro
+	--- BLOCK #7 52-53, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
 
-	slot4 = function(slot0)
+
+
+end
+
+slot15.onRenderAiTipsKeyItem = slot49
+
+slot49 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot5 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #0 ---
@@ -2276,55 +2596,20 @@ slot47 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #2 12-35, warpins: 1 ---
+		--- BLOCK #2 12-17, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.ctrl
 		slot3 = slot1
-		slot1 = slot1.killTimer
-		slot4 = self
-		slot4 = slot4.pressSwitchPageTimer
+		slot1 = slot1.startPressAITips
+		slot4 = coms
 
 		slot1(slot3, slot4)
 
-		slot1 = self
-		slot2 = nil
-		slot1.pressSwitchPageTimer = slot2
-		slot1 = self
-		slot2 = 0
-		slot1.pressProgress = slot2
-		slot1 = self
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot4 = slot2
-		slot2 = slot2.startTimer
-
-		slot5 = function()
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.inPressing
-			slot3 = coms
-			slot3 = slot3.keyProgressPressComponent
-
-			slot0(slot2, slot3)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot6 = 0
-		slot7 = true
-		slot2 = slot2(slot4, slot5, slot6, slot7)
-		slot1.pressSwitchPageTimer = slot2
 		--- END OF BLOCK #2 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #3 36-38, warpins: 1 ---
+		--- BLOCK #3 18-20, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #3 ---
 
@@ -2335,7 +2620,7 @@ slot47 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #4 39-46, warpins: 1 ---
+		--- BLOCK #4 21-28, warpins: 1 ---
 		slot1 = pg
 		slot1 = slot1.game
 		slot1 = slot1.input
@@ -2351,15 +2636,9 @@ slot47 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #5 47-55, warpins: 1 ---
+		--- BLOCK #5 29-33, warpins: 1 ---
 		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.endPress
-
-		slot1(slot3)
-
-		slot1 = self
-		slot1 = slot1.pressProgress
+		slot1 = slot1.pressAITipsProgress
 		slot2 = LONG_PRESS_TIME
 		--- END OF BLOCK #5 ---
 
@@ -2370,16 +2649,17 @@ slot47 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #6 56-63, warpins: 1 ---
+		--- BLOCK #6 34-44, warpins: 1 ---
 		slot1 = pg
 		slot1 = slot1.game
 		slot1 = slot1.input
 		slot3 = slot1
 		slot1 = slot1.triggerWaitAction
 		slot4 = slot0.inputControl
-		slot5 = {
-			"Hud/TrackCloseSpecial"
-		}
+		slot5 = {}
+		slot6 = data
+		slot6 = slot6.path
+		slot5[1] = slot6
 
 		slot1(slot3, slot4, slot5)
 
@@ -2388,16 +2668,20 @@ slot47 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 64-67, warpins: 2 ---
+		--- BLOCK #7 45-50, warpins: 2 ---
 		slot1 = self
-		slot2 = 0
-		slot1.pressProgress = slot2
+		slot3 = slot1
+		slot1 = slot1.endPressAITips
+		slot4 = coms
+
+		slot1(slot3, slot4)
+
 		--- END OF BLOCK #7 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #8 68-72, warpins: 1 ---
+		--- BLOCK #8 51-55, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.onClickTipBtn
@@ -2410,7 +2694,7 @@ slot47 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 73-75, warpins: 5 ---
+		--- BLOCK #9 56-57, warpins: 5 ---
 		slot1 = false
 
 		return slot1
@@ -2420,51 +2704,282 @@ slot47 = function(slot0, slot1)
 
 	end
 
-	slot3.luaTrigger = slot4
-	slot3 = slot2.uCloseHotKeyContent
-	slot5 = slot3
-	slot3 = slot3.SetHotKeyPaths
-	slot6 = "Hud/TrackCloseSpecial"
+	slot1.luaTrigger = slot5
+	--- END OF BLOCK #0 ---
 
-	slot3(slot5, slot6)
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot2.closeBtnTips
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "QUEST_UNTRACK_TIPS_TEXT"
-	MULTRES = slot6(slot8)
 
-	slot3(slot5, MULTRES)
+	--- BLOCK #1 5-12, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.SetActive
+	slot8 = true
 
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot2.textUBaseText
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "QUEST_AI_TRACK_TIPS_TEXT"
-	MULTRES = slot6(slot8)
+	slot5(slot7, slot8)
 
-	slot3(slot5, MULTRES)
+	slot7 = slot4
+	slot5 = slot4.LoadDefaultUrlManually
 
+	slot8 = function()
+		--- BLOCK #0 1-20, warpins: 1 ---
+		slot0 = coms
+		slot1 = progressPressContainerUContainer
+		slot1 = slot1.content
+		slot0.aiKeyProgressPressComponent = slot1
+		slot0 = coms
+		slot0 = slot0.aiKeyProgressPressComponent
+		slot2 = slot0
+		slot0 = slot0.ProgressToValue
+		slot3 = 0
+		slot4 = nil
+		slot5 = 0
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.input
+		slot2 = slot0
+		slot0 = slot0.isUsingGamepad
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 21-28, warpins: 1 ---
+		slot0 = coms
+		slot0 = slot0.aiKeyProgressPressComponent
+		slot0 = slot0.gameObject
+		slot2 = slot0
+		slot0 = slot0.SetActiveEx
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 29-35, warpins: 1 ---
+		slot0 = coms
+		slot0 = slot0.aiKeyProgressPressComponent
+		slot0 = slot0.gameObject
+		slot2 = slot0
+		slot0 = slot0.SetActiveEx
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 36-36, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-14, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 68-68, warpins: 2 ---
-	return
-	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot15.aiTipBtn = slot47
+slot15.bindAiTipsCloseKeyTrigger = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-22, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.endPress
+
+	slot2(slot4)
+
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.killTimer
+	slot5 = slot0.pressAITipsTimer
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.pressAITipsTimer = slot2
+	slot2 = 0
+	slot0.pressAITipsProgress = slot2
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.startTimer
+
+	slot5 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = self
+		slot1 = self
+		slot1 = slot1.pressAITipsProgress
+		slot2 = Time
+		slot2 = slot2.unscaledDeltaTime
+		slot1 = slot1 + slot2
+		slot0.pressAITipsProgress = slot1
+		slot0 = coms
+		slot0 = slot0.aiKeyProgressPressComponent
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 12-16, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.pressAITipsProgress
+		slot1 = LONG_PRESS_TIME
+		--- END OF BLOCK #1 ---
+
+		if slot1 < slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 17-34, warpins: 1 ---
+		slot0 = coms
+		slot0 = slot0.aiKeyProgressPressComponent
+		slot0 = slot0.gameObject
+		slot2 = slot0
+		slot0 = slot0.SetActiveEx
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		slot0 = coms
+		slot0 = slot0.aiKeyProgressPressComponent
+		slot2 = slot0
+		slot0 = slot0.ProgressToValue
+		slot3 = getLongPressProgress
+		slot5 = self
+		slot5 = slot5.pressAITipsProgress
+		slot3 = slot3(slot5)
+		slot4 = nil
+		slot5 = 0
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 35-39, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.pressAITipsProgress
+		slot1 = LONG_PRESS_DURATION
+		--- END OF BLOCK #3 ---
+
+		if slot1 <= slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 40-49, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onClickTipBtn
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.endPressAITips
+		slot3 = coms
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 50-50, warpins: 3 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot6 = 0
+	slot7 = true
+	slot2 = slot2(slot4, slot5, slot6, slot7)
+	slot0.pressAITipsTimer = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.startPressAITips = slot49
+
+slot49 = function(slot0)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot1 = {}
+	slot2 = {
+		path = "Hud/TrackCloseSpecial"
+	}
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "QUEST_UNTRACK_TIPS_TEXT"
+	slot3 = slot3(slot5)
+	slot2.text = slot3
+	slot1[1] = slot2
+	slot2 = {
+		path = "Hud/TrackOpenSpecial"
+	}
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "QUEST_TRACK_TIPS_TEXT"
+	slot3 = slot3(slot5)
+	slot2.text = slot3
+	slot1[2] = slot2
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.getTipsListKeyList = slot49
+
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.clickSwitchCd
 	--- END OF BLOCK #0 ---
@@ -2559,9 +3074,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.clickSwitchPageBtn = slot47
+slot15.clickSwitchPageBtn = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.visibleMap
 	slot2 = slot2.visible
@@ -2668,9 +3183,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onRefreshTracingTabPage = slot47
+slot15.onRefreshTracingTabPage = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.rootUComponent
 	--- END OF BLOCK #0 ---
@@ -2714,9 +3229,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.onSwitchPageTab = slot47
+slot15.onSwitchPageTab = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.showTab
 	slot2 = QuestConst
@@ -2754,9 +3269,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isGrowTab = slot47
+slot15.isGrowTab = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.showTab
 	slot2 = QuestConst
@@ -2794,9 +3309,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isStoryTab = slot47
+slot15.isStoryTab = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.showTab
 	slot2 = QuestConst
@@ -2834,9 +3349,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isQuestTab = slot47
+slot15.isQuestTab = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.visibleMap
 	slot2.visible = slot1
@@ -2848,9 +3363,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.setShowState = slot47
+slot15.setShowState = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = TipVisibilityHelper
 	slot1 = slot1.checkIsRunning
@@ -2863,9 +3378,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.checkIsRunning = slot47
+slot15.checkIsRunning = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2895,9 +3410,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.clearRunningList = slot47
+slot15.clearRunningList = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot2 = true
@@ -2914,9 +3429,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.showQuest = slot47
+slot15.showQuest = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot1 = slot1.visible
@@ -2946,9 +3461,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingCurtainQuest = slot47
+slot15.isShowingCurtainQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.playCompleteAnim = slot1
 
@@ -2959,9 +3474,63 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.playCompleteAnimFlag = slot47
+slot15.playCompleteAnimFlag = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = QuestUtils
+	slot4 = slot4.getTabPageList
+	MULTRES = slot4()
+	slot2, slot3, slot4 = slot2(MULTRES)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot7 = slot6.pageType
+
+	--- END OF BLOCK #1 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 13-16, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.STORY
+
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15.getValidPageType = slot49
+
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.firstShowUpdate = slot1
 	slot2 = slot0.clickSwitchPage
@@ -2992,30 +3561,69 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-23, warpins: 3 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.quest
-	slot5 = slot3
-	slot3 = slot3.getCurTab
-	slot3 = slot3(slot5)
+	--- BLOCK #3 9-26, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.getValidPageType
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.quest
+	slot8 = slot6
+	slot6 = slot6.getCurTab
+	MULTRES = slot6(slot8)
+	slot3 = slot3(slot5, MULTRES)
 	slot0.showTab = slot3
 	slot3 = QuestUtils
 	slot3 = slot3.getIndexByPage
 	slot5 = slot0.showTab
 	slot3 = slot3(slot5)
 	slot0.curSelIndex = slot3
-	slot3 = slot0.rootUComponent
+	slot3 = slot0.isInTip
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 24-29, warpins: 1 ---
+	--- BLOCK #4 27-31, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isQuestTab
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 32-35, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.refreshAIIsInTipState
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 36-38, warpins: 3 ---
+	slot3 = slot0.rootUComponent
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 39-44, warpins: 1 ---
 	slot3 = slot0.rootUComponent
 	slot5 = slot3
 	slot3 = slot3.TryChangePage
@@ -3024,22 +3632,32 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #5 30-30, warpins: 2 ---
+	--- BLOCK #8 45-51, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.onSwitchPageTab
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.refreshPageTabList
+
+	slot3(slot5)
+
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot15.setFirstShowUpdate = slot47
+slot15.setFirstShowUpdate = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resetFlag
@@ -3071,9 +3689,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.backToHome = slot47
+slot15.backToHome = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -3117,19 +3735,47 @@ slot47 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-13, warpins: 2 ---
+	--- BLOCK #4 12-21, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.checkUIShow
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_HUD_V2
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-23, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-25, warpins: 2 ---
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15.checkShowState = slot47
+slot15.checkShowState = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.objectReference
 
@@ -3150,19 +3796,21 @@ slot47 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-7, warpins: 2 ---
-	slot1 = slot0.preFlagQuest
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.updateHudVisibleFlag
+	slot1 = slot1(slot3)
 
 	--- END OF BLOCK #2 ---
 
-	if slot1 == false then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 8-8, warpins: 1 ---
+	--- BLOCK #3 10-10, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -3170,66 +3818,75 @@ slot47 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 9-13, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.isGrowTab
-	slot1 = slot1(slot3)
+	--- BLOCK #4 11-13, warpins: 2 ---
+	slot1 = slot0.preFlagQuest
+
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	if slot1 == false then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 14-17, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkShowGrowTracingQuest
-
-	slot1(slot3)
+	--- BLOCK #5 14-14, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-22, warpins: 1 ---
+	--- BLOCK #6 15-18, warpins: 2 ---
 	slot3 = slot0
-	slot1 = slot0.isQuestTab
-	slot1 = slot1(slot3)
+	slot1 = slot0.refreshTracingAndTips
+
+	slot1(slot3)
+
+	return
 	--- END OF BLOCK #6 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
 
 
-	--- BLOCK #7 23-26, warpins: 1 ---
+end
+
+slot15.onUpdate = slot49
+
+slot49 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.checkUIShow
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_HUD_V2
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot0
+	slot2 = slot0.setHideFlag
+	slot5 = HideReason
+	slot5 = slot5.hudVisible
+	slot6 = not slot1
+
+	slot2(slot4, slot5, slot6)
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.updateHudVisibleFlag = slot49
+
+slot49 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.checkShowQuestTracingQuest
+	slot1 = slot0.checkShowActiveTracingQuest
 
 	slot1(slot3)
 
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 27-29, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkShowTracingQuest
-
-	slot1(slot3)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 30-46, warpins: 3 ---
 	slot3 = slot0
 	slot1 = slot0.checkAITipState
 	slot4 = slot0.preFlagQuest
@@ -3257,15 +3914,15 @@ slot47 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot15.onUpdate = slot47
+slot15.refreshTracingAndTips = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot2 = false
@@ -3282,12 +3939,17 @@ slot47 = function(slot0)
 
 end
 
-slot15.hideQuest = slot47
+slot15.hideQuest = slot49
 
-slot47 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.resetFlag
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.clearInterruptState
 
 	slot2(slot4)
 
@@ -3309,7 +3971,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 15-19, warpins: 1 ---
+	--- BLOCK #1 18-22, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isGrowTab
 	slot2 = slot2(slot4)
@@ -3322,7 +3984,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 20-23, warpins: 1 ---
+	--- BLOCK #2 23-26, warpins: 1 ---
 	slot2 = QuestConst
 	slot2 = slot2.QUEST_HUD_PAGE_TYPE
 	slot2 = slot2.STORY
@@ -3332,7 +3994,7 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 24-28, warpins: 3 ---
+	--- BLOCK #3 27-31, warpins: 3 ---
 	slot4 = slot0
 	slot2 = slot0.onRefreshTracingTabPage
 	slot5 = true
@@ -3346,9 +4008,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.tryResetQuestState = slot47
+slot15.tryResetQuestState = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isStoryTab
@@ -3429,9 +4091,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.switchRefreshTraceList = slot47
+slot15.switchRefreshTraceList = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3487,11 +4149,11 @@ slot47 = function(slot0, slot1)
 
 	--- BLOCK #5 15-19, warpins: 1 ---
 	slot4 = slot0
-	slot2 = slot0.isStoryTab
+	slot2 = slot0.isQuestTab
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #5 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #9
@@ -3547,9 +4209,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.checkAITipState = slot47
+slot15.checkAITipState = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.isInTip = slot1
 	slot4 = slot0
@@ -3569,9 +4231,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.refreshAIIsInTipState = slot47
+slot15.refreshAIIsInTipState = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = Time
 	slot1 = slot1.realtimeSinceStartup
@@ -3584,9 +4246,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.refreshAITipShowTime = slot47
+slot15.refreshAITipShowTime = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.markShowNoMainQuestTime
 	--- END OF BLOCK #0 ---
@@ -3646,9 +4308,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isCheckAITipState = slot47
+slot15.isCheckAITipState = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot1 = slot1.visible
@@ -3699,7 +4361,7 @@ slot47 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 13-26, warpins: 2 ---
+	--- BLOCK #5 13-30, warpins: 2 ---
 	slot2 = slot0.rootUComponent
 	slot4 = slot2
 	slot2 = slot2.TryGetCurrentPage
@@ -3712,99 +4374,114 @@ slot47 = function(slot0)
 	slot6 = slot4
 	slot4 = slot4.CheckIsMobileInteract
 	slot4 = slot4(slot6)
+	slot5 = QuestUtils
+	slot5 = slot5.getTabPageList
+	slot5 = slot5()
+	slot5 = #slot5
 	--- END OF BLOCK #5 ---
 
-	slot4 = if slot4 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 27-33, warpins: 1 ---
-	slot5 = slot0.switchPageKey
-	slot5 = slot5.gameObject
-	slot7 = slot5
-	slot5 = slot5.SetActiveEx
-	slot8 = false
-
-	slot5(slot7, slot8)
-
+	--- BLOCK #6 31-33, warpins: 1 ---
+	slot6 = 1
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 34-35, warpins: 1 ---
+	--- BLOCK #7 34-40, warpins: 2 ---
+	slot6 = slot0.switchPageKey
+	slot6 = slot6.gameObject
+	slot8 = slot6
+	slot6 = slot6.SetActiveEx
+	slot9 = false
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #7 ---
 
-	if slot3 == 1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #10
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #8 36-43, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.input
-	slot7 = slot5
-	slot5 = slot5.isUsingGamepad
-	slot5 = slot5(slot7)
+	--- BLOCK #8 41-42, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
-	slot5 = if slot5 then
+	if slot3 == 1 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 44-50, warpins: 1 ---
-	slot5 = slot0.switchPageKey
-	slot5 = slot5.gameObject
-	slot7 = slot5
-	slot5 = slot5.SetActiveEx
-	slot8 = false
-
-	slot5(slot7, slot8)
-
+	--- BLOCK #9 43-50, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.input
+	slot8 = slot6
+	slot6 = slot6.isUsingGamepad
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	slot6 = if slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 51-56, warpins: 2 ---
-	slot5 = slot0.switchPageKey
-	slot5 = slot5.gameObject
-	slot7 = slot5
-	slot5 = slot5.SetActiveEx
-	slot8 = true
+	--- BLOCK #10 51-57, warpins: 1 ---
+	slot6 = slot0.switchPageKey
+	slot6 = slot6.gameObject
+	slot8 = slot6
+	slot6 = slot6.SetActiveEx
+	slot9 = false
 
-	slot5(slot7, slot8)
+	slot6(slot8, slot9)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 57-60, warpins: 3 ---
-	slot7 = slot0
-	slot5 = slot0.setProgressZero
+	--- BLOCK #11 58-63, warpins: 2 ---
+	slot6 = slot0.switchPageKey
+	slot6 = slot6.gameObject
+	slot8 = slot6
+	slot6 = slot6.SetActiveEx
+	slot9 = true
 
-	slot5(slot7)
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 64-67, warpins: 3 ---
+	slot8 = slot0
+	slot6 = slot0.setProgressZero
+
+	slot6(slot8)
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot15.refreshSwitchKeyVisible = slot47
+slot15.refreshSwitchKeyVisible = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot1 = slot1.visible
@@ -3855,50 +4532,134 @@ slot47 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 13-19, warpins: 2 ---
-	slot2 = slot0.rootUComponent
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "tips"
-	slot6 = slot0.isInTip
+	--- BLOCK #5 13-17, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isQuestTab
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #5 ---
 
-	slot6 = if slot6 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 20-21, warpins: 1 ---
-	slot6 = 1
+	--- BLOCK #6 18-19, warpins: 1 ---
+	slot2 = false
+	slot0.isInTip = slot2
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 22-22, warpins: 1 ---
-	slot6 = 0
-
+	--- BLOCK #7 20-26, warpins: 2 ---
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Tips"
+	slot6 = slot0.isInTip
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 23-26, warpins: 2 ---
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.isInTip
-	--- END OF BLOCK #8 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #9
+	slot6 = if slot6 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #9 27-37, warpins: 1 ---
+	--- BLOCK #8 27-28, warpins: 1 ---
+	slot6 = 1
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 29-29, warpins: 1 ---
+	slot6 = 0
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 30-33, warpins: 2 ---
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.isInTip
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #11 34-36, warpins: 1 ---
+	slot2 = slot0.clickGrowHintUButton
+	--- END OF BLOCK #11 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 37-39, warpins: 1 ---
+	slot2 = slot0.clickGrowHintUButton
+	slot2 = slot2.gameObject
+	slot2 = slot2.activeSelf
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 40-43, warpins: 2 ---
+	slot0._preAITipGrowVisible = slot2
+	slot2 = slot0.clickQuestHintUButton
+	--- END OF BLOCK #13 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 44-46, warpins: 1 ---
+	slot2 = slot0.clickQuestHintUButton
+	slot2 = slot2.gameObject
+	slot2 = slot2.activeSelf
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 47-50, warpins: 2 ---
+	slot0._preAITipQuestVisible = slot2
+	slot2 = slot0.clickStoryHintUButton
+	--- END OF BLOCK #15 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 51-53, warpins: 1 ---
+	slot2 = slot0.clickStoryHintUButton
+	slot2 = slot2.gameObject
+	slot2 = slot2.activeSelf
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 54-65, warpins: 2 ---
+	slot0._preAITipStoryVisible = slot2
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -3908,52 +4669,96 @@ slot47 = function(slot0)
 	slot2(slot4, slot5)
 
 	slot4 = slot0
-	slot2 = slot0.isGrowTab
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #9 ---
+	slot2 = slot0.showClickHindBtnByTab
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #18 66-68, warpins: 1 ---
+	slot2 = slot0._preAITipGrowVisible
+	--- END OF BLOCK #18 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #10 38-42, warpins: 1 ---
+	--- BLOCK #19 69-72, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showGrowClickHindBtn
-	slot5 = false
+	slot5 = true
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #19 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #11 43-46, warpins: 1 ---
+	--- BLOCK #20 73-75, warpins: 2 ---
+	slot2 = slot0._preAITipQuestVisible
+	--- END OF BLOCK #20 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 76-79, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.showQuestClickHindBtn
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 80-82, warpins: 2 ---
+	slot2 = slot0._preAITipStoryVisible
+	--- END OF BLOCK #22 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 83-86, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showStoryClickHindBtn
-	slot5 = false
+	slot5 = true
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #12 47-47, warpins: 3 ---
+	--- BLOCK #24 87-87, warpins: 3 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot15.switchAITipState = slot47
+slot15.switchAITipState = slot49
 
-slot47 = function(slot0, slot1, slot2)
+slot49 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.refreshSwitchKeyVisible
@@ -3967,9 +4772,9 @@ slot47 = function(slot0, slot1, slot2)
 
 end
 
-slot15.onTipsPageChanged = slot47
+slot15.onTipsPageChanged = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshAIIsInTipState
@@ -4004,7 +4809,7 @@ slot47 = function(slot0, slot1)
 	slot2 = slot0.rootUComponent
 	slot4 = slot2
 	slot2 = slot2.TryChangePage
-	slot5 = "tips"
+	slot5 = "Tips"
 	slot6 = slot0.isInTip
 	--- END OF BLOCK #2 ---
 
@@ -4040,9 +4845,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onClickTipBtn = slot47
+slot15.onClickTipBtn = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.processQuestStateChange
@@ -4057,9 +4862,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onQuestStateChange = slot47
+slot15.onQuestStateChange = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.getQuestData
@@ -4129,7 +4934,7 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 22-46, warpins: 2 ---
+	--- BLOCK #6 22-43, warpins: 2 ---
 	slot5 = QuestUtils
 	slot5 = slot5.isQuestTracing
 	slot7 = slot1.questId
@@ -4143,12 +4948,9 @@ slot47 = function(slot0, slot1)
 	slot9 = slot1.questId
 	slot7 = slot7(slot9)
 	slot8 = QuestUtils
-	slot8 = slot8.isQuestOfQuestType
+	slot8 = slot8.isQuestOfClueQuestType
 	slot10 = slot1.questId
-	slot11 = QuestConst
-	slot11 = slot11.QUEST_TYPE
-	slot11 = slot11.CLUE
-	slot8 = slot8(slot10, slot11)
+	slot8 = slot8(slot10)
 	slot9 = slot2.state
 	slot10 = QuestConst
 	slot10 = slot10.QUEST_STATE
@@ -4162,7 +4964,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 47-54, warpins: 1 ---
+	--- BLOCK #7 44-51, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.handleQuestUnReceive
 	slot12 = slot1
@@ -4177,7 +4979,7 @@ slot47 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #8 55-60, warpins: 1 ---
+	--- BLOCK #8 52-57, warpins: 1 ---
 	slot9 = slot2.state
 	slot10 = QuestConst
 	slot10 = slot10.QUEST_STATE
@@ -4191,7 +4993,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 61-71, warpins: 1 ---
+	--- BLOCK #9 58-68, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.handleQuestReceived
 	slot12 = slot2
@@ -4209,7 +5011,7 @@ slot47 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #10 72-77, warpins: 1 ---
+	--- BLOCK #10 69-74, warpins: 1 ---
 	slot9 = slot2.state
 	slot10 = QuestConst
 	slot10 = slot10.QUEST_STATE
@@ -4223,7 +5025,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 78-85, warpins: 1 ---
+	--- BLOCK #11 75-82, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.handleQuestCompleted
 	slot12 = slot2
@@ -4238,7 +5040,7 @@ slot47 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #12 86-91, warpins: 1 ---
+	--- BLOCK #12 83-88, warpins: 1 ---
 	slot9 = slot2.state
 	slot10 = QuestConst
 	slot10 = slot10.QUEST_STATE
@@ -4252,24 +5054,23 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 92-101, warpins: 1 ---
+	--- BLOCK #13 89-97, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.handleQuestSubmitted
-	slot12 = slot2
-	slot13 = slot3
-	slot14 = slot5
-	slot15 = slot6
-	slot16 = slot7
-	slot17 = slot1
+	slot12 = slot3
+	slot13 = slot5
+	slot14 = slot6
+	slot15 = slot7
+	slot16 = slot1
 
-	slot9(slot11, slot12, slot13, slot14, slot15, slot16, slot17)
+	slot9(slot11, slot12, slot13, slot14, slot15, slot16)
 
 	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #14 102-107, warpins: 1 ---
+	--- BLOCK #14 98-103, warpins: 1 ---
 	slot9 = slot2.state
 	slot10 = QuestConst
 	slot10 = slot10.QUEST_STATE
@@ -4283,7 +5084,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 108-116, warpins: 1 ---
+	--- BLOCK #15 104-112, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.handleQuestClosed
 	slot12 = slot2
@@ -4300,7 +5101,7 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 117-117, warpins: 6 ---
+	--- BLOCK #16 113-113, warpins: 6 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -4308,93 +5109,99 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.processQuestStateChange = slot47
+slot15.processQuestStateChange = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4)
+slot49 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot5 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 5-10, warpins: 1 ---
+	--- BLOCK #1 3-8, warpins: 1 ---
 	slot5 = QuestUtils
 	slot5 = slot5.isSubQuestManualClaimable
 	slot7 = slot1.questId
 	slot5 = slot5(slot7)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 11-16, warpins: 1 ---
+	--- BLOCK #2 9-12, warpins: 1 ---
 	slot5 = QuestUtils
 	slot5 = slot5.isInQuestBlackList
 	slot7 = slot1.questId
 	slot5 = slot5(slot7)
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-14, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 17-29, warpins: 3 ---
-	slot5 = {
-		isObjAdd = true
-	}
-	slot6 = slot1.questId
-	slot5.questId = slot6
-	slot5.questData = slot2
-	slot8 = slot0
-	slot6 = slot0.enQueueToTraceByPageType
-	slot9 = slot1.questId
-	slot10 = slot5
-
-	slot6(slot8, slot9, slot10)
-
-	slot8 = slot0
-	slot6 = slot0.refreshAIIsInTipState
-	slot9 = false
-
-	slot6(slot8, slot9)
-
+	--- BLOCK #4 15-16, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 30-30, warpins: 3 ---
-	return
+	--- BLOCK #5 17-29, warpins: 2 ---
+	slot6 = {
+		isObjAdd = true
+	}
+	slot7 = slot1.questId
+	slot6.questId = slot7
+	slot6.questData = slot2
+	slot9 = slot0
+	slot7 = slot0.enQueueToTraceByPageType
+	slot10 = slot1.questId
+	slot11 = slot6
+
+	slot7(slot9, slot10, slot11)
+
+	slot9 = slot0
+	slot7 = slot0.refreshAIIsInTipState
+	slot10 = false
+
+	slot7(slot9, slot10)
+
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15.handleQuestUnReceive = slot47
+slot15.handleQuestUnReceive = slot49
 
-slot47 = function(slot0, slot1, slot2)
+slot49 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = QuestUtils
 	slot3 = slot3.getPageType
@@ -4408,7 +5215,7 @@ slot47 = function(slot0, slot1, slot2)
 	if slot4 == slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
@@ -4421,11 +5228,31 @@ slot47 = function(slot0, slot1, slot2)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #2 15-20, warpins: 1 ---
+	--- BLOCK #2 15-17, warpins: 1 ---
+	slot4 = slot2.refreshAll
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-20, warpins: 1 ---
+	slot4 = slot0.onShowGrowTracingQuest
+	slot2.func = slot4
+	slot2.owner = slot0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-26, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.enQueueSafe
 	slot7 = slot0.questGrowTracingQueue
@@ -4433,67 +5260,39 @@ slot47 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #3 21-25, warpins: 1 ---
+	--- BLOCK #5 27-31, warpins: 1 ---
 	slot4 = QuestConst
 	slot4 = slot4.QUEST_HUD_PAGE_TYPE
 	slot4 = slot4.QUEST
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	if slot4 == slot3 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #4 26-30, warpins: 1 ---
+	--- BLOCK #6 32-36, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.isQuestTab
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #4 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #5 31-36, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.enQueueSafe
-	slot7 = slot0.questTaskTracingQueue
-	slot8 = slot2
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #6 37-41, warpins: 1 ---
-	slot4 = QuestConst
-	slot4 = slot4.QUEST_HUD_PAGE_TYPE
-	slot4 = slot4.STORY
 	--- END OF BLOCK #6 ---
 
-	if slot4 == slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #7 42-46, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.isStoryTab
-	slot4 = slot4(slot6)
+	--- BLOCK #7 37-39, warpins: 1 ---
+	slot4 = slot2.refreshAll
 	--- END OF BLOCK #7 ---
 
 	slot4 = if slot4 then
@@ -4503,7 +5302,75 @@ slot47 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 47-51, warpins: 1 ---
+	--- BLOCK #8 40-42, warpins: 1 ---
+	slot4 = slot0.onShowQuestTracingQuest
+	slot2.func = slot4
+	slot2.owner = slot0
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 43-48, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.enQueueSafe
+	slot7 = slot0.questTaskTracingQueue
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #10 49-53, warpins: 1 ---
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.STORY
+	--- END OF BLOCK #10 ---
+
+	if slot4 == slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 54-58, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.isStoryTab
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 59-61, warpins: 1 ---
+	slot4 = slot2.refreshAll
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 62-64, warpins: 1 ---
+	slot4 = slot0.onShowStoryTracingQuest
+	slot2.func = slot4
+	slot2.owner = slot0
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 65-69, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.enQueueSafe
 	slot7 = slot0.questStoryTracingQueue
@@ -4511,22 +5378,22 @@ slot47 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #9 52-52, warpins: 7 ---
+	--- BLOCK #15 70-70, warpins: 7 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot15.enQueueToTraceByPageType = slot47
+slot15.enQueueToTraceByPageType = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot49 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4543,7 +5410,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #7
 	end
 
 
@@ -4560,420 +5427,104 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	slot9 = slot9(slot11)
 	slot10 = QuestConst
 	slot10 = slot10.QUEST_HUD_PAGE_TYPE
-	slot10 = slot10.GROW
+	slot10 = slot10.QUEST
 	--- END OF BLOCK #2 ---
 
 	if slot10 == slot9 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 18-22, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.isGrowTab
-	slot10 = slot10(slot12)
+	--- BLOCK #3 18-20, warpins: 1 ---
+	slot10 = slot0.pageList
 	--- END OF BLOCK #3 ---
 
 	slot10 = if slot10 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 23-28, warpins: 1 ---
-	slot10 = QuestUtils
-	slot10 = slot10.isParentQuest
-	slot12 = slot7.questId
-	slot10 = slot10(slot12)
+	--- BLOCK #4 21-30, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.global
+	slot10 = slot10.ui
+	slot12 = slot10
+	slot10 = slot10.checkUIShow
+	slot13 = UIConst
+	slot13 = slot13.UI_ID_HUD_V2
+	slot10 = slot10(slot12, slot13)
 	--- END OF BLOCK #4 ---
 
-	slot10 = if not slot10 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 29-31, warpins: 1 ---
-	slot10 = slot0.isHaveCanGetReward
+	--- BLOCK #5 31-37, warpins: 1 ---
+	slot10 = slot0.pageList
+	slot12 = slot10
+	slot10 = slot10.SetList
+	slot13 = QuestUtils
+	slot13 = slot13.getTabPageList
+	MULTRES = slot13()
+
+	slot10(slot12, MULTRES)
+
 	--- END OF BLOCK #5 ---
 
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-37, warpins: 1 ---
-	slot10 = QuestUtils
-	slot10 = slot10.isSpecialTrainMainQuest
-	slot12 = slot7.questId
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #6 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 38-54, warpins: 1 ---
-	slot10 = {
-		playSpecialTrainAnim = true
-	}
-	slot11 = slot7.questId
-	slot10.questId = slot11
-	slot10.owner = slot0
-	slot13 = slot0
-	slot11 = slot0.enQueueSafe
-	slot14 = slot0.questGrowTitleQueue
-	slot15 = slot10
-
-	slot11(slot13, slot14, slot15)
-
-	slot11 = false
-	slot0.playSpecialGetRewardAnim = slot11
-	slot13 = slot0
-	slot11 = slot0.startTimer
-
-	slot14 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot1 = true
-		slot0.playSpecialGetRewardAnim = slot1
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot15 = questObjcvFinedTimeSpan
-	slot15 = slot15 - 0.2
-
-	slot11(slot13, slot14, slot15)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 55-57, warpins: 4 ---
-	slot10 = slot0.isHaveCanGetReward
-	--- END OF BLOCK #8 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #9 58-63, warpins: 1 ---
-	slot10 = QuestUtils
-	slot10 = slot10.isSpecialTrainMainQuest
-	slot12 = slot7.questId
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #9 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #10 64-66, warpins: 1 ---
-	slot10 = slot2.objectivesIDs
-	--- END OF BLOCK #10 ---
-
-	if slot10 ~= nil then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #11 67-75, warpins: 1 ---
-	slot10 = slot0.onShowGrowTracingQuest
-	slot8.func = slot10
-	slot8.owner = slot0
+	--- BLOCK #6 38-51, warpins: 4 ---
 	slot12 = slot0
-	slot10 = slot0.enQueueSafe
-	slot13 = slot0.questGrowTracingQueue
-	slot14 = slot8
+	slot10 = slot0.handleQuestReceivedByPage
+	slot13 = slot1
+	slot14 = slot2
+	slot15 = slot7
+	slot16 = slot8
+	slot17 = slot9
+	slot18 = slot5
+
+	slot10(slot12, slot13, slot14, slot15, slot16, slot17, slot18)
 
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
-
-
-	--- BLOCK #12 76-80, warpins: 1 ---
-	slot10 = QuestConst
-	slot10 = slot10.QUEST_HUD_PAGE_TYPE
-	slot10 = slot10.QUEST
-	--- END OF BLOCK #12 ---
-
-	if slot10 == slot9 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #13 81-85, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.isQuestTab
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #13 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #14 86-88, warpins: 1 ---
-	slot10 = slot2.objectivesIDs
-	--- END OF BLOCK #14 ---
-
-	if slot10 ~= nil then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #15 89-90, warpins: 1 ---
-	--- END OF BLOCK #15 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 91-95, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.enQueueSafe
-	slot13 = slot0.questTaskTracingQueue
-	slot14 = slot8
-
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 96-97, warpins: 3 ---
-	--- END OF BLOCK #17 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #18 98-102, warpins: 1 ---
-	slot10 = slot0.isAddCurtainAccept
-	slot11 = slot7.questId
-	slot10 = slot10[slot11]
-	--- END OF BLOCK #18 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 103-107, warpins: 1 ---
-	slot10 = slot0.isAddCurtainAccept
-	slot11 = slot7.questId
-	slot10 = slot10[slot11]
-	--- END OF BLOCK #19 ---
-
-	if slot10 == nil then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #20 108-121, warpins: 2 ---
-	slot10 = slot0.isAddCurtainAccept
-	slot11 = slot7.questId
-	slot12 = true
-	slot10[slot11] = slot12
-	slot10 = {
-		playCurtainAcceptAnim = true
-	}
-	slot11 = slot7.questId
-	slot10.questId = slot11
-	slot10.owner = slot0
-	slot13 = slot0
-	slot11 = slot0.enQueueSafe
-	slot14 = slot0.questTaskTitleQueue
-	slot15 = slot10
-
-	slot11(slot13, slot14, slot15)
-
-	--- END OF BLOCK #20 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
-
-
-	--- BLOCK #21 122-126, warpins: 1 ---
-	slot10 = QuestConst
-	slot10 = slot10.QUEST_HUD_PAGE_TYPE
-	slot10 = slot10.STORY
-	--- END OF BLOCK #21 ---
-
-	if slot10 == slot9 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #22 127-131, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.isStoryTab
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #22 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #23 132-134, warpins: 1 ---
-	slot10 = slot2.objectivesIDs
-	--- END OF BLOCK #23 ---
-
-	if slot10 ~= nil then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #24 135-136, warpins: 1 ---
-	--- END OF BLOCK #24 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 137-141, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.enQueueSafe
-	slot13 = slot0.questStoryTracingQueue
-	slot14 = slot8
-
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 142-143, warpins: 3 ---
-	--- END OF BLOCK #26 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #27 144-148, warpins: 1 ---
-	slot10 = slot0.isAddCurtainAccept
-	slot11 = slot7.questId
-	slot10 = slot10[slot11]
-	--- END OF BLOCK #27 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #28 149-161, warpins: 1 ---
-	slot10 = slot0.isAddCurtainAccept
-	slot11 = slot7.questId
-	slot12 = true
-	slot10[slot11] = slot12
-	slot10 = {
-		playCurtainAcceptAnim = true
-	}
-	slot11 = slot7.questId
-	slot10.questId = slot11
-	slot10.owner = slot0
-	slot13 = slot0
-	slot11 = slot0.enQueueSafe
-	slot14 = slot0.questStoryCurtainQueue
-	slot15 = slot10
-
-	slot11(slot13, slot14, slot15)
-
-	--- END OF BLOCK #28 ---
-
-	FLOW; TARGET BLOCK #29
-
-
-	--- BLOCK #29 162-166, warpins: 14 ---
 	slot12 = slot0
 	slot10 = slot0.refreshAIIsInTipState
 	slot13 = false
 
 	slot10(slot12, slot13)
 
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #30 167-168, warpins: 1 ---
-	--- END OF BLOCK #30 ---
+	--- BLOCK #7 52-53, warpins: 1 ---
+	--- END OF BLOCK #7 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #31 169-170, warpins: 1 ---
-	--- END OF BLOCK #31 ---
+	--- BLOCK #8 54-55, warpins: 1 ---
+	--- END OF BLOCK #8 ---
 
 	slot6 = if not slot6 then
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #32 171-183, warpins: 1 ---
+	--- BLOCK #9 56-68, warpins: 1 ---
 	slot8 = {
 		playInterruptAnim = true
 	}
@@ -4991,33 +5542,442 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 	slot9(slot11, slot12, slot13)
 
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #33 184-185, warpins: 4 ---
+	--- BLOCK #10 69-69, warpins: 4 ---
 	return
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot15.handleQuestReceived = slot47
+slot15.handleQuestReceived = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3)
+slot49 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.GROW
+	--- END OF BLOCK #0 ---
+
+	if slot7 == slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.isGrowTab
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #2 11-16, warpins: 1 ---
+	slot7 = QuestUtils
+	slot7 = slot7.isParentQuest
+	slot9 = slot3.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 17-19, warpins: 1 ---
+	slot7 = slot0.isHaveCanGetReward
+	--- END OF BLOCK #3 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 20-25, warpins: 1 ---
+	slot7 = QuestUtils
+	slot7 = slot7.isSpecialTrainMainQuest
+	slot9 = slot3.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-42, warpins: 1 ---
+	slot7 = {
+		playSpecialTrainAnim = true
+	}
+	slot8 = slot3.questId
+	slot7.questId = slot8
+	slot7.owner = slot0
+	slot10 = slot0
+	slot8 = slot0.enQueueSafe
+	slot11 = slot0.questGrowTitleQueue
+	slot12 = slot7
+
+	slot8(slot10, slot11, slot12)
+
+	slot8 = false
+	slot0.playSpecialGetRewardAnim = slot8
+	slot10 = slot0
+	slot8 = slot0.startTimer
+
+	slot11 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot1 = true
+		slot0.playSpecialGetRewardAnim = slot1
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot12 = questObjcvFinedTimeSpan
+	slot12 = slot12 - 0.2
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 43-45, warpins: 4 ---
+	slot7 = slot0.isHaveCanGetReward
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #7 46-51, warpins: 1 ---
+	slot7 = QuestUtils
+	slot7 = slot7.isSpecialTrainMainQuest
+	slot9 = slot3.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #8 52-54, warpins: 1 ---
+	slot7 = slot2.objectivesIDs
+	--- END OF BLOCK #8 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #9 55-63, warpins: 1 ---
+	slot7 = slot0.onShowGrowTracingQuest
+	slot4.func = slot7
+	slot4.owner = slot0
+	slot9 = slot0
+	slot7 = slot0.enQueueSafe
+	slot10 = slot0.questGrowTracingQueue
+	slot11 = slot4
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #10 64-68, warpins: 1 ---
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.QUEST
+	--- END OF BLOCK #10 ---
+
+	if slot7 == slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #11 69-73, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.isQuestTab
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #12 74-76, warpins: 1 ---
+	slot7 = slot2.objectivesIDs
+	--- END OF BLOCK #12 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 77-78, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 79-83, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.enQueueSafe
+	slot10 = slot0.questTaskTracingQueue
+	slot11 = slot4
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 84-85, warpins: 3 ---
+	--- END OF BLOCK #15 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #16 86-90, warpins: 1 ---
+	slot7 = slot0.isAddCurtainAccept
+	slot8 = slot3.questId
+	slot7 = slot7[slot8]
+	--- END OF BLOCK #16 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 91-95, warpins: 1 ---
+	slot7 = slot0.isAddCurtainAccept
+	slot8 = slot3.questId
+	slot7 = slot7[slot8]
+	--- END OF BLOCK #17 ---
+
+	if slot7 == nil then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #18 96-109, warpins: 2 ---
+	slot7 = slot0.isAddCurtainAccept
+	slot8 = slot3.questId
+	slot9 = true
+	slot7[slot8] = slot9
+	slot7 = {
+		playCurtainAcceptAnim = true
+	}
+	slot8 = slot3.questId
+	slot7.questId = slot8
+	slot7.owner = slot0
+	slot10 = slot0
+	slot8 = slot0.enQueueSafe
+	slot11 = slot0.questTaskTitleQueue
+	slot12 = slot7
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #19 110-114, warpins: 1 ---
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.STORY
+	--- END OF BLOCK #19 ---
+
+	if slot7 == slot5 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #20 115-119, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.isStoryTab
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #20 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #21 120-122, warpins: 1 ---
+	slot7 = slot2.objectivesIDs
+	--- END OF BLOCK #21 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #22 123-124, warpins: 1 ---
+	--- END OF BLOCK #22 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 125-129, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.enQueueSafe
+	slot10 = slot0.questStoryTracingQueue
+	slot11 = slot4
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 130-131, warpins: 3 ---
+	--- END OF BLOCK #24 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #25 132-136, warpins: 1 ---
+	slot7 = slot0.isAddCurtainAccept
+	slot8 = slot3.questId
+	slot7 = slot7[slot8]
+	--- END OF BLOCK #25 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 137-149, warpins: 1 ---
+	slot7 = slot0.isAddCurtainAccept
+	slot8 = slot3.questId
+	slot9 = true
+	slot7[slot8] = slot9
+	slot7 = {
+		playCurtainAcceptAnim = true
+	}
+	slot8 = slot3.questId
+	slot7.questId = slot8
+	slot7.owner = slot0
+	slot10 = slot0
+	slot8 = slot0.enQueueSafe
+	slot11 = slot0.questStoryCurtainQueue
+	slot12 = slot7
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 150-151, warpins: 14 ---
+	return
+	--- END OF BLOCK #27 ---
+
+
+
+end
+
+slot15.handleQuestReceivedByPage = slot49
+
+slot49 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-17, warpins: 1 ---
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.isQuestOfClueQuestType
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-23, warpins: 1 ---
 	slot4 = {
 		playInterruptFinishAnim = true
 	}
@@ -5038,26 +5998,26 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	slot5 = false
 	slot0.playCompleteAnim = slot5
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 18-18, warpins: 2 ---
-	return
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot15.enQueueCurtainInterruptFinish = slot47
+slot15.enQueueCurtainInterruptFinish = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot49 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -5067,635 +6027,851 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #1 3-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #8
 	end
 
 
 	--- BLOCK #2 5-13, warpins: 2 ---
-	slot7 = QuestUtils
-	slot7 = slot7.getPageType
-	slot9 = slot6.questId
-	slot7 = slot7(slot9)
-	slot8 = QuestConst
-	slot8 = slot8.QUEST_HUD_PAGE_TYPE
-	slot8 = slot8.GROW
+	slot6 = QuestUtils
+	slot6 = slot6.getPageType
+	slot8 = slot5.questId
+	slot6 = slot6(slot8)
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.GROW
 	--- END OF BLOCK #2 ---
 
-	if slot8 == slot7 then
+	if slot7 == slot6 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-22, warpins: 1 ---
-	slot8 = QuestUtils
-	slot8 = slot8.isParentQuest
-	slot10 = slot6.questId
-	slot8 = slot8(slot10)
-	slot11 = slot0
-	slot9 = slot0.isGrowTab
-	slot9 = slot9(slot11)
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.handleQuestSubmittedGrow
+	slot10 = slot5
+
+	slot7(slot9, slot10)
+
 	--- END OF BLOCK #3 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #4 23-24, warpins: 1 ---
+	--- BLOCK #4 19-23, warpins: 1 ---
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.QUEST
 	--- END OF BLOCK #4 ---
 
-	slot8 = if not slot8 then
+	if slot7 == slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 25-37, warpins: 1 ---
-	slot9 = true
-	slot0.isSpecialGetReward = slot9
-	slot9 = {
+	--- BLOCK #5 24-30, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.handleQuestSubmittedQuest
+	slot10 = slot1
+	slot11 = slot5
+	slot12 = slot4
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #6 31-35, warpins: 1 ---
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.STORY
+	--- END OF BLOCK #6 ---
+
+	if slot7 == slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 36-42, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.handleQuestSubmittedStory
+	slot10 = slot1
+	slot11 = slot5
+	slot12 = slot4
+
+	slot7(slot9, slot10, slot11, slot12)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 43-48, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.enQueueCurtainInterruptFinish
+	slot9 = slot5.questId
+	slot10 = slot4
+	slot11 = true
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 49-55, warpins: 5 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.quest
+	slot8 = slot6
+	slot6 = slot6.removeAllQuestPathfinding
+
+	slot6(slot8)
+
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot15.handleQuestSubmitted = slot49
+
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = QuestUtils
+	slot2 = slot2.isParentQuest
+	slot4 = slot1.questId
+	slot2 = slot2(slot4)
+	slot5 = slot0
+	slot3 = slot0.isGrowTab
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 10-11, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-24, warpins: 1 ---
+	slot3 = true
+	slot0.isSpecialGetReward = slot3
+	slot3 = {
 		isFined = true
 	}
-	slot10 = slot6.questId
-	slot9.questId = slot10
-	slot10 = slot0.onShowGrowTracingQuest
-	slot9.func = slot10
-	slot9.owner = slot0
-	slot12 = slot0
-	slot10 = slot0.enQueueSafe
-	slot13 = slot0.questGrowTracingQueue
-	slot14 = slot9
+	slot4 = slot1.questId
+	slot3.questId = slot4
+	slot4 = slot0.onShowGrowTracingQuest
+	slot3.func = slot4
+	slot3.owner = slot0
+	slot6 = slot0
+	slot4 = slot0.enQueueSafe
+	slot7 = slot0.questGrowTracingQueue
+	slot8 = slot3
 
-	slot10(slot12, slot13, slot14)
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 25-43, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.handleGrowMainQuestTrack
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.handleGrowBranchQuestTrack
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = QuestUtils
+	slot3 = slot3.isQuestOfQuestType
+	slot5 = slot1.questId
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_TYPE
+	slot6 = slot6.SPECIAL_TRAIN
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #4 44-48, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isShowDoublePage
+	slot3 = slot3()
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #5 49-50, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #6 51-55, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isInStarTitleQuest
+	slot3 = slot3()
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #7 56-61, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getParentQuestId
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 62-64, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #8 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 65-69, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getSecondTracingQuestId
+	slot4 = slot4()
+	--- END OF BLOCK #9 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 70-74, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.startTimer
+
+	slot7 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshQuestTitleByTab
+		slot3 = parentQuestId
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot8 = questObjcvFinedTimeSpan
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 75-75, warpins: 4 ---
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 76-77, warpins: 5 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot15.handleQuestSubmittedGrow = slot49
+
+slot49 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isQuestOfQuestType
+	slot5 = slot1.questId
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_TYPE
+	slot6 = slot6.SPECIAL_TRAIN
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 10-14, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isShowDoublePage
+	slot3 = slot3()
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 15-16, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 17-22, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isSpecialTrainMainQuest
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 23-28, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isParentSyncFinQuest
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-31, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.manualTrackSecondTracingQuest
+
+	slot3()
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 38-46, warpins: 3 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isQuestOfQuestType
-	slot11 = slot6.questId
-	slot12 = QuestConst
-	slot12 = slot12.QUEST_TYPE
-	slot12 = slot12.SPECIAL_TRAIN
-	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #6 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #7 47-51, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isShowDoublePage
-	slot9 = slot9()
-	--- END OF BLOCK #7 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #8 52-53, warpins: 1 ---
-	--- END OF BLOCK #8 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #9 54-59, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isSpecialTrainMainQuest
-	slot11 = slot6.questId
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #9 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #10 60-65, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isParentSyncFinQuest
-	slot11 = slot6.questId
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #10 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #11 66-70, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isInStarTitleQuest
-	slot9 = slot9()
-	--- END OF BLOCK #11 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 71-73, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.manualTrackSecondTracingQuest
-
-	slot9()
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 74-75, warpins: 7 ---
-	--- END OF BLOCK #13 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #14 76-81, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isPromotionQuest
-	slot11 = slot6.questId
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #14 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #15 82-87, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isSpecialTrainMainQuest
-	slot11 = slot6.questId
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #15 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #16 88-92, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isInStarTitleQuest
-	slot9 = slot9()
-	--- END OF BLOCK #16 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #17 93-97, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isChapterAdvance
-	slot9 = slot9()
-	--- END OF BLOCK #17 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #18 98-103, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getParentQuestId
-	slot11 = slot6.questId
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #18 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #19 104-106, warpins: 1 ---
-	slot10 = 0
-	--- END OF BLOCK #19 ---
-
-	if slot9 > slot10 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #20 107-111, warpins: 1 ---
-	slot10 = QuestUtils
-	slot10 = slot10.getSecondTracingQuestId
-	slot10 = slot10()
-	--- END OF BLOCK #20 ---
-
-	if slot9 == slot10 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #21 112-119, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.me
-	slot12 = slot10
-	slot10 = slot10.traceQuest
-	slot13 = slot9
-	slot14 = false
-
-	slot10(slot12, slot13, slot14)
-
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #22 120-124, warpins: 2 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isInStarTitleQuest
-	slot9 = slot9()
-	--- END OF BLOCK #22 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #23 125-129, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getInStarTitleQuestId
-	slot9 = slot9()
-	--- END OF BLOCK #23 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #24 130-137, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isQuestSubmittedOrFinished
-	slot11 = QuestUtils
-	slot11 = slot11.getInStarTitleQuestId
-	MULTRES = slot11()
-	slot9 = slot9(MULTRES)
-	--- END OF BLOCK #24 ---
-
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #25 138-142, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.isChapterAdvance
-	slot9 = slot9()
-	--- END OF BLOCK #25 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #26 143-148, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getInStarTitleQuestId
-	slot9 = slot9()
-	slot10 = 0
-	--- END OF BLOCK #26 ---
-
-	if slot9 > slot10 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #27 149-156, warpins: 1 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getInStarTitleQuestId
-	slot9 = slot9()
-	slot10 = QuestUtils
-	slot10 = slot10.getSecondTracingQuestId
-	slot10 = slot10()
-	--- END OF BLOCK #27 ---
-
-	if slot9 ~= slot10 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #28 157-166, warpins: 1 ---
-	slot9 = pg
-	slot9 = slot9.me
-	slot11 = slot9
-	slot9 = slot9.traceQuest
-	slot12 = QuestUtils
-	slot12 = slot12.getInStarTitleQuestId
-	slot12 = slot12()
-	slot13 = true
-
-	slot9(slot11, slot12, slot13)
-
-	--- END OF BLOCK #28 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #29 167-170, warpins: 3 ---
-	slot9 = QuestUtils
-	slot9 = slot9.manualTrackSecondTracingQuest
-
-	slot9()
-
-	--- END OF BLOCK #29 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #30 171-174, warpins: 3 ---
-	slot9 = QuestUtils
-	slot9 = slot9.manualTrackSecondTracingQuest
-
-	slot9()
-
-	--- END OF BLOCK #30 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #31 175-179, warpins: 1 ---
-	slot8 = QuestConst
-	slot8 = slot8.QUEST_HUD_PAGE_TYPE
-	slot8 = slot8.QUEST
-	--- END OF BLOCK #31 ---
-
-	if slot8 == slot7 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #32 180-184, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.isQuestTab
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #32 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #33 185-187, warpins: 1 ---
-	slot8 = slot2.objectivesIDs
-	--- END OF BLOCK #33 ---
-
-	if slot8 ~= nil then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #34 188-189, warpins: 1 ---
-	--- END OF BLOCK #34 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #35 190-200, warpins: 1 ---
-	slot8 = {
-		isFined = true
-	}
-	slot9 = slot6.questId
-	slot8.questId = slot9
-	slot9 = slot0.onShowQuestTracingQuest
-	slot8.func = slot9
-	slot8.owner = slot0
-	slot11 = slot0
-	slot9 = slot0.enQueueSafe
-	slot12 = slot0.questTaskTracingQueue
-	slot13 = slot8
-
-	slot9(slot11, slot12, slot13)
-
-	--- END OF BLOCK #35 ---
-
-	FLOW; TARGET BLOCK #36
-
-
-	--- BLOCK #36 201-202, warpins: 4 ---
-	--- END OF BLOCK #36 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #37 203-220, warpins: 1 ---
-	slot8 = {
-		refreshAll = true
-	}
-	slot9 = slot6.questId
-	slot8.questId = slot9
-	slot9 = slot0.onShowQuestTracingQuest
-	slot8.func = slot9
-	slot8.owner = slot0
-	slot11 = slot0
-	slot9 = slot0.enQueueSafe
-	slot12 = slot0.questTaskTracingQueue
-	slot13 = slot8
-
-	slot9(slot11, slot12, slot13)
-
-	slot11 = slot0
-	slot9 = slot0.enQueueCurtainInterruptFinish
-	slot12 = slot6.questId
-	slot13 = slot5
-	slot14 = true
-
-	slot9(slot11, slot12, slot13, slot14)
-
-	--- END OF BLOCK #37 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #38 221-225, warpins: 1 ---
-	slot8 = QuestConst
-	slot8 = slot8.QUEST_HUD_PAGE_TYPE
-	slot8 = slot8.STORY
-	--- END OF BLOCK #38 ---
-
-	if slot8 == slot7 then
-	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #45
-	end
-
-
-	--- BLOCK #39 226-230, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.isStoryTab
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #39 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #40
-	else
-	JUMP TO BLOCK #43
-	end
-
-
-	--- BLOCK #40 231-233, warpins: 1 ---
-	slot8 = slot2.objectivesIDs
-	--- END OF BLOCK #40 ---
-
-	if slot8 ~= nil then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #43
-	end
-
-
-	--- BLOCK #41 234-235, warpins: 1 ---
-	--- END OF BLOCK #41 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
-
-
-	--- BLOCK #42 236-246, warpins: 1 ---
-	slot8 = {
-		isFined = true
-	}
-	slot9 = slot6.questId
-	slot8.questId = slot9
-	slot9 = slot0.onShowStoryTracingQuest
-	slot8.func = slot9
-	slot8.owner = slot0
-	slot11 = slot0
-	slot9 = slot0.enQueueSafe
-	slot12 = slot0.questStoryTracingQueue
-	slot13 = slot8
-
-	slot9(slot11, slot12, slot13)
-
-	--- END OF BLOCK #42 ---
-
-	FLOW; TARGET BLOCK #43
-
-
-	--- BLOCK #43 247-253, warpins: 4 ---
-	slot10 = slot0
-	slot8 = slot0.enQueueCurtainInterruptFinish
-	slot11 = slot6.questId
-	slot12 = slot5
-	slot13 = true
-
-	slot8(slot10, slot11, slot12, slot13)
-
-	--- END OF BLOCK #43 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #44 254-259, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.enQueueCurtainInterruptFinish
-	slot10 = slot6.questId
-	slot11 = slot5
-	slot12 = true
-
-	slot7(slot9, slot10, slot11, slot12)
-
-	--- END OF BLOCK #44 ---
-
-	FLOW; TARGET BLOCK #45
-
-
-	--- BLOCK #45 260-266, warpins: 15 ---
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.quest
-	slot9 = slot7
-	slot7 = slot7.removeAllQuestPathfinding
-
-	slot7(slot9)
-
+	--- BLOCK #6 32-32, warpins: 6 ---
 	return
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15.handleQuestSubmitted = slot47
+slot15.handleGrowMainQuestTrack = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot49 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isPromotionQuest
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #2 9-14, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isSpecialTrainMainQuest
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #3 15-19, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isInStarTitleQuest
+	slot3 = slot3()
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 20-24, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isChapterAdvance
+	slot3 = slot3()
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 25-30, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getParentQuestId
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #6 31-33, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #6 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #7 34-38, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getSecondTracingQuestId
+	slot4 = slot4()
+	--- END OF BLOCK #7 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #8 39-46, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.traceQuest
+	slot7 = slot3
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #9 47-51, warpins: 2 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isInStarTitleQuest
+	slot3 = slot3()
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #10 52-56, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getInStarTitleQuestId
+	slot3 = slot3()
+	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #11 57-64, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isQuestSubmittedOrFinished
+	slot5 = QuestUtils
+	slot5 = slot5.getInStarTitleQuestId
+	MULTRES = slot5()
+	slot3 = slot3(MULTRES)
+	--- END OF BLOCK #11 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #12 65-69, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.isChapterAdvance
+	slot3 = slot3()
+	--- END OF BLOCK #12 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #13 70-75, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getInStarTitleQuestId
+	slot3 = slot3()
+	slot4 = 0
+	--- END OF BLOCK #13 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 76-83, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getInStarTitleQuestId
+	slot3 = slot3()
+	slot4 = QuestUtils
+	slot4 = slot4.getSecondTracingQuestId
+	slot4 = slot4()
+	--- END OF BLOCK #14 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 84-93, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.traceQuest
+	slot6 = QuestUtils
+	slot6 = slot6.getInStarTitleQuestId
+	slot6 = slot6()
+	slot7 = true
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #16 94-97, warpins: 3 ---
+	slot3 = QuestUtils
+	slot3 = slot3.manualTrackSecondTracingQuest
+
+	slot3()
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 98-100, warpins: 3 ---
+	slot3 = QuestUtils
+	slot3 = slot3.manualTrackSecondTracingQuest
+
+	slot3()
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 101-101, warpins: 10 ---
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot15.handleGrowBranchQuestTrack = slot49
+
+slot49 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.isQuestTab
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot4 = slot1.objectivesIDs
+	--- END OF BLOCK #1 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-21, warpins: 1 ---
+	slot4 = {
+		isFined = true
+	}
+	slot5 = slot2.questId
+	slot4.questId = slot5
+	slot5 = slot0.onShowQuestTracingQuest
+	slot4.func = slot5
+	slot4.owner = slot0
+	slot7 = slot0
+	slot5 = slot0.enQueueSafe
+	slot8 = slot0.questTaskTracingQueue
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-23, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-40, warpins: 1 ---
+	slot4 = {
+		refreshAll = true
+	}
+	slot5 = slot2.questId
+	slot4.questId = slot5
+	slot5 = slot0.onShowQuestTracingQuest
+	slot4.func = slot5
+	slot4.owner = slot0
+	slot7 = slot0
+	slot5 = slot0.enQueueSafe
+	slot8 = slot0.questTaskTracingQueue
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot0
+	slot5 = slot0.enQueueCurtainInterruptFinish
+	slot8 = slot2.questId
+	slot9 = slot3
+	slot10 = true
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 41-41, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15.handleQuestSubmittedQuest = slot49
+
+slot49 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.isStoryTab
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot4 = slot1.objectivesIDs
+	--- END OF BLOCK #1 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-21, warpins: 1 ---
+	slot4 = {
+		isFined = true
+	}
+	slot5 = slot2.questId
+	slot4.questId = slot5
+	slot5 = slot0.onShowStoryTracingQuest
+	slot4.func = slot5
+	slot4.owner = slot0
+	slot7 = slot0
+	slot5 = slot0.enQueueSafe
+	slot8 = slot0.questStoryTracingQueue
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-28, warpins: 4 ---
+	slot6 = slot0
+	slot4 = slot0.enQueueCurtainInterruptFinish
+	slot7 = slot2.questId
+	slot8 = slot3
+	slot9 = true
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15.handleQuestSubmittedStory = slot49
+
+slot49 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5904,9 +7080,9 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot15.handleQuestClosed = slot47
+slot15.handleQuestClosed = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4)
+slot49 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot5 = QuestUtils
 	slot5 = slot5.getPageType
@@ -5988,7 +7164,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	slot9 = if slot9 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
@@ -5999,7 +7175,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot9 ~= nil then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
@@ -6022,7 +7198,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #8 54-58, warpins: 1 ---
@@ -6034,7 +7210,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot9 == slot5 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
@@ -6047,7 +7223,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	slot9 = if slot9 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
@@ -6058,7 +7234,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot9 ~= nil then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
@@ -6068,21 +7244,31 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
 	--- BLOCK #12 69-70, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	slot6 = if slot6 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 71-83, warpins: 1 ---
+	--- BLOCK #13 71-72, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #14 73-85, warpins: 2 ---
 	slot9 = {
 		refreshAll = true
 	}
@@ -6099,69 +7285,79 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #14 84-88, warpins: 1 ---
+	--- BLOCK #15 86-90, warpins: 1 ---
 	slot9 = QuestConst
 	slot9 = slot9.QUEST_HUD_PAGE_TYPE
 	slot9 = slot9.QUEST
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #15 ---
 
 	if slot9 == slot5 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #15 89-93, warpins: 1 ---
+	--- BLOCK #16 91-95, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.isQuestTab
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #15 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #16 94-96, warpins: 1 ---
-	slot9 = slot2.objectivesIDs
 	--- END OF BLOCK #16 ---
 
-	if slot9 ~= nil then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #17 97-98, warpins: 1 ---
+	--- BLOCK #17 96-98, warpins: 1 ---
+	slot9 = slot2.objectivesIDs
 	--- END OF BLOCK #17 ---
 
-	slot3 = if not slot3 then
+	if slot9 ~= nil then
 	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
 	--- BLOCK #18 99-100, warpins: 1 ---
 	--- END OF BLOCK #18 ---
 
-	slot6 = if slot6 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #19 101-112, warpins: 1 ---
+	--- BLOCK #19 101-102, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 103-104, warpins: 1 ---
+	--- END OF BLOCK #20 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 105-116, warpins: 2 ---
 	slot9 = {
 		refreshAll = true
 	}
@@ -6178,12 +7374,12 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #20 113-119, warpins: 14 ---
+	--- BLOCK #22 117-123, warpins: 14 ---
 	slot9 = pg
 	slot9 = slot9.game
 	slot9 = slot9.quest
@@ -6193,92 +7389,95 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	slot9(slot11)
 
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
 
 
 end
 
-slot15.handleQuestCompleted = slot47
+slot15.handleQuestCompleted = slot49
 
-slot47 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.curObjectives
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot2 = tostring
+	slot4 = slot1.questId
+	slot2 = slot2(slot4)
+	slot3 = "_"
+	slot4 = tostring
+	slot6 = slot1.objectiveId
+	slot4 = slot4(slot6)
+	slot2 = slot2 .. slot3 .. slot4
+	slot3 = slot0.curObjectives
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= nil then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.curObjectives
-	slot3 = #slot3
-	slot4 = 1
+	--- BLOCK #1 12-16, warpins: 1 ---
+	slot3 = 1
+	slot4 = slot0.curObjectives
+	slot4 = #slot4
+	slot5 = 1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-14, warpins: 2 ---
-	slot6 = slot0.curObjectives
-	slot6 = slot6[slot5]
-	slot7 = slot6.questId
-	slot8 = slot1.questId
+	--- BLOCK #2 17-22, warpins: 2 ---
+	slot7 = slot0.curObjectives
+	slot7 = slot7[slot6]
+	slot8 = slot7.questId
+	slot9 = slot1.questId
 	--- END OF BLOCK #2 ---
 
-	if slot7 == slot8 then
+	if slot8 == slot9 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 15-18, warpins: 1 ---
-	slot7 = slot6.objId
-	slot8 = slot1.objectiveId
+	--- BLOCK #3 23-26, warpins: 1 ---
+	slot8 = slot7.objId
+	slot9 = slot1.objectiveId
 	--- END OF BLOCK #3 ---
 
-	if slot7 == slot8 then
+	if slot8 == slot9 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 19-43, warpins: 1 ---
-	slot7 = QuestUtils
-	slot7 = slot7.getQuestObjData
-	slot9 = slot1.questId
-	slot10 = slot1.objectiveId
-	slot7 = slot7(slot9, slot10)
-	slot6.objData = slot7
-	slot7 = {
+	--- BLOCK #4 27-48, warpins: 1 ---
+	slot8 = QuestUtils
+	slot8 = slot8.getQuestObjData
+	slot10 = slot1.questId
+	slot11 = slot1.objectiveId
+	slot8 = slot8(slot10, slot11)
+	slot7.objData = slot8
+	slot8 = {
 		isObjChange = true
 	}
-	slot8 = slot1.questId
-	slot7.questId = slot8
-	slot8 = slot5 - 1
-	slot7.objIndex = slot8
-	slot7.objcvData = slot6
-	slot8 = slot1.isFined
-	slot7.isObjFined = slot8
-	slot10 = slot0
-	slot8 = slot0.onRefreshTracingQuestObj
-	slot11 = slot0.storyTracingList
-	slot12 = slot0.curObjectives
-	slot13 = slot7
+	slot9 = slot1.questId
+	slot8.questId = slot9
+	slot9 = slot6 - 1
+	slot8.objIndex = slot9
+	slot8.objcvData = slot7
+	slot9 = slot1.isFined
+	slot8.isObjFined = slot9
+	slot11 = slot0
+	slot9 = slot0.handleObjectiveChangeWithCooldown
+	slot12 = slot0.storyTracingList
+	slot13 = slot0.curObjectives
+	slot14 = slot8
+	slot15 = slot2
 
-	slot8(slot10, slot11, slot12, slot13)
-
-	slot10 = slot0
-	slot8 = slot0.refreshAIIsInTipState
-	slot11 = false
-
-	slot8(slot10, slot11)
+	slot9(slot11, slot12, slot13, slot14, slot15)
 
 	return
 
@@ -6287,126 +7486,121 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 44-44, warpins: 3 ---
+	--- BLOCK #5 49-49, warpins: 3 ---
 	--- END OF BLOCK #5 ---
 
-	for slot5=slot2, slot3, slot4
+	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #2
 	GO OUT TO BLOCK #6
 
-	--- BLOCK #6 45-47, warpins: 2 ---
-	slot2 = slot0.curSecObjectives
+	--- BLOCK #6 50-52, warpins: 2 ---
+	slot3 = slot0.curSecObjectives
 	--- END OF BLOCK #6 ---
 
-	if slot2 ~= nil then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #7 48-52, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.curSecObjectives
-	slot3 = #slot3
-	slot4 = 1
+	--- BLOCK #7 53-57, warpins: 1 ---
+	slot3 = 1
+	slot4 = slot0.curSecObjectives
+	slot4 = #slot4
+	slot5 = 1
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 53-58, warpins: 2 ---
-	slot6 = slot0.curSecObjectives
-	slot6 = slot6[slot5]
-	slot7 = slot6.questId
-	slot8 = slot1.questId
+	--- BLOCK #8 58-63, warpins: 2 ---
+	slot7 = slot0.curSecObjectives
+	slot7 = slot7[slot6]
+	slot8 = slot7.questId
+	slot9 = slot1.questId
 	--- END OF BLOCK #8 ---
 
-	if slot7 == slot8 then
+	if slot8 == slot9 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #9 59-62, warpins: 1 ---
-	slot7 = slot6.objId
-	slot8 = slot1.objectiveId
+	--- BLOCK #9 64-67, warpins: 1 ---
+	slot8 = slot7.objId
+	slot9 = slot1.objectiveId
 	--- END OF BLOCK #9 ---
 
-	if slot7 == slot8 then
+	if slot8 == slot9 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 63-81, warpins: 1 ---
-	slot7 = QuestUtils
-	slot7 = slot7.getQuestObjData
-	slot9 = slot1.questId
-	slot10 = slot1.objectiveId
-	slot7 = slot7(slot9, slot10)
-	slot6.objData = slot7
-	slot7 = QuestUtils
-	slot7 = slot7.isMultiObjAndState
-	slot9 = slot6.questId
-	slot10 = slot6.objId
-	slot7 = slot7(slot9, slot10)
-	slot8 = {
+	--- BLOCK #10 68-86, warpins: 1 ---
+	slot8 = QuestUtils
+	slot8 = slot8.getQuestObjData
+	slot10 = slot1.questId
+	slot11 = slot1.objectiveId
+	slot8 = slot8(slot10, slot11)
+	slot7.objData = slot8
+	slot8 = QuestUtils
+	slot8 = slot8.isMultiObjAndState
+	slot10 = slot7.questId
+	slot11 = slot7.objId
+	slot8 = slot8(slot10, slot11)
+	slot9 = {
 		isObjChange = true
 	}
-	slot9 = slot1.questId
-	slot8.questId = slot9
-	slot9 = slot5 - 1
-	slot8.objIndex = slot9
-	slot8.objcvData = slot6
+	slot10 = slot1.questId
+	slot9.questId = slot10
+	slot10 = slot6 - 1
+	slot9.objIndex = slot10
+	slot9.objcvData = slot7
 	--- END OF BLOCK #10 ---
 
-	slot7 = if slot7 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 82-84, warpins: 1 ---
-	slot9 = slot1.isFined
+	--- BLOCK #11 87-89, warpins: 1 ---
+	slot10 = slot1.isFined
 	--- END OF BLOCK #11 ---
 
-	slot9 = if not slot9 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 85-85, warpins: 2 ---
-	slot9 = false
+	--- BLOCK #12 90-90, warpins: 2 ---
+	slot10 = false
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 86-101, warpins: 2 ---
-	slot8.isObjFined = slot9
-	slot9 = QuestConst
-	slot9 = slot9.SPECIAL_QUEST_HUD_STATE
-	slot9 = slot9.QUEST_TRACE
-	slot8.hudType = slot9
-	slot11 = slot0
-	slot9 = slot0.onRefreshTracingQuestObj
-	slot12 = slot0.growTracingList
-	slot13 = slot0.curSecObjectives
-	slot14 = slot8
+	--- BLOCK #13 91-103, warpins: 2 ---
+	slot9.isObjFined = slot10
+	slot10 = QuestConst
+	slot10 = slot10.SPECIAL_QUEST_HUD_STATE
+	slot10 = slot10.QUEST_TRACE
+	slot9.hudType = slot10
+	slot12 = slot0
+	slot10 = slot0.handleObjectiveChangeWithCooldown
+	slot13 = slot0.growTracingList
+	slot14 = slot0.curSecObjectives
+	slot15 = slot9
+	slot16 = slot2
 
-	slot9(slot11, slot12, slot13, slot14)
-
-	slot11 = slot0
-	slot9 = slot0.refreshAIIsInTipState
-	slot12 = false
-
-	slot9(slot11, slot12)
+	slot10(slot12, slot13, slot14, slot15, slot16)
 
 	return
 
@@ -6415,90 +7609,85 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 102-102, warpins: 3 ---
+	--- BLOCK #14 104-104, warpins: 3 ---
 	--- END OF BLOCK #14 ---
 
-	for slot5=slot2, slot3, slot4
+	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #8
 	GO OUT TO BLOCK #15
 
-	--- BLOCK #15 103-105, warpins: 2 ---
-	slot2 = slot0.curThrObjectives
+	--- BLOCK #15 105-107, warpins: 2 ---
+	slot3 = slot0.curThrObjectives
 	--- END OF BLOCK #15 ---
 
-	if slot2 ~= nil then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #16 106-110, warpins: 1 ---
-	slot2 = 1
-	slot3 = slot0.curThrObjectives
-	slot3 = #slot3
-	slot4 = 1
+	--- BLOCK #16 108-112, warpins: 1 ---
+	slot3 = 1
+	slot4 = slot0.curThrObjectives
+	slot4 = #slot4
+	slot5 = 1
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 111-116, warpins: 2 ---
-	slot6 = slot0.curThrObjectives
-	slot6 = slot6[slot5]
-	slot7 = slot6.questId
-	slot8 = slot1.questId
+	--- BLOCK #17 113-118, warpins: 2 ---
+	slot7 = slot0.curThrObjectives
+	slot7 = slot7[slot6]
+	slot8 = slot7.questId
+	slot9 = slot1.questId
 	--- END OF BLOCK #17 ---
 
-	if slot7 == slot8 then
+	if slot8 == slot9 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #18 117-120, warpins: 1 ---
-	slot7 = slot6.objId
-	slot8 = slot1.objectiveId
+	--- BLOCK #18 119-122, warpins: 1 ---
+	slot8 = slot7.objId
+	slot9 = slot1.objectiveId
 	--- END OF BLOCK #18 ---
 
-	if slot7 == slot8 then
+	if slot8 == slot9 then
 	JUMP TO BLOCK #19
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 121-145, warpins: 1 ---
-	slot7 = QuestUtils
-	slot7 = slot7.getQuestObjData
-	slot9 = slot1.questId
-	slot10 = slot1.objectiveId
-	slot7 = slot7(slot9, slot10)
-	slot6.objData = slot7
-	slot7 = {
+	--- BLOCK #19 123-144, warpins: 1 ---
+	slot8 = QuestUtils
+	slot8 = slot8.getQuestObjData
+	slot10 = slot1.questId
+	slot11 = slot1.objectiveId
+	slot8 = slot8(slot10, slot11)
+	slot7.objData = slot8
+	slot8 = {
 		isObjChange = true
 	}
-	slot8 = slot1.questId
-	slot7.questId = slot8
-	slot8 = slot5 - 1
-	slot7.objIndex = slot8
-	slot7.objcvData = slot6
-	slot8 = slot1.isFined
-	slot7.isObjFined = slot8
-	slot10 = slot0
-	slot8 = slot0.onRefreshTracingQuestObj
-	slot11 = slot0.questTracingList
-	slot12 = slot0.curThrObjectives
-	slot13 = slot7
+	slot9 = slot1.questId
+	slot8.questId = slot9
+	slot9 = slot6 - 1
+	slot8.objIndex = slot9
+	slot8.objcvData = slot7
+	slot9 = slot1.isFined
+	slot8.isObjFined = slot9
+	slot11 = slot0
+	slot9 = slot0.handleObjectiveChangeWithCooldown
+	slot12 = slot0.questTracingList
+	slot13 = slot0.curThrObjectives
+	slot14 = slot8
+	slot15 = slot2
 
-	slot8(slot10, slot11, slot12, slot13)
-
-	slot10 = slot0
-	slot8 = slot0.refreshAIIsInTipState
-	slot11 = false
-
-	slot8(slot10, slot11)
+	slot9(slot11, slot12, slot13, slot14, slot15)
 
 	return
 	--- END OF BLOCK #19 ---
@@ -6506,14 +7695,14 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 146-146, warpins: 3 ---
+	--- BLOCK #20 145-145, warpins: 3 ---
 	--- END OF BLOCK #20 ---
 
-	for slot5=slot2, slot3, slot4
+	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #17
 	GO OUT TO BLOCK #21
 
-	--- BLOCK #21 147-147, warpins: 2 ---
+	--- BLOCK #21 146-146, warpins: 2 ---
 	return
 	--- END OF BLOCK #21 ---
 
@@ -6521,9 +7710,445 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onQuestObjectiveChanged = slot47
+slot15.onQuestObjectiveChanged = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot5 = slot0._objChangeCooldowns
+	slot5 = slot5[slot4]
+	--- END OF BLOCK #0 ---
+
+	if slot5 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-14, warpins: 2 ---
+	slot6 = slot0._objChangeCooldowns
+	slot6[slot4] = slot3
+	slot6 = slot0._objChangeIdleCount
+	slot7 = 0
+	slot6[slot4] = slot7
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-22, warpins: 1 ---
+	slot6 = slot0._objChangePending
+	slot7 = true
+	slot6[slot4] = slot7
+	slot8 = slot0
+	slot6 = slot0.refreshAIIsInTipState
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #5 23-42, warpins: 1 ---
+	slot6 = slot0._objChangePending
+	slot7 = false
+	slot6[slot4] = slot7
+	slot6 = slot0._objChangeLastRendered
+	slot7 = {}
+	slot8 = slot3.isObjFined
+	slot7.isObjFined = slot8
+	slot8 = slot3.objcvData
+	slot8 = slot8.objData
+	slot8 = slot8.currentCnt
+	slot7.currentCnt = slot8
+	slot6[slot4] = slot7
+	slot8 = slot0
+	slot6 = slot0.onRefreshTracingQuestObj
+	slot9 = slot1
+	slot10 = slot2
+	slot11 = slot3
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 43-48, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.getObjectivesFieldByList
+	slot9 = slot1
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 49-49, warpins: 2 ---
+	slot6 = nil
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 50-63, warpins: 2 ---
+	slot7 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = objectivesField
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-8, warpins: 1 ---
+		slot0 = self
+		slot1 = objectivesField
+		slot0 = slot0[slot1]
+		--- END OF BLOCK #1 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		slot0 = objectives
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 10-10, warpins: 2 ---
+		return slot0
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot8 = function()
+		--- BLOCK #0 1-21, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0._objChangeCooldowns
+		slot1 = cooldownKey
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = self
+		slot0 = slot0._objChangePending
+		slot1 = cooldownKey
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = self
+		slot0 = slot0._objChangeIdleCount
+		slot1 = cooldownKey
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = self
+		slot0 = slot0._objChangeLastRendered
+		slot1 = cooldownKey
+		slot2 = nil
+		slot0[slot1] = slot2
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot9 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0._objChangePending
+		slot1 = cooldownKey
+		slot0 = slot0[slot1]
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #1 7-29, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0._objChangePending
+		slot1 = cooldownKey
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = self
+		slot0 = slot0._objChangeCooldowns
+		slot1 = cooldownKey
+		slot0 = slot0[slot1]
+		slot1 = self
+		slot1 = slot1._objChangeLastRendered
+		slot2 = cooldownKey
+		slot1 = slot1[slot2]
+		slot2 = getLiveObjectives
+		slot2 = slot2()
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.resolveObjectiveIndex
+		slot6 = slot2
+		slot7 = slot0
+		slot3 = slot3(slot5, slot6, slot7)
+		--- END OF BLOCK #1 ---
+
+		if slot3 == nil then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 30-32, warpins: 1 ---
+		slot3 = clearCooldown
+
+		slot3()
+
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 33-36, warpins: 2 ---
+		slot3 = slot0.isObjFined
+		slot4 = slot1.isObjFined
+		--- END OF BLOCK #3 ---
+
+		if slot3 == slot4 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #4 37-42, warpins: 1 ---
+		slot3 = slot0.objcvData
+		slot3 = slot3.objData
+		slot3 = slot3.currentCnt
+		slot4 = slot1.currentCnt
+		--- END OF BLOCK #4 ---
+
+		if slot3 == slot4 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 43-44, warpins: 1 ---
+		slot3 = false
+		--- END OF BLOCK #5 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+		--- BLOCK #6 45-45, warpins: 2 ---
+		slot3 = true
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 46-47, warpins: 2 ---
+		--- END OF BLOCK #7 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 48-77, warpins: 1 ---
+		slot4 = self
+		slot4 = slot4._objChangeLastRendered
+		slot5 = cooldownKey
+		slot6 = {}
+		slot7 = slot0.isObjFined
+		slot6.isObjFined = slot7
+		slot7 = slot0.objcvData
+		slot7 = slot7.objData
+		slot7 = slot7.currentCnt
+		slot6.currentCnt = slot7
+		slot4[slot5] = slot6
+		slot4 = self
+		slot4 = slot4._objChangeIdleCount
+		slot5 = cooldownKey
+		slot6 = 0
+		slot4[slot5] = slot6
+		slot4 = self
+		slot6 = slot4
+		slot4 = slot4.onRefreshTracingQuestObj
+		slot7 = list
+		slot8 = slot2
+		slot9 = slot0
+
+		slot4(slot6, slot7, slot8, slot9)
+
+		slot4 = self
+		slot6 = slot4
+		slot4 = slot4.startTimer
+		slot7 = onTick
+		slot8 = questObjcvStateTimeSpan
+
+		slot4(slot6, slot7, slot8)
+
+		--- END OF BLOCK #8 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+		--- BLOCK #9 78-80, warpins: 1 ---
+		slot4 = clearCooldown
+
+		slot4()
+
+		--- END OF BLOCK #9 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+		--- BLOCK #10 81-86, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0._objChangeIdleCount
+		slot1 = cooldownKey
+		slot0 = slot0[slot1]
+		--- END OF BLOCK #10 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 87-87, warpins: 1 ---
+		slot0 = 0
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 88-91, warpins: 2 ---
+		slot0 = slot0 + 1
+		slot1 = 2
+		--- END OF BLOCK #12 ---
+
+		if slot0 >= slot1 then
+		JUMP TO BLOCK #13
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #13 92-94, warpins: 1 ---
+		slot1 = clearCooldown
+
+		slot1()
+
+		--- END OF BLOCK #13 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+		--- BLOCK #14 95-104, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1._objChangeIdleCount
+		slot2 = cooldownKey
+		slot1[slot2] = slot0
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.startTimer
+		slot4 = onTick
+		slot5 = questObjcvStateTimeSpan
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #14 ---
+
+		FLOW; TARGET BLOCK #15
+
+
+		--- BLOCK #15 105-105, warpins: 4 ---
+		return
+		--- END OF BLOCK #15 ---
+
+
+
+	end
+
+	slot12 = slot0
+	slot10 = slot0.startTimer
+	slot13 = slot9
+	slot14 = questObjcvStateTimeSpan
+
+	slot10(slot12, slot13, slot14)
+
+	slot12 = slot0
+	slot10 = slot0.refreshAIIsInTipState
+	slot13 = false
+
+	slot10(slot12, slot13)
+
+	return
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 64-64, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot15.handleObjectiveChangeWithCooldown = slot49
+
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.getQuestData
@@ -6632,9 +8257,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onQuestComActionObjectiveChanged = slot47
+slot15.onQuestComActionObjectiveChanged = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.type
 	slot3 = QuestConst
@@ -6645,11 +8270,296 @@ slot47 = function(slot0, slot1)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #1
 	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.onQuestTraceChangeStory
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 12-17, warpins: 1 ---
+	slot2 = slot1.type
+	slot3 = QuestConst
+	slot3 = slot3.QUEST_TRACE_TYPE
+	slot3 = slot3.QUEST
+	--- END OF BLOCK #2 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-22, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.onQuestTraceChangeQuest
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 23-28, warpins: 1 ---
+	slot2 = slot1.type
+	slot3 = QuestConst
+	slot3 = slot3.QUEST_TRACE_TYPE
+	slot3 = slot3.SEC
+	--- END OF BLOCK #4 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-32, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.onQuestTraceChangeSec
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-33, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15.onQuestTraceChange = slot49
+
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = false
+	slot0.isSwitchTracking = slot2
+	slot2 = slot1.questData
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-15, warpins: 1 ---
+	slot3 = {
+		questId = 0,
+		refreshAll = true,
+		isSwitchTrack = true
+	}
+	slot4 = slot0.onShowStoryTracingQuest
+	slot3.func = slot4
+	slot3.owner = slot0
+	slot6 = slot0
+	slot4 = slot0.enQueueSafe
+	slot7 = slot0.questStoryTracingQueue
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-26, warpins: 2 ---
+	slot3 = slot2.configId
+	slot4 = QuestUtils
+	slot4 = slot4.isCurtainQuest
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = slot2.state
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_STATE
+	slot6 = slot6.RECEIVED
+	--- END OF BLOCK #2 ---
+
+	if slot5 == slot6 then
+	JUMP TO BLOCK #3
+	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #1 7-20, warpins: 1 ---
+	--- BLOCK #3 27-28, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #4 29-33, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.isStoryTab
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #5 34-37, warpins: 1 ---
+	slot5 = slot0.isAddCurtainAccept
+	slot5 = slot5[slot3]
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #6 38-44, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.queueContainsQuestId
+	slot8 = slot0.questStoryCurtainQueue
+	slot9 = slot3
+	slot5 = slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #6 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #7 45-49, warpins: 1 ---
+	slot5 = QuestUtils
+	slot5 = slot5.getTracingStoryQuestId
+	slot5 = slot5()
+	--- END OF BLOCK #7 ---
+
+	if slot5 == slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #8 50-61, warpins: 1 ---
+	slot5 = slot0.isAddCurtainAccept
+	slot6 = true
+	slot5[slot3] = slot6
+	slot5 = nil
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.quest
+	slot8 = slot6
+	slot6 = slot6.getHideTransitionAni
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 62-73, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.quest
+	slot8 = slot6
+	slot6 = slot6.setHideTransitionAni
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	slot6 = {
+		refreshAll = true
+	}
+	slot6.questId = slot3
+	slot6.owner = slot0
+	slot5 = slot6
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 74-77, warpins: 1 ---
+	slot6 = {
+		playCurtainAcceptAnim = true
+	}
+	slot6.questId = slot3
+	slot6.owner = slot0
+	slot5 = slot6
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 78-82, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.enQueueSafe
+	slot9 = slot0.questStoryCurtainQueue
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 83-93, warpins: 7 ---
+	slot5 = {
+		refreshAll = true,
+		isSwitchTrack = true
+	}
+	slot5.questId = slot3
+	slot6 = slot0.onShowStoryTracingQuest
+	slot5.func = slot6
+	slot5.owner = slot0
+	slot8 = slot0
+	slot6 = slot0.enQueueSafe
+	slot9 = slot0.questStoryTracingQueue
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot15.onQuestTraceChangeStory = slot49
+
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = false
 	slot0.isSwitchTracking = slot2
 	slot2 = QuestUtils
@@ -6662,35 +8572,49 @@ slot47 = function(slot0, slot1)
 	slot4 = QuestConst
 	slot4 = slot4.QUEST_STATE
 	slot4 = slot4.RECEIVED
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #0 ---
 
 	if slot3 == slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #1 15-16, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #2 21-22, warpins: 1 ---
+	--- BLOCK #2 17-21, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isQuestTab
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #3 23-27, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.isStoryTab
-	slot3 = slot3(slot5)
+	--- BLOCK #3 22-27, warpins: 1 ---
+	slot3 = slot0.isAddCurtainAccept
+	slot4 = slot1.questData
+	slot4 = slot4.configId
+	slot3 = slot3[slot4]
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #5
 	end
 
 
@@ -6701,17 +8625,17 @@ slot47 = function(slot0, slot1)
 	slot3 = slot3[slot4]
 	--- END OF BLOCK #4 ---
 
-	slot3 = if not slot3 then
+	if slot3 == nil then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #5 34-41, warpins: 1 ---
+	--- BLOCK #5 34-41, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.queueContainsQuestId
-	slot6 = slot0.questStoryCurtainQueue
+	slot6 = slot0.questTaskTitleQueue
 	slot7 = slot1.questData
 	slot7 = slot7.configId
 	slot3 = slot3(slot5, slot6, slot7)
@@ -6726,7 +8650,7 @@ slot47 = function(slot0, slot1)
 
 	--- BLOCK #6 42-48, warpins: 1 ---
 	slot3 = QuestUtils
-	slot3 = slot3.getTracingStoryQuestId
+	slot3 = slot3.getTracingQuestId
 	slot3 = slot3()
 	slot4 = slot1.questData
 	slot4 = slot4.configId
@@ -6801,7 +8725,7 @@ slot47 = function(slot0, slot1)
 	--- BLOCK #10 83-87, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.enQueueSafe
-	slot7 = slot0.questStoryCurtainQueue
+	slot7 = slot0.questTaskTitleQueue
 	slot8 = slot3
 
 	slot4(slot6, slot7, slot8)
@@ -6813,221 +8737,8 @@ slot47 = function(slot0, slot1)
 
 	--- BLOCK #11 88-100, warpins: 7 ---
 	slot3 = {
-		isSwitchTrack = true,
-		refreshAll = true
-	}
-	slot4 = slot1.questData
-	slot4 = slot4.configId
-	slot3.questId = slot4
-	slot4 = slot0.onShowStoryTracingQuest
-	slot3.func = slot4
-	slot3.owner = slot0
-	slot6 = slot0
-	slot4 = slot0.enQueueSafe
-	slot7 = slot0.questStoryTracingQueue
-	slot8 = slot3
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
-
-
-	--- BLOCK #12 101-106, warpins: 1 ---
-	slot2 = slot1.type
-	slot3 = QuestConst
-	slot3 = slot3.QUEST_TRACE_TYPE
-	slot3 = slot3.QUEST
-	--- END OF BLOCK #12 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #13 107-120, warpins: 1 ---
-	slot2 = false
-	slot0.isSwitchTracking = slot2
-	slot2 = QuestUtils
-	slot2 = slot2.isCurtainQuest
-	slot4 = slot1.questData
-	slot4 = slot4.configId
-	slot2 = slot2(slot4)
-	slot3 = slot1.questData
-	slot3 = slot3.state
-	slot4 = QuestConst
-	slot4 = slot4.QUEST_STATE
-	slot4 = slot4.RECEIVED
-	--- END OF BLOCK #13 ---
-
-	if slot3 == slot4 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #14 121-122, warpins: 1 ---
-	--- END OF BLOCK #14 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #15 123-127, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.isQuestTab
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #15 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #16 128-133, warpins: 1 ---
-	slot3 = slot0.isAddCurtainAccept
-	slot4 = slot1.questData
-	slot4 = slot4.configId
-	slot3 = slot3[slot4]
-	--- END OF BLOCK #16 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 134-139, warpins: 1 ---
-	slot3 = slot0.isAddCurtainAccept
-	slot4 = slot1.questData
-	slot4 = slot4.configId
-	slot3 = slot3[slot4]
-	--- END OF BLOCK #17 ---
-
-	if slot3 == nil then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #18 140-147, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.queueContainsQuestId
-	slot6 = slot0.questTaskTitleQueue
-	slot7 = slot1.questData
-	slot7 = slot7.configId
-	slot3 = slot3(slot5, slot6, slot7)
-	--- END OF BLOCK #18 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #19 148-154, warpins: 1 ---
-	slot3 = QuestUtils
-	slot3 = slot3.getTracingQuestId
-	slot3 = slot3()
-	slot4 = slot1.questData
-	slot4 = slot4.configId
-	--- END OF BLOCK #19 ---
-
-	if slot3 == slot4 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #20 155-168, warpins: 1 ---
-	slot3 = slot0.isAddCurtainAccept
-	slot4 = slot1.questData
-	slot4 = slot4.configId
-	slot5 = true
-	slot3[slot4] = slot5
-	slot3 = nil
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.quest
-	slot6 = slot4
-	slot4 = slot4.getHideTransitionAni
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #20 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 169-182, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.quest
-	slot6 = slot4
-	slot4 = slot4.setHideTransitionAni
-	slot7 = false
-
-	slot4(slot6, slot7)
-
-	slot4 = {
-		refreshAll = true
-	}
-	slot5 = slot1.questData
-	slot5 = slot5.configId
-	slot4.questId = slot5
-	slot4.owner = slot0
-	slot3 = slot4
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
-
-
-	--- BLOCK #22 183-188, warpins: 1 ---
-	slot4 = {
-		playCurtainAcceptAnim = true
-	}
-	slot5 = slot1.questData
-	slot5 = slot5.configId
-	slot4.questId = slot5
-	slot4.owner = slot0
-	slot3 = slot4
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 189-193, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.enQueueSafe
-	slot7 = slot0.questTaskTitleQueue
-	slot8 = slot3
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 194-206, warpins: 7 ---
-	slot3 = {
-		isSwitchTrack = true,
-		refreshAll = true
+		refreshAll = true,
+		isSwitchTrack = true
 	}
 	slot4 = slot1.questData
 	slot4 = slot4.configId
@@ -7042,79 +8753,70 @@ slot47 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #24 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
-
-
-	--- BLOCK #25 207-212, warpins: 1 ---
-	slot2 = slot1.type
-	slot3 = QuestConst
-	slot3 = slot3.QUEST_TRACE_TYPE
-	slot3 = slot3.SEC
-	--- END OF BLOCK #25 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #37
-	end
+	return
+	--- END OF BLOCK #11 ---
 
 
-	--- BLOCK #26 213-215, warpins: 1 ---
+
+end
+
+slot15.onQuestTraceChangeQuest = slot49
+
+slot49 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isSpecialGetReward
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #27 216-218, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
 	slot2 = slot1.isNew
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #28 219-226, warpins: 1 ---
+	--- BLOCK #2 7-14, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.queueContainsQuestId
 	slot5 = slot0.questGrowTitleQueue
 	slot6 = slot1.questData
 	slot6 = slot6.configId
 	slot2 = slot2(slot4, slot5, slot6)
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #2 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #29 227-233, warpins: 1 ---
+	--- BLOCK #3 15-21, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.getTracingStoryQuestId
 	slot2 = slot2()
 	slot3 = slot1.questData
 	slot3 = slot3.configId
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #3 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #30 234-244, warpins: 1 ---
+	--- BLOCK #4 22-32, warpins: 1 ---
 	slot2 = false
 	slot0.isSpecialGetReward = slot2
 	slot2 = nil
@@ -7124,16 +8826,16 @@ slot47 = function(slot0, slot1)
 	slot5 = slot3
 	slot3 = slot3.getHideTransitionAni
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #4 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #31 245-258, warpins: 1 ---
+	--- BLOCK #5 33-46, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.quest
@@ -7151,12 +8853,12 @@ slot47 = function(slot0, slot1)
 	slot3.questId = slot4
 	slot3.owner = slot0
 	slot2 = slot3
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #32 259-264, warpins: 1 ---
+	--- BLOCK #6 47-52, warpins: 1 ---
 	slot3 = {
 		playCurtainAcceptAnim = true
 	}
@@ -7165,12 +8867,12 @@ slot47 = function(slot0, slot1)
 	slot3.questId = slot4
 	slot3.owner = slot0
 	slot2 = slot3
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #33 265-276, warpins: 2 ---
+	--- BLOCK #7 53-64, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.enQueueSafe
 	slot6 = slot0.questGrowTitleQueue
@@ -7200,38 +8902,38 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #34 277-279, warpins: 5 ---
+	--- BLOCK #8 65-67, warpins: 5 ---
 	slot2 = slot1.isNew
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #8 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #35 280-286, warpins: 1 ---
+	--- BLOCK #9 68-74, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.isParentQuest
 	slot4 = slot1.questData
 	slot4 = slot4.configId
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #9 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #36 287-293, warpins: 1 ---
+	--- BLOCK #10 75-81, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.startTimer
 
@@ -7275,22 +8977,22 @@ slot47 = function(slot0, slot1)
 	slot2 = false
 	slot0.isHaveCanGetReward = slot2
 
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #37
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #37 294-295, warpins: 6 ---
+	--- BLOCK #11 82-83, warpins: 3 ---
 	return
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot15.onQuestTraceChange = slot47
+slot15.onQuestTraceChangeSec = slot49
 
-slot47 = function(slot0, slot1, slot2)
+slot49 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.isEmpty
@@ -7397,9 +9099,9 @@ slot47 = function(slot0, slot1, slot2)
 
 end
 
-slot15.queueContainsQuestId = slot47
+slot15.queueContainsQuestId = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.getQuestData
@@ -7511,9 +9213,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onQuestRunStateChanged = slot47
+slot15.onQuestRunStateChanged = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.questStoryCurtainQueue
 	slot3 = slot1
@@ -7662,9 +9364,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.checkShowStoryTitleQuest = slot47
+slot15.checkShowStoryTitleQuest = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curtainQuestShowTime
 	--- END OF BLOCK #0 ---
@@ -7724,9 +9426,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingCurtainTitleQuest = slot47
+slot15.isShowingCurtainTitleQuest = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4)
+slot49 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7795,9 +9497,10 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 19-22, warpins: 3 ---
+	--- BLOCK #7 19-23, warpins: 3 ---
 	slot7 = {}
 	slot7.titleBtn = slot1
+	slot7.questId = slot2
 	--- END OF BLOCK #7 ---
 
 	slot6 = if slot6 then
@@ -7807,7 +9510,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #8 23-25, warpins: 1 ---
+	--- BLOCK #8 24-26, warpins: 1 ---
 	slot8 = slot6.taskType
 	--- END OF BLOCK #8 ---
 
@@ -7818,7 +9521,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #9 26-28, warpins: 2 ---
+	--- BLOCK #9 27-29, warpins: 2 ---
 	slot8 = QuestUtils
 	slot8 = slot8.getPageDefaultType
 	slot8 = slot8()
@@ -7827,7 +9530,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 29-35, warpins: 2 ---
+	--- BLOCK #10 30-36, warpins: 2 ---
 	slot7.taskType = slot8
 
 	slot8 = function()
@@ -7853,10 +9556,11 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 		end
 
 
-		--- BLOCK #2 7-10, warpins: 2 ---
-		slot0 = pg
-		slot0 = slot0.getGameString
-		slot2 = "NOT_IN_TRACE_QUEST_TITLE"
+		--- BLOCK #2 7-11, warpins: 2 ---
+		slot0 = QuestUtils
+		slot0 = slot0.getEmptyTracingTitle
+		slot2 = self
+		slot2 = slot2.showTab
 
 		return slot0(slot2)
 
@@ -7865,7 +9569,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 11-14, warpins: 2 ---
+		--- BLOCK #3 12-15, warpins: 2 ---
 		slot0 = QuestUtils
 		slot0 = slot0.getCurtainQuestName
 		slot2 = questId
@@ -7941,14 +9645,14 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #11 36-36, warpins: 1 ---
+	--- BLOCK #11 37-37, warpins: 1 ---
 	slot8 = false
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 37-44, warpins: 2 ---
+	--- BLOCK #12 38-45, warpins: 2 ---
 	slot7.supportInterruptFinishAnim = slot8
 	slot10 = slot0
 	slot8 = slot0.setTitleNameCommon
@@ -7964,9 +9668,9 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot15.setQuestTitleName = slot47
+slot15.setQuestTitleName = slot49
 
-slot47 = function(slot0, slot1, slot2, slot3)
+slot49 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = QuestConst
 	slot4 = slot4.QUEST_TYPE
@@ -8038,7 +9742,7 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	if slot5 == "" then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
@@ -8062,23 +9766,36 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #9 29-33, warpins: 2 ---
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "NOT_IN_TRACE_QUEST_TITLE"
+	--- BLOCK #9 29-36, warpins: 2 ---
+	slot6 = QuestUtils
+	slot6 = slot6.getEmptyTracingTitle
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_HUD_PAGE_TYPE
+	slot8 = slot8.GROW
 	slot6 = slot6(slot8)
 	slot5 = slot6
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 34-47, warpins: 3 ---
+	--- BLOCK #10 37-40, warpins: 1 ---
+	slot6 = QuestUtils
+	slot6 = slot6.getCurChapterPromoteHudTitle
+	slot6 = slot6()
+	slot5 = slot6
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 41-55, warpins: 3 ---
 	slot6 = {
 		supportInterruptFinishAnim = false,
 		supportSpecialTrainAnim = true
 	}
 	slot6.titleBtn = slot1
+	slot6.questId = slot2
 	slot6.taskType = slot4
 
 	slot7 = function()
@@ -8114,15 +9831,15 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	slot7(slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot15.setSpecialTitleName = slot47
+slot15.setSpecialTitleName = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkShowTracingQuestCommon
@@ -8147,9 +9864,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.checkShowTracingQuest = slot47
+slot15.checkShowTracingQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setQuestTitleName
@@ -8171,9 +9888,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15._titleFuncShowTracing = slot47
+slot15._titleFuncShowTracing = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isShowingTracingQuestCommon
@@ -8187,9 +9904,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingTracingQuest = slot47
+slot15.isShowingTracingQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setSpecialTitleName
@@ -8206,9 +9923,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15._titleFuncGrowTitle = slot47
+slot15._titleFuncGrowTitle = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkShowTitleQuestCommon
@@ -8227,9 +9944,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.checkShowGrowTitleQuest = slot47
+slot15.checkShowGrowTitleQuest = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isShowingTitleQuestCommon
@@ -8242,9 +9959,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingGrowTitleQuest = slot47
+slot15.isShowingGrowTitleQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkShowTracingQuestCommon
@@ -8270,9 +9987,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.checkShowGrowTracingQuest = slot47
+slot15.checkShowGrowTracingQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setSpecialTitleName
@@ -8291,9 +10008,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15._titleFuncGrowTracing = slot47
+slot15._titleFuncGrowTracing = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isShowingTracingQuestCommon
@@ -8308,9 +10025,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingGrowTracingQuest = slot47
+slot15.isShowingGrowTracingQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setQuestTitleName
@@ -8327,9 +10044,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15._titleFuncQuestTitle = slot47
+slot15._titleFuncQuestTitle = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkShowTitleQuestCommon
@@ -8348,9 +10065,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.checkShowQuestTitleQuest = slot47
+slot15.checkShowQuestTitleQuest = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isShowingTitleQuestCommon
@@ -8363,9 +10080,9 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingQuestTitleQuest = slot47
+slot15.isShowingQuestTitleQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkShowTracingQuestCommon
@@ -8391,9 +10108,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.checkShowQuestTracingQuest = slot47
+slot15.checkShowQuestTracingQuest = slot49
 
-slot47 = function(slot0, slot1)
+slot49 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setQuestTitleName
@@ -8415,9 +10132,9 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15._titleFuncShowQuestTracing = slot47
+slot15._titleFuncShowQuestTracing = slot49
 
-slot47 = function(slot0)
+slot49 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isShowingTracingQuestCommon
@@ -8432,9 +10149,319 @@ slot47 = function(slot0)
 
 end
 
-slot15.isShowingQuestTracingQuest = slot47
+slot15.isShowingQuestTracingQuest = slot49
+slot49 = "removeSubmittedObjectivesBeforeAdd"
 
-slot47 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = {}
+	slot5 = #slot2
+	slot6 = 1
+	slot7 = -1
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+	--- BLOCK #1 6-9, warpins: 2 ---
+	slot9 = slot2[slot8]
+	slot10 = slot9.questId
+	--- END OF BLOCK #1 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-17, warpins: 1 ---
+	slot10 = QuestCommonUtils
+	slot10 = slot10.getQuestState
+	slot12 = pg
+	slot12 = slot12.me
+	slot13 = slot9.questId
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #2 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-18, warpins: 2 ---
+	slot10 = nil
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-23, warpins: 2 ---
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_STATE
+	slot11 = slot11.SUBMITED
+	--- END OF BLOCK #4 ---
+
+	if slot10 ~= slot11 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 24-28, warpins: 1 ---
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_STATE
+	slot11 = slot11.CLOSE
+	--- END OF BLOCK #5 ---
+
+	if slot10 ~= slot11 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 29-30, warpins: 1 ---
+	slot11 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 31-31, warpins: 2 ---
+	slot11 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 32-34, warpins: 2 ---
+	slot12 = slot9.questId
+	--- END OF BLOCK #8 ---
+
+	if slot12 ~= slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 35-36, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 37-44, warpins: 1 ---
+	slot12 = #slot4
+	slot12 = slot12 + 1
+	slot13 = {
+		isFined = true
+	}
+	slot14 = slot9.questId
+	slot13.questId = slot14
+	slot14 = slot9.objId
+	slot13.objId = slot14
+	slot4[slot12] = slot13
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 45-45, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	for slot8=slot5, slot6, slot7
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #12
+
+	--- BLOCK #12 46-49, warpins: 1 ---
+	slot5 = 1
+	slot6 = #slot4
+	slot7 = 1
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 50-56, warpins: 2 ---
+	slot11 = slot0
+	slot9 = slot0.removeQuestObjective
+	slot12 = slot1
+	slot13 = slot2
+	slot14 = slot4[slot8]
+
+	slot9(slot11, slot12, slot13, slot14)
+
+	--- END OF BLOCK #13 ---
+
+	for slot8=slot5, slot6, slot7
+	LOOP BLOCK #13
+	GO OUT TO BLOCK #14
+
+	--- BLOCK #14 57-57, warpins: 1 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "resolveObjectiveIndex"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot3 = slot2.objId
+	--- END OF BLOCK #3 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 10-12, warpins: 1 ---
+	slot4 = slot2.objcvData
+	--- END OF BLOCK #4 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 13-14, warpins: 1 ---
+	slot4 = slot2.objcvData
+	slot3 = slot4.objId
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 15-18, warpins: 3 ---
+	slot4 = 1
+	slot5 = #slot1
+	slot6 = 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-21, warpins: 2 ---
+	slot8 = slot1[slot7]
+	--- END OF BLOCK #7 ---
+
+	if slot8 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #8 22-25, warpins: 1 ---
+	slot9 = slot8.questId
+	slot10 = slot2.questId
+	--- END OF BLOCK #8 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #9 26-27, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 28-30, warpins: 1 ---
+	slot9 = slot8.objId
+	--- END OF BLOCK #10 ---
+
+	if slot9 == slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 31-32, warpins: 2 ---
+	slot9 = slot7 - 1
+
+	return slot9
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 33-33, warpins: 4 ---
+	--- END OF BLOCK #12 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #13
+
+	--- BLOCK #13 34-35, warpins: 1 ---
+	slot4 = nil
+
+	return slot4
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshTracingQuestObj"
+
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.refreshAll
 	--- END OF BLOCK #0 ---
@@ -8442,24 +10469,244 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot4 = slot3.func
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-10, warpins: 1 ---
 	slot4 = slot3.func
 	slot6 = slot3.owner
 
 	slot4(slot6)
 
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #3 11-13, warpins: 2 ---
+	slot4 = slot3.isObjChange
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-20, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.onRefreshTracingQuestObjChange
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #5 21-23, warpins: 1 ---
+	slot4 = slot3.isObjFined
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 24-30, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.onRefreshTracingQuestObjFinished
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #7 31-33, warpins: 1 ---
+	slot4 = slot3.isObjAdd
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 34-40, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.onRefreshTracingQuestObjAdd
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 41-46, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.onRefreshTracingQuestObjClose
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 47-47, warpins: 5 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshTracingQuestObjChange"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-10, warpins: 1 ---
-	slot4 = slot3.isObjChange
+	--- BLOCK #2 4-10, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.resolveObjectiveIndex
+	slot7 = slot2
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
 
+	--- END OF BLOCK #2 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-11, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-18, warpins: 2 ---
+	slot5 = slot4 + 1
+	slot5 = slot2[slot5]
+	slot6 = slot3.isObjFined
+	slot5.isObjFined = slot6
+	slot6 = slot3.isObjFined
+	--- END OF BLOCK #4 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot6 = true
+	slot5.needPlayFinishAnim = slot6
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 22-23, warpins: 1 ---
+	slot6 = false
+	slot5.isFined = slot6
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 24-28, warpins: 2 ---
+	slot8 = slot1
+	slot6 = slot1.RefreshElement
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshTracingQuestObjFinished"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-6, warpins: 2 ---
+	slot4 = slot3.objcvData
 	--- END OF BLOCK #2 ---
 
 	slot4 = if slot4 then
@@ -8469,151 +10716,40 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 11-12, warpins: 1 ---
+	--- BLOCK #3 7-10, warpins: 1 ---
+	slot4 = slot3.objcvData
+	slot4 = slot4.isOr
 	--- END OF BLOCK #3 ---
 
-	if slot2 == nil then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 13-13, warpins: 1 ---
-	return
-
+	--- BLOCK #4 11-14, warpins: 1 ---
+	slot4 = #slot2
+	slot5 = 1
+	slot6 = -1
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-18, warpins: 2 ---
-	slot4 = slot3.objIndex
-	slot4 = slot4 + 1
-	slot4 = slot2[slot4]
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 19-26, warpins: 1 ---
-	slot4 = slot3.objIndex
-	slot4 = slot4 + 1
-	slot4 = slot2[slot4]
-	slot5 = slot3.isObjFined
-	slot4.isObjFined = slot5
-	slot4 = slot3.isObjFined
-	--- END OF BLOCK #6 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 27-31, warpins: 1 ---
-	slot4 = slot3.objIndex
-	slot4 = slot4 + 1
-	slot4 = slot2[slot4]
-	slot5 = true
-	slot4.needPlayFinishAnim = slot5
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 32-36, warpins: 3 ---
-	slot6 = slot1
-	slot4 = slot1.RefreshElement
-	slot7 = slot3.objIndex
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #9 37-39, warpins: 1 ---
-	slot4 = slot3.isObjFined
-
-	--- END OF BLOCK #9 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #10 40-41, warpins: 1 ---
-	--- END OF BLOCK #10 ---
-
-	if slot2 == nil then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 42-42, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 43-45, warpins: 2 ---
-	slot4 = slot3.objcvData
-	--- END OF BLOCK #12 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #13 46-49, warpins: 1 ---
-	slot4 = slot3.objcvData
-	slot4 = slot4.isOr
-	--- END OF BLOCK #13 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #14 50-53, warpins: 1 ---
-	slot4 = #slot2
-	slot5 = 1
-	slot6 = -1
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 54-57, warpins: 2 ---
+	--- BLOCK #5 15-18, warpins: 2 ---
 	slot8 = slot2[slot7]
 	slot9 = slot8.isOr
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #5 ---
 
 	slot9 = if slot9 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #16 58-64, warpins: 1 ---
+	--- BLOCK #6 19-25, warpins: 1 ---
 	slot9 = slot2[slot7]
 	slot10 = true
 	slot9.isObjFined = slot10
@@ -8623,92 +10759,105 @@ slot47 = function(slot0, slot1, slot2, slot3)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #17 65-65, warpins: 2 ---
-	--- END OF BLOCK #17 ---
+	--- BLOCK #7 26-26, warpins: 2 ---
+	--- END OF BLOCK #7 ---
 
 	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #15
-	GO OUT TO BLOCK #18
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #8
 
-	--- BLOCK #18 66-66, warpins: 1 ---
-	--- END OF BLOCK #18 ---
+	--- BLOCK #8 27-27, warpins: 1 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #19 67-71, warpins: 2 ---
-	slot4 = slot3.objIndex
-	slot4 = slot4 + 1
-	slot4 = slot2[slot4]
-	--- END OF BLOCK #19 ---
+	--- BLOCK #9 28-34, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.resolveObjectiveIndex
+	slot7 = slot2
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #20
+	--- END OF BLOCK #9 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #20 72-76, warpins: 1 ---
-	slot4 = slot3.objIndex
-	slot4 = slot4 + 1
-	slot4 = slot2[slot4]
-	slot5 = true
-	slot4.isObjFined = slot5
-	--- END OF BLOCK #20 ---
+	--- BLOCK #10 35-35, warpins: 1 ---
+	return
 
-	FLOW; TARGET BLOCK #21
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #21 77-81, warpins: 2 ---
-	slot6 = slot1
-	slot4 = slot1.RefreshElement
-	slot7 = slot3.objIndex
+	--- BLOCK #11 36-43, warpins: 2 ---
+	slot5 = slot4 + 1
+	slot5 = slot2[slot5]
+	slot6 = true
+	slot5.isObjFined = slot6
+	slot7 = slot1
+	slot5 = slot1.RefreshElement
+	slot8 = slot4
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #22 82-84, warpins: 1 ---
-	slot4 = slot3.isObjAdd
-	--- END OF BLOCK #22 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #30
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #23 85-86, warpins: 1 ---
-	--- END OF BLOCK #23 ---
+	--- BLOCK #12 44-44, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshTracingQuestObjAdd"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
 
 	if slot2 == nil then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #24 87-88, warpins: 1 ---
+	--- BLOCK #1 3-4, warpins: 1 ---
 	slot2 = {}
 
 	return
 
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #25 89-97, warpins: 2 ---
+	--- BLOCK #2 5-19, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.removeSubmittedObjectivesBeforeAdd
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3.questId
+
+	slot4(slot6, slot7, slot8, slot9)
+
 	slot4 = QuestUtils
 	slot4 = slot4.getReceivedQuestObjectives
 	slot6 = slot3.questId
@@ -8717,12 +10866,12 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	slot5 = 1
 	slot6 = #slot4
 	slot7 = 1
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #26
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #26 98-117, warpins: 2 ---
+	--- BLOCK #3 20-39, warpins: 2 ---
 	slot9 = slot4[slot8]
 	slot10 = true
 	slot9.isNew = slot10
@@ -8741,16 +10890,16 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	slot16 = slot9.questState
 	slot17 = slot1
 	slot10 = slot10(slot12, slot13, slot14, slot15, slot16, slot17)
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #3 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #27 118-126, warpins: 1 ---
+	--- BLOCK #4 40-48, warpins: 1 ---
 	slot10 = table
 	slot10 = slot10.insert
 	slot12 = slot2
@@ -8764,192 +10913,243 @@ slot47 = function(slot0, slot1, slot2, slot3)
 
 	slot10(slot12, slot13)
 
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #28
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #28 127-127, warpins: 2 ---
-	--- END OF BLOCK #28 ---
+	--- BLOCK #5 49-49, warpins: 2 ---
+	--- END OF BLOCK #5 ---
 
 	for slot8=slot5, slot6, slot7
-	LOOP BLOCK #26
-	GO OUT TO BLOCK #29
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
 
-	--- BLOCK #29 128-128, warpins: 1 ---
-	--- END OF BLOCK #29 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
-
-
-	--- BLOCK #30 129-130, warpins: 1 ---
-	--- END OF BLOCK #30 ---
-
-	if slot2 == nil then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #32
-	end
-
-
-	--- BLOCK #31 131-132, warpins: 1 ---
-	slot2 = {}
-
+	--- BLOCK #6 50-50, warpins: 1 ---
 	return
-
-	--- END OF BLOCK #31 ---
-
-	FLOW; TARGET BLOCK #32
-
-
-	--- BLOCK #32 133-136, warpins: 2 ---
-	slot4 = #slot2
-	slot5 = 1
-	slot6 = -1
-	--- END OF BLOCK #32 ---
-
-	FLOW; TARGET BLOCK #33
-
-
-	--- BLOCK #33 137-140, warpins: 2 ---
-	slot8 = slot2[slot7]
-	slot9 = slot8.questId
-	--- END OF BLOCK #33 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #34 141-144, warpins: 1 ---
-	slot9 = slot8.questId
-	slot10 = slot3.questId
-	--- END OF BLOCK #34 ---
-
-	if slot9 ~= slot10 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #37
-	end
-
-
-	--- BLOCK #35 145-151, warpins: 2 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getParentQuestId
-	slot11 = slot8.questId
-	slot9 = slot9(slot11)
-	slot10 = slot3.questId
-	--- END OF BLOCK #35 ---
-
-	if slot9 == slot10 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #44
-	end
-
-
-	--- BLOCK #36 152-154, warpins: 1 ---
-	slot9 = slot3.isFined
-	--- END OF BLOCK #36 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #44
-	end
-
-
-	--- BLOCK #37 155-157, warpins: 2 ---
-	slot9 = slot3.objcvData
-	--- END OF BLOCK #37 ---
-
-	if slot9 ~= nil then
-	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #39
-	end
-
-
-	--- BLOCK #38 158-159, warpins: 1 ---
-	slot9 = slot3.objcvData
-	slot2[slot7] = slot9
-	--- END OF BLOCK #38 ---
-
-	FLOW; TARGET BLOCK #39
-
-
-	--- BLOCK #39 160-162, warpins: 2 ---
-	slot9 = slot3.isObjClose
-	--- END OF BLOCK #39 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #40
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #40 163-165, warpins: 1 ---
-	slot9 = slot2[slot7]
-	slot10 = true
-	slot9.isObjClose = slot10
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 166-168, warpins: 2 ---
-	slot9 = slot3.isFined
-	--- END OF BLOCK #41 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
-
-
-	--- BLOCK #42 169-171, warpins: 1 ---
-	slot9 = slot2[slot7]
-	slot10 = true
-	slot9.isObjFined = slot10
-	--- END OF BLOCK #42 ---
-
-	FLOW; TARGET BLOCK #43
-
-
-	--- BLOCK #43 172-175, warpins: 2 ---
-	slot11 = slot1
-	slot9 = slot1.RefreshElement
-	slot12 = slot7 - 1
-
-	slot9(slot11, slot12)
-
-	--- END OF BLOCK #43 ---
-
-	FLOW; TARGET BLOCK #44
-
-
-	--- BLOCK #44 176-176, warpins: 3 ---
-	--- END OF BLOCK #44 ---
-
-	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #33
-	GO OUT TO BLOCK #45
-
-	--- BLOCK #45 177-177, warpins: 6 ---
-	return
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15.onRefreshTracingQuestObj = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshTracingQuestObjClose"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = {}
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot4 = #slot2
+	slot5 = 1
+	slot6 = -1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-12, warpins: 2 ---
+	slot8 = slot2[slot7]
+	slot9 = slot8.questId
+	--- END OF BLOCK #3 ---
+
+	if slot9 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-16, warpins: 1 ---
+	slot9 = slot8.questId
+	slot10 = slot3.questId
+	--- END OF BLOCK #4 ---
+
+	if slot9 ~= slot10 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-18, warpins: 2 ---
+	slot9 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 19-19, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 20-26, warpins: 2 ---
+	slot10 = QuestUtils
+	slot10 = slot10.getParentQuestId
+	slot12 = slot8.questId
+	slot10 = slot10(slot12)
+	slot11 = slot3.questId
+	--- END OF BLOCK #7 ---
+
+	if slot10 == slot11 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 27-28, warpins: 1 ---
+	slot10 = slot3.isFined
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #9 29-30, warpins: 1 ---
+	slot10 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 31-31, warpins: 0 ---
+	slot10 = true
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 32-33, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 34-35, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #13 36-38, warpins: 2 ---
+	slot11 = slot3.objcvData
+	--- END OF BLOCK #13 ---
+
+	if slot11 ~= nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 39-40, warpins: 1 ---
+	slot11 = slot3.objcvData
+	slot2[slot7] = slot11
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 41-43, warpins: 2 ---
+	slot11 = slot3.isObjClose
+	--- END OF BLOCK #15 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 44-46, warpins: 1 ---
+	slot11 = slot2[slot7]
+	slot12 = true
+	slot11.isObjClose = slot12
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 47-49, warpins: 2 ---
+	slot11 = slot3.isFined
+	--- END OF BLOCK #17 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 50-52, warpins: 1 ---
+	slot11 = slot2[slot7]
+	slot12 = true
+	slot11.isObjFined = slot12
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 53-56, warpins: 2 ---
+	slot13 = slot1
+	slot11 = slot1.RefreshElement
+	slot14 = slot7 - 1
+
+	slot11(slot13, slot14)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 57-57, warpins: 2 ---
+	--- END OF BLOCK #20 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #21
+
+	--- BLOCK #21 58-58, warpins: 1 ---
+	return
+	--- END OF BLOCK #21 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "getObjectivesFieldByList"
+
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.storyTracingList
 	--- END OF BLOCK #0 ---
@@ -9044,71 +11244,198 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.getObjectivesFieldByList = slot47
+slot15[slot49] = slot50
+slot49 = "getTracingListAndObjectives"
 
-slot47 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.STORY
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	if slot1 == slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot2 = slot0.storyTracingList
+	slot3 = slot0.curObjectives
+
+	return slot2, slot3
+
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 5-5, warpins: 2 ---
-	return
-
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.GROW
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 6-11, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.getObjectivesFieldByList
-	slot7 = slot1
-	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #3 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #4
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #4 12-14, warpins: 1 ---
-	slot5 = slot0[slot4]
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot2 = slot0.growTracingList
+	slot3 = slot0.curSecObjectives
+
+	return slot2, slot3
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 19-23, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.QUEST
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
+	if slot1 == slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 15-15, warpins: 2 ---
-	slot5 = slot2
+	--- BLOCK #5 24-26, warpins: 1 ---
+	slot2 = slot0.questTracingList
+	slot3 = slot0.curThrObjectives
 
+	return slot2, slot3
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 16-17, warpins: 2 ---
+	--- BLOCK #6 27-27, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "removeSubmittedQuestObjective"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getTracingListAndObjectives
+	slot6 = slot1
+	slot3, slot4 = slot3(slot5, slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-15, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.removeQuestObjective
+	slot8 = slot3
+	slot9 = slot4
+	slot10 = {
+		isFined = true
+	}
+	slot10.questId = slot2
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "removeQuestObjective"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #2 4-5, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-11, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getObjectivesFieldByList
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #3 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-12, warpins: 2 ---
+	slot4 = nil
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-14, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-17, warpins: 1 ---
+	slot5 = slot0[slot4]
 	--- END OF BLOCK #6 ---
 
 	slot5 = if not slot5 then
@@ -9118,150 +11445,312 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 18-18, warpins: 1 ---
-	return
+	--- BLOCK #7 18-18, warpins: 2 ---
+	slot5 = slot2
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 19-26, warpins: 2 ---
-	slot8 = slot1
-	slot6 = slot1.GetAllButtons
-	slot6 = slot6(slot8)
-	slot7 = 0
-	slot8 = slot6.Length
-	slot8 = slot8 - 1
-	slot9 = 1
+	--- BLOCK #8 19-20, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #9 27-32, warpins: 2 ---
+	--- BLOCK #9 21-21, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #10 22-24, warpins: 1 ---
+	slot6 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-5, warpins: 1 ---
+		slot1 = slot0.questId
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 6-7, warpins: 2 ---
+		slot1 = false
+
+		return slot1
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 8-12, warpins: 2 ---
+		slot1 = slot0.questId
+		slot2 = data
+		slot2 = slot2.questId
+		--- END OF BLOCK #3 ---
+
+		if slot1 ~= slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #4 13-16, warpins: 1 ---
+		slot1 = data
+		slot1 = slot1.isFined
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 17-24, warpins: 1 ---
+		slot1 = QuestUtils
+		slot1 = slot1.getParentQuestId
+		slot3 = slot0.questId
+		slot1 = slot1(slot3)
+		slot2 = data
+		slot2 = slot2.questId
+		--- END OF BLOCK #5 ---
+
+		if slot1 ~= slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 25-26, warpins: 1 ---
+		slot1 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 27-27, warpins: 2 ---
+		slot1 = true
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 28-29, warpins: 3 ---
+		--- END OF BLOCK #8 ---
+
+		slot2 = if slot1 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #9 30-33, warpins: 1 ---
+		slot2 = data
+		slot2 = slot2.isFined
+		--- END OF BLOCK #9 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #10 34-37, warpins: 1 ---
+		slot2 = data
+		slot2 = slot2.objId
+		--- END OF BLOCK #10 ---
+
+		if slot2 ~= nil then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #13
+		end
+
+
+		--- BLOCK #11 38-42, warpins: 1 ---
+		slot2 = slot0.objId
+		slot3 = data
+		slot3 = slot3.objId
+		--- END OF BLOCK #11 ---
+
+		if slot2 ~= slot3 then
+		JUMP TO BLOCK #12
+		else
+		JUMP TO BLOCK #13
+		end
+
+
+		--- BLOCK #12 43-44, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #12 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+		--- BLOCK #13 45-45, warpins: 2 ---
+		slot2 = true
+
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 46-46, warpins: 4 ---
+		return slot2
+		--- END OF BLOCK #14 ---
+
+
+
+	end
+
+	--- END OF BLOCK #10 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 25-29, warpins: 1 ---
+	slot7 = slot1.itemCount
+	slot7 = slot7 - 1
+	slot8 = 0
+	slot9 = -1
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 30-38, warpins: 2 ---
 	slot13 = slot1
 	slot11 = slot1.GetData
 	slot14 = slot10
 	slot11 = slot11(slot13, slot14)
-	--- END OF BLOCK #9 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #10 33-36, warpins: 1 ---
-	slot12 = slot11.questId
-	slot13 = slot3.questId
-	--- END OF BLOCK #10 ---
-
-	if slot12 == slot13 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #11 37-40, warpins: 1 ---
-	slot12 = slot11.objId
-	slot13 = slot3.objId
-	--- END OF BLOCK #11 ---
-
-	if slot12 == slot13 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #12 41-44, warpins: 1 ---
-	slot12 = 1
-	slot13 = #slot5
-	slot14 = 1
+	slot12 = slot6
+	slot14 = slot11
+	slot12 = slot12(slot14)
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
+	slot12 = if slot12 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #13 45-49, warpins: 2 ---
-	slot16 = slot5[slot15]
-	slot16 = slot16.questId
-	slot17 = slot3.questId
+	--- BLOCK #13 39-42, warpins: 1 ---
+	slot14 = slot1
+	slot12 = slot1.RemoveElement
+	slot15 = slot10
+
+	slot12(slot14, slot15)
+
 	--- END OF BLOCK #13 ---
 
-	if slot16 == slot17 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 50-54, warpins: 1 ---
-	slot16 = slot5[slot15]
-	slot16 = slot16.objId
-	slot17 = slot3.objId
+	--- BLOCK #14 43-43, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
-	if slot16 == slot17 then
-	JUMP TO BLOCK #15
+	for slot10=slot7, slot8, slot9
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #15
+
+	--- BLOCK #15 44-47, warpins: 2 ---
+	slot7 = #slot5
+	slot8 = 1
+	slot9 = -1
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 48-53, warpins: 2 ---
+	slot11 = slot5[slot10]
+	slot12 = slot6
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #16 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #15 55-64, warpins: 1 ---
-	slot16 = table
-	slot16 = slot16.remove
-	slot18 = slot5
-	slot19 = slot15
+	--- BLOCK #17 54-58, warpins: 1 ---
+	slot12 = table
+	slot12 = slot12.remove
+	slot14 = slot5
+	slot15 = slot10
 
-	slot16(slot18, slot19)
+	slot12(slot14, slot15)
 
-	slot18 = slot1
-	slot16 = slot1.RemoveElement
-	slot19 = slot10
-
-	slot16(slot18, slot19)
-
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
-
-
-	--- BLOCK #16 65-65, warpins: 2 ---
-	--- END OF BLOCK #16 ---
-
-	for slot15=slot12, slot13, slot14
-	LOOP BLOCK #13
-	GO OUT TO BLOCK #17
-
-	--- BLOCK #17 66-66, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 67-67, warpins: 3 ---
+	--- BLOCK #18 59-59, warpins: 2 ---
 	--- END OF BLOCK #18 ---
 
 	for slot10=slot7, slot8, slot9
-	LOOP BLOCK #9
+	LOOP BLOCK #16
 	GO OUT TO BLOCK #19
 
-	--- BLOCK #19 68-68, warpins: 3 ---
+	--- BLOCK #19 60-61, warpins: 1 ---
 	return
 	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 62-62, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 63-63, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot15.removeQuestObjective = slot47
+slot15[slot49] = slot50
+slot49 = "onShowStoryTracingQuest"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.questStoryTracingQueue
@@ -9316,9 +11805,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onShowStoryTracingQuest = slot47
+slot15[slot49] = slot50
+slot49 = "onShowGrowTracingQuest"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.questGrowTracingQueue
@@ -9373,9 +11863,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onShowGrowTracingQuest = slot47
+slot15[slot49] = slot50
+slot49 = "onShowQuestTracingQuest"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot0.questTaskTracingQueue
@@ -9430,9 +11921,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onShowQuestTracingQuest = slot47
+slot15[slot49] = slot50
+slot49 = "onShowTracingQuestCommon"
 
-slot47 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -9715,9 +12207,10 @@ slot47 = function(slot0, slot1, slot2)
 
 end
 
-slot15.onShowTracingQuestCommon = slot47
+slot15[slot49] = slot50
+slot49 = "refreshQuestTitleByTab"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isGrowTab
@@ -9848,9 +12341,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.refreshQuestTitleByTab = slot47
+slot15[slot49] = slot50
+slot49 = "enQueueSafe"
 
-slot47 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.isFull
@@ -9875,23 +12369,330 @@ slot47 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-13, warpins: 2 ---
+	--- BLOCK #2 9-15, warpins: 2 ---
 	slot5 = slot1
 	slot3 = slot1.enQueue
 	slot6 = slot2
 
 	slot3(slot5, slot6)
 
-	return
+	slot3 = slot0.questStoryTracingQueue
 	--- END OF BLOCK #2 ---
+
+	if slot1 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot3 = slot0.questGrowTracingQueue
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-21, warpins: 1 ---
+	slot3 = slot0.questTaskTracingQueue
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-24, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.startTracingQueueUpdate
+
+	slot3(slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-25, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15.enQueueSafe = slot47
+slot15[slot49] = slot50
+slot49 = "getActiveTracingQueue"
 
-slot47 = function(slot0, slot1, slot2)
+slot50 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isGrowTab
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = slot0.questGrowTracingQueue
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isQuestTab
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-15, warpins: 1 ---
+	slot1 = slot0.questTaskTracingQueue
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-17, warpins: 3 ---
+	slot1 = slot0.questStoryTracingQueue
+
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "checkShowActiveTracingQuest"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isGrowTab
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkShowGrowTracingQuest
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isQuestTab
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkShowQuestTracingQuest
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 19-21, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkShowTracingQuest
+
+	slot1(slot3)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-22, warpins: 3 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "startTracingQueueUpdate"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.tracingQueueUpdateTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-13, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.startTimer
+
+	slot4 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.getActiveTracingQueue
+		slot0 = slot0(slot2)
+		slot3 = slot0
+		slot1 = slot0.isEmpty
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 10-19, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.killTimer
+		slot4 = self
+		slot4 = slot4.tracingQueueUpdateTimer
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot2 = nil
+		slot1.tracingQueueUpdateTimer = slot2
+
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 20-23, warpins: 2 ---
+		slot1 = self
+		slot1 = slot1.objectReference
+		--- END OF BLOCK #2 ---
+
+		if slot1 ~= nil then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 24-29, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.isShowingCurtainQuest
+		slot1 = slot1(slot3)
+
+		--- END OF BLOCK #3 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 30-30, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 31-35, warpins: 2 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.checkShowActiveTracingQuest
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot5 = 0.05
+	slot6 = true
+	slot1 = slot1(slot3, slot4, slot5, slot6)
+	slot0.tracingQueueUpdateTimer = slot1
+
+	return
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTitleNameCommon"
+
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot1.titleBtn
 	slot6 = slot0
@@ -9928,327 +12729,564 @@ slot47 = function(slot0, slot1, slot2)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #3 17-25, warpins: 1 ---
-	slot5 = slot1.getNameFunc
-	slot5 = slot5()
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot4.textTitleUSDFText
-	slot9 = slot5
+	--- BLOCK #3 17-24, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.setTitleNameText
+	slot8 = slot1
+	slot9 = slot4
+	slot10 = slot3
 
-	slot6(slot8, slot9)
+	slot5(slot7, slot8, slot9, slot10)
 
 	--- END OF BLOCK #3 ---
 
-	if slot5 ~= "" then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 26-33, warpins: 1 ---
-	slot8 = slot3
-	slot6 = slot3.SetActive
-	slot9 = true
-
-	slot6(slot8, slot9)
-
-	slot6 = slot1.pathsFunc
-	slot6 = slot6()
+	--- BLOCK #4 25-27, warpins: 1 ---
+	slot5 = slot2.playCurtainAcceptAnim
 	--- END OF BLOCK #4 ---
 
-	slot6 = if slot6 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 34-39, warpins: 1 ---
-	slot7 = slot4.keyHotKeyContent
-	slot9 = slot7
-	slot7 = slot7.SetHotKeyPaths
-	slot10 = slot6
+	--- BLOCK #5 28-34, warpins: 1 ---
+	slot5 = slot0.rootUComponent
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "QuestState"
+	slot9 = 3
 
-	slot7(slot9, slot10)
+	slot5(slot7, slot8, slot9)
 
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 40-43, warpins: 1 ---
-	slot8 = slot3
-	slot6 = slot3.SetActive
-	slot9 = false
+	--- BLOCK #6 35-40, warpins: 2 ---
+	slot5 = slot0.rootUComponent
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "QuestState"
+	slot9 = 2
 
-	slot6(slot8, slot9)
+	slot5(slot7, slot8, slot9)
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 44-45, warpins: 3 ---
+	--- BLOCK #7 41-46, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.playTitleStateAnim
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+
+	slot5(slot7, slot8, slot9, slot10)
+
 	--- END OF BLOCK #7 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #10
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 46-48, warpins: 1 ---
-	slot6 = slot2.playCurtainAcceptAnim
+	--- BLOCK #8 47-47, warpins: 2 ---
+	return
 	--- END OF BLOCK #8 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #9
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTitleNameText"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = slot1.getNameFunc
+	slot4 = slot4()
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #9 49-55, warpins: 1 ---
-	slot6 = slot0.rootUComponent
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot4 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot2.textTitleUSDFText
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #2 ---
+
+	if slot4 ~= "" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 13-20, warpins: 1 ---
+	slot7 = slot3
+	slot5 = slot3.SetActive
+	slot8 = true
+
+	slot5(slot7, slot8)
+
+	slot5 = slot1.pathsFunc
+	slot5 = slot5()
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-25, warpins: 1 ---
+	slot6 = slot2.keyHotKeyContent
 	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestState"
-	slot10 = 3
+	slot6 = slot6.SetHotKeyPaths
+	slot9 = slot5
 
-	slot6(slot8, slot9, slot10)
+	slot6(slot8, slot9)
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-33, warpins: 2 ---
+	slot6 = slot2.closeTag
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	slot6 = slot1.questId
+	--- END OF BLOCK #5 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 34-39, warpins: 1 ---
+	slot6 = QuestUtils
+	slot6 = slot6.hasCloseCondTimeToken
+	slot8 = slot1.questId
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #6 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 40-45, warpins: 1 ---
+	slot6 = slot2.closeTag
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = true
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 46-49, warpins: 1 ---
+	slot7 = slot3
+	slot5 = slot3.SetActive
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 50-50, warpins: 4 ---
+	return
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 56-61, warpins: 2 ---
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestState"
-	slot10 = 2
+end
 
-	slot6(slot8, slot9, slot10)
+slot15[slot49] = slot50
+slot49 = "playTitleStateAnim"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-6, warpins: 2 ---
+	slot4 = slot2.playCurtainAcceptAnim
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 7-12, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.playTitleAnimCurtainAccept
+	slot7 = slot1
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #4 13-15, warpins: 1 ---
+	slot4 = slot2.playCurtainFinishAnim
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 16-21, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.playTitleAnimCurtainFinish
+	slot7 = slot1
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot4 = slot2.playSpecialTrainAnim
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 25-27, warpins: 1 ---
+	slot4 = slot1.supportSpecialTrainAnim
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 28-33, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.playTitleAnimSpecialTrain
+	slot7 = slot1
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #9 34-36, warpins: 2 ---
+	slot4 = slot2.playInterruptAnim
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 37-41, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.playTitleAnimInterrupt
+	slot7 = slot1
+
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #11 62-63, warpins: 2 ---
+	--- BLOCK #11 42-44, warpins: 1 ---
+	slot4 = slot2.playInterruptFinishAnim
 	--- END OF BLOCK #11 ---
 
-	slot2 = if slot2 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 64-66, warpins: 1 ---
-	slot6 = slot2.playCurtainAcceptAnim
+	--- BLOCK #12 45-47, warpins: 1 ---
+	slot4 = slot1.supportInterruptFinishAnim
 	--- END OF BLOCK #12 ---
 
-	slot6 = if slot6 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 67-97, warpins: 1 ---
-	curtainQuestShowTimeSpan = 2
-	questTracingShowTimeSpan = 2
-	slot6 = slot0.questTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "IconType"
-	slot10 = 1
+	--- BLOCK #13 48-52, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.playTitleAnimInterruptFinish
+	slot7 = slot1
+	slot8 = slot3
 
-	slot6(slot8, slot9, slot10)
+	slot4(slot6, slot7, slot8)
 
-	slot6 = slot0.questTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "TaskType"
-	slot10 = slot1.taskType
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.questTabTextNameUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "NEW_QUEST"
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestState"
-	slot10 = 1
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = slot1.refreshCallback
 	--- END OF BLOCK #13 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 98-99, warpins: 1 ---
-	slot6 = slot1.refreshCallback
-
-	slot6()
-
+	--- BLOCK #14 53-53, warpins: 7 ---
+	return
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 100-108, warpins: 2 ---
-	slot8 = slot0
-	slot6 = slot0.playTitleAnim
-	slot9 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
-	slot10 = slot3
-	slot11 = questTracingShowTimeSpan
-	slot12 = true
-	slot13 = nil
+end
 
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+slot15[slot49] = slot50
+slot49 = "playTitleAnimCurtainAccept"
 
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #16 109-111, warpins: 1 ---
-	slot6 = slot2.playCurtainFinishAnim
-	--- END OF BLOCK #16 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 112-148, warpins: 1 ---
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-31, warpins: 1 ---
 	curtainQuestShowTimeSpan = 2
 	questTracingShowTimeSpan = 2
-	slot6 = slot0.questTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "IconType"
-	slot10 = 0
+	slot3 = slot0.questTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "IconType"
+	slot7 = 1
 
-	slot6(slot8, slot9, slot10)
+	slot3(slot5, slot6, slot7)
 
-	slot6 = slot0.questTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "TaskType"
-	slot10 = slot1.taskType
+	slot3 = slot0.questTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "TaskType"
+	slot7 = slot1.taskType
 
-	slot6(slot8, slot9, slot10)
+	slot3(slot5, slot6, slot7)
 
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.questTabTextNameUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "DISPATCH_MAP_CONDITION_3"
-	MULTRES = slot9(slot11)
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.questTabTextNameUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "NEW_QUEST"
+	MULTRES = slot6(slot8)
 
-	slot6(slot8, MULTRES)
+	slot3(slot5, MULTRES)
 
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestState"
-	slot10 = 0
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "QuestState"
+	slot7 = 1
 
-	slot6(slot8, slot9, slot10)
+	slot3(slot5, slot6, slot7)
 
-	slot8 = slot0
-	slot6 = slot0.playTitleAnim
-	slot9 = "SFX_UI_Event_HUDQuest_OverallCompleted"
-	slot10 = slot3
-	slot11 = curtainQuestShowTimeSpan
-	slot12 = true
-	slot13 = nil
+	slot3 = slot1.refreshCallback
+	--- END OF BLOCK #0 ---
 
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
-
-	--- END OF BLOCK #17 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #18 149-151, warpins: 1 ---
-	slot6 = slot2.playSpecialTrainAnim
-	--- END OF BLOCK #18 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #19
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #19 152-154, warpins: 1 ---
-	slot6 = slot1.supportSpecialTrainAnim
-	--- END OF BLOCK #19 ---
+	--- BLOCK #1 32-33, warpins: 1 ---
+	slot3 = slot1.refreshCallback
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
+	slot3()
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #20 155-177, warpins: 1 ---
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestStateSpecial"
-	slot10 = 2
+	--- BLOCK #2 34-42, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.playTitleAnim
+	slot6 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
+	slot7 = slot2
+	slot8 = questTracingShowTimeSpan
+	slot9 = true
+	slot10 = nil
 
-	slot6(slot8, slot9, slot10)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
 
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestStateSpecial"
-	slot10 = 1
+	return
+	--- END OF BLOCK #2 ---
 
-	slot6(slot8, slot9, slot10)
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "playTitleAnimCurtainFinish"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-37, warpins: 1 ---
+	curtainQuestShowTimeSpan = 2
+	questTracingShowTimeSpan = 2
+	slot3 = slot0.questTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "IconType"
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.questTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "TaskType"
+	slot7 = slot1.taskType
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.questTabTextNameUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "DISPATCH_MAP_CONDITION_3"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "QuestState"
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.playTitleAnim
+	slot6 = "SFX_UI_Event_HUDQuest_OverallCompleted"
+	slot7 = slot2
+	slot8 = curtainQuestShowTimeSpan
+	slot9 = true
+	slot10 = nil
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "playTitleAnimSpecialTrain"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-23, warpins: 1 ---
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "QuestStateSpecial"
+	slot7 = 2
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "QuestStateSpecial"
+	slot7 = 1
+
+	slot3(slot5, slot6, slot7)
 
 	curtainQuestShowTimeSpan = 1.2
 	questTracingShowTimeSpan = 1.2
-	slot8 = slot0
-	slot6 = slot0.playTitleAnim
-	slot9 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
-	slot10 = slot3
-	slot11 = curtainQuestShowTimeSpan
-	slot12 = false
+	slot5 = slot0
+	slot3 = slot0.playTitleAnim
+	slot6 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
+	slot7 = slot2
+	slot8 = curtainQuestShowTimeSpan
+	slot9 = false
 
-	slot13 = function()
+	slot10 = function()
 		--- BLOCK #0 1-3, warpins: 1 ---
 		curtainQuestShowTimeSpan = 1.1
 		questTracingShowTimeSpan = 1.1
@@ -10260,176 +13298,150 @@ slot47 = function(slot0, slot1, slot2)
 
 	end
 
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
 
-	--- END OF BLOCK #20 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #21 178-180, warpins: 2 ---
-	slot6 = slot2.playInterruptAnim
-	--- END OF BLOCK #21 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 181-214, warpins: 1 ---
-	slot6 = slot0.questAddTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "IconType"
-	slot10 = 1
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = slot0.questAddTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "TaskType"
-	slot10 = slot1.taskType
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.questAddTextNameUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "NEW_QUEST"
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestState"
-	slot10 = 1
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = pg
-	slot6 = slot6.game
-	slot6 = slot6.audio
-	slot8 = slot6
-	slot6 = slot6.triggerEvent
-	slot9 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
-
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #22 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
-
-
-	--- BLOCK #23 215-217, warpins: 1 ---
-	slot6 = slot2.playInterruptFinishAnim
-	--- END OF BLOCK #23 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #24 218-220, warpins: 1 ---
-	slot6 = slot1.supportInterruptFinishAnim
-	--- END OF BLOCK #24 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 221-270, warpins: 1 ---
-	curtainQuestShowTimeSpan = 1.2
-	questTracingShowTimeSpan = 1.2
-	slot6 = slot0.questAddTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "IconType"
-	slot10 = 0
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = slot0.questAddTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "TaskType"
-	slot10 = slot1.taskType
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.questAddTextNameUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "DISPATCH_MAP_CONDITION_3"
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	slot6 = slot0.questTabStateUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "IconType"
-	slot10 = 0
-
-	slot6(slot8, slot9, slot10)
-
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.questTabTextNameUSDFText
-	slot9 = pg
-	slot9 = slot9.getGameString
-	slot11 = "DISPATCH_MAP_CONDITION_3"
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	slot6 = slot0.rootUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "QuestState"
-	slot10 = 1
-
-	slot6(slot8, slot9, slot10)
-
-	slot8 = slot0
-	slot6 = slot0.playTitleAnim
-	slot9 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
-	slot10 = slot3
-	slot11 = curtainQuestShowTimeSpan
-	slot12 = true
-	slot13 = nil
-
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
-
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 271-271, warpins: 9 ---
 	return
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot15.setTitleNameCommon = slot47
+slot15[slot49] = slot50
+slot49 = "playTitleAnimInterrupt"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-34, warpins: 1 ---
+	slot2 = slot0.questAddTabStateUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "IconType"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.questAddTabStateUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "TaskType"
+	slot6 = slot1.taskType
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.questAddTextNameUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "NEW_QUEST"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "QuestState"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.triggerEvent
+	slot5 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "playTitleAnimInterruptFinish"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-51, warpins: 1 ---
+	curtainQuestShowTimeSpan = 1.2
+	questTracingShowTimeSpan = 1.2
+	slot3 = slot0.questAddTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "IconType"
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.questAddTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "TaskType"
+	slot7 = slot1.taskType
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.questAddTextNameUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "DISPATCH_MAP_CONDITION_3"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.questTabStateUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "IconType"
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.questTabTextNameUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "DISPATCH_MAP_CONDITION_3"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "QuestState"
+	slot7 = 1
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.playTitleAnim
+	slot6 = "SFX_UI_Event_HUDQuest_SpecialAppearance"
+	slot7 = slot2
+	slot8 = curtainQuestShowTimeSpan
+	slot9 = true
+	slot10 = nil
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "playTitleAnim"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.game
@@ -10527,59 +13539,78 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot15.playTitleAnim = slot47
+slot15[slot49] = slot50
+slot49 = "setTrackHintCommon"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot6 = slot0.curObjcvData
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot6 = if not slot6 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 3-7, warpins: 1 ---
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_HUD_PAGE_TYPE
+	slot6 = slot6.STORY
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #44
-
-
-	--- BLOCK #2 5-11, warpins: 1 ---
-	slot7 = slot0.rootUComponent
-	slot9 = slot7
-	slot7 = slot7.TryGetCurrentPage
-	slot10 = "tips"
-	slot7, slot8 = slot7(slot9, slot10)
-	--- END OF BLOCK #2 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #3
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 12-13, warpins: 1 ---
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_HUD_PAGE_TYPE
+	slot6 = slot6.QUEST
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-16, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.getTrackObjcvData
+	slot10 = slot6
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #3 ---
 
-	if slot8 == 1 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 14-14, warpins: 1 ---
+	--- BLOCK #4 17-22, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.hideTrackHintButton
+	slot11 = slot6
+	slot12 = slot1
+
+	slot8(slot10, slot11, slot12)
+
+	return
+
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #45
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-17, warpins: 2 ---
-	slot9 = slot6.isEmptyTracing
+	--- BLOCK #5 23-29, warpins: 2 ---
+	slot8 = slot0.rootUComponent
+	slot10 = slot8
+	slot8 = slot8.TryGetCurrentPage
+	slot11 = "Tips"
+	slot8, slot9 = slot8(slot10, slot11)
+
 	--- END OF BLOCK #5 ---
 
 	slot9 = if slot9 then
@@ -10589,79 +13620,164 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	end
 
 
-	--- BLOCK #6 18-19, warpins: 1 ---
+	--- BLOCK #6 30-31, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	slot9 = if not slot5 then
+	if slot9 == 1 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 20-20, warpins: 1 ---
-	slot9 = slot4
+	--- BLOCK #7 32-32, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 21-22, warpins: 3 ---
+	--- BLOCK #8 33-35, warpins: 3 ---
+	slot10 = slot7.isEmptyTracing
 	--- END OF BLOCK #8 ---
 
-	slot3 = if slot3 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 23-25, warpins: 1 ---
-	slot10 = 0
+	--- BLOCK #9 36-37, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	if slot3 <= slot10 then
+	slot10 = if not slot5 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 26-27, warpins: 2 ---
+	--- BLOCK #10 38-38, warpins: 1 ---
+	slot10 = slot4
 	--- END OF BLOCK #10 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #11
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 39-40, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 41-43, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #12 ---
+
+	if slot3 <= slot11 then
+	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 28-45, warpins: 1 ---
-	slot12 = slot0
-	slot10 = slot0.showTrackHintBtn
-	slot13 = slot5
-	slot14 = slot4
+	--- BLOCK #13 44-54, warpins: 2 ---
+	slot13 = slot0
+	slot11 = slot0.setTrackHintEmptyState
+	slot14 = slot1
+	slot15 = slot2
+	slot16 = slot6
+	slot17 = slot4
+	slot18 = slot5
+	slot19 = slot7
+	slot20 = slot10
 
-	slot10(slot12, slot13, slot14)
+	slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20)
 
-	slot10 = pg
-	slot10 = slot10.global
-	slot10 = slot10.prefsCacheUtils
-	slot12 = slot10
-	slot10 = slot10.getBool
-	slot13 = "HudV2Enable"
-	slot14 = false
-	slot10 = slot10(slot12, slot13, slot14)
+	return
 
-	slot11 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 55-73, warpins: 2 ---
+	slot13 = slot0
+	slot11 = slot0.buildTrackHintContext
+	slot14 = slot3
+	slot15 = slot1
+	slot16 = slot4
+	slot17 = slot5
+	slot18 = slot7
+	slot11 = slot11(slot13, slot14, slot15, slot16, slot17, slot18)
+	slot14 = slot0
+	slot12 = slot0.showTrackHintByCtx
+	slot15 = slot1
+	slot16 = slot2
+	slot17 = slot6
+	slot18 = slot4
+	slot19 = slot5
+	slot20 = slot11
+	slot21 = slot10
+
+	slot12(slot14, slot15, slot16, slot17, slot18, slot19, slot20, slot21)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTrackHintEmptyState"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 3-22, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.showTrackHintBtn
+	slot11 = slot5
+	slot12 = slot4
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot1
+	slot8 = slot1.TryChangePage
+	slot11 = "TrackType"
+	slot12 = 0
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot0
+	slot8 = slot0.setTrackButton
+	slot11 = slot3
+	slot12 = slot1
+
+	slot8(slot10, slot11, slot12)
+
+	slot8 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.openQuest
-		slot3 = isHudV2Enable
 
-		slot0(slot2, slot3)
+		slot0(slot2)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -10670,344 +13786,443 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot1.luaClick = slot11
-	slot11 = slot6.hint
-	--- END OF BLOCK #11 ---
+	slot1.luaClick = slot8
+	slot8 = slot6.hint
+	--- END OF BLOCK #1 ---
 
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #12
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #12 46-49, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "QUEST_TRACK_TEXT"
-	slot11 = slot11(slot13)
-	--- END OF BLOCK #12 ---
+	--- BLOCK #2 23-26, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "QUEST_TRACK_TEXT"
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 50-66, warpins: 2 ---
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot2.traceText
-	slot15 = slot11
-
-	slot12(slot14, slot15)
-
-	slot14 = slot0
-	slot12 = slot0.enableTraceQuestBinding
-	slot15 = slot1
-	slot16 = slot5
-	slot17 = slot4
-
-	slot12(slot14, slot15, slot16, slot17)
-
-	slot12 = slot2.keyHotKeyContent
-	slot14 = slot12
-	slot12 = slot12.SetHotKeyPaths
-	slot15 = "Hud/TrackOpenSpecial"
-
-	slot12(slot14, slot15)
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #14 67-68, warpins: 2 ---
-	return
+	--- BLOCK #3 27-43, warpins: 2 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot2.traceText
+	slot12 = slot8
 
-	--- END OF BLOCK #14 ---
+	slot9(slot11, slot12)
 
-	FLOW; TARGET BLOCK #15
+	slot11 = slot0
+	slot9 = slot0.enableTraceQuestBinding
+	slot12 = slot1
+	slot13 = slot5
+	slot14 = slot4
 
+	slot9(slot11, slot12, slot13, slot14)
 
-	--- BLOCK #15 69-78, warpins: 2 ---
-	slot12 = slot0
-	slot10 = slot0.buildTrackHintContext
-	slot13 = slot3
-	slot14 = slot1
-	slot15 = slot4
-	slot16 = slot5
-	slot10 = slot10(slot12, slot13, slot14, slot15, slot16)
-	slot11 = slot10.isShowPathfinding
-	--- END OF BLOCK #15 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #16 79-81, warpins: 1 ---
-	slot11 = slot10.isShowPlayDialogue
-	--- END OF BLOCK #16 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #17 82-84, warpins: 1 ---
-	slot11 = slot10.isShowSourceBtn
-	--- END OF BLOCK #17 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #18 85-87, warpins: 1 ---
-	slot11 = slot10.isQuitTip
-	--- END OF BLOCK #18 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #19 88-90, warpins: 1 ---
-	slot11 = slot10.isReDoQuestComplete
-	--- END OF BLOCK #19 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #20 91-93, warpins: 1 ---
-	slot11 = slot10.isReceiveNpcTarget
-	--- END OF BLOCK #20 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 94-94, warpins: 1 ---
+	slot9 = slot2.keyHotKeyContent
 	slot11 = slot9
-	--- END OF BLOCK #21 ---
+	slot9 = slot9.SetHotKeyPaths
+	slot12 = "Hud/TrackOpenSpecial"
 
-	FLOW; TARGET BLOCK #22
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #22 95-96, warpins: 7 ---
-	--- END OF BLOCK #22 ---
+	--- BLOCK #4 44-48, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.hideTrackHintButton
+	slot11 = slot3
+	slot12 = slot1
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 49-50, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "showTrackHintByCtx"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot8 = slot6.isShowPathfinding
+	--- END OF BLOCK #0 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot8 = slot6.isShowPlayDialogue
+	--- END OF BLOCK #1 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot8 = slot6.isShowSourceBtn
+	--- END OF BLOCK #2 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot8 = slot6.isQuitTip
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 13-15, warpins: 1 ---
+	slot8 = slot6.isReDoQuestComplete
+	--- END OF BLOCK #4 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 16-18, warpins: 1 ---
+	slot8 = slot6.isReceiveNpcTarget
+	--- END OF BLOCK #5 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 19-20, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot8 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 21-21, warpins: 1 ---
+	slot8 = slot6.isTimeTokenRestriction
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-23, warpins: 8 ---
+	--- END OF BLOCK #8 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #23 97-99, warpins: 1 ---
-	slot12 = slot10.isShowPathfinding
+	--- BLOCK #9 24-26, warpins: 1 ---
+	slot9 = slot6.isShowPathfinding
+	--- END OF BLOCK #9 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #10 27-29, warpins: 1 ---
+	slot9 = slot6.isSwitchPageQuest
+	--- END OF BLOCK #10 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #11 30-32, warpins: 1 ---
+	slot9 = slot6.isLevelUpQuest
+	--- END OF BLOCK #11 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #12 33-35, warpins: 1 ---
+	slot9 = slot6.isShowPlayDialogue
+	--- END OF BLOCK #12 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #13 36-38, warpins: 1 ---
+	slot9 = slot6.isShowSourceBtn
+	--- END OF BLOCK #13 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #14 39-41, warpins: 1 ---
+	slot9 = slot6.isQuitTip
+	--- END OF BLOCK #14 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 42-44, warpins: 1 ---
+	slot9 = slot6.isReDoQuestComplete
+	--- END OF BLOCK #15 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 45-47, warpins: 1 ---
+	slot9 = slot6.isReceiveNpcTarget
+	--- END OF BLOCK #16 ---
+
+	slot8 = if not slot9 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 48-48, warpins: 1 ---
+	slot8 = slot6.isTimeTokenRestriction
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 49-50, warpins: 10 ---
+	--- END OF BLOCK #18 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #19 51-52, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 53-55, warpins: 1 ---
+	slot9 = nil
+	slot0.traceStoryBinding = slot9
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #21 56-57, warpins: 1 ---
+	--- END OF BLOCK #21 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 58-59, warpins: 1 ---
+	slot9 = nil
+	slot0.traceQuestBinding = slot9
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 60-65, warpins: 3 ---
+	slot11 = slot0
+	slot9 = slot0.hideTrackHintButton
+	slot12 = slot3
+	slot13 = slot1
+
+	slot9(slot11, slot12, slot13)
+
 	--- END OF BLOCK #23 ---
 
-	slot11 = if not slot12 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #31
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #24 100-102, warpins: 1 ---
-	slot12 = slot10.isSwitchPageQuest
+	--- BLOCK #24 66-73, warpins: 1 ---
+	slot11 = slot0
+	slot9 = slot0.showTrackHintBtn
+	slot12 = slot5
+	slot13 = slot4
+
+	slot9(slot11, slot12, slot13)
+
+	slot9 = slot6.isTimeTokenRestriction
 	--- END OF BLOCK #24 ---
 
-	slot11 = if not slot12 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 103-105, warpins: 1 ---
-	slot12 = slot10.isLevelUpQuest
+	--- BLOCK #25 74-79, warpins: 1 ---
+	slot11 = slot1
+	slot9 = slot1.TryChangePage
+	slot12 = "TrackType"
+	slot13 = 2
+
+	slot9(slot11, slot12, slot13)
+
 	--- END OF BLOCK #25 ---
 
-	slot11 = if not slot12 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #31
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #26 106-108, warpins: 1 ---
-	slot12 = slot10.isShowPlayDialogue
+	--- BLOCK #26 80-82, warpins: 1 ---
+	slot9 = slot6.isQuitTip
 	--- END OF BLOCK #26 ---
 
-	slot11 = if not slot12 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #27 109-111, warpins: 1 ---
-	slot12 = slot10.isShowSourceBtn
+	--- BLOCK #27 83-88, warpins: 1 ---
+	slot11 = slot1
+	slot9 = slot1.TryChangePage
+	slot12 = "TrackType"
+	slot13 = 1
+
+	slot9(slot11, slot12, slot13)
+
 	--- END OF BLOCK #27 ---
 
-	slot11 = if not slot12 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #31
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #28 112-114, warpins: 1 ---
-	slot12 = slot10.isQuitTip
+	--- BLOCK #28 89-93, warpins: 1 ---
+	slot11 = slot1
+	slot9 = slot1.TryChangePage
+	slot12 = "TrackType"
+	slot13 = 0
+
+	slot9(slot11, slot12, slot13)
+
 	--- END OF BLOCK #28 ---
 
-	slot11 = if not slot12 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #31
-	end
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 115-117, warpins: 1 ---
-	slot12 = slot10.isReDoQuestComplete
+	--- BLOCK #29 94-99, warpins: 3 ---
+	slot9 = LuaUIUtils
+	slot9 = slot9.setUIViewVisible
+	slot11 = slot2.keyHotKeyContent
+	slot12 = slot6.isQuitTip
 	--- END OF BLOCK #29 ---
 
-	slot11 = if not slot12 then
+	slot12 = if not slot12 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 118-118, warpins: 1 ---
-	slot11 = slot10.isReceiveNpcTarget
+	--- BLOCK #30 100-102, warpins: 1 ---
+	slot12 = slot6.isTimeTokenRestriction
+	slot12 = not slot12
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #31 119-120, warpins: 9 ---
+	--- BLOCK #31 103-104, warpins: 1 ---
+	slot12 = false
 	--- END OF BLOCK #31 ---
 
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #37
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #33
 
 
-	--- BLOCK #32 121-122, warpins: 1 ---
+	--- BLOCK #32 105-105, warpins: 0 ---
+	slot12 = true
+
 	--- END OF BLOCK #32 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 123-125, warpins: 1 ---
-	slot12 = nil
-	slot0.traceStoryBinding = slot12
-	--- END OF BLOCK #33 ---
+	--- BLOCK #33 106-120, warpins: 3 ---
+	slot9(slot11, slot12)
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	slot11 = slot0
+	slot9 = slot0.setTrackButton
+	slot12 = slot3
+	slot13 = slot1
 
+	slot9(slot11, slot12, slot13)
 
-	--- BLOCK #34 126-127, warpins: 1 ---
-	--- END OF BLOCK #34 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #35 128-129, warpins: 1 ---
-	slot12 = nil
-	slot0.traceQuestBinding = slot12
-	--- END OF BLOCK #35 ---
-
-	FLOW; TARGET BLOCK #36
-
-
-	--- BLOCK #36 130-133, warpins: 3 ---
-	slot12 = nil
-	slot0.trackButton = slot12
-
-	return
-
-	--- END OF BLOCK #36 ---
-
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 134-144, warpins: 2 ---
-	slot14 = slot0
-	slot12 = slot0.showTrackHintBtn
-	slot15 = slot5
-	slot16 = slot4
-
-	slot12(slot14, slot15, slot16)
-
-	slot14 = slot1
-	slot12 = slot1.TryChangePage
-	slot15 = "TrackType"
-	slot16 = slot10.isQuitTip
-	--- END OF BLOCK #37 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #39
-	end
-
-
-	--- BLOCK #38 145-146, warpins: 1 ---
-	slot16 = 1
-	--- END OF BLOCK #38 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
-
-
-	--- BLOCK #39 147-147, warpins: 1 ---
-	slot16 = 0
-
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 148-166, warpins: 2 ---
-	slot12(slot14, slot15, slot16)
-
-	slot12 = LuaUIUtils
-	slot12 = slot12.setUIViewVisible
-	slot14 = slot2.keyHotKeyContent
-	slot15 = slot10.isQuitTip
-	slot15 = not slot15
-
-	slot12(slot14, slot15)
-
-	slot0.trackButton = slot1
-
-	slot12 = function()
+	slot9 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -11023,196 +14238,290 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot1.luaClick = slot12
-	slot14 = slot0
-	slot12 = slot0.getTrackHintText
-	slot15 = slot10
-	slot12 = slot12(slot14, slot15)
-	slot13 = ClientTextUtils
-	slot13 = slot13.setText
-	slot15 = slot10.isQuitTip
+	slot1.luaClick = slot9
+	slot11 = slot0
+	slot9 = slot0.getTrackHintText
+	slot12 = slot6
+	slot9 = slot9(slot11, slot12)
+	slot10 = slot6.isTimeTokenRestriction
+	--- END OF BLOCK #33 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 121-126, warpins: 1 ---
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot2.noDoTipText
+	slot13 = slot9
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #34 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #35 127-131, warpins: 1 ---
+	slot10 = ClientTextUtils
+	slot10 = slot10.setText
+	slot12 = slot6.isQuitTip
+	--- END OF BLOCK #35 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 132-134, warpins: 1 ---
+	slot12 = slot2.forbidText
+	--- END OF BLOCK #36 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 135-135, warpins: 2 ---
+	slot12 = slot2.traceText
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 136-137, warpins: 2 ---
+	slot13 = slot9
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 138-140, warpins: 2 ---
+	slot10 = slot6.isTimeTokenRestriction
+	--- END OF BLOCK #39 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 141-151, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.enableTraceQuestBinding
+	slot13 = slot1
+	slot14 = slot5
+	slot15 = slot4
+
+	slot10(slot12, slot13, slot14, slot15)
+
+	slot10 = slot2.keyHotKeyContent
+	slot12 = slot10
+	slot10 = slot10.SetHotKeyPaths
+	slot13 = "Hud/TrackOpenSpecial"
+
+	slot10(slot12, slot13)
+
 	--- END OF BLOCK #40 ---
 
-	slot15 = if slot15 then
-	JUMP TO BLOCK #41
-	else
-	JUMP TO BLOCK #42
-	end
+	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 167-169, warpins: 1 ---
-	slot15 = slot2.forbidText
+	--- BLOCK #41 152-153, warpins: 2 ---
+	return
 	--- END OF BLOCK #41 ---
 
-	slot15 = if not slot15 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
+	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 170-170, warpins: 2 ---
-	slot15 = slot2.traceText
+	--- BLOCK #42 154-154, warpins: 2 ---
+	return
 	--- END OF BLOCK #42 ---
-
-	FLOW; TARGET BLOCK #43
-
-
-	--- BLOCK #43 171-185, warpins: 2 ---
-	slot16 = slot12
-
-	slot13(slot15, slot16)
-
-	slot15 = slot0
-	slot13 = slot0.enableTraceQuestBinding
-	slot16 = slot1
-	slot17 = slot5
-	slot18 = slot4
-
-	slot13(slot15, slot16, slot17, slot18)
-
-	slot13 = slot2.keyHotKeyContent
-	slot15 = slot13
-	slot13 = slot13.SetHotKeyPaths
-	slot16 = "Hud/TrackOpenSpecial"
-
-	slot13(slot15, slot16)
-
-	return
-	--- END OF BLOCK #43 ---
-
-	FLOW; TARGET BLOCK #44
-
-
-	--- BLOCK #44 186-186, warpins: 2 ---
-	return
-	--- END OF BLOCK #44 ---
-
-	FLOW; TARGET BLOCK #45
-
-
-	--- BLOCK #45 187-187, warpins: 2 ---
-	return
-	--- END OF BLOCK #45 ---
 
 
 
 end
 
-slot15.setTrackHintCommon = slot47
+slot15[slot49] = slot50
+slot49 = "buildTrackHintContext"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-45, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.needQuitOtherHomeland
-	slot7 = slot1
-	slot5 = slot5(slot7)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot6 = QuestUtils
-	slot6 = slot6.canQuestShowPathfindingFlag
+	slot6 = slot6.needQuitOtherHomeland
 	slot8 = slot1
-	slot6, slot7 = slot6(slot8)
-	slot8 = QuestUtils
-	slot8 = slot8.canShowPlayDialogue
-	slot10 = slot1
-	slot8, slot9 = slot8(slot10)
-	slot10 = QuestUtils
-	slot10 = slot10.canTraceItemSource
-	slot12 = slot1
-	slot10, slot11 = slot10(slot12)
-	slot12 = {}
-	slot12.questId = slot1
-	slot12.button = slot2
-	slot12.isStoryTab = slot3
-	slot12.isQuestTab = slot4
-	slot13 = table
-	slot13 = slot13.contains
-	slot15 = NEED_SWITCH_LEVEL_UP_QUEST_IDS
-	slot16 = slot1
-	slot13 = slot13(slot15, slot16)
-	slot12.isLevelUpQuest = slot13
-	slot13 = table
-	slot13 = slot13.contains
-	slot15 = NEED_SWITCH_GROW_QUEST_ID
-	slot16 = slot1
-	slot13 = slot13(slot15, slot16)
-	slot12.isSwitchPageQuest = slot13
-	slot12.isShowPathfinding = slot6
-	slot12.isShowPlayDialogue = slot8
-	slot12.dialogueId = slot9
-	slot12.isShowSourceBtn = slot10
-	slot12.sourceId = slot11
-	slot12.isQuitHomeland = slot5
-	slot13 = QuestUtils
-	slot13 = slot13.needQuitTeam
-	slot15 = slot1
-	slot13 = slot13(slot15)
+	slot6 = slot6(slot8)
+	slot7 = QuestUtils
+	slot7 = slot7.canQuestShowPathfindingFlag
+	slot9 = slot1
+	slot7, slot8 = slot7(slot9)
+	slot9 = QuestUtils
+	slot9 = slot9.canShowPlayDialogue
+	slot11 = slot1
+	slot9, slot10 = slot9(slot11)
+	slot11 = QuestUtils
+	slot11 = slot11.canTraceItemSource
+	slot13 = slot1
+	slot11, slot12 = slot11(slot13)
+	slot13, slot14 = nil
+	slot15 = QuestUtils
+	slot15 = slot15.isRunCondNotMet
+	slot17 = slot1
+	slot15 = slot15(slot17)
 	--- END OF BLOCK #0 ---
 
-	slot13 = if not slot13 then
+	slot15 = if slot15 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 46-47, warpins: 1 ---
+	--- BLOCK #1 24-29, warpins: 1 ---
+	slot15 = QuestUtils
+	slot15 = slot15.getRunCondTimeTokenInfo
+	slot17 = slot1
+	slot15, slot16 = slot15(slot17)
+	slot14 = slot16
+	slot13 = slot15
 	--- END OF BLOCK #1 ---
 
-	slot13 = if not slot5 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 30-58, warpins: 2 ---
+	slot15 = {}
+	slot15.questId = slot1
+	slot15.button = slot2
+	slot15.isStoryTab = slot3
+	slot15.isQuestTab = slot4
+	slot16 = table
+	slot16 = slot16.contains
+	slot18 = NEED_SWITCH_LEVEL_UP_QUEST_IDS
+	slot19 = slot1
+	slot16 = slot16(slot18, slot19)
+	slot15.isLevelUpQuest = slot16
+	slot16 = table
+	slot16 = slot16.contains
+	slot18 = NEED_SWITCH_GROW_QUEST_ID
+	slot19 = slot1
+	slot16 = slot16(slot18, slot19)
+	slot15.isSwitchPageQuest = slot16
+	slot15.isShowPathfinding = slot7
+	slot15.isShowPlayDialogue = slot9
+	slot15.dialogueId = slot10
+	slot15.isShowSourceBtn = slot11
+	slot15.sourceId = slot12
+	slot15.isQuitHomeland = slot6
+	slot16 = QuestUtils
+	slot16 = slot16.needQuitTeam
+	slot18 = slot1
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #2 ---
+
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 48-51, warpins: 1 ---
-	slot13 = QuestUtils
-	slot13 = slot13.isInQuestBlackList
-	slot15 = slot1
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 52-60, warpins: 3 ---
-	slot12.isQuitTip = slot13
-	slot13 = QuestUtils
-	slot13 = slot13.isReDoQuestComplete
-	slot15 = slot1
-	slot13 = slot13(slot15)
-	slot12.isReDoQuestComplete = slot13
-	slot13 = slot0.curObjcvData
+	--- BLOCK #3 59-60, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	slot13 = if slot13 then
+	slot16 = if not slot6 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 61-62, warpins: 1 ---
-	slot13 = slot0.curObjcvData
-	slot13 = slot13.isReceiveNpcTarget
+	--- BLOCK #4 61-64, warpins: 1 ---
+	slot16 = QuestUtils
+	slot16 = slot16.isInQuestBlackList
+	slot18 = slot1
+	slot16 = slot16(slot18)
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 63-64, warpins: 2 ---
-	slot12.isReceiveNpcTarget = slot13
-
-	return slot12
+	--- BLOCK #5 65-72, warpins: 3 ---
+	slot15.isQuitTip = slot16
+	slot16 = QuestUtils
+	slot16 = slot16.isReDoQuestComplete
+	slot18 = slot1
+	slot16 = slot16(slot18)
+	slot15.isReDoQuestComplete = slot16
 	--- END OF BLOCK #5 ---
+
+	slot16 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 73-73, warpins: 1 ---
+	slot16 = slot5.isReceiveNpcTarget
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 74-76, warpins: 2 ---
+	slot15.isReceiveNpcTarget = slot16
+	--- END OF BLOCK #7 ---
+
+	if slot13 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 77-78, warpins: 1 ---
+	slot16 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 79-79, warpins: 1 ---
+	slot16 = true
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 80-83, warpins: 2 ---
+	slot15.isTimeTokenRestriction = slot16
+	slot15.timeTokenId = slot13
+	slot15.timeTokenText = slot14
+
+	return slot15
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot15.buildTrackHintContext = slot47
+slot15[slot49] = slot50
+slot49 = "enableTraceQuestBinding"
 
-slot47 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11294,9 +14603,10 @@ slot47 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15.enableTraceQuestBinding = slot47
+slot15[slot49] = slot50
+slot49 = "showTrackHintBtn"
 
-slot47 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -11349,9 +14659,10 @@ slot47 = function(slot0, slot1, slot2)
 
 end
 
-slot15.showTrackHintBtn = slot47
+slot15[slot49] = slot50
+slot49 = "getTrackHintText"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.isQuitTip
 	--- END OF BLOCK #0 ---
@@ -11434,7 +14745,7 @@ slot47 = function(slot0, slot1)
 
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #7 33-35, warpins: 1 ---
@@ -11468,7 +14779,7 @@ slot47 = function(slot0, slot1)
 
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #10 44-46, warpins: 2 ---
@@ -11502,7 +14813,7 @@ slot47 = function(slot0, slot1)
 
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #13 55-57, warpins: 2 ---
@@ -11536,7 +14847,7 @@ slot47 = function(slot0, slot1)
 
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
 	--- BLOCK #16 66-68, warpins: 1 ---
@@ -11578,55 +14889,100 @@ slot47 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 82-82, warpins: 2 ---
+	--- BLOCK #19 82-83, warpins: 2 ---
 	return slot2
 
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #20 83-86, warpins: 6 ---
+	--- BLOCK #20 84-86, warpins: 1 ---
+	slot2 = slot1.isTimeTokenRestriction
+	--- END OF BLOCK #20 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 87-88, warpins: 1 ---
+	slot2 = slot1.timeTokenText
+
+	return slot2
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 89-92, warpins: 7 ---
 	slot2 = pg
 	slot2 = slot2.getGameString
 	slot4 = "QUEST_TRACK_TEXT"
 
 	return slot2(slot4)
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #22 ---
 
 
 
 end
 
-slot15.getTrackHintText = slot47
+slot15[slot49] = slot50
+slot49 = "handleTrackHintClick"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot1.isQuitTip
+	slot2 = slot1.isTimeTokenRestriction
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot2 = QuestUtils
-	slot2 = slot2.isInQuestBlackList
-	slot4 = slot1.questId
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 10-20, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #37
+
+
+	--- BLOCK #2 5-5, warpins: 0 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #3 6-8, warpins: 1 ---
+	slot2 = slot1.isQuitTip
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #4 9-14, warpins: 1 ---
+	slot2 = QuestUtils
+	slot2 = slot2.isInQuestBlackList
+	slot4 = slot1.questId
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-25, warpins: 1 ---
 	slot2 = QuestCommonUtils
 	slot2 = slot2.getQuestState
 	slot4 = pg
@@ -11636,16 +14992,16 @@ slot47 = function(slot0, slot1)
 	slot3 = QuestConst
 	slot3 = slot3.QUEST_STATE
 	slot3 = slot3.UNRECEIVE
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 21-34, warpins: 2 ---
+	--- BLOCK #6 26-39, warpins: 2 ---
 	slot2 = string
 	slot2 = slot2.match
 	slot4 = pg
@@ -11661,47 +15017,47 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
+	UNCONDITIONAL JUMP; TARGET BLOCK #38
 
 
-	--- BLOCK #4 35-37, warpins: 1 ---
+	--- BLOCK #7 40-42, warpins: 1 ---
 	slot2 = slot1.isQuitHomeland
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 38-43, warpins: 1 ---
+	--- BLOCK #8 43-48, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getGameString
 	slot4 = "QUEST_CANNOT_DO_IN_OTHER_HOME"
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #6 44-47, warpins: 2 ---
+	--- BLOCK #9 49-52, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.getGameString
 	slot4 = "QUEST_CANNOT_DO_IN_OTHER_WORLD"
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #7 48-53, warpins: 2 ---
+	--- BLOCK #10 53-58, warpins: 2 ---
 	slot3 = ClientUtils
 	slot3 = slot3.showBubbleMessageRaw
 	slot5 = slot2
@@ -11709,71 +15065,71 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #8 54-56, warpins: 1 ---
+	--- BLOCK #11 59-61, warpins: 1 ---
 	slot2 = slot1.isReceiveNpcTarget
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 57-61, warpins: 1 ---
+	--- BLOCK #12 62-66, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.pathfindingToReceiveNpc
 	slot4 = slot1.questId
 
 	slot2(slot4)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #10 62-64, warpins: 1 ---
+	--- BLOCK #13 67-69, warpins: 1 ---
 	slot2 = slot1.isReDoQuestComplete
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #11 65-70, warpins: 1 ---
+	--- BLOCK #14 70-75, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.getComActionObjcvDialogueId
 	slot4 = slot1.questId
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #12 71-73, warpins: 1 ---
+	--- BLOCK #15 76-78, warpins: 1 ---
 	slot3 = 0
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #15 ---
 
 	if slot2 > slot3 then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #13 74-79, warpins: 1 ---
+	--- BLOCK #16 79-84, warpins: 1 ---
 	slot3 = QuestUtils
 	slot3 = slot3.tryPlayDialogueGraph
 	slot5 = slot2
@@ -11781,12 +15137,12 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #16 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #14 80-86, warpins: 2 ---
+	--- BLOCK #17 85-91, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
@@ -11795,49 +15151,13 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
-
-
-	--- BLOCK #15 87-89, warpins: 1 ---
-	slot2 = slot1.isSwitchPageQuest
-	--- END OF BLOCK #15 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #16 90-92, warpins: 1 ---
-	slot2 = slot1.isStoryTab
-	--- END OF BLOCK #16 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 93-99, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.clickSwitchPageBtn
-	slot5 = QuestConst
-	slot5 = slot5.QUEST_HUD_PAGE_TYPE
-	slot5 = slot5.GROW
-
-	slot2(slot4, slot5)
-
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
 
 
-	--- BLOCK #18 100-102, warpins: 2 ---
-	slot2 = slot1.isLevelUpQuest
+	--- BLOCK #18 92-94, warpins: 1 ---
+	slot2 = slot1.isSwitchPageQuest
 	--- END OF BLOCK #18 ---
 
 	slot2 = if slot2 then
@@ -11847,7 +15167,7 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #19 103-105, warpins: 1 ---
+	--- BLOCK #19 95-97, warpins: 1 ---
 	slot2 = slot1.isStoryTab
 	--- END OF BLOCK #19 ---
 
@@ -11858,7 +15178,43 @@ slot47 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 106-114, warpins: 1 ---
+	--- BLOCK #20 98-104, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.clickSwitchPageBtn
+	slot5 = QuestConst
+	slot5 = slot5.QUEST_HUD_PAGE_TYPE
+	slot5 = slot5.GROW
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #21 105-107, warpins: 2 ---
+	slot2 = slot1.isLevelUpQuest
+	--- END OF BLOCK #21 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #22 108-110, warpins: 1 ---
+	slot2 = slot1.isStoryTab
+	--- END OF BLOCK #22 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 111-119, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -11873,45 +15229,45 @@ slot47 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #20 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
-
-
-	--- BLOCK #21 115-117, warpins: 2 ---
-	slot2 = slot1.isShowSourceBtn
-	--- END OF BLOCK #21 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #22 118-120, warpins: 1 ---
-	slot2 = slot1.isShowPathfinding
-	--- END OF BLOCK #22 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #23 121-123, warpins: 1 ---
-	slot2 = slot0.clickCD
 	--- END OF BLOCK #23 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #24 120-122, warpins: 2 ---
+	slot2 = slot1.isShowSourceBtn
+	--- END OF BLOCK #24 ---
+
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #24 124-135, warpins: 1 ---
+	--- BLOCK #25 123-125, warpins: 1 ---
+	slot2 = slot1.isShowPathfinding
+	--- END OF BLOCK #25 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #26 126-128, warpins: 1 ---
+	slot2 = slot0.clickCD
+	--- END OF BLOCK #26 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #27 129-140, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.addQuestPathingNavEffect
 	slot4 = slot1.questId
@@ -11940,46 +15296,46 @@ slot47 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #24 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
-
-
-	--- BLOCK #25 136-138, warpins: 2 ---
-	slot2 = slot1.isShowPlayDialogue
-	--- END OF BLOCK #25 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #26 139-141, warpins: 1 ---
-	slot2 = slot1.dialogueId
-	--- END OF BLOCK #26 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #27 142-145, warpins: 1 ---
-	slot2 = slot1.dialogueId
-	slot3 = 0
 	--- END OF BLOCK #27 ---
 
-	if slot2 > slot3 then
-	JUMP TO BLOCK #28
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #28 141-143, warpins: 2 ---
+	slot2 = slot1.isShowPlayDialogue
+	--- END OF BLOCK #28 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #28 146-153, warpins: 1 ---
+	--- BLOCK #29 144-146, warpins: 1 ---
+	slot2 = slot1.dialogueId
+	--- END OF BLOCK #29 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #30 147-150, warpins: 1 ---
+	slot2 = slot1.dialogueId
+	slot3 = 0
+	--- END OF BLOCK #30 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 151-158, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.dialogue
@@ -11989,46 +15345,46 @@ slot47 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #28 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
-
-
-	--- BLOCK #29 154-156, warpins: 3 ---
-	slot2 = slot1.isShowSourceBtn
-	--- END OF BLOCK #29 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #30 157-159, warpins: 1 ---
-	slot2 = slot1.sourceId
-	--- END OF BLOCK #30 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #31 160-163, warpins: 1 ---
-	slot2 = slot1.sourceId
-	slot3 = 0
 	--- END OF BLOCK #31 ---
 
-	if slot2 > slot3 then
-	JUMP TO BLOCK #32
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #32 159-161, warpins: 3 ---
+	slot2 = slot1.isShowSourceBtn
+	--- END OF BLOCK #32 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #32 164-179, warpins: 1 ---
+	--- BLOCK #33 162-164, warpins: 1 ---
+	slot2 = slot1.sourceId
+	--- END OF BLOCK #33 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #34 165-168, warpins: 1 ---
+	slot2 = slot1.sourceId
+	slot3 = 0
+	--- END OF BLOCK #34 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 169-184, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot1.sourceId
 	slot2.clueSeekID = slot3
@@ -12049,29 +15405,37 @@ slot47 = function(slot0, slot1)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #35 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #36
 
 
-	--- BLOCK #33 180-181, warpins: 13 ---
+	--- BLOCK #36 185-186, warpins: 14 ---
 	return
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #34 182-182, warpins: 2 ---
+	--- BLOCK #37 187-187, warpins: 2 ---
 	return
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 188-188, warpins: 2 ---
+	return
+	--- END OF BLOCK #38 ---
 
 
 
 end
 
-slot15.handleTrackHintClick = slot47
+slot15[slot49] = slot50
+slot49 = "checkShowTitleQuestCommon"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot8 = slot1
 	slot6 = slot1.isEmpty
@@ -12250,9 +15614,10 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot15.checkShowTitleQuestCommon = slot47
+slot15[slot49] = slot50
+slot49 = "isShowingTitleQuestCommon"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0[slot1]
 	--- END OF BLOCK #0 ---
@@ -12312,57 +15677,67 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.isShowingTitleQuestCommon = slot47
+slot15[slot49] = slot50
+slot49 = "checkShowTracingQuestCommon"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot12 = slot3
 	slot10 = slot3.isEmpty
 	slot10 = slot10(slot12)
+
 	--- END OF BLOCK #0 ---
 
-	slot10 = if not slot10 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-12, warpins: 1 ---
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-13, warpins: 2 ---
 	slot12 = slot0
 	slot10 = slot0.isShowingTracingQuestCommon
 	slot13 = slot4
 	slot14 = slot9
 	slot10 = slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #1 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 13-14, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
-	if slot2 == nil then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 15-15, warpins: 2 ---
-	return
-
+	--- BLOCK #3 14-15, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	if slot2 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 16-24, warpins: 3 ---
+	--- BLOCK #4 16-16, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-25, warpins: 3 ---
 	slot12 = slot3
 	slot10 = slot3.deQueue
 	slot10 = slot10(slot12)
@@ -12370,105 +15745,105 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 	slot11 = slot11.realtimeSinceStartup
 	slot0[slot4] = slot11
 	slot11 = slot10.isObjFined
-	--- END OF BLOCK #4 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #5 25-27, warpins: 1 ---
-	slot11 = slot10.isFined
 	--- END OF BLOCK #5 ---
 
 	slot11 = if not slot11 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 28-30, warpins: 1 ---
-	slot11 = slot10.isObjAdd
+	--- BLOCK #6 26-28, warpins: 1 ---
+	slot11 = slot10.isFined
 	--- END OF BLOCK #6 ---
 
 	slot11 = if not slot11 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 31-33, warpins: 1 ---
-	slot11 = slot10.isObjClose
+	--- BLOCK #7 29-31, warpins: 1 ---
+	slot11 = slot10.isObjAdd
 	--- END OF BLOCK #7 ---
 
 	slot11 = if not slot11 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 34-36, warpins: 1 ---
-	slot11 = slot10.refreshAll
+	--- BLOCK #8 32-34, warpins: 1 ---
+	slot11 = slot10.isObjClose
 	--- END OF BLOCK #8 ---
 
 	slot11 = if not slot11 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 37-39, warpins: 1 ---
-	slot11 = slot10.isSwitchTrack
+	--- BLOCK #9 35-37, warpins: 1 ---
+	slot11 = slot10.refreshAll
 	--- END OF BLOCK #9 ---
 
-	slot11 = if slot11 then
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 40-42, warpins: 6 ---
-	slot11 = slot10.refreshAll
+	--- BLOCK #10 38-40, warpins: 1 ---
+	slot11 = slot10.isSwitchTrack
 	--- END OF BLOCK #10 ---
 
 	slot11 = if slot11 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #11 43-44, warpins: 1 ---
+	--- BLOCK #11 41-43, warpins: 6 ---
+	slot11 = slot10.refreshAll
 	--- END OF BLOCK #11 ---
 
-	slot7 = if slot7 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 45-49, warpins: 1 ---
+	--- BLOCK #12 44-45, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 46-50, warpins: 1 ---
 	slot11 = QuestUtils
 	slot11 = slot11.isShowSpecialChapterItem
 	slot11 = slot11()
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #13 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #13
-	else
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 50-57, warpins: 1 ---
+	--- BLOCK #14 51-58, warpins: 1 ---
 	slot11 = slot7
 	slot13 = slot0
 	slot14 = slot10
@@ -12481,23 +15856,23 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 
 	slot11(slot13)
 
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 58-60, warpins: 4 ---
-	slot11 = slot10.isObjAdd
 	--- END OF BLOCK #14 ---
 
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 59-61, warpins: 4 ---
+	slot11 = slot10.isObjAdd
+	--- END OF BLOCK #15 ---
+
 	slot11 = if slot11 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #15 61-71, warpins: 1 ---
+	--- BLOCK #16 62-72, warpins: 1 ---
 	slot11 = QuestCommonUtils
 	slot11 = slot11.getQuestState
 	slot13 = pg
@@ -12508,24 +15883,24 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 	slot12 = slot12.QUEST_STATE
 	slot12 = slot12.SUBMITED
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #16 ---
 
 	if slot11 == slot12 then
-	JUMP TO BLOCK #16
-	else
 	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #16 72-72, warpins: 1 ---
+	--- BLOCK #17 73-73, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #17 73-81, warpins: 3 ---
+	--- BLOCK #18 74-82, warpins: 3 ---
 	slot13 = slot0
 	slot11 = slot0.onRefreshTracingQuestObj
 	slot14 = slot5
@@ -12535,137 +15910,138 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8,
 	slot11(slot13, slot14, slot15, slot16)
 
 	slot11 = slot10.isObjAdd
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #18 ---
 
 	slot11 = if slot11 then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #18 82-86, warpins: 1 ---
+	--- BLOCK #19 83-87, warpins: 1 ---
 	slot13 = slot3
 	slot11 = slot3.getFirst
 	slot11 = slot11(slot13)
-	--- END OF BLOCK #18 ---
-
-	if slot11 ~= nil then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #19 87-89, warpins: 1 ---
-	slot12 = slot11.isObjAdd
 	--- END OF BLOCK #19 ---
 
-	slot12 = if slot12 then
+	if slot11 ~= nil then
 	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #20 90-94, warpins: 1 ---
+	--- BLOCK #20 88-90, warpins: 1 ---
+	slot12 = slot11.isObjAdd
+	--- END OF BLOCK #20 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #21 91-95, warpins: 1 ---
 	slot12 = QuestConst
 	slot12 = slot12.QUEST_HUD_PAGE_TYPE
 	slot12 = slot12.STORY
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #21 ---
 
 	if slot1 == slot12 then
-	JUMP TO BLOCK #21
-	else
 	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #21 95-99, warpins: 1 ---
+	--- BLOCK #22 96-100, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.checkShowTracingQuest
 	slot15 = true
 
 	slot12(slot14, slot15)
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #22 100-104, warpins: 1 ---
+	--- BLOCK #23 101-105, warpins: 1 ---
 	slot12 = QuestConst
 	slot12 = slot12.QUEST_HUD_PAGE_TYPE
 	slot12 = slot12.GROW
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #23 ---
 
 	if slot1 == slot12 then
-	JUMP TO BLOCK #23
-	else
 	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #23 105-109, warpins: 1 ---
+	--- BLOCK #24 106-110, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.checkShowGrowTracingQuest
 	slot15 = true
 
 	slot12(slot14, slot15)
 
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #24 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #24 110-114, warpins: 1 ---
+	--- BLOCK #25 111-115, warpins: 1 ---
 	slot12 = QuestConst
 	slot12 = slot12.QUEST_HUD_PAGE_TYPE
 	slot12 = slot12.QUEST
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #25 ---
 
 	if slot1 == slot12 then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #25 115-119, warpins: 1 ---
+	--- BLOCK #26 116-120, warpins: 1 ---
 	slot14 = slot0
 	slot12 = slot0.checkShowQuestTracingQuest
 	slot15 = true
 
 	slot12(slot14, slot15)
 
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #26 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #26 120-123, warpins: 1 ---
+	--- BLOCK #27 121-124, warpins: 1 ---
 	slot11 = slot8
 	slot13 = slot0
 	slot14 = slot10
 
 	slot11(slot13, slot14)
 
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 124-124, warpins: 8 ---
-	return
 	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 125-125, warpins: 8 ---
+	return
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot15.checkShowTracingQuestCommon = slot47
+slot15[slot49] = slot50
+slot49 = "isShowingTracingQuestCommon"
 
-slot47 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0[slot1]
 	--- END OF BLOCK #0 ---
@@ -12724,85 +16100,159 @@ slot47 = function(slot0, slot1, slot2)
 
 end
 
-slot15.isShowingTracingQuestCommon = slot47
+slot15[slot49] = slot50
+slot49 = "showClickHindBtnCommon"
 
-slot47 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.GROW
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 5-7, warpins: 1 ---
-	slot4 = slot0.playCompleteAnim
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #2 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 8-8, warpins: 1 ---
+	--- BLOCK #3 9-14, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.clearTrackHintDelayTimer
+	slot8 = slot3
+
+	slot5(slot7, slot8)
+
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 9-15, warpins: 3 ---
-	slot6 = slot1
-	slot4 = slot1.SetActive
-	slot7 = slot2
+	--- BLOCK #4 15-19, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.setTrackButton
+	slot8 = slot3
+	slot9 = nil
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8, slot9)
 
-	slot4 = needDelayType
 	--- END OF BLOCK #4 ---
 
-	if slot4 == 3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 16-17, warpins: 1 ---
+	--- BLOCK #5 20-21, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 18-23, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.startTimer
+	--- BLOCK #6 22-23, warpins: 1 ---
+	--- END OF BLOCK #6 ---
 
-	slot7 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot0 = LuaUIUtils
-		slot0 = slot0.setUIViewVisible
-		slot2 = button
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 24-26, warpins: 1 ---
+	slot5 = slot0.playCompleteAnim
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 27-27, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #9 28-33, warpins: 3 ---
+	slot7 = slot0
+	slot5 = slot0.getTrackHintDelayType
+	slot8 = slot3
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #9 ---
+
+	if slot5 == 3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 34-35, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 36-47, warpins: 1 ---
+	slot7 = slot1
+	slot5 = slot1.SetActive
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	slot5 = slot0.trackHintDelayTimerByPage
+	slot8 = slot0
+	slot6 = slot0.startTimer
+
+	slot9 = function()
+		--- BLOCK #0 1-17, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.trackHintDelayTimerByPage
+		slot1 = pageType
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = button
+		slot2 = slot0
+		slot0 = slot0.SetActive
 		slot3 = flag
 
 		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setTrackHintDelayType
+		slot3 = pageType
+		slot4 = 1
+
+		slot0(slot2, slot3, slot4)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -12811,69 +16261,68 @@ slot47 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot8 = 0.15
+	slot10 = 0.15
+	slot6 = slot6(slot8, slot9, slot10)
+	slot5[slot3] = slot6
+	--- END OF BLOCK #11 ---
 
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #7 24-25, warpins: 2 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #12 48-49, warpins: 2 ---
+	--- END OF BLOCK #12 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #8 26-26, warpins: 1 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #13 50-50, warpins: 1 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 26-30, warpins: 2 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot1
-	slot7 = slot2
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #9 31-32, warpins: 2 ---
+	--- BLOCK #13 50-53, warpins: 2 ---
+	slot7 = slot1
+	slot5 = slot1.SetActive
+	slot8 = slot2
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 54-55, warpins: 2 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #10 33-33, warpins: 2 ---
+	--- BLOCK #15 56-56, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot15.showClickHindBtnCommon = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshTracingQuestItemCommon"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.isQuestTab
-	slot5 = slot5(slot7)
+	slot8 = slot0
+	slot6 = slot0.isQuestTab
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #0 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
@@ -12881,15 +16330,15 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #1 6-13, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getPageTraceQuestId
-	slot7 = QuestConst
-	slot7 = slot7.QUEST_HUD_PAGE_TYPE
-	slot7 = slot7.QUEST
-	slot5 = slot5(slot7)
+	slot6 = QuestUtils
+	slot6 = slot6.getPageTraceQuestId
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_HUD_PAGE_TYPE
+	slot8 = slot8.QUEST
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #1 ---
 
-	if slot5 == 0 then
+	if slot6 == 0 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -12897,25 +16346,25 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #2 14-21, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getEmptyTracingText
-	slot7 = QuestConst
-	slot7 = slot7.QUEST_HUD_PAGE_TYPE
-	slot7 = slot7.QUEST
-	slot5 = slot5(slot7)
-	slot0[slot2] = slot5
+	slot6 = QuestUtils
+	slot6 = slot6.getEmptyTracingText
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_HUD_PAGE_TYPE
+	slot8 = slot8.QUEST
+	slot6 = slot6(slot8)
+	slot0[slot3] = slot6
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
 	--- BLOCK #3 22-26, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.isStoryTab
-	slot5 = slot5(slot7)
+	slot8 = slot0
+	slot6 = slot0.isStoryTab
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #6
@@ -12923,15 +16372,15 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #4 27-34, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getPageTraceQuestId
-	slot7 = QuestConst
-	slot7 = slot7.QUEST_HUD_PAGE_TYPE
-	slot7 = slot7.STORY
-	slot5 = slot5(slot7)
+	slot6 = QuestUtils
+	slot6 = slot6.getPageTraceQuestId
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_HUD_PAGE_TYPE
+	slot8 = slot8.STORY
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #4 ---
 
-	if slot5 == 0 then
+	if slot6 == 0 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
@@ -12939,24 +16388,24 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #5 35-42, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getEmptyTracingText
-	slot7 = QuestConst
-	slot7 = slot7.QUEST_HUD_PAGE_TYPE
-	slot7 = slot7.STORY
-	slot5 = slot5(slot7)
-	slot0[slot2] = slot5
+	slot6 = QuestUtils
+	slot6 = slot6.getEmptyTracingText
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_HUD_PAGE_TYPE
+	slot8 = slot8.STORY
+	slot6 = slot6(slot8)
+	slot0[slot3] = slot6
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
 	--- BLOCK #6 43-45, warpins: 2 ---
-	slot5 = slot1.questData
+	slot6 = slot1.questData
 
 	--- END OF BLOCK #6 ---
 
-	if slot5 == nil then
+	if slot6 == nil then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
@@ -12972,15 +16421,15 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #8 47-53, warpins: 2 ---
-	slot6 = slot5.configId
-	slot7 = QuestUtils
-	slot7 = slot7.getQuestConfig
-	slot9 = slot6
-	slot7 = slot7(slot9)
+	slot7 = slot6.configId
+	slot8 = QuestUtils
+	slot8 = slot8.getQuestConfig
+	slot10 = slot7
+	slot8 = slot8(slot10)
 
 	--- END OF BLOCK #8 ---
 
-	if slot7 == nil then
+	if slot8 == nil then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
@@ -12996,13 +16445,13 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #10 55-60, warpins: 2 ---
-	slot8 = slot5.state
-	slot9 = QuestConst
-	slot9 = slot9.QUEST_STATE
-	slot9 = slot9.COMPLETED
+	slot9 = slot6.state
+	slot10 = QuestConst
+	slot10 = slot10.QUEST_STATE
+	slot10 = slot10.COMPLETED
 	--- END OF BLOCK #10 ---
 
-	if slot8 ~= slot9 then
+	if slot9 ~= slot10 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
@@ -13010,14 +16459,14 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #11 61-62, warpins: 1 ---
-	slot8 = false
+	slot9 = false
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
 	--- BLOCK #12 63-63, warpins: 1 ---
-	slot8 = true
+	slot9 = true
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
@@ -13026,7 +16475,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #13 64-65, warpins: 2 ---
 	--- END OF BLOCK #13 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #17
@@ -13036,7 +16485,7 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #14 66-67, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
-	slot8 = if not slot8 then
+	slot9 = if not slot9 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
@@ -13044,10 +16493,10 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #15 68-70, warpins: 1 ---
-	slot9 = slot5.isObjFined
+	slot10 = slot6.isObjFined
 	--- END OF BLOCK #15 ---
 
-	slot9 = if slot9 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
@@ -13055,36 +16504,39 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #16 71-76, warpins: 2 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getReceivedQuestObjectives
-	slot11 = slot5.configId
-	slot9 = slot9(slot11)
-	slot0[slot2] = slot9
+	slot10 = QuestUtils
+	slot10 = slot10.getReceivedQuestObjectives
+	slot12 = slot6.configId
+	slot10 = slot10(slot12)
+	slot0[slot3] = slot10
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
 	--- BLOCK #17 77-82, warpins: 2 ---
-	slot9 = QuestUtils
-	slot9 = slot9.getReceivedQuestObjectives
-	slot11 = slot5.configId
-	slot12 = false
-	slot9 = slot9(slot11, slot12)
-	slot0[slot2] = slot9
+	slot10 = QuestUtils
+	slot10 = slot10.getReceivedQuestObjectives
+	slot12 = slot6.configId
+	slot13 = false
+	slot10 = slot10(slot12, slot13)
+	slot0[slot3] = slot10
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 83-89, warpins: 4 ---
-	slot5 = slot0[slot2]
+	--- BLOCK #18 83-92, warpins: 4 ---
 	slot6 = slot0[slot3]
-	slot9 = slot6
-	slot7 = slot6.SetList
-	slot10 = slot5
+	slot7 = slot0[slot4]
+	slot10 = slot0
+	slot8 = slot0.refreshTrackHintList
+	slot11 = slot2
+	slot12 = slot7
+	slot13 = slot6
+	slot14 = slot0[slot5]
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11, slot12, slot13, slot14)
 
 	return
 	--- END OF BLOCK #18 ---
@@ -13093,11 +16545,11 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot15.onRefreshTracingQuestItemCommon = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshObjectivesItemCommon"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	needDelayType = 1
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot3 = if not slot3 then
@@ -13107,556 +16559,268 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-10, warpins: 1 ---
+	--- BLOCK #2 4-13, warpins: 2 ---
 	slot9 = slot0
-	slot7 = slot0.getTrackQuestObjcvItemComs
-	slot10 = slot1
+	slot7 = slot0.getTrackHintPageTypeByList
+	slot10 = slot4
 	slot7 = slot7(slot9, slot10)
+	slot10 = slot0
+	slot8 = slot0.getTrackQuestObjcvItemComs
+	slot11 = slot1
+	slot8 = slot8(slot10, slot11)
+
 	--- END OF BLOCK #2 ---
 
-	slot7 = if not slot7 then
+	slot8 = if not slot8 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-11, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #37
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-16, warpins: 1 ---
-	slot8 = slot7.rootAnimation
+	--- BLOCK #4 15-26, warpins: 2 ---
+	slot11 = slot0
+	slot9 = slot0.bindObjectiveClickForward
+	slot12 = slot1
+	slot15 = slot0
+	slot13 = slot0.getHintButtonFieldByPage
+	slot16 = slot7
+	MULTRES = slot13(slot15, slot16)
 
-	slot9 = function(slot0)
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot1 = UIUtils
-		slot1 = slot1.PlayAnimations
-		slot3 = rootAnim
-		slot4 = {
-			"VX_Node_QuestHUD_Text_In_Reset_2"
-		}
-		slot4[2] = slot0
+	slot9(slot11, slot12, MULTRES)
 
-		slot1(slot3, slot4)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
+	slot9 = slot8.rootAnimation
 	slot10 = slot3.isObjClose
 	--- END OF BLOCK #4 ---
 
 	slot10 = if slot10 then
 	JUMP TO BLOCK #5
 	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-37, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.onRefreshObjClose
+	slot13 = slot1
+	slot14 = slot3
+	slot15 = slot4
+	slot16 = slot5
+	slot17 = slot7
+	slot18 = slot9
+	slot19 = slot6
+
+	slot10(slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-40, warpins: 2 ---
+	slot10 = slot3.questId
+	--- END OF BLOCK #6 ---
+
+	if slot10 ~= nil then
+	JUMP TO BLOCK #7
+	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 17-32, warpins: 1 ---
-	needDelayType = 2
-	slot12 = slot1
-	slot10 = slot1.TryChangePage
-	slot13 = "QuestType"
-	slot14 = 0
+	--- BLOCK #7 41-43, warpins: 1 ---
+	slot10 = slot3.questId
+	--- END OF BLOCK #7 ---
 
-	slot10(slot12, slot13, slot14)
-
-	slot12 = slot1
-	slot10 = slot1.TryChangePage
-	slot13 = "QuestState"
-	slot14 = 1
-
-	slot10(slot12, slot13, slot14)
-
-	slot10 = slot9
-	slot12 = "VX_Node_QuestHUD_Text_Out2"
-
-	slot10(slot12)
-
-	--- END OF BLOCK #5 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #6
+	if slot10 == 0 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 33-37, warpins: 1 ---
-	slot10 = slot0.clickGrowHintUButton
-	slot12 = slot10
-	slot10 = slot10.SetActive
-	slot13 = false
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 38-45, warpins: 2 ---
+	--- BLOCK #8 44-49, warpins: 2 ---
 	slot12 = slot0
-	slot10 = slot0.startTimer
+	slot10 = slot0.onRefreshObjEmpty
+	slot13 = slot1
+	slot14 = slot9
 
-	slot13 = function()
-		--- BLOCK #0 1-25, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.removeQuestObjective
-		slot3 = list
-		slot4 = objectives
-		slot5 = objcvData
-
-		slot0(slot2, slot3, slot4, slot5)
-
-		needDelayType = 1
-		slot0 = objcvBtn
-		slot2 = slot0
-		slot0 = slot0.TryChangePage
-		slot3 = "QuestState"
-		slot4 = 0
-
-		slot0(slot2, slot3, slot4)
-
-		slot0 = UIUtils
-		slot0 = slot0.PlayAnimation
-		slot2 = rootAnim
-		slot3 = "VX_Node_QuestHUD_Text_In_Reset_2"
-
-		slot0(slot2, slot3)
-
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.restoreTrackHintToActiveObjcv
-		slot3 = list
-
-		slot0(slot2, slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot14 = questObjcvFinedTimeSpan
-	slot15 = false
-
-	slot10(slot12, slot13, slot14, slot15)
+	slot10(slot12, slot13, slot14)
 
 	return
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 46-48, warpins: 2 ---
-	slot10 = slot3.questId
 	--- END OF BLOCK #8 ---
 
-	if slot10 ~= nil then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 49-51, warpins: 1 ---
-	slot10 = slot3.questId
+	--- BLOCK #9 50-56, warpins: 2 ---
+	slot10 = QuestUtils
+	slot10 = slot10.isMultiObjAndState
+	slot12 = slot3.questId
+	slot13 = slot3.objId
+	slot10 = slot10(slot12, slot13)
 	--- END OF BLOCK #9 ---
 
-	if slot10 == 0 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 52-63, warpins: 2 ---
-	slot12 = slot1
-	slot10 = slot1.TryChangePage
-	slot13 = "QuestState"
-	slot14 = 0
+	--- BLOCK #10 57-63, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.onRefreshObjMultiState
+	slot14 = slot1
+	slot15 = slot3
+	slot16 = slot9
 
-	slot10(slot12, slot13, slot14)
-
-	slot10 = UIUtils
-	slot10 = slot10.PlayAnimation
-	slot12 = slot8
-	slot13 = "VX_Node_QuestHUD_Text_In_Reset_2"
-
-	slot10(slot12, slot13)
-
-	return
+	slot11(slot13, slot14, slot15, slot16)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 64-81, warpins: 2 ---
-	slot10 = QuestUtils
-	slot10 = slot10.isMultiObjAndState
-	slot12 = slot3.questId
-	slot13 = slot3.objId
-	slot10 = slot10(slot12, slot13)
-	slot11 = QuestUtils
-	slot11 = slot11.isQuestManualCommit
-	slot13 = slot3.questId
-	slot11 = slot11(slot13)
-	slot12 = QuestUtils
-	slot12 = slot12.isQuestOfQuestType
-	slot14 = slot3.questId
-	slot15 = QuestConst
-	slot15 = slot15.QUEST_TYPE
-	slot15 = slot15.SPECIAL_TRAIN
-	slot12 = slot12(slot14, slot15)
+	--- BLOCK #11 64-72, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.onRefreshObjSingleState
+	slot14 = slot1
+	slot15 = slot3
+	slot16 = slot4
+	slot17 = slot5
+	slot18 = slot7
+	slot19 = slot9
+
+	slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+
 	--- END OF BLOCK #11 ---
 
-	slot10 = if slot10 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #26
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 82-89, warpins: 1 ---
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestType"
-	slot17 = 1
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot3.isFined
+	--- BLOCK #12 73-73, warpins: 2 ---
+	return
 	--- END OF BLOCK #12 ---
 
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #13
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "playObjectiveAnimSequence"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = UIUtils
+	slot3 = slot3.PlayAnimations
+	slot5 = slot1
+	slot6 = {
+		"VX_Node_QuestHUD_Text_In_Reset_2"
+	}
+	slot6[2] = slot2
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshObjClose"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-22, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.setTrackHintDelayType
+	slot11 = slot5
+	slot12 = 2
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot1
+	slot8 = slot1.TryChangePage
+	slot11 = "QuestType"
+	slot12 = 0
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot1
+	slot8 = slot1.TryChangePage
+	slot11 = "QuestState"
+	slot12 = 1
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot0
+	slot8 = slot0.playObjectiveAnimSequence
+	slot11 = slot6
+	slot12 = "VX_Node_QuestHUD_Text_Out2"
+
+	slot8(slot10, slot11, slot12)
+
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #13 90-92, warpins: 1 ---
-	slot13 = slot3.isObjFined
-	--- END OF BLOCK #13 ---
+	--- BLOCK #1 23-29, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.hideTrackHintButton
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_HUD_PAGE_TYPE
+	slot11 = slot11.GROW
+	slot12 = slot0.clickGrowHintUButton
 
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #16
-	end
+	slot8(slot10, slot11, slot12)
 
+	--- END OF BLOCK #1 ---
 
-	--- BLOCK #14 93-95, warpins: 1 ---
-	slot13 = slot3.objData
-	--- END OF BLOCK #14 ---
+	FLOW; TARGET BLOCK #2
 
-	slot13 = if slot13 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #20
-	end
 
+	--- BLOCK #2 30-36, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.startObjFinedRemoveTimer
+	slot11 = slot2
 
-	--- BLOCK #15 96-99, warpins: 1 ---
-	slot13 = slot3.objData
-	slot13 = slot13.isComplete
-	--- END OF BLOCK #15 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #16 100-107, warpins: 3 ---
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestState"
-	slot17 = 1
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot3.needPlayFinishAnim
-	--- END OF BLOCK #16 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #17 108-110, warpins: 1 ---
-	slot13 = slot3.objData
-	--- END OF BLOCK #17 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #18 111-114, warpins: 1 ---
-	slot13 = slot3.objData
-	slot13 = slot13.isComplete
-	--- END OF BLOCK #18 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #19 115-120, warpins: 1 ---
-	slot13 = nil
-	slot3.needPlayFinishAnim = slot13
-	slot13 = slot9
-	slot15 = "VX_Node_QuestHUD_Text_Finish"
-
-	slot13(slot15)
-
-	--- END OF BLOCK #19 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #20 121-123, warpins: 2 ---
-	slot13 = slot3.isFined
-	--- END OF BLOCK #20 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #21 124-126, warpins: 1 ---
-	slot13 = slot3.isNew
-	--- END OF BLOCK #21 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 127-135, warpins: 1 ---
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestState"
-	slot17 = 0
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot9
-	slot15 = "VX_Node_QuestHUD_Text_In3"
-
-	slot13(slot15)
-
-	--- END OF BLOCK #22 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #23 136-141, warpins: 2 ---
-	slot15 = slot1
-	slot13 = slot1.TryGetCurrentPage
-	slot16 = "QuestState"
-	slot13, slot14 = slot13(slot15, slot16)
-	--- END OF BLOCK #23 ---
-
-	if slot14 == 1 then
-	JUMP TO BLOCK #24
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #24 142-144, warpins: 1 ---
-	slot15 = slot9
-	slot17 = "VX_Node_QuestHUD_Text_Finish_Out"
-
-	slot15(slot17)
-
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 145-150, warpins: 2 ---
-	slot17 = slot1
-	slot15 = slot1.TryChangePage
-	slot18 = "QuestState"
-	slot19 = 0
-
-	slot15(slot17, slot18, slot19)
-
-	--- END OF BLOCK #25 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #26 151-158, warpins: 1 ---
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestType"
-	slot17 = 0
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot3.isFined
-	--- END OF BLOCK #26 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #27 159-161, warpins: 1 ---
-	slot13 = slot3.hasPlayedNewAnim
-	--- END OF BLOCK #27 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #28 162-164, warpins: 1 ---
-	slot13 = slot3.isNew
-	--- END OF BLOCK #28 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #29 165-183, warpins: 1 ---
-	needDelayType = 3
-	slot13 = nil
-	slot3.isNew = slot13
-	slot13 = true
-	slot3.hasPlayedNewAnim = slot13
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestState"
-	slot17 = 0
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot9
-	slot15 = "VX_Node_QuestHUD_Text_In2"
-
-	slot13(slot15)
-
-	slot13 = LuaUIUtils
-	slot13 = slot13.setUIViewVisible
-	slot15 = slot1.gameObject
-	slot16 = true
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #29 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #30 184-186, warpins: 3 ---
-	slot13 = slot3.isObjFined
-	--- END OF BLOCK #30 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #31
-	else
-	JUMP TO BLOCK #34
-	end
-
-
-	--- BLOCK #31 187-195, warpins: 1 ---
-	needDelayType = 2
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestState"
-	slot17 = 1
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot3.hasPlayedFinishAnim
-	--- END OF BLOCK #31 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #32 196-207, warpins: 1 ---
-	slot13 = true
-	slot3.hasPlayedFinishAnim = slot13
-	slot13 = pg
-	slot13 = slot13.game
-	slot13 = slot13.audio
-	slot15 = slot13
-	slot13 = slot13.triggerEvent
-	slot16 = "SFX_UI_Event_HUDQuest_SinglePointCompletion"
-
-	slot13(slot15, slot16)
-
-	slot13 = slot9
-	slot15 = "VX_Node_QuestHUD_Text_Out2"
-
-	slot13(slot15)
-
-	--- END OF BLOCK #32 ---
-
-	FLOW; TARGET BLOCK #33
-
-
-	--- BLOCK #33 208-214, warpins: 2 ---
-	slot15 = slot0
-	slot13 = slot0.startTimer
-
-	slot16 = function()
-		--- BLOCK #0 1-25, warpins: 1 ---
+	slot12 = function()
+		--- BLOCK #0 1-30, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.removeQuestObjective
-		slot3 = list
-		slot4 = objectives
-		slot5 = objcvData
+		slot0 = slot0.setTrackHintDelayType
+		slot3 = pageType
+		slot4 = 1
 
-		slot0(slot2, slot3, slot4, slot5)
+		slot0(slot2, slot3, slot4)
 
-		needDelayType = 1
 		slot0 = objcvBtn
 		slot2 = slot0
 		slot0 = slot0.TryChangePage
@@ -13674,6 +16838,15 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 		slot0 = self
 		slot2 = slot0
+		slot0 = slot0.removeQuestObjective
+		slot3 = list
+		slot4 = objectives
+		slot5 = objcvData
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		slot0 = self
+		slot2 = slot0
 		slot0 = slot0.restoreTrackHintToActiveObjcv
 		slot3 = list
 
@@ -13686,70 +16859,800 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	end
 
-	slot17 = questObjcvFinedTimeSpan
-	slot18 = false
+	slot8(slot10, slot11, slot12)
 
-	slot13(slot15, slot16, slot17, slot18)
-
-	--- END OF BLOCK #33 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #34 215-231, warpins: 1 ---
-	slot15 = slot1
-	slot13 = slot1.TryChangePage
-	slot16 = "QuestState"
-	slot17 = 0
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = UIUtils
-	slot13 = slot13.PlayAnimation
-	slot15 = slot8
-	slot16 = "VX_Node_QuestHUD_Text_In_Reset_2"
-
-	slot13(slot15, slot16)
-
-	slot15 = slot1
-	slot13 = slot1.InvokeCallback
-	slot16 = CS
-	slot16 = slot16.XGUI
-	slot16 = slot16.EInvokeTime
-	slot16 = slot16.Custom1
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 232-233, warpins: 9 ---
 	return
-	--- END OF BLOCK #35 ---
-
-	FLOW; TARGET BLOCK #36
-
-
-	--- BLOCK #36 234-234, warpins: 2 ---
-	return
-	--- END OF BLOCK #36 ---
-
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 235-235, warpins: 2 ---
-	return
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot15.onRefreshObjectivesItemCommon = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshObjEmpty"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.TryChangePage
+	slot6 = "QuestState"
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = UIUtils
+	slot3 = slot3.PlayAnimation
+	slot5 = slot2
+	slot6 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshObjMultiState"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.TryChangePage
+	slot7 = "QuestType"
+	slot8 = 1
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot2.isFined
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot4 = slot2.isObjFined
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot4 = slot2.objData
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot4 = slot2.objData
+	slot4 = slot4.isComplete
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #4 19-26, warpins: 3 ---
+	slot6 = slot1
+	slot4 = slot1.TryChangePage
+	slot7 = "QuestState"
+	slot8 = 1
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot2.needPlayFinishAnim
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 27-29, warpins: 1 ---
+	slot4 = slot2.objData
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 30-33, warpins: 1 ---
+	slot4 = slot2.objData
+	slot4 = slot4.isComplete
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 34-41, warpins: 1 ---
+	slot4 = nil
+	slot2.needPlayFinishAnim = slot4
+	slot6 = slot1
+	slot4 = slot1.TryGetCurrentPage
+	slot7 = "QuestState"
+	slot4, slot5 = slot4(slot6, slot7)
+	--- END OF BLOCK #7 ---
+
+	if slot5 == 1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 42-47, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.playObjectiveAnimSequence
+	slot9 = slot3
+	slot10 = "VX_Node_QuestHUD_Text_Finish"
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #9 48-53, warpins: 1 ---
+	slot6 = UIUtils
+	slot6 = slot6.PlayAnimation
+	slot8 = slot3
+	slot9 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #10 54-59, warpins: 3 ---
+	slot4 = UIUtils
+	slot4 = slot4.PlayAnimation
+	slot6 = slot3
+	slot7 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #11 60-62, warpins: 2 ---
+	slot4 = slot2.isFined
+	--- END OF BLOCK #11 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 63-65, warpins: 1 ---
+	slot4 = slot2.hasPlayedNewAnim
+	--- END OF BLOCK #12 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 66-68, warpins: 1 ---
+	slot4 = slot2.isNew
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 69-83, warpins: 1 ---
+	slot4 = nil
+	slot2.isNew = slot4
+	slot4 = true
+	slot2.hasPlayedNewAnim = slot4
+	slot6 = slot1
+	slot4 = slot1.TryChangePage
+	slot7 = "QuestState"
+	slot8 = 0
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.playObjectiveAnimSequence
+	slot7 = slot3
+	slot8 = "VX_Node_QuestHUD_Text_In3"
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 84-93, warpins: 3 ---
+	slot6 = slot1
+	slot4 = slot1.TryChangePage
+	slot7 = "QuestState"
+	slot8 = 0
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = UIUtils
+	slot4 = slot4.PlayAnimation
+	slot6 = slot3
+	slot7 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 94-94, warpins: 5 ---
+	return
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshObjSingleState"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot9 = slot1
+	slot7 = slot1.TryChangePage
+	slot10 = "QuestType"
+	slot11 = 0
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = slot2.isFined
+	--- END OF BLOCK #0 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot7 = slot2.hasPlayedNewAnim
+	--- END OF BLOCK #1 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot7 = slot2.isNew
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-39, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.setTrackHintDelayType
+	slot10 = slot5
+	slot11 = 3
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = nil
+	slot2.isNew = slot7
+	slot7 = true
+	slot2.hasPlayedNewAnim = slot7
+	slot9 = slot1
+	slot7 = slot1.TryChangePage
+	slot10 = "QuestState"
+	slot11 = 0
+
+	slot7(slot9, slot10, slot11)
+
+	slot9 = slot0
+	slot7 = slot0.playObjectiveAnimSequence
+	slot10 = slot6
+	slot11 = "VX_Node_QuestHUD_Text_In2"
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = LuaUIUtils
+	slot7 = slot7.setUIViewVisible
+	slot9 = slot1.gameObject
+	slot10 = true
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #4 40-42, warpins: 3 ---
+	slot7 = slot2.isObjFined
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #5 43-58, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.setTrackHintDelayType
+	slot10 = slot5
+	slot11 = 2
+
+	slot7(slot9, slot10, slot11)
+
+	slot9 = slot1
+	slot7 = slot1.TryChangePage
+	slot10 = "QuestState"
+	slot11 = 1
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = QuestUtils
+	slot7 = slot7.isQuestManualCommit
+	slot9 = slot2.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #5 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 59-64, warpins: 1 ---
+	slot7 = UIUtils
+	slot7 = slot7.PlayAnimation
+	slot9 = slot6
+	slot10 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 65-67, warpins: 1 ---
+	slot7 = slot2.hasPlayedFinishAnim
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 68-81, warpins: 1 ---
+	slot7 = true
+	slot2.hasPlayedFinishAnim = slot7
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.audio
+	slot9 = slot7
+	slot7 = slot7.triggerEvent
+	slot10 = "SFX_UI_Event_HUDQuest_SinglePointCompletion"
+
+	slot7(slot9, slot10)
+
+	slot9 = slot0
+	slot7 = slot0.playObjectiveAnimSequence
+	slot10 = slot6
+	slot11 = "VX_Node_QuestHUD_Text_Out2"
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 82-87, warpins: 3 ---
+	slot7 = QuestUtils
+	slot7 = slot7.isQuestManualCommit
+	slot9 = slot2.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #9 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 88-93, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.startObjFinedRemoveTimer
+	slot10 = slot2
+
+	slot11 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.isObjectiveInList
+		slot3 = list
+		slot4 = objcvData
+		slot0 = slot0(slot2, slot3, slot4)
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-9, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-39, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setTrackHintDelayType
+		slot3 = pageType
+		slot4 = 1
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = objcvBtn
+		slot2 = slot0
+		slot0 = slot0.TryChangePage
+		slot3 = "QuestState"
+		slot4 = 0
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = UIUtils
+		slot0 = slot0.PlayAnimation
+		slot2 = rootAnim
+		slot3 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+		slot0(slot2, slot3)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.removeQuestObjective
+		slot3 = list
+		slot4 = objectives
+		slot5 = objcvData
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.restoreTrackHintToActiveObjcv
+		slot3 = list
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 94-110, warpins: 1 ---
+	slot9 = slot1
+	slot7 = slot1.TryChangePage
+	slot10 = "QuestState"
+	slot11 = 0
+
+	slot7(slot9, slot10, slot11)
+
+	slot7 = UIUtils
+	slot7 = slot7.PlayAnimation
+	slot9 = slot6
+	slot10 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+	slot7(slot9, slot10)
+
+	slot9 = slot1
+	slot7 = slot1.InvokeCallback
+	slot10 = CS
+	slot10 = slot10.XGUI
+	slot10 = slot10.EInvokeTime
+	slot10 = slot10.Custom1
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 111-112, warpins: 4 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "startObjFinedRemoveTimer"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = tostring
+	slot5 = slot1.questId
+	slot3 = slot3(slot5)
+	slot4 = "|"
+	slot5 = tostring
+	slot7 = slot1.objId
+	slot5 = slot5(slot7)
+	slot3 = slot3 .. slot4 .. slot5
+	slot4 = slot0.objFinedRemoveTimerKeys
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-12, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-17, warpins: 2 ---
+	slot0.objFinedRemoveTimerKeys = slot4
+	slot4 = slot0.objFinedRemoveTimerKeys
+	slot4 = slot4[slot3]
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-18, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 19-29, warpins: 1 ---
+	slot4 = slot0.objFinedRemoveTimerKeys
+	slot5 = true
+	slot4[slot3] = slot5
+	slot6 = slot0
+	slot4 = slot0.startTimer
+
+	slot7 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.objFinedRemoveTimerKeys
+		slot1 = key
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = func
+
+		slot0()
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot8 = questObjcvFinedTimeSpan
+	slot9 = false
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "isObjectiveInList"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-11, warpins: 2 ---
+	slot3 = slot1.itemCount
+	slot3 = slot3 - 1
+	slot4 = 0
+	slot5 = -1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-17, warpins: 2 ---
+	slot9 = slot1
+	slot7 = slot1.GetData
+	slot10 = slot6
+	slot7 = slot7(slot9, slot10)
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 18-21, warpins: 1 ---
+	slot8 = slot7.questId
+	slot9 = slot2.questId
+	--- END OF BLOCK #5 ---
+
+	if slot8 == slot9 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot8 = slot2.objId
+	--- END OF BLOCK #6 ---
+
+	if slot8 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-28, warpins: 1 ---
+	slot8 = slot7.objId
+	slot9 = slot2.objId
+	--- END OF BLOCK #7 ---
+
+	if slot8 == slot9 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-30, warpins: 2 ---
+	slot8 = true
+
+	return slot8
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 31-31, warpins: 4 ---
+	--- END OF BLOCK #9 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #10
+
+	--- BLOCK #10 32-33, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "restoreTrackHintToActiveObjcv"
+
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -13831,30 +17734,35 @@ slot47 = function(slot0, slot1)
 	LOOP BLOCK #5
 	GO OUT TO BLOCK #8
 
-	--- BLOCK #8 26-29, warpins: 1 ---
-	slot4 = 1
-	slot5 = #slot3
-	slot6 = 1
+	--- BLOCK #8 26-33, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getTrackHintPageTypeByList
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = 1
+	slot6 = #slot3
+	slot7 = 1
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 30-35, warpins: 2 ---
-	slot10 = slot0
-	slot8 = slot0.tryApplyTrackHint
-	slot11 = slot3
-	slot12 = slot3[slot7]
+	--- BLOCK #9 34-40, warpins: 2 ---
+	slot11 = slot0
+	slot9 = slot0.tryApplyTrackHint
+	slot12 = slot3
+	slot13 = slot3[slot8]
+	slot14 = slot4
 
-	slot8(slot10, slot11, slot12)
+	slot9(slot11, slot12, slot13, slot14)
 
 	--- END OF BLOCK #9 ---
 
-	for slot7=slot4, slot5, slot6
+	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #9
 	GO OUT TO BLOCK #10
 
-	--- BLOCK #10 36-36, warpins: 1 ---
+	--- BLOCK #10 41-41, warpins: 1 ---
 	return
 	--- END OF BLOCK #10 ---
 
@@ -13862,18 +17770,22 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.restoreTrackHintToActiveObjcv = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshStoryTracingQuestItem"
 
-slot47 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.onRefreshTracingQuestItemCommon
 	slot5 = slot1
-	slot6 = "curObjectives"
-	slot7 = "storyTracingList"
-	slot8 = "clickStoryHintUButton"
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_HUD_PAGE_TYPE
+	slot6 = slot6.STORY
+	slot7 = "curObjectives"
+	slot8 = "storyTracingList"
+	slot9 = "clickStoryHintUButton"
 
-	slot2(slot4, slot5, slot6, slot7, slot8)
+	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -13882,9 +17794,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onRefreshStoryTracingQuestItem = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshGrowTracingQuestItem"
 
-slot47 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.isShowSpecialChapterItem
@@ -13979,13 +17892,17 @@ slot47 = function(slot0, slot1)
 	LOOP BLOCK #7
 	GO OUT TO BLOCK #8
 
-	--- BLOCK #8 44-49, warpins: 2 ---
-	slot2 = slot0.growTracingList
-	slot4 = slot2
-	slot2 = slot2.SetList
-	slot5 = slot0.curSecObjectives
+	--- BLOCK #8 44-53, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshTrackHintList
+	slot5 = QuestConst
+	slot5 = slot5.QUEST_HUD_PAGE_TYPE
+	slot5 = slot5.GROW
+	slot6 = slot0.growTracingList
+	slot7 = slot0.curSecObjectives
+	slot8 = slot0.clickGrowHintUButton
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	return
 	--- END OF BLOCK #8 ---
@@ -13994,18 +17911,22 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onRefreshGrowTracingQuestItem = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshQuestTracingQuestItem"
 
-slot47 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.onRefreshTracingQuestItemCommon
 	slot5 = slot1
-	slot6 = "curThrObjectives"
-	slot7 = "questTracingList"
-	slot8 = "clickQuestHintUButton"
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_HUD_PAGE_TYPE
+	slot6 = slot6.QUEST
+	slot7 = "curThrObjectives"
+	slot8 = "questTracingList"
+	slot9 = "clickQuestHintUButton"
 
-	slot2(slot4, slot5, slot6, slot7, slot8)
+	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -14014,9 +17935,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot15.onRefreshQuestTracingQuestItem = slot47
+slot15[slot49] = slot50
+slot49 = "onRefreshStoryObjectivesItem"
 
-slot47 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.onRefreshObjectivesItemCommon
@@ -14066,13 +17988,16 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 25-35, warpins: 2 ---
+	--- BLOCK #3 25-38, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.tryApplyTrackHint
 	slot7 = slot0.curObjectives
 	slot8 = slot3
+	slot9 = QuestConst
+	slot9 = slot9.QUEST_HUD_PAGE_TYPE
+	slot9 = slot9.STORY
 
-	slot4(slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	slot4 = string
 	slot4 = slot4.format
@@ -14087,14 +18012,14 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 36-36, warpins: 1 ---
+	--- BLOCK #4 39-39, warpins: 1 ---
 	slot7 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 37-39, warpins: 2 ---
+	--- BLOCK #5 40-42, warpins: 2 ---
 	slot8 = slot3.objId
 	--- END OF BLOCK #5 ---
 
@@ -14105,14 +18030,14 @@ slot47 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 40-40, warpins: 1 ---
+	--- BLOCK #6 43-43, warpins: 1 ---
 	slot8 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 41-43, warpins: 2 ---
+	--- BLOCK #7 44-46, warpins: 2 ---
 	slot4 = slot4(slot6, slot7, slot8)
 	slot1.name = slot4
 
@@ -14123,10 +18048,10 @@ slot47 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15.onRefreshStoryObjectivesItem = slot47
-slot47 = "onRefreshQuestObjectivesItem"
+slot15[slot49] = slot50
+slot49 = "onRefreshQuestObjectivesItem"
 
-slot48 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.onRefreshObjectivesItemCommon
@@ -14176,13 +18101,16 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 25-35, warpins: 2 ---
+	--- BLOCK #3 25-38, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.tryApplyTrackHint
 	slot7 = slot0.curThrObjectives
 	slot8 = slot3
+	slot9 = QuestConst
+	slot9 = slot9.QUEST_HUD_PAGE_TYPE
+	slot9 = slot9.QUEST
 
-	slot4(slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	slot4 = string
 	slot4 = slot4.format
@@ -14197,14 +18125,14 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 36-36, warpins: 1 ---
+	--- BLOCK #4 39-39, warpins: 1 ---
 	slot7 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 37-39, warpins: 2 ---
+	--- BLOCK #5 40-42, warpins: 2 ---
 	slot8 = slot3.objId
 	--- END OF BLOCK #5 ---
 
@@ -14215,14 +18143,14 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 40-40, warpins: 1 ---
+	--- BLOCK #6 43-43, warpins: 1 ---
 	slot8 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 41-43, warpins: 2 ---
+	--- BLOCK #7 44-46, warpins: 2 ---
 	slot4 = slot4(slot6, slot7, slot8)
 	slot1.name = slot4
 
@@ -14233,15 +18161,16 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setQuestObjectiveInfo"
+slot15[slot49] = slot50
+slot49 = "setQuestObjectiveInfo"
 
-slot48 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getTrackQuestObjcvItemComs
 	slot7 = slot1
 	slot4 = slot4(slot6, slot7)
+
 	--- END OF BLOCK #0 ---
 
 	slot4 = if slot4 then
@@ -14262,12 +18191,14 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #57
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-12, warpins: 1 ---
+	--- BLOCK #3 10-12, warpins: 2 ---
 	slot5 = slot3.isReceiveNpcTarget
 	--- END OF BLOCK #3 ---
 
@@ -14301,409 +18232,398 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 	slot5(slot7, slot8)
 
+	return
+
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #58
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 30-40, warpins: 1 ---
-	slot5 = nil
-	slot6 = QuestUtils
-	slot6 = slot6.getQuestData
-	slot8 = slot3.questId
-	slot6 = slot6(slot8)
-	slot7 = QuestUtils
-	slot7 = slot7.getQuestConfig
-	slot9 = slot3.questId
-	slot7 = slot7(slot9)
+	--- BLOCK #5 30-35, warpins: 2 ---
+	slot5 = QuestUtils
+	slot5 = slot5.getQuestConfig
+	slot7 = slot3.questId
+	slot5 = slot5(slot7)
+
 	--- END OF BLOCK #5 ---
 
-	if slot7 == nil then
+	if slot5 == nil then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 41-41, warpins: 1 ---
+	--- BLOCK #6 36-36, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #59
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 42-49, warpins: 1 ---
-	slot8 = QuestUtils
-	slot8 = slot8.getQuestObjectiveTargetVal
-	slot10 = slot3.questId
-	slot11 = slot3.objId
-	slot8 = slot8(slot10, slot11)
-	slot9 = slot3.isFined
+	--- BLOCK #7 37-55, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.getObjectiveDisplayVals
+	slot9 = slot3
+	slot6, slot7 = slot6(slot8, slot9)
+	slot10 = slot0
+	slot8 = slot0.applyObjectiveDescAndProgress
+	slot11 = slot3
+	slot12 = slot4
+	slot13 = slot6
+	slot14 = slot7
+	slot8 = slot8(slot10, slot11, slot12, slot13, slot14)
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.setting
+	slot11 = slot9
+	slot9 = slot9.getShowDebugId
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #7 ---
 
-	slot9 = if not slot9 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 50-52, warpins: 1 ---
-	slot9 = slot3.objData
+	--- BLOCK #8 56-67, warpins: 1 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot4.contentTxt
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "%d-%d-%s"
+	slot15 = slot3.questId
+	slot16 = slot3.objId
+	slot17 = slot8
+	MULTRES = slot12(slot14, slot15, slot16, slot17)
+
+	slot9(slot11, MULTRES)
+
 	--- END OF BLOCK #8 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 53-56, warpins: 1 ---
-	slot9 = slot3.objData
-	slot9 = slot9.isComplete
+	--- BLOCK #9 68-72, warpins: 1 ---
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot4.contentTxt
+	slot12 = slot8
+
+	slot9(slot11, slot12)
+
 	--- END OF BLOCK #9 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #10
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 73-84, warpins: 2 ---
+	slot11 = slot0
+	slot9 = slot0.setQuestPhoneBtn
+	slot12 = slot4
+	slot13 = slot3
+
+	slot9(slot11, slot12, slot13)
+
+	slot11 = slot0
+	slot9 = slot0.setQuestRecommendTag
+	slot12 = slot1
+	slot13 = slot4
+	slot14 = slot3
+
+	slot9(slot11, slot12, slot13, slot14)
+
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "getObjectiveDisplayVals"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = QuestUtils
+	slot2 = slot2.getQuestObjectiveTargetVal
+	slot4 = slot1.questId
+	slot5 = slot1.objId
+	slot2 = slot2(slot4, slot5)
+	slot3 = nil
+	slot4 = slot1.isFined
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #10 57-58, warpins: 2 ---
-	slot5 = slot8
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot4 = slot1.objData
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot4 = slot1.objData
+	slot4 = slot4.isComplete
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 2 ---
+	slot3 = slot2
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 19-21, warpins: 2 ---
+	slot4 = slot1.objData
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-25, warpins: 1 ---
+	slot4 = slot1.objData
+	slot4 = slot4.currentCnt
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-26, warpins: 2 ---
+	slot3 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-29, warpins: 3 ---
+	slot4 = slot3
+	slot5 = slot2
+
+	return slot4, slot5
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "applyObjectiveDescAndProgress"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot5 = ClientTextUtils
+	slot5 = slot5.getLocalizationText
+	slot7 = slot1.objConfig
+	slot7 = slot7.desc
+	slot8 = slot3
+	slot5 = slot5(slot7, slot8)
+	slot6 = ClientConfigAppCountry
+	--- END OF BLOCK #0 ---
+
+	if slot6 ~= "cn" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-11, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 12-12, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-14, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-20, warpins: 1 ---
+	slot7 = string
+	slot7 = slot7.format
+	slot9 = " %s"
+	slot10 = slot5
+	slot7 = slot7(slot9, slot10)
+	slot5 = slot7
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-26, warpins: 2 ---
+	slot7 = QuestUtils
+	slot7 = slot7.isRunCondNotMet
+	slot9 = slot1.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #5 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #6 27-30, warpins: 1 ---
+	slot7 = slot1.objConfig
+	slot7 = slot7.displayType
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-31, warpins: 1 ---
+	slot7 = 1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 32-39, warpins: 2 ---
+	slot8 = slot2.scheduleUWidget
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_OBJCV_DISPLAY_TYPE
+	slot11 = slot11.SHOW_PROGRESS
+	--- END OF BLOCK #8 ---
+
+	if slot7 ~= slot11 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 40-41, warpins: 1 ---
+	slot11 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 42-42, warpins: 1 ---
+	slot11 = true
+
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 59-61, warpins: 2 ---
-	slot9 = slot3.objData
+	--- BLOCK #11 43-48, warpins: 2 ---
+	slot8(slot10, slot11)
+
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_OBJCV_DISPLAY_TYPE
+	slot8 = slot8.SHOW_COUNTING
 	--- END OF BLOCK #11 ---
 
-	slot9 = if slot9 then
+	if slot7 == slot8 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 62-65, warpins: 1 ---
-	slot9 = slot3.objData
-	slot9 = slot9.currentCnt
+	--- BLOCK #12 49-61, warpins: 1 ---
+	slot8 = string
+	slot8 = slot8.format
+	slot10 = "[%s/%s]"
+	slot11 = slot3
+	slot12 = slot4
+	slot8 = slot8(slot10, slot11, slot12)
+	slot9 = ClientTextUtils
+	slot9 = slot9.concatByLanguage
+	slot11 = slot5
+	slot12 = slot8
+	slot9 = slot9(slot11, slot12)
+	slot5 = slot9
 	--- END OF BLOCK #12 ---
 
-	slot5 = if not slot9 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #13 66-66, warpins: 2 ---
-	slot5 = 0
+	--- BLOCK #13 62-66, warpins: 1 ---
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_OBJCV_DISPLAY_TYPE
+	slot8 = slot8.SHOW_PROGRESS
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 67-74, warpins: 3 ---
-	slot9 = ClientTextUtils
-	slot9 = slot9.getLocalizationText
-	slot11 = slot3.objConfig
-	slot11 = slot11.desc
-	slot12 = slot5
-	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #14 ---
-
-	slot6 = if slot6 then
+	if slot7 == slot8 then
+	JUMP TO BLOCK #14
+	else
 	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #15 75-80, warpins: 1 ---
-	slot10 = slot6.state
-	slot11 = QuestConst
-	slot11 = slot11.QUEST_STATE
-	slot11 = slot11.RECEIVED
-	--- END OF BLOCK #15 ---
-
-	if slot10 == slot11 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #16 81-83, warpins: 1 ---
-	slot10 = slot6.runState
-	--- END OF BLOCK #16 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #17 84-90, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.timePeriod
-	slot11 = Const
-	slot11 = slot11.TimePeriod
-	slot11 = slot11.Night
-	--- END OF BLOCK #17 ---
-
-	if slot10 == slot11 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 91-96, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "TASK_DAY"
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #18 ---
-
-	slot9 = if not slot10 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 97-101, warpins: 2 ---
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "TASK_NIGHT"
-	slot10 = slot10(slot12)
-	slot9 = slot10
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 102-111, warpins: 2 ---
-	slot10 = slot4.scheduleUWidget
-	slot12 = slot10
-	slot10 = slot10.SetActive
-	slot13 = false
-
-	slot10(slot12, slot13)
-
-	slot10 = slot4.progress
-	slot12 = slot10
-	slot10 = slot10.SetActive
-	slot13 = false
-
-	slot10(slot12, slot13)
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 112-114, warpins: 4 ---
-	slot10 = ClientConfigAppCountry
-	--- END OF BLOCK #21 ---
-
-	if slot10 ~= "cn" then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 115-116, warpins: 1 ---
-	slot10 = false
-	--- END OF BLOCK #22 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
-
-
-	--- BLOCK #23 117-117, warpins: 1 ---
-	slot10 = true
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 118-119, warpins: 2 ---
-	--- END OF BLOCK #24 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 120-125, warpins: 1 ---
-	slot11 = string
-	slot11 = slot11.format
-	slot13 = " %s"
-	slot14 = slot9
-	slot11 = slot11(slot13, slot14)
-	slot9 = slot11
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 126-127, warpins: 2 ---
-	--- END OF BLOCK #26 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #27
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #27 128-133, warpins: 1 ---
-	slot11 = slot6.state
-	slot12 = QuestConst
-	slot12 = slot12.QUEST_STATE
-	slot12 = slot12.RECEIVED
-	--- END OF BLOCK #27 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #28
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #28 134-137, warpins: 1 ---
-	slot11 = slot6.runState
-	slot11 = not slot11
-	--- END OF BLOCK #28 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #29 138-141, warpins: 3 ---
-	slot11 = slot3.objConfig
-	slot11 = slot11.displayType
-	--- END OF BLOCK #29 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #30
-	else
-	JUMP TO BLOCK #31
-	end
-
-
-	--- BLOCK #30 142-142, warpins: 1 ---
-	slot11 = 1
-	--- END OF BLOCK #30 ---
-
-	FLOW; TARGET BLOCK #31
-
-
-	--- BLOCK #31 143-150, warpins: 2 ---
-	slot12 = slot4.scheduleUWidget
-	slot14 = slot12
-	slot12 = slot12.SetActive
-	slot15 = QuestConst
-	slot15 = slot15.QUEST_OBJCV_DISPLAY_TYPE
-	slot15 = slot15.SHOW_PROGRESS
-	--- END OF BLOCK #31 ---
-
-	if slot11 ~= slot15 then
-	JUMP TO BLOCK #32
-	else
-	JUMP TO BLOCK #33
-	end
-
-
-	--- BLOCK #32 151-152, warpins: 1 ---
-	slot15 = false
-	--- END OF BLOCK #32 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
-
-
-	--- BLOCK #33 153-153, warpins: 1 ---
-	slot15 = true
-
-	--- END OF BLOCK #33 ---
-
-	FLOW; TARGET BLOCK #34
-
-
-	--- BLOCK #34 154-159, warpins: 2 ---
-	slot12(slot14, slot15)
-
-	slot12 = QuestConst
-	slot12 = slot12.QUEST_OBJCV_DISPLAY_TYPE
-	slot12 = slot12.SHOW_COUNTING
-	--- END OF BLOCK #34 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #36
-	end
-
-
-	--- BLOCK #35 160-168, warpins: 1 ---
-	slot12 = string
-	slot12 = slot12.format
-	slot14 = "%s[%s/%s]"
-	slot15 = slot9
-	slot16 = slot5
-	slot17 = slot8
-	slot12 = slot12(slot14, slot15, slot16, slot17)
-	slot9 = slot12
-	--- END OF BLOCK #35 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #38
-
-
-	--- BLOCK #36 169-173, warpins: 1 ---
-	slot12 = QuestConst
-	slot12 = slot12.QUEST_OBJCV_DISPLAY_TYPE
-	slot12 = slot12.SHOW_PROGRESS
-	--- END OF BLOCK #36 ---
-
-	if slot11 == slot12 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #37 174-191, warpins: 1 ---
-	slot12 = slot4.progress
-	slot14 = slot12
-	slot12 = slot12.SetActive
-	slot15 = true
-
-	slot12(slot14, slot15)
-
-	slot12 = slot5 / slot8
-	slot13 = slot4.progress
-	slot13.value = slot12
-	slot13 = string
-	slot13 = slot13.format
-	slot15 = "%s [%d%%]"
-	slot16 = slot9
-	slot17 = slot12 * 100
-	slot13 = slot13(slot15, slot16, slot17)
-	slot9 = slot13
-	slot13 = slot4.progress
-
-	slot14 = function()
+	--- BLOCK #14 67-84, warpins: 1 ---
+	slot8 = slot2.progress
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = true
+
+	slot8(slot10, slot11)
+
+	slot8 = slot3 / slot4
+	slot9 = slot2.progress
+	slot9.value = slot8
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "%s [%d%%]"
+	slot12 = slot5
+	slot13 = slot8 * 100
+	slot9 = slot9(slot11, slot12, slot13)
+	slot5 = slot9
+	slot9 = slot2.progress
+
+	slot10 = function()
 		--- BLOCK #0 1-10, warpins: 1 ---
 		slot0 = objectComs
 		slot0 = slot0.scheduleUWidget
@@ -14723,203 +18643,149 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot13.luaValueChanged = slot14
-	--- END OF BLOCK #37 ---
+	slot9.luaValueChanged = slot10
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #38
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #38 192-195, warpins: 4 ---
-	slot11 = slot3.objConfig
-	slot11 = slot11.showCanSelect
-	--- END OF BLOCK #38 ---
+	--- BLOCK #15 85-88, warpins: 4 ---
+	slot7 = slot1.objConfig
+	slot7 = slot7.showCanSelect
+	--- END OF BLOCK #15 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #39
+	slot7 = if slot7 then
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #39 196-200, warpins: 1 ---
-	slot11 = QuestUtils
-	slot11 = slot11.questObjectiveCanSelect
-	slot13 = slot9
-	slot11 = slot11(slot13)
-	slot9 = slot11
-	--- END OF BLOCK #39 ---
+	--- BLOCK #16 89-93, warpins: 1 ---
+	slot7 = QuestUtils
+	slot7 = slot7.questObjectiveCanSelect
+	slot9 = slot5
+	slot7 = slot7(slot9)
+	slot5 = slot7
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #40
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #40 201-206, warpins: 2 ---
-	slot11 = QuestUtils
-	slot11 = slot11.isInQuestBlackList
-	slot13 = slot3.questId
-	slot11 = slot11(slot13)
-	--- END OF BLOCK #40 ---
+	--- BLOCK #17 94-99, warpins: 2 ---
+	slot7 = QuestUtils
+	slot7 = slot7.isInQuestBlackList
+	slot9 = slot1.questId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #17 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #41
+	slot7 = if slot7 then
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #41 207-215, warpins: 1 ---
-	slot11 = string
-	slot11 = slot11.format
-	slot13 = pg
-	slot13 = slot13.getGameString
-	slot15 = "QUEST_CANNOT_PROGRESS_TARGET_TEXT"
-	slot13 = slot13(slot15)
-	slot14 = slot9
-	slot11 = slot11(slot13, slot14)
-	slot9 = slot11
-	--- END OF BLOCK #41 ---
+	--- BLOCK #18 100-108, warpins: 1 ---
+	slot7 = string
+	slot7 = slot7.format
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = "QUEST_CANNOT_PROGRESS_TARGET_TEXT"
+	slot9 = slot9(slot11)
+	slot10 = slot5
+	slot7 = slot7(slot9, slot10)
+	slot5 = slot7
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #42
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #42 216-225, warpins: 2 ---
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "QUEST_TRACK_PLAY_DIALOGUE"
-	slot11 = slot11(slot13)
-	slot12 = QuestUtils
-	slot12 = slot12.isReDoQuestComplete
-	slot14 = slot3.questId
-	slot12 = slot12(slot14)
-	--- END OF BLOCK #42 ---
+	--- BLOCK #19 109-118, warpins: 2 ---
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "QUEST_TRACK_PLAY_DIALOGUE"
+	slot7 = slot7(slot9)
+	slot8 = QuestUtils
+	slot8 = slot8.isReDoQuestComplete
+	slot10 = slot1.questId
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #19 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #43
+	slot8 = if slot8 then
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #43 226-226, warpins: 1 ---
-	slot9 = slot11
-	--- END OF BLOCK #43 ---
+	--- BLOCK #20 119-119, warpins: 1 ---
+	slot5 = slot7
 
-	FLOW; TARGET BLOCK #44
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #44 227-234, warpins: 2 ---
-	slot13 = pg
-	slot13 = slot13.game
-	slot13 = slot13.setting
-	slot15 = slot13
-	slot13 = slot13.getShowDebugId
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #44 ---
+	--- BLOCK #21 120-121, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #21 ---
 
-	slot13 = if slot13 then
-	JUMP TO BLOCK #45
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setQuestPhoneBtn"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot3 = slot1.btnPhoneUWidget
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	slot3 = QuestUtils
+	slot3 = slot3.getQuestCallId
+	slot5 = slot2.questId
+	slot3 = slot3(slot5)
+	slot4 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #45 235-246, warpins: 1 ---
-	slot13 = ClientTextUtils
-	slot13 = slot13.setText
-	slot15 = slot4.contentTxt
-	slot16 = string
-	slot16 = slot16.format
-	slot18 = "%d-%d-%s"
-	slot19 = slot3.questId
-	slot20 = slot3.objId
-	slot21 = slot9
-	MULTRES = slot16(slot18, slot19, slot20, slot21)
+	--- BLOCK #1 13-25, warpins: 1 ---
+	slot4 = slot1.btnPhoneUWidget
+	slot6 = slot4
+	slot4 = slot4.SetActive
+	slot7 = true
 
-	slot13(slot15, MULTRES)
+	slot4(slot6, slot7)
 
-	--- END OF BLOCK #45 ---
+	slot4 = LuaUIUtils
+	slot4 = slot4.setUIViewVisible
+	slot6 = slot1.btnPhoneUButton
+	slot7 = true
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #47
+	slot4(slot6, slot7)
 
+	slot4 = slot1.btnPhoneUButton
 
-	--- BLOCK #46 247-251, warpins: 1 ---
-	slot13 = ClientTextUtils
-	slot13 = slot13.setText
-	slot15 = slot4.contentTxt
-	slot16 = slot9
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #46 ---
-
-	FLOW; TARGET BLOCK #47
-
-
-	--- BLOCK #47 252-258, warpins: 2 ---
-	slot13 = slot4.btnPhoneUWidget
-	slot15 = slot13
-	slot13 = slot13.SetActive
-	slot16 = false
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #47 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #48
-	else
-	JUMP TO BLOCK #51
-	end
-
-
-	--- BLOCK #48 259-261, warpins: 1 ---
-	slot13 = slot6.callId
-	--- END OF BLOCK #48 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #49
-	else
-	JUMP TO BLOCK #51
-	end
-
-
-	--- BLOCK #49 262-265, warpins: 1 ---
-	slot13 = slot6.callId
-	slot14 = 0
-	--- END OF BLOCK #49 ---
-
-	if slot13 > slot14 then
-	JUMP TO BLOCK #50
-	else
-	JUMP TO BLOCK #51
-	end
-
-
-	--- BLOCK #50 266-278, warpins: 1 ---
-	slot13 = slot4.btnPhoneUWidget
-	slot15 = slot13
-	slot13 = slot13.SetActive
-	slot16 = true
-
-	slot13(slot15, slot16)
-
-	slot13 = LuaUIUtils
-	slot13 = slot13.setUIViewVisible
-	slot15 = slot4.btnPhoneUButton
-	slot16 = true
-
-	slot13(slot15, slot16)
-
-	slot13 = slot4.btnPhoneUButton
-
-	slot14 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
+	slot5 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
 		slot0 = slot0.dialogue
 		slot2 = slot0
 		slot0 = slot0.playDialogueGraph
-		slot3 = questData
-		slot3 = slot3.callId
+		slot3 = callId
 
 		slot0(slot2, slot3)
 
@@ -14930,158 +18796,150 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot13.luaClick = slot14
-	--- END OF BLOCK #50 ---
+	slot4.luaClick = slot5
 
-	FLOW; TARGET BLOCK #51
+	--- END OF BLOCK #1 ---
 
-
-	--- BLOCK #51 279-296, warpins: 4 ---
-	slot13 = QuestUtils
-	slot13 = slot13.getCurSideQuestShowType
-	slot15 = slot3.questId
-	slot13 = slot13(slot15)
-	slot16 = slot1
-	slot14 = slot1.TryChangePage
-	slot17 = "TaskType"
-	slot18 = slot13.taskType
-
-	slot14(slot16, slot17, slot18)
-
-	slot14 = slot4.tagPanelUWidget
-	slot16 = slot14
-	slot14 = slot14.SetActive
-	slot17 = false
-
-	slot14(slot16, slot17)
-
-	slot14 = slot3.objConfig
-	slot14 = slot14.recommendLv
-	--- END OF BLOCK #51 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #52
-	else
-	JUMP TO BLOCK #56
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #52 297-299, warpins: 1 ---
-	slot15 = 0
-	--- END OF BLOCK #52 ---
-
-	if slot14 > slot15 then
-	JUMP TO BLOCK #53
-	else
-	JUMP TO BLOCK #56
-	end
-
-
-	--- BLOCK #53 300-305, warpins: 1 ---
-	slot15 = QuestUtils
-	slot15 = slot15.getObjectRecommendLevelStyle
-	slot17 = slot14
-	slot15, slot16 = slot15(slot17)
-	--- END OF BLOCK #53 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #54
-	else
-	JUMP TO BLOCK #56
-	end
-
-
-	--- BLOCK #54 306-308, warpins: 1 ---
-	slot17 = slot3.showRecommend
-	--- END OF BLOCK #54 ---
-
-	slot17 = if slot17 then
-	JUMP TO BLOCK #55
-	else
-	JUMP TO BLOCK #56
-	end
-
-
-	--- BLOCK #55 309-341, warpins: 1 ---
-	slot17 = slot4.tagPanelUWidget
-	slot19 = slot17
-	slot17 = slot17.SetActive
-	slot20 = true
-
-	slot17(slot19, slot20)
-
-	slot19 = slot1
-	slot17 = slot1.TryChangePage
-	slot20 = "TagType"
-	slot21 = slot15
-
-	slot17(slot19, slot20, slot21)
-
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot4.textUSDFText
-	slot20 = string
-	slot20 = slot20.format
-	slot22 = pg
-	slot22 = slot22.getGameString
-	slot24 = "QUEST_RECOMMEND_LEVEL_TITLE_TEXT"
-	MULTRES = slot22(slot24)
-	MULTRES = slot20(MULTRES)
-
-	slot17(slot19, MULTRES)
-
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot4.textLevelUSDFText
-	slot20 = string
-	slot20 = slot20.format
-	slot22 = pg
-	slot22 = slot22.getGameString
-	slot24 = "QUEST_RECOMMEND_LEVEL_HUD_TEXT"
-	slot22 = slot22(slot24)
-	slot23 = slot14
-	MULTRES = slot20(slot22, slot23)
-
-	slot17(slot19, MULTRES)
-
-	--- END OF BLOCK #55 ---
-
-	FLOW; TARGET BLOCK #56
-
-
-	--- BLOCK #56 342-343, warpins: 5 ---
+	--- BLOCK #2 26-27, warpins: 2 ---
 	return
-	--- END OF BLOCK #56 ---
-
-	FLOW; TARGET BLOCK #57
-
-
-	--- BLOCK #57 344-344, warpins: 2 ---
-	return
-	--- END OF BLOCK #57 ---
-
-	FLOW; TARGET BLOCK #58
-
-
-	--- BLOCK #58 345-345, warpins: 2 ---
-	return
-	--- END OF BLOCK #58 ---
-
-	FLOW; TARGET BLOCK #59
-
-
-	--- BLOCK #59 346-346, warpins: 2 ---
-	return
-	--- END OF BLOCK #59 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setSpecialObjectiveInfo"
+slot15[slot49] = slot50
+slot49 = "setQuestRecommendTag"
 
-slot48 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getCurSideQuestShowType
+	slot6 = slot3.questId
+	slot4 = slot4(slot6)
+	slot7 = slot1
+	slot5 = slot1.TryChangePage
+	slot8 = "TaskType"
+	slot9 = slot4.taskType
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = slot2.tagPanelUWidget
+	slot7 = slot5
+	slot5 = slot5.SetActive
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	slot5 = slot3.objConfig
+	slot5 = slot5.recommendLv
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 19-21, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #1 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 22-27, warpins: 1 ---
+	slot6 = QuestUtils
+	slot6 = slot6.getObjectRecommendLevelStyle
+	slot8 = slot5
+	slot6, slot7 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 28-30, warpins: 1 ---
+	slot8 = slot3.showRecommend
+	--- END OF BLOCK #3 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 31-63, warpins: 1 ---
+	slot8 = slot2.tagPanelUWidget
+	slot10 = slot8
+	slot8 = slot8.SetActive
+	slot11 = true
+
+	slot8(slot10, slot11)
+
+	slot10 = slot1
+	slot8 = slot1.TryChangePage
+	slot11 = "TagType"
+	slot12 = slot6
+
+	slot8(slot10, slot11, slot12)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot2.textUSDFText
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "QUEST_RECOMMEND_LEVEL_TITLE_TEXT"
+	MULTRES = slot13(slot15)
+	MULTRES = slot11(MULTRES)
+
+	slot8(slot10, MULTRES)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot2.textLevelUSDFText
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "QUEST_RECOMMEND_LEVEL_HUD_TEXT"
+	slot13 = slot13(slot15)
+	slot14 = slot5
+	MULTRES = slot11(slot13, slot14)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 64-64, warpins: 5 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setSpecialObjectiveInfo"
+
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getTrackQuestObjcvItemComs
@@ -15162,15 +19020,16 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onRefreshPageItem"
+slot15[slot49] = slot50
+slot49 = "onRefreshPageItem"
 
-slot48 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getQuestIconComs
 	slot7 = slot1
 	slot4 = slot4(slot6, slot7)
+
 	--- END OF BLOCK #0 ---
 
 	slot4 = if not slot4 then
@@ -15181,343 +19040,441 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-13, warpins: 1 ---
-	slot5 = slot3.pageType
-	slot6 = QuestConst
-	slot6 = slot6.QUEST_HUD_PAGE_TYPE
-	slot6 = slot6.STORY
+	--- BLOCK #2 8-25, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.onRefreshPageItemTaskType
+	slot8 = slot4
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot0
+	slot5 = slot0.onRefreshPageItemState
+	slot8 = slot4
+	slot9 = slot2
+	slot10 = slot3
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot7 = slot0
+	slot5 = slot0.onRefreshPageItemClick
+	slot8 = slot4
+	slot9 = slot2
+	slot10 = slot3
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	return
 	--- END OF BLOCK #2 ---
 
-	if slot5 == slot6 then
-	JUMP TO BLOCK #3
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshPageItemTaskType"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot2.pageType
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.STORY
+	--- END OF BLOCK #0 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 14-16, warpins: 1 ---
-	slot5 = slot3.questId
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot2.questId
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-12, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getTracingStoryQuestId
+	slot3 = slot3()
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-15, warpins: 2 ---
+	slot4 = 0
 	--- END OF BLOCK #3 ---
 
-	slot5 = if not slot5 then
+	if slot3 > slot4 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 17-19, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getTracingStoryQuestId
-	slot5 = slot5()
+	--- BLOCK #4 16-22, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getCurSideQuestShowType
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot4 = slot4.taskType
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 20-22, warpins: 2 ---
-	slot6 = 0
+	--- BLOCK #5 23-25, warpins: 2 ---
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_PAGE_STYLE
+	slot4 = slot4.YELLOW
 	--- END OF BLOCK #5 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 23-29, warpins: 1 ---
-	slot6 = QuestUtils
-	slot6 = slot6.getCurSideQuestShowType
-	slot8 = slot5
-	slot6 = slot6(slot8)
-	slot6 = slot6.taskType
+	--- BLOCK #6 26-32, warpins: 2 ---
+	slot5 = slot1.btn
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "TaskType"
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
 	--- END OF BLOCK #6 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #7 30-32, warpins: 2 ---
-	slot6 = QuestConst
-	slot6 = slot6.QUEST_PAGE_STYLE
-	slot6 = slot6.YELLOW
+	--- BLOCK #7 33-38, warpins: 1 ---
+	slot3 = slot2.pageType
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.GROW
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 33-39, warpins: 2 ---
-	slot7 = slot4.btn
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "TaskType"
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
-
-
-	--- BLOCK #9 40-45, warpins: 1 ---
-	slot5 = slot3.pageType
-	slot6 = QuestConst
-	slot6 = slot6.QUEST_HUD_PAGE_TYPE
-	slot6 = slot6.GROW
-	--- END OF BLOCK #9 ---
-
-	if slot5 == slot6 then
-	JUMP TO BLOCK #10
+	if slot3 == slot4 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 46-48, warpins: 1 ---
-	slot5 = slot3.questId
+	--- BLOCK #8 39-41, warpins: 1 ---
+	slot3 = slot2.questId
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 42-44, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getSecondTracingQuestId
+	slot3 = slot3()
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 45-47, warpins: 2 ---
+	slot4 = 0
 	--- END OF BLOCK #10 ---
 
-	slot5 = if not slot5 then
+	if slot3 > slot4 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 49-51, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getSecondTracingQuestId
-	slot5 = slot5()
+	--- BLOCK #11 48-54, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getCurSideQuestShowType
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot4 = slot4.taskType
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #12 52-54, warpins: 2 ---
-	slot6 = 0
+	--- BLOCK #12 55-57, warpins: 2 ---
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_PAGE_STYLE
+	slot4 = slot4.PURPLE
 	--- END OF BLOCK #12 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 55-61, warpins: 1 ---
-	slot6 = QuestUtils
-	slot6 = slot6.getCurSideQuestShowType
-	slot8 = slot5
-	slot6 = slot6(slot8)
-	slot6 = slot6.taskType
+	--- BLOCK #13 58-64, warpins: 2 ---
+	slot5 = slot1.btn
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "TaskType"
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
 	--- END OF BLOCK #13 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #14 62-64, warpins: 2 ---
-	slot6 = QuestConst
-	slot6 = slot6.QUEST_PAGE_STYLE
-	slot6 = slot6.PURPLE
+	--- BLOCK #14 65-70, warpins: 1 ---
+	slot3 = slot2.pageType
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.QUEST
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 65-71, warpins: 2 ---
-	slot7 = slot4.btn
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "TaskType"
-	slot11 = slot6
-
-	slot7(slot9, slot10, slot11)
-
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
-
-
-	--- BLOCK #16 72-77, warpins: 1 ---
-	slot5 = slot3.pageType
-	slot6 = QuestConst
-	slot6 = slot6.QUEST_HUD_PAGE_TYPE
-	slot6 = slot6.QUEST
-	--- END OF BLOCK #16 ---
-
-	if slot5 == slot6 then
-	JUMP TO BLOCK #17
+	if slot3 == slot4 then
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #17 78-80, warpins: 1 ---
-	slot5 = slot3.questId
+	--- BLOCK #15 71-73, warpins: 1 ---
+	slot3 = slot2.questId
+	--- END OF BLOCK #15 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 74-76, warpins: 1 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getTracingQuestId
+	slot3 = slot3()
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 77-79, warpins: 2 ---
+	slot4 = 0
 	--- END OF BLOCK #17 ---
 
-	slot5 = if not slot5 then
+	if slot3 > slot4 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 81-83, warpins: 1 ---
-	slot5 = QuestUtils
-	slot5 = slot5.getTracingQuestId
-	slot5 = slot5()
+	--- BLOCK #18 80-90, warpins: 1 ---
+	slot4 = QuestUtils
+	slot4 = slot4.getCurSideQuestShowType
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = slot1.btn
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "TaskType"
+	slot9 = slot4.taskType
+
+	slot5(slot7, slot8, slot9)
+
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 84-86, warpins: 2 ---
-	slot6 = 0
+	--- BLOCK #19 91-98, warpins: 1 ---
+	slot4 = slot1.btn
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "TaskType"
+	slot8 = QuestConst
+	slot8 = slot8.QUEST_PAGE_STYLE
+	slot8 = slot8.BLUE
+
+	slot4(slot6, slot7, slot8)
+
 	--- END OF BLOCK #19 ---
 
-	if slot5 > slot6 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 87-97, warpins: 1 ---
-	slot6 = QuestUtils
-	slot6 = slot6.getCurSideQuestShowType
-	slot8 = slot5
-	slot6 = slot6(slot8)
-	slot7 = slot4.btn
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "TaskType"
-	slot11 = slot6.taskType
-
-	slot7(slot9, slot10, slot11)
-
+	--- BLOCK #20 99-99, warpins: 5 ---
+	return
 	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 98-105, warpins: 1 ---
-	slot6 = slot4.btn
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "TaskType"
-	slot10 = QuestConst
-	slot10 = slot10.QUEST_PAGE_STYLE
-	slot10 = slot10.BLUE
+end
 
-	slot6(slot8, slot9, slot10)
+slot15[slot49] = slot50
+slot49 = "onRefreshPageItemState"
 
-	--- END OF BLOCK #21 ---
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot1.btn
+	slot5 = slot0.showTab
+	slot6 = slot3.pageType
+	--- END OF BLOCK #0 ---
 
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 106-110, warpins: 5 ---
-	slot5 = slot4.btn
-	slot6 = slot0.showTab
-	slot7 = slot3.pageType
-	--- END OF BLOCK #22 ---
-
-	if slot6 ~= slot7 then
-	JUMP TO BLOCK #23
+	if slot5 ~= slot6 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #23 111-112, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #23 ---
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #24 113-113, warpins: 1 ---
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-19, warpins: 2 ---
+	slot4.isSelected = slot5
+	slot4 = QuestUtils
+	slot4 = slot4.getTabPageList
+	slot4 = slot4()
+	slot5 = slot1.line
+	slot7 = slot5
+	slot5 = slot5.SetActive
+	slot8 = #slot4
+	slot8 = slot8 - 1
+	--- END OF BLOCK #3 ---
+
+	if slot2 == slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-21, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 22-22, warpins: 1 ---
+	slot8 = true
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-25, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 26-29, warpins: 1 ---
+	slot5 = #slot4
+	slot6 = 1
+	--- END OF BLOCK #7 ---
+
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 30-35, warpins: 1 ---
+	slot5 = slot0.switchPageKey
+	slot5 = slot5.gameObject
+	slot7 = slot5
+	slot5 = slot5.SetActiveEx
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 36-38, warpins: 3 ---
+	slot5 = slot3.questId
+	--- END OF BLOCK #9 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 39-41, warpins: 1 ---
+	slot5 = slot1.btn
 	slot6 = true
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 114-124, warpins: 2 ---
 	slot5.isSelected = slot6
-	slot5 = QuestUtils
-	slot5 = slot5.getTabPageList
-	slot5 = slot5()
-	slot6 = slot4.line
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = #slot5
-	slot9 = slot9 - 1
-	--- END OF BLOCK #25 ---
 
-	if slot2 == slot9 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #26 125-126, warpins: 1 ---
-	slot9 = false
-	--- END OF BLOCK #26 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
+	--- BLOCK #11 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
-	--- BLOCK #27 127-127, warpins: 1 ---
-	slot9 = true
 
-	--- END OF BLOCK #27 ---
+end
 
-	FLOW; TARGET BLOCK #28
+slot15[slot49] = slot50
+slot49 = "onRefreshPageItemClick"
 
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot4 = slot1.btn
 
-	--- BLOCK #28 128-131, warpins: 2 ---
-	slot6(slot8, slot9)
-
-	slot6 = slot3.questId
-	--- END OF BLOCK #28 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #29 132-134, warpins: 1 ---
-	slot6 = slot4.btn
-	slot7 = true
-	slot6.isSelected = slot7
-	--- END OF BLOCK #29 ---
-
-	FLOW; TARGET BLOCK #30
-
-
-	--- BLOCK #30 135-147, warpins: 2 ---
-	slot6 = slot4.btn
-
-	slot7 = function()
+	slot5 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.clickSwitchCd
@@ -15557,48 +19514,48 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot6.luaClick = slot7
-	slot6 = slot4.btn
-	slot7 = nil
-	slot6.luaLongPress = slot7
-	slot6 = slot4.btn
-	slot7 = false
-	slot6.longPressLoadingEnabled = slot7
-	slot6 = slot4.btn
-	slot6 = slot6.isSelected
-	--- END OF BLOCK #30 ---
+	slot4.luaClick = slot5
+	slot4 = slot1.btn
+	slot5 = nil
+	slot4.luaLongPress = slot5
+	slot4 = slot1.btn
+	slot5 = false
+	slot4.longPressLoadingEnabled = slot5
+	slot4 = slot1.btn
+	slot4 = slot4.isSelected
+	--- END OF BLOCK #0 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #31
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #31 148-156, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.ui
-	slot6 = slot6.uiMgr
-	slot8 = slot6
-	slot6 = slot6.CheckIsMobileInteract
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #31 ---
+	--- BLOCK #1 14-22, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.uiMgr
+	slot6 = slot4
+	slot4 = slot4.CheckIsMobileInteract
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #1 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #32
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #32 157-162, warpins: 1 ---
-	slot6 = slot4.btn
-	slot7 = true
-	slot6.longPressLoadingEnabled = slot7
-	slot6 = slot4.btn
+	--- BLOCK #2 23-28, warpins: 1 ---
+	slot4 = slot1.btn
+	slot5 = true
+	slot4.longPressLoadingEnabled = slot5
+	slot4 = slot1.btn
 
-	slot7 = function(slot0)
+	slot5 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
@@ -15613,85 +19570,69 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot6.luaLongPress = slot7
-	--- END OF BLOCK #32 ---
+	slot4.luaLongPress = slot5
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #33 163-165, warpins: 3 ---
-	slot6 = slot0.clickSwitchPage
-	--- END OF BLOCK #33 ---
+	--- BLOCK #3 29-31, warpins: 3 ---
+	slot4 = slot0.clickSwitchPage
+	--- END OF BLOCK #3 ---
 
-	slot6 = if slot6 then
-	JUMP TO BLOCK #34
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #34 166-173, warpins: 1 ---
-	slot6 = slot4.btn
-	slot8 = slot6
-	slot6 = slot6.InvokeCallback
-	slot9 = CS
-	slot9 = slot9.XGUI
-	slot9 = slot9.EInvokeTime
-	slot9 = slot9.Custom1
+	--- BLOCK #4 32-39, warpins: 1 ---
+	slot4 = slot1.btn
+	slot6 = slot4
+	slot4 = slot4.InvokeCallback
+	slot7 = CS
+	slot7 = slot7.XGUI
+	slot7 = slot7.EInvokeTime
+	slot7 = slot7.Custom1
 
-	slot6(slot8, slot9)
+	slot4(slot6, slot7)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #35 174-175, warpins: 2 ---
+	--- BLOCK #5 40-41, warpins: 2 ---
 	return
-	--- END OF BLOCK #35 ---
-
-	FLOW; TARGET BLOCK #36
-
-
-	--- BLOCK #36 176-176, warpins: 2 ---
-	return
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onTabBoxLongPress"
+slot15[slot49] = slot50
+slot49 = "onTabBoxLongPress"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	slot4 = slot0
-	slot2 = slot0.isGrowTab
-	slot2 = slot2(slot4)
+slot50 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isGrowTab
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 14-18, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.openSpecialTrain
-	slot5 = slot1
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.openSpecialTrain
 
-	slot2(slot4, slot5)
+	slot1(slot3)
 
 	return
 
@@ -15700,25 +19641,24 @@ slot48 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 19-34, warpins: 2 ---
-	slot2 = QuestUtils
-	slot2 = slot2.getPageTraceQuestId
-	slot4 = slot0.showTab
-	slot2 = slot2(slot4)
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.quest
-	slot5 = slot3
-	slot3 = slot3.setCurSelectQuestId
-	slot6 = slot2
+	--- BLOCK #2 10-24, warpins: 2 ---
+	slot1 = QuestUtils
+	slot1 = slot1.getPageTraceQuestId
+	slot3 = slot0.showTab
+	slot1 = slot1(slot3)
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.quest
+	slot4 = slot2
+	slot2 = slot2.setCurSelectQuestId
+	slot5 = slot1
 
-	slot3(slot5, slot6)
+	slot2(slot4, slot5)
 
-	slot5 = slot0
-	slot3 = slot0.openQuest
-	slot6 = slot1
+	slot4 = slot0
+	slot2 = slot0.openQuest
 
-	slot3(slot5, slot6)
+	slot2(slot4)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -15727,10 +19667,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "refreshPageTabList"
+slot15[slot49] = slot50
+slot49 = "refreshPageTabList"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot1 = slot1.visible
@@ -15781,10 +19721,96 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onRefreshGrowObjectivesItem"
+slot15[slot49] = slot50
+slot49 = "resetPageTabList"
 
-slot48 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.visibleMap
+	slot1 = slot1.visible
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot1 = slot0.visibleMap
+	slot1 = slot1.questVisible
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot2 = slot0.pageList
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 12-21, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.checkUIShow
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_HUD_V2
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-28, warpins: 1 ---
+	slot2 = slot0.pageList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = QuestUtils
+	slot5 = slot5.getTabPageList
+	MULTRES = slot5()
+
+	slot2(slot4, MULTRES)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-29, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onRefreshGrowObjectivesItem"
+
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.onRefreshObjectivesItemCommon
@@ -15848,13 +19874,16 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-37, warpins: 2 ---
+	--- BLOCK #4 31-40, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.tryApplyTrackHint
 	slot7 = slot0.curSecObjectives
 	slot8 = slot3
+	slot9 = QuestConst
+	slot9 = slot9.QUEST_HUD_PAGE_TYPE
+	slot9 = slot9.GROW
 
-	slot4(slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	--- END OF BLOCK #4 ---
 
@@ -15865,7 +19894,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 38-40, warpins: 1 ---
+	--- BLOCK #5 41-43, warpins: 1 ---
 	slot4 = slot3.questId
 	--- END OF BLOCK #5 ---
 
@@ -15876,7 +19905,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 41-43, warpins: 1 ---
+	--- BLOCK #6 44-46, warpins: 1 ---
 	slot4 = slot3.objId
 	--- END OF BLOCK #6 ---
 
@@ -15887,7 +19916,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 44-50, warpins: 1 ---
+	--- BLOCK #7 47-53, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.format
 	slot6 = "%d%d"
@@ -15901,7 +19930,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 51-51, warpins: 4 ---
+	--- BLOCK #8 54-54, warpins: 4 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -15909,10 +19938,10 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "getFirstTraceSourceObjcv"
+slot15[slot49] = slot50
+slot49 = "getFirstTraceSourceObjcv"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -16004,10 +20033,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "shouldClaimTrackHint"
+slot15[slot49] = slot50
+slot49 = "shouldClaimTrackHint"
 
-slot48 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getFirstTraceSourceObjcv
@@ -16065,126 +20094,12 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "tryApplyTrackHint"
+slot15[slot49] = slot50
+slot49 = "getTrackObjcvData"
 
-slot48 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.shouldClaimTrackHint
-	slot6 = slot1
-	slot7 = slot2
-	slot3 = slot3(slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 8-11, warpins: 1 ---
-	slot0.curObjcvData = slot2
-	slot5 = slot0
-	slot3 = slot0.setTrackHint
-
-	slot3(slot5)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 12-12, warpins: 2 ---
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot15[slot47] = slot48
-slot47 = "setTrackHint"
-
-slot48 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.isQuestTab
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-9, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setQuestTrackHint
-
-	slot1(slot3)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #2 10-14, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.isGrowTab
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 15-18, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setGrowTrackHint
-
-	slot1(slot3)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 19-21, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setStoryTrackHint
-
-	slot1(slot3)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 22-22, warpins: 3 ---
-	return
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot15[slot47] = slot48
-slot47 = "setQuestTrackHint"
-
-slot48 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getTrackQuestHintComs
-	slot4 = slot0.clickQuestHintUButton
-	slot1 = slot1(slot3, slot4)
-	slot2 = slot0.curObjcvData
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.trackObjcvDataByPage
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -16194,51 +20109,253 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
-	slot2 = slot0.curObjcvData
-	slot2 = slot2.questId
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = slot0.trackObjcvDataByPage
+	slot2 = slot2[slot1]
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-19, warpins: 2 ---
-	slot3 = slot0.clickQuestHintUButton
-	slot5 = slot3
-	slot3 = slot3.SetActive
-	slot6 = false
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.isQuestTab
-	slot3 = slot3(slot5)
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot2
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTrackObjcvData"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.trackObjcvDataByPage
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot0.trackObjcvDataByPage = slot3
+	slot3 = slot0.trackObjcvDataByPage
+	slot3[slot1] = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "getTrackButton"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.trackButtonByPage
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = slot0.trackButtonByPage
+	slot2 = slot2[slot1]
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTrackButton"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.trackButtonByPage
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot0.trackButtonByPage = slot3
+	slot3 = slot0.trackButtonByPage
+	slot3[slot1] = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "getTrackHintDelayType"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.trackHintDelayTypeByPage
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.trackHintDelayTypeByPage
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	slot2 = 1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTrackHintDelayType"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.trackHintDelayTypeByPage
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot3 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot0.trackHintDelayTypeByPage = slot3
+	slot3 = slot0.trackHintDelayTypeByPage
+	slot3[slot1] = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "clearTrackHintDelayTimer"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.trackHintDelayTimerByPage
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot2 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot0.trackHintDelayTimerByPage = slot2
+	slot2 = slot0.trackHintDelayTimerByPage
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 20-27, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.setTrackHintCommon
-	slot6 = slot0.clickQuestHintUButton
-	slot7 = slot1
-	slot8 = slot2
-	slot9 = false
-	slot10 = true
+	--- BLOCK #3 10-17, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot5 = slot3
+	slot3 = slot3.killTimer
+	slot6 = slot2
 
-	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+	slot3(slot5, slot6)
+
+	slot3 = slot0.trackHintDelayTimerByPage
+	slot4 = nil
+	slot3[slot1] = slot4
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 28-28, warpins: 2 ---
+	--- BLOCK #4 18-18, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -16246,10 +20363,613 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setStoryTrackHint"
+slot15[slot49] = slot50
+slot49 = "hideTrackHintButton"
 
-slot48 = function(slot0)
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.clearTrackHintDelayTimer
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.setTrackButton
+	slot6 = slot1
+	slot7 = nil
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.SetActive
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "resetTrackHintPage"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.hideTrackHintButton
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.setTrackHintDelayType
+	slot6 = slot1
+	slot7 = 1
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.setTrackObjcvData
+	slot6 = slot1
+	slot7 = nil
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "removeStaleQuestObjectives"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = {}
+	slot4 = 0
+	slot5 = slot1.itemCount
+	slot5 = slot5 - 1
+	slot6 = 1
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+	--- BLOCK #1 7-12, warpins: 2 ---
+	slot10 = slot1
+	slot8 = slot1.GetData
+	slot11 = slot7
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #1 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #2 13-17, warpins: 1 ---
+	slot9 = false
+	slot10 = 1
+	slot11 = #slot2
+	slot12 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 18-22, warpins: 2 ---
+	slot14 = slot2[slot13]
+	slot15 = slot14.questId
+	slot16 = slot8.questId
+	--- END OF BLOCK #3 ---
+
+	if slot15 == slot16 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 23-26, warpins: 1 ---
+	slot15 = slot14.objId
+	slot16 = slot8.objId
+	--- END OF BLOCK #4 ---
+
+	if slot15 == slot16 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-28, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 29-29, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot13=slot10, slot11, slot12
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #7
+
+	--- BLOCK #7 30-31, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-39, warpins: 1 ---
+	slot10 = #slot3
+	slot10 = slot10 + 1
+	slot11 = {}
+	slot12 = slot8.questId
+	slot11.questId = slot12
+	slot12 = slot8.objId
+	slot11.objId = slot12
+	slot3[slot10] = slot11
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 40-40, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #10
+
+	--- BLOCK #10 41-44, warpins: 1 ---
+	slot4 = 1
+	slot5 = #slot3
+	slot6 = 1
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 45-51, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.removeQuestObjective
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3[slot7]
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #11 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #12
+
+	--- BLOCK #12 52-52, warpins: 1 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "refreshTrackHintList"
+
+slot50 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.resetTrackHintPage
+	slot8 = slot1
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot5 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-18, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.removeStaleQuestObjectives
+	slot9 = slot2
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	slot8 = slot2
+	slot6 = slot2.SetList
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "getTrackHintPageTypeByList"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.storyTracingList
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.STORY
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot2 = slot0.growTracingList
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.GROW
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-19, warpins: 3 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.QUEST
+
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "getHintButtonFieldByPage"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.STORY
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = "clickStoryHintUButton"
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.GROW
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-15, warpins: 1 ---
+	slot2 = "clickGrowHintUButton"
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-17, warpins: 3 ---
+	slot2 = "clickQuestHintUButton"
+
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "tryApplyTrackHint"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.shouldClaimTrackHint
+	slot7 = slot1
+	slot8 = slot2
+	slot4 = slot4(slot6, slot7, slot8)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-16, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setTrackObjcvData
+	slot7 = slot3
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.setTrackHint
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 17-17, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setTrackHint"
+
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot1 = slot0.showTab
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-8, warpins: 2 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.QUEST
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-12, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setQuestTrackHint
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 13-17, warpins: 1 ---
+	slot2 = QuestConst
+	slot2 = slot2.QUEST_HUD_PAGE_TYPE
+	slot2 = slot2.GROW
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-21, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setGrowTrackHint
+
+	slot2(slot4)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.setStoryTrackHint
+
+	slot2(slot4)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-25, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setQuestTrackHint"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getTrackQuestHintComs
+	slot4 = slot0.clickQuestHintUButton
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot0
+	slot2 = slot0.getTrackObjcvData
+	slot5 = QuestConst
+	slot5 = slot5.QUEST_HUD_PAGE_TYPE
+	slot5 = slot5.QUEST
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-13, warpins: 1 ---
+	slot3 = slot2.questId
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-25, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.hideTrackHintButton
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.QUEST
+	slot8 = slot0.clickQuestHintUButton
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.isQuestTab
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 26-33, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setTrackHintCommon
+	slot7 = slot0.clickQuestHintUButton
+	slot8 = slot1
+	slot9 = slot3
+	slot10 = false
+	slot11 = true
+
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 34-34, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setStoryTrackHint"
+
+slot50 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isGrowTab
@@ -16272,66 +20992,72 @@ slot48 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-13, warpins: 2 ---
+	--- BLOCK #2 7-18, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getTrackQuestHintComs
 	slot4 = slot0.clickStoryHintUButton
 	slot1 = slot1(slot3, slot4)
-	slot2 = slot0.curObjcvData
+	slot4 = slot0
+	slot2 = slot0.getTrackObjcvData
+	slot5 = QuestConst
+	slot5 = slot5.QUEST_HUD_PAGE_TYPE
+	slot5 = slot5.STORY
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-15, warpins: 1 ---
-	slot2 = slot0.curObjcvData
-	slot2 = slot2.questId
+	--- BLOCK #3 19-19, warpins: 1 ---
+	slot3 = slot2.questId
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-25, warpins: 2 ---
-	slot3 = slot0.clickStoryHintUButton
-	slot5 = slot3
-	slot3 = slot3.SetActive
-	slot6 = false
+	--- BLOCK #4 20-31, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.hideTrackHintButton
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.STORY
+	slot8 = slot0.clickStoryHintUButton
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7, slot8)
 
-	slot5 = slot0
-	slot3 = slot0.isStoryTab
-	slot3 = slot3(slot5)
+	slot6 = slot0
+	slot4 = slot0.isStoryTab
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 26-33, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.setTrackHintCommon
-	slot6 = slot0.clickStoryHintUButton
-	slot7 = slot1
-	slot8 = slot2
-	slot9 = true
-	slot10 = false
+	--- BLOCK #5 32-39, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setTrackHintCommon
+	slot7 = slot0.clickStoryHintUButton
+	slot8 = slot1
+	slot9 = slot3
+	slot10 = true
+	slot11 = false
 
-	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 34-34, warpins: 2 ---
+	--- BLOCK #6 40-40, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -16339,12 +21065,18 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setGrowTrackHint"
+slot15[slot49] = slot50
+slot49 = "setGrowTrackHint"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.curObjcvData
+slot50 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getTrackObjcvData
+	slot4 = QuestConst
+	slot4 = slot4.QUEST_HUD_PAGE_TYPE
+	slot4 = slot4.GROW
+	slot1 = slot1(slot3, slot4)
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -16354,18 +21086,21 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 9-9, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #49
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-11, warpins: 1 ---
+	--- BLOCK #2 10-16, warpins: 2 ---
 	slot2 = slot0.rootUComponent
 	slot4 = slot2
 	slot2 = slot2.TryGetCurrentPage
-	slot5 = "tips"
+	slot5 = "Tips"
 	slot2, slot3 = slot2(slot4, slot5)
+
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
@@ -16375,7 +21110,7 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-13, warpins: 1 ---
+	--- BLOCK #3 17-18, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot3 == 1 then
@@ -16385,105 +21120,280 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #4 14-14, warpins: 1 ---
+	--- BLOCK #4 19-19, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #50
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-41, warpins: 2 ---
+	--- BLOCK #5 20-38, warpins: 3 ---
 	slot4 = slot1.questId
 	slot7 = slot0
 	slot5 = slot0.getTrackQuestHintComs
 	slot8 = slot0.clickGrowHintUButton
 	slot5 = slot5(slot7, slot8)
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.prefsCacheUtils
-	slot8 = slot6
-	slot6 = slot6.getBool
-	slot9 = "HudV2Enable"
-	slot10 = false
-	slot6 = slot6(slot8, slot9, slot10)
-	slot7 = slot5.btn
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = false
-
-	slot7(slot9, slot10)
-
-	slot7 = nil
-	slot0.trackButton = slot7
-	slot9 = slot0
-	slot7 = slot0.clearGrowTrackRedDot
+	slot8 = slot0
+	slot6 = slot0.hideTrackHintButton
+	slot9 = QuestConst
+	slot9 = slot9.QUEST_HUD_PAGE_TYPE
+	slot9 = slot9.GROW
 	slot10 = slot5.btn
 
-	slot7(slot9, slot10)
+	slot6(slot8, slot9, slot10)
 
-	slot7 = slot1.isEmptyTracing
+	slot8 = slot0
+	slot6 = slot0.clearGrowTrackRedDot
+	slot9 = slot5.btn
+
+	slot6(slot8, slot9)
+
+	slot6 = slot1.isEmptyTracing
 	--- END OF BLOCK #5 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 42-59, warpins: 1 ---
-	slot7 = slot5.btn
-	slot9 = slot7
-	slot7 = slot7.TryChangePage
-	slot10 = "TrackType"
-	slot11 = 0
+	--- BLOCK #6 39-44, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.setGrowTrackHintEmpty
+	slot9 = slot5
+	slot10 = slot1
 
-	slot7(slot9, slot10, slot11)
+	slot6(slot8, slot9, slot10)
 
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 45-48, warpins: 2 ---
+	slot6 = ""
+	slot7 = slot1.hudType
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 49-52, warpins: 1 ---
+	slot7 = slot1.hudType
+	slot8 = 0
+	--- END OF BLOCK #8 ---
+
+	if slot7 > slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 53-58, warpins: 1 ---
+	slot7 = slot1.hudType
+	slot8 = QuestConst
+	slot8 = slot8.SPECIAL_QUEST_HUD_STATE
+	slot8 = slot8.CHAPTER_ADVANCE
+	--- END OF BLOCK #9 ---
+
+	if slot7 ~= slot8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 59-65, warpins: 1 ---
 	slot9 = slot0
-	slot7 = slot0.showGrowClickHindBtn
-	slot10 = true
+	slot7 = slot0.setGrowTrackHintChapter
+	slot10 = slot5
+	slot11 = slot1
+	slot7 = slot7(slot9, slot10, slot11)
+	slot6 = slot7
+	--- END OF BLOCK #10 ---
 
-	slot7(slot9, slot10)
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
-	slot7 = slot5.btn
-	slot0.trackButton = slot7
+
+	--- BLOCK #11 66-68, warpins: 3 ---
+	slot7 = slot1.hudType
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 69-72, warpins: 1 ---
+	slot7 = slot1.hudType
+	slot8 = 0
+	--- END OF BLOCK #12 ---
+
+	if slot7 > slot8 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 73-78, warpins: 1 ---
+	slot7 = slot1.hudType
+	slot8 = QuestConst
+	slot8 = slot8.SPECIAL_QUEST_HUD_STATE
+	slot8 = slot8.CHAPTER_ADVANCE
+	--- END OF BLOCK #13 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 79-85, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.setGrowTrackHintAdvance
+	slot10 = slot5
+	slot11 = slot4
+	slot7 = slot7(slot9, slot10, slot11)
+	slot6 = slot7
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #15 86-90, warpins: 3 ---
+	slot9 = slot0
+	slot7 = slot0.isStoryTab
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #15 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 91-92, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 93-99, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.setGrowTrackHintSecondQuest
+	slot10 = slot5
+	slot11 = slot1
+	slot12 = slot4
+	slot7 = slot7(slot9, slot10, slot11, slot12)
+	slot6 = slot7
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 100-109, warpins: 5 ---
 	slot7 = ClientTextUtils
 	slot7 = slot7.setText
 	slot9 = slot5.traceText
-	slot10 = slot1.hint
-	--- END OF BLOCK #6 ---
+	slot10 = slot6
 
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #7
+	slot7(slot9, slot10)
+
+	slot9 = slot0
+	slot7 = slot0.setupGrowTraceBinding
+	slot10 = slot5
+
+	slot7(slot9, slot10)
+
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setGrowTrackHintEmpty"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-23, warpins: 1 ---
+	slot3 = slot1.btn
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "TrackType"
+	slot7 = 0
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.showGrowClickHindBtn
+	slot6 = true
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.setTrackButton
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_HUD_PAGE_TYPE
+	slot6 = slot6.GROW
+	slot7 = slot1.btn
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot1.traceText
+	slot6 = slot2.hint
+	--- END OF BLOCK #0 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #7 60-63, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "QUEST_TRACK_TEXT"
-	slot10 = slot10(slot12)
+	--- BLOCK #1 24-27, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "QUEST_TRACK_TEXT"
+	slot6 = slot6(slot8)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #8 64-73, warpins: 2 ---
-	slot7(slot9, slot10)
+	--- BLOCK #2 28-37, warpins: 2 ---
+	slot3(slot5, slot6)
 
-	slot7 = slot5.btn
+	slot3 = slot1.btn
 
-	slot8 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.openSpecialTrain
-		slot3 = isHudV2Enable
 
-		slot0(slot2, slot3)
+		slot0(slot2)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -16492,105 +21402,78 @@ slot48 = function(slot0)
 
 	end
 
-	slot7.luaClick = slot8
-	slot9 = slot0
-	slot7 = slot0.setupGrowTraceBinding
-	slot10 = slot5
+	slot3.luaClick = slot4
+	slot5 = slot0
+	slot3 = slot0.setupGrowTraceBinding
+	slot6 = slot1
 
-	slot7(slot9, slot10)
+	slot3(slot5, slot6)
 
 	return
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
+	--- END OF BLOCK #2 ---
 
 
-	--- BLOCK #9 74-77, warpins: 2 ---
-	slot7 = ""
-	slot8 = slot1.hudType
-	--- END OF BLOCK #9 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #10
+end
+
+slot15[slot49] = slot50
+slot49 = "setGrowTrackHintChapter"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot2.hint
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #10 78-81, warpins: 1 ---
-	slot8 = slot1.hudType
-	slot9 = 0
-	--- END OF BLOCK #10 ---
+	--- BLOCK #1 4-5, warpins: 1 ---
+	--- END OF BLOCK #1 ---
 
-	if slot8 > slot9 then
-	JUMP TO BLOCK #11
+	if slot3 ~= "" then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #11 82-87, warpins: 1 ---
-	slot8 = slot1.hudType
-	slot9 = QuestConst
-	slot9 = slot9.SPECIAL_QUEST_HUD_STATE
-	slot9 = slot9.CHAPTER_ADVANCE
-	--- END OF BLOCK #11 ---
+	--- BLOCK #2 6-15, warpins: 1 ---
+	slot4 = slot1.btn
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "TrackType"
+	slot8 = 0
 
-	if slot8 ~= slot9 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #16
-	end
+	slot4(slot6, slot7, slot8)
 
+	slot6 = slot0
+	slot4 = slot0.showGrowClickHindBtn
+	slot7 = true
 
-	--- BLOCK #12 88-90, warpins: 1 ---
-	slot7 = slot1.hint
-	--- END OF BLOCK #12 ---
+	slot4(slot6, slot7)
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #15
-	end
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #13 91-92, warpins: 1 ---
-	--- END OF BLOCK #13 ---
+	--- BLOCK #3 16-32, warpins: 3 ---
+	slot6 = slot0
+	slot4 = slot0.setTrackButton
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.GROW
+	slot8 = slot1.btn
 
-	if slot7 ~= "" then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
+	slot4(slot6, slot7, slot8)
 
+	slot4 = slot1.btn
 
-	--- BLOCK #14 93-102, warpins: 1 ---
-	slot8 = slot5.btn
-	slot10 = slot8
-	slot8 = slot8.TryChangePage
-	slot11 = "TrackType"
-	slot12 = 0
-
-	slot8(slot10, slot11, slot12)
-
-	slot10 = slot0
-	slot8 = slot0.showGrowClickHindBtn
-	slot11 = true
-
-	slot8(slot10, slot11)
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 103-113, warpins: 3 ---
-	slot8 = slot5.btn
-	slot0.trackButton = slot8
-	slot8 = slot5.btn
-
-	slot9 = function()
+	slot5 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = objcvData
 		slot0 = slot0.hudType
@@ -16606,7 +21489,7 @@ slot48 = function(slot0)
 		end
 
 
-		--- BLOCK #1 8-30, warpins: 1 ---
+		--- BLOCK #1 8-29, warpins: 1 ---
 		slot0 = QuestUtils
 		slot0 = slot0.getChapterCourseQuestId
 		slot2 = QuestUtils
@@ -16629,29 +21512,27 @@ slot48 = function(slot0)
 		slot2 = self
 		slot4 = slot2
 		slot2 = slot2.openQuest
-		slot5 = isHudV2Enable
 
-		slot2(slot4, slot5)
+		slot2(slot4)
 
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 31-35, warpins: 1 ---
+		--- BLOCK #2 30-33, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.openSpecialTrain
-		slot3 = isHudV2Enable
 
-		slot0(slot2, slot3)
+		slot0(slot2)
 
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 36-36, warpins: 2 ---
+		--- BLOCK #3 34-34, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -16659,119 +21540,96 @@ slot48 = function(slot0)
 
 	end
 
-	slot8.luaClick = slot9
-	slot10 = slot0
-	slot8 = slot0.setupGrowChapterRedDot
-	slot11 = slot5.btn
-	slot12 = slot1
+	slot4.luaClick = slot5
+	slot6 = slot0
+	slot4 = slot0.setupGrowChapterRedDot
+	slot7 = slot1.btn
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	return slot3
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setGrowTrackHintAdvance"
+
+slot50 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = ""
+	slot4 = QuestUtils
+	slot4 = slot4.canTraceItemSource
+	slot6 = slot2
+	slot4, slot5 = slot4(slot6)
+	slot6 = QuestUtils
+	slot6 = slot6.canQuestShowPathfindingFlag
+	slot8 = slot2
+	slot6, slot7 = slot6(slot8)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-13, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #2 14-32, warpins: 2 ---
+	slot8 = slot1.btn
+	slot10 = slot8
+	slot8 = slot8.TryChangePage
+	slot11 = "TrackType"
+	slot12 = 0
 
 	slot8(slot10, slot11, slot12)
 
-	--- END OF BLOCK #15 ---
+	slot10 = slot0
+	slot8 = slot0.showGrowClickHindBtn
+	slot11 = true
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #48
+	slot8(slot10, slot11)
 
+	slot10 = slot0
+	slot8 = slot0.setTrackButton
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_HUD_PAGE_TYPE
+	slot11 = slot11.GROW
+	slot12 = slot1.btn
 
-	--- BLOCK #16 114-116, warpins: 3 ---
-	slot8 = slot1.hudType
-	--- END OF BLOCK #16 ---
+	slot8(slot10, slot11, slot12)
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #17
+	--- END OF BLOCK #2 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #17 117-120, warpins: 1 ---
-	slot8 = slot1.hudType
-	slot9 = 0
-	--- END OF BLOCK #17 ---
+	--- BLOCK #3 33-41, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "QUEST_TRACK_TEXT"
+	slot8 = slot8(slot10)
+	slot3 = slot8
+	slot8 = slot1.btn
 
-	if slot8 > slot9 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #18 121-126, warpins: 1 ---
-	slot8 = slot1.hudType
-	slot9 = QuestConst
-	slot9 = slot9.SPECIAL_QUEST_HUD_STATE
-	slot9 = slot9.CHAPTER_ADVANCE
-	--- END OF BLOCK #18 ---
-
-	if slot8 == slot9 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #30
-	end
-
-
-	--- BLOCK #19 127-136, warpins: 1 ---
-	slot8 = QuestUtils
-	slot8 = slot8.canTraceItemSource
-	slot10 = slot4
-	slot8, slot9 = slot8(slot10)
-	slot10 = QuestUtils
-	slot10 = slot10.canQuestShowPathfindingFlag
-	slot12 = slot4
-	slot10, slot11 = slot10(slot12)
-	--- END OF BLOCK #19 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 137-138, warpins: 1 ---
-	--- END OF BLOCK #20 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #29
-	end
-
-
-	--- BLOCK #21 139-152, warpins: 2 ---
-	slot12 = slot5.btn
-	slot14 = slot12
-	slot12 = slot12.TryChangePage
-	slot15 = "TrackType"
-	slot16 = 0
-
-	slot12(slot14, slot15, slot16)
-
-	slot14 = slot0
-	slot12 = slot0.showGrowClickHindBtn
-	slot15 = true
-
-	slot12(slot14, slot15)
-
-	slot12 = slot5.btn
-	slot0.trackButton = slot12
-	--- END OF BLOCK #21 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 153-161, warpins: 1 ---
-	slot12 = pg
-	slot12 = slot12.getGameString
-	slot14 = "QUEST_TRACK_TEXT"
-	slot12 = slot12(slot14)
-	slot7 = slot12
-	slot12 = slot5.btn
-
-	slot13 = function()
+	slot9 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.clickCD
@@ -16828,74 +21686,74 @@ slot48 = function(slot0)
 
 	end
 
-	slot12.luaClick = slot13
-	--- END OF BLOCK #22 ---
+	slot8.luaClick = slot9
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #29
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #23 162-163, warpins: 1 ---
-	--- END OF BLOCK #23 ---
+	--- BLOCK #4 42-43, warpins: 1 ---
+	--- END OF BLOCK #4 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #24
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #24 164-165, warpins: 1 ---
-	--- END OF BLOCK #24 ---
+	--- BLOCK #5 44-45, warpins: 1 ---
+	--- END OF BLOCK #5 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #25
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #25 166-168, warpins: 1 ---
-	slot12 = 0
-	--- END OF BLOCK #25 ---
+	--- BLOCK #6 46-48, warpins: 1 ---
+	slot8 = 0
+	--- END OF BLOCK #6 ---
 
-	if slot9 > slot12 then
-	JUMP TO BLOCK #26
+	if slot5 > slot8 then
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #26 169-176, warpins: 1 ---
-	slot12 = pg
-	slot12 = slot12.getLocalizationText
-	slot14 = ItemSourceData
-	slot14 = slot14[slot9]
-	slot14 = slot14.buttonTxt
-	slot12 = slot12(slot14)
-	--- END OF BLOCK #26 ---
+	--- BLOCK #7 49-56, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getLocalizationText
+	slot10 = ItemSourceData
+	slot10 = slot10[slot5]
+	slot10 = slot10.buttonTxt
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #7 ---
 
-	slot7 = if not slot12 then
-	JUMP TO BLOCK #27
+	slot3 = if not slot8 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #27 177-181, warpins: 1 ---
-	slot12 = pg
-	slot12 = slot12.getGameString
-	slot14 = "QUEST_TRACK_TEXT"
-	slot12 = slot12(slot14)
-	slot7 = slot12
-	--- END OF BLOCK #27 ---
+	--- BLOCK #8 57-61, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "QUEST_TRACK_TEXT"
+	slot8 = slot8(slot10)
+	slot3 = slot8
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #28
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #28 182-184, warpins: 2 ---
-	slot12 = slot5.btn
+	--- BLOCK #9 62-64, warpins: 2 ---
+	slot8 = slot1.btn
 
-	slot13 = function()
+	slot9 = function()
 		--- BLOCK #0 1-18, warpins: 1 ---
 		slot0 = {}
 		slot1 = sourceId
@@ -16925,152 +21783,144 @@ slot48 = function(slot0)
 
 	end
 
-	slot12.luaClick = slot13
-	--- END OF BLOCK #28 ---
+	slot8.luaClick = slot9
 
-	FLOW; TARGET BLOCK #29
+	--- END OF BLOCK #9 ---
 
-
-	--- BLOCK #29 185-185, warpins: 6 ---
-	--- END OF BLOCK #29 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #48
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #30 186-190, warpins: 3 ---
-	slot10 = slot0
-	slot8 = slot0.isStoryTab
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #30 ---
+	--- BLOCK #10 65-66, warpins: 6 ---
+	return slot3
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "setGrowTrackHintSecondQuest"
+
+slot50 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot4 = ""
+	slot5 = table
+	slot5 = slot5.contains
+	slot7 = NEED_SWITCH_STORY_QUEST_IDS
+	slot8 = slot3
+	slot5 = slot5(slot7, slot8)
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.SpecialTrainNew
+	slot8 = slot6
+	slot6 = slot6.isCanShowTraceSecondQuestFunc
+	slot9 = slot3
+	slot6, slot7 = slot6(slot8, slot9)
+	--- END OF BLOCK #0 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #1 17-19, warpins: 1 ---
+	slot8 = slot6.isCanGetReward
+	--- END OF BLOCK #1 ---
 
 	slot8 = if not slot8 then
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #31 191-192, warpins: 1 ---
-	--- END OF BLOCK #31 ---
+	--- BLOCK #2 20-20, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #32
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 21-23, warpins: 2 ---
+	slot9 = slot6.rewardFlags
+	--- END OF BLOCK #3 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #32 193-207, warpins: 1 ---
-	slot8 = table
-	slot8 = slot8.contains
-	slot10 = NEED_SWITCH_STORY_QUEST_IDS
-	slot11 = slot4
-	slot8 = slot8(slot10, slot11)
-	slot9 = pg
-	slot9 = slot9.global
-	slot9 = slot9.ui
-	slot9 = slot9.SpecialTrainNew
-	slot11 = slot9
-	slot9 = slot9.isCanShowTraceSecondQuestFunc
-	slot12 = slot4
-	slot9, slot10 = slot9(slot11, slot12)
-	--- END OF BLOCK #32 ---
+	--- BLOCK #4 24-24, warpins: 1 ---
+	slot9 = false
+	--- END OF BLOCK #4 ---
 
-	slot9 = if slot9 then
-	JUMP TO BLOCK #33
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-27, warpins: 2 ---
+	slot10 = slot2.isObjFined
+	--- END OF BLOCK #5 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #33 208-210, warpins: 1 ---
-	slot11 = slot9.isCanGetReward
-	--- END OF BLOCK #33 ---
-
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #35
-	end
-
-
-	--- BLOCK #34 211-211, warpins: 1 ---
-	slot11 = false
-	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 212-214, warpins: 2 ---
-	slot12 = slot9.rewardFlags
-	--- END OF BLOCK #35 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #37
-	end
-
-
-	--- BLOCK #36 215-215, warpins: 1 ---
-	slot12 = false
-	--- END OF BLOCK #36 ---
-
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 216-218, warpins: 2 ---
-	slot13 = slot1.isObjFined
-	--- END OF BLOCK #37 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #38
-	else
-	JUMP TO BLOCK #39
-	end
-
-
-	--- BLOCK #38 219-223, warpins: 1 ---
-	slot15 = slot0
-	slot13 = slot0.showGrowClickHindBtn
-	slot16 = false
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #38 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
-
-
-	--- BLOCK #39 224-233, warpins: 1 ---
-	slot13 = slot5.btn
-	slot15 = slot13
-	slot13 = slot13.TryChangePage
-	slot16 = "TrackType"
-	slot17 = 0
-
-	slot13(slot15, slot16, slot17)
-
-	slot15 = slot0
-	slot13 = slot0.showGrowClickHindBtn
-	slot16 = true
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 234-255, warpins: 2 ---
+	--- BLOCK #6 28-32, warpins: 1 ---
+	slot12 = slot0
+	slot10 = slot0.showGrowClickHindBtn
 	slot13 = false
-	slot0.isHaveCanGetReward = slot13
-	slot13 = slot5.btn
-	slot0.trackButton = slot13
-	slot13 = slot5.btn
 
-	slot14 = function()
-		--- BLOCK #0 1-11, warpins: 1 ---
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 33-42, warpins: 1 ---
+	slot10 = slot1.btn
+	slot12 = slot10
+	slot10 = slot10.TryChangePage
+	slot13 = "TrackType"
+	slot14 = 0
+
+	slot10(slot12, slot13, slot14)
+
+	slot12 = slot0
+	slot10 = slot0.showGrowClickHindBtn
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 43-69, warpins: 2 ---
+	slot10 = false
+	slot0.isHaveCanGetReward = slot10
+	slot12 = slot0
+	slot10 = slot0.setTrackButton
+	slot13 = QuestConst
+	slot13 = slot13.QUEST_HUD_PAGE_TYPE
+	slot13 = slot13.GROW
+	slot14 = slot1.btn
+
+	slot10(slot12, slot13, slot14)
+
+	slot10 = slot1.btn
+
+	slot11 = function()
+		--- BLOCK #0 1-10, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.onGrowSecondQuestClick
@@ -17079,9 +21929,8 @@ slot48 = function(slot0)
 		slot5 = canGet
 		slot6 = hasGet
 		slot7 = isSwitchPageQuest
-		slot8 = isHudV2Enable
 
-		slot0(slot2, slot3, slot4, slot5, slot6, slot7, slot8)
+		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -17090,139 +21939,106 @@ slot48 = function(slot0)
 
 	end
 
-	slot13.luaClick = slot14
-	slot15 = slot0
-	slot13 = slot0.getGrowSecondQuestText
-	slot16 = slot4
-	slot17 = slot10
-	slot18 = slot11
-	slot19 = slot12
-	slot20 = slot8
-	slot13 = slot13(slot15, slot16, slot17, slot18, slot19, slot20)
-	slot7 = slot13
-	slot13 = QuestUtils
-	slot13 = slot13.isPromotionQuest
-	slot15 = slot4
-	slot13 = slot13(slot15)
-	--- END OF BLOCK #40 ---
+	slot10.luaClick = slot11
+	slot12 = slot0
+	slot10 = slot0.getGrowSecondQuestText
+	slot13 = slot3
+	slot14 = slot7
+	slot15 = slot8
+	slot16 = slot9
+	slot17 = slot5
+	slot10 = slot10(slot12, slot13, slot14, slot15, slot16, slot17)
+	slot4 = slot10
+	slot10 = QuestUtils
+	slot10 = slot10.isPromotionQuest
+	slot12 = slot3
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #8 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #9 70-77, warpins: 1 ---
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = RedDotConst
+	slot12 = slot12.RedDotPath
+	slot12 = slot12.SPECIAL_TRAIN_TAB_TREE_ITEM
+	slot13 = slot6.taskId
+	--- END OF BLOCK #9 ---
 
 	slot13 = if not slot13 then
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #41 256-263, warpins: 1 ---
-	slot13 = string
-	slot13 = slot13.format
-	slot15 = RedDotConst
-	slot15 = slot15.RedDotPath
-	slot15 = slot15.SPECIAL_TRAIN_TAB_TREE_ITEM
-	slot16 = slot9.taskId
-	--- END OF BLOCK #41 ---
+	--- BLOCK #10 78-78, warpins: 1 ---
+	slot13 = 0
+	--- END OF BLOCK #10 ---
 
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #42
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 79-87, warpins: 2 ---
+	slot10 = slot10(slot12, slot13)
+	slot0.trackSpecialCanGetRewardTreePath = slot10
+	slot11 = pg
+	slot11 = slot11.global
+	slot11 = slot11.setRedDot
+	slot13 = slot10
+	slot14 = slot1.btn
+	--- END OF BLOCK #11 ---
+
+	slot15 = if slot8 then
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #42 264-264, warpins: 1 ---
-	slot16 = 0
-	--- END OF BLOCK #42 ---
+	--- BLOCK #12 88-88, warpins: 1 ---
+	slot15 = not slot9
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #43
-
-
-	--- BLOCK #43 265-273, warpins: 2 ---
-	slot13 = slot13(slot15, slot16)
-	slot0.trackSpecialCanGetRewardTreePath = slot13
-	slot14 = pg
-	slot14 = slot14.global
-	slot14 = slot14.setRedDot
-	slot16 = slot13
-	slot17 = slot5.btn
-	--- END OF BLOCK #43 ---
-
-	slot18 = if slot11 then
-	JUMP TO BLOCK #44
-	else
-	JUMP TO BLOCK #45
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #44 274-274, warpins: 1 ---
-	slot18 = not slot12
-	--- END OF BLOCK #44 ---
+	--- BLOCK #13 89-92, warpins: 2 ---
+	slot16 = RedDotConst
+	slot16 = slot16.RedDotStyle
+	slot16 = slot16.REWARD
 
-	FLOW; TARGET BLOCK #45
+	slot11(slot13, slot14, slot15, slot16)
 
+	--- END OF BLOCK #13 ---
 
-	--- BLOCK #45 275-278, warpins: 2 ---
-	slot19 = RedDotConst
-	slot19 = slot19.RedDotStyle
-	slot19 = slot19.REWARD
-
-	slot14(slot16, slot17, slot18, slot19)
-
-	--- END OF BLOCK #45 ---
-
-	FLOW; TARGET BLOCK #46
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #46 279-279, warpins: 2 ---
-	--- END OF BLOCK #46 ---
+	--- BLOCK #14 93-93, warpins: 2 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #47
-
-
-	--- BLOCK #47 280-280, warpins: 2 ---
-	--- END OF BLOCK #47 ---
-
-	FLOW; TARGET BLOCK #48
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #48 281-291, warpins: 5 ---
-	slot8 = ClientTextUtils
-	slot8 = slot8.setText
-	slot10 = slot5.traceText
-	slot11 = slot7
-
-	slot8(slot10, slot11)
-
-	slot10 = slot0
-	slot8 = slot0.setupGrowTraceBinding
-	slot11 = slot5
-
-	slot8(slot10, slot11)
-
-	return
-	--- END OF BLOCK #48 ---
-
-	FLOW; TARGET BLOCK #49
-
-
-	--- BLOCK #49 292-292, warpins: 2 ---
-	return
-	--- END OF BLOCK #49 ---
-
-	FLOW; TARGET BLOCK #50
-
-
-	--- BLOCK #50 293-293, warpins: 2 ---
-	return
-	--- END OF BLOCK #50 ---
+	--- BLOCK #15 94-95, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "clearGrowTrackRedDot"
+slot15[slot49] = slot50
+slot49 = "clearGrowTrackRedDot"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.trackSpecialCanGetRewardTreePath
 	--- END OF BLOCK #0 ---
@@ -17260,114 +22076,52 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "openSpecialTrain"
+slot15[slot49] = slot50
+slot49 = "openSpecialTrain"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
+slot50 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
+	slot3 = slot1
+	slot1 = slot1.openSpecialTrain
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot1(slot3)
 
-
-	--- BLOCK #1 3-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.openSpecialTrain
-
-	slot2(slot4)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 11-17, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot4 = slot2
-	slot2 = slot2.openSpecialTrain
-
-	slot2(slot4)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 18-18, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "openQuest"
+slot15[slot49] = slot50
+slot49 = "openQuest"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
+slot50 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
+	slot3 = slot1
+	slot1 = slot1.openQuest
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot1(slot3)
 
-
-	--- BLOCK #1 3-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.openQuest
-
-	slot2(slot4)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 11-17, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot4 = slot2
-	slot2 = slot2.openQuest
-
-	slot2(slot4)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 18-18, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setupGrowTraceBinding"
+slot15[slot49] = slot50
+slot49 = "setupGrowTraceBinding"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.traceGrowBinding
 	--- END OF BLOCK #0 ---
@@ -17414,10 +22168,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setupGrowChapterRedDot"
+slot15[slot49] = slot50
+slot49 = "setupGrowChapterRedDot"
 
-slot48 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = QuestUtils
 	slot3 = slot3.getChapterState
@@ -17496,15 +22250,15 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onGrowSecondQuestClick"
+slot15[slot49] = slot50
+slot49 = "onGrowSecondQuestClick"
 
-slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot7 = slot0.getRewardCD
+	slot6 = slot0.getRewardCD
 	--- END OF BLOCK #0 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -17518,12 +22272,12 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 
 	--- BLOCK #2 5-27, warpins: 1 ---
-	slot7 = true
-	slot0.getRewardCD = slot7
-	slot9 = slot0
-	slot7 = slot0.startTimer
+	slot6 = true
+	slot0.getRewardCD = slot6
+	slot8 = slot0
+	slot6 = slot0.startTimer
 
-	slot10 = function()
+	slot9 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = self
 		slot1 = false
@@ -17536,46 +22290,45 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	end
 
-	slot11 = 0.5
+	slot10 = 0.5
 
-	slot7(slot9, slot10, slot11)
+	slot6(slot8, slot9, slot10)
 
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.ui
-	slot7 = slot7.SpecialTrainNew
-	slot7 = slot7.model
-	slot9 = slot7
-	slot7 = slot7.getCanGetRewardSpecialTrainQuestIds
-	slot10 = slot1
-	slot7 = slot7(slot9, slot10)
-	slot0.isHaveCanGetReward = slot7
-	slot7 = QuestUtils
-	slot7 = slot7.isPromotionQuest
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.SpecialTrainNew
+	slot6 = slot6.model
+	slot8 = slot6
+	slot6 = slot6.getCanGetRewardSpecialTrainQuestIds
 	slot9 = slot1
-	slot7 = slot7(slot9)
+	slot6 = slot6(slot8, slot9)
+	slot0.isHaveCanGetReward = slot6
+	slot6 = QuestUtils
+	slot6 = slot6.isPromotionQuest
+	slot8 = slot1
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #2 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 28-32, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0.openSpecialTrain
-	slot10 = slot6
+	--- BLOCK #3 28-31, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.openSpecialTrain
 
-	slot7(slot9, slot10)
+	slot6(slot8)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #4 33-34, warpins: 1 ---
+	--- BLOCK #4 32-33, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	slot3 = if slot3 then
@@ -17585,7 +22338,7 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	end
 
 
-	--- BLOCK #5 35-36, warpins: 1 ---
+	--- BLOCK #5 34-35, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
 	slot4 = if not slot4 then
@@ -17595,26 +22348,26 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	end
 
 
-	--- BLOCK #6 37-60, warpins: 1 ---
+	--- BLOCK #6 36-59, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.SpecialTrainNew
+	slot6 = slot6.model
+	slot8 = slot6
+	slot6 = slot6.getSpecialTrainGetRewardList
+	slot9 = slot2.taskId
+	slot6 = slot6(slot8, slot9)
 	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.ui
-	slot7 = slot7.SpecialTrainNew
-	slot7 = slot7.model
+	slot7 = slot7.me
 	slot9 = slot7
-	slot7 = slot7.getSpecialTrainGetRewardList
-	slot10 = slot2.taskId
-	slot7 = slot7(slot9, slot10)
-	slot8 = pg
-	slot8 = slot8.me
-	slot10 = slot8
-	slot8 = slot8.getSpecialTrainEntryReward
-	slot11 = slot7
-	slot12 = QuestConst
-	slot12 = slot12.SPECIAL_TRAIN_REWARD_SRC_TYPE
-	slot12 = slot12.HUD
+	slot7 = slot7.getSpecialTrainEntryReward
+	slot10 = slot6
+	slot11 = QuestConst
+	slot11 = slot11.SPECIAL_TRAIN_REWARD_SRC_TYPE
+	slot11 = slot11.HUD
 
-	slot13 = function(slot0)
+	slot12 = function(slot0)
 		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
@@ -17623,20 +22376,20 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	end
 
-	slot8(slot10, slot11, slot12, slot13)
+	slot7(slot9, slot10, slot11, slot12)
 
-	slot10 = slot0
-	slot8 = slot0.clickSpecialTranVBtn
-	slot11 = slot1
+	slot9 = slot0
+	slot7 = slot0.clickSpecialTranVBtn
+	slot10 = slot1
 
-	slot8(slot10, slot11)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #7 61-62, warpins: 2 ---
+	--- BLOCK #7 60-61, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	slot5 = if slot5 then
@@ -17646,55 +22399,55 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	end
 
 
-	--- BLOCK #8 63-72, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.global
-	slot7 = slot7.ui
-	slot7 = slot7.quest
-	slot7 = slot7.model
-	slot9 = slot7
-	slot7 = slot7.getCanTrackMainChapterQuestId
-	slot7 = slot7(slot9)
+	--- BLOCK #8 62-71, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.quest
+	slot6 = slot6.model
+	slot8 = slot6
+	slot6 = slot6.getCanTrackMainChapterQuestId
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #8 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 73-75, warpins: 1 ---
-	slot8 = 0
+	--- BLOCK #9 72-74, warpins: 1 ---
+	slot7 = 0
 	--- END OF BLOCK #9 ---
 
-	if slot7 > slot8 then
+	if slot6 > slot7 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 76-82, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.me
-	slot10 = slot8
-	slot8 = slot8.traceQuest
-	slot11 = slot7
-	slot12 = true
+	--- BLOCK #10 75-81, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.traceQuest
+	slot10 = slot6
+	slot11 = true
 
-	slot8(slot10, slot11, slot12)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 83-88, warpins: 3 ---
-	slot10 = slot0
-	slot8 = slot0.startTimer
+	--- BLOCK #11 82-87, warpins: 3 ---
+	slot9 = slot0
+	slot7 = slot0.startTimer
 
-	slot11 = function()
+	slot10 = function()
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -17712,35 +22465,35 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 	end
 
-	slot12 = 1
+	slot11 = 1
 
-	slot8(slot10, slot11, slot12)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 89-92, warpins: 1 ---
-	slot7 = QuestUtils
-	slot7 = slot7.openTraceSecondQuestFunc
-	slot9 = slot1
+	--- BLOCK #12 88-91, warpins: 1 ---
+	slot6 = QuestUtils
+	slot6 = slot6.openTraceSecondQuestFunc
+	slot8 = slot1
 
-	slot7(slot9)
+	slot6(slot8)
 
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 93-94, warpins: 4 ---
+	--- BLOCK #13 92-93, warpins: 4 ---
 	return
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 95-95, warpins: 2 ---
+	--- BLOCK #14 94-94, warpins: 2 ---
 	return
 	--- END OF BLOCK #14 ---
 
@@ -17748,10 +22501,10 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "getGrowSecondQuestText"
+slot15[slot49] = slot50
+slot49 = "getGrowSecondQuestText"
 
-slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = QuestUtils
 	slot6 = slot6.isPromotionQuest
@@ -17865,10 +22618,10 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "clickSpecialTranVBtn"
+slot15[slot49] = slot50
+slot49 = "clickSpecialTranVBtn"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isHaveCanGetReward
 	--- END OF BLOCK #0 ---
@@ -18008,16 +22761,18 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "showStoryClickHindBtn"
+slot15[slot49] = slot50
+slot49 = "showStoryClickHindBtn"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showClickHindBtnCommon
 	slot5 = slot0.clickStoryHintUButton
 	slot6 = slot1
-	slot7 = false
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.STORY
 
 	slot2(slot4, slot5, slot6, slot7)
 
@@ -18028,16 +22783,18 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "showQuestClickHindBtn"
+slot15[slot49] = slot50
+slot49 = "showQuestClickHindBtn"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showClickHindBtnCommon
 	slot5 = slot0.clickQuestHintUButton
 	slot6 = slot1
-	slot7 = false
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.QUEST
 
 	slot2(slot4, slot5, slot6, slot7)
 
@@ -18048,16 +22805,18 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "showGrowClickHindBtn"
+slot15[slot49] = slot50
+slot49 = "showGrowClickHindBtn"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.showClickHindBtnCommon
 	slot5 = slot0.clickGrowHintUButton
 	slot6 = slot1
-	slot7 = true
+	slot7 = QuestConst
+	slot7 = slot7.QUEST_HUD_PAGE_TYPE
+	slot7 = slot7.GROW
 
 	slot2(slot4, slot5, slot6, slot7)
 
@@ -18068,10 +22827,97 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onSwitchHudShowType"
+slot15[slot49] = slot50
+slot49 = "showClickHindBtnByTab"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isGrowTab
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.showGrowClickHindBtn
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isQuestTab
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-20, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.showQuestClickHindBtn
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 21-25, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isStoryTab
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-29, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.showStoryClickHindBtn
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-30, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onSwitchHudShowType"
+
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = true
 	slot0.mainInterrupt = slot2
@@ -18132,14 +22978,23 @@ slot48 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 19-26, warpins: 2 ---
+	--- BLOCK #6 19-31, warpins: 2 ---
 	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.killTimer
+	slot6 = slot0.interruptResetTimerId
+
+	slot3(slot5, slot6)
 
 	slot5 = slot0
 	slot3 = slot0.startTimer
 
 	slot6 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.interruptResetTimerId = slot1
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.resetInterrupt
@@ -18155,8 +23010,8 @@ slot48 = function(slot0, slot1)
 	end
 
 	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
+	slot3 = slot3(slot5, slot6, slot7)
+	slot0.interruptResetTimerId = slot3
 
 	return
 	--- END OF BLOCK #6 ---
@@ -18165,11 +23020,19 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "resetInterrupt"
+slot15[slot49] = slot50
+slot49 = "resetInterrupt"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.killTimer
+	slot5 = slot0.interruptResetTimerId
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.interruptResetTimerId = slot2
 	slot2 = false
 	slot0.mainInterrupt = slot2
 	slot4 = slot0
@@ -18185,6 +23048,30 @@ slot48 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 20-26, warpins: 1 ---
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "QuestState"
+	slot6 = 2
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 27-32, warpins: 1 ---
 	slot2 = slot0.rootUComponent
 	slot4 = slot2
 	slot2 = slot2.TryChangePage
@@ -18193,70 +23080,166 @@ slot48 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 33-41, warpins: 2 ---
 	slot2 = true
 	slot0.playCompleteAnim = slot2
 	slot4 = slot0
 	slot2 = slot0.startTimer
 
 	slot5 = function()
-		--- BLOCK #0 1-11, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = QuestUtils
 		slot0 = slot0.getPageTraceQuestId
 		slot2 = self
 		slot2 = slot2.showTab
 		slot0 = slot0(slot2)
-		slot1 = QuestUtils
-		slot1 = slot1.isCurtainQuest
-		slot3 = slot0
-		slot1 = slot1(slot3)
 		--- END OF BLOCK #0 ---
 
-		slot1 = if not slot1 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 12-20, warpins: 1 ---
-		slot1 = QuestUtils
-		slot1 = slot1.isQuestOfQuestType
-		slot3 = slot0
-		slot4 = QuestConst
-		slot4 = slot4.QUEST_TYPE
-		slot4 = slot4.SPECIAL_TRAIN
-		slot1 = slot1(slot3, slot4)
+		--- BLOCK #1 8-9, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		slot1 = if slot1 then
+		if slot0 ~= 0 then
 		JUMP TO BLOCK #2
 		else
 		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #2 21-25, warpins: 2 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.refreshQuestTitleByTab
-		slot4 = slot0
-
-		slot1(slot3, slot4)
-
+		--- BLOCK #2 10-11, warpins: 1 ---
+		slot1 = false
 		--- END OF BLOCK #2 ---
 
-		FLOW; TARGET BLOCK #3
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #3 26-30, warpins: 2 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.setTrackHint
+		--- BLOCK #3 12-12, warpins: 2 ---
+		slot1 = true
+		--- END OF BLOCK #3 ---
 
-		slot1(slot3)
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 13-18, warpins: 2 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.isStoryTab
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #4 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 19-22, warpins: 1 ---
+		slot2 = QuestUtils
+		slot2 = slot2.isStoryTracingAllFinished
+		slot2 = slot2()
+		slot1 = slot2
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 23-24, warpins: 2 ---
+		--- END OF BLOCK #6 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #7 25-30, warpins: 1 ---
+		slot2 = QuestUtils
+		slot2 = slot2.isCurtainQuest
+		slot4 = slot0
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #7 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 31-39, warpins: 1 ---
+		slot2 = QuestUtils
+		slot2 = slot2.isQuestOfQuestType
+		slot4 = slot0
+		slot5 = QuestConst
+		slot5 = slot5.QUEST_TYPE
+		slot5 = slot5.SPECIAL_TRAIN
+		slot2 = slot2(slot4, slot5)
+		--- END OF BLOCK #8 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 40-44, warpins: 3 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshQuestTitleByTab
+		slot5 = slot0
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 45-46, warpins: 2 ---
+		--- END OF BLOCK #10 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 47-50, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.switchRefreshTraceList
+
+		slot2(slot4)
+
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 51-55, warpins: 2 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.setTrackHint
+
+		slot2(slot4)
 
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #12 ---
 
 
 
@@ -18267,16 +23250,16 @@ slot48 = function(slot0, slot1)
 	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "checkShowUntracingQuest"
+slot15[slot49] = slot50
+slot49 = "checkShowUntracingQuest"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.questUntracingQueue
 	slot3 = slot1
@@ -18455,10 +23438,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "isShowingUntracingQuestMsg"
+slot15[slot49] = slot50
+slot49 = "isShowingUntracingQuestMsg"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.markShowQuestMsgTime
 	--- END OF BLOCK #0 ---
@@ -18519,10 +23502,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onRefreshUntracingQuestItem"
+slot15[slot49] = slot50
+slot49 = "onRefreshUntracingQuestItem"
 
-slot48 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getTrackQuestHintComs
@@ -18577,6 +23560,14 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 	slot8 = function()
 		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = UIUtils
+		slot0 = slot0.PlayAnimation
+		slot2 = hintCom
+		slot2 = slot2.rootAnimation
+		slot3 = "VX_Node_QuestHUD_Text_In_Reset_2"
+
+		slot0(slot2, slot3)
+
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.removeQuestObjective
@@ -18587,14 +23578,6 @@ slot48 = function(slot0, slot1, slot2, slot3)
 		slot5 = objcvData
 
 		slot0(slot2, slot3, slot4, slot5)
-
-		slot0 = UIUtils
-		slot0 = slot0.PlayAnimation
-		slot2 = hintCom
-		slot2 = slot2.rootAnimation
-		slot3 = "VX_Node_QuestHUD_Text_In_Reset_2"
-
-		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -18611,7 +23594,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 36-45, warpins: 2 ---
+	--- BLOCK #2 36-50, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0.setQuestObjectiveInfo
 	slot8 = slot1
@@ -18619,6 +23602,13 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	slot10 = slot3
 
 	slot5(slot7, slot8, slot9, slot10)
+
+	slot7 = slot0
+	slot5 = slot0.bindObjectiveClickForward
+	slot8 = slot1
+	slot9 = "untraceBtnUButton"
+
+	slot5(slot7, slot8, slot9)
 
 	slot5 = slot0.curUntracingObjectives
 	slot5 = #slot5
@@ -18631,7 +23621,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 46-51, warpins: 1 ---
+	--- BLOCK #3 51-56, warpins: 1 ---
 	slot5 = slot4.btn
 	slot7 = slot5
 	slot5 = slot5.SetActive
@@ -18644,7 +23634,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 52-56, warpins: 1 ---
+	--- BLOCK #4 57-61, warpins: 1 ---
 	slot5 = slot4.btn
 	slot7 = slot5
 	slot5 = slot5.SetActive
@@ -18657,7 +23647,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 57-62, warpins: 2 ---
+	--- BLOCK #5 62-67, warpins: 2 ---
 	slot5 = slot4.btn
 
 	slot6 = function()
@@ -18727,7 +23717,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 63-73, warpins: 1 ---
+	--- BLOCK #6 68-78, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.addTraceQuestKeyBinding
 	slot8 = slot4.btn
@@ -18745,7 +23735,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 74-76, warpins: 1 ---
+	--- BLOCK #7 79-81, warpins: 1 ---
 	slot5 = slot0.traceBinding
 	slot6 = true
 	slot5.enabled = slot6
@@ -18754,7 +23744,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 77-82, warpins: 2 ---
+	--- BLOCK #8 82-87, warpins: 2 ---
 	slot5 = tostring
 	slot7 = slot3.questId
 	slot5 = slot5(slot7)
@@ -18767,10 +23757,10 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "addTraceQuestKeyBinding"
+slot15[slot49] = slot50
+slot49 = "addTraceQuestKeyBinding"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = "Hud/TrackOpenSpecial"
 	slot3 = KeyBindingPro
@@ -18916,9 +23906,13 @@ slot48 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #7 59-62, warpins: 1 ---
+		--- BLOCK #7 59-66, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.trackButton
+		slot3 = slot1
+		slot1 = slot1.getTrackButton
+		slot4 = self
+		slot4 = slot4.showTab
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #7 ---
 
 		slot1 = if slot1 then
@@ -18928,34 +23922,31 @@ slot48 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #8 63-68, warpins: 1 ---
-		slot1 = NotNil
-		slot3 = self
-		slot3 = slot3.trackButton
-		slot1 = slot1(slot3)
+		--- BLOCK #8 67-71, warpins: 1 ---
+		slot2 = NotNil
+		slot4 = slot1
+		slot2 = slot2(slot4)
 		--- END OF BLOCK #8 ---
 
-		slot1 = if slot1 then
+		slot2 = if slot2 then
 		JUMP TO BLOCK #9
 		else
 		JUMP TO BLOCK #10
 		end
 
 
-		--- BLOCK #9 69-73, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.trackButton
-		slot3 = slot1
-		slot1 = slot1.OnClickSimulate
+		--- BLOCK #9 72-74, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.OnClickSimulate
 
-		slot1(slot3)
+		slot2(slot4)
 
 		--- END OF BLOCK #9 ---
 
 		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 74-76, warpins: 4 ---
+		--- BLOCK #10 75-77, warpins: 4 ---
 		slot1 = self
 		slot2 = 0
 		slot1.pressVTrackProgress = slot2
@@ -18964,7 +23955,7 @@ slot48 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #11 77-79, warpins: 4 ---
+		--- BLOCK #11 78-80, warpins: 4 ---
 		slot1 = false
 
 		return slot1
@@ -18983,10 +23974,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "isContainsQuest"
+slot15[slot49] = slot50
+slot49 = "isContainsQuest"
 
-slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot50 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot6 = pairs
 	slot8 = slot1
@@ -19107,10 +24098,10 @@ slot48 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "inPressing"
+slot15[slot49] = slot50
+slot49 = "inPressing"
 
-slot48 = function(slot0, slot1, slot2, slot3)
+slot50 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0.pressProgress
 	slot5 = Time
@@ -19128,13 +24119,16 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 10-18, warpins: 1 ---
+	--- BLOCK #1 10-21, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.ProgressToValue
-	slot7 = slot0.pressProgress
+	slot7 = getLongPressProgress
+	slot9 = slot0.pressProgress
+	slot7 = slot7(slot9)
 	slot8 = nil
+	slot9 = 0
 
-	slot4(slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	slot6 = slot0
 	slot4 = slot0.setProgressActive
@@ -19147,7 +24141,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 19-22, warpins: 2 ---
+	--- BLOCK #2 22-25, warpins: 2 ---
 	slot4 = slot1.value
 	slot5 = 1
 	--- END OF BLOCK #2 ---
@@ -19159,11 +24153,11 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 23-30, warpins: 1 ---
+	--- BLOCK #3 26-33, warpins: 1 ---
 	slot4 = slot0.rootUComponent
 	slot6 = slot4
 	slot4 = slot4.TryGetCurrentPage
-	slot7 = "tips"
+	slot7 = "Tips"
 	slot4, slot5 = slot4(slot6, slot7)
 	slot6 = 0
 	--- END OF BLOCK #3 ---
@@ -19175,7 +24169,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 31-34, warpins: 1 ---
+	--- BLOCK #4 34-37, warpins: 1 ---
 	slot6 = slot0.pressProgress
 	slot7 = LONG_PRESS_TIME
 	--- END OF BLOCK #4 ---
@@ -19187,7 +24181,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 35-36, warpins: 1 ---
+	--- BLOCK #5 38-39, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
 	slot3 = if slot3 then
@@ -19197,7 +24191,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 37-40, warpins: 1 ---
+	--- BLOCK #6 40-43, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.onTabBoxLongPress
 
@@ -19208,7 +24202,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 41-43, warpins: 1 ---
+	--- BLOCK #7 44-46, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.clickSwitchPageByIndex
 
@@ -19219,7 +24213,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 44-47, warpins: 3 ---
+	--- BLOCK #8 47-50, warpins: 3 ---
 	slot8 = slot0
 	slot6 = slot0.endPress
 
@@ -19230,7 +24224,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #9 48-49, warpins: 1 ---
+	--- BLOCK #9 51-52, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
 	if slot5 == 1 then
@@ -19240,7 +24234,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #10 50-56, warpins: 1 ---
+	--- BLOCK #10 53-59, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.onClickTipBtn
 	slot9 = false
@@ -19257,7 +24251,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 57-60, warpins: 3 ---
+	--- BLOCK #11 60-63, warpins: 3 ---
 	slot8 = slot0
 	slot6 = slot0.setProgressActive
 	slot9 = false
@@ -19269,7 +24263,7 @@ slot48 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 61-61, warpins: 2 ---
+	--- BLOCK #12 64-64, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 
@@ -19277,10 +24271,10 @@ slot48 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "clickSwitchPageByIndex"
+slot15[slot49] = slot50
+slot49 = "clickSwitchPageByIndex"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = true
 	slot0.playCompleteAnim = slot1
@@ -19348,10 +24342,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "endPress"
+slot15[slot49] = slot50
+slot49 = "endPress"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setProgressZero
@@ -19401,10 +24395,86 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onInputDeviceChanged"
+slot15[slot49] = slot50
+slot49 = "endPressAITips"
 
-slot48 = function(slot0)
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.pressAITipsTimer
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot4 = slot2
+	slot2 = slot2.killTimer
+	slot5 = slot0.pressAITipsTimer
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.pressAITipsTimer = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-14, warpins: 2 ---
+	slot2 = 0
+	slot0.pressAITipsProgress = slot2
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 15-17, warpins: 1 ---
+	slot2 = slot1.aiKeyProgressPressComponent
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-24, warpins: 1 ---
+	slot2 = slot1.aiKeyProgressPressComponent
+	slot4 = slot2
+	slot2 = slot2.ProgressToValue
+	slot5 = 0
+	slot6 = nil
+	slot7 = 0
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-25, warpins: 3 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onInputDeviceChanged"
+
+slot50 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.keyProgressPressComponent
 	--- END OF BLOCK #0 ---
@@ -19454,10 +24524,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setProgressActive"
+slot15[slot49] = slot50
+slot49 = "setProgressActive"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.progressPresss
 
@@ -19560,7 +24630,7 @@ slot48 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 34-48, warpins: 1 ---
+	--- BLOCK #9 34-51, warpins: 1 ---
 	slot8 = slot0.progressPresss
 	slot8 = slot8[slot5]
 	slot8 = slot8.gameObject
@@ -19574,17 +24644,20 @@ slot48 = function(slot0, slot1)
 	slot8 = slot8[slot5]
 	slot10 = slot8
 	slot8 = slot8.ProgressToValue
-	slot11 = slot0.pressProgress
+	slot11 = getLongPressProgress
+	slot13 = slot0.pressProgress
+	slot11 = slot11(slot13)
 	slot12 = nil
+	slot13 = 0
 
-	slot8(slot10, slot11, slot12)
+	slot8(slot10, slot11, slot12, slot13)
 
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #10 49-56, warpins: 4 ---
+	--- BLOCK #10 52-59, warpins: 4 ---
 	slot8 = pg
 	slot8 = slot8.game
 	slot8 = slot8.input
@@ -19600,7 +24673,7 @@ slot48 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 57-63, warpins: 1 ---
+	--- BLOCK #11 60-66, warpins: 1 ---
 	slot8 = slot0.progressPresss
 	slot8 = slot8[slot5]
 	slot8 = slot8.gameObject
@@ -19615,22 +24688,23 @@ slot48 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 64-70, warpins: 2 ---
+	--- BLOCK #12 67-74, warpins: 2 ---
 	slot8 = slot0.progressPresss
 	slot8 = slot8[slot5]
 	slot10 = slot8
 	slot8 = slot8.ProgressToValue
 	slot11 = 0
 	slot12 = nil
+	slot13 = 0
 
-	slot8(slot10, slot11, slot12)
+	slot8(slot10, slot11, slot12, slot13)
 
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 71-72, warpins: 5 ---
+	--- BLOCK #13 75-76, warpins: 5 ---
 	--- END OF BLOCK #13 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -19638,7 +24712,7 @@ slot48 = function(slot0, slot1)
 	GO OUT TO BLOCK #14
 
 
-	--- BLOCK #14 73-73, warpins: 1 ---
+	--- BLOCK #14 77-77, warpins: 1 ---
 	return
 	--- END OF BLOCK #14 ---
 
@@ -19646,10 +24720,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setProgressZero"
+slot15[slot49] = slot50
+slot49 = "setProgressZero"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = slot0.progressPresss
@@ -19682,22 +24756,23 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-18, warpins: 1 ---
+	--- BLOCK #3 12-19, warpins: 1 ---
 	slot6 = slot0.progressPresss
 	slot6 = slot6[slot4]
 	slot8 = slot6
 	slot6 = slot6.ProgressToValue
 	slot9 = 0
 	slot10 = nil
+	slot11 = 0
 
-	slot6(slot8, slot9, slot10)
+	slot6(slot8, slot9, slot10, slot11)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-20, warpins: 4 ---
+	--- BLOCK #4 20-21, warpins: 4 ---
 	--- END OF BLOCK #4 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -19705,7 +24780,7 @@ slot48 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 21-21, warpins: 1 ---
+	--- BLOCK #5 22-22, warpins: 1 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -19713,10 +24788,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onTeamChanged"
+slot15[slot49] = slot50
+slot49 = "onTeamChanged"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot1 = slot1.visible
@@ -19747,8 +24822,11 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #3 9-11, warpins: 1 ---
-	slot2 = needDelayType
+	--- BLOCK #3 9-14, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getTrackHintDelayType
+	slot5 = slot0.showTab
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #3 ---
 
 	if slot2 ~= 3 then
@@ -19758,8 +24836,7 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #4 12-14, warpins: 1 ---
-	slot2 = needDelayType
+	--- BLOCK #4 15-16, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	if slot2 == 1 then
@@ -19769,18 +24846,18 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #5 15-17, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.setTrackHint
+	--- BLOCK #5 17-19, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.setTrackHint
 
-	slot2(slot4)
+	slot3(slot5)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-18, warpins: 3 ---
+	--- BLOCK #6 20-20, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -19788,11 +24865,17 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "switchQuestPageType"
+slot15[slot49] = slot50
+slot49 = "switchQuestPageType"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot50 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot0.showTab = slot1
+	slot2 = QuestUtils
+	slot2 = slot2.getIndexByPage
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot0.curSelIndex = slot2
 	slot2 = slot0.visibleMap
 	slot2 = slot2.visible
 	--- END OF BLOCK #0 ---
@@ -19804,7 +24887,7 @@ slot48 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 11-12, warpins: 1 ---
 	slot2 = slot0.visibleMap
 	slot2 = slot2.questVisible
 	--- END OF BLOCK #1 ---
@@ -19812,7 +24895,7 @@ slot48 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-8, warpins: 2 ---
+	--- BLOCK #2 13-14, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -19822,36 +24905,39 @@ slot48 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 9-17, warpins: 1 ---
+	--- BLOCK #3 15-19, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.clickSwitchPageBtn
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	slot3 = QuestUtils
-	slot3 = slot3.getIndexByPage
-	slot5 = slot1
-	slot3 = slot3(slot5)
-	slot0.curSelIndex = slot3
-
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 18-18, warpins: 2 ---
-	return
+	--- BLOCK #4 20-21, warpins: 1 ---
+	slot3 = true
+	slot0.firstShowUpdate = slot3
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-22, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onSpecialTrainChapterUnlock"
+slot15[slot49] = slot50
+slot49 = "onSpecialTrainChapterUnlock"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = 1
 
@@ -19994,10 +25080,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "enableOrDisableActions"
+slot15[slot49] = slot50
+slot49 = "enableOrDisableActions"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -20006,10 +25092,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "clearAllCaches"
+slot15[slot49] = slot50
+slot49 = "clearAllCaches"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = cachesDirty
 
@@ -20058,11 +25144,345 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onDestroy"
+slot15[slot49] = slot50
+slot49 = "clearPlayerReferences"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot50 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killAllTimer
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.tracingQueueUpdateTimer = slot1
+	slot3 = slot0
+	slot1 = slot0.clearInterruptState
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.releaseQuestLists
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.clearQuestQueues
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.resetQuestFields
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "releaseQuestLists"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = {
+		"storyTracingList",
+		"growTracingList",
+		"questTracingList",
+		"untracingQuestList",
+		"pageList",
+		"unTrackPageList"
+	}
+	slot2 = ipairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot7 = slot0[slot6]
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot8 = IsNil
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #2 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-20, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.ReleaseItemData
+
+	slot8(slot10)
+
+	slot10 = slot7
+	slot8 = slot7.SetList
+	slot11 = {}
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-22, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 23-23, warpins: 1 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "clearQuestQueues"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = {
+		"questUntracingQueue",
+		"questStoryCurtainQueue",
+		"questStoryTracingQueue",
+		"questGrowTitleQueue",
+		"questGrowTracingQueue",
+		"questTaskTitleQueue",
+		"questTaskTracingQueue"
+	}
+	slot2 = ipairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot7 = slot0[slot6]
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.clear
+
+	slot8(slot10)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "resetQuestFields"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot1 = nil
+	slot0.curObjectives = slot1
+	slot1 = nil
+	slot0.curSecObjectives = slot1
+	slot1 = nil
+	slot0.curThrObjectives = slot1
+	slot1 = nil
+	slot0.curUntracingObjectives = slot1
+	slot1 = {}
+	slot0.trackObjcvDataByPage = slot1
+	slot1 = nil
+	slot0.curQuest = slot1
+	slot1 = nil
+	slot0.subQuests = slot1
+	slot1 = {}
+	slot0.trackButtonByPage = slot1
+	slot1 = {}
+	slot0.trackHintDelayTypeByPage = slot1
+	slot1 = {}
+	slot0.trackHintDelayTimerByPage = slot1
+	slot1 = {}
+	slot0._objChangeCooldowns = slot1
+	slot1 = {}
+	slot0._objChangePending = slot1
+	slot1 = {}
+	slot0._objChangeIdleCount = slot1
+	slot1 = {}
+	slot0._objChangeLastRendered = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "clearInterruptState"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.interruptResetTimerId
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.interruptResetTimerId = slot1
+	slot1 = false
+	slot0.mainInterrupt = slot1
+	slot1 = true
+	slot0.playCompleteAnim = slot1
+	slot1 = nil
+	slot0.markShowQuestMsgTime = slot1
+	slot1 = nil
+	slot0.curUntracingObjectives = slot1
+	slot1 = slot0.rootUComponent
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 18-22, warpins: 1 ---
+	slot1 = NotNil
+	slot3 = slot0.rootUComponent
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 23-34, warpins: 1 ---
+	slot1 = slot0.rootUComponent
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "Interrupt"
+	slot5 = 0
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = slot0.rootUComponent
+	slot3 = slot1
+	slot1 = slot1.TryChangePage
+	slot4 = "QuestState"
+	slot5 = 2
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 35-37, warpins: 3 ---
+	slot1 = slot0.untraceBtnUButton
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 38-42, warpins: 1 ---
+	slot1 = NotNil
+	slot3 = slot0.untraceBtnUButton
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 43-47, warpins: 1 ---
+	slot1 = slot0.untraceBtnUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 48-48, warpins: 3 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot15[slot49] = slot50
+slot49 = "onDestroy"
+
+slot50 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.clearPlayerReferences
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.clearAllCaches
 
@@ -20075,10 +25495,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onVisibleChange"
+slot15[slot49] = slot50
+slot49 = "onVisibleChange"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -20122,10 +25542,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "initHideFlag"
+slot15[slot49] = slot50
+slot49 = "initHideFlag"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -20193,10 +25613,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onEnterSpace"
+slot15[slot49] = slot50
+slot49 = "onEnterSpace"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -20377,7 +25797,7 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #14 70-81, warpins: 1 ---
+	--- BLOCK #14 70-82, warpins: 1 ---
 	slot2 = QuestUtils
 	slot2 = slot2.switchHudPageType
 	slot4 = QuestConst
@@ -20396,10 +25816,54 @@ slot48 = function(slot0)
 
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #15 82-88, warpins: 3 ---
+	--- BLOCK #15 83-85, warpins: 2 ---
+	slot2 = slot0.pageList
+	--- END OF BLOCK #15 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 86-95, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.checkUIShow
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_HUD_V2
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #16 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 96-102, warpins: 1 ---
+	slot2 = slot0.pageList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = QuestUtils
+	slot5 = slot5.getTabPageList
+	MULTRES = slot5()
+
+	slot2(slot4, MULTRES)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 103-109, warpins: 4 ---
 	slot4 = slot0
 	slot2 = slot0.refreshCheckShowState
 
@@ -20411,16 +25875,16 @@ slot48 = function(slot0)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "refreshResidualTraceList"
+slot15[slot49] = slot50
+slot49 = "refreshResidualTraceList"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.objectReference
 
@@ -20496,155 +25960,131 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onUIVisibleChanged"
+slot15[slot49] = slot50
+slot49 = "onUIVisibleChanged"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot50 = function(slot0)
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.prefsCacheUtils
-	slot4 = slot2
-	slot2 = slot2.getBool
-	slot5 = "HudV2Enable"
-	slot6 = false
-	slot2 = slot2(slot4, slot5, slot6)
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_HUD_V2
+	slot5 = slot0
+	slot3 = slot0.setHideFlag
+	slot6 = HideReason
+	slot6 = slot6.hudVisible
+	slot9 = slot1
+	slot7 = slot1.checkUIShow
+	slot10 = slot2
+	slot7 = slot7(slot9, slot10)
+	slot7 = not slot7
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot1
+	slot3 = slot1.checkUIShow
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_TRAINING
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 14-17, warpins: 1 ---
-	slot3 = UIConst
-	slot3 = slot3.UI_ID_HUD_V2
+	--- BLOCK #1 23-29, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.checkUIOpen
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_FRIENDSHIP_UP
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #1 ---
 
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 18-19, warpins: 2 ---
-	slot3 = UIConst
-	slot3 = slot3.UI_ID_HUD
+	--- BLOCK #2 30-35, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.checkUIShow
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 20-26, warpins: 2 ---
-	slot6 = slot1
-	slot4 = slot1.checkUIShow
-	slot7 = UIConst
-	slot7 = slot7.UI_ID_TRAINING
-	slot4 = slot4(slot6, slot7)
+	--- BLOCK #3 36-42, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.checkUIShow
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_BOTTOM_DIALOGUE
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #3 ---
 
-	slot4 = if not slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 27-33, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.checkUIOpen
-	slot7 = UIConst
-	slot7 = slot7.UI_ID_FRIENDSHIP_UP
-	slot4 = slot4(slot6, slot7)
+	--- BLOCK #4 43-49, warpins: 4 ---
+	slot5 = slot0
+	slot3 = slot0.setHideFlag
+	slot6 = HideReason
+	slot6 = slot6.ui
+	slot7 = true
+
+	slot3(slot5, slot6, slot7)
+
 	--- END OF BLOCK #4 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 34-39, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.checkUIShow
-	slot7 = slot3
-	slot4 = slot4(slot6, slot7)
+	--- BLOCK #5 50-55, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.setHideFlag
+	slot6 = HideReason
+	slot6 = slot6.ui
+	slot7 = false
+
+	slot3(slot5, slot6, slot7)
+
 	--- END OF BLOCK #5 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 40-46, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.checkUIShow
-	slot7 = UIConst
-	slot7 = slot7.UI_ID_BOTTOM_DIALOGUE
-	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #6 ---
+	--- BLOCK #6 56-59, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshCheckShowState
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 47-53, warpins: 4 ---
-	slot6 = slot0
-	slot4 = slot0.setHideFlag
-	slot7 = HideReason
-	slot7 = slot7.ui
-	slot8 = true
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 54-59, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.setHideFlag
-	slot7 = HideReason
-	slot7 = slot7.ui
-	slot8 = false
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 60-63, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.refreshCheckShowState
-
-	slot4(slot6)
+	slot3(slot5)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onCatchModeChanged"
+slot15[slot49] = slot50
+slot49 = "onCatchModeChanged"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -20687,10 +26127,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onQuestTraceChanged"
+slot15[slot49] = slot50
+slot49 = "onQuestTraceChanged"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -20749,10 +26189,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "refreshTargetVisibleState"
+slot15[slot49] = slot50
+slot49 = "refreshTargetVisibleState"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = CommonSwitch
 	slot1 = slot1.TARGET
@@ -20815,10 +26255,10 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "refreshVisibleMap"
+slot15[slot49] = slot50
+slot49 = "refreshVisibleMap"
 
-slot48 = function(slot0)
+slot50 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = TipVisibilityHelper
 	slot1 = slot1.refresh
@@ -20831,26 +26271,32 @@ slot48 = function(slot0)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "refreshCheckShowState"
+slot15[slot49] = slot50
+slot49 = "refreshCheckShowState"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot50 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = TipVisibilityHelper
-	slot1 = slot1.refreshCheckShowState
+	slot1 = slot1.setHideFlag
 	slot3 = slot0
+	slot4 = HideReason
+	slot4 = slot4.checkShowState
+	slot7 = slot0
+	slot5 = slot0.checkShowState
+	slot5 = slot5(slot7)
+	slot5 = not slot5
 
-	return slot1(slot3)
+	return slot1(slot3, slot4, slot5)
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setHideFlag"
+slot15[slot49] = slot50
+slot49 = "setHideFlag"
 
-slot48 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = TipVisibilityHelper
 	slot3 = slot3.setHideFlag
@@ -20865,10 +26311,10 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setIsVisible"
+slot15[slot49] = slot50
+slot49 = "setIsVisible"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.isVisible = slot1
 	slot4 = slot0
@@ -20886,10 +26332,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onPriorityBreak"
+slot15[slot49] = slot50
+slot49 = "onPriorityBreak"
 
-slot48 = function(slot0, slot1, slot2)
+slot50 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setHideFlag
@@ -20905,10 +26351,10 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onFullScreenShowChange"
+slot15[slot49] = slot50
+slot49 = "onFullScreenShowChange"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setHideFlag
@@ -20925,17 +26371,17 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onQuestTrackReach"
+slot15[slot49] = slot50
+slot49 = "onQuestTrackReach"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
@@ -20946,7 +26392,7 @@ slot48 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
@@ -20958,7 +26404,7 @@ slot48 = function(slot0, slot1)
 	if slot2 > slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	end
 
 
@@ -20991,7 +26437,7 @@ slot48 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #14
 	end
 
 
@@ -21002,7 +26448,7 @@ slot48 = function(slot0, slot1)
 	if slot3 > slot4 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #14
 	end
 
 
@@ -21017,7 +26463,7 @@ slot48 = function(slot0, slot1)
 
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
 	--- BLOCK #7 37-41, warpins: 1 ---
@@ -21029,37 +26475,112 @@ slot48 = function(slot0, slot1)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #8 42-48, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.quest
-	slot5 = slot3
-	slot3 = slot3.cleanupReceiveNpcPathfinding
-	slot6 = slot1.questId
-
-	slot3(slot5, slot6)
-
+	--- BLOCK #8 42-44, warpins: 1 ---
+	slot3 = slot0.dialogueQuestTargetsInfo
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #9 49-49, warpins: 8 ---
-	return
+	--- BLOCK #9 45-49, warpins: 1 ---
+	slot3 = slot0.dialogueQuestTargetsInfo
+	slot4 = slot1.questId
+	slot3 = slot3[slot4]
 	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #10 50-52, warpins: 1 ---
+	slot4 = slot3.scene
+	--- END OF BLOCK #10 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 53-55, warpins: 1 ---
+	slot4 = slot3.markId
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 56-63, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.map
+	slot6 = slot4
+	slot4 = slot4.removeTempMark
+	slot7 = slot3.scene
+	slot8 = slot3.markId
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 64-67, warpins: 3 ---
+	slot4 = slot0.dialogueQuestTargetsInfo
+	slot5 = slot1.questId
+	slot6 = nil
+	slot4[slot5] = slot6
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 68-77, warpins: 7 ---
+	slot3 = QuestUtils
+	slot3 = slot3.getCombinedId
+	slot5 = slot1.questId
+	slot6 = QuestConst
+	slot6 = slot6.QUEST_DEFAULT_OBJ_ID
+	slot3 = slot3(slot5, slot6)
+	slot4 = QuestUtils
+	slot4 = slot4.removeQuestPathingNavEffect
+	slot6 = slot3
+
+	slot4(slot6)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 78-78, warpins: 4 ---
+	return
+	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot15[slot47] = slot48
-slot47 = "setForceHideFlag"
+slot15[slot49] = slot50
+slot49 = "setForceHideFlag"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setHideFlag
@@ -21076,10 +26597,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot15[slot47] = slot48
-slot47 = "onBaseVisibleChanged"
+slot15[slot49] = slot50
+slot49 = "onBaseVisibleChanged"
 
-slot48 = function(slot0, slot1)
+slot50 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.objectReference
 
@@ -21182,7 +26703,7 @@ slot48 = function(slot0, slot1)
 	if slot3 ~= slot2 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
@@ -21193,17 +26714,46 @@ slot48 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #10 38-48, warpins: 1 ---
+	--- BLOCK #10 38-44, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setFirstShowUpdate
 	slot6 = true
 
 	slot3(slot5, slot6)
 
+	slot3 = slot0.pageList
+	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 45-54, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.checkUIShow
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_HUD_V2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #11 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 55-64, warpins: 1 ---
 	slot3 = slot0.pageList
 	slot5 = slot3
 	slot3 = slot3.SetList
@@ -21213,33 +26763,38 @@ slot48 = function(slot0, slot1)
 
 	slot3(slot5, MULTRES)
 
-	--- END OF BLOCK #10 ---
+	slot5 = slot0
+	slot3 = slot0.refreshSwitchKeyVisible
 
-	FLOW; TARGET BLOCK #11
+	slot3(slot5)
 
-
-	--- BLOCK #11 49-50, warpins: 3 ---
-	--- END OF BLOCK #11 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #12 51-53, warpins: 1 ---
-	slot3 = slot0.firstShowUpdate
 	--- END OF BLOCK #12 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #13
-	else
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 65-66, warpins: 5 ---
+	--- END OF BLOCK #13 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #13 54-68, warpins: 1 ---
+	--- BLOCK #14 67-69, warpins: 1 ---
+	slot3 = slot0.firstShowUpdate
+	--- END OF BLOCK #14 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 70-87, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setFirstShowUpdate
 	slot6 = false
@@ -21261,39 +26816,44 @@ slot48 = function(slot0, slot1)
 
 	slot3(slot5, MULTRES)
 
-	--- END OF BLOCK #13 ---
+	slot5 = slot0
+	slot3 = slot0.refreshSwitchKeyVisible
 
-	FLOW; TARGET BLOCK #14
+	slot3(slot5)
 
-
-	--- BLOCK #14 69-71, warpins: 3 ---
-	slot0.preFlagQuest = slot2
-
-	--- END OF BLOCK #14 ---
-
-	if slot2 == false then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 72-72, warpins: 1 ---
-	return
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 73-73, warpins: 2 ---
-	return
+	--- BLOCK #16 88-90, warpins: 3 ---
+	slot0.preFlagQuest = slot2
+
 	--- END OF BLOCK #16 ---
+
+	if slot2 == false then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 91-91, warpins: 1 ---
+	return
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 92-92, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot15[slot47] = slot48
+slot15[slot49] = slot50
 
 return slot15
 --- END OF BLOCK #0 ---

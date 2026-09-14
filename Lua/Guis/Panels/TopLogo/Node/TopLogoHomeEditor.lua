@@ -37,16 +37,16 @@ slot13 = "TopLogoHomeEditor"
 slot14 = slot1
 slot11 = slot11(slot13, slot14)
 slot12 = {
-	Temperature = 2,
-	Electric = 1,
 	PetAbility = 4,
-	Light = 3
+	Light = 3,
+	Temperature = 2,
+	Electric = 1
 }
 slot13 = {
-	RecommendFit = 1,
 	Recommend = 3,
-	Demand = 4,
-	DemandFit = 2
+	DemandFit = 2,
+	RecommendFit = 1,
+	Demand = 4
 }
 
 slot14 = function(slot0, slot1, slot2)

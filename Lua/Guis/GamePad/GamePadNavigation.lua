@@ -136,7 +136,7 @@ slot7 = function(slot0)
 
 	--- BLOCK #2 5-12, warpins: 2 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0._move_time
 	slot1 = slot1 - slot2
 	slot2 = GamePadConst
@@ -161,7 +161,7 @@ slot7 = function(slot0)
 
 	--- BLOCK #4 14-30, warpins: 2 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0._move_time = slot1
 	slot1 = slot0._move_vec2
 	slot1 = slot1.x
@@ -247,7 +247,7 @@ slot7 = function(slot0)
 	slot1(slot3)
 
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = GamePadConst
 	slot2 = slot2.LONG_PRESS_THRESHOLD
 	slot3 = pairs
@@ -536,7 +536,7 @@ slot7 = function(slot0, slot1, slot2)
 	slot5 = slot5.PERFORMED
 	slot4.state = slot5
 	slot5 = Time
-	slot5 = slot5.secondCache
+	slot5 = slot5.realSecondCache
 	slot4.startTime = slot5
 	slot3[slot2] = slot4
 	slot5 = slot0

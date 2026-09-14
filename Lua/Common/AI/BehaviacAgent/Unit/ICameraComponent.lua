@@ -43,12 +43,10 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 14-24, warpins: 1 ---
+	--- BLOCK #2 14-22, warpins: 1 ---
 	slot4 = slot0.ent
 	slot4 = slot4.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot4 = slot4.shaderView
+	slot4 = slot4.modelShaderView
 	slot6 = slot4
 	slot4 = slot4.SetMultiPassForce32Layer
 	slot7 = true
@@ -61,12 +59,10 @@ slot5 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 25-34, warpins: 1 ---
+	--- BLOCK #3 23-30, warpins: 1 ---
 	slot4 = slot0.ent
 	slot4 = slot4.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot4 = slot4.shaderView
+	slot4 = slot4.modelShaderView
 	slot6 = slot4
 	slot4 = slot4.SetMultiPassForce32Layer
 	slot7 = false
@@ -79,7 +75,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 35-43, warpins: 2 ---
+	--- BLOCK #4 31-39, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.camera
@@ -96,7 +92,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 44-46, warpins: 2 ---
+	--- BLOCK #5 40-42, warpins: 2 ---
 	slot2 = EBTStatus
 	slot2 = slot2.BT_SUCCESS
 
@@ -525,7 +521,7 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 15-53, warpins: 1 ---
+	--- BLOCK #3 15-51, warpins: 1 ---
 	slot3 = Vector3
 	slot3 = slot3.enableCreateFromCache
 
@@ -550,9 +546,7 @@ slot5 = function(slot0, slot1)
 	slot5 = slot3
 	slot6 = slot0.ent
 	slot6 = slot6.eModel
-	slot6 = slot6.modelComponent
-	slot6 = slot6.modelView
-	slot6 = slot6.shaderView
+	slot6 = slot6.modelShaderView
 	slot8 = slot6
 	slot6 = slot6.SetAFKBodyScreenDeform
 	slot9 = true
@@ -575,12 +569,10 @@ slot5 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 54-62, warpins: 1 ---
+	--- BLOCK #4 52-58, warpins: 1 ---
 	slot3 = slot0.ent
 	slot3 = slot3.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
-	slot3 = slot3.shaderView
+	slot3 = slot3.modelShaderView
 	slot5 = slot3
 	slot3 = slot3.SetAFKBodyScreenDeform
 	slot6 = false
@@ -592,7 +584,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 63-65, warpins: 4 ---
+	--- BLOCK #5 59-61, warpins: 4 ---
 	slot2 = EBTStatus
 	slot2 = slot2.BT_SUCCESS
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-41, warpins: 1 ---
+--- BLOCK #0 1-44, warpins: 1 ---
 slot0 = require
 slot2 = "Const.UIConst"
 slot0 = slot0(slot2)
@@ -26,13 +26,29 @@ slot7 = slot7(slot9)
 slot8 = slot5.getLogger
 slot10 = "LoginScene"
 slot8 = slot8(slot10)
-slot9 = slot2.LightClass
-slot11 = "LoginScene"
-slot12 = slot1
-slot9 = slot9(slot11, slot12)
+slot9 = require
+slot11 = "Const.EventConst"
+slot9 = slot9(slot11)
+slot10 = slot2.LightClass
+slot12 = "LoginScene"
+slot13 = slot1
+slot10 = slot10(slot12, slot13)
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+slot11 = function(slot0)
+	--- BLOCK #0 1-23, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.emit
+	slot4 = EventConst
+	slot4 = slot4.GAMEFLOW_CHANGE
+	slot5 = "null"
+	slot6 = "EnterLogin"
+	slot7 = {}
+
+	slot1(slot3, slot4, slot5, slot6, slot7)
+
 	slot1 = BaseScene
 	slot1 = slot1.onStart
 	slot3 = slot0
@@ -56,7 +72,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #1 13-22, warpins: 1 ---
+	--- BLOCK #1 24-33, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.audio
@@ -74,7 +90,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 23-23, warpins: 2 ---
+	--- BLOCK #2 34-34, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -82,10 +98,10 @@ slot10 = function(slot0)
 
 end
 
-slot9.onStart = slot10
+slot10.onStart = slot11
 
-slot10 = function(slot0)
-	--- BLOCK #0 1-59, warpins: 1 ---
+slot11 = function(slot0)
+	--- BLOCK #0 1-67, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -132,6 +148,16 @@ slot10 = function(slot0)
 	slot3 = slot1
 	slot1 = slot1.close
 	slot4 = UIConst
+	slot4 = slot4.UI_ID_CREATE_ROLE_TIMELINE
+
+	slot1(slot3, slot4)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.close
+	slot4 = UIConst
 	slot4 = slot4.UI_ID_AVATAR
 
 	slot1(slot3, slot4)
@@ -165,14 +191,14 @@ slot10 = function(slot0)
 
 end
 
-slot9.onDestroy = slot10
+slot10.onDestroy = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = xpcall
 
 	slot3 = function()
-		--- BLOCK #0 1-34, warpins: 1 ---
+		--- BLOCK #0 1-42, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -187,6 +213,16 @@ slot10 = function(slot0)
 		slot4 = slot4.UI_ID_TOPLOGO
 		slot5 = true
 		slot3[slot4] = slot5
+
+		slot0(slot2, slot3)
+
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.openWithHide
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_CREATE_ROLE_TIMELINE
 
 		slot0(slot2, slot3)
 
@@ -336,9 +372,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.openLoginUI = slot10
+slot10.openLoginUI = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.openLoginUI
@@ -352,9 +388,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onReset = slot10
+slot10.onReset = slot11
 
-return slot9
+return slot10
 --- END OF BLOCK #0 ---
 
 

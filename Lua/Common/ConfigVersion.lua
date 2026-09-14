@@ -1,7 +1,7 @@
 --- BLOCK #0 1-2, warpins: 1 ---
 slot0 = {
-	client = "ca4917557399df52dadd5ec3a30295a0",
-	server = "35c1af8ce4443045fe00a6f409645d17"
+	server = "db81390b0f73e76a7f42f46b4bf9693f",
+	client = "045819428f21899f40693450caec22b3"
 }
 
 return slot0

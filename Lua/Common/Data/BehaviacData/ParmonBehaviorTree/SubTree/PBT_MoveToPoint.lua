@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
-	agenttype = "WxAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_MoveToPoint",
-	version = 5
+	useForRoute = false,
+	version = 5,
+	agenttype = "WxAgent"
 }
 slot4 = {}
 slot3.properties = slot4
@@ -26,15 +26,15 @@ slot4[1] = slot5
 slot5 = {
 	name = "tMoveMaxTime",
 	type = "float",
-	const = 15,
-	value = "15"
+	value = "15",
+	const = 15
 }
 slot4[2] = slot5
 slot5 = {
 	name = "tMoveSpeed",
 	type = "float",
-	const = -1,
-	value = "-1"
+	value = "-1",
+	const = -1
 }
 slot4[3] = slot5
 slot5 = {
@@ -49,15 +49,15 @@ slot4[4] = slot5
 slot5 = {
 	name = "tUseAccurateArrive",
 	type = "bool",
-	const = false,
-	value = "false"
+	value = "false",
+	const = false
 }
 slot4[5] = slot5
 slot5 = {
 	name = "tTeleportIfCannotMove",
 	type = "bool",
-	const = false,
-	value = "false"
+	value = "false",
+	const = false
 }
 slot4[6] = slot5
 slot3.pars = slot4

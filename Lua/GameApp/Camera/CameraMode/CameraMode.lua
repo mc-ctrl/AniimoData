@@ -157,26 +157,33 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-11, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.pullFromParent
+	--- BLOCK #1 4-16, warpins: 1 ---
+	slot1 = slot0.cameraMode
+	slot4 = slot0
+	slot2 = slot0.pullFromParent
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot3 = slot0
-	slot1 = slot0.onDestroy
+	slot4 = slot0
+	slot2 = slot0.onDestroy
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot1 = nil
-	slot0.cameraMode = slot1
+	slot4 = slot1
+	slot2 = slot1.SetOwnerLua
+	slot5 = nil
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.cameraMode = slot2
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-12, warpins: 2 ---
+	--- BLOCK #2 17-17, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

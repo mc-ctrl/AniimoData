@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-80, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -59,22 +59,18 @@ slot17 = slot17(slot19)
 slot18 = require
 slot20 = "Core.PropertySync.CustomTypeHelper"
 slot18 = slot18(slot20)
-slot19 = require
-slot21 = "Common.Bitset"
-slot19 = slot19(slot21)
-slot19 = slot19.getBit
+slot19 = bit
+slot19 = slot19.band
 slot20 = bit
-slot20 = slot20.band
+slot20 = slot20.lshift
 slot21 = bit
-slot21 = slot21.lshift
-slot22 = bit
-slot22 = slot22.rshift
-slot23 = slot7.MAGIC_DIGIT
-slot24 = slot7.MAGIC_NUM
-slot25 = slot18.GetProp
-slot26 = slot7.getBit
+slot21 = slot21.rshift
+slot22 = slot7.MAGIC_DIGIT
+slot23 = slot7.MAGIC_NUM
+slot24 = slot18.GetProp
+slot25 = slot7.getBit
 
-slot27 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -166,30 +162,30 @@ slot27 = function(slot0, slot1)
 
 end
 
-slot28 = slot2.LiteClass
-slot30 = "TriggerMap"
-slot31 = slot3
-slot28 = slot28(slot30, slot31)
-slot29 = pairs
-slot30 = ipairs
-slot31 = UNITY_EDITOR
+slot27 = slot2.LiteClass
+slot29 = "TriggerMap"
+slot30 = slot3
+slot27 = slot27(slot29, slot30)
+slot28 = pairs
+slot29 = ipairs
+slot30 = UNITY_EDITOR
 --- END OF BLOCK #0 ---
 
-slot31 = if slot31 then
+slot30 = if slot30 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 85-92, warpins: 1 ---
-slot31 = {}
-slot32 = slot11.TYPE_PLAYER
-slot31[1] = slot32
-slot32 = slot11.TYPE_PET_INFO
-slot31[2] = slot32
+--- BLOCK #1 81-88, warpins: 1 ---
+slot30 = {}
+slot31 = slot11.TYPE_PLAYER
+slot30[1] = slot31
+slot31 = slot11.TYPE_PET_INFO
+slot30[2] = slot31
 
-slot32 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetInfoType
@@ -241,15 +237,15 @@ slot32 = function(slot0)
 
 end
 
-slot28.getObj = slot32
+slot27.getObj = slot31
 
 --- END OF BLOCK #1 ---
 
 UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
---- BLOCK #2 93-94, warpins: 1 ---
-slot31 = function(slot0)
+--- BLOCK #2 89-90, warpins: 1 ---
+slot30 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetInfoType
@@ -293,15 +289,15 @@ slot31 = function(slot0)
 
 end
 
-slot28.getObj = slot31
+slot27.getObj = slot30
 
 --- END OF BLOCK #2 ---
 
 FLOW; TARGET BLOCK #3
 
 
---- BLOCK #3 95-174, warpins: 2 ---
-slot31 = function(slot0, slot1)
+--- BLOCK #3 91-175, warpins: 2 ---
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getObj
@@ -359,9 +355,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot28.getPlayer = slot31
+slot27.getPlayer = slot30
 
-slot31 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = _G_IsDebugMode
 	--- END OF BLOCK #0 ---
@@ -413,9 +409,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getGmTriggerValue = slot31
+slot27.getGmTriggerValue = slot30
 
-slot31 = function(slot0, slot1, slot2, slot3)
+slot30 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = _G_IsDebugMode
 
@@ -507,9 +503,9 @@ slot31 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.setGmTriggerValue = slot31
+slot27.setGmTriggerValue = slot30
 
-slot31 = function(slot0, slot1, slot2)
+slot30 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = TriggerConst
 	slot3 = slot3.IS_PET_CONDTION
@@ -601,9 +597,9 @@ slot31 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkUseType = slot31
+slot27.checkUseType = slot30
 
-slot31 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = TriggerConst
 	slot2 = slot2.IS_PET_CONDTION
@@ -697,9 +693,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot28.checkUseTypeByConfig = slot31
+slot27.checkUseTypeByConfig = slot30
 
-slot31 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CustomTriggerData
 	slot2 = slot2[slot1]
@@ -817,9 +813,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot28.isRegister = slot31
+slot27.isRegister = slot30
 
-slot31 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CustomTriggerData
 	slot2 = slot2[slot1]
@@ -937,9 +933,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot28.isRegisterFaster = slot31
+slot27.isRegisterFaster = slot30
 
-slot31 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CustomTriggerData
 	slot2 = slot2[slot1]
@@ -1040,9 +1036,9 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot28.getRegisterConfig = slot31
+slot27.getRegisterConfig = slot30
 
-slot31 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = getBit
 	slot4 = slot0.completeCustomSet
@@ -1055,9 +1051,60 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot28.isComplete = slot31
+slot27.isComplete = slot30
 
-slot31 = function(slot0, slot1)
+slot30 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getObj
+	slot2 = slot2(slot4)
+	slot3 = slot2.isGuidancePlayer
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot1.virtualPlayerEnable
+	--- END OF BLOCK #1 ---
+
+	if slot3 == 1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-11, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 3 ---
+	return slot3
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot27._isTriggerBlockedForGuidance = slot30
+
+slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CustomTriggerData
 	slot2 = slot2[slot1]
@@ -1173,54 +1220,81 @@ slot31 = function(slot0, slot1)
 
 	--- BLOCK #9 44-49, warpins: 2 ---
 	slot6 = slot3
-	slot4 = slot3.isComplete
-	slot7 = slot1
+	slot4 = slot3._isTriggerBlockedForGuidance
+	slot7 = slot2
 	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #9 ---
 
-	slot4 = if not slot4 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 50-53, warpins: 1 ---
-	slot6 = slot3
-	slot4 = slot3.checkMeetCustomTrigger
-	slot7 = slot2
-	slot4 = slot4(slot6, slot7)
+	--- BLOCK #10 50-51, warpins: 1 ---
+	slot4 = false
+
+	return slot4
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 54-54, warpins: 2 ---
-	return slot4
+	--- BLOCK #11 52-57, warpins: 2 ---
+	slot6 = slot3
+	slot4 = slot3.isComplete
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #11 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 58-61, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.checkMeetCustomTrigger
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 62-62, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot28.isCompleteOrMeetCondition = slot31
+slot27.isCompleteOrMeetCondition = slot30
+slot30 = {}
 slot31 = {}
-slot32 = {}
-slot33 = slot8.TRIGGER_REGTYPE_QUEST_OBJECTIVE
-slot34 = "questObjectivesTriggers"
-slot32[slot33] = slot34
-slot33 = slot8.TRIGGER_REGTYPE_QUEST_CLAIMCOND
-slot34 = "questClaimTriggers"
-slot32[slot33] = slot34
-slot33 = slot8.TRIGGER_REGTYPE_QUEST_RUNCOND
-slot34 = "questRunTriggers"
-slot32[slot33] = slot34
-slot33 = slot8.TRIGGER_REGTYPE_QUEST_COM_ACTION_OBJECTIVE
-slot34 = "questComActionObjTriggers"
-slot32[slot33] = slot34
+slot32 = slot8.TRIGGER_REGTYPE_QUEST_OBJECTIVE
+slot33 = "questObjectivesTriggers"
+slot31[slot32] = slot33
+slot32 = slot8.TRIGGER_REGTYPE_QUEST_CLAIMCOND
+slot33 = "questClaimTriggers"
+slot31[slot32] = slot33
+slot32 = slot8.TRIGGER_REGTYPE_QUEST_RUNCOND
+slot33 = "questRunTriggers"
+slot31[slot32] = slot33
+slot32 = slot8.TRIGGER_REGTYPE_QUEST_COM_ACTION_OBJECTIVE
+slot33 = "questComActionObjTriggers"
+slot31[slot32] = slot33
+slot32 = slot8.TRIGGER_REGTYPE_QUEST_CLOSECOND
+slot33 = "questCloseTriggers"
+slot31[slot32] = slot33
 
-slot33 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = _questTriggersName
 	slot2 = slot2[slot1]
@@ -1250,9 +1324,9 @@ slot33 = function(slot0, slot1)
 
 end
 
-slot28.getQuestTriggersByType = slot33
+slot27.getQuestTriggersByType = slot32
 
-slot33 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.customCount
 	slot2 = slot2[slot1]
@@ -1281,9 +1355,9 @@ slot33 = function(slot0, slot1)
 
 end
 
-slot28.getFinishCount = slot33
+slot27.getFinishCount = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = nil
 	slot5 = TriggerConst
@@ -1307,7 +1381,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot4 = slot5[slot6]
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
 	--- BLOCK #2 14-17, warpins: 1 ---
@@ -1332,7 +1406,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1347,7 +1421,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1363,7 +1437,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot8
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
 	--- BLOCK #6 41-44, warpins: 1 ---
@@ -1388,7 +1462,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1403,7 +1477,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1419,7 +1493,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot8
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
 	--- BLOCK #10 68-71, warpins: 1 ---
@@ -1444,7 +1518,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1459,7 +1533,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot7 = if slot7 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1475,7 +1549,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot8
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
 	--- BLOCK #14 95-98, warpins: 1 ---
@@ -1486,7 +1560,7 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	if slot1 == slot5 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #20
 	end
 
 
@@ -1500,80 +1574,164 @@ slot33 = function(slot0, slot1, slot2, slot3)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #16 105-111, warpins: 1 ---
-	slot6 = QuestCommonUtils
-	slot6 = slot6.getQuestData
-	slot8 = slot5
-	slot9 = slot2
-	slot6, slot7 = slot6(slot8, slot9)
+	--- BLOCK #16 105-107, warpins: 1 ---
+	slot6 = slot5.questCompleteActions
 	--- END OF BLOCK #16 ---
 
-	slot7 = if slot7 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 112-121, warpins: 1 ---
-	slot10 = slot7
-	slot8 = slot7.getConditionCnt
-	slot11 = slot3
-	slot12 = QuestConst
-	slot12 = slot12.QUEST_CONDTYPE
-	slot12 = slot12.COM_ACTION_OBJECTIVE
-	slot8, slot9 = slot8(slot10, slot11, slot12)
-	slot4 = slot9
-	slot6 = slot8
+	--- BLOCK #17 108-109, warpins: 1 ---
+	slot6 = slot5.questCompleteActions
+	slot6 = slot6[slot2]
 	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 122-124, warpins: 1 ---
+	--- BLOCK #18 110-111, warpins: 2 ---
+	--- END OF BLOCK #18 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #19 112-121, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.getConditionCnt
+	slot10 = slot3
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_CONDTYPE
+	slot11 = slot11.COM_ACTION_OBJECTIVE
+	slot7, slot8 = slot7(slot9, slot10, slot11)
+	slot4 = slot8
+	_ = slot7
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #20 122-125, warpins: 1 ---
+	slot5 = TriggerConst
+	slot5 = slot5.TRIGGER_REGTYPE_QUEST_CLOSECOND
+	--- END OF BLOCK #20 ---
+
+	if slot1 == slot5 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #21 126-131, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getPlayer
+	slot8 = true
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #21 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #22 132-134, warpins: 1 ---
+	slot6 = slot5.questCloseConditions
+	--- END OF BLOCK #22 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 135-136, warpins: 1 ---
+	slot6 = slot5.questCloseConditions
+	slot6 = slot6[slot2]
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 137-138, warpins: 2 ---
+	--- END OF BLOCK #24 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #25 139-148, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.getConditionCnt
+	slot10 = slot3
+	slot11 = QuestConst
+	slot11 = slot11.QUEST_CONDTYPE
+	slot11 = slot11.CLOSECOND
+	slot7, slot8 = slot7(slot9, slot10, slot11)
+	slot4 = slot8
+	_ = slot7
+	--- END OF BLOCK #25 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #26 149-151, warpins: 1 ---
 	slot5 = ALARM
 	slot7 = "invalid regType"
 
 	slot5(slot7)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #19 125-126, warpins: 14 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #27 152-153, warpins: 17 ---
+	--- END OF BLOCK #27 ---
 
 	slot5 = if not slot4 then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #20 127-127, warpins: 1 ---
+	--- BLOCK #28 154-154, warpins: 1 ---
 	slot5 = 0
 
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #21 128-128, warpins: 2 ---
+	--- BLOCK #29 155-155, warpins: 2 ---
 	return slot5
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #29 ---
 
 
 
 end
 
-slot28.getConditionValue = slot33
+slot27.getConditionValue = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = TriggerConst
 	slot5 = slot5.TRIGGER_REGTYPE_CUSTOM
@@ -1596,7 +1754,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	slot5[slot6] = slot4
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #2 13-16, warpins: 1 ---
@@ -1621,7 +1779,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #48
 	end
 
 
@@ -1672,14 +1830,14 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #8 44-53, warpins: 1 ---
 	slot8 = slot5.logger
 	slot10 = slot8
 	slot8 = slot8.error
-	slot11 = "nil qData, questId=%d"
+	slot11 = "@quest TriggerMap/setConditionValue questId=%s objective nil qData %s"
 	slot12 = slot2
 	slot15 = slot5
 	slot13 = slot5.repr
@@ -1689,7 +1847,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #9 54-57, warpins: 1 ---
@@ -1714,7 +1872,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #48
 	end
 
 
@@ -1777,14 +1935,14 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #16 89-98, warpins: 1 ---
 	slot8 = slot5.logger
 	slot10 = slot8
 	slot8 = slot8.error
-	slot11 = "nil qData, questId=%d"
+	slot11 = "@quest TriggerMap/setConditionValue questId=%s claimcond nil qData %s"
 	slot12 = slot2
 	slot15 = slot5
 	slot13 = slot5.repr
@@ -1794,7 +1952,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #16 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #17 99-102, warpins: 1 ---
@@ -1819,7 +1977,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #48
 	end
 
 
@@ -1882,14 +2040,14 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #23 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #24 134-143, warpins: 1 ---
 	slot8 = slot5.logger
 	slot10 = slot8
 	slot8 = slot8.error
-	slot11 = "nil qData, questId=%d"
+	slot11 = "@quest TriggerMap/setConditionValue questId=%s runcond nil qData %s"
 	slot12 = slot2
 	slot15 = slot5
 	slot13 = slot5.repr
@@ -1899,7 +2057,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	--- END OF BLOCK #24 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
 	--- BLOCK #25 144-147, warpins: 1 ---
@@ -1910,7 +2068,7 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot1 == slot5 then
 	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #35
 	end
 
 
@@ -1924,65 +2082,92 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot5 ~= nil then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #48
 	end
 
 
-	--- BLOCK #27 154-160, warpins: 1 ---
+	--- BLOCK #27 154-161, warpins: 1 ---
 	slot6 = QuestCommonUtils
 	slot6 = slot6.getQuestData
 	slot8 = slot5
 	slot9 = slot2
-	slot6, slot7 = slot6(slot8, slot9)
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot5.questCompleteActions
 	--- END OF BLOCK #27 ---
 
-	if slot7 ~= nil then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #28 161-163, warpins: 1 ---
-	slot8 = slot6.comActionObjcvs
+	--- BLOCK #28 162-163, warpins: 1 ---
+	slot7 = slot5.questCompleteActions
+	slot7 = slot7[slot2]
 	--- END OF BLOCK #28 ---
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #29
-	else
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 164-165, warpins: 2 ---
+	--- END OF BLOCK #29 ---
+
+	slot6 = if slot6 then
 	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #29 164-164, warpins: 1 ---
+	--- BLOCK #30 166-167, warpins: 1 ---
+	--- END OF BLOCK #30 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #31 168-170, warpins: 1 ---
+	slot8 = slot6.comActionObjcvs
+	--- END OF BLOCK #31 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 171-171, warpins: 1 ---
 	slot8 = {}
-	--- END OF BLOCK #29 ---
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #30 165-174, warpins: 2 ---
+	--- BLOCK #33 172-179, warpins: 2 ---
 	slot11 = slot7
 	slot9 = slot7.setObjective
-	slot12 = slot3
-	slot13 = slot4
-	slot14 = slot8
-	slot15 = QuestConst
-	slot15 = slot15.QUEST_CONDTYPE
-	slot15 = slot15.COM_ACTION_OBJECTIVE
+	slot12 = slot2
+	slot13 = slot3
+	slot14 = slot4
+	slot15 = slot8
 
 	slot9(slot11, slot12, slot13, slot14, slot15)
 
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #31 175-184, warpins: 1 ---
+	--- BLOCK #34 180-189, warpins: 2 ---
 	slot8 = slot5.logger
 	slot10 = slot8
 	slot8 = slot8.error
-	slot11 = "nil qData, questId=%d"
+	slot11 = "@quest TriggerMap/setConditionValue questId=%s actionObjective nil ca %s"
 	slot12 = slot2
 	slot15 = slot5
 	slot13 = slot5.repr
@@ -1990,51 +2175,193 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot8(slot10, slot11, slot12, MULTRES)
 
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #34 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #33
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #32 185-187, warpins: 1 ---
+	--- BLOCK #35 190-193, warpins: 1 ---
+	slot5 = TriggerConst
+	slot5 = slot5.TRIGGER_REGTYPE_QUEST_CLOSECOND
+	--- END OF BLOCK #35 ---
+
+	if slot1 == slot5 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #36 194-199, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getPlayer
+	slot8 = true
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #36 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #48
+	end
+
+
+	--- BLOCK #37 200-207, warpins: 1 ---
+	slot6 = QuestCommonUtils
+	slot6 = slot6.getQuestData
+	slot8 = slot5
+	slot9 = slot2
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot5.questCloseConditions
+	--- END OF BLOCK #37 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 208-209, warpins: 1 ---
+	slot7 = slot5.questCloseConditions
+	slot7 = slot7[slot2]
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 210-211, warpins: 2 ---
+	--- END OF BLOCK #39 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #40 212-214, warpins: 1 ---
+	slot8 = slot6.closeCond
+	--- END OF BLOCK #40 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 215-218, warpins: 1 ---
+	slot8 = slot6.closeCond
+	slot8 = slot8.condition
+	--- END OF BLOCK #41 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #42
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #42 219-219, warpins: 3 ---
+	slot8 = {}
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 220-221, warpins: 2 ---
+	--- END OF BLOCK #43 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #44 222-223, warpins: 1 ---
+	--- END OF BLOCK #44 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #45 224-231, warpins: 1 ---
+	slot11 = slot7
+	slot9 = slot7.setObjective
+	slot12 = slot2
+	slot13 = slot3
+	slot14 = slot4
+	slot15 = slot8
+
+	slot9(slot11, slot12, slot13, slot14, slot15)
+
+	--- END OF BLOCK #45 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
+
+
+	--- BLOCK #46 232-241, warpins: 2 ---
+	slot9 = slot5.logger
+	slot11 = slot9
+	slot9 = slot9.error
+	slot12 = "@quest TriggerMap/setConditionValue questId=%s closeCond nil data %s"
+	slot13 = slot2
+	slot16 = slot5
+	slot14 = slot5.repr
+	MULTRES = slot14(slot16)
+
+	slot9(slot11, slot12, slot13, MULTRES)
+
+	--- END OF BLOCK #46 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
+
+
+	--- BLOCK #47 242-244, warpins: 1 ---
 	slot5 = ALARM
 	slot7 = "invalid regType"
 
 	slot5(slot7)
 
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #47 ---
 
-	FLOW; TARGET BLOCK #33
+	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #33 188-189, warpins: 14 ---
-	--- END OF BLOCK #33 ---
+	--- BLOCK #48 245-246, warpins: 17 ---
+	--- END OF BLOCK #48 ---
 
 	slot5 = if not slot4 then
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #34 190-190, warpins: 1 ---
+	--- BLOCK #49 247-247, warpins: 1 ---
 	slot5 = 0
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #49 ---
 
-	FLOW; TARGET BLOCK #35
+	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #35 191-191, warpins: 2 ---
+	--- BLOCK #50 248-248, warpins: 2 ---
 	return slot5
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #50 ---
 
 
 
 end
 
-slot28.setConditionValue = slot33
+slot27.setConditionValue = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.getConditionValue
@@ -2059,9 +2386,9 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot28.addConditionValue = slot33
+slot27.addConditionValue = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2165,9 +2492,9 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot28.getCurrentValueByCondition = slot33
+slot27.getCurrentValueByCondition = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3, slot4)
+slot32 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2218,114 +2545,210 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot28.checkCurrentValueByCondition = slot33
+slot27.checkCurrentValueByCondition = slot32
 
-slot33 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = CustomTriggerData
-	slot3 = slot3[slot1]
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot3 == nil then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-6, warpins: 1 ---
-	slot4 = 0
-
-	return slot4
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-12, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.getCurrentValueByCondition
-	slot7 = slot3.condition
-	slot7 = slot7[slot2]
-	--- END OF BLOCK #2 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 13-13, warpins: 1 ---
-	slot7 = {}
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.WARN
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = "getConditionFinishCount nil"
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 2 ---
+	slot3 = 0
+
+	return slot3
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-18, warpins: 2 ---
+	--- BLOCK #4 17-20, warpins: 2 ---
+	slot3 = CustomTriggerData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #4 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 21-22, warpins: 1 ---
+	slot4 = 0
+
+	return slot4
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-28, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getCurrentValueByCondition
+	slot7 = slot3.condition
+	slot7 = slot7[slot2]
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-29, warpins: 1 ---
+	slot7 = {}
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 30-34, warpins: 2 ---
 	slot8 = TriggerConst
 	slot8 = slot8.TRIGGER_REGTYPE_CUSTOM
 	slot9 = slot1
 	slot10 = slot2
 
 	return slot4(slot6, slot7, slot8, slot9, slot10)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot28.getConditionFinishCount = slot33
+slot27.getConditionFinishCount = slot32
 
-slot33 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = CustomTriggerData
-	slot3 = slot3[slot1]
+slot32 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= nil then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot4 = slot3.condition
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.WARN
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #1 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-11, warpins: 1 ---
-	slot4 = slot3.condition
-	slot4 = slot4[slot2]
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = "getConditionTargetCount nil"
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #2 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 12-13, warpins: 3 ---
-	slot4 = 0
+	--- BLOCK #3 15-16, warpins: 2 ---
+	slot3 = 0
 
-	return slot4
+	return slot3
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-19, warpins: 2 ---
+	--- BLOCK #4 17-20, warpins: 2 ---
+	slot3 = CustomTriggerData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #4 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 21-23, warpins: 1 ---
+	slot4 = slot3.condition
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 24-27, warpins: 1 ---
+	slot4 = slot3.condition
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 28-29, warpins: 3 ---
+	slot4 = 0
+
+	return slot4
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 30-35, warpins: 2 ---
 	slot4 = slot3.condition
 	slot4 = slot4[slot2]
 	slot5 = TriggerConst
@@ -2333,15 +2756,15 @@ slot33 = function(slot0, slot1, slot2)
 	slot4 = slot4[slot5]
 
 	return slot4
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot28.getConditionTargetCount = slot33
+slot27.getConditionTargetCount = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = CustomTriggerData
 	slot3 = slot3[slot1]
@@ -2398,9 +2821,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkConditionFinishCount = slot33
+slot27.checkConditionFinishCount = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = _G_IsDebugMode
 	--- END OF BLOCK #0 ---
@@ -2745,9 +3168,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.dumpCustomStatus = slot33
+slot27.dumpCustomStatus = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.npcBehaviorStatus
 	slot3 = slot3[slot1]
@@ -2789,9 +3212,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getNpcBehaviorStatus = slot33
+slot27.getNpcBehaviorStatus = slot32
 
-slot33 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = TriggerConst
 	slot2 = slot2.TRIGGER_TARGET_CHECK_CUSTOM_VARIABLE
@@ -2997,19 +3420,56 @@ slot33 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 70-71, warpins: 3 ---
+	--- BLOCK #17 70-73, warpins: 3 ---
+	slot3 = slot0.questCloseTriggers
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #17 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 74-80, warpins: 1 ---
+	slot3 = slot0.questCloseTriggers
+	slot3 = slot3[slot1]
+	slot4 = TriggerConst
+	slot4 = slot4.TRIGGER_ID_ANY
+	slot3 = slot3[slot4]
+	--- END OF BLOCK #18 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 81-82, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 83-84, warpins: 3 ---
 	slot3 = false
 
 	return slot3
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot28.checkNeedAnyCondition = slot33
+slot27.checkNeedAnyCondition = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot32 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3175,9 +3635,9 @@ slot33 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot28.getCommonTriggerConditionValue = slot33
+slot27.getCommonTriggerConditionValue = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = TriggerUtils
 	slot3 = slot3.checkMeetOperator
@@ -3192,9 +3652,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkMeetOperator = slot33
+slot27.checkMeetOperator = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot1.conditionExpression
 	slot4 = {}
@@ -3361,9 +3821,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkMeetCustomTrigger = slot33
+slot27.checkMeetCustomTrigger = slot32
 
-slot33 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.conditionExpression
 	slot3 = slot1.condition
@@ -3566,9 +4026,9 @@ slot33 = function(slot0, slot1)
 
 end
 
-slot28.checkMeetCustomTriggerWithoutMain = slot33
+slot27.checkMeetCustomTriggerWithoutMain = slot32
 
-slot33 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = CustomVariableData
 	slot2 = slot2[slot1]
@@ -3633,9 +4093,9 @@ slot33 = function(slot0, slot1)
 
 end
 
-slot28._checkCustomVariable = slot33
+slot27._checkCustomVariable = slot32
 
-slot33 = function(slot0, slot1)
+slot32 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._checkCustomVariable
@@ -3717,9 +4177,9 @@ slot33 = function(slot0, slot1)
 
 end
 
-slot28.getCustomVariable = slot33
+slot27.getCustomVariable = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = CustomTriggerMapData
 	slot3 = slot3[slot1]
@@ -3768,7 +4228,7 @@ slot33 = function(slot0, slot1, slot2)
 	slot11 = slot11.parseCustomTriggerKey
 	slot13 = slot10
 	slot11, slot12 = slot11(slot13)
-	slot13 = gitBit
+	slot13 = getBit
 	slot15 = slot4
 	slot16 = slot11
 	slot13 = slot13(slot15, slot16)
@@ -3794,7 +4254,7 @@ slot33 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #6 31-36, warpins: 1 ---
-	slot13 = gitBit
+	slot13 = getBit
 	slot15 = slot5
 	slot16 = slot11
 	slot13 = slot13(slot15, slot16)
@@ -3858,9 +4318,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.isRegisterTriggerType = slot33
+slot27.isRegisterTriggerType = slot32
 
-slot33 = function(slot0, slot1, slot2, slot3)
+slot32 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3932,9 +4392,9 @@ slot33 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.addTriggerCurrentCount = slot33
+slot27.addTriggerCurrentCount = slot32
 
-slot33 = function(slot0, slot1, slot2)
+slot32 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.triggerCurrentCountInfo
 	slot3 = slot3[slot1]
@@ -4044,9 +4504,9 @@ slot33 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getTriggerCurrentCount = slot33
+slot27.getTriggerCurrentCount = slot32
 
-return slot28
+return slot27
 --- END OF BLOCK #3 ---
 
 

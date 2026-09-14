@@ -8,39 +8,39 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	version = 6,
-	useForRoute = true,
 	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/_Wild/10501_Cubbo/PBT_Wild_10501_Dialogue"
+	name = "ParmonBehaviorTree/SubTree/_Wild/10501_Cubbo/PBT_Wild_10501_Dialogue",
+	useForRoute = true
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
+	const = 0,
 	type = "int",
-	name = "firstDialogueId",
-	const = 0
+	value = "0",
+	name = "firstDialogueId"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
+	const = 0,
 	type = "int",
-	name = "lastDialogueId",
-	const = 0
+	value = "0",
+	name = "lastDialogueId"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "0",
+	const = 0,
 	type = "int",
-	name = "dialogueId",
-	const = 0
+	value = "0",
+	name = "dialogueId"
 }
 slot4[3] = slot5
 slot5 = {
-	value = "0",
+	const = 0,
 	type = "float",
-	name = "tWaitTime",
-	const = 0
+	value = "0",
+	name = "tWaitTime"
 }
 slot4[4] = slot5
 slot3.pars = slot4

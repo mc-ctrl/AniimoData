@@ -6,53 +6,53 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
-	defaultValue = 50,
-	name = "patrolWeight"
+	name = "patrolWeight",
+	defaultValue = 50
 }
 slot2[1] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "selfId"
+	name = "selfId",
+	defaultValue = 0
 }
 slot2[2] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgt"
+	name = "distToTgt",
+	defaultValue = 0
 }
 slot2[3] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgtForSkill"
+	name = "distToTgtForSkill",
+	defaultValue = 0
 }
 slot2[4] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "jumpBackTimeline"
+	name = "jumpBackTimeline",
+	defaultValue = 0
 }
 slot2[5] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "canWalkLeftOrRight"
+	name = "canWalkLeftOrRight",
+	defaultValue = false
 }
 slot2[6] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "leaderId"
+	name = "leaderId",
+	defaultValue = 0
 }
 slot2[7] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "followTarget"
+	name = "followTarget",
+	defaultValue = 0
 }
 slot2[8] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "AI_IdleSpecialProb"
+	name = "AI_IdleSpecialProb",
+	defaultValue = 0
 }
 slot2[9] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "IdleMotionState"
+	name = "IdleMotionState",
+	defaultValue = ""
 }
 slot2[10] = slot3
 slot1.properties = slot2
@@ -63,163 +63,163 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
-	defaultValue = false,
-	name = "combatReadyIsTurnToTarget"
+	name = "combatReadyIsTurnToTarget",
+	defaultValue = false
 }
 slot2[1] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "battlestage"
+	name = "battlestage",
+	defaultValue = 0
 }
 slot2[2] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "isCombatPrepareTrigger"
+	name = "isCombatPrepareTrigger",
+	defaultValue = false
 }
 slot2[3] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minKeepBoxDist"
+	name = "minKeepBoxDist",
+	defaultValue = 0
 }
 slot2[4] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "bestKeepBoxDist"
+	name = "bestKeepBoxDist",
+	defaultValue = 0
 }
 slot2[5] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxAttackDist"
+	name = "maxAttackDist",
+	defaultValue = 0
 }
 slot2[6] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "attackStopBoxDist"
+	name = "attackStopBoxDist",
+	defaultValue = 0
 }
 slot2[7] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minAttackDist"
+	name = "minAttackDist",
+	defaultValue = 0
 }
 slot2[8] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxKeepBoxDist"
+	name = "maxKeepBoxDist",
+	defaultValue = 0
 }
 slot2[9] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minBoxDist"
+	name = "minBoxDist",
+	defaultValue = 0
 }
 slot2[10] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "commonCombatSubtree"
+	name = "commonCombatSubtree",
+	defaultValue = ""
 }
 slot2[11] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "tgt"
+	name = "tgt",
+	defaultValue = 0
 }
 slot2[12] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "skillId"
+	name = "skillId",
+	defaultValue = 0
 }
 slot2[13] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "sideWalkWeight"
+	name = "sideWalkWeight",
+	defaultValue = 50
 }
 slot2[14] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "attackWeight"
+	name = "attackWeight",
+	defaultValue = 50
 }
 slot2[15] = slot3
 slot3 = {
-	defaultValue = "PBT_AutoCombat",
-	name = "Param_ST_Monster_AutoCombat"
+	name = "Param_ST_Monster_AutoCombat",
+	defaultValue = "PBT_AutoCombat"
 }
 slot2[16] = slot3
 slot3 = {
-	defaultValue = "ST_GoHome",
-	name = "Param_ST_GoHome"
+	name = "Param_ST_GoHome",
+	defaultValue = "ST_GoHome"
 }
 slot2[17] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Born"
+	name = "Param_ST_Born",
+	defaultValue = "PBT_Noop"
 }
 slot2[18] = slot3
 slot3 = {
-	defaultValue = "PBT_Combat_Prepare_Default",
-	name = "Param_ST_Combat_Prepare"
+	name = "Param_ST_Combat_Prepare",
+	defaultValue = "PBT_Combat_Prepare_Default"
 }
 slot2[19] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Idle"
+	name = "Param_ST_Idle",
+	defaultValue = "PBT_Noop"
 }
 slot2[20] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Alert"
+	name = "Param_ST_Alert",
+	defaultValue = "PBT_Noop"
 }
 slot2[21] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Sensed"
+	name = "Param_ST_Sensed",
+	defaultValue = "PBT_Noop"
 }
 slot2[22] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "patrolWeight"
+	name = "patrolWeight",
+	defaultValue = 50
 }
 slot2[23] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "selfId"
+	name = "selfId",
+	defaultValue = 0
 }
 slot2[24] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgt"
+	name = "distToTgt",
+	defaultValue = 0
 }
 slot2[25] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgtForSkill"
+	name = "distToTgtForSkill",
+	defaultValue = 0
 }
 slot2[26] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "jumpBackTimeline"
+	name = "jumpBackTimeline",
+	defaultValue = 0
 }
 slot2[27] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "canWalkLeftOrRight"
+	name = "canWalkLeftOrRight",
+	defaultValue = false
 }
 slot2[28] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "leaderId"
+	name = "leaderId",
+	defaultValue = 0
 }
 slot2[29] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "followTarget"
+	name = "followTarget",
+	defaultValue = 0
 }
 slot2[30] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "AI_IdleSpecialProb"
+	name = "AI_IdleSpecialProb",
+	defaultValue = 0
 }
 slot2[31] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "IdleMotionState"
+	name = "IdleMotionState",
+	defaultValue = ""
 }
 slot2[32] = slot3
 slot1.properties = slot2
@@ -230,188 +230,188 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
-	defaultValue = 0,
-	name = "masterId"
+	name = "masterId",
+	defaultValue = 0
 }
 slot2[1] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "guideTargetActorId"
+	name = "guideTargetActorId",
+	defaultValue = 0
 }
 slot2[2] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "isEnterCombatByInvadeMode"
+	name = "isEnterCombatByInvadeMode",
+	defaultValue = false
 }
 slot2[3] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "afkFov"
+	name = "afkFov",
+	defaultValue = 0
 }
 slot2[4] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "switchedPet"
+	name = "switchedPet",
+	defaultValue = false
 }
 slot2[5] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "combatReadyIsTurnToTarget"
+	name = "combatReadyIsTurnToTarget",
+	defaultValue = false
 }
 slot2[6] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "battlestage"
+	name = "battlestage",
+	defaultValue = 0
 }
 slot2[7] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "isCombatPrepareTrigger"
+	name = "isCombatPrepareTrigger",
+	defaultValue = false
 }
 slot2[8] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minKeepBoxDist"
+	name = "minKeepBoxDist",
+	defaultValue = 0
 }
 slot2[9] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "bestKeepBoxDist"
+	name = "bestKeepBoxDist",
+	defaultValue = 0
 }
 slot2[10] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxAttackDist"
+	name = "maxAttackDist",
+	defaultValue = 0
 }
 slot2[11] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "attackStopBoxDist"
+	name = "attackStopBoxDist",
+	defaultValue = 0
 }
 slot2[12] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minAttackDist"
+	name = "minAttackDist",
+	defaultValue = 0
 }
 slot2[13] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxKeepBoxDist"
+	name = "maxKeepBoxDist",
+	defaultValue = 0
 }
 slot2[14] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minBoxDist"
+	name = "minBoxDist",
+	defaultValue = 0
 }
 slot2[15] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "commonCombatSubtree"
+	name = "commonCombatSubtree",
+	defaultValue = ""
 }
 slot2[16] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "tgt"
+	name = "tgt",
+	defaultValue = 0
 }
 slot2[17] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "skillId"
+	name = "skillId",
+	defaultValue = 0
 }
 slot2[18] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "sideWalkWeight"
+	name = "sideWalkWeight",
+	defaultValue = 50
 }
 slot2[19] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "attackWeight"
+	name = "attackWeight",
+	defaultValue = 50
 }
 slot2[20] = slot3
 slot3 = {
-	defaultValue = "PBT_AutoCombat",
-	name = "Param_ST_Monster_AutoCombat"
+	name = "Param_ST_Monster_AutoCombat",
+	defaultValue = "PBT_AutoCombat"
 }
 slot2[21] = slot3
 slot3 = {
-	defaultValue = "ST_GoHome",
-	name = "Param_ST_GoHome"
+	name = "Param_ST_GoHome",
+	defaultValue = "ST_GoHome"
 }
 slot2[22] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Born"
+	name = "Param_ST_Born",
+	defaultValue = "PBT_Noop"
 }
 slot2[23] = slot3
 slot3 = {
-	defaultValue = "PBT_Combat_Prepare_Default",
-	name = "Param_ST_Combat_Prepare"
+	name = "Param_ST_Combat_Prepare",
+	defaultValue = "PBT_Combat_Prepare_Default"
 }
 slot2[24] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Idle"
+	name = "Param_ST_Idle",
+	defaultValue = "PBT_Noop"
 }
 slot2[25] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Alert"
+	name = "Param_ST_Alert",
+	defaultValue = "PBT_Noop"
 }
 slot2[26] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Sensed"
+	name = "Param_ST_Sensed",
+	defaultValue = "PBT_Noop"
 }
 slot2[27] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "patrolWeight"
+	name = "patrolWeight",
+	defaultValue = 50
 }
 slot2[28] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "selfId"
+	name = "selfId",
+	defaultValue = 0
 }
 slot2[29] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgt"
+	name = "distToTgt",
+	defaultValue = 0
 }
 slot2[30] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgtForSkill"
+	name = "distToTgtForSkill",
+	defaultValue = 0
 }
 slot2[31] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "jumpBackTimeline"
+	name = "jumpBackTimeline",
+	defaultValue = 0
 }
 slot2[32] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "canWalkLeftOrRight"
+	name = "canWalkLeftOrRight",
+	defaultValue = false
 }
 slot2[33] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "leaderId"
+	name = "leaderId",
+	defaultValue = 0
 }
 slot2[34] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "followTarget"
+	name = "followTarget",
+	defaultValue = 0
 }
 slot2[35] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "AI_IdleSpecialProb"
+	name = "AI_IdleSpecialProb",
+	defaultValue = 0
 }
 slot2[36] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "IdleMotionState"
+	name = "IdleMotionState",
+	defaultValue = ""
 }
 slot2[37] = slot3
 slot1.properties = slot2
@@ -422,188 +422,188 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
-	defaultValue = 0,
-	name = "behaviorActTgtId"
+	name = "behaviorActTgtId",
+	defaultValue = 0
 }
 slot2[1] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "CounterInt_1"
+	name = "CounterInt_1",
+	defaultValue = 0
 }
 slot2[2] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "fightCd"
+	name = "fightCd",
+	defaultValue = 0
 }
 slot2[3] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "atkCd"
+	name = "atkCd",
+	defaultValue = 0
 }
 slot2[4] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "skillCd"
+	name = "skillCd",
+	defaultValue = 0
 }
 slot2[5] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "combatReadyIsTurnToTarget"
+	name = "combatReadyIsTurnToTarget",
+	defaultValue = false
 }
 slot2[6] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "battlestage"
+	name = "battlestage",
+	defaultValue = 0
 }
 slot2[7] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "isCombatPrepareTrigger"
+	name = "isCombatPrepareTrigger",
+	defaultValue = false
 }
 slot2[8] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minKeepBoxDist"
+	name = "minKeepBoxDist",
+	defaultValue = 0
 }
 slot2[9] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "bestKeepBoxDist"
+	name = "bestKeepBoxDist",
+	defaultValue = 0
 }
 slot2[10] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxAttackDist"
+	name = "maxAttackDist",
+	defaultValue = 0
 }
 slot2[11] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "attackStopBoxDist"
+	name = "attackStopBoxDist",
+	defaultValue = 0
 }
 slot2[12] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minAttackDist"
+	name = "minAttackDist",
+	defaultValue = 0
 }
 slot2[13] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxKeepBoxDist"
+	name = "maxKeepBoxDist",
+	defaultValue = 0
 }
 slot2[14] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minBoxDist"
+	name = "minBoxDist",
+	defaultValue = 0
 }
 slot2[15] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "commonCombatSubtree"
+	name = "commonCombatSubtree",
+	defaultValue = ""
 }
 slot2[16] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "tgt"
+	name = "tgt",
+	defaultValue = 0
 }
 slot2[17] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "skillId"
+	name = "skillId",
+	defaultValue = 0
 }
 slot2[18] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "sideWalkWeight"
+	name = "sideWalkWeight",
+	defaultValue = 50
 }
 slot2[19] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "attackWeight"
+	name = "attackWeight",
+	defaultValue = 50
 }
 slot2[20] = slot3
 slot3 = {
-	defaultValue = "PBT_AutoCombat",
-	name = "Param_ST_Monster_AutoCombat"
+	name = "Param_ST_Monster_AutoCombat",
+	defaultValue = "PBT_AutoCombat"
 }
 slot2[21] = slot3
 slot3 = {
-	defaultValue = "ST_GoHome",
-	name = "Param_ST_GoHome"
+	name = "Param_ST_GoHome",
+	defaultValue = "ST_GoHome"
 }
 slot2[22] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Born"
+	name = "Param_ST_Born",
+	defaultValue = "PBT_Noop"
 }
 slot2[23] = slot3
 slot3 = {
-	defaultValue = "PBT_Combat_Prepare_Default",
-	name = "Param_ST_Combat_Prepare"
+	name = "Param_ST_Combat_Prepare",
+	defaultValue = "PBT_Combat_Prepare_Default"
 }
 slot2[24] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Idle"
+	name = "Param_ST_Idle",
+	defaultValue = "PBT_Noop"
 }
 slot2[25] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Alert"
+	name = "Param_ST_Alert",
+	defaultValue = "PBT_Noop"
 }
 slot2[26] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Sensed"
+	name = "Param_ST_Sensed",
+	defaultValue = "PBT_Noop"
 }
 slot2[27] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "patrolWeight"
+	name = "patrolWeight",
+	defaultValue = 50
 }
 slot2[28] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "selfId"
+	name = "selfId",
+	defaultValue = 0
 }
 slot2[29] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgt"
+	name = "distToTgt",
+	defaultValue = 0
 }
 slot2[30] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgtForSkill"
+	name = "distToTgtForSkill",
+	defaultValue = 0
 }
 slot2[31] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "jumpBackTimeline"
+	name = "jumpBackTimeline",
+	defaultValue = 0
 }
 slot2[32] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "canWalkLeftOrRight"
+	name = "canWalkLeftOrRight",
+	defaultValue = false
 }
 slot2[33] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "leaderId"
+	name = "leaderId",
+	defaultValue = 0
 }
 slot2[34] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "followTarget"
+	name = "followTarget",
+	defaultValue = 0
 }
 slot2[35] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "AI_IdleSpecialProb"
+	name = "AI_IdleSpecialProb",
+	defaultValue = 0
 }
 slot2[36] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "IdleMotionState"
+	name = "IdleMotionState",
+	defaultValue = ""
 }
 slot2[37] = slot3
 slot1.properties = slot2
@@ -614,163 +614,163 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
-	defaultValue = false,
-	name = "combatReadyIsTurnToTarget"
+	name = "combatReadyIsTurnToTarget",
+	defaultValue = false
 }
 slot2[1] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "battlestage"
+	name = "battlestage",
+	defaultValue = 0
 }
 slot2[2] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "isCombatPrepareTrigger"
+	name = "isCombatPrepareTrigger",
+	defaultValue = false
 }
 slot2[3] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minKeepBoxDist"
+	name = "minKeepBoxDist",
+	defaultValue = 0
 }
 slot2[4] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "bestKeepBoxDist"
+	name = "bestKeepBoxDist",
+	defaultValue = 0
 }
 slot2[5] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxAttackDist"
+	name = "maxAttackDist",
+	defaultValue = 0
 }
 slot2[6] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "attackStopBoxDist"
+	name = "attackStopBoxDist",
+	defaultValue = 0
 }
 slot2[7] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minAttackDist"
+	name = "minAttackDist",
+	defaultValue = 0
 }
 slot2[8] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxKeepBoxDist"
+	name = "maxKeepBoxDist",
+	defaultValue = 0
 }
 slot2[9] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minBoxDist"
+	name = "minBoxDist",
+	defaultValue = 0
 }
 slot2[10] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "commonCombatSubtree"
+	name = "commonCombatSubtree",
+	defaultValue = ""
 }
 slot2[11] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "tgt"
+	name = "tgt",
+	defaultValue = 0
 }
 slot2[12] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "skillId"
+	name = "skillId",
+	defaultValue = 0
 }
 slot2[13] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "sideWalkWeight"
+	name = "sideWalkWeight",
+	defaultValue = 50
 }
 slot2[14] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "attackWeight"
+	name = "attackWeight",
+	defaultValue = 50
 }
 slot2[15] = slot3
 slot3 = {
-	defaultValue = "PBT_AutoCombat",
-	name = "Param_ST_Monster_AutoCombat"
+	name = "Param_ST_Monster_AutoCombat",
+	defaultValue = "PBT_AutoCombat"
 }
 slot2[16] = slot3
 slot3 = {
-	defaultValue = "ST_GoHome",
-	name = "Param_ST_GoHome"
+	name = "Param_ST_GoHome",
+	defaultValue = "ST_GoHome"
 }
 slot2[17] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Born"
+	name = "Param_ST_Born",
+	defaultValue = "PBT_Noop"
 }
 slot2[18] = slot3
 slot3 = {
-	defaultValue = "PBT_Combat_Prepare_Default",
-	name = "Param_ST_Combat_Prepare"
+	name = "Param_ST_Combat_Prepare",
+	defaultValue = "PBT_Combat_Prepare_Default"
 }
 slot2[19] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Idle"
+	name = "Param_ST_Idle",
+	defaultValue = "PBT_Noop"
 }
 slot2[20] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Alert"
+	name = "Param_ST_Alert",
+	defaultValue = "PBT_Noop"
 }
 slot2[21] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Sensed"
+	name = "Param_ST_Sensed",
+	defaultValue = "PBT_Noop"
 }
 slot2[22] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "patrolWeight"
+	name = "patrolWeight",
+	defaultValue = 50
 }
 slot2[23] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "selfId"
+	name = "selfId",
+	defaultValue = 0
 }
 slot2[24] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgt"
+	name = "distToTgt",
+	defaultValue = 0
 }
 slot2[25] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgtForSkill"
+	name = "distToTgtForSkill",
+	defaultValue = 0
 }
 slot2[26] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "jumpBackTimeline"
+	name = "jumpBackTimeline",
+	defaultValue = 0
 }
 slot2[27] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "canWalkLeftOrRight"
+	name = "canWalkLeftOrRight",
+	defaultValue = false
 }
 slot2[28] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "leaderId"
+	name = "leaderId",
+	defaultValue = 0
 }
 slot2[29] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "followTarget"
+	name = "followTarget",
+	defaultValue = 0
 }
 slot2[30] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "AI_IdleSpecialProb"
+	name = "AI_IdleSpecialProb",
+	defaultValue = 0
 }
 slot2[31] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "IdleMotionState"
+	name = "IdleMotionState",
+	defaultValue = ""
 }
 slot2[32] = slot3
 slot1.properties = slot2
@@ -781,163 +781,163 @@ slot1 = {
 }
 slot2 = {}
 slot3 = {
-	defaultValue = false,
-	name = "combatReadyIsTurnToTarget"
+	name = "combatReadyIsTurnToTarget",
+	defaultValue = false
 }
 slot2[1] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "battlestage"
+	name = "battlestage",
+	defaultValue = 0
 }
 slot2[2] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "isCombatPrepareTrigger"
+	name = "isCombatPrepareTrigger",
+	defaultValue = false
 }
 slot2[3] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minKeepBoxDist"
+	name = "minKeepBoxDist",
+	defaultValue = 0
 }
 slot2[4] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "bestKeepBoxDist"
+	name = "bestKeepBoxDist",
+	defaultValue = 0
 }
 slot2[5] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxAttackDist"
+	name = "maxAttackDist",
+	defaultValue = 0
 }
 slot2[6] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "attackStopBoxDist"
+	name = "attackStopBoxDist",
+	defaultValue = 0
 }
 slot2[7] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minAttackDist"
+	name = "minAttackDist",
+	defaultValue = 0
 }
 slot2[8] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "maxKeepBoxDist"
+	name = "maxKeepBoxDist",
+	defaultValue = 0
 }
 slot2[9] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "minBoxDist"
+	name = "minBoxDist",
+	defaultValue = 0
 }
 slot2[10] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "commonCombatSubtree"
+	name = "commonCombatSubtree",
+	defaultValue = ""
 }
 slot2[11] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "tgt"
+	name = "tgt",
+	defaultValue = 0
 }
 slot2[12] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "skillId"
+	name = "skillId",
+	defaultValue = 0
 }
 slot2[13] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "sideWalkWeight"
+	name = "sideWalkWeight",
+	defaultValue = 50
 }
 slot2[14] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "attackWeight"
+	name = "attackWeight",
+	defaultValue = 50
 }
 slot2[15] = slot3
 slot3 = {
-	defaultValue = "PBT_AutoCombat",
-	name = "Param_ST_Monster_AutoCombat"
+	name = "Param_ST_Monster_AutoCombat",
+	defaultValue = "PBT_AutoCombat"
 }
 slot2[16] = slot3
 slot3 = {
-	defaultValue = "ST_GoHome",
-	name = "Param_ST_GoHome"
+	name = "Param_ST_GoHome",
+	defaultValue = "ST_GoHome"
 }
 slot2[17] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Born"
+	name = "Param_ST_Born",
+	defaultValue = "PBT_Noop"
 }
 slot2[18] = slot3
 slot3 = {
-	defaultValue = "PBT_Combat_Prepare_Default",
-	name = "Param_ST_Combat_Prepare"
+	name = "Param_ST_Combat_Prepare",
+	defaultValue = "PBT_Combat_Prepare_Default"
 }
 slot2[19] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Idle"
+	name = "Param_ST_Idle",
+	defaultValue = "PBT_Noop"
 }
 slot2[20] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Alert"
+	name = "Param_ST_Alert",
+	defaultValue = "PBT_Noop"
 }
 slot2[21] = slot3
 slot3 = {
-	defaultValue = "PBT_Noop",
-	name = "Param_ST_Sensed"
+	name = "Param_ST_Sensed",
+	defaultValue = "PBT_Noop"
 }
 slot2[22] = slot3
 slot3 = {
-	defaultValue = 50,
-	name = "patrolWeight"
+	name = "patrolWeight",
+	defaultValue = 50
 }
 slot2[23] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "selfId"
+	name = "selfId",
+	defaultValue = 0
 }
 slot2[24] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgt"
+	name = "distToTgt",
+	defaultValue = 0
 }
 slot2[25] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "distToTgtForSkill"
+	name = "distToTgtForSkill",
+	defaultValue = 0
 }
 slot2[26] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "jumpBackTimeline"
+	name = "jumpBackTimeline",
+	defaultValue = 0
 }
 slot2[27] = slot3
 slot3 = {
-	defaultValue = false,
-	name = "canWalkLeftOrRight"
+	name = "canWalkLeftOrRight",
+	defaultValue = false
 }
 slot2[28] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "leaderId"
+	name = "leaderId",
+	defaultValue = 0
 }
 slot2[29] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "followTarget"
+	name = "followTarget",
+	defaultValue = 0
 }
 slot2[30] = slot3
 slot3 = {
-	defaultValue = 0,
-	name = "AI_IdleSpecialProb"
+	name = "AI_IdleSpecialProb",
+	defaultValue = 0
 }
 slot2[31] = slot3
 slot3 = {
-	defaultValue = "",
-	name = "IdleMotionState"
+	name = "IdleMotionState",
+	defaultValue = ""
 }
 slot2[32] = slot3
 slot1.properties = slot2

@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-64, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -26,6 +26,12 @@ slot10 = slot2
 slot7 = slot7(slot9, slot10)
 slot8 = {}
 slot9 = slot4.EVENT_GET_VITALITY_REWARD
+slot10 = {
+	"refreshTraceResearch",
+	true
+}
+slot8[slot9] = slot10
+slot9 = slot4.EVENT_TASK_STATE_CHANGE
 slot10 = {
 	"refreshTraceResearch",
 	true
@@ -60,7 +66,7 @@ end
 slot7.onCreate = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
+	--- BLOCK #0 1-41, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
 
@@ -201,6 +207,186 @@ slot11 = function(slot0)
 	end
 
 	slot2.luaRenderItem = slot3
+	slot2 = slot0.view
+	slot2 = slot2.topStageList
+
+	slot3 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-3, warpins: 1 ---
+		slot1 = slot0[1]
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 4-5, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot2 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 6-8, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.stageInfo
+		slot2 = slot2[slot1]
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 9-10, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		if slot2 ~= nil then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 11-16, warpins: 1 ---
+		slot3 = slot2.state
+		slot4 = UIConst
+		slot4 = slot4.EventEcoTraceState
+		slot4 = slot4.UnLock
+		--- END OF BLOCK #5 ---
+
+		if slot3 == slot4 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 17-18, warpins: 2 ---
+		slot3 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 19-19, warpins: 1 ---
+		slot3 = true
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 20-20, warpins: 2 ---
+		return slot3
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot2.luaCheckCanSelected = slot3
+	slot2 = slot0.view
+	slot2 = slot2.topStageList
+
+	slot3 = function(slot0, slot1)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-3, warpins: 1 ---
+		slot2 = slot1[1]
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 4-5, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot3 = if slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 6-8, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.stageInfo
+		slot3 = slot3[slot2]
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 9-10, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #5 11-16, warpins: 1 ---
+		slot4 = slot3.state
+		slot5 = UIConst
+		slot5 = slot5.EventEcoTraceState
+		slot5 = slot5.UnLock
+		--- END OF BLOCK #5 ---
+
+		if slot4 == slot5 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 17-27, warpins: 1 ---
+		slot4 = pg
+		slot4 = slot4.global
+		slot4 = slot4.ui
+		slot4 = slot4.tips
+		slot6 = slot4
+		slot4 = slot4.showTextTip
+		slot7 = pg
+		slot7 = slot7.getGameString
+		slot9 = "ECOLOGICAL_RESARCH_UNOPEN"
+		MULTRES = slot7(slot9)
+
+		slot4(slot6, MULTRES)
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 28-28, warpins: 3 ---
+		return
+		--- END OF BLOCK #7 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
 	slot2 = slot0.view
 	slot2 = slot2.topStageList
 
@@ -385,58 +571,6 @@ end
 
 slot7.buildStageList = slot11
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.topStageList
-	slot3 = slot1
-	slot1 = slot1.TryGetChildAt
-	slot4 = slot0.curStage
-	slot4 = slot4 - 1
-	slot1, slot2 = slot1(slot3, slot4)
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-10, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-22, warpins: 2 ---
-	slot3 = true
-	slot2.isSelected = slot3
-	slot5 = slot2
-	slot3 = slot2.TryChangePage
-	slot6 = "button"
-	slot7 = "s_normal"
-
-	slot3(slot5, slot6, slot7)
-
-	slot5 = slot2
-	slot3 = slot2.SetSelected
-	slot6 = true
-
-	slot3(slot5, slot6)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot7.restoreCurrentStageSelection = slot11
-
 slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.stageInfo
@@ -459,39 +593,19 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-11, warpins: 2 ---
-	slot3 = slot2.state
-	slot4 = UIConst
-	slot4 = slot4.EventEcoTraceState
-	slot4 = slot4.UnLock
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot3 = slot0.curStage
+
 	--- END OF BLOCK #2 ---
 
-	if slot3 == slot4 then
+	if slot3 == slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-26, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.tips
-	slot5 = slot3
-	slot3 = slot3.showTextTip
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "ECOLOGICAL_RESARCH_UNOPEN"
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	slot5 = slot0
-	slot3 = slot0.restoreCurrentStageSelection
-
-	slot3(slot5)
-
+	--- BLOCK #3 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -499,27 +613,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-29, warpins: 2 ---
-	slot3 = slot0.curStage
-
-	--- END OF BLOCK #4 ---
-
-	if slot3 == slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 30-30, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 31-40, warpins: 2 ---
+	--- BLOCK #4 10-19, warpins: 2 ---
 	slot0.curStage = slot1
 	slot3 = slot0.view
 	slot3 = slot3.topStageList
@@ -534,7 +628,7 @@ slot11 = function(slot0, slot1)
 	slot3(slot5)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
 
 

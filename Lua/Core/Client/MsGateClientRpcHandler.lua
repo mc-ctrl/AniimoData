@@ -990,14 +990,13 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #15 99-109, warpins: 1 ---
+	--- BLOCK #15 99-108, warpins: 1 ---
 	slot5 = require
 	slot7 = "Utils.ClientUtils"
 	slot5 = slot5(slot7)
 	slot6 = ClientRepo
 	slot7 = Time
-	slot7 = slot7.getSecond
-	slot7 = slot7()
+	slot7 = slot7.realSecondCache
 	slot6.notShowDisconnectStartTime = slot7
 	slot6 = slot5.showKicked
 
@@ -1008,7 +1007,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #16 110-111, warpins: 1 ---
+	--- BLOCK #16 109-110, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
 	if slot2 == "notifyServerClose" then
@@ -1018,7 +1017,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #17 112-126, warpins: 1 ---
+	--- BLOCK #17 111-124, warpins: 1 ---
 	slot5 = require
 	slot7 = "Utils.ClientUtils"
 	slot5 = slot5(slot7)
@@ -1032,15 +1031,14 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 	slot6 = ClientRepo
 	slot7 = Time
-	slot7 = slot7.getSecond
-	slot7 = slot7()
+	slot7 = slot7.realSecondCache
 	slot6.notShowDisconnectStartTime = slot7
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #18 127-128, warpins: 1 ---
+	--- BLOCK #18 125-126, warpins: 1 ---
 	--- END OF BLOCK #18 ---
 
 	if slot2 == "bindSoulClientNotMatch" then
@@ -1050,7 +1048,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #19 129-146, warpins: 1 ---
+	--- BLOCK #19 127-144, warpins: 1 ---
 	slot5 = true
 	slot0.isServiceLogin = slot5
 	slot5 = slot4[3]
@@ -1076,7 +1074,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #20 147-153, warpins: 1 ---
+	--- BLOCK #20 145-151, warpins: 1 ---
 	slot10 = ClientRepo
 	slot10 = slot10.netHandler
 	slot12 = slot10
@@ -1090,7 +1088,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #21 154-157, warpins: 1 ---
+	--- BLOCK #21 152-155, warpins: 1 ---
 	slot10 = GlobalData
 	slot10 = slot10.BlockBindSoulClientNotMatch
 	--- END OF BLOCK #21 ---
@@ -1102,7 +1100,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #22 158-167, warpins: 1 ---
+	--- BLOCK #22 156-165, warpins: 1 ---
 	slot10 = print
 	slot12 = "BlockBindSoulClientNotMatch: skip tip"
 
@@ -1121,7 +1119,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #23 168-203, warpins: 1 ---
+	--- BLOCK #23 166-201, warpins: 1 ---
 	slot10 = require
 	slot12 = "Utils.ClientUtils"
 	slot10 = slot10(slot12)
@@ -1197,7 +1195,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #24 204-207, warpins: 1 ---
+	--- BLOCK #24 202-205, warpins: 1 ---
 	slot5 = GlobalData
 	slot5 = slot5.Player
 	--- END OF BLOCK #24 ---
@@ -1209,7 +1207,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #25 208-212, warpins: 1 ---
+	--- BLOCK #25 206-210, warpins: 1 ---
 	slot5 = GlobalData
 	slot5 = slot5.Player
 	slot5 = slot5[slot2]
@@ -1222,7 +1220,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #26 213-222, warpins: 1 ---
+	--- BLOCK #26 211-220, warpins: 1 ---
 	slot5 = GlobalData
 	slot5 = slot5.Player
 	slot5 = slot5[slot2]
@@ -1239,7 +1237,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #27 223-229, warpins: 2 ---
+	--- BLOCK #27 221-227, warpins: 2 ---
 	slot5 = LoggerManager
 	slot5 = slot5.checkLogger
 	slot7 = LoggerConst
@@ -1254,7 +1252,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #28 230-235, warpins: 1 ---
+	--- BLOCK #28 228-233, warpins: 1 ---
 	slot5 = logger
 	slot7 = slot5
 	slot5 = slot5.error
@@ -1268,28 +1266,28 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 236-236, warpins: 11 ---
+	--- BLOCK #29 234-234, warpins: 11 ---
 	return
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 237-237, warpins: 2 ---
+	--- BLOCK #30 235-235, warpins: 2 ---
 	return
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 238-238, warpins: 2 ---
+	--- BLOCK #31 236-236, warpins: 2 ---
 	return
 	--- END OF BLOCK #31 ---
 
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 239-239, warpins: 2 ---
+	--- BLOCK #32 237-237, warpins: 2 ---
 	return
 	--- END OF BLOCK #32 ---
 

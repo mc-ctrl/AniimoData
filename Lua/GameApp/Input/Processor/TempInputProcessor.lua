@@ -1,12 +1,12 @@
---- BLOCK #0 1-127, warpins: 1 ---
+--- BLOCK #0 1-124, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.ClientConst"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Utils.ClientModelUtils"
@@ -35,21 +35,18 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Common.Utils.Utils"
 slot11 = slot11(slot13)
-slot12 = slot0.getLogger
+slot12 = slot1.getLogger
 slot14 = "TempInputProcessor"
 slot12 = slot12(slot14)
 slot13 = require
 slot15 = "Utils.GmToolUtils"
 slot13 = slot13(slot15)
-slot14 = require
-slot16 = "Utils.ClientSwitch"
-slot14 = slot14(slot16)
-slot15 = slot5.LightClass
-slot17 = "TempInputProcessor"
-slot18 = slot6
-slot15 = slot15(slot17, slot18)
+slot14 = slot5.LightClass
+slot16 = "TempInputProcessor"
+slot17 = slot6
+slot14 = slot14(slot16, slot17)
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = BaseInputProcessor
 	slot2 = slot2.ctor
@@ -65,9 +62,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.ctor = slot16
+slot14.ctor = slot15
 
-slot16 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = BaseInputProcessor
 	slot1 = slot1.onInit
@@ -87,9 +84,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onInit = slot16
+slot14.onInit = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.actionName
 	--- END OF BLOCK #0 ---
@@ -268,9 +265,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleActionTriggered = slot16
+slot14.handleActionTriggered = slot15
 
-slot16 = function()
+slot15 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -313,9 +310,9 @@ slot16 = function()
 
 end
 
-slot15.checkHasGM = slot16
+slot14.checkHasGM = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -324,9 +321,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleChangeEntityModelViewAction = slot16
+slot14.handleChangeEntityModelViewAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.checkHasGM
 	slot2 = slot2()
@@ -399,8 +396,8 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #6 24-27, warpins: 1 ---
-	slot2 = ClientSwitch
-	slot2 = slot2.EnableQuickMove
+	slot2 = GmToolUtils
+	slot2 = slot2.quickMoveEnabled
 	--- END OF BLOCK #6 ---
 
 	slot2 = if slot2 then
@@ -457,30 +454,27 @@ slot16 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #10 52-67, warpins: 1 ---
+	--- BLOCK #10 52-64, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.eModel
 	slot4 = slot2
-	slot2 = slot2.GetComponent
-	slot5 = ClientConst
+	slot2 = slot2.TeleportWithMouse
+	slot5 = CommonConst
 	slot5 = slot5.COMPONENT_INDEX_MAIN_PLAYER
 	slot2 = slot2(slot4, slot5)
+	slot3 = ClientUtils
+	slot3 = slot3.teleportPos
 	slot5 = slot2
-	slot3 = slot2.TeleportWithMouse
-	slot3 = slot3(slot5)
-	slot4 = ClientUtils
-	slot4 = slot4.teleportPos
-	slot6 = slot3
 
-	slot4(slot6)
+	slot3(slot5)
 
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 68-70, warpins: 1 ---
+	--- BLOCK #11 65-67, warpins: 1 ---
 	slot2 = slot1.phase
 
 	--- END OF BLOCK #11 ---
@@ -492,13 +486,13 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 71-71, warpins: 1 ---
+	--- BLOCK #12 68-68, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 71-71, warpins: 6 ---
+	--- BLOCK #12 68-68, warpins: 6 ---
 	return
 	--- END OF BLOCK #12 ---
 
@@ -506,9 +500,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleTeleportWithMouseAction = slot16
+slot14.handleTeleportWithMouseAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.checkHasGM
 	slot2 = slot2()
@@ -553,8 +547,8 @@ slot16 = function(slot0, slot1)
 
 
 	--- BLOCK #4 12-15, warpins: 1 ---
-	slot2 = ClientSwitch
-	slot2 = slot2.EnableQuickMove
+	slot2 = GmToolUtils
+	slot2 = slot2.quickMoveEnabled
 	--- END OF BLOCK #4 ---
 
 	slot2 = if slot2 then
@@ -576,30 +570,27 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 20-35, warpins: 1 ---
+	--- BLOCK #6 20-32, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.eModel
 	slot4 = slot2
-	slot2 = slot2.GetComponent
-	slot5 = ClientConst
+	slot2 = slot2.TeleportWithPosition
+	slot5 = CommonConst
 	slot5 = slot5.COMPONENT_INDEX_MAIN_PLAYER
 	slot2 = slot2(slot4, slot5)
+	slot3 = ClientUtils
+	slot3 = slot3.teleportPos
 	slot5 = slot2
-	slot3 = slot2.TeleportWithPosition
-	slot3 = slot3(slot5)
-	slot4 = ClientUtils
-	slot4 = slot4.teleportPos
-	slot6 = slot3
 
-	slot4(slot6)
+	slot3(slot5)
 
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 36-38, warpins: 1 ---
+	--- BLOCK #7 33-35, warpins: 1 ---
 	slot2 = slot1.phase
 
 	--- END OF BLOCK #7 ---
@@ -611,13 +602,13 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 39-39, warpins: 1 ---
+	--- BLOCK #8 36-36, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 39-39, warpins: 5 ---
+	--- BLOCK #8 36-36, warpins: 5 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -625,9 +616,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleTeleportWithPositionAction = slot16
+slot14.handleTeleportWithPositionAction = slot15
 
-slot16 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = {}
 	slot3[1] = slot1
@@ -700,9 +691,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15.switchScenes = slot16
+slot14.switchScenes = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -764,9 +755,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSwitchSceneAction = slot16
+slot14.handleSwitchSceneAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -817,9 +808,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSwitchTrainingSceneAction = slot16
+slot14.handleSwitchTrainingSceneAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -870,9 +861,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleExploreTutorialLevelAction = slot16
+slot14.handleExploreTutorialLevelAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -923,9 +914,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleBattleTutorialLevel1Action = slot16
+slot14.handleBattleTutorialLevel1Action = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1063,9 +1054,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSwitchGMAction = slot16
+slot14.handleSwitchGMAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1074,9 +1065,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleRefreshEntityAction = slot16
+slot14.handleRefreshEntityAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1085,9 +1076,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleDeleteAllEntityAction = slot16
+slot14.handleDeleteAllEntityAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1096,9 +1087,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleTestAction = slot16
+slot14.handleTestAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1207,9 +1198,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSwitchAvatarAction = slot16
+slot14.handleSwitchAvatarAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1270,9 +1261,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSwitchDrawSpeedLineAction = slot16
+slot14.handleSwitchDrawSpeedLineAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1338,9 +1329,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSummonMonster0Action = slot16
+slot14.handleSummonMonster0Action = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1406,9 +1397,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSummonMonster1Action = slot16
+slot14.handleSummonMonster1Action = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1474,9 +1465,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSummonMonster2Action = slot16
+slot14.handleSummonMonster2Action = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1541,9 +1532,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleChangeWeapon1Action = slot16
+slot14.handleChangeWeapon1Action = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1608,9 +1599,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleChangeWeapon2Action = slot16
+slot14.handleChangeWeapon2Action = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -1712,9 +1703,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleRefreshAllScriptsAction = slot16
+slot14.handleRefreshAllScriptsAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.checkHasGM
 	slot2 = slot2()
@@ -1833,9 +1824,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleOpenDebugPanelAction = slot16
+slot14.handleOpenDebugPanelAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.checkHasGM
 	slot2 = slot2()
@@ -1978,9 +1969,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleBugReportAction = slot16
+slot14.handleBugReportAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2035,9 +2026,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleLoseConnectTestAction = slot16
+slot14.handleLoseConnectTestAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2103,9 +2094,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleDelentrAction = slot16
+slot14.handleDelentrAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2169,9 +2160,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleMiddleViewAction = slot16
+slot14.handleMiddleViewAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2180,9 +2171,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSlomoAction = slot16
+slot14.handleSlomoAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2264,9 +2255,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleToggleGameFullScreenAction = slot16
+slot14.handleToggleGameFullScreenAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2341,9 +2332,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleGamepadCaptureScreenAction = slot16
+slot14.handleGamepadCaptureScreenAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2407,9 +2398,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleGamepadCaptureScreenActionCanceled = slot16
+slot14.handleGamepadCaptureScreenActionCanceled = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.phase
 	--- END OF BLOCK #0 ---
@@ -2473,9 +2464,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleQuickSwitchPetSkillGMAction = slot16
+slot14.handleQuickSwitchPetSkillGMAction = slot15
 
-slot16 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.checkHasGM
 	slot2 = slot2()
@@ -2573,9 +2564,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.handleSavePhotoParamAction = slot16
+slot14.handleSavePhotoParamAction = slot15
 
-slot16 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = self
 	slot1 = slot1.checkHasGM
@@ -2690,9 +2681,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.handleOpenPVPanelAction = slot16
+slot14.handleOpenPVPanelAction = slot15
 
-slot16 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = self
 	slot1 = slot1.checkHasGM
@@ -2817,9 +2808,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.handleCameraDofAction = slot16
+slot14.handleCameraDofAction = slot15
 
-slot16 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = self
 	slot1 = slot1.checkHasGM
@@ -2926,9 +2917,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.handleHiddenUIAction = slot16
+slot14.handleHiddenUIAction = slot15
 
-return slot15
+return slot14
 --- END OF BLOCK #0 ---
 
 

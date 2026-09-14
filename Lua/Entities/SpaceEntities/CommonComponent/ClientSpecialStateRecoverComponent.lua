@@ -1,4 +1,4 @@
---- BLOCK #0 1-72, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -426,9 +426,8 @@ slot10 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 11-19, warpins: 1 ---
+	--- BLOCK #4 11-18, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.gameObject
 	slot2 = slot2.transform
 	slot4 = slot2
 	slot2 = slot2.Find
@@ -443,7 +442,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #5 20-29, warpins: 1 ---
+	--- BLOCK #5 19-28, warpins: 1 ---
 	slot3 = 0
 	slot0.tickCount = slot3
 	slot5 = slot0
@@ -485,10 +484,9 @@ slot10 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 18-27, warpins: 2 ---
+		--- BLOCK #2 18-26, warpins: 2 ---
 		slot0 = self
 		slot0 = slot0.eModel
-		slot0 = slot0.gameObject
 		slot0 = slot0.transform
 		slot2 = slot0
 		slot0 = slot0.Find
@@ -504,7 +502,7 @@ slot10 = function(slot0)
 		end
 
 
-		--- BLOCK #3 28-28, warpins: 1 ---
+		--- BLOCK #3 27-27, warpins: 1 ---
 		return
 
 		--- END OF BLOCK #3 ---
@@ -512,7 +510,7 @@ slot10 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 29-45, warpins: 2 ---
+		--- BLOCK #4 28-44, warpins: 2 ---
 		slot1 = slot0.gameObject
 		slot3 = slot1
 		slot1 = slot1.GetComponent
@@ -550,7 +548,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 30-41, warpins: 2 ---
+	--- BLOCK #6 29-40, warpins: 2 ---
 	slot3 = slot2.gameObject
 	slot5 = slot3
 	slot3 = slot3.GetComponent
@@ -569,14 +567,14 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 42-42, warpins: 2 ---
+	--- BLOCK #7 41-41, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 43-43, warpins: 2 ---
+	--- BLOCK #8 42-42, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -1109,53 +1107,164 @@ end
 slot9.getCareerIcon = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot2 = slot1.specialContentDict
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.className
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	if slot1 == "ClientLeylineFlower" then
 	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.isUsingSpaceOwnerMap
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 13-19, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isUsingSpaceOwnerMap
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 20-26, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.getTeamLeaderPlayer
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 27-29, warpins: 1 ---
+	slot2 = slot1.specialContentDict
+
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-30, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 31-33, warpins: 7 ---
+	slot1 = pg
+	slot1 = slot1.me
+
+	return slot1
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot9.getSpecialStateOwnerPlayer = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getSpecialStateOwnerPlayer
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.specialContentDict
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot2 = slot1.specialContentDict
+	slot3 = slot0.staticId
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot2 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot2 = slot1.specialContentDict
-	slot3 = slot0.staticId
-	slot2 = slot2[slot3]
-	--- END OF BLOCK #1 ---
-
-	slot3 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 11-11, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
 	slot3 = 0
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 12-12, warpins: 2 ---
-	return slot3
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-14, warpins: 2 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
+	return slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-17, warpins: 3 ---
 	slot2 = 0
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -1165,44 +1274,55 @@ slot9.getSpecialStateId = slot10
 
 slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot2 = slot1.specialContentDict
+	slot3 = slot0
+	slot1 = slot0.getSpecialStateOwnerPlayer
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 6-10, warpins: 1 ---
+	--- BLOCK #1 6-8, warpins: 1 ---
 	slot2 = slot1.specialContentDict
-	slot3 = slot0.staticId
-	slot2 = slot2[slot3]
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 11-13, warpins: 1 ---
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot2 = slot1.specialContentDict
+	slot3 = slot0.staticId
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-16, warpins: 1 ---
 	slot3 = NpcSpecialStateData
 	slot3 = slot3[slot2]
 
 	return slot3
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 14-14, warpins: 3 ---
-	return
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-17, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 

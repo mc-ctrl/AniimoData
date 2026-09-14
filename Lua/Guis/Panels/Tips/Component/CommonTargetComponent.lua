@@ -1,118 +1,184 @@
---- BLOCK #0 1-220, warpins: 1 ---
+--- BLOCK #0 1-116, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerManager"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Log.LoggerConst"
+slot4 = "Core.Log.LoggerManager"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.Panels.Tips.Component.BaseTipComponent"
+slot5 = "Core.Log.LoggerConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Guis.Panels.Tips.Component.TipVisibilityHelper"
+slot6 = "Guis.Panels.Tips.Component.BaseTipComponent"
 slot4 = slot4(slot6)
-slot5 = slot4.HideReason
-slot6 = require
-slot8 = "Utils.LuaUIUtils"
-slot6 = slot6(slot8)
+slot5 = require
+slot7 = "Guis.Panels.Tips.Component.TipVisibilityHelper"
+slot5 = slot5(slot7)
+slot6 = slot5.HideReason
 slot7 = require
-slot9 = "GameApp.Quest.QuestUtils"
+slot9 = "Utils.LuaUIUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientTextUtils"
+slot10 = "GameApp.Quest.QuestUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.level_data"
+slot11 = "Common.Utils.Utils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.UIConst"
+slot12 = "Utils.ClientTextUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Common.Time"
+slot13 = "Data.level_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.AddressDataConst"
+slot14 = "Const.UIConst"
 slot12 = slot12(slot14)
-slot13 = slot1.getLogger
-slot15 = "CommonTargetComponent"
+slot13 = require
+slot15 = "Core.Common.Time"
 slot13 = slot13(slot15)
-slot14 = CS
-slot14 = slot14.FunPlus
-slot14 = slot14.WorldX
-slot14 = slot14.GUIS
-slot14 = slot14.Panels
-slot14 = slot14.Utils
-slot14 = slot14.KeyBindingPro
-slot15 = require
-slot17 = "Const.MessageName"
+slot14 = require
+slot16 = "Const.AddressDataConst"
+slot14 = slot14(slot16)
+slot15 = slot2.getLogger
+slot17 = "CommonTargetComponent"
 slot15 = slot15(slot17)
-slot16 = require
-slot18 = "Utils.ClientUtils"
-slot16 = slot16(slot18)
+slot16 = CS
+slot16 = slot16.FunPlus
+slot16 = slot16.WorldX
+slot16 = slot16.GUIS
+slot16 = slot16.Panels
+slot16 = slot16.Utils
+slot16 = slot16.KeyBindingPro
 slot17 = require
-slot19 = "GameApp.Target.TargetUtils"
+slot19 = "Const.MessageName"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.Const.Const"
+slot20 = "Utils.ClientUtils"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Data.item_source_data"
+slot21 = "GameApp.Target.TargetUtils"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.CommonSwitch"
+slot22 = "Common.Const.Const"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Core.Framework.Queue"
+slot23 = "Data.item_source_data"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.fishing_capture_battle_grade_data"
+slot24 = "Common.CommonSwitch"
 slot22 = slot22(slot24)
-slot23 = slot0.LightClass
-slot25 = "CommonTargetComponent"
-slot26 = slot3
-slot23 = slot23(slot25, slot26)
-slot24 = {}
-slot25 = slot15.PLAYER_INTERACT_RECORD_ADD
-slot26 = {
+slot23 = require
+slot25 = "Core.Framework.Queue"
+slot23 = slot23(slot25)
+slot24 = require
+slot26 = "Data.custom_trigger_data"
+slot24 = slot24(slot26)
+slot25 = require
+slot27 = "Data.sys_config_data"
+slot25 = slot25(slot27)
+slot26 = require
+slot28 = "Common.Const.DungeonConst"
+slot26 = slot26(slot28)
+slot27 = slot1.LightClass
+slot29 = "CommonTargetComponent"
+slot30 = slot4
+slot27 = slot27(slot29, slot30)
+slot28 = {}
+slot29 = slot17.PLAYER_INTERACT_RECORD_ADD
+slot30 = {
 	"onInteractRecordAdd",
 	true
 }
-slot24[slot25] = slot26
-slot25 = slot15.PLAYER_INTERACT_RECORD_DELETE
-slot26 = {
+slot28[slot29] = slot30
+slot29 = slot17.PLAYER_INTERACT_RECORD_DELETE
+slot30 = {
 	"onInteractRecordDelete",
 	true
 }
-slot24[slot25] = slot26
-slot25 = slot15.ON_PLAYER_ENTER_SPACE
-slot26 = {
+slot28[slot29] = slot30
+slot29 = slot17.ON_PLAYER_ENTER_SPACE
+slot30 = {
 	"onEnterSpace",
 	true
 }
-slot24[slot25] = slot26
-slot25 = slot15.UI_ON_VISIBLE_CHANGE
-slot26 = {
+slot28[slot29] = slot30
+slot29 = slot17.UI_ON_VISIBLE_CHANGE
+slot30 = {
 	"onUIVisibleChanged",
 	true
 }
-slot24[slot25] = slot26
-slot25 = slot15.MAIN_PLAYER_CATCH_MODE_CHANGE
-slot26 = {
+slot28[slot29] = slot30
+slot29 = slot17.MAIN_PLAYER_CATCH_MODE_CHANGE
+slot30 = {
 	"onCatchModeChanged",
 	true
 }
-slot24[slot25] = slot26
-slot23.messages = slot24
-slot24 = 1.1
-slot25 = 1.1
-slot26 = "VX_Pb_QuestHUD_ClickHint_In"
-slot27 = "VX_Pb_QuestHUD_ClickHint_Out"
-slot28 = "VX_Node_Hud_GameplayTrack_Chest_In"
+slot28[slot29] = slot30
+slot29 = slot17.DUNGEON_STATE_CHANGE
+slot30 = {
+	"refreshLeaveCountdown",
+	true
+}
+slot28[slot29] = slot30
+slot27.messages = slot28
+slot28 = 1.1
+slot29 = 1.1
+slot30 = "VX_Pb_QuestHUD_ClickHint_In"
+slot31 = "VX_Pb_QuestHUD_ClickHint_Out"
+slot32 = "VX_Node_Hud_GameplayTrack_Chest_In"
+slot33 = 2
+slot34 = slot25.GRABEGG_REMAIN_EXTRACT_TIME
+--- END OF BLOCK #0 ---
 
-slot29 = function(slot0)
+slot34 = if not slot34 then
+JUMP TO BLOCK #1
+else
+JUMP TO BLOCK #2
+end
+
+
+--- BLOCK #1 117-117, warpins: 1 ---
+slot34 = slot0
+--- END OF BLOCK #1 ---
+
+FLOW; TARGET BLOCK #2
+
+
+--- BLOCK #2 118-120, warpins: 2 ---
+slot34 = slot34[slot33]
+--- END OF BLOCK #2 ---
+
+slot34 = if not slot34 then
+JUMP TO BLOCK #3
+else
+JUMP TO BLOCK #4
+end
+
+
+--- BLOCK #3 121-121, warpins: 1 ---
+slot34 = 3
+--- END OF BLOCK #3 ---
+
+FLOW; TARGET BLOCK #4
+
+
+--- BLOCK #4 122-269, warpins: 2 ---
+slot35 = slot20.SECONDS_ONE_MINUTE
+slot34 = slot34 * slot35
+slot35 = 0.999
+slot36 = CS
+slot36 = slot36.UnityEngine
+slot36 = slot36.Color
+slot38 = 1
+slot39 = 0.5843137254901961
+slot40 = 0.5411764705882353
+slot41 = 1
+slot36 = slot36(slot38, slot39, slot40, slot41)
+
+slot37 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = {}
 	slot0.visibleMap = slot1
@@ -150,9 +216,9 @@ slot29 = function(slot0)
 
 end
 
-slot23.findObjects = slot29
+slot27.findObjects = slot37
 
-slot29 = function(slot0)
+slot37 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = 2008
 	slot0.racingTempleSceneId = slot1
@@ -193,9 +259,9 @@ slot29 = function(slot0)
 
 end
 
-slot23.initView = slot29
+slot27.initView = slot37
 
-slot29 = function(slot0)
+slot37 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = TargetUtils
 	slot1 = slot1.isReenterShowTarget
@@ -256,10 +322,10 @@ slot29 = function(slot0)
 
 end
 
-slot23.tryShowReenterTarget = slot29
+slot27.tryShowReenterTarget = slot37
 
-slot29 = function(slot0)
-	--- BLOCK #0 1-143, warpins: 1 ---
+slot37 = function(slot0)
+	--- BLOCK #0 1-146, warpins: 1 ---
 	slot1 = slot0.container
 	slot1 = slot1.content
 	slot0.content = slot1
@@ -321,9 +387,9 @@ slot29 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "bossCatchModeUContainer"
+	slot4 = "leaveCountdownContainer"
 	slot1 = slot1(slot3, slot4)
-	slot0.bossCatchModeUContainer = slot1
+	slot0.leaveCountdownContainer = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -459,6 +525,11 @@ slot29 = function(slot0)
 
 	slot4(slot6, slot7, slot8)
 
+	slot6 = slot0
+	slot4 = slot0.refreshLeaveCountdown
+
+	slot4(slot6)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -466,87 +537,1038 @@ slot29 = function(slot0)
 
 end
 
-slot23.initObjectRef = slot29
+slot27.initObjectRef = slot37
 
-slot29 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot37 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 3-5, warpins: 1 ---
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot2 = slot1.space
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot3 = slot2.masterDungeonSceneId
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 11-13, warpins: 1 ---
+	slot3 = slot2.sceneId
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-14, warpins: 2 ---
+	slot3 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 15-16, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #7 17-19, warpins: 1 ---
+	slot4 = slot2.isGrabEgg
+	--- END OF BLOCK #7 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #8 20-24, warpins: 1 ---
+	slot6 = slot2
+	slot4 = slot2.isGrabEgg
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #9 25-28, warpins: 1 ---
+	slot4 = Const
+	slot4 = slot4.ROB_EGG_SCENE_CLIP_ID
+	--- END OF BLOCK #9 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 29-34, warpins: 1 ---
+	slot4 = slot2.status
+	slot5 = DungeonConst
+	slot5 = slot5.STATUS
+	slot5 = slot5.COUNT_DONW
+	--- END OF BLOCK #10 ---
+
+	if slot4 ~= slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 35-40, warpins: 1 ---
+	slot4 = slot2.status
+	slot5 = DungeonConst
+	slot5 = slot5.STATUS
+	slot5 = slot5.PLAYING
+	--- END OF BLOCK #11 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 41-43, warpins: 2 ---
+	slot4 = slot1.observeTargetUid
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 44-45, warpins: 5 ---
+	slot4 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 46-46, warpins: 1 ---
+	slot4 = true
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 47-47, warpins: 3 ---
+	return slot4
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot27.isShowLeaveCountdown = slot37
+
+slot37 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.leaveCountdownContainer
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
 	slot2 = slot1.content
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot3 = IsNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-19, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.GetComponent
+	slot6 = "UCountDown"
+	slot3 = slot3(slot5, slot6)
+	slot4 = NotNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-20, warpins: 1 ---
+	return slot3
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-29, warpins: 2 ---
+	slot6 = slot2
+	slot4 = slot2.GetComponent
+	slot7 = "ObjectReference"
+	slot4 = slot4(slot6, slot7)
+	slot5 = IsNil
+	slot7 = slot4
+	slot5 = slot5(slot7)
+
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 30-30, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-40, warpins: 2 ---
+	slot7 = slot4
+	slot5 = slot4.GetRefValue
+	slot8 = "countDownUCountDown"
+	slot5 = slot5(slot7, slot8)
+	slot3 = slot5
+	slot5 = IsNil
+	slot7 = slot3
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 41-45, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.GetRefValue
+	slot8 = "countDown"
+	slot5 = slot5(slot7, slot8)
+	slot3 = slot5
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 46-46, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot27.getLeaveCountdownUCountDown = slot37
+
+slot37 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = slot0.leaveCountdownUCountDown
+	slot3 = IsNil
+	slot5 = slot2
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
-	slot2 = if not slot2 then
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-11, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.space
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-16, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 17-22, warpins: 1 ---
+	slot4 = slot3.status
+	slot5 = DungeonConst
+	slot5 = slot5.STATUS
+	slot5 = slot5.PLAYING
+	--- END OF BLOCK #5 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-25, warpins: 1 ---
+	slot4 = ROB_EGG_LEAVE_COUNTDOWN_WARNING_SECONDS
+	--- END OF BLOCK #6 ---
+
+	if slot1 > slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-27, warpins: 2 ---
+	slot4 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 28-28, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 29-30, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 31-32, warpins: 1 ---
+	slot5 = 2
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 33-33, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 34-36, warpins: 2 ---
+	slot6 = slot0.leaveCountdownBaseColor
+	--- END OF BLOCK #12 ---
+
+	if slot6 == nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 37-38, warpins: 1 ---
+	slot6 = slot2.baseColor
+	slot0.leaveCountdownBaseColor = slot6
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 39-45, warpins: 2 ---
+	slot8 = slot2
+	slot6 = slot2.TryChangePage
+	slot9 = "State"
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #14 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 46-48, warpins: 1 ---
+	slot6 = ROB_EGG_LEAVE_COUNTDOWN_WARNING_COLOR
+	slot2.baseColor = slot6
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #16 49-50, warpins: 1 ---
+	slot6 = slot0.leaveCountdownBaseColor
+	slot2.baseColor = slot6
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 51-51, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot27.setLeaveCountdownState = slot37
+
+slot37 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.leaveCountdownUCountDown
+	slot2 = NotNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot2 = slot0.leaveCountdownBaseColor
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
-	return
-
+	--- BLOCK #2 10-11, warpins: 1 ---
+	slot2 = slot0.leaveCountdownBaseColor
+	slot1.baseColor = slot2
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 7-42, warpins: 2 ---
-	slot2 = slot1.content
-	slot4 = slot2
-	slot2 = slot2.GetComponent
-	slot5 = "ObjectReference"
-	slot2 = slot2(slot4, slot5)
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "textUSDFText"
-	slot3 = slot3(slot5, slot6)
-	slot0.textUSDFText = slot3
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "btnSkipUButton"
-	slot3 = slot3(slot5, slot6)
-	slot0.btnSkipUButton = slot3
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "iconUImage"
-	slot3 = slot3(slot5, slot6)
-	slot0.iconUImage = slot3
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "skipText"
-	slot3 = slot3(slot5, slot6)
-	slot0.skipText = slot3
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "textFinalUSDFText"
-	slot3 = slot3(slot5, slot6)
-	slot0.textFinalUSDFText = slot3
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "keyHotKeyContent"
-	slot3 = slot3(slot5, slot6)
-	slot0.keyHotKeyContent = slot3
+	--- BLOCK #3 12-18, warpins: 2 ---
+	slot2 = nil
+	slot1.luaCountDownUpdate = slot2
+	slot2 = nil
+	slot1.luaFinished = slot2
+	slot4 = slot1
+	slot2 = slot1.Stop
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-23, warpins: 2 ---
+	slot2 = nil
+	slot0.leaveCountdownUCountDown = slot2
+	slot2 = nil
+	slot0.leaveCountdownBaseColor = slot2
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot23.initBossCatchModeRef = slot29
-slot29 = {}
+slot27.stopLeaveCountdown = slot37
 
-slot30 = function(slot0, slot1)
+slot37 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isShowLeaveCountdown
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #2 7-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	slot2 = slot1.status
+	slot3 = DungeonConst
+	slot3 = slot3.STATUS
+	slot3 = slot3.COUNT_DONW
+	--- END OF BLOCK #2 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot2 = slot1.openingCountdownEndTime
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-19, warpins: 2 ---
+	slot2 = slot1.end_ts
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-24, warpins: 2 ---
+	slot3 = math
+	slot3 = slot3.max
+	slot5 = 0
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-25, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 26-32, warpins: 2 ---
+	slot7 = Time
+	slot7 = slot7.secondCache
+	slot6 = slot6 - slot7
+	slot3 = slot3(slot5, slot6)
+	slot4 = 0
+	--- END OF BLOCK #7 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 33-40, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.stopLeaveCountdown
+
+	slot4(slot6)
+
+	slot4 = NotNil
+	slot6 = slot0.leaveCountdownContainer
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 41-45, warpins: 1 ---
+	slot4 = slot0.leaveCountdownContainer
+	slot6 = slot4
+	slot4 = slot4.SetActive
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 46-46, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #11 47-54, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.getLeaveCountdownUCountDown
+	slot4 = slot4(slot6)
+	slot5 = IsNil
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #11 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 55-55, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #13 56-79, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.stopLeaveCountdown
+
+	slot5(slot7)
+
+	slot0.leaveCountdownUCountDown = slot4
+	slot5 = false
+	slot4.positiveTiming = slot5
+
+	slot5 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.setLeaveCountdownState
+		--- END OF BLOCK #0 ---
+
+		slot4 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		slot4 = 0
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-8, warpins: 2 ---
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot4.luaCountDownUpdate = slot5
+
+	slot5 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setLeaveCountdownState
+		slot3 = 0
+
+		slot0(slot2, slot3)
+
+		slot0 = NotNil
+		slot2 = self
+		slot2 = slot2.leaveCountdownContainer
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 12-17, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.leaveCountdownContainer
+		slot2 = slot0
+		slot0 = slot0.SetActive
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 18-18, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot4.luaFinished = slot5
+	slot7 = slot0
+	slot5 = slot0.setLeaveCountdownState
+	slot8 = slot3
+
+	slot5(slot7, slot8)
+
+	slot5 = slot3
+	slot6 = pg
+	slot6 = slot6.me
+	slot6 = slot6.space
+	slot6 = slot6.status
+	slot7 = DungeonConst
+	slot7 = slot7.STATUS
+	slot7 = slot7.COUNT_DONW
+	--- END OF BLOCK #13 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 80-81, warpins: 1 ---
+	slot6 = ROB_EGG_OPENING_COUNTDOWN_TICK_OFFSET
+	slot5 = slot3 + slot6
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 82-87, warpins: 2 ---
+	slot8 = slot4
+	slot6 = slot4.Play
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	return
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 88-88, warpins: 2 ---
+	return
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 89-89, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 90-90, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot27.setupLeaveCountdown = slot37
+
+slot37 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.leaveCountdownContainer
+	slot2 = IsNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #2 8-16, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isShowLeaveCountdown
+	slot2 = slot2(slot4)
+	slot5 = slot1
+	slot3 = slot1.SetActive
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-20, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.stopLeaveCountdown
+
+	slot3(slot5)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #4 21-25, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.CheckURLLoaded
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-29, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.setupLeaveCountdown
+
+	slot3(slot5)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #6 30-32, warpins: 1 ---
+	slot3 = slot0.leaveCountdownLoading
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 33-33, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #8 34-41, warpins: 1 ---
+	slot3 = true
+	slot0.leaveCountdownLoading = slot3
+	slot5 = slot1
+	slot3 = slot1.LoadDefaultUrlManually
+
+	slot6 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.leaveCountdownLoading = slot1
+		slot0 = NotNil
+		slot2 = self
+		slot2 = slot2.leaveCountdownContainer
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 10-13, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshLeaveCountdown
+
+		slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 14-14, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 42-42, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 43-43, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 44-44, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 45-45, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot27.refreshLeaveCountdown = slot37
+slot37 = {}
+
+slot38 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questDetailsItemComs
 	slot2 = slot2[slot1]
@@ -603,10 +1625,10 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot23.getQuestDetailsItemComs = slot30
-slot30 = {}
+slot27.getQuestDetailsItemComs = slot38
+slot38 = {}
 
-slot31 = function(slot0, slot1)
+slot39 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questTabItemComs
 	slot2 = slot2[slot1]
@@ -663,10 +1685,10 @@ slot31 = function(slot0, slot1)
 
 end
 
-slot23.getQuestTabComs = slot31
-slot31 = {}
+slot27.getQuestTabComs = slot39
+slot39 = {}
 
-slot32 = function(slot0, slot1)
+slot40 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questTitleNewItemComs
 	slot2 = slot2[slot1]
@@ -714,10 +1736,10 @@ slot32 = function(slot0, slot1)
 
 end
 
-slot23.getQuestTitleNewItemComs = slot32
-slot32 = {}
+slot27.getQuestTitleNewItemComs = slot40
+slot40 = {}
 
-slot33 = function(slot0, slot1)
+slot41 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = trackQuestHintComs
 	slot2 = slot2[slot1]
@@ -775,10 +1797,10 @@ slot33 = function(slot0, slot1)
 
 end
 
-slot23.getTrackQuestHintComs = slot33
-slot33 = {}
+slot27.getTrackQuestHintComs = slot41
+slot41 = {}
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = questIconComs
 	slot2 = slot2[slot1]
@@ -841,9 +1863,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.getQuestIconComs = slot34
+slot27.getQuestIconComs = slot42
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot42 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -907,7 +1929,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #4 29-29, warpins: 4 ---
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #92
+	UNCONDITIONAL JUMP; TARGET BLOCK #102
 
 
 	--- BLOCK #5 30-32, warpins: 1 ---
@@ -924,7 +1946,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #6 33-33, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #93
+	UNCONDITIONAL JUMP; TARGET BLOCK #103
 
 
 	--- BLOCK #7 34-45, warpins: 1 ---
@@ -1142,154 +2164,253 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #25 128-130, warpins: 5 ---
-	slot16 = slot3.showCounting
+	--- BLOCK #25 128-132, warpins: 5 ---
+	slot16 = slot3.targetId
+	slot17 = Const
+	slot17 = slot17.HUD_SPECIAL_TARGET_PUPPET_HP
 	--- END OF BLOCK #25 ---
 
-	slot16 = if slot16 then
+	if slot16 == slot17 then
 	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #26 131-134, warpins: 1 ---
-	slot16 = slot3.showCounting
-	slot17 = 0
+	--- BLOCK #26 133-135, warpins: 1 ---
+	slot16 = slot3.conditionId
 	--- END OF BLOCK #26 ---
 
-	if slot16 > slot17 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #27 135-136, warpins: 1 ---
+	--- BLOCK #27 136-140, warpins: 1 ---
+	slot16 = CustomTriggerData
+	slot17 = slot3.conditionId
+	slot16 = slot16[slot17]
 	--- END OF BLOCK #27 ---
 
-	slot10 = if slot10 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #28 137-138, warpins: 1 ---
+	--- BLOCK #28 141-143, warpins: 1 ---
+	slot17 = slot16.condition
 	--- END OF BLOCK #28 ---
 
-	slot15 = if slot15 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #29 139-141, warpins: 1 ---
-	slot16 = 0
+	--- BLOCK #29 144-147, warpins: 1 ---
+	slot17 = slot16.condition
+	slot17 = slot17[1]
 	--- END OF BLOCK #29 ---
 
-	if slot15 > slot16 then
+	slot17 = if slot17 then
 	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #30 142-143, warpins: 1 ---
+	--- BLOCK #30 148-152, warpins: 1 ---
+	slot17 = slot16.condition
+	slot17 = slot17[1]
+	slot17 = slot17[1]
 	--- END OF BLOCK #30 ---
 
-	slot15 = if not slot15 then
+	if slot17 == "PUPPET_HP_LE_PERCENT" then
 	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #31 144-144, warpins: 3 ---
-	slot15 = slot10
+	--- BLOCK #31 153-155, warpins: 1 ---
+	slot9 = 100 - slot9
 	--- END OF BLOCK #31 ---
 
-	FLOW; TARGET BLOCK #32
+	slot14 = if slot14 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
 
 
-	--- BLOCK #32 145-146, warpins: 2 ---
+	--- BLOCK #32 156-156, warpins: 1 ---
+	slot14 = 100 - slot14
 	--- END OF BLOCK #32 ---
 
-	slot14 = if slot14 then
-	JUMP TO BLOCK #33
-	else
-	JUMP TO BLOCK #34
-	end
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #33 147-155, warpins: 1 ---
-	slot16 = string
-	slot16 = slot16.format
-	slot18 = "%s[%s/%s]"
-	slot19 = slot11
-	slot20 = slot14
-	slot21 = slot15
-	slot16 = slot16(slot18, slot19, slot20, slot21)
-	slot11 = slot16
+	--- BLOCK #33 157-159, warpins: 8 ---
+	slot16 = slot3.showCounting
 	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #35
-
-
-	--- BLOCK #34 156-163, warpins: 1 ---
-	slot16 = string
-	slot16 = slot16.format
-	slot18 = "%s[%s/%s]"
-	slot19 = slot11
-	slot20 = slot9
-	slot21 = slot15
-	slot16 = slot16(slot18, slot19, slot20, slot21)
-	slot11 = slot16
-	--- END OF BLOCK #34 ---
-
-	FLOW; TARGET BLOCK #35
-
-
-	--- BLOCK #35 164-166, warpins: 5 ---
-	slot16 = slot3.showCanSelect
-	--- END OF BLOCK #35 ---
-
 	slot16 = if slot16 then
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #34
 	else
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #36 167-171, warpins: 1 ---
-	slot16 = QuestUtils
-	slot16 = slot16.questObjectiveCanSelect
-	slot18 = slot11
-	slot16 = slot16(slot18)
-	slot11 = slot16
+	--- BLOCK #34 160-163, warpins: 1 ---
+	slot16 = slot3.showCounting
+	slot17 = 0
+	--- END OF BLOCK #34 ---
+
+	if slot16 > slot17 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #35 164-165, warpins: 1 ---
+	--- END OF BLOCK #35 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #43
+	end
+
+
+	--- BLOCK #36 166-167, warpins: 1 ---
 	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #37
+	slot15 = if slot15 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #39
+	end
 
 
-	--- BLOCK #37 172-179, warpins: 2 ---
-	slot16 = pg
-	slot16 = slot16.game
-	slot16 = slot16.setting
-	slot18 = slot16
-	slot16 = slot16.getShowDebugId
-	slot16 = slot16(slot18)
+	--- BLOCK #37 168-170, warpins: 1 ---
+	slot16 = 0
 	--- END OF BLOCK #37 ---
 
-	slot16 = if slot16 then
+	if slot15 > slot16 then
 	JUMP TO BLOCK #38
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #38 180-187, warpins: 1 ---
+	--- BLOCK #38 171-172, warpins: 1 ---
+	--- END OF BLOCK #38 ---
+
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #40
+	end
+
+
+	--- BLOCK #39 173-173, warpins: 3 ---
+	slot15 = slot10
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 174-175, warpins: 2 ---
+	--- END OF BLOCK #40 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #41
+	else
+	JUMP TO BLOCK #42
+	end
+
+
+	--- BLOCK #41 176-188, warpins: 1 ---
+	slot16 = string
+	slot16 = slot16.format
+	slot18 = "[%s/%s]"
+	slot19 = slot14
+	slot20 = slot15
+	slot16 = slot16(slot18, slot19, slot20)
+	slot17 = ClientTextUtils
+	slot17 = slot17.concatByLanguage
+	slot19 = slot11
+	slot20 = slot16
+	slot17 = slot17(slot19, slot20)
+	slot11 = slot17
+	--- END OF BLOCK #41 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
+
+
+	--- BLOCK #42 189-200, warpins: 1 ---
+	slot16 = string
+	slot16 = slot16.format
+	slot18 = "[%s/%s]"
+	slot19 = slot9
+	slot20 = slot15
+	slot16 = slot16(slot18, slot19, slot20)
+	slot17 = ClientTextUtils
+	slot17 = slot17.concatByLanguage
+	slot19 = slot11
+	slot20 = slot16
+	slot17 = slot17(slot19, slot20)
+	slot11 = slot17
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 201-203, warpins: 5 ---
+	slot16 = slot3.showCanSelect
+	--- END OF BLOCK #43 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #45
+	end
+
+
+	--- BLOCK #44 204-208, warpins: 1 ---
+	slot16 = QuestUtils
+	slot16 = slot16.questObjectiveCanSelect
+	slot18 = slot11
+	slot16 = slot16(slot18)
+	slot11 = slot16
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 209-216, warpins: 2 ---
+	slot16 = pg
+	slot16 = slot16.game
+	slot16 = slot16.setting
+	slot18 = slot16
+	slot16 = slot16.getShowDebugId
+	slot16 = slot16(slot18)
+	--- END OF BLOCK #45 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 217-224, warpins: 1 ---
 	slot16 = string
 	slot16 = slot16.format
 	slot18 = "%d-%d-%s"
@@ -1298,12 +2419,12 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot21 = slot11
 	slot16 = slot16(slot18, slot19, slot20, slot21)
 	slot11 = slot16
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #46 ---
 
-	FLOW; TARGET BLOCK #39
+	FLOW; TARGET BLOCK #47
 
 
-	--- BLOCK #39 188-195, warpins: 2 ---
+	--- BLOCK #47 225-232, warpins: 2 ---
 	slot16 = ClientTextUtils
 	slot16 = slot16.setText
 	slot18 = slot5
@@ -1312,43 +2433,43 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot16(slot18, slot19)
 
 	slot16 = slot3.showFinishTip
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #47 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #48
 	else
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #51
 	end
 
 
-	--- BLOCK #40 196-199, warpins: 1 ---
+	--- BLOCK #48 233-236, warpins: 1 ---
 	slot16 = slot3.showFinishTip
 	slot17 = 0
-	--- END OF BLOCK #40 ---
+	--- END OF BLOCK #48 ---
 
 	if slot16 <= slot17 then
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #49
 	else
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #50
 	end
 
 
-	--- BLOCK #41 200-201, warpins: 1 ---
+	--- BLOCK #49 237-238, warpins: 1 ---
 	slot16 = false
-	--- END OF BLOCK #41 ---
+	--- END OF BLOCK #49 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #43
+	UNCONDITIONAL JUMP; TARGET BLOCK #51
 
 
-	--- BLOCK #42 202-202, warpins: 1 ---
+	--- BLOCK #50 239-239, warpins: 1 ---
 	slot16 = true
 
-	--- END OF BLOCK #42 ---
+	--- END OF BLOCK #50 ---
 
-	FLOW; TARGET BLOCK #43
+	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #43 203-210, warpins: 3 ---
+	--- BLOCK #51 240-247, warpins: 3 ---
 	slot17 = function(slot0)
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot1 = UIUtils
@@ -1388,38 +2509,38 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21, slot22)
 
-	--- END OF BLOCK #43 ---
+	--- END OF BLOCK #51 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #52
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #55
 	end
 
 
-	--- BLOCK #44 211-213, warpins: 1 ---
+	--- BLOCK #52 248-250, warpins: 1 ---
 	slot18 = slot3.isFined
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #52 ---
 
 	slot18 = if not slot18 then
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #53
 	else
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #45 214-216, warpins: 1 ---
+	--- BLOCK #53 251-253, warpins: 1 ---
 	slot18 = slot3.isObjFined
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #53 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #54
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #55
 	end
 
 
-	--- BLOCK #46 217-221, warpins: 2 ---
+	--- BLOCK #54 254-258, warpins: 2 ---
 	slot20 = slot1
 	slot18 = slot1.TryChangePage
 	slot21 = "QuestType"
@@ -1427,23 +2548,23 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21, slot22)
 
-	--- END OF BLOCK #46 ---
+	--- END OF BLOCK #54 ---
 
-	FLOW; TARGET BLOCK #47
+	FLOW; TARGET BLOCK #55
 
 
-	--- BLOCK #47 222-224, warpins: 3 ---
+	--- BLOCK #55 259-261, warpins: 3 ---
 	slot18 = slot3.isFined
-	--- END OF BLOCK #47 ---
+	--- END OF BLOCK #55 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #56
 	else
-	JUMP TO BLOCK #61
+	JUMP TO BLOCK #71
 	end
 
 
-	--- BLOCK #48 225-231, warpins: 1 ---
+	--- BLOCK #56 262-269, warpins: 1 ---
 	slot20 = slot1
 	slot18 = slot1.TryChangePage
 	slot21 = "QuestState"
@@ -1451,86 +2572,86 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21, slot22)
 
-	--- END OF BLOCK #48 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #49
-	else
-	JUMP TO BLOCK #60
-	end
-
-
-	--- BLOCK #49 232-234, warpins: 1 ---
 	slot18 = slot3.needPlayFinishAnim
-	--- END OF BLOCK #49 ---
+	--- END OF BLOCK #56 ---
 
 	slot18 = if not slot18 then
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #57
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #59
 	end
 
 
-	--- BLOCK #50 235-237, warpins: 1 ---
+	--- BLOCK #57 270-272, warpins: 1 ---
 	slot18 = slot3.objcvData
-	--- END OF BLOCK #50 ---
+	--- END OF BLOCK #57 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #58
 	else
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #59
 	end
 
 
-	--- BLOCK #51 238-239, warpins: 1 ---
+	--- BLOCK #58 273-274, warpins: 1 ---
 	slot18 = slot3.objcvData
 	slot18 = slot18.needPlayFinishAnim
-	--- END OF BLOCK #51 ---
+	--- END OF BLOCK #58 ---
 
-	FLOW; TARGET BLOCK #52
+	FLOW; TARGET BLOCK #59
 
 
-	--- BLOCK #52 240-242, warpins: 3 ---
+	--- BLOCK #59 275-276, warpins: 3 ---
+	--- END OF BLOCK #59 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #68
+	end
+
+
+	--- BLOCK #60 277-279, warpins: 1 ---
 	slot19 = slot3.seqid
-	--- END OF BLOCK #52 ---
+	--- END OF BLOCK #60 ---
 
 	slot19 = if not slot19 then
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #61
 	else
-	JUMP TO BLOCK #55
+	JUMP TO BLOCK #63
 	end
 
 
-	--- BLOCK #53 243-245, warpins: 1 ---
+	--- BLOCK #61 280-282, warpins: 1 ---
 	slot19 = slot3.objcvData
-	--- END OF BLOCK #53 ---
+	--- END OF BLOCK #61 ---
 
 	slot19 = if slot19 then
-	JUMP TO BLOCK #54
+	JUMP TO BLOCK #62
 	else
-	JUMP TO BLOCK #55
+	JUMP TO BLOCK #63
 	end
 
 
-	--- BLOCK #54 246-247, warpins: 1 ---
+	--- BLOCK #62 283-284, warpins: 1 ---
 	slot19 = slot3.objcvData
 	slot19 = slot19.seqid
-	--- END OF BLOCK #54 ---
+	--- END OF BLOCK #62 ---
 
-	FLOW; TARGET BLOCK #55
+	FLOW; TARGET BLOCK #63
 
 
-	--- BLOCK #55 248-249, warpins: 3 ---
-	--- END OF BLOCK #55 ---
+	--- BLOCK #63 285-286, warpins: 3 ---
+	--- END OF BLOCK #63 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #56
+	JUMP TO BLOCK #64
 	else
-	JUMP TO BLOCK #82
+	JUMP TO BLOCK #92
 	end
 
 
-	--- BLOCK #56 250-259, warpins: 1 ---
+	--- BLOCK #64 287-296, warpins: 1 ---
 	slot20 = pg
 	slot20 = slot20.game
 	slot20 = slot20.target
@@ -1539,58 +2660,76 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot23 = slot3.targetId
 	slot24 = slot19
 	slot20 = slot20(slot22, slot23, slot24)
-	--- END OF BLOCK #56 ---
+	--- END OF BLOCK #64 ---
 
 	slot20 = if slot20 then
-	JUMP TO BLOCK #57
+	JUMP TO BLOCK #65
 	else
-	JUMP TO BLOCK #82
+	JUMP TO BLOCK #92
 	end
 
 
-	--- BLOCK #57 260-264, warpins: 1 ---
+	--- BLOCK #65 297-301, warpins: 1 ---
 	slot20 = nil
 	slot3.needPlayFinishAnim = slot20
 	slot20 = slot3.objcvData
-	--- END OF BLOCK #57 ---
+	--- END OF BLOCK #65 ---
 
 	slot20 = if slot20 then
-	JUMP TO BLOCK #58
+	JUMP TO BLOCK #66
 	else
-	JUMP TO BLOCK #59
+	JUMP TO BLOCK #67
 	end
 
 
-	--- BLOCK #58 265-267, warpins: 1 ---
+	--- BLOCK #66 302-304, warpins: 1 ---
 	slot20 = slot3.objcvData
 	slot21 = nil
 	slot20.needPlayFinishAnim = slot21
-	--- END OF BLOCK #58 ---
+	--- END OF BLOCK #66 ---
 
-	FLOW; TARGET BLOCK #59
+	FLOW; TARGET BLOCK #67
 
 
-	--- BLOCK #59 268-271, warpins: 2 ---
+	--- BLOCK #67 305-308, warpins: 2 ---
 	slot20 = slot17
 	slot22 = "VX_Node_QuestHUD_Text_Finish"
 
 	slot20(slot22)
 
-	--- END OF BLOCK #59 ---
+	--- END OF BLOCK #67 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #82
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #60 272-286, warpins: 1 ---
-	slot18 = slot17
-	slot20 = "VX_Node_QuestHUD_Text_Out2"
+	--- BLOCK #68 309-310, warpins: 1 ---
+	--- END OF BLOCK #68 ---
 
-	slot18(slot20)
+	slot18 = if slot18 then
+	JUMP TO BLOCK #69
+	else
+	JUMP TO BLOCK #70
+	end
 
-	slot20 = slot0
-	slot18 = slot0.startTimer
 
-	slot21 = function()
+	--- BLOCK #69 311-315, warpins: 1 ---
+	slot19 = nil
+	slot3.needPlayFinishAnim = slot19
+	slot19 = slot17
+	slot21 = "VX_Node_QuestHUD_Text_Out2"
+
+	slot19(slot21)
+
+	--- END OF BLOCK #69 ---
+
+	FLOW; TARGET BLOCK #70
+
+
+	--- BLOCK #70 316-327, warpins: 2 ---
+	slot21 = slot0
+	slot19 = slot0.startTimer
+
+	slot22 = function()
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = button
 		slot2 = slot0
@@ -1614,58 +2753,58 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot22 = targetObjcFinedTimeSpan
-	slot23 = false
+	slot23 = targetObjcFinedTimeSpan
+	slot24 = false
 
-	slot18(slot20, slot21, slot22, slot23)
+	slot19(slot21, slot22, slot23, slot24)
 
-	slot18 = UIUtils
-	slot18 = slot18.PlayAnimation
-	slot20 = slot0.btnClickAnimation
-	slot21 = QUEST_CLICK_HINT_OUT_ANI
+	slot19 = UIUtils
+	slot19 = slot19.PlayAnimation
+	slot21 = slot0.btnClickAnimation
+	slot22 = QUEST_CLICK_HINT_OUT_ANI
 
-	slot18(slot20, slot21)
+	slot19(slot21, slot22)
 
-	--- END OF BLOCK #60 ---
+	--- END OF BLOCK #70 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #82
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #61 287-289, warpins: 1 ---
+	--- BLOCK #71 328-330, warpins: 1 ---
 	slot18 = slot3.isNew
-	--- END OF BLOCK #61 ---
+	--- END OF BLOCK #71 ---
 
 	slot18 = if not slot18 then
-	JUMP TO BLOCK #62
+	JUMP TO BLOCK #72
 	else
-	JUMP TO BLOCK #64
+	JUMP TO BLOCK #74
 	end
 
 
-	--- BLOCK #62 290-292, warpins: 1 ---
+	--- BLOCK #72 331-333, warpins: 1 ---
 	slot18 = slot3.objcvData
-	--- END OF BLOCK #62 ---
+	--- END OF BLOCK #72 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #63
+	JUMP TO BLOCK #73
 	else
-	JUMP TO BLOCK #65
+	JUMP TO BLOCK #75
 	end
 
 
-	--- BLOCK #63 293-296, warpins: 1 ---
+	--- BLOCK #73 334-337, warpins: 1 ---
 	slot18 = slot3.objcvData
 	slot18 = slot18.isNew
-	--- END OF BLOCK #63 ---
+	--- END OF BLOCK #73 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #64
+	JUMP TO BLOCK #74
 	else
-	JUMP TO BLOCK #65
+	JUMP TO BLOCK #75
 	end
 
 
-	--- BLOCK #64 297-305, warpins: 2 ---
+	--- BLOCK #74 338-346, warpins: 2 ---
 	slot18 = slot17
 	slot20 = "VX_Node_QuestHUD_Text_In2"
 
@@ -1678,46 +2817,46 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21)
 
-	--- END OF BLOCK #64 ---
+	--- END OF BLOCK #74 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #82
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #65 306-308, warpins: 2 ---
+	--- BLOCK #75 347-349, warpins: 2 ---
 	slot18 = slot3.isObjFined
-	--- END OF BLOCK #65 ---
+	--- END OF BLOCK #75 ---
 
 	slot18 = if not slot18 then
-	JUMP TO BLOCK #66
+	JUMP TO BLOCK #76
 	else
-	JUMP TO BLOCK #68
+	JUMP TO BLOCK #78
 	end
 
 
-	--- BLOCK #66 309-311, warpins: 1 ---
+	--- BLOCK #76 350-352, warpins: 1 ---
 	slot18 = slot3.objcvData
-	--- END OF BLOCK #66 ---
+	--- END OF BLOCK #76 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #67
+	JUMP TO BLOCK #77
 	else
-	JUMP TO BLOCK #81
+	JUMP TO BLOCK #91
 	end
 
 
-	--- BLOCK #67 312-315, warpins: 1 ---
+	--- BLOCK #77 353-356, warpins: 1 ---
 	slot18 = slot3.objcvData
 	slot18 = slot18.isObjFined
-	--- END OF BLOCK #67 ---
+	--- END OF BLOCK #77 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #68
+	JUMP TO BLOCK #78
 	else
-	JUMP TO BLOCK #81
+	JUMP TO BLOCK #91
 	end
 
 
-	--- BLOCK #68 316-322, warpins: 2 ---
+	--- BLOCK #78 357-363, warpins: 2 ---
 	slot20 = slot1
 	slot18 = slot1.TryChangePage
 	slot21 = "QuestState"
@@ -1725,16 +2864,16 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21, slot22)
 
-	--- END OF BLOCK #68 ---
+	--- END OF BLOCK #78 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #69
+	JUMP TO BLOCK #79
 	else
-	JUMP TO BLOCK #80
+	JUMP TO BLOCK #90
 	end
 
 
-	--- BLOCK #69 323-330, warpins: 1 ---
+	--- BLOCK #79 364-371, warpins: 1 ---
 	slot20 = slot1
 	slot18 = slot1.TryChangePage
 	slot21 = "QuestType"
@@ -1743,75 +2882,75 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot18(slot20, slot21, slot22)
 
 	slot18 = slot3.needPlayFinishAnim
-	--- END OF BLOCK #69 ---
+	--- END OF BLOCK #79 ---
 
 	slot18 = if not slot18 then
-	JUMP TO BLOCK #70
-	else
-	JUMP TO BLOCK #72
-	end
-
-
-	--- BLOCK #70 331-333, warpins: 1 ---
-	slot18 = slot3.objcvData
-	--- END OF BLOCK #70 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #71
-	else
-	JUMP TO BLOCK #72
-	end
-
-
-	--- BLOCK #71 334-335, warpins: 1 ---
-	slot18 = slot3.objcvData
-	slot18 = slot18.needPlayFinishAnim
-	--- END OF BLOCK #71 ---
-
-	FLOW; TARGET BLOCK #72
-
-
-	--- BLOCK #72 336-338, warpins: 3 ---
-	slot19 = slot3.seqid
-	--- END OF BLOCK #72 ---
-
-	slot19 = if not slot19 then
-	JUMP TO BLOCK #73
-	else
-	JUMP TO BLOCK #75
-	end
-
-
-	--- BLOCK #73 339-341, warpins: 1 ---
-	slot19 = slot3.objcvData
-	--- END OF BLOCK #73 ---
-
-	slot19 = if slot19 then
-	JUMP TO BLOCK #74
-	else
-	JUMP TO BLOCK #75
-	end
-
-
-	--- BLOCK #74 342-343, warpins: 1 ---
-	slot19 = slot3.objcvData
-	slot19 = slot19.seqid
-	--- END OF BLOCK #74 ---
-
-	FLOW; TARGET BLOCK #75
-
-
-	--- BLOCK #75 344-345, warpins: 3 ---
-	--- END OF BLOCK #75 ---
-
-	slot18 = if slot18 then
-	JUMP TO BLOCK #76
+	JUMP TO BLOCK #80
 	else
 	JUMP TO BLOCK #82
 	end
 
 
-	--- BLOCK #76 346-355, warpins: 1 ---
+	--- BLOCK #80 372-374, warpins: 1 ---
+	slot18 = slot3.objcvData
+	--- END OF BLOCK #80 ---
+
+	slot18 = if slot18 then
+	JUMP TO BLOCK #81
+	else
+	JUMP TO BLOCK #82
+	end
+
+
+	--- BLOCK #81 375-376, warpins: 1 ---
+	slot18 = slot3.objcvData
+	slot18 = slot18.needPlayFinishAnim
+	--- END OF BLOCK #81 ---
+
+	FLOW; TARGET BLOCK #82
+
+
+	--- BLOCK #82 377-379, warpins: 3 ---
+	slot19 = slot3.seqid
+	--- END OF BLOCK #82 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #83
+	else
+	JUMP TO BLOCK #85
+	end
+
+
+	--- BLOCK #83 380-382, warpins: 1 ---
+	slot19 = slot3.objcvData
+	--- END OF BLOCK #83 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #84
+	else
+	JUMP TO BLOCK #85
+	end
+
+
+	--- BLOCK #84 383-384, warpins: 1 ---
+	slot19 = slot3.objcvData
+	slot19 = slot19.seqid
+	--- END OF BLOCK #84 ---
+
+	FLOW; TARGET BLOCK #85
+
+
+	--- BLOCK #85 385-386, warpins: 3 ---
+	--- END OF BLOCK #85 ---
+
+	slot18 = if slot18 then
+	JUMP TO BLOCK #86
+	else
+	JUMP TO BLOCK #92
+	end
+
+
+	--- BLOCK #86 387-396, warpins: 1 ---
 	slot20 = pg
 	slot20 = slot20.game
 	slot20 = slot20.target
@@ -1820,49 +2959,49 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot23 = slot3.targetId
 	slot24 = slot19
 	slot20 = slot20(slot22, slot23, slot24)
-	--- END OF BLOCK #76 ---
+	--- END OF BLOCK #86 ---
 
 	slot20 = if slot20 then
-	JUMP TO BLOCK #77
+	JUMP TO BLOCK #87
 	else
-	JUMP TO BLOCK #82
+	JUMP TO BLOCK #92
 	end
 
 
-	--- BLOCK #77 356-360, warpins: 1 ---
+	--- BLOCK #87 397-401, warpins: 1 ---
 	slot20 = nil
 	slot3.needPlayFinishAnim = slot20
 	slot20 = slot3.objcvData
-	--- END OF BLOCK #77 ---
+	--- END OF BLOCK #87 ---
 
 	slot20 = if slot20 then
-	JUMP TO BLOCK #78
+	JUMP TO BLOCK #88
 	else
-	JUMP TO BLOCK #79
+	JUMP TO BLOCK #89
 	end
 
 
-	--- BLOCK #78 361-363, warpins: 1 ---
+	--- BLOCK #88 402-404, warpins: 1 ---
 	slot20 = slot3.objcvData
 	slot21 = nil
 	slot20.needPlayFinishAnim = slot21
-	--- END OF BLOCK #78 ---
+	--- END OF BLOCK #88 ---
 
-	FLOW; TARGET BLOCK #79
+	FLOW; TARGET BLOCK #89
 
 
-	--- BLOCK #79 364-367, warpins: 2 ---
+	--- BLOCK #89 405-408, warpins: 2 ---
 	slot20 = slot17
 	slot22 = "VX_Node_QuestHUD_Text_Finish"
 
 	slot20(slot22)
 
-	--- END OF BLOCK #79 ---
+	--- END OF BLOCK #89 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #82
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #80 368-377, warpins: 1 ---
+	--- BLOCK #90 409-418, warpins: 1 ---
 	slot18 = slot17
 	slot20 = "VX_Node_QuestHUD_Text_Out2"
 
@@ -1911,12 +3050,12 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21, slot22, slot23)
 
-	--- END OF BLOCK #80 ---
+	--- END OF BLOCK #90 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #82
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #81 378-382, warpins: 2 ---
+	--- BLOCK #91 419-423, warpins: 2 ---
 	slot20 = slot1
 	slot18 = slot1.TryChangePage
 	slot21 = "QuestState"
@@ -1924,12 +3063,12 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot18(slot20, slot21, slot22)
 
-	--- END OF BLOCK #81 ---
+	--- END OF BLOCK #91 ---
 
-	FLOW; TARGET BLOCK #82
+	FLOW; TARGET BLOCK #92
 
 
-	--- BLOCK #82 383-398, warpins: 10 ---
+	--- BLOCK #92 424-439, warpins: 10 ---
 	slot20 = slot0
 	slot18 = slot0.setTrackHint
 	slot21 = slot3.targetId
@@ -1950,51 +3089,51 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot18(slot20, slot21)
 
 	slot18 = slot3.desc
-	--- END OF BLOCK #82 ---
+	--- END OF BLOCK #92 ---
 
 	if slot18 ~= nil then
-	JUMP TO BLOCK #83
+	JUMP TO BLOCK #93
 	else
-	JUMP TO BLOCK #84
+	JUMP TO BLOCK #94
 	end
 
 
-	--- BLOCK #83 399-401, warpins: 1 ---
+	--- BLOCK #93 440-442, warpins: 1 ---
 	slot18 = slot3.desc
-	--- END OF BLOCK #83 ---
+	--- END OF BLOCK #93 ---
 
 	if slot18 == "" then
-	JUMP TO BLOCK #84
+	JUMP TO BLOCK #94
 	else
-	JUMP TO BLOCK #85
+	JUMP TO BLOCK #95
 	end
 
 
-	--- BLOCK #84 402-406, warpins: 2 ---
+	--- BLOCK #94 443-447, warpins: 2 ---
 	slot20 = slot1
 	slot18 = slot1.SetActive
 	slot21 = false
 
 	slot18(slot20, slot21)
 
-	--- END OF BLOCK #84 ---
+	--- END OF BLOCK #94 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #86
+	UNCONDITIONAL JUMP; TARGET BLOCK #96
 
 
-	--- BLOCK #85 407-410, warpins: 1 ---
+	--- BLOCK #95 448-451, warpins: 1 ---
 	slot20 = slot1
 	slot18 = slot1.SetActive
 	slot21 = true
 
 	slot18(slot20, slot21)
 
-	--- END OF BLOCK #85 ---
+	--- END OF BLOCK #95 ---
 
-	FLOW; TARGET BLOCK #86
+	FLOW; TARGET BLOCK #96
 
 
-	--- BLOCK #86 411-420, warpins: 2 ---
+	--- BLOCK #96 452-461, warpins: 2 ---
 	slot20 = slot1
 	slot18 = slot1.TryChangePage
 	slot21 = "TaskType"
@@ -2005,50 +3144,50 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot18 = TargetUtils
 	slot18 = slot18.getReenterCurTimerId
 	slot18 = slot18()
-	--- END OF BLOCK #86 ---
+	--- END OF BLOCK #96 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #87
+	JUMP TO BLOCK #97
 	else
-	JUMP TO BLOCK #91
+	JUMP TO BLOCK #101
 	end
 
 
-	--- BLOCK #87 421-423, warpins: 1 ---
+	--- BLOCK #97 462-464, warpins: 1 ---
 	slot19 = 0
-	--- END OF BLOCK #87 ---
+	--- END OF BLOCK #97 ---
 
 	if slot18 > slot19 then
-	JUMP TO BLOCK #88
+	JUMP TO BLOCK #98
 	else
-	JUMP TO BLOCK #91
+	JUMP TO BLOCK #101
 	end
 
 
-	--- BLOCK #88 424-426, warpins: 1 ---
+	--- BLOCK #98 465-467, warpins: 1 ---
 	slot19 = slot0._reenterCountDownTimer
-	--- END OF BLOCK #88 ---
+	--- END OF BLOCK #98 ---
 
 	slot19 = if slot19 then
-	JUMP TO BLOCK #89
+	JUMP TO BLOCK #99
 	else
-	JUMP TO BLOCK #90
+	JUMP TO BLOCK #100
 	end
 
 
-	--- BLOCK #89 427-430, warpins: 1 ---
+	--- BLOCK #99 468-471, warpins: 1 ---
 	slot21 = slot0
 	slot19 = slot0.killTimer
 	slot22 = slot0._reenterCountDownTimer
 
 	slot19(slot21, slot22)
 
-	--- END OF BLOCK #89 ---
+	--- END OF BLOCK #99 ---
 
-	FLOW; TARGET BLOCK #90
+	FLOW; TARGET BLOCK #100
 
 
-	--- BLOCK #90 431-436, warpins: 2 ---
+	--- BLOCK #100 472-477, warpins: 2 ---
 	slot21 = slot0
 	slot19 = slot0.startTimer
 
@@ -2104,36 +3243,36 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot19 = slot19(slot21, slot22, slot23)
 	slot0._reenterCountDownTimer = slot19
 
-	--- END OF BLOCK #90 ---
+	--- END OF BLOCK #100 ---
 
-	FLOW; TARGET BLOCK #91
+	FLOW; TARGET BLOCK #101
 
 
-	--- BLOCK #91 437-438, warpins: 3 ---
+	--- BLOCK #101 478-479, warpins: 3 ---
 	return
-	--- END OF BLOCK #91 ---
+	--- END OF BLOCK #101 ---
 
-	FLOW; TARGET BLOCK #92
+	FLOW; TARGET BLOCK #102
 
 
-	--- BLOCK #92 439-439, warpins: 2 ---
+	--- BLOCK #102 480-480, warpins: 2 ---
 	return
-	--- END OF BLOCK #92 ---
+	--- END OF BLOCK #102 ---
 
-	FLOW; TARGET BLOCK #93
+	FLOW; TARGET BLOCK #103
 
 
-	--- BLOCK #93 440-440, warpins: 2 ---
+	--- BLOCK #103 481-481, warpins: 2 ---
 	return
-	--- END OF BLOCK #93 ---
+	--- END OF BLOCK #103 ---
 
 
 
 end
 
-slot23.setTargetObjectiveInfo = slot34
+slot27.setTargetObjectiveInfo = slot42
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot42 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -2217,10 +3356,33 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot23.setTargetObjectiveBuffInfo = slot34
+slot27.setTargetObjectiveBuffInfo = slot42
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot42 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.target
+	slot4 = slot2
+	slot2 = slot2.getTargetId
+	slot2 = slot2(slot4)
+	slot1 = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-29, warpins: 2 ---
 	slot2 = TargetUtils
 	slot2 = slot2.isShowTraceBtn
 	slot4 = slot1
@@ -2239,86 +3401,86 @@ slot34 = function(slot0, slot1)
 	slot9 = Const
 	slot9 = slot9.HUD_TARGET_ADD_TYPE
 	slot9 = slot9.SCENE
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	if slot8 == slot9 then
-	JUMP TO BLOCK #1
-	else
 	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 21-26, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.global
-	slot8 = slot8.scene
-	slot8 = slot8.curScene
-	--- END OF BLOCK #1 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 27-34, warpins: 1 ---
+	--- BLOCK #3 30-35, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.scene
+	slot8 = slot8.curScene
+	--- END OF BLOCK #3 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 36-43, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.global
 	slot8 = slot8.scene
 	slot8 = slot8.curScene
 	slot8 = slot8.getClassType
 	slot8 = slot8()
-	--- END OF BLOCK #2 ---
-
-	if slot8 ~= "TempleScene" then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 35-36, warpins: 2 ---
-	slot8 = false
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 37-37, warpins: 1 ---
-	slot8 = true
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 38-39, warpins: 3 ---
-	--- END OF BLOCK #5 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #6
+	if slot8 ~= "TempleScene" then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 40-47, warpins: 1 ---
+	--- BLOCK #5 44-45, warpins: 2 ---
+	slot8 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 46-46, warpins: 1 ---
+	slot8 = true
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 47-48, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #8 49-56, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.game
 	slot9 = slot9.target
 	slot11 = slot9
 	slot9 = slot9.getRacingStatus
 	slot9 = slot9(slot11)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	slot6 = if slot9 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #7 48-56, warpins: 1 ---
+	--- BLOCK #9 57-65, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.game
 	slot9 = slot9.target
@@ -2326,83 +3488,146 @@ slot34 = function(slot0, slot1)
 	slot9 = slot9.getRacingStatus
 	slot9 = slot9(slot11)
 	slot10 = 2
-	--- END OF BLOCK #7 ---
-
-	if slot9 < slot10 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 57-58, warpins: 1 ---
-	slot6 = false
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 59-59, warpins: 1 ---
-	slot6 = true
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	if slot9 < slot10 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 60-61, warpins: 4 ---
+	--- BLOCK #10 66-67, warpins: 1 ---
+	slot6 = false
 	--- END OF BLOCK #10 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #14
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 62-63, warpins: 1 ---
+	--- BLOCK #11 68-68, warpins: 1 ---
+	slot6 = true
 	--- END OF BLOCK #11 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 64-65, warpins: 1 ---
+	--- BLOCK #12 69-73, warpins: 4 ---
+	slot9 = false
+	slot10 = pg
+	slot10 = slot10.me
 	--- END OF BLOCK #12 ---
 
-	slot6 = if not slot6 then
+	slot10 = if slot10 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #13 66-71, warpins: 1 ---
-	slot9 = slot0.btnClickUButton
-	slot11 = slot9
-	slot9 = slot9.SetActive
-	slot12 = false
-
-	slot9(slot11, slot12)
-
+	--- BLOCK #13 74-78, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.me
+	slot10 = slot10.isInRiftMode
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	slot10 = if slot10 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #14 72-86, warpins: 3 ---
-	slot9 = slot0.btnClickUButton
-	slot11 = slot9
-	slot9 = slot9.SetActive
-	slot12 = true
+	--- BLOCK #14 79-85, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.me
+	slot12 = slot10
+	slot10 = slot10.isInRiftMode
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #14 ---
 
-	slot9(slot11, slot12)
+	slot10 = if slot10 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
 
-	slot9 = slot0.btnClickUButton
 
-	slot10 = function()
+	--- BLOCK #15 86-91, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.checkIsSpaceOwner
+	slot12 = pg
+	slot12 = slot12.me
+	slot10 = slot10(slot12)
+	slot9 = slot10
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 92-93, warpins: 4 ---
+	--- END OF BLOCK #16 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #17 94-95, warpins: 1 ---
+	--- END OF BLOCK #17 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #18 96-97, warpins: 1 ---
+	--- END OF BLOCK #18 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #19 98-99, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 100-105, warpins: 1 ---
+	slot10 = slot0.btnClickUButton
+	slot12 = slot10
+	slot10 = slot10.SetActive
+	slot13 = false
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #21 106-120, warpins: 4 ---
+	slot10 = slot0.btnClickUButton
+	slot12 = slot10
+	slot10 = slot10.SetActive
+	slot13 = true
+
+	slot10(slot12, slot13)
+
+	slot10 = slot0.btnClickUButton
+
+	slot11 = function()
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.btnClickUButton
@@ -2434,7 +3659,7 @@ slot34 = function(slot0, slot1)
 
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
 		--- BLOCK #2 18-20, warpins: 1 ---
@@ -2455,7 +3680,7 @@ slot34 = function(slot0, slot1)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #4
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #11
 		end
 
 
@@ -2467,7 +3692,7 @@ slot34 = function(slot0, slot1)
 		if slot0 > slot1 then
 		JUMP TO BLOCK #5
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #11
 		end
 
 
@@ -2495,7 +3720,7 @@ slot34 = function(slot0, slot1)
 
 		--- END OF BLOCK #5 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
 		--- BLOCK #6 46-48, warpins: 1 ---
@@ -2517,11 +3742,11 @@ slot34 = function(slot0, slot1)
 		slot0 = if not slot0 then
 		JUMP TO BLOCK #8
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #8 53-65, warpins: 1 ---
+		--- BLOCK #8 53-66, warpins: 1 ---
 		slot0 = TargetUtils
 		slot0 = slot0.addTargetPathingNavEffect
 		slot2 = targetId
@@ -2554,126 +3779,267 @@ slot34 = function(slot0, slot1)
 
 		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #9
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-		--- BLOCK #9 66-66, warpins: 7 ---
-		return
+		--- BLOCK #9 67-69, warpins: 1 ---
+		slot0 = isShowFinishRiftBtn
 		--- END OF BLOCK #9 ---
 
+		slot0 = if slot0 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 70-73, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onFinishRiftClick
+
+		slot0(slot2)
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 74-74, warpins: 8 ---
+		return
+		--- END OF BLOCK #11 ---
+
 
 
 	end
 
-	slot9.luaClick = slot10
-	slot9 = "Hud/TrackOpenSpecial"
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = "QUEST_TRACK_TEXT"
-	slot10 = slot10(slot12)
-	--- END OF BLOCK #14 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 87-93, warpins: 1 ---
+	slot10.luaClick = slot11
+	slot10 = "Hud/TrackOpenSpecial"
 	slot11 = pg
 	slot11 = slot11.getGameString
-	slot13 = "TARGET_CAN_RESET_TEXT"
+	slot13 = "QUEST_TRACK_TEXT"
 	slot11 = slot11(slot13)
-	slot10 = slot11
-	slot9 = "Hud/ResetPuzzle"
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	slot6 = if slot6 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
 
 
-	--- BLOCK #16 94-95, warpins: 1 ---
-	--- END OF BLOCK #16 ---
+	--- BLOCK #22 121-127, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "TARGET_CAN_RESET_TEXT"
+	slot12 = slot12(slot14)
+	slot11 = slot12
+	slot10 = "Hud/ResetPuzzle"
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #23 128-129, warpins: 1 ---
+	--- END OF BLOCK #23 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #17 96-103, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.getLocalizationText
-	slot13 = ItemSourceData
-	slot13 = slot13[slot5]
-	slot13 = slot13.buttonTxt
-	slot11 = slot11(slot13)
-	--- END OF BLOCK #17 ---
+	--- BLOCK #24 130-137, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getLocalizationText
+	slot14 = ItemSourceData
+	slot14 = slot14[slot5]
+	slot14 = slot14.buttonTxt
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #24 ---
 
-	slot10 = if not slot11 then
-	JUMP TO BLOCK #18
+	slot11 = if not slot12 then
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #18 104-105, warpins: 2 ---
-	--- END OF BLOCK #18 ---
+	--- BLOCK #25 138-139, warpins: 2 ---
+	--- END OF BLOCK #25 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #19 106-106, warpins: 1 ---
-	slot9 = "Hud/TempleHelp"
-	--- END OF BLOCK #19 ---
+	--- BLOCK #26 140-141, warpins: 1 ---
+	slot10 = "Hud/TempleHelp"
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #20 107-123, warpins: 4 ---
-	slot11 = ClientTextUtils
-	slot11 = slot11.setText
-	slot13 = slot0.btnClickUButtonText
-	slot14 = slot10
+	--- BLOCK #27 142-143, warpins: 1 ---
+	--- END OF BLOCK #27 ---
 
-	slot11(slot13, slot14)
+	slot9 = if slot9 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
 
-	slot13 = slot0
-	slot11 = slot0.addTraceQuestKeyBinding
-	slot14 = slot0.btnClickUButton
-	slot15 = slot9
 
-	slot11(slot13, slot14, slot15)
+	--- BLOCK #28 144-149, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "Rift_ResetGameplay"
+	slot12 = slot12(slot14)
+	slot11 = slot12
+	slot10 = "Hud/ResetRift"
+	--- END OF BLOCK #28 ---
 
-	slot11 = slot0.keyHotKeyContent
-	slot13 = slot11
-	slot11 = slot11.SetHotKeyPaths
-	slot14 = slot9
+	FLOW; TARGET BLOCK #29
 
-	slot11(slot13, slot14)
 
+	--- BLOCK #29 150-170, warpins: 5 ---
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.btnClickUButtonText
+	slot15 = slot11
+
+	slot12(slot14, slot15)
+
+	slot14 = slot0
+	slot12 = slot0.addTraceQuestKeyBinding
+	slot15 = slot0.btnClickUButton
+	slot16 = slot10
+
+	slot12(slot14, slot15, slot16)
+
+	slot12 = slot0.keyHotKeyContent
+	slot14 = slot12
+	slot12 = slot12.SetHotKeyPaths
+	slot15 = slot10
+
+	slot12(slot14, slot15)
+
+	slot12 = TargetUtils
+	slot12 = slot12.getTargetConfigGroup
+	slot14 = slot1
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #29 ---
+
+	slot13 = if slot12 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #30 171-174, warpins: 1 ---
+	slot13 = Const
+	slot13 = slot13.COURSE_TARGET_GROUP_MIN
+	--- END OF BLOCK #30 ---
+
+	if slot13 <= slot12 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 175-178, warpins: 1 ---
+	slot13 = Const
+	slot13 = slot13.COURSE_TARGET_GROUP_MAX
+	--- END OF BLOCK #31 ---
+
+	if slot12 > slot13 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 179-180, warpins: 2 ---
+	slot13 = false
+	--- END OF BLOCK #32 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
+
+
+	--- BLOCK #33 181-181, warpins: 1 ---
+	slot13 = true
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 182-183, warpins: 3 ---
+	--- END OF BLOCK #34 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #35 184-185, warpins: 1 ---
+	--- END OF BLOCK #35 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #36 186-188, warpins: 1 ---
+	slot14 = slot0._lastAutoNaviTargetId
+	--- END OF BLOCK #36 ---
+
+	if slot14 ~= slot1 then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 189-193, warpins: 1 ---
+	slot0._lastAutoNaviTargetId = slot1
+	slot14 = TargetUtils
+	slot14 = slot14.addTargetPathingNavEffect
+	slot16 = slot1
+
+	slot14(slot16)
+
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 194-195, warpins: 4 ---
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #21
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #21 124-124, warpins: 2 ---
+	--- BLOCK #39 196-196, warpins: 2 ---
 	return
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #39 ---
 
 
 
 end
 
-slot23.setTrackHint = slot34
+slot27.setTrackHint = slot42
 
-slot34 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = KeyBindingPro
 	slot3 = slot3.GetOrAddKeyBindingByName
@@ -2733,9 +4099,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot23.addTraceQuestKeyBinding = slot34
+slot27.addTraceQuestKeyBinding = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isShowCurTarget
 	--- END OF BLOCK #0 ---
@@ -2991,10 +4357,55 @@ slot34 = function(slot0)
 
 end
 
-slot23.onResetClick = slot34
+slot27.onResetClick = slot42
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getGameString
+	slot3 = "Rift_Title"
+	slot1 = slot1(slot3)
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "Rift_ConfirmExit"
+	slot2 = slot2(slot4)
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.showConfirmMsgRaw
+	slot5 = slot1
+	slot6 = slot2
+
+	slot7 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.endFissureChallenge
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot8, slot9, slot10 = nil
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.onFinishRiftClick = slot42
+
+slot42 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.target
@@ -3008,39 +4419,53 @@ slot34 = function(slot0, slot1)
 	slot2 = slot2.global
 	slot2 = slot2.scene
 	slot2 = slot2.curScene
-	slot2 = slot2.getClassType
-	slot2 = slot2()
 	--- END OF BLOCK #0 ---
 
-	if slot2 == "TempleScene" then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 16-18, warpins: 1 ---
+	--- BLOCK #1 14-21, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.scene
+	slot2 = slot2.curScene
+	slot2 = slot2.getClassType
+	slot2 = slot2()
+	--- END OF BLOCK #1 ---
+
+	if slot2 == "TempleScene" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 22-24, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setTrackHint
 
 	slot2(slot4)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 19-19, warpins: 2 ---
-	return
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 25-25, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot23.onStageChange = slot34
+slot27.onStageChange = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = TipVisibilityHelper
 	slot1 = slot1.checkIsRunning
@@ -3053,26 +4478,65 @@ slot34 = function(slot0)
 
 end
 
-slot23.checkIsRunning = slot34
+slot27.checkIsRunning = slot42
 
-slot34 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot42 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = TipVisibilityHelper
 	slot2 = slot2.clearRunningList
 	slot4 = slot0
 
 	slot2(slot4)
 
-	return
+	slot2 = slot0.preFlagTarget
 	--- END OF BLOCK #0 ---
+
+	if slot2 ~= false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-14, warpins: 1 ---
+	slot2 = false
+	slot0.preFlagTarget = slot2
+	slot2 = NotNil
+	slot4 = slot0.container
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-19, warpins: 1 ---
+	slot2 = slot0.container
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-20, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot23.clearRunningList = slot34
+slot27.clearRunningList = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.visibleMap
 	slot2.visible = slot1
@@ -3084,9 +4548,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.setShowState = slot34
+slot27.setShowState = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -3147,9 +4611,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.backToHome = slot34
+slot27.backToHome = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = slot0.visibleMap
 	slot2.targetVisible = slot1
@@ -3210,9 +4674,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.showTarget = slot34
+slot27.showTarget = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -3310,22 +4774,24 @@ slot34 = function(slot0)
 
 end
 
-slot23.checkShowState = slot34
+slot27.checkShowState = slot42
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.content
+slot42 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.updateHudVisibleFlag
+	slot1 = slot1(slot3)
 
 	--- END OF BLOCK #0 ---
 
-	if slot1 == nil then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 6-6, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -3333,18 +4799,38 @@ slot34 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-7, warpins: 2 ---
-	slot1 = slot0.reSetObj
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot1 = slot0.content
+
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	if slot1 == nil then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 8-24, warpins: 1 ---
+	--- BLOCK #3 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-13, warpins: 2 ---
+	slot1 = slot0.reSetObj
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-30, warpins: 1 ---
 	slot1 = false
 	slot0.reSetObj = slot1
 	slot1 = facade
@@ -3364,23 +4850,23 @@ slot34 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 25-27, warpins: 2 ---
+	--- BLOCK #6 31-33, warpins: 2 ---
 	slot1 = slot0.preFlagTarget
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 28-36, warpins: 1 ---
+	--- BLOCK #7 34-42, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.target
@@ -3388,46 +4874,46 @@ slot34 = function(slot0)
 	slot1 = slot1.getTargetId
 	slot1 = slot1(slot3)
 	slot2 = slot0.preTargetId
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	if slot2 ~= slot1 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 37-39, warpins: 1 ---
+	--- BLOCK #8 43-45, warpins: 1 ---
 	slot0.preTargetId = slot1
 	slot2 = true
 	slot0.pendingTargetInfoUpdate = slot2
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 40-42, warpins: 2 ---
+	--- BLOCK #9 46-48, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.checkShowTargetObjc
 
 	slot2(slot4)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 43-43, warpins: 2 ---
+	--- BLOCK #10 49-49, warpins: 2 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot23.onUpdate = slot34
+slot27.onUpdate = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkIsRunning
@@ -3467,7 +4953,7 @@ slot34 = function(slot0)
 
 	--- BLOCK #3 14-18, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot1 = slot1 + 2
 	slot0.delayTime = slot1
 
@@ -3480,7 +4966,7 @@ slot34 = function(slot0)
 
 	--- BLOCK #4 19-23, warpins: 2 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.delayTime
 
 	--- END OF BLOCK #4 ---
@@ -3517,10 +5003,10 @@ slot34 = function(slot0)
 
 end
 
-slot23.setDelayTime = slot34
+slot27.setDelayTime = slot42
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = slot0.content
 	slot3 = slot1
 	slot1 = slot1.TryChangePage
@@ -3544,21 +5030,23 @@ slot34 = function(slot0)
 
 	slot1(slot3)
 
-	slot3 = slot0
-	slot1 = slot0.setBossCatchInfo
-
-	slot1(slot3)
-
-	slot1 = TargetUtils
-	slot1 = slot1.isShowTraceBtn
-	slot1, slot2 = slot1()
-	slot3 = TargetUtils
-	slot3 = slot3.canTraceItemSource
-	slot3, slot4 = slot3()
-	slot5 = LuaUIUtils
-	slot7 = slot5
-	slot5 = slot5.setUIVisible
-	slot8 = slot0.btnClickUButton
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.target
+	slot3 = slot1
+	slot1 = slot1.getTargetId
+	slot1 = slot1(slot3)
+	slot2 = TargetUtils
+	slot2 = slot2.isShowTraceBtn
+	slot4 = slot1
+	slot2, slot3 = slot2(slot4)
+	slot4 = TargetUtils
+	slot4 = slot4.canTraceItemSource
+	slot6 = slot1
+	slot4, slot5 = slot4(slot6)
+	slot6 = slot0.btnClickUButton
+	slot8 = slot6
+	slot6 = slot6.SetActive
 	slot9 = TargetUtils
 	slot9 = slot9.isShowResetBtn
 	slot9 = slot9()
@@ -3571,244 +5059,244 @@ slot34 = function(slot0)
 	end
 
 
-	--- BLOCK #1 34-35, warpins: 1 ---
+	--- BLOCK #1 38-39, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot9 = if not slot1 then
+	slot9 = if not slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 36-36, warpins: 1 ---
-	slot9 = slot3
+	--- BLOCK #2 40-40, warpins: 1 ---
+	slot9 = slot4
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 37-45, warpins: 3 ---
-	slot5(slot7, slot8, slot9)
+	--- BLOCK #3 41-49, warpins: 3 ---
+	slot6(slot8, slot9)
 
-	slot5 = TargetUtils
-	slot5 = slot5.getTargetConfigAddType
-	slot5 = slot5()
-	slot6 = Const
-	slot6 = slot6.HUD_TARGET_ADD_TYPE
-	slot6 = slot6.SCENE
+	slot6 = TargetUtils
+	slot6 = slot6.getTargetConfigAddType
+	slot6 = slot6()
+	slot7 = Const
+	slot7 = slot7.HUD_TARGET_ADD_TYPE
+	slot7 = slot7.SCENE
 	--- END OF BLOCK #3 ---
 
-	if slot5 == slot6 then
+	if slot6 == slot7 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #4 46-51, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.scene
-	slot5 = slot5.curScene
+	--- BLOCK #4 50-55, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.scene
+	slot6 = slot6.curScene
 	--- END OF BLOCK #4 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #5 52-59, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.scene
-	slot5 = slot5.curScene
-	slot5 = slot5.getClassType
-	slot5 = slot5()
+	--- BLOCK #5 56-63, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.scene
+	slot6 = slot6.curScene
+	slot6 = slot6.getClassType
+	slot6 = slot6()
 	--- END OF BLOCK #5 ---
 
-	if slot5 == "TempleScene" then
+	if slot6 == "TempleScene" then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #6 60-64, warpins: 1 ---
-	slot5 = LuaUIUtils
-	slot5 = slot5.setUIVisible
-	slot7 = slot0.btnClickUButton
+	--- BLOCK #6 64-68, warpins: 1 ---
+	slot6 = slot0.btnClickUButton
+	slot8 = slot6
+	slot6 = slot6.SetActive
 	--- END OF BLOCK #6 ---
 
-	slot8 = if not slot3 then
+	slot9 = if not slot4 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 65-72, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.target
-	slot10 = slot8
-	slot8 = slot8.getRacingStatus
-	slot8 = slot8(slot10)
+	--- BLOCK #7 69-76, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.target
+	slot11 = slot9
+	slot9 = slot9.getRacingStatus
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #7 ---
 
-	slot8 = if slot8 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 73-81, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.target
-	slot10 = slot8
-	slot8 = slot8.getRacingStatus
-	slot8 = slot8(slot10)
-	slot9 = 2
+	--- BLOCK #8 77-85, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.target
+	slot11 = slot9
+	slot9 = slot9.getRacingStatus
+	slot9 = slot9(slot11)
+	slot10 = 2
 	--- END OF BLOCK #8 ---
 
-	if slot8 < slot9 then
+	if slot9 < slot10 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 82-83, warpins: 1 ---
-	slot8 = false
+	--- BLOCK #9 86-87, warpins: 1 ---
+	slot9 = false
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 84-84, warpins: 1 ---
-	slot8 = true
+	--- BLOCK #10 88-88, warpins: 1 ---
+	slot9 = true
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 85-86, warpins: 4 ---
-	slot5(slot7, slot8)
+	--- BLOCK #11 89-90, warpins: 4 ---
+	slot6(slot8, slot9)
 
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #12 87-94, warpins: 3 ---
-	slot5 = TargetUtils
-	slot5 = slot5.getTargetConfigAddType
-	slot5 = slot5()
-	slot6 = Const
-	slot6 = slot6.HUD_TARGET_ADD_TYPE
-	slot6 = slot6.COMMON_CHALLENGE
+	--- BLOCK #12 91-98, warpins: 3 ---
+	slot6 = TargetUtils
+	slot6 = slot6.getTargetConfigAddType
+	slot6 = slot6()
+	slot7 = Const
+	slot7 = slot7.HUD_TARGET_ADD_TYPE
+	slot7 = slot7.COMMON_CHALLENGE
 	--- END OF BLOCK #12 ---
 
-	if slot5 == slot6 then
+	if slot6 == slot7 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #13 95-102, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.challenge
-	slot7 = slot5
-	slot5 = slot5.getCurChallengeInfo
-	slot5 = slot5(slot7)
+	--- BLOCK #13 99-106, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.challenge
+	slot8 = slot6
+	slot6 = slot6.getCurChallengeInfo
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #13 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 103-105, warpins: 1 ---
-	slot6 = slot5.resetFunc
+	--- BLOCK #14 107-109, warpins: 1 ---
+	slot7 = slot6.resetFunc
 	--- END OF BLOCK #14 ---
 
-	slot6 = if not slot6 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #15 106-110, warpins: 2 ---
-	slot6 = TargetUtils
-	slot6 = slot6.isShowResetBtn
-	slot6 = slot6()
+	--- BLOCK #15 110-114, warpins: 2 ---
+	slot7 = TargetUtils
+	slot7 = slot7.isShowResetBtn
+	slot7 = slot7()
 	--- END OF BLOCK #15 ---
 
-	slot6 = if not slot6 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #16 111-112, warpins: 1 ---
+	--- BLOCK #16 115-116, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
-	slot1 = if not slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 113-114, warpins: 1 ---
+	--- BLOCK #17 117-118, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 115-120, warpins: 4 ---
-	slot6 = LuaUIUtils
-	slot6 = slot6.setUIVisible
-	slot8 = slot0.btnClickUButton
-	slot9 = true
+	--- BLOCK #18 119-124, warpins: 4 ---
+	slot7 = slot0.btnClickUButton
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = true
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 121-125, warpins: 1 ---
-	slot6 = LuaUIUtils
-	slot6 = slot6.setUIVisible
-	slot8 = slot0.btnClickUButton
-	slot9 = false
+	--- BLOCK #19 125-129, warpins: 1 ---
+	slot7 = slot0.btnClickUButton
+	slot9 = slot7
+	slot7 = slot7.SetActive
+	slot10 = false
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 126-126, warpins: 4 ---
+	--- BLOCK #20 130-130, warpins: 4 ---
 	return
 	--- END OF BLOCK #20 ---
 
@@ -3816,9 +5304,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.onUpdateTargetInfo = slot34
+slot27.onUpdateTargetInfo = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.listUList
 	--- END OF BLOCK #0 ---
@@ -3853,9 +5341,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.setTargetIcon = slot34
+slot27.setTargetIcon = slot42
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot42 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getQuestIconComs
@@ -3902,9 +5390,9 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot23.onRefreshPageItem = slot34
+slot27.onRefreshPageItem = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = TargetUtils
 	slot1 = slot1.getTargetConfigTitle
@@ -3935,9 +5423,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.setTargetTitle = slot34
+slot27.setTargetTitle = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkIsRunning
@@ -4091,173 +5579,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.setChestInfo = slot34
+slot27.setChestInfo = slot42
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = TargetUtils
-	slot1 = slot1.isBossCatchInfo
-	slot1 = slot1()
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot1 = slot0.bossCatchModeUContainer
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = false
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #2 12-37, warpins: 1 ---
-	slot1 = slot0.bossCatchModeUContainer
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot3 = slot0
-	slot1 = slot0.initBossCatchModeRef
-	slot4 = slot0.bossCatchModeUContainer
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.textUSDFText
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = false
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.btnSkipUButton
-
-	slot2 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #1 5-9, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.requestSkipBattle
-		--- END OF BLOCK #1 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 10-14, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot2 = slot0
-		slot0 = slot0.requestSkipBattle
-
-		slot0(slot2)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 15-15, warpins: 3 ---
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.getBestBattleGrade
-	slot1 = slot1(slot3)
-	slot2 = FishingCaptureBattleGradeData
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 38-40, warpins: 1 ---
-	slot2 = FishingCaptureBattleGradeData
-	slot2 = slot2[slot1]
-	slot2 = slot2.grade
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 41-61, warpins: 2 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.textFinalUSDFText
-	slot6 = string
-	slot6 = slot6.format
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "BOOS_CATCH_BAST_BATTLE_GRADE"
-	slot8 = slot8(slot10)
-	slot9 = slot2
-	MULTRES = slot6(slot8, slot9)
-
-	slot3(slot5, MULTRES)
-
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.skipText
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "BATTLE_SKIP"
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	return
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 62-62, warpins: 2 ---
-	return
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot23.setBossCatchInfo = slot34
-
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.targetObjcQueue
 	slot4 = slot2
@@ -4455,9 +5779,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.checkShowTargetObjc = slot34
+slot27.checkShowTargetObjc = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.markShowTargetTime
 	--- END OF BLOCK #0 ---
@@ -4517,9 +5841,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.isShowingTarget = slot34
+slot27.isShowingTarget = slot42
 
-slot34 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4676,9 +6000,254 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot23._isSameObjectiveStructure = slot34
+slot27._isSameObjectiveStructure = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = TargetUtils
+	slot1 = slot1.getNeedFinishNum
+	slot1, slot2 = slot1()
+	slot3 = 0
+	slot4 = TargetUtils
+	slot4 = slot4.getTargetConfig
+	slot4 = slot4()
+	--- END OF BLOCK #0 ---
+
+	slot5 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	slot5 = slot4.conditionExpression
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #3 13-15, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot1 > slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #4 16-17, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #5 18-22, warpins: 1 ---
+	slot6 = {}
+	slot7 = 1
+	slot8 = #slot5
+	slot9 = 1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-28, warpins: 2 ---
+	slot11 = "conditionId"
+	slot12 = slot10
+	slot11 = slot11 .. slot12
+	slot11 = slot4[slot11]
+	--- END OF BLOCK #6 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 29-31, warpins: 1 ---
+	slot12 = 0
+	--- END OF BLOCK #7 ---
+
+	if slot11 > slot12 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 32-33, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot11 ~= 8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 34-39, warpins: 1 ---
+	slot12 = ClientUtils
+	slot12 = slot12.checkCondition
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #9 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 40-42, warpins: 1 ---
+	slot12 = slot5[slot10]
+	slot13 = true
+	slot6[slot12] = slot13
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 43-43, warpins: 5 ---
+	--- END OF BLOCK #11 ---
+
+	for slot10=slot7, slot8, slot9
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #12
+
+	--- BLOCK #12 44-47, warpins: 1 ---
+	slot7 = pairs
+	slot9 = slot6
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 48-48, warpins: 1 ---
+	slot3 = slot3 + 1
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 49-50, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	for slot10 in slot7, slot8, slot9
+	LOOP BLOCK #13
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 51-56, warpins: 4 ---
+	slot6 = slot0.optionalUWidget
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = 1
+	--- END OF BLOCK #15 ---
+
+	if slot2 > slot9 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 57-58, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	if slot1 >= slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 59-60, warpins: 2 ---
+	slot9 = false
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 61-61, warpins: 1 ---
+	slot9 = true
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 62-64, warpins: 2 ---
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #19 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 65-67, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #20 ---
+
+	if slot1 > slot6 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 68-77, warpins: 1 ---
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot0.selectTxtNum
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "%s/%s"
+	slot12 = slot3
+	slot13 = slot1
+	MULTRES = slot9(slot11, slot12, slot13)
+
+	slot6(slot8, MULTRES)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 78-78, warpins: 3 ---
+	return
+	--- END OF BLOCK #22 ---
+
+
+
+end
+
+slot27.refreshOptionalProgress = slot42
+
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = TargetUtils
 	slot2 = slot2.getTargetConditions
@@ -4695,7 +6264,7 @@ slot34 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #4
 	end
 
 
@@ -4730,7 +6299,7 @@ slot34 = function(slot0, slot1)
 	LOOP BLOCK #2
 	GO OUT TO BLOCK #3
 
-	--- BLOCK #3 29-43, warpins: 1 ---
+	--- BLOCK #3 29-38, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.refreshTargetBuffItem
 
@@ -4741,117 +6310,19 @@ slot34 = function(slot0, slot1)
 
 	slot3(slot5)
 
-	slot3 = TargetUtils
-	slot3 = slot3.getNeedFinishNum
-	slot3, slot4 = slot3()
-	slot5 = slot0.optionalUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = 1
-	--- END OF BLOCK #3 ---
+	slot5 = slot0
+	slot3 = slot0.refreshOptionalProgress
 
-	if slot4 > slot8 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	slot3(slot5)
 
-
-	--- BLOCK #4 44-45, warpins: 1 ---
-	--- END OF BLOCK #4 ---
-
-	if slot3 >= slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 46-47, warpins: 2 ---
-	slot8 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 48-48, warpins: 1 ---
-	slot8 = true
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 49-51, warpins: 2 ---
-	slot5(slot7, slot8)
-
-	--- END OF BLOCK #7 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 52-53, warpins: 1 ---
-	--- END OF BLOCK #8 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #9 54-56, warpins: 1 ---
-	slot5 = 0
-	--- END OF BLOCK #9 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #10 57-58, warpins: 1 ---
-	--- END OF BLOCK #10 ---
-
-	if slot3 < slot4 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 59-68, warpins: 1 ---
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.selectTxtNum
-	slot8 = string
-	slot8 = slot8.format
-	slot10 = "%s/%s"
-	slot11 = slot3
-	slot12 = slot4
-	MULTRES = slot8(slot10, slot11, slot12)
-
-	slot5(slot7, MULTRES)
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 69-69, warpins: 5 ---
 	return
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #13 70-78, warpins: 2 ---
+	--- BLOCK #4 39-47, warpins: 2 ---
 	slot3 = slot0.listTaskUList
 	slot5 = slot3
 	slot3 = slot3.GetAllButtons
@@ -4860,12 +6331,12 @@ slot34 = function(slot0, slot1)
 	slot5 = slot3.Length
 	slot5 = slot5 - 1
 	slot6 = 1
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #14 79-87, warpins: 2 ---
+	--- BLOCK #5 48-56, warpins: 2 ---
 	slot8 = slot3[slot7]
 	slot11 = slot8
 	slot9 = slot8.InvokeCallback
@@ -4876,13 +6347,13 @@ slot34 = function(slot0, slot1)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #5 ---
 
 	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #15
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #6
 
-	--- BLOCK #15 88-113, warpins: 1 ---
+	--- BLOCK #6 57-77, warpins: 1 ---
 	slot4 = slot0.listTaskUList
 	slot6 = slot4
 	slot4 = slot4.SetActiveQuickly
@@ -4908,119 +6379,21 @@ slot34 = function(slot0, slot1)
 
 	slot4(slot6)
 
-	slot4 = TargetUtils
-	slot4 = slot4.getNeedFinishNum
-	slot4, slot5 = slot4()
-	slot6 = slot0.optionalUWidget
-	slot8 = slot6
-	slot6 = slot6.SetActive
-	slot9 = 1
-	--- END OF BLOCK #15 ---
+	slot6 = slot0
+	slot4 = slot0.refreshOptionalProgress
 
-	if slot5 > slot9 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
+	slot4(slot6)
 
-
-	--- BLOCK #16 114-115, warpins: 1 ---
-	--- END OF BLOCK #16 ---
-
-	if slot4 >= slot5 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 116-117, warpins: 2 ---
-	slot9 = false
-	--- END OF BLOCK #17 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
-
-
-	--- BLOCK #18 118-118, warpins: 1 ---
-	slot9 = true
-
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 119-121, warpins: 2 ---
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #19 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #20 122-123, warpins: 1 ---
-	--- END OF BLOCK #20 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #21 124-126, warpins: 1 ---
-	slot6 = 0
-	--- END OF BLOCK #21 ---
-
-	if slot5 > slot6 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #22 127-128, warpins: 1 ---
-	--- END OF BLOCK #22 ---
-
-	if slot4 < slot5 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 129-138, warpins: 1 ---
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot0.selectTxtNum
-	slot9 = string
-	slot9 = slot9.format
-	slot11 = "%s/%s"
-	slot12 = slot4
-	slot13 = slot5
-	MULTRES = slot9(slot11, slot12, slot13)
-
-	slot6(slot8, MULTRES)
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 139-139, warpins: 5 ---
 	return
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot23.refreshTargetItem = slot34
+slot27.refreshTargetItem = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.visibleMap
 	slot1 = slot1.visible
@@ -5159,9 +6532,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.refreshTargetBuffItem = slot34
+slot27.refreshTargetBuffItem = slot42
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot42 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot3.refreshAll
 	--- END OF BLOCK #0 ---
@@ -5181,7 +6554,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
 	--- BLOCK #2 8-10, warpins: 1 ---
@@ -5214,7 +6587,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-19, warpins: 2 ---
+	--- BLOCK #5 14-22, warpins: 2 ---
 	slot6 = slot1
 	slot4 = slot1.RefreshElement
 	slot7 = slot3.objIndex
@@ -5222,12 +6595,17 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot4(slot6, slot7)
 
+	slot6 = slot0
+	slot4 = slot0.refreshOptionalProgress
+
+	slot4(slot6)
+
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #6 20-22, warpins: 1 ---
+	--- BLOCK #6 23-25, warpins: 1 ---
 	slot4 = slot3.isNew
 	--- END OF BLOCK #6 ---
 
@@ -5238,7 +6616,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 23-34, warpins: 1 ---
+	--- BLOCK #7 26-37, warpins: 1 ---
 	slot4 = TargetUtils
 	slot4 = slot4.getTargetConditions
 	slot6, slot7 = nil
@@ -5254,10 +6632,10 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
 
 
-	--- BLOCK #8 35-37, warpins: 1 ---
+	--- BLOCK #8 38-40, warpins: 1 ---
 	slot4 = slot3.isObjFined
 
 	--- END OF BLOCK #8 ---
@@ -5265,11 +6643,11 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #9 38-39, warpins: 1 ---
+	--- BLOCK #9 41-42, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
 	if slot2 == nil then
@@ -5279,7 +6657,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #10 40-40, warpins: 1 ---
+	--- BLOCK #10 43-43, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #10 ---
@@ -5287,18 +6665,18 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 41-43, warpins: 2 ---
+	--- BLOCK #11 44-46, warpins: 2 ---
 	slot4 = slot3.objIndex
 	--- END OF BLOCK #11 ---
 
 	slot4 = if slot4 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 44-47, warpins: 1 ---
+	--- BLOCK #12 47-50, warpins: 1 ---
 	slot4 = slot3.objIndex
 	slot4 = slot2[slot4]
 	--- END OF BLOCK #12 ---
@@ -5310,7 +6688,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #13 48-51, warpins: 1 ---
+	--- BLOCK #13 51-54, warpins: 1 ---
 	slot4 = slot3.objIndex
 	slot4 = slot2[slot4]
 	slot5 = true
@@ -5320,7 +6698,7 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 52-57, warpins: 2 ---
+	--- BLOCK #14 55-59, warpins: 2 ---
 	slot6 = slot1
 	slot4 = slot1.RefreshElement
 	slot7 = slot3.objIndex
@@ -5330,111 +6708,133 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 58-59, warpins: 1 ---
+	--- BLOCK #15 60-63, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.refreshOptionalProgress
+
+	slot4(slot6)
+
 	--- END OF BLOCK #15 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #16 64-65, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
 	if slot2 == nil then
-	JUMP TO BLOCK #16
-	else
 	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #16 60-60, warpins: 1 ---
+	--- BLOCK #17 66-66, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 61-64, warpins: 2 ---
-	slot4 = #slot2
-	slot5 = 1
-	slot6 = -1
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 65-69, warpins: 2 ---
+	--- BLOCK #18 67-70, warpins: 2 ---
+	slot4 = #slot2
+	slot5 = 1
+	slot6 = -1
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 71-75, warpins: 2 ---
 	slot8 = slot2[slot7]
 	slot9 = slot8.targetId
 	slot10 = slot3.targetId
-	--- END OF BLOCK #18 ---
-
-	if slot9 == slot10 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #19 70-73, warpins: 1 ---
-	slot9 = slot8.seqid
-	slot10 = slot3.objIndex
 	--- END OF BLOCK #19 ---
 
 	if slot9 == slot10 then
 	JUMP TO BLOCK #20
 	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #20 76-79, warpins: 1 ---
+	slot9 = slot8.seqid
+	slot10 = slot3.objIndex
+	--- END OF BLOCK #20 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #21 80-82, warpins: 1 ---
+	slot9 = slot3.isFined
+	--- END OF BLOCK #21 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #22
+	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #20 74-76, warpins: 1 ---
-	slot9 = slot3.isFined
-	--- END OF BLOCK #20 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 77-79, warpins: 1 ---
+	--- BLOCK #22 83-85, warpins: 1 ---
 	slot9 = slot2[slot7]
 	slot10 = true
 	slot9.isObjFined = slot10
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #22 80-83, warpins: 2 ---
+	--- BLOCK #23 86-89, warpins: 2 ---
 	slot11 = slot1
 	slot9 = slot1.RefreshElement
 	slot12 = slot7 - 1
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 84-84, warpins: 3 ---
 	--- END OF BLOCK #23 ---
 
-	for slot7=slot4, slot5, slot6
-	LOOP BLOCK #18
-	GO OUT TO BLOCK #24
+	FLOW; TARGET BLOCK #24
 
-	--- BLOCK #24 85-85, warpins: 6 ---
-	return
+
+	--- BLOCK #24 90-90, warpins: 3 ---
 	--- END OF BLOCK #24 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #19
+	GO OUT TO BLOCK #25
+
+	--- BLOCK #25 91-93, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.refreshOptionalProgress
+
+	slot4(slot6)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 94-94, warpins: 5 ---
+	return
+	--- END OF BLOCK #26 ---
 
 
 
 end
 
-slot23.onRefreshTracingObj = slot34
+slot27.onRefreshTracingObj = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.ctrl
 	--- END OF BLOCK #0 ---
@@ -5524,19 +6924,21 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 40-46, warpins: 2 ---
+	--- BLOCK #6 40-48, warpins: 2 ---
 	slot3 = false
 	slot2.refreshAll = slot3
 	slot3 = true
 	slot2.isNew = slot3
 	slot3 = true
 	slot0.pendingTargetInfoUpdate = slot3
+	slot3 = nil
+	slot0._lastAutoNaviTargetId = slot3
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #7 47-52, warpins: 1 ---
+	--- BLOCK #7 49-54, warpins: 1 ---
 	slot3 = slot1.refreshType
 	slot4 = Const
 	slot4 = slot4.HUD_TARGET_CHANGE_TYPE
@@ -5550,7 +6952,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 53-63, warpins: 1 ---
+	--- BLOCK #8 55-65, warpins: 1 ---
 	slot3 = false
 	slot2.refreshAll = slot3
 	slot3 = true
@@ -5568,7 +6970,7 @@ slot34 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #9 64-69, warpins: 1 ---
+	--- BLOCK #9 66-71, warpins: 1 ---
 	slot3 = slot1.refreshType
 	slot4 = Const
 	slot4 = slot4.HUD_TARGET_CHANGE_TYPE
@@ -5582,7 +6984,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 70-82, warpins: 1 ---
+	--- BLOCK #10 72-84, warpins: 1 ---
 	slot3 = slot1.subTargetList
 	slot2.subTargetList = slot3
 	slot3 = true
@@ -5605,7 +7007,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 83-84, warpins: 1 ---
+	--- BLOCK #11 85-86, warpins: 1 ---
 	slot3 = nil
 	slot2.needPlayFinishAnim = slot3
 	--- END OF BLOCK #11 ---
@@ -5613,7 +7015,7 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 85-91, warpins: 2 ---
+	--- BLOCK #12 87-93, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.target
@@ -5627,7 +7029,7 @@ slot34 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #13 92-97, warpins: 1 ---
+	--- BLOCK #13 94-99, warpins: 1 ---
 	slot3 = slot1.refreshType
 	slot4 = Const
 	slot4 = slot4.HUD_TARGET_CHANGE_TYPE
@@ -5641,7 +7043,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 98-102, warpins: 1 ---
+	--- BLOCK #14 100-104, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.onTargetObjectiveChanged
 	slot6 = slot1
@@ -5653,7 +7055,7 @@ slot34 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #15 103-108, warpins: 1 ---
+	--- BLOCK #15 105-110, warpins: 1 ---
 	slot3 = slot1.refreshType
 	slot4 = Const
 	slot4 = slot4.HUD_TARGET_CHANGE_TYPE
@@ -5667,7 +7069,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 109-121, warpins: 1 ---
+	--- BLOCK #16 111-125, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.target
@@ -5685,12 +7087,14 @@ slot34 = function(slot0, slot1)
 
 	slot3(slot5, slot6)
 
+	slot3 = nil
+	slot0._lastAutoNaviTargetId = slot3
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 122-127, warpins: 6 ---
+	--- BLOCK #17 126-131, warpins: 6 ---
 	slot3 = slot1.refreshType
 	slot4 = Const
 	slot4 = slot4.HUD_TARGET_CHANGE_TYPE
@@ -5704,7 +7108,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 128-133, warpins: 1 ---
+	--- BLOCK #18 132-137, warpins: 1 ---
 	slot3 = slot1.refreshType
 	slot4 = Const
 	slot4 = slot4.HUD_TARGET_CHANGE_TYPE
@@ -5718,7 +7122,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #19 134-139, warpins: 1 ---
+	--- BLOCK #19 138-143, warpins: 1 ---
 	slot3 = slot0.targetObjcQueue
 	slot5 = slot3
 	slot3 = slot3.isFull
@@ -5732,7 +7136,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 140-143, warpins: 1 ---
+	--- BLOCK #20 144-147, warpins: 1 ---
 	slot3 = slot0.targetObjcQueue
 	slot5 = slot3
 	slot3 = slot3.deQueue
@@ -5744,7 +7148,7 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 144-148, warpins: 2 ---
+	--- BLOCK #21 148-152, warpins: 2 ---
 	slot3 = slot0.targetObjcQueue
 	slot5 = slot3
 	slot3 = slot3.enQueue
@@ -5757,7 +7161,7 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 149-149, warpins: 3 ---
+	--- BLOCK #22 153-153, warpins: 3 ---
 	return
 	--- END OF BLOCK #22 ---
 
@@ -5765,9 +7169,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.onTargetObjectChange = slot34
+slot27.onTargetObjectChange = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curObjectives
 	--- END OF BLOCK #0 ---
@@ -5826,9 +7230,11 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 22-26, warpins: 1 ---
+	--- BLOCK #5 22-28, warpins: 1 ---
 	slot7 = slot1.curValue
 	slot6.curValue = slot7
+	slot7 = nil
+	slot6.isNew = slot7
 	slot7 = slot1.dstValue
 	--- END OF BLOCK #5 ---
 
@@ -5839,7 +7245,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 27-30, warpins: 1 ---
+	--- BLOCK #6 29-32, warpins: 1 ---
 	slot7 = slot1.dstValue
 	slot8 = 0
 	--- END OF BLOCK #6 ---
@@ -5851,7 +7257,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 31-32, warpins: 1 ---
+	--- BLOCK #7 33-34, warpins: 1 ---
 	slot7 = slot1.dstValue
 	slot6.totalValue = slot7
 	--- END OF BLOCK #7 ---
@@ -5859,7 +7265,7 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 33-44, warpins: 3 ---
+	--- BLOCK #8 35-46, warpins: 3 ---
 	slot7 = {
 		isNew = false
 	}
@@ -5880,7 +7286,7 @@ slot34 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #9 45-47, warpins: 3 ---
+	--- BLOCK #9 47-49, warpins: 3 ---
 	slot7 = slot1.subTargetList
 	--- END OF BLOCK #9 ---
 
@@ -5891,7 +7297,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 48-54, warpins: 1 ---
+	--- BLOCK #10 50-56, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.isInSubTargetList
 	slot10 = slot1.subTargetList
@@ -5906,7 +7312,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 55-58, warpins: 1 ---
+	--- BLOCK #11 57-60, warpins: 1 ---
 	slot7 = false
 	slot8 = slot1.needPlayFinishAnim
 	--- END OF BLOCK #11 ---
@@ -5918,7 +7324,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 59-63, warpins: 1 ---
+	--- BLOCK #12 61-65, warpins: 1 ---
 	slot8 = slot1.needPlayFinishAnim
 	slot9 = slot6.seqid
 	slot8 = slot8[slot9]
@@ -5931,7 +7337,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 64-66, warpins: 1 ---
+	--- BLOCK #13 66-68, warpins: 1 ---
 	slot8 = true
 	slot6.needPlayFinishAnim = slot8
 	slot7 = true
@@ -5940,7 +7346,7 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 67-79, warpins: 3 ---
+	--- BLOCK #14 69-81, warpins: 3 ---
 	slot8 = {
 		isObjFined = true
 	}
@@ -5965,7 +7371,7 @@ slot34 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 80-81, warpins: 1 ---
+	--- BLOCK #15 82-83, warpins: 1 ---
 	slot9 = nil
 	slot6.needPlayFinishAnim = slot9
 
@@ -5974,14 +7380,14 @@ slot34 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 82-82, warpins: 5 ---
+	--- BLOCK #16 84-84, warpins: 5 ---
 	--- END OF BLOCK #16 ---
 
 	for slot5=slot2, slot3, slot4
 	LOOP BLOCK #2
 	GO OUT TO BLOCK #17
 
-	--- BLOCK #17 83-83, warpins: 2 ---
+	--- BLOCK #17 85-85, warpins: 2 ---
 	return
 	--- END OF BLOCK #17 ---
 
@@ -5989,9 +7395,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.onTargetObjectiveChanged = slot34
+slot27.onTargetObjectiveChanged = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curObjectives
 	--- END OF BLOCK #0 ---
@@ -6215,9 +7621,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.targetObjectiveChange = slot34
+slot27.targetObjectiveChange = slot42
 
-slot34 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot1
@@ -6265,9 +7671,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot23.isInSubTargetList = slot34
+slot27.isInSubTargetList = slot42
 
-slot34 = function(slot0, slot1, slot2, slot3)
+slot42 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6319,56 +7725,79 @@ slot34 = function(slot0, slot1, slot2, slot3)
 	slot9 = if slot9 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #5 20-23, warpins: 1 ---
-	slot10 = slot9.seqid
-	slot11 = slot3.seqid
+	--- BLOCK #5 20-21, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	if slot10 == slot11 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #6 24-27, warpins: 1 ---
+	--- BLOCK #6 22-25, warpins: 1 ---
+	slot10 = slot9.seqid
+	slot11 = slot3.seqid
+	--- END OF BLOCK #6 ---
+
+	if slot10 == slot11 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #7 26-29, warpins: 1 ---
 	slot10 = 1
 	slot11 = #slot2
 	slot12 = 1
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 28-30, warpins: 2 ---
-	slot14 = slot2[slot13]
 	--- END OF BLOCK #7 ---
 
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 30-32, warpins: 2 ---
+	slot14 = slot2[slot13]
+	--- END OF BLOCK #8 ---
+
 	slot14 = if slot14 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 31-35, warpins: 1 ---
+	--- BLOCK #9 33-37, warpins: 1 ---
 	slot14 = slot2[slot13]
 	slot14 = slot14.seqid
 	slot15 = slot3.seqid
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #9 ---
 
 	if slot14 == slot15 then
-	JUMP TO BLOCK #9
-	else
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 36-45, warpins: 1 ---
+	--- BLOCK #10 38-42, warpins: 1 ---
+	slot14 = slot2[slot13]
+	slot14 = slot14.targetId
+	slot15 = slot3.targetId
+	--- END OF BLOCK #10 ---
+
+	if slot14 == slot15 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 43-52, warpins: 1 ---
 	slot14 = table
 	slot14 = slot14.remove
 	slot16 = slot2
@@ -6382,37 +7811,37 @@ slot34 = function(slot0, slot1, slot2, slot3)
 
 	slot14(slot16, slot17)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #10 46-46, warpins: 2 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #12 53-53, warpins: 3 ---
+	--- END OF BLOCK #12 ---
 
 	for slot13=slot10, slot11, slot12
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #11
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #13
 
-	--- BLOCK #11 47-47, warpins: 4 ---
-	--- END OF BLOCK #11 ---
+	--- BLOCK #13 54-54, warpins: 5 ---
+	--- END OF BLOCK #13 ---
 
 	for slot8=slot5, slot6, slot7
 	LOOP BLOCK #4
-	GO OUT TO BLOCK #12
+	GO OUT TO BLOCK #14
 
-	--- BLOCK #12 48-48, warpins: 1 ---
+	--- BLOCK #14 55-55, warpins: 1 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot23.removeQuestObjective = slot34
+slot27.removeQuestObjective = slot42
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.target
@@ -6421,6 +7850,8 @@ slot34 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = nil
+	slot0._lastAutoNaviTargetId = slot1
 	slot1 = true
 	slot0.showTime = slot1
 
@@ -6431,9 +7862,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.resetTargetState = slot34
+slot27.resetTargetState = slot42
 
-slot34 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -6442,9 +7873,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot23.onDittoStateChange = slot34
+slot27.onDittoStateChange = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setChestInfo
@@ -6458,9 +7889,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.onInteractRecordAdd = slot34
+slot27.onInteractRecordAdd = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setChestInfo
@@ -6474,9 +7905,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.onInteractRecordDelete = slot34
+slot27.onInteractRecordDelete = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -6534,9 +7965,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.initHideFlag = slot34
+slot27.initHideFlag = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -6576,32 +8007,18 @@ slot34 = function(slot0)
 	slot1 = slot1.me
 	slot2 = slot1.space
 	slot4 = slot2
-	slot2 = slot2.isRogueEnv
+	slot2 = slot2.isPvpEnv
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if not slot2 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 19-24, warpins: 1 ---
-	slot2 = slot1.space
-	slot4 = slot2
-	slot2 = slot2.isPvpEnv
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #4 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 25-31, warpins: 2 ---
+	--- BLOCK #4 19-25, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setHideFlag
 	slot5 = HideReason
@@ -6610,12 +8027,12 @@ slot34 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-37, warpins: 1 ---
+	--- BLOCK #5 26-31, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setHideFlag
 	slot5 = HideReason
@@ -6624,14 +8041,19 @@ slot34 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #7 38-44, warpins: 2 ---
+	--- BLOCK #6 32-41, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.tryShowReenterTarget
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.refreshLeaveCountdown
 
 	slot2(slot4)
 
@@ -6641,39 +8063,237 @@ slot34 = function(slot0)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot23.onEnterSpace = slot34
+slot27.onEnterSpace = slot42
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.prefsCacheUtils
-	slot4 = slot2
-	slot2 = slot2.getBool
-	slot5 = "HudV2Enable"
-	slot6 = false
-	slot2 = slot2(slot4, slot5, slot6)
+	slot4 = slot1
+	slot2 = slot1.getFullScreenVisibleState
+	slot2 = slot2(slot4)
+	slot5 = slot1
+	slot3 = slot1.checkUIShow
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_HUD_V2
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot1
+	slot4 = slot1.checkUIShow
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_SKIP_PANEL
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	if slot4 ~= true then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 14-17, warpins: 1 ---
-	slot3 = UIConst
-	slot3 = slot3.UI_ID_HUD_V2
+	--- BLOCK #1 19-20, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 21-21, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-29, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.setHideFlag
+	slot8 = HideReason
+	slot8 = slot8.cutscene
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 30-31, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot5 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 32-33, warpins: 1 ---
+	slot5 = slot4
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 34-35, warpins: 0 ---
+	slot5 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 36-36, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 37-42, warpins: 4 ---
+	slot8 = slot0
+	slot6 = slot0.setHideFlag
+	slot9 = HideReason
+	slot9 = slot9.hudVisible
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 43-44, warpins: 1 ---
+	slot10 = slot2
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #10 45-46, warpins: 0 ---
+	slot10 = false
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 47-47, warpins: 1 ---
+	slot10 = true
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 48-50, warpins: 3 ---
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #12 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #13 51-56, warpins: 1 ---
+	slot6 = slot0.visibleMap
+	slot7 = false
+	slot6.visible = slot7
+	slot6 = slot0.preFlagTarget
+	--- END OF BLOCK #13 ---
+
+	if slot6 ~= false then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 57-63, warpins: 1 ---
+	slot6 = false
+	slot0.preFlagTarget = slot6
+	slot6 = NotNil
+	slot8 = slot0.container
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #14 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 64-68, warpins: 1 ---
+	slot6 = slot0.container
+	slot8 = slot6
+	slot6 = slot6.SetActive
+	slot9 = false
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 69-70, warpins: 4 ---
+	slot6 = not slot5
+
+	return slot6
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot27.updateHudVisibleFlag = slot42
+
+slot42 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_HUD_V2
+	slot5 = slot0
+	slot3 = slot0.updateHudVisibleFlag
+
+	slot3(slot5)
+
+	slot5 = slot1
+	slot3 = slot1.checkUIShow
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 15-21, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.checkUIShow
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_TIPS
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #1 ---
 
 	slot3 = if not slot3 then
@@ -6683,87 +8303,50 @@ slot34 = function(slot0)
 	end
 
 
-	--- BLOCK #2 18-19, warpins: 2 ---
-	slot3 = UIConst
-	slot3 = slot3.UI_ID_HUD
+	--- BLOCK #2 22-28, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.setHideFlag
+	slot6 = HideReason
+	slot6 = slot6.ui
+	slot7 = true
+
+	slot3(slot5, slot6, slot7)
+
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 20-25, warpins: 2 ---
-	slot6 = slot1
-	slot4 = slot1.checkUIShow
-	slot7 = slot3
-	slot4 = slot4(slot6, slot7)
+	--- BLOCK #3 29-34, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.setHideFlag
+	slot6 = HideReason
+	slot6 = slot6.ui
+	slot7 = false
+
+	slot3(slot5, slot6, slot7)
+
 	--- END OF BLOCK #3 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 26-32, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.checkUIShow
-	slot7 = UIConst
-	slot7 = slot7.UI_ID_TIPS
-	slot4 = slot4(slot6, slot7)
-	--- END OF BLOCK #4 ---
+	--- BLOCK #4 35-38, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshCheckShowState
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 33-39, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.setHideFlag
-	slot7 = HideReason
-	slot7 = slot7.ui
-	slot8 = true
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 40-45, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.setHideFlag
-	slot7 = HideReason
-	slot7 = slot7.ui
-	slot8 = false
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 46-49, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.refreshCheckShowState
-
-	slot4(slot6)
+	slot3(slot5)
 
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot23.onUIVisibleChanged = slot34
+slot27.onUIVisibleChanged = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -6805,9 +8388,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.onCatchModeChanged = slot34
+slot27.onCatchModeChanged = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = TipVisibilityHelper
 	slot1 = slot1.refresh
@@ -6820,9 +8403,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.refreshVisibleMap = slot34
+slot27.refreshVisibleMap = slot42
 
-slot34 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = TargetUtils
 	slot1 = slot1.isShowCurTargetSimple
@@ -6839,9 +8422,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.refreshCheckShowState = slot34
+slot27.refreshCheckShowState = slot42
 
-slot34 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = TipVisibilityHelper
 	slot3 = slot3.setHideFlag
@@ -6856,9 +8439,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot23.setHideFlag = slot34
+slot27.setHideFlag = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.isVisible = slot1
 	slot4 = slot0
@@ -6876,9 +8459,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.setIsVisible = slot34
+slot27.setIsVisible = slot42
 
-slot34 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setHideFlag
@@ -6894,9 +8477,9 @@ slot34 = function(slot0, slot1, slot2)
 
 end
 
-slot23.onPriorityBreak = slot34
+slot27.onPriorityBreak = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setHideFlag
@@ -6913,10 +8496,17 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.onFullScreenShowChange = slot34
+slot27.onFullScreenShowChange = slot42
 
-slot34 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopLeaveCountdown
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.leaveCountdownLoading = slot1
 	slot1 = BaseTipComponent
 	slot3 = slot1
 	slot1 = slot1.onDestroy
@@ -6936,7 +8526,7 @@ slot34 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 14-16, warpins: 1 ---
+	--- BLOCK #1 19-21, warpins: 1 ---
 	slot5 = questDetailsItemComs
 	slot6 = nil
 	slot5[slot4] = slot6
@@ -6945,7 +8535,7 @@ slot34 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-18, warpins: 2 ---
+	--- BLOCK #2 22-23, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4 in slot1, slot2, slot3
@@ -6953,7 +8543,7 @@ slot34 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 19-22, warpins: 1 ---
+	--- BLOCK #3 24-27, warpins: 1 ---
 	slot1 = next
 	slot2 = questTabItemComs
 	slot3 = nil
@@ -6962,7 +8552,7 @@ slot34 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 23-25, warpins: 1 ---
+	--- BLOCK #4 28-30, warpins: 1 ---
 	slot5 = questTabItemComs
 	slot6 = nil
 	slot5[slot4] = slot6
@@ -6971,7 +8561,7 @@ slot34 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 26-27, warpins: 2 ---
+	--- BLOCK #5 31-32, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	for slot4 in slot1, slot2, slot3
@@ -6979,7 +8569,7 @@ slot34 = function(slot0)
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 28-31, warpins: 1 ---
+	--- BLOCK #6 33-36, warpins: 1 ---
 	slot1 = next
 	slot2 = questTitleNewItemComs
 	slot3 = nil
@@ -6988,7 +8578,7 @@ slot34 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 32-34, warpins: 1 ---
+	--- BLOCK #7 37-39, warpins: 1 ---
 	slot5 = questTitleNewItemComs
 	slot6 = nil
 	slot5[slot4] = slot6
@@ -6997,7 +8587,7 @@ slot34 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-36, warpins: 2 ---
+	--- BLOCK #8 40-41, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	for slot4 in slot1, slot2, slot3
@@ -7005,7 +8595,7 @@ slot34 = function(slot0)
 	GO OUT TO BLOCK #9
 
 
-	--- BLOCK #9 37-40, warpins: 1 ---
+	--- BLOCK #9 42-45, warpins: 1 ---
 	slot1 = next
 	slot2 = trackQuestHintComs
 	slot3 = nil
@@ -7014,7 +8604,7 @@ slot34 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 41-43, warpins: 1 ---
+	--- BLOCK #10 46-48, warpins: 1 ---
 	slot5 = trackQuestHintComs
 	slot6 = nil
 	slot5[slot4] = slot6
@@ -7023,7 +8613,7 @@ slot34 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 44-45, warpins: 2 ---
+	--- BLOCK #11 49-50, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
 	for slot4 in slot1, slot2, slot3
@@ -7031,7 +8621,7 @@ slot34 = function(slot0)
 	GO OUT TO BLOCK #12
 
 
-	--- BLOCK #12 46-49, warpins: 1 ---
+	--- BLOCK #12 51-54, warpins: 1 ---
 	slot1 = next
 	slot2 = questIconComs
 	slot3 = nil
@@ -7040,7 +8630,7 @@ slot34 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 50-52, warpins: 1 ---
+	--- BLOCK #13 55-57, warpins: 1 ---
 	slot5 = questIconComs
 	slot6 = nil
 	slot5[slot4] = slot6
@@ -7050,7 +8640,7 @@ slot34 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 53-54, warpins: 2 ---
+	--- BLOCK #14 58-59, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot4 in slot1, slot2, slot3
@@ -7058,7 +8648,7 @@ slot34 = function(slot0)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 55-55, warpins: 1 ---
+	--- BLOCK #15 60-60, warpins: 1 ---
 	return
 	--- END OF BLOCK #15 ---
 
@@ -7066,9 +8656,9 @@ slot34 = function(slot0)
 
 end
 
-slot23.onDestroy = slot34
+slot27.onDestroy = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setHideFlag
@@ -7085,9 +8675,9 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.setForceHideFlag = slot34
+slot27.setForceHideFlag = slot42
 
-slot34 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.visibleMap
 	slot2 = slot2.visible
@@ -7142,10 +8732,10 @@ slot34 = function(slot0, slot1)
 
 end
 
-slot23.onBaseVisibleChanged = slot34
+slot27.onBaseVisibleChanged = slot42
 
-return slot23
---- END OF BLOCK #0 ---
+return slot27
+--- END OF BLOCK #4 ---
 
 
 

@@ -38,7 +38,7 @@ end
 slot2.findObjects = slot3
 
 slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-114, warpins: 1 ---
+	--- BLOCK #0 1-126, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
 	slot5 = "ObjectReference"
@@ -152,6 +152,18 @@ slot3 = function(slot0, slot1)
 	slot5 = "sectionCompleteUWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.sectionCompleteUWidget = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "textBgUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.textBgUWidget = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "completeTextBgUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.completeTextBgUWidget = slot2
 
 	return
 	--- END OF BLOCK #0 ---

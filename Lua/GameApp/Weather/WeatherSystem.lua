@@ -1,4 +1,4 @@
---- BLOCK #0 1-73, warpins: 1 ---
+--- BLOCK #0 1-77, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerConst"
 slot0 = slot0(slot2)
@@ -50,7 +50,7 @@ slot18 = slot8
 slot15 = slot15(slot17, slot18)
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = SystemBase
 	slot1 = slot1.onCtor
 	slot3 = slot0
@@ -61,6 +61,10 @@ slot16 = function(slot0)
 	slot0.sunWeatherId = slot1
 	slot1 = {}
 	slot0.todTimes = slot1
+	slot1 = nil
+	slot0.clientWeatherOverride = slot1
+	slot1 = nil
+	slot0.lastServerWeatherId = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -177,7 +181,7 @@ slot16 = function(slot0, slot1)
 		--- BLOCK #1 11-11, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #17
+		UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
 		--- BLOCK #2 12-20, warpins: 1 ---
@@ -193,11 +197,23 @@ slot16 = function(slot0, slot1)
 		if slot1 > slot2 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #13
+		JUMP TO BLOCK #15
 		end
 
 
-		--- BLOCK #3 21-34, warpins: 1 ---
+		--- BLOCK #3 21-24, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.clientWeatherOverride
+		--- END OF BLOCK #3 ---
+
+		if slot2 == nil then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 25-32, warpins: 1 ---
 		slot2 = appFacade
 		slot2 = slot2.pipelineManager
 		slot4 = slot2
@@ -208,27 +224,33 @@ slot16 = function(slot0, slot1)
 
 		slot2(slot4, slot5)
 
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 33-38, warpins: 2 ---
 		slot2 = pairs
 		slot4 = pg
 		slot4 = slot4.me
 		slot4 = slot4.meteorDict
 		slot2, slot3, slot4 = slot2(slot4)
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #5 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-		--- BLOCK #4 35-36, warpins: 1 ---
-		--- END OF BLOCK #4 ---
+		--- BLOCK #6 39-40, warpins: 1 ---
+		--- END OF BLOCK #6 ---
 
 		if slot6 == 1 then
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #7
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #5 37-42, warpins: 1 ---
+		--- BLOCK #7 41-46, warpins: 1 ---
 		slot7 = pg
 		slot7 = slot7.me
 		slot9 = slot7
@@ -237,20 +259,20 @@ slot16 = function(slot0, slot1)
 
 		slot7(slot9, slot10)
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #7 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #6 43-44, warpins: 3 ---
-		--- END OF BLOCK #6 ---
+		--- BLOCK #8 47-48, warpins: 3 ---
+		--- END OF BLOCK #8 ---
 
 		for slot5, slot6 in slot2, slot3, slot4
-		LOOP BLOCK #4
-		GO OUT TO BLOCK #7
+		LOOP BLOCK #6
+		GO OUT TO BLOCK #9
 
 
-		--- BLOCK #7 45-53, warpins: 1 ---
+		--- BLOCK #9 49-57, warpins: 1 ---
 		slot2 = pg
 		slot2 = slot2.me
 		slot4 = slot2
@@ -258,16 +280,16 @@ slot16 = function(slot0, slot1)
 		slot5 = slot0
 		slot2 = slot2(slot4, slot5)
 		slot3 = 0
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #9 ---
 
 		if slot2 > slot3 then
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #10
 		else
-		JUMP TO BLOCK #9
+		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #8 54-70, warpins: 1 ---
+		--- BLOCK #10 58-74, warpins: 1 ---
 		slot3 = appFacade
 		slot3 = slot3.pipelineManager
 		slot5 = slot3
@@ -290,12 +312,12 @@ slot16 = function(slot0, slot1)
 
 		slot3(slot5)
 
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #10 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #10
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-		--- BLOCK #9 71-76, warpins: 1 ---
+		--- BLOCK #11 75-80, warpins: 1 ---
 		slot3 = appFacade
 		slot3 = slot3.pipelineManager
 		slot5 = slot3
@@ -304,12 +326,12 @@ slot16 = function(slot0, slot1)
 
 		slot3(slot5, slot6)
 
-		--- END OF BLOCK #9 ---
+		--- END OF BLOCK #11 ---
 
-		FLOW; TARGET BLOCK #10
+		FLOW; TARGET BLOCK #12
 
 
-		--- BLOCK #10 77-88, warpins: 2 ---
+		--- BLOCK #12 81-92, warpins: 2 ---
 		slot3 = facade
 		slot5 = slot3
 		slot3 = slot3.SendMessageCommand
@@ -322,16 +344,16 @@ slot16 = function(slot0, slot1)
 
 		slot3 = self
 		slot3 = slot3.blockTimer
-		--- END OF BLOCK #10 ---
+		--- END OF BLOCK #12 ---
 
 		slot3 = if slot3 then
-		JUMP TO BLOCK #11
+		JUMP TO BLOCK #13
 		else
-		JUMP TO BLOCK #12
+		JUMP TO BLOCK #14
 		end
 
 
-		--- BLOCK #11 89-93, warpins: 1 ---
+		--- BLOCK #13 93-97, warpins: 1 ---
 		slot3 = TimerManager
 		slot3 = slot3.removeTimer
 		slot5 = self
@@ -339,12 +361,12 @@ slot16 = function(slot0, slot1)
 
 		slot3(slot5)
 
-		--- END OF BLOCK #11 ---
+		--- END OF BLOCK #13 ---
 
-		FLOW; TARGET BLOCK #12
+		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #12 94-101, warpins: 2 ---
+		--- BLOCK #14 98-105, warpins: 2 ---
 		slot3 = self
 		slot4 = TimerManager
 		slot4 = slot4.addRepeatTimer
@@ -365,7 +387,7 @@ slot16 = function(slot0, slot1)
 			slot1 = if slot1 then
 			JUMP TO BLOCK #1
 			else
-			JUMP TO BLOCK #8
+			JUMP TO BLOCK #10
 			end
 
 
@@ -377,7 +399,7 @@ slot16 = function(slot0, slot1)
 			if slot1 ~= slot0 then
 			JUMP TO BLOCK #2
 			else
-			JUMP TO BLOCK #8
+			JUMP TO BLOCK #10
 			end
 
 
@@ -389,7 +411,7 @@ slot16 = function(slot0, slot1)
 			slot1 = if slot1 then
 			JUMP TO BLOCK #3
 			else
-			JUMP TO BLOCK #8
+			JUMP TO BLOCK #10
 			end
 
 
@@ -457,11 +479,23 @@ slot16 = function(slot0, slot1)
 			if slot3 ~= slot4 then
 			JUMP TO BLOCK #7
 			else
-			JUMP TO BLOCK #8
+			JUMP TO BLOCK #10
 			end
 
 
-			--- BLOCK #7 55-84, warpins: 2 ---
+			--- BLOCK #7 55-58, warpins: 2 ---
+			slot5 = self
+			slot5 = slot5.clientWeatherOverride
+			--- END OF BLOCK #7 ---
+
+			if slot5 == nil then
+			JUMP TO BLOCK #8
+			else
+			JUMP TO BLOCK #9
+			end
+
+
+			--- BLOCK #8 59-66, warpins: 1 ---
 			slot5 = appFacade
 			slot5 = slot5.pipelineManager
 			slot7 = slot5
@@ -472,6 +506,12 @@ slot16 = function(slot0, slot1)
 
 			slot5(slot7, slot8)
 
+			--- END OF BLOCK #8 ---
+
+			FLOW; TARGET BLOCK #9
+
+
+			--- BLOCK #9 67-88, warpins: 2 ---
 			slot5 = facade
 			slot7 = slot5
 			slot5 = slot5.SendMessageCommand
@@ -498,17 +538,17 @@ slot16 = function(slot0, slot1)
 
 			slot6(slot8, slot9, slot10)
 
-			--- END OF BLOCK #7 ---
+			--- END OF BLOCK #9 ---
 
-			FLOW; TARGET BLOCK #8
+			FLOW; TARGET BLOCK #10
 
 
-			--- BLOCK #8 85-87, warpins: 5 ---
+			--- BLOCK #10 89-91, warpins: 5 ---
 			slot1 = self
 			slot1.lastBlockId = slot0
 
 			return
-			--- END OF BLOCK #8 ---
+			--- END OF BLOCK #10 ---
 
 
 
@@ -516,12 +556,12 @@ slot16 = function(slot0, slot1)
 
 		slot4 = slot4(slot6, slot7)
 		slot3.blockTimer = slot4
-		--- END OF BLOCK #12 ---
+		--- END OF BLOCK #14 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #16
+		UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-		--- BLOCK #13 102-120, warpins: 1 ---
+		--- BLOCK #15 106-124, warpins: 1 ---
 		slot2 = appFacade
 		slot2 = slot2.pipelineManager
 		slot4 = slot2
@@ -541,16 +581,16 @@ slot16 = function(slot0, slot1)
 		slot6 = sceneId
 		MULTRES = slot4(slot6)
 		slot2 = slot2(MULTRES)
-		--- END OF BLOCK #13 ---
+		--- END OF BLOCK #15 ---
 
 		slot2 = if slot2 then
-		JUMP TO BLOCK #14
+		JUMP TO BLOCK #16
 		else
-		JUMP TO BLOCK #15
+		JUMP TO BLOCK #17
 		end
 
 
-		--- BLOCK #14 121-127, warpins: 1 ---
+		--- BLOCK #16 125-131, warpins: 1 ---
 		slot2 = appFacade
 		slot2 = slot2.pipelineManager
 		slot4 = slot2
@@ -559,12 +599,12 @@ slot16 = function(slot0, slot1)
 
 		slot2(slot4, slot5)
 
-		--- END OF BLOCK #14 ---
+		--- END OF BLOCK #16 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #16
+		UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-		--- BLOCK #15 128-133, warpins: 1 ---
+		--- BLOCK #17 132-137, warpins: 1 ---
 		slot2 = appFacade
 		slot2 = slot2.pipelineManager
 		slot4 = slot2
@@ -573,21 +613,21 @@ slot16 = function(slot0, slot1)
 
 		slot2(slot4, slot5)
 
-		--- END OF BLOCK #15 ---
-
-		FLOW; TARGET BLOCK #16
-
-
-		--- BLOCK #16 134-134, warpins: 3 ---
-		return
-		--- END OF BLOCK #16 ---
-
-		FLOW; TARGET BLOCK #17
-
-
-		--- BLOCK #17 135-135, warpins: 2 ---
-		return
 		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #18
+
+
+		--- BLOCK #18 138-138, warpins: 3 ---
+		return
+		--- END OF BLOCK #18 ---
+
+		FLOW; TARGET BLOCK #19
+
+
+		--- BLOCK #19 139-139, warpins: 2 ---
+		return
+		--- END OF BLOCK #19 ---
 
 
 
@@ -604,6 +644,319 @@ slot16 = function(slot0, slot1)
 end
 
 slot15.refreshWeather = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = WeatherData
+	slot2 = slot2[slot1]
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot3 = slot0.clientWeatherOverride
+	--- END OF BLOCK #2 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #3 9-13, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.map
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-21, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.map
+	slot5 = slot3
+	slot3 = slot3.getCurBlockAreaId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 2 ---
+	slot3 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-26, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.me
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 27-34, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.getWeatherByAreaId
+	slot7 = slot3
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #7 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 35-35, warpins: 2 ---
+	slot4 = nil
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 36-37, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 38-40, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #10 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 41-41, warpins: 1 ---
+	slot0.lastServerWeatherId = slot4
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 42-49, warpins: 4 ---
+	slot0.clientWeatherOverride = slot1
+	slot3 = appFacade
+	slot3 = slot3.pipelineManager
+	slot5 = slot3
+	slot3 = slot3.TrySetWeatherProfile
+	slot6 = slot2.weatherPrefab
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot15.setClientWeather = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.clientWeatherOverride
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot1 = nil
+	slot0.clientWeatherOverride = slot1
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.map
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-19, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.map
+	slot3 = slot1
+	slot1 = slot1.getCurBlockAreaId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-20, warpins: 2 ---
+	slot1 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-24, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-32, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getWeatherByAreaId
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 33-33, warpins: 2 ---
+	slot2 = nil
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 34-36, warpins: 2 ---
+	slot3 = slot0.sunWeatherId
+	--- END OF BLOCK #8 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 37-39, warpins: 1 ---
+	slot4 = 0
+	--- END OF BLOCK #9 ---
+
+	if slot2 > slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 40-40, warpins: 1 ---
+	slot3 = slot2
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 41-44, warpins: 3 ---
+	slot4 = WeatherData
+	slot4 = slot4[slot3]
+	--- END OF BLOCK #11 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 45-50, warpins: 1 ---
+	slot5 = appFacade
+	slot5 = slot5.pipelineManager
+	slot7 = slot5
+	slot5 = slot5.TrySetWeatherProfile
+	slot8 = slot4.weatherPrefab
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 51-53, warpins: 2 ---
+	slot5 = nil
+	slot0.lastServerWeatherId = slot5
+
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot15.resetClientWeather = slot16
 
 slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---

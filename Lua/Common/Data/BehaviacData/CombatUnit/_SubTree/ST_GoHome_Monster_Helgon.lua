@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -29,8 +29,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Selector"
+	class = "Selector",
+	id = "2"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -39,8 +39,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "4",
-	class = "Sequence"
+	class = "Sequence",
+	id = "4"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -49,8 +49,8 @@ slot10.attachments = slot11
 slot11 = {}
 slot12 = {}
 slot13 = {
-	id = "6",
-	class = "Condition"
+	class = "Condition",
+	id = "6"
 }
 slot14 = {}
 slot15 = {
@@ -84,8 +84,8 @@ slot12.node = slot13
 slot11[1] = slot12
 slot12 = {}
 slot13 = {
-	id = "7",
-	class = "Action"
+	class = "Action",
+	id = "7"
 }
 slot14 = {}
 slot15 = {}
@@ -114,8 +114,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	id = "5",
-	class = "True"
+	class = "True",
+	id = "5"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -130,8 +130,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "Action"
+	class = "Action",
+	id = "3"
 }
 slot8 = {}
 slot9 = {}

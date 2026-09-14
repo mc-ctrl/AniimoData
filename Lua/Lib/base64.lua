@@ -1,4 +1,4 @@
---- BLOCK #0 1-20, warpins: 1 ---
+--- BLOCK #0 1-22, warpins: 1 ---
 slot0 = {}
 
 slot1 = function(slot0, slot1, slot2)
@@ -258,6 +258,190 @@ slot4 = string
 slot4 = slot4.char
 slot5 = table
 slot5 = slot5.concat
+
+slot6 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "string" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot2 = #slot0
+	slot3 = 4
+	--- END OF BLOCK #1 ---
+
+	if slot2 >= slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot2 = #slot0
+	slot2 = slot2 % 4
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-15, warpins: 3 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-17, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-18, warpins: 1 ---
+	slot1 = DEFAULT_DECODER
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-24, warpins: 2 ---
+	slot2 = #slot0
+	slot3 = 0
+	slot4 = 1
+	slot5 = slot2
+	slot6 = 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-31, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.byte
+	slot11 = slot7
+	slot8 = slot8(slot10, slot11)
+	slot8 = slot1[slot8]
+	--- END OF BLOCK #7 ---
+
+	if slot8 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-34, warpins: 1 ---
+	slot9 = false
+
+	return slot9
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #9 35-36, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	if slot8 == 64 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 37-40, warpins: 1 ---
+	slot3 = slot3 + 1
+	slot9 = slot2 - 1
+	--- END OF BLOCK #10 ---
+
+	if slot7 >= slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 41-43, warpins: 1 ---
+	slot9 = 2
+	--- END OF BLOCK #11 ---
+
+	if slot3 > slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 44-46, warpins: 2 ---
+	slot9 = false
+
+	return slot9
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #13 47-49, warpins: 1 ---
+	slot9 = 0
+	--- END OF BLOCK #13 ---
+
+	if slot3 > slot9 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 50-51, warpins: 1 ---
+	slot9 = false
+
+	return slot9
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 52-52, warpins: 5 ---
+	--- END OF BLOCK #15 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #16
+
+	--- BLOCK #16 53-54, warpins: 1 ---
+	slot4 = true
+
+	return slot4
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot0.isvalid = slot6
 
 slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---

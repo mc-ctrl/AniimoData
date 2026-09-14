@@ -288,51 +288,16 @@ slot9 = function(slot0)
 	slot1 = slot1.inventoryUList
 
 	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-38, warpins: 1 ---
+		--- BLOCK #0 1-9, warpins: 1 ---
 		slot2 = self
-		slot2 = slot2.view
-		slot2 = slot2.propPanelUComponent
+		slot2 = slot2.ctrl
 		slot4 = slot2
-		slot2 = slot2.TryChangePage
-		slot5 = "isEmpty"
-		slot6 = 0
-
-		slot2(slot4, slot5, slot6)
-
-		slot2 = LuaUIUtils
-		slot2 = slot2.refreshItemInfo
-		slot4 = self
-		slot4 = slot4.view
-		slot4 = slot4.propInfoUComponent
-		slot5 = {
-			fromParamCount = true
-		}
-		slot6 = slot1.itemId
-		slot5.itemId = slot6
+		slot2 = slot2.showItemDetail
+		slot5 = slot1
 		slot6 = slot1.count
-		slot5.itemCount = slot6
+		slot7 = slot1.count
 
-		slot2(slot4, slot5)
-
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot3 = slot1.currencyItemId
-		slot2.currencyItemId = slot3
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot3 = slot1.currencyNum
-		slot2.currencyNum = slot3
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot3 = slot1.materialId
-		slot2.materialId = slot3
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot4 = slot2
-		slot2 = slot2.refreshSelectorState
-		slot5 = slot1.count
-
-		slot2(slot4, slot5)
+		slot2(slot4, slot5, slot6, slot7)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -370,7 +335,14 @@ end
 slot8.onDestroy = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.inventoryUList
+	slot3 = slot1
+	slot1 = slot1.DeselectAll
+
+	slot1(slot3)
+
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.getInventoryList
@@ -392,7 +364,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 15-40, warpins: 1 ---
+	--- BLOCK #1 20-49, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
 	slot3 = slot1
@@ -424,6 +396,12 @@ slot9 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.setItemInfoEmpty
+
+	slot1(slot3)
+
 	return
 
 	--- END OF BLOCK #1 ---
@@ -431,7 +409,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 41-61, warpins: 2 ---
+	--- BLOCK #2 50-67, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
 	slot3 = slot1
@@ -441,14 +419,11 @@ slot9 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = slot0.view
-	slot1 = slot1.propPanelUComponent
+	slot1 = slot0.ctrl
 	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "isEmpty"
-	slot5 = 1
+	slot1 = slot1.setItemInfoEmpty
 
-	slot1(slot3, slot4, slot5)
+	slot1(slot3)
 
 	slot1 = slot0.view
 	slot1 = slot1.inventoryUList
@@ -670,22 +645,19 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 78-84, warpins: 1 ---
-	slot5 = slot0.view
-	slot5 = slot5.propPanelUComponent
+	--- BLOCK #13 78-81, warpins: 1 ---
+	slot5 = slot0.ctrl
 	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "isEmpty"
-	slot9 = 1
+	slot5 = slot5.setItemInfoEmpty
 
-	slot5(slot7, slot8, slot9)
+	slot5(slot7)
 
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 85-85, warpins: 2 ---
+	--- BLOCK #14 82-82, warpins: 2 ---
 	return
 	--- END OF BLOCK #14 ---
 

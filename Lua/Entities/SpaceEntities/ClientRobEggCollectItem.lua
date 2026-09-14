@@ -1,4 +1,4 @@
---- BLOCK #0 1-34, warpins: 1 ---
+--- BLOCK #0 1-44, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -6,63 +6,34 @@ slot1 = require
 slot3 = "Entities.SpaceEntities.ClientCollectItem"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
+slot4 = "Entities.Utils.EModelUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Entities.Utils.EModelUtils"
+slot5 = "Const.ClientConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.ClientConst"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
-slot5 = require
-slot7 = "Common.Const.Const"
-slot5 = slot5(slot7)
-slot6 = CS
-slot6 = slot6.FunPlus
-slot6 = slot6.WorldX
-slot6 = slot6.Entities
-slot6 = slot6.Components
-slot6 = slot6.PhysxComponent
-slot7 = typeof
-slot8 = slot0.Class
-slot10 = "ClientRobEggCollectItem"
-slot11 = slot1
-slot8 = slot8(slot10, slot11)
-slot9 = {}
-slot9[1] = slot2
-slot10 = EnableBotTest
---- END OF BLOCK #0 ---
+slot5 = CS
+slot5 = slot5.FunPlus
+slot5 = slot5.WorldX
+slot5 = slot5.Entities
+slot5 = slot5.Components
+slot5 = slot5.PhysxComponent
+slot6 = typeof
+slot7 = slot0.Class
+slot9 = "ClientRobEggCollectItem"
+slot10 = slot1
+slot7 = slot7(slot9, slot10)
+slot8 = bit
+slot9 = 2
+slot10 = 10
+slot11 = 0.05
+slot12 = slot4.ROB_EGG_LOOT_TYPE
+slot12 = slot12.EGG_NEST
+slot13 = nil
 
-slot10 = if slot10 then
-JUMP TO BLOCK #1
-else
-JUMP TO BLOCK #2
-end
-
-
---- BLOCK #1 35-35, warpins: 1 ---
-slot9 = {}
---- END OF BLOCK #1 ---
-
-FLOW; TARGET BLOCK #2
-
-
---- BLOCK #2 36-57, warpins: 2 ---
-slot10 = slot0.AddComponents
-slot12 = slot8
-slot13 = slot9
-
-slot10(slot12, slot13)
-
-slot10 = bit
-slot11 = 2
-slot12 = 10
-slot13 = 0.05
-slot14 = slot5.ROB_EGG_LOOT_TYPE
-slot14 = slot14.EGG_NEST
-slot15 = nil
-
-slot16 = function()
+slot14 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = snapDownDir
 	--- END OF BLOCK #0 ---
@@ -97,9 +68,9 @@ slot16 = function()
 
 end
 
-slot17 = nil
+slot15 = nil
 
-slot18 = function()
+slot16 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = staticSurfaceMask
 	--- END OF BLOCK #0 ---
@@ -146,7 +117,7 @@ slot18 = function()
 
 end
 
-slot19 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = IsNil
 	slot3 = slot0
@@ -269,7 +240,7 @@ slot19 = function(slot0)
 
 end
 
-slot20 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = getOwnerEntity
 	slot3 = slot0
@@ -328,7 +299,7 @@ slot20 = function(slot0)
 
 end
 
-slot21 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.snapToStaticSurface
@@ -349,24 +320,22 @@ slot21 = function(slot0)
 
 end
 
-slot8.onPrefabModelLoaded = slot21
+slot7.onPrefabModelLoaded = slot19
 
-slot21 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+slot19 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -374,7 +343,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-11, warpins: 2 ---
+	--- BLOCK #2 5-9, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getPosition
 	slot1 = slot1(slot3)
@@ -388,7 +357,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-12, warpins: 1 ---
+	--- BLOCK #3 10-10, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -396,7 +365,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-39, warpins: 2 ---
+	--- BLOCK #4 11-37, warpins: 2 ---
 	slot2 = Vector3
 	slot2 = slot2.New
 	slot4 = slot1.x
@@ -431,7 +400,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #5 40-42, warpins: 1 ---
+	--- BLOCK #5 38-40, warpins: 1 ---
 	slot6 = 0
 
 	--- END OF BLOCK #5 ---
@@ -443,7 +412,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #6 43-43, warpins: 2 ---
+	--- BLOCK #6 41-41, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #6 ---
@@ -451,7 +420,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 44-48, warpins: 2 ---
+	--- BLOCK #7 42-46, warpins: 2 ---
 	slot6, slot7 = nil
 	slot8 = 0
 	slot9 = slot5 - 1
@@ -461,7 +430,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 49-54, warpins: 2 ---
+	--- BLOCK #8 47-52, warpins: 2 ---
 	slot12 = slot4[slot11]
 	slot13 = slot12.colliderHandle
 	slot14 = slot12.distance
@@ -475,7 +444,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #9 55-59, warpins: 1 ---
+	--- BLOCK #9 53-57, warpins: 1 ---
 	slot14 = isValidSnapSurface
 	slot16 = slot13.collider
 	slot14 = slot14(slot16)
@@ -488,7 +457,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #10 60-62, warpins: 1 ---
+	--- BLOCK #10 58-60, warpins: 1 ---
 	slot14 = slot12.distance
 	--- END OF BLOCK #10 ---
 
@@ -499,7 +468,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #11 63-64, warpins: 1 ---
+	--- BLOCK #11 61-62, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
 	if slot14 < slot7 then
@@ -509,7 +478,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #12 65-67, warpins: 2 ---
+	--- BLOCK #12 63-65, warpins: 2 ---
 	slot7 = slot14
 	slot15 = slot12.point
 	slot6 = slot15.y
@@ -518,14 +487,14 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 68-68, warpins: 4 ---
+	--- BLOCK #13 66-66, warpins: 4 ---
 	--- END OF BLOCK #13 ---
 
 	for slot11=slot8, slot9, slot10
 	LOOP BLOCK #8
 	GO OUT TO BLOCK #14
 
-	--- BLOCK #14 69-70, warpins: 1 ---
+	--- BLOCK #14 67-68, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
 	slot6 = if slot6 then
@@ -535,7 +504,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #15 71-80, warpins: 1 ---
+	--- BLOCK #15 69-78, warpins: 1 ---
 	slot8 = Vector3
 	slot8 = slot8.Clone
 	slot10 = slot1
@@ -553,7 +522,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 81-81, warpins: 2 ---
+	--- BLOCK #16 79-79, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -561,10 +530,10 @@ slot21 = function(slot0)
 
 end
 
-slot8.snapToStaticSurface = slot21
+slot7.snapToStaticSurface = slot19
 
-return slot8
---- END OF BLOCK #2 ---
+return slot7
+--- END OF BLOCK #0 ---
 
 
 

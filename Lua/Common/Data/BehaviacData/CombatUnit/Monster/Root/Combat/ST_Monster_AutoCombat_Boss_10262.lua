@@ -1,4 +1,4 @@
---- BLOCK #0 1-4279, warpins: 1 ---
+--- BLOCK #0 1-4375, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,75 +7,75 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
+	version = 87,
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10262",
 	agenttype = "PuppetAgent",
-	version = 86
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tSkill_ComboAttack",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_ComboAttack",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tSkill_12620130",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_12620130",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tSkill_12620200",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_12620200",
+	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tSkill_12620400",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_12620400",
+	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tSkill_12620500",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_12620500",
+	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	name = "skillStopDist",
-	const = 0,
 	type = "float",
-	value = "0"
+	value = "0",
+	name = "skillStopDist",
+	const = 0
 }
 slot4[6] = slot5
 slot5 = {
-	name = "tPlayer",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tPlayer",
+	const = 0
 }
 slot4[7] = slot5
 slot5 = {
-	name = "tSkill_12620210",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_12620210",
+	const = 0
 }
 slot4[8] = slot5
 slot5 = {
-	name = "tSkill_12620270",
-	const = 0,
 	type = "int",
-	value = "0"
+	value = "0",
+	name = "tSkill_12620270",
+	const = 0
 }
 slot4[9] = slot5
 slot3.pars = slot4
@@ -605,6 +605,41 @@ slot23 = {}
 slot22.children = slot23
 slot21.node = slot22
 slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	id = "441",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "NotEqual"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "checkIsInBreakRecover"
+}
+slot26 = {}
+slot27 = {
+	field = "selfId"
+}
+slot26[1] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = true
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[3] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[1] = slot18
@@ -2166,6 +2201,41 @@ slot59 = {}
 slot58.children = slot59
 slot57.node = slot58
 slot56[2] = slot57
+slot57 = {}
+slot58 = {
+	id = "442",
+	class = "Condition"
+}
+slot59 = {}
+slot60 = {
+	Operator = "NotEqual"
+}
+slot59[1] = slot60
+slot60 = {}
+slot61 = {
+	func = "checkIsInBreakRecover"
+}
+slot62 = {}
+slot63 = {
+	field = "selfId"
+}
+slot62[1] = slot63
+slot61.params = slot62
+slot60.Opl = slot61
+slot59[2] = slot60
+slot60 = {}
+slot61 = {
+	const = true
+}
+slot60.Opr = slot61
+slot59[3] = slot60
+slot58.properties = slot59
+slot59 = {}
+slot58.attachments = slot59
+slot59 = {}
+slot58.children = slot59
+slot57.node = slot58
+slot56[3] = slot57
 slot55.children = slot56
 slot54.node = slot55
 slot53[1] = slot54
@@ -2640,6 +2710,41 @@ slot59 = {}
 slot58.children = slot59
 slot57.node = slot58
 slot56[2] = slot57
+slot57 = {}
+slot58 = {
+	id = "445",
+	class = "Condition"
+}
+slot59 = {}
+slot60 = {
+	Operator = "NotEqual"
+}
+slot59[1] = slot60
+slot60 = {}
+slot61 = {
+	func = "checkIsInBreakRecover"
+}
+slot62 = {}
+slot63 = {
+	field = "selfId"
+}
+slot62[1] = slot63
+slot61.params = slot62
+slot60.Opl = slot61
+slot59[2] = slot60
+slot60 = {}
+slot61 = {
+	const = true
+}
+slot60.Opr = slot61
+slot59[3] = slot60
+slot58.properties = slot59
+slot59 = {}
+slot58.attachments = slot59
+slot59 = {}
+slot58.children = slot59
+slot57.node = slot58
+slot56[3] = slot57
 slot55.children = slot56
 slot54.node = slot55
 slot53[1] = slot54
@@ -5099,6 +5204,41 @@ slot54.node = slot55
 slot53[1] = slot54
 slot54 = {}
 slot55 = {
+	id = "443",
+	class = "Condition"
+}
+slot56 = {}
+slot57 = {
+	Operator = "NotEqual"
+}
+slot56[1] = slot57
+slot57 = {}
+slot58 = {
+	func = "checkIsInBreakRecover"
+}
+slot59 = {}
+slot60 = {
+	field = "selfId"
+}
+slot59[1] = slot60
+slot58.params = slot59
+slot57.Opl = slot58
+slot56[2] = slot57
+slot57 = {}
+slot58 = {
+	const = true
+}
+slot57.Opr = slot58
+slot56[3] = slot57
+slot55.properties = slot56
+slot56 = {}
+slot55.attachments = slot56
+slot56 = {}
+slot55.children = slot56
+slot54.node = slot55
+slot53[2] = slot54
+slot54 = {}
+slot55 = {
 	id = "384",
 	class = "IfElse"
 }
@@ -5287,7 +5427,7 @@ slot57.node = slot58
 slot56[3] = slot57
 slot55.children = slot56
 slot54.node = slot55
-slot53[2] = slot54
+slot53[3] = slot54
 slot54 = {}
 slot55 = {
 	id = "388",
@@ -5341,7 +5481,7 @@ slot55.attachments = slot56
 slot56 = {}
 slot55.children = slot56
 slot54.node = slot55
-slot53[3] = slot54
+slot53[4] = slot54
 slot54 = {}
 slot55 = {
 	id = "412",
@@ -5476,7 +5616,7 @@ slot57.node = slot58
 slot56[2] = slot57
 slot55.children = slot56
 slot54.node = slot55
-slot53[4] = slot54
+slot53[5] = slot54
 slot52.children = slot53
 slot51.node = slot52
 slot50[1] = slot51

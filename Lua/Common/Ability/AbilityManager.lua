@@ -1,4 +1,4 @@
---- BLOCK #0 1-78, warpins: 1 ---
+--- BLOCK #0 1-81, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -71,33 +71,79 @@ slot22 = slot22(slot24)
 slot23 = require
 slot25 = "Data.attribute_id_data"
 slot23 = slot23(slot25)
-slot24 = pg
-slot25 = ToBool
-slot26 = 100
-slot27 = slot24.component
+slot24 = require
+slot26 = "Common.Utils.Utils"
+slot24 = slot24(slot26)
+slot25 = pg
+slot26 = ToBool
+slot27 = 100
+slot28 = slot25.component
 --- END OF BLOCK #0 ---
 
-if slot27 == "game" then
+if slot28 == "game" then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 79-79, warpins: 1 ---
-slot26 = 1000
+--- BLOCK #1 82-82, warpins: 1 ---
+slot27 = 0
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 80-136, warpins: 2 ---
-slot27 = slot2.LiteClass
-slot29 = "AbilityManager"
-slot27 = slot27(slot29)
+--- BLOCK #2 83-141, warpins: 2 ---
+slot28 = slot2.LiteClass
+slot30 = "AbilityManager"
+slot28 = slot28(slot30)
 
-slot28 = function(slot0)
-	--- BLOCK #0 1-176, warpins: 1 ---
+slot29 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = slot1.constCasterInfo
+	slot3 = nil
+	slot1.constCasterInfo = slot3
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-14, warpins: 1 ---
+	slot3 = CombatCasterInfo
+	slot3 = slot3.convert
+	slot5 = slot2
+
+	slot3(slot5)
+
+	slot3 = slot0.constCasterInfoPool
+	slot5 = slot3
+	slot3 = slot3.returnObject
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-15, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot28.returnTimelineConstCasterInfo = slot29
+
+slot29 = function(slot0)
+	--- BLOCK #0 1-177, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clear
 
@@ -110,6 +156,43 @@ slot28 = function(slot0)
 	slot1 = slot0.init
 
 	slot1(slot3)
+
+	slot1 = ObjectPool
+	slot1 = slot1()
+	slot0.constCasterInfoPool = slot1
+	slot1 = slot0.constCasterInfoPool
+	slot3 = slot1
+	slot1 = slot1.setup
+	slot4 = MAX_CACHE_CNT
+
+	slot5 = function()
+		--- BLOCK #0 1-2, warpins: 1 ---
+		slot0 = CombatCasterInfo
+
+		return slot0()
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6 = nil
+
+	slot7 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.clear
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot1 = ObjectPool
 	slot1 = slot1()
@@ -134,7 +217,14 @@ slot28 = function(slot0)
 	slot6 = nil
 
 	slot7 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.returnTimelineConstCasterInfo
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
 		slot1 = ActionTimelineParams
 		slot1 = slot1.CombatActionTimelineParam
 		slot1 = slot1.ctor
@@ -174,48 +264,17 @@ slot28 = function(slot0)
 	slot6 = nil
 
 	slot7 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.returnTimelineConstCasterInfo
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
 		slot1 = ActionTimelineParams
 		slot1 = slot1.HitActionTimelineParam
 		slot1 = slot1.ctor
-		slot3 = slot0
-
-		slot1(slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
-
-	slot1 = ObjectPool
-	slot1 = slot1()
-	slot0.constCasterInfoPool = slot1
-	slot1 = slot0.constCasterInfoPool
-	slot3 = slot1
-	slot1 = slot1.setup
-	slot4 = MAX_CACHE_CNT
-
-	slot5 = function()
-		--- BLOCK #0 1-2, warpins: 1 ---
-		slot0 = CombatCasterInfo
-
-		return slot0()
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot6 = nil
-
-	slot7 = function(slot0)
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot1 = Lume
-		slot1 = slot1.clear
 		slot3 = slot0
 
 		slot1(slot3)
@@ -647,9 +706,9 @@ slot28 = function(slot0)
 
 end
 
-slot27.ctor = slot28
+slot28.ctor = slot29
 
-slot28 = function(slot0, slot1, slot2, slot3)
+slot29 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.curveCache
 	slot4 = slot4[slot2]
@@ -729,9 +788,9 @@ slot28 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.getCurve = slot28
+slot28.getCurve = slot29
 
-slot28 = function(slot0, slot1, slot2, slot3)
+slot29 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.buffCurveCache
 	slot4 = slot4[slot2]
@@ -811,9 +870,9 @@ slot28 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.getBuffCurve = slot28
+slot28.getBuffCurve = slot29
 
-slot28 = function(slot0, slot1, slot2, slot3)
+slot29 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.levelArrayCache
 	slot4 = slot4[slot2]
@@ -893,9 +952,9 @@ slot28 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.getLevelArray = slot28
+slot28.getLevelArray = slot29
 
-slot28 = function(slot0, slot1, slot2, slot3)
+slot29 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.buffLevelArrayCache
 	slot4 = slot4[slot2]
@@ -975,9 +1034,9 @@ slot28 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.getBuffLevelArray = slot28
+slot28.getBuffLevelArray = slot29
 
-slot28 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clear
@@ -991,10 +1050,10 @@ slot28 = function(slot0)
 
 end
 
-slot27.init = slot28
+slot28.init = slot29
 
-slot28 = function(slot0)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot29 = function(slot0)
+	--- BLOCK #0 1-29, warpins: 1 ---
 	slot1 = {}
 	slot0.levelArrayCache = slot1
 	slot1 = {}
@@ -1021,15 +1080,14 @@ slot28 = function(slot0)
 	slot0.attributeRangeMap = slot1
 	slot1 = 1
 	slot2 = AttributeConst
-	slot2 = slot2.GROUP_BASE_SINGLE_PROCESS_BEGIN
-	slot2 = slot2 - 1
+	slot2 = slot2.GROUP_END
 	slot3 = 1
 	--- END OF BLOCK #0 ---
 
 	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 31-37, warpins: 2 ---
+	--- BLOCK #1 30-36, warpins: 2 ---
 	slot5 = AttributeData
 	slot6 = AttributeConst
 	slot6 = slot6.ID2NAME
@@ -1044,7 +1102,7 @@ slot28 = function(slot0)
 	end
 
 
-	--- BLOCK #2 38-40, warpins: 1 ---
+	--- BLOCK #2 37-39, warpins: 1 ---
 	slot6 = slot5.min
 	--- END OF BLOCK #2 ---
 
@@ -1055,14 +1113,14 @@ slot28 = function(slot0)
 	end
 
 
-	--- BLOCK #3 41-41, warpins: 2 ---
+	--- BLOCK #3 40-40, warpins: 2 ---
 	slot6 = 0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 42-43, warpins: 2 ---
+	--- BLOCK #4 41-42, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	slot5 = if slot5 then
@@ -1072,7 +1130,7 @@ slot28 = function(slot0)
 	end
 
 
-	--- BLOCK #5 44-46, warpins: 1 ---
+	--- BLOCK #5 43-45, warpins: 1 ---
 	slot7 = slot5.max
 	--- END OF BLOCK #5 ---
 
@@ -1083,7 +1141,7 @@ slot28 = function(slot0)
 	end
 
 
-	--- BLOCK #6 47-48, warpins: 2 ---
+	--- BLOCK #6 46-47, warpins: 2 ---
 	slot7 = math
 	slot7 = slot7.maxInt
 	--- END OF BLOCK #6 ---
@@ -1091,7 +1149,7 @@ slot28 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 49-54, warpins: 2 ---
+	--- BLOCK #7 48-53, warpins: 2 ---
 	slot8 = slot0.attributeRangeMap
 	slot9 = {}
 	slot9[1] = slot6
@@ -1104,7 +1162,7 @@ slot28 = function(slot0)
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #8
 
-	--- BLOCK #8 55-55, warpins: 1 ---
+	--- BLOCK #8 54-54, warpins: 1 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -1112,9 +1170,9 @@ slot28 = function(slot0)
 
 end
 
-slot27.clear = slot28
+slot28.clear = slot29
 
-slot28 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ToBool
 	slot6 = slot0
@@ -1130,9 +1188,9 @@ slot28 = function(slot0, slot1)
 
 end
 
-slot27.isValidAbility = slot28
+slot28.isValidAbility = slot29
 
-slot28 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1228,9 +1286,9 @@ slot28 = function(slot0, slot1)
 
 end
 
-slot27.getAbilityTemplate = slot28
+slot28.getAbilityTemplate = slot29
 
-slot28 = function(slot0, slot1)
+slot29 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = AbilityParamData
 	slot2 = slot2[slot1]
@@ -1259,9 +1317,9 @@ slot28 = function(slot0, slot1)
 
 end
 
-slot27.getAbilityParamDataByParamId = slot28
+slot28.getAbilityParamDataByParamId = slot29
 
-slot28 = function(slot0, slot1, slot2)
+slot29 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = AbilityParamMapData
 	slot3 = slot3[slot1]
@@ -1336,9 +1394,9 @@ slot28 = function(slot0, slot1, slot2)
 
 end
 
-slot27.getAbilityParamId = slot28
+slot28.getAbilityParamId = slot29
 
-slot28 = function(slot0, slot1, slot2)
+slot29 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = AbilityParamMapData
 	slot3 = slot3[slot1]
@@ -1432,11 +1490,11 @@ slot28 = function(slot0, slot1, slot2)
 
 end
 
-slot27.getAbilityParamData = slot28
-slot28 = {}
+slot28.getAbilityParamData = slot29
 slot29 = {}
+slot30 = {}
 
-slot30 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = _tagsSet
 	slot3 = slot3[slot1]
@@ -1562,9 +1620,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot27.existsTag = slot30
+slot28.existsTag = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1683,9 +1741,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot27.getAbilityEpPower = slot30
+slot28.getAbilityEpPower = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.timelineTemplateMap
 	slot2 = slot2[slot1]
@@ -1751,9 +1809,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot27.getTimelineTemplate = slot30
+slot28.getTimelineTemplate = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1849,9 +1907,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot27.getBuffTemplate = slot30
+slot28.getBuffTemplate = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.tokenIdGen
 	slot2 = AbilityConst
@@ -1908,9 +1966,9 @@ slot30 = function(slot0)
 
 end
 
-slot27.genTokenId = slot30
+slot28.genTokenId = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2006,9 +2064,9 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot27.getProjectileTemplate = slot30
+slot28.getProjectileTemplate = slot31
 
-slot30 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = ToBool
 	slot6 = slot1
@@ -2109,9 +2167,9 @@ slot30 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot27.getVoxelCondition = slot30
+slot28.getVoxelCondition = slot31
 
-slot30 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ToBool
 	slot4 = slot1
@@ -2225,10 +2283,10 @@ slot30 = function(slot0, slot1)
 
 end
 
-slot27.getEcsElement = slot30
+slot28.getEcsElement = slot31
 
-slot30 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot31 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot3 = CombatLogger
 	slot3 = slot3.debug
 	slot5 = "hotfixAbility"
@@ -2237,7 +2295,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	slot3 = slot0.abilityTemplateMap
-	slot3[slot1] = slot2
+	slot4 = nil
+	slot3[slot1] = slot4
 	slot3 = "Common.Data.SkillBPData.AbilityBP.Ability_"
 	slot4 = tostring
 	slot6 = slot1
@@ -2247,6 +2306,16 @@ slot30 = function(slot0, slot1, slot2)
 	slot4 = slot4.loaded
 	slot5 = nil
 	slot4[slot3] = slot5
+	slot4 = require
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = slot2
+	slot7 = slot4
+
+	slot5(slot7)
+
+	slot5 = slot0.abilityTemplateMap
+	slot5[slot1] = slot4
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2255,10 +2324,10 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot27.hotfixAbility = slot30
+slot28.hotfixAbility = slot31
 
-slot30 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-21, warpins: 1 ---
+slot31 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot3 = CombatLogger
 	slot3 = slot3.debug
 	slot5 = "hotfixTimeline"
@@ -2266,21 +2335,36 @@ slot30 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
-	slot3 = TimelineTemplate
-	slot5 = slot1
-	slot6 = slot2
-	slot3 = slot3(slot5, slot6)
-	slot4 = slot0.timelineTemplateMap
-	slot4[slot1] = slot3
-	slot4 = "Common.Data.SkillBPData.TimelineBP.Timeline_"
-	slot5 = tostring
-	slot7 = slot1
-	slot5 = slot5(slot7)
-	slot4 = slot4 .. slot5
+	slot3 = slot0.timelineTemplateMap
+	slot4 = nil
+	slot3[slot1] = slot4
+	slot3 = "Common.Data.SkillBPData.TimelineBP.Timeline_"
+	slot4 = tostring
+	slot6 = slot1
+	slot4 = slot4(slot6)
+	slot3 = slot3 .. slot4
+	slot4 = package
+	slot4 = slot4.loaded
+	slot5 = nil
+	slot4[slot3] = slot5
+	slot4 = require
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = slot2
+	slot7 = slot4
+
+	slot5(slot7)
+
+	slot5 = slot0.timelineTemplateMap
+	slot6 = TimelineTemplate
+	slot8 = slot1
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
+	slot5[slot1] = slot6
 	slot5 = package
 	slot5 = slot5.loaded
 	slot6 = nil
-	slot5[slot4] = slot6
+	slot5[slot3] = slot6
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2289,10 +2373,10 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot27.hotfixTimeline = slot30
+slot28.hotfixTimeline = slot31
 
-slot30 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot31 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot3 = CombatLogger
 	slot3 = slot3.debug
 	slot5 = "hotfixProjectile"
@@ -2301,7 +2385,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	slot3 = slot0.projectileTemplateMap
-	slot3[slot1] = slot2
+	slot4 = nil
+	slot3[slot1] = slot4
 	slot3 = "Common.Data.SkillBPData.ProjectileBP.Projectile_"
 	slot4 = tostring
 	slot6 = slot1
@@ -2309,7 +2394,18 @@ slot30 = function(slot0, slot1, slot2)
 	slot3 = slot3 .. slot4
 	slot4 = package
 	slot4 = slot4.loaded
-	slot4[slot3] = slot3
+	slot5 = nil
+	slot4[slot3] = slot5
+	slot4 = require
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = slot2
+	slot7 = slot4
+
+	slot5(slot7)
+
+	slot5 = slot0.projectileTemplateMap
+	slot5[slot1] = slot4
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2318,10 +2414,10 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot27.hotfixProjectile = slot30
+slot28.hotfixProjectile = slot31
 
-slot30 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot31 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot3 = CombatLogger
 	slot3 = slot3.debug
 	slot5 = "hotfixBuff"
@@ -2330,7 +2426,8 @@ slot30 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	slot3 = slot0.buffTemplateMap
-	slot3[slot1] = slot2
+	slot4 = nil
+	slot3[slot1] = slot4
 	slot3 = "Common.Data.SkillBPData.BuffBP.Buff_"
 	slot4 = tostring
 	slot6 = slot1
@@ -2340,6 +2437,16 @@ slot30 = function(slot0, slot1, slot2)
 	slot4 = slot4.loaded
 	slot5 = nil
 	slot4[slot3] = slot5
+	slot4 = require
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot5 = slot2
+	slot7 = slot4
+
+	slot5(slot7)
+
+	slot5 = slot0.buffTemplateMap
+	slot5[slot1] = slot4
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2348,9 +2455,9 @@ slot30 = function(slot0, slot1, slot2)
 
 end
 
-slot27.hotfixBuff = slot30
+slot28.hotfixBuff = slot31
 
-slot30 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = nil
 	slot2 = {
@@ -2465,9 +2572,9 @@ slot30 = function(slot0)
 
 end
 
-slot27.loadAllFileInServerStart = slot30
+slot28.loadAllFileInServerStart = slot31
 
-return slot27
+return slot28
 --- END OF BLOCK #2 ---
 
 

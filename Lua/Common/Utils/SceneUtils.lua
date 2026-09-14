@@ -1,32 +1,35 @@
---- BLOCK #0 1-214, warpins: 1 ---
+--- BLOCK #0 1-221, warpins: 1 ---
 slot0 = require
-slot2 = "Data.scene_data"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
-slot1 = Vector3
-slot2 = require
-slot4 = "Data.map_line_config_data"
-slot2 = slot2(slot4)
+slot1 = require
+slot3 = "Data.scene_data"
+slot1 = slot1(slot3)
+slot2 = Vector3
 slot3 = require
-slot5 = "Data.roguelike_data"
+slot5 = "Data.map_line_config_data"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.catch_rogue_level_data"
+slot6 = "Data.roguelike_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Data.Scene.scene_target_position_data"
+slot7 = "Data.catch_rogue_level_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Data.Scene.scene_target_position_revert_data"
+slot8 = "Common.Data.Scene.scene_target_position_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.bossrush_guanka_data"
+slot9 = "Common.Data.Scene.scene_target_position_revert_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.RandomMapBatchUtils"
+slot10 = "Data.bossrush_guanka_data"
 slot8 = slot8(slot10)
-slot9 = {}
+slot9 = require
+slot11 = "Common.Utils.RandomMapBatchUtils"
+slot9 = slot9(slot11)
+slot10 = {}
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -117,91 +120,93 @@ slot10 = function(slot0)
 
 end
 
-slot9.getSceneName = slot10
-slot10 = "Data.Scene.%s.%s"
-slot9.dataPathPrefix = slot10
-slot10 = "scene_entity_data"
-slot9.scene_entity_data = slot10
-slot10 = "scene_spawner_data"
-slot9.scene_spawner_data = slot10
-slot10 = "scene_titan_spawner_data"
-slot9.scene_titan_spawner_data = slot10
-slot10 = "scene_spawner_condition_data"
-slot9.scene_spawner_condition_data = slot10
-slot10 = "scene_spawner_immediately_condition"
-slot9.scene_spawner_immediately_condition = slot10
-slot10 = "scene_chunk_data"
-slot9.scene_chunk_data = slot10
-slot10 = "scene_route_data"
-slot9.scene_route_data = slot10
-slot10 = "scene_graph_data"
-slot9.scene_graph_data = slot10
-slot10 = "scene_sandbox_data"
-slot9.scene_sandbox_data = slot10
-slot10 = "scene_sandbox_global_data"
-slot9.scene_sandbox_global_data = slot10
-slot10 = "scene_sandbox_chunk_data"
-slot9.scene_sandbox_chunk_data = slot10
-slot10 = "quest_active_sandbox_data"
-slot9.quest_active_sandbox_data = slot10
-slot10 = "scene_sandbox_quest_data"
-slot9.scene_sandbox_quest_data = slot10
-slot10 = "scene_sandbox_dungeon_data"
-slot9.scene_sandbox_dungeon_data = slot10
-slot10 = "scene_sandbox_finished_data"
-slot9.scene_sandbox_finished_data = slot10
-slot10 = "scene_sandbox_destroy_data"
-slot9.scene_sandbox_destroy_data = slot10
-slot10 = "scene_sandbox_faraway_data"
-slot9.scene_sandbox_faraway_data = slot10
-slot10 = "scene_sandbox_weather_data"
-slot9.scene_sandbox_weather_data = slot10
-slot10 = "scene_sandbox_meteorology_data"
-slot9.scene_sandbox_meteorology_data = slot10
-slot10 = "stp_group_data"
-slot9.stp_group_data = slot10
-slot10 = "scene_mark_data"
-slot9.scene_mark_data = slot10
-slot10 = "scene_mark_type_data"
-slot9.scene_mark_type_data = slot10
-slot10 = "scene_mark_point_data"
-slot9.scene_mark_point_data = slot10
-slot10 = "scene_common_basics_point_data"
-slot9.scene_common_basics_point_data = slot10
-slot10 = "scene_portal_data"
-slot9.scene_portal_data = slot10
-slot10 = "scene_portal_group_data"
-slot9.scene_portal_group_data = slot10
-slot10 = "scene_area_data"
-slot9.scene_area_data = slot10
-slot10 = "scene_global_area_data"
-slot9.scene_global_area_data = slot10
-slot10 = "scene_poi_data"
-slot9.scene_poi_data = slot10
-slot10 = "scene_dialogset_data"
-slot9.scene_dialogset_data = slot10
-slot10 = "scene_envobj_chunk_data"
-slot9.scene_envobj_chunk_data = slot10
-slot10 = "scene_climb_data"
-slot9.scene_climb_data = slot10
-slot10 = "scene_entity_block_id_data"
-slot9.scene_entity_block_id_data = slot10
-slot10 = true
-slot9.useDataCache = slot10
-slot10 = "Data.Scene.%s.%s.%s_%d"
-slot9.dataPathPrefix_part = slot10
-slot10 = "Data.Scene.%s.%s.%s_len"
-slot9.dataPathPrefix_part_len = slot10
-slot10 = true
-slot9.usePartData = slot10
-slot10 = {}
-slot11 = slot9.scene_route_data
-slot10[1] = slot11
-slot11 = slot9.scene_entity_data
-slot10[2] = slot11
-slot9.part_data_names = slot10
+slot10.getSceneName = slot11
+slot11 = "Data.Scene.%s.%s"
+slot10.dataPathPrefix = slot11
+slot11 = "scene_entity_data"
+slot10.scene_entity_data = slot11
+slot11 = "scene_spawner_data"
+slot10.scene_spawner_data = slot11
+slot11 = "scene_titan_spawner_data"
+slot10.scene_titan_spawner_data = slot11
+slot11 = "scene_spawner_condition_data"
+slot10.scene_spawner_condition_data = slot11
+slot11 = "scene_spawner_immediately_condition"
+slot10.scene_spawner_immediately_condition = slot11
+slot11 = "scene_chunk_data"
+slot10.scene_chunk_data = slot11
+slot11 = "scene_route_data"
+slot10.scene_route_data = slot11
+slot11 = "scene_graph_data"
+slot10.scene_graph_data = slot11
+slot11 = "scene_sandbox_data"
+slot10.scene_sandbox_data = slot11
+slot11 = "scene_sandbox_global_data"
+slot10.scene_sandbox_global_data = slot11
+slot11 = "scene_sandbox_chunk_data"
+slot10.scene_sandbox_chunk_data = slot11
+slot11 = "quest_active_sandbox_data"
+slot10.quest_active_sandbox_data = slot11
+slot11 = "scene_sandbox_quest_data"
+slot10.scene_sandbox_quest_data = slot11
+slot11 = "scene_sandbox_dungeon_data"
+slot10.scene_sandbox_dungeon_data = slot11
+slot11 = "scene_sandbox_finished_data"
+slot10.scene_sandbox_finished_data = slot11
+slot11 = "scene_sandbox_destroy_data"
+slot10.scene_sandbox_destroy_data = slot11
+slot11 = "scene_sandbox_faraway_data"
+slot10.scene_sandbox_faraway_data = slot11
+slot11 = "scene_sandbox_weather_data"
+slot10.scene_sandbox_weather_data = slot11
+slot11 = "scene_sandbox_meteorology_data"
+slot10.scene_sandbox_meteorology_data = slot11
+slot11 = "stp_group_data"
+slot10.stp_group_data = slot11
+slot11 = "scene_mark_data"
+slot10.scene_mark_data = slot11
+slot11 = "scene_mark_type_data"
+slot10.scene_mark_type_data = slot11
+slot11 = "scene_mark_point_data"
+slot10.scene_mark_point_data = slot11
+slot11 = "scene_common_basics_point_data"
+slot10.scene_common_basics_point_data = slot11
+slot11 = "scene_portal_data"
+slot10.scene_portal_data = slot11
+slot11 = "scene_portal_group_data"
+slot10.scene_portal_group_data = slot11
+slot11 = "scene_area_data"
+slot10.scene_area_data = slot11
+slot11 = "scene_global_area_data"
+slot10.scene_global_area_data = slot11
+slot11 = "scene_poi_data"
+slot10.scene_poi_data = slot11
+slot11 = "scene_base_point_group_data"
+slot10.scene_base_point_group_data = slot11
+slot11 = "scene_dialogset_data"
+slot10.scene_dialogset_data = slot11
+slot11 = "scene_envobj_chunk_data"
+slot10.scene_envobj_chunk_data = slot11
+slot11 = "scene_climb_data"
+slot10.scene_climb_data = slot11
+slot11 = "scene_entity_block_id_data"
+slot10.scene_entity_block_id_data = slot11
+slot11 = true
+slot10.useDataCache = slot11
+slot11 = "Data.Scene.%s.%s.%s_%d"
+slot10.dataPathPrefix_part = slot11
+slot11 = "Data.Scene.%s.%s.%s_len"
+slot10.dataPathPrefix_part_len = slot11
+slot11 = false
+slot10.usePartData = slot11
+slot11 = {}
+slot12 = slot10.scene_route_data
+slot11[1] = slot12
+slot12 = slot10.scene_entity_data
+slot11[2] = slot12
+slot10.part_data_names = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = RandomMapBatchUtils
 	slot3 = slot3.isUndergroundScene
@@ -489,9 +494,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getSceneData = slot10
+slot10.getSceneData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2._DataCache
@@ -776,9 +781,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneDataFromCache = slot10
+slot10.getSceneDataFromCache = slot11
 
-slot10 = function()
+slot11 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = SceneUtils
 	slot1 = {}
@@ -791,9 +796,9 @@ slot10 = function()
 
 end
 
-slot9.clearCache = slot10
+slot10.clearCache = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SceneUtils
 	slot1 = slot1.useDataCache
@@ -862,9 +867,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.unloadSceneDataCache = slot10
+slot10.unloadSceneDataCache = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -880,9 +885,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneEntityData = slot10
+slot10.getSceneEntityData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -898,9 +903,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSpawnerData = slot10
+slot10.getSceneSpawnerData = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SceneUtils
 	slot3 = slot3.scene_chunk_data
@@ -939,9 +944,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getSceneChunkSpawnerData = slot10
+slot10.getSceneChunkSpawnerData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -957,9 +962,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneTitanSpawnerData = slot10
+slot10.getSceneTitanSpawnerData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -975,9 +980,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSpawnerConditionData = slot10
+slot10.getSceneSpawnerConditionData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -993,9 +998,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSpawnerImmediatelyConditionData = slot10
+slot10.getSceneSpawnerImmediatelyConditionData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1011,9 +1016,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneRouteData = slot10
+slot10.getSceneRouteData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1029,9 +1034,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneGraphData = slot10
+slot10.getSceneGraphData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1047,9 +1052,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxData = slot10
+slot10.getSceneSandboxData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1065,9 +1070,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxGlobalData = slot10
+slot10.getSceneSandboxGlobalData = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = SceneUtils
 	slot3 = slot3.getSceneData
@@ -1085,9 +1090,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getSceneSandboxIdData = slot10
+slot10.getSceneSandboxIdData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1103,9 +1108,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxChunkData = slot10
+slot10.getSceneSandboxChunkData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1121,9 +1126,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxQuestData = slot10
+slot10.getSceneSandboxQuestData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1139,9 +1144,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxQuestActiveData = slot10
+slot10.getSceneSandboxQuestActiveData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1157,9 +1162,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxWeatherData = slot10
+slot10.getSceneSandboxWeatherData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1175,9 +1180,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxMeteorologyData = slot10
+slot10.getSceneSandboxMeteorologyData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1193,9 +1198,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxDungeonData = slot10
+slot10.getSceneSandboxDungeonData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1211,9 +1216,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxFinishedData = slot10
+slot10.getSceneSandboxFinishedData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1229,9 +1234,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxDestroyData = slot10
+slot10.getSceneSandboxDestroyData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1247,9 +1252,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneSandboxFarawayData = slot10
+slot10.getSceneSandboxFarawayData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1265,9 +1270,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneStpGroupData = slot10
+slot10.getSceneStpGroupData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1283,9 +1288,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneMarkData = slot10
+slot10.getSceneMarkData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1301,9 +1306,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneMarkTypeData = slot10
+slot10.getSceneMarkTypeData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1319,9 +1324,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneMarkPointData = slot10
+slot10.getSceneMarkPointData = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = SceneUtils
 	slot3 = slot3.getSceneMarkPointData
@@ -1417,9 +1422,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getMarkPosition = slot10
+slot10.getMarkPosition = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = SceneUtils
 	slot3 = slot3.getSceneCommonBasicsPointData
@@ -1515,9 +1520,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getCommonBasicsPosition = slot10
+slot10.getCommonBasicsPosition = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1533,9 +1538,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneCommonBasicsPointData = slot10
+slot10.getSceneCommonBasicsPointData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1551,9 +1556,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getScenePortalData = slot10
+slot10.getScenePortalData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1569,9 +1574,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getScenePortalGroupData = slot10
+slot10.getScenePortalGroupData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1587,9 +1592,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneAreaData = slot10
+slot10.getSceneAreaData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1605,9 +1610,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneGlobalAreaData = slot10
+slot10.getSceneGlobalAreaData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1623,9 +1628,27 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getScenePOIData = slot10
+slot10.getScenePOIData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = SceneUtils
+	slot2 = slot2.getSceneData
+	slot4 = slot0
+	slot5 = SceneUtils
+	slot5 = slot5.scene_base_point_group_data
+	slot6 = slot1
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot10.getSceneBasePointGroupData = slot11
+
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1641,9 +1664,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneDialogsetData = slot10
+slot10.getSceneDialogsetData = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = SceneUtils
 	slot3 = slot3.getSceneMarkPointData
@@ -1710,9 +1733,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getMapMarkPositionById = slot10
+slot10.getMapMarkPositionById = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1757,9 +1780,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getMapMarkPosition = slot10
+slot10.getMapMarkPosition = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SceneData
 	slot1 = slot1[slot0]
@@ -1800,9 +1823,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getMainSceneId = slot10
+slot10.getMainSceneId = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SceneData
 	slot1 = slot1[slot0]
@@ -1846,9 +1869,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.isSeamlessScene = slot10
+slot10.isSeamlessScene = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SceneData
 	slot1 = slot1[slot0]
@@ -1881,9 +1904,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.haveSceneData = slot10
+slot10.haveSceneData = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = tostring
 	slot3 = slot0
@@ -1895,9 +1918,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getEnvIdByStaticId = slot10
+slot10.getEnvIdByStaticId = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -1913,9 +1936,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneEnvObjChunkData = slot10
+slot10.getSceneEnvObjChunkData = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = MapLineConfigData
 	slot1 = slot1[slot0]
@@ -1946,9 +1969,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getKeepInstanceNum = slot10
+slot10.getKeepInstanceNum = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = MapLineConfigData
 	slot1 = slot1[slot0]
@@ -1979,9 +2002,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getMaxInstanceCapacity = slot10
+slot10.getMaxInstanceCapacity = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SceneTargetPositionData
 	slot1 = slot1[slot0]
@@ -2011,9 +2034,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getSceneTargetPositionData = slot10
+slot10.getSceneTargetPositionData = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = SceneTargetPositionRevertData
 	slot1 = slot1[slot0]
@@ -2043,9 +2066,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getSceneTargetPositionRevertData = slot10
+slot10.getSceneTargetPositionRevertData = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = require
 	slot4 = "Common.Utils.Utils"
@@ -2145,7 +2168,7 @@ slot10 = function(slot0, slot1)
 
 
 	--- BLOCK #7 47-47, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -2209,7 +2232,7 @@ slot10 = function(slot0, slot1)
 
 
 	--- BLOCK #13 70-70, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
@@ -2255,9 +2278,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getVoxelPath = slot10
+slot10.getVoxelPath = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = SceneUtils
 	slot2 = slot2.getSceneData
@@ -2273,9 +2296,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getSceneClimbData = slot10
+slot10.getSceneClimbData = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2405,9 +2428,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getBlockIdByEntity = slot10
+slot10.getBlockIdByEntity = slot11
 
-return slot9
+return slot10
 --- END OF BLOCK #0 ---
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-49, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -89,12 +89,23 @@ end
 slot5.start = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.detachEffects
 
 	slot1(slot3)
 
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.preDestroy = slot7
+
+slot7 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientMagicFieldComponent
 	slot1 = slot1.super
 	slot1 = slot1.destroy
@@ -169,22 +180,20 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-10, warpins: 2 ---
+	--- BLOCK #2 4-8, warpins: 2 ---
 	slot0.position = slot1
 	slot0.rot = slot2
-	slot3 = IsNil
-	slot5 = slot0.eModel
-	slot3 = slot3(slot5)
+	slot3 = slot0.eModel
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 11-12, warpins: 1 ---
+	--- BLOCK #3 9-10, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot1 ~= nil then
@@ -194,7 +203,7 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 13-14, warpins: 1 ---
+	--- BLOCK #4 11-12, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	if slot2 ~= nil then
@@ -204,7 +213,7 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 15-20, warpins: 1 ---
+	--- BLOCK #5 13-18, warpins: 1 ---
 	slot3 = EModelUtils
 	slot3 = slot3.setAgentPositionAndRotation
 	slot5 = slot0
@@ -218,7 +227,7 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 21-23, warpins: 4 ---
+	--- BLOCK #6 19-21, warpins: 4 ---
 	slot3 = slot0.aoi
 	--- END OF BLOCK #6 ---
 
@@ -229,7 +238,7 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 24-25, warpins: 1 ---
+	--- BLOCK #7 22-23, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
 	slot1 = if slot1 then
@@ -239,7 +248,7 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 26-32, warpins: 1 ---
+	--- BLOCK #8 24-30, warpins: 1 ---
 	slot3 = slot0.aoi
 	slot5 = slot3
 	slot3 = slot3.setPosition
@@ -254,7 +263,7 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 33-34, warpins: 2 ---
+	--- BLOCK #9 31-32, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 	slot2 = if slot2 then
@@ -264,7 +273,7 @@ slot7 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 35-42, warpins: 1 ---
+	--- BLOCK #10 33-40, warpins: 1 ---
 	slot3 = slot0.aoi
 	slot5 = slot3
 	slot3 = slot3.setRotation
@@ -280,7 +289,7 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 43-43, warpins: 3 ---
+	--- BLOCK #11 41-41, warpins: 3 ---
 	return
 	--- END OF BLOCK #11 ---
 

@@ -42,14 +42,46 @@ end
 slot1.ctor = slot2
 
 slot2 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.obj
 	slot2 = slot0.valName
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
 	slot3 = slot0.oldVale
 	slot1[slot2] = slot3
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-15, warpins: 3 ---
+	slot3 = nil
+	slot0.obj = slot3
+	slot3 = nil
+	slot0.oldVale = slot3
+	slot3 = nil
+	slot0.valName = slot3
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 

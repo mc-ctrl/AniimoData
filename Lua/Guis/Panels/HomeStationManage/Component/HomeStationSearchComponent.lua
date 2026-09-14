@@ -63,8 +63,8 @@ slot20 = "HomeStationSearchComponent"
 slot21 = slot2
 slot18 = slot18(slot20, slot21)
 slot19 = {
-	Friend = 0,
-	All = 1
+	All = 1,
+	Friend = 0
 }
 slot20 = 20
 
@@ -1983,7 +1983,7 @@ end
 slot18.setFriendCampInfo = slot21
 
 slot21 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-71, warpins: 1 ---
+	--- BLOCK #0 1-59, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -2022,130 +2022,116 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot12 = slot12(slot14, slot15)
 	slot15 = slot4
 	slot13 = slot4.GetRefValue
-	slot16 = "txtJoinUButton"
+	slot16 = "txtVisitUButton"
 	slot13 = slot13(slot15, slot16)
 	slot16 = slot4
 	slot14 = slot4.GetRefValue
-	slot17 = "txtVisitUButton"
+	slot17 = "txtUnlockUSDFText"
 	slot14 = slot14(slot16, slot17)
 	slot17 = slot4
 	slot15 = slot4.GetRefValue
-	slot18 = "txtUnlockUSDFText"
+	slot18 = "iconTypeUImage"
 	slot15 = slot15(slot17, slot18)
-	slot18 = slot4
-	slot16 = slot4.GetRefValue
-	slot19 = "iconTypeUImage"
-	slot16 = slot16(slot18, slot19)
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot14
-	slot20 = pg
-	slot20 = slot20.getGameString
-	slot22 = "HOME_VISIT"
-	MULTRES = slot20(slot22)
+	slot16 = ClientTextUtils
+	slot16 = slot16.setText
+	slot18 = slot14
+	slot19 = pg
+	slot19 = slot19.getGameString
+	slot21 = "HOMELAND_ITEM_LOCKED"
+	MULTRES = slot19(slot21)
 
-	slot17(slot19, MULTRES)
+	slot16(slot18, MULTRES)
 
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot15
-	slot20 = pg
-	slot20 = slot20.getGameString
-	slot22 = "HOMELAND_ITEM_LOCKED"
-	MULTRES = slot20(slot22)
-
-	slot17(slot19, MULTRES)
-
-	slot17 = slot3.playerInfo
+	slot16 = slot3.playerInfo
 	--- END OF BLOCK #0 ---
 
-	slot17 = if not slot17 then
+	slot16 = if not slot16 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 72-72, warpins: 1 ---
-	slot17 = {}
+	--- BLOCK #1 60-60, warpins: 1 ---
+	slot16 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 73-75, warpins: 2 ---
-	slot18 = slot17.playerName
+	--- BLOCK #2 61-63, warpins: 2 ---
+	slot17 = slot16.playerName
 	--- END OF BLOCK #2 ---
 
-	slot18 = if not slot18 then
+	slot17 = if not slot17 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 76-76, warpins: 1 ---
-	slot18 = ""
+	--- BLOCK #3 64-64, warpins: 1 ---
+	slot17 = ""
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 77-80, warpins: 2 ---
-	slot19 = HomeStationSearchComponent
-	slot19 = slot19._platformHooks
+	--- BLOCK #4 65-68, warpins: 2 ---
+	slot18 = HomeStationSearchComponent
+	slot18 = slot18._platformHooks
 	--- END OF BLOCK #4 ---
 
-	slot19 = if slot19 then
+	slot18 = if slot18 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 81-83, warpins: 1 ---
-	slot20 = slot19.renderFriendStationPlayerName
+	--- BLOCK #5 69-71, warpins: 1 ---
+	slot19 = slot18.renderFriendStationPlayerName
 	--- END OF BLOCK #5 ---
 
-	slot20 = if slot20 then
+	slot19 = if slot19 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 84-93, warpins: 1 ---
-	slot20 = slot19.renderFriendStationPlayerName
-	slot22 = slot0
-	slot23 = slot1
-	slot24 = slot2
-	slot25 = slot3
+	--- BLOCK #6 72-81, warpins: 1 ---
+	slot19 = slot18.renderFriendStationPlayerName
+	slot21 = slot0
+	slot22 = slot1
+	slot23 = slot2
+	slot24 = slot3
+	slot25 = slot16
 	slot26 = slot17
-	slot27 = slot18
-	slot20 = slot20(slot22, slot23, slot24, slot25, slot26, slot27)
+	slot19 = slot19(slot21, slot22, slot23, slot24, slot25, slot26)
 	--- END OF BLOCK #6 ---
 
-	slot18 = if not slot20 then
+	slot17 = if not slot19 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 94-105, warpins: 4 ---
-	slot20 = ClientTextUtils
-	slot20 = slot20.setText
-	slot22 = slot6
-	slot23 = slot18
+	--- BLOCK #7 82-93, warpins: 4 ---
+	slot19 = ClientTextUtils
+	slot19 = slot19.setText
+	slot21 = slot6
+	slot22 = slot17
 
-	slot20(slot22, slot23)
+	slot19(slot21, slot22)
 
-	slot20 = ClientTextUtils
-	slot20 = slot20.setText
-	slot22 = slot7
-	slot23 = slot17.level
+	slot19 = ClientTextUtils
+	slot19 = slot19.setText
+	slot21 = slot7
+	slot22 = slot16.level
 
-	slot20(slot22, slot23)
+	slot19(slot21, slot22)
 
 	--- END OF BLOCK #7 ---
 
@@ -2156,241 +2142,245 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 106-111, warpins: 1 ---
-	slot22 = slot5
-	slot20 = slot5.GetComponent
-	slot23 = "ObjectReference"
-	slot20 = slot20(slot22, slot23)
+	--- BLOCK #8 94-99, warpins: 1 ---
+	slot21 = slot5
+	slot19 = slot5.GetComponent
+	slot22 = "ObjectReference"
+	slot19 = slot19(slot21, slot22)
 	--- END OF BLOCK #8 ---
 
-	slot20 = if slot20 then
+	slot19 = if slot19 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #9 112-122, warpins: 1 ---
-	slot23 = slot20
-	slot21 = slot20.GetRefValue
-	slot24 = "avatarUImage"
+	--- BLOCK #9 100-110, warpins: 1 ---
+	slot22 = slot19
+	slot20 = slot19.GetRefValue
+	slot23 = "avatarUImage"
+	slot20 = slot20(slot22, slot23)
+	slot23 = slot19
+	slot21 = slot19.GetRefValue
+	slot24 = "avatarFrameUImage"
 	slot21 = slot21(slot23, slot24)
-	slot24 = slot20
-	slot22 = slot20.GetRefValue
-	slot25 = "avatarFrameUImage"
-	slot22 = slot22(slot24, slot25)
-	slot23 = slot17.headIcon
+	slot22 = slot16.headIcon
 	--- END OF BLOCK #9 ---
 
-	slot23 = if slot23 then
+	slot22 = if slot22 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 123-125, warpins: 1 ---
-	slot23 = PlayerHeadIconData
-	slot24 = slot17.headIcon
-	slot23 = slot23[slot24]
+	--- BLOCK #10 111-113, warpins: 1 ---
+	slot22 = PlayerHeadIconData
+	slot23 = slot16.headIcon
+	slot22 = slot22[slot23]
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 126-127, warpins: 2 ---
+	--- BLOCK #11 114-115, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
-	slot21 = if slot21 then
+	slot20 = if slot20 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 128-129, warpins: 1 ---
+	--- BLOCK #12 116-117, warpins: 1 ---
 	--- END OF BLOCK #12 ---
 
-	slot23 = if slot23 then
+	slot22 = if slot22 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 130-131, warpins: 1 ---
-	slot24 = slot23.res
-	slot21.url = slot24
+	--- BLOCK #13 118-119, warpins: 1 ---
+	slot23 = slot22.res
+	slot20.url = slot23
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 132-134, warpins: 3 ---
-	slot24 = slot17.headFrame
+	--- BLOCK #14 120-122, warpins: 3 ---
+	slot23 = slot16.headFrame
 	--- END OF BLOCK #14 ---
 
-	slot24 = if slot24 then
+	slot23 = if slot23 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 135-137, warpins: 1 ---
-	slot24 = PlayerHeadFrameData
-	slot25 = slot17.headFrame
-	slot24 = slot24[slot25]
+	--- BLOCK #15 123-125, warpins: 1 ---
+	slot23 = PlayerHeadFrameData
+	slot24 = slot16.headFrame
+	slot23 = slot23[slot24]
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 138-139, warpins: 2 ---
+	--- BLOCK #16 126-127, warpins: 2 ---
 	--- END OF BLOCK #16 ---
 
-	slot22 = if slot22 then
+	slot21 = if slot21 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 140-141, warpins: 1 ---
+	--- BLOCK #17 128-129, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
-	slot24 = if slot24 then
+	slot23 = if slot23 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 142-143, warpins: 1 ---
-	slot25 = slot24.res
-	slot22.url = slot25
+	--- BLOCK #18 130-131, warpins: 1 ---
+	slot24 = slot23.res
+	slot21.url = slot24
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 144-148, warpins: 5 ---
-	slot20 = AvatarPresetData
-	slot21 = slot17.avatarPresetKey
-	slot20 = slot20[slot21]
+	--- BLOCK #19 132-140, warpins: 5 ---
+	slot19 = pg
+	slot19 = slot19.game
+	slot19 = slot19.avatar
+	slot21 = slot19
+	slot19 = slot19.getAvatarPresetData
+	slot22 = slot16.avatarPresetKey
+	slot19 = slot19(slot21, slot22)
 	--- END OF BLOCK #19 ---
 
-	slot20 = if not slot20 then
+	slot19 = if not slot19 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 149-149, warpins: 1 ---
-	slot20 = {}
+	--- BLOCK #20 141-141, warpins: 1 ---
+	slot19 = {}
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 150-152, warpins: 2 ---
-	slot21 = slot20.templateId
+	--- BLOCK #21 142-144, warpins: 2 ---
+	slot20 = slot19.templateId
 	--- END OF BLOCK #21 ---
 
-	slot21 = if not slot21 then
+	slot20 = if not slot20 then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 153-153, warpins: 1 ---
-	slot21 = 0
+	--- BLOCK #22 145-145, warpins: 1 ---
+	slot20 = 0
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 154-155, warpins: 2 ---
+	--- BLOCK #23 146-147, warpins: 2 ---
 	--- END OF BLOCK #23 ---
 
-	if slot21 == 3 then
+	if slot20 == 3 then
 	JUMP TO BLOCK #24
 	else
 	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #24 156-161, warpins: 1 ---
-	slot24 = slot1
-	slot22 = slot1.TryChangePage
-	slot25 = "Gender"
-	slot26 = 1
+	--- BLOCK #24 148-153, warpins: 1 ---
+	slot23 = slot1
+	slot21 = slot1.TryChangePage
+	slot24 = "Gender"
+	slot25 = 1
 
-	slot22(slot24, slot25, slot26)
+	slot21(slot23, slot24, slot25)
 
 	--- END OF BLOCK #24 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #25 162-163, warpins: 1 ---
+	--- BLOCK #25 154-155, warpins: 1 ---
 	--- END OF BLOCK #25 ---
 
-	if slot21 == 4 then
+	if slot20 == 4 then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 164-169, warpins: 1 ---
-	slot24 = slot1
-	slot22 = slot1.TryChangePage
-	slot25 = "Gender"
-	slot26 = 0
+	--- BLOCK #26 156-161, warpins: 1 ---
+	slot23 = slot1
+	slot21 = slot1.TryChangePage
+	slot24 = "Gender"
+	slot25 = 0
 
-	slot22(slot24, slot25, slot26)
+	slot21(slot23, slot24, slot25)
 
 	--- END OF BLOCK #26 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #27 170-174, warpins: 1 ---
-	slot24 = slot1
-	slot22 = slot1.TryChangePage
-	slot25 = "Gender"
-	slot26 = 2
+	--- BLOCK #27 162-166, warpins: 1 ---
+	slot23 = slot1
+	slot21 = slot1.TryChangePage
+	slot24 = "Gender"
+	slot25 = 2
 
-	slot22(slot24, slot25, slot26)
+	slot21(slot23, slot24, slot25)
 
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 175-177, warpins: 3 ---
-	slot22 = slot3.friendShipLevel
+	--- BLOCK #28 167-169, warpins: 3 ---
+	slot21 = slot3.friendShipLevel
 	--- END OF BLOCK #28 ---
 
-	slot23 = if slot22 then
+	slot22 = if slot21 then
 	JUMP TO BLOCK #29
 	else
 	JUMP TO BLOCK #30
 	end
 
 
-	--- BLOCK #29 178-179, warpins: 1 ---
-	slot23 = FriendshipLevelData
-	slot23 = slot23[slot22]
+	--- BLOCK #29 170-171, warpins: 1 ---
+	slot22 = FriendshipLevelData
+	slot22 = slot22[slot21]
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 180-181, warpins: 2 ---
+	--- BLOCK #30 172-173, warpins: 2 ---
 	--- END OF BLOCK #30 ---
 
 	slot8 = if slot8 then
@@ -2400,405 +2390,507 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #31 182-185, warpins: 1 ---
-	slot26 = slot8
-	slot24 = slot8.SetActive
+	--- BLOCK #31 174-177, warpins: 1 ---
+	slot25 = slot8
+	slot23 = slot8.SetActive
 	--- END OF BLOCK #31 ---
 
-	if slot23 ~= nil then
+	if slot22 ~= nil then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 186-187, warpins: 1 ---
+	--- BLOCK #32 178-179, warpins: 1 ---
 	--- END OF BLOCK #32 ---
 
-	if slot23 == false then
+	if slot22 == false then
 	JUMP TO BLOCK #33
 	else
 	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #33 188-189, warpins: 2 ---
-	slot27 = false
+	--- BLOCK #33 180-181, warpins: 2 ---
+	slot26 = false
 	--- END OF BLOCK #33 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #35
 
 
-	--- BLOCK #34 190-190, warpins: 1 ---
-	slot27 = true
+	--- BLOCK #34 182-182, warpins: 1 ---
+	slot26 = true
 
 	--- END OF BLOCK #34 ---
 
 	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 191-193, warpins: 2 ---
-	slot24(slot26, slot27)
+	--- BLOCK #35 183-185, warpins: 2 ---
+	slot23(slot25, slot26)
 
 	--- END OF BLOCK #35 ---
 
-	slot23 = if slot23 then
+	slot22 = if slot22 then
 	JUMP TO BLOCK #36
 	else
 	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #36 194-197, warpins: 1 ---
-	slot24 = FriendshipLevelData
-	slot24 = slot24[slot22]
-	slot24 = slot24.levelIcon
-	slot8.url = slot24
+	--- BLOCK #36 186-189, warpins: 1 ---
+	slot23 = FriendshipLevelData
+	slot23 = slot23[slot21]
+	slot23 = slot23.levelIcon
+	slot8.url = slot23
 	--- END OF BLOCK #36 ---
 
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 198-200, warpins: 3 ---
-	slot24 = slot3.campStaticId
+	--- BLOCK #37 190-192, warpins: 3 ---
+	slot23 = slot3.campStaticId
 	--- END OF BLOCK #37 ---
 
-	slot25 = if slot24 then
+	slot24 = if slot23 then
 	JUMP TO BLOCK #38
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #38 201-204, warpins: 1 ---
-	slot25 = ClientUtils
-	slot25 = slot25.checkHomeCampUnlock
-	slot27 = slot24
-	slot25 = slot25(slot27)
+	--- BLOCK #38 193-196, warpins: 1 ---
+	slot24 = ClientUtils
+	slot24 = slot24.checkHomeCampUnlock
+	slot26 = slot23
+	slot24 = slot24(slot26)
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 205-209, warpins: 2 ---
-	slot28 = slot1
-	slot26 = slot1.TryChangePage
-	slot29 = "Unlock"
+	--- BLOCK #39 197-201, warpins: 2 ---
+	slot27 = slot1
+	slot25 = slot1.TryChangePage
+	slot28 = "Unlock"
 	--- END OF BLOCK #39 ---
 
-	slot25 = if slot25 then
+	slot24 = if slot24 then
 	JUMP TO BLOCK #40
 	else
 	JUMP TO BLOCK #41
 	end
 
 
-	--- BLOCK #40 210-211, warpins: 1 ---
-	slot30 = 0
+	--- BLOCK #40 202-203, warpins: 1 ---
+	slot29 = 0
 	--- END OF BLOCK #40 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #42
 
 
-	--- BLOCK #41 212-212, warpins: 1 ---
-	slot30 = 1
+	--- BLOCK #41 204-204, warpins: 1 ---
+	slot29 = 1
 
 	--- END OF BLOCK #41 ---
 
 	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 213-231, warpins: 2 ---
-	slot26(slot28, slot29, slot30)
+	--- BLOCK #42 205-223, warpins: 2 ---
+	slot25(slot27, slot28, slot29)
 
-	slot26 = ClientTextUtils
-	slot26 = slot26.setText
-	slot28 = slot9
-	slot31 = slot0
-	slot29 = slot0.getCampDisplayText
-	slot32 = slot24
-	slot33 = slot3.displayCode
-	MULTRES = slot29(slot31, slot32, slot33)
+	slot25 = ClientTextUtils
+	slot25 = slot25.setText
+	slot27 = slot9
+	slot30 = slot0
+	slot28 = slot0.getCampDisplayText
+	slot31 = slot23
+	slot32 = slot3.displayCode
+	MULTRES = slot28(slot30, slot31, slot32)
 
-	slot26(slot28, MULTRES)
+	slot25(slot27, MULTRES)
 
-	slot26 = HomeLandUtils
-	slot26 = slot26.getHomeCampMaxLoginCount
-	slot28 = slot24
-	slot26 = slot26(slot28)
-	slot27 = lume
-	slot27 = slot27.count
-	slot29 = slot3.loginUids
+	slot25 = HomeLandUtils
+	slot25 = slot25.getHomeCampMaxLoginCount
+	slot27 = slot23
+	slot25 = slot25(slot27)
+	slot26 = lume
+	slot26 = slot26.count
+	slot28 = slot3.loginUids
 	--- END OF BLOCK #42 ---
 
-	slot29 = if not slot29 then
+	slot28 = if not slot28 then
 	JUMP TO BLOCK #43
 	else
 	JUMP TO BLOCK #44
 	end
 
 
-	--- BLOCK #43 232-232, warpins: 1 ---
-	slot29 = {}
+	--- BLOCK #43 224-224, warpins: 1 ---
+	slot28 = {}
 	--- END OF BLOCK #43 ---
 
 	FLOW; TARGET BLOCK #44
 
 
-	--- BLOCK #44 233-235, warpins: 2 ---
-	slot27 = slot27(slot29)
+	--- BLOCK #44 225-227, warpins: 2 ---
+	slot26 = slot26(slot28)
 	--- END OF BLOCK #44 ---
 
-	if slot26 > slot27 then
+	if slot25 > slot26 then
 	JUMP TO BLOCK #45
 	else
 	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #45 236-237, warpins: 1 ---
-	slot28 = false
+	--- BLOCK #45 228-229, warpins: 1 ---
+	slot27 = false
 	--- END OF BLOCK #45 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #47
 
 
-	--- BLOCK #46 238-238, warpins: 1 ---
-	slot28 = true
+	--- BLOCK #46 230-230, warpins: 1 ---
+	slot27 = true
 	--- END OF BLOCK #46 ---
 
 	FLOW; TARGET BLOCK #47
 
 
-	--- BLOCK #47 239-244, warpins: 2 ---
-	slot31 = slot1
-	slot29 = slot1.TryChangePage
-	slot32 = "StationType"
-	slot33 = slot3.isPrivate
+	--- BLOCK #47 231-236, warpins: 2 ---
+	slot30 = slot1
+	slot28 = slot1.TryChangePage
+	slot31 = "StationType"
+	slot32 = slot3.isPrivate
 	--- END OF BLOCK #47 ---
 
-	slot33 = if slot33 then
+	slot32 = if slot32 then
 	JUMP TO BLOCK #48
 	else
 	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #48 245-246, warpins: 1 ---
-	slot33 = 0
+	--- BLOCK #48 237-238, warpins: 1 ---
+	slot32 = 0
 	--- END OF BLOCK #48 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #49 247-247, warpins: 1 ---
-	slot33 = 1
+	--- BLOCK #49 239-239, warpins: 1 ---
+	slot32 = 1
 
 	--- END OF BLOCK #49 ---
 
 	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #50 248-255, warpins: 2 ---
-	slot29(slot31, slot32, slot33)
+	--- BLOCK #50 240-247, warpins: 2 ---
+	slot28(slot30, slot31, slot32)
 
-	slot29 = pg
-	slot29 = slot29.getGameString
-	slot31 = "HOMECAR_PUBLIC_STATION"
-	slot29 = slot29(slot31)
-	slot30 = slot3.isPrivate
+	slot28 = pg
+	slot28 = slot28.getGameString
+	slot30 = "HOMECAR_PUBLIC_STATION"
+	slot28 = slot28(slot30)
+	slot29 = slot3.isPrivate
 	--- END OF BLOCK #50 ---
 
-	slot30 = if slot30 then
+	slot29 = if slot29 then
 	JUMP TO BLOCK #51
 	else
 	JUMP TO BLOCK #52
 	end
 
 
-	--- BLOCK #51 256-260, warpins: 1 ---
-	slot30 = pg
-	slot30 = slot30.getGameString
-	slot32 = "HOMECAR_PRIVATE_STATION"
-	slot30 = slot30(slot32)
-	slot29 = slot30
+	--- BLOCK #51 248-252, warpins: 1 ---
+	slot29 = pg
+	slot29 = slot29.getGameString
+	slot31 = "HOMECAR_PRIVATE_STATION"
+	slot29 = slot29(slot31)
+	slot28 = slot29
 	--- END OF BLOCK #51 ---
 
 	FLOW; TARGET BLOCK #52
 
 
-	--- BLOCK #52 261-262, warpins: 2 ---
+	--- BLOCK #52 253-254, warpins: 2 ---
 	--- END OF BLOCK #52 ---
 
-	slot28 = if slot28 then
+	slot27 = if slot27 then
 	JUMP TO BLOCK #53
 	else
 	JUMP TO BLOCK #54
 	end
 
 
-	--- BLOCK #53 263-275, warpins: 1 ---
-	slot30 = ClientTextUtils
-	slot30 = slot30.setText
-	slot32 = slot10
-	slot33 = slot29
-	slot34 = pg
-	slot34 = slot34.getFormatText
-	slot36 = "(<style=Debuff>{0}</style>/{1})"
-	slot37 = slot27
-	slot38 = slot26
-	slot34 = slot34(slot36, slot37, slot38)
-	slot33 = slot33 .. slot34
+	--- BLOCK #53 255-267, warpins: 1 ---
+	slot29 = ClientTextUtils
+	slot29 = slot29.setText
+	slot31 = slot10
+	slot32 = slot28
+	slot33 = pg
+	slot33 = slot33.getFormatText
+	slot35 = "(<style=Debuff>{0}</style>/{1})"
+	slot36 = slot26
+	slot37 = slot25
+	slot33 = slot33(slot35, slot36, slot37)
+	slot32 = slot32 .. slot33
 
-	slot30(slot32, slot33)
+	slot29(slot31, slot32)
 
 	--- END OF BLOCK #53 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #55
 
 
-	--- BLOCK #54 276-287, warpins: 1 ---
-	slot30 = ClientTextUtils
-	slot30 = slot30.setText
-	slot32 = slot10
-	slot33 = slot29
-	slot34 = pg
-	slot34 = slot34.getFormatText
-	slot36 = "({0}/{1})"
-	slot37 = slot27
-	slot38 = slot26
-	slot34 = slot34(slot36, slot37, slot38)
-	slot33 = slot33 .. slot34
+	--- BLOCK #54 268-279, warpins: 1 ---
+	slot29 = ClientTextUtils
+	slot29 = slot29.setText
+	slot31 = slot10
+	slot32 = slot28
+	slot33 = pg
+	slot33 = slot33.getFormatText
+	slot35 = "({0}/{1})"
+	slot36 = slot26
+	slot37 = slot25
+	slot33 = slot33(slot35, slot36, slot37)
+	slot32 = slot32 .. slot33
 
-	slot30(slot32, slot33)
+	slot29(slot31, slot32)
 
 	--- END OF BLOCK #54 ---
 
 	FLOW; TARGET BLOCK #55
 
 
-	--- BLOCK #55 288-295, warpins: 2 ---
-	slot32 = slot0
-	slot30 = slot0.isSelfCamp
-	slot33 = slot24
-	slot34 = slot3.homeCampKey
-	slot30 = slot30(slot32, slot33, slot34)
-	slot31 = slot3.isPrivate
+	--- BLOCK #55 280-287, warpins: 2 ---
+	slot31 = slot0
+	slot29 = slot0.isSelfCamp
+	slot32 = slot23
+	slot33 = slot3.homeCampKey
+	slot29 = slot29(slot31, slot32, slot33)
+	slot30 = slot3.isPrivate
 	--- END OF BLOCK #55 ---
 
-	slot31 = if slot31 then
+	slot30 = if slot30 then
 	JUMP TO BLOCK #56
 	else
 	JUMP TO BLOCK #61
 	end
 
 
-	--- BLOCK #56 296-300, warpins: 1 ---
-	slot31 = bit
-	slot31 = slot31.band
-	slot33 = slot3.permissions
+	--- BLOCK #56 288-292, warpins: 1 ---
+	slot30 = bit
+	slot30 = slot30.band
+	slot32 = slot3.permissions
 	--- END OF BLOCK #56 ---
 
-	slot33 = if not slot33 then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #57
 	else
 	JUMP TO BLOCK #58
 	end
 
 
-	--- BLOCK #57 301-301, warpins: 1 ---
-	slot33 = 0
+	--- BLOCK #57 293-293, warpins: 1 ---
+	slot32 = 0
 	--- END OF BLOCK #57 ---
 
 	FLOW; TARGET BLOCK #58
 
 
-	--- BLOCK #58 302-306, warpins: 2 ---
-	slot34 = HomeCampConst
-	slot34 = slot34.PERM_ALLOW_RANDOM_JOIN
-	slot31 = slot31(slot33, slot34)
+	--- BLOCK #58 294-298, warpins: 2 ---
+	slot33 = HomeCampConst
+	slot33 = slot33.PERM_ALLOW_RANDOM_JOIN
+	slot30 = slot30(slot32, slot33)
 	--- END OF BLOCK #58 ---
 
-	if slot31 ~= 0 then
+	if slot30 ~= 0 then
 	JUMP TO BLOCK #59
 	else
 	JUMP TO BLOCK #60
 	end
 
 
-	--- BLOCK #59 307-308, warpins: 1 ---
-	slot31 = false
+	--- BLOCK #59 299-300, warpins: 1 ---
+	slot30 = false
 	--- END OF BLOCK #59 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #61
 
 
-	--- BLOCK #60 309-309, warpins: 1 ---
-	slot31 = true
+	--- BLOCK #60 301-301, warpins: 1 ---
+	slot30 = true
 	--- END OF BLOCK #60 ---
 
 	FLOW; TARGET BLOCK #61
 
 
-	--- BLOCK #61 310-311, warpins: 3 ---
+	--- BLOCK #61 302-303, warpins: 3 ---
 	--- END OF BLOCK #61 ---
 
-	slot28 = if not slot28 then
+	slot27 = if not slot27 then
 	JUMP TO BLOCK #62
 	else
-	JUMP TO BLOCK #64
+	JUMP TO BLOCK #66
 	end
 
 
-	--- BLOCK #62 312-313, warpins: 1 ---
+	--- BLOCK #62 304-305, warpins: 1 ---
 	--- END OF BLOCK #62 ---
 
-	slot30 = if not slot30 then
+	slot29 = if not slot29 then
 	JUMP TO BLOCK #63
 	else
-	JUMP TO BLOCK #64
+	JUMP TO BLOCK #66
 	end
 
 
-	--- BLOCK #63 314-315, warpins: 1 ---
-	slot32 = not slot31
+	--- BLOCK #63 306-307, warpins: 1 ---
 	--- END OF BLOCK #63 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #66
+	slot30 = if not slot30 then
+	JUMP TO BLOCK #64
+	else
+	JUMP TO BLOCK #66
+	end
 
 
-	--- BLOCK #64 316-317, warpins: 2 ---
-	slot32 = false
+	--- BLOCK #64 308-309, warpins: 1 ---
 	--- END OF BLOCK #64 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #66
+	if slot23 ~= nil then
+	JUMP TO BLOCK #65
+	else
+	JUMP TO BLOCK #66
+	end
 
 
-	--- BLOCK #65 318-318, warpins: 0 ---
-	slot32 = true
+	--- BLOCK #65 310-312, warpins: 1 ---
+	slot31 = slot3.lineUid
 	--- END OF BLOCK #65 ---
 
-	FLOW; TARGET BLOCK #66
+	if slot31 == nil then
+	JUMP TO BLOCK #66
+	else
+	JUMP TO BLOCK #67
+	end
 
 
-	--- BLOCK #66 319-327, warpins: 3 ---
+	--- BLOCK #66 313-314, warpins: 5 ---
+	slot31 = false
+	--- END OF BLOCK #66 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #68
+
+
+	--- BLOCK #67 315-315, warpins: 1 ---
+	slot31 = true
+	--- END OF BLOCK #67 ---
+
+	FLOW; TARGET BLOCK #68
+
+
+	--- BLOCK #68 316-330, warpins: 2 ---
+	slot34 = slot11
+	slot32 = slot11.SetActive
+	slot35 = false
+
+	slot32(slot34, slot35)
+
+	slot32 = false
 	slot11.interactable = slot32
+	slot32 = nil
+	slot11.luaClick = slot32
+	slot32 = ClientTextUtils
+	slot32 = slot32.setText
+	slot34 = slot13
+	slot35 = pg
+	slot35 = slot35.getGameString
+	--- END OF BLOCK #68 ---
+
+	slot31 = if slot31 then
+	JUMP TO BLOCK #69
+	else
+	JUMP TO BLOCK #70
+	end
+
+
+	--- BLOCK #69 331-332, warpins: 1 ---
+	slot37 = "HOME_JOIN"
+	--- END OF BLOCK #69 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #71
+
+
+	--- BLOCK #70 333-333, warpins: 1 ---
+	slot37 = "HOME_VISIT"
+	--- END OF BLOCK #70 ---
+
+	FLOW; TARGET BLOCK #71
+
+
+	--- BLOCK #71 334-337, warpins: 2 ---
+	MULTRES = slot35(slot37)
+
+	slot32(slot34, MULTRES)
+
+	--- END OF BLOCK #71 ---
+
+	slot32 = if not slot31 then
+	JUMP TO BLOCK #72
+	else
+	JUMP TO BLOCK #75
+	end
+
+
+	--- BLOCK #72 338-340, warpins: 1 ---
+	slot32 = slot3.homeCampKey
+	--- END OF BLOCK #72 ---
+
+	if slot32 == nil then
+	JUMP TO BLOCK #73
+	else
+	JUMP TO BLOCK #74
+	end
+
+
+	--- BLOCK #73 341-342, warpins: 1 ---
+	slot32 = false
+	--- END OF BLOCK #73 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #75
+
+
+	--- BLOCK #74 343-343, warpins: 1 ---
+	slot32 = true
+	--- END OF BLOCK #74 ---
+
+	FLOW; TARGET BLOCK #75
+
+
+	--- BLOCK #75 344-348, warpins: 3 ---
+	slot12.interactable = slot32
 
 	slot32 = function()
 		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = isFull
+		slot0 = canJoin
 		--- END OF BLOCK #0 ---
 
-		slot0 = if not slot0 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #1 4-6, warpins: 1 ---
-		slot0 = isSelf
-
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.isPlayerManager
 		--- END OF BLOCK #1 ---
 
 		slot0 = if slot0 then
@@ -2808,27 +2900,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #2 7-7, warpins: 2 ---
-		return
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 8-11, warpins: 2 ---
-		slot0 = self
-		slot0 = slot0.isPlayerManager
-		--- END OF BLOCK #3 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #4 12-18, warpins: 1 ---
+		--- BLOCK #2 8-14, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.showBubbleMessage
@@ -2837,12 +2909,12 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2)
 
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #2 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 19-25, warpins: 1 ---
+		--- BLOCK #3 15-22, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.onJoinCamp
@@ -2852,99 +2924,24 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2, slot3, slot4)
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #6
-
-
-		--- BLOCK #6 26-26, warpins: 2 ---
-		return
-		--- END OF BLOCK #6 ---
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
+		--- BLOCK #4 23-26, warpins: 1 ---
+		slot0 = data
+		slot0 = slot0.homeCampKey
+		--- END OF BLOCK #4 ---
 
-	end
-
-	slot11.luaClick = slot32
-	slot32 = pg
-	slot32 = slot32.getGameString
-	slot34 = "HOME_JOIN"
-	slot32 = slot32(slot34)
-	--- END OF BLOCK #66 ---
-
-	slot30 = if slot30 then
-	JUMP TO BLOCK #67
-	else
-	JUMP TO BLOCK #68
-	end
+		slot0 = if slot0 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-	--- BLOCK #67 328-333, warpins: 1 ---
-	slot33 = pg
-	slot33 = slot33.getGameString
-	slot35 = "HOMECAR_MEMBER_JOINED"
-	slot33 = slot33(slot35)
-	slot32 = slot33
-	--- END OF BLOCK #67 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #72
-
-
-	--- BLOCK #68 334-335, warpins: 1 ---
-	--- END OF BLOCK #68 ---
-
-	slot28 = if slot28 then
-	JUMP TO BLOCK #69
-	else
-	JUMP TO BLOCK #70
-	end
-
-
-	--- BLOCK #69 336-341, warpins: 1 ---
-	slot33 = pg
-	slot33 = slot33.getGameString
-	slot35 = "HOMECAR_MEMBER_FULL"
-	slot33 = slot33(slot35)
-	slot32 = slot33
-	--- END OF BLOCK #69 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #72
-
-
-	--- BLOCK #70 342-343, warpins: 1 ---
-	--- END OF BLOCK #70 ---
-
-	slot31 = if slot31 then
-	JUMP TO BLOCK #71
-	else
-	JUMP TO BLOCK #72
-	end
-
-
-	--- BLOCK #71 344-348, warpins: 1 ---
-	slot33 = pg
-	slot33 = slot33.getGameString
-	slot35 = "HOMECAR_ONLY_INVITE"
-	slot33 = slot33(slot35)
-	slot32 = slot33
-	--- END OF BLOCK #71 ---
-
-	FLOW; TARGET BLOCK #72
-
-
-	--- BLOCK #72 349-359, warpins: 4 ---
-	slot33 = ClientTextUtils
-	slot33 = slot33.setText
-	slot35 = slot13
-	slot36 = slot32
-
-	slot33(slot35, slot36)
-
-	slot33 = true
-	slot12.interactable = slot33
-
-	slot33 = function()
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #5 27-32, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.onVisitCamp
@@ -2953,17 +2950,23 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2, slot3)
 
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 33-33, warpins: 4 ---
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #6 ---
 
 
 
 	end
 
-	slot12.luaClick = slot33
+	slot12.luaClick = slot32
 
 	return
-	--- END OF BLOCK #72 ---
+	--- END OF BLOCK #75 ---
 
 
 

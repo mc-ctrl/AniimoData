@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -35,12 +35,15 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Data.pet_data"
 slot11 = slot11(slot13)
-slot12 = slot0.LightClass
-slot14 = "CompletionPromptItem"
-slot15 = slot1
-slot12 = slot12(slot14, slot15)
+slot12 = require
+slot14 = "Common.Utils.ActivityUtils"
+slot12 = slot12(slot14)
+slot13 = slot0.LightClass
+slot15 = "CompletionPromptItem"
+slot16 = slot1
+slot13 = slot13(slot15, slot16)
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMaxLimit
@@ -58,9 +61,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onInit = slot13
+slot13.onInit = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryPopupItem
@@ -79,9 +82,28 @@ slot13 = function(slot0)
 
 end
 
-slot12.onUpdate = slot13
+slot13.onUpdate = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = ActivityUtils
+	slot1 = slot1.isOprActivityTabOpenByType
+	slot3 = ActivityConst
+	slot3 = slot3.EventType
+	slot3 = slot3.PuppetCatch
+	slot4 = pg
+	slot4 = slot4.me
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot13.isActivityOpen = slot14
+
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isQueueEmpty
@@ -91,7 +113,7 @@ slot13 = function(slot0)
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
@@ -99,25 +121,38 @@ slot13 = function(slot0)
 	slot3 = slot0
 	slot1 = slot0.isReachTheLimit
 	slot1 = slot1(slot3)
-
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-11, warpins: 2 ---
-	return
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isActivityOpen
+	slot1 = slot1(slot3)
 
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 12-24, warpins: 2 ---
+	--- BLOCK #3 16-16, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-29, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setVisible
 	slot4 = true
@@ -128,26 +163,26 @@ slot13 = function(slot0)
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = SysConfigData
 	slot3 = slot3.LUCKYPET_TIP
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 25-25, warpins: 1 ---
+	--- BLOCK #5 30-30, warpins: 1 ---
 	slot3 = 5
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #5 26-36, warpins: 2 ---
+	--- BLOCK #6 31-41, warpins: 2 ---
 	slot2 = slot2 + slot3
 	slot1.endTime = slot2
 	slot4 = slot0
@@ -163,15 +198,15 @@ slot13 = function(slot0)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot12.tryPopupItem = slot13
+slot13.tryPopupItem = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isRunning
@@ -198,7 +233,7 @@ slot13 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -232,9 +267,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshRemainTime = slot13
+slot13.refreshRemainTime = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.removing
 	--- END OF BLOCK #0 ---
@@ -354,9 +389,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.recycleToast = slot13
+slot13.recycleToast = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isQueueEmpty
@@ -408,9 +443,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.destroyContent = slot13
+slot13.destroyContent = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.runList
 	slot2 = #slot2
@@ -446,9 +481,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onClearRunningList = slot13
+slot13.onClearRunningList = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.uContainer
 	slot4 = slot2
@@ -516,9 +551,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.initUContainer = slot13
+slot13.initUContainer = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-48, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -864,9 +899,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.renderItem = slot13
+slot13.renderItem = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

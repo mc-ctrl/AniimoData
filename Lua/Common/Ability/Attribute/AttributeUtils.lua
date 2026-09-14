@@ -1,4 +1,4 @@
---- BLOCK #0 1-33, warpins: 1 ---
+--- BLOCK #0 1-36, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -11,11 +11,14 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Data.attribute_entry_data"
 slot3 = slot3(slot5)
-slot4 = slot0.LiteClass
-slot6 = "AttributeUtils"
+slot4 = require
+slot6 = "Common.Utils.Utils"
 slot4 = slot4(slot6)
+slot5 = slot0.LiteClass
+slot7 = "AttributeUtils"
+slot5 = slot5(slot7)
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = AttributeConst
 	slot1 = slot1.ID_INFO
@@ -29,9 +32,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getAttribBeginId = slot5
+slot5.getAttribBeginId = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = AttributeConst
 	slot1 = slot1.ID_INFO
@@ -71,9 +74,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isMagicIsV = slot5
+slot5.isMagicIsV = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = AttributeConst
 	slot1 = slot1.ID_INFO
@@ -113,9 +116,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isMagicIsP = slot5
+slot5.isMagicIsP = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = AttributeConst
 	slot1 = slot1.ID_INFO
@@ -167,9 +170,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isMagicIsPVC = slot5
+slot5.isMagicIsPVC = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return slot0
 	--- END OF BLOCK #0 ---
@@ -178,9 +181,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isTeamProperty = slot5
+slot5.isTeamProperty = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.area
 	--- END OF BLOCK #0 ---
@@ -287,8 +290,11 @@ slot5 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 32-34, warpins: 1 ---
-	slot4 = slot0.curFormalBlockId
+	--- BLOCK #10 32-37, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.getCurLargeAreaBlockId
+	slot6 = slot0
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #10 ---
 
 	slot3 = if not slot4 then
@@ -298,14 +304,14 @@ slot5 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #11 35-35, warpins: 1 ---
+	--- BLOCK #11 38-38, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 36-37, warpins: 4 ---
+	--- BLOCK #12 39-40, warpins: 4 ---
 	--- END OF BLOCK #12 ---
 
 	if slot3 == 0 then
@@ -315,7 +321,7 @@ slot5 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #13 38-39, warpins: 1 ---
+	--- BLOCK #13 41-42, warpins: 1 ---
 	slot4 = false
 
 	return slot4
@@ -325,7 +331,7 @@ slot5 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 40-43, warpins: 2 ---
+	--- BLOCK #14 43-46, warpins: 2 ---
 	slot4 = ipairs
 	slot6 = slot1.area
 	slot4, slot5, slot6 = slot4(slot6)
@@ -334,7 +340,7 @@ slot5 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #15 44-45, warpins: 1 ---
+	--- BLOCK #15 47-48, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
 	if slot8 == slot3 then
@@ -344,7 +350,7 @@ slot5 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #16 46-47, warpins: 1 ---
+	--- BLOCK #16 49-50, warpins: 1 ---
 	slot9 = true
 
 	return slot9
@@ -354,7 +360,7 @@ slot5 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 48-49, warpins: 3 ---
+	--- BLOCK #17 51-52, warpins: 3 ---
 	--- END OF BLOCK #17 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -362,7 +368,7 @@ slot5 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #18
 
 
-	--- BLOCK #18 50-51, warpins: 1 ---
+	--- BLOCK #18 53-54, warpins: 1 ---
 	slot4 = false
 
 	return slot4
@@ -372,9 +378,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.isEntryAreaMatched = slot5
+slot5.isEntryAreaMatched = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = AttributeConst
 	slot3 = slot3.quality_ratio_fix
@@ -482,9 +488,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4._getAttrComplexValue = slot5
+slot5._getAttrComplexValue = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -567,9 +573,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.getAttrComplexValue = slot5
+slot5.getAttrComplexValue = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

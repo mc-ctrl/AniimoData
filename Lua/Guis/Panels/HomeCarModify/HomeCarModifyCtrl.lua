@@ -1,4 +1,4 @@
---- BLOCK #0 1-79, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -6,44 +6,55 @@ slot0 = slot0.getLogger
 slot2 = "HomeCarModifyCtrl"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Const.MessageName"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UICtrl"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Data.home_car_modify_type_data"
+slot5 = "Guis.UICtrl"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.home_car_modify_data"
+slot6 = "Data.home_car_modify_type_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Data.home_car_modify_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.Const"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.NoticeDef"
+slot9 = "Common.Const.Const"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientUtils"
+slot10 = "Common.NoticeDef"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Utils.Utils"
+slot11 = "Utils.ClientUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.UIConst"
+slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Utils.HomeLandUtils"
+slot13 = "Const.UIConst"
 slot11 = slot11(slot13)
-slot12 = slot1.LightClass
-slot14 = "HomeCarModifyCtrl"
-slot15 = slot2
-slot12 = slot12(slot14, slot15)
+slot12 = require
+slot14 = "Common.Utils.HomeLandUtils"
+slot12 = slot12(slot14)
+slot13 = slot2.LightClass
+slot15 = "HomeCarModifyCtrl"
+slot16 = slot3
+slot13 = slot13(slot15, slot16)
+slot14 = {}
+slot15 = slot1.HOME_CAR_UPGRADE_STATE_CHANGED
+slot16 = {
+	"onHomeCarUpgradeStateChanged",
+	true
+}
+slot14[slot15] = slot16
+slot13.messages = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = HomeCarModifyCtrl
 	slot2 = slot2.super
@@ -159,9 +170,55 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onCreate = slot13
+slot13.onCreate = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkUIShow
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-18, warpins: 2 ---
+	slot1 = HomeLandUtils
+	slot1 = slot1.getHomeCarInfo
+	slot1 = slot1()
+	slot2 = slot0.basicInfo
+	slot3 = slot1.upgradeEndTs
+	slot2.upgradeEndTs = slot3
+	slot2 = slot0.uiScene
+	slot4 = slot2
+	slot2 = slot2.refreshHomeCar
+	slot5 = slot0.basicInfo
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot13.onHomeCarUpgradeStateChanged = slot14
+
+slot14 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBack
@@ -340,9 +397,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.addListener = slot13
+slot13.addListener = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.homeMainPage
 	--- END OF BLOCK #0 ---
@@ -415,9 +472,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.closePanel = slot13
+slot13.closePanel = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isModify
 	--- END OF BLOCK #0 ---
@@ -453,9 +510,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.checkCommonQuit = slot13
+slot13.checkCommonQuit = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isModify
 	--- END OF BLOCK #0 ---
@@ -508,10 +565,10 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onOpen = slot13
+slot13.onOpen = slot14
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot14 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot2 = Utils
 	slot2 = slot2.getDefaultCarShapeInfo
@@ -519,6 +576,8 @@ slot13 = function(slot0)
 	slot1.carShapeInfo = slot2
 	slot2 = 1
 	slot1.level = slot2
+	slot2 = 0
+	slot1.upgradeEndTs = slot2
 
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -527,9 +586,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.initDefaultBaseInfo = slot13
+slot13.initDefaultBaseInfo = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = HomeCarModifyCtrl
 	slot1 = slot1.super
@@ -548,9 +607,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot13.onDestroy = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isModify
 	--- END OF BLOCK #0 ---
@@ -585,7 +644,7 @@ slot13 = function(slot0)
 		--- BLOCK #1 5-9, warpins: 1 ---
 		slot2 = self
 		slot4 = slot2
-		slot2 = slot2.close
+		slot2 = slot2.closePanel
 
 		slot2(slot4)
 
@@ -654,9 +713,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.confirm = slot13
+slot13.confirm = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -772,9 +831,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.initTabList = slot13
+slot13.initTabList = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = HomeCarModifyData
 	slot2 = slot0.curTab
@@ -886,9 +945,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshModifyList = slot13
+slot13.refreshModifyList = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = 1
@@ -936,9 +995,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshSelectPointList = slot13
+slot13.refreshSelectPointList = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1045,9 +1104,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.rendererPartItem = slot13
+slot13.rendererPartItem = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0.shapeInfo
 	slot5 = slot3.partId
@@ -1113,9 +1172,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.rendererPointItem = slot13
+slot13.rendererPointItem = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1147,9 +1206,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.rendererTabItem = slot13
+slot13.rendererTabItem = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.curTab = slot1
 	slot4 = slot0
@@ -1164,9 +1223,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.selectTabType = slot13
+slot13.selectTabType = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.shapeInfo
 	slot3 = slot3[slot1]
@@ -1218,9 +1277,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.selectPartItem = slot13
+slot13.selectPartItem = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.uiScene
 	slot3 = slot1
@@ -1236,9 +1295,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.initHomeCarEntity = slot13
+slot13.initHomeCarEntity = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

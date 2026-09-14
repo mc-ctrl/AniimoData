@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 6,
-	useForRoute = true,
 	agenttype = "CombatAgent",
-	name = "PatrolTree/PatrolSubTree/ST_SwitchToGround"
+	name = "PatrolTree/PatrolSubTree/ST_SwitchToGround",
+	version = 6,
+	useForRoute = true
 }
 slot4 = {}
 slot3.properties = slot4
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Action"
+	class = "Action",
+	id = "1"
 }
 slot5 = {}
 slot6 = {}

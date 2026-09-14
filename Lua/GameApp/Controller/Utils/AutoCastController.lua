@@ -1,4 +1,4 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-47, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -20,15 +20,18 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Data.ability_setting_global_const_data"
 slot6 = slot6(slot8)
-slot7 = ToBool
-slot8 = pg
-slot9 = Vector3
-slot10 = Quaternion
-slot11 = slot0.LiteClass
-slot13 = "AutoCastController"
-slot11 = slot11(slot13)
+slot7 = require
+slot9 = "Common.Const.Const"
+slot7 = slot7(slot9)
+slot8 = ToBool
+slot9 = pg
+slot10 = Vector3
+slot11 = Quaternion
+slot12 = slot0.LiteClass
+slot14 = "AutoCastController"
+slot12 = slot12(slot14)
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot0.owner = slot1
@@ -42,9 +45,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.ctor = slot12
+slot12.ctor = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.owner = slot1
 	slot2 = false
@@ -61,9 +64,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.setOwner = slot12
+slot12.setOwner = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot3 = Lume
 	slot3 = slot3.clear
@@ -415,9 +418,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.checkAutoCast = slot12
+slot12.checkAutoCast = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByActorId
@@ -488,22 +491,93 @@ slot12 = function(slot0, slot1, slot2)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 32-34, warpins: 1 ---
-	slot6 = 0
+	--- BLOCK #6 32-35, warpins: 1 ---
+	slot6 = AbilitySettingGlobalConstData
+	slot6 = slot6.forceLockDis
 	--- END OF BLOCK #6 ---
 
-	if slot5 > slot6 then
+	if slot6 < slot5 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 35-47, warpins: 1 ---
+	--- BLOCK #7 36-40, warpins: 2 ---
+	slot6 = slot0.owner
+	slot7 = pg
+	slot7 = slot7.pawn
+	--- END OF BLOCK #7 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 41-46, warpins: 1 ---
+	slot6 = AbilityUtils
+	slot6 = slot6.isRangePet
+	slot8 = slot0.owner
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 47-52, warpins: 1 ---
+	slot6 = AbilityUtils
+	slot6 = slot6.isAttackAbility
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #9 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 53-54, warpins: 1 ---
+	slot6 = AbilitySettingGlobalConstData
+	slot5 = slot6.forceLockDis
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 55-56, warpins: 5 ---
+	--- END OF BLOCK #11 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #12 57-59, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #12 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #13 60-72, warpins: 1 ---
 	slot6 = Vector3
 	slot6 = slot6.HoriSqrDistance
 	slot10 = slot3
@@ -515,52 +589,52 @@ slot12 = function(slot0, slot1, slot2)
 	MULTRES = slot9(slot11)
 	slot6 = slot6(slot8, MULTRES)
 	slot7 = slot5 * slot5
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #13 ---
 
 	if slot6 > slot7 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #8 48-49, warpins: 1 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #14 73-74, warpins: 1 ---
+	--- END OF BLOCK #14 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #9 50-50, warpins: 1 ---
+	--- BLOCK #15 75-75, warpins: 1 ---
 	slot2 = {}
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #10 51-52, warpins: 2 ---
+	--- BLOCK #16 76-77, warpins: 2 ---
 	slot7 = slot3.actorId
 	slot2.chaseActorId = slot7
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #11 53-53, warpins: 4 ---
+	--- BLOCK #17 78-78, warpins: 4 ---
 	return slot2
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot11.updateChaseActorId = slot12
+slot12.updateChaseActorId = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = slot0.owner
 	slot4 = slot2
@@ -594,9 +668,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.statDash = slot12
+slot12.statDash = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = next
 	slot3 = slot0.autoCastInfo
@@ -771,7 +845,7 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 88-130, warpins: 2 ---
+	--- BLOCK #11 88-134, warpins: 2 ---
 	slot6 = slot2
 	slot4 = slot2.getPosition
 	slot4 = slot4(slot6)
@@ -791,41 +865,45 @@ slot12 = function(slot0)
 	slot5 = pg
 	slot5 = slot5.global
 	slot5 = slot5.cameraMgr
-	slot5 = slot5.worldCameraInst
-	slot5 = slot5.transform
-	slot5 = slot5.rotation
-	slot6 = Quaternion
-	slot6 = slot6.MulVec3
-	slot8 = Quaternion
-	slot8 = slot8.Inverse
-	slot10 = slot5
-	slot8 = slot8(slot10)
-	slot9 = slot4
-	slot6 = slot6(slot8, slot9)
-	slot7 = slot0.autoCastInfo
-	slot8 = true
-	slot7.disableCancel = slot8
-	slot7 = slot0.owner
-	slot7 = slot7.eModel
-	slot7 = slot7.controllerComponent
-	slot9 = slot7
-	slot7 = slot7.OnHandleMove
-	slot10 = slot6.x
-	slot11 = slot6.z
-	slot12 = 0
+	slot7 = slot5
+	slot5 = slot5.GetWorldCameraRotationEx
+	slot5, slot6, slot7, slot8 = slot5(slot7)
+	slot9 = Quaternion
+	slot9 = slot9.MulVec3
+	slot11 = Quaternion
+	slot11 = slot11.GetQuaternionInverse
+	slot13 = slot5
+	slot14 = slot6
+	slot15 = slot7
+	slot16 = slot8
+	slot11 = slot11(slot13, slot14, slot15, slot16)
+	slot12 = slot4
+	slot9 = slot9(slot11, slot12)
+	slot10 = slot0.autoCastInfo
+	slot11 = true
+	slot10.disableCancel = slot11
+	slot10 = slot0.owner
+	slot10 = slot10.eModel
+	slot12 = slot10
+	slot10 = slot10.OnHandleMove
+	slot13 = Const
+	slot13 = slot13.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot14 = slot9.x
+	slot15 = slot9.z
+	slot16 = 0
 
-	slot7(slot9, slot10, slot11, slot12)
+	slot10(slot12, slot13, slot14, slot15, slot16)
 
-	slot7 = slot0.autoCastInfo
-	slot8 = false
-	slot7.disableCancel = slot8
+	slot10 = slot0.autoCastInfo
+	slot11 = false
+	slot10.disableCancel = slot11
 
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 131-131, warpins: 2 ---
+	--- BLOCK #12 135-135, warpins: 2 ---
 	return
 	--- END OF BLOCK #12 ---
 
@@ -833,9 +911,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.update = slot12
+slot12.update = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = next
 	slot3 = slot0.autoCastInfo
@@ -897,9 +975,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.cancel = slot12
+slot12.cancel = slot13
 
-return slot11
+return slot12
 --- END OF BLOCK #0 ---
 
 

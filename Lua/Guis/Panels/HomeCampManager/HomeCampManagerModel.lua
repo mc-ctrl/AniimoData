@@ -1,61 +1,64 @@
---- BLOCK #0 1-81, warpins: 1 ---
+--- BLOCK #0 1-84, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "HomeCampManagerModel"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "HomeCampManagerModel"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UIModel"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "HomeCampManagerModel"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
-slot4 = require
-slot6 = "Core.Common.Time"
-slot4 = slot4(slot6)
+slot3 = require
+slot5 = "Guis.UIModel"
+slot3 = slot3(slot5)
+slot4 = slot2.LightClass
+slot6 = "HomeCampManagerModel"
+slot7 = slot3
+slot4 = slot4(slot6, slot7)
 slot5 = require
-slot7 = "Const.UIConst"
+slot7 = "Core.Common.Time"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.Utils"
+slot8 = "Const.UIConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.NoticeDef"
+slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.LuaUIUtils"
+slot12 = "Common.NoticeDef"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.ClientUtils"
+slot13 = "Utils.LuaUIUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Utils.ItemUtils"
+slot14 = "Utils.ClientUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Utils.ClientTextUtils"
+slot15 = "Common.Utils.ItemUtils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Core.Timer.TimerManager"
+slot16 = "Utils.ClientTextUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Utils.HomeLandUtils"
+slot17 = "Core.Timer.TimerManager"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Utils.HomeCampUtils"
+slot18 = "Common.Utils.HomeLandUtils"
 slot16 = slot16(slot18)
+slot17 = require
+slot19 = "Utils.HomeCampUtils"
+slot17 = slot17(slot19)
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -89,9 +92,9 @@ slot17 = function(slot0)
 
 end
 
-slot3.getCampCarEnt = slot17
+slot4.getCampCarEnt = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -148,9 +151,9 @@ slot17 = function(slot0)
 
 end
 
-slot3.isEqualInitCacheCampPetIds = slot17
+slot4.isEqualInitCacheCampPetIds = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_setCacheCopyCampPetIds
@@ -171,7 +174,7 @@ slot17 = function(slot0)
 
 
 	--- BLOCK #1 10-10, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -213,9 +216,9 @@ slot17 = function(slot0)
 
 end
 
-slot3.init = slot17
+slot4.init = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampCarEnt
@@ -273,9 +276,9 @@ slot17 = function(slot0)
 
 end
 
-slot3.m_setCacheCopyCampPetIds = slot17
+slot4.m_setCacheCopyCampPetIds = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.m_petIds
 	--- END OF BLOCK #0 ---
@@ -303,9 +306,9 @@ slot17 = function(slot0)
 
 end
 
-slot3.getUICacheCampPetIds = slot17
+slot4.getUICacheCampPetIds = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getCacheCampPetIdsIndex
@@ -365,9 +368,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot3.getIsInCacheCampPetIds = slot17
+slot4.getIsInCacheCampPetIds = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_petIds
 	--- END OF BLOCK #0 ---
@@ -448,9 +451,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot3.getCacheCampPetIdsIndex = slot17
+slot4.getCacheCampPetIdsIndex = slot18
 
-slot17 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -651,9 +654,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot3.tryAddCacheCampPets = slot17
+slot4.tryAddCacheCampPets = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3, slot4)
+slot18 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -686,7 +689,7 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #3 9-9, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -827,9 +830,9 @@ slot17 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot3.tryRemoveCacheCampPet = slot17
+slot4.tryRemoveCacheCampPet = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_petIds
 	--- END OF BLOCK #0 ---
@@ -870,9 +873,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot3.addCacheCampPetId = slot17
+slot4.addCacheCampPetId = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1038,9 +1041,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot3.removeCacheCampPetIds = slot17
+slot4.removeCacheCampPetIds = slot18
 
-slot17 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getCampCarEnt
@@ -1134,9 +1137,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot3.setCacheCampPet = slot17
+slot4.setCacheCampPet = slot18
 
-return slot3
+return slot4
 --- END OF BLOCK #0 ---
 
 

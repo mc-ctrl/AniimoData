@@ -1,4 +1,4 @@
---- BLOCK #0 1-75, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -36,7 +36,7 @@ slot11 = require
 slot13 = "Core.Common.Time"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Utils.ClientSwitch"
+slot14 = "Common.ClientSwitch"
 slot12 = slot12(slot14)
 slot13 = require
 slot15 = "Core.Timer.TimerManager"
@@ -44,12 +44,15 @@ slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Const.UIConst"
 slot14 = slot14(slot16)
-slot15 = slot0.LightClass
-slot17 = "DriveBallContext"
-slot18 = slot2
-slot15 = slot15(slot17, slot18)
+slot15 = require
+slot17 = "Common.Const.Const"
+slot15 = slot15(slot17)
+slot16 = slot0.LightClass
+slot18 = "DriveBallContext"
+slot19 = slot2
+slot16 = slot16(slot18, slot19)
 
-slot16 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = ThrowBallContext
 	slot3 = slot3.ctor
@@ -85,21 +88,19 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15.ctor = slot16
+slot16.ctor = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-35, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = false
 	slot0.throwed = slot1
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = slot0.ballData
 	slot2 = slot2.animType
 	slot1.ThrowAnimType = slot2
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = true
 	slot1.AlwaysLookForward = slot2
 	slot3 = slot0
@@ -122,93 +123,59 @@ slot16 = function(slot0)
 
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.checkUIOpen
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_CAPTURE_BALL
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 36-45, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.checkUIOpen
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_CAPTURE_BALL
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #1 34-41, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.captureBall
+	slot3 = slot1
+	slot1 = slot1.switchAimVisible
+	slot4 = false
+
+	slot1(slot3, slot4)
+
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 46-54, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.captureBall
-	slot4 = slot2
-	slot2 = slot2.switchAimVisible
-	slot5 = false
+	--- BLOCK #2 42-51, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.onceEventListener
+	slot4 = EventConst
+	slot4 = slot4.BALL_DRIVE_END
+	slot5 = slot0.onPerformFinish
 
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 55-62, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot4 = slot2
-	slot2 = slot2.switchAimVisible
-	slot5 = false
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 63-72, warpins: 3 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.eventEmitter
-	slot4 = slot2
-	slot2 = slot2.onceEventListener
-	slot5 = EventConst
-	slot5 = slot5.BALL_DRIVE_END
-	slot6 = slot0.onPerformFinish
-
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot15.enter = slot16
+slot16.enter = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = TriggerUtils
 	slot1 = slot1.getStatusTriggerCurValue
@@ -239,7 +206,7 @@ slot16 = function(slot0)
 
 	--- BLOCK #2 13-19, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot0.lastNoticeTs
 	slot2 = slot2 - slot3
 	slot3 = 1.5
@@ -262,7 +229,7 @@ slot16 = function(slot0)
 	slot2(slot4)
 
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.lastNoticeTs = slot2
 
 	--- END OF BLOCK #3 ---
@@ -313,9 +280,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.throw = slot16
+slot16.throw = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.throwed
 	--- END OF BLOCK #0 ---
@@ -327,16 +294,17 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-14, warpins: 1 ---
+	--- BLOCK #1 4-15, warpins: 1 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.ForceChangeToUpperState
-	slot5 = CharacterUpperState
-	slot5 = slot5.EMPTY
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = CharacterUpperState
+	slot6 = slot6.EMPTY
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	slot2 = slot0._inControl
 	--- END OF BLOCK #1 ---
@@ -348,7 +316,7 @@ slot16 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 15-25, warpins: 1 ---
+	--- BLOCK #2 16-26, warpins: 1 ---
 	slot2 = slot0.player
 	slot4 = slot2
 	slot2 = slot2.setVisible
@@ -366,7 +334,7 @@ slot16 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 26-28, warpins: 1 ---
+	--- BLOCK #3 27-29, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.exitCatchMode
 
@@ -377,7 +345,7 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 29-29, warpins: 3 ---
+	--- BLOCK #4 30-30, warpins: 3 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -385,9 +353,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.throwEnd = slot16
+slot16.throwEnd = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.throwed
 
@@ -421,9 +389,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.switch = slot16
+slot16.switch = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -453,9 +421,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.doThrow = slot16
+slot16.doThrow = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ballEnt
 	--- END OF BLOCK #0 ---
@@ -494,9 +462,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.fireBall = slot16
+slot16.fireBall = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._inControl
 
@@ -517,7 +485,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-51, warpins: 2 ---
+	--- BLOCK #2 5-53, warpins: 2 ---
 	slot1 = true
 	slot0._inControl = slot1
 	slot1 = pg
@@ -553,12 +521,14 @@ slot16 = function(slot0)
 
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.eventEmitter
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.emit
-	slot4 = EventConst
-	slot4 = slot4.BALL_DRIVE_START
-	slot5 = slot0.ballEnt
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_BIG_WHITE_BALL
+	slot5 = {}
+	slot6 = slot0.ballEnt
+	slot5.ballEnt = slot6
 
 	slot1(slot3, slot4, slot5)
 
@@ -581,9 +551,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.takeControl = slot16
+slot16.takeControl = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._inControl
 
@@ -622,9 +592,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.cancelControl = slot16
+slot16.cancelControl = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._inControl
 
@@ -724,9 +694,9 @@ slot16 = function(slot0)
 
 end
 
-slot15._releaseDriveControl = slot16
+slot16._releaseDriveControl = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.throwed
 	--- END OF BLOCK #0 ---
@@ -759,9 +729,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.exit = slot16
+slot16.exit = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._inControl
 	--- END OF BLOCK #0 ---
@@ -784,7 +754,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-31, warpins: 2 ---
+	--- BLOCK #2 7-30, warpins: 2 ---
 	slot1 = slot0.player
 	slot3 = slot1
 	slot1 = slot1.setVisible
@@ -799,110 +769,75 @@ slot16 = function(slot0)
 
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = false
 	slot1.AlwaysLookForward = slot2
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.checkUIOpen
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_CAPTURE_BALL
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 32-41, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.checkUIOpen
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_CAPTURE_BALL
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #3 31-38, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.captureBall
+	slot3 = slot1
+	slot1 = slot1.switchAimVisible
+	slot4 = true
+
+	slot1(slot3, slot4)
+
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 42-50, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.captureBall
-	slot4 = slot2
-	slot2 = slot2.switchAimVisible
-	slot5 = true
+	--- BLOCK #4 39-58, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.removeEventListener
+	slot4 = EventConst
+	slot4 = slot4.BALL_DRIVE_END
+	slot5 = slot0.onPerformFinish
 
-	slot2(slot4, slot5)
+	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #4 ---
+	slot1 = nil
+	slot0.lastNoticeTs = slot1
+	slot1 = nil
+	slot0.onPerformFinish = slot1
+	slot1 = nil
+	slot0._inControl = slot1
+	slot1 = ThrowBallContext
+	slot1 = slot1.destroy
+	slot3 = slot0
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 51-58, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hud
-	slot4 = slot2
-	slot2 = slot2.switchAimVisible
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 59-78, warpins: 3 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.eventEmitter
-	slot4 = slot2
-	slot2 = slot2.removeEventListener
-	slot5 = EventConst
-	slot5 = slot5.BALL_DRIVE_END
-	slot6 = slot0.onPerformFinish
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = nil
-	slot0.lastNoticeTs = slot2
-	slot2 = nil
-	slot0.onPerformFinish = slot2
-	slot2 = nil
-	slot0._inControl = slot2
-	slot2 = ThrowBallContext
-	slot2 = slot2.destroy
-	slot4 = slot0
-
-	slot2(slot4)
+	slot1(slot3)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot15.destroy = slot16
+slot16.destroy = slot17
 
-return slot15
+return slot16
 --- END OF BLOCK #0 ---
 
 

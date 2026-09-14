@@ -1,4 +1,4 @@
---- BLOCK #0 1-75, warpins: 1 ---
+--- BLOCK #0 1-73, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -69,7 +69,7 @@ slot11.ctor = slot13
 
 slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot1.isClientEnt
+	slot2 = slot0.isClientEnt
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -133,7 +133,7 @@ end
 slot11.start = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = ClientHomeStaticEntity
 	slot1 = slot1.super
 	slot1 = slot1.initializeComponents
@@ -141,18 +141,16 @@ slot13 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddMonoComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelMonoComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_PHYSX
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -171,45 +169,7 @@ end
 slot11.initializeComponents = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.eModel
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot2 = false
-	slot1.staticNoTick = slot2
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-12, warpins: 2 ---
-	slot1 = ClientHomeStaticEntity
-	slot1 = slot1.super
-	slot1 = slot1.destroy
-	slot3 = slot0
-
-	slot1(slot3)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot11.destroy = slot13
-
-slot13 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = ClientHomeStaticEntity
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -217,29 +177,21 @@ slot13 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
+	slot3 = slot0
+	slot1 = slot0.hasEModelComponent
+	slot4 = Const
+	slot4 = slot4.COMPONENT_IDX_ITEM
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot1 = slot1.itemComponent
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #2 13-28, warpins: 1 ---
+	--- BLOCK #1 13-28, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setEnableRendererBatch
 	slot6 = slot0
@@ -256,33 +208,33 @@ slot13 = function(slot0)
 	slot2 = slot0.getConfigData
 	slot2 = slot2(slot4)
 	slot2 = slot2.prefabScale
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 29-29, warpins: 1 ---
+	--- BLOCK #2 29-29, warpins: 1 ---
 	slot2 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 30-31, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 30-31, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
 	slot1 = if slot1 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #5 32-47, warpins: 1 ---
+	--- BLOCK #4 32-48, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setScaleNumber
 	slot6 = slot2
@@ -290,27 +242,28 @@ slot13 = function(slot0)
 	slot3(slot5, slot6)
 
 	slot3 = slot0.eModel
-	slot3 = slot3.itemComponent
 	slot5 = slot3
 	slot3 = slot3.SetModelResId
-	slot6 = slot1
-	slot7 = ClientConst
-	slot7 = slot7.InstantiatePriority
-	slot7 = slot7.Low
+	slot6 = Const
+	slot6 = slot6.COMPONENT_IDX_ITEM
+	slot7 = slot1
 	slot8 = ClientConst
-	slot8 = slot8.AsyncLoadPriority
+	slot8 = slot8.InstantiatePriority
 	slot8 = slot8.Low
+	slot9 = ClientConst
+	slot9 = slot9.AsyncLoadPriority
+	slot9 = slot9.Low
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot3(slot5, slot6, slot7, slot8, slot9)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 48-48, warpins: 4 ---
+	--- BLOCK #5 49-49, warpins: 3 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -355,26 +308,28 @@ end
 slot11.checkEnableRendererBatch = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-22, warpins: 1 ---
+	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = true
 	slot0.isModelLoaded = slot1
 	slot1 = slot0.eModel
-	slot1 = slot1.physxComponent
 	slot3 = slot1
 	slot1 = slot1.SetHomeObjectCollider
+	slot4 = Const
+	slot4 = slot4.COMPONENT_IDX_PHYSX
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.physxComponent
 	slot3 = slot1
 	slot1 = slot1.SetTag
 	slot4 = Const
-	slot4 = slot4.TAG_ACTOR
-	slot5 = slot0.actorId
-	slot6 = 0
+	slot4 = slot4.COMPONENT_IDX_PHYSX
+	slot5 = Const
+	slot5 = slot5.TAG_ACTOR
+	slot6 = slot0.actorId
+	slot7 = 0
 
-	slot1(slot3, slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	slot3 = slot0
 	slot1 = slot0.getConfigData
@@ -389,7 +344,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 23-35, warpins: 1 ---
+	--- BLOCK #1 25-37, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getLocalizationText
 	slot4 = slot1
@@ -410,7 +365,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 36-44, warpins: 2 ---
+	--- BLOCK #2 38-46, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.postComponentMethod
 	slot5 = "EVENT_onModelLoaded"

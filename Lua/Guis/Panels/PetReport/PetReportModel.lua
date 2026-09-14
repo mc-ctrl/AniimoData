@@ -1,4 +1,4 @@
---- BLOCK #0 1-70, warpins: 1 ---
+--- BLOCK #0 1-75, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -32,12 +32,15 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Const.UIConst"
 slot9 = slot9(slot11)
-slot10 = slot1.LightClass
-slot12 = "PetReportModel"
-slot13 = slot2
-slot10 = slot10(slot12, slot13)
+slot10 = require
+slot12 = "Data.currency_auto_change_data"
+slot10 = slot10(slot12)
+slot11 = slot1.LightClass
+slot13 = "PetReportModel"
+slot14 = slot2
+slot11 = slot11(slot13, slot14)
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.reportMoney
 	slot0.reportMoney = slot2
@@ -142,9 +145,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.setReportData = slot11
+slot11.setReportData = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = 300001
 	slot0.countryId = slot1
@@ -162,9 +165,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.ctor = slot11
+slot11.ctor = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isFirstEnter
 	--- END OF BLOCK #0 ---
@@ -201,9 +204,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.sendOpenedRPC = slot11
+slot11.sendOpenedRPC = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.reportMoney
 	--- END OF BLOCK #0 ---
@@ -293,22 +296,21 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 20-26, warpins: 1 ---
+	--- BLOCK #5 20-25, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.me
 	slot8 = slot6
-	slot6 = slot6.serverMsg
-	slot9 = "RPC_CS_PetResearchReport"
-	slot10 = slot5.areaId
+	slot6 = slot6.reportPetResearch
+	slot9 = slot5.areaId
 
-	slot6(slot8, slot9, slot10)
+	slot6(slot8, slot9)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 27-28, warpins: 2 ---
+	--- BLOCK #6 26-27, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -316,7 +318,7 @@ slot11 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 29-29, warpins: 2 ---
+	--- BLOCK #7 28-28, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -324,9 +326,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.sendRpc = slot11
+slot11.sendRpc = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = ipairs
@@ -401,9 +403,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.getTopicData = slot11
+slot11.getTopicData = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = DropData
@@ -413,23 +415,33 @@ slot11 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 6-12, warpins: 1 ---
+	--- BLOCK #1 6-10, warpins: 1 ---
 	slot2 = DropData
 	slot2 = slot2[slot0]
 	slot2 = slot2.displayReward
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot2
 	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 13-21, warpins: 1 ---
+	--- BLOCK #3 15-23, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot1
@@ -441,30 +453,30 @@ slot11 = function(slot0)
 
 	slot8(slot10, slot11)
 
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 22-23, warpins: 2 ---
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-25, warpins: 2 ---
+	--- END OF BLOCK #4 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #4 24-24, warpins: 2 ---
+	--- BLOCK #5 26-26, warpins: 3 ---
 	return slot1
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot10.getDropInfo = slot11
+slot11.getDropInfo = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot2 = {
@@ -480,57 +492,41 @@ slot11 = function(slot0)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 11-16, warpins: 1 ---
+	--- BLOCK #1 11-15, warpins: 1 ---
 	slot9 = slot0
-	slot7 = slot0._getItemRewardItemId
+	slot7 = slot0._setItemRewardItemId
 	slot10 = slot6.itemReward1
-	slot7 = slot7(slot9, slot10)
+	slot11 = slot1
+
+	slot7(slot9, slot10, slot11)
+
 	--- END OF BLOCK #1 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-21, warpins: 1 ---
-	slot8 = #slot1
-	slot8 = slot8 + 1
-	slot9 = {
-		count = 0,
-		originCount = 0
-	}
-	slot9.itemId = slot7
-	slot1[slot8] = slot9
-
+	--- BLOCK #2 16-17, warpins: 2 ---
 	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 22-23, warpins: 3 ---
-	--- END OF BLOCK #3 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #4 24-24, warpins: 1 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot10.getRewardInitDataInPhase1 = slot11
+slot11.getRewardInitDataInPhase1 = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
 	slot2 = {
@@ -546,57 +542,41 @@ slot11 = function(slot0)
 	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 11-16, warpins: 1 ---
+	--- BLOCK #1 11-15, warpins: 1 ---
 	slot9 = slot0
-	slot7 = slot0._getItemRewardItemId
+	slot7 = slot0._setItemRewardItemId
 	slot10 = slot6.itemReward2
-	slot7 = slot7(slot9, slot10)
+	slot11 = slot1
+
+	slot7(slot9, slot10, slot11)
+
 	--- END OF BLOCK #1 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-21, warpins: 1 ---
-	slot8 = #slot1
-	slot8 = slot8 + 1
-	slot9 = {
-		count = 0,
-		originCount = 0
-	}
-	slot9.itemId = slot7
-	slot1[slot8] = slot9
-
+	--- BLOCK #2 16-17, warpins: 2 ---
 	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 22-23, warpins: 3 ---
-	--- END OF BLOCK #3 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #4 24-24, warpins: 1 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
 	return slot1
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot10.getRewardInitDataInShinyTime = slot11
+slot11.getRewardInitDataInShinyTime = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
@@ -634,9 +614,9 @@ slot11 = function()
 
 end
 
-slot10.getPetNotBeReleaseData = slot11
+slot11.getPetNotBeReleaseData = slot12
 
-slot11 = function()
+slot12 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
@@ -662,10 +642,10 @@ slot11 = function()
 
 end
 
-slot10.getPetReleaseData = slot11
-slot11 = "PET_RELEASE_%s"
+slot11.getPetReleaseData = slot12
+slot12 = "PET_RELEASE_%s"
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -689,9 +669,9 @@ slot12 = function(slot0)
 
 end
 
-slot10.getPetReleaseState = slot12
+slot11.getPetReleaseState = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -715,16 +695,16 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot10.setPetReleaseState = slot12
+slot11.setPetReleaseState = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot2
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
 	--- BLOCK #1 5-7, warpins: 1 ---
@@ -734,7 +714,7 @@ slot12 = function(slot0, slot1, slot2)
 	if slot7 ~= slot8 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #13
 	end
 
 
@@ -772,7 +752,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot9 = if slot9 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #13
 	end
 
 
@@ -809,73 +789,87 @@ slot12 = function(slot0, slot1, slot2)
 	slot9, slot10, slot11 = slot9(slot11)
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #8 41-45, warpins: 1 ---
-	slot14 = slot13.itemId
-	slot15 = slot13.itemId
-	slot15 = slot1[slot15]
+	--- BLOCK #8 41-46, warpins: 1 ---
+	slot14 = PetReportModel
+	slot14 = slot14.isCurrencyUnlocked
+	slot16 = slot13.itemId
+	slot14 = slot14(slot16)
 	--- END OF BLOCK #8 ---
 
-	slot15 = if not slot15 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 46-46, warpins: 1 ---
-	slot15 = 0
+	--- BLOCK #9 47-51, warpins: 1 ---
+	slot14 = slot13.itemId
+	slot15 = slot13.itemId
+	slot15 = slot1[slot15]
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 47-49, warpins: 2 ---
-	slot16 = slot13.count
-	slot15 = slot15 + slot16
-	slot1[slot14] = slot15
-
+	--- BLOCK #10 52-52, warpins: 1 ---
+	slot15 = 0
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 50-51, warpins: 2 ---
+	--- BLOCK #11 53-55, warpins: 2 ---
+	slot16 = slot13.count
+	slot15 = slot15 + slot16
+	slot1[slot14] = slot15
+
 	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 56-57, warpins: 3 ---
+	--- END OF BLOCK #12 ---
 
 	for slot12, slot13 in slot9, slot10, slot11
 	LOOP BLOCK #8
-	GO OUT TO BLOCK #12
-
-
-	--- BLOCK #12 52-53, warpins: 4 ---
-	--- END OF BLOCK #12 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
 	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #13 54-54, warpins: 1 ---
-	return
+	--- BLOCK #13 58-59, warpins: 4 ---
 	--- END OF BLOCK #13 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 60-60, warpins: 1 ---
+	return
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot10.calcCoinCountInPhase1 = slot12
+slot11.calcCoinCountInPhase1 = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot2
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
 	--- BLOCK #1 5-7, warpins: 1 ---
@@ -885,7 +879,7 @@ slot12 = function(slot0, slot1, slot2)
 	if slot7 ~= slot8 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
@@ -940,7 +934,7 @@ slot12 = function(slot0, slot1, slot2)
 	slot9 = if slot9 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
@@ -977,133 +971,246 @@ slot12 = function(slot0, slot1, slot2)
 	slot9, slot10, slot11 = slot9(slot11)
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #10 44-48, warpins: 1 ---
-	slot14 = slot13.itemId
-	slot15 = slot13.itemId
-	slot15 = slot1[slot15]
+	--- BLOCK #10 44-49, warpins: 1 ---
+	slot14 = PetReportModel
+	slot14 = slot14.isCurrencyUnlocked
+	slot16 = slot13.itemId
+	slot14 = slot14(slot16)
 	--- END OF BLOCK #10 ---
 
-	slot15 = if not slot15 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 49-49, warpins: 1 ---
-	slot15 = 0
+	--- BLOCK #11 50-54, warpins: 1 ---
+	slot14 = slot13.itemId
+	slot15 = slot13.itemId
+	slot15 = slot1[slot15]
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #12 50-52, warpins: 2 ---
-	slot16 = slot13.count
-	slot15 = slot15 + slot16
-	slot1[slot14] = slot15
-
+	--- BLOCK #12 55-55, warpins: 1 ---
+	slot15 = 0
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 53-54, warpins: 2 ---
+	--- BLOCK #13 56-58, warpins: 2 ---
+	slot16 = slot13.count
+	slot15 = slot15 + slot16
+	slot1[slot14] = slot15
+
 	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 59-60, warpins: 3 ---
+	--- END OF BLOCK #14 ---
 
 	for slot12, slot13 in slot9, slot10, slot11
 	LOOP BLOCK #10
-	GO OUT TO BLOCK #14
-
-
-	--- BLOCK #14 55-56, warpins: 4 ---
-	--- END OF BLOCK #14 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 57-57, warpins: 1 ---
-	return
+	--- BLOCK #15 61-62, warpins: 4 ---
 	--- END OF BLOCK #15 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #16
+
+
+	--- BLOCK #16 63-63, warpins: 1 ---
+	return
+	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot10.calcCoinCountInPhase2 = slot12
+slot11.calcCoinCountInPhase2 = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
 	--- BLOCK #1 3-6, warpins: 1 ---
-	slot2 = DropData
-	slot2 = slot2[slot1]
+	slot3 = DropData
+	slot3 = slot3[slot1]
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
 	--- BLOCK #2 7-11, warpins: 1 ---
-	slot2 = DropData
-	slot2 = slot2[slot1]
-	slot2 = slot2.displayReward
+	slot3 = DropData
+	slot3 = slot3[slot1]
+	slot3 = slot3.displayReward
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 12-14, warpins: 1 ---
-	slot3 = slot2[1]
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot4 = ipairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 16-21, warpins: 1 ---
+	slot9 = PetReportModel
+	slot9 = slot9.isCurrencyUnlocked
+	slot11 = slot8[1]
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #4 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-27, warpins: 1 ---
+	slot9 = #slot2
+	slot9 = slot9 + 1
+	slot10 = {
+		count = 0,
+		originCount = 0
+	}
+	slot11 = slot8[1]
+	slot10.itemId = slot11
+	slot2[slot9] = slot10
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-29, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 30-30, warpins: 4 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot11._setItemRewardItemId = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = CurrencyAutoData
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.initTitle
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-15, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.starTitle
+	slot3 = slot1.initTitle
+	--- END OF BLOCK #3 ---
+
+	if slot3 > slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 15-17, warpins: 1 ---
-	slot3 = slot2[1]
-	slot3 = slot3[1]
-
-	return slot3
+	--- BLOCK #4 16-17, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 18-18, warpins: 5 ---
-	return
+	--- BLOCK #5 18-18, warpins: 1 ---
+	slot2 = true
+
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-19, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot10._getItemRewardItemId = slot12
+slot11.isCurrencyUnlocked = slot13
 
-return slot10
+return slot11
 --- END OF BLOCK #0 ---
 
 

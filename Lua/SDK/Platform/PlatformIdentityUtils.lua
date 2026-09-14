@@ -89,7 +89,7 @@ slot1 = nil
 FLOW; TARGET BLOCK #7
 
 
---- BLOCK #7 38-80, warpins: 2 ---
+--- BLOCK #7 38-86, warpins: 2 ---
 slot2 = {}
 slot3 = slot0.Family
 slot2.Family = slot3
@@ -718,6 +718,470 @@ slot3 = function(slot0, slot1)
 end
 
 slot2.waitForSignedIn = slot3
+
+slot3 = function(slot0, slot1)
+	--- BLOCK #0 1-48, warpins: 1 ---
+	slot2 = require
+	slot4 = "SDK.Platform.PlatformTextCommunicationService"
+	slot2 = slot2(slot4)
+	slot3 = require
+	slot5 = "SDK.Platform.PlatformSocialService"
+	slot3 = slot3(slot5)
+	slot4 = require
+	slot6 = "SDK.Platform.PlatformTextMaskService"
+	slot4 = slot4(slot6)
+	slot5 = require
+	slot7 = "SDK.Platform.PlatformImageMaskService"
+	slot5 = slot5(slot7)
+	slot6 = require
+	slot8 = "SDK.Platform.PlatformUGCService"
+	slot6 = slot6(slot8)
+	slot7 = require
+	slot9 = "SDK.Platform.PlatformCommunicationService"
+	slot7 = slot7(slot9)
+	slot8 = require
+	slot10 = "Common.Const.EventConst"
+	slot8 = slot8(slot10)
+	slot11 = slot2
+	slot9 = slot2.clearPermissionCache
+	slot12 = {
+		clearUGCService = false
+	}
+
+	slot9(slot11, slot12)
+
+	slot11 = slot3
+	slot9 = slot3.refreshPlatformFriendCache
+
+	slot9(slot11)
+
+	slot11 = slot4
+	slot9 = slot4.clearCache
+
+	slot9(slot11)
+
+	slot11 = slot5
+	slot9 = slot5.clearCache
+
+	slot9(slot11)
+
+	slot11 = slot6
+	slot9 = slot6.refreshLocalPolicy
+	slot12 = slot0
+
+	slot13 = function(slot0)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot1 = pg
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #2 8-12, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.eventEmitter
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #3 13-15, warpins: 1 ---
+		slot1 = EventConst
+		--- END OF BLOCK #3 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #4 16-19, warpins: 1 ---
+		slot1 = EventConst
+		slot1 = slot1.PLATFORM_NAME_MASK_POLICY_REFRESHED
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 20-32, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.eventEmitter
+		slot3 = slot1
+		slot1 = slot1.emit
+		slot4 = EventConst
+		slot4 = slot4.PLATFORM_NAME_MASK_POLICY_REFRESHED
+		slot5 = {}
+		slot6 = reason
+		slot5.reason = slot6
+		slot6 = source
+		slot5.source = slot6
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 33-35, warpins: 6 ---
+		slot1 = pg
+		--- END OF BLOCK #6 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #7 36-39, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		--- END OF BLOCK #7 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #8 40-44, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.eventEmitter
+		--- END OF BLOCK #8 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #9 45-47, warpins: 1 ---
+		slot1 = EventConst
+		--- END OF BLOCK #9 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #10 48-51, warpins: 1 ---
+		slot1 = EventConst
+		slot1 = slot1.PLATFORM_UGC_POLICY_CHANGED
+		--- END OF BLOCK #10 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 52-65, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.eventEmitter
+		slot3 = slot1
+		slot1 = slot1.emit
+		slot4 = EventConst
+		slot4 = slot4.PLATFORM_UGC_POLICY_CHANGED
+		slot5 = {}
+		slot6 = reason
+		slot5.reason = slot6
+		slot6 = source
+		slot5.source = slot6
+		slot5.policy = slot0
+
+		slot1(slot3, slot4, slot5)
+
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 66-66, warpins: 6 ---
+		return
+		--- END OF BLOCK #12 ---
+
+
+
+	end
+
+	slot9(slot11, slot12, slot13)
+
+	slot11 = slot2
+	slot9 = slot2.prefetchLocalCommunicationPrivileges
+
+	slot9(slot11)
+
+	slot11 = slot7
+	slot9 = slot7.refreshLocalCommunicationPolicy
+
+	slot12 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = pg
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #2 8-12, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.chat
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 13-20, warpins: 1 ---
+		slot0 = type
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.chat
+		slot2 = slot2.refreshPlatformFilteredChatMessages
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #3 ---
+
+		if slot0 == "function" then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 21-27, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.chat
+		slot2 = slot0
+		slot0 = slot0.refreshPlatformFilteredChatMessages
+		slot3 = reason
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 28-30, warpins: 5 ---
+		slot0 = pg
+		--- END OF BLOCK #5 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #6 31-34, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		--- END OF BLOCK #6 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #7 35-39, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.chat
+		--- END OF BLOCK #7 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #8 40-47, warpins: 1 ---
+		slot0 = type
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.chat
+		slot2 = slot2.refreshPlatformFilteredMails
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #8 ---
+
+		if slot0 == "function" then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 48-54, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.chat
+		slot2 = slot0
+		slot0 = slot0.refreshPlatformFilteredMails
+		slot3 = reason
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 55-55, warpins: 5 ---
+		return
+		--- END OF BLOCK #10 ---
+
+
+
+	end
+
+	slot9(slot11, slot12)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.refreshPrivacyCaches = slot3
+
+slot3 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = PlatformIdentityUtils
+	slot2 = slot2.getCurrentPlatformFamily
+	slot2 = slot2()
+	slot3 = PlatformIdentityUtils
+	slot3 = slot3.Family
+	slot3 = slot3.PlayStation
+	--- END OF BLOCK #0 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot2 = PlatformIdentityUtils
+	slot2 = slot2.refreshPrivacyCaches
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-14, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.refreshPrivacyCachesIfPS = slot3
+
+slot3 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = PlatformIdentityUtils
+	slot2 = slot2.getCurrentPlatformFamily
+	slot2 = slot2()
+	slot3 = PlatformIdentityUtils
+	slot3 = slot3.Family
+	slot3 = slot3.PlayStation
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot2 = PlatformIdentityUtils
+	slot2 = slot2.refreshPrivacyCaches
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-14, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.refreshPrivacyCachesIfNotPS = slot3
 
 return slot2
 --- END OF BLOCK #7 ---

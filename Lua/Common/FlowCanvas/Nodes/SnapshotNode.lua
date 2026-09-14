@@ -1,28 +1,31 @@
---- BLOCK #0 1-32, warpins: 1 ---
+--- BLOCK #0 1-35, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.FlowCanvas.Nodes.FlowNode"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Log.LoggerManager"
+slot4 = "Common.FlowCanvas.Nodes.FlowNode"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Log.LoggerConst"
+slot5 = "Core.Log.LoggerManager"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.Utils"
+slot6 = "Core.Log.LoggerConst"
 slot4 = slot4(slot6)
-slot5 = Vector3
-slot6 = Quaternion
-slot7 = unpack
-slot8 = slot0.LiteClass
-slot10 = "SnapshotNode"
-slot11 = slot1
-slot8 = slot8(slot10, slot11)
+slot5 = require
+slot7 = "Common.Utils.Utils"
+slot5 = slot5(slot7)
+slot6 = Vector3
+slot7 = Quaternion
+slot8 = unpack
+slot9 = slot1.LiteClass
+slot11 = "SnapshotNode"
+slot12 = slot2
+slot9 = slot9(slot11, slot12)
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = SnapshotNode
 	slot4 = slot4.super
@@ -41,9 +44,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.ctor = slot9
+slot9.ctor = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addFlowInput
@@ -101,9 +104,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.registerPorts = slot9
+slot9.registerPorts = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.getSpace
@@ -140,7 +143,7 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #3 12-12, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -196,7 +199,7 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #8 35-35, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -350,7 +353,7 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #22 87-87, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
@@ -428,7 +431,7 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #28 122-122, warpins: 1 ---
-	slot6 = {}
+	slot6 = EMPTY_TABLE
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
@@ -562,9 +565,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot8.On_In_PortCalled = slot9
+slot9.On_In_PortCalled = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -670,13 +673,13 @@ slot9 = function(slot0, slot1, slot2)
 
 	--- BLOCK #9 32-38, warpins: 2 ---
 	slot7 = slot4
-	slot5 = slot4.getSceneTaskSpawnerFinalState
+	slot5 = slot4.getTaskSpawnerEffectiveState
 	slot8 = slot1.sceneId
-	slot5 = slot5(slot7, slot8)
-	slot6 = slot5[slot2]
+	slot9 = slot2
+	slot5 = slot5(slot7, slot8, slot9)
 	--- END OF BLOCK #9 ---
 
-	if slot6 ~= 0 then
+	if slot5 ~= 0 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
@@ -684,14 +687,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #10 39-40, warpins: 1 ---
-	slot6 = false
+	slot5 = false
 	--- END OF BLOCK #10 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
 	--- BLOCK #11 41-41, warpins: 1 ---
-	slot6 = true
+	slot5 = true
 
 	--- END OF BLOCK #11 ---
 
@@ -699,16 +702,16 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #12 42-42, warpins: 2 ---
-	return slot6
+	return slot5
 	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot8.isSpawnerDisabled = slot9
+slot9.isSpawnerDisabled = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

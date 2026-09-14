@@ -169,12 +169,10 @@ slot21 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 30-36, warpins: 2 ---
+	--- BLOCK #4 30-34, warpins: 2 ---
 	slot0.configData = slot2
 	slot2 = true
 	slot0.isInScene = slot2
-	slot2 = true
-	slot0.isClientEnt = slot2
 	slot2 = true
 
 	return slot2
@@ -205,25 +203,23 @@ end
 slot7.start = slot21
 
 slot21 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_AddEComponent"
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_EFFECT
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -265,7 +261,7 @@ end
 slot7.postInitializeComponents = slot21
 
 slot21 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = ClientGrabEggSettlementVirtualEntity
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -274,8 +270,7 @@ slot21 = function(slot0)
 	slot1(slot3)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.itemComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.itemModelView
 	slot2 = false
 	slot1.keepPrefabLayer = slot2
 	slot3 = slot0
@@ -286,20 +281,18 @@ slot21 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 22-22, warpins: 1 ---
+	--- BLOCK #1 19-19, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -307,7 +300,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 23-27, warpins: 2 ---
+	--- BLOCK #2 20-24, warpins: 2 ---
 	slot1 = slot0.patternType
 	slot2 = EggIdToModelResData
 	slot2 = slot2[slot1]
@@ -320,7 +313,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #3 28-29, warpins: 1 ---
+	--- BLOCK #3 25-26, warpins: 1 ---
 	slot2 = EggIdToModelResData
 	slot2 = slot2[1]
 	--- END OF BLOCK #3 ---
@@ -328,7 +321,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 30-32, warpins: 2 ---
+	--- BLOCK #4 27-29, warpins: 2 ---
 	slot3 = slot2.model
 	--- END OF BLOCK #4 ---
 
@@ -339,28 +332,28 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #5 33-45, warpins: 1 ---
+	--- BLOCK #5 30-42, warpins: 1 ---
 	slot4 = slot0.eModel
-	slot4 = slot4.itemComponent
-	slot4 = slot4.modelView
+	slot4 = slot4.itemModelView
 	slot5 = ClientConst
 	slot5 = slot5.LayerDefine
 	slot5 = slot5.LAYER_NOACROSS
 	slot4.forceColliderLayer = slot5
 	slot4 = slot0.eModel
-	slot4 = slot4.itemComponent
 	slot6 = slot4
 	slot4 = slot4.SetModelResId
-	slot7 = slot3
+	slot7 = Const
+	slot7 = slot7.COMPONENT_IDX_ITEM
+	slot8 = slot3
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 46-46, warpins: 2 ---
+	--- BLOCK #6 43-43, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -371,10 +364,9 @@ end
 slot7.refreshAppearance = slot21
 
 slot21 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.itemComponent
-	slot1 = slot1.modelView
+	slot1 = slot1.itemModelView
 	slot2 = slot0.patternColorType
 	slot3 = EggRandomModelIdData
 	slot4 = slot0.templateId
@@ -388,7 +380,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-12, warpins: 1 ---
+	--- BLOCK #1 9-11, warpins: 1 ---
 	slot3 = EggRandomModelIdData
 	slot4 = 5010001
 	slot3 = slot3[slot4]
@@ -397,7 +389,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-14, warpins: 2 ---
+	--- BLOCK #2 12-13, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	slot4 = if slot3 then
@@ -407,14 +399,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #3 15-15, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
 	slot4 = slot3.modelScale
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-17, warpins: 2 ---
+	--- BLOCK #4 15-16, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	slot4 = if slot4 then
@@ -424,7 +416,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #5 18-26, warpins: 1 ---
+	--- BLOCK #5 17-25, warpins: 1 ---
 	slot7 = slot1
 	slot5 = slot1.SetModelScale
 	slot8 = slot4
@@ -443,21 +435,21 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 27-56, warpins: 2 ---
+	--- BLOCK #6 26-55, warpins: 2 ---
 	slot5 = ClientModelUtils
 	slot5 = slot5.applyEggModelMaterialEffect
-	slot7 = slot1
-	slot8 = slot3
-	slot9 = slot2
+	slot7 = slot0
+	slot8 = slot1
+	slot9 = slot3
+	slot10 = slot2
 
-	slot5(slot7, slot8, slot9)
+	slot5(slot7, slot8, slot9, slot10)
 
 	slot5 = true
 	slot0.isModelLoaded = slot5
 	slot5 = slot0.eModel
-	slot5 = slot5.transform
 	slot7 = slot5
-	slot5 = slot5.SetParent
+	slot5 = slot5.SetTransformParent
 	slot8 = slot0.rootTransform
 	slot9 = false
 
@@ -522,21 +514,23 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
-	slot2 = IsNil
-	slot4 = slot0.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.hasEModelComponent
+	slot5 = Const
+	slot5 = slot5.COMPONENT_IDX_PHYSX
+	slot2 = slot2(slot4, slot5)
 
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 12-12, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -544,24 +538,20 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-18, warpins: 2 ---
-	slot2 = slot0.eModel
-	slot4 = slot2
-	slot2 = slot2.GetMonoComponent
-	slot5 = ClientConst
-	slot5 = slot5.COMPONENT_IDX_PHYSX
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #4 13-16, warpins: 2 ---
+	slot2 = RigidbodyData
+	slot2 = slot2.GrabEGG_Egg
 
 	--- END OF BLOCK #4 ---
 
-	if slot2 == nil then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 19-19, warpins: 1 ---
+	--- BLOCK #5 17-17, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #5 ---
@@ -569,152 +559,136 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-23, warpins: 2 ---
-	slot3 = RigidbodyData
-	slot3 = slot3.GrabEGG_Egg
-
+	--- BLOCK #6 18-22, warpins: 2 ---
+	slot3 = ToBool
+	slot5 = slot2.radius
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #6 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 24-24, warpins: 1 ---
-	return
-
+	--- BLOCK #7 23-25, warpins: 1 ---
+	slot3 = slot2.radius
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 25-29, warpins: 2 ---
-	slot4 = ToBool
-	slot6 = slot3.radius
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #8 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #9
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #9 30-32, warpins: 1 ---
-	slot4 = slot3.radius
+	--- BLOCK #8 26-26, warpins: 2 ---
+	slot3 = 0.1
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 27-32, warpins: 2 ---
+	slot3 = slot3 * slot1
+	slot4 = ToBool
+	slot6 = slot2.height
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #9 ---
 
-	slot4 = if not slot4 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 33-33, warpins: 2 ---
-	slot4 = 0.1
+	--- BLOCK #10 33-35, warpins: 1 ---
+	slot4 = slot2.height
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 34-39, warpins: 2 ---
-	slot4 = slot4 * slot1
-	slot5 = ToBool
-	slot7 = slot3.height
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #11 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #12
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #12 40-42, warpins: 1 ---
-	slot5 = slot3.height
+	--- BLOCK #11 36-36, warpins: 2 ---
+	slot4 = 0.1
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 37-41, warpins: 2 ---
+	slot4 = slot4 * slot1
+	slot5 = nil
+	slot6 = slot2.center
 	--- END OF BLOCK #12 ---
 
-	slot5 = if not slot5 then
+	if slot6 == nil then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 43-43, warpins: 2 ---
-	slot5 = 0.1
+	--- BLOCK #13 42-51, warpins: 1 ---
+	slot6 = Vector3
+	slot6 = slot6.New
+	slot8 = 0
+	slot9 = slot2.height
+	slot9 = slot9 * 0.5
+	slot9 = slot9 * slot1
+	slot10 = 0
+	slot6 = slot6(slot8, slot9, slot10)
+	slot5 = slot6
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 44-50, warpins: 2 ---
-	slot5 = slot5 * slot1
+	--- BLOCK #14 52-62, warpins: 1 ---
 	slot6 = Vector3
 	slot6 = slot6.New
 	slot6 = slot6()
-	slot7 = slot3.center
+	slot5 = slot6
+	slot8 = slot5
+	slot6 = slot5.Copy
+	slot9 = slot2.center
+
+	slot6(slot8, slot9)
+
+	slot6 = slot5.y
+	slot6 = slot6 * slot1
+	slot5.y = slot6
 	--- END OF BLOCK #14 ---
 
-	if slot7 == nil then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 51-60, warpins: 1 ---
-	slot7 = Vector3
-	slot7 = slot7.New
-	slot9 = 0
-	slot10 = slot3.height
-	slot10 = slot10 * 0.5
-	slot10 = slot10 * slot1
-	slot11 = 0
-	slot7 = slot7(slot9, slot10, slot11)
-	slot6 = slot7
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #16 61-67, warpins: 1 ---
-	slot9 = slot6
-	slot7 = slot6.Copy
-	slot10 = slot3.center
-
-	slot7(slot9, slot10)
-
-	slot7 = slot6.y
-	slot7 = slot7 * slot1
-	slot6.y = slot7
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 68-80, warpins: 2 ---
-	slot7 = ToBool
-	slot9 = slot3.trigger
-	slot7 = slot7(slot9)
-	slot10 = slot2
-	slot8 = slot2.GenCapsule
-	slot11 = slot4
-	slot12 = slot5
-	slot13 = slot6
-	slot14 = slot7
+	--- BLOCK #15 63-78, warpins: 2 ---
+	slot6 = ToBool
+	slot8 = slot2.trigger
+	slot6 = slot6(slot8)
+	slot7 = slot0.eModel
+	slot9 = slot7
+	slot7 = slot7.GenCapsule
+	slot10 = Const
+	slot10 = slot10.COMPONENT_IDX_PHYSX
+	slot11 = slot3
+	slot12 = slot4
+	slot13 = slot5
+	slot14 = slot6
 	slot15 = false
 	slot16 = true
 
-	slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16)
+	slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16)
 
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #15 ---
 
 
 
@@ -723,7 +697,7 @@ end
 slot7.rescaleCollider = slot21
 
 slot21 = function(slot0)
-	--- BLOCK #0 1-31, warpins: 1 ---
+	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = true
 	slot0.isModelLoaded = slot1
 	slot3 = slot0
@@ -761,12 +735,13 @@ slot21 = function(slot0)
 	slot1(slot3)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.physxComponent
 	slot3 = slot1
 	slot1 = slot1.SetCollisionDetectionMode
-	slot4 = 3
+	slot4 = Const
+	slot4 = slot4.COMPONENT_IDX_PHYSX
+	slot5 = 3
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---

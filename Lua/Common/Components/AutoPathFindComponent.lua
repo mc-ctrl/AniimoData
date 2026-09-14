@@ -27,17 +27,17 @@ slot8 = slot0.Component
 slot10 = "AutoPathFindComponent"
 slot8 = slot8(slot10)
 slot9 = {
-	WaitNavmeshFindClosePositionService = 1,
 	WaitNavmeshRandomPositionService = 3,
-	WaitNavmeshRaycastHitService = 2
+	WaitNavmeshRaycastHitService = 2,
+	WaitNavmeshFindClosePositionService = 1
 }
 slot10 = 500
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {
-		reachEndPos = false,
-		currentPathFindId = 0
+		currentPathFindId = 0,
+		reachEndPos = false
 	}
 	slot2 = {}
 	slot1.navmeshServiceLastTimeStampMap = slot2
@@ -181,39 +181,49 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-13, warpins: 2 ---
-	slot3 = navmeshServiceRequestTimeOut
-	slot3 = slot2 + slot3
-	slot4 = Time
-	slot4 = slot4.getMillisecond
-	slot4 = slot4()
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot3 = Time
+	slot3 = slot3.realSecondCache
+	slot3 = slot3 * 1000
 	--- END OF BLOCK #2 ---
 
-	if slot3 >= slot4 then
+	if slot2 <= slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 14-15, warpins: 1 ---
-	slot3 = false
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot4 = navmeshServiceRequestTimeOut
+	slot4 = slot2 + slot4
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 16-16, warpins: 1 ---
-	slot3 = true
-
+	--- BLOCK #4 16-17, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 17-17, warpins: 2 ---
-	return slot3
+	--- BLOCK #5 18-18, warpins: 2 ---
+	slot4 = true
+
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 19-19, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #6 ---
 
 
 
@@ -226,8 +236,8 @@ slot11 = function(slot0, slot1)
 	slot2 = slot0.pathFindData
 	slot2 = slot2.navmeshServiceLastTimeStampMap
 	slot3 = Time
-	slot3 = slot3.getMillisecond
-	slot3 = slot3()
+	slot3 = slot3.realSecondCache
+	slot3 = slot3 * 1000
 	slot2[slot1] = slot3
 
 	return

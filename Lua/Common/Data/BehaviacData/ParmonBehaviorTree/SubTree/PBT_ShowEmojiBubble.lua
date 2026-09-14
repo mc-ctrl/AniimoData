@@ -7,24 +7,24 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_ShowEmojiBubble",
+	agenttype = "CombatAgent",
 	version = 5,
-	useForRoute = true,
-	agenttype = "CombatAgent"
+	name = "ParmonBehaviorTree/SubTree/PBT_ShowEmojiBubble",
+	useForRoute = true
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "string",
 	const = "",
+	type = "string",
 	name = "tEmojiBubbleKey",
 	value = ""
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
 	const = 5,
+	type = "float",
 	name = "tEmojiBubbleTimeout",
 	value = "5"
 }

@@ -1,4 +1,4 @@
---- BLOCK #0 1-137, warpins: 1 ---
+--- BLOCK #0 1-140, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -35,39 +35,42 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Const.VolumeEffectConst"
 slot11 = slot11(slot13)
-slot12 = CS
-slot12 = slot12.FunPlus
-slot12 = slot12.WorldX
-slot12 = slot12.Entities
-slot12 = slot12.EnvObj
-slot12 = slot12.MagneticObject
+slot12 = require
+slot14 = "Common.Const.Const"
+slot12 = slot12(slot14)
 slot13 = CS
 slot13 = slot13.FunPlus
 slot13 = slot13.WorldX
 slot13 = slot13.Entities
-slot13 = slot13.Components
-slot13 = slot13.MagnesisControlState
-slot14 = require
-slot16 = "Common.Utils.AIControllerUtils"
-slot14 = slot14(slot16)
+slot13 = slot13.EnvObj
+slot13 = slot13.MagneticObject
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.Entities
+slot14 = slot14.Components
+slot14 = slot14.MagnesisControlState
 slot15 = require
-slot17 = "Common.Const.SandboxConst"
+slot17 = "Common.Utils.AIControllerUtils"
 slot15 = slot15(slot17)
-slot16 = Vector3
-slot17 = typeof
-slot18 = NotNil
-slot19 = ToBool
-slot20 = unpack
-slot21 = {
+slot16 = require
+slot18 = "Common.Const.SandboxConst"
+slot16 = slot16(slot18)
+slot17 = Vector3
+slot18 = typeof
+slot19 = NotNil
+slot20 = ToBool
+slot21 = unpack
+slot22 = {
 	FAILED_KINEMATIC_TARGET = 0,
 	FAILED_NO_TARGET = -1,
 	SUCCESS = 1
 }
-slot22 = slot2.Component
-slot24 = "ClientMagnesisComponent"
-slot22 = slot22(slot24)
+slot23 = slot2.Component
+slot25 = "ClientMagnesisComponent"
+slot23 = slot23(slot25)
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = false
 	slot0.isGrabbing = slot1
@@ -121,9 +124,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.ctor = slot23
+slot23.ctor = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMagnesisModeEnable
@@ -138,9 +141,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.destroy = slot23
+slot23.preDestroy = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-50, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.enableMagnesisMode
@@ -210,9 +213,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.setMagnesisModeEnable = slot23
+slot23.setMagnesisModeEnable = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -250,12 +253,13 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 13-19, warpins: 1 ---
+	--- BLOCK #3 13-20, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.magnesisControllerComponent
 	slot4 = slot2
 	slot2 = slot2.IsControlling
-	slot2 = slot2(slot4)
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MAGNESIS_CONTROLLER
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #3 ---
 
 	slot2 = if slot2 then
@@ -265,7 +269,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 20-22, warpins: 1 ---
+	--- BLOCK #4 21-23, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.onStopMagnesisControl
 
@@ -276,7 +280,7 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 23-28, warpins: 3 ---
+	--- BLOCK #5 24-29, warpins: 3 ---
 	slot4 = slot0
 	slot2 = slot0.onLeaveMagnesisMode
 
@@ -292,7 +296,7 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-29, warpins: 2 ---
+	--- BLOCK #6 30-30, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -300,9 +304,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.enableMagnesisMode = slot23
+slot23.enableMagnesisMode = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isGrabbing
 	--- END OF BLOCK #0 ---
@@ -314,12 +318,13 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
+	--- BLOCK #1 4-14, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot3 = slot1
 	slot1 = slot1.TryGetCurLockedMagneticObj
-	slot1 = slot1(slot3)
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
+	slot1 = slot1(slot3, slot4)
 	slot2 = NotNil
 	slot4 = slot1
 	slot2 = slot2(slot4)
@@ -332,7 +337,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #2 14-21, warpins: 1 ---
+	--- BLOCK #2 15-22, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetGlobalId
 	slot2 = slot2(slot4)
@@ -348,7 +353,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #3 22-27, warpins: 1 ---
+	--- BLOCK #3 23-28, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
 	slot6 = "RPC_CS_OnMagnesisControl"
@@ -382,14 +387,15 @@ slot23 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-21, warpins: 2 ---
+		--- BLOCK #2 11-22, warpins: 2 ---
 		slot1 = self
 		slot1 = slot1.eModel
-		slot1 = slot1.magnesisControllerComponent
 		slot3 = slot1
 		slot1 = slot1.MagnesisGrab
-		slot4 = magneticObj
-		slot1 = slot1(slot3, slot4)
+		slot4 = Const
+		slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
+		slot5 = magneticObj
+		slot1 = slot1(slot3, slot4, slot5)
 		slot2 = MAGNESIS_GRAB_RESULT
 		slot2 = slot2.SUCCESS
 		--- END OF BLOCK #2 ---
@@ -401,7 +407,7 @@ slot23 = function(slot0)
 		end
 
 
-		--- BLOCK #3 22-38, warpins: 1 ---
+		--- BLOCK #3 23-39, warpins: 1 ---
 		slot2 = self
 		slot3 = true
 		slot2.isGrabbing = slot3
@@ -427,7 +433,7 @@ slot23 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #4 39-42, warpins: 1 ---
+		--- BLOCK #4 40-43, warpins: 1 ---
 		slot2 = MAGNESIS_GRAB_RESULT
 		slot2 = slot2.FAILED_KINEMATIC_TARGET
 		--- END OF BLOCK #4 ---
@@ -439,7 +445,7 @@ slot23 = function(slot0)
 		end
 
 
-		--- BLOCK #5 43-46, warpins: 1 ---
+		--- BLOCK #5 44-47, warpins: 1 ---
 		slot2 = self
 		slot4 = slot2
 		slot2 = slot2.onMagnesisGrabKinematicFailed
@@ -451,7 +457,7 @@ slot23 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 47-47, warpins: 3 ---
+		--- BLOCK #6 48-48, warpins: 3 ---
 		return
 		--- END OF BLOCK #6 ---
 
@@ -466,19 +472,19 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 28-28, warpins: 2 ---
+	--- BLOCK #4 29-29, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-29, warpins: 2 ---
+	--- BLOCK #5 30-30, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 30-35, warpins: 1 ---
+	--- BLOCK #6 31-36, warpins: 1 ---
 	slot1 = slot0.magnesisInputBuffer
 	slot3 = slot1
 	slot1 = slot1.enqueue
@@ -492,7 +498,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 36-37, warpins: 2 ---
+	--- BLOCK #7 37-38, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -500,9 +506,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.magnesisGrabOrThrow = slot23
+slot23.magnesisGrabOrThrow = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = EnableBotTest
 
@@ -523,9 +529,8 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-11, warpins: 2 ---
+	--- BLOCK #2 5-10, warpins: 2 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot1 = slot1.controlState
 	slot2 = MagnesisControlState
 	slot2 = slot2.None
@@ -539,7 +544,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-12, warpins: 1 ---
+	--- BLOCK #3 11-11, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -547,7 +552,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-15, warpins: 2 ---
+	--- BLOCK #4 12-14, warpins: 2 ---
 	slot1 = slot0.isThrowing
 	--- END OF BLOCK #4 ---
 
@@ -558,7 +563,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #5 16-17, warpins: 1 ---
+	--- BLOCK #5 15-16, warpins: 1 ---
 	slot1 = false
 
 	return slot1
@@ -568,7 +573,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-22, warpins: 2 ---
+	--- BLOCK #6 17-21, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setMagnesisModeEnable
 	slot4 = false
@@ -582,17 +587,18 @@ slot23 = function(slot0)
 
 end
 
-slot22.magnesisCancel = slot23
+slot23.magnesisCancel = slot24
 
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.magnesisControllerComponent
 	slot4 = slot2
 	slot2 = slot2.UpdateControlDistance
-	slot5 = slot1
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MAGNESIS_CONTROLLER
+	slot6 = slot1
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -601,9 +607,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.magnesisUpdateControlDistance = slot23
+slot23.magnesisUpdateControlDistance = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4)
+slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.combatContext = slot1
 	slot0.triggerActions = slot2
@@ -617,9 +623,9 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.registerMagnesisAbilityActions = slot23
+slot23.registerMagnesisAbilityActions = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -712,9 +718,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.onMagnesisAbilityStart = slot23
+slot23.onMagnesisAbilityStart = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.combatContext
 	--- END OF BLOCK #0 ---
@@ -817,10 +823,10 @@ slot23 = function(slot0)
 
 end
 
-slot22.onMagnesisAbilityEnd = slot23
+slot23.onMagnesisAbilityEnd = slot24
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-45, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-44, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addAnimEventListeners
 
@@ -872,7 +878,6 @@ slot23 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot2 = MagnesisControlState
 	slot2 = slot2.Ready
 	slot1.controlState = slot2
@@ -898,9 +903,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.onEnterMagnesisMode = slot23
+slot23.onEnterMagnesisMode = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeAnimEventListeners
@@ -950,9 +955,8 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 32-36, warpins: 1 ---
+	--- BLOCK #1 32-35, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot2 = MagnesisControlState
 	slot2 = slot2.None
 	slot1.controlState = slot2
@@ -961,7 +965,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 37-39, warpins: 2 ---
+	--- BLOCK #2 36-38, warpins: 2 ---
 	slot1 = nil
 	slot0.controllingEnt = slot1
 
@@ -972,9 +976,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.onLeaveMagnesisMode = slot23
+slot23.onLeaveMagnesisMode = slot24
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4)
+slot24 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot0.combatContext
 	--- END OF BLOCK #0 ---
@@ -1159,19 +1163,13 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 66-130, warpins: 3 ---
+	--- BLOCK #15 66-124, warpins: 3 ---
 	slot7 = Vector3
 	slot9 = unpack
 	slot11 = slot3
 	MULTRES = slot9(slot11)
 	slot7 = slot7(MULTRES)
 	slot3 = slot7
-	slot7 = Vector3
-	slot9 = unpack
-	slot11 = slot4
-	MULTRES = slot9(slot11)
-	slot7 = slot7(MULTRES)
-	slot4 = slot7
 	slot7 = slot0.combatContext
 	slot7 = slot7.constCasterInfo
 	slot7.attackPos = slot3
@@ -1240,9 +1238,9 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot22.onMagneticObjectHit = slot23
+slot23.onMagneticObjectHit = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = facade
 	slot4 = slot2
@@ -1285,9 +1283,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.onMagnesisAim = slot23
+slot23.onMagnesisAim = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-35, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.stopMagnesisTargetsTips
@@ -1338,9 +1336,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.onMagnesisSuccessGrab = slot23
+slot23.onMagnesisSuccessGrab = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1364,9 +1362,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.onMagnesisGrabKinematicFailed = slot23
+slot23.onMagnesisGrabKinematicFailed = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.controllingEnt
 	--- END OF BLOCK #0 ---
@@ -1391,7 +1389,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-27, warpins: 2 ---
+	--- BLOCK #2 9-28, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.stopMagnesisLoopEffects
 
@@ -1401,20 +1399,22 @@ slot23 = function(slot0)
 	slot1 = slot0.serverMsg
 	slot4 = "RPC_CS_OnMagnesisThrow"
 	slot5 = slot0.eModel
-	slot5 = slot5.magnesisControllerComponent
 	slot7 = slot5
 	slot5 = slot5.GetThrowTargetPos
-	slot5 = slot5(slot7)
+	slot8 = Const
+	slot8 = slot8.COMPONENT_MAGNESIS_CONTROLLER
+	slot5 = slot5(slot7, slot8)
 
 	slot6 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+		--- BLOCK #0 1-18, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.eModel
-		slot0 = slot0.magnesisControllerComponent
 		slot2 = slot0
 		slot0 = slot0.MagnesisThrow
+		slot3 = Const
+		slot3 = slot3.COMPONENT_MAGNESIS_CONTROLLER
 
-		slot0(slot2)
+		slot0(slot2, slot3)
 
 		slot0 = self
 		slot1 = false
@@ -1450,21 +1450,22 @@ slot23 = function(slot0)
 
 end
 
-slot22.onMagnesisThrow = slot23
+slot23.onMagnesisThrow = slot24
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopMagnesisLoopEffects
 
 	slot1(slot3)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot3 = slot1
 	slot1 = slot1.MagnesisCancel
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = false
 	slot0.isGrabbing = slot1
@@ -1478,9 +1479,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.onStopMagnesisControl = slot23
+slot23.onStopMagnesisControl = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot1 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -1591,9 +1592,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.addAnimEventListeners = slot23
+slot23.addAnimEventListeners = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = slot0.eventEmitter
 	slot3 = slot1
@@ -1629,9 +1630,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.removeAnimEventListeners = slot23
+slot23.removeAnimEventListeners = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.showTips
@@ -1658,9 +1659,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.refreshMagnesisTargetsTips = slot23
+slot23.refreshMagnesisTargetsTips = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.maxIndicateDistance
 	slot2 = pg
@@ -1677,47 +1678,33 @@ slot23 = function(slot0)
 	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #1 15-20, warpins: 1 ---
+	--- BLOCK #1 15-18, warpins: 1 ---
 	slot10 = slot2[slot8]
-	slot11 = NotNil
-	slot13 = slot10.eModel
-	slot11 = slot11(slot13)
+	slot11 = slot10.getEModelMonoComponent
 	--- END OF BLOCK #1 ---
 
 	slot11 = if slot11 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 21-26, warpins: 1 ---
-	slot11 = NotNil
-	slot13 = slot10.eModel
-	slot13 = slot13.physxComponent
-	slot11 = slot11(slot13)
+	--- BLOCK #2 19-23, warpins: 1 ---
+	slot13 = slot10
+	slot11 = slot10.getEModelMonoComponent
+	slot14 = Const
+	slot14 = slot14.COMPONENT_IDX_PHYSX
+	slot11 = slot11(slot13, slot14)
 	--- END OF BLOCK #2 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 27-40, warpins: 1 ---
-	slot11 = slot10.eModel
-	slot11 = slot11.physxComponent
-	slot11 = slot11.gameObject
-	slot13 = slot11
-	slot11 = slot11.GetComponent
-	slot14 = typeof
-	slot16 = MagneticObject
-	MULTRES = slot14(slot16)
-	slot11 = slot11(slot13, MULTRES)
+	--- BLOCK #3 24-28, warpins: 2 ---
 	slot12 = NotNil
 	slot14 = slot11
 	slot12 = slot12(slot14)
@@ -1726,55 +1713,75 @@ slot23 = function(slot0)
 	slot12 = if slot12 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 41-50, warpins: 1 ---
-	slot14 = slot10
-	slot12 = slot10.getPosition
-	slot12 = slot12(slot14)
-	slot13 = Vector3
-	slot13 = slot13.Distance
-	slot15 = slot3
-	slot16 = slot12
-	slot13 = slot13(slot15, slot16)
+	--- BLOCK #4 29-40, warpins: 1 ---
+	slot12 = slot11.gameObject
+	slot14 = slot12
+	slot12 = slot12.GetComponent
+	slot15 = typeof
+	slot17 = MagneticObject
+	MULTRES = slot15(slot17)
+	slot12 = slot12(slot14, MULTRES)
+	slot13 = NotNil
+	slot15 = slot12
+	slot13 = slot13(slot15)
 	--- END OF BLOCK #4 ---
 
-	if slot13 < slot1 then
+	slot13 = if slot13 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 51-51, warpins: 1 ---
-	slot4[slot8] = slot11
-
+	--- BLOCK #5 41-50, warpins: 1 ---
+	slot15 = slot10
+	slot13 = slot10.getPosition
+	slot13 = slot13(slot15)
+	slot14 = Vector3
+	slot14 = slot14.Distance
+	slot16 = slot3
+	slot17 = slot13
+	slot14 = slot14(slot16, slot17)
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot14 < slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 52-53, warpins: 6 ---
+	--- BLOCK #6 51-51, warpins: 1 ---
+	slot4[slot8] = slot12
+
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 52-53, warpins: 5 ---
+	--- END OF BLOCK #7 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #7
+	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #7 54-54, warpins: 1 ---
+	--- BLOCK #8 54-54, warpins: 1 ---
 	return slot4
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot22.tryGetMagnesisTargets = slot23
+slot23.tryGetMagnesisTargets = slot24
 
-slot23 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pairs
 	slot5 = slot1
@@ -1826,9 +1833,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.showTips = slot23
+slot23.showTips = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = ToBool
 	slot3 = slot0.curMagneticObjects
@@ -1891,15 +1898,16 @@ slot23 = function(slot0)
 
 end
 
-slot22.stopMagnesisTargetsTips = slot23
+slot23.stopMagnesisTargetsTips = slot24
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot3 = slot1
 	slot1 = slot1.GetControllingTargetId
-	slot1 = slot1(slot3)
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
+	slot1 = slot1(slot3, slot4)
 	slot2 = pg
 	slot2 = slot2.getEntityByGlobalId
 	slot4 = slot1
@@ -1913,7 +1921,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 12-16, warpins: 1 ---
+	--- BLOCK #1 13-17, warpins: 1 ---
 	slot0.controllingEnt = slot2
 	slot5 = slot2
 	slot3 = slot2.playMagnesisEffect
@@ -1926,7 +1934,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-17, warpins: 2 ---
+	--- BLOCK #2 18-18, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -1934,9 +1942,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.playMagnesisBeginEffects = slot23
+slot23.playMagnesisBeginEffects = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopMagnesisLoopEffects
@@ -1979,9 +1987,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.playMagnesisLoopEffects = slot23
+slot23.playMagnesisLoopEffects = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playerEffectId
 	--- END OF BLOCK #0 ---
@@ -2055,25 +2063,26 @@ slot23 = function(slot0)
 
 end
 
-slot22.stopMagnesisLoopEffects = slot23
+slot23.stopMagnesisLoopEffects = slot24
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot3 = slot1
 	slot1 = slot1.IsControlling
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
 
-	return slot1(slot3)
+	return slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot22.isMagnesisControlling = slot23
+slot23.isMagnesisControlling = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eModel
 	--- END OF BLOCK #0 ---
@@ -2085,9 +2094,8 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-10, warpins: 1 ---
+	--- BLOCK #1 4-9, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot1 = slot1.controlState
 	slot2 = MagnesisControlState
 	slot2 = slot2.Ready
@@ -2100,14 +2108,14 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #2 11-12, warpins: 1 ---
+	--- BLOCK #2 10-11, warpins: 1 ---
 	slot1 = false
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 13-13, warpins: 1 ---
+	--- BLOCK #3 12-12, warpins: 1 ---
 	slot1 = true
 
 	--- END OF BLOCK #3 ---
@@ -2115,7 +2123,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-14, warpins: 3 ---
+	--- BLOCK #4 13-13, warpins: 3 ---
 	return slot1
 	--- END OF BLOCK #4 ---
 
@@ -2123,12 +2131,11 @@ slot23 = function(slot0)
 
 end
 
-slot22.isMagnesisReady = slot23
+slot23.isMagnesisReady = slot24
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.magnesisControllerComponent
 	slot1 = slot1.controlState
 	slot2 = MagnesisControlState
 	slot2 = slot2.None
@@ -2141,14 +2148,14 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-9, warpins: 1 ---
+	--- BLOCK #1 7-8, warpins: 1 ---
 	slot1 = false
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 10-10, warpins: 1 ---
+	--- BLOCK #2 9-9, warpins: 1 ---
 	slot1 = true
 
 	--- END OF BLOCK #2 ---
@@ -2156,7 +2163,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-11, warpins: 2 ---
+	--- BLOCK #3 10-10, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #3 ---
 
@@ -2164,9 +2171,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.isInMagnesisMode = slot23
+slot23.isInMagnesisMode = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.magnesisInputBuffer
 	slot4 = slot2
@@ -2244,9 +2251,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.tryPerformMagnesis = slot23
+slot23.tryPerformMagnesis = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.MAGNESIS_ST
@@ -2323,7 +2330,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 40-53, warpins: 1 ---
+	--- BLOCK #5 40-49, warpins: 1 ---
 	slot16 = slot12
 	slot14 = slot12.getPosition
 	slot14 = slot14(slot16)
@@ -2332,12 +2339,6 @@ slot23 = function(slot0, slot1)
 	slot17 = slot4
 	slot18 = slot14
 	slot15 = slot15(slot17, slot18)
-	slot16 = slot4 - slot14
-	slot19 = slot16
-	slot17 = slot16.SetNormalize
-
-	slot17(slot19)
-
 	--- END OF BLOCK #5 ---
 
 	if slot15 < slot2 then
@@ -2347,7 +2348,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 54-56, warpins: 1 ---
+	--- BLOCK #6 50-52, warpins: 1 ---
 	slot2 = slot15
 	slot5 = slot13
 	slot6 = slot10
@@ -2356,7 +2357,7 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 57-58, warpins: 6 ---
+	--- BLOCK #7 53-54, warpins: 6 ---
 	--- END OF BLOCK #7 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -2364,7 +2365,7 @@ slot23 = function(slot0, slot1)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 59-63, warpins: 1 ---
+	--- BLOCK #8 55-59, warpins: 1 ---
 	slot7 = NotNil
 	slot9 = slot5
 	slot7 = slot7(slot9)
@@ -2377,7 +2378,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 64-68, warpins: 1 ---
+	--- BLOCK #9 60-64, warpins: 1 ---
 	slot7 = ToBool
 	slot9 = slot6
 	slot7 = slot7(slot9)
@@ -2390,7 +2391,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #10 69-73, warpins: 1 ---
+	--- BLOCK #10 65-69, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.forceGrabMagneticObejct
 	slot10 = slot5
@@ -2403,7 +2404,7 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 74-74, warpins: 4 ---
+	--- BLOCK #11 70-70, warpins: 4 ---
 	return
 	--- END OF BLOCK #11 ---
 
@@ -2411,9 +2412,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.doQuickMagnesisGrab = slot23
+slot23.doQuickMagnesisGrab = slot24
 
-slot23 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -2448,14 +2449,15 @@ slot23 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-19, warpins: 2 ---
+		--- BLOCK #2 11-20, warpins: 2 ---
 		slot1 = self
 		slot1 = slot1.eModel
-		slot1 = slot1.magnesisControllerComponent
 		slot3 = slot1
 		slot1 = slot1.MagnesisForceGrab
-		slot4 = magneticObj
-		slot1 = slot1(slot3, slot4)
+		slot4 = Const
+		slot4 = slot4.COMPONENT_MAGNESIS_CONTROLLER
+		slot5 = magneticObj
+		slot1 = slot1(slot3, slot4, slot5)
 		--- END OF BLOCK #2 ---
 
 		slot1 = if slot1 then
@@ -2465,7 +2467,7 @@ slot23 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #3 20-33, warpins: 1 ---
+		--- BLOCK #3 21-34, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.onMagnesisSuccessGrab
@@ -2488,7 +2490,7 @@ slot23 = function(slot0, slot1, slot2)
 		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #4 34-37, warpins: 1 ---
+		--- BLOCK #4 35-38, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.onMagnesisGrabKinematicFailed
@@ -2500,7 +2502,7 @@ slot23 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 38-38, warpins: 2 ---
+		--- BLOCK #5 39-39, warpins: 2 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -2517,9 +2519,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot22.forceGrabMagneticObejct = slot23
+slot23.forceGrabMagneticObejct = slot24
 
-slot23 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.playEffect
@@ -2539,71 +2541,59 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot22.playSyncMagnesisEffect = slot23
+slot23.playSyncMagnesisEffect = slot24
 
-slot23 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot0.eModel
-	slot3 = slot3(slot5)
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.hasEModelComponent
+	slot6 = Const
+	slot6 = slot6.COMPONENT_INDEX_EFFECT
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #1 6-11, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot0.eModel
-	slot5 = slot5.effectComponent
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #1 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 12-13, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-18, warpins: 1 ---
+	--- BLOCK #1 8-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.stopEffectById
 	slot6 = slot2
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-22, warpins: 1 ---
+	--- BLOCK #3 15-18, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.stopEffect
 	slot6 = slot1
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #5 23-28, warpins: 4 ---
+	--- BLOCK #4 19-24, warpins: 3 ---
 	slot5 = slot0
 	slot3 = slot0.serverMsgNoGC
 	slot6 = "RPC_CS_SyncPlayerStopMagnesisEffect"
@@ -2612,15 +2602,15 @@ slot23 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot22.stopSyncMagnesisEffect = slot23
+slot23.stopSyncMagnesisEffect = slot24
 
-slot23 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.magnesisCancel
@@ -2634,9 +2624,9 @@ slot23 = function(slot0)
 
 end
 
-slot22.onLeaveSpace = slot23
+slot23.onLeaveSpace = slot24
 
-return slot22
+return slot23
 --- END OF BLOCK #0 ---
 
 

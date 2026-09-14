@@ -355,15 +355,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-71, warpins: 2 ---
-	slot1(slot3, slot4)
-
-	slot1 = slot0.view
-	slot1 = slot1.imgPetURawImage
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = false
-
+	--- BLOCK #2 10-59, warpins: 2 ---
 	slot1(slot3, slot4)
 
 	slot1 = slot0.view
@@ -733,9 +725,9 @@ slot15 = function(slot0)
 	slot4 = slot0.view
 	slot4 = slot4.petListTransform
 	slot5 = {
+		textureWidth = 1024,
 		defaultSelectTabIndex = 0,
-		textureHeight = 1024,
-		textureWidth = 1024
+		textureHeight = 1024
 	}
 	slot6 = slot0.uiScene
 	slot5.uiScene = slot6
@@ -757,14 +749,6 @@ slot15 = function(slot0)
 	slot1 = slot1.previewPet
 	slot4 = PetManagementUtils
 	slot4 = slot4.petId
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.view
-	slot1 = slot1.imgPetURawImage
-	slot3 = slot1
-	slot1 = slot1.SetActive
-	slot4 = true
 
 	slot1(slot3, slot4)
 

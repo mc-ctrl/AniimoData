@@ -7,18 +7,18 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_StopGliding",
 	version = 11,
 	useForRoute = true,
-	agenttype = "WxAgent"
+	agenttype = "WxAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_StopGliding"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	value = "false",
-	type = "bool",
 	const = false,
+	type = "bool",
 	name = "exitGlidingImmediate"
 }
 slot4[1] = slot5

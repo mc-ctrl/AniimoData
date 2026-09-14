@@ -1,4 +1,4 @@
---- BLOCK #0 1-101, warpins: 1 ---
+--- BLOCK #0 1-105, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -40,11 +40,13 @@ slot14 = "ClientSpaceSandboxComponent"
 slot12 = slot12(slot14)
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot0.sandboxes = slot1
 	slot1 = {}
 	slot0.clientVisibleDict = slot1
+	slot1 = nil
+	slot0.pendingInitialSandboxData = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -56,26 +58,90 @@ end
 slot12.ctor = slot13
 
 slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setSpaceOwner
 
 	slot2(slot4)
 
 	slot2 = slot1.loadSandbox
+	slot0.pendingInitialSandboxData = slot2
+	slot2 = slot1.loadSandbox
+	slot0.loadSandboxDebug = slot2
+	slot2 = pg
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 11-14, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 15-19, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.space
+	--- END OF BLOCK #2 ---
+
+	if slot2 == slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-22, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.loadPendingInitialSandbox
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 23-23, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot12.init = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = slot0.pendingInitialSandboxData
+	slot2 = nil
+	slot0.pendingInitialSandboxData = slot2
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-10, warpins: 1 ---
+	--- BLOCK #1 6-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.loadAllSandbox
-	slot5 = slot1.loadSandbox
+	slot5 = slot1
 
 	slot2(slot4, slot5)
 
@@ -84,10 +150,7 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-13, warpins: 2 ---
-	slot2 = slot1.loadSandbox
-	slot0.loadSandboxDebug = slot2
-
+	--- BLOCK #2 10-10, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -95,7 +158,7 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.init = slot13
+slot12.loadPendingInitialSandbox = slot13
 
 slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
@@ -985,7 +1048,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	slot4 = pg
 	slot4 = slot4.me
 	slot6 = slot4
-	slot4 = slot4.serverSpaceMsg
+	slot4 = slot4.reliableServerSpaceMsg
 	slot7 = "RPC_CS_LevelItemFieldChange"
 	slot8 = {}
 	slot8[1] = slot1
@@ -1008,7 +1071,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 	slot4 = pg
 	slot4 = slot4.me
 	slot6 = slot4
-	slot4 = slot4.serverSpaceMsg
+	slot4 = slot4.reliableServerSpaceMsg
 	slot7 = "RPC_CS_SandboxEvent"
 	slot8 = {}
 	slot8[1] = slot1
@@ -1061,7 +1124,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
-	slot3 = slot3.serverSpaceMsg
+	slot3 = slot3.reliableServerSpaceMsg
 	slot6 = "RPC_CS_SandboxCustomEvent"
 	slot7 = {}
 	slot7[1] = slot1
@@ -1179,7 +1242,7 @@ slot13 = function(slot0, slot1)
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
-	slot2 = slot2.serverSpaceMsg
+	slot2 = slot2.reliableServerSpaceMsg
 	slot5 = "RPC_CS_ReloadSandbox"
 	slot6 = {}
 	slot6[1] = slot1
@@ -1196,7 +1259,9 @@ end
 slot12.callServerReloadSandbox = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = nil
+	slot0.pendingInitialSandboxData = slot1
 	slot1 = pairs
 	slot3 = slot0.sandboxes
 	slot1, slot2, slot3 = slot1(slot3)
@@ -1205,7 +1270,7 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 7-9, warpins: 1 ---
 	slot8 = slot5
 	slot6 = slot5.disable
 
@@ -1216,7 +1281,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1224,7 +1289,7 @@ slot13 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 10-12, warpins: 1 ---
+	--- BLOCK #3 12-14, warpins: 1 ---
 	slot1 = {}
 	slot0.sandboxes = slot1
 
@@ -1953,6 +2018,33 @@ slot13 = function(slot0, slot1)
 end
 
 slot12.RPC_SC_DebugSandboxInfo = slot13
+
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showA1Tips
+	slot6 = {
+		id = "TowerResultWave"
+	}
+	slot7 = {}
+	slot7.totalStage = slot2
+	slot7.stage = slot1
+	slot6.params = slot7
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.RPC_SC_ShowStage = slot13
 
 return slot12
 --- END OF BLOCK #0 ---

@@ -495,26 +495,26 @@ end
 
 slot11.useItemBatchCallBack = slot12
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	if slot0 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
 	--- BLOCK #1 3-9, warpins: 1 ---
-	slot4 = LoggerManager
-	slot4 = slot4.checkLogger
-	slot6 = LoggerConst
-	slot6 = slot6.ERROR
-	slot4 = slot4(slot6)
+	slot5 = LoggerManager
+	slot5 = slot5.checkLogger
+	slot7 = LoggerConst
+	slot7 = slot7.ERROR
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #1 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -522,162 +522,204 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 10-14, warpins: 1 ---
-	slot4 = logger
-	slot6 = slot4
-	slot4 = slot4.error
-	slot7 = "[LuaMsgUtils.useItemById] itemId is nil."
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.error
+	slot8 = "[LuaMsgUtils.useItemById] itemId is nil."
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 15-15, warpins: 2 ---
-	return
-
+	--- BLOCK #3 15-16, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 16-21, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot5 = ItemEffectData
-	slot5 = slot5[slot0]
+	--- BLOCK #4 17-18, warpins: 1 ---
+	slot5 = slot4
+
+	slot5()
+
 	--- END OF BLOCK #4 ---
 
-	if slot5 ~= nil then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #12
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 22-24, warpins: 1 ---
-	slot6 = slot5.reuseTimes
+	--- BLOCK #5 19-19, warpins: 2 ---
+	return
+
 	--- END OF BLOCK #5 ---
 
-	if slot6 ~= nil then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #12
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-27, warpins: 1 ---
-	slot6 = slot5.reuseTimes
+	--- BLOCK #6 20-25, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot6 = ItemEffectData
+	slot6 = slot6[slot0]
 	--- END OF BLOCK #6 ---
 
-	if slot6 ~= 1 then
+	if slot6 ~= nil then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #7 28-37, warpins: 1 ---
-	slot6 = ItemUtils
-	slot6 = slot6.getItemsById
-	slot8 = slot4
-	slot9 = slot0
-	slot6 = slot6(slot8, slot9)
-	slot7 = ToBool
-	slot9 = slot6
-	slot7 = slot7(slot9)
+	--- BLOCK #7 26-28, warpins: 1 ---
+	slot7 = slot6.reuseTimes
 	--- END OF BLOCK #7 ---
 
-	slot7 = if slot7 then
+	if slot7 ~= nil then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #8 38-58, warpins: 1 ---
-	slot7 = slot6[1]
-	slot7 = slot7.genID
-	slot8 = ItemUtils
-	slot8 = slot8.getInvIdByItemId
-	slot10 = slot0
-	slot8 = slot8(slot10)
-	slot11 = slot4
-	slot9 = slot4.serverMsg
-	slot12 = "RPC_CS_UseItem"
-	slot13 = slot8
-	slot14 = slot7
-	slot15 = slot1
-	slot16 = slot2
-	slot17 = CallbackHandler
-	slot19 = LuaMsgUtils
-	slot20 = "useItemCallBack"
-	slot21 = slot0
-	slot22 = slot3
-	MULTRES = slot17(slot19, slot20, slot21, slot22)
-
-	slot9(slot11, slot12, slot13, slot14, slot15, slot16, MULTRES)
-
+	--- BLOCK #8 29-31, warpins: 1 ---
+	slot7 = slot6.reuseTimes
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	if slot7 ~= 1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #9 59-65, warpins: 1 ---
-	slot7 = LoggerManager
-	slot7 = slot7.checkLogger
-	slot9 = LoggerConst
-	slot9 = slot9.ERROR
-	slot7 = slot7(slot9)
+	--- BLOCK #9 32-41, warpins: 1 ---
+	slot7 = ItemUtils
+	slot7 = slot7.getItemsById
+	slot9 = slot5
+	slot10 = slot0
+	slot7 = slot7(slot9, slot10)
+	slot8 = ToBool
+	slot10 = slot7
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #9 ---
 
-	slot7 = if slot7 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 66-70, warpins: 1 ---
-	slot7 = logger
-	slot9 = slot7
-	slot7 = slot7.error
-	slot10 = "[LuaMsgUtils.useItemById] items is nil."
+	--- BLOCK #10 42-63, warpins: 1 ---
+	slot8 = slot7[1]
+	slot8 = slot8.genID
+	slot9 = ItemUtils
+	slot9 = slot9.getInvIdByItemId
+	slot11 = slot0
+	slot9 = slot9(slot11)
+	slot12 = slot5
+	slot10 = slot5.serverMsg
+	slot13 = "RPC_CS_UseItem"
+	slot14 = slot9
+	slot15 = slot8
+	slot16 = slot1
+	slot17 = slot2
+	slot18 = CallbackHandler
+	slot20 = LuaMsgUtils
+	slot21 = "useItemCallBack"
+	slot22 = slot0
+	slot23 = slot3
+	slot24 = slot4
+	MULTRES = slot18(slot20, slot21, slot22, slot23, slot24)
 
-	slot7(slot9, slot10)
+	slot10(slot12, slot13, slot14, slot15, slot16, slot17, MULTRES)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #11 71-71, warpins: 3 ---
-	return
-
+	--- BLOCK #11 64-70, warpins: 1 ---
+	slot8 = LoggerManager
+	slot8 = slot8.checkLogger
+	slot10 = LoggerConst
+	slot10 = slot10.ERROR
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	slot8 = if slot8 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #12 72-85, warpins: 4 ---
+	--- BLOCK #12 71-75, warpins: 1 ---
+	slot8 = logger
+	slot10 = slot8
+	slot8 = slot8.error
+	slot11 = "[LuaMsgUtils.useItemById] items is nil."
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 76-77, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 78-79, warpins: 1 ---
 	slot8 = slot4
-	slot6 = slot4.serverMsg
-	slot9 = "RPC_CS_UseItemById"
-	slot10 = slot0
-	slot11 = slot1
-	slot12 = slot2
-	slot13 = CallbackHandler
-	slot15 = LuaMsgUtils
-	slot16 = "useItemCallBack"
-	slot17 = slot0
-	slot18 = slot3
-	MULTRES = slot13(slot15, slot16, slot17, slot18)
 
-	slot6(slot8, slot9, slot10, slot11, slot12, MULTRES)
+	slot8()
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 80-80, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 81-95, warpins: 4 ---
+	slot9 = slot5
+	slot7 = slot5.serverMsg
+	slot10 = "RPC_CS_UseItemById"
+	slot11 = slot0
+	slot12 = slot1
+	slot13 = slot2
+	slot14 = CallbackHandler
+	slot16 = LuaMsgUtils
+	slot17 = "useItemCallBack"
+	slot18 = slot0
+	slot19 = slot3
+	slot20 = slot4
+	MULTRES = slot14(slot16, slot17, slot18, slot19, slot20)
+
+	slot7(slot9, slot10, slot11, slot12, slot13, MULTRES)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #16 ---
 
 
 
@@ -742,7 +784,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 18-34, warpins: 2 ---
+	--- BLOCK #5 18-35, warpins: 2 ---
 	slot6 = pg
 	slot6 = slot6.me
 	slot9 = slot6
@@ -757,7 +799,8 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot18 = "useItemCallBack"
 	slot19 = slot0
 	slot20 = slot5
-	MULTRES = slot15(slot17, slot18, slot19, slot20)
+	slot21 = nil
+	MULTRES = slot15(slot17, slot18, slot19, slot20, slot21)
 
 	slot7(slot9, slot10, slot11, slot12, slot13, slot14, MULTRES)
 
@@ -770,11 +813,11 @@ end
 
 slot11.useItem = slot12
 
-slot12 = function(slot0, slot1, slot2, slot3, slot4)
+slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot4 ~= nil then
+	if slot5 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
@@ -782,14 +825,14 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #1 3-9, warpins: 1 ---
-	slot5 = LoggerManager
-	slot5 = slot5.checkLogger
-	slot7 = LoggerConst
-	slot7 = slot7.ERROR
-	slot5 = slot5(slot7)
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.ERROR
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #1 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -797,13 +840,13 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #2 10-15, warpins: 1 ---
-	slot5 = logger
-	slot7 = slot5
-	slot5 = slot5.error
-	slot8 = "[LuaMsgUtils.useItemCallBack] errorCode = "
-	slot9 = slot4
+	slot6 = logger
+	slot8 = slot6
+	slot6 = slot6.error
+	slot9 = "[LuaMsgUtils.useItemCallBack] errorCode = "
+	slot10 = slot5
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #2 ---
 
@@ -813,80 +856,73 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #3 16-17, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #4 18-21, warpins: 1 ---
-	slot5 = ItemEffectData
-	slot5 = slot5[slot1]
+	--- BLOCK #4 18-19, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 22-22, warpins: 1 ---
-	slot5 = {}
+	--- BLOCK #5 20-22, warpins: 1 ---
+	slot6 = slot3
+	slot8 = slot5
+
+	slot6(slot8)
+
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 23-27, warpins: 2 ---
-	slot6 = slot5.sType
-	slot7 = ItemConst
-	slot7 = slot7.USEITEM_TYPE_PET_UNLOCK_ABILITY
+	--- BLOCK #6 23-26, warpins: 2 ---
+	slot6 = ItemEffectData
+	slot6 = slot6[slot1]
 	--- END OF BLOCK #6 ---
 
-	if slot6 == slot7 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 28-33, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.showBubbleMessage
-	slot8 = slot4
-
-	slot6(slot8)
-
-	return
-
+	--- BLOCK #7 27-27, warpins: 1 ---
+	slot6 = {}
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 34-38, warpins: 2 ---
-	slot6 = slot5.sType
-	slot7 = ItemConst
-	slot7 = slot7.USEITEM_TYPE_SPAWN_ENVOBJ
+	--- BLOCK #8 28-32, warpins: 2 ---
+	slot7 = slot6.sType
+	slot8 = ItemConst
+	slot8 = slot8.USEITEM_TYPE_PET_UNLOCK_ABILITY
 	--- END OF BLOCK #8 ---
 
-	if slot6 == slot7 then
+	if slot7 == slot8 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 39-44, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.showBubbleMessage
-	slot8 = slot4
+	--- BLOCK #9 33-38, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.showBubbleMessage
+	slot9 = slot5
 
-	slot6(slot8)
+	slot7(slot9)
 
 	return
 
@@ -895,164 +931,192 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 45-51, warpins: 2 ---
-	slot6 = LuaMsgUtils
-	slot7 = LuaMsgUtils
-	slot7 = slot7.USE_ITEM_ERROR_CODE2FUNC_MAP
-	slot7 = slot7[slot4]
-	slot6 = slot6[slot7]
+	--- BLOCK #10 39-43, warpins: 2 ---
+	slot7 = slot6.sType
+	slot8 = ItemConst
+	slot8 = slot8.USEITEM_TYPE_SPAWN_ENVOBJ
 	--- END OF BLOCK #10 ---
 
-	slot6 = if slot6 then
+	if slot7 == slot8 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 52-55, warpins: 1 ---
-	slot7 = slot6
-	slot9 = slot1
-
-	slot7(slot9)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #12 56-60, warpins: 1 ---
+	--- BLOCK #11 44-49, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.global
 	slot7 = slot7.showBubbleMessage
-	slot9 = slot4
+	slot9 = slot5
 
 	slot7(slot9)
 
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 50-56, warpins: 2 ---
+	slot7 = LuaMsgUtils
+	slot8 = LuaMsgUtils
+	slot8 = slot8.USE_ITEM_ERROR_CODE2FUNC_MAP
+	slot8 = slot8[slot5]
+	slot7 = slot7[slot8]
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
+	slot7 = if slot7 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #13 61-61, warpins: 2 ---
-	return
+	--- BLOCK #13 57-60, warpins: 1 ---
+	slot8 = slot7
+	slot10 = slot1
+
+	slot8(slot10)
 
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 62-65, warpins: 2 ---
-	slot5 = ItemEffectData
-	slot5 = slot5[slot1]
+	--- BLOCK #14 61-65, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.showBubbleMessage
+	slot10 = slot5
+
+	slot8(slot10)
+
 	--- END OF BLOCK #14 ---
 
-	if slot5 ~= nil then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 66-68, warpins: 1 ---
-	slot6 = slot5.sType
+	--- BLOCK #15 66-66, warpins: 2 ---
+	return
+
 	--- END OF BLOCK #15 ---
 
-	if slot6 ~= nil then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 69-73, warpins: 1 ---
-	slot6 = slot5.sType
-	slot7 = ItemConst
-	slot7 = slot7.USEITEM_TYPE_CAST_ABILITY
+	--- BLOCK #16 67-70, warpins: 2 ---
+	slot6 = ItemEffectData
+	slot6 = slot6[slot1]
 	--- END OF BLOCK #16 ---
 
-	if slot6 == slot7 then
+	if slot6 ~= nil then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #17 74-79, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.postComponentMethod
-	slot9 = "OnPetEat"
-
-	slot6(slot8, slot9)
-
+	--- BLOCK #17 71-73, warpins: 1 ---
+	slot7 = slot6.sType
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	if slot7 ~= nil then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
 
 
-	--- BLOCK #18 80-81, warpins: 4 ---
+	--- BLOCK #18 74-78, warpins: 1 ---
+	slot7 = slot6.sType
+	slot8 = ItemConst
+	slot8 = slot8.USEITEM_TYPE_CAST_ABILITY
 	--- END OF BLOCK #18 ---
 
-	if slot3 == true then
+	if slot7 == slot8 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #19 82-87, warpins: 1 ---
-	slot6 = ItemUtils
-	slot6 = slot6.isOpenUIType
-	slot8 = slot1
-	slot6 = slot6(slot8)
+	--- BLOCK #19 79-84, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.postComponentMethod
+	slot10 = "OnPetEat"
+
+	slot7(slot9, slot10)
+
 	--- END OF BLOCK #19 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #20
-	else
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 85-86, warpins: 4 ---
+	--- END OF BLOCK #20 ---
+
+	if slot4 == true then
 	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #20 88-93, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.showBubbleMessage
-	slot8 = NoticeDef
-	slot8 = slot8.ITEM_USE_SUCCEED
-
-	slot6(slot8)
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 94-95, warpins: 3 ---
+	--- BLOCK #21 87-92, warpins: 1 ---
+	slot7 = ItemUtils
+	slot7 = slot7.isOpenUIType
+	slot9 = slot1
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #21 ---
 
-	slot2 = if slot2 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #22
 	else
 	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #22 96-97, warpins: 1 ---
-	slot6 = slot2
+	--- BLOCK #22 93-98, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.showBubbleMessage
+	slot9 = NoticeDef
+	slot9 = slot9.ITEM_USE_SUCCEED
 
-	slot6()
+	slot7(slot9)
 
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 98-98, warpins: 2 ---
-	return
+	--- BLOCK #23 99-100, warpins: 3 ---
 	--- END OF BLOCK #23 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 101-102, warpins: 1 ---
+	slot7 = slot2
+
+	slot7()
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 103-103, warpins: 2 ---
+	return
+	--- END OF BLOCK #25 ---
 
 
 

@@ -26,8 +26,8 @@ slot17 = "_u_"
 slot18 = "__ct__"
 slot19 = "__v__"
 slot20 = {
-	__cid__ = true,
 	__scope__ = true,
+	__cid__ = true,
 	__class__ = true
 }
 

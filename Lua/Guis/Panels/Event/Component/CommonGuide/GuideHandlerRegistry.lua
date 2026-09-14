@@ -1,0 +1,83 @@
+--- BLOCK #0 1-77, warpins: 1 ---
+slot0 = require
+slot2 = "Common.Const.ActivityConst"
+slot0 = slot0(slot2)
+slot1 = require
+slot3 = "Guis.Panels.Event.Component.CommonGuide.MockBattleGuideHandler"
+slot1 = slot1(slot3)
+slot2 = require
+slot4 = "Guis.Panels.Event.Component.CommonGuide.LeylineTreeGuideHandler"
+slot2 = slot2(slot4)
+slot3 = require
+slot5 = "Guis.Panels.Event.Component.CommonGuide.WaterAreaGuideHandler"
+slot3 = slot3(slot5)
+slot4 = require
+slot6 = "Guis.Panels.Event.Component.CommonGuide.InterlinkGuideHandler"
+slot4 = slot4(slot6)
+slot5 = require
+slot7 = "Guis.Panels.Event.Component.CommonGuide.FishingCaptureGuideHandler"
+slot5 = slot5(slot7)
+slot6 = require
+slot8 = "Guis.Panels.Event.Component.CommonGuide.PetHatchGuideHandler"
+slot6 = slot6(slot8)
+slot7 = require
+slot9 = "Guis.Panels.Event.Component.CommonGuide.TeaPartyGuideHandler"
+slot7 = slot7(slot9)
+slot8 = require
+slot10 = "Guis.Panels.Event.Component.CommonGuide.SeasonPageGuideHandler"
+slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Guis.Panels.Event.Component.CommonGuide.StarPlanGuideHandler"
+slot9 = slot9(slot11)
+slot10 = require
+slot12 = "Guis.Panels.Event.Component.CommonGuide.MysteriousMerchantHandler"
+slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Guis.Panels.Event.Component.CommonGuide.RedBookGuideHandler"
+slot11 = slot11(slot13)
+slot12 = require
+slot14 = "Guis.Panels.Event.Component.CommonGuide.TikTokPetGuideHandler"
+slot12 = slot12(slot14)
+slot13 = {}
+slot14 = slot0.EventType
+slot14 = slot14.MockBattle
+slot13[slot14] = slot1
+slot14 = slot0.EventType
+slot14 = slot14.LeylineTreeGuide
+slot13[slot14] = slot2
+slot14 = slot0.EventType
+slot14 = slot14.WaterArea
+slot13[slot14] = slot3
+slot14 = slot0.EventType
+slot14 = slot14.Interlink
+slot13[slot14] = slot4
+slot14 = slot0.EventType
+slot14 = slot14.FishingCapture
+slot13[slot14] = slot5
+slot14 = slot0.EventType
+slot14 = slot14.PetHatch
+slot13[slot14] = slot6
+slot14 = slot0.EventType
+slot14 = slot14.TeaParty
+slot13[slot14] = slot7
+slot14 = slot0.EventType
+slot14 = slot14.SeasonPage
+slot13[slot14] = slot8
+slot14 = slot0.EventType
+slot14 = slot14.StarPlanGuidePage
+slot13[slot14] = slot9
+slot14 = slot0.EventType
+slot14 = slot14.MysteriousMerchant
+slot13[slot14] = slot10
+slot14 = slot0.EventType
+slot14 = slot14.RedBook
+slot13[slot14] = slot11
+slot14 = slot0.EventType
+slot14 = slot14.LittleFirePersonGuide
+slot13[slot14] = slot12
+
+return slot13
+--- END OF BLOCK #0 ---
+
+
+

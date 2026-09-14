@@ -331,7 +331,7 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #13
 	end
 
 
@@ -344,11 +344,33 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 9-35, warpins: 1 ---
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot2 = slot1.subject
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot2 = slot0.castAbilityEventToken
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-21, warpins: 1 ---
 	slot2 = slot1.subject
 	slot4 = slot2
 	slot2 = slot2.remove
@@ -358,44 +380,124 @@ slot11 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-23, warpins: 4 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 24-26, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.motionComponent
-	slot3 = slot1.eModel
-	slot3 = slot3.physxComponent
-	slot6 = slot2
-	slot4 = slot2.RemoveIgnoreCollider
-	slot9 = slot3
-	slot7 = slot3.GetCollider
-	MULTRES = slot7(slot9)
+	--- END OF BLOCK #6 ---
 
-	slot4(slot6, MULTRES)
-
-	slot4 = slot1.eModel
-	slot4 = slot4.motionComponent
-	slot6 = slot4
-	slot4 = slot4.RemoveIgnoreCollider
-	slot7 = slot0.eModel
-	slot7 = slot7.physxComponent
-	slot9 = slot7
-	slot7 = slot7.GetCollider
-	MULTRES = slot7(slot9)
-
-	slot4(slot6, MULTRES)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #3 36-36, warpins: 3 ---
+	--- BLOCK #7 27-29, warpins: 1 ---
+	slot2 = slot1.eModel
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 30-41, warpins: 1 ---
+	slot2 = slot0.eModel
+	slot4 = slot2
+	slot2 = slot2.RemoveIgnoreCollider
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MOTION
+	slot6 = slot1.eModel
+	slot8 = slot6
+	slot6 = slot6.GetCollider
+	slot9 = Const
+	slot9 = slot9.COMPONENT_IDX_PHYSX
+	MULTRES = slot6(slot8, slot9)
+
+	slot2(slot4, slot5, MULTRES)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 42-43, warpins: 4 ---
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 44-46, warpins: 1 ---
+	slot2 = slot1.eModel
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 47-49, warpins: 1 ---
+	slot2 = slot0.eModel
+	--- END OF BLOCK #11 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 50-61, warpins: 1 ---
+	slot2 = slot1.eModel
+	slot4 = slot2
+	slot2 = slot2.RemoveIgnoreCollider
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MOTION
+	slot6 = slot0.eModel
+	slot8 = slot6
+	slot6 = slot6.GetCollider
+	slot9 = Const
+	slot9 = slot9.COMPONENT_IDX_PHYSX
+	MULTRES = slot6(slot8, slot9)
+
+	slot2(slot4, slot5, MULTRES)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 62-62, warpins: 5 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot9.destroy = slot11
+slot9.preDestroy = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -422,37 +524,41 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #2 9-28, warpins: 1 ---
+	--- BLOCK #2 9-32, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.motionComponent
-	slot3 = slot1.eModel
-	slot3 = slot3.physxComponent
-	slot6 = slot2
-	slot4 = slot2.AddIgnoreCollider
-	slot9 = slot3
-	slot7 = slot3.GetCollider
-	MULTRES = slot7(slot9)
+	slot4 = slot2
+	slot2 = slot2.AddIgnoreCollider
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MOTION
+	slot6 = slot1.eModel
+	slot8 = slot6
+	slot6 = slot6.GetCollider
+	slot9 = Const
+	slot9 = slot9.COMPONENT_IDX_PHYSX
+	MULTRES = slot6(slot8, slot9)
 
-	slot4(slot6, MULTRES)
+	slot2(slot4, slot5, MULTRES)
 
-	slot4 = slot1.eModel
-	slot4 = slot4.motionComponent
-	slot6 = slot4
-	slot4 = slot4.AddIgnoreCollider
-	slot7 = slot0.eModel
-	slot7 = slot7.physxComponent
-	slot9 = slot7
-	slot7 = slot7.GetCollider
-	MULTRES = slot7(slot9)
+	slot2 = slot1.eModel
+	slot4 = slot2
+	slot2 = slot2.AddIgnoreCollider
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MOTION
+	slot6 = slot0.eModel
+	slot8 = slot6
+	slot6 = slot6.GetCollider
+	slot9 = Const
+	slot9 = slot9.COMPONENT_IDX_PHYSX
+	MULTRES = slot6(slot8, slot9)
 
-	slot4(slot6, MULTRES)
+	slot2(slot4, slot5, MULTRES)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 29-29, warpins: 3 ---
+	--- BLOCK #3 33-33, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 

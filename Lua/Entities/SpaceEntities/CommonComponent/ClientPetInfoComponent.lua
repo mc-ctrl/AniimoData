@@ -1,4 +1,4 @@
---- BLOCK #0 1-34, warpins: 1 ---
+--- BLOCK #0 1-36, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -131,6 +131,51 @@ slot8 = function(slot0, slot1, slot2)
 end
 
 slot7.on_individuationIds_delete = slot8
+
+slot8 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.applyTransmogScheme
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = slot0.setTransmogData
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-10, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.applyTransmogScheme
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot7.on_selectTransmogScheme_changed = slot8
 
 return slot7
 --- END OF BLOCK #0 ---

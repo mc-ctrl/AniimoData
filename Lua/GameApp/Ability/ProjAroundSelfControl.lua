@@ -54,7 +54,7 @@ slot11 = function(slot0, slot1, slot2)
 	slot6 = slot0.owner
 	slot6 = slot6.combatAction
 	slot8 = slot6
-	slot6 = slot6.doAction
+	slot6 = slot6.doActionById
 	slot9 = slot1.launchIntervalActionId
 	slot10 = slot2
 	slot6 = slot6(slot8, slot9, slot10)
@@ -195,65 +195,173 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #1 4-6, warpins: 1 ---
+	--- BLOCK #1 4-7, warpins: 1 ---
 	slot1 = slot0.owner
-
-	return slot1
-
+	slot1 = slot1.isControllingEgg
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #2 7-12, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.getMasterPlayer
-	slot3 = slot0.owner
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot1 = slot0.owner
+	slot3 = slot1
+	slot1 = slot1.isControllingEgg
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 13-17, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.getCurPetEntity
-	slot2 = slot2(slot4)
+	--- BLOCK #3 14-19, warpins: 1 ---
+	slot1 = slot0.owner
+	slot3 = slot1
+	slot1 = slot1.getCurControllingEgg
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if not slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 18-18, warpins: 2 ---
-	slot2 = slot0.owner
+	--- BLOCK #4 20-20, warpins: 1 ---
+	slot1 = slot0.owner
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-19, warpins: 2 ---
-	return slot2
+	--- BLOCK #5 21-21, warpins: 2 ---
+	return slot1
+
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-20, warpins: 2 ---
-	return
+	--- BLOCK #6 22-24, warpins: 3 ---
+	slot1 = slot0.owner
+
+	return slot1
+
 	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #7 25-30, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.getMasterPlayer
+	slot3 = slot0.owner
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #7 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #8 31-35, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.isControllingEgg
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #9 36-40, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.getCurControllingEgg
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #9 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 41-41, warpins: 1 ---
+	slot2 = slot0.owner
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-42, warpins: 2 ---
+	return slot2
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 43-44, warpins: 3 ---
+	--- END OF BLOCK #12 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 45-49, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.getCurPetEntity
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #13 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 50-50, warpins: 2 ---
+	slot2 = slot0.owner
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 51-51, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 52-52, warpins: 2 ---
+	return
+	--- END OF BLOCK #16 ---
 
 
 

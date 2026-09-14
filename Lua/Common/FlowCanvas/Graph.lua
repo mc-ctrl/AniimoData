@@ -1,4 +1,4 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-43, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -14,11 +14,14 @@ slot3 = slot3(slot5)
 slot4 = require
 slot6 = "Core.Log.LoggerConst"
 slot4 = slot4(slot6)
-slot5 = slot3.getLogger
-slot7 = "FlowCanvas"
+slot5 = require
+slot7 = "Core.Framework.SafeCallback"
 slot5 = slot5(slot7)
+slot6 = slot3.getLogger
+slot8 = "FlowCanvas"
+slot6 = slot6(slot8)
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = {}
 	slot0.nodes = slot3
@@ -42,9 +45,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot2.ctor = slot6
+slot2.ctor = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0.graphId = slot1
 	slot3 = {}
@@ -156,9 +159,61 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot2.init = slot6
+slot2.init = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot0.nodes
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot7 = slot6.onContextDestroy
+	--- END OF BLOCK #1 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot7 = SafeCallback
+	slot9 = slot6.onContextDestroy
+	slot10 = slot6
+	slot11 = slot1
+
+	slot7(slot9, slot10, slot11)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-14, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #4
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot2.onContextDestroy = slot7
+
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.nodes
@@ -206,9 +261,9 @@ slot6 = function(slot0)
 
 end
 
-slot2.destroy = slot6
+slot2.destroy = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.className
 	--- END OF BLOCK #0 ---
@@ -397,9 +452,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot2.addNode = slot6
+slot2.addNode = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.nodes
 	slot3 = slot1.sourceNode
@@ -471,9 +526,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot2.addConnection = slot6
+slot2.addConnection = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.startNodes
@@ -511,9 +566,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot2.startGraph = slot6
+slot2.startGraph = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.blackboard
 	slot2 = slot2[slot1]
@@ -525,9 +580,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot2.getBlackBoard = slot6
+slot2.getBlackBoard = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.nodes
 	slot3 = slot3[slot1]
@@ -560,9 +615,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot2.debugCallNode = slot6
+slot2.debugCallNode = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -690,7 +745,7 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot2.checkInfiniteLoop = slot6
+slot2.checkInfiniteLoop = slot7
 
 return slot2
 --- END OF BLOCK #0 ---

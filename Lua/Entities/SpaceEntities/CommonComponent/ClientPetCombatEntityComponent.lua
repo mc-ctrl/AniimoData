@@ -562,7 +562,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 77-106, warpins: 2 ---
+	--- BLOCK #21 77-113, warpins: 2 ---
 	slot10 = slot0.eModel
 	slot12 = slot10
 	slot10 = slot10.GetPositionAgentPosEx
@@ -571,6 +571,11 @@ slot10 = function(slot0, slot1, slot2)
 	slot15 = slot13
 	slot13 = slot13.GetPositionAgentPosEx
 	slot13, slot14, slot15 = slot13(slot15)
+	slot16 = Vector3
+	slot16 = slot16.enableCreateFromCache
+
+	slot16()
+
 	slot16 = Vector3
 	slot16 = slot16.New
 	slot18 = slot10 - slot13
@@ -591,6 +596,12 @@ slot10 = function(slot0, slot1, slot2)
 	slot17 = slot17(slot19, slot20, slot21)
 	slot18 = slot16 * slot9
 	slot17 = slot17 + slot18
+	slot18 = Vector3
+	slot18 = slot18.disableCreateFromCache
+	slot20 = slot17
+
+	slot18(slot20)
+
 	slot18 = slot8
 	slot19 = slot17
 
@@ -601,7 +612,7 @@ slot10 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #22 107-109, warpins: 1 ---
+	--- BLOCK #22 114-116, warpins: 1 ---
 	slot9 = slot8
 	slot10 = nil
 
@@ -611,7 +622,7 @@ slot10 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 110-110, warpins: 2 ---
+	--- BLOCK #23 117-117, warpins: 2 ---
 	return
 	--- END OF BLOCK #23 ---
 

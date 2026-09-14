@@ -3,7 +3,7 @@ slot0 = CS
 slot0 = slot0.LuaCSMemory
 slot0 = slot0.LuaArrAccessAPI
 slot1 = slot0.Init
-slot2 = slot0.CreateLuaShareAccess
+slot2 = slot0.CreateAndPinFunction
 slot3 = slot1
 slot5 = jit
 
@@ -32,7 +32,7 @@ slot6 = 1
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 17-39, warpins: 2 ---
+--- BLOCK #2 17-41, warpins: 2 ---
 slot7 = setmetatable
 slot9 = slot3
 slot10 = slot3
@@ -185,8 +185,9 @@ end
 
 slot3.NewByTable = slot9
 slot9 = nil
+slot10 = false
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.OnGC
@@ -205,7 +206,7 @@ slot10 = function(slot0)
 
 end
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -228,28 +229,29 @@ slot11 = function(slot0)
 	slot1 = getmetatable
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = oldGCFunc
+	slot2 = isGCFuncSet
 	--- END OF BLOCK #2 ---
 
-	if slot2 == nil then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-11, warpins: 1 ---
+	--- BLOCK #3 10-14, warpins: 1 ---
 	slot2 = slot1.__gc
 	oldGCFunc = slot2
+	slot2 = newGCFunc
+	slot1.__gc = slot2
+	isGCFuncSet = true
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 12-14, warpins: 2 ---
-	slot2 = newGCFunc
-	slot1.__gc = slot2
-
+	--- BLOCK #4 15-15, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -257,7 +259,59 @@ slot11 = function(slot0)
 
 end
 
-slot12 = function(slot0)
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = GlobalAutoDetectArch
+
+	slot2()
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-12, warpins: 1 ---
+	slot2 = apiCreateAndPin
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	slot1 = slot2
+	slot2 = SetCSharpAccessGCFunc
+	slot4 = slot1
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot2 = pin_func
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot3.PinCSharpAccess = slot13
+
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__pin
 	--- END OF BLOCK #0 ---
@@ -269,27 +323,18 @@ slot12 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
-	slot1 = apiCreateAccess
-	slot1 = slot1()
-	slot0.__pin = slot1
-	slot1 = pin_func
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot1 = LuaCSharpArr
+	slot1 = slot1.PinCSharpAccess
 	slot3 = slot0
-	slot4 = slot0.__pin
-
-	slot1(slot3, slot4)
-
-	slot1 = SetCSharpAccessGCFunc
-	slot3 = slot0.__pin
-
-	slot1(slot3)
-
+	slot1 = slot1(slot3)
+	slot0.__pin = slot1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-15, warpins: 2 ---
+	--- BLOCK #2 9-10, warpins: 2 ---
 	slot1 = slot0.__pin
 
 	return slot1
@@ -299,9 +344,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.GetCSharpAccess = slot12
+slot3.GetCSharpAccess = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__pin
 	--- END OF BLOCK #0 ---
@@ -336,21 +381,21 @@ slot12 = function(slot0)
 
 end
 
-slot3.DestroyCSharpAccess = slot12
+slot3.DestroyCSharpAccess = slot13
+slot13 = jit
 
-slot12 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = jit
-	--- END OF BLOCK #0 ---
+--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
+slot13 = if slot13 then
+JUMP TO BLOCK #3
+else
+JUMP TO BLOCK #4
+end
 
 
-	--- BLOCK #1 4-16, warpins: 1 ---
+--- BLOCK #3 42-44, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = 32167
 	slot0[1] = slot1
 	slot1 = 9527.5
@@ -363,46 +408,63 @@ slot12 = function(slot0)
 	slot1 = slot0.GetCSharpAccess
 	slot1 = slot1(slot3)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #0 ---
 
 	if slot1 == nil then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #2 17-17, warpins: 1 ---
+	--- BLOCK #1 14-14, warpins: 1 ---
 	return
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #3 18-20, warpins: 2 ---
+	--- BLOCK #2 15-18, warpins: 2 ---
 	slot4 = slot1
 	slot2 = slot1.AutoDetectArch
 
 	slot2(slot4)
 
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 21-21, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot3.AutoDetectArch = slot12
+slot3.AutoDetectArch = slot13
 
+--- END OF BLOCK #3 ---
+
+UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+--- BLOCK #4 45-46, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.AutoDetectArch = slot13
+
+--- END OF BLOCK #4 ---
+
+FLOW; TARGET BLOCK #5
+
+
+--- BLOCK #5 47-48, warpins: 2 ---
 return slot3
---- END OF BLOCK #2 ---
+--- END OF BLOCK #5 ---
 
 
 

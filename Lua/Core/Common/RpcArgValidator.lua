@@ -1,21 +1,24 @@
---- BLOCK #0 1-47, warpins: 1 ---
+--- BLOCK #0 1-50, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Common.Switch"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Common.Const"
+slot3 = "Core.Common.Switch"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.String"
+slot4 = "Core.Common.Const"
 slot2 = slot2(slot4)
-slot3 = {}
-slot4 = {
-	deepCustom = false,
+slot3 = require
+slot5 = "Core.Framework.String"
+slot3 = slot3(slot5)
+slot4 = {}
+slot5 = {
 	allowUnknownField = false,
-	checkRequired = false
+	checkRequired = false,
+	deepCustom = false
 }
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = RpcArgValidator
 	slot2 = slot0.ArgTypes
@@ -51,9 +54,9 @@ slot5 = function(slot0)
 
 end
 
-slot3.parseArgTypes = slot5
+slot4.parseArgTypes = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pairs
 	slot3 = Const
@@ -107,9 +110,9 @@ slot5 = function(slot0)
 
 end
 
-slot3.isNumberType = slot5
+slot4.isNumberType = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = StringEx
 	slot1 = slot1.startswith
@@ -123,9 +126,9 @@ slot5 = function(slot0)
 
 end
 
-slot3.isTableType = slot5
+slot4.isTableType = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -183,7 +186,7 @@ slot5 = function(slot0)
 
 end
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = RpcArgValidator
 	slot1 = slot1.__argTypes
@@ -220,9 +223,9 @@ slot6 = function(slot0)
 
 end
 
-slot3.isCustomArgType = slot6
+slot4.isCustomArgType = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = RpcArgValidator
 	slot1 = slot1.__argTypes
@@ -368,9 +371,9 @@ slot6 = function(slot0)
 
 end
 
-slot3._getArgTypeConfig = slot6
+slot4._getArgTypeConfig = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = RpcArgValidator
 	slot2 = slot2.buildValidator
@@ -391,9 +394,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.parseArgConfig = slot6
+slot4.parseArgConfig = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -431,7 +434,7 @@ slot6 = function(slot0)
 
 
 	--- BLOCK #4 12-12, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -468,9 +471,9 @@ slot6 = function(slot0)
 
 end
 
-slot3._mergeBuildOpts = slot6
+slot4._mergeBuildOpts = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -518,9 +521,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3._joinPath = slot6
+slot4._joinPath = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -563,9 +566,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3._withPath = slot6
+slot4._withPath = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = function(slot0, slot1)
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -634,9 +637,9 @@ slot6 = function(slot0)
 
 end
 
-slot3._makePathValidator = slot6
+slot4._makePathValidator = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = RpcArgValidator
 	slot3 = slot3._mergeBuildOpts
@@ -799,9 +802,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot3.buildValidator = slot6
+slot4.buildValidator = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = StringEx
 	slot2 = slot2.split
@@ -1710,9 +1713,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.generateNumberValidator = slot6
+slot4.generateNumberValidator = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = StringEx
 	slot2 = slot2.split
@@ -1905,9 +1908,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.generateTableValidator = slot6
+slot4.generateTableValidator = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -1959,9 +1962,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.generateStringValidator = slot6
+slot4.generateStringValidator = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = function(slot0)
 		--- BLOCK #0 1-5, warpins: 1 ---
@@ -2013,9 +2016,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot3.generateBooleanValidator = slot6
+slot4.generateBooleanValidator = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2140,7 +2143,7 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot7 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.deepCustom
 	--- END OF BLOCK #0 ---
@@ -2622,9 +2625,9 @@ slot7 = function(slot0, slot1, slot2)
 
 end
 
-slot3.generateCustomArgTypeValidator = slot7
+slot4.generateCustomArgTypeValidator = slot8
 
-return slot3
+return slot4
 --- END OF BLOCK #0 ---
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-77, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -17,40 +17,41 @@ slot4 = slot4(slot6)
 slot5 = require
 slot7 = "Guis.UICtrl"
 slot5 = slot5(slot7)
-slot6 = slot4.LightClass
-slot8 = "CreatePlayerCtrl"
-slot9 = slot5
-slot6 = slot6(slot8, slot9)
-slot7 = require
-slot9 = "Const.UIConst"
-slot7 = slot7(slot9)
+slot6 = require
+slot8 = "Common.Const.Const"
+slot6 = slot6(slot8)
+slot7 = slot4.LightClass
+slot9 = "CreatePlayerCtrl"
+slot10 = slot5
+slot7 = slot7(slot9, slot10)
 slot8 = require
-slot10 = "Utils.ClientTextUtils"
+slot10 = "Const.UIConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Guis.Panels.CreatePlayer.Component.CreatePlayerTimelineComponent"
+slot11 = "Utils.ClientTextUtils"
 slot9 = slot9(slot11)
-slot10 = CS
-slot10 = slot10.FunPlus
-slot10 = slot10.WorldX
-slot10 = slot10.SDK
-slot10 = slot10.SDKManager
-slot11 = {}
-slot12 = slot3.INPUT_DEVICE_CHANGED
-slot13 = {
+slot10 = require
+slot12 = "Common.Utils.Utils"
+slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Guis.Panels.CreatePlayer.Component.CreatePlayerTimelineComponent"
+slot11 = slot11(slot13)
+slot12 = {}
+slot13 = slot3.INPUT_DEVICE_CHANGED
+slot14 = {
 	"onInputDeviceChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot3.GUIDE_SELECT_FINISH
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot3.GUIDE_SELECT_FINISH
+slot14 = {
 	"callBackResetSubmitState",
 	true
 }
-slot11[slot12] = slot13
-slot6.messages = slot11
+slot12[slot13] = slot14
+slot7.messages = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -72,9 +73,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot6.onCreate = slot11
+slot7.onCreate = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.inputField
@@ -123,9 +124,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.addListener = slot11
+slot7.addListener = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = require
 	slot3 = "Common.Const.DefaultSceneConst"
@@ -152,9 +153,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.onDestroy = slot11
+slot7.onDestroy = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -177,9 +178,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot6.onOpen = slot11
+slot7.onOpen = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -188,9 +189,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.onShow = slot11
+slot7.onShow = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-41, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -249,9 +250,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.refreshNamePage = slot11
+slot7.refreshNamePage = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = require
 	slot3 = "GameApp.UIScene.UISceneConst"
@@ -328,31 +329,50 @@ slot11 = function(slot0)
 	slot15 = slot15 * 0.5
 	slot14 = slot14 - slot15
 	slot11 = slot11(slot13, slot14)
-	slot12 = pg
-	slot12 = slot12.global
-	slot12 = slot12.mobileCameraMgr
-	slot14 = slot12
-	slot12 = slot12.CaptureScreenDelaySave
+	slot12 = Utils
+	slot12 = slot12.captureAndCheckPhoto
+	slot14 = Const
+	slot14 = slot14.PhotoCheckScene
+	slot14 = slot14.Share
 
-	slot15 = function(slot0)
-		--- BLOCK #0 1-14, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.view
-		slot1 = slot1.imgRole
-		slot1.sprite = slot0
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.ui
-		slot3 = slot1
-		slot1 = slot1.restoreAllUIByCustomKey
-		slot4 = UIConst
-		slot4 = slot4.UI_HIDE_KEY
-		slot4 = slot4.CREATE_USER_SNAPSHOT
+	slot15 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot5 = slot3
+		slot3 = slot3.restoreAllUIByCustomKey
+		slot6 = UIConst
+		slot6 = slot6.UI_HIDE_KEY
+		slot6 = slot6.CREATE_USER_SNAPSHOT
 
-		slot1(slot3, slot4)
+		slot3(slot5, slot6)
+
+		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 12-12, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 13-17, warpins: 2 ---
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.imgRole
+		slot3.sprite = slot0
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -380,9 +400,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.focusNamePage = slot11
+slot7.focusNamePage = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -391,9 +411,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.submitRename = slot11
+slot7.submitRename = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
@@ -413,9 +433,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.randomName = slot11
+slot7.randomName = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -474,9 +494,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot6.onNameChanged = slot11
+slot7.onNameChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.view
 	--- END OF BLOCK #0 ---
@@ -509,7 +529,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-41, warpins: 2 ---
+	--- BLOCK #3 9-34, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootComponent
 	slot3 = slot1
@@ -543,15 +563,6 @@ slot11 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = csSDKManager
-	slot1 = slot1.PatchFlowSDKLog
-	slot3 = 20011
-	slot4 = "LoginCreateRole"
-	slot5 = ""
-	slot6 = ""
-
-	slot1(slot3, slot4, slot5, slot6)
-
 	return
 	--- END OF BLOCK #3 ---
 
@@ -559,9 +570,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.callBackResetSubmitState = slot11
+slot7.callBackResetSubmitState = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -651,9 +662,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot6.resetSubmitState = slot11
+slot7.resetSubmitState = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.page
 
@@ -716,9 +727,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.fallBack = slot11
+slot7.fallBack = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -727,9 +738,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot6.onInputDeviceChanged = slot11
+slot7.onInputDeviceChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -738,9 +749,9 @@ slot11 = function(slot0)
 
 end
 
-slot6.onHide = slot11
+slot7.onHide = slot12
 
-return slot6
+return slot7
 --- END OF BLOCK #0 ---
 
 

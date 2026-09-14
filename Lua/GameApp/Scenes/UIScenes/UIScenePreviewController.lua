@@ -1,4 +1,4 @@
---- BLOCK #0 1-83, warpins: 1 ---
+--- BLOCK #0 1-88, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -14,33 +14,38 @@ slot3 = slot3(slot5)
 slot4 = require
 slot6 = "Data.avatar_preset_data"
 slot4 = slot4(slot6)
-slot5 = slot0.LightClass
-slot7 = "UIScenePreviewController"
+slot5 = require
+slot7 = "Utils.LuaUIUtils"
 slot5 = slot5(slot7)
-slot6 = Vector3
-slot7 = fingerGestures
-slot8 = CS
-slot8 = slot8.FunPlus
-slot8 = slot8.WorldX
-slot8 = slot8.GUIS
-slot8 = slot8.Panels
-slot8 = slot8.Utils
-slot8 = slot8.KeyBindingPro
-slot9 = {
+slot6 = slot0.LightClass
+slot8 = "UIScenePreviewController"
+slot6 = slot6(slot8)
+slot7 = "armLenTween"
+slot8 = "cameraAreaTween"
+slot9 = Vector3
+slot10 = fingerGestures
+slot11 = CS
+slot11 = slot11.FunPlus
+slot11 = slot11.WorldX
+slot11 = slot11.GUIS
+slot11 = slot11.Panels
+slot11 = slot11.Utils
+slot11 = slot11.KeyBindingPro
+slot12 = {
 	BOTTOM = 20,
 	MID = 0,
 	TOP = -20
 }
-slot5.AREA = slot9
-slot9 = {
+slot6.AREA = slot12
+slot12 = {
 	CAMERA_ZOOM = 1,
 	SWIPE_MODEL = 0
 }
-slot5.GAMEPAD_PRESS = slot9
-slot9 = 0.1
-slot5.SCROLL_DURATION = slot9
+slot6.GAMEPAD_PRESS = slot12
+slot12 = 0.1
+slot6.SCROLL_DURATION = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.scene = slot1
 
@@ -51,9 +56,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.ctor = slot9
+slot6.ctor = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.gestures
@@ -102,9 +107,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.ensureRuntimeData = slot9
+slot6.ensureRuntimeData = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.camera
@@ -133,9 +138,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getPreviewCamera = slot9
+slot6.getPreviewCamera = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.getPreviewCurrentEntity
@@ -225,9 +230,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getPreviewCurrentEntity = slot9
+slot6.getPreviewCurrentEntity = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.getPreviewCameraRootTransform
@@ -278,9 +283,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getPreviewCameraRootTransform = slot9
+slot6.getPreviewCameraRootTransform = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.getPreviewDefaultModeName
@@ -382,9 +387,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getDefaultCameraModeName = slot9
+slot6.getDefaultCameraModeName = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.getPreviewInitSpringArmLen
@@ -497,9 +502,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getInitSpringArmLen = slot9
+slot6.getInitSpringArmLen = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.getPreviewInitVerticalOffset
@@ -612,9 +617,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.getInitVerticalOffset = slot9
+slot6.getInitVerticalOffset = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.scene
 	slot3 = slot2.getPreviewCameraConfig
@@ -705,10 +710,14 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 27-31, warpins: 2 ---
-	slot3 = AvatarPresetData
-	slot4 = slot2.curEntityId
-	slot3 = slot3[slot4]
+	--- BLOCK #8 27-35, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.avatar
+	slot5 = slot3
+	slot3 = slot3.getAvatarPresetData
+	slot6 = slot2.curEntityId
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #8 ---
 
 	slot3 = if not slot3 then
@@ -718,14 +727,14 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 32-32, warpins: 1 ---
+	--- BLOCK #9 36-36, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 33-35, warpins: 2 ---
+	--- BLOCK #10 37-39, warpins: 2 ---
 	slot4 = slot3.body
 	--- END OF BLOCK #10 ---
 
@@ -736,14 +745,14 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 36-36, warpins: 1 ---
+	--- BLOCK #11 40-40, warpins: 1 ---
 	slot4 = 11
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 37-40, warpins: 2 ---
+	--- BLOCK #12 41-44, warpins: 2 ---
 	slot5 = slot2.CONFIG
 	slot5 = slot5[slot4]
 	--- END OF BLOCK #12 ---
@@ -755,7 +764,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 41-42, warpins: 1 ---
+	--- BLOCK #13 45-46, warpins: 1 ---
 	slot6 = nil
 
 	return slot6
@@ -765,7 +774,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 43-49, warpins: 2 ---
+	--- BLOCK #14 47-53, warpins: 2 ---
 	slot6 = Utils
 	slot6 = slot6.deepCopyTable
 	slot8 = slot5
@@ -780,7 +789,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 50-53, warpins: 1 ---
+	--- BLOCK #15 54-57, warpins: 1 ---
 	slot7 = slot2.CAMERA
 	slot7 = slot7.FIXED
 	--- END OF BLOCK #15 ---
@@ -792,7 +801,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #16 54-57, warpins: 1 ---
+	--- BLOCK #16 58-61, warpins: 1 ---
 	slot7 = slot2.CAMERA
 	slot7 = slot7.FIXED
 	--- END OF BLOCK #16 ---
@@ -804,7 +813,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 58-71, warpins: 1 ---
+	--- BLOCK #17 62-75, warpins: 1 ---
 	slot7 = slot5.maxZoom
 	slot6.minZoom = slot7
 	slot7 = Vector2
@@ -825,7 +834,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 72-72, warpins: 4 ---
+	--- BLOCK #18 76-76, warpins: 4 ---
 	return slot6
 	--- END OF BLOCK #18 ---
 
@@ -833,9 +842,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.getPreviewCameraConfig = slot9
+slot6.getPreviewCameraConfig = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0.scene
 	slot4 = slot3.cameraModes
@@ -889,9 +898,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.createCameraMode = slot9
+slot6.createCameraMode = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.ensureRuntimeData
@@ -1151,9 +1160,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.initCameraModes = slot9
+slot6.initCameraModes = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.ensureRuntimeData
@@ -1254,9 +1263,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.enableCameraMode = slot9
+slot6.enableCameraMode = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.cameraModes
@@ -1335,9 +1344,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.disableAllCameras = slot9
+slot6.disableAllCameras = slot12
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.scene
 	slot5 = slot4.pressTimer
@@ -1397,9 +1406,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.startPress = slot9
+slot6.startPress = slot12
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.GAMEPAD_PRESS
 	slot4 = slot4.CAMERA_ZOOM
@@ -1458,9 +1467,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.inPressing = slot9
+slot6.inPressing = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.scene
 	slot2 = slot1.pressTimer
@@ -1499,21 +1508,21 @@ slot9 = function(slot0)
 
 end
 
-slot5.endPress = slot9
+slot6.endPress = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-46, warpins: 1 ---
-	slot3 = KeyBindingPro
-	slot3 = slot3.GetOrAddKeyBindingByName
-	slot5 = slot1
-	slot6 = "cameraZoom"
-	slot3 = slot3(slot5, slot6)
-	slot4 = "Camera/CameraZoom"
-	slot3.actionPath = slot4
-	slot4 = true
-	slot3.isVirtual = slot4
+	slot4 = KeyBindingPro
+	slot4 = slot4.GetOrAddKeyBindingByName
+	slot6 = slot1
+	slot7 = "cameraZoom"
+	slot4 = slot4(slot6, slot7)
+	slot5 = "Camera/CameraZoom"
+	slot4.actionPath = slot5
+	slot5 = true
+	slot4.isVirtual = slot5
 
-	slot4 = function(slot0)
+	slot5 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #0 ---
@@ -1661,18 +1670,18 @@ slot9 = function(slot0, slot1, slot2)
 
 	end
 
-	slot3.luaTrigger = slot4
-	slot4 = KeyBindingPro
-	slot4 = slot4.GetOrAddKeyBindingByName
-	slot6 = slot1
-	slot7 = "cameraZoomInGamepad"
-	slot4 = slot4(slot6, slot7)
-	slot5 = "Hud/GamepadZoomIn"
-	slot4.actionPath = slot5
-	slot5 = true
-	slot4.isVirtual = slot5
+	slot4.luaTrigger = slot5
+	slot5 = KeyBindingPro
+	slot5 = slot5.GetOrAddKeyBindingByName
+	slot7 = slot1
+	slot8 = "cameraZoomInGamepad"
+	slot5 = slot5(slot7, slot8)
+	slot6 = "Hud/GamepadZoomIn"
+	slot5.actionPath = slot6
+	slot6 = true
+	slot5.isVirtual = slot6
 
-	slot5 = function(slot0)
+	slot6 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #0 ---
@@ -1755,18 +1764,18 @@ slot9 = function(slot0, slot1, slot2)
 
 	end
 
-	slot4.luaTrigger = slot5
-	slot5 = KeyBindingPro
-	slot5 = slot5.GetOrAddKeyBindingByName
-	slot7 = slot1
-	slot8 = "cameraZoomOutGamepad"
-	slot5 = slot5(slot7, slot8)
-	slot6 = "Hud/GamepadZoomOut"
-	slot5.actionPath = slot6
-	slot6 = true
-	slot5.isVirtual = slot6
+	slot5.luaTrigger = slot6
+	slot6 = KeyBindingPro
+	slot6 = slot6.GetOrAddKeyBindingByName
+	slot8 = slot1
+	slot9 = "cameraZoomOutGamepad"
+	slot6 = slot6(slot8, slot9)
+	slot7 = "Hud/GamepadZoomOut"
+	slot6.actionPath = slot7
+	slot7 = true
+	slot6.isVirtual = slot7
 
-	slot6 = function(slot0)
+	slot7 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
 		slot1 = slot0.phase
 		--- END OF BLOCK #0 ---
@@ -1849,31 +1858,32 @@ slot9 = function(slot0, slot1, slot2)
 
 	end
 
-	slot5.luaTrigger = slot6
-	slot6 = KeyBindingPro
-	slot6 = slot6.GetOrAddKeyBindingByName
-	slot8 = slot1
-	slot9 = "swipeModelGamepad"
-	slot6 = slot6(slot8, slot9)
-	slot7 = "Hud/RightStickMove"
-	slot6.actionPath = slot7
-	slot7 = true
-	slot6.isVirtual = slot7
+	slot6.luaTrigger = slot7
+	slot7 = KeyBindingPro
+	slot7 = slot7.GetOrAddKeyBindingByName
+	slot9 = slot1
+	slot10 = "swipeModelGamepad"
+	slot7 = slot7(slot9, slot10)
+	slot8 = "Hud/RightStickMove"
+	slot7.actionPath = slot8
+	slot8 = true
+	slot7.isVirtual = slot8
 
-	slot7 = function(slot0)
+	slot8 = function(slot0)
 		--- BLOCK #0 1-3, warpins: 1 ---
-		slot1 = slot0.phase
+		slot1 = isModelRotationBlocked
 		--- END OF BLOCK #0 ---
 
-		if slot1 == "Performed" then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #4
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 4-6, warpins: 1 ---
-		slot1 = callback
+		--- BLOCK #1 4-7, warpins: 1 ---
+		slot1 = isModelRotationBlocked
+		slot1 = slot1()
 		--- END OF BLOCK #1 ---
 
 		slot1 = if slot1 then
@@ -1883,18 +1893,56 @@ slot9 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #2 7-10, warpins: 1 ---
+		--- BLOCK #2 8-13, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.endPress
+
+		slot1(slot3)
+
+		slot1 = false
+
+		return slot1
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 14-16, warpins: 3 ---
+		slot1 = slot0.phase
+		--- END OF BLOCK #3 ---
+
+		if slot1 == "Performed" then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #4 17-19, warpins: 1 ---
+		slot1 = callback
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 20-23, warpins: 1 ---
 		slot1 = callback
 		slot3 = slot0
 
 		slot1(slot3)
 
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #3 11-41, warpins: 1 ---
+		--- BLOCK #6 24-54, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.scene
 		slot2 = slot0.valueVec2
@@ -1927,45 +1975,45 @@ slot9 = function(slot0, slot1, slot2)
 
 		slot1(slot3, slot4)
 
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #6 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #6
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #4 42-44, warpins: 1 ---
+		--- BLOCK #7 55-57, warpins: 1 ---
 		slot1 = slot0.phase
-		--- END OF BLOCK #4 ---
+		--- END OF BLOCK #7 ---
 
 		if slot1 == "Canceled" then
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #8
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #5 45-48, warpins: 1 ---
+		--- BLOCK #8 58-61, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.endPress
 
 		slot1(slot3)
 
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #6
+		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #6 49-50, warpins: 4 ---
+		--- BLOCK #9 62-63, warpins: 4 ---
 		slot1 = true
 
 		return slot1
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #9 ---
 
 
 
 	end
 
-	slot6.luaTrigger = slot7
+	slot7.luaTrigger = slot8
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1974,9 +2022,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.addCameraZoomKeyBinding = slot9
+slot6.addCameraZoomKeyBinding = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.ensureRuntimeData
@@ -2381,9 +2429,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.registerGesture = slot9
+slot6.registerGesture = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.scene
 	slot4 = slot3.gestures
@@ -2513,9 +2561,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.unRegisterGesture = slot9
+slot6.unRegisterGesture = slot12
 
-slot9 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.scene
 	slot6 = slot0
@@ -2544,7 +2592,7 @@ slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #2 10-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
 	--- BLOCK #3 11-12, warpins: 1 ---
@@ -2586,15 +2634,18 @@ slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #6 25-25, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #7 26-32, warpins: 1 ---
+	--- BLOCK #7 26-35, warpins: 1 ---
 	slot8 = DoTweenAnimMgr
 	slot8 = slot8.IsTweening
 	slot10 = slot7.gameObject
-	slot11 = "armLenTween"
-	slot8 = slot8(slot10, slot11)
+	slot11 = LuaUIUtils
+	slot11 = slot11.TweenId
+	slot13 = ID_ARM_LEN
+	MULTRES = slot11(slot13)
+	slot8 = slot8(slot10, MULTRES)
 	--- END OF BLOCK #7 ---
 
 	slot8 = if slot8 then
@@ -2604,26 +2655,66 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 33-37, warpins: 1 ---
+	--- BLOCK #8 36-43, warpins: 1 ---
 	slot8 = DoTweenAnimMgr
 	slot8 = slot8.Kill
 	slot10 = slot7.gameObject
-	slot11 = "armLenTween"
+	slot11 = LuaUIUtils
+	slot11 = slot11.TweenId
+	slot13 = ID_ARM_LEN
+	MULTRES = slot11(slot13)
 
-	slot8(slot10, slot11)
+	slot8(slot10, MULTRES)
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 38-59, warpins: 2 ---
+	--- BLOCK #9 44-53, warpins: 2 ---
+	slot8 = DoTweenAnimMgr
+	slot8 = slot8.IsTweening
+	slot10 = slot7.gameObject
+	slot11 = LuaUIUtils
+	slot11 = slot11.TweenId
+	slot13 = ID_CAMERA_AREA
+	MULTRES = slot11(slot13)
+	slot8 = slot8(slot10, MULTRES)
+	--- END OF BLOCK #9 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 54-61, warpins: 1 ---
+	slot8 = DoTweenAnimMgr
+	slot8 = slot8.Kill
+	slot10 = slot7.gameObject
+	slot11 = LuaUIUtils
+	slot11 = slot11.TweenId
+	slot13 = ID_CAMERA_AREA
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 62-86, warpins: 2 ---
 	slot8 = DoTweenAnimMgr
 	slot8 = slot8.DoFloat
 	slot10 = slot7.gameObject
 	slot11 = slot5
 	slot12 = slot6
-	slot13 = "cameraAreaTween"
+	slot13 = LuaUIUtils
+	slot13 = slot13.TweenId
+	slot15 = ID_CAMERA_AREA
+	slot13 = slot13(slot15)
 	slot14 = slot0.SCROLL_DURATION
 	slot15 = 0
 	slot16 = CS
@@ -2644,7 +2735,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 	slot18 = function(slot0)
-		--- BLOCK #0 1-13, warpins: 1 ---
+		--- BLOCK #0 1-11, warpins: 1 ---
 		slot1 = scene
 		slot1 = slot1.curCameraMode
 		slot3 = slot1
@@ -2655,14 +2746,50 @@ slot9 = function(slot0, slot1, slot2)
 
 		slot1 = scene
 		slot1 = slot1.curCameraMode
-		slot3 = slot1
-		slot1 = slot1.moveCameraInVertical
-		slot4 = area
+		slot1 = slot1.getVerticalMoveScale
+		--- END OF BLOCK #0 ---
 
-		slot1(slot3, slot4)
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 12-18, warpins: 1 ---
+		slot1 = scene
+		slot1 = slot1.curCameraMode
+		slot3 = slot1
+		slot1 = slot1.getVerticalMoveScale
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 19-19, warpins: 2 ---
+		slot1 = 1
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 20-27, warpins: 2 ---
+		slot2 = scene
+		slot2 = slot2.curCameraMode
+		slot4 = slot2
+		slot2 = slot2.moveCameraInVertical
+		slot5 = area
+		slot5 = slot5 * slot1
+
+		slot2(slot4, slot5)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -2682,29 +2809,29 @@ slot9 = function(slot0, slot1, slot2)
 	slot8(slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20)
 
 	return
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 60-60, warpins: 2 ---
-	return
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 61-61, warpins: 2 ---
-	return
 	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 87-87, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 88-88, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot5.cameraZoomIn = slot9
+slot6.cameraZoomIn = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.scene
 	slot5 = slot0
@@ -2742,7 +2869,7 @@ slot9 = function(slot0, slot1)
 	if slot5 < slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	end
 
 
@@ -2753,24 +2880,58 @@ slot9 = function(slot0, slot1)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 21-24, warpins: 1 ---
+	slot4 = slot2.curCameraMode
+	slot4 = slot4.getVerticalMoveScale
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 21-26, warpins: 1 ---
+	--- BLOCK #5 25-30, warpins: 1 ---
 	slot4 = slot2.curCameraMode
 	slot6 = slot4
-	slot4 = slot4.moveCameraInVertical
-	slot7 = slot1.y
+	slot4 = slot4.getVerticalMoveScale
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #5 ---
 
-	slot4(slot6, slot7)
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
-	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	--- BLOCK #6 31-31, warpins: 2 ---
+	slot4 = 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 27-32, warpins: 1 ---
+	--- BLOCK #7 32-38, warpins: 2 ---
+	slot5 = slot2.curCameraMode
+	slot7 = slot5
+	slot5 = slot5.moveCameraInVertical
+	slot8 = slot1.y
+	slot8 = slot8 * slot4
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 39-44, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.rotatePreviewEntity
 	slot7 = slot1.x
@@ -2779,22 +2940,22 @@ slot9 = function(slot0, slot1)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 33-33, warpins: 3 ---
+	--- BLOCK #9 45-45, warpins: 3 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot5.swipeModel = slot9
+slot6.swipeModel = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.scene
 	slot3 = slot2.rotatePreviewEntity
@@ -2845,26 +3006,20 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 18-28, warpins: 1 ---
+	--- BLOCK #4 18-22, warpins: 1 ---
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
 	slot6 = slot4
-	slot4 = slot4.RotateAround
-	slot7 = slot3.eModel
-	slot7 = slot7.transform
-	slot7 = slot7.position
-	slot8 = Vector3
-	slot8 = slot8.up
-	slot9 = slot1
+	slot4 = slot4.RotateAroundTransform
+	slot7 = slot1
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-29, warpins: 3 ---
+	--- BLOCK #5 23-23, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -2872,9 +3027,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.rotatePreviewEntity = slot9
+slot6.rotatePreviewEntity = slot12
 
-slot9 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.scene
 	slot3 = slot2.curCameraMode
@@ -2911,9 +3066,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.setPivotOffsetX = slot9
+slot6.setPivotOffsetX = slot12
 
-slot9 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.scene
 	slot4 = slot0
@@ -2967,9 +3122,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onDestroy = slot9
+slot6.onDestroy = slot12
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
 slot2 = "Utils.LuaCSharpArr"
 slot0 = slot0(slot2)
@@ -33,45 +33,6 @@ slot1.state = slot2
 slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0[3]
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot1.elementPercent = slot2
-
-slot2 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = slot0[4]
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot1.syncDirty = slot2
-
-slot2 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = slot0[5]
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot1.readDirty = slot2
-
-slot2 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = slot0[6]
 
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -120,47 +81,8 @@ slot3 = function(slot0, slot1)
 
 end
 
-slot2.elementPercent = slot3
-
-slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0[4] = slot1
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.syncDirty = slot3
-
-slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0[5] = slot1
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.readDirty = slot3
-
-slot3 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0[6] = slot1
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
 slot2.ability = slot3
-slot3 = 6
+slot3 = 3
 slot4 = "EcsShareData"
 slot5 = {}
 
@@ -309,37 +231,22 @@ end
 
 slot6.destroy = slot7
 slot7 = {
-	count = 6
+	count = 3
 }
 slot8 = {}
 slot9 = {
-	kind = "double",
-	slot = 1
+	slot = 1,
+	kind = "double"
 }
 slot8.compressedId = slot9
 slot9 = {
-	kind = "int",
-	slot = 2
+	slot = 2,
+	kind = "int"
 }
 slot8.state = slot9
 slot9 = {
-	kind = "double",
-	slot = 3
-}
-slot8.elementPercent = slot9
-slot9 = {
-	kind = "bool",
-	slot = 4
-}
-slot8.syncDirty = slot9
-slot9 = {
-	kind = "bool",
-	slot = 5
-}
-slot8.readDirty = slot9
-slot9 = {
-	kind = "int",
-	slot = 6
+	slot = 3,
+	kind = "int"
 }
 slot8.ability = slot9
 slot7.fields = slot8

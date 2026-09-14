@@ -261,7 +261,7 @@ slot9 = function(slot0)
 	slot3 = slot3(slot5, slot6, slot7, slot8)
 	slot0.tickTimer = slot3
 	slot3 = Time
-	slot3 = slot3.realtimeSinceStartup
+	slot3 = slot3.realSecondCache
 	slot0.lastUpdateTime = slot3
 
 	return
@@ -276,7 +276,7 @@ slot4.onShow = slot9
 slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastUpdateTime
 	slot1 = slot1 - slot2
 	slot2 = slot0.min_interval
@@ -300,7 +300,7 @@ slot9 = function(slot0)
 
 	--- BLOCK #2 9-24, warpins: 2 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.lastUpdateTime = slot1
 	slot1 = slot0.model
 	slot3 = slot1

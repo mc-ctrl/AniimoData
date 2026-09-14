@@ -1,132 +1,135 @@
---- BLOCK #0 1-174, warpins: 1 ---
+--- BLOCK #0 1-189, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
-slot2 = slot0.getLogger
-slot4 = "HomeCampUtils"
+slot2 = require
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
-slot3 = require
-slot5 = "Common.Const.Const"
+slot3 = slot1.getLogger
+slot5 = "HomeCampUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.LuaUIUtils"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.PetManagementDataHelper"
+slot7 = "Utils.LuaUIUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientTextUtils"
+slot8 = "Utils.PetManagementDataHelper"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.UIConst"
+slot9 = "Utils.ClientTextUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.pet_level_data"
+slot10 = "Const.UIConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.pet_data"
+slot11 = "Data.pet_level_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_config_data"
+slot12 = "Data.pet_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.pet_detail_property_data"
+slot13 = "Data.pet_config_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_prop_level_max"
+slot14 = "Data.pet_detail_property_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Utils.Utils"
+slot15 = "Data.pet_prop_level_max"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.AbilityConst"
+slot16 = "Common.Utils.Utils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Core.Timer.TimerManager"
+slot17 = "Common.Const.AbilityConst"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Utils.AbilityUtils"
+slot18 = "Core.Timer.TimerManager"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.pet_research_content_data"
+slot19 = "Common.Utils.AbilityUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Core.Common.Time"
+slot20 = "Data.pet_research_content_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Guis.Utils.PetResearchUtils"
+slot21 = "Core.Common.Time"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Const.MessageName"
+slot22 = "Guis.Utils.PetResearchUtils"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.pet_avatar_data"
+slot23 = "Const.MessageName"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.skill_tag_data"
+slot24 = "Data.pet_avatar_data"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Const.AddressDataConst"
+slot25 = "Data.skill_tag_data"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "Core.Common.lume"
+slot26 = "Const.AddressDataConst"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Const.ClientConst"
+slot27 = "Core.Common.lume"
 slot25 = slot25(slot27)
 slot26 = require
-slot28 = "Data.pet_attr_convert_data"
+slot28 = "Const.ClientConst"
 slot26 = slot26(slot28)
 slot27 = require
-slot29 = "Common.Const.AttributeConst"
+slot29 = "Data.pet_attr_convert_data"
 slot27 = slot27(slot29)
 slot28 = require
-slot30 = "Data.core_carry_data"
+slot30 = "Common.Const.AttributeConst"
 slot28 = slot28(slot30)
 slot29 = require
-slot31 = "Data.attribute_group_data"
+slot31 = "Data.core_carry_data"
 slot29 = slot29(slot31)
 slot30 = require
-slot32 = "Common.Const.PrimaryPropertyConst"
+slot32 = "Data.attribute_group_data"
 slot30 = slot30(slot32)
 slot31 = require
-slot33 = "Data.pet_display_attr_names"
+slot33 = "Common.Const.PrimaryPropertyConst"
 slot31 = slot31(slot33)
 slot32 = require
-slot34 = "Data.pet_resonance_data"
+slot34 = "Data.pet_display_attr_names"
 slot32 = slot32(slot34)
 slot33 = require
-slot35 = "Data.formula_data"
+slot35 = "Data.pet_resonance_data"
 slot33 = slot33(slot35)
 slot34 = require
-slot36 = "Common.NoticeDef"
+slot36 = "Data.formula_data"
 slot34 = slot34(slot36)
 slot35 = require
-slot37 = "Data.pet_family_data"
+slot37 = "Common.NoticeDef"
 slot35 = slot35(slot37)
 slot36 = require
-slot38 = "Common.Utils.ItemUtils"
+slot38 = "Data.pet_family_data"
 slot36 = slot36(slot38)
 slot37 = require
-slot39 = "Data.pet_dispatch_data"
+slot39 = "Common.Utils.ItemUtils"
 slot37 = slot37(slot39)
 slot38 = require
-slot40 = "Common.Utils.TimeUtils"
+slot40 = "Data.pet_dispatch_data"
 slot38 = slot38(slot40)
 slot39 = require
-slot41 = "Data.home_camp_data"
+slot41 = "Common.Utils.TimeUtils"
 slot39 = slot39(slot41)
-slot40 = {}
-slot41 = string
-slot41 = slot41.format
-slot42 = math
-slot42 = slot42.floor
-slot43 = "CampCarDispatchRewardItemIds"
+slot40 = require
+slot42 = "Data.home_camp_data"
+slot40 = slot40(slot42)
+slot41 = {}
+slot42 = string
+slot42 = slot42.format
+slot43 = math
+slot43 = slot43.floor
+slot44 = "CampCarDispatchRewardItemIds"
 
-slot44 = function()
+slot45 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PetDispatchData
 	--- END OF BLOCK #0 ---
@@ -369,9 +372,9 @@ slot44 = function()
 
 end
 
-slot40.getCampPetDispatchSortTypes = slot44
+slot41.getCampPetDispatchSortTypes = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -403,9 +406,58 @@ slot44 = function(slot0)
 
 end
 
-slot40.getCampPetsDispatchCfg = slot44
+slot41.getCampPetsDispatchCfg = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = HomeCampData
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = EMPTY_TABLE
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot1 = slot1.extraRewardItemList
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	slot1 = {}
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-10, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot41.getCampDisplayExtraRewardList = slot45
+
+slot45 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -527,9 +579,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.getCampPetsList = slot44
+slot41.getCampPetsList = slot45
 
-slot44 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -678,9 +730,9 @@ slot44 = function(slot0, slot1)
 
 end
 
-slot40.getUICacheCampPetsList = slot44
+slot41.getUICacheCampPetsList = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.space
@@ -831,9 +883,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.m_setCampPetsFacilityInfo = slot44
+slot41.m_setCampPetsFacilityInfo = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -945,9 +997,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.getCampPetsOffLineInfo = slot44
+slot41.getCampPetsOffLineInfo = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -989,9 +1041,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.getPlayerCarPetsDispatchState = slot44
+slot41.getPlayerCarPetsDispatchState = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = HomeCampUtils
 	slot1.m_preSelectedDispatchedId = slot0
@@ -1003,9 +1055,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.setCampPreSelectedDispatchedId = slot44
+slot41.setCampPreSelectedDispatchedId = slot45
 
-slot44 = function()
+slot45 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = HomeCampUtils
 	slot0 = slot0.m_preSelectedDispatchedId
@@ -1034,9 +1086,9 @@ slot44 = function()
 
 end
 
-slot40.getCampPreSelectedDispatchedId = slot44
+slot41.getCampPreSelectedDispatchedId = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = string_format
 	slot3 = "%s_%d"
@@ -1062,9 +1114,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.getClientCachedRewardItemIds = slot44
+slot41.getClientCachedRewardItemIds = slot45
 
-slot44 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = string_format
 	slot4 = "%s_%d"
@@ -1091,9 +1143,9 @@ slot44 = function(slot0, slot1)
 
 end
 
-slot40.setClientCachedRewardItemIds = slot44
+slot41.setClientCachedRewardItemIds = slot45
 
-slot44 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = HomeCampUtils
 	--- END OF BLOCK #0 ---
@@ -1144,7 +1196,7 @@ slot44 = function(slot0, slot1)
 
 
 	--- BLOCK #5 14-14, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -1202,9 +1254,9 @@ slot44 = function(slot0, slot1)
 
 end
 
-slot40.setPreDispatchRewardItems = slot44
+slot41.setPreDispatchRewardItems = slot45
 
-slot44 = function()
+slot45 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = HomeCampUtils
 	slot0 = slot0.m_preDispatchRewardItems
@@ -1233,9 +1285,9 @@ slot44 = function()
 
 end
 
-slot40.getPreDispatchRewardItems = slot44
+slot41.getPreDispatchRewardItems = slot45
 
-slot44 = function()
+slot45 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = HomeCampUtils
 	slot0 = slot0.m_preDispatchRewardIdNumsListDict
@@ -1264,9 +1316,9 @@ slot44 = function()
 
 end
 
-slot40.getPreDispatchRewardIdNumsListDict = slot44
+slot41.getPreDispatchRewardIdNumsListDict = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = HomeCampUtils
 	slot1.m_preDispatchId = slot0
@@ -1278,9 +1330,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.setPreDispatchId = slot44
+slot41.setPreDispatchId = slot45
 
-slot44 = function()
+slot45 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = HomeCampUtils
 	slot0 = slot0.m_preDispatchId
@@ -1309,9 +1361,79 @@ slot44 = function()
 
 end
 
-slot40.getPreDispatchId = slot44
+slot41.getPreDispatchId = slot45
 
-slot44 = function()
+slot45 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = HomeCampUtils
+	slot1.m_preDispatchCampId = slot0
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot41.setPreDispatchCampId = slot45
+
+slot45 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = HomeCampUtils
+	slot0 = slot0.m_preDispatchCampId
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-13, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.curCampStaticId
+	--- END OF BLOCK #2 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	slot0 = 0
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-15, warpins: 3 ---
+	return slot0
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot41.getPreDispatchCampId = slot45
+
+slot45 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -1388,30 +1510,34 @@ slot44 = function()
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-49, warpins: 2 ---
+	--- BLOCK #7 27-53, warpins: 2 ---
 	slot4 = HomeCampUtils
 	slot4 = slot4.getPreDispatchId
 	slot4 = slot4()
 	slot5 = HomeCampUtils
-	slot5 = slot5.getCarDispatchReward
-	slot7 = slot2
-	slot8 = slot4
-	slot5, slot6 = slot5(slot7, slot8)
-	slot7 = {}
-	slot7.petIds = slot3
-	slot7.dispatchId = slot4
-	slot7.reward = slot5
-	slot7.multiplies = slot6
-	slot8 = pg
-	slot8 = slot8.global
-	slot8 = slot8.ui
-	slot10 = slot8
-	slot8 = slot8.open
-	slot11 = UIConst
-	slot11 = slot11.HOME_CAR_CAM_DISPATCH_REWARDS
-	slot12 = slot7
+	slot5 = slot5.getPreDispatchCampId
+	slot5 = slot5()
+	slot6 = HomeCampUtils
+	slot6 = slot6.getCarDispatchReward
+	slot8 = slot2
+	slot9 = slot4
+	slot10 = slot5
+	slot6, slot7 = slot6(slot8, slot9, slot10)
+	slot8 = {}
+	slot8.petIds = slot3
+	slot8.dispatchId = slot4
+	slot8.reward = slot6
+	slot8.multiplies = slot7
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot11 = slot9
+	slot9 = slot9.open
+	slot12 = UIConst
+	slot12 = slot12.HOME_CAR_CAM_DISPATCH_REWARDS
+	slot13 = slot8
 
-	slot8(slot10, slot11, slot12)
+	slot9(slot11, slot12, slot13)
 
 	return
 	--- END OF BLOCK #7 ---
@@ -1420,11 +1546,11 @@ slot44 = function()
 
 end
 
-slot40.tryOpenFinishDispatchDialog = slot44
+slot41.tryOpenFinishDispatchDialog = slot45
 
-slot44 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.space
+	slot2 = slot1
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -1435,89 +1561,296 @@ slot44 = function(slot0, slot1)
 
 
 	--- BLOCK #1 4-5, warpins: 1 ---
-	slot2 = slot0.space
-	slot2 = slot2.staticId
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	if slot2 == 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #2 6-7, warpins: 2 ---
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot3 = slot0.dispatchInfo
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot1 then
+	slot2 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 8-10, warpins: 1 ---
+	--- BLOCK #3 9-10, warpins: 1 ---
 	slot3 = slot0.dispatchInfo
+	slot2 = slot3.campId
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
-	else
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-12, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 11-12, warpins: 1 ---
-	slot3 = slot0.dispatchInfo
-	slot3 = slot3.dispId
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 13-16, warpins: 3 ---
-	slot4 = HomeCampData
-	slot4 = slot4[slot2]
+	--- BLOCK #5 13-14, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	slot5 = if slot4 then
+	if slot2 == 0 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 17-19, warpins: 1 ---
-	slot5 = slot4.rewards
+	--- BLOCK #6 15-17, warpins: 2 ---
+	slot3 = slot0.space
 	--- END OF BLOCK #6 ---
 
-	slot5 = if slot5 then
+	slot2 = if slot3 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 20-21, warpins: 1 ---
-	slot5 = slot4.rewards
-	slot5 = slot5[slot3]
+	--- BLOCK #7 18-19, warpins: 1 ---
+	slot3 = slot0.space
+	slot2 = slot3.staticId
+
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 22-26, warpins: 3 ---
-	slot6 = slot0.petIds
-	slot6 = #slot6
-	slot7 = slot5
-	slot8 = slot6
-
-	return slot7, slot8
+	--- BLOCK #8 20-20, warpins: 3 ---
+	return slot2
 	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot40.getCarDispatchReward = slot44
+slot41.getCarDispatchCampId = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = HomeCampUtils
+	slot3 = slot3.getCarDispatchCampId
+	slot5 = slot0
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot4 = slot0.dispatchInfo
+	--- END OF BLOCK #1 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-12, warpins: 1 ---
+	slot4 = slot0.dispatchInfo
+	slot4 = slot4.dispId
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-16, warpins: 3 ---
+	slot5 = HomeCampData
+	slot5 = slot5[slot3]
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 17-19, warpins: 1 ---
+	slot6 = slot5.rewards
+	--- END OF BLOCK #4 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-21, warpins: 1 ---
+	slot6 = slot5.rewards
+	slot6 = slot6[slot4]
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-26, warpins: 3 ---
+	slot7 = slot0.petIds
+	slot7 = #slot7
+	slot8 = slot6
+	slot9 = slot7
+
+	return slot8, slot9
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot41.getCarDispatchReward = slot45
+
+slot45 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = HomeCampUtils
+	slot2 = slot2.getCarDispatchCampId
+	slot4 = slot0
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	slot3 = HomeCampData
+	slot3 = slot3[slot2]
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot4 = slot3.rewardItemList
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-13, warpins: 2 ---
+	slot4 = {}
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot41.getCarDispatchPreviewRewardItemIds = slot45
+
+slot45 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = HomeCampUtils
+	slot3 = slot3.getCarDispatchCampId
+	slot5 = slot0
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	slot4 = HomeCampData
+	slot4 = slot4[slot3]
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot5 = slot4.rewards
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot5 = slot4.rewards
+	slot5 = slot5[slot1]
+	--- END OF BLOCK #2 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-17, warpins: 3 ---
+	slot5 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-23, warpins: 2 ---
+	slot6 = "rewardDes"
+	slot7 = slot1
+	slot6 = slot6 .. slot7
+	slot6 = slot4[slot6]
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-24, warpins: 1 ---
+	slot6 = ""
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-28, warpins: 2 ---
+	slot7 = {}
+	slot7.dropId = slot5
+	slot7.itemDescKey = slot6
+
+	return slot7
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot41.getCarDispatchBelongTypeRewardInfo = slot45
+
+slot45 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = HomeCampUtils
 	--- END OF BLOCK #0 ---
@@ -1546,9 +1879,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.setCacheHomeCampPetIds = slot44
+slot41.setCacheHomeCampPetIds = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = HomeCampUtils
 	slot1 = slot1.m_cacheHomeCampPetIds
@@ -1598,9 +1931,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.isInCacheHomeCampPetIds = slot44
+slot41.isInCacheHomeCampPetIds = slot45
 
-slot44 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1774,9 +2107,9 @@ slot44 = function(slot0, slot1)
 
 end
 
-slot40.isInCacheRemoveHomeCampPetIds = slot44
+slot41.isInCacheRemoveHomeCampPetIds = slot45
 
-slot44 = function(slot0)
+slot45 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = function(slot0)
 		--- BLOCK #0 1-7, warpins: 1 ---
@@ -1829,9 +2162,9 @@ slot44 = function(slot0)
 
 end
 
-slot40.getIsGainedTheDispatchItem = slot44
+slot41.getIsGainedTheDispatchItem = slot45
 
-slot44 = function(slot0, slot1)
+slot45 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1941,9 +2274,9 @@ slot44 = function(slot0, slot1)
 
 end
 
-slot40.trySetUnknownDispatchItem = slot44
+slot41.trySetUnknownDispatchItem = slot45
 
-return slot40
+return slot41
 --- END OF BLOCK #0 ---
 
 

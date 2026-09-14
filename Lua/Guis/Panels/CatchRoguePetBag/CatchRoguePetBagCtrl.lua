@@ -1,4 +1,4 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -27,10 +27,13 @@ slot7 = slot2.LightClass
 slot9 = "CatchRoguePetBagCtrl"
 slot10 = slot3
 slot7 = slot7(slot9, slot10)
-slot8 = {}
-slot7.messages = slot8
+slot8 = require
+slot10 = "Utils.PetManagementDataHelper"
+slot8 = slot8(slot10)
+slot9 = {}
+slot7.messages = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -51,9 +54,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onCreate = slot8
+slot7.onCreate = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -104,9 +107,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.addListener = slot8
+slot7.addListener = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = PetManagementUtils
 	slot1 = slot1.destroyTemplate
@@ -126,9 +129,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onDestroy = slot8
+slot7.onDestroy = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -144,9 +147,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onOpen = slot8
+slot7.onOpen = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -155,9 +158,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onShow = slot8
+slot7.onShow = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -166,9 +169,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onHide = slot8
+slot7.onHide = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = PetManagementUtils
 	slot1 = slot1.initSimpleInfoTemplate
@@ -353,10 +356,10 @@ slot8 = function(slot0)
 
 end
 
-slot7.initUI = slot8
+slot7.initUI = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot9 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-31, warpins: 1 ---
 	slot4 = function()
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = self
@@ -404,76 +407,46 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	slot1.draggable = slot7
 	slot7 = false
 	slot1.enabledTooltip = slot7
-	slot9 = slot1
-	slot7 = slot1.TryChangePage
-	slot10 = "Type"
-	slot11 = slot3.isShiny
+	slot7 = LuaUIUtils
+	slot7 = slot7.renderPetHeadFlashBgAndFrame
+	slot9 = slot4
+	slot10 = slot3.isShiny
+	slot11 = slot3.shinyStyle
 	--- END OF BLOCK #0 ---
 
-	slot11 = if slot11 then
+	slot11 = if not slot11 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 31-32, warpins: 1 ---
-	slot11 = 1
+	--- BLOCK #1 32-32, warpins: 1 ---
+	slot11 = 0
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 33-33, warpins: 1 ---
-	slot11 = 0
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 34-40, warpins: 2 ---
+	--- BLOCK #2 33-40, warpins: 2 ---
 	slot7(slot9, slot10, slot11)
 
+	slot7 = PetManagementDataHelper
+	slot7 = slot7.tryChangePetHeadBossTagPage
 	slot9 = slot1
-	slot7 = slot1.TryChangePage
-	slot10 = "isBoss"
-	slot11 = slot3.isBoss
-	--- END OF BLOCK #3 ---
+	slot10 = slot3.label
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 41-42, warpins: 1 ---
-	slot11 = 1
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 43-43, warpins: 1 ---
-	slot11 = 0
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 44-46, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
+	slot7(slot9, slot10)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot7.renderPetItem = slot8
+slot7.renderPetItem = slot9
 
 return slot7
 --- END OF BLOCK #0 ---

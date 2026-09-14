@@ -16,23 +16,23 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "tSensorTgtId",
 	value = "0",
 	type = "int",
-	name = "tSensorTgtId",
 	const = 0
 }
 slot4[1] = slot5
 slot5 = {
+	name = "",
 	value = "false",
 	type = "bool",
-	name = "",
 	const = false
 }
 slot4[2] = slot5
 slot5 = {
+	name = "eatTimeOut",
 	value = "5.1",
 	type = "float",
-	name = "eatTimeOut",
 	const = 5.1
 }
 slot4[3] = slot5

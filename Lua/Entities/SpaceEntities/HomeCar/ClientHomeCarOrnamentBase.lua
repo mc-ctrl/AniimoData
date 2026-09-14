@@ -66,9 +66,7 @@ end
 slot9.ctor = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = slot1.isClientEnt
-	slot0.isClientEnt = slot2
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientHomeCarOrnamentBase
 	slot2 = slot2.super
 	slot2 = slot2.init

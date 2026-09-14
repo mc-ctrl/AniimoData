@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-66, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Panels.HudV2.HudBaseComponent"
 slot0 = slot0(slot2)
@@ -49,6 +49,12 @@ slot11[slot12] = slot13
 slot12 = slot2.ROGUE_START_BATTLE
 slot13 = {
 	"onRogueStartBattle",
+	true
+}
+slot11[slot12] = slot13
+slot12 = slot2.CATCH_ROGUE_LEVEL_CHANGE
+slot13 = {
+	"refreshTowerInfo",
 	true
 }
 slot11[slot12] = slot13
@@ -148,7 +154,7 @@ slot11 = function(slot0)
 	slot1 = LuaUIUtils
 	slot1 = slot1.setUIViewVisible
 	slot3 = slot0.towerConditionUComponent
-	slot4 = slot0.isInBattle
+	slot4 = false
 
 	slot1(slot3, slot4)
 
@@ -443,14 +449,7 @@ end
 slot10.onRogueStartBattle = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.towerConditionUComponent
-	slot4 = true
-
-	slot1(slot3, slot4)
-
+	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
 

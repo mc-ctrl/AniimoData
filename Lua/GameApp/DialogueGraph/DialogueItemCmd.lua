@@ -1,4 +1,4 @@
---- BLOCK #0 1-147, warpins: 1 ---
+--- BLOCK #0 1-170, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerConst"
 slot0 = slot0(slot2)
@@ -30,23 +30,26 @@ slot9 = require
 slot11 = "Const.DialogueGraphConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "GameApp.DialogueGraph.DialogueGraphUtils"
+slot12 = "GameApp.DialogueGraph.DialogueGraphRuntime.Core.CompiledRuntimeLoader"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Framework.SafeCallbackWithStatusAndReturn"
+slot13 = "GameApp.DialogueGraph.DialogueGraphUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "GameApp.DialogueGraph.DialogueGraphPlaybackController"
+slot14 = "Core.Framework.SafeCallbackWithStatusAndReturn"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Entities.Utils.EModelUtils"
+slot15 = "GameApp.DialogueGraph.DialogueGraphPlaybackController"
 slot13 = slot13(slot15)
-slot14 = slot3.LightClass
-slot16 = "DialogueItemCmd"
+slot14 = require
+slot16 = "Entities.Utils.EModelUtils"
 slot14 = slot14(slot16)
+slot15 = slot3.LightClass
+slot17 = "DialogueItemCmd"
+slot15 = slot15(slot17)
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-41, warpins: 1 ---
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-48, warpins: 1 ---
 	slot2 = slot1.dialogueId
 	slot0.id = slot2
 	slot2 = slot1.config
@@ -69,12 +72,19 @@ slot15 = function(slot0, slot1)
 	slot2 = {}
 	slot0.cacheActorInfo = slot2
 	slot2 = {}
+	slot0.virtualActorAngle = slot2
+	slot2 = {}
 	slot0.pendingRPCList = slot2
 	slot2 = DialogueGraphPlaybackController
 	slot2 = slot2.new
 	slot4 = slot0
 	slot2 = slot2(slot4)
 	slot0.playback = slot2
+	slot2 = DialogueGraphUtils
+	slot2 = slot2.isLuaGraphEnabled
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot0.enableLuaGraph = slot2
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.dialogueGraphMgr
@@ -95,11 +105,11 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.ctor = slot15
+slot15.ctor = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.graphItem
+	slot1 = slot0.enableLuaGraph
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -109,46 +119,108 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-11, warpins: 1 ---
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryPreloadCompiledRunner
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot1 = slot0.graphItem
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
 	slot1 = slot0.graphItem
 	slot3 = slot1
 	slot1 = slot1.Preload
 
 	slot1(slot3)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-19, warpins: 3 ---
 	slot1 = DialogueGraphConst
 	slot1 = slot1.DIALOGUE_GRAPH_STATE
 	slot1 = slot1.READY
 	slot0.playState = slot1
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 12-12, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot14.preload = slot15
+slot15.preload = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.graphItem
+	slot2 = slot0.enableLuaGraph
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 4-8, warpins: 1 ---
+	--- BLOCK #1 4-12, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.tryPreloadCompiledRunner
+
+	slot2(slot4)
+
+	slot2 = DialogueGraphConst
+	slot2 = slot2.DIALOGUE_GRAPH_STATE
+	slot2 = slot2.READY
+	slot0.playState = slot2
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 13-15, warpins: 1 ---
+	slot2 = slot1
+
+	slot2()
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot2 = slot0.graphItem
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-23, warpins: 1 ---
 	slot2 = slot0.graphItem
 	slot4 = slot2
 	slot2 = slot2.AsyncPreload
@@ -190,23 +262,220 @@ slot15 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #2 9-10, warpins: 2 ---
+	--- BLOCK #5 24-25, warpins: 4 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot14.preloadAsync = slot15
+slot15.preloadAsync = slot16
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-23, warpins: 2 ---
+	slot1 = {}
+	slot2 = slot0.graphItem
+	slot1.graphItem = slot2
+	slot1.luaCmd = slot0
+	slot2 = slot0.taskInfo
+	slot2 = slot2.variables
+	slot1.luaVariables = slot2
+	slot2 = slot0.config
+	slot2 = slot2.resPath
+	slot1.resId = slot2
+	slot2 = SafeCallbackWithStatusAndReturn
+	slot4 = CompiledRuntimeLoader
+	slot4 = slot4.preload
+	slot5 = slot0.id
+	slot6 = slot1
+	slot2, slot3 = slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 24-30, warpins: 1 ---
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.ERROR
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 31-41, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "load compiled dialogue graph failed, id=%s, error=%s"
+	slot8 = tostring
+	slot10 = slot0.id
+	slot8 = slot8(slot10)
+	slot9 = tostring
+	slot11 = slot3
+	MULTRES = slot9(slot11)
+
+	slot4(slot6, slot7, slot8, MULTRES)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 42-43, warpins: 2 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 44-45, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 46-48, warpins: 1 ---
+	slot4 = slot3.runner
+	--- END OF BLOCK #7 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 49-59, warpins: 2 ---
+	slot4 = CompiledRuntimeLoader
+	slot4 = slot4.dispose
+	slot6 = slot3
+
+	slot4(slot6)
+
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.ERROR
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 60-67, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "create compiled dialogue graph runner failed, id=%s"
+	slot8 = tostring
+	slot10 = slot0.id
+	MULTRES = slot8(slot10)
+
+	slot4(slot6, slot7, MULTRES)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 68-69, warpins: 2 ---
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 70-73, warpins: 2 ---
+	slot0.compiledRunnerResult = slot3
+	slot4 = slot0.graphItem
+	--- END OF BLOCK #11 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 74-78, warpins: 1 ---
+	slot4 = slot0.graphItem
+	slot6 = slot4
+	slot4 = slot4.SetLuaRuntimeActive
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 79-80, warpins: 2 ---
+	slot4 = true
+
+	return slot4
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot15.tryPreloadCompiledRunner = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.preload
 
@@ -217,22 +486,75 @@ slot15 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = slot0.compiledRunnerResult
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 10-13, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot1 = slot1.runner
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-19, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot1 = slot1.runner
+	slot3 = slot1
+	slot1 = slot1.play
+
+	slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 20-22, warpins: 2 ---
+	slot1 = slot0.graphItem
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-26, warpins: 1 ---
 	slot1 = slot0.graphItem
 	slot3 = slot1
 	slot1 = slot1.Play
 
 	slot1(slot3)
 
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-27, warpins: 3 ---
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot14.play = slot15
+slot15.play = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.applyBaseSetting
@@ -251,9 +573,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.init = slot15
+slot15.init = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = DialogueGraphConst
 	slot1 = slot1.DIALOGUE_GRAPH_STATE
@@ -292,9 +614,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.onDialogueGraphPlay = slot15
+slot15.onDialogueGraphPlay = slot16
 
-slot15 = function(slot0, slot1, ...)
+slot16 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.playState
 	slot3 = DialogueGraphConst
@@ -530,31 +852,41 @@ slot15 = function(slot0, slot1, ...)
 	--- BLOCK #18 91-92, warpins: 4 ---
 	--- END OF BLOCK #18 ---
 
-	if slot4 ~= nil then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #19 93-93, warpins: 1 ---
-	return slot4
+	--- BLOCK #19 93-94, warpins: 1 ---
 	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #20
+	if slot4 ~= nil then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #20 94-94, warpins: 2 ---
-	return
+	--- BLOCK #20 95-95, warpins: 1 ---
+	return slot4
 	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 96-96, warpins: 3 ---
+	return
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot14.onGraphNodeRunning = slot15
+slot15.onGraphNodeRunning = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -583,9 +915,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.setNodeFuncTypeState = slot15
+slot15.setNodeFuncTypeState = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -626,9 +958,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.cancelNodeFuncTypeState = slot15
+slot15.cancelNodeFuncTypeState = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -657,9 +989,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.clearNodeFuncTypeState = slot15
+slot15.clearNodeFuncTypeState = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.cmdNodeState
 	slot2 = slot2[slot1]
@@ -695,9 +1027,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.checkNodeFuncTypeHasState = slot15
+slot15.checkNodeFuncTypeHasState = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = DialogueGraphConst
 	slot3 = slot3.NODE_FUNC_MAP
@@ -763,9 +1095,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.checkNodeFuncTypeTakeOver = slot15
+slot15.checkNodeFuncTypeTakeOver = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.cmdNodeState
 	slot2 = slot2[slot1]
@@ -801,9 +1133,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.checkNodeFuncTypeInState = slot15
+slot15.checkNodeFuncTypeInState = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkNodeFuncTypeInState
@@ -818,9 +1150,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.checkNodeInCriticalFuncState = slot15
+slot15.checkNodeInCriticalFuncState = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkNodeFuncTypeHasState
@@ -962,40 +1294,80 @@ slot15 = function(slot0)
 
 end
 
-slot14.resetNodeFuncTypeState = slot15
+slot15.resetNodeFuncTypeState = slot16
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot1.skipUIBlackList
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = DialogueGraphUtils
+	slot2 = slot2.setSkipUIBlackList
+	slot4 = slot0
+	slot5 = slot1.skipUIBlackList
+
+	slot2(slot4, slot5)
+
+	slot2 = slot1.enableCharacterFillLight
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	if slot2 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-5, warpins: 1 ---
-	slot2 = slot1.skipUIBlackList
-	slot0.skipUIBlackList = slot2
+	--- BLOCK #1 9-16, warpins: 1 ---
+	slot2 = slot1.enableCharacterFillLight
+	slot3 = slot1.characterFillLightIntensity
+	slot4 = DialogueGraphUtils
+	slot4 = slot4.setCharacterFillLight
+	slot6 = slot0
+	slot7 = slot2
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
-	return
+	--- BLOCK #2 17-19, warpins: 2 ---
+	slot2 = slot1.disableDialogueCom
 	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-26, warpins: 1 ---
+	slot2 = DialogueGraphUtils
+	slot2 = slot2.disableEntityDialogueController
+	slot4 = slot0
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot5 = slot5.id
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 27-27, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot14.setDialogueGraphModel = slot15
+slot15.setDialogueGraphModel = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1028,9 +1400,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.turnOnPlayback = slot15
+slot15.turnOnPlayback = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1062,9 +1434,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.turnOffPlayback = slot15
+slot15.turnOffPlayback = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1104,9 +1476,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.getPlaybackState = slot15
+slot15.getPlaybackState = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1140,9 +1512,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.isSkipping = slot15
+slot15.isSkipping = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1174,9 +1546,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.startAutoPlay = slot15
+slot15.startAutoPlay = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1208,9 +1580,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.stopAutoPlay = slot15
+slot15.stopAutoPlay = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1255,9 +1627,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.isAutoPlaying = slot15
+slot15.isAutoPlaying = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1289,9 +1661,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.enableSkipPermission = slot15
+slot15.enableSkipPermission = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1323,9 +1695,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.disableSkipPermission = slot15
+slot15.disableSkipPermission = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1370,9 +1742,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.startSkip = slot15
+slot15.startSkip = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1404,9 +1776,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.stopSkip = slot15
+slot15.stopSkip = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1414,39 +1786,86 @@ slot15 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 4-11, warpins: 1 ---
+	--- BLOCK #1 4-10, warpins: 1 ---
 	slot1 = slot0.playback
 	slot3 = slot1
 	slot1 = slot1.pause
 
 	slot1(slot3)
 
+	slot1 = slot0.compiledRunnerResult
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot1 = slot1.runner
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-20, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot1 = slot1.runner
+	slot3 = slot1
+	slot1 = slot1.pause
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 21-23, warpins: 2 ---
+	slot1 = slot0.graphItem
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-27, warpins: 1 ---
 	slot1 = slot0.graphItem
 	slot3 = slot1
 	slot1 = slot1.Pause
 
 	slot1(slot3)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #2 12-12, warpins: 2 ---
+	--- BLOCK #6 28-28, warpins: 4 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot14.pause = slot15
+slot15.pause = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1454,39 +1873,86 @@ slot15 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 4-11, warpins: 1 ---
+	--- BLOCK #1 4-10, warpins: 1 ---
 	slot1 = slot0.playback
 	slot3 = slot1
 	slot1 = slot1.resume
 
 	slot1(slot3)
 
+	slot1 = slot0.compiledRunnerResult
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot1 = slot1.runner
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-20, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot1 = slot1.runner
+	slot3 = slot1
+	slot1 = slot1.resume
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 21-23, warpins: 2 ---
+	slot1 = slot0.graphItem
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-27, warpins: 1 ---
 	slot1 = slot0.graphItem
 	slot3 = slot1
 	slot1 = slot1.Resume
 
 	slot1(slot3)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #2 12-12, warpins: 2 ---
+	--- BLOCK #6 28-28, warpins: 4 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot14.resume = slot15
+slot15.resume = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1531,9 +1997,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.canSkip = slot15
+slot15.canSkip = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1567,9 +2033,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.setPlaySpeed = slot15
+slot15.setPlaySpeed = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playback
 	--- END OF BLOCK #0 ---
@@ -1603,9 +2069,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.getPlaySpeed = slot15
+slot15.getPlaySpeed = slot16
 
-slot15 = function(slot0, slot1, slot2)
+slot16 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.pendingRPCList
 	slot3 = #slot3
@@ -1731,56 +2197,92 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot14.scheduleRPC = slot15
+slot15.scheduleRPC = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.finishReason = slot1
-	slot2 = slot0.graphItem
+	slot2 = slot0.compiledRunnerResult
 	--- END OF BLOCK #0 ---
 
 	if slot2 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 5-9, warpins: 1 ---
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot2 = slot0.compiledRunnerResult
+	slot2 = slot2.runner
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-14, warpins: 1 ---
+	slot2 = slot0.compiledRunnerResult
+	slot2 = slot2.runner
+	slot4 = slot2
+	slot2 = slot2.stop
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 15-17, warpins: 2 ---
+	slot2 = slot0.graphItem
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-22, warpins: 1 ---
 	slot2 = slot0.graphItem
 	slot4 = slot2
 	slot2 = slot2.Stop
 
 	slot2(slot4)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 10-13, warpins: 1 ---
+	--- BLOCK #5 23-26, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.onDialogueGraphFinish
 	slot5 = -1
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #3 14-14, warpins: 2 ---
+	--- BLOCK #6 27-27, warpins: 3 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot14.stop = slot15
+slot15.stop = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.finishReason
 	slot3 = DialogueGraphConst
@@ -1887,9 +2389,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.onDialogueGraphFinish = slot15
+slot15.onDialogueGraphFinish = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = DialogueGraphConst
 	slot2 = slot2.DIALOGUE_GRAPH_STATE
@@ -1950,9 +2452,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.setDialogueGraphFinish = slot15
+slot15.setDialogueGraphFinish = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.takeOverEntities
 	--- END OF BLOCK #0 ---
@@ -1985,9 +2487,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.setEntityTakeOver = slot15
+slot15.setEntityTakeOver = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.takeOverEntities
 	--- END OF BLOCK #0 ---
@@ -2020,9 +2522,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.checkEntityTakeOver = slot15
+slot15.checkEntityTakeOver = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -2046,9 +2548,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.forbidPositionCheck = slot15
+slot15.forbidPositionCheck = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = DialogueGraphUtils
 	slot1 = slot1.getSetting
@@ -2066,9 +2568,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.applyBaseSetting = slot15
+slot15.applyBaseSetting = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeRenewInvincible
@@ -2116,39 +2618,41 @@ slot15 = function(slot0)
 	slot8 = if slot8 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #4 21-24, warpins: 1 ---
-	slot9 = {}
-	slot10 = slot7.closeAI
+	--- BLOCK #4 21-23, warpins: 1 ---
+	slot9 = slot8.eModel
 	--- END OF BLOCK #4 ---
 
-	slot10 = if slot10 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 25-31, warpins: 1 ---
-	slot10 = true
-	slot9.closeAI = slot10
-	slot10 = DialogueGraphUtils
-	slot10 = slot10.pauseEntityBt
-	slot12 = slot0
-	slot13 = slot8
+	--- BLOCK #5 24-30, warpins: 1 ---
+	slot9 = slot8.eModel
+	slot11 = slot9
+	slot9 = slot9.IgnoreCulling
+	slot12 = Const
+	slot12 = slot12.COMPONENT_INDEX_MODEL
+	slot13 = true
 
-	slot10(slot12, slot13)
+	slot9(slot11, slot12, slot13)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-34, warpins: 2 ---
-	slot10 = slot7.closeSpecialIdle
+	--- BLOCK #6 31-36, warpins: 2 ---
+	slot9 = {}
+	slot10 = slot8.id
+	slot9.entityId = slot10
+	slot10 = slot7.closeAI
 	--- END OF BLOCK #6 ---
 
 	slot10 = if slot10 then
@@ -2158,7 +2662,33 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #7 35-42, warpins: 1 ---
+	--- BLOCK #7 37-43, warpins: 1 ---
+	slot10 = true
+	slot9.closeAI = slot10
+	slot10 = DialogueGraphUtils
+	slot10 = slot10.pauseEntityBt
+	slot12 = slot0
+	slot13 = slot8
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 44-46, warpins: 2 ---
+	slot10 = slot7.closeSpecialIdle
+	--- END OF BLOCK #8 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 47-54, warpins: 1 ---
 	slot10 = true
 	slot9.closeSpecialIdle = slot10
 	slot10 = DialogueGraphUtils
@@ -2169,23 +2699,23 @@ slot15 = function(slot0)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 43-45, warpins: 2 ---
+	--- BLOCK #10 55-57, warpins: 2 ---
 	slot10 = slot7.reset
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 46-61, warpins: 1 ---
+	--- BLOCK #11 58-73, warpins: 1 ---
 	slot10 = true
 	slot9.reset = slot10
 	slot12 = slot8
@@ -2202,12 +2732,31 @@ slot15 = function(slot0)
 	slot10 = slot10.Clone
 	slot10 = slot10(slot12)
 	slot9.rot = slot10
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #10 62-72, warpins: 2 ---
+	--- BLOCK #12 74-76, warpins: 2 ---
+	slot10 = slot7.angleDelta
+	--- END OF BLOCK #12 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 77-77, warpins: 1 ---
+	slot10 = 0
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 78-89, warpins: 2 ---
+	slot9.angleDelta = slot10
 	slot10 = DialogueGraphUtils
 	slot10 = slot10.pauseEntityAoi
 	slot12 = slot0
@@ -2219,27 +2768,55 @@ slot15 = function(slot0)
 	slot10 = slot10.isMainPlayer
 	slot12 = slot8
 	slot10 = slot10(slot12)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #14 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #11 73-75, warpins: 1 ---
+	--- BLOCK #15 90-92, warpins: 1 ---
 	slot10 = slot8.isMainPet
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #15 ---
 
 	if slot10 ~= true then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #12 76-81, warpins: 1 ---
+	--- BLOCK #16 93-98, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.isBoss
+	slot12 = slot8
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #16 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #17 99-104, warpins: 1 ---
+	slot10 = Utils
+	slot10 = slot10.isElite
+	slot12 = slot8
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #17 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 105-110, warpins: 1 ---
 	slot10 = DialogueGraphUtils
 	slot10 = slot10.toggleLodTick
 	slot12 = slot0
@@ -2248,70 +2825,70 @@ slot15 = function(slot0)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #13 82-89, warpins: 3 ---
+	--- BLOCK #19 111-118, warpins: 5 ---
 	slot10 = slot0.cacheActorInfo
-	slot11 = slot8.id
+	slot11 = slot7.staticId
 	slot10[slot11] = slot9
 	slot10 = slot7.staticId
 	slot11 = DialogueGraphConst
 	slot11 = slot11.ENTITY_CUSTOM_STATIC_ID_MAX
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #19 ---
 
 	if slot11 < slot10 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #14 90-92, warpins: 1 ---
+	--- BLOCK #20 119-121, warpins: 1 ---
 	slot10 = slot8.actorId
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #20 ---
 
 	slot10 = if slot10 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #15 93-98, warpins: 1 ---
+	--- BLOCK #21 122-127, warpins: 1 ---
 	slot10 = Utils
 	slot10 = slot10.isNpc
 	slot12 = slot8
 	slot10 = slot10(slot12)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #21 ---
 
 	slot10 = if not slot10 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #25
 	end
 
 
-	--- BLOCK #16 99-100, warpins: 1 ---
-	--- END OF BLOCK #16 ---
+	--- BLOCK #22 128-129, warpins: 1 ---
+	--- END OF BLOCK #22 ---
 
 	slot2 = if not slot2 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #17 101-101, warpins: 1 ---
+	--- BLOCK #23 130-130, warpins: 1 ---
 	slot2 = {}
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #18 102-106, warpins: 2 ---
+	--- BLOCK #24 131-135, warpins: 2 ---
 	slot10 = table
 	slot10 = slot10.insert
 	slot12 = slot2
@@ -2319,35 +2896,85 @@ slot15 = function(slot0)
 
 	slot10(slot12, slot13)
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #19 107-107, warpins: 5 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #25 136-136, warpins: 5 ---
+	--- END OF BLOCK #25 ---
 
 	for slot6=slot3, slot4, slot5
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #20
+	GO OUT TO BLOCK #26
 
-	--- BLOCK #20 108-112, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.addActorsRenewInvincible
-	slot6 = slot2
+	--- BLOCK #26 137-140, warpins: 1 ---
+	slot3 = slot0.config
+	slot3 = slot3.virtualActors
+	--- END OF BLOCK #26 ---
 
-	slot3(slot5, slot6)
+	slot3 = if slot3 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #27 141-144, warpins: 1 ---
+	slot4 = 1
+	slot5 = #slot3
+	slot6 = 1
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 145-150, warpins: 2 ---
+	slot8 = slot3[slot7]
+	slot9 = slot0.virtualActorAngle
+	slot10 = slot8.staticId
+	slot11 = slot8.extraAngle
+	--- END OF BLOCK #28 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 151-151, warpins: 1 ---
+	slot11 = 0
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 152-153, warpins: 2 ---
+	slot9[slot10] = slot11
+	--- END OF BLOCK #30 ---
+
+	for slot7=slot4, slot5, slot6
+	LOOP BLOCK #28
+	GO OUT TO BLOCK #31
+
+	--- BLOCK #31 154-158, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.addActorsRenewInvincible
+	slot7 = slot2
+
+	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #31 ---
 
 
 
 end
 
-slot14.applyActorsSetting = slot15
+slot15.applyActorsSetting = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2455,9 +3082,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.addActorRenewInvincible = slot15
+slot15.addActorRenewInvincible = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2583,9 +3210,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.addActorsRenewInvincible = slot15
+slot15.addActorsRenewInvincible = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.actorIds
 	--- END OF BLOCK #0 ---
@@ -2681,9 +3308,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.startActorsRenewInvincible = slot15
+slot15.startActorsRenewInvincible = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeRenewInvincible
@@ -2695,25 +3322,25 @@ slot15 = function(slot0)
 	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #1 8-13, warpins: 1 ---
 	slot6 = DialogueGraphUtils
-	slot6 = slot6.getEntity
-	slot8 = slot4
+	slot6 = slot6.getEntityByEntityId
+	slot8 = slot5.entityId
 	slot6 = slot6(slot8)
 	--- END OF BLOCK #1 ---
 
 	if slot6 ~= nil then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #23
 	end
 
 
 	--- BLOCK #2 14-16, warpins: 1 ---
-	slot7 = slot5.closeAI
+	slot7 = slot6.eModel
 	--- END OF BLOCK #2 ---
 
 	slot7 = if slot7 then
@@ -2723,21 +3350,23 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
-	slot7 = DialogueGraphUtils
-	slot7 = slot7.resumeEntityBt
-	slot9 = slot0
-	slot10 = slot6
+	--- BLOCK #3 17-23, warpins: 1 ---
+	slot7 = slot6.eModel
+	slot9 = slot7
+	slot7 = slot7.IgnoreCulling
+	slot10 = Const
+	slot10 = slot10.COMPONENT_INDEX_MODEL
+	slot11 = false
 
-	slot7(slot9, slot10)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-24, warpins: 2 ---
-	slot7 = slot5.closeSpecialIdle
+	--- BLOCK #4 24-26, warpins: 2 ---
+	slot7 = slot5.closeAI
 	--- END OF BLOCK #4 ---
 
 	slot7 = if slot7 then
@@ -2747,7 +3376,31 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #5 25-30, warpins: 1 ---
+	--- BLOCK #5 27-31, warpins: 1 ---
+	slot7 = DialogueGraphUtils
+	slot7 = slot7.resumeEntityBt
+	slot9 = slot0
+	slot10 = slot6
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 32-34, warpins: 2 ---
+	slot7 = slot5.closeSpecialIdle
+	--- END OF BLOCK #6 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 35-40, warpins: 1 ---
 	slot7 = DialogueGraphUtils
 	slot7 = slot7.canPlaySpecialIdleInDialogueGraph
 	slot9 = slot0
@@ -2756,47 +3409,45 @@ slot15 = function(slot0)
 
 	slot7(slot9, slot10, slot11)
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 31-33, warpins: 2 ---
-	slot7 = slot5.reset
-	--- END OF BLOCK #6 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #7 34-36, warpins: 1 ---
-	slot7 = slot5
 	--- END OF BLOCK #7 ---
 
-	slot7 = if slot7 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #13
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 37-41, warpins: 1 ---
-	slot8 = NotNil
-	slot10 = slot6.eModel
-	slot8 = slot8(slot10)
+	--- BLOCK #8 41-43, warpins: 2 ---
+	slot7 = slot5.reset
 	--- END OF BLOCK #8 ---
 
-	slot8 = if slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #9 42-49, warpins: 1 ---
+	--- BLOCK #9 44-46, warpins: 1 ---
+	slot7 = slot5
+	--- END OF BLOCK #9 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #10 47-49, warpins: 1 ---
+	slot8 = slot6.eModel
+	--- END OF BLOCK #10 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 50-57, warpins: 1 ---
 	slot8 = EModelUtils
 	slot8 = slot8.setAgentPositionAndRotation
 	slot10 = slot6
@@ -2806,25 +3457,23 @@ slot15 = function(slot0)
 
 	slot8(slot10, slot11, slot12, slot13)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #10 50-54, warpins: 1 ---
-	slot7 = NotNil
-	slot9 = slot6.eModel
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #10 ---
+	--- BLOCK #12 58-60, warpins: 1 ---
+	slot7 = slot6.eModel
+	--- END OF BLOCK #12 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #11 55-76, warpins: 1 ---
+	--- BLOCK #13 61-82, warpins: 1 ---
 	slot9 = slot6
 	slot7 = slot6.getPosition
 	slot7 = slot7(slot9)
@@ -2849,16 +3498,16 @@ slot15 = function(slot0)
 	slot8 = slot8.isNpc
 	slot10 = slot6
 	slot8 = slot8(slot10)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 77-84, warpins: 1 ---
+	--- BLOCK #14 83-90, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.game
 	slot8 = slot8.entityCount
@@ -2869,12 +3518,12 @@ slot15 = function(slot0)
 
 	slot8(slot10, slot11, slot12)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #13 85-95, warpins: 6 ---
+	--- BLOCK #15 91-101, warpins: 6 ---
 	slot7 = DialogueGraphUtils
 	slot7 = slot7.resumeEntityAoi
 	slot9 = slot0
@@ -2886,55 +3535,55 @@ slot15 = function(slot0)
 	slot7 = slot7.isMainPlayer
 	slot9 = slot6
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #13 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #14 96-98, warpins: 1 ---
-	slot7 = slot6.isMainPet
-	--- END OF BLOCK #14 ---
-
-	if slot7 ~= true then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #15 99-104, warpins: 1 ---
-	slot7 = Utils
-	slot7 = slot7.isBoss
-	slot9 = slot6
-	slot7 = slot7(slot9)
 	--- END OF BLOCK #15 ---
 
 	slot7 = if not slot7 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #16 105-110, warpins: 1 ---
+	--- BLOCK #16 102-104, warpins: 1 ---
+	slot7 = slot6.isMainPet
+	--- END OF BLOCK #16 ---
+
+	if slot7 ~= true then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #17 105-110, warpins: 1 ---
+	slot7 = Utils
+	slot7 = slot7.isBoss
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #17 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 111-116, warpins: 1 ---
 	slot7 = Utils
 	slot7 = slot7.isElite
 	slot9 = slot6
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #18 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #17 111-116, warpins: 1 ---
+	--- BLOCK #19 117-122, warpins: 1 ---
 	slot7 = DialogueGraphUtils
 	slot7 = slot7.toggleLodTick
 	slot9 = slot0
@@ -2943,84 +3592,68 @@ slot15 = function(slot0)
 
 	slot7(slot9, slot10, slot11)
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #19 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #18 117-122, warpins: 5 ---
+	--- BLOCK #20 123-128, warpins: 5 ---
 	slot7 = Utils
 	slot7 = slot7.isMainPlayer
 	slot9 = slot6
 	slot7 = slot7(slot9)
-	--- END OF BLOCK #18 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #19 123-127, warpins: 1 ---
-	slot7 = NotNil
-	slot9 = slot6.eModel
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #19 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #20 128-131, warpins: 1 ---
-	slot7 = slot6.eModel
-	slot7 = slot7.controllerComponent
 	--- END OF BLOCK #20 ---
 
 	slot7 = if slot7 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #21 132-139, warpins: 1 ---
+	--- BLOCK #21 129-131, warpins: 1 ---
 	slot7 = slot6.eModel
-	slot7 = slot7.controllerComponent
+	--- END OF BLOCK #21 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 132-137, warpins: 1 ---
+	slot7 = slot6.eModel
 	slot8 = false
 	slot7.InPerformanceWalk = slot8
 	slot7 = slot6.eModel
-	slot7 = slot7.controllerComponent
 	slot8 = 1
 	slot7.InPerformanceWalkSpeed = slot8
 
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 140-141, warpins: 6 ---
 	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 138-139, warpins: 5 ---
+	--- END OF BLOCK #23 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #23
+	GO OUT TO BLOCK #24
 
 
-	--- BLOCK #23 142-142, warpins: 1 ---
+	--- BLOCK #24 140-140, warpins: 1 ---
 	return
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #24 ---
 
 
 
 end
 
-slot14.resetActorsSetting = slot15
+slot15.resetActorsSetting = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.renewInvincibleTimer
 	--- END OF BLOCK #0 ---
@@ -3057,9 +3690,357 @@ slot15 = function(slot0)
 
 end
 
-slot14.removeRenewInvincible = slot15
+slot15.removeRenewInvincible = slot16
 
-slot15 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.uiHideCBs
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot2 = pairs
+	slot4 = slot0.uiHideCBs
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot7 = slot6.uid
+	--- END OF BLOCK #3 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot7 = slot6.cb
+	--- END OF BLOCK #4 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-16, warpins: 1 ---
+	slot7 = slot6.cb
+
+	slot7()
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 19-19, warpins: 1 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot15.handleHideUI = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.uiCloseCBs
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot2 = pairs
+	slot4 = slot0.uiCloseCBs
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot7 = slot6.uid
+	--- END OF BLOCK #3 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 12-14, warpins: 1 ---
+	slot7 = slot6.cb
+	--- END OF BLOCK #4 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-16, warpins: 1 ---
+	slot7 = slot6.cb
+
+	slot7()
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 17-18, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 19-19, warpins: 1 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot15.handleCloseUI = slot16
+
+slot16 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0.uiHideCBs
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot0.uiHideCBs = slot4
+	slot4 = slot0.uiHideCBs
+	slot5 = {}
+	slot5.uid = slot2
+	slot5.cb = slot3
+	slot4[slot1] = slot5
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15.registUIHideCB = slot16
+
+slot16 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.uiHideCBs
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = slot0.uiHideCBs
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot3 = slot0.uiHideCBs
+	slot4 = nil
+	slot3[slot1] = slot4
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15.unregistUIHideCB = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = nil
+	slot0.uiHideCBs = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.unregistAllUIHideCB = slot16
+
+slot16 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0.uiCloseCBs
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot0.uiCloseCBs = slot4
+	slot4 = slot0.uiCloseCBs
+	slot5 = {}
+	slot5.uid = slot2
+	slot5.cb = slot3
+	slot4[slot1] = slot5
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15.registUICloseCB = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.uiCloseCBs
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.uiCloseCBs
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = slot0.uiCloseCBs
+	slot3 = nil
+	slot2[slot1] = slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot15.unregistUICloseCB = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = nil
+	slot0.uiCloseCBs = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot15.unregistAllUICloseCB = slot16
+
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.config
 	slot2 = slot2.virtualActors
@@ -3126,9 +4107,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot14.getVirtualActorInfo = slot15
+slot15.getVirtualActorInfo = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.playState
 	--- END OF BLOCK #0 ---
@@ -3191,9 +4172,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.isValid = slot15
+slot15.isValid = slot16
 
-slot15 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.playState
 	slot2 = DialogueGraphConst
@@ -3231,10 +4212,130 @@ slot15 = function(slot0)
 
 end
 
-slot14.isPlaying = slot15
+slot15.isPlaying = slot16
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-64, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0.compiledRunnerResult
+	slot2 = slot0.graphItem
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot2 = slot0.graphItem
+	slot4 = slot2
+	slot2 = slot2.SetLuaRuntimeActive
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-21, warpins: 2 ---
+	slot2 = nil
+	slot0.compiledRunnerResult = slot2
+	slot2 = SafeCallbackWithStatusAndReturn
+	slot4 = CompiledRuntimeLoader
+	slot4 = slot4.dispose
+	slot5 = slot1
+	slot2, slot3 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 22-28, warpins: 1 ---
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.ERROR
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 29-39, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.error
+	slot7 = "dispose compiled dialogue graph runner failed, id=%s, error=%s"
+	slot8 = tostring
+	slot10 = slot0.id
+	slot8 = slot8(slot10)
+	slot9 = tostring
+	slot11 = slot3
+	MULTRES = slot9(slot11)
+
+	slot4(slot6, slot7, slot8, MULTRES)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 40-40, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot15.disposeCompiledRunner = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-78, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.disposeCompiledRunner
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.unregistAllUIHideCB
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.unregistAllUICloseCB
+
+	slot1(slot3)
+
 	slot1 = DialogueGraphConst
 	slot1 = slot1.DIALOGUE_GRAPH_STATE
 	slot1 = slot1.DESTROY
@@ -3255,6 +4356,13 @@ slot15 = function(slot0)
 	slot3 = slot0.playback
 	slot3 = slot3.destroy
 	slot4 = slot0.playback
+
+	slot1(slot3, slot4)
+
+	slot1 = SafeCallback
+	slot3 = DialogueGraphUtils
+	slot3 = slot3.cancelAllLookAtRole
+	slot4 = slot0
 
 	slot1(slot3, slot4)
 
@@ -3295,7 +4403,7 @@ slot15 = function(slot0)
 
 	slot1 = SafeCallback
 	slot3 = DialogueGraphUtils
-	slot3 = slot3.cancelAllLookAtRole
+	slot3 = slot3.resetAllEntitiesVisibilityEffect
 	slot4 = slot0
 
 	slot1(slot3, slot4)
@@ -3326,9 +4434,9 @@ slot15 = function(slot0)
 
 end
 
-slot14.destroy = slot15
+slot15.destroy = slot16
 
-return slot14
+return slot15
 --- END OF BLOCK #0 ---
 
 

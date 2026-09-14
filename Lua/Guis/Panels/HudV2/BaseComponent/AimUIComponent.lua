@@ -1,4 +1,4 @@
---- BLOCK #0 1-58, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -21,36 +21,34 @@ slot4 = slot4(slot6, slot7)
 slot5 = 0
 slot6 = 1
 slot7 = 2
-slot8 = 3
-slot9 = 4
-slot10 = {}
-slot11 = slot3.ENTER_HOOK_SKILL_AIM
-slot12 = {
+slot8 = {}
+slot9 = slot3.ENTER_HOOK_SKILL_AIM
+slot10 = {
 	"onEnterHookSkillAim",
 	true
 }
-slot10[slot11] = slot12
-slot11 = slot3.LEAVE_HOOK_SKILL_AIM
-slot12 = {
+slot8[slot9] = slot10
+slot9 = slot3.LEAVE_HOOK_SKILL_AIM
+slot10 = {
 	"onLeaveHookSkillAim",
 	true
 }
-slot10[slot11] = slot12
-slot11 = slot3.ENTER_HOOK_NORMAL_STATE
-slot12 = {
+slot8[slot9] = slot10
+slot9 = slot3.ENTER_HOOK_NORMAL_STATE
+slot10 = {
 	"onEnterHookNormalState",
 	true
 }
-slot10[slot11] = slot12
-slot11 = slot3.ENTER_HOOK_FOCUS_STATE
-slot12 = {
+slot8[slot9] = slot10
+slot9 = slot3.ENTER_HOOK_FOCUS_STATE
+slot10 = {
 	"onEnterHookFocusState",
 	true
 }
-slot10[slot11] = slot12
-slot4.messages = slot10
+slot8[slot9] = slot10
+slot4.messages = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -59,9 +57,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.findObjects = slot10
+slot4.findObjects = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -104,9 +102,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.initView = slot10
+slot4.initView = slot8
 
-slot10 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.inAimAbilityId = slot2
 	slot0.isInAim = slot1
@@ -171,9 +169,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot4.setIsInAim = slot10
+slot4.setIsInAim = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot3 = slot1
@@ -190,9 +188,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.onEnterHookSkillAim = slot10
+slot4.onEnterHookSkillAim = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot3 = slot1
@@ -209,9 +207,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.onLeaveHookSkillAim = slot10
+slot4.onLeaveHookSkillAim = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryChangeHookStage
@@ -226,9 +224,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.onEnterHookNormalState = slot10
+slot4.onEnterHookNormalState = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryChangeHookStage
@@ -243,9 +241,9 @@ slot10 = function(slot0)
 
 end
 
-slot4.onEnterHookFocusState = slot10
+slot4.onEnterHookFocusState = slot8
 
-slot10 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.panelHookAimUComponent
 
@@ -327,9 +325,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot4.tryChangeHookStage = slot10
+slot4.tryChangeHookStage = slot8
 
-slot10 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 	slot0.panelHookAimUComponent = slot1
@@ -346,7 +344,7 @@ slot10 = function(slot0)
 
 end
 
-slot4.onDestroy = slot10
+slot4.onDestroy = slot8
 
 return slot4
 --- END OF BLOCK #0 ---

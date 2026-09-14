@@ -1,4 +1,4 @@
---- BLOCK #0 1-53, warpins: 1 ---
+--- BLOCK #0 1-55, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -34,7 +34,7 @@ slot9 = {}
 slot4.messages = slot9
 
 slot9 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -50,6 +50,8 @@ slot9 = function(slot0, slot1)
 	slot0.sType = slot2
 	slot2 = nil
 	slot0.isClosing = slot2
+	slot2 = nil
+	slot0.titleStrKey = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -206,11 +208,29 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-13, warpins: 2 ---
+	--- BLOCK #2 12-14, warpins: 2 ---
 	slot0.openFunc = slot2
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-15, warpins: 1 ---
+	slot2 = slot1.titleStrKey
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-17, warpins: 2 ---
+	slot0.titleStrKey = slot2
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -273,94 +293,169 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 17-19, warpins: 2 ---
-	slot3 = nil
+	--- BLOCK #6 17-21, warpins: 2 ---
+	slot3 = slot0.sType
+	slot4 = ItemConst
+	slot4 = slot4.USEITEM_TYPE_CHANGE_PET_SIZE_TYPE
 	--- END OF BLOCK #6 ---
 
-	slot1 = if slot1 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 20-38, warpins: 1 ---
-	slot3 = 0
-	slot4 = {}
-	slot5 = slot0.view
-	slot5 = slot5.btnFeatures1
-	slot4[1] = slot5
-	slot5 = slot0.view
-	slot5 = slot5.btnFeatures2
-	slot4[2] = slot5
-	slot5 = {}
-	slot6 = slot0.view
-	slot6 = slot6.txtFeaturesName1
-	slot5[1] = slot6
-	slot6 = slot0.view
-	slot6 = slot6.txtFeaturesName2
-	slot5[2] = slot6
-	slot6 = ipairs
-	slot8 = slot0.changeList
-	slot6, slot7, slot8 = slot6(slot8)
+	--- BLOCK #7 22-23, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 39-51, warpins: 1 ---
-	slot11 = PetManagementUtils
-	slot11 = slot11.renderPetFeature
-	slot13 = slot4[slot9]
-	slot14 = slot10
-
-	slot11(slot13, slot14)
-
-	slot11 = ClientTextUtils
-	slot11 = slot11.setText
-	slot13 = slot5[slot9]
-	slot14 = pg
-	slot14 = slot14.getLocalizationText
-	slot16 = slot10.name
-	MULTRES = slot14(slot16)
-
-	slot11(slot13, MULTRES)
-
+	--- BLOCK #8 24-24, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 52-53, warpins: 2 ---
+	--- BLOCK #9 25-27, warpins: 2 ---
+	slot4 = nil
 	--- END OF BLOCK #9 ---
 
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #8
-	GO OUT TO BLOCK #10
-
-
-	--- BLOCK #10 54-54, warpins: 1 ---
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #11 55-56, warpins: 1 ---
-	--- END OF BLOCK #11 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #12
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 57-67, warpins: 1 ---
-	slot3 = 1
-	slot4 = slot0.view
-	slot4 = slot4.listAttri
+	--- BLOCK #10 28-46, warpins: 1 ---
+	slot4 = 0
+	slot5 = {}
+	slot6 = slot0.view
+	slot6 = slot6.btnFeatures1
+	slot5[1] = slot6
+	slot6 = slot0.view
+	slot6 = slot6.btnFeatures2
+	slot5[2] = slot6
+	slot6 = {}
+	slot7 = slot0.view
+	slot7 = slot7.txtFeaturesName1
+	slot6[1] = slot7
+	slot7 = slot0.view
+	slot7 = slot7.txtFeaturesName2
+	slot6[2] = slot7
+	slot7 = ipairs
+	slot9 = slot0.changeList
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #10 ---
 
-	slot5 = function(slot0, slot1, slot2)
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 47-59, warpins: 1 ---
+	slot12 = PetManagementUtils
+	slot12 = slot12.renderPetFeature
+	slot14 = slot5[slot10]
+	slot15 = slot11
+
+	slot12(slot14, slot15)
+
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot6[slot10]
+	slot15 = pg
+	slot15 = slot15.getLocalizationText
+	slot17 = slot11.name
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 60-61, warpins: 2 ---
+	--- END OF BLOCK #12 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 62-62, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #14 63-64, warpins: 1 ---
+	--- END OF BLOCK #14 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 65-66, warpins: 1 ---
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #16 67-69, warpins: 2 ---
+	slot4 = 1
+	--- END OF BLOCK #16 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 70-74, warpins: 1 ---
+	slot5 = slot0.view
+	slot5 = slot5.listAttri
+
+	slot6 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.refreshChangePetSizeTypeItem
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
+
+		slot3(slot5, slot6, slot7, slot8)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5.luaRenderItem = slot6
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 75-78, warpins: 1 ---
+	slot5 = slot0.view
+	slot5 = slot5.listAttri
+
+	slot6 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot3 = self
 		slot5 = slot3
@@ -378,60 +473,147 @@ slot9 = function(slot0)
 
 	end
 
-	slot4.luaRenderItem = slot5
-	slot4 = slot0.view
-	slot4 = slot4.listAttri
-	slot6 = slot4
-	slot4 = slot4.SetList
-	slot7 = slot0.changeList
+	slot5.luaRenderItem = slot6
+	--- END OF BLOCK #18 ---
 
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #13 68-100, warpins: 3 ---
-	slot4 = slot0.view
-	slot4 = slot4.rootUComponent
-	slot6 = slot4
-	slot4 = slot4.TryChangePage
-	slot7 = "Type"
-	slot8 = slot3
+	--- BLOCK #19 79-85, warpins: 2 ---
+	slot5 = slot0.view
+	slot5 = slot5.listAttri
+	slot7 = slot5
+	slot5 = slot5.SetList
+	slot8 = slot0.changeList
+	--- END OF BLOCK #19 ---
 
-	slot4(slot6, slot7, slot8)
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
 
-	slot4 = slot0.view
-	slot4 = slot4.imgPet
-	slot5 = LuaUIUtils
-	slot5 = slot5.getPetIcon
-	slot7 = slot0.petData
-	slot7 = slot7.iconName
-	slot8 = LuaUIUtils
-	slot8 = slot8.PET_ICON
+
+	--- BLOCK #20 86-86, warpins: 1 ---
+	slot8 = {}
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 87-87, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 88-121, warpins: 3 ---
+	slot5 = slot0.view
+	slot5 = slot5.rootUComponent
+	slot7 = slot5
+	slot5 = slot5.TryChangePage
+	slot8 = "Type"
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = slot0.view
+	slot5 = slot5.imgPet
+	slot6 = LuaUIUtils
+	slot6 = slot6.getPetIcon
+	slot8 = slot0.petData
+	slot8 = slot8.iconName
+	slot9 = LuaUIUtils
+	slot9 = slot9.PET_ICON
+	slot6 = slot6(slot8, slot9)
+	slot5.url = slot6
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot0.view
+	slot7 = slot7.txtLevel
+	slot8 = slot0.petData
+	slot8 = slot8.level
+
+	slot5(slot7, slot8)
+
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot0.view
+	slot7 = slot7.txtName
+	slot8 = slot0.petData
+	slot8 = slot8.name
+
+	slot5(slot7, slot8)
+
+	slot5 = slot0.titleStrKey
+	--- END OF BLOCK #22 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #23 122-133, warpins: 1 ---
+	slot5 = slot0.view
+	slot5 = slot5.rootUComponent
+	slot5 = slot5.transform
+	slot7 = slot5
+	slot5 = slot5.Find
+	slot8 = "Widget/Popup/LevelUp/TxtTitle"
 	slot5 = slot5(slot7, slot8)
-	slot4.url = slot5
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot0.view
-	slot6 = slot6.txtLevel
-	slot7 = slot0.petData
-	slot7 = slot7.level
+	slot6 = NotNil
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #23 ---
 
-	slot4(slot6, slot7)
+	slot6 = if slot6 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
 
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot0.view
-	slot6 = slot6.txtName
-	slot7 = slot0.petData
-	slot7 = slot7.name
 
-	slot4(slot6, slot7)
+	--- BLOCK #24 134-142, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.GetComponent
+	slot9 = "USDFText"
+	slot6 = slot6(slot8, slot9)
+	slot7 = NotNil
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #24 ---
 
+	slot7 = if slot7 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 143-150, warpins: 1 ---
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot6
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = slot0.titleStrKey
+	MULTRES = slot10(slot12)
+
+	slot7(slot9, MULTRES)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 151-152, warpins: 4 ---
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #26 ---
 
 
 
@@ -516,6 +698,54 @@ slot9 = function(slot0, slot1, slot2, slot3)
 end
 
 slot4.refreshImproveItem = slot9
+
+slot9 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-32, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.GetComponent
+	slot7 = "ObjectReference"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot4
+	slot5 = slot4.GetRefValue
+	slot8 = "txtTitleUSDFText"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot4
+	slot6 = slot4.GetRefValue
+	slot9 = "txtBeforeUSDFText"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot4
+	slot7 = slot4.GetRefValue
+	slot10 = "txtAfterUSDFText"
+	slot7 = slot7(slot9, slot10)
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot5
+	slot11 = slot3.title
+
+	slot8(slot10, slot11)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot6
+	slot11 = slot3.before
+
+	slot8(slot10, slot11)
+
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot7
+	slot11 = slot3.after
+
+	slot8(slot10, slot11)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.refreshChangePetSizeTypeItem = slot9
 
 return slot4
 --- END OF BLOCK #0 ---

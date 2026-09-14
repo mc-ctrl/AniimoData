@@ -13,9 +13,9 @@ slot5 = "TimelineContainer"
 slot6 = slot1
 slot3 = slot3(slot5, slot6)
 slot4 = {
-	STATE_FINISHED = 2,
 	STATE_PLAYING = 1,
-	STATE_IDLE = 0
+	STATE_IDLE = 0,
+	STATE_FINISHED = 2
 }
 
 slot5 = function(slot0, slot1, slot2, slot3)

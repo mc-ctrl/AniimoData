@@ -150,10 +150,10 @@ slot12 = function(slot0, slot1)
 	slot0.petInfo = slot3
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 23-29, warpins: 1 ---
+	--- BLOCK #2 23-32, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -161,12 +161,40 @@ slot12 = function(slot0, slot1)
 	slot5 = slot1.curPetId
 	slot2 = slot2(slot4, slot5)
 	slot0.petInfo = slot2
+	slot2 = slot0.petInfo
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 30-65, warpins: 2 ---
+	--- BLOCK #3 33-36, warpins: 1 ---
+	slot2 = slot0.petInfo
+	slot2 = slot2.abilityPresetMap
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 37-40, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.closePanel
+
+	slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 41-76, warpins: 2 ---
 	slot2 = slot1.curPetId
 	slot0.curPetId = slot2
 	slot2 = slot1.curPetId
@@ -224,7 +252,14 @@ slot12 = function(slot0, slot1)
 	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 77-77, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 

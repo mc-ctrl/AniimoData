@@ -1,4 +1,4 @@
---- BLOCK #0 1-5086, warpins: 1 ---
+--- BLOCK #0 1-5169, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,46 +7,46 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Wolferno_CE_Easy",
-	version = 110,
+	useForRoute = false,
 	agenttype = "PuppetAgent",
-	useForRoute = false
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Wolferno_CE_Easy",
+	version = 114
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "int",
 	name = "creations",
 	value = "0",
-	type = "int",
 	const = 0
 }
 slot4[1] = slot5
 slot5 = {
+	type = "float",
 	name = "disToTgtForSkillMon",
 	value = "0",
-	type = "float",
 	const = 0
 }
 slot4[2] = slot5
 slot5 = {
+	type = "float",
 	name = "selfhp",
 	value = "0",
-	type = "float",
 	const = 0
 }
 slot4[3] = slot5
 slot5 = {
+	type = "bool",
 	name = "hasUsedEx",
 	value = "false",
-	type = "bool",
 	const = false
 }
 slot4[4] = slot5
 slot5 = {
+	type = "float",
 	name = "goBackDist",
 	value = "0",
-	type = "float",
 	const = 0
 }
 slot4[5] = slot5
@@ -607,81 +607,198 @@ slot18.node = slot19
 slot17[1] = slot18
 slot18 = {}
 slot19 = {
-	id = "139",
-	class = "Action"
+	id = "666",
+	class = "SelectorProbability"
 }
 slot20 = {}
-slot21 = {}
-slot22 = {
-	func = "moveToTarget"
+slot21 = {
+	UntilSuccessOrEnd = false
 }
-slot23 = {}
-slot24 = {
-	field = "tgt"
-}
-slot23[1] = slot24
-slot24 = {
-	field = "bestKeepBoxDist"
-}
-slot23[2] = slot24
-slot24 = {
-	const = 3
-}
-slot23[3] = slot24
-slot24 = {
-	const = false
-}
-slot23[4] = slot24
-slot24 = {
-	const = false
-}
-slot23[5] = slot24
-slot24 = {
-	const = true
-}
-slot23[6] = slot24
-slot24 = {
-	const = 0
-}
-slot23[7] = slot24
-slot24 = {}
-slot25 = slot0.MoveUpdateLevel
-slot25 = slot25.Once
-slot24.const = slot25
-slot23[8] = slot24
-slot24 = {}
-slot25 = slot0.PathFindType
-slot25 = slot25.Auto
-slot24.const = slot25
-slot23[9] = slot24
-slot24 = {}
-slot25 = slot0.SpeedRateType
-slot25 = slot25.Mid
-slot24.const = slot25
-slot23[10] = slot24
-slot24 = {
-	const = 0
-}
-slot23[11] = slot24
-slot24 = {
-	const = false
-}
-slot23[12] = slot24
-slot22.params = slot23
-slot21.Method = slot22
 slot20[1] = slot21
-slot21 = {
-	ResultOption = "BT_INVALID"
-}
-slot20[2] = slot21
-slot21 = {
-	ResultResumeOption = "BT_ResumeSelf"
-}
-slot20[3] = slot21
 slot19.properties = slot20
 slot20 = {}
 slot19.attachments = slot20
 slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "668",
+	class = "DecoratorWeight"
+}
+slot23 = {}
+slot24 = {
+	DecorateWhenChildEnds = "false"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	const = 15
+}
+slot24.Weight = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	id = "669",
+	class = "Action"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	func = "castSkill"
+}
+slot29 = {}
+slot30 = {
+	field = "tgt"
+}
+slot29[1] = slot30
+slot30 = {
+	const = 10531210
+}
+slot29[2] = slot30
+slot30 = {
+	const = false
+}
+slot29[3] = slot30
+slot30 = {
+	const = 0
+}
+slot29[4] = slot30
+slot30 = {
+	const = false
+}
+slot29[5] = slot30
+slot30 = {}
+slot31 = slot0.CastAbilitySourceType
+slot31 = slot31.Normal
+slot30.const = slot31
+slot29[6] = slot30
+slot28.params = slot29
+slot27.Method = slot28
+slot26[1] = slot27
+slot27 = {
+	ResultOption = "BT_INVALID"
+}
+slot26[2] = slot27
+slot27 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot26[3] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "667",
+	class = "DecoratorWeight"
+}
+slot23 = {}
+slot24 = {
+	DecorateWhenChildEnds = "false"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	const = 30
+}
+slot24.Weight = slot25
+slot23[2] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot24 = {}
+slot25 = {
+	id = "139",
+	class = "Action"
+}
+slot26 = {}
+slot27 = {}
+slot28 = {
+	func = "moveToTarget"
+}
+slot29 = {}
+slot30 = {
+	field = "tgt"
+}
+slot29[1] = slot30
+slot30 = {
+	const = 3
+}
+slot29[2] = slot30
+slot30 = {
+	const = 4
+}
+slot29[3] = slot30
+slot30 = {
+	const = false
+}
+slot29[4] = slot30
+slot30 = {
+	const = false
+}
+slot29[5] = slot30
+slot30 = {
+	const = true
+}
+slot29[6] = slot30
+slot30 = {
+	const = 5
+}
+slot29[7] = slot30
+slot30 = {}
+slot31 = slot0.MoveUpdateLevel
+slot31 = slot31.Normal
+slot30.const = slot31
+slot29[8] = slot30
+slot30 = {}
+slot31 = slot0.PathFindType
+slot31 = slot31.Auto
+slot30.const = slot31
+slot29[9] = slot30
+slot30 = {}
+slot31 = slot0.SpeedRateType
+slot31 = slot31.Fast
+slot30.const = slot31
+slot29[10] = slot30
+slot30 = {
+	const = 0
+}
+slot29[11] = slot30
+slot30 = {
+	const = false
+}
+slot29[12] = slot30
+slot28.params = slot29
+slot27.Method = slot28
+slot26[1] = slot27
+slot27 = {
+	ResultOption = "BT_INVALID"
+}
+slot26[2] = slot27
+slot27 = {
+	ResultResumeOption = "BT_ResumeSelf"
+}
+slot26[3] = slot27
+slot25.properties = slot26
+slot26 = {}
+slot25.attachments = slot26
+slot26 = {}
+slot25.children = slot26
+slot24.node = slot25
+slot23[1] = slot24
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[2] = slot18
@@ -1465,7 +1582,8 @@ slot69 = {
 slot68[7] = slot69
 slot69 = {}
 slot70 = slot0.MoveUpdateLevel
-slot70 = slot70.Once
+slot71 = "Once"
+slot70 = slot70[slot71]
 slot69.const = slot70
 slot68[8] = slot69
 slot69 = {}
@@ -1475,8 +1593,7 @@ slot69.const = slot70
 slot68[9] = slot69
 slot69 = {}
 slot70 = slot0.SpeedRateType
-slot71 = "Fast"
-slot70 = slot70[slot71]
+slot70 = slot70.Fast
 slot69.const = slot70
 slot68[10] = slot69
 slot69 = {
@@ -1761,7 +1878,8 @@ slot69 = {
 slot68[7] = slot69
 slot69 = {}
 slot70 = slot0.MoveUpdateLevel
-slot70 = slot70.Once
+slot71 = "Once"
+slot70 = slot70[slot71]
 slot69.const = slot70
 slot68[8] = slot69
 slot69 = {}
@@ -1771,8 +1889,7 @@ slot69.const = slot70
 slot68[9] = slot69
 slot69 = {}
 slot70 = slot0.SpeedRateType
-slot71 = "Fast"
-slot70 = slot70[slot71]
+slot70 = slot70.Fast
 slot69.const = slot70
 slot68[10] = slot69
 slot69 = {
@@ -2148,7 +2265,8 @@ slot66 = {
 slot65[7] = slot66
 slot66 = {}
 slot67 = slot0.MoveUpdateLevel
-slot67 = slot67.Once
+slot68 = "Once"
+slot67 = slot67[slot68]
 slot66.const = slot67
 slot65[8] = slot66
 slot66 = {}
@@ -2158,8 +2276,7 @@ slot66.const = slot67
 slot65[9] = slot66
 slot66 = {}
 slot67 = slot0.SpeedRateType
-slot68 = "Fast"
-slot67 = slot67[slot68]
+slot67 = slot67.Fast
 slot66.const = slot67
 slot65[10] = slot66
 slot66 = {
@@ -2468,7 +2585,8 @@ slot63 = {
 slot62[7] = slot63
 slot63 = {}
 slot64 = slot0.MoveUpdateLevel
-slot64 = slot64.Once
+slot65 = "Once"
+slot64 = slot64[slot65]
 slot63.const = slot64
 slot62[8] = slot63
 slot63 = {}
@@ -2478,8 +2596,7 @@ slot63.const = slot64
 slot62[9] = slot63
 slot63 = {}
 slot64 = slot0.SpeedRateType
-slot65 = "Fast"
-slot64 = slot64[slot65]
+slot64 = slot64.Fast
 slot63.const = slot64
 slot62[10] = slot63
 slot63 = {
@@ -5337,7 +5454,8 @@ slot45 = {
 slot44[7] = slot45
 slot45 = {}
 slot46 = slot0.MoveUpdateLevel
-slot46 = slot46.Once
+slot47 = "Once"
+slot46 = slot46[slot47]
 slot45.const = slot46
 slot44[8] = slot45
 slot45 = {}
@@ -5347,7 +5465,8 @@ slot45.const = slot46
 slot44[9] = slot45
 slot45 = {}
 slot46 = slot0.SpeedRateType
-slot46 = slot46.Mid
+slot47 = "Mid"
+slot46 = slot46[slot47]
 slot45.const = slot46
 slot44[10] = slot45
 slot45 = {
@@ -5535,7 +5654,7 @@ slot54 = {
 }
 slot53[1] = slot54
 slot54 = {
-	const = 0
+	const = -1
 }
 slot53[2] = slot54
 slot54 = {
@@ -5676,7 +5795,7 @@ slot54 = {
 }
 slot53[1] = slot54
 slot54 = {
-	const = 0
+	const = -1
 }
 slot53[2] = slot54
 slot54 = {
@@ -5762,7 +5881,7 @@ slot51 = {
 }
 slot50[1] = slot51
 slot51 = {
-	const = 7
+	const = 4
 }
 slot50[2] = slot51
 slot51 = {
@@ -5787,7 +5906,8 @@ slot51 = {
 slot50[7] = slot51
 slot51 = {}
 slot52 = slot0.MoveUpdateLevel
-slot52 = slot52.Once
+slot53 = "Once"
+slot52 = slot52[slot53]
 slot51.const = slot52
 slot50[8] = slot51
 slot51 = {}
@@ -5797,7 +5917,8 @@ slot51.const = slot52
 slot50[9] = slot51
 slot51 = {}
 slot52 = slot0.SpeedRateType
-slot52 = slot52.Mid
+slot53 = "Mid"
+slot52 = slot52[slot53]
 slot51.const = slot52
 slot50[10] = slot51
 slot51 = {
@@ -6765,10 +6886,10 @@ slot37.properties = slot38
 slot38 = {}
 slot39 = {
 	precondition = true,
-	effector = false,
 	id = "135",
-	transition = false,
-	class = "Precondition"
+	effector = false,
+	class = "Precondition",
+	transition = false
 }
 slot40 = {}
 slot41 = {
@@ -7274,10 +7395,10 @@ slot31.properties = slot32
 slot32 = {}
 slot33 = {
 	precondition = true,
-	effector = false,
 	id = "135",
-	transition = false,
-	class = "Precondition"
+	effector = false,
+	class = "Precondition",
+	transition = false
 }
 slot34 = {}
 slot35 = {
@@ -7364,10 +7485,10 @@ slot37.properties = slot38
 slot38 = {}
 slot39 = {
 	precondition = true,
-	effector = false,
 	id = "109",
-	transition = false,
-	class = "Precondition"
+	effector = false,
+	class = "Precondition",
+	transition = false
 }
 slot40 = {}
 slot41 = {

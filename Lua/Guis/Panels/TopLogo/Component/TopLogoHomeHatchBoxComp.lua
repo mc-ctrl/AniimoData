@@ -1,4 +1,4 @@
---- BLOCK #0 1-103, warpins: 1 ---
+--- BLOCK #0 1-101, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -65,15 +65,15 @@ slot23 = slot5
 slot20 = slot20(slot22, slot23)
 slot21 = "$TopLogo/HomeHatchBoxIcon.png"
 slot22 = {
-	Near = 0,
 	Far = 2,
-	Mid = 1
+	Mid = 1,
+	Near = 0
 }
 slot23 = {
-	Normal = 0,
 	High = 3,
 	Low = 2,
-	Stop = 1
+	Stop = 1,
+	Normal = 0
 }
 
 slot24 = function(slot0, slot1, slot2)
@@ -383,21 +383,6 @@ slot24 = function(slot0)
 end
 
 slot20.findObjects = slot24
-
-slot24 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.FACILITY
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot20.getComponentName = slot24
 
 slot24 = function(slot0)
 	--- BLOCK #0 1-58, warpins: 1 ---

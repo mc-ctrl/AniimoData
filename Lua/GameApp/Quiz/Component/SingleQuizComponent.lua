@@ -1,4 +1,4 @@
---- BLOCK #0 1-37, warpins: 1 ---
+--- BLOCK #0 1-40, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -17,11 +17,14 @@ slot4 = slot4(slot6)
 slot5 = require
 slot7 = "Const.DialogueGraphConst"
 slot5 = slot5(slot7)
-slot6 = slot0.LiteClass
-slot8 = "SingleQuizComponent"
+slot6 = require
+slot8 = "Common.Const.Const"
 slot6 = slot6(slot8)
+slot7 = slot0.LiteClass
+slot9 = "SingleQuizComponent"
+slot7 = slot7(slot9)
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot0.quizCutscene = slot1
@@ -35,9 +38,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.ctor = slot7
+slot7.ctor = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -46,9 +49,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.destroy = slot7
+slot7.destroy = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopQuizTimeline
@@ -62,9 +65,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.cleanupQuiz = slot7
+slot7.cleanupQuiz = slot8
 
-slot7 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SingleQuizData
 	slot3 = slot3[slot1]
@@ -154,9 +157,9 @@ slot7 = function(slot0, slot1, slot2)
 
 end
 
-slot6.startDialog = slot7
+slot7.startDialog = slot8
 
-slot7 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SingleQuizData
 	slot3 = slot3[slot1]
@@ -279,7 +282,7 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 14-28, warpins: 2 ---
+	--- BLOCK #4 14-29, warpins: 2 ---
 	slot5 = TimerManager
 	slot5 = slot5.addTimer
 	slot7 = 0.5
@@ -352,11 +355,12 @@ slot7 = function(slot0, slot1, slot2)
 	slot5 = pg
 	slot5 = slot5.me
 	slot5 = slot5.eModel
-	slot5 = slot5.playableComponent
 	slot7 = slot5
 	slot5 = slot5.RegisterSleEndCallback
+	slot8 = Const
+	slot8 = slot8.COMPONENT_IDX_PLAYABLE
 
-	slot8 = function()
+	slot9 = function()
 		--- BLOCK #0 1-17, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
@@ -385,7 +389,7 @@ slot7 = function(slot0, slot1, slot2)
 
 	end
 
-	slot5(slot7, slot8)
+	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -393,7 +397,7 @@ slot7 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-29, warpins: 2 ---
+	--- BLOCK #5 30-30, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -401,9 +405,9 @@ slot7 = function(slot0, slot1, slot2)
 
 end
 
-slot6.playPlayerSettleAnim = slot7
+slot7.playPlayerSettleAnim = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = SingleQuizData
 	slot2 = slot2[slot1]
@@ -616,9 +620,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.playQuizTimeline = slot7
+slot7.playQuizTimeline = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.quizCutscene
 	--- END OF BLOCK #0 ---
@@ -657,9 +661,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.stopQuizTimeline = slot7
+slot7.stopQuizTimeline = slot8
 
-return slot6
+return slot7
 --- END OF BLOCK #0 ---
 
 

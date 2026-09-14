@@ -426,8 +426,10 @@ end
 slot12.onOpen = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.finshTimer
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = nil
+	slot0.refRacingPlay = slot1
+	slot1 = slot0.finishTimer
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -437,7 +439,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
+	--- BLOCK #1 6-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killTimer
 	slot4 = slot0.finishTimer
@@ -451,7 +453,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-12, warpins: 2 ---
+	--- BLOCK #2 12-14, warpins: 2 ---
 	slot1 = slot0.racingTimer
 	--- END OF BLOCK #2 ---
 
@@ -462,7 +464,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-18, warpins: 1 ---
+	--- BLOCK #3 15-20, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killTimer
 	slot4 = slot0.racingTimer
@@ -476,7 +478,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 19-25, warpins: 2 ---
+	--- BLOCK #4 21-27, warpins: 2 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0

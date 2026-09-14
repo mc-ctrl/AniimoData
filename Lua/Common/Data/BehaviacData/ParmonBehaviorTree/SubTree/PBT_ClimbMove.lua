@@ -7,26 +7,26 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_ClimbMove",
 	version = 10,
-	useForRoute = false
+	name = "ParmonBehaviorTree/SubTree/PBT_ClimbMove",
+	useForRoute = false,
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "vector<float>",
 	name = "tTargetPosList",
-	value = "0:",
-	type = "vector<float>"
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
+	type = "vector<float>",
 	name = "tNormalList",
-	value = "0:",
-	type = "vector<float>"
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6

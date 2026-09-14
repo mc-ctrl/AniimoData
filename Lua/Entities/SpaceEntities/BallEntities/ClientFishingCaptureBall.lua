@@ -1,4 +1,4 @@
---- BLOCK #0 1-45, warpins: 1 ---
+--- BLOCK #0 1-51, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -15,21 +15,27 @@ slot4 = require
 slot6 = "Common.Const.FishingCaptureConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.CallbackHandler"
+slot7 = "Common.Const.ActivityConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Framework.Class"
+slot8 = "Common.Utils.ActivityUtils"
 slot6 = slot6(slot8)
-slot7 = slot0.getLogger
-slot9 = "ClientFishingCaptureBall"
+slot7 = require
+slot9 = "Core.Common.CallbackHandler"
 slot7 = slot7(slot9)
-slot8 = Vector3
-slot9 = slot6.Class
+slot8 = require
+slot10 = "Core.Framework.Class"
+slot8 = slot8(slot10)
+slot9 = slot0.getLogger
 slot11 = "ClientFishingCaptureBall"
-slot12 = slot2
-slot9 = slot9(slot11, slot12)
+slot9 = slot9(slot11)
+slot10 = Vector3
+slot11 = slot8.Class
+slot13 = "ClientFishingCaptureBall"
+slot14 = slot2
+slot11 = slot11(slot13, slot14)
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.destroyed
 	--- END OF BLOCK #0 ---
@@ -157,105 +163,111 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 41-44, warpins: 2 ---
-	slot3 = pg
-	slot3 = slot3.me
+	--- BLOCK #11 41-50, warpins: 2 ---
+	slot3 = ActivityUtils
+	slot3 = slot3.getActivityData
+	slot5 = pg
+	slot5 = slot5.me
+	slot6 = ActivityConst
+	slot6 = slot6.EventType
+	slot6 = slot6.FishingCapture
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #11 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot3 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 45-47, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.fishingCaptureCurPhase
+	--- BLOCK #12 51-53, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.getCurPhase
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 48-49, warpins: 2 ---
+	--- BLOCK #13 54-55, warpins: 2 ---
 	--- END OF BLOCK #13 ---
 
-	slot4 = if slot3 then
+	slot5 = if slot4 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #14 50-52, warpins: 1 ---
-	slot4 = 0
+	--- BLOCK #14 56-58, warpins: 1 ---
+	slot5 = 0
 	--- END OF BLOCK #14 ---
 
-	if slot3 > slot4 then
+	if slot4 > slot5 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #15 53-55, warpins: 1 ---
-	slot4 = FishingCaptureActivityData
+	--- BLOCK #15 59-61, warpins: 1 ---
+	slot5 = FishingCaptureActivityData
 	--- END OF BLOCK #15 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #16 56-58, warpins: 1 ---
-	slot4 = FishingCaptureActivityData
-	slot4 = slot4[slot3]
+	--- BLOCK #16 62-64, warpins: 1 ---
+	slot5 = FishingCaptureActivityData
+	slot5 = slot5[slot4]
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #17 59-60, warpins: 1 ---
-	slot4 = false
+	--- BLOCK #17 65-66, warpins: 1 ---
+	slot5 = false
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 61-61, warpins: 0 ---
-	slot4 = true
+	--- BLOCK #18 67-67, warpins: 0 ---
+	slot5 = true
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 62-63, warpins: 5 ---
+	--- BLOCK #19 68-69, warpins: 5 ---
 	--- END OF BLOCK #19 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 64-67, warpins: 1 ---
-	slot5 = slot2.staticId
-	slot6 = slot4.bossStaticId
+	--- BLOCK #20 70-73, warpins: 1 ---
+	slot6 = slot2.staticId
+	slot7 = slot5.bossStaticId
 
 	--- END OF BLOCK #20 ---
 
-	if slot5 ~= slot6 then
+	if slot6 ~= slot7 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 68-68, warpins: 2 ---
+	--- BLOCK #21 74-74, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #21 ---
@@ -263,19 +275,19 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 69-70, warpins: 2 ---
-	slot5 = true
+	--- BLOCK #22 75-76, warpins: 2 ---
+	slot6 = true
 
-	return slot5
+	return slot6
 	--- END OF BLOCK #22 ---
 
 
 
 end
 
-slot9.hitEntityValid = slot10
+slot11.hitEntityValid = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.hitEntityValid
@@ -536,9 +548,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.onLuaHitEntity = slot10
+slot11.onLuaHitEntity = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = {}
 	slot4 = slot1[1]
@@ -557,9 +569,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onCaptureAnimStart = slot10
+slot11.onCaptureAnimStart = slot12
 
-slot10 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.doCaptureEnd
@@ -573,9 +585,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onCaptureSecondAnimStart = slot10
+slot11.onCaptureSecondAnimStart = slot12
 
-slot10 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = {}
 	slot3 = slot1[1]
@@ -700,9 +712,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.onCaptureAnimEnd = slot10
+slot11.onCaptureAnimEnd = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkEModel
@@ -743,9 +755,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.onLuaNoticeFinished = slot10
+slot11.onLuaNoticeFinished = slot12
 
-slot10 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = "FishingCaptureBall"
 
@@ -756,9 +768,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getProxyName = slot10
+slot11.getProxyName = slot12
 
-return slot9
+return slot11
 --- END OF BLOCK #0 ---
 
 

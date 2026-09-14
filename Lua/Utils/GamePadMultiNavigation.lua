@@ -16,17 +16,17 @@ slot6 = "GamePadMultiNavigation"
 slot7 = slot3
 slot4 = slot4(slot6, slot7)
 slot5 = {
-	LEFT = -3,
 	DOWN = -2,
 	UP = -1,
 	NONE = 0,
-	RIGHT = -4
+	RIGHT = -4,
+	LEFT = -3
 }
 slot4.MOVE_DIRECTION = slot5
 slot5 = {
-	LEFT_STICK = 1,
 	RIGHT_STICK = 3,
-	DPAD = 2
+	DPAD = 2,
+	LEFT_STICK = 1
 }
 slot4.NAV_AREA = slot5
 slot5 = 0.25
@@ -255,7 +255,7 @@ slot5 = function(slot0)
 	--- BLOCK #8 25-29, warpins: 2 ---
 	slot1 = slot0.leftStickMoveDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #8 ---
 
 	if slot1 <= slot2 then
@@ -286,7 +286,7 @@ slot5 = function(slot0)
 	slot1 = math
 	slot1 = slot1.max
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.leftStickContinueMoveDelay
 	slot3 = slot3 + slot4
 	slot4 = slot0.leftStickMoveDisableTime
@@ -382,7 +382,7 @@ slot5 = function(slot0)
 	--- BLOCK #18 80-84, warpins: 2 ---
 	slot1 = slot0.dPadUpDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #18 ---
 
 	if slot1 <= slot2 then
@@ -399,7 +399,7 @@ slot5 = function(slot0)
 	slot1 = math
 	slot1 = slot1.max
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.dPadUpContinueMoveDelay
 	slot3 = slot3 + slot4
 	slot4 = slot0.dPadUpDisableTime
@@ -483,7 +483,7 @@ slot5 = function(slot0)
 	--- BLOCK #27 122-126, warpins: 2 ---
 	slot1 = slot0.dPadDownDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #27 ---
 
 	if slot1 <= slot2 then
@@ -500,7 +500,7 @@ slot5 = function(slot0)
 	slot1 = math
 	slot1 = slot1.max
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.dPadDownContinueMoveDelay
 	slot3 = slot3 + slot4
 	slot4 = slot0.dPadDownDisableTime
@@ -584,7 +584,7 @@ slot5 = function(slot0)
 	--- BLOCK #36 164-168, warpins: 2 ---
 	slot1 = slot0.dPadLeftDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #36 ---
 
 	if slot1 <= slot2 then
@@ -601,7 +601,7 @@ slot5 = function(slot0)
 	slot1 = math
 	slot1 = slot1.max
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.dPadLeftContinueMoveDelay
 	slot3 = slot3 + slot4
 	slot4 = slot0.dPadLeftDisableTime
@@ -685,7 +685,7 @@ slot5 = function(slot0)
 	--- BLOCK #45 206-210, warpins: 2 ---
 	slot1 = slot0.dPadRightDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #45 ---
 
 	if slot1 <= slot2 then
@@ -702,7 +702,7 @@ slot5 = function(slot0)
 	slot1 = math
 	slot1 = slot1.max
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.dPadRightContinueMoveDelay
 	slot3 = slot3 + slot4
 	slot4 = slot0.dPadRightDisableTime
@@ -870,7 +870,7 @@ slot5 = function(slot0)
 	--- BLOCK #61 276-280, warpins: 2 ---
 	slot1 = slot0.rightStickMoveDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #61 ---
 
 	if slot1 <= slot2 then
@@ -901,7 +901,7 @@ slot5 = function(slot0)
 	slot1 = math
 	slot1 = slot1.max
 	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = slot3.realSecondCache
 	slot4 = slot0.rightStickContinueMoveDelay
 	slot3 = slot3 + slot4
 	slot4 = slot0.rightStickMoveDisableTime
@@ -928,7 +928,7 @@ slot5 = function(slot0, slot1, slot2)
 	slot3 = math
 	slot3 = slot3.max
 	slot5 = Time
-	slot5 = slot5.secondCache
+	slot5 = slot5.realSecondCache
 	slot5 = slot5 + slot2
 	slot6 = slot1
 	slot3 = slot3(slot5, slot6)

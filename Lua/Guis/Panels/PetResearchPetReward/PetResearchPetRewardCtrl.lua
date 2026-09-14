@@ -256,33 +256,16 @@ slot20 = function(slot0)
 	slot2 = slot2.btnGetRewardUButton
 
 	slot3 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
-		--- END OF BLOCK #0 ---
+		slot2 = slot0
+		slot0 = slot0.getAllPetResearchLevelReward
 
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
+		slot0(slot2)
 
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot3 = slot0
-		slot1 = slot0.serverMsg
-		slot4 = "RPC_CS_GetAllPetResearchLevelReward"
-
-		slot1(slot3, slot4)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 9-9, warpins: 2 ---
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #0 ---
 
 
 
@@ -1081,16 +1064,15 @@ end
 slot16.onOpen = slot20
 
 slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
-	slot2 = slot2.serverMsg
-	slot5 = "RPC_CS_GetPetResearchLevelReward"
-	slot6 = slot0.baseTemplateId
-	slot7 = slot1
+	slot2 = slot2.getPetResearchLevelReward
+	slot5 = slot0.baseTemplateId
+	slot6 = slot1
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---

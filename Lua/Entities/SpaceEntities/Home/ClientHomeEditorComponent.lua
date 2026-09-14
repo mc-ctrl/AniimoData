@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-68, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -23,11 +23,14 @@ slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Common.Utils.HomeLandUtils"
 slot7 = slot7(slot9)
-slot8 = slot0.Component
-slot10 = "ClientHomeEditorComponent"
+slot8 = require
+slot10 = "GameApp.Home.HomeEditorOutline"
 slot8 = slot8(slot10)
+slot9 = slot0.Component
+slot11 = "ClientHomeEditorComponent"
+slot9 = slot9(slot11)
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initHomeEditorEffect
@@ -44,9 +47,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.start = slot9
+slot9.start = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -55,9 +58,70 @@ slot9 = function(slot0)
 
 end
 
-slot8.destroy = slot9
+slot9.destroy = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.areaId
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = 0
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-14, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.getAreaBasePosition
+	slot4 = slot0.areaId
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot2 = slot1.y
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-18, warpins: 2 ---
+	slot2 = 0
+
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot9.getBasePositionY = slot10
+
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.editorOutGridMode = slot1
 	--- END OF BLOCK #0 ---
@@ -79,7 +143,7 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 6-22, warpins: 1 ---
+	--- BLOCK #2 6-24, warpins: 1 ---
 	slot4 = {}
 	slot4[1] = slot2
 	slot4[2] = slot3
@@ -94,16 +158,18 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	slot10 = ClientConst
 	slot10 = slot10.HomelandEffectBaseOffset
 	slot10 = slot10 - 0.01
-	slot11 = 0
+	slot13 = slot0
+	slot11 = slot0.getBasePositionY
+	MULTRES = slot11(slot13)
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+	slot4(slot6, slot7, slot8, slot9, slot10, MULTRES)
 
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 23-28, warpins: 2 ---
+	--- BLOCK #3 25-30, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.stopEditorBoundEffect
 	slot7 = ClientConst
@@ -117,7 +183,7 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 29-29, warpins: 2 ---
+	--- BLOCK #4 31-31, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -125,9 +191,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.setHomeOutEffectInfo = slot9
+slot9.setHomeOutEffectInfo = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = 0
 
@@ -138,9 +204,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getBasePlaceYaw = slot9
+slot9.getBasePlaceYaw = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ornamentId
 
@@ -172,7 +238,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #3 8-21, warpins: 1 ---
+	--- BLOCK #3 8-23, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playEditorBoundEffect
 	slot4 = ClientConst
@@ -184,9 +250,11 @@ slot9 = function(slot0)
 	slot6 = slot6(slot8)
 	slot7 = ClientConst
 	slot7 = slot7.HomelandEffectBaseOffset
-	slot8 = 0
+	slot10 = slot0
+	slot8 = slot0.getBasePositionY
+	MULTRES = slot8(slot10)
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
+	slot1(slot3, slot4, slot5, slot6, slot7, MULTRES)
 
 	return
 
@@ -195,7 +263,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-29, warpins: 2 ---
+	--- BLOCK #4 24-31, warpins: 2 ---
 	slot1 = nil
 	slot0.homeFacilityType = slot1
 	slot1 = slot0.templateEntityType
@@ -211,13 +279,13 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #5 30-30, warpins: 1 ---
+	--- BLOCK #5 32-32, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #6 31-36, warpins: 1 ---
+	--- BLOCK #6 33-38, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getHomelandConfigData
 	slot1 = slot1(slot3)
@@ -231,7 +299,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #7 37-41, warpins: 1 ---
+	--- BLOCK #7 39-43, warpins: 1 ---
 	slot2 = HomeFacilityData
 	slot3 = slot1.facilityId
 	slot2 = slot2[slot3]
@@ -244,14 +312,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #8 42-42, warpins: 1 ---
+	--- BLOCK #8 44-44, warpins: 1 ---
 	slot2 = {}
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-47, warpins: 2 ---
+	--- BLOCK #9 45-49, warpins: 2 ---
 	slot3 = slot2.facilityType
 	slot0.homeFacilityType = slot3
 	slot3 = slot2.envBounds
@@ -264,7 +332,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #10 48-54, warpins: 1 ---
+	--- BLOCK #10 50-56, warpins: 1 ---
 	slot3 = 0
 	slot4 = slot0.homeFacilityType
 	slot5 = Const
@@ -279,7 +347,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #11 55-60, warpins: 1 ---
+	--- BLOCK #11 57-62, warpins: 1 ---
 	slot4 = slot0.homeFacilityType
 	slot5 = Const
 	slot5 = slot5.HOMELAND_FACILITY_TYPE
@@ -293,14 +361,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #12 61-62, warpins: 2 ---
+	--- BLOCK #12 63-64, warpins: 2 ---
 	slot3 = 2
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #13 63-68, warpins: 1 ---
+	--- BLOCK #13 65-70, warpins: 1 ---
 	slot4 = slot0.homeFacilityType
 	slot5 = Const
 	slot5 = slot5.HOMELAND_FACILITY_TYPE
@@ -314,14 +382,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #14 69-70, warpins: 1 ---
+	--- BLOCK #14 71-72, warpins: 1 ---
 	slot3 = 5
 	--- END OF BLOCK #14 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #15 71-76, warpins: 1 ---
+	--- BLOCK #15 73-78, warpins: 1 ---
 	slot4 = slot0.homeFacilityType
 	slot5 = Const
 	slot5 = slot5.HOMELAND_FACILITY_TYPE
@@ -335,14 +403,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #16 77-78, warpins: 1 ---
+	--- BLOCK #16 79-80, warpins: 1 ---
 	slot3 = 6
 	--- END OF BLOCK #16 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #17 79-84, warpins: 1 ---
+	--- BLOCK #17 81-86, warpins: 1 ---
 	slot4 = slot0.homeFacilityType
 	slot5 = Const
 	slot5 = slot5.HOMELAND_FACILITY_TYPE
@@ -356,14 +424,14 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #18 85-85, warpins: 1 ---
+	--- BLOCK #18 87-87, warpins: 1 ---
 	slot3 = 7
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 86-103, warpins: 5 ---
+	--- BLOCK #19 88-105, warpins: 5 ---
 	slot6 = slot0
 	slot4 = slot0.setEditorBoundEffectVisible
 	slot7 = ClientConst
@@ -391,7 +459,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 104-107, warpins: 4 ---
+	--- BLOCK #20 106-109, warpins: 4 ---
 	slot3 = slot0
 	slot1 = slot0.updateEditorEffect
 
@@ -404,9 +472,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.initHomeEditorEffect = slot9
+slot9.initHomeEditorEffect = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -415,9 +483,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onEditorEnvLinkChange = slot9
+slot9.onEditorEnvLinkChange = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.templateEntityType
 	slot2 = Const
@@ -534,9 +602,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getEditorFacilityInfo = slot9
+slot9.getEditorFacilityInfo = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getHomelandConfigData
@@ -623,9 +691,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getDefaultEnvFormulaIdAndOpId = slot9
+slot9.getDefaultEnvFormulaIdAndOpId = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.homeFacilityType
 	--- END OF BLOCK #0 ---
@@ -854,9 +922,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onHomeEditorFilterChange = slot9
+slot9.onHomeEditorFilterChange = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.homeFacilityType
 	slot2 = Const
@@ -1010,9 +1078,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.checkHomeEditorShowFilter = slot9
+slot9.checkHomeEditorShowFilter = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInHomeInteract
 	--- END OF BLOCK #0 ---
@@ -1024,7 +1092,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-17, warpins: 1 ---
+	--- BLOCK #1 4-19, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playEditorBoundEffect
 	slot4 = ClientConst
@@ -1036,16 +1104,18 @@ slot9 = function(slot0)
 	slot6 = slot6(slot8)
 	slot7 = ClientConst
 	slot7 = slot7.HomelandEffectBaseOffset
-	slot8 = 0
+	slot10 = slot0
+	slot8 = slot0.getBasePositionY
+	MULTRES = slot8(slot10)
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
+	slot1(slot3, slot4, slot5, slot6, slot7, MULTRES)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 18-23, warpins: 1 ---
+	--- BLOCK #2 20-25, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopEditorBoundEffect
 	slot4 = ClientConst
@@ -1059,7 +1129,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 24-24, warpins: 2 ---
+	--- BLOCK #3 26-26, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -1067,9 +1137,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.refreshHomeInteractEffect = slot9
+slot9.refreshHomeInteractEffect = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ornamentId
 
@@ -1264,9 +1334,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.updateEditorEffect = slot9
+slot9.updateEditorEffect = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.templateEntityType
 	slot2 = Const
@@ -1342,9 +1412,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getOrnamentLayer = slot9
+slot9.getOrnamentLayer = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot4 = slot0
@@ -1358,9 +1428,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getValidHomePetPosition = slot9
+slot9.getValidHomePetPosition = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.homeEditState = slot1
 	slot4 = slot0
@@ -1375,9 +1445,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.setHomeEditState = slot9
+slot9.setHomeEditState = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isInHomeInteract
 	--- END OF BLOCK #0 ---
@@ -1409,9 +1479,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.setInHomeInteract = slot9
+slot9.setInHomeInteract = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.templateEntityType
 	slot4 = Const
@@ -1435,7 +1505,29 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-16, warpins: 2 ---
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot3 = HomeEditorOutline
+	slot3 = slot3.checkMobileMode
+	slot3 = slot3()
+
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-13, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-22, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.setEditorOutline
 	slot6 = ClientConst
@@ -1447,15 +1539,15 @@ slot9 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot8.setHomeEditorExtraOutline = slot9
+slot9.setHomeEditorExtraOutline = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

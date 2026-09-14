@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-61, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -86,24 +86,60 @@ slot21 = function(slot0)
 end
 
 slot16.ctor = slot21
-slot21 = UNITY_EDITOR
+
+slot21 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.component
+	--- END OF BLOCK #0 ---
+
+	if slot0 == "client" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot0 = Time
+	slot0 = slot0.realSecondCache
+
+	return slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot0 = Time
+	slot0 = slot0.secondCache
+
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot22 = UNITY_EDITOR
 --- END OF BLOCK #0 ---
 
-slot21 = if slot21 then
+slot22 = if slot22 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 61-68, warpins: 1 ---
-slot21 = {}
-slot22 = slot12.TYPE_PLAYER
-slot21[1] = slot22
-slot22 = slot12.TYPE_PET_INFO
-slot21[2] = slot22
+--- BLOCK #1 62-69, warpins: 1 ---
+slot22 = {}
+slot23 = slot12.TYPE_PLAYER
+slot22[1] = slot23
+slot23 = slot12.TYPE_PET_INFO
+slot22[2] = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetInfoType
@@ -155,15 +191,15 @@ slot22 = function(slot0)
 
 end
 
-slot16.getObj = slot22
+slot16.getObj = slot23
 
 --- END OF BLOCK #1 ---
 
 UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
---- BLOCK #2 69-70, warpins: 1 ---
-slot21 = function(slot0)
+--- BLOCK #2 70-71, warpins: 1 ---
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetInfoType
@@ -207,15 +243,15 @@ slot21 = function(slot0)
 
 end
 
-slot16.getObj = slot21
+slot16.getObj = slot22
 
 --- END OF BLOCK #2 ---
 
 FLOW; TARGET BLOCK #3
 
 
---- BLOCK #3 71-96, warpins: 2 ---
-slot21 = function(slot0, slot1, slot2)
+--- BLOCK #3 72-97, warpins: 2 ---
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SysEventData
 	slot3 = slot3[slot1]
@@ -272,9 +308,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot16.checkSysEvent = slot21
+slot16.checkSysEvent = slot22
 
-slot21 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = unpack
 	slot5 = slot1
@@ -309,9 +345,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot16.checkSysEventByData = slot21
+slot16.checkSysEventByData = slot22
 
-slot21 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SysEventData
 	slot3 = slot3[slot1]
@@ -414,9 +450,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot16.onSysEvent = slot21
+slot16.onSysEvent = slot22
 
-slot21 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.safeUnpack
@@ -455,9 +491,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot16.onSysEventByData = slot21
+slot16.onSysEventByData = slot22
 
-slot21 = function(slot0, slot1, slot2, slot3, slot4)
+slot22 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.getObj
@@ -785,9 +821,9 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot16.dispatchSysEvent = slot21
+slot16.dispatchSysEvent = slot22
 
-slot21 = function(slot0, slot1, slot2, slot3, slot4)
+slot22 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.getObj
@@ -926,8 +962,8 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 	slot7 = tostring
 	slot9 = math
 	slot9 = slot9.floor
-	slot11 = Time
-	slot11 = slot11.secondCache
+	slot11 = getDelayClockNow
+	slot11 = slot11()
 	slot11 = slot11 + slot3
 	slot11 = slot11 * 10
 	MULTRES = slot9(slot11)
@@ -1004,9 +1040,9 @@ slot21 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot16.registerSysEvent = slot21
+slot16.registerSysEvent = slot22
 
-slot21 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0._checkEvent
@@ -1093,9 +1129,9 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16._checkAndDoEvent = slot21
+slot16._checkAndDoEvent = slot22
 
-slot21 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = EventEnumData
 	slot4 = slot4[slot1]
@@ -1331,9 +1367,9 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16._checkEvent = slot21
+slot16._checkEvent = slot22
 
-slot21 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = EventEnumData
 	slot4 = slot4[slot1]
@@ -1597,9 +1633,9 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16._doEvent = slot21
+slot16._doEvent = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eventTimerId
 	--- END OF BLOCK #0 ---
@@ -1648,13 +1684,13 @@ slot21 = function(slot0)
 
 end
 
-slot16.startEventTimer = slot21
+slot16.startEventTimer = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = math_floor
-	slot3 = Time
-	slot3 = slot3.secondCache
+	slot3 = getDelayClockNow
+	slot3 = slot3()
 	slot3 = slot3 * 10
 	slot1 = slot1(slot3)
 	slot2 = pairs
@@ -1766,9 +1802,9 @@ slot21 = function(slot0)
 
 end
 
-slot16.timerCheckExecuteDelayWithEvent = slot21
+slot16.timerCheckExecuteDelayWithEvent = slot22
 
-slot21 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eventTimerId
 	--- END OF BLOCK #0 ---
@@ -1814,7 +1850,7 @@ slot21 = function(slot0)
 
 end
 
-slot16.removeEventTimer = slot21
+slot16.removeEventTimer = slot22
 
 return slot16
 --- END OF BLOCK #3 ---

@@ -1,27 +1,30 @@
---- BLOCK #0 1-29, warpins: 1 ---
-slot0 = {}
-slot1 = {
-	ShellJoinHomeCampOwner = "shell_join_home_camp_owner",
-	TopLogoUGCOwner = "top_logo_ugc_owner",
-	ShellJoinUGCOwner = "shell_join_ugc_owner"
-}
-slot0.RequestPurpose = slot1
-slot1 = {
-	Superseded = "superseded",
-	RefreshedNoCache = "refreshed_no_cache",
-	QuerySkippedNoCache = "query_skipped_no_cache",
-	Refreshed = "refreshed",
-	QueryUnavailable = "query_unavailable",
-	Pending = "pending",
-	Cache = "cache"
-}
-slot0.Reason = slot1
+--- BLOCK #0 1-32, warpins: 1 ---
+slot0 = require
+slot2 = "Core.Common.EmptyTable"
+slot0 = slot0(slot2)
 slot1 = {}
+slot2 = {
+	ShellJoinUGCOwner = "shell_join_ugc_owner",
+	TopLogoUGCOwner = "top_logo_ugc_owner",
+	ShellJoinHomeCampOwner = "shell_join_home_camp_owner"
+}
+slot1.RequestPurpose = slot2
+slot2 = {
+	Superseded = "superseded",
+	Cache = "cache",
+	QuerySkippedNoCache = "query_skipped_no_cache",
+	RefreshedNoCache = "refreshed_no_cache",
+	QueryUnavailable = "query_unavailable",
+	Refreshed = "refreshed",
+	Pending = "pending"
+}
+slot1.Reason = slot2
 slot2 = {}
-slot1.pendingByUid = slot2
-slot0.state = slot1
+slot3 = {}
+slot2.pendingByUid = slot3
+slot1.state = slot2
 
-slot1 = function(slot0, slot1)
+slot2 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = tostring
 	--- END OF BLOCK #0 ---
@@ -49,9 +52,9 @@ slot1 = function(slot0, slot1)
 
 end
 
-slot0._buildPendingKey = slot1
+slot1._buildPendingKey = slot2
 
-slot1 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = pg
 	--- END OF BLOCK #0 ---
@@ -104,9 +107,9 @@ slot1 = function(slot0)
 
 end
 
-slot0._getChat = slot1
+slot1._getChat = slot2
 
-slot1 = function(slot0, slot1, slot2)
+slot2 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -170,9 +173,9 @@ slot1 = function(slot0, slot1, slot2)
 
 end
 
-slot0._readCachedPlayerInfo = slot1
+slot1._readCachedPlayerInfo = slot2
 
-slot1 = function(slot0, slot1, slot2, slot3, slot4)
+slot2 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = type
 	slot7 = slot1
@@ -230,9 +233,9 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0._invokeCallback = slot1
+slot1._invokeCallback = slot2
 
-slot1 = function(slot0, slot1, slot2, slot3, slot4)
+slot2 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = slot1.callbacks
 	slot6 = slot1.callbacks
@@ -251,9 +254,9 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0._appendPendingCallback = slot1
+slot1._appendPendingCallback = slot2
 
-slot1 = function(slot0, slot1, slot2, slot3, slot4)
+slot2 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = PlatformPlayerInfoQueryService
 	slot5 = slot5.state
@@ -295,7 +298,7 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #3 17-17, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -339,9 +342,9 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0._finishPending = slot1
+slot1._finishPending = slot2
 
-slot1 = function(slot0, slot1, slot2, slot3)
+slot2 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = tostring
 	--- END OF BLOCK #0 ---
@@ -537,9 +540,9 @@ slot1 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.Clear = slot1
+slot1.Clear = slot2
 
-slot1 = function(slot0, slot1, slot2, slot3, slot4)
+slot2 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = tostring
 	--- END OF BLOCK #0 ---
@@ -620,7 +623,7 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 	slot7 = false
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #40
+	UNCONDITIONAL JUMP; TARGET BLOCK #37
 
 
 	--- BLOCK #7 33-34, warpins: 1 ---
@@ -671,7 +674,7 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 	slot9 = true
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #41
+	UNCONDITIONAL JUMP; TARGET BLOCK #38
 
 
 	--- BLOCK #11 55-59, warpins: 1 ---
@@ -683,7 +686,7 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot9 ~= nil then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #13
 	end
 
 
@@ -693,25 +696,14 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 	slot10 = slot10(slot12)
 	--- END OF BLOCK #12 ---
 
-	if slot10 == "function" then
+	if slot10 ~= "function" then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 65-67, warpins: 1 ---
-	slot10 = slot9.queryPlayerInfoType
-	--- END OF BLOCK #13 ---
-
-	if slot10 == nil then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 68-77, warpins: 3 ---
+	--- BLOCK #13 65-74, warpins: 2 ---
 	slot12 = slot0
 	slot10 = slot0._invokeCallback
 	slot13 = slot4
@@ -723,31 +715,13 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 	slot10(slot12, slot13, slot14, slot15, slot16)
 
 	slot10 = false
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #42
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
 
 
-	--- BLOCK #15 78-80, warpins: 1 ---
+	--- BLOCK #14 75-99, warpins: 1 ---
 	slot10 = slot3.queryType
-	--- END OF BLOCK #15 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 81-82, warpins: 1 ---
-	slot10 = slot9.queryPlayerInfoType
-	slot10 = slot10.ShowPlayerInfo
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 83-106, warpins: 2 ---
 	slot11 = {}
 	slot12 = {}
 	slot11.callbacks = slot12
@@ -829,98 +803,98 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot17 = slot3.extraInfo
 	slot18 = slot3.force
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #14 ---
 
 	if slot18 ~= true then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #18 107-108, warpins: 1 ---
+	--- BLOCK #15 100-101, warpins: 1 ---
 	slot18 = false
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #19 109-109, warpins: 1 ---
+	--- BLOCK #16 102-102, warpins: 1 ---
 	slot18 = true
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #20
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #20 110-116, warpins: 2 ---
+	--- BLOCK #17 103-109, warpins: 2 ---
 	slot11 = slot11(slot13, slot14, slot15, slot16, slot17, slot18)
 	slot12 = PlatformPlayerInfoQueryService
 	slot12 = slot12.state
 	slot12 = slot12.pendingByUid
 	slot12 = slot12[slot7]
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #17 ---
 
 	if slot12 == nil then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 117-118, warpins: 1 ---
-	--- END OF BLOCK #21 ---
+	--- BLOCK #18 110-111, warpins: 1 ---
+	--- END OF BLOCK #18 ---
 
 	if slot11 ~= true then
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #22 119-120, warpins: 1 ---
+	--- BLOCK #19 112-113, warpins: 1 ---
 	slot12 = false
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 114-114, warpins: 1 ---
+	slot12 = true
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 115-116, warpins: 2 ---
+	return slot12
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 117-118, warpins: 2 ---
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	if slot11 == true then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
 
 
-	--- BLOCK #23 121-121, warpins: 1 ---
+	--- BLOCK #23 119-121, warpins: 1 ---
 	slot12 = true
+
+	return slot12
 
 	--- END OF BLOCK #23 ---
 
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 122-123, warpins: 2 ---
-	return slot12
-
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 124-125, warpins: 2 ---
-	--- END OF BLOCK #25 ---
-
-	if slot11 == true then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #26 126-128, warpins: 1 ---
-	slot12 = true
-
-	return slot12
-
-	--- END OF BLOCK #26 ---
-
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 129-140, warpins: 2 ---
+	--- BLOCK #24 122-133, warpins: 2 ---
 	slot12 = PlatformPlayerInfoQueryService
 	slot12 = slot12.state
 	slot12 = slot12.pendingByUid
@@ -931,42 +905,42 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 	slot15 = slot9
 	slot16 = slot5
 	slot12 = slot12(slot14, slot15, slot16)
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #24 ---
 
 	if slot12 ~= nil then
-	JUMP TO BLOCK #28
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #28 141-144, warpins: 1 ---
+	--- BLOCK #25 134-137, warpins: 1 ---
 	slot13 = ipairs
 	slot15 = slot8.callbacks
-	--- END OF BLOCK #28 ---
+	--- END OF BLOCK #25 ---
 
 	slot15 = if not slot15 then
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #29 145-145, warpins: 1 ---
-	slot15 = {}
-	--- END OF BLOCK #29 ---
+	--- BLOCK #26 138-138, warpins: 1 ---
+	slot15 = EMPTY_TABLE
+	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #30
+	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #30 146-147, warpins: 2 ---
+	--- BLOCK #27 139-140, warpins: 2 ---
 	slot13, slot14, slot15 = slot13(slot15)
-	--- END OF BLOCK #30 ---
+	--- END OF BLOCK #27 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #31 148-155, warpins: 1 ---
+	--- BLOCK #28 141-148, warpins: 1 ---
 	slot20 = slot0
 	slot18 = slot0._invokeCallback
 	slot21 = slot17.callback
@@ -977,56 +951,56 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot18(slot20, slot21, slot22, slot23, slot24)
 
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #32
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #32 156-157, warpins: 2 ---
-	--- END OF BLOCK #32 ---
+	--- BLOCK #29 149-150, warpins: 2 ---
+	--- END OF BLOCK #29 ---
 
 	for slot16, slot17 in slot13, slot14, slot15
-	LOOP BLOCK #31
-	GO OUT TO BLOCK #33
+	LOOP BLOCK #28
+	GO OUT TO BLOCK #30
 
 
-	--- BLOCK #33 158-160, warpins: 1 ---
+	--- BLOCK #30 151-153, warpins: 1 ---
 	slot13 = false
 
 	return slot13
 
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #34
+	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #34 161-164, warpins: 2 ---
+	--- BLOCK #31 154-157, warpins: 2 ---
 	slot13 = ipairs
 	slot15 = slot8.callbacks
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #31 ---
 
 	slot15 = if not slot15 then
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #35 165-165, warpins: 1 ---
-	slot15 = {}
-	--- END OF BLOCK #35 ---
+	--- BLOCK #32 158-158, warpins: 1 ---
+	slot15 = EMPTY_TABLE
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #36 166-167, warpins: 2 ---
+	--- BLOCK #33 159-160, warpins: 2 ---
 	slot13, slot14, slot15 = slot13(slot15)
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #33 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #38
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
 
 
-	--- BLOCK #37 168-175, warpins: 1 ---
+	--- BLOCK #34 161-168, warpins: 1 ---
 	slot20 = slot0
 	slot18 = slot0._invokeCallback
 	slot21 = slot17.callback
@@ -1037,53 +1011,53 @@ slot1 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot18(slot20, slot21, slot22, slot23, slot24)
 
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 169-170, warpins: 2 ---
+	--- END OF BLOCK #35 ---
+
+	for slot16, slot17 in slot13, slot14, slot15
+	LOOP BLOCK #34
+	GO OUT TO BLOCK #36
+
+
+	--- BLOCK #36 171-173, warpins: 1 ---
+	slot13 = false
+
+	return slot13
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 174-174, warpins: 2 ---
+	return slot7
 	--- END OF BLOCK #37 ---
 
 	FLOW; TARGET BLOCK #38
 
 
-	--- BLOCK #38 176-177, warpins: 2 ---
+	--- BLOCK #38 175-175, warpins: 2 ---
+	return slot9
 	--- END OF BLOCK #38 ---
 
-	for slot16, slot17 in slot13, slot14, slot15
-	LOOP BLOCK #37
-	GO OUT TO BLOCK #39
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 178-180, warpins: 1 ---
-	slot13 = false
-
-	return slot13
-	--- END OF BLOCK #39 ---
-
-	FLOW; TARGET BLOCK #40
-
-
-	--- BLOCK #40 181-181, warpins: 2 ---
-	return slot7
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 182-182, warpins: 2 ---
-	return slot9
-	--- END OF BLOCK #41 ---
-
-	FLOW; TARGET BLOCK #42
-
-
-	--- BLOCK #42 183-183, warpins: 2 ---
+	--- BLOCK #39 176-176, warpins: 2 ---
 	return slot10
-	--- END OF BLOCK #42 ---
+	--- END OF BLOCK #39 ---
 
 
 
 end
 
-slot0.requestLatest = slot1
+slot1.requestLatest = slot2
 
-slot1 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformPlayerInfoQueryService
 	slot1 = slot1.state
@@ -1097,9 +1071,9 @@ slot1 = function(slot0)
 
 end
 
-slot0._resetForTests = slot1
+slot1._resetForTests = slot2
 
-return slot0
+return slot1
 --- END OF BLOCK #0 ---
 
 

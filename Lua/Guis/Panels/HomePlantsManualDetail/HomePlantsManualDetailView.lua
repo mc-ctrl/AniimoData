@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-46, warpins: 1 ---
+	--- BLOCK #0 1-66, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -63,6 +63,26 @@ slot4 = function(slot0)
 	slot5 = "btnPokedexUWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnPokedexUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "autoHarvestUWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.autoHarvestUWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnAutoCollectSwitchUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnAutoCollectSwitchUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtTips"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtTipsUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtSwitchName"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtSwitchNameUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

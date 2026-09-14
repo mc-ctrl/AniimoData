@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	agenttype = "PetAgent",
 	name = "ParmonBehaviorTree/SubTree/_Pet/PBT_Pet_DefenseFollow",
+	agenttype = "PetAgent",
 	version = 9
 }
 slot4 = {}

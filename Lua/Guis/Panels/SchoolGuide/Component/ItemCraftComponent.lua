@@ -131,9 +131,9 @@ end
 
 slot9.getRedStyle = slot10
 slot10 = {
+	base = 0,
 	canOpen = 2,
-	inCollection = 1,
-	base = 0
+	inCollection = 1
 }
 slot9.pipeline = slot10
 

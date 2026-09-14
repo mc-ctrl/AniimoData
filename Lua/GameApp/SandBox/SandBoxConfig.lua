@@ -1,9 +1,8 @@
---- BLOCK #0 1-11, warpins: 1 ---
+--- BLOCK #0 1-10, warpins: 1 ---
 slot0 = nil
 slot1 = {}
-slot2 = {}
 
-slot3 = function(slot0)
+slot2 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -15,7 +14,7 @@ slot3 = function(slot0)
 
 
 	--- BLOCK #1 3-4, warpins: 1 ---
-	slot1 = _empty
+	slot1 = nil
 
 	return slot1
 
@@ -122,9 +121,9 @@ slot3 = function(slot0)
 
 end
 
-slot1.convertToLuaTable = slot3
+slot1.convertToLuaTable = slot2
 
-slot3 = function()
+slot2 = function()
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -133,9 +132,9 @@ slot3 = function()
 
 end
 
-slot1.clearCache = slot3
+slot1.clearCache = slot2
 
-slot3 = function()
+slot2 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = _cache
 
@@ -146,7 +145,7 @@ slot3 = function()
 
 end
 
-slot1.getCache = slot3
+slot1.getCache = slot2
 
 return slot1
 --- END OF BLOCK #0 ---

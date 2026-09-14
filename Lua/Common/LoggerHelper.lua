@@ -30,8 +30,8 @@ slot9 = slot7.getLogger
 slot11 = "LoggerHelper"
 slot9 = slot9(slot11)
 slot10 = {
-	httpTimeoutCnt = 0,
-	clientBuffer = "\n>>>>>>[Start Client]<<<<<<"
+	clientBuffer = "\n>>>>>>[Start Client]<<<<<<",
+	httpTimeoutCnt = 0
 }
 slot11 = {}
 slot10.clientTraceback = slot11
@@ -634,9 +634,9 @@ slot15 = function(slot0)
 
 	--- BLOCK #1 9-20, warpins: 1 ---
 	slot8 = {
-		game_server = "game_client",
 		error_type = "code_error",
-		batch_count = 1
+		batch_count = 1,
+		game_server = "game_client"
 	}
 	slot9 = TimeUtils
 	slot9 = slot9.timeStampToUtcString

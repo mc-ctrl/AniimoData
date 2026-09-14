@@ -1,4 +1,4 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -29,12 +29,15 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Core.Common.Time"
 slot8 = slot8(slot10)
-slot9 = slot1.LightClass
-slot11 = "BattlePassModel"
-slot12 = slot2
-slot9 = slot9(slot11, slot12)
+slot9 = require
+slot11 = "Utils.ClientUtils"
+slot9 = slot9(slot11)
+slot10 = slot1.LightClass
+slot12 = "BattlePassModel"
+slot13 = slot2
+slot10 = slot10(slot12, slot13)
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = Utils
 	slot4 = slot4.isTable
@@ -167,7 +170,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot8, slot9, slot10 = slot8(slot10)
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
 	--- BLOCK #13 44-51, warpins: 1 ---
@@ -182,63 +185,77 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot14 = if slot14 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #20
 	end
 
 
 	--- BLOCK #14 52-57, warpins: 1 ---
 	slot16 = slot0
-	slot14 = slot0._isPrevTaskFinished
-	slot17 = slot13.preTaskId
+	slot14 = slot0._isSpecialConditionMet
+	slot17 = slot13.specialCondition
 	slot14 = slot14(slot16, slot17)
 	--- END OF BLOCK #14 ---
 
 	slot14 = if slot14 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #15 58-65, warpins: 1 ---
+	--- BLOCK #15 58-63, warpins: 1 ---
+	slot16 = slot0
+	slot14 = slot0._isPrevTaskFinished
+	slot17 = slot13.preTaskId
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #15 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #16 64-71, warpins: 1 ---
 	slot14 = ActivityUtils
 	slot14 = slot14.getActTaskState
 	slot16 = pg
 	slot16 = slot16.me
 	slot17 = slot12
 	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #16 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #16 66-70, warpins: 1 ---
+	--- BLOCK #17 72-76, warpins: 1 ---
 	slot15 = ActivityConst
 	slot15 = slot15.TaskState
 	slot15 = slot15.Finihed_CanRecv
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #17 ---
 
 	if slot14 == slot15 then
-	JUMP TO BLOCK #17
-	else
 	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 71-73, warpins: 1 ---
+	--- BLOCK #18 77-79, warpins: 1 ---
 	slot15 = ActivityConst
 	slot15 = slot15.TaskState
 	slot14 = slot15.UnFinished
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #18 74-87, warpins: 3 ---
+	--- BLOCK #19 80-93, warpins: 3 ---
 	slot15 = #slot7
 	slot15 = slot15 + 1
 	slot16 = {
@@ -255,20 +272,20 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot16.actTaskData = slot17
 	slot16.taskState = slot14
 	slot7[slot15] = slot16
-	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 88-89, warpins: 4 ---
 	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 94-95, warpins: 5 ---
+	--- END OF BLOCK #20 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
 	LOOP BLOCK #13
-	GO OUT TO BLOCK #20
+	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #20 90-94, warpins: 1 ---
+	--- BLOCK #21 96-100, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0._sortBpTaskList
 	slot11 = slot7
@@ -276,15 +293,15 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot8(slot10, slot11)
 
 	return slot7
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot9.getBpTaskList = slot10
+slot10.getBpTaskList = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -390,7 +407,7 @@ slot10 = function(slot0, slot1)
 	--- BLOCK #9 31-32, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	if slot3 < slot4 then
+	if slot3 <= slot4 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
@@ -417,9 +434,44 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9._isTaskInTimeRange = slot10
+slot10._isTaskInTimeRange = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot2 = ClientUtils
+	slot2 = slot2.checkCondition
+	slot4 = slot1
+
+	return slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot10._isSpecialConditionMet = slot11
+
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -502,9 +554,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9._isPrevTaskFinished = slot10
+slot10._isPrevTaskFinished = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.isTable
@@ -694,9 +746,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9._sortBpTaskList = slot10
+slot10._sortBpTaskList = slot11
 
-return slot9
+return slot10
 --- END OF BLOCK #0 ---
 
 

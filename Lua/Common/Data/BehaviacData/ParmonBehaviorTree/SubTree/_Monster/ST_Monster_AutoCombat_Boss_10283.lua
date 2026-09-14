@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 202,
-	name = "ParmonBehaviorTree/SubTree/_Monster/ST_Monster_AutoCombat_Boss_10283",
 	useForRoute = false,
-	agenttype = "PuppetAgent"
+	agenttype = "PuppetAgent",
+	name = "ParmonBehaviorTree/SubTree/_Monster/ST_Monster_AutoCombat_Boss_10283",
+	version = 202
 }
 slot4 = {}
 slot3.properties = slot4
@@ -3569,9 +3569,9 @@ slot20 = {}
 slot19.properties = slot20
 slot20 = {}
 slot21 = {
-	transition = false,
 	id = "876",
 	class = "Precondition",
+	transition = false,
 	effector = false,
 	precondition = true
 }

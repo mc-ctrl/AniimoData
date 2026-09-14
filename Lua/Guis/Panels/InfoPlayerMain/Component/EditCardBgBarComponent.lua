@@ -1,4 +1,4 @@
---- BLOCK #0 1-50, warpins: 1 ---
+--- BLOCK #0 1-45, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -19,22 +19,13 @@ slot5 = require
 slot7 = "Data.card_background_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.ClientConst"
+slot8 = "Data.item_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Data.item_source_data"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Const.RedDotConst"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Data.item_data"
-slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Data.item_source_data"
-slot10 = slot10(slot12)
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = slot1.playerInfo
 	slot0.playerInfo = slot2
@@ -105,9 +96,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.onCtor = slot11
+slot2.onCtor = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -150,14 +141,15 @@ slot11 = function(slot0)
 
 end
 
-slot2.initView = slot11
+slot2.initView = slot8
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.getCardBackGroundList
 	slot1 = slot1(slot3)
+	slot0.cardInfos = slot1
 	slot2 = slot0.cardList
 	slot4 = slot2
 	slot2 = slot2.SetList
@@ -180,9 +172,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.refreshEditCardBgBarPanel = slot11
+slot2.refreshEditCardBgBarPanel = slot8
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-39, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -234,7 +226,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 40-59, warpins: 1 ---
+	--- BLOCK #1 40-45, warpins: 1 ---
 	slot10 = slot1
 	slot8 = slot1.TryChangePage
 	slot11 = "State"
@@ -242,28 +234,12 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	slot8(slot10, slot11, slot12)
 
-	slot8 = pg
-	slot8 = slot8.me
-	slot10 = slot8
-	slot8 = slot8.setRedDotRecord
-	slot11 = Const
-	slot11 = slot11.CLIENT_KEY
-	slot11 = slot11.PLAYER_CARD_BACKGROUND_RED_DOT
-	slot12 = ClientConst
-	slot12 = slot12.PrefKey
-	slot12 = slot12.PlayerCardBackground
-	slot13 = slot3.id
-	slot12 = slot12 .. slot13
-	slot13 = false
-
-	slot8(slot10, slot11, slot12, slot13)
-
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 60-65, warpins: 1 ---
+	--- BLOCK #2 46-51, warpins: 1 ---
 	slot10 = slot1
 	slot8 = slot1.TryChangePage
 	slot11 = "State"
@@ -277,14 +253,14 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 66-67, warpins: 1 ---
+	--- BLOCK #3 52-53, warpins: 1 ---
 	slot12 = 1
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 68-68, warpins: 1 ---
+	--- BLOCK #4 54-54, warpins: 1 ---
 	slot12 = 0
 
 	--- END OF BLOCK #4 ---
@@ -292,7 +268,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 69-69, warpins: 2 ---
+	--- BLOCK #5 55-55, warpins: 2 ---
 	slot8(slot10, slot11, slot12)
 
 	--- END OF BLOCK #5 ---
@@ -300,89 +276,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 70-93, warpins: 2 ---
-	slot8 = string
-	slot8 = slot8.format
-	slot10 = RedDotConst
-	slot10 = slot10.RedDotPath
-	slot10 = slot10.FUNC_MENU_PLAYER_CARD_BACKGROUND_LIST
-	slot11 = slot0.order
-	slot8 = slot8(slot10, slot11)
-	slot9 = pg
-	slot9 = slot9.me
-	slot11 = slot9
-	slot9 = slot9.getRedDotRecord
-	slot12 = Const
-	slot12 = slot12.CLIENT_KEY
-	slot12 = slot12.PLAYER_CARD_BACKGROUND_RED_DOT
-	slot13 = ClientConst
-	slot13 = slot13.PrefKey
-	slot13 = slot13.PlayerCardBackground
-	slot14 = slot3.id
-	slot13 = slot13 .. slot14
-	slot14 = true
-	slot9 = slot9(slot11, slot12, slot13, slot14)
-	slot10 = slot3.isLock
-	--- END OF BLOCK #6 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 94-98, warpins: 1 ---
-	slot10 = slot3.id
-	slot11 = slot0.playerInfo
-	slot11 = slot11.cardBackground
-	--- END OF BLOCK #7 ---
-
-	if slot10 ~= slot11 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 99-100, warpins: 1 ---
-	slot10 = slot9
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #9 101-102, warpins: 2 ---
-	slot10 = false
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 103-103, warpins: 0 ---
-	slot10 = true
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 104-119, warpins: 3 ---
-	slot11 = pg
-	slot11 = slot11.global
-	slot11 = slot11.setRedDot
-	slot13 = slot8
-	slot14 = slot3.id
-	slot13 = slot13 .. slot14
-	slot14 = slot1
-	slot15 = slot10
-	slot16 = RedDotConst
-	slot16 = slot16.RedDotStyle
-	slot16 = slot16.NEW
-
-	slot11(slot13, slot14, slot15, slot16)
-
-	slot11 = function()
-		--- BLOCK #0 1-22, warpins: 1 ---
+	--- BLOCK #6 56-59, warpins: 2 ---
+	slot8 = function()
+		--- BLOCK #0 1-20, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.refreshConfirmButtonState
@@ -395,83 +291,92 @@ slot11 = function(slot0, slot1, slot2, slot3)
 		slot1 = data
 		slot1 = slot1.id
 		slot0.curSelectedCardId = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.previewCardBackground
+		slot3 = data
+		slot3 = slot3.id
+
+		slot0(slot2, slot3)
+
 		slot0 = button
 		slot1 = true
 		slot0.isSelected = slot1
-		slot0 = self
-		slot0 = slot0.model
-		slot2 = slot0
-		slot0 = slot0.isCardBackgroundLock
-		slot3 = self
-		slot3 = slot3.curSelectedCardId
-		slot0 = slot0(slot2, slot3)
-		--- END OF BLOCK #0 ---
-
-		slot0 = if not slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 23-37, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot2 = slot0
-		slot0 = slot0.setRedDotRecord
-		slot3 = Const
-		slot3 = slot3.CLIENT_KEY
-		slot3 = slot3.PLAYER_CARD_BACKGROUND_RED_DOT
-		slot4 = ClientConst
-		slot4 = slot4.PrefKey
-		slot4 = slot4.PlayerCardBackground
-		slot5 = self
-		slot5 = slot5.curSelectedCardId
-		slot4 = slot4 .. slot5
-		slot5 = false
-
-		slot0(slot2, slot3, slot4, slot5)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 38-51, warpins: 2 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.setRedDot
-		slot2 = redDotTreePath
-		slot3 = data
-		slot3 = slot3.id
-		slot2 = slot2 .. slot3
-		slot3 = button
-		slot4 = false
-		slot5 = RedDotConst
-		slot5 = slot5.RedDotStyle
-		slot5 = slot5.NEW
-
-		slot0(slot2, slot3, slot4, slot5)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #0 ---
 
 
 
 	end
 
-	slot1.luaClick = slot11
+	slot1.luaClick = slot8
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot2.renderCardItem = slot11
+slot2.renderCardItem = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = CardBackgroundData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot3 = slot3.playerBgImage
+	slot4 = slot2.res
+	slot3.url = slot4
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.previewCardBackground = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = slot0.playerInfo
+	slot1 = slot1.cardBackground
+	slot0.curSelectedCardId = slot1
+	slot3 = slot0
+	slot1 = slot0.previewCardBackground
+	slot4 = slot0.playerInfo
+	slot4 = slot4.cardBackground
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.clearCardBackgroundPreview = slot8
+
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = slot0.usingUWidget
 	slot4 = slot2
@@ -773,9 +678,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.refreshConfirmButtonState = slot11
+slot2.refreshConfirmButtonState = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -865,10 +770,17 @@ slot11 = function(slot0)
 
 end
 
-slot2.onConfirmBtnClick = slot11
+slot2.onConfirmBtnClick = slot8
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.previewCardBackground
+	slot4 = slot0.playerInfo
+	slot4 = slot4.cardBackground
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.cardList
 	slot3 = slot1
 	slot1 = slot1.RefreshList
@@ -889,7 +801,7 @@ slot11 = function(slot0)
 
 end
 
-slot2.onCardBackgroundChange = slot11
+slot2.onCardBackgroundChange = slot8
 
 return slot2
 --- END OF BLOCK #0 ---

@@ -57,13 +57,17 @@ slot13 = slot13(slot15)
 slot11.CombatActionTimelineParam = slot13
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
+	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = 0
 	slot0.srcActorId = slot1
 	slot1 = 0
 	slot0.srcAbilityId = slot1
 	slot1 = 0
 	slot0.srcAbilityStoreType = slot1
+	slot1 = nil
+	slot0.attackSpeed = slot1
+	slot1 = nil
+	slot0.randomPointPos = slot1
 	slot1 = nil
 	slot0.targetActorId = slot1
 	slot1 = nil
@@ -105,13 +109,17 @@ slot14 = slot14(slot16)
 slot11.HitActionTimelineParam = slot14
 
 slot15 = function(slot0)
-	--- BLOCK #0 1-59, warpins: 1 ---
+	--- BLOCK #0 1-63, warpins: 1 ---
 	slot1 = nil
 	slot0.attackerActorId = slot1
 	slot1 = 0
 	slot0.attackerAbilityId = slot1
 	slot1 = 0
 	slot0.attackerAbilityStoreType = slot1
+	slot1 = nil
+	slot0.overrideTimeLength = slot1
+	slot1 = nil
+	slot0.airAttackLevel = slot1
 	slot1 = nil
 	slot0.attackData = slot1
 	slot1 = nil

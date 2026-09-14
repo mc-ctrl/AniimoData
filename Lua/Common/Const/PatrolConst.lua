@@ -26,11 +26,11 @@ slot1 = {
 }
 slot0.PATH_STATE = slot1
 slot1 = {
-	ST_PatrolWalk = 1,
-	ST_None = 0,
 	ST_Sleep = 4,
 	ST_Rest = 3,
-	ST_PatrolRun = 2
+	ST_PatrolRun = 2,
+	ST_PatrolWalk = 1,
+	ST_None = 0
 }
 slot0.PATROL_SUB_STATE = slot1
 slot1 = {}
@@ -61,9 +61,9 @@ GO OUT TO BLOCK #3
 
 --- BLOCK #3 24-26, warpins: 1 ---
 slot1 = {
+	NearestWayPoint = 1,
 	FirstWayPoint = 0,
-	ResumeLastWayPoint = 2,
-	NearestWayPoint = 1
+	ResumeLastWayPoint = 2
 }
 slot0.FirstWayPointSelectType = slot1
 

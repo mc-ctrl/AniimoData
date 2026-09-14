@@ -1,4 +1,4 @@
---- BLOCK #0 1-83, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -38,26 +38,35 @@ slot10 = slot10(slot12)
 slot11 = require
 slot13 = "Guis.UICtrl"
 slot11 = slot11(slot13)
-slot12 = slot10.LightClass
-slot14 = "ActiveDungeonCtrl"
-slot15 = slot11
-slot12 = slot12(slot14, slot15)
-slot13 = {}
-slot14 = slot1.TEAM_MATCHED_STATUS_CHANGE
-slot15 = {
+slot12 = require
+slot14 = "Core.Common.Time"
+slot12 = slot12(slot14)
+slot13 = slot10.LightClass
+slot15 = "ActiveDungeonCtrl"
+slot16 = slot11
+slot13 = slot13(slot15, slot16)
+slot14 = {}
+slot15 = slot1.TEAM_MATCHED_STATUS_CHANGE
+slot16 = {
 	"onTeamMatchedStatusChange",
 	true
 }
-slot13[slot14] = slot15
-slot14 = slot1.PLAYER_ONTELEPORT
-slot15 = {
+slot14[slot15] = slot16
+slot15 = slot1.TEAM_MATCH_START_TIME_CHANGE
+slot16 = {
+	"onTeamMatchedStatusChange",
+	true
+}
+slot14[slot15] = slot16
+slot15 = slot1.PLAYER_ONTELEPORT
+slot16 = {
 	"onTeleport",
 	false
 }
-slot13[slot14] = slot15
-slot12.messages = slot13
+slot14[slot15] = slot16
+slot13.messages = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.initActiveInfo
@@ -79,9 +88,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onCreate = slot13
+slot13.onCreate = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = slot1.activityId
 	slot0.activeId = slot2
@@ -106,9 +115,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.initActiveInfo = slot13
+slot13.initActiveInfo = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
@@ -122,9 +131,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onTeleport = slot13
+slot13.onTeleport = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-59, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -319,9 +328,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.addListener = slot13
+slot13.addListener = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -342,9 +351,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.startMatch = slot13
+slot13.startMatch = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -370,11 +379,11 @@ slot13 = function(slot0)
 	if slot1 == slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 14-42, warpins: 2 ---
+	--- BLOCK #2 14-29, warpins: 2 ---
 	slot2 = slot0.view
 	slot2 = slot2.teamBtnBoxUComponent
 	slot4 = slot2
@@ -391,6 +400,27 @@ slot13 = function(slot0)
 	slot3 = slot3.countDownUCountDown
 	slot4 = true
 	slot3.positiveTiming = slot4
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 30-32, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 33-46, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.countDownUCountDown
 	slot5 = slot3
@@ -398,21 +428,33 @@ slot13 = function(slot0)
 	slot6 = math
 	slot6 = slot6.max
 	slot8 = 0
-	slot9 = os
-	slot9 = slot9.time
-	slot9 = slot9()
+	slot9 = Time
+	slot9 = slot9.secondCache
 	slot9 = slot9 - slot2
 	slot6 = slot6(slot8, slot9)
 	slot7 = 3600
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #3 43-54, warpins: 1 ---
+	--- BLOCK #5 47-52, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.countDownUCountDown
+	slot5 = slot3
+	slot3 = slot3.Stop
+
+	slot3(slot5)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 53-64, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.teamBtnBoxUComponent
 	slot4 = slot2
@@ -429,12 +471,12 @@ slot13 = function(slot0)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 55-59, warpins: 2 ---
+	--- BLOCK #7 65-69, warpins: 3 ---
 	slot2 = slot0.bossListComponent
 	slot4 = slot2
 	slot2 = slot2.onTeamMatchedStatusChange
@@ -442,15 +484,15 @@ slot13 = function(slot0)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot12.onTeamMatchedStatusChange = slot13
+slot13.onTeamMatchedStatusChange = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -466,9 +508,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.cancelMatch = slot13
+slot13.cancelMatch = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -485,9 +527,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.startPlay = slot13
+slot13.startPlay = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = BossListComponent
 	slot2 = slot2.new
@@ -503,9 +545,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.initBossTitleList = slot13
+slot13.initBossTitleList = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -523,9 +565,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot13.onDestroy = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -541,9 +583,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onOpen = slot13
+slot13.onOpen = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -552,9 +594,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onShow = slot13
+slot13.onShow = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -563,9 +605,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onHide = slot13
+slot13.onHide = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -805,9 +847,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.setActiveInfo = slot13
+slot13.setActiveInfo = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -865,9 +907,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.setRecommendEleList = slot13
+slot13.setRecommendEleList = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

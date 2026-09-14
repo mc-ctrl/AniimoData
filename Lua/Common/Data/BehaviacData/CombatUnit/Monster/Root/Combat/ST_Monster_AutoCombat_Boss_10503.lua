@@ -1,4 +1,4 @@
---- BLOCK #0 1-2482, warpins: 1 ---
+--- BLOCK #0 1-2404, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	agenttype = "PuppetAgent",
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10503",
-	version = 129
+	agenttype = "PuppetAgent",
+	version = 133
 }
 slot4 = {}
 slot3.properties = slot4
@@ -219,39 +219,6 @@ slot8 = {}
 slot7.children = slot8
 slot6.node = slot7
 slot5[3] = slot6
-slot6 = {}
-slot7 = {
-	id = "550",
-	class = "Action"
-}
-slot8 = {}
-slot9 = {}
-slot10 = {
-	func = "startTimer"
-}
-slot11 = {}
-slot12 = {
-	const = "15030400CD"
-}
-slot11[1] = slot12
-slot10.params = slot11
-slot9.Method = slot10
-slot8[1] = slot9
-slot9 = {
-	ResultOption = "BT_INVALID"
-}
-slot8[2] = slot9
-slot9 = {
-	ResultResumeOption = "BT_None"
-}
-slot8[3] = slot9
-slot7.properties = slot8
-slot8 = {}
-slot7.attachments = slot8
-slot8 = {}
-slot7.children = slot8
-slot6.node = slot7
-slot5[4] = slot6
 slot6 = {}
 slot7 = {
 	id = "3",
@@ -479,86 +446,38 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "516",
-	class = "And"
+	id = "548",
+	class = "Condition"
 }
 slot17 = {}
+slot18 = {
+	Operator = "GreaterEqual"
+}
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	func = "getTargetBuffLayerCount"
+}
+slot20 = {}
+slot21 = {}
+slot20[1] = slot21
+slot21 = {
+	const = 215030101
+}
+slot20[2] = slot21
+slot19.params = slot20
+slot18.Opl = slot19
+slot17[2] = slot18
+slot18 = {}
+slot19 = {
+	const = 5
+}
+slot18.Opr = slot19
+slot17[3] = slot18
 slot16.properties = slot17
 slot17 = {}
 slot16.attachments = slot17
 slot17 = {}
-slot18 = {}
-slot19 = {
-	id = "548",
-	class = "Condition"
-}
-slot20 = {}
-slot21 = {
-	Operator = "GreaterEqual"
-}
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	func = "getTargetBuffLayerCount"
-}
-slot23 = {}
-slot24 = {}
-slot23[1] = slot24
-slot24 = {
-	const = 215030101
-}
-slot23[2] = slot24
-slot22.params = slot23
-slot21.Opl = slot22
-slot20[2] = slot21
-slot21 = {}
-slot22 = {
-	const = 5
-}
-slot21.Opr = slot22
-slot20[3] = slot21
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot19.children = slot20
-slot18.node = slot19
-slot17[1] = slot18
-slot18 = {}
-slot19 = {
-	id = "519",
-	class = "Condition"
-}
-slot20 = {}
-slot21 = {
-	Operator = "GreaterEqual"
-}
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	func = "getTimerValue"
-}
-slot23 = {}
-slot24 = {
-	const = "15030400CD"
-}
-slot23[1] = slot24
-slot22.params = slot23
-slot21.Opl = slot22
-slot20[2] = slot21
-slot21 = {}
-slot22 = {
-	const = 30
-}
-slot21.Opr = slot22
-slot20[3] = slot21
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot19.children = slot20
-slot18.node = slot19
-slot17[2] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[1] = slot15
@@ -649,7 +568,7 @@ slot21 = {
 }
 slot20[2] = slot21
 slot21 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot20[3] = slot21
 slot19.properties = slot20
@@ -659,39 +578,6 @@ slot20 = {}
 slot19.children = slot20
 slot18.node = slot19
 slot17[2] = slot18
-slot18 = {}
-slot19 = {
-	id = "520",
-	class = "Action"
-}
-slot20 = {}
-slot21 = {}
-slot22 = {
-	func = "startTimer"
-}
-slot23 = {}
-slot24 = {
-	const = "15030400CD"
-}
-slot23[1] = slot24
-slot22.params = slot23
-slot21.Method = slot22
-slot20[1] = slot21
-slot21 = {
-	ResultOption = "BT_INVALID"
-}
-slot20[2] = slot21
-slot21 = {
-	ResultResumeOption = "BT_None"
-}
-slot20[3] = slot21
-slot19.properties = slot20
-slot20 = {}
-slot19.attachments = slot20
-slot20 = {}
-slot19.children = slot20
-slot18.node = slot19
-slot17[3] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[2] = slot15
@@ -3674,7 +3560,7 @@ slot9.node = slot10
 slot8[1] = slot9
 slot7.children = slot8
 slot6.node = slot7
-slot5[5] = slot6
+slot5[4] = slot6
 slot4.children = slot5
 slot3.node = slot4
 slot4 = "behavior"

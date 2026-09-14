@@ -1,37 +1,40 @@
---- BLOCK #0 1-85, warpins: 1 ---
+--- BLOCK #0 1-88, warpins: 1 ---
 slot0 = require
-slot2 = "Core.PropertySync.CustomDict"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.PropertySync.CustomDict"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.lume"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.Const"
+slot5 = "Core.Common.lume"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.ItemUtils"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.DungeonConst"
+slot7 = "Common.Utils.ItemUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.catch_rogue_phase_data"
+slot8 = "Common.Const.DungeonConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.catch_rogue_level_data"
+slot9 = "Data.catch_rogue_phase_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.catch_rogue_level_reverse_data"
+slot10 = "Data.catch_rogue_level_data"
 slot8 = slot8(slot10)
-slot9 = slot1.LiteClass
-slot11 = "CatchRogueInfo"
-slot12 = slot0
-slot9 = slot9(slot11, slot12)
+slot9 = require
+slot11 = "Data.catch_rogue_level_reverse_data"
+slot9 = slot9(slot11)
+slot10 = slot2.LiteClass
+slot12 = "CatchRogueInfo"
+slot13 = slot1
+slot10 = slot10(slot12, slot13)
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot0.statCntEnterGame = slot1
@@ -45,9 +48,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.onActivityReset = slot10
+slot10.onActivityReset = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot0.gameId = slot1
 	slot2 = false
@@ -73,9 +76,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.onGameReset = slot10
+slot10.onGameReset = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.floorId = slot1
 	slot2 = false
@@ -98,9 +101,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.onFloorReset = slot10
+slot10.onFloorReset = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = CatchRogueLevelReverseData
@@ -161,7 +164,7 @@ slot10 = function(slot0)
 
 
 	--- BLOCK #5 24-24, warpins: 1 ---
-	slot7 = {}
+	slot7 = EMPTY_TABLE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -309,9 +312,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.randomLevelInfo = slot10
+slot10.randomLevelInfo = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -414,9 +417,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getLevelCostTime = slot10
+slot10.getLevelCostTime = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -483,9 +486,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.isTopFloor = slot10
+slot10.isTopFloor = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = CatchRogueLevelData
 	slot2 = slot0.levelId
@@ -499,9 +502,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getCurLevelConfig = slot10
+slot10.getCurLevelConfig = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.floorSuccess
 	--- END OF BLOCK #0 ---
@@ -545,9 +548,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getCurSettleFloorCount = slot10
+slot10.getCurSettleFloorCount = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = CatchRoguePhaseData
 	slot2 = slot0.gameId
@@ -588,9 +591,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getForcePetLevel = slot10
+slot10.getForcePetLevel = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -683,9 +686,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getValidPetList = slot10
+slot10.getValidPetList = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -730,7 +733,7 @@ slot10 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #4 17-17, warpins: 1 ---
-	slot14 = {}
+	slot14 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -868,7 +871,7 @@ slot10 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #19 53-53, warpins: 2 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
@@ -938,9 +941,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getValidBallList = slot10
+slot10.getValidBallList = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = lume
 	slot3 = slot3.find
@@ -991,9 +994,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.autoUpdateBallListOnItemAdd = slot10
+slot10.autoUpdateBallListOnItemAdd = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = lume
 	slot3 = slot3.find
@@ -1061,9 +1064,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.autoUpdateBallListOnItemDel = slot10
+slot10.autoUpdateBallListOnItemDel = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = CatchRoguePhaseData
 	slot3 = slot0.gameId
@@ -1136,9 +1139,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.isGameBall = slot10
+slot10.isGameBall = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = ItemUtils
 	slot3 = slot3.getItemCountById
@@ -1228,9 +1231,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.getValidBallCount = slot10
+slot10.getValidBallCount = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot0
@@ -1274,9 +1277,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getValidBallCountMap = slot10
+slot10.getValidBallCountMap = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = {}
 	slot5 = slot0
@@ -1327,9 +1330,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.getValidBallCountPairs = slot10
+slot10.getValidBallCountPairs = slot11
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot1.space
 	--- END OF BLOCK #0 ---
@@ -1440,9 +1443,9 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot9.canFireBall = slot10
+slot10.canFireBall = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.ballCountMap
 	slot3 = slot3[slot2]
@@ -1520,9 +1523,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onFireBall = slot10
+slot10.onFireBall = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.ballCountMap
 	slot3 = slot3[slot2]
@@ -1600,9 +1603,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onRecycleBall = slot10
+slot10.onRecycleBall = slot11
 
-slot10 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0.catchedPetIds
 	slot5 = slot3
@@ -1621,9 +1624,9 @@ slot10 = function(slot0, slot1, slot2)
 
 end
 
-slot9.onCatchPet = slot10
+slot10.onCatchPet = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = CatchRoguePhaseData
 	slot2 = slot0.gameId
@@ -1689,9 +1692,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.checkEnterGameCnt = slot10
+slot10.checkEnterGameCnt = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = CatchRoguePhaseData
 	slot2 = slot0.gameId
@@ -1737,9 +1740,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getGameCntRepr = slot10
+slot10.getGameCntRepr = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 0
 	slot2 = 0
@@ -1790,9 +1793,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getCurPuppetFinishCount = slot10
+slot10.getCurPuppetFinishCount = slot11
 
-slot10 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -1855,9 +1858,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.getCurCanGetAddOnSet = slot10
+slot10.getCurCanGetAddOnSet = slot11
 
-slot10 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.floorId
 	--- END OF BLOCK #0 ---
@@ -1923,9 +1926,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.canPrepareGame = slot10
+slot10.canPrepareGame = slot11
 
-return slot9
+return slot10
 --- END OF BLOCK #0 ---
 
 

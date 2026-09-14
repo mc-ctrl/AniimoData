@@ -17,23 +17,23 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "tSensorTgtId",
-	type = "int",
 	value = "0",
-	const = 0
+	const = 0,
+	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "tRandomWaitTime",
-	type = "float",
 	value = "0",
-	const = 0
+	const = 0,
+	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
 	name = "tShowExclamation",
-	type = "bool",
 	value = "false",
-	const = false
+	const = false,
+	type = "bool"
 }
 slot4[3] = slot5
 slot3.pars = slot4

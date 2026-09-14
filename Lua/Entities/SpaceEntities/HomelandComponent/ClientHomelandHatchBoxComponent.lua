@@ -1,57 +1,60 @@
---- BLOCK #0 1-103, warpins: 1 ---
+--- BLOCK #0 1-106, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
-slot3 = slot0.getLogger
-slot5 = "ClientHomelandHatchBoxComponent"
-slot6 = "Sandbox"
-slot7 = slot1.ERROR
-slot3 = slot3(slot5, slot6, slot7)
-slot4 = require
-slot6 = "Const.MessageName"
-slot4 = slot4(slot6)
+slot3 = require
+slot5 = "Core.Framework.Class"
+slot3 = slot3(slot5)
+slot4 = slot1.getLogger
+slot6 = "ClientHomelandHatchBoxComponent"
+slot7 = "Sandbox"
+slot8 = slot2.ERROR
+slot4 = slot4(slot6, slot7, slot8)
 slot5 = require
-slot7 = "Core.Timer.TimerManager"
+slot7 = "Const.MessageName"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Common.Time"
+slot8 = "Core.Timer.TimerManager"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Core.Common.Time"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.AnimationUtils"
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.PlayableConst"
+slot11 = "Common.Utils.AnimationUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Core.Common.CallbackHandlerNoGC"
+slot12 = "Common.Const.PlayableConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.NoticeDef"
+slot13 = "Core.Common.CallbackHandlerNoGC"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.homeland_config_data"
+slot14 = "Common.NoticeDef"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Utils.HomeLandUtils"
+slot15 = "Data.homeland_config_data"
 slot13 = slot13(slot15)
-slot14 = slot2.Component
-slot16 = "ClientHomelandHatchBoxComponent"
+slot14 = require
+slot16 = "Common.Utils.HomeLandUtils"
 slot14 = slot14(slot16)
-slot15 = 2000
-slot16 = 3000
-slot17 = 2500
-slot18 = 3000
+slot15 = slot3.Component
+slot17 = "ClientHomelandHatchBoxComponent"
+slot15 = slot15(slot17)
+slot16 = 2000
+slot17 = 3000
+slot18 = 2500
+slot19 = 3000
 
-slot19 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot0.hatchBoxesInfo = slot1
@@ -85,9 +88,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.ctor = slot19
+slot15.ctor = slot20
 
-slot19 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.tickHatchBoxesTimer
 	--- END OF BLOCK #0 ---
@@ -147,9 +150,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.destroy = slot19
+slot15.destroy = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -158,9 +161,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.postInit = slot19
+slot15.postInit = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.m_setHatchBoxesInfo
@@ -175,9 +178,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.EVENT_SetHatchBoxesInfo = slot19
+slot15.EVENT_SetHatchBoxesInfo = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -242,9 +245,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.m_setHatchBoxesInfo = slot19
+slot15.m_setHatchBoxesInfo = slot20
 
-slot19 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.hatchBoxesInfo
 	--- END OF BLOCK #0 ---
@@ -368,9 +371,9 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot14.m_setSingleHatchBoxesInfo = slot19
+slot15.m_setSingleHatchBoxesInfo = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.hatchBoxesInfo
 	--- END OF BLOCK #0 ---
@@ -399,9 +402,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.getHatchBoxInfo = slot19
+slot15.getHatchBoxInfo = slot20
 
-slot19 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Time
 	slot1 = slot1.secondCache
@@ -633,9 +636,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.m_tickHatchBoxesUpdate = slot19
+slot15.m_tickHatchBoxesUpdate = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.client_hatchBoxesInfo
 	--- END OF BLOCK #0 ---
@@ -704,9 +707,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.m_setClientHatchBoxesInfo = slot19
+slot15.m_setClientHatchBoxesInfo = slot20
 
-slot19 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.client_hatchBoxesInfo
 	--- END OF BLOCK #0 ---
@@ -789,9 +792,9 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot14.m_setClientSingleHatchBoxesInfo = slot19
+slot15.m_setClientSingleHatchBoxesInfo = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.client_hatchBoxesInfo
 	--- END OF BLOCK #0 ---
@@ -820,9 +823,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.getClientHatchBoxInfo = slot19
+slot15.getClientHatchBoxInfo = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.logger
 	slot4 = slot2
@@ -845,7 +848,7 @@ slot19 = function(slot0, slot1)
 
 
 	--- BLOCK #1 12-12, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -915,9 +918,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.RPC_SC_UpdateHatchPetEggInfo = slot19
+slot15.RPC_SC_UpdateHatchPetEggInfo = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.logger
 	slot4 = slot2
@@ -1010,9 +1013,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.RPC_SC_DeleteHatchPetEggInfo = slot19
+slot15.RPC_SC_DeleteHatchPetEggInfo = slot20
 
-slot19 = function(slot0, slot1, slot2, slot3)
+slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
@@ -1032,9 +1035,9 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.reqStartHatchPetEgg = slot19
+slot15.reqStartHatchPetEgg = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1052,9 +1055,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.reqQuitHatchPetEgg = slot19
+slot15.reqQuitHatchPetEgg = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1135,9 +1138,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.reqHatchFondlePetEgg = slot19
+slot15.reqHatchFondlePetEgg = slot20
 
-slot19 = function(slot0, slot1, slot2, slot3)
+slot20 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
@@ -1244,28 +1247,173 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot14.reqItemSpeedUp = slot19
+slot15.reqItemSpeedUp = slot20
 
-slot19 = function(slot0, slot1)
-	--- BLOCK #0 1-12, warpins: 1 ---
+slot20 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = {
 		isHome = true
 	}
 
 	slot3 = function(slot0)
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot1 = pg
-		slot1 = slot1.me
-		slot3 = slot1
-		slot1 = slot1.serverMsg
-		slot4 = "RPC_CS_HomelandGetHatchPetEgg"
-		slot5 = hatchOrnamentId
-		slot6 = slot0
+		slot1 = slot1.game
+		slot1 = slot1.soulEggEvolution
+		--- END OF BLOCK #0 ---
 
-		slot1(slot3, slot4, slot5, slot6)
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-13, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.soulEggEvolution
+		slot3 = slot1
+		slot1 = slot1.getChooseEpoch
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 14-14, warpins: 2 ---
+		slot1 = 0
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 15-25, warpins: 2 ---
+		slot2 = pg
+		slot2 = slot2.me
+		slot4 = slot2
+		slot2 = slot2.serverMsg
+		slot5 = "RPC_CS_HomelandGetHatchPetEgg"
+		slot6 = hatchOrnamentId
+		slot7 = slot0
+
+		slot8 = function(slot0)
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot1 = NoticeDef
+			slot1 = slot1.SUCCESS
+
+			--- END OF BLOCK #0 ---
+
+			if slot0 == slot1 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-5, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 6-10, warpins: 2 ---
+			slot1 = pg
+			slot1 = slot1.game
+			slot1 = slot1.soulEggEvolution
+			--- END OF BLOCK #2 ---
+
+			slot1 = if slot1 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 11-17, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.game
+			slot1 = slot1.soulEggEvolution
+			slot3 = slot1
+			slot1 = slot1.discardPendingHatchRequest
+			slot4 = chooseEpoch
+
+			slot1(slot3, slot4)
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 18-27, warpins: 2 ---
+			slot1 = pg
+			slot1 = slot1.global
+			slot1 = slot1.showBubbleMessage
+			slot3 = slot0
+
+			slot1(slot3)
+
+			slot1 = pg
+			slot1 = slot1.game
+			slot1 = slot1.soulEggEvolution
+			--- END OF BLOCK #4 ---
+
+			slot1 = if slot1 then
+			JUMP TO BLOCK #5
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #5 28-36, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.game
+			slot1 = slot1.soulEggEvolution
+			slot3 = slot1
+			slot1 = slot1.getChooseEpoch
+			slot1 = slot1(slot3)
+			slot2 = chooseEpoch
+			--- END OF BLOCK #5 ---
+
+			if slot1 == slot2 then
+			JUMP TO BLOCK #6
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #6 37-42, warpins: 1 ---
+			slot1 = pg
+			slot1 = slot1.game
+			slot1 = slot1.soulEggEvolution
+			slot3 = slot1
+			slot1 = slot1.cancelChooseCube
+
+			slot1(slot3)
+
+			--- END OF BLOCK #6 ---
+
+			FLOW; TARGET BLOCK #7
+
+
+			--- BLOCK #7 43-43, warpins: 3 ---
+			return
+			--- END OF BLOCK #7 ---
+
+
+
+		end
+
+		slot2(slot4, slot5, slot6, slot7, slot8)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -1284,68 +1432,35 @@ slot19 = function(slot0, slot1)
 
 	slot2.onCancel = slot3
 	slot3 = HomeLandUtils
-	slot3 = slot3.getHatchBoxItemInfo
+	slot3 = slot3.getHatchBoxChooseCubeItemInfo
 	slot5 = slot1
 	slot3 = slot3(slot5)
-	slot4 = {}
+
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 13-15, warpins: 1 ---
-	slot5 = slot3.envObjTemplateId
+	--- BLOCK #1 12-13, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-16, warpins: 2 ---
-	slot5 = 0
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 17-19, warpins: 2 ---
+	--- BLOCK #2 14-30, warpins: 2 ---
+	slot4 = {}
+	slot5 = slot3.envObjTemplateId
 	slot4.templateId = slot5
-	--- END OF BLOCK #3 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 20-22, warpins: 1 ---
 	slot5 = slot3.itemId
-	--- END OF BLOCK #4 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 23-23, warpins: 2 ---
-	slot5 = 0
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 24-34, warpins: 2 ---
 	slot4.eggItemId = slot5
+	slot5 = slot3.prefabResID
+	slot4.prefabResID = slot5
 	slot5 = pg
 	slot5 = slot5.game
 	slot5 = slot5.soulEggEvolution
@@ -1357,15 +1472,15 @@ slot19 = function(slot0, slot1)
 	slot5(slot7, slot8, slot9)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot14.reqGetHatchPetEgg = slot19
+slot15.reqGetHatchPetEgg = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_unlockInteractTickSeconds
 	--- END OF BLOCK #0 ---
@@ -1384,11 +1499,12 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-17, warpins: 2 ---
+	--- BLOCK #2 5-18, warpins: 2 ---
 	slot0.m_unlockInteractTickSeconds = slot2
 	slot2 = slot0.m_unlockInteractTickSeconds
 	slot3 = Time
-	slot3 = slot3.millisecondCache
+	slot3 = slot3.realSecondCache
+	slot3 = slot3 * 1000
 	slot2[slot1] = slot3
 	slot4 = slot0
 	slot2 = slot0.playFondlePetEggAnimation
@@ -1407,7 +1523,7 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 18-19, warpins: 1 ---
+	--- BLOCK #3 19-20, warpins: 1 ---
 	slot2 = Const
 	slot2 = slot2.HatchBoxLoveVfxOffset
 	--- END OF BLOCK #3 ---
@@ -1415,7 +1531,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-29, warpins: 2 ---
+	--- BLOCK #4 21-30, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.home
@@ -1434,9 +1550,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.startPlayFondleModelVFX = slot19
+slot15.startPlayFondleModelVFX = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_unlockInteractTickSeconds
 	--- END OF BLOCK #0 ---
@@ -1460,9 +1576,10 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 8-17, warpins: 1 ---
+	--- BLOCK #2 8-18, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.millisecondCache
+	slot2 = slot2.realSecondCache
+	slot2 = slot2 * 1000
 	slot3 = slot0.m_unlockInteractTickSeconds
 	slot3 = slot3[slot1]
 	slot2 = slot2 - slot3
@@ -1478,12 +1595,75 @@ slot19 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 18-21, warpins: 1 ---
+	--- BLOCK #3 19-22, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.resetPlayFondleModelVFX
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 23-23, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot15.tryResetPlayFondleModelVFX = slot20
+
+slot20 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.m_unlockInteractTickSeconds
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = slot0.m_unlockInteractTickSeconds
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 8-18, warpins: 1 ---
+	slot2 = Time
+	slot2 = slot2.realSecondCache
+	slot2 = slot2 * 1000
+	slot3 = slot0.m_unlockInteractTickSeconds
+	slot3 = slot3[slot1]
+	slot2 = slot2 - slot3
+	slot5 = slot0
+	slot3 = slot0.getTotalFondleTime
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	if slot3 <= slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-21, warpins: 1 ---
+	slot2 = slot0.m_unlockInteractTickSeconds
+	slot3 = nil
+	slot2[slot1] = slot3
 
 	--- END OF BLOCK #3 ---
 
@@ -1498,71 +1678,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.tryResetPlayFondleModelVFX = slot19
+slot15.resetPlayFondleModelVFX = slot20
 
-slot19 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.m_unlockInteractTickSeconds
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot2 = slot0.m_unlockInteractTickSeconds
-	slot2 = slot2[slot1]
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 8-17, warpins: 1 ---
-	slot2 = Time
-	slot2 = slot2.millisecondCache
-	slot3 = slot0.m_unlockInteractTickSeconds
-	slot3 = slot3[slot1]
-	slot2 = slot2 - slot3
-	slot5 = slot0
-	slot3 = slot0.getTotalFondleTime
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #2 ---
-
-	if slot3 <= slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 18-20, warpins: 1 ---
-	slot2 = slot0.m_unlockInteractTickSeconds
-	slot3 = nil
-	slot2[slot1] = slot3
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 21-21, warpins: 4 ---
-	return
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot14.resetPlayFondleModelVFX = slot19
-
-slot19 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = FONDLE_ANI_DURATION_SECOND
 
@@ -1573,9 +1691,9 @@ slot19 = function(slot0)
 
 end
 
-slot14.getTotalFondleTime = slot19
+slot15.getTotalFondleTime = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_unlockInteractTickSeconds
 	--- END OF BLOCK #0 ---
@@ -1622,9 +1740,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot14.getIsPlayingFondleAnis = slot19
+slot15.getIsPlayingFondleAnis = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1633,7 +1751,7 @@ slot19 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
@@ -1646,40 +1764,27 @@ slot19 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 10-15, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.eModel
-	slot2 = slot2.motionComponent
-	--- END OF BLOCK #2 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 16-22, warpins: 1 ---
+	--- BLOCK #2 10-17, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.eModel
-	slot2 = slot2.motionComponent
 	slot4 = slot2
 	slot2 = slot2.DisableSteering
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MOTION
 
-	slot2(slot4)
+	slot2(slot4, slot5)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #4 23-56, warpins: 4 ---
+	--- BLOCK #3 18-51, warpins: 3 ---
 	slot2 = CallbackHandlerNoGC
 	slot2 = slot2.newOnceCSharpCb
 	slot4 = slot0
@@ -1716,15 +1821,15 @@ slot19 = function(slot0, slot1)
 	slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot14.playFondlePetEggAnimation = slot19
+slot15.playFondlePetEggAnimation = slot20
 
-slot19 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = HomelandConfigData
 	slot2 = slot2.hatchBoxLoveVfxOffset
@@ -1822,7 +1927,7 @@ slot19 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
@@ -1835,50 +1940,37 @@ slot19 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 56-61, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.eModel
-	slot3 = slot3.motionComponent
-	--- END OF BLOCK #7 ---
-
-	slot3 = if slot3 then
 	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 62-68, warpins: 1 ---
+	--- BLOCK #7 56-63, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
 	slot3 = slot3.eModel
-	slot3 = slot3.motionComponent
 	slot5 = slot3
 	slot3 = slot3.DefaultSteeringMode
+	slot6 = Const
+	slot6 = slot6.COMPONENT_MOTION
 
-	slot3(slot5)
+	slot3(slot5, slot6)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #9 69-69, warpins: 4 ---
+	--- BLOCK #8 64-64, warpins: 3 ---
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot14.onSleAnimationEnd = slot19
+slot15.onSleAnimationEnd = slot20
 
-return slot14
+return slot15
 --- END OF BLOCK #0 ---
 
 

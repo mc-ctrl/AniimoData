@@ -481,9 +481,9 @@ slot12 = function(slot0, slot1)
 		--- BLOCK #1 5-10, warpins: 1 ---
 		slot1 = accum
 		slot2 = {
+			rounds = 0,
 			max_us = 0,
-			total_us = 0,
-			rounds = 0
+			total_us = 0
 		}
 		slot3 = math
 		slot3 = slot3.huge

@@ -1,4 +1,4 @@
---- BLOCK #0 1-64, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.Helper.UIComponent"
 slot0 = slot0(slot2)
@@ -37,8 +37,9 @@ slot9 = slot9(slot11)
 slot10 = require
 slot12 = "Core.Common.CallbackHandler"
 slot10 = slot10(slot12)
+slot11 = UIUtils
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -54,9 +55,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.findObjects = slot11
+slot2.findObjects = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-232, warpins: 1 ---
 	slot1 = slot0.container
 	slot1 = slot1.content
@@ -550,9 +551,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.registerObjectInner = slot11
+slot2.registerObjectInner = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -618,9 +619,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.refreshConsoleBarState = slot11
+slot2.refreshConsoleBarState = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.uWidget
 	--- END OF BLOCK #0 ---
@@ -658,9 +659,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.initView = slot11
+slot2.initView = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.bgBlurUIBlurEffect
 	--- END OF BLOCK #0 ---
@@ -732,9 +733,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.refreshComponentVisible = slot11
+slot2.refreshComponentVisible = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -761,9 +762,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onHide = slot11
+slot2.onHide = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -780,9 +781,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onShow = slot11
+slot2.onShow = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0.container
 	slot5 = slot3
@@ -859,9 +860,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot2.showRestraint = slot11
+slot2.showRestraint = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -986,7 +987,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 46-56, warpins: 2 ---
+	--- BLOCK #11 46-62, warpins: 2 ---
 	slot3(slot5, slot6, slot7)
 
 	slot5 = slot0
@@ -1001,6 +1002,14 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
+	slot3 = UIUtils
+	slot3 = slot3.ScaleVisible
+	slot5 = slot0.rootUComponent
+	slot5 = slot5.gameObject
+	slot6 = true
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #11 ---
 
 	slot2 = if slot2 then
@@ -1010,7 +1019,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #12 57-58, warpins: 1 ---
+	--- BLOCK #12 63-64, warpins: 1 ---
 	slot3 = slot2
 
 	slot3()
@@ -1020,7 +1029,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 59-59, warpins: 2 ---
+	--- BLOCK #13 65-65, warpins: 2 ---
 	return
 	--- END OF BLOCK #13 ---
 
@@ -1028,9 +1037,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot2.showRestraintInternal = slot11
+slot2.showRestraintInternal = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot0.showOrder = slot1
@@ -1328,9 +1337,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.initAllElementRelationPanel = slot11
+slot2.initAllElementRelationPanel = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1639,9 +1648,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.refreshFocusedElementRelationPanel = slot11
+slot2.refreshFocusedElementRelationPanel = slot12
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1676,7 +1685,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.renderBtnToolTip = slot11
+slot2.renderBtnToolTip = slot12
 
 return slot2
 --- END OF BLOCK #0 ---

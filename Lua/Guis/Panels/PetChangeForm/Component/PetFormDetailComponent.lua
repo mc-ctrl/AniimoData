@@ -1,4 +1,4 @@
---- BLOCK #0 1-48, warpins: 1 ---
+--- BLOCK #0 1-45, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -15,26 +15,23 @@ slot3 = require
 slot5 = "Utils.LuaUIUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.NoticeDef"
+slot6 = "Const.UIConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Common.NoticeDef"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.pet_avatar_data"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Guis.Utils.PetResearchUtils"
-slot8 = slot8(slot10)
-slot9 = slot1.LightClass
-slot11 = "PetFormDetailComponent"
-slot12 = slot2
-slot9 = slot9(slot11, slot12)
+slot8 = slot1.LightClass
+slot10 = "PetFormDetailComponent"
+slot11 = slot2
+slot8 = slot8(slot10, slot11)
 
-slot10 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -74,9 +71,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.findObjects = slot10
+slot8.findObjects = slot9
 
-slot10 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.btnCloseFullScreen
 
@@ -147,9 +144,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.initView = slot10
+slot8.initView = slot9
 
-slot10 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -164,9 +161,9 @@ slot10 = function(slot0)
 
 end
 
-slot9.onDestroy = slot10
+slot8.onDestroy = slot9
 
-slot10 = function(slot0, slot1, slot2, slot3)
+slot9 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-36, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -261,7 +258,7 @@ slot10 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #5 56-71, warpins: 3 ---
-	slot13 = PetResearchUtils
+	slot13 = LuaUIUtils
 	slot13 = slot13.renderFormItem
 	slot15 = slot9
 	slot16 = slot3.templateId
@@ -357,96 +354,122 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot11 = if slot11 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #6 72-76, warpins: 1 ---
-	slot13 = PetAvatarData
-	slot14 = slot3.templateId
-	slot13 = slot13[slot14]
+	--- BLOCK #6 72-85, warpins: 1 ---
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot6
+	slot16 = LuaUIUtils
+	slot16 = slot16.getPetFormName
+	slot18 = slot3.templateId
+	MULTRES = slot16(slot18)
+
+	slot13(slot15, MULTRES)
+
+	slot13 = slot10.icon
+	slot7.url = slot13
+	slot13 = slot10.ownNum
+	slot14 = slot10.needNum
 	--- END OF BLOCK #6 ---
 
-	slot13 = if slot13 then
+	if slot13 < slot14 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 77-83, warpins: 1 ---
-	slot13 = PetAvatarData
-	slot14 = slot3.templateId
-	slot13 = slot13[slot14]
-	slot13 = slot13[0]
-	slot13 = slot13.formName
+	--- BLOCK #7 86-89, warpins: 1 ---
+	slot13 = slot10.altOwnNum
+	slot14 = 0
 	--- END OF BLOCK #7 ---
 
-	slot13 = if not slot13 then
+	if slot13 <= slot14 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 84-84, warpins: 2 ---
-	slot13 = ""
+	--- BLOCK #8 90-91, warpins: 2 ---
+	slot13 = false
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 85-107, warpins: 2 ---
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot6
-	slot17 = pg
-	slot17 = slot17.getLocalizationText
-	slot19 = slot13
-	MULTRES = slot17(slot19)
-
-	slot14(slot16, MULTRES)
-
-	slot14 = slot10.icon
-	slot7.url = slot14
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot8
-	slot17 = tostring
-	slot19 = slot10.ownNum
-	slot20 = slot10.altOwnNum
-	slot19 = slot19 + slot20
-	slot17 = slot17(slot19)
-	slot18 = "/"
-	slot19 = tostring
-	slot21 = slot10.needNum
-	MULTRES = slot19(slot21)
-
-	slot14(slot16, slot17, slot18, MULTRES)
-
+	--- BLOCK #9 92-92, warpins: 1 ---
+	slot13 = true
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 108-109, warpins: 2 ---
-	return
+	--- BLOCK #10 93-94, warpins: 2 ---
 	--- END OF BLOCK #10 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 95-99, warpins: 1 ---
+	slot14 = UIConst
+	slot14 = slot14.ITEM_STATE
+	slot14 = slot14.EXCHANGE
+	--- END OF BLOCK #11 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 100-102, warpins: 2 ---
+	slot14 = UIConst
+	slot14 = slot14.ITEM_STATE
+	slot14 = slot14.FULL
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 103-111, warpins: 2 ---
+	slot15 = LuaUIUtils
+	slot15 = slot15.renderConsumeText
+	slot17 = slot8
+	slot18 = slot10.ownNum
+	slot19 = slot10.altOwnNum
+	slot18 = slot18 + slot19
+	slot19 = slot10.needNum
+	slot20 = slot14
+
+	slot15(slot17, slot18, slot19, slot20)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 112-113, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot9.onRenderCardItem = slot10
+slot8.onRenderCardItem = slot9
 
-slot10 = function(slot0, slot1)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = slot1.templateId
-	slot3 = Utils
-	slot3 = slot3.isLabelMagic
-	slot5 = slot1.label
-	slot3 = slot3(slot5)
-	slot0._isMagic = slot3
 	slot3 = slot0.model
 	slot5 = slot3
 	slot3 = slot3.getAllTargetInfo
@@ -477,9 +500,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.openPetFormDetail = slot10
+slot8.openPetFormDetail = slot9
 
-slot10 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._isMagic
 	--- END OF BLOCK #0 ---
@@ -520,9 +543,9 @@ slot10 = function(slot0, slot1)
 
 end
 
-slot9.canChangeMagic = slot10
+slot8.canChangeMagic = slot9
 
-return slot9
+return slot8
 --- END OF BLOCK #0 ---
 
 

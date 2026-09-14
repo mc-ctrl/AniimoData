@@ -1,4 +1,4 @@
---- BLOCK #0 1-23, warpins: 1 ---
+--- BLOCK #0 1-25, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -128,10 +128,14 @@ slot3 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 44-47, warpins: 2 ---
+	--- BLOCK #11 44-51, warpins: 2 ---
 	slot0.interactAnimeGroup = slot3
 	slot3 = slot2.prefabPath
 	slot0.prefabPath = slot3
+	slot5 = slot0
+	slot3 = slot0.buildAnchorCacheKey
+	slot3 = slot3(slot5)
+	slot0.anchorCacheKey = slot3
 
 	return
 	--- END OF BLOCK #11 ---
@@ -141,6 +145,60 @@ slot3 = function(slot0, slot1, slot2)
 end
 
 slot2.ctor = slot3
+
+slot3 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = tostring
+	slot3 = slot0.skeletonName
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot3 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-11, warpins: 2 ---
+	slot1 = slot1(slot3)
+	slot2 = "|"
+	slot3 = tostring
+	slot5 = slot0.offset
+	--- END OF BLOCK #2 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot5 = ""
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-15, warpins: 2 ---
+	slot3 = slot3(slot5)
+	slot1 = slot1 .. slot2 .. slot3
+
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot2.buildAnchorCacheKey = slot3
 
 slot3 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
@@ -271,13 +329,8 @@ end
 
 slot2.checkCanShow = slot3
 
-slot3 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.getEntityByGlobalId
-	slot3 = slot0.globalId
-	slot1 = slot1(slot3)
-
+slot3 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -287,92 +340,113 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	return
+	--- BLOCK #1 3-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.getEntityByGlobalId
+	slot4 = slot0.globalId
+	slot2 = slot2(slot4)
+	slot1 = slot2
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-11, warpins: 2 ---
-	slot2 = nil
-	slot3 = slot0.skeletonName
+	--- BLOCK #2 8-9, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-14, warpins: 1 ---
-	slot3 = slot1.eModel
+	--- BLOCK #3 10-10, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #3 ---
 
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-14, warpins: 2 ---
+	slot2 = nil
+	slot3 = slot0.skeletonName
+	--- END OF BLOCK #4 ---
+
 	slot3 = if slot3 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 15-23, warpins: 1 ---
+	--- BLOCK #5 15-17, warpins: 1 ---
 	slot3 = slot1.eModel
-	slot3 = slot3.modelView
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 18-25, warpins: 1 ---
+	slot3 = slot1.eModel
 	slot3 = slot3.skeletonView
 	slot5 = slot3
 	slot3 = slot3.TryGetBonePos
 	slot6 = slot0.skeletonName
 	slot3, slot4 = slot3(slot5, slot6)
-	--- END OF BLOCK #4 ---
-
-	if slot3 == true then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 24-24, warpins: 1 ---
-	slot2 = slot4
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 25-26, warpins: 4 ---
 	--- END OF BLOCK #6 ---
 
-	if slot2 == nil then
+	if slot3 == true then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 27-30, warpins: 1 ---
-	slot3 = 0
-	slot4 = slot1.eModel
+	--- BLOCK #7 26-26, warpins: 1 ---
+	slot2 = slot4
 	--- END OF BLOCK #7 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #8
-	else
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 27-28, warpins: 4 ---
+	--- END OF BLOCK #8 ---
+
+	if slot2 == nil then
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 31-32, warpins: 1 ---
+	--- BLOCK #9 29-32, warpins: 1 ---
+	slot3 = 0
+	slot4 = slot1.eModel
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 33-34, warpins: 1 ---
 	slot4 = slot1.eModel
 	slot3 = slot4.height
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 33-41, warpins: 2 ---
+	--- BLOCK #11 35-43, warpins: 2 ---
 	slot6 = slot1
 	slot4 = slot1.getPosition
 	slot4 = slot4(slot6)
@@ -382,34 +456,34 @@ slot3 = function(slot0)
 	slot9 = 0
 	slot5 = slot5(slot7, slot8, slot9)
 	slot2 = slot4 + slot5
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 42-44, warpins: 2 ---
-	slot3 = slot0.offset
-	--- END OF BLOCK #10 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 45-46, warpins: 1 ---
-	slot3 = slot0.offset
-	slot2 = slot2 + slot3
-
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 47-47, warpins: 2 ---
-	return slot2
+	--- BLOCK #12 44-46, warpins: 2 ---
+	slot3 = slot0.offset
 	--- END OF BLOCK #12 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 47-48, warpins: 1 ---
+	slot3 = slot0.offset
+	slot2 = slot2 + slot3
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 49-49, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #14 ---
 
 
 

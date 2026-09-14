@@ -54,10 +54,10 @@ slot19 = 180
 slot20 = "$UI_Icon_Dizi.png"
 slot21 = 46
 slot22 = {
-	FLUTE_REPLY = 3,
 	RECEIVE_REPLY = 2,
 	RECEIVE_FLUTE = 1,
-	PLAY_FLUTE = 0
+	PLAY_FLUTE = 0,
+	FLUTE_REPLY = 3
 }
 slot23 = {}
 slot24 = slot12.GENDER_TYPE_FEMALE
@@ -510,10 +510,14 @@ slot24 = function(slot0, slot1, slot2)
 	slot8 = true
 
 	slot9 = function(slot0)
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot1 = AvatarPresetData
-		slot2 = slot0.avatarPresetKey
-		slot1 = slot1[slot2]
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.avatar
+		slot3 = slot1
+		slot1 = slot1.getAvatarPresetData
+		slot4 = slot0.avatarPresetKey
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #0 ---
 
 		slot1 = if not slot1 then
@@ -523,14 +527,14 @@ slot24 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #1 6-6, warpins: 1 ---
+		--- BLOCK #1 10-10, warpins: 1 ---
 		slot1 = {}
 		--- END OF BLOCK #1 ---
 
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 7-9, warpins: 2 ---
+		--- BLOCK #2 11-13, warpins: 2 ---
 		slot2 = slot1.templateId
 		--- END OF BLOCK #2 ---
 
@@ -541,14 +545,14 @@ slot24 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #3 10-10, warpins: 1 ---
+		--- BLOCK #3 14-14, warpins: 1 ---
 		slot2 = 0
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 11-12, warpins: 2 ---
+		--- BLOCK #4 15-16, warpins: 2 ---
 		--- END OF BLOCK #4 ---
 
 		if slot2 == 3 then
@@ -558,7 +562,7 @@ slot24 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #5 13-16, warpins: 1 ---
+		--- BLOCK #5 17-20, warpins: 1 ---
 		slot3 = Const
 		slot3 = slot3.GENDER_TYPE_FEMALE
 		--- END OF BLOCK #5 ---
@@ -570,7 +574,7 @@ slot24 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #6 17-18, warpins: 2 ---
+		--- BLOCK #6 21-22, warpins: 2 ---
 		slot3 = Const
 		slot3 = slot3.GENDER_TYPE_MALE
 		--- END OF BLOCK #6 ---
@@ -578,7 +582,7 @@ slot24 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 19-33, warpins: 2 ---
+		--- BLOCK #7 23-37, warpins: 2 ---
 		slot4 = self
 		slot6 = slot4
 		slot4 = slot4.handleFluteEffect
@@ -603,7 +607,7 @@ slot24 = function(slot0, slot1, slot2)
 		end
 
 
-		--- BLOCK #8 34-44, warpins: 1 ---
+		--- BLOCK #8 38-48, warpins: 1 ---
 		slot4 = pg
 		slot4 = slot4.game
 		slot4 = slot4.audio
@@ -622,7 +626,7 @@ slot24 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 45-45, warpins: 2 ---
+		--- BLOCK #9 49-49, warpins: 2 ---
 		return
 		--- END OF BLOCK #9 ---
 
@@ -867,7 +871,7 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-30, warpins: 2 ---
+	--- BLOCK #2 14-29, warpins: 2 ---
 	slot3 = {}
 	slot4 = pg
 	slot4 = slot4.me
@@ -877,178 +881,116 @@ slot24 = function(slot0, slot1)
 	slot0.inviteInfoSelf = slot3
 	slot3 = true
 	slot0.isPlaying = slot3
-	slot3 = AppearanceAction
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.RIDING_ST
-	slot4 = slot4(slot6)
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.RIDING_ST
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 31-34, warpins: 1 ---
-	slot4 = ClientConst
-	slot4 = slot4.PlayFluteSitActionId
+	--- BLOCK #3 30-43, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.playAnimation
+	slot6 = PlayableConst
+	slot6 = slot6.Sit_Flute_Loop
+	slot7 = true
+	slot8 = nil
+	slot9 = true
+	slot10 = PlayableConst
+	slot10 = slot10.AnimationLayer
+	slot10 = slot10.HUMAN_LAYER_FULLBODY
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
 	--- END OF BLOCK #3 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 35-36, warpins: 2 ---
-	slot4 = ClientConst
-	slot4 = slot4.PlayFluteStandActionId
+	--- BLOCK #4 44-50, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.playTrivialAnimation
+	slot6 = PlayableConst
+	slot6 = slot6.Flute_Skill_Cure_StandLoop
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 37-44, warpins: 2 ---
-	slot3 = slot3[slot4]
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.RIDING_ST
-	slot4 = slot4(slot6)
+	--- BLOCK #5 51-62, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.serverMsg
+	slot6 = "RPC_CS_PlayAppearanceAction"
+	slot7 = pg
+	slot7 = slot7.me
+	slot9 = slot7
+	slot7 = slot7.RIDING_ST
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #5 ---
 
-	slot4 = if slot4 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 45-58, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.playAnimation
-	slot7 = PlayableConst
-	slot7 = slot7.Sit_Flute_Loop
-	slot8 = true
-	slot9 = nil
-	slot10 = true
-	slot11 = PlayableConst
-	slot11 = slot11.AnimationLayer
-	slot11 = slot11.HUMAN_LAYER_FULLBODY
-
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
-
+	--- BLOCK #6 63-66, warpins: 1 ---
+	slot7 = ClientConst
+	slot7 = slot7.PlayFluteSitActionId
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 59-65, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.playTrivialAnimation
-	slot7 = PlayableConst
-	slot7 = slot7.Flute_Skill_Cure_StandLoop
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #7 67-68, warpins: 2 ---
+	slot7 = ClientConst
+	slot7 = slot7.PlayFluteStandActionId
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 66-77, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.serverMsg
-	slot7 = "RPC_CS_PlayAppearanceAction"
-	slot8 = pg
-	slot8 = slot8.me
-	slot10 = slot8
-	slot8 = slot8.RIDING_ST
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #8 ---
+	--- BLOCK #8 69-100, warpins: 2 ---
+	slot8 = ""
+	slot9 = false
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
+	slot3(slot5, slot6, slot7, slot8, slot9)
 
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showCountDown
+	slot6 = MAX_PLAY_FLUTE_TIME
+	slot7 = ClientConst
+	slot7 = slot7.PlayFluteStandActionId
+	slot8 = {}
+	slot9 = FLUTE_ICON_URL
+	slot8.overrideIcon = slot9
 
-	--- BLOCK #9 78-81, warpins: 1 ---
-	slot8 = ClientConst
-	slot8 = slot8.PlayFluteSitActionId
-	--- END OF BLOCK #9 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 82-83, warpins: 2 ---
-	slot8 = ClientConst
-	slot8 = slot8.PlayFluteStandActionId
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 84-89, warpins: 2 ---
-	slot9 = ""
-	slot10 = false
-
-	slot4(slot6, slot7, slot8, slot9, slot10)
-
-	slot4 = slot3.actionSound
-	--- END OF BLOCK #11 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 90-95, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.playSoundEvent
-	slot7 = slot3.actionSound
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 96-124, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.tips
-	slot6 = slot4
-	slot4 = slot4.showCountDown
-	slot7 = MAX_PLAY_FLUTE_TIME
-	slot8 = ClientConst
-	slot8 = slot8.PlayFluteStandActionId
-	slot9 = {}
-	slot10 = FLUTE_ICON_URL
-	slot9.overrideIcon = slot10
-
-	slot10 = function()
+	slot9 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -1063,9 +1005,9 @@ slot24 = function(slot0, slot1)
 
 	end
 
-	slot9.closeFunc = slot10
+	slot8.closeFunc = slot9
 
-	slot10 = function()
+	slot9 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -1081,85 +1023,95 @@ slot24 = function(slot0, slot1)
 
 	end
 
-	slot9.finishCb = slot10
+	slot8.finishCb = slot9
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot3(slot5, slot6, slot7, slot8)
 
-	slot6 = slot0
-	slot4 = slot0.handleFluteEffect
-	slot7 = true
-	slot8 = slot0.inviteInfoSelf
-	slot8 = slot8.reqId
-	slot9 = FLUTE_EFFECT_TYPE
-	slot9 = slot9.PLAY_FLUTE
-	slot10 = slot0.selfFluteType
+	slot5 = slot0
+	slot3 = slot0.handleFluteEffect
+	slot6 = true
+	slot7 = slot0.inviteInfoSelf
+	slot7 = slot7.reqId
+	slot8 = FLUTE_EFFECT_TYPE
+	slot8 = slot8.PLAY_FLUTE
+	slot9 = slot0.selfFluteType
 
-	slot4(slot6, slot7, slot8, slot9, slot10)
+	slot3(slot5, slot6, slot7, slot8, slot9)
 
-	slot4 = slot0.selfFluteType
-	--- END OF BLOCK #13 ---
+	slot3 = slot0.selfFluteType
+	--- END OF BLOCK #8 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #14
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #14 125-134, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.audio
-	slot6 = slot4
-	slot4 = slot4.playEvent
-	slot7 = FLUTE_SOUND
-	slot8 = slot0.selfFluteType
-	slot7 = slot7[slot8]
-	slot7 = slot7[1]
+	--- BLOCK #9 101-110, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.audio
+	slot5 = slot3
+	slot3 = slot3.playEvent
+	slot6 = FLUTE_SOUND
+	slot7 = slot0.selfFluteType
+	slot6 = slot6[slot7]
+	slot6 = slot6[1]
 
-	slot4(slot6, slot7)
+	slot3(slot5, slot6)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #15 135-141, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.VehicleInteration
-	slot4 = slot4.view
-	--- END OF BLOCK #15 ---
+	--- BLOCK #10 111-117, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.VehicleInteration
+	slot3 = slot3.view
+	--- END OF BLOCK #10 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #16
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #16 142-151, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.VehicleInteration
-	slot4 = slot4.view
-	slot4 = slot4.interListUList
-	slot6 = slot4
-	slot4 = slot4.SetActive
-	slot7 = false
+	--- BLOCK #11 118-127, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.VehicleInteration
+	slot3 = slot3.view
+	slot3 = slot3.interListUList
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = false
 
-	slot4(slot6, slot7)
+	slot3(slot5, slot6)
 
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #17
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #17 152-153, warpins: 2 ---
+	--- BLOCK #12 128-137, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.showBubbleMessageRaw
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "FLUTE_MATCHING_TOAST"
+	MULTRES = slot5(slot7)
+
+	slot3(MULTRES)
+
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #12 ---
 
 
 

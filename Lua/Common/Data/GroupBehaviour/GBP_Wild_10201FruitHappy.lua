@@ -1,7 +1,7 @@
 --- BLOCK #0 1-108, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_10201FruitHappy",
-	CDAfterEnd = 3
+	CDAfterEnd = 3,
+	behavID = "BP_Wild_GroupBehav_10201FruitHappy"
 }
 slot1 = {}
 slot2 = {

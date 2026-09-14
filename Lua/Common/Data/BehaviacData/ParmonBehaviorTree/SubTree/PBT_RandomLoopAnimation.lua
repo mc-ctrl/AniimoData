@@ -7,9 +7,9 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 6,
-	useForRoute = true,
 	name = "ParmonBehaviorTree/SubTree/PBT_RandomLoopAnimation",
+	useForRoute = true,
+	version = 6,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
@@ -36,18 +36,18 @@ slot6 = {
 slot5.const = slot6
 slot4[2] = slot5
 slot5 = {
-	const = "",
 	type = "string",
 	name = "tAnimState",
-	value = ""
+	value = "",
+	const = ""
 }
 slot4[3] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "1"
+	id = "1",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -56,8 +56,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Assignment",
-	id = "5"
+	id = "5",
+	class = "Assignment"
 }
 slot8 = {}
 slot9 = {
@@ -95,8 +95,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "4"
+	id = "4",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

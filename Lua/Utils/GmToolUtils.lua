@@ -1,138 +1,199 @@
---- BLOCK #0 1-2502, warpins: 1 ---
+--- BLOCK #0 1-4607, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
-slot2 = slot0.getLogger
-slot4 = "GmToolUtils"
+slot2 = require
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.ClientUtils"
+slot5 = "GameApp.DialogueGraph.DialogueGraphRuntime.Core.Performance"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.LuaUIUtils"
+slot6 = "Utils.PrefsCacheUtils"
 slot4 = slot4(slot6)
-slot5 = require
-slot7 = "Common.Const.Const"
+slot5 = slot1.getLogger
+slot7 = "GmToolUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.ClientConst"
+slot8 = "Utils.ClientUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientSwitch"
+slot9 = "Utils.LuaUIUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Core.Common.Switch"
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Core.Common.CallbackHandler"
+slot11 = "Const.ClientConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.EventConst"
+slot12 = "Common.ClientSwitch"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Const.UIConst"
+slot13 = "Core.Common.Switch"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.MessageName"
+slot14 = "Core.Common.CallbackHandler"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Const.ResPointConst"
+slot15 = "Const.EventConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.GroupBehaviourConst"
+slot16 = "Const.EffectConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Const.AiConst"
+slot17 = "Const.UIConst"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Const.GhostEyeConst"
+slot18 = "Const.MessageName"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "json"
+slot19 = "Common.Const.ResPointConst"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Const.HotkeyConst"
+slot20 = "Common.Const.HomeSeasonCelebrationTestConst"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Core.Client.GlobalData"
+slot21 = "Common.Const.GroupBehaviourConst"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.Data.gm_ist_list"
+slot22 = "Common.Const.AiConst"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Core.Timer.TimerManager"
+slot23 = "Common.Const.GhostEyeConst"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.pet_first_show_data"
+slot24 = "json"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Data.pet_research_content_data"
+slot25 = "Const.HotkeyConst"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "Data.puppet_data"
+slot26 = "Core.Client.GlobalData"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Data.pet_data"
+slot27 = "Common.Data.gm_ist_list"
 slot25 = slot25(slot27)
 slot26 = require
-slot28 = "Data.scene_data"
+slot28 = "Common.Data.ParmonDyeData.dye_config_data"
 slot26 = slot26(slot28)
 slot27 = require
-slot29 = "Data.item_data"
+slot29 = "Core.Timer.TimerManager"
 slot27 = slot27(slot29)
 slot28 = require
-slot30 = "Common.Utils.NavMeshServiceUtils"
+slot30 = "Data.pet_first_show_data"
 slot28 = slot28(slot30)
 slot29 = require
-slot31 = "Data.envobj_data"
+slot31 = "Data.pet_research_content_data"
 slot29 = slot29(slot31)
 slot30 = require
-slot32 = "SDK.Platform.PlatformAchievementRuleConfig"
+slot32 = "Data.guidence_item_data"
 slot30 = slot30(slot32)
 slot31 = require
-slot33 = "SDK.Platform.PlatformAchievementService"
+slot33 = "GameApp.CmdSocket.HomelandDemoCmdImplement"
 slot31 = slot31(slot33)
 slot32 = require
-slot34 = "Common.AI.Behaviac.Debugger"
+slot34 = "Data.puppet_data"
 slot32 = slot32(slot34)
 slot33 = require
-slot35 = "Utils.ClientTextUtils"
+slot35 = "Data.pet_data"
 slot33 = slot33(slot35)
 slot34 = require
-slot36 = "Common.Utils.Utils"
+slot36 = "Data.scene_data"
 slot34 = slot34(slot36)
 slot35 = require
-slot37 = "Common.Utils.ItemUtils"
+slot37 = "Data.item_data"
 slot35 = slot35(slot37)
 slot36 = require
-slot38 = "Data.sys_config_data"
+slot38 = "Data.home_object_data"
 slot36 = slot36(slot38)
 slot37 = require
-slot39 = "Data.scene_data"
+slot39 = "Common.Utils.NavMeshServiceUtils"
 slot37 = slot37(slot39)
 slot38 = require
-slot40 = "GameApp.Qte.ContinuousButtonQteClip"
+slot40 = "Data.envobj_data"
 slot38 = slot38(slot40)
 slot39 = require
-slot41 = "Common.Const.AbilityConst"
+slot41 = "SDK.Platform.PlatformAchievementRuleConfig"
 slot39 = slot39(slot41)
 slot40 = require
-slot42 = "Common.Const.CaptureConst"
+slot42 = "SDK.Platform.PlatformAchievementService"
 slot40 = slot40(slot42)
-slot41 = CS
-slot41 = slot41.FunPlus
-slot41 = slot41.WorldX
-slot41 = slot41.Ability
-slot41 = slot41.AbilityDataInspect
-slot42 = CS
-slot42 = slot42.FunPlus
-slot42 = slot42.WorldX
-slot42 = slot42.Ability
-slot42 = slot42.AbilityAutoTest
-slot43 = {
+slot41 = require
+slot43 = "Common.AI.Behaviac.Debugger"
+slot41 = slot41(slot43)
+slot42 = require
+slot44 = "Utils.ClientTextUtils"
+slot42 = slot42(slot44)
+slot43 = require
+slot45 = "Data.gamestring_config_data"
+slot43 = slot43(slot45)
+slot44 = require
+slot46 = "Data.gamestring_hash_data"
+slot44 = slot44(slot46)
+slot45 = require
+slot47 = "Utils.GmAnnotationI18nMap"
+slot45 = slot45(slot47)
+slot46 = require
+slot48 = "Common.Utils.Utils"
+slot46 = slot46(slot48)
+slot47 = require
+slot49 = "Common.Utils.AbilityUtils"
+slot47 = slot47(slot49)
+slot48 = require
+slot50 = "Data.pet_skill_data"
+slot48 = slot48(slot50)
+slot49 = require
+slot51 = "Common.Utils.HomeLandUtils"
+slot49 = slot49(slot51)
+slot50 = require
+slot52 = "Common.Utils.ItemUtils"
+slot50 = slot50(slot52)
+slot51 = require
+slot53 = "Utils.PetManagementDataHelper"
+slot51 = slot51(slot53)
+slot52 = require
+slot54 = "Data.sys_config_data"
+slot52 = slot52(slot54)
+slot53 = require
+slot55 = "Data.scene_data"
+slot53 = slot53(slot55)
+slot54 = require
+slot56 = "GameApp.Qte.ContinuousButtonQteClip"
+slot54 = slot54(slot56)
+slot55 = require
+slot57 = "Common.Const.RobEggConst"
+slot55 = slot55(slot57)
+slot56 = require
+slot58 = "Common.Const.AbilityConst"
+slot56 = slot56(slot58)
+slot57 = require
+slot59 = "Common.Const.CaptureConst"
+slot57 = slot57(slot59)
+slot58 = require
+slot60 = "GameApp.Ability.AttributeConstHelper"
+slot58 = slot58(slot60)
+slot59 = require
+slot61 = "Core.Net.Http.AsrHttpClient"
+slot59 = slot59(slot61)
+slot60 = require
+slot62 = "Utils.HomelandReportUtils"
+slot60 = slot60(slot62)
+slot61 = CS
+slot61 = slot61.FunPlus
+slot61 = slot61.WorldX
+slot61 = slot61.Ability
+slot61 = slot61.AbilityDataInspect
+slot62 = CS
+slot62 = slot62.FunPlus
+slot62 = slot62.WorldX
+slot62 = slot62.Ability
+slot62 = slot62.AbilityAutoTest
+slot63 = {
+	quickMoveEnabled = false,
 	closePhotoMark = false,
 	GmDofState = false,
 	CMDListPrefix = "Common.Data.GmIstData.",
@@ -142,3353 +203,5442 @@ slot43 = {
 	openMask = false,
 	hasInitGmList = false
 }
-slot44 = {}
-slot43.bugReportImageList = slot44
-slot44 = {}
-slot43.GmRenderSetting = slot44
-slot44 = {}
-slot43.GmDofValueCache = slot44
-slot44 = {
+slot64 = {}
+slot63.bugReportImageList = slot64
+slot64 = {}
+slot63.GmRenderSetting = slot64
+slot64 = {}
+slot63.GmDofValueCache = slot64
+slot64 = {
 	ImageList = 4
 }
-slot43.FuncStyle = slot44
-slot44 = {
-	AddEnvObj = "创建EnvObj",
-	Ability = "Ability",
-	Profile = "Profile",
-	AddPuppet = "GM_ADD_PUPPET",
-	Temporary = "临时",
-	AddItem = "GM_ADD_ITEM",
-	Achievement = "成就",
+slot63.FuncStyle = slot64
+slot64 = {
+	Temporary = "GM_TAB_TEMPORARY",
 	AddPet = "GM_ADD_PET",
+	Ark = "Ark",
+	Pandora = "GM_TAB_OPERATION_PLATFORM",
 	ChooseScene = "DEBUG_FUNC_CHOOSE_SCENE",
-	Debug = "Debug",
+	Performance = "GM_TAB_PERFORMANCE",
 	Common = "GM_COMMON",
-	Pandora = "运营平台",
+	WorldXGraph = "WorldXGraph",
 	Favorite = "GM_FAVORITE",
-	Performance = "性能工具",
+	Profile = "Profile",
 	RecentlyUse = "GM_RECENTLY_USE",
-	Photo = "拍照",
-	MultiCMD = "批处理指令",
+	Photo = "GM_TAB_PHOTO",
+	DialogueGraph = "GM_DIALOGUE_GRAPH",
+	MultiCMD = "GM_TAB_MULTI_COMMAND",
+	Debug = "Debug",
 	Render = "RENDER",
+	BugReport = "BugReport",
 	PVHelper = "PV",
 	Avatar = "Avatar",
-	TeleportToSandbox = "传送到sandbox",
+	TeleportToSandbox = "GM_TAB_TELEPORT_SANDBOX",
 	AIClient = "AI_Client",
-	BugReport = "BugReport",
-	Language = "本地化"
+	Ability = "Ability",
+	Language = "GM_TAB_LOCALIZATION",
+	AddEnvObj = "GM_TAB_ADD_ENV_OBJ",
+	XboxAchievement = "GM_TAB_XBOX_ACHIEVEMENT",
+	AddPuppet = "GM_ADD_PUPPET",
+	Achievement = "GM_TAB_ACHIEVEMENT",
+	AddItem = "GM_ADD_ITEM"
 }
-slot43.FuncTabLabel = slot44
-slot44 = {
-	label = "obsolete",
-	id = 0,
+slot63.FuncTabLabel = slot64
+slot64 = {
+	iconName = "10011",
 	name = "obsolete",
-	iconName = "10011"
+	id = 0,
+	label = "obsolete"
 }
-slot43.obsoleteData = slot44
-slot44 = {
+slot63.obsoleteData = slot64
+slot64 = {
+	IconList = 4,
 	MutilParam = 3,
 	Cell2List = 2,
-	Cell3List = 1,
-	IconList = 4
+	Cell3List = 1
 }
-slot43.StyleType = slot44
-slot44 = {
+slot63.StyleType = slot64
+slot64 = {
 	Switch = 0,
-	ChoiceList = 1,
-	Button = 2
+	Button = 2,
+	ChoiceList = 1
 }
-slot43.Cell3ListSubStyleType = slot44
-slot44 = {
+slot63.Cell3ListSubStyleType = slot64
+slot64 = {
 	Confirm = 0
 }
-slot43.Cell2ListSubStyleType = slot44
-slot44 = {}
-slot45 = {
+slot63.Cell2ListSubStyleType = slot64
+slot64 = {}
+slot65 = {
 	defaultValue = "1",
+	saveKey = "obCameraSettingSubItemsMoveItem",
+	label = "GM_LABEL_L120",
 	style = 0,
-	paramType = "number",
-	label = "移动速度",
-	saveKey = "obCameraSettingSubItemsMoveItem"
+	paramType = "number"
 }
-slot44.MoveItem = slot45
-slot45 = {
+slot64.MoveItem = slot65
+slot65 = {
 	defaultValue = "1",
+	saveKey = "obCameraSettingSubItemsRotationItem",
+	label = "GM_LABEL_L121",
 	style = 0,
-	paramType = "number",
-	label = "旋转速度",
-	saveKey = "obCameraSettingSubItemsRotationItem"
+	paramType = "number"
 }
-slot44.RotationItem = slot45
-slot45 = {
+slot64.RotationItem = slot65
+slot65 = {
 	defaultValue = "1",
+	saveKey = "obCameraSettingSubItemsFOVScollItem",
+	label = "GM_LABEL_L122",
 	style = 0,
-	paramType = "number",
-	label = "FOV缩放速度",
-	saveKey = "obCameraSettingSubItemsFOVScollItem"
+	paramType = "number"
 }
-slot44.FOVScollItem = slot45
-slot43.obCameraSettingSubItems = slot44
-slot44 = {}
-slot45 = {
+slot64.FOVScollItem = slot65
+slot63.obCameraSettingSubItems = slot64
+slot64 = slot9.LANGUAGE_TYPE_MAP
+slot64 = slot64.zh_CN
+slot65 = slot9.LANGUAGE_TYPE_MAP
+slot65 = slot65.en
+slot66 = {}
+slot67 = slot9.LANGUAGE_TYPE_MAP
+slot67 = slot67.zh_CN
+slot68 = true
+slot66[slot67] = slot68
+slot67 = slot9.LANGUAGE_TYPE_MAP
+slot67 = slot67.zh_TW
+slot68 = true
+slot66[slot67] = slot68
+slot67 = slot9.LANGUAGE_TYPE_MAP
+slot67 = slot67.ko_KR
+slot68 = true
+slot66[slot67] = slot68
+slot67 = slot9.LANGUAGE_TYPE_MAP
+slot67 = slot67.ja_JP
+slot68 = true
+slot66[slot67] = slot68
+
+slot67 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.languageType
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot0 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot1 = GM_CHINESE_GAME_LANGUAGES
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot1 = GM_LANGUAGE_ZH_CN
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-13, warpins: 2 ---
+	slot1 = GM_LANGUAGE_EN
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-14, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63.getGmLanguage = slot67
+
+slot67 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = ""
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-18, warpins: 2 ---
+	slot1 = tostring
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = GmToolUtils
+	slot2 = slot2.getGmLanguage
+	slot2 = slot2()
+	slot3 = pgI18N
+	slot3 = slot3.LocalizationText
+	slot3 = slot3.GetLocalizationTextByLanguage
+	slot5 = slot1
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-20, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot3 == "" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 21-23, warpins: 2 ---
+	slot4 = GM_LANGUAGE_EN
+	--- END OF BLOCK #4 ---
+
+	if slot2 == slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-30, warpins: 1 ---
+	slot4 = pgI18N
+	slot4 = slot4.LocalizationText
+	slot4 = slot4.GetLocalizationTextByLanguage
+	slot6 = slot1
+	slot7 = GM_LANGUAGE_ZH_CN
+	slot4 = slot4(slot6, slot7)
+	slot3 = slot4
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 31-32, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 33-34, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot3 ~= "" then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 35-36, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	slot4 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 37-39, warpins: 3 ---
+	slot4 = tostring
+	slot6 = slot0
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 40-40, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot63.getGmLocalizationText = slot67
+
+slot67 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = GameStringConfig
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.desc
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot2 = GameStringHash
+	slot2 = slot2[slot0]
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-11, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 12-20, warpins: 1 ---
+	slot3 = GmToolUtils
+	slot3 = slot3.getGmLocalizationText
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	slot4 = tostring
+	slot6 = slot2
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #4 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 21-21, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 3 ---
+	return slot0
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63.getGmGameString = slot67
+
+slot67 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = GmAnnotationI18nMap
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot68 = {}
+slot69 = {
 	type = 0,
 	initFuncListCount = 4
 }
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.RecentlyUse
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "GM_ADD_PET",
-	subStyle = 0,
-	style = 4,
+slot70 = slot63.FuncTabLabel
+slot70 = slot70.RecentlyUse
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "addPet",
+	style = 4,
+	subSearch = true,
 	dataFunc = "getPetRecentlyList",
-	subSearch = true
+	label = "GM_ADD_PET",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
 	label = "LEVEL",
 	style = 0,
-	paramType = "number",
-	defaultValue = "1"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "0",
 	label = "LABEL",
 	style = 0,
-	tips = "标签：(0普通，1闪光，2Boss，4精英)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[2] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_PET_TIPS_L176"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "0",
 	label = "ALLSKILL",
 	style = 0,
-	tips = "是否学习所有技能：(1/0)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[3] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_PET_TIPS_L177"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[3] = slot73
+slot73 = {
+	defaultValue = "0",
 	label = "isRareFeature",
 	style = 0,
-	tips = "是否强制激活稀有特性（0不是，1是）",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[4] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_PET_TIPS_L178"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[4] = slot73
+slot73 = {
+	defaultValue = "0",
 	label = "skipReport",
 	style = 0,
-	tips = "是否跳过汇报（0否，1是)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[5] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_PET_TIPS_L179"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[5] = slot73
+slot73 = {
+	defaultValue = "0",
 	label = "shinyStyle",
 	style = 0,
-	tips = "闪光样式",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[6] = slot49
-slot49 = {
-	label = "COUNT",
-	style = 0,
-	tips = "添加数量",
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[7] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot47 = {
-	label = "GM_ADD_PUPPET",
-	subStyle = 0,
-	style = 4,
-	func = "createPuppet",
-	dataFunc = "getPuppetRecentlyList",
-	subSearch = true
-}
-slot48 = {}
-slot49 = {
-	label = "level",
-	style = 0,
-	tips = "怪物等级",
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[1] = slot49
-slot49 = {
-	label = "range",
-	style = 0,
-	tips = "默认值 3",
-	paramType = "number",
-	defaultValue = "3"
-}
-slot48[2] = slot49
-slot49 = {
-	label = "scale",
-	style = 0,
-	tips = "召唤出怪物的缩放尺寸",
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[3] = slot49
-slot49 = {
-	label = "isStopAi",
-	style = 0,
-	tips = "召唤出来后是否立刻停止怪物的AI(0不停止，1停止)",
-	paramType = "number",
-	defaultValue = "0"
-}
-slot48[4] = slot49
-slot49 = {
-	label = "label",
-	style = 0,
-	tips = "召唤的label(0普通，1闪光，2Boss，4精英)",
-	paramType = "number",
-	defaultValue = "0"
-}
-slot48[5] = slot49
-slot49 = {
-	label = "isRareFeature",
-	style = 0,
-	tips = "是否强制激活稀有特性（0不是，1是）",
-	paramType = "number",
-	defaultValue = "0"
-}
-slot48[6] = slot49
-slot49 = {
-	label = "shinyStyle",
-	style = 0,
-	tips = "闪光样式",
-	paramType = "number",
-	defaultValue = "0"
-}
-slot48[7] = slot49
-slot47.subItems = slot48
-slot46[2] = slot47
-slot47 = {
-	label = "GM_ADD_ITEM",
-	subStyle = 0,
-	style = 4,
-	func = "addItem",
-	dataFunc = "getItemRecentlyList",
-	subSearch = true
-}
-slot48 = {}
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_PET_TIPS_L180"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[6] = slot73
+slot73 = {
+	defaultValue = "1",
 	label = "COUNT",
 	style = 0,
 	paramType = "number"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[3] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_CHOOSE_SCENE",
-	subStyle = 0,
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_PET_TIPS_L181"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[7] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "createPuppet",
 	style = 4,
+	subSearch = true,
+	dataFunc = "getPuppetRecentlyList",
+	label = "GM_ADD_PUPPET",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
+	label = "level",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_CREATE_PUPPET_TIPS_L187"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "3",
+	label = "range",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_CREATE_PUPPET_TIPS_L188"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "1",
+	label = "scale",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_CREATE_PUPPET_TIPS_L189"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[3] = slot73
+slot73 = {
+	defaultValue = "0",
+	label = "isStopAi",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_CREATE_PUPPET_TIPS_L190"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[4] = slot73
+slot73 = {
+	defaultValue = "0",
+	label = "label",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_CREATE_PUPPET_TIPS_L191"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[5] = slot73
+slot73 = {
+	tips = "是否强制激活稀有特性（0不是，1是）",
+	defaultValue = "0",
+	label = "isRareFeature",
+	style = 0,
+	paramType = "number"
+}
+slot72[6] = slot73
+slot73 = {
+	tips = "闪光样式",
+	defaultValue = "0",
+	label = "shinyStyle",
+	style = 0,
+	paramType = "number"
+}
+slot72[7] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot71 = {
+	func = "addItem",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getItemRecentlyList",
+	label = "GM_ADD_ITEM",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	label = "COUNT",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[3] = slot71
+slot71 = {
 	func = "chooseScene",
-	dataFunc = "sceneRecently",
-	subSearch = true
-}
-slot48 = {}
-slot47.subItems = slot48
-slot46[4] = slot47
-slot47 = {
-	label = "创建EnvObj",
-	subStyle = 0,
 	style = 4,
-	func = "createEnvObj",
-	dataFunc = "envObjRecently",
-	subSearch = true
+	subSearch = true,
+	dataFunc = "sceneRecently",
+	label = "DEBUG_FUNC_CHOOSE_SCENE",
+	subStyle = 0
 }
-slot48 = {}
-slot47.subItems = slot48
-slot46[5] = slot47
-slot45.funcList = slot46
-slot44[1] = slot45
-slot45 = {
+slot72 = {}
+slot71.subItems = slot72
+slot70[4] = slot71
+slot71 = {
+	func = "createEnvObj",
+	style = 4,
+	subSearch = true,
+	dataFunc = "envObjRecently",
+	label = "创建EnvObj",
+	subStyle = 0
+}
+slot72 = {}
+slot71.subItems = slot72
+slot70[5] = slot71
+slot69.funcList = slot70
+slot68[1] = slot69
+slot69 = {
 	type = 1
 }
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.Favorite
-slot45.label = slot46
-slot46 = {}
-slot45.funcList = slot46
-slot44[2] = slot45
-slot45 = {
+slot70 = slot63.FuncTabLabel
+slot70 = slot70.Favorite
+slot69.label = slot70
+slot70 = {}
+slot69.funcList = slot70
+slot68[2] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.Common
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_REFRESH_SCRIPT",
-	subStyle = 2,
-	style = 1,
+slot70 = slot63.FuncTabLabel
+slot70 = slot70.Common
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "refreshScript",
-	onBtnRelease = true
-}
-slot46[1] = slot47
-slot47 = {
-	label = "复制账号信息",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	label = "DEBUG_FUNC_REFRESH_SCRIPT",
+	subStyle = 2
+}
+slot70[1] = slot71
+slot71 = {
 	func = "copyPlayerInfo",
-	onBtnRelease = true,
-	buttonText = "复制"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "抢蛋主端用户名",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_COPY_PLAYER_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_COPY"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[2] = slot71
+slot71 = {
 	func = "showGrabEggMasterName",
-	onBtnRelease = true,
-	buttonText = "名称"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "打开Debug控制台",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_GRAB_EGG_MASTER_NAME"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_GRAB_EGG_MASTER_NAME_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[3] = slot71
+slot71 = {
 	func = "openDebugConsole",
-	onBtnRelease = true,
-	buttonText = "打开"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "Xbox权限面板",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_DEBUG_CONSOLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_OPEN"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "openXboxPermissionDebugOverlay",
-	showFunc = "isXboxPlatform",
-	onBtnRelease = true,
-	buttonText = "打开"
-}
-slot46[5] = slot47
-slot47 = {
-	label = "禁用Shell邀请",
-	subStyle = 0,
 	style = 1,
+	buttonText = "打开",
+	onBtnRelease = true,
+	showFunc = "isXboxPlatform",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_XBOX_PERMISSION_DEBUG_OVERLAY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
 	func = "setShellActivityInviteDisabled",
+	checkFunc = "getShellActivityInviteDisabled",
+	style = 1,
 	showFunc = "isXboxPlatform",
-	checkFunc = "getShellActivityInviteDisabled"
+	subStyle = 0
 }
-slot46[6] = slot47
-slot47 = {
-	label = "主动崩溃(CrashSight测试)",
-	subStyle = 2,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SHELL_ACTIVITY_INVITE_DISABLED"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
 	func = "triggerCrash",
-	onBtnRelease = true,
-	buttonText = "崩溃"
-}
-slot46[7] = slot47
-slot47 = {
-	label = "场景实体信息",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_TRIGGER_CRASH"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_TRIGGER_CRASH_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[7] = slot71
+slot71 = {
+	func = "reportCrashSightException",
+	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_REPORT_CRASH_SIGHT_EXCEPTION"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_REPORT_CRASH_SIGHT_EXCEPTION_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[8] = slot71
+slot71 = {
 	func = "getSceneEntityInfos",
-	onBtnRelease = true,
-	buttonText = "查询"
-}
-slot46[8] = slot47
-slot47 = {
-	label = "拍照指认测试",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_GET_SCENE_ENTITY_INFOS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_QUERY"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[9] = slot71
+slot71 = {
 	func = "openPhotoIdentify",
+	style = 1,
+	buttonText = "拍照",
 	onBtnRelease = true,
-	buttonText = "拍照"
+	subStyle = 2
 }
-slot46[9] = slot47
-slot47 = {
-	label = "查看货币",
-	subStyle = 0,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_PHOTO_IDENTIFY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[10] = slot71
+slot71 = {
 	func = "setVitalityEnable",
-	checkFunc = "getEnableVitality"
-}
-slot46[10] = slot47
-slot47 = {
-	label = "关闭拍照水印",
-	subStyle = 0,
+	checkFunc = "getEnableVitality",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_VITALITY_ENABLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[11] = slot71
+slot71 = {
 	func = "setClosePhotoMark",
-	checkFunc = "getClosePhotoMark"
-}
-slot46[11] = slot47
-slot47 = {
-	label = "展示ID信息",
-	subStyle = 0,
+	checkFunc = "getClosePhotoMark",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_CLOSE_PHOTO_MARK"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[12] = slot71
+slot71 = {
 	func = "debugShowId",
-	checkFunc = "getEnableShowId"
-}
-slot46[12] = slot47
-slot47 = {
-	label = "屏蔽引导功能",
-	subStyle = 0,
+	checkFunc = "getEnableShowId",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_SHOW_ID"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[13] = slot71
+slot71 = {
 	func = "setGuideEnable",
-	checkFunc = "getEnableGuide"
-}
-slot46[13] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_ENTITY_INFO",
-	subStyle = 0,
+	checkFunc = "getEnableGuide",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_GUIDE_ENABLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[14] = slot71
+slot71 = {
+	func = "unlockAllHelp",
+	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_UNLOCK_ALL_HELP"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_CONFIRM"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[15] = slot71
+slot71 = {
 	func = "debugEntityInfo",
-	checkFunc = "getEnableDebug"
-}
-slot46[14] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_ENTITY_INFO_SIMPLE",
-	subStyle = 0,
+	checkFunc = "getEnableDebug",
 	style = 1,
+	label = "DEBUG_FUNC_ENTITY_INFO",
+	subStyle = 0
+}
+slot70[16] = slot71
+slot71 = {
 	func = "debugEntityInfoSimple",
-	checkFunc = "getEnableDebugSimple"
-}
-slot46[15] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_PLAYABLE_INFO",
-	subStyle = 0,
+	checkFunc = "getEnableDebugSimple",
 	style = 1,
+	label = "DEBUG_FUNC_ENTITY_INFO_SIMPLE",
+	subStyle = 0
+}
+slot70[17] = slot71
+slot71 = {
 	func = "enablePlayableLog",
-	checkFunc = "getEnablePlayableLog"
-}
-slot46[16] = slot47
-slot47 = {
-	label = "DEBUG_ENABLE_GAMEPAD_CAPTURE",
-	subStyle = 0,
+	checkFunc = "getEnablePlayableLog",
 	style = 1,
+	label = "DEBUG_FUNC_PLAYABLE_INFO",
+	subStyle = 0
+}
+slot70[18] = slot71
+slot71 = {
 	func = "enableGamepadDebugCapture",
-	checkFunc = "getEnableGamepadDebugCapture"
-}
-slot46[17] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_ENABLE_DRAW_SPEED_LINE",
-	subStyle = 0,
+	checkFunc = "getEnableGamepadDebugCapture",
 	style = 1,
+	label = "DEBUG_ENABLE_GAMEPAD_CAPTURE",
+	subStyle = 0
+}
+slot70[19] = slot71
+slot71 = {
+	func = "setTouchPointDebugEnabled",
+	checkFunc = "getTouchPointDebugEnabled",
+	style = 1,
+	showFunc = "canShowTouchPointDebug",
+	label = "显示触摸点",
+	subStyle = 0
+}
+slot70[20] = slot71
+slot71 = {
 	func = "debugDrawSpeedLine",
-	checkFunc = "getEnableDrawSpeedLine"
-}
-slot46[18] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_USE_CURSOR_ACT",
-	subStyle = 0,
+	checkFunc = "getEnableDrawSpeedLine",
 	style = 1,
+	label = "DEBUG_FUNC_ENABLE_DRAW_SPEED_LINE",
+	subStyle = 0
+}
+slot70[21] = slot71
+slot71 = {
 	func = "cursorActInfo",
-	checkFunc = "getIsCursorAct"
-}
-slot46[19] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_ENABLE_DRAW_HIT_BOX",
-	subStyle = 0,
+	checkFunc = "getIsCursorAct",
 	style = 1,
+	label = "DEBUG_FUNC_USE_CURSOR_ACT",
+	subStyle = 0
+}
+slot70[22] = slot71
+slot71 = {
 	func = "debugDrawHitBox",
-	checkFunc = "getEnableDrawHitBox"
-}
-slot46[20] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_BT_DEBUG",
-	subStyle = 0,
+	checkFunc = "getEnableDrawHitBox",
 	style = 1,
+	label = "DEBUG_FUNC_ENABLE_DRAW_HIT_BOX",
+	subStyle = 0
+}
+slot70[23] = slot71
+slot71 = {
 	func = "onBtDebugChange",
-	checkFunc = "getBtDebug"
-}
-slot46[21] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_SWITCH_LOCK_ON_EXTEND",
-	subStyle = 0,
+	checkFunc = "getBtDebug",
 	style = 1,
+	label = "DEBUG_FUNC_BT_DEBUG",
+	subStyle = 0
+}
+slot70[24] = slot71
+slot71 = {
 	func = "onUseLockOnExtendCameraChange",
-	checkFunc = "getIsUseLockOnExtendCamera"
-}
-slot46[22] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_SWITCH_LOCK_ON",
-	subStyle = 0,
+	checkFunc = "getIsUseLockOnExtendCamera",
 	style = 1,
-	func = "onUseLockOnCameraChange",
-	checkFunc = "getIsUseLockOnCamera"
+	label = "DEBUG_FUNC_SWITCH_LOCK_ON_EXTEND",
+	subStyle = 0
 }
-slot46[23] = slot47
-slot47 = {
+slot70[25] = slot71
+slot71 = {
+	func = "onUseLockOnCameraChange",
+	checkFunc = "getIsUseLockOnCamera",
+	style = 1,
+	label = "DEBUG_FUNC_SWITCH_LOCK_ON",
+	subStyle = 0
+}
+slot70[26] = slot71
+slot71 = {
+	func = "onKeyboardLockModeChange",
+	style = 1,
+	dataFunc = "getModeList",
 	label = "DEBUG_FUNC_KEYBOARD_LOCK_MODE",
 	subStyle = 1,
-	style = 1,
-	func = "onKeyboardLockModeChange",
-	dataFunc = "getModeList",
 	selectedFun = "getKeyboardLockModeSelected"
 }
-slot46[24] = slot47
-slot47 = {
+slot70[27] = slot71
+slot71 = {
+	func = "onGamepadLockModeChange",
+	style = 1,
+	dataFunc = "getGamePadModeList",
 	label = "DEBUG_FUNC_GAMEPAD_LOCK_MODE",
 	subStyle = 1,
-	style = 1,
-	func = "onGamepadLockModeChange",
-	dataFunc = "getGamePadModeList",
 	selectedFun = "getGamepadLockModeSelected"
 }
-slot46[25] = slot47
-slot47 = {
-	label = "显示与锁定目标距离",
-	subStyle = 0,
-	style = 1,
+slot70[28] = slot71
+slot71 = {
 	func = "showLockEntDist",
-	checkFunc = "getIsShowLockEntDist"
-}
-slot46[26] = slot47
-slot47 = {
-	label = "显示锁定目标仇恨信息",
-	subStyle = 0,
+	checkFunc = "getIsShowLockEntDist",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_LOCK_ENT_DIST"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[29] = slot71
+slot71 = {
 	func = "showLockEntHates",
-	checkFunc = "getIsShowLockEntHates"
-}
-slot46[27] = slot47
-slot47 = {
-	label = "显示EntityWindow",
-	subStyle = 0,
+	checkFunc = "getIsShowLockEntHates",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_LOCK_ENT_HATES"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[30] = slot71
+slot71 = {
 	func = "showEntityWindow",
-	checkFunc = "getIsShowEntityWindow"
-}
-slot46[28] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_CHOOSE_SCENE",
-	subStyle = 1,
+	checkFunc = "getIsShowEntityWindow",
 	style = 1,
-	func = "chooseScene",
-	dataFunc = "getSceneList"
+	subStyle = 0
 }
-slot46[29] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_SET_FRAME",
-	subStyle = 1,
-	style = 1,
-	func = "setFrame",
-	dataFunc = "getFrameList"
-}
-slot46[30] = slot47
-slot47 = {
-	label = "清理本地存储",
-	subStyle = 2,
-	style = 1,
-	func = "deleteAllPrefs",
-	buttonText = "清理"
-}
-slot46[31] = slot47
-slot47 = {
-	label = "清理特殊视觉本地存储",
-	subStyle = 2,
-	style = 1,
-	func = "deleteGhostEyePrefs",
-	buttonText = "清理"
-}
-slot46[32] = slot47
-slot47 = {
-	label = "复制相机位置信息",
-	subStyle = 2,
-	style = 1,
-	func = "copyCameraPos",
-	buttonText = "复制"
-}
-slot46[33] = slot47
-slot47 = {
-	label = "传送剪切板复制坐标",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_ENTITY_WINDOW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[31] = slot71
+slot71 = {
+	func = "emptyFunc",
 	style = 3,
+	label = "相机距离整体缩放",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	func = "setGmCameraDistanceScaleEnabled",
+	label = "开启缩放",
+	style = 2,
+	checkFunc = "getGmCameraDistanceScaleEnabled"
+}
+slot72[1] = slot73
+slot73 = {
+	func = "setGmCameraDistanceScale",
+	label = "距离倍率",
+	dataFunc = "getGmCameraDistanceScaleList",
+	style = 1,
+	selectedFun = "getGmCameraDistanceScaleSelected"
+}
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[32] = slot71
+slot71 = {
+	func = "emptyFunc",
+	style = 3,
+	label = "相机最远档位",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	func = "setGmCameraMaxZoomIndexEnabled",
+	label = "开启限制",
+	style = 2,
+	checkFunc = "getGmCameraMaxZoomIndexEnabled"
+}
+slot72[1] = slot73
+slot73 = {
+	func = "setGmCameraMaxZoomIndex",
+	label = "最大档位",
+	dataFunc = "getGmCameraMaxZoomIndexList",
+	style = 1,
+	selectedFun = "getGmCameraMaxZoomIndexSelected"
+}
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[33] = slot71
+slot71 = {
+	func = "chooseScene",
+	style = 1,
+	dataFunc = "getSceneList",
+	label = "DEBUG_FUNC_CHOOSE_SCENE",
+	subStyle = 1
+}
+slot70[34] = slot71
+slot71 = {
+	func = "setFrame",
+	style = 1,
+	dataFunc = "getFrameList",
+	label = "DEBUG_FUNC_SET_FRAME",
+	subStyle = 1
+}
+slot70[35] = slot71
+slot71 = {
+	func = "deleteAllPrefs",
+	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DELETE_ALL_PREFS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_CLEAN"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[36] = slot71
+slot71 = {
+	func = "deleteGhostEyePrefs",
+	style = 1,
+	buttonText = "清理",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DELETE_GHOST_EYE_PREFS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[37] = slot71
+slot71 = {
+	func = "copyCameraPos",
+	style = 1,
+	buttonText = "复制",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_COPY_CAMERA_POS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[38] = slot71
+slot71 = {
 	func = "teleportCopyPos",
+	style = 3,
 	onBtnRelease = true,
-	buttonText = "传送"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "默认空传送剪切板坐标",
-	style = 0,
-	defaultValue = ""
+slot72 = slot63.getGmGameString
+slot74 = "GM_TELEPORT_COPY_POS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "",
+	style = 0
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[34] = slot47
-slot47 = {
-	label = "隐藏UI",
-	subStyle = 0,
+slot74 = slot63.getGmGameString
+slot76 = "GM_TELEPORT_COPY_POS_L264"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_TELEPORT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[39] = slot71
+slot71 = {
+	func = "setUCurvedPanelForceEnabled",
+	checkFunc = "getUCurvedPanelForceEnabled",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_UCURVED_PANEL_FORCE_ENABLED"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[40] = slot71
+slot71 = {
 	func = "hiddenUI",
-	checkFunc = "checkUIStatus"
-}
-slot46[35] = slot47
-slot47 = {
-	label = "隐藏UI(技能模式)",
-	subStyle = 0,
+	checkFunc = "checkUIStatus",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDDEN_UI"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[41] = slot71
+slot71 = {
 	func = "hideUISpecial",
-	checkFunc = "getHideUISpecial"
-}
-slot46[36] = slot47
-slot47 = {
-	label = "隐藏跑马灯",
-	subStyle = 0,
+	checkFunc = "getHideUISpecial",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_UISPECIAL"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[42] = slot71
+slot71 = {
 	func = "setMarqueeGMHide",
-	checkFunc = "getHideMarqueeStatus"
-}
-slot46[37] = slot47
-slot47 = {
-	label = "隐藏主城宠物",
-	subStyle = 0,
+	checkFunc = "getHideMarqueeStatus",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_MARQUEE_GMHIDE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[43] = slot71
+slot71 = {
 	func = "setHideTownPet",
-	checkFunc = "checkHideTownPet"
-}
-slot46[38] = slot47
-slot47 = {
-	label = "隐藏视频",
-	subStyle = 0,
+	checkFunc = "checkHideTownPet",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HIDE_TOWN_PET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[44] = slot71
+slot71 = {
 	func = "setHideVideo",
-	checkFunc = "checkHideVideo"
-}
-slot46[39] = slot47
-slot47 = {
-	label = "手柄方案",
-	subStyle = 1,
+	checkFunc = "checkHideVideo",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HIDE_VIDEO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[45] = slot71
+slot71 = {
 	func = "onGamepadInputModeChange",
+	style = 1,
 	dataFunc = "getGamepadInputModeList",
+	subStyle = 1,
 	selectedFun = "getGamepadInputModeChange"
 }
-slot46[40] = slot47
-slot47 = {
-	label = "区域宽相检测开关",
-	subStyle = 0,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_GAMEPAD_INPUT_MODE_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[46] = slot71
+slot71 = {
 	func = "setTriggerBoardPhase",
-	checkFunc = "checkTriggerBoardPhase"
-}
-slot46[41] = slot47
-slot47 = {
-	label = "打开组队准备间",
-	subStyle = 2,
+	checkFunc = "checkTriggerBoardPhase",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_TRIGGER_BOARD_PHASE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[47] = slot71
+slot71 = {
 	func = "openTeamRoom",
-	onBtnRelease = true,
-	buttonText = "打开"
-}
-slot46[42] = slot47
-slot47 = {
-	label = "副本发奖特效",
-	subStyle = 2,
 	style = 1,
+	buttonText = "打开",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_TEAM_ROOM"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[48] = slot71
+slot71 = {
 	func = "playBossReward",
+	style = 1,
 	onBtnRelease = true,
-	buttonText = "播放"
+	subStyle = 2
 }
-slot46[43] = slot47
-slot47 = {
-	label = "显示宠物初见",
-	subStyle = 0,
-	style = 3,
+slot72 = slot63.getGmGameString
+slot74 = "GM_PLAY_BOSS_REWARD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_PLAY"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[49] = slot71
+slot71 = {
 	func = "showPetFirstMeeting",
+	style = 3,
 	onBtnRelease = true,
-	buttonText = "显示"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_PET_FIRST_MEETING"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "templateId",
 	style = 0,
 	saveKey = "petFirstMeetingTemplateId"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "label",
 	style = 0,
 	saveKey = "petFirstMeetingLabel"
 }
-slot48[2] = slot49
-slot49 = {
+slot72[2] = slot73
+slot73 = {
 	label = "keepShow",
 	style = 0,
 	saveKey = "petFirstMeetingKeepShow"
 }
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[44] = slot47
-slot47 = {
-	label = "播放全部上线宠物初见",
-	subStyle = 0,
+slot72[3] = slot73
+slot71.subItems = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_SHOW"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[50] = slot71
+slot71 = {
+	func = "mountVehicle",
 	style = 3,
-	func = "showAllOnlinePetFirstMeeting",
 	onBtnRelease = true,
-	buttonText = "播放"
+	buttonText = "显示",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_MOUNT_VEHICLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	label = "petId",
+	style = 0,
+	saveKey = "mountVehiclepetId"
+}
+slot72[1] = slot73
+slot73 = {
+	label = "fuId",
+	style = 0,
+	saveKey = "mountVehiclefuId"
+}
+slot72[2] = slot73
+slot73 = {
+	label = "seatId",
+	style = 0,
+	saveKey = "mountVehicleseatId"
+}
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[51] = slot71
+slot71 = {
+	func = "dismountVehicle",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "显示",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DISMOUNT_VEHICLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	label = "petId",
+	style = 0,
+	saveKey = "dismountVehiclepetId"
+}
+slot72[1] = slot73
+slot73 = {
+	label = "fuId",
+	style = 0,
+	saveKey = "dismountVehiclefuId"
+}
+slot72[2] = slot73
+slot73 = {
+	label = "seatId",
+	style = 0,
+	saveKey = "dismountVehicleseatId"
+}
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[52] = slot71
+slot71 = {
+	func = "showAllOnlinePetFirstMeeting",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "播放",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_ALL_ONLINE_PET_FIRST_MEETING"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "startNumber",
 	style = 0,
 	saveKey = "petFirstMeetingStartNumber"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "endNumber",
 	style = 0,
 	saveKey = "petFirstMeetingEndNumber"
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[45] = slot47
-slot47 = {
-	label = "打开资源下载界面",
-	subStyle = 0,
-	style = 3,
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[53] = slot71
+slot71 = {
 	func = "openResourceDownload",
-	onBtnRelease = true,
-	buttonText = "打开"
-}
-slot48 = {}
-slot49 = {
-	label = "资源包大小",
-	style = 0,
-	saveKey = "packSize",
-	defaultValue = 1024
-}
-slot48[1] = slot49
-slot49 = {
-	label = "当前下载进度",
-	style = 0,
-	saveKey = "curPackSize",
-	defaultValue = 0
-}
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[46] = slot47
-slot47 = {
-	label = "显示设置资源下载选项",
-	subStyle = 0,
-	style = 1,
-	func = "setSettingPackDownload",
-	checkFunc = "checkSettingPackDownload"
-}
-slot46[47] = slot47
-slot47 = {
-	label = "开关式瞄准技能",
-	subStyle = 0,
-	style = 1,
-	func = "setAimSkillSwitchMode",
-	checkFunc = "getIsAimSkillSwitchMode"
-}
-slot46[48] = slot47
-slot47 = {
-	label = "topLogo使用对象池",
-	subStyle = 0,
-	style = 1,
-	func = "setTopLogoUseCache",
-	checkFunc = "getTopLogoUseCache"
-}
-slot46[49] = slot47
-slot47 = {
-	label = "浮力使用avbd",
-	subStyle = 0,
-	style = 1,
-	func = "setFloatingObjUseAVBD",
-	checkFunc = "getFloatingObjUseAVBD"
-}
-slot46[50] = slot47
-slot47 = {
-	label = "主角自由移动",
-	subStyle = 0,
-	style = 1,
-	func = "setGmMoveMode",
-	checkFunc = "getGmMoveMode"
-}
-slot46[51] = slot47
-slot47 = {
-	label = "强制触发AFK相机",
-	subStyle = 0,
-	style = 1,
-	func = "setSpecialAfk",
-	checkFunc = "getSpecialAfk"
-}
-slot46[52] = slot47
-slot47 = {
-	label = "主角移动脱卡检查",
-	subStyle = 0,
-	style = 1,
-	func = "setStunnedCheck",
-	checkFunc = "getStunnedCheck"
-}
-slot46[53] = slot47
-slot47 = {
-	label = "特效多人环境lod降级",
-	subStyle = 0,
-	style = 1,
-	func = "toggleEnableEffectMpeLodDown",
-	checkFunc = "getEnableEffectMpeLodDown"
-}
-slot46[54] = slot47
-slot47 = {
-	label = "绘制Entity刚体碰撞盒",
-	subStyle = 0,
-	style = 1,
-	func = "debugDrawRbCollider",
-	checkFunc = "getEnableDrawRbCollider"
-}
-slot46[55] = slot47
-slot47 = {
-	label = "GM_TOPLOGO_EMOJI_BUBBLE",
-	subStyle = 0,
 	style = 3,
-	func = "showTopLogoEmojiBubble"
+	onBtnRelease = true,
+	buttonText = "打开",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_RESOURCE_DOWNLOAD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = 1024,
+	style = 0,
+	saveKey = "packSize"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_OPEN_RESOURCE_DOWNLOAD_L298"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = 0,
+	style = 0,
+	saveKey = "curPackSize"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_OPEN_RESOURCE_DOWNLOAD_L299"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[54] = slot71
+slot71 = {
+	func = "setSettingPackDownload",
+	checkFunc = "checkSettingPackDownload",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SETTING_PACK_DOWNLOAD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[55] = slot71
+slot71 = {
+	func = "setAimSkillSwitchMode",
+	checkFunc = "getIsAimSkillSwitchMode",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_AIM_SKILL_SWITCH_MODE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[56] = slot71
+slot71 = {
+	func = "setTopLogoUseCache",
+	checkFunc = "getTopLogoUseCache",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_TOP_LOGO_USE_CACHE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[57] = slot71
+slot71 = {
+	func = "setGmMoveMode",
+	checkFunc = "getGmMoveMode",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_GM_MOVE_MODE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[58] = slot71
+slot71 = {
+	func = "setSpecialAfk",
+	checkFunc = "getSpecialAfk",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SPECIAL_AFK"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[59] = slot71
+slot71 = {
+	func = "setStunnedCheck",
+	checkFunc = "getStunnedCheck",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_STUNNED_CHECK"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[60] = slot71
+slot71 = {
+	func = "toggleEnableEffectMpeLodDown",
+	checkFunc = "getEnableEffectMpeLodDown",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_TOGGLE_ENABLE_EFFECT_MPE_LOD_DOWN"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[61] = slot71
+slot71 = {
+	func = "debugDrawRbCollider",
+	checkFunc = "getEnableDrawRbCollider",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_DRAW_RB_COLLIDER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[62] = slot71
+slot71 = {
+	func = "debugDrawRbCatchCollider",
+	checkFunc = "getEnableDrawRbCatchCollider",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_DRAW_RB_CATCH_COLLIDER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[63] = slot71
+slot71 = {
+	func = "showTopLogoEmojiBubble",
+	style = 3,
+	label = "GM_TOPLOGO_EMOJI_BUBBLE",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
 	label = "actorId",
 	style = 0,
 	saveKey = "emojiBubbleActorId"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "emojiName",
 	style = 0,
 	saveKey = "emojiBubbleEmojiName"
 }
-slot48[2] = slot49
-slot49 = {
+slot72[2] = slot73
+slot73 = {
 	label = "duration",
 	style = 0,
 	saveKey = "emojiBubbleDuration"
 }
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[56] = slot47
-slot47 = {
-	label = "队伍面板播放表情",
-	subStyle = 0,
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[64] = slot71
+slot71 = {
+	func = "dumpEntityVisibleInfo",
 	style = 3,
-	func = "showPetListEmoji"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_DUMP_ENTITY_VISIBLE_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_PRINT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	label = "id",
+	style = 0,
+	saveKey = "dumpVisibleEntityId"
+}
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[65] = slot71
+slot71 = {
+	func = "showPetListEmoji",
+	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_PET_LIST_EMOJI"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "emojiName",
 	style = 0,
 	saveKey = "petListEmojiName"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[57] = slot47
-slot47 = {
-	label = "调整寻路AreaCost",
-	subStyle = 0,
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[66] = slot71
+slot71 = {
+	func = "adjustNavAreaCost",
 	style = 3,
-	func = "adjustNavAreaCost"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_ADJUST_NAV_AREA_COST"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "areaCost",
 	style = 0,
 	saveKey = "navAreaCost"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[58] = slot47
-slot47 = {
-	label = "打印lua内存",
-	subStyle = 2,
-	style = 1,
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[67] = slot71
+slot71 = {
 	func = "gcAndCount",
-	onBtnRelease = true,
-	buttonText = "打印"
-}
-slot46[59] = slot47
-slot47 = {
-	label = "lua profile",
-	subStyle = 2,
 	style = 1,
+	buttonText = "打印",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_GC_AND_COUNT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[68] = slot71
+slot71 = {
 	func = "luaProfileTrigger",
-	onBtnRelease = true,
-	buttonText = "开始或保存"
-}
-slot46[60] = slot47
-slot47 = {
-	label = "打开lua Sample开关",
-	subStyle = 0,
 	style = 1,
+	onBtnRelease = true,
+	label = "lua profile",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_LUA_PROFILE_TRIGGER_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[69] = slot71
+slot71 = {
 	func = "toggleSample",
-	checkFunc = "checkSample"
-}
-slot46[61] = slot47
-slot47 = {
-	label = "打开lua memory Sample开关",
-	subStyle = 0,
+	checkFunc = "checkSample",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_TOGGLE_SAMPLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[70] = slot71
+slot71 = {
 	func = "toggleSampleLuaMemory",
-	checkFunc = "checkSampleLuaMemory"
-}
-slot46[62] = slot47
-slot47 = {
-	label = "lua profile",
-	subStyle = 2,
+	checkFunc = "checkSampleLuaMemory",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_TOGGLE_SAMPLE_LUA_MEMORY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[71] = slot71
+slot71 = {
 	func = "luaProfileTrigger",
-	onBtnRelease = true,
-	buttonText = "开始/保存"
-}
-slot46[63] = slot47
-slot47 = {
-	label = "lua profile关闭",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	label = "lua profile",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_LUA_PROFILE_TRIGGER_BUTTON_L343"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[72] = slot71
+slot71 = {
 	func = "luaProfileClear",
-	onBtnRelease = true,
-	buttonText = "打印"
-}
-slot46[64] = slot47
-slot47 = {
-	label = "lua内存统计",
-	subStyle = 2,
 	style = 1,
+	buttonText = "打印",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_LUA_PROFILE_CLEAR"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[73] = slot71
+slot71 = {
 	func = "luaMemTrigger",
-	onBtnRelease = true,
-	buttonText = "开始或保存"
-}
-slot46[65] = slot47
-slot47 = {
-	label = "lua内存统计",
-	subStyle = 2,
 	style = 1,
+	buttonText = "开始或保存",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_LUA_MEM_TRIGGER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[74] = slot71
+slot71 = {
 	func = "luaMemClear",
-	onBtnRelease = true,
-	buttonText = "清除"
-}
-slot46[66] = slot47
-slot47 = {
-	label = "lua内存快照",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	label = "lua内存统计",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_CLEAR"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[75] = slot71
+slot71 = {
 	func = "luaMemSnap",
+	style = 1,
 	onBtnRelease = true,
-	buttonText = "快照"
+	subStyle = 2
 }
-slot46[67] = slot47
-slot47 = {
-	label = "luaManager tick interval)",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_LUA_MEM_SNAP"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_SNAPSHOT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[76] = slot71
+slot71 = {
+	func = "setLuaTickFrameInterval",
 	style = 3,
-	func = "setLuaTickInterval",
-	buttonText = "开始设置"
+	label = "luaManager tick frame interval",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "tick间隔",
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_LUA_TICK_INTERVAL_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	tips = "Lua Tick frame interval (1-10), default 1",
+	defaultValue = "1",
 	style = 0,
-	tips = "tick间隔,默认0",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[68] = slot47
-slot47 = {
-	label = "c# leak sample",
-	subStyle = 0,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_LUA_TICK_INTERVAL"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[77] = slot71
+slot71 = {
 	func = "csharpLeakSample",
-	checkFunc = "csharpLeakCheckSample"
-}
-slot46[69] = slot47
-slot47 = {
-	label = "c# leak save",
-	subStyle = 2,
+	checkFunc = "csharpLeakCheckSample",
 	style = 1,
+	label = "c# leak sample",
+	subStyle = 0
+}
+slot70[78] = slot71
+slot71 = {
 	func = "csharpLeakSave",
-	onBtnRelease = true,
-	buttonText = "保存"
-}
-slot46[70] = slot47
-slot47 = {
-	label = "打开RpcDebug",
-	subStyle = 0,
 	style = 1,
+	onBtnRelease = true,
+	label = "c# leak save",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_SAVE"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[79] = slot71
+slot71 = {
 	func = "openRpcDebug",
-	checkFunc = "checkRpcDebug"
-}
-slot46[71] = slot47
-slot47 = {
-	label = "打开创角流程",
-	subStyle = 0,
+	checkFunc = "checkRpcDebug",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_RPC_DEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[80] = slot71
+slot71 = {
 	func = "openCreateUserDebug",
-	checkFunc = "checkCreateUserDebug"
-}
-slot46[72] = slot47
-slot47 = {
-	label = "关闭信息弹窗",
-	subStyle = 0,
+	checkFunc = "checkCreateUserDebug",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_CREATE_USER_DEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[81] = slot71
+slot71 = {
 	func = "closePopupInfoDebug",
-	checkFunc = "checkPopupInfoDebug"
-}
-slot46[73] = slot47
-slot47 = {
-	label = "隐藏技能类型显示",
-	subStyle = 0,
+	checkFunc = "checkPopupInfoDebug",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_CLOSE_POPUP_INFO_DEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[82] = slot71
+slot71 = {
 	func = "setSkillTypeHide",
-	checkFunc = "getSkillTypeHide"
+	checkFunc = "getSkillTypeHide",
+	style = 1,
+	subStyle = 0
 }
-slot46[74] = slot47
-slot47 = {
-	label = "设置分辨率",
-	subStyle = 0,
-	style = 3,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SKILL_TYPE_HIDE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[83] = slot71
+slot71 = {
 	func = "setResolution",
+	style = 3,
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "宽",
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_RESOLUTION"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	style = 0,
 	saveKey = "tempResolutionWidth"
 }
-slot48[1] = slot49
-slot49 = {
-	label = "高",
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_RESOLUTION_L367"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
 	style = 0,
 	saveKey = "tempResolutionHeight"
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[75] = slot47
-slot47 = {
-	label = "强制角色LOD",
-	subStyle = 0,
-	style = 3,
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_RESOLUTION_L368"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_CONFIRM"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[84] = slot71
+slot71 = {
 	func = "forceAvatarLOD",
-	buttonText = "应用"
-}
-slot48 = {}
-slot49 = {
-	label = "lod等级",
-	style = 0,
-	tips = "-1取消强制设置",
-	paramType = "number",
-	defaultValue = "-1",
-	saveKey = "forceAvatarLODLevel"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[76] = slot47
-slot47 = {
-	label = "输出视频资源全路径",
-	subStyle = 0,
 	style = 3,
-	func = "printVideoResFullPath"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_FORCE_AVATAR_LOD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_APPLY"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "-1",
+	saveKey = "forceAvatarLODLevel",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_FORCE_AVATAR_LOD_L373"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_FORCE_AVATAR_LOD_TIPS_L373"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[85] = slot71
+slot71 = {
+	func = "printVideoResFullPath",
+	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_PRINT_VIDEO_RES_FULL_PATH"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "resID",
 	style = 0,
 	saveKey = "tempVideoResID"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[77] = slot47
-slot47 = {
-	label = "开关RpcSizeDebug",
-	subStyle = 0,
-	style = 1,
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[86] = slot71
+slot71 = {
 	func = "openRpcSizeDebug",
-	checkFunc = "checkRpcSizeDebug"
-}
-slot46[78] = slot47
-slot47 = {
-	label = "隐藏所有追踪标记",
-	subStyle = 0,
+	checkFunc = "checkRpcSizeDebug",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_RPC_SIZE_DEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[87] = slot71
+slot71 = {
 	func = "setAllHudArrowHide",
-	checkFunc = "getAllHudArrowHide"
-}
-slot46[79] = slot47
-slot47 = {
-	label = "开/关捉宠爬塔商店",
-	subStyle = 0,
+	checkFunc = "getAllHudArrowHide",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_ALL_HUD_ARROW_HIDE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[88] = slot71
+slot71 = {
 	func = "setCatchRogueShopShow",
-	checkFunc = "getCatchRogueShopShow"
+	checkFunc = "getCatchRogueShopShow",
+	style = 1,
+	subStyle = 0
 }
-slot46[80] = slot47
-slot47 = {
-	label = "好友亲密度测试",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_CATCH_ROGUE_SHOP_SHOW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[89] = slot71
+slot71 = {
+	func = "resetFriendshipRecord",
 	style = 3,
-	func = "resetFriendshipRecord"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_FRIENDSHIP_RECORD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "player UId",
 	style = 0,
 	saveKey = "friendshipRecordUID"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "level",
 	style = 0,
 	saveKey = "friendshipRecordLevel"
 }
-slot48[2] = slot49
-slot49 = {
-	label = "自己站位",
+slot72[2] = slot73
+slot73 = {
 	style = 0,
 	saveKey = "friendshipRecordSelfPos"
 }
-slot48[3] = slot49
-slot49 = {
-	label = "好友站位",
+slot74 = slot63.getGmGameString
+slot76 = "GM_RESET_FRIENDSHIP_RECORD_L390"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[3] = slot73
+slot73 = {
 	style = 0,
 	saveKey = "friendshipRecordFriendPos"
 }
-slot48[4] = slot49
-slot47.subItems = slot48
-slot46[81] = slot47
-slot47 = {
-	label = "SetVegetationShow",
-	subStyle = 0,
+slot74 = slot63.getGmGameString
+slot76 = "GM_RESET_FRIENDSHIP_RECORD_L391"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[4] = slot73
+slot71.subItems = slot72
+slot70[90] = slot71
+slot71 = {
+	func = "setVegetationShow",
 	style = 3,
-	func = "setVegetationShow"
+	label = "SetVegetationShow",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = {}
+slot73 = {
 	label = "type Index",
 	style = 0,
 	saveKey = "setVegetationShowTypeIndex"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "show(1:true,0:false)",
 	style = 0,
 	saveKey = "setVegetationShowShowFlag"
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[82] = slot47
-slot47 = {
-	label = "ecs声音系统测试",
-	subStyle = 0,
-	style = 3,
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[91] = slot71
+slot71 = {
 	func = "setMeListenRange",
+	style = 3,
 	onBtnRelease = true,
-	buttonText = "确定"
+	buttonText = "确定",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "听力范围",
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_ME_LISTEN_RANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	style = 0,
 	saveKey = "listenRange"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[83] = slot47
-slot47 = {
-	label = "手柄导航调试",
-	subStyle = 0,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_ME_LISTEN_RANGE_L402"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[92] = slot71
+slot71 = {
 	func = "setGamepadNavDebug",
-	checkFunc = "getGamepadNavDebug"
-}
-slot46[84] = slot47
-slot47 = {
-	label = "连携界面测试",
-	subStyle = 2,
+	checkFunc = "getGamepadNavDebug",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_GAMEPAD_NAV_DEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[93] = slot71
+slot71 = {
 	func = "showChainAttackByCurPetList",
-	buttonText = "打开"
-}
-slot46[85] = slot47
-slot47 = {
-	label = "连携响应按钮测试",
-	subStyle = 2,
 	style = 1,
+	buttonText = "打开",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_CHAIN_ATTACK_BY_CUR_PET_LIST"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[94] = slot71
+slot71 = {
 	func = "showChainAttackRespond",
-	buttonText = "打开"
-}
-slot46[86] = slot47
-slot47 = {
-	label = "抢蛋积分",
-	style = 3,
-	func = "setGrabEggScore",
-	buttonText = "刷新"
-}
-slot48 = {}
-slot49 = {
-	label = "开启",
-	style = 2,
-	checkFunc = "getEggScoreEnabled",
-	func = "toggleEggScore"
-}
-slot48[1] = slot49
-slot49 = {
-	label = "积分",
 	style = 1,
+	buttonText = "打开",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_CHAIN_ATTACK_RESPOND"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[95] = slot71
+slot71 = {
+	func = "setSkipRobEggEnterCheck",
+	checkFunc = "getSkipRobEggEnterCheck",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SKIP_ROB_EGG_ENTER_CHECK"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[96] = slot71
+slot71 = {
+	func = "setGrabEggScore",
+	style = 3
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SKIP_ROB_EGG_ENTER_CHECK_L409"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_REFRESH"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	func = "toggleEggScore",
+	style = 2,
+	checkFunc = "getEggScoreEnabled"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_BUTTON_ENABLE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
 	dataFunc = "getGrabEggScore",
+	style = 1,
 	selectedFun = "getGrabEggScoreSelected"
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[87] = slot47
-slot45.funcList = slot46
-slot44[3] = slot45
-slot45 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_GET_GRAB_EGG_SCORE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[97] = slot71
+slot71 = {
+	func = "refreshWaterRecovery",
+	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_REFRESH_WATER_RECOVERY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_ADJUST"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[98] = slot71
+slot69.funcList = slot70
+slot68[3] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.Ability
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_DRAW_ABILITY_MESH",
-	subStyle = 0,
-	style = 1,
-	func = "onDrawAbilityMeshChange",
-	checkFunc = "getIsDrawAbilityMesh"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "tick攻击盒只显示最近一次",
-	subStyle = 0,
-	style = 1,
-	func = "onlyDrawLatestAttackBox",
-	checkFunc = "getOnlyDrawLatestAttackBox"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "战斗数据统计",
-	subStyle = 0,
-	style = 1,
-	func = "onAbilityDataInspectChange",
-	checkFunc = "getAbilityDataInspect"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "技能自动测试",
-	subStyle = 0,
-	style = 1,
-	func = "onAbilityAutoTestChange",
-	checkFunc = "getAbilityAutoTestEnable"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "启用受击震屏",
-	subStyle = 0,
-	style = 1,
-	func = "onEnableHitCameraShakeChange",
-	checkFunc = "getEnableHitCameraShake"
-}
-slot46[5] = slot47
-slot45.funcList = slot46
-slot44[4] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.ChooseScene
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_CHOOSE_SCENE",
-	subStyle = 0,
-	style = 4,
-	func = "chooseScene",
-	dataFunc = "sceneRecentlyLine",
-	subSearch = true
-}
-slot48 = {}
-slot47.subItems = slot48
-slot46[1] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_CHOOSE_SCENE",
-	subStyle = 0,
-	style = 4,
-	func = "chooseScene",
-	dataFunc = "getSceneList",
-	subSearch = true
-}
-slot48 = {}
-slot47.subItems = slot48
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[5] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.AddPet
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "清空宠物,再获取所有宠物",
-	subStyle = 2,
-	style = 1,
-	func = "resetAndGetAllPet",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "清空宠物,再获取所有正式宠物",
-	subStyle = 2,
-	style = 1,
-	func = "resetAndGetAllReleasePet",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "设置顶配玩家",
-	subStyle = 2,
-	style = 1,
-	func = "resetAndGetAllSuperPet",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "清空宠物,再获取所有宠物+形态宠",
-	subStyle = 2,
-	style = 1,
-	func = "resetAndGetAllFormPet",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "清空宠物,再获取所有正式基础形态宠物",
-	subStyle = 2,
-	style = 1,
-	func = "resetAndGetAllReleaseBasePet",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[5] = slot47
-slot47 = {
-	label = "清空所有宠物和手册",
-	subStyle = 2,
-	style = 1,
-	func = "resetAllPetAndBook",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[6] = slot47
-slot47 = {
-	label = "按templateId删除宠物",
-	subStyle = 0,
+slot70 = slot63.FuncTabLabel
+slot70 = slot70.Ability
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "playTemplateSkillEffectsByLod",
 	style = 3,
-	func = "removePetsByTemplateId",
 	onBtnRelease = true,
-	buttonText = "删除"
+	buttonText = "开始",
+	label = "模板技能特效LOD轮询",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = {}
+slot73 = {
+	saveKey = "gmSkillEffectTemplateId",
+	label = "宠物/怪物templateId",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "5",
+	saveKey = "gmSkillEffectLodDuration",
+	label = "每组播放时长(秒)",
+	style = 0,
+	paramType = "number"
+}
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "1",
+	saveKey = "gmSkillEffectLodSpeed",
+	label = "播放速率",
+	style = 0,
+	paramType = "number"
+}
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "playSpecifiedEffectByLod",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "播放",
+	label = "指定特效四档LOD对比",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	label = "特效名",
+	style = 0,
+	saveKey = "gmSpecifiedEffectLodName"
+}
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "5",
+	saveKey = "gmSpecifiedEffectLodSpacing",
+	label = "相邻间隔距离(米)",
+	style = 0,
+	paramType = "number"
+}
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "1",
+	saveKey = "gmSpecifiedEffectLodScale",
+	label = "特效缩放倍率",
+	style = 0,
+	paramType = "number"
+}
+slot72[3] = slot73
+slot73 = {
+	defaultValue = "1",
+	saveKey = "gmSpecifiedEffectLodSpeed",
+	label = "播放速率",
+	style = 0,
+	paramType = "number"
+}
+slot72[4] = slot73
+slot73 = {
+	defaultValue = "5",
+	saveKey = "gmSpecifiedEffectLodDuration",
+	label = "持续时间(秒)",
+	style = 0,
+	paramType = "number"
+}
+slot72[5] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot71 = {
+	func = "rotateUltimatePetsAndCastUlt",
+	style = 1,
+	buttonText = "开始/停止",
+	onBtnRelease = true,
+	label = "自动轮换宠物大招 (rotateUltimatePetsAndCastUlt)",
+	subStyle = 2
+}
+slot70[3] = slot71
+slot71 = {
+	func = "onDrawAbilityMeshChange",
+	checkFunc = "getIsDrawAbilityMesh",
+	style = 1,
+	label = "DEBUG_FUNC_DRAW_ABILITY_MESH",
+	subStyle = 0
+}
+slot70[4] = slot71
+slot71 = {
+	func = "onlyDrawLatestAttackBox",
+	checkFunc = "getOnlyDrawLatestAttackBox",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ONLY_DRAW_LATEST_ATTACK_BOX"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
+	func = "onAbilityDataInspectChange",
+	checkFunc = "getAbilityDataInspect",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ABILITY_DATA_INSPECT_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
+	func = "onAbilityAutoTestChange",
+	checkFunc = "getAbilityAutoTestEnable",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ABILITY_AUTO_TEST_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[7] = slot71
+slot71 = {
+	func = "onEnableHitCameraShakeChange",
+	checkFunc = "getEnableHitCameraShake",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ENABLE_HIT_CAMERA_SHAKE_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[8] = slot71
+slot71 = {
+	func = "onEnableHitRippleAllChange",
+	checkFunc = "getEnableHitRippleAll",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ENABLE_HIT_RIPPLE_ALL_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[9] = slot71
+slot69.funcList = slot70
+slot68[4] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "ChooseScene"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "chooseScene",
+	style = 4,
+	subSearch = true,
+	dataFunc = "sceneRecentlyLine",
+	label = "DEBUG_FUNC_CHOOSE_SCENE",
+	subStyle = 0
+}
+slot72 = {}
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "chooseScene",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getSceneList",
+	label = "DEBUG_FUNC_CHOOSE_SCENE",
+	subStyle = 0
+}
+slot72 = {}
+slot71.subItems = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[5] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "AddPet"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "resetAndGetAllPet",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_AND_GET_ALL_PET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "resetAndGetAllReleasePet",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_AND_GET_ALL_RELEASE_PET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[2] = slot71
+slot71 = {
+	func = "resetAndGetAllSuperPet",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_AND_GET_ALL_SUPER_PET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[3] = slot71
+slot71 = {
+	func = "resetAndGetAllFormPet",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_AND_GET_ALL_FORM_PET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
+	func = "resetAndGetAllReleaseBasePet",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_AND_GET_ALL_RELEASE_BASE_PET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
+	func = "resetAllPetAndBook",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_ALL_PET_AND_BOOK"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
+	func = "removePetsByTemplateId",
+	style = 3,
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_REMOVE_PETS_BY_TEMPLATE_ID"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_DELETE"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	saveKey = "removePetsByTemplateIdTemplateId",
 	label = "templateId",
 	style = 0,
-	paramType = "number",
-	saveKey = "removePetsByTemplateIdTemplateId"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[7] = slot47
-slot47 = {
-	label = "DEBUG_FUNC_ADD_PET",
-	subStyle = 0,
-	style = 4,
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[7] = slot71
+slot71 = {
+	func = "spreadPetTransmogRainbow",
+	style = 3,
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SPREAD_PET_TRANSMOG_RAINBOW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_SPREAD"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "1021300",
+	saveKey = "petTransmogRainbowTemplateId",
+	label = "templateId",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_TIPS_L467"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "3",
+	saveKey = "petTransmogRainbowColSpacing",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_L468"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_TIPS_L468"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "4",
+	saveKey = "petTransmogRainbowRowSpacing",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_L469"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_TIPS_L469"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[3] = slot73
+slot73 = {
+	defaultValue = "1",
+	saveKey = "petTransmogRainbowScale",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_L470"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_TRANSMOG_RAINBOW_TIPS_L470"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[4] = slot73
+slot71.subItems = slot72
+slot70[8] = slot71
+slot71 = {
+	func = "spreadPetShinyStyles",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "铺开",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SPREAD_PET_SHINY_STYLES"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	tips = "宠物templateId",
+	defaultValue = "1021300",
+	saveKey = "petShinyStylesTemplateId",
+	label = "petId",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot73 = {
+	tips = "同一行内相邻宠物间距，默认2.5",
+	defaultValue = "3",
+	saveKey = "petShinyStylesColSpacing",
+	label = "列间距",
+	style = 0,
+	paramType = "number"
+}
+slot72[2] = slot73
+slot73 = {
+	tips = "相邻行（沿玩家前方）间距，默认3.0",
+	defaultValue = "4",
+	saveKey = "petShinyStylesRowSpacing",
+	label = "行间距",
+	style = 0,
+	paramType = "number"
+}
+slot72[3] = slot73
+slot73 = {
+	tips = "宠物模型缩放，默认1",
+	defaultValue = "1",
+	saveKey = "petShinyStylesScale",
+	label = "缩放",
+	style = 0,
+	paramType = "number"
+}
+slot72[4] = slot73
+slot73 = {
+	defaultValue = "4",
+	saveKey = "petShinyStylesMaxCols",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_SHINY_STYLES_L479"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_SPREAD_PET_SHINY_STYLES_TIPS_L479"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[5] = slot73
+slot71.subItems = slot72
+slot70[9] = slot71
+slot71 = {
 	func = "addPet",
+	style = 4,
+	subSearch = true,
 	dataFunc = "getPetList",
-	subSearch = true
+	label = "DEBUG_FUNC_ADD_PET",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
 	label = "LEVEL",
 	style = 0,
-	paramType = "number",
-	defaultValue = "1"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
+	tips = "标签：(0普通，1闪光，2Boss，4精英)",
+	defaultValue = "0",
 	label = "LABEL",
 	style = 0,
-	tips = "标签：(0普通，1闪光，2Boss，4精英)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[2] = slot49
-slot49 = {
+slot72[2] = slot73
+slot73 = {
+	tips = "是否学习所有技能：(1/0)",
+	defaultValue = "0",
 	label = "ALLSKILL",
 	style = 0,
-	tips = "是否学习所有技能：(1/0)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[3] = slot49
-slot49 = {
+slot72[3] = slot73
+slot73 = {
+	tips = "是否强制激活稀有特性（0不是，1是）",
+	defaultValue = "0",
 	label = "isRareFeature",
 	style = 0,
-	tips = "是否强制激活稀有特性（0不是，1是）",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[4] = slot49
-slot49 = {
+slot72[4] = slot73
+slot73 = {
+	tips = "是否跳过汇报（0否，1是)",
+	defaultValue = "0",
 	label = "skipReport",
 	style = 0,
-	tips = "是否跳过汇报（0否，1是)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[5] = slot49
-slot49 = {
+slot72[5] = slot73
+slot73 = {
+	tips = "闪光样式",
+	defaultValue = "0",
 	label = "shinyStyle",
 	style = 0,
-	tips = "闪光样式",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[6] = slot49
-slot49 = {
-	label = "COUNT",
-	style = 0,
+slot72[6] = slot73
+slot73 = {
 	tips = "添加数量",
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[7] = slot49
-slot47.subItems = slot48
-slot46[8] = slot47
-slot45.funcList = slot46
-slot44[6] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.Ark
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "启用广告屏幕",
-	subStyle = 2,
-	style = 1,
-	func = "enableArkScreen",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "禁用广告屏幕",
-	subStyle = 2,
-	style = 1,
-	func = "disableArkScreen",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[7] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.AddItem
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_ADD_ITEM",
-	subStyle = 0,
-	style = 4,
-	func = "addItem",
-	dataFunc = "getItemList",
-	subSearch = true
-}
-slot48 = {}
-slot49 = {
+	defaultValue = "1",
 	label = "COUNT",
 	style = 0,
 	paramType = "number"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot47 = {
-	label = "清空指定道具",
-	subStyle = 0,
-	style = 4,
-	func = "clearItemById",
-	dataFunc = "getItemList",
-	subSearch = true
-}
-slot48 = {}
-slot47.subItems = slot48
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[8] = slot45
-slot45 = {
+slot72[7] = slot73
+slot71.subItems = slot72
+slot70[10] = slot71
+slot69.funcList = slot70
+slot68[6] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot46 = slot46.AddPuppet
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_CREATE_PUPPET",
-	subStyle = 0,
-	style = 4,
-	func = "createPuppet",
-	dataFunc = "getPuppetList",
-	subSearch = true
+slot70 = slot63.FuncTabLabel
+slot71 = "Ark"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "enableArkScreen",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_ENABLE_ARK_SCREEN"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "disableArkScreen",
+	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DISABLE_ARK_SCREEN"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[7] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "AddItem"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "addItem",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getItemList",
+	label = "DEBUG_FUNC_ADD_ITEM",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	label = "COUNT",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "clearItemById",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getItemList",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_CLEAR_ITEM_BY_ID"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot71.subItems = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[8] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "AddPuppet"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "createPuppet",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getPuppetList",
+	label = "DEBUG_FUNC_CREATE_PUPPET",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	tips = "怪物等级",
+	defaultValue = "1",
 	label = "level",
 	style = 0,
-	tips = "怪物等级",
-	paramType = "number",
-	defaultValue = "1"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
+	tips = "默认值 3",
+	defaultValue = "3",
 	label = "range",
 	style = 0,
-	tips = "默认值 3",
-	paramType = "number",
-	defaultValue = "3"
+	paramType = "number"
 }
-slot48[2] = slot49
-slot49 = {
+slot72[2] = slot73
+slot73 = {
+	tips = "召唤出怪物的缩放尺寸",
+	defaultValue = "1",
 	label = "scale",
 	style = 0,
-	tips = "召唤出怪物的缩放尺寸",
-	paramType = "number",
-	defaultValue = "1"
+	paramType = "number"
 }
-slot48[3] = slot49
-slot49 = {
+slot72[3] = slot73
+slot73 = {
+	tips = "召唤出来后是否立刻停止怪物的AI(0不停止，1停止)",
+	defaultValue = "0",
 	label = "isStopAi",
 	style = 0,
-	tips = "召唤出来后是否立刻停止怪物的AI(0不停止，1停止)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[4] = slot49
-slot49 = {
+slot72[4] = slot73
+slot73 = {
+	tips = "召唤的label(0普通，1闪光，2Boss，4精英)",
+	defaultValue = "0",
 	label = "label",
 	style = 0,
-	tips = "召唤的label(0普通，1闪光，2Boss，4精英)",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[5] = slot49
-slot49 = {
+slot72[5] = slot73
+slot73 = {
+	tips = "是否强制激活稀有特性（0不是，1是）",
+	defaultValue = "0",
 	label = "isRareFeature",
 	style = 0,
-	tips = "是否强制激活稀有特性（0不是，1是）",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[6] = slot49
-slot49 = {
+slot72[6] = slot73
+slot73 = {
+	tips = "闪光样式",
+	defaultValue = "0",
 	label = "shinyStyle",
 	style = 0,
-	tips = "闪光样式",
-	paramType = "number",
-	defaultValue = "0"
+	paramType = "number"
 }
-slot48[7] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot45.funcList = slot46
-slot44[9] = slot45
-slot45 = {
+slot72[7] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot69.funcList = slot70
+slot68[9] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "AddEnvObj"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_CREATE_ENV_OBJ",
-	subStyle = 0,
-	style = 4,
+slot70 = slot63.FuncTabLabel
+slot71 = "AddEnvObj"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "createEnvObj",
-	dataFunc = "getEnvObjList",
-	subSearch = true
-}
-slot48 = {}
-slot47.subItems = slot48
-slot46[1] = slot47
-slot45.funcList = slot46
-slot44[10] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot47 = "MultiCMD"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "批处理指令",
-	subStyle = 0,
 	style = 4,
-	func = "execCmdList",
-	dataFunc = "getCmdListFileName",
-	subSearch = true
+	subSearch = true,
+	dataFunc = "getEnvObjList",
+	label = "DEBUG_FUNC_CREATE_ENV_OBJ",
+	subStyle = 0
 }
-slot48 = {}
-slot47.subItems = slot48
-slot46[1] = slot47
-slot45.funcList = slot46
-slot44[11] = slot45
-slot45 = {
+slot72 = {}
+slot71.subItems = slot72
+slot70[1] = slot71
+slot69.funcList = slot70
+slot68[10] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "BugReport"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "BugReport",
-	subStyle = 0,
-	style = 3,
-	func = "bugReport"
+slot70 = slot63.FuncTabLabel
+slot71 = "MultiCMD"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "execCmdList",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getCmdListFileName",
+	label = "批处理指令",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "类型",
-	subStyle = 1,
-	style = 1,
+slot72 = {}
+slot71.subItems = slot72
+slot70[1] = slot71
+slot69.funcList = slot70
+slot68[11] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "BugReport"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "bugReport",
+	style = 3,
+	label = "BugReport",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
 	func = "setBugReportType",
+	style = 1,
 	dataFunc = "getBugReportTypeList",
+	subStyle = 1,
 	selectedFun = "getCurBugReportType"
 }
-slot48[1] = slot49
-slot49 = {
-	label = "你的名字",
-	style = 0,
-	tips = "方便QA联系你",
-	saveKey = "BugReportUserName"
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_BUG_REPORT_TYPE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	saveKey = "BugReportUserName",
+	style = 0
 }
-slot48[2] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_BUG_REPORT_TYPE_L568"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_BUG_REPORT_TYPE_TIPS_L568"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[2] = slot73
+slot73 = {
+	saveKey = "BugReportContent",
 	label = "content",
-	style = 4,
-	tips = "描述",
-	saveKey = "BugReportContent"
+	style = 4
 }
-slot48[3] = slot49
-slot49 = {
-	label = "反馈截图(点击加号进入截图)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_BUG_REPORT_TYPE_TIPS_L569"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[3] = slot73
+slot73 = {
 	style = 5
 }
-slot48[4] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot45.funcList = slot46
-slot44[12] = slot45
-slot45 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_BUG_REPORT_TYPE_L570"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[4] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot69.funcList = slot70
+slot68[12] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Language"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "本地化文本标签",
-	subStyle = 0,
-	style = 1,
+slot70 = slot63.FuncTabLabel
+slot71 = "Language"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "setLocalizationTagEnable",
-	checkFunc = "getLocalizationTagEnable"
+	checkFunc = "getLocalizationTagEnable",
+	style = 1,
+	subStyle = 0
 }
-slot46[1] = slot47
-slot47 = {
-	label = "GM_LANGUAGE_REPLACE",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_LOCALIZATION_TAG_ENABLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "changeLanguage",
 	style = 3,
-	func = "changeLanguage"
+	label = "GM_LANGUAGE_REPLACE",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "原始内容",
+slot72 = {}
+slot73 = {
 	style = 7
 }
-slot48[1] = slot49
-slot49 = {
-	label = "替换内容",
+slot74 = slot63.getGmGameString
+slot76 = "GM_CHANGE_LANGUAGE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
 	style = 7
 }
-slot48[2] = slot49
-slot49 = {
-	label = "文本 Key",
+slot74 = slot63.getGmGameString
+slot76 = "GM_CHANGE_LANGUAGE_L584"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot73 = {
 	style = 3
 }
-slot48[3] = slot49
-slot49 = {
-	checkFunc = "checkMaskState",
-	style = 2,
-	label = "开启功能(F11)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_CHANGE_LANGUAGE_L585"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[3] = slot73
+slot73 = {
 	func = "setMaskState",
-	actionPath = "Temp/FlipLanguageReplaceMask"
+	checkFunc = "checkMaskState",
+	actionPath = "Temp/FlipLanguageReplaceMask",
+	style = 2
 }
-slot48[4] = slot49
-slot47.subItems = slot48
-slot46[2] = slot47
-slot47 = {
-	label = "Ark字开关",
-	subStyle = 0,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_CHECK_MASK_STATE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[4] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot71 = {
 	func = "setAllTextArkFontEnable",
-	checkFunc = "getAllTextArkFontEnable"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "机翻高亮",
-	subStyle = 0,
+	checkFunc = "getAllTextArkFontEnable",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_ALL_TEXT_ARK_FONT_ENABLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[3] = slot71
+slot71 = {
 	func = "setMachineTranslationHighlight",
-	checkFunc = "getMachineTranslationHighlight"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "切换Platform",
-	subStyle = 1,
+	checkFunc = "getMachineTranslationHighlight",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_MACHINE_TRANSLATION_HIGHLIGHT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "switchPlatform",
+	style = 1,
 	dataFunc = "getPlatformList",
+	subStyle = 1,
 	selectedFun = "getCurPlatformSelected"
 }
-slot46[5] = slot47
-slot47 = {
-	label = "切换语言",
-	subStyle = 1,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SWITCH_PLATFORM"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
 	func = "switchLanguage",
+	style = 1,
 	dataFunc = "getLanguageList",
+	subStyle = 1,
 	selectedFun = "getCurLanguageSelected"
 }
-slot46[6] = slot47
-slot47 = {
-	label = "切换语音语言",
-	subStyle = 1,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SWITCH_LANGUAGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
 	func = "switchAudioLanguage",
+	style = 1,
 	dataFunc = "getAudioLanguageList",
+	subStyle = 1,
 	selectedFun = "getCurAudioLanguageSelected"
 }
-slot46[7] = slot47
-slot45.funcList = slot46
-slot44[13] = slot45
-slot45 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_SWITCH_AUDIO_LANGUAGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[7] = slot71
+slot69.funcList = slot70
+slot68[13] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "AIClient"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "指定资源点日志调试ActorId (0代表全部)",
-	subStyle = 0,
-	style = 2,
+slot70 = slot63.FuncTabLabel
+slot71 = "AIClient"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "showUnitPhysicsTuningWindow",
+	checkFunc = "getIsShowUnitPhysicsTuningWindow",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_UNIT_PHYSICS_TUNING_WINDOW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
 	func = "setResPointLogActorId",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "指定资源点gizmos调试ActorId (0代表全部)",
-	subStyle = 0,
 	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_RES_POINT_LOG_ACTOR_ID"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[2] = slot71
+slot71 = {
 	func = "setResPointDrawActorId",
+	style = 2,
+	buttonText = "确定",
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 0
 }
-slot46[2] = slot47
-slot47 = {
-	label = "开启资源点日志",
-	subStyle = 0,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_RES_POINT_DRAW_ACTOR_ID"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[3] = slot71
+slot71 = {
 	func = "openResPointLog",
-	checkFunc = "checkResPointLogState"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "开启全局AI",
-	subStyle = 0,
+	checkFunc = "checkResPointLogState",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_RES_POINT_LOG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "openAIGlobalTick",
-	checkFunc = "checkAIGlobalTick"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "开启资源点gizmos (红-点,绿-端口,蓝-方向)",
-	subStyle = 0,
+	checkFunc = "checkAIGlobalTick",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_AIGLOBAL_TICK"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
 	func = "openResPointDraw",
-	checkFunc = "checkResPointDrawState"
-}
-slot46[5] = slot47
-slot47 = {
-	label = "开启活动日志",
-	subStyle = 0,
+	checkFunc = "checkResPointDrawState",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_RES_POINT_DRAW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
 	func = "openGroupBehaviourLog",
-	checkFunc = "checkGroupBehaviourLogState"
-}
-slot46[6] = slot47
-slot47 = {
-	label = "开启行为触发日志",
-	subStyle = 0,
+	checkFunc = "checkGroupBehaviourLogState",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_GROUP_BEHAVIOUR_LOG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[7] = slot71
+slot71 = {
 	func = "openConditionTriggerLog",
-	checkFunc = "checkConditionTriggerLogState"
-}
-slot46[7] = slot47
-slot47 = {
-	label = "打印当前已加载的所有静态资源点",
-	subStyle = 2,
+	checkFunc = "checkConditionTriggerLogState",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_CONDITION_TRIGGER_LOG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[8] = slot71
+slot71 = {
 	func = "printCurrentAllStaticResPoint",
+	style = 1,
+	buttonText = "打印",
 	onBtnRelease = true,
-	buttonText = "打印"
+	subStyle = 2
 }
-slot46[8] = slot47
-slot47 = {
-	label = "Debug感知范围ActorId (0代表全部)",
-	subStyle = 0,
-	style = 2,
+slot72 = slot63.getGmGameString
+slot74 = "GM_PRINT_CURRENT_ALL_STATIC_RES_POINT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[9] = slot71
+slot71 = {
 	func = "setDebugPerceptibility",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[9] = slot47
-slot47 = {
-	label = "Debug感知范围NoImpActorId (0代表全部)",
-	subStyle = 0,
 	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_DEBUG_PERCEPTIBILITY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[10] = slot71
+slot71 = {
 	func = "setNoImpDebugPerceptibility",
+	style = 2,
+	buttonText = "确定",
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 0
 }
-slot46[10] = slot47
-slot47 = {
-	label = "关闭Debug感知",
-	subStyle = 2,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_NO_IMP_DEBUG_PERCEPTIBILITY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[11] = slot71
+slot71 = {
 	func = "setDebugPerceptibilityOff",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[11] = slot47
-slot47 = {
-	label = "剔除玩家(含Pet)警戒",
-	subStyle = 0,
 	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_DEBUG_PERCEPTIBILITY_OFF"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[12] = slot71
+slot71 = {
 	func = "setPlayerPerceptibility",
-	checkFunc = "checkPlayerPerceptibility"
-}
-slot46[12] = slot47
-slot47 = {
-	label = "剔除玩家(含Pet)非重要感知",
-	subStyle = 0,
+	checkFunc = "checkPlayerPerceptibility",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_PLAYER_PERCEPTIBILITY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[13] = slot71
+slot71 = {
 	func = "setPlayerNoImpPerceptibility",
-	checkFunc = "checkPlayerNoImpPerceptibility"
+	checkFunc = "checkPlayerNoImpPerceptibility",
+	style = 1,
+	subStyle = 0
 }
-slot46[13] = slot47
-slot47 = {
-	label = "Debug CalcQualifiedPos",
-	subStyle = 0,
-	style = 2,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_PLAYER_NO_IMP_PERCEPTIBILITY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[14] = slot71
+slot71 = {
 	func = "setDebugCalcQualifiedPos",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[14] = slot47
-slot47 = {
-	label = "关闭Debug CalcQualifiedPos",
-	subStyle = 0,
 	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	label = "Debug CalcQualifiedPos",
+	subStyle = 0
+}
+slot70[15] = slot71
+slot71 = {
 	func = "setDebugCalcQualifiedPosOff",
+	style = 2,
+	buttonText = "确定",
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 0
 }
-slot46[15] = slot47
-slot47 = {
-	label = "打开AI调试,开启调试Server",
-	subStyle = 2,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_DEBUG_CALC_QUALIFIED_POS_OFF"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[16] = slot71
+slot71 = {
 	func = "openAIDebug",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[16] = slot47
-slot47 = {
-	label = "开始AI调试,接受编辑器Connect",
-	subStyle = 2,
 	style = 1,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_AIDEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[17] = slot71
+slot71 = {
 	func = "startAIDebug",
+	style = 1,
+	buttonText = "确定",
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 2
 }
-slot46[17] = slot47
-slot47 = {
-	label = "开启自拍gizmos",
-	subStyle = 0,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_START_AIDEBUG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[18] = slot71
+slot71 = {
 	func = "openAISelfieDraw",
-	checkFunc = "checkAISelfieDrawState"
-}
-slot46[18] = slot47
-slot47 = {
-	label = "隐藏捕捉概率显示",
-	subStyle = 0,
+	checkFunc = "checkAISelfieDrawState",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_AISELFIE_DRAW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[19] = slot71
+slot71 = {
 	func = "setCaptureProbabilityHide",
-	checkFunc = "checkCaptureProbabilityHide"
-}
-slot46[19] = slot47
-slot47 = {
-	label = "捕捉调试信息",
-	subStyle = 0,
+	checkFunc = "checkCaptureProbabilityHide",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_CAPTURE_PROBABILITY_HIDE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[20] = slot71
+slot71 = {
 	func = "setCatchDebugInfo",
-	checkFunc = "checkCatchDebugInfo"
-}
-slot46[20] = slot47
-slot47 = {
-	label = "开启警戒/感知跳变日志(TopLogo)",
-	subStyle = 0,
+	checkFunc = "checkCatchDebugInfo",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_CATCH_DEBUG_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[21] = slot71
+slot71 = {
 	func = "setDebugAlertLog",
-	checkFunc = "checkDebugAlertLog"
+	checkFunc = "checkDebugAlertLog",
+	style = 1,
+	subStyle = 0
 }
-slot46[21] = slot47
-slot45.funcList = slot46
-slot44[14] = slot45
-slot45 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_DEBUG_ALERT_LOG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[22] = slot71
+slot69.funcList = slot70
+slot68[14] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "TeleportToSandbox"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "传送到sandbox",
-	subStyle = 0,
-	style = 4,
+slot70 = slot63.FuncTabLabel
+slot71 = "TeleportToSandbox"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "chooseSandbox",
+	style = 4,
+	subSearch = true,
 	dataFunc = "getSandboxList",
-	subSearch = true
+	label = "传送到sandbox",
+	subStyle = 0
 }
-slot48 = {}
-slot47.subItems = slot48
-slot46[1] = slot47
-slot47 = {
-	label = "水板块潮汐",
-	subStyle = 0,
-	style = 1,
+slot72 = {}
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
 	func = "setOceanHeight",
-	checkFunc = "getOceanHeight"
+	checkFunc = "getOceanHeight",
+	style = 1,
+	subStyle = 0
 }
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[15] = slot45
-slot45 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_OCEAN_HEIGHT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[15] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "PVHelper"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = slot43.FuncTabLabel
-slot47 = "PVHelper"
-slot46 = slot46[slot47]
-slot47 = "sourceLabel"
-slot45[slot47] = slot46
-slot46 = {}
-slot47 = {
-	label = "开启OB相机",
-	subStyle = 0,
-	style = 1,
+slot70 = slot63.FuncTabLabel
+slot71 = "PVHelper"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = slot63.FuncTabLabel
+slot71 = "PVHelper"
+slot70 = slot70[slot71]
+slot71 = "sourceLabel"
+slot69[slot71] = slot70
+slot70 = {}
+slot71 = {
 	func = "enableOBCamera",
-	checkFunc = "checkOBCamera"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "隐藏UI",
-	subStyle = 0,
+	checkFunc = "checkOBCamera",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ENABLE_OBCAMERA"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
 	func = "hiddenUI",
-	checkFunc = "checkUIStatus"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "隐藏主角",
-	subStyle = 0,
+	checkFunc = "checkUIStatus",
 	style = 1,
+	label = "隐藏UI",
+	subStyle = 0
+}
+slot70[2] = slot71
+slot71 = {
 	func = "enableMainPlayer",
-	checkFunc = "checkMainPlayerEnable"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "开启飞雷神",
-	subStyle = 0,
+	checkFunc = "checkMainPlayerEnable",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ENABLE_MAIN_PLAYER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[3] = slot71
+slot71 = {
 	func = "enableQuickMove",
-	checkFunc = "checkQuickMove"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "隐藏fps和UID",
-	subStyle = 0,
+	checkFunc = "checkQuickMove",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ENABLE_QUICK_MOVE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "hideFps",
-	checkFunc = "checkFps"
-}
-slot46[5] = slot47
-slot47 = {
-	label = "隐藏pre-alpha",
-	subStyle = 0,
+	checkFunc = "checkFps",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_FPS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
 	func = "hidePreAlpha",
-	checkFunc = "checkPreAlpha"
-}
-slot46[6] = slot47
-slot47 = {
-	label = "隐藏拍照",
-	subStyle = 0,
+	checkFunc = "checkPreAlpha",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_PRE_ALPHA"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
 	func = "hidePhoto",
-	checkFunc = "checkPhoto"
-}
-slot46[7] = slot47
-slot47 = {
-	label = "隐藏问卷、特训、菜单",
-	subStyle = 0,
+	checkFunc = "checkPhoto",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_PHOTO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[7] = slot71
+slot71 = {
 	func = "hideRightPanel",
-	checkFunc = "checkRightPanel"
-}
-slot46[8] = slot47
-slot47 = {
-	label = "隐藏捕捉Key",
-	subStyle = 0,
+	checkFunc = "checkRightPanel",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_RIGHT_PANEL"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[8] = slot71
+slot71 = {
 	func = "hideCatchKey",
-	checkFunc = "checkCatchKey"
-}
-slot46[9] = slot47
-slot47 = {
-	label = "隐藏UID、DevelopmentBuild",
-	subStyle = 0,
+	checkFunc = "checkCatchKey",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_CATCH_KEY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[9] = slot71
+slot71 = {
 	func = "hideUID",
-	checkFunc = "checkUID"
-}
-slot46[10] = slot47
-slot47 = {
-	label = "隐藏退出联结",
-	subStyle = 0,
+	checkFunc = "checkUID",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_UID"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[10] = slot71
+slot71 = {
 	func = "hideFuseKey",
-	checkFunc = "checkFuseKey"
-}
-slot46[11] = slot47
-slot47 = {
-	label = "隐藏Boss名称",
-	subStyle = 0,
+	checkFunc = "checkFuseKey",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_FUSE_KEY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[11] = slot71
+slot71 = {
 	func = "hideBossName",
-	checkFunc = "checkBossName"
-}
-slot46[12] = slot47
-slot47 = {
-	label = "隐藏宝宝名字",
-	subStyle = 0,
+	checkFunc = "checkBossName",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_BOSS_NAME"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[12] = slot71
+slot71 = {
 	func = "hideTopLogo",
-	checkFunc = "checkTopLogo"
-}
-slot46[13] = slot47
-slot47 = {
-	label = "隐藏追踪辉耀琥珀",
-	subStyle = 0,
+	checkFunc = "checkTopLogo",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_TOP_LOGO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[13] = slot71
+slot71 = {
 	func = "hideAIHelper",
-	checkFunc = "checkAIHelper"
-}
-slot46[14] = slot47
-slot47 = {
-	label = "隐藏大量发生",
-	subStyle = 0,
+	checkFunc = "checkAIHelper",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_AIHELPER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[14] = slot71
+slot71 = {
 	func = "hideMiniMapPlenty",
-	checkFunc = "checkMiniMapPlenty"
-}
-slot46[15] = slot47
-slot47 = {
-	label = "OB相机设置",
-	subStyle = 0,
-	style = 3,
-	func = "changeOBCameraSetting"
-}
-slot48 = {}
-slot49 = slot43.obCameraSettingSubItems
-slot49 = slot49.MoveItem
-slot48[1] = slot49
-slot49 = slot43.obCameraSettingSubItems
-slot49 = slot49.RotationItem
-slot48[2] = slot49
-slot49 = slot43.obCameraSettingSubItems
-slot49 = slot49.FOVScollItem
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[16] = slot47
-slot47 = {
-	label = "升格镜头",
-	subStyle = 1,
+	checkFunc = "checkMiniMapPlenty",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_MINI_MAP_PLENTY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[15] = slot71
+slot71 = {
+	func = "changeOBCameraSetting",
+	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_CHANGE_OBCAMERA_SETTING"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = slot63.obCameraSettingSubItems
+slot73 = slot73.MoveItem
+slot72[1] = slot73
+slot73 = slot63.obCameraSettingSubItems
+slot73 = slot73.RotationItem
+slot72[2] = slot73
+slot73 = slot63.obCameraSettingSubItems
+slot73 = slot73.FOVScollItem
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[16] = slot71
+slot71 = {
 	func = "setSlowRatio",
+	style = 1,
 	dataFunc = "getSlowRatio",
+	subStyle = 1,
 	selectedFun = "getSlowRatioSelected"
 }
-slot46[17] = slot47
-slot47 = {
-	label = "OB相机跟随Entity",
-	subStyle = 0,
-	style = 2,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_SLOW_RATIO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[17] = slot71
+slot71 = {
 	func = "obCameraFollowEntity",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[18] = slot47
-slot47 = {
-	label = "景深调节",
-	subStyle = 0,
-	style = 3,
-	func = "emptyFunc"
-}
-slot48 = {}
-slot49 = {
-	checkFunc = "checkGmDofState",
 	style = 2,
-	label = "开启景深",
-	func = "setGmDofState",
-	actionPath = "Temp/FlipLanguageReplaceMask"
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
 }
-slot48[1] = slot49
-slot49 = {
-	getValueFunc = "getDofParam",
-	style = 6,
-	maxValue = 32,
-	func = "setDofParam",
-	minValue = 0,
-	funcParam = "m_FStop",
-	label = "Aperture (F-stop)",
-	step = 0.1
-}
-slot48[2] = slot49
-slot49 = {
-	getValueFunc = "getDofParam",
-	style = 6,
-	maxValue = 1000,
-	func = "setDofParam",
-	minValue = 0,
-	funcParam = "m_SensorWidth",
-	label = "Sensor Width",
-	step = 1
-}
-slot48[3] = slot49
-slot49 = {
-	getValueFunc = "getDofParam",
-	style = 6,
-	maxValue = 1000,
-	func = "setDofParam",
-	minValue = 0,
-	funcParam = "m_FocalDistance",
-	label = "Focal Distance",
-	step = 1
-}
-slot48[4] = slot49
-slot49 = {
-	getValueFunc = "getDofParam",
-	style = 6,
-	maxValue = 2,
-	func = "setDofParam",
-	minValue = 0,
-	funcParam = "m_RecombineQuality",
-	label = "Recombine Quality",
-	step = 1
-}
-slot48[5] = slot49
-slot47.subItems = slot48
-slot46[19] = slot47
-slot47 = {
-	label = "OB相机震动设置",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_OB_CAMERA_FOLLOW_ENTITY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[18] = slot71
+slot71 = {
+	func = "emptyFunc",
 	style = 3,
-	func = "emptyFunc"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	getValueFunc = "getPosAmplitudes",
-	style = 6,
-	maxValue = 1,
-	func = "setPosAmplitudes",
-	minValue = 0.2,
-	funcParam = "y",
-	label = "相机上下震动幅度",
-	step = 0.1
+slot72 = slot63.getGmGameString
+slot74 = "GM_EMPTY_FUNC"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	func = "setGmDofState",
+	checkFunc = "checkGmDofState",
+	actionPath = "Temp/FlipLanguageReplaceMask",
+	style = 2
 }
-slot48[1] = slot49
-slot49 = {
-	getValueFunc = "getPosAmplitudes",
-	style = 6,
-	maxValue = 1,
-	func = "setPosAmplitudes",
+slot74 = slot63.getGmGameString
+slot76 = "GM_CHECK_GM_DOF_STATE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	func = "setDofParam",
+	getValueFunc = "getDofParam",
 	minValue = 0,
-	funcParam = "x",
-	label = "相机左右震动幅度",
-	step = 0.1
+	step = 0.1,
+	maxValue = 32,
+	label = "Aperture (F-stop)",
+	style = 6,
+	funcParam = "m_FStop"
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[20] = slot47
-slot47 = {
-	label = "LOD设置",
-	subStyle = 0,
+slot72[2] = slot73
+slot73 = {
+	func = "setDofParam",
+	getValueFunc = "getDofParam",
+	minValue = 0,
+	step = 1,
+	maxValue = 1000,
+	label = "Sensor Width",
+	style = 6,
+	funcParam = "m_SensorWidth"
+}
+slot72[3] = slot73
+slot73 = {
+	func = "setDofParam",
+	getValueFunc = "getDofParam",
+	minValue = 0,
+	step = 1,
+	maxValue = 1000,
+	label = "Focal Distance",
+	style = 6,
+	funcParam = "m_FocalDistance"
+}
+slot72[4] = slot73
+slot73 = {
+	func = "setDofParam",
+	getValueFunc = "getDofParam",
+	minValue = 0,
+	step = 1,
+	maxValue = 2,
+	label = "Recombine Quality",
+	style = 6,
+	funcParam = "m_RecombineQuality"
+}
+slot72[5] = slot73
+slot71.subItems = slot72
+slot70[19] = slot71
+slot71 = {
+	func = "emptyFunc",
+	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_EMPTY_FUNC_L679"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	func = "setPosAmplitudes",
+	getValueFunc = "getPosAmplitudes",
+	minValue = 0.2,
+	step = 0.1,
+	maxValue = 1,
+	style = 6,
+	funcParam = "y"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_GET_POS_AMPLITUDES"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	func = "setPosAmplitudes",
+	getValueFunc = "getPosAmplitudes",
+	minValue = 0,
+	step = 0.1,
+	maxValue = 1,
+	style = 6,
+	funcParam = "x"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_GET_POS_AMPLITUDES_L682"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[20] = slot71
+slot71 = {
+	style = 3,
 	fun = "emptyFunc",
-	style = 3
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	getValueFunc = "getGrassLoadDistance",
-	style = 6,
-	maxValue = 1000,
+slot72 = slot63.getGmGameString
+slot74 = "GM_GET_POS_AMPLITUDES_L686"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	func = "setGrassLoadDistance",
-	minValue = 100,
-	funcParam = "m_GrassCullDistance",
-	label = "草地LOD距离",
-	step = 100
-}
-slot48[1] = slot49
-slot49 = {
 	getValueFunc = "getGrassLoadDistance",
-	style = 6,
-	maxValue = 1000,
-	func = "setGrassLoadDistance",
 	minValue = 100,
-	funcParam = "m_TreeCullDistance",
-	label = "树木LOD距离",
-	step = 100
-}
-slot48[2] = slot49
-slot49 = {
-	getValueFunc = "getLodBias",
+	step = 100,
+	maxValue = 1000,
 	style = 6,
-	maxValue = 10,
+	funcParam = "m_GrassCullDistance"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_GET_GRASS_LOAD_DISTANCE"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	func = "setGrassLoadDistance",
+	getValueFunc = "getGrassLoadDistance",
+	minValue = 100,
+	step = 100,
+	maxValue = 1000,
+	style = 6,
+	funcParam = "m_TreeCullDistance"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_GET_GRASS_LOAD_DISTANCE_L689"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot73 = {
 	func = "setLodBias",
+	getValueFunc = "getLodBias",
 	minValue = 0.1,
-	funcParam = "load bias",
+	step = 0.1,
+	maxValue = 10,
 	label = "LOD Bias",
-	step = 0.1
+	style = 6,
+	funcParam = "load bias"
 }
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[21] = slot47
-slot47 = {
-	label = "隐藏宝箱",
-	subStyle = 0,
-	style = 1,
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[21] = slot71
+slot71 = {
 	func = "onEnableHideChestChange",
-	checkFunc = "getEnableHideChest"
-}
-slot46[22] = slot47
-slot47 = {
-	label = "隐藏怪物",
-	subStyle = 0,
+	checkFunc = "getEnableHideChest",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ENABLE_HIDE_CHEST_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[22] = slot71
+slot71 = {
 	func = "onEnableHidePuppetChange",
-	checkFunc = "getEnableHidePuppet"
-}
-slot46[23] = slot47
-slot47 = {
-	label = "隐藏EcsTopLogo",
-	subStyle = 0,
+	checkFunc = "getEnableHidePuppet",
 	style = 1,
-	func = "onEnableHideECSTopLogoChange",
-	checkFunc = "getEnableHideECSTopLogo"
+	subStyle = 0
 }
-slot46[24] = slot47
-slot45.funcList = slot46
-slot44[16] = slot45
-slot45 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ENABLE_HIDE_PUPPET_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[23] = slot71
+slot71 = {
+	func = "onEnableHideECSTopLogoChange",
+	checkFunc = "getEnableHideECSTopLogo",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ON_ENABLE_HIDE_ECSTOP_LOGO_CHANGE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[24] = slot71
+slot69.funcList = slot70
+slot68[16] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Render"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = slot43.FuncTabLabel
-slot47 = "Render"
-slot46 = slot46[slot47]
-slot47 = "sourceLabel"
-slot45[slot47] = slot46
-slot46 = {}
-slot47 = {
-	label = "调整fov",
-	subStyle = 0,
+slot70 = slot63.FuncTabLabel
+slot71 = "Render"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = slot63.FuncTabLabel
+slot71 = "Render"
+slot70 = slot70[slot71]
+slot71 = "sourceLabel"
+slot69[slot71] = slot70
+slot70 = {}
+slot71 = {
+	func = "connectShaderPush",
 	style = 2,
-	func = "setCameraFov",
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 0
 }
-slot46[1] = slot47
-slot47 = {
-	label = "调整tree显示距离",
-	subStyle = 0,
-	style = 2,
-	func = "setTreeCullDistance",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "调整grass显示距离",
-	subStyle = 0,
-	style = 2,
-	func = "setGrassCullDistance",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "调整imposter显示距离",
-	subStyle = 0,
-	style = 2,
-	func = "setImposterCullDistance",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "调整天气",
-	subStyle = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_CONNECT_SHADER_PUSH"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_CONNECT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "disconnectShaderPush",
 	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DISCONNECT_SHADER_PUSH"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_DISCONNECT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[2] = slot71
+slot71 = {
+	func = "shaderPushStatus",
+	style = 1,
+	buttonText = "查询",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHADER_PUSH_STATUS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[3] = slot71
+slot71 = {
+	func = "setCameraFov",
+	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_CAMERA_FOV"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
+	func = "setTreeCullDistance",
+	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_TREE_CULL_DISTANCE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
+	func = "setGrassCullDistance",
+	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_GRASS_CULL_DISTANCE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
+	func = "setImposterCullDistance",
+	style = 2,
+	buttonText = "确定",
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_IMPOSTER_CULL_DISTANCE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[7] = slot71
+slot71 = {
 	func = "setWeatherProfile",
+	style = 1,
 	dataFunc = "getWeatherProfileList",
+	subStyle = 1,
 	selectedFun = "getWeatherProfileSelected"
 }
-slot46[5] = slot47
-slot47 = {
-	label = "调整毛发层数",
-	subStyle = 0,
-	style = 2,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_WEATHER_PROFILE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[8] = slot71
+slot71 = {
 	func = "setForce32Layer",
+	style = 2,
+	buttonText = "确定",
 	onBtnRelease = true,
-	buttonText = "确定"
+	subStyle = 0
 }
-slot46[6] = slot47
-slot47 = {
-	label = "Fields初始化状态",
-	subStyle = 0,
-	style = 3,
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_FORCE32_LAYER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[9] = slot71
+slot71 = {
 	func = "showEffectFieldsInfo",
+	style = 3,
 	onBtnRelease = true,
-	buttonText = "查询"
+	buttonText = "查询",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_EFFECT_FIELDS_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "vectorFields",
 	style = 0,
 	saveKey = "showEffectFieldsInfo_vectorFields"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "waterShader",
 	style = 0,
 	saveKey = "showEffectFieldsInfo_waterShader"
 }
-slot48[2] = slot49
-slot49 = {
+slot72[2] = slot73
+slot73 = {
 	label = "oceanFields",
 	style = 0,
 	saveKey = "showEffectFieldsInfo_oceanFields"
 }
-slot48[3] = slot49
-slot49 = {
+slot72[3] = slot73
+slot73 = {
 	label = "riverFields",
 	style = 0,
 	saveKey = "showEffectFieldsInfo_riverFields"
 }
-slot48[4] = slot49
-slot47.subItems = slot48
-slot46[7] = slot47
-slot47 = {
-	label = "UI Virtual Texture",
-	subStyle = 0,
-	style = 1,
+slot72[4] = slot73
+slot71.subItems = slot72
+slot70[10] = slot71
+slot71 = {
 	func = "setUIVirtualTextureEnabled",
-	checkFunc = "checkUIVirtualTextureEnabled"
-}
-slot46[8] = slot47
-slot47 = {
-	label = "Dynamic Batch",
-	subStyle = 0,
+	checkFunc = "checkUIVirtualTextureEnabled",
 	style = 1,
+	label = "UI Virtual Texture",
+	subStyle = 0
+}
+slot70[11] = slot71
+slot71 = {
+	func = "setTextureStreamingGlobalHudEnabled",
+	checkFunc = "checkTextureStreamingGlobalHudEnabled",
+	style = 1,
+	label = "Texture Streaming Global HUD",
+	subStyle = 0
+}
+slot70[12] = slot71
+slot71 = {
+	func = "setDisableUIScale",
+	checkFunc = "checkDisableUIScale",
+	style = 1,
+	label = "Disable UI Scale",
+	subStyle = 0
+}
+slot70[13] = slot71
+slot71 = {
 	func = "setDynamicBatchEnabled",
-	checkFunc = "checkDynamicBatchEnabled"
-}
-slot46[9] = slot47
-slot47 = {
-	label = "StaticBlur",
-	subStyle = 0,
+	checkFunc = "checkDynamicBatchEnabled",
 	style = 1,
+	label = "Dynamic Batch",
+	subStyle = 0
+}
+slot70[14] = slot71
+slot71 = {
+	func = "setPostTaa5TapSharpenEnabled",
+	checkFunc = "getPostTaa5TapSharpenEnabled",
+	style = 1,
+	label = "Post-TAA 5-Tap Sharpen",
+	subStyle = 0
+}
+slot70[15] = slot71
+slot71 = {
 	func = "setStaticBlurEnabled",
-	checkFunc = "getStaticBlurEnabled"
-}
-slot46[10] = slot47
-slot47 = {
-	label = "粒子渲染(保留tick)",
-	subStyle = 0,
+	checkFunc = "getStaticBlurEnabled",
 	style = 1,
+	label = "StaticBlur",
+	subStyle = 0
+}
+slot70[16] = slot71
+slot71 = {
 	func = "setEffectParticleRenderingEnabled",
-	checkFunc = "getEffectParticleRenderingEnabled"
-}
-slot46[11] = slot47
-slot47 = {
-	label = "粒子显示(不保留tick)",
-	subStyle = 0,
+	checkFunc = "getEffectParticleRenderingEnabled",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_EFFECT_PARTICLE_RENDERING_ENABLED"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[17] = slot71
+slot71 = {
 	func = "setEffectParticleVisibleEnabled",
-	checkFunc = "getEffectParticleVisibleEnabled"
-}
-slot46[12] = slot47
-slot47 = {
-	label = "特效激活(tick+渲染)",
-	subStyle = 0,
+	checkFunc = "getEffectParticleVisibleEnabled",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_EFFECT_PARTICLE_VISIBLE_ENABLED"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[18] = slot71
+slot71 = {
 	func = "setEffectActive",
-	checkFunc = "getEffectActive"
-}
-slot46[13] = slot47
-slot47 = {
-	label = "IMGUI",
-	subStyle = 0,
+	checkFunc = "getEffectActive",
 	style = 1,
-	func = "setGUIEnabled",
-	checkFunc = "getGUIEnabled"
+	subStyle = 0
 }
-slot46[14] = slot47
-slot45.funcList = slot46
-slot44[17] = slot45
-slot45 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_EFFECT_ACTIVE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[19] = slot71
+slot71 = {
+	func = "setVSyncEnabled",
+	checkFunc = "getVSyncEnabled",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_VSYNC_ENABLED"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[20] = slot71
+slot71 = {
+	func = "setLowResolutionEnabled",
+	checkFunc = "getLowResolutionEnabled",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_LOW_RESOLUTION_ENABLED"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[21] = slot71
+slot71 = {
+	func = "setTransparentInOnePassEnabled",
+	checkFunc = "getTransparentInOnePassEnabled",
+	style = 1,
+	label = "Transparent OnePass",
+	subStyle = 0
+}
+slot70[22] = slot71
+slot71 = {
+	func = "setTransparentInIndependentPassEnabled",
+	checkFunc = "getTransparentInIndependentPassEnabled",
+	style = 1,
+	label = "Transparent Independent Pass",
+	subStyle = 0
+}
+slot70[23] = slot71
+slot71 = {
+	func = "setGUIEnabled",
+	checkFunc = "getGUIEnabled",
+	style = 1,
+	label = "IMGUI",
+	subStyle = 0
+}
+slot70[24] = slot71
+slot69.funcList = slot70
+slot68[17] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Photo"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "创建拍照预设",
-	subStyle = 0,
+slot70 = slot63.FuncTabLabel
+slot71 = "Photo"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "savePhotoPreset",
 	style = 3,
-	func = "savePhotoPreset"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "预设key",
+slot72 = slot63.getGmGameString
+slot74 = "GM_SAVE_PHOTO_PRESET"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	style = 0,
 	saveKey = "photoPresetSaveKey"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot45.funcList = slot46
-slot44[18] = slot45
-slot45 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_SAVE_PHOTO_PRESET_L736"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot69.funcList = slot70
+slot68[18] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Profile"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "自动Profile",
-	subStyle = 0,
-	style = 3,
+slot70 = slot63.FuncTabLabel
+slot71 = "Profile"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "startProfile",
-	buttonText = "开始"
+	style = 3,
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "场景id列表，用','分隔",
-	style = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_START_PROFILE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_START"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
 	tips = "",
-	paramType = "string",
-	defaultValue = "3000"
-}
-slot48[1] = slot49
-slot49 = {
-	label = "收集时地块大小",
+	defaultValue = "3000",
 	style = 0,
+	paramType = "string"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_L747"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
 	tips = "",
-	paramType = "number",
-	defaultValue = 96
-}
-slot48[2] = slot49
-slot49 = {
-	label = "收集范围",
+	defaultValue = 96,
 	style = 0,
-	tips = "填vector4,xy左上坐标，zw右下角坐标",
-	paramType = "string",
-	defaultValue = "(0,0,0,0)"
+	paramType = "number"
 }
-slot48[3] = slot49
-slot49 = {
-	label = "八个方向",
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_L748"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "(0,0,0,0)",
 	style = 0,
-	tips = "不勾选则使用默认的四个方向",
-	paramType = "number",
-	defaultValue = 0
+	paramType = "string"
 }
-slot48[4] = slot49
-slot49 = {
-	label = "本地测试用",
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_L749"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_TIPS_L749"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[3] = slot73
+slot73 = {
+	defaultValue = 0,
 	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_L750"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_TIPS_L750"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[4] = slot73
+slot73 = {
 	tips = "",
-	paramType = "number",
-	defaultValue = 0
+	defaultValue = 0,
+	style = 0,
+	paramType = "number"
 }
-slot48[5] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot47 = {
-	label = "从上次结束处继续Profile",
-	subStyle = 2,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PROFILE_L751"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[5] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
 	func = "continueProfile",
-	buttonText = "继续"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "结束Profile",
-	subStyle = 2,
 	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_CONTINUE_PROFILE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_CONTINUE_PROFILE_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[2] = slot71
+slot71 = {
 	func = "endProfile",
-	buttonText = "结束"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "自动ProfileTimeline",
-	subStyle = 2,
 	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_END_PROFILE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_END"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[3] = slot71
+slot71 = {
 	func = "startProfileTimeline",
-	buttonText = "开始"
+	style = 1,
+	buttonText = "开始",
+	subStyle = 2
 }
-slot46[4] = slot47
-slot47 = {
-	label = "开启Profile录制且导出data",
-	subStyle = 0,
-	style = 3,
+slot72 = slot63.getGmGameString
+slot74 = "GM_START_PROFILE_TIMELINE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "launchProfileRecord",
-	buttonText = "开始录制"
-}
-slot48 = {}
-slot49 = {
-	label = "录制秒数",
-	style = 0,
-	tips = "录制秒数,默认20",
-	paramType = "number",
-	defaultValue = "20"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[5] = slot47
-slot47 = {
-	label = "关闭Profile录制",
-	subStyle = 0,
 	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_LAUNCH_PROFILE_RECORD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_LAUNCH_PROFILE_RECORD_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "20",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_LAUNCH_PROFILE_RECORD_L760"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_LAUNCH_PROFILE_RECORD_TIPS_L760"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[5] = slot71
+slot71 = {
 	func = "finishProfileRecord",
-	buttonText = "结束录制"
+	style = 3,
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "是否高亮定位导出data",
+slot72 = slot63.getGmGameString
+slot74 = "GM_FINISH_PROFILE_RECORD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_FINISH_PROFILE_RECORD_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
 	style = 0,
-	tips = "0不定位,1定位,默认1",
-	paramType = "number",
-	defaultValue = "1"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[6] = slot47
-slot47 = {
-	label = "得到当前点profile",
-	subStyle = 2,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_FINISH_PROFILE_RECORD_L766"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_FINISH_PROFILE_RECORD_TIPS_L766"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[6] = slot71
+slot71 = {
 	func = "getProfileInfo",
-	buttonText = "收集"
-}
-slot46[7] = slot47
-slot47 = {
-	label = "按位置列表传送并采渲染数据",
-	subStyle = 2,
 	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_GET_PROFILE_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_COLLECT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[7] = slot71
+slot71 = {
 	func = "teleportAndCollectProfileByPosList",
-	buttonText = "开始"
-}
-slot46[8] = slot47
-slot47 = {
-	label = "TopLogo性能采样(Lua侧)",
-	subStyle = 0,
-	style = 3,
-	func = "startTopLogoProfile",
-	buttonText = "开始采样"
-}
-slot48 = {}
-slot49 = {
-	label = "采样秒数",
-	style = 0,
-	tips = "采样秒数,默认10",
-	paramType = "number",
-	defaultValue = "10"
-}
-slot48[1] = slot49
-slot49 = {
-	label = "输出文件名",
-	style = 0,
-	tips = "相对persistentDataPath,默认toplogo_profile.log",
-	paramType = "string",
-	defaultValue = "toplogo_profile.log"
-}
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[9] = slot47
-slot47 = {
-	label = "停止TopLogo采样并落盘",
-	subStyle = 2,
 	style = 1,
-	func = "stopTopLogoProfile",
-	buttonText = "结束"
+	buttonText = "开始",
+	subStyle = 2
 }
-slot46[10] = slot47
-slot47 = {
-	label = "TopLogo跨桥调用基准(playerDistance等)",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_TELEPORT_AND_COLLECT_PROFILE_BY_POS_LIST"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[8] = slot71
+slot71 = {
+	func = "startTopLogoProfile",
 	style = 3,
-	func = "runTopLogoBridgeBench",
-	buttonText = "跑一次"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "每组调用次数",
+slot72 = slot63.getGmGameString
+slot74 = "GM_START_TOP_LOGO_PROFILE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_START_TOP_LOGO_PROFILE_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "10",
 	style = 0,
-	tips = "每组调用次数,默认1000",
-	paramType = "number",
-	defaultValue = "1000"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_TOP_LOGO_PROFILE_L774"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_TOP_LOGO_PROFILE_TIPS_L774"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "toplogo_profile.log",
+	style = 0,
+	paramType = "string"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_TOP_LOGO_PROFILE_L775"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_TOP_LOGO_PROFILE_TIPS_L775"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[9] = slot71
+slot71 = {
+	func = "stopTopLogoProfile",
+	style = 1,
+	buttonText = "结束",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_STOP_TOP_LOGO_PROFILE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[10] = slot71
+slot71 = {
+	func = "runTopLogoBridgeBench",
+	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RUN_TOP_LOGO_BRIDGE_BENCH"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_RUN_TOP_LOGO_BRIDGE_BENCH_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "1000",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_TOP_LOGO_BRIDGE_BENCH_L782"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_TOP_LOGO_BRIDGE_BENCH_TIPS_L782"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "toplogo_bridge_bench.log",
 	label = "输出文件名",
 	style = 0,
-	tips = "相对persistentDataPath,默认toplogo_bridge_bench.log",
-	paramType = "string",
-	defaultValue = "toplogo_bridge_bench.log"
+	paramType = "string"
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[11] = slot47
-slot45.funcList = slot46
-slot44[19] = slot45
-slot45 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_TOP_LOGO_BRIDGE_BENCH_TIPS_L783"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[11] = slot71
+slot69.funcList = slot70
+slot68[19] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Debug"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "DEBUG_FUNC_ENTITY_INFO",
-	subStyle = 0,
+slot70 = slot63.FuncTabLabel
+slot71 = "Debug"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "loadIFix",
 	style = 1,
+	buttonText = "加载",
+	onBtnRelease = true,
+	showFunc = "canLoadIFix",
+	label = "加载本地 InjectFix 补丁",
+	subStyle = 2
+}
+slot70[1] = slot71
+slot71 = {
+	func = "queryCoreCarryCertifyInfo",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "查询",
+	label = "查询核心携带物认证数据",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	saveKey = "gmQueryCoreCarryCertifyInvId",
+	label = "invId",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot73 = {
+	saveKey = "gmQueryCoreCarryCertifyGenId",
+	label = "genId",
+	style = 0,
+	paramType = "number"
+}
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot71 = {
 	func = "debugEntityInfo",
-	checkFunc = "getEnableDebug"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "家园基础信息",
-	subStyle = 0,
+	checkFunc = "getEnableDebug",
 	style = 1,
+	label = "DEBUG_FUNC_ENTITY_INFO",
+	subStyle = 0
+}
+slot70[3] = slot71
+slot71 = {
 	func = "debugHomelandBaseInfo",
-	checkFunc = "getEnableDebugHomelandBaseInfo"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "家园环境信息",
-	subStyle = 0,
+	checkFunc = "getEnableDebugHomelandBaseInfo",
 	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_HOMELAND_BASE_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "debugHomelandEnvInfo",
-	checkFunc = "getEnableDebugHomelandEnvInfo"
+	checkFunc = "getEnableDebugHomelandEnvInfo",
+	style = 1,
+	subStyle = 0
 }
-slot46[3] = slot47
-slot47 = {
-	label = "HUD区域提示:Key,duration,delay,param",
-	subStyle = 0,
-	style = 3,
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_HOMELAND_ENV_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[5] = slot71
+slot71 = {
+	func = "debugHomeLinkInfo",
+	checkFunc = "getEnableHomeLinkDebug",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_HOME_LINK_INFO"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[6] = slot71
+slot71 = {
+	func = "setHomeDemoMode",
+	checkFunc = "getHomeDemoMode",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HOME_DEMO_MODE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[7] = slot71
+slot71 = {
+	func = "resetHomeDemoProgress",
+	style = 1,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RESET_HOME_DEMO_PROGRESS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_RESET"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[8] = slot71
+slot71 = {
+	func = "setHomePetCollisionMode",
+	checkFunc = "getHomePetCollisionMode",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HOME_PET_COLLISION_MODE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[9] = slot71
+slot71 = {
+	func = "setHomePetLargeAvoidance",
+	checkFunc = "getHomePetLargeAvoidance",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HOME_PET_LARGE_AVOIDANCE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[10] = slot71
+slot71 = {
+	func = "printAllHomeVehiclePetSeatWorldPositions",
+	style = 1,
+	buttonText = "打印",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_PRINT_ALL_HOME_VEHICLE_PET_SEAT_WORLD_POSITIONS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[11] = slot71
+slot71 = {
+	func = "setHomeLinkPresetFilter",
+	style = 1,
+	dataFunc = "getHomeLinkPresetFilterList",
+	subStyle = 1
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HOME_LINK_PRESET_FILTER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[12] = slot71
+slot71 = {
+	func = "setHomeLinkDirFilter",
+	style = 1,
+	dataFunc = "getHomeLinkDirFilterList",
+	subStyle = 1
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_HOME_LINK_DIR_FILTER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[13] = slot71
+slot71 = {
+	func = "setUWAGPMDebugMode",
+	checkFunc = "getDebugMode",
+	style = 1,
+	label = "UWAGPM DebugMode",
+	subStyle = 0
+}
+slot70[14] = slot71
+slot71 = {
 	func = "hideHudAreaTip",
-	buttonText = "清除全部"
-}
-slot48 = {}
-slot49 = {
-	label = "提示集合",
-	style = 7,
-	func = "parseHudAreaTip"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[4] = slot47
-slot47 = {
-	label = "通用弹幕消息测试:BulletID, ...",
-	subStyle = 0,
 	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_HUD_AREA_TIP"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_HIDE_HUD_AREA_TIP_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	func = "parseHudAreaTip",
+	style = 7
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_PARSE_HUD_AREA_TIP"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[15] = slot71
+slot71 = {
 	func = "addCommonSystemNotice",
-	onBtnRelease = true,
-	buttonText = "Send"
-}
-slot48 = {}
-slot49 = {
-	label = "弹幕ID",
-	style = 0
-}
-slot48[1] = slot49
-slot49 = {
-	label = "文本",
-	style = 0
-}
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[5] = slot47
-slot47 = {
-	label = "快速创建房车",
-	subStyle = 2,
-	style = 1,
-	func = "showCreateCarWnd",
-	buttonText = "打开"
-}
-slot46[6] = slot47
-slot47 = {
-	label = "进入场景跳过新手",
-	subStyle = 0,
-	style = 1,
-	func = "trySkipNew",
-	checkFunc = "getEnableDebugTrySkipNew"
-}
-slot46[7] = slot47
-slot47 = {
-	label = "3c动作录像",
-	subStyle = 2,
-	style = 1,
-	func = "openAnimationRecord",
-	onBtnRelease = true,
-	buttonText = "开始"
-}
-slot46[8] = slot47
-slot47 = {
-	label = "开关NoGo",
-	subStyle = 0,
-	style = 1,
-	func = "enableNogoParmon",
-	checkFunc = "isNogoParmonEnabled"
-}
-slot46[9] = slot47
-slot47 = {
-	label = "Log级别",
-	subStyle = 1,
-	style = 1,
-	func = "setLogLevel",
-	dataFunc = "getLogLevelList"
-}
-slot46[10] = slot47
-slot47 = {
-	label = "Log开关",
-	subStyle = 0,
-	style = 1,
-	func = "enableLog",
-	checkFunc = "getLogEnable"
-}
-slot46[11] = slot47
-slot47 = {
-	label = "大世界普通捕捉镜头推近",
-	subStyle = 0,
-	style = 1,
-	func = "setCaptureCloseupEnable",
-	checkFunc = "getCaptureCloseupEnable"
-}
-slot46[12] = slot47
-slot47 = {
-	label = "普通捕捉推近距离(米)",
-	subStyle = 0,
 	style = 3,
-	func = "saveCaptureCloseupParams",
 	onBtnRelease = true,
-	buttonText = "保存"
+	buttonText = "Send",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_ADD_COMMON_SYSTEM_NOTICE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	style = 0
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_COMMON_SYSTEM_NOTICE_L811"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	style = 0
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_COMMON_SYSTEM_NOTICE_L812"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[16] = slot71
+slot71 = {
+	func = "enableConsoleLogSave",
+	checkFunc = "getConsoleLogSaveEnable",
+	style = 1,
+	showFunc = "isMobilePlatformOrEditor",
+	subStyle = 0
+}
+slot72 = "getGameString"
+slot72 = slot42[slot72]
+slot74 = "GM_ENABLE_CONSOLE_LOG_SAVE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[17] = slot71
+slot71 = {
+	func = "showCreateCarWnd",
+	style = 1,
+	buttonText = "打开",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_CREATE_CAR_WND"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[18] = slot71
+slot71 = {
+	func = "trySkipNew",
+	checkFunc = "getEnableDebugTrySkipNew",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_TRY_SKIP_NEW"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[19] = slot71
+slot71 = {
+	func = "openAnimationRecord",
+	style = 1,
+	buttonText = "开始",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_ANIMATION_RECORD"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[20] = slot71
+slot71 = {
+	func = "enableNogoParmon",
+	checkFunc = "isNogoParmonEnabled",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ENABLE_NOGO_PARMON"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[21] = slot71
+slot71 = {
+	func = "setLogLevel",
+	style = 1,
+	dataFunc = "getLogLevelList",
+	subStyle = 1
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_LOG_LEVEL"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[22] = slot71
+slot71 = {
+	func = "enableLog",
+	checkFunc = "getLogEnable",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ENABLE_LOG"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[23] = slot71
+slot71 = {
+	func = "setCaptureCloseupEnable",
+	checkFunc = "getCaptureCloseupEnable",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_CAPTURE_CLOSEUP_ENABLE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[24] = slot71
+slot71 = {
+	func = "saveCaptureCloseupParams",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "保存",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SAVE_CAPTURE_CLOSEUP_PARAMS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "4",
 	label = "distance",
 	style = 0,
-	paramType = "number",
-	defaultValue = "4"
+	paramType = "number"
 }
-slot50 = "CLOSEUP_CAMERA"
-slot50 = slot40[slot50]
-slot51 = "PREF_KEY_DISTANCE"
-slot50 = slot50[slot51]
-slot51 = "saveKey"
-slot49[slot51] = slot50
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[13] = slot47
-slot45.funcList = slot46
-slot44[20] = slot45
-slot45 = {
+slot74 = "CLOSEUP_CAMERA"
+slot74 = slot57[slot74]
+slot75 = "PREF_KEY_DISTANCE"
+slot74 = slot74[slot75]
+slot75 = "saveKey"
+slot73[slot75] = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[25] = slot71
+slot69.funcList = slot70
+slot68[20] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Pandora"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "游戏全局时间",
-	subStyle = 2,
-	style = 3,
+slot70 = slot63.FuncTabLabel
+slot71 = "Pandora"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
 	func = "setGameTimeScaleParam",
-	buttonText = "确认"
+	style = 3,
+	subStyle = 2
 }
-slot48 = {}
-slot49 = {
-	label = "缩放值",
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_GAME_TIME_SCALE_PARAM"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_CONFIRM_ALT"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
 	style = 0
 }
-slot48[1] = slot49
-slot49 = {
-	getValueFunc = "getGameTimeScaleParam",
-	style = 6,
-	maxValue = 2,
+slot74 = slot63.getGmGameString
+slot76 = "GM_SET_GAME_TIME_SCALE_PARAM_L835"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
 	func = "modifyGameTimeScaleParam",
+	getValueFunc = "getGameTimeScaleParam",
 	minValue = 0.1,
+	step = 0.1,
+	maxValue = 2,
 	label = "缩放值",
-	step = 0.1
+	style = 6
 }
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot45.funcList = slot46
-slot44[21] = slot45
-slot45 = {
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "dumpGameTimeStopInfo",
+	style = 1,
+	buttonText = "Dump",
+	onBtnRelease = true,
+	label = "打印时停源(卡时停排查)",
+	subStyle = 2
+}
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[21] = slot69
+slot69 = {
 	type = 2
 }
-slot46 = slot43.FuncTabLabel
-slot47 = "Performance"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "播放特效",
-	subStyle = 0,
-	style = 3,
-	func = "playGmEffectByInput",
-	onBtnRelease = true,
-	buttonText = "播放"
+slot70 = slot63.FuncTabLabel
+slot71 = "DialogueGraph"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "setDialogueGraphPerformanceEnabled",
+	checkFunc = "getDialogueGraphPerformanceEnabled",
+	style = 1,
+	label = "性能统计",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "特效名/resID",
+slot70[1] = slot71
+slot71 = {
+	func = "playDialogueGraph",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "Play",
+	label = "Play Dialogue Graph",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	defaultValue = "80372966",
+	saveKey = "worldXGraphDialogueGraphId",
+	label = "dialogueGraphId",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[22] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "Performance"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "playGmEffectByInput",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "播放",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_PLAY_GM_EFFECT_BY_INPUT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	style = 0,
 	saveKey = "gmEffectName"
 }
-slot48[1] = slot49
-slot49 = {
-	label = "时长(秒,默认5)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_PLAY_GM_EFFECT_BY_INPUT_L872"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "5",
 	style = 0,
-	saveKey = "gmEffectDuration",
-	defaultValue = "5"
+	saveKey = "gmEffectDuration"
 }
-slot48[2] = slot49
-slot49 = {
-	label = "循环次数(0=不循环)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_PLAY_GM_EFFECT_BY_INPUT_L873"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "0",
 	style = 0,
-	saveKey = "gmEffectLoopCount",
-	defaultValue = "0"
+	saveKey = "gmEffectLoopCount"
 }
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[1] = slot47
-slot47 = {
-	label = "停止所有GM特效",
-	subStyle = 2,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_PLAY_GM_EFFECT_BY_INPUT_L874"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[1] = slot71
+slot71 = {
 	func = "stopAllGmEffects",
-	onBtnRelease = true,
-	buttonText = "停止"
-}
-slot46[2] = slot47
-slot47 = {
-	label = "性能快照",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_STOP_ALL_GM_EFFECTS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_STOP"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[2] = slot71
+slot71 = {
 	func = "perfSnapshot",
-	onBtnRelease = true,
-	buttonText = "采集"
-}
-slot46[3] = slot47
-slot47 = {
-	label = "BeginXChunkProfiler",
-	subStyle = 2,
 	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_PERF_SNAPSHOT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_PERF_SNAPSHOT_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[3] = slot71
+slot71 = {
+	func = "destroyOneFarthestEntity",
+	style = 1,
+	onBtnRelease = true,
+	label = "DESTROY_FARTHEST_ENTITY",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_START"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[4] = slot71
+slot71 = {
 	func = "beginXChunkProfiler",
-	onBtnRelease = true,
-	buttonText = "Begin"
-}
-slot46[4] = slot47
-slot47 = {
-	label = "EndXChunkProfiler",
-	subStyle = 2,
 	style = 1,
+	buttonText = "Begin",
+	onBtnRelease = true,
+	label = "BeginXChunkProfiler",
+	subStyle = 2
+}
+slot70[5] = slot71
+slot71 = {
 	func = "endXChunkProfiler",
-	onBtnRelease = true,
-	buttonText = "End"
-}
-slot46[5] = slot47
-slot47 = {
-	label = "DumpXChunkProfiler",
-	subStyle = 2,
 	style = 1,
+	buttonText = "End",
+	onBtnRelease = true,
+	label = "EndXChunkProfiler",
+	subStyle = 2
+}
+slot70[6] = slot71
+slot71 = {
 	func = "dumpXChunkProfiler",
-	onBtnRelease = true,
-	buttonText = "Dump"
-}
-slot46[6] = slot47
-slot47 = {
-	label = "开始性能录制",
-	subStyle = 0,
-	style = 3,
-	func = "startPerfRecording",
-	onBtnRelease = true,
-	buttonText = "开始"
-}
-slot48 = {}
-slot49 = {
-	label = "采样间隔(帧,默认5)",
-	style = 0,
-	saveKey = "gmPerfInterval",
-	defaultValue = "5"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[7] = slot47
-slot47 = {
-	label = "停止性能录制",
-	subStyle = 2,
 	style = 1,
-	func = "stopPerfRecording",
+	buttonText = "Dump",
 	onBtnRelease = true,
-	buttonText = "停止"
+	label = "DumpXChunkProfiler",
+	subStyle = 2
 }
-slot46[8] = slot47
-slot47 = {
-	label = "批量特效采集(飞书表)",
-	subStyle = 0,
+slot70[7] = slot71
+slot71 = {
+	func = "startPerfRecording",
 	style = 3,
-	func = "runEffectBatchPerfTestFromFeishu",
 	onBtnRelease = true,
-	buttonText = "开始"
+	buttonText = "开始",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "飞书Sheet索引(默认0)",
+slot72 = slot63.getGmGameString
+slot74 = "GM_START_PERF_RECORDING"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "5",
 	style = 0,
-	saveKey = "gmBatchFeishuSheet",
-	defaultValue = "0"
+	saveKey = "gmPerfInterval"
 }
-slot48[1] = slot49
-slot49 = {
-	label = "每个测试时长(秒,默认10)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_START_PERF_RECORDING_L886"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[8] = slot71
+slot71 = {
+	func = "stopPerfRecording",
+	style = 1,
+	buttonText = "停止",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_STOP_PERF_RECORDING"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[9] = slot71
+slot71 = {
+	func = "runEffectBatchPerfTestFromFeishu",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "开始",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "0",
 	style = 0,
-	saveKey = "gmBatchFeishuTime",
-	defaultValue = "10"
+	saveKey = "gmBatchFeishuSheet"
 }
-slot48[2] = slot49
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU_L894"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "10",
+	style = 0,
+	saveKey = "gmBatchFeishuTime"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU_L895"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "5",
 	label = "采样间隔(帧,默认5)",
 	style = 0,
-	saveKey = "gmBatchFeishuInterval",
-	defaultValue = "5"
+	saveKey = "gmBatchFeishuInterval"
 }
-slot48[3] = slot49
-slot49 = {
-	label = "叠播并发数(默认1)",
+slot72[3] = slot73
+slot73 = {
+	defaultValue = "1",
 	style = 0,
-	saveKey = "gmBatchFeishuStack",
-	defaultValue = "1"
+	saveKey = "gmBatchFeishuStack"
 }
-slot48[4] = slot49
-slot49 = {
-	label = "每N个上传一次(默认500,0=不自动上传)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU_L897"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[4] = slot73
+slot73 = {
+	defaultValue = "500",
 	style = 0,
-	saveKey = "gmBatchFeishuUploadEveryN",
-	defaultValue = "500"
+	saveKey = "gmBatchFeishuUploadEveryN"
 }
-slot48[5] = slot49
-slot49 = {
-	label = "飞书ParentToken(自动上传用)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU_L898"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[5] = slot73
+slot73 = {
+	defaultValue = "Vvcmw2aMNiTYnlkFn2RctTfhnOc",
 	style = 0,
-	saveKey = "gmBatchFeishuAutoParent",
-	defaultValue = "Vvcmw2aMNiTYnlkFn2RctTfhnOc"
+	saveKey = "gmBatchFeishuAutoParent"
 }
-slot48[6] = slot49
-slot49 = {
-	label = "标题前缀(留空=自动时间戳)",
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU_L899"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[6] = slot73
+slot73 = {
 	style = 0,
 	saveKey = "gmBatchFeishuAutoTitle"
 }
-slot48[7] = slot49
-slot47.subItems = slot48
-slot46[9] = slot47
-slot47 = {
-	label = "停止批量特效采集",
-	subStyle = 2,
-	style = 1,
+slot74 = slot63.getGmGameString
+slot76 = "GM_RUN_EFFECT_BATCH_PERF_TEST_FROM_FEISHU_L900"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[7] = slot73
+slot71.subItems = slot72
+slot70[10] = slot71
+slot71 = {
 	func = "stopEffectBatchPerfTest",
+	style = 1,
+	buttonText = "停止",
 	onBtnRelease = true,
-	buttonText = "停止"
+	subStyle = 2
 }
-slot46[10] = slot47
-slot47 = {
-	label = "开启Hierarchy",
-	subStyle = 2,
-	style = 1,
+slot72 = slot63.getGmGameString
+slot74 = "GM_STOP_EFFECT_BATCH_PERF_TEST"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[11] = slot71
+slot71 = {
 	func = "openHierarchy",
-	buttonText = "开启"
-}
-slot46[11] = slot47
-slot47 = {
-	label = "开启Inspector",
-	subStyle = 2,
 	style = 1,
+	buttonText = "开启",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_HIERARCHY"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[12] = slot71
+slot71 = {
 	func = "openInspector",
-	buttonText = "开启"
-}
-slot46[12] = slot47
-slot47 = {
-	label = "开启SRDebugger",
-	subStyle = 2,
 	style = 1,
+	buttonText = "开启",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_INSPECTOR"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[13] = slot71
+slot71 = {
 	func = "openSrDebugger",
-	buttonText = "开启"
+	style = 1,
+	buttonText = "开启",
+	subStyle = 2
 }
-slot46[13] = slot47
-slot47 = {
-	label = "调试Timeline",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_SR_DEBUGGER"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[14] = slot71
+slot71 = {
+	func = "debugTimeline",
 	style = 3,
-	func = "debugTimeline"
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
+slot72 = slot63.getGmGameString
+slot74 = "GM_DEBUG_TIMELINE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
 	label = "resId",
 	style = 0,
 	saveKey = "debugTimelineResId"
 }
-slot48[1] = slot49
-slot49 = {
+slot72[1] = slot73
+slot73 = {
 	label = "time",
 	style = 0,
 	saveKey = "debugTimelineTime"
 }
-slot48[2] = slot49
-slot49 = {
+slot72[2] = slot73
+slot73 = {
 	label = "stopTime",
 	style = 0,
 	saveKey = "debugTimelineDuration"
 }
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[14] = slot47
-slot47 = {
-	label = "依次播放所有timeline",
-	subStyle = 2,
-	style = 1,
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[15] = slot71
+slot71 = {
 	func = "playTimelineInfoDataSequential",
+	style = 1,
+	buttonText = "开始",
 	onBtnRelease = true,
-	buttonText = "开始"
+	subStyle = 2
 }
-slot46[15] = slot47
-slot47 = {
-	label = "随机传送当前场景N次",
-	subStyle = 0,
-	style = 2,
+slot72 = slot63.getGmGameString
+slot74 = "GM_PLAY_TIMELINE_INFO_DATA_SEQUENTIAL"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[16] = slot71
+slot71 = {
 	func = "teleportRandomInactiveNTimes",
-	onBtnRelease = true,
-	buttonText = "确定"
-}
-slot46[16] = slot47
-slot47 = {
-	label = "打开UI(N次)",
-	subStyle = 0,
-	style = 3,
-	func = "openUIListNTimes",
-	buttonText = "开始"
-}
-slot48 = {}
-slot49 = {
-	label = "界面ID 列表(逗号分隔,0为关闭)",
-	style = 0
-}
-slot48[1] = slot49
-slot49 = {
-	label = "次数",
-	style = 0,
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[17] = slot47
-slot47 = {
-	label = "随机释放宠物Q/E/R(N次)",
-	subStyle = 0,
-	style = 3,
-	func = "randomCastPetSkillsNTimes",
-	buttonText = "开始"
-}
-slot48 = {}
-slot49 = {
-	label = "技能列表(Q/E/R,逗号分隔)",
-	style = 0
-}
-slot48[1] = slot49
-slot49 = {
-	label = "次数N",
-	style = 0,
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[2] = slot49
-slot49 = {
-	label = "出战宠物切换",
-	style = 0,
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[3] = slot49
-slot47.subItems = slot48
-slot46[18] = slot47
-slot47 = {
-	label = "轮换宠物技能",
-	subStyle = 2,
-	style = 1,
-	func = "rotatePetsAndCastUlt",
-	onBtnRelease = true,
-	buttonText = "开始/停止"
-}
-slot46[19] = slot47
-slot47 = {
-	label = "添加全部道具",
-	subStyle = 0,
-	style = 3,
-	func = "addAllItems",
-	buttonText = "执行"
-}
-slot48 = {}
-slot49 = {
-	label = "背包invId列表(逗号分隔)",
-	style = 0,
-	defaultValue = "1,2,3,4,5,8,11"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[20] = slot47
-slot47 = {
-	label = "录制路点(再次点击关闭)",
-	subStyle = 2,
-	style = 1,
-	func = "recordCameraPosEveryT",
-	buttonText = "开始"
-}
-slot46[21] = slot47
-slot47 = {
-	label = "随机创建怪物并战斗",
-	subStyle = 0,
-	style = 3,
-	func = "randomCreatePuppetsAndFight",
-	buttonText = "执行"
-}
-slot48 = {}
-slot49 = {
-	label = "数量A",
-	style = 0,
-	paramType = "number",
-	defaultValue = "1"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[22] = slot47
-slot47 = {
-	label = "读取txt坐标并自动寻路",
-	subStyle = 0,
-	style = 3,
-	func = "autoPathFindByFeiShuPoints",
-	onBtnRelease = true,
-	buttonText = "开始"
-}
-slot48 = {}
-slot49 = {
-	label = "路点ID",
-	style = 0,
-	paramType = "number",
-	defaultValue = "101"
-}
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[23] = slot47
-slot45.funcList = slot46
-slot44[22] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot47 = "Avatar"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "模拟写入头发数据失败",
-	subStyle = 0,
-	style = 1,
-	func = "disablePlayerFirstInit",
-	checkFunc = "checkDisablePlayerFirstInit"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "切换主角模型为npc(0表示恢复)",
-	subStyle = 0,
 	style = 2,
-	func = "changePlayerAppearance",
+	buttonText = "确定",
 	onBtnRelease = true,
-	buttonText = "切换"
+	subStyle = 0
 }
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[23] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot47 = "Temporary"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "使用HUDV2",
-	subStyle = 0,
-	style = 1,
-	func = "setHudV2Enable",
-	checkFunc = "getHudV2Enable"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "播放捕捉成功演出",
-	subStyle = 0,
+slot72 = slot63.getGmGameString
+slot74 = "GM_TELEPORT_RANDOM_INACTIVE_NTIMES"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[17] = slot71
+slot71 = {
+	func = "openUIListNTimes",
 	style = 3,
-	func = "playFishingCaptureSuccessEffect",
-	buttonText = "播放"
+	buttonText = "开始",
+	subStyle = 0
 }
-slot48 = {}
-slot49 = {
-	label = "目标actorId",
-	style = 0,
-	saveKey = "fcSuccessActorId"
+slot72 = slot63.getGmGameString
+slot74 = "GM_OPEN_UILIST_NTIMES"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	style = 0
 }
-slot48[1] = slot49
-slot49 = {
-	label = "ballItemId",
-	style = 0,
-	saveKey = "fcSuccessItemId"
-}
-slot48[2] = slot49
-slot47.subItems = slot48
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[24] = slot45
-slot45 = {
-	type = 2
-}
-slot46 = slot43.FuncTabLabel
-slot47 = "Achievement"
-slot46 = slot46[slot47]
-slot45.label = slot46
-slot46 = {}
-slot47 = {
-	label = "解锁所有成就",
-	subStyle = 2,
-	style = 1,
-	func = "unlockAllAchievements",
-	onBtnRelease = true,
-	buttonText = "解锁全部"
-}
-slot46[1] = slot47
-slot47 = {
-	label = "解锁单个成就",
-	subStyle = 0,
-	style = 4,
-	func = "unlockAchievement",
-	dataFunc = "getAchievementList",
-	subSearch = true
-}
-slot48 = {}
-slot49 = {
+slot74 = slot63.getGmGameString
+slot76 = "GM_OPEN_UILIST_NTIMES_L920"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
 	defaultValue = "1",
 	style = 0,
-	paramType = "number",
-	label = "进度值",
-	tips = "当前进度值，目标值自动从成就数据获取"
+	paramType = "number"
 }
-slot48[1] = slot49
-slot47.subItems = slot48
-slot46[2] = slot47
-slot45.funcList = slot46
-slot44[25] = slot45
-slot43.gmFuncMap = slot44
-slot44 = "emptyFunc"
+slot74 = slot63.getGmGameString
+slot76 = "GM_OPEN_UILIST_NTIMES_L921"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[18] = slot71
+slot71 = {
+	func = "randomCastPetSkillsNTimes",
+	style = 3,
+	buttonText = "开始",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RANDOM_CAST_PET_SKILLS_NTIMES"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	style = 0
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_RANDOM_CAST_PET_SKILLS_NTIMES_L926"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "1",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_RANDOM_CAST_PET_SKILLS_NTIMES_L927"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "1",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_RANDOM_CAST_PET_SKILLS_NTIMES_L928"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[19] = slot71
+slot71 = {
+	func = "rotatePetsAndCastUlt",
+	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ROTATE_PETS_AND_CAST_ULT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_ROTATE_PETS_AND_CAST_ULT_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[20] = slot71
+slot71 = {
+	func = "addAllItems",
+	style = 3,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_ADD_ALL_ITEMS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_EXECUTE"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "1,2,3,4,5,8,11",
+	style = 0
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_ADD_ALL_ITEMS_L934"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[21] = slot71
+slot71 = {
+	func = "recordCameraPosEveryT",
+	style = 1,
+	buttonText = "开始",
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RECORD_CAMERA_POS_EVERY_T"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[22] = slot71
+slot71 = {
+	func = "randomCreatePuppetsAndFight",
+	style = 3,
+	buttonText = "执行",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_RANDOM_CREATE_PUPPETS_AND_FIGHT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_RANDOM_CREATE_PUPPETS_AND_FIGHT_L940"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[23] = slot71
+slot71 = {
+	func = "autoPathFindByFeiShuPoints",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "开始",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_AUTO_PATH_FIND_BY_FEI_SHU_POINTS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "101",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_AUTO_PATH_FIND_BY_FEI_SHU_POINTS_L945"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[24] = slot71
+slot69.funcList = slot70
+slot68[23] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "Avatar"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "disablePlayerFirstInit",
+	checkFunc = "checkDisablePlayerFirstInit",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_DISABLE_PLAYER_FIRST_INIT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "changePlayerAppearance",
+	style = 2,
+	onBtnRelease = true,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_CHANGE_PLAYER_APPEARANCE"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_BUTTON_SWITCH"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[24] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "Temporary"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "openHomeCampReportPreview",
+	style = 1,
+	buttonText = "打开",
+	onBtnRelease = true,
+	label = "打开驿站举报界面（预览）",
+	subStyle = 2
+}
+slot70[1] = slot71
+slot71 = {
+	func = "debugSimulateCafePetIvUp",
+	style = 3,
+	buttonText = "Run",
+	label = "Cafe pet IV up sim",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
+	label = "propIndex",
+	style = 0,
+	saveKey = "cafePetIvUpPropIndex"
+}
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "1",
+	label = "addValue",
+	style = 0,
+	saveKey = "cafePetIvUpAddValue"
+}
+slot72[2] = slot73
+slot73 = {
+	defaultValue = "0",
+	label = "openNow(1/0)",
+	style = 0,
+	saveKey = "cafePetIvUpOpenNow"
+}
+slot72[3] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot71 = {
+	func = "setNvidiaVoiceTest",
+	checkFunc = "getNvidiaVoiceTest",
+	style = 1,
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SET_NVIDIA_VOICE_TEST"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[3] = slot71
+slot71 = {
+	func = "connectLocalASRServer",
+	style = 3,
+	buttonText = "Ping",
+	label = "ASR local server",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	defaultValue = "127.0.0.1",
+	label = "IP",
+	style = 0,
+	saveKey = "nvidiaASRIP"
+}
+slot72[1] = slot73
+slot73 = {
+	defaultValue = "8000",
+	label = "Port",
+	style = 0,
+	saveKey = "nvidiaASRPort"
+}
+slot72[2] = slot73
+slot71.subItems = slot72
+slot70[4] = slot71
+slot69.funcList = slot70
+slot68[25] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "Achievement"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "showAchievements",
+	style = 1,
+	buttonText = "打开",
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_SHOW_ACHIEVEMENTS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "clearPlatformAchievement",
+	style = 3,
+	onBtnRelease = true,
+	buttonText = "清除",
+	label = "Steam/Epic Clear Achievement",
+	subStyle = 0
+}
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
+	saveKey = "platformClearAchievementId",
+	label = "Achievement ID",
+	style = 0,
+	paramType = "number"
+}
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[26] = slot69
+slot69 = {
+	type = 2
+}
+slot70 = slot63.FuncTabLabel
+slot71 = "XboxAchievement"
+slot70 = slot70[slot71]
+slot69.label = slot70
+slot70 = {}
+slot71 = {
+	func = "unlockAllAchievements",
+	style = 1,
+	onBtnRelease = true,
+	subStyle = 2
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_UNLOCK_ALL_ACHIEVEMENTS"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = slot63.getGmGameString
+slot74 = "GM_UNLOCK_ALL_ACHIEVEMENTS_BUTTON"
+slot72 = slot72(slot74)
+slot71.buttonText = slot72
+slot70[1] = slot71
+slot71 = {
+	func = "unlockAchievement",
+	style = 4,
+	subSearch = true,
+	dataFunc = "getAchievementList",
+	subStyle = 0
+}
+slot72 = slot63.getGmGameString
+slot74 = "GM_UNLOCK_ACHIEVEMENT"
+slot72 = slot72(slot74)
+slot71.label = slot72
+slot72 = {}
+slot73 = {
+	defaultValue = "1",
+	style = 0,
+	paramType = "number"
+}
+slot74 = slot63.getGmGameString
+slot76 = "GM_UNLOCK_ACHIEVEMENT_L1000"
+slot74 = slot74(slot76)
+slot73.label = slot74
+slot74 = slot63.getGmGameString
+slot76 = "GM_UNLOCK_ACHIEVEMENT_TIPS_L1000"
+slot74 = slot74(slot76)
+slot73.tips = slot74
+slot72[1] = slot73
+slot71.subItems = slot72
+slot70[2] = slot71
+slot69.funcList = slot70
+slot68[27] = slot69
+slot63.gmFuncMap = slot68
+slot68 = "emptyFunc"
 
-slot45 = function()
+slot69 = function()
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -3497,10 +5647,1700 @@ slot45 = function()
 
 end
 
-slot43[slot44] = slot45
-slot44 = "execCmdList"
+slot63[slot68] = slot69
+slot68 = "openHomeCampReportPreview"
 
-slot45 = function(slot0)
+slot69 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot1 = HomelandReportUtils
+	slot1 = slot1.isHomeCampReportAvailable
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-14, warpins: 1 ---
+	slot1 = slot0.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "Please enter Home Camp first"
+
+	slot1(slot3, slot4)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-21, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.checkUIOpen
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_CONFIG
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-26, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.close
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_CONFIG
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 27-31, warpins: 2 ---
+	slot1 = HomelandReportUtils
+	slot1 = slot1.openHomeCampReport
+	slot3 = true
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot63[slot68] = slot69
+
+slot68 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = "nil"
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = slot0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-6, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot69 = "queryCoreCarryCertifyInfo"
+
+slot70 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot1 = tonumber
+	slot3 = GmToolUtils
+	slot3 = slot3.getInputValue
+	slot5 = slot0
+	slot6 = 0
+	MULTRES = slot3(slot5, slot6)
+	slot1 = slot1(MULTRES)
+	slot2 = tonumber
+	slot4 = GmToolUtils
+	slot4 = slot4.getInputValue
+	slot6 = slot0
+	slot7 = 1
+	MULTRES = slot4(slot6, slot7)
+	slot2 = slot2(MULTRES)
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #0 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 19-27, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = "当前角色未就绪，无法查询"
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 28-29, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #3 30-31, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #4 32-34, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #4 ---
+
+	if slot1 > slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 35-37, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #5 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 38-41, warpins: 1 ---
+	slot3 = math
+	slot3 = slot3.huge
+	--- END OF BLOCK #6 ---
+
+	if slot3 > slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 42-45, warpins: 1 ---
+	slot3 = math
+	slot3 = slot3.huge
+	--- END OF BLOCK #7 ---
+
+	if slot3 > slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 46-51, warpins: 1 ---
+	slot3 = math
+	slot3 = slot3.floor
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 52-57, warpins: 1 ---
+	slot3 = math
+	slot3 = slot3.floor
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #9 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 58-66, warpins: 8 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = "invId 和 genId 必须为正整数"
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 67-75, warpins: 2 ---
+	slot3 = ItemUtils
+	slot3 = slot3.getItem
+	slot5 = pg
+	slot5 = slot5.me
+	slot6 = slot1
+	slot7 = slot2
+	slot3, slot4 = slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #11 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #12 76-77, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 78-82, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.showBubbleMessageById
+	--- END OF BLOCK #13 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 83-88, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.showBubbleMessageById
+	slot7 = slot4
+
+	slot5(slot7)
+
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 89-96, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.tips
+	slot7 = slot5
+	slot5 = slot5.showTextTip
+	slot8 = "未找到物品"
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 97-97, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 98-103, warpins: 2 ---
+	slot5 = ItemUtils
+	slot5 = slot5.isCoreCarryItem
+	slot7 = slot3.id
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #17 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 104-112, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.tips
+	slot7 = slot5
+	slot5 = slot5.showTextTip
+	slot8 = "该物品不是核心携带物"
+
+	slot5(slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 113-118, warpins: 2 ---
+	slot5 = ItemUtils
+	slot5 = slot5.getPropertyWithType
+	slot7 = slot3
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #19 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 119-121, warpins: 1 ---
+	slot6 = slot5.isValid
+	--- END OF BLOCK #20 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 122-126, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.isValid
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #21 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 127-135, warpins: 3 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	slot8 = slot6
+	slot6 = slot6.showTextTip
+	slot9 = "核心携带物数据无效"
+
+	slot6(slot8, slot9)
+
+	return
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 136-142, warpins: 2 ---
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.INFO
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #23 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 143-151, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	slot8 = slot6
+	slot6 = slot6.showTextTip
+	slot9 = "请先开启 INFO 日志后再查询"
+
+	slot6(slot8, slot9)
+
+	return
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 152-162, warpins: 2 ---
+	slot6 = PetManagementDataHelper
+	slot6 = slot6.getCoreCarryCertifyDisplayState
+	slot8 = slot5
+	slot6, slot7, slot8 = slot6(slot8)
+	slot9 = PetManagementDataHelper
+	slot9 = slot9.isCoreCarryCertified
+	slot11 = slot5
+	slot9 = slot9(slot11)
+	slot10 = slot5.ownerPetId
+	--- END OF BLOCK #25 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #26 163-164, warpins: 1 ---
+	--- END OF BLOCK #26 ---
+
+	if slot10 ~= "" then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #27 165-169, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.me
+	slot11 = slot11.pets
+	--- END OF BLOCK #27 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 170-175, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.me
+	slot11 = slot11.pets
+	slot11 = slot11[slot10]
+	--- END OF BLOCK #28 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 176-176, warpins: 4 ---
+	slot11 = nil
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 177-198, warpins: 2 ---
+	slot12 = PetManagementDataHelper
+	slot12 = slot12.getPetBaseFormPet
+	slot14 = slot11
+	slot12, slot13 = slot12(slot14)
+	slot14 = PetManagementDataHelper
+	slot14 = slot14.getCoreCarryCertifyActivationState
+	slot16 = slot5
+	slot17 = slot11
+	slot14 = slot14(slot16, slot17)
+	slot15 = PetManagementDataHelper
+	slot15 = slot15.getCoreCarryCertifiedPetInfo
+	slot17 = slot5
+	slot18 = slot11
+	slot15 = slot15(slot17, slot18)
+	slot16 = pcall
+	slot18 = PetManagementDataHelper
+	slot18 = slot18.getCoreCarryCertifySkillPair
+	slot19 = slot5
+	slot16, slot17, slot18 = slot16(slot18, slot19)
+	slot19 = nil
+	--- END OF BLOCK #30 ---
+
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 199-205, warpins: 1 ---
+	slot20 = tostring
+	slot22 = slot17
+	slot20 = slot20(slot22)
+	slot19 = slot20
+	slot20 = nil
+	slot18 = nil
+	slot17 = slot20
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 206-241, warpins: 2 ---
+	slot22 = slot5
+	slot20 = slot5.getLevelAndExp
+	slot20, slot21 = slot20(slot22)
+	slot22 = slot5.certifiedBaseFormPet
+	slot23 = {}
+	slot24 = PetManagementDataHelper
+	slot24 = slot24.CoreCarryContactState
+	slot24 = slot24.Unlocked
+	slot25 = "Unlocked"
+	slot23[slot24] = slot25
+	slot24 = PetManagementDataHelper
+	slot24 = slot24.CoreCarryContactState
+	slot24 = slot24.NotContact
+	slot25 = "NotContact"
+	slot23[slot24] = slot25
+	slot24 = PetManagementDataHelper
+	slot24 = slot24.CoreCarryContactState
+	slot24 = slot24.Contacted
+	slot25 = "Contacted"
+	slot23[slot24] = slot25
+	slot24 = ItemData
+	slot25 = slot3.id
+	slot24 = slot24[slot25]
+	slot25 = logger
+	slot27 = slot25
+	slot25 = slot25.info
+	slot28 = "[CoreCarryCertifySnapshot][ClientSync] %s"
+	slot29 = inspect
+	slot31 = {
+		source = "客户端同步快照（只读查询）"
+	}
+	slot31.invId = slot1
+	slot31.genId = slot2
+	slot32 = slot3.id
+	slot31.itemId = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	--- END OF BLOCK #32 ---
+
+	slot24 = if slot24 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 242-244, warpins: 1 ---
+	slot34 = slot24.quality
+	--- END OF BLOCK #33 ---
+
+	slot34 = if not slot34 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 245-245, warpins: 2 ---
+	slot34 = nil
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 246-250, warpins: 2 ---
+	slot32 = slot32(slot34)
+	slot31.quality = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	--- END OF BLOCK #35 ---
+
+	slot34 = if not slot20 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 251-251, warpins: 1 ---
+	slot34 = slot8
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 252-266, warpins: 2 ---
+	slot32 = slot32(slot34)
+	slot31.level = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	slot34 = slot21
+	slot32 = slot32(slot34)
+	slot31.exp = slot32
+	slot32 = slot5.totalExp
+	slot31.totalExp = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	slot34 = slot7
+	slot32 = slot32(slot34)
+	slot31.requiredLevel = slot32
+	slot32 = slot23[slot6]
+	--- END OF BLOCK #37 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 267-269, warpins: 1 ---
+	slot32 = tostring
+	slot34 = slot6
+	slot32 = slot32(slot34)
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 270-278, warpins: 2 ---
+	slot31.displayState = slot32
+	slot31.isCertified = slot9
+	slot31.certifiedBaseFormPet = slot22
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	slot34 = slot10
+	slot32 = slot32(slot34)
+	slot31.ownerPetId = slot32
+	--- END OF BLOCK #39 ---
+
+	if slot11 == nil then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 279-280, warpins: 1 ---
+	slot32 = false
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
+
+
+	--- BLOCK #41 281-281, warpins: 1 ---
+	slot32 = true
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 282-285, warpins: 2 ---
+	slot31.ownerPetInfoFound = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	--- END OF BLOCK #42 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #44
+	end
+
+
+	--- BLOCK #43 286-288, warpins: 1 ---
+	slot34 = slot11.templateId
+	--- END OF BLOCK #43 ---
+
+	slot34 = if not slot34 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #45
+	end
+
+
+	--- BLOCK #44 289-289, warpins: 2 ---
+	slot34 = nil
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 290-297, warpins: 2 ---
+	slot32 = slot32(slot34)
+	slot31.ownerTemplateId = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	slot34 = slot12
+	slot32 = slot32(slot34)
+	slot31.ownerBaseFormPet = slot32
+	--- END OF BLOCK #45 ---
+
+	if slot13 == nil then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 298-299, warpins: 1 ---
+	slot32 = false
+	--- END OF BLOCK #46 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
+
+
+	--- BLOCK #47 300-300, warpins: 1 ---
+	slot32 = true
+	--- END OF BLOCK #47 ---
+
+	FLOW; TARGET BLOCK #48
+
+
+	--- BLOCK #48 301-303, warpins: 2 ---
+	slot31.ownerPetDataFound = slot32
+	--- END OF BLOCK #48 ---
+
+	if slot12 ~= nil then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #49 304-305, warpins: 1 ---
+	--- END OF BLOCK #49 ---
+
+	slot32 = if slot9 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #50 306-307, warpins: 1 ---
+	--- END OF BLOCK #50 ---
+
+	if slot12 ~= slot22 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
+
+
+	--- BLOCK #51 308-309, warpins: 2 ---
+	slot32 = false
+	--- END OF BLOCK #51 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
+
+
+	--- BLOCK #52 310-310, warpins: 1 ---
+	slot32 = true
+	--- END OF BLOCK #52 ---
+
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 311-317, warpins: 3 ---
+	slot31.baseFormMatched = slot32
+	slot31.activationState = slot14
+	slot32 = PetManagementDataHelper
+	slot32 = slot32.CoreCarryCertifyActivationState
+	slot32 = slot32.Active
+	--- END OF BLOCK #53 ---
+
+	if slot14 ~= slot32 then
+	JUMP TO BLOCK #54
+	else
+	JUMP TO BLOCK #55
+	end
+
+
+	--- BLOCK #54 318-319, warpins: 1 ---
+	slot32 = false
+	--- END OF BLOCK #54 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #56
+
+
+	--- BLOCK #55 320-320, warpins: 1 ---
+	slot32 = true
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 321-324, warpins: 2 ---
+	slot31.active = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	--- END OF BLOCK #56 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #57
+	else
+	JUMP TO BLOCK #58
+	end
+
+
+	--- BLOCK #57 325-327, warpins: 1 ---
+	slot34 = slot15.id
+	--- END OF BLOCK #57 ---
+
+	slot34 = if not slot34 then
+	JUMP TO BLOCK #58
+	else
+	JUMP TO BLOCK #59
+	end
+
+
+	--- BLOCK #58 328-328, warpins: 2 ---
+	slot34 = nil
+	--- END OF BLOCK #58 ---
+
+	FLOW; TARGET BLOCK #59
+
+
+	--- BLOCK #59 329-332, warpins: 2 ---
+	slot32 = slot32(slot34)
+	slot31.matchingBaseFormPetId = slot32
+	--- END OF BLOCK #59 ---
+
+	if slot15 == nil then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #61
+	end
+
+
+	--- BLOCK #60 333-334, warpins: 1 ---
+	slot32 = false
+	--- END OF BLOCK #60 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #62
+
+
+	--- BLOCK #61 335-335, warpins: 1 ---
+	slot32 = true
+	--- END OF BLOCK #61 ---
+
+	FLOW; TARGET BLOCK #62
+
+
+	--- BLOCK #62 336-340, warpins: 2 ---
+	slot31.matchingBaseFormPetFound = slot32
+	slot31.skillPairError = slot19
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	--- END OF BLOCK #62 ---
+
+	slot17 = if slot17 then
+	JUMP TO BLOCK #63
+	else
+	JUMP TO BLOCK #64
+	end
+
+
+	--- BLOCK #63 341-343, warpins: 1 ---
+	slot34 = slot17.abilityId
+	--- END OF BLOCK #63 ---
+
+	slot34 = if not slot34 then
+	JUMP TO BLOCK #64
+	else
+	JUMP TO BLOCK #65
+	end
+
+
+	--- BLOCK #64 344-344, warpins: 2 ---
+	slot34 = nil
+	--- END OF BLOCK #64 ---
+
+	FLOW; TARGET BLOCK #65
+
+
+	--- BLOCK #65 345-349, warpins: 2 ---
+	slot32 = slot32(slot34)
+	slot31.beforeSkillAbilityId = slot32
+	slot32 = getCoreCarryCertifySnapshotLogValue
+	--- END OF BLOCK #65 ---
+
+	slot18 = if slot18 then
+	JUMP TO BLOCK #66
+	else
+	JUMP TO BLOCK #67
+	end
+
+
+	--- BLOCK #66 350-352, warpins: 1 ---
+	slot34 = slot18.abilityId
+	--- END OF BLOCK #66 ---
+
+	slot34 = if not slot34 then
+	JUMP TO BLOCK #67
+	else
+	JUMP TO BLOCK #68
+	end
+
+
+	--- BLOCK #67 353-353, warpins: 2 ---
+	slot34 = nil
+	--- END OF BLOCK #67 ---
+
+	FLOW; TARGET BLOCK #68
+
+
+	--- BLOCK #68 354-366, warpins: 2 ---
+	slot32 = slot32(slot34)
+	slot31.afterSkillAbilityId = slot32
+	MULTRES = slot29(slot31)
+
+	slot25(slot27, slot28, MULTRES)
+
+	slot25 = pg
+	slot25 = slot25.global
+	slot25 = slot25.ui
+	slot25 = slot25.tips
+	slot27 = slot25
+	slot25 = slot25.showTextTip
+	slot28 = "已输出到日志"
+
+	slot25(slot27, slot28)
+
+	return
+	--- END OF BLOCK #68 ---
+
+
+
+end
+
+slot63[slot69] = slot70
+
+slot69 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0[slot1]
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-14, warpins: 2 ---
+	slot2 = slot0[slot1]
+	slot4 = slot2
+	slot2 = slot2.GetChild
+	slot5 = "InputField"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-16, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-22, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.GetComponent
+	slot6 = "UTMPInputField"
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-25, warpins: 1 ---
+	slot4 = slot3.text
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-26, warpins: 2 ---
+	slot4 = nil
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 27-27, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot70 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = tonumber
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot0 = slot1
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	if slot0 <= slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-18, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "Invalid dialogue graph id"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #3 19-21, warpins: 1 ---
+	slot1 = pg
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 22-25, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-30, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.dialogue
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 31-31, warpins: 3 ---
+	slot1 = nil
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 32-33, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 34-42, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "DialogueSystem is not ready"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #9 43-48, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.isDialogueGraphIdValid
+	slot5 = slot0
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #9 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 49-57, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "Invalid dialogue graph id"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #11 58-62, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.isLoadingScene
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #11 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 63-71, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "Scene is loading"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #13 72-82, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.initDialogueGraphInfo
+	slot5 = slot0
+	slot6, slot7, slot8, slot9 = nil
+	slot2 = slot2(slot4, slot5, slot6, slot7, slot8, slot9)
+	slot5 = slot1
+	slot3 = slot1.canPlayTargetDialogueGraph
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #13 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 83-91, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = "Dialogue priority blocked"
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #15 92-104, warpins: 1 ---
+	slot3 = pg
+	slot4 = nil
+	slot3.__dialogueGraphCompiledRunnerDiagnostics = slot4
+	slot3 = pg
+	slot4 = nil
+	slot3.__dialogueGraphCompiledRunnerRuntimeError = slot4
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.INFO
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 105-112, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "[DialogueGraphGM] play dialogueGraphId=%s"
+	slot7 = tostring
+	slot9 = slot0
+	MULTRES = slot7(slot9)
+
+	slot3(slot5, slot6, MULTRES)
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 113-126, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.close
+	slot6 = 62
+
+	slot3(slot5, slot6)
+
+	slot3 = xpcall
+
+	slot5 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = dialogueSystem
+		slot2 = slot0
+		slot0 = slot0.playDialogueGraph
+		slot3 = dialogueGraphId
+
+		slot4 = function(slot0)
+			--- BLOCK #0 1-7, warpins: 1 ---
+			slot1 = LoggerManager
+			slot1 = slot1.checkLogger
+			slot3 = LoggerConst
+			slot3 = slot3.INFO
+			slot1 = slot1(slot3)
+			--- END OF BLOCK #0 ---
+
+			slot1 = if slot1 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 8-18, warpins: 1 ---
+			slot1 = logger
+			slot3 = slot1
+			slot1 = slot1.info
+			slot4 = "[DialogueGraphGM] graph=%s ret=%s"
+			slot5 = tostring
+			slot7 = dialogueGraphId
+			slot5 = slot5(slot7)
+			slot6 = tostring
+			slot8 = slot0
+			MULTRES = slot6(slot8)
+
+			slot1(slot3, slot4, slot5, MULTRES)
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 19-33, warpins: 2 ---
+			slot1 = pg
+			slot1 = slot1.global
+			slot1 = slot1.ui
+			slot1 = slot1.tips
+			slot3 = slot1
+			slot1 = slot1.showTextTip
+			slot4 = string
+			slot4 = slot4.format
+			slot6 = "DialogueGraph %s done"
+			slot7 = tostring
+			slot9 = dialogueGraphId
+			MULTRES = slot7(slot9)
+			MULTRES = slot4(slot6, MULTRES)
+
+			slot1(slot3, MULTRES)
+
+			return
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6 = debug
+	slot6 = slot6.traceback
+	slot3, slot4 = slot3(slot5, slot6)
+	--- END OF BLOCK #17 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #18 127-133, warpins: 1 ---
+	slot5 = LoggerManager
+	slot5 = slot5.checkLogger
+	slot7 = LoggerConst
+	slot7 = slot7.ERROR
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #18 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 134-144, warpins: 1 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.error
+	slot8 = "[DialogueGraphGM] graph=%s error=%s"
+	slot9 = tostring
+	slot11 = slot0
+	slot9 = slot9(slot11)
+	slot10 = tostring
+	slot12 = slot4
+	MULTRES = slot10(slot12)
+
+	slot5(slot7, slot8, slot9, MULTRES)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 145-152, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.tips
+	slot7 = slot5
+	slot5 = slot5.showTextTip
+	slot8 = "DialogueGraph play failed"
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 153-154, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 155-155, warpins: 2 ---
+	return
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 156-156, warpins: 2 ---
+	return
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 157-157, warpins: 2 ---
+	return
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 158-158, warpins: 2 ---
+	return
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 159-159, warpins: 2 ---
+	return
+	--- END OF BLOCK #26 ---
+
+
+
+end
+
+slot71 = "DialogueGraphPerformanceEnabled"
+slot72 = "GetInstance"
+slot72 = slot4[slot72]
+slot72 = slot72()
+slot73 = "setEnabled"
+slot73 = slot3[slot73]
+slot77 = slot72
+slot78 = "getBool"
+slot75 = slot72[slot78]
+slot78 = slot71
+slot79 = false
+MULTRES = slot75(slot77, slot78, slot79)
+
+slot73(MULTRES)
+
+slot73 = "setDialogueGraphPerformanceEnabled"
+
+slot74 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = DialogueGraphPerformance
+	slot1 = slot1.setEnabled
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = dialogueGraphPerformancePrefs
+	slot3 = slot1
+	slot1 = slot1.setBoolImmediately
+	slot4 = DIALOGUE_GRAPH_PERFORMANCE_ENABLED_KEY
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-12, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 13-13, warpins: 1 ---
+	slot5 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-15, warpins: 2 ---
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot73] = slot74
+slot73 = "getDialogueGraphPerformanceEnabled"
+
+slot74 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = DialogueGraphPerformance
+	slot0 = slot0.isRequestedEnabled
+
+	return slot0()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot73] = slot74
+slot73 = "playDialogueGraph"
+
+slot74 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = playDialogueGraph
+	slot3 = getGmInputText
+	slot5 = slot0
+	slot6 = 0
+	MULTRES = slot3(slot5, slot6)
+
+	slot1(MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot73] = slot74
+slot73 = "execCmdList"
+
+slot74 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = require
+	slot3 = "Utils.ClientXPartGMHook"
+	slot1 = slot1(slot3)
+	slot2 = slot1.hookGMExecCmdList
+	slot4 = slot0
+	slot5 = GmToolUtils
+	slot5 = slot5._privateExecCmdList
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-24, warpins: 1 ---
+	slot3 = print
+	slot5 = string
+	slot5 = slot5.format
+	slot7 = "@fjs TrackHookGM execCmdList, hook[%s]"
+	slot8 = tostring
+	slot10 = slot2
+	slot8 = slot8(slot10)
+	slot9 = table
+	slot9 = slot9.val_to_str
+	slot11 = slot0
+	MULTRES = slot9(slot11)
+	MULTRES = slot5(slot7, slot8, MULTRES)
+
+	slot3(MULTRES)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 25-29, warpins: 2 ---
+	slot3 = GmToolUtils
+	slot3 = slot3._privateExecCmdList
+	slot5 = slot0
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot73] = slot74
+slot73 = "_privateExecCmdList"
+
+slot74 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = require
 	slot3 = GmToolUtils
@@ -3569,10 +7409,10 @@ slot45 = function(slot0)
 
 end
 
-slot43[slot44] = slot45
-slot44 = "getCmdListFileName"
+slot63[slot73] = slot74
+slot73 = "getCmdListFileName"
 
-slot45 = function()
+slot74 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = {}
 	slot1 = ipairs
@@ -3679,13 +7519,13 @@ slot45 = function()
 
 end
 
-slot43[slot44] = slot45
-slot44 = "enableQuickMove"
+slot63[slot73] = slot74
+slot73 = "enableQuickMove"
 
-slot45 = function(slot0)
+slot74 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = ClientSwitch
-	slot1.EnableQuickMove = slot0
+	slot1 = GmToolUtils
+	slot1.quickMoveEnabled = slot0
 
 	return
 	--- END OF BLOCK #0 ---
@@ -3694,13 +7534,13 @@ slot45 = function(slot0)
 
 end
 
-slot43[slot44] = slot45
-slot44 = "checkQuickMove"
+slot63[slot73] = slot74
+slot73 = "checkQuickMove"
 
-slot45 = function()
+slot74 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot0 = ClientSwitch
-	slot0 = slot0.EnableQuickMove
+	slot0 = GmToolUtils
+	slot0 = slot0.quickMoveEnabled
 
 	return slot0
 	--- END OF BLOCK #0 ---
@@ -3709,11 +7549,41 @@ slot45 = function()
 
 end
 
-slot43[slot44] = slot45
-slot44 = true
-slot45 = "setOceanHeight"
+slot63[slot73] = slot74
+slot73 = "setSkipRobEggEnterCheck"
 
-slot46 = function(slot0)
+slot74 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = RobEggConst
+	slot1.GM_SKIP_ENTER_CHECK = slot0
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot73] = slot74
+slot73 = "getSkipRobEggEnterCheck"
+
+slot74 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = RobEggConst
+	slot0 = slot0.GM_SKIP_ENTER_CHECK
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot73] = slot74
+slot73 = true
+slot74 = "setOceanHeight"
+
+slot75 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	cacheOceanHeight = slot0
 	slot1 = CS
@@ -3735,10 +7605,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getOceanHeight"
+slot63[slot74] = slot75
+slot74 = "getOceanHeight"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = cacheOceanHeight
 
@@ -3749,10 +7619,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "enableMainPlayer"
+slot63[slot74] = slot75
+slot74 = "enableMainPlayer"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -3803,10 +7673,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "checkMainPlayerEnable"
+slot63[slot74] = slot75
+slot74 = "checkMainPlayerEnable"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.pawn
@@ -3855,10 +7725,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "enableOBCamera"
+slot63[slot74] = slot75
+slot74 = "enableOBCamera"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1 = slot1.obCameraSettingSubItems
@@ -3964,10 +7834,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "checkGmDofState"
+slot63[slot74] = slot75
+slot74 = "checkGmDofState"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.GmDofState
@@ -3979,10 +7849,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "setGmDofState"
+slot63[slot74] = slot75
+slot74 = "setGmDofState"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1.GmDofState = slot0
@@ -4122,57 +7992,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "setHudV2Enable"
+slot63[slot74] = slot75
+slot74 = "setCaptureCloseupEnable"
 
-slot46 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.setBool
-	slot4 = "HudV2Enable"
-	slot5 = slot0
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = GmToolUtils
-	slot1 = slot1.refreshAllUI
-
-	slot1()
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot43[slot45] = slot46
-slot45 = "getHudV2Enable"
-
-slot46 = function()
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.prefsCacheUtils
-	slot2 = slot0
-	slot0 = slot0.getBool
-	slot3 = "HudV2Enable"
-	slot4 = true
-
-	return slot0(slot2, slot3, slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot43[slot45] = slot46
-slot45 = "setCaptureCloseupEnable"
-
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4193,10 +8016,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getCaptureCloseupEnable"
+slot63[slot74] = slot75
+slot74 = "getCaptureCloseupEnable"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -4215,10 +8038,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getCaptureCloseupDistance"
+slot63[slot74] = slot75
+slot74 = "getCaptureCloseupDistance"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = CaptureConst
 	slot0 = slot0.CLOSEUP_CAMERA
@@ -4288,10 +8111,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "saveCaptureCloseupParams"
+slot63[slot74] = slot75
+slot74 = "saveCaptureCloseupParams"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = logger
 	slot3 = slot1
@@ -4312,10 +8135,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getDofParam"
+slot63[slot74] = slot75
+slot74 = "getDofParam"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1 = slot1.GmDofState
@@ -4412,10 +8235,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "setDofParam"
+slot63[slot74] = slot75
+slot74 = "setDofParam"
 
-slot46 = function(slot0, slot1)
+slot75 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = GmToolUtils
 	slot2 = slot2.GmDofObj
@@ -4457,10 +8280,10 @@ slot46 = function(slot0, slot1)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "checkOBCamera"
+slot63[slot74] = slot75
+slot74 = "checkOBCamera"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -4476,10 +8299,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "changeOBCameraSetting"
+slot63[slot74] = slot75
+slot74 = "changeOBCameraSetting"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-65, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -4578,10 +8401,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getPosAmplitudes"
+slot63[slot74] = slot75
+slot74 = "getPosAmplitudes"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -4678,10 +8501,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "setPosAmplitudes"
+slot63[slot74] = slot75
+slot74 = "setPosAmplitudes"
 
-slot46 = function(slot0, slot1)
+slot75 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = CS
 	slot2 = slot2.FunPlus
@@ -4727,10 +8550,10 @@ slot46 = function(slot0, slot1)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "obCameraFollowEntity"
+slot63[slot74] = slot75
+slot74 = "obCameraFollowEntity"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -4782,30 +8605,30 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getSlowRatio"
+slot63[slot74] = slot75
+slot74 = "getSlowRatio"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "正常",
-		value = 1
+		value = 1,
+		label = "正常"
 	}
 	slot0[1] = slot1
 	slot1 = {
-		label = "1档(2)",
-		value = 0.5
+		value = 0.5,
+		label = "1档(2)"
 	}
 	slot0[2] = slot1
 	slot1 = {
-		label = "2档(4)",
-		value = 0.25
+		value = 0.25,
+		label = "2档(4)"
 	}
 	slot0[3] = slot1
 	slot1 = {
-		label = "3档(10)",
-		value = 0.1
+		value = 0.1,
+		label = "3档(10)"
 	}
 	slot0[4] = slot1
 
@@ -4816,10 +8639,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "getSlowRatioSelected"
+slot63[slot74] = slot75
+slot74 = "getSlowRatioSelected"
 
-slot46 = function()
+slot75 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -4903,10 +8726,10 @@ slot46 = function()
 
 end
 
-slot43[slot45] = slot46
-slot45 = "setSlowRatio"
+slot63[slot74] = slot75
+slot74 = "setSlowRatio"
 
-slot46 = function(slot0)
+slot75 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -4937,10 +8760,10 @@ slot46 = function(slot0)
 
 end
 
-slot43[slot45] = slot46
-slot45 = "execFunc"
+slot63[slot74] = slot75
+slot74 = "execFunc"
 
-slot46 = function(slot0, ...)
+slot75 = function(slot0, ...)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot2 = slot0.func
@@ -4962,9 +8785,9 @@ slot46 = function(slot0, ...)
 
 end
 
-slot43[slot45] = slot46
+slot63[slot74] = slot75
 
-slot45 = function(slot0, slot1)
+slot74 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.value
 	slot3 = slot1.value
@@ -5022,9 +8845,9 @@ slot45 = function(slot0, slot1)
 
 end
 
-slot46 = "setVegetationShow"
+slot75 = "setVegetationShow"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-35, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -5093,10 +8916,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setMeListenRange"
+slot63[slot75] = slot76
+slot75 = "setMeListenRange"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -5122,10 +8945,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getDefaultValue"
+slot63[slot75] = slot76
+slot75 = "getDefaultValue"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.saveKey
 	--- END OF BLOCK #0 ---
@@ -5163,10 +8986,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getSceneList"
+slot63[slot75] = slot76
+slot75 = "getSceneList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -5207,8 +9030,8 @@ slot47 = function()
 	}
 	slot8 = slot4
 	slot9 = " "
-	slot10 = pg
-	slot10 = slot10.getLocalizationText
+	slot10 = GmToolUtils
+	slot10 = slot10.getGmLocalizationText
 	slot12 = slot5.name
 	slot10 = slot10(slot12)
 	slot8 = slot8 .. slot9 .. slot10
@@ -5249,10 +9072,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getSandboxList"
+slot63[slot75] = slot76
+slot75 = "getSandboxList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = require
 	slot2 = "Common.Utils.SceneUtils"
@@ -5368,10 +9191,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getSceneInactiveTitleIdList"
+slot63[slot75] = slot76
+slot75 = "getSceneInactiveTitleIdList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = require
 	slot2 = "Common.Utils.SceneUtils"
@@ -5558,10 +9381,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "teleportRandomInactiveNTimes"
+slot63[slot75] = slot76
+slot75 = "teleportRandomInactiveNTimes"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -5849,10 +9672,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openUIListNTimes"
+slot63[slot75] = slot76
+slot75 = "openUIListNTimes"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -6373,10 +10196,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "randomCastPetSkillsNTimes"
+slot63[slot75] = slot76
+slot75 = "randomCastPetSkillsNTimes"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -6546,8 +10369,8 @@ slot47 = function(slot0)
 	--- BLOCK #14 68-75, warpins: 1 ---
 	slot6 = {
 		R = "Hud/SkillR",
-		E = "Hud/SkillE",
-		Q = "Hud/SkillQ"
+		Q = "Hud/SkillQ",
+		E = "Hud/SkillE"
 	}
 	slot7 = {}
 	slot8 = string
@@ -6841,10 +10664,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "autoPathFindByFeiShuPoints"
+slot63[slot75] = slot76
+slot75 = "autoPathFindByFeiShuPoints"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = tonumber
 	slot3 = slot0[0]
@@ -8480,10 +12303,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "rotatePetsAndCastUlt"
+slot63[slot75] = slot76
+slot75 = "rotatePetsAndCastUlt"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.__rotatePetsUltActive
@@ -8521,20 +12344,19 @@ slot47 = function()
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
-	slot5 = pcall
-	slot7 = TimerManager
-	slot7 = slot7.removeTimer
-	slot8 = slot4
+	--- BLOCK #3 17-20, warpins: 1 ---
+	slot5 = TimerManager
+	slot5 = slot5.removeTimer
+	slot7 = slot4
 
-	slot5(slot7, slot8)
+	slot5(slot7)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-23, warpins: 2 ---
+	--- BLOCK #4 21-22, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	for slot3, slot4 in slot0, slot1, slot2
@@ -8542,7 +12364,7 @@ slot47 = function()
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 24-35, warpins: 2 ---
+	--- BLOCK #5 23-34, warpins: 2 ---
 	slot0 = GmToolUtils
 	slot1 = {}
 	slot0.__rotatePetsUltTimerIds = slot1
@@ -8561,7 +12383,7 @@ slot47 = function()
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #6 36-41, warpins: 1 ---
+	--- BLOCK #6 35-40, warpins: 1 ---
 	slot0 = {}
 	slot1 = 1
 	slot2 = pg
@@ -8575,7 +12397,7 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #7 42-46, warpins: 1 ---
+	--- BLOCK #7 41-45, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.pets
@@ -8588,7 +12410,7 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #8 47-55, warpins: 2 ---
+	--- BLOCK #8 46-54, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -8604,7 +12426,7 @@ slot47 = function()
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #9 56-61, warpins: 1 ---
+	--- BLOCK #9 55-60, warpins: 1 ---
 	slot2 = pairs
 	slot4 = pg
 	slot4 = slot4.me
@@ -8615,7 +12437,7 @@ slot47 = function()
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #10 62-63, warpins: 1 ---
+	--- BLOCK #10 61-62, warpins: 1 ---
 	--- END OF BLOCK #10 ---
 
 	if slot5 ~= nil then
@@ -8625,7 +12447,7 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #11 64-65, warpins: 1 ---
+	--- BLOCK #11 63-64, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
 	if slot5 ~= "" then
@@ -8635,7 +12457,7 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #12 66-71, warpins: 1 ---
+	--- BLOCK #12 65-70, warpins: 1 ---
 	slot7 = #slot0
 	slot7 = slot7 + 1
 	slot8 = tostring
@@ -8647,7 +12469,7 @@ slot47 = function()
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 72-73, warpins: 4 ---
+	--- BLOCK #13 71-72, warpins: 4 ---
 	--- END OF BLOCK #13 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -8655,7 +12477,7 @@ slot47 = function()
 	GO OUT TO BLOCK #14
 
 
-	--- BLOCK #14 74-80, warpins: 1 ---
+	--- BLOCK #14 73-79, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
 	slot4 = LoggerConst
@@ -8670,7 +12492,7 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #15 81-90, warpins: 1 ---
+	--- BLOCK #15 80-89, warpins: 1 ---
 	slot2 = logger
 	slot4 = slot2
 	slot2 = slot2.info
@@ -8688,7 +12510,7 @@ slot47 = function()
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 91-93, warpins: 2 ---
+	--- BLOCK #16 90-92, warpins: 2 ---
 	slot2 = #slot0
 	--- END OF BLOCK #16 ---
 
@@ -8699,7 +12521,7 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #17 94-102, warpins: 1 ---
+	--- BLOCK #17 93-101, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
@@ -8715,7 +12537,7 @@ slot47 = function()
 	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #18 103-141, warpins: 1 ---
+	--- BLOCK #18 102-140, warpins: 1 ---
 	slot2 = GmToolUtils
 	slot3 = true
 	slot2.__rotatePetsUltActive = slot3
@@ -9293,21 +13115,21 @@ slot47 = function()
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 142-142, warpins: 2 ---
+	--- BLOCK #19 141-141, warpins: 2 ---
 	return
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 143-143, warpins: 2 ---
+	--- BLOCK #20 142-142, warpins: 2 ---
 	return
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 144-144, warpins: 2 ---
+	--- BLOCK #21 143-143, warpins: 2 ---
 	return
 	--- END OF BLOCK #21 ---
 
@@ -9315,10 +13137,1323 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "addAllItems"
+slot63[slot75] = slot76
+slot75 = "rotateUltimatePetsAndCastUlt"
 
-slot47 = function(slot0)
+slot76 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.__rotateUltimatePetsUltActive
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot1 = GmToolUtils
+	slot1 = slot1.__rotateUltimatePetsUltRunId
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-19, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0.__rotateUltimatePetsUltRunId = slot1
+	slot0 = GmToolUtils
+	slot1 = false
+	slot0.__rotateUltimatePetsUltActive = slot1
+	slot0 = GmToolUtils
+	slot0 = slot0.__rotateUltimatePetsUltTimerIds
+	--- END OF BLOCK #3 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 20-24, warpins: 1 ---
+	slot0 = ipairs
+	slot2 = GmToolUtils
+	slot2 = slot2.__rotateUltimatePetsUltTimerIds
+	slot0, slot1, slot2 = slot0(slot2)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 25-28, warpins: 1 ---
+	slot5 = TimerManager
+	slot5 = slot5.removeTimer
+	slot7 = slot4
+
+	slot5(slot7)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-30, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot3, slot4 in slot0, slot1, slot2
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 31-42, warpins: 2 ---
+	slot0 = GmToolUtils
+	slot1 = {}
+	slot0.__rotateUltimatePetsUltTimerIds = slot1
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.tips
+	slot2 = slot0
+	slot0 = slot0.showTextTip
+	slot3 = "已停止轮换宠物大招"
+
+	slot0(slot2, slot3)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #8 43-46, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #8 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 47-55, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.tips
+	slot2 = slot0
+	slot0 = slot0.showTextTip
+	slot3 = "玩家数据未就绪"
+
+	slot0(slot2, slot3)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #10 56-59, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.__rotateUltimatePetsUltRunId
+	--- END OF BLOCK #10 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 60-60, warpins: 1 ---
+	slot0 = 0
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 61-106, warpins: 2 ---
+	slot0 = slot0 + 1
+	slot1 = GmToolUtils
+	slot1.__rotateUltimatePetsUltRunId = slot0
+	slot1 = GmToolUtils
+	slot2 = true
+	slot1.__rotateUltimatePetsUltActive = slot2
+	slot1 = GmToolUtils
+	slot2 = {}
+	slot1.__rotateUltimatePetsUltTimerIds = slot2
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.doGmCmd
+	slot4 = "setGmMode"
+	slot5 = 1
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.close
+	slot4 = 62
+
+	slot1(slot3, slot4)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "正在获取并补齐全部大招宠物……"
+
+	slot1(slot3, slot4)
+
+	slot1 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = GmToolUtils
+		slot0 = slot0.__rotateUltimatePetsUltActive
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot0 = GmToolUtils
+		slot0 = slot0.__rotateUltimatePetsUltRunId
+		slot1 = runId
+		--- END OF BLOCK #1 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 10-11, warpins: 1 ---
+		slot0 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 12-12, warpins: 1 ---
+		slot0 = true
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 13-13, warpins: 3 ---
+		return slot0
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot2 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = GmToolUtils
+		slot1 = slot1.__rotateUltimatePetsUltRunId
+		slot2 = runId
+
+		--- END OF BLOCK #0 ---
+
+		if slot1 ~= slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-20, warpins: 2 ---
+		slot1 = GmToolUtils
+		slot2 = false
+		slot1.__rotateUltimatePetsUltActive = slot2
+		slot1 = GmToolUtils
+		slot2 = {}
+		slot1.__rotateUltimatePetsUltTimerIds = slot2
+		slot1 = GmToolUtils
+		slot2 = nil
+		slot1.__rotateUltimatePetsUltIndex = slot2
+		slot1 = GmToolUtils
+		slot2 = nil
+		slot1.__rotateUltimatePetsUltList = slot2
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 21-28, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.ui
+		slot1 = slot1.tips
+		slot3 = slot1
+		slot1 = slot1.showTextTip
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 29-29, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot3 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = _isActive
+		slot2 = slot2()
+		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 6-19, warpins: 1 ---
+		slot2 = TimerManager
+		slot2 = slot2.addTimer
+		slot4 = slot0
+
+		slot5 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = _isActive
+			slot0 = slot0()
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-6, warpins: 1 ---
+			slot0 = fn
+
+			slot0()
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 7-7, warpins: 2 ---
+			return
+			--- END OF BLOCK #2 ---
+
+
+
+		end
+
+		slot2 = slot2(slot4, slot5)
+		slot3 = GmToolUtils
+		slot3 = slot3.__rotateUltimatePetsUltTimerIds
+		slot4 = GmToolUtils
+		slot4 = slot4.__rotateUltimatePetsUltTimerIds
+		slot4 = #slot4
+		slot4 = slot4 + 1
+		slot3[slot4] = slot2
+
+		return slot2
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 20-20, warpins: 2 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot4 = nil
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = _isActive
+		slot0 = slot0()
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+		--- BLOCK #2 6-9, warpins: 1 ---
+		slot0 = GmToolUtils
+		slot0 = slot0.__rotateUltimatePetsUltIndex
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 10-13, warpins: 1 ---
+		slot1 = petIdList
+		slot1 = #slot1
+		--- END OF BLOCK #3 ---
+
+		if slot0 > slot1 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 14-22, warpins: 2 ---
+		slot1 = _finish
+		slot3 = string
+		slot3 = slot3.format
+		slot5 = "大招宠物轮换完成，共释放 %d 只"
+		slot6 = petIdList
+		slot6 = #slot6
+		MULTRES = slot3(slot5, slot6)
+
+		slot1(MULTRES)
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #5 23-27, warpins: 1 ---
+		slot1 = {}
+		slot2 = 1
+		slot3 = 4
+		slot4 = 1
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 28-33, warpins: 2 ---
+		slot6 = petIdList
+		slot7 = slot0 + slot5
+		slot7 = slot7 - 1
+		slot6 = slot6[slot7]
+		--- END OF BLOCK #6 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 34-36, warpins: 1 ---
+		slot7 = #slot1
+		slot7 = slot7 + 1
+		slot1[slot7] = slot6
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 37-37, warpins: 2 ---
+		--- END OF BLOCK #8 ---
+
+		for slot5=slot2, slot3, slot4
+		LOOP BLOCK #6
+		GO OUT TO BLOCK #9
+
+		--- BLOCK #9 38-48, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.me
+		slot4 = slot2
+		slot2 = slot2.doGmCmd2
+		slot5 = "setUltimatePetRotationFormation"
+		slot6 = {}
+		slot6[1] = slot1
+
+		slot7 = function(slot0, slot1)
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot2 = _isActive
+			slot2 = slot2()
+			--- END OF BLOCK #0 ---
+
+			slot2 = if not slot2 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-5, warpins: 1 ---
+			--- END OF BLOCK #1 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+			--- BLOCK #2 6-10, warpins: 1 ---
+			slot2 = type
+			slot4 = slot0
+			slot2 = slot2(slot4)
+			--- END OF BLOCK #2 ---
+
+			if slot2 == "string" then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 11-19, warpins: 1 ---
+			slot2 = string
+			slot2 = slot2.find
+			slot4 = slot0
+			slot5 = "success"
+			slot6 = 1
+			slot7 = true
+			slot2 = slot2(slot4, slot5, slot6, slot7)
+			--- END OF BLOCK #3 ---
+
+			slot2 = if not slot2 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #9
+			end
+
+
+			--- BLOCK #4 20-26, warpins: 2 ---
+			slot2 = LoggerManager
+			slot2 = slot2.checkLogger
+			slot4 = LoggerConst
+			slot4 = slot4.ERROR
+			slot2 = slot2(slot4)
+			--- END OF BLOCK #4 ---
+
+			slot2 = if slot2 then
+			JUMP TO BLOCK #5
+			else
+			JUMP TO BLOCK #8
+			end
+
+
+			--- BLOCK #5 27-37, warpins: 1 ---
+			slot2 = logger
+			slot4 = slot2
+			slot2 = slot2.error
+			slot5 = "[rotateUltimatePetsAndCastUlt] set formation failed, result=%s, info=%s"
+			slot6 = tostring
+			slot8 = slot0
+			slot6 = slot6(slot8)
+			slot7 = table
+			slot7 = slot7.tostring
+			--- END OF BLOCK #5 ---
+
+			slot9 = if not slot1 then
+			JUMP TO BLOCK #6
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #6 38-38, warpins: 1 ---
+			slot9 = {}
+			--- END OF BLOCK #6 ---
+
+			FLOW; TARGET BLOCK #7
+
+
+			--- BLOCK #7 39-40, warpins: 2 ---
+			MULTRES = slot7(slot9)
+
+			slot2(slot4, slot5, slot6, MULTRES)
+
+			--- END OF BLOCK #7 ---
+
+			FLOW; TARGET BLOCK #8
+
+
+			--- BLOCK #8 41-44, warpins: 2 ---
+			slot2 = _finish
+			slot4 = "替换大招宠物编队失败，请查看日志"
+
+			slot2(slot4)
+
+			--- END OF BLOCK #8 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+			--- BLOCK #9 45-50, warpins: 1 ---
+			slot2 = 2
+			slot3 = 1
+			slot4 = pg
+			slot4 = slot4.space
+			--- END OF BLOCK #9 ---
+
+			slot4 = if slot4 then
+			JUMP TO BLOCK #10
+			else
+			JUMP TO BLOCK #11
+			end
+
+
+			--- BLOCK #10 51-57, warpins: 1 ---
+			slot4 = pg
+			slot4 = slot4.space
+			slot6 = slot4
+			slot4 = slot4.checkSkipSkillCutScene
+			slot4 = slot4(slot6)
+			--- END OF BLOCK #10 ---
+
+			slot4 = if not slot4 then
+			JUMP TO BLOCK #11
+			else
+			JUMP TO BLOCK #12
+			end
+
+
+			--- BLOCK #11 58-58, warpins: 2 ---
+			slot4 = false
+			--- END OF BLOCK #11 ---
+
+			FLOW; TARGET BLOCK #12
+
+
+			--- BLOCK #12 59-60, warpins: 2 ---
+			--- END OF BLOCK #12 ---
+
+			slot4 = if slot4 then
+			JUMP TO BLOCK #13
+			else
+			JUMP TO BLOCK #14
+			end
+
+
+			--- BLOCK #13 61-62, warpins: 1 ---
+			slot5 = 5
+			--- END OF BLOCK #13 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+			--- BLOCK #14 63-63, warpins: 1 ---
+			slot5 = 20
+			--- END OF BLOCK #14 ---
+
+			FLOW; TARGET BLOCK #15
+
+
+			--- BLOCK #15 64-72, warpins: 2 ---
+			slot6 = _addTimer
+			slot8 = 0.5
+
+			slot9 = function()
+				--- BLOCK #0 1-4, warpins: 1 ---
+				slot0 = pg
+				slot0 = slot0.global
+				--- END OF BLOCK #0 ---
+
+				slot0 = if slot0 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 5-7, warpins: 1 ---
+				slot0 = pg
+				slot0 = slot0.global
+				slot0 = slot0.ui
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+				--- BLOCK #2 8-9, warpins: 2 ---
+				--- END OF BLOCK #2 ---
+
+				slot1 = if slot0 then
+				JUMP TO BLOCK #3
+				else
+				JUMP TO BLOCK #6
+				end
+
+
+				--- BLOCK #3 10-12, warpins: 1 ---
+				slot1 = slot0.hudV2
+				--- END OF BLOCK #3 ---
+
+				slot1 = if slot1 then
+				JUMP TO BLOCK #4
+				else
+				JUMP TO BLOCK #6
+				end
+
+
+				--- BLOCK #4 13-16, warpins: 1 ---
+				slot1 = slot0.hudV2
+				slot1 = slot1.MD
+				--- END OF BLOCK #4 ---
+
+				slot1 = if slot1 then
+				JUMP TO BLOCK #5
+				else
+				JUMP TO BLOCK #6
+				end
+
+
+				--- BLOCK #5 17-19, warpins: 1 ---
+				slot1 = slot0.hudV2
+				slot1 = slot1.MD
+				slot1 = slot1.hpFuse
+				--- END OF BLOCK #5 ---
+
+				FLOW; TARGET BLOCK #6
+
+
+				--- BLOCK #6 20-21, warpins: 4 ---
+				--- END OF BLOCK #6 ---
+
+				slot1 = if slot1 then
+				JUMP TO BLOCK #7
+				else
+				JUMP TO BLOCK #9
+				end
+
+
+				--- BLOCK #7 22-24, warpins: 1 ---
+				slot2 = slot1.performSwitchPet
+				--- END OF BLOCK #7 ---
+
+				slot2 = if slot2 then
+				JUMP TO BLOCK #8
+				else
+				JUMP TO BLOCK #9
+				end
+
+
+				--- BLOCK #8 25-27, warpins: 1 ---
+				slot4 = slot1
+				slot2 = slot1.performSwitchPet
+
+				slot2(slot4)
+
+				--- END OF BLOCK #8 ---
+
+				FLOW; TARGET BLOCK #9
+
+
+				--- BLOCK #9 28-28, warpins: 3 ---
+				return
+				--- END OF BLOCK #9 ---
+
+
+
+			end
+
+			slot6(slot8, slot9)
+
+			slot6 = 1
+			slot7 = petIds
+			slot7 = #slot7
+			slot8 = 1
+			--- END OF BLOCK #15 ---
+
+			FLOW; TARGET BLOCK #16
+
+
+			--- BLOCK #16 73-88, warpins: 2 ---
+			slot10 = slot9
+			slot11 = petIds
+			slot11 = slot11[slot10]
+			slot12 = slot10 - 1
+			slot12 = slot12 * slot5
+			slot12 = slot2 + slot12
+			slot13 = _addTimer
+			slot15 = slot12
+
+			slot16 = function()
+				--- BLOCK #0 1-18, warpins: 1 ---
+				slot0 = pg
+				slot0 = slot0.game
+				slot0 = slot0.input
+				slot2 = slot0
+				slot0 = slot0.manuallyTriggerAction
+				slot3 = "Hud/Pet"
+				slot4 = tostring
+				slot6 = slotIndex
+				slot4 = slot4(slot6)
+				slot3 = slot3 .. slot4
+				slot0 = slot0(slot2, slot3)
+				slot1 = LoggerManager
+				slot1 = slot1.checkLogger
+				slot3 = LoggerConst
+				slot3 = slot3.INFO
+				slot1 = slot1(slot3)
+				--- END OF BLOCK #0 ---
+
+				slot1 = if slot1 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 19-36, warpins: 1 ---
+				slot1 = logger
+				slot3 = slot1
+				slot1 = slot1.info
+				slot4 = "[rotateUltimatePetsAndCastUlt] switch pet, index=%d/%d, slot=%d, petId=%s, ok=%s"
+				slot5 = startIdx
+				slot6 = slotIndex
+				slot5 = slot5 + slot6
+				slot5 = slot5 - 1
+				slot6 = petIdList
+				slot6 = #slot6
+				slot7 = slotIndex
+				slot8 = tostring
+				slot10 = petId
+				slot8 = slot8(slot10)
+				slot9 = tostring
+				slot11 = slot0
+				MULTRES = slot9(slot11)
+
+				slot1(slot3, slot4, slot5, slot6, slot7, slot8, MULTRES)
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+				--- BLOCK #2 37-37, warpins: 2 ---
+				return
+				--- END OF BLOCK #2 ---
+
+
+
+			end
+
+			slot13(slot15, slot16)
+
+			slot13 = _addTimer
+			slot15 = slot12 + slot3
+
+			slot16 = function()
+				--- BLOCK #0 1-14, warpins: 1 ---
+				slot0 = pg
+				slot0 = slot0.game
+				slot0 = slot0.input
+				slot2 = slot0
+				slot0 = slot0.manuallyTriggerAction
+				slot3 = "Hud/SkillR"
+				slot0 = slot0(slot2, slot3)
+				slot1 = LoggerManager
+				slot1 = slot1.checkLogger
+				slot3 = LoggerConst
+				slot3 = slot3.INFO
+				slot1 = slot1(slot3)
+				--- END OF BLOCK #0 ---
+
+				slot1 = if slot1 then
+				JUMP TO BLOCK #1
+				else
+				JUMP TO BLOCK #2
+				end
+
+
+				--- BLOCK #1 15-32, warpins: 1 ---
+				slot1 = logger
+				slot3 = slot1
+				slot1 = slot1.info
+				slot4 = "[rotateUltimatePetsAndCastUlt] cast ultimate, index=%d/%d, slot=%d, petId=%s, ok=%s"
+				slot5 = startIdx
+				slot6 = slotIndex
+				slot5 = slot5 + slot6
+				slot5 = slot5 - 1
+				slot6 = petIdList
+				slot6 = #slot6
+				slot7 = slotIndex
+				slot8 = tostring
+				slot10 = petId
+				slot8 = slot8(slot10)
+				slot9 = tostring
+				slot11 = slot0
+				MULTRES = slot9(slot11)
+
+				slot1(slot3, slot4, slot5, slot6, slot7, slot8, MULTRES)
+
+				--- END OF BLOCK #1 ---
+
+				FLOW; TARGET BLOCK #2
+
+
+				--- BLOCK #2 33-33, warpins: 2 ---
+				return
+				--- END OF BLOCK #2 ---
+
+
+
+			end
+
+			slot13(slot15, slot16)
+
+			--- END OF BLOCK #16 ---
+
+			for slot9=slot6, slot7, slot8
+			LOOP BLOCK #16
+			GO OUT TO BLOCK #17
+
+			--- BLOCK #17 89-102, warpins: 1 ---
+			slot6 = GmToolUtils
+			slot7 = startIdx
+			slot8 = petIds
+			slot8 = #slot8
+			slot7 = slot7 + slot8
+			slot6.__rotateUltimatePetsUltIndex = slot7
+			slot6 = _addTimer
+			slot8 = petIds
+			slot8 = #slot8
+			slot8 = slot8 * slot5
+			slot8 = slot2 + slot8
+			slot9 = runNextBatch
+
+			slot6(slot8, slot9)
+
+			return
+			--- END OF BLOCK #17 ---
+
+			FLOW; TARGET BLOCK #18
+
+
+			--- BLOCK #18 103-103, warpins: 2 ---
+			return
+			--- END OF BLOCK #18 ---
+
+			FLOW; TARGET BLOCK #19
+
+
+			--- BLOCK #19 104-104, warpins: 2 ---
+			return
+			--- END OF BLOCK #19 ---
+
+
+
+		end
+
+		slot2(slot4, slot5, slot6, slot7)
+
+		return
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 49-49, warpins: 2 ---
+		return
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 50-50, warpins: 2 ---
+		return
+		--- END OF BLOCK #11 ---
+
+
+
+	end
+
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.doGmCmd2
+	slot9 = "prepareUltimatePetRotation"
+	slot10 = {}
+
+	slot11 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = _isActive
+		slot2 = slot2()
+
+		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-10, warpins: 2 ---
+		slot2 = type
+		slot4 = slot0
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #2 ---
+
+		if slot2 == "string" then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 11-19, warpins: 1 ---
+		slot2 = string
+		slot2 = slot2.find
+		slot4 = slot0
+		slot5 = "success"
+		slot6 = 1
+		slot7 = true
+		slot2 = slot2(slot4, slot5, slot6, slot7)
+		--- END OF BLOCK #3 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #4 20-26, warpins: 2 ---
+		slot2 = LoggerManager
+		slot2 = slot2.checkLogger
+		slot4 = LoggerConst
+		slot4 = slot4.ERROR
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #4 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 27-37, warpins: 1 ---
+		slot2 = logger
+		slot4 = slot2
+		slot2 = slot2.error
+		slot5 = "[rotateUltimatePetsAndCastUlt] prepare failed, result=%s, info=%s"
+		slot6 = tostring
+		slot8 = slot0
+		slot6 = slot6(slot8)
+		slot7 = table
+		slot7 = slot7.tostring
+		--- END OF BLOCK #5 ---
+
+		slot9 = if not slot1 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 38-38, warpins: 1 ---
+		slot9 = {}
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 39-40, warpins: 2 ---
+		MULTRES = slot7(slot9)
+
+		slot2(slot4, slot5, slot6, MULTRES)
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 41-44, warpins: 2 ---
+		slot2 = _finish
+		slot4 = "获取大招宠物失败，请检查背包容量或日志"
+
+		slot2(slot4)
+
+		return
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 45-50, warpins: 2 ---
+		slot2 = {}
+		slot3 = {}
+		petIdList = slot3
+		slot3 = ipairs
+		--- END OF BLOCK #9 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 51-53, warpins: 1 ---
+		slot5 = slot1.petIds
+		--- END OF BLOCK #10 ---
+
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #12
+		end
+
+
+		--- BLOCK #11 54-54, warpins: 2 ---
+		slot5 = EMPTY_TABLE
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 55-56, warpins: 2 ---
+		slot3, slot4, slot5 = slot3(slot5)
+		--- END OF BLOCK #12 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+		--- BLOCK #13 57-62, warpins: 1 ---
+		slot8 = tostring
+		slot10 = slot7
+		slot8 = slot8(slot10)
+		slot7 = slot8
+		--- END OF BLOCK #13 ---
+
+		if slot7 ~= "" then
+		JUMP TO BLOCK #14
+		else
+		JUMP TO BLOCK #16
+		end
+
+
+		--- BLOCK #14 63-65, warpins: 1 ---
+		slot8 = slot2[slot7]
+		--- END OF BLOCK #14 ---
+
+		slot8 = if not slot8 then
+		JUMP TO BLOCK #15
+		else
+		JUMP TO BLOCK #16
+		end
+
+
+		--- BLOCK #15 66-72, warpins: 1 ---
+		slot8 = true
+		slot2[slot7] = slot8
+		slot8 = petIdList
+		slot9 = petIdList
+		slot9 = #slot9
+		slot9 = slot9 + 1
+		slot8[slot9] = slot7
+		--- END OF BLOCK #15 ---
+
+		FLOW; TARGET BLOCK #16
+
+
+		--- BLOCK #16 73-74, warpins: 4 ---
+		--- END OF BLOCK #16 ---
+
+		for slot6, slot7 in slot3, slot4, slot5
+		LOOP BLOCK #13
+		GO OUT TO BLOCK #17
+
+
+		--- BLOCK #17 75-78, warpins: 1 ---
+		slot3 = petIdList
+		slot3 = #slot3
+		--- END OF BLOCK #17 ---
+
+		if slot3 == 0 then
+		JUMP TO BLOCK #18
+		else
+		JUMP TO BLOCK #19
+		end
+
+
+		--- BLOCK #18 79-82, warpins: 1 ---
+		slot3 = _finish
+		slot5 = "没有找到配置了大招的宠物"
+
+		slot3(slot5)
+
+		return
+
+		--- END OF BLOCK #18 ---
+
+		FLOW; TARGET BLOCK #19
+
+
+		--- BLOCK #19 83-95, warpins: 2 ---
+		slot3 = GmToolUtils
+		slot4 = 1
+		slot3.__rotateUltimatePetsUltIndex = slot4
+		slot3 = GmToolUtils
+		slot4 = petIdList
+		slot3.__rotateUltimatePetsUltList = slot4
+		slot3 = LoggerManager
+		slot3 = slot3.checkLogger
+		slot5 = LoggerConst
+		slot5 = slot5.INFO
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #19 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #20
+		else
+		JUMP TO BLOCK #21
+		end
+
+
+		--- BLOCK #20 96-112, warpins: 1 ---
+		slot3 = logger
+		slot5 = slot3
+		slot3 = slot3.info
+		slot6 = "[rotateUltimatePetsAndCastUlt] ready, count=%d, added=%s, reused=%s, petIdList=%s"
+		slot7 = petIdList
+		slot7 = #slot7
+		slot8 = tostring
+		slot10 = slot1.addedCount
+		slot8 = slot8(slot10)
+		slot9 = tostring
+		slot11 = slot1.reusedCount
+		slot9 = slot9(slot11)
+		slot10 = table
+		slot10 = slot10.tostring
+		slot12 = petIdList
+		MULTRES = slot10(slot12)
+
+		slot3(slot5, slot6, slot7, slot8, slot9, MULTRES)
+
+		--- END OF BLOCK #20 ---
+
+		FLOW; TARGET BLOCK #21
+
+
+		--- BLOCK #21 113-128, warpins: 2 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = string
+		slot6 = slot6.format
+		slot8 = "开始轮换 %d 只大招宠物，再次点击可停止"
+		slot9 = petIdList
+		slot9 = #slot9
+		MULTRES = slot6(slot8, slot9)
+
+		slot3(slot5, MULTRES)
+
+		slot3 = runNextBatch
+
+		slot3()
+
+		return
+		--- END OF BLOCK #21 ---
+
+
+
+	end
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 107-107, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 108-108, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot63[slot75] = slot76
+slot75 = "addAllItems"
+
+slot76 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -9546,10 +14681,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "randomCreatePuppetsAndFight"
+slot63[slot75] = slot76
+slot75 = "randomCreatePuppetsAndFight"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -9964,10 +15099,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getModeList"
+slot63[slot75] = slot76
+slot75 = "getModeList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
@@ -9996,10 +15131,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getGamePadModeList"
+slot63[slot75] = slot76
+slot75 = "getGamePadModeList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
@@ -10019,10 +15154,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getEnvObjList"
+slot63[slot75] = slot76
+slot75 = "getEnvObjList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -10050,8 +15185,8 @@ slot47 = function()
 	slot7 = {
 		tIndex = 0
 	}
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot8 = GmToolUtils
+	slot8 = slot8.getGmLocalizationText
 	slot10 = slot5.name
 	slot8 = slot8(slot10)
 	slot7.label = slot8
@@ -10093,10 +15228,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getPuppetList"
+slot63[slot75] = slot76
+slot75 = "getPuppetList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = {}
 	slot1 = {}
@@ -10166,8 +15301,8 @@ slot47 = function()
 	slot8 = {
 		tIndex = 0
 	}
-	slot9 = pg
-	slot9 = slot9.getLocalizationText
+	slot9 = GmToolUtils
+	slot9 = slot9.getGmLocalizationText
 	slot11 = slot6.name
 	slot9 = slot9(slot11)
 	slot8.label = slot9
@@ -10195,8 +15330,8 @@ slot47 = function()
 	slot8 = {
 		tIndex = 0
 	}
-	slot9 = pg
-	slot9 = slot9.getLocalizationText
+	slot9 = GmToolUtils
+	slot9 = slot9.getGmLocalizationText
 	slot11 = slot6.name
 	slot9 = slot9(slot11)
 	slot8.label = slot9
@@ -10275,10 +15410,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getPetList"
+slot63[slot75] = slot76
+slot75 = "getPetList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -10295,8 +15430,8 @@ slot47 = function()
 	slot7 = {
 		tIndex = 0
 	}
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot8 = GmToolUtils
+	slot8 = slot8.getGmLocalizationText
 	slot10 = slot5.name
 	slot8 = slot8(slot10)
 	slot7.label = slot8
@@ -10343,10 +15478,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getItemList"
+slot63[slot75] = slot76
+slot75 = "getItemList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = {}
 	slot1 = pairs
@@ -10363,8 +15498,8 @@ slot47 = function()
 	slot7 = {
 		tIndex = 0
 	}
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot8 = GmToolUtils
+	slot8 = slot8.getGmLocalizationText
 	slot10 = slot5.itemName
 	slot8 = slot8(slot10)
 	slot7.label = slot8
@@ -10404,40 +15539,40 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getFrameList"
+slot63[slot75] = slot76
+slot75 = "getFrameList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "5",
-		value = 5
+		value = 5,
+		label = "5"
 	}
 	slot0[1] = slot1
 	slot1 = {
-		label = "10",
-		value = 10
+		value = 10,
+		label = "10"
 	}
 	slot0[2] = slot1
 	slot1 = {
-		label = "30",
-		value = 30
+		value = 30,
+		label = "30"
 	}
 	slot0[3] = slot1
 	slot1 = {
-		label = "60",
-		value = 60
+		value = 60,
+		label = "60"
 	}
 	slot0[4] = slot1
 	slot1 = {
-		label = "90",
-		value = 90
+		value = 90,
+		label = "90"
 	}
 	slot0[5] = slot1
 	slot1 = {
-		label = "120",
-		value = 120
+		value = 120,
+		label = "120"
 	}
 	slot0[6] = slot1
 
@@ -10448,10 +15583,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getItemRecentlyList"
+slot63[slot75] = slot76
+slot75 = "getItemRecentlyList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getRecentlyData
@@ -10479,8 +15614,8 @@ slot47 = function()
 
 
 	--- BLOCK #2 14-25, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
+	slot7 = GmToolUtils
+	slot7 = slot7.getGmLocalizationText
 	slot9 = slot6.itemName
 	slot7 = slot7(slot9)
 	slot5.label = slot7
@@ -10513,10 +15648,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "envObjRecently"
+slot63[slot75] = slot76
+slot75 = "envObjRecently"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getRecentlyData
@@ -10552,8 +15687,8 @@ slot47 = function()
 
 
 	--- BLOCK #3 16-25, warpins: 2 ---
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
+	slot7 = GmToolUtils
+	slot7 = slot7.getGmLocalizationText
 	slot9 = slot6.name
 	slot7 = slot7(slot9)
 	slot5.label = slot7
@@ -10584,10 +15719,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "sceneRecently"
+slot63[slot75] = slot76
+slot75 = "sceneRecently"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getRecentlyData
@@ -10623,8 +15758,8 @@ slot47 = function()
 
 
 	--- BLOCK #3 16-25, warpins: 2 ---
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
+	slot7 = GmToolUtils
+	slot7 = slot7.getGmLocalizationText
 	slot9 = slot6.name
 	slot7 = slot7(slot9)
 	slot5.label = slot7
@@ -10655,10 +15790,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "sceneRecentlyLine"
+slot63[slot75] = slot76
+slot75 = "sceneRecentlyLine"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getRecentlyData
@@ -10695,8 +15830,8 @@ slot47 = function()
 
 
 	--- BLOCK #3 17-32, warpins: 2 ---
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot8 = GmToolUtils
+	slot8 = slot8.getGmLocalizationText
 	slot10 = slot7.name
 	slot8 = slot8(slot10)
 	slot6.label = slot8
@@ -10741,10 +15876,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getPuppetRecentlyList"
+slot63[slot75] = slot76
+slot75 = "getPuppetRecentlyList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getRecentlyData
@@ -10780,8 +15915,8 @@ slot47 = function()
 
 
 	--- BLOCK #3 16-34, warpins: 2 ---
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
+	slot7 = GmToolUtils
+	slot7 = slot7.getGmLocalizationText
 	slot9 = slot6.name
 	slot7 = slot7(slot9)
 	slot5.label = slot7
@@ -10821,10 +15956,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getPetRecentlyList"
+slot63[slot75] = slot76
+slot75 = "getPetRecentlyList"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getRecentlyData
@@ -10860,8 +15995,8 @@ slot47 = function()
 
 
 	--- BLOCK #3 16-34, warpins: 2 ---
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
+	slot7 = GmToolUtils
+	slot7 = slot7.getGmLocalizationText
 	slot9 = slot6.name
 	slot7 = slot7(slot9)
 	slot5.label = slot7
@@ -10901,10 +16036,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getRecentlyData"
+slot63[slot75] = slot76
+slot75 = "getRecentlyData"
 
-slot47 = function(slot0)
+slot76 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -10979,10 +16114,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "addRecentlyData"
+slot63[slot75] = slot76
+slot75 = "addRecentlyData"
 
-slot47 = function(slot0, slot1)
+slot76 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -11149,10 +16284,10 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "copyPlayerInfo"
+slot63[slot75] = slot76
+slot75 = "copyPlayerInfo"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0 = LOCAL_IP_STR
 	slot1 = GlobalData
@@ -11282,10 +16417,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "showGrabEggMasterName"
+slot63[slot75] = slot76
+slot75 = "showGrabEggMasterName"
 
-slot47 = function()
+slot76 = function()
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0 = ""
 	slot1 = string
@@ -11308,11 +16443,80 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openDebugConsole"
+slot63[slot75] = slot76
+slot75 = 0
+slot76 = "openDebugConsole"
 
-slot47 = function()
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot77 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = LoggerConst
+	slot0 = slot0.CURRENT_LEVEL
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot0 = LoggerConst
+	slot0 = slot0.CURRENT_LEVEL
+	slot1 = LOG_LEVEL_NONE
+	--- END OF BLOCK #1 ---
+
+	if slot0 ~= slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 10-15, warpins: 1 ---
+	slot0 = LoggerConst
+	slot0 = slot0.CURRENT_LEVEL
+	slot1 = LoggerConst
+	slot1 = slot1.DEBUG
+	--- END OF BLOCK #2 ---
+
+	if slot0 >= slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-21, warpins: 1 ---
+	slot0 = LoggerConst
+	slot0 = slot0.CURRENT_LEVEL
+	slot1 = LoggerConst
+	slot1 = slot1.ERROR
+	--- END OF BLOCK #3 ---
+
+	if slot1 < slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-28, warpins: 4 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.setLogLevel
+	slot2 = {}
+	slot3 = LoggerConst
+	slot3 = slot3.ERROR
+	slot2.value = slot3
+
+	slot0(slot2)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-36, warpins: 2 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
 	slot0 = slot0.WorldX
@@ -11323,16 +16527,16 @@ slot47 = function()
 	slot0()
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openXboxPermissionDebugOverlay"
+slot63[slot76] = slot77
+slot76 = "openXboxPermissionDebugOverlay"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -11351,10 +16555,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "isXboxPlatform"
+slot63[slot76] = slot77
+slot76 = "isXboxPlatform"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -11393,7 +16597,7 @@ slot47 = function()
 	if slot0 ~= nil then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
@@ -11408,42 +16612,66 @@ slot47 = function()
 	end
 
 
-	--- BLOCK #5 16-19, warpins: 1 ---
+	--- BLOCK #5 16-20, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isXbox
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #6 20-21, warpins: 2 ---
-	slot1 = false
+	--- BLOCK #6 21-23, warpins: 2 ---
+	slot1 = slot0.isXbox
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	if slot1 ~= nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 22-22, warpins: 0 ---
-	slot1 = true
-
+	--- BLOCK #7 24-27, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isXboxPC
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #8 23-23, warpins: 3 ---
-	return slot1
+	--- BLOCK #8 28-29, warpins: 2 ---
+	slot1 = false
 	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 30-30, warpins: 0 ---
+	slot1 = true
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 31-31, warpins: 4 ---
+	return slot1
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot43[slot46] = slot47
-slot46 = "triggerCrash"
+slot63[slot76] = slot77
+slot76 = "triggerCrash"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -11478,10 +16706,58 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getSceneEntityInfos"
+slot63[slot76] = slot77
+slot76 = "reportCrashSightException"
 
-slot47 = function()
+slot77 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.showConfirmMsgRaw
+	slot2 = "CrashSight 主动上报测试"
+	slot3 = "确认要主动上报一条 CrashSight 非致命异常？\n进程不会退出。"
+
+	slot4 = function()
+		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = CS
+		slot0 = slot0.FunPlus
+		slot0 = slot0.WorldX
+		slot0 = slot0.SDK
+		slot0 = slot0.SDKManager
+		slot0 = slot0.ReportCrashSightTestException
+
+		slot0()
+
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
+		slot2 = slot0
+		slot0 = slot0.showTextTip
+		slot3 = "已触发 CrashSight 主动上报"
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot0(slot2, slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot76] = slot77
+slot76 = "getSceneEntityInfos"
+
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.getEntities
@@ -11585,10 +16861,103 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openPhotoIdentify"
+slot63[slot76] = slot77
+slot76 = "destroyOneFarthestEntity"
 
-slot47 = function()
+slot77 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.entityCount
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.destroyOneFarthestEntity
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-20, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 21-27, warpins: 1 ---
+	slot5 = "Destroyed entity: "
+	slot6 = tostring
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	slot5 = slot5 .. slot6
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 28-28, warpins: 2 ---
+	slot5 = "No entity can be destroyed"
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-30, warpins: 2 ---
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot63[slot76] = slot77
+slot76 = "openPhotoIdentify"
+
+slot77 = function()
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -11619,10 +16988,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setTestTeamInfo"
+slot63[slot76] = slot77
+slot76 = "setTestTeamInfo"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-58, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -11631,9 +17000,9 @@ slot47 = function()
 	slot0 = pg
 	slot0 = slot0.me
 	slot1 = {
-		rtcRoomId = 1.75513902000005e+18,
 		isMatchTeam = false,
 		createTime = 1755139019.005,
+		rtcRoomId = 1.75513902000005e+18,
 		teamId = "aJ1LxQ97grTY0DGd",
 		status = 1
 	}
@@ -11650,22 +17019,22 @@ slot47 = function()
 	slot3 = slot3.me
 	slot3 = slot3.uid
 	slot4 = {
-		starTitle = 6,
-		entityId = "aGyI39ptMvwZSvjc",
-		teamMembers = 1,
-		teamId = "aJ1LxQ97grTY0DGd",
-		teamHintId = "aJ1LxQ97grTY0DGd",
-		level = 50,
-		playerName = "cdsvfbgrt",
 		online = true,
 		headIcon = 1,
 		headFrame = 1,
+		entityId = "aGyI39ptMvwZSvjc",
 		enterTeamTime = 1755139019.005,
+		teamMembers = 1,
 		curShow = "eJwskc1ugzAQhF+lytmJdv0D9sGXqJf00EtUKWmUA6JOQCUYAVFUId69u5jTfDOyh108lc9hjI/P4hH8ZiMuCHj1UzGORVntY0vhvu4A8O3Y1W3AjejjePIyNztprEGtQSvOzt66nXPOKolGKcnZt9/CDgByyJ3TlKMDjaKMTew/wis0/d/hxwMF7a2+E1rMADLRxeHk6WYmMyp0SGqV4fi8NJIHhKXY5JLzby9pHmmMtZChtjpswYmhLJpARWYWactjFV9+upgrffSCtGiO1GOJJbNMrJhVYs2sExtms7CEq+erKJEMrkazkUu5VGuGnOnVKCUuCpYDCpOk40ol0UnSgCpLc/KLrH+GDF+YRT3wLvvi7sf+GUTZxLEKw3sY6ns7+GkWj+I3fHWH9hbZVUXdJ14m44fmqReFVeWqmnWe/wEAAP//",
+		level = 50,
 		clientMsSessionId = "h*JFR**h]7**",
 		clientMsGateId = "h**'R**h]7**",
 		avatarPresetKey = 110001,
-		avatarConfig = "eJzsU8tu2zAQ/Bee1YDLXZJL34qmBYL21NwaBIUi0SkRyRJEuYhr+N9LvdwkTgp/QHighCU5O5wZ7kXv67bKe39VihVmou189P1XvxMrACklZOKuKXeftrFv6su8z8VqL37WTRnWwZffQuzF6ub2kIl1Xvg3dn3sujzh3XyAC5m9T9M0aFbnD37bPldtHR59eemLvIpJsr0IyRdAIzNRNFXTDVvSJBOKuJ+/d/M3nU/AA67v86oKxVzvmu39r42PcV6fQbU9ATXGMQBKRkZHYJcezjoikAicqCjQc09Aks6QRdKalJM8ckgwCGhVwncONBg4m5I5paSNkWitJcnaOdZHSkjkjFLolNFEapHhtD5SIk1OgjNIVqExiP/lJC9QjgPAKekUO3O4zUS52JL+e//Yb9NjOZqk0nM536TlykriuS4QICcqqNGyIcOLC6/UlyaJZ3wImyckJbxoBzNJmEnCm0kyTKMkWmm27OCli5nwdYgx/PZXm95vYuh3450HFn73RCmAdDZ0If4zecyLBgcsVQrbfOPhVtakeCltLBG9QjAWle/yIxCjBGbjUuiM1IwzkFVEKY6c+ijt2M3KnZaPuAO96/DHjzFncMMwKEmDkilT7bYN1Y+mqYf9MGVFIROw5unwl6bYTkmyalxmVkBsaVr+3vTXrfflpNCSf1DvwjwTZnh0u01eh+LzlKDbw+EvAAAA//8="
+		avatarConfig = "eJzsU8tu2zAQ/Bee1YDLXZJL34qmBYL21NwaBIUi0SkRyRJEuYhr+N9LvdwkTgp/QHighCU5O5wZ7kXv67bKe39VihVmou189P1XvxMrACklZOKuKXeftrFv6su8z8VqL37WTRnWwZffQuzF6ub2kIl1Xvg3dn3sujzh3XyAC5m9T9M0aFbnD37bPldtHR59eemLvIpJsr0IyRdAIzNRNFXTDVvSJBOKuJ+/d/M3nU/AA67v86oKxVzvmu39r42PcV6fQbU9ATXGMQBKRkZHYJcezjoikAicqCjQc09Aks6QRdKalJM8ckgwCGhVwncONBg4m5I5paSNkWitJcnaOdZHSkjkjFLolNFEapHhtD5SIk1OgjNIVqExiP/lJC9QjgPAKekUO3O4zUS52JL+e//Yb9NjOZqk0nM536TlykriuS4QICcqqNGyIcOLC6/UlyaJZ3wImyckJbxoBzNJmEnCm0kyTKMkWmm27OCli5nwdYgx/PZXm95vYuh3450HFn73RCmAdDZ0If4zecyLBgcsVQrbfOPhVtakeCltLBG9QjAWle/yIxCjBGbjUuiM1IwzkFVEKY6c+ijt2M3KnZaPuAO96/DHjzFncMMwKEmDkilT7bYN1Y+mqYf9MGVFIROw5unwl6bYTkmyalxmVkBsaVr+3vTXrfflpNCSf1DvwjwTZnh0u01eh+LzlKDbw+EvAAAA//8=",
+		playerName = "cdsvfbgrt",
+		teamId = "aJ1LxQ97grTY0DGd",
+		teamHintId = "aJ1LxQ97grTY0DGd",
+		starTitle = 6
 	}
 	slot5 = {
 		9200021
@@ -11673,33 +17042,33 @@ slot47 = function()
 	slot4.exploreAbilityIds = slot5
 	slot5 = {}
 	slot6 = {
+		level = 1,
 		label = 0,
 		templateId = 1001100,
-		level = 1,
 		petAppearance = "eJyqTi4tLsnP9UvMTbVVUtKB8AJSS2yra2GcotTi1JJihEBwRn45kFcLAAAA//8=",
 		cp = 161
 	}
 	slot5[1] = slot6
 	slot6 = {
+		level = 15,
 		label = 0,
 		templateId = 1032300,
-		level = 15,
 		petAppearance = "",
 		cp = 622
 	}
 	slot5[2] = slot6
 	slot6 = {
+		level = 1,
 		label = 0,
 		templateId = 1001201,
-		level = 1,
 		petAppearance = "",
 		cp = 182
 	}
 	slot5[3] = slot6
 	slot6 = {
+		level = 1,
 		label = 0,
 		templateId = 1002200,
-		level = 1,
 		petAppearance = "",
 		cp = 169
 	}
@@ -11711,23 +17080,23 @@ slot47 = function()
 	slot4.uid = slot5
 	slot2[slot3] = slot4
 	slot3 = {
-		starTitle = 0,
-		entityId = "aJr1zTuM7RZm2Alc",
-		teamMembers = 1,
-		uid = "51205",
-		teamId = "aJ1LxQ97grTY0DGd",
-		teamHintId = "aJ1LxQ97grTY0DGd",
-		level = 1,
-		playerName = "vdfvdcdg",
 		online = true,
 		headIcon = 1,
 		headFrame = 1,
+		entityId = "aJr1zTuM7RZm2Alc",
 		enterTeamTime = 1755139019.074,
+		teamMembers = 1,
 		curShow = "eJwsjjEOwyAMRe/CzIBxaCeWqkuXLlWnKAOKaEBtQhUSdYi4e2Oc6T/sh+2tX/OSxrsbvRVCxvwI6Xdxg13m1UtuUsluremski1AZ88alIKdNbFmRmJkbogbZkNsKmtVR2jg0Bz7R9hnGCCjqTVkEVlEFhE5DoXPwRNfpeBIcovsP2kJPl99jsOU7Vbk6N7++b1Nr0Sv4OLMXPcLUcofAAD//w==",
+		level = 1,
 		clientMsSessionId = "h*JgR**h]7**",
+		uid = "51205",
 		clientMsGateId = "h**'R**h]7**",
 		avatarPresetKey = 210001,
-		avatarConfig = "eJzsU0tPhDAQ/i8946ZPoNyMj8ToSW8aYyrMro1ACS1G3PDfbaHZoFET79vD9PV9M9NvpnvkoOlq5eCqQgVPUNeDBXcNIyoowRiTBD2bajwbrDPNuXIKFXv01JhKbzVUN9o6VDw8TgnaqhJ+QZ32vfL+Hk7IBidHs5igWaNeYei+qrbV71CdQ6lqG5RNULVaO3h3g6+Q3+2R9hUjjOIElaY2fSB7g71/tIvzc5y9Zx9ympKFlX8nkUgikUTWJB/Xvup2FfQfbP9IcKqudRlT6c2we2nB2oiDRlur3+CqddBa7cYZF4LCuHoo942oe21jSL6heRoaNMWEyJTKOQG2oVIIKlkqBPMrMqfzw+khOVvW0KuDdAJLzpjMeSZSnsosKskpFpQxLniGOfW3Udkfzg+eQ7J3+gMCjmKKw8gw8+gc5/6fDZ2u741pAp7gVIbBGOU0k/nCvjTlYAOdSDnTsRQszTijy/2tcXcdQLUIFkvL6VGnP3UKP2psVaPLi6W/HqfpEwAA//8="
+		avatarConfig = "eJzsU0tPhDAQ/i8946ZPoNyMj8ToSW8aYyrMro1ACS1G3PDfbaHZoFET79vD9PV9M9NvpnvkoOlq5eCqQgVPUNeDBXcNIyoowRiTBD2bajwbrDPNuXIKFXv01JhKbzVUN9o6VDw8TgnaqhJ+QZ32vfL+Hk7IBidHs5igWaNeYei+qrbV71CdQ6lqG5RNULVaO3h3g6+Q3+2R9hUjjOIElaY2fSB7g71/tIvzc5y9Zx9ympKFlX8nkUgikUTWJB/Xvup2FfQfbP9IcKqudRlT6c2we2nB2oiDRlur3+CqddBa7cYZF4LCuHoo942oe21jSL6heRoaNMWEyJTKOQG2oVIIKlkqBPMrMqfzw+khOVvW0KuDdAJLzpjMeSZSnsosKskpFpQxLniGOfW3Udkfzg+eQ7J3+gMCjmKKw8gw8+gc5/6fDZ2u741pAp7gVIbBGOU0k/nCvjTlYAOdSDnTsRQszTijy/2tcXcdQLUIFkvL6VGnP3UKP2psVaPLi6W/HqfpEwAA//8=",
+		playerName = "vdfvdcdg",
+		teamId = "aJ1LxQ97grTY0DGd",
+		teamHintId = "aJ1LxQ97grTY0DGd",
+		starTitle = 0
 	}
 	slot4 = {
 		9200021
@@ -11787,10 +17156,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkPlayerPerceptibility"
+slot63[slot76] = slot77
+slot76 = "checkPlayerPerceptibility"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -11823,10 +17192,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setPlayerPerceptibility"
+slot63[slot76] = slot77
+slot76 = "setPlayerPerceptibility"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -11840,10 +17209,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkPlayerNoImpPerceptibility"
+slot63[slot76] = slot77
+slot76 = "checkPlayerNoImpPerceptibility"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -11876,10 +17245,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setPlayerNoImpPerceptibility"
+slot63[slot76] = slot77
+slot76 = "setPlayerNoImpPerceptibility"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -11893,10 +17262,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openAIDebug"
+slot63[slot76] = slot77
+slot76 = "openAIDebug"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.openAIDebug
@@ -11910,10 +17279,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "startAIDebug"
+slot63[slot76] = slot77
+slot76 = "startAIDebug"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.startAIDebug
@@ -11927,10 +17296,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openAISelfieDraw"
+slot63[slot76] = slot77
+slot76 = "openAISelfieDraw"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = AiConst
 	slot1 = slot1.AI_DEBUG
@@ -11943,10 +17312,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkAISelfieDrawState"
+slot63[slot76] = slot77
+slot76 = "checkAISelfieDrawState"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = AiConst
 	slot0 = slot0.AI_DEBUG
@@ -11959,10 +17328,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openTeamRoom"
+slot63[slot76] = slot77
+slot76 = "openTeamRoom"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.setTestTeamInfo
@@ -11986,10 +17355,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openResourceDownload"
+slot63[slot76] = slot77
+slot76 = "openResourceDownload"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -12073,10 +17442,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setSettingPackDownload"
+slot63[slot76] = slot77
+slot76 = "setSettingPackDownload"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -12090,10 +17459,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkSettingPackDownload"
+slot63[slot76] = slot77
+slot76 = "checkSettingPackDownload"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -12107,10 +17476,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "playBossReward"
+slot63[slot76] = slot77
+slot76 = "playBossReward"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -12248,10 +17617,51 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkUIStatus"
+slot63[slot76] = slot77
+slot76 = "setUCurvedPanelForceEnabled"
 
-slot47 = function()
+slot77 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = CS
+	slot1 = slot1.FunPlus
+	slot1 = slot1.WorldX
+	slot1 = slot1.Utils
+	slot1 = slot1.GmToolUtils
+	slot1 = slot1.SetUCurvedPanelForceEnabled
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot76] = slot77
+slot76 = "getUCurvedPanelForceEnabled"
+
+slot77 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.GmToolUtils
+	slot0 = slot0.GetUCurvedPanelForceEnabled
+
+	return slot0()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot76] = slot77
+slot76 = "checkUIStatus"
+
+slot77 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.XGUI
@@ -12267,10 +17677,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "hiddenUI"
+slot63[slot76] = slot77
+slot76 = "hiddenUI"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.XGUI
@@ -12293,10 +17703,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "hideUISpecial"
+slot63[slot76] = slot77
+slot76 = "hideUISpecial"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -12364,10 +17774,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getHideUISpecial"
+slot63[slot76] = slot77
+slot76 = "getHideUISpecial"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -12381,10 +17791,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkHideTownPet"
+slot63[slot76] = slot77
+slot76 = "checkHideTownPet"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -12399,10 +17809,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setHideTownPet"
+slot63[slot76] = slot77
+slot76 = "setHideTownPet"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -12418,10 +17828,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkHideVideo"
+slot63[slot76] = slot77
+slot76 = "checkHideVideo"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.com
@@ -12437,10 +17847,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setHideVideo"
+slot63[slot76] = slot77
+slot76 = "setHideVideo"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.com
@@ -12456,10 +17866,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setMarqueeGMHide"
+slot63[slot76] = slot77
+slot76 = "setMarqueeGMHide"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -12502,10 +17912,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getHideMarqueeStatus"
+slot63[slot76] = slot77
+slot76 = "getHideMarqueeStatus"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -12536,10 +17946,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openChat"
+slot63[slot76] = slot77
+slot76 = "openChat"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -12562,10 +17972,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkGIState"
+slot63[slot76] = slot77
+slot76 = "checkGIState"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = appFacade
 	slot0 = slot0.areaManager
@@ -12578,10 +17988,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setTriggerBoardPhase"
+slot63[slot76] = slot77
+slot76 = "setTriggerBoardPhase"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = appFacade
 	slot1 = slot1.areaManager
@@ -12594,10 +18004,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkTriggerBoardPhase"
+slot63[slot76] = slot77
+slot76 = "checkTriggerBoardPhase"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.openGI
@@ -12609,10 +18019,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "copyCameraPos"
+slot63[slot76] = slot77
+slot76 = "copyCameraPos"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-63, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -12648,9 +18058,9 @@ slot47 = function()
 	slot4.w = slot5
 	slot3.rotation = slot4
 	slot4 = {
-		x = 1,
 		y = 1,
-		z = 1
+		z = 1,
+		x = 1
 	}
 	slot3.scale = slot4
 	slot4 = {}
@@ -12689,10 +18099,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "recordCameraPosEveryT"
+slot63[slot76] = slot77
+slot76 = "recordCameraPosEveryT"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.__cameraPosRecorderTimerId
@@ -12927,10 +18337,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "deleteAllPrefs"
+slot63[slot76] = slot77
+slot76 = "deleteAllPrefs"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -12957,10 +18367,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "teleportCopyPos"
+slot63[slot76] = slot77
+slot76 = "teleportCopyPos"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = ""
 	--- END OF BLOCK #0 ---
@@ -13678,10 +19088,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "teleportWithPosDir"
+slot63[slot76] = slot77
+slot76 = "teleportWithPosDir"
 
-slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot77 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.me
@@ -13735,10 +19145,10 @@ slot47 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "startProfile"
+slot63[slot76] = slot77
+slot76 = "startProfile"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-67, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1 = slot1.enableMainPlayer
@@ -14096,11 +19506,15 @@ slot47 = function(slot0)
 	end
 
 
-	--- BLOCK #24 192-197, warpins: 1 ---
+	--- BLOCK #24 192-201, warpins: 1 ---
 	slot20 = slot19.editorPointAPositon
 	slot21 = slot19.editorPointBPosition
-	slot22 = slot20
-	slot23 = slot21
+	slot22 = slot19.PointAPositon
+	slot23 = slot19.PointBPosition
+	slot24 = slot19.MapAPosition
+	slot25 = slot19.MapBPosition
+	slot26 = slot20
+	slot27 = slot21
 	--- END OF BLOCK #24 ---
 
 	slot6 = if slot6 then
@@ -14110,25 +19524,25 @@ slot47 = function(slot0)
 	end
 
 
-	--- BLOCK #25 198-210, warpins: 1 ---
-	slot24 = {}
-	slot25 = slot7[1]
-	slot24[1] = slot25
-	slot25 = slot7[2]
-	slot24[2] = slot25
-	slot22 = slot24
-	slot24 = {}
-	slot25 = slot7[3]
-	slot24[1] = slot25
-	slot25 = slot7[4]
-	slot24[2] = slot25
-	slot23 = slot24
+	--- BLOCK #25 202-214, warpins: 1 ---
+	slot28 = {}
+	slot29 = slot7[1]
+	slot28[1] = slot29
+	slot29 = slot7[2]
+	slot28[2] = slot29
+	slot26 = slot28
+	slot28 = {}
+	slot29 = slot7[3]
+	slot28[1] = slot29
+	slot29 = slot7[4]
+	slot28[2] = slot29
+	slot27 = slot28
 	--- END OF BLOCK #25 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #26 211-212, warpins: 1 ---
+	--- BLOCK #26 215-216, warpins: 1 ---
 	--- END OF BLOCK #26 ---
 
 	slot8 = if slot8 then
@@ -14138,67 +19552,75 @@ slot47 = function(slot0)
 	end
 
 
-	--- BLOCK #27 213-215, warpins: 1 ---
-	slot24 = slot8[slot18]
+	--- BLOCK #27 217-219, warpins: 1 ---
+	slot28 = slot8[slot18]
 	--- END OF BLOCK #27 ---
 
-	slot24 = if slot24 then
+	slot28 = if slot28 then
 	JUMP TO BLOCK #28
 	else
 	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #28 216-232, warpins: 1 ---
-	slot24 = {}
-	slot25 = slot8[slot18]
-	slot25 = slot25[1]
-	slot24[1] = slot25
-	slot25 = slot8[slot18]
-	slot25 = slot25[2]
-	slot24[2] = slot25
-	slot22 = slot24
-	slot24 = {}
-	slot25 = slot8[slot18]
-	slot25 = slot25[3]
-	slot24[1] = slot25
-	slot25 = slot8[slot18]
-	slot25 = slot25[4]
-	slot24[2] = slot25
-	slot23 = slot24
+	--- BLOCK #28 220-236, warpins: 1 ---
+	slot28 = {}
+	slot29 = slot8[slot18]
+	slot29 = slot29[1]
+	slot28[1] = slot29
+	slot29 = slot8[slot18]
+	slot29 = slot29[2]
+	slot28[2] = slot29
+	slot26 = slot28
+	slot28 = {}
+	slot29 = slot8[slot18]
+	slot29 = slot29[3]
+	slot28[1] = slot29
+	slot29 = slot8[slot18]
+	slot29 = slot29[4]
+	slot28[2] = slot29
+	slot27 = slot28
 	--- END OF BLOCK #28 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #29 233-253, warpins: 4 ---
-	slot24 = slot19.name
-	slot25 = {}
-	slot12[slot18] = slot25
-	slot25 = slot12[slot18]
-	slot25.isEightDirection = slot9
-	slot25 = slot12[slot18]
-	slot25.pointAPosition = slot22
-	slot25 = slot12[slot18]
-	slot25.pointBPosition = slot23
-	slot25 = slot12[slot18]
-	slot25.editorPointAPosition = slot20
-	slot25 = slot12[slot18]
-	slot25.editorPointBPosition = slot21
-	slot25 = slot12[slot18]
-	slot25.name = slot24
-	slot25 = slot12[slot18]
-	slot25.chunckSize = slot2
-	slot25 = slot12[slot18]
-	slot25.sceneId = slot18
-	slot25 = slot12[slot18]
-	slot25.isLocalTest = slot10
+	--- BLOCK #29 237-265, warpins: 4 ---
+	slot28 = slot19.name
+	slot29 = {}
+	slot12[slot18] = slot29
+	slot29 = slot12[slot18]
+	slot29.isEightDirection = slot9
+	slot29 = slot12[slot18]
+	slot29.pointAPosition = slot26
+	slot29 = slot12[slot18]
+	slot29.pointBPosition = slot27
+	slot29 = slot12[slot18]
+	slot29.editorPointAPosition = slot20
+	slot29 = slot12[slot18]
+	slot29.editorPointBPosition = slot21
+	slot29 = slot12[slot18]
+	slot29.mapPointAPosition = slot22
+	slot29 = slot12[slot18]
+	slot29.mapPointBPosition = slot23
+	slot29 = slot12[slot18]
+	slot29.mapAPosition = slot24
+	slot29 = slot12[slot18]
+	slot29.mapBPosition = slot25
+	slot29 = slot12[slot18]
+	slot29.name = slot28
+	slot29 = slot12[slot18]
+	slot29.chunckSize = slot2
+	slot29 = slot12[slot18]
+	slot29.sceneId = slot18
+	slot29 = slot12[slot18]
+	slot29.isLocalTest = slot10
 	--- END OF BLOCK #29 ---
 
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 254-255, warpins: 3 ---
+	--- BLOCK #30 266-267, warpins: 3 ---
 	--- END OF BLOCK #30 ---
 
 	for slot16, slot17 in slot13, slot14, slot15
@@ -14206,7 +19628,7 @@ slot47 = function(slot0)
 	GO OUT TO BLOCK #31
 
 
-	--- BLOCK #31 256-276, warpins: 1 ---
+	--- BLOCK #31 268-288, warpins: 1 ---
 	slot13 = pg
 	slot13 = slot13.global
 	slot13 = slot13.worldXProfileMgr
@@ -14240,10 +19662,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "continueProfile"
+slot63[slot76] = slot77
+slot76 = "continueProfile"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.enableMainPlayer
@@ -14287,10 +19709,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "endProfile"
+slot63[slot76] = slot77
+slot76 = "endProfile"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -14307,10 +19729,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "startProfileTimeline"
+slot63[slot76] = slot77
+slot76 = "startProfileTimeline"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -14394,10 +19816,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openHierarchy"
+slot63[slot76] = slot77
+slot76 = "openHierarchy"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -14415,10 +19837,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openInspector"
+slot63[slot76] = slot77
+slot76 = "openInspector"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -14436,10 +19858,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "openSrDebugger"
+slot63[slot76] = slot77
+slot76 = "openSrDebugger"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -14457,10 +19879,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "launchProfileRecord"
+slot63[slot76] = slot77
+slot76 = "launchProfileRecord"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -14510,10 +19932,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "startTopLogoProfile"
+slot63[slot76] = slot77
+slot76 = "startTopLogoProfile"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -14611,10 +20033,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "stopTopLogoProfile"
+slot63[slot76] = slot77
+slot76 = "stopTopLogoProfile"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = require
 	slot3 = "Guis.Panels.TopLogo.TopLogoProfiler"
@@ -14640,10 +20062,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "runTopLogoBridgeBench"
+slot63[slot76] = slot77
+slot76 = "runTopLogoBridgeBench"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -14742,10 +20164,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "finishProfileRecord"
+slot63[slot76] = slot77
+slot76 = "finishProfileRecord"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -14874,10 +20296,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "debugTimeline"
+slot63[slot76] = slot77
+slot76 = "debugTimeline"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -15040,10 +20462,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "playTimelineInfoDataSequential"
+slot63[slot76] = slot77
+slot76 = "playTimelineInfoDataSequential"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.__timelineInfoPlayActive
@@ -15466,10 +20888,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "deleteGhostEyePrefs"
+slot63[slot76] = slot77
+slot76 = "deleteGhostEyePrefs"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-45, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -15532,10 +20954,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setFullSearch"
+slot63[slot76] = slot77
+slot76 = "setFullSearch"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -15567,10 +20989,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkSearchState"
+slot63[slot76] = slot77
+slot76 = "checkSearchState"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -15592,10 +21014,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setGamepadNavDebug"
+slot63[slot76] = slot77
+slot76 = "setGamepadNavDebug"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -15613,10 +21035,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getGamepadNavDebug"
+slot63[slot76] = slot77
+slot76 = "getGamepadNavDebug"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -15631,10 +21053,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setShellActivityInviteDisabled"
+slot63[slot76] = slot77
+slot76 = "setShellActivityInviteDisabled"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -15663,10 +21085,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "getShellActivityInviteDisabled"
+slot63[slot76] = slot77
+slot76 = "getShellActivityInviteDisabled"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -15685,10 +21107,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "showChainAttackByCurPetList"
+slot63[slot76] = slot77
+slot76 = "showChainAttackByCurPetList"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -15819,10 +21241,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "showChainAttackRespond"
+slot63[slot76] = slot77
+slot76 = "showChainAttackRespond"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -15862,10 +21284,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setCaptureProbabilityHide"
+slot63[slot76] = slot77
+slot76 = "setCaptureProbabilityHide"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -15897,10 +21319,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkCaptureProbabilityHide"
+slot63[slot76] = slot77
+slot76 = "checkCaptureProbabilityHide"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -15922,10 +21344,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setCatchDebugInfo"
+slot63[slot76] = slot77
+slot76 = "setCatchDebugInfo"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -15957,10 +21379,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkCatchDebugInfo"
+slot63[slot76] = slot77
+slot76 = "checkCatchDebugInfo"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -15982,10 +21404,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "setDebugAlertLog"
+slot63[slot76] = slot77
+slot76 = "setDebugAlertLog"
 
-slot47 = function(slot0)
+slot77 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = require
 	slot3 = "Const.TopLogoConst"
@@ -15999,10 +21421,10 @@ slot47 = function(slot0)
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkDebugAlertLog"
+slot63[slot76] = slot77
+slot76 = "checkDebugAlertLog"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = require
 	slot2 = "Const.TopLogoConst"
@@ -16016,10 +21438,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "gcAndCount"
+slot63[slot76] = slot77
+slot76 = "gcAndCount"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0 = collectgarbage
 	slot2 = "count"
@@ -16077,10 +21499,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "luaProfileTrigger"
+slot63[slot76] = slot77
+slot76 = "luaProfileTrigger"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = require
 	slot2 = "Core.Profiler.AppProfiler"
@@ -16096,10 +21518,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "luaProfileClear"
+slot63[slot76] = slot77
+slot76 = "luaProfileClear"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = require
 	slot2 = "Core.Profiler.AppProfiler"
@@ -16115,10 +21537,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "luaMemTrigger"
+slot63[slot76] = slot77
+slot76 = "luaMemTrigger"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = require
 	slot2 = "Core.Profiler.AppMemAllocStats"
@@ -16134,10 +21556,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "luaMemClear"
+slot63[slot76] = slot77
+slot76 = "luaMemClear"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = require
 	slot2 = "Core.Profiler.AppMemAllocStats"
@@ -16153,10 +21575,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "luaMemSnap"
+slot63[slot76] = slot77
+slot76 = "luaMemSnap"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = require
 	slot2 = "Core.Profiler.MemoryReferenceInfo"
@@ -16173,10 +21595,86 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "toggleSample"
+slot63[slot76] = slot77
+slot76 = "luaDelegateUnityRefSnap"
 
-slot47 = function()
+slot77 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = require
+	slot5 = "Core.Profiler.UnityObjectRef"
+	slot3 = slot3(slot5)
+	slot3 = slot3.DumpDelegateUnityRefsFormat
+	slot5 = "lua_delegate_unity_ref_%s.log"
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot76] = slot77
+slot76 = "luaDelegateUnityRefSnapFull"
+
+slot77 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = require
+	slot3 = "Core.Profiler.UnityObjectRef"
+	slot1 = slot1(slot3)
+	slot1 = slot1.DumpDelegateUnityRefsFormat
+	slot3 = "lua_delegate_unity_ref_full_%s.log"
+	slot4 = {
+		includeRegistryPools = false,
+		includeWeak = false,
+		includeMetatable = true,
+		includeEnv = true,
+		maxDepth = 64,
+		includeGlobalObjects = true
+	}
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-14, warpins: 2 ---
+	slot4.onlyNull = slot5
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot76] = slot77
+slot76 = "toggleSample"
+
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = SampleUtils
 	slot0 = slot0.sampleOn
@@ -16194,10 +21692,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkSample"
+slot63[slot76] = slot77
+slot76 = "checkSample"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = SampleUtils
 	slot0 = slot0.sampleOn
@@ -16209,10 +21707,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "toggleSampleLuaMemory"
+slot63[slot76] = slot77
+slot76 = "toggleSampleLuaMemory"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = SampleUtils
 	slot0 = slot0.sampleLuaMemoryOn
@@ -16230,10 +21728,10 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = "checkSampleLuaMemory"
+slot63[slot76] = slot77
+slot76 = "checkSampleLuaMemory"
 
-slot47 = function()
+slot77 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = SampleUtils
 	slot0 = slot0.sampleLuaMemoryOn
@@ -16245,19 +21743,60 @@ slot47 = function()
 
 end
 
-slot43[slot46] = slot47
-slot46 = false
-slot47 = "csharpLeakSample"
+slot63[slot76] = slot77
+slot76 = false
+slot77 = "csharpLeakSetEnable"
 
-slot48 = function()
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot0 = _csharpLeakSample
-	slot0 = not slot0
-	_csharpLeakSample = slot0
-	slot0 = CS
-	slot0 = slot0.GMObjectStackTraceTracker
-	slot0 = slot0.SetEnable
+slot78 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-12, warpins: 2 ---
+	_csharpLeakSample = slot1
+	slot1 = CS
+	slot1 = slot1.GMObjectStackTraceTracker
+	slot1 = slot1.SetEnable
+	slot3 = _csharpLeakSample
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "csharpLeakSample"
+
+slot78 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.csharpLeakSetEnable
 	slot2 = _csharpLeakSample
+	slot2 = not slot2
 
 	slot0(slot2)
 
@@ -16268,10 +21807,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "csharpLeakCheckSample"
+slot63[slot77] = slot78
+slot77 = "csharpLeakCheckSample"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = _csharpLeakSample
 
@@ -16282,10 +21821,30 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "csharpLeakSave"
+slot63[slot77] = slot78
+slot77 = "csharpLeakTrackWithLua"
 
-slot48 = function()
+slot78 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot2 = CS
+	slot2 = slot2.GMObjectStackTraceTracker
+	slot2 = slot2.TrackWithLua
+	slot4 = slot0
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "csharpLeakPrintAll"
+
+slot78 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.GMObjectStackTraceTracker
@@ -16300,10 +21859,27 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openRpcDebug"
+slot63[slot77] = slot78
+slot77 = "csharpLeakSave"
 
-slot48 = function()
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.csharpLeakPrintAll
+
+	slot0()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "openRpcDebug"
+
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = require
 	slot2 = "Utils.RpcDebugHelper"
@@ -16319,10 +21895,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkRpcDebug"
+slot63[slot77] = slot78
+slot77 = "checkRpcDebug"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = require
 	slot2 = "Utils.RpcDebugHelper"
@@ -16336,10 +21912,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openCreateUserDebug"
+slot63[slot77] = slot78
+slot77 = "openCreateUserDebug"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot1 = ClientSwitch
@@ -16354,10 +21930,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkCreateUserDebug"
+slot63[slot77] = slot78
+slot77 = "checkCreateUserDebug"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.OpenCreateUserProcess
@@ -16369,10 +21945,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "closePopupInfoDebug"
+slot63[slot77] = slot78
+slot77 = "closePopupInfoDebug"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -16404,10 +21980,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkPopupInfoDebug"
+slot63[slot77] = slot78
+slot77 = "checkPopupInfoDebug"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -16427,10 +22003,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setMaskState"
+slot63[slot77] = slot78
+slot77 = "setMaskState"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1.openMask = slot0
@@ -16450,10 +22026,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkMaskState"
+slot63[slot77] = slot78
+slot77 = "checkMaskState"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1 = slot1.openMask
@@ -16465,10 +22041,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "refreshScript"
+slot63[slot77] = slot78
+slot77 = "refreshScript"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = LoggerManager
 	slot0 = slot0.checkLogger
@@ -16538,10 +22114,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "refreshBt"
+slot63[slot77] = slot78
+slot77 = "refreshBt"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -16557,10 +22133,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setClosePhotoMark"
+slot63[slot77] = slot78
+slot77 = "setClosePhotoMark"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1.closePhotoMark = slot0
@@ -16572,10 +22148,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getClosePhotoMark"
+slot63[slot77] = slot78
+slot77 = "getClosePhotoMark"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.closePhotoMark
@@ -16587,10 +22163,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setVitalityEnable"
+slot63[slot77] = slot78
+slot77 = "setVitalityEnable"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16650,10 +22226,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableVitality"
+slot63[slot77] = slot78
+slot77 = "getEnableVitality"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -16668,10 +22244,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugShowId"
+slot63[slot77] = slot78
+slot77 = "debugShowId"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16735,10 +22311,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugEntityInfo"
+slot63[slot77] = slot78
+slot77 = "debugEntityInfo"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -16795,10 +22371,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugHomelandBaseInfo"
+slot63[slot77] = slot78
+slot77 = "debugHomelandBaseInfo"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16819,10 +22395,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDebugHomelandBaseInfo"
+slot63[slot77] = slot78
+slot77 = "getEnableDebugHomelandBaseInfo"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -16840,10 +22416,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugHomelandEnvInfo"
+slot63[slot77] = slot78
+slot77 = "debugHomelandEnvInfo"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16864,10 +22440,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDebugHomelandEnvInfo"
+slot63[slot77] = slot78
+slot77 = "getEnableDebugHomelandEnvInfo"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -16885,10 +22461,2825 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onEnableHitCameraShakeChange"
+slot63[slot77] = slot78
+slot77 = "homeDemoModeOn"
+slot78 = false
+slot63[slot77] = slot78
+slot77 = "homePetCollisionModeOn"
+slot78 = false
+slot63[slot77] = slot78
+slot77 = "homePetLargeAvoidanceOn"
+slot78 = false
+slot63[slot77] = slot78
+slot77 = "refreshHomePetCollisionClientState"
 
-slot48 = function(slot0)
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.space
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot1 = slot0.pets
+
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-21, warpins: 2 ---
+	slot1 = pairs
+	slot3 = slot0.pets
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 22-27, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getEntity
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 28-31, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.postComponentMethod
+	slot9 = "onHomeEventChanged"
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 32-33, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	for slot4 in slot1, slot2, slot3
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 34-34, warpins: 1 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setHomePetCollisionMode"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = GmToolUtils
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-11, warpins: 2 ---
+	slot1.homePetCollisionModeOn = slot2
+	slot1 = GmToolUtils
+	slot1 = slot1.refreshHomePetCollisionClientState
+
+	slot1()
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getHomePetCollisionMode"
+
+slot78 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.homePetCollisionModeOn
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "syncHomeDemoModeSwitches"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-10, warpins: 2 ---
+	slot2 = GmToolUtils
+	slot2.homePetCollisionModeOn = slot1
+	slot2 = ClientSwitch
+	slot2.NvidiaVoiceTest = slot1
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "refreshHomePetRVOClientState"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.space
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot1 = slot0.pets
+
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-21, warpins: 2 ---
+	slot1 = pairs
+	slot3 = slot0.pets
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #7 22-27, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getEntity
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 28-30, warpins: 1 ---
+	slot6 = slot5.setHomePetRVOSetting
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 31-33, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.setHomePetRVOSetting
+
+	slot6(slot8)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 34-35, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
+	for slot4 in slot1, slot2, slot3
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 36-36, warpins: 1 ---
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setHomePetLargeAvoidance"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = GmToolUtils
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-11, warpins: 2 ---
+	slot1.homePetLargeAvoidanceOn = slot2
+	slot1 = GmToolUtils
+	slot1 = slot1.refreshHomePetRVOClientState
+
+	slot1()
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getHomePetLargeAvoidance"
+
+slot78 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.homePetLargeAvoidanceOn
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "refreshHomeDemoModeClientState"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.space
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-21, warpins: 2 ---
+	slot1 = GmToolUtils
+	slot1 = slot1.homeDemoModeOn
+	slot0.demoMode = slot1
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 22-26, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 27-31, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	--- END OF BLOCK #7 ---
+
+	if slot1 ~= slot0 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-37, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	slot2 = GmToolUtils
+	slot2 = slot2.homeDemoModeOn
+	slot1.demoMode = slot2
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 38-40, warpins: 4 ---
+	slot1 = slot0.refreshHasFoodState
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 41-43, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshHasFoodState
+
+	slot1(slot3)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 44-46, warpins: 2 ---
+	slot1 = slot0.pets
+
+	--- END OF BLOCK #11 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 47-47, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 48-51, warpins: 2 ---
+	slot1 = pairs
+	slot3 = slot0.pets
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #14 52-57, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getEntity
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #14 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 58-79, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.postComponentMethod
+	slot9 = "onHomelandAIPlanChanged"
+
+	slot6(slot8, slot9)
+
+	slot8 = slot5
+	slot6 = slot5.postComponentMethod
+	slot9 = "onHomeEventChanged"
+
+	slot6(slot8, slot9)
+
+	slot6 = slot5.eventEmitter
+	slot8 = slot6
+	slot6 = slot6.emit
+	slot9 = EventConst
+	slot9 = slot9.HOMELAND_WORK_STATE_CHANGED
+	slot10 = {}
+
+	slot6(slot8, slot9, slot10)
+
+	slot6 = slot5.eventEmitter
+	slot8 = slot6
+	slot6 = slot6.emit
+	slot9 = EventConst
+	slot9 = slot9.HOMELAND_ACTION_STATE_CHANGED
+	slot10 = {}
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 80-81, warpins: 3 ---
+	--- END OF BLOCK #16 ---
+
+	for slot4 in slot1, slot2, slot3
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 82-82, warpins: 1 ---
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setHomeDemoMode"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = GmToolUtils
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-21, warpins: 2 ---
+	slot1.homeDemoModeOn = slot2
+	slot1 = GmToolUtils
+	slot1 = slot1.syncHomeDemoModeSwitches
+	slot3 = GmToolUtils
+	slot3 = slot3.homeDemoModeOn
+
+	slot1(slot3)
+
+	slot1 = GmToolUtils
+	slot1 = slot1.refreshHomeDemoModeClientState
+
+	slot1()
+
+	slot1 = HomelandDemoCmdImplement
+	slot1 = slot1.setEnabled
+	slot3 = pg
+	slot3 = slot3.game
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-26, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.cmdSocket
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-27, warpins: 2 ---
+	slot3 = nil
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-42, warpins: 2 ---
+	slot4 = nil
+	slot5 = {}
+	slot6 = GmToolUtils
+	slot6 = slot6.homeDemoModeOn
+	slot5.enabled = slot6
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.doGmCmd
+	slot4 = "setHomeDemoMode"
+	slot5 = GmToolUtils
+	slot5 = slot5.homeDemoModeOn
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getHomeDemoMode"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.space
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-13, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot1 = slot0.demoMode
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 17-20, warpins: 1 ---
+	slot1 = GmToolUtils
+	slot2 = slot0.demoMode
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 23-23, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 24-27, warpins: 2 ---
+	slot1.homeDemoModeOn = slot2
+	slot1 = GmToolUtils
+	slot1 = slot1.homeDemoModeOn
+
+	return slot1
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 28-30, warpins: 3 ---
+	slot1 = GmToolUtils
+	slot1 = slot1.homeDemoModeOn
+
+	return slot1
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "resetHomeDemoProgress"
+
+slot78 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot2 = slot0
+	slot0 = slot0.doGmCmd
+	slot3 = "resetHomeDemoProgress"
+
+	slot0(slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "forceStartHomeSeasonCelebrationPreparation"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = HomeSeasonCelebrationTestConst
+	slot1 = slot1.ENABLED
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-15, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.doGmCmd
+	slot4 = "forceStartHomeSeasonCelebrationPreparation"
+	slot5 = tonumber
+	slot7 = slot0
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #2 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-17, warpins: 1 ---
+	slot5 = HomeSeasonCelebrationTestConst
+	slot5 = slot5.FESTIVAL_ID
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-19, warpins: 2 ---
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getHomelandDecorationDataFilePath"
+
+slot78 = function()
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.UnityEngine
+	slot0 = slot0.Application
+	slot0 = slot0.persistentDataPath
+	slot1 = "/"
+	slot2 = GmToolUtils
+	slot2 = slot2.HOMELAND_DECORATION_JSON_FILE_NAME
+	slot0 = slot0 .. slot1 .. slot2
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "normalizeHomelandDecorationDataFilePath"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.trim
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot3 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-15, warpins: 2 ---
+	slot1 = slot1(slot3)
+	slot0 = slot1
+	slot1 = string
+	slot1 = slot1.sub
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 1
+	slot1 = slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+	if slot1 == "\"" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 16-22, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.sub
+	slot3 = slot0
+	slot4 = -1
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #3 ---
+
+	if slot1 == "\"" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-29, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.sub
+	slot3 = slot0
+	slot4 = 2
+	slot5 = -2
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0 = slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 30-35, warpins: 3 ---
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 36-38, warpins: 1 ---
+	slot1 = GmToolUtils
+	slot1 = slot1.getHomelandDecorationDataFilePath
+
+	return slot1()
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 39-45, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.sub
+	slot3 = slot0
+	slot4 = -1
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #7 ---
+
+	if slot1 ~= "/" then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 46-47, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot1 == "\\" then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 48-51, warpins: 2 ---
+	slot2 = slot0
+	slot3 = GmToolUtils
+	slot3 = slot3.HOMELAND_DECORATION_JSON_FILE_NAME
+	slot0 = slot2 .. slot3
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 52-52, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "exportHomelandDecorationDataFile"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot1 = slot0[0]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-13, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetChild
+	slot5 = "InputField"
+	slot2 = slot2(slot4, slot5)
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "UTMPInputField"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-18, warpins: 2 ---
+	slot3 = GmToolUtils
+	slot4 = GmToolUtils
+	slot4 = slot4.normalizeHomelandDecorationDataFilePath
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot6 = slot2.text
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-22, warpins: 2 ---
+	slot6 = ""
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-31, warpins: 2 ---
+	slot4 = slot4(slot6)
+	slot3.pendingHomelandDecorationExportFilePath = slot4
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.doGmCmd
+	slot6 = "exportHomelandDecorationDataFile"
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "saveHomelandDecorationDataFile"
+
+slot78 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot2 = GmToolUtils
+	slot2 = slot2.normalizeHomelandDecorationDataFilePath
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot1 = slot2
+	slot2 = io
+	slot2 = slot2.open
+	slot4 = slot1
+	slot5 = "wb"
+	slot2, slot3 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-22, warpins: 1 ---
+	slot4 = false
+	slot5 = string
+	slot5 = slot5.format
+	slot7 = "无法创建文件 %s：%s"
+	slot8 = slot1
+	slot9 = tostring
+	slot11 = slot3
+	MULTRES = slot9(slot11)
+	MULTRES = slot5(slot7, slot8, MULTRES)
+
+	return slot4, MULTRES
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 23-31, warpins: 2 ---
+	slot6 = slot2
+	slot4 = slot2.write
+	slot7 = slot0
+	slot4, slot5 = slot4(slot6, slot7)
+	slot8 = slot2
+	slot6 = slot2.close
+	slot6, slot7 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 32-40, warpins: 1 ---
+	slot8 = false
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "写入文件失败：%s"
+	slot12 = tostring
+	slot14 = slot5
+	MULTRES = slot12(slot14)
+	MULTRES = slot9(slot11, MULTRES)
+
+	return slot8, MULTRES
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 41-42, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 43-51, warpins: 1 ---
+	slot8 = false
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "关闭文件失败：%s"
+	slot12 = tostring
+	slot14 = slot7
+	MULTRES = slot12(slot14)
+	MULTRES = slot9(slot11, MULTRES)
+
+	return slot8, MULTRES
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 52-54, warpins: 2 ---
+	slot8 = true
+	slot9 = slot1
+
+	return slot8, slot9
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "cancelImportHomelandDecorationData"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot1 = nil
+	slot0.pendingHomelandDecorationJson = slot1
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "confirmImportHomelandDecorationData"
+
+slot78 = function()
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.pendingHomelandDecorationJson
+	slot1 = GmToolUtils
+	slot2 = nil
+	slot1.pendingHomelandDecorationJson = slot2
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-12, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-20, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.doGmCmd
+	slot4 = "importHomelandDecorationData"
+	slot5 = slot0
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "prepareImportHomelandDecorationData"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = string
+	slot1 = slot1.trim
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot3 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-13, warpins: 2 ---
+	slot1 = slot1(slot3)
+	slot0 = slot1
+	slot1 = string
+	slot1 = slot1.isNilOrEmpty
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-22, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "家园装饰 JSON 文件为空"
+
+	slot1(slot3, slot4)
+
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 23-27, warpins: 2 ---
+	slot1 = #slot0
+	slot2 = GmToolUtils
+	slot2 = slot2.HOMELAND_DECORATION_JSON_MAX_LENGTH
+	--- END OF BLOCK #4 ---
+
+	if slot2 < slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-36, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "家园装饰 JSON 超过 2 MB，无法导入"
+
+	slot1(slot3, slot4)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 37-50, warpins: 2 ---
+	slot1 = GmToolUtils
+	slot1.pendingHomelandDecorationJson = slot0
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showConfirmMsgRaw
+	slot3 = "导入家园装饰数据"
+	slot4 = "将覆盖当前家园的装饰家具、生产设施、垃圾杂物及地块/区域解锁数据；生产配方进度、设施产物和宠物派遣不会跨账号复制。此操作不可撤销，是否继续？"
+	slot5 = GmToolUtils
+	slot5 = slot5.confirmImportHomelandDecorationData
+	slot6 = false
+	slot7 = GmToolUtils
+	slot7 = slot7.cancelImportHomelandDecorationData
+
+	slot1(slot3, slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "importHomelandDecorationDataFromFile"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot1 = slot0[0]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-13, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.GetChild
+	slot5 = "InputField"
+	slot2 = slot2(slot4, slot5)
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "UTMPInputField"
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-17, warpins: 2 ---
+	slot3 = GmToolUtils
+	slot3 = slot3.normalizeHomelandDecorationDataFilePath
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-20, warpins: 1 ---
+	slot5 = slot2.text
+	--- END OF BLOCK #5 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-21, warpins: 2 ---
+	slot5 = ""
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 22-29, warpins: 2 ---
+	slot3 = slot3(slot5)
+	slot4 = io
+	slot4 = slot4.open
+	slot6 = slot3
+	slot7 = "rb"
+	slot4, slot5 = slot4(slot6, slot7)
+	--- END OF BLOCK #7 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 30-44, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	slot8 = slot6
+	slot6 = slot6.showTextTip
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "无法打开家园装饰 JSON 文件：%s"
+	slot12 = tostring
+	slot14 = slot5
+	MULTRES = slot12(slot14)
+	MULTRES = slot9(slot11, MULTRES)
+
+	slot6(slot8, MULTRES)
+
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 45-50, warpins: 2 ---
+	slot8 = slot4
+	slot6 = slot4.seek
+	slot9 = "end"
+	slot6, slot7 = slot6(slot8, slot9)
+	--- END OF BLOCK #9 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 51-68, warpins: 1 ---
+	slot10 = slot4
+	slot8 = slot4.close
+
+	slot8(slot10)
+
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.ui
+	slot8 = slot8.tips
+	slot10 = slot8
+	slot8 = slot8.showTextTip
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = "读取家园装饰 JSON 文件大小失败：%s"
+	slot14 = tostring
+	slot16 = slot7
+	MULTRES = slot14(slot16)
+	MULTRES = slot11(slot13, MULTRES)
+
+	slot8(slot10, MULTRES)
+
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 69-72, warpins: 2 ---
+	slot8 = GmToolUtils
+	slot8 = slot8.HOMELAND_DECORATION_JSON_MAX_LENGTH
+	--- END OF BLOCK #11 ---
+
+	if slot8 < slot6 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 73-84, warpins: 1 ---
+	slot10 = slot4
+	slot8 = slot4.close
+
+	slot8(slot10)
+
+	slot8 = pg
+	slot8 = slot8.global
+	slot8 = slot8.ui
+	slot8 = slot8.tips
+	slot10 = slot8
+	slot8 = slot8.showTextTip
+	slot11 = "家园装饰 JSON 文件超过 2 MB，无法导入"
+
+	slot8(slot10, slot11)
+
+	return
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 85-101, warpins: 2 ---
+	slot10 = slot4
+	slot8 = slot4.seek
+	slot11 = "set"
+	slot12 = 0
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot4
+	slot8 = slot4.read
+	slot11 = "*a"
+	slot8 = slot8(slot10, slot11)
+	slot11 = slot4
+	slot9 = slot4.close
+
+	slot9(slot11)
+
+	slot9 = GmToolUtils
+	slot9 = slot9.prepareImportHomelandDecorationData
+	slot11 = slot8
+
+	slot9(slot11)
+
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "refreshHomelandDecorationZonePresentation"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.home
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.space
+
+	--- END OF BLOCK #2 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-14, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-36, warpins: 2 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.home
+	slot2 = slot0
+	slot0 = slot0.destroyZones
+
+	slot0(slot2)
+
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.home
+	slot2 = slot0
+	slot0 = slot0.createLockZones
+	slot3 = pg
+	slot3 = slot3.space
+	slot3 = slot3.unlockZone
+
+	slot0(slot2, slot3)
+
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.home
+	slot2 = slot0
+	slot0 = slot0.onAreaUnlockedChanged
+
+	slot0(slot2)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "mountVehicle"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = ""
+	slot2 = pairs
+	slot4 = pg
+	slot4 = slot4.space
+	slot4 = slot4.pets
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.getEntity
+	slot9 = slot5
+	slot7 = slot7(slot9)
+	slot1 = slot7
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-14, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 15-42, warpins: 1 ---
+	slot2 = slot1.id
+	slot3 = slot0[1]
+	slot5 = slot3
+	slot3 = slot3.GetChild
+	slot6 = "InputField"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UTMPInputField"
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot3.text
+	slot4 = slot0[2]
+	slot6 = slot4
+	slot4 = slot4.GetChild
+	slot7 = "InputField"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UTMPInputField"
+	slot4 = slot4(slot6, slot7)
+	slot4 = slot4.text
+	slot5 = GmToolUtils
+	slot5 = slot5.forceHomePetMountFurniture
+	slot7 = slot2
+	slot8 = slot3
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "dismountVehicle"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = ""
+	slot2 = pairs
+	slot4 = pg
+	slot4 = slot4.space
+	slot4 = slot4.pets
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.getEntity
+	slot9 = slot5
+	slot7 = slot7(slot9)
+	slot1 = slot7
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-14, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 15-37, warpins: 1 ---
+	slot2 = slot1.id
+	slot3 = slot0[1]
+	slot5 = slot3
+	slot3 = slot3.GetChild
+	slot6 = "InputField"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UTMPInputField"
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot3.text
+	slot4 = slot0[2]
+	slot6 = slot4
+	slot4 = slot4.GetChild
+	slot7 = "InputField"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UTMPInputField"
+	slot4 = slot4(slot6, slot7)
+	slot4 = slot4.text
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 38-41, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getEntity
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 42-44, warpins: 2 ---
+	slot8 = slot5
+	slot6 = slot5.dismountSelf
+
+	return slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "forceHomePetMountFurniture"
+
+slot78 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = tonumber
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	slot3 = tonumber
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	slot2 = 1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-16, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getEntity
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-22, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.isHomePet
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-25, warpins: 1 ---
+	slot4 = false
+	slot5 = "ClientHomePet not found"
+
+	return slot4, slot5
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-30, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.home
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-37, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.home
+	slot6 = slot4
+	slot4 = slot4.getHomeEntity
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 38-39, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 40-42, warpins: 1 ---
+	slot5 = false
+	slot6 = "home furniture not found"
+
+	return slot5, slot6
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 43-47, warpins: 2 ---
+	slot7 = slot4
+	slot5 = slot4.tryPetMount
+	slot8 = slot3
+	slot9 = slot2
+
+	return slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "printHomeVehicleSeatWorldPositions"
+
+slot78 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == "player" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = "player"
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = "pet"
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-12, warpins: 2 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.getHomeVehicleSeatWorldPositionMap
+	slot4 = slot0
+	slot5 = slot1
+	slot2, slot3 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-19, warpins: 1 ---
+	slot4 = print
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = "[HomeVehicleSeat] %s"
+	slot9 = slot3
+	MULTRES = slot6(slot8, slot9)
+
+	slot4(MULTRES)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-24, warpins: 2 ---
+	slot4 = {}
+	slot5 = pairs
+	slot7 = slot2
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 25-27, warpins: 1 ---
+	slot9 = #slot4
+	slot9 = slot9 + 1
+	slot4[slot9] = slot8
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 28-29, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	for slot8 in slot5, slot6, slot7
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 30-48, warpins: 1 ---
+	slot5 = table
+	slot5 = slot5.sort
+	slot7 = slot4
+
+	slot5(slot7)
+
+	slot5 = print
+	slot7 = string
+	slot7 = slot7.format
+	slot9 = "[HomeVehicleSeat] vehicleId=%s attachType=%s seatCount=%d"
+	slot10 = tostring
+	slot12 = slot0
+	slot10 = slot10(slot12)
+	slot11 = slot1
+	slot12 = #slot4
+	MULTRES = slot7(slot9, slot10, slot11, slot12)
+
+	slot5(MULTRES)
+
+	slot5 = ipairs
+	slot7 = slot4
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 49-61, warpins: 1 ---
+	slot10 = slot2[slot9]
+	slot11 = print
+	slot13 = string
+	slot13 = slot13.format
+	slot15 = "[HomeVehicleSeat] seatId=%s worldPosition=(%.3f, %.3f, %.3f)"
+	slot16 = tostring
+	slot18 = slot9
+	slot16 = slot16(slot18)
+	slot17 = slot10.x
+	slot18 = slot10.y
+	slot19 = slot10.z
+	MULTRES = slot13(slot15, slot16, slot17, slot18, slot19)
+
+	slot11(MULTRES)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 62-63, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 64-64, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "printAllHomeVehiclePetSeatWorldPositions"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.home
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-10, warpins: 1 ---
+	slot1 = slot0.homeEntities
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-12, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 13-17, warpins: 1 ---
+	slot2 = print
+	slot4 = "[HomeVehicleSeat] current homeland is unavailable"
+
+	slot2(slot4)
+
+	slot2 = 0
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #6 18-22, warpins: 1 ---
+	slot2 = {}
+	slot3 = pairs
+	slot5 = slot1
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #7 23-24, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 25-29, warpins: 1 ---
+	slot8 = type
+	slot10 = slot7.getSeatWorldPositionMap
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #8 ---
+
+	if slot8 == "function" then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 30-35, warpins: 1 ---
+	slot8 = #slot2
+	slot8 = slot8 + 1
+	slot9 = {}
+	slot9.ornamentId = slot6
+	slot9.entity = slot7
+	slot2[slot8] = slot9
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-37, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 38-53, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot2
+
+	slot6 = function(slot0, slot1)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot2 = tostring
+		slot4 = slot0.ornamentId
+		slot2 = slot2(slot4)
+		slot3 = tostring
+		slot5 = slot1.ornamentId
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #0 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 12-12, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot3(slot5, slot6)
+
+	slot3 = print
+	slot5 = string
+	slot5 = slot5.format
+	slot7 = "[HomeVehicleSeat] homelandVehicleCount=%d attachType=pet"
+	slot8 = #slot2
+	MULTRES = slot5(slot7, slot8)
+
+	slot3(MULTRES)
+
+	slot3 = ipairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
+
+
+	--- BLOCK #12 54-57, warpins: 1 ---
+	slot8 = slot7.entity
+	slot9 = slot8.getConfigData
+	--- END OF BLOCK #12 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 58-62, warpins: 1 ---
+	slot11 = slot8
+	slot9 = slot8.getConfigData
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #13 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 63-67, warpins: 2 ---
+	slot9 = HomeObjectData
+	slot10 = slot8.homeTemplateId
+	slot9 = slot9[slot10]
+	--- END OF BLOCK #14 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 68-68, warpins: 1 ---
+	slot9 = {}
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 69-71, warpins: 3 ---
+	slot10 = slot9.name
+	--- END OF BLOCK #16 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 72-77, warpins: 1 ---
+	slot10 = GmToolUtils
+	slot10 = slot10.getGmLocalizationText
+	slot12 = slot9.name
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #17 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 78-84, warpins: 2 ---
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = "Vehicle_%s"
+	slot13 = tostring
+	slot15 = slot8.homeTemplateId
+	MULTRES = slot13(slot15)
+	slot10 = slot10(slot12, MULTRES)
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 85-94, warpins: 2 ---
+	slot11 = HomeLandUtils
+	slot11 = slot11.getHomeVehicleSeatWorldPositionMap
+	slot13 = slot8.id
+	slot14 = "pet"
+	slot11, slot12 = slot11(slot13, slot14)
+	slot13 = {}
+	slot14 = pairs
+	slot16 = slot11
+	slot14, slot15, slot16 = slot14(slot16)
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 95-97, warpins: 1 ---
+	slot18 = #slot13
+	slot18 = slot18 + 1
+	slot13[slot18] = slot17
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 98-99, warpins: 2 ---
+	--- END OF BLOCK #21 ---
+
+	for slot17 in slot14, slot15, slot16
+	LOOP BLOCK #20
+	GO OUT TO BLOCK #22
+
+
+	--- BLOCK #22 100-122, warpins: 1 ---
+	slot14 = table
+	slot14 = slot14.sort
+	slot16 = slot13
+
+	slot14(slot16)
+
+	slot14 = print
+	slot16 = string
+	slot16 = slot16.format
+	slot18 = "[HomeVehicleSeat] vehicleName=%s ornamentId=%s entityId=%s templateId=%s petSeatCount=%d"
+	slot19 = slot10
+	slot20 = tostring
+	slot22 = slot7.ornamentId
+	slot20 = slot20(slot22)
+	slot21 = tostring
+	slot23 = slot8.id
+	slot21 = slot21(slot23)
+	slot22 = tostring
+	slot24 = slot8.homeTemplateId
+	slot22 = slot22(slot24)
+	slot23 = #slot13
+	MULTRES = slot16(slot18, slot19, slot20, slot21, slot22, slot23)
+
+	slot14(MULTRES)
+
+	--- END OF BLOCK #22 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 123-130, warpins: 1 ---
+	slot14 = print
+	slot16 = string
+	slot16 = slot16.format
+	slot18 = "[HomeVehicleSeat] vehicleName=%s error=%s"
+	slot19 = slot10
+	slot20 = slot12
+	MULTRES = slot16(slot18, slot19, slot20)
+
+	slot14(MULTRES)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 131-134, warpins: 2 ---
+	slot14 = ipairs
+	slot16 = slot13
+	slot14, slot15, slot16 = slot14(slot16)
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #25 135-148, warpins: 1 ---
+	slot19 = slot11[slot18]
+	slot20 = print
+	slot22 = string
+	slot22 = slot22.format
+	slot24 = "[HomeVehicleSeat] vehicleName=%s seatId=%s worldPosition=(%.3f, %.3f, %.3f)"
+	slot25 = slot10
+	slot26 = tostring
+	slot28 = slot18
+	slot26 = slot26(slot28)
+	slot27 = slot19.x
+	slot28 = slot19.y
+	slot29 = slot19.z
+	MULTRES = slot22(slot24, slot25, slot26, slot27, slot28, slot29)
+
+	slot20(MULTRES)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 149-150, warpins: 2 ---
+	--- END OF BLOCK #26 ---
+
+	for slot17, slot18 in slot14, slot15, slot16
+	LOOP BLOCK #25
+	GO OUT TO BLOCK #27
+
+
+	--- BLOCK #27 151-152, warpins: 2 ---
+	--- END OF BLOCK #27 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #28
+
+
+	--- BLOCK #28 153-155, warpins: 1 ---
+	slot3 = #slot2
+
+	return slot3
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 156-156, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #29 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "debugHomeLinkInfo"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot1.showLinkDebugInfo = slot0
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getEnableHomeLinkDebug"
+
+slot78 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.home
+	slot0 = slot0.showLinkDebugInfo
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getHomeLinkPresetFilterList"
+
+slot78 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = require
+	slot2 = "Common.Homeland.OrnamentBuild.BuildConst"
+	slot0 = slot0(slot2)
+	slot1 = slot0.getLinkSocketPresetOptionList
+
+	return slot1()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setHomeLinkPresetFilter"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.setSrcEntityLinkPresetFilter
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot4 = slot0.value
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getHomeLinkDirFilterList"
+
+slot78 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = require
+	slot2 = "Common.Homeland.OrnamentBuild.BuildConst"
+	slot0 = slot0(slot2)
+	slot1 = slot0.getLinkSocketDirOptionList
+
+	return slot1()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setHomeLinkDirFilter"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.setSrcEntityLinkDirFilter
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot4 = slot0.value
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setUWAGPMDebugMode"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.UWAGPMManager
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.UWAGPMManager
+	slot3 = slot1
+	slot1 = slot1.setDebugMode
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-13, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "onEnableHitCameraShakeChange"
+
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16906,10 +25297,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableHitCameraShake"
+slot63[slot77] = slot78
+slot77 = "getEnableHitCameraShake"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -16924,10 +25315,96 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showCreateCarWnd"
+slot63[slot77] = slot78
+slot77 = "onEnableHitRippleAllChange"
 
-slot48 = function()
+slot78 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1.enableHitRippleAll = slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getEnableHitRippleAll"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.enableHitRippleAll
+	--- END OF BLOCK #1 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	slot0 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-13, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "showCreateCarWnd"
+
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -16945,10 +25422,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugEntityInfoSimple"
+slot63[slot77] = slot78
+slot77 = "debugEntityInfoSimple"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16966,10 +25443,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "enableGamepadDebugCapture"
+slot63[slot77] = slot78
+slot77 = "enableGamepadDebugCapture"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -16987,10 +25464,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugDrawHitBox"
+slot63[slot77] = slot78
+slot77 = "debugDrawHitBox"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -17105,10 +25582,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugDrawRbCollider"
+slot63[slot77] = slot78
+slot77 = "debugDrawRbCollider"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -17223,10 +25700,128 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "toggleEnableEffectMpeLodDown"
+slot63[slot77] = slot78
+slot77 = "debugDrawRbCatchCollider"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = LoggerManager
+	slot1 = slot1.checkLogger
+	slot3 = LoggerConst
+	slot3 = slot3.INFO
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-13, warpins: 1 ---
+	slot1 = logger
+	slot3 = slot1
+	slot1 = slot1.info
+	slot4 = "debugDrawRbCatchCollider"
+	slot5 = slot0
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-17, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-21, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.globalDrawRbCatchCollider
+	slot5 = slot0
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-26, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.getEntities
+	slot2 = slot2()
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 27-30, warpins: 1 ---
+	slot3 = pairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 31-33, warpins: 1 ---
+	slot8 = slot7.enableDrawRbCatchCollider
+	--- END OF BLOCK #6 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 34-37, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.enableDrawRbCatchCollider
+	slot11 = slot0
+
+	slot8(slot10, slot11)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 38-39, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 40-40, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "toggleEnableEffectMpeLodDown"
+
+slot78 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientSwitch
 	slot2 = ClientSwitch
@@ -17241,10 +25836,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "debugDrawSpeedLine"
+slot63[slot77] = slot78
+slot77 = "debugDrawSpeedLine"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -17306,10 +25901,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableShowId"
+slot63[slot77] = slot78
+slot77 = "getEnableShowId"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -17324,10 +25919,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setGuideEnable"
+slot63[slot77] = slot78
+slot77 = "setGuideEnable"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -17345,10 +25940,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableGuide"
+slot63[slot77] = slot78
+slot77 = "getEnableGuide"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -17363,10 +25958,127 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDebug"
+slot63[slot77] = slot78
+slot77 = "unlockAllHelp"
 
-slot48 = function()
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot0 = {}
+	slot1 = pairs
+	slot3 = GuidenceItemData
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 11-21, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.getHelpIsUnlock
+	slot7 = pg
+	slot7 = slot7.me
+	slot8 = slot4
+	slot5 = slot5(slot7, slot8)
+	slot6 = Const
+	slot6 = slot6.HELP_UNLOCK_LEVEL
+	slot6 = slot6.UNLOCK
+	--- END OF BLOCK #3 ---
+
+	if slot5 ~= slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-24, warpins: 1 ---
+	slot5 = #slot0
+	slot5 = slot5 + 1
+	slot0[slot5] = slot4
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-26, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot4 in slot1, slot2, slot3
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 27-34, warpins: 1 ---
+	slot1 = table
+	slot1 = slot1.sort
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = ipairs
+	slot3 = slot0
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 35-41, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.serverMsg
+	slot9 = "RPC_CS_UnlockHelpItem"
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 42-43, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 44-44, warpins: 1 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getEnableDebug"
+
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -17381,10 +26093,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDebugSimple"
+slot63[slot77] = slot78
+slot77 = "getEnableDebugSimple"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -17399,10 +26111,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showEffectFieldsInfo"
+slot63[slot77] = slot78
+slot77 = "showEffectFieldsInfo"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -17459,10 +26171,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setUIVirtualTextureEnabled"
+slot63[slot77] = slot78
+slot77 = "setUIVirtualTextureEnabled"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -17486,10 +26198,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkUIVirtualTextureEnabled"
+slot63[slot77] = slot78
+slot77 = "checkUIVirtualTextureEnabled"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -17505,10 +26217,92 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setStaticBlurEnabled"
+slot63[slot77] = slot78
+slot77 = "setTextureStreamingGlobalHudEnabled"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = CS
+	slot1 = slot1.FunPlus
+	slot1 = slot1.WorldX
+	slot1 = slot1.Setting
+	slot1 = slot1.VideoSetting
+	slot1 = slot1.SetTextureStreamingGlobalHudEnabled
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "checkTextureStreamingGlobalHudEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Setting
+	slot0 = slot0.VideoSetting
+	slot0 = slot0.GetTextureStreamingGlobalHudEnabled
+
+	return slot0()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setDisableUIScale"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = CS
+	slot1 = slot1.FunPlus
+	slot1 = slot1.WorldX
+	slot1 = slot1.Setting
+	slot1 = slot1.VideoSetting
+	slot1 = slot1.DisableUIScale
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "checkDisableUIScale"
+
+slot78 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Setting
+	slot0 = slot0.VideoSetting
+	slot0 = slot0.GetDisableUIScale
+
+	return slot0()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setStaticBlurEnabled"
+
+slot78 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -17527,10 +26321,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getStaticBlurEnabled"
+slot63[slot77] = slot78
+slot77 = "getStaticBlurEnabled"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -17546,10 +26340,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setEffectParticleRenderingEnabled"
+slot63[slot77] = slot78
+slot77 = "setEffectParticleRenderingEnabled"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -17567,10 +26361,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEffectParticleRenderingEnabled"
+slot63[slot77] = slot78
+slot77 = "getEffectParticleRenderingEnabled"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -17584,10 +26378,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setEffectParticleVisibleEnabled"
+slot63[slot77] = slot78
+slot77 = "setEffectParticleVisibleEnabled"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -17605,10 +26399,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEffectParticleVisibleEnabled"
+slot63[slot77] = slot78
+slot77 = "getEffectParticleVisibleEnabled"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -17622,10 +26416,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setEffectActive"
+slot63[slot77] = slot78
+slot77 = "setEffectActive"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -17643,10 +26437,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEffectActive"
+slot63[slot77] = slot78
+slot77 = "getEffectActive"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -17660,11 +26454,11 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setLuaTickInterval"
+slot63[slot77] = slot78
+slot77 = "setLuaTickFrameInterval"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot78 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
 	slot1 = slot1.GetChild
@@ -17675,35 +26469,46 @@ slot48 = function(slot0)
 	slot4 = "UTMPInputField"
 	slot1 = slot1(slot3, slot4)
 	slot1 = slot1.text
-	slot2 = tonumber
-	slot4 = slot1
-	slot2 = slot2(slot4)
+	slot2 = math
+	slot2 = slot2.floor
+	slot4 = tonumber
+	slot6 = slot1
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 16-16, warpins: 1 ---
-	slot2 = 0
+	--- BLOCK #1 18-18, warpins: 1 ---
+	slot4 = 1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-25, warpins: 2 ---
+	--- BLOCK #2 19-34, warpins: 2 ---
+	slot2 = slot2(slot4)
 	slot3 = CS
 	slot3 = slot3.FunPlus
 	slot3 = slot3.WorldX
 	slot3 = slot3.Utils
 	slot3 = slot3.GmToolUtils
-	slot3 = slot3.SetLuaTickInterval
-	slot5 = slot2
+	slot4 = slot3.SetLuaTickFrameInterval
+	slot6 = slot2
 
-	slot3(slot5)
+	slot4(slot6)
+
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.queryLuaTickFrameInterval
+
+	slot4(slot6)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -17712,17 +26517,17 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getLuaTickInterval"
+slot63[slot77] = slot78
+slot77 = "getLuaTickFrameInterval"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
 	slot0 = slot0.WorldX
 	slot0 = slot0.Utils
 	slot0 = slot0.GmToolUtils
-	slot0 = slot0.GetLuaTickInterval
+	slot0 = slot0.GetLuaTickFrameInterval
 
 	return slot0()
 	--- END OF BLOCK #0 ---
@@ -17731,10 +26536,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setDynamicBatchEnabled"
+slot63[slot77] = slot78
+slot77 = "setDynamicBatchEnabled"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -17753,10 +26558,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkDynamicBatchEnabled"
+slot63[slot77] = slot78
+slot77 = "checkDynamicBatchEnabled"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -17772,10 +26577,253 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "refreshAllUI"
+slot63[slot77] = slot78
+slot77 = "setPostTaa5TapSharpenEnabled"
 
-slot48 = function()
+slot78 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.setGmPostTaa5TapSharpenEnabled
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getPostTaa5TapSharpenEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.setting
+	slot2 = slot0
+	slot0 = slot0.getGmPostTaa5TapSharpenEnabled
+
+	return slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setVSyncEnabled"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.setGmVSync
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 10-10, warpins: 1 ---
+	slot4 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-12, warpins: 2 ---
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getVSyncEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.setting
+	slot2 = slot0
+	slot0 = slot0.getGmVSync
+	slot0 = slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+	if slot0 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 11-11, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-12, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setLowResolutionEnabled"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.setGmLowResolutionEnabled
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getLowResolutionEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.setting
+	slot2 = slot0
+	slot0 = slot0.getGmLowResolutionEnabled
+
+	return slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setTransparentInOnePassEnabled"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.setGmTransparentInOnePassEnabled
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getTransparentInOnePassEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.setting
+	slot2 = slot0
+	slot0 = slot0.getGmTransparentInOnePassEnabled
+
+	return slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setTransparentInIndependentPassEnabled"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.setGmTransparentInIndependentPassEnabled
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getTransparentInIndependentPassEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.setting
+	slot2 = slot0
+	slot0 = slot0.getGmTransparentInIndependentPassEnabled
+
+	return slot0(slot2)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "refreshAllUI"
+
+slot78 = function()
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -17851,10 +26899,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getProfileInfo"
+slot63[slot77] = slot78
+slot77 = "getProfileInfo"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -17874,10 +26922,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getProfileInfoDo"
+slot63[slot77] = slot78
+slot77 = "getProfileInfoDo"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = logger
 	slot3 = slot1
@@ -17894,10 +26942,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "teleportAndCollectProfileByPosList"
+slot63[slot77] = slot78
+slot77 = "teleportAndCollectProfileByPosList"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.__profilePosCollectPreTimerId
@@ -18612,10 +27660,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showPetFirstMeeting"
+slot63[slot77] = slot78
+slot77 = "showPetFirstMeeting"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-36, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -18693,10 +27741,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showPetFirstMeetingByTemplateId"
+slot63[slot77] = slot78
+slot77 = "showPetFirstMeetingByTemplateId"
 
-slot48 = function(slot0, slot1, slot2)
+slot78 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = {}
 	slot4 = {}
@@ -18788,10 +27836,10 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showAllOnlinePetFirstMeeting"
+slot63[slot77] = slot78
+slot77 = "showAllOnlinePetFirstMeeting"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1, slot2 = nil
 	--- END OF BLOCK #0 ---
@@ -19258,10 +28306,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "enablePlayableLog"
+slot63[slot77] = slot78
+slot77 = "enablePlayableLog"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -19279,10 +28327,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnablePlayableLog"
+slot63[slot77] = slot78
+slot77 = "getEnablePlayableLog"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -19297,10 +28345,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableGamepadDebugCapture"
+slot63[slot77] = slot78
+slot77 = "getEnableGamepadDebugCapture"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -19315,10 +28363,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDrawHitBox"
+slot63[slot77] = slot78
+slot77 = "getEnableDrawHitBox"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = Switch
 	slot0 = slot0.EnableDrawHitBox
@@ -19330,10 +28378,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDrawRbCollider"
+slot63[slot77] = slot78
+slot77 = "getEnableDrawRbCollider"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = Switch
 	slot0 = slot0.EnableDrawRbCollider
@@ -19345,10 +28393,25 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableEffectMpeLodDown"
+slot63[slot77] = slot78
+slot77 = "getEnableDrawRbCatchCollider"
 
-slot48 = function()
+slot78 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = Switch
+	slot0 = slot0.EnableDrawRbCatchCollider
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getEnableEffectMpeLodDown"
+
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.EnableEffectMpeLodDown
@@ -19360,10 +28423,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDrawSpeedLine"
+slot63[slot77] = slot78
+slot77 = "getEnableDrawSpeedLine"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = Switch
 	slot0 = slot0.EnableDrawSpeedCurve
@@ -19375,10 +28438,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "cursorActInfo"
+slot63[slot77] = slot78
+slot77 = "cursorActInfo"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -19429,10 +28492,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsCursorAct"
+slot63[slot77] = slot78
+slot77 = "getIsCursorAct"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -19472,10 +28535,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onBtDebugChange"
+slot63[slot77] = slot78
+slot77 = "onBtDebugChange"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -19484,11 +28547,11 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "OnSceneLoadedDo"
+slot63[slot77] = slot78
+slot77 = "OnSceneLoadedDo"
 
-slot48 = function()
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot78 = function()
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
 	slot0 = slot0.WorldX
@@ -19498,17 +28561,70 @@ slot48 = function()
 
 	slot0()
 
-	return
+	slot0 = GmToolUtils
+	slot0 = slot0._attributeConstChecked
 	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 12-15, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 16-22, warpins: 1 ---
+	slot0 = Utils
+	slot0 = slot0.enableClientUseGm
+	slot2 = pg
+	slot2 = slot2.me
+	slot0 = slot0(slot2)
+	--- END OF BLOCK #2 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-28, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot1 = true
+	slot0._attributeConstChecked = slot1
+	slot0 = AttributeConstHelper
+	slot0 = slot0.tipAttributeLuaDiffByRpc
+
+	slot0()
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 29-29, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getBtDebug"
+slot63[slot77] = slot78
+slot77 = "getBtDebug"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -19540,10 +28656,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onUseLockOnExtendCameraChange"
+slot63[slot77] = slot78
+slot77 = "onUseLockOnExtendCameraChange"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -19567,10 +28683,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsUseLockOnExtendCamera"
+slot63[slot77] = slot78
+slot77 = "getIsUseLockOnExtendCamera"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -19585,10 +28701,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onUseLockOnCameraChange"
+slot63[slot77] = slot78
+slot77 = "onUseLockOnCameraChange"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -19612,10 +28728,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsUseLockOnCamera"
+slot63[slot77] = slot78
+slot77 = "getIsUseLockOnCamera"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -19630,10 +28746,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onKeyboardLockModeChange"
+slot63[slot77] = slot78
+slot77 = "onKeyboardLockModeChange"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -19663,10 +28779,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onGamepadLockModeChange"
+slot63[slot77] = slot78
+slot77 = "onGamepadLockModeChange"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -19675,10 +28791,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onDrawAbilityMeshChange"
+slot63[slot77] = slot78
+slot77 = "onDrawAbilityMeshChange"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientSwitch
 	slot2 = ClientSwitch
@@ -19693,10 +28809,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onlyDrawLatestAttackBox"
+slot63[slot77] = slot78
+slot77 = "onlyDrawLatestAttackBox"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientSwitch
 	slot2 = ClientSwitch
@@ -19711,10 +28827,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showLockEntDist"
+slot63[slot77] = slot78
+slot77 = "showLockEntDist"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -19755,10 +28871,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showLockEntHates"
+slot63[slot77] = slot78
+slot77 = "showLockEntHates"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -19799,10 +28915,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showEntityWindow"
+slot63[slot77] = slot78
+slot77 = "showEntityWindow"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -19843,10 +28959,673 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onEnableHideChestChange"
+slot63[slot77] = slot78
+slot77 = "GM_CAMERA_DISTANCE_SCALE_MIN"
+slot78 = 0.5
+slot63[slot77] = slot78
+slot77 = "GM_CAMERA_DISTANCE_SCALE_MAX"
+slot78 = 1.5
+slot63[slot77] = slot78
+slot77 = "GM_CAMERA_DISTANCE_SCALE_STEP"
+slot78 = 0.1
+slot63[slot77] = slot78
+slot77 = "GM_CAMERA_MAX_ZOOM_INDEX_MIN"
+slot78 = 12
+slot63[slot77] = slot78
+slot77 = "GM_CAMERA_MAX_ZOOM_INDEX_MAX"
+slot78 = 20
+slot63[slot77] = slot78
+slot77 = "getGmCameraDistanceScaleEnabled"
 
-slot48 = function()
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = ClientSwitch
+	slot0 = slot0.EnableGmCameraDistanceScale
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-8, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setGmCameraDistanceScaleEnabled"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = ClientSwitch
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-11, warpins: 2 ---
+	slot1.EnableGmCameraDistanceScale = slot2
+	slot1 = GmToolUtils
+	slot1 = slot1.refreshGmCameraDistanceScale
+
+	slot1()
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraDistanceScale"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = ClientSwitch
+	slot0 = slot0.GmCameraDistanceScale
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot0 = 1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraDistanceScaleList"
+
+slot78 = function()
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot0 = {}
+	slot1 = GmToolUtils
+	slot1 = slot1.GM_CAMERA_DISTANCE_SCALE_STEP
+	slot2 = math
+	slot2 = slot2.round
+	slot4 = GmToolUtils
+	slot4 = slot4.GM_CAMERA_DISTANCE_SCALE_MAX
+	slot5 = GmToolUtils
+	slot5 = slot5.GM_CAMERA_DISTANCE_SCALE_MIN
+	slot4 = slot4 - slot5
+	slot4 = slot4 / slot1
+	slot2 = slot2(slot4)
+	slot3 = 0
+	slot4 = slot2
+	slot5 = 1
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+	--- BLOCK #1 17-38, warpins: 2 ---
+	slot7 = tonumber
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "%.1f"
+	slot12 = GmToolUtils
+	slot12 = slot12.GM_CAMERA_DISTANCE_SCALE_MIN
+	slot13 = slot6 * slot1
+	slot12 = slot12 + slot13
+	MULTRES = slot9(slot11, slot12)
+	slot7 = slot7(MULTRES)
+	slot8 = #slot0
+	slot8 = slot8 + 1
+	slot9 = {
+		tIndex = 0
+	}
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = "%.1f"
+	slot13 = slot7
+	slot10 = slot10(slot12, slot13)
+	slot9.label = slot10
+	slot9.value = slot7
+	slot0[slot8] = slot9
+
+	--- END OF BLOCK #1 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #2
+
+	--- BLOCK #2 39-39, warpins: 1 ---
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraDistanceScaleSelected"
+
+slot78 = function()
+	--- BLOCK #0 1-29, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.getGmCameraDistanceScale
+	slot0 = slot0()
+	slot1 = math
+	slot1 = slot1.round
+	slot3 = GmToolUtils
+	slot3 = slot3.GM_CAMERA_DISTANCE_SCALE_MIN
+	slot3 = slot0 - slot3
+	slot4 = GmToolUtils
+	slot4 = slot4.GM_CAMERA_DISTANCE_SCALE_STEP
+	slot3 = slot3 / slot4
+	slot1 = slot1(slot3)
+	slot2 = math
+	slot2 = slot2.round
+	slot4 = GmToolUtils
+	slot4 = slot4.GM_CAMERA_DISTANCE_SCALE_MAX
+	slot5 = GmToolUtils
+	slot5 = slot5.GM_CAMERA_DISTANCE_SCALE_MIN
+	slot4 = slot4 - slot5
+	slot5 = GmToolUtils
+	slot5 = slot5.GM_CAMERA_DISTANCE_SCALE_STEP
+	slot4 = slot4 / slot5
+	slot2 = slot2(slot4)
+	slot3 = math
+	slot3 = slot3.clamp
+	slot5 = slot1
+	slot6 = 0
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setGmCameraDistanceScale"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = tonumber
+	slot3 = type
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot3 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot0.value
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	slot3 = slot0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-13, warpins: 2 ---
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot2 = 0
+
+	--- END OF BLOCK #4 ---
+
+	if slot1 <= slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-23, warpins: 2 ---
+	slot2 = ClientSwitch
+	slot2.GmCameraDistanceScale = slot1
+	slot2 = GmToolUtils
+	slot2 = slot2.refreshGmCameraDistanceScale
+
+	slot2()
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "refreshGmCameraDistanceScale"
+
+slot78 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.camera
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.camera
+	slot2 = slot0
+	slot0 = slot0.refreshCameraDistanceScale
+
+	slot0(slot2)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraMaxZoomIndexEnabled"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = ClientSwitch
+	slot0 = slot0.EnableGmCameraMaxZoomIndex
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 7-7, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-8, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setGmCameraMaxZoomIndexEnabled"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = ClientSwitch
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-11, warpins: 2 ---
+	slot1.EnableGmCameraMaxZoomIndex = slot2
+	slot1 = GmToolUtils
+	slot1 = slot1.refreshGmCameraMaxZoomIndex
+
+	slot1()
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraMaxZoomIndex"
+
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = ClientSwitch
+	slot0 = slot0.GmCameraMaxZoomIndex
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.GM_CAMERA_MAX_ZOOM_INDEX_MAX
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraMaxZoomIndexList"
+
+slot78 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = {}
+	slot1 = GmToolUtils
+	slot1 = slot1.GM_CAMERA_MAX_ZOOM_INDEX_MIN
+	slot2 = GmToolUtils
+	slot2 = slot2.GM_CAMERA_MAX_ZOOM_INDEX_MAX
+	slot3 = 1
+	--- END OF BLOCK #0 ---
+
+	FLOW; TARGET BLOCK #1
+
+
+	--- BLOCK #1 8-17, warpins: 2 ---
+	slot5 = #slot0
+	slot5 = slot5 + 1
+	slot6 = {
+		tIndex = 0
+	}
+	slot7 = tostring
+	slot9 = slot4
+	slot7 = slot7(slot9)
+	slot6.label = slot7
+	slot6.value = slot4
+	slot0[slot5] = slot6
+
+	--- END OF BLOCK #1 ---
+
+	for slot4=slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #2
+
+	--- BLOCK #2 18-18, warpins: 1 ---
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getGmCameraMaxZoomIndexSelected"
+
+slot78 = function()
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot0 = math
+	slot0 = slot0.clamp
+	slot2 = math
+	slot2 = slot2.round
+	slot4 = GmToolUtils
+	slot4 = slot4.getGmCameraMaxZoomIndex
+	MULTRES = slot4()
+	slot2 = slot2(MULTRES)
+	slot3 = GmToolUtils
+	slot3 = slot3.GM_CAMERA_MAX_ZOOM_INDEX_MIN
+	slot4 = GmToolUtils
+	slot4 = slot4.GM_CAMERA_MAX_ZOOM_INDEX_MAX
+	slot0 = slot0(slot2, slot3, slot4)
+	slot1 = GmToolUtils
+	slot1 = slot1.GM_CAMERA_MAX_ZOOM_INDEX_MIN
+	slot1 = slot0 - slot1
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setGmCameraMaxZoomIndex"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = tonumber
+	slot3 = type
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot3 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot0.value
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	slot3 = slot0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-13, warpins: 2 ---
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-31, warpins: 2 ---
+	slot2 = ClientSwitch
+	slot3 = math
+	slot3 = slot3.clamp
+	slot5 = math
+	slot5 = slot5.round
+	slot7 = slot1
+	slot5 = slot5(slot7)
+	slot6 = GmToolUtils
+	slot6 = slot6.GM_CAMERA_MAX_ZOOM_INDEX_MIN
+	slot7 = GmToolUtils
+	slot7 = slot7.GM_CAMERA_MAX_ZOOM_INDEX_MAX
+	slot3 = slot3(slot5, slot6, slot7)
+	slot2.GmCameraMaxZoomIndex = slot3
+	slot2 = GmToolUtils
+	slot2 = slot2.refreshGmCameraMaxZoomIndex
+
+	slot2()
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "refreshGmCameraMaxZoomIndex"
+
+slot78 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.camera
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.camera
+	slot2 = slot0
+	slot0 = slot0.refreshCameraZoomLimit
+
+	slot0(slot2)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "onEnableHideChestChange"
+
+slot78 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot1 = ClientSwitch
@@ -19911,10 +29690,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onEnableHidePuppetChange"
+slot63[slot77] = slot78
+slot77 = "onEnableHidePuppetChange"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot1 = ClientSwitch
@@ -20061,124 +29840,38 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onEnableHideECSTopLogoChange"
+slot63[slot77] = slot78
+slot77 = "onEnableHideECSTopLogoChange"
 
-slot48 = function()
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot78 = function()
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot1 = ClientSwitch
 	slot1 = slot1.EnableHideECSTopLogo
 	slot1 = not slot1
 	slot0.EnableHideECSTopLogo = slot1
-	slot0 = require
-	slot2 = "Core.Common.ActorManager"
-	slot0 = slot0(slot2)
-	slot1 = typeof
-	slot3 = CS
-	slot3 = slot3.FunPlus
-	slot3 = slot3.WorldX
-	slot3 = slot3.GameApp
-	slot3 = slot3.Ecs
-	slot3 = slot3.EcsTopLogo
-	slot1 = slot1(slot3)
-	slot2 = pairs
-	slot4 = slot0.entities
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #0 ---
+	slot0 = pg
+	slot0 = slot0.game
+	slot0 = slot0.ecs
+	slot2 = slot0
+	slot0 = slot0.setAllEcsTopLogoVisible
+	slot3 = ClientSwitch
+	slot3 = slot3.EnableHideECSTopLogo
+	slot3 = not slot3
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	slot0(slot2, slot3)
 
-
-	--- BLOCK #1 21-22, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #2 23-27, warpins: 1 ---
-	slot7 = NotNil
-	slot9 = slot6.eModel
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #2 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 28-33, warpins: 1 ---
-	slot7 = slot6.eModel
-	slot9 = slot7
-	slot7 = slot7.CheckPositionAgent
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #3 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 34-44, warpins: 1 ---
-	slot7 = slot6.eModel
-	slot7 = slot7.gameObject
-	slot9 = slot7
-	slot7 = slot7.GetComponentsInChildren
-	slot10 = slot1
-	slot7 = slot7(slot9, slot10)
-	slot8 = 0
-	slot9 = slot7.Length
-	slot9 = slot9 - 1
-	slot10 = 1
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 45-52, warpins: 2 ---
-	slot12 = slot7[slot11]
-	slot15 = slot12
-	slot13 = slot12.SetTopLogoVisible
-	slot16 = ClientSwitch
-	slot16 = slot16.EnableHideECSTopLogo
-	slot16 = not slot16
-
-	slot13(slot15, slot16)
-
-	--- END OF BLOCK #5 ---
-
-	for slot11=slot8, slot9, slot10
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #6
-
-	--- BLOCK #6 53-54, warpins: 5 ---
-	--- END OF BLOCK #6 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 55-55, warpins: 1 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsDrawAbilityMesh"
+slot63[slot77] = slot78
+slot77 = "getIsDrawAbilityMesh"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.EnableDrawAbilityGizmo
@@ -20190,10 +29883,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getOnlyDrawLatestAttackBox"
+slot63[slot77] = slot78
+slot77 = "getOnlyDrawLatestAttackBox"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.OnlyDrawLatestAttackBox
@@ -20205,10 +29898,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsShowLockEntDist"
+slot63[slot77] = slot78
+slot77 = "getIsShowLockEntDist"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -20239,10 +29932,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsShowLockEntHates"
+slot63[slot77] = slot78
+slot77 = "getIsShowLockEntHates"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -20273,10 +29966,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsShowEntityWindow"
+slot63[slot77] = slot78
+slot77 = "getIsShowEntityWindow"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -20307,10 +30000,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableHideChest"
+slot63[slot77] = slot78
+slot77 = "getEnableHideChest"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.EnableHideChest
@@ -20322,10 +30015,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableHidePuppet"
+slot63[slot77] = slot78
+slot77 = "getEnableHidePuppet"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.EnableHidePuppet
@@ -20337,10 +30030,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableHideECSTopLogo"
+slot63[slot77] = slot78
+slot77 = "getEnableHideECSTopLogo"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.EnableHideECSTopLogo
@@ -20352,10 +30045,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setArrowTip3DSpaceMode"
+slot63[slot77] = slot78
+slot77 = "setArrowTip3DSpaceMode"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = ClientSwitch
 	slot1.EnableArrowTip3DSpaceMode = slot0
@@ -20367,10 +30060,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsArrowTip3DSpaceMode"
+slot63[slot77] = slot78
+slot77 = "getIsArrowTip3DSpaceMode"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ClientSwitch
 	slot0 = slot0.EnableArrowTip3DSpaceMode
@@ -20382,10 +30075,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setAimSkillSwitchMode"
+slot63[slot77] = slot78
+slot77 = "setAimSkillSwitchMode"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = Switch
 	slot1.EnableAimSkillSwitchMode = slot0
@@ -20397,10 +30090,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getIsAimSkillSwitchMode"
+slot63[slot77] = slot78
+slot77 = "getIsAimSkillSwitchMode"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = Switch
 	slot0 = slot0.EnableAimSkillSwitchMode
@@ -20412,10 +30105,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getTopLogoUseCache"
+slot63[slot77] = slot78
+slot77 = "getTopLogoUseCache"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -20429,10 +30122,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setTopLogoUseCache"
+slot63[slot77] = slot78
+slot77 = "setTopLogoUseCache"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -20450,134 +30143,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getFloatingObjUseAVBD"
+slot63[slot77] = slot78
+slot77 = "getGmMoveMode"
 
-slot48 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
-	--- END OF BLOCK #0 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
-	slot0 = slot0.eModel
-	slot0 = slot0.controllerComponent
-	--- END OF BLOCK #1 ---
-
-	if slot0 ~= nil then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 11-16, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
-	slot0 = slot0.eModel
-	slot0 = slot0.controllerComponent
-	slot0 = slot0.useAVBD
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #3 17-18, warpins: 1 ---
-	slot0 = false
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 19-19, warpins: 0 ---
-	slot0 = true
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 20-20, warpins: 3 ---
-	return slot0
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 21-22, warpins: 2 ---
-	slot0 = false
-
-	return slot0
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot43[slot47] = slot48
-slot47 = "setFloatingObjUseAVBD"
-
-slot48 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 11-15, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	slot1.useAVBD = slot0
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 16-16, warpins: 3 ---
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot43[slot47] = slot48
-slot47 = "getGmMoveMode"
-
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -20590,11 +30159,10 @@ slot48 = function()
 	end
 
 
-	--- BLOCK #1 5-12, warpins: 1 ---
+	--- BLOCK #1 5-11, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
 	slot0 = slot0.eModel
-	slot0 = slot0.motionComponent
 	slot0 = slot0.GmMoveSpeed
 	slot1 = 0
 	--- END OF BLOCK #1 ---
@@ -20606,14 +30174,14 @@ slot48 = function()
 	end
 
 
-	--- BLOCK #2 13-14, warpins: 1 ---
+	--- BLOCK #2 12-13, warpins: 1 ---
 	slot0 = false
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 15-15, warpins: 1 ---
+	--- BLOCK #3 14-14, warpins: 1 ---
 	slot0 = true
 
 	--- END OF BLOCK #3 ---
@@ -20621,14 +30189,14 @@ slot48 = function()
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-16, warpins: 2 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
 	return slot0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 17-17, warpins: 2 ---
+	--- BLOCK #5 16-16, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -20636,15 +30204,14 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setGmMoveMode"
+slot63[slot77] = slot78
+slot77 = "setGmMoveMode"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot78 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot1 = slot1.eModel
-	slot1 = slot1.motionComponent
 	--- END OF BLOCK #0 ---
 
 	slot0 = if slot0 then
@@ -20654,21 +30221,21 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
+	--- BLOCK #1 6-7, warpins: 1 ---
 	slot2 = 2
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 9-9, warpins: 1 ---
+	--- BLOCK #2 8-8, warpins: 1 ---
 	slot2 = -1
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 10-11, warpins: 2 ---
+	--- BLOCK #3 9-10, warpins: 2 ---
 	slot1.GmMoveSpeed = slot2
 
 	return
@@ -20678,10 +30245,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getSpecialAfk"
+slot63[slot77] = slot78
+slot77 = "getSpecialAfk"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -20721,10 +30288,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setSpecialAfk"
+slot63[slot77] = slot78
+slot77 = "setSpecialAfk"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -20763,10 +30330,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getStunnedCheck"
+slot63[slot77] = slot78
+slot77 = "getStunnedCheck"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -20775,76 +30342,23 @@ slot48 = function()
 	slot0 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 5-10, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
-	slot0 = slot0.eModel
-	slot0 = slot0.controllerComponent
-	--- END OF BLOCK #1 ---
-
-	slot0 = if slot0 then
 	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-16, warpins: 1 ---
+	--- BLOCK #1 5-9, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
 	slot0 = slot0.eModel
-	slot0 = slot0.controllerComponent
 	slot0 = slot0.openStunnedCheck
 
 	return slot0
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 17-17, warpins: 3 ---
-	return
-	--- END OF BLOCK #3 ---
-
-
-
-end
-
-slot43[slot47] = slot48
-slot47 = "setStunnedCheck"
-
-slot48 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-11, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	slot1.openStunnedCheck = slot0
-
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-12, warpins: 2 ---
+	--- BLOCK #2 10-10, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -20852,10 +30366,27 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getSkillTypeHide"
+slot63[slot77] = slot78
+slot77 = "setStunnedCheck"
 
-slot48 = function()
+slot78 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.eModel
+	slot1.openStunnedCheck = slot0
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "getSkillTypeHide"
+
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -20870,10 +30401,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setSkillTypeHide"
+slot63[slot77] = slot78
+slot77 = "setSkillTypeHide"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -20889,10 +30420,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getAllHudArrowHide"
+slot63[slot77] = slot78
+slot77 = "getAllHudArrowHide"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -20907,10 +30438,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setAllHudArrowHide"
+slot63[slot77] = slot78
+slot77 = "setAllHudArrowHide"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -20926,10 +30457,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getCatchRogueShopShow"
+slot63[slot77] = slot78
+slot77 = "getCatchRogueShopShow"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = LuaUIUtils
 	slot0 = slot0.checkFuncTemporaryDisable
@@ -20970,10 +30501,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setCatchRogueShopShow"
+slot63[slot77] = slot78
+slot77 = "setCatchRogueShopShow"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -21054,10 +30585,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getLocalizationTagEnable"
+slot63[slot77] = slot78
+slot77 = "getLocalizationTagEnable"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -21072,10 +30603,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setLocalizationTagEnable"
+slot63[slot77] = slot78
+slot77 = "setLocalizationTagEnable"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -21098,10 +30629,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setAllTextArkFontEnable"
+slot63[slot77] = slot78
+slot77 = "setAllTextArkFontEnable"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -21124,10 +30655,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getAllTextArkFontEnable"
+slot63[slot77] = slot78
+slot77 = "getAllTextArkFontEnable"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -21142,10 +30673,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getMachineTranslationHighlight"
+slot63[slot77] = slot78
+slot77 = "getMachineTranslationHighlight"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -21160,10 +30691,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setMachineTranslationHighlight"
+slot63[slot77] = slot78
+slot77 = "setMachineTranslationHighlight"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -21186,10 +30717,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "refreshLocalizationUI"
+slot63[slot77] = slot78
+slot77 = "refreshLocalizationUI"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -21265,30 +30796,38 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getPlatformList"
+slot63[slot77] = slot78
+slot77 = "getPlatformList"
 
-slot48 = function()
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot78 = function()
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "Mobile-窄屏",
 		value = "mobile_narrow"
 	}
+	slot2 = GmToolUtils
+	slot2 = slot2.getGmGameString
+	slot4 = "GM_MOBILE_NARROW_SCREEN"
+	slot2 = slot2(slot4)
+	slot1.label = slot2
 	slot0[1] = slot1
 	slot1 = {
-		label = "Mobile-宽屏",
 		value = "mobile_wide"
 	}
+	slot2 = GmToolUtils
+	slot2 = slot2.getGmGameString
+	slot4 = "GM_MOBILE_WIDE_SCREEN"
+	slot2 = slot2(slot4)
+	slot1.label = slot2
 	slot0[2] = slot1
 	slot1 = {
-		label = "Standalone",
-		value = "standalone"
+		value = "standalone",
+		label = "Standalone"
 	}
 	slot0[3] = slot1
 	slot1 = {
-		label = "Console",
-		value = "console"
+		value = "console",
+		label = "Console"
 	}
 	slot0[4] = slot1
 
@@ -21299,10 +30838,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getCurPlatformSelected"
+slot63[slot77] = slot78
+slot77 = "getCurPlatformSelected"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -21399,13 +30938,13 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "_savedResolution"
-slot48 = nil
-slot43[slot47] = slot48
-slot47 = "restoreResolution"
+slot63[slot77] = slot78
+slot77 = "_savedResolution"
+slot78 = nil
+slot63[slot77] = slot78
+slot77 = "restoreResolution"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0._savedResolution
@@ -21449,323 +30988,386 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "switchPlatform"
+slot63[slot77] = slot78
+slot77 = "switchPlatform"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = CS
-	slot1 = slot1.XGUI
-	slot1 = slot1.EPlatform
-	slot2 = slot0.value
+slot78 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = require
+	slot3 = "Utils.PlatformSwitchUtils"
+	slot1 = slot1(slot3)
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.EPlatform
+	slot3 = slot0.value
+	slot4 = ClientUtils
+	slot4 = slot4.canHotSwitchPlatform
+	slot4 = slot4()
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= "standalone" then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-10, warpins: 1 ---
-	slot3 = GmToolUtils
-	slot3 = slot3._savedResolution
+	--- BLOCK #1 13-21, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.tips
+	slot6 = slot4
+	slot4 = slot4.showTextTip
+	slot7 = "The current state does not support touchscreen/controller switching. Please exit and try again."
+
+	slot4(slot6, slot7)
+
+	return
+
 	--- END OF BLOCK #1 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 22-23, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= "standalone" then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 11-22, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.setting
-	slot5 = slot3
-	slot3 = slot3.getResolutionNumber
-	slot3, slot4, slot5 = slot3(slot5)
-	slot6 = GmToolUtils
-	slot7 = {}
-	slot7.width = slot3
-	slot7.height = slot4
-	slot7.screenMode = slot5
-	slot6._savedResolution = slot7
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 23-24, warpins: 3 ---
+	--- BLOCK #3 24-27, warpins: 1 ---
+	slot4 = GmToolUtils
+	slot4 = slot4._savedResolution
 	--- END OF BLOCK #3 ---
 
-	if slot2 == "mobile_narrow" then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 25-50, warpins: 1 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.UIConfig
-	slot3 = slot3.instance
-	slot5 = slot3
-	slot3 = slot3.SetAdaptationPlatform
-	slot6 = slot1.Mobile
-
-	slot3(slot5, slot6)
-
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.uiMgr
-	slot5 = slot3
-	slot3 = slot3.SetSafeAreaAdjustEnable
-	slot6 = false
-
-	slot3(slot5, slot6)
-
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.gameMgr
-	slot5 = slot3
-	slot3 = slot3.SetResolution
-	slot6 = 1920
-	slot7 = 1080
-	slot8 = "Windowed"
-
-	slot3(slot5, slot6, slot7, slot8)
-
+	--- BLOCK #4 28-39, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getResolutionNumber
+	slot4, slot5, slot6 = slot4(slot6)
+	slot7 = GmToolUtils
+	slot8 = {}
+	slot8.width = slot4
+	slot8.height = slot5
+	slot8.screenMode = slot6
+	slot7._savedResolution = slot8
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 51-52, warpins: 1 ---
+	--- BLOCK #5 40-41, warpins: 3 ---
 	--- END OF BLOCK #5 ---
 
-	if slot2 == "mobile_wide" then
+	if slot3 == "mobile_narrow" then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 53-78, warpins: 1 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.UIConfig
-	slot3 = slot3.instance
-	slot5 = slot3
-	slot3 = slot3.SetAdaptationPlatform
-	slot6 = slot1.Mobile
+	--- BLOCK #6 42-67, warpins: 1 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.UIConfig
+	slot4 = slot4.instance
+	slot6 = slot4
+	slot4 = slot4.SetAdaptationPlatform
+	slot7 = slot2.Mobile
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.uiMgr
-	slot5 = slot3
-	slot3 = slot3.SetSafeAreaAdjustEnable
-	slot6 = true
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.uiMgr
+	slot6 = slot4
+	slot4 = slot4.SetSafeAreaAdjustEnable
+	slot7 = false
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.gameMgr
-	slot5 = slot3
-	slot3 = slot3.SetResolution
-	slot6 = 2340
-	slot7 = 1080
-	slot8 = "Windowed"
-
-	slot3(slot5, slot6, slot7, slot8)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #7 79-80, warpins: 1 ---
-	--- END OF BLOCK #7 ---
-
-	if slot2 == "standalone" then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #8 81-100, warpins: 1 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.UIConfig
-	slot3 = slot3.instance
-	slot5 = slot3
-	slot3 = slot3.SetAdaptationPlatform
-	slot6 = slot1.Standalone
-
-	slot3(slot5, slot6)
-
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.uiMgr
-	slot5 = slot3
-	slot3 = slot3.SetSafeAreaAdjustEnable
-	slot6 = false
-
-	slot3(slot5, slot6)
-
-	slot3 = GmToolUtils
-	slot3 = slot3._savedResolution
-	--- END OF BLOCK #8 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #9 101-115, warpins: 1 ---
-	slot3 = GmToolUtils
-	slot3 = slot3._savedResolution
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.gameMgr
 	slot6 = slot4
 	slot4 = slot4.SetResolution
-	slot7 = slot3.width
-	slot8 = slot3.height
-	slot9 = slot3.screenMode
+	slot7 = 1920
+	slot8 = 1080
+	slot9 = "Windowed"
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	slot4 = GmToolUtils
-	slot5 = nil
-	slot4._savedResolution = slot5
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #7 68-69, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot3 == "mobile_wide" then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 70-95, warpins: 1 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.UIConfig
+	slot4 = slot4.instance
+	slot6 = slot4
+	slot4 = slot4.SetAdaptationPlatform
+	slot7 = slot2.Mobile
+
+	slot4(slot6, slot7)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.uiMgr
+	slot6 = slot4
+	slot4 = slot4.SetSafeAreaAdjustEnable
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.gameMgr
+	slot6 = slot4
+	slot4 = slot4.SetResolution
+	slot7 = 2340
+	slot8 = 1080
+	slot9 = "Windowed"
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #9 96-97, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 116-117, warpins: 1 ---
-	--- END OF BLOCK #10 ---
-
-	if slot2 == "console" then
-	JUMP TO BLOCK #11
+	if slot3 == "standalone" then
+	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 118-133, warpins: 1 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.UIConfig
-	slot3 = slot3.instance
-	slot5 = slot3
-	slot3 = slot3.SetAdaptationPlatform
-	slot6 = slot1.Console
+	--- BLOCK #10 98-117, warpins: 1 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.UIConfig
+	slot4 = slot4.instance
+	slot6 = slot4
+	slot4 = slot4.SetAdaptationPlatform
+	slot7 = slot2.Standalone
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.uiMgr
-	slot5 = slot3
-	slot3 = slot3.SetSafeAreaAdjustEnable
-	slot6 = false
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.uiMgr
+	slot6 = slot4
+	slot4 = slot4.SetSafeAreaAdjustEnable
+	slot7 = false
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
+	slot4 = GmToolUtils
+	slot4 = slot4._savedResolution
+	--- END OF BLOCK #10 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #11 118-132, warpins: 1 ---
+	slot4 = GmToolUtils
+	slot4 = slot4._savedResolution
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.gameMgr
+	slot7 = slot5
+	slot5 = slot5.SetResolution
+	slot8 = slot4.width
+	slot9 = slot4.height
+	slot10 = slot4.screenMode
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot5 = GmToolUtils
+	slot6 = nil
+	slot5._savedResolution = slot6
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 134-154, warpins: 6 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.Utils
-	slot3 = slot3.SyncCanvasScalerSetting
-	slot5 = CS
-	slot5 = slot5.XGUI
-	slot5 = slot5.UWidget
-	slot5 = slot5.canvasScaler
+	--- BLOCK #12 133-134, warpins: 1 ---
+	--- END OF BLOCK #12 ---
 
-	slot3(slot5)
+	if slot3 == "console" then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
 
-	slot3 = ""
-	ClientConfigInputPlatform = slot3
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot5 = slot3
-	slot3 = slot3.onInitAdapterPlatform
 
-	slot3(slot5)
+	--- BLOCK #13 135-150, warpins: 1 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.UIConfig
+	slot4 = slot4.instance
+	slot6 = slot4
+	slot4 = slot4.SetAdaptationPlatform
+	slot7 = slot2.Console
 
-	slot3 = GmToolUtils
-	slot3 = slot3.refreshLocalizationUI
+	slot4(slot6, slot7)
 
-	slot3()
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.uiMgr
+	slot6 = slot4
+	slot4 = slot4.SetSafeAreaAdjustEnable
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 151-170, warpins: 6 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.Utils
+	slot4 = slot4.SyncCanvasScalerSetting
+	slot6 = CS
+	slot6 = slot6.XGUI
+	slot6 = slot6.UWidget
+	slot6 = slot6.canvasScaler
+
+	slot4(slot6)
+
+	slot4 = ""
+	ClientConfigInputPlatform = slot4
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot6 = slot4
+	slot4 = slot4.onInitAdapterPlatform
+
+	slot4(slot6)
+
+	slot4 = slot1.onPlatformSwitched
+
+	slot4()
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getLanguageList"
+slot63[slot77] = slot78
+slot77 = "getLanguageList"
 
-slot48 = function()
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot78 = function()
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "zh_CN",
-		value = "zh_CN"
+		value = "zh_CN",
+		label = "zh_CN"
 	}
 	slot0[1] = slot1
 	slot1 = {
-		label = "zh_TW",
-		value = "zh_TW"
+		value = "zh_TW",
+		label = "zh_TW"
 	}
 	slot0[2] = slot1
 	slot1 = {
-		label = "en",
-		value = "en"
+		value = "en",
+		label = "en"
 	}
 	slot0[3] = slot1
 	slot1 = {
-		label = "ko_KR",
-		value = "ko_KR"
+		value = "ko_KR",
+		label = "ko_KR"
 	}
 	slot0[4] = slot1
 	slot1 = {
-		label = "ja_JP",
-		value = "ja_JP"
+		value = "ja_JP",
+		label = "ja_JP"
 	}
 	slot0[5] = slot1
 	slot1 = {
-		label = "vi_VN",
-		value = "vi_VN"
+		value = "vi_VN",
+		label = "vi_VN"
 	}
 	slot0[6] = slot1
 	slot1 = {
-		label = "ru_RU",
-		value = "ru_RU"
+		value = "ru_RU",
+		label = "ru_RU"
 	}
 	slot0[7] = slot1
+	slot1 = {
+		value = "de_DE",
+		label = "de_DE"
+	}
+	slot0[8] = slot1
+	slot1 = {
+		value = "fr_FR",
+		label = "fr_FR"
+	}
+	slot0[9] = slot1
+	slot1 = {
+		value = "es_ES",
+		label = "es_ES"
+	}
+	slot0[10] = slot1
+	slot1 = {
+		value = "pt_PT",
+		label = "pt_PT"
+	}
+	slot0[11] = slot1
+	slot1 = {
+		value = "id_ID",
+		label = "id_ID"
+	}
+	slot0[12] = slot1
+	slot1 = {
+		value = "th_TH",
+		label = "th_TH"
+	}
+	slot0[13] = slot1
 
 	return slot0
 	--- END OF BLOCK #0 ---
@@ -21774,74 +31376,87 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getCurLanguageSelected"
+slot63[slot77] = slot78
+slot77 = "getCurLanguageSelected"
 
-slot48 = function()
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot0 = require
-	slot2 = "Const.ClientConst"
-	slot0 = slot0(slot2)
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.localizationMgr
-	slot1 = slot1.SelectedLanguage
-	slot2 = slot0.LANGUAGE_TYPE_DESC_MAP
-	slot3 = GmToolUtils
-	slot3 = slot3.getLanguageList
-	slot3 = slot3()
-	slot4 = slot2[slot1]
-	slot5 = ipairs
-	slot7 = slot3
-	slot5, slot6, slot7 = slot5(slot7)
+slot78 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.languageType
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #1 17-19, warpins: 1 ---
-	slot10 = slot9.value
-	--- END OF BLOCK #1 ---
-
-	if slot10 == slot4 then
-	JUMP TO BLOCK #2
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #2 20-21, warpins: 1 ---
-	slot10 = slot8 - 1
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot0 = 0
+	--- END OF BLOCK #1 ---
 
-	return slot10
+	FLOW; TARGET BLOCK #2
 
+
+	--- BLOCK #2 6-15, warpins: 2 ---
+	slot1 = ClientConst
+	slot1 = slot1.LANGUAGE_TYPE_DESC_MAP
+	slot2 = GmToolUtils
+	slot2 = slot2.getLanguageList
+	slot2 = slot2()
+	slot3 = slot1[slot0]
+	slot4 = ipairs
+	slot6 = slot2
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 22-23, warpins: 3 ---
+	--- BLOCK #3 16-18, warpins: 1 ---
+	slot9 = slot8.value
 	--- END OF BLOCK #3 ---
 
-	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	if slot9 == slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 24-25, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #4 19-20, warpins: 1 ---
+	slot9 = slot7 - 1
 
-	return slot5
+	return slot9
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-22, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot4 = 0
+
+	return slot4
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "switchLanguage"
+slot63[slot77] = slot78
+slot77 = "switchLanguage"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = require
 	slot3 = "Utils.ClientSettingUtils"
@@ -21859,30 +31474,30 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getAudioLanguageList"
+slot63[slot77] = slot78
+slot77 = "getAudioLanguageList"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "zh_CN",
-		value = "zh_CN"
+		value = "zh_CN",
+		label = "zh_CN"
 	}
 	slot0[1] = slot1
 	slot1 = {
-		label = "en",
-		value = "en"
+		value = "en",
+		label = "en"
 	}
 	slot0[2] = slot1
 	slot1 = {
-		label = "ja",
-		value = "ja"
+		value = "ja",
+		label = "ja"
 	}
 	slot0[3] = slot1
 	slot1 = {
-		label = "ko",
-		value = "ko"
+		value = "ko",
+		label = "ko"
 	}
 	slot0[4] = slot1
 
@@ -21893,10 +31508,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getCurAudioLanguageSelected"
+slot63[slot77] = slot78
+slot77 = "getCurAudioLanguageSelected"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -21954,10 +31569,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "switchAudioLanguage"
+slot63[slot77] = slot78
+slot77 = "switchAudioLanguage"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = require
 	slot3 = "Utils.ClientSettingUtils"
@@ -21974,10 +31589,47 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setFrame"
+slot63[slot77] = slot78
+slot77 = "getEnableLoseFocusAudio"
 
-slot48 = function(slot0)
+slot78 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = require
+	slot2 = "Utils.ClientSettingUtils"
+	slot0 = slot0(slot2)
+	slot1 = slot0.get_autoMute
+
+	return slot1()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setEnableLoseFocusAudio"
+
+slot78 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = require
+	slot3 = "Utils.ClientSettingUtils"
+	slot1 = slot1(slot3)
+	slot2 = slot1.set_autoMute
+	slot4 = slot0
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot77] = slot78
+slot77 = "setFrame"
+
+slot78 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.UnityEngine
@@ -22032,10 +31684,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "chooseScene"
+slot63[slot77] = slot78
+slot77 = "chooseScene"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -22123,10 +31775,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "chooseSandbox"
+slot63[slot77] = slot78
+slot77 = "chooseSandbox"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -22177,10 +31829,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "createEnvObj"
+slot63[slot77] = slot78
+slot77 = "createEnvObj"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -22233,10 +31885,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "createPuppet"
+slot63[slot77] = slot78
+slot77 = "createPuppet"
 
-slot48 = function(slot0, slot1)
+slot78 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -22501,10 +32153,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "enableArkScreen"
+slot63[slot77] = slot78
+slot77 = "enableArkScreen"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -22524,10 +32176,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "disableArkScreen"
+slot63[slot77] = slot78
+slot77 = "disableArkScreen"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -22547,10 +32199,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetAndGetAllPet"
+slot63[slot77] = slot78
+slot77 = "resetAndGetAllPet"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -22568,10 +32220,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetAndGetAllReleasePet"
+slot63[slot77] = slot78
+slot77 = "resetAndGetAllReleasePet"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -22589,10 +32241,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetAndGetAllSuperPet"
+slot63[slot77] = slot78
+slot77 = "resetAndGetAllSuperPet"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -22610,10 +32262,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetAndGetAllFormPet"
+slot63[slot77] = slot78
+slot77 = "resetAndGetAllFormPet"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -22631,10 +32283,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetAndGetAllReleaseBasePet"
+slot63[slot77] = slot78
+slot77 = "resetAndGetAllReleaseBasePet"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -22652,10 +32304,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetAllPetAndBook"
+slot63[slot77] = slot78
+slot77 = "resetAllPetAndBook"
 
-slot48 = function()
+slot78 = function()
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -22681,10 +32333,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "removePetsByTemplateId"
+slot63[slot77] = slot78
+slot77 = "removePetsByTemplateId"
 
-slot48 = function(slot0)
+slot78 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -22810,10 +32462,2625 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "addPet"
+slot63[slot77] = slot78
+slot77 = {}
+slot78 = {}
 
-slot48 = function(slot0, slot1)
+slot79 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = ipairs
+	slot3 = slot0
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot6 = slot5.destroy
+	--- END OF BLOCK #2 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
+	slot8 = slot5
+
+	slot6(slot8)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 16-20, warpins: 1 ---
+	slot1 = table
+	slot1 = slot1.clear
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot80 = "clearPetTransmogRainbow"
+
+slot81 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = clearPetPreviewEnts
+	slot2 = petRainbowEnts
+
+	slot0(slot2)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot80] = slot81
+slot80 = "clearPetShinyStyles"
+
+slot81 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = clearPetPreviewEnts
+	slot2 = petShinyStyleEnts
+
+	slot0(slot2)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot80] = slot81
+
+slot80 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = GmToolUtils
+	slot0 = slot0.clearPetTransmogRainbow
+
+	slot0()
+
+	slot0 = GmToolUtils
+	slot0 = slot0.clearPetShinyStyles
+
+	slot0()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot81 = "getParmonDyeDataId"
+
+slot82 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-8, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.match
+	slot3 = slot0
+	slot4 = "%$([%w_]+)%.prefab"
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot81] = slot82
+slot81 = "loadParmonDyeConfig"
+
+slot82 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot2 = nil
+	slot3 = false
+
+	return slot2, slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-16, warpins: 2 ---
+	slot2 = DyeConfigData
+	slot3 = string
+	slot3 = slot3.format
+	slot5 = "%s.prefab"
+	slot6 = slot0
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-17, warpins: 1 ---
+	slot3 = slot2[slot1]
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-23, warpins: 2 ---
+	slot4 = slot3
+	slot5 = Utils
+	slot5 = slot5.isTable
+	slot7 = slot3
+	MULTRES = slot5(slot7)
+
+	return slot4, MULTRES
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot81] = slot82
+
+slot81 = function()
+	--- BLOCK #0 1-30, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	slot0 = slot0.eModel
+	slot2 = slot0
+	slot0 = slot0.GetPositionAgentPosEx
+	slot0, slot1, slot2 = slot0(slot2)
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.eModel
+	slot5 = slot3
+	slot3 = slot3.GetPositionAgentAxisEx
+	slot6 = 2
+	slot3, slot4, slot5 = slot3(slot5, slot6)
+	slot6 = pg
+	slot6 = slot6.me
+	slot6 = slot6.eModel
+	slot8 = slot6
+	slot6 = slot6.GetPositionAgentAxisEx
+	slot9 = 0
+	slot6, slot7, slot8 = slot6(slot8, slot9)
+	slot9 = slot0
+	slot10 = slot1
+	slot11 = slot2
+	slot12 = slot3
+	slot13 = slot4
+	slot14 = slot5
+	slot15 = slot6
+	slot16 = slot7
+	slot17 = slot8
+
+	return slot9, slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot82 = "spreadPetTransmogRainbow"
+
+slot83 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.eModel
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-32, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "主角未就绪"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-33, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #78
+
+
+	--- BLOCK #7 34-59, warpins: 1 ---
+	slot1 = tonumber
+	slot3 = slot0[0]
+	slot5 = slot3
+	slot3 = slot3.GetChild
+	slot6 = "InputField"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UTMPInputField"
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot3.text
+	slot1 = slot1(slot3)
+	slot2 = tonumber
+	slot4 = slot0[1]
+	slot6 = slot4
+	slot4 = slot4.GetChild
+	slot7 = "InputField"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UTMPInputField"
+	slot4 = slot4(slot6, slot7)
+	slot4 = slot4.text
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 60-60, warpins: 1 ---
+	slot2 = 2.5
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 61-74, warpins: 2 ---
+	slot3 = tonumber
+	slot5 = slot0[2]
+	slot7 = slot5
+	slot5 = slot5.GetChild
+	slot8 = "InputField"
+	slot5 = slot5(slot7, slot8)
+	slot7 = slot5
+	slot5 = slot5.GetComponent
+	slot8 = "UTMPInputField"
+	slot5 = slot5(slot7, slot8)
+	slot5 = slot5.text
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #9 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 75-75, warpins: 1 ---
+	slot3 = 3
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 76-89, warpins: 2 ---
+	slot4 = tonumber
+	slot6 = slot0[3]
+	slot8 = slot6
+	slot6 = slot6.GetChild
+	slot9 = "InputField"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UTMPInputField"
+	slot6 = slot6(slot8, slot9)
+	slot6 = slot6.text
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #11 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 90-90, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 91-94, warpins: 2 ---
+	slot5 = clearAllPetPreviewEnts
+
+	slot5()
+
+	--- END OF BLOCK #13 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #14 95-98, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	--- END OF BLOCK #14 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 99-103, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	--- END OF BLOCK #15 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 104-109, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.tips
+	--- END OF BLOCK #16 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 110-117, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.tips
+	slot7 = slot5
+	slot5 = slot5.showTextTip
+	slot8 = "templateId无效"
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 118-118, warpins: 4 ---
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #79
+
+
+	--- BLOCK #19 119-133, warpins: 1 ---
+	slot5 = require
+	slot7 = "GameApp.PetTransmog.PetTransmogUtils"
+	slot5 = slot5(slot7)
+	slot6 = require
+	slot8 = "Entities.ClientSimpleVirtualPet"
+	slot6 = slot6(slot8)
+	slot7 = require
+	slot9 = "Data.pet_transmog_suits_data"
+	slot7 = slot7(slot9)
+	slot8 = require
+	slot10 = "Data.pet_transmog_solt_data"
+	slot8 = slot8(slot10)
+	slot9 = slot7[slot1]
+	--- END OF BLOCK #19 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #20 134-137, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.global
+	--- END OF BLOCK #20 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #21 138-142, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.global
+	slot10 = slot10.ui
+	--- END OF BLOCK #21 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #22 143-148, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.global
+	slot10 = slot10.ui
+	slot10 = slot10.tips
+	--- END OF BLOCK #22 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 149-156, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.global
+	slot10 = slot10.ui
+	slot10 = slot10.tips
+	slot12 = slot10
+	slot10 = slot10.showTextTip
+	slot13 = "该templateId没有幻化套装配置"
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 157-157, warpins: 4 ---
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #80
+
+
+	--- BLOCK #25 158-177, warpins: 1 ---
+	slot10 = Const
+	slot10 = slot10.PetTransmogSlotType
+	slot10 = slot10.Color
+	slot11 = Const
+	slot11 = slot11.PetTransmogSlotType
+	slot11 = slot11.Wing
+	slot12 = Const
+	slot12 = slot12.PetTransmogSlotType
+	slot12 = slot12.Body
+	slot13 = Const
+	slot13 = slot13.PetTransmogSlotType
+	slot13 = slot13.Hair
+	slot14 = Const
+	slot14 = slot14.PetTransmogSlotType
+	slot14 = slot14.Flash
+	slot15 = {}
+	slot16 = pairs
+	slot18 = slot8
+	slot16, slot17, slot18 = slot16(slot18)
+	--- END OF BLOCK #25 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #26 178-180, warpins: 1 ---
+	slot21 = slot20.type
+	--- END OF BLOCK #26 ---
+
+	if slot21 == slot10 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #27 181-188, warpins: 1 ---
+	slot21 = tostring
+	slot23 = slot20.petId
+	slot21 = slot21(slot23)
+	slot22 = tostring
+	slot24 = slot1
+	slot22 = slot22(slot24)
+	--- END OF BLOCK #27 ---
+
+	if slot21 == slot22 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 189-191, warpins: 1 ---
+	slot21 = #slot15
+	slot21 = slot21 + 1
+	slot15[slot21] = slot19
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 192-193, warpins: 4 ---
+	--- END OF BLOCK #29 ---
+
+	for slot19, slot20 in slot16, slot17, slot18
+	LOOP BLOCK #26
+	GO OUT TO BLOCK #30
+
+
+	--- BLOCK #30 194-200, warpins: 1 ---
+	slot16 = table
+	slot16 = slot16.sort
+	slot18 = slot15
+
+	slot16(slot18)
+
+	slot16 = #slot15
+	--- END OF BLOCK #30 ---
+
+	if slot16 == 0 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #31 201-204, warpins: 1 ---
+	slot16 = pg
+	slot16 = slot16.global
+	--- END OF BLOCK #31 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #32 205-209, warpins: 1 ---
+	slot16 = pg
+	slot16 = slot16.global
+	slot16 = slot16.ui
+	--- END OF BLOCK #32 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #33 210-215, warpins: 1 ---
+	slot16 = pg
+	slot16 = slot16.global
+	slot16 = slot16.ui
+	slot16 = slot16.tips
+	--- END OF BLOCK #33 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 216-223, warpins: 1 ---
+	slot16 = pg
+	slot16 = slot16.global
+	slot16 = slot16.ui
+	slot16 = slot16.tips
+	slot18 = slot16
+	slot16 = slot16.showTextTip
+	slot19 = "该templateId没有颜色槽配置"
+
+	slot16(slot18, slot19)
+
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 224-224, warpins: 4 ---
+	--- END OF BLOCK #35 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #81
+
+
+	--- BLOCK #36 225-229, warpins: 1 ---
+	slot16 = nil
+	slot17 = pairs
+	slot19 = slot8
+	slot17, slot18, slot19 = slot17(slot19)
+	--- END OF BLOCK #36 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #41
+
+
+	--- BLOCK #37 230-232, warpins: 1 ---
+	slot22 = slot21.type
+	--- END OF BLOCK #37 ---
+
+	if slot22 == slot14 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #38 233-235, warpins: 1 ---
+	slot22 = slot21.effectSwitch
+	--- END OF BLOCK #38 ---
+
+	if slot22 == 1 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #39 236-243, warpins: 1 ---
+	slot22 = tostring
+	slot24 = slot21.petId
+	slot22 = slot22(slot24)
+	slot23 = tostring
+	slot25 = slot1
+	slot23 = slot23(slot25)
+	--- END OF BLOCK #39 ---
+
+	if slot22 == slot23 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 244-245, warpins: 1 ---
+	slot16 = slot20
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
+
+
+	--- BLOCK #41 246-247, warpins: 4 ---
+	--- END OF BLOCK #41 ---
+
+	for slot20, slot21 in slot17, slot18, slot19
+	LOOP BLOCK #37
+	GO OUT TO BLOCK #42
+
+
+	--- BLOCK #42 248-252, warpins: 2 ---
+	slot17 = {}
+	slot18 = pairs
+	slot20 = slot9
+	slot18, slot19, slot20 = slot18(slot20)
+	--- END OF BLOCK #42 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #44
+
+
+	--- BLOCK #43 253-255, warpins: 1 ---
+	slot23 = #slot17
+	slot23 = slot23 + 1
+	slot17[slot23] = slot21
+	--- END OF BLOCK #43 ---
+
+	FLOW; TARGET BLOCK #44
+
+
+	--- BLOCK #44 256-257, warpins: 2 ---
+	--- END OF BLOCK #44 ---
+
+	for slot21, slot22 in slot18, slot19, slot20
+	LOOP BLOCK #43
+	GO OUT TO BLOCK #45
+
+
+	--- BLOCK #45 258-274, warpins: 1 ---
+	slot18 = table
+	slot18 = slot18.sort
+	slot20 = slot17
+
+	slot18(slot20)
+
+	slot18 = getPlayerSpreadBasis
+	slot18, slot19, slot20, slot21, slot22, slot23, slot24, slot25, slot26 = slot18()
+	slot27 = slot3
+	slot28 = #slot15
+	slot29 = slot28 - 1
+	slot29 = slot29 / 2
+
+	slot30 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-32, warpins: 1 ---
+		slot3 = PetTransmogUtils
+		slot3 = slot3.getSchemeTransmogData
+		slot5 = templateId
+		slot6 = {}
+		slot6.holeIds = slot0
+		slot3, slot4 = slot3(slot5, slot6)
+		slot5 = ClientSimpleVirtualPet
+		slot5 = slot5.new
+		slot5 = slot5()
+		slot6 = {}
+		slot7 = templateId
+		slot6.templateId = slot7
+		slot9 = slot5
+		slot7 = slot5.init
+		slot10 = slot6
+
+		slot7(slot9, slot10)
+
+		slot9 = slot5
+		slot7 = slot5.postInit
+		slot10 = slot6
+
+		slot7(slot9, slot10)
+
+		slot9 = slot5
+		slot7 = slot5.start
+
+		slot7(slot9)
+
+		slot9 = slot5
+		slot7 = slot5.setModelLayer
+		slot10 = ClientConst
+		slot10 = slot10.LayerDefine
+		slot10 = slot10.LAYER_ENTITY
+
+		slot7(slot9, slot10)
+
+		slot7 = scale
+		--- END OF BLOCK #0 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 33-35, warpins: 1 ---
+		slot7 = scale
+		--- END OF BLOCK #1 ---
+
+		if slot7 ~= 1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #2 36-38, warpins: 1 ---
+		slot7 = slot5.setScaleNumber
+		--- END OF BLOCK #2 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 39-42, warpins: 1 ---
+		slot9 = slot5
+		slot7 = slot5.setScaleNumber
+		slot10 = scale
+
+		slot7(slot9, slot10)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 43-44, warpins: 4 ---
+		--- END OF BLOCK #4 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 45-49, warpins: 1 ---
+		slot9 = slot5
+		slot7 = slot5.setTransmogData
+		slot10 = slot3
+		slot11 = slot4
+
+		slot7(slot9, slot10, slot11)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 50-81, warpins: 2 ---
+		slot7 = startDist
+		slot8 = rowSpacing
+		slot8 = slot1 * slot8
+		slot7 = slot7 + slot8
+		slot8 = halfCols
+		slot8 = slot2 - slot8
+		slot9 = colSpacing
+		slot8 = slot8 * slot9
+		slot9 = px
+		slot10 = fx
+		slot10 = slot10 * slot7
+		slot9 = slot9 + slot10
+		slot10 = rx
+		slot10 = slot10 * slot8
+		slot9 = slot9 + slot10
+		slot10 = py
+		slot11 = fy
+		slot11 = slot11 * slot7
+		slot10 = slot10 + slot11
+		slot11 = ry
+		slot11 = slot11 * slot8
+		slot10 = slot10 + slot11
+		slot11 = pz
+		slot12 = fz
+		slot12 = slot12 * slot7
+		slot11 = slot11 + slot12
+		slot12 = rz
+		slot12 = slot12 * slot8
+		slot11 = slot11 + slot12
+		slot12 = slot5.eModel
+		--- END OF BLOCK #6 ---
+
+		slot12 = if slot12 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 82-110, warpins: 1 ---
+		slot12 = slot5.eModel
+		slot14 = slot12
+		slot12 = slot12.SetTransformPosition
+		slot15 = slot9
+		slot16 = slot10
+		slot17 = slot11
+
+		slot12(slot14, slot15, slot16, slot17)
+
+		slot12 = Quaternion
+		slot12 = slot12.LookRotation
+		slot14 = Vector3
+		slot14 = slot14.New
+		slot16 = fx
+		slot16 = -slot16
+		slot17 = fy
+		slot17 = -slot17
+		slot18 = fz
+		slot18 = -slot18
+		slot14 = slot14(slot16, slot17, slot18)
+		slot15 = Vector3
+		slot15 = slot15.up
+		slot12 = slot12(slot14, slot15)
+		slot13 = slot5.eModel
+		slot15 = slot13
+		slot13 = slot13.SetTransformRotation
+		slot16 = slot12.x
+		slot17 = slot12.y
+		slot18 = slot12.z
+		slot19 = slot12.w
+
+		slot13(slot15, slot16, slot17, slot18, slot19)
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 111-119, warpins: 2 ---
+		slot12 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = ent
+			slot0 = slot0.eModel
+
+			--- END OF BLOCK #0 ---
+
+			slot0 = if not slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-5, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 6-9, warpins: 2 ---
+			slot0 = ent
+			slot0 = slot0.playRawAnimation
+			--- END OF BLOCK #2 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 10-14, warpins: 1 ---
+			slot0 = ent
+			slot2 = slot0
+			slot0 = slot0.playRawAnimation
+			slot3 = "Idle"
+
+			slot0(slot2, slot3)
+
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 15-23, warpins: 2 ---
+			slot0 = ent
+			slot2 = slot0
+			slot0 = slot0.setLodTickEnable
+			slot3 = Const
+			slot3 = slot3.LOD_TICK_KEY
+			slot3 = slot3.BOSS_COMBAT
+			slot4 = false
+
+			slot0(slot2, slot3, slot4)
+
+			return
+			--- END OF BLOCK #4 ---
+
+
+
+		end
+
+		slot5.modelLoadedCallback = slot12
+		slot12 = petRainbowEnts
+		slot13 = petRainbowEnts
+		slot13 = #slot13
+		slot13 = slot13 + 1
+		slot12[slot13] = slot5
+
+		return
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot31 = function(slot0)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-4, warpins: 1 ---
+		slot1 = PetTransmogSoltData
+		slot1 = slot1[slot0]
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 5-6, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 7-9, warpins: 1 ---
+		slot2 = slot1.resources
+		--- END OF BLOCK #3 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 10-10, warpins: 2 ---
+		slot2 = ""
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 11-11, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot32 = 0
+	slot33 = ipairs
+	slot35 = slot17
+	slot33, slot34, slot35 = slot33(slot35)
+	--- END OF BLOCK #45 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #74
+
+
+	--- BLOCK #46 275-282, warpins: 1 ---
+	slot38 = slot9[slot37]
+	slot39 = slot38[2]
+	slot40 = slot38[3]
+	slot41 = slot38[4]
+	slot42 = ipairs
+	slot44 = {
+		false,
+		true
+	}
+	slot42, slot43, slot44 = slot42(slot44)
+	--- END OF BLOCK #46 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #73
+
+
+	--- BLOCK #47 283-284, warpins: 1 ---
+	--- END OF BLOCK #47 ---
+
+	slot46 = if slot46 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #48 285-287, warpins: 1 ---
+	slot47 = not slot16
+	--- END OF BLOCK #48 ---
+
+	slot47 = if not slot47 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #73
+	end
+
+
+	--- BLOCK #49 288-294, warpins: 2 ---
+	slot47 = {}
+	slot48 = {}
+	slot49 = {}
+	slot50 = ipairs
+	slot52 = slot15
+	slot50, slot51, slot52 = slot50(slot52)
+	--- END OF BLOCK #49 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #57
+
+
+	--- BLOCK #50 295-315, warpins: 1 ---
+	slot55 = table
+	slot55 = slot55.concat
+	slot57 = {}
+	slot58 = slot31
+	slot60 = slot54
+	slot58 = slot58(slot60)
+	slot57[1] = slot58
+	slot58 = slot31
+	slot60 = slot39
+	slot58 = slot58(slot60)
+	slot57[2] = slot58
+	slot58 = slot31
+	slot60 = slot40
+	slot58 = slot58(slot60)
+	slot57[3] = slot58
+	slot58 = slot31
+	slot60 = slot41
+	slot58 = slot58(slot60)
+	slot57[4] = slot58
+	--- END OF BLOCK #50 ---
+
+	slot46 = if slot46 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
+
+
+	--- BLOCK #51 316-317, warpins: 1 ---
+	slot58 = "1"
+	--- END OF BLOCK #51 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #53
+
+
+	--- BLOCK #52 318-318, warpins: 1 ---
+	slot58 = "0"
+	--- END OF BLOCK #52 ---
+
+	FLOW; TARGET BLOCK #53
+
+
+	--- BLOCK #53 319-324, warpins: 2 ---
+	slot57[5] = slot58
+	slot58 = "|"
+	slot55 = slot55(slot57, slot58)
+	slot56 = slot47[slot55]
+	--- END OF BLOCK #53 ---
+
+	slot56 = if not slot56 then
+	JUMP TO BLOCK #54
+	else
+	JUMP TO BLOCK #57
+	end
+
+
+	--- BLOCK #54 325-333, warpins: 1 ---
+	slot56 = true
+	slot47[slot55] = slot56
+	slot56 = {}
+	slot56[slot10] = slot54
+	slot56[slot11] = slot39
+	slot56[slot12] = slot40
+	slot56[slot13] = slot41
+	--- END OF BLOCK #54 ---
+
+	slot46 = if slot46 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #55 334-334, warpins: 1 ---
+	slot56[slot14] = slot16
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 335-344, warpins: 2 ---
+	slot57 = #slot48
+	slot57 = slot57 + 1
+	slot58 = {}
+	slot58.holeIds = slot56
+	slot59 = #slot48
+	slot58.col = slot59
+	slot48[slot57] = slot58
+	slot57 = #slot49
+	slot57 = slot57 + 1
+	slot49[slot57] = slot54
+	--- END OF BLOCK #56 ---
+
+	FLOW; TARGET BLOCK #57
+
+
+	--- BLOCK #57 345-346, warpins: 3 ---
+	--- END OF BLOCK #57 ---
+
+	for slot53, slot54 in slot50, slot51, slot52
+	LOOP BLOCK #50
+	GO OUT TO BLOCK #58
+
+
+	--- BLOCK #58 347-350, warpins: 1 ---
+	slot50 = #slot48
+	slot51 = 0
+	--- END OF BLOCK #58 ---
+
+	if slot50 > slot51 then
+	JUMP TO BLOCK #59
+	else
+	JUMP TO BLOCK #73
+	end
+
+
+	--- BLOCK #59 351-357, warpins: 1 ---
+	slot50 = LoggerManager
+	slot50 = slot50.checkLogger
+	slot52 = LoggerConst
+	slot52 = slot52.INFO
+	slot50 = slot50(slot52)
+	--- END OF BLOCK #59 ---
+
+	slot50 = if slot50 then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #67
+	end
+
+
+	--- BLOCK #60 358-362, warpins: 1 ---
+	slot50 = {}
+	slot51 = ipairs
+	slot53 = slot49
+	slot51, slot52, slot53 = slot51(slot53)
+	--- END OF BLOCK #60 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #62
+
+
+	--- BLOCK #61 363-375, warpins: 1 ---
+	slot56 = #slot50
+	slot56 = slot56 + 1
+	slot57 = string
+	slot57 = slot57.format
+	slot59 = "%s(%s)"
+	slot60 = tostring
+	slot62 = slot55
+	slot60 = slot60(slot62)
+	slot61 = slot31
+	slot63 = slot55
+	MULTRES = slot61(slot63)
+	slot57 = slot57(slot59, slot60, MULTRES)
+	slot50[slot56] = slot57
+	--- END OF BLOCK #61 ---
+
+	FLOW; TARGET BLOCK #62
+
+
+	--- BLOCK #62 376-377, warpins: 2 ---
+	--- END OF BLOCK #62 ---
+
+	for slot54, slot55 in slot51, slot52, slot53
+	LOOP BLOCK #61
+	GO OUT TO BLOCK #63
+
+
+	--- BLOCK #63 378-397, warpins: 1 ---
+	slot51 = logger
+	slot53 = slot51
+	slot51 = slot51.info
+	slot54 = "[spreadPetTransmogRainbow] row=%d suitId=%d light=%s wing=%s body=%s hat=%s flash=%s colors[%d]={%s}"
+	slot55 = slot32
+	slot56 = slot37
+	slot57 = tostring
+	slot59 = slot46
+	slot57 = slot57(slot59)
+	slot58 = slot31
+	slot60 = slot39
+	slot58 = slot58(slot60)
+	slot59 = slot31
+	slot61 = slot40
+	slot59 = slot59(slot61)
+	slot60 = slot31
+	slot62 = slot41
+	slot60 = slot60(slot62)
+	--- END OF BLOCK #63 ---
+
+	slot46 = if slot46 then
+	JUMP TO BLOCK #64
+	else
+	JUMP TO BLOCK #65
+	end
+
+
+	--- BLOCK #64 398-402, warpins: 1 ---
+	slot61 = tostring
+	slot63 = slot16
+	slot61 = slot61(slot63)
+	--- END OF BLOCK #64 ---
+
+	slot61 = if not slot61 then
+	JUMP TO BLOCK #65
+	else
+	JUMP TO BLOCK #66
+	end
+
+
+	--- BLOCK #65 403-403, warpins: 2 ---
+	slot61 = "-"
+	--- END OF BLOCK #65 ---
+
+	FLOW; TARGET BLOCK #66
+
+
+	--- BLOCK #66 404-410, warpins: 2 ---
+	slot62 = #slot49
+	slot63 = table
+	slot63 = slot63.concat
+	slot65 = slot50
+	slot66 = ", "
+	MULTRES = slot63(slot65, slot66)
+
+	slot51(slot53, slot54, slot55, slot56, slot57, slot58, slot59, slot60, slot61, slot62, MULTRES)
+
+	--- END OF BLOCK #66 ---
+
+	FLOW; TARGET BLOCK #67
+
+
+	--- BLOCK #67 411-414, warpins: 2 ---
+	slot50 = ipairs
+	slot52 = slot48
+	slot50, slot51, slot52 = slot50(slot52)
+	--- END OF BLOCK #67 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #71
+
+
+	--- BLOCK #68 415-424, warpins: 1 ---
+	slot55 = xpcall
+	slot57 = slot30
+	slot58 = debug
+	slot58 = slot58.traceback
+	slot59 = slot54.holeIds
+	slot60 = slot32
+	slot61 = slot54.col
+	slot55, slot56 = slot55(slot57, slot58, slot59, slot60, slot61)
+	--- END OF BLOCK #68 ---
+
+	slot55 = if not slot55 then
+	JUMP TO BLOCK #69
+	else
+	JUMP TO BLOCK #71
+	end
+
+
+	--- BLOCK #69 425-431, warpins: 1 ---
+	slot57 = LoggerManager
+	slot57 = slot57.checkLogger
+	slot59 = LoggerConst
+	slot59 = slot59.ERROR
+	slot57 = slot57(slot59)
+	--- END OF BLOCK #69 ---
+
+	slot57 = if slot57 then
+	JUMP TO BLOCK #70
+	else
+	JUMP TO BLOCK #71
+	end
+
+
+	--- BLOCK #70 432-439, warpins: 1 ---
+	slot57 = logger
+	slot59 = slot57
+	slot57 = slot57.error
+	slot60 = "[spreadPetTransmogRainbow] build failed: %s"
+	slot61 = tostring
+	slot63 = slot56
+	MULTRES = slot61(slot63)
+
+	slot57(slot59, slot60, MULTRES)
+
+	--- END OF BLOCK #70 ---
+
+	FLOW; TARGET BLOCK #71
+
+
+	--- BLOCK #71 440-441, warpins: 4 ---
+	--- END OF BLOCK #71 ---
+
+	for slot53, slot54 in slot50, slot51, slot52
+	LOOP BLOCK #68
+	GO OUT TO BLOCK #72
+
+
+	--- BLOCK #72 442-442, warpins: 1 ---
+	slot32 = slot32 + 1
+	--- END OF BLOCK #72 ---
+
+	FLOW; TARGET BLOCK #73
+
+
+	--- BLOCK #73 443-444, warpins: 4 ---
+	--- END OF BLOCK #73 ---
+
+	for slot45, slot46 in slot42, slot43, slot44
+	LOOP BLOCK #47
+	GO OUT TO BLOCK #74
+
+
+	--- BLOCK #74 445-446, warpins: 2 ---
+	--- END OF BLOCK #74 ---
+
+	for slot36, slot37 in slot33, slot34, slot35
+	LOOP BLOCK #46
+	GO OUT TO BLOCK #75
+
+
+	--- BLOCK #75 447-459, warpins: 1 ---
+	slot33 = pg
+	slot33 = slot33.global
+	slot33 = slot33.ui
+	slot35 = slot33
+	slot33 = slot33.close
+	slot36 = 62
+
+	slot33(slot35, slot36)
+
+	slot33 = pg
+	slot33 = slot33.global
+	slot33 = slot33.ui
+	slot33 = slot33.tips
+	--- END OF BLOCK #75 ---
+
+	slot33 = if slot33 then
+	JUMP TO BLOCK #76
+	else
+	JUMP TO BLOCK #77
+	end
+
+
+	--- BLOCK #76 460-472, warpins: 1 ---
+	slot33 = pg
+	slot33 = slot33.global
+	slot33 = slot33.ui
+	slot33 = slot33.tips
+	slot35 = slot33
+	slot33 = slot33.showTextTip
+	slot36 = string
+	slot36 = slot36.format
+	slot38 = "铺开完成，共%d只"
+	slot39 = petRainbowEnts
+	slot39 = #slot39
+	MULTRES = slot36(slot38, slot39)
+
+	slot33(slot35, MULTRES)
+
+	--- END OF BLOCK #76 ---
+
+	FLOW; TARGET BLOCK #77
+
+
+	--- BLOCK #77 473-474, warpins: 2 ---
+	return
+	--- END OF BLOCK #77 ---
+
+	FLOW; TARGET BLOCK #78
+
+
+	--- BLOCK #78 475-475, warpins: 2 ---
+	return
+	--- END OF BLOCK #78 ---
+
+	FLOW; TARGET BLOCK #79
+
+
+	--- BLOCK #79 476-476, warpins: 2 ---
+	return
+	--- END OF BLOCK #79 ---
+
+	FLOW; TARGET BLOCK #80
+
+
+	--- BLOCK #80 477-477, warpins: 2 ---
+	return
+	--- END OF BLOCK #80 ---
+
+	FLOW; TARGET BLOCK #81
+
+
+	--- BLOCK #81 478-478, warpins: 2 ---
+	return
+	--- END OF BLOCK #81 ---
+
+
+
+end
+
+slot63[slot82] = slot83
+slot82 = "spreadPetShinyStyles"
+
+slot83 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.eModel
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 19-24, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-32, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "主角未就绪"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-33, warpins: 4 ---
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #64
+
+
+	--- BLOCK #7 34-59, warpins: 1 ---
+	slot1 = tonumber
+	slot3 = slot0[0]
+	slot5 = slot3
+	slot3 = slot3.GetChild
+	slot6 = "InputField"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UTMPInputField"
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot3.text
+	slot1 = slot1(slot3)
+	slot2 = tonumber
+	slot4 = slot0[1]
+	slot6 = slot4
+	slot4 = slot4.GetChild
+	slot7 = "InputField"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UTMPInputField"
+	slot4 = slot4(slot6, slot7)
+	slot4 = slot4.text
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 60-60, warpins: 1 ---
+	slot2 = 2.5
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 61-74, warpins: 2 ---
+	slot3 = tonumber
+	slot5 = slot0[2]
+	slot7 = slot5
+	slot5 = slot5.GetChild
+	slot8 = "InputField"
+	slot5 = slot5(slot7, slot8)
+	slot7 = slot5
+	slot5 = slot5.GetComponent
+	slot8 = "UTMPInputField"
+	slot5 = slot5(slot7, slot8)
+	slot5 = slot5.text
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #9 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 75-75, warpins: 1 ---
+	slot3 = 3
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 76-89, warpins: 2 ---
+	slot4 = tonumber
+	slot6 = slot0[3]
+	slot8 = slot6
+	slot6 = slot6.GetChild
+	slot9 = "InputField"
+	slot6 = slot6(slot8, slot9)
+	slot8 = slot6
+	slot6 = slot6.GetComponent
+	slot9 = "UTMPInputField"
+	slot6 = slot6(slot8, slot9)
+	slot6 = slot6.text
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #11 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 90-90, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 91-107, warpins: 2 ---
+	slot5 = math
+	slot5 = slot5.max
+	slot7 = 1
+	slot8 = tonumber
+	slot10 = slot0[4]
+	slot12 = slot10
+	slot10 = slot10.GetChild
+	slot13 = "InputField"
+	slot10 = slot10(slot12, slot13)
+	slot12 = slot10
+	slot10 = slot10.GetComponent
+	slot13 = "UTMPInputField"
+	slot10 = slot10(slot12, slot13)
+	slot10 = slot10.text
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #13 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 108-108, warpins: 1 ---
+	slot8 = 4
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 109-113, warpins: 2 ---
+	slot5 = slot5(slot7, slot8)
+	slot6 = clearAllPetPreviewEnts
+
+	slot6()
+
+	--- END OF BLOCK #15 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #16 114-117, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	--- END OF BLOCK #16 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #17 118-122, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	--- END OF BLOCK #17 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 123-128, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	--- END OF BLOCK #18 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 129-136, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	slot8 = slot6
+	slot6 = slot6.showTextTip
+	slot9 = "petId无效"
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 137-137, warpins: 4 ---
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #65
+
+
+	--- BLOCK #21 138-141, warpins: 1 ---
+	slot6 = PetData
+	slot6 = slot6[slot1]
+	--- END OF BLOCK #21 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #22 142-145, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	--- END OF BLOCK #22 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #23 146-150, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	--- END OF BLOCK #23 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #24 151-156, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	--- END OF BLOCK #24 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 157-164, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = "petId无效"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 165-165, warpins: 4 ---
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #66
+
+
+	--- BLOCK #27 166-173, warpins: 1 ---
+	slot7 = require
+	slot9 = "Utils.ClientVirtualEntityUtils"
+	slot7 = slot7(slot9)
+	slot8 = {}
+	slot9 = 1
+	slot10 = 12
+	slot11 = 1
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 174-180, warpins: 2 ---
+	slot13 = GmToolUtils
+	slot13 = slot13.loadParmonDyeConfig
+	slot15 = slot6.shinyStyleColorId
+	slot16 = slot12
+	slot13, slot14 = slot13(slot15, slot16)
+	--- END OF BLOCK #28 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #30
+	end
+
+
+	--- BLOCK #29 181-183, warpins: 1 ---
+	slot15 = #slot8
+	slot15 = slot15 + 1
+	slot8[slot15] = slot12
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 184-184, warpins: 2 ---
+	--- END OF BLOCK #30 ---
+
+	for slot12=slot9, slot10, slot11
+	LOOP BLOCK #28
+	GO OUT TO BLOCK #31
+
+	--- BLOCK #31 185-196, warpins: 1 ---
+	slot9 = table
+	slot9 = slot9.sort
+	slot11 = slot8
+
+	slot9(slot11)
+
+	slot9 = GmToolUtils
+	slot9 = slot9.getParmonDyeDataId
+	slot11 = slot6.prefabResID
+	slot9 = slot9(slot11)
+	slot10 = ipairs
+	slot12 = {
+		"shiny",
+		"dark2"
+	}
+	slot10, slot11, slot12 = slot10(slot12)
+	--- END OF BLOCK #31 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
+
+
+	--- BLOCK #32 197-203, warpins: 1 ---
+	slot15 = GmToolUtils
+	slot15 = slot15.loadParmonDyeConfig
+	slot17 = slot9
+	slot18 = slot14
+	slot15, slot16 = slot15(slot17, slot18)
+	--- END OF BLOCK #32 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 204-206, warpins: 1 ---
+	slot17 = #slot8
+	slot17 = slot17 + 1
+	slot8[slot17] = slot14
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 207-208, warpins: 3 ---
+	--- END OF BLOCK #34 ---
+
+	for slot13, slot14 in slot10, slot11, slot12
+	LOOP BLOCK #32
+	GO OUT TO BLOCK #35
+
+
+	--- BLOCK #35 209-222, warpins: 1 ---
+	slot10 = getPlayerSpreadBasis
+	slot10, slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18 = slot10()
+	slot19 = math
+	slot19 = slot19.min
+	slot21 = slot5
+	slot22 = #slot8
+	slot19 = slot19(slot21, slot22)
+	slot20 = slot19 - 1
+	slot20 = slot20 / 2
+	slot21 = slot3
+	slot22 = ipairs
+	slot24 = slot8
+	slot22, slot23, slot24 = slot22(slot24)
+	--- END OF BLOCK #35 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #58
+
+
+	--- BLOCK #36 223-224, warpins: 1 ---
+	--- END OF BLOCK #36 ---
+
+	if slot26 ~= "shiny" then
+	JUMP TO BLOCK #37
+	else
+	JUMP TO BLOCK #38
+	end
+
+
+	--- BLOCK #37 225-226, warpins: 1 ---
+	slot27 = false
+	--- END OF BLOCK #37 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #38 227-227, warpins: 1 ---
+	slot27 = true
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 228-229, warpins: 2 ---
+	--- END OF BLOCK #39 ---
+
+	if slot26 ~= "dark2" then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 230-231, warpins: 1 ---
+	slot28 = false
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
+
+
+	--- BLOCK #41 232-232, warpins: 1 ---
+	slot28 = true
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 233-234, warpins: 2 ---
+	--- END OF BLOCK #42 ---
+
+	slot28 = if slot28 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #44
+	end
+
+
+	--- BLOCK #43 235-243, warpins: 1 ---
+	slot29 = Const
+	slot29 = slot29.PET_LABEL_MASK
+	slot29 = slot29.MAGIC
+	slot30 = Const
+	slot30 = slot30.PET_LABEL_MASK
+	slot30 = slot30.SHINY
+	slot29 = slot29 + slot30
+	--- END OF BLOCK #43 ---
+
+	slot29 = if not slot29 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #44 244-245, warpins: 2 ---
+	--- END OF BLOCK #44 ---
+
+	slot27 = if slot27 then
+	JUMP TO BLOCK #45
+	else
+	JUMP TO BLOCK #46
+	end
+
+
+	--- BLOCK #45 246-250, warpins: 1 ---
+	slot29 = Const
+	slot29 = slot29.PET_LABEL_MASK
+	slot29 = slot29.NORMAL
+	--- END OF BLOCK #45 ---
+
+	slot29 = if not slot29 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 251-253, warpins: 2 ---
+	slot29 = Const
+	slot29 = slot29.PET_LABEL_MASK
+	slot29 = slot29.SHINY
+	--- END OF BLOCK #46 ---
+
+	FLOW; TARGET BLOCK #47
+
+
+	--- BLOCK #47 254-255, warpins: 3 ---
+	--- END OF BLOCK #47 ---
+
+	slot28 = if slot28 then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #48 256-257, warpins: 1 ---
+	slot30 = 1
+	--- END OF BLOCK #48 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
+
+
+	--- BLOCK #49 258-258, warpins: 1 ---
+	slot30 = slot26
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 259-281, warpins: 2 ---
+	slot31 = math
+	slot31 = slot31.floor
+	slot33 = slot25 - 1
+	slot33 = slot33 / slot19
+	slot31 = slot31(slot33)
+	slot32 = slot25 - 1
+	slot32 = slot32 % slot19
+	slot33 = {}
+	slot33.templateId = slot1
+	slot34 = slot6.petPrototypeId
+	slot33.petPrototypeId = slot34
+	slot33.label = slot29
+	slot33.shinyStyle = slot30
+	slot34 = slot7.createPetVirtualEntityWithDic
+	slot36 = slot1
+	slot37 = nil
+	slot38 = slot29
+	slot39 = slot30
+	slot40, slot41 = nil
+	slot42 = slot33
+	slot34 = slot34(slot36, slot37, slot38, slot39, slot40, slot41, slot42)
+	--- END OF BLOCK #50 ---
+
+	slot34 = if slot34 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #57
+	end
+
+
+	--- BLOCK #51 282-289, warpins: 1 ---
+	slot37 = slot34
+	slot35 = slot34.setModelLayer
+	slot38 = ClientConst
+	slot38 = slot38.LayerDefine
+	slot38 = slot38.LAYER_ENTITY
+
+	slot35(slot37, slot38)
+
+	--- END OF BLOCK #51 ---
+
+	if slot4 ~= 1 then
+	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #54
+	end
+
+
+	--- BLOCK #52 290-292, warpins: 1 ---
+	slot35 = slot34.setScaleNumber
+	--- END OF BLOCK #52 ---
+
+	slot35 = if slot35 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #54
+	end
+
+
+	--- BLOCK #53 293-296, warpins: 1 ---
+	slot37 = slot34
+	slot35 = slot34.setScaleNumber
+	slot38 = slot4
+
+	slot35(slot37, slot38)
+
+	--- END OF BLOCK #53 ---
+
+	FLOW; TARGET BLOCK #54
+
+
+	--- BLOCK #54 297-315, warpins: 3 ---
+	slot35 = slot31 * slot3
+	slot35 = slot21 + slot35
+	slot36 = slot32 - slot20
+	slot36 = slot36 * slot2
+	slot37 = slot13 * slot35
+	slot37 = slot10 + slot37
+	slot38 = slot16 * slot36
+	slot37 = slot37 + slot38
+	slot38 = slot14 * slot35
+	slot38 = slot11 + slot38
+	slot39 = slot17 * slot36
+	slot38 = slot38 + slot39
+	slot39 = slot15 * slot35
+	slot39 = slot12 + slot39
+	slot40 = slot18 * slot36
+	slot39 = slot39 + slot40
+	slot40 = slot34.eModel
+	--- END OF BLOCK #54 ---
+
+	slot40 = if slot40 then
+	JUMP TO BLOCK #55
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #55 316-352, warpins: 1 ---
+	slot40 = slot34.eModel
+	slot42 = slot40
+	slot40 = slot40.SetTransformPosition
+	slot43 = slot37
+	slot44 = slot38
+	slot45 = slot39
+
+	slot40(slot42, slot43, slot44, slot45)
+
+	slot40 = Quaternion
+	slot40 = slot40.LookRotation
+	slot42 = Vector3
+	slot42 = slot42.New
+	slot44 = -slot13
+	slot45 = -slot14
+	slot46 = -slot15
+	slot42 = slot42(slot44, slot45, slot46)
+	slot43 = Vector3
+	slot43 = slot43.up
+	slot40 = slot40(slot42, slot43)
+	slot41 = slot34.eModel
+	slot43 = slot41
+	slot41 = slot41.SetTransformRotation
+	slot44 = slot40.x
+	slot45 = slot40.y
+	slot46 = slot40.z
+	slot47 = slot40.w
+
+	slot41(slot43, slot44, slot45, slot46, slot47)
+
+	slot41 = slot34.eModel
+	slot43 = slot41
+	slot41 = slot41.SetGameObjectName
+	slot44 = slot34.eModel
+	slot44 = slot44.GameObjectName
+	slot45 = "_shiny_"
+	slot46 = tostring
+	slot48 = slot26
+	slot46 = slot46(slot48)
+	slot44 = slot44 .. slot45 .. slot46
+
+	slot41(slot43, slot44)
+
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 353-359, warpins: 2 ---
+	slot40 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = ent
+		slot0 = slot0.eModel
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-9, warpins: 2 ---
+		slot0 = ent
+		slot0 = slot0.playRawAnimation
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 10-14, warpins: 1 ---
+		slot0 = ent
+		slot2 = slot0
+		slot0 = slot0.playRawAnimation
+		slot3 = "Idle"
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 15-23, warpins: 2 ---
+		slot0 = ent
+		slot2 = slot0
+		slot0 = slot0.setLodTickEnable
+		slot3 = Const
+		slot3 = slot3.LOD_TICK_KEY
+		slot3 = slot3.BOSS_COMBAT
+		slot4 = false
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot34.modelLoadedCallback = slot40
+	slot40 = petShinyStyleEnts
+	slot41 = petShinyStyleEnts
+	slot41 = #slot41
+	slot41 = slot41 + 1
+	slot40[slot41] = slot34
+	--- END OF BLOCK #56 ---
+
+	FLOW; TARGET BLOCK #57
+
+
+	--- BLOCK #57 360-360, warpins: 2 ---
+	--- END OF BLOCK #57 ---
+
+	FLOW; TARGET BLOCK #58
+
+
+	--- BLOCK #58 361-362, warpins: 2 ---
+	--- END OF BLOCK #58 ---
+
+	for slot25, slot26 in slot22, slot23, slot24
+	LOOP BLOCK #36
+	GO OUT TO BLOCK #59
+
+
+	--- BLOCK #59 363-369, warpins: 1 ---
+	slot22 = LoggerManager
+	slot22 = slot22.checkLogger
+	slot24 = LoggerConst
+	slot24 = slot24.INFO
+	slot22 = slot22(slot24)
+	--- END OF BLOCK #59 ---
+
+	slot22 = if slot22 then
+	JUMP TO BLOCK #60
+	else
+	JUMP TO BLOCK #61
+	end
+
+
+	--- BLOCK #60 370-382, warpins: 1 ---
+	slot22 = logger
+	slot24 = slot22
+	slot22 = slot22.info
+	slot25 = "[spreadPetShinyStyles] templateId=%s styles={%s}"
+	slot26 = tostring
+	slot28 = slot1
+	slot26 = slot26(slot28)
+	slot27 = table
+	slot27 = slot27.concat
+	slot29 = slot8
+	slot30 = ","
+	MULTRES = slot27(slot29, slot30)
+
+	slot22(slot24, slot25, slot26, MULTRES)
+
+	--- END OF BLOCK #60 ---
+
+	FLOW; TARGET BLOCK #61
+
+
+	--- BLOCK #61 383-395, warpins: 2 ---
+	slot22 = pg
+	slot22 = slot22.global
+	slot22 = slot22.ui
+	slot24 = slot22
+	slot22 = slot22.close
+	slot25 = 62
+
+	slot22(slot24, slot25)
+
+	slot22 = pg
+	slot22 = slot22.global
+	slot22 = slot22.ui
+	slot22 = slot22.tips
+	--- END OF BLOCK #61 ---
+
+	slot22 = if slot22 then
+	JUMP TO BLOCK #62
+	else
+	JUMP TO BLOCK #63
+	end
+
+
+	--- BLOCK #62 396-408, warpins: 1 ---
+	slot22 = pg
+	slot22 = slot22.global
+	slot22 = slot22.ui
+	slot22 = slot22.tips
+	slot24 = slot22
+	slot22 = slot22.showTextTip
+	slot25 = string
+	slot25 = slot25.format
+	slot27 = "铺开完成，共%d只"
+	slot28 = petShinyStyleEnts
+	slot28 = #slot28
+	MULTRES = slot25(slot27, slot28)
+
+	slot22(slot24, MULTRES)
+
+	--- END OF BLOCK #62 ---
+
+	FLOW; TARGET BLOCK #63
+
+
+	--- BLOCK #63 409-409, warpins: 2 ---
+	return
+	--- END OF BLOCK #63 ---
+
+	FLOW; TARGET BLOCK #64
+
+
+	--- BLOCK #64 410-410, warpins: 2 ---
+	return
+	--- END OF BLOCK #64 ---
+
+	FLOW; TARGET BLOCK #65
+
+
+	--- BLOCK #65 411-411, warpins: 2 ---
+	return
+	--- END OF BLOCK #65 ---
+
+	FLOW; TARGET BLOCK #66
+
+
+	--- BLOCK #66 412-412, warpins: 2 ---
+	return
+	--- END OF BLOCK #66 ---
+
+
+
+end
+
+slot63[slot82] = slot83
+slot82 = "addPet"
+
+slot83 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -22992,10 +35259,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "addItem"
+slot63[slot82] = slot83
+slot82 = "addItem"
 
-slot48 = function(slot0, slot1)
+slot83 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -23051,10 +35318,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "clearItemById"
+slot63[slot82] = slot83
+slot82 = "clearItemById"
 
-slot48 = function(slot0, slot1)
+slot83 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -23200,10 +35467,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "changeLanguage"
+slot63[slot82] = slot83
+slot82 = "changeLanguage"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1 = slot1.curSelectedText
@@ -23258,10 +35525,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setBugReportType"
+slot63[slot82] = slot83
+slot82 = "setBugReportType"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot2 = slot0.value
@@ -23274,20 +35541,20 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getBugReportTypeList"
+slot63[slot82] = slot83
+slot82 = "getBugReportTypeList"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "Bug",
-		value = "bug"
+		value = "bug",
+		label = "Bug"
 	}
 	slot0[1] = slot1
 	slot1 = {
-		label = "建议",
-		value = "suggestion"
+		value = "suggestion",
+		label = "建议"
 	}
 	slot0[2] = slot1
 
@@ -23298,10 +35565,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getCurBugReportType"
+slot63[slot82] = slot83
+slot82 = "getCurBugReportType"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.bugReportType
@@ -23341,10 +35608,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "bugReport"
+slot63[slot82] = slot83
+slot82 = "bugReport"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = slot0[1]
 	slot3 = slot1
@@ -23848,10 +36115,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "savePhotoPreset"
+slot63[slot82] = slot83
+slot82 = "savePhotoPreset"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -23916,10 +36183,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setResPointLogActorId"
+slot63[slot82] = slot83
+slot82 = "setResPointLogActorId"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -23964,10 +36231,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setResPointDrawActorId"
+slot63[slot82] = slot83
+slot82 = "setResPointDrawActorId"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -24012,10 +36279,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openAIGlobalTick"
+slot63[slot82] = slot83
+slot82 = "openAIGlobalTick"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = AiConst
 	slot1.GLOBAL_OPEN_TICK = slot0
@@ -24027,10 +36294,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkAIGlobalTick"
+slot63[slot82] = slot83
+slot82 = "checkAIGlobalTick"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = AiConst
 	slot0 = slot0.GLOBAL_OPEN_TICK
@@ -24042,10 +36309,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openResPointLog"
+slot63[slot82] = slot83
+slot82 = "openResPointLog"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = ResPointConst
 	slot1.OpenLog = slot0
@@ -24057,10 +36324,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkResPointLogState"
+slot63[slot82] = slot83
+slot82 = "checkResPointLogState"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ResPointConst
 	slot0 = slot0.OpenLog
@@ -24072,10 +36339,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openResPointDraw"
+slot63[slot82] = slot83
+slot82 = "openResPointDraw"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = ResPointConst
 	slot1.OpenDebugDraw = slot0
@@ -24087,10 +36354,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkResPointDrawState"
+slot63[slot82] = slot83
+slot82 = "checkResPointDrawState"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = ResPointConst
 	slot0 = slot0.OpenDebugDraw
@@ -24102,10 +36369,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openGroupBehaviourLog"
+slot63[slot82] = slot83
+slot82 = "openGroupBehaviourLog"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = GroupBehaviourConst
 	slot1.OpenLog = slot0
@@ -24117,10 +36384,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkGroupBehaviourLogState"
+slot63[slot82] = slot83
+slot82 = "checkGroupBehaviourLogState"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = GroupBehaviourConst
 	slot0 = slot0.OpenLog
@@ -24132,10 +36399,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openConditionTriggerLog"
+slot63[slot82] = slot83
+slot82 = "openConditionTriggerLog"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = AiConst
 	slot1 = slot1.AI_DEBUG
@@ -24148,10 +36415,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkConditionTriggerLogState"
+slot63[slot82] = slot83
+slot82 = "checkConditionTriggerLogState"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = AiConst
 	slot0 = slot0.AI_DEBUG
@@ -24164,10 +36431,51 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "printCurrentAllStaticResPoint"
+slot63[slot82] = slot83
+slot82 = "showUnitPhysicsTuningWindow"
 
-slot48 = function()
+slot83 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = CS
+	slot1 = slot1.FunPlus
+	slot1 = slot1.WorldX
+	slot1 = slot1.Utils
+	slot1 = slot1.GmToolUtils
+	slot1 = slot1.SetUnitPhysicsTuningWindowEnable
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot82] = slot83
+slot82 = "getIsShowUnitPhysicsTuningWindow"
+
+slot83 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.GmToolUtils
+	slot0 = slot0.IsUnitPhysicsTuningWindowEnabled
+
+	return slot0()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot82] = slot83
+slot82 = "printCurrentAllStaticResPoint"
+
+slot83 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.space
@@ -24233,10 +36541,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setDebugPerceptibility"
+slot63[slot82] = slot83
+slot82 = "setDebugPerceptibility"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -24290,10 +36598,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setNoImpDebugPerceptibility"
+slot63[slot82] = slot83
+slot82 = "setNoImpDebugPerceptibility"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -24347,10 +36655,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setDebugPerceptibilityOff"
+slot63[slot82] = slot83
+slot82 = "setDebugPerceptibilityOff"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = AiConst
 	slot0 = slot0.AI_DEBUG
@@ -24364,10 +36672,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setDebugCalcQualifiedPos"
+slot63[slot82] = slot83
+slot82 = "setDebugCalcQualifiedPos"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -24457,10 +36765,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setDebugCalcQualifiedPosOff"
+slot63[slot82] = slot83
+slot82 = "setDebugCalcQualifiedPosOff"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -24550,10 +36858,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "clearGmList"
+slot63[slot82] = slot83
+slot82 = "clearGmList"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot1 = nil
@@ -24572,10 +36880,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getGmList"
+slot63[slot82] = slot83
+slot82 = "getGmList"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
@@ -24623,10 +36931,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "recvGmList"
+slot63[slot82] = slot83
+slot82 = "recvGmList"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1.serverGmLists = slot0
@@ -24673,217 +36981,267 @@ slot48 = function(slot0)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 25-30, warpins: 1 ---
+	--- BLOCK #4 25-31, warpins: 1 ---
 	slot1 = {}
-	slot2 = pairs
-	slot4 = GmToolUtils
-	slot4 = slot4.serverGmLists
-	slot2, slot3, slot4 = slot2(slot4)
+	slot2 = {}
+	slot3 = pairs
+	slot5 = GmToolUtils
+	slot5 = slot5.serverGmLists
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #5 31-47, warpins: 1 ---
-	slot7 = {}
+	--- BLOCK #5 32-43, warpins: 1 ---
 	slot8 = string
 	slot8 = slot8.split
-	slot10 = slot5
+	slot10 = slot6
 	slot11 = "/"
 	slot8 = slot8(slot10, slot11)
 	slot9 = #slot8
 	slot9 = slot8[slot9]
-	slot7.label = slot9
-	slot9 = 2
-	slot7.type = slot9
-	slot9 = {}
-	slot7.funcList = slot9
-	slot9 = 1
-	slot10 = #slot6
-	slot11 = 1
+	slot10 = nil
+	slot11 = false
+	slot12 = slot2[slot9]
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot12 = if slot12 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 48-59, warpins: 2 ---
-	slot13 = slot6[slot12]
-	slot14 = {}
-	slot15 = slot13.help
-	slot14.label = slot15
-	slot15 = "execGmCmd"
-	slot14.func = slot15
-	slot15 = slot13.cmdName
-	slot14.cmdName = slot15
-	slot15 = slot13.params
-	slot15 = #slot15
+	--- BLOCK #6 44-45, warpins: 1 ---
+	slot10 = slot2[slot9]
 	--- END OF BLOCK #6 ---
 
-	if slot15 == 1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 60-82, warpins: 1 ---
-	slot16 = 2
-	slot14.style = slot16
-	slot16 = 0
-	slot14.subStyle = slot16
-	slot16 = slot13.params
-	slot16 = slot16[1]
-	slot16 = slot16[1]
-	slot14.tips = slot16
-	slot16 = slot13.params
-	slot16 = slot16[1]
-	slot16 = slot16[3]
-	slot14.paramType = slot16
-	slot16 = slot13.params
-	slot16 = slot16[1]
-	slot16 = slot16[4]
-	slot14.defaultValue = slot16
-	slot16 = "gmTool"
-	slot17 = slot14.cmdName
-	slot16 = slot16 .. slot17
-	slot14.saveKey = slot16
-	slot16 = slot14.paramType
+	--- BLOCK #7 46-58, warpins: 1 ---
+	slot11 = true
+	slot10 = {}
+	slot12 = getGmAnnotationGameStringKey
+	slot14 = slot9
+	slot12 = slot12(slot14)
+	slot10.label = slot12
+	slot12 = 2
+	slot10.type = slot12
+	slot12 = true
+	slot10.isServerGm = slot12
+	slot12 = {}
+	slot10.funcList = slot12
+	slot2[slot9] = slot10
 	--- END OF BLOCK #7 ---
 
-	if slot16 == "boolean" then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 83-91, warpins: 1 ---
-	slot16 = 1
-	slot14.style = slot16
-	slot16 = 1
-	slot14.subStyle = slot16
-	slot16 = "execGmCmd2"
-	slot14.func = slot16
-	slot16 = "getBoolChoice"
-	slot14.dataFunc = slot16
+	--- BLOCK #8 59-62, warpins: 2 ---
+	slot12 = 1
+	slot13 = #slot7
+	slot14 = 1
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 92-94, warpins: 1 ---
-	slot16 = 0
+	--- BLOCK #9 63-76, warpins: 2 ---
+	slot16 = slot7[slot15]
+	slot17 = {}
+	slot18 = getGmAnnotationGameStringKey
+	slot20 = slot16.help
+	slot18 = slot18(slot20)
+	slot17.label = slot18
+	slot18 = "execGmCmd"
+	slot17.func = slot18
+	slot18 = slot16.cmdName
+	slot17.cmdName = slot18
+	slot18 = slot16.params
+	slot18 = #slot18
 	--- END OF BLOCK #9 ---
 
-	if slot15 > slot16 then
+	if slot18 == 1 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 95-105, warpins: 1 ---
-	slot16 = 3
-	slot14.style = slot16
-	slot16 = 0
-	slot14.subStyle = slot16
-	slot16 = {}
-	slot14.subItems = slot16
-	slot16 = 1
-	slot17 = slot13.params
-	slot17 = #slot17
-	slot18 = 1
+	--- BLOCK #10 77-101, warpins: 1 ---
+	slot19 = 2
+	slot17.style = slot19
+	slot19 = 0
+	slot17.subStyle = slot19
+	slot19 = getGmAnnotationGameStringKey
+	slot21 = slot16.params
+	slot21 = slot21[1]
+	slot21 = slot21[1]
+	slot19 = slot19(slot21)
+	slot17.tips = slot19
+	slot19 = slot16.params
+	slot19 = slot19[1]
+	slot19 = slot19[3]
+	slot17.paramType = slot19
+	slot19 = slot16.params
+	slot19 = slot19[1]
+	slot19 = slot19[4]
+	slot17.defaultValue = slot19
+	slot19 = "gmTool"
+	slot20 = slot17.cmdName
+	slot19 = slot19 .. slot20
+	slot17.saveKey = slot19
+	slot19 = slot17.paramType
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	if slot19 == "boolean" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #11 106-132, warpins: 2 ---
-	slot20 = slot14.subItems
-	slot21 = {
-		style = 0
-	}
-	slot22 = slot13.params
-	slot22 = slot22[slot19]
-	slot22 = slot22[2]
-	slot21.label = slot22
-	slot22 = slot13.params
-	slot22 = slot22[slot19]
-	slot22 = slot22[1]
-	slot21.tips = slot22
-	slot22 = slot13.params
-	slot22 = slot22[slot19]
-	slot22 = slot22[3]
-	slot21.paramType = slot22
-	slot22 = slot13.params
-	slot22 = slot22[slot19]
-	slot22 = slot22[4]
-	slot21.defaultValue = slot22
-	slot22 = "gmTool"
-	slot23 = slot14.cmdName
-	slot24 = slot13.params
-	slot24 = slot24[slot19]
-	slot24 = slot24[2]
-	slot22 = slot22 .. slot23 .. slot24
-	slot21.saveKey = slot22
-	slot20[slot19] = slot21
+	--- BLOCK #11 102-110, warpins: 1 ---
+	slot19 = 1
+	slot17.style = slot19
+	slot19 = 1
+	slot17.subStyle = slot19
+	slot19 = "execGmCmd2"
+	slot17.func = slot19
+	slot19 = "getBoolChoice"
+	slot17.dataFunc = slot19
 	--- END OF BLOCK #11 ---
 
-	for slot19=slot16, slot17, slot18
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
-	--- BLOCK #12 133-133, warpins: 1 ---
+
+	--- BLOCK #12 111-113, warpins: 1 ---
+	slot19 = 0
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	if slot18 > slot19 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
 
 
-	--- BLOCK #13 134-137, warpins: 1 ---
-	slot16 = 1
-	slot14.style = slot16
-	slot16 = 2
-	slot14.subStyle = slot16
+	--- BLOCK #13 114-124, warpins: 1 ---
+	slot19 = 3
+	slot17.style = slot19
+	slot19 = 0
+	slot17.subStyle = slot19
+	slot19 = {}
+	slot17.subItems = slot19
+	slot19 = 1
+	slot20 = slot16.params
+	slot20 = #slot20
+	slot21 = 1
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 138-143, warpins: 4 ---
-	slot16 = slot7.funcList
-	slot17 = slot7.funcList
-	slot17 = #slot17
-	slot17 = slot17 + 1
-	slot16[slot17] = slot14
+	--- BLOCK #14 125-153, warpins: 2 ---
+	slot23 = slot17.subItems
+	slot24 = {
+		style = 0
+	}
+	slot25 = slot16.params
+	slot25 = slot25[slot22]
+	slot25 = slot25[2]
+	slot24.label = slot25
+	slot25 = getGmAnnotationGameStringKey
+	slot27 = slot16.params
+	slot27 = slot27[slot22]
+	slot27 = slot27[1]
+	slot25 = slot25(slot27)
+	slot24.tips = slot25
+	slot25 = slot16.params
+	slot25 = slot25[slot22]
+	slot25 = slot25[3]
+	slot24.paramType = slot25
+	slot25 = slot16.params
+	slot25 = slot25[slot22]
+	slot25 = slot25[4]
+	slot24.defaultValue = slot25
+	slot25 = "gmTool"
+	slot26 = slot17.cmdName
+	slot27 = slot16.params
+	slot27 = slot27[slot22]
+	slot27 = slot27[2]
+	slot25 = slot25 .. slot26 .. slot27
+	slot24.saveKey = slot25
+	slot23[slot22] = slot24
 	--- END OF BLOCK #14 ---
 
-	for slot12=slot9, slot10, slot11
-	LOOP BLOCK #6
+	for slot22=slot19, slot20, slot21
+	LOOP BLOCK #14
 	GO OUT TO BLOCK #15
 
-	--- BLOCK #15 144-146, warpins: 1 ---
-	slot9 = #slot1
-	slot9 = slot9 + 1
-	slot1[slot9] = slot7
+	--- BLOCK #15 154-154, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #16 147-148, warpins: 2 ---
+	--- BLOCK #16 155-158, warpins: 1 ---
+	slot19 = 1
+	slot17.style = slot19
+	slot19 = 2
+	slot17.subStyle = slot19
 	--- END OF BLOCK #16 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 159-164, warpins: 4 ---
+	slot19 = slot10.funcList
+	slot20 = slot10.funcList
+	slot20 = #slot20
+	slot20 = slot20 + 1
+	slot19[slot20] = slot17
+	--- END OF BLOCK #17 ---
+
+	for slot15=slot12, slot13, slot14
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #18
+
+	--- BLOCK #18 165-166, warpins: 1 ---
+	--- END OF BLOCK #18 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 167-169, warpins: 1 ---
+	slot12 = #slot1
+	slot12 = slot12 + 1
+	slot1[slot12] = slot10
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 170-171, warpins: 3 ---
+	--- END OF BLOCK #20 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
 	LOOP BLOCK #5
-	GO OUT TO BLOCK #17
+	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #17 149-157, warpins: 1 ---
-	slot2 = table
-	slot2 = slot2.sort
-	slot4 = slot1
+	--- BLOCK #21 172-180, warpins: 1 ---
+	slot3 = table
+	slot3 = slot3.sort
+	slot5 = slot1
 
-	slot5 = function(slot0, slot1)
+	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = slot0.label
 		slot3 = slot1.label
@@ -24919,70 +37277,70 @@ slot48 = function(slot0)
 
 	end
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = 1
-	slot3 = #slot1
-	slot4 = 1
-	--- END OF BLOCK #17 ---
+	slot3 = 1
+	slot4 = #slot1
+	slot5 = 1
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #18 158-166, warpins: 2 ---
-	slot6 = GmToolUtils
-	slot6 = slot6.gmFuncMap
+	--- BLOCK #22 181-189, warpins: 2 ---
 	slot7 = GmToolUtils
 	slot7 = slot7.gmFuncMap
-	slot7 = #slot7
-	slot7 = slot7 + 1
-	slot8 = slot1[slot5]
-	slot6[slot7] = slot8
-	--- END OF BLOCK #18 ---
+	slot8 = GmToolUtils
+	slot8 = slot8.gmFuncMap
+	slot8 = #slot8
+	slot8 = slot8 + 1
+	slot9 = slot1[slot6]
+	slot7[slot8] = slot9
+	--- END OF BLOCK #22 ---
 
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #18
-	GO OUT TO BLOCK #19
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #22
+	GO OUT TO BLOCK #23
 
-	--- BLOCK #19 167-186, warpins: 1 ---
-	slot2 = GmToolUtils
-	slot2 = slot2.handleRecently
+	--- BLOCK #23 190-209, warpins: 1 ---
+	slot3 = GmToolUtils
+	slot3 = slot3.handleRecently
 
-	slot2()
+	slot3()
 
-	slot2 = GmToolUtils
-	slot2 = slot2.handleFavorite
+	slot3 = GmToolUtils
+	slot3 = slot3.handleFavorite
 
-	slot2()
+	slot3()
 
-	slot2 = GmToolUtils
-	slot2 = slot2.handleRenderSetting
+	slot3 = GmToolUtils
+	slot3 = slot3.handleRenderSetting
 
-	slot2()
+	slot3()
 
-	slot2 = GmToolUtils
-	slot3 = true
-	slot2.hasInitGmList = slot3
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.config
-	slot4 = slot2
-	slot2 = slot2.refreshGmList
+	slot3 = GmToolUtils
+	slot4 = true
+	slot3.hasInitGmList = slot4
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.config
+	slot5 = slot3
+	slot3 = slot3.refreshGmList
 
-	slot2(slot4)
+	slot3(slot5)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "addRecentlyUse"
+slot63[slot82] = slot83
+slot82 = "addRecentlyUse"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.tIndex
 	slot2 = GmToolUtils
@@ -25219,8 +37577,8 @@ slot48 = function(slot0)
 
 
 	--- BLOCK #19 99-102, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.getLocalizationText
+	slot8 = GmToolUtils
+	slot8 = slot8.getGmLocalizationText
 	slot10 = slot7.label
 	slot8 = slot8(slot10)
 	--- END OF BLOCK #19 ---
@@ -25261,10 +37619,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "handleRecently"
+slot63[slot82] = slot83
+slot82 = "handleRecently"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.gmFuncMap
@@ -25324,8 +37682,8 @@ slot48 = function()
 
 
 	--- BLOCK #4 36-39, warpins: 1 ---
-	slot19 = pg
-	slot19 = slot19.getLocalizationText
+	slot19 = GmToolUtils
+	slot19 = slot19.getGmLocalizationText
 	slot21 = slot18.label
 	slot19 = slot19(slot21)
 	--- END OF BLOCK #4 ---
@@ -25416,10 +37774,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "handleFavorite"
+slot63[slot82] = slot83
+slot82 = "handleFavorite"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.gmFuncMap
@@ -25479,8 +37837,8 @@ slot48 = function()
 
 
 	--- BLOCK #4 36-39, warpins: 1 ---
-	slot19 = pg
-	slot19 = slot19.getLocalizationText
+	slot19 = GmToolUtils
+	slot19 = slot19.getGmLocalizationText
 	slot21 = slot18.label
 	slot19 = slot19(slot21)
 	--- END OF BLOCK #4 ---
@@ -25557,10 +37915,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "execGmCmd"
+slot63[slot82] = slot83
+slot82 = "execGmCmd"
 
-slot48 = function(slot0, slot1)
+slot83 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = GmToolUtils
 	slot2 = slot2.serverCmd2Params
@@ -25719,10 +38077,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "execGmCmd2"
+slot63[slot82] = slot83
+slot82 = "execGmCmd2"
 
-slot48 = function(slot0, slot1)
+slot83 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = GmToolUtils
 	slot2 = slot2.serverCmd2Params
@@ -25883,20 +38241,20 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getBoolChoice"
+slot63[slot82] = slot83
+slot82 = "getBoolChoice"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "true",
-		value = "true"
+		value = "true",
+		label = "true"
 	}
 	slot0[1] = slot1
 	slot1 = {
-		label = "false",
-		value = "false"
+		value = "false",
+		label = "false"
 	}
 	slot0[2] = slot1
 
@@ -25907,37 +38265,93 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "recvGmCmdExecRes"
+slot63[slot82] = slot83
+slot82 = "recvGmCmdExecRes"
 
-slot48 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+slot83 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	if slot2 == "table" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-10, warpins: 1 ---
-	slot2 = json
-	slot2 = slot2.encode
-	slot4 = slot1
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1.clipboardText
 	slot2 = slot2(slot4)
-	slot1 = slot2
-	slot2 = UNITY_EDITOR
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	if slot2 == "string" then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-28, warpins: 1 ---
+	--- BLOCK #2 11-29, warpins: 1 ---
+	slot2 = CS
+	slot2 = slot2.FunPlus
+	slot2 = slot2.WorldX
+	slot2 = slot2.Utils
+	slot2 = slot2.UIUtils
+	slot2 = slot2.ClipboardWriter
+	slot4 = slot1.clipboardText
+
+	slot2(slot4)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = slot0
+	slot6 = " 报告已复制到剪贴板"
+	slot5 = slot5 .. slot6
+
+	slot2(slot4, slot5)
+
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 30-31, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 32-39, warpins: 1 ---
+	slot2 = json
+	slot2 = slot2.encode
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot1 = slot2
+	slot2 = UNITY_EDITOR
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 40-57, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.logger
@@ -25959,12 +38373,12 @@ slot48 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #3 29-42, warpins: 1 ---
+	--- BLOCK #6 58-71, warpins: 1 ---
 	slot2 = CS
 	slot2 = slot2.UnityEngine
 	slot2 = slot2.GUIUtility
@@ -25981,23 +38395,23 @@ slot48 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 43-43, warpins: 3 ---
+	--- BLOCK #7 72-72, warpins: 3 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getKeyboardLockModeSelected"
+slot63[slot82] = slot83
+slot82 = "getKeyboardLockModeSelected"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -26050,10 +38464,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getGamepadLockModeSelected"
+slot63[slot82] = slot83
+slot82 = "getGamepadLockModeSelected"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = 0
 
@@ -26064,10 +38478,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getGamepadInputModeChange"
+slot63[slot82] = slot83
+slot82 = "getGamepadInputModeChange"
 
-slot48 = function()
+slot83 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.game
@@ -26081,11 +38495,11 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getGamepadInputModeList"
+slot63[slot82] = slot83
+slot82 = "getGamepadInputModeList"
 
-slot48 = function()
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot83 = function()
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
 		label = "Plan1(Default)",
@@ -26097,9 +38511,13 @@ slot48 = function()
 	slot1.value = slot2
 	slot0[1] = slot1
 	slot1 = {
-		label = "Plan2(组合技能)",
 		tIndex = 0
 	}
+	slot2 = GmToolUtils
+	slot2 = slot2.getGmGameString
+	slot4 = "GM_GAMEPAD_MODIFY_MODE"
+	slot2 = slot2(slot4)
+	slot1.label = slot2
 	slot2 = HotkeyConst
 	slot2 = slot2.GAMEPAD_INPUT_CONTROL_MODE
 	slot2 = slot2.ModifyMode
@@ -26113,10 +38531,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onGamepadInputModeChange"
+slot63[slot82] = slot83
+slot82 = "onGamepadInputModeChange"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -26134,10 +38552,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showTopLogoEmojiBubble"
+slot63[slot82] = slot83
+slot82 = "showTopLogoEmojiBubble"
 
-slot48 = function(slot0)
+slot83 = function(slot0)
 	--- BLOCK #0 1-38, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26209,10 +38627,1121 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "showPetListEmoji"
+slot63[slot82] = slot83
 
-slot48 = function(slot0)
+slot82 = function(slot0)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot1 = function(slot0, slot1)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot2 = pcall
+		slot4 = slot0
+		slot2, slot3 = slot2(slot4)
+
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-6, warpins: 1 ---
+		return slot3
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 7-7, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2 = {}
+
+	slot3 = function(slot0, ...)
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot1 = lines
+		slot2 = lines
+		slot2 = #slot2
+		slot2 = slot2 + 1
+		slot3 = string
+		slot3 = slot3.format
+		slot5 = slot0
+		MULTRES = ...
+		slot3 = slot3(slot5, MULTRES)
+		slot1[slot2] = slot3
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4 = slot3
+	slot6 = "==================== Entity Visible Info ===================="
+
+	slot4(slot6)
+
+	slot4 = slot3
+	slot6 = "entityId=%s actorId=%s className=%s isPawn=%s"
+	slot7 = tostring
+	slot9 = slot0.id
+	slot7 = slot7(slot9)
+	slot8 = tostring
+	slot10 = slot0.actorId
+	slot8 = slot8(slot10)
+	slot9 = tostring
+	slot11 = slot1
+
+	slot13 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.getClassType
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot14 = "?"
+	MULTRES = slot11(slot13, slot14)
+	slot9 = slot9(MULTRES)
+	slot10 = tostring
+	slot12 = pg
+	slot12 = slot12.pawn
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= slot12 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 26-27, warpins: 1 ---
+	slot12 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 28-28, warpins: 1 ---
+	slot12 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 29-41, warpins: 2 ---
+	MULTRES = slot10(slot12)
+
+	slot4(slot6, slot7, slot8, slot9, MULTRES)
+
+	slot4 = slot0.eModel
+	slot5 = slot3
+	slot7 = "eModel=%s"
+	slot8 = tostring
+	slot10 = NotNil
+	slot12 = slot4
+	MULTRES = slot10(slot12)
+	MULTRES = slot8(MULTRES)
+
+	slot5(slot7, MULTRES)
+
+	--- END OF BLOCK #3 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 42-53, warpins: 1 ---
+	slot5 = slot3
+	slot7 = "eModel 为空,后续 C# 信息无法读取(实体可能未创建模型)"
+
+	slot5(slot7)
+
+	slot5 = slot3
+	slot7 = "============================================================"
+
+	slot5(slot7)
+
+	slot5 = table
+	slot5 = slot5.concat
+	slot7 = slot2
+	slot8 = "\n"
+
+	return slot5(slot7, slot8)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 54-90, warpins: 2 ---
+	slot5 = slot3
+	slot7 = "---- Ⅰ. activeKeys(有值=整个entity被disable) ----"
+
+	slot5(slot7)
+
+	slot5 = slot3
+	slot7 = "  modelActiveKeys=[%s]"
+	slot8 = slot1
+
+	slot10 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.dumpActiveKeys
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot11 = "read fail"
+	MULTRES = slot8(slot10, slot11)
+
+	slot5(slot7, MULTRES)
+
+	slot5 = slot3
+	slot7 = "---- Ⅱ. visibleKeys(有值=所有meshRender被disable) ----"
+
+	slot5(slot7)
+
+	slot5 = slot3
+	slot7 = "  modelVisibleKeys=[%s]"
+	slot8 = slot1
+
+	slot10 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.dumpVisibleKeys
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot11 = "read fail"
+	MULTRES = slot8(slot10, slot11)
+
+	slot5(slot7, MULTRES)
+
+	slot5 = slot3
+	slot7 = "  modelCollideKeys=[%s]  modelTriggerKeys=[%s]"
+	slot8 = slot1
+
+	slot10 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.dumpCollideKeys
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot11 = "-"
+	slot8 = slot8(slot10, slot11)
+	slot9 = slot1
+
+	slot11 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.dumpTriggerKeys
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot12 = "-"
+	MULTRES = slot9(slot11, slot12)
+
+	slot5(slot7, slot8, MULTRES)
+
+	slot5 = slot3
+	slot7 = "---- Ⅲ. 动画初始化(isClientReady为false→隐藏) ----"
+
+	slot5(slot7)
+
+	slot5 = slot0.getEModelComponent
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 91-95, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getEModelComponent
+	slot8 = Const
+	slot8 = slot8.COMPONENT_IDX_PLAYABLE
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 96-100, warpins: 2 ---
+	slot6 = NotNil
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #7 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 101-125, warpins: 1 ---
+	slot6 = slot1
+
+	slot8 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = playable
+		slot0 = slot0.initialized
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot9 = nil
+	slot6 = slot6(slot8, slot9)
+	slot7 = slot1
+
+	slot9 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = eModel
+		slot0 = slot0.isClientReady
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot10 = nil
+	slot7 = slot7(slot9, slot10)
+	slot8 = slot1
+
+	slot10 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = eModel
+		slot0 = slot0.modelView
+		slot2 = slot0
+		slot0 = slot0.IsAnimatorRead
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot11 = nil
+	slot8 = slot8(slot10, slot11)
+	slot9 = slot3
+	slot11 = "  isClientReady=%s playableComponent.initialized=%s  animatorReady(firstAnimatorReady)=%s"
+	slot12 = tostring
+	slot14 = slot7
+	slot12 = slot12(slot14)
+	slot13 = tostring
+	slot15 = slot6
+	slot13 = slot13(slot15)
+	slot14 = tostring
+	slot16 = slot8
+	MULTRES = slot14(slot16)
+
+	slot9(slot11, slot12, slot13, MULTRES)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 126-128, warpins: 1 ---
+	slot6 = slot3
+	slot8 = "  playableComponent 不存在(该实体可能无动画组件)"
+
+	slot6(slot8)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 129-137, warpins: 2 ---
+	slot6 = slot3
+	slot8 = "---- Ⅳ. petHideKeys(玩家维护,对应 BASE_PET) ----"
+
+	slot6(slot8)
+
+	slot6 = slot1
+
+	slot8 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot0 = slot0.getMasterEntity
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.getMasterEntity
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		return slot0
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot9 = nil
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 138-140, warpins: 1 ---
+	slot7 = slot6.dumpPetHideKeys
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 141-151, warpins: 1 ---
+	slot7 = slot3
+	slot9 = "  master(%s).petHideKeys=[%s]"
+	slot10 = tostring
+	slot12 = slot6.id
+	slot10 = slot10(slot12)
+	slot11 = slot1
+
+	slot13 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = master
+		slot2 = slot0
+		slot0 = slot0.dumpPetHideKeys
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot14 = "read fail"
+	MULTRES = slot11(slot13, slot14)
+
+	slot7(slot9, slot10, MULTRES)
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #13 152-154, warpins: 2 ---
+	slot7 = slot0.dumpPetHideKeys
+	--- END OF BLOCK #13 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 155-162, warpins: 1 ---
+	slot7 = slot3
+	slot9 = "  self.petHideKeys=[%s]"
+	slot10 = slot1
+
+	slot12 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = entity
+		slot2 = slot0
+		slot0 = slot0.dumpPetHideKeys
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot13 = "read fail"
+	MULTRES = slot10(slot12, slot13)
+
+	slot7(slot9, MULTRES)
+
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 163-165, warpins: 1 ---
+	slot7 = slot3
+	slot9 = "  (非宠物或无 master,跳过)"
+
+	slot7(slot9)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 166-214, warpins: 3 ---
+	slot7 = slot3
+	slot9 = "---- Ⅷ. 服务器隐藏 clientVisible(对应 VISIBLE_BY_SERVER) ----"
+
+	slot7(slot9)
+
+	slot7 = slot3
+	slot9 = "  entity.clientVisible=%s"
+	slot10 = tostring
+	slot12 = slot0.clientVisible
+	MULTRES = slot10(slot12)
+
+	slot7(slot9, MULTRES)
+
+	slot7 = slot3
+	slot9 = "---- 综合 ----"
+
+	slot7(slot9)
+
+	slot7 = slot3
+	slot9 = "  modelView:GetModelVisible()=%s"
+	slot10 = tostring
+	slot12 = slot1
+
+	slot14 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = eModel
+		slot0 = slot0.modelView
+		slot2 = slot0
+		slot0 = slot0.GetModelVisible
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot15 = "?"
+	MULTRES = slot12(slot14, slot15)
+	MULTRES = slot10(MULTRES)
+
+	slot7(slot9, MULTRES)
+
+	slot7 = slot3
+	slot9 = "  entity.visible=%s  entity.active=%s"
+	slot10 = tostring
+	slot12 = slot0.visible
+	slot10 = slot10(slot12)
+	slot11 = tostring
+	slot13 = slot0.active
+	MULTRES = slot11(slot13)
+
+	slot7(slot9, slot10, MULTRES)
+
+	slot7 = slot1
+
+	slot9 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = eModel
+		slot0 = slot0.modelRoot
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-12, warpins: 1 ---
+		slot1 = slot0.localScale
+		slot2 = string
+		slot2 = slot2.format
+		slot4 = "(%.3f,%.3f,%.3f)"
+		slot5 = slot1.x
+		slot6 = slot1.y
+		slot7 = slot1.z
+
+		return slot2(slot4, slot5, slot6, slot7)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 13-14, warpins: 2 ---
+		slot1 = nil
+
+		return slot1
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot10 = nil
+	slot7 = slot7(slot9, slot10)
+	slot8 = slot3
+	slot10 = "  modelRoot.localScale=%s (Ⅶ:为0也会隐藏)"
+	slot11 = tostring
+	slot13 = slot7
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	slot8 = slot3
+	slot10 = "============================================================"
+
+	slot8(slot10)
+
+	slot8 = table
+	slot8 = slot8.concat
+	slot10 = slot2
+	slot11 = "\n"
+
+	return slot8(slot10, slot11)
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot83 = function()
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.getEntities
+	slot0 = slot0()
+	slot1 = {}
+	slot2 = 0
+	slot3 = pairs
+	slot5 = slot0
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #1 10-16, warpins: 1 ---
+	slot2 = slot2 + 1
+	slot8 = pcall
+	slot10 = collectEntityVisibleInfo
+	slot11 = slot7
+	slot8, slot9 = slot8(slot10, slot11)
+	--- END OF BLOCK #1 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 17-20, warpins: 1 ---
+	slot10 = #slot1
+	slot10 = slot10 + 1
+	slot1[slot10] = slot9
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 21-28, warpins: 1 ---
+	slot10 = #slot1
+	slot10 = slot10 + 1
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = "==================== Entity Visible Info ====================\nentityId=%s 采集异常: %s\n============================================================"
+	slot14 = tostring
+	--- END OF BLOCK #3 ---
+
+	slot16 = if slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 29-29, warpins: 1 ---
+	slot16 = slot7.id
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 30-35, warpins: 2 ---
+	slot14 = slot14(slot16)
+	slot15 = tostring
+	slot17 = slot9
+	MULTRES = slot15(slot17)
+	slot11 = slot11(slot13, slot14, MULTRES)
+	slot1[slot10] = slot11
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 36-37, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 38-70, warpins: 1 ---
+	slot3 = string
+	slot3 = slot3.format
+	slot5 = "场景全部实体 Visible 信息  实体数=%d  时间=%s"
+	slot6 = slot2
+	slot7 = os
+	slot7 = slot7.date
+	slot9 = "%Y-%m-%d %H:%M:%S"
+	MULTRES = slot7(slot9)
+	slot3 = slot3(slot5, slot6, MULTRES)
+	slot4 = slot3
+	slot5 = "\n\n"
+	slot6 = table
+	slot6 = slot6.concat
+	slot8 = slot1
+	slot9 = "\n\n"
+	slot6 = slot6(slot8, slot9)
+	slot4 = slot4 .. slot5 .. slot6
+	slot5 = CS
+	slot5 = slot5.UnityEngine
+	slot5 = slot5.Application
+	slot5 = slot5.persistentDataPath
+	slot6 = slot5
+	slot7 = "\\"
+	slot8 = os
+	slot8 = slot8.date
+	slot10 = "EntityVisible_%Y%m%d_%H%M%S.txt"
+	slot8 = slot8(slot10)
+	slot6 = slot6 .. slot7 .. slot8
+	slot7 = pcall
+
+	slot9 = function()
+		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = os
+		slot0 = slot0.execute
+		slot2 = "if not exist \""
+		slot3 = LOG_DIR
+		slot4 = "\" mkdir \""
+		slot5 = LOG_DIR
+		slot6 = "\""
+		slot2 = slot2 .. slot3 .. slot4 .. slot5 .. slot6
+
+		slot0(slot2)
+
+		slot0 = io
+		slot0 = slot0.open
+		slot2 = path
+		slot3 = "w"
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 17-24, warpins: 1 ---
+		slot1 = logger
+		slot3 = slot1
+		slot1 = slot1.error
+		slot4 = "[VisibleInfo] 无法写入文件: %s"
+		slot5 = path
+
+		slot1(slot3, slot4, slot5)
+
+		slot1 = false
+
+		return slot1
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 25-33, warpins: 2 ---
+		slot3 = slot0
+		slot1 = slot0.write
+		slot4 = content
+
+		slot1(slot3, slot4)
+
+		slot3 = slot0
+		slot1 = slot0.close
+
+		slot1(slot3)
+
+		slot1 = true
+
+		return slot1
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot7, slot8 = slot7(slot9)
+	--- END OF BLOCK #7 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 71-72, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	if slot8 ~= false then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 73-93, warpins: 1 ---
+	slot9 = logger
+	slot11 = slot9
+	slot9 = slot9.info
+	slot12 = "[VisibleInfo] 全场景 %d 个实体信息已写入: %s"
+	slot13 = slot2
+	slot14 = slot6
+
+	slot9(slot11, slot12, slot13, slot14)
+
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.tips
+	slot11 = slot9
+	slot9 = slot9.showTextTip
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "全场景 %d 个实体信息已写入 %s"
+	slot15 = slot2
+	slot16 = slot6
+	MULTRES = slot12(slot14, slot15, slot16)
+
+	slot9(slot11, MULTRES)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 94-109, warpins: 2 ---
+	slot9 = logger
+	slot11 = slot9
+	slot9 = slot9.error
+	slot12 = "[VisibleInfo] 写文件异常: %s"
+	slot13 = tostring
+	slot15 = slot8
+	MULTRES = slot13(slot15)
+
+	slot9(slot11, slot12, MULTRES)
+
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.tips
+	slot11 = slot9
+	slot9 = slot9.showTextTip
+	slot12 = "写文件失败,详见日志"
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 110-111, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot84 = "dumpEntityVisibleInfo"
+
+slot85 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = slot0[0]
+	slot3 = slot1
+	slot1 = slot1.GetChild
+	slot4 = "InputField"
+	slot1 = slot1(slot3, slot4)
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "UTMPInputField"
+	slot1 = slot1(slot3, slot4)
+	slot1 = slot1.text
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-19, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.gsub
+	slot5 = "%s"
+	slot6 = ""
+	slot2 = slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 20-20, warpins: 2 ---
+	slot1 = ""
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 21-22, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot1 == "-1" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-25, warpins: 1 ---
+	slot2 = dumpAllEntitiesVisibleToFile
+
+	slot2()
+
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-28, warpins: 2 ---
+	slot2 = nil
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= "" then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 29-30, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	if slot1 == "0" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 31-33, warpins: 2 ---
+	slot3 = pg
+	slot2 = slot3.pawn
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #8 34-40, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getEntity
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	slot2 = slot3
+	--- END OF BLOCK #8 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 41-45, warpins: 1 ---
+	slot3 = tonumber
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 46-50, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.getEntityByActorId
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	slot2 = slot4
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 51-52, warpins: 4 ---
+	--- END OF BLOCK #11 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 53-75, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = "未找到实体: %s"
+	slot9 = tostring
+	slot11 = slot1
+	MULTRES = slot9(slot11)
+	MULTRES = slot6(slot8, MULTRES)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = "[VisibleInfo] entity not found, input=%s"
+	slot7 = tostring
+	slot9 = slot1
+	MULTRES = slot7(slot9)
+
+	slot3(slot5, slot6, MULTRES)
+
+	return
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 76-91, warpins: 2 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.error
+	slot6 = collectEntityVisibleInfo
+	slot8 = slot2
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = "visible 信息已输出到日志,搜 [Entity Visible Info]"
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "showPetListEmoji"
+
+slot85 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26283,10 +39812,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "adjustNavAreaCost"
+slot63[slot84] = slot85
+slot84 = "adjustNavAreaCost"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26356,10 +39885,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "resetFriendshipRecord"
+slot63[slot84] = slot85
+slot84 = "resetFriendshipRecord"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-63, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26460,9 +39989,9 @@ slot48 = function(slot0)
 	slot8.friendPos = slot4
 	slot9, slot10 = nil
 	slot11 = {
-		rtHeight = 606,
 		rtWidth = 1024,
-		cameraPresetKey = 2
+		cameraPresetKey = 2,
+		rtHeight = 606
 	}
 
 	slot5(slot7, slot8, slot9, slot10, slot11)
@@ -26474,10 +40003,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "handleRenderSetting"
+slot63[slot84] = slot85
+slot84 = "handleRenderSetting"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = appFacade
 	slot0 = slot0.pipelineManager
@@ -26561,8 +40090,8 @@ slot48 = function()
 	slot10 = slot10.GmRenderSetting
 	slot10[slot3] = slot4
 	slot10 = {
-		subStyle = 0,
-		style = 1
+		style = 1,
+		subStyle = 0
 	}
 	slot10.label = slot3
 	slot11 = "set_"
@@ -26650,13 +40179,16 @@ slot48 = function()
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 73-104, warpins: 1 ---
+	--- BLOCK #10 73-107, warpins: 1 ---
 	slot3 = slot8
 	slot10 = {
-		subStyle = 0,
-		style = 1
+		style = 1,
+		subStyle = 0
 	}
-	slot11 = "隐藏"
+	slot11 = GmToolUtils
+	slot11 = slot11.getGmGameString
+	slot13 = "GM_DYNAMIC_HIDE_PREFIX"
+	slot11 = slot11(slot13)
 	slot12 = slot3
 	slot11 = slot11 .. slot12
 	slot10.label = slot11
@@ -26735,7 +40267,7 @@ slot48 = function()
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 105-106, warpins: 2 ---
+	--- BLOCK #11 108-109, warpins: 2 ---
 	--- END OF BLOCK #11 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
@@ -26743,7 +40275,7 @@ slot48 = function()
 	GO OUT TO BLOCK #12
 
 
-	--- BLOCK #12 107-108, warpins: 1 ---
+	--- BLOCK #12 110-111, warpins: 1 ---
 	return
 	--- END OF BLOCK #12 ---
 
@@ -26751,10 +40283,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setCameraShowFlag"
+slot63[slot84] = slot85
+slot84 = "setCameraShowFlag"
 
-slot48 = function(slot0, slot1)
+slot85 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = GmToolUtils
 	slot2 = slot2.GmRenderSetting
@@ -26775,10 +40307,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getCameraShowFlag"
+slot63[slot84] = slot85
+slot84 = "getCameraShowFlag"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1 = slot1.GmRenderSetting
@@ -26791,10 +40323,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setCameraFov"
+slot63[slot84] = slot85
+slot84 = "setCameraFov"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26827,10 +40359,160 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setTreeCullDistance"
+slot63[slot84] = slot85
+slot84 = "connectShaderPush"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = slot0[0]
+	slot3 = slot1
+	slot1 = slot1.GetChild
+	slot4 = "InputField"
+	slot1 = slot1(slot3, slot4)
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "UTMPInputField"
+	slot1 = slot1(slot3, slot4)
+	slot1 = slot1.text
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-14, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 == "" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-23, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "请填 PC 的 IP，如 192.168.1.5"
+
+	slot2(slot4, slot5)
+
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-42, warpins: 2 ---
+	slot2 = CS
+	slot2 = slot2.FunPlus
+	slot2 = slot2.WorldX
+	slot2 = slot2.Utils
+	slot2 = slot2.GmToolUtils
+	slot2 = slot2.ConnectShaderPush
+	slot4 = slot1
+
+	slot2(slot4)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "ShaderPush 已连接 "
+	slot6 = slot1
+	slot5 = slot5 .. slot6
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "disconnectShaderPush"
+
+slot85 = function()
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.GmToolUtils
+	slot0 = slot0.DisconnectShaderPush
+
+	slot0()
+
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.tips
+	slot2 = slot0
+	slot0 = slot0.showTextTip
+	slot3 = "ShaderPush 已断开"
+
+	slot0(slot2, slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "shaderPushStatus"
+
+slot85 = function()
+	--- BLOCK #0 1-22, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.GmToolUtils
+	slot0 = slot0.GetShaderPushStatus
+	slot0 = slot0()
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	slot1 = logger
+	slot3 = slot1
+	slot1 = slot1.info
+	slot4 = "%s"
+	slot5 = slot0
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "setTreeCullDistance"
+
+slot85 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26858,10 +40540,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setGrassCullDistance"
+slot63[slot84] = slot85
+slot84 = "setGrassCullDistance"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26889,10 +40571,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setImposterCullDistance"
+slot63[slot84] = slot85
+slot84 = "setImposterCullDistance"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26920,10 +40602,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setForce32Layer"
+slot63[slot84] = slot85
+slot84 = "setForce32Layer"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -26943,7 +40625,7 @@ slot48 = function(slot0)
 	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
 	--- BLOCK #1 18-20, warpins: 1 ---
@@ -26953,12 +40635,12 @@ slot48 = function(slot0)
 	if slot8 ~= nil then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #2 21-23, warpins: 1 ---
-	slot9 = slot8.modelComponent
+	slot9 = slot8.modelShaderView
 	--- END OF BLOCK #2 ---
 
 	slot9 = if slot9 then
@@ -26968,26 +40650,7 @@ slot48 = function(slot0)
 	end
 
 
-	--- BLOCK #3 24-26, warpins: 1 ---
-	slot9 = slot8.modelComponent
-	slot9 = slot9.modelView
-	slot9 = slot9.shaderView
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 27-28, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 29-33, warpins: 1 ---
+	--- BLOCK #3 24-28, warpins: 1 ---
 	slot12 = slot9
 	slot10 = slot9.SetMultiPassForce32Layer
 	slot13 = true
@@ -26995,31 +40658,31 @@ slot48 = function(slot0)
 
 	slot10(slot12, slot13, slot14)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #6 34-35, warpins: 4 ---
-	--- END OF BLOCK #6 ---
+	--- BLOCK #4 29-30, warpins: 4 ---
+	--- END OF BLOCK #4 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #7
+	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #7 36-36, warpins: 1 ---
+	--- BLOCK #5 31-31, warpins: 1 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideFps"
+slot63[slot84] = slot85
+slot84 = "hideFps"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27038,10 +40701,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkFps"
+slot63[slot84] = slot85
+slot84 = "checkFps"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -27059,10 +40722,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hidePreAlpha"
+slot63[slot84] = slot85
+slot84 = "hidePreAlpha"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27104,10 +40767,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkPreAlpha"
+slot63[slot84] = slot85
+slot84 = "checkPreAlpha"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -27174,10 +40837,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hidePhoto"
+slot63[slot84] = slot85
+slot84 = "hidePhoto"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27210,10 +40873,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkPhoto"
+slot63[slot84] = slot85
+slot84 = "checkPhoto"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -27255,10 +40918,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideRightPanel"
+slot63[slot84] = slot85
+slot84 = "hideRightPanel"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27280,10 +40943,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkRightPanel"
+slot63[slot84] = slot85
+slot84 = "checkRightPanel"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -27326,10 +40989,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideCatchKey"
+slot63[slot84] = slot85
+slot84 = "hideCatchKey"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27351,10 +41014,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkCatchKey"
+slot63[slot84] = slot85
+slot84 = "checkCatchKey"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27396,10 +41059,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideUID"
+slot63[slot84] = slot85
+slot84 = "hideUID"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27420,10 +41083,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkUID"
+slot63[slot84] = slot85
+slot84 = "checkUID"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -27465,115 +41128,97 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideFuseKey"
+slot63[slot84] = slot85
+slot84 = "hideFuseKey"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot85 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 11-16, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 17-23, warpins: 1 ---
+	--- BLOCK #1 7-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.hudV2
 	slot1 = slot1.MD
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 24-29, warpins: 1 ---
+	--- BLOCK #2 14-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.hudV2
 	slot1 = slot1.MD
 	slot1 = slot1.hpFuse
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #4 30-31, warpins: 3 ---
+	--- BLOCK #4 22-24, warpins: 1 ---
+	slot2 = slot1.fuseKey
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 32-34, warpins: 1 ---
+	--- BLOCK #5 25-29, warpins: 1 ---
 	slot2 = slot1.fuseKey
+	slot4 = slot2
+	slot2 = slot2.SetActiveQuickly
+	slot5 = not slot0
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-39, warpins: 1 ---
-	slot2 = slot1.fuseKey
-	slot4 = slot2
-	slot2 = slot2.SetActiveQuickly
-	slot5 = not slot0
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #6 30-32, warpins: 2 ---
+	slot2 = slot1.fuseKeyText
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 40-42, warpins: 2 ---
-	slot2 = slot1.fuseKeyText
-	--- END OF BLOCK #7 ---
-
 	slot2 = if slot2 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #8 43-48, warpins: 1 ---
+	--- BLOCK #7 33-37, warpins: 1 ---
 	slot2 = slot1.fuseKeyText
 	slot4 = slot2
 	slot2 = slot2.SetActiveQuickly
@@ -27581,384 +41226,149 @@ slot48 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #9 49-54, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	--- END OF BLOCK #9 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #15
-	end
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #10 55-61, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.view
-	--- END OF BLOCK #10 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #11 62-69, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.view
-	slot1 = slot1.fuseKey
-	--- END OF BLOCK #11 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 70-79, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.view
-	slot1 = slot1.fuseKey
-	slot3 = slot1
-	slot1 = slot1.SetActiveQuickly
-	slot4 = not slot0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 80-87, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.view
-	slot1 = slot1.fuseKeyText
-	--- END OF BLOCK #13 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 88-97, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.view
-	slot1 = slot1.fuseKeyText
-	slot3 = slot1
-	slot1 = slot1.SetActiveQuickly
-	slot4 = not slot0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 98-98, warpins: 7 ---
+	--- BLOCK #8 38-38, warpins: 3 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkFuseKey"
+slot63[slot84] = slot85
+slot84 = "checkFuseKey"
 
-slot48 = function()
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot85 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
-	slot0 = slot0.prefsCacheUtils
-	slot2 = slot0
-	slot0 = slot0.getBool
-	slot3 = "HudV2Enable"
-	slot4 = false
-	slot0 = slot0(slot2, slot3, slot4)
+	slot0 = slot0.ui
+	slot0 = slot0.hudV2
 	--- END OF BLOCK #0 ---
 
 	slot0 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 11-16, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 17-23, warpins: 1 ---
+	--- BLOCK #1 7-13, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.ui
 	slot0 = slot0.hudV2
 	slot0 = slot0.MD
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot0 = if slot0 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 24-29, warpins: 1 ---
+	--- BLOCK #2 14-19, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.ui
 	slot0 = slot0.hudV2
 	slot0 = slot0.MD
 	slot0 = slot0.hpFuse
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 30-31, warpins: 3 ---
-	--- END OF BLOCK #4 ---
-
 	slot1 = if slot0 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #5 32-34, warpins: 1 ---
-	slot1 = slot0.fuseKey
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #6 35-39, warpins: 1 ---
-	slot1 = slot0.fuseKey
-	slot1 = slot1.renderOpacity
-	slot2 = 1
-	--- END OF BLOCK #6 ---
-
-	if slot1 < slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #7 40-42, warpins: 1 ---
-	slot1 = slot0.fuseKeyText
-	--- END OF BLOCK #7 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #8 43-47, warpins: 1 ---
-	slot1 = slot0.fuseKeyText
-	slot1 = slot1.renderOpacity
-	slot2 = 1
-	--- END OF BLOCK #8 ---
-
-	if slot1 >= slot2 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 48-49, warpins: 2 ---
+	--- BLOCK #4 22-24, warpins: 1 ---
+	slot1 = slot0.fuseKey
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 25-29, warpins: 1 ---
+	slot1 = slot0.fuseKey
+	slot1 = slot1.renderOpacity
+	slot2 = 1
+	--- END OF BLOCK #5 ---
+
+	if slot1 < slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 30-32, warpins: 1 ---
+	slot1 = slot0.fuseKeyText
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 33-37, warpins: 1 ---
+	slot1 = slot0.fuseKeyText
+	slot1 = slot1.renderOpacity
+	slot2 = 1
+	--- END OF BLOCK #7 ---
+
+	if slot1 >= slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 38-39, warpins: 2 ---
 	slot1 = false
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #10 50-50, warpins: 1 ---
+	--- BLOCK #9 40-40, warpins: 1 ---
 	slot1 = true
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #11 51-51, warpins: 5 ---
+	--- BLOCK #10 41-41, warpins: 5 ---
 	return slot1
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 52-57, warpins: 2 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	--- END OF BLOCK #12 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #13 58-64, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.view
-	--- END OF BLOCK #13 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #14 65-72, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.view
-	slot0 = slot0.fuseKey
-	--- END OF BLOCK #14 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #15 73-82, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.view
-	slot0 = slot0.fuseKey
-	slot0 = slot0.renderOpacity
-	slot1 = 1
-	--- END OF BLOCK #15 ---
-
-	if slot0 < slot1 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #16 83-90, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.view
-	slot0 = slot0.fuseKeyText
-	--- END OF BLOCK #16 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #17 91-100, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.view
-	slot0 = slot0.fuseKeyText
-	slot0 = slot0.renderOpacity
-	slot1 = 1
-	--- END OF BLOCK #17 ---
-
-	if slot0 >= slot1 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 101-102, warpins: 2 ---
-	slot0 = false
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #19 103-103, warpins: 1 ---
-	slot0 = true
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 104-104, warpins: 6 ---
-	return slot0
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideBossName"
+slot63[slot84] = slot85
+slot84 = "hideBossName"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -27972,42 +41382,45 @@ slot48 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 10-19, warpins: 1 ---
-	slot2 = slot1.nameBossWidget
-	slot4 = slot2
-	slot2 = slot2.SetActiveQuickly
-	slot5 = not slot0
-
-	slot2(slot4, slot5)
-
-	slot2 = slot1.line1Image
-	slot4 = slot2
-	slot2 = slot2.SetActiveQuickly
-	slot5 = not slot0
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot2 = slot1.setBossNameVisible
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 20-20, warpins: 2 ---
-	return
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.setBossNameVisible
+	slot5 = not slot0
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkBossName"
+slot63[slot84] = slot85
+slot84 = "checkBossName"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -28021,95 +41434,46 @@ slot48 = function()
 	slot0 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #3
 	end
 
 
 	--- BLOCK #1 10-12, warpins: 1 ---
-	slot1 = slot0.nameBossWidget
+	slot1 = slot0.isBossNameHidden
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #3
 	end
 
 
 	--- BLOCK #2 13-15, warpins: 1 ---
-	slot1 = slot0.line1Image
+	slot3 = slot0
+	slot1 = slot0.isBossNameHidden
+
+	return slot1(slot3)
+
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-20, warpins: 1 ---
-	slot1 = slot0.nameBossWidget
-	slot1 = slot1.renderOpacity
-	slot2 = 1
+	--- BLOCK #3 16-17, warpins: 3 ---
+	slot1 = false
+
+	return slot1
 	--- END OF BLOCK #3 ---
-
-	if slot1 < slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 21-25, warpins: 1 ---
-	slot1 = slot0.line1Image
-	slot1 = slot1.renderOpacity
-	slot2 = 1
-	--- END OF BLOCK #4 ---
-
-	if slot1 >= slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 26-27, warpins: 2 ---
-	slot1 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 28-28, warpins: 1 ---
-	slot1 = true
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 29-29, warpins: 2 ---
-	return slot1
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 30-31, warpins: 4 ---
-	slot1 = false
-
-	return slot1
-	--- END OF BLOCK #8 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideTopLogo"
+slot63[slot84] = slot85
+slot84 = "hideTopLogo"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -28130,10 +41494,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkTopLogo"
+slot63[slot84] = slot85
+slot84 = "checkTopLogo"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -28175,91 +41539,73 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideAIHelper"
+slot63[slot84] = slot85
+slot84 = "hideAIHelper"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot85 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 11-16, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 17-23, warpins: 1 ---
+	--- BLOCK #1 7-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.hudV2
 	slot1 = slot1.LU
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 24-29, warpins: 1 ---
+	--- BLOCK #2 14-19, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.hudV2
 	slot1 = slot1.LU
 	slot1 = slot1.aiHelperLit
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #4 30-31, warpins: 3 ---
+	--- BLOCK #4 22-24, warpins: 1 ---
+	slot2 = slot1.uWidget
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #5 32-34, warpins: 1 ---
-	slot2 = slot1.uWidget
-	--- END OF BLOCK #5 ---
-
-	slot2 = if slot2 then
 	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 35-40, warpins: 1 ---
+	--- BLOCK #5 25-29, warpins: 1 ---
 	slot2 = slot1.uWidget
 	slot4 = slot2
 	slot2 = slot2.SetActiveQuickly
@@ -28267,368 +41613,177 @@ slot48 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #7 41-46, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	--- END OF BLOCK #7 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #11
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #8 47-53, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.aiHelper
-	--- END OF BLOCK #8 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 54-61, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.aiHelper
-	slot1 = slot1.uWidget
-	--- END OF BLOCK #9 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 62-71, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hud
-	slot1 = slot1.aiHelper
-	slot1 = slot1.uWidget
-	slot3 = slot1
-	slot1 = slot1.SetActiveQuickly
-	slot4 = not slot0
-
-	slot1(slot3, slot4)
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 72-72, warpins: 7 ---
+	--- BLOCK #6 30-30, warpins: 3 ---
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkAIHelper"
+slot63[slot84] = slot85
+slot84 = "checkAIHelper"
 
-slot48 = function()
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot85 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
-	slot0 = slot0.prefsCacheUtils
-	slot2 = slot0
-	slot0 = slot0.getBool
-	slot3 = "HudV2Enable"
-	slot4 = false
-	slot0 = slot0(slot2, slot3, slot4)
+	slot0 = slot0.ui
+	slot0 = slot0.hudV2
 	--- END OF BLOCK #0 ---
 
 	slot0 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 11-16, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 17-23, warpins: 1 ---
+	--- BLOCK #1 7-13, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.ui
 	slot0 = slot0.hudV2
 	slot0 = slot0.LU
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot0 = if slot0 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 24-29, warpins: 1 ---
+	--- BLOCK #2 14-19, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
 	slot0 = slot0.ui
 	slot0 = slot0.hudV2
 	slot0 = slot0.LU
 	slot0 = slot0.aiHelperLit
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 30-31, warpins: 3 ---
-	--- END OF BLOCK #4 ---
-
 	slot1 = if slot0 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #5 32-34, warpins: 1 ---
-	slot1 = slot0.uWidget
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #6 35-39, warpins: 1 ---
-	slot1 = slot0.uWidget
-	slot1 = slot1.renderOpacity
-	slot2 = 1
-	--- END OF BLOCK #6 ---
-
-	if slot1 >= slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 40-41, warpins: 1 ---
-	slot1 = false
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 42-42, warpins: 1 ---
-	slot1 = true
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 43-43, warpins: 4 ---
-	return slot1
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 44-49, warpins: 2 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	--- END OF BLOCK #10 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #11 50-56, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.aiHelper
-	--- END OF BLOCK #11 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #12 57-64, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.aiHelper
-	slot0 = slot0.uWidget
-	--- END OF BLOCK #12 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #13 65-74, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.global
-	slot0 = slot0.ui
-	slot0 = slot0.hud
-	slot0 = slot0.aiHelper
-	slot0 = slot0.uWidget
-	slot0 = slot0.renderOpacity
-	slot1 = 1
-	--- END OF BLOCK #13 ---
-
-	if slot0 >= slot1 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 75-76, warpins: 1 ---
-	slot0 = false
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
-
-
-	--- BLOCK #15 77-77, warpins: 1 ---
-	slot0 = true
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 78-78, warpins: 5 ---
-	return slot0
-	--- END OF BLOCK #16 ---
-
-
-
-end
-
-slot43[slot47] = slot48
-slot47 = "hideMiniMapPlenty"
-
-slot48 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.map
-	slot3 = slot1
-	slot1 = slot1.GetMiniMapUI
-	slot1 = slot1(slot3)
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.prefsCacheUtils
-	slot4 = slot2
-	slot2 = slot2.getBool
-	slot5 = "HudV2Enable"
-	slot6 = false
-	slot2 = slot2(slot4, slot5, slot6)
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 17-22, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot1 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 23-29, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot2 = slot2.LU
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 30-35, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot2 = slot2.LU
-	slot1 = slot2.minimapV2
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 36-37, warpins: 4 ---
+	--- BLOCK #4 22-24, warpins: 1 ---
+	slot1 = slot0.uWidget
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 38-47, warpins: 1 ---
+	--- BLOCK #5 25-29, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot1 = slot1.renderOpacity
+	slot2 = 1
+	--- END OF BLOCK #5 ---
+
+	if slot1 >= slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-31, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 32-32, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-33, warpins: 4 ---
+	return slot1
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "hideMiniMapPlenty"
+
+slot85 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 7-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
+	slot1 = slot1.LU
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-19, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
+	slot1 = slot1.LU
+	slot1 = slot1.minimapV2
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-31, warpins: 1 ---
 	slot1.hideLeylineTree = slot0
 	slot4 = slot1
 	slot2 = slot1.destroyAllInstances
@@ -28645,118 +41800,94 @@ slot48 = function(slot0)
 
 	slot2(slot4)
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 48-48, warpins: 2 ---
-	return
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot43[slot47] = slot48
-slot47 = "checkMiniMapPlenty"
-
-slot48 = function()
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.game
-	slot0 = slot0.map
-	slot2 = slot0
-	slot0 = slot0.GetMiniMapUI
-	slot0 = slot0(slot2)
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
-	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 17-22, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	--- END OF BLOCK #1 ---
-
-	slot0 = if slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 23-29, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	slot1 = slot1.LU
-	--- END OF BLOCK #2 ---
-
-	slot0 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 30-35, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	slot1 = slot1.LU
-	slot0 = slot1.minimapV2
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 36-37, warpins: 4 ---
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot0 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 38-38, warpins: 1 ---
-	slot1 = slot0.hideLeylineTree
-
+	--- BLOCK #5 32-32, warpins: 2 ---
+	return
 	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 39-39, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setResolution"
+slot63[slot84] = slot85
+slot84 = "checkMiniMapPlenty"
 
-slot48 = function(slot0)
+slot85 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.hudV2
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 7-13, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.hudV2
+	slot0 = slot0.LU
+	--- END OF BLOCK #1 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-19, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.hudV2
+	slot0 = slot0.LU
+	slot0 = slot0.minimapV2
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-21, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-22, warpins: 1 ---
+	slot1 = slot0.hideLeylineTree
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 23-23, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "setResolution"
+
+slot85 = function(slot0)
 	--- BLOCK #0 1-38, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -28804,10 +41935,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "forceAvatarLOD"
+slot63[slot84] = slot85
+slot84 = "forceAvatarLOD"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -28874,10 +42005,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "enableNogoParmon"
+slot63[slot84] = slot85
+slot84 = "enableNogoParmon"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = appFacade
 	slot1 = slot1.entityManager
@@ -28890,10 +42021,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "isNogoParmonEnabled"
+slot63[slot84] = slot85
+slot84 = "isNogoParmonEnabled"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = appFacade
 	slot0 = slot0.entityManager
@@ -28906,10 +42037,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "printVideoResFullPath"
+slot63[slot84] = slot85
+slot84 = "printVideoResFullPath"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -28942,10 +42073,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openRpcSizeDebug"
+slot63[slot84] = slot85
+slot84 = "openRpcSizeDebug"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.world
@@ -28964,10 +42095,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkRpcSizeDebug"
+slot63[slot84] = slot85
+slot84 = "checkRpcSizeDebug"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.world
@@ -29006,10 +42137,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setWeatherProfile"
+slot63[slot84] = slot85
+slot84 = "setWeatherProfile"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot2 = slot0.tIndex
@@ -29029,10 +42160,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getWeatherProfileList"
+slot63[slot84] = slot85
+slot84 = "getWeatherProfileList"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot0 = appFacade
 	slot0 = slot0.pipelineManager
@@ -29087,10 +42218,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getWeatherProfileSelected"
+slot63[slot84] = slot85
+slot84 = "getWeatherProfileSelected"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = 0
 
@@ -29101,10 +42232,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getGrassLoadDistance"
+slot63[slot84] = slot85
+slot84 = "getGrassLoadDistance"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pgUtils
 	slot1 = slot1.GetVegetationStorageLodDistance
@@ -29146,10 +42277,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setGrassLoadDistance"
+slot63[slot84] = slot85
+slot84 = "setGrassLoadDistance"
 
-slot48 = function(slot0, slot1)
+slot85 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pgUtils
 	slot2 = slot2.SetVegetationStorageLodDistance
@@ -29165,10 +42296,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getLodBias"
+slot63[slot84] = slot85
+slot84 = "getLodBias"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pgUtils
 	slot0 = slot0.GetProjectSettingsLodBias
@@ -29209,10 +42340,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setLodBias"
+slot63[slot84] = slot85
+slot84 = "setLodBias"
 
-slot48 = function(slot0, slot1)
+slot85 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = pgUtils
 	slot2 = slot2.SetProjectSettingsLodBias
@@ -29227,10 +42358,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "disablePlayerFirstInit"
+slot63[slot84] = slot85
+slot84 = "disablePlayerFirstInit"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -29251,10 +42382,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "checkDisablePlayerFirstInit"
+slot63[slot84] = slot85
+slot84 = "checkDisablePlayerFirstInit"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -29273,10 +42404,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "changePlayerAppearance"
+slot63[slot84] = slot85
+slot84 = "changePlayerAppearance"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -29359,10 +42490,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "parseHudAreaTip"
+slot63[slot84] = slot85
+slot84 = "parseHudAreaTip"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -29539,10 +42670,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "hideHudAreaTip"
+slot63[slot84] = slot85
+slot84 = "hideHudAreaTip"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -29560,10 +42691,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "addCommonSystemNotice"
+slot63[slot84] = slot85
+slot84 = "addCommonSystemNotice"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-39, warpins: 1 ---
 	slot1 = slot0[0]
 	slot3 = slot1
@@ -29612,10 +42743,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "trySkipNew"
+slot63[slot84] = slot85
+slot84 = "trySkipNew"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -29636,10 +42767,10 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "openAnimationRecord"
+slot63[slot84] = slot85
+slot84 = "openAnimationRecord"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -29657,10 +42788,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getEnableDebugTrySkipNew"
+slot63[slot84] = slot85
+slot84 = "getEnableDebugTrySkipNew"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -29679,10 +42810,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "cmdSkipNew"
+slot63[slot84] = slot85
+slot84 = "cmdSkipNew"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0.getCmdListFileName
@@ -29766,10 +42897,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getLogLevelList"
+slot63[slot84] = slot85
+slot84 = "getLogLevelList"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
@@ -29801,10 +42932,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setLogLevel"
+slot63[slot84] = slot85
+slot84 = "setLogLevel"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.setLevel
@@ -29829,11 +42960,17 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "enableLog"
+slot63[slot84] = slot85
+slot84 = "enableLog"
 
-slot48 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot85 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = LoggerManager
+	slot1 = slot1.setEnable
+	slot3 = slot0
+
+	slot1(slot3)
+
 	slot1 = CS
 	slot1 = slot1.FunPlus
 	slot1 = slot1.WorldX
@@ -29851,17 +42988,77 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getLogEnable"
+slot63[slot84] = slot85
+slot84 = "getLogEnable"
 
-slot48 = function()
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot85 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = LoggerConst
+	slot0 = slot0.ENABLE
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
 	slot0 = slot0.WorldX
 	slot0 = slot0.Utils
 	slot0 = slot0.LuaUtils
 	slot0 = slot0.GetLogEnable
+	slot0 = slot0()
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "enableConsoleLogSave"
+
+slot85 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = CS
+	slot1 = slot1.FunPlus
+	slot1 = slot1.WorldX
+	slot1 = slot1.Utils
+	slot1 = slot1.LuaUtils
+	slot1 = slot1.EnableSaveLog
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "getConsoleLogSaveEnable"
+
+slot85 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.LuaUtils
+	slot0 = slot0.GetSaveLogEnable
 
 	return slot0()
 	--- END OF BLOCK #0 ---
@@ -29870,10 +43067,77 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getGameTimeScaleParam"
+slot63[slot84] = slot85
+slot84 = "isMobilePlatformOrEditor"
 
-slot48 = function()
+slot85 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.UnityEngine
+	slot0 = slot0.Application
+	slot0 = slot0.isEditor
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot0 = true
+
+	return slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-16, warpins: 2 ---
+	slot0 = ClientUtils
+	slot0 = slot0.getAdaptionPlatform
+	slot0 = slot0()
+	slot1 = UIConst
+	slot1 = slot1.PLATFORM
+	slot1 = slot1.Mobile
+	--- END OF BLOCK #2 ---
+
+	if slot0 ~= slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 19-19, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-20, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "getGameTimeScaleParam"
+
+slot85 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.space
@@ -29888,10 +43152,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "modifyGameTimeScaleParam"
+slot63[slot84] = slot85
+slot84 = "modifyGameTimeScaleParam"
 
-slot48 = function(slot0, slot1)
+slot85 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.space
@@ -29912,10 +43176,10 @@ slot48 = function(slot0, slot1)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "setGameTimeScaleParam"
+slot63[slot84] = slot85
+slot84 = "setGameTimeScaleParam"
 
-slot48 = function(slot0)
+slot85 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = tonumber
 	slot3 = slot0[0]
@@ -29955,10 +43219,74 @@ slot48 = function(slot0)
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onAbilityDataInspectChange"
+slot63[slot84] = slot85
+slot84 = "dumpGameTimeStopInfo"
 
-slot48 = function()
+slot85 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.space
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.showBubbleMessageRaw
+	slot2 = "当前没有 space，无法输出时停信息"
+
+	slot0(slot2)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-34, warpins: 2 ---
+	slot0 = pg
+	slot0 = slot0.space
+	slot2 = slot0
+	slot0 = slot0.dumpGameTimeStopInfo
+	slot0 = slot0(slot2)
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showBubbleMessageRaw
+	slot3 = string
+	slot3 = slot3.format
+	slot5 = "时停信息已输出到日志：scale=%s 判定=%s UI源=%d 类型暂停=%d"
+	slot6 = tostring
+	slot8 = slot0.gameTimeScale
+	slot6 = slot6(slot8)
+	slot7 = tostring
+	slot9 = slot0.verdictShouldStop
+	slot7 = slot7(slot9)
+	slot8 = slot0.uiSources
+	slot8 = #slot8
+	slot9 = slot0.pauseSources
+	slot9 = #slot9
+	MULTRES = slot3(slot5, slot6, slot7, slot8, slot9)
+
+	slot1(MULTRES)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot63[slot84] = slot85
+slot84 = "onAbilityDataInspectChange"
+
+slot85 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = AbilityDataInspect
 	slot0 = slot0.EnableAbilityDataInspect
@@ -29976,10 +43304,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getAbilityDataInspect"
+slot63[slot84] = slot85
+slot84 = "getAbilityDataInspect"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = AbilityDataInspect
 	slot0 = slot0.GetAbilityDataInspectEnable
@@ -29991,10 +43319,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "onAbilityAutoTestChange"
+slot63[slot84] = slot85
+slot84 = "onAbilityAutoTestChange"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0 = AbilityAutoTest
 	slot0 = slot0.Enable
@@ -30012,10 +43340,10 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "getAbilityAutoTestEnable"
+slot63[slot84] = slot85
+slot84 = "getAbilityAutoTestEnable"
 
-slot48 = function()
+slot85 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = AbilityAutoTest
 	slot0 = slot0.GetEnable
@@ -30027,15 +43355,15 @@ slot48 = function()
 
 end
 
-slot43[slot47] = slot48
-slot47 = "_autoCastTimerId"
-slot48 = nil
-slot43[slot47] = slot48
-slot47 = "_autoCastPuppetActorId"
-slot48 = nil
-slot43[slot47] = slot48
+slot63[slot84] = slot85
+slot84 = "_autoCastTimerId"
+slot85 = nil
+slot63[slot84] = slot85
+slot84 = "_autoCastPuppetActorId"
+slot85 = nil
+slot63[slot84] = slot85
 
-slot47 = function(slot0, slot1)
+slot84 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = {}
 	--- END OF BLOCK #0 ---
@@ -30193,7 +43521,7 @@ slot47 = function(slot0, slot1)
 
 end
 
-slot48 = function(slot0, slot1, slot2)
+slot85 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -30299,9 +43627,9 @@ slot48 = function(slot0, slot1, slot2)
 
 end
 
-slot49 = "_startAutoCastLoop"
+slot86 = "_startAutoCastLoop"
 
-slot50 = function(slot0, slot1, slot2, slot3)
+slot87 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = {
 		910000101,
@@ -31181,10 +44509,10 @@ slot50 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot43[slot49] = slot50
-slot49 = "startClientAutoCast"
+slot63[slot86] = slot87
+slot86 = "startClientAutoCast"
 
-slot50 = function(slot0)
+slot87 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = tonumber
 	slot3 = slot0[0]
@@ -31513,10 +44841,10 @@ slot50 = function(slot0)
 
 end
 
-slot43[slot49] = slot50
-slot49 = "stopClientAutoCast"
+slot63[slot86] = slot87
+slot86 = "stopClientAutoCast"
 
-slot50 = function()
+slot87 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0._autoCastTimerId
@@ -31529,14 +44857,13 @@ slot50 = function()
 	end
 
 
-	--- BLOCK #1 5-13, warpins: 1 ---
-	slot0 = pcall
-	slot2 = TimerManager
-	slot2 = slot2.removeTimer
-	slot3 = GmToolUtils
-	slot3 = slot3._autoCastTimerId
+	--- BLOCK #1 5-12, warpins: 1 ---
+	slot0 = TimerManager
+	slot0 = slot0.removeTimer
+	slot2 = GmToolUtils
+	slot2 = slot2._autoCastTimerId
 
-	slot0(slot2, slot3)
+	slot0(slot2)
 
 	slot0 = GmToolUtils
 	slot1 = nil
@@ -31546,7 +44873,7 @@ slot50 = function()
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-17, warpins: 2 ---
+	--- BLOCK #2 13-16, warpins: 2 ---
 	slot0 = GmToolUtils
 	slot0 = slot0._autoCastPuppetActorId
 	--- END OF BLOCK #2 ---
@@ -31558,7 +44885,7 @@ slot50 = function()
 	end
 
 
-	--- BLOCK #3 18-26, warpins: 1 ---
+	--- BLOCK #3 17-25, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.me
 	slot2 = slot0
@@ -31576,7 +44903,7 @@ slot50 = function()
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
+	--- BLOCK #4 26-26, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -31584,12 +44911,2463 @@ slot50 = function()
 
 end
 
-slot43[slot49] = slot50
-slot49 = {}
-slot50 = nil
-slot51 = "playGmEffectByInput"
+slot63[slot86] = slot87
+slot86 = {}
+slot87, slot88 = nil
+slot89 = {}
 
-slot52 = function(slot0)
+slot90 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = type
+	slot4 = GmToolUtils
+	slot4 = slot4.getInputValue
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "function" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot2 = GmToolUtils
+	slot2 = slot2.getInputValue
+	slot4 = slot0
+	slot5 = slot1
+
+	return slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-15, warpins: 2 ---
+	slot2 = getGmInputText
+	slot4 = slot0
+	slot5 = slot1
+
+	return slot2(slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot91 = {}
+slot92 = {
+	level = 0,
+	name = "High"
+}
+slot91[1] = slot92
+slot92 = {
+	level = 1,
+	name = "Mid"
+}
+slot91[2] = slot92
+slot92 = {
+	level = 2,
+	name = "Low"
+}
+slot91[3] = slot92
+slot92 = {
+	level = 3,
+	name = "VeryLow"
+}
+slot91[4] = slot92
+slot92 = 5
+slot93 = 10
+slot94 = 3
+
+slot95 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot1 = slot0.currentEffectIds
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	slot1 = 0
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #3 8-12, warpins: 1 ---
+	slot1 = 0
+	slot2 = ipairs
+	slot4 = slot0.currentEffectIds
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 13-14, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 15-16, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot6 ~= 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 17-20, warpins: 1 ---
+	slot7 = pcall
+
+	slot9 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.effect
+		slot2 = slot0
+		slot0 = slot0.stopEffect
+		slot3 = 0
+		slot4 = effectId
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot7(slot9)
+
+	slot1 = slot1 + 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-21, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-23, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 24-27, warpins: 1 ---
+	slot2 = nil
+	slot0.currentEffectIds = slot2
+
+	return slot1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 28-28, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot96 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = _gmTemplateSkillEffectLodState
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = 0
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot1 = slot0.timerId
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-14, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.timerId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.timerId = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-23, warpins: 2 ---
+	slot1 = stopCurrentGmSkillEffectLods
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	_gmTemplateSkillEffectLodState = nil
+	slot2 = math
+	slot2 = slot2.max
+	slot4 = slot1
+	slot5 = 1
+
+	return slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot97 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = 0
+	slot1 = ipairs
+	slot3 = _gmSpecifiedEffectLodIds
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 8-9, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot5 ~= 0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot6 = pcall
+
+	slot8 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.effect
+		slot2 = slot0
+		slot0 = slot0.stopEffect
+		slot3 = 0
+		slot4 = effectId
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6(slot8)
+
+	slot0 = slot0 + 1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-14, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-16, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 17-20, warpins: 1 ---
+	slot1 = {}
+	_gmSpecifiedEffectLodIds = slot1
+
+	return slot0
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot98 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = tonumber
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	slot2 = slot3
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 9-11, warpins: 1 ---
+	slot3 = slot1[slot2]
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-16, warpins: 1 ---
+	slot3 = true
+	slot1[slot2] = slot3
+	slot3 = #slot0
+	slot3 = slot3 + 1
+	slot0[slot3] = slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-17, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot99 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = {}
+	slot2 = {}
+	slot3 = {}
+	slot4 = PuppetData
+	slot4 = slot4[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 8-20, warpins: 1 ---
+	slot5 = #slot3
+	slot5 = slot5 + 1
+	slot6 = "怪物"
+	slot3[slot5] = slot6
+	slot5 = addAbilityId
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot4.normalAtkAbilityId
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = pairs
+	slot7 = slot4.skillList
+	--- END OF BLOCK #1 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 21-21, warpins: 1 ---
+	slot7 = EMPTY_TABLE
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-23, warpins: 2 ---
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 24-28, warpins: 1 ---
+	slot10 = addAbilityId
+	slot12 = slot1
+	slot13 = slot2
+	slot14 = slot9
+
+	slot10(slot12, slot13, slot14)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-30, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 31-34, warpins: 2 ---
+	slot5 = PetData
+	slot5 = slot5[slot0]
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #7 35-51, warpins: 1 ---
+	slot6 = #slot3
+	slot6 = slot6 + 1
+	slot7 = "宠物"
+	slot3[slot6] = slot7
+	slot6 = Utils
+	slot6 = slot6.getPetPetPrototypeId
+	slot8 = slot0
+	slot6 = slot6(slot8)
+	slot7 = Utils
+	slot7 = slot7.getBasePetPrototypeId
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	slot8 = pairs
+	slot10 = PetSkillData
+	slot10 = slot10[slot7]
+	--- END OF BLOCK #7 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 52-52, warpins: 1 ---
+	slot10 = EMPTY_TABLE
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 53-54, warpins: 2 ---
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #10 55-66, warpins: 1 ---
+	slot13 = addAbilityId
+	slot15 = slot1
+	slot16 = slot2
+	slot17 = AbilityUtils
+	slot17 = slot17.getAbilityIdByParamId
+	slot19 = slot0
+	slot20 = slot11
+	MULTRES = slot17(slot19, slot20)
+
+	slot13(slot15, slot16, MULTRES)
+
+	slot13 = slot12.enhancedSkillId
+	--- END OF BLOCK #10 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 67-75, warpins: 1 ---
+	slot13 = addAbilityId
+	slot15 = slot1
+	slot16 = slot2
+	slot17 = AbilityUtils
+	slot17 = slot17.getAbilityIdByParamId
+	slot19 = slot0
+	slot20 = slot12.enhancedSkillId
+	MULTRES = slot17(slot19, slot20)
+
+	slot13(slot15, slot16, MULTRES)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 76-77, warpins: 3 ---
+	--- END OF BLOCK #12 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #10
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 78-88, warpins: 2 ---
+	slot6 = table
+	slot6 = slot6.sort
+	slot8 = slot1
+
+	slot6(slot8)
+
+	slot6 = slot1
+	slot7 = table
+	slot7 = slot7.concat
+	slot9 = slot3
+	slot10 = "+"
+	MULTRES = slot7(slot9, slot10)
+
+	return slot6, MULTRES
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot100 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = {}
+	slot3 = {}
+	slot4 = 0
+
+	slot5 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = visitedAbilityIds
+		slot1 = slot1[slot0]
+
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-20, warpins: 2 ---
+		slot1 = visitedAbilityIds
+		slot2 = true
+		slot1[slot0] = slot2
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.abilityMgr
+		slot3 = slot1
+		slot1 = slot1.getAbilityTemplate
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
+		slot2 = type
+		slot4 = slot1
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #2 ---
+
+		if slot2 == "table" then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 21-25, warpins: 1 ---
+		slot2 = next
+		slot4 = slot1
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #3 ---
+
+		if slot2 == nil then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 26-35, warpins: 2 ---
+		slot2 = print
+		slot4 = string
+		slot4 = slot4.format
+		slot6 = "[TemplateSkillEffectLod] Ability配置不存在: %s"
+		slot7 = tostring
+		slot9 = slot0
+		MULTRES = slot7(slot9)
+		MULTRES = slot4(slot6, MULTRES)
+
+		slot2(MULTRES)
+
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 36-42, warpins: 2 ---
+		slot2 = loadedAbilityCount
+		slot2 = slot2 + 1
+		loadedAbilityCount = slot2
+		slot2 = pairs
+		slot4 = slot1.preloadEffs
+		--- END OF BLOCK #5 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 43-43, warpins: 1 ---
+		slot4 = EMPTY_TABLE
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 44-45, warpins: 2 ---
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #7 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #8 46-49, warpins: 1 ---
+		slot7 = effectData
+		slot7 = slot7[slot6]
+		--- END OF BLOCK #8 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 50-53, warpins: 1 ---
+		slot7 = effectNameSet
+		slot8 = true
+		slot7[slot6] = slot8
+		--- END OF BLOCK #9 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #10 54-65, warpins: 1 ---
+		slot7 = print
+		slot9 = string
+		slot9 = slot9.format
+		slot11 = "[TemplateSkillEffectLod] effect_data中不存在: Ability=%s, Effect=%s"
+		slot12 = tostring
+		slot14 = slot0
+		slot12 = slot12(slot14)
+		slot13 = tostring
+		slot15 = slot6
+		MULTRES = slot13(slot15)
+		MULTRES = slot9(slot11, slot12, MULTRES)
+
+		slot7(MULTRES)
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 66-67, warpins: 3 ---
+		--- END OF BLOCK #11 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #8
+		GO OUT TO BLOCK #12
+
+
+		--- BLOCK #12 68-71, warpins: 1 ---
+		slot2 = pairs
+		slot4 = slot1.subAbilityIds
+		--- END OF BLOCK #12 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #13
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #13 72-72, warpins: 1 ---
+		slot4 = EMPTY_TABLE
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 73-74, warpins: 2 ---
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #14 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+		--- BLOCK #15 75-80, warpins: 1 ---
+		slot7 = tonumber
+		slot9 = slot6
+		slot7 = slot7(slot9)
+		slot6 = slot7
+		--- END OF BLOCK #15 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #16
+		else
+		JUMP TO BLOCK #18
+		end
+
+
+		--- BLOCK #16 81-82, warpins: 1 ---
+		--- END OF BLOCK #16 ---
+
+		if slot6 ~= 0 then
+		JUMP TO BLOCK #17
+		else
+		JUMP TO BLOCK #18
+		end
+
+
+		--- BLOCK #17 83-85, warpins: 1 ---
+		slot7 = collectAbility
+		slot9 = slot6
+
+		slot7(slot9)
+
+		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #18
+
+
+		--- BLOCK #18 86-87, warpins: 4 ---
+		--- END OF BLOCK #18 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #15
+		GO OUT TO BLOCK #19
+
+
+		--- BLOCK #19 88-88, warpins: 1 ---
+		return
+		--- END OF BLOCK #19 ---
+
+
+
+	end
+
+	slot6 = ipairs
+	slot8 = slot0
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot11 = slot5
+	slot13 = slot10
+
+	slot11(slot13)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-13, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 14-18, warpins: 1 ---
+	slot6 = {}
+	slot7 = pairs
+	slot9 = slot2
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 19-21, warpins: 1 ---
+	slot11 = #slot6
+	slot11 = slot11 + 1
+	slot6[slot11] = slot10
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-23, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot10 in slot7, slot8, slot9
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 24-31, warpins: 1 ---
+	slot7 = table
+	slot7 = slot7.sort
+	slot9 = slot6
+
+	slot7(slot9)
+
+	slot7 = slot6
+	slot8 = slot4
+
+	return slot7, slot8
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot101 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = type
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-11, warpins: 2 ---
+	slot1 = pairs
+	slot3 = slot0
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #3 12-16, warpins: 1 ---
+	slot6 = type
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #3 ---
+
+	if slot6 == "table" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 17-22, warpins: 1 ---
+	slot6 = slot5.mountType
+	slot7 = EffectConst
+	slot7 = slot7.MountType
+	slot7 = slot7.Link
+	--- END OF BLOCK #4 ---
+
+	if slot6 ~= slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-26, warpins: 1 ---
+	slot6 = slot5.effectType
+	slot7 = GM_EFFECT_TYPE_VEG_LINK
+	--- END OF BLOCK #5 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 27-28, warpins: 2 ---
+	slot6 = true
+
+	return slot6
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-30, warpins: 4 ---
+	--- END OF BLOCK #7 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #8
+
+
+	--- BLOCK #8 31-32, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot102 = nil
+
+slot103 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = TimerManager
+	slot2 = slot2.addTimer
+	slot4 = slot1
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = _gmTemplateSkillEffectLodState
+		slot1 = state
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-5, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 6-19, warpins: 2 ---
+		slot0 = state
+		slot1 = nil
+		slot0.timerId = slot1
+		slot0 = stopCurrentGmSkillEffectLods
+		slot2 = state
+
+		slot0(slot2)
+
+		slot0 = state
+		slot1 = state
+		slot1 = slot1.effectIndex
+		slot1 = slot1 + 1
+		slot0.effectIndex = slot1
+		slot0 = playNextTemplateSkillEffectLod
+
+		slot0()
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2 = slot2(slot4, slot5)
+	slot0.timerId = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot102 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = _gmTemplateSkillEffectLodState
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #2 5-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.pawn
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-12, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 13-18, warpins: 1 ---
+	slot2 = stopGmTemplateSkillEffectLod
+
+	slot2()
+
+	slot2 = print
+	slot4 = "[TemplateSkillEffectLod] 当前主控不存在，轮询已停止"
+
+	slot2(slot4)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #6 19-23, warpins: 1 ---
+	slot2 = slot0.effectIndex
+	slot3 = slot0.effectNames
+	slot3 = #slot3
+	--- END OF BLOCK #6 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 24-50, warpins: 1 ---
+	slot2 = slot0.effectNames
+	slot2 = #slot2
+	slot3 = slot0.linkSkipCount
+	_gmTemplateSkillEffectLodState = nil
+	slot4 = print
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = "[TemplateSkillEffectLod] templateId=%d 轮询完成，共检查 %d 个特效，跳过 Link %d 个"
+	slot9 = slot0.templateId
+	slot10 = slot2
+	slot11 = slot3
+	MULTRES = slot6(slot8, slot9, slot10, slot11)
+
+	slot4(MULTRES)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.tips
+	slot6 = slot4
+	slot4 = slot4.showTextTip
+	slot7 = string
+	slot7 = slot7.format
+	slot9 = "技能特效LOD轮询完成：%d个，跳过Link %d个"
+	slot10 = slot2
+	slot11 = slot3
+	MULTRES = slot7(slot9, slot10, slot11)
+
+	slot4(slot6, MULTRES)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #8 51-60, warpins: 1 ---
+	slot2 = slot0.effectNames
+	slot3 = slot0.effectIndex
+	slot2 = slot2[slot3]
+	slot3 = slot0.effectData
+	slot3 = slot3[slot2]
+	slot4 = isLinkEffect
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 61-90, warpins: 1 ---
+	slot4 = slot0.linkSkipCount
+	slot4 = slot4 + 1
+	slot0.linkSkipCount = slot4
+	slot4 = string
+	slot4 = slot4.format
+	slot6 = "[%d/%d] %s（Link特效，已跳过）"
+	slot7 = slot0.effectIndex
+	slot8 = slot0.effectNames
+	slot8 = #slot8
+	slot9 = slot2
+	slot4 = slot4(slot6, slot7, slot8, slot9)
+	slot5 = print
+	slot7 = "[TemplateSkillEffectLod] "
+	slot8 = slot4
+	slot7 = slot7 .. slot8
+
+	slot5(slot7)
+
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.tips
+	slot7 = slot5
+	slot5 = slot5.showTextTip
+	slot8 = slot4
+	slot9 = slot0.duration
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = scheduleNextTemplateSkillEffectLod
+	slot7 = slot0
+	slot8 = slot0.duration
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #10 91-129, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.getRotation
+	slot4 = slot4(slot6)
+	slot5 = Quaternion
+	slot5 = slot5.MulVec3
+	slot7 = slot4
+	slot8 = Vector3
+	slot8 = slot8.forward
+	slot5 = slot5(slot7, slot8)
+	slot6 = Quaternion
+	slot6 = slot6.MulVec3
+	slot8 = slot4
+	slot9 = Vector3
+	slot9 = slot9.right
+	slot6 = slot6(slot8, slot9)
+	slot7 = 0
+	slot5.y = slot7
+	slot7 = 0
+	slot6.y = slot7
+	slot7 = Vector3
+	slot7 = slot7.SetNormalize
+	slot9 = slot5
+
+	slot7(slot9)
+
+	slot7 = Vector3
+	slot7 = slot7.SetNormalize
+	slot9 = slot6
+
+	slot7(slot9)
+
+	slot9 = slot1
+	slot7 = slot1.getPosition
+	slot7 = slot7(slot9)
+	slot8 = GM_SKILL_EFFECT_LOD_FORWARD_DISTANCE
+	slot8 = slot5 * slot8
+	slot7 = slot7 + slot8
+	slot8 = {}
+	slot0.currentEffectIds = slot8
+	slot8 = ipairs
+	slot10 = GM_EFFECT_LOD_LEVELS
+	slot8, slot9, slot10 = slot8(slot10)
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #11 130-143, warpins: 1 ---
+	slot13 = GM_EFFECT_LOD_LEVELS
+	slot13 = #slot13
+	slot13 = slot13 + 1
+	slot13 = slot13 * 0.5
+	slot13 = slot11 - slot13
+	slot14 = GM_SKILL_EFFECT_LOD_SPACING
+	slot13 = slot13 * slot14
+	slot14 = slot6 * slot13
+	slot14 = slot7 + slot14
+	slot15 = pcall
+
+	slot17 = function()
+		--- BLOCK #0 1-20, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.effect
+		slot2 = slot0
+		slot0 = slot0.playEffectAt
+		slot3 = 0
+		slot4 = effectName
+		slot5 = effectPosition
+		slot6, slot7 = nil
+		slot8 = {}
+		slot9 = state
+		slot9 = slot9.duration
+		slot8.duration = slot9
+		slot9 = state
+		slot9 = slot9.playSpeed
+		slot8.speed = slot9
+		slot9 = lodInfo
+		slot9 = slot9.level
+		slot8.forceLodLevel = slot9
+
+		return slot0(slot2, slot3, slot4, slot5, slot6, slot7, slot8)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot15, slot16 = slot15(slot17)
+	--- END OF BLOCK #11 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 144-145, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 146-147, warpins: 1 ---
+	--- END OF BLOCK #13 ---
+
+	if slot16 ~= 0 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 148-153, warpins: 1 ---
+	slot17 = slot0.currentEffectIds
+	slot18 = slot0.currentEffectIds
+	slot18 = #slot18
+	slot18 = slot18 + 1
+	slot17[slot18] = slot16
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 154-165, warpins: 3 ---
+	slot17 = print
+	slot19 = string
+	slot19 = slot19.format
+	slot21 = "[TemplateSkillEffectLod] 播放失败: %s, LOD=%s(%d), error=%s"
+	slot22 = slot2
+	slot23 = slot12.name
+	slot24 = slot12.level
+	slot25 = tostring
+	slot27 = slot16
+	MULTRES = slot25(slot27)
+	MULTRES = slot19(slot21, slot22, slot23, slot24, MULTRES)
+
+	slot17(MULTRES)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 166-167, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 168-169, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	for slot11, slot12 in slot8, slot9, slot10
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #18
+
+
+	--- BLOCK #18 170-198, warpins: 1 ---
+	slot8 = string
+	slot8 = slot8.format
+	slot10 = "[%d/%d] %s\n左→右：High / Mid / Low / VeryLow，速率=%.2f"
+	slot11 = slot0.effectIndex
+	slot12 = slot0.effectNames
+	slot12 = #slot12
+	slot13 = slot2
+	slot14 = slot0.playSpeed
+	slot8 = slot8(slot10, slot11, slot12, slot13, slot14)
+	slot9 = print
+	slot11 = "[TemplateSkillEffectLod] "
+	slot12 = slot8
+	slot11 = slot11 .. slot12
+
+	slot9(slot11)
+
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.tips
+	slot11 = slot9
+	slot9 = slot9.showTextTip
+	slot12 = slot8
+	slot13 = slot0.duration
+
+	slot9(slot11, slot12, slot13)
+
+	slot9 = scheduleNextTemplateSkillEffectLod
+	slot11 = slot0
+	slot12 = slot0.duration
+
+	slot9(slot11, slot12)
+
+	return
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 199-199, warpins: 2 ---
+	return
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 200-200, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 201-201, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 202-202, warpins: 2 ---
+	return
+	--- END OF BLOCK #22 ---
+
+
+
+end
+
+slot104 = "playTemplateSkillEffectsByLod"
+
+slot105 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.pawn
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-17, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "当前主控不存在，无法播放技能特效"
+
+	slot1(slot3, slot4)
+
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 18-25, warpins: 3 ---
+	slot1 = tonumber
+	slot3 = getGmInputValueCompat
+	slot5 = slot0
+	slot6 = 0
+	MULTRES = slot3(slot5, slot6)
+	slot1 = slot1(MULTRES)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-27, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-36, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "请输入有效的宠物/怪物templateId"
+
+	slot2(slot4, slot5)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 37-44, warpins: 2 ---
+	slot2 = tonumber
+	slot4 = getGmInputValueCompat
+	slot6 = slot0
+	slot7 = 1
+	MULTRES = slot4(slot6, slot7)
+	slot2 = slot2(MULTRES)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 45-45, warpins: 1 ---
+	slot2 = 5
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 46-59, warpins: 2 ---
+	slot3 = math
+	slot3 = slot3.max
+	slot5 = slot2
+	slot6 = 0.1
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	slot3 = tonumber
+	slot5 = getGmInputValueCompat
+	slot7 = slot0
+	slot8 = 2
+	MULTRES = slot5(slot7, slot8)
+	slot3 = slot3(MULTRES)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 60-60, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 61-63, warpins: 2 ---
+	slot4 = 0
+	--- END OF BLOCK #10 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 64-72, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.tips
+	slot6 = slot4
+	slot4 = slot4.showTextTip
+	slot7 = "播放速率必须大于0"
+
+	slot4(slot6, slot7)
+
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 73-80, warpins: 2 ---
+	slot4 = require
+	slot6 = "Data.effect_data"
+	slot4 = slot4(slot6)
+	slot5 = collectTemplateAbilityIds
+	slot7 = slot1
+	slot5, slot6 = slot5(slot7)
+	--- END OF BLOCK #12 ---
+
+	if slot6 == "" then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 81-93, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = "templateId=%d 不是有效的宠物或怪物模板"
+	slot13 = slot1
+	MULTRES = slot10(slot12, slot13)
+
+	slot7(slot9, MULTRES)
+
+	return
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 94-96, warpins: 2 ---
+	slot7 = #slot5
+	--- END OF BLOCK #14 ---
+
+	if slot7 == 0 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 97-109, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = string
+	slot10 = slot10.format
+	slot12 = "templateId=%d 未配置技能"
+	slot13 = slot1
+	MULTRES = slot10(slot12, slot13)
+
+	slot7(slot9, MULTRES)
+
+	return
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 110-116, warpins: 2 ---
+	slot7 = collectAbilityEffectNames
+	slot9 = slot5
+	slot10 = slot4
+	slot7, slot8 = slot7(slot9, slot10)
+	slot9 = #slot7
+	--- END OF BLOCK #16 ---
+
+	if slot9 == 0 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 117-129, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.tips
+	slot11 = slot9
+	slot9 = slot9.showTextTip
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "templateId=%d 的技能未配置有效特效"
+	slot15 = slot1
+	MULTRES = slot12(slot14, slot15)
+
+	slot9(slot11, MULTRES)
+
+	return
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 130-171, warpins: 2 ---
+	slot9 = stopGmTemplateSkillEffectLod
+
+	slot9()
+
+	slot9 = stopGmSpecifiedEffectLods
+
+	slot9()
+
+	slot9 = {
+		linkSkipCount = 0,
+		effectIndex = 1
+	}
+	slot9.templateId = slot1
+	slot9.effectNames = slot7
+	slot9.effectData = slot4
+	slot9.duration = slot2
+	slot9.playSpeed = slot3
+	_gmTemplateSkillEffectLodState = slot9
+	slot9 = print
+	slot11 = string
+	slot11 = slot11.format
+	slot13 = "[TemplateSkillEffectLod] 开始轮询，templateId=%d，类型=%s，直属技能=%d，含子技能=%d，特效=%d，每组=%.2f秒，速率=%.2f"
+	slot14 = slot1
+	slot15 = slot6
+	slot16 = #slot5
+	slot17 = slot8
+	slot18 = #slot7
+	slot19 = slot2
+	slot20 = slot3
+	MULTRES = slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20)
+
+	slot9(MULTRES)
+
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.tips
+	slot11 = slot9
+	slot9 = slot9.showTextTip
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "%s%d：%d个技能特效，每组同时对比4档LOD，速率=%.2f"
+	slot15 = slot6
+	slot16 = slot1
+	slot17 = #slot7
+	slot18 = slot3
+	MULTRES = slot12(slot14, slot15, slot16, slot17, slot18)
+
+	slot9(slot11, MULTRES)
+
+	slot9 = playNextTemplateSkillEffectLod
+
+	slot9()
+
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot63[slot104] = slot105
+slot104 = "playSpecifiedEffectByLod"
+
+slot105 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.pawn
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-17, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "当前主控不存在，无法播放技能特效"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #38
+
+
+	--- BLOCK #4 18-23, warpins: 1 ---
+	slot2 = getGmInputValueCompat
+	slot4 = slot0
+	slot5 = 0
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-28, warpins: 1 ---
+	slot3 = tostring
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 29-29, warpins: 2 ---
+	slot2 = ""
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-37, warpins: 2 ---
+	slot3 = tonumber
+	slot5 = getGmInputValueCompat
+	slot7 = slot0
+	slot8 = 1
+	MULTRES = slot5(slot7, slot8)
+	slot3 = slot3(MULTRES)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 38-38, warpins: 1 ---
+	slot3 = 5
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 39-46, warpins: 2 ---
+	slot4 = tonumber
+	slot6 = getGmInputValueCompat
+	slot8 = slot0
+	slot9 = 2
+	MULTRES = slot6(slot8, slot9)
+	slot4 = slot4(MULTRES)
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 47-47, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 48-55, warpins: 2 ---
+	slot5 = tonumber
+	slot7 = getGmInputValueCompat
+	slot9 = slot0
+	slot10 = 3
+	MULTRES = slot7(slot9, slot10)
+	slot5 = slot5(MULTRES)
+	--- END OF BLOCK #11 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 56-56, warpins: 1 ---
+	slot5 = 1
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 57-64, warpins: 2 ---
+	slot6 = tonumber
+	slot8 = getGmInputValueCompat
+	slot10 = slot0
+	slot11 = 4
+	MULTRES = slot8(slot10, slot11)
+	slot6 = slot6(MULTRES)
+	--- END OF BLOCK #13 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 65-65, warpins: 1 ---
+	slot6 = 5
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 66-67, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	if slot2 == "" then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 68-76, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = "请输入特效名"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #17 77-79, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #17 ---
+
+	if slot3 < slot7 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 80-88, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = "相邻间隔距离不能小于0"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #40
+
+
+	--- BLOCK #19 89-91, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #19 ---
+
+	if slot4 <= slot7 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 92-100, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = "特效缩放倍率必须大于0"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #41
+
+
+	--- BLOCK #21 101-103, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #21 ---
+
+	if slot5 <= slot7 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 104-112, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = "播放速率必须大于0"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
+
+
+	--- BLOCK #23 113-115, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #23 ---
+
+	if slot6 <= slot7 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 116-124, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = "持续时间必须大于0"
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #43
+
+
+	--- BLOCK #25 125-130, warpins: 1 ---
+	slot7 = require
+	slot9 = "Data.effect_data"
+	slot7 = slot7(slot9)
+	slot8 = slot7[slot2]
+	--- END OF BLOCK #25 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #26 131-143, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.ui
+	slot9 = slot9.tips
+	slot11 = slot9
+	slot9 = slot9.showTextTip
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "effect_data中不存在特效：%s"
+	slot15 = slot2
+	MULTRES = slot12(slot14, slot15)
+
+	slot9(slot11, MULTRES)
+
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #44
+
+
+	--- BLOCK #27 144-152, warpins: 1 ---
+	slot9 = stopGmTemplateSkillEffectLod
+
+	slot9()
+
+	slot9 = stopGmSpecifiedEffectLods
+
+	slot9()
+
+	slot9 = isLinkEffect
+	slot11 = slot8
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #27 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 153-172, warpins: 1 ---
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = "%s（Link特效，已跳过）"
+	slot12 = slot2
+	slot9 = slot9(slot11, slot12)
+	slot10 = print
+	slot12 = "[SpecifiedEffectLod] "
+	slot13 = slot9
+	slot12 = slot12 .. slot13
+
+	slot10(slot12)
+
+	slot10 = pg
+	slot10 = slot10.global
+	slot10 = slot10.ui
+	slot10 = slot10.tips
+	slot12 = slot10
+	slot10 = slot10.showTextTip
+	slot13 = slot9
+	slot14 = slot6
+
+	slot10(slot12, slot13, slot14)
+
+	--- END OF BLOCK #28 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #45
+
+
+	--- BLOCK #29 173-209, warpins: 1 ---
+	slot11 = slot1
+	slot9 = slot1.getRotation
+	slot9 = slot9(slot11)
+	slot10 = Quaternion
+	slot10 = slot10.MulVec3
+	slot12 = slot9
+	slot13 = Vector3
+	slot13 = slot13.forward
+	slot10 = slot10(slot12, slot13)
+	slot11 = Quaternion
+	slot11 = slot11.MulVec3
+	slot13 = slot9
+	slot14 = Vector3
+	slot14 = slot14.right
+	slot11 = slot11(slot13, slot14)
+	slot12 = 0
+	slot10.y = slot12
+	slot12 = 0
+	slot11.y = slot12
+	slot12 = Vector3
+	slot12 = slot12.SetNormalize
+	slot14 = slot10
+
+	slot12(slot14)
+
+	slot12 = Vector3
+	slot12 = slot12.SetNormalize
+	slot14 = slot11
+
+	slot12(slot14)
+
+	slot14 = slot1
+	slot12 = slot1.getPosition
+	slot12 = slot12(slot14)
+	slot13 = GM_SKILL_EFFECT_LOD_FORWARD_DISTANCE
+	slot13 = slot10 * slot13
+	slot12 = slot12 + slot13
+	slot13 = ipairs
+	slot15 = GM_EFFECT_LOD_LEVELS
+	slot13, slot14, slot15 = slot13(slot15)
+	--- END OF BLOCK #29 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #30 210-222, warpins: 1 ---
+	slot18 = GM_EFFECT_LOD_LEVELS
+	slot18 = #slot18
+	slot18 = slot18 + 1
+	slot18 = slot18 * 0.5
+	slot18 = slot16 - slot18
+	slot18 = slot18 * slot3
+	slot19 = slot11 * slot18
+	slot19 = slot12 + slot19
+	slot20 = pcall
+
+	slot22 = function()
+		--- BLOCK #0 1-20, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.effect
+		slot2 = slot0
+		slot0 = slot0.playEffectAt
+		slot3 = 0
+		slot4 = effectName
+		slot5 = effectPosition
+		slot6, slot7 = nil
+		slot8 = {}
+		slot9 = duration
+		slot8.duration = slot9
+		slot9 = effectScale
+		slot8.extraScale = slot9
+		slot9 = playSpeed
+		slot8.speed = slot9
+		slot9 = lodInfo
+		slot9 = slot9.level
+		slot8.forceLodLevel = slot9
+
+		return slot0(slot2, slot3, slot4, slot5, slot6, slot7, slot8)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot20, slot21 = slot20(slot22)
+	--- END OF BLOCK #30 ---
+
+	slot20 = if slot20 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #31 223-224, warpins: 1 ---
+	--- END OF BLOCK #31 ---
+
+	slot21 = if slot21 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #32 225-226, warpins: 1 ---
+	--- END OF BLOCK #32 ---
+
+	if slot21 ~= 0 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #33 227-232, warpins: 1 ---
+	slot22 = _gmSpecifiedEffectLodIds
+	slot23 = _gmSpecifiedEffectLodIds
+	slot23 = #slot23
+	slot23 = slot23 + 1
+	slot22[slot23] = slot21
+	--- END OF BLOCK #33 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
+
+
+	--- BLOCK #34 233-244, warpins: 3 ---
+	slot22 = print
+	slot24 = string
+	slot24 = slot24.format
+	slot26 = "[SpecifiedEffectLod] 播放失败: %s, LOD=%s(%d), error=%s"
+	slot27 = slot2
+	slot28 = slot17.name
+	slot29 = slot17.level
+	slot30 = tostring
+	slot32 = slot21
+	MULTRES = slot30(slot32)
+	MULTRES = slot24(slot26, slot27, slot28, slot29, MULTRES)
+
+	slot22(MULTRES)
+
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 245-246, warpins: 2 ---
+	--- END OF BLOCK #35 ---
+
+	FLOW; TARGET BLOCK #36
+
+
+	--- BLOCK #36 247-248, warpins: 2 ---
+	--- END OF BLOCK #36 ---
+
+	for slot16, slot17 in slot13, slot14, slot15
+	LOOP BLOCK #30
+	GO OUT TO BLOCK #37
+
+
+	--- BLOCK #37 249-272, warpins: 1 ---
+	slot13 = string
+	slot13 = slot13.format
+	slot15 = "%s\n左→右：High / Mid / Low / VeryLow\n间隔=%.2fm，缩放=%.2f，速率=%.2f"
+	slot16 = slot2
+	slot17 = slot3
+	slot18 = slot4
+	slot19 = slot5
+	slot13 = slot13(slot15, slot16, slot17, slot18, slot19)
+	slot14 = print
+	slot16 = "[SpecifiedEffectLod] "
+	slot17 = slot13
+	slot16 = slot16 .. slot17
+
+	slot14(slot16)
+
+	slot14 = pg
+	slot14 = slot14.global
+	slot14 = slot14.ui
+	slot14 = slot14.tips
+	slot16 = slot14
+	slot14 = slot14.showTextTip
+	slot17 = slot13
+	slot18 = slot6
+
+	slot14(slot16, slot17, slot18)
+
+	return
+	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 273-273, warpins: 2 ---
+	return
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 274-274, warpins: 2 ---
+	return
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 275-275, warpins: 2 ---
+	return
+	--- END OF BLOCK #40 ---
+
+	FLOW; TARGET BLOCK #41
+
+
+	--- BLOCK #41 276-276, warpins: 2 ---
+	return
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 277-277, warpins: 2 ---
+	return
+	--- END OF BLOCK #42 ---
+
+	FLOW; TARGET BLOCK #43
+
+
+	--- BLOCK #43 278-278, warpins: 2 ---
+	return
+	--- END OF BLOCK #43 ---
+
+	FLOW; TARGET BLOCK #44
+
+
+	--- BLOCK #44 279-279, warpins: 2 ---
+	return
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 280-280, warpins: 2 ---
+	return
+	--- END OF BLOCK #45 ---
+
+
+
+end
+
+slot63[slot104] = slot105
+slot104 = "playGmEffectByInput"
+
+slot105 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -32052,28 +47830,31 @@ slot52 = function(slot0)
 
 end
 
-slot43[slot51] = slot52
-slot51 = "stopAllGmEffects"
+slot63[slot104] = slot105
+slot104 = "stopAllGmEffects"
 
-slot52 = function()
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot0 = _gmEffectLoopTimerId
+slot105 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = stopGmTemplateSkillEffectLod
+	slot0 = slot0()
+	slot1 = stopGmSpecifiedEffectLods
+	slot1 = slot1()
+	slot2 = _gmEffectLoopTimerId
 	--- END OF BLOCK #0 ---
 
-	slot0 = if slot0 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-9, warpins: 1 ---
-	slot0 = pcall
+	--- BLOCK #1 8-12, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.removeTimer
-	slot3 = _gmEffectLoopTimerId
+	slot4 = _gmEffectLoopTimerId
 
-	slot0(slot2, slot3)
+	slot2(slot4)
 
 	_gmEffectLoopTimerId = nil
 	--- END OF BLOCK #1 ---
@@ -32081,218 +47862,284 @@ slot52 = function()
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-13, warpins: 2 ---
-	slot0 = ipairs
-	slot2 = _gmEffectIds
-	slot0, slot1, slot2 = slot0(slot2)
+	--- BLOCK #2 13-16, warpins: 2 ---
+	slot2 = ipairs
+	slot4 = _gmEffectIds
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 14-21, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.effect
-	slot7 = slot5
-	slot5 = slot5.stopEffect
-	slot8 = 0
-	slot9 = slot4
+	--- BLOCK #3 17-24, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.effect
+	slot9 = slot7
+	slot7 = slot7.stopEffect
+	slot10 = 0
+	slot11 = slot6
 
-	slot5(slot7, slot8, slot9)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-23, warpins: 2 ---
+	--- BLOCK #4 25-26, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	for slot3, slot4 in slot0, slot1, slot2
+	for slot5, slot6 in slot2, slot3, slot4
 	LOOP BLOCK #3
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 24-39, warpins: 1 ---
-	slot0 = _gmEffectIds
-	slot0 = #slot0
-	slot1 = {}
-	_gmEffectIds = slot1
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.showTextTip
-	slot4 = "已停止 "
-	slot5 = slot0
-	slot6 = " 个GM特效"
-	slot4 = slot4 .. slot5 .. slot6
-
-	slot1(slot3, slot4)
-
-	return
-	--- END OF BLOCK #5 ---
-
-
-
-end
-
-slot43[slot51] = slot52
-slot51 = "playFishingCaptureSuccessEffect"
-
-slot52 = function(slot0)
-	--- BLOCK #0 1-26, warpins: 1 ---
-	slot1 = tonumber
-	slot3 = slot0[0]
-	slot5 = slot3
-	slot3 = slot3.GetChild
-	slot6 = "InputField"
-	slot3 = slot3(slot5, slot6)
-	slot5 = slot3
-	slot3 = slot3.GetComponent
-	slot6 = "UTMPInputField"
-	slot3 = slot3(slot5, slot6)
-	slot3 = slot3.text
-	slot1 = slot1(slot3)
-	slot2 = tonumber
-	slot4 = slot0[1]
-	slot6 = slot4
-	slot4 = slot4.GetChild
-	slot7 = "InputField"
-	slot4 = slot4(slot6, slot7)
-	slot6 = slot4
-	slot4 = slot4.GetComponent
-	slot7 = "UTMPInputField"
-	slot4 = slot4(slot6, slot7)
-	slot4 = slot4.text
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 27-28, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 29-37, warpins: 2 ---
+	--- BLOCK #5 27-44, warpins: 1 ---
+	slot2 = _gmEffectIds
+	slot2 = #slot2
+	slot2 = slot2 + slot0
+	slot2 = slot2 + slot1
+	slot3 = {}
+	_gmEffectIds = slot3
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
 	slot3 = slot3.tips
 	slot5 = slot3
 	slot3 = slot3.showTextTip
-	slot6 = "参数无效，需要 actorId 和 itemId"
+	slot6 = "已停止 "
+	slot7 = slot2
+	slot8 = " 个GM特效"
+	slot6 = slot6 .. slot7 .. slot8
 
 	slot3(slot5, slot6)
 
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot104] = slot105
+
+slot104 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-12, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 38-43, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.getEntityByActorId
-	slot5 = slot1
-	slot3 = slot3(slot5)
+end
+
+slot105 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = getGmInputText
+	slot5 = slot0
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot4 = tonumber
+	slot6 = slot3
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #0 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-10, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-11, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot106 = "debugSimulateCafePetIvUp"
+
+slot107 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.social
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.petSocialBehaviorComponent
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot2 = showCafePetIvUpSimTip
+	slot4 = "Cafe pet social component not ready"
+
+	slot2(slot4)
+
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-35, warpins: 2 ---
+	slot2 = slot1.petSocialBehaviorComponent
+	slot3 = getCafePetIvUpSimNumber
+	slot5 = slot0
+	slot6 = 0
+	slot7 = 1
+	slot3 = slot3(slot5, slot6, slot7)
+	slot4 = getCafePetIvUpSimNumber
+	slot6 = slot0
+	slot7 = 1
+	slot8 = 1
+	slot4 = slot4(slot6, slot7, slot8)
+	slot5 = getCafePetIvUpSimNumber
+	slot7 = slot0
+	slot8 = 2
+	slot9 = 0
+	slot5 = slot5(slot7, slot8, slot9)
+	slot8 = slot2
+	slot6 = slot2.debugSimulateCafePetIvUp
+	slot9 = {}
+	slot9.propIndex = slot3
+	slot9.addValue = slot4
 	--- END OF BLOCK #3 ---
 
-	slot3 = if not slot3 then
+	if slot5 ~= 1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 44-55, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.tips
-	slot6 = slot4
-	slot4 = slot4.showTextTip
-	slot7 = "未找到 actorId="
-	slot8 = slot1
-	slot9 = " 的实体"
-	slot7 = slot7 .. slot8 .. slot9
-
-	slot4(slot6, slot7)
-
+	--- BLOCK #4 36-37, warpins: 1 ---
+	slot10 = false
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 56-67, warpins: 1 ---
-	slot4 = require
-	slot6 = "GameApp.FishingCapture.FishingCaptureSuccessEffect"
-	slot4 = slot4(slot6)
-	slot5 = slot4.new
-	slot5 = slot5()
-	slot8 = slot5
-	slot6 = slot5.play
-	slot9 = slot3
-	slot10 = slot2
-
-	slot11 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.ui
-		slot0 = slot0.tips
-		slot2 = slot0
-		slot0 = slot0.showTextTip
-		slot3 = "捕捉成功演出播放完毕"
-
-		slot0(slot2, slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot6(slot8, slot9, slot10, slot11)
-
-	return
+	--- BLOCK #5 38-38, warpins: 1 ---
+	slot10 = true
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 68-68, warpins: 2 ---
-	return
+	--- BLOCK #6 39-42, warpins: 2 ---
+	slot9.openNow = slot10
+	slot6, slot7 = slot6(slot8, slot9)
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	if slot6 == true then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 69-69, warpins: 2 ---
+	--- BLOCK #7 43-46, warpins: 1 ---
+	slot8 = showCafePetIvUpSimTip
+	slot10 = "Cafe pet IV up sim ok"
+
+	slot8(slot10)
+
 	return
+
 	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 47-50, warpins: 2 ---
+	slot8 = showCafePetIvUpSimTip
+	slot10 = tostring
+	--- END OF BLOCK #8 ---
+
+	slot12 = if not slot7 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 51-51, warpins: 1 ---
+	slot12 = "Cafe pet IV up sim failed"
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 52-54, warpins: 2 ---
+	MULTRES = slot10(slot12)
+
+	slot8(MULTRES)
+
+	return
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot43[slot51] = slot52
-slot51 = "getAchievementList"
+slot63[slot106] = slot107
+slot106 = "getAchievementList"
 
-slot52 = function()
+slot107 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = {}
 	slot1 = ipairs
@@ -32526,10 +48373,414 @@ slot52 = function()
 
 end
 
-slot43[slot51] = slot52
-slot51 = "unlockAchievement"
+slot63[slot106] = slot107
+slot106 = "clearPlatformAchievement"
 
-slot52 = function(slot0, slot1)
+slot107 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = tostring
+	slot3 = getGmInputText
+	slot5 = slot0
+	slot6 = 0
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot3 = ""
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	if slot1 == "" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-20, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.tips
+	slot4 = slot2
+	slot2 = slot2.showTextTip
+	slot5 = "请输入成就 ID"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #4 21-33, warpins: 1 ---
+	slot2 = PlatformAchievementService
+	slot4 = slot2
+	slot2 = slot2.getPlatformAchievementId
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	slot3 = CS
+	slot3 = slot3.FunPlus
+	slot3 = slot3.WorldX
+	slot3 = slot3.SDK
+	slot3 = slot3.Platform
+	slot3 = slot3.PlatformBridgeLuaFacade
+	--- END OF BLOCK #4 ---
+
+	if slot2 ~= "" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 34-35, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 36-38, warpins: 1 ---
+	slot4 = slot3.ClearAchievement
+	--- END OF BLOCK #6 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 39-47, warpins: 3 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot4 = slot4.tips
+	slot6 = slot4
+	slot4 = slot4.showTextTip
+	slot7 = "清除成就接口不可用"
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 48-54, warpins: 1 ---
+	slot4 = slot3.ClearAchievement
+	slot6 = slot2
+	slot7 = 10000
+
+	slot8 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-15, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = string
+		slot6 = slot6.format
+		slot8 = "成就[%s]清除成功"
+		slot9 = platformAchievementId
+		MULTRES = slot6(slot8, slot9)
+
+		slot3(slot5, MULTRES)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #2 16-28, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = string
+		slot6 = slot6.format
+		slot8 = "成就[%s]清除失败: %s (%s)"
+		slot9 = platformAchievementId
+		slot10 = tostring
+		--- END OF BLOCK #2 ---
+
+		slot12 = if not slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 29-29, warpins: 1 ---
+		slot12 = ""
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 30-35, warpins: 2 ---
+		slot10 = slot10(slot12)
+		slot11 = tostring
+		slot13 = slot1
+		MULTRES = slot11(slot13)
+		MULTRES = slot6(slot8, slot9, slot10, MULTRES)
+
+		slot3(slot5, MULTRES)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 36-36, warpins: 2 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 55-55, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 56-56, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot63[slot106] = slot107
+slot106 = "showAchievements"
+
+slot107 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.SDK
+	slot0 = slot0.Platform
+	slot0 = slot0.PlatformBridgeLuaFacade
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot1 = slot0.ShowAchievement
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-20, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "Google 成就页面接口不可用"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 21-28, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isGoogle
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 29-39, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.tips
+	slot3 = slot1
+	slot1 = slot1.showTextTip
+	slot4 = "当前不是google渠道 ClientConfigPublishPlatform："
+	slot5 = ClientConfigPublishPlatform
+	slot4 = slot4 .. slot5
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 40-44, warpins: 1 ---
+	slot1 = slot0.ShowAchievement
+	slot3 = 0
+
+	slot4 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-2, warpins: 1 ---
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 3-11, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = "Google 成就页面已打开"
+
+		slot3(slot5, slot6)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+		--- BLOCK #2 12-23, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = string
+		slot6 = slot6.format
+		slot8 = "打开 Google 成就页面失败: %s (%s)"
+		slot9 = tostring
+		--- END OF BLOCK #2 ---
+
+		slot11 = if not slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 24-24, warpins: 1 ---
+		slot11 = ""
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 25-30, warpins: 2 ---
+		slot9 = slot9(slot11)
+		slot10 = tostring
+		slot12 = slot1
+		MULTRES = slot10(slot12)
+		MULTRES = slot6(slot8, slot9, MULTRES)
+
+		slot3(slot5, MULTRES)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 31-31, warpins: 2 ---
+		return
+		--- END OF BLOCK #5 ---
+
+
+
+	end
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 45-45, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 46-46, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot63[slot106] = slot107
+slot106 = "unlockAchievement"
+
+slot107 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = tostring
 	slot4 = slot0.value
@@ -32848,10 +49099,10 @@ slot52 = function(slot0, slot1)
 
 end
 
-slot43[slot51] = slot52
-slot51 = "unlockAllAchievements"
+slot63[slot106] = slot107
+slot106 = "unlockAllAchievements"
 
-slot52 = function()
+slot107 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = PlatformAchievementRuleConfig
 	slot0 = slot0.getRules
@@ -33158,17 +49409,17 @@ slot52 = function()
 
 end
 
-slot43[slot51] = slot52
-slot51 = CS
-slot51 = slot51.FunPlus
-slot51 = slot51.WorldX
-slot52 = "Utils"
-slot51 = slot51[slot52]
-slot52 = "GmPerfSampler"
-slot51 = slot51[slot52]
-slot52 = "perfSnapshot"
+slot63[slot106] = slot107
+slot106 = CS
+slot106 = slot106.FunPlus
+slot106 = slot106.WorldX
+slot107 = "Utils"
+slot106 = slot106[slot107]
+slot107 = "GmPerfSampler"
+slot106 = slot106[slot107]
+slot107 = "perfSnapshot"
 
-slot53 = function()
+slot108 = function()
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0 = CSGmPerfSampler
 	slot0 = slot0.GetSnapshot
@@ -33197,10 +49448,10 @@ slot53 = function()
 
 end
 
-slot43[slot52] = slot53
-slot52 = "beginXChunkProfiler"
+slot63[slot107] = slot108
+slot107 = "beginXChunkProfiler"
 
-slot53 = function()
+slot108 = function()
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -33228,10 +49479,10 @@ slot53 = function()
 
 end
 
-slot43[slot52] = slot53
-slot52 = "endXChunkProfiler"
+slot63[slot107] = slot108
+slot107 = "endXChunkProfiler"
 
-slot53 = function()
+slot108 = function()
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -33259,10 +49510,10 @@ slot53 = function()
 
 end
 
-slot43[slot52] = slot53
-slot52 = "dumpXChunkProfiler"
+slot63[slot107] = slot108
+slot107 = "dumpXChunkProfiler"
 
-slot53 = function()
+slot108 = function()
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -33291,10 +49542,10 @@ slot53 = function()
 
 end
 
-slot43[slot52] = slot53
-slot52 = "startPerfRecording"
+slot63[slot107] = slot108
+slot107 = "startPerfRecording"
 
-slot53 = function(slot0)
+slot108 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = tonumber
 	slot3 = slot0[0]
@@ -33351,10 +49602,10 @@ slot53 = function(slot0)
 
 end
 
-slot43[slot52] = slot53
-slot52 = "stopPerfRecording"
+slot63[slot107] = slot108
+slot107 = "stopPerfRecording"
 
-slot53 = function()
+slot108 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = CSGmPerfSampler
 	slot0 = slot0.StopRecording
@@ -33427,13 +49678,13 @@ slot53 = function()
 
 end
 
-slot43[slot52] = slot53
-slot52 = require
-slot54 = "Utils.SampleUtils"
-slot52 = slot52(slot54)
-slot53 = nil
+slot63[slot107] = slot108
+slot107 = require
+slot109 = "Utils.SampleUtils"
+slot107 = slot107(slot109)
+slot108 = nil
 
-slot54 = function(slot0)
+slot109 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = _batchState
 	--- END OF BLOCK #0 ---
@@ -33506,7 +49757,7 @@ slot54 = function(slot0)
 
 end
 
-slot55 = function()
+slot110 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = _batchState
 	--- END OF BLOCK #0 ---
@@ -33553,7 +49804,7 @@ slot55 = function()
 
 end
 
-slot56 = function()
+slot111 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = _batchState
 
@@ -33586,14 +49837,13 @@ slot56 = function()
 	end
 
 
-	--- BLOCK #3 9-17, warpins: 1 ---
-	slot0 = pcall
-	slot2 = TimerManager
-	slot2 = slot2.removeTimer
-	slot3 = _batchState
-	slot3 = slot3.warmupTimerId
+	--- BLOCK #3 9-16, warpins: 1 ---
+	slot0 = TimerManager
+	slot0 = slot0.removeTimer
+	slot2 = _batchState
+	slot2 = slot2.warmupTimerId
 
-	slot0(slot2, slot3)
+	slot0(slot2)
 
 	slot0 = _batchState
 	slot1 = nil
@@ -33603,7 +49853,7 @@ slot56 = function()
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-21, warpins: 2 ---
+	--- BLOCK #4 17-20, warpins: 2 ---
 	slot0 = _batchState
 	slot0 = slot0.measureTimerId
 	--- END OF BLOCK #4 ---
@@ -33615,14 +49865,13 @@ slot56 = function()
 	end
 
 
-	--- BLOCK #5 22-30, warpins: 1 ---
-	slot0 = pcall
-	slot2 = TimerManager
-	slot2 = slot2.removeTimer
-	slot3 = _batchState
-	slot3 = slot3.measureTimerId
+	--- BLOCK #5 21-28, warpins: 1 ---
+	slot0 = TimerManager
+	slot0 = slot0.removeTimer
+	slot2 = _batchState
+	slot2 = slot2.measureTimerId
 
-	slot0(slot2, slot3)
+	slot0(slot2)
 
 	slot0 = _batchState
 	slot1 = nil
@@ -33632,7 +49881,7 @@ slot56 = function()
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 31-34, warpins: 2 ---
+	--- BLOCK #6 29-32, warpins: 2 ---
 	slot0 = _batchState
 	slot0 = slot0.replayTimerId
 	--- END OF BLOCK #6 ---
@@ -33644,14 +49893,13 @@ slot56 = function()
 	end
 
 
-	--- BLOCK #7 35-43, warpins: 1 ---
-	slot0 = pcall
-	slot2 = TimerManager
-	slot2 = slot2.removeTimer
-	slot3 = _batchState
-	slot3 = slot3.replayTimerId
+	--- BLOCK #7 33-40, warpins: 1 ---
+	slot0 = TimerManager
+	slot0 = slot0.removeTimer
+	slot2 = _batchState
+	slot2 = slot2.replayTimerId
 
-	slot0(slot2, slot3)
+	slot0(slot2)
 
 	slot0 = _batchState
 	slot1 = nil
@@ -33662,7 +49910,7 @@ slot56 = function()
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 44-44, warpins: 2 ---
+	--- BLOCK #8 41-41, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -33670,7 +49918,7 @@ slot56 = function()
 
 end
 
-slot57 = function()
+slot112 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = _batchState
 	--- END OF BLOCK #0 ---
@@ -33859,7 +50107,7 @@ slot57 = function()
 
 end
 
-slot58 = function(slot0)
+slot113 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = _batchState
 	--- END OF BLOCK #0 ---
@@ -34148,7 +50396,7 @@ slot58 = function(slot0)
 
 end
 
-slot59 = function(slot0)
+slot114 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = _batchState
 	--- END OF BLOCK #0 ---
@@ -34340,9 +50588,9 @@ slot59 = function(slot0)
 
 end
 
-slot60 = nil
+slot115 = nil
 
-slot61 = function()
+slot116 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = _batchState
 	--- END OF BLOCK #0 ---
@@ -34479,14 +50727,13 @@ slot61 = function()
 	end
 
 
-	--- BLOCK #10 54-62, warpins: 1 ---
-	slot2 = pcall
-	slot4 = TimerManager
-	slot4 = slot4.removeTimer
-	slot5 = _batchState
-	slot5 = slot5.replayTimerId
+	--- BLOCK #10 54-61, warpins: 1 ---
+	slot2 = TimerManager
+	slot2 = slot2.removeTimer
+	slot4 = _batchState
+	slot4 = slot4.replayTimerId
 
-	slot2(slot4, slot5)
+	slot2(slot4)
 
 	slot2 = _batchState
 	slot3 = nil
@@ -34496,7 +50743,7 @@ slot61 = function()
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 63-68, warpins: 2 ---
+	--- BLOCK #11 62-67, warpins: 2 ---
 	slot2 = _batchStopCurrentEffect
 
 	slot2()
@@ -34512,7 +50759,7 @@ slot61 = function()
 	end
 
 
-	--- BLOCK #12 69-73, warpins: 1 ---
+	--- BLOCK #12 68-72, warpins: 1 ---
 	slot2 = _batchState
 	slot2 = slot2.uploadEveryN
 	slot3 = 0
@@ -34525,7 +50772,7 @@ slot61 = function()
 	end
 
 
-	--- BLOCK #13 74-80, warpins: 1 ---
+	--- BLOCK #13 73-79, warpins: 1 ---
 	slot2 = CSGmPerfSampler
 	slot2 = slot2.GetLastBatchRowCount
 	slot2 = slot2()
@@ -34540,14 +50787,14 @@ slot61 = function()
 	end
 
 
-	--- BLOCK #14 81-81, warpins: 1 ---
+	--- BLOCK #14 80-80, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 82-86, warpins: 2 ---
+	--- BLOCK #15 81-85, warpins: 2 ---
 	slot4 = slot2 - slot3
 	slot5 = _batchState
 	slot5 = slot5.uploadEveryN
@@ -34560,7 +50807,7 @@ slot61 = function()
 	end
 
 
-	--- BLOCK #16 87-89, warpins: 1 ---
+	--- BLOCK #16 86-88, warpins: 1 ---
 	slot4 = _batchUploadIncremental
 	slot6 = false
 
@@ -34571,7 +50818,7 @@ slot61 = function()
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 90-97, warpins: 4 ---
+	--- BLOCK #17 89-96, warpins: 4 ---
 	slot2 = _batchState
 	slot3 = _batchState
 	slot3 = slot3.idx
@@ -34588,7 +50835,7 @@ slot61 = function()
 
 end
 
-slot60 = function()
+slot115 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = _batchState
 	--- END OF BLOCK #0 ---
@@ -35353,9 +51600,9 @@ slot60 = function()
 
 end
 
-slot62 = "stopEffectBatchPerfTest"
+slot117 = "stopEffectBatchPerfTest"
 
-slot63 = function()
+slot118 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = _batchState
 	--- END OF BLOCK #0 ---
@@ -35401,10 +51648,10 @@ slot63 = function()
 
 end
 
-slot43[slot62] = slot63
-slot62 = "runEffectBatchPerfTestFromFeishu"
+slot63[slot117] = slot118
+slot117 = "runEffectBatchPerfTestFromFeishu"
 
-slot63 = function(slot0)
+slot118 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = _batchState
 	--- END OF BLOCK #0 ---
@@ -36193,12 +52440,12 @@ slot63 = function(slot0)
 	slot10 = slot10.OpenBatchSummary
 	slot10 = slot10()
 	slot11 = {
-		uwaSampleActive = false,
+		cancelled = false,
+		idx = 1,
 		uploadPartIdx = 0,
 		lastUploadedRow = 0,
-		cancelled = false,
 		uploadFailedCount = 0,
-		idx = 1
+		uwaSampleActive = false
 	}
 	slot11.list = slot9
 	slot11.interval = slot3
@@ -36394,10 +52641,10 @@ slot63 = function(slot0)
 
 end
 
-slot43[slot62] = slot63
-slot62 = "getGrabEggScore"
+slot63[slot117] = slot118
+slot117 = "getGrabEggScore"
 
-slot63 = function()
+slot118 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0._eggScoreDebug
@@ -36413,8 +52660,8 @@ slot63 = function()
 	--- BLOCK #1 5-8, warpins: 1 ---
 	slot0 = {}
 	slot1 = {
-		label = "---",
-		value = 0
+		value = 0,
+		label = "---"
 	}
 	slot0[1] = slot1
 
@@ -36474,10 +52721,10 @@ slot63 = function()
 
 end
 
-slot43[slot62] = slot63
-slot62 = "getGrabEggScoreSelected"
+slot63[slot117] = slot118
+slot117 = "getGrabEggScoreSelected"
 
-slot63 = function()
+slot118 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = 0
 
@@ -36488,10 +52735,10 @@ slot63 = function()
 
 end
 
-slot43[slot62] = slot63
-slot62 = "setGrabEggScore"
+slot63[slot117] = slot118
+slot117 = "setGrabEggScore"
 
-slot63 = function()
+slot118 = function()
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot0 = pg
 	slot0 = slot0.global
@@ -36533,10 +52780,10 @@ slot63 = function()
 
 end
 
-slot43[slot62] = slot63
-slot62 = "getEggScoreEnabled"
+slot63[slot117] = slot118
+slot117 = "getEggScoreEnabled"
 
-slot63 = function()
+slot118 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = GmToolUtils
 	slot0 = slot0._eggScoreDebug
@@ -36548,10 +52795,10 @@ slot63 = function()
 
 end
 
-slot43[slot62] = slot63
-slot62 = "toggleEggScore"
+slot63[slot117] = slot118
+slot117 = "toggleEggScore"
 
-slot63 = function(slot0)
+slot118 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = GmToolUtils
 	slot1._eggScoreDebug = slot0
@@ -36610,10 +52857,157 @@ slot63 = function(slot0)
 
 end
 
-slot43[slot62] = slot63
-slot62 = "setGUIEnabled"
+slot63[slot117] = slot118
+slot117 = "refreshWaterRecovery"
 
-slot63 = function(slot0)
+slot118 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = pairs
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.petPrepareList
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	slot2 = EMPTY_TABLE
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot0, slot1, slot2 = slot0(slot2)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #3 10-15, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getEntity
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #4 16-18, warpins: 1 ---
+	slot6 = slot5.waterConfigData
+	--- END OF BLOCK #4 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 19-22, warpins: 1 ---
+	slot6 = slot5.curAddVal
+	slot7 = slot5.defaultAddVal
+	--- END OF BLOCK #5 ---
+
+	if slot7 < slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 23-31, warpins: 1 ---
+	slot6 = slot5.defaultAddVal
+	slot5.curAddVal = slot6
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.INFO
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #6 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 32-37, warpins: 1 ---
+	slot6 = logger
+	slot8 = slot6
+	slot6 = slot6.info
+	slot9 = "改为基础恢复速率"
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 38-48, warpins: 1 ---
+	slot6 = slot5.defaultAddVal
+	slot7 = slot5.inBuffAddVal
+	slot6 = slot6 + slot7
+	slot5.curAddVal = slot6
+	slot6 = LoggerManager
+	slot6 = slot6.checkLogger
+	slot8 = LoggerConst
+	slot8 = slot8.INFO
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 49-53, warpins: 1 ---
+	slot6 = logger
+	slot8 = slot6
+	slot6 = slot6.info
+	slot9 = "改为快速恢复速率!!!"
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 54-55, warpins: 7 ---
+	--- END OF BLOCK #10 ---
+
+	for slot3, slot4 in slot0, slot1, slot2
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 56-56, warpins: 1 ---
+	return
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "setGUIEnabled"
+
+slot118 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.FunPlus
@@ -36632,10 +53026,10 @@ slot63 = function(slot0)
 
 end
 
-slot43[slot62] = slot63
-slot62 = "getGUIEnabled"
+slot63[slot117] = slot118
+slot117 = "getGUIEnabled"
 
-slot63 = function()
+slot118 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = CS
 	slot0 = slot0.FunPlus
@@ -36651,9 +53045,415 @@ slot63 = function()
 
 end
 
-slot43[slot62] = slot63
+slot63[slot117] = slot118
+slot117 = "canShowTouchPointDebug"
 
-return slot43
+slot118 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = UNITY_EDITOR
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot0 = true
+
+	return slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot0 = _G_IsDebugMode
+	--- END OF BLOCK #2 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-10, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 11-11, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-12, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "setTouchPointDebugEnabled"
+
+slot118 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-7, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 8-12, warpins: 1 ---
+	slot2 = GmToolUtils
+	slot2 = slot2.canShowTouchPointDebug
+	slot2 = slot2()
+
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 13-13, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 14-22, warpins: 3 ---
+	slot2 = CS
+	slot2 = slot2.FunPlus
+	slot2 = slot2.WorldX
+	slot2 = slot2.Utils
+	slot2 = slot2.GmToolUtils
+	slot2 = slot2.SetTouchPointDebugEnabled
+	slot4 = slot1
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "getTouchPointDebugEnabled"
+
+slot118 = function()
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.GmToolUtils
+	slot0 = slot0.GetTouchPointDebugEnabled
+
+	return slot0()
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "loadIFix"
+
+slot118 = function()
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0 = CS
+	slot0 = slot0.FunPlus
+	slot0 = slot0.WorldX
+	slot0 = slot0.Utils
+	slot0 = slot0.GmToolUtils
+	slot0 = slot0.LoadIFix
+
+	slot0()
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "canLoadIFix"
+
+slot118 = function()
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot0 = true
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "getNvidiaVoiceTest"
+
+slot118 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = ClientSwitch
+	slot0 = slot0.NvidiaVoiceTest
+
+	return slot0
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "setNvidiaVoiceTest"
+
+slot118 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = ClientSwitch
+	slot1.NvidiaVoiceTest = slot0
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+slot117 = "connectLocalASRServer"
+
+slot118 = function(slot0)
+	--- BLOCK #0 1-30, warpins: 1 ---
+	slot1 = tostring
+	slot3 = slot0[0]
+	slot5 = slot3
+	slot3 = slot3.GetChild
+	slot6 = "InputField"
+	slot3 = slot3(slot5, slot6)
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "UTMPInputField"
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot3.text
+	slot1 = slot1(slot3)
+	slot2 = tonumber
+	slot4 = slot0[1]
+	slot6 = slot4
+	slot4 = slot4.GetChild
+	slot7 = "InputField"
+	slot4 = slot4(slot6, slot7)
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "UTMPInputField"
+	slot4 = slot4(slot6, slot7)
+	slot4 = slot4.text
+	slot2 = slot2(slot4)
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 31-32, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 33-35, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #2 ---
+
+	if slot2 >= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 36-38, warpins: 1 ---
+	slot3 = 65535
+	--- END OF BLOCK #3 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 39-47, warpins: 4 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = "ASR IP 或端口无效"
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 48-57, warpins: 1 ---
+	slot3 = AsrHttpClient
+	slot5 = slot3
+	slot3 = slot3.health
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = false
+	slot9 = 5000
+
+	slot10 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot3 = LoggerManager
+		slot3 = slot3.checkLogger
+		slot5 = LoggerConst
+		slot5 = slot5.INFO
+		slot3 = slot3(slot5)
+		--- END OF BLOCK #0 ---
+
+		slot3 = if slot3 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #1 8-9, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 10-20, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = inspect
+		slot8 = slot1
+		MULTRES = slot6(slot8)
+
+		slot3(slot5, MULTRES)
+
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 21-30, warpins: 1 ---
+		slot3 = pg
+		slot3 = slot3.global
+		slot3 = slot3.ui
+		slot3 = slot3.tips
+		slot5 = slot3
+		slot3 = slot3.showTextTip
+		slot6 = tostring
+		slot8 = slot2
+		MULTRES = slot6(slot8)
+
+		slot3(slot5, MULTRES)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 31-31, warpins: 3 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 58-58, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot63[slot117] = slot118
+
+return slot63
 --- END OF BLOCK #0 ---
 
 

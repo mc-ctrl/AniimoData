@@ -4,14 +4,14 @@ slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = {}
 slot2 = {
+	CLOSE = 6,
+	REWARD = 5,
+	PLAYING = 4,
 	COUNT_DONW = 3,
 	PLAYER_READY = 2,
 	INIT = 1,
 	CREATING = 0,
-	DESTROY = 7,
-	CLOSE = 6,
-	REWARD = 5,
-	PLAYING = 4
+	DESTROY = 7
 }
 slot1.STATUS = slot2
 slot2 = {}
@@ -55,9 +55,9 @@ slot2 = {
 }
 slot1.EXIT_MODE = slot2
 slot2 = {
-	SUCCESS = 1,
+	UNKNOWN = 0,
 	FAILED = 2,
-	UNKNOWN = 0
+	SUCCESS = 1
 }
 slot1.PLAYER_RESULT = slot2
 slot2 = {}
@@ -84,14 +84,14 @@ slot3 = {
 slot2.pets = slot3
 slot1.DisplayInfoDef = slot2
 slot2 = {
-	TIMED_KILL_ALL = 2,
-	KILL_ALL = 1
+	KILL_ALL = 1,
+	TIMED_KILL_ALL = 2
 }
 slot1.DungeonTarget = slot2
 slot2 = {
-	EASY = 1,
 	NORMAL = 2,
-	HARD = 3
+	HARD = 3,
+	EASY = 1
 }
 slot1.DungeonDifficulty = slot2
 slot2 = {}
@@ -133,14 +133,14 @@ slot1.MULTIBOSS_REWARD_GAIN_EFFECT = slot2
 slot2 = -1
 slot1.ROGUE_ALL_BUFF_TYPE_ID = slot2
 slot2 = {
-	PEACE = 0,
 	PVP = 2,
-	Escape = 1
+	Escape = 1,
+	PEACE = 0
 }
 slot1.RobEggStage = slot2
 slot2 = {
-	MultiTeam = 1,
-	SingleTeam = 2
+	SingleTeam = 2,
+	MultiTeam = 1
 }
 slot1.RobEggMode = slot2
 

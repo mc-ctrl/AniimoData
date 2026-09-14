@@ -1,4 +1,4 @@
---- BLOCK #0 1-87, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,37 +30,28 @@ slot8 = require
 slot10 = "Data.item_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.RedDotConst"
+slot11 = "Utils.ClientUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.RedDotUtils"
+slot12 = "Common.NoticeDef"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.ClientUtils"
+slot13 = "Const.UIConst"
 slot11 = slot11(slot13)
-slot12 = require
-slot14 = "Common.NoticeDef"
-slot12 = slot12(slot14)
-slot13 = require
-slot15 = "Const.UIConst"
-slot13 = slot13(slot15)
-slot14 = require
-slot16 = "Const.ClientConst"
-slot14 = slot14(slot16)
-slot15 = slot4.LightClass
-slot17 = "HomePlantsManualDetailCtrl"
-slot18 = slot5
-slot15 = slot15(slot17, slot18)
-slot16 = {}
-slot17 = slot3.ON_HOME_PLANT_SINGLE_REWARD_CHANGED
-slot18 = {
+slot12 = slot4.LightClass
+slot14 = "HomePlantsManualDetailCtrl"
+slot15 = slot5
+slot12 = slot12(slot14, slot15)
+slot13 = {}
+slot14 = slot3.ON_HOME_PLANT_SINGLE_REWARD_CHANGED
+slot15 = {
 	"onSingleRewardChanged",
 	true
 }
-slot16[slot17] = slot18
-slot15.messages = slot16
+slot13[slot14] = slot15
+slot12.messages = slot13
 
-slot16 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -76,9 +67,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.onCreate = slot16
+slot12.onCreate = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -156,130 +147,50 @@ slot16 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 36-49, warpins: 2 ---
-		slot8 = string
-		slot8 = slot8.format
-		slot10 = RedDotConst
-		slot10 = slot10.RedDotPath
-		slot10 = slot10.HOMELAND_PLANT_MANUAL_NEW
+		--- BLOCK #2 36-42, warpins: 2 ---
+		slot8 = self
+		slot10 = slot8
+		slot8 = slot8._plantIsGet
 		slot11 = slot2.itemId
 		slot8 = slot8(slot10, slot11)
-		slot9 = self
-		slot11 = slot9
-		slot9 = slot9._plantIsGet
-		slot12 = slot2.itemId
-		slot9 = slot9(slot11, slot12)
 		--- END OF BLOCK #2 ---
 
-		slot9 = if slot9 then
+		slot8 = if slot8 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #6
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 50-67, warpins: 1 ---
-		slot11 = slot6
-		slot9 = slot6.TryChangePage
-		slot12 = "State"
-		slot13 = 1
+		--- BLOCK #3 43-48, warpins: 1 ---
+		slot10 = slot6
+		slot8 = slot6.TryChangePage
+		slot11 = "State"
+		slot12 = 1
 
-		slot9(slot11, slot12, slot13)
+		slot8(slot10, slot11, slot12)
 
-		slot9 = pg
-		slot9 = slot9.global
-		slot9 = slot9.prefsCacheUtils
-		slot11 = slot9
-		slot9 = slot9.getBool
-		slot12 = slot8
-		slot13 = false
-		slot14 = ClientConst
-		slot14 = slot14.CACHE_TYPE_FLAG
-		slot14 = slot14.USER
-		slot9 = slot9(slot11, slot12, slot13, slot14)
 		--- END OF BLOCK #3 ---
 
-		if slot9 == false then
-		JUMP TO BLOCK #4
-		else
-		JUMP TO BLOCK #5
-		end
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #4 68-88, warpins: 1 ---
-		slot10 = RedDotUtils
-		slot10 = slot10.setRedDot
-		slot12 = slot8
-		slot13 = slot0
-		slot14 = true
-		slot15 = RedDotConst
-		slot15 = slot15.RedDotStyle
-		slot15 = slot15.NEW
+		--- BLOCK #4 49-53, warpins: 1 ---
+		slot10 = slot6
+		slot8 = slot6.TryChangePage
+		slot11 = "State"
+		slot12 = 0
 
-		slot10(slot12, slot13, slot14, slot15)
-
-		slot10 = pg
-		slot10 = slot10.global
-		slot10 = slot10.prefsCacheUtils
-		slot12 = slot10
-		slot10 = slot10.setBool
-		slot13 = slot8
-		slot14 = true
-		slot15 = ClientConst
-		slot15 = slot15.CACHE_TYPE_FLAG
-		slot15 = slot15.USER
-
-		slot10(slot12, slot13, slot14, slot15)
+		slot8(slot10, slot11, slot12)
 
 		--- END OF BLOCK #4 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #7
+		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 89-98, warpins: 1 ---
-		slot10 = RedDotUtils
-		slot10 = slot10.setRedDot
-		slot12 = slot8
-		slot13 = slot0
-		slot14 = false
-		slot15 = RedDotConst
-		slot15 = slot15.RedDotStyle
-		slot15 = slot15.NONE
-
-		slot10(slot12, slot13, slot14, slot15)
-
-		--- END OF BLOCK #5 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-		--- BLOCK #6 99-112, warpins: 1 ---
-		slot11 = slot6
-		slot9 = slot6.TryChangePage
-		slot12 = "State"
-		slot13 = 0
-
-		slot9(slot11, slot12, slot13)
-
-		slot9 = RedDotUtils
-		slot9 = slot9.setRedDot
-		slot11 = slot8
-		slot12 = slot0
-		slot13 = false
-		slot14 = RedDotConst
-		slot14 = slot14.RedDotStyle
-		slot14 = slot14.NONE
-
-		slot9(slot11, slot12, slot13, slot14)
-
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 113-113, warpins: 3 ---
+		--- BLOCK #5 54-54, warpins: 2 ---
 		return
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -311,7 +222,7 @@ slot16 = function(slot0)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 9-47, warpins: 1 ---
+		--- BLOCK #2 9-31, warpins: 1 ---
 		slot2 = pg
 		slot2 = slot2.global
 		slot2 = slot2.ui
@@ -319,8 +230,8 @@ slot16 = function(slot0)
 		slot4 = slot2
 		slot2 = slot2.open
 		slot5 = {
-			showConfirmBtn = true,
-			num = 1
+			num = 1,
+			showConfirmBtn = true
 		}
 		slot6 = slot1.itemId
 		slot5.id = slot6
@@ -355,31 +266,13 @@ slot16 = function(slot0)
 
 		slot2(slot4, slot5)
 
-		slot2 = string
-		slot2 = slot2.format
-		slot4 = RedDotConst
-		slot4 = slot4.RedDotPath
-		slot4 = slot4.HOMELAND_PLANT_MANUAL_NEW
-		slot5 = slot1.itemId
-		slot2 = slot2(slot4, slot5)
-		slot3 = RedDotUtils
-		slot3 = slot3.setRedDot
-		slot5 = slot2
-		slot6 = slot0
-		slot7 = false
-		slot8 = RedDotConst
-		slot8 = slot8.RedDotStyle
-		slot8 = slot8.NONE
-
-		slot3(slot5, slot6, slot7, slot8)
-
 		return
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 48-48, warpins: 2 ---
+		--- BLOCK #3 32-32, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -494,9 +387,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.addListener = slot16
+slot12.addListener = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -632,9 +525,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshConsoleBarState = slot16
+slot12.refreshConsoleBarState = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = CS
 	slot1 = slot1.XGUI
@@ -681,9 +574,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onDestroy = slot16
+slot12.onDestroy = slot13
 
-slot16 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -830,7 +723,15 @@ slot16 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 86-86, warpins: 2 ---
+	--- BLOCK #7 86-92, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.autoHarvestUWidget
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = false
+
+	slot3(slot5, slot6)
+
 	return
 	--- END OF BLOCK #7 ---
 
@@ -838,9 +739,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.onOpen = slot16
+slot12.onOpen = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -849,9 +750,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onShow = slot16
+slot12.onShow = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -860,9 +761,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onHide = slot16
+slot12.onHide = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -878,7 +779,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-46, warpins: 1 ---
+	--- BLOCK #1 8-29, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClaimUButton
 	slot3 = slot1
@@ -895,42 +796,23 @@ slot16 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = string
-	slot1 = slot1.format
-	slot3 = RedDotConst
-	slot3 = slot3.RedDotPath
-	slot3 = slot3.HOMELAND_PLANT_MANUAL_REWARD_BTN
-	slot4 = slot0.plantId
-	slot1 = slot1(slot3, slot4)
-	slot2 = RedDotUtils
-	slot2 = slot2.setRedDot
-	slot4 = slot1
-	slot5 = slot0.view
-	slot5 = slot5.btnClaimUButton
-	slot6 = false
-	slot7 = RedDotConst
-	slot7 = slot7.RedDotStyle
-	slot7 = slot7.NONE
+	slot1 = LuaUIUtils
+	slot1 = slot1.setRewardListByDropId
+	slot3 = slot0.view
+	slot3 = slot3.rewardList
+	slot4 = slot0.rewardId
+	slot5 = nil
+	slot6 = true
+	slot7 = false
 
-	slot2(slot4, slot5, slot6, slot7)
-
-	slot2 = LuaUIUtils
-	slot2 = slot2.setRewardListByDropId
-	slot4 = slot0.view
-	slot4 = slot4.rewardList
-	slot5 = slot0.rewardId
-	slot6 = nil
-	slot7 = true
-	slot8 = false
-
-	slot2(slot4, slot5, slot6, slot7, slot8)
+	slot1(slot3, slot4, slot5, slot6, slot7)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 47-80, warpins: 1 ---
+	--- BLOCK #2 30-56, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClaimUButton
 	slot3 = slot1
@@ -962,13 +844,6 @@ slot16 = function(slot0)
 	slot2 = slot0.view
 	slot2 = slot2.btnClaimUButton
 	slot2.visualInteractable = slot1
-	slot2 = string
-	slot2 = slot2.format
-	slot4 = RedDotConst
-	slot4 = slot4.RedDotPath
-	slot4 = slot4.HOMELAND_PLANT_MANUAL_REWARD_BTN
-	slot5 = slot0.plantId
-	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #2 ---
 
 	if slot1 == true then
@@ -978,65 +853,41 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #3 81-100, warpins: 1 ---
-	slot3 = RedDotUtils
-	slot3 = slot3.setRedDot
-	slot5 = slot2
-	slot6 = slot0.view
-	slot6 = slot6.btnClaimUButton
-	slot7 = true
-	slot8 = RedDotConst
-	slot8 = slot8.RedDotStyle
-	slot8 = slot8.REWARD
+	--- BLOCK #3 57-66, warpins: 1 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.setRewardListByDropId
+	slot4 = slot0.view
+	slot4 = slot4.rewardList
+	slot5 = slot0.rewardId
+	slot6 = nil
+	slot7 = false
+	slot8 = true
 
-	slot3(slot5, slot6, slot7, slot8)
-
-	slot3 = LuaUIUtils
-	slot3 = slot3.setRewardListByDropId
-	slot5 = slot0.view
-	slot5 = slot5.rewardList
-	slot6 = slot0.rewardId
-	slot7 = nil
-	slot8 = false
-	slot9 = true
-
-	slot3(slot5, slot6, slot7, slot8, slot9)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 101-119, warpins: 1 ---
-	slot3 = RedDotUtils
-	slot3 = slot3.setRedDot
-	slot5 = slot2
-	slot6 = slot0.view
-	slot6 = slot6.btnClaimUButton
+	--- BLOCK #4 67-75, warpins: 1 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.setRewardListByDropId
+	slot4 = slot0.view
+	slot4 = slot4.rewardList
+	slot5 = slot0.rewardId
+	slot6 = nil
 	slot7 = false
-	slot8 = RedDotConst
-	slot8 = slot8.RedDotStyle
-	slot8 = slot8.NONE
-
-	slot3(slot5, slot6, slot7, slot8)
-
-	slot3 = LuaUIUtils
-	slot3 = slot3.setRewardListByDropId
-	slot5 = slot0.view
-	slot5 = slot5.rewardList
-	slot6 = slot0.rewardId
-	slot7 = nil
 	slot8 = false
-	slot9 = false
 
-	slot3(slot5, slot6, slot7, slot8, slot9)
+	slot2(slot4, slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 120-120, warpins: 3 ---
+	--- BLOCK #5 76-76, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -1044,9 +895,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshBtnAndRewardState = slot16
+slot12.refreshBtnAndRewardState = slot13
 
-slot16 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1135,9 +986,9 @@ slot16 = function(slot0, slot1, slot2)
 
 end
 
-slot15.setImage = slot16
+slot12.setImage = slot13
 
-slot16 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1190,9 +1041,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15._plantIsGet = slot16
+slot12._plantIsGet = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.HomePlantManual_getCurPlantsNumByFormulaId
@@ -1231,9 +1082,9 @@ slot16 = function(slot0)
 
 end
 
-slot15._isGetAllPlants = slot16
+slot12._isGetAllPlants = slot13
 
-slot16 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -1347,9 +1198,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.onClickGiftBtn = slot16
+slot12.onClickGiftBtn = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ClientUtils
 	slot1 = slot1.getItemCountById
@@ -1368,9 +1219,9 @@ slot16 = function(slot0)
 
 end
 
-slot15._getItemCount = slot16
+slot12._getItemCount = slot13
 
-slot16 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshBtnAndRewardState
@@ -1384,9 +1235,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onSingleRewardChanged = slot16
+slot12.onSingleRewardChanged = slot13
 
-return slot15
+return slot12
 --- END OF BLOCK #0 ---
 
 

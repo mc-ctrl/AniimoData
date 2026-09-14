@@ -7,41 +7,41 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_FlyFollowTarget",
-	version = 9,
 	useForRoute = false,
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_FlyFollowTarget",
+	version = 9
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tActorId",
+	type = "int",
 	const = 0,
 	value = "0",
-	type = "int"
+	name = "tActorId"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "Dist",
+	type = "float",
 	const = 0,
 	value = "0",
-	type = "float"
+	name = "Dist"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "Height",
+	type = "float",
 	const = 0,
 	value = "0",
-	type = "float"
+	name = "Height"
 }
 slot4[3] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "DecoratorLoop",
-	id = "2"
+	id = "2",
+	class = "DecoratorLoop"
 }
 slot5 = {}
 slot6 = {}
@@ -64,8 +64,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "1"
+	id = "1",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

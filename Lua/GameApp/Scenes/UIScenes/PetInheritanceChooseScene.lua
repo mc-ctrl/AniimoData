@@ -1,42 +1,45 @@
---- BLOCK #0 1-64, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.UIScene.UISceneBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "PetInheritanceChooseScene"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Utils.ClientVirtualEntityUtils"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "GameApp.UIScene.UISceneBase"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "PetInheritanceChooseScene"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Const.ClientConst"
+slot6 = "Utils.ClientVirtualEntityUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.pet_first_show_data"
+slot7 = "Const.ClientConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.PlayableConst"
+slot8 = "Data.pet_first_show_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Utils.PetResearchUtils"
+slot9 = "Common.Const.PlayableConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.Utils"
+slot10 = "Guis.Utils.PetResearchUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.PetManagementDataHelper"
+slot11 = "Common.Utils.Utils"
 slot9 = slot9(slot11)
-slot10 = {
+slot10 = require
+slot12 = "Utils.PetManagementDataHelper"
+slot10 = slot10(slot12)
+slot11 = {
+	TAA = 2,
 	FSR = 1,
-	NONE = 0,
-	TAA = 2
+	NONE = 0
 }
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = nil
 	slot0.curEntity = slot2
@@ -57,9 +60,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.onStart = slot11
+slot3.onStart = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = 300
 	slot0.textureWidth = slot2
@@ -224,9 +227,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.initScene = slot11
+slot3.initScene = slot12
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.renderTexture
 
@@ -277,9 +280,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.setExRawImageProRef = slot11
+slot3.setExRawImageProRef = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearTexture
@@ -307,9 +310,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.reSetRawImageProRef = slot11
+slot3.reSetRawImageProRef = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.renderTexture
 
@@ -342,9 +345,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.setRawImageProRef = slot11
+slot3.setRawImageProRef = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.curPetId
 	--- END OF BLOCK #0 ---
@@ -423,9 +426,13 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 24-34, warpins: 2 ---
+	--- BLOCK #8 24-38, warpins: 2 ---
 	slot5.isCreateEntUsePetId = slot6
 	slot5.petId = slot1
+	slot6 = slot3.label
+	slot5.label = slot6
+	slot6 = slot3.shinyStyle
+	slot5.shinyStyle = slot6
 	slot6 = PetManagementDataHelper
 	slot6 = slot6.previewPetModel
 	slot8 = slot4
@@ -450,11 +457,9 @@ slot11 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 4-20, warpins: 2 ---
+		--- BLOCK #2 4-18, warpins: 2 ---
 		slot1 = slot0.eModel
-		slot1 = slot1.modelComponent
-		slot1 = slot1.modelView
-		slot1 = slot1.shaderView
+		slot1 = slot1.modelShaderView
 		slot3 = slot1
 		slot1 = slot1.MultiPassUseExtraConfig
 		slot4 = 0
@@ -487,14 +492,14 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 35-35, warpins: 2 ---
+	--- BLOCK #9 39-39, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 36-36, warpins: 2 ---
+	--- BLOCK #10 40-40, warpins: 2 ---
 	return
 	--- END OF BLOCK #10 ---
 
@@ -502,9 +507,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot2.previewPet = slot11
+slot3.previewPet = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curEntity
 	--- END OF BLOCK #0 ---
@@ -537,9 +542,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.playPetIdle = slot11
+slot3.playPetIdle = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curEntity
 	--- END OF BLOCK #0 ---
@@ -575,81 +580,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.setModelVisible = slot11
+slot3.setModelVisible = slot12
 
-slot11 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot0.curPetTId
-	--- END OF BLOCK #0 ---
-
-	if slot3 == slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 4-5, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 6-6, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 7-17, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.clear
-
-	slot3(slot5)
-
-	slot3 = PetManagementDataHelper
-	slot3 = slot3.previewPetModel
-	slot5 = slot1
-	slot6 = slot0.petPosTransform
-
-	slot7 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot1 = self
-		slot1.curEntity = slot0
-		slot1 = self
-		slot2 = petTId
-		slot1.curPetTId = slot2
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot3(slot5, slot6, slot7)
-
-	return
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 18-18, warpins: 2 ---
-	return
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot2.previewPetByTId = slot11
-
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curEntity
 	--- END OF BLOCK #0 ---
@@ -684,9 +617,9 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #3 10-19, warpins: 2 ---
-	slot1 = slot0.curEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.curEntity
 
 	slot1(slot3)
 
@@ -710,9 +643,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.clear = slot11
+slot3.clear = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.renderTexture
 	--- END OF BLOCK #0 ---
@@ -750,9 +683,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.clearTexture = slot11
+slot3.clearTexture = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearTexture
@@ -771,9 +704,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onDestroy = slot11
+slot3.onDestroy = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curEntity
 	--- END OF BLOCK #0 ---
@@ -809,9 +742,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.entActive = slot11
+slot3.entActive = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -844,9 +777,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.snapShotDraw = slot11
+slot3.snapShotDraw = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.levelPetManagementEnvV2Transform
 	slot1 = slot1.gameObject
@@ -871,9 +804,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.setLocalEnv = slot11
+slot3.setLocalEnv = slot12
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

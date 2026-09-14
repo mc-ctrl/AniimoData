@@ -55,8 +55,8 @@ slot19 = "TotemWorshipCtrl"
 slot20 = slot5
 slot17 = slot17(slot19, slot20)
 slot18 = {
-	Item = 0,
-	Ability = 1
+	Ability = 1,
+	Item = 0
 }
 slot19 = {}
 slot20 = slot3.ADD_TOTEM_EXP
@@ -355,7 +355,7 @@ slot19 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.openTime = slot2
 	slot2 = slot1[1]
 	--- END OF BLOCK #0 ---
@@ -488,7 +488,7 @@ slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.openTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot2 = slot2 - 1
 
 	--- END OF BLOCK #0 ---
@@ -582,7 +582,7 @@ slot19 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.openTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot2 = slot2 - 1
 
 	--- END OF BLOCK #0 ---
@@ -793,8 +793,8 @@ slot19 = function(slot0)
 
 	--- BLOCK #1 8-8, warpins: 1 ---
 	slot1 = {
-		level = 0,
-		exp = 0
+		exp = 0,
+		level = 0
 	}
 
 	--- END OF BLOCK #1 ---
@@ -1439,7 +1439,7 @@ slot19 = function(slot0, slot1)
 	--- BLOCK #4 12-17, warpins: 1 ---
 	slot9 = slot0.openTime
 	slot10 = Time
-	slot10 = slot10.secondCache
+	slot10 = slot10.realSecondCache
 	slot10 = slot10 - 1
 	--- END OF BLOCK #4 ---
 

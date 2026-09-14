@@ -10,12 +10,12 @@ slot4 = "FriendSetupModel"
 slot5 = slot1
 slot2 = slot2(slot4, slot5)
 slot3 = {
-	CreateGroup = 0,
 	ChangeGroup = 5,
 	RemoveChatGroupMember = 4,
 	AddChatGroupMember = 3,
 	CreateChatGroup = 2,
-	EditGroup = 1
+	EditGroup = 1,
+	CreateGroup = 0
 }
 slot2.FriendSetupType = slot3
 

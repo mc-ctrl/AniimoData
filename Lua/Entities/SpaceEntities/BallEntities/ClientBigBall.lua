@@ -1,62 +1,65 @@
---- BLOCK #0 1-124, warpins: 1 ---
+--- BLOCK #0 1-131, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Data.sys_config_data"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Common.Time"
+slot4 = "Data.sys_config_data"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Log.LoggerManager"
+slot5 = "Core.Common.Time"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Log.LoggerConst"
+slot6 = "Core.Log.LoggerManager"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.lume"
+slot7 = "Core.Log.LoggerConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Entities.SpaceEntities.BallEntities.ClientMainAuthorityBall"
+slot8 = "Core.Common.lume"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.CatchProbContext"
+slot9 = "Entities.SpaceEntities.BallEntities.ClientMainAuthorityBall"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientCaptureUtils"
+slot10 = "Common.Utils.CatchProbContext"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.EventConst"
+slot11 = "Utils.ClientCaptureUtils"
 slot9 = slot9(slot11)
-slot10 = CS
-slot10 = slot10.FunPlus
-slot10 = slot10.WorldX
-slot10 = slot10.GameApp
-slot10 = slot10.Capture
-slot10 = slot10.BallDriver
-slot11 = require
-slot13 = "Core.Timer.TimerManager"
-slot11 = slot11(slot13)
+slot10 = require
+slot12 = "Const.EventConst"
+slot10 = slot10(slot12)
+slot11 = CS
+slot11 = slot11.FunPlus
+slot11 = slot11.WorldX
+slot11 = slot11.GameApp
+slot11 = slot11.Capture
+slot11 = slot11.BallDriver
 slot12 = require
-slot14 = "Core.Common.CallbackHandlerNoGC"
+slot14 = "Core.Timer.TimerManager"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Const.CaptureConst"
+slot15 = "Core.Common.CallbackHandlerNoGC"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Const.ClientConst"
+slot16 = "Common.Const.CaptureConst"
 slot14 = slot14(slot16)
-slot15 = Vector3
-slot16 = Quaternion
-slot17 = 25
-slot18 = 0.15
-slot19 = slot0.Class
-slot21 = "ClientBigBall"
-slot22 = slot6
-slot19 = slot19(slot21, slot22)
+slot15 = require
+slot17 = "Const.ClientConst"
+slot15 = slot15(slot17)
+slot16 = Vector3
+slot17 = Quaternion
+slot18 = 25
+slot19 = 0.15
+slot20 = slot1.Class
+slot22 = "ClientBigBall"
+slot23 = slot7
+slot20 = slot20(slot22, slot23)
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot2 = ClientBigBall
 	slot2 = slot2.super
@@ -94,10 +97,15 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.ctor = slot20
+slot20.ctor = slot21
 
-slot20 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-21, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._clearRuntimeCallbacks
+
+	slot1(slot3)
+
 	slot3 = slot0
 	slot1 = slot0.setGuaranteeActive
 	slot4 = false
@@ -130,15 +138,14 @@ slot20 = function(slot0)
 
 end
 
-slot19.clientDestroy = slot20
+slot20.clientDestroy = slot21
 
-slot20 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.setGuaranteeActive
-	slot4 = false
+	slot1 = slot0._clearRuntimeCallbacks
 
-	slot1(slot3, slot4)
+	slot1(slot3)
 
 	slot3 = slot0
 	slot1 = slot0._clearAirTimeout
@@ -166,9 +173,33 @@ slot20 = function(slot0)
 
 end
 
-slot19.destroy = slot20
+slot20.destroy = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setGuaranteeActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = ClientBigBall
+	slot1 = slot1.super
+	slot1 = slot1.preDestroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.preDestroy = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = true
 
@@ -179,9 +210,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.isBigBall = slot20
+slot20.isBigBall = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.fired
 	--- END OF BLOCK #0 ---
@@ -235,9 +266,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.isValid = slot20
+slot20.isValid = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.fire
@@ -252,9 +283,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.quickFire = slot20
+slot20.quickFire = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.fired
 
@@ -353,9 +384,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.fire = slot20
+slot20.fire = slot21
 
-slot20 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.fired
 	--- END OF BLOCK #0 ---
@@ -400,9 +431,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.setInScene = slot20
+slot20.setInScene = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = ClientBigBall
 	slot1 = slot1.super
@@ -479,9 +510,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.onBallCreated = slot20
+slot20.onBallCreated = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isValid
@@ -524,9 +555,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.onLuaHitCollider = slot20
+slot20.onLuaHitCollider = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isValid
@@ -569,9 +600,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.onLuaHitWater = slot20
+slot20.onLuaHitWater = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isValid
@@ -1178,9 +1209,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.onLuaHitEntity = slot20
+slot20.onLuaHitEntity = slot21
 
-slot20 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = ClientBigBall
 	slot3 = slot3.super
@@ -1301,9 +1332,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.onCaptureAnimStart = slot20
+slot20.onCaptureAnimStart = slot21
 
-slot20 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot3 = ClientBigBall
 	slot3 = slot3.super
@@ -1376,7 +1407,7 @@ slot20 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 42-61, warpins: 1 ---
+	--- BLOCK #4 42-65, warpins: 1 ---
 	slot0.entities = slot5
 	slot0.entityActorIds = slot6
 	slot0.results = slot4
@@ -1390,6 +1421,10 @@ slot20 = function(slot0, slot1, slot2)
 	slot12 = CaptureConst
 	slot12 = slot12.CAPTURE_BIG_BALL_RESULT_TIMELINE
 	slot11[3] = slot12
+	slot12 = slot0.luckyResult
+	slot11[4] = slot12
+	slot12 = slot0.rainbowEnergyLevel
+	slot11[5] = slot12
 
 	slot7(slot9, slot10, slot11)
 
@@ -1403,7 +1438,7 @@ slot20 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #5 62-63, warpins: 1 ---
+	--- BLOCK #5 66-67, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
 	slot11 = if slot11 then
@@ -1413,7 +1448,7 @@ slot20 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 64-66, warpins: 1 ---
+	--- BLOCK #6 68-70, warpins: 1 ---
 	slot12 = true
 	slot0.captureSuccess = slot12
 	--- END OF BLOCK #6 ---
@@ -1421,7 +1456,7 @@ slot20 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 67-68, warpins: 2 ---
+	--- BLOCK #7 71-72, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -1429,7 +1464,7 @@ slot20 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 69-84, warpins: 2 ---
+	--- BLOCK #8 73-88, warpins: 2 ---
 	slot9 = slot0
 	slot7 = slot0.setGuaranteeActive
 	slot10 = true
@@ -1458,9 +1493,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.onCaptureAnimEnd = slot20
+slot20.onCaptureAnimEnd = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isValid
@@ -1560,9 +1595,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.doCaptureStart = slot20
+slot20.doCaptureStart = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.absorbedEIds
 	slot1 = #slot1
@@ -1600,9 +1635,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.doCaptureEnd = slot20
+slot20.doCaptureEnd = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._performFinished
 
@@ -1649,54 +1684,12 @@ slot20 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-35, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.eventEmitter
-	slot3 = slot1
-	slot1 = slot1.removeEventListener
-	slot4 = EventConst
-	slot4 = slot4.BALL_DRIVE_MOVE
-	slot5 = slot0.onDriveCallBack
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.eventEmitter
-	slot3 = slot1
-	slot1 = slot1.removeEventListener
-	slot4 = EventConst
-	slot4 = slot4.BALL_DRIVE_END_IMMEDIATE
-	slot5 = slot0.endDriveImmediate
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = slot0.timerId
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 36-41, warpins: 1 ---
-	slot1 = TimerManager
-	slot1 = slot1.delFrameCb
-	slot3 = slot0.timerId
+	--- BLOCK #4 15-32, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0._clearRuntimeCallbacks
 
 	slot1(slot3)
 
-	slot1 = nil
-	slot0.timerId = slot1
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 42-56, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0._clearAirTimeout
 
@@ -1718,15 +1711,112 @@ slot20 = function(slot0)
 	slot1(slot3)
 
 	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.onAllPerformFinish = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.onDriveCallBack
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.removeEventListener
+	slot4 = EventConst
+	slot4 = slot4.BALL_DRIVE_MOVE
+	slot5 = slot0.onDriveCallBack
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = nil
+	slot0.onDriveCallBack = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 15-17, warpins: 2 ---
+	slot1 = slot0.endDriveImmediate
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-28, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.eventEmitter
+	slot3 = slot1
+	slot1 = slot1.removeEventListener
+	slot4 = EventConst
+	slot4 = slot4.BALL_DRIVE_END_IMMEDIATE
+	slot5 = slot0.endDriveImmediate
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = nil
+	slot0.endDriveImmediate = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 29-31, warpins: 2 ---
+	slot1 = slot0.timerId
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 32-37, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.delFrameCb
+	slot3 = slot0.timerId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.timerId = slot1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 38-38, warpins: 2 ---
+	return
 	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot19.onAllPerformFinish = slot20
+slot20._clearRuntimeCallbacks = slot21
 
-slot20 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = IsNil
 	slot5 = slot0.driver
@@ -1795,9 +1885,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.onDrive = slot20
+slot20.onDrive = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.timerId
 	--- END OF BLOCK #0 ---
@@ -1826,16 +1916,16 @@ slot20 = function(slot0)
 	slot1(slot3)
 
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.startTime = slot1
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = SysConfigData
 	slot2 = slot2.BIGWHITEBALL_TIMELIMIT_MAX
 	slot1 = slot1 + slot2
 	slot0.endTime = slot1
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.bigBallTimeLimit
 	slot1 = slot1 + slot2
 	slot0.curTime = slot1
@@ -1861,9 +1951,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._startDriveCountdown = slot20
+slot20._startDriveCountdown = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.catching
 
@@ -1897,7 +1987,7 @@ slot20 = function(slot0)
 
 	--- BLOCK #3 8-14, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.startTime
 	slot1 = slot1 - slot2
 	slot2 = BIG_BALL_ABSORB_DELAY
@@ -1923,7 +2013,7 @@ slot20 = function(slot0)
 
 	--- BLOCK #5 18-26, warpins: 3 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.bigBallTimeLimit
 	slot1 = slot1 + slot2
 	slot0.curTime = slot1
@@ -2054,9 +2144,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.tickRemandTime = slot20
+slot20.tickRemandTime = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._absorbReady
 
@@ -2112,9 +2202,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._openAbsorb = slot20
+slot20._openAbsorb = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = ClientBigBall
 	slot1 = slot1.super
@@ -2132,9 +2222,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.getConfigData = slot20
+slot20.getConfigData = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.logDebug
@@ -2363,9 +2453,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._playSettleTimeline = slot20
+slot20._playSettleTimeline = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = true
 	slot0._hasNoticeFinish = slot1
@@ -2844,9 +2934,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._onAllSettleFinished = slot20
+slot20._onAllSettleFinished = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2961,9 +3051,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.resetFailedPuppetTransform = slot20
+slot20.resetFailedPuppetTransform = slot21
 
-slot20 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3025,9 +3115,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.setGuaranteeActive = slot20
+slot20.setGuaranteeActive = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.guaranteeTimer
 	--- END OF BLOCK #0 ---
@@ -3062,9 +3152,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._clearGuaranteeTimer = slot20
+slot20._clearGuaranteeTimer = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._clearAirTimeout
@@ -3101,9 +3191,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._startAirTimeout = slot20
+slot20._startAirTimeout = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = nil
 	slot0._airTimeoutTimer = slot1
@@ -3166,9 +3256,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._onAirTimeout = slot20
+slot20._onAirTimeout = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._airTimeoutTimer
 	--- END OF BLOCK #0 ---
@@ -3203,9 +3293,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._clearAirTimeout = slot20
+slot20._clearAirTimeout = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._clearSettleTimeout
@@ -3242,9 +3332,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._startSettleTimeout = slot20
+slot20._startSettleTimeout = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._settleTimeoutTimer
 	--- END OF BLOCK #0 ---
@@ -3279,9 +3369,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._clearSettleTimeout = slot20
+slot20._clearSettleTimeout = slot21
 
-slot20 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot0._settleTimeoutTimer = slot1
@@ -3465,7 +3555,7 @@ slot20 = function(slot0)
 
 
 	--- BLOCK #14 60-60, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
@@ -3562,9 +3652,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._onSettleTimeout = slot20
+slot20._onSettleTimeout = slot21
 
-return slot19
+return slot20
 --- END OF BLOCK #0 ---
 
 

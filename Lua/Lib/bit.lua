@@ -1,8 +1,8 @@
 --- BLOCK #0 1-142, warpins: 1 ---
 slot0 = {
-	_TYPE = "module",
 	_VERSION = "0.3.1.20120131",
-	_NAME = "bit.numberlua"
+	_NAME = "bit.numberlua",
+	_TYPE = "module"
 }
 slot1 = math
 slot1 = slot1.floor

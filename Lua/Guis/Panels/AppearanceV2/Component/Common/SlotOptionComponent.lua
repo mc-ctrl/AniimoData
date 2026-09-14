@@ -1,4 +1,4 @@
---- BLOCK #0 1-55, warpins: 1 ---
+--- BLOCK #0 1-53, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -28,7 +28,7 @@ slot7 = slot7.Const
 slot7 = slot7.GameConst
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-91, warpins: 1 ---
+	--- BLOCK #0 1-79, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -77,18 +77,6 @@ slot8 = function(slot0)
 	slot4 = "roleHideUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.roleHideUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "petHideUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.petHideUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "bagUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.bagUButton = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -177,7 +165,7 @@ end
 slot5.onDestroy = slot8
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-77, warpins: 1 ---
+	--- BLOCK #0 1-62, warpins: 1 ---
 	slot1 = slot0.slotUList
 
 	slot2 = function(slot0, slot1, slot2)
@@ -288,40 +276,50 @@ slot8 = function(slot0)
 	slot1.luaSelectedChanged = slot2
 	slot1 = slot0.slotUList
 
-	slot2 = function(slot0, slot1)
+	slot2 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-5, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot2 = slot2.onSlotClicked
+		slot3 = self
+		slot3 = slot3.ctrl
+		slot3 = slot3.onSlotClicked
 		--- END OF BLOCK #0 ---
 
-		slot2 = if slot2 then
+		slot3 = if slot3 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 6-14, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.ctrl
-		slot4 = slot2
-		slot2 = slot2.onSlotClicked
-		slot5 = self
-		slot5 = slot5.slotUList
-		slot5 = slot5.selectedItem
-		slot6 = slot1
-
-		slot2(slot4, slot5, slot6)
-
+		--- BLOCK #1 6-7, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
 
 
-		--- BLOCK #2 15-15, warpins: 2 ---
-		return
+		--- BLOCK #2 8-16, warpins: 1 ---
+		slot3 = self
+		slot3 = slot3.ctrl
+		slot5 = slot3
+		slot3 = slot3.onSlotClicked
+		slot6 = self
+		slot6 = slot6.slotUList
+		slot6 = slot6.selectedItem
+		slot7 = slot1
+
+		slot3(slot5, slot6, slot7)
+
 		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-17, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
 
 
 
@@ -1284,40 +1282,6 @@ slot8 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
-	slot3 = slot0
-	slot1 = slot0.refreshBagButton
-
-	slot1(slot3)
-
-	slot1 = slot0.bagUButton
-
-	slot2 = function()
-		--- BLOCK #0 1-16, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot0 = slot0.curShow
-		slot0 = slot0.isShowBag
-		slot0 = not slot0
-		slot1 = GameConst
-		slot1 = slot1.PART_TOP
-		slot2 = GameConst
-		slot2 = slot2.SLOT_BAG
-		slot3 = AvatarUtils
-		slot3 = slot3.onBagClicked
-		slot5 = slot0
-		slot6 = slot1
-		slot7 = slot2
-
-		slot3(slot5, slot6, slot7)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
 	slot1 = slot0.hideUIUButton
 
 	slot2 = function()
@@ -1349,27 +1313,7 @@ slot8 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
-	slot1 = slot0.petHideUButton
-
-	slot2 = function()
-		--- BLOCK #0 1-1, warpins: 1 ---
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
 	slot1 = slot0.roleHideUButton
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = false
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.petHideUButton
 	slot1 = slot1.gameObject
 	slot3 = slot1
 	slot1 = slot1.SetActiveEx
@@ -1385,24 +1329,6 @@ slot8 = function(slot0)
 end
 
 slot5.addListener = slot8
-
-slot8 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = slot0.bagUButton
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.curShow
-	slot2 = slot2.isShowBag
-	slot1.isSelected = slot2
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot5.refreshBagButton = slot8
 
 slot8 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---

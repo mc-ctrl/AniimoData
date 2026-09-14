@@ -1,4 +1,4 @@
---- BLOCK #0 1-82, warpins: 1 ---
+--- BLOCK #0 1-87, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -47,12 +47,15 @@ slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Common.Utils.Utils"
 slot14 = slot14(slot16)
-slot15 = slot1.LightClass
-slot17 = "PhotoSurveyComponent"
-slot18 = slot3
-slot15 = slot15(slot17, slot18)
+slot15 = require
+slot17 = "Guis.Panels.Album.AlbumCtrl"
+slot15 = slot15(slot17)
+slot16 = slot1.LightClass
+slot18 = "PhotoSurveyComponent"
+slot19 = slot3
+slot16 = slot16(slot18, slot19)
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -75,7 +78,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-263, warpins: 2 ---
+	--- BLOCK #2 7-275, warpins: 2 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetChild
@@ -176,6 +179,18 @@ slot16 = function(slot0)
 	slot4 = "listDailyRewardUList"
 	slot1 = slot1(slot3, slot4)
 	slot0.listDailyRewardUList = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "reward1UButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.reward1UButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "reward2UButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.reward2UButton = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -340,10 +355,10 @@ slot16 = function(slot0)
 
 end
 
-slot15.findObjects = slot16
+slot16.findObjects = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.btnPhotographUButton
 
 	slot2 = function()
@@ -444,6 +459,128 @@ slot16 = function(slot0)
 	end
 
 	slot1.luaRenderItem = slot2
+	slot1 = slot0.reward1UButton
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 19-21, warpins: 1 ---
+	slot1 = slot0.reward1UButton
+
+	slot2 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.input
+		slot2 = slot0
+		slot0 = slot0.isUsingGamepad
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-9, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-15, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onDailyRewardButtonClick
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 22-24, warpins: 2 ---
+	slot1 = slot0.reward2UButton
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 25-27, warpins: 1 ---
+	slot1 = slot0.reward2UButton
+
+	slot2 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.input
+		slot2 = slot0
+		slot0 = slot0.isUsingGamepad
+		slot0 = slot0(slot2)
+
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-9, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-15, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onDailyRewardButtonClick
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 28-38, warpins: 2 ---
 	slot1 = slot0.btnShootingUButton
 
 	slot2 = function(slot0, slot1)
@@ -568,15 +705,15 @@ slot16 = function(slot0)
 	slot1.luaClick = slot2
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot15.addListener = slot16
+slot16.addListener = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.puppetPhotoData
 	--- END OF BLOCK #0 ---
@@ -598,69 +735,30 @@ slot16 = function(slot0)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 10-17, warpins: 1 ---
+	--- BLOCK #2 10-32, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
 	slot1 = slot1.photo
 	slot2 = pg
-	slot2 = slot2.space
-	--- END OF BLOCK #2 ---
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_PHOTO
+	slot6 = {}
+	slot7 = slot1.ModeType
+	slot7 = slot7.NORMAL_MODE
+	slot6.photoMode = slot7
+	slot7 = slot0.puppetPhotoData
+	slot7 = slot7.templateId
+	slot6.investigateId = slot7
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 18-22, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.space
-	slot2 = slot2.gameTimeScale
-	--- END OF BLOCK #3 ---
-
-	if slot2 ~= 0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 23-24, warpins: 1 ---
-	slot2 = false
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 25-25, warpins: 1 ---
-	slot2 = true
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-46, warpins: 3 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot5 = slot3
-	slot3 = slot3.open
-	slot6 = UIConst
-	slot6 = slot6.UI_ID_PHOTO
-	slot7 = {}
-	slot8 = slot1.ModeType
-	slot8 = slot8.NORMAL_MODE
-	slot7.photoMode = slot8
-	slot8 = slot0.puppetPhotoData
-	slot8 = slot8.templateId
-	slot7.investigateId = slot8
-
-	slot8 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	slot7 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot7 = self
 		slot9 = slot7
@@ -682,94 +780,28 @@ slot16 = function(slot0)
 
 	end
 
-	slot7.investigateCb = slot8
+	slot6.investigateCb = slot7
 
-	slot8 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = isStopGame
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 4-8, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.startGameTime
-
-		slot0(slot2)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 9-9, warpins: 2 ---
-		return
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot9 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = isStopGame
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 4-8, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.space
-		slot2 = slot0
-		slot0 = slot0.stopGameTime
-
-		slot0(slot2)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 9-9, warpins: 2 ---
-		return
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot3(slot5, slot6, slot7, slot8, slot9)
+	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #7 47-47, warpins: 2 ---
+	--- BLOCK #3 33-33, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot15.onBtnShootClick = slot16
+slot16.onBtnShootClick = slot17
 
-slot16 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.puppetPhotoData
 	slot1 = slot1.templateId
 	slot2 = pg
@@ -781,6 +813,10 @@ slot16 = function(slot0)
 	slot5 = {
 		investigation = true
 	}
+	slot6 = AlbumCtrl
+	slot6 = slot6.Mode
+	slot6 = slot6.Investigation
+	slot5.mode = slot6
 
 	slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 		--- BLOCK #0 1-12, warpins: 1 ---
@@ -815,9 +851,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onBtnPhotoClick = slot16
+slot16.onBtnPhotoClick = slot17
 
-slot16 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot17 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1031,9 +1067,9 @@ slot16 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot15._onShootComplete = slot16
+slot16._onShootComplete = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1._curVisible
@@ -1255,7 +1291,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #16 95-95, warpins: 1 ---
-	slot5 = slot4.eventEndDayTime
+	slot5 = slot4.tabEndDayTime
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
@@ -1455,9 +1491,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshPage = slot16
+slot16.refreshPage = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 1
 	slot2 = PetResearchPhotoData
@@ -2113,9 +2149,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.refreshSticker = slot16
+slot16.refreshSticker = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-46, warpins: 1 ---
 	slot2 = "sticker"
 	slot3 = slot1
@@ -2191,9 +2227,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot15.innerPlayUnlock = slot16
+slot16.innerPlayUnlock = slot17
 
-slot16 = function(slot0, slot1, slot2, slot3)
+slot17 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot3.state
 	slot5 = ClientConst
@@ -2340,9 +2376,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot15.onRenderRewardItem = slot16
+slot16.onRenderRewardItem = slot17
 
-slot16 = function(slot0, slot1, slot2, slot3, slot4)
+slot17 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot3.canGet
 	--- END OF BLOCK #0 ---
@@ -2521,9 +2557,204 @@ slot16 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot15.onRenderDailyRewardItem = slot16
+slot16.onRenderDailyRewardItem = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-8, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getPuppetPhotoDailyExtraRewardDataList
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getPuppetPhotoDailyRewardDataList
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-14, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot3 = slot2[1]
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-17, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 18-18, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-21, warpins: 2 ---
+	slot4 = slot3.canGet
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #8 22-24, warpins: 1 ---
+	slot4 = slot3.hasGet
+	--- END OF BLOCK #8 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #9 25-26, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 27-33, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.reqActivityPhotoExtraRewardGet
+	slot7 = slot0.eventId
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 34-39, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.reqActivityPhotoRewardGet
+	slot7 = slot0.eventId
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 40-47, warpins: 2 ---
+	slot4 = slot0.listRewardUList
+	slot6 = slot4
+	slot4 = slot4.RefreshList
+
+	slot4(slot6)
+
+	slot6 = slot0
+	slot4 = slot0.refreshCommonNodeRedDot
+
+	slot4(slot6)
+
+	return
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 48-49, warpins: 3 ---
+	--- END OF BLOCK #13 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 50-52, warpins: 1 ---
+	slot4 = slot0.reward2UButton
+	--- END OF BLOCK #14 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 53-53, warpins: 2 ---
+	slot4 = slot0.reward1UButton
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 54-59, warpins: 2 ---
+	slot5 = LuaUIUtils
+	slot5 = slot5.onRewardItemClick
+	slot7 = slot4
+	slot8 = slot3
+
+	slot5(slot7, slot8)
+
+	return
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot16.onDailyRewardButtonClick = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = false
 	slot0._isPageVisible = slot1
@@ -2564,9 +2795,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onBeforeExitPage = slot16
+slot16.onBeforeExitPage = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1._curVisible
@@ -2652,9 +2883,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.tryPlayRootWidgetCallback = slot16
+slot16.tryPlayRootWidgetCallback = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = true
 	slot0._isPageVisible = slot1
@@ -2674,9 +2905,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onEnterPlayEvent = slot16
+slot16.onEnterPlayEvent = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = nil
 	slot0.lastState = slot1
@@ -2703,9 +2934,9 @@ slot16 = function(slot0)
 
 end
 
-slot15.onDestroy = slot16
+slot16.onDestroy = slot17
 
-return slot15
+return slot16
 --- END OF BLOCK #0 ---
 
 

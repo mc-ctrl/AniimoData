@@ -13,10 +13,10 @@ slot2 = slot2.Platform
 slot2 = slot2.PlatformBridgeLuaFacade
 slot3 = {}
 slot4 = {
-	TooLong = 2,
-	Offensive = 1,
 	Success = 0,
-	UnknownError = 3
+	UnknownError = 3,
+	TooLong = 2,
+	Offensive = 1
 }
 slot3.VERIFY_RESULT_CODE = slot4
 slot4 = 5
@@ -29,8 +29,8 @@ slot4.pendingCallbacksByText = slot5
 slot3.state = slot4
 slot4 = {
 	Fallback = "fallback",
-	Allow = "allow",
-	Deny = "deny"
+	Deny = "deny",
+	Allow = "allow"
 }
 slot3.Decision = slot4
 slot4 = slot3.VERIFY_RESULT_CODE

@@ -50,26 +50,25 @@ end
 
 slot7.ctor = slot9
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = ClientSeesaw
-	slot1 = slot1.super
-	slot1 = slot1.onInit
-	slot3 = slot0
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = ClientSeesaw
+	slot2 = slot2.super
+	slot2 = slot2.init
+	slot4 = slot0
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	slot3 = false
+	slot0.entityCanMove = slot3
 
-	slot1(slot3)
-
-	slot1 = false
-	slot0.entityCanMove = slot1
-
-	return
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot7.onInit = slot9
+slot7.init = slot9
 
 slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---

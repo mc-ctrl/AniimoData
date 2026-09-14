@@ -38,30 +38,30 @@ slot5 = function()
 	slot0._areaBucketCount = slot1
 	slot0 = {}
 	slot1 = {
-		bucketCount = 4,
 		areaPrefix = "A1",
-		areaId = 1
+		areaId = 1,
+		bucketCount = 4
 	}
 	slot2 = 83980508
 	slot0[slot2] = slot1
 	slot1 = {
-		bucketCount = 4,
 		areaPrefix = "A2",
-		areaId = 2
+		areaId = 2,
+		bucketCount = 4
 	}
 	slot2 = 84748009
 	slot0[slot2] = slot1
 	slot1 = {
-		bucketCount = 4,
 		areaPrefix = "A3",
-		areaId = 3
+		areaId = 3,
+		bucketCount = 4
 	}
 	slot2 = 84750948
 	slot0[slot2] = slot1
 	slot1 = {
-		bucketCount = 4,
 		areaPrefix = "A4",
-		areaId = 4
+		areaId = 4,
+		bucketCount = 4
 	}
 	slot2 = 84750989
 	slot0[slot2] = slot1

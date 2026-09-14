@@ -1,4 +1,4 @@
---- BLOCK #0 1-45, warpins: 1 ---
+--- BLOCK #0 1-47, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -269,6 +269,25 @@ slot6 = function(slot0, slot1, slot2)
 end
 
 slot5.RPC_SC_ChallengeResult = slot6
+
+slot6 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.BOSS_RUSH_CUR_LEVEL_TEAM_REVIVE_COUNT_CHANGED
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.onCurLevelTeamReviveCountChanged = slot6
 
 return slot5
 --- END OF BLOCK #0 ---

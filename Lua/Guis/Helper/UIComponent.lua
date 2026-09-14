@@ -171,18 +171,20 @@ slot5 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot8 = slot5
-	slot6 = slot5.destroy
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.tryWithLogErrorEx
+	slot8 = slot5.destroy
+	slot9 = slot5
 
-	slot6(slot8)
+	slot6(slot8, slot9)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -190,16 +192,18 @@ slot5 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 10-41, warpins: 1 ---
+	--- BLOCK #3 12-45, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killAllTimer
 
 	slot1(slot3)
 
-	slot3 = slot0
-	slot1 = slot0.onDestroy
+	slot1 = ClientUtils
+	slot1 = slot1.tryWithLogErrorEx
+	slot3 = slot0.onDestroy
+	slot4 = slot0
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = pg
 	slot1 = slot1.global
@@ -233,7 +237,7 @@ slot5 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #4 42-44, warpins: 1 ---
+	--- BLOCK #4 46-48, warpins: 1 ---
 	slot7 = slot1[slot6]
 	--- END OF BLOCK #4 ---
 
@@ -244,7 +248,7 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #5 45-46, warpins: 1 ---
+	--- BLOCK #5 49-50, warpins: 1 ---
 	slot7 = nil
 	slot0[slot6] = slot7
 	--- END OF BLOCK #5 ---
@@ -252,7 +256,7 @@ slot5 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 47-48, warpins: 3 ---
+	--- BLOCK #6 51-52, warpins: 3 ---
 	--- END OF BLOCK #6 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -260,7 +264,7 @@ slot5 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 49-51, warpins: 1 ---
+	--- BLOCK #7 53-55, warpins: 1 ---
 	slot2 = {}
 	slot0.uiComponentsSet = slot2
 
@@ -450,59 +454,60 @@ end
 slot2.onParentHide = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = ipairs
-	slot4 = slot0.uiComponents
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = slot0.uiComponents
+	slot3 = 1
+	slot4 = #slot2
+	slot5 = 1
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 5-8, warpins: 1 ---
-	slot9 = slot6
-	slot7 = slot6.onParentVisibleChange
+	--- BLOCK #1 6-11, warpins: 2 ---
+	slot7 = slot2[slot6]
+	slot9 = slot7
+	slot7 = slot7.onParentVisibleChange
 	slot10 = slot1
 
 	slot7(slot9, slot10)
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #2
 
-
-	--- BLOCK #2 9-10, warpins: 2 ---
+	--- BLOCK #2 12-16, warpins: 1 ---
+	slot3 = slot0.onVisibleChange
+	slot4 = UIComponent
+	slot4 = slot4.onVisibleChange
 	--- END OF BLOCK #2 ---
 
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
-
-
-	--- BLOCK #3 11-16, warpins: 1 ---
-	slot2 = ClientUtils
-	slot2 = slot2.tryWithLogError
-
-	slot4 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.onVisibleChange
-		slot3 = visible
-
-		slot0(slot2, slot3)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
-	slot2(slot4)
 
-	return
+	--- BLOCK #3 17-22, warpins: 1 ---
+	slot4 = ClientUtils
+	slot4 = slot4.tryWithLogErrorEx
+	slot6 = slot3
+	slot7 = slot0
+	slot8 = slot1
+
+	slot4(slot6, slot7, slot8)
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 23-23, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
@@ -513,6 +518,7 @@ slot2.onParentVisibleChange = slot5
 slot5 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._visible
+
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -523,67 +529,63 @@ slot5 = function(slot0)
 
 
 	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 1 ---
-	slot1 = ipairs
-	slot3 = slot0.uiComponents
-	slot1, slot2, slot3 = slot1(slot3)
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot1 = slot0.uiComponents
+	slot2 = 1
+	slot3 = #slot1
+	slot4 = 1
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-11, warpins: 1 ---
-	slot8 = slot5
-	slot6 = slot5.showComponent
+	--- BLOCK #3 10-14, warpins: 2 ---
+	slot6 = slot1[slot5]
+	slot8 = slot6
+	slot6 = slot6.onParentShow
 
 	slot6(slot8)
 
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	for slot5=slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #4
 
-
-	--- BLOCK #4 12-13, warpins: 2 ---
+	--- BLOCK #4 15-19, warpins: 1 ---
+	slot2 = slot0.onShow
+	slot3 = UIComponent
+	slot3 = slot3.onShow
 	--- END OF BLOCK #4 ---
 
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 14-19, warpins: 1 ---
-	slot1 = ClientUtils
-	slot1 = slot1.tryWithLogError
-
-	slot3 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.onShow
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
-	slot1(slot3)
 
-	return
+	--- BLOCK #5 20-24, warpins: 1 ---
+	slot3 = ClientUtils
+	slot3 = slot3.tryWithLogErrorEx
+	slot5 = slot2
+	slot6 = slot0
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 20-20, warpins: 2 ---
+	--- BLOCK #6 25-25, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -594,57 +596,58 @@ end
 slot2.showComponent = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = ipairs
-	slot3 = slot0.uiComponents
-	slot1, slot2, slot3 = slot1(slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = slot0.uiComponents
+	slot2 = 1
+	slot3 = #slot1
+	slot4 = 1
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot8 = slot5
-	slot6 = slot5.onParentHide
+	--- BLOCK #1 6-10, warpins: 2 ---
+	slot6 = slot1[slot5]
+	slot8 = slot6
+	slot6 = slot6.onParentHide
 
 	slot6(slot8)
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	for slot5=slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #2
 
-
-	--- BLOCK #2 8-9, warpins: 2 ---
+	--- BLOCK #2 11-15, warpins: 1 ---
+	slot2 = slot0.onHide
+	slot3 = UIComponent
+	slot3 = slot3.onHide
 	--- END OF BLOCK #2 ---
 
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
-
-
-	--- BLOCK #3 10-15, warpins: 1 ---
-	slot1 = ClientUtils
-	slot1 = slot1.tryWithLogError
-
-	slot3 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.onHide
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
 	end
 
-	slot1(slot3)
 
-	return
+	--- BLOCK #3 16-20, warpins: 1 ---
+	slot3 = ClientUtils
+	slot3 = slot3.tryWithLogErrorEx
+	slot5 = slot2
+	slot6 = slot0
+
+	slot3(slot5, slot6)
+
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-21, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 

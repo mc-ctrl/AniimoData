@@ -517,7 +517,7 @@ slot3 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #6 25-39, warpins: 1 ---
+	--- BLOCK #6 25-45, warpins: 1 ---
 	slot3 = PlatformNameMaskRefreshHelper
 	slot3 = slot3.unregister
 	slot5 = slot0
@@ -644,6 +644,14 @@ slot3 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8)
 
+	slot6 = slot2
+	slot4 = slot2.addEventListener
+	slot7 = EventConst
+	slot7 = slot7.PLATFORM_BLOCK_LIST_CHANGED
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
 	slot4 = true
 
 	return slot4
@@ -652,14 +660,14 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 40-40, warpins: 2 ---
+	--- BLOCK #7 46-46, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 41-41, warpins: 2 ---
+	--- BLOCK #8 47-47, warpins: 2 ---
 	return slot3
 	--- END OF BLOCK #8 ---
 
@@ -743,11 +751,19 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #6 26-31, warpins: 1 ---
+	--- BLOCK #6 26-37, warpins: 1 ---
 	slot5 = slot2
 	slot3 = slot2.removeEventListener
 	slot6 = EventConst
 	slot6 = slot6.PLATFORM_NAME_MASK_POLICY_REFRESHED
+	slot7 = slot1
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot2
+	slot3 = slot2.removeEventListener
+	slot6 = EventConst
+	slot6 = slot6.PLATFORM_BLOCK_LIST_CHANGED
 	slot7 = slot1
 
 	slot3(slot5, slot6, slot7)
@@ -757,7 +773,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 32-38, warpins: 3 ---
+	--- BLOCK #7 38-44, warpins: 3 ---
 	slot3 = rawset
 	slot5 = slot0
 	slot6 = "_platformNameMaskRefreshListener"

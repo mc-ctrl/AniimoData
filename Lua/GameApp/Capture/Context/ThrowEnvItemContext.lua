@@ -1,27 +1,27 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-79, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Data.cast_item_data"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Data.item_effect_data"
+slot4 = "Data.cast_item_data"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.Capture.ThrowParabola"
+slot5 = "Data.item_effect_data"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "GameApp.Capture.Context.NoBallContext"
+slot6 = "GameApp.Capture.ThrowParabola"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "GameApp.Capture.Context.ThrowBallContext"
+slot7 = "GameApp.Capture.Context.NoBallContext"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.CharacterUpperState"
+slot8 = "GameApp.Capture.Context.ThrowBallContext"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.ClientConst"
+slot9 = "Common.Const.CharacterUpperState"
 slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Const.AddressDataConst"
@@ -41,14 +41,17 @@ slot12 = slot12(slot14)
 slot13 = require
 slot15 = "GameApp.Input.InputFsm"
 slot13 = slot13(slot15)
-slot14 = slot10.commands
-slot15 = slot10.states
-slot16 = slot0.LightClass
-slot18 = "ThrowEnvItemContext"
-slot19 = slot4
-slot16 = slot16(slot18, slot19)
+slot14 = require
+slot16 = "Common.Const.Const"
+slot14 = slot14(slot16)
+slot15 = slot10.commands
+slot16 = slot10.states
+slot17 = slot1.LightClass
+slot19 = "ThrowEnvItemContext"
+slot20 = slot5
+slot17 = slot17(slot19, slot20)
 
-slot17 = function(slot0, slot1, slot2)
+slot18 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot0.player = slot1
 	slot3 = slot0.player
@@ -75,29 +78,28 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot16.ctor = slot17
+slot17.ctor = slot18
 
-slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-29, warpins: 1 ---
+slot18 = function(slot0, slot1)
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot4 = slot2
 	slot2 = slot2.ForceChangeToUpperState
-	slot5 = CharacterUpperState
-	slot5 = slot5.THROWHOLD
+	slot5 = Const
+	slot5 = slot5.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot6 = CharacterUpperState
+	slot6 = slot6.THROWHOLD
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = slot0.ballData
 	slot3 = slot3.animType
 	slot2.ThrowAnimType = slot3
 	slot2 = slot0.player
 	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
 	slot3 = true
 	slot2.AlwaysLookForward = slot3
 	slot4 = slot0
@@ -121,7 +123,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 30-32, warpins: 1 ---
+	--- BLOCK #1 29-31, warpins: 1 ---
 	slot2 = slot1.fsm
 	--- END OF BLOCK #1 ---
 
@@ -132,7 +134,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 33-35, warpins: 1 ---
+	--- BLOCK #2 32-34, warpins: 1 ---
 	slot2 = slot1.fsm
 	slot0.fsm = slot2
 	--- END OF BLOCK #2 ---
@@ -140,7 +142,7 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 36-40, warpins: 2 ---
+	--- BLOCK #3 35-39, warpins: 2 ---
 	slot2 = InputFsm
 	slot2 = slot2.new
 	slot4 = CaptureFsm
@@ -151,7 +153,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 41-45, warpins: 2 ---
+	--- BLOCK #4 40-44, warpins: 2 ---
 	slot2 = slot0.fsm
 	slot2 = slot2.state
 	slot0.state = slot2
@@ -164,7 +166,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 46-48, warpins: 1 ---
+	--- BLOCK #5 45-47, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.process
 
@@ -175,7 +177,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 49-49, warpins: 2 ---
+	--- BLOCK #6 48-48, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -183,19 +185,24 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.enter = slot17
+slot17.enter = slot18
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-46, warpins: 1 ---
+slot18 = function(slot0)
+	--- BLOCK #0 1-49, warpins: 1 ---
+	slot1 = slot0.player
+	slot3 = slot1
+	slot1 = slot1.addEModelComponent
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_CATCH
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.player
 	slot1 = slot1.eModel
 	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot1 = slot1.LoadPointer
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_CATCH
-	slot1 = slot1(slot3, slot4)
-	slot4 = slot1
-	slot2 = slot1.LoadPointer
 	slot5 = AddressDataConst
 	slot5 = slot5.PARABOLA_POINTER
 	slot6 = {}
@@ -219,24 +226,24 @@ slot17 = function(slot0)
 	slot7 = slot7(MULTRES)
 	slot6.offset = slot7
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5, slot6)
 
-	slot2 = slot0.envItem
-	slot4 = slot2
-	slot2 = slot2.onPlayerHold
-	slot5 = slot0.player
-	slot6 = slot0.castItemId
+	slot1 = slot0.envItem
+	slot3 = slot1
+	slot1 = slot1.onPlayerHold
+	slot4 = slot0.player
+	slot5 = slot0.castItemId
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
-	slot2 = slot0.player
-	slot4 = slot2
-	slot2 = slot2.serverMsg
-	slot5 = "RPC_CS_PlayerHoldEnv"
-	slot6 = slot0.envItem
-	slot6 = slot6.id
+	slot1 = slot0.player
+	slot3 = slot1
+	slot1 = slot1.serverMsg
+	slot4 = "RPC_CS_PlayerHoldEnv"
+	slot5 = slot0.envItem
+	slot5 = slot5.id
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -245,9 +252,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.hold = slot17
+slot17.hold = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.player
 	slot4 = slot2
@@ -262,9 +269,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.throwEnd = slot17
+slot17.throwEnd = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.fsm
 	slot3 = slot1
@@ -311,9 +318,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.exit = slot17
+slot17.exit = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.fsm
 	slot3 = slot1
@@ -357,9 +364,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.throw = slot17
+slot17.throw = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.fsm
 	slot3 = slot1
@@ -403,9 +410,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.switch = slot17
+slot17.switch = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.fsm
 	slot3 = slot1
@@ -491,19 +498,20 @@ slot17 = function(slot0)
 
 end
 
-slot16.process = slot17
+slot17.process = slot18
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+slot18 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot3 = slot1
 	slot1 = slot1.ForceChangeToUpperState
-	slot4 = CharacterUpperState
-	slot4 = slot4.THROWRELEASE
+	slot4 = Const
+	slot4 = slot4.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot5 = CharacterUpperState
+	slot5 = slot5.THROWRELEASE
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	slot3 = slot0
 	slot1 = slot0.fireBall
@@ -517,9 +525,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.doThrow = slot17
+slot17.doThrow = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -528,9 +536,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.doSwitch = slot17
+slot17.doSwitch = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.player
 	slot3 = slot1
@@ -545,9 +553,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.exitCatchMode = slot17
+slot17.exitCatchMode = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.envItem
 
@@ -568,7 +576,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-19, warpins: 2 ---
+	--- BLOCK #2 5-20, warpins: 2 ---
 	slot1 = slot0.envItem
 	slot3 = slot1
 	slot1 = slot1.onPlayerFire
@@ -581,11 +589,12 @@ slot17 = function(slot0)
 	slot0.envItem = slot1
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.catchComponent
 	slot3 = slot1
 	slot1 = slot1.UnloadPointer
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_CATCH
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -594,9 +603,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.fireBall = slot17
+slot17.fireBall = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.envItem
 	--- END OF BLOCK #0 ---
@@ -633,48 +642,30 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 19-31, warpins: 2 ---
+	--- BLOCK #2 19-49, warpins: 2 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot3 = slot1
 	slot1 = slot1.ForceChangeToUpperState
-	slot4 = CharacterUpperState
-	slot4 = slot4.EMPTY
+	slot4 = Const
+	slot4 = slot4.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot5 = CharacterUpperState
+	slot5 = slot5.EMPTY
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 32-36, warpins: 1 ---
-	slot1 = slot0.player
-	slot1 = slot1.eModel
-	slot1 = slot1.controllerComponent
 	slot2 = false
 	slot1.AlwaysLookForward = slot2
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 37-53, warpins: 2 ---
 	slot1 = slot0.player
 	slot1 = slot1.eModel
-	slot1 = slot1.catchComponent
 	slot3 = slot1
 	slot1 = slot1.UnloadPointer
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_CATCH
 
-	slot1(slot3)
+	slot1(slot3, slot4)
 
 	slot1 = nil
 	slot0.player = slot1
@@ -688,15 +679,15 @@ slot17 = function(slot0)
 	slot0.ballData = slot1
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot16.destroy = slot17
+slot17.destroy = slot18
 
-return slot16
+return slot17
 --- END OF BLOCK #0 ---
 
 

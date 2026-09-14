@@ -1,4 +1,4 @@
---- BLOCK #0 1-249, warpins: 1 ---
+--- BLOCK #0 1-259, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -59,23 +59,25 @@ slot20 = require
 slot22 = "Common.Data.SkillBPData.buff_tag_group_data"
 slot20 = slot20(slot22)
 slot20 = slot20.BUFF_TAG_2_ID
-slot21 = math
-slot21 = slot21.epsilon
+slot21 = pg
 slot22 = math
-slot22 = slot22.min
+slot22 = slot22.epsilon
 slot23 = math
-slot23 = slot23.random
-slot24 = table
-slot24 = slot24.getCount
+slot23 = slot23.min
+slot24 = math
+slot24 = slot24.random
 slot25 = table
-slot25 = slot25.insert
-slot26 = pairs
-slot27 = ipairs
-slot28 = slot0.Component
-slot30 = "IBaseCombatComponent"
-slot28 = slot28(slot30)
+slot25 = slot25.getCount
+slot26 = table
+slot26 = slot26.insert
+slot27 = pairs
+slot28 = ipairs
+slot29 = string
+slot30 = slot0.Component
+slot32 = "IBaseCombatComponent"
+slot30 = slot30(slot32)
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -148,9 +150,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getPosition = slot29
+slot30.getPosition = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -223,9 +225,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getPositionY = slot29
+slot30.getPositionY = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -318,9 +320,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getPositionYRelativeToGround = slot29
+slot30.getPositionYRelativeToGround = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -390,9 +392,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getMasterId = slot29
+slot30.getMasterId = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.OVERRIDE_getTarget
@@ -422,9 +424,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.getTarget = slot29
+slot30.getTarget = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = AIUtils
 	slot3 = slot3.attackTarget
@@ -444,9 +446,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.lockTarget = slot29
+slot30.lockTarget = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getEntityByActorId
@@ -503,31 +505,61 @@ slot29 = function(slot0)
 
 end
 
-slot28.getMasterTarget = slot29
+slot30.getMasterTarget = slot31
 
-slot29 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.ent
 	slot4 = slot2
 	slot2 = slot2.cancelAbility
 
 	slot2(slot4)
 
+	slot2 = slot0.OVERRIDE_castNormalAtkCombo__resetState
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.OVERRIDE_castNormalAtkCombo__resetState
 	slot5 = slot1
 
-	return slot2(slot4, slot5)
-	--- END OF BLOCK #0 ---
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot28.castNormalAtkCombo__resetState = slot29
+slot30.castNormalAtkCombo__resetState = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot7 = slot0.OVERRIDE_castNormalAtkCombo
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-14, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.OVERRIDE_castNormalAtkCombo
 	slot10 = slot1
@@ -536,17 +568,36 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot13 = slot4
 	slot14 = slot5
 	slot15 = slot6
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	--- END OF BLOCK #1 ---
 
-	return slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
-	--- END OF BLOCK #0 ---
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-16, warpins: 2 ---
+	slot7 = EBTStatus
+	slot7 = slot7.BT_FAILURE
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 2 ---
+	return slot7
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot28.castNormalAtkCombo = slot29
+slot30.castNormalAtkCombo = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -592,9 +643,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkIsInCapture = slot29
+slot30.checkIsInCapture = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -663,9 +714,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkIsDead = slot29
+slot30.checkIsDead = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -724,9 +775,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkIsFakeDead = slot29
+slot30.checkIsFakeDead = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -774,9 +825,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkIsBreakST = slot29
+slot30.checkIsBreakST = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -869,9 +920,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkIsChargeSkill = slot29
+slot30.checkIsChargeSkill = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -917,9 +968,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkIsTrapped = slot29
+slot30.checkIsTrapped = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -977,9 +1028,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkIsCamouflage = slot29
+slot30.checkIsCamouflage = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkIsTrapped
@@ -1055,9 +1106,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkDontCombat = slot29
+slot30.checkDontCombat = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -1106,9 +1157,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getHateCount = slot29
+slot30.getHateCount = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1179,9 +1230,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.isInCombat = slot29
+slot30.isInCombat = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBlackBoardProperty
@@ -1212,9 +1263,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.checkIsBossAI = slot29
+slot30.checkIsBossAI = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBlackBoardProperty
@@ -1229,9 +1280,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.checkCanCombat = slot29
+slot30.checkCanCombat = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1357,9 +1408,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.isInSkill = slot29
+slot30.isInSkill = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1445,9 +1496,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.isInUltimateSkill = slot29
+slot30.isInUltimateSkill = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = nil
 	--- END OF BLOCK #0 ---
@@ -1523,9 +1574,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getHpPercent = slot29
+slot30.getHpPercent = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1594,9 +1645,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getEp = slot29
+slot30.getEp = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1665,9 +1716,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getSp = slot29
+slot30.getSp = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1736,9 +1787,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getBreakPercent = slot29
+slot30.getBreakPercent = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = AbilityUtils
 	slot3 = slot3.checkAbilityInFeatures
@@ -1752,9 +1803,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkAbilityInFeatures = slot29
+slot30.checkAbilityInFeatures = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot8 = 0
 	--- END OF BLOCK #0 ---
@@ -1943,9 +1994,9 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot28.getSkillIdByFeature = slot29
+slot30.getSkillIdByFeature = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.ent
 	slot3 = slot1
@@ -1960,9 +2011,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.getUltimateSkillId = slot29
+slot30.getUltimateSkillId = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.ent
 	slot3 = slot1
@@ -1977,9 +2028,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.getQSkillId = slot29
+slot30.getQSkillId = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.ent
 	slot3 = slot1
@@ -1994,9 +2045,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.getESkillId = slot29
+slot30.getESkillId = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.ent
 	slot4 = slot2
@@ -2052,9 +2103,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkAbilityIsCharge = slot29
+slot30.checkAbilityIsCharge = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByActorId
@@ -2298,9 +2349,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getBestAttackSkill = slot29
+slot30.getBestAttackSkill = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getBestAttackSkill
@@ -2314,9 +2365,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getBestAttackSkillByFeature = slot29
+slot30.getBestAttackSkillByFeature = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByActorId
@@ -2409,9 +2460,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkTargetInSKillDist = slot29
+slot30.checkTargetInSKillDist = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -2447,9 +2498,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getSkill2DRadius = slot29
+slot30.getSkill2DRadius = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = AbilityUtils
 	slot2 = slot2.checkCanUseSkillByCost
@@ -2464,9 +2515,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.checkCanUseSkillByCost = slot29
+slot30.checkCanUseSkillByCost = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.ent
 	slot3 = slot1
@@ -2479,9 +2530,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.isInAbility = slot29
+slot30.isInAbility = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AiConst
 	slot2 = slot2.ResetStateType
@@ -2559,9 +2610,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.castSkill__resetState = slot29
+slot30.castSkill__resetState = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot8 = EBTStatus
 	slot8 = slot8.BT_FAILURE
@@ -2871,9 +2922,9 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot28.castSkill = slot29
+slot30.castSkill = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AiConst
 	slot2 = slot2.ResetStateType
@@ -2940,9 +2991,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.castChargetSkill__resetState = slot29
+slot30.castChargetSkill__resetState = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot8 = slot0.x_castChargeSkillState
 	slot9 = AiConst
@@ -3292,9 +3343,9 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot28.castChargetSkill = slot29
+slot30.castChargetSkill = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = nil
 	slot0.x_currentCastComboIndex = slot2
@@ -3313,9 +3364,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.castCombo__resetState = slot29
+slot30.castCombo__resetState = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.getEntityByActorId
@@ -3707,7 +3758,7 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	slot9 = slot9.hasAbilityTag
 	slot11 = slot2
 	slot12 = AbilityConst
-	slot12 = slot12.ABILITY_PARAM_TAG_COMBO
+	slot12 = slot12.ABILITY_PARAM_TAG_COMBO2
 	slot9 = slot9(slot11, slot12)
 	--- END OF BLOCK #28 ---
 
@@ -4067,9 +4118,9 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot28.castCombo = slot29
+slot30.castCombo = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.castSkill__resetState
@@ -4244,9 +4295,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.randomCastSkill__resetState = slot29
+slot30.randomCastSkill__resetState = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.x_tRandomSkillId
 	--- END OF BLOCK #0 ---
@@ -4283,9 +4334,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.randomCastSkill = slot29
+slot30.randomCastSkill = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -4450,25 +4501,23 @@ slot29 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 76-86, warpins: 1 ---
+	--- BLOCK #12 76-84, warpins: 1 ---
 	slot4 = slot16
 	slot17 = table
 	slot17 = slot17.clearArray
 	slot19 = slot5
-	slot17 = slot17(slot19)
-	slot5 = slot17
-	slot17 = table_insert
-	slot19 = slot5
-	slot20 = slot10
 
-	slot17(slot19, slot20)
+	slot17(slot19)
 
+	slot17 = #slot5
+	slot17 = slot17 + 1
+	slot5[slot17] = slot10
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #13 87-88, warpins: 1 ---
+	--- BLOCK #13 85-86, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
 	if slot16 == slot4 then
@@ -4478,19 +4527,16 @@ slot29 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 89-92, warpins: 1 ---
-	slot17 = table_insert
-	slot19 = slot5
-	slot20 = slot10
-
-	slot17(slot19, slot20)
-
+	--- BLOCK #14 87-89, warpins: 1 ---
+	slot17 = #slot5
+	slot17 = slot17 + 1
+	slot5[slot17] = slot10
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 93-94, warpins: 8 ---
+	--- BLOCK #15 90-91, warpins: 8 ---
 	--- END OF BLOCK #15 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
@@ -4498,7 +4544,7 @@ slot29 = function(slot0, slot1)
 	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 95-98, warpins: 1 ---
+	--- BLOCK #16 92-95, warpins: 1 ---
 	slot7 = #slot5
 	slot8 = 0
 	--- END OF BLOCK #16 ---
@@ -4510,7 +4556,7 @@ slot29 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 99-104, warpins: 1 ---
+	--- BLOCK #17 96-101, warpins: 1 ---
 	slot8 = math_random
 	slot10 = 1
 	slot11 = slot7
@@ -4524,14 +4570,14 @@ slot29 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #18 105-105, warpins: 2 ---
+	--- BLOCK #18 102-102, warpins: 2 ---
 	slot8 = 0
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 106-110, warpins: 2 ---
+	--- BLOCK #19 103-107, warpins: 2 ---
 	slot9 = ListPool
 	slot9 = slot9.returnList
 	slot11 = slot5
@@ -4545,9 +4591,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.selectSkillByWeight = slot29
+slot30.selectSkillByWeight = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4653,9 +4699,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkCanUseSkill = slot29
+slot30.checkCanUseSkill = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4700,9 +4746,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkSkillNotInCd = slot29
+slot30.checkSkillNotInCd = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4799,9 +4845,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkSkillCanCast = slot29
+slot30.checkSkillCanCast = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4890,9 +4936,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.CheckTargetHasBuff = slot29
+slot30.CheckTargetHasBuff = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4982,9 +5028,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkTargetHasBuffTag = slot29
+slot30.checkTargetHasBuffTag = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = BuffTag2Id
 	slot4 = slot4[slot2]
@@ -5090,9 +5136,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkTargetHasBuffFromSource = slot29
+slot30.checkTargetHasBuffFromSource = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5217,9 +5263,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkTargetHasBuffById = slot29
+slot30.checkTargetHasBuffById = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5330,9 +5376,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getTargetBuffLayerCount = slot29
+slot30.getTargetBuffLayerCount = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = nil
 	slot0.x_combatDodge_flag = slot2
@@ -5355,9 +5401,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.combatDodge__resetState = slot29
+slot30.combatDodge__resetState = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.x_combatDodge_flag
 	--- END OF BLOCK #0 ---
@@ -5553,9 +5599,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.combatDodge = slot29
+slot30.combatDodge = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.ent
 	slot3 = slot1
@@ -5568,9 +5614,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.getOwnerActorId = slot29
+slot30.getOwnerActorId = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.getEntityByActorId
@@ -5763,9 +5809,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.getTargetEntityMostHatredEntity = slot29
+slot30.getTargetEntityMostHatredEntity = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -5783,9 +5829,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getSkillElementType = slot29
+slot30.getSkillElementType = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -5794,9 +5840,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getSameTypeSkillId = slot29
+slot30.getSameTypeSkillId = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5841,9 +5887,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getShieldValue = slot29
+slot30.getShieldValue = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5922,9 +5968,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getMaxAttackDist = slot29
+slot30.getMaxAttackDist = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6002,9 +6048,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getMinAttackDist = slot29
+slot30.getMinAttackDist = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -6052,9 +6098,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getSkillStopBoxDist = slot29
+slot30.getSkillStopBoxDist = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.ent
 	slot2 = slot2.curModelScale
@@ -6129,9 +6175,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getMaxSkillDist = slot29
+slot30.getMaxSkillDist = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = nil
 	--- END OF BLOCK #0 ---
@@ -6261,9 +6307,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getCreatedPuppetCount = slot29
+slot30.getCreatedPuppetCount = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = nil
 	--- END OF BLOCK #0 ---
@@ -6393,9 +6439,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.getCreatedCreationCount = slot29
+slot30.getCreatedCreationCount = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = nil
 	--- END OF BLOCK #0 ---
@@ -6568,9 +6614,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.selectOneCreatedPuppetList = slot29
+slot30.selectOneCreatedPuppetList = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = nil
 	--- END OF BLOCK #0 ---
@@ -6743,9 +6789,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.selectOneCreatedCreationList = slot29
+slot30.selectOneCreatedCreationList = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = AIUtils
 	slot2 = slot2.searchInteractEnvObj
@@ -6758,9 +6804,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getInteractEnvObj = slot29
+slot30.getInteractEnvObj = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._removeCustomTimeout
@@ -6775,9 +6821,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.addBuff__resetState = slot29
+slot30.addBuff__resetState = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0.ent
 	slot3 = slot3.actorBuff
@@ -6877,9 +6923,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.addBuff = slot29
+slot30.addBuff = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._removeCustomTimeout
@@ -6894,9 +6940,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.removeBuff__resetState = slot29
+slot30.removeBuff__resetState = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.ent
 	slot2 = slot2.actorBuff
@@ -6995,9 +7041,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.removeBuff = slot29
+slot30.removeBuff = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0.ent
 	slot5 = slot4.aoi
@@ -7120,9 +7166,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.getRangeLowHPTarget = slot29
+slot30.getRangeLowHPTarget = slot31
 
-slot29 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.ent
 	slot3 = slot1
@@ -7172,9 +7218,9 @@ slot29 = function(slot0)
 
 end
 
-slot28.getParmonSkillPlanSubtreePath = slot29
+slot30.getParmonSkillPlanSubtreePath = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7603,9 +7649,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkLinkSkillCanCast = slot29
+slot30.checkLinkSkillCanCast = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -7938,9 +7984,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkLinkSkillExist = slot29
+slot30.checkLinkSkillExist = slot31
 
-slot29 = function(slot0, slot1)
+slot31 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AbilityUtils
 	slot2 = slot2.getAbilityEp
@@ -7954,9 +8000,9 @@ slot29 = function(slot0, slot1)
 
 end
 
-slot28.getSkillEP = slot29
+slot30.getSkillEP = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8092,9 +8138,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkSkillExistByFeatureId = slot29
+slot30.checkSkillExistByFeatureId = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3)
+slot31 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8195,9 +8241,9 @@ slot29 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot28.checkSkillExist = slot29
+slot30.checkSkillExist = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8354,9 +8400,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkNormalAttackByTags = slot29
+slot30.checkNormalAttackByTags = slot31
 
-slot29 = function(slot0, slot1, slot2)
+slot31 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8454,9 +8500,9 @@ slot29 = function(slot0, slot1, slot2)
 
 end
 
-slot28.checkTargetIsTemplate = slot29
+slot30.checkTargetIsTemplate = slot31
 
-slot29 = function(slot0, slot1, slot2, slot3, slot4)
+slot31 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -8597,9 +8643,612 @@ slot29 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot28.searchRangeCreationCountByTemplateId = slot29
+slot30.searchRangeCreationCountByTemplateId = slot31
 
-return slot28
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot6 = slot0.ent
+	--- END OF BLOCK #1 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.getEntityByActorId
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-11, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-17, warpins: 1 ---
+	slot7 = Utils
+	slot7 = slot7.isPlayerOrBotPlayer
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #4 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-19, warpins: 2 ---
+	slot7 = false
+
+	return slot7
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-23, warpins: 2 ---
+	slot7 = ipairs
+	slot9 = slot6.petPrepareList
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #7 24-29, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getEntity
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #7 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #8 30-35, warpins: 1 ---
+	slot13 = AbilityUtils
+	slot13 = slot13.checkEntityIsDead
+	slot15 = slot12
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #8 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #9 36-42, warpins: 1 ---
+	slot13 = slot12.coreAbilityId
+	slot14 = string
+	slot14 = slot14.isNilOrEmpty
+	slot16 = slot2
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #9 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 43-49, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkPetHasSupportTag
+	slot16 = slot12
+	slot17 = slot2
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #10 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #11 50-52, warpins: 2 ---
+	slot14 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot3 >= slot14 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 53-59, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkAbilityInFeatures
+	slot16 = slot13
+	slot17 = slot3
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #12 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #13 60-61, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 62-68, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkAbilityNotInCd
+	slot16 = slot13
+	slot17 = slot12
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #14 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 69-70, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 71-78, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkCanUseSkillByCost
+	slot16 = slot13
+	slot17 = slot12
+	slot18 = true
+	slot14 = slot14(slot16, slot17, slot18)
+	--- END OF BLOCK #16 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 79-80, warpins: 2 ---
+	slot14 = true
+
+	return slot14
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 81-82, warpins: 8 ---
+	--- END OF BLOCK #18 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #19
+
+
+	--- BLOCK #19 83-84, warpins: 1 ---
+	slot7 = false
+
+	return slot7
+	--- END OF BLOCK #19 ---
+
+
+
+end
+
+slot30.checkSupportSkillCanCast = slot31
+
+slot31 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot6 = slot0.ent
+	--- END OF BLOCK #1 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.getEntityByActorId
+	slot8 = slot1
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-11, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-17, warpins: 1 ---
+	slot7 = Utils
+	slot7 = slot7.isPlayerOrBotPlayer
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #4 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-19, warpins: 2 ---
+	slot7 = 0
+
+	return slot7
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-23, warpins: 2 ---
+	slot7 = ipairs
+	slot9 = slot6.petPrepareList
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #7 24-29, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.getEntity
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #7 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #8 30-35, warpins: 1 ---
+	slot13 = AbilityUtils
+	slot13 = slot13.checkEntityIsDead
+	slot15 = slot12
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #8 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #9 36-42, warpins: 1 ---
+	slot13 = slot12.coreAbilityId
+	slot14 = string
+	slot14 = slot14.isNilOrEmpty
+	slot16 = slot2
+	slot14 = slot14(slot16)
+	--- END OF BLOCK #9 ---
+
+	slot14 = if not slot14 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 43-49, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkPetHasSupportTag
+	slot16 = slot12
+	slot17 = slot2
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #10 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #11 50-52, warpins: 2 ---
+	slot14 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot3 >= slot14 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 53-59, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkAbilityInFeatures
+	slot16 = slot13
+	slot17 = slot3
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #12 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #13 60-61, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 62-68, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkAbilityNotInCd
+	slot16 = slot13
+	slot17 = slot12
+	slot14 = slot14(slot16, slot17)
+	--- END OF BLOCK #14 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 69-70, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 71-78, warpins: 1 ---
+	slot14 = AbilityUtils
+	slot14 = slot14.checkCanUseSkillByCost
+	slot16 = slot13
+	slot17 = slot12
+	slot18 = true
+	slot14 = slot14(slot16, slot17, slot18)
+
+	--- END OF BLOCK #16 ---
+
+	slot14 = if slot14 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 79-79, warpins: 2 ---
+	return slot13
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 80-81, warpins: 8 ---
+	--- END OF BLOCK #18 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #19
+
+
+	--- BLOCK #19 82-83, warpins: 1 ---
+	slot7 = 0
+
+	return slot7
+	--- END OF BLOCK #19 ---
+
+
+
+end
+
+slot30.getCanCastSupportSkillId = slot31
+
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0.ent
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.getEntityByActorId
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-11, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-16, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.inBreakRecover
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-17, warpins: 2 ---
+	slot3 = false
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-18, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot30.checkIsInBreakRecover = slot31
+
+slot31 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.abilityMgr
+	slot4 = slot2
+	slot2 = slot2.getAbilityParamData
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot3 = slot2.envSkillTimer
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 13-14, warpins: 1 ---
+	slot3 = slot2.envSkillTimer
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 3 ---
+	slot3 = 0
+
+	return slot3
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot30.getEnvSkillTimer = slot31
+
+return slot30
 --- END OF BLOCK #0 ---
 
 

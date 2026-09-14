@@ -42,8 +42,8 @@ slot3[5] = slot4
 slot2.roleCondition = slot3
 slot1[1] = slot2
 slot2 = {
-	roleType = "附和1",
-	notMustNeed = true
+	notMustNeed = true,
+	roleType = "附和1"
 }
 slot3 = {}
 slot4 = {
@@ -60,8 +60,8 @@ slot3[2] = slot4
 slot2.roleCondition = slot3
 slot1[2] = slot2
 slot2 = {
-	roleType = "附和2",
-	notMustNeed = true
+	notMustNeed = true,
+	roleType = "附和2"
 }
 slot3 = {}
 slot4 = {
@@ -78,8 +78,8 @@ slot3[2] = slot4
 slot2.roleCondition = slot3
 slot1[3] = slot2
 slot2 = {
-	roleType = "附和3",
-	notMustNeed = true
+	notMustNeed = true,
+	roleType = "附和3"
 }
 slot3 = {}
 slot4 = {
@@ -96,8 +96,8 @@ slot3[2] = slot4
 slot2.roleCondition = slot3
 slot1[4] = slot2
 slot2 = {
-	roleType = "附和4",
-	notMustNeed = true
+	notMustNeed = true,
+	roleType = "附和4"
 }
 slot3 = {}
 slot4 = {
@@ -114,8 +114,8 @@ slot3[2] = slot4
 slot2.roleCondition = slot3
 slot1[5] = slot2
 slot2 = {
-	roleType = "附和5",
-	notMustNeed = true
+	notMustNeed = true,
+	roleType = "附和5"
 }
 slot3 = {}
 slot4 = {
@@ -159,8 +159,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPoint01"
+	para = "GBPMsg_ResPoint01",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -180,8 +180,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = "GBPMsg_Common"
+	para = "GBPMsg_Common",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -206,8 +206,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common02"
+	para = "GBPMsg_Common02",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -228,8 +228,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -254,8 +254,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common03"
+	para = "GBPMsg_Common03",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -271,8 +271,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common04"
+	para = "GBPMsg_Common04",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -288,8 +288,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common05"
+	para = "GBPMsg_Common05",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -305,8 +305,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common06"
+	para = "GBPMsg_Common06",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -322,8 +322,8 @@ slot5 = {
 slot4.role = slot5
 slot3[4] = slot4
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common07"
+	para = "GBPMsg_Common07",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -339,8 +339,8 @@ slot5 = {
 slot4.role = slot5
 slot3[5] = slot4
 slot4 = {
-	func = "sendTrigger_Common",
-	para = "GBPMsg_Common08"
+	para = "GBPMsg_Common08",
+	func = "sendTrigger_Common"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -356,8 +356,8 @@ slot5 = {
 slot4.role = slot5
 slot3[6] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"

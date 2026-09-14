@@ -61,7 +61,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-93, warpins: 2 ---
+	--- BLOCK #2 7-92, warpins: 2 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetChild
@@ -141,62 +141,99 @@ slot13 = function(slot0)
 	slot5 = "txtRewardTips"
 	slot2 = slot2(slot4, slot5)
 	slot0.txtRewardTips = slot2
-	slot2 = {}
-	slot0.vxEffUWidgetRows = slot2
-	slot2 = {}
-	slot0.vxEffUWidgetCols = slot2
-	slot2 = 0
-	slot3 = 3
-	slot4 = 1
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.Find
+	slot5 = "SafeBoxMobile/Window/Layout/Widget/Task/BtnReady/TxtName"
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 94-124, warpins: 2 ---
-	slot6 = slot0.vxEffUWidgetRows
-	slot9 = slot1
-	slot7 = slot1.GetRefValue
-	slot10 = "vxEffUWidgetRow"
-	slot11 = slot5
-	slot10 = slot10 .. slot11
-	slot7 = slot7(slot9, slot10)
-	slot6[slot5] = slot7
-	slot6 = slot0.vxEffUWidgetCols
-	slot9 = slot1
-	slot7 = slot1.GetRefValue
-	slot10 = "vxEffUWidgetCol"
-	slot11 = slot5
-	slot10 = slot10 .. slot11
-	slot7 = slot7(slot9, slot10)
-	slot6[slot5] = slot7
-	slot6 = slot0.vxEffUWidgetRows
-	slot6 = slot6[slot5]
-	slot6 = slot6.gameObject
-	slot8 = slot6
-	slot6 = slot6.SetActiveEx
-	slot9 = false
-
-	slot6(slot8, slot9)
-
-	slot6 = slot0.vxEffUWidgetCols
-	slot6 = slot6[slot5]
-	slot6 = slot6.gameObject
-	slot8 = slot6
-	slot6 = slot6.SetActiveEx
-	slot9 = false
-
-	slot6(slot8, slot9)
-
+	--- BLOCK #3 93-98, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.GetComponent
+	slot6 = "USDFText"
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #3 ---
 
-	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #4
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
-	--- BLOCK #4 125-125, warpins: 1 ---
-	return
+
+	--- BLOCK #4 99-99, warpins: 2 ---
+	slot3 = nil
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 100-108, warpins: 2 ---
+	slot0.btnReadyTxtNameUSDFText = slot3
+	slot3 = {}
+	slot0.vxEffUWidgetRows = slot3
+	slot3 = {}
+	slot0.vxEffUWidgetCols = slot3
+	slot3 = 0
+	slot4 = 3
+	slot5 = 1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 109-139, warpins: 2 ---
+	slot7 = slot0.vxEffUWidgetRows
+	slot10 = slot1
+	slot8 = slot1.GetRefValue
+	slot11 = "vxEffUWidgetRow"
+	slot12 = slot6
+	slot11 = slot11 .. slot12
+	slot8 = slot8(slot10, slot11)
+	slot7[slot6] = slot8
+	slot7 = slot0.vxEffUWidgetCols
+	slot10 = slot1
+	slot8 = slot1.GetRefValue
+	slot11 = "vxEffUWidgetCol"
+	slot12 = slot6
+	slot11 = slot11 .. slot12
+	slot8 = slot8(slot10, slot11)
+	slot7[slot6] = slot8
+	slot7 = slot0.vxEffUWidgetRows
+	slot7 = slot7[slot6]
+	slot7 = slot7.gameObject
+	slot9 = slot7
+	slot7 = slot7.SetActiveEx
+	slot10 = false
+
+	slot7(slot9, slot10)
+
+	slot7 = slot0.vxEffUWidgetCols
+	slot7 = slot7[slot6]
+	slot7 = slot7.gameObject
+	slot9 = slot7
+	slot7 = slot7.SetActiveEx
+	slot10 = false
+
+	slot7(slot9, slot10)
+
+	--- END OF BLOCK #6 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #6
+	GO OUT TO BLOCK #7
+
+	--- BLOCK #7 140-140, warpins: 1 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 
@@ -205,29 +242,7 @@ end
 slot10.findObjects = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.checkContentLoaded
-	slot1 = slot1(slot3)
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-45, warpins: 2 ---
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.txtSmallTitle
@@ -268,24 +283,14 @@ slot13 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
-	slot3 = slot0
-	slot1 = slot0.addListener
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.refreshPage
-
-	slot1(slot3)
-
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot10.initView = slot13
+slot10.onContentReady = slot13
 
 slot13 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
@@ -545,7 +550,7 @@ slot13 = function(slot0)
 
 
 	--- BLOCK #3 13-13, warpins: 1 ---
-	slot3 = slot2.eventEndDayTime
+	slot3 = slot2.tabEndDayTime
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -1760,13 +1765,13 @@ slot13 = function(slot0, slot1, slot2)
 
 	slot10(slot12, MULTRES)
 
-	slot10 = nil
-	slot11 = ActivityConst
-	slot11 = slot11.TaskState
-	slot11 = slot11.Received
+	slot10, slot11 = nil
+	slot12 = ActivityConst
+	slot12 = slot12.TaskState
+	slot12 = slot12.Received
 	--- END OF BLOCK #6 ---
 
-	if slot6 ~= slot11 then
+	if slot6 ~= slot12 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
@@ -1774,26 +1779,27 @@ slot13 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #7 82-86, warpins: 1 ---
-	slot11 = ActivityConst
-	slot11 = slot11.TaskState
-	slot11 = slot11.Received_SendMail
+	slot12 = ActivityConst
+	slot12 = slot12.TaskState
+	slot12 = slot12.Received_SendMail
 	--- END OF BLOCK #7 ---
 
-	if slot6 == slot11 then
+	if slot6 == slot12 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 87-88, warpins: 2 ---
+	--- BLOCK #8 87-89, warpins: 2 ---
 	slot10 = 1
+	slot11 = "ECOLOGICAL_RESARCH_FINISH"
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #9 89-90, warpins: 1 ---
+	--- BLOCK #9 90-91, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
 	slot7 = if not slot7 then
@@ -1803,84 +1809,95 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 91-93, warpins: 1 ---
-	slot11 = slot1.taskEvent
+	--- BLOCK #10 92-94, warpins: 1 ---
+	slot12 = slot1.taskEvent
 	--- END OF BLOCK #10 ---
 
-	slot11 = if not slot11 then
+	slot12 = if not slot12 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 94-96, warpins: 1 ---
-	slot11 = slot1.sourceId
+	--- BLOCK #11 95-97, warpins: 1 ---
+	slot12 = slot1.sourceId
 	--- END OF BLOCK #11 ---
 
-	slot11 = if slot11 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 97-98, warpins: 2 ---
+	--- BLOCK #12 98-99, warpins: 2 ---
 	slot10 = 0
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 99-99, warpins: 2 ---
+	--- BLOCK #13 100-101, warpins: 2 ---
 	slot10 = 2
+	slot11 = "ECOLOGICAL_CHAPTER_AWARD_CLAIMABLE"
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 100-113, warpins: 3 ---
-	slot11 = slot0.rootUComponent
-	slot13 = slot11
-	slot11 = slot11.TryChangePage
-	slot14 = "btnstatus"
-	slot15 = slot10
+	--- BLOCK #14 102-110, warpins: 3 ---
+	slot12 = slot0.rootUComponent
+	slot14 = slot12
+	slot12 = slot12.TryChangePage
+	slot15 = "btnstatus"
+	slot16 = slot10
 
-	slot11(slot13, slot14, slot15)
+	slot12(slot14, slot15, slot16)
 
-	slot11 = LuaUIUtils
-	slot11 = slot11.getRewardItemByDropId
-	slot13 = slot1.taskAward
-	slot14 = ActivityConst
-	slot14 = slot14.TaskState
-	slot14 = slot14.Received
+	slot12 = slot0.btnReadyTxtNameUSDFText
 	--- END OF BLOCK #14 ---
 
-	if slot6 ~= slot14 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #15 114-115, warpins: 1 ---
-	slot14 = false
+	--- BLOCK #15 111-112, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	slot11 = if slot11 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
 
 
-	--- BLOCK #16 116-116, warpins: 1 ---
-	slot14 = true
+	--- BLOCK #16 113-120, warpins: 1 ---
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.btnReadyTxtNameUSDFText
+	slot15 = pg
+	slot15 = slot15.getGameString
+	slot17 = slot11
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 117-121, warpins: 2 ---
+	--- BLOCK #17 121-128, warpins: 3 ---
+	slot12 = LuaUIUtils
+	slot12 = slot12.getRewardItemByDropId
+	slot14 = slot1.taskAward
 	slot15 = ActivityConst
 	slot15 = slot15.TaskState
-	slot15 = slot15.Finihed_CanRecv
+	slot15 = slot15.Received
 	--- END OF BLOCK #17 ---
 
 	if slot6 ~= slot15 then
@@ -1890,31 +1907,58 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #18 122-123, warpins: 1 ---
+	--- BLOCK #18 129-130, warpins: 1 ---
 	slot15 = false
 	--- END OF BLOCK #18 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 124-124, warpins: 1 ---
+	--- BLOCK #19 131-131, warpins: 1 ---
 	slot15 = true
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 125-131, warpins: 2 ---
-	slot11 = slot11(slot13, slot14, slot15)
-	slot12 = slot0.listRewardUList
-	slot14 = slot12
-	slot12 = slot12.SetList
-	slot15 = slot11
+	--- BLOCK #20 132-136, warpins: 2 ---
+	slot16 = ActivityConst
+	slot16 = slot16.TaskState
+	slot16 = slot16.Finihed_CanRecv
+	--- END OF BLOCK #20 ---
 
-	slot12(slot14, slot15)
+	if slot6 ~= slot16 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 137-138, warpins: 1 ---
+	slot16 = false
+	--- END OF BLOCK #21 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #22 139-139, warpins: 1 ---
+	slot16 = true
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 140-146, warpins: 2 ---
+	slot12 = slot12(slot14, slot15, slot16)
+	slot13 = slot0.listRewardUList
+	slot15 = slot13
+	slot13 = slot13.SetList
+	slot16 = slot12
+
+	slot13(slot15, slot16)
 
 	return
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #23 ---
 
 
 

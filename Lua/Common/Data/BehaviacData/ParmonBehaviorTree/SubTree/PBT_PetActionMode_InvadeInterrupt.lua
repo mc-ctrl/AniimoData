@@ -7,19 +7,19 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
 	agenttype = "PetAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_PetActionMode_InvadeInterrupt",
-	version = 12
+	version = 12,
+	useForRoute = false,
+	name = "ParmonBehaviorTree/SubTree/PBT_PetActionMode_InvadeInterrupt"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
 	const = 0,
-	name = "tTargetID",
-	value = "0"
+	type = "int",
+	value = "0",
+	name = "tTargetID"
 }
 slot4[1] = slot5
 slot3.pars = slot4

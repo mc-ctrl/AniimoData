@@ -1,4 +1,4 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-83, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,13 +30,16 @@ slot9 = require
 slot11 = "Const.ClientConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.AbilityConst"
+slot12 = "Utils.LuaUIUtils"
 slot10 = slot10(slot12)
-slot11 = slot2.LightClass
-slot13 = "QteTimeline"
+slot11 = require
+slot13 = "Common.Const.AbilityConst"
 slot11 = slot11(slot13)
+slot12 = slot2.LightClass
+slot14 = "QteTimeline"
+slot12 = slot12(slot14)
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.actorId = slot1
 	slot0.groupId = slot2
@@ -121,9 +124,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.ctor = slot12
+slot12.ctor = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.actorId
 	--- END OF BLOCK #0 ---
@@ -157,9 +160,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.getOwner = slot12
+slot12.getOwner = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.destroy
@@ -216,9 +219,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.start = slot12
+slot12.start = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot1.failTime
 	slot3 = slot1.loadTime
@@ -253,9 +256,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.getClipDuration = slot12
+slot12.getClipDuration = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.destroyed
 
@@ -330,9 +333,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.destroy = slot12
+slot12.destroy = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.rumbleName
@@ -399,9 +402,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshQteRumble = slot12
+slot12.refreshQteRumble = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.qteType
 	slot2 = AbilityConst
@@ -513,9 +516,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.refreshQteUIVisible = slot12
+slot12.refreshQteUIVisible = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isFinish
@@ -575,9 +578,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.update = slot12
+slot12.update = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.destroyed
 	--- END OF BLOCK #0 ---
@@ -645,9 +648,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.isFinish = slot12
+slot12.isFinish = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.canBeCancel
@@ -659,9 +662,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.canBeCancel = slot12
+slot12.canBeCancel = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = QteTimelineData
 	slot2 = slot0.groupId
@@ -821,9 +824,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.initClipItems = slot12
+slot12.initClipItems = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.startTime
 	--- END OF BLOCK #0 ---
@@ -983,9 +986,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.genStartTime = slot12
+slot12.genStartTime = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curIndex
 	slot2 = slot0.timelineData
@@ -1074,9 +1077,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.checkClipStart = slot12
+slot12.checkClipStart = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot1.clipClass
 	slot3 = require
@@ -1116,9 +1119,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.createClip = slot12
+slot12.createClip = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = false
 	slot3 = {}
@@ -1217,9 +1220,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot11.updateClips = slot12
+slot12.updateClips = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0.clipResult
 	slot4 = slot1.clipIndex
@@ -1255,9 +1258,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.onClipResult = slot12
+slot12.onClipResult = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.resultReturned
 
@@ -1454,9 +1457,9 @@ slot12 = function(slot0)
 
 end
 
-slot11.pushResult = slot12
+slot12.pushResult = slot13
 
-slot12 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
@@ -1532,9 +1535,9 @@ slot12 = function(slot0, slot1, slot2)
 
 end
 
-slot11.triggerEvent = slot12
+slot12.triggerEvent = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.curIndex
 	slot2 = slot0.timelineData
@@ -1608,9 +1611,242 @@ slot12 = function(slot0)
 
 end
 
-slot11.isAllResultReturned = slot12
+slot12.isAllResultReturned = slot13
 
-return slot11
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot2 = ipairs
+	slot4 = slot0.timelineData
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot7 = slot6.keyType
+	slot8 = QteDef
+	slot8 = slot8.QTE_KEY_TYPE
+	slot8 = slot8.BY_SKILL
+	--- END OF BLOCK #3 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #4 19-22, warpins: 1 ---
+	slot7 = nil
+	slot8 = slot0.context
+	--- END OF BLOCK #4 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 23-26, warpins: 1 ---
+	slot8 = slot0.context
+	slot8 = slot8.abilityId
+	--- END OF BLOCK #5 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 27-32, warpins: 1 ---
+	slot8 = LuaUIUtils
+	slot8 = slot8.getSkillActionPath
+	slot10 = slot0.context
+	slot10 = slot10.abilityId
+	slot8 = slot8(slot10)
+	slot7 = slot8
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 33-34, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 35-37, warpins: 1 ---
+	slot8 = slot6.actionPath
+	--- END OF BLOCK #8 ---
+
+	slot7 = if not slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 38-38, warpins: 1 ---
+	slot7 = ""
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 39-40, warpins: 3 ---
+	--- END OF BLOCK #10 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 41-42, warpins: 1 ---
+	slot8 = true
+
+	return slot8
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 43-44, warpins: 4 ---
+	--- END OF BLOCK #12 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #13
+
+
+	--- BLOCK #13 45-46, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot12.isSkillButtonActionPath = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = slot0.runningClips
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot7 = slot6.clipData
+	slot7 = slot7.keyType
+	slot8 = QteDef
+	slot8 = slot8.QTE_KEY_TYPE
+	slot8 = slot8.BY_SKILL
+	--- END OF BLOCK #1 ---
+
+	if slot7 == slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 12-16, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.getQteActionPath
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 17-21, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.clickBySkillButton
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #3 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-23, warpins: 1 ---
+	slot7 = true
+
+	return slot7
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-25, warpins: 5 ---
+	--- END OF BLOCK #5 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 26-27, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot12.clickSkillButtonQte = slot13
+
+return slot12
 --- END OF BLOCK #0 ---
 
 

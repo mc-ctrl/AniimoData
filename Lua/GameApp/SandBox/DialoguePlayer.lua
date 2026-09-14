@@ -192,13 +192,13 @@ slot4 = function(slot0)
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.dialogue
-	slot4 = slot2
-	slot2 = slot2.isDialogueGraphIdValid
-	slot5 = slot1.dialogueGraphId
-	slot2 = slot2(slot4, slot5)
+	slot5 = slot2
+	slot3 = slot2.isDialogueGraphIdValid
+	slot6 = slot1.dialogueGraphId
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if not slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -212,9 +212,9 @@ slot4 = function(slot0)
 
 
 	--- BLOCK #5 25-30, warpins: 1 ---
-	slot2 = {}
+	slot3 = {}
 
-	slot3 = function(slot0)
+	slot4 = function(slot0)
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.shell
@@ -236,11 +236,11 @@ slot4 = function(slot0)
 
 	end
 
-	slot2.customCallback = slot3
-	slot3 = slot0.playTimes
+	slot3.customCallback = slot4
+	slot4 = slot0.playTimes
 	--- END OF BLOCK #5 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
@@ -248,24 +248,24 @@ slot4 = function(slot0)
 
 
 	--- BLOCK #6 31-31, warpins: 1 ---
-	slot3 = 0
+	slot4 = 0
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
 	--- BLOCK #7 32-47, warpins: 2 ---
-	slot3 = slot3 + 1
-	slot0.playTimes = slot3
-	slot3 = slot0.playTimes
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.dialogue
-	slot6 = slot4
-	slot4 = slot4.playDialogueGraph
-	slot7 = slot1.dialogueGraphId
+	slot4 = slot4 + 1
+	slot0.playTimes = slot4
+	slot4 = slot0.playTimes
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.dialogue
+	slot7 = slot5
+	slot5 = slot5.playDialogueGraph
+	slot8 = slot1.dialogueGraphId
 
-	slot8 = function(slot0, slot1)
+	slot9 = function(slot0, slot1)
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot2 = self
 		slot2 = slot2.playTimes
@@ -304,11 +304,11 @@ slot4 = function(slot0)
 
 	end
 
-	slot9 = slot1.graphParam
-	slot10 = slot1.graphContextParam
-	slot11 = slot2
+	slot10 = slot1.graphParam
+	slot11 = slot1.graphContextParam
+	slot12 = slot3
 
-	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
 
 	return
 	--- END OF BLOCK #7 ---

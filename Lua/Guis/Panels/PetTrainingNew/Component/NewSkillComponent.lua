@@ -1,4 +1,4 @@
---- BLOCK #0 1-123, warpins: 1 ---
+--- BLOCK #0 1-128, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -57,13 +57,20 @@ slot17 = slot17(slot19)
 slot18 = require
 slot20 = "Common.NoticeDef"
 slot18 = slot18(slot20)
-slot19 = {
+slot19 = require
+slot21 = "Utils.PetManagementDataHelper"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Data.guidence_sub_item_data"
+slot20 = slot20(slot22)
+slot21 = {
 	Upgrade = 1,
 	None = 0,
 	Upgraded = 2
 }
+slot22 = "CARRY_CERT_SKILL_TIP"
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot0.newSkillUContent = slot2
 	slot4 = slot3.imgPetUImage
@@ -84,10 +91,10 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.ctor = slot20
+slot5.ctor = slot23
 
-slot20 = function(slot0)
-	--- BLOCK #0 1-287, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-314, warpins: 1 ---
 	slot1 = slot0.newSkillUContent
 	slot1 = slot1.transform
 	slot3 = slot1
@@ -362,15 +369,9 @@ slot20 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "btnStrengthenUButton"
+	slot4 = "strengthenUWidget"
 	slot1 = slot1(slot3, slot4)
-	slot0.btnStrengthenUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "btnReadyUWidget"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnReadyUWidget = slot1
+	slot0.strengthenUWidget = slot1
 	slot1 = slot0.btnSwitchUButton
 
 	slot2 = function()
@@ -396,16 +397,123 @@ slot20 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	return
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "contactTipsUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.contactTipsUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnInfoUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnInfoUButton = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtTipsUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtTipsUSDFText = slot1
+	slot1 = slot0.strengthenUWidget
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtTipsUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = CORE_CARRY_CERT_SKILL_TIP
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = PetManagementDataHelper
+	slot1 = slot1.PetCoreCarryContactHelpId
 	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 315-316, warpins: 1 ---
+	slot2 = GuidenceSubItemData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 317-323, warpins: 2 ---
+	slot3 = slot0.btnInfoUButton
+	slot5 = slot3
+	slot3 = slot3.SetActive
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 324-329, warpins: 1 ---
+	slot3 = slot0.btnInfoUButton
+	slot4 = false
+	slot3.enabledTooltip = slot4
+	slot3 = slot0.btnInfoUButton
+
+	slot4 = function()
+		--- BLOCK #0 1-12, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_HELP
+		slot4 = {}
+		slot5 = cfgHelpId
+		slot4.helpId = slot5
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot3.luaClick = slot4
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 330-331, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot5.findObjects = slot20
+slot5.findObjects = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.btnSkillPresetsUButton
 
@@ -475,9 +583,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.initView = slot20
+slot5.initView = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-63, warpins: 1 ---
 	slot2 = true
 	slot0.firstInForCurSelectedBtn = slot2
@@ -733,9 +841,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.init = slot20
+slot5.init = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = slot0.btnFeaturesUButton
 	slot4 = slot2
@@ -882,9 +990,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.setFeature = slot20
+slot5.setFeature = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-45, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -956,7 +1064,24 @@ slot20 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 52-74, warpins: 2 ---
+	--- BLOCK #2 52-58, warpins: 2 ---
+	slot4 = slot0.skillUniqRayBoxUWidget
+	slot6 = slot4
+	slot4 = slot4.SetActive
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 59-64, warpins: 1 ---
 	slot4 = TimerManager
 	slot4 = slot4.addTimer
 	slot6 = 0.1
@@ -983,6 +1108,12 @@ slot20 = function(slot0, slot1)
 
 	slot4 = slot4(slot6, slot7)
 	slot0.delayTimer = slot4
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 65-81, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.renderSkillCmp
 	slot7 = slot0.btnNormalSkill1UButton
@@ -1002,60 +1133,60 @@ slot20 = function(slot0, slot1)
 	slot4.name = slot5
 	slot4 = slot0.btnNormalSkill1UButton
 	slot5 = slot0.qSkillInfo
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	if slot5 == nil then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 75-76, warpins: 1 ---
+	--- BLOCK #5 82-83, warpins: 1 ---
 	slot5 = false
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 77-77, warpins: 1 ---
+	--- BLOCK #6 84-84, warpins: 1 ---
 	slot5 = true
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 78-85, warpins: 2 ---
+	--- BLOCK #7 85-92, warpins: 2 ---
 	slot4.draggable = slot5
 	slot4 = slot0.btnNormalSkill2UButton
 	slot5 = "2"
 	slot4.name = slot5
 	slot4 = slot0.btnNormalSkill2UButton
 	slot5 = slot0.eSkillInfo
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	if slot5 == nil then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 86-87, warpins: 1 ---
+	--- BLOCK #8 93-94, warpins: 1 ---
 	slot5 = false
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #7 88-88, warpins: 1 ---
+	--- BLOCK #9 95-95, warpins: 1 ---
 	slot5 = true
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 89-108, warpins: 2 ---
+	--- BLOCK #10 96-110, warpins: 2 ---
 	slot4.draggable = slot5
 	slot6 = slot0
 	slot4 = slot0.renderExploreSkillCmp
@@ -1072,12 +1203,57 @@ slot20 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8)
 
+	slot4 = slot0.exploreRayBoxDelayTimer
+	--- END OF BLOCK #10 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 111-116, warpins: 1 ---
+	slot4 = TimerManager
+	slot4 = slot4.removeTimer
+	slot6 = slot0.exploreRayBoxDelayTimer
+
+	slot4(slot6)
+
+	slot4 = nil
+	slot0.exploreRayBoxDelayTimer = slot4
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 117-123, warpins: 2 ---
+	slot4 = slot0.exploreRayBoxUWidget
+	slot6 = slot4
+	slot4 = slot4.SetActive
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #12 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 124-129, warpins: 1 ---
 	slot4 = TimerManager
 	slot4 = slot4.addTimer
 	slot6 = 0.1
 
 	slot7 = function()
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.exploreRayBoxDelayTimer = slot1
 		slot0 = self
 		slot0 = slot0.exploreRayBoxUWidget
 		slot2 = slot0
@@ -1093,50 +1269,56 @@ slot20 = function(slot0, slot1)
 
 	end
 
-	slot4(slot6, slot7)
+	slot4 = slot4(slot6, slot7)
+	slot0.exploreRayBoxDelayTimer = slot4
+	--- END OF BLOCK #13 ---
 
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 130-132, warpins: 2 ---
 	slot4 = slot0.firstInForCurSelectedBtn
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #14 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #9 109-112, warpins: 1 ---
+	--- BLOCK #15 133-136, warpins: 1 ---
 	slot4 = slot0.btnNormalSkill1UButton
 	slot4 = slot4.luaPress
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #15 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #10 113-115, warpins: 1 ---
+	--- BLOCK #16 137-139, warpins: 1 ---
 	slot4 = slot0.btnNormalSkill1UButton
 	slot4 = slot4.luaPress
 
 	slot4()
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #11 116-117, warpins: 2 ---
+	--- BLOCK #17 140-141, warpins: 2 ---
 	slot4 = nil
 	slot0.firstInForCurSelectedBtn = slot4
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #12 118-123, warpins: 2 ---
+	--- BLOCK #18 142-147, warpins: 2 ---
 	slot4 = TimerManager
 	slot4 = slot4.addNextFrameCb
 
@@ -1202,40 +1384,70 @@ slot20 = function(slot0, slot1)
 
 		--- END OF BLOCK #3 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-		--- BLOCK #4 34-45, warpins: 1 ---
+		--- BLOCK #4 34-41, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
 		slot0 = slot0.getPetInfo
 		slot3 = petId
 		slot0 = slot0(slot2, slot3)
-		slot1 = slot0.abilityPresetMap
-		slot2 = slot0.curAbilityPreset
-		slot1 = slot1[slot2]
-		slot1 = slot1.name
 		--- END OF BLOCK #4 ---
 
-		slot1 = if slot1 then
+		slot0 = if slot0 then
 		JUMP TO BLOCK #5
 		else
-		JUMP TO BLOCK #7
+		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #5 46-47, warpins: 1 ---
+		--- BLOCK #5 42-44, warpins: 1 ---
+		slot1 = slot0.abilityPresetMap
+
 		--- END OF BLOCK #5 ---
 
-		if slot1 ~= "" then
+		slot1 = if not slot1 then
 		JUMP TO BLOCK #6
 		else
 		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #6 48-54, warpins: 1 ---
+		--- BLOCK #6 45-45, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 46-51, warpins: 2 ---
+		slot1 = slot0.abilityPresetMap
+		slot2 = slot0.curAbilityPreset
+		slot1 = slot1[slot2]
+		slot1 = slot1.name
+		--- END OF BLOCK #7 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #8 52-53, warpins: 1 ---
+		--- END OF BLOCK #8 ---
+
+		if slot1 ~= "" then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 54-60, warpins: 1 ---
 		slot2 = ClientTextUtils
 		slot2 = slot2.setText
 		slot4 = self
@@ -1244,12 +1456,12 @@ slot20 = function(slot0, slot1)
 
 		slot2(slot4, slot5)
 
-		--- END OF BLOCK #6 ---
+		--- END OF BLOCK #9 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-		--- BLOCK #7 55-67, warpins: 2 ---
+		--- BLOCK #10 61-73, warpins: 2 ---
 		slot2 = ClientTextUtils
 		slot2 = slot2.setText
 		slot4 = self
@@ -1265,14 +1477,14 @@ slot20 = function(slot0, slot1)
 
 		slot2(slot4, MULTRES)
 
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #10 ---
 
-		FLOW; TARGET BLOCK #8
+		FLOW; TARGET BLOCK #11
 
 
-		--- BLOCK #8 68-68, warpins: 3 ---
+		--- BLOCK #11 74-74, warpins: 3 ---
 		return
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #11 ---
 
 
 
@@ -1281,36 +1493,88 @@ slot20 = function(slot0, slot1)
 	slot4(slot6)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot5.refreshSkillList = slot20
+slot5.refreshSkillList = slot23
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
+	--- BLOCK #1 3-13, warpins: 1 ---
+	slot4 = LuaUIUtils
+	slot4 = slot4.renderSkillHeadComp
+	slot6 = slot1
+	slot7 = nil
+	slot8 = slot0.petInfo
+	slot9 = true
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = nil
+	slot1.luaTooltipPopup = slot4
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 5-18, warpins: 1 ---
+	--- BLOCK #2 14-18, warpins: 1 ---
+	slot4 = slot0.uniqueUWidget
+	slot6 = slot4
+	slot4 = slot4.SetActive
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-23, warpins: 2 ---
+	slot6 = slot1
+	slot4 = slot1.SetActive
+	slot7 = not slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 24-29, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.SetActive
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 30-42, warpins: 1 ---
 	slot4 = slot0.uniqueUWidget
 	slot6 = slot4
 	slot4 = slot4.SetActive
@@ -1328,25 +1592,12 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 	slot4(slot6, MULTRES)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #3 19-23, warpins: 1 ---
-	slot4 = slot0.uniqueUWidget
-	slot6 = slot4
-	slot4 = slot4.SetActive
-	slot7 = false
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 24-36, warpins: 3 ---
+	--- BLOCK #6 43-55, warpins: 2 ---
 	slot4 = function(slot0, slot1)
 		--- BLOCK #0 1-13, warpins: 1 ---
 		slot2 = self
@@ -1470,15 +1721,22 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 56-56, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot5.renderSkillCmp = slot20
+slot5.renderSkillCmp = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.btnNormalSkill1UButton
 	slot4 = slot2
@@ -1559,9 +1817,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.onSelectedBtnChanged = slot20
+slot5.onSelectedBtnChanged = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.allSkillsList
 	slot4 = slot2
@@ -1637,9 +1895,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.onSelectedSkillBtnChanged = slot20
+slot5.onSelectedSkillBtnChanged = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1884,10 +2142,42 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.refreshReplaceBtnState = slot20
+slot5.refreshReplaceBtnState = slot23
 
-slot20 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-26, warpins: 1 ---
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot3 = false
+	slot1.enabledTooltip = slot3
+	slot5 = slot1
+	slot3 = slot1.SetActive
+	slot6 = false
+
+	slot3(slot5, slot6)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-56, warpins: 2 ---
+	slot5 = slot1
+	slot3 = slot1.SetActive
+	slot6 = true
+
+	slot3(slot5, slot6)
+
 	slot5 = slot1
 	slot3 = slot1.TryChangePage
 	slot6 = "State"
@@ -1916,33 +2206,6 @@ slot20 = function(slot0, slot1, slot2)
 	slot5 = slot3.GetRefValue
 	slot8 = "txtNameUSDFText"
 	slot5 = slot5(slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 27-34, warpins: 1 ---
-	slot6 = ""
-	slot4.url = slot6
-	slot6 = ClientTextUtils
-	slot6 = slot6.setText
-	slot8 = slot5
-	slot9 = ""
-
-	slot6(slot8, slot9)
-
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 35-53, warpins: 2 ---
 	slot8 = slot1
 	slot6 = slot1.TryChangePage
 	slot9 = "State"
@@ -1972,9 +2235,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot5.renderExploreSkillCmp = slot20
+slot5.renderExploreSkillCmp = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.allSkillsList
 	slot3 = slot1
@@ -2014,9 +2277,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.refreshAllSkillsBtnState = slot20
+slot5.refreshAllSkillsBtnState = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -2108,9 +2371,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot5.refreshEquipmentStatus = slot20
+slot5.refreshEquipmentStatus = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -2226,9 +2489,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.refreshAllSkills = slot20
+slot5.refreshAllSkills = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot0.curSelectedSkillBtn = slot1
 	slot3 = slot0.allSkillsList
@@ -2298,9 +2561,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot5.onSkillBtnClick = slot20
+slot5.onSkillBtnClick = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ctrl
 	--- END OF BLOCK #0 ---
@@ -2344,9 +2607,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.dragStateChanged = slot20
+slot5.dragStateChanged = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-35, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
@@ -2981,9 +3244,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot5.renderSkillBtn = slot20
+slot5.renderSkillBtn = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3015,9 +3278,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.onClickSkillPresetsButton = slot20
+slot5.onClickSkillPresetsButton = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.model
 	slot3 = slot3.IS_PVP_FAIL_MODE
@@ -3226,9 +3489,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot5.modifySkill = slot20
+slot5.modifySkill = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3347,9 +3610,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot5.refreshSkillInfoByAbilityId = slot20
+slot5.refreshSkillInfoByAbilityId = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3379,7 +3642,7 @@ slot20 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 8-19, warpins: 1 ---
+	--- BLOCK #3 8-24, warpins: 1 ---
 	slot2 = slot0.skillInfoUComponent
 	slot2 = slot2.gameObject
 	slot4 = slot2
@@ -3395,12 +3658,19 @@ slot20 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = slot0.contactTipsUWidget
+	slot4 = slot2
+	slot2 = slot2.SetActive
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #4 20-56, warpins: 1 ---
+	--- BLOCK #4 25-61, warpins: 1 ---
 	slot2 = slot0.skillInfoUComponent
 	slot2 = slot2.gameObject
 	slot4 = slot2
@@ -3451,7 +3721,7 @@ slot20 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 57-73, warpins: 1 ---
+	--- BLOCK #5 62-78, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.txtName
@@ -3476,7 +3746,7 @@ slot20 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 74-145, warpins: 2 ---
+	--- BLOCK #6 79-167, warpins: 2 ---
 	slot2 = slot0.iconSkillUImage
 	slot3 = LuaUIUtils
 	slot3 = slot3.getSkillIcon
@@ -3557,278 +3827,103 @@ slot20 = function(slot0, slot1)
 
 	slot4(slot6, slot7, slot8, slot9)
 
-	slot4 = slot0.listTagUList
+	slot4 = LuaUIUtils
+	slot4 = slot4.generalRefreshSkillTags
+	slot6 = slot0.tagTypeUWidget
+	slot7 = slot0.listTagUList
+	slot8 = slot0.skillInfoData
+	slot9 = slot0.skillInfoData
+	slot9 = slot9.tagList
 
-	slot5 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-17, warpins: 1 ---
-		slot5 = slot0
-		slot3 = slot0.GetComponent
-		slot6 = "ObjectReference"
-		slot3 = slot3(slot5, slot6)
-		slot6 = slot3
-		slot4 = slot3.GetRefValue
-		slot7 = "txtNameUText"
-		slot4 = slot4(slot6, slot7)
-		slot5 = ClientTextUtils
-		slot5 = slot5.setText
-		slot7 = slot4
-		slot8 = pg
-		slot8 = slot8.getLocalizationText
-		slot10 = slot2.tagName
-		MULTRES = slot8(slot10)
+	slot4(slot6, slot7, slot8, slot9)
 
-		slot5(slot7, MULTRES)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot4.luaRenderItem = slot5
-	slot4 = slot0.listTagUList
-	slot6 = slot4
-	slot4 = slot4.SetList
+	slot6 = slot0
+	slot4 = slot0.getSkillGlazeType
 	slot7 = slot0.skillInfoData
-	slot7 = slot7.tagList
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.skillInfoData
-	slot4 = slot4.attackType
-	--- END OF BLOCK #6 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #7 146-159, warpins: 1 ---
-	slot5 = slot0.tagTypeUWidget
-	slot7 = slot5
-	slot5 = slot5.SetActive
-	slot8 = true
-
-	slot5(slot7, slot8)
-
-	slot5 = slot0.tagTypeUWidget
+	slot4 = slot4(slot6, slot7)
+	slot5 = slot0.skillInfoUComponent
 	slot7 = slot5
 	slot5 = slot5.TryChangePage
-	slot8 = "TagType"
-	slot9 = UIConst
-	slot9 = slot9.SkillAtkType2UITag
-	slot9 = slot9[slot4]
-	--- END OF BLOCK #7 ---
+	slot8 = "Type"
+	slot9 = slot4
 
-	slot9 = if not slot9 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 160-160, warpins: 1 ---
-	slot9 = 0
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 161-171, warpins: 2 ---
 	slot5(slot7, slot8, slot9)
 
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot0.txtTypeUSDFText
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = UIConst
-	slot10 = slot10.SkillAtkTypeTagStrKey
-	slot10 = slot10[slot4]
-	--- END OF BLOCK #9 ---
-
-	slot10 = if not slot10 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 172-172, warpins: 1 ---
-	slot10 = ""
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 173-175, warpins: 2 ---
-	MULTRES = slot8(slot10)
-
-	slot5(slot7, MULTRES)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
-
-
-	--- BLOCK #12 176-180, warpins: 1 ---
-	slot5 = slot0.tagTypeUWidget
+	slot5 = slot0.strengthenUWidget
 	slot7 = slot5
 	slot5 = slot5.SetActive
 	slot8 = false
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #12 ---
+	slot5 = slot0.contactTipsUWidget
+	slot7 = slot5
+	slot5 = slot5.SetActive
+	slot8 = GlazeType
+	slot8 = slot8.None
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #13
+	if slot8 < slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #13 181-204, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.getSkillGlazeType
+	--- BLOCK #7 168-171, warpins: 1 ---
 	slot8 = slot0.skillInfoData
-	slot5 = slot5(slot7, slot8)
-	slot6 = slot0.skillInfoUComponent
-	slot8 = slot6
-	slot6 = slot6.TryChangePage
-	slot9 = "Type"
-	slot10 = slot5
+	slot8 = slot8.alreadyGlazed
+	slot8 = not slot8
+	--- END OF BLOCK #7 ---
 
-	slot6(slot8, slot9, slot10)
-
-	slot6 = slot0.btnStrengthenUButton
-
-	slot7 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.popUpSkillConfirmDialog
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
+	--- BLOCK #8 172-173, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #8 ---
 
-	end
-
-	slot6.luaClick = slot7
-	slot6 = slot0.ctrl
-	slot8 = slot6
-	slot6 = slot6.isInRogueDungeon
-	slot6 = slot6(slot8)
-	slot7 = slot0.btnStrengthenUButton
-	slot8 = not slot6
-	slot7.interactable = slot8
-	slot7 = GlazeType
-	slot7 = slot7.None
-	--- END OF BLOCK #13 ---
-
-	if slot7 < slot5 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #18
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #14 205-208, warpins: 1 ---
-	slot7 = GlazeType
-	slot7 = slot7.Upgraded
-	--- END OF BLOCK #14 ---
+	--- BLOCK #9 174-174, warpins: 0 ---
+	slot8 = true
 
-	if slot5 == slot7 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #15 209-219, warpins: 1 ---
-	slot7 = slot0.btnStrengthenUButton
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = false
+	--- BLOCK #10 175-184, warpins: 3 ---
+	slot5(slot7, slot8)
 
-	slot7(slot9, slot10)
+	slot5 = GlazeType
+	slot5 = slot5.None
+	slot0.recordDescType = slot5
+	slot5 = nil
+	slot0.pairedSkillInfoCache = slot5
+	slot7 = slot0
+	slot5 = slot0.refreshSwitchSkillDescButtonState
 
-	slot7 = slot0.btnReadyUWidget
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = true
-
-	slot7(slot9, slot10)
-
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #16 220-223, warpins: 1 ---
-	slot7 = GlazeType
-	slot7 = slot7.Upgrade
-	--- END OF BLOCK #16 ---
-
-	if slot5 == slot7 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 224-233, warpins: 1 ---
-	slot7 = slot0.btnStrengthenUButton
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = true
-
-	slot7(slot9, slot10)
-
-	slot7 = slot0.btnReadyUWidget
-	slot9 = slot7
-	slot7 = slot7.SetActive
-	slot10 = false
-
-	slot7(slot9, slot10)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 234-243, warpins: 4 ---
-	slot7 = GlazeType
-	slot7 = slot7.None
-	slot0.recordDescType = slot7
-	slot7 = nil
-	slot0.pairedSkillInfoCache = slot7
-	slot9 = slot0
-	slot7 = slot0.refreshSwitchSkillDescButtonState
-
-	slot7(slot9)
+	slot5(slot7)
 
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #19 244-244, warpins: 2 ---
+	--- BLOCK #11 185-185, warpins: 2 ---
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot5.refreshSkillInfo = slot20
+slot5.refreshSkillInfo = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3889,9 +3984,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.playRefreshAnim = slot20
+slot5.playRefreshAnim = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSelectedSkillBtn
 	--- END OF BLOCK #0 ---
@@ -4102,9 +4197,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.onStudyBtnClick = slot20
+slot5.onStudyBtnClick = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = NoticeDef
 	slot2 = slot2.SUCCESS
@@ -4199,10 +4294,60 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.callbackOnLearnSkill = slot20
+slot5.callbackOnLearnSkill = slot23
 
-slot20 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.delayTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.delayTimer
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.delayTimer = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot1 = slot0.exploreRayBoxDelayTimer
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.exploreRayBoxDelayTimer
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.exploreRayBoxDelayTimer = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-29, warpins: 2 ---
 	slot1 = nil
 	slot0.curSelectedBtn = slot1
 	slot1 = nil
@@ -4216,15 +4361,15 @@ slot20 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot5.onDestroy = slot20
+slot5.onDestroy = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4301,9 +4446,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.getSkillGlazeType = slot20
+slot5.getSkillGlazeType = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.skillInfoData
 
@@ -4508,9 +4653,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.onClickSwitchSkillDesc = slot20
+slot5.onClickSwitchSkillDesc = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSkillGlazeType
@@ -4582,9 +4727,9 @@ slot20 = function(slot0)
 
 end
 
-slot5.refreshSwitchSkillDescButtonState = slot20
+slot5.refreshSwitchSkillDescButtonState = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = LuaUIUtils
 	slot2 = slot2.getSkillDesc
@@ -4612,9 +4757,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.refreshSwitchSkillDesc = slot20
+slot5.refreshSwitchSkillDesc = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = LuaUIUtils
 	slot2 = slot2.setRenderNewPetSkillAttrsList
@@ -4630,54 +4775,7 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot5.refreshAttributeList = slot20
-
-slot20 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.skillInfoData
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-19, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.open
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_PET_MANAGEMENT_UPSKILL
-	slot5 = {}
-	slot6 = slot0.skillInfoData
-	slot5.skillInfoData = slot6
-	slot6 = slot0.ctrl
-	slot6 = slot6.petInfo
-	slot5.petInfo = slot6
-
-	slot1(slot3, slot4, slot5)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot5.popUpSkillConfirmDialog = slot20
+slot5.refreshAttributeList = slot23
 
 return slot5
 --- END OF BLOCK #0 ---

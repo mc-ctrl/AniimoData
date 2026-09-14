@@ -20,11 +20,8 @@ slot8 = slot0
 slot5 = slot5(slot7, slot8)
 
 slot6 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-28, warpins: 1 ---
-	slot7 = slot2
-	slot5 = slot2.getRawTable
-	slot5 = slot5(slot7)
-	slot0.item = slot5
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot0.item = slot2
 	slot5 = Const
 	slot5 = slot5.PET_BALL
 	slot5 = slot5.HATCH_STATUS_START
@@ -1331,35 +1328,52 @@ end
 slot5._checkFinishHatch = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-27, warpins: 1 ---
-	slot1 = {}
-	slot2 = slot0.status
-	slot1.status = slot2
-	slot2 = slot0.item
-	slot4 = slot2
-	slot2 = slot2.getRawTable
-	slot2 = slot2(slot4)
-	slot1.item = slot2
-	slot2 = slot0.endTime
-	slot1.endTime = slot2
-	slot2 = slot0.currentEnvFactor
-	slot1.currentEnvFactor = slot2
-	slot2 = slot0.homeCarSpeedUpFactor
-	slot1.homeCarSpeedUpFactor = slot2
-	slot2 = slot0.itemSpeedUpCount
-	slot1.itemSpeedUpCount = slot2
-	slot2 = slot0.todayTotalFondleCount
-	slot1.todayTotalFondleCount = slot2
-	slot2 = slot0.accumulatedProgress
-	slot1.accumulatedProgress = slot2
-	slot2 = slot0.lastRateChangeTime
-	slot1.lastRateChangeTime = slot2
-	slot2 = slot0.totalTimeReductionRate
-	slot1.totalTimeReductionRate = slot2
-	slot2 = slot0.totalFixedReduction
-	slot1.totalFixedReduction = slot2
+	--- BLOCK #0 1-44, warpins: 1 ---
+	slot1 = slot0.item
+	slot2 = {}
+	slot3 = slot0.status
+	slot2.status = slot3
+	slot3 = {}
+	slot4 = slot1.genID
+	slot3.genID = slot4
+	slot4 = slot1.id
+	slot3.id = slot4
+	slot4 = slot1.count
+	slot3.count = slot4
+	slot4 = slot1.status
+	slot3.status = slot4
+	slot4 = slot1.useTimes
+	slot3.useTimes = slot4
+	slot4 = slot1.extraProp
+	slot3.extraProp = slot4
+	slot4 = slot1.props
+	slot6 = slot4
+	slot4 = slot4.getRawTable
+	slot4 = slot4(slot6)
+	slot3.props = slot4
+	slot4 = slot1.owner
+	slot3.owner = slot4
+	slot2.item = slot3
+	slot3 = slot0.endTime
+	slot2.endTime = slot3
+	slot3 = slot0.currentEnvFactor
+	slot2.currentEnvFactor = slot3
+	slot3 = slot0.homeCarSpeedUpFactor
+	slot2.homeCarSpeedUpFactor = slot3
+	slot3 = slot0.itemSpeedUpCount
+	slot2.itemSpeedUpCount = slot3
+	slot3 = slot0.todayTotalFondleCount
+	slot2.todayTotalFondleCount = slot3
+	slot3 = slot0.accumulatedProgress
+	slot2.accumulatedProgress = slot3
+	slot3 = slot0.lastRateChangeTime
+	slot2.lastRateChangeTime = slot3
+	slot3 = slot0.totalTimeReductionRate
+	slot2.totalTimeReductionRate = slot3
+	slot3 = slot0.totalFixedReduction
+	slot2.totalFixedReduction = slot3
 
-	return slot1
+	return slot2
 	--- END OF BLOCK #0 ---
 
 

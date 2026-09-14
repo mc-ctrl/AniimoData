@@ -1,4 +1,4 @@
---- BLOCK #0 1-3831, warpins: 1 ---
+--- BLOCK #0 1-3763, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,81 +7,81 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	version = 63,
+	useForRoute = false,
 	agenttype = "PuppetAgent",
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10212",
-	version = 61,
-	useForRoute = false
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10212"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_ComboAttack",
-	value = "0",
 	const = 0
 }
 slot4[1] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120100",
-	value = "0",
 	const = 0
 }
 slot4[2] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120200",
-	value = "0",
 	const = 0
 }
 slot4[3] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120300",
-	value = "0",
 	const = 0
 }
 slot4[4] = slot5
 slot5 = {
+	value = "0",
 	type = "float",
 	name = "skillStopDist",
-	value = "0",
 	const = 0
 }
 slot4[5] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tPlayer",
-	value = "0",
 	const = 0
 }
 slot4[6] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120500",
-	value = "0",
 	const = 0
 }
 slot4[7] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120140",
-	value = "0",
 	const = 0
 }
 slot4[8] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120141",
-	value = "0",
 	const = 0
 }
 slot4[9] = slot5
 slot5 = {
+	value = "0",
 	type = "int",
 	name = "tSkill_12120142",
-	value = "0",
 	const = 0
 }
 slot4[10] = slot5
@@ -732,63 +732,6 @@ slot23 = {}
 slot22.children = slot23
 slot21.node = slot22
 slot20[2] = slot21
-slot21 = {}
-slot22 = {
-	id = "451",
-	class = "Action"
-}
-slot23 = {}
-slot24 = {}
-slot25 = {
-	func = "playPhaseAction"
-}
-slot26 = {}
-slot27 = {
-	const = "Behav_SleepStart"
-}
-slot26[1] = slot27
-slot27 = {
-	const = "Behav_SleepLoop"
-}
-slot26[2] = slot27
-slot27 = {
-	const = "Behav_SleepEnd"
-}
-slot26[3] = slot27
-slot27 = {
-	const = 10
-}
-slot26[4] = slot27
-slot27 = {
-	const = ""
-}
-slot26[5] = slot27
-slot27 = {
-	const = false
-}
-slot26[6] = slot27
-slot27 = {
-	const = false
-}
-slot26[7] = slot27
-slot25.params = slot26
-slot24.Method = slot25
-slot23[1] = slot24
-slot24 = {
-	ResultOption = "BT_INVALID"
-}
-slot23[2] = slot24
-slot24 = {
-	ResultResumeOption = "BT_NextNode"
-}
-slot23[3] = slot24
-slot22.properties = slot23
-slot23 = {}
-slot22.attachments = slot23
-slot23 = {}
-slot22.children = slot23
-slot21.node = slot22
-slot20[3] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[2] = slot18
@@ -1831,63 +1774,6 @@ slot38 = {}
 slot37.children = slot38
 slot36.node = slot37
 slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	id = "452",
-	class = "Action"
-}
-slot38 = {}
-slot39 = {}
-slot40 = {
-	func = "playPhaseAction"
-}
-slot41 = {}
-slot42 = {
-	const = "Behav_SleepStart"
-}
-slot41[1] = slot42
-slot42 = {
-	const = "Behav_SleepLoop"
-}
-slot41[2] = slot42
-slot42 = {
-	const = "Behav_SleepEnd"
-}
-slot41[3] = slot42
-slot42 = {
-	const = 10
-}
-slot41[4] = slot42
-slot42 = {
-	const = ""
-}
-slot41[5] = slot42
-slot42 = {
-	const = false
-}
-slot41[6] = slot42
-slot42 = {
-	const = false
-}
-slot41[7] = slot42
-slot40.params = slot41
-slot39.Method = slot40
-slot38[1] = slot39
-slot39 = {
-	ResultOption = "BT_INVALID"
-}
-slot38[2] = slot39
-slot39 = {
-	ResultResumeOption = "BT_NextNode"
-}
-slot38[3] = slot39
-slot37.properties = slot38
-slot38 = {}
-slot37.attachments = slot38
-slot38 = {}
-slot37.children = slot38
-slot36.node = slot37
-slot35[3] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33

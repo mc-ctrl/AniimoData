@@ -1,4 +1,4 @@
---- BLOCK #0 1-80, warpins: 1 ---
+--- BLOCK #0 1-82, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -37,7 +37,7 @@ slot9 = function(slot0)
 	slot1 = {}
 	slot0.preloadItems = slot1
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.lastTickTime = slot1
 	slot1 = {}
 	slot0._temp_remove = slot1
@@ -654,7 +654,7 @@ slot8.containsQteTimeline = slot9
 slot9 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastTickTime
 	slot2 = slot1 - slot2
 	slot3 = table
@@ -1819,6 +1819,123 @@ slot9 = function(slot0)
 end
 
 slot8.testChargeQteResult = slot9
+
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isQtePlaying
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.isNilOrEmpty
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-18, warpins: 2 ---
+	slot2 = false
+	slot3 = ipairs
+	slot5 = slot0.timelineList
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 19-23, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.isFinish
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #4 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 24-29, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.isSkillButtonActionPath
+	slot11 = slot1
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #5 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 30-36, warpins: 1 ---
+	slot2 = true
+	slot10 = slot7
+	slot8 = slot7.clickSkillButtonQte
+	slot11 = slot1
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #6 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 37-38, warpins: 1 ---
+	slot8 = true
+
+	return slot8
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 39-40, warpins: 5 ---
+	--- END OF BLOCK #8 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 41-41, warpins: 1 ---
+	return slot2
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot8.handleMobileSkillButtonClick = slot9
 
 return slot8
 --- END OF BLOCK #0 ---

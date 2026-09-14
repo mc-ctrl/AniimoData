@@ -283,9 +283,64 @@ end
 slot2.registerObjects = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	slot3 = slot1
+	slot1 = slot1.isPS
+	slot1 = slot1(slot3)
+	slot2 = ClientConfigCloudEnable
 	--- END OF BLOCK #0 ---
+
+	if slot2 == "true" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-15, warpins: 1 ---
+	slot2 = slot0.btnExitUButton
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-17, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-23, warpins: 1 ---
+	slot2 = slot0.btnCloseUButton
+	slot2 = slot2.gameObject
+	slot4 = slot2
+	slot2 = slot2.SetActiveEx
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-24, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 

@@ -32,7 +32,7 @@ slot3 = function(slot0)
 	slot0.attackResult = slot1
 	slot1 = 0
 	slot0.hitActorPartIdx = slot1
-	slot1 = 1
+	slot1 = 0
 	slot0.reduceShieldFactor = slot1
 
 	return

@@ -868,7 +868,7 @@ slot10 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
@@ -888,7 +888,7 @@ slot10 = function(slot0, slot1)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
@@ -918,7 +918,7 @@ slot10 = function(slot0, slot1)
 	slot6 = if not slot6 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
@@ -934,7 +934,7 @@ slot10 = function(slot0, slot1)
 	slot1 = slot1 + 1
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
 	--- BLOCK #7 39-46, warpins: 1 ---
@@ -949,7 +949,7 @@ slot10 = function(slot0, slot1)
 	slot6 = if slot6 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #17
 	end
 
 
@@ -974,70 +974,87 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 54-64, warpins: 2 ---
-	slot9 = slot5
+	--- BLOCK #10 54-56, warpins: 2 ---
 	slot7 = slot5.getAttackTargetActorId
-	slot7 = slot7(slot9)
-	slot10 = slot0
-	slot8 = slot0.groupCombatFilerByDistance
-	slot11 = slot5
-	slot12 = slot7
-	slot13 = slot6
-	slot8 = slot8(slot10, slot11, slot12, slot13)
 	--- END OF BLOCK #10 ---
 
-	slot8 = if not slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 65-70, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.groupCombatFilterByCameraView
-	slot11 = slot5
-	slot8 = slot8(slot10, slot11)
+	--- BLOCK #11 57-59, warpins: 1 ---
+	slot9 = slot5
+	slot7 = slot5.getAttackTargetActorId
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #11 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #12
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 60-67, warpins: 2 ---
+	slot10 = slot0
+	slot8 = slot0.groupCombatFilerByDistance
+	slot11 = slot5
+	slot12 = slot7
+	slot13 = slot6
+	slot8 = slot8(slot10, slot11, slot12, slot13)
+	--- END OF BLOCK #12 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 71-76, warpins: 2 ---
+	--- BLOCK #13 68-73, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.groupCombatFilterByCameraView
+	slot11 = slot5
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #13 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 74-79, warpins: 2 ---
 	slot10 = slot0
 	slot8 = slot0._memberRemoveCombatTag
 	slot11 = slot5
 	slot8 = slot8(slot10, slot11)
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #13
-	else
 	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #13 77-78, warpins: 1 ---
+	--- BLOCK #15 80-81, warpins: 1 ---
 	slot1 = slot1 - 1
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #15 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #14 79-81, warpins: 1 ---
+	--- BLOCK #16 82-84, warpins: 1 ---
 	slot8 = #slot4
 	slot8 = slot8 + 1
 	slot4[slot8] = slot5
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #15 82-89, warpins: 7 ---
+	--- BLOCK #17 85-92, warpins: 7 ---
 	slot6 = next
 	slot8 = slot0.groupCombatData
 	slot8 = slot8.members
@@ -1045,23 +1062,23 @@ slot10 = function(slot0, slot1)
 	slot6, slot7 = slot6(slot8, slot9)
 	slot3 = slot7
 	slot2 = slot6
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #1
 
 
-	--- BLOCK #16 90-92, warpins: 1 ---
+	--- BLOCK #18 93-95, warpins: 1 ---
 	slot5 = 0
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #18 ---
 
 	if slot1 > slot5 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #17 93-100, warpins: 1 ---
+	--- BLOCK #19 96-103, warpins: 1 ---
 	slot5 = table
 	slot5 = slot5.sort
 	slot7 = slot4
@@ -1072,73 +1089,73 @@ slot10 = function(slot0, slot1)
 
 	slot5 = 1
 	slot6 = #slot4
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 101-103, warpins: 2 ---
-	slot7 = 0
-	--- END OF BLOCK #18 ---
-
-	if slot1 > slot7 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #25
-	end
-
-
-	--- BLOCK #19 104-104, warpins: 1 ---
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 105-106, warpins: 1 ---
+	--- BLOCK #20 104-106, warpins: 2 ---
+	slot7 = 0
 	--- END OF BLOCK #20 ---
 
-	if slot6 <= slot5 then
+	if slot1 > slot7 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #27
 	end
 
 
 	--- BLOCK #21 107-107, warpins: 1 ---
 	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 108-113, warpins: 1 ---
-	slot9 = slot0
-	slot7 = slot0._memberRemoveCombatTag
-	slot10 = slot4[slot5]
-	slot7 = slot7(slot9, slot10)
+	--- BLOCK #22 108-109, warpins: 1 ---
 	--- END OF BLOCK #22 ---
 
-	slot7 = if slot7 then
+	if slot6 <= slot5 then
 	JUMP TO BLOCK #23
 	else
 	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #23 114-114, warpins: 1 ---
-	slot1 = slot1 - 1
+	--- BLOCK #23 110-110, warpins: 1 ---
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #27
 
 
-	--- BLOCK #24 115-116, warpins: 2 ---
-	slot5 = slot5 + 1
+	--- BLOCK #24 111-116, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0._memberRemoveCombatTag
+	slot10 = slot4[slot5]
+	slot7 = slot7(slot9, slot10)
 	--- END OF BLOCK #24 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	slot7 = if slot7 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
 
 
-	--- BLOCK #25 117-121, warpins: 3 ---
+	--- BLOCK #25 117-117, warpins: 1 ---
+	slot1 = slot1 - 1
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 118-119, warpins: 2 ---
+	slot5 = slot5 + 1
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #27 120-124, warpins: 3 ---
 	slot5 = ListPool
 	slot5 = slot5.returnList
 	slot7 = slot4
@@ -1146,7 +1163,7 @@ slot10 = function(slot0, slot1)
 	slot5(slot7)
 
 	return
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #27 ---
 
 
 
@@ -1195,31 +1212,47 @@ end
 slot9.groupCombatFilterByLocked = slot10
 
 slot10 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.getEntityByActorId
-	slot6 = slot2
-	slot4 = slot4(slot6)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot4 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot5 = true
-
-	return slot5
-
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.getEntityByActorId
+	slot6 = slot2
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-26, warpins: 2 ---
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-10, warpins: 1 ---
+	slot5 = true
+
+	return slot5
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-28, warpins: 2 ---
 	slot7 = slot4
 	slot5 = slot4.getPosition
 	slot5 = slot5(slot7)
@@ -1236,48 +1269,48 @@ slot10 = function(slot0, slot1, slot2, slot3)
 	slot8 = slot1.getRealHeight
 	slot8 = slot8(slot10)
 	slot8 = 0.6 * slot8
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	if slot7 <= slot8 then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 27-33, warpins: 1 ---
+	--- BLOCK #5 29-35, warpins: 1 ---
 	slot7 = Vector3
 	slot7 = slot7.HoriDistance
 	slot9 = slot5
 	slot10 = slot6
 	slot7 = slot7(slot9, slot10)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	if slot3 >= slot7 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 34-35, warpins: 1 ---
+	--- BLOCK #6 36-37, warpins: 1 ---
 	slot7 = false
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 36-36, warpins: 2 ---
+	--- BLOCK #7 38-38, warpins: 2 ---
 	slot7 = true
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 37-37, warpins: 2 ---
+	--- BLOCK #8 39-39, warpins: 2 ---
 	return slot7
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 

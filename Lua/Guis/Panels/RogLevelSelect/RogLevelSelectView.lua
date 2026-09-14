@@ -1,17 +1,20 @@
---- BLOCK #0 1-14, warpins: 1 ---
+--- BLOCK #0 1-21, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
 slot3 = "Guis.UIView"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "RogLevelSelectView"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
+slot2 = require
+slot4 = "Utils.ClientTextUtils"
+slot2 = slot2(slot4)
+slot3 = slot0.LightClass
+slot5 = "RogLevelSelectView"
+slot6 = slot1
+slot3 = slot3(slot5, slot6)
 
-slot3 = function(slot0)
-	--- BLOCK #0 1-171, warpins: 1 ---
+slot4 = function(slot0)
+	--- BLOCK #0 1-201, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -172,16 +175,46 @@ slot3 = function(slot0)
 	slot5 = "shopUBaseText"
 	slot2 = slot2(slot4, slot5)
 	slot0.shopUBaseText = slot2
-	slot2 = slot0.btnActiveUButton
-	slot4 = slot2
-	slot2 = slot2.GetComponent
-	slot5 = "ObjectReference"
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "listLeftTopUList"
 	slot2 = slot2(slot4, slot5)
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "txtNameUText"
-	slot3 = slot3(slot5, slot6)
-	slot0.btnActiveUText = slot3
+	slot0.listLeftTopUList = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "seasonTextUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.seasonTextUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "seasonText1USDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.seasonText1USDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtTitleUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtTitleUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "countDownUCountDown"
+	slot2 = slot2(slot4, slot5)
+	slot0.countDownUCountDown = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rewardsUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.rewardsUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNameUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtNameUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "seasonUCountDown"
+	slot2 = slot2(slot4, slot5)
+	slot0.seasonUCountDown = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -190,9 +223,72 @@ slot3 = function(slot0)
 
 end
 
-slot2.findObjects = slot3
+slot3.findObjects = slot4
 
-return slot2
+slot4 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = slot0.btnActiveUButton
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNameUText"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnActiveUText = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.registerObjects = slot4
+
+slot4 = function(slot0)
+	--- BLOCK #0 1-25, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.seasonTextUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "Rogue_Season_LeftTime"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtTitleUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "Rogue_Week_LeftTime"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtNameUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "Rogue_Week_Reward"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.initView = slot4
+
+return slot3
 --- END OF BLOCK #0 ---
 
 

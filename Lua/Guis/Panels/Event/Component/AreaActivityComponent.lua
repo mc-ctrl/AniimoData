@@ -1,82 +1,85 @@
---- BLOCK #0 1-98, warpins: 1 ---
+--- BLOCK #0 1-101, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "AreaActivityComponent"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "AreaActivityComponent"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.Helper.UIComponent"
+slot4 = "Core.Framework.Class"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.Panels.Event.Component.EventContainerComponent"
+slot5 = "Guis.Helper.UIComponent"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.game_event_data"
+slot6 = "Guis.Panels.Event.Component.EventContainerComponent"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.RedDotConst"
+slot7 = "Data.game_event_data"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.UIConst"
+slot8 = "Const.RedDotConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.Const"
+slot9 = "Const.UIConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientTextUtils"
+slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.LuaUIUtils"
+slot11 = "Utils.ClientTextUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.ClientActivityUtils"
+slot12 = "Utils.LuaUIUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Utils.ActivityUtils"
+slot13 = "Utils.ClientActivityUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Core.Common.Time"
+slot14 = "Common.Utils.ActivityUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.ClientConst"
+slot15 = "Core.Common.Time"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.Utils"
+slot16 = "Const.ClientConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.pet_data"
+slot17 = "Common.Utils.Utils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.pet_avatar_data"
+slot18 = "Data.pet_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.limit_data"
+slot19 = "Data.pet_avatar_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.event_area_activity_data"
+slot20 = "Data.limit_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Const.AddressDataConst"
+slot21 = "Data.event_area_activity_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Common.NoticeDef"
+slot22 = "Const.AddressDataConst"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Common.Const.ActivityConst"
+slot23 = "Common.NoticeDef"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.event_task_data"
+slot24 = "Common.Const.ActivityConst"
 slot22 = slot22(slot24)
-slot23 = slot1.LightClass
-slot25 = "AreaActivityComponent"
-slot26 = slot3
-slot23 = slot23(slot25, slot26)
+slot23 = require
+slot25 = "Data.event_task_data"
+slot23 = slot23(slot25)
+slot24 = slot2.LightClass
+slot26 = "AreaActivityComponent"
+slot27 = slot4
+slot24 = slot24(slot26, slot27)
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -232,9 +235,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.findObjects = slot24
+slot24.findObjects = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.listRewardUList
 
@@ -377,8 +380,8 @@ slot24 = function(slot0)
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_EVENT_AREA_ACTIVITY
 		slot4 = {
-			subTaskIndex = 0,
-			rootTask = true
+			rootTask = true,
+			subTaskIndex = 0
 		}
 		slot5 = self
 		slot5 = slot5.eventId
@@ -679,9 +682,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.addListener = slot24
+slot24.addListener = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = EventContainerComponent
 	slot1 = slot1.onBeforeRefreshPage
@@ -728,9 +731,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.onBeforeRefreshPage = slot24
+slot24.onBeforeRefreshPage = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -748,9 +751,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.onEnterPlayEvent = slot24
+slot24.onEnterPlayEvent = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = EventAreaActivityData
 	slot2 = slot0.eventPhase
@@ -769,7 +772,7 @@ slot24 = function(slot0)
 
 
 	--- BLOCK #1 10-10, warpins: 1 ---
-	slot3 = slot2.eventEndDayTime
+	slot3 = slot2.tabEndDayTime
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -908,9 +911,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.refreshPage = slot24
+slot24.refreshPage = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = slot0.taskEntranceRoot
 	slot3 = slot1
@@ -1046,9 +1049,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.renderRootEntrance = slot24
+slot24.renderRootEntrance = slot25
 
-slot24 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = "taskEntrance"
 	slot3 = slot1
@@ -1488,9 +1491,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot23.renderSubEntrance = slot24
+slot24.renderSubEntrance = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearCacheRemoveMap
@@ -1509,9 +1512,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.onBeforeExitPage = slot24
+slot24.onBeforeExitPage = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0._cacheRemoveMap
@@ -1525,7 +1528,7 @@ slot24 = function(slot0)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -1595,9 +1598,9 @@ slot24 = function(slot0)
 
 end
 
-slot23.clearCacheRemoveMap = slot24
+slot24.clearCacheRemoveMap = slot25
 
-slot24 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eggUWidget
 
@@ -2045,111 +2048,45 @@ slot24 = function(slot0)
 	slot12 = if slot12 then
 	JUMP TO BLOCK #36
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #36 181-184, warpins: 1 ---
-	slot12 = PetAvatarData
-	slot12 = slot12[slot1]
+	--- BLOCK #36 181-193, warpins: 1 ---
+	slot12 = LuaUIUtils
+	slot12 = slot12.renderFormItem
+	slot14 = slot0.formItemUButton
+	slot15 = slot1
+
+	slot12(slot14, slot15)
+
+	slot12 = ClientTextUtils
+	slot12 = slot12.setText
+	slot14 = slot0.formItemTxt
+	slot15 = LuaUIUtils
+	slot15 = slot15.getPetFormName
+	slot17 = slot1
+	MULTRES = slot15(slot17)
+
+	slot12(slot14, MULTRES)
+
 	--- END OF BLOCK #36 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #37
-	else
-	JUMP TO BLOCK #38
-	end
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 185-187, warpins: 1 ---
-	slot12 = PetAvatarData
-	slot12 = slot12[slot1]
-	slot12 = slot12[0]
+	--- BLOCK #37 194-196, warpins: 2 ---
+	slot12 = slot0.elementUButton
 	--- END OF BLOCK #37 ---
 
-	FLOW; TARGET BLOCK #38
-
-
-	--- BLOCK #38 188-189, warpins: 2 ---
-	--- END OF BLOCK #38 ---
-
 	slot12 = if slot12 then
+	JUMP TO BLOCK #38
+	else
 	JUMP TO BLOCK #39
-	else
-	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #39 190-192, warpins: 1 ---
-	slot13 = slot12.formId
-	--- END OF BLOCK #39 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #40
-	else
-	JUMP TO BLOCK #41
-	end
-
-
-	--- BLOCK #40 193-193, warpins: 2 ---
-	slot13 = 0
-	--- END OF BLOCK #40 ---
-
-	FLOW; TARGET BLOCK #41
-
-
-	--- BLOCK #41 194-206, warpins: 2 ---
-	slot14 = slot0.formItemUButton
-	slot16 = slot14
-	slot14 = slot14.TryChangePage
-	slot17 = "Quality"
-	slot18 = slot13
-
-	slot14(slot16, slot17, slot18)
-
-	slot14 = ClientTextUtils
-	slot14 = slot14.setText
-	slot16 = slot0.formItemTxt
-	slot17 = pg
-	slot17 = slot17.getLocalizationText
-	--- END OF BLOCK #41 ---
-
-	slot19 = if slot12 then
-	JUMP TO BLOCK #42
-	else
-	JUMP TO BLOCK #43
-	end
-
-
-	--- BLOCK #42 207-207, warpins: 1 ---
-	slot19 = slot12.formName
-	--- END OF BLOCK #42 ---
-
-	FLOW; TARGET BLOCK #43
-
-
-	--- BLOCK #43 208-209, warpins: 2 ---
-	MULTRES = slot17(slot19)
-
-	slot14(slot16, MULTRES)
-
-	--- END OF BLOCK #43 ---
-
-	FLOW; TARGET BLOCK #44
-
-
-	--- BLOCK #44 210-212, warpins: 2 ---
-	slot12 = slot0.elementUButton
-	--- END OF BLOCK #44 ---
-
-	slot12 = if slot12 then
-	JUMP TO BLOCK #45
-	else
-	JUMP TO BLOCK #46
-	end
-
-
-	--- BLOCK #45 213-224, warpins: 1 ---
+	--- BLOCK #38 197-208, warpins: 1 ---
 	slot12 = LuaUIUtils
 	slot12 = slot12.getElementInfo
 	slot14 = slot2.elementType
@@ -2164,22 +2101,22 @@ slot24 = function(slot0)
 
 	slot14(slot16, slot17, slot18, slot19)
 
-	--- END OF BLOCK #45 ---
+	--- END OF BLOCK #38 ---
 
-	FLOW; TARGET BLOCK #46
+	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #46 225-225, warpins: 2 ---
+	--- BLOCK #39 209-209, warpins: 2 ---
 	return
-	--- END OF BLOCK #46 ---
+	--- END OF BLOCK #39 ---
 
 
 
 end
 
-slot23.renderRewardShow = slot24
+slot24.renderRewardShow = slot25
 
-return slot23
+return slot24
 --- END OF BLOCK #0 ---
 
 

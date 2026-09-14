@@ -1,4 +1,4 @@
---- BLOCK #0 1-45, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -12,20 +12,17 @@ slot3 = require
 slot5 = "Guis.Utils.MapUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.AddressDataConst"
+slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Core.Common.Time"
 slot5 = slot5(slot7)
-slot6 = require
-slot8 = "Core.Common.Time"
-slot6 = slot6(slot8)
-slot7 = slot0.LightClass
-slot9 = "DynamicMarkComponent"
-slot10 = slot1
-slot7 = slot7(slot9, slot10)
+slot6 = slot0.LightClass
+slot8 = "DynamicMarkComponent"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -34,9 +31,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.findObjects = slot8
+slot6.findObjects = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -45,9 +42,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.init = slot8
+slot6.init = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -56,9 +53,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.destroy = slot8
+slot6.destroy = slot7
 
-slot8 = function(slot0, slot1, slot2, slot3, slot4)
+slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot5 = slot1.recTrans
 	slot6 = Vector3
@@ -234,9 +231,9 @@ slot8 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot7.renderDynamicMarkIcon = slot8
+slot6.renderDynamicMarkIcon = slot7
 
-slot8 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = error
 	slot5 = "MinimapDynamicMarkComponent:adjustZoom not implement yet"
@@ -250,9 +247,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.adjustZoom = slot8
+slot6.adjustZoom = slot7
 
-slot8 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot2.partId
 	--- END OF BLOCK #0 ---
@@ -483,18 +480,18 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.renderPart = slot8
+slot6.renderPart = slot7
 
-slot8 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = MapUtils
-	slot3 = slot3.getDynamicMarkSimpleIcon
-	slot5 = slot1
-	slot3 = slot3(slot5)
+	slot2 = MapUtils
+	slot2 = slot2.getDynamicMarkSimpleIcon
+	slot4 = slot1
+	slot2 = slot2(slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -509,32 +506,19 @@ slot8 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-22, warpins: 2 ---
-	slot4 = slot0.view
-	slot6 = slot4
-	slot4 = slot4.addPrefabWithPathSync
-	slot7 = slot2
-	slot8 = AddressDataConst
-	slot8 = slot8.UI_MARK_NODE_MARK_COMMON_ICON
-	slot4 = slot4(slot6, slot7, slot8)
-	slot5 = slot4.gameObject
-	slot7 = slot5
-	slot5 = slot5.GetComponent
-	slot8 = "UImage"
-	slot5 = slot5(slot7, slot8)
-	slot6 = slot3[1]
-	slot5.url = slot6
+	--- BLOCK #2 8-9, warpins: 2 ---
+	slot3 = slot2[1]
 
-	return
+	return slot3
 	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot7.renderBubble = slot8
+slot6.getBubbleIcon = slot7
 
-slot8 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = MapUtils
 	slot3 = slot3.parseFirstDynamicMarkStatusExtraInfo
@@ -696,9 +680,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.renderLocationPanelInfo = slot8
+slot6.renderLocationPanelInfo = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.destroy
@@ -718,9 +702,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onDestroy = slot8
+slot6.onDestroy = slot7
 
-return slot7
+return slot6
 --- END OF BLOCK #0 ---
 
 

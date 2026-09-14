@@ -9,17 +9,17 @@ slot2 = {}
 slot3 = {
 	version = 5,
 	useForRoute = false,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Test_Starmage_Clone_Threeday",
-	agenttype = "PuppetAgent"
+	agenttype = "PuppetAgent",
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Test_Starmage_Clone_Threeday"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 1,
-	value = "1",
 	name = "bubbleCount",
-	type = "int"
+	value = "1",
+	type = "int",
+	const = 1
 }
 slot4[1] = slot5
 slot3.pars = slot4

@@ -7,41 +7,41 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Home_MoveToPos",
 	version = 7,
-	useForRoute = false,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tPosition",
 	type = "vector<float>",
-	value = "0:"
+	value = "0:",
+	name = "tPosition"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
-	name = "tYaw",
 	const = 0,
 	type = "float",
-	value = "0"
+	value = "0",
+	name = "tYaw"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tMaxTime",
 	const = 0,
 	type = "float",
-	value = "0"
+	value = "0",
+	name = "tMaxTime"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tSpeed",
 	const = 4,
 	type = "float",
-	value = "4"
+	value = "4",
+	name = "tSpeed"
 }
 slot4[4] = slot5
 slot3.pars = slot4

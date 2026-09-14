@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-160, warpins: 1 ---
+	--- BLOCK #0 1-138, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -123,11 +123,6 @@ slot4 = function(slot0)
 	slot5 = "btnReadyUWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnReadyUWidget = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "scrollRectDescUScrollRect"
-	slot2 = slot2(slot4, slot5)
-	slot0.scrollRectDescUScrollRect = slot2
 	slot2 = slot0.scrollRectUScrollRect
 	slot2 = slot2.content
 	slot2 = slot2.transform
@@ -135,11 +130,6 @@ slot4 = function(slot0)
 	slot2 = slot2.GetComponent
 	slot5 = "ObjectReference"
 	slot2 = slot2(slot4, slot5)
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
-	slot6 = "textSubDetailUSDFText"
-	slot3 = slot3(slot5, slot6)
-	slot0.textSubDetailUSDFText = slot3
 	slot5 = slot2
 	slot3 = slot2.GetRefValue
 	slot6 = "titleUSDFText"
@@ -157,26 +147,14 @@ slot4 = function(slot0)
 	slot0.titleTextPlus = slot3
 	slot5 = slot2
 	slot3 = slot2.GetRefValue
-	slot6 = "txtDetailUSDFText"
-	slot3 = slot3(slot5, slot6)
-	slot0.txtDetailUSDFText = slot3
-	slot5 = slot2
-	slot3 = slot2.GetRefValue
 	slot6 = "contentUpgradeUWidget"
 	slot3 = slot3(slot5, slot6)
 	slot0.contentUpgradeUWidget = slot3
-	slot3 = slot0.scrollRectDescUScrollRect
-	slot3 = slot3.content
-	slot3 = slot3.transform
-	slot5 = slot3
-	slot3 = slot3.GetComponent
-	slot6 = "ObjectReference"
+	slot5 = slot2
+	slot3 = slot2.GetRefValue
+	slot6 = "listUnlockUList"
 	slot3 = slot3(slot5, slot6)
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
-	slot7 = "textDescUSDFText"
-	slot4 = slot4(slot6, slot7)
-	slot0.textDescUSDFText = slot4
+	slot0.listUnlockUList = slot3
 
 	return
 	--- END OF BLOCK #0 ---

@@ -25,8 +25,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPointManitisGoScratch",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointManitisGoScratch"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -46,8 +46,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"

@@ -1,4 +1,4 @@
---- BLOCK #0 1-128, warpins: 1 ---
+--- BLOCK #0 1-132, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -148,7 +148,7 @@ end
 slot6.init = slot28
 
 slot28 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = ClientDungeonBotPlayer
 	slot1 = slot1.super
 	slot1 = slot1.initializeComponents
@@ -156,10 +156,9 @@ slot28 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_MOTION
 
 	slot1(slot3, slot4)
@@ -176,19 +175,17 @@ slot28 = function(slot0)
 	end
 
 
-	--- BLOCK #1 17-28, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	--- BLOCK #1 16-25, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_AI_CONTROLLER
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_AUTO_PATH_FIND
 
 	slot1(slot3, slot4)
@@ -198,7 +195,7 @@ slot28 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 29-29, warpins: 2 ---
+	--- BLOCK #2 26-26, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -207,6 +204,29 @@ slot28 = function(slot0)
 end
 
 slot6.initializeComponents = slot28
+
+slot28 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = ClientDungeonBotPlayer
+	slot1 = slot1.super
+	slot1 = slot1.postInitializeComponents
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.applyMotionProp
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.postInitializeComponents = slot28
 
 slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
@@ -361,6 +381,53 @@ end
 
 slot6.destroy = slot28
 
+slot28 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = ClientPlayer
+	slot1 = slot1.super
+	slot1 = slot1.onEnterSpace
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = slot0.space
+	slot3 = slot1
+	slot1 = slot1.isBossRushEnv
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-18, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setLodTickEnable
+	slot4 = Const
+	slot4 = slot4.LOD_TICK_KEY
+	slot4 = slot4.DEFAULT
+	slot5 = false
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot6.onEnterSpace = slot28
+
 slot28 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
@@ -413,21 +480,19 @@ end
 slot6.getConfigData = slot28
 
 slot28 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = IsNil
-	slot4 = slot0.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -435,7 +500,7 @@ slot28 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-27, warpins: 2 ---
+	--- BLOCK #2 5-24, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.setModelLayer
 
@@ -452,8 +517,7 @@ slot28 = function(slot0, slot1)
 	slot2 = slot0.getConfigData
 	slot2 = slot2(slot4)
 	slot3 = slot0.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
+	slot3 = slot3.modelModelView
 	slot4 = slot3.modelInfo
 	slot7 = slot4
 	slot5 = slot4.ClearInfo
@@ -470,7 +534,7 @@ slot28 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 28-30, warpins: 1 ---
+	--- BLOCK #3 25-27, warpins: 1 ---
 	slot5 = slot2.modelHeight
 	--- END OF BLOCK #3 ---
 
@@ -481,14 +545,14 @@ slot28 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 31-31, warpins: 1 ---
+	--- BLOCK #4 28-28, warpins: 1 ---
 	slot5 = 1.5
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 32-36, warpins: 3 ---
+	--- BLOCK #5 29-33, warpins: 3 ---
 	slot4.height = slot5
 	slot5 = slot4.physiqueModelInfo
 	slot6 = slot0.avatarPrefabResID
@@ -501,7 +565,7 @@ slot28 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 37-39, warpins: 1 ---
+	--- BLOCK #6 34-36, warpins: 1 ---
 	slot6 = slot2.prefabResID
 	--- END OF BLOCK #6 ---
 
@@ -512,14 +576,14 @@ slot28 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 40-40, warpins: 1 ---
+	--- BLOCK #7 37-37, warpins: 1 ---
 	slot6 = ""
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 41-54, warpins: 3 ---
+	--- BLOCK #8 38-51, warpins: 3 ---
 	slot5.modelPathID = slot6
 	slot5 = slot4.physiqueModelInfo
 	slot6 = ""
@@ -541,14 +605,14 @@ slot28 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 55-55, warpins: 1 ---
+	--- BLOCK #9 52-52, warpins: 1 ---
 	slot6 = 1
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 56-73, warpins: 2 ---
+	--- BLOCK #10 53-74, warpins: 2 ---
 	slot5.modelScale = slot6
 	slot5 = slot4.physiqueModelInfo
 	slot6 = false
@@ -562,6 +626,12 @@ slot28 = function(slot0, slot1)
 	slot8 = ClientConst
 	slot8 = slot8.ShadowPriority
 	slot8 = slot8.Appearance
+
+	slot5(slot7, slot8)
+
+	slot7 = slot0
+	slot5 = slot0.setRendererLod
+	slot8 = 0
 
 	slot5(slot7, slot8)
 
@@ -726,10 +796,9 @@ slot28 = function(slot0)
 	end
 
 
-	--- BLOCK #13 55-67, warpins: 1 ---
+	--- BLOCK #13 55-66, warpins: 1 ---
 	slot8 = slot0.eModel
-	slot8 = slot8.modelComponent
-	slot8 = slot8.modelView
+	slot8 = slot8.modelModelView
 	slot8 = slot8.modelInfo
 	slot8 = slot8.partModelInfo
 	slot10 = slot8
@@ -747,7 +816,7 @@ slot28 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 68-69, warpins: 3 ---
+	--- BLOCK #14 67-68, warpins: 3 ---
 	--- END OF BLOCK #14 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -755,7 +824,7 @@ slot28 = function(slot0)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 70-70, warpins: 2 ---
+	--- BLOCK #15 69-69, warpins: 2 ---
 	return
 	--- END OF BLOCK #15 ---
 

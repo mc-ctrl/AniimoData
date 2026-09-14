@@ -7,48 +7,48 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	useForRoute = false,
 	agenttype = "WxAgent",
 	name = "PatrolTree/PatrolMoveSubTree/ST_NPCLeadPatrolSpline",
-	version = 16,
-	useForRoute = false
+	version = 16
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	type = "vector<float>",
-	value = "0:",
-	name = "patrolStartPos"
+	name = "patrolStartPos",
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[1] = slot5
 slot5 = {
 	type = "vector<float>",
-	value = "0:",
-	name = "patrolPosList"
+	name = "patrolPosList",
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[2] = slot5
 slot5 = {
 	type = "float",
-	value = "0",
 	name = "patrolMaxTime",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
 	type = "float",
-	value = "0",
 	name = "tPatrolSpeed",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
 	type = "SpeedRateType",
-	value = "Mid",
-	name = "tBehaviorSpeedRateType"
+	name = "tBehaviorSpeedRateType",
+	value = "Mid"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Mid
@@ -56,37 +56,37 @@ slot5.const = slot6
 slot4[5] = slot5
 slot5 = {
 	type = "bool",
-	value = "false",
 	name = "tUseAccurateArrive",
-	const = false
+	const = false,
+	value = "false"
 }
 slot4[6] = slot5
 slot5 = {
 	type = "bool",
-	value = "false",
 	name = "tIsFirstPoint",
-	const = false
+	const = false,
+	value = "false"
 }
 slot4[7] = slot5
 slot5 = {
 	type = "int",
-	value = "0",
 	name = "tLeadTargetActorId",
-	const = 0
+	const = 0,
+	value = "0"
 }
 slot4[8] = slot5
 slot5 = {
 	type = "vector<float>",
-	value = "0:",
-	name = "tNormalList"
+	name = "tNormalList",
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[9] = slot5
 slot5 = {
 	type = "SpeedRateType",
-	value = "Slow",
-	name = "tJudgeSpeedRateType"
+	name = "tJudgeSpeedRateType",
+	value = "Slow"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Slow
@@ -94,16 +94,16 @@ slot5.const = slot6
 slot4[10] = slot5
 slot5 = {
 	type = "vector<float>",
-	value = "0:",
-	name = "patrolPos"
+	name = "patrolPos",
+	value = "0:"
 }
 slot6 = {}
 slot5.const = slot6
 slot4[11] = slot5
 slot5 = {
 	type = "PathFindType",
-	value = "Auto",
-	name = "tPathFindType"
+	name = "tPathFindType",
+	value = "Auto"
 }
 slot6 = slot0.PathFindType
 slot6 = slot6.Auto
@@ -742,11 +742,11 @@ slot17[3] = slot18
 slot16.properties = slot17
 slot17 = {}
 slot18 = {
-	effector = false,
 	precondition = true,
 	class = "Precondition",
 	transition = false,
-	id = "19"
+	id = "19",
+	effector = false
 }
 slot19 = {}
 slot20 = {
@@ -862,11 +862,11 @@ slot14[3] = slot15
 slot13.properties = slot14
 slot14 = {}
 slot15 = {
-	effector = false,
 	precondition = true,
 	class = "Precondition",
 	transition = false,
-	id = "21"
+	id = "21",
+	effector = false
 }
 slot16 = {}
 slot17 = {

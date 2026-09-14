@@ -1,4 +1,4 @@
---- BLOCK #0 1-89, warpins: 1 ---
+--- BLOCK #0 1-95, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Utils.Utils"
 slot0 = slot0(slot2)
@@ -109,7 +109,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
@@ -117,25 +117,51 @@ slot13 = function(slot0, slot1, slot2)
 	slot3 = slot0.AiHelperDetect
 	slot3 = slot3.rangeEntsShiny
 	slot3 = slot3[slot1]
-
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 16-16, warpins: 2 ---
-	return
-
+	--- BLOCK #4 16-20, warpins: 1 ---
+	slot3 = slot0.AiHelperDetect
+	slot3 = slot3.rangeEntsDark
+	slot3 = slot3[slot1]
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 17-26, warpins: 2 ---
+	--- BLOCK #5 21-25, warpins: 1 ---
+	slot3 = slot0.AiHelperDetect
+	slot3 = slot3.rangeEntsRainbow
+	slot3 = slot3[slot1]
+
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-26, warpins: 4 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-36, warpins: 2 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByActorId
 	slot5 = slot1
@@ -148,7 +174,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot4(slot6, slot7, slot8)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -304,7 +330,7 @@ slot13 = function(slot0)
 
 	--- BLOCK #6 45-49, warpins: 2 ---
 	slot3 = slot0
-	slot1 = slot0.trackNearEnvObj
+	slot1 = slot0.trackNearDarkPuppet
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #6 ---
 
@@ -322,7 +348,7 @@ slot13 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.AI_HELPER
 	slot5 = slot5.Special_Id
-	slot5 = slot5.Special_Env
+	slot5 = slot5.Dark
 
 	slot1(slot3, slot4, slot5)
 
@@ -338,7 +364,7 @@ slot13 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.AI_HELPER
 	slot5 = slot5.Special_Id
-	slot5 = slot5.Special_Env
+	slot5 = slot5.Dark
 
 	slot1(slot3, slot4, slot5)
 
@@ -349,7 +375,7 @@ slot13 = function(slot0)
 
 	--- BLOCK #9 67-71, warpins: 2 ---
 	slot3 = slot0
-	slot1 = slot0.trackNearLevelItem
+	slot1 = slot0.trackNearRainbowPuppet
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #9 ---
 
@@ -367,7 +393,7 @@ slot13 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.AI_HELPER
 	slot5 = slot5.Special_Id
-	slot5 = slot5.Lumin_Level_Item
+	slot5 = slot5.Rainbow
 
 	slot1(slot3, slot4, slot5)
 
@@ -383,7 +409,7 @@ slot13 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.AI_HELPER
 	slot5 = slot5.Special_Id
-	slot5 = slot5.Lumin_Level_Item
+	slot5 = slot5.Rainbow
 
 	slot1(slot3, slot4, slot5)
 
@@ -394,7 +420,7 @@ slot13 = function(slot0)
 
 	--- BLOCK #12 89-93, warpins: 2 ---
 	slot3 = slot0
-	slot1 = slot0.trackNearSpecialEntTag
+	slot1 = slot0.trackNearEnvObj
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #12 ---
 
@@ -412,7 +438,7 @@ slot13 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.AI_HELPER
 	slot5 = slot5.Special_Id
-	slot5 = slot5.Entity_Tag
+	slot5 = slot5.Special_Env
 
 	slot1(slot3, slot4, slot5)
 
@@ -428,7 +454,7 @@ slot13 = function(slot0)
 	slot5 = ClientConst
 	slot5 = slot5.AI_HELPER
 	slot5 = slot5.Special_Id
-	slot5 = slot5.Entity_Tag
+	slot5 = slot5.Special_Env
 
 	slot1(slot3, slot4, slot5)
 
@@ -437,9 +463,99 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 111-111, warpins: 2 ---
-	return
+	--- BLOCK #15 111-115, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.trackNearLevelItem
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #15 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 116-124, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryRefreshAiIds
+	slot4 = true
+	slot5 = ClientConst
+	slot5 = slot5.AI_HELPER
+	slot5 = slot5.Special_Id
+	slot5 = slot5.Lumin_Level_Item
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 125-132, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryRefreshAiIds
+	slot4 = false
+	slot5 = ClientConst
+	slot5 = slot5.AI_HELPER
+	slot5 = slot5.Special_Id
+	slot5 = slot5.Lumin_Level_Item
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 133-137, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.trackNearSpecialEntTag
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #18 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 138-146, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryRefreshAiIds
+	slot4 = true
+	slot5 = ClientConst
+	slot5 = slot5.AI_HELPER
+	slot5 = slot5.Special_Id
+	slot5 = slot5.Entity_Tag
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 147-154, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.tryRefreshAiIds
+	slot4 = false
+	slot5 = ClientConst
+	slot5 = slot5.AI_HELPER
+	slot5 = slot5.Special_Id
+	slot5 = slot5.Entity_Tag
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 155-155, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
 
 
 
@@ -459,7 +575,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	end
 
 
@@ -473,99 +589,88 @@ slot13 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 14-19, warpins: 1 ---
-	slot3 = Utils
-	slot3 = slot3.isLabelShiny
-	slot5 = slot2.label
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
 	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 20-25, warpins: 1 ---
+	--- BLOCK #2 14-18, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.isNpc
 	slot5 = slot2
 	slot3 = slot3(slot5)
+	slot3 = not slot3
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-20, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 26-29, warpins: 1 ---
-	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeEntsShiny
-	slot3[slot1] = slot2
+	--- BLOCK #4 21-26, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.isLabelShiny
+	slot6 = slot2.label
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #5 30-35, warpins: 4 ---
-	slot5 = slot0
-	slot3 = slot0.isLuminAmber
-	slot6 = slot2
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #5 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #6
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 36-42, warpins: 1 ---
-	slot3 = Utils
-	slot3 = slot3.openChestLimit
-	slot5 = slot0
-	slot6 = slot2
-	slot3 = slot3(slot5, slot6)
+	--- BLOCK #5 27-30, warpins: 1 ---
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntsShiny
+	slot4[slot1] = slot2
+	--- END OF BLOCK #5 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #6 31-32, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 43-43, warpins: 1 ---
-	return
-
+	--- BLOCK #7 33-38, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.isLabelDark
+	slot6 = slot2.label
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 44-47, warpins: 2 ---
-	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeEntsAmber
-	slot3[slot1] = slot2
+	--- BLOCK #8 39-42, warpins: 1 ---
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntsDark
+	slot4[slot1] = slot2
 	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #9 48-53, warpins: 1 ---
-	slot3 = Utils
-	slot3 = slot3.isEnvObj
-	slot5 = slot2
-	slot3 = slot3(slot5)
+	--- BLOCK #9 43-44, warpins: 2 ---
 	--- END OF BLOCK #9 ---
 
 	slot3 = if slot3 then
@@ -575,57 +680,144 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 54-60, warpins: 1 ---
-	slot3 = slot2.templateId
-	slot4 = ClientConst
-	slot4 = slot4.AI_HELPER
-	slot4 = slot4.Special_Item
-	slot4 = slot4.EnvObj
+	--- BLOCK #10 45-53, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.isRainbowType
+	slot6 = Utils
+	slot6 = slot6.getPuppetPetPrototypeId
+	slot8 = slot2.templateId
+	MULTRES = slot6(slot8)
+	slot4 = slot4(MULTRES)
 	--- END OF BLOCK #10 ---
 
-	if slot3 == slot4 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 61-64, warpins: 1 ---
-	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeSpecialEnv
-	slot3[slot1] = slot2
+	--- BLOCK #11 54-57, warpins: 1 ---
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntsRainbow
+	slot4[slot1] = slot2
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #12 65-70, warpins: 2 ---
-	slot3 = Utils
-	slot3 = slot3.isCrystal
-	slot5 = slot2
-	slot3 = slot3(slot5)
+	--- BLOCK #12 58-63, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.isLuminAmber
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #12 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #13 71-73, warpins: 1 ---
-	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeEntityTag
-	slot3[slot1] = slot2
+	--- BLOCK #13 64-70, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.openChestLimit
+	slot6 = slot0
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
 
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #14 74-74, warpins: 5 ---
+	--- BLOCK #14 71-71, warpins: 1 ---
 	return
+
 	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 72-75, warpins: 2 ---
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntsAmber
+	slot4[slot1] = slot2
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #16 76-81, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.isEnvObj
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #16 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #17 82-88, warpins: 1 ---
+	slot4 = slot2.templateId
+	slot5 = ClientConst
+	slot5 = slot5.AI_HELPER
+	slot5 = slot5.Special_Item
+	slot5 = slot5.EnvObj
+	--- END OF BLOCK #17 ---
+
+	if slot4 == slot5 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 89-92, warpins: 1 ---
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeSpecialEnv
+	slot4[slot1] = slot2
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #19 93-98, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.isCrystal
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #19 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 99-101, warpins: 1 ---
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntityTag
+	slot4[slot1] = slot2
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 102-102, warpins: 7 ---
+	return
+	--- END OF BLOCK #21 ---
 
 
 
@@ -675,7 +867,7 @@ slot13 = function(slot0, slot1, slot2)
 	slot3[slot1] = slot4
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
 	--- BLOCK #4 16-20, warpins: 1 ---
@@ -698,12 +890,12 @@ slot13 = function(slot0, slot1, slot2)
 	slot3[slot1] = slot4
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
 	--- BLOCK #6 26-30, warpins: 1 ---
 	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeSpecialEnv
+	slot3 = slot3.rangeEntsDark
 	slot3 = slot3[slot1]
 	--- END OF BLOCK #6 ---
 
@@ -716,17 +908,17 @@ slot13 = function(slot0, slot1, slot2)
 
 	--- BLOCK #7 31-35, warpins: 1 ---
 	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeSpecialEnv
+	slot3 = slot3.rangeEntsDark
 	slot4 = nil
 	slot3[slot1] = slot4
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
 	--- BLOCK #8 36-40, warpins: 1 ---
 	slot3 = slot0.AiHelperDetect
-	slot3 = slot3.rangeEntityTag
+	slot3 = slot3.rangeEntsRainbow
 	slot3 = slot3[slot1]
 	--- END OF BLOCK #8 ---
 
@@ -737,20 +929,66 @@ slot13 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 41-44, warpins: 1 ---
+	--- BLOCK #9 41-45, warpins: 1 ---
+	slot3 = slot0.AiHelperDetect
+	slot3 = slot3.rangeEntsRainbow
+	slot4 = nil
+	slot3[slot1] = slot4
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #10 46-50, warpins: 1 ---
+	slot3 = slot0.AiHelperDetect
+	slot3 = slot3.rangeSpecialEnv
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 51-55, warpins: 1 ---
+	slot3 = slot0.AiHelperDetect
+	slot3 = slot3.rangeSpecialEnv
+	slot4 = nil
+	slot3[slot1] = slot4
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #12 56-60, warpins: 1 ---
+	slot3 = slot0.AiHelperDetect
+	slot3 = slot3.rangeEntityTag
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #12 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 61-64, warpins: 1 ---
 	slot3 = slot0.AiHelperDetect
 	slot3 = slot3.rangeEntityTag
 	slot4 = nil
 	slot3[slot1] = slot4
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #10 45-45, warpins: 5 ---
+	--- BLOCK #14 65-65, warpins: 7 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #14 ---
 
 
 
@@ -759,12 +997,16 @@ end
 slot12.onLeaveTrap = slot13
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
 	slot1.rangeEntsAmber = slot2
 	slot2 = {}
 	slot1.rangeEntsShiny = slot2
+	slot2 = {}
+	slot1.rangeEntsDark = slot2
+	slot2 = {}
+	slot1.rangeEntsRainbow = slot2
 	slot2 = {}
 	slot1.rangeLevelItem = slot2
 	slot2 = {}
@@ -1736,6 +1978,52 @@ slot13 = function(slot0)
 end
 
 slot12.trackNearShinyPuppet = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.trackNearEntByType
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntsDark
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.trackNearDarkPuppet = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.trackNearDarkPuppet
+
+	return slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.trackNearBlackShinyPuppet = slot13
+
+slot13 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.trackNearEntByType
+	slot4 = slot0.AiHelperDetect
+	slot4 = slot4.rangeEntsRainbow
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.trackNearRainbowPuppet = slot13
 
 slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

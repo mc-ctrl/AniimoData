@@ -8,31 +8,31 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/PBT_ReadyToFight",
-	useForRoute = true,
 	version = 12,
+	useForRoute = true,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
-	const = 0,
 	type = "int",
+	const = 0,
+	value = "0",
 	name = "tSensorTgtId"
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
-	const = 0,
 	type = "float",
+	const = 0,
+	value = "0",
 	name = "tRandomWaitTime"
 }
 slot4[2] = slot5
 slot5 = {
-	value = "false",
-	const = false,
 	type = "bool",
+	const = false,
+	value = "false",
 	name = "tShowExclamation"
 }
 slot4[3] = slot5

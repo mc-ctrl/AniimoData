@@ -17,7 +17,7 @@ slot7 = slot3
 slot4 = slot4(slot6, slot7)
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-85, warpins: 1 ---
+	--- BLOCK #0 1-87, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -63,12 +63,6 @@ slot5 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "selBallUComponent"
-	slot1 = slot1(slot3, slot4)
-	slot0.selBallUComponent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "txtBallNameUSDFText"
 	slot1 = slot1(slot3, slot4)
 	slot0.txtBallNameUSDFText = slot1
@@ -102,9 +96,63 @@ slot5 = function(slot0)
 	slot4 = "eggPanelUComponent"
 	slot1 = slot1(slot3, slot4)
 	slot0.eggPanelUComponent = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "selBallUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.selBallUWidget = slot1
+	slot1 = slot0.selBallUWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 88-93, warpins: 1 ---
+	slot1 = slot0.selBallUWidget
+	slot1 = slot1.transform
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "UComponent"
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 94-97, warpins: 2 ---
+	slot0.selBallUComponent = slot1
+	slot1 = slot0.selBallUWidget
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 98-103, warpins: 1 ---
+	slot1 = slot0.selBallUWidget
+	slot1 = slot1.transform
+	slot3 = slot1
+	slot1 = slot1.Find
+	slot4 = "ImgLine"
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 104-105, warpins: 2 ---
+	slot0.ImgLineTs = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 

@@ -8,37 +8,37 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = true,
-	version = 18,
 	agenttype = "CombatAgent",
+	version = 18,
 	name = "ParmonBehaviorTree/SubTree/PBT_Wild_10501_DreamDialogue"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
 	const = 0,
+	type = "int",
 	value = "0",
 	name = "dialogueId"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
 	const = 0,
+	type = "float",
 	value = "0",
 	name = "tRandomFloat"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "int",
 	const = 70008552,
+	type = "int",
 	value = "70008552",
 	name = "firstDialogueId"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "int",
 	const = 70008560,
+	type = "int",
 	value = "70008560",
 	name = "lastDialogueId"
 }

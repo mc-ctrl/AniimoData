@@ -77,7 +77,7 @@ slot3 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 30-46, warpins: 1 ---
+	--- BLOCK #5 30-48, warpins: 1 ---
 	slot9 = table
 	slot9 = slot9.insert
 	slot11 = slot3
@@ -86,6 +86,8 @@ slot3 = function(slot0)
 	}
 	slot13 = slot8.loginTime
 	slot12.loginTime = slot13
+	slot13 = slot8.lastLogoutTime
+	slot12.lastLogoutTime = slot13
 	slot13 = slot8.playerId
 	slot12.playerId = slot13
 	slot13 = slot8.status
@@ -104,7 +106,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 47-48, warpins: 2 ---
+	--- BLOCK #6 49-50, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -112,7 +114,7 @@ slot3 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 49-49, warpins: 1 ---
+	--- BLOCK #7 51-51, warpins: 1 ---
 	return slot3
 	--- END OF BLOCK #7 ---
 
@@ -199,7 +201,7 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 34-50, warpins: 1 ---
+	--- BLOCK #6 34-52, warpins: 1 ---
 	slot10 = table
 	slot10 = slot10.insert
 	slot12 = slot3
@@ -208,6 +210,8 @@ slot3 = function(slot0, slot1)
 	}
 	slot14 = slot8.loginTime
 	slot13.loginTime = slot14
+	slot14 = slot8.lastLogoutTime
+	slot13.lastLogoutTime = slot14
 	slot14 = slot8.playerId
 	slot13.playerId = slot14
 	slot14 = slot8.status
@@ -226,7 +230,7 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 51-52, warpins: 5 ---
+	--- BLOCK #7 53-54, warpins: 5 ---
 	--- END OF BLOCK #7 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -234,7 +238,7 @@ slot3 = function(slot0, slot1)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 53-53, warpins: 1 ---
+	--- BLOCK #8 55-55, warpins: 1 ---
 	return slot3
 	--- END OF BLOCK #8 ---
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-92, warpins: 1 ---
+--- BLOCK #0 1-90, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -133,9 +133,9 @@ slot13 = "TopLogoAlertComponent"
 slot14 = slot6
 slot11 = slot11(slot13, slot14)
 slot12 = {
-	NORMAL = 1,
 	HIDE = 0,
-	FULL = 2
+	FULL = 2,
+	NORMAL = 1
 }
 slot13 = 0.18
 slot14 = 0.2
@@ -186,7 +186,7 @@ end
 slot11.ctor = slot17
 
 slot17 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = STAGE
 	slot1 = slot1.HIDE
 	slot0.stage = slot1
@@ -201,13 +201,61 @@ slot17 = function(slot0)
 
 	slot1 = nil
 	slot0.m_pendingShowType = slot1
-	slot3 = slot0
-	slot1 = slot0.refreshVisible
+	slot1 = slot0.entity
+	--- END OF BLOCK #0 ---
 
-	slot1(slot3)
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 16-17, warpins: 1 ---
+	slot1 = slot0.entity
+	slot1 = slot1.topLogoData
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 18-19, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 20-22, warpins: 1 ---
+	slot2 = slot1.alertVisible
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-24, warpins: 1 ---
+	slot2 = slot1.alertMarkType
+	slot0.m_pendingShowType = slot2
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-28, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.refreshVisible
+
+	slot2(slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -670,21 +718,6 @@ slot17 = function(slot0)
 end
 
 slot11.onLanguageChanged = slot17
-
-slot17 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.ALERT
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot11.getComponentName = slot17
 
 slot17 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---

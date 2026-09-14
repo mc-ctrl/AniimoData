@@ -1,4 +1,4 @@
---- BLOCK #0 1-186, warpins: 1 ---
+--- BLOCK #0 1-173, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.Behaviac.Enums"
 slot0 = slot0(slot2)
@@ -310,13 +310,12 @@ end
 slot23.startAgent = slot33
 
 slot33 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.m_blackboard
-	slot4 = slot2
-	slot2 = slot2.get
-	slot5 = slot1
+	slot2 = slot2.m_baseMemory
+	slot2 = slot2[slot1]
 
-	return slot2(slot4, slot5)
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
@@ -326,14 +325,10 @@ end
 slot23.getBlackBoardProperty = slot33
 
 slot33 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.m_blackboard
-	slot5 = slot3
-	slot3 = slot3.set
-	slot6 = slot1
-	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
+	slot3 = slot3.m_baseMemory
+	slot3[slot1] = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2512,75 +2507,75 @@ slot35 = function(slot0, slot1, ...)
 end
 
 slot23.bxCall = slot35
+slot35 = UNITY_EDITOR
 
+--- END OF BLOCK #0 ---
+
+slot35 = if slot35 then
+JUMP TO BLOCK #1
+else
+JUMP TO BLOCK #2
+end
+
+
+--- BLOCK #1 174-176, warpins: 1 ---
 slot35 = function(slot0, slot1, slot2, ...)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = LuaMethodEnum
 	slot3 = slot3[slot2]
-	slot4 = UNITY_EDITOR
-	--- END OF BLOCK #0 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 6-12, warpins: 1 ---
 	slot4 = AIUtils
 	slot4 = slot4.checkAINodeDebug
 	slot6 = slot0.ent
 	slot6 = slot6.actorId
 	slot4 = slot4(slot6)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #0 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 13-19, warpins: 1 ---
+	--- BLOCK #1 10-16, warpins: 1 ---
 	slot4 = LuaMethodEnum
 	slot5 = AiConst
 	slot5 = slot5.LuaMethodResetStateOffset
 	slot5 = slot2 + slot5
 	slot4 = slot4[slot5]
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 20-26, warpins: 1 ---
+	--- BLOCK #2 17-23, warpins: 1 ---
 	slot5 = {}
 	MULTRES = ...
 	slot5[MULTRES] = MULTRES
 	slot6 = 1
 	slot7 = #slot5
 	slot8 = 1
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #4 27-31, warpins: 2 ---
+	--- BLOCK #3 24-28, warpins: 2 ---
 	slot10 = tostring
 	slot12 = slot5[slot9]
 	slot10 = slot10(slot12)
 	slot5[slot9] = slot10
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
 	for slot9=slot6, slot7, slot8
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #4
 
-	--- BLOCK #5 32-46, warpins: 1 ---
+	--- BLOCK #4 29-43, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0._debugSettingRunningAction
 	slot9 = "("
@@ -2598,18 +2593,18 @@ slot35 = function(slot0, slot1, slot2, ...)
 
 	slot6(slot8, slot9)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #6 47-50, warpins: 4 ---
+	--- BLOCK #5 44-47, warpins: 3 ---
 	slot4 = slot0[slot3]
 	slot6 = slot0
 	MULTRES = ...
 
 	return slot4(slot6, MULTRES)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -2617,6 +2612,35 @@ end
 
 slot23.bxCallDebug = slot35
 
+--- END OF BLOCK #1 ---
+
+UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+--- BLOCK #2 177-178, warpins: 1 ---
+slot35 = function(slot0, slot1, slot2, ...)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = LuaMethodEnum
+	slot3 = slot3[slot2]
+	slot3 = slot0[slot3]
+	slot5 = slot0
+	MULTRES = ...
+
+	return slot3(slot5, MULTRES)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.bxCallDebug = slot35
+
+--- END OF BLOCK #2 ---
+
+FLOW; TARGET BLOCK #3
+
+
+--- BLOCK #3 179-192, warpins: 2 ---
 slot35 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
@@ -2790,7 +2814,7 @@ end
 slot23.getSubtreeLocalParamByKey = slot35
 
 return slot23
---- END OF BLOCK #0 ---
+--- END OF BLOCK #3 ---
 
 
 

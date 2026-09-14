@@ -40,12 +40,12 @@ slot13 = slot0.LiteClass
 slot15 = "ItemUseComponent"
 slot13 = slot13(slot15)
 slot14 = {
-	INVITE_FRIEND = 24,
-	INVITE_NORMAL = 23,
-	RECEIVE_NONE = "HORN_NOBODY_TIP",
 	RECEIVE_FRIEND = "HORN_MATCHED_FRIEND_TIP",
+	RECEIVE_NONE = "HORN_NOBODY_TIP",
 	RECEIVE_NORMAL = "HORN_MATCHED_STRANGER_TIP",
-	INVITE_STOP = "HORN_STOP_TIP"
+	INVITE_STOP = "HORN_STOP_TIP",
+	INVITE_FRIEND = 24,
+	INVITE_NORMAL = 23
 }
 
 slot15 = function(slot0)
@@ -256,11 +256,10 @@ slot15 = function(slot0, slot1, slot2)
 		slot4 = nil
 
 		slot5 = function()
-			--- BLOCK #0 1-13, warpins: 1 ---
+			--- BLOCK #0 1-12, warpins: 1 ---
 			slot0 = pg
 			slot0 = slot0.me
 			slot0 = slot0.eModel
-			slot0 = slot0.controllerComponent
 			slot1 = true
 			slot0.InSocialAnim = slot1
 			slot0 = me
@@ -285,11 +284,10 @@ slot15 = function(slot0, slot1, slot2)
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 25-36, warpins: 1 ---
+		--- BLOCK #2 25-35, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot0 = slot0.eModel
-		slot0 = slot0.controllerComponent
 		slot1 = true
 		slot0.InSocialAnim = slot1
 		slot0 = me
@@ -305,7 +303,7 @@ slot15 = function(slot0, slot1, slot2)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 37-37, warpins: 2 ---
+		--- BLOCK #3 36-36, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -581,7 +579,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #5 23-34, warpins: 1 ---
+	--- BLOCK #5 23-33, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.stopCfgAnimation
 
@@ -590,7 +588,6 @@ slot15 = function(slot0)
 	slot3 = pg
 	slot3 = slot3.me
 	slot3 = slot3.eModel
-	slot3 = slot3.controllerComponent
 	slot4 = false
 	slot3.InSocialAnim = slot4
 	slot5 = slot0
@@ -603,7 +600,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-35, warpins: 3 ---
+	--- BLOCK #6 34-34, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -1388,8 +1385,8 @@ slot15 = function(slot0, slot1, slot2)
 	slot4 = slot3.getPosition
 	slot4 = slot4(slot6)
 	slot5 = {
-		enable = true,
-		id = 111
+		id = 111,
+		enable = true
 	}
 	slot5.pos = slot4
 	slot6 = facade
@@ -1408,8 +1405,8 @@ slot15 = function(slot0, slot1, slot2)
 
 	--- BLOCK #3 22-29, warpins: 1 ---
 	slot3 = {
-		enable = false,
-		id = 111
+		id = 111,
+		enable = false
 	}
 	slot4 = facade
 	slot6 = slot4

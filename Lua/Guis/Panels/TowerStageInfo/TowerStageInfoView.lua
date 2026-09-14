@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-71, warpins: 1 ---
+	--- BLOCK #0 1-86, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -82,6 +82,21 @@ slot3 = function(slot0)
 	slot5 = "bg1UWidget"
 	slot2 = slot2(slot4, slot5)
 	slot0.bg1UWidget = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "textRecordUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.textRecordUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNameUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtNameUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -93,12 +108,28 @@ end
 slot2.findObjects = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-47, warpins: 1 ---
+	--- BLOCK #0 1-93, warpins: 1 ---
+	slot1 = slot0.detailTransform
+	slot3 = slot1
+	slot1 = slot1.Find
+	slot4 = "View"
+	slot1 = slot1(slot3, slot4)
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "RectTransform"
+	slot1 = slot1(slot3, slot4)
+	slot0.detailViewRectTransform = slot1
 	slot1 = slot0.detailTransform
 	slot3 = slot1
 	slot1 = slot1.Find
 	slot4 = "View/Content"
 	slot1 = slot1(slot3, slot4)
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "RectTransform"
+	slot1 = slot1(slot3, slot4)
+	slot0.detailContentRectTransform = slot1
+	slot1 = slot0.detailContentRectTransform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
 	slot4 = "ObjectReference"
@@ -140,6 +171,36 @@ slot3 = function(slot0)
 	slot4 = "enemyEmptyUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.enemyEmptyUWidget = slot1
+	slot1 = slot0.detailContentRef
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "enemyUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.enemyUSDFText = slot1
+	slot1 = slot0.detailContentRef
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "taskUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.taskUSDFText = slot1
+	slot1 = slot0.detailContentRef
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "buffUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.buffUWidget = slot1
+	slot1 = slot0.detailContentRef
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtNameUBaseText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtNameUBaseText = slot1
+	slot1 = slot0.detailContentRef
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "buffUList"
+	slot1 = slot1(slot3, slot4)
+	slot0.buffUList = slot1
 
 	return
 	--- END OF BLOCK #0 ---

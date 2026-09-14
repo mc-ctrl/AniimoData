@@ -77,8 +77,8 @@ slot6 = {
 slot5.conditionParamObject = slot6
 slot4.condition = slot5
 slot5 = {
-	paraValue = "01",
-	paraName = "GBPMsg_Common"
+	paraName = "GBPMsg_Common",
+	paraValue = "01"
 }
 slot4.editorPara = slot5
 slot5 = {
@@ -120,13 +120,13 @@ slot6 = {
 slot5.conditionParamObject = slot6
 slot4.condition = slot5
 slot5 = {
-	paraValue = "02",
-	paraName = "GBPMsg_ResPoint"
+	paraName = "GBPMsg_ResPoint",
+	paraValue = "02"
 }
 slot4.editorPara = slot5
 slot5 = {
-	tPortId = 0,
-	tPointId = 1
+	tPointId = 1,
+	tPortId = 0
 }
 slot4.extraPara = slot5
 slot5 = {

@@ -456,9 +456,8 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 35-51, warpins: 2 ---
+	--- BLOCK #7 35-50, warpins: 2 ---
 	slot5 = slot4.eModel
-	slot5 = slot5.modelComponent
 	slot5 = slot5.modelRoot
 	slot8 = slot5
 	slot6 = slot5.GetComponentInChildren
@@ -481,7 +480,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #8 52-59, warpins: 1 ---
+	--- BLOCK #8 51-58, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.getVotedPetTemplateIds
 	slot7 = slot7(slot9)
@@ -497,7 +496,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #9 60-63, warpins: 1 ---
+	--- BLOCK #9 59-62, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.pullVoteData
 
@@ -510,7 +509,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 64-69, warpins: 2 ---
+	--- BLOCK #10 63-68, warpins: 2 ---
 	slot8 = {}
 	slot9 = 0
 	slot10 = ipairs
@@ -521,7 +520,7 @@ slot21 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #11 70-79, warpins: 1 ---
+	--- BLOCK #11 69-78, warpins: 1 ---
 	slot15 = PetPrototypeData
 	slot15 = slot15[slot14]
 	slot15 = slot15.prefabResID
@@ -541,7 +540,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #12 80-83, warpins: 1 ---
+	--- BLOCK #12 79-82, warpins: 1 ---
 	slot16 = pairs
 	slot18 = slot2.votePetListAccompany
 	slot16, slot17, slot18 = slot16(slot18)
@@ -550,7 +549,7 @@ slot21 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #13 84-89, warpins: 1 ---
+	--- BLOCK #13 83-88, warpins: 1 ---
 	slot23 = slot0
 	slot21 = slot0.getPetPrototypeId
 	slot24 = slot20
@@ -564,14 +563,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #14 90-91, warpins: 1 ---
+	--- BLOCK #14 89-90, warpins: 1 ---
 	slot9 = slot19
 	--- END OF BLOCK #14 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 92-93, warpins: 2 ---
+	--- BLOCK #15 91-92, warpins: 2 ---
 	--- END OF BLOCK #15 ---
 
 	for slot19, slot20 in slot16, slot17, slot18
@@ -579,7 +578,7 @@ slot21 = function(slot0)
 	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #16 94-95, warpins: 4 ---
+	--- BLOCK #16 93-94, warpins: 4 ---
 	--- END OF BLOCK #16 ---
 
 	for slot13, slot14 in slot10, slot11, slot12
@@ -587,7 +586,7 @@ slot21 = function(slot0)
 	GO OUT TO BLOCK #17
 
 
-	--- BLOCK #17 96-98, warpins: 1 ---
+	--- BLOCK #17 95-97, warpins: 1 ---
 	slot10 = 0
 	--- END OF BLOCK #17 ---
 
@@ -598,7 +597,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #18 99-134, warpins: 1 ---
+	--- BLOCK #18 98-133, warpins: 1 ---
 	slot10 = slot2.petListAccompany2
 	slot10 = slot10[slot9]
 	slot13 = slot0
@@ -648,7 +647,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 135-137, warpins: 2 ---
+	--- BLOCK #19 134-136, warpins: 2 ---
 	slot10 = slot2.petFixAtmosId
 	--- END OF BLOCK #19 ---
 
@@ -659,7 +658,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #20 138-141, warpins: 1 ---
+	--- BLOCK #20 137-140, warpins: 1 ---
 	slot11 = ipairs
 	slot13 = slot10
 	slot11, slot12, slot13 = slot11(slot13)
@@ -668,7 +667,7 @@ slot21 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #21 142-145, warpins: 1 ---
+	--- BLOCK #21 141-144, warpins: 1 ---
 	slot16 = PetPrototypeData
 	slot16 = slot16[slot15]
 	--- END OF BLOCK #21 ---
@@ -680,7 +679,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #22 146-156, warpins: 1 ---
+	--- BLOCK #22 145-155, warpins: 1 ---
 	slot17 = table
 	slot17 = slot17.insert
 	slot19 = slot7
@@ -700,7 +699,7 @@ slot21 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #23 157-164, warpins: 1 ---
+	--- BLOCK #23 156-163, warpins: 1 ---
 	slot17 = logger
 	slot19 = slot17
 	slot17 = slot17.error
@@ -716,7 +715,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 165-166, warpins: 3 ---
+	--- BLOCK #24 164-165, warpins: 3 ---
 	--- END OF BLOCK #24 ---
 
 	for slot14, slot15 in slot11, slot12, slot13
@@ -724,7 +723,7 @@ slot21 = function(slot0)
 	GO OUT TO BLOCK #25
 
 
-	--- BLOCK #25 167-179, warpins: 2 ---
+	--- BLOCK #25 166-178, warpins: 2 ---
 	slot11 = Time
 	slot11 = slot11.secondCache
 	slot12 = Utils
@@ -745,14 +744,14 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #26 180-180, warpins: 1 ---
+	--- BLOCK #26 179-179, warpins: 1 ---
 	slot11 = 0
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 181-189, warpins: 2 ---
+	--- BLOCK #27 180-188, warpins: 2 ---
 	slot14 = slot6
 	slot12 = slot6.SetPets
 	slot15 = slot7
@@ -768,7 +767,7 @@ slot21 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
-	--- BLOCK #28 190-192, warpins: 1 ---
+	--- BLOCK #28 189-191, warpins: 1 ---
 	slot5 = slot0.hasInitStage
 	--- END OF BLOCK #28 ---
 
@@ -779,7 +778,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #29 193-194, warpins: 1 ---
+	--- BLOCK #29 192-193, warpins: 1 ---
 	slot5 = false
 	slot0.hasInitStage = slot5
 
@@ -788,7 +787,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 195-195, warpins: 6 ---
+	--- BLOCK #30 194-194, warpins: 6 ---
 	return
 	--- END OF BLOCK #30 ---
 
@@ -1788,7 +1787,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
@@ -1799,7 +1798,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	if slot4 > slot5 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
@@ -1812,7 +1811,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot6, slot7, slot8 = slot6(slot8)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
 	--- BLOCK #3 16-22, warpins: 1 ---
@@ -1826,11 +1825,11 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot11 = if slot11 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 23-44, warpins: 1 ---
+	--- BLOCK #4 23-36, warpins: 1 ---
 	slot11 = pg
 	slot11 = slot11.me
 	slot13 = slot11
@@ -1841,6 +1840,20 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot11(slot13, slot14, slot15)
 
+	slot11 = string
+	slot11 = slot11.isNilOrEmpty
+	slot13 = slot3
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #4 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 37-50, warpins: 1 ---
 	slot11 = pg
 	slot11 = slot11.me
 	slot11 = slot11.id
@@ -1857,54 +1870,40 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot12(slot14, slot15, slot16)
 
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 45-46, warpins: 3 ---
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 51-52, warpins: 4 ---
+	--- END OF BLOCK #6 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #6
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #6 47-49, warpins: 1 ---
+	--- BLOCK #7 53-55, warpins: 1 ---
 	slot6 = 3
-	--- END OF BLOCK #6 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #7 50-54, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.arkCarnStageState
 	--- END OF BLOCK #7 ---
 
-	slot7 = if slot7 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #8 55-60, warpins: 1 ---
+	--- BLOCK #8 56-60, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.me
 	slot7 = slot7.arkCarnStageState
-	slot7 = slot7[slot6]
 	--- END OF BLOCK #8 ---
 
 	slot7 = if slot7 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
@@ -1915,28 +1914,42 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot7 = slot7[slot6]
 	--- END OF BLOCK #9 ---
 
-	if slot7 == 1 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
 	--- BLOCK #10 67-72, warpins: 1 ---
 	slot7 = pg
 	slot7 = slot7.me
-	slot7 = slot7.space
-	slot7 = slot7.sceneId
+	slot7 = slot7.arkCarnStageState
+	slot7 = slot7[slot6]
 	--- END OF BLOCK #10 ---
 
-	if slot7 == 501 then
+	if slot7 == 1 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #11 73-81, warpins: 1 ---
+	--- BLOCK #11 73-78, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.me
+	slot7 = slot7.space
+	slot7 = slot7.sceneId
+	--- END OF BLOCK #11 ---
+
+	if slot7 == 501 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 79-87, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.getPhotoTask
 	slot10 = pg
@@ -1944,16 +1957,16 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot10 = slot10.arkcarnCurActId
 	slot11 = slot6 * 1000
 	slot7 = slot7(slot9, slot10, slot11)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #12 ---
 
 	slot7 = if slot7 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #12 82-103, warpins: 1 ---
+	--- BLOCK #13 88-109, warpins: 1 ---
 	slot8 = pg
 	slot8 = slot8.me
 	slot10 = slot8
@@ -1974,16 +1987,16 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	slot10 = slot10(slot12, slot13)
 	slot11 = slot7.carnivalScopeId
 	slot11 = slot11[4]
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #13 ---
 
 	if slot10 < slot11 then
-	JUMP TO BLOCK #13
-	else
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 104-109, warpins: 1 ---
+	--- BLOCK #14 110-115, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.me
 	slot12 = slot10
@@ -1992,14 +2005,14 @@ slot21 = function(slot0, slot1, slot2, slot3)
 
 	slot10(slot12, slot13)
 
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 110-110, warpins: 10 ---
-	return
 	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 116-116, warpins: 10 ---
+	return
+	--- END OF BLOCK #15 ---
 
 
 

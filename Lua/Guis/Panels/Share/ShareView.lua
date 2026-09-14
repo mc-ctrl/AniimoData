@@ -94,9 +94,34 @@ end
 slot3.registerObjects = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = UNITY_PS5
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = slot0.saveUButton
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-94, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -12,62 +12,53 @@ slot3 = slot0.LightClass
 slot5 = "VehicleInterationCtrl"
 slot6 = slot1
 slot3 = slot3(slot5, slot6)
-slot4 = require
-slot6 = "Guis.Panels.VehicleInteration.Component.VehicleInterationGamePadComponent"
-slot4 = slot4(slot6)
-slot5 = CS
-slot5 = slot5.FunPlus
-slot5 = slot5.WorldX
-slot5 = slot5.GUIS
-slot5 = slot5.Panels
-slot5 = slot5.Utils
-slot5 = slot5.KeyBindingPro
+slot4 = CS
+slot4 = slot4.FunPlus
+slot4 = slot4.WorldX
+slot4 = slot4.GUIS
+slot4 = slot4.Panels
+slot4 = slot4.Utils
+slot4 = slot4.KeyBindingPro
+slot5 = require
+slot7 = "Const.HotkeyConst"
+slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.HotkeyConst"
+slot8 = "Const.UIConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.UIConst"
+slot9 = "Utils.LuaUIUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.vehicle_seat_data"
+slot10 = "Common.Utils.TimeUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.vehicle_data"
+slot11 = "Core.Common.Time"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.LuaUIUtils"
+slot12 = "Utils.ClientTextUtils"
 slot10 = slot10(slot12)
-slot11 = require
-slot13 = "Common.Utils.TimeUtils"
-slot11 = slot11(slot13)
-slot12 = require
-slot14 = "Core.Common.Time"
-slot12 = slot12(slot14)
-slot13 = require
-slot15 = "Utils.ClientTextUtils"
-slot13 = slot13(slot15)
-slot14 = {}
-slot15 = slot2.INPUT_DEVICE_CHANGED
-slot16 = {
+slot11 = {}
+slot12 = slot2.INPUT_DEVICE_CHANGED
+slot13 = {
 	"onInputDeviceChanged",
 	true
 }
-slot14[slot15] = slot16
-slot15 = slot2.ON_CEHICLE_SEAT_MAP_CHANGED
-slot16 = {
+slot11[slot12] = slot13
+slot12 = slot2.ON_CEHICLE_SEAT_MAP_CHANGED
+slot13 = {
 	"onUpdateInterationShow",
 	true
 }
-slot14[slot15] = slot16
-slot3.messages = slot14
-slot14 = {
+slot11[slot12] = slot13
+slot3.messages = slot11
+slot11 = {
 	"Hud/VehicleSkillQ",
 	"Hud/VehicleSkillE",
 	"Hud/VehicleSkillR"
 }
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-24, warpins: 1 ---
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -76,6 +67,8 @@ slot15 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	slot0.info = slot1
+	slot2 = false
+	slot0.campAddOnCounting = slot2
 	slot2 = facade
 	slot4 = slot2
 	slot2 = slot2.sendMsgToUI
@@ -109,14 +102,14 @@ slot15 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 25-25, warpins: 1 ---
+	--- BLOCK #1 27-27, warpins: 1 ---
 	slot2 = 0
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 26-31, warpins: 2 ---
+	--- BLOCK #2 28-33, warpins: 2 ---
 	slot0.updateTimer = slot2
 	slot2 = pg
 	slot2 = slot2.pawn
@@ -130,14 +123,14 @@ slot15 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 32-32, warpins: 1 ---
+	--- BLOCK #3 34-34, warpins: 1 ---
 	slot2 = -1
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 33-37, warpins: 2 ---
+	--- BLOCK #4 35-39, warpins: 2 ---
 	slot0.vehicleDestroyTime = slot2
 	slot4 = slot0
 	slot2 = slot0.setVehicleCountTimeInfo
@@ -151,9 +144,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot15
+slot3.onCreate = slot12
 
-slot15 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -162,15 +155,17 @@ slot15 = function(slot0)
 
 end
 
-slot3.onShow = slot15
+slot3.onShow = slot12
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearUpdateTimer
 
 	slot1(slot3)
 
+	slot1 = false
+	slot0.campAddOnCounting = slot1
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -195,9 +190,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.onDestroy = slot15
+slot3.onDestroy = slot12
 
-slot15 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-49, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.seatListUList
@@ -313,9 +308,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.addListener = slot15
+slot3.addListener = slot12
 
-slot15 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.info
 	--- END OF BLOCK #0 ---
@@ -323,11 +318,11 @@ slot15 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #1 4-14, warpins: 1 ---
+	--- BLOCK #1 4-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.showPictures
 
@@ -338,69 +333,80 @@ slot15 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = pg
-	slot1 = slot1.pawn
-	slot1 = slot1.rideEndTime
+	slot1 = slot0.campAddOnCounting
 	--- END OF BLOCK #1 ---
 
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 15-15, warpins: 1 ---
-	slot1 = 0
+	--- BLOCK #2 13-17, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.pawn
+	slot1 = slot1.rideEndTime
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 16-21, warpins: 2 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-24, warpins: 2 ---
 	slot0.updateTimer = slot1
 	slot1 = pg
 	slot1 = slot1.pawn
 	slot1 = slot1.vehicleDestroyTime
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #4 ---
 
 	slot1 = if not slot1 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 22-22, warpins: 1 ---
+	--- BLOCK #5 25-25, warpins: 1 ---
 	slot1 = -1
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #5 23-26, warpins: 2 ---
+	--- BLOCK #6 26-29, warpins: 2 ---
 	slot0.vehicleDestroyTime = slot1
 	slot3 = slot0
 	slot1 = slot0.setVehicleCountTimeInfo
 
 	slot1(slot3)
 
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 27-27, warpins: 2 ---
-	return
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-30, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot3.onUpdateInterationShow = slot15
+slot3.onUpdateInterationShow = slot12
 
-slot15 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -731,9 +737,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.showPictures = slot15
+slot3.showPictures = slot12
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -931,9 +937,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.renderSeatItem = slot15
+slot3.renderSeatItem = slot12
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1113,9 +1119,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.renderInterationIndexItem = slot15
+slot3.renderInterationIndexItem = slot12
 
-slot15 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1306,10 +1312,27 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot3.onSkillClick = slot15
+slot3.onSkillClick = slot12
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.campAddOnCounting
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #2 5-18, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.getVehicleDurationTime
@@ -1324,49 +1347,31 @@ slot15 = function(slot0)
 
 	slot4(slot6, slot7)
 
-	--- END OF BLOCK #0 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 15-15, warpins: 1 ---
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #2 16-23, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.pawn
-	slot4 = slot4.vehicleDestroyTime
-	slot5 = pg
-	slot5 = slot5.pawn
-	slot5 = slot5.rideEndTime
 	--- END OF BLOCK #2 ---
 
-	slot5 = if not slot5 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 24-24, warpins: 1 ---
-	slot5 = 0
+	--- BLOCK #3 19-19, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #4 25-27, warpins: 2 ---
-	slot6 = 0
+	--- BLOCK #4 20-27, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.pawn
+	slot4 = slot4.vehicleDestroyTime
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot5 = slot5.rideEndTime
 	--- END OF BLOCK #4 ---
 
-	if slot5 <= slot6 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
@@ -1374,13 +1379,31 @@ slot15 = function(slot0)
 
 
 	--- BLOCK #5 28-28, warpins: 1 ---
-	slot5 = slot4
+	slot5 = 0
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 29-40, warpins: 2 ---
+	--- BLOCK #6 29-31, warpins: 2 ---
+	slot6 = 0
+	--- END OF BLOCK #6 ---
+
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 32-32, warpins: 1 ---
+	slot5 = slot4
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 33-44, warpins: 2 ---
 	slot6 = Time
 	slot6 = slot6.secondCache
 	slot6 = slot5 - slot6
@@ -1504,22 +1527,227 @@ slot15 = function(slot0)
 	slot0.updateTimer = slot7
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 41-41, warpins: 2 ---
+	--- BLOCK #9 45-45, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 46-46, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot3.setVehicleCountTimeInfo = slot15
+slot3.setVehicleCountTimeInfo = slot12
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = slot0.view
+	slot3 = slot3.numUBaseText
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot3 = slot0.view
+	slot3 = slot3.panelTimeRectTransform
+
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-21, warpins: 2 ---
+	slot3 = true
+	slot0.campAddOnCounting = slot3
+	slot5 = slot0
+	slot3 = slot0.clearUpdateTimer
+
+	slot3(slot5)
+
+	slot3 = math
+	slot3 = slot3.max
+	--- END OF BLOCK #4 ---
+
+	slot5 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-25, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 26-44, warpins: 2 ---
+	slot5 = slot5 - slot6
+	slot6 = 0
+	slot3 = slot3(slot5, slot6)
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.numUBaseText
+	slot7 = TimeUtils
+	slot7 = slot7.timeToFormatString
+	slot9 = slot3
+	MULTRES = slot7(slot9)
+
+	slot4(slot6, MULTRES)
+
+	slot4 = LuaUIUtils
+	slot4 = slot4.setUIVisible
+	slot6 = slot0.view
+	slot6 = slot6.panelTimeRectTransform
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot3.setCampAddOnCountTimeInfo = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.campAddOnCounting
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot1 = false
+	slot0.campAddOnCounting = slot1
+	slot1 = slot0.view
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.panelTimeRectTransform
+
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-14, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-24, warpins: 2 ---
+	slot1 = LuaUIUtils
+	slot1 = slot1.setUIVisible
+	slot3 = slot0.view
+	slot3 = slot3.panelTimeRectTransform
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.setVehicleCountTimeInfo
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot3.clearCampAddOnCountTimeInfo = slot12
+
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot4 = slot1.transform
 	slot6 = slot4
@@ -1907,9 +2135,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.renderSelectItem = slot15
+slot3.renderSelectItem = slot12
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0.model
 	slot6 = slot4
@@ -2191,9 +2419,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.setSeatInfo = slot15
+slot3.setSeatInfo = slot12
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.seatListUList
@@ -2323,10 +2551,10 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.onSelectedSeatChanged = slot15
+slot3.onSelectedSeatChanged = slot12
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-48, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-47, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnExitObjectReference
 	slot4 = slot1
@@ -2365,16 +2593,15 @@ slot15 = function(slot0)
 	slot7 = slot7.setText
 	slot9 = slot3
 	slot10 = pg
-	slot10 = slot10.getLocalizationText
+	slot10 = slot10.getFormatText
 	slot12 = pg
 	slot12 = slot12.getGameString
 	slot14 = "VEHICLE_EXIT"
-	MULTRES = slot12(slot14)
-	slot10 = slot10(MULTRES)
-	slot11 = slot6
-	slot10 = slot10 .. slot11
+	slot12 = slot12(slot14)
+	slot13 = slot6
+	MULTRES = slot10(slot12, slot13)
 
-	slot7(slot9, slot10)
+	slot7(slot9, MULTRES)
 
 	slot7 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
@@ -2401,9 +2628,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.setExitBtnInfo = slot15
+slot3.setExitBtnInfo = slot12
 
-slot15 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2412,9 +2639,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot3.setInterationBtnInfo = slot15
+slot3.setInterationBtnInfo = slot12
 
-slot15 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -2433,9 +2660,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.onClose = slot15
+slot3.onClose = slot12
 
-slot15 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.updateTimer
 	--- END OF BLOCK #0 ---
@@ -2470,9 +2697,9 @@ slot15 = function(slot0)
 
 end
 
-slot3.clearUpdateTimer = slot15
+slot3.clearUpdateTimer = slot12
 
-slot15 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2481,7 +2708,7 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot3.onInputDeviceChanged = slot15
+slot3.onInputDeviceChanged = slot12
 
 return slot3
 --- END OF BLOCK #0 ---

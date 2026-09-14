@@ -1,31 +1,34 @@
---- BLOCK #0 1-39, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
-slot2 = "Utils.ClientModelUtils"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Utils.ClientModelUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.UIScene.UISceneBase"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
-slot4 = slot2.LightClass
-slot6 = "PVPRewardScene"
-slot7 = slot3
-slot4 = slot4(slot6, slot7)
-slot5 = require
-slot7 = "Entities.ClientSimpleVirtualEntity"
-slot5 = slot5(slot7)
+slot4 = require
+slot6 = "GameApp.UIScene.UISceneBase"
+slot4 = slot4(slot6)
+slot5 = slot3.LightClass
+slot7 = "PVPRewardScene"
+slot8 = slot4
+slot5 = slot5(slot7, slot8)
 slot6 = require
-slot8 = "Data.pet_data"
+slot8 = "Entities.ClientSimpleVirtualEntity"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.tmp_pet_template_data"
+slot9 = "Data.pet_data"
 slot7 = slot7(slot9)
+slot8 = require
+slot10 = "Data.tmp_pet_template_data"
+slot8 = slot8(slot10)
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -34,9 +37,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.onCtor = slot8
+slot5.onCtor = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-59, warpins: 1 ---
 	slot1 = slot0.scene
 	slot1 = slot1.transform
@@ -105,9 +108,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.onStart = slot8
+slot5.onStart = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -145,12 +148,11 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #3 16-29, warpins: 1 ---
+	--- BLOCK #3 16-27, warpins: 1 ---
 	slot2 = slot0.showEnt
 	slot2 = slot2.eModel
-	slot2 = slot2.transform
 	slot4 = slot2
-	slot2 = slot2.SetParent
+	slot2 = slot2.SetTransformParent
 	slot5 = slot0.centerPos
 	slot6 = false
 
@@ -158,16 +160,17 @@ slot8 = function(slot0)
 
 	slot2 = slot0.showEnt
 	slot2 = slot2.eModel
-	slot2 = slot2.transform
-	slot3 = Vector3
-	slot3 = slot3.zero
-	slot2.localPosition = slot3
+	slot4 = slot2
+	slot2 = slot2.SetTransformLocalPosition
+
+	slot2(slot4)
+
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 30-47, warpins: 2 ---
+	--- BLOCK #4 28-45, warpins: 2 ---
 	slot2 = slot0.camera
 	slot2 = slot2.transform
 	slot2 = slot2.position
@@ -194,9 +197,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.showPet = slot8
+slot5.showPet = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActive
@@ -248,9 +251,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot4.showResult = slot8
+slot5.showResult = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = TmpPetTemplateData
 	slot2 = slot2[slot1]
@@ -291,7 +294,7 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-32, warpins: 2 ---
+	--- BLOCK #4 11-37, warpins: 2 ---
 	slot5 = ClientSimpleVirtualEntity
 	slot5 = slot5.new
 	slot5 = slot5()
@@ -301,25 +304,32 @@ slot8 = function(slot0, slot1)
 
 	slot6(slot8, slot9)
 
-	slot8 = slot5
-	slot6 = slot5.init
-	slot9 = {}
-	slot9.templateId = slot1
+	slot6 = {}
+	slot6.templateId = slot1
+	slot9 = slot5
+	slot7 = slot5.init
+	slot10 = slot6
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
-	slot8 = slot5
-	slot6 = slot5.start
+	slot9 = slot5
+	slot7 = slot5.postInit
+	slot10 = slot6
 
-	slot6(slot8)
+	slot7(slot9, slot10)
 
-	slot8 = slot5
-	slot6 = slot5.setModelLayer
-	slot9 = ClientConst
-	slot9 = slot9.LayerDefine
-	slot9 = slot9.LAYER_DEFAULT
+	slot9 = slot5
+	slot7 = slot5.start
 
-	slot6(slot8, slot9)
+	slot7(slot9)
+
+	slot9 = slot5
+	slot7 = slot5.setModelLayer
+	slot10 = ClientConst
+	slot10 = slot10.LayerDefine
+	slot10 = slot10.LAYER_DEFAULT
+
+	slot7(slot9, slot10)
 
 	return slot5
 	--- END OF BLOCK #4 ---
@@ -328,9 +338,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot4.initModel = slot8
+slot5.initModel = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.showEnt
 	--- END OF BLOCK #0 ---
@@ -343,9 +353,9 @@ slot8 = function(slot0)
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.showEnt
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.showEnt
 
 	slot1(slot3)
 
@@ -372,9 +382,9 @@ slot8 = function(slot0)
 
 end
 
-slot4.onDestroy = slot8
+slot5.onDestroy = slot9
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

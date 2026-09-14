@@ -1,9 +1,9 @@
 --- BLOCK #0 1-130, warpins: 1 ---
 slot0 = {
+	minHoldRoleNum = 1,
 	behavID = "BP_Wild_GroupBehav_GuGuCyclone",
 	GroupBehavVisionArea = "visionAreaLow",
-	CDAfterEnd = 0,
-	minHoldRoleNum = 1
+	CDAfterEnd = 0
 }
 slot1 = {}
 slot2 = {

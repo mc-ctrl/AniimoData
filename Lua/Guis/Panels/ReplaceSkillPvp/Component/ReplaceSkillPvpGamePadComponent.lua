@@ -136,8 +136,8 @@ slot7 = function(slot0)
 	--- BLOCK #0 1-75, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		EQUIP_SKILL_AREA = 1,
-		UNLOCK_SKILL_AREA = 2
+		UNLOCK_SKILL_AREA = 2,
+		EQUIP_SKILL_AREA = 1
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

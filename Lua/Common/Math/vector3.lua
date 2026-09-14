@@ -50,10 +50,10 @@ FLOW; TARGET BLOCK #2
 --- BLOCK #2 36-82, warpins: 2 ---
 slot17 = false
 slot18 = {
-	createFromCacheRefCnt = 0,
 	banInspect = true,
 	className = "Vector3",
-	class = "Vector3"
+	class = "Vector3",
+	createFromCacheRefCnt = 0
 }
 slot19 = {}
 slot20 = {}
@@ -338,31 +338,49 @@ end
 slot18.getUsingTempVectorMap = slot24
 
 slot24 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = usingTempVectorMap
-	slot1 = slot1[slot0]
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot0 = if not slot0 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot1 = usingTempVectorMap
-	slot2 = nil
-	slot1[slot0] = slot2
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return
+	--- BLOCK #2 4-7, warpins: 2 ---
+	slot1 = usingTempVectorMap
+	slot1 = slot1[slot0]
 	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot1 = usingTempVectorMap
+	slot2 = nil
+	slot1[slot0] = slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 11-11, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
 
 
 
@@ -494,7 +512,55 @@ end
 slot18.GetFromPool = slot24
 
 slot24 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-7, warpins: 2 ---
+	slot1 = assert
+	slot3 = slot0[4]
+	--- END OF BLOCK #2 ---
+
+	if slot3 == 1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-18, warpins: 2 ---
+	slot4 = "ReadOnlyVector3"
+
+	slot1(slot3, slot4)
+
 	slot1 = table
 	slot1 = slot1.insert
 	slot3 = manualCacheStack
@@ -503,7 +569,7 @@ slot24 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -1246,7 +1312,7 @@ slot18.ForceNew = slot30
 FLOW; TARGET BLOCK #5
 
 
---- BLOCK #5 92-308, warpins: 2 ---
+--- BLOCK #5 92-312, warpins: 2 ---
 slot30 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
@@ -1914,6 +1980,24 @@ end
 
 slot18.HoriDistance = slot30
 
+slot30 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = slot0 - slot2
+	slot5 = slot1 - slot3
+	slot6 = sqrt
+	slot8 = slot4 * slot4
+	slot9 = slot5 * slot5
+	slot8 = slot8 + slot9
+
+	return slot6(slot8)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot18.HoriDistanceEx = slot30
+
 slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = abs
@@ -2010,6 +2094,26 @@ slot30 = function(slot0, slot1)
 end
 
 slot18.SqrDistance = slot30
+
+slot30 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot6 = slot0 - slot3
+	slot7 = slot1 - slot4
+	slot8 = slot2 - slot5
+	slot9 = slot6 * slot6
+	slot10 = slot7 * slot7
+	slot9 = slot9 + slot10
+	slot10 = slot8 * slot8
+	slot9 = slot9 + slot10
+
+	return slot9
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot18.SqrDistanceEx = slot30
 
 slot30 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---

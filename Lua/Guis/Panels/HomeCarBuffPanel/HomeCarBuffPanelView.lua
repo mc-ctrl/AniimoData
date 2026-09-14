@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-46, warpins: 1 ---
+	--- BLOCK #0 1-41, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -55,14 +55,9 @@ slot4 = function(slot0)
 	slot0.listUList = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "btnReceiveUButton"
+	slot5 = "txtStateUSDFText"
 	slot2 = slot2(slot4, slot5)
-	slot0.btnReceiveUButton = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "txtNameUSDFText"
-	slot2 = slot2(slot4, slot5)
-	slot0.txtNameUSDFText = slot2
+	slot0.txtStateUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

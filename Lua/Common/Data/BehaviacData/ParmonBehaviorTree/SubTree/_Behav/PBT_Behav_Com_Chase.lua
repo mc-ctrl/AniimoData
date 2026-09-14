@@ -7,34 +7,34 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
 	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_Chase",
-	version = 14
+	version = 14,
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "int",
 	name = "tTargetActorId",
 	value = "0",
-	type = "int",
 	const = 0
 }
 slot4[1] = slot5
 slot5 = {
+	type = "SpeedRateType",
 	name = "",
-	value = "Mid",
-	type = "SpeedRateType"
+	value = "Mid"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Mid
 slot5.const = slot6
 slot4[2] = slot5
 slot5 = {
+	type = "float",
 	name = "Speed",
 	value = "0",
-	type = "float",
 	const = 0
 }
 slot4[3] = slot5
@@ -42,8 +42,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "2",
-	class = "Sequence"
+	class = "Sequence",
+	id = "2"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -52,8 +52,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "10",
-	class = "Action"
+	class = "Action",
+	id = "10"
 }
 slot8 = {}
 slot9 = {}
@@ -110,8 +110,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "7",
-	class = "DecoratorLoop"
+	class = "DecoratorLoop",
+	id = "7"
 }
 slot8 = {}
 slot9 = {}
@@ -134,8 +134,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "8",
-	class = "Sequence"
+	class = "Sequence",
+	id = "8"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -144,8 +144,8 @@ slot10.attachments = slot11
 slot11 = {}
 slot12 = {}
 slot13 = {
-	id = "4",
-	class = "Action"
+	class = "Action",
+	id = "4"
 }
 slot14 = {}
 slot15 = {}
@@ -224,8 +224,8 @@ slot12.node = slot13
 slot11[1] = slot12
 slot12 = {}
 slot13 = {
-	id = "9",
-	class = "ReferencedBehavior"
+	class = "ReferencedBehavior",
+	id = "9"
 }
 slot14 = {}
 slot15 = {}

@@ -1,4 +1,4 @@
---- BLOCK #0 1-43, warpins: 1 ---
+--- BLOCK #0 1-47, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -85,11 +85,6 @@ slot6 = function(slot0, slot1)
 	slot5 = slot5(slot7, slot8)
 	slot8 = slot5
 	slot6 = slot5.GetRefValue
-	slot9 = "camera"
-	slot6 = slot6(slot8, slot9)
-	slot0.camera = slot6
-	slot8 = slot5
-	slot6 = slot5.GetRefValue
 	slot9 = "rLTransform"
 	slot6 = slot6(slot8, slot9)
 	slot0.rLTransform = slot6
@@ -108,6 +103,11 @@ slot6 = function(slot0, slot1)
 	slot9 = "xmeshRenderAnim"
 	slot6 = slot6(slot8, slot9)
 	slot0.xmeshRenderAnim = slot6
+	slot8 = slot5
+	slot6 = slot5.GetRefValue
+	slot9 = "cameraAni"
+	slot6 = slot6(slot8, slot9)
+	slot0.cameraAni = slot6
 
 	return
 	--- END OF BLOCK #3 ---
@@ -132,25 +132,36 @@ slot6 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-22, warpins: 1 ---
+	--- BLOCK #1 6-27, warpins: 1 ---
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
 	slot4 = slot2
-	slot2 = slot2.SetParent
+	slot2 = slot2.SetTransformParent
 	slot5 = slot0.rLTransform
 
 	slot2(slot4, slot5)
 
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
-	slot3 = Vector3
-	slot3 = slot3.zero
-	slot2.localRotation = slot3
+	slot4 = slot2
+	slot2 = slot2.SetTransformLocalRotation
+	slot5 = 0
+	slot6 = 0
+	slot7 = 0
+	slot8 = 1
+
+	slot2(slot4, slot5, slot6, slot7, slot8)
+
 	slot2 = slot1.eModel
-	slot2 = slot2.transform
-	slot3 = Vector3
-	slot3 = slot3.zero
-	slot2.localPosition = slot3
+	slot4 = slot2
+	slot2 = slot2.SetTransformLocalPosition
+
+	slot2(slot4)
+
+	slot4 = slot1
+	slot2 = slot1.setRendererLod
+	slot5 = 0
+
+	slot2(slot4, slot5)
+
 	slot0.leftEntity = slot1
 
 	--- END OF BLOCK #1 ---
@@ -158,7 +169,7 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 23-23, warpins: 2 ---
+	--- BLOCK #2 28-28, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -227,7 +238,7 @@ slot6 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-57, warpins: 2 ---
+	--- BLOCK #5 19-62, warpins: 2 ---
 	slot3 = {
 		useDefaultParts = true
 	}
@@ -249,28 +260,39 @@ slot6 = function(slot0)
 	slot9 = ClientNpcDuelAvatarPrefabPlayer
 	slot10 = slot3
 	slot5 = slot5(slot7, slot8, slot9, slot10)
+	slot8 = slot5
+	slot6 = slot5.setRendererLod
+	slot9 = 0
+
+	slot6(slot8, slot9)
+
 	slot6 = {}
 	slot7 = {}
 	slot6.customShow = slot7
 	slot5.curShow = slot6
 	slot6 = slot5.eModel
-	slot6 = slot6.transform
 	slot8 = slot6
-	slot6 = slot6.SetParent
+	slot6 = slot6.SetTransformParent
 	slot9 = slot0.rRTransform
 
 	slot6(slot8, slot9)
 
 	slot6 = slot5.eModel
-	slot6 = slot6.transform
-	slot7 = Vector3
-	slot7 = slot7.zero
-	slot6.localRotation = slot7
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalRotation
+	slot9 = 0
+	slot10 = 0
+	slot11 = 0
+	slot12 = 1
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
 	slot6 = slot5.eModel
-	slot6 = slot6.transform
-	slot7 = Vector3
-	slot7 = slot7.zero
-	slot6.localPosition = slot7
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalPosition
+
+	slot6(slot8)
+
 	slot0.rightEntity = slot5
 
 	return
@@ -281,6 +303,80 @@ slot6 = function(slot0)
 end
 
 slot2.previewModel_Right = slot6
+
+slot6 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = IsNil
+	slot3 = slot0.cameraAni
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot1 = slot0.cameraAni
+	slot3 = slot1
+	slot1 = slot1.Play
+	slot4 = "CameraAni_Activity_GymBattle_PrepareStart"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-11, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.cameraAnimToIn = slot6
+
+slot6 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = IsNil
+	slot3 = slot0.cameraAni
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot1 = slot0.cameraAni
+	slot3 = slot1
+	slot1 = slot1.Play
+	slot4 = "CameraAni_Activity_GymBattle_PrepareToLoading"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-11, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.cameraAnimToConfirm = slot6
 
 slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

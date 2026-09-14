@@ -1,4 +1,4 @@
---- BLOCK #0 1-165, warpins: 1 ---
+--- BLOCK #0 1-171, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -1703,6 +1703,38 @@ end
 slot1.SendMessageToTrigger = slot17
 
 slot17 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot1 = AIUtils
+	slot1 = slot1.getActorIdFromContext
+	slot3 = slot0.mainActorId
+	slot4 = slot0
+	slot1 = slot1(slot3, slot4)
+	slot2 = AIUtils
+	slot2 = slot2.getActorIdFromContext
+	slot4 = slot0.anotherActorId
+	slot5 = slot0
+	slot2 = slot2(slot4, slot5)
+	slot3 = AIBaseMethodUtils
+	slot3 = slot3.Base_SendMessageToTriggerSpecial
+	slot5 = pg
+	slot5 = slot5.getEntityByActorId
+	slot7 = slot0._entActorId
+	slot5 = slot5(slot7)
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot1.SendMessageToTriggerSpecial = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.getActorIdFromContext
@@ -1815,7 +1847,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #5 22-56, warpins: 1 ---
+	--- BLOCK #5 22-54, warpins: 1 ---
 	slot4 = Vector3
 	slot4 = slot4.enableCreateFromCache
 
@@ -1836,9 +1868,7 @@ slot17 = function(slot0)
 	slot5 = slot5 + slot6
 	slot6 = slot4
 	slot7 = slot2.eModel
-	slot7 = slot7.modelComponent
-	slot7 = slot7.modelView
-	slot7 = slot7.shaderView
+	slot7 = slot7.modelShaderView
 	slot9 = slot7
 	slot7 = slot7.SetAFKBodyScreenDeform
 	slot10 = true
@@ -1861,11 +1891,9 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 57-64, warpins: 1 ---
+	--- BLOCK #6 55-60, warpins: 1 ---
 	slot4 = slot2.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot4 = slot4.shaderView
+	slot4 = slot4.modelShaderView
 	slot6 = slot4
 	slot4 = slot4.SetAFKBodyScreenDeform
 	slot7 = false
@@ -1877,7 +1905,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 65-65, warpins: 4 ---
+	--- BLOCK #7 61-61, warpins: 4 ---
 	return
 	--- END OF BLOCK #7 ---
 
@@ -2026,6 +2054,84 @@ slot17 = function(slot0)
 end
 
 slot1.ClearNotTargetLetGoCD = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getEntityByActorId
+	slot3 = slot0._entActorId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-13, warpins: 1 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.tryMountHomeLeisureRide
+	slot4 = slot1
+	slot5 = slot0.vehicleActorId
+	slot6 = slot0.seatIndex
+	slot7 = slot0.revision
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-14, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot1.TryHomeLeisureMount = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getEntityByActorId
+	slot3 = slot0._entActorId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.homeLeisureFinished
+	slot4 = slot1
+	slot5 = slot0.revision
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot1.FinishHomeLandLeisure = slot17
 
 slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---

@@ -104,22 +104,12 @@ end
 slot15.addListener = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
 
 	slot1(slot3)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.show
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_HUD
-
-	slot1(slot3, slot4)
 
 	slot1 = pg
 	slot1 = slot1.global
@@ -141,21 +131,11 @@ end
 slot15.onDestroy = slot16
 
 slot16 = function(slot0, slot1)
-	--- BLOCK #0 1-27, warpins: 1 ---
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
 	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.hide
-	slot5 = UIConst
-	slot5 = slot5.UI_ID_HUD
 
 	slot2(slot4, slot5)
 
@@ -840,7 +820,7 @@ slot16 = function(slot0, slot1)
 
 	--- BLOCK #1 4-10, warpins: 1 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot0.lastClickTime
 	slot2 = slot2 - slot3
 	slot3 = 3
@@ -864,7 +844,7 @@ slot16 = function(slot0, slot1)
 
 	--- BLOCK #3 12-26, warpins: 3 ---
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot0.lastClickTime = slot2
 	slot2 = math
 	slot2 = slot2.clamp

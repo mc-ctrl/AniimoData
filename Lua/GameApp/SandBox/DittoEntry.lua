@@ -1,4 +1,4 @@
---- BLOCK #0 1-85, warpins: 1 ---
+--- BLOCK #0 1-89, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -53,16 +53,18 @@ slot19 = "DittoEntry"
 slot20 = slot6
 slot17 = slot17(slot19, slot20)
 slot18 = "Eff_Env_SceneObject_Morphling_Soul"
-slot19 = "Eff_Env_SceneObject_Morphling_Soul"
+slot19 = require
+slot21 = "Const.AddressDataConst"
+slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Const.AddressDataConst"
+slot22 = "Data.sys_notice_data"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Data.sys_notice_data"
+slot23 = "Const.UIConst"
 slot21 = slot21(slot23)
 
 slot22 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-40, warpins: 1 ---
+	--- BLOCK #0 1-30, warpins: 1 ---
 	slot4 = DittoEntry
 	slot4 = slot4.super
 	slot4 = slot4.ctor
@@ -92,57 +94,6 @@ slot22 = function(slot0, slot1, slot2, slot3)
 	slot0.dittoScaleFactor = slot5
 	slot5 = slot4.dittoAnimStateName
 	slot0.dittoAnimStateName = slot5
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.resMgr
-	slot7 = slot5
-	slot5 = slot5.GetInstanceFromCacheByLua
-	slot8 = AddressDataConst
-	slot8 = slot8.DITTO_ENTRY_CAMERA_EFFECT
-
-	slot9 = function(slot0, slot1)
-		--- BLOCK #0 1-28, warpins: 1 ---
-		slot2 = self
-		slot2.cameraEffect = slot0
-		slot4 = slot0
-		slot2 = slot0.SetActiveEx
-		slot5 = false
-
-		slot2(slot4, slot5)
-
-		slot2 = slot0.transform
-		slot4 = slot2
-		slot2 = slot2.SetParent
-		slot5 = pg
-		slot5 = slot5.global
-		slot5 = slot5.cameraMgr
-		slot5 = slot5.worldCameraInst
-		slot5 = slot5.transform
-
-		slot2(slot4, slot5)
-
-		slot2 = slot0.transform
-		slot3 = Vector3
-		slot3 = slot3.zero
-		slot2.localPosition = slot3
-		slot2 = slot0.transform
-		slot3 = Quaternion
-		slot3 = slot3.identity
-		slot2.localRotation = slot3
-		slot2 = slot0.transform
-		slot3 = Vector3
-		slot3 = slot3.one
-		slot2.localScale = slot3
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot5(slot7, slot8, slot9)
-
 	slot5 = false
 	slot0.destroying = slot5
 
@@ -156,14 +107,21 @@ end
 slot17.ctor = slot22
 
 slot22 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot2 = false
 	slot1.dittoEnter = slot2
-	slot1 = true
-	slot0.destroying = slot1
-	slot1 = slot0.cameraEffect
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.stopCfgAnimation
+
+	slot1(slot3)
+
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.updateStateCache
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -173,24 +131,23 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-18, warpins: 1 ---
+	--- BLOCK #1 15-20, warpins: 1 ---
 	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.resMgr
+	slot1 = slot1.me
 	slot3 = slot1
-	slot1 = slot1.RemoveInstanceToCache
-	slot4 = slot0.cameraEffect
+	slot1 = slot1.updateStateCache
+	slot4 = "DITTO_ENTER_ST"
 
 	slot1(slot3, slot4)
 
-	slot1 = nil
-	slot0.cameraEffect = slot1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 19-21, warpins: 2 ---
+	--- BLOCK #2 21-25, warpins: 2 ---
+	slot1 = true
+	slot0.destroying = slot1
 	slot1 = slot0.activeEffId
 	--- END OF BLOCK #2 ---
 
@@ -201,7 +158,7 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #3 22-31, warpins: 1 ---
+	--- BLOCK #3 26-35, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.effect
@@ -219,7 +176,17 @@ slot22 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 32-39, warpins: 2 ---
+	--- BLOCK #4 36-51, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.close
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_Morphling
+
+	slot1(slot3, slot4)
+
 	slot1 = DittoEntry
 	slot1 = slot1.super
 	slot1 = slot1.destroy
@@ -428,12 +395,81 @@ slot22 = function(slot0, slot1, slot2)
 
 	--- BLOCK #1 9-9, warpins: 1 ---
 	slot5 = {}
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-52, warpins: 2 ---
+	--- BLOCK #2 10-58, warpins: 2 ---
+	slot6 = function()
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = refKey
+		--- END OF BLOCK #0 ---
+
+		if slot0 == "puppet1" then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 4-10, warpins: 1 ---
+		slot0 = virtualEnt
+		slot2 = slot0
+		slot0 = slot0.playRawAnimation
+		slot3 = self
+		slot3 = slot3.petAnimStateName
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 11-16, warpins: 1 ---
+		slot0 = virtualEnt
+		slot2 = slot0
+		slot0 = slot0.playRawAnimation
+		slot3 = self
+		slot3 = slot3.dittoAnimStateName
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-32, warpins: 2 ---
+		slot0 = ClientEffectUtils
+		slot0 = slot0.PlayPreset
+		slot2 = virtualEnt
+		slot3 = DITTO_PET_IDLE_PM
+		slot4 = -1
+		slot5 = false
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		slot0 = self
+		slot0 = slot0.cutsceneRoot
+		slot2 = slot0
+		slot0 = slot0.SetExternalRefEntity
+		slot3 = refKey
+		slot4 = virtualEnt
+		slot4 = slot4.eModel
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot4.modelLoadedCallback = slot6
 	slot8 = slot4
 	slot6 = slot4.setConfigData
 	slot9 = slot5
@@ -447,29 +483,39 @@ slot22 = function(slot0, slot1, slot2)
 	slot6(slot8, slot9)
 
 	slot8 = slot4
+	slot6 = slot4.postInit
+	slot9 = slot2
+
+	slot6(slot8, slot9)
+
+	slot8 = slot4
 	slot6 = slot4.start
 
 	slot6(slot8)
 
 	slot6 = slot4.eModel
-	slot6 = slot6.transform
 	slot8 = slot6
-	slot6 = slot6.SetParent
+	slot6 = slot6.SetTransformParent
 	slot9 = slot2.parentTransform
 
 	slot6(slot8, slot9)
 
 	slot6 = slot4.eModel
-	slot6 = slot6.transform
-	slot7 = Vector3
-	slot7 = slot7.zero
-	slot6.localPosition = slot7
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalPosition
+
+	slot6(slot8)
+
 	slot6 = slot4.eModel
-	slot6 = slot6.gameObject
-	slot6 = slot6.transform
-	slot7 = Quaternion
-	slot7 = slot7.identity
-	slot6.localRotation = slot7
+	slot8 = slot6
+	slot6 = slot6.SetTransformLocalRotation
+	slot9 = 0
+	slot10 = 0
+	slot11 = 0
+	slot12 = 1
+
+	slot6(slot8, slot9, slot10, slot11, slot12)
+
 	slot8 = slot4
 	slot6 = slot4.setModelLayer
 	slot9 = ClientConst
@@ -487,65 +533,8 @@ slot22 = function(slot0, slot1, slot2)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #2 ---
-
-	if slot1 == "puppet1" then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 53-57, warpins: 1 ---
-	slot8 = slot4
-	slot6 = slot4.playRawAnimation
-	slot9 = slot0.petAnimStateName
-
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 58-61, warpins: 1 ---
-	slot8 = slot4
-	slot6 = slot4.playRawAnimation
-	slot9 = slot0.dittoAnimStateName
-
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 62-81, warpins: 2 ---
-	slot8 = slot4
-	slot6 = slot4.playEffect
-	slot9 = DITTO_PET_IDLE_EFFECT_KEY
-	slot6 = slot6(slot8, slot9)
-	slot7 = slot4.eModel
-	slot7 = slot7.modelView
-	slot7 = slot7.shaderView
-	slot9 = slot7
-	slot7 = slot7.PlayPreset
-	slot10 = DITTO_PET_IDLE_PM
-	slot11 = -1
-	slot12 = false
-
-	slot7(slot9, slot10, slot11, slot12)
-
-	slot7 = slot0.cutsceneRoot
-	slot9 = slot7
-	slot7 = slot7.SetExternalRefEntity
-	slot10 = slot1
-	slot11 = slot4.eModel
-
-	slot7(slot9, slot10, slot11)
-
 	return slot4
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -628,114 +617,168 @@ end
 slot17.onValueChange = slot22
 
 slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-30, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
-	slot2 = slot2.getTeamMemberCount
+	slot2 = slot2.getForward
 	slot2 = slot2(slot4)
-	slot3 = 1
+	slot3 = slot0.dittoEntrySB
+	slot3 = slot3.transform
+	slot3 = slot3.position
+	slot4 = pg
+	slot4 = slot4.pawn
+	slot6 = slot4
+	slot4 = slot4.getPosition
+	slot4 = slot4(slot6)
+	slot3 = slot3 - slot4
+	slot6 = slot0
+	slot4 = slot0.GetHorizontalSignedAngle
+	slot7 = pg
+	slot7 = slot7.pawn
+	slot9 = slot7
+	slot7 = slot7.getForward
+	slot7 = slot7(slot9)
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
+	slot5 = math
+	slot5 = slot5.abs
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	slot6 = 30
 	--- END OF BLOCK #0 ---
 
-	if slot2 > slot3 then
+	if slot5 > slot6 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-13, warpins: 1 ---
-	slot3 = SysNoticeData
-	slot4 = 10906
-	slot3 = slot3[slot4]
+	--- BLOCK #1 31-38, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.pawn
+	slot7 = slot5
+	slot5 = slot5.faceToPosition
+	slot8 = slot0.dittoEntrySB
+	slot8 = slot8.transform
+	slot8 = slot8.position
+
+	slot5(slot7, slot8)
+
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 39-46, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.getTeamMemberCount
+	slot5 = slot5(slot7)
+	slot6 = 1
+	--- END OF BLOCK #2 ---
+
+	if slot5 > slot6 then
 	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #2 14-24, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot4 = slot4.tips
-	slot6 = slot4
-	slot4 = slot4.showTextTip
-	slot7 = pg
-	slot7 = slot7.getLocalizationText
-	slot9 = slot3.text
-	MULTRES = slot7(slot9)
-
-	slot4(slot6, MULTRES)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 25-25, warpins: 2 ---
+	--- BLOCK #3 47-51, warpins: 1 ---
+	slot6 = SysNoticeData
+	slot7 = 10906
+	slot6 = slot6[slot7]
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	slot6 = if slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 26-30, warpins: 1 ---
-	slot3 = slot1.interactionType
-	slot4 = InteractionConst
-	slot4 = slot4.INTERACTION_TYPE_START_DITTO
+	--- BLOCK #4 52-62, warpins: 1 ---
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.tips
+	slot9 = slot7
+	slot7 = slot7.showTextTip
+	slot10 = pg
+	slot10 = slot10.getLocalizationText
+	slot12 = slot6.text
+	MULTRES = slot10(slot12)
+
+	slot7(slot9, MULTRES)
+
 	--- END OF BLOCK #4 ---
 
-	if slot3 == slot4 then
-	JUMP TO BLOCK #5
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 63-63, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #6 64-68, warpins: 1 ---
+	slot6 = slot1.interactionType
+	slot7 = InteractionConst
+	slot7 = slot7.INTERACTION_TYPE_START_DITTO
+	--- END OF BLOCK #6 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #7 69-75, warpins: 1 ---
+	slot6 = slot0.syncInfo
+	slot6 = slot6.state
+	slot7 = SandboxConst
+	slot7 = slot7.LEVEL_DITTO_ENTRY_STATE
+	slot7 = slot7.ACTIVE
+	--- END OF BLOCK #7 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #5 31-37, warpins: 1 ---
-	slot3 = slot0.syncInfo
-	slot3 = slot3.state
-	slot4 = SandboxConst
-	slot4 = slot4.LEVEL_DITTO_ENTRY_STATE
-	slot4 = slot4.ACTIVE
-	--- END OF BLOCK #5 ---
+	--- BLOCK #8 76-82, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.isControllingPet
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #8 ---
 
-	if slot3 == slot4 then
-	JUMP TO BLOCK #6
-	else
+	slot6 = if slot6 then
 	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #6 38-44, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isControllingPet
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 45-55, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.requestSwitchToPlayer
-	slot6 = Const
-	slot6 = slot6.CLIENT_SWITCH_REASON
-	slot6 = slot6.Catch
-	slot7 = nil
+	--- BLOCK #9 83-93, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.requestSwitchToPlayer
+	slot9 = Const
+	slot9 = slot9.CLIENT_SWITCH_REASON
+	slot9 = slot9.Catch
+	slot10 = nil
 
-	slot8 = function()
+	slot11 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -750,82 +793,159 @@ slot22 = function(slot0, slot1)
 
 	end
 
-	slot3 = slot3(slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #8 56-59, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.playStartDittoEffect
-
-	slot3(slot5)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #9 60-66, warpins: 1 ---
-	slot3 = slot0.syncInfo
-	slot3 = slot3.state
-	slot4 = SandboxConst
-	slot4 = slot4.LEVEL_DITTO_ENTRY_STATE
-	slot4 = slot4.CD
+	slot6 = slot6(slot8, slot9, slot10, slot11)
 	--- END OF BLOCK #9 ---
 
-	if slot3 == slot4 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #10 67-86, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.dittoCDTimes
-	slot4 = slot0.sceneId
-	slot3 = slot3[slot4]
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.showBubbleMessageRaw
-	slot6 = string
-	slot6 = slot6.format
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "FUNC_NOT_AVAILABLE"
-	slot8 = slot8(slot10)
-	slot9 = Time
-	slot9 = slot9.secondCache
-	slot9 = slot3 - slot9
-	slot6 = slot6(slot8, slot9)
-	slot7 = 3
+	--- BLOCK #10 94-97, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.playStartDittoEffect
 
-	slot4(slot6, slot7)
+	slot6(slot8)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #11 87-88, warpins: 5 ---
-	return
+	--- BLOCK #11 98-104, warpins: 1 ---
+	slot6 = slot0.syncInfo
+	slot6 = slot6.state
+	slot7 = SandboxConst
+	slot7 = slot7.LEVEL_DITTO_ENTRY_STATE
+	slot7 = slot7.CD
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	if slot6 == slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #12 89-89, warpins: 2 ---
-	return
+	--- BLOCK #12 105-124, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot6 = slot6.dittoCDTimes
+	slot7 = slot0.sceneId
+	slot6 = slot6[slot7]
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.showBubbleMessageRaw
+	slot9 = string
+	slot9 = slot9.format
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "FUNC_NOT_AVAILABLE"
+	slot11 = slot11(slot13)
+	slot12 = Time
+	slot12 = slot12.secondCache
+	slot12 = slot6 - slot12
+	slot9 = slot9(slot11, slot12)
+	slot10 = 3
+
+	slot7(slot9, slot10)
+
 	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 125-126, warpins: 5 ---
+	return
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 127-127, warpins: 2 ---
+	return
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
 slot17.onInteract = slot22
+
+slot22 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-44, warpins: 1 ---
+	slot3 = Vector3
+	slot3 = slot3.enableCreateFromCache
+
+	slot3()
+
+	slot3 = Vector3
+	slot5 = slot1.x
+	slot6 = 0
+	slot7 = slot1.z
+	slot3 = slot3(slot5, slot6, slot7)
+	slot3 = slot3.normalized
+	slot4 = Vector3
+	slot6 = slot2.x
+	slot7 = 0
+	slot8 = slot2.z
+	slot4 = slot4(slot6, slot7, slot8)
+	slot4 = slot4.normalized
+	slot5 = Vector3
+	slot5 = slot5.Dot
+	slot7 = slot3
+	slot8 = slot4
+	slot5 = slot5(slot7, slot8)
+	slot6 = math
+	slot6 = slot6.max
+	slot8 = -1
+	slot9 = math
+	slot9 = slot9.min
+	slot11 = 1
+	slot12 = slot5
+	MULTRES = slot9(slot11, slot12)
+	slot6 = slot6(slot8, MULTRES)
+	slot5 = slot6
+	slot6 = math
+	slot6 = slot6.acos
+	slot8 = slot5
+	slot6 = slot6(slot8)
+	slot6 = slot6 * 57.29578
+	slot7 = Vector3
+	slot7 = slot7.Cross
+	slot9 = slot3
+	slot10 = slot4
+	slot7 = slot7(slot9, slot10)
+	slot8 = slot7.y
+	slot9 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot8 < slot9 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 45-45, warpins: 1 ---
+	slot6 = -slot6
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 46-49, warpins: 2 ---
+	slot8 = Vector3
+	slot8 = slot8.disableCreateFromCache
+
+	slot8()
+
+	return slot6
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.GetHorizontalSignedAngle = slot22
 
 slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -842,16 +962,43 @@ slot22 = function(slot0)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 5-38, warpins: 1 ---
+	--- BLOCK #2 5-15, warpins: 1 ---
 	slot1 = true
 	slot0.startingDitto = slot1
 	slot1 = pg
 	slot1 = slot1.me
 	slot2 = true
 	slot1.dittoEnter = slot2
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.updateStateCache
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-21, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.updateStateCache
+	slot4 = "DITTO_ENTER_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 22-49, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -936,14 +1083,19 @@ slot22 = function(slot0)
 		slot4 = 3
 
 		slot5 = function()
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = self
-			slot0 = slot0.cameraEffect
+			--- BLOCK #0 1-10, warpins: 1 ---
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.ui
 			slot2 = slot0
-			slot0 = slot0.SetActiveEx
-			slot3 = true
+			slot0 = slot0.open
+			slot3 = UIConst
+			slot3 = slot3.UI_ID_Morphling
+			slot4 = {
+				state = 1
+			}
 
-			slot0(slot2, slot3)
+			slot0(slot2, slot3, slot4)
 
 			return
 			--- END OF BLOCK #0 ---
@@ -961,12 +1113,14 @@ slot22 = function(slot0)
 		slot4 = 5
 
 		slot5 = function()
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = self
-			slot0 = slot0.cameraEffect
+			--- BLOCK #0 1-9, warpins: 1 ---
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.ui
 			slot2 = slot0
-			slot0 = slot0.SetActiveEx
-			slot3 = false
+			slot0 = slot0.close
+			slot3 = UIConst
+			slot3 = slot3.UI_ID_Morphling
 
 			slot0(slot2, slot3)
 
@@ -1036,14 +1190,14 @@ slot22 = function(slot0)
 	slot0._saveTimer = slot1
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 39-39, warpins: 2 ---
+	--- BLOCK #5 50-50, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -1052,12 +1206,14 @@ end
 slot17.playStartDittoEffect = slot22
 
 slot22 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot2 = false
 	slot1.dittoEnter = slot2
-	slot1 = slot0._startScreenEffectTimer
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.updateStateCache
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -1067,22 +1223,22 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-13, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.removeTimer
-	slot4 = slot0._startScreenEffectTimer
+	--- BLOCK #1 10-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.updateStateCache
+	slot4 = "DITTO_ENTER_ST"
 
 	slot1(slot3, slot4)
 
-	slot1 = nil
-	slot0._startScreenEffectTimer = slot1
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-16, warpins: 2 ---
-	slot1 = slot0._stopScreenEffectTimer
+	--- BLOCK #2 16-18, warpins: 2 ---
+	slot1 = slot0._startScreenEffectTimer
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -1092,22 +1248,22 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #3 17-22, warpins: 1 ---
+	--- BLOCK #3 19-24, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
-	slot4 = slot0._stopScreenEffectTimer
+	slot4 = slot0._startScreenEffectTimer
 
 	slot1(slot3, slot4)
 
 	slot1 = nil
-	slot0._stopScreenEffectTimer = slot1
+	slot0._startScreenEffectTimer = slot1
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-25, warpins: 2 ---
-	slot1 = slot0._activeEffectTimer
+	--- BLOCK #4 25-27, warpins: 2 ---
+	slot1 = slot0._stopScreenEffectTimer
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
@@ -1117,22 +1273,22 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #5 26-31, warpins: 1 ---
+	--- BLOCK #5 28-33, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
-	slot4 = slot0._activeEffectTimer
+	slot4 = slot0._stopScreenEffectTimer
 
 	slot1(slot3, slot4)
 
 	slot1 = nil
-	slot0._activeEffectTimer = slot1
+	slot0._stopScreenEffectTimer = slot1
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-34, warpins: 2 ---
-	slot1 = slot0._effectTimer
+	--- BLOCK #6 34-36, warpins: 2 ---
+	slot1 = slot0._activeEffectTimer
 	--- END OF BLOCK #6 ---
 
 	slot1 = if slot1 then
@@ -1142,22 +1298,22 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #7 35-40, warpins: 1 ---
+	--- BLOCK #7 37-42, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
-	slot4 = slot0._effectTimer
+	slot4 = slot0._activeEffectTimer
 
 	slot1(slot3, slot4)
 
 	slot1 = nil
-	slot0._effectTimer = slot1
+	slot0._activeEffectTimer = slot1
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 41-43, warpins: 2 ---
-	slot1 = slot0._saveTimer
+	--- BLOCK #8 43-45, warpins: 2 ---
+	slot1 = slot0._effectTimer
 	--- END OF BLOCK #8 ---
 
 	slot1 = if slot1 then
@@ -1167,23 +1323,22 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #9 44-49, warpins: 1 ---
+	--- BLOCK #9 46-51, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
-	slot4 = slot0._saveTimer
+	slot4 = slot0._effectTimer
 
 	slot1(slot3, slot4)
 
 	slot1 = nil
-	slot0._saveTimer = slot1
+	slot0._effectTimer = slot1
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 50-52, warpins: 2 ---
-	slot1 = slot0.destroying
-
+	--- BLOCK #10 52-54, warpins: 2 ---
+	slot1 = slot0._saveTimer
 	--- END OF BLOCK #10 ---
 
 	slot1 = if slot1 then
@@ -1193,26 +1348,41 @@ slot22 = function(slot0)
 	end
 
 
-	--- BLOCK #11 53-53, warpins: 1 ---
-	return
+	--- BLOCK #11 55-60, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.removeTimer
+	slot4 = slot0._saveTimer
 
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0._saveTimer = slot1
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 54-74, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.serverMsg
-	slot4 = "RPC_CS_TeleportToScene"
-	slot5 = slot0.sceneId
-	slot6 = 0
-	slot7 = true
+	--- BLOCK #12 61-63, warpins: 2 ---
+	slot1 = slot0.destroying
 
-	slot1(slot3, slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #12 ---
 
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 64-64, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 65-77, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -1225,11 +1395,12 @@ slot22 = function(slot0)
 	slot3 = slot0
 	slot1 = slot0.serverMsg
 	slot4 = "RPC_CS_StartDitto"
+	slot5 = slot0.sceneId
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
 
 

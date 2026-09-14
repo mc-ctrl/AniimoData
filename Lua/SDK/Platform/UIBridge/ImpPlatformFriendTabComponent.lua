@@ -1,4 +1,4 @@
---- BLOCK #0 1-140, warpins: 1 ---
+--- BLOCK #0 1-156, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Utils.ClientTextUtils"
@@ -43,6 +43,10 @@ slot12 = "platform_friends"
 slot0.PLATFORM_FRIENDS_GROUP_ID = slot12
 slot12 = slot6.UI_Node_ChatPanel_Friend_Add
 slot0.ADD_FRIEND_CONFIG = slot12
+slot12 = "SDK.Platform.UIBridge.ImpPlatformFriendTabComponent"
+slot0.PLATFORM_CALLBACK_OWNER = slot12
+slot12 = nil
+slot0._activePlatformCallbackOwner = slot12
 slot12 = {
 	PlayStation = 2,
 	Xbox = 1,
@@ -50,10 +54,10 @@ slot12 = {
 }
 slot0.ConsolePlatformType = slot12
 slot12 = {
-	Group = 3,
 	Apply = 2,
 	Friend = 1,
-	AddFriend = 0
+	AddFriend = 0,
+	Group = 3
 }
 slot0.FriendChannelType = slot12
 
@@ -698,61 +702,6 @@ slot12 = function(slot0)
 end
 
 slot0.buildPlatformPlayerName = slot12
-
-slot12 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = PlatformTextCommunicationService
-	slot3 = slot1
-	slot1 = slot1.notifyTargetUnavailable
-	slot4 = "platform_friend_unavailable"
-	slot5 = {
-		unavailableTipKey = "PLATFORM_FRIEND_NOT_REGISTERED",
-		notifyUser = true
-	}
-	slot6 = PlatformIdentityUtils
-	slot6 = slot6.resolvePlayerInfoFamily
-	slot8 = slot0
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #0 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 12-14, warpins: 1 ---
-	slot6 = PlatformIdentityUtils
-	slot6 = slot6.getCurrentPlatformFamily
-	slot6 = slot6()
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 15-26, warpins: 2 ---
-	slot5.targetFamily = slot6
-	slot6 = string
-	slot6 = slot6.isNilOrEmpty
-	slot8 = PlatformIdentityUtils
-	slot8 = slot8.resolvePlatformUserId
-	slot10 = slot0
-	MULTRES = slot8(slot10)
-	slot6 = slot6(MULTRES)
-	slot6 = not slot6
-	slot5.hasPlatformUserId = slot6
-
-	slot1(slot3, slot4, slot5)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot0.showPlatformFriendNotOpenTip = slot12
 slot12 = {}
 slot13 = slot4.Family
 slot13 = slot13.Xbox
@@ -2676,6 +2625,251 @@ end
 slot0.fetchPlatformFriendList = slot12
 
 slot12 = function(slot0)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot0 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 3-7, warpins: 1 ---
+	slot1 = type
+	slot3 = IsNil
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	if slot1 == "function" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot1 = IsNil
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 12-13, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 14-14, warpins: 1 ---
+	slot1 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 15-15, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot0.isUnityObjectInvalid = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = type
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot1 = type
+	slot3 = slot0.refreshFriendList
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= "function" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot1 = slot0.ctrl
+	--- END OF BLOCK #4 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-20, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #5 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 2 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-28, warpins: 2 ---
+	slot1 = M
+	slot1 = slot1.isUnityObjectInvalid
+	slot3 = slot0.gameObject
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #7 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-30, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 31-36, warpins: 2 ---
+	slot1 = M
+	slot1 = slot1.isUnityObjectInvalid
+	slot3 = slot0.rootUComponent
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #9 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 37-38, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 39-44, warpins: 2 ---
+	slot1 = M
+	slot1 = slot1.isUnityObjectInvalid
+	slot3 = slot0.friendListUComponent
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #11 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 45-46, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 47-52, warpins: 2 ---
+	slot1 = M
+	slot1 = slot1.isUnityObjectInvalid
+	slot3 = slot0.listFriendUList
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #13 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 53-54, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 55-56, warpins: 2 ---
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot0.isFriendTabComponentAlive = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ugcFriendNameRequestState
 	--- END OF BLOCK #0 ---
@@ -2837,11 +3031,15 @@ slot12 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 48-52, warpins: 2 ---
+	--- BLOCK #16 48-55, warpins: 2 ---
 	slot1 = M
 	slot1 = slot1.FriendChannelType
 	slot1 = slot1.Friend
 	slot0.curPanelType = slot1
+	slot3 = slot0
+	slot1 = slot0.registerPlatformCallbacks
+
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #16 ---
@@ -3218,7 +3416,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-25, warpins: 4 ---
+	--- BLOCK #4 17-26, warpins: 4 ---
 	slot6 = M
 	slot6 = slot6.resolveFriendTabName
 	slot8 = PlatformNameMaskService
@@ -3227,8 +3425,9 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	slot9 = slot3.playerId
 	slot10 = slot4
 	slot11 = slot5
+	slot6, slot7, slot8, slot9 = slot6(slot8, slot9, slot10, slot11)
 
-	return slot6(slot8, slot9, slot10, slot11)
+	return slot6
 	--- END OF BLOCK #4 ---
 
 
@@ -3236,6 +3435,661 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 end
 
 slot0.renderFriendItemName = slot12
+
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot2 = M
+	slot2 = slot2.isFriendTabComponentAlive
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "[platform_friend_tab][ugc_policy_changed] received policy=%s source=%s componentAlive=%s refreshInvoked=%s"
+	slot7 = tostring
+	slot9 = type
+	slot11 = slot1
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #0 ---
+
+	if slot9 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 15-17, warpins: 1 ---
+	slot9 = slot1.policy
+	--- END OF BLOCK #1 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 18-18, warpins: 2 ---
+	slot9 = nil
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 19-25, warpins: 2 ---
+	slot7 = slot7(slot9)
+	slot8 = tostring
+	slot10 = type
+	slot12 = slot1
+	slot10 = slot10(slot12)
+	--- END OF BLOCK #3 ---
+
+	if slot10 == "table" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-28, warpins: 1 ---
+	slot10 = slot1.source
+	--- END OF BLOCK #4 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-29, warpins: 2 ---
+	slot10 = nil
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-39, warpins: 2 ---
+	slot8 = slot8(slot10)
+	slot9 = tostring
+	slot11 = slot2
+	slot9 = slot9(slot11)
+	slot10 = tostring
+	slot12 = slot2
+	MULTRES = slot10(slot12)
+
+	slot3(slot5, slot6, slot7, slot8, slot9, MULTRES)
+
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 40-40, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 41-44, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshFriendList
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot0.refreshFriendListOnUgcPolicyChanged = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.registerPlatformCallback
+	--- END OF BLOCK #1 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-23, warpins: 2 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "[platform_friend_tab][ugc_policy_changed] register owner=%s eventKey=%s success=false reason=%s"
+	slot6 = tostring
+	slot8 = M
+	slot8 = slot8.PLATFORM_CALLBACK_OWNER
+	slot6 = slot6(slot8)
+	slot7 = tostring
+	slot9 = nil
+	slot7 = slot7(slot9)
+	slot8 = "platform_callback_unavailable"
+
+	slot2(slot4, slot5, slot6, slot7, slot8)
+
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #3 24-26, warpins: 1 ---
+	slot2 = slot1.PLATFORM_CALLBACK_EVENT
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 27-29, warpins: 1 ---
+	slot3 = slot2.UgcPolicyChanged
+	--- END OF BLOCK #4 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 30-30, warpins: 2 ---
+	slot3 = nil
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 31-35, warpins: 2 ---
+	slot4 = type
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #6 ---
+
+	if slot4 == "string" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 36-37, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	if slot3 == "" then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 38-52, warpins: 2 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.info
+	slot7 = "[platform_friend_tab][ugc_policy_changed] register owner=%s eventKey=%s success=false reason=%s"
+	slot8 = tostring
+	slot10 = M
+	slot10 = slot10.PLATFORM_CALLBACK_OWNER
+	slot8 = slot8(slot10)
+	slot9 = tostring
+	slot11 = slot3
+	slot9 = slot9(slot11)
+	slot10 = "event_key_missing"
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot4 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #9 53-61, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.registerPlatformCallback
+	slot7 = slot3
+	slot8 = M
+	slot8 = slot8.PLATFORM_CALLBACK_OWNER
+
+	slot9 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = M
+		slot1 = slot1.refreshFriendListOnUgcPolicyChanged
+		slot3 = self
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4 = slot4(slot6, slot7, slot8, slot9)
+	--- END OF BLOCK #9 ---
+
+	if slot4 ~= true then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 62-63, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+	--- BLOCK #11 64-64, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 65-66, warpins: 2 ---
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 67-68, warpins: 1 ---
+	slot5 = M
+	slot5._activePlatformCallbackOwner = slot0
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 69-84, warpins: 2 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.info
+	slot8 = "[platform_friend_tab][ugc_policy_changed] register owner=%s eventKey=%s success=%s reason=%s"
+	slot9 = tostring
+	slot11 = M
+	slot11 = slot11.PLATFORM_CALLBACK_OWNER
+	slot9 = slot9(slot11)
+	slot10 = tostring
+	slot12 = slot3
+	slot10 = slot10(slot12)
+	slot11 = tostring
+	slot13 = slot4
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #14 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 85-86, warpins: 1 ---
+	slot12 = "ok"
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #16 87-87, warpins: 1 ---
+	slot12 = "register_failed"
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 88-90, warpins: 2 ---
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+
+	return slot4
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 91-91, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 92-92, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #19 ---
+
+
+
+end
+
+slot0.registerPlatformCallbacks = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = M
+	slot1 = slot1._activePlatformCallbackOwner
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot1 = M
+	slot1 = slot1._activePlatformCallbackOwner
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-20, warpins: 1 ---
+	slot1 = logger
+	slot3 = slot1
+	slot1 = slot1.info
+	slot4 = "[platform_friend_tab][ugc_policy_changed] unregister owner=%s success=false reason=%s"
+	slot5 = tostring
+	slot7 = M
+	slot7 = slot7.PLATFORM_CALLBACK_OWNER
+	slot5 = slot5(slot7)
+	slot6 = "stale_owner"
+
+	slot1(slot3, slot4, slot5, slot6)
+
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 21-25, warpins: 3 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.platform
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-28, warpins: 1 ---
+	slot2 = slot1.unregisterPlatformCallback
+	--- END OF BLOCK #4 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-40, warpins: 2 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "[platform_friend_tab][ugc_policy_changed] unregister owner=%s success=false reason=%s"
+	slot6 = tostring
+	slot8 = M
+	slot8 = slot8.PLATFORM_CALLBACK_OWNER
+	slot6 = slot6(slot8)
+	slot7 = "platform_callback_unavailable"
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 41-43, warpins: 2 ---
+	slot2 = slot1.PLATFORM_CALLBACK_EVENT
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 44-46, warpins: 1 ---
+	slot3 = slot2.UgcPolicyChanged
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 47-47, warpins: 2 ---
+	slot3 = nil
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 48-52, warpins: 2 ---
+	slot4 = type
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #9 ---
+
+	if slot4 == "string" then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 53-54, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	if slot3 == "" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 55-69, warpins: 2 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.info
+	slot7 = "[platform_friend_tab][ugc_policy_changed] unregister owner=%s eventKey=%s success=false reason=%s"
+	slot8 = tostring
+	slot10 = M
+	slot10 = slot10.PLATFORM_CALLBACK_OWNER
+	slot8 = slot8(slot10)
+	slot9 = tostring
+	slot11 = slot3
+	slot9 = slot9(slot11)
+	slot10 = "event_key_missing"
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot4 = false
+
+	return slot4
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 70-77, warpins: 2 ---
+	slot6 = slot1
+	slot4 = slot1.unregisterPlatformCallback
+	slot7 = slot3
+	slot8 = M
+	slot8 = slot8.PLATFORM_CALLBACK_OWNER
+	slot4 = slot4(slot6, slot7, slot8)
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= true then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 78-79, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 80-80, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 81-82, warpins: 2 ---
+	--- END OF BLOCK #15 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 83-85, warpins: 1 ---
+	slot5 = M
+	slot6 = nil
+	slot5._activePlatformCallbackOwner = slot6
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 86-101, warpins: 2 ---
+	slot5 = logger
+	slot7 = slot5
+	slot5 = slot5.info
+	slot8 = "[platform_friend_tab][ugc_policy_changed] unregister owner=%s eventKey=%s success=%s reason=%s"
+	slot9 = tostring
+	slot11 = M
+	slot11 = slot11.PLATFORM_CALLBACK_OWNER
+	slot9 = slot9(slot11)
+	slot10 = tostring
+	slot12 = slot3
+	slot10 = slot10(slot12)
+	slot11 = tostring
+	slot13 = slot4
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #17 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 102-103, warpins: 1 ---
+	slot12 = "ok"
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #19 104-104, warpins: 1 ---
+	slot12 = "unregister_failed"
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 105-106, warpins: 2 ---
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+
+	return slot4
+	--- END OF BLOCK #20 ---
+
+
+
+end
+
+slot0.unregisterPlatformCallbacks = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = M
+	slot1 = slot1.unregisterPlatformCallbacks
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.onDestroy = slot12
 
 slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -3306,10 +4160,10 @@ slot12 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot3 = if slot3 then
+	if slot3 ~= nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
@@ -3320,31 +4174,49 @@ slot12 = function(slot0, slot1, slot2, slot3)
 	if slot4 == true then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
 	--- BLOCK #2 6-8, warpins: 1 ---
 	slot4 = slot3.hasMappedGameUid
-
 	--- END OF BLOCK #2 ---
 
-	if slot4 ~= true then
+	if slot4 == true then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 9-10, warpins: 1 ---
-	slot4 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = M
-		slot0 = slot0.showPlatformFriendNotOpenTip
-		slot2 = playerInfo
+	--- BLOCK #3 9-10, warpins: 3 ---
+	slot4 = false
+	--- END OF BLOCK #3 ---
 
-		slot0(slot2)
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
+
+	--- BLOCK #4 11-11, warpins: 1 ---
+	slot4 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-13, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 14-15, warpins: 1 ---
+	slot5 = function()
+		--- BLOCK #0 1-1, warpins: 1 ---
 		return
 		--- END OF BLOCK #0 ---
 
@@ -3352,16 +4224,16 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaClick = slot4
+	slot1.luaClick = slot5
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 11-12, warpins: 4 ---
+	--- BLOCK #7 16-16, warpins: 2 ---
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -3496,19 +4368,12 @@ slot12 = function(slot0, slot1, slot2)
 		slot2(slot4)
 
 		return
-
 		--- END OF BLOCK #5 ---
 
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 35-39, warpins: 3 ---
-		slot2 = M
-		slot2 = slot2.showPlatformFriendNotOpenTip
-		slot4 = playerInfo
-
-		slot2(slot4)
-
+		--- BLOCK #6 35-35, warpins: 3 ---
 		return
 		--- END OF BLOCK #6 ---
 
@@ -3796,9 +4661,125 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 73-73, warpins: 2 ---
-	return
+	--- BLOCK #18 73-75, warpins: 2 ---
+	slot3 = pg
 	--- END OF BLOCK #18 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #19 76-79, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	--- END OF BLOCK #19 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 80-84, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	--- END OF BLOCK #20 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 85-85, warpins: 3 ---
+	slot3 = nil
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 86-87, warpins: 2 ---
+	--- END OF BLOCK #22 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #23 88-90, warpins: 1 ---
+	slot4 = slot3.friendGroupList
+	--- END OF BLOCK #23 ---
+
+	if slot4 == slot1 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #24 91-96, warpins: 1 ---
+	slot4 = {}
+	slot3.friendGroupId2Index = slot4
+	slot4 = ipairs
+	slot6 = slot1
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
+
+
+	--- BLOCK #25 97-98, warpins: 1 ---
+	--- END OF BLOCK #25 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #26 99-101, warpins: 1 ---
+	slot9 = slot8.id
+	--- END OF BLOCK #26 ---
+
+	if slot9 ~= nil then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
+
+
+	--- BLOCK #27 102-106, warpins: 1 ---
+	slot9 = slot3.friendGroupId2Index
+	slot10 = tostring
+	slot12 = slot8.id
+	slot10 = slot10(slot12)
+	slot9[slot10] = slot7
+
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 107-108, warpins: 4 ---
+	--- END OF BLOCK #28 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #25
+	GO OUT TO BLOCK #29
+
+
+	--- BLOCK #29 109-109, warpins: 3 ---
+	return
+	--- END OF BLOCK #29 ---
 
 
 
@@ -3807,89 +4788,125 @@ end
 slot0.injectFriendGroupList = slot12
 
 slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-2, warpins: 1 ---
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = PlatformNameMaskService
+	slot4 = slot2
+	slot2 = slot2.getVisibleProfileSignature
 	--- END OF BLOCK #0 ---
 
-	slot0 = if slot0 then
+	slot5 = if slot0 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-10, warpins: 1 ---
-	slot2 = tostring
-	slot4 = slot0.uid
-	slot2 = slot2(slot4)
-	slot3 = tostring
-	slot5 = pg
-	slot5 = slot5.me
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot5 = slot0.uid
 	--- END OF BLOCK #1 ---
 
-	slot5 = if slot5 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 11-13, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.uid
+	--- BLOCK #2 9-9, warpins: 1 ---
+	slot5 = slot0.playerId
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 14-16, warpins: 2 ---
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #3 ---
-
-	if slot2 ~= slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 17-27, warpins: 1 ---
-	slot2 = PlatformNameMaskService
-	slot4 = slot2
-	slot2 = slot2.checkNameVisibilityNow
-	slot5 = slot0.uid
+	--- BLOCK #3 10-12, warpins: 3 ---
 	slot6 = slot0
-	slot7 = PlatformNameMaskService
-	slot7 = slot7.Action
-	slot7 = slot7.InfoPlayerCardName
-	slot2, slot3 = slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #4 ---
+	slot7 = slot1
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 28-29, warpins: 1 ---
-	slot4 = " "
-
-	return slot4
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 30-30, warpins: 4 ---
-	return slot1
-	--- END OF BLOCK #6 ---
+	return slot2(slot4, slot5, slot6, slot7)
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
 slot0.setPlayerBaseInfoSign = slot12
+
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = pg
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	slot2 = slot2.getChatGroupDisplayName
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-26, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	slot4 = slot2
+	slot2 = slot2.getChatGroupDisplayName
+	slot5 = slot0
+	slot6 = slot1
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 27-27, warpins: 5 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot0.renderChatGroupName = slot12
 
 return slot0
 --- END OF BLOCK #0 ---

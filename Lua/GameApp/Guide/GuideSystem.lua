@@ -1380,56 +1380,77 @@ end
 slot17.exeFinishCallback = slot18
 
 slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_GUIDE_PANEL
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-10, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.isInGuide
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #1 6-10, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.hasActiveGuide
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #2 11-14, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.startGuides
-
-	slot2(slot4)
-
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #3 15-18, warpins: 1 ---
-	slot2 = UIConst
-	slot2 = slot2.UI_ID_LOADING
-	--- END OF BLOCK #3 ---
-
-	if slot1 == slot2 then
-	JUMP TO BLOCK #4
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 19-22, warpins: 1 ---
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.hasActiveGuide
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 16-19, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.startGuides
+
+	slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #5 20-23, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_LOADING
+	--- END OF BLOCK #5 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 24-27, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.skipCurrentGuide
 
@@ -1437,12 +1458,12 @@ slot18 = function(slot0, slot1)
 
 	return
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 23-27, warpins: 2 ---
+	--- BLOCK #7 28-32, warpins: 2 ---
 	slot2 = slot0.currentGuide
 	slot4 = slot2
 	slot2 = slot2.onOpenUI
@@ -1450,14 +1471,14 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 28-28, warpins: 3 ---
+	--- BLOCK #8 33-33, warpins: 3 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -1751,11 +1772,68 @@ slot18 = function(slot0, slot1, slot2)
 	if slot2 ~= slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 15-23, warpins: 1 ---
+	--- BLOCK #4 15-18, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 19-25, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isServerLost
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 26-33, warpins: 1 ---
+	slot0.hasFailedGuide = slot1
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.INFO
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 34-39, warpins: 1 ---
+	slot3 = logger
+	slot5 = slot3
+	slot3 = slot3.info
+	slot6 = "[Guide] finishGuide exception ... %d "
+	slot7 = slot0.hasFailedGuide
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 40-48, warpins: 4 ---
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
@@ -1769,12 +1847,12 @@ slot18 = function(slot0, slot1, slot2)
 
 	slot3(slot5, slot6)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #5 24-37, warpins: 2 ---
+	--- BLOCK #9 49-62, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.exeFinishCallback
 	slot6 = slot1
@@ -1795,7 +1873,7 @@ slot18 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -2465,20 +2543,70 @@ end
 slot17.onTriggerEnter = slot18
 
 slot18 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.clearGuide
-
-	slot1(slot3)
-
-	return
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = slot0.hasFailedGuide
+	slot2 = nil
+	slot0.hasFailedGuide = slot2
 	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-21, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.doEventByData
+	slot5 = {
+		"finishGuide"
+	}
+	slot6 = {}
+	slot6[1] = slot1
+	slot5[2] = slot6
+
+	slot2(slot4, slot5)
+
+	slot2 = LoggerManager
+	slot2 = slot2.checkLogger
+	slot4 = LoggerConst
+	slot4 = slot4.INFO
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 22-27, warpins: 1 ---
+	slot2 = logger
+	slot4 = slot2
+	slot2 = slot2.info
+	slot5 = "[Guide] onConnected after finishGuide ... %d "
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 28-28, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot17.onDisconnected = slot18
+slot17.onConnected = slot18
 
 slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---

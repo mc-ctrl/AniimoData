@@ -1,79 +1,87 @@
---- BLOCK #0 1-186, warpins: 1 ---
+--- BLOCK #0 1-224, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.Home.EntityEditorBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "GameApp.Home.EntityEditorHistory"
+slot4 = "GameApp.Home.EntityEditorBase"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.Home.HomeEdtorOper.PositionOper"
+slot5 = "GameApp.Home.EntityEditorHistory"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "GameApp.Home.HomeEdtorOper.DeltaPositionOper"
+slot6 = "GameApp.Home.HomeEdtorOper.PositionOper"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "GameApp.Home.HomeEdtorOper.RotationOper"
+slot7 = "GameApp.Home.HomeEdtorOper.DeltaPositionOper"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "GameApp.Home.HomeEdtorOper.ExtendOper"
+slot8 = "GameApp.Home.HomeEdtorOper.RotationOper"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientUtils"
+slot9 = "GameApp.Home.HomeEdtorOper.ExtendOper"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Utils.VirtualEntUtils"
+slot10 = "Utils.ClientUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.ClientConst"
+slot11 = "Common.Utils.VirtualEntUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.homeland_config_data"
+slot12 = "Const.ClientConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Utils.Utils"
+slot13 = "Data.homeland_config_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.item_data"
+slot14 = "Common.Utils.Utils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.home_object_data"
+slot15 = "Data.item_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.homeland_facility_data"
+slot16 = "Data.home_object_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Const.Const"
+slot17 = "Data.homeland_facility_data"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Utils.HomeLandUtils"
+slot18 = "Common.Const.Const"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "CustomTypes.OrnamentSingleData"
+slot19 = "Common.Utils.HomeLandUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "GameApp.Home.HomeEnvSimulateEditor"
+slot20 = "CustomTypes.OrnamentSingleData"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Const.EffectConst"
+slot21 = "GameApp.Home.HomeEnvSimulateEditor"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Const.AddressDataConst"
+slot22 = "Const.EffectConst"
 slot20 = slot20(slot22)
-slot21 = slot0.LiteClass
-slot23 = "HomeEntityEditor"
-slot24 = slot1
-slot21 = slot21(slot23, slot24)
-slot22 = CS
-slot22 = slot22.FunPlus
-slot22 = slot22.WorldX
-slot22 = slot22.Home
-slot22 = slot22.HomeEditorUtils
+slot21 = require
+slot23 = "Const.AddressDataConst"
+slot21 = slot21(slot23)
+slot22 = require
+slot24 = "Common.CommonSwitch"
+slot22 = slot22(slot24)
+slot23 = slot1.LiteClass
+slot25 = "HomeEntityEditor"
+slot26 = slot2
+slot23 = slot23(slot25, slot26)
+slot24 = CS
+slot24 = slot24.FunPlus
+slot24 = slot24.WorldX
+slot24 = slot24.Home
+slot24 = slot24.HomeEditorUtils
+slot25 = 10
+slot23.CAMERA_AREA_EXPAND = slot25
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+slot25 = function(slot0)
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = HomeEntityEditor
 	slot1 = slot1.super
 	slot1 = slot1.ctor
@@ -89,6 +97,20 @@ slot23 = function(slot0)
 	slot0.linkEffectInfo = slot1
 	slot1 = {}
 	slot0.linkEffects = slot1
+	slot1 = Vector3
+	slot1 = slot1.ForceNew
+	slot3 = 0
+	slot4 = 0
+	slot5 = 0
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0.linkEffectSourcePosition = slot1
+	slot1 = Vector3
+	slot1 = slot1.ForceNew
+	slot3 = 0
+	slot4 = 0
+	slot5 = 0
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0.linkEffectTargetPosition = slot1
 	slot1 = HomeEnvSimulateEditor
 	slot1 = slot1.new
 	slot3 = slot0
@@ -102,26 +124,66 @@ slot23 = function(slot0)
 
 end
 
-slot21.ctor = slot23
+slot23.ctor = slot25
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = HomelandConfigData
-	slot1 = slot1.homelandAreaRange
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot2 = HomeEntityEditor
+	slot2 = slot2.super
+	slot2 = slot2.setEditArea
+	slot4 = slot0
+	slot5 = slot1
 
-	return slot1
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.setBaseTransMatrix
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.home
+	slot7 = slot5
+	slot5 = slot5.getAreaBaseTransform
+	slot8 = slot1
+	MULTRES = slot5(slot7, slot8)
+
+	slot2(slot4, MULTRES)
+
+	return
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot21.getAreaRange = slot23
+slot23.setEditArea = slot25
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = HomelandConfigData
-	slot1 = slot1.yAxisRange
+slot25 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.getAreaRange
+	slot4 = slot0.areaId
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.getAreaRange = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.getAreaYAxisRange
+	slot4 = slot0.areaId
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if not slot1 then
@@ -131,7 +193,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
+	--- BLOCK #1 10-10, warpins: 1 ---
 	slot1 = {
 		0,
 		15
@@ -142,7 +204,7 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return slot1
 	--- END OF BLOCK #2 ---
 
@@ -150,9 +212,81 @@ slot23 = function(slot0)
 
 end
 
-slot21.getYAreaRange = slot23
+slot23.getYAreaRange = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.home
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot3 = slot2.homeEntities
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 10-13, warpins: 1 ---
+	slot3 = pairs
+	slot5 = slot2.homeEntities
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 14-16, warpins: 1 ---
+	slot8 = slot1
+	slot10 = slot7
+
+	slot8(slot10)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-18, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 19-19, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot23.forEachHideableEntity = slot25
+
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setBuildAttachManager
@@ -167,9 +301,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.initHomeland = slot23
+slot23.initHomeland = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = HomeObjectData
 	slot2 = slot2[slot1]
@@ -217,9 +351,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.getEditAreaRangeRange = slot23
+slot23.getEditAreaRangeRange = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = HomeEntityEditor
 	slot1 = slot1.super
@@ -240,9 +374,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.clear = slot23
+slot23.clear = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.updateHomelandViewCenter
@@ -271,26 +405,33 @@ slot23 = function(slot0)
 
 end
 
-slot21.onTick = slot23
+slot23.onTick = slot25
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = Quaternion
-	slot1 = slot1.Euler
-	slot3 = 0
-	slot4 = 180
-	slot5 = 0
+slot25 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.getAreaOrnamentDefaultYaw
+	slot4 = slot0.areaId
+	slot1 = slot1(slot3, slot4)
+	slot2 = Quaternion
+	slot2 = slot2.Euler
+	slot4 = 0
+	slot5 = slot1
+	slot6 = 0
 
-	return slot1(slot3, slot4, slot5)
+	return slot2(slot4, slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot21.getDefaultRotation = slot23
+slot23.getDefaultRotation = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.envEditor
 	slot3 = slot1
@@ -307,9 +448,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.initEnvSimulateEditor = slot23
+slot23.initEnvSimulateEditor = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.envEditor
 	slot3 = slot1
@@ -324,9 +465,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.updateEnvSimulate = slot23
+slot23.updateEnvSimulate = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.envEditor
 	slot3 = slot1
@@ -341,42 +482,81 @@ slot23 = function(slot0)
 
 end
 
-slot21.clearEnvSimulateEditor = slot23
+slot23.clearEnvSimulateEditor = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = HomelandConfigData
-	slot1 = slot1.homelandCameraAreaRange
+	slot1 = CommonSwitch
+	slot1 = slot1.HOMELAND_NEW_MAP
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 5-23, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getAreaRange
 	slot1 = slot1(slot3)
+	slot2 = HomeEntityEditor
+	slot2 = slot2.CAMERA_AREA_EXPAND
+	slot3 = {}
+	slot4 = slot1[1]
+	slot4 = slot4 - slot2
+	slot3[1] = slot4
+	slot4 = slot1[2]
+	slot4 = slot4 + slot2
+	slot3[2] = slot4
+	slot4 = slot1[3]
+	slot4 = slot4 - slot2
+	slot3[3] = slot4
+	slot4 = slot1[4]
+	slot4 = slot4 + slot2
+	slot3[4] = slot4
+
+	return slot3
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return slot1
+	--- BLOCK #2 24-27, warpins: 2 ---
+	slot1 = HomelandConfigData
+	slot1 = slot1.homelandCameraAreaRange
 	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 28-30, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getAreaRange
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 31-31, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot21.getCameraAreaBounds = slot23
+slot23.getCameraAreaBounds = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -385,9 +565,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.updateHomelandViewCenter = slot23
+slot23.updateHomelandViewCenter = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -409,9 +589,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.onEnvLinkChange = slot23
+slot23.onEnvLinkChange = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = HomeEntityEditor
 	slot1 = slot1.super
@@ -432,10 +612,10 @@ slot23 = function(slot0)
 
 end
 
-slot21.beforeEdit = slot23
+slot23.beforeEdit = slot25
 
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-33, warpins: 1 ---
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot2 = slot1.homeTemplateId
 	slot5 = slot1
 	slot3 = slot1.getPosition
@@ -463,6 +643,7 @@ slot23 = function(slot0, slot1)
 	slot10 = {}
 	slot10.originEntity = slot1
 	slot10.initScale = slot8
+	slot10.editor = slot0
 	slot11 = Utils
 	slot11 = slot11.isHomePet
 	slot13 = slot1
@@ -476,7 +657,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 34-58, warpins: 1 ---
+	--- BLOCK #1 35-61, warpins: 1 ---
 	slot11 = Const
 	slot11 = slot11.HomelandEntType
 	slot9 = slot11.Pet
@@ -501,12 +682,14 @@ slot23 = function(slot0, slot1)
 	slot14 = slot0.getDefaultRotation
 	slot14 = slot14(slot16)
 	slot4 = slot14
+	slot14 = true
+	slot10.isPet = slot14
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 59-64, warpins: 1 ---
+	--- BLOCK #2 62-67, warpins: 1 ---
 	slot13 = slot1
 	slot11 = slot1.getHomelandConfigData
 	slot11 = slot11(slot13)
@@ -520,7 +703,7 @@ slot23 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 65-67, warpins: 1 ---
+	--- BLOCK #3 68-70, warpins: 1 ---
 	slot11 = Const
 	slot11 = slot11.HomelandEntType
 	slot9 = slot11.Ornament
@@ -529,19 +712,55 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 68-73, warpins: 2 ---
+	--- BLOCK #4 71-79, warpins: 2 ---
 	slot11 = pg
 	slot11 = slot11.space
 	slot11 = slot11.ornament
 	slot12 = slot1.ornamentId
 	slot11 = slot11[slot12]
 	slot10.ornamentInfo = slot11
+	slot11 = slot0.placeConfig
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot11 = if slot11 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #5 74-85, warpins: 2 ---
+	--- BLOCK #5 80-83, warpins: 1 ---
+	slot11 = slot0.placeConfig
+	slot11 = slot11.isGroupPlace
+	--- END OF BLOCK #5 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 84-94, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.createTemplateGroupPlaceObject
+	slot14 = slot9
+	slot15 = slot2
+	slot16 = slot3
+	slot17 = slot4
+	slot20 = slot1
+	slot18 = slot1.getHomelandConfigData
+	slot18 = slot18(slot20)
+	slot19 = slot10
+
+	return slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 95-106, warpins: 4 ---
 	slot13 = slot0
 	slot11 = slot0.createTemplateObject
 	slot14 = slot9
@@ -555,15 +774,15 @@ slot23 = function(slot0, slot1)
 	slot11 = slot11(slot13, slot14, slot15, slot16, slot17, slot18, slot19)
 
 	return slot11
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot21.createTemplateObjectByTarget = slot23
+slot23.createTemplateObjectByTarget = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0.entityType
 	slot5 = Const
@@ -700,15 +919,16 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 66-76, warpins: 2 ---
+	--- BLOCK #10 66-77, warpins: 2 ---
 	slot10 = slot0
 	slot8 = slot0.clampPosition
 	slot11 = slot6
 	slot14 = slot0
 	slot12 = slot0.getEditAreaRangeRange
 	slot15 = slot4
-	MULTRES = slot12(slot14, slot15)
-	slot8 = slot8(slot10, slot11, MULTRES)
+	slot12 = slot12(slot14, slot15)
+	slot13 = slot4
+	slot8 = slot8(slot10, slot11, slot12, slot13)
 	slot6 = slot8
 	--- END OF BLOCK #10 ---
 
@@ -719,7 +939,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #11 77-80, warpins: 1 ---
+	--- BLOCK #11 78-81, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.getDefaultRotation
 	slot8 = slot8(slot10)
@@ -729,7 +949,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 81-85, warpins: 2 ---
+	--- BLOCK #12 82-86, warpins: 2 ---
 	slot8 = nil
 	slot9 = slot0.placeConfig
 	slot9 = slot9.isGroupPlace
@@ -742,7 +962,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #13 86-95, warpins: 1 ---
+	--- BLOCK #13 87-96, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.createTemplateGroupPlaceObject
 	slot12 = slot0.entityType
@@ -757,7 +977,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 96-104, warpins: 1 ---
+	--- BLOCK #14 97-105, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.createTemplateObject
 	slot12 = slot0.entityType
@@ -773,14 +993,14 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 105-105, warpins: 2 ---
+	--- BLOCK #15 106-106, warpins: 2 ---
 	return slot8
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 106-106, warpins: 2 ---
+	--- BLOCK #16 107-107, warpins: 2 ---
 	return
 	--- END OF BLOCK #16 ---
 
@@ -788,9 +1008,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21.createTemplateObjectNew = slot23
+slot23.createTemplateObjectNew = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.isHomePet
@@ -861,9 +1081,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot21.doStartEdit = slot23
+slot23.doStartEdit = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.beforeEdit
@@ -908,9 +1128,9 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot21.startEditNewPet = slot23
+slot23.startEditNewPet = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4)
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.beforeEdit
@@ -993,9 +1213,191 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot21.startEditNew = slot23
+slot23.startEditNew = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.beforeEdit
+
+	slot4(slot6)
+
+	slot4 = nil
+	slot0.targetEntity = slot4
+	slot0.entityData = slot1
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-16, warpins: 2 ---
+	slot0.placeConfig = slot4
+	slot4 = Const
+	slot4 = slot4.HomelandEntType
+	slot4 = slot4.Ornament
+	slot0.entityType = slot4
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-17, warpins: 1 ---
+	slot4 = slot2.position
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-19, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-32, warpins: 1 ---
+	slot5 = Vector2
+	slot7 = Screen
+	slot7 = slot7.width
+	slot7 = slot7 * 0.5
+	slot8 = Screen
+	slot8 = slot8.height
+	slot8 = slot8 * 0.5
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot0
+	slot6 = slot0.getScreenCastPosition
+	slot9 = slot5
+	slot6, slot7 = slot6(slot8, slot9)
+	slot4 = slot7
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-34, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 35-37, warpins: 1 ---
+	slot5 = slot2.rotation
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 38-40, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.getDefaultRotation
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 41-49, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.createTemplateBlueprintObject
+	slot9 = slot1
+	slot10 = slot4
+	slot11 = slot5
+	slot12 = false
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
+	--- END OF BLOCK #9 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 50-54, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.finishEdit
+
+	slot7(slot9)
+
+	slot7 = false
+
+	return slot7
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 55-79, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.clampBlueprintGroupPosition
+	slot10 = slot6
+	slot11 = slot4
+	slot7 = slot7(slot9, slot10, slot11)
+	slot10 = slot6
+	slot8 = slot6.setPosition
+	slot11 = slot7
+
+	slot8(slot10, slot11)
+
+	slot10 = slot6
+	slot8 = slot6.onEntityPositionChanged
+
+	slot8(slot10)
+
+	slot0.templateEntity = slot6
+	slot10 = slot0
+	slot8 = slot0.setInEditMode
+	slot11 = true
+	slot12 = ClientConst
+	slot12 = slot12.EntityEditType
+	slot12 = slot12.Create
+
+	slot8(slot10, slot11, slot12)
+
+	slot10 = slot0
+	slot8 = slot0.onStartEditEntity
+
+	slot8(slot10)
+
+	slot8 = true
+
+	return slot8
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot23.startEditBlueprint = slot25
+
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.entityType
 	slot2 = Const
@@ -1054,9 +1456,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.getEditLayerFilter = slot23
+slot23.getEditLayerFilter = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.updateEnvSimulate
@@ -1089,9 +1491,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.onEditModeChanged = slot23
+slot23.onEditModeChanged = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1100,44 +1502,79 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshEffectGridLayerFilter = slot23
+slot23.refreshEffectGridLayerFilter = slot25
 
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
-	slot2 = slot2.getOrnamentMaxPlaceNum
+	slot2 = slot2.getOrnamentAreaMaxPlaceNum
 	slot5 = slot1
-
-	return slot2(slot4, slot5)
+	slot6 = slot0.areaId
 	--- END OF BLOCK #0 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot6 = 0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot21.getEntityMaxPlaceNum = slot23
+slot23.getEntityMaxPlaceNum = slot25
 
-slot23 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
-	slot3 = slot3.getOrnamentCurPlaceNum
+	slot3 = slot3.getOrnamentAreaCurPlaceNum
 	slot6 = slot1
-	slot7 = slot2
-
-	return slot3(slot5, slot6, slot7)
+	slot7 = slot0.areaId
 	--- END OF BLOCK #0 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot7 = 0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot21.getEntityCurPlaceNum = slot23
+slot23.getEntityCurPlaceNum = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.templateEntity
 
@@ -1232,7 +1669,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-61, warpins: 2 ---
+	--- BLOCK #8 35-62, warpins: 2 ---
 	slot8 = slot0
 	slot6 = slot0.getScreenCastPosition
 	slot9 = slot3
@@ -1243,8 +1680,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	slot14 = slot0
 	slot12 = slot0.getEditAreaRangeRange
 	slot15 = slot1
-	MULTRES = slot12(slot14, slot15)
-	slot8 = slot8(slot10, slot11, MULTRES)
+	slot12 = slot12(slot14, slot15)
+	slot13 = slot1
+	slot8 = slot8(slot10, slot11, slot12, slot13)
 	slot7 = slot8
 	slot10 = slot0
 	slot8 = slot0.createTemplateObject
@@ -1270,9 +1708,401 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21.createPreviewObject = slot23
+slot23.createPreviewObject = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getBlueprintOrnaments
+	slot8 = slot1
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot6 = nil
+
+	return slot6
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-12, warpins: 2 ---
+	slot6 = ipairs
+	slot8 = slot5
+	slot6, slot7, slot8 = slot6(slot8)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot11 = if slot10 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot11 = slot10.homeId
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-17, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 18-21, warpins: 1 ---
+	slot12 = HomeObjectData
+	slot12 = slot12[slot11]
+	--- END OF BLOCK #6 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 22-23, warpins: 2 ---
+	slot12 = nil
+
+	return slot12
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 24-25, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 26-46, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.createClientEntity
+	slot8 = "ClientEditorTemplateGroupEntity"
+	slot9 = VirtualEntUtils
+	slot9 = slot9.getNewVirtualEntityId
+	slot9 = slot9()
+	slot10 = {}
+	slot10.editor = slot0
+	slot11 = slot0.areaId
+	slot10.areaId = slot11
+	slot11 = slot0.baseTransMatrixInv
+	slot10.baseTransMatrixInv = slot11
+	slot11 = Const
+	slot11 = slot11.HomelandEntType
+	slot11 = slot11.Ornament
+	slot10.templateType = slot11
+	slot10.initPosition = slot2
+	slot10.initRotation = slot3
+	slot6 = slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #9 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 47-48, warpins: 1 ---
+	slot7 = nil
+
+	return slot7
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 49-52, warpins: 2 ---
+	slot7 = ipairs
+	slot9 = slot5
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #12 53-68, warpins: 1 ---
+	slot12 = slot11.homeId
+	slot13 = HomeObjectData
+	slot13 = slot13[slot12]
+	slot16 = slot0
+	slot14 = slot0.getBlueprintPosition
+	slot17 = slot11.relPos3
+	slot14 = slot14(slot16, slot17)
+	slot17 = slot0
+	slot15 = slot0.getBlueprintRotation
+	slot18 = slot11.relRot3
+	slot15 = slot15(slot17, slot18)
+	slot18 = slot0
+	slot16 = slot0.createTemplateObject
+	slot19 = slot13.entityType
+	--- END OF BLOCK #12 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 69-71, warpins: 1 ---
+	slot19 = Const
+	slot19 = slot19.HomelandEntType
+	slot19 = slot19.Ornament
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 72-91, warpins: 2 ---
+	slot20 = slot12
+	slot23 = slot6
+	slot21 = slot6.getRelativePosition
+	slot24 = slot14
+	slot21 = slot21(slot23, slot24)
+	slot24 = slot6
+	slot22 = slot6.getRelativeRotation
+	slot25 = slot15
+	slot22 = slot22(slot24, slot25)
+	slot23 = slot13
+	slot24 = {}
+	slot24.isPreview = slot4
+	slot27 = slot0
+	slot25 = slot0.getBlueprintScale
+	slot28 = slot11.scale3
+	slot25 = slot25(slot27, slot28)
+	slot24.initScale = slot25
+	slot16 = slot16(slot18, slot19, slot20, slot21, slot22, slot23, slot24)
+	--- END OF BLOCK #14 ---
+
+	slot16 = if not slot16 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 92-97, warpins: 1 ---
+	slot17 = ClientUtils
+	slot17 = slot17.safeDestroy
+	slot19 = slot6
+
+	slot17(slot19)
+
+	slot17 = nil
+
+	return slot17
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 98-103, warpins: 2 ---
+	slot19 = slot6
+	slot17 = slot6.addChildEntity
+	slot20 = slot16
+	slot21 = slot14
+	slot22 = slot15
+
+	slot17(slot19, slot20, slot21, slot22)
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 104-105, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #18
+
+
+	--- BLOCK #18 106-106, warpins: 1 ---
+	return slot6
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot23.createTemplateBlueprintObject = slot25
+
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0.templateEntity
+	slot0.templateEntity = slot1
+	slot6 = slot0
+	slot4 = slot0.clampPosition
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
+	slot0.templateEntity = slot3
+
+	return slot4
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.clampBlueprintGroupPosition = slot25
+
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.templateEntity
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-15, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.destroyPreviewObject
+
+	slot3(slot5)
+
+	slot0.entityData = slot1
+	slot3 = Const
+	slot3 = slot3.HomelandEntType
+	slot3 = slot3.Ornament
+	slot0.entityType = slot3
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-24, warpins: 1 ---
+	slot3 = Vector2
+	slot5 = Screen
+	slot5 = slot5.width
+	slot5 = slot5 * 0.5
+	slot6 = Screen
+	slot6 = slot6.height
+	slot6 = slot6 * 0.5
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 25-40, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.getScreenCastPosition
+	slot6 = slot2
+	slot3, slot4 = slot3(slot5, slot6)
+	slot7 = slot0
+	slot5 = slot0.getDefaultRotation
+	slot5 = slot5(slot7)
+	slot8 = slot0
+	slot6 = slot0.createTemplateBlueprintObject
+	slot9 = slot1
+	slot10 = slot4
+	slot11 = slot5
+	slot12 = true
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 41-42, warpins: 1 ---
+	slot7 = nil
+
+	return slot7
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 43-60, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.clampBlueprintGroupPosition
+	slot10 = slot6
+	slot11 = slot4
+	slot7 = slot7(slot9, slot10, slot11)
+	slot4 = slot7
+	slot9 = slot6
+	slot7 = slot6.setPosition
+	slot10 = slot4
+
+	slot7(slot9, slot10)
+
+	slot9 = slot6
+	slot7 = slot6.onEntityPositionChanged
+
+	slot7(slot9)
+
+	slot9 = slot6
+	slot7 = slot6.updateHomeEditorState
+
+	slot7(slot9)
+
+	slot0.previewEntity = slot6
+
+	return slot6
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot23.createBlueprintPreviewObject = slot25
+
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.destroyTemplateObject
@@ -1290,9 +2120,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.destroyPreviewObject = slot23
+slot23.destroyPreviewObject = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.previewEntity
 
@@ -1313,7 +2143,7 @@ slot23 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-33, warpins: 2 ---
+	--- BLOCK #2 5-17, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.getScreenCastPosition
 	slot5 = slot1
@@ -1323,6 +2153,18 @@ slot23 = function(slot0, slot1)
 	slot6 = slot6(slot8)
 	slot6 = slot6.y
 	slot2, slot3 = slot2(slot4, slot5, slot6)
+	slot4 = slot0.previewEntity
+	slot4 = slot4.homeTemplateId
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-30, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.clampPosition
 	slot7 = slot3
@@ -1330,9 +2172,29 @@ slot23 = function(slot0, slot1)
 	slot8 = slot0.getEditAreaRangeRange
 	slot11 = slot0.previewEntity
 	slot11 = slot11.homeTemplateId
-	MULTRES = slot8(slot10, slot11)
-	slot4 = slot4(slot6, slot7, MULTRES)
+	slot8 = slot8(slot10, slot11)
+	slot9 = slot0.previewEntity
+	slot9 = slot9.homeTemplateId
+	slot4 = slot4(slot6, slot7, slot8, slot9)
 	slot3 = slot4
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 31-36, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.clampBlueprintGroupPosition
+	slot7 = slot0.previewEntity
+	slot8 = slot3
+	slot4 = slot4(slot6, slot7, slot8)
+	slot3 = slot4
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 37-46, warpins: 2 ---
 	slot4 = slot0.previewEntity
 	slot6 = slot4
 	slot4 = slot4.setPosition
@@ -1347,15 +2209,15 @@ slot23 = function(slot0, slot1)
 	slot4(slot6)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot21.updatePreviewObjectPosition = slot23
+slot23.updatePreviewObjectPosition = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot0.templateEntity
 
@@ -1467,42 +2329,161 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21.createPreviewPet = slot23
+slot23.createPreviewPet = slot25
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.clearEnvSimulateEditor
-
-	slot1(slot3)
-
-	slot3 = slot0
-	slot1 = slot0.destroyTemplateObject
-	slot4 = slot0.previewEntity
-
-	slot1(slot3, slot4)
-
-	slot1 = nil
-	slot0.previewEntity = slot1
-	slot1 = nil
-	slot0.entityType = slot1
-	slot1 = HomeEntityEditor
-	slot1 = slot1.super
-	slot1 = slot1.finishEdit
-	slot3 = slot0
-
-	slot1(slot3)
-
-	return
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = {}
+	slot2 = slot0.isInEditMode
 	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot2 = slot0.entityType
+	slot3 = Const
+	slot3 = slot3.HomelandEntType
+	slot3 = slot3.Pet
+	--- END OF BLOCK #1 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot0.editingOriginEntities
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 15-17, warpins: 1 ---
+	slot7 = slot6.id
+	slot8 = true
+	slot1[slot7] = slot8
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-19, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 20-25, warpins: 1 ---
+	slot2 = slot0.editType
+	slot3 = ClientConst
+	slot3 = slot3.EntityEditType
+	slot3 = slot3.Create
+	--- END OF BLOCK #5 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-29, warpins: 1 ---
+	slot2 = slot0.entityData
+	slot2 = slot2.petId
+	slot3 = true
+	slot1[slot2] = slot3
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 30-49, warpins: 4 ---
+	slot4 = slot0
+	slot2 = slot0.clearEnvSimulateEditor
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.destroyTemplateObject
+	slot5 = slot0.previewEntity
+
+	slot2(slot4, slot5)
+
+	slot2 = nil
+	slot0.previewEntity = slot2
+	slot2 = nil
+	slot0.entityType = slot2
+	slot2 = HomeEntityEditor
+	slot2 = slot2.super
+	slot2 = slot2.finishEdit
+	slot4 = slot0
+
+	slot2(slot4)
+
+	slot2 = pg
+	slot2 = slot2.space
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 50-53, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 54-59, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.space
+	slot8 = slot6
+	slot6 = slot6.homeLeisureManualOperationFinished
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 60-61, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	for slot5 in slot2, slot3, slot4
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 62-62, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot21.finishEdit = slot23
+slot23.finishEdit = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1514,137 +2495,328 @@ slot23 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 3-5, warpins: 1 ---
-	slot3 = ClientConst
-	slot3 = slot3.HomeSelectType
-	slot2 = slot3.All
+	slot5 = ClientConst
+	slot5 = slot5.HomeSelectType
+	slot2 = slot5.All
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-19, warpins: 2 ---
-	slot3 = table
-	slot3 = slot3.clear
+	--- BLOCK #2 6-9, warpins: 2 ---
 	slot5 = slot0.tempHitEntities
-
-	slot3(slot5)
-
-	slot3 = HomeEditorUtils
-	slot3 = slot3.GetRaycastHitHomeEntities
-	slot5 = slot1
-	slot6 = 300
-	slot7 = slot0.tempHitEntities
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = ipairs
-	slot5 = slot0.tempHitEntities
-	slot3, slot4, slot5 = slot3(slot5)
+	slot6 = nil
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #3 20-24, warpins: 1 ---
-	slot8 = ClientConst
-	slot8 = slot8.HomeSelectType
-	slot8 = slot8.Pet
-	--- END OF BLOCK #3 ---
-
-	if slot2 ~= slot8 then
-	JUMP TO BLOCK #4
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #4 25-27, warpins: 1 ---
-	slot8 = slot7.ornamentId
+	--- BLOCK #3 10-15, warpins: 1 ---
+	slot5 = slot0.tempRaycastHitEntities
+	slot6 = slot0.tempRaycastHitPoints
+	slot7 = table
+	slot7 = slot7.clear
+	slot9 = slot6
+
+	slot7(slot9)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-21, warpins: 2 ---
+	slot7 = table
+	slot7 = slot7.clear
+	slot9 = slot5
+
+	slot7(slot9)
 
 	--- END OF BLOCK #4 ---
 
-	slot8 = if slot8 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 28-28, warpins: 1 ---
-	return slot7
+	--- BLOCK #5 22-29, warpins: 1 ---
+	slot7 = HomeEditorUtils
+	slot7 = slot7.GetRaycastHitHomeEntitiesWithPoint
+	slot9 = slot1
+	slot10 = 300
+	slot11 = slot5
+	slot12 = slot6
+
+	slot7(slot9, slot10, slot11, slot12)
 
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 29-33, warpins: 3 ---
-	slot8 = ClientConst
-	slot8 = slot8.HomeSelectType
-	slot8 = slot8.Ornament
+	--- BLOCK #6 30-35, warpins: 1 ---
+	slot7 = HomeEditorUtils
+	slot7 = slot7.GetRaycastHitHomeEntities
+	slot9 = slot1
+	slot10 = 300
+	slot11 = slot5
+
+	slot7(slot9, slot10, slot11)
+
 	--- END OF BLOCK #6 ---
 
-	if slot2 ~= slot8 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 34-39, warpins: 1 ---
-	slot8 = Utils
-	slot8 = slot8.isHomePet
-	slot10 = slot7
-	slot8 = slot8(slot10)
-
+	--- BLOCK #7 36-39, warpins: 2 ---
+	slot7 = ipairs
+	slot9 = slot5
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #7 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #8
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #8 40-41, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	slot11 = if slot11 then
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #8 40-40, warpins: 1 ---
-	return slot7
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 41-42, warpins: 4 ---
+	--- BLOCK #9 42-44, warpins: 1 ---
+	slot12 = slot11.destroyed
 	--- END OF BLOCK #9 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #10
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #24
+	end
 
 
-	--- BLOCK #10 43-54, warpins: 1 ---
-	slot3 = HomeEditorUtils
-	slot3 = slot3.GetRaycastPlacePosition
-	slot5 = slot1
-	slot6 = 0
-	slot3, slot4 = slot3(slot5, slot6)
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.home
-	slot7 = slot5
-	slot5 = slot5.getPositionOrnament
-	slot8 = slot4
-
-	return slot5(slot7, slot8)
+	--- BLOCK #10 45-47, warpins: 1 ---
+	slot12 = slot11.visible
 	--- END OF BLOCK #10 ---
+
+	if slot12 ~= false then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #11 48-53, warpins: 1 ---
+	slot12 = false
+	slot13 = ClientConst
+	slot13 = slot13.HomeSelectType
+	slot13 = slot13.Pet
+	--- END OF BLOCK #11 ---
+
+	if slot2 ~= slot13 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 54-56, warpins: 1 ---
+	slot13 = slot11.ornamentId
+	--- END OF BLOCK #12 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 57-57, warpins: 1 ---
+	slot12 = true
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 58-59, warpins: 3 ---
+	--- END OF BLOCK #14 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 60-64, warpins: 1 ---
+	slot13 = ClientConst
+	slot13 = slot13.HomeSelectType
+	slot13 = slot13.Ornament
+	--- END OF BLOCK #15 ---
+
+	if slot2 ~= slot13 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 65-70, warpins: 1 ---
+	slot13 = Utils
+	slot13 = slot13.isHomePet
+	slot15 = slot11
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #16 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 71-71, warpins: 1 ---
+	slot12 = true
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 72-73, warpins: 4 ---
+	--- END OF BLOCK #18 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #19 74-75, warpins: 1 ---
+	--- END OF BLOCK #19 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 76-80, warpins: 1 ---
+	slot13 = slot0.editingEntities
+	slot14 = slot11.id
+	slot13 = slot13[slot14]
+	--- END OF BLOCK #20 ---
+
+	slot13 = if slot13 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #21 81-83, warpins: 2 ---
+	slot13 = slot11
+	--- END OF BLOCK #21 ---
+
+	slot14 = if slot6 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 84-84, warpins: 1 ---
+	slot14 = slot6[slot10]
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 85-85, warpins: 2 ---
+	return slot13, slot14
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 86-87, warpins: 7 ---
+	--- END OF BLOCK #24 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #25
+
+
+	--- BLOCK #25 88-88, warpins: 1 ---
+	return
+	--- END OF BLOCK #25 ---
 
 
 
 end
 
-slot21.trySelectEntity = slot23
+slot23.trySelectRaycastEntity = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4)
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.trySelectRaycastEntity
+	slot6 = slot1
+	slot7 = slot2
+	slot3 = slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-21, warpins: 2 ---
+	slot4 = HomeEditorUtils
+	slot4 = slot4.GetRaycastPlacePosition
+	slot6 = slot1
+	slot7 = 0
+	slot4, slot5 = slot4(slot6, slot7)
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.home
+	slot8 = slot6
+	slot6 = slot6.getPositionOrnament
+	slot9 = slot0.areaId
+	slot10 = slot5
+
+	return slot6(slot8, slot9, slot10)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot23.trySelectEntity = slot25
+
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1692,45 +2864,45 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	slot6, slot7, slot8 = slot6(slot8)
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #3 26-30, warpins: 1 ---
+	--- BLOCK #3 26-27, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #4 28-30, warpins: 1 ---
+	slot11 = slot10.destroyed
+	--- END OF BLOCK #4 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #5 31-33, warpins: 1 ---
+	slot11 = slot10.visible
+	--- END OF BLOCK #5 ---
+
+	if slot11 ~= false then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #6 34-38, warpins: 1 ---
 	slot11 = ClientConst
 	slot11 = slot11.HomeSelectType
 	slot11 = slot11.Pet
-	--- END OF BLOCK #3 ---
-
-	if slot3 ~= slot11 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 31-33, warpins: 1 ---
-	slot11 = slot10.ornamentId
-	--- END OF BLOCK #4 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 34-35, warpins: 1 ---
-	slot11 = slot10.id
-	slot4[slot11] = slot10
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 36-40, warpins: 3 ---
-	slot11 = ClientConst
-	slot11 = slot11.HomeSelectType
-	slot11 = slot11.Ornament
 	--- END OF BLOCK #6 ---
 
 	if slot3 ~= slot11 then
@@ -1740,11 +2912,8 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #7 41-46, warpins: 1 ---
-	slot11 = Utils
-	slot11 = slot11.isHomePet
-	slot13 = slot10
-	slot11 = slot11(slot13)
+	--- BLOCK #7 39-41, warpins: 1 ---
+	slot11 = slot10.ornamentId
 	--- END OF BLOCK #7 ---
 
 	slot11 = if slot11 then
@@ -1754,135 +2923,204 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #8 47-48, warpins: 1 ---
+	--- BLOCK #8 42-43, warpins: 1 ---
 	slot11 = slot10.id
 	slot4[slot11] = slot10
-
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 49-50, warpins: 4 ---
+	--- BLOCK #9 44-48, warpins: 3 ---
+	slot11 = ClientConst
+	slot11 = slot11.HomeSelectType
+	slot11 = slot11.Ornament
 	--- END OF BLOCK #9 ---
+
+	if slot3 ~= slot11 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 49-54, warpins: 1 ---
+	slot11 = Utils
+	slot11 = slot11.isHomePet
+	slot13 = slot10
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #10 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 55-56, warpins: 1 ---
+	slot11 = slot10.id
+	slot4[slot11] = slot10
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 57-58, warpins: 7 ---
+	--- END OF BLOCK #12 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
 	LOOP BLOCK #3
-	GO OUT TO BLOCK #10
+	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #10 51-51, warpins: 1 ---
+	--- BLOCK #13 59-59, warpins: 1 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot21.tryBoxSelectEntities = slot23
+slot23.tryBoxSelectEntities = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot7 = "ClientHomeEditorTemplateEntity"
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.home
-	slot10 = slot8
-	slot8 = slot8.genVirtualOrnamentId
-	slot8 = slot8(slot10)
+	slot8 = nil
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 10-10, warpins: 1 ---
-	slot2 = 0
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot9 = slot6.isPet
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-30, warpins: 2 ---
-	slot9 = OrnamentSingleData
-	slot9 = slot9.new
-	slot11 = {}
-	slot12 = Utils
-	slot12 = slot12.positionToPos3
-	slot14 = slot3
-	slot12 = slot12(slot14)
-	slot11.pos3 = slot12
-	slot12 = Utils
-	slot12 = slot12.quaternionToYawAngleInt
-	slot14 = slot4
-	slot12 = slot12(slot14)
-	slot11.yawValue = slot12
-	slot11.homeId = slot2
-	slot11.itemNo = slot2
-	slot9 = slot9(slot11)
-	slot10 = false
-	slot11 = nil
-	--- END OF BLOCK #2 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #3
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 31-35, warpins: 1 ---
-	slot10 = slot6.isPreview
-	slot11 = slot6.originEntity
-	slot12 = slot6.ornamentInfo
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.home
+	slot11 = slot9
+	slot9 = slot9.genVirtualOrnamentId
+	slot9 = slot9(slot11)
+	slot8 = slot9
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-16, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	slot12 = if slot12 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 36-38, warpins: 1 ---
-	slot12 = slot6.ornamentInfo
-	slot12 = slot12.electricMode
-	slot9.electricMode = slot12
+	--- BLOCK #4 17-17, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 39-40, warpins: 3 ---
+	--- BLOCK #5 18-41, warpins: 2 ---
+	slot9 = OrnamentSingleData
+	slot9 = slot9.new
+	slot11 = HomeLandUtils
+	slot11 = slot11.fillOrnamentTransform
+	slot13 = {}
+	slot13.homeId = slot2
+	slot14 = slot0.areaId
+	slot13.areaId = slot14
+	slot16 = slot0
+	slot14 = slot0.getLocalPosition
+	slot17 = slot3
+	slot14 = slot14(slot16, slot17)
+	slot17 = slot0
+	slot15 = slot0.getLocalRotation
+	slot18 = slot4
+	slot15 = slot15(slot17, slot18)
+	slot16 = Vector3
+	slot16 = slot16.constOne
+	MULTRES = slot11(slot13, slot14, slot15, slot16)
+	slot9 = slot9(MULTRES)
+	slot10 = false
+	slot11 = nil
 	--- END OF BLOCK #5 ---
 
-	slot12 = if slot6 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 41-41, warpins: 1 ---
-	slot12 = slot6.initScale
+	--- BLOCK #6 42-46, warpins: 1 ---
+	slot10 = slot6.isPreview
+	slot11 = slot6.originEntity
+	slot12 = slot6.ornamentInfo
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
+	slot12 = if slot12 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 42-60, warpins: 2 ---
+	--- BLOCK #7 47-49, warpins: 1 ---
+	slot12 = slot6.ornamentInfo
+	slot12 = slot12.electricMode
+	slot9.electricMode = slot12
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 50-51, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	slot12 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 52-52, warpins: 1 ---
+	slot12 = slot6.initScale
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 53-74, warpins: 2 ---
 	slot13 = ClientUtils
 	slot13 = slot13.createClientEntity
 	slot15 = slot7
 	slot16 = VirtualEntUtils
 	slot16 = slot16.getNewVirtualEntityId
 	slot16 = slot16()
-	slot17 = {
-		isClientEnt = true
-	}
+	slot17 = {}
+	slot17.editor = slot0
+	slot18 = slot0.areaId
+	slot17.areaId = slot18
 	slot17.ornamentId = slot8
 	slot17.ornamentInfo = slot9
 	slot17.templateType = slot1
@@ -1896,15 +3134,15 @@ slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	slot13 = slot13(slot15, slot16, slot17)
 
 	return slot13
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot21.createTemplateObject = slot23
+slot23.createTemplateObject = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.templateEntity
 	--- END OF BLOCK #0 ---
@@ -1931,11 +3169,17 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-14, warpins: 2 ---
+	--- BLOCK #2 11-18, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.updateEditEntityState
 
 	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshBuildAttachDisplay
+	slot4 = slot0.templateEntity
+
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -1944,9 +3188,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.onStartEditEntity = slot23
+slot23.onStartEditEntity = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.templateEntity
 	--- END OF BLOCK #0 ---
@@ -1978,18 +3222,10 @@ slot23 = function(slot0)
 
 end
 
-slot21.updateEditEntityState = slot23
+slot23.updateEditEntityState = slot25
 
-slot23 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.game
-	slot1 = slot1.home
-	slot3 = slot1
-	slot1 = slot1.showEditorFitRecommendEffect
-
-	slot1(slot3)
-
+slot25 = function(slot0)
+	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
 
@@ -1997,9 +3233,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.showConfirmEffect = slot23
+slot23.showConfirmEffect = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.entityType
 	slot2 = Const
@@ -2073,9 +3309,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.withdrawEnt = slot23
+slot23.withdrawEnt = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -2153,9 +3389,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.withdrawMultiSelectEntities = slot23
+slot23.withdrawMultiSelectEntities = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = HomeLandUtils
 	slot2 = slot2.getPosRotByOrnamentId
@@ -2171,9 +3407,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.getOrnamentWorkPosRot = slot23
+slot23.getOrnamentWorkPosRot = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.entityType
 	slot2 = Const
@@ -2202,98 +3438,219 @@ slot23 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-19, warpins: 2 ---
+	--- BLOCK #2 12-20, warpins: 2 ---
 	slot1 = {}
 	slot2 = {}
 	slot1.updateData = slot2
 	slot2 = {}
 	slot1.createList = slot2
-	slot2 = slot0.templateEntity
+	slot2 = nil
+	slot3 = slot0.buildAttachManager
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 20-30, warpins: 1 ---
-	slot2 = slot0.templateEntity
-	slot4 = slot2
-	slot2 = slot2.applyEditorTemplateData
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot2 = Utils
-	slot2 = slot2.tableIsEmptyOrNil
-	slot4 = slot1.createList
-	slot2 = slot2(slot4)
+	--- BLOCK #3 21-25, warpins: 1 ---
+	slot3 = slot0.buildAttachManager
+	slot5 = slot3
+	slot3 = slot3.getEditorBuildExtraData
+	slot3 = slot3(slot5)
+	slot2 = slot3
 	--- END OF BLOCK #3 ---
 
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #4
-	else
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 26-28, warpins: 2 ---
+	slot3 = slot0.templateEntity
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
 	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #4 31-37, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.space
-	slot4 = slot2
-	slot2 = slot2.addOrnaments
-	slot5 = slot1.createList
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 38-43, warpins: 2 ---
-	slot2 = Utils
-	slot2 = slot2.tableIsEmptyOrNil
-	slot4 = slot1.updateData
-	slot2 = slot2(slot4)
+	--- BLOCK #5 29-31, warpins: 1 ---
+	slot3 = slot0.placeConfig
 	--- END OF BLOCK #5 ---
 
-	slot2 = if not slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 44-50, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.space
-	slot4 = slot2
-	slot2 = slot2.updateOrnaments
-	slot5 = slot1.updateData
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #6 32-33, warpins: 1 ---
+	slot3 = slot0.placeConfig
+	slot3 = slot3.homeBlueprintGroupInfoList
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 51-51, warpins: 3 ---
-	return
+	--- BLOCK #7 34-35, warpins: 2 ---
 	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #8 36-39, warpins: 1 ---
+	slot4 = #slot3
+	slot5 = 0
+	--- END OF BLOCK #8 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #9 40-41, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 42-42, warpins: 1 ---
+	slot2 = {}
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 43-51, warpins: 2 ---
+	slot4 = {}
+	slot2.homeBlueprintGroupInfoList = slot4
+	slot6 = slot0
+	slot4 = slot0.getBlueprintBuildGroupYawAngleDelta
+	slot4 = slot4(slot6)
+	slot5 = ipairs
+	slot7 = slot3
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 52-59, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.insert
+	slot12 = slot2.homeBlueprintGroupInfoList
+	slot13 = {}
+	slot14 = slot9.groupIndex
+	slot13.groupIndex = slot14
+	slot13.yawAngle = slot4
+
+	slot10(slot12, slot13)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 60-61, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 62-72, warpins: 3 ---
+	slot4 = slot0.templateEntity
+	slot6 = slot4
+	slot4 = slot4.applyEditorTemplateData
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot1.createList
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #14 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 73-80, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+	slot6 = slot4
+	slot4 = slot4.addOrnaments
+	slot7 = slot1.createList
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 81-86, warpins: 2 ---
+	slot4 = Utils
+	slot4 = slot4.tableIsEmptyOrNil
+	slot6 = slot1.updateData
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #16 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 87-94, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+	slot6 = slot4
+	slot4 = slot4.updateOrnaments
+	slot7 = slot1.updateData
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 95-95, warpins: 3 ---
+	return
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot21.applyTemplateData = slot23
+slot23.applyTemplateData = slot25
 
-slot23 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.confirmCallback
 
@@ -2328,441 +3685,140 @@ slot23 = function(slot0, slot1, slot2)
 
 end
 
-slot21.onEditPetResult = slot23
+slot23.onEditPetResult = slot25
 
-slot23 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.confirmCallback
-
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot3 = true
+	slot0.needFixOrnamentsFloorLift = slot3
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.onFinishCallback
-	slot5 = slot1
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot3 = slot0.confirmCallback
 
-	slot2(slot4, slot5)
-
-	return
 	--- END OF BLOCK #2 ---
 
-
-
-end
-
-slot21.onEditOrnamentResult = slot23
-
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot6 = HomelandConfigData
-	slot6 = slot6.homelandAreaRange
-	slot7 = slot1.x
-	slot2 = slot2 + slot7
-	slot7 = slot1.x
-	slot3 = slot3 + slot7
-	slot7 = slot1.z
-	slot4 = slot4 + slot7
-	slot7 = slot1.z
-	slot5 = slot5 + slot7
-	--- END OF BLOCK #0 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #1 13-15, warpins: 1 ---
-	slot7 = slot6[1]
-	--- END OF BLOCK #1 ---
-
-	if slot7 <= slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 16-18, warpins: 1 ---
-	slot7 = slot6[2]
-	--- END OF BLOCK #2 ---
-
-	if slot3 <= slot7 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 19-21, warpins: 1 ---
-	slot7 = slot6[3]
+	--- BLOCK #3 8-8, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #3 ---
 
-	if slot7 <= slot4 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-24, warpins: 1 ---
-	slot7 = slot6[4]
+	--- BLOCK #4 9-14, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.onFinishCallback
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
 	--- END OF BLOCK #4 ---
 
-	if slot5 > slot7 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 25-26, warpins: 4 ---
-	slot7 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 27-27, warpins: 1 ---
-	slot7 = true
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 28-28, warpins: 2 ---
-	return slot7
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 29-30, warpins: 2 ---
-	slot7 = true
-
-	return slot7
-	--- END OF BLOCK #8 ---
-
 
 
 end
 
-slot21.checkEditAreaInRange = slot23
+slot23.onEditOrnamentResult = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.checkEditAreaInRange
-	slot11 = slot1
-	slot12 = slot2
-	slot13 = slot3
-	slot14 = slot4
-	slot15 = slot5
-	slot8 = slot8(slot10, slot11, slot12, slot13, slot14, slot15)
+	slot4 = HomeEntityEditor
+	slot4 = slot4.super
+	slot4 = slot4.checkBoundInArea
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+	slot4 = slot4(slot6, slot7, slot8, slot9)
 	--- END OF BLOCK #0 ---
 
-	slot8 = if not slot8 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-12, warpins: 1 ---
-	slot8 = false
-
-	return slot8
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 13-14, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 15-16, warpins: 1 ---
+	--- BLOCK #1 11-18, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.home
+	slot7 = slot5
+	slot5 = slot5.checkBoundsLock
+	slot8 = slot0.areaId
+	--- END OF BLOCK #1 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 19-19, warpins: 1 ---
+	slot8 = 0
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 20-25, warpins: 2 ---
+	slot9 = slot1
+	slot10 = slot2
+	slot11 = slot3
+	slot5 = slot5(slot7, slot8, slot9, slot10, slot11)
 	--- END OF BLOCK #3 ---
 
-	slot7 = if not slot7 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 17-18, warpins: 1 ---
-	slot8 = true
+	--- BLOCK #4 26-27, warpins: 1 ---
+	slot5 = false
 
-	return slot8
-
+	return slot5
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 19-23, warpins: 3 ---
-	slot10 = slot0
-	slot8 = slot0.getYAreaRange
-	slot8 = slot8(slot10)
+	--- BLOCK #5 28-28, warpins: 3 ---
+	return slot4
 	--- END OF BLOCK #5 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 24-25, warpins: 1 ---
-	slot9 = true
-
-	return slot9
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 26-28, warpins: 2 ---
-	slot9 = slot1.y
-	--- END OF BLOCK #7 ---
-
-	slot10 = if not slot6 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 29-29, warpins: 1 ---
-	slot10 = 0
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 30-33, warpins: 2 ---
-	slot9 = slot9 + slot10
-	slot10 = slot1.y
-	--- END OF BLOCK #9 ---
-
-	slot11 = if not slot7 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 34-34, warpins: 1 ---
-	slot11 = 0
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 35-38, warpins: 2 ---
-	slot10 = slot10 + slot11
-	slot11 = slot8[1]
-	--- END OF BLOCK #11 ---
-
-	if slot11 <= slot9 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 39-41, warpins: 1 ---
-	slot11 = slot8[2]
-	--- END OF BLOCK #12 ---
-
-	if slot10 > slot11 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 42-43, warpins: 2 ---
-	slot11 = false
-	--- END OF BLOCK #13 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #14 44-44, warpins: 1 ---
-	slot11 = true
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 45-45, warpins: 2 ---
-	return slot11
-	--- END OF BLOCK #15 ---
 
 
 
 end
 
-slot21.checkEditAreaInRangeWithY = slot23
+slot23.checkBoundInArea = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot4 = slot3[1]
-	slot5 = slot3[2]
-	slot6 = Utils
-	slot6 = slot6.checkRotationIsVertical
-	slot8 = slot2
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #0 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 9-10, warpins: 1 ---
-	slot4 = slot3[2]
-	slot5 = slot3[1]
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 11-14, warpins: 2 ---
-	slot6 = HomelandConfigData
-	slot6 = slot6.homelandAreaRange
-	--- END OF BLOCK #2 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #3 15-29, warpins: 1 ---
-	slot7 = slot1.x
-	slot8 = slot4 / 2
-	slot7 = slot7 - slot8
-	slot8 = slot1.x
-	slot9 = slot4 / 2
-	slot8 = slot8 + slot9
-	slot9 = slot1.z
-	slot10 = slot5 / 2
-	slot9 = slot9 - slot10
-	slot10 = slot1.z
-	slot11 = slot5 / 2
-	slot10 = slot10 + slot11
-	slot11 = slot6[1]
-	--- END OF BLOCK #3 ---
-
-	if slot11 <= slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #4 30-32, warpins: 1 ---
-	slot11 = slot6[2]
-	--- END OF BLOCK #4 ---
-
-	if slot8 <= slot11 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #5 33-35, warpins: 1 ---
-	slot11 = slot6[3]
-	--- END OF BLOCK #5 ---
-
-	if slot11 <= slot9 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 36-38, warpins: 1 ---
-	slot11 = slot6[4]
-	--- END OF BLOCK #6 ---
-
-	if slot10 > slot11 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 39-40, warpins: 4 ---
-	slot11 = false
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 41-41, warpins: 1 ---
-	slot11 = true
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 42-42, warpins: 2 ---
-	return slot11
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 43-44, warpins: 2 ---
-	slot7 = true
-
-	return slot7
-	--- END OF BLOCK #10 ---
-
-
-
-end
-
-slot21.checkBoundInArea = slot23
-
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInBuildMode
 	--- END OF BLOCK #0 ---
@@ -2774,7 +3830,7 @@ slot23 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-14, warpins: 1 ---
+	--- BLOCK #1 4-21, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -2789,12 +3845,21 @@ slot23 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.showAreaZoneLockEffects
+	slot4 = slot0.areaId
+
+	slot1(slot3, slot4)
+
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 15-21, warpins: 1 ---
+	--- BLOCK #2 22-34, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -2804,12 +3869,20 @@ slot23 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.hideZoneLockEffects
+
+	slot1(slot3)
+
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 22-25, warpins: 2 ---
+	--- BLOCK #3 35-38, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.updateHomeEntityEffect
 
@@ -2822,9 +3895,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.onEditorBuildModeChanged = slot23
+slot23.onEditorBuildModeChanged = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pairs
 	slot3 = pg
@@ -2881,9 +3954,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.updateHomeEntityEffect = slot23
+slot23.updateHomeEntityEffect = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = Utils
 	slot4 = slot4.isHomeLinkFacilityType
@@ -2969,7 +4042,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #7 32-32, warpins: 1 ---
-	slot13 = {}
+	slot13 = EMPTY_TABLE
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -2997,7 +4070,7 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #10 41-41, warpins: 1 ---
-	slot13 = {}
+	slot13 = EMPTY_TABLE
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
@@ -3050,9 +4123,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21.onOrnamentPositionChanged = slot23
+slot23.onOrnamentPositionChanged = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = true
 	slot0.linkEffectDirty = slot1
@@ -3064,9 +4137,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.markLinkEffectDirty = slot23
+slot23.markLinkEffectDirty = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3314,9 +4387,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.updateAllLinkEffects = slot23
+slot23.updateAllLinkEffects = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.linkEffects
@@ -3374,9 +4447,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.destroyLinkEffects = slot23
+slot23.destroyLinkEffects = slot25
 
-slot23 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
@@ -3420,27 +4493,33 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-41, warpins: 2 ---
+	--- BLOCK #3 20-43, warpins: 2 ---
 	slot6 = slot4.eModel
 	slot8 = slot6
 	slot6 = slot6.GetPositionAgentPosEx
 	slot6, slot7, slot8 = slot6(slot8)
-	slot9 = Vector3
-	slot9 = slot9.New
-	slot11 = slot6
-	slot12 = slot7 + 1
-	slot13 = slot8
-	slot9 = slot9(slot11, slot12, slot13)
-	slot10 = slot5.eModel
-	slot12 = slot10
-	slot10 = slot10.GetPositionAgentPosEx
-	slot10, slot11, slot12 = slot10(slot12)
-	slot13 = Vector3
-	slot13 = slot13.New
-	slot15 = slot10
-	slot16 = slot11 + 1
-	slot17 = slot12
-	slot13 = slot13(slot15, slot16, slot17)
+	slot9 = slot0.linkEffectSourcePosition
+	slot11 = slot9
+	slot9 = slot9.Set
+	slot12 = slot6
+	slot13 = slot7 + 1
+	slot14 = slot8
+
+	slot9(slot11, slot12, slot13, slot14)
+
+	slot9 = slot5.eModel
+	slot11 = slot9
+	slot9 = slot9.GetPositionAgentPosEx
+	slot9, slot10, slot11 = slot9(slot11)
+	slot12 = slot0.linkEffectTargetPosition
+	slot14 = slot12
+	slot12 = slot12.Set
+	slot15 = slot9
+	slot16 = slot10 + 1
+	slot17 = slot11
+
+	slot12(slot14, slot15, slot16, slot17)
+
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
@@ -3450,17 +4529,17 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 42-52, warpins: 1 ---
-	slot14 = pg
-	slot14 = slot14.global
-	slot14 = slot14.homelandMgr
-	slot16 = slot14
-	slot14 = slot14.UpdateLinkEffect
-	slot17 = slot3
-	slot18 = slot9
-	slot19 = slot13
+	--- BLOCK #4 44-54, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.global
+	slot12 = slot12.homelandMgr
+	slot14 = slot12
+	slot12 = slot12.UpdateLinkEffect
+	slot15 = slot3
+	slot16 = slot0.linkEffectSourcePosition
+	slot17 = slot0.linkEffectTargetPosition
 
-	slot14(slot16, slot17, slot18, slot19)
+	slot12(slot14, slot15, slot16, slot17)
 
 	return slot3
 
@@ -3469,22 +4548,22 @@ slot23 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 53-60, warpins: 1 ---
-	slot14 = pg
-	slot14 = slot14.global
-	slot14 = slot14.homelandMgr
-	slot16 = slot14
-	slot14 = slot14.PlayLinkEffect
-	slot17 = slot9
-	slot18 = slot13
+	--- BLOCK #5 55-62, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.global
+	slot12 = slot12.homelandMgr
+	slot14 = slot12
+	slot12 = slot12.PlayLinkEffect
+	slot15 = slot0.linkEffectSourcePosition
+	slot16 = slot0.linkEffectTargetPosition
 
-	return slot14(slot16, slot17, slot18)
+	return slot12(slot14, slot15, slot16)
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 61-61, warpins: 2 ---
+	--- BLOCK #6 63-63, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -3492,9 +4571,9 @@ slot23 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot21.playOrUpdateLinkEffect = slot23
+slot23.playOrUpdateLinkEffect = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -3512,9 +4591,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.destroyLinkEffect = slot23
+slot23.destroyLinkEffect = slot25
 
-slot23 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -3531,9 +4610,9 @@ slot23 = function(slot0)
 
 end
 
-slot21.refreshShadows = slot23
+slot23.refreshShadows = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -3594,9 +4673,9 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.restoreEditOriginEntities = slot23
+slot23.restoreEditOriginEntities = slot25
 
-slot23 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -3654,9 +4733,788 @@ slot23 = function(slot0, slot1)
 
 end
 
-slot21.handleEditOriginEntities = slot23
+slot23.handleEditOriginEntities = slot25
 
-return slot21
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.home
+	slot12 = slot10
+	slot10 = slot10.getAreaOrnaments
+	slot13 = slot0.areaId
+	slot14 = slot1
+	slot15 = slot2
+	slot16 = slot3
+	slot17 = slot4
+	slot18 = slot5
+	slot19 = slot6
+	slot20 = slot7
+	slot21 = slot8
+	slot22 = slot9
+
+	return slot10(slot12, slot13, slot14, slot15, slot16, slot17, slot18, slot19, slot20, slot21, slot22)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.getAreaOrnaments = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.getFastFindMap
+	slot4 = slot0.areaId
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.getFastFindMap = slot25
+
+slot25 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = HomeLandUtils
+	slot3 = slot3.checkHomeObjectFloorLift
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot3 = 0
+
+	return slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-16, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.home
+	slot5 = slot3
+	slot3 = slot3.getFloorLiftLocalY
+	slot6 = slot0.areaId
+	slot7 = slot1
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot23.getFloorLiftLocalY = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.needFixOrnamentsFloorLift
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-10, warpins: 2 ---
+	slot1 = false
+	slot0.needFixOrnamentsFloorLift = slot1
+	slot3 = slot0
+	slot1 = slot0.fixOrnamentsFloorLift
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot23.checkFixOrnamentsFloorLift = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 10-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	slot1 = slot1.ornament
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-23, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.space
+	slot3 = slot1
+	slot1 = slot1.isSelfHomeland
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-24, warpins: 4 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-33, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.getFastFindMap
+	slot4 = slot0.areaId
+	slot1 = slot1(slot3, slot4)
+
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 34-34, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 35-39, warpins: 2 ---
+	slot2 = nil
+	slot3 = pairs
+	slot5 = slot1.ornamentDict
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #8 40-42, warpins: 1 ---
+	slot8 = slot7.extraInfo
+	--- END OF BLOCK #8 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #9 43-49, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.me
+	slot9 = slot9.space
+	slot9 = slot9.ornament
+	slot9 = slot9[slot6]
+	--- END OF BLOCK #9 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #10 50-55, warpins: 1 ---
+	slot9 = HomeLandUtils
+	slot9 = slot9.checkHomeObjectFloorLift
+	slot11 = slot8.homeTemplateId
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #10 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 56-73, warpins: 1 ---
+	slot9 = slot7.position
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.home
+	slot12 = slot10
+	slot10 = slot10.getFloorLiftLocalY
+	slot13 = slot0.areaId
+	slot14 = slot9
+	slot10 = slot10(slot12, slot13, slot14)
+	slot11 = math
+	slot11 = slot11.abs
+	slot13 = slot9.y
+	slot13 = slot10 - slot13
+	slot11 = slot11(slot13)
+	slot12 = HomeLandUtils
+	slot12 = slot12.HOME_FLOOR_LIFT_EPSILON
+	--- END OF BLOCK #11 ---
+
+	if slot12 < slot11 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 74-75, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 76-76, warpins: 1 ---
+	slot2 = {}
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 77-77, warpins: 2 ---
+	slot2[slot6] = slot10
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 78-79, warpins: 6 ---
+	--- END OF BLOCK #15 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #16
+
+
+	--- BLOCK #16 80-81, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 82-88, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.space
+	slot5 = slot3
+	slot3 = slot3.liftOrnaments
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 89-89, warpins: 2 ---
+	return
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot23.fixOrnamentsFloorLift = slot25
+
+slot25 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = HomeEntityEditor
+	slot1 = slot1.super
+	slot1 = slot1.tickEditor
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.checkFixOrnamentsFloorLift
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot23.tickEditor = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot2 = slot1.ornaments
+	slot3 = type
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	if slot3 == "table" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-17, warpins: 1 ---
+	slot3 = #slot2
+	slot4 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot3 <= slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-19, warpins: 2 ---
+	slot3 = nil
+
+	return slot3
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-20, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot23.getBlueprintOrnaments = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	slot1 = {}
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-17, warpins: 2 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.ORNAMENT_POSITION_INT_BASE
+	slot3 = Vector3
+	slot3 = slot3.New
+	slot5 = tonumber
+	slot7 = slot1[1]
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-24, warpins: 2 ---
+	slot5 = slot5 / slot2
+	slot6 = tonumber
+	slot8 = slot1[2]
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-25, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 26-31, warpins: 2 ---
+	slot6 = slot6 / slot2
+	slot7 = tonumber
+	slot9 = slot1[3]
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-32, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 33-34, warpins: 2 ---
+	slot7 = slot7 / slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot23.getBlueprintPosition = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	slot1 = {}
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-17, warpins: 2 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.ORNAMENT_ROTATION_INT_BASE
+	slot3 = Quaternion
+	slot3 = slot3.Euler
+	slot5 = tonumber
+	slot7 = slot1[1]
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-24, warpins: 2 ---
+	slot5 = slot5 / slot2
+	slot6 = tonumber
+	slot8 = slot1[2]
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-25, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 26-31, warpins: 2 ---
+	slot6 = slot6 / slot2
+	slot7 = tonumber
+	slot9 = slot1[3]
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-32, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 33-34, warpins: 2 ---
+	slot7 = slot7 / slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot23.getBlueprintRotation = slot25
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = type
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == "table" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	slot1 = {}
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-17, warpins: 2 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.ORNAMENT_SCALE_INT_BASE
+	slot3 = Vector3
+	slot3 = slot3.New
+	slot5 = tonumber
+	slot7 = slot1[1]
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot5 = slot2
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-24, warpins: 2 ---
+	slot5 = slot5 / slot2
+	slot6 = tonumber
+	slot8 = slot1[2]
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-25, warpins: 1 ---
+	slot6 = slot2
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 26-31, warpins: 2 ---
+	slot6 = slot6 / slot2
+	slot7 = tonumber
+	slot9 = slot1[3]
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #7 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-32, warpins: 1 ---
+	slot7 = slot2
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 33-34, warpins: 2 ---
+	slot7 = slot7 / slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot23.getBlueprintScale = slot25
+
+return slot23
 --- END OF BLOCK #0 ---
 
 

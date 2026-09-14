@@ -1,22 +1,25 @@
---- BLOCK #0 1-36, warpins: 1 ---
+--- BLOCK #0 1-39, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.Sandbox.LevelItem"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.SceneUtils"
+slot4 = "GameApp.Sandbox.LevelItem"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Common.inspect"
+slot5 = "Common.Utils.SceneUtils"
 slot3 = slot3(slot5)
-slot4 = slot0.LightClass
-slot6 = "TotemPuzzle"
-slot7 = slot1
-slot4 = slot4(slot6, slot7)
+slot4 = require
+slot6 = "Core.Common.inspect"
+slot4 = slot4(slot6)
+slot5 = slot1.LightClass
+slot7 = "TotemPuzzle"
+slot8 = slot2
+slot5 = slot5(slot7, slot8)
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = TotemPuzzle
 	slot4 = slot4.super
@@ -57,9 +60,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.ctor = slot5
+slot5.ctor = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = TotemPuzzle
 	slot1 = slot1.super
@@ -95,9 +98,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.onSandboxReady = slot5
+slot5.onSandboxReady = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.serverMsg
@@ -113,9 +116,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.changeTotemState = slot5
+slot5.changeTotemState = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resetHideChest
@@ -136,9 +139,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.destroy = slot5
+slot5.destroy = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.createFinishEffect
@@ -152,9 +155,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.RPC_SC_PlayTotemFinishEffect = slot5
+slot5.RPC_SC_PlayTotemFinishEffect = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestSpawnerId
 	--- END OF BLOCK #0 ---
@@ -238,9 +241,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.createFinishEffect = slot5
+slot5.createFinishEffect = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestSpawnerId
 	--- END OF BLOCK #0 ---
@@ -342,7 +345,7 @@ slot5 = function(slot0)
 
 
 	--- BLOCK #8 41-41, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -384,9 +387,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.initRefChestStaticId = slot5
+slot5.initRefChestStaticId = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestStaticId
 	--- END OF BLOCK #0 ---
@@ -422,9 +425,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.tempHideChest = slot5
+slot5.tempHideChest = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestStaticId
 	--- END OF BLOCK #0 ---
@@ -460,9 +463,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.resetHideChest = slot5
+slot5.resetHideChest = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

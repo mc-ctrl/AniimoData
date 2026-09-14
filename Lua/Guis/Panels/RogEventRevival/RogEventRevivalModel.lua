@@ -1,4 +1,4 @@
---- BLOCK #0 1-20, warpins: 1 ---
+--- BLOCK #0 1-23, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -11,12 +11,15 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "Common.Utils.RogueTalentUtils"
 slot3 = slot3(slot5)
-slot4 = slot0.LightClass
-slot6 = "RogEventRevivalModel"
-slot7 = slot1
-slot4 = slot4(slot6, slot7)
+slot4 = require
+slot6 = "Utils.RogueUtils"
+slot4 = slot4(slot6)
+slot5 = slot0.LightClass
+slot7 = "RogEventRevivalModel"
+slot8 = slot1
+slot5 = slot5(slot7, slot8)
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = 1
@@ -101,7 +104,6 @@ slot5 = function(slot0)
 
 	--- BLOCK #7 31-31, warpins: 2 ---
 	slot1[slot5] = slot7
-
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
@@ -114,7 +116,15 @@ slot5 = function(slot0)
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #9
 
-	--- BLOCK #9 33-33, warpins: 1 ---
+	--- BLOCK #9 33-39, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.sort
+	slot4 = slot1
+	slot5 = RogueUtils
+	slot5 = slot5.comparePetSortInfo
+
+	slot2(slot4, slot5)
+
 	return slot1
 	--- END OF BLOCK #9 ---
 
@@ -122,9 +132,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getPetListRenderInfo = slot5
+slot5.getPetListRenderInfo = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

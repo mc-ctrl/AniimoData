@@ -115,7 +115,7 @@ end
 UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
---- BLOCK #11 38-873, warpins: 1 ---
+--- BLOCK #11 38-1066, warpins: 1 ---
 slot1 = slot0._platformUIBridgeLoader
 
 slot2 = function(slot0)
@@ -800,13 +800,21 @@ slot7 = {
 }
 slot6[1] = slot7
 slot7 = {
-	methodName = "updateSpeechRoomMembers"
+	methodName = "quitSpeechChannel"
 }
 slot6[2] = slot7
 slot7 = {
-	methodName = "handlePlayerVoiceState"
+	methodName = "updateSpeechRoomMembers"
 }
 slot6[3] = slot7
+slot7 = {
+	methodName = "updateSpeakingMembers"
+}
+slot6[4] = slot7
+slot7 = {
+	methodName = "handlePlayerVoiceState"
+}
+slot6[5] = slot7
 slot7 = "_platformImpPlatformSpeechSystem"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -928,9 +936,24 @@ slot7 = {
 	methodName = "visitHome"
 }
 slot6[4] = slot7
+slot7 = {
+	methodName = "setInteractIconColor"
+}
+slot6[5] = slot7
 slot7 = "_platformImpPlatformInfoPlayerCardCtrl"
 
 slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Utils.ShowTitleUtils"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformShowTitleUtils"
+slot6 = {}
+slot7 = {
+	methodName = "resolveFriendPrefixName"
+}
+slot6[1] = slot7
+
+slot2(slot4, slot5, slot6)
 
 slot2 = slot1.registerDynamicHooks
 slot4 = "Guis.Panels.InfoPlayerMain.InfoPlayerMainCtrl"
@@ -956,6 +979,10 @@ slot7 = {
 	methodName = "setPlayerBaseInfoSign"
 }
 slot6[5] = slot7
+slot7 = {
+	methodName = "setPlayerBaseInfoOnlineID"
+}
+slot6[6] = slot7
 slot7 = "_platformInfoPlayerMain"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -969,6 +996,18 @@ slot7 = {
 }
 slot6[1] = slot7
 slot7 = "_platformImpPlatformAccusationCtrl"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.HomeCampReport.HomeCampReportCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformHomeCampReportCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "renderPlayerName"
+}
+slot6[1] = slot7
+slot7 = "_platformImpPlatformHomeCampReportCtrl"
 
 slot2(slot4, slot5, slot6, slot7)
 
@@ -1000,6 +1039,17 @@ slot6[2] = slot7
 slot2(slot4, slot5, slot6)
 
 slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.Tips.Items.CTipArea.FriendOnLineItem"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformFriendOnLineItem"
+slot6 = {}
+slot7 = {
+	methodName = "resolveFriendOnlineDisplayName"
+}
+slot6[1] = slot7
+
+slot2(slot4, slot5, slot6)
+
+slot2 = slot1.registerDynamicHooks
 slot4 = "Guis.Panels.Tips.Items.CITipArea.TeamInviteItem"
 slot5 = "SDK.Platform.UIBridge.ImpPlatformTeamInviteItem"
 slot6 = {}
@@ -1023,6 +1073,10 @@ slot7 = {
 	methodName = "render1Plus3RoomOnlineID"
 }
 slot6[2] = slot7
+slot7 = {
+	methodName = "getRender1Plus3PrimaryPetName"
+}
+slot6[3] = slot7
 slot7 = "_platform1Plus3RoomOnlineID"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -1136,6 +1190,10 @@ slot7 = {
 	fieldName = "fetchPlatformFriendList"
 }
 slot6[16] = slot7
+slot7 = {
+	fieldName = "registerPlatformCallbacks"
+}
+slot6[17] = slot7
 slot7 = "_platformImpPlatformFriendTabComponent"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -1192,6 +1250,14 @@ slot7 = {
 	methodName = "setPlayerBaseInfoSign"
 }
 slot6[12] = slot7
+slot7 = {
+	methodName = "onDestroy"
+}
+slot6[13] = slot7
+slot7 = {
+	methodName = "renderChatGroupName"
+}
+slot6[14] = slot7
 
 slot2(slot4, slot5, slot6)
 
@@ -1222,6 +1288,10 @@ slot7 = {
 	methodName = "refreshTeamMiniChatMessage"
 }
 slot6[3] = slot7
+slot7 = {
+	methodName = "resolveFriendshipUpdateName"
+}
+slot6[4] = slot7
 
 slot2(slot4, slot5, slot6)
 
@@ -1253,6 +1323,10 @@ slot7 = {
 	methodName = "refreshChatMessageTitleName"
 }
 slot6[6] = slot7
+slot7 = {
+	methodName = "renderGroupChannelDisplayName"
+}
+slot6[7] = slot7
 slot7 = "_platformImpPlatformChatComponent"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -1329,17 +1403,29 @@ slot4 = "Guis.Panels.MarkShareView.MarkShareViewCtrl"
 slot5 = "SDK.Platform.UIBridge.ImpPlatformMarkShareViewCtrl"
 slot6 = {}
 slot7 = {
-	methodName = "resolveUGCImageDisplay"
+	methodName = "initOnlineID"
 }
 slot6[1] = slot7
 slot7 = {
-	methodName = "resolveUGCTextDisplay"
+	methodName = "clearOnlineID"
 }
 slot6[2] = slot7
 slot7 = {
-	methodName = "resolveUGCNameDisplay"
+	methodName = "applyMarkShareImage"
 }
 slot6[3] = slot7
+slot7 = {
+	methodName = "applyMarkShareText"
+}
+slot6[4] = slot7
+slot7 = {
+	methodName = "applyMarkShareName"
+}
+slot6[5] = slot7
+slot7 = {
+	methodName = "initCloseButtons"
+}
+slot6[6] = slot7
 slot7 = "_platformImpPlatformMarkShareViewCtrl"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -1382,6 +1468,28 @@ slot7 = {
 	methodName = "onDestroy"
 }
 slot6[3] = slot7
+
+slot2(slot4, slot5, slot6)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.LoadProgress.LoadProgressCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformLoadProgressCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "resolveTeamMemberDisplayName"
+}
+slot6[1] = slot7
+
+slot2(slot4, slot5, slot6)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.InfoPlayerMain.Component.EditTitleBarComponent"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformEditTitleBarComponent"
+slot6 = {}
+slot7 = {
+	methodName = "resolveFriendTitleDisplayName"
+}
+slot6[1] = slot7
 
 slot2(slot4, slot5, slot6)
 
@@ -1555,6 +1663,62 @@ slot7 = "_platformImpPlatformInteractionUnitPlayerFunc"
 slot2(slot4, slot5, slot6, slot7)
 
 slot2 = slot1.registerDynamicHooks
+slot4 = "Entities.SpaceEntities.PlayerComponent.ClientInteractionAnimationComponent"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformInteractionAnimationComponent"
+slot6 = {}
+slot7 = {
+	methodName = "resolveInteractPlayerDisplayName"
+}
+slot6[1] = slot7
+slot7 = "_platformImpPlatformInteractionAnimationComponent"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.CashGift.CashGiftCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformCashGiftCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "resolveGiftReceiverName"
+}
+slot6[1] = slot7
+slot7 = {
+	methodName = "_onConfirmGift"
+}
+slot6[2] = slot7
+slot7 = "_platformImpPlatformCashGiftCtrl"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Utils.ClientCashShopUtils"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformClientCashShopUtils"
+slot6 = {}
+slot7 = {
+	methodName = "resolveGiftReceiverName"
+}
+slot6[1] = slot7
+slot7 = "_platformImpPlatformClientCashShopUtils"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.ShopGiftReceive.ShopGiftReceiveCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformShopGiftReceiveCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "resolveGiverDisplayName"
+}
+slot6[1] = slot7
+slot7 = {
+	methodName = "resolveGiftBlessText"
+}
+slot6[2] = slot7
+slot7 = "_platformImpPlatformShopGiftReceiveCtrl"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
 slot4 = "Entities.SpaceEntities.HomeCar.ClientHomeCarOrnamentComponent"
 slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientHomeCarOrnamentComponent"
 slot6 = {}
@@ -1645,6 +1809,10 @@ slot7 = {
 	methodName = "set_crossPlatform"
 }
 slot6[3] = slot7
+slot7 = {
+	methodName = "handleAccountBindClick"
+}
+slot6[4] = slot7
 slot7 = "_platformImpPlatformClientSettingUtils"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -1686,7 +1854,7 @@ slot7 = {
 }
 slot6[2] = slot7
 slot7 = {
-	methodName = "refreshAroundInfoStamp"
+	methodName = "checkInfoStampVisible"
 }
 slot6[3] = slot7
 
@@ -1723,6 +1891,14 @@ slot7 = {
 	methodName = "getOnlineIDText"
 }
 slot6[1] = slot7
+slot7 = {
+	methodName = "shouldBlockLoginClick"
+}
+slot6[2] = slot7
+slot7 = {
+	methodName = "refreshLoginButtonInteractable"
+}
+slot6[3] = slot7
 slot7 = "_platformImpPlatformLoginCtrl"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -1780,6 +1956,36 @@ slot7 = {
 	methodName = "shouldShowWebPayButton"
 }
 slot6[1] = slot7
+slot7 = {
+	methodName = "filterGiftFriendList"
+}
+slot6[2] = slot7
+
+slot2(slot4, slot5, slot6)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.Map.MapCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformMapCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "handleCancelOnLocationInfo"
+}
+slot6[1] = slot7
+slot7 = {
+	methodName = "shouldHideLocationInfoCloseBtn"
+}
+slot6[2] = slot7
+
+slot2(slot4, slot5, slot6)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "GameApp.Recharge.RechargeUtils"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformRechargeUtils"
+slot6 = {}
+slot7 = {
+	methodName = "getProductsPrice"
+}
+slot6[1] = slot7
 
 slot2(slot4, slot5, slot6)
 
@@ -1812,6 +2018,18 @@ slot7 = "_platformImpPlatformClientMainPlayer"
 slot2(slot4, slot5, slot6, slot7)
 
 slot2 = slot1.registerDynamicHooks
+slot4 = "Entities.SpaceEntities.PlayerComponent.ClientFunctionUnlockComponent"
+slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientFunctionUnlockComponent"
+slot6 = {}
+slot7 = {
+	methodName = "on_functionUnlocks_changed"
+}
+slot6[1] = slot7
+slot7 = "_platformImpPlatformClientFunctionUnlockComponent"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
 slot4 = "Entities.SpaceEntities.PlayerComponent.ClientFriendComponent"
 slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientFriendComponent"
 slot6 = {}
@@ -1827,7 +2045,27 @@ slot7 = {
 	methodName = "inviteEnterPhotoWorldByShellActivity"
 }
 slot6[3] = slot7
+slot7 = {
+	methodName = "onInit"
+}
+slot6[4] = slot7
+slot7 = {
+	methodName = "onPsnBlockStatesUpdated"
+}
+slot6[5] = slot7
 slot7 = "_platformImpPlatformClientFriendComponent"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Entities.SpaceEntities.PlayerComponent.ClientSocialComponent"
+slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientFriendComponent"
+slot6 = {}
+slot7 = {
+	methodName = "RPC_SC_PsnAuthCodeRequired"
+}
+slot6[1] = slot7
+slot7 = "_platformImpPlatformClientSocialComponent"
 
 slot2(slot4, slot5, slot6, slot7)
 
@@ -1847,6 +2085,14 @@ slot7 = {
 	methodName = "sensitiveWordsCheck"
 }
 slot6[3] = slot7
+slot7 = {
+	methodName = "createChatGroup"
+}
+slot6[4] = slot7
+slot7 = {
+	methodName = "setChatGroupStatus"
+}
+slot6[5] = slot7
 
 slot2(slot4, slot5, slot6)
 
@@ -1991,13 +2237,25 @@ slot4 = "Entities.SpaceEntities.PlayerComponent.ClientPetsExchangeComponent"
 slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientPetsExchangeComponent"
 slot6 = {}
 slot7 = {
-	methodName = "beforeSendPetExchangeInvite"
+	methodName = "init"
 }
 slot6[1] = slot7
 slot7 = {
-	methodName = "beforeRecvPetExchangeInvite"
+	methodName = "destroy"
 }
 slot6[2] = slot7
+slot7 = {
+	methodName = "onStartPetExchangeSocial"
+}
+slot6[3] = slot7
+slot7 = {
+	methodName = "beforeSendPetExchangeInvite"
+}
+slot6[4] = slot7
+slot7 = {
+	methodName = "beforeRecvPetExchangeInvite"
+}
+slot6[5] = slot7
 
 slot2(slot4, slot5, slot6)
 
@@ -2007,6 +2265,17 @@ slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientPlayerHomeCampComponent"
 slot6 = {}
 slot7 = {
 	methodName = "canEnterHomeCamp"
+}
+slot6[1] = slot7
+
+slot2(slot4, slot5, slot6)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Entities.SpaceEntities.PlayerComponent.ClientPlayerHomelandComponent"
+slot5 = "SDK.Platform.EntityMixin.ImpPlatformClientPlayerHomelandComponent"
+slot6 = {}
+slot7 = {
+	methodName = "canEnterHomeland"
 }
 slot6[1] = slot7
 
@@ -2037,25 +2306,37 @@ slot7 = {
 }
 slot6[2] = slot7
 slot7 = {
-	methodName = "recvPrivateChatPush"
+	methodName = "getChatGroupDisplayName"
 }
 slot6[3] = slot7
 slot7 = {
-	methodName = "recvGroupChatPush"
+	methodName = "getChatNoticePlayerName"
 }
 slot6[4] = slot7
 slot7 = {
-	methodName = "recvFriendChatPush"
+	methodName = "recvPrivateChatPush"
 }
 slot6[5] = slot7
 slot7 = {
-	methodName = "recvWorldChatPush"
+	methodName = "recvGroupChatPush"
 }
 slot6[6] = slot7
 slot7 = {
-	methodName = "recvNearbyChatPush"
+	methodName = "recvFriendChatPush"
 }
 slot6[7] = slot7
+slot7 = {
+	methodName = "recvWorldChatPush"
+}
+slot6[8] = slot7
+slot7 = {
+	methodName = "recvNearbyChatPush"
+}
+slot6[9] = slot7
+slot7 = {
+	methodName = "renderChatGroupMemberNoticePlayerName"
+}
+slot6[10] = slot7
 slot7 = "_platformImpPlatformImpChatMessage"
 
 slot2(slot4, slot5, slot6, slot7)
@@ -2145,20 +2426,68 @@ slot6[2] = slot7
 
 slot2(slot4, slot5, slot6)
 
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.PlayerEnhanceLoading.PlayerEnhanceLoadingCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformPlayerEnhanceLoadingCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "onShow"
+}
+slot6[1] = slot7
+slot7 = {
+	methodName = "onHide"
+}
+slot6[2] = slot7
+slot7 = {
+	methodName = "onDestroy"
+}
+slot6[3] = slot7
+slot7 = {
+	methodName = "onStartEnter"
+}
+slot6[4] = slot7
+slot7 = {
+	methodName = "afterOpenPlayerEnhanceInBackground"
+}
+slot6[5] = slot7
+slot7 = "_platformImpPlatformPlayerEnhanceLoadingCtrl"
+
+slot2(slot4, slot5, slot6, slot7)
+
+slot2 = slot1.registerDynamicHooks
+slot4 = "Guis.Panels.PiecesItemTip.PiecesItemTipCtrl"
+slot5 = "SDK.Platform.UIBridge.ImpPlatformPiecesItemTipCtrl"
+slot6 = {}
+slot7 = {
+	methodName = "onShow"
+}
+slot6[1] = slot7
+slot7 = {
+	methodName = "onHide"
+}
+slot6[2] = slot7
+slot7 = {
+	methodName = "onDestroy"
+}
+slot6[3] = slot7
+slot7 = "_platformImpPlatformPiecesItemTipCtrl"
+
+slot2(slot4, slot5, slot6, slot7)
+
 return
 --- END OF BLOCK #11 ---
 
 FLOW; TARGET BLOCK #12
 
 
---- BLOCK #12 874-874, warpins: 2 ---
+--- BLOCK #12 1067-1067, warpins: 2 ---
 return
 --- END OF BLOCK #12 ---
 
 FLOW; TARGET BLOCK #13
 
 
---- BLOCK #13 875-875, warpins: 2 ---
+--- BLOCK #13 1068-1068, warpins: 2 ---
 return
 --- END OF BLOCK #13 ---
 

@@ -365,20 +365,20 @@ end
 
 slot7.startReloading = slot14
 
-slot14 = function(slot0, slot1)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
-	slot2 = slot0.sceneId
-	slot3 = ClientUtils
-	slot3 = slot3.getSceneName
-	slot5 = slot2
-	slot3 = slot3(slot5)
+	slot3 = slot0.sceneId
 	slot4 = ClientUtils
-	slot4 = slot4.isStreamScene
-	slot6 = slot2
+	slot4 = slot4.getSceneName
+	slot6 = slot3
 	slot4 = slot4(slot6)
+	slot5 = ClientUtils
+	slot5 = slot5.isStreamScene
+	slot7 = slot3
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #0 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -386,39 +386,39 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #1 12-20, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.resMgr
-	slot7 = slot5
-	slot5 = slot5.StreamLoadLevel
-	slot8 = slot3
-	slot5 = slot5(slot7, slot8)
-	slot0.request = slot5
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.resMgr
+	slot8 = slot6
+	slot6 = slot6.StreamLoadLevel
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
+	slot0.request = slot6
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
 	--- BLOCK #2 21-30, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.resMgr
-	slot7 = slot5
-	slot5 = slot5.LoadLevel
-	slot8 = slot2
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.resMgr
+	slot8 = slot6
+	slot6 = slot6.LoadLevel
 	slot9 = slot3
-	slot10 = false
-	slot5 = slot5(slot7, slot8, slot9, slot10)
-	slot0.request = slot5
+	slot10 = slot4
+	slot11 = false
+	slot6 = slot6(slot8, slot9, slot10, slot11)
+	slot0.request = slot6
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
 	--- BLOCK #3 31-35, warpins: 2 ---
-	slot5 = slot0.request
+	slot6 = slot0.request
 
-	slot6 = function(slot0)
+	slot7 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -512,7 +512,7 @@ slot14 = function(slot0, slot1)
 		FLOW; TARGET BLOCK #7
 
 
-		--- BLOCK #7 42-47, warpins: 2 ---
+		--- BLOCK #7 42-59, warpins: 2 ---
 		slot6 = EModelUtils
 		slot6 = slot6.setAgentPosition
 		slot8 = player
@@ -520,14 +520,53 @@ slot14 = function(slot0, slot1)
 
 		slot6(slot8, slot9)
 
-		return
+		slot6 = player
+		slot6 = slot6.eModel
+		slot8 = slot6
+		slot6 = slot6.ClearGravityMask
+		slot9 = Const
+		slot9 = slot9.COMPONENT_MOTION
+		slot10 = ClientConst
+		slot10 = slot10.GravityMask
+		slot10 = slot10.GMMove
+
+		slot6(slot8, slot9, slot10)
+
+		slot6 = onSceneLoaded
 		--- END OF BLOCK #7 ---
+
+		slot6 = if slot6 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 60-62, warpins: 1 ---
+		slot6 = onSceneLoaded
+		slot8 = slot0
+
+		slot6(slot8)
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 63-67, warpins: 2 ---
+		slot6 = pg
+		slot6 = slot6.me
+		slot7 = true
+		slot6.offlineIsReady = slot7
+
+		return
+		--- END OF BLOCK #9 ---
 
 
 
 	end
 
-	slot5.loadedCallback = slot6
+	slot6.loadedCallback = slot7
 
 	return
 	--- END OF BLOCK #3 ---

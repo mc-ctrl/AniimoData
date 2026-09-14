@@ -90,16 +90,7 @@ slot11 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 31-54, warpins: 2 ---
-	slot2 = slot0.view
-	slot2 = slot2.sneakMode
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "state"
-	slot6 = 1
-
-	slot2(slot4, slot5, slot6)
-
+	--- BLOCK #3 31-47, warpins: 2 ---
 	slot2 = slot0.view
 	slot2 = slot2.btnSpecialUButton
 	slot4 = slot2

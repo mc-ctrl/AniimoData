@@ -1,32 +1,35 @@
---- BLOCK #0 1-50, warpins: 1 ---
+--- BLOCK #0 1-57, warpins: 1 ---
 slot0 = require
-slot2 = "Utils.ClientModelUtils"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Utils.ClientModelUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "GameApp.UIScene.UISceneBase"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
-slot4 = CS
-slot4 = slot4.UnityEngine
-slot4 = slot4.GameObject
-slot5 = slot2.LightClass
-slot7 = "FurnitureStoreScene"
-slot8 = slot3
-slot5 = slot5(slot7, slot8)
-slot6 = require
-slot8 = "Entities.ClientSimpleVirtualEntity"
-slot6 = slot6(slot8)
+slot4 = require
+slot6 = "GameApp.UIScene.UISceneBase"
+slot4 = slot4(slot6)
+slot5 = CS
+slot5 = slot5.UnityEngine
+slot5 = slot5.GameObject
+slot6 = slot3.LightClass
+slot8 = "FurnitureStoreScene"
+slot9 = slot4
+slot6 = slot6(slot8, slot9)
 slot7 = require
-slot9 = "Entities.SpaceEntities.Home.ClientHomeFurnitureStoreEntity"
+slot9 = "Entities.ClientSimpleVirtualEntity"
 slot7 = slot7(slot9)
-slot8 = fingerGestures
+slot8 = require
+slot10 = "Entities.SpaceEntities.Home.ClientHomeFurnitureStoreEntity"
+slot8 = slot8(slot10)
+slot9 = fingerGestures
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-55, warpins: 1 ---
 	slot1 = 10
 	slot0.modelDistance = slot1
@@ -94,9 +97,140 @@ slot9 = function(slot0)
 
 end
 
-slot5.onStart = slot9
+slot6.onStart = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0.gestureTargetName = slot1
+	--- END OF BLOCK #0 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot0.allowEmptyGestureTarget = slot4
+	slot0.gestureTouchStartCallback = slot3
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot6.setGestureOptions = slot10
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	slot2 = slot1.pickedUIElement
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-5, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 6-7, warpins: 1 ---
+	slot3 = slot0.allowEmptyGestureTarget
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-11, warpins: 2 ---
+	slot3 = slot2.name
+	slot4 = slot0.gestureTargetName
+	--- END OF BLOCK #4 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 12-12, warpins: 1 ---
+	slot4 = "GestureRayBox"
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 13-14, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 15-16, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 17-17, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 18-18, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot6.isGestureTarget = slot10
+
+slot10 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = fingerGestures
 	slot1 = slot1.Active
@@ -118,30 +252,22 @@ slot9 = function(slot0)
 	slot1 = fingerGestures
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot1 = slot0.pickedUIElement
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.isGestureTarget
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #0 ---
 
 		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot1 = slot0.pickedUIElement
-		slot1 = slot1.name
-		--- END OF BLOCK #1 ---
-
-		if slot1 == "GestureRayBox" then
 		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #2 8-12, warpins: 1 ---
+		--- BLOCK #1 8-12, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.onSwipeModel
@@ -149,14 +275,14 @@ slot9 = function(slot0)
 
 		slot1(slot3, slot4)
 
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #3
+		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #3 13-13, warpins: 3 ---
+		--- BLOCK #2 13-13, warpins: 2 ---
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -166,47 +292,56 @@ slot9 = function(slot0)
 	slot1 = fingerGestures
 
 	slot2 = function(slot0)
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot1 = slot0.pickedUIElement
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.isGestureTarget
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
+
 		--- END OF BLOCK #0 ---
 
-		slot1 = if slot1 then
+		slot1 = if not slot1 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot1 = slot0.pickedUIElement
-		slot1 = slot1.name
+		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
 		--- END OF BLOCK #1 ---
 
-		if slot1 == "GestureRayBox" then
-		JUMP TO BLOCK #2
-		else
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-12, warpins: 2 ---
+		slot1 = self
+		slot1 = slot1.gestureTouchStartCallback
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot1 then
 		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #2 8-14, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.ui
-		slot1 = slot1.homelandFurnitureStore
-		slot3 = slot1
-		slot1 = slot1.showOrHideFoldOutList
+		--- BLOCK #3 13-15, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.gestureTouchStartCallback
 
-		slot1(slot3)
+		slot1()
 
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 15-15, warpins: 3 ---
-		return
 		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 16-16, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
 
 
 
@@ -225,9 +360,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.initGestures = slot9
+slot6.initGestures = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryReleaseGlobalGesture
@@ -266,9 +401,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.disableGestures = slot9
+slot6.disableGestures = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.targetCamera
 	slot3 = slot1.texture
@@ -281,9 +416,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.setRawImage = slot9
+slot6.setRawImage = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = slot1.modelResId
 	slot3 = nil
@@ -338,7 +473,7 @@ slot9 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 24-43, warpins: 1 ---
+	--- BLOCK #4 24-52, warpins: 1 ---
 	slot4 = ClientHomeFurnitureStoreEntity
 	slot4 = slot4.new
 	slot4 = slot4()
@@ -404,13 +539,26 @@ slot9 = function(slot0, slot1)
 
 	slot4(slot6)
 
+	slot4 = {}
+	slot7 = slot3
+	slot5 = slot3.init
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot7 = slot3
+	slot5 = slot3.postInit
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
 	return
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 44-44, warpins: 2 ---
+	--- BLOCK #5 53-53, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -418,9 +566,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.showModel = slot9
+slot6.showModel = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.models
 	slot3 = slot0.curShowModelResId
@@ -443,15 +591,14 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-20, warpins: 2 ---
+	--- BLOCK #2 7-19, warpins: 2 ---
 	slot3 = slot1.x
 	slot4 = slot1.y
 	slot7 = slot2
 	slot5 = slot2.getConfigData
 	slot5 = slot5(slot7)
 	slot6 = slot2.eModel
-	slot6 = slot6.itemComponent
-	slot6 = slot6.model
+	slot6 = slot6.itemModel
 	slot6 = slot6.transform
 	slot6 = slot6.localRotation
 	slot6 = slot6.eulerAngles
@@ -465,7 +612,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 21-22, warpins: 1 ---
+	--- BLOCK #3 20-21, warpins: 1 ---
 	slot7 = slot6.y
 	slot0.endY = slot7
 	--- END OF BLOCK #3 ---
@@ -473,7 +620,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-35, warpins: 2 ---
+	--- BLOCK #4 22-34, warpins: 2 ---
 	slot7 = slot0.endY
 	slot8 = slot3 * 0.2
 	slot7 = slot7 - slot8
@@ -494,7 +641,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 36-37, warpins: 1 ---
+	--- BLOCK #5 35-36, warpins: 1 ---
 	slot7 = slot6.x
 	slot0.endX = slot7
 	--- END OF BLOCK #5 ---
@@ -502,10 +649,9 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 38-49, warpins: 2 ---
+	--- BLOCK #6 37-47, warpins: 2 ---
 	slot7 = slot2.eModel
-	slot7 = slot7.itemComponent
-	slot7 = slot7.model
+	slot7 = slot7.itemModel
 	slot7 = slot7.transform
 	slot8 = Quaternion
 	slot8 = slot8.Euler
@@ -522,9 +668,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.onSwipeModel = slot9
+slot6.onSwipeModel = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = -360
 	--- END OF BLOCK #0 ---
@@ -599,9 +745,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.parseAngle = slot9
+slot6.parseAngle = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -661,13 +807,12 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 19-46, warpins: 1 ---
+	--- BLOCK #5 19-43, warpins: 1 ---
 	slot3 = slot0.models
 	slot3 = slot3[slot1]
 	slot3 = slot3.eModel
-	slot3 = slot3.transform
 	slot5 = slot3
-	slot3 = slot3.SetParent
+	slot3 = slot3.SetTransformParent
 	slot6 = slot0.modelContainer
 
 	slot3(slot5, slot6)
@@ -675,10 +820,11 @@ slot9 = function(slot0, slot1, slot2)
 	slot3 = slot0.models
 	slot3 = slot3[slot1]
 	slot3 = slot3.eModel
-	slot3 = slot3.transform
-	slot4 = Vector3
-	slot4 = slot4.zero
-	slot3.localPosition = slot4
+	slot5 = slot3
+	slot3 = slot3.SetTransformLocalPosition
+
+	slot3(slot5)
+
 	slot3 = slot0.models
 	slot3 = slot3[slot1]
 	slot5 = slot3
@@ -690,8 +836,7 @@ slot9 = function(slot0, slot1, slot2)
 	slot3 = slot0.models
 	slot3 = slot3[slot1]
 	slot3 = slot3.eModel
-	slot3 = slot3.itemComponent
-	slot3 = slot3.model
+	slot3 = slot3.itemModel
 	--- END OF BLOCK #5 ---
 
 	slot3 = if slot3 then
@@ -701,12 +846,11 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 47-78, warpins: 1 ---
+	--- BLOCK #6 44-73, warpins: 1 ---
 	slot3 = slot0.models
 	slot3 = slot3[slot1]
 	slot3 = slot3.eModel
-	slot3 = slot3.itemComponent
-	slot3 = slot3.model
+	slot3 = slot3.itemModel
 	slot3 = slot3.transform
 	slot4 = Vector3
 	slot4 = slot4.New
@@ -721,8 +865,7 @@ slot9 = function(slot0, slot1, slot2)
 	slot3 = slot0.models
 	slot3 = slot3[slot1]
 	slot3 = slot3.eModel
-	slot3 = slot3.itemComponent
-	slot3 = slot3.model
+	slot3 = slot3.itemModel
 	slot3 = slot3.transform
 	slot4 = Quaternion
 	slot4 = slot4.Euler
@@ -739,7 +882,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 79-82, warpins: 3 ---
+	--- BLOCK #7 74-77, warpins: 3 ---
 	slot5 = slot0
 	slot3 = slot0.initGestures
 
@@ -752,9 +895,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot5.showOldModel = slot9
+slot6.showOldModel = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -811,9 +954,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot5.hideOldModel = slot9
+slot6.hideOldModel = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.hideOldModel
@@ -828,9 +971,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.hideCurModel = slot9
+slot6.hideCurModel = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -850,9 +993,10 @@ slot9 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 13-15, warpins: 1 ---
+	--- BLOCK #1 13-16, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -861,7 +1005,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-17, warpins: 2 ---
+	--- BLOCK #2 17-18, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -869,7 +1013,7 @@ slot9 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 18-25, warpins: 1 ---
+	--- BLOCK #3 19-32, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.clear
 	slot3 = slot0.models
@@ -881,6 +1025,14 @@ slot9 = function(slot0)
 
 	slot1(slot3)
 
+	slot3 = slot0
+	slot1 = slot0.setGestureOptions
+	slot4 = nil
+	slot5 = false
+	slot6 = nil
+
+	slot1(slot3, slot4, slot5, slot6)
+
 	return
 	--- END OF BLOCK #3 ---
 
@@ -888,9 +1040,9 @@ slot9 = function(slot0)
 
 end
 
-slot5.onDestroy = slot9
+slot6.onDestroy = slot10
 
-return slot5
+return slot6
 --- END OF BLOCK #0 ---
 
 

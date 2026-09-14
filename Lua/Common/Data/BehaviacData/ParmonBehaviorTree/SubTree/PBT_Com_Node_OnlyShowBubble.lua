@@ -16,16 +16,16 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = "",
-	name = "tEmojiBubbleKey",
 	value = "",
+	name = "tEmojiBubbleKey",
+	const = "",
 	type = "string"
 }
 slot4[1] = slot5
 slot5 = {
-	const = 5,
-	name = "tTimeout",
 	value = "5",
+	name = "tTimeout",
+	const = 5,
 	type = "float"
 }
 slot4[2] = slot5

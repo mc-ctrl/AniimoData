@@ -860,8 +860,8 @@ slot9 = function(slot0, slot1, slot2, slot3)
 	slot7 = slot5
 	slot5 = slot5.onSetInviteState
 	slot8 = {
-		mode = 1,
-		state = "InviteShow"
+		state = "InviteShow",
+		mode = 1
 	}
 	slot8.endTime = slot3
 	slot9 = slot4.secondCache

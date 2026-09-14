@@ -8,30 +8,30 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/PBT_AlertStare",
-	agenttype = "CombatAgent",
 	version = 7,
+	agenttype = "CombatAgent",
 	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tSensorTgtId",
 	const = 0,
+	name = "tSensorTgtId",
 	value = "0",
 	type = "int"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tMaxTime",
 	const = 0,
+	name = "tMaxTime",
 	value = "0",
 	type = "float"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tRandomWaitTime",
 	const = 0,
+	name = "tRandomWaitTime",
 	value = "0",
 	type = "float"
 }
@@ -47,11 +47,11 @@ slot5 = {}
 slot4.properties = slot5
 slot5 = {}
 slot6 = {
+	effector = true,
+	precondition = false,
 	transition = false,
 	id = "10",
-	class = "Effector",
-	effector = true,
-	precondition = false
+	class = "Effector"
 }
 slot7 = {}
 slot8 = {

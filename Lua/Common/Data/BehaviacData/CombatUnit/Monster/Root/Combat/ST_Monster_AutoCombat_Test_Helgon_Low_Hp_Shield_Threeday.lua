@@ -8,18 +8,18 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	agenttype = "PuppetAgent",
-	useForRoute = false,
 	version = 5,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Test_Helgon_Low_Hp_Shield_Threeday"
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Test_Helgon_Low_Hp_Shield_Threeday",
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 1,
+	name = "bubbleCount",
 	type = "int",
 	value = "1",
-	name = "bubbleCount"
+	const = 1
 }
 slot4[1] = slot5
 slot3.pars = slot4

@@ -42,8 +42,8 @@ slot12 = slot2.LightClass
 slot14 = "HomeCampStationSettingCtrl"
 slot15 = slot3
 slot12 = slot12(slot14, slot15)
-slot13 = 1
-slot14 = 0.2
+slot13 = 0.55
+slot14 = 0.25
 slot15 = {}
 slot12.messages = slot15
 

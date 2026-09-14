@@ -1,4 +1,4 @@
---- BLOCK #0 1-12, warpins: 1 ---
+--- BLOCK #0 1-14, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -8,44 +8,103 @@ slot1 = slot1(slot3)
 slot2 = require
 slot4 = "Core.Framework.Global"
 slot2 = slot2(slot4)
-slot3 = jit
+
+slot3 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = rawget
+	slot2 = _G
+	slot3 = "UNITY_PS5"
+	slot0 = slot0(slot2, slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot0 == false then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot1 = jit
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 11-11, warpins: 0 ---
+	slot1 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-12, warpins: 3 ---
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot4 = slot3
+slot4 = slot4()
 --- END OF BLOCK #0 ---
 
-slot3 = if slot3 then
+slot4 = if slot4 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 13-15, warpins: 1 ---
-slot3 = require
-slot5 = "jit.profile"
-slot3 = slot3(slot5)
+--- BLOCK #1 15-19, warpins: 1 ---
+slot4 = require
+slot6 = "jit.profile"
+slot4 = slot4(slot6)
 --- END OF BLOCK #1 ---
 
-FLOW; TARGET BLOCK #2
+slot4 = if not slot4 then
+JUMP TO BLOCK #2
+else
+JUMP TO BLOCK #3
+end
 
 
---- BLOCK #2 16-112, warpins: 2 ---
-slot3 = {}
-slot4 = {}
-slot5 = {}
+--- BLOCK #2 20-20, warpins: 2 ---
+slot4 = nil
+--- END OF BLOCK #2 ---
+
+FLOW; TARGET BLOCK #3
+
+
+--- BLOCK #3 21-117, warpins: 2 ---
+slot5 = nil
 slot6 = {}
 slot7 = {}
-slot8, slot9, slot10, slot11, slot12, slot13, slot14, slot15 = nil
-slot16 = false
-slot17 = {}
-slot18 = {}
-slot19 = setmetatable
-slot21 = slot17
-slot22 = {
+slot8 = {}
+slot9 = {}
+slot10 = {}
+slot11, slot12, slot13, slot14, slot15, slot16, slot17, slot18 = nil
+slot19 = false
+slot20 = {}
+slot21 = {}
+slot22 = setmetatable
+slot24 = slot20
+slot25 = {
 	__mode = "k"
 }
 
-slot19(slot21, slot22)
+slot22(slot24, slot25)
 
-slot19 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = _names
 	slot1 = slot1[slot0]
@@ -205,7 +264,7 @@ slot19 = function(slot0)
 
 end
 
-slot20 = function(slot0, slot1, slot2, slot3, slot4)
+slot23 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = assert
 	slot7 = type
@@ -216,39 +275,75 @@ slot20 = function(slot0, slot1, slot2, slot3, slot4)
 	if slot7 ~= "function" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot7 = false
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 9-9, warpins: 1 ---
-	slot7 = true
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 10-13, warpins: 2 ---
-	slot5(slot7)
-
-	slot5 = nil
-	--- END OF BLOCK #3 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 14-21, warpins: 1 ---
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot7 = type
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #1 ---
+
+	if slot7 == "table" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 12-16, warpins: 1 ---
+	slot7 = getmetatable
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 17-21, warpins: 1 ---
+	slot7 = getmetatable
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	slot7 = slot7.__call
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 22-23, warpins: 1 ---
+	slot7 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 24-24, warpins: 1 ---
+	slot7 = true
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 25-28, warpins: 4 ---
+	slot5(slot7)
+
+	slot5 = nil
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-36, warpins: 1 ---
 	slot6 = phonestcore
 	slot6 = slot6.recoverTimer
 	slot8 = slot0
@@ -256,54 +351,54 @@ slot20 = function(slot0, slot1, slot2, slot3, slot4)
 	slot10 = slot4
 	slot6 = slot6(slot8, slot9, slot10)
 	slot5 = slot6
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #5 22-27, warpins: 1 ---
+	--- BLOCK #8 37-42, warpins: 1 ---
 	slot6 = phonestcore
 	slot6 = slot6.addTimer
 	slot8 = slot0
 	slot9 = slot1
 	slot6 = slot6(slot8, slot9)
 	slot5 = slot6
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 28-31, warpins: 2 ---
+	--- BLOCK #9 43-46, warpins: 2 ---
 	slot6 = timerIdToHandler
 	slot6[slot5] = slot2
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 	slot0 = if slot0 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 32-34, warpins: 1 ---
+	--- BLOCK #10 47-49, warpins: 1 ---
 	slot6 = timerIdRepeated
 	slot7 = true
 	slot6[slot5] = slot7
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #8 35-35, warpins: 2 ---
+	--- BLOCK #11 50-50, warpins: 2 ---
 	return slot5
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot21 = function(slot0, slot1, ...)
+slot24 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = addTimerHook
 	--- END OF BLOCK #0 ---
@@ -348,9 +443,9 @@ slot21 = function(slot0, slot1, ...)
 
 end
 
-slot1.addTimer = slot21
+slot1.addTimer = slot24
 
-slot21 = function(slot0, slot1, ...)
+slot24 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = addRepeatTimerHook
 	--- END OF BLOCK #0 ---
@@ -395,9 +490,9 @@ slot21 = function(slot0, slot1, ...)
 
 end
 
-slot1.addRepeatTimer = slot21
+slot1.addRepeatTimer = slot24
 
-slot21 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -492,9 +587,9 @@ slot21 = function(slot0)
 
 end
 
-slot1.removeTimer = slot21
+slot1.removeTimer = slot24
 
-slot21 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	addTimerHook = slot0
 	addRepeatTimerHook = slot1
@@ -507,9 +602,9 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot1.setHook = slot21
+slot1.setHook = slot24
 
-slot21 = function(slot0, slot1, slot2, slot3, ...)
+slot24 = function(slot0, slot1, slot2, slot3, ...)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -605,9 +700,9 @@ slot21 = function(slot0, slot1, slot2, slot3, ...)
 
 end
 
-slot1.recoverTimer = slot21
+slot1.recoverTimer = slot24
 
-slot21 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = timerIdToHandler
 	slot1 = slot1[slot0]
@@ -643,9 +738,9 @@ slot21 = function(slot0)
 
 end
 
-slot1.checkTimerValid = slot21
+slot1.checkTimerValid = slot24
 
-slot21 = function()
+slot24 = function()
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0 = timerIdToHandler
 
@@ -656,9 +751,9 @@ slot21 = function()
 
 end
 
-slot1.getTimerIdToHandler = slot21
+slot1.getTimerIdToHandler = slot24
 
-slot21 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = phonestcore
 	slot1 = slot1.getTimerLeftMs
@@ -671,9 +766,9 @@ slot21 = function(slot0)
 
 end
 
-slot1.getSerializableTimerLeftMs = slot21
+slot1.getSerializableTimerLeftMs = slot24
 
-slot21 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -704,7 +799,7 @@ slot21 = function(slot0, slot1, slot2)
 
 end
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = phonestcore
 	slot1 = slot1.addNextFrameCb
@@ -723,9 +818,9 @@ slot22 = function(slot0)
 
 end
 
-slot1.addNextFrameCb = slot22
+slot1.addNextFrameCb = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = phonestcore
 	slot1 = slot1.addRepeatNextFrameCb
@@ -740,9 +835,9 @@ slot22 = function(slot0)
 
 end
 
-slot1.addRepeatNextFrameCb = slot22
+slot1.addRepeatNextFrameCb = slot25
 
-slot22 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #0 ---
@@ -812,9 +907,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot1.addSpecificFrameCb = slot22
+slot1.addSpecificFrameCb = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = repeatFrameIdToHandler
 	slot1 = slot1[slot0]
@@ -895,9 +990,9 @@ slot22 = function(slot0)
 
 end
 
-slot1.delFrameCb = slot22
+slot1.delFrameCb = slot25
 
-slot22 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = timerIdToHandler
 	slot1 = slot1[slot0]
@@ -1020,7 +1115,7 @@ slot22 = function(slot0)
 
 end
 
-slot23 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = timerIdToHandler
 	slot1 = slot1[slot0]
@@ -1124,14 +1219,14 @@ slot23 = function(slot0)
 
 end
 
-slot24 = slot23
-slot25 = slot2
-slot27 = "TimerManagerHandler"
-slot28 = slot23
+slot27 = slot26
+slot28 = slot2
+slot30 = "TimerManagerHandler"
+slot31 = slot26
 
-slot25(slot27, slot28)
+slot28(slot30, slot31)
 
-slot25 = function(slot0)
+slot28 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot2 = #slot0
@@ -1307,7 +1402,7 @@ slot25 = function(slot0)
 
 end
 
-slot26 = function(slot0)
+slot29 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot2 = #slot0
@@ -1464,15 +1559,15 @@ slot26 = function(slot0)
 
 end
 
-slot27 = slot2
-slot29 = "TimersCallbackHandler"
-slot30 = slot26
+slot30 = slot2
+slot32 = "TimersCallbackHandler"
+slot33 = slot29
 
-slot27(slot29, slot30)
+slot30(slot32, slot33)
 
-slot27 = slot26
+slot30 = slot29
 
-slot28 = function(slot0)
+slot31 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = frameIdToHandler
 	slot1 = slot1[slot0]
@@ -1605,7 +1700,7 @@ slot28 = function(slot0)
 
 end
 
-slot29 = function(slot0)
+slot32 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = frameIdToHandler
 	slot1 = slot1[slot0]
@@ -1719,15 +1814,15 @@ slot29 = function(slot0)
 
 end
 
-slot30 = slot2
-slot32 = "NextFrameHandler"
-slot33 = slot29
+slot33 = slot2
+slot35 = "NextFrameHandler"
+slot36 = slot32
 
-slot30(slot32, slot33)
+slot33(slot35, slot36)
 
-slot30 = slot29
+slot33 = slot32
 
-slot31 = function(slot0)
+slot34 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = #slot0
 	slot2 = _G_IsDebugMode
@@ -1913,7 +2008,7 @@ slot31 = function(slot0)
 
 end
 
-slot32 = function(slot0)
+slot35 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = #slot0
 	slot2 = _G_IsDebugMode
@@ -2080,15 +2175,15 @@ slot32 = function(slot0)
 
 end
 
-slot33 = slot2
-slot35 = "NextFramesHandler"
-slot36 = slot32
+slot36 = slot2
+slot38 = "NextFramesHandler"
+slot39 = slot35
 
-slot33(slot35, slot36)
+slot36(slot38, slot39)
 
-slot33 = slot32
+slot36 = slot35
 
-slot34 = function()
+slot37 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pairs
 	slot2 = repeatFrameIdToHandler
@@ -2180,7 +2275,7 @@ slot34 = function()
 
 end
 
-slot35 = function()
+slot38 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = pairs
 	slot2 = repeatFrameIdToHandler
@@ -2253,14 +2348,14 @@ slot35 = function()
 
 end
 
-slot36 = slot35
-slot37 = slot2
-slot39 = "RepeatFrameHandler"
-slot40 = slot35
+slot39 = slot38
+slot40 = slot2
+slot42 = "RepeatFrameHandler"
+slot43 = slot38
 
-slot37(slot39, slot40)
+slot40(slot42, slot43)
 
-slot37 = {
+slot40 = {
 	"NextFrameCallbackManager",
 	"ServiceManager",
 	"TimerManager",
@@ -2269,7 +2364,7 @@ slot37 = {
 	"5"
 }
 
-slot38 = function(slot0)
+slot41 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = SampleUtils
 	--- END OF BLOCK #0 ---
@@ -2319,13 +2414,13 @@ slot38 = function(slot0)
 
 end
 
-slot39 = slot2
-slot41 = "LuaBeginSample"
-slot42 = slot38
+slot42 = slot2
+slot44 = "LuaBeginSample"
+slot45 = slot41
 
-slot39(slot41, slot42)
+slot42(slot44, slot45)
 
-slot39 = function()
+slot42 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = SampleUtils
 	--- END OF BLOCK #0 ---
@@ -2356,13 +2451,13 @@ slot39 = function()
 
 end
 
-slot40 = slot2
-slot42 = "LuaEndSample"
-slot43 = slot39
+slot43 = slot2
+slot45 = "LuaEndSample"
+slot46 = slot42
 
-slot40(slot42, slot43)
+slot43(slot45, slot46)
 
-slot40 = function()
+slot43 = function()
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot0 = _G
 	slot0 = slot0._G_IsDebugMode
@@ -2396,9 +2491,9 @@ slot40 = function()
 
 end
 
-slot1.init = slot40
+slot1.init = slot43
 
-slot40 = function(slot0, slot1)
+slot43 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = timerIdToHandler
 	slot2 = slot2[slot0]
@@ -2435,9 +2530,9 @@ slot40 = function(slot0, slot1)
 
 end
 
-slot1.shiftTimer = slot40
+slot1.shiftTimer = slot43
 
-slot40 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = phonestcore
 	slot1 = slot1.shiftAllTimer
@@ -2452,9 +2547,9 @@ slot40 = function(slot0)
 
 end
 
-slot1.shiftAllTimer = slot40
+slot1.shiftAllTimer = slot43
 
-slot40 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -2498,22 +2593,21 @@ slot40 = function(slot0)
 
 end
 
-slot1.disposeHandler = slot40
-slot40 = jit
---- END OF BLOCK #2 ---
+slot1.disposeHandler = slot43
+--- END OF BLOCK #3 ---
 
-slot40 = if slot40 then
-JUMP TO BLOCK #3
-else
+slot4 = if slot4 then
 JUMP TO BLOCK #4
+else
+JUMP TO BLOCK #5
 end
 
 
---- BLOCK #3 113-122, warpins: 1 ---
-slot40 = {}
-slot1.stackSamples = slot40
+--- BLOCK #4 118-127, warpins: 1 ---
+slot43 = {}
+slot1.stackSamples = slot43
 
-slot40 = function(slot0, slot1, slot2)
+slot43 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = profile
 	slot3 = slot3.dumpstack
@@ -2553,7 +2647,7 @@ slot40 = function(slot0, slot1, slot2)
 
 end
 
-slot41 = function()
+slot44 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = profile
 	slot0 = slot0.start
@@ -2569,9 +2663,9 @@ slot41 = function()
 
 end
 
-slot1.startJitProfile = slot41
+slot1.startJitProfile = slot44
 
-slot41 = function()
+slot44 = function()
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = profile
 	slot0 = slot0.stop
@@ -2585,9 +2679,9 @@ slot41 = function()
 
 end
 
-slot1.stopJitProfile = slot41
+slot1.stopJitProfile = slot44
 
-slot41 = function()
+slot44 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0 = TimerManager
 	slot0 = slot0.stackSamples
@@ -2717,16 +2811,20 @@ Stack:
 
 end
 
-slot1.dumpJitProfile = slot41
+slot1.dumpJitProfile = slot44
 
---- END OF BLOCK #3 ---
+--- END OF BLOCK #4 ---
 
-FLOW; TARGET BLOCK #4
+FLOW; TARGET BLOCK #5
 
 
---- BLOCK #4 123-126, warpins: 2 ---
-slot40 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
+--- BLOCK #5 128-131, warpins: 2 ---
+slot43 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = require
+	slot3 = "Utils.SampleUtils"
+	slot1 = slot1(slot3)
+	SampleUtils = slot1
 	--- END OF BLOCK #0 ---
 
 	slot0 = if slot0 then
@@ -2736,7 +2834,7 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #1 3-5, warpins: 1 ---
+	--- BLOCK #1 7-9, warpins: 1 ---
 	slot1 = frameHandleWithSample
 	--- END OF BLOCK #1 ---
 
@@ -2747,14 +2845,14 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #2 6-6, warpins: 2 ---
+	--- BLOCK #2 10-10, warpins: 2 ---
 	slot1 = frameHandleNoSample
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 7-12, warpins: 2 ---
+	--- BLOCK #3 11-16, warpins: 2 ---
 	RepeatFrameHandler = slot1
 	slot1 = _G
 	slot2 = RepeatFrameHandler
@@ -2768,7 +2866,7 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #4 13-15, warpins: 1 ---
+	--- BLOCK #4 17-19, warpins: 1 ---
 	slot1 = TimerManagerHandlerWithSample
 	--- END OF BLOCK #4 ---
 
@@ -2779,14 +2877,14 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #5 16-16, warpins: 2 ---
+	--- BLOCK #5 20-20, warpins: 2 ---
 	slot1 = TimerManagerHandlerNoSample
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 17-22, warpins: 2 ---
+	--- BLOCK #6 21-26, warpins: 2 ---
 	TimerManagerHandler = slot1
 	slot1 = _G
 	slot2 = TimerManagerHandler
@@ -2800,7 +2898,7 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #7 23-25, warpins: 1 ---
+	--- BLOCK #7 27-29, warpins: 1 ---
 	slot1 = NextFrameHandlerWithSample
 	--- END OF BLOCK #7 ---
 
@@ -2811,14 +2909,14 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #8 26-26, warpins: 2 ---
+	--- BLOCK #8 30-30, warpins: 2 ---
 	slot1 = NextFrameHandlerNoSample
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 27-32, warpins: 2 ---
+	--- BLOCK #9 31-36, warpins: 2 ---
 	NextFrameHandler = slot1
 	slot1 = _G
 	slot2 = NextFrameHandler
@@ -2832,7 +2930,7 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #10 33-35, warpins: 1 ---
+	--- BLOCK #10 37-39, warpins: 1 ---
 	slot1 = TimersCallbackHandlerWithSample
 	--- END OF BLOCK #10 ---
 
@@ -2843,14 +2941,14 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #11 36-36, warpins: 2 ---
+	--- BLOCK #11 40-40, warpins: 2 ---
 	slot1 = TimersCallbackHandlerNoSample
 	--- END OF BLOCK #11 ---
 
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 37-42, warpins: 2 ---
+	--- BLOCK #12 41-46, warpins: 2 ---
 	TimersCallbackHandler = slot1
 	slot1 = _G
 	slot2 = TimersCallbackHandler
@@ -2864,7 +2962,7 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #13 43-45, warpins: 1 ---
+	--- BLOCK #13 47-49, warpins: 1 ---
 	slot1 = NextFramesHandlerWithSample
 	--- END OF BLOCK #13 ---
 
@@ -2875,14 +2973,14 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #14 46-46, warpins: 2 ---
+	--- BLOCK #14 50-50, warpins: 2 ---
 	slot1 = NextFramesHandlerNoSample
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 47-59, warpins: 2 ---
+	--- BLOCK #15 51-63, warpins: 2 ---
 	NextFramesHandler = slot1
 	slot1 = _G
 	slot2 = NextFramesHandler
@@ -2903,7 +3001,7 @@ slot40 = function(slot0)
 	end
 
 
-	--- BLOCK #16 60-61, warpins: 1 ---
+	--- BLOCK #16 64-65, warpins: 1 ---
 	slot3 = slot2
 
 	slot3()
@@ -2913,7 +3011,7 @@ slot40 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 62-62, warpins: 2 ---
+	--- BLOCK #17 66-66, warpins: 2 ---
 	return
 	--- END OF BLOCK #17 ---
 
@@ -2921,10 +3019,10 @@ slot40 = function(slot0)
 
 end
 
-slot1.enableSample = slot40
+slot1.enableSample = slot43
 
 return slot1
---- END OF BLOCK #4 ---
+--- END OF BLOCK #5 ---
 
 
 

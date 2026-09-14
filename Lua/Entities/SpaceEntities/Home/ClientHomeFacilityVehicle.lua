@@ -28,7 +28,7 @@ slot10 = slot6
 slot7(slot9, slot10)
 
 slot7 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = ClientHomeFacilityVehicle
 	slot2 = slot2.super
 	slot2 = slot2.ctor
@@ -36,6 +36,9 @@ slot7 = function(slot0, slot1)
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot2 = false
+	slot0.isClientEnt = slot2
 
 	return
 	--- END OF BLOCK #0 ---

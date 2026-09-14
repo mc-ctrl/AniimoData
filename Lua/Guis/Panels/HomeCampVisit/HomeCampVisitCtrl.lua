@@ -61,8 +61,8 @@ slot17 = {
 	Switch = 2
 }
 slot18 = {
-	Friend = 1,
-	All = 2
+	All = 2,
+	Friend = 1
 }
 slot19 = 20
 
@@ -1565,7 +1565,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 98-108, warpins: 2 ---
+	--- BLOCK #13 98-112, warpins: 2 ---
 	slot21 = slot8
 	slot19 = slot8.TryChangePage
 	slot22 = "State"
@@ -1574,9 +1574,13 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	slot19(slot21, slot22, slot23)
 
 	slot19 = slot3.friendShipLevel
-	slot20 = AvatarPresetData
-	slot21 = slot14.avatarPresetKey
-	slot20 = slot20[slot21]
+	slot20 = pg
+	slot20 = slot20.game
+	slot20 = slot20.avatar
+	slot22 = slot20
+	slot20 = slot20.getAvatarPresetData
+	slot23 = slot14.avatarPresetKey
+	slot20 = slot20(slot22, slot23)
 	--- END OF BLOCK #13 ---
 
 	slot20 = if not slot20 then
@@ -1586,14 +1590,14 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #14 109-109, warpins: 1 ---
+	--- BLOCK #14 113-113, warpins: 1 ---
 	slot20 = {}
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 110-112, warpins: 2 ---
+	--- BLOCK #15 114-116, warpins: 2 ---
 	slot21 = slot20.templateId
 	--- END OF BLOCK #15 ---
 
@@ -1604,14 +1608,14 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #16 113-113, warpins: 1 ---
+	--- BLOCK #16 117-117, warpins: 1 ---
 	slot21 = 0
 	--- END OF BLOCK #16 ---
 
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 114-115, warpins: 2 ---
+	--- BLOCK #17 118-119, warpins: 2 ---
 	--- END OF BLOCK #17 ---
 
 	if slot21 == 3 then
@@ -1621,7 +1625,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #18 116-121, warpins: 1 ---
+	--- BLOCK #18 120-125, warpins: 1 ---
 	slot24 = slot1
 	slot22 = slot1.TryChangePage
 	slot25 = "Gender"
@@ -1634,7 +1638,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #19 122-123, warpins: 1 ---
+	--- BLOCK #19 126-127, warpins: 1 ---
 	--- END OF BLOCK #19 ---
 
 	if slot21 == 4 then
@@ -1644,7 +1648,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #20 124-129, warpins: 1 ---
+	--- BLOCK #20 128-133, warpins: 1 ---
 	slot24 = slot1
 	slot22 = slot1.TryChangePage
 	slot25 = "Gender"
@@ -1657,7 +1661,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #21 130-134, warpins: 1 ---
+	--- BLOCK #21 134-138, warpins: 1 ---
 	slot24 = slot1
 	slot22 = slot1.TryChangePage
 	slot25 = "Gender"
@@ -1670,7 +1674,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 135-136, warpins: 3 ---
+	--- BLOCK #22 139-140, warpins: 3 ---
 	--- END OF BLOCK #22 ---
 
 	slot22 = if slot19 then
@@ -1680,7 +1684,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #23 137-138, warpins: 1 ---
+	--- BLOCK #23 141-142, warpins: 1 ---
 	slot22 = FriendshipLevelData
 	slot22 = slot22[slot19]
 	--- END OF BLOCK #23 ---
@@ -1688,7 +1692,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 139-144, warpins: 2 ---
+	--- BLOCK #24 143-148, warpins: 2 ---
 	slot25 = slot9
 	slot23 = slot9.SetActive
 	slot26 = slot22
@@ -1704,7 +1708,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #25 145-148, warpins: 1 ---
+	--- BLOCK #25 149-152, warpins: 1 ---
 	slot23 = FriendshipLevelData
 	slot23 = slot23[slot19]
 	slot23 = slot23.levelIcon
@@ -1714,7 +1718,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 149-164, warpins: 2 ---
+	--- BLOCK #26 153-168, warpins: 2 ---
 	slot23 = ClientTextUtils
 	slot23 = slot23.setText
 	slot25 = slot11
@@ -1740,7 +1744,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #27 165-173, warpins: 1 ---
+	--- BLOCK #27 169-177, warpins: 1 ---
 	slot25 = pg
 	slot25 = slot25.getGameString
 	slot27 = "HOMECAR_PRIVATE_STATION"
@@ -1754,7 +1758,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #28 174-176, warpins: 1 ---
+	--- BLOCK #28 178-180, warpins: 1 ---
 	slot25 = AddressDataConst
 	slot25 = slot25.HOME_CAMP_PUBLIC_ICON
 	slot13.url = slot25
@@ -1763,7 +1767,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 177-179, warpins: 2 ---
+	--- BLOCK #29 181-183, warpins: 2 ---
 	slot25 = slot0.isSwitch
 	--- END OF BLOCK #29 ---
 
@@ -1774,7 +1778,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #30 180-182, warpins: 1 ---
+	--- BLOCK #30 184-186, warpins: 1 ---
 	slot25 = slot0.maxCampNum
 	--- END OF BLOCK #30 ---
 
@@ -1785,7 +1789,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #31 183-197, warpins: 1 ---
+	--- BLOCK #31 187-201, warpins: 1 ---
 	slot25 = ClientTextUtils
 	slot25 = slot25.setText
 	slot27 = slot12
@@ -1807,7 +1811,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #32 198-212, warpins: 1 ---
+	--- BLOCK #32 202-216, warpins: 1 ---
 	slot25 = ClientTextUtils
 	slot25 = slot25.setText
 	slot27 = slot12
@@ -1829,7 +1833,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #33 213-226, warpins: 1 ---
+	--- BLOCK #33 217-230, warpins: 1 ---
 	slot25 = ClientTextUtils
 	slot25 = slot25.setText
 	slot27 = slot12
@@ -1852,7 +1856,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 227-230, warpins: 3 ---
+	--- BLOCK #34 231-234, warpins: 3 ---
 	slot25 = function()
 		--- BLOCK #0 1-11, warpins: 1 ---
 		slot0 = self
@@ -1884,7 +1888,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #35 231-233, warpins: 1 ---
+	--- BLOCK #35 235-237, warpins: 1 ---
 	slot25 = slot16.rendererFriendCampVisitButton
 	--- END OF BLOCK #35 ---
 
@@ -1895,7 +1899,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #36 234-240, warpins: 1 ---
+	--- BLOCK #36 238-244, warpins: 1 ---
 	slot25 = slot16.rendererFriendCampVisitButton
 	slot27 = slot0
 	slot28 = slot1
@@ -1910,7 +1914,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 241-251, warpins: 3 ---
+	--- BLOCK #37 245-255, warpins: 3 ---
 	slot27 = slot10
 	slot25 = slot10.GetComponent
 	slot28 = "ObjectReference"
@@ -1929,7 +1933,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #38 252-260, warpins: 1 ---
+	--- BLOCK #38 256-264, warpins: 1 ---
 	slot26 = ClientTextUtils
 	slot26 = slot26.setText
 	slot28 = slot25
@@ -1945,7 +1949,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #40
 
 
-	--- BLOCK #39 261-268, warpins: 1 ---
+	--- BLOCK #39 265-272, warpins: 1 ---
 	slot26 = ClientTextUtils
 	slot26 = slot26.setText
 	slot28 = slot25
@@ -1961,7 +1965,7 @@ slot20 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #40 269-270, warpins: 2 ---
+	--- BLOCK #40 273-274, warpins: 2 ---
 	return
 	--- END OF BLOCK #40 ---
 

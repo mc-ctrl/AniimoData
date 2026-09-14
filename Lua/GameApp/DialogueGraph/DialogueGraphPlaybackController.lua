@@ -438,11 +438,40 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-16, warpins: 2 ---
+	--- BLOCK #2 5-8, warpins: 2 ---
 	slot0.playbackState = slot1
+	slot2 = slot0.cmd
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 9-12, warpins: 1 ---
+	slot2 = slot0.cmd
+	slot2 = slot2.graphItem
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-15, warpins: 1 ---
 	slot2 = slot0.cmd
 	slot2 = slot2.graphItem
 	slot2.playbackState = slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-23, warpins: 3 ---
 	slot2 = facade
 	slot4 = slot2
 	slot2 = slot2.sendMsgToUI
@@ -453,7 +482,7 @@ slot12 = function(slot0, slot1)
 	slot2(slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 

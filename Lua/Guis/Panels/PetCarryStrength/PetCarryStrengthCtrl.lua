@@ -1,4 +1,4 @@
---- BLOCK #0 1-101, warpins: 1 ---
+--- BLOCK #0 1-108, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -19,46 +19,49 @@ slot6 = "PetCarryStrengthCtrl"
 slot7 = slot3
 slot4 = slot4(slot6, slot7)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Core.Timer.TimerManager"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Const.ItemConst"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Panels.PetCarryStrength.Helper.CarryStrengthChecker"
+slot9 = "Common.Const.ItemConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.LuaUIUtils"
+slot10 = "Guis.Panels.PetCarryStrength.Helper.CarryStrengthChecker"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.UIConst"
+slot11 = "Utils.LuaUIUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Guis.Panels.PetCarryStrength.Component.PetCarrySelectComponent"
+slot12 = "Const.UIConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Common.CallbackHandler"
+slot13 = "Guis.Panels.PetCarryStrength.Component.PetCarrySelectComponent"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.HotkeyConst"
+slot14 = "Core.Common.CallbackHandler"
 slot12 = slot12(slot14)
-slot13 = CS
-slot13 = slot13.FunPlus
-slot13 = slot13.WorldX
-slot13 = slot13.GUIS
-slot13 = slot13.Panels
-slot13 = slot13.Utils
-slot13 = slot13.KeyBindingPro
-slot14 = {}
-slot15 = slot1.CARRY_UPGRADE
-slot16 = {
+slot13 = require
+slot15 = "Const.HotkeyConst"
+slot13 = slot13(slot15)
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.GUIS
+slot14 = slot14.Panels
+slot14 = slot14.Utils
+slot14 = slot14.KeyBindingPro
+slot15 = {}
+slot16 = slot1.CARRY_UPGRADE
+slot17 = {
 	"event_CarryUpgrade",
 	true
 }
-slot14[slot15] = slot16
-slot4.messages = slot14
+slot15[slot16] = slot17
+slot4.messages = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -82,10 +85,10 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot14
+slot4.onCreate = slot15
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-62, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-66, warpins: 1 ---
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
 	slot3 = slot0.view
@@ -234,12 +237,19 @@ slot14 = function(slot0)
 	slot2 = slot2.selector
 
 	slot3 = function(slot0)
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #0 1-12, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.model
 		slot3 = slot1
 		slot1 = slot1.setFilterOption
 		slot4 = slot0.selectedIndex
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.onRefreshSelectorWhenSelected
+		slot4 = slot0
 
 		slot1(slot3, slot4)
 
@@ -251,6 +261,26 @@ slot14 = function(slot0)
 	end
 
 	slot2.luaSelectedChanged = slot3
+	slot2 = slot0.view
+	slot2 = slot2.selector
+
+	slot3 = function(slot0, slot1)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.onRenderSelectorItem
+		slot5 = slot1
+
+		slot2(slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaRenderPopup = slot3
 	slot2 = slot0.view
 	slot2 = slot2.btnAdd
 
@@ -317,9 +347,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.addListener = slot14
+slot4.addListener = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -355,9 +385,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onNavFocusChange = slot14
+slot4.onNavFocusChange = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -583,9 +613,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshConsoleBarState = slot14
+slot4.refreshConsoleBarState = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -708,9 +738,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot14
+slot4.onOpen = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = slot0.strengthCarry
 	slot2 = ClientTextUtils
@@ -741,9 +771,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshCurrentCarryView = slot14
+slot4.refreshCurrentCarryView = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.strengthCarry
 	slot2 = slot0.view
@@ -764,9 +794,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.resetDefaultView = slot14
+slot4.resetDefaultView = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.strengthCarry
 	slot2 = slot1.isMaxLv
@@ -835,9 +865,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.resetMaxStateView = slot14
+slot4.resetMaxStateView = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-54, warpins: 1 ---
 	slot1 = slot0.strengthCarry
 	slot2 = slot0.model
@@ -1167,7 +1197,7 @@ slot14 = function(slot0)
 	GO OUT TO BLOCK #21
 
 
-	--- BLOCK #21 164-180, warpins: 1 ---
+	--- BLOCK #21 164-190, warpins: 1 ---
 	slot9 = slot0.model
 	slot11 = slot9
 	slot9 = slot9.getPropertyUpInfo
@@ -1184,6 +1214,72 @@ slot14 = function(slot0)
 
 	slot9(slot11, slot12)
 
+	slot9 = slot0.view
+	slot9 = slot9.listAttribute
+	slot11 = slot9
+	slot9 = slot9.SetActive
+	slot12 = false
+
+	slot9(slot11, slot12)
+
+	slot9 = TimerManager
+	slot9 = slot9.addNextFrameCb
+
+	slot11 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = NotNil
+		slot2 = self
+		slot2 = slot2.view
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 7-13, warpins: 1 ---
+		slot0 = NotNil
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.listAttribute
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 14-20, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		slot0 = slot0.listAttribute
+		slot2 = slot0
+		slot0 = slot0.SetActive
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 21-21, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot9(slot11)
+
 	slot9 = 0
 	--- END OF BLOCK #21 ---
 
@@ -1194,7 +1290,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #22 181-186, warpins: 1 ---
+	--- BLOCK #22 191-196, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getGameString
 	slot11 = "PET_EQUIPMENT_GEM_UPGRADE_CLEAR_BUTTON"
@@ -1208,7 +1304,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #23 187-190, warpins: 2 ---
+	--- BLOCK #23 197-200, warpins: 2 ---
 	slot9 = pg
 	slot9 = slot9.getGameString
 	slot11 = "PET_EQUIPMENT_GEM_UPGRADE_AUTO_ADD_BUTTON"
@@ -1218,7 +1314,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 191-197, warpins: 2 ---
+	--- BLOCK #24 201-208, warpins: 2 ---
 	slot10 = ClientTextUtils
 	slot10 = slot10.setText
 	slot12 = slot0.view
@@ -1234,9 +1330,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshPropertyView = slot14
+slot4.refreshPropertyView = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listSelectItem
@@ -1266,10 +1362,10 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshBtnState = slot14
+slot4.refreshBtnState = slot15
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot15 = function(slot0)
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.getCarryFilterOptions
@@ -1289,6 +1385,12 @@ slot14 = function(slot0)
 	slot3 = slot3.getFilterOption
 	slot3 = slot3(slot5)
 	slot2.selectedIndex = slot3
+	slot4 = slot0
+	slot2 = slot0.onRefreshSelectorWhenSelected
+	slot5 = slot0.view
+	slot5 = slot5.selector
+
+	slot2(slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -1297,9 +1399,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.initSelector = slot14
+slot4.initSelector = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1325,9 +1427,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.refreshSelectCarryView = slot14
+slot4.refreshSelectCarryView = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1425,9 +1527,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.onRenderAttrItem = slot14
+slot4.onRenderAttrItem = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-47, warpins: 1 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.setPropCard
@@ -1561,9 +1663,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.onRenderPropItem = slot14
+slot4.onRenderPropItem = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3)
+slot15 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = false
 	slot1.draggable = slot4
@@ -1593,9 +1695,9 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.onRenderEmptyItem = slot14
+slot4.onRenderEmptyItem = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = slot0.petCarrySelect
 	slot2 = true
@@ -1619,9 +1721,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onBtnAutoSelect = slot14
+slot4.onBtnAutoSelect = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1758,9 +1860,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onBtnStrength = slot14
+slot4.onBtnStrength = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.strengthCarry
 	slot2 = slot1.cLevel
@@ -1782,15 +1884,19 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #1 12-29, warpins: 1 ---
+	--- BLOCK #1 12-33, warpins: 1 ---
 	slot4 = {}
 	slot4.oldLv = slot2
 	slot5 = slot1.cLevel
 	slot4.newLv = slot5
+	slot5 = slot1.itemId
+	slot4.itemId = slot5
 	slot5 = slot0.carryAttrs
 	slot4.carryAttrs = slot5
 	slot5 = slot0.asstAdd
 	slot4.assistAdd = slot5
+	slot5 = slot1.isMaxLv
+	slot4.isMaxLv = slot5
 	slot5 = pg
 	slot5 = slot5.global
 	slot5 = slot5.ui
@@ -1807,7 +1913,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 30-44, warpins: 1 ---
+	--- BLOCK #2 34-48, warpins: 1 ---
 	slot4 = slot0.view
 	slot4 = slot4.expProgress
 	slot5 = slot1.maxExp
@@ -1830,7 +1936,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 45-61, warpins: 2 ---
+	--- BLOCK #3 49-65, warpins: 2 ---
 	slot4 = slot0.model
 	slot6 = slot4
 	slot4 = slot4.clearData
@@ -1874,9 +1980,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.event_CarryUpgrade = slot14
+slot4.event_CarryUpgrade = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.doColseCallback
@@ -1895,9 +2001,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onClosePanel = slot14
+slot4.onClosePanel = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1906,9 +2012,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onHide = slot14
+slot4.onHide = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.doColseCallback
@@ -1934,9 +2040,9 @@ slot14 = function(slot0)
 
 end
 
-slot4.onDestroy = slot14
+slot4.onDestroy = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.closeCallback
 	--- END OF BLOCK #0 ---
@@ -1969,7 +2075,129 @@ slot14 = function(slot0)
 
 end
 
-slot4.doColseCallback = slot14
+slot4.doColseCallback = slot15
+
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot5 = slot0
+		slot3 = slot0.TryChangePage
+		slot6 = "Quality"
+		slot7 = slot2.quality
+
+		slot3(slot5, slot6, slot7)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaRenderItem = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot4.onRenderSelectorItem = slot15
+
+slot15 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot1.selectedIndex
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-6, warpins: 2 ---
+	slot2 = -1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot3 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot2 >= slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #4 10-15, warpins: 1 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getCarryFilterOptions
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 16-19, warpins: 1 ---
+	slot4 = slot2 + 1
+	slot4 = slot3[slot4]
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 20-28, warpins: 1 ---
+	slot4 = slot0.view
+	slot4 = slot4.selector
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "Quality"
+	slot8 = slot2 + 1
+	slot8 = slot3[slot8]
+	slot8 = slot8.quality
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-29, warpins: 4 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot4.onRefreshSelectorWhenSelected = slot15
 
 return slot4
 --- END OF BLOCK #0 ---

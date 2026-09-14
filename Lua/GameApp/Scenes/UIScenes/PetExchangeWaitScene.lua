@@ -1,40 +1,46 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-68, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.UIScene.UISceneBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "PetExchangeWaitScene"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Utils.ClientVirtualEntityUtils"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "GameApp.UIScene.UISceneBase"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "PetExchangeWaitScene"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Const.ClientConst"
+slot6 = "Utils.ClientVirtualEntityUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.pet_first_show_data"
+slot7 = "Const.ClientConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.Utils"
+slot8 = "Data.pet_first_show_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Utils.PetResearchUtils"
+slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.pet_research_content_data"
+slot10 = "Guis.Utils.PetResearchUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.AddressDataConst"
+slot11 = "Data.pet_research_content_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Utils.PetManagementDataHelper"
+slot12 = "Const.AddressDataConst"
 slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Utils.PetManagementDataHelper"
+slot11 = slot11(slot13)
+slot12 = require
+slot14 = "GameApp.PetTransmog.PetTransmogUtils"
+slot12 = slot12(slot14)
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = nil
 	slot0.leftEntity = slot2
@@ -59,9 +65,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.onStart = slot11
+slot3.onStart = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-51, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -121,133 +127,74 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.initScene = slot11
+slot3.initScene = slot13
 
-slot11 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot4 = slot0.leftRenderTexture
-
+slot13 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot5 = nil
+
+	return slot5
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-13, warpins: 2 ---
-	slot4 = slot0.leftRenderTexture
-	slot2.texture = slot4
-	slot6 = slot2
-	slot4 = slot2.SetActive
-	slot7 = true
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.leftEntity
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot5 = slot2.scheme
+	slot6 = slot2.petId
 	--- END OF BLOCK #2 ---
 
-	slot4 = if slot4 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-16, warpins: 1 ---
-	slot4 = slot0.leftEntityTId
-
+	--- BLOCK #3 9-17, warpins: 1 ---
+	slot6 = PetTransmogUtils
+	slot6 = slot6.getPetInfo
+	slot8 = slot2.petId
+	slot6 = slot6(slot8)
+	slot7 = PetTransmogUtils
+	slot7 = slot7.getSelectedScheme
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	slot5 = slot7
 	--- END OF BLOCK #3 ---
 
-	if slot4 == slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-17, warpins: 1 ---
-	return
+	--- BLOCK #4 18-24, warpins: 2 ---
+	slot6 = PetTransmogUtils
+	slot6 = slot6.getSchemeModelCacheKey
+	slot8 = slot1
+	slot9 = slot5
+	slot10 = slot3
+	slot11 = slot4
 
+	return slot6(slot8, slot9, slot10, slot11)
 	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 18-20, warpins: 3 ---
-	slot4 = slot0.leftEntity
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 21-28, warpins: 1 ---
-	slot4 = slot0.leftEntity
-	slot6 = slot4
-	slot4 = slot4.destroy
-
-	slot4(slot6)
-
-	slot4 = nil
-	slot0.leftEntity = slot4
-	slot4 = nil
-	slot0.leftEntityTId = slot4
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 29-38, warpins: 2 ---
-	slot6 = slot0
-	slot4 = slot0.previewPetByTId
-	slot7 = slot1
-	slot8 = slot0.leftPetTransform
-	slot9 = false
-	slot10 = nil
-	slot11 = slot3
-	slot4 = slot4(slot6, slot7, slot8, slot9, slot10, slot11)
-	--- END OF BLOCK #7 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 39-40, warpins: 1 ---
-	slot0.leftEntity = slot4
-	slot0.leftEntityTId = slot1
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 41-41, warpins: 2 ---
-	return
-	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot2.setLeftModel = slot11
+slot3._transmogCacheKey = slot13
 
-slot11 = function(slot0, slot1, slot2, slot3, slot4)
+slot13 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot0.leftRenderTexture
 
@@ -268,132 +215,422 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-13, warpins: 2 ---
+	--- BLOCK #2 5-17, warpins: 2 ---
 	slot5 = slot0.leftRenderTexture
-	slot3.texture = slot5
-	slot7 = slot3
-	slot5 = slot3.SetActive
+	slot2.texture = slot5
+	slot7 = slot2
+	slot5 = slot2.SetActive
 	slot8 = true
 
 	slot5(slot7, slot8)
 
-	slot5 = slot0.rightEntity
+	slot7 = slot0
+	slot5 = slot0._transmogCacheKey
+	slot8 = slot1
+	slot9 = slot4
+	slot10 = slot3
 	--- END OF BLOCK #2 ---
 
-	slot5 = if slot5 then
+	slot11 = if slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 14-16, warpins: 1 ---
-	slot5 = slot0.rightEntityTId
+	--- BLOCK #3 18-18, warpins: 1 ---
+	slot11 = slot4.shinyStyle
 	--- END OF BLOCK #3 ---
 
-	if slot5 == slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-19, warpins: 1 ---
-	slot5 = slot0.rightUnknow
-
+	--- BLOCK #4 19-22, warpins: 2 ---
+	slot5 = slot5(slot7, slot8, slot9, slot10, slot11)
+	slot6 = slot0.leftEntity
 	--- END OF BLOCK #4 ---
 
-	if slot5 == slot2 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 20-20, warpins: 1 ---
-	return
-
+	--- BLOCK #5 23-25, warpins: 1 ---
+	slot6 = slot0.leftEntityTId
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot6 == slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #6 21-23, warpins: 4 ---
-	slot5 = slot0.rightEntity
+	--- BLOCK #6 26-28, warpins: 1 ---
+	slot6 = slot0.leftTransmogKey
+
 	--- END OF BLOCK #6 ---
 
-	slot5 = if slot5 then
+	if slot6 == slot5 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 24-31, warpins: 1 ---
-	slot5 = slot0.rightEntity
-	slot7 = slot5
-	slot5 = slot5.destroy
+	--- BLOCK #7 29-29, warpins: 1 ---
+	return
 
-	slot5(slot7)
-
-	slot5 = nil
-	slot0.rightEntity = slot5
-	slot5 = nil
-	slot0.rightEntityTId = slot5
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 32-41, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.previewPetByTId
-	slot8 = slot1
-	slot9 = slot0.rightPetTransform
-	slot10 = slot2
-	slot11 = nil
-	slot12 = slot4
-	slot5 = slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+	--- BLOCK #8 30-32, warpins: 4 ---
+	slot6 = slot0.leftEntity
 	--- END OF BLOCK #8 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 42-44, warpins: 1 ---
-	slot0.rightEntity = slot5
-	slot0.rightEntityTId = slot1
-	slot0.rightUnknow = slot2
+	--- BLOCK #9 33-40, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
+	slot8 = slot0.leftEntity
 
+	slot6(slot8)
+
+	slot6 = nil
+	slot0.leftEntity = slot6
+	slot6 = nil
+	slot0.leftEntityTId = slot6
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 45-45, warpins: 2 ---
-	return
+	--- BLOCK #10 41-51, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.previewPetByTId
+	slot9 = slot1
+	slot10 = slot0.leftPetTransform
+	slot11 = false
+	slot12 = nil
+	slot13 = slot3
+	slot14 = slot4
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
 	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 52-56, warpins: 1 ---
+	slot0.leftEntity = slot6
+	slot0.leftEntityTId = slot1
+	slot0.leftTransmogKey = slot5
+	slot0.leftTransmogInfo = slot4
+	slot0.leftLabel = slot3
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 57-57, warpins: 2 ---
+	return
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot2.setRightModel = slot11
+slot3.setLeftModel = slot13
 
-slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot6 = {}
-	slot6.label = slot5
-	slot6.existEntity = slot4
-	slot7 = PetManagementDataHelper
-	slot7 = slot7.previewPetModel
+slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot6 = slot0.leftRenderTexture
+
+	--- END OF BLOCK #0 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-17, warpins: 2 ---
+	slot6 = slot0.leftRenderTexture
+	slot3.texture = slot6
+	slot8 = slot3
+	slot6 = slot3.SetActive
+	slot9 = true
+
+	slot6(slot8, slot9)
+
+	slot8 = slot0
+	slot6 = slot0._transmogCacheKey
 	slot9 = slot1
-	slot10 = slot2
+	slot10 = slot5
+	slot11 = slot4
+	--- END OF BLOCK #2 ---
 
-	slot11 = function(slot0)
+	slot12 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-18, warpins: 1 ---
+	slot12 = slot5.shinyStyle
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-22, warpins: 2 ---
+	slot6 = slot6(slot8, slot9, slot10, slot11, slot12)
+	slot7 = slot0.rightEntity
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 23-25, warpins: 1 ---
+	slot7 = slot0.rightEntityTId
+	--- END OF BLOCK #5 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #6 26-28, warpins: 1 ---
+	slot7 = slot0.rightUnknow
+	--- END OF BLOCK #6 ---
+
+	if slot7 == slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 29-31, warpins: 1 ---
+	slot7 = slot0.rightTransmogKey
+
+	--- END OF BLOCK #7 ---
+
+	if slot7 == slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-32, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 33-35, warpins: 5 ---
+	slot7 = slot0.rightEntity
+	--- END OF BLOCK #9 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 36-43, warpins: 1 ---
+	slot7 = ClientUtils
+	slot7 = slot7.safeDestroy
+	slot9 = slot0.rightEntity
+
+	slot7(slot9)
+
+	slot7 = nil
+	slot0.rightEntity = slot7
+	slot7 = nil
+	slot0.rightEntityTId = slot7
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 44-54, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.previewPetByTId
+	slot10 = slot1
+	slot11 = slot0.rightPetTransform
+	slot12 = slot2
+	slot13 = nil
+	slot14 = slot4
+	slot15 = slot5
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 55-60, warpins: 1 ---
+	slot0.rightEntity = slot7
+	slot0.rightEntityTId = slot1
+	slot0.rightUnknow = slot2
+	slot0.rightTransmogKey = slot6
+	slot0.rightTransmogInfo = slot5
+	slot0.rightLabel = slot4
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 61-61, warpins: 2 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot3.setRightModel = slot13
+
+slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot7 = slot6.petId
+	--- END OF BLOCK #1 ---
+
+	if slot7 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	slot7 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 8-8, warpins: 1 ---
+	slot7 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 9-13, warpins: 2 ---
+	slot8 = {}
+	slot8.label = slot5
+	slot8.existEntity = slot4
+	--- END OF BLOCK #4 ---
+
+	slot9 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-14, warpins: 1 ---
+	slot9 = slot6.petId
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 15-17, warpins: 2 ---
+	slot8.transmogPetId = slot9
+	--- END OF BLOCK #6 ---
+
+	slot9 = if slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 18-18, warpins: 1 ---
+	slot9 = slot6.scheme
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 19-22, warpins: 2 ---
+	slot8.transmogScheme = slot9
+	slot8.useTransmogScheme = slot7
+	--- END OF BLOCK #8 ---
+
+	slot9 = if slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 23-23, warpins: 1 ---
+	slot9 = slot6.shinyStyle
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 24-33, warpins: 2 ---
+	slot8.shinyStyle = slot9
+	slot9 = PetManagementDataHelper
+	slot9 = slot9.previewPetModel
+	slot11 = slot1
+	slot12 = slot2
+
+	slot13 = function(slot0)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -412,11 +649,9 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 4-14, warpins: 2 ---
+		--- BLOCK #2 4-12, warpins: 2 ---
 		slot1 = slot0.eModel
-		slot1 = slot1.modelComponent
-		slot1 = slot1.modelView
-		slot1 = slot1.shaderView
+		slot1 = slot1.modelShaderView
 		slot3 = slot1
 		slot1 = slot1.MultiPassUseExtraConfig
 		slot4 = 0
@@ -433,7 +668,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		end
 
 
-		--- BLOCK #3 15-19, warpins: 1 ---
+		--- BLOCK #3 13-17, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.showEntUnknown
@@ -446,7 +681,7 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 20-20, warpins: 2 ---
+		--- BLOCK #4 18-18, warpins: 2 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -454,35 +689,32 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot12 = slot6
-	slot7 = slot7(slot9, slot10, slot11, slot12)
+	slot14 = slot8
+	slot9 = slot9(slot11, slot12, slot13, slot14)
 
-	return slot7
-	--- END OF BLOCK #0 ---
+	return slot9
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot2.previewPetByTId = slot11
+slot3.previewPetByTId = slot13
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = slot1.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
-	slot3 = slot2.shaderView
-	slot5 = slot3
-	slot3 = slot3.SetOverrideMaterial
+	slot2 = slot2.modelShaderView
+	slot5 = slot2
+	slot3 = slot2.SetOverrideMaterial
 	slot6 = PetManagementDataHelper
 	slot6 = slot6.getPetHandbookMat
 	MULTRES = slot6()
 
 	slot3(slot5, MULTRES)
 
-	slot3 = slot2.shaderView
-	slot5 = slot3
-	slot3 = slot3.SetMultiPassRenderEnable
+	slot5 = slot2
+	slot3 = slot2.SetMultiPassRenderEnable
 	slot6 = false
 
 	slot3(slot5, slot6)
@@ -494,23 +726,20 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.showEntUnknown = slot11
+slot3.showEntUnknown = slot13
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot1.eModel
-	slot2 = slot2.modelComponent
-	slot2 = slot2.modelView
-	slot3 = slot2.shaderView
-	slot5 = slot3
-	slot3 = slot3.SetOverrideMaterial
+	slot2 = slot2.modelShaderView
+	slot5 = slot2
+	slot3 = slot2.SetOverrideMaterial
 	slot6 = ""
 
 	slot3(slot5, slot6)
 
-	slot3 = slot2.shaderView
-	slot5 = slot3
-	slot3 = slot3.SetMultiPassRenderEnable
+	slot5 = slot2
+	slot3 = slot2.SetMultiPassRenderEnable
 	slot6 = true
 
 	slot3(slot5, slot6)
@@ -522,9 +751,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.disableEntUnknown = slot11
+slot3.disableEntUnknown = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.leftEntity
 	--- END OF BLOCK #0 ---
@@ -536,13 +765,10 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
-	slot1 = slot0.leftEntity
-	slot1 = slot1.eModel
-	slot1 = slot1.modelView
-	slot1 = slot1.shaderView
-	slot3 = slot1
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot1 = ClientEffectUtils
 	slot1 = slot1.PlayPreset
+	slot3 = slot0.leftEntity
 	slot4 = "ParmonExchangeDown"
 	slot5 = 3
 	slot6 = false
@@ -554,7 +780,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-16, warpins: 2 ---
+	--- BLOCK #2 11-13, warpins: 2 ---
 	slot1 = slot0.rightEntity
 	--- END OF BLOCK #2 ---
 
@@ -565,13 +791,10 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 17-26, warpins: 1 ---
-	slot1 = slot0.rightEntity
-	slot1 = slot1.eModel
-	slot1 = slot1.modelView
-	slot1 = slot1.shaderView
-	slot3 = slot1
+	--- BLOCK #3 14-20, warpins: 1 ---
+	slot1 = ClientEffectUtils
 	slot1 = slot1.PlayPreset
+	slot3 = slot0.rightEntity
 	slot4 = "ParmonExchangeDown"
 	slot5 = 3
 	slot6 = false
@@ -583,7 +806,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
+	--- BLOCK #4 21-21, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -591,18 +814,20 @@ slot11 = function(slot0)
 
 end
 
-slot2.showPetDownEffect = slot11
+slot3.showPetDownEffect = slot13
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.previewPetByTId
 	slot4 = slot0.leftEntityTId
 	slot5 = slot0.rightPetTransform
 	slot6 = false
 	slot7 = slot0.leftEntity
+	slot8 = slot0.leftLabel
+	slot9 = slot0.leftTransmogInfo
 
-	slot1(slot3, slot4, slot5, slot6, slot7)
+	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
 
 	slot3 = slot0
 	slot1 = slot0.previewPetByTId
@@ -610,8 +835,10 @@ slot11 = function(slot0)
 	slot5 = slot0.leftPetTransform
 	slot6 = false
 	slot7 = slot0.rightEntity
+	slot8 = slot0.rightLabel
+	slot9 = slot0.rightTransmogInfo
 
-	slot1(slot3, slot4, slot5, slot6, slot7)
+	slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -620,9 +847,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.exchangePet = slot11
+slot3.exchangePet = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.leftEntity
 	--- END OF BLOCK #0 ---
@@ -634,13 +861,10 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-13, warpins: 1 ---
-	slot1 = slot0.leftEntity
-	slot1 = slot1.eModel
-	slot1 = slot1.modelView
-	slot1 = slot1.shaderView
-	slot3 = slot1
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot1 = ClientEffectUtils
 	slot1 = slot1.PlayPreset
+	slot3 = slot0.leftEntity
 	slot4 = "ParmonExchangeUp"
 	slot5 = 3
 	slot6 = false
@@ -652,7 +876,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-16, warpins: 2 ---
+	--- BLOCK #2 11-13, warpins: 2 ---
 	slot1 = slot0.rightEntity
 	--- END OF BLOCK #2 ---
 
@@ -663,13 +887,10 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 17-26, warpins: 1 ---
-	slot1 = slot0.rightEntity
-	slot1 = slot1.eModel
-	slot1 = slot1.modelView
-	slot1 = slot1.shaderView
-	slot3 = slot1
+	--- BLOCK #3 14-20, warpins: 1 ---
+	slot1 = ClientEffectUtils
 	slot1 = slot1.PlayPreset
+	slot3 = slot0.rightEntity
 	slot4 = "ParmonExchangeUp"
 	slot5 = 3
 	slot6 = false
@@ -681,7 +902,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
+	--- BLOCK #4 21-21, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -689,9 +910,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.showPetUpEffect = slot11
+slot3.showPetUpEffect = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.leftRenderTexture
 	--- END OF BLOCK #0 ---
@@ -731,10 +952,10 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 16-23, warpins: 1 ---
-	slot1 = slot0.leftEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	--- BLOCK #3 16-25, warpins: 1 ---
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.leftEntity
 
 	slot1(slot3)
 
@@ -742,12 +963,14 @@ slot11 = function(slot0)
 	slot0.leftEntity = slot1
 	slot1 = nil
 	slot0.leftEntityTId = slot1
+	slot1 = nil
+	slot0.leftTransmogKey = slot1
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 24-26, warpins: 2 ---
+	--- BLOCK #4 26-28, warpins: 2 ---
 	slot1 = slot0.rightEntity
 	--- END OF BLOCK #4 ---
 
@@ -758,10 +981,10 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #5 27-34, warpins: 1 ---
-	slot1 = slot0.rightEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	--- BLOCK #5 29-38, warpins: 1 ---
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.rightEntity
 
 	slot1(slot3)
 
@@ -769,13 +992,15 @@ slot11 = function(slot0)
 	slot0.rightEntity = slot1
 	slot1 = nil
 	slot0.rightEntityTId = slot1
+	slot1 = nil
+	slot0.rightTransmogKey = slot1
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-35, warpins: 2 ---
+	--- BLOCK #6 39-39, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -783,9 +1008,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.clear = slot11
+slot3.clear = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clear
@@ -799,9 +1024,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onDestroy = slot11
+slot3.onDestroy = slot13
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

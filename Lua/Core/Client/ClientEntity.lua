@@ -1,4 +1,4 @@
---- BLOCK #0 1-88, warpins: 1 ---
+--- BLOCK #0 1-80, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -21,36 +21,28 @@ slot6 = require
 slot8 = "Core.PropertySync.ClientRealPropertyComponent"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Entities.SpaceEntities.CommonComponent.ClientLODComponent"
+slot9 = "Common.CommonSwitch"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Entities.SpaceEntities.CommonComponent.ClientPosRotComponent"
+slot10 = "Core.Common.Const"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.CommonSwitch"
+slot11 = "Core.Common.Time"
 slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Core.Common.Const"
-slot10 = slot10(slot12)
-slot11 = require
-slot13 = "Core.Common.Time"
-slot11 = slot11(slot13)
-slot12 = slot2.Class
-slot14 = "ClientEntity"
-slot15 = slot3
-slot12 = slot12(slot14, slot15)
-slot13 = {}
-slot13[1] = slot7
-slot13[2] = slot6
-slot13[3] = slot8
-slot14 = slot2.AddComponents
-slot16 = slot12
-slot17 = slot13
+slot10 = slot2.Class
+slot12 = "ClientEntity"
+slot13 = slot3
+slot10 = slot10(slot12, slot13)
+slot11 = {}
+slot11[1] = slot6
+slot12 = slot2.AddComponents
+slot14 = slot10
+slot15 = slot11
 
-slot14(slot16, slot17)
+slot12(slot14, slot15)
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot2 = ClientEntity
 	slot2 = slot2.super
 	slot2 = slot2.ctor
@@ -69,6 +61,8 @@ slot14 = function(slot0, slot1)
 	slot0.rid = slot2
 	slot2 = {}
 	slot0.callbacks = slot2
+	slot2 = true
+	slot0.isClientEnt = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -77,9 +71,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.ctor = slot14
+slot10.ctor = slot12
 
-slot14 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = ClientEntity
 	slot2 = slot2.super
@@ -106,9 +100,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.init = slot14
+slot10.init = slot12
 
-slot14 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.sceneId
 	--- END OF BLOCK #0 ---
@@ -185,9 +179,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.recordMapMarkStaticInitId = slot14
+slot10.recordMapMarkStaticInitId = slot12
 
-slot14 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot0.server = slot1
 	slot4 = slot1
@@ -227,9 +221,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.setServer = slot14
+slot10.setServer = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -238,9 +232,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.onBecomePlayer = slot14
+slot10.onBecomePlayer = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.csChannel
 	--- END OF BLOCK #0 ---
@@ -275,9 +269,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.onLoseServer = slot14
+slot10.onLoseServer = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.server
 	--- END OF BLOCK #0 ---
@@ -312,9 +306,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.isServerLost = slot14
+slot10.isServerLost = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.server
 	--- END OF BLOCK #0 ---
@@ -407,9 +401,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.destroy = slot14
+slot10.destroy = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -426,9 +420,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.repr = slot14
+slot10.repr = slot12
 
-slot14 = function(slot0, slot1, ...)
+slot12 = function(slot0, slot1, ...)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = select
 	slot4 = "#"
@@ -712,9 +706,9 @@ slot14 = function(slot0, slot1, ...)
 
 end
 
-slot12.serverMsg = slot14
+slot10.serverMsg = slot12
 
-slot14 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = EntityManager
 	slot2 = slot2.getEntity
@@ -766,9 +760,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.getRealOwner = slot14
+slot10.getRealOwner = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.server
 
@@ -779,9 +773,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.getClusterMsProxy = slot14
+slot10.getClusterMsProxy = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.rid
 	slot1 = slot1 + 1
@@ -815,9 +809,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.genNextCallbackId = slot14
+slot10.genNextCallbackId = slot12
 
-slot14 = function(slot0, slot1, slot2, ...)
+slot12 = function(slot0, slot1, slot2, ...)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.genNextCallbackId
@@ -840,9 +834,9 @@ slot14 = function(slot0, slot1, slot2, ...)
 
 end
 
-slot12._serverMsgWithCallback = slot14
+slot10._serverMsgWithCallback = slot12
 
-slot14 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.callbacks
 	slot3 = slot3[slot1]
@@ -911,9 +905,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot12.RPC_SC_OnServerMsgCallabck = slot14
+slot10.RPC_SC_OnServerMsgCallabck = slot12
 
-slot14 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.genNextCallbackId
@@ -928,9 +922,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.addCallback = slot14
+slot10.addCallback = slot12
 
-slot14 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.callbacks
 	slot3 = nil
@@ -943,9 +937,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot12.delCallback = slot14
+slot10.delCallback = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	slot0.callbacks = slot1
@@ -957,9 +951,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.clearCallbacks = slot14
+slot10.clearCallbacks = slot12
 
-slot14 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = {}
 
@@ -970,9 +964,9 @@ slot14 = function(slot0)
 
 end
 
-slot12.getConfigData = slot14
+slot10.getConfigData = slot12
 
-return slot12
+return slot10
 --- END OF BLOCK #0 ---
 
 

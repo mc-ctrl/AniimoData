@@ -117,7 +117,7 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-15, warpins: 2 ---
+	--- BLOCK #2 9-21, warpins: 2 ---
 	slot0.targetExtend = slot1
 	slot2 = slot0.operEntity
 	slot4 = slot2
@@ -125,6 +125,14 @@ slot3 = function(slot0, slot1)
 	slot5 = slot0.targetExtend
 
 	slot2(slot4, slot5)
+
+	slot2 = slot0.editor
+	slot4 = slot2
+	slot2 = slot2.onEntityGroupExtendChanged
+	slot5 = slot0.operEntity
+	slot6 = true
+
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -136,11 +144,18 @@ end
 slot2.setExtend = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.operEntity
 	slot3 = slot1
 	slot1 = slot1.setGroupExtend
 	slot4 = slot0.targetExtend
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.editor
+	slot3 = slot1
+	slot1 = slot1.onEntityGroupExtendChanged
+	slot4 = slot0.operEntity
 
 	slot1(slot3, slot4)
 
@@ -154,11 +169,18 @@ end
 slot2.doOper = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.operEntity
 	slot3 = slot1
 	slot1 = slot1.setGroupExtend
 	slot4 = slot0.cacheExtend
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.editor
+	slot3 = slot1
+	slot1 = slot1.onEntityGroupExtendChanged
+	slot4 = slot0.operEntity
 
 	slot1(slot3, slot4)
 

@@ -69,7 +69,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-42, warpins: 2 ---
+	--- BLOCK #2 10-52, warpins: 2 ---
 	slot0.releasePetIds = slot2
 	slot2 = slot0.model
 	slot4 = slot2
@@ -79,6 +79,17 @@ slot14 = function(slot0, slot1)
 	slot0.petInfos = slot2
 	slot2 = slot1.ensureCb
 	slot0.ensureCb = slot2
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtTipsWarnUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "PET_RELEASE_TIP_IMPORT_USEITEM"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
 	slot4 = slot0.view
@@ -101,7 +112,8 @@ slot14 = function(slot0, slot1)
 	slot6 = slot0.view
 	slot6 = slot6.txtTipsUSDFText
 	slot7 = slot1.richTextColor
-	slot2 = slot2(slot4, slot5, slot6, slot7)
+	slot8 = true
+	slot2 = slot2(slot4, slot5, slot6, slot7, slot8)
 	slot0.tips = slot2
 	slot4 = slot0
 	slot2 = slot0._startFramedRenderPetList
@@ -409,7 +421,7 @@ slot14 = function(slot0)
 		end
 
 
-		--- BLOCK #1 5-19, warpins: 1 ---
+		--- BLOCK #1 5-21, warpins: 1 ---
 		slot0 = PetManagementUtils
 		slot0 = slot0.renderReleaseTips
 		slot2 = self
@@ -420,7 +432,9 @@ slot14 = function(slot0)
 		slot4 = self
 		slot4 = slot4.view
 		slot4 = slot4.txtTipsUSDFText
-		slot0 = slot0(slot2, slot3, slot4)
+		slot5 = nil
+		slot6 = true
+		slot0 = slot0(slot2, slot3, slot4, slot5, slot6)
 		slot1 = self
 		slot1 = slot1.ensureCb
 		slot3 = slot0
@@ -432,7 +446,7 @@ slot14 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 20-24, warpins: 2 ---
+		--- BLOCK #2 22-26, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.closePanel
@@ -830,7 +844,7 @@ end
 slot13.onDestroy = slot14
 
 slot14 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-64, warpins: 1 ---
+	--- BLOCK #0 1-69, warpins: 1 ---
 	slot4 = false
 	slot1.enabledTooltip = slot4
 	slot4 = false
@@ -845,6 +859,13 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	slot7 = slot3
 
 	slot4(slot6, slot7)
+
+	slot6 = slot1
+	slot4 = slot1.TryChangePage
+	slot7 = "isBoss"
+	slot8 = 0
+
+	slot4(slot6, slot7, slot8)
 
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -910,7 +931,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 65-67, warpins: 1 ---
+	--- BLOCK #1 70-72, warpins: 1 ---
 	slot12 = slot3.isCatchReportingStatus
 	--- END OF BLOCK #1 ---
 
@@ -921,7 +942,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #2 68-79, warpins: 1 ---
+	--- BLOCK #2 73-84, warpins: 1 ---
 	slot12 = slot10.gameObject
 	slot14 = slot12
 	slot12 = slot12.SetActiveEx
@@ -940,7 +961,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 80-84, warpins: 2 ---
+	--- BLOCK #3 85-89, warpins: 2 ---
 	slot12 = slot10.gameObject
 	slot14 = slot12
 	slot12 = slot12.SetActiveEx
@@ -953,7 +974,7 @@ slot14 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 85-85, warpins: 2 ---
+	--- BLOCK #4 90-90, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 

@@ -1,12 +1,17 @@
---- BLOCK #0 1-7, warpins: 1 ---
+--- BLOCK #0 1-9, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	CHANGE_PLAYER_SIGNATURE = 2,
 	CHANGE_PLAYER_NAME = 1,
 	PLAYER_MEDIA_MARK = 4,
-	PLAYER_CHAT = 3
+	PLAYER_CHAT = 3,
+	CHANGE_PLAYER_SIGNATURE = 2
 }
 slot0.PLAYER_SWITCH = slot1
+slot1 = {
+	UNFORBID = 0,
+	PERMANENT = -1
+}
+slot0.FORBID_END_TS = slot1
 
 slot1 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

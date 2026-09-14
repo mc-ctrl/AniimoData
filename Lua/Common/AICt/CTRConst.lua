@@ -9,11 +9,11 @@ slot1 = {
 }
 slot0.ExecutionTiming = slot1
 slot1 = {
-	EventFuc = 2,
-	BehaviorTree = 1,
 	SendMsg = 5,
 	Graph = 4,
-	Trigger = 3
+	Trigger = 3,
+	EventFuc = 2,
+	BehaviorTree = 1
 }
 slot0.NodeType = slot1
 slot1 = {
@@ -29,21 +29,21 @@ slot1 = {
 }
 slot0.NodeBaseType = slot1
 slot1 = {
+	MessageTriggerParams = 3,
 	TickTriggerParams = 2,
 	TickLodTriggerParams = 1,
-	EventTriggerParams = 4,
-	MessageTriggerParams = 3
+	EventTriggerParams = 4
 }
 slot0.ParamType = slot1
 slot1 = {
-	MAP_KEY = 1,
-	MAP_VALUE = 2
+	MAP_VALUE = 2,
+	MAP_KEY = 1
 }
 slot0.ForeachKV = slot1
 slot1 = {
+	Break = 3,
 	Interrupt = 2,
-	Finish = 1,
-	Break = 3
+	Finish = 1
 }
 slot0.FlowFinishType = slot1
 slot1 = {}

@@ -1,4 +1,4 @@
---- BLOCK #0 1-18, warpins: 1 ---
+--- BLOCK #0 1-21, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -9,8 +9,11 @@ slot2 = slot0.LiteClass
 slot4 = "KillEntityNode"
 slot5 = slot1
 slot2 = slot2(slot4, slot5)
+slot3 = require
+slot5 = "Common.Utils.Utils"
+slot3 = slot3(slot5)
 
-slot3 = function(slot0, slot1, slot2, slot3)
+slot4 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = KillEntityNode
 	slot4 = slot4.super
@@ -29,9 +32,9 @@ slot3 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.ctor = slot3
+slot2.ctor = slot4
 
-slot3 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addFlowInput
@@ -74,9 +77,9 @@ slot3 = function(slot0)
 
 end
 
-slot2.registerPorts = slot3
+slot2.registerPorts = slot4
 
-slot3 = function(slot0, slot1, slot2)
+slot4 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getContextValue
@@ -88,7 +91,7 @@ slot3 = function(slot0, slot1, slot2)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
@@ -105,7 +108,7 @@ slot3 = function(slot0, slot1, slot2)
 	slot5 = if slot5 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
@@ -128,21 +131,48 @@ slot3 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 24-26, warpins: 1 ---
+	--- BLOCK #4 24-28, warpins: 1 ---
+	slot6 = Utils
+	slot6 = slot6.checkClient
+	slot6 = slot6()
+	--- END OF BLOCK #4 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 29-35, warpins: 1 ---
+	slot6 = require
+	slot8 = "Utils.ClientUtils"
+	slot6 = slot6(slot8)
+	slot7 = slot6.safeDestroy
+	slot9 = slot5
+
+	slot7(slot9)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 36-38, warpins: 1 ---
 	slot8 = slot5
 	slot6 = slot5.destroy
 
 	slot6(slot8)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 27-32, warpins: 4 ---
+	--- BLOCK #7 39-44, warpins: 5 ---
 	slot4 = slot0.flowOut_Out
 	slot6 = slot4
 	slot4 = slot4.call
@@ -151,13 +181,13 @@ slot3 = function(slot0, slot1, slot2)
 	slot4(slot6, slot7)
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot2.On_In_PortCalled = slot3
+slot2.On_In_PortCalled = slot4
 
 return slot2
 --- END OF BLOCK #0 ---

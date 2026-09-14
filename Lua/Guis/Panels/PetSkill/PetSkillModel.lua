@@ -1,4 +1,4 @@
---- BLOCK #0 1-89, warpins: 1 ---
+--- BLOCK #0 1-80, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -51,19 +51,16 @@ slot16 = require
 slot18 = "Data.ability_param_data"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Const.RedDotConst"
+slot19 = "Const.ClientConst"
 slot17 = slot17(slot19)
-slot18 = require
-slot20 = "Const.ClientConst"
-slot18 = slot18(slot20)
-slot19 = slot3.LightClass
-slot21 = "PetSkillModel"
-slot22 = slot4
-slot19 = slot19(slot21, slot22)
-slot20 = 0
-slot19.EMPTY_ABILITY_ID = slot20
+slot18 = slot3.LightClass
+slot20 = "PetSkillModel"
+slot21 = slot4
+slot18 = slot18(slot20, slot21)
+slot19 = 0
+slot18.EMPTY_ABILITY_ID = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.IS_PVP_FAIL_MODE
 	--- END OF BLOCK #0 ---
@@ -175,9 +172,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.getPetNameAndInfo = slot20
+slot18.getPetNameAndInfo = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = nil
 	slot3 = slot0.IS_PVP_FAIL_MODE
@@ -247,9 +244,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.getCurCharacter = slot20
+slot18.getCurCharacter = slot19
 
-slot20 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3, slot4 = nil
 	slot5 = AbilityConst
@@ -713,9 +710,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.getPetSkillInfos = slot20
+slot18.getPetSkillInfos = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2, slot3, slot4 = nil
 	slot5 = slot0.IS_PVP_FAIL_MODE
@@ -1199,9 +1196,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.getPetAllUnlockedSkill = slot20
+slot18.getPetAllUnlockedSkill = slot19
 
-slot20 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = nil
 	slot4 = slot0.IS_PVP_FAIL_MODE
@@ -1331,9 +1328,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.isAbilityIdLearnt = slot20
+slot18.isAbilityIdLearnt = slot19
 
-slot20 = function(slot0, slot1, slot2, slot3, slot4)
+slot19 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.global
@@ -1556,9 +1553,9 @@ slot20 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot19.setupAbilityInfo = slot20
+slot18.setupAbilityInfo = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -1685,9 +1682,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.skillDerivation = slot20
+slot18.skillDerivation = slot19
 
-slot20 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = nil
 	slot4 = slot0.IS_PVP_FAIL_MODE
@@ -1820,9 +1817,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.isSkillEquipment = slot20
+slot18.isSkillEquipment = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -2276,249 +2273,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.getSkillLearnData = slot20
+slot18.getSkillLearnData = slot19
 
-slot20 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-19, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.getRedDotRecord
-	slot7 = Const
-	slot7 = slot7.CLIENT_KEY
-	slot7 = slot7.PET_MANAGER_RED_DOT
-	slot8 = string
-	slot8 = slot8.format
-	slot10 = RedDotConst
-	slot10 = slot10.RedDotPath
-	slot10 = slot10.PET_MANAGER_TAB_ABILITY_LEARN_LIST_ITEM
-	slot11 = slot1
-	slot12 = slot3
-	slot8 = slot8(slot10, slot11, slot12)
-	slot9 = true
-	slot4 = slot4(slot6, slot7, slot8, slot9)
-	--- END OF BLOCK #0 ---
-
-	slot5 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 20-20, warpins: 1 ---
-	slot5 = slot4
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 21-21, warpins: 2 ---
-	return slot5
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot19.redDot_GetPetSkillNewState = slot20
-
-slot20 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 3-3, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 4-21, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.setRedDotRecord
-	slot7 = Const
-	slot7 = slot7.CLIENT_KEY
-	slot7 = slot7.PET_MANAGER_RED_DOT
-	slot8 = string
-	slot8 = slot8.format
-	slot10 = RedDotConst
-	slot10 = slot10.RedDotPath
-	slot10 = slot10.PET_MANAGER_TAB_ABILITY_LEARN_LIST_ITEM
-	slot11 = slot1
-	slot12 = slot3
-	slot8 = slot8(slot10, slot11, slot12)
-	slot9 = false
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	return
-	--- END OF BLOCK #2 ---
-
-
-
-end
-
-slot19.redDot_RecordPetSkillNewState = slot20
-
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-16, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.getPetInfo
-	slot5 = slot1
-	slot2 = slot2(slot4, slot5)
-	slot3 = slot2.petPrototypeId
-	slot4 = slot2.unlockedAbilityMap
-	slot5 = PetSkillData
-	slot6 = Utils
-	slot6 = slot6.getRefIdByPetPrototypeId
-	slot8 = slot3
-	slot6 = slot6(slot8)
-	slot5 = slot5[slot6]
-	--- END OF BLOCK #0 ---
-
-	if slot5 == nil then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 17-18, warpins: 1 ---
-	slot6 = false
-
-	return slot6
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 19-23, warpins: 2 ---
-	slot6 = false
-	slot7 = pairs
-	slot9 = slot5
-	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #3 24-26, warpins: 1 ---
-	slot12 = slot11.abilityType
-	--- END OF BLOCK #3 ---
-
-	if slot12 ~= "normal" then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #4 27-36, warpins: 1 ---
-	slot12 = Utils
-	slot12 = slot12.isPetSkillUnlock
-	slot14 = pg
-	slot14 = slot14.me
-	slot15 = slot3
-	slot16 = slot10
-	slot12 = slot12(slot14, slot15, slot16)
-	slot13 = slot4[slot10]
-	--- END OF BLOCK #4 ---
-
-	if slot13 == nil then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 37-38, warpins: 1 ---
-	slot13 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 39-39, warpins: 1 ---
-	slot13 = true
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 40-44, warpins: 2 ---
-	slot16 = slot0
-	slot14 = slot0.redDot_GetPetSkillNewState
-	slot17 = slot1
-	--- END OF BLOCK #7 ---
-
-	slot18 = if slot12 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 45-45, warpins: 1 ---
-	slot18 = not slot13
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 46-49, warpins: 2 ---
-	slot19 = slot10
-	slot14 = slot14(slot16, slot17, slot18, slot19)
-	--- END OF BLOCK #9 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 50-50, warpins: 1 ---
-	slot6 = true
-
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 51-52, warpins: 4 ---
-	--- END OF BLOCK #11 ---
-
-	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #12
-
-
-	--- BLOCK #12 53-53, warpins: 1 ---
-	return slot6
-	--- END OF BLOCK #12 ---
-
-
-
-end
-
-slot19.redDot_GetPetSkillState = slot20
-
-return slot19
+return slot18
 --- END OF BLOCK #0 ---
 
 

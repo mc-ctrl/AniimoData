@@ -1,43 +1,46 @@
---- BLOCK #0 1-62, warpins: 1 ---
+--- BLOCK #0 1-65, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Entities.ClientModelEntity"
+slot4 = "Const.ClientConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
+slot5 = "Entities.ClientModelEntity"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.AddressDataConst"
+slot6 = "Entities.SpaceEntities.CommonComponent.ClientActorComponent"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.InteractionConst"
+slot7 = "Const.AddressDataConst"
 slot5 = slot5(slot7)
-slot6 = 409
-slot7 = slot0.Class
-slot9 = "ClientReplyFlutePortalEntity"
-slot10 = slot2
-slot7 = slot7(slot9, slot10)
-slot8 = require
-slot10 = "Entities.SpaceEntities.CommonComponent.ClientInteractionComponent"
-slot8 = slot8(slot10)
+slot6 = require
+slot8 = "Common.Const.InteractionConst"
+slot6 = slot6(slot8)
+slot7 = 409
+slot8 = slot1.Class
+slot10 = "ClientReplyFlutePortalEntity"
+slot11 = slot3
+slot8 = slot8(slot10, slot11)
 slot9 = require
-slot11 = "Entities.Utils.EModelUtils"
+slot11 = "Entities.SpaceEntities.CommonComponent.ClientInteractionComponent"
 slot9 = slot9(slot11)
-slot10 = {}
-slot10[1] = slot3
-slot10[2] = slot8
-slot11 = slot0.AddComponents
-slot13 = slot7
-slot14 = slot10
+slot10 = require
+slot12 = "Entities.Utils.EModelUtils"
+slot10 = slot10(slot12)
+slot11 = {}
+slot11[1] = slot4
+slot11[2] = slot9
+slot12 = slot1.AddComponents
+slot14 = slot8
+slot15 = slot11
 
-slot11(slot13, slot14)
+slot12(slot14, slot15)
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = ClientReplyFlutePortalEntity
 	slot2 = slot2.super
@@ -57,9 +60,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot7.ctor = slot11
+slot8.ctor = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = ClientReplyFlutePortalEntity
 	slot2 = slot2.super
@@ -88,9 +91,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot7.init = slot11
+slot8.init = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientReplyFlutePortalEntity
 	slot1 = slot1.super
@@ -106,28 +109,26 @@ slot11 = function(slot0)
 
 end
 
-slot7.start = slot11
+slot8.start = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
 	slot4 = "EVENT_AddEComponent"
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_INDEX_EFFECT
 
 	slot1(slot3, slot4)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -139,9 +140,9 @@ slot11 = function(slot0)
 
 end
 
-slot7.initializeComponents = slot11
+slot8.initializeComponents = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientReplyFlutePortalEntity
 	slot1 = slot1.super
@@ -157,10 +158,10 @@ slot11 = function(slot0)
 
 end
 
-slot7.postInitializeComponents = slot11
+slot8.postInitializeComponents = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = ClientReplyFlutePortalEntity
 	slot1 = slot1.super
 	slot1 = slot1.refreshAppearance
@@ -176,20 +177,18 @@ slot11 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 17-17, warpins: 1 ---
+	--- BLOCK #1 15-15, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -197,15 +196,16 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-25, warpins: 2 ---
+	--- BLOCK #2 16-24, warpins: 2 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.itemComponent
 	slot3 = slot1
 	slot1 = slot1.SetModelResId
-	slot4 = AddressDataConst
-	slot4 = slot4.REPLY_FLUTE_PORTAL
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_IDX_ITEM
+	slot5 = AddressDataConst
+	slot5 = slot5.REPLY_FLUTE_PORTAL
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -214,9 +214,9 @@ slot11 = function(slot0)
 
 end
 
-slot7.refreshAppearance = slot11
+slot8.refreshAppearance = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = true
 	slot0.isModelLoaded = slot1
@@ -258,9 +258,9 @@ slot11 = function(slot0)
 
 end
 
-slot7.onItemModelLoaded = slot11
+slot8.onItemModelLoaded = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -269,9 +269,9 @@ slot11 = function(slot0)
 
 end
 
-slot7.onModelRefreshed = slot11
+slot8.onModelRefreshed = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eModel
 
@@ -321,9 +321,9 @@ slot11 = function(slot0)
 
 end
 
-slot7.initInteraction = slot11
+slot8.initInteraction = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = nil
 
@@ -334,9 +334,9 @@ slot11 = function(slot0)
 
 end
 
-slot7.getInteractionListData = slot11
+slot8.getInteractionListData = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot2 = false
 
@@ -347,9 +347,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot7.checkCanInteract = slot11
+slot8.checkCanInteract = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -358,9 +358,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot7.interact = slot11
+slot8.interact = slot12
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

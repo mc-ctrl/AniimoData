@@ -629,178 +629,277 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-10, warpins: 2 ---
+	--- BLOCK #2 5-13, warpins: 2 ---
 	slot1 = false
 	slot0.mailContentDrainScheduled = slot1
 	slot1 = ensureState
 	slot3 = slot0
 	slot1, slot2 = slot1(slot3)
-	slot3 = 0
+	slot3 = pg
+	slot3 = slot3.me
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #3 11-13, warpins: 5 ---
-	slot4 = DEFAULT_BATCH_SIZE
+	--- BLOCK #3 14-20, warpins: 1 ---
+	slot3 = type
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.getMailContents
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	if slot3 < slot4 then
+	if slot3 ~= "function" then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 14-17, warpins: 1 ---
-	slot4 = #slot2
-	slot5 = 0
+	--- BLOCK #4 21-22, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #4 ---
 
-	if slot4 > slot5 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #15
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 18-18, warpins: 1 ---
+	--- BLOCK #5 23-23, warpins: 1 ---
+	slot3 = true
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 19-26, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.remove
-	slot6 = slot2
-	slot7 = 1
-	slot4 = slot4(slot6, slot7)
-	slot5 = slot1[slot4]
+	--- BLOCK #6 24-24, warpins: 3 ---
+	slot4 = {}
 	--- END OF BLOCK #6 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 27-27, warpins: 1 ---
+	--- BLOCK #7 25-28, warpins: 6 ---
+	slot5 = #slot4
+	slot6 = DEFAULT_BATCH_SIZE
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	if slot5 < slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #21
+	end
 
 
-	--- BLOCK #8 28-30, warpins: 1 ---
-	slot5 = slot0.mailContent
+	--- BLOCK #8 29-32, warpins: 1 ---
+	slot5 = #slot2
+	slot6 = 0
 	--- END OF BLOCK #8 ---
 
-	slot5 = if slot5 then
+	if slot5 > slot6 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #9 31-34, warpins: 1 ---
-	slot5 = slot0.mailContent
-	slot5 = slot5[slot4]
+	--- BLOCK #9 33-33, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
-	if slot5 ~= nil then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 35-37, warpins: 1 ---
-	slot5 = nil
-	slot1[slot4] = slot5
+	--- BLOCK #10 34-41, warpins: 1 ---
+	slot5 = table
+	slot5 = slot5.remove
+	slot7 = slot2
+	slot8 = 1
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot1[slot5]
 	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 38-41, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.me
+	--- BLOCK #11 42-42, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #12 42-48, warpins: 1 ---
-	slot5 = type
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.getMailContent
-	slot5 = slot5(slot7)
+	--- BLOCK #12 43-45, warpins: 1 ---
+	slot6 = slot0.mailContent
 	--- END OF BLOCK #12 ---
 
-	if slot5 == "function" then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 49-56, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.getMailContent
-	slot8 = slot4
-
-	slot5(slot7, slot8)
-
-	slot3 = slot3 + 1
+	--- BLOCK #13 46-49, warpins: 1 ---
+	slot6 = slot0.mailContent
+	slot6 = slot6[slot5]
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	if slot6 ~= nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #14 57-59, warpins: 2 ---
-	slot5 = nil
-	slot1[slot4] = slot5
+	--- BLOCK #14 50-52, warpins: 1 ---
+	slot6 = nil
+	slot1[slot5] = slot6
 	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #15 60-63, warpins: 2 ---
-	slot4 = #slot2
-	slot5 = 0
+	--- BLOCK #15 53-54, warpins: 2 ---
 	--- END OF BLOCK #15 ---
 
-	if slot4 > slot5 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #16
 	else
 	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 64-66, warpins: 1 ---
-	slot4 = scheduleDrain
-	slot6 = slot0
-
-	slot4(slot6)
-
+	--- BLOCK #16 55-58, warpins: 1 ---
+	slot6 = #slot4
+	slot6 = slot6 + 1
+	slot4[slot6] = slot5
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #17 67-68, warpins: 2 ---
-	slot4 = true
-
-	return slot4
+	--- BLOCK #17 59-62, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
 	--- END OF BLOCK #17 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 63-69, warpins: 1 ---
+	slot6 = type
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.getMailContent
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #18 ---
+
+	if slot6 == "function" then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 70-79, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.getMailContent
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	slot6 = #slot4
+	slot6 = slot6 + 1
+	slot4[slot6] = slot5
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #20 80-82, warpins: 2 ---
+	slot6 = nil
+	slot1[slot5] = slot6
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #21 83-84, warpins: 2 ---
+	--- END OF BLOCK #21 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #22 85-88, warpins: 1 ---
+	slot5 = #slot4
+	slot6 = 0
+	--- END OF BLOCK #22 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 89-94, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.getMailContents
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 95-98, warpins: 3 ---
+	slot5 = #slot2
+	slot6 = 0
+	--- END OF BLOCK #24 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 99-101, warpins: 1 ---
+	slot5 = scheduleDrain
+	slot7 = slot0
+
+	slot5(slot7)
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 102-103, warpins: 2 ---
+	slot5 = true
+
+	return slot5
+	--- END OF BLOCK #26 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-18, warpins: 1 ---
+--- BLOCK #0 1-30, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Utils.ClientTextUtils"
@@ -9,8 +9,16 @@ slot2 = slot2(slot4)
 slot3 = require
 slot5 = "SDK.Platform.PlatformNameMaskService"
 slot3 = slot3(slot5)
+slot4 = require
+slot6 = "SDK.Platform.UIBridge.PlatformDisplayNameInjector"
+slot4 = slot4(slot6)
+slot5 = require
+slot7 = "SDK.Platform.UIBridge.PlatformDisplayNameConfig"
+slot5 = slot5(slot7)
+slot6 = slot5.UI_Node_Popup_FriendInvent_Mini
+slot0.CONFIG = slot6
 
-slot4 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -108,9 +116,9 @@ slot4 = function(slot0)
 
 end
 
-slot0.resolveInvitePlayerUid = slot4
+slot0.resolveInvitePlayerUid = slot6
 
-slot4 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.isNilOrEmpty
@@ -189,9 +197,32 @@ slot4 = function(slot0)
 
 end
 
-slot0.isSelfUid = slot4
+slot0.isSelfUid = slot6
+slot6 = {
+	"playerNameUText",
+	"nameCoverUSDFText",
+	"nameisChangeUSDFText"
+}
+slot0.INVITE_NAME_REF_NAMES = slot6
 
-slot4 = function(slot0, slot1, slot2, slot3, slot4)
+slot6 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = PlatformDisplayNameInjector
+	slot1 = slot1.enableRichTextRefs
+	slot3 = slot0
+	slot4 = M
+	slot4 = slot4.INVITE_NAME_REF_NAMES
+
+	return slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot0.enableInviteNameRichText = slot6
+
+slot6 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = M
 	slot5 = slot5.resolveInvitePlayerUid
@@ -268,13 +299,19 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 28-48, warpins: 2 ---
+	--- BLOCK #7 28-52, warpins: 2 ---
 	slot0._ugcInviteNoticeState = slot6
 	slot6 = slot3.playerInfo
 	slot9 = slot1
 	slot7 = slot1.GetComponent
 	slot10 = "ObjectReference"
 	slot7 = slot7(slot9, slot10)
+	slot8 = M
+	slot8 = slot8.enableInviteNameRichText
+	slot10 = slot7
+
+	slot8(slot10)
+
 	slot10 = slot7
 	slot8 = slot7.GetRefValue
 	slot11 = "playerNameUText"
@@ -297,7 +334,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #8 49-50, warpins: 1 ---
+	--- BLOCK #8 53-54, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
 	slot6 = if slot6 then
@@ -307,7 +344,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #9 51-53, warpins: 1 ---
+	--- BLOCK #9 55-57, warpins: 1 ---
 	slot12 = slot6.playerName
 	--- END OF BLOCK #9 ---
 
@@ -318,14 +355,14 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #10 54-54, warpins: 2 ---
+	--- BLOCK #10 58-58, warpins: 2 ---
 	slot12 = ""
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 55-61, warpins: 3 ---
+	--- BLOCK #11 59-65, warpins: 3 ---
 	slot11.rawText = slot12
 	slot9 = slot9(slot11)
 	slot10 = slot0._ugcInviteNameState
@@ -340,7 +377,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #12 62-64, warpins: 1 ---
+	--- BLOCK #12 66-68, warpins: 1 ---
 	slot10 = slot3.noticeMsg
 	--- END OF BLOCK #12 ---
 
@@ -351,7 +388,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #13 65-67, warpins: 1 ---
+	--- BLOCK #13 69-71, warpins: 1 ---
 	slot10 = slot3.noticeMsg
 	--- END OF BLOCK #13 ---
 
@@ -362,7 +399,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #14 68-73, warpins: 1 ---
+	--- BLOCK #14 72-77, warpins: 1 ---
 	slot12 = slot7
 	slot10 = slot7.GetRefValue
 	slot13 = "noticeUText"
@@ -376,7 +413,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #15 74-80, warpins: 1 ---
+	--- BLOCK #15 78-84, warpins: 1 ---
 	slot11 = slot0._ugcInviteNoticeState
 	slot11 = slot11[slot5]
 	slot12 = type
@@ -391,7 +428,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #16 81-86, warpins: 1 ---
+	--- BLOCK #16 85-90, warpins: 1 ---
 	slot12 = ClientTextUtils
 	slot12 = slot12.setText
 	slot14 = slot10
@@ -404,7 +441,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #17 87-88, warpins: 1 ---
+	--- BLOCK #17 91-92, warpins: 1 ---
 	--- END OF BLOCK #17 ---
 
 	if slot11 ~= "pending" then
@@ -414,7 +451,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #18 89-104, warpins: 1 ---
+	--- BLOCK #18 93-108, warpins: 1 ---
 	slot12 = slot0._ugcInviteNoticeState
 	slot13 = "pending"
 	slot12[slot5] = slot13
@@ -536,20 +573,31 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 105-105, warpins: 4 ---
+	--- BLOCK #19 109-109, warpins: 4 ---
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 106-107, warpins: 4 ---
+	--- BLOCK #20 110-121, warpins: 4 ---
+	slot10 = PlatformDisplayNameInjector
+	slot10 = slot10.getDisplayName
+	slot12 = {}
+	slot12.playerInfo = slot6
+	slot13 = M
+	slot13 = slot13.CONFIG
+	slot12.config = slot13
+	slot12.rawName = slot9
+	slot10 = slot10(slot12)
+	slot9 = slot10
+
 	return slot9
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 108-108, warpins: 2 ---
+	--- BLOCK #21 122-122, warpins: 2 ---
 	return slot6
 	--- END OF BLOCK #21 ---
 
@@ -557,7 +605,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot0.renderTeamInvite = slot4
+slot0.renderTeamInvite = slot6
 
 return slot0
 --- END OF BLOCK #0 ---

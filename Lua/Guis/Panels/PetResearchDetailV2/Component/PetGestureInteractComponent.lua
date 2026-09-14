@@ -26,10 +26,10 @@ slot10 = "PetGestureInteractComponent"
 slot11 = slot4
 slot8 = slot8(slot10, slot11)
 slot9 = {
-	Right = 1,
 	Left = 0,
 	Down = 3,
-	Up = 2
+	Up = 2,
+	Right = 1
 }
 
 slot10 = function(slot0)

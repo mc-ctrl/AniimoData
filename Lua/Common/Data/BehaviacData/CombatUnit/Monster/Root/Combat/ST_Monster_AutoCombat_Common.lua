@@ -1,4 +1,4 @@
---- BLOCK #0 1-4742, warpins: 1 ---
+--- BLOCK #0 1-4767, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,89 +7,89 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Common",
 	agenttype = "PuppetAgent",
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Common",
+	useForRoute = false,
 	version = 97
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "CurrentDistToTarget",
-	const = 0,
 	type = "float",
-	value = "0"
+	name = "CurrentDistToTarget",
+	value = "0",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	name = "CurrentBoxDistToTarget",
-	const = 0,
 	type = "float",
-	value = "0"
+	name = "CurrentBoxDistToTarget",
+	value = "0",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	name = "goBackDist",
-	const = 0,
 	type = "float",
-	value = "0"
+	name = "goBackDist",
+	value = "0",
+	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	name = "skillStopDist",
-	const = 0,
 	type = "float",
-	value = "0"
+	name = "skillStopDist",
+	value = "0",
+	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tWeight_Group_SideWalk",
-	const = 100,
 	type = "int",
-	value = "100"
+	name = "tWeight_Group_SideWalk",
+	value = "100",
+	const = 100
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tWeight_Group_Wait",
-	const = 100,
 	type = "int",
-	value = "100"
+	name = "tWeight_Group_Wait",
+	value = "100",
+	const = 100
 }
 slot4[6] = slot5
 slot5 = {
-	name = "tWeight_Group_Angry",
-	const = 100,
 	type = "int",
-	value = "100"
+	name = "tWeight_Group_Angry",
+	value = "100",
+	const = 100
 }
 slot4[7] = slot5
 slot5 = {
-	name = "tSkillRecoverCount",
-	const = 0,
 	type = "int",
-	value = "0"
+	name = "tSkillRecoverCount",
+	value = "0",
+	const = 0
 }
 slot4[8] = slot5
 slot5 = {
-	name = "CurrentHpPercent",
-	const = 0,
 	type = "float",
-	value = "0"
+	name = "CurrentHpPercent",
+	value = "0",
+	const = 0
 }
 slot4[9] = slot5
 slot5 = {
-	name = "tSkillBuffCount",
-	const = 0,
 	type = "int",
-	value = "0"
+	name = "tSkillBuffCount",
+	value = "0",
+	const = 0
 }
 slot4[10] = slot5
 slot5 = {
-	name = "tSkillControlCount",
-	const = 0,
 	type = "int",
-	value = "0"
+	name = "tSkillControlCount",
+	value = "0",
+	const = 0
 }
 slot4[11] = slot5
 slot3.pars = slot4
@@ -6148,6 +6148,51 @@ slot45 = {
 slot44[3] = slot45
 slot43.properties = slot44
 slot44 = {}
+slot45 = {
+	transition = false,
+	effector = false,
+	precondition = true,
+	id = "438",
+	class = "Precondition"
+}
+slot46 = {}
+slot47 = {
+	BinaryOperator = "And"
+}
+slot46[1] = slot47
+slot47 = {
+	Operator = "Equal"
+}
+slot46[2] = slot47
+slot47 = {}
+slot48 = {
+	func = "checkEntityHasTag"
+}
+slot49 = {}
+slot50 = {
+	field = "selfId"
+}
+slot49[1] = slot50
+slot50 = {
+	const = "TE_Par_GroupCombat_TokenHolder"
+}
+slot49[2] = slot50
+slot48.params = slot49
+slot47.Opl = slot48
+slot46[3] = slot47
+slot47 = {}
+slot48 = {
+	const = false
+}
+slot49 = "Opr2"
+slot47[slot49] = slot48
+slot46[4] = slot47
+slot47 = {
+	Phase = "Both"
+}
+slot46[5] = slot47
+slot45.properties = slot46
+slot44[1] = slot45
 slot43.attachments = slot44
 slot44 = {}
 slot43.children = slot44
@@ -6600,7 +6645,7 @@ slot58 = {
 }
 slot59 = {}
 slot60 = {
-	const = 3
+	const = 2
 }
 slot59[1] = slot60
 slot58.params = slot59

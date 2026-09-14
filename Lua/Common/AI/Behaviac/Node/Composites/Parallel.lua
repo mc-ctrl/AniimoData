@@ -46,20 +46,20 @@ slot18 = require
 slot20 = "Common.AI.Behaviac.Parser.NodeParser"
 slot18 = slot18(slot20)
 slot19 = {
-	FAIL_ON_ALL = 1,
-	FAIL_ON_ONE = 0
+	FAIL_ON_ONE = 0,
+	FAIL_ON_ALL = 1
 }
 slot20 = {
-	SUCCEED_ON_ONE = 0,
-	SUCCEED_ON_ALL = 1
+	SUCCEED_ON_ALL = 1,
+	SUCCEED_ON_ONE = 0
 }
 slot21 = {
-	EXIT_ABORT_RUNNINGSIBLINGS = 1,
-	EXIT_NONE = 0
+	EXIT_NONE = 0,
+	EXIT_ABORT_RUNNINGSIBLINGS = 1
 }
 slot22 = {
-	CHILDFINISH_ONCE = 0,
-	CHILDFINISH_LOOP = 1
+	CHILDFINISH_LOOP = 1,
+	CHILDFINISH_ONCE = 0
 }
 
 slot23 = function(slot0)

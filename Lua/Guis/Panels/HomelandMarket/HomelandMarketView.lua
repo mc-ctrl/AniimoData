@@ -1,4 +1,4 @@
---- BLOCK #0 1-24, warpins: 1 ---
+--- BLOCK #0 1-22, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-85, warpins: 1 ---
+	--- BLOCK #0 1-91, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -45,9 +45,9 @@ slot4 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "tabUList"
+	slot4 = "listTabIconUList"
 	slot1 = slot1(slot3, slot4)
-	slot0.tabUList = slot1
+	slot0.listTabIconUList = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -81,12 +81,6 @@ slot4 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "propPanelUComponent"
-	slot1 = slot1(slot3, slot4)
-	slot0.propPanelUComponent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "timeUCountDown"
 	slot1 = slot1(slot3, slot4)
 	slot0.timeUCountDown = slot1
@@ -102,6 +96,18 @@ slot4 = function(slot0)
 	slot4 = "emptyInfoUBaseText"
 	slot1 = slot1(slot3, slot4)
 	slot0.emptyInfoUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "coinGeneral"
+	slot1 = slot1(slot3, slot4)
+	slot0.coinGeneral = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "panelPropInfoUContainer"
+	slot1 = slot1(slot3, slot4)
+	slot0.panelPropInfoUContainer = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -111,53 +117,6 @@ slot4 = function(slot0)
 end
 
 slot3.findObjects = slot4
-
-slot4 = function(slot0)
-	--- BLOCK #0 1-36, warpins: 1 ---
-	slot1 = slot0.propPanelUComponent
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "ObjectReference"
-	slot1 = slot1(slot3, slot4)
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "propInfoUComponent"
-	slot2 = slot2(slot4, slot5)
-	slot0.propInfoUComponent = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "controlUComponent"
-	slot2 = slot2(slot4, slot5)
-	slot0.controlUComponent = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "listCoinsUList"
-	slot2 = slot2(slot4, slot5)
-	slot0.listCoinsUList = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "numUNumSelector"
-	slot2 = slot2(slot4, slot5)
-	slot0.numUNumSelector = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "purchaseUButton"
-	slot2 = slot2(slot4, slot5)
-	slot0.purchaseUButton = slot2
-	slot4 = slot1
-	slot2 = slot1.GetRefValue
-	slot5 = "remainNumUBaseText"
-	slot2 = slot2(slot4, slot5)
-	slot0.remainNumUBaseText = slot2
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot3.registerObjects = slot4
 
 slot4 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---

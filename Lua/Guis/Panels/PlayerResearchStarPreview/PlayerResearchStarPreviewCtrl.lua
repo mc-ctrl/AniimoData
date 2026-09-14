@@ -43,9 +43,9 @@ slot11 = slot11(slot13)
 slot12 = 5
 slot7.MAX_LIST_COUNT = slot12
 slot12 = {
+	NORMAL = 0,
 	CAN_GET = 2,
-	IS_GET = 1,
-	NORMAL = 0
+	IS_GET = 1
 }
 slot7.REWARD_STATE = slot12
 slot12 = {}
@@ -207,31 +207,15 @@ end
 slot7.addListener = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
-	slot1 = slot1.serverMsg
-	slot4 = "RPC_CS_GetPetHandbookCountryLevelReward"
-	slot5 = slot0.countryId
-	slot6 = -1
+	slot1 = slot1.getPetHandbookCountryLevelReward
+	slot4 = slot0.countryId
+	slot5 = -1
 
-	slot7 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.onRewardStatusChanged
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot1(slot3, slot4, slot5, slot6, slot7)
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---

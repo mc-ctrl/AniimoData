@@ -1,4 +1,4 @@
---- BLOCK #0 1-124, warpins: 1 ---
+--- BLOCK #0 1-130, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.BehaviacAgent.Unit.AIBaseMethodUtils"
 slot0 = slot0(slot2)
@@ -793,6 +793,24 @@ end
 slot7.ExitResPointPort = slot8
 
 slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = HomeLandUtils
+	slot2 = slot2.homeLeisureFinished
+	slot4 = slot0.__owner
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.FinishHomeLandLeisure = slot8
+
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1405,6 +1423,35 @@ end
 
 slot7.SendMessageToTrigger = slot8
 
+slot8 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getValidActorId
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot1 = slot3
+	slot5 = slot0
+	slot3 = slot0.getValidActorId
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	slot2 = slot3
+	slot3 = AIBaseMethodUtils
+	slot3 = slot3.Base_SendMessageToTriggerSpecial
+	slot5 = slot0.__owner
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.SendMessageToTriggerSpecial = slot8
+
 slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
@@ -1444,7 +1491,7 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 15-49, warpins: 1 ---
+	--- BLOCK #3 15-47, warpins: 1 ---
 	slot4 = Vector3
 	slot4 = slot4.enableCreateFromCache
 
@@ -1465,9 +1512,7 @@ slot8 = function(slot0, slot1)
 	slot5 = slot5 + slot6
 	slot6 = slot4
 	slot7 = slot2.eModel
-	slot7 = slot7.modelComponent
-	slot7 = slot7.modelView
-	slot7 = slot7.shaderView
+	slot7 = slot7.modelShaderView
 	slot9 = slot7
 	slot7 = slot7.SetAFKBodyScreenDeform
 	slot10 = true
@@ -1490,11 +1535,9 @@ slot8 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 50-57, warpins: 1 ---
+	--- BLOCK #4 48-53, warpins: 1 ---
 	slot4 = slot2.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot4 = slot4.shaderView
+	slot4 = slot4.modelShaderView
 	slot6 = slot4
 	slot4 = slot4.SetAFKBodyScreenDeform
 	slot7 = false
@@ -1506,7 +1549,7 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 58-58, warpins: 4 ---
+	--- BLOCK #5 54-54, warpins: 4 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -1867,6 +1910,26 @@ slot8 = function(slot0, slot1)
 end
 
 slot7.TriggerBluePrint = slot8
+
+slot8 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot4 = HomeLandUtils
+	slot4 = slot4.tryMountHomeLeisureRide
+	slot6 = slot0.__owner
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.TryHomeLeisureMount = slot8
 
 slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---

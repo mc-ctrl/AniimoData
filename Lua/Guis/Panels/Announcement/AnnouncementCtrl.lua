@@ -1,4 +1,4 @@
---- BLOCK #0 1-84, warpins: 1 ---
+--- BLOCK #0 1-94, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -56,13 +56,98 @@ slot6.messages = slot15
 slot15 = 150
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onCreate
 	slot3 = slot0
 
 	slot1(slot3)
 
+	slot1 = false
+	slot0.isTranslationEnabled = slot1
+	slot1 = pg
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-13, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #1 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-15, warpins: 2 ---
+	slot1 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 16-16, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-20, warpins: 2 ---
+	slot0.isTranslationAvailable = slot1
+	slot1 = slot0.isTranslationAvailable
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 21-26, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.gmeManager
+	slot3 = slot1
+	slot1 = slot1.InitApp
+
+	slot1(slot3)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-29, warpins: 2 ---
+	slot1 = slot0._translationUICallbackGeneration
+	--- END OF BLOCK #6 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 30-30, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 31-42, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0._translationUICallbackGeneration = slot1
 	slot1 = slot0.model
 	slot3 = slot1
 	slot1 = slot1.getSaveLastAnnouncementId
@@ -76,7 +161,7 @@ slot16 = function(slot0)
 	leftList = slot1
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -85,7 +170,66 @@ end
 slot6.onCreate = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._translationUICallbackGeneration
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	slot1 = 0
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-13, warpins: 2 ---
+	slot1 = slot1 + 1
+	slot0._translationUICallbackGeneration = slot1
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.cancelTranslationRequests
+
+	slot1(slot3)
+
+	slot1 = slot0.view
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 14-17, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnTranslateUButton
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-21, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnTranslateUButton
+	slot2 = nil
+	slot1.luaSelectChanged = slot2
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-28, warpins: 3 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -93,77 +237,42 @@ slot16 = function(slot0)
 	slot1(slot3)
 
 	slot1 = slot0.sprites
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #1 8-11, warpins: 1 ---
-	slot1 = pairs
-	slot3 = slot0.sprites
-	slot1, slot2, slot3 = slot1(slot3)
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-	--- BLOCK #2 12-13, warpins: 1 ---
-	--- END OF BLOCK #2 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 14-20, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.uiMgr
-	slot8 = slot6
-	slot6 = slot6.ReleaseTexture2D
-	slot9 = slot5.texture
-
-	slot6(slot8, slot9)
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 21-22, warpins: 3 ---
-	--- END OF BLOCK #4 ---
-
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 23-24, warpins: 1 ---
-	slot1 = nil
-	slot0.sprites = slot1
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 25-27, warpins: 2 ---
-	slot1 = slot0._scrollTimer
-	--- END OF BLOCK #6 ---
-
 	slot1 = if slot1 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 28-33, warpins: 1 ---
+	--- BLOCK #6 29-35, warpins: 1 ---
+	slot1 = slot0.view
+	slot3 = slot1
+	slot1 = slot1.setSpritesForRelease
+	slot4 = slot0.sprites
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.sprites = slot1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 36-38, warpins: 2 ---
+	slot1 = slot0._scrollTimer
+	--- END OF BLOCK #7 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 39-44, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killTimer
 	slot4 = slot0._scrollTimer
@@ -173,14 +282,14 @@ slot16 = function(slot0)
 	slot1 = nil
 	slot0._scrollTimer = slot1
 
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 34-34, warpins: 2 ---
-	return
 	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 45-45, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
 
 
 
@@ -466,7 +575,7 @@ end
 slot6._bindGamepadScroll = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
 
@@ -486,6 +595,34 @@ slot16 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.view
+	slot1 = slot1.btnTranslateUButton
+	slot3 = slot1
+	slot1 = slot1.SetSelected
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.view
+	slot1 = slot1.btnTranslateUButton
+
+	slot2 = function(slot0)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.onTranslateSelectedChanged
+		slot4 = slot0
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaSelectChanged = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -495,6 +632,473 @@ slot16 = function(slot0)
 end
 
 slot6.addListener = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.view
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnTranslateUButton
+
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-15, warpins: 2 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnTranslateUButton
+	slot3 = slot1
+	slot1 = slot1.SetActive
+	slot4 = slot0.isTranslationAvailable
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-19, warpins: 1 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.canTranslateSelectedAnnouncement
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-21, warpins: 2 ---
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot6.refreshTranslateButton = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getCurState
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 7-18, warpins: 1 ---
+	slot1 = slot0.view
+	slot3 = slot1
+	slot1 = slot1.GetOpenServerObj
+	slot4 = slot0.view
+	slot4 = slot4.openServerObj
+	slot1 = slot1(slot3, slot4)
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.getSelectedAnnouncementDetail
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 19-20, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 21-23, warpins: 1 ---
+	slot3 = slot2.content
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-28, warpins: 1 ---
+	slot3 = slot1.listUList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = slot2.content
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-29, warpins: 4 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-33, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.onRefreshAnnouncementRightInfo
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot6.refreshCurrentAnnouncementContent = slot16
+
+slot16 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot5 = slot0._translationUICallbackGeneration
+	--- END OF BLOCK #0 ---
+
+	if slot5 ~= slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-12, warpins: 2 ---
+	slot6 = slot0.model
+	slot8 = slot6
+	slot6 = slot6.getTargetAnnouncementLanguage
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #3 ---
+
+	if slot6 ~= slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-14, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 15-15, warpins: 1 ---
+	slot6 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 16-17, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 18-19, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 20-22, warpins: 1 ---
+	slot7 = slot0.isTranslationEnabled
+	--- END OF BLOCK #8 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 23-25, warpins: 1 ---
+	slot7 = slot0.view
+
+	--- END OF BLOCK #9 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 26-26, warpins: 4 ---
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 27-28, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot1 == "title" then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 29-32, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.onRefreshAnnouncementChannelList
+
+	slot7(slot9)
+
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #13 33-38, warpins: 1 ---
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.getSelCurId
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #13 ---
+
+	if slot7 == slot2 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 39-41, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.refreshCurrentAnnouncementContent
+
+	slot7(slot9)
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 42-42, warpins: 3 ---
+	return
+	--- END OF BLOCK #15 ---
+
+
+
+end
+
+slot6.onTranslationCompleted = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = slot0._translationUICallbackGeneration
+
+	slot3 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.onTranslationCompleted
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
+		slot9 = callbackGeneration
+
+		slot3(slot5, slot6, slot7, slot8, slot9)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.translateCurrentAnnouncement
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-16, warpins: 1 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.translateAllAnnouncementTitles
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 17-22, warpins: 2 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getSelectedAnnouncement
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-28, warpins: 1 ---
+	slot5 = slot0.model
+	slot7 = slot5
+	slot5 = slot5.translateAnnouncementTitle
+	slot8 = slot4
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 29-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot6.translateSelectedAnnouncement = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot0.isTranslationEnabled = slot1
+	slot4 = slot0
+	slot2 = slot0.onRefreshAnnouncementChannelList
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.refreshCurrentAnnouncementContent
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.refreshTranslateButton
+
+	slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 13-13, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 14-18, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.translateSelectedAnnouncement
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot6.onTranslateSelectedChanged = slot16
 
 slot16 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
@@ -663,9 +1267,72 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 50-50, warpins: 3 ---
-	return
+	--- BLOCK #9 50-53, warpins: 3 ---
+	slot3 = slot0.view
+	slot3 = slot3.txtTranslateNameUSDFText
 	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 54-62, warpins: 1 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtTranslateNameUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "AI_TRANSLATE"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 63-66, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.txtTitleUSDFText
+	--- END OF BLOCK #11 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 67-75, warpins: 1 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtTitleUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "ANNOUNCEMENT_TITLE"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 76-79, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshTranslateButton
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #13 ---
 
 
 
@@ -759,7 +1426,7 @@ end
 slot6.setGameOrActivityAnnouncement = slot16
 
 slot16 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -771,9 +1438,14 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	slot6 = ClientTextUtils
 	slot6 = slot6.setText
 	slot8 = slot5
-	slot9 = slot3.title
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.getAnnouncementTitle
+	slot12 = slot3
+	slot13 = slot0.isTranslationEnabled
+	MULTRES = slot9(slot11, slot12, slot13)
 
-	slot6(slot8, slot9)
+	slot6(slot8, MULTRES)
 
 	slot6 = selectedIndex
 	slot7 = slot3.id
@@ -786,21 +1458,21 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 18-19, warpins: 1 ---
+	--- BLOCK #1 23-24, warpins: 1 ---
 	slot6 = false
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 20-20, warpins: 1 ---
+	--- BLOCK #2 25-25, warpins: 1 ---
 	slot6 = true
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 21-24, warpins: 2 ---
+	--- BLOCK #3 26-29, warpins: 2 ---
 	slot1.isSelected = slot6
 	slot6 = slot1.isSelected
 	--- END OF BLOCK #3 ---
@@ -812,7 +1484,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 25-29, warpins: 1 ---
+	--- BLOCK #4 30-34, warpins: 1 ---
 	slot6 = slot0.model
 	slot8 = slot6
 	slot6 = slot6.setSelCurId
@@ -825,7 +1497,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 30-33, warpins: 2 ---
+	--- BLOCK #5 35-38, warpins: 2 ---
 	slot6 = selectedIndex
 	slot7 = slot3.id
 	--- END OF BLOCK #5 ---
@@ -837,7 +1509,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 34-38, warpins: 1 ---
+	--- BLOCK #6 39-43, warpins: 1 ---
 	slot6 = slot0.model
 	slot8 = slot6
 	slot6 = slot6.setRedPointState
@@ -850,9 +1522,9 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 39-64, warpins: 2 ---
+	--- BLOCK #7 44-69, warpins: 2 ---
 	slot6 = function()
-		--- BLOCK #0 1-19, warpins: 1 ---
+		--- BLOCK #0 1-26, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.model
 		slot2 = slot0
@@ -877,8 +1549,39 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 		slot0(slot2)
 
-		return
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshTranslateButton
+
+		slot0(slot2)
+
+		slot0 = self
+		slot0 = slot0.isTranslationEnabled
 		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 27-31, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.translateSelectedAnnouncement
+		slot3 = false
+
+		slot0(slot2, slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 32-32, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
 
 
 
@@ -1069,7 +1772,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 4-19, warpins: 1 ---
+	--- BLOCK #1 4-24, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1081,9 +1784,14 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	slot6 = ClientTextUtils
 	slot6 = slot6.setText
 	slot8 = slot5
-	slot9 = slot3.title
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.getAnnouncementContentText
+	slot12 = slot3
+	slot13 = slot0.isTranslationEnabled
+	MULTRES = slot9(slot11, slot12, slot13)
 
-	slot6(slot8, slot9)
+	slot6(slot8, MULTRES)
 
 	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-6, warpins: 1 ---
@@ -1107,7 +1815,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #2 20-22, warpins: 1 ---
+	--- BLOCK #2 25-27, warpins: 1 ---
 	slot4 = slot3.tIndex
 	--- END OF BLOCK #2 ---
 
@@ -1118,7 +1826,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 23-25, warpins: 1 ---
+	--- BLOCK #3 28-30, warpins: 1 ---
 	slot4 = slot3.tIndex
 	--- END OF BLOCK #3 ---
 
@@ -1129,7 +1837,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 26-36, warpins: 2 ---
+	--- BLOCK #4 31-41, warpins: 2 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1148,7 +1856,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 37-41, warpins: 1 ---
+	--- BLOCK #5 42-46, warpins: 1 ---
 	slot6 = slot0.sprites
 	slot7 = slot3.image
 	slot6 = slot6[slot7]
@@ -1161,7 +1869,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #6 42-46, warpins: 1 ---
+	--- BLOCK #6 47-51, warpins: 1 ---
 	slot6 = slot0.sprites
 	slot7 = slot3.image
 	slot6 = slot6[slot7]
@@ -1171,20 +1879,80 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 47-56, warpins: 2 ---
-	slot6 = LuaUIUtils
-	slot6 = slot6.setUIViewVisible
-	slot8 = slot5
-	slot9 = false
+	--- BLOCK #7 52-63, warpins: 2 ---
+	slot6 = slot0.sprites
+	slot7 = LuaUIUtils
+	slot7 = slot7.setUIViewVisible
+	slot9 = slot5
+	slot10 = false
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
-	slot6 = UIUtils
-	slot6 = slot6.SetTextureByUrl
-	slot8 = slot3.image
+	slot7 = UIUtils
+	slot7 = slot7.SetTextureByUrl
+	slot9 = slot3.image
 
-	slot9 = function(slot0)
-		--- BLOCK #0 1-13, warpins: 1 ---
+	slot10 = function(slot0)
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.sprites
+		slot2 = sprites
+		--- END OF BLOCK #0 ---
+
+		if slot1 == slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 6-10, warpins: 1 ---
+		slot1 = IsNil
+		slot3 = bgUImage
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #2 11-12, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 13-19, warpins: 1 ---
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.uiMgr
+		slot3 = slot1
+		slot1 = slot1.ReleaseTexture2D
+		slot4 = slot0.texture
+
+		slot1(slot3, slot4)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 20-20, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 21-32, warpins: 2 ---
 		slot1 = LuaUIUtils
 		slot1 = slot1.setUIViewVisible
 		slot3 = bgUImage
@@ -1194,33 +1962,32 @@ slot16 = function(slot0, slot1, slot2, slot3)
 
 		slot1 = bgUImage
 		slot1.sprite = slot0
-		slot1 = self
-		slot1 = slot1.sprites
+		slot1 = sprites
 		slot2 = data
 		slot2 = slot2.image
 		slot1[slot2] = slot0
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #5 ---
 
 
 
 	end
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 57-57, warpins: 2 ---
+	--- BLOCK #8 64-64, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #9 58-60, warpins: 1 ---
+	--- BLOCK #9 65-67, warpins: 1 ---
 	slot4 = slot3.tIndex
 	--- END OF BLOCK #9 ---
 
@@ -1231,7 +1998,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #10 61-75, warpins: 1 ---
+	--- BLOCK #10 68-87, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1243,9 +2010,14 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	slot6 = ClientTextUtils
 	slot6 = slot6.setText
 	slot8 = slot5
-	slot9 = slot3.text
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.getAnnouncementContentText
+	slot12 = slot3
+	slot13 = slot0.isTranslationEnabled
+	MULTRES = slot9(slot11, slot12, slot13)
 
-	slot6(slot8, slot9)
+	slot6(slot8, MULTRES)
 
 	slot6 = function(slot0, slot1)
 		--- BLOCK #0 1-6, warpins: 1 ---
@@ -1270,7 +2042,7 @@ slot16 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 76-77, warpins: 4 ---
+	--- BLOCK #11 88-89, warpins: 4 ---
 	return
 	--- END OF BLOCK #11 ---
 

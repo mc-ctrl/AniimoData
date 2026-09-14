@@ -7,19 +7,19 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	name = "ParmonBehaviorTree/SubTree/_Monster/ST_Monster_AutoCombat_Boss_90207_Music",
 	agenttype = "PuppetAgent",
 	version = 56,
-	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/_Monster/ST_Monster_AutoCombat_Boss_90207_Music"
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 0,
-	type = "float",
+	name = "disToTgtForSkillMon",
 	value = "0",
-	name = "disToTgtForSkillMon"
+	type = "float",
+	const = 0
 }
 slot4[1] = slot5
 slot3.pars = slot4

@@ -8,9 +8,9 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	agenttype = "CombatAgent",
-	version = 31,
 	name = "ParmonBehaviorTree/SubTree/_Behav/PBT_Behav_Com_MimicryOutAndStun",
-	useForRoute = false
+	useForRoute = false,
+	version = 31
 }
 slot4 = {}
 slot3.properties = slot4

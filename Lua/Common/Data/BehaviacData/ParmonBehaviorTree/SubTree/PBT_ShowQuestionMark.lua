@@ -7,25 +7,25 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 5,
-	agenttype = "CombatAgent",
+	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/PBT_ShowQuestionMark",
-	useForRoute = false
+	agenttype = "CombatAgent",
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "tMarkType",
 	const = "",
 	type = "string",
-	name = "tMarkType",
 	value = ""
 }
 slot4[1] = slot5
 slot5 = {
+	name = "tTimeout",
 	const = 0,
 	type = "float",
-	name = "tTimeout",
 	value = "0"
 }
 slot4[2] = slot5

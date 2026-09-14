@@ -7,41 +7,41 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "PatrolTree/PatrolSubTree/ST_JumpToGlide",
-	version = 9,
 	useForRoute = true,
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	version = 9,
+	name = "PatrolTree/PatrolSubTree/ST_JumpToGlide"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "jumpTime",
 	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	name = "jumpTime"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "glideStartTime",
 	value = "0",
 	const = 0,
-	type = "float"
+	type = "float",
+	name = "glideStartTime"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "IsVerticalJump",
 	value = "false",
 	const = false,
-	type = "bool"
+	type = "bool",
+	name = "IsVerticalJump"
 }
 slot4[3] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "IfElse",
-	id = "5"
+	id = "5",
+	class = "IfElse"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -50,8 +50,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Condition",
-	id = "9"
+	id = "9",
+	class = "Condition"
 }
 slot8 = {}
 slot9 = {
@@ -79,8 +79,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "7"
+	id = "7",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -137,8 +137,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "6"
+	id = "6",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

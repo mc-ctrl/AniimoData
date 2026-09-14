@@ -1,4 +1,4 @@
---- BLOCK #0 1-249, warpins: 1 ---
+--- BLOCK #0 1-305, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -37,13 +37,18 @@ slot11 = require
 slot13 = "Const.ClientConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Guis.Panels.Chat.Component.ChatComponent"
+slot14 = "json"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Guis.Panels.Chat.Component.MailNewComponent"
+slot15 = "Guis.Panels.Chat.Component.ChatComponent"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.player_head_icon_data"
+slot16 = "Guis.Panels.Chat.Component.ChatComponentOfMessage"
+
+slot14(slot16)
+
+slot14 = require
+slot16 = "Guis.Panels.Chat.Component.MailNewComponent"
 slot14 = slot14(slot16)
 slot15 = CS
 slot15 = slot15.FunPlus
@@ -62,58 +67,58 @@ slot18 = require
 slot20 = "Data.player_level_data"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "Const.AddressDataConst"
+slot21 = "Data.func_index_config_data"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Utils.ClientTextUtils"
+slot22 = "Const.AddressDataConst"
 slot20 = slot20(slot22)
 slot21 = require
-slot23 = "Utils.ClientSwitch"
+slot23 = "Utils.ClientTextUtils"
 slot21 = slot21(slot23)
 slot22 = require
-slot24 = "Data.setting_selector_text_data"
+slot24 = "Common.ClientSwitch"
 slot22 = slot22(slot24)
 slot23 = require
-slot25 = "Guis.Panels.Chat.Component.SettingComponent"
+slot25 = "Data.setting_selector_text_data"
 slot23 = slot23(slot25)
 slot24 = require
-slot26 = "Guis.Panels.Chat.Component.HistoryInformationComponent"
+slot26 = "Guis.Panels.Chat.Component.SettingComponent"
 slot24 = slot24(slot26)
 slot25 = require
-slot27 = "Guis.Panels.Chat.Component.ItemComponent"
+slot27 = "Guis.Panels.Chat.Component.HistoryInformationComponent"
 slot25 = slot25(slot27)
 slot26 = require
-slot28 = "Guis.Panels.Chat.Component.PetShareComponent"
+slot28 = "Guis.Panels.Chat.Component.ItemComponent"
 slot26 = slot26(slot28)
 slot27 = require
-slot29 = "Guis.Panels.Chat.Component.FriendNewComponent"
+slot29 = "Guis.Panels.Chat.Component.PetShareComponent"
 slot27 = slot27(slot29)
 slot28 = require
-slot30 = "Guis.Panels.Chat.Component.FriendTabComponent"
+slot30 = "Guis.Panels.Chat.Component.FriendNewComponent"
 slot28 = slot28(slot30)
 slot29 = require
-slot31 = "Guis.Panels.Chat.Component.TeamGameplayComponent"
+slot31 = "Guis.Panels.Chat.Component.FriendTabComponent"
 slot29 = slot29(slot31)
 slot30 = require
-slot32 = "Guis.Panels.Chat.Component.SwitchChannelComponent"
+slot32 = "Guis.Panels.Chat.Component.TeamGameplayComponent"
 slot30 = slot30(slot32)
 slot31 = require
-slot33 = "Core.Common.CallbackHandler"
+slot33 = "Guis.Panels.Chat.Component.SwitchChannelComponent"
 slot31 = slot31(slot33)
 slot32 = require
-slot34 = "Common.Utils.Utils"
+slot34 = "Core.Common.CallbackHandler"
 slot32 = slot32(slot34)
 slot33 = require
-slot35 = "Data.homeland_config_data"
+slot35 = "Common.Utils.Utils"
 slot33 = slot33(slot35)
 slot34 = require
-slot36 = "Common.CommonSwitch"
+slot36 = "Data.homeland_config_data"
 slot34 = slot34(slot36)
 slot35 = require
-slot37 = "Common.NoticeDef"
+slot37 = "Common.CommonSwitch"
 slot35 = slot35(slot37)
 slot36 = require
-slot38 = "Common.Utils.FlagUtils"
+slot38 = "Common.NoticeDef"
 slot36 = slot36(slot38)
 slot37 = require
 slot39 = "Common.Const.PlayerForbidConst"
@@ -134,6 +139,12 @@ slot38[slot39] = slot40
 slot39 = slot3.CHAT_MESSAGE_UPDATE
 slot40 = {
 	"tryUpdateMessageList",
+	true
+}
+slot38[slot39] = slot40
+slot39 = slot3.CHAT_MESSAGE_UPDATE_ITEM
+slot40 = {
+	"tryUpdateMessageItem",
 	true
 }
 slot38[slot39] = slot40
@@ -185,6 +196,12 @@ slot40 = {
 	true
 }
 slot38[slot39] = slot40
+slot39 = slot3.RECV_MAIL_CONTENT
+slot40 = {
+	"refreshMailContent",
+	true
+}
+slot38[slot39] = slot40
 slot39 = slot3.CHAT_RED_DOT_UPDATE
 slot40 = {
 	"onChatRedDotMsg",
@@ -227,10 +244,28 @@ slot40 = {
 	true
 }
 slot38[slot39] = slot40
+slot39 = slot3.PLAYER_SPARK_CHANGE
+slot40 = {
+	"refreshPlayerSpark",
+	true
+}
+slot38[slot39] = slot40
+slot39 = slot3.NOTIFY_ACTIVITY_DAY_UPDATED
+slot40 = {
+	"refreshPlayerSpark",
+	true
+}
+slot38[slot39] = slot40
+slot39 = slot3.PLAYER_LEVEL_CHANGE
+slot40 = {
+	"onPlayerLevelChanged",
+	true
+}
+slot38[slot39] = slot40
 slot7.messages = slot38
 
 slot38 = function(slot0, slot1)
-	--- BLOCK #0 1-128, warpins: 1 ---
+	--- BLOCK #0 1-145, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -307,6 +342,49 @@ slot38 = function(slot0, slot1)
 	slot5 = slot5.channelPanelUComponent
 	slot2 = slot2(slot4, slot5)
 	slot0.switchChannelComponent = slot2
+	slot2 = {}
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.tabType
+	slot3 = slot3.Mail
+
+	slot4 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.mailComponent
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.mailComponent
+		slot2 = slot0
+		slot0 = slot0.onHide
+
+		slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-10, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2[slot3] = slot4
+	slot0.tabHideHandlers = slot2
 	slot2 = slot0.view
 	slot2 = slot2.privateUComponent
 	slot2 = slot2.gameObject
@@ -370,57 +448,14 @@ slot38 = function(slot0, slot1)
 	slot2 = slot2.listMembersUList
 
 	slot3 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-13, warpins: 1 ---
-		slot3 = pg
-		slot3 = slot3.me
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot3 = self
 		slot5 = slot3
-		slot3 = slot3.queryPlayerInfo
-		slot6 = slot2.uid
-		slot7 = nil
-		slot8 = true
+		slot3 = slot3.renderMemberItem
+		slot6 = slot0
+		slot7 = slot2
 
-		slot9 = function(slot0)
-			--- BLOCK #0 1-10, warpins: 1 ---
-			slot1 = LuaUIUtils
-			slot1 = slot1.renderPlayerAvatarButton
-			slot3 = button
-			slot4 = {
-				showCaptain = true
-			}
-			slot5 = data
-			slot5 = slot5.uid
-			slot4.playerId = slot5
-			slot4.playerInfo = slot0
-
-			slot1(slot3, slot4)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot3(slot5, slot6, slot7, slot8, slot9)
-
-		slot3 = function()
-			--- BLOCK #0 1-7, warpins: 1 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.openPlayerInfoCard
-			slot3 = data
-			slot3 = slot3.uid
-
-			slot0(slot2, slot3)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot0.luaClick = slot3
+		slot3(slot5, slot6, slot7)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -433,358 +468,127 @@ slot38 = function(slot0, slot1)
 	slot4 = slot0
 	slot2 = slot0.getInitialSelectedChannel
 	slot2, slot3 = slot2(slot4)
+	slot6 = slot0
+	slot4 = slot0.resolveOpenChannelSelection
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+	slot4, slot5 = slot4(slot6, slot7, slot8, slot9)
+	slot0.initSelectionKey = slot5
+	slot0.initTab = slot4
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot4 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 129-131, warpins: 1 ---
-	slot4 = slot1.initTab
+	--- BLOCK #1 146-148, warpins: 1 ---
+	slot4 = slot1.openAddFriend
 	--- END OF BLOCK #1 ---
 
-	slot4 = if slot4 then
+	if slot4 ~= true then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 132-134, warpins: 1 ---
-	slot4 = slot1.initTab
-	slot0.initTab = slot4
+	--- BLOCK #2 149-150, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 135-135, warpins: 2 ---
-	slot0.initTab = slot2
+	--- BLOCK #3 151-151, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 136-137, warpins: 2 ---
+	--- BLOCK #4 152-154, warpins: 3 ---
+	slot0.openAddFriend = slot4
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot4 = if slot1 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 138-140, warpins: 1 ---
-	slot4 = slot1.initSecondTab
+	--- BLOCK #5 155-157, warpins: 1 ---
+	slot4 = slot1.openFriendList
 	--- END OF BLOCK #5 ---
 
-	slot4 = if slot4 then
+	if slot4 ~= true then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 141-143, warpins: 1 ---
-	slot4 = slot1.initSecondTab
-	slot0.initSecondTab = slot4
+	--- BLOCK #6 158-159, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #6 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 144-144, warpins: 2 ---
-	slot0.initSecondTab = slot3
+	--- BLOCK #7 160-160, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 145-157, warpins: 2 ---
+	--- BLOCK #8 161-176, warpins: 3 ---
+	slot0.openFriendList = slot4
 	slot4 = slot0.initTab
 	slot0.curTabType = slot4
 	slot4 = slot0.chatComponent
 	slot5 = true
 	slot4.needSetBottom = slot5
-	slot4 = slot0.initTab
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Private
+	slot6 = slot0
+	slot4 = slot0.selectInitialTab
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.tryFocusChatInputField
+
+	slot4(slot6)
+
+	slot4 = slot0.uiScene
 	--- END OF BLOCK #8 ---
 
-	if slot4 == slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 158-173, warpins: 1 ---
-	slot4 = CS
-	slot4 = slot4.XGUI
-	slot4 = slot4.Navigation
-	slot4 = slot4.NavManager
-	slot4 = slot4.Instance
-	slot6 = slot4
-	slot4 = slot4.FocusItem
-	slot7 = slot0.view
-	slot7 = slot7.btnChatUButton
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.btnChatUButton
-	slot6 = slot4
-	slot4 = slot4.OnClickSimulate
-
-	slot4(slot6)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #10 174-181, warpins: 1 ---
-	slot4 = slot0.initTab
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.World
-	--- END OF BLOCK #10 ---
-
-	if slot4 == slot5 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 182-197, warpins: 1 ---
-	slot4 = CS
-	slot4 = slot4.XGUI
-	slot4 = slot4.Navigation
-	slot4 = slot4.NavManager
-	slot4 = slot4.Instance
-	slot6 = slot4
-	slot4 = slot4.FocusItem
-	slot7 = slot0.view
-	slot7 = slot7.btnPublicUButton
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.btnPublicUButton
-	slot6 = slot4
-	slot4 = slot4.OnClickSimulate
-
-	slot4(slot6)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #12 198-205, warpins: 1 ---
-	slot4 = slot0.initTab
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Notice
-	--- END OF BLOCK #12 ---
-
-	if slot4 == slot5 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 206-221, warpins: 1 ---
-	slot4 = CS
-	slot4 = slot4.XGUI
-	slot4 = slot4.Navigation
-	slot4 = slot4.NavManager
-	slot4 = slot4.Instance
-	slot6 = slot4
-	slot4 = slot4.FocusItem
-	slot7 = slot0.view
-	slot7 = slot7.btnNoticeUButton
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.btnNoticeUButton
-	slot6 = slot4
-	slot4 = slot4.OnClickSimulate
-
-	slot4(slot6)
-
-	--- END OF BLOCK #13 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #14 222-229, warpins: 1 ---
-	slot4 = slot0.initTab
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Friend
-	--- END OF BLOCK #14 ---
-
-	if slot4 == slot5 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 230-245, warpins: 1 ---
-	slot4 = CS
-	slot4 = slot4.XGUI
-	slot4 = slot4.Navigation
-	slot4 = slot4.NavManager
-	slot4 = slot4.Instance
-	slot6 = slot4
-	slot4 = slot4.FocusItem
-	slot7 = slot0.view
-	slot7 = slot7.btnFriendUButton
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.btnFriendUButton
-	slot6 = slot4
-	slot4 = slot4.OnClickSimulate
-
-	slot4(slot6)
-
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #16 246-253, warpins: 1 ---
-	slot4 = slot0.initTab
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Mail
-	--- END OF BLOCK #16 ---
-
-	if slot4 == slot5 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 254-268, warpins: 1 ---
-	slot4 = CS
-	slot4 = slot4.XGUI
-	slot4 = slot4.Navigation
-	slot4 = slot4.NavManager
-	slot4 = slot4.Instance
-	slot6 = slot4
-	slot4 = slot4.FocusItem
-	slot7 = slot0.view
-	slot7 = slot7.btnMailUButton
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.btnMailUButton
-	slot6 = slot4
-	slot4 = slot4.OnClickSimulate
-
-	slot4(slot6)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 269-276, warpins: 6 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.input
-	slot6 = slot4
-	slot4 = slot4.isUsingGamepad
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #18 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #19 277-284, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.ui
-	slot6 = slot4
-	slot4 = slot4.runPlatformByMobile
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #19 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 285-289, warpins: 1 ---
-	slot4 = slot0.view
-	slot4 = slot4.chatUInputField
-	slot6 = slot4
-	slot4 = slot4.Select
-
-	slot4(slot6)
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 290-292, warpins: 3 ---
-	slot4 = slot0.uiScene
-	--- END OF BLOCK #21 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
-
-
-	--- BLOCK #22 293-296, warpins: 1 ---
+	--- BLOCK #9 177-180, warpins: 1 ---
 	slot4 = slot0.uiScene
 	slot6 = slot4
 	slot4 = slot4.setLocalEnv
 
 	slot4(slot6)
 
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #23
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #23 297-298, warpins: 2 ---
+	--- BLOCK #10 181-182, warpins: 2 ---
 	return
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -792,8 +596,1700 @@ end
 
 slot7.onCreate = slot38
 
+slot38 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot3 = slot2.uid
+
+	slot4 = function(slot0)
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot1 = LuaUIUtils
+		slot1 = slot1.renderPlayerAvatarButton
+		slot3 = button
+		slot4 = {
+			hideLevel = true,
+			showCaptain = true
+		}
+		slot5 = playerId
+		slot4.playerId = slot5
+		slot4.playerInfo = slot0
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.queryPlayerInfo
+	slot8 = slot3
+	slot9 = nil
+	slot10 = true
+	slot11 = slot4
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
+	slot7 = slot0
+	slot5 = slot0.bindMemberPlayerInfoCardEvents
+	slot8 = slot1
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.renderMemberItem = slot38
+
+slot38 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-24, warpins: 1 ---
+	slot3 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.openPlayerInfoCard
+		slot3 = playerId
+
+		slot0(slot2, slot3)
+
+		slot0 = false
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot3
+	slot6 = slot1
+	slot4 = slot1.SetGamepadLongPress
+	slot7 = HotkeyConst
+	slot7 = slot7.INPUT_MAP_ACTION_KEY
+	slot7 = slot7.GamepadButtonWest
+	slot8 = nil
+	slot9 = 0
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot6 = slot1
+	slot4 = slot1.SetHotkeyActiveOnlyInCurrentItem
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot6 = slot1
+	slot4 = slot1.SetHotkeyConsoleBar
+	slot7 = "CONSOLE_BAR_PROFILE"
+	slot8 = -2
+	slot9 = slot0.view
+	slot9 = slot9.mainConsoleBarTransform
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.bindMemberPlayerInfoCardEvents = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = UNITY_OPENHARMONY
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = ClientConfigInputPlatform
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= "Standalone" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-9, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-14, warpins: 3 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.platform
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 15-20, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.platform
+	slot5 = slot3
+	slot3 = slot3.isPS
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-22, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-24, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 25-30, warpins: 2 ---
+	slot4 = slot0.view
+	slot4 = slot4.chatUInputField
+	slot6 = slot4
+	slot4 = slot4.DeSelect
+
+	slot4(slot6)
+
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 31-44, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot6 = slot4
+	slot4 = slot4.runPlatformByMobile
+	slot4 = slot4(slot6)
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.input
+	slot7 = slot5
+	slot5 = slot5.isUsingGamepad
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 45-46, warpins: 1 ---
+	--- END OF BLOCK #10 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 47-48, warpins: 1 ---
+	--- END OF BLOCK #11 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 49-53, warpins: 2 ---
+	slot6 = slot0.view
+	slot6 = slot6.chatUInputField
+	slot8 = slot6
+	slot6 = slot6.Select
+
+	slot6(slot8)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 54-54, warpins: 3 ---
+	return
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot7.tryFocusChatInputField = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = nil
+	slot3 = slot0.initTab
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Chat
+	--- END OF BLOCK #0 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-12, warpins: 1 ---
+	slot3 = slot0.view
+	slot2 = slot3.btnChatUButton
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #2 13-20, warpins: 1 ---
+	slot3 = slot0.initTab
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Notice
+	--- END OF BLOCK #2 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-23, warpins: 1 ---
+	slot3 = slot0.view
+	slot2 = slot3.btnNoticeUButton
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #4 24-31, warpins: 1 ---
+	slot3 = slot0.initTab
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Friend
+	--- END OF BLOCK #4 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 32-34, warpins: 1 ---
+	slot3 = slot0.view
+	slot2 = slot3.btnFriendUButton
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #6 35-42, warpins: 1 ---
+	slot3 = slot0.initTab
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Public
+	--- END OF BLOCK #6 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 43-45, warpins: 1 ---
+	slot3 = slot0.view
+	slot2 = slot3.btnPublicUButton
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 46-53, warpins: 1 ---
+	slot3 = slot0.initTab
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Mail
+	--- END OF BLOCK #8 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 54-55, warpins: 1 ---
+	slot3 = slot0.view
+	slot2 = slot3.btnMailUButton
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 56-57, warpins: 6 ---
+	--- END OF BLOCK #10 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 58-58, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 59-60, warpins: 2 ---
+	--- END OF BLOCK #12 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 61-69, warpins: 1 ---
+	slot3 = CS
+	slot3 = slot3.XGUI
+	slot3 = slot3.Navigation
+	slot3 = slot3.NavManager
+	slot3 = slot3.Instance
+	slot5 = slot3
+	slot3 = slot3.FocusItem
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 70-77, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.OnClickSimulate
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.refreshChannelTabGamepadDefaultFocus
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot7.selectInitialTab = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = IsNil
+	slot4 = slot1
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot2 = IsNil
+	slot4 = slot0.channelTabWidget
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-20, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnChatUButton
+	slot2 = slot2.transform
+	slot2 = slot2.parent
+	slot4 = slot2
+	slot2 = slot2.GetComponent
+	slot5 = "UWidget"
+	slot2 = slot2(slot4, slot5)
+	slot0.channelTabWidget = slot2
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-25, warpins: 2 ---
+	slot2 = IsNil
+	slot4 = slot0.channelTabWidget
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-26, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-32, warpins: 2 ---
+	slot2 = slot0.channelTabWidget
+	slot4 = slot2
+	slot2 = slot2.SetNavGroupDefaultItem
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.refreshChannelTabGamepadDefaultFocus = slot38
+
+slot38 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot4 = slot1.initTab
+	--- END OF BLOCK #1 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot4 = slot2
+	slot5 = slot3
+
+	return slot4, slot5
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-16, warpins: 2 ---
+	slot4 = slot1.initTab
+	slot7 = slot0
+	slot5 = slot0.findOpenChannelSelectionKey
+	slot8 = slot4
+	slot9 = slot1
+	slot5 = slot5(slot7, slot8, slot9)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-19, warpins: 1 ---
+	slot6 = slot4
+	slot7 = slot5
+
+	return slot6, slot7
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-22, warpins: 2 ---
+	slot6 = slot1.initSecondTab
+	--- END OF BLOCK #5 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-27, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.resolveLegacyChannelSelection
+	slot9 = slot4
+	slot10 = slot1.initSecondTab
+
+	return slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 28-37, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.getSavedChannelSelection
+	slot6, slot7 = slot6(slot8)
+	slot8 = slot0.model
+	slot10 = slot8
+	slot8 = slot8.getTabChannelListData
+	slot11 = slot6
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #7 ---
+
+	if slot6 == slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 38-45, warpins: 1 ---
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.findChannelIndex
+	slot12 = slot8
+	slot13 = slot7
+	slot9 = slot9(slot11, slot12, slot13)
+	--- END OF BLOCK #8 ---
+
+	if slot9 == nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 46-47, warpins: 2 ---
+	slot9 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 48-48, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 49-50, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 51-53, warpins: 1 ---
+	slot10 = slot6
+	slot11 = slot7
+
+	return slot10, slot11
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 54-56, warpins: 2 ---
+	slot10 = slot4
+	slot11 = nil
+
+	return slot10, slot11
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot7.resolveOpenChannelSelection = slot38
+
+slot38 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getTabChannelListData
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot4 = slot2.initChannelId
+	--- END OF BLOCK #0 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #1 9-12, warpins: 1 ---
+	slot4 = ipairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 13-15, warpins: 1 ---
+	slot9 = slot8.channelId
+	--- END OF BLOCK #2 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 16-16, warpins: 1 ---
+	slot9 = slot8.playerId
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-24, warpins: 2 ---
+	slot10 = tostring
+	slot12 = slot9
+	slot10 = slot10(slot12)
+	slot11 = tostring
+	slot13 = slot2.initChannelId
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #4 ---
+
+	if slot10 == slot11 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-29, warpins: 1 ---
+	slot10 = slot0.model
+	slot12 = slot10
+	slot10 = slot10.getChannelSelectionKey
+	slot13 = slot8
+
+	return slot10(slot12, slot13)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-31, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 32-34, warpins: 2 ---
+	slot4 = slot2.initGroupBase
+	--- END OF BLOCK #7 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #8 35-38, warpins: 1 ---
+	slot4 = ipairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #9 39-42, warpins: 1 ---
+	slot9 = slot8.groupBase
+	slot10 = slot2.initGroupBase
+	--- END OF BLOCK #9 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 43-47, warpins: 1 ---
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.getChannelSelectionKey
+	slot12 = slot8
+
+	return slot9(slot11, slot12)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 48-49, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 50-52, warpins: 2 ---
+	slot4 = slot2.initChannelType
+	--- END OF BLOCK #12 ---
+
+	if slot4 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #13 53-56, warpins: 1 ---
+	slot4 = ipairs
+	slot6 = slot3
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #14 57-60, warpins: 1 ---
+	slot9 = slot8.type
+	slot10 = slot2.initChannelType
+	--- END OF BLOCK #14 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 61-65, warpins: 1 ---
+	slot9 = slot0.model
+	slot11 = slot9
+	slot9 = slot9.getChannelSelectionKey
+	slot12 = slot8
+
+	return slot9(slot11, slot12)
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 66-67, warpins: 3 ---
+	--- END OF BLOCK #16 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #14
+	GO OUT TO BLOCK #17
+
+
+	--- BLOCK #17 68-68, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot7.findOpenChannelSelectionKey = slot38
+
 slot38 = function(slot0)
-	--- BLOCK #0 1-159, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getSavedChannelSelection
+	slot1, slot2 = slot1(slot3)
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot5 = slot3
+	slot3 = slot3.checkHasRewardMail
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-17, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot5 = slot3
+	slot3 = slot3.checkHasNewMail
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 18-21, warpins: 2 ---
+	slot4 = CommonSwitch
+	slot4 = slot4.MAIL
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 22-23, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-30, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Mail
+	slot5 = nil
+
+	return slot4, slot5
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 31-34, warpins: 3 ---
+	slot4 = CommonSwitch
+	slot4 = slot4.CHAT
+	--- END OF BLOCK #5 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 35-41, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Mail
+	slot5 = nil
+
+	return slot4, slot5
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 42-50, warpins: 2 ---
+	slot4 = ipairs
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot8 = slot6
+	slot6 = slot6.getPrivateChannelListData
+	MULTRES = slot6(slot8)
+	slot4, slot5, slot6 = slot4(MULTRES)
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #8 51-53, warpins: 1 ---
+	slot9 = slot8.channelId
+	--- END OF BLOCK #8 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 54-54, warpins: 1 ---
+	slot9 = slot8.playerId
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 55-57, warpins: 2 ---
+	slot10 = slot8.tIndex
+	--- END OF BLOCK #10 ---
+
+	if slot10 == 0 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #11 58-67, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot12 = slot10
+	slot10 = slot10.getChannelUnReadMsgCount
+	slot13 = slot9
+	slot10 = slot10(slot12, slot13)
+	slot11 = 0
+	--- END OF BLOCK #11 ---
+
+	if slot10 > slot11 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 68-78, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot10 = slot10.tabType
+	slot10 = slot10.Chat
+	slot11 = slot0.model
+	slot13 = slot11
+	slot11 = slot11.getChannelSelectionKey
+	slot14 = slot8
+	MULTRES = slot11(slot13, slot14)
+
+	return slot10, MULTRES
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 79-80, warpins: 4 ---
+	--- END OF BLOCK #13 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #14
+
+
+	--- BLOCK #14 81-92, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.getCurTeamInfo
+	slot4 = slot4(slot6)
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.isInTeam
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #14 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #15 93-102, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	slot7 = slot5
+	slot5 = slot5.getChannelUnReadMsgCount
+	slot8 = slot4.teamId
+	slot5 = slot5(slot7, slot8)
+	slot6 = 0
+	--- END OF BLOCK #15 ---
+
+	if slot5 <= slot6 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 103-104, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 105-105, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 106-107, warpins: 3 ---
+	--- END OF BLOCK #18 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 108-120, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Notice
+	slot7 = "type:"
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.channelType
+	slot8 = slot8.Team
+	slot7 = slot7 .. slot8
+
+	return slot6, slot7
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 121-134, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot8 = slot6
+	slot6 = slot6.getChannelUnReadMsgCount
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot9 = slot9.channelType
+	slot9 = slot9.Friend
+	slot6 = slot6(slot8, slot9)
+	slot7 = 0
+	--- END OF BLOCK #20 ---
+
+	if slot6 > slot7 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 135-147, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Notice
+	slot7 = "type:"
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.channelType
+	slot8 = slot8.Friend
+	slot7 = slot7 .. slot8
+
+	return slot6, slot7
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 148-162, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot8 = slot6
+	slot6 = slot6.getChannelUnReadMsgCount
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot11 = slot9
+	slot9 = slot9.getHomeCampGroupId
+	MULTRES = slot9(slot11)
+	slot6 = slot6(slot8, MULTRES)
+	slot7 = 0
+	--- END OF BLOCK #22 ---
+
+	if slot6 > slot7 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 163-175, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Notice
+	slot7 = "type:"
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.channelType
+	slot8 = slot8.Home
+	slot7 = slot7 .. slot8
+
+	return slot6, slot7
+
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 176-189, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot8 = slot6
+	slot6 = slot6.getChannelUnReadMsgCount
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot9 = slot9.channelType
+	slot9 = slot9.Near
+	slot6 = slot6(slot8, slot9)
+	slot7 = 0
+	--- END OF BLOCK #24 ---
+
+	if slot6 > slot7 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #25 190-202, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Notice
+	slot7 = "type:"
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.channelType
+	slot8 = slot8.Near
+	slot7 = slot7 .. slot8
+
+	return slot6, slot7
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 203-214, warpins: 2 ---
+	slot6 = ipairs
+	slot8 = slot0.model
+	slot10 = slot8
+	slot8 = slot8.getTabChannelListData
+	slot11 = pg
+	slot11 = slot11.game
+	slot11 = slot11.chat
+	slot11 = slot11.tabType
+	slot11 = slot11.Public
+	MULTRES = slot8(slot10, slot11)
+	slot6, slot7, slot8 = slot6(MULTRES)
+	--- END OF BLOCK #26 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
+
+
+	--- BLOCK #27 215-224, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.game
+	slot11 = slot11.chat
+	slot13 = slot11
+	slot11 = slot11.getChannelUnReadMsgCount
+	slot14 = slot10.channelId
+	slot11 = slot11(slot13, slot14)
+	slot12 = 0
+	--- END OF BLOCK #27 ---
+
+	if slot11 > slot12 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #29
+	end
+
+
+	--- BLOCK #28 225-235, warpins: 1 ---
+	slot11 = pg
+	slot11 = slot11.game
+	slot11 = slot11.chat
+	slot11 = slot11.tabType
+	slot11 = slot11.Public
+	slot12 = slot0.model
+	slot14 = slot12
+	slot12 = slot12.getChannelSelectionKey
+	slot15 = slot10
+	MULTRES = slot12(slot14, slot15)
+
+	return slot11, MULTRES
+
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 236-237, warpins: 3 ---
+	--- END OF BLOCK #29 ---
+
+	for slot9, slot10 in slot6, slot7, slot8
+	LOOP BLOCK #27
+	GO OUT TO BLOCK #30
+
+
+	--- BLOCK #30 238-246, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot8 = slot6
+	slot6 = slot6.getFriendRequestCount
+	slot6 = slot6(slot8)
+	slot7 = 0
+	--- END OF BLOCK #30 ---
+
+	if slot6 > slot7 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 247-253, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Friend
+	slot7 = nil
+
+	return slot6, slot7
+
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 254-256, warpins: 2 ---
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot6, slot7
+	--- END OF BLOCK #32 ---
+
+
+
+end
+
+slot7.getInitialSelectedChannel = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-37, warpins: 1 ---
+	slot1 = "base:"
+	slot2 = Const
+	slot2 = slot2.CHAT_ATTR_WORLD
+	slot2 = slot2.group_base
+	slot1 = slot1 .. slot2
+	slot2 = "v2|"
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.tabType
+	slot3 = slot3.Public
+	slot4 = "|"
+	slot5 = slot1
+	slot2 = slot2 .. slot3 .. slot4 .. slot5
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.uid
+	slot4 = ClientConst
+	slot4 = slot4.PrefKey
+	slot4 = slot4.ChatChannelRecord
+	slot3 = slot3 .. slot4
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.prefsCacheUtils
+	slot6 = slot4
+	slot4 = slot4.getString
+	slot7 = slot3
+	slot8 = slot2
+	slot4 = slot4(slot6, slot7, slot8)
+	slot5 = string
+	slot5 = slot5.split
+	slot7 = slot4
+	slot8 = "|"
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot5[1]
+	--- END OF BLOCK #0 ---
+
+	if slot6 == "v2" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 38-42, warpins: 1 ---
+	slot6 = tonumber
+	slot8 = slot5[2]
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #1 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 43-47, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Public
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 48-49, warpins: 2 ---
+	slot7 = slot5[3]
+
+	return slot6, slot7
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 50-58, warpins: 2 ---
+	slot8 = slot0
+	slot6 = slot0.resolveLegacyChannelSelection
+	slot9 = tonumber
+	slot11 = slot5[1]
+	slot9 = slot9(slot11)
+	slot10 = tonumber
+	slot12 = slot5[2]
+	MULTRES = slot10(slot12)
+
+	return slot6(slot8, slot9, MULTRES)
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot7.getSavedChannelSelection = slot38
+
+slot38 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = nil
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Chat
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-16, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot6 = slot4
+	slot4 = slot4.getPrivateChannelListData
+	slot4 = slot4(slot6)
+	slot3 = slot4
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #2 17-23, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Public
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 24-31, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot6 = slot4
+	slot4 = slot4.getWorldChannelListData
+	slot4 = slot4(slot6)
+	slot3 = slot4
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #4 32-38, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Notice
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 39-46, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot6 = slot4
+	slot4 = slot4.getSystemChannelListData
+	slot4 = slot4(slot6)
+	slot3 = slot4
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #6 47-48, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 49-53, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Public
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 54-55, warpins: 2 ---
+	slot5 = nil
+
+	return slot4, slot5
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 56-57, warpins: 4 ---
+	--- END OF BLOCK #9 ---
+
+	slot4 = if not slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 58-58, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 59-61, warpins: 2 ---
+	slot4 = slot3[slot4]
+	--- END OF BLOCK #11 ---
+
+	if slot4 == nil then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 62-64, warpins: 1 ---
+	slot5 = slot1
+	slot6 = nil
+
+	return slot5, slot6
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 65-75, warpins: 2 ---
+	slot5 = slot0.model
+	slot7 = slot5
+	slot5 = slot5.getChannelTabType
+	slot8 = slot4
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot0.model
+	slot8 = slot6
+	slot6 = slot6.getChannelSelectionKey
+	slot9 = slot4
+	MULTRES = slot6(slot8, slot9)
+
+	return slot5, MULTRES
+	--- END OF BLOCK #13 ---
+
+
+
+end
+
+slot7.resolveLegacyChannelSelection = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-152, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
 
@@ -956,16 +2452,13 @@ slot38 = function(slot0)
 	slot1 = slot1.btnNewUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-17, warpins: 1 ---
+		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.view
-		slot0 = slot0.bottomSendUComponent
+		slot0 = slot0.chatComponent
 		slot2 = slot0
-		slot0 = slot0.TryChangePage
-		slot3 = "ClickToNew"
-		slot4 = 0
+		slot0 = slot0.resetNewMessageCount
 
-		slot0(slot2, slot3, slot4)
+		slot0(slot2)
 
 		slot0 = self
 		slot0 = slot0.view
@@ -1037,17 +2530,12 @@ slot38 = function(slot0)
 	slot1 = slot1.personalTopAddBtn
 
 	slot2 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.friendNewComponent
 		slot2 = slot0
-		slot0 = slot0.refreshFriendList
-		slot3 = self
-		slot3 = slot3.friendNewComponent
-		slot3 = slot3.OpenType
-		slot3 = slot3.TeamInvite
+		slot0 = slot0.openTeamInvite
 
-		slot0(slot2, slot3)
+		slot0(slot2)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1281,9 +2769,9 @@ slot38 = function(slot0)
 		slot4 = slot4.game
 		slot4 = slot4.chat
 		slot4 = slot4.tabType
-		slot4 = slot4.World
+		slot4 = slot4.Public
 		slot5 = self
-		slot5 = slot5.initSecondTab
+		slot5 = slot5.initSelectionKey
 		--- END OF BLOCK #5 ---
 
 		slot5 = if not slot5 then
@@ -1306,7 +2794,7 @@ slot38 = function(slot0)
 
 		slot1 = self
 		slot2 = nil
-		slot1.initSecondTab = slot2
+		slot1.initSelectionKey = slot2
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.hideExtensionFunc
@@ -1429,9 +2917,9 @@ slot38 = function(slot0)
 		slot4 = slot4.game
 		slot4 = slot4.chat
 		slot4 = slot4.tabType
-		slot4 = slot4.Private
+		slot4 = slot4.Chat
 		slot5 = self
-		slot5 = slot5.initSecondTab
+		slot5 = slot5.initSelectionKey
 		--- END OF BLOCK #5 ---
 
 		slot5 = if not slot5 then
@@ -1454,7 +2942,7 @@ slot38 = function(slot0)
 
 		slot1 = self
 		slot2 = nil
-		slot1.initSecondTab = slot2
+		slot1.initSelectionKey = slot2
 		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.panelUComponent
@@ -1517,12 +3005,23 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 10-50, warpins: 3 ---
+		--- BLOCK #3 10-59, warpins: 3 ---
 		slot1 = pg
 		slot1 = slot1.me
 		slot3 = slot1
 		slot1 = slot1.serverMsg
 		slot4 = "RPC_CS_GetRecommendPlayer"
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.notifyTabHide
+		slot4 = pg
+		slot4 = slot4.game
+		slot4 = slot4.chat
+		slot4 = slot4.tabType
+		slot4 = slot4.Friend
 
 		slot1(slot3, slot4)
 
@@ -1574,7 +3073,7 @@ slot38 = function(slot0)
 		end
 
 
-		--- BLOCK #4 51-59, warpins: 1 ---
+		--- BLOCK #4 60-69, warpins: 1 ---
 		slot1 = self
 		slot2 = FriendTabComponent
 		slot2 = slot2.new
@@ -1586,17 +3085,102 @@ slot38 = function(slot0)
 		slot1.friendTabComponent = slot2
 		--- END OF BLOCK #4 ---
 
-		FLOW; TARGET BLOCK #5
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 60-64, warpins: 2 ---
+		--- BLOCK #5 70-74, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.friendTabComponent
+		slot3 = slot1
+		slot1 = slot1.refreshFriendPanel
+
+		slot1(slot3)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 75-78, warpins: 2 ---
+		slot1 = self
+		slot1 = slot1.openFriendList
+		--- END OF BLOCK #6 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #7
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #7 79-90, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.friendTabComponent
+		slot3 = slot1
+		slot1 = slot1.openFriendListPanel
+
+		slot1(slot3)
+
+		slot1 = self
+		slot2 = false
+		slot1.openFriendList = slot2
+		slot1 = self
+		slot2 = false
+		slot1.openAddFriend = slot2
+		--- END OF BLOCK #7 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #8 91-94, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.openAddFriend
+		--- END OF BLOCK #8 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 95-103, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.friendTabComponent
+		slot3 = slot1
+		slot1 = slot1.openAddFriendPanel
+
+		slot1(slot3)
+
+		slot1 = self
+		slot2 = false
+		slot1.openAddFriend = slot2
+		--- END OF BLOCK #9 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #10 104-108, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.friendTabComponent
+		slot3 = slot1
+		slot1 = slot1.refreshFriendTillableState
+
+		slot1(slot3)
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 109-113, warpins: 3 ---
 		slot1 = self
 		slot1 = slot1.chatComponent
 		slot2 = nil
 		slot1.curSelectedChannelId = slot2
 
 		return
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #11 ---
 
 
 
@@ -1640,7 +3224,7 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 10-26, warpins: 3 ---
+		--- BLOCK #3 10-25, warpins: 3 ---
 		slot1 = self
 		slot2 = false
 		slot1.expend = slot2
@@ -1654,70 +3238,90 @@ slot38 = function(slot0)
 
 		slot1(slot3, slot4, slot5)
 
-		slot1 = 1
-		slot2 = self
-		slot2 = slot2.chatComponent
-		slot2 = slot2.showAddPanel
+		slot1 = self
+		slot1 = slot1.chatComponent
+		slot1 = slot1.showAddPanel
 		--- END OF BLOCK #3 ---
 
-		slot2 = if slot2 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #4
 		else
 		JUMP TO BLOCK #5
 		end
 
 
-		--- BLOCK #4 27-38, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.view
-		slot2 = slot2.addPanelUWidget
-		slot2 = slot2.gameObject
-		slot4 = slot2
-		slot2 = slot2.SetActiveEx
-		slot5 = false
+		--- BLOCK #4 26-37, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.view
+		slot1 = slot1.addPanelUWidget
+		slot1 = slot1.gameObject
+		slot3 = slot1
+		slot1 = slot1.SetActiveEx
+		slot4 = false
 
-		slot2(slot4, slot5)
+		slot1(slot3, slot4)
 
-		slot2 = self
-		slot2 = slot2.chatComponent
-		slot3 = false
-		slot2.showAddPanel = slot3
+		slot1 = self
+		slot1 = slot1.chatComponent
+		slot2 = false
+		slot1.showAddPanel = slot2
 		--- END OF BLOCK #4 ---
 
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 39-61, warpins: 2 ---
-		slot2 = self
-		slot4 = slot2
-		slot2 = slot2.refreshChannelListInner
-		slot5 = pg
-		slot5 = slot5.game
-		slot5 = slot5.chat
-		slot5 = slot5.tabType
-		slot5 = slot5.Notice
-		slot6 = slot1
+		--- BLOCK #5 38-49, warpins: 2 ---
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.refreshChannelListInner
+		slot4 = pg
+		slot4 = slot4.game
+		slot4 = slot4.chat
+		slot4 = slot4.tabType
+		slot4 = slot4.Notice
+		slot5 = self
+		slot5 = slot5.initSelectionKey
+		--- END OF BLOCK #5 ---
 
-		slot2(slot4, slot5, slot6)
+		slot5 = if not slot5 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
 
-		slot2 = self
-		slot4 = slot2
-		slot2 = slot2.hideExtensionFunc
 
-		slot2(slot4)
+		--- BLOCK #6 50-50, warpins: 1 ---
+		slot5 = 1
 
-		slot2 = self
-		slot2 = slot2.view
-		slot2 = slot2.panelUComponent
-		slot4 = slot2
-		slot2 = slot2.TryChangePage
-		slot5 = "Expend"
-		slot6 = 0
+		--- END OF BLOCK #6 ---
 
-		slot2(slot4, slot5, slot6)
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 51-67, warpins: 2 ---
+		slot1(slot3, slot4, slot5)
+
+		slot1 = self
+		slot2 = nil
+		slot1.initSelectionKey = slot2
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.hideExtensionFunc
+
+		slot1(slot3)
+
+		slot1 = self
+		slot1 = slot1.view
+		slot1 = slot1.panelUComponent
+		slot3 = slot1
+		slot1 = slot1.TryChangePage
+		slot4 = "Expend"
+		slot5 = 0
+
+		slot1(slot3, slot4, slot5)
 
 		return
-		--- END OF BLOCK #5 ---
+		--- END OF BLOCK #7 ---
 
 
 
@@ -1761,7 +3365,7 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 10-87, warpins: 3 ---
+		--- BLOCK #3 10-96, warpins: 3 ---
 		slot1 = self
 		slot2 = false
 		slot1.expend = slot2
@@ -1843,6 +3447,17 @@ slot38 = function(slot0)
 		slot3 = slot1
 		slot1 = slot1.SetActiveEx
 		slot4 = false
+
+		slot1(slot3, slot4)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.notifyTabHide
+		slot4 = pg
+		slot4 = slot4.game
+		slot4 = slot4.chat
+		slot4 = slot4.tabType
+		slot4 = slot4.Mail
 
 		slot1(slot3, slot4)
 
@@ -1956,24 +3571,31 @@ slot38 = function(slot0)
 		end
 
 
-		--- BLOCK #2 19-27, warpins: 1 ---
+		--- BLOCK #2 19-34, warpins: 1 ---
 		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.refreshChannelList
-		slot3 = {}
-		slot4 = self
-		slot4 = slot4.chatComponent
-		slot4 = slot4.curSelectedChannel
-		slot3.curSelectedChannel = slot4
+		slot0 = slot0.view
+		slot0 = slot0.channelListUList
+		slot0 = slot0.selectedItem
+		slot1 = self
+		slot1 = slot1.model
+		slot3 = slot1
+		slot1 = slot1.getChannelSelectionKey
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshChannelList
+		slot5 = {}
+		slot5.selectionKey = slot1
 
-		slot0(slot2, slot3)
+		slot2(slot4, slot5)
 
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 28-37, warpins: 3 ---
+		--- BLOCK #3 35-44, warpins: 3 ---
 		slot0 = self
 		slot0 = slot0.view
 		slot0 = slot0.panelUComponent
@@ -1991,14 +3613,14 @@ slot38 = function(slot0)
 		end
 
 
-		--- BLOCK #4 38-39, warpins: 1 ---
+		--- BLOCK #4 45-46, warpins: 1 ---
 		slot4 = 1
 		--- END OF BLOCK #4 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #5 40-40, warpins: 1 ---
+		--- BLOCK #5 47-47, warpins: 1 ---
 		slot4 = 0
 
 		--- END OF BLOCK #5 ---
@@ -2006,7 +3628,7 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 41-51, warpins: 2 ---
+		--- BLOCK #6 48-58, warpins: 2 ---
 		slot0(slot2, slot3, slot4)
 
 		slot0 = self
@@ -2026,14 +3648,14 @@ slot38 = function(slot0)
 		end
 
 
-		--- BLOCK #7 52-53, warpins: 1 ---
+		--- BLOCK #7 59-60, warpins: 1 ---
 		slot4 = 1
 		--- END OF BLOCK #7 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-		--- BLOCK #8 54-54, warpins: 1 ---
+		--- BLOCK #8 61-61, warpins: 1 ---
 		slot4 = 0
 
 		--- END OF BLOCK #8 ---
@@ -2041,7 +3663,7 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #9
 
 
-		--- BLOCK #9 55-68, warpins: 2 ---
+		--- BLOCK #9 62-75, warpins: 2 ---
 		slot0(slot2, slot3, slot4)
 
 		slot0 = self
@@ -2152,24 +3774,19 @@ slot38 = function(slot0)
 		end
 
 
-		--- BLOCK #1 13-22, warpins: 1 ---
+		--- BLOCK #1 13-17, warpins: 1 ---
 		slot0 = self
-		slot0 = slot0.friendNewComponent
 		slot2 = slot0
-		slot0 = slot0.refreshFriendList
-		slot3 = self
-		slot3 = slot3.friendNewComponent
-		slot3 = slot3.OpenType
-		slot3 = slot3.TeamInvite
+		slot0 = slot0.openTeamInvite
 
-		slot0(slot2, slot3)
+		slot0(slot2)
 
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #2 23-34, warpins: 1 ---
+		--- BLOCK #2 18-29, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.view
 		slot0 = slot0.channelListUList
@@ -2189,7 +3806,7 @@ slot38 = function(slot0)
 		end
 
 
-		--- BLOCK #3 35-47, warpins: 1 ---
+		--- BLOCK #3 30-42, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.showConfirmMsgRaw
@@ -2215,27 +3832,26 @@ slot38 = function(slot0)
 			end
 
 
-			--- BLOCK #1 5-16, warpins: 1 ---
+			--- BLOCK #1 5-15, warpins: 1 ---
 			slot0 = pg
 			slot0 = slot0.me
 			slot2 = slot0
-			slot0 = slot0.serverMsg
-			slot3 = "RPC_CS_TeleportToScene"
-			slot4 = Const
-			slot4 = slot4.SCENE_ID
-			slot4 = slot4.COT
-			slot5 = HomelandConfigData
-			slot5 = slot5.createHomelandPortId
-			slot6 = false
+			slot0 = slot0.CallServerMsgTeleportToScene
+			slot3 = Const
+			slot3 = slot3.SCENE_ID
+			slot3 = slot3.COT
+			slot4 = HomelandConfigData
+			slot4 = slot4.createHomelandPortId
+			slot5 = false
 
-			slot0(slot2, slot3, slot4, slot5, slot6)
+			slot0(slot2, slot3, slot4, slot5)
 
 			--- END OF BLOCK #1 ---
 
 			FLOW; TARGET BLOCK #2
 
 
-			--- BLOCK #2 17-17, warpins: 2 ---
+			--- BLOCK #2 16-16, warpins: 2 ---
 			return
 			--- END OF BLOCK #2 ---
 
@@ -2250,7 +3866,7 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 48-48, warpins: 3 ---
+		--- BLOCK #4 43-43, warpins: 3 ---
 		return
 		--- END OF BLOCK #4 ---
 
@@ -2327,93 +3943,16 @@ slot38 = function(slot0)
 
 	slot3(slot5, slot6, slot7, slot8)
 
-	slot3 = string
-	slot3 = slot3.format
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.setPreViewRedDot
 	slot5 = RedDotConst
 	slot5 = slot5.RedDotPath
-	slot5 = slot5.CHAT_TAB_MESSAGE_LIST
-	slot6 = pg
-	slot6 = slot6.game
-	slot6 = slot6.chat
-	slot6 = slot6.tabType
-	slot6 = slot6.World
-	slot3 = slot3(slot5, slot6)
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.setPreViewRedDot
-	slot6 = slot3
-	slot7 = slot0.view
-	slot7 = slot7.btnPublicUButton
+	slot5 = slot5.CHAT_TAB_FRIEND
+	slot6 = slot0.view
+	slot6 = slot6.btnFriendUButton
 
-	slot8 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.messageNumWorld
-		slot1 = 0
-		--- END OF BLOCK #0 ---
-
-		if slot0 > slot1 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 6-9, warpins: 1 ---
-		slot0 = RedDotConst
-		slot0 = slot0.RedDotStyle
-		slot0 = slot0.NUM
-
-		return slot0
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 10-13, warpins: 2 ---
-		slot0 = RedDotConst
-		slot0 = slot0.RedDotStyle
-		slot0 = slot0.NONE
-
-		return slot0
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot9 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
-		slot0 = self
-		slot1 = self
-		slot1 = slot1.model
-		slot3 = slot1
-		slot1 = slot1.redDot_GetWorldMessageNumb
-		slot1 = slot1(slot3)
-		slot0.messageNumWorld = slot1
-		slot0 = self
-		slot0 = slot0.messageNumWorld
-
-		return slot0
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot4(slot6, slot7, slot8, slot9)
-
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.setPreViewRedDot
-	slot6 = RedDotConst
-	slot6 = slot6.RedDotPath
-	slot6 = slot6.CHAT_TAB_FRIEND
-	slot7 = slot0.view
-	slot7 = slot7.btnFriendUButton
-
-	slot8 = function()
+	slot7 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.model
@@ -2427,7 +3966,7 @@ slot38 = function(slot0)
 
 	end
 
-	slot9 = function()
+	slot8 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
@@ -2442,16 +3981,67 @@ slot38 = function(slot0)
 
 	end
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot3(slot5, slot6, slot7, slot8)
 
-	slot6 = slot0
-	slot4 = slot0.addNavFocusListener
-	slot7 = CallbackHandler
-	slot9 = slot0
-	slot10 = "onNavFocusChange"
-	MULTRES = slot7(slot9, slot10)
+	slot3 = function()
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.redDot_GetTabState
+		slot3 = pg
+		slot3 = slot3.game
+		slot3 = slot3.chat
+		slot3 = slot3.tabType
+		slot3 = slot3.Notice
 
-	slot4(slot6, MULTRES)
+		return slot0(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot4 = function()
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.getTabUnreadCount
+		slot3 = pg
+		slot3 = slot3.game
+		slot3 = slot3.chat
+		slot3 = slot3.tabType
+		slot3 = slot3.Notice
+
+		return slot0(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.setPreViewRedDot
+	slot7 = RedDotConst
+	slot7 = slot7.RedDotPath
+	slot7 = slot7.CHAT_TAB_NOTICE
+	slot8 = slot0.view
+	slot8 = slot8.btnNoticeUButton
+	slot9 = slot3
+	slot10 = slot4
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot7 = slot0
+	slot5 = slot0.addNavFocusListener
+	slot8 = CallbackHandler
+	slot10 = slot0
+	slot11 = "onNavFocusChange"
+	MULTRES = slot8(slot10, slot11)
+
+	slot5(slot7, MULTRES)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2461,6 +4051,69 @@ slot38 = function(slot0)
 end
 
 slot7.addListener = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.getCurTeamInfo
+	slot1 = slot1(slot3)
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_DUNGEON_INVITE
+	slot6 = {}
+	--- END OF BLOCK #0 ---
+
+	slot7 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 16-16, warpins: 1 ---
+	slot7 = slot1.dungeonSceneId
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 17-19, warpins: 2 ---
+	slot6.dungeonId = slot7
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 20-20, warpins: 1 ---
+	slot7 = slot1.hardLv
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-23, warpins: 2 ---
+	slot6.hardLv = slot7
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot7.openTeamInvite = slot38
 
 slot38 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
@@ -2840,15 +4493,448 @@ end
 slot7.onNavFocusChange = slot38
 
 slot38 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	slot1 = slot1.CurrentFocusedGroupName
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= "ListChat" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-14, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.navMgr
 	slot1 = slot1.CurrentFocusedUContent
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 15-17, warpins: 1 ---
+	slot2 = slot0.view
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-21, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.messageListUList
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-23, warpins: 3 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-28, warpins: 2 ---
+	slot2 = slot1.transform
+	slot3 = 1
+	slot4 = 4
+	slot5 = 1
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 29-30, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #8 31-33, warpins: 1 ---
+	slot7 = slot2.gameObject
+	--- END OF BLOCK #8 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #9 34-37, warpins: 1 ---
+	slot7 = slot2.gameObject
+	slot7 = slot7.name
+	--- END OF BLOCK #9 ---
+
+	if slot7 ~= "UI_Node_ChatPanel_Message(Clone)" then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 38-41, warpins: 1 ---
+	slot7 = slot2.gameObject
+	slot7 = slot7.name
+	--- END OF BLOCK #10 ---
+
+	if slot7 == "UI_Node_ChatPanel_Message_Me(Clone)" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 42-47, warpins: 2 ---
+	slot9 = slot2
+	slot7 = slot2.GetComponent
+	slot10 = "UButton"
+	slot7 = slot7(slot9, slot10)
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 48-55, warpins: 1 ---
+	slot8 = slot0.view
+	slot8 = slot8.messageListUList
+	slot10 = slot8
+	slot8 = slot8.GetData
+	slot11 = slot7
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #12 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 56-56, warpins: 2 ---
+	slot8 = nil
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 57-57, warpins: 2 ---
+	return slot8
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 58-59, warpins: 4 ---
+	--- END OF BLOCK #15 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 60-60, warpins: 1 ---
+	slot2 = slot2.parent
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 61-61, warpins: 2 ---
+	--- END OF BLOCK #17 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #18
+
+	--- BLOCK #18 62-63, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+	--- END OF BLOCK #18 ---
+
+
+
+end
+
+slot7.getFocusedChatListData = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getFocusedChatListData
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot2 = slot1.subType
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.subMessageType
+	slot3 = slot3.DungeonInvite
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 14-21, warpins: 1 ---
+	slot2 = slot1.subType
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.subMessageType
+	slot3 = slot3.Team
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-23, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-29, warpins: 3 ---
+	slot2 = slot1.playerId
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.uid
+	--- END OF BLOCK #4 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 30-37, warpins: 1 ---
 	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.navMgr
-	slot2 = slot2.CurrentFocusedGroupName
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isInTeam
+	slot5 = true
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 38-39, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 40-46, warpins: 2 ---
+	slot2 = slot0.chatComponent
+	slot4 = slot2
+	slot2 = slot2.getDungeonInviteRefreshInfo
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #7 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 47-48, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 49-49, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 50-50, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot7.isFocusedValidTeamInvite = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getFocusedChatListData
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-13, warpins: 1 ---
+	slot2 = slot1.subType
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.subMessageType
+	slot3 = slot3.HomeSeasonCelebrationInvite
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 14-21, warpins: 1 ---
+	slot2 = slot1.subType
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.subMessageType
+	slot3 = slot3.HomeSeasonMutationGift
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-23, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 24-29, warpins: 3 ---
+	slot2 = slot1.playerId
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.uid
+	--- END OF BLOCK #4 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 30-31, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 32-33, warpins: 2 ---
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.isFocusedHomeSeasonCelebrationInvite = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	slot1 = slot1.CurrentFocusedUContent
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -2858,63 +4944,87 @@ slot38 = function(slot0)
 	end
 
 
-	--- BLOCK #1 11-14, warpins: 1 ---
-	slot3 = slot1.gameObject
-	slot3 = slot3.name
+	--- BLOCK #1 7-10, warpins: 1 ---
+	slot2 = slot1.gameObject
+	slot2 = slot2.name
 	--- END OF BLOCK #1 ---
 
-	if slot3 ~= "UI_Node_ChatPanel_Friend_Item(Clone)" then
+	if slot2 ~= "UI_Node_ChatPanel_Friend_Item(Clone)" then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 15-18, warpins: 1 ---
-	slot3 = slot1.gameObject
-	slot3 = slot3.name
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot2 = slot1.gameObject
+	slot2 = slot2.name
 	--- END OF BLOCK #2 ---
 
-	if slot3 == "UI_Node_ChatPanel_Friend_Group(Clone)" then
+	if slot2 == "UI_Node_ChatPanel_Friend_Group(Clone)" then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 19-27, warpins: 2 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.Navigation
-	slot3 = slot3.ConsoleBar
-	slot3 = slot3.SetStateForAll
-	slot5 = "ConsoleBar_A_Chat"
-	slot6 = true
+	--- BLOCK #3 15-23, warpins: 2 ---
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.Navigation
+	slot2 = slot2.ConsoleBar
+	slot2 = slot2.SetStateForAll
+	slot4 = "ConsoleBar_A_Chat"
+	slot5 = true
 
-	slot3(slot5, slot6)
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 28-35, warpins: 2 ---
-	slot3 = CS
-	slot3 = slot3.XGUI
-	slot3 = slot3.Navigation
-	slot3 = slot3.ConsoleBar
-	slot3 = slot3.SetStateForAll
-	slot5 = "ConsoleBar_A_Chat"
-	slot6 = false
+	--- BLOCK #4 24-31, warpins: 2 ---
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.Navigation
+	slot2 = slot2.ConsoleBar
+	slot2 = slot2.SetStateForAll
+	slot4 = "ConsoleBar_A_Chat"
+	slot5 = false
 
-	slot3(slot5, slot6)
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 36-36, warpins: 2 ---
+	--- BLOCK #5 32-52, warpins: 2 ---
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.Navigation
+	slot2 = slot2.ConsoleBar
+	slot2 = slot2.SetStateForAll
+	slot4 = "ConsoleBar_Apply_Team_Chat"
+	slot7 = slot0
+	slot5 = slot0.isFocusedValidTeamInvite
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = CS
+	slot2 = slot2.XGUI
+	slot2 = slot2.Navigation
+	slot2 = slot2.ConsoleBar
+	slot2 = slot2.SetStateForAll
+	slot4 = "ConsoleBar_Home_Invite"
+	slot7 = slot0
+	slot5 = slot0.isFocusedHomeSeasonCelebrationInvite
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
 	return
 	--- END OF BLOCK #5 ---
 
@@ -2923,467 +5033,6 @@ slot38 = function(slot0)
 end
 
 slot7.refreshConsoleBarState = slot38
-
-slot38 = function(slot0)
-	--- BLOCK #0 1-34, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.split
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.prefsCacheUtils
-	slot5 = slot3
-	slot3 = slot3.getString
-	slot6 = pg
-	slot6 = slot6.me
-	slot6 = slot6.uid
-	slot7 = ClientConst
-	slot7 = slot7.PrefKey
-	slot7 = slot7.ChatChannelRecord
-	slot6 = slot6 .. slot7
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot7 = slot7.tabType
-	slot7 = slot7.World
-	slot8 = "|1"
-	slot7 = slot7 .. slot8
-	slot3 = slot3(slot5, slot6, slot7)
-	slot4 = "|"
-	slot1 = slot1(slot3, slot4)
-	slot2 = tonumber
-	slot4 = slot1[1]
-	slot2 = slot2(slot4)
-	slot3 = tonumber
-	slot5 = slot1[2]
-	slot3 = slot3(slot5)
-	slot4 = CommonSwitch
-	slot4 = slot4.MAIL
-	--- END OF BLOCK #0 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 35-42, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.checkHasRewardMail
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #1 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 43-50, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.checkHasNewMail
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #2 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 51-59, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.Mail
-	slot3 = 1
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 60-63, warpins: 2 ---
-	slot4 = CommonSwitch
-	slot4 = slot4.CHAT
-	--- END OF BLOCK #4 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 64-72, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.Mail
-	slot3 = 1
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 73-79, warpins: 2 ---
-	slot4 = ipairs
-	slot6 = pg
-	slot6 = slot6.game
-	slot6 = slot6.chat
-	slot6 = slot6.channelListData
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #7 80-82, warpins: 1 ---
-	slot9 = slot8.tIndex
-	--- END OF BLOCK #7 ---
-
-	if slot9 == 0 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 83-90, warpins: 1 ---
-	slot9 = pg
-	slot9 = slot9.game
-	slot9 = slot9.chat
-	slot11 = slot9
-	slot9 = slot9.getChannelUnReadMsgCount
-	slot12 = slot8.channelId
-	--- END OF BLOCK #8 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 91-91, warpins: 1 ---
-	slot12 = slot8.playerId
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 92-95, warpins: 2 ---
-	slot9 = slot9(slot11, slot12)
-	slot10 = 0
-	--- END OF BLOCK #10 ---
-
-	if slot9 > slot10 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 96-104, warpins: 1 ---
-	slot9 = pg
-	slot9 = slot9.game
-	slot9 = slot9.chat
-	slot9 = slot9.tabType
-	slot2 = slot9.Private
-	slot3 = slot7
-	slot9 = slot2
-	slot10 = slot3
-
-	return slot9, slot10
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 105-106, warpins: 4 ---
-	--- END OF BLOCK #12 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #13
-
-
-	--- BLOCK #13 107-113, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isInTeam
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #13 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #14 114-128, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.getChannelUnReadMsgCount
-	slot7 = pg
-	slot7 = slot7.me
-	slot9 = slot7
-	slot7 = slot7.getCurTeamInfo
-	slot7 = slot7(slot9)
-	slot7 = slot7.teamId
-	slot4 = slot4(slot6, slot7)
-	slot5 = 0
-	--- END OF BLOCK #14 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 129-137, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.World
-	slot3 = 2
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 138-151, warpins: 3 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.getChannelUnReadMsgCount
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot7 = slot7.channelType
-	slot7 = slot7.Friend
-	slot4 = slot4(slot6, slot7)
-	slot5 = 0
-	--- END OF BLOCK #16 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #17 152-160, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.World
-	slot3 = 5
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 161-175, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.getChannelUnReadMsgCount
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot9 = slot7
-	slot7 = slot7.getHomeCampGroupId
-	MULTRES = slot7(slot9)
-	slot4 = slot4(slot6, MULTRES)
-	slot5 = 0
-	--- END OF BLOCK #18 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 176-184, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.World
-	slot3 = 3
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 185-198, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.getChannelUnReadMsgCount
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot7 = slot7.channelType
-	slot7 = slot7.Near
-	slot4 = slot4(slot6, slot7)
-	slot5 = 0
-	--- END OF BLOCK #20 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #21
-	else
-	JUMP TO BLOCK #22
-	end
-
-
-	--- BLOCK #21 199-207, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.World
-	slot3 = 4
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 208-219, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.getChannelUnReadMsgCount
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.worldChatGroupId
-	slot4 = slot4(slot6, slot7)
-	slot5 = 0
-	--- END OF BLOCK #22 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 220-228, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.World
-	slot3 = 1
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 229-237, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot6 = slot4
-	slot4 = slot4.getFriendRequestCount
-	slot4 = slot4(slot6)
-	slot5 = 0
-	--- END OF BLOCK #24 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #25
-	else
-	JUMP TO BLOCK #26
-	end
-
-
-	--- BLOCK #25 238-246, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot2 = slot4.Friend
-	slot3 = 1
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #25 ---
-
-	FLOW; TARGET BLOCK #26
-
-
-	--- BLOCK #26 247-249, warpins: 2 ---
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-	--- END OF BLOCK #26 ---
-
-
-
-end
-
-slot7.getInitialSelectedChannel = slot38
 
 slot38 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -3431,15 +5080,51 @@ end
 slot7.hideExtensionFunc = slot38
 
 slot38 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = {}
 	slot2 = UIConst
 	slot2 = slot2.UI_ID_TEAM_ROOM
 	slot3 = true
 	slot1[slot2] = slot3
-
-	return slot1
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_EVENT
+	slot3 = true
+	slot1[slot2] = slot3
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_LITTLE_FIRE_GARDEN_MANUAL
+	slot3 = true
+	slot1[slot2] = slot3
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.checkUIOpen
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_TEAM_ROOM
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 24-27, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.UI_ID_GAME_INSTANCE
+	slot3 = true
+	slot1[slot2] = slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 28-28, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
 
 
 
@@ -3481,190 +5166,173 @@ slot38 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-23, warpins: 2 ---
-	slot2 = slot0.curTabType
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.Private
+	--- BLOCK #2 16-18, warpins: 2 ---
+	slot2 = slot1.messageData
 	--- END OF BLOCK #2 ---
 
-	if slot2 == slot3 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 24-26, warpins: 1 ---
-	slot2 = slot1.messageData
+	--- BLOCK #3 19-26, warpins: 1 ---
+	slot3 = slot2.channelType
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.channelType
+	slot4 = slot4.Group
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	if slot3 ~= slot4 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 27-35, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.chat
-	slot4 = slot2
-	slot2 = slot2.checkTopChannel
-	slot5 = slot1.channelId
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #4 27-28, warpins: 1 ---
+	slot3 = false
 	--- END OF BLOCK #4 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 29-29, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-31, warpins: 3 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 36-49, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.refreshChannelListInner
+	--- BLOCK #7 32-34, warpins: 1 ---
+	slot4 = slot0.friendTabComponent
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 35-38, warpins: 1 ---
+	slot4 = slot0.friendTabComponent
+	slot6 = slot4
+	slot4 = slot4.refreshGroupChatList
+
+	slot4(slot6)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 39-46, warpins: 3 ---
+	slot4 = slot0.curTabType
 	slot5 = pg
 	slot5 = slot5.game
 	slot5 = slot5.chat
 	slot5 = slot5.tabType
-	slot5 = slot5.Private
-	slot6 = slot1.messageData
-	slot6 = slot6.playerId
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.uid
-	--- END OF BLOCK #5 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 50-51, warpins: 1 ---
-	slot6 = 1
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 52-52, warpins: 1 ---
-	slot6 = nil
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 53-54, warpins: 2 ---
-	slot2(slot4, slot5, slot6)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #9 55-63, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.chat
-	slot4 = slot2
-	slot2 = slot2.getTopChannelCount
-	slot2 = slot2(slot4)
-	slot3 = 0
+	slot5 = slot5.Chat
 	--- END OF BLOCK #9 ---
 
-	if slot2 > slot3 then
+	if slot4 == slot5 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 64-64, warpins: 1 ---
-	slot2 = slot2 + 1
+	--- BLOCK #10 47-48, warpins: 1 ---
+	slot4 = slot1.channelOrderChanged
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #11 65-78, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.refreshChannelListInner
-	slot6 = pg
-	slot6 = slot6.game
-	slot6 = slot6.chat
-	slot6 = slot6.tabType
-	slot6 = slot6.Private
-	slot7 = slot1.messageData
-	slot7 = slot7.playerId
-	slot8 = pg
-	slot8 = slot8.me
-	slot8 = slot8.uid
+	--- BLOCK #11 49-50, warpins: 1 ---
+	slot4 = false
 	--- END OF BLOCK #11 ---
 
-	if slot7 == slot8 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 79-81, warpins: 1 ---
-	slot7 = slot2 + 1
+	--- BLOCK #12 51-51, warpins: 0 ---
+	slot4 = true
 	--- END OF BLOCK #12 ---
 
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #13
-	else
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 52-53, warpins: 3 ---
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
 	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 82-82, warpins: 2 ---
-	slot7 = nil
+	--- BLOCK #14 54-70, warpins: 1 ---
+	slot5 = slot0.view
+	slot5 = slot5.channelListUList
+	slot5 = slot5.selectedItem
+	slot6 = slot0.model
+	slot8 = slot6
+	slot6 = slot6.getChannelSelectionKey
+	slot9 = slot5
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot0
+	slot7 = slot0.refreshChannelListInner
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot10 = slot10.tabType
+	slot10 = slot10.Chat
+	slot11 = slot6
 
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 83-83, warpins: 2 ---
-	slot3(slot5, slot6, slot7)
+	slot7(slot9, slot10, slot11)
 
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 84-104, warpins: 4 ---
-	slot2 = string
-	slot2 = slot2.format
-	slot4 = RedDotConst
-	slot4 = slot4.RedDotPath
-	slot4 = slot4.CHAT_TAB_MESSAGE_LIST_ITEM
+	--- BLOCK #15 71-90, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.game
 	slot5 = slot5.chat
 	slot5 = slot5.channelTypeInfo
-	slot6 = slot1.messageData
-	slot6 = slot6.channelType
+	slot6 = slot2.channelType
 	slot5 = slot5[slot6]
-	slot5 = slot5.cate
-	slot6 = slot1.channelId
-	slot2 = slot2(slot4, slot5, slot6)
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.refreshRedDotState
-	slot5 = slot2
+	slot6 = string
+	slot6 = slot6.format
+	slot8 = RedDotConst
+	slot8 = slot8.RedDotPath
+	slot8 = slot8.CHAT_TAB_MESSAGE_LIST_ITEM
+	slot9 = slot5.cate
+	slot10 = slot1.channelId
+	slot6 = slot6(slot8, slot9, slot10)
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.refreshRedDotState
+	slot9 = slot6
 
-	slot3(slot5)
+	slot7(slot9)
 
 	return
 	--- END OF BLOCK #15 ---
@@ -3700,42 +5368,28 @@ end
 slot7.tryUpdateMessageList = slot38
 
 slot38 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot2 = slot0.curTabType
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.World
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot2 == slot3 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-11, warpins: 1 ---
-	slot2 = slot0.chatComponent
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-21, warpins: 1 ---
-	slot2 = slot0.chatComponent
-	slot2 = slot2.curSelectedChannelId
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.getCurTeamInfo
-	slot3 = slot3(slot5)
-	slot3 = slot3.teamId
+	--- BLOCK #2 4-8, warpins: 2 ---
+	slot2 = slot1.channelId
+	slot3 = slot0.chatComponent
+	slot3 = slot3.curSelectedChannelId
 
 	--- END OF BLOCK #2 ---
 
@@ -3746,7 +5400,7 @@ slot38 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 22-22, warpins: 3 ---
+	--- BLOCK #3 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -3754,20 +5408,145 @@ slot38 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-32, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.refreshChannelListInner
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.World
-	slot6 = 2
+	--- BLOCK #4 10-16, warpins: 2 ---
+	slot2 = slot0.chatComponent
+	slot4 = slot2
+	slot2 = slot2.tryRefreshChatMessageItem
+	slot5 = slot1.msgId
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
 
-	slot2(slot4, slot5, slot6)
+	if slot2 == false then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 17-20, warpins: 1 ---
+	slot3 = slot0.chatComponent
+	slot5 = slot3
+	slot3 = slot3.refreshChatMessageList
+
+	slot3(slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 21-21, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.tryUpdateMessageItem = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = slot0.curTabType
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.tabType
+	slot3 = slot3.Notice
+	--- END OF BLOCK #0 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.channelListUList
+	slot2 = slot2.selectedItem
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 14-24, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.channelListUList
+	slot2 = slot2.selectedItem
+	slot2 = slot2.type
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.channelType
+	slot3 = slot3.Team
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 25-26, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 27-27, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 28-29, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-30, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 31-46, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshChannelListInner
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Notice
+	slot7 = "type:"
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.channelType
+	slot8 = slot8.Team
+	slot7 = slot7 .. slot8
+
+	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -3782,10 +5561,10 @@ slot38 = function(slot0, slot1)
 	slot3 = slot3.game
 	slot3 = slot3.chat
 	slot3 = slot3.tabType
-	slot3 = slot3.Private
+	slot3 = slot3.Chat
 	--- END OF BLOCK #0 ---
 
-	if slot2 == slot3 then
+	if slot2 ~= slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #4
@@ -3795,49 +5574,103 @@ slot38 = function(slot0, slot1)
 	--- BLOCK #1 9-10, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 11-20, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.refreshChannelListInner
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Private
-	slot6 = slot1.curSelectedChannel
-
-	slot2(slot4, slot5, slot6)
-
+	--- BLOCK #2 11-14, warpins: 1 ---
+	slot2 = slot1.tabType
+	slot3 = slot0.curTabType
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 21-28, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.refreshChannelListInner
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Private
-
-	slot2(slot4, slot5)
-
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 29-29, warpins: 3 ---
-	return
+	--- BLOCK #4 17-17, warpins: 2 ---
+	slot2 = true
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-19, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 20-20, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-25, warpins: 2 ---
+	slot3 = slot0.view
+	slot3 = slot3.channelListUList
+	slot3 = slot3.selectedItem
+	--- END OF BLOCK #7 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 26-28, warpins: 1 ---
+	slot4 = slot1.selectionKey
+	--- END OF BLOCK #8 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 29-33, warpins: 2 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getChannelSelectionKey
+	slot7 = slot3
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 34-39, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.refreshChannelListInner
+	slot8 = slot0.curTabType
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #10 ---
 
 
 
@@ -3852,7 +5685,7 @@ slot38 = function(slot0, slot1)
 	slot3 = slot3.game
 	slot3 = slot3.chat
 	slot3 = slot3.tabType
-	slot3 = slot3.Private
+	slot3 = slot3.Chat
 	--- END OF BLOCK #0 ---
 
 	if slot2 == slot3 then
@@ -3862,23 +5695,32 @@ slot38 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 9-16, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.refreshChannelListInner
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.chat
-	slot5 = slot5.tabType
-	slot5 = slot5.Private
+	--- BLOCK #1 9-25, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.channelListUList
+	slot2 = slot2.selectedItem
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getChannelSelectionKey
+	slot6 = slot2
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot0
+	slot4 = slot0.refreshChannelListInner
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.chat
+	slot7 = slot7.tabType
+	slot7 = slot7.Chat
+	slot8 = slot3
 
-	slot2(slot4, slot5)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-20, warpins: 2 ---
+	--- BLOCK #2 26-29, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.refreshFriendList
 
@@ -3893,91 +5735,119 @@ end
 
 slot7.onVariantFriendChanged = slot38
 
-slot38 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = pairs
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.worldChannelListData
-	slot1, slot2, slot3 = slot1(slot3)
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot2 = slot1.groupId
+	slot3 = slot1.oldGroupId
+	slot4 = slot0.curTabType
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	slot5 = slot5.tabType
+	slot5 = slot5.Public
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	if slot4 ~= slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 8-15, warpins: 1 ---
-	slot6 = slot5.type
+	--- BLOCK #1 11-12, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 13-13, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-20, warpins: 2 ---
+	slot5 = ipairs
 	slot7 = pg
 	slot7 = slot7.game
 	slot7 = slot7.chat
-	slot7 = slot7.channelType
-	slot7 = slot7.World
-	--- END OF BLOCK #1 ---
-
-	if slot6 == slot7 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 16-21, warpins: 1 ---
-	slot6 = slot5.channelId
-	slot7 = pg
-	slot7 = slot7.me
-	slot7 = slot7.worldChatGroupId
-	--- END OF BLOCK #2 ---
-
-	if slot6 ~= slot7 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 22-43, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot6 = slot6.worldChatGroupId
-	slot5.channelId = slot6
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.chatHistory
-	slot9 = pg
-	slot9 = slot9.me
-	slot9 = slot9.uid
-	slot10 = pg
-	slot10 = slot10.me
-	slot10 = slot10.worldChatGroupId
-	slot11 = Const
-	slot11 = slot11.CHAT_TYPE
-	slot11 = slot11.GROUP
-	slot12 = 0
-	slot13 = 50
-	slot14 = {
-		isWorldChannelChange = true
-	}
-
-	slot6(slot8, slot9, slot10, slot11, slot12, slot13, slot14)
-
+	slot7 = slot7.worldChannelListData
+	slot5, slot6, slot7 = slot5(slot7)
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #4 44-45, warpins: 2 ---
+	--- BLOCK #4 21-30, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot12 = slot10
+	slot10 = slot10.isChatGroupBase
+	slot13 = slot2
+	slot14 = slot9.groupBase
+	slot10 = slot10(slot12, slot13, slot14)
 	--- END OF BLOCK #4 ---
 
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #5
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 46-46, warpins: 3 ---
-	return
+	--- BLOCK #5 31-38, warpins: 1 ---
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot12 = slot10
+	slot10 = slot10.isChatGroupBase
+	slot13 = slot3
+	slot14 = slot9.groupBase
+	slot10 = slot10(slot12, slot13, slot14)
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 39-40, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 41-47, warpins: 1 ---
+	slot13 = slot0
+	slot11 = slot0.updateWorldChannelLine
+	slot14 = slot9
+	slot15 = slot2
+	slot16 = slot4
+
+	slot11(slot13, slot14, slot15, slot16)
+
+	return
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 48-49, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	for slot8, slot9 in slot5, slot6, slot7
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 50-50, warpins: 1 ---
+	return
+	--- END OF BLOCK #9 ---
 
 
 
@@ -3985,21 +5855,125 @@ end
 
 slot7.onWorldChannelLineChanged = slot38
 
-slot38 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot1 = slot0.chatComponent
-	slot2 = true
-	slot1.needSetBottom = slot2
-	slot3 = slot0
-	slot1 = slot0.refreshChannelListInner
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot4 = slot4.World
-	slot5 = 1
+slot38 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot1.channelId
 
-	slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot4 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot1.channelId = slot2
+	slot4 = string
+	slot4 = slot4.isNilOrEmpty
+	slot6 = slot2
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 12-13, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-21, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.refreshChannelListInner
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.chat
+	slot7 = slot7.tabType
+	slot7 = slot7.Public
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-22, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-45, warpins: 2 ---
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getChannelSelectionKey
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.chatHistory
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.uid
+	slot9 = slot2
+	slot10 = Const
+	slot10 = slot10.CHAT_TYPE
+	slot10 = slot10.GROUP
+	slot11 = 0
+	slot12 = 50
+	slot13 = {}
+	slot13.isWorldChannelChange = slot3
+	slot13.selectionKey = slot4
+
+	slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.updateWorldChannelLine = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot2 = slot0.chatComponent
+	slot3 = true
+	slot2.needSetBottom = slot3
+	slot4 = slot0
+	slot2 = slot0.refreshChannelListInner
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	slot5 = slot5.tabType
+	slot5 = slot5.Public
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -4011,55 +5985,84 @@ end
 slot7.refreshWorldChannel = slot38
 
 slot38 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
-	slot1 = {}
-	slot2 = slot0.view
-	slot2 = slot2.btnChatUButton
-	slot1[1] = slot2
-	slot2 = slot0.view
-	slot2 = slot2.btnPublicUButton
-	slot1[2] = slot2
-	slot2 = slot0.view
-	slot2 = slot2.btnNoticeUButton
-	slot1[3] = slot2
-	slot2 = slot0.view
-	slot2 = slot2.btnFriendUButton
-	slot1[4] = slot2
-	slot2 = slot0.view
-	slot2 = slot2.btnMailUButton
-	slot1[5] = slot2
-	slot2 = IsNil
-	slot4 = slot0.channelTabWidget
-	slot2 = slot2(slot4)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = slot0.curTabType
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	slot2 = slot2.tabType
+	slot2 = slot2.Public
+
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	if slot1 ~= slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 22-30, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnChatUButton
-	slot2 = slot2.transform
-	slot2 = slot2.parent
-	slot4 = slot2
-	slot2 = slot2.GetComponent
-	slot5 = "UWidget"
-	slot2 = slot2(slot4, slot5)
-	slot0.channelTabWidget = slot2
+	--- BLOCK #1 9-9, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 31-35, warpins: 2 ---
-	slot2 = IsNil
-	slot4 = slot0.channelTabWidget
-	slot2 = slot2(slot4)
+	--- BLOCK #2 10-26, warpins: 2 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getChannelSelectionKey
+	slot4 = slot0.view
+	slot4 = slot4.channelListUList
+	slot4 = slot4.selectedItem
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot0
+	slot2 = slot0.refreshChannelListInner
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.chat
+	slot5 = slot5.tabType
+	slot5 = slot5.Public
+	slot6 = slot1
 
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.onPlayerLevelChanged = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.curTabType
+
+	--- END OF BLOCK #0 ---
+
+	if slot2 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot2 = slot0.tabHideHandlers
+	slot3 = slot0.curTabType
+	slot2 = slot2[slot3]
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -4069,78 +6072,25 @@ slot38 = function(slot0)
 	end
 
 
-	--- BLOCK #3 36-36, warpins: 1 ---
-	return
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot3 = slot2
+
+	slot3()
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 37-40, warpins: 2 ---
-	slot2 = ipairs
-	slot4 = slot1
-	slot2, slot3, slot4 = slot2(slot4)
+	--- BLOCK #4 12-12, warpins: 2 ---
+	return
 	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #5 41-45, warpins: 1 ---
-	slot7 = IsNil
-	slot9 = slot6
-	slot7 = slot7(slot9)
-	--- END OF BLOCK #5 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 46-48, warpins: 1 ---
-	slot7 = slot6.isSelected
-	--- END OF BLOCK #6 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 49-54, warpins: 1 ---
-	slot7 = slot0.channelTabWidget
-	slot9 = slot7
-	slot7 = slot7.SetNavGroupDefaultItem
-	slot10 = slot6
-
-	slot7(slot9, slot10)
-
-	return
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 55-56, warpins: 4 ---
-	--- END OF BLOCK #8 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #5
-	GO OUT TO BLOCK #9
-
-
-	--- BLOCK #9 57-57, warpins: 1 ---
-	return
-	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot7.refreshChannelTabGamepadDefaultFocus = slot38
+slot7.notifyTabHide = slot38
 
 slot38 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -4154,7 +6104,13 @@ slot38 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.notifyTabHide
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
 	slot0.curTabType = slot1
 	slot3 = slot0.chatComponent
 	slot4 = true
@@ -4164,7 +6120,7 @@ slot38 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-18, warpins: 2 ---
+	--- BLOCK #2 12-22, warpins: 2 ---
 	slot3 = slot0.chatComponent
 	slot5 = slot3
 	slot3 = slot3.resetBottomInputState
@@ -4268,6 +6224,56 @@ slot38 = function(slot0)
 end
 
 slot7.refreshFriendList = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot0.sparkAnimationPlayerUid = slot1
+	slot2 = slot0.chatComponent
+	slot4 = slot2
+	slot2 = slot2.refreshPlayerSpark
+
+	slot2(slot4)
+
+	slot2 = slot0.friendTabComponent
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-12, warpins: 1 ---
+	slot2 = slot0.friendTabComponent
+	slot4 = slot2
+	slot2 = slot2.refreshPlayerSpark
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 13-19, warpins: 2 ---
+	slot2 = slot0.friendNewComponent
+	slot4 = slot2
+	slot2 = slot2.refreshFriendListState
+
+	slot2(slot4)
+
+	slot2 = nil
+	slot0.sparkAnimationPlayerUid = slot2
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot7.refreshPlayerSpark = slot38
 
 slot38 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
@@ -4577,28 +6583,53 @@ end
 slot7.refreshFriendRequestList = slot38
 
 slot38 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = slot0.mailComponent
-	slot4 = slot2
-	slot2 = slot2.refreshMailList
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = slot0.curTabType
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.chat
+	slot3 = slot3.tabType
+	slot3 = slot3.Mail
+
 	--- END OF BLOCK #0 ---
 
-	slot5 = if slot1 then
+	if slot2 ~= slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot5 = slot1.indexDiff
+	--- BLOCK #1 9-9, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-12, warpins: 2 ---
+	--- BLOCK #2 10-14, warpins: 2 ---
+	slot2 = slot0.mailComponent
+	slot4 = slot2
+	slot2 = slot2.refreshMailList
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-15, warpins: 1 ---
+	slot5 = slot1.indexDiff
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-21, warpins: 2 ---
 	slot2(slot4, slot5)
 
 	slot2 = slot0.mailComponent
@@ -4608,13 +6639,30 @@ slot38 = function(slot0, slot1)
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
 slot7.refreshMailList = slot38
+
+slot38 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = slot0.mailComponent
+	slot3 = slot1
+	slot1 = slot1.refreshMailContent
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.refreshMailContent = slot38
 
 slot38 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-5, warpins: 1 ---
@@ -4657,7 +6705,7 @@ slot38 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 17-40, warpins: 2 ---
+		--- BLOCK #3 17-47, warpins: 2 ---
 		slot0.openType = slot1
 		slot1 = self
 		slot3 = slot1
@@ -4665,6 +6713,12 @@ slot38 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot4 = data
 		slot1 = slot1(slot3, slot4)
 		slot0.reportInfo = slot1
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.getChatReportText
+		slot4 = data
+		slot1 = slot1(slot3, slot4)
+		slot0.reportText = slot1
 		slot1 = pg
 		slot1 = slot1.game
 		slot1 = slot1.chat
@@ -4677,9 +6731,28 @@ slot38 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		slot5 = slot5.chat
 		slot5 = slot5.queryPlayerInfoType
 		slot5 = slot5.ShowPlayerInfo
-		slot6 = nil
+
+		slot6 = function()
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.openPlayerInfoCard
+			slot3 = data
+			slot3 = slot3.playerId
+			slot4 = extraInfo
+
+			slot0(slot2, slot3, slot4)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
 		slot7 = slot0
-		slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
+		slot8 = true
+		slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8)
 		--- END OF BLOCK #3 ---
 
 		slot1 = if not slot1 then
@@ -4689,7 +6762,7 @@ slot38 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		end
 
 
-		--- BLOCK #4 41-47, warpins: 1 ---
+		--- BLOCK #4 48-54, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.openPlayerInfoCard
@@ -4704,7 +6777,7 @@ slot38 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 48-48, warpins: 2 ---
+		--- BLOCK #5 55-56, warpins: 2 ---
 		return
 		--- END OF BLOCK #5 ---
 
@@ -4807,6 +6880,289 @@ slot38 = function(slot0, slot1)
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-11, warpins: 2 ---
+	slot2 = slot1.textContent
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-12, warpins: 1 ---
+	slot2 = ""
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-20, warpins: 2 ---
+	slot3 = slot1.subType
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.subMessageType
+	slot4 = slot4.Audio
+	--- END OF BLOCK #4 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #5 21-27, warpins: 1 ---
+	slot3 = nil
+	slot4 = Utils
+	slot4 = slot4.isTable
+	slot6 = slot1.extraInfo
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 28-34, warpins: 1 ---
+	slot4 = slot1.extraInfo
+	slot5 = Const
+	slot5 = slot5.CHAT_EXTRA_TYPE
+	slot5 = slot5.Voice
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 35-35, warpins: 2 ---
+	slot4 = nil
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 36-41, warpins: 2 ---
+	slot5 = Utils
+	slot5 = slot5.isTable
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 42-43, warpins: 1 ---
+	slot3 = slot4
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #10 44-48, warpins: 1 ---
+	slot5 = type
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #10 ---
+
+	if slot5 == "string" then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #11 49-54, warpins: 1 ---
+	slot5 = string
+	slot5 = slot5.isNilOrEmpty
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #11 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 55-61, warpins: 1 ---
+	slot5 = pcall
+	slot7 = json
+	slot7 = slot7.decode
+	slot8 = slot4
+	slot5, slot6 = slot5(slot7, slot8)
+	--- END OF BLOCK #12 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 62-67, warpins: 1 ---
+	slot7 = Utils
+	slot7 = slot7.isTable
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #13 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 68-68, warpins: 1 ---
+	slot3 = slot6
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 69-70, warpins: 6 ---
+	--- END OF BLOCK #15 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 71-73, warpins: 1 ---
+	slot5 = slot3.text
+	--- END OF BLOCK #16 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 74-74, warpins: 2 ---
+	slot5 = ""
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 75-76, warpins: 2 ---
+	slot2 = slot5
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #19 77-84, warpins: 1 ---
+	slot3 = slot1.subType
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.subMessageType
+	slot4 = slot4.Text
+	--- END OF BLOCK #19 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 85-86, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 87-92, warpins: 3 ---
+	slot3 = string
+	slot3 = slot3.isNilOrEmpty
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #21 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 93-94, warpins: 1 ---
+	slot3 = nil
+
+	return slot3
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 95-102, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.getFormatText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "CHAT_REPORT_MESSAGE_CONTENT"
+	slot5 = slot5(slot7)
+	slot6 = slot2
+
+	return slot3(slot5, slot6)
+	--- END OF BLOCK #23 ---
+
+
+
+end
+
+slot7.getChatReportText = slot38
+
+slot38 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isTable
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
@@ -4895,8 +7251,8 @@ slot38 = function(slot0, slot1)
 
 	--- BLOCK #8 34-38, warpins: 2 ---
 	slot4 = {
-		detailType = "private_chat",
-		reportType = "chat"
+		reportType = "chat",
+		detailType = "private_chat"
 	}
 	slot5 = tostring
 	slot7 = slot1.playerId
@@ -5297,172 +7653,208 @@ slot38 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 18-26, warpins: 2 ---
-	slot5 = nil
-	slot6 = pg
-	slot6 = slot6.game
-	slot6 = slot6.chat
-	slot6 = slot6.AddFriendSource
-	slot6 = slot6.ChatChannel
-	slot7 = slot0.view
+	--- BLOCK #5 18-23, warpins: 2 ---
+	slot5 = Utils
+	slot5 = slot5.isTable
+	slot7 = slot2
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #5 ---
 
-	slot7 = if slot7 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #6 27-31, warpins: 1 ---
-	slot7 = slot0.view
-	slot7 = slot7.channelListUList
-	slot7 = slot7.selectedItem
+	--- BLOCK #6 24-26, warpins: 1 ---
+	slot5 = slot2.reportText
 	--- END OF BLOCK #6 ---
 
-	slot7 = if slot7 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 32-39, warpins: 1 ---
-	slot8 = slot7.type
-	slot9 = pg
-	slot9 = slot9.game
-	slot9 = slot9.chat
-	slot9 = slot9.channelType
-	slot9 = slot9.Player
+	--- BLOCK #7 27-27, warpins: 2 ---
+	slot5 = nil
 	--- END OF BLOCK #7 ---
 
-	if slot8 == slot9 then
-	JUMP TO BLOCK #8
-	else
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-36, warpins: 2 ---
+	slot6 = nil
+	slot7 = pg
+	slot7 = slot7.game
+	slot7 = slot7.chat
+	slot7 = slot7.AddFriendSource
+	slot7 = slot7.ChatChannel
+	slot8 = slot0.view
+	--- END OF BLOCK #8 ---
+
+	slot8 = if slot8 then
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #8 40-45, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "CHAT_CHANNEL_PRIVATE"
-	slot8 = slot8(slot10)
-	slot5 = slot8
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #9 46-58, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = slot7.label
-	slot8 = slot8(slot10)
-	slot5 = slot8
-	slot8 = slot7.type
-	slot9 = pg
-	slot9 = slot9.game
-	slot9 = slot9.chat
-	slot9 = slot9.channelType
-	slot9 = slot9.World
+	--- BLOCK #9 37-41, warpins: 1 ---
+	slot8 = slot0.view
+	slot8 = slot8.channelListUList
+	slot8 = slot8.selectedItem
 	--- END OF BLOCK #9 ---
 
-	if slot8 == slot9 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #10 42-49, warpins: 1 ---
+	slot9 = slot8.type
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot10 = slot10.channelType
+	slot10 = slot10.Player
+	--- END OF BLOCK #10 ---
+
+	if slot9 == slot10 then
+	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 59-71, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.getFormatText
-	slot10 = slot5
-	slot11 = string
-	slot11 = slot11.sub
-	slot13 = pg
-	slot13 = slot13.me
-	slot13 = slot13.worldChatGroupId
-	slot14 = -1
-	MULTRES = slot11(slot13, slot14)
-	slot8 = slot8(slot10, MULTRES)
-	slot5 = slot8
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #11 72-76, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.game
-	slot8 = slot8.chat
-	slot8 = slot8.AddFriendSource
-	slot6 = slot8.PlayerCard
+	--- BLOCK #11 50-55, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = "CHAT_CHANNEL_PRIVATE"
+	slot9 = slot9(slot11)
+	slot6 = slot9
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #12 77-82, warpins: 5 ---
-	slot7 = string
-	slot7 = slot7.isNilOrEmpty
-	slot9 = slot5
-	slot7 = slot7(slot9)
+	--- BLOCK #12 56-63, warpins: 1 ---
+	slot9 = slot8.type
+	slot10 = pg
+	slot10 = slot10.game
+	slot10 = slot10.chat
+	slot10 = slot10.channelType
+	slot10 = slot10.World
 	--- END OF BLOCK #12 ---
 
-	slot7 = if slot7 then
+	if slot9 == slot10 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 83-87, warpins: 1 ---
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.chat
-	slot7 = slot7.AddFriendSource
-	slot6 = slot7.PlayerCard
+	--- BLOCK #13 64-73, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot11 = slot9
+	slot9 = slot9.getWorldChatChannelName
+	slot12 = slot8.channelId
+	slot13 = slot8.groupBase
+	slot9 = slot9(slot11, slot12, slot13)
+	slot6 = slot9
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #14 88-90, warpins: 2 ---
-	slot7 = {}
+	--- BLOCK #14 74-79, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = slot8.label
+	slot9 = slot9(slot11)
+	slot6 = slot9
 	--- END OF BLOCK #14 ---
 
-	slot8 = if not slot3 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #15 91-93, warpins: 1 ---
-	slot8 = ClientConst
-	slot8 = slot8.PlayerInfoOpenType
-	slot8 = slot8.Chat
+	--- BLOCK #15 80-84, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.game
+	slot9 = slot9.chat
+	slot9 = slot9.AddFriendSource
+	slot7 = slot9.PlayerCard
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 94-103, warpins: 2 ---
-	slot7.openType = slot8
-	slot7.playerId = slot1
-	slot7.openSource = slot6
-	slot7.sourceName = slot5
-	slot7.reportInfo = slot4
-	slot8 = LuaUIUtils
-	slot8 = slot8.openInfoPlayerCard
-	slot10 = slot7
+	--- BLOCK #16 85-90, warpins: 5 ---
+	slot8 = string
+	slot8 = slot8.isNilOrEmpty
+	slot10 = slot6
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #16 ---
 
-	slot8(slot10)
+	slot8 = if slot8 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 91-95, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.game
+	slot8 = slot8.chat
+	slot8 = slot8.AddFriendSource
+	slot7 = slot8.PlayerCard
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 96-98, warpins: 2 ---
+	slot8 = {}
+	--- END OF BLOCK #18 ---
+
+	slot9 = if not slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 99-101, warpins: 1 ---
+	slot9 = ClientConst
+	slot9 = slot9.PlayerInfoOpenType
+	slot9 = slot9.Chat
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 102-112, warpins: 2 ---
+	slot8.openType = slot9
+	slot8.playerId = slot1
+	slot8.openSource = slot7
+	slot8.sourceName = slot6
+	slot8.reportInfo = slot4
+	slot8.reportText = slot5
+	slot9 = LuaUIUtils
+	slot9 = slot9.openInfoPlayerCard
+	slot11 = slot8
+
+	slot9(slot11)
 
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #20 ---
 
 
 
@@ -5526,23 +7918,24 @@ slot38 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 19-37, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot7 = slot5
-	slot5 = slot5.open
-	slot8 = UIConst
-	slot8 = slot8.UI_ID_CHAT
-	slot9 = {}
-	slot10 = pg
-	slot10 = slot10.game
-	slot10 = slot10.chat
-	slot10 = slot10.tabType
-	slot10 = slot10.Private
-	slot9.initTab = slot10
+	--- BLOCK #5 19-38, warpins: 1 ---
+	slot5 = {}
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.chat
+	slot6 = slot6.tabType
+	slot6 = slot6.Chat
+	slot5.initTab = slot6
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot8 = slot6
+	slot6 = slot6.open
+	slot9 = UIConst
+	slot9 = slot9.UI_ID_CHAT
+	slot10 = slot5
 
-	slot10 = function()
+	slot11 = function()
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.game
@@ -5561,19 +7954,19 @@ slot38 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot11 = nil
-	slot12 = {
+	slot12 = nil
+	slot13 = {
 		ignoreDisableMainCamera = true
 	}
 
-	slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
 
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 38-39, warpins: 1 ---
+	--- BLOCK #6 39-40, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
 	slot3 = if not slot3 then
@@ -5583,7 +7976,7 @@ slot38 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 40-44, warpins: 1 ---
+	--- BLOCK #7 41-45, warpins: 1 ---
 	slot5 = slot0.view
 	slot5 = slot5.btnChatUButton
 	slot7 = slot5
@@ -5596,7 +7989,7 @@ slot38 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 45-52, warpins: 2 ---
+	--- BLOCK #8 46-53, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.game
 	slot5 = slot5.chat
@@ -5612,14 +8005,14 @@ slot38 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 53-54, warpins: 3 ---
+	--- BLOCK #9 54-55, warpins: 3 ---
 	return
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 55-55, warpins: 2 ---
+	--- BLOCK #10 56-56, warpins: 2 ---
 	return slot5(slot7, slot8, slot9, slot10)
 	--- END OF BLOCK #10 ---
 
@@ -5654,7 +8047,7 @@ slot38 = function(slot0, slot1)
 	slot7 = slot7.game
 	slot7 = slot7.chat
 	slot7 = slot7.tabType
-	slot7 = slot7.Private
+	slot7 = slot7.Chat
 	slot6.initTab = slot7
 
 	slot7 = function()
@@ -5749,229 +8142,179 @@ slot38 = function(slot0, slot1)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot1 then
 	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot2 = slot1.initTab
-	--- END OF BLOCK #1 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #2 11-22, warpins: 1 ---
-	slot2 = slot1.initTab
-	slot0.initTab = slot2
-	slot2 = slot1.initSecondTab
-	slot0.initSecondTab = slot2
-	slot2 = slot0.initTab
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.Private
-	--- END OF BLOCK #2 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 23-28, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnChatUButton
-	slot4 = slot2
-	slot2 = slot2.OnClickSimulate
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot2 = slot1.openAddFriend
+	--- END OF BLOCK #1 ---
 
-	slot2(slot4)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #4 29-36, warpins: 1 ---
-	slot2 = slot0.initTab
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.World
-	--- END OF BLOCK #4 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #5
+	if slot2 ~= true then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #5 37-42, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnPublicUButton
-	slot4 = slot2
-	slot2 = slot2.OnClickSimulate
+	--- BLOCK #2 11-12, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
 
-	slot2(slot4)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #6 43-50, warpins: 1 ---
-	slot2 = slot0.initTab
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.Notice
-	--- END OF BLOCK #6 ---
+	--- BLOCK #3 13-13, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
 
-	if slot2 == slot3 then
-	JUMP TO BLOCK #7
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-16, warpins: 3 ---
+	slot0.openAddFriend = slot2
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 51-56, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnNoticeUButton
-	slot4 = slot2
-	slot2 = slot2.OnClickSimulate
+	--- BLOCK #5 17-19, warpins: 1 ---
+	slot2 = slot1.openFriendList
+	--- END OF BLOCK #5 ---
 
-	slot2(slot4)
+	if slot2 ~= true then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
+
+	--- BLOCK #6 20-21, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 22-22, warpins: 1 ---
+	slot2 = true
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 57-64, warpins: 1 ---
-	slot2 = slot0.initTab
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.Friend
+	--- BLOCK #8 23-25, warpins: 3 ---
+	slot0.openFriendList = slot2
 	--- END OF BLOCK #8 ---
 
-	if slot2 == slot3 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 65-70, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnFriendUButton
-	slot4 = slot2
-	slot2 = slot2.OnClickSimulate
-
-	slot2(slot4)
-
+	--- BLOCK #9 26-28, warpins: 1 ---
+	slot2 = slot1.initTab
 	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
+	slot2 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 71-78, warpins: 1 ---
-	slot2 = slot0.initTab
+	--- BLOCK #10 29-41, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.resolveOpenChannelSelection
+	slot5 = slot1
+	slot6 = slot1.initTab
+	slot7 = nil
+	slot2, slot3 = slot2(slot4, slot5, slot6, slot7)
+	slot0.initSelectionKey = slot3
+	slot0.initTab = slot2
+	slot4 = slot0
+	slot2 = slot0.selectInitialTab
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	return
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-43, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #12 44-46, warpins: 1 ---
+	slot2 = slot1.subTab
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 47-49, warpins: 1 ---
+	slot2 = slot1.subTab
+	--- END OF BLOCK #13 ---
+
+	if slot2 == 1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 50-67, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.chat
+	slot2 = slot2.tabType
+	slot2 = slot2.Chat
+	slot0.initTab = slot2
+	slot2 = "type:"
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.chat
-	slot3 = slot3.tabType
-	slot3 = slot3.Mail
-	--- END OF BLOCK #10 ---
+	slot3 = slot3.channelType
+	slot3 = slot3.System
+	slot2 = slot2 .. slot3
+	slot0.initSelectionKey = slot2
+	slot4 = slot0
+	slot2 = slot0.selectInitialTab
+	slot5 = false
 
-	if slot2 == slot3 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
+	slot2(slot4, slot5)
 
-
-	--- BLOCK #11 79-83, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnMailUButton
-	slot4 = slot2
-	slot2 = slot2.OnClickSimulate
-
-	slot2(slot4)
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 84-84, warpins: 6 ---
-	return
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 85-86, warpins: 3 ---
-	--- END OF BLOCK #13 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #14 87-89, warpins: 1 ---
-	slot2 = slot1.subTab
 	--- END OF BLOCK #14 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 90-92, warpins: 1 ---
-	slot2 = slot1.subTab
-	--- END OF BLOCK #15 ---
-
-	if slot2 == 1 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 93-97, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.btnNoticeUButton
-	slot4 = slot2
-	slot2 = slot2.OnClickSimulate
-
-	slot2(slot4)
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 98-98, warpins: 4 ---
+	--- BLOCK #15 68-68, warpins: 4 ---
 	return
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #15 ---
 
 
 
@@ -5980,7 +8323,7 @@ end
 slot7.onOpen = slot38
 
 slot38 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.refreshRedDotState
@@ -5996,6 +8339,15 @@ slot38 = function(slot0)
 	slot3 = RedDotConst
 	slot3 = slot3.RedDotPath
 	slot3 = slot3.CHAT_TAB_MESSAGE
+
+	slot1(slot3)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.refreshRedDotState
+	slot3 = RedDotConst
+	slot3 = slot3.RedDotPath
+	slot3 = slot3.CHAT_TAB_NOTICE
 
 	slot1(slot3)
 
@@ -6086,133 +8438,102 @@ end
 slot7.checkCommonSwitch = slot38
 
 slot38 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = CommonSwitch
-	slot3 = slot3.MAIL
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.checkFunctionUnlock
+	slot6 = Const
+	slot6 = slot6.FUNCTION_NAME
+	slot6 = slot6.CHAT
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 11-28, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
+	slot5 = slot3
+	slot3 = slot3.showTextTip
+	slot6 = pg
+	slot6 = slot6.getLocalizationText
+	slot8 = FuncIdConfigData
+	slot9 = Const
+	slot9 = slot9.FUNCTION_NAME
+	slot9 = slot9.CHAT
+	slot8 = slot8[slot9]
+	slot8 = slot8.unlockDesc
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = false
+
+	return slot3
+
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-9, warpins: 1 ---
-	slot3 = slot2.initTab
+	--- BLOCK #2 29-32, warpins: 2 ---
+	slot3 = CommonSwitch
+	slot3 = slot3.MAIL
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 10-17, warpins: 1 ---
-	slot3 = slot2.initTab
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.chat
-	slot4 = slot4.tabType
-	slot4 = slot4.Mail
+	--- BLOCK #3 33-34, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	if slot3 == slot4 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #4 18-25, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.showBubbleMessage
-	slot5 = NoticeDef
-	slot5 = slot5.COMMON_SWITCH_CLOSE_TIP
-
-	slot3(slot5)
-
-	slot3 = false
-
-	return slot3
-
+	--- BLOCK #4 35-37, warpins: 1 ---
+	slot3 = slot2.initTab
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 26-29, warpins: 5 ---
-	slot3 = CommonSwitch
-	slot3 = slot3.CHAT
-	--- END OF BLOCK #5 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #6 30-31, warpins: 1 ---
-	--- END OF BLOCK #6 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #7 32-34, warpins: 1 ---
-	slot3 = slot2.initTab
-	--- END OF BLOCK #7 ---
-
 	slot3 = if slot3 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #8 35-42, warpins: 1 ---
+	--- BLOCK #5 38-45, warpins: 1 ---
 	slot3 = slot2.initTab
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
 	slot4 = slot4.tabType
 	slot4 = slot4.Mail
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #5 ---
 
 	if slot3 == slot4 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #9 43-45, warpins: 1 ---
-	slot3 = true
-
-	return slot3
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #11
-
-
-	--- BLOCK #10 46-53, warpins: 3 ---
+	--- BLOCK #6 46-53, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.showBubbleMessage
@@ -6225,55 +8546,119 @@ slot38 = function(slot0, slot1, slot2)
 
 	return slot3
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #11 54-64, warpins: 3 ---
-	slot3 = FlagUtils
-	slot3 = slot3.hasFlag
-	slot5 = pg
-	slot5 = slot5.me
-	slot5 = slot5.ugcFuncSwitch
-	slot6 = PlayerForbidConst
-	slot6 = slot6.PLAYER_SWITCH
-	slot6 = slot6.PLAYER_CHAT
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #11 ---
+	--- BLOCK #7 54-57, warpins: 5 ---
+	slot3 = CommonSwitch
+	slot3 = slot3.CHAT
+	--- END OF BLOCK #7 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #12
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 65-74, warpins: 1 ---
+	--- BLOCK #8 58-59, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #9 60-62, warpins: 1 ---
+	slot3 = slot2.initTab
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 63-70, warpins: 1 ---
+	slot3 = slot2.initTab
 	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.showBubbleMessageRaw
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "PLAYER_PERMISSION_LIMITED"
-	MULTRES = slot6(slot8)
+	slot4 = slot4.game
+	slot4 = slot4.chat
+	slot4 = slot4.tabType
+	slot4 = slot4.Mail
+	--- END OF BLOCK #10 ---
 
-	slot4(MULTRES)
+	if slot3 == slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
-	slot4 = false
 
-	return slot4
+	--- BLOCK #11 71-73, warpins: 1 ---
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 74-81, warpins: 3 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.showBubbleMessage
+	slot5 = NoticeDef
+	slot5 = slot5.COMMON_SWITCH_CLOSE_TIP
+
+	slot3(slot5)
+
+	slot3 = false
+
+	return slot3
 
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 75-76, warpins: 2 ---
-	slot4 = true
-
-	return slot4
+	--- BLOCK #13 82-89, warpins: 3 ---
+	slot3 = LuaUIUtils
+	slot3 = slot3.checkFeatureForbid
+	slot5 = PlayerForbidConst
+	slot5 = slot5.PLAYER_SWITCH
+	slot5 = slot5.PLAYER_CHAT
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 90-91, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 92-93, warpins: 2 ---
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #15 ---
 
 
 
@@ -6414,13 +8799,38 @@ slot38 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 10-44, warpins: 2 ---
+		--- BLOCK #2 10-19, warpins: 2 ---
 		slot0 = self
 		slot1 = nil
 		slot0.chatComponent = slot1
 		slot0 = self
 		slot1 = nil
 		slot0.friendTabComponent = slot1
+		slot0 = self
+		slot0 = slot0.mailComponent
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 20-24, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.mailComponent
+		slot2 = slot0
+		slot0 = slot0.onClose
+
+		slot0(slot2)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 25-53, warpins: 2 ---
 		slot0 = self
 		slot1 = nil
 		slot0.mailComponent = slot1
@@ -6452,7 +8862,7 @@ slot38 = function(slot0)
 		slot0(slot2)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #4 ---
 
 
 

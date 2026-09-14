@@ -1,8 +1,8 @@
 --- BLOCK #0 1-6, warpins: 1 ---
 slot0 = {}
 slot1 = {
-	bson = 2,
-	xml = 1
+	xml = 1,
+	bson = 2
 }
 slot0.BehaviorXFileType = slot1
 slot1 = {

@@ -152,8 +152,8 @@ slot5 = function(slot0)
 	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		KEY_LIST_CHOOSE_AREA = 2,
-		KEY_LIST_AREA = 1
+		KEY_LIST_AREA = 1,
+		KEY_LIST_CHOOSE_AREA = 2
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation
@@ -273,9 +273,9 @@ slot3.startTick = slot5
 slot5 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = {
+		id = "rightStickMove",
 		actionPath = "Hud/RightStickMove",
-		isVirtual = true,
-		id = "rightStickMove"
+		isVirtual = true
 	}
 	slot2 = slot0.root
 	slot2 = slot2.gameObject

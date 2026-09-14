@@ -1,4 +1,4 @@
---- BLOCK #0 1-52, warpins: 1 ---
+--- BLOCK #0 1-55, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -23,14 +23,17 @@ slot5 = slot5(slot7)
 slot6 = require
 slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
-slot7 = slot2.LightClass
-slot9 = "AvatarImportCtrl"
-slot10 = slot3
-slot7 = slot7(slot9, slot10)
-slot8 = {}
-slot7.messages = slot8
+slot7 = require
+slot9 = "Utils.ClientUtils"
+slot7 = slot7(slot9)
+slot8 = slot2.LightClass
+slot10 = "AvatarImportCtrl"
+slot11 = slot3
+slot8 = slot8(slot10, slot11)
+slot9 = {}
+slot8.messages = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -56,9 +59,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onCreate = slot8
+slot8.onCreate = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.backUButton
@@ -83,14 +86,8 @@ slot8 = function(slot0)
 	slot1 = slot1.scanUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.ui
-		slot0 = slot0.uiMgr
-		slot2 = slot0
-		slot0 = slot0.CheckIsMobileInteract
-		slot0 = slot0(slot2)
+		--- BLOCK #0 1-3, warpins: 1 ---
+		slot0 = IS_MOBILE
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
@@ -100,38 +97,32 @@ slot8 = function(slot0)
 		end
 
 
-		--- BLOCK #1 10-19, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.showBubbleMessageRaw
-		slot3 = pg
-		slot3 = slot3.getGameString
-		slot5 = "FUNC_NOT_OPEN"
-		slot3 = slot3(slot5)
-		slot4 = 3
+		--- BLOCK #1 4-10, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.mobileCameraMgr
+		slot2 = slot0
+		slot0 = slot0.OpenQRCodeScanner
 
-		slot1(slot3, slot4)
+		slot0(slot2)
 
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-		--- BLOCK #2 20-25, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.global
-		slot1 = slot1.mobileCameraMgr
-		slot3 = slot1
-		slot1 = slot1.OpenPictureOnEditor
+		--- BLOCK #2 11-13, warpins: 1 ---
+		slot0 = ClientUtils
+		slot0 = slot0.openPictureOnEditor
 
-		slot1(slot3)
+		slot0()
 
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 26-26, warpins: 2 ---
+		--- BLOCK #3 14-14, warpins: 2 ---
 		return
 		--- END OF BLOCK #3 ---
 
@@ -288,9 +279,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.addListener = slot8
+slot8.addListener = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AvatarShareService
 	slot2 = slot2.importById
@@ -305,10 +296,18 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.submitById = slot8
+slot8.submitById = slot9
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
+slot9 = function(slot0)
+	--- BLOCK #0 1-26, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.qrCodeMgr
+	slot3 = slot1
+	slot1 = slot1.StopScan
+
+	slot1(slot3)
+
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.mobileCameraMgr
@@ -337,10 +336,10 @@ slot8 = function(slot0)
 
 end
 
-slot7.onDestroy = slot8
+slot8.onDestroy = slot9
 
-slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-21, warpins: 1 ---
+slot9 = function(slot0, slot1)
+	--- BLOCK #0 1-40, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -367,16 +366,173 @@ slot8 = function(slot0, slot1)
 
 	slot2(slot4, MULTRES)
 
-	return
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.tMPUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "BACK_TO_PRE"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtNameUSDFText
+	slot5 = pg
+	slot5 = slot5.getGameString
+	slot7 = "AVATAR_IMPORT_SCAN"
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 41-43, warpins: 1 ---
+	slot2 = slot1.shareType
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 44-46, warpins: 2 ---
+	slot2 = AvatarShareService
+	slot2 = slot2.SHARE_TYPE
+	slot2 = slot2.FACE
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 47-52, warpins: 2 ---
+	slot3 = "AVATAR_IMPORT_TITLE"
+	slot4 = AvatarShareService
+	slot4 = slot4.SHARE_TYPE
+	slot4 = slot4.HAIR
+	--- END OF BLOCK #3 ---
+
+	if slot2 == slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 53-54, warpins: 1 ---
+	slot3 = "HAIR_IMPORT_TITLE"
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 55-59, warpins: 1 ---
+	slot4 = AvatarShareService
+	slot4 = slot4.SHARE_TYPE
+	slot4 = slot4.CLOTHES
+	--- END OF BLOCK #5 ---
+
+	if slot2 == slot4 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 60-60, warpins: 1 ---
+	slot3 = "STAIN_IMPORT_TITLE"
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 61-75, warpins: 3 ---
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.view
+	slot6 = slot6.titleUSDFText
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = slot3
+	MULTRES = slot7(slot9)
+
+	slot4(slot6, MULTRES)
+
+	slot4 = "AVATAR_IMPORT_INPUT"
+	slot5 = AvatarShareService
+	slot5 = slot5.SHARE_TYPE
+	slot5 = slot5.HAIR
+	--- END OF BLOCK #7 ---
+
+	if slot2 == slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 76-77, warpins: 1 ---
+	slot4 = "HAIR_IMPORT_INPUT"
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #9 78-82, warpins: 1 ---
+	slot5 = AvatarShareService
+	slot5 = slot5.SHARE_TYPE
+	slot5 = slot5.CLOTHES
+	--- END OF BLOCK #9 ---
+
+	if slot2 == slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 83-83, warpins: 1 ---
+	slot4 = "STAIN_IMPORT_INPUT"
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 84-94, warpins: 3 ---
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot0.view
+	slot7 = slot7.idUTMPInputField
+	slot7 = slot7.placeHolder
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = slot4
+	MULTRES = slot8(slot10)
+
+	slot5(slot7, MULTRES)
+
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot7.onOpen = slot8
+slot8.onOpen = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.idUTMPInputField
@@ -422,9 +578,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.refreshConsoleBarState = slot8
+slot8.refreshConsoleBarState = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.confirmKeyHotKeyContent
@@ -483,9 +639,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.SetConfirmKeyActive = slot8
+slot8.SetConfirmKeyActive = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -494,9 +650,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onShow = slot8
+slot8.onShow = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -505,9 +661,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onHide = slot8
+slot8.onHide = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -541,7 +697,15 @@ slot8 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 17-21, warpins: 1 ---
+	--- BLOCK #2 17-27, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.qrCodeMgr
+	slot4 = slot2
+	slot2 = slot2.StopScan
+
+	slot2(slot4)
+
 	slot2 = slot0.avatarScene
 	slot4 = slot2
 	slot2 = slot2.unRegisterGesture
@@ -554,7 +718,7 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 22-22, warpins: 2 ---
+	--- BLOCK #3 28-28, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -562,9 +726,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onVisibleChange = slot8
+slot8.onVisibleChange = slot9
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

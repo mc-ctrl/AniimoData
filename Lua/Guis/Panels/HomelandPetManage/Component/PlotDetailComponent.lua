@@ -1,4 +1,4 @@
---- BLOCK #0 1-108, warpins: 1 ---
+--- BLOCK #0 1-105, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -60,11 +60,8 @@ slot17 = slot17(slot19)
 slot18 = require
 slot20 = "Data.home_object_data"
 slot18 = slot18(slot20)
-slot19 = require
-slot21 = "Data.homeland_zone_unlock_config_data"
-slot19 = slot19(slot21)
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -73,9 +70,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.findObjects = slot20
+slot6.findObjects = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = -1
 	slot0.selectType = slot1
@@ -140,9 +137,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.initView = slot20
+slot6.initView = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-102, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
@@ -253,9 +250,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.onContentLoaded = slot20
+slot6.onContentLoaded = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.ornamentInfo = slot1
 	slot2 = Utils
@@ -341,9 +338,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot6.refreshPlotDetailBox = slot20
+slot6.refreshPlotDetailBox = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getTabListInfo
@@ -486,9 +483,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.refreshTabList = slot20
+slot6.refreshTabList = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot1
@@ -538,9 +535,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot6.haveSelectType = slot20
+slot6.haveSelectType = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.ornamentInfo
@@ -576,8 +573,8 @@ slot20 = function(slot0)
 	slot7 = slot1
 	slot8 = {
 		func = "onEnvironmentClick",
-		selectType = 3,
-		text = "QUEST_DELEGATION_DETAIL"
+		text = "QUEST_DELEGATION_DETAIL",
+		selectType = 3
 	}
 
 	slot5(slot7, slot8)
@@ -609,8 +606,8 @@ slot20 = function(slot0)
 	slot7 = slot1
 	slot8 = {
 		func = "onRecipeClick",
-		selectType = 0,
-		text = "HOME_FORMULA_LEVEL_PRODUCT"
+		text = "HOME_FORMULA_LEVEL_PRODUCT",
+		selectType = 0
 	}
 
 	slot5(slot7, slot8)
@@ -626,8 +623,8 @@ slot20 = function(slot0)
 	slot7 = slot1
 	slot8 = {
 		func = "onManageClick",
-		selectType = 1,
-		text = "HOMELAND_PLOT_MANAGE"
+		text = "HOMELAND_PLOT_MANAGE",
+		selectType = 1
 	}
 
 	slot5(slot7, slot8)
@@ -653,8 +650,8 @@ slot20 = function(slot0)
 	slot7 = slot1
 	slot8 = {
 		func = "onUpgradeClick",
-		selectType = 2,
-		text = "UPGRADE"
+		text = "UPGRADE",
+		selectType = 2
 	}
 
 	slot5(slot7, slot8)
@@ -761,9 +758,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.getTabListInfo = slot20
+slot6.getTabListInfo = slot19
 
-slot20 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.ornamentInfo
 
@@ -943,9 +940,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot6.refreshPlotDetailInfo = slot20
+slot6.refreshPlotDetailInfo = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1114,9 +1111,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.refreshPasueBtn = slot20
+slot6.refreshPasueBtn = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
@@ -1159,9 +1156,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.onRecipeClick = slot20
+slot6.onRecipeClick = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
@@ -1276,9 +1273,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.onManageClick = slot20
+slot6.onManageClick = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
@@ -1319,9 +1316,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.onUpgradeClick = slot20
+slot6.onUpgradeClick = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0.uWidget
 	slot1 = slot1.content
@@ -1362,9 +1359,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.onEnvironmentClick = slot20
+slot6.onEnvironmentClick = slot19
 
-slot20 = function(slot0, slot1)
+slot19 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.ctrl
 	slot4 = slot2
@@ -1385,9 +1382,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot6.startMultipleMode = slot20
+slot6.startMultipleMode = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -1402,9 +1399,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.exitMultipleMode = slot20
+slot6.exitMultipleMode = slot19
 
-slot20 = function(slot0, slot1, slot2)
+slot19 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.ctrl
 	slot5 = slot3
@@ -1421,9 +1418,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot6.selectAllMultiple = slot20
+slot6.selectAllMultiple = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot1 = slot1.isMultipleOrnamentTable
@@ -1437,9 +1434,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.getMultipleOrnamentTableAndCount = slot20
+slot6.getMultipleOrnamentTableAndCount = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-38, warpins: 1 ---
 	slot1 = PlotDetailRecipeComponent
 	slot1 = slot1.new
@@ -1643,9 +1640,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.addListener = slot20
+slot6.addListener = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.ornamentInfo
 	--- END OF BLOCK #0 ---
@@ -1727,9 +1724,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.updatePlotDetail = slot20
+slot6.updatePlotDetail = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = -1
 	slot0.selectType = slot1
@@ -1773,9 +1770,9 @@ slot20 = function(slot0)
 
 end
 
-slot6.onDestroy = slot20
+slot6.onDestroy = slot19
 
-slot20 = function(slot0)
+slot19 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1784,7 +1781,7 @@ slot20 = function(slot0)
 
 end
 
-slot6.onEnterPage = slot20
+slot6.onEnterPage = slot19
 
 return slot6
 --- END OF BLOCK #0 ---

@@ -247,8 +247,8 @@ slot8 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 		--- BLOCK #4 20-25, warpins: 2 ---
 		slot2 = {
-			status = false,
-			errmsg = "http resp body nil"
+			errmsg = "http resp body nil",
+			status = false
 		}
 		slot3 = SafeCallback
 		slot5 = callback

@@ -30,9 +30,8 @@ end
 slot5.ctor = slot6
 
 slot6 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.curAbilityMap
-	slot2 = slot2[slot1]
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
@@ -42,21 +41,39 @@ slot6 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
-	slot3 = slot2.abilityId
-
-	return slot3
-
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = slot0.curAbilityMap
+	slot2 = slot2[slot1]
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-8, warpins: 2 ---
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-9, warpins: 1 ---
+	slot3 = slot2.abilityId
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 10-11, warpins: 2 ---
 	slot3 = 0
 
 	return slot3
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 

@@ -110,7 +110,7 @@ slot8.isInGroupBehaviour = slot9
 
 slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = AIUtils
+	slot2 = Utils
 	slot2 = slot2.checkIsAuthorityMaster
 	slot4 = slot0
 	slot2 = slot2(slot4)

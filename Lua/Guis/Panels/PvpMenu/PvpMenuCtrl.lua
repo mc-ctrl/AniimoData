@@ -407,7 +407,7 @@ slot3.switchPage = slot13
 slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot0.startMatchTime = slot1
 	slot1 = slot0.matchTick
 	--- END OF BLOCK #0 ---
@@ -473,7 +473,7 @@ slot3.enterMatch = slot13
 slot13 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.startMatchTime
 	slot1 = slot1 - slot2
 	slot2 = TimeUtils

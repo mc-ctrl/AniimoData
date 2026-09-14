@@ -7,27 +7,27 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_Com_StopLipAnimation",
-	useForRoute = true,
 	version = 11,
-	agenttype = "CombatAgent"
+	useForRoute = true
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "float",
-	name = "tFadeTime",
+	const = 0,
 	value = "0",
-	const = 0
+	name = "tFadeTime",
+	type = "float"
 }
 slot4[1] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Action",
-	id = "12"
+	id = "12",
+	class = "Action"
 }
 slot5 = {}
 slot6 = {}

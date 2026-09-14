@@ -1,4 +1,4 @@
---- BLOCK #0 1-56, warpins: 1 ---
+--- BLOCK #0 1-60, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -29,12 +29,14 @@ slot8 = slot8(slot10)
 slot9 = require
 slot11 = "Const.HotkeyConst"
 slot9 = slot9(slot11)
-slot10 = slot0.LightClass
-slot12 = "badgeRepeatObtainItem"
-slot13 = slot1
-slot10 = slot10(slot12, slot13)
+slot10 = "Hud/ItemDetail"
+slot11 = "Hud/ItemClose"
+slot12 = slot0.LightClass
+slot14 = "badgeRepeatObtainItem"
+slot15 = slot1
+slot12 = slot12(slot14, slot15)
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setMaxLimit
@@ -52,9 +54,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onInit = slot11
+slot12.onInit = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tryPopupItem
@@ -73,9 +75,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onUpdate = slot11
+slot12.onUpdate = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isQueueEmpty
@@ -122,7 +124,7 @@ slot11 = function(slot0)
 	slot1 = slot0.dequeue
 	slot1 = slot1(slot3)
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot2 = slot2 + 8
 	slot1.endTime = slot2
 	slot4 = slot0
@@ -144,9 +146,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.tryPopupItem = slot11
+slot12.tryPopupItem = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isRunning
@@ -173,7 +175,7 @@ slot11 = function(slot0)
 	slot1 = slot0.runList
 	slot1 = slot1[1]
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	slot3 = slot1.endTime
 
 	--- END OF BLOCK #2 ---
@@ -207,9 +209,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.refreshRemainTime = slot11
+slot12.refreshRemainTime = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.runList
 	slot2 = #slot2
@@ -244,9 +246,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onClearRunningList = slot11
+slot12.onClearRunningList = slot13
 
-slot11 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot1.removing
 	--- END OF BLOCK #0 ---
@@ -366,9 +368,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.recycleToast = slot11
+slot12.recycleToast = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isQueueEmpty
@@ -420,9 +422,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.destroyContent = slot11
+slot12.destroyContent = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.uContainer
 	slot4 = slot2
@@ -490,9 +492,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.initUContainer = slot11
+slot12.initUContainer = slot13
 
-slot11 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -509,7 +511,7 @@ slot11 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 4-91, warpins: 1 ---
+	--- BLOCK #2 4-60, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
@@ -552,56 +554,135 @@ slot11 = function(slot0, slot1, slot2)
 	slot12 = slot12(slot14, slot15)
 	slot15 = slot3
 	slot13 = slot3.GetRefValue
-	slot16 = "keyHotKeyContent"
+	slot16 = "listKeyUList"
 	slot13 = slot13(slot15, slot16)
-	slot16 = slot3
-	slot14 = slot3.GetRefValue
-	slot17 = "keyCloseHotKeyContent"
-	slot14 = slot14(slot16, slot17)
-	slot17 = slot3
-	slot15 = slot3.GetRefValue
-	slot18 = "btnCloseTipsUSDFText"
-	slot15 = slot15(slot17, slot18)
-	slot18 = slot3
-	slot16 = slot3.GetRefValue
-	slot19 = "btnGoTipsUSDFText"
-	slot16 = slot16(slot18, slot19)
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
+	slot14 = pg
+	slot14 = slot14.global
+	slot14 = slot14.ui
+	slot16 = slot14
+	slot14 = slot14.runPlatformByMobile
+	slot14 = slot14(slot16)
+	slot15 = not slot14
+	slot18 = slot13
+	slot16 = slot13.SetActiveFastest
 	slot19 = slot15
-	slot20 = pg
-	slot20 = slot20.getGameString
-	slot22 = "CLOSE"
-	MULTRES = slot20(slot22)
 
-	slot17(slot19, MULTRES)
+	slot16(slot18, slot19)
 
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot16
-	slot20 = pg
-	slot20 = slot20.getGameString
-	slot22 = "GOTO"
-	MULTRES = slot20(slot22)
+	--- END OF BLOCK #2 ---
 
-	slot17(slot19, MULTRES)
+	slot15 = if slot15 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot4
-	slot20 = pg
-	slot20 = slot20.getGameString
-	slot22 = "UNLOCK_BADGE"
-	MULTRES = slot20(slot22)
 
-	slot17(slot19, MULTRES)
+	--- BLOCK #3 61-90, warpins: 1 ---
+	slot16 = {}
+	slot17 = {}
+	slot18 = CANCEL_ACTION_KEY
+	slot17.actionKey = slot18
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "CLOSE"
+	slot18 = slot18(slot20)
+	slot17.label = slot18
+	slot16[1] = slot17
+	slot17 = {}
+	slot18 = GO_ACTION_KEY
+	slot17.actionKey = slot18
+	slot18 = slot0.uWidget
+	slot18 = slot18.gameObject
+	slot17.hotKeyObject = slot18
 
-	slot17 = LuaUIUtils
-	slot17 = slot17.bindHotKey
-	slot19 = slot13.gameObject
-	slot20 = "Hud/ItemClose"
+	slot18 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = itemRepeatUButton
+		slot0 = slot0.luaClick
+		--- END OF BLOCK #0 ---
 
-	slot21 = function()
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-7, warpins: 1 ---
+		slot0 = itemRepeatUButton
+		slot0 = slot0.luaClick
+
+		slot0()
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 8-8, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot17.longPressFunc = slot18
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "GOTO"
+	slot18 = slot18(slot20)
+	slot17.label = slot18
+	slot16[2] = slot17
+
+	slot17 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.renderKeyItem
+		slot6 = slot0
+		slot7 = slot1
+		slot8 = slot2
+
+		slot3(slot5, slot6, slot7, slot8)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot13.luaRenderItem = slot17
+	slot19 = slot13
+	slot17 = slot13.SetList
+	slot20 = slot16
+
+	slot17(slot19, slot20)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 91-139, warpins: 2 ---
+	slot16 = ClientTextUtils
+	slot16 = slot16.setText
+	slot18 = slot4
+	slot19 = pg
+	slot19 = slot19.getGameString
+	slot21 = "UNLOCK_BADGE"
+	MULTRES = slot19(slot21)
+
+	slot16(slot18, MULTRES)
+
+	slot16 = LuaUIUtils
+	slot16 = slot16.bindHotKey
+	slot18 = slot1.gameObject
+	slot19 = "Hud/ItemClose"
+
+	slot20 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -616,72 +697,50 @@ slot11 = function(slot0, slot1, slot2)
 
 	end
 
-	slot17(slot19, slot20, slot21)
+	slot16(slot18, slot19, slot20)
 
-	--- END OF BLOCK #2 ---
+	slot18 = slot1
+	slot16 = slot1.InvokeCallback
+	slot19 = CS
+	slot19 = slot19.XGUI
+	slot19 = slot19.EInvokeTime
+	slot19 = slot19.User1
 
-	slot14 = if slot14 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	slot16(slot18, slot19)
 
+	slot16 = slot2.icon
+	slot10.url = slot16
+	slot16 = ClientTextUtils
+	slot16 = slot16.setText
+	slot18 = slot6
+	slot19 = pg
+	slot19 = slot19.getLocalizationText
+	slot21 = slot2.name
+	MULTRES = slot19(slot21)
 
-	--- BLOCK #3 92-95, warpins: 1 ---
-	slot19 = slot14
-	slot17 = slot14.SetHotKeyPaths
-	slot20 = "Hud/ItemClose"
+	slot16(slot18, MULTRES)
 
-	slot17(slot19, slot20)
+	slot18 = slot1
+	slot16 = slot1.TryChangePage
+	slot19 = "Quality"
+	slot20 = slot2.quality
 
-	--- END OF BLOCK #3 ---
+	slot16(slot18, slot19, slot20)
 
-	FLOW; TARGET BLOCK #4
+	slot18 = slot0
+	slot16 = slot0.setBadgeClick
+	slot19 = slot2
 
+	slot16(slot18, slot19)
 
-	--- BLOCK #4 96-130, warpins: 2 ---
-	slot19 = slot1
-	slot17 = slot1.InvokeCallback
-	slot20 = CS
-	slot20 = slot20.XGUI
-	slot20 = slot20.EInvokeTime
-	slot20 = slot20.User1
+	slot16 = pg
+	slot16 = slot16.game
+	slot16 = slot16.audio
+	slot18 = slot16
+	slot16 = slot16.playEvent
+	slot19 = "SFX_UI_BadgeSystem_BadgeUnlock"
 
-	slot17(slot19, slot20)
-
-	slot17 = slot2.icon
-	slot10.url = slot17
-	slot17 = ClientTextUtils
-	slot17 = slot17.setText
-	slot19 = slot6
-	slot20 = pg
-	slot20 = slot20.getLocalizationText
-	slot22 = slot2.name
-	MULTRES = slot20(slot22)
-
-	slot17(slot19, MULTRES)
-
-	slot19 = slot1
-	slot17 = slot1.TryChangePage
-	slot20 = "Quality"
-	slot21 = slot2.quality
-
-	slot17(slot19, slot20, slot21)
-
-	slot19 = slot0
-	slot17 = slot0.setBadgeClick
-	slot20 = slot2
-
-	slot17(slot19, slot20)
-
-	slot17 = pg
-	slot17 = slot17.game
-	slot17 = slot17.audio
-	slot19 = slot17
-	slot17 = slot17.playEvent
-	slot20 = "SFX_UI_BadgeSystem_BadgeUnlock"
-
-	slot17(slot19, slot20)
+	slot16(slot18, slot19)
 
 	return
 	--- END OF BLOCK #4 ---
@@ -689,7 +748,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 131-131, warpins: 2 ---
+	--- BLOCK #5 140-140, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -697,10 +756,53 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot10.renderItem = slot11
+slot12.renderItem = slot13
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot13 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-27, warpins: 1 ---
+	slot6 = slot1
+	slot4 = slot1.GetComponent
+	slot7 = "ObjectReference"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot4
+	slot5 = slot4.GetRefValue
+	slot8 = "keyHotKeyContent"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot4
+	slot6 = slot4.GetRefValue
+	slot9 = "btnTipsUText"
+	slot6 = slot6(slot8, slot9)
+	slot9 = slot5
+	slot7 = slot5.SetHotKeyPaths
+	slot10 = slot3.actionKey
+
+	slot7(slot9, slot10)
+
+	slot7 = ClientTextUtils
+	slot7 = slot7.setText
+	slot9 = slot6
+	slot10 = slot3.label
+
+	slot7(slot9, slot10)
+
+	slot9 = slot0
+	slot7 = slot0.bindHotKeyItemLongPress
+	slot10 = slot4
+	slot11 = slot3
+
+	slot7(slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot12.renderKeyItem = slot13
+
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = slot0.uWidget
 	slot2 = slot2.content
 	slot4 = slot2
@@ -711,79 +813,8 @@ slot11 = function(slot0, slot1)
 	slot3 = slot2.GetRefValue
 	slot6 = "itemRepeatUButton"
 	slot3 = slot3(slot5, slot6)
-	slot6 = slot2
-	slot4 = slot2.GetRefValue
-	slot7 = "keyHotKeyContent"
-	slot4 = slot4(slot6, slot7)
-	slot5 = LuaUIUtils
-	slot5 = slot5.bindHotKey
-	slot7 = slot4.gameObject
-	slot8 = "Hud/ItemDetail"
 
-	slot9 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.uWidget
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.uWidget
-		slot0 = slot0.gameObject
-		slot0 = slot0.activeSelf
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 9-10, warpins: 2 ---
-		--- END OF BLOCK #2 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 11-13, warpins: 1 ---
-		slot1 = propRepeatUButton
-		slot1 = slot1.luaClick
-
-		slot1()
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 14-14, warpins: 2 ---
-		return
-		--- END OF BLOCK #4 ---
-
-
-
-	end
-
-	slot10 = slot4
-	slot11 = 100
-
-	slot5(slot7, slot8, slot9, slot10, slot11)
-
-	slot7 = slot4
-	slot5 = slot4.SetHotKeyPaths
-	slot8 = "Hud/ItemDetail"
-
-	slot5(slot7, slot8)
-
-	slot5 = function()
+	slot4 = function()
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot0 = data
 		slot0 = slot0.customClick
@@ -823,7 +854,7 @@ slot11 = function(slot0, slot1)
 
 	end
 
-	slot3.luaClick = slot5
+	slot3.luaClick = slot4
 
 	return
 	--- END OF BLOCK #0 ---
@@ -832,9 +863,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.setBadgeClick = slot11
+slot12.setBadgeClick = slot13
 
-return slot10
+return slot12
 --- END OF BLOCK #0 ---
 
 

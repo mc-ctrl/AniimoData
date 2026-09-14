@@ -1,4 +1,4 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -19,27 +19,30 @@ slot5 = require
 slot7 = "Const.AudioConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.ClientAbilityConst"
+slot8 = "Common.Const.Const"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientModelUtils"
+slot9 = "Const.ClientAbilityConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.Utils.PetResearchUtils"
+slot10 = "Utils.ClientModelUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.pet_prototype_data"
+slot11 = "Guis.Utils.PetResearchUtils"
 slot9 = slot9(slot11)
-slot10 = {
-	Water = 1,
-	Grass = 2
-}
+slot10 = require
+slot12 = "Data.pet_prototype_data"
+slot10 = slot10(slot12)
 slot11 = {
-	AmbBeach = "AMB_UI_PetManualExplore_Beach",
-	AmbGrass = "AMB_UI_PetManualExplore_Grassland"
+	Grass = 2,
+	Water = 1
+}
+slot12 = {
+	AmbGrass = "AMB_UI_PetManualExplore_Grassland",
+	AmbBeach = "AMB_UI_PetManualExplore_Beach"
 }
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot2 = slot0.scene
 	slot2 = slot2.transform
@@ -79,9 +82,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.onStart = slot12
+slot3.onStart = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.pet_res
 
@@ -102,7 +105,7 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-98, warpins: 2 ---
+	--- BLOCK #2 5-88, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.createEntity
 	slot6 = slot2
@@ -112,83 +115,76 @@ slot12 = function(slot0, slot1)
 	slot3 = slot3(slot5, slot6, slot7, slot8)
 	slot0.petModel = slot3
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
 	slot6 = slot4
-	slot4 = slot4.SetParent
+	slot4 = slot4.SetTransformParent
 	slot7 = slot0.petRoot
 	slot8 = true
 
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
+	slot6 = slot4
+	slot4 = slot4.SetTransformLocalPosition
 	slot7 = slot1.pet_modelPos
 	slot7 = slot7[1]
 	slot8 = slot1.pet_modelPos
 	slot8 = slot8[2]
 	slot9 = slot1.pet_modelPos
 	slot9 = slot9[3]
-	slot5 = slot5(slot7, slot8, slot9)
-	slot4.localPosition = slot5
-	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Quaternion
-	slot5 = slot5.Euler
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	slot4 = Quaternion
+	slot4 = slot4.Euler
+	slot6 = slot1.pet_modelRotation
+	slot6 = slot6[1]
 	slot7 = slot1.pet_modelRotation
-	slot7 = slot7[1]
+	slot7 = slot7[2]
 	slot8 = slot1.pet_modelRotation
-	slot8 = slot8[2]
-	slot9 = slot1.pet_modelRotation
-	slot9 = slot9[3]
-	slot5 = slot5(slot7, slot8, slot9)
-	slot4.localRotation = slot5
-	slot4 = slot3.eModel
-	slot4 = slot4.transform
-	slot5 = Vector3
-	slot7 = slot1.pet_scale
+	slot8 = slot8[3]
+	slot4 = slot4(slot6, slot7, slot8)
+	slot5 = slot3.eModel
+	slot7 = slot5
+	slot5 = slot5.SetTransformLocalRotation
+	slot8 = slot4[1]
+	slot9 = slot4[2]
+	slot10 = slot4[3]
+	slot11 = slot4[4]
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
+	slot5 = slot3.eModel
+	slot7 = slot5
+	slot5 = slot5.SetTransformLocalScale
 	slot8 = slot1.pet_scale
 	slot9 = slot1.pet_scale
-	slot5 = slot5(slot7, slot8, slot9)
-	slot4.localScale = slot5
-	slot4 = slot3.eModel
-	slot6 = slot4
-	slot4 = slot4.AddShadowComp
-	slot7 = ClientConst
-	slot7 = slot7.ShadowPriority
-	slot7 = slot7.PetResearchDetail
+	slot10 = slot1.pet_scale
 
-	slot4(slot6, slot7)
+	slot5(slot7, slot8, slot9, slot10)
 
-	slot4 = slot3.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
-	slot5 = slot4.shaderView
+	slot5 = slot3.eModel
 	slot7 = slot5
-	slot5 = slot5.SetOverrideMaterial
-	slot8 = ""
+	slot5 = slot5.AddShadowComp
+	slot8 = ClientConst
+	slot8 = slot8.ShadowPriority
+	slot8 = slot8.PetResearchDetail
 
 	slot5(slot7, slot8)
 
-	slot5 = slot4.shaderView
-	slot7 = slot5
-	slot5 = slot5.SetMultiPassRenderEnable
-	slot8 = true
+	slot5 = slot3.eModel
+	slot5 = slot5.shaderView
+	slot8 = slot5
+	slot6 = slot5.SetOverrideMaterial
+	slot9 = ""
 
-	slot5(slot7, slot8)
+	slot6(slot8, slot9)
 
-	slot7 = slot0
-	slot5 = slot0.getResearchContentData
-	slot8 = slot2
-	slot5 = slot5(slot7, slot8)
-	slot6 = slot5.scene
-	slot0.sceneID = slot6
-	slot8 = slot0
-	slot6 = slot0.getResearchContentData
-	slot9 = slot2
-	slot6 = slot6(slot8, slot9)
-	slot6 = slot6.gender
-	slot0.gender = slot6
+	slot8 = slot5
+	slot6 = slot5.SetMultiPassRenderEnable
+	slot9 = true
+
+	slot6(slot8, slot9)
+
 	slot8 = slot0
 	slot6 = slot0.refreshPetModelAppearance
 	slot9 = slot2
@@ -199,9 +195,12 @@ slot12 = function(slot0, slot1)
 
 	slot6(slot8, slot9, slot10, slot11, slot12, slot13)
 
-	slot6 = slot3.eModel
-	slot6 = slot6.transform
-	slot6 = slot6.position
+	slot6 = Vector3
+	slot8 = slot3.eModel
+	slot10 = slot8
+	slot8 = slot8.GetTransformPosition
+	MULTRES = slot8(slot10)
+	slot6 = slot6(MULTRES)
 	slot0.petPos = slot6
 	slot6 = slot1.pet_modelRotation
 	slot6 = slot6[3]
@@ -214,14 +213,14 @@ slot12 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 99-99, warpins: 1 ---
+	--- BLOCK #3 89-89, warpins: 1 ---
 	slot6 = 0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 100-101, warpins: 2 ---
+	--- BLOCK #4 90-91, warpins: 2 ---
 	slot0.petPosZ = slot6
 
 	return
@@ -231,24 +230,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.showPet = slot12
+slot3.showPet = slot13
 
-slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot2 = PetResearchUtils
-	slot2 = slot2.getPetResearchContent
-	slot4 = slot1
-
-	return slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot3.getResearchContentData = slot12
-
-slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -302,225 +286,187 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 10-15, warpins: 2 ---
+	--- BLOCK #6 10-12, warpins: 2 ---
 	slot7 = slot3.eModel
-	slot8 = NotNil
-	slot10 = slot7
-	slot8 = slot8(slot10)
 	--- END OF BLOCK #6 ---
 
-	slot8 = if slot8 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #7 16-29, warpins: 1 ---
+	--- BLOCK #7 13-21, warpins: 1 ---
 	slot8 = PetProtoTypeData
 	slot8 = slot8[slot1]
-	slot9 = slot7.modelComponent
-	slot9 = slot9.modelView
-	slot12 = slot0
-	slot10 = slot0.getResearchContentData
-	slot13 = slot1
-	slot10 = slot10(slot12, slot13)
-	slot11, slot12 = nil
-	slot13 = ClientModelUtils
-	slot13 = slot13.getModelExtraInfo
-	slot15 = slot8
+	slot9 = slot7.modelModelView
+	slot10, slot11 = nil
+	slot12 = ClientModelUtils
+	slot12 = slot12.getModelExtraInfo
+	slot14 = slot8
 	--- END OF BLOCK #7 ---
 
-	slot16 = if not slot4 then
+	slot15 = if not slot4 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 30-30, warpins: 1 ---
-	slot16 = 0
+	--- BLOCK #8 22-22, warpins: 1 ---
+	slot15 = 0
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 31-33, warpins: 2 ---
-	slot17 = slot10.gender
+	--- BLOCK #9 23-56, warpins: 2 ---
+	slot16 = 0
+	slot17 = false
+	slot12 = slot12(slot14, slot15, slot16, slot17)
+	slot10 = slot12
+	slot11 = slot2.prefabResID
+	slot10.prefabResID = slot11
+	slot12 = ClientModelUtils
+	slot12 = slot12.applyModelAppearance
+	slot14 = slot9.modelInfo
+	slot15 = slot8
+	slot16 = slot10
+
+	slot12(slot14, slot15, slot16)
+
+	slot12 = Vector3
+	slot12 = slot12.zero
+	slot7.RootRotationScale = slot12
+	slot12 = ClientModelUtils
+	slot12 = slot12.applyAnimController
+	slot14 = slot3
+	slot15 = slot7
+	slot16 = slot8
+
+	slot12(slot14, slot15, slot16)
+
+	slot14 = slot9
+	slot12 = slot9.RefreshModels
+
+	slot12(slot14)
+
+	slot14 = slot3
+	slot12 = slot3.setModelVisible
+	slot15 = ClientConst
+	slot15 = slot15.MODEL_VISIBLE_KEY
+	slot15 = slot15.UIScene
+	slot16 = slot5
+
+	slot12(slot14, slot15, slot16)
+
+	slot12 = slot7.modelShaderView
 	--- END OF BLOCK #9 ---
 
-	slot17 = if not slot17 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 34-34, warpins: 1 ---
-	slot17 = 0
+	--- BLOCK #10 57-62, warpins: 1 ---
+	slot15 = slot12
+	slot13 = slot12.SetMultiPassForce32Layer
+	slot16 = true
+	slot17 = ClientAbilityConst
+	slot17 = slot17.MULTI_PASS_LAYER
+
+	slot13(slot15, slot16, slot17)
+
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 35-68, warpins: 2 ---
-	slot18 = false
-	slot13 = slot13(slot15, slot16, slot17, slot18)
-	slot11 = slot13
-	slot12 = slot2.prefabResID
-	slot11.prefabResID = slot12
-	slot13 = ClientModelUtils
-	slot13 = slot13.applyModelAppearance
-	slot15 = slot9.modelInfo
-	slot16 = slot8
-	slot17 = slot11
-
-	slot13(slot15, slot16, slot17)
-
-	slot13 = slot7.playableComponent
-	slot14 = Vector3
-	slot14 = slot14.zero
-	slot13.RootRotationScale = slot14
-	slot13 = ClientModelUtils
-	slot13 = slot13.applyAnimController
+	--- BLOCK #11 63-92, warpins: 2 ---
 	slot15 = slot3
-	slot16 = slot7.playableComponent
-	slot17 = slot8
+	slot13 = slot3.addEModelMonoComponent
+	slot16 = Const
+	slot16 = slot16.COMPONENT_IDX_PHYSX
 
-	slot13(slot15, slot16, slot17)
-
-	slot15 = slot9
-	slot13 = slot9.RefreshModels
-
-	slot13(slot15)
+	slot13(slot15, slot16)
 
 	slot15 = slot3
-	slot13 = slot3.setModelVisible
-	slot16 = ClientConst
-	slot16 = slot16.MODEL_VISIBLE_KEY
-	slot16 = slot16.UIScene
-	slot17 = slot5
+	slot13 = slot3.getConfigData
+	slot13 = slot13(slot15)
+	slot14 = slot3.eModel
+	slot16 = slot14
+	slot14 = slot14.GenCapsule
+	slot17 = Const
+	slot17 = slot17.COMPONENT_IDX_PHYSX
+	slot18 = slot13.bodySize
+	slot19 = slot13.modelHeight
+	slot20 = Vector3
+	slot22 = 0
+	slot23 = slot13.modelHeight
+	slot23 = slot23 / 2
+	slot24 = 0
+	slot20 = slot20(slot22, slot23, slot24)
+	slot21 = true
+	slot22 = false
 
-	slot13(slot15, slot16, slot17)
+	slot14(slot16, slot17, slot18, slot19, slot20, slot21, slot22)
 
-	slot13 = slot7.modelComponent
+	slot14 = slot13.modelHeight
+	slot15 = slot2.pet_scale
+	slot14 = slot14 * slot15
+	slot14 = slot14 * 0.5
 	--- END OF BLOCK #11 ---
 
-	slot13 = if slot13 then
+	slot14 = if not slot14 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 69-71, warpins: 1 ---
-	slot13 = slot7.modelComponent
-	slot13 = slot13.modelView
-	slot13 = slot13.shaderView
+	--- BLOCK #12 93-93, warpins: 1 ---
+	slot14 = 0.5
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 72-73, warpins: 2 ---
-	--- END OF BLOCK #13 ---
-
-	slot13 = if slot13 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 74-79, warpins: 1 ---
-	slot16 = slot13
-	slot14 = slot13.SetMultiPassForce32Layer
-	slot17 = true
-	slot18 = ClientAbilityConst
-	slot18 = slot18.MULTI_PASS_LAYER
+	--- BLOCK #13 94-105, warpins: 2 ---
+	slot0.modelHeight = slot14
+	slot16 = slot3
+	slot14 = slot3.setLodTickEnable
+	slot17 = Const
+	slot17 = slot17.LOD_TICK_KEY
+	slot17 = slot17.DEFAULT
+	slot18 = false
 
 	slot14(slot16, slot17, slot18)
 
-	--- END OF BLOCK #14 ---
+	slot16 = slot3
+	slot14 = slot3.setRendererLod
+	slot17 = 0
 
-	FLOW; TARGET BLOCK #15
+	slot14(slot16, slot17)
 
+	--- END OF BLOCK #13 ---
 
-	--- BLOCK #15 80-107, warpins: 2 ---
-	slot14 = slot3.eModel
-	slot16 = slot14
-	slot14 = slot14.GetOrAddMonoComponent
-	slot17 = ClientConst
-	slot17 = slot17.COMPONENT_IDX_PHYSX
-	slot14 = slot14(slot16, slot17)
-	slot17 = slot3
-	slot15 = slot3.getConfigData
-	slot15 = slot15(slot17)
-	slot18 = slot14
-	slot16 = slot14.GenCapsule
-	slot19 = slot15.bodySize
-	slot20 = slot15.modelHeight
-	slot21 = Vector3
-	slot23 = 0
-	slot24 = slot15.modelHeight
-	slot24 = slot24 / 2
-	slot25 = 0
-	slot21 = slot21(slot23, slot24, slot25)
-	slot22 = true
-	slot23 = false
-
-	slot16(slot18, slot19, slot20, slot21, slot22, slot23)
-
-	slot16 = slot15.modelHeight
-	slot17 = slot2.pet_scale
-	slot16 = slot16 * slot17
-	slot16 = slot16 * 0.5
-	--- END OF BLOCK #15 ---
-
-	slot16 = if not slot16 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #16 108-108, warpins: 1 ---
-	slot16 = 0.5
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 109-117, warpins: 2 ---
-	slot0.modelHeight = slot16
-	slot18 = slot3
-	slot16 = slot3.toggleLodTick
-	slot19 = false
-
-	slot16(slot18, slot19)
-
-	slot18 = slot3
-	slot16 = slot3.setRendererLod
-	slot19 = 0
-
-	slot16(slot18, slot19)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 118-118, warpins: 2 ---
+	--- BLOCK #14 106-106, warpins: 2 ---
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot3.refreshPetModelAppearance = slot12
+slot3.refreshPetModelAppearance = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot6 = slot0.petModel
 	--- END OF BLOCK #0 ---
@@ -556,9 +502,9 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot3.playAnimation = slot12
+slot3.playAnimation = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petModel
 	--- END OF BLOCK #0 ---
@@ -627,9 +573,9 @@ slot12 = function(slot0)
 
 end
 
-slot3.updateLookAt = slot12
+slot3.updateLookAt = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0.ableLookAt = slot1
 	slot2 = slot0.ableLookAt
@@ -657,9 +603,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot3.setLookAtAble = slot12
+slot3.setLookAtAble = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petModel
 	--- END OF BLOCK #0 ---
@@ -688,7 +634,7 @@ slot12 = function(slot0)
 
 end
 
-slot3.onDestroy = slot12
+slot3.onDestroy = slot13
 
 return slot3
 --- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-96, warpins: 1 ---
+--- BLOCK #0 1-99, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -33,12 +33,15 @@ slot10 = require
 slot12 = "GameApp.Effect.TeamLinkController"
 slot10 = slot10(slot12)
 slot11 = ToBool
-slot12 = slot3.LightClass
-slot14 = "EffectSystem"
-slot15 = slot2
-slot12 = slot12(slot14, slot15)
+slot12 = require
+slot14 = "Utils.ClientEffectUtils"
+slot12 = slot12(slot14)
+slot13 = slot3.LightClass
+slot15 = "EffectSystem"
+slot16 = slot2
+slot13 = slot13(slot15, slot16)
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = MessageName
@@ -53,9 +56,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.getMessageBindMap = slot13
+slot13.getMessageBindMap = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-31, warpins: 1 ---
 	slot1 = {}
 	slot0.usingItems = slot1
@@ -208,9 +211,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onCtor = slot13
+slot13.onCtor = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.memArr
 	slot3 = slot1
@@ -225,9 +228,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot13.onDestroy = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setTimeScale
@@ -243,9 +246,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onTimeScaleChange = slot13
+slot13.onTimeScaleChange = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -282,9 +285,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.setTimeScale = slot13
+slot13.setTimeScale = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = ipairs
 	slot3 = EffectConst
@@ -355,9 +358,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.preloadCustomEffects = slot13
+slot13.preloadCustomEffects = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
@@ -515,9 +518,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.preloadEntityEffect = slot13
+slot13.preloadEntityEffect = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = string
 	slot3 = slot3.isNilOrEmpty
@@ -709,9 +712,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.unPreloadEntityEffect = slot13
+slot13.unPreloadEntityEffect = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -845,9 +848,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.unPreloadAllEntityEffect = slot13
+slot13.unPreloadAllEntityEffect = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = EffectData
@@ -916,9 +919,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.preloadEffects = slot13
+slot13.preloadEffects = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot4 = lume
 	slot4 = slot4.clear
@@ -1503,9 +1506,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.setShareMem = slot13
+slot13.setShareMem = slot14
 
-slot13 = function(slot0, slot1, slot2)
+slot14 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -2427,9 +2430,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.createEffectConfigInfo = slot13
+slot13.createEffectConfigInfo = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2464,9 +2467,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.createGenerator = slot13
+slot13.createGenerator = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2502,9 +2505,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.destroyGenerator = slot13
+slot13.destroyGenerator = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
@@ -2524,9 +2527,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.setPlaySpeed = slot13
+slot13.setPlaySpeed = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = string
 	slot5 = slot5.isNilOrEmpty
@@ -2590,30 +2593,47 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 	slot5 = slot5[slot2]
 	--- END OF BLOCK #6 ---
 
-	if slot5 == nil then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 19-26, warpins: 1 ---
+	--- BLOCK #7 19-19, warpins: 1 ---
+	slot5 = {}
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 20-21, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	if slot5 == nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 22-29, warpins: 1 ---
 	slot5 = {}
 	slot6 = LoggerManager
 	slot6 = slot6.checkLogger
 	slot8 = LoggerConst
 	slot8 = slot8.ERROR
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 27-32, warpins: 1 ---
+	--- BLOCK #10 30-35, warpins: 1 ---
 	slot6 = logger
 	slot8 = slot6
 	slot6 = slot6.error
@@ -2622,22 +2642,22 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #9 33-37, warpins: 3 ---
+	--- BLOCK #11 36-40, warpins: 3 ---
 	slot6 = 0
 	slot7 = ipairs
 	slot9 = slot5
 	slot7, slot8, slot9 = slot7(slot9)
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #13
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #10 38-56, warpins: 1 ---
+	--- BLOCK #12 41-59, warpins: 1 ---
 	slot12 = pg
 	slot12 = slot12.game
 	slot12 = slot12.effect
@@ -2655,50 +2675,50 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 	slot17 = slot2
 	slot18 = slot12
 	slot19 = slot6
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 	slot20 = if not slot4 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 57-57, warpins: 1 ---
+	--- BLOCK #13 60-60, warpins: 1 ---
 	slot20 = false
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #12 58-59, warpins: 2 ---
+	--- BLOCK #14 61-62, warpins: 2 ---
 	slot13 = slot13(slot15, slot16, slot17, slot18, slot19, slot20)
 	slot6 = slot13
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #13
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #13 60-61, warpins: 2 ---
-	--- END OF BLOCK #13 ---
+	--- BLOCK #15 63-64, warpins: 2 ---
+	--- END OF BLOCK #15 ---
 
 	for slot10, slot11 in slot7, slot8, slot9
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #14
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #14 62-62, warpins: 1 ---
+	--- BLOCK #16 65-65, warpins: 1 ---
 	return slot6
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #16 ---
 
 
 
 end
 
-slot12.playEffect = slot13
+slot13.playEffect = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2716,28 +2736,29 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-14, warpins: 2 ---
-	slot5 = EffectConst
-	slot5 = slot5.MountType
-	slot5 = slot5.Custom
-	slot4.mountType = slot5
+	--- BLOCK #2 4-15, warpins: 2 ---
+	slot6 = EffectConst
+	slot6 = slot6.MountType
+	slot6 = slot6.Custom
+	slot4.mountType = slot6
 	slot4.targetTrans = slot3
-	slot7 = slot0
-	slot5 = slot0.playEffect
-	slot8 = slot1
-	slot9 = slot2
-	slot10 = slot4
+	slot8 = slot0
+	slot6 = slot0.playEffect
+	slot9 = slot1
+	slot10 = slot2
+	slot11 = slot4
+	slot12 = slot5
 
-	return slot5(slot7, slot8, slot9, slot10)
+	return slot6(slot8, slot9, slot10, slot11, slot12)
 	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot12.playEffectOn = slot13
+slot13.playEffectOn = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot14 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2863,9 +2884,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot12.playEffectAt = slot13
+slot13.playEffectAt = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = EffectData
 	slot4 = slot4[slot1]
@@ -2948,9 +2969,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.worldEffectApplyScale = slot13
+slot13.worldEffectApplyScale = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntity
@@ -2961,60 +2982,62 @@ slot13 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 7-11, warpins: 1 ---
-	slot3 = NotNil
-	slot5 = slot2.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot3 = slot2.eModel
 	--- END OF BLOCK #1 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 12-15, warpins: 1 ---
+	--- BLOCK #2 10-13, warpins: 1 ---
 	slot3 = slot2.eModel
-	slot3 = slot3.effectComponent
+	slot3 = slot3.effectGeneratorId
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 16-19, warpins: 1 ---
-	slot3 = slot2.eModel
-	slot3 = slot3.effectComponent
-	slot3 = slot3.effectGeneratorId
-
-	return slot3
+	--- BLOCK #3 14-14, warpins: 1 ---
+	slot3 = 0
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-21, warpins: 4 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
+	return slot3
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-17, warpins: 3 ---
 	slot3 = 0
 
 	return slot3
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot12.getEntityGeneratorId = slot13
+slot13.getEntityGeneratorId = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3088,9 +3111,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot12.playRawEffectAt = slot13
+slot13.playRawEffectAt = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3160,9 +3183,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot12.playRawEffectOn = slot13
+slot13.playRawEffectOn = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3204,9 +3227,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.playRawEffect = slot13
+slot13.playRawEffect = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3286,9 +3309,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot12.stopEffect = slot13
+slot13.stopEffect = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
@@ -3308,9 +3331,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.setEffectVisible = slot13
+slot13.setEffectVisible = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.clear
@@ -3375,9 +3398,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.setCurrentBuffIdList = slot13
+slot13.setCurrentBuffIdList = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.teamLinkController
 	--- END OF BLOCK #0 ---
@@ -3412,9 +3435,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.getTeamLinkController = slot13
+slot13.getTeamLinkController = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = SystemBase
 	slot2 = slot2.onPlayerDestroy
@@ -3433,9 +3456,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onPlayerDestroy = slot13
+slot13.onPlayerDestroy = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

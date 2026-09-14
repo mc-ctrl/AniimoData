@@ -1,53 +1,56 @@
---- BLOCK #0 1-66, warpins: 1 ---
+--- BLOCK #0 1-69, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "PetRecommendBatchAddPPointCtrl"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.MessageName"
+slot3 = "Core.Log.LoggerManager"
+slot1 = slot1(slot3)
+slot1 = slot1.getLogger
+slot3 = "PetRecommendBatchAddPPointCtrl"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Framework.Class"
+slot4 = "Const.MessageName"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Guis.UICtrl"
+slot5 = "Core.Framework.Class"
 slot3 = slot3(slot5)
-slot4 = slot2.LightClass
-slot6 = "PetRecommendBatchAddPPointCtrl"
-slot7 = slot3
-slot4 = slot4(slot6, slot7)
-slot5 = require
-slot7 = "Utils.ClientTextUtils"
-slot5 = slot5(slot7)
+slot4 = require
+slot6 = "Guis.UICtrl"
+slot4 = slot4(slot6)
+slot5 = slot3.LightClass
+slot7 = "PetRecommendBatchAddPPointCtrl"
+slot8 = slot4
+slot5 = slot5(slot7, slot8)
 slot6 = require
-slot8 = "Data.pet_strength_recommend_data"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.PetManagementUtils"
+slot9 = "Data.pet_strength_recommend_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.LuaUIUtils"
+slot10 = "Utils.PetManagementUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.ClientUtils"
+slot11 = "Utils.LuaUIUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.Const"
+slot12 = "Utils.ClientUtils"
 slot10 = slot10(slot12)
-slot11 = string
-slot11 = slot11.format
-slot12 = {}
-slot13 = slot1.PET_NEW_PROP_CHANGE
-slot14 = {
+slot11 = require
+slot13 = "Common.Const.Const"
+slot11 = slot11(slot13)
+slot12 = string
+slot12 = slot12.format
+slot13 = {}
+slot14 = slot2.PET_NEW_PROP_CHANGE
+slot15 = {
 	"onPetNewPropChange",
 	true
 }
-slot12[slot13] = slot14
-slot4.messages = slot12
+slot13[slot14] = slot15
+slot5.messages = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -130,9 +133,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot4.onCreate = slot12
+slot5.onCreate = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -141,9 +144,9 @@ slot12 = function(slot0)
 
 end
 
-slot4.addListener = slot12
+slot5.addListener = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -158,9 +161,9 @@ slot12 = function(slot0)
 
 end
 
-slot4.onDestroy = slot12
+slot5.onDestroy = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -176,9 +179,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot4.onOpen = slot12
+slot5.onOpen = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -187,9 +190,9 @@ slot12 = function(slot0)
 
 end
 
-slot4.onShow = slot12
+slot5.onShow = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -198,9 +201,9 @@ slot12 = function(slot0)
 
 end
 
-slot4.onHide = slot12
+slot5.onHide = slot13
 
-slot12 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -238,9 +241,9 @@ slot12 = function(slot0)
 
 end
 
-slot4.refreshPanel = slot12
+slot5.refreshPanel = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-66, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -517,9 +520,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.m_refreshItem = slot12
+slot5.m_refreshItem = slot13
 
-slot12 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.getGameString
@@ -616,7 +619,7 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 
 		--- BLOCK #2 10-10, warpins: 2 ---
-		slot3 = {}
+		slot3 = EMPTY_TABLE
 		--- END OF BLOCK #2 ---
 
 		FLOW; TARGET BLOCK #3
@@ -689,9 +692,9 @@ slot12 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.m_onClickApply = slot12
+slot5.m_onClickApply = slot13
 
-slot12 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -747,9 +750,9 @@ slot12 = function(slot0, slot1)
 
 end
 
-slot4.onPetNewPropChange = slot12
+slot5.onPetNewPropChange = slot13
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

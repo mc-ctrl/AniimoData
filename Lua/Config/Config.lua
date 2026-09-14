@@ -1,4 +1,4 @@
---- BLOCK #0 1-12181, warpins: 1 ---
+--- BLOCK #0 1-14668, warpins: 1 ---
 slot0 = {}
 slot1 = {}
 slot2 = {
@@ -242,6 +242,78 @@ slot3 = {}
 slot2.Properties = slot3
 slot1.AbilityPresetMap = slot2
 slot2 = {
+	NameSpace = "CustomTypes.AppearanceUnitDesignList",
+	__ValueType__ = "AppearanceUnitDesign",
+	__IntTypeKey__ = true
+}
+slot1.AppearanceUnitDesignList = slot2
+slot2 = {
+	NameSpace = "CustomTypes.AssistCarryList",
+	__ValueType__ = "AssistCarryInfo",
+	__IntTypeKey__ = true
+}
+slot1.AssistCarryList = slot2
+slot2 = {
+	NameSpace = "CustomTypes.AcceptedQuestData"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot3.configId = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot3.state = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot3.acceptTime = slot4
+slot4 = {
+	"QuestObjectivesMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot3.objectives = slot4
+slot4 = {
+	"QuestObjectivesMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot3.runCond = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"PER"
+}
+slot3.runState = slot4
+slot2.Properties = slot3
+slot1.AcceptedQuestData = slot2
+slot2 = {
+	NameSpace = "CustomTypes.AcceptedQuestDataMap",
+	__ValueType__ = "AcceptedQuestData",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot1.AcceptedQuestDataMap = slot2
+slot2 = {
 	NameSpace = "CustomTypes.ActivityPetSaveData",
 	__ValueType__ = "ActivityPetSaveWeekSumyData",
 	__IntTypeKey__ = true
@@ -442,30 +514,6 @@ slot3 = {}
 slot2.Properties = slot3
 slot1.AdventureMap = slot2
 slot2 = {
-	NameSpace = "CustomTypes.AppearanceUnitDesignList",
-	__ValueType__ = "AppearanceUnitDesign",
-	__IntTypeKey__ = true
-}
-slot1.AppearanceUnitDesignList = slot2
-slot2 = {
-	NameSpace = "CustomTypes.AssistCarryList",
-	__ValueType__ = "AssistCarryInfo",
-	__IntTypeKey__ = true
-}
-slot1.AssistCarryList = slot2
-slot2 = {
-	NameSpace = "CustomTypes.BaseAttributeList",
-	__ValueType__ = "double",
-	__IntTypeKey__ = true
-}
-slot1.BaseAttributeList = slot2
-slot2 = {
-	NameSpace = "CustomTypes.BasePropertyList",
-	__ValueType__ = "BaseProperty",
-	__IntTypeKey__ = true
-}
-slot1.BasePropertyList = slot2
-slot2 = {
 	NameSpace = "CustomTypes.AllSandboxData",
 	__ValueType__ = "SingleSandboxData",
 	__IntTypeKey__ = true
@@ -544,6 +592,13 @@ slot4 = {
 slot5 = {}
 slot4[2] = slot5
 slot3.makeUpInfo = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot3.suitId = slot4
 slot2.Properties = slot3
 slot1.AppearanceCustomOne = slot2
 slot2 = {
@@ -826,7 +881,8 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
-slot1.ArkScreenInfoMap = slot2
+slot3 = "ArkScreenInfoMap"
+slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.AssistCarryInfo"
 }
@@ -837,14 +893,16 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
 	"OwnClient",
 	"PER"
 }
-slot3.totalExp = slot4
+slot5 = "totalExp"
+slot3[slot5] = slot4
 slot4 = {
 	"TalentList",
 	nil,
@@ -853,7 +911,8 @@ slot4 = {
 }
 slot5 = {}
 slot4[2] = slot5
-slot3.talentList = slot4
+slot5 = "talentList"
+slot3[slot5] = slot4
 slot4 = {
 	"ItemPos",
 	nil,
@@ -862,9 +921,11 @@ slot4 = {
 }
 slot5 = {}
 slot4[2] = slot5
-slot3.ownerCoreCarryPos = slot4
+slot5 = "ownerCoreCarryPos"
+slot3[slot5] = slot4
 slot2.Properties = slot3
-slot1.AssistCarryInfo = slot2
+slot3 = "AssistCarryInfo"
+slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.BadgeInfo"
 }
@@ -985,6 +1046,48 @@ slot2.Properties = slot3
 slot3 = "BadgeUnlockInfo"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.BaseAttributeList",
+	__ValueType__ = "double",
+	__IntTypeKey__ = true
+}
+slot3 = "BaseAttributeList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.BasePropertyList",
+	__ValueType__ = "BaseProperty",
+	__IntTypeKey__ = true
+}
+slot3 = "BasePropertyList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.BoolList",
+	__ValueType__ = "boolean",
+	__IntTypeKey__ = true
+}
+slot3 = "BoolList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.BuffDataList",
+	__ValueType__ = "BuffData",
+	__IntTypeKey__ = true
+}
+slot3 = "BuffDataList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.CapturePuppetInfos",
+	__ValueType__ = "CapturePuppetInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "CapturePuppetInfos"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.CatchPetInfoList",
+	__ValueType__ = "CatchPetInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "CatchPetInfoList"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.BadgeUnlockInfoMap",
 	__ValueType__ = "BadgeUnlockInfo",
 	__IntTypeKey__ = true
@@ -1079,41 +1182,9 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = "speciesPoint"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "talentPointByLearn"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "talentPoint"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "strengthenPoint"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"OwnClient",
-	"PER"
-}
-slot5 = "enhanced"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -1129,7 +1200,7 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "individualLevelByEvent"
+slot5 = "iLvEv"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -1137,7 +1208,7 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "individualLevelByExtra"
+slot5 = "iLvEx"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -1145,7 +1216,7 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "individualLevelByLearn"
+slot5 = "iLvLn"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -1153,13 +1224,13 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "individualLevel"
+slot5 = "indLv"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = "totalByUp"
 slot3[slot5] = slot4
@@ -1167,19 +1238,9 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = "total"
-slot3[slot5] = slot4
-slot4 = {
-	"IntIntMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "extraSrcMap"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "BaseProperty"
@@ -1243,34 +1304,6 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "BlockCatchedPetMap"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.BoolList",
-	__ValueType__ = "boolean",
-	__IntTypeKey__ = true
-}
-slot3 = "BoolList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.BuffDataList",
-	__ValueType__ = "BuffData",
-	__IntTypeKey__ = true
-}
-slot3 = "BuffDataList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.CapturePuppetInfos",
-	__ValueType__ = "CapturePuppetInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "CapturePuppetInfos"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.CatchPetInfoList",
-	__ValueType__ = "CatchPetInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "CatchPetInfoList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.BlockPetRecordMap",
@@ -1368,6 +1401,14 @@ slot4 = {
 	"NPER"
 }
 slot5 = "srcCombatContextId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "castingCombatContextId"
 slot3[slot5] = slot4
 slot4 = {
 	"double",
@@ -1477,6 +1518,14 @@ slot4 = {
 	"AllClients",
 	"PER"
 }
+slot5 = "campId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
 slot5 = "dispId"
 slot3[slot5] = slot4
 slot4 = {
@@ -1525,6 +1574,30 @@ slot4 = {
 	"PER"
 }
 slot5 = "likeCnt"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "furnitureComfortValue"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "petComfortValue"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "CampCarLoadValue"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "CampCarSyncInfo"
@@ -1785,6 +1858,32 @@ slot4 = {
 	"NPER"
 }
 slot5 = "catchType"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "luckyresult"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "luckyRewardItems"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "luckyEnergyLevel"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "CaptureSessionInfo"
@@ -2089,6 +2188,20 @@ slot2.Properties = slot3
 slot3 = "CatchRogueInfo"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.CustomAbilityIds",
+	__ValueType__ = "CustomAbilityIdsOne",
+	__IntTypeKey__ = true
+}
+slot3 = "CustomAbilityIds"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DoubleList",
+	__ValueType__ = "double",
+	__IntTypeKey__ = true
+}
+slot3 = "DoubleList"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.CatchRoguePetInfo"
 }
 slot3 = {}
@@ -2373,41 +2486,6 @@ slot2.Properties = slot3
 slot3 = "ClassMergeMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.CustomAbilityIds",
-	__ValueType__ = "CustomAbilityIdsOne",
-	__IntTypeKey__ = true
-}
-slot3 = "CustomAbilityIds"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.DoubleList",
-	__ValueType__ = "double",
-	__IntTypeKey__ = true
-}
-slot3 = "DoubleList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.ExampleList",
-	__ValueType__ = "int",
-	__IntTypeKey__ = true
-}
-slot3 = "ExampleList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.FCSettleRecordList",
-	__ValueType__ = "FCSettleRecord",
-	__IntTypeKey__ = true
-}
-slot3 = "FCSettleRecordList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.FairPvpPresetList",
-	__ValueType__ = "FairPvpPreset",
-	__IntTypeKey__ = true
-}
-slot3 = "FairPvpPresetList"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "CustomTypes.CompletedTargetMap",
 	__ValueType__ = "IntBoolMap",
 	__IntTypeKey__ = true
@@ -2444,14 +2522,16 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
 	"OwnClient",
 	"PER"
 }
-slot3.totalExp = slot4
+slot5 = "totalExp"
+slot3[slot5] = slot4
 slot4 = {
 	"TalentList",
 	nil,
@@ -2460,7 +2540,8 @@ slot4 = {
 }
 slot5 = {}
 slot4[2] = slot5
-slot3.talentList = slot4
+slot5 = "talentList"
+slot3[slot5] = slot4
 slot4 = {
 	"string",
 	"",
@@ -2488,6 +2569,14 @@ slot4 = {
 slot5 = {}
 slot4[2] = slot5
 slot5 = "assistCarryTypeList"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "certifiedBaseFormPet"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "CoreCarryInfo"
@@ -2575,6 +2664,171 @@ slot2.Properties = slot3
 slot3 = "CustomMapMarkMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.DailyAcquisitionData"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "dayKey"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "petCount"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "eggCount"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "revision"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "ackRevision"
+slot3[slot5] = slot4
+slot4 = {
+	"StringStringMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "pendingSnapshots"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "DailyAcquisitionData"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayFormPetLabelByCountryMap",
+	__ValueType__ = "DisplayFormPetLabelCountryMap",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "DisplayFormPetLabelByCountryMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayFormPetLabelCountryMap",
+	__ValueType__ = "DisplayFormPetLabelInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "DisplayFormPetLabelCountryMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayFormPetLabelInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "label"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shinyStyle"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "DisplayFormPetLabelInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayFormPetLabelMap",
+	__ValueType__ = "DisplayFormPetLabelInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "DisplayFormPetLabelMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayPetFormByCountryMap",
+	__ValueType__ = "DisplayPetFormCountryMap",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "DisplayPetFormByCountryMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayPetFormCountryMap",
+	__ValueType__ = "DisplayPetFormInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "DisplayPetFormCountryMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayPetFormInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "petPrototypeId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "label"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shinyStyle"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "DisplayPetFormInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.DisplayPetFormMap",
+	__ValueType__ = "DisplayPetFormInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "DisplayPetFormMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.EnvData"
 }
 slot3 = {}
@@ -2588,6 +2842,34 @@ slot5 = "destroyed"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "EnvData"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ExampleList",
+	__ValueType__ = "int",
+	__IntTypeKey__ = true
+}
+slot3 = "ExampleList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.FCSettleRecordList",
+	__ValueType__ = "FCSettleRecord",
+	__IntTypeKey__ = true
+}
+slot3 = "FCSettleRecordList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.FairPvpPresetList",
+	__ValueType__ = "FairPvpPreset",
+	__IntTypeKey__ = true
+}
+slot3 = "FairPvpPresetList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.GuidenceItemList",
+	__ValueType__ = "GuidenceItem",
+	__IntTypeKey__ = true
+}
+slot3 = "GuidenceItemList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.EquipShowData"
@@ -2813,7 +3095,7 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"NPER"
+	"PER"
 }
 slot5 = "sessionBattleGrade"
 slot3[slot5] = slot4
@@ -2821,7 +3103,7 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"NPER"
+	"PER"
 }
 slot5 = "sessionCaptureBonus"
 slot3[slot5] = slot4
@@ -2829,7 +3111,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"NPER"
+	"PER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -2841,7 +3123,15 @@ slot4 = {
 	"ServerOnly",
 	"PER"
 }
-slot5 = "offlineMailSent"
+slot5 = "settleRewardSent"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "energyConvertRewardSent"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "FishingCaptureInfo"
@@ -3097,27 +3387,6 @@ slot2.Properties = slot3
 slot3 = "GamePlayTargetMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.GuidenceItemList",
-	__ValueType__ = "GuidenceItem",
-	__IntTypeKey__ = true
-}
-slot3 = "GuidenceItemList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.HomeFoodSlotList",
-	__ValueType__ = "HomeFoodSlotInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "HomeFoodSlotList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.HomeOrderList",
-	__ValueType__ = "HomeOrderInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "HomeOrderList"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "CustomTypes.GmTriggerValue",
 	__ValueType__ = "IntIntMap",
 	__IntTypeKey__ = true
@@ -3235,11 +3504,116 @@ slot2.Properties = slot3
 slot3 = "GuidenceUnlockedEventMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.HatchItemSnapshot"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "objID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "useTimes"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "extraProp"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "owner"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "schemaVersion"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "invId"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "payload"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HatchItemSnapshot"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.HatchSlotInfo"
 }
 slot3 = {}
 slot4 = {
-	"Item",
+	"HatchItemSnapshot",
 	nil,
 	"OwnClient",
 	"PER"
@@ -3295,6 +3669,27 @@ slot2.Properties = slot3
 slot3 = "HatchSlotMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.HomeBlueprintGroupInfoList",
+	__ValueType__ = "HomeBlueprintGroupInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "HomeBlueprintGroupInfoList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeFoodSlotList",
+	__ValueType__ = "HomeFoodSlotInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "HomeFoodSlotList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeOrderList",
+	__ValueType__ = "HomeOrderInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "HomeOrderList"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.HatredInfo"
 }
 slot3 = {}
@@ -3333,9 +3728,49 @@ slot2.Properties = slot3
 slot3 = "HatredMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.HomeAreaStatInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "loadValue"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "comfortValue"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomeAreaStatInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeAreaStats",
+	__ValueType__ = "HomeAreaStatInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "HomeAreaStats"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.HomeBasicInfo"
 }
 slot3 = {}
+slot4 = {
+	"double",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "upgradeEndTs"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -3383,6 +3818,47 @@ slot5 = "unlockedHomeCampIds"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomeBasicInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeBlueprintGroupInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "blueprintId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "areaId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "yawAngle"
+slot3[slot5] = slot4
+slot4 = {
+	"IntList",
+	nil,
+	"AllClients",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "ornamentIds"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomeBlueprintGroupInfo"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.HomeCampPendingSwitch"
@@ -3470,6 +3946,37 @@ slot5 = "lastAttemptTs"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomeCampPendingSwitch"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeComfortStats"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "furnitureComfortValue"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "petComfortValue"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "comfortValue"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomeComfortStats"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.HomeEnvInfo"
@@ -3575,7 +4082,8 @@ slot4 = {
 	"AllClients",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -3586,6 +4094,66 @@ slot5 = "itemNum"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomeFoodSlotInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeHandbookItemInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "firstTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomeHandbookItemInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomeHandbookItemMap",
+	__ValueType__ = "HomeHandbookItemInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "homeHandbookScore"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "homeHandbookCategoryCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "homeHandbookSeasonCount"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomeHandbookItemMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.HomeLinkGroupInfo"
@@ -3717,6 +4285,30 @@ slot4 = {
 }
 slot5 = "desId"
 slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "insId"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"PER"
+}
+slot5 = "canRefresh"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"OwnClient",
+	"PER"
+}
+slot5 = "isPinned"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomeOrderInfo"
 slot1[slot3] = slot2
@@ -3728,6 +4320,42 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "HomePetAllData"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomePetBoxInfo",
+	__ValueType__ = "string",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomePetBoxInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomePetBoxMap",
+	__ValueType__ = "HomePetBoxInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"StringIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "petPositionMap"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomePetBoxMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.HomePetRestData",
@@ -3760,7 +4388,7 @@ slot3 = {}
 slot4 = {
 	"IntList",
 	nil,
-	"AllClients",
+	"ServerOnly",
 	"PER"
 }
 slot5 = {}
@@ -3770,27 +4398,76 @@ slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
-	"AllClients",
+	"ServerOnly",
 	"PER"
 }
 slot5 = "yawAngle"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "areaId"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomePetSingleData"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.IntIntList",
-	__ValueType__ = "IntList",
-	__IntTypeKey__ = true
+	NameSpace = "CustomTypes.HomeVoucherProduceInfo"
 }
-slot3 = "IntIntList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.IntList",
-	__ValueType__ = "int",
-	__IntTypeKey__ = true
+slot3 = {}
+slot4 = {
+	"double",
+	0,
+	"ServerOnly",
+	"PER"
 }
-slot3 = "IntList"
+slot5 = "progress"
+slot3[slot5] = slot4
+slot4 = {
+	"double",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "lastSettleTs"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "collectorCount"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "active"
+slot3[slot5] = slot4
+slot4 = {
+	"double",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "produceRate"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "collectLimit"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomeVoucherProduceInfo"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.HomelandAllocationInfo"
@@ -3844,6 +4521,22 @@ slot4 = {
 }
 slot5 = "fitTalent"
 slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "manual"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "extraIntParam"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomelandAllocationInfo"
 slot1[slot3] = slot2
@@ -3861,7 +4554,7 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	"Item",
+	"HatchItemSnapshot",
 	nil,
 	"ServerOnly",
 	"PER"
@@ -4053,6 +4746,62 @@ slot2.Properties = slot3
 slot3 = "HomelandHighPriceStoreInfo"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.HomelandLeisureStateInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "leisureId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "vehicleOrnamentId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "vehicleSeatIndex"
+slot3[slot5] = slot4
+slot4 = {
+	"double",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "startTs"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "revision"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandLeisureStateInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomelandLeisureStateMap",
+	__ValueType__ = "HomelandLeisureStateInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "HomelandLeisureStateMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.HomelandOrderInfo"
 }
 slot3 = {}
@@ -4178,6 +4927,16 @@ slot4[2] = slot5
 slot5 = "outputMap"
 slot3[slot5] = slot4
 slot4 = {
+	"HomelandSpecialOutputMap",
+	nil,
+	"AllClients",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "specialOutputMap"
+slot3[slot5] = slot4
+slot4 = {
 	"boolean",
 	false,
 	"AllClients",
@@ -4208,6 +4967,24 @@ slot4 = {
 	"PER"
 }
 slot5 = "baseEnvWorkRatio"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"AllClients",
+	"PER"
+}
+slot5 = "tilled"
+slot3[slot5] = slot4
+slot4 = {
+	"HomelandTillStateInfo",
+	nil,
+	"AllClients",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "tillStateInfo"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomelandProduceFacilityInfo"
@@ -4269,6 +5046,38 @@ slot2.Properties = slot3
 slot3 = "HomelandProduceFacilityStateInfo"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.HomelandSpecialOutputInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "num"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "mode"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandSpecialOutputInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomelandSpecialOutputMap",
+	__ValueType__ = "HomelandSpecialOutputInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "HomelandSpecialOutputMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.HomelandSyncInfo"
 }
 slot3 = {}
@@ -4284,6 +5093,29 @@ slot5 = "visitors"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "HomelandSyncInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.HomelandTillStateInfo"
+}
+slot3 = {}
+slot4 = {
+	"double",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "curValue"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
+slot5 = "totalValue"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandTillStateInfo"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.HomelandTimerStateInfo"
@@ -4369,6 +5201,46 @@ slot2.Properties = slot3
 slot3 = "IDIPRewardMailMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.InitialQuestData"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot3.configId = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot3.state = slot4
+slot4 = {
+	"QuestObjectivesMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "claimCond"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "InitialQuestData"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InitialQuestDataMap",
+	__ValueType__ = "InitialQuestData",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "InitialQuestDataMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.IntBoolListMap",
 	__ValueType__ = "BoolList",
 	__IntTypeKey__ = true
@@ -4412,6 +5284,29 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "IntIntBoolMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.IntIntList",
+	__ValueType__ = "IntList",
+	__IntTypeKey__ = true
+}
+slot3 = "IntIntList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.IntList",
+	__ValueType__ = "int",
+	__IntTypeKey__ = true
+}
+slot3 = "IntList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.IntIntDoubleMap",
+	__ValueType__ = "IntDoubleMap",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "IntIntDoubleMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.IntIntListMap",
@@ -4459,25 +5354,13 @@ slot2.Properties = slot3
 slot3 = "IntStringMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.ItemDecomposeRecordList",
-	__ValueType__ = "ItemDecomposeRecord",
+	NameSpace = "CustomTypes.IntStringMapMap",
+	__ValueType__ = "StringIntMap",
 	__IntTypeKey__ = true
 }
-slot3 = "ItemDecomposeRecordList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.ItemPos",
-	__ValueType__ = "int",
-	__IntTypeKey__ = true
-}
-slot3 = "ItemPos"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.ItemPosList",
-	__ValueType__ = "ItemPos",
-	__IntTypeKey__ = true
-}
-slot3 = "ItemPosList"
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "IntStringMapMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.InteractAction"
@@ -4527,16 +5410,113 @@ slot2.Properties = slot3
 slot3 = "InteractAction"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.InventoryInfo",
-	__ValueType__ = "ItemBag",
+	NameSpace = "CustomTypes.InventoryItem.BallItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "BallItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.BallItemBag",
+	__ValueType__ = "BallItem",
 	__IntTypeKey__ = true
 }
 slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
 slot2.Properties = slot3
-slot3 = "InventoryInfo"
+slot3 = "BallItemBag"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.Item"
+	NameSpace = "CustomTypes.InventoryItem.CommonItem"
 }
 slot3 = {}
 slot4 = {
@@ -4588,12 +5568,142 @@ slot4 = {
 slot5 = "useTimes"
 slot3[slot5] = slot4
 slot4 = {
-	"boolean",
-	true,
+	"string",
+	"",
 	"OwnClient",
 	"PER"
 }
-slot5 = "isBind"
+slot5 = "extraProp"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "owner"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "CommonItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.CommonItemBag",
+	__ValueType__ = "CommonItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "CommonItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.FragmentItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "objID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "useTimes"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
@@ -4621,12 +5731,28 @@ slot4 = {
 }
 slot5 = "owner"
 slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
 slot2.Properties = slot3
-slot3 = "Item"
+slot3 = "FragmentItem"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.ItemBag",
-	__ValueType__ = "Item",
+	NameSpace = "CustomTypes.InventoryItem.FragmentItemBag",
+	__ValueType__ = "FragmentItem",
 	__IntTypeKey__ = true
 }
 slot3 = {}
@@ -4640,7 +5766,7 @@ slot5 = "count"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
-	1000,
+	0,
 	"OwnClient",
 	"PER"
 }
@@ -4663,7 +5789,922 @@ slot4 = {
 slot5 = "allowMultiPile"
 slot3[slot5] = slot4
 slot2.Properties = slot3
-slot3 = "ItemBag"
+slot3 = "FragmentItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.HomelandFurnitureItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandFurnitureItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.HomelandFurnitureItemBag",
+	__ValueType__ = "HomelandFurnitureItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandFurnitureItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.HomelandItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.HomelandItemBag",
+	__ValueType__ = "HomelandItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "HomelandItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.PetItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.PetItemBag",
+	__ValueType__ = "PetItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.PetJewelryItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetJewelryItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.PetJewelryItemBag",
+	__ValueType__ = "PetJewelryItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetJewelryItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.PlayerItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "objID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "useTimes"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "extraProp"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.PlayerItemBag",
+	__ValueType__ = "PlayerItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.ReservedItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "objID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "useTimes"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "extraProp"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "owner"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "ReservedItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.ReservedItemBag",
+	__ValueType__ = "ReservedItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "ReservedItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.RobEggItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "objID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "useTimes"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "extraProp"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot5 = "owner"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RobEggItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.RobEggItemBag",
+	__ValueType__ = "RobEggItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RobEggItemBag"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ItemDecomposeRecordList",
+	__ValueType__ = "ItemDecomposeRecord",
+	__IntTypeKey__ = true
+}
+slot3 = "ItemDecomposeRecordList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ItemPos",
+	__ValueType__ = "int",
+	__IntTypeKey__ = true
+}
+slot3 = "ItemPos"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ItemPosList",
+	__ValueType__ = "ItemPos",
+	__IntTypeKey__ = true
+}
+slot3 = "ItemPosList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.TaskItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "genID"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "status"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "useTimes"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildStartTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "vaildEndTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "TaskItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.InventoryItem.TaskItemBag",
+	__ValueType__ = "TaskItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "capacity"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "overflowMode"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	true,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "allowMultiPile"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "TaskItemBag"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.ItemCountBind",
@@ -4709,7 +6750,8 @@ slot4 = {
 	"ServerOnly",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -4774,7 +6816,7 @@ slot3 = {}
 slot4 = {
 	"int",
 	1,
-	"OwnClient",
+	"AllClients",
 	"PER"
 }
 slot5 = "flowerState"
@@ -4932,7 +6974,7 @@ slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
-	"OwnClient",
+	"AllClients",
 	"PER"
 }
 slot5 = "bloomQuality"
@@ -5079,6 +7121,14 @@ slot4 = {
 	"AllClients",
 	"NPER"
 }
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
 slot5 = "itemid"
 slot3[slot5] = slot4
 slot4 = {
@@ -5118,6 +7168,14 @@ slot4 = {
 slot5 = {}
 slot4[2] = slot5
 slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"AllClients",
+	"NPER"
+}
+slot5 = "entityId"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "LootBoxItem"
@@ -5192,6 +7250,30 @@ slot4 = {
 	"PER"
 }
 slot3.sceneId = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "encourageDays"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "isPermanent"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "setting"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "MediaMarkerData"
 slot1[slot3] = slot2
@@ -5285,6 +7367,24 @@ slot2.Properties = slot3
 slot3 = "MiniGamePlayerInfo"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.MiniGamePlayerMap",
+	__ValueType__ = "MiniGamePlayerInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "MiniGamePlayerMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.MmoItemCdMap",
+	__ValueType__ = "int",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "MmoItemCdMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.NpcDuelBotPetList",
 	__ValueType__ = "NpcDuelBotPetInfo",
 	__IntTypeKey__ = true
@@ -5299,13 +7399,13 @@ slot2 = {
 slot3 = "PartnerInfoList"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.MiniGamePlayerMap",
-	__ValueType__ = "MiniGamePlayerInfo",
-	__IntTypeKey__ = false
+	NameSpace = "CustomTypes.MmoItemCoolDownMap",
+	__ValueType__ = "MmoItemCdMap",
+	__IntTypeKey__ = true
 }
 slot3 = {}
 slot2.Properties = slot3
-slot3 = "MiniGamePlayerMap"
+slot3 = "MmoItemCoolDownMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.MultiInteractAction"
@@ -5344,6 +7444,14 @@ slot4 = {
 slot5 = {}
 slot4[2] = slot5
 slot5 = "memberIds"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"NPER"
+}
+slot5 = "petPrototypeId"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -5424,13 +7532,6 @@ slot4 = {
 slot5 = "avatarId"
 slot3[slot5] = slot4
 slot4 = {
-	"string",
-	"",
-	"OwnClient",
-	"PER"
-}
-slot3.name = slot4
-slot4 = {
 	"NpcDuelBotPetList",
 	nil,
 	"OwnClient",
@@ -5489,6 +7590,24 @@ slot5 = "cp"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "NpcDuelBotPetInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.NpcDuelShowedPetList",
+	__ValueType__ = "IntIntListMap",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "NpcDuelShowedPetList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.OSSPhotoRecordMap",
+	__ValueType__ = "PhotoRecordInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "OSSPhotoRecordMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.OriginMap",
@@ -5640,74 +7759,102 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	"IntList",
-	nil,
-	"AllClients",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "pos3"
-slot3[slot5] = slot4
-slot4 = {
 	"int",
 	0,
-	"AllClients",
-	"PER"
-}
-slot5 = "yawAngle"
-slot3[slot5] = slot4
-slot4 = {
-	"IntList",
-	nil,
-	"AllClients",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "rot3"
-slot3[slot5] = slot4
-slot4 = {
-	"IntList",
-	nil,
-	"AllClients",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "scale3"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"PER"
-}
-slot5 = "itemNo"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"PER"
+	"ServerOnly",
+	"NPER"
 }
 slot5 = "homeId"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
-	"AllClients",
-	"PER"
+	"ServerOnly",
+	"NPER"
+}
+slot3.posX = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot3.posY = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot3.posZ = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot3.rotX = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot3.rotY = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot3.rotZ = slot4
+slot4 = {
+	"int",
+	1000,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "scaleX"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	1000,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "scaleY"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	1000,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "scaleZ"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
 }
 slot5 = "trashId"
 slot3[slot5] = slot4
 slot4 = {
 	"boolean",
 	false,
-	"AllClients",
-	"PER"
+	"ServerOnly",
+	"NPER"
 }
 slot5 = "electricMode"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "areaId"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "OrnamentSingleData"
@@ -5974,6 +8121,20 @@ slot2.Properties = slot3
 slot3 = "PayCountMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.PetBallExpActionList",
+	__ValueType__ = "PetBallExpActionInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "PetBallExpActionList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetIdList",
+	__ValueType__ = "string",
+	__IntTypeKey__ = true
+}
+slot3 = "PetIdList"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.PersistEntityInfo"
 }
 slot3 = {}
@@ -6018,20 +8179,6 @@ slot2.Properties = slot3
 slot3 = "PersistEntityInfoMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.PetBallExpActionList",
-	__ValueType__ = "PetBallExpActionInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "PetBallExpActionList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.PetIdList",
-	__ValueType__ = "string",
-	__IntTypeKey__ = true
-}
-slot3 = "PetIdList"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "CustomTypes.PetBallActionInfo"
 }
 slot3 = {}
@@ -6049,7 +8196,8 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -6096,7 +8244,8 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -6390,6 +8539,50 @@ slot2.Properties = slot3
 slot3 = "PetBoxMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.PetCarryRecommendInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "appliedType"
+slot3[slot5] = slot4
+slot4 = {
+	"IntList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "appliedItemIds"
+slot3[slot5] = slot4
+slot4 = {
+	"IntList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "appliedItemGenIds"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetCarryRecommendInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetCarryRecommendInfoMap",
+	__ValueType__ = "PetCarryRecommendInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetCarryRecommendInfoMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.PetCombatInfo"
 }
 slot3 = {}
@@ -6429,7 +8622,7 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = "totalLevelStar"
 slot3[slot5] = slot4
@@ -6447,7 +8640,7 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = "collectLevel"
 slot3[slot5] = slot4
@@ -6465,7 +8658,7 @@ slot4 = {
 	"int",
 	0,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = "speciesCollectLevel"
 slot3[slot5] = slot4
@@ -6493,7 +8686,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6503,7 +8696,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6513,7 +8706,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6540,28 +8733,47 @@ slot2.Properties = slot3
 slot3 = "PetCountryMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.PetEthnicGroupIndex"
+	NameSpace = "CustomTypes.PetCpIndex"
 }
 slot3 = {}
 slot4 = {
-	"IntStringBoolMap",
+	"StringIntMap",
 	nil,
 	"ServerOnly",
 	"PER"
 }
 slot5 = {}
 slot4[2] = slot5
-slot3.index = slot4
+slot5 = "cpMap"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
 	"ServerOnly",
 	"PER"
 }
-slot5 = "count"
+slot5 = "cpCount"
+slot3[slot5] = slot4
+slot4 = {
+	"StringIntMap",
+	nil,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "top4Map"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "top4Count"
 slot3[slot5] = slot4
 slot2.Properties = slot3
-slot3 = "PetEthnicGroupIndex"
+slot3 = "PetCpIndex"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetFeatureUnlockMap",
@@ -6573,6 +8785,100 @@ slot2.Properties = slot3
 slot3 = "PetFeatureUnlockMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.PetHandbookCompactState"
+}
+slot3 = {}
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "targetState"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "researchState"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "traitState"
+slot3[slot5] = slot4
+slot4 = {
+	"PetHandbookEvolveCompactState",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "evolveState"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "levelRewardState"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetHandbookCompactState"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetHandbookEvolveCompactState"
+}
+slot3 = {}
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "routeState"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "normalState"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "itemState"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetHandbookEvolveCompactState"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.PetHandbookInfo"
 }
 slot3 = {}
@@ -6580,7 +8886,7 @@ slot4 = {
 	"CompletedTargetMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6590,19 +8896,11 @@ slot4 = {
 	"RewardedTargetMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
 slot5 = "rewardedTargetMap"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	true,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "firstCreate"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -6637,24 +8935,22 @@ slot4 = {
 slot5 = "petMaxLevel"
 slot3[slot5] = slot4
 slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shinyCollectMask"
+slot3[slot5] = slot4
+slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
 slot5 = "levelRewardStatus"
-slot3[slot5] = slot4
-slot4 = {
-	"PetRecordList",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "researchRecords"
 slot3[slot5] = slot4
 slot4 = {
 	"ResearchPointMap",
@@ -6667,60 +8963,10 @@ slot4[2] = slot5
 slot5 = "researchPointMap"
 slot3[slot5] = slot4
 slot4 = {
-	"PetResearchInfo",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "baseResearch"
-slot3[slot5] = slot4
-slot4 = {
-	"PetResearchInfo",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "heightMaxResearch"
-slot3[slot5] = slot4
-slot4 = {
-	"PetResearchInfo",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "heightMinResearch"
-slot3[slot5] = slot4
-slot4 = {
-	"PetResearchInfo",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "weightMaxResearch"
-slot3[slot5] = slot4
-slot4 = {
-	"PetResearchInfo",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "weightMinResearch"
-slot3[slot5] = slot4
-slot4 = {
 	"PetResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6730,7 +8976,7 @@ slot4 = {
 	"PetResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6740,7 +8986,7 @@ slot4 = {
 	"PetResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6750,27 +8996,17 @@ slot4 = {
 	"PetResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
 slot5 = "battleResearch"
 slot3[slot5] = slot4
 slot4 = {
-	"PetResearchMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "featureResearch"
-slot3[slot5] = slot4
-slot4 = {
 	"TraitResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6780,41 +9016,31 @@ slot4 = {
 	"EvolveResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
 slot5 = "evolveResearchMap"
 slot3[slot5] = slot4
 slot4 = {
-	"BlockPetRecordMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "blockPetRecordMap"
-slot3[slot5] = slot4
-slot4 = {
 	"PetResearchMap",
 	nil,
 	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "firstRecordResearch"
-slot3[slot5] = slot4
-slot4 = {
-	"PetResearchMap",
-	nil,
-	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
 slot5 = "bodyEntryResearch"
+slot3[slot5] = slot4
+slot4 = {
+	"PetHandbookCompactState",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "compactState"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PetHandbookInfo"
@@ -6839,7 +9065,7 @@ slot4 = {
 	"IntIntMapMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6849,7 +9075,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6859,7 +9085,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6869,7 +9095,7 @@ slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
-	"PER"
+	"NPER"
 }
 slot5 = {}
 slot4[2] = slot5
@@ -6970,6 +9196,14 @@ slot4 = {
 }
 slot3.customName = slot4
 slot4 = {
+	"boolean",
+	false,
+	"AllClients",
+	"PER"
+}
+slot5 = "isVariantInteractPet"
+slot3[slot5] = slot4
+slot4 = {
 	"int",
 	1,
 	"AllClients",
@@ -7055,7 +9289,23 @@ slot4 = {
 	"AllClients",
 	"PER"
 }
+slot5 = "bodySizeType"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"AllClients",
+	"PER"
+}
 slot5 = "shinyStyle"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"AllClients",
+	"PER"
+}
+slot5 = "shinyEffectReplace"
 slot3[slot5] = slot4
 slot4 = {
 	"double",
@@ -7101,17 +9351,9 @@ slot4 = {
 	"boolean",
 	false,
 	"AllClients",
-	"PER"
+	"NPER"
 }
 slot5 = "isTrial"
-slot3[slot5] = slot4
-slot4 = {
-	"string",
-	"",
-	"AllClients",
-	"PER"
-}
-slot5 = "petBallId"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -7125,31 +9367,7 @@ slot4 = {
 	"int",
 	0,
 	"AllClients",
-	"PER"
-}
-slot5 = "mood"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"PER"
-}
-slot5 = "breedCount"
-slot3[slot5] = slot4
-slot4 = {
-	"string",
-	"",
-	"AllClients",
-	"PER"
-}
-slot5 = "breedSource"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"PER"
+	"NPER"
 }
 slot5 = "tmpTemplateId"
 slot3[slot5] = slot4
@@ -7174,7 +9392,7 @@ slot4[2] = slot5
 slot5 = "curAbilityMap"
 slot3[slot5] = slot4
 slot4 = {
-	"LearnAbilityMap",
+	"PetUnlockedAbilityMap",
 	nil,
 	"OwnClient",
 	"PER"
@@ -7192,14 +9410,6 @@ slot4 = {
 slot5 = {}
 slot4[2] = slot5
 slot5 = "basePropertyList"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"OwnClient",
-	"PER"
-}
-slot5 = "propertyEnhanced"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -7236,16 +9446,6 @@ slot4[2] = slot5
 slot5 = "exploreAbilityList"
 slot3[slot5] = slot4
 slot4 = {
-	"IntList",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "bodyEntries"
-slot3[slot5] = slot4
-slot4 = {
 	"CharacterInfo",
 	nil,
 	"OwnClient",
@@ -7263,9 +9463,10 @@ slot4 = {
 }
 slot5 = {}
 slot4[2] = slot5
-slot3.talentList = slot4
+slot5 = "talentList"
+slot3[slot5] = slot4
 slot4 = {
-	"TriggerMap",
+	"PetTriggerMap",
 	nil,
 	"OwnClient",
 	"PER"
@@ -7285,44 +9486,6 @@ slot4[2] = slot5
 slot5 = "eventMap"
 slot3[slot5] = slot4
 slot4 = {
-	"AbilityPresetMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "abilityPresetMap"
-slot3[slot5] = slot4
-slot4 = {
-	"ItemPos",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "coreCarryPos"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "appliedCarryRecommendType"
-slot3[slot5] = slot4
-slot4 = {
-	"IntList",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "appliedCarryRecommendItemIds"
-slot3[slot5] = slot4
-slot4 = {
 	"int",
 	1,
 	"OwnClient",
@@ -7337,82 +9500,6 @@ slot4 = {
 	"PER"
 }
 slot5 = "exploreRevivePer"
-slot3[slot5] = slot4
-slot4 = {
-	"IntBoolMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "notifiedEvolveBranch"
-slot3[slot5] = slot4
-slot4 = {
-	"IntDoubleMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "attributeCacheMap"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "exchangeTs"
-slot3[slot5] = slot4
-slot4 = {
-	"string",
-	"",
-	"OwnClient",
-	"PER"
-}
-slot5 = "exchangeFromUid"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"AllClients",
-	"PER"
-}
-slot5 = "isPutInHomeCamp"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"AllClients",
-	"PER"
-}
-slot5 = "isPutInHomeland"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "putInHomelandBegTm"
-slot3[slot5] = slot4
-slot4 = {
-	"string",
-	"",
-	"AllClients",
-	"PER"
-}
-slot5 = "homeEventInsId"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "removePetOperating"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
@@ -7431,36 +9518,6 @@ slot4 = {
 slot5 = "socialTxnLockType"
 slot3[slot5] = slot4
 slot4 = {
-	"IntIntMap",
-	nil,
-	"ServerOnly",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "battleTimeMap"
-slot3[slot5] = slot4
-slot4 = {
-	"IntIntMap",
-	nil,
-	"ServerOnly",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "controlKillPuppetNum"
-slot3[slot5] = slot4
-slot4 = {
-	"IntIntMap",
-	nil,
-	"ServerOnly",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "homelandPutInTime"
-slot3[slot5] = slot4
-slot4 = {
 	"ResonanceInfo",
 	nil,
 	"OwnClient",
@@ -7471,110 +9528,10 @@ slot4[2] = slot5
 slot5 = "resonanceInfo"
 slot3[slot5] = slot4
 slot4 = {
-	"boolean",
-	false,
-	"OwnClient",
-	"PER"
-}
-slot5 = "gotInFollowed"
-slot3[slot5] = slot4
-slot4 = {
-	"string",
-	"",
-	"OwnClient",
-	"PER"
-}
-slot5 = "giveFromUid"
-slot3[slot5] = slot4
-slot4 = {
 	"int",
 	0,
 	"ServerOnly",
-	"PER"
-}
-slot5 = "gmCollectEntryCnt"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "activityDispatching"
-slot3[slot5] = slot4
-slot4 = {
-	"IntList",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "transmogUnlockSolts"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "transmogProgress"
-slot3[slot5] = slot4
-slot4 = {
-	"IntIntMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "transmogGoldenCount"
-slot3[slot5] = slot4
-slot4 = {
-	"PetTransmogScheme",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "currTransmogScheme"
-slot3[slot5] = slot4
-slot4 = {
-	"PetTransmogScheme",
-	nil,
-	"AllClients",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "selectTransmogScheme"
-slot3[slot5] = slot4
-slot4 = {
-	"PetTransmogSchemeMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "tempTransmogSchemes"
-slot3[slot5] = slot4
-slot4 = {
-	"PetTransmogSchemeMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "customTransmogSchemes"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"ServerOnly",
-	"PER"
+	"NPER"
 }
 slot5 = "botTemplateId"
 slot3[slot5] = slot4
@@ -7584,15 +9541,7 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "isGoldAdveRewarded"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "originFlag"
+slot5 = "isSealed"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PetInfo"
@@ -7614,6 +9563,27 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "PetJewelryCustomOne"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetRecordList",
+	__ValueType__ = "PetRecordInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "PetRecordList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetReleaseRecordList",
+	__ValueType__ = "PetReleaseRecord",
+	__IntTypeKey__ = true
+}
+slot3 = "PetReleaseRecordList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetSimpleList",
+	__ValueType__ = "PetSimplelInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "PetSimpleList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetJewelryInfo",
@@ -7711,6 +9681,39 @@ slot2.Properties = slot3
 slot3 = "PetMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.PetPropResetPaybackMap",
+	__ValueType__ = "IntIntMap",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetPropResetPaybackMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetPrototypeIdIndex"
+}
+slot3 = {}
+slot4 = {
+	"IntStringBoolMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot3.index = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetPrototypeIdIndex"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.PetRecordInfo"
 }
 slot3 = {}
@@ -7724,27 +9727,6 @@ slot5 = "recordTime"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PetRecordInfo"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.PetRecordList",
-	__ValueType__ = "PetRecordInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "PetRecordList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.PetReleaseRecordList",
-	__ValueType__ = "PetReleaseRecord",
-	__IntTypeKey__ = true
-}
-slot3 = "PetReleaseRecordList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.PetSimpleList",
-	__ValueType__ = "PetSimplelInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "PetSimpleList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetReleaseRecord"
@@ -7799,14 +9781,20 @@ slot4 = {
 slot5 = "propertyScoreStage"
 slot3[slot5] = slot4
 slot4 = {
-	"IntIntMap",
-	nil,
+	"int",
+	0,
 	"ServerOnly",
 	"PER"
 }
-slot5 = {}
-slot4[2] = slot5
-slot5 = "paybackItems"
+slot5 = "cp"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot5 = "basePropertySnapshot"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
@@ -7815,6 +9803,16 @@ slot4 = {
 	"PER"
 }
 slot5 = "petSnapshotData"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "paybackItems"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PetReleaseRecord"
@@ -7839,54 +9837,6 @@ slot4 = {
 }
 slot5 = "isNew"
 slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "unlockTime"
-slot3[slot5] = slot4
-slot4 = {
-	"Position",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "unlockPos"
-slot3[slot5] = slot4
-slot4 = {
-	"IntDoubleMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "localParams"
-slot3[slot5] = slot4
-slot4 = {
-	"IntDoubleMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "shareParams"
-slot3[slot5] = slot4
-slot4 = {
-	"IntDoubleMap",
-	nil,
-	"OwnClient",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "toUploadParams"
-slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PetResearchInfo"
 slot1[slot3] = slot2
@@ -7898,6 +9848,15 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "PetResearchMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetResearchUnlockedMap",
+	__ValueType__ = "IntIntMapMap",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetResearchUnlockedMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetResearch.EvolveResearchInfo"
@@ -7974,6 +9933,24 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "TraitResearchMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetSelectTransmogSchemeMap",
+	__ValueType__ = "PetTransmogScheme",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetSelectTransmogSchemeMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetShinyStyleHistoryMap",
+	__ValueType__ = "IntBoolMap",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetShinyStyleHistoryMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetSimpleListMap",
@@ -8131,12 +10108,260 @@ slot3 = "PetSkillUpgradeEntryMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetSkillUpgradeMap",
-	__ValueType__ = "PetSkillUpgradeEntryMap",
-	__IntTypeKey__ = true
+	__ValueType__ = "IntIntMap",
+	__IntTypeKey__ = false
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "PetSkillUpgradeMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetStatsInfo"
+}
+slot3 = {}
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "genderCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "raceCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "templateOwned"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "characterCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "scoreLabelCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "collectOnlyPetCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "starHist"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "skillNumHist"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "levelHist"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "tmplLevelHist"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "talentRarityCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntStringMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "individualLevelCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "skillUpgradeIndividualSkillCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "coreCarryCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "coreCarryQualityCount"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "petCount"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetStatsInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetTradeDataMap",
+	__ValueType__ = "OriginMap",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetTradeDataMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetTransmogInfo"
+}
+slot3 = {}
+slot4 = {
+	"IntList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "transmogUnlockSolts"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "transmogProgress"
+slot3[slot5] = slot4
+slot4 = {
+	"PetTransmogScheme",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "currTransmogScheme"
+slot3[slot5] = slot4
+slot4 = {
+	"PetTransmogScheme",
+	nil,
+	"AllClients",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "selectTransmogScheme"
+slot3[slot5] = slot4
+slot4 = {
+	"PetTransmogSchemeMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "tempTransmogSchemes"
+slot3[slot5] = slot4
+slot4 = {
+	"PetTransmogSchemeMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "customTransmogSchemes"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetTransmogInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetTransmogInfoMap",
+	__ValueType__ = "PetTransmogInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetTransmogInfoMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PetTransmogScheme"
@@ -8183,6 +10408,36 @@ slot4 = {
 }
 slot5 = "transmogValue"
 slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "transmogGoldenCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMapMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "holeGoldList"
+slot3[slot5] = slot4
+slot4 = {
+	"IntList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "lockHolesList"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PetTransmogScheme"
 slot1[slot3] = slot2
@@ -8194,6 +10449,63 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "PetTransmogSchemeMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetTriggerMap"
+}
+slot3 = {}
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "customCondition"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "completeCustomSet"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PetTriggerMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetUnlockedAbilityInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	1,
+	"OwnClient",
+	"NPER"
+}
+slot3.abilityLv = slot4
+slot4 = {
+	"double",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot3.cdDuration = slot4
+slot2.Properties = slot3
+slot3 = "PetUnlockedAbilityInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PetUnlockedAbilityMap",
+	__ValueType__ = "PetUnlockedAbilityInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "PetUnlockedAbilityMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PhotoPresetInfo"
@@ -8334,6 +10646,38 @@ slot5 = {}
 slot4[2] = slot5
 slot5 = "activityTasks"
 slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "lastTriggerLoginTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"NPER"
+}
+slot5 = "pendingTriggerLoginTimer"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "totalSignNum"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "activateTm"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PlayerActivityBase"
 slot1[slot3] = slot2
@@ -8382,14 +10726,6 @@ slot4 = {
 	"PER"
 }
 slot5 = "weeklyNum"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "lastTriggerLoginTime"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -8441,8 +10777,75 @@ slot4 = {
 }
 slot5 = "addBpExpTotalWeekly"
 slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "unlockCycleReward"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "cycleRewardShowMaxlv"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "receiveNromalRewardNum"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "cycleRewardRecvMaxLvFree"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "cycleRewardRecvMaxLvAdvance"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PlayerActivityBattlePass"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PlayerActivityBindAccount"
+}
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot4 = {
+	"IntBoolMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "receivedBindAwardMap"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityBindAccount"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PlayerActivityDailyActive"
@@ -8478,6 +10881,173 @@ slot2.Properties = slot3
 slot3 = "PlayerActivityDailyActive"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.PlayerActivityEcoTrace"
+}
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceUpdateTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTracePetId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchCnt"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchCostCnt"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchMarkId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchPetRecycleTm"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	1,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchProjStage"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchProjCompTaskNum"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchStageRecord"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "ecoTraceSearchTaskNumRecord"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityEcoTrace"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PlayerActivityFirstCharge"
+}
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityFirstCharge"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PlayerActivityFishingCapture"
+}
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "rewardStatistics"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"OwnClient",
+	"PER"
+}
+slot5 = "irisRewardReceived"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "cubeExchangeCountMap"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "curPhase"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityFishingCapture"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.PlayerActivityGrowthGift"
 }
 slot3 = {}
@@ -8497,7 +11067,7 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "selectedEgg"
+slot5 = "selectedPetId"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -8505,7 +11075,33 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot5 = "receivedEgg"
+slot5 = "receivedPetFlag"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "collectSocre"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "recvCollectAllWards"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "collectUnlockPetIds"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PlayerActivityGrowthGift"
@@ -8598,22 +11194,84 @@ slot4 = {
 }
 slot5 = "upTimesDaily"
 slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "upTimesDailys"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PlayerActivityLeylineTreeUp"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.PrepareFormationList",
-	__ValueType__ = "FormationInfo",
-	__IntTypeKey__ = true
+	NameSpace = "CustomTypes.PlayerActivityLittleFirePerson"
 }
-slot3 = "PrepareFormationList"
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "notesPerson"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "notesGlobal"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "noteGetTimesDailyBySpark"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "litFireManInteractDailyTimes"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityLittleFirePerson"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.PuppetSaveInfoList",
-	__ValueType__ = "PuppetSaveInfo",
-	__IntTypeKey__ = true
+	NameSpace = "CustomTypes.PlayerActivityLongTermSign"
 }
-slot3 = "PuppetSaveInfoList"
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityLongTermSign"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PlayerActivityPetDispatch"
@@ -8644,6 +11302,24 @@ slot4 = {
 	"PER"
 }
 slot5 = "noramlAdveRewardNum"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "rewardAllRecvedTm"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "clueUnlockTms"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PlayerActivityPetDispatch"
@@ -8706,6 +11382,69 @@ slot5 = "rechargeSum"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "PlayerActivityRechargeRebate"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PlayerActivityRedNote"
+}
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivityRedNote"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PlayerActivitySeasonAchieve"
+}
+slot3 = {}
+slot4 = {
+	"PlayerActivityBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "activityBase"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "seasonAchivePoints"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "PlayerActivitySeasonAchieve"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PrepareFormationList",
+	__ValueType__ = "FormationInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "PrepareFormationList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.PuppetSaveInfoList",
+	__ValueType__ = "PuppetSaveInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "PuppetSaveInfoList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RainbowPetSaveInfoList",
+	__ValueType__ = "RainbowPetSaveInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "RainbowPetSaveInfoList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.PlayerActivitySignNewbie"
@@ -8822,60 +11561,13 @@ slot2.Properties = slot3
 slot3 = "PlayerActivitySignVersion"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.PlayerBecomeEggInfo"
-}
-slot3 = {}
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"NPER"
-}
-slot5 = "eggTemplateId"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"NPER"
-}
-slot5 = "eggPattern"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"AllClients",
-	"NPER"
-}
-slot5 = "eggPatternColor"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"AllClients",
-	"NPER"
-}
-slot5 = "isBecomeEgg"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"AllClients",
-	"NPER"
-}
-slot5 = "isTransparent"
-slot3[slot5] = slot4
-slot2.Properties = slot3
-slot3 = "PlayerBecomeEggInfo"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "CustomTypes.PlayerBossRushCycleData"
 }
 slot3 = {}
 slot4 = {
 	"int",
 	0,
-	"ServerOnly",
+	"OwnClient",
 	"PER"
 }
 slot5 = "cycleId"
@@ -8883,7 +11575,7 @@ slot3[slot5] = slot4
 slot4 = {
 	"IntIntMap",
 	nil,
-	"ServerOnly",
+	"OwnClient",
 	"PER"
 }
 slot5 = {}
@@ -8893,7 +11585,7 @@ slot3[slot5] = slot4
 slot4 = {
 	"IntIntMap",
 	nil,
-	"ServerOnly",
+	"OwnClient",
 	"PER"
 }
 slot5 = {}
@@ -8903,7 +11595,7 @@ slot3[slot5] = slot4
 slot4 = {
 	"IntIntMap",
 	nil,
-	"ServerOnly",
+	"OwnClient",
 	"PER"
 }
 slot5 = {}
@@ -8913,7 +11605,7 @@ slot3[slot5] = slot4
 slot4 = {
 	"IntIntMap",
 	nil,
-	"ServerOnly",
+	"OwnClient",
 	"PER"
 }
 slot5 = {}
@@ -8932,7 +11624,7 @@ slot3 = {}
 slot4 = {
 	"int",
 	0,
-	"ServerOnly",
+	"OwnClient",
 	"PER"
 }
 slot5 = "seasonId"
@@ -9251,7 +11943,7 @@ slot2.Properties = slot3
 slot3 = "QuestActionMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.QuestData"
+	NameSpace = "CustomTypes.QuestCloseConditionData"
 }
 slot3 = {}
 slot4 = {
@@ -9262,28 +11954,24 @@ slot4 = {
 }
 slot5 = {}
 slot4[2] = slot5
-slot5 = "objectives"
+slot5 = "closeCond"
 slot3[slot5] = slot4
-slot4 = {
-	"QuestObjectivesMap",
-	nil,
-	"OwnClient",
-	"PER"
+slot2.Properties = slot3
+slot3 = "QuestCloseConditionData"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.QuestCloseConditionDataMap",
+	__ValueType__ = "QuestCloseConditionData",
+	__IntTypeKey__ = true
 }
-slot5 = {}
-slot4[2] = slot5
-slot5 = "claimCond"
-slot3[slot5] = slot4
-slot4 = {
-	"QuestObjectivesMap",
-	nil,
-	"OwnClient",
-	"PER"
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "QuestCloseConditionDataMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.QuestCompleteActionData"
 }
-slot5 = {}
-slot4[2] = slot5
-slot5 = "runCond"
-slot3[slot5] = slot4
+slot3 = {}
 slot4 = {
 	"QuestObjectivesMap",
 	nil,
@@ -9297,7 +11985,7 @@ slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
-	"OwnClient",
+	"ServerOnly",
 	"PER"
 }
 slot5 = "comEventSequenceIndex"
@@ -9310,117 +11998,22 @@ slot4 = {
 }
 slot5 = "lastComActionsTime"
 slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "callId"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot3.state = slot4
-slot4 = {
-	"double",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "modifyTime"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "acceptTime"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "createTime"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "endTime"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot3.configId = slot4
-slot4 = {
-	"boolean",
-	false,
-	"OwnClient",
-	"PER"
-}
-slot5 = "rewardFlag"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "curMaxSerial"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	true,
-	"OwnClient",
-	"PER"
-}
-slot5 = "runState"
-slot3[slot5] = slot4
 slot2.Properties = slot3
-slot3 = "QuestData"
+slot3 = "QuestCompleteActionData"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.QuestDataMap",
-	__ValueType__ = "QuestData",
+	NameSpace = "CustomTypes.QuestCompleteActionDataMap",
+	__ValueType__ = "QuestCompleteActionData",
 	__IntTypeKey__ = true
 }
 slot3 = {}
 slot2.Properties = slot3
-slot3 = "QuestDataMap"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.QuestDataMapMap",
-	__ValueType__ = "QuestDataMap",
-	__IntTypeKey__ = true
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = "QuestDataMapMap"
+slot3 = "QuestCompleteActionDataMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.QuestObjective"
 }
 slot3 = {}
-slot4 = {
-	"int",
-	0,
-	"OwnClient",
-	"PER"
-}
-slot5 = "serialId"
-slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -9510,41 +12103,6 @@ slot2.Properties = slot3
 slot3 = "QuizDataMap"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "CustomTypes.RainbowPetSaveInfoList",
-	__ValueType__ = "RainbowPetSaveInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "RainbowPetSaveInfoList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.ReTriggerEventList",
-	__ValueType__ = "ReTriggerEventInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "ReTriggerEventList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.RobEggDataList",
-	__ValueType__ = "RobEggData",
-	__IntTypeKey__ = true
-}
-slot3 = "RobEggDataList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.RobEggLootItemList",
-	__ValueType__ = "LootBoxItem",
-	__IntTypeKey__ = true
-}
-slot3 = "RobEggLootItemList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.RobEggRewardBoxList",
-	__ValueType__ = "RobEggRewardBox",
-	__IntTypeKey__ = true
-}
-slot3 = "RobEggRewardBoxList"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "CustomTypes.RainbowPetSaveInfo"
 }
 slot3 = {}
@@ -9557,14 +12115,12 @@ slot4 = {
 slot5 = "templateId"
 slot3[slot5] = slot4
 slot4 = {
-	"IntList",
-	nil,
+	"int",
+	0,
 	"ServerOnly",
 	"PER"
 }
-slot5 = {}
-slot4[2] = slot5
-slot5 = "position"
+slot5 = "spawnPointId"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -9574,13 +12130,6 @@ slot4 = {
 }
 slot5 = "staticId"
 slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot3.blockId = slot4
 slot4 = {
 	"int",
 	0,
@@ -9617,6 +12166,131 @@ slot5 = "originFlag"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "RainbowPetSaveInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RandomShop"
+}
+slot3 = {}
+slot4 = {
+	"RandomShopBase",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "randomShopBase"
+slot3[slot5] = slot4
+slot4 = {
+	"IntBoolMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "posUlockFlag"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "refreshCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "buyCount"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "goodsList"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "topTier"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "pity"
+slot3[slot5] = slot4
+slot4 = {
+	"IntList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "hasBuyPos"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RandomShop"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RandomShopBase"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shopId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shopType"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RandomShopBase"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ReTriggerEventList",
+	__ValueType__ = "ReTriggerEventInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "ReTriggerEventList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RobEggDataList",
+	__ValueType__ = "RobEggData",
+	__IntTypeKey__ = true
+}
+slot3 = "RobEggDataList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RobEggLootItemList",
+	__ValueType__ = "LootBoxItem",
+	__IntTypeKey__ = true
+}
+slot3 = "RobEggLootItemList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.ReTriggerEventInfo"
@@ -9704,6 +12378,46 @@ slot5 = "reTriggerCount"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "ReTriggerEventInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RecentDungeonPlaymateInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "teamTime"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "dungeonSceneId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "hardLv"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RecentDungeonPlaymateInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RecentDungeonPlaymateInfoMap",
+	__ValueType__ = "RecentDungeonPlaymateInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "RecentDungeonPlaymateInfoMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.ResearchPointInfo"
@@ -10091,7 +12805,8 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -10211,6 +12926,14 @@ slot4 = {
 slot5 = "score"
 slot3[slot5] = slot4
 slot4 = {
+	"boolean",
+	false,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "negative"
+slot3[slot5] = slot4
+slot4 = {
 	"IntIntMap",
 	nil,
 	"OwnClient",
@@ -10260,6 +12983,40 @@ slot5 = {}
 slot4[2] = slot5
 slot5 = "eggScore"
 slot3[slot5] = slot4
+slot4 = {
+	"RobEggPerformanceDetail",
+	nil,
+	"OwnClient",
+	"NPER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "performance"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "hardLv"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	1,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "scoreFactor"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "protectReason"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "RobEggLevelSettleInfo"
 slot1[slot3] = slot2
@@ -10305,6 +13062,46 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "RobEggMapMarkMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RobEggPerformanceDetail",
+	__ValueType__ = "RobEggPerformanceItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "RobEggPerformanceDetail"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RobEggPerformanceItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "quality"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"NPER"
+}
+slot5 = "score"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RobEggPerformanceItem"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.RobEggResource"
@@ -10389,6 +13186,63 @@ slot2.Properties = slot3
 slot3 = "RobEggRewardBox"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.RobEggRewardBoxList",
+	__ValueType__ = "RobEggRewardBox",
+	__IntTypeKey__ = true
+}
+slot3 = "RobEggRewardBoxList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ScenePos",
+	__ValueType__ = "double",
+	__IntTypeKey__ = true
+}
+slot3 = "ScenePos"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ShieldDataList",
+	__ValueType__ = "ShieldData",
+	__IntTypeKey__ = true
+}
+slot3 = "ShieldDataList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RobEggShowCase",
+	__ValueType__ = "ShowCaseAntiqueItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "allPoint"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "rewardRecord"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "RobEggShowCase"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RobEggShowCaseMap",
+	__ValueType__ = "RobEggShowCase",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "RobEggShowCaseMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.RobEggSlotItem"
 }
 slot3 = {}
@@ -10418,20 +13272,6 @@ slot5 = "discoveryExpireTime"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "RobEggSlotItem"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.ScenePos",
-	__ValueType__ = "double",
-	__IntTypeKey__ = true
-}
-slot3 = "ScenePos"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.ShieldDataList",
-	__ValueType__ = "ShieldData",
-	__IntTypeKey__ = true
-}
-slot3 = "ShieldDataList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.RobEggSlotItemMap",
@@ -10562,6 +13402,15 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "RobEggUserInfoMap"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.RogueBookBossMap",
+	__ValueType__ = "IntIntMap",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "RogueBookBossMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.RogueCombatStatistic"
@@ -10848,14 +13697,74 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	"SpawnerSaveMap",
+	"IntIntBoolMap",
 	nil,
 	"ServerOnly",
 	"PER"
 }
 slot5 = {}
 slot4[2] = slot5
-slot5 = "spawnerSaveMap"
+slot5 = "spawnerStatesMap"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "spawnerRefreshCountMap"
+slot3[slot5] = slot4
+slot4 = {
+	"IntBoolMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "spawnerNoActives"
+slot3[slot5] = slot4
+slot4 = {
+	"IntDoubleMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "spawnerLastResetTsMap"
+slot3[slot5] = slot4
+slot4 = {
+	"IntDoubleMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "spawnerActivationTsMap"
+slot3[slot5] = slot4
+slot4 = {
+	"IntIntDoubleMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "spawnerEntNextRefTimeMap"
+slot3[slot5] = slot4
+slot4 = {
+	"IntDoubleMap",
+	nil,
+	"ServerOnly",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "spawnerGroupDeadTimeMap"
 slot3[slot5] = slot4
 slot4 = {
 	"SpawnerShinyMap",
@@ -10941,6 +13850,103 @@ slot2.Properties = slot3
 slot3 = "SceneSaveInfo"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.SealedPetInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "templateId"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"OwnClient",
+	"PER"
+}
+slot3.customName = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "gender"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "nature"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "label"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shinyStyle"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "propertyScoreStage"
+slot3[slot5] = slot4
+slot4 = {
+	"BasePropertyList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "basePropertyList"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"OwnClient",
+	"PER"
+}
+slot5 = "isSealed"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "hatchTime"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "SealedPetInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.SealedPetMap",
+	__ValueType__ = "SealedPetInfo",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "SealedPetMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.ShieldData"
 }
 slot3 = {}
@@ -11002,6 +14008,99 @@ slot5 = "templateId"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "ShieldData"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ShopMallCart",
+	__ValueType__ = "ShopMallCartItem",
+	__IntTypeKey__ = true
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ShopMallCart"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.StringList",
+	__ValueType__ = "string",
+	__IntTypeKey__ = true
+}
+slot3 = "StringList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.StringListList",
+	__ValueType__ = "StringList",
+	__IntTypeKey__ = true
+}
+slot3 = "StringListList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.TalentList",
+	__ValueType__ = "TalentInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "TalentList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ShopMallCartItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "shopCommodityId"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "num"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot3.time = slot4
+slot2.Properties = slot3
+slot3 = "ShopMallCartItem"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.ShowCaseAntiqueItem"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"OwnClient",
+	"PER"
+}
+slot5 = "id"
+slot3[slot5] = slot4
+slot4 = {
+	"ItemProperties",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "props"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	false,
+	"OwnClient",
+	"PER"
+}
+slot5 = "active"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = "ShowCaseAntiqueItem"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.SingleSandboxData"
@@ -11138,7 +14237,8 @@ slot4 = {
 	"OwnClient",
 	"PER"
 }
-slot3.itemId = slot4
+slot5 = "itemId"
+slot3[slot5] = slot4
 slot4 = {
 	"int",
 	0,
@@ -11157,82 +14257,6 @@ slot5 = "customData"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "SlotValue"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.SpawnerSaveInfo"
-}
-slot3 = {}
-slot4 = {
-	"IntBoolMap",
-	nil,
-	"ServerOnly",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "states"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "groupDeadTime"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "refreshCount"
-slot3[slot5] = slot4
-slot4 = {
-	"boolean",
-	false,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "isActived"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "lastResetTs"
-slot3[slot5] = slot4
-slot4 = {
-	"double",
-	0,
-	"ServerOnly",
-	"PER"
-}
-slot5 = "activationTs"
-slot3[slot5] = slot4
-slot4 = {
-	"IntDoubleMap",
-	nil,
-	"ServerOnly",
-	"PER"
-}
-slot5 = {}
-slot4[2] = slot5
-slot5 = "entityNextRefreshTime"
-slot3[slot5] = slot4
-slot2.Properties = slot3
-slot3 = "SpawnerSaveInfo"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.SpawnerSaveMap",
-	__ValueType__ = "SpawnerSaveInfo",
-	__IntTypeKey__ = true
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = "SpawnerSaveMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.SpawnerShinyInfo"
@@ -11277,34 +14301,6 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "SpawnerShinyMap"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.StringList",
-	__ValueType__ = "string",
-	__IntTypeKey__ = true
-}
-slot3 = "StringList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.StringListList",
-	__ValueType__ = "StringList",
-	__IntTypeKey__ = true
-}
-slot3 = "StringListList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.TalentList",
-	__ValueType__ = "TalentInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "TalentList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.TeamMemberInfoList",
-	__ValueType__ = "TeamMemberInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "TeamMemberInfoList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.SpecialTrainData"
@@ -11506,6 +14502,15 @@ slot2.Properties = slot3
 slot3 = "StringIntMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.StringIntMapMap",
+	__ValueType__ = "IntIntMap",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "StringIntMapMap"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.StringIntMapWithChangeEvent",
 	__ValueType__ = "int",
 	__IntTypeKey__ = false
@@ -11513,6 +14518,15 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "StringIntMapWithChangeEvent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.StringItemPosMap",
+	__ValueType__ = "ItemPos",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "StringItemPosMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.StringStringListMap",
@@ -11616,6 +14630,27 @@ slot2.Properties = slot3
 slot3 = "TaskSpawnerClearMap"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "CustomTypes.TeamMemberInfoList",
+	__ValueType__ = "TeamMemberInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "TeamMemberInfoList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.UnFairPvpPresetList",
+	__ValueType__ = "UnFairPvpPreset",
+	__IntTypeKey__ = true
+}
+slot3 = "UnFairPvpPresetList"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.WeatherInfoList",
+	__ValueType__ = "WeatherInfo",
+	__IntTypeKey__ = true
+}
+slot3 = "WeatherInfoList"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "CustomTypes.TaskSpawnerMap",
 	__ValueType__ = "IntIntMapMap",
 	__IntTypeKey__ = true
@@ -11702,6 +14737,45 @@ slot4 = {
 slot3.expiredTime = slot4
 slot2.Properties = slot3
 slot3 = "TideInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.TillHelpInfo"
+}
+slot3 = {}
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "count"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "lastTs"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"",
+	"ServerOnly",
+	"PER"
+}
+slot3.name = slot4
+slot2.Properties = slot3
+slot3 = "TillHelpInfo"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "CustomTypes.TillHelpInfoMap",
+	__ValueType__ = "TillHelpInfo",
+	__IntTypeKey__ = false
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "TillHelpInfoMap"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.TotemInfo"
@@ -11888,6 +14962,16 @@ slot4[2] = slot5
 slot5 = "questComActionObjTriggers"
 slot3[slot5] = slot4
 slot4 = {
+	"TriggerRegMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "questCloseTriggers"
+slot3[slot5] = slot4
+slot4 = {
 	"GmTriggerValue",
 	nil,
 	"OwnClient",
@@ -11945,20 +15029,6 @@ slot5 = "initialized"
 slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "TriggerQuestReverseIndexMap"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.UnFairPvpPresetList",
-	__ValueType__ = "UnFairPvpPreset",
-	__IntTypeKey__ = true
-}
-slot3 = "UnFairPvpPresetList"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "CustomTypes.WeatherInfoList",
-	__ValueType__ = "WeatherInfo",
-	__IntTypeKey__ = true
-}
-slot3 = "WeatherInfoList"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "CustomTypes.TriggerRegInnerMap",
@@ -12039,6 +15109,14 @@ slot4 = {
 }
 slot5 = "lastClearTs"
 slot3[slot5] = slot4
+slot4 = {
+	"int",
+	0,
+	"ServerOnly",
+	"PER"
+}
+slot5 = "rewardLimitToastCount"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = "UseLimitInfo"
 slot1[slot3] = slot2
@@ -12112,16 +15190,16 @@ slot2 = "Custom"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = {
+	k3 = "boolean",
 	k2 = "number",
-	k1 = "string",
-	k3 = "boolean"
+	k1 = "string"
 }
 slot3 = "TestInfo"
 slot1[slot3] = slot2
 slot2 = {
+	z = "number",
 	y = "number",
-	x = "number",
-	z = "number"
+	x = "number"
 }
 slot3 = "Vector3"
 slot1[slot3] = slot2
@@ -12202,12 +15280,6 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
-slot3 = {}
-slot4 = {}
-slot5 = "RPC_SC_OnBornEffects"
-slot3[slot5] = slot4
-slot4 = "ServerOnlyMsg"
-slot2[slot4] = slot3
 slot3 = "ClientModelEntity"
 slot1[slot3] = slot2
 slot2 = {
@@ -12311,6 +15383,29 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "ClientSimpleVirtualPlayer"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.ClientStudioOrnamentVirtualEntity"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientStudioOrnamentVirtualEntity"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.ClientStudioPetVirtualEntity",
+	TickInterval = 0.1
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientStudioPetVirtualEntity"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.ClientStudioPlayerVirtualEntity",
+	TickInterval = 0.1
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientStudioPlayerVirtualEntity"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.ClientTempPlayer",
@@ -12423,6 +15518,13 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "ClientCatchBallFake"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.BallEntities.ClientCatchBallVirtual"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientCatchBallVirtual"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.BallEntities.ClientFishingCaptureBall"
@@ -12569,6 +15671,12 @@ slot5 = {
 }
 slot6 = "openLevelId"
 slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onCurLevelTeamReviveCountChanged"
+}
+slot6 = "curLevelTeamReviveCount"
+slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
@@ -12600,6 +15708,12 @@ slot5 = {
 	"on_likeCntChanged"
 }
 slot6 = "likeCnt"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_CampCarLoadValueChanged"
+}
+slot6 = "CampCarLoadValue"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -12927,6 +16041,12 @@ slot5 = {
 }
 slot6 = "basicInfo"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_homeAreaStats_changed"
+}
+slot6 = "homeAreaStats"
+slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
@@ -13048,13 +16168,6 @@ slot4 = {}
 slot5 = "RPC_SC_Portal_Success"
 slot3[slot5] = slot4
 slot4 = {
-	"int",
-	"int",
-	"string"
-}
-slot5 = "RPC_SC_TeleportPrepare"
-slot3[slot5] = slot4
-slot4 = {
 	"float",
 	"float",
 	"float",
@@ -13068,7 +16181,10 @@ slot4 = {
 slot5 = "RPC_SC_SetServerTime"
 slot3[slot5] = slot4
 slot4 = {
-	"int"
+	"int",
+	"int",
+	"float",
+	"float"
 }
 slot5 = "RPC_SC_PveHeartbeat"
 slot3[slot5] = slot4
@@ -13104,6 +16220,11 @@ slot4 = {
 	"int"
 }
 slot5 = "RPC_SC_Notify_ChangeServerOpenTime"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_OnWorldFurniturePlaced"
 slot3[slot5] = slot4
 slot4 = {
 	"number",
@@ -13180,6 +16301,12 @@ slot6 = "nourishCount"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
+	"on_dailyNourishCount_changed"
+}
+slot6 = "dailyNourishCount"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
 	"on_curEp_changed"
 }
 slot6 = "curEp"
@@ -13227,6 +16354,18 @@ slot5 = {
 slot6 = "worldChatGroupId"
 slot4[slot6] = slot5
 slot5 = {
+	"string",
+	"on_classChatGroupId_changed"
+}
+slot6 = "classChatGroupId"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"on_languageChatGroupId_changed"
+}
+slot6 = "languageChatGroupId"
+slot4[slot6] = slot5
+slot5 = {
 	"boolean",
 	"on_isInFluteMatch_changed"
 }
@@ -13245,6 +16384,12 @@ slot5 = {
 slot6 = "partnerList.*.isAlive"
 slot4[slot6] = slot5
 slot5 = {
+	"number",
+	"onPvp2RevealByTargetChange"
+}
+slot6 = "pvp2RevealByTarget.*"
+slot4[slot6] = slot5
+slot5 = {
 	"boolean",
 	"onIsSpecialTrainOpenChange"
 }
@@ -13259,6 +16404,12 @@ slot5 = {
 }
 slot6 = "behatredMap"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPvp2RevealByTargetAdd"
+}
+slot6 = "pvp2RevealByTarget"
+slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
@@ -13268,31 +16419,17 @@ slot5 = {
 }
 slot6 = "behatredMap"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPvp2RevealByTargetDelete"
+}
+slot6 = "pvp2RevealByTarget"
+slot4[slot6] = slot5
 slot5 = "entryDeleted"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
 slot3 = "ClientMainPlayer"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "Entities.SpaceEntities.ClientMechanism",
-	TickInterval = 0.1
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = {}
-slot4 = {}
-slot5 = {
-	"number",
-	"on_curHp_changed"
-}
-slot6 = "curHp"
-slot4[slot6] = slot5
-slot5 = "changed"
-slot3[slot5] = slot4
-slot4 = "PropertyCallbacks"
-slot2[slot4] = slot3
-slot3 = "ClientMechanism"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.ClientMiniGameEntity",
@@ -13332,6 +16469,18 @@ slot4 = {
 slot5 = "npcDuelBotEntityId"
 slot3[slot5] = slot4
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"onNpcDuelDefeatedBotPetCountChanged"
+}
+slot6 = "npcDuelDefeatedBotPetCount"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
 slot3 = "ClientNpcDuelDungeon"
 slot1[slot3] = slot2
 slot2 = {
@@ -13342,8 +16491,8 @@ slot2.Properties = slot3
 slot3 = "ClientPartUnit"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "Entities.SpaceEntities.ClientPet",
-	TickInterval = 0.1
+	TickInterval = 0.1,
+	NameSpace = "Entities.SpaceEntities.ClientPet"
 }
 slot3 = {}
 slot2.Properties = slot3
@@ -13408,6 +16557,18 @@ slot5 = {
 }
 slot6 = "level"
 slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"onShapeShiftChange"
+}
+slot6 = "inShapeShift"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onShinyStyleChange"
+}
+slot6 = "shinyStyle"
+slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
@@ -13421,6 +16582,26 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "ClientPetBallEntity"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.ClientPetGhost",
+	TickInterval = 0.1
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"boolean",
+	"onIsInControlChange"
+}
+slot6 = "isInControl"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientPetGhost"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.ClientPhase"
@@ -13494,21 +16675,101 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"int",
+	"table",
+	"int",
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_OnControlToFollow"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"table",
+	"string"
+}
+slot5 = "RPC_SC_OnSwithToSingle"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"table",
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_OnSwitchToControll"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"table",
+	"int",
+	"int",
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_OnControlToControl"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"table",
+	"string"
+}
+slot5 = "RPC_SC_OnSingleToFollow"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
 slot3 = "ClientPlayerGhost"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "Entities.SpaceEntities.ClientPuppet",
-	TickInterval = 0.1
+	TickInterval = 0.1,
+	NameSpace = "Entities.SpaceEntities.ClientPuppet"
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
+slot5 = "RPC_SC_BossMechanismIconFlash"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_bornPosition_x_changed"
+}
+slot6 = "bornPosition_x"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_bornPosition_y_changed"
+}
+slot6 = "bornPosition_y"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_bornPosition_z_changed"
+}
+slot6 = "bornPosition_z"
+slot4[slot6] = slot5
 slot5 = {
 	"number",
 	"on_curHp_changed"
 }
 slot6 = "curHp"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_bossMechanismIconMax_changed"
+}
+slot6 = "bossMechanismIconMax"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_bossMechanismIconProgress_changed"
+}
+slot6 = "bossMechanismIconProgress"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
@@ -13627,6 +16888,12 @@ slot4 = {
 }
 slot5 = "RPC_SC_BloomDropItems"
 slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"table"
+}
+slot5 = "RPC_SC_RobEggWeatherChanged"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {}
@@ -13644,12 +16911,58 @@ slot2[slot4] = slot3
 slot3 = "ClientRobEggDungeon"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "Entities.SpaceEntities.ClientRobEggUnderGroundPlace"
+	NameSpace = "Entities.SpaceEntities.ClientRobEggLimitPillar"
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
+slot5 = {
+	"number",
+	"onLimitPillarStateChange"
+}
+slot6 = "limitPillarState"
+slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"onIsInitiativeChange"
+}
+slot6 = "isInitiative"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientRobEggLimitPillar"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.ClientRobEggLimitTimePortal"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientRobEggLimitTimePortal"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.ClientRobEggUnderGroundPlace"
+}
+slot3 = {}
+slot4 = {
+	"boolean",
+	false,
+	"AllClients",
+	"NPER"
+}
+slot5 = "useAfterViewLimitFog"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"boolean",
+	"on_useAfterViewLimitFog_changed"
+}
+slot6 = "useAfterViewLimitFog"
+slot4[slot6] = slot5
 slot5 = {
 	"number",
 	"on_escapeStage_changed"
@@ -13668,6 +16981,16 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
+slot4 = {
+	"number",
+	"number",
+	"number"
+}
+slot5 = "RPC_SC_RobEggForceSetPosition"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {}
 slot4 = {}
 slot5 = {
 	"string",
@@ -13680,6 +17003,12 @@ slot5 = {
 	"onNeverControlledChange"
 }
 slot6 = "neverControlled"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onCrackLevelChange"
+}
+slot6 = "crackLevel"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -13747,12 +17076,22 @@ slot3[slot5] = slot4
 slot4 = {
 	"table"
 }
-slot5 = "RPC_SC_OnEcsWorldUpdate"
+slot5 = "RPC_SC_EcsUploadResult"
 slot3[slot5] = slot4
 slot4 = {
 	"table"
 }
-slot5 = "RPC_SC_OnEcsWorldUpdateClear"
+slot5 = "RPC_SC_EcsStateChanges"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_EcsFullState"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_EcsAuthorityChanged"
 slot3[slot5] = slot4
 slot4 = {
 	"int"
@@ -13832,6 +17171,12 @@ slot5 = {
 	"on_observerList_changed"
 }
 slot6 = "observerList"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_requestedGameTimeScale_changed"
+}
+slot6 = "requestedGameTimeScale"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -13927,6 +17272,13 @@ slot2[slot4] = slot3
 slot3 = "ClientGamePlayDittoDungeon"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.GamePlayClass.ClientGamePlayEntity"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientGamePlayEntity"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.GamePlayClass.ClientGamePlayPetChallenge"
 }
 slot3 = {}
@@ -14008,6 +17360,43 @@ slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
 slot3 = "ClientGamePlayRacingTemple"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.GamePlayClass.ClientGamePlayRift"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_endTime_changed"
+}
+slot6 = "endTime"
+slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"on_actived_changed"
+}
+slot6 = "actived"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_status_changed"
+}
+slot6 = "status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_riftLevel_changed"
+}
+slot6 = "riftLevelId"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientGamePlayRift"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.HomeCar.ClientHomeCar"
@@ -14176,6 +17565,27 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "ClientHomeStaticNpc"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.Home.ClientHomeWishingStar"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientHomeWishingStar"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.SpaceFurniture.ClientSpaceFurniture"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientSpaceFurniture"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.SpaceFurniture.ClientSpaceFurnitureVehicle"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientSpaceFurnitureVehicle"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.VehicleEntities.ClientBalloon"
@@ -14500,34 +17910,17 @@ slot3[slot5] = slot4
 slot4 = "ClientOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	onEnterCombat = true,
-	onLeaveCombat = true,
-	EVENT_OnLifeDead = true,
-	onLifeRevival = true,
-	notifyBuffTagChange = true,
-	onActionMaskChange = true,
-	EVENT_OnVoxelRegionChanged = true,
-	EVENT_OnAnimatorReady = true,
-	EVENT_OnAuthorityChanged = true,
-	EVENT_EnterScene = true,
-	EVENT_LeaveScene = true,
-	EVENT_Before_BeControlled = true,
-	onExitAfkMode = true,
-	onEnterAfkMode = true,
-	onAIStateChange = true,
-	Event_OnLeaveTeam = true,
-	Event_OnJoinTeam = true,
 	EVENT_OnExitVehicle = true,
 	EVENT_OnEnterVehicle = true,
 	onSkeletonUnloaded = true,
 	onSkeletonLoaded = true,
 	EVENT_ConfigDataChange = true,
 	EVENT_OnHideShowEntityDictChange = true,
-	onPetUnSummon = true,
-	onPetSummon = true,
-	onLeaveSpace = true,
-	onEnterSpace = true,
-	EVENT_ResetScene = true,
+	Event_OnJoinTeam = true,
+	Event_OnLeaveTeam = true,
+	onAIStateChange = true,
+	onEnterAfkMode = true,
+	onExitAfkMode = true,
 	onAIPlanFinish = true,
 	EVENT_CancelTrapped = true,
 	EVENT_BeTrapped = true,
@@ -14539,6 +17932,23 @@ slot3 = {
 	EVENT_BeUnStick = true,
 	EVENT_BeStick = true,
 	EVENT_LoseControlled = true,
+	EVENT_Before_BeControlled = true,
+	onPetUnSummon = true,
+	onPetSummon = true,
+	onLeaveSpace = true,
+	onEnterSpace = true,
+	EVENT_ResetScene = true,
+	EVENT_LeaveScene = true,
+	EVENT_EnterScene = true,
+	EVENT_OnAuthorityChanged = true,
+	EVENT_OnAnimatorReady = true,
+	EVENT_OnVoxelRegionChanged = true,
+	onActionMaskChange = true,
+	notifyBuffTagChange = true,
+	onLifeRevival = true,
+	EVENT_OnLifeDead = true,
+	onLeaveCombat = true,
+	onEnterCombat = true,
 	afterPetChangeTemplate = true,
 	beforePetChangeTemplate = true,
 	EVENT_OnModelScaleChanged = true,
@@ -14566,12 +17976,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_BeTrapped = true,
-	onAIPlanInit = true,
-	onAIStateChange = true,
 	onLockTargetChange = true,
 	onAIPlanFinish = true,
-	EVENT_CancelTrapped = true
+	EVENT_CancelTrapped = true,
+	EVENT_BeTrapped = true,
+	onAIPlanInit = true,
+	onAIStateChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -14610,23 +18020,23 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
+	EVENT_OnHit = true,
+	onAIPlanFinish = true,
+	EVENT_OnCharacterStateChange = true,
+	EVENT_PostReload = true,
+	notifyBuffTagChange = true,
+	EVENT_OnReachImpulseThreshold = true,
+	onAIStateChange = true,
+	EVENT_OnEcsStateChange = true,
+	EVENT_onAudioBgmEventCallback = true,
 	onExitGroupBehaviourFinish = true,
 	onJoinGroupBehaviourFinish = true,
 	onAIStateChangeLater = true,
-	onAIStateChange = true,
-	onAIResumeAgent = true,
 	onAIDestroyAgent = true,
-	onAIPlanFinish = true,
+	onAIResumeAgent = true,
 	onAIPauseAgent = true,
-	EVENT_PostReload = true,
-	notifyBuffTagChange = true,
 	onAIStartAgent = true,
-	onAICreateAgent = true,
-	EVENT_OnCharacterStateChange = true,
-	EVENT_OnReachImpulseThreshold = true,
-	EVENT_OnHit = true,
-	EVENT_OnEcsStateChange = true,
-	EVENT_onAudioBgmEventCallback = true
+	onAICreateAgent = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -14638,14 +18048,14 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
+	EVENT_OnCharacterStateChange = true,
 	onExitGroupBehaviourFinish = true,
 	onJoinGroupBehaviourFinish = true,
-	EVENT_OnCharacterStateChange = true,
+	onAIStateChange = true,
 	onAIDestroyAgent = true,
 	onAIResumeAgent = true,
-	onAIStartAgent = true,
-	onAIStateChange = true,
-	onAIPauseAgent = true
+	onAIPauseAgent = true,
+	onAIStartAgent = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -14658,7 +18068,8 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {
 	onEnterSpace = true,
-	notifyBuffTagChange = true
+	notifyBuffTagChange = true,
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -14670,11 +18081,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onAIPauseAgent = true,
-	onAIStateChange = true,
 	EVENT_OnCharacterStateChange = true,
+	onAIStateChange = true,
+	EVENT_PostReload = true,
 	onAIDestroyAgent = true,
 	onAIResumeAgent = true,
+	onAIPauseAgent = true,
 	onAIStartAgent = true
 }
 slot4 = "ComponentMethod"
@@ -14752,14 +18164,18 @@ slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
 	onEnterSpace = true,
-	EVENT_OnAuthorityChanged = true,
-	onAIStateChange = true,
-	onAIResumeAgent = true,
+	onAIStartAgent = true,
 	EVENT_CancelTrapped = true,
 	EVENT_BeTrapped = true,
-	EVENT_PostReload = true,
+	EVENT_OnAuthorityChanged = true,
+	onAIResumeAgent = true,
+	onLeaveTrap = true,
+	onEnterTrap = true,
+	EVENT_PerceptibilitySearchEntityChanged = true,
 	onAIPauseAgent = true,
-	onAIStartAgent = true
+	EVENT_PostReload = true,
+	onAIStateChange = true,
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15073,6 +18489,11 @@ slot4 = {
 slot5 = "RPC_SC_SetIsMonsterAbilityMode"
 slot3[slot5] = slot4
 slot4 = {
+	"int"
+}
+slot5 = "RPC_SC_NotifyKeyFrameBackswing"
+slot3[slot5] = slot4
+slot4 = {
 	"table"
 }
 slot5 = "RPC_SC_UpdateBuffInheritStates"
@@ -15129,6 +18550,9 @@ slot4 = {
 	"string"
 }
 slot5 = "RPC_SC_ShowPetHealEffect"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = "RPC_SC_OnPawnMovedDistanceReachThreshold"
 slot3[slot5] = slot4
 slot4 = {
 	"boolean"
@@ -15288,28 +18712,35 @@ slot4 = {
 }
 slot5 = "RPC_SC_FastForwardTimeline"
 slot3[slot5] = slot4
+slot4 = {
+	"number"
+}
+slot5 = "RPC_SC_DisableReturnAbilityConsumes"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
 	onEnterSpace = true,
-	onPetUnSummon = true,
-	onPetSummon = true,
-	addBuffEvent = true,
+	EVENT_OnModelRefreshed = true,
+	onSkillSwitched = true,
 	EVENT_OnEntityCacheValChanged = true,
+	addBuffEvent = true,
+	removeBuffEvent = true,
+	onActionMaskChange = true,
+	onSkeletonUnloaded = true,
 	onContinuousButtonQteHit = true,
 	onTakeDamage = true,
-	onSkillSwitched = true,
-	EVENT_OnModelRefreshed = true,
-	onSeamlessPostEnterSpace = true,
-	EVENT_LoseControlled = true,
-	onActionMaskChange = true,
-	removeBuffEvent = true,
-	EVENT_OnEntityBeAttached = true,
 	onLeaveCombat = true,
 	onEnterCombat = true,
+	onSeamlessPostEnterSpace = true,
 	EVENT_OnModelScaleChanged = true,
 	EVENT_OnCharacterStateChange = true,
-	onSkeletonUnloaded = true
+	EVENT_BeTrapped = true,
+	EVENT_OnEntityBeAttached = true,
+	EVENT_LoseControlled = true,
+	onPetUnSummon = true,
+	onPetSummon = true,
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15498,6 +18929,12 @@ slot5 = {
 }
 slot6 = "abilityFreezeMap"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onSwitchSkillFreezeAdd"
+}
+slot6 = "switchSkillFreezeTimeMap"
+slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
@@ -15518,6 +18955,12 @@ slot5 = {
 	"onAbilityFreezeRemove"
 }
 slot6 = "abilityFreezeMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onSwitchSkillFreezeRemove"
+}
+slot6 = "switchSkillFreezeTimeMap"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
@@ -15589,15 +19032,13 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_FastForward = true,
-	EVENT_OnEnterVehicle = true,
-	onSkeletonLoaded = true,
-	EVENT_OnAuthorityChanged = true,
-	EVENT_OnCloseUI = true,
-	EVENT_OnExitVehicle = true,
-	EVENT_OnLiftStateChange = true,
 	EVENT_TimeScaleChanged = true,
-	EVENT_AddEComponent = true
+	onSkeletonLoaded = true,
+	EVENT_AddEComponent = true,
+	EVENT_OnCloseUI = true,
+	EVENT_OnAuthorityChanged = true,
+	EVENT_OnExitVehicle = true,
+	EVENT_OnEnterVehicle = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15630,13 +19071,13 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_OnAuthorityChanged = true,
-	onMultiPlayerEnvChanged = true,
 	EVENT_OnCharacterStateChange = true,
-	EVENT_OnHideShowEntityDictChange = true,
-	EVENT_EModelCreate = true,
 	EVENT_ResetScene = true,
-	EVENT_EnterScene = true
+	EVENT_EnterScene = true,
+	onMultiPlayerEnvChanged = true,
+	EVENT_OnAuthorityChanged = true,
+	EVENT_EModelCreate = true,
+	EVENT_OnHideShowEntityDictChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15648,13 +19089,15 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterCombat = true,
-	tick = true,
-	EVENT_OnAnimatorReady = true,
-	EVENT_OnModelRefreshed = true,
 	EVENT_OnCharacterStateChange = true,
 	EVENT_AbilityStateChange = true,
-	onLeaveCombat = true
+	tick = true,
+	onEnterCombat = true,
+	EVENT_OnAnimatorReady = true,
+	EVENT_OnExitVehicle = true,
+	EVENT_OnEnterVehicle = true,
+	onLeaveCombat = true,
+	EVENT_OnModelRefreshed = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15700,6 +19143,12 @@ slot5 = {
 slot6 = "fashionScore"
 slot4[slot6] = slot5
 slot5 = {
+	"customDict",
+	"on_appearanceBackgrounds_changed"
+}
+slot6 = "appearanceBackgrounds"
+slot4[slot6] = slot5
+slot5 = {
 	"string",
 	"on_avatar_config_changed"
 }
@@ -15728,6 +19177,12 @@ slot5 = {
 	"on_curShow_clothesDesign_changed"
 }
 slot6 = "curShow.clothesDesigns.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_curShow_suitId_changed"
+}
+slot6 = "curShow.suitId"
 slot4[slot6] = slot5
 slot5 = {
 	"boolean",
@@ -15816,11 +19271,11 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterCombat = true,
-	EVENT_ContactSurfaceVoxelChanged = true,
-	EVENT_EModelCreate = true,
 	EVENT_AddEComponent = true,
-	onLeaveCombat = true
+	onLeaveCombat = true,
+	onEnterCombat = true,
+	EVENT_EModelCreate = true,
+	EVENT_ContactSurfaceVoxelChanged = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15831,9 +19286,24 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_NotifyNewAuthorityOwnProps"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_NotifyClearAuthorityOwnProps"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
 slot3 = {
-	EVENT_EModelCreate = true,
-	onEnterSpace = true
+	onEnterSpace = true,
+	EVENT_EModelCreate = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -15908,47 +19378,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	tick = true,
-	EVENT_IsInControlChange = true
+	EVENT_IsInControlChange = true,
+	tick = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = "ClientCallFriendsComponent"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientChemistryComponent"
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = {}
-slot4 = {
-	"int",
-	"float",
-	"int"
-}
-slot5 = "RPC_SC_ApplyECSElement"
-slot3[slot5] = slot4
-slot4 = {
-	"int",
-	"int"
-}
-slot5 = "RPC_SC_ClearElement"
-slot3[slot5] = slot4
-slot4 = "ServerOnlyMsg"
-slot2[slot4] = slot3
-slot3 = {
-	EVENT_BeControlled = true,
-	EVENT_onModelLoaded = true,
-	EVENT_PostInitialized = true,
-	onLeaveSpace = true,
-	onEnterSpace = true,
-	onPetSummon = true,
-	EVENT_AddEComponent = true,
-	EVENT_OnCharacterStateChange = true
-}
-slot4 = "ComponentMethod"
-slot2[slot4] = slot3
-slot3 = "ClientChemistryComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientCombatActorPartComponent"
@@ -16017,14 +19452,14 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
+	onEnterSpace = true,
+	onSkeletonLoaded = true,
+	EVENT_OnModelRefreshed = true,
+	onLeaveCombat = true,
 	onEnterCombat = true,
 	onPetUnSummon = true,
 	onPetSummon = true,
-	EVENT_OnModelRefreshed = true,
-	onEnterSpace = true,
-	EVENT_OnHit = true,
-	onSkeletonLoaded = true,
-	onLeaveCombat = true
+	EVENT_OnHit = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16090,6 +19525,12 @@ slot5 = {
 }
 slot6 = "gmMode"
 slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"onIsTransparentChange"
+}
+slot6 = "isTransparent"
+slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = {}
@@ -16132,6 +19573,21 @@ slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
 slot3 = "ClientCombatViewComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientDangerBgmComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {
+	onEnterSpace = true,
+	onEnterTrap = true,
+	onLeaveTrap = true,
+	onLeaveSpace = true
+}
+slot4 = "ComponentMethod"
+slot2[slot4] = slot3
+slot3 = "ClientDangerBgmComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientDummyCloneComponent"
@@ -16185,13 +19641,14 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_OnModelRefreshed = true,
 	EVENT_onModelLoaded = true,
-	EVENT_LoseControlled = true,
-	onLeaveSpace = true,
 	onEnterSpace = true,
+	onTakeDamage = true,
+	EVENT_LoseControlled = true,
+	EVENT_OnModelRefreshed = true,
+	EVENT_OnLifterIdChanged = true,
 	EVENT_OnCharacterStateChange = true,
-	onTakeDamage = true
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16245,6 +19702,13 @@ slot2[slot4] = slot3
 slot3 = "ClientDynamicVoxelComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientEModelComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientEModelComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientEcologyComponent"
 }
 slot3 = {}
@@ -16287,20 +19751,53 @@ slot2[slot4] = slot3
 slot3 = "ClientEcologyComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientEcsComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"int",
+	"float",
+	"int"
+}
+slot5 = "RPC_SC_ApplyECSElement"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"int"
+}
+slot5 = "RPC_SC_ClearElement"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {
+	onEnterSpace = true,
+	EVENT_AddEComponent = true,
+	EVENT_PostInitialized = true,
+	EVENT_onModelLoaded = true,
+	EVENT_OnCharacterStateChange = true,
+	EVENT_BeControlled = true,
+	onPetSummon = true,
+	onLeaveSpace = true
+}
+slot4 = "ComponentMethod"
+slot2[slot4] = slot3
+slot3 = "ClientEcsComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientEggModeComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnPetControlChanged = true,
-	EVENT_OnActiveChange = true,
-	onEnterTrap = true,
-	onLeaveSpace = true,
 	onEnterSpace = true,
-	onLeaveTrap = true,
+	onEnterTrap = true,
+	EVENT_OnActiveChange = true,
+	EVENT_OnPetControlChanged = true,
 	EVENT_OnModelRefreshed = true,
-	EVENT_OnEntityBeDetached = true,
-	EVENT_OnEntityBeAttached = true
+	onLeaveTrap = true,
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16323,18 +19820,6 @@ slot5 = {
 	"onEggManTemplateIdChange"
 }
 slot6 = "eggManTemplateId"
-slot4[slot6] = slot5
-slot5 = {
-	"boolean",
-	"onIsBecomeEggChange"
-}
-slot6 = "becomeEggInfo.isBecomeEgg"
-slot4[slot6] = slot5
-slot5 = {
-	"boolean",
-	"onBecomeEggIsTransparentChange"
-}
-slot6 = "becomeEggInfo.isTransparent"
 slot4[slot6] = slot5
 slot5 = {
 	"string",
@@ -16381,6 +19866,21 @@ slot2[slot4] = slot3
 slot3 = "ClientEntityCacheValComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientFKeyInteractBase"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {
+	onTriggerExit = true,
+	onTriggerEnter = true,
+	EVENT_OnActiveChange = true,
+	EVENT_OnModelVisibleChange = true
+}
+slot4 = "ComponentMethod"
+slot2[slot4] = slot3
+slot3 = "ClientFKeyInteractBase"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientFloorHeightCheckComponent"
 }
 slot3 = {}
@@ -16416,12 +19916,6 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
-slot3 = {
-	onTriggerEnter = true,
-	onTriggerExit = true
-}
-slot4 = "ComponentMethod"
-slot2[slot4] = slot3
 slot3 = "ClientInanimateNpcInteractComponent"
 slot1[slot3] = slot2
 slot2 = {
@@ -16522,27 +20016,12 @@ slot2[slot4] = slot3
 slot3 = "ClientInteractComponent"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientInteractSignComponent"
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = {
-	EVENT_EModelCreate = true
-}
-slot4 = "ComponentMethod"
-slot2[slot4] = slot3
-slot3 = "ClientInteractSignComponent"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientInteractionComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onTriggerEnter = true,
-	EVENT_OnActiveChange = true,
-	EVENT_OnModelVisibleChange = true,
-	onTriggerExit = true
+	onTriggerEnter = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16568,17 +20047,12 @@ slot4 = {
 }
 slot5 = "RPC_SC_OnStartLift"
 slot3[slot5] = slot4
-slot4 = {
-	"int"
-}
-slot5 = "RPC_SC_OnStartBeLift"
-slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_LoseControlled = true,
+	EVENT_OnAttachBreak = true,
 	EVENT_AddEComponent = true,
-	EVENT_OnAttachBreak = true
+	EVENT_LoseControlled = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16615,10 +20089,11 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_LoseControlled = true,
-	EVENT_OnAnimatorReady = true,
+	notifyBuffTagChange = true,
+	EVENT_BeControlled = true,
 	tick = true,
-	EVENT_BeControlled = true
+	EVENT_LoseControlled = true,
+	EVENT_OnAnimatorReady = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16716,6 +20191,12 @@ slot3 = {}
 slot4 = {}
 slot5 = {
 	"customDict",
+	"onMapMarkStatusMap_changed"
+}
+slot6 = "mapMarkStatusMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
 	"onCustomMapMarkMap_changed"
 }
 slot6 = "customMapMarkMap.*.*"
@@ -16796,11 +20277,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
+	EVENT_OnCharacterStateChange = true,
+	EVENT_AddEComponent = true,
 	EVENT_ContactVoxelChanged = true,
-	EVENT_OnModelRefreshed = true,
 	EVENT_OnModelVisibleChange = true,
-	EVENT_OnModelScaleChanged = true,
-	EVENT_AddEComponent = true
+	EVENT_OnModelRefreshed = true,
+	EVENT_OnModelScaleChanged = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16812,8 +20294,10 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
+	EVENT_OnModelRefreshed = true,
+	EVENT_OnMergeAppearanceData = true,
 	EVENT_OnAnimatorReady = true,
-	EVENT_OnMergeAppearanceData = true
+	EVENT_OnCharacterStateChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16825,19 +20309,19 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_AbilityStateChange = true,
-	EVENT_BeUnStick = true,
-	EVENT_BeControlled = true,
-	EVENT_LoseControlled = true,
 	EVENT_OnCharacterStateChange = true,
+	EVENT_AbilityStateChange = true,
+	EVENT_OnLifeDead = true,
+	EVENT_BeControlled = true,
 	onEnterSpace = true,
-	onAIStartAgent = true,
 	onAIResumeAgent = true,
 	onAIPauseAgent = true,
 	EVENT_OnEntityBeDetached = true,
 	EVENT_OnEntityBeAttached = true,
-	EVENT_OnLifeDead = true,
-	EVENT_BeStick = true
+	EVENT_BeUnStick = true,
+	EVENT_BeStick = true,
+	EVENT_LoseControlled = true,
+	onAIStartAgent = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16850,8 +20334,8 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {
 	onEnterSpace = true,
-	onLeaveTrap = true,
 	onEnterTrap = true,
+	onLeaveTrap = true,
 	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
@@ -16859,19 +20343,22 @@ slot2[slot4] = slot3
 slot3 = "ClientNpcAIReactionComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientNpcComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientNpcComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientNpcInteractComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterCombat = true,
-	EVENT_OnActiveChange = true,
-	onTriggerEnter = true,
-	onLeaveSpace = true,
-	onEnterSpace = true,
-	EVENT_OnModelVisibleChange = true,
 	NPCINFO_OnAciveChange = true,
-	onTriggerExit = true
+	onEnterSpace = true,
+	onEnterCombat = true,
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -16921,6 +20408,12 @@ slot5 = {
 	"on_individuationIds_changed"
 }
 slot6 = "individuationIds.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_selectTransmogScheme_changed"
+}
+slot6 = "selectTransmogScheme"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -17013,8 +20506,8 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onTriggerEnter = true,
-	onTriggerExit = true
+	onTriggerExit = true,
+	onTriggerEnter = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17026,15 +20519,16 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnLifterIdChanged = true,
 	EVENT_onModelLoaded = true,
-	EVENT_OnModelRefreshed = true,
+	onHomeEventChanged = true,
 	EVENT_LeaveScene = true,
 	EVENT_EnterScene = true,
 	EVENT_OnAuthorityChanged = true,
+	startHomeEventReturnCollision = true,
 	EVENT_RefreshPhysx = true,
 	EVENT_AddEComponent = true,
-	onHomeEventChanged = true
+	EVENT_OnModelRefreshed = true,
+	EVENT_OnLifterIdChanged = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17045,6 +20539,12 @@ slot5 = {
 	"onServerPhysicsInfoRigidBodyStateChanged"
 }
 slot6 = "serverPhysicsInfo.rigidBodyState"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_areaId_changed"
+}
+slot6 = "areaId"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -17074,30 +20574,6 @@ slot2[slot4] = slot3
 slot3 = "ClientPlayerObComponent"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientPortalTeleportComponent"
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = {
-	onEnterSpace = true
-}
-slot4 = "ComponentMethod"
-slot2[slot4] = slot3
-slot3 = {}
-slot4 = {}
-slot5 = {
-	"number",
-	"onAbilityPortalTeleportCdChange"
-}
-slot6 = "portalCdEndTime"
-slot4[slot6] = slot5
-slot5 = "changed"
-slot3[slot5] = slot4
-slot4 = "PropertyCallbacks"
-slot2[slot4] = slot3
-slot3 = "ClientPortalTeleportComponent"
-slot1[slot3] = slot2
-slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientPosRotComponent"
 }
 slot3 = {}
@@ -17110,65 +20586,13 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnEnterVehicle = true,
 	EVENT_AddEComponent = true,
-	EVENT_OnExitVehicle = true
+	EVENT_OnExitVehicle = true,
+	EVENT_OnEnterVehicle = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = "ClientPrefabModelComponent"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientPsychicControllHostComponent"
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = {}
-slot4 = {
-	"number"
-}
-slot5 = "RPC_SC_StartPsychicControllTarget"
-slot3[slot5] = slot4
-slot4 = {
-	"number"
-}
-slot5 = "RPC_SC_StopPsychicControllTarget"
-slot3[slot5] = slot4
-slot4 = "ServerOnlyMsg"
-slot2[slot4] = slot3
-slot3 = "ClientPsychicControllHostComponent"
-slot1[slot3] = slot2
-slot2 = {
-	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientPsychicControlledComponent"
-}
-slot3 = {}
-slot2.Properties = slot3
-slot3 = {}
-slot4 = {
-	"number"
-}
-slot5 = "RPC_SC_StartBePsychicControlled"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = "RPC_SC_StopBePsychicControlled"
-slot3[slot5] = slot4
-slot4 = {
-	"table",
-	"number",
-	"number",
-	"boolean",
-	"number"
-}
-slot5 = "RPC_SC_BePsychicThrown"
-slot3[slot5] = slot4
-slot4 = {
-	"table"
-}
-slot5 = "RPC_SC_SetPsychicControlledOffset"
-slot3[slot5] = slot4
-slot4 = "ServerOnlyMsg"
-slot2[slot4] = slot3
-slot3 = "ClientPsychicControlledComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientPushComponent"
@@ -17183,24 +20607,26 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_BeStick = true,
-	onPetUnSummon = true,
-	EVENT_onControlPetSwitchToPlayer = true,
-	EVENT_onModelLoaded = true,
 	onEnterSpace = true,
-	onPetSummon = true,
-	onEnterCombat = true,
-	EVENT_LoseControlled = true,
-	EVENT_OnAuthorityChanged = true,
-	onHomelandAIPlanChanged = true,
+	EVENT_BeUnStick = true,
+	EVENT_AddEComponent = true,
 	EVENT_OnModelVisibleChange = true,
+	EVENT_OnAuthorityChanged = true,
+	EVENT_onControlPetSwitchToPlayer = true,
+	removeBuffEvent = true,
+	addBuffEvent = true,
+	onHomelandAIPlanChanged = true,
+	onLeaveCombat = true,
+	onEnterCombat = true,
+	EVENT_onModelLoaded = true,
 	EVENT_OnEntityBeDetached = true,
 	EVENT_OnEntityBeAttached = true,
-	EVENT_BeUnStick = true,
-	onLeaveCombat = true,
 	EVENT_BeControlled = true,
-	EVENT_onControlPlayerSwitchToPet = true,
-	EVENT_AddEComponent = true
+	EVENT_BeStick = true,
+	EVENT_LoseControlled = true,
+	onPetUnSummon = true,
+	onPetSummon = true,
+	EVENT_onControlPlayerSwitchToPet = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17225,8 +20651,8 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnModelVisibleChange = true,
-	EVENT_onModelLoaded = true
+	EVENT_onModelLoaded = true,
+	EVENT_OnModelVisibleChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17268,12 +20694,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
+	EVENT_OnAnimatorReady = true,
+	onTriggerEnter = true,
+	onTriggerExit = true,
 	EVENT_OnModelRefreshed = true,
 	onSeamlessPostEnterSpace = true,
-	onTriggerEnter = true,
-	onLeaveSpace = true,
-	EVENT_OnAnimatorReady = true,
-	onTriggerExit = true
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17313,9 +20739,13 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
+	notifyBuffTagChange = true,
+	EVENT_BeControlled = true,
 	EVENT_OnCharacterStateChange = true,
+	onLeaveSpace = true,
+	EVENT_OnSpecialAttackModeChange = true,
 	EVENT_OnHit = true,
-	EVENT_OnSpecialAttackModeChange = true
+	onActionMaskChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17361,13 +20791,13 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnMoveInputStateChanged = true,
-	EVENT_onControlPlayerSwitchToPet = true,
 	EVENT_onControlPetSwitchToPlayer = true,
-	EVENT_onControlPetSwitchToAnotherPet = true,
-	EVENT_OnCharacterStateChange = true,
 	onSkeletonLoaded = true,
-	EVENT_OnPetStart = true
+	EVENT_OnCharacterStateChange = true,
+	EVENT_onControlPetSwitchToAnotherPet = true,
+	EVENT_OnPetStart = true,
+	EVENT_OnMoveInputStateChanged = true,
+	EVENT_onControlPlayerSwitchToPet = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17406,12 +20836,14 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterCombat = true,
-	EVENT_OnEnterInteractRange = true,
 	onEnterSpace = true,
-	EVENT_OnHit = true,
 	onSkeletonLoaded = true,
-	onLeaveCombat = true
+	EVENT_ConfigDataChange = true,
+	onLeaveCombat = true,
+	onEnterCombat = true,
+	EVENT_PerceptibilitySearchEntityChanged = true,
+	EVENT_OnHit = true,
+	EVENT_OnEnterInteractRange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17435,9 +20867,9 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterSpace = true,
 	onTriggerExit = true,
-	onTriggerEnter = true
+	onTriggerEnter = true,
+	onEnterSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17502,12 +20934,24 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {
 	onEnterSpace = true,
-	EVENT_OnVoxelRegionChanged = true,
-	EVENT_AddEComponent = true
+	EVENT_AddEComponent = true,
+	EVENT_OnVoxelRegionChanged = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = "ClientVoxelComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.CommonComponent.ClientWaterStorageComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {
+	EVENT_onBindBuffChange = true
+}
+slot4 = "ComponentMethod"
+slot2[slot4] = slot3
+slot3 = "ClientWaterStorageComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.DynamicComponent.ClientCustomEventComponent"
@@ -17524,6 +20968,21 @@ slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
+	"string",
+	"on_ornament_binary_changed"
+}
+slot6 = "ornamentBinaryData.*"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"on_ornament_binary_added"
+}
+slot6 = "ornamentBinaryData"
+slot4[slot6] = slot5
+slot5 = {
 	"customDict",
 	"on_ornament_switch_open_added"
 }
@@ -17532,6 +20991,12 @@ slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
+slot5 = {
+	"customDict",
+	"on_ornament_binary_delete"
+}
+slot6 = "ornamentBinaryData"
+slot4[slot6] = slot5
 slot5 = {
 	"customDict",
 	"on_ornament_switch_open_delete"
@@ -17559,30 +21024,12 @@ slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
-	"customDict",
-	"on_ornament_changed"
+	"customList",
+	"on_homeBlueprintGroupInfo_changed"
 }
-slot6 = "ornament.*"
+slot6 = "homeBlueprintGroupInfo"
 slot4[slot6] = slot5
 slot5 = "changed"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = {
-	"customDict",
-	"on_ornament_added"
-}
-slot6 = "ornament"
-slot4[slot6] = slot5
-slot5 = "entryAdded"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = {
-	"customDict",
-	"on_ornament_delete"
-}
-slot6 = "ornament"
-slot4[slot6] = slot5
-slot5 = "entryDeleted"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -17593,6 +21040,18 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"boolean",
+	"onDispatchFinishedChanged"
+}
+slot6 = "dispatchInfo.isFinished"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
 slot3 = "ClientCampCarPetsComponent"
 slot1[slot3] = slot2
 slot2 = {
@@ -17659,14 +21118,21 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnModelVisibleChange = true,
 	EVENT_onEntityScaleChanged = true,
 	EVENT_onEntityPositionChanged = true,
-	EVENT_onModelLoaded = true
+	EVENT_onModelLoaded = true,
+	EVENT_OnModelVisibleChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = "ClientEntityEditorComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.Home.ClientHomeAttachSoundComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientHomeAttachSoundComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.Home.ClientHomeEditorComponent"
@@ -17724,11 +21190,11 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnAddExtraDebugInfo = true,
 	EVENT_onModelLoaded = true,
 	EVENT_OnModelVisibleChange = true,
+	EVENT_InitInteractionList = true,
 	EVENT_onEntityPositionChanged = true,
-	EVENT_InitInteractionList = true
+	EVENT_OnAddExtraDebugInfo = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17740,9 +21206,9 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_onModelLoaded = true,
+	EVENT_InitInteractionList = true,
 	EVENT_AddEComponent = true,
-	EVENT_InitInteractionList = true
+	EVENT_onModelLoaded = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17761,8 +21227,8 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_AnimancerAnimUpdate = true,
-	EVENT_InitInteractionList = true
+	EVENT_InitInteractionList = true,
+	EVENT_AnimancerAnimUpdate = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17774,9 +21240,10 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onHomelandAIPlanChanged = true,
 	EVENT_OnAuthorityChanged = true,
-	onHomelandAIRefresh = true
+	onHomelandAIRefresh = true,
+	onHomelandAIPlanChanged = true,
+	onHomePettingLeisureFailed = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -17794,6 +21261,7 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
+	EVENT_onModelLoaded = true,
 	EVENT_onEntityPositionChanged = true,
 	EVENT_OnAddExtraDebugInfo = true
 }
@@ -17854,10 +21322,47 @@ slot2[slot4] = slot3
 slot3 = "ClientPlayerHomeInteractComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.HomelandComponent.ClientHomelandBgmComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_bgmItemId_changed"
+}
+slot6 = "bgmItemId"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientHomelandBgmComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.HomelandComponent.ClientHomelandEnvComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_homeLinkMap_groupId_changed"
+}
+slot6 = "homeLinkMap.*.groupId"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeLinkGroupMap_totalProduce_changed"
+}
+slot6 = "homeLinkGroupMap.*.totalProduce"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
 slot3 = "ClientHomelandEnvComponent"
 slot1[slot3] = slot2
 slot2 = {
@@ -17872,6 +21377,30 @@ slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
+slot5 = {
+	"customDict",
+	"on_petHomeEventInsIdMap_entry_added"
+}
+slot6 = "petHomeEventInsIdMap"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"on_petHomeEventInsIdMap_entry_deleted"
+}
+slot6 = "petHomeEventInsIdMap"
+slot4[slot6] = slot5
+slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"string",
+	"on_petHomeEventInsIdMap_value_changed"
+}
+slot6 = "petHomeEventInsIdMap.*"
+slot4[slot6] = slot5
 slot5 = {
 	"boolean",
 	"on_eventOwnerLoginDone_changed"
@@ -17923,30 +21452,12 @@ slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
-	"customDict",
-	"on_ornament_changed"
+	"customList",
+	"on_homeBlueprintGroupInfo_changed"
 }
-slot6 = "ornament.*"
+slot6 = "homeBlueprintGroupInfo"
 slot4[slot6] = slot5
 slot5 = "changed"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = {
-	"customDict",
-	"on_ornament_added"
-}
-slot6 = "ornament"
-slot4[slot6] = slot5
-slot5 = "entryAdded"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = {
-	"customDict",
-	"on_ornament_delete"
-}
-slot6 = "ornament"
-slot4[slot6] = slot5
-slot5 = "entryDeleted"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -17964,6 +21475,18 @@ slot5 = {
 	"on_pets_changed"
 }
 slot6 = "pets.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_petBoxMap_area_changed"
+}
+slot6 = "petBoxMap.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_petExtraNum_changed"
+}
+slot6 = "petExtraNum"
 slot4[slot6] = slot5
 slot5 = {
 	"string",
@@ -17985,6 +21508,12 @@ slot5 = {
 	"on_pets_added"
 }
 slot4.pets = slot5
+slot5 = {
+	"customDict",
+	"on_petBoxMap_area_added"
+}
+slot6 = "petBoxMap"
+slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
@@ -17993,6 +21522,12 @@ slot5 = {
 	"on_pets_delete"
 }
 slot4.pets = slot5
+slot5 = {
+	"customDict",
+	"on_petBoxMap_area_deleted"
+}
+slot6 = "petBoxMap"
+slot4[slot6] = slot5
 slot5 = "entryDeleted"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
@@ -18010,6 +21545,11 @@ slot4 = {
 }
 slot5 = "RPC_SC_HomelandProduceFinish"
 slot3[slot5] = slot4
+slot4 = {
+	"string"
+}
+slot5 = "RPC_SC_HomePettingLeisureFailed"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
@@ -18022,6 +21562,12 @@ slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
+	"boolean",
+	"on_demoMode_changed"
+}
+slot6 = "demoMode"
+slot4[slot6] = slot5
+slot5 = {
 	"customDict",
 	"on_facility_changed"
 }
@@ -18032,6 +21578,12 @@ slot5 = {
 	"on_allocation_changed"
 }
 slot6 = "allocation.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_leisureState_changed"
+}
+slot6 = "leisureState.*"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
@@ -18062,6 +21614,12 @@ slot6 = "allocation"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
+	"on_leisureState_added"
+}
+slot6 = "leisureState"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
 	"on_transportData_added"
 }
 slot6 = "transportData"
@@ -18089,6 +21647,12 @@ slot6 = "allocation"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
+	"on_leisureState_deleted"
+}
+slot6 = "leisureState"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
 	"on_transportData_deleted"
 }
 slot6 = "transportData"
@@ -18104,6 +21668,60 @@ slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
 slot3 = "ClientHomelandProduceComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.HomelandComponent.ClientHomelandSeasonComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"int",
+	"int",
+	"int",
+	"int"
+}
+slot5 = "RPC_SC_OnHomeSeasonCelebrationEvent"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_homeSeasonCelebrationState_changed"
+}
+slot6 = "homeSeasonCelebrationState"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeSeasonCelebrationEndTs_changed"
+}
+slot6 = "homeSeasonCelebrationEndTs"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeSeasonCelebrationStartTs_changed"
+}
+slot6 = "homeSeasonCelebrationStartTs"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeSeasonCelebrationFestivalId_changed"
+}
+slot6 = "homeSeasonCelebrationFestivalId"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeSeasonCelebrationSessionId_changed"
+}
+slot6 = "homeSeasonCelebrationSessionId"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientHomelandSeasonComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.HomelandComponent.ClientHomelandWarehouseComponent"
@@ -18150,10 +21768,16 @@ slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
-	"customDict",
+	"boolean",
 	"on_zone_changed"
 }
 slot6 = "unlockZone.*"
+slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"on_unlockArea_changed"
+}
+slot6 = "unlockArea.*"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -18163,6 +21787,12 @@ slot5 = {
 	"on_zone_added"
 }
 slot6 = "unlockZone"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_unlockArea_added"
+}
+slot6 = "unlockArea"
 slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
@@ -18186,9 +21816,9 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {
 	onEnterSpace = true,
+	onLeaveSpace = true,
 	onLeaveTrap = true,
-	onEnterTrap = true,
-	onLeaveSpace = true
+	onEnterTrap = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -18200,6 +21830,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
+slot4 = {
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_SetAbilityAutoTestPetAiBtName"
+slot3[slot5] = slot4
 slot4 = {
 	"table"
 }
@@ -18294,6 +21930,12 @@ slot5 = "RPC_SC_SyncCatchBallDestroyed"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
+slot3 = {
+	EVENT_LeaveScene = true,
+	onLeaveSpace = true
+}
+slot4 = "ComponentMethod"
+slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
@@ -18324,7 +21966,8 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
 slot4 = {
-	"table"
+	"table",
+	"string"
 }
 slot5 = "RPC_SC_OnCaptureSuccess"
 slot3[slot5] = slot4
@@ -18344,15 +21987,16 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_BeControlled = true,
-	tick = true,
-	EVENT_OnPlayerDead = true,
-	EVENT_ResetAllStateByEscape = true,
 	EVENT_OnCharacterStateChange = true,
-	onLeaveSpace = true,
-	EVENT_PostInitialized = true,
+	tick = true,
+	EVENT_LeaveScene = true,
 	EVENT_EnterScene = true,
-	EVENT_AddEComponent = true
+	EVENT_AddEComponent = true,
+	EVENT_ResetAllStateByEscape = true,
+	EVENT_OnPlayerDead = true,
+	EVENT_BeControlled = true,
+	EVENT_PostInitialized = true,
+	onLeaveSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -18461,9 +22105,9 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {
 	onEnterSpace = true,
+	onLeaveSpace = true,
 	onLeaveTrap = true,
-	onEnterTrap = true,
-	onLeaveSpace = true
+	onEnterTrap = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -18492,6 +22136,16 @@ slot4 = {
 	"boolean"
 }
 slot5 = "RPC_SC_EnableCombatLogger"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean"
+}
+slot5 = "RPC_SC_BlockOtherPlayerAudio"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean"
+}
+slot5 = "RPC_SC_DebugGrabEggDangerEntityInfo"
 slot3[slot5] = slot4
 slot4 = {
 	"boolean"
@@ -18595,6 +22249,7 @@ slot4 = {
 	"string",
 	"int",
 	"table",
+	"int",
 	"int"
 }
 slot5 = "RPC_SC_CreateClientEntityInfo"
@@ -18715,6 +22370,12 @@ slot6 = "showTitles"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
+	"on_showTitleExtra_changed"
+}
+slot6 = "showTitleExtra"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
 	"on_showTitleDicts_changed"
 }
 slot6 = "showTitleDicts"
@@ -18762,6 +22423,18 @@ slot5 = {
 slot6 = "unlockedAbilityMap"
 slot4[slot6] = slot5
 slot5 = {
+	"number",
+	"on_chatBubble_changed"
+}
+slot6 = "chatBubble"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_chatBubbleDicts_changed"
+}
+slot6 = "chatBubbleDicts"
+slot4[slot6] = slot5
+slot5 = {
 	"customDict",
 	"onTempPetCurAbilityMapChanged"
 }
@@ -18803,19 +22476,19 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_LoseControlled = true,
-	EVENT_onModelLoaded = true,
-	onSkeletonLoaded = true,
-	EVENT_BeControlled = true,
 	onEnterSpace = true,
-	EVENT_FastForward = true,
-	EVENT_OnModelRefreshed = true,
-	EVENT_FastForwardEnd = true,
-	EVENT_OnBornEffect = true,
+	EVENT_BeControlled = true,
+	EVENT_AddEComponent = true,
+	EVENT_EnterScene = true,
+	EVENT_onModelLoaded = true,
+	EVENT_OnAnimatorReady = true,
 	EVENT_OnExitVehicle = true,
 	EVENT_OnEnterVehicle = true,
 	EVENT_TimeScaleChanged = true,
-	EVENT_AddEComponent = true
+	onSkeletonLoaded = true,
+	EVENT_OnModelVisibleChange = true,
+	EVENT_LoseControlled = true,
+	EVENT_OnModelRefreshed = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -18907,6 +22580,18 @@ slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
 slot4 = {
+	"boolean",
+	"string"
+}
+slot5 = "RPC_SC_BindSocialMediaAccount"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	"string"
+}
+slot5 = "RPC_SC_UnbindSocialMediaAccount"
+slot3[slot5] = slot4
+slot4 = {
 	"string",
 	"string",
 	"string",
@@ -18922,9 +22607,37 @@ slot4 = {
 slot5 = "RPC_SC_PlatformShellInviteDestinationResult"
 slot3[slot5] = slot4
 slot4 = {
+	"string",
+	"boolean",
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_BatchResolveSocialAccounts"
+slot3[slot5] = slot4
+slot4 = {
 	"table"
 }
 slot5 = "RPC_SC_GetRecommendPlayer"
+slot3[slot5] = slot4
+slot4 = {
+	"boolean",
+	"string",
+	"string",
+	"int",
+	"int",
+	"int",
+	"string"
+}
+slot5 = "RPC_SC_CreateDiscordActivityInviteResult"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = "RPC_SC_FriendDataChanged"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"int"
+}
+slot5 = "RPC_SC_FriendPermissionChanged"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
@@ -18934,10 +22647,21 @@ slot4 = {
 slot5 = "RPC_SC_OnChangeVariantFriend"
 slot3[slot5] = slot4
 slot4 = {
+	"string",
+	"int"
+}
+slot5 = "RPC_SC_FriendSendGiftLimitChanged"
+slot3[slot5] = slot4
+slot4 = {
 	"table",
 	"table"
 }
 slot5 = "RPC_SC_ReceiveEnterPhotoWorldRequest"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_SyncPsnBlockStates"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
@@ -18974,8 +22698,8 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterTrap = true,
-	onLeaveTrap = true
+	onLeaveTrap = true,
+	onEnterTrap = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -18987,8 +22711,8 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	EVENT_OnModelRefreshed = true,
-	EVENT_onModelLoaded = true
+	EVENT_onModelLoaded = true,
+	EVENT_OnModelRefreshed = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -19070,11 +22794,6 @@ slot4 = {
 	"float"
 }
 slot5 = "RPC_SC_ExtractStatus"
-slot3[slot5] = slot4
-slot4 = {
-	"int"
-}
-slot5 = "RPC_SC_BecameEggOver"
 slot3[slot5] = slot4
 slot4 = {
 	"number",
@@ -19184,27 +22903,9 @@ slot4 = {
 }
 slot5 = "RPC_SC_RobEggTipsEvent"
 slot3[slot5] = slot4
-slot4 = {
-	"table",
-	"int"
-}
-slot5 = "RPC_SC_BecameEggStart"
-slot3[slot5] = slot4
-slot4 = {
-	"int"
-}
-slot5 = "RPC_SC_EnterBecameEggArea"
-slot3[slot5] = slot4
-slot4 = {
-	"int"
-}
-slot5 = "RPC_SC_LeaveBecameEggArea"
-slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	cmpSceneEndReload = true,
-	cmpSceneStartReload = true,
 	EVENT_EnterScene = true,
 	onLeaveSpace = true
 }
@@ -19226,6 +22927,30 @@ slot6 = "secEggLv"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
+	"on_eggStar_changed"
+}
+slot6 = "eggStar"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_eggScore_changed"
+}
+slot6 = "eggScore"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_eggAllScore_changed"
+}
+slot6 = "eggAllScore"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_rankRewardFlag_changed"
+}
+slot6 = "rankRewardFlag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
 	"on_rewardBoxList_id_changed"
 }
 slot6 = "rewardBoxList.*.id"
@@ -19241,6 +22966,18 @@ slot5 = {
 	"on_refreshCountDaily_changed"
 }
 slot6 = "refreshCountDaily"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_robEggEvtProps_changed"
+}
+slot6 = "robEggEvtProps"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_robEggEvtProps_value_changed"
+}
+slot6 = "robEggEvtProps.*"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
@@ -19274,9 +23011,9 @@ slot6 = "curLoadBearing"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
-	"on_eggGameTimes_changed"
+	"on_eggGameSuccessTimes_changed"
 }
-slot6 = "eggGameTimes"
+slot6 = "eggGameSuccessTimes"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
@@ -19292,6 +23029,12 @@ slot5 = {
 	"on_eggUnlockTalent_entry_added"
 }
 slot6 = "eggUnlockTalent"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_robEggEvtProps_entry_added"
+}
+slot6 = "robEggEvtProps"
 slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
@@ -19375,7 +23118,7 @@ slot4 = {
 slot5 = "RPC_SC_HornNotify"
 slot3[slot5] = slot4
 slot4 = {
-	"boolean",
+	"int",
 	"string"
 }
 slot5 = "RPC_SC_AcceptHornNotifyResult"
@@ -19410,10 +23153,10 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_OnModelRefreshed = true,
+	EVENT_OnCharacterStateChange = true,
 	EVENT_OnAnimatorReady = true,
-	EVENT_OnModelVisibleChange = true,
-	EVENT_OnMoveInputStateChanged = true
+	EVENT_OnMoveInputStateChanged = true,
+	EVENT_OnModelVisibleChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -19493,16 +23236,16 @@ slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
-	"customDict",
-	"on_invInfo_changed"
-}
-slot6 = "invInfo"
-slot4[slot6] = slot5
-slot5 = {
 	"number",
 	"on_invQuickSlot_changed"
 }
 slot6 = "invQuickSlotBall.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_invEliteSlot_changed"
+}
+slot6 = "invEliteSlotBall.*"
 slot4[slot6] = slot5
 slot5 = {
 	"customList",
@@ -19512,15 +23255,15 @@ slot6 = "invQuickSlotItem"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
-	"on_invGenStatus_changed"
-}
-slot6 = "invInfo.*.*.status"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
 	"on_commonMoneyNums_changed"
 }
 slot6 = "commonMoneyNums.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_moneyNegativeNums_changed"
+}
+slot6 = "moneyNegativeNums.*"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
@@ -19529,16 +23272,328 @@ slot5 = {
 slot6 = "commonEnergyNums.*"
 slot4[slot6] = slot5
 slot5 = {
-	"number",
-	"on_genCount_changed"
+	"customDict",
+	"on_useLimitMap_changed"
 }
-slot6 = "invInfo.*.*.count"
+slot6 = "useLimitMap.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_useLimitMap_nextRefreshTs_changed"
+}
+slot6 = "useLimitMap.nextRefreshTs"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPlayerItemBagChanged"
+}
+slot6 = "playerItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPlayerItemStatusChanged"
+}
+slot6 = "playerItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPlayerItemCountChanged"
+}
+slot6 = "playerItemBag.*.count"
 slot4[slot6] = slot5
 slot5 = {
 	"string",
-	"on_item_props_changed"
+	"onPlayerItemPropsChanged"
 }
-slot6 = "invInfo.*.*.props.*.*"
+slot6 = "playerItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPetItemBagChanged"
+}
+slot6 = "petItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPetItemStatusChanged"
+}
+slot6 = "petItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPetItemCountChanged"
+}
+slot6 = "petItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onPetItemPropsChanged"
+}
+slot6 = "petItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onBallItemBagChanged"
+}
+slot6 = "ballItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onBallItemStatusChanged"
+}
+slot6 = "ballItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onBallItemCountChanged"
+}
+slot6 = "ballItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onBallItemPropsChanged"
+}
+slot6 = "ballItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onCommonItemBagChanged"
+}
+slot6 = "commonItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onCommonItemStatusChanged"
+}
+slot6 = "commonItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onCommonItemCountChanged"
+}
+slot6 = "commonItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onCommonItemPropsChanged"
+}
+slot6 = "commonItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onTaskItemBagChanged"
+}
+slot6 = "taskItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onTaskItemStatusChanged"
+}
+slot6 = "taskItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onTaskItemCountChanged"
+}
+slot6 = "taskItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onTaskItemPropsChanged"
+}
+slot6 = "taskItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPetJewelryItemBagChanged"
+}
+slot6 = "petJewelryItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPetJewelryItemStatusChanged"
+}
+slot6 = "petJewelryItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPetJewelryItemCountChanged"
+}
+slot6 = "petJewelryItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onPetJewelryItemPropsChanged"
+}
+slot6 = "petJewelryItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomelandItemBagChanged"
+}
+slot6 = "homelandItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomelandItemStatusChanged"
+}
+slot6 = "homelandItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomelandItemCountChanged"
+}
+slot6 = "homelandItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onHomelandItemPropsChanged"
+}
+slot6 = "homelandItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomelandFurnitureItemBagChanged"
+}
+slot6 = "homelandFurnitureItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomelandFurnitureItemStatusChanged"
+}
+slot6 = "homelandFurnitureItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomelandFurnitureItemCountChanged"
+}
+slot6 = "homelandFurnitureItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onHomelandFurnitureItemPropsChanged"
+}
+slot6 = "homelandFurnitureItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRobEggItemBagChanged"
+}
+slot6 = "robEggItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onRobEggItemStatusChanged"
+}
+slot6 = "robEggItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onRobEggItemCountChanged"
+}
+slot6 = "robEggItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onRobEggItemPropsChanged"
+}
+slot6 = "robEggItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRobEggWarehouseItemBagChanged"
+}
+slot6 = "robEggWarehouseItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onRobEggWarehouseItemStatusChanged"
+}
+slot6 = "robEggWarehouseItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onRobEggWarehouseItemCountChanged"
+}
+slot6 = "robEggWarehouseItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onRobEggWarehouseItemPropsChanged"
+}
+slot6 = "robEggWarehouseItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onEquipSlotsItemBagChanged"
+}
+slot6 = "equipSlotsItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onEquipSlotsItemStatusChanged"
+}
+slot6 = "equipSlotsItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onEquipSlotsItemCountChanged"
+}
+slot6 = "equipSlotsItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onEquipSlotsItemPropsChanged"
+}
+slot6 = "equipSlotsItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onReservedItemBagChanged"
+}
+slot6 = "reservedItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onReservedItemStatusChanged"
+}
+slot6 = "reservedItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onReservedItemCountChanged"
+}
+slot6 = "reservedItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onReservedItemPropsChanged"
+}
+slot6 = "reservedItemBag.*.props.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onFragmentItemBagChanged"
+}
+slot6 = "fragmentItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onFragmentItemStatusChanged"
+}
+slot6 = "fragmentItemBag.*.status"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onFragmentItemCountChanged"
+}
+slot6 = "fragmentItemBag.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onFragmentItemPropsChanged"
+}
+slot6 = "fragmentItemBag.*.props.*.*"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
@@ -19561,23 +23616,200 @@ slot5 = {
 }
 slot6 = "invQuickSlotBall"
 slot4[slot6] = slot5
+slot5 = {
+	"customList",
+	"on_invEliteSlot_itemInserted"
+}
+slot6 = "invEliteSlotBall"
+slot4[slot6] = slot5
 slot5 = "itemInserted"
 slot3[slot5] = slot4
 slot4 = {}
 slot5 = {
-	"customDict",
-	"on_genCount_entryAdd"
+	"customList",
+	"on_invQuickSlot_itemRemoved"
 }
-slot6 = "invInfo.*"
+slot6 = "invQuickSlotBall"
+slot4[slot6] = slot5
+slot5 = {
+	"customList",
+	"on_invEliteSlot_itemRemoved"
+}
+slot6 = "invEliteSlotBall"
+slot4[slot6] = slot5
+slot5 = "itemRemoved"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"on_useLimitMap_added"
+}
+slot6 = "useLimitMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPlayerItemAdded"
+}
+slot6 = "playerItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPetItemAdded"
+}
+slot6 = "petItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onBallItemAdded"
+}
+slot6 = "ballItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onCommonItemAdded"
+}
+slot6 = "commonItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onTaskItemAdded"
+}
+slot6 = "taskItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPetJewelryItemAdded"
+}
+slot6 = "petJewelryItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomelandItemAdded"
+}
+slot6 = "homelandItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomelandFurnitureItemAdded"
+}
+slot6 = "homelandFurnitureItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRobEggItemAdded"
+}
+slot6 = "robEggItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRobEggWarehouseItemAdded"
+}
+slot6 = "robEggWarehouseItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onEquipSlotsItemAdded"
+}
+slot6 = "equipSlotsItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onReservedItemAdded"
+}
+slot6 = "reservedItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onFragmentItemAdded"
+}
+slot6 = "fragmentItemBag"
 slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
 slot5 = {
 	"customDict",
-	"on_genCount_entryDeleted"
+	"on_useLimitMap_deleted"
 }
-slot6 = "invInfo.*"
+slot6 = "useLimitMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPlayerItemDeleted"
+}
+slot6 = "playerItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPetItemDeleted"
+}
+slot6 = "petItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onBallItemDeleted"
+}
+slot6 = "ballItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onCommonItemDeleted"
+}
+slot6 = "commonItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onTaskItemDeleted"
+}
+slot6 = "taskItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPetJewelryItemDeleted"
+}
+slot6 = "petJewelryItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomelandItemDeleted"
+}
+slot6 = "homelandItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomelandFurnitureItemDeleted"
+}
+slot6 = "homelandFurnitureItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRobEggItemDeleted"
+}
+slot6 = "robEggItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRobEggWarehouseItemDeleted"
+}
+slot6 = "robEggWarehouseItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onEquipSlotsItemDeleted"
+}
+slot6 = "equipSlotsItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onReservedItemDeleted"
+}
+slot6 = "reservedItemBag"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onFragmentItemDeleted"
+}
+slot6 = "fragmentItemBag"
 slot4[slot6] = slot5
 slot5 = "entryDeleted"
 slot3[slot5] = slot4
@@ -19586,7 +23818,7 @@ slot2[slot4] = slot3
 slot3 = "ClientInventoryComponent"
 slot1[slot3] = slot2
 slot2 = {
-	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientLeylineFlowerComponent"
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientKnowledgeComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
@@ -19594,7 +23826,52 @@ slot3 = {}
 slot4 = {
 	"int"
 }
-slot5 = "RPC_SC_RainBowPetRefresh"
+slot5 = "RPC_SC_OpenKnowledgeUI"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onUnlockedKnowledgeAdded"
+}
+slot6 = "unlockedKnowledgeMap"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"boolean",
+	"onKnowledgeReadStateChanged"
+}
+slot6 = "unlockedKnowledgeMap.*"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onUnlockedKnowledgeDeleted"
+}
+slot6 = "unlockedKnowledgeMap"
+slot4[slot6] = slot5
+slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientKnowledgeComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientLeylineFlowerComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_LeylineRainbowPresent"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
@@ -19822,7 +24099,8 @@ slot3 = {}
 slot4 = {
 	"string",
 	"int",
-	"string"
+	"string",
+	"int"
 }
 slot5 = "RPC_SC_AddMediaMarkerRet"
 slot3[slot5] = slot4
@@ -19833,6 +24111,8 @@ slot5 = "RPC_SC_RemoveMediaMarkerRet"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
+	"int",
+	"int",
 	"int",
 	"int"
 }
@@ -19877,6 +24157,13 @@ slot2[slot4] = slot3
 slot3 = "ClientMonthCardComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientOfflineCaptureComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientOfflineCaptureComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPayComponent"
 }
 slot3 = {}
@@ -19884,6 +24171,7 @@ slot2.Properties = slot3
 slot3 = {}
 slot4 = {
 	"boolean",
+	"string",
 	"string",
 	"string",
 	"string",
@@ -19906,6 +24194,11 @@ slot4 = {
 slot5 = "RPC_SC_NotifyPayCoinSuccess"
 slot3[slot5] = slot4
 slot4 = {
+	"number"
+}
+slot5 = "RPC_SC_NotifyRechargeRebateRewardGuide"
+slot3[slot5] = slot4
+slot4 = {
 	"string",
 	"number",
 	"table",
@@ -19914,6 +24207,12 @@ slot4 = {
 	"table"
 }
 slot5 = "RPC_SC_NotifyPayMonthCardSuccess"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"number"
+}
+slot5 = "RPC_SC_NotifyPayBattlePassSuccess"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
@@ -19950,101 +24249,11 @@ slot6 = "actionPoint"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
-	"onPetBallSlotCount_changed"
-}
-slot6 = "petBallMap.slotCount"
-slot4[slot6] = slot5
-slot5 = {
-	"string",
-	"onPetBallCurIndex_changed"
-}
-slot6 = "petBallMap.curIndex"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"onPetBallMapAction_changed"
-}
-slot6 = "petBallMap.*.actions.*"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"onPetBallMapProduction_changed"
-}
-slot6 = "petBallMap.*.productions.*"
-slot4[slot6] = slot5
-slot5 = {
-	"string",
-	"onPetBallMapPetId_changed"
-}
-slot6 = "petBallMap.*.petId"
-slot4[slot6] = slot5
-slot5 = {
-	"string",
-	"onPetBallMapSubPetId_changed"
-}
-slot6 = "petBallMap.*.subPetId"
-slot4[slot6] = slot5
-slot5 = {
-	"string",
-	"onPetBallMapCustomName_changed"
-}
-slot6 = "petBallMap.*.customName"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
 	"onPetBallHatchSlotMapStatus_changed"
 }
 slot6 = "hatchSlotMap.*.status"
 slot4[slot6] = slot5
-slot5 = {
-	"number",
-	"onPetBallExpActionStatus_changed"
-}
-slot6 = "petBallMap.*.expActionStatus"
-slot4[slot6] = slot5
 slot5 = "changed"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = {
-	"customDict",
-	"onPetBallMap_entryAdded"
-}
-slot6 = "petBallMap"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"onPetBallMapActions_entryAdded"
-}
-slot6 = "petBallMap.*.actions"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"onPetBallMapProductions_entryAdded"
-}
-slot6 = "petBallMap.*.productions"
-slot4[slot6] = slot5
-slot5 = "entryAdded"
-slot3[slot5] = slot4
-slot4 = {}
-slot5 = {
-	"customDict",
-	"onPetBallMap_entryDeleted"
-}
-slot6 = "petBallMap"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"onPetBallMapActions_entryDeleted"
-}
-slot6 = "petBallMap.*.actions"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"onPetBallMapProductions_entryDeleted"
-}
-slot6 = "petBallMap.*.productions"
-slot4[slot6] = slot5
-slot5 = "entryDeleted"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -20059,15 +24268,27 @@ slot3 = {}
 slot4 = {
 	"int",
 	"int",
+	"int",
+	"int",
 	"int"
 }
 slot5 = "RPC_SC_OnChangeDisplayPetForm"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
+	"int",
+	"int",
 	"int"
 }
 slot5 = "RPC_SC_ChangeDisplayPetLabel"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_HandBookDataChanged"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = "RPC_SC_ClearPetHandbookData"
 slot3[slot5] = slot4
 slot4 = {
 	"int",
@@ -20168,6 +24389,15 @@ slot5 = {
 slot6 = "petHandbookMap.*.rewardedTargetMap.*.*"
 slot4[slot6] = slot5
 slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onPetHandbookCompletedTarget_entryAdded"
+}
+slot6 = "petHandbookMap.*.completedTargetMap.*"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -20334,11 +24564,20 @@ slot5 = "RPC_SC_OnAddPet"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
+	"int",
 	"int"
 }
 slot5 = "RPC_SC_ChangePetLabel"
 slot3[slot5] = slot4
-slot4 = {}
+slot4 = {
+	"string",
+	"int"
+}
+slot5 = "RPC_SC_ChangePetBodySizeType"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
 slot5 = "RPC_SC_OnRecyclePet"
 slot3[slot5] = slot4
 slot4 = {
@@ -20426,18 +24665,18 @@ slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_LoseControlled = true,
-	onSkeletonLoaded = true,
-	OnPetProud = true,
-	EVENT_ResetAllStateByEscape = true,
 	EVENT_OnCharacterStateChange = true,
+	OnPetProud = true,
+	EVENT_OnTeleport = true,
+	EVENT_EnterScene = true,
+	EVENT_AddEComponent = true,
 	EVENT_ResetScene = true,
 	OnPetEat = true,
-	EVENT_EnterScene = true,
-	EVENT_OnTeleport = true,
-	onQuickCapture = true,
+	EVENT_ResetAllStateByEscape = true,
 	onEnterSpace = true,
-	EVENT_AddEComponent = true
+	onSkeletonLoaded = true,
+	EVENT_LoseControlled = true,
+	onQuickCapture = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -20451,18 +24690,6 @@ slot6 = "pets.*.customName"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
-	"on_breedCountChanged"
-}
-slot6 = "pets.*.breedCount"
-slot4[slot6] = slot5
-slot5 = {
-	"customDict",
-	"on_attributeCacheMapChanged"
-}
-slot6 = "pets.*.attributeCacheMap"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
 	"on_controlCharacter_changed"
 }
 slot6 = "pets.*.controlCharacter"
@@ -20472,6 +24699,18 @@ slot5 = {
 	"on_followCharacter_changed"
 }
 slot6 = "pets.*.followCharacter"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPetInfoLabelChange"
+}
+slot6 = "pets.*.label"
+slot4[slot6] = slot5
+slot5 = {
+	"customList",
+	"onPetTalentListChanged"
+}
+slot6 = "pets.*.talentList"
 slot4[slot6] = slot5
 slot5 = {
 	"boolean",
@@ -20534,28 +24773,16 @@ slot5 = {
 slot6 = "pets.*.favoriteType"
 slot4[slot6] = slot5
 slot5 = {
-	"customDict",
-	"on_petAbilityPresetChanged"
-}
-slot6 = "pets.*.abilityPresetMap.*"
-slot4[slot6] = slot5
-slot5 = {
 	"number",
 	"on_petCurAbilityPresetChanged"
 }
 slot6 = "pets.*.curAbilityPreset"
 slot4[slot6] = slot5
 slot5 = {
-	"boolean",
-	"on_petIsPutInHomelandChanged"
-}
-slot6 = "pets.*.isPutInHomeland"
-slot4[slot6] = slot5
-slot5 = {
 	"customDict",
 	"on_petSelectTransmogScheme_changed"
 }
-slot6 = "pets.*.selectTransmogScheme"
+slot6 = "petTransmogInfoMap.*.selectTransmogScheme"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
@@ -20593,6 +24820,30 @@ slot5 = {
 }
 slot6 = "isUsingExtraTempPet"
 slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"onForceControlChanged"
+}
+slot6 = "forceControl"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onPetTeamTypeChanged"
+}
+slot6 = "petTeamType"
+slot4[slot6] = slot5
+slot5 = {
+	"string",
+	"onCarryObjIdChanged"
+}
+slot6 = "carryObjId"
+slot4[slot6] = slot5
+slot5 = {
+	"customList",
+	"onPetPrepareListChanged"
+}
+slot6 = "petPrepareList"
+slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = {}
@@ -20611,7 +24862,22 @@ slot5 = {
 }
 slot6 = "petBoxMap"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_petTransmogInfoMap_entry_added"
+}
+slot6 = "petTransmogInfoMap"
+slot4[slot6] = slot5
 slot5 = "entryAdded"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customList",
+	"onPetPrepareListAdd"
+}
+slot6 = "petPrepareList"
+slot4[slot6] = slot5
+slot5 = "itemInserted"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -20713,6 +24979,12 @@ slot3 = {}
 slot4 = {}
 slot5 = {
 	"customList",
+	"on_formation_changed"
+}
+slot6 = "prepareFormationList.*.formation"
+slot4[slot6] = slot5
+slot5 = {
+	"customList",
 	"on_exploreFormation_changed"
 }
 slot6 = "prepareFormationList.*.exploreFormation"
@@ -20728,6 +25000,13 @@ slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
 slot3 = "ClientPetsFormationComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPetsVariantInteractComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientPetsVariantInteractComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPhotoStudioComponent"
@@ -20759,7 +25038,93 @@ slot3 = {
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"customDict",
+	"on_photoStudioUnlockMap_changed"
+}
+slot6 = "photoStudioUnlockMap"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
 slot3 = "ClientPhotoStudioComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPhotographyStudioComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_SyncPhotographyStudios"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_SyncPhotographyStudio"
+slot3[slot5] = slot4
+slot4 = {
+	"string"
+}
+slot5 = "RPC_SC_RemovePhotographyStudio"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_UpdatePhotographyStudioName"
+slot3[slot5] = slot4
+slot4 = {
+	"table",
+	"table"
+}
+slot5 = "RPC_SC_SyncPhotographyStudioInvitaions"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_EnterPhotographyStudio"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"string"
+}
+slot5 = "RPC_SC_LeavePhotographyStudio"
+slot3[slot5] = slot4
+slot4 = {
+	"string"
+}
+slot5 = "RPC_SC_AcceptInvitePhotographyStudio"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_UpdatePhotographyStudioContent"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"string",
+	"on_profilePhotographyStudioUid_changed"
+}
+slot6 = "profilePhotographyStudioUid"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientPhotographyStudioComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerActivityComponent"
@@ -20782,7 +25147,64 @@ slot5 = {
 }
 slot6 = "activityBattlePass"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_activityLittleFirePerson_changed"
+}
+slot6 = "activityLittleFirePerson"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_fishingCaptureCurPhase_changed"
+}
+slot6 = "fishingCaptureCurPhase"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_activityFishingCapture_activityBase_changed"
+}
+slot6 = "activityFishingCapture.activityBase"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_activityFishingCapture_changed"
+}
+slot6 = "activityFishingCapture"
+slot4[slot6] = slot5
+slot5 = {
+	"boolean",
+	"on_activityFishingCapture_irisRewardReceived_changed"
+}
+slot6 = "activityFishingCapture.irisRewardReceived"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_sparkStreakDaysMap_changed"
+}
+slot6 = "sparkStreakDaysMap.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_sparkLastLightDayMap_changed"
+}
+slot6 = "sparkLastLightDayMap.*"
+slot4[slot6] = slot5
 slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"on_sparkStreakDaysMap_entry_added"
+}
+slot6 = "sparkStreakDaysMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_sparkLastLightDayMap_entry_added"
+}
+slot6 = "sparkLastLightDayMap"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -20796,6 +25218,9 @@ slot2.Properties = slot3
 slot3 = {}
 slot4 = {}
 slot5 = "RPC_SC_NotifyActivityDayUpdated"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = "RPC_SC_TapTapStoreEvaluate"
 slot3[slot5] = slot4
 slot4 = {
 	"int"
@@ -20817,10 +25242,26 @@ slot4 = {
 slot5 = "RPC_SC_ExchangeGiftCodeResult"
 slot3[slot5] = slot4
 slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_NtfShopCidList"
+slot3[slot5] = slot4
+slot4 = {
+	"string"
+}
+slot5 = "RPC_SC_GetGuideMiniProgramCode"
+slot3[slot5] = slot4
+slot4 = {
 	"string",
 	"table"
 }
 slot5 = "RPC_SC_ReportFirebaseLog"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_ReportWeGameLog"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
@@ -20866,7 +25307,7 @@ slot5 = {
 	"number",
 	"onGetTraceSearchMarkIdCallback"
 }
-slot6 = "ecoTraceSearchMarkId"
+slot6 = "activityEcoTrace.ecoTraceSearchMarkId"
 slot4[slot6] = slot5
 slot5 = {
 	"boolean",
@@ -21087,6 +25528,30 @@ slot5 = "RPC_SC_OnResult"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"onCurBossRushSeasonIdChanged"
+}
+slot6 = "curBossRushSeasonId"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onBossRushSeasonRewardMapChanged"
+}
+slot6 = "bossRushSeasonRewardRecved"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onBossRushSeasonBestGradeMapChanged"
+}
+slot6 = "curBossRushSeasonData.*.bossBestGrade"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
 slot3 = "ClientPlayerBossRushComponent"
 slot1[slot3] = slot2
 slot2 = {
@@ -21102,6 +25567,12 @@ slot4 = {
 slot5 = "RPC_SC_CarryOp"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {
+	EVENT_OnMoveInputStateChanged = true,
+	onLeaveSpace = true
+}
+slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = "ClientPlayerCarryComponent"
 slot1[slot3] = slot2
@@ -21187,42 +25658,6 @@ slot3 = {
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
-slot3 = {}
-slot4 = {}
-slot5 = {
-	"boolean",
-	"on_fishingCaptureInfo_captureSuccess_changed"
-}
-slot6 = "fishingCaptureInfo.captureSuccess"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
-	"on_fishingCaptureInfo_progressValue_changed"
-}
-slot6 = "fishingCaptureInfo.progressValue"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
-	"on_fishingCaptureInfo_sessionBattleGrade_changed"
-}
-slot6 = "fishingCaptureInfo.sessionBattleGrade"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
-	"on_fishingCaptureInfo_layerCount_changed"
-}
-slot6 = "fishingCaptureInfo.layerCount"
-slot4[slot6] = slot5
-slot5 = {
-	"number",
-	"on_fishingCaptureInfo_totalThrowCount_changed"
-}
-slot6 = "fishingCaptureInfo.totalThrowCount"
-slot4[slot6] = slot5
-slot5 = "changed"
-slot3[slot5] = slot4
-slot4 = "PropertyCallbacks"
-slot2[slot4] = slot3
 slot3 = "ClientPlayerFishingCaptureComponent"
 slot1[slot3] = slot2
 slot2 = {
@@ -21243,6 +25678,45 @@ slot3 = {}
 slot4 = {}
 slot5 = {
 	"customDict",
+	"on_campDispatchInfo_changed"
+}
+slot6 = "campDispatchInfo"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeBasicInfo_upgradeEndTs_changed"
+}
+slot6 = "homeBasicInfo.upgradeEndTs"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_homeBasicInfo_level_changed"
+}
+slot6 = "homeBasicInfo.level"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_campSpaceKeyMap_changed"
+}
+slot6 = "campSpaceKeyMap"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"on_curCampStaticId_changed"
+}
+slot6 = "curCampStaticId"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_statHomeCarOrnament_changed"
+}
+slot6 = "statHomeCarOrnament"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
 	"on_campSpaceKeyMap_added"
 }
 slot6 = "campSpaceKeyMap"
@@ -21258,30 +25732,120 @@ slot6 = "campSpaceKeyMap"
 slot4[slot6] = slot5
 slot5 = "entryDeleted"
 slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientPlayerHomeCampComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerHomeHandbookComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
 slot4 = {}
 slot5 = {
 	"customDict",
-	"on_campSpaceKeyMap_changed"
+	"onHomeHandbookItem_added"
 }
-slot6 = "campSpaceKeyMap"
+slot6 = "homeHandbookMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeHandbookCategoryCount_added"
+}
+slot6 = "homeHandbookMap.homeHandbookCategoryCount"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeHandbookSeasonCount_added"
+}
+slot6 = "homeHandbookMap.homeHandbookSeasonCount"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeHandbookReceivedCategoryReward_added"
+}
+slot6 = "receivedCategoryRewards"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onHomeHandbookItem_deleted"
+}
+slot6 = "homeHandbookMap"
+slot4[slot6] = slot5
+slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onHomeHandbookItem_changed"
+}
+slot6 = "homeHandbookMap.*"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
-	"on_curCampStaticId_changed"
+	"onHomeHandbookItemCount_changed"
 }
-slot6 = "curCampStaticId"
+slot6 = "homeHandbookMap.*.count"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeHandbookScore_changed"
+}
+slot6 = "homeHandbookMap.homeHandbookScore"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeHandbookCategoryCount_changed"
+}
+slot6 = "homeHandbookMap.homeHandbookCategoryCount.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeHandbookSeasonCount_changed"
+}
+slot6 = "homeHandbookMap.homeHandbookSeasonCount.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeHandbookReceivedCategoryReward_changed"
+}
+slot6 = "receivedCategoryRewards.*"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeHandbookLastReceivedGrade_changed"
+}
+slot6 = "lastReceivedGrade"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeHandbookLastViewedGrade_changed"
+}
+slot6 = "lastViewedGrade"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
-slot3 = "ClientPlayerHomeCampComponent"
+slot3 = "ClientPlayerHomeHandbookComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerHomeOrderComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"int"
+}
+slot5 = "RPC_SC_NotifyHomeOrderTimedRefresh"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
@@ -21300,7 +25864,7 @@ slot5 = {
 	"number",
 	"onHomeOrderTime_changed"
 }
-slot6 = "nextrefreshTime"
+slot6 = "nextRefreshTime"
 slot4[slot6] = slot5
 slot5 = "changed"
 slot3[slot5] = slot4
@@ -21309,11 +25873,154 @@ slot2[slot4] = slot3
 slot3 = "ClientPlayerHomeOrderComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerHomeSeasonComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"onHomeSeasonId_changed"
+}
+slot6 = "homeSeasonId"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeSeasonUnlockTs_changed"
+}
+slot6 = "homeSeasonUnlockTs"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeSeasonStageId_changed"
+}
+slot6 = "homeSeasonStageId"
+slot4[slot6] = slot5
+slot5 = {
+	"customList",
+	"onHomeSeasonOrderList_changed"
+}
+slot6 = "homeSeasonOrderList"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeSeasonCollectionScore_changed"
+}
+slot6 = "homeSeasonCollectionScore"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonCollectionRewardStateMap_changed"
+}
+slot6 = "homeSeasonCollectionRewardStateMap"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeSeasonCollectionRewardState_changed"
+}
+slot6 = "homeSeasonCollectionRewardStateMap.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonTaskStateMap_changed"
+}
+slot6 = "homeSeasonTaskStateMap"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeSeasonTaskState_changed"
+}
+slot6 = "homeSeasonTaskStateMap.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonTaskPendingRewardMap_changed"
+}
+slot6 = "homeSeasonTaskPendingRewardMap"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
+	"onHomeSeasonTaskPendingReward_changed"
+}
+slot6 = "homeSeasonTaskPendingRewardMap.*"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onHomeSeasonCollectionRewardState_added"
+}
+slot6 = "homeSeasonCollectionRewardStateMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonTaskState_added"
+}
+slot6 = "homeSeasonTaskStateMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonTaskPendingReward_added"
+}
+slot6 = "homeSeasonTaskPendingRewardMap"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onHomeSeasonCollectionRewardState_deleted"
+}
+slot6 = "homeSeasonCollectionRewardStateMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonTaskState_deleted"
+}
+slot6 = "homeSeasonTaskStateMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onHomeSeasonTaskPendingReward_deleted"
+}
+slot6 = "homeSeasonTaskPendingRewardMap"
+slot4[slot6] = slot5
+slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientPlayerHomeSeasonComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerHomeSeasonMutationComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientPlayerHomeSeasonMutationComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerHomelandComponent"
 }
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
+slot4 = {
+	"double",
+	"double",
+	"double",
+	"double",
+	"boolean",
+	"table"
+}
+slot5 = "RPC_SC_HomeVoucherSnapshot"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_NotifyMutationUnlock"
+slot3[slot5] = slot4
 slot4 = {
 	"table"
 }
@@ -21325,25 +26032,72 @@ slot4 = {
 }
 slot5 = "RPC_SC_HomelandFoodOp"
 slot3[slot5] = slot4
+slot4 = {}
+slot5 = "RPC_SC_HomelandDemoReset"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_HomeBlueprintOp"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {
+	onEnterSpace = true
+}
+slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
+slot5 = {
+	"customDict",
+	"on_petPutInHomelandMap_entry_added"
+}
+slot6 = "petPutInHomelandMap"
+slot4[slot6] = slot5
 slot5 = {
 	"customDict",
 	"on_unlockHomelandZone_added"
 }
 slot6 = "statUnlockHomelandZone"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_unlockedHomelandFormulaMap_entry_added"
+}
+slot6 = "unlockedHomelandFormulaMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_unlockedHomelandFurnitureMap_entry_added"
+}
+slot6 = "unlockedHomelandFurnitureMap"
+slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
 slot5 = {
 	"customDict",
-	"on_statHomeCarOrnament_changed"
+	"on_petPutInHomelandMap_entry_deleted"
 }
-slot6 = "statHomeCarOrnament"
+slot6 = "petPutInHomelandMap"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_unlockedHomelandFormulaMap_entry_deleted"
+}
+slot6 = "unlockedHomelandFormulaMap"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_unlockedHomelandFurnitureMap_entry_deleted"
+}
+slot6 = "unlockedHomelandFurnitureMap"
+slot4[slot6] = slot5
+slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = {}
 slot5 = {
 	"customDict",
 	"on_statHomelandOrnament_changed"
@@ -21386,9 +26140,7 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterSpace = true,
-	onTriggerExit = true,
-	onTriggerEnter = true
+	onEnterSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -21400,6 +26152,12 @@ slot5 = {
 }
 slot6 = "interactRecord"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_npcDialogueBubbleId_added"
+}
+slot6 = "npcDialogueBubbleId"
+slot4[slot6] = slot5
 slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
@@ -21409,7 +26167,22 @@ slot5 = {
 }
 slot6 = "interactRecord"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_npcDialogueBubbleId_deleted"
+}
+slot6 = "npcDialogueBubbleId"
+slot4[slot6] = slot5
 slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"number",
+	"on_npcDialogueBubbleId_changed"
+}
+slot6 = "npcDialogueBubbleId.*"
+slot4[slot6] = slot5
+slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -21421,6 +26194,35 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = "ClientPlayerInteractNpcComponent"
+slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerMmoItemComponent"
+}
+slot3 = {}
+slot4 = {
+	"MmoItemCoolDownMap",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "mmoItemCoolDownMap"
+slot3[slot5] = slot4
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_mmoItemCoolDownMap_cdTime_changed"
+}
+slot6 = "mmoItemCoolDownMap.*.*"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientPlayerMmoItemComponent"
 slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerNpcDuelComponent"
@@ -21472,11 +26274,20 @@ slot5 = {}
 slot4[2] = slot5
 slot5 = "npcDuelBotInfo"
 slot3[slot5] = slot4
+slot4 = {
+	"NpcDuelShowedPetList",
+	nil,
+	"OwnClient",
+	"PER"
+}
+slot5 = {}
+slot4[2] = slot5
+slot5 = "npcDuelShowedPetList"
+slot3[slot5] = slot4
 slot2.Properties = slot3
 slot3 = {}
 slot4 = {
-	"int",
-	"string"
+	"table"
 }
 slot5 = "RPC_SC_PrepareForNpcDuel"
 slot3[slot5] = slot4
@@ -21487,6 +26298,16 @@ slot4 = {
 	"table"
 }
 slot5 = "RPC_SC_OnStartNpcDuelDialogue"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_OnStartNpcDuelClearDialogue"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_OnNpcDuelPlayEndStateDialogue"
 slot3[slot5] = slot4
 slot4 = {
 	"string",
@@ -21503,6 +26324,9 @@ slot4 = {
 	"boolean"
 }
 slot5 = "RPC_SC_NpcDuelEnd"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = "RPC_SC_NpcDuelInitFailed"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
@@ -21607,6 +26431,13 @@ slot2[slot4] = slot3
 slot3 = "ClientPlayerQuizComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerRiftComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "ClientPlayerRiftComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerRobEggComponent"
 }
 slot3 = {}
@@ -21618,12 +26449,16 @@ slot4 = {
 }
 slot5 = "RPC_SC_NotifyEntityVisibleChangeInHighGrass"
 slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"table"
+}
+slot5 = "RPC_SC_RobEggLimitTimeEvent"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
-	EVENT_OnMoveInputStateChanged = true,
-	notifyBuffTagChange = true,
-	EVENT_OnInputJump = true
+	notifyBuffTagChange = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -21728,6 +26563,30 @@ slot6 = "rogueWeeklyBossRewardInfo"
 slot4[slot6] = slot5
 slot5 = {
 	"number",
+	"onRogueSeasonIdChanged"
+}
+slot6 = "rogueSeasonId"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRogueSeasonLevelPassInfoChanged"
+}
+slot6 = "rogueSeasonLevelPassInfo"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRogueWeeklyLevelPassInfoChanged"
+}
+slot6 = "rogueWeeklyLevelPassInfo"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onRogueWeeklyLevelRewardInfoChanged"
+}
+slot6 = "rogueWeeklyLevelRewardInfo"
+slot4[slot6] = slot5
+slot5 = {
+	"number",
 	"onCurRogueLayerChanged"
 }
 slot6 = "curRogueLayer"
@@ -21803,6 +26662,14 @@ slot2 = {
 }
 slot3 = {}
 slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_PlayChestRewardAttract"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
 slot5 = {
@@ -21890,6 +26757,100 @@ slot2[slot4] = slot3
 slot3 = "ClientPlayerTargetComponent"
 slot1[slot3] = slot2
 slot2 = {
+	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerTradeComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {}
+slot4 = {
+	"int",
+	"string"
+}
+slot5 = "RPC_SC_TradeListResult"
+slot3[slot5] = slot4
+slot4 = {
+	"table",
+	"string",
+	"int",
+	"int",
+	"table",
+	"int"
+}
+slot5 = "RPC_SC_TradeListingsResult"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"string",
+	"int",
+	"int",
+	"table",
+	"int"
+}
+slot5 = "RPC_SC_TradeListingsByPriceResult"
+slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_TradeMyListingsResult"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"int",
+	"int",
+	"table",
+	"int"
+}
+slot5 = "RPC_SC_TradeRecordsResult"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"int",
+	"table"
+}
+slot5 = "RPC_SC_TradeOverviewResult"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"int",
+	"string",
+	"int"
+}
+slot5 = "RPC_SC_TradeBuyResult"
+slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"int",
+	"int",
+	"int"
+}
+slot5 = "RPC_SC_TradeBuyByPriceResult"
+slot3[slot5] = slot4
+slot4 = "ServerOnlyMsg"
+slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onTradeWatchAdded"
+}
+slot6 = "tradeWatchList"
+slot4[slot6] = slot5
+slot5 = "entryAdded"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"customDict",
+	"onTradeWatchDeleted"
+}
+slot6 = "tradeWatchList"
+slot4[slot6] = slot5
+slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
+slot3 = "ClientPlayerTradeComponent"
+slot1[slot3] = slot2
+slot2 = {
 	NameSpace = "Entities.SpaceEntities.PlayerComponent.ClientPlayerVehicleComponent"
 }
 slot3 = {}
@@ -21947,6 +26908,11 @@ slot4 = {
 }
 slot5 = "RPC_SC_ToFillQuestFirstTrace"
 slot3[slot5] = slot4
+slot4 = {
+	"int"
+}
+slot5 = "RPC_SC_TimeTokenReached"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {}
@@ -22002,13 +26968,13 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterCombat = true,
-	EVENT_OnPetLifeDead = true,
 	EVENT_onControlPetSwitchToPlayer = true,
 	EVENT_onControlPetSwitchToAnotherPet = true,
-	EVENT_onControlPlayerSwitchToPet = true,
+	onLeaveCombat = true,
+	onEnterCombat = true,
 	EVENT_OnPetDestroy = true,
-	onLeaveCombat = true
+	EVENT_OnPetLifeDead = true,
+	EVENT_onControlPlayerSwitchToPet = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -22107,6 +27073,11 @@ slot4 = {
 }
 slot5 = "RPC_SC_OnSocialEnd"
 slot3[slot5] = slot4
+slot4 = {
+	"table"
+}
+slot5 = "RPC_SC_PsnAuthCodeRequired"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
@@ -22138,6 +27109,18 @@ slot3 = {
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
+slot3 = {}
+slot4 = {}
+slot5 = {
+	"number",
+	"on_regionId_changed"
+}
+slot6 = "regionId"
+slot4[slot6] = slot5
+slot5 = "changed"
+slot3[slot5] = slot4
+slot4 = "PropertyCallbacks"
+slot2[slot4] = slot3
 slot3 = "ClientSpaceSeamlessComponent"
 slot1[slot3] = slot2
 slot2 = {
@@ -22146,8 +27129,8 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {
-	onEnterSpace = true,
-	tick = true
+	tick = true,
+	onEnterSpace = true
 }
 slot4 = "ComponentMethod"
 slot2[slot4] = slot3
@@ -22164,6 +27147,12 @@ slot5 = {
 	"on_hideShowEntityInfo_entry_added"
 }
 slot6 = "hideShowEntityInfo"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_specialNpcDict_entry_added"
+}
+slot6 = "specialNpcDict"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
@@ -22191,6 +27180,12 @@ slot5 = {
 	"on_hideShowEntityInfo_entry_deleted"
 }
 slot6 = "hideShowEntityInfo"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_specialNpcDict_entry_deleted"
+}
+slot6 = "specialNpcDict"
 slot4[slot6] = slot5
 slot5 = {
 	"customDict",
@@ -22243,16 +27238,6 @@ slot3[slot5] = slot4
 slot4 = {
 	"int"
 }
-slot5 = "RPC_SC_NotifySpecialTrainPhaseReward"
-slot3[slot5] = slot4
-slot4 = {
-	"int"
-}
-slot5 = "RPC_SC_NotifySpecialTrainBadegeReward"
-slot3[slot5] = slot4
-slot4 = {
-	"int"
-}
 slot5 = "RPC_SC_UnlockSpecialTrainType"
 slot3[slot5] = slot4
 slot4 = {
@@ -22270,6 +27255,12 @@ slot2 = {
 slot3 = {}
 slot2.Properties = slot3
 slot3 = {}
+slot4 = {
+	"string",
+	"int"
+}
+slot5 = "RPC_SC_QueryTeamMemberCount"
+slot3[slot5] = slot4
 slot4 = {
 	"table",
 	"int"
@@ -22415,6 +27406,12 @@ slot4 = {
 }
 slot5 = "RPC_SC_PushTeammateInfo"
 slot3[slot5] = slot4
+slot4 = {
+	"string",
+	"int"
+}
+slot5 = "RPC_SC_SyncGenerateUserSig"
+slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
@@ -22489,6 +27486,36 @@ slot4 = "ComponentMethod"
 slot2[slot4] = slot3
 slot3 = {}
 slot4 = {}
+slot5 = {
+	"customDict",
+	"onPositionQuestObjectivesTriggerAdded"
+}
+slot6 = "triggerMap.questObjectivesTriggers.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPositionQuestClaimTriggerAdded"
+}
+slot6 = "triggerMap.questClaimTriggers.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPositionQuestRunTriggerAdded"
+}
+slot6 = "triggerMap.questRunTriggers.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPositionQuestComActionObjTriggerAdded"
+}
+slot6 = "triggerMap.questComActionObjTriggers.*.*"
+slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"onPositionQuestCloseTriggerAdded"
+}
+slot6 = "triggerMap.questCloseTriggers.*.*"
+slot4[slot6] = slot5
 slot5 = {
 	"customDict",
 	"on_triggerMap_customVariables_entry_added"
@@ -22631,8 +27658,8 @@ slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
 slot3 = {
 	onEnterSpace = true,
-	EVENT_OnAnimatorReady = true,
 	EVENT_AddEComponent = true,
+	EVENT_OnAnimatorReady = true,
 	onTriggerEnter = true
 }
 slot4 = "ComponentMethod"
@@ -22763,16 +27790,13 @@ slot5 = {
 }
 slot6 = "rainbowPetPosFlags"
 slot4[slot6] = slot5
-slot5 = "entryAdded"
-slot3[slot5] = slot4
-slot4 = {}
 slot5 = {
-	"number",
-	"on_rainbowPetPosFlags_changed"
+	"customDict",
+	"on_rainbowPetPosFlags_point_added"
 }
 slot6 = "rainbowPetPosFlags.*"
 slot4[slot6] = slot5
-slot5 = "changed"
+slot5 = "entryAdded"
 slot3[slot5] = slot4
 slot4 = {}
 slot5 = {
@@ -22781,7 +27805,22 @@ slot5 = {
 }
 slot6 = "rainbowPetPosFlags"
 slot4[slot6] = slot5
+slot5 = {
+	"customDict",
+	"on_rainbowPetPosFlags_point_deleted"
+}
+slot6 = "rainbowPetPosFlags.*"
+slot4[slot6] = slot5
 slot5 = "entryDeleted"
+slot3[slot5] = slot4
+slot4 = {}
+slot5 = {
+	"number",
+	"on_rainbowPetPosFlags_point_changed"
+}
+slot6 = "rainbowPetPosFlags.*.*"
+slot4[slot6] = slot5
+slot5 = "changed"
 slot3[slot5] = slot4
 slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
@@ -22804,6 +27843,7 @@ slot4 = {
 	"int",
 	"int",
 	"int",
+	"boolean",
 	"boolean"
 }
 slot5 = "RPC_SC_OnTimePeriodChange"
@@ -22837,6 +27877,8 @@ slot3[slot5] = slot4
 slot4 = {
 	"string",
 	"string",
+	"int",
+	"int",
 	"int",
 	"int"
 }
@@ -22894,6 +27936,12 @@ slot4 = {
 	"table"
 }
 slot5 = "RPC_SC_DebugSandboxInfo"
+slot3[slot5] = slot4
+slot4 = {
+	"int",
+	"int"
+}
+slot5 = "RPC_SC_ShowStage"
 slot3[slot5] = slot4
 slot4 = "ServerOnlyMsg"
 slot2[slot4] = slot3
@@ -22978,9 +28026,30 @@ slot4 = "PropertyCallbacks"
 slot2[slot4] = slot3
 slot3 = "ClientSpaceWeatherComponent"
 slot1[slot3] = slot2
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.VehicleEntities.ClientVehicleBodyAnimationComponent"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = {
+	EVENT_onModelLoaded = true,
+	EVENT_OnVehiclePassengerEnterFinished = true,
+	EVENT_OnVehiclePassengerExitFinished = true
+}
+slot4 = "ComponentMethod"
+slot2[slot4] = slot3
+slot3 = "ClientVehicleBodyAnimationComponent"
+slot1[slot3] = slot2
 slot2 = "Components"
 slot0[slot2] = slot1
 slot1 = {}
+slot2 = {
+	NameSpace = "Entities.SpaceEntities.DynamicFeature.BeePollenFeature"
+}
+slot3 = {}
+slot2.Properties = slot3
+slot3 = "BeePollenFeature"
+slot1[slot3] = slot2
 slot2 = {
 	NameSpace = "Entities.SpaceEntities.DynamicFeature.FlowScriptNpcFeature"
 }

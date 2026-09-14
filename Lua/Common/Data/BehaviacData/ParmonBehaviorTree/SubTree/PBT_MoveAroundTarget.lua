@@ -9,54 +9,54 @@ slot2 = {}
 slot3 = {
 	agenttype = "WxAgent",
 	version = 9,
-	name = "ParmonBehaviorTree/SubTree/PBT_MoveAroundTarget",
-	useForRoute = false
+	useForRoute = false,
+	name = "ParmonBehaviorTree/SubTree/PBT_MoveAroundTarget"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tTargetActorId",
-	type = "int",
 	value = "0",
-	const = 0
+	type = "int",
+	const = 0,
+	name = "tTargetActorId"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tRadius",
-	type = "float",
 	value = "0",
-	const = 0
+	type = "float",
+	const = 0,
+	name = "tRadius"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tSpeed",
-	type = "float",
 	value = "0",
-	const = 0
+	type = "float",
+	const = 0,
+	name = "tSpeed"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tSpeedRateType",
+	value = "Mid",
 	type = "SpeedRateType",
-	value = "Mid"
+	name = "tSpeedRateType"
 }
 slot6 = slot0.SpeedRateType
 slot6 = slot6.Mid
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	name = "tClockwise",
-	type = "bool",
 	value = "false",
-	const = false
+	type = "bool",
+	const = false,
+	name = "tClockwise"
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tTimeout",
-	type = "float",
 	value = "0",
-	const = 0
+	type = "float",
+	const = 0,
+	name = "tTimeout"
 }
 slot4[6] = slot5
 slot3.pars = slot4

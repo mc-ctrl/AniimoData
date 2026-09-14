@@ -351,7 +351,21 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 49-49, warpins: 2 ---
+	--- BLOCK #3 49-61, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.view
+	slot4 = slot4.txtIDUSDFText
+	slot5 = string
+	slot5 = slot5.format
+	slot7 = "%s"
+	slot8 = pg
+	slot8 = slot8.me
+	slot8 = slot8.uid
+	MULTRES = slot5(slot7, slot8)
+
+	slot2(slot4, MULTRES)
+
 	return
 	--- END OF BLOCK #3 ---
 
@@ -728,6 +742,7 @@ slot13.closePanel = slot14
 slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.result
+
 	--- END OF BLOCK #0 ---
 
 	slot2 = if not slot2 then
@@ -738,196 +753,109 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-9, warpins: 1 ---
+	--- BLOCK #2 5-7, warpins: 2 ---
 	slot2 = slot1.markers
-	slot3 = slot0.infoStampId
-	slot3 = slot2[slot3]
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot2 = slot1.markers
+	slot3 = slot0.infoStampId
+	slot2 = slot2[slot3]
+
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-51, warpins: 1 ---
-	slot3 = json
-	slot3 = slot3.decode
-	slot5 = slot0.infoStampId
-	slot5 = slot2[slot5]
-	slot5 = slot5.content
-	slot3 = slot3(slot5)
-	slot0.parsedInfo = slot3
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot0.view
-	slot6 = slot6.concatText
-	slot7 = pg
-	slot7 = slot7.game
-	slot7 = slot7.markShare
-	slot9 = slot7
-	slot7 = slot7.getTemplateTxt
-	slot10 = slot3
-	MULTRES = slot7(slot9, slot10)
-
-	slot4(slot6, MULTRES)
-
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot0.view
-	slot6 = slot6.selfLikeNum
-	slot7 = slot0.infoStampId
-	slot7 = slot2[slot7]
-	slot7 = slot7.likes
-
-	slot4(slot6, slot7)
-
-	slot6 = slot0
-	slot4 = slot0.renderPhotoTemplate
-	slot7 = slot0.parsedInfo
-
-	slot4(slot6, slot7)
-
-	slot4 = slot0.view
-	slot4 = slot4.btnPositionUButton
-
-	slot5 = function()
-		--- BLOCK #0 1-18, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.map
-		slot2 = slot0
-		slot0 = slot0.checkValidScene
-		slot3 = pg
-		slot3 = slot3.game
-		slot3 = slot3.map
-		slot5 = slot3
-		slot3 = slot3.convertSceneId
-		slot6 = pg
-		slot6 = slot6.me
-		slot6 = slot6.space
-		slot6 = slot6.sceneId
-		MULTRES = slot3(slot5, slot6)
-		slot0 = slot0(slot2, MULTRES)
-		--- END OF BLOCK #0 ---
-
-		if slot0 == true then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 19-43, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.map
-		slot2 = slot0
-		slot0 = slot0.openMapAndLocateMark
-		slot3 = pg
-		slot3 = slot3.game
-		slot3 = slot3.markShare
-		slot5 = slot3
-		slot3 = slot3.getSelfMarkSceneId
-		slot6 = self
-		slot6 = slot6.infoStampId
-		slot3 = slot3(slot5, slot6)
-		slot4 = Const
-		slot4 = slot4.MAP_MARK_SHARE
-		slot5 = self
-		slot5 = slot5.infoStampId
-		slot6 = nil
-		slot7 = 1
-
-		slot0(slot2, slot3, slot4, slot5, slot6, slot7)
-
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.closePanel
-
-		slot0(slot2)
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 44-54, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.global
-		slot0 = slot0.showBubbleMessageRaw
-		slot2 = pg
-		slot2 = slot2.getLocalizationText
-		slot4 = SysNoticeData
-		slot5 = 2126
-		slot4 = slot4[slot5]
-		slot4 = slot4.text
-		MULTRES = slot2(slot4)
-
-		slot0(MULTRES)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 55-55, warpins: 2 ---
-		return
-		--- END OF BLOCK #3 ---
-
-
-
-	end
-
-	slot4.luaClick = slot5
-	slot4 = slot0.view
-	slot4 = slot4.btnDeleteUButton
-
-	slot5 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.removeMark
-
-		slot0(slot2)
-
-		return
-		--- END OF BLOCK #0 ---
-
-
-
-	end
-
-	slot4.luaClick = slot5
-
-	return
+	--- BLOCK #4 11-12, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #5 52-52, warpins: 2 ---
+	--- BLOCK #5 13-13, warpins: 1 ---
 	return
+
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 53-53, warpins: 2 ---
-	return
+	--- BLOCK #6 14-19, warpins: 2 ---
+	slot3 = {}
+	slot4 = type
+	slot6 = slot2.content
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #6 ---
+
+	if slot4 == "string" then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 20-25, warpins: 1 ---
+	slot4 = json
+	slot4 = slot4.decode
+	slot6 = slot2.content
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #7 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 26-26, warpins: 2 ---
+	slot4 = slot2.content
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 27-44, warpins: 2 ---
+	slot3.content = slot4
+	slot4 = slot2.likes
+	slot3.likes = slot4
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.markShare
+	slot6 = slot4
+	slot4 = slot4.parseInfoStamp
+	slot7 = false
+	slot8 = slot0.infoStampId
+	slot9 = slot3
+	slot4 = slot4(slot6, slot7, slot8, slot9)
+	slot0.parsedInfo = slot4
+	slot6 = slot0
+	slot4 = slot0.renderMainPlayerPanel
+	slot7 = slot0.parsedInfo
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #9 ---
 
 
 

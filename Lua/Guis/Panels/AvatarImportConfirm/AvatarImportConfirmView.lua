@@ -17,7 +17,7 @@ slot6 = slot2
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-43, warpins: 1 ---
+	--- BLOCK #0 1-49, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -60,6 +60,12 @@ slot4 = function(slot0)
 	slot4 = "maskRayBoxTrans"
 	slot1 = slot1(slot3, slot4)
 	slot0.maskRayBoxTrans = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "titleUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.titleUSDFText = slot1
 
 	return
 	--- END OF BLOCK #0 ---

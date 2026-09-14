@@ -539,8 +539,8 @@ slot9 = function(slot0)
 	--- BLOCK #0 1-28, warpins: 1 ---
 	slot1 = {}
 	slot2 = {
-		isSingle = true,
-		tIndex = 0
+		tIndex = 0,
+		isSingle = true
 	}
 	slot3 = pg
 	slot3 = slot3.getGameString
@@ -549,8 +549,8 @@ slot9 = function(slot0)
 	slot2.label = slot3
 	slot1[1] = slot2
 	slot2 = {
-		isSingle = false,
-		tIndex = 1
+		tIndex = 1,
+		isSingle = false
 	}
 	slot3 = pg
 	slot3 = slot3.getGameString
@@ -680,7 +680,7 @@ slot9 = function(slot0)
 	slot3 = slot1
 	slot1 = slot1.checkUIOpen
 	slot4 = UIConst
-	slot4 = slot4.UI_ID_HUD
+	slot4 = slot4.UI_ID_HUD_V2
 	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
 

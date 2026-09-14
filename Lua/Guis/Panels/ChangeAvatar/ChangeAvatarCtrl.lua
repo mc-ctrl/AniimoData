@@ -825,10 +825,10 @@ slot14 = function(slot0, slot1, slot2)
 
 	--- BLOCK #3 60-76, warpins: 2 ---
 	slot6 = {
-		showAvatarFrame = true,
-		showAvatar = true,
 		isEquip = false,
-		isLock = false
+		isLock = false,
+		showAvatarFrame = true,
+		showAvatar = true
 	}
 	slot6.avatarIcon = slot3
 	slot6.avatarFrameIcon = slot4

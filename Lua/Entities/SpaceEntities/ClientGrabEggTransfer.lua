@@ -1,4 +1,4 @@
---- BLOCK #0 1-63, warpins: 1 ---
+--- BLOCK #0 1-69, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -33,60 +33,66 @@ slot10 = require
 slot12 = "Const.MessageName"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.interact_data"
+slot13 = "Common.NoticeDef"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.EffectConst"
+slot14 = "Data.interact_data"
 slot12 = slot12(slot14)
-slot13 = slot0.Class
-slot15 = "ClientGrabEggTransfer"
-slot16 = slot6
-slot13 = slot13(slot15, slot16)
+slot13 = require
+slot15 = "Data.sys_config_data"
+slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Entities.SpaceEntities.CommonComponent.ClientAuthorityComponent"
+slot16 = "Const.EffectConst"
 slot14 = slot14(slot16)
-slot15 = require
-slot17 = "Entities.SpaceEntities.CommonComponent.ClientTopLogoComponent"
-slot15 = slot15(slot17)
+slot15 = slot0.Class
+slot17 = "ClientGrabEggTransfer"
+slot18 = slot6
+slot15 = slot15(slot17, slot18)
 slot16 = require
-slot18 = "Entities.SpaceEntities.CommonComponent.ClientTrapEventComponent"
+slot18 = "Entities.SpaceEntities.CommonComponent.ClientAuthorityComponent"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Entities.SpaceEntities.CommonComponent.ClientInanimateNpcInteractComponent"
+slot19 = "Entities.SpaceEntities.CommonComponent.ClientTopLogoComponent"
 slot17 = slot17(slot19)
-slot18 = {}
-slot18[1] = slot14
-slot18[2] = slot16
-slot18[3] = slot15
-slot18[4] = slot17
-slot19 = EnableBotTest
+slot18 = require
+slot20 = "Entities.SpaceEntities.CommonComponent.ClientTrapEventComponent"
+slot18 = slot18(slot20)
+slot19 = require
+slot21 = "Entities.SpaceEntities.CommonComponent.ClientInanimateNpcInteractComponent"
+slot19 = slot19(slot21)
+slot20 = {}
+slot20[1] = slot16
+slot20[2] = slot18
+slot20[3] = slot17
+slot20[4] = slot19
+slot21 = EnableBotTest
 --- END OF BLOCK #0 ---
 
-slot19 = if slot19 then
+slot21 = if slot21 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 64-67, warpins: 1 ---
-slot19 = {}
-slot19[1] = slot14
-slot19[2] = slot17
-slot18 = slot19
+--- BLOCK #1 70-73, warpins: 1 ---
+slot21 = {}
+slot21[1] = slot16
+slot21[2] = slot19
+slot20 = slot21
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 68-109, warpins: 2 ---
-slot19 = slot0.AddComponents
-slot21 = slot13
-slot22 = slot18
+--- BLOCK #2 74-115, warpins: 2 ---
+slot21 = slot0.AddComponents
+slot23 = slot15
+slot24 = slot20
 
-slot19(slot21, slot22)
+slot21(slot23, slot24)
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = ClientGrabEggTransfer
 	slot2 = slot2.super
@@ -109,9 +115,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot13.ctor = slot19
+slot15.ctor = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = ClientGrabEggTransfer
 	slot2 = slot2.super
@@ -227,9 +233,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot13.init = slot19
+slot15.init = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = ClientGrabEggTransfer
 	slot1 = slot1.super
@@ -257,11 +263,10 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-16, warpins: 2 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	--- BLOCK #2 10-15, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_INDEX_IK
 
 	slot1(slot3, slot4)
@@ -273,9 +278,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.initializeComponents = slot19
+slot15.initializeComponents = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientGrabEggTransfer
 	slot1 = slot1.super
@@ -291,9 +296,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.postInitializeComponents = slot19
+slot15.postInitializeComponents = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ClientGrabEggTransfer
 	slot1 = slot1.super
@@ -314,9 +319,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.start = slot19
+slot15.start = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientGrabEggTransfer
 	slot1 = slot1.super
@@ -332,9 +337,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.onEnterScene = slot19
+slot15.onEnterScene = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Vector3
 	slot3 = slot0.bornPosition_x
@@ -348,9 +353,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.transferBornPosition = slot19
+slot15.transferBornPosition = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = EnableBotTest
 
@@ -387,10 +392,10 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot13.refreshAppearance = slot19
+slot15.refreshAppearance = slot21
 
-slot19 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot21 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = ClientGrabEggTransfer
 	slot4 = slot4.super
 	slot4 = slot4.onRefreshAppearance
@@ -402,8 +407,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	slot4(slot6, slot7, slot8, slot9)
 
 	slot4 = slot0.eModel
-	slot4 = slot4.modelComponent
-	slot4 = slot4.modelView
+	slot4 = slot4.modelModelView
 	slot5 = slot1.keepPrefabLayer
 	--- END OF BLOCK #0 ---
 
@@ -414,7 +418,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 15-16, warpins: 1 ---
+	--- BLOCK #1 14-15, warpins: 1 ---
 	slot5 = true
 	slot4.keepPrefabLayer = slot5
 	--- END OF BLOCK #1 ---
@@ -422,7 +426,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 17-19, warpins: 2 ---
+	--- BLOCK #2 16-18, warpins: 2 ---
 	slot5 = slot1.needWait
 	--- END OF BLOCK #2 ---
 
@@ -433,7 +437,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 20-24, warpins: 1 ---
+	--- BLOCK #3 19-23, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.modelLoaded
 	slot5 = slot5(slot7)
@@ -446,7 +450,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 25-38, warpins: 1 ---
+	--- BLOCK #4 24-37, warpins: 1 ---
 	slot5 = true
 	slot0.waitModelMark = slot5
 	slot5 = ClientConst
@@ -468,7 +472,7 @@ slot19 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 39-42, warpins: 3 ---
+	--- BLOCK #5 38-41, warpins: 3 ---
 	slot7 = slot0
 	slot5 = slot0.refreshEffect
 
@@ -481,13 +485,12 @@ slot19 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot13.onRefreshAppearance = slot19
+slot15.onRefreshAppearance = slot21
 
-slot19 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
+	slot3 = slot3.modelModelView
 	slot4 = ClientModelUtils
 	slot4 = slot4.applyModelAppearance
 	slot6 = slot3.modelInfo
@@ -508,9 +511,9 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot13.refreshModel = slot19
+slot15.refreshModel = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getLabel
@@ -584,9 +587,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot13.getModelExtraData = slot19
+slot15.getModelExtraData = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = string
 	slot1 = slot1.format
@@ -618,9 +621,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.repr = slot19
+slot15.repr = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PuppetData
 	slot2 = slot0.templateId
@@ -650,9 +653,95 @@ slot19 = function(slot0)
 
 end
 
-slot13.getTemplateData = slot19
+slot15.getTemplateData = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.CARRY_EGG_ST
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 12-15, warpins: 1 ---
+	slot2 = SysConfigData
+	slot2 = slot2.CarryEggModeInteractWhiteList
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 16-23, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.contains
+	slot4 = SysConfigData
+	slot4 = slot4.CarryEggModeInteractWhiteList
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-31, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.showBubbleMessageById
+	slot4 = NoticeDef
+	slot4 = slot4.ROB_EGG_FORBID_CUR_ACTION
+
+	slot2(slot4)
+
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-33, warpins: 5 ---
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot15.checkCanActualInteract = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = Bitset
 	slot1 = slot1.any
@@ -692,9 +781,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.queryModelVisible = slot19
+slot15.queryModelVisible = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -757,9 +846,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.refreshEffect = slot19
+slot15.refreshEffect = slot21
 
-slot19 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._transportEffectState
 	--- END OF BLOCK #0 ---
@@ -993,9 +1082,9 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot13.tryPlayTransportEffect = slot19
+slot15.tryPlayTransportEffect = slot21
 
-slot19 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playDestroyEffect
@@ -1004,7 +1093,7 @@ slot19 = function(slot0)
 
 	slot1 = ClientGrabEggTransfer
 	slot1 = slot1.super
-	slot1 = slot1.destroy
+	slot1 = slot1.preDestroy
 	slot3 = slot0
 
 	slot1(slot3)
@@ -1016,22 +1105,9 @@ slot19 = function(slot0)
 
 end
 
-slot13.destroy = slot19
+slot15.preDestroy = slot21
 
-slot19 = function(slot0)
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot1 = true
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot13.getIsIgnoreTopLogoTypeCfg = slot19
-
-return slot13
+return slot15
 --- END OF BLOCK #2 ---
 
 

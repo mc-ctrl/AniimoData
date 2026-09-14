@@ -7,126 +7,126 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	name = "ParmonBehaviorTree/SubTree/PBT_Com_HintChestBox",
 	version = 5,
 	useForRoute = false,
-	agenttype = "CombatAgent",
-	name = "ParmonBehaviorTree/SubTree/PBT_Com_HintChestBox"
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
-	value = "0",
+	name = "tTargetActorId",
 	const = 0,
-	name = "tTargetActorId"
+	type = "int",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	value = "0.2",
+	name = "tStopDist",
 	const = 0.2,
-	name = "tStopDist"
+	type = "float",
+	value = "0.2"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
-	value = "5",
+	name = "tMaxTimeout",
 	const = 5,
-	name = "tMaxTimeout"
+	type = "float",
+	value = "5"
 }
 slot4[3] = slot5
 slot5 = {
-	type = "bool",
-	value = "true",
+	name = "tFaceTarget",
 	const = true,
-	name = "tFaceTarget"
+	type = "bool",
+	value = "true"
 }
 slot4[4] = slot5
 slot5 = {
-	type = "float",
-	value = "0",
+	name = "tSpeed",
 	const = 0,
-	name = "tSpeed"
+	type = "float",
+	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
+	name = "tMoveUpdateLevel",
 	type = "MoveUpdateLevel",
-	value = "Once",
-	name = "tMoveUpdateLevel"
+	value = "Once"
 }
 slot6 = slot0.MoveUpdateLevel
 slot6 = slot6.Once
 slot5.const = slot6
 slot4[6] = slot5
 slot5 = {
-	type = "int",
-	value = "0",
+	name = "tTgtId",
 	const = 0,
-	name = "tTgtId"
+	type = "int",
+	value = "0"
 }
 slot4[7] = slot5
 slot5 = {
-	type = "float",
-	value = "0",
+	name = "tTargetAtYawDegree",
 	const = 0,
-	name = "tTargetAtYawDegree"
+	type = "float",
+	value = "0"
 }
 slot4[8] = slot5
 slot5 = {
-	type = "float",
-	value = "0",
+	name = "tWaitTime",
 	const = 0,
-	name = "tWaitTime"
+	type = "float",
+	value = "0"
 }
 slot4[9] = slot5
 slot5 = {
-	type = "string",
-	value = "",
+	name = "tAnimationKey",
 	const = "",
-	name = "tAnimationKey"
+	type = "string",
+	value = ""
 }
 slot4[10] = slot5
 slot5 = {
-	type = "float",
-	value = "5",
+	name = "tAnimationTimeout",
 	const = 5,
-	name = "tAnimationTimeout"
+	type = "float",
+	value = "5"
 }
 slot4[11] = slot5
 slot5 = {
-	type = "string",
-	value = "",
+	name = "tEmojiBubbleKey",
 	const = "",
-	name = "tEmojiBubbleKey"
+	type = "string",
+	value = ""
 }
 slot4[12] = slot5
 slot5 = {
-	type = "float",
-	value = "5",
+	name = "tEmojiBubbleTimeout",
 	const = 5,
-	name = "tEmojiBubbleTimeout"
+	type = "float",
+	value = "5"
 }
 slot4[13] = slot5
 slot5 = {
-	type = "string",
-	value = "",
+	name = "tTimelineTag",
 	const = "",
-	name = "tTimelineTag"
+	type = "string",
+	value = ""
 }
 slot4[14] = slot5
 slot5 = {
-	type = "bool",
-	value = "false",
+	name = "tNeedLoop",
 	const = false,
-	name = "tNeedLoop"
+	type = "bool",
+	value = "false"
 }
 slot4[15] = slot5
 slot5 = {
-	type = "bool",
-	value = "false",
+	name = "IsCloseEnough",
 	const = false,
-	name = "IsCloseEnough"
+	type = "bool",
+	value = "false"
 }
 slot4[16] = slot5
 slot3.pars = slot4

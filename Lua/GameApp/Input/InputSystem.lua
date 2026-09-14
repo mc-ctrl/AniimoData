@@ -1,4 +1,4 @@
---- BLOCK #0 1-313, warpins: 1 ---
+--- BLOCK #0 1-428, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -18,34 +18,34 @@ slot5 = require
 slot7 = "Const.ClientConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.HotkeyConst"
+slot8 = "Const.UIConst"
 slot6 = slot6(slot8)
-slot7 = slot0.getLogger
-slot9 = "InputSystem"
+slot7 = require
+slot9 = "Const.HotkeyConst"
 slot7 = slot7(slot9)
-slot8 = CS
-slot8 = slot8.FunPlus
-slot8 = slot8.WorldX
-slot8 = slot8.GameApp
-slot8 = slot8.Input
-slot8 = slot8.HotkeyManager
-slot9 = require
-slot11 = "Common.Utils.Utils"
-slot9 = slot9(slot11)
+slot8 = slot0.getLogger
+slot10 = "InputSystem"
+slot8 = slot8(slot10)
+slot9 = CS
+slot9 = slot9.FunPlus
+slot9 = slot9.WorldX
+slot9 = slot9.GameApp
+slot9 = slot9.Input
+slot9 = slot9.HotkeyManager
 slot10 = require
-slot12 = "Core.Common.Time"
+slot12 = "Common.Utils.Utils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Core.Timer.TimerManager"
+slot13 = "Core.Common.Time"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Utils.ClientUtils"
+slot14 = "Core.Timer.TimerManager"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Core.Client.GlobalData"
+slot15 = "Utils.ClientUtils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Core.Common.lume"
+slot16 = "Core.Client.GlobalData"
 slot14 = slot14(slot16)
 slot15 = require
 slot17 = "Data.sys_config_data"
@@ -59,8 +59,266 @@ slot17 = slot17.FunPlus
 slot17 = slot17.WorldX
 slot17 = slot17.Manager
 slot17 = slot17.InputDeviceType
+slot18 = "InputSystem_GamepadSelectedStateFocusVfx"
+slot19 = 0.5
+slot20 = 30
+slot21 = {
+	UI_Com_SelectedState_Round32 = true,
+	UI_Com_SelectedState_Hexagon_Thin = true,
+	UI_Com_SelectedState_Hexagon = true,
+	UI_Com_SelectedState_Circle = true,
+	UI_Com_SelectedState_Round = true,
+	UI_Com_SelectedState_Round24 = true,
+	UI_Com_SelectedState_Round64 = true,
+	UI_Com_SelectedState_Round48 = true
+}
 
-slot18 = function(slot0)
+slot22 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = "(Clone)"
+	slot2 = string
+	slot2 = slot2.sub
+	slot4 = slot0
+	slot5 = #slot1
+	slot5 = -slot5
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+	if slot2 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 10-18, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.sub
+	slot4 = slot0
+	slot5 = 1
+	slot6 = #slot0
+	slot7 = #slot1
+	slot6 = slot6 - slot7
+	slot2 = slot2(slot4, slot5, slot6)
+	slot0 = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-22, warpins: 2 ---
+	slot2 = GAMEPAD_SELECTED_STATE_EFFECT_NAMES
+	slot2 = slot2[slot0]
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 23-24, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 25-25, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-26, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = type
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= "string" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.match
+	slot3 = slot0
+	slot4 = "([^/\\\\]+)$"
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 15-22, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.sub
+	slot4 = slot1
+	slot5 = 1
+	slot6 = 1
+	slot2 = slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #3 ---
+
+	if slot2 == "$" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-28, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.sub
+	slot4 = slot1
+	slot5 = 2
+	slot2 = slot2(slot4, slot5)
+	slot1 = slot2
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-30, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 31-37, warpins: 1 ---
+	slot2 = string
+	slot2 = slot2.gsub
+	slot4 = slot1
+	slot5 = "%.[Pp][Rr][Ee][Ff][Aa][Bb]$"
+	slot6 = ""
+	slot2 = slot2(slot4, slot5, slot6)
+	slot1 = slot2
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 38-39, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 40-43, warpins: 1 ---
+	slot2 = GAMEPAD_SELECTED_STATE_EFFECT_NAMES
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #8 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 44-45, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 46-46, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 47-47, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot24 = {
+	DynamicSwitch = 0,
+	TouchLayout = 1
+}
+slot16.MobileGamepadLayoutMode = slot24
+slot24 = {}
+slot25 = slot17.XBox
+slot26 = {
+	1,
+	1
+}
+slot24[slot25] = slot26
+slot25 = slot17.PSPad
+slot26 = {
+	1,
+	1
+}
+slot24[slot25] = slot26
+slot25 = slot17.SwitchPad
+slot26 = {
+	1,
+	1
+}
+slot24[slot25] = slot26
+slot16.RUMBLE_DEVICE_RATIO = slot24
+slot24 = {
+	1,
+	1
+}
+slot16.RUMBLE_DEVICE_RATIO_DEFAULT = slot24
+slot24 = {}
+slot25 = slot17.PSPad
+slot26 = 1
+slot24[slot25] = slot26
+slot25 = slot17.XBox
+slot26 = 2
+slot24[slot25] = slot26
+slot25 = slot17.SwitchPad
+slot26 = 3
+slot24[slot25] = slot26
+slot16.RUMBLE_DEVICE_TYPE_ID = slot24
+
+slot24 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -69,10 +327,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.onCtor = slot18
+slot16.onCtor = slot24
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-82, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-94, warpins: 1 ---
 	slot1 = "1"
 	slot0.version = slot1
 	slot1 = false
@@ -134,6 +392,26 @@ slot18 = function(slot0)
 	slot1(slot3)
 
 	slot3 = slot0
+	slot1 = slot0.initVirtualMouseCursorSpeed
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.initMouseLookSettings
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.initGamepadLookSettings
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.applyMobileGamepadLayoutSetting
+
+	slot1(slot3)
+
+	slot3 = slot0
 	slot1 = slot0.setCursorMode
 	slot4 = ClientConst
 	slot4 = slot4.CURSOR_MODE_ACT
@@ -177,7 +455,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #1 83-84, warpins: 1 ---
+	--- BLOCK #1 95-101, warpins: 1 ---
 	slot2 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
@@ -194,13 +472,33 @@ slot18 = function(slot0)
 	end
 
 	slot1.luaOnNavigationRegionChanged = slot2
+	slot4 = slot1
+	slot2 = slot1.AddLuaFocusCursorMovedListener
+	slot5 = GAMEPAD_SELECTED_STATE_FOCUS_LISTENER
+
+	slot6 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.scheduleGamepadSelectedStateFocusEffect
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 85-86, warpins: 2 ---
+	--- BLOCK #2 102-103, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -208,9 +506,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.onInit = slot18
+slot16.onInit = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setInputMapEnabled
@@ -235,9 +533,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.refreshTempInput = slot18
+slot16.refreshTempInput = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -259,13 +557,11 @@ slot18 = function(slot0)
 
 end
 
-slot16.onClear = slot18
+slot16.onClear = slot24
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.navMgr
+slot24 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.gamepadSelectedStateFocusEffectFrameId
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -275,26 +571,799 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-7, warpins: 1 ---
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.delFrameCb
+	slot3 = slot0.gamepadSelectedStateFocusEffectFrameId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.gamepadSelectedStateFocusEffectFrameId = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot1 = slot0.gamepadSelectedStateFocusEffectTimerId
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.gamepadSelectedStateFocusEffectTimerId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.gamepadSelectedStateFocusEffectTimerId = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-23, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-29, warpins: 1 ---
 	slot2 = nil
 	slot1.luaOnNavigationRegionChanged = slot2
+	slot4 = slot1
+	slot2 = slot1.RemoveLuaFocusCursorMovedListener
+	slot5 = GAMEPAD_SELECTED_STATE_FOCUS_LISTENER
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-30, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.onDestroy = slot24
+
+slot24 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.input
+	slot3 = slot1
+	slot1 = slot1.isUsingGamepad
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #2 10-12, warpins: 1 ---
+	slot1 = slot0.gamepadSelectedStateFocusEffectFrameId
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-16, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.delFrameCb
+	slot3 = slot0.gamepadSelectedStateFocusEffectFrameId
+
+	slot1(slot3)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-19, warpins: 2 ---
+	slot1 = slot0.gamepadSelectedStateFocusEffectTimerId
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-25, warpins: 1 ---
+	slot1 = TimerManager
+	slot1 = slot1.removeTimer
+	slot3 = slot0.gamepadSelectedStateFocusEffectTimerId
+
+	slot1(slot3)
+
+	slot1 = nil
+	slot0.gamepadSelectedStateFocusEffectTimerId = slot1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-34, warpins: 2 ---
+	slot1 = 0
+
+	slot2 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = self
+		slot1 = nil
+		slot0.gamepadSelectedStateFocusEffectFrameId = slot1
+		slot0 = pg
+		slot0 = slot0.game
+		slot0 = slot0.input
+		slot2 = slot0
+		slot0 = slot0.isUsingGamepad
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 12-12, warpins: 1 ---
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
+
+
+		--- BLOCK #2 13-17, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.navMgr
+		--- END OF BLOCK #2 ---
+
+		slot1 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 18-18, warpins: 1 ---
+		slot1 = slot0.CurrentFocusedUContent
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 19-20, warpins: 2 ---
+		--- END OF BLOCK #4 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 21-25, warpins: 1 ---
+		slot2 = IsNil
+		slot4 = slot1
+		slot2 = slot2(slot4)
+		--- END OF BLOCK #5 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 26-26, warpins: 2 ---
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+		--- BLOCK #7 27-34, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.playGamepadSelectedStateFocusEffect
+		slot5 = slot1
+		slot6 = false
+		slot2 = slot2(slot4, slot5, slot6)
+		--- END OF BLOCK #7 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #8 35-41, warpins: 1 ---
+		slot3 = retryFrameCount
+		slot3 = slot3 + 1
+		retryFrameCount = slot3
+		slot3 = retryFrameCount
+		slot4 = GAMEPAD_SELECTED_STATE_EFFECT_MAX_RETRY_FRAMES
+		--- END OF BLOCK #8 ---
+
+		if slot3 < slot4 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
+
+
+		--- BLOCK #9 42-47, warpins: 1 ---
+		slot3 = self
+		slot4 = TimerManager
+		slot4 = slot4.addNextFrameCb
+		slot6 = tryPlayFocusEffect
+		slot4 = slot4(slot6)
+		slot3.gamepadSelectedStateFocusEffectFrameId = slot4
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 48-48, warpins: 2 ---
+		--- END OF BLOCK #10 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+		--- BLOCK #11 49-57, warpins: 1 ---
+		slot3 = self
+		slot4 = TimerManager
+		slot4 = slot4.addTimer
+		slot6 = GAMEPAD_SELECTED_STATE_EFFECT_DURATION
+
+		slot7 = function()
+			--- BLOCK #0 1-11, warpins: 1 ---
+			slot0 = self
+			slot1 = nil
+			slot0.gamepadSelectedStateFocusEffectTimerId = slot1
+			slot0 = pg
+			slot0 = slot0.game
+			slot0 = slot0.input
+			slot2 = slot0
+			slot0 = slot0.isUsingGamepad
+			slot0 = slot0(slot2)
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 12-16, warpins: 1 ---
+			slot0 = IsNil
+			slot2 = focused
+			slot0 = slot0(slot2)
+
+			--- END OF BLOCK #1 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #3
+			end
+
+
+			--- BLOCK #2 17-17, warpins: 2 ---
+			return
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 18-22, warpins: 2 ---
+			slot0 = pg
+			slot0 = slot0.global
+			slot0 = slot0.navMgr
+			--- END OF BLOCK #3 ---
+
+			slot1 = if slot0 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 23-23, warpins: 1 ---
+			slot1 = slot0.CurrentFocusedUContent
+			--- END OF BLOCK #4 ---
+
+			FLOW; TARGET BLOCK #5
+
+
+			--- BLOCK #5 24-26, warpins: 2 ---
+			slot2 = focused
+			--- END OF BLOCK #5 ---
+
+			if slot1 == slot2 then
+			JUMP TO BLOCK #6
+			else
+			JUMP TO BLOCK #7
+			end
+
+
+			--- BLOCK #6 27-32, warpins: 1 ---
+			slot2 = self
+			slot4 = slot2
+			slot2 = slot2.playGamepadSelectedStateFocusEffect
+			slot5 = focused
+			slot6 = true
+
+			slot2(slot4, slot5, slot6)
+
+			--- END OF BLOCK #6 ---
+
+			FLOW; TARGET BLOCK #7
+
+
+			--- BLOCK #7 33-33, warpins: 2 ---
+			return
+			--- END OF BLOCK #7 ---
+
+
+
+		end
+
+		slot4 = slot4(slot6, slot7)
+		slot3.gamepadSelectedStateFocusEffectTimerId = slot4
+
+		return
+		--- END OF BLOCK #11 ---
+
+		FLOW; TARGET BLOCK #12
+
+
+		--- BLOCK #12 58-58, warpins: 2 ---
+		return
+		--- END OF BLOCK #12 ---
+
+		FLOW; TARGET BLOCK #13
+
+
+		--- BLOCK #13 59-59, warpins: 2 ---
+		return
+		--- END OF BLOCK #13 ---
+
+		FLOW; TARGET BLOCK #14
+
+
+		--- BLOCK #14 60-60, warpins: 2 ---
+		return
+		--- END OF BLOCK #14 ---
+
+
+
+	end
+
+	slot3 = TimerManager
+	slot3 = slot3.addNextFrameCb
+	slot5 = slot2
+	slot3 = slot3(slot5)
+	slot0.gamepadSelectedStateFocusEffectFrameId = slot3
+
+	return
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 35-35, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot16.scheduleGamepadSelectedStateFocusEffect = slot24
+
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.input
+	slot5 = slot3
+	slot3 = slot3.isUsingGamepad
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-10, warpins: 1 ---
+	slot3 = false
+
+	return slot3
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return
+	--- BLOCK #2 11-12, warpins: 2 ---
 	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 13-17, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.navMgr
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 18-18, warpins: 1 ---
+	slot1 = slot3.CurrentFocusedUContent
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 19-20, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-25, warpins: 1 ---
+	slot3 = IsNil
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-27, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-44, warpins: 2 ---
+	slot3 = false
+	slot4 = {}
+	slot5 = slot1.transform
+	slot7 = slot5
+	slot5 = slot5.GetComponentsInChildren
+	slot8 = typeof
+	slot10 = CS
+	slot10 = slot10.XGUI
+	slot10 = slot10.UContainer
+	slot8 = slot8(slot10)
+	slot9 = true
+	slot5 = slot5(slot7, slot8, slot9)
+	slot6 = 0
+	slot7 = slot5.Length
+	slot7 = slot7 - 1
+	slot8 = 1
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 45-50, warpins: 2 ---
+	slot10 = slot5[slot9]
+	slot11 = IsNil
+	slot13 = slot10
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #9 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #10 51-55, warpins: 1 ---
+	slot11 = isGamepadSelectedStateEffectUrl
+	slot13 = slot10.defaultUrl
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #10 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #11 56-65, warpins: 1 ---
+	slot13 = slot10
+	slot11 = slot10.GetComponentInParent
+	slot14 = typeof
+	slot16 = CS
+	slot16 = slot16.XGUI
+	slot16 = slot16.UContent
+	MULTRES = slot14(slot16)
+	slot11 = slot11(slot13, MULTRES)
+	--- END OF BLOCK #11 ---
+
+	if slot11 == slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 66-74, warpins: 1 ---
+	slot14 = slot10
+	slot12 = slot10.InvokeCallbackWithChildren
+	slot15 = CS
+	slot15 = slot15.XGUI
+	slot15 = slot15.EInvokeTime
+	slot15 = slot15.Custom1
+	slot16 = true
+	--- END OF BLOCK #12 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 75-76, warpins: 1 ---
+	slot17 = false
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #14 77-77, warpins: 1 ---
+	slot17 = true
+
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 78-81, warpins: 2 ---
+	slot12(slot14, slot15, slot16, slot17)
+
+	slot3 = true
+	slot12 = true
+	slot4[slot10] = slot12
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 82-82, warpins: 4 ---
+	--- END OF BLOCK #16 ---
+
+	for slot9=slot6, slot7, slot8
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #17
+
+	--- BLOCK #17 83-97, warpins: 1 ---
+	slot6 = slot1.transform
+	slot8 = slot6
+	slot6 = slot6.GetComponentsInChildren
+	slot9 = typeof
+	slot11 = CS
+	slot11 = slot11.XGUI
+	slot11 = slot11.UWidget
+	slot9 = slot9(slot11)
+	slot10 = true
+	slot6 = slot6(slot8, slot9, slot10)
+	slot7 = 0
+	slot8 = slot6.Length
+	slot8 = slot8 - 1
+	slot9 = 1
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 98-103, warpins: 2 ---
+	slot11 = slot6[slot10]
+	slot12 = IsNil
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #18 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #19 104-109, warpins: 1 ---
+	slot12 = isGamepadSelectedStateEffectName
+	slot14 = slot11.gameObject
+	slot14 = slot14.name
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #19 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #20 110-122, warpins: 1 ---
+	slot14 = slot11
+	slot12 = slot11.GetComponentInParent
+	slot15 = typeof
+	slot17 = CS
+	slot17 = slot17.XGUI
+	slot17 = slot17.UContainer
+	MULTRES = slot15(slot17)
+	slot12 = slot12(slot14, MULTRES)
+	slot13 = IsNil
+	slot15 = slot12
+	slot13 = slot13(slot15)
+	--- END OF BLOCK #20 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 123-125, warpins: 1 ---
+	slot13 = slot4[slot12]
+	--- END OF BLOCK #21 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #22 126-135, warpins: 2 ---
+	slot15 = slot11
+	slot13 = slot11.GetComponentInParent
+	slot16 = typeof
+	slot18 = CS
+	slot18 = slot18.XGUI
+	slot18 = slot18.UContent
+	MULTRES = slot16(slot18)
+	slot13 = slot13(slot15, MULTRES)
+	--- END OF BLOCK #22 ---
+
+	if slot13 == slot1 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #23 136-144, warpins: 1 ---
+	slot16 = slot11
+	slot14 = slot11.InvokeCallbackWithChildren
+	slot17 = CS
+	slot17 = slot17.XGUI
+	slot17 = slot17.EInvokeTime
+	slot17 = slot17.Custom1
+	slot18 = true
+	--- END OF BLOCK #23 ---
+
+	if slot2 ~= true then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 145-146, warpins: 1 ---
+	slot19 = false
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #25 147-147, warpins: 1 ---
+	slot19 = true
+
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 148-149, warpins: 2 ---
+	slot14(slot16, slot17, slot18, slot19)
+
+	slot3 = true
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 150-150, warpins: 5 ---
+	--- END OF BLOCK #27 ---
+
+	for slot10=slot7, slot8, slot9
+	LOOP BLOCK #18
+	GO OUT TO BLOCK #28
+
+	--- BLOCK #28 151-151, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #28 ---
 
 
 
 end
 
-slot16.onDestroy = slot18
+slot16.playGamepadSelectedStateFocusEffect = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -372,7 +1441,7 @@ slot18 = function(slot0)
 
 	--- BLOCK #5 35-39, warpins: 3 ---
 	slot1 = Time
-	slot1 = slot1.secondCache
+	slot1 = slot1.realSecondCache
 	slot2 = slot0.lastTickTime
 	--- END OF BLOCK #5 ---
 
@@ -425,9 +1494,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.onTick = slot18
+slot16.onTick = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = MessageName
@@ -442,9 +1511,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getMessageBindMap = slot18
+slot16.getMessageBindMap = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.cameraProcessor
 	slot5 = slot3
@@ -461,10 +1530,17 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setViewAxis = slot18
+slot16.setViewAxis = slot24
 
-slot18 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.applyLookInversion
+	slot6 = slot1
+	slot7 = slot2
+	slot3, slot4 = slot3(slot5, slot6, slot7)
+	slot2 = slot4
+	slot1 = slot3
 	slot3 = slot0.cameraProcessor
 	slot5 = slot3
 	slot3 = slot3.setViewAxisByDelta
@@ -480,10 +1556,17 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setViewAxisByDelta = slot18
+slot16.setViewAxisByDelta = slot24
 
-slot18 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.applyLookInversion
+	slot6 = slot1
+	slot7 = slot2
+	slot3, slot4 = slot3(slot5, slot6, slot7)
+	slot2 = slot4
+	slot1 = slot3
 	slot3 = SysConfigData
 	slot3 = slot3.MAIN_CAMERA_RATE_MOBILE
 	slot1 = slot1 * slot3
@@ -505,9 +1588,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setViewAxisByDeltaPixel = slot18
+slot16.setViewAxisByDeltaPixel = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.onHandleMove
@@ -524,50 +1607,130 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.handleMoveEvent = slot18
+slot16.handleMoveEvent = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
-	slot4 = slot4.controller
+	slot4 = slot4.camera
 	--- END OF BLOCK #0 ---
 
-	if slot4 ~= nil then
+	slot5 = if slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-14, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.game
-	slot4 = slot4.controller
-	slot6 = slot4
-	slot4 = slot4.onHandleMove
-	slot7 = slot1
-	slot8 = slot2
-	slot9 = slot3
-
-	slot4(slot6, slot7, slot8, slot9)
-
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot5 = slot4.playerCameraMode
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 15-15, warpins: 2 ---
-	return
+	--- BLOCK #2 7-8, warpins: 2 ---
 	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-13, warpins: 1 ---
+	slot8 = slot5
+	slot6 = slot5.onMoveInput
+	slot9 = slot1
+	slot10 = slot2
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-18, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.game
+	slot6 = slot6.controller
+	--- END OF BLOCK #4 ---
+
+	slot7 = if slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot7 = slot6.tryHandleMultiPetFollowInput
+	--- END OF BLOCK #5 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot9 = slot6
+	slot7 = slot6.tryHandleMultiPetFollowInput
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-26, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 27-28, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 29-34, warpins: 1 ---
+	slot10 = slot6
+	slot8 = slot6.onHandleMove
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3
+
+	slot8(slot10, slot11, slot12, slot13)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 35-35, warpins: 3 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot16.onHandleMove = slot18
+slot16.onHandleMove = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -649,9 +1812,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.handleZoom = slot18
+slot16.handleZoom = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.isInputText = slot1
 	--- END OF BLOCK #0 ---
@@ -698,9 +1861,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onInputText = slot18
+slot16.onInputText = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -719,9 +1882,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.initCursorIcon = slot18
+slot16.initCursorIcon = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot0.mapProcessor = slot1
@@ -795,9 +1958,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.registAllProcessor = slot18
+slot16.registAllProcessor = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -846,9 +2009,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.manuallyTriggerAction = slot18
+slot16.manuallyTriggerAction = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -904,9 +2067,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.triggerWaitAction = slot18
+slot16.triggerWaitAction = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -944,9 +2107,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.setInputActionEnabled = slot18
+slot16.setInputActionEnabled = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -983,9 +2146,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableInputAction = slot18
+slot16.enableInputAction = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1022,9 +2185,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.disableInputAction = slot18
+slot16.disableInputAction = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1063,9 +2226,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.setInputMapEnabled = slot18
+slot16.setInputMapEnabled = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1128,9 +2291,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setAllInputMapEnabled = slot18
+slot16.setAllInputMapEnabled = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = true
 	slot5 = slot0
@@ -1166,9 +2329,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.handleActionTriggered = slot18
+slot16.handleActionTriggered = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1225,9 +2388,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.onActionTriggeredFinished = slot18
+slot16.onActionTriggeredFinished = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.mapProcessor
 	slot2 = slot2[slot1]
@@ -1239,9 +2402,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getInputMapProcessor = slot18
+slot16.getInputMapProcessor = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getInputMapProcessor
@@ -1278,9 +2441,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.onEnableInputMap = slot18
+slot16.onEnableInputMap = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = hotkeyConst
 	slot1 = slot1.INPUT_MAP_ACTION_KEY
@@ -1321,9 +2484,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.initInputManagerCompleted = slot18
+slot16.initInputManagerCompleted = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.enablePlayerInput
@@ -1360,9 +2523,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableControlInput = slot18
+slot16.enableControlInput = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.enableBallDriveInput
@@ -1383,9 +2546,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.initMapState = slot18
+slot16.initMapState = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -1411,9 +2574,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.resetAllActions = slot18
+slot16.resetAllActions = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1474,9 +2637,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.enableLevelBlockInput = slot18
+slot16.enableLevelBlockInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1496,9 +2659,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enablePlayerInput = slot18
+slot16.enablePlayerInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1518,9 +2681,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enablePetInput = slot18
+slot16.enablePetInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1540,9 +2703,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableCameraInput = slot18
+slot16.enableCameraInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1562,9 +2725,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableSkillInput = slot18
+slot16.enableSkillInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1584,9 +2747,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableAimInput = slot18
+slot16.enableAimInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1606,9 +2769,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableCatchInput = slot18
+slot16.enableCatchInput = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot2 = hotkeyConst
 	slot2 = slot2.INPUT_BLOCK_FLAG
@@ -1644,9 +2807,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.enableFlyInput = slot18
+slot16.enableFlyInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = hotkeyConst
 	slot3 = slot3.INPUT_MAP_ACTION_KEY
@@ -1666,9 +2829,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enableHudInput = slot18
+slot16.enableHudInput = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = hotkeyConst
 	slot2 = slot2.INPUT_BLOCK_FLAG
@@ -1697,9 +2860,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.enableBallDriveInput = slot18
+slot16.enableBallDriveInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setInputMapEnabled
@@ -1718,9 +2881,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.enablePhotoInput = slot18
+slot16.enablePhotoInput = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot0.cursorMode = slot1
 	slot4 = slot0
@@ -1783,9 +2946,604 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setCursorMode = slot18
+slot16.setCursorMode = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.getGamepadCursorSpeed
+	slot1 = slot1(slot3)
+	slot2 = ClientConst
+	slot2 = slot2.GAMEPAD_CURSOR_SPEED_LEVEL
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 12-16, warpins: 1 ---
+	slot2 = ClientConst
+	slot2 = slot2.GAMEPAD_CURSOR_SPEED_LEVEL
+	slot3 = ClientConst
+	slot3 = slot3.GAMEPAD_CURSOR_DEFAULT_LEVEL
+	slot2 = slot2[slot3]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 17-22, warpins: 2 ---
+	slot0.gamepadCursorSpeed = slot2
+	slot4 = slot0
+	slot2 = slot0.setVirtualMouseCursorSpeed
+	slot5 = slot0.gamepadCursorSpeed
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.initVirtualMouseCursorSpeed = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0.gamepadCursorSpeed = slot1
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.uiMgr
+	slot4 = slot2
+	slot2 = slot2.SetVirtualMouseCursorSpeed
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.setVirtualMouseCursorSpeed = slot24
+
+slot24 = function(slot0)
+	--- BLOCK #0 1-45, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setDefaultDeadzoneMin
+	slot4 = 0.125
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.setDefaultDeadzoneMax
+	slot4 = 1
+
+	slot1(slot3, slot4)
+
+	slot3 = slot0
+	slot1 = slot0.setInvertHorizontalLook
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getInvertHorizontalLook
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot3 = slot0
+	slot1 = slot0.setInvertVerticalLook
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getInvertVerticalLook
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot3 = slot0
+	slot1 = slot0.setGamepadLeftStickDeadzone
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getGamepadLeftStickDeadzone
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot3 = slot0
+	slot1 = slot0.setGamepadRightStickDeadzone
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getGamepadRightStickDeadzone
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.initGamepadLookSettings = slot24
+
+slot24 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setInvertHorizontalLookMouse
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getInvertHorizontalLookMouse
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot3 = slot0
+	slot1 = slot0.setInvertVerticalLookMouse
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.setting
+	slot6 = slot4
+	slot4 = slot4.getInvertVerticalLookMouse
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.initMouseLookSettings = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-9, warpins: 2 ---
+	slot0.invertHorizontalLookMouse = slot2
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16.setInvertHorizontalLookMouse = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-9, warpins: 2 ---
+	slot0.invertVerticalLookMouse = slot2
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16.setInvertVerticalLookMouse = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-9, warpins: 2 ---
+	slot0.invertHorizontalLook = slot2
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16.setInvertHorizontalLook = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 7-7, warpins: 2 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-9, warpins: 2 ---
+	slot0.invertVerticalLook = slot2
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot16.setInvertVerticalLook = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot2 = math
+	slot2 = slot2.clamp
+	slot4 = slot1
+	slot5 = 0
+	slot6 = 100
+	slot2 = slot2(slot4, slot5, slot6)
+	slot1 = slot2
+	slot2 = UIConst
+	slot2 = slot2.GAMEPAD_STICK_DEADZONE_MIN
+	slot3 = UIConst
+	slot3 = slot3.GAMEPAD_STICK_DEADZONE_MAX
+	slot4 = slot3 - slot2
+	slot4 = slot4 * slot1
+	slot4 = slot4 / 100
+	slot4 = slot2 + slot4
+	slot4 = slot4 / 100
+
+	return slot4
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.mapGamepadStickDeadzone = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.inputMgr
+	slot5 = slot0
+	slot3 = slot0.mapGamepadStickDeadzone
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot2.GamepadLeftStickDeadzone = slot3
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.setGamepadLeftStickDeadzone = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.inputMgr
+	slot5 = slot0
+	slot3 = slot0.mapGamepadStickDeadzone
+	slot6 = slot1
+	slot3 = slot3(slot5, slot6)
+	slot2.GamepadRightStickDeadzone = slot3
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.setGamepadRightStickDeadzone = slot24
+
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.invertHorizontalLook
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot3 = -1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot4 = slot0.invertVerticalLook
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-11, warpins: 1 ---
+	slot4 = -1
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 12-12, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 13-15, warpins: 2 ---
+	slot5 = slot1 * slot3
+	slot6 = slot2 * slot4
+
+	return slot5, slot6
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.applyGamepadLookInversion = slot24
+
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.invertHorizontalLookMouse
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot3 = -1
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 6-6, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-9, warpins: 2 ---
+	slot4 = slot0.invertVerticalLookMouse
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-11, warpins: 1 ---
+	slot4 = -1
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 12-12, warpins: 1 ---
+	slot4 = 1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 13-15, warpins: 2 ---
+	slot5 = slot1 * slot3
+	slot6 = slot2 * slot4
+
+	return slot5, slot6
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.applyMouseLookInversion = slot24
+
+slot24 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isUsingGamepad
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.applyGamepadLookInversion
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 11-15, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.applyMouseLookInversion
+	slot6 = slot1
+	slot7 = slot2
+
+	return slot3(slot5, slot6, slot7)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.applyLookInversion = slot24
+
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.cursorMode
 	--- END OF BLOCK #0 ---
@@ -1833,9 +3591,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.isCursorNormalMode = slot18
+slot16.isCursorNormalMode = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.cursorMode
 	--- END OF BLOCK #0 ---
@@ -1883,9 +3641,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.isCursorActMode = slot18
+slot16.isCursorActMode = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1987,9 +3745,26 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.setBlockNoneUIEvent = slot18
+slot16.setBlockNoneUIEvent = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.tableIsEmptyOrNil
+	slot3 = slot0.blockEventData
+	slot1 = slot1(slot3)
+	slot1 = not slot1
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.IsBlockEvent = slot24
+
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2081,9 +3856,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.setBlockEventWithWhiteList = slot18
+slot16.setBlockEventWithWhiteList = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2092,9 +3867,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setDPadNavigationEnabled = slot18
+slot16.setDPadNavigationEnabled = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = false
 
@@ -2105,9 +3880,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.isDPadNavigationEnabled = slot18
+slot16.isDPadNavigationEnabled = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -2123,9 +3898,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onGamepadLeftStickMoveSimulate = slot18
+slot16.onGamepadLeftStickMoveSimulate = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -2140,9 +3915,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.onGamepadConfirmSimulate = slot18
+slot16.onGamepadConfirmSimulate = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0.showCursorData
 	slot4 = not slot2
@@ -2159,9 +3934,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setLockCursor = slot18
+slot16.setLockCursor = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.hudShowVirtualMouseCursor = slot1
 	slot4 = slot0
@@ -2176,9 +3951,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setHudVirtualMouseCursor = slot18
+slot16.setHudVirtualMouseCursor = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2258,9 +4033,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setEnabledViewCtrl = slot18
+slot16.setEnabledViewCtrl = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2316,9 +4091,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.forceEnableViewControl = slot18
+slot16.forceEnableViewControl = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.tableIsEmptyOrNil
@@ -2333,13 +4108,13 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkForceEnableViewControl = slot18
+slot16.checkForceEnableViewControl = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.viewControlDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #0 ---
 
 	if slot2 < slot1 then
@@ -2528,9 +4303,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkEnableViewControl = slot18
+slot16.checkEnableViewControl = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2552,7 +4327,7 @@ slot18 = function(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.max
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot4 = slot4 + slot1
 	slot5 = slot0.viewControlDisableTime
 	slot2 = slot2(slot4, slot5)
@@ -2565,9 +4340,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.temporarilyDisableViewControl = slot18
+slot16.temporarilyDisableViewControl = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = -1
 	slot0.viewControlDisableTime = slot1
@@ -2579,9 +4354,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.cancelTemporarilyDisableViewControl = slot18
+slot16.cancelTemporarilyDisableViewControl = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot0.enableViewControlGyro = slot1
 
@@ -2592,9 +4367,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setEnableViewControlGyro = slot18
+slot16.setEnableViewControlGyro = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.enableViewControlGyro
 
@@ -2605,9 +4380,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkEnableViewControlGyro = slot18
+slot16.checkEnableViewControlGyro = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.cursorMode
 	slot2 = ClientConst
@@ -2678,9 +4453,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getShowCursor = slot18
+slot16.getShowCursor = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -2698,9 +4473,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setInputBlockDownEventState = slot18
+slot16.setInputBlockDownEventState = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -2810,9 +4585,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.computeLockState = slot18
+slot16.computeLockState = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isUsingGamepad
@@ -2824,9 +4599,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.computeVirtualMouseState = slot18
+slot16.computeVirtualMouseState = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2954,10 +4729,10 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.applyCursorState = slot18
+slot16.applyCursorState = slot24
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.computeLockState
 	slot1 = slot1(slot3)
@@ -2972,123 +4747,156 @@ slot18 = function(slot0)
 	slot3(slot5, slot6, slot7)
 
 	slot3 = false
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #1 15-17, warpins: 1 ---
-	slot4 = slot0.hudShowVirtualMouseCursor
-	--- END OF BLOCK #1 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #2 18-28, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.getShowCursor
-	slot4 = slot4(slot6)
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot7 = slot5
-	slot5 = slot5.checkShowCursor
-	slot5, slot6 = slot5(slot7)
-	--- END OF BLOCK #2 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 29-30, warpins: 1 ---
-	--- END OF BLOCK #3 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 31-31, warpins: 2 ---
-	slot3 = true
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 32-33, warpins: 3 ---
-	--- END OF BLOCK #5 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #6 34-38, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.navMgr
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #0 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #7 39-41, warpins: 1 ---
-	slot5 = slot4.HasActiveUnblockedNavigation
-	--- END OF BLOCK #7 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 42-42, warpins: 1 ---
-	slot3 = true
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 43-50, warpins: 5 ---
+	--- BLOCK #1 18-21, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
-	slot4 = slot4.inputMgr
-	slot6 = slot4
-	slot4 = slot4.SetVirtualMouseSuppressed
-	slot7 = slot3
+	slot4 = slot4.navMgr
+	slot4 = slot4.IsVirtualMouseMode
+	--- END OF BLOCK #1 ---
 
-	slot4(slot6, slot7)
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 22-23, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #3 24-25, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #4 26-28, warpins: 1 ---
+	slot5 = slot0.hudShowVirtualMouseCursor
+	--- END OF BLOCK #4 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 29-39, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getShowCursor
+	slot5 = slot5(slot7)
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot8 = slot6
+	slot6 = slot6.checkShowCursor
+	slot6, slot7 = slot6(slot8)
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 40-41, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 42-42, warpins: 2 ---
+	slot3 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 43-44, warpins: 3 ---
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #9 45-49, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.navMgr
+	--- END OF BLOCK #9 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 50-52, warpins: 1 ---
+	slot6 = slot5.HasActiveUnblockedNavigation
+	--- END OF BLOCK #10 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 53-53, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 54-61, warpins: 6 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.inputMgr
+	slot7 = slot5
+	slot5 = slot5.SetVirtualMouseSuppressed
+	slot8 = slot3
+
+	slot5(slot7, slot8)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot16.refreshCursorState = slot18
+slot16.refreshCursorState = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.enableControlInput
@@ -3113,9 +4921,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.onPlayerInit = slot18
+slot16.onPlayerInit = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.enableControlInput
@@ -3130,9 +4938,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.onBackToLogin = slot18
+slot16.onBackToLogin = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3220,9 +5028,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.onAppFocusChanged = slot18
+slot16.onAppFocusChanged = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setBlockInput
@@ -3288,9 +5096,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.tempDisableInput = slot18
+slot16.tempDisableInput = slot24
 
-slot18 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3425,9 +5233,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setBlockInput = slot18
+slot16.setBlockInput = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.deviceType
 	--- END OF BLOCK #0 ---
@@ -3462,9 +5270,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getCurDeviceType = slot18
+slot16.getCurDeviceType = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3479,9 +5287,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getInputSystemDevicesNames = slot18
+slot16.getInputSystemDevicesNames = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3496,9 +5304,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getPlayerInputDevicesNames = slot18
+slot16.getPlayerInputDevicesNames = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCurDeviceType
@@ -3561,11 +5369,168 @@ slot18 = function(slot0)
 
 end
 
-slot16.isUsingGamepad = slot18
+slot16.isUsingGamepad = slot24
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-29, warpins: 1 ---
+slot24 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.setting
+	slot3 = slot1
+	slot1 = slot1.getInt
+	slot4 = ClientConst
+	slot4 = slot4.PrefKey
+	slot4 = slot4.MobileGamepadLayout
+	slot5 = InputSystem
+	slot5 = slot5.MobileGamepadLayoutMode
+	slot5 = slot5.DynamicSwitch
+
+	return slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.getMobileGamepadLayoutMode = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1
+	--- END OF BLOCK #0 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getMobileGamepadLayoutMode
+	slot3 = slot3(slot5)
+	slot2 = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot3 = InputSystem
+	slot3 = slot3.MobileGamepadLayoutMode
+	slot3 = slot3.TouchLayout
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 15-15, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 16-23, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.inputMgr
+	slot6 = slot4
+	slot4 = slot4.SetBlockGamepadByTouchLayout
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot16.applyMobileGamepadLayoutSetting = slot24
+
+slot24 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = facade
+	slot3 = slot1
+	slot1 = slot1.SendMessageCommand
+	slot4 = MessageName
+	slot4 = slot4.INPUT_GAMEPAD_CONNECTION_CHANGED
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.onGamepadConnectionChanged = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.deviceType = slot1
+	slot2 = InputDeviceType
+	slot2 = slot2.PSPad
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot2 = InputDeviceType
+	slot2 = slot2.XBox
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-13, warpins: 1 ---
+	slot2 = InputDeviceType
+	slot2 = slot2.SwitchPad
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-16, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.ensureHotkeysInited
+
+	slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-45, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.refreshCombineKeyWaitKeys
 
@@ -3582,39 +5547,91 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.onInputDeviceChanged
+	slot4 = slot0
+	slot2 = slot0.applyRumbleDeviceRatio
 	slot5 = slot1
 
 	slot2(slot4, slot5)
 
-	slot2 = facade
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
 	slot4 = slot2
-	slot2 = slot2.SendMessageCommand
-	slot5 = MessageName
-	slot5 = slot5.INPUT_DEVICE_CHANGED
-	slot6 = slot1
+	slot2 = slot2.runPlatformByMobile
+	slot2 = slot2(slot4)
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.uiMgr
+	slot5 = slot3
+	slot3 = slot3.CheckIsMobileInteract
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #4 ---
 
-	slot2(slot4, slot5, slot6)
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
-	slot4 = slot0
-	slot2 = slot0.reportGamepadControlCount
 
-	slot2(slot4)
+	--- BLOCK #5 46-58, warpins: 1 ---
+	slot4 = require
+	slot6 = "Utils.PlatformSwitchUtils"
+	slot4 = slot4(slot6)
+	slot5 = ""
+	ClientConfigInputPlatform = slot5
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot7 = slot5
+	slot5 = slot5.onInitAdapterPlatform
+
+	slot5(slot7)
+
+	slot5 = slot4.onPlatformSwitched
+
+	slot5()
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 59-76, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot6 = slot4
+	slot4 = slot4.onInputDeviceChanged
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.SendMessageCommand
+	slot7 = MessageName
+	slot7 = slot7.INPUT_DEVICE_CHANGED
+	slot8 = slot1
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.reportGamepadControlCount
+
+	slot4(slot6)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot16.onInputDeviceChanged = slot18
+slot16.onInputDeviceChanged = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = InputDeviceType
 	slot2 = slot2.PSPad
@@ -3956,93 +5973,37 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.rebindGamepadManualPlaceholders = slot18
+slot16.rebindGamepadManualPlaceholders = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = true
 	slot0.hotKeyInited = slot1
 	slot1 = UNITY_IOS
+
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-57, warpins: 1 ---
-	slot1 = HotkeyManager
-	slot1 = slot1()
-	slot0.keyboardHotkeyManager = slot1
-	slot3 = slot0
-	slot1 = slot0.initHotkeyManager
-	slot4 = slot0.keyboardHotkeyManager
-	slot5 = require
-	slot7 = "Data.Input.keyboard_hotkey_config"
-	MULTRES = slot5(slot7)
-
-	slot1(slot3, slot4, MULTRES)
-
-	slot3 = slot0
-	slot1 = slot0.applyUserSettings
-	slot4 = slot0.keyboardHotkeyManager
-	slot5 = require
-	slot7 = "Data.Input.keyboard_hotkey_config"
-	slot5 = slot5(slot7)
-	slot6 = require
-	slot8 = "Data.keyboard_hotkey_data"
-	MULTRES = slot6(slot8)
-
-	slot1(slot3, slot4, slot5, MULTRES)
-
-	slot1 = HotkeyManager
-	slot1 = slot1()
-	slot0.gamepadHotkeyManager = slot1
-	slot3 = slot0
-	slot1 = slot0.initHotkeyManager
-	slot4 = slot0.gamepadHotkeyManager
-	slot5 = require
-	slot7 = "Data.Input.gamepad_hotkey_config"
-	MULTRES = slot5(slot7)
-
-	slot1(slot3, slot4, MULTRES)
-
-	slot3 = slot0
-	slot1 = slot0.applyUserSettings
-	slot4 = slot0.gamepadHotkeyManager
-	slot5 = require
-	slot7 = "Data.Input.gamepad_hotkey_config"
-	slot5 = slot5(slot7)
-	slot6 = require
-	slot8 = "Data.gamepad_hotkey_data"
-	MULTRES = slot6(slot8)
-
-	slot1(slot3, slot4, slot5, MULTRES)
-
-	slot3 = slot0
-	slot1 = slot0.setGamepadInputMode
-	slot4 = hotkeyConst
-	slot4 = slot4.GAMEPAD_INPUT_CONTROL_MODE
-	slot4 = slot4.CombineMode
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.inputMgr
-	slot3 = slot1
-	slot1 = slot1.RebindXInputSelectForGXDK
-
-	slot1(slot3)
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 58-58, warpins: 2 ---
+	--- BLOCK #2 7-10, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.ensureHotkeysInited
+
+	slot1(slot3)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -4050,9 +6011,122 @@ slot18 = function(slot0)
 
 end
 
-slot16.initHotkeys = slot18
+slot16.initHotkeys = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.gamepadHotkeyInited
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-71, warpins: 2 ---
+	slot1 = true
+	slot0.gamepadHotkeyInited = slot1
+	slot1 = hotkeyConst
+	slot1 = slot1.GAMEPAD_INPUT_CONTROL_MODE
+	slot1 = slot1.CombineMode
+	slot0.gamepadInputMode = slot1
+	slot3 = slot0
+	slot1 = slot0._applyGamepadInputAsset
+	slot4 = slot0.gamepadInputMode
+
+	slot1(slot3, slot4)
+
+	slot1 = require
+	slot3 = "Data.Input.keyboard_hotkey_config"
+	slot1 = slot1(slot3)
+	slot2 = require
+	slot4 = "Data.keyboard_hotkey_data"
+	slot2 = slot2(slot4)
+	slot3 = HotkeyManager
+	slot3 = slot3()
+	slot0.keyboardHotkeyManager = slot3
+	slot5 = slot0
+	slot3 = slot0.initHotkeyManager
+	slot6 = slot0.keyboardHotkeyManager
+	slot7 = slot1
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot5 = slot0
+	slot3 = slot0.applyUserSettings
+	slot6 = slot0.keyboardHotkeyManager
+	slot7 = slot1
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = HotkeyManager
+	slot3 = slot3()
+	slot0.gamepadHotkeyManager = slot3
+	slot5 = slot0
+	slot3 = slot0.initHotkeyManager
+	slot6 = slot0.gamepadHotkeyManager
+	slot7 = require
+	slot9 = "Data.Input.gamepad_hotkey_config"
+	MULTRES = slot7(slot9)
+
+	slot3(slot5, slot6, MULTRES)
+
+	slot5 = slot0
+	slot3 = slot0.applyUserSettings
+	slot6 = slot0.gamepadHotkeyManager
+	slot7 = require
+	slot9 = "Data.Input.gamepad_hotkey_config"
+	slot7 = slot7(slot9)
+	slot8 = require
+	slot10 = "Data.gamepad_hotkey_data"
+	MULTRES = slot8(slot10)
+
+	slot3(slot5, slot6, slot7, MULTRES)
+
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.inputMgr
+	slot5 = slot3
+	slot3 = slot3.RebindXInputSelectForGXDK
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.refreshCombineKeyWaitKeys
+
+	slot3(slot5)
+
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.SendMessageCommand
+	slot6 = MessageName
+	slot6 = slot6.INPUT_GAMEPAD_CONTROL_MODE_CHANGE
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.ensureHotkeysInited = slot24
+
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isUsingGamepad
@@ -4086,25 +6160,23 @@ slot18 = function(slot0)
 
 end
 
-slot16.getCurHotkeyManager = slot18
+slot16.getCurHotkeyManager = slot24
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot0.gamepadInputMode = slot1
-	slot2 = slot0.gamepadInputMode
-	slot3 = hotkeyConst
-	slot3 = slot3.GAMEPAD_INPUT_CONTROL_MODE
-	slot3 = slot3.CombineMode
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = hotkeyConst
+	slot2 = slot2.GAMEPAD_INPUT_CONTROL_MODE
+	slot2 = slot2.CombineMode
 	--- END OF BLOCK #0 ---
 
-	if slot2 == slot3 then
+	if slot1 == slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-15, warpins: 1 ---
+	--- BLOCK #1 6-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.inputMgr
@@ -4119,7 +6191,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 16-22, warpins: 1 ---
+	--- BLOCK #2 14-20, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.inputMgr
@@ -4134,7 +6206,25 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 23-32, warpins: 2 ---
+	--- BLOCK #3 21-21, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot16._applyGamepadInputAsset = slot24
+
+slot24 = function(slot0, slot1)
+	--- BLOCK #0 1-15, warpins: 1 ---
+	slot0.gamepadInputMode = slot1
+	slot4 = slot0
+	slot2 = slot0._applyGamepadInputAsset
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
 	slot4 = slot0
 	slot2 = slot0.refreshCombineKeyWaitKeys
 
@@ -4149,15 +6239,15 @@ slot18 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot16.setGamepadInputMode = slot18
+slot16.setGamepadInputMode = slot24
 
-slot18 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = require
 	slot3 = "Data.Input.gamepad_hotkey_config"
@@ -4247,100 +6337,243 @@ slot18 = function(slot0)
 
 end
 
-slot16.refreshCombineKeyWaitKeys = slot18
+slot16.refreshCombineKeyWaitKeys = slot24
 
-slot18 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-14, warpins: 1 ---
-	slot3 = slot2.groupName
-	slot1.groupName = slot3
-	slot5 = slot1
-	slot3 = slot1.SetRebindInputActions
-	slot6 = lume
-	slot6 = slot6.clone
-	slot8 = slot2.hotkeyActions
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	slot5 = slot1
-	slot3 = slot1.SetMatchPaths
-	slot6 = slot2.matchPaths
+slot24 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.deepCopyTable
+	slot6 = slot2.hotkeyActions
+	slot4 = slot4(slot6)
+	slot5 = slot2.groupName
 	--- END OF BLOCK #0 ---
 
-	slot6 = if not slot6 then
+	if slot5 == "Keyboard&Mouse" then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #1 15-15, warpins: 1 ---
-	slot6 = {}
-
+	--- BLOCK #1 8-9, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #15
+	end
 
 
-	--- BLOCK #2 16-21, warpins: 2 ---
-	slot3(slot5, slot6)
-
-	slot5 = slot1
-	slot3 = slot1.SetRelativeInputActions
-	slot6 = slot2.relativeActions
+	--- BLOCK #2 10-18, warpins: 1 ---
+	slot5 = {}
+	slot6 = Utils
+	slot6 = slot6.deepCopyTable
+	slot8 = slot3
+	slot6 = slot6(slot8)
+	slot7 = pairs
+	slot9 = slot6
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #2 ---
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #3 22-22, warpins: 1 ---
-	slot6 = {}
-
+	--- BLOCK #3 19-24, warpins: 1 ---
+	slot12 = slot11.actionName
+	slot13 = type
+	slot15 = slot12
+	slot13 = slot13(slot15)
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 23-28, warpins: 2 ---
-	slot3(slot5, slot6)
-
-	slot5 = slot1
-	slot3 = slot1.SetHotkeyExcludes
-	slot6 = slot2.hotkeyExcludes
-	--- END OF BLOCK #4 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #5
+	if slot13 == "table" then
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 29-29, warpins: 1 ---
-	slot6 = {}
+	--- BLOCK #4 25-28, warpins: 1 ---
+	slot13 = ipairs
+	slot15 = slot12
+	slot13, slot14, slot15 = slot13(slot15)
+	--- END OF BLOCK #4 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 29-30, warpins: 1 ---
+	slot18 = true
+	slot5[slot17] = slot18
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 30-31, warpins: 2 ---
-	slot3(slot5, slot6)
+	--- BLOCK #6 31-32, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot16, slot17 in slot13, slot14, slot15
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 33-33, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #8 34-35, warpins: 1 ---
+	--- END OF BLOCK #8 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 36-37, warpins: 1 ---
+	slot13 = true
+	slot5[slot12] = slot13
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 38-39, warpins: 4 ---
+	--- END OF BLOCK #10 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #11
+
+
+	--- BLOCK #11 40-43, warpins: 1 ---
+	slot7 = pairs
+	slot9 = slot4
+	slot7, slot8, slot9 = slot7(slot9)
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #12 44-46, warpins: 1 ---
+	slot12 = slot5[slot10]
+	--- END OF BLOCK #12 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 47-48, warpins: 1 ---
+	slot12 = "internal"
+	slot11.group = slot12
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 49-50, warpins: 3 ---
+	--- END OF BLOCK #14 ---
+
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #15
+
+
+	--- BLOCK #15 51-61, warpins: 3 ---
+	slot5 = slot2.groupName
+	slot1.groupName = slot5
+	slot7 = slot1
+	slot5 = slot1.SetRebindInputActions
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot7 = slot1
+	slot5 = slot1.SetMatchPaths
+	slot8 = slot2.matchPaths
+	--- END OF BLOCK #15 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 62-62, warpins: 1 ---
+	slot8 = {}
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 63-68, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	slot7 = slot1
+	slot5 = slot1.SetRelativeInputActions
+	slot8 = slot2.relativeActions
+	--- END OF BLOCK #17 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 69-69, warpins: 1 ---
+	slot8 = {}
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 70-75, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	slot7 = slot1
+	slot5 = slot1.SetHotkeyExcludes
+	slot8 = slot2.hotkeyExcludes
+	--- END OF BLOCK #19 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 76-76, warpins: 1 ---
+	slot8 = {}
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 77-78, warpins: 2 ---
+	slot5(slot7, slot8)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot16.initHotkeyManager = slot18
+slot16.initHotkeyManager = slot24
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot24 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = Utils
 	slot4 = slot4.deepCopyTable
@@ -4417,9 +6650,9 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.applyUserSettings = slot18
+slot16.applyUserSettings = slot24
 
-slot18 = function(slot0, slot1)
+slot24 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4553,15 +6786,16 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.cleanupGamepadManualOverrides = slot18
+slot16.cleanupGamepadManualOverrides = slot24
+slot24 = "performHotkeyRebind"
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot8 = slot1
-	slot6 = slot1.PerformRebindInputAction
-	slot9 = slot2
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot9 = slot1
+	slot7 = slot1.PerformRebindInputAction
+	slot10 = slot2
 
-	slot10 = function(slot0)
+	slot11 = function(slot0)
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot1 = hotkeyManager
 		slot3 = slot1
@@ -4578,21 +6812,23 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 	end
 
-	slot11 = slot3
-	slot12 = slot4
-	slot13 = slot5
-	slot6 = slot6(slot8, slot9, slot10, slot11, slot12, slot13)
+	slot12 = slot3
+	slot13 = slot4
+	slot14 = slot5
+	slot15 = slot6
+	slot7 = slot7(slot9, slot10, slot11, slot12, slot13, slot14, slot15)
 
-	return slot6
+	return slot7
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot16.performHotkeyRebind = slot18
+slot16[slot24] = slot25
+slot24 = "setHotkeyRebind"
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.ApplyHotkeyBindItem
@@ -4607,9 +6843,10 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.setHotkeyRebind = slot18
+slot16[slot24] = slot25
+slot24 = "getHotkeyInfo"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetHotkeyBaseDataLua
@@ -4622,9 +6859,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getHotkeyInfo = slot18
+slot16[slot24] = slot25
+slot24 = "getHotkeyDefaultInfo"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetHotkeyDefaultDataLua
@@ -4637,9 +6875,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getHotkeyDefaultInfo = slot18
+slot16[slot24] = slot25
+slot24 = "getHotkeyBindInfo"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetHotkeyBindDataLua
@@ -4652,9 +6891,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getHotkeyBindInfo = slot18
+slot16[slot24] = slot25
+slot24 = "getActionKeyBind"
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4685,9 +6925,10 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.getActionKeyBind = slot18
+slot16[slot24] = slot25
+slot24 = "getActionDefaultKeyBind"
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4718,9 +6959,10 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.getActionDefaultKeyBind = slot18
+slot16[slot24] = slot25
+slot24 = "setHotkeyBindInfo"
 
-slot18 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot1
 	slot3 = slot1.ApplyHotkeyBindDataLua
@@ -4735,9 +6977,10 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setHotkeyBindInfo = slot18
+slot16[slot24] = slot25
+slot24 = "resetAllHotkeys"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.ResetAllHotKeys
@@ -4776,9 +7019,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.resetAllHotkeys = slot18
+slot16[slot24] = slot25
+slot24 = "cancelHotkeyRebind"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.CancelRebindInputAction
@@ -4792,9 +7036,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.cancelHotkeyRebind = slot18
+slot16[slot24] = slot25
+slot24 = "printHotkeyInfo"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4875,9 +7120,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.printHotkeyInfo = slot18
+slot16[slot24] = slot25
+slot24 = "onUIDepthChange"
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -4894,9 +7140,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.onUIDepthChange = slot18
+slot16[slot24] = slot25
+slot24 = "playRumble"
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4935,9 +7182,10 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot16.playRumble = slot18
+slot16[slot24] = slot25
+slot24 = "playRumbleByName"
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.isNilOrEmpty
@@ -4997,9 +7245,10 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.playRumbleByName = slot18
+slot16[slot24] = slot25
+slot24 = "stopRumble"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -5017,9 +7266,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.stopRumble = slot18
+slot16[slot24] = slot25
+slot24 = "updateLockBreakRumble"
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = false
 	slot2 = pg
@@ -5163,9 +7413,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.updateLockBreakRumble = slot18
+slot16[slot24] = slot25
+slot24 = "setAdaptiveTrigger"
 
-slot18 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -5184,9 +7435,10 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setAdaptiveTrigger = slot18
+slot16[slot24] = slot25
+slot24 = "cancelAdaptiveTrigger"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setAdaptiveTrigger
@@ -5202,9 +7454,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.cancelAdaptiveTrigger = slot18
+slot16[slot24] = slot25
+slot24 = "setContinuousResistanceTrigger"
 
-slot18 = function(slot0, slot1, slot2, slot3)
+slot25 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = {
 		triggerType = 1
@@ -5227,9 +7480,10 @@ slot18 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot16.setContinuousResistanceTrigger = slot18
+slot16[slot24] = slot25
+slot24 = "setSectionResistanceTrigger"
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4)
+slot25 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot5 = {
 		triggerType = 2
@@ -5254,9 +7508,10 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot16.setSectionResistanceTrigger = slot18
+slot16[slot24] = slot25
+slot24 = "setEffectExTrigger"
 
-slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
+slot25 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot8 = {
 		triggerType = 3
@@ -5303,9 +7558,10 @@ slot18 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7)
 
 end
 
-slot16.setEffectExTrigger = slot18
+slot16[slot24] = slot25
+slot24 = "getAccelerator"
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -5320,71 +7576,61 @@ slot18 = function(slot0)
 
 end
 
-slot16.getAccelerator = slot18
+slot16[slot24] = slot25
+slot24 = "updateGyroscopeCache"
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = UnityTime
+slot25 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = Time
+	slot1 = slot1.frameCount
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = UnityTime
-	slot1 = slot1.frameCount
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot1 = -1
 	--- END OF BLOCK #1 ---
 
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
-	slot1 = -1
+	--- BLOCK #2 6-8, warpins: 2 ---
+	slot2 = 0
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 9-11, warpins: 2 ---
-	slot2 = 0
-	--- END OF BLOCK #3 ---
-
 	if slot1 >= slot2 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 12-14, warpins: 1 ---
+	--- BLOCK #3 9-11, warpins: 1 ---
 	slot2 = slot0.gyroscopeFrameCount
+
+	--- END OF BLOCK #3 ---
+
+	if slot2 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-12, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #4 ---
 
-	if slot2 == slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-15, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 16-24, warpins: 3 ---
+	--- BLOCK #5 13-21, warpins: 3 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.inputMgr
@@ -5392,58 +7638,59 @@ slot18 = function(slot0)
 	slot2 = slot2.GetGyroscope
 	slot2, slot3, slot4 = slot2(slot4)
 	slot5 = slot0.gyroscopeRatio
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #5 ---
 
 	slot5 = if not slot5 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 25-27, warpins: 1 ---
+	--- BLOCK #6 22-24, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.getGyroscopeRatio
 	slot5 = slot5(slot7)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #8 28-34, warpins: 2 ---
+	--- BLOCK #7 25-31, warpins: 2 ---
 	slot6 = slot2 * slot5
 	slot0.gyroscopeScaledX = slot6
 	slot6 = slot3 * slot5
 	slot0.gyroscopeScaledY = slot6
 	slot6 = 0
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
 	if slot1 >= slot6 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #9 35-35, warpins: 1 ---
+	--- BLOCK #8 32-32, warpins: 1 ---
 	slot0.gyroscopeFrameCount = slot1
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #10 36-36, warpins: 2 ---
+	--- BLOCK #9 33-33, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot16.updateGyroscopeCache = slot18
+slot16[slot24] = slot25
+slot24 = "getGyroscopeXY"
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.updateGyroscopeCache
@@ -5460,9 +7707,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.getGyroscopeXY = slot18
+slot16[slot24] = slot25
+slot24 = "getGyroscopeRatio"
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.gyroscopeRatio
 	--- END OF BLOCK #0 ---
@@ -5499,9 +7747,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.getGyroscopeRatio = slot18
+slot16[slot24] = slot25
+slot24 = "setGyroscopeRatio"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.gyroscopeRatio
 
@@ -5543,10 +7792,11 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setGyroscopeRatio = slot18
+slot16[slot24] = slot25
+slot24 = "initRumbleRatio"
 
-slot18 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot25 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.inputMgr
@@ -5558,6 +7808,11 @@ slot18 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
+	slot3 = slot0
+	slot1 = slot0.applyRumbleDeviceRatio
+
+	slot1(slot3)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -5565,9 +7820,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.initRumbleRatio = slot18
+slot16[slot24] = slot25
+slot24 = "getRumbleRatio"
 
-slot18 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -5584,9 +7840,10 @@ slot18 = function(slot0)
 
 end
 
-slot16.getRumbleRatio = slot18
+slot16[slot24] = slot25
+slot24 = "setRumbleRatio"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -5614,9 +7871,316 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setRumbleRatio = slot18
+slot16[slot24] = slot25
+slot24 = "getRumbleDeviceRatio"
 
-slot18 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-6, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getCurDeviceType
+	slot2 = slot2(slot4)
+	slot1 = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-9, warpins: 2 ---
+	slot2 = slot0.rumbleDeviceRatioOverride
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot2 = slot0.rumbleDeviceRatioOverride
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-13, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #5 14-18, warpins: 1 ---
+	slot3 = InputSystem
+	slot3 = slot3.RUMBLE_DEVICE_TYPE_ID
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #5 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 19-20, warpins: 1 ---
+	slot4 = SysConfigData
+	slot4 = slot4.deviceRumbleRatio
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-22, warpins: 2 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 23-23, warpins: 1 ---
+	slot2 = slot4[slot3]
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 24-25, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #10 26-30, warpins: 1 ---
+	slot3 = InputSystem
+	slot3 = slot3.RUMBLE_DEVICE_RATIO
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #10 ---
+
+	slot2 = if not slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 31-32, warpins: 1 ---
+	slot3 = InputSystem
+	slot2 = slot3.RUMBLE_DEVICE_RATIO_DEFAULT
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 33-35, warpins: 3 ---
+	slot3 = slot2[1]
+	--- END OF BLOCK #12 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 36-36, warpins: 1 ---
+	slot3 = 1
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 37-39, warpins: 2 ---
+	slot4 = slot2[2]
+	--- END OF BLOCK #14 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 40-40, warpins: 1 ---
+	slot4 = 1
+
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 41-41, warpins: 2 ---
+	return slot3, slot4
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot16[slot24] = slot25
+slot24 = "applyRumbleDeviceRatio"
+
+slot25 = function(slot0, slot1)
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.getRumbleDeviceRatio
+	slot5 = slot1
+	slot2, slot3 = slot2(slot4, slot5)
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.inputMgr
+	slot6 = slot4
+	slot4 = slot4.SetRumbleDeviceRatio
+	slot7 = slot2
+	slot8 = slot3
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16[slot24] = slot25
+slot24 = "setRumbleDeviceRatio"
+
+slot25 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-3, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 4-6, warpins: 2 ---
+	slot4 = slot0.rumbleDeviceRatioOverride
+	--- END OF BLOCK #2 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 7-7, warpins: 1 ---
+	slot4 = {}
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-12, warpins: 2 ---
+	slot0.rumbleDeviceRatioOverride = slot4
+	slot4 = slot0.rumbleDeviceRatioOverride
+	slot5 = {}
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 13-13, warpins: 1 ---
+	slot6 = 1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 14-16, warpins: 2 ---
+	slot5[1] = slot6
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 17-17, warpins: 1 ---
+	slot6 = 1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 18-24, warpins: 2 ---
+	slot5[2] = slot6
+	slot4[slot1] = slot5
+	slot6 = slot0
+	slot4 = slot0.getCurDeviceType
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #8 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 25-28, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.applyRumbleDeviceRatio
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot16[slot24] = slot25
+slot24 = "setDefaultDeadzoneMin"
+
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = math
 	slot2 = slot2.clamp
@@ -5637,10 +8201,10 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setDefaultDeadzoneMin = slot18
-slot18 = "getDefaultDeadzoneMin"
+slot16[slot24] = slot25
+slot24 = "getDefaultDeadzoneMin"
 
-slot19 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -5654,10 +8218,10 @@ slot19 = function(slot0)
 
 end
 
-slot16[slot18] = slot19
-slot18 = "setDefaultDeadzoneMax"
+slot16[slot24] = slot25
+slot24 = "setDefaultDeadzoneMax"
 
-slot19 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = math
 	slot2 = slot2.clamp
@@ -5678,10 +8242,10 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot16[slot18] = slot19
-slot18 = "getDefaultDeadzoneMax"
+slot16[slot24] = slot25
+slot24 = "getDefaultDeadzoneMax"
 
-slot19 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -5695,10 +8259,10 @@ slot19 = function(slot0)
 
 end
 
-slot16[slot18] = slot19
-slot18 = "cameraZoomValidCondition"
+slot16[slot24] = slot25
+slot24 = "cameraZoomValidCondition"
 
-slot19 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.lockCameraZoom
 	--- END OF BLOCK #0 ---
@@ -5720,59 +8284,9 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-11, warpins: 2 ---
+	--- BLOCK #2 6-17, warpins: 2 ---
 	slot2 = slot1.valueVec2
 	slot2 = slot2.y
-	slot3 = pg
-	slot3 = slot3.pawn
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 12-16, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.pawn
-	slot3 = slot3.isPsychicControllHost
-	--- END OF BLOCK #3 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 17-23, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.pawn
-	slot5 = slot3
-	slot3 = slot3.isPsychicControllHost
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #4 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 24-25, warpins: 1 ---
-	slot3 = false
-
-	return slot3
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-35, warpins: 4 ---
 	slot3 = pg
 	slot3 = slot3.game
 	slot3 = slot3.controller
@@ -5781,6 +8295,56 @@ slot19 = function(slot0, slot1)
 	slot3 = slot3.onMouseScroll
 	slot6 = slot2
 	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-19, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-23, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 24-28, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.isInMagnesisMode
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 29-35, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInMagnesisMode
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #6 ---
 
 	slot3 = if slot3 then
@@ -5800,7 +8364,7 @@ slot19 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 38-41, warpins: 2 ---
+	--- BLOCK #8 38-41, warpins: 4 ---
 	slot3 = pg
 	slot3 = slot3.me
 	--- END OF BLOCK #8 ---
@@ -5808,97 +8372,47 @@ slot19 = function(slot0, slot1)
 	slot3 = if slot3 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
 	--- BLOCK #9 42-46, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
-	slot3 = slot3.isInMagnesisMode
+	slot3 = slot3.forbidCameraZoom
 	--- END OF BLOCK #9 ---
 
 	slot3 = if slot3 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 47-53, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isInMagnesisMode
-	slot3 = slot3(slot5)
+	--- BLOCK #10 47-48, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
 	--- END OF BLOCK #10 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 54-55, warpins: 1 ---
-	slot3 = false
-
-	return slot3
-
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 56-59, warpins: 4 ---
-	slot3 = pg
-	slot3 = slot3.me
-	--- END OF BLOCK #12 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #13 60-64, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.forbidCameraZoom
-	--- END OF BLOCK #13 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 65-66, warpins: 1 ---
-	slot3 = false
-
-	return slot3
-
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 67-68, warpins: 3 ---
+	--- BLOCK #11 49-50, warpins: 3 ---
 	slot3 = true
 
 	return slot3
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot16[slot18] = slot19
-slot18 = "debugInputResponse"
+slot16[slot24] = slot25
+slot24 = "debugInputResponse"
 
-slot19 = function(slot0, slot1, slot2)
+slot25 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
@@ -5915,10 +8429,10 @@ slot19 = function(slot0, slot1, slot2)
 
 end
 
-slot16[slot18] = slot19
-slot18 = "test"
+slot16[slot24] = slot25
+slot24 = "test"
 
-slot19 = function(slot0, slot1)
+slot25 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.performHotkeyRebind
@@ -6036,10 +8550,10 @@ slot19 = function(slot0, slot1)
 
 end
 
-slot16[slot18] = slot19
-slot18 = "reportGamepadControlCount"
+slot16[slot24] = slot25
+slot24 = "reportGamepadControlCount"
 
-slot19 = function(slot0)
+slot25 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isGamepadCountReported
 	--- END OF BLOCK #0 ---
@@ -6106,7 +8620,7 @@ slot19 = function(slot0)
 
 end
 
-slot16[slot18] = slot19
+slot16[slot24] = slot25
 
 return slot16
 --- END OF BLOCK #0 ---

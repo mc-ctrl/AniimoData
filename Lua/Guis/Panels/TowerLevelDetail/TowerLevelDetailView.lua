@@ -35,7 +35,7 @@ slot6 = {
 }
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-161, warpins: 1 ---
+	--- BLOCK #0 1-181, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -196,6 +196,26 @@ slot7 = function(slot0)
 	slot5 = "btnfastTrainUButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnfastTrainUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnSwitchUSelector"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnSwitchUSelector = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnPetManageUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnPetManageUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "noticeToastObjectReference"
+	slot2 = slot2(slot4, slot5)
+	slot0.noticeToastObjectReference = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "buttonUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.buttonUButton = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -207,7 +227,7 @@ end
 slot3.findObjects = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-87, warpins: 1 ---
+	--- BLOCK #0 1-108, warpins: 1 ---
 	slot1 = slot0.btnStartUButton
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -294,6 +314,27 @@ slot7 = function(slot0)
 	slot6 = "txtNameUText"
 	slot3 = slot3(slot5, slot6)
 	slot0.fastTrainBtnUText = slot3
+	slot3 = slot0.noticeToastObjectReference
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "toastUComponent"
+	slot4 = slot4(slot6, slot7)
+	slot0.toastUComponent = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "textUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.textUSDFText = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "text2USDFText"
+	slot4 = slot4(slot6, slot7)
+	slot0.text2USDFText = slot4
+	slot4 = slot0.text2USDFText
+	slot4 = slot4.transform
+	slot4 = slot4.parent
+	slot4 = slot4.parent
+	slot0.longTrm = slot4
 
 	return
 	--- END OF BLOCK #0 ---

@@ -1,58 +1,48 @@
---- BLOCK #0 1-41, warpins: 1 ---
+--- BLOCK #0 1-30, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {
-	"IdleMsgTrigger"
-}
+slot1 = {}
+slot2 = slot0.SafeCall
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
+slot3 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot4 = slot0.__agent
+	slot7 = slot4
+	slot5 = slot4.clearSubTreeLocalParams
 
-	return slot0
+	slot5(slot7)
+
+	slot7 = slot4
+	slot5 = slot4.addSubTreeLocalParam
+	slot8 = "tCharacterState"
+	slot9 = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot4
+	slot5 = slot4.addSubTreeLocalParam
+	slot8 = "tAnimationKey"
+	slot9 = slot3
+
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot0
+	slot5 = slot0.setContinue
+	slot8 = slot1
+
+	slot5(slot7, slot8)
+
+	slot5 = true
+
+	return slot5
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -82,9 +72,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeEventTrigger = slot7
+slot1.executeEventTrigger = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -132,9 +122,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -186,9 +176,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -224,7 +214,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-43, warpins: 1 ---
+	--- BLOCK #3 12-27, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActive
 
@@ -238,44 +228,20 @@ slot7 = function(slot0)
 
 	slot2(slot4, slot5, slot6, slot7)
 
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tCharacterState"
-	slot6 = "MIMICRY"
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tAnimationKey"
-	slot6 = ""
-
-	slot2(slot4, slot5, slot6)
-
+	slot2 = _doBehaviourTail_0
 	slot4 = slot0
-	slot2 = slot0.setContinue
 	slot5 = 1
+	slot6 = "MIMICRY"
+	slot7 = ""
 
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
+	return slot2(slot4, slot5, slot6, slot7)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 44-46, warpins: 1 ---
+	--- BLOCK #4 28-30, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActiveFail
 
@@ -286,7 +252,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 47-47, warpins: 2 ---
+	--- BLOCK #5 31-31, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -294,9 +260,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_1_0 = slot7
+slot1._to_1_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_4_2
@@ -356,9 +322,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_5_0 = slot7
+slot1._to_5_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -394,7 +360,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 12-43, warpins: 1 ---
+	--- BLOCK #3 12-27, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActive
 
@@ -408,44 +374,20 @@ slot7 = function(slot0)
 
 	slot2(slot4, slot5, slot6, slot7)
 
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.clearSubTreeLocalParams
-
-	slot2(slot4)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tCharacterState"
-	slot6 = "LOCOMOTION"
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = slot0.__agent
-	slot4 = slot2
-	slot2 = slot2.addSubTreeLocalParam
-	slot5 = "tAnimationKey"
-	slot6 = ""
-
-	slot2(slot4, slot5, slot6)
-
+	slot2 = _doBehaviourTail_0
 	slot4 = slot0
-	slot2 = slot0.setContinue
 	slot5 = 7
+	slot6 = "LOCOMOTION"
+	slot7 = ""
 
-	slot2(slot4, slot5)
-
-	slot2 = true
-
-	return slot2
+	return slot2(slot4, slot5, slot6, slot7)
 
 	--- END OF BLOCK #3 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 44-46, warpins: 1 ---
+	--- BLOCK #4 28-30, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActiveFail
 
@@ -456,7 +398,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 47-47, warpins: 2 ---
+	--- BLOCK #5 31-31, warpins: 2 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -464,9 +406,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_7_0 = slot7
+slot1._to_7_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = _C
 	slot3 = 3
@@ -480,9 +422,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_3_0 = slot7
+slot1._get_3_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_3_0
@@ -502,9 +444,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_4_2 = slot7
+slot1._get_4_2 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_3_0
@@ -524,51 +466,43 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_6_2 = slot7
+slot1._get_6_2 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot4 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_4_2
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 8
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
+	slot2 = not slot1
 
-	return slot2(slot4, slot5, slot6, slot7)
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2._get_8_1 = slot7
+slot1._get_8_1 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot4 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_6_2
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 9
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
+	slot2 = not slot1
 
-	return slot2(slot4, slot5, slot6, slot7)
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2._get_9_1 = slot7
+slot1._get_9_1 = slot4
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-164, warpins: 1 ---
+--- BLOCK #0 1-167, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -54,101 +54,104 @@ slot16 = require
 slot18 = "Guis.Panels.SchoolGuide.Component.ItemCraftComponent"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.college_guide_page_data"
+slot19 = "Guis.Panels.SchoolGuide.Component.MockGuideComponent"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Const.UIConst"
+slot20 = "Data.college_guide_page_data"
 slot18 = slot18(slot20)
-slot19 = CS
-slot19 = slot19.XGUI
-slot19 = slot19.Navigation
-slot20 = slot7.LightClass
-slot22 = "SchoolGuideCtrl"
-slot23 = slot8
-slot20 = slot20(slot22, slot23)
-slot21 = {}
-slot22 = slot12.EventType
-slot22 = slot22.BadgeCollection
-slot23 = {
+slot19 = require
+slot21 = "Const.UIConst"
+slot19 = slot19(slot21)
+slot20 = CS
+slot20 = slot20.XGUI
+slot20 = slot20.Navigation
+slot21 = slot7.LightClass
+slot23 = "SchoolGuideCtrl"
+slot24 = slot8
+slot21 = slot21(slot23, slot24)
+slot22 = {}
+slot23 = slot12.EventType
+slot23 = slot23.BadgeCollection
+slot24 = {
 	container = "medalUContainer"
 }
-slot23.cls = slot15
-slot21[slot22] = slot23
-slot22 = slot12.EventType
-slot22 = slot22.DailyActive
-slot23 = {
+slot24.cls = slot15
+slot22[slot23] = slot24
+slot23 = slot12.EventType
+slot23 = slot23.DailyActive
+slot24 = {
 	container = "dailyActiveUContainer"
 }
-slot23.cls = slot14
-slot21[slot22] = slot23
-slot22 = slot12.EventType
-slot22 = slot22.ItemCraft
-slot23 = {
+slot24.cls = slot14
+slot22[slot23] = slot24
+slot23 = slot12.EventType
+slot23 = slot23.ItemCraft
+slot24 = {
 	container = "itemCraftUContainer"
 }
-slot23.cls = slot16
-slot21[slot22] = slot23
-slot20.EXConfigTypeInfo = slot21
-slot21 = {}
-slot22 = slot1.PLAYER_ONTELEPORT
-slot23 = {
+slot24.cls = slot16
+slot22[slot23] = slot24
+slot21.EXConfigTypeInfo = slot22
+slot22 = {}
+slot23 = slot1.PLAYER_ONTELEPORT
+slot24 = {
 	"onPlayerTeleport",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.ON_NOTIFY_ITEM
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.ON_NOTIFY_ITEM
+slot24 = {
 	"onRefreshCurrencyList",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.ON_AWAITING_OPEN_REWARD_CHANGED
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.ON_AWAITING_OPEN_REWARD_CHANGED
+slot24 = {
 	"onBadgeOpenChanged",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.CURRENCY_CHANGE
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.CURRENCY_CHANGE
+slot24 = {
 	"onItemCountChanged",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.EVENT_APP_RED_DOT_CHANGED
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.EVENT_APP_RED_DOT_CHANGED
+slot24 = {
 	"onEventAppRedDotChanged",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.UI_ON_CLOSE
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.UI_ON_CLOSE
+slot24 = {
 	"onUIClose",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.EVENT_CUR_PAGE_REFRESH
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.EVENT_CUR_PAGE_REFRESH
+slot24 = {
 	"onDayUpdate",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.EVENT_TASK_STATE_CHANGE
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.EVENT_TASK_STATE_CHANGE
+slot24 = {
 	"onRefreshRedDot",
 	true
 }
-slot21[slot22] = slot23
-slot22 = slot1.INPUT_DEVICE_CHANGED
-slot23 = {
+slot22[slot23] = slot24
+slot23 = slot1.INPUT_DEVICE_CHANGED
+slot24 = {
 	"onInputDeviceChanged",
 	true
 }
-slot21[slot22] = slot23
-slot20.messages = slot21
-slot21 = 1009
+slot22[slot23] = slot24
+slot21.messages = slot22
+slot22 = 1009
 
-slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot23 = function(slot0, slot1)
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -164,6 +167,13 @@ slot22 = function(slot0, slot1)
 	slot5 = slot5.transform
 	slot2 = slot2(slot4, slot5)
 	slot0.gameGuideComponent = slot2
+	slot2 = MockGuideComponent
+	slot2 = slot2.new
+	slot4 = slot0
+	slot5 = slot0.view
+	slot5 = slot5.holographicTrainingUWidget
+	slot2 = slot2(slot4, slot5)
+	slot0.mockGuideComponent = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -172,9 +182,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.onCreate = slot22
+slot21.onCreate = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-44, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.firstLevelTabUList
@@ -392,9 +402,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.addListener = slot22
+slot21.addListener = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -428,9 +438,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onDestroy = slot22
+slot21.onDestroy = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -673,9 +683,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.onOpen = slot22
+slot21.onOpen = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -693,9 +703,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onShow = slot22
+slot21.onShow = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.curTabType
 	slot2 = SchoolGuideConst
@@ -746,9 +756,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.refreshConsoleBarState = slot22
+slot21.refreshConsoleBarState = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -757,9 +767,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onHide = slot22
+slot21.onHide = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.infoBtn
@@ -806,9 +816,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.refreshUI = slot22
+slot21.refreshUI = slot23
 
-slot22 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -882,9 +892,9 @@ slot22 = function(slot0, slot1, slot2)
 
 end
 
-slot20._setFirstTabInteractableState = slot22
+slot21._setFirstTabInteractableState = slot23
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1100,7 +1110,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 		slot0 = slot1
 		--- END OF BLOCK #4 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #10
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
 		--- BLOCK #5 70-76, warpins: 1 ---
@@ -1138,7 +1148,7 @@ slot22 = function(slot0, slot1, slot2, slot3)
 		slot0 = slot1
 		--- END OF BLOCK #6 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #10
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
 		--- BLOCK #7 93-99, warpins: 1 ---
@@ -1176,10 +1186,25 @@ slot22 = function(slot0, slot1, slot2, slot3)
 		slot0 = slot1
 		--- END OF BLOCK #8 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #10
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-		--- BLOCK #9 116-125, warpins: 1 ---
+		--- BLOCK #9 116-122, warpins: 1 ---
+		slot1 = data
+		slot1 = slot1.tabType
+		slot2 = SchoolGuideConst
+		slot2 = slot2.EventType
+		slot2 = slot2.BossChallenge
+		--- END OF BLOCK #9 ---
+
+		if slot1 == slot2 then
+		JUMP TO BLOCK #10
+		else
+		JUMP TO BLOCK #11
+		end
+
+
+		--- BLOCK #10 123-133, warpins: 1 ---
 		slot1 = self
 		slot1 = slot1.view
 		slot1 = slot1.widget
@@ -1192,39 +1217,30 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 		slot1 = self
 		slot0 = slot1.gameGuideComponent
-		--- END OF BLOCK #9 ---
-
-		FLOW; TARGET BLOCK #10
-
-
-		--- BLOCK #10 126-129, warpins: 4 ---
-		slot1 = self
-		slot1 = slot1.curComponent
 		--- END OF BLOCK #10 ---
 
-		slot1 = if slot1 then
-		JUMP TO BLOCK #11
-		else
-		JUMP TO BLOCK #12
-		end
+		UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-		--- BLOCK #11 130-134, warpins: 1 ---
+		--- BLOCK #11 134-143, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.curComponent
+		slot1 = slot1.view
+		slot1 = slot1.widget
 		slot3 = slot1
-		slot1 = slot1.exit
+		slot1 = slot1.TryChangePage
+		slot4 = "Content"
+		slot5 = "HolographicTraining"
 
-		slot1(slot3)
+		slot1(slot3, slot4, slot5)
 
+		slot1 = self
+		slot0 = slot1.mockGuideComponent
 		--- END OF BLOCK #11 ---
 
 		FLOW; TARGET BLOCK #12
 
 
-		--- BLOCK #12 135-140, warpins: 2 ---
-		slot1 = self
-		slot1.curComponent = slot0
+		--- BLOCK #12 144-147, warpins: 5 ---
 		slot1 = self
 		slot1 = slot1.curComponent
 		--- END OF BLOCK #12 ---
@@ -1232,42 +1248,69 @@ slot22 = function(slot0, slot1, slot2, slot3)
 		slot1 = if slot1 then
 		JUMP TO BLOCK #13
 		else
-		JUMP TO BLOCK #20
+		JUMP TO BLOCK #14
 		end
 
 
-		--- BLOCK #13 141-144, warpins: 1 ---
+		--- BLOCK #13 148-152, warpins: 1 ---
 		slot1 = self
-		slot1 = slot1.gameGuideComponent
+		slot1 = slot1.curComponent
+		slot3 = slot1
+		slot1 = slot1.exit
+
+		slot1(slot3)
+
 		--- END OF BLOCK #13 ---
 
-		if slot0 == slot1 then
-		JUMP TO BLOCK #14
-		else
-		JUMP TO BLOCK #15
-		end
+		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #14 145-148, warpins: 1 ---
+		--- BLOCK #14 153-158, warpins: 2 ---
 		slot1 = self
-		slot1 = slot1._pendingGroupIndex
+		slot1.curComponent = slot0
+		slot1 = self
+		slot1 = slot1.curComponent
 		--- END OF BLOCK #14 ---
 
-		slot1 = if not slot1 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #15
 		else
-		JUMP TO BLOCK #16
+		JUMP TO BLOCK #22
 		end
 
 
-		--- BLOCK #15 149-149, warpins: 2 ---
-		slot1 = nil
+		--- BLOCK #15 159-162, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.gameGuideComponent
 		--- END OF BLOCK #15 ---
 
-		FLOW; TARGET BLOCK #16
+		if slot0 == slot1 then
+		JUMP TO BLOCK #16
+		else
+		JUMP TO BLOCK #17
+		end
 
 
-		--- BLOCK #16 150-172, warpins: 2 ---
+		--- BLOCK #16 163-166, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1._pendingGroupIndex
+		--- END OF BLOCK #16 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #17
+		else
+		JUMP TO BLOCK #18
+		end
+
+
+		--- BLOCK #17 167-167, warpins: 2 ---
+		slot1 = nil
+		--- END OF BLOCK #17 ---
+
+		FLOW; TARGET BLOCK #18
+
+
+		--- BLOCK #18 168-190, warpins: 2 ---
 		slot2 = self
 		slot3 = nil
 		slot2._pendingGroupIndex = slot3
@@ -1291,31 +1334,31 @@ slot22 = function(slot0, slot1, slot2, slot3)
 		slot6 = slot6.tabType
 		slot5 = slot5[slot6]
 		slot5 = slot5.energySwitch
-		--- END OF BLOCK #16 ---
+		--- END OF BLOCK #18 ---
 
 		if slot5 ~= 1 then
-		JUMP TO BLOCK #17
+		JUMP TO BLOCK #19
 		else
-		JUMP TO BLOCK #18
+		JUMP TO BLOCK #20
 		end
 
 
-		--- BLOCK #17 173-174, warpins: 1 ---
+		--- BLOCK #19 191-192, warpins: 1 ---
 		slot5 = false
-		--- END OF BLOCK #17 ---
+		--- END OF BLOCK #19 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #19
+		UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-		--- BLOCK #18 175-175, warpins: 1 ---
+		--- BLOCK #20 193-193, warpins: 1 ---
 		slot5 = true
 
-		--- END OF BLOCK #18 ---
+		--- END OF BLOCK #20 ---
 
-		FLOW; TARGET BLOCK #19
+		FLOW; TARGET BLOCK #21
 
 
-		--- BLOCK #19 176-182, warpins: 2 ---
+		--- BLOCK #21 194-200, warpins: 2 ---
 		slot2(slot4, slot5)
 
 		slot2 = self
@@ -1326,14 +1369,14 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 		slot2(slot4, slot5)
 
-		--- END OF BLOCK #19 ---
+		--- END OF BLOCK #21 ---
 
-		FLOW; TARGET BLOCK #20
+		FLOW; TARGET BLOCK #22
 
 
-		--- BLOCK #20 183-183, warpins: 2 ---
+		--- BLOCK #22 201-201, warpins: 2 ---
 		return
-		--- END OF BLOCK #20 ---
+		--- END OF BLOCK #22 ---
 
 
 
@@ -1355,9 +1398,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.renderFirstTab = slot22
+slot21.renderFirstTab = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
@@ -1371,9 +1414,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onPlayerTeleport = slot22
+slot21.onPlayerTeleport = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listCurrencyUList
@@ -1440,9 +1483,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onRefreshCurrencyList = slot22
+slot21.onRefreshCurrencyList = slot23
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.dismiss
@@ -1456,9 +1499,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20.onAddMapMarkTrace = slot22
+slot21.onAddMapMarkTrace = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.curComponent
 	slot2 = slot0.medalUContainer
@@ -1491,9 +1534,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onBadgeOpenChanged = slot22
+slot21.onBadgeOpenChanged = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot1
@@ -1550,9 +1593,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20._addComponentsByExConfig = slot22
+slot21._addComponentsByExConfig = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = SchoolGuideCtrl
 	slot2 = slot2.EXConfigTypeInfo
@@ -1587,9 +1630,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20._getComponentByExConfig = slot22
+slot21._getComponentByExConfig = slot23
 
-slot22 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0._getComponentByExConfig
@@ -1626,9 +1669,9 @@ slot22 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot20._setFirstTabRed = slot22
+slot21._setFirstTabRed = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listCurrencyUList
@@ -1710,9 +1753,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onItemCountChanged = slot22
+slot21.onItemCountChanged = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.firstLevelTabUList
@@ -1728,9 +1771,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onEventAppRedDotChanged = slot22
+slot21.onEventAppRedDotChanged = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1862,9 +1905,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.onUIClose = slot22
+slot21.onUIClose = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curComponent
 	--- END OF BLOCK #0 ---
@@ -1913,9 +1956,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onDayUpdate = slot22
+slot21.onDayUpdate = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.firstLevelTabUList
@@ -2011,9 +2054,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onRefreshRedDot = slot22
+slot21.onRefreshRedDot = slot23
 
-slot22 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curTabType
 
@@ -2048,9 +2091,9 @@ slot22 = function(slot0)
 
 end
 
-slot20.onInputDeviceChanged = slot22
+slot21.onInputDeviceChanged = slot23
 
-slot22 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -2107,9 +2150,9 @@ slot22 = function(slot0, slot1)
 
 end
 
-slot20.refreshRuleButtonShow = slot22
+slot21.refreshRuleButtonShow = slot23
 
-return slot20
+return slot21
 --- END OF BLOCK #0 ---
 
 

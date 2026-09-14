@@ -1,183 +1,46 @@
---- BLOCK #0 1-448, warpins: 1 ---
+--- BLOCK #0 1-468, warpins: 1 ---
 slot0 = {
-	SWIMMIMICRY = 46,
-	SKATEBOARDMOVE = 45,
-	SKATEBOARD = 44,
-	AIR2GROUND = 43,
-	GROUNDWALK = 42,
-	GROUNDIDLE = 41,
-	GROUND = 40,
-	MIMICRYIDLE = 39,
-	MIMICRY = 38,
-	SNEAKMOVE = 37,
-	SNEAKIDLE = 36,
-	SNEAK = 35,
-	SWIMJUMP = 34,
-	SWIMMOVE = 33,
-	SWIMFASTMOVE = 32,
-	SWIMIDLE = 31,
-	SWIMMING = 30,
-	GLIDESTART = 29,
-	DIGEGGACTION = 207,
-	DIGEGGEND = 208,
-	CARRY = 209,
-	CARRYSTART = 210,
-	CARRYIDLE = 211,
-	GLIDEMOVE = 28,
-	GLIDEIDLE = 27,
-	GLIDING = 26,
-	FLYSTARTGRAB = 25,
-	FLYENDGRAB = 24,
-	FLYRISE = 23,
-	FLYMOVE = 22,
-	FLYHOVER = 21,
-	FLYING = 20,
-	CLIMBOFF = 19,
-	CLIMBON = 18,
-	CLIMBMOVE = 17,
-	CLIMBIDLE = 16,
-	BEATTACHED = 222,
-	NEARDEAD = 221,
-	SOCIALANIM = 220,
-	REVIVE = 219,
-	FISHINGCAPTUREMOVE = 218,
-	FISHINGCAPTUREIDLE = 217,
-	FISHINGCAPTURE = 216,
-	CARRYEND = 215,
-	CARRYFALL = 214,
-	CARRYLAND = 213,
-	CARRYRUN = 212,
-	IDLE = 4,
-	SPEEDBURSTLOOP = 3,
-	SPEEDBURST = 2,
-	LOCOMOTION = 1,
-	NONE = 0,
-	DIGEGGIDLE = 206,
-	DIGEGGSTART = 205,
-	DIGEGG = 204,
-	EGGMODEBEATTACHED = 203,
-	EGGMODEJUMP = 202,
-	EGGMODEIDLE = 201,
-	EGGMODE = 200,
-	AIDEND = 199,
-	AIDLOOP = 198,
-	AIDSTART = 197,
-	AID = 196,
-	FALLENFALLTOGROUND = 195,
-	FALLENFALL = 194,
-	FALLENSTART = 193,
-	FALLENSTANDUP = 192,
-	FALLENMOVELOOPEND = 191,
-	FALLENMOVELOOP = 190,
-	FALLENDMOVESTART = 189,
-	FALLENIDLE = 188,
-	FALLEN = 187,
-	BEGGFALL = 186,
-	BEGGLAND = 185,
-	BEGGDROP = 184,
-	BEGGRUN = 183,
-	BEGGIDLE = 182,
-	BEGGPICK = 181,
-	BEGG = 180,
-	WALKINGATTACKMOVE = 179,
-	WALKINGATTACKIDLE = 178,
-	WALKINGATTACK = 177,
-	SKILLTHROWMOVE = 176,
-	SKILLTHROWIDLE = 175,
-	SKILLTHROWING = 174,
-	SKILLBEGIN = 173,
-	SKILLMOVETOIDLE = 172,
-	SKILLIDLETOMOVE = 171,
-	SKILLEND = 170,
-	DRUMRIGHTSTOP = 169,
-	DRUMLEFTSTOP = 168,
-	DRUMRIGHTHAND = 167,
-	DRUMLEFTHAND = 166,
-	DRUMIDLE = 165,
-	DRUMMING = 164,
-	SKATEBOARDJUMPEND = 163,
-	SKATEBOARDJUMPFALL = 162,
-	SKATEBOARDJUMPSTART = 161,
-	SKATEBOARDSTART = 160,
-	CLIMBACROSSH = 159,
-	CLIMBACROSSL = 158,
-	CLIMBACROSSSTEPUP = 157,
-	CLIMBACROSS = 156,
-	MAGNESISGRABIDLE = 155,
-	MAGNESISTHROW = 154,
-	MAGNESISGRABWALK = 153,
-	MAGNESISBEGIN = 152,
-	MAGNESIS = 151,
-	THROWIDLE = 150,
-	THROWWALK = 149,
-	THROWING = 148,
-	CROUCHTHROWMOVE = 147,
-	CROUCHTHROWIDLE = 146,
-	INFLATEDASH = 145,
-	SKILLGLIDINGEND = 144,
-	SKILLGLIDING = 143,
-	HOOKCANCEL = 142,
-	STRUGGLE = 141,
-	NORMALATTACK = 140,
-	SKILL = 139,
-	BACKSIDEATTACK = 138,
-	FRONTSIDEATTACK = 137,
-	RIGHTSIDEATTACK = 136,
-	LEFTSIDEATTACK = 135,
-	NORMALSTANDATTACK = 134,
-	LATERALATTACK = 133,
-	SPECIALRIDEIDLE = 132,
-	SPECIALRIDEBREAKSUCCESS = 131,
-	SPECIALRIDEBREAKFAIL = 130,
-	SPECIALRIDECLIMBON = 129,
-	SPECIALRIDE = 128,
-	HOOKSTART = 127,
-	HOOKAIM = 126,
-	HOOKFAILEND = 125,
-	HOOKFAILLOOP = 124,
-	HOOKSUCCESSEND = 123,
-	HOOKSPRINTLOOP = 122,
-	HOOKSUCCESS = 121,
-	HOOKWAIT = 120,
-	HOOKSPRINT = 119,
-	SKILLIDLE = 118,
-	CLIMBING = 15,
-	JUMPINRUN = 14,
-	JUMP = 13,
-	GROUNDFALL = 12,
-	FALL = 11,
-	AIRING = 10,
-	TURN = 9,
-	SPRINT = 8,
-	WALK = 7,
-	DASH = 6,
-	RUN = 5,
-	SKILLJUMPFALL = 117,
-	SKILLJUMPEND = 116,
-	SKILLJUMP = 115,
-	SKILLMOVE = 114,
-	SKILLMOTION = 113,
-	FOURWAYIDLE = 112,
-	FOURWAYMOVE = 111,
-	FOURWAY = 110,
-	SWIMDASH = 109,
-	GLIDERISE = 108,
-	FLYSPRINT = 107,
-	FLYDASH = 106,
-	CLIMBSPRINT = 105,
-	CLIMBDASH = 104,
-	CLIMBSLIP = 103,
-	BOUNCE = 102,
-	SPRINTSTOP = 101,
-	RUNSTOP = 100,
-	SPRINTTURN = 99,
-	SPEEDBURSTFALL = 98,
-	SPEEDBURSTEND = 97,
-	SPEEDBURSTSTART = 96,
-	CROUCHEXIT = 95,
-	CROUCHMOVE = 94,
-	CROUCHIDLE = 93,
-	CROUCHING = 92,
+	SPECIALRIDEBREAKFAIL = 132,
+	SPECIALRIDECLIMBON = 131,
+	SPECIALRIDE = 130,
+	HOOKSTART = 129,
+	HOOKAIM = 128,
+	HOOKFAILEND = 127,
+	HOOKFAILLOOP = 126,
+	HOOKSUCCESSEND = 125,
+	HOOKSPRINTLOOP = 124,
+	HOOKSUCCESS = 123,
+	HOOKWAIT = 122,
+	HOOKSPRINT = 121,
+	SKILLDASH = 120,
+	SKILLIDLE = 119,
+	SKILLJUMPFALL = 118,
+	SKILLJUMPEND = 117,
+	SKILLJUMP = 116,
+	SKILLMOVE = 115,
+	SKILLMOTION = 114,
+	FOURWAYIDLE = 113,
+	FOURWAYMOVE = 112,
+	FOURWAY = 111,
+	SWIMDASH = 110,
+	GLIDERISE = 109,
+	FLYSPRINT = 108,
+	FLYDASH = 107,
+	CLIMBSPRINT = 106,
+	CLIMBDASH = 105,
+	CLIMBSLIP = 104,
+	BOUNCE = 103,
+	SPRINTTURN = 102,
+	SPEEDBURSTJUMP = 101,
+	SPEEDBURSTFALL = 100,
+	SPEEDBURSTEND = 99,
+	SPEEDBURSTSTART = 98,
+	CROUCHEXIT = 97,
+	CROUCHMOVE = 96,
+	CROUCHIDLE = 95,
+	CROUCHING = 94,
+	SPRINTSTOP = 93,
+	RUNSTOP = 92,
 	CUSTOMANIMATION = 91,
 	HOMEWORK = 90,
 	BEGRAB = 89,
@@ -222,1159 +85,1357 @@ slot0 = {
 	SPECIALMOVEIDLE = 50,
 	SPECIALMOVEFORWARD = 49,
 	SPECIALMOVE = 48,
-	SWIMMIMICRYIDLE = 47
+	SWIMMIMICRYIDLE = 47,
+	SWIMMIMICRY = 46,
+	SKATEBOARDMOVE = 45,
+	SKATEBOARD = 44,
+	AIR2GROUND = 43,
+	GROUNDWALK = 42,
+	GROUNDIDLE = 41,
+	GROUND = 40,
+	MIMICRYIDLE = 39,
+	MIMICRY = 38,
+	SNEAKMOVE = 37,
+	SNEAKIDLE = 36,
+	SNEAK = 35,
+	SWIMJUMP = 34,
+	SWIMMOVE = 33,
+	SWIMFASTMOVE = 32,
+	SWIMIDLE = 31,
+	SWIMMING = 30,
+	GLIDESTART = 29,
+	GLIDEMOVE = 28,
+	GLIDEIDLE = 27,
+	GLIDING = 26,
+	FLYSTARTGRAB = 25,
+	FLYENDGRAB = 24,
+	FLYRISE = 23,
+	FLYMOVE = 22,
+	FLYHOVER = 21,
+	FLYING = 20,
+	CLIMBOFF = 19,
+	CLIMBON = 18,
+	CLIMBMOVE = 17,
+	CLIMBIDLE = 16,
+	CLIMBING = 15,
+	JUMPINRUN = 14,
+	JUMP = 13,
+	CLIMBACROSS = 166,
+	CLIMBACROSSSTEPUP = 167,
+	CLIMBACROSSL = 168,
+	CLIMBACROSSH = 169,
+	SKATEBOARDSTART = 170,
+	SKATEBOARDJUMPSTART = 171,
+	SKATEBOARDJUMPFALL = 172,
+	SKATEBOARDJUMPEND = 173,
+	DRUMMING = 174,
+	DRUMIDLE = 175,
+	DRUMLEFTHAND = 176,
+	DRUMRIGHTHAND = 177,
+	DRUMLEFTSTOP = 178,
+	DIGEGGEND = 219,
+	CARRY = 220,
+	CARRYSTART = 221,
+	CARRYIDLE = 222,
+	CARRYRUN = 223,
+	CARRYLAND = 224,
+	CARRYFALL = 225,
+	CARRYEND = 226,
+	FISHINGCAPTURE = 227,
+	FISHINGCAPTUREIDLE = 228,
+	FISHINGCAPTUREMOVE = 229,
+	REVIVE = 230,
+	NEARDEAD = 231,
+	BEATTACHED = 232,
+	DIGEGGACTION = 218,
+	DIGEGGIDLE = 217,
+	DIGEGGSTART = 216,
+	DIGEGG = 215,
+	EGGMODEBEATTACHED = 214,
+	EGGMODEJUMP = 213,
+	EGGMODEIDLE = 212,
+	EGGMODE = 211,
+	AIDEND = 210,
+	AIDLOOP = 209,
+	AIDSTART = 208,
+	AID = 207,
+	FALLENFALLTOGROUND = 206,
+	FALLENFALL = 205,
+	FALLENSTART = 204,
+	FALLENSTANDUP = 203,
+	FALLENMOVELOOPEND = 202,
+	FALLENMOVELOOP = 201,
+	FALLENDMOVESTART = 200,
+	FALLENIDLE = 199,
+	FALLEN = 198,
+	BEGGJUMP = 197,
+	BEGGFALL = 196,
+	BEGGLAND = 195,
+	BEGGDROP = 194,
+	BEGGRUN = 193,
+	BEGGIDLE = 192,
+	BEGGPICK = 191,
+	BEGG = 190,
+	WALKINGATTACKMOVE = 189,
+	WALKINGATTACKIDLE = 188,
+	WALKINGATTACK = 187,
+	SKILLTHROWMOVE = 186,
+	SKILLTHROWIDLE = 185,
+	SKILLTHROWING = 184,
+	SKILLBEGIN = 183,
+	SKILLMOVETOIDLE = 182,
+	SKILLIDLETOMOVE = 181,
+	SKILLEND = 180,
+	DRUMRIGHTSTOP = 179,
+	GROUNDFALL = 12,
+	FALL = 11,
+	AIRING = 10,
+	TURN = 9,
+	SPRINT = 8,
+	WALK = 7,
+	DASH = 6,
+	RUN = 5,
+	IDLE = 4,
+	SPEEDBURSTLOOP = 3,
+	SPEEDBURST = 2,
+	LOCOMOTION = 1,
+	NONE = 0,
+	MAGNESISGRABIDLE = 165,
+	MAGNESISTHROW = 164,
+	MAGNESISGRABWALK = 163,
+	MAGNESISBEGIN = 162,
+	MAGNESIS = 161,
+	THROWIDLE = 160,
+	THROWWALK = 159,
+	THROWING = 158,
+	CROUCHTHROWMOVE = 157,
+	CROUCHTHROWIDLE = 156,
+	SOCIALANIM = 155,
+	INFLATEDASH = 154,
+	SKILLGLIDINGEND = 153,
+	SKILLGLIDING = 152,
+	HOOKCANCEL = 151,
+	STRUGGLE = 150,
+	NORMALATTACK = 149,
+	SKILL = 148,
+	CLIMBWATERFALLJUMPDASH = 147,
+	CLIMBWATERFALLJUMPTOP = 146,
+	CLIMBWATERFALLJUMPOUT = 145,
+	CLIMBWATERFALLMOVE = 144,
+	CLIMBWATERFALLIDLE = 143,
+	CLIMBWATERFALLJUMPON = 142,
+	CLIMBWATERFALL = 141,
+	BACKSIDEATTACK = 140,
+	FRONTSIDEATTACK = 139,
+	RIGHTSIDEATTACK = 138,
+	LEFTSIDEATTACK = 137,
+	NORMALSTANDATTACK = 136,
+	LATERALATTACK = 135,
+	SPECIALRIDEIDLE = 134,
+	SPECIALRIDEBREAKSUCCESS = 133
 }
 slot1 = {
 	name = "NONE"
 }
 slot0[0] = slot1
 slot1 = {
+	parent = 0,
 	name = "LOCOMOTION",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[1] = slot1
 slot1 = {
+	parent = 1,
 	name = "SPEEDBURST",
-	isStateMachine = true,
-	parent = 1
+	isStateMachine = true
 }
 slot0[2] = slot1
 slot1 = {
-	parent = 2,
-	name = "SPEEDBURSTLOOP"
+	name = "SPEEDBURSTLOOP",
+	parent = 2
 }
 slot0[3] = slot1
 slot1 = {
-	parent = 1,
-	name = "IDLE"
+	name = "IDLE",
+	parent = 1
 }
 slot0[4] = slot1
 slot1 = {
-	parent = 1,
-	name = "RUN"
+	name = "RUN",
+	parent = 1
 }
 slot0[5] = slot1
 slot1 = {
-	parent = 1,
-	name = "DASH"
+	name = "DASH",
+	parent = 1
 }
 slot0[6] = slot1
 slot1 = {
-	parent = 1,
-	name = "WALK"
+	name = "WALK",
+	parent = 1
 }
 slot0[7] = slot1
 slot1 = {
-	parent = 1,
-	name = "SPRINT"
+	name = "SPRINT",
+	parent = 1
 }
 slot0[8] = slot1
 slot1 = {
-	parent = 1,
-	name = "TURN"
+	name = "TURN",
+	parent = 1
 }
 slot0[9] = slot1
 slot1 = {
+	parent = 0,
 	name = "AIRING",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[10] = slot1
 slot1 = {
-	parent = 10,
-	name = "FALL"
+	name = "FALL",
+	parent = 10
 }
 slot0[11] = slot1
 slot1 = {
-	parent = 10,
-	name = "GROUNDFALL"
+	name = "GROUNDFALL",
+	parent = 10
 }
 slot0[12] = slot1
 slot1 = {
-	parent = 10,
-	name = "JUMP"
+	name = "JUMP",
+	parent = 10
 }
 slot0[13] = slot1
 slot1 = {
-	parent = 10,
-	name = "JUMPINRUN"
+	name = "JUMPINRUN",
+	parent = 10
 }
 slot0[14] = slot1
 slot1 = {
+	parent = 0,
 	name = "CLIMBING",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[15] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBIDLE"
+	name = "CLIMBIDLE",
+	parent = 15
 }
 slot0[16] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBMOVE"
+	name = "CLIMBMOVE",
+	parent = 15
 }
 slot0[17] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBON"
+	name = "CLIMBON",
+	parent = 15
 }
 slot0[18] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBOFF"
+	name = "CLIMBOFF",
+	parent = 15
 }
 slot0[19] = slot1
 slot1 = {
+	parent = 0,
 	name = "FLYING",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[20] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYHOVER"
+	name = "FLYHOVER",
+	parent = 20
 }
 slot0[21] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYMOVE"
+	name = "FLYMOVE",
+	parent = 20
 }
 slot0[22] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYRISE"
+	name = "FLYRISE",
+	parent = 20
 }
 slot0[23] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYENDGRAB"
+	name = "FLYENDGRAB",
+	parent = 20
 }
 slot0[24] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYSTARTGRAB"
+	name = "FLYSTARTGRAB",
+	parent = 20
 }
 slot0[25] = slot1
 slot1 = {
+	parent = 0,
 	name = "GLIDING",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[26] = slot1
 slot1 = {
-	parent = 26,
-	name = "GLIDEIDLE"
+	name = "GLIDEIDLE",
+	parent = 26
 }
 slot0[27] = slot1
 slot1 = {
-	parent = 26,
-	name = "GLIDEMOVE"
+	name = "GLIDEMOVE",
+	parent = 26
 }
 slot0[28] = slot1
 slot1 = {
-	parent = 26,
-	name = "GLIDESTART"
+	name = "GLIDESTART",
+	parent = 26
 }
 slot0[29] = slot1
 slot1 = {
+	parent = 0,
 	name = "SWIMMING",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[30] = slot1
 slot1 = {
-	parent = 30,
-	name = "SWIMIDLE"
+	name = "SWIMIDLE",
+	parent = 30
 }
 slot0[31] = slot1
 slot1 = {
-	parent = 30,
-	name = "SWIMFASTMOVE"
+	name = "SWIMFASTMOVE",
+	parent = 30
 }
 slot0[32] = slot1
 slot1 = {
-	parent = 30,
-	name = "SWIMMOVE"
+	name = "SWIMMOVE",
+	parent = 30
 }
 slot0[33] = slot1
 slot1 = {
-	parent = 30,
-	name = "SWIMJUMP"
+	name = "SWIMJUMP",
+	parent = 30
 }
 slot0[34] = slot1
 slot1 = {
+	parent = 0,
 	name = "SNEAK",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[35] = slot1
 slot1 = {
-	parent = 35,
-	name = "SNEAKIDLE"
+	name = "SNEAKIDLE",
+	parent = 35
 }
 slot0[36] = slot1
 slot1 = {
-	parent = 35,
-	name = "SNEAKMOVE"
+	name = "SNEAKMOVE",
+	parent = 35
 }
 slot0[37] = slot1
 slot1 = {
+	parent = 0,
 	name = "MIMICRY",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[38] = slot1
 slot1 = {
-	parent = 38,
-	name = "MIMICRYIDLE"
+	name = "MIMICRYIDLE",
+	parent = 38
 }
 slot0[39] = slot1
 slot1 = {
+	parent = 0,
 	name = "GROUND",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[40] = slot1
 slot1 = {
-	parent = 40,
-	name = "GROUNDIDLE"
+	name = "GROUNDIDLE",
+	parent = 40
 }
 slot0[41] = slot1
 slot1 = {
-	parent = 40,
-	name = "GROUNDWALK"
+	name = "GROUNDWALK",
+	parent = 40
 }
 slot0[42] = slot1
 slot1 = {
-	parent = 40,
-	name = "AIR2GROUND"
+	name = "AIR2GROUND",
+	parent = 40
 }
 slot0[43] = slot1
 slot1 = {
+	parent = 0,
 	name = "SKATEBOARD",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[44] = slot1
 slot1 = {
-	parent = 44,
-	name = "SKATEBOARDMOVE"
+	name = "SKATEBOARDMOVE",
+	parent = 44
 }
 slot0[45] = slot1
 slot1 = {
+	parent = 0,
 	name = "SWIMMIMICRY",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[46] = slot1
 slot1 = {
-	parent = 46,
-	name = "SWIMMIMICRYIDLE"
+	name = "SWIMMIMICRYIDLE",
+	parent = 46
 }
 slot0[47] = slot1
 slot1 = {
+	parent = 0,
 	name = "SPECIALMOVE",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[48] = slot1
 slot1 = {
-	parent = 48,
-	name = "SPECIALMOVEFORWARD"
+	name = "SPECIALMOVEFORWARD",
+	parent = 48
 }
 slot0[49] = slot1
 slot1 = {
-	parent = 48,
-	name = "SPECIALMOVEIDLE"
+	name = "SPECIALMOVEIDLE",
+	parent = 48
 }
 slot0[50] = slot1
 slot1 = {
+	parent = 0,
 	name = "MOUNTING",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[51] = slot1
 slot1 = {
-	parent = 51,
-	name = "MOUNT"
+	name = "MOUNT",
+	parent = 51
 }
 slot0[52] = slot1
 slot1 = {
-	parent = 51,
-	name = "MOUNTSPECIAL"
+	name = "MOUNTSPECIAL",
+	parent = 51
 }
 slot0[53] = slot1
 slot1 = {
-	parent = 51,
-	name = "MOUNTENTER"
+	name = "MOUNTENTER",
+	parent = 51
 }
 slot0[54] = slot1
 slot1 = {
-	parent = 51,
-	name = "MOUNTEXIT"
+	name = "MOUNTEXIT",
+	parent = 51
 }
 slot0[55] = slot1
 slot1 = {
+	parent = 0,
 	name = "STORYBEHAVIOR",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[56] = slot1
 slot1 = {
-	parent = 56,
-	name = "STORYTURN"
+	name = "STORYTURN",
+	parent = 56
 }
 slot0[57] = slot1
 slot1 = {
+	parent = 0,
 	name = "HIDEMIMICRY",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[58] = slot1
 slot1 = {
-	parent = 58,
-	name = "HIDEMIMICRYIDLE"
+	name = "HIDEMIMICRYIDLE",
+	parent = 58
 }
 slot0[59] = slot1
 slot1 = {
+	parent = 0,
 	name = "STATICSPAWN",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[60] = slot1
 slot1 = {
-	parent = 60,
-	name = "STATICSPAWNIDLE"
+	name = "STATICSPAWNIDLE",
+	parent = 60
 }
 slot0[61] = slot1
 slot1 = {
+	parent = 0,
 	name = "PERFORM",
-	isStateMachine = true,
-	parent = 0
+	isStateMachine = true
 }
 slot0[62] = slot1
 slot1 = {
-	parent = 62,
-	name = "PERFORMSTART"
+	name = "PERFORMSTART",
+	parent = 62
 }
 slot0[63] = slot1
 slot1 = {
-	parent = 62,
-	name = "PERFORMLOOP"
+	name = "PERFORMLOOP",
+	parent = 62
 }
 slot0[64] = slot1
 slot1 = {
-	parent = 62,
-	name = "PERFORMEND"
+	name = "PERFORMEND",
+	parent = 62
 }
 slot0[65] = slot1
 slot1 = {
-	parent = 0,
-	name = "LAND"
+	name = "LAND",
+	parent = 0
 }
 slot0[66] = slot1
 slot1 = {
-	parent = 0,
-	name = "FLYCHARGING"
+	name = "FLYCHARGING",
+	parent = 0
 }
 slot0[67] = slot1
 slot1 = {
-	parent = 0,
-	name = "SNEAKIN"
+	name = "SNEAKIN",
+	parent = 0
 }
 slot0[68] = slot1
 slot1 = {
-	parent = 0,
-	name = "SNEAKOUT"
+	name = "SNEAKOUT",
+	parent = 0
 }
 slot0[69] = slot1
 slot1 = {
-	parent = 0,
-	name = "SNEAKOUTBYHIT"
+	name = "SNEAKOUTBYHIT",
+	parent = 0
 }
 slot0[70] = slot1
 slot1 = {
-	parent = 0,
-	name = "DEAD"
+	name = "DEAD",
+	parent = 0
 }
 slot0[71] = slot1
 slot1 = {
-	parent = 0,
-	name = "PLAYANIMATIONSCRIPT"
+	name = "PLAYANIMATIONSCRIPT",
+	parent = 0
 }
 slot0[72] = slot1
 slot1 = {
-	parent = 0,
-	name = "GROUNDOUT"
+	name = "GROUNDOUT",
+	parent = 0
 }
 slot0[73] = slot1
 slot1 = {
-	parent = 0,
-	name = "GROUNDIN"
+	name = "GROUNDIN",
+	parent = 0
 }
 slot0[74] = slot1
 slot1 = {
-	parent = 0,
-	name = "APPEARDASH"
+	name = "APPEARDASH",
+	parent = 0
 }
 slot0[75] = slot1
 slot1 = {
-	parent = 0,
-	name = "SPECIALDEFENSE"
+	name = "SPECIALDEFENSE",
+	parent = 0
 }
 slot0[76] = slot1
 slot1 = {
-	parent = 0,
-	name = "MIMICRYIN"
+	name = "MIMICRYIN",
+	parent = 0
 }
 slot0[77] = slot1
 slot1 = {
-	parent = 0,
-	name = "MIMICRYOUT"
+	name = "MIMICRYOUT",
+	parent = 0
 }
 slot0[78] = slot1
 slot1 = {
-	parent = 0,
-	name = "SWIMMIMICRYIN"
+	name = "SWIMMIMICRYIN",
+	parent = 0
 }
 slot0[79] = slot1
 slot1 = {
-	parent = 0,
-	name = "SWIMMIMICRYOUT"
+	name = "SWIMMIMICRYOUT",
+	parent = 0
 }
 slot0[80] = slot1
 slot1 = {
-	parent = 0,
-	name = "PATHFINDING"
+	name = "PATHFINDING",
+	parent = 0
 }
 slot0[81] = slot1
 slot1 = {
-	parent = 0,
-	name = "SPECIALMOVEIN"
+	name = "SPECIALMOVEIN",
+	parent = 0
 }
 slot0[82] = slot1
 slot1 = {
-	parent = 0,
-	name = "SPECIALMOVEOUT"
+	name = "SPECIALMOVEOUT",
+	parent = 0
 }
 slot0[83] = slot1
 slot1 = {
-	parent = 0,
-	name = "HIDEMIMICRYIN"
+	name = "HIDEMIMICRYIN",
+	parent = 0
 }
 slot0[84] = slot1
 slot1 = {
-	parent = 0,
-	name = "HIDEMIMICRYOUT"
+	name = "HIDEMIMICRYOUT",
+	parent = 0
 }
 slot0[85] = slot1
 slot1 = {
-	parent = 0,
-	name = "TAKEROOTIN"
+	name = "TAKEROOTIN",
+	parent = 0
 }
 slot0[86] = slot1
 slot1 = {
-	parent = 0,
-	name = "TAKEROOT"
+	name = "TAKEROOT",
+	parent = 0
 }
 slot0[87] = slot1
 slot1 = {
-	parent = 0,
-	name = "TAKEROOTOUT"
+	name = "TAKEROOTOUT",
+	parent = 0
 }
 slot0[88] = slot1
 slot1 = {
-	parent = 0,
-	name = "BEGRAB"
+	name = "BEGRAB",
+	parent = 0
 }
 slot0[89] = slot1
 slot1 = {
-	parent = 0,
-	name = "HOMEWORK"
+	name = "HOMEWORK",
+	parent = 0
 }
 slot0[90] = slot1
 slot1 = {
-	parent = 1,
-	name = "CUSTOMANIMATION"
+	name = "CUSTOMANIMATION",
+	parent = 1
 }
 slot0[91] = slot1
 slot1 = {
-	name = "CROUCHING",
-	isStateMachine = true,
-	parent = 0
+	name = "RUNSTOP",
+	parent = 1
 }
 slot0[92] = slot1
 slot1 = {
-	parent = 92,
-	name = "CROUCHIDLE"
+	name = "SPRINTSTOP",
+	parent = 1
 }
 slot0[93] = slot1
 slot1 = {
-	parent = 92,
-	name = "CROUCHMOVE"
+	parent = 0,
+	name = "CROUCHING",
+	isStateMachine = true
 }
 slot0[94] = slot1
 slot1 = {
-	parent = 92,
-	name = "CROUCHEXIT"
+	name = "CROUCHIDLE",
+	parent = 94
 }
 slot0[95] = slot1
 slot1 = {
-	parent = 2,
-	name = "SPEEDBURSTSTART"
+	name = "CROUCHMOVE",
+	parent = 94
 }
 slot0[96] = slot1
 slot1 = {
-	parent = 2,
-	name = "SPEEDBURSTEND"
+	name = "CROUCHEXIT",
+	parent = 94
 }
 slot0[97] = slot1
 slot1 = {
-	parent = 2,
-	name = "SPEEDBURSTFALL"
+	name = "SPEEDBURSTSTART",
+	parent = 2
 }
 slot0[98] = slot1
 slot1 = {
-	parent = 1,
-	name = "SPRINTTURN"
+	name = "SPEEDBURSTEND",
+	parent = 2
 }
 slot0[99] = slot1
 slot1 = {
-	parent = 1,
-	name = "RUNSTOP"
+	name = "SPEEDBURSTFALL",
+	parent = 2
 }
 slot0[100] = slot1
 slot1 = {
-	parent = 1,
-	name = "SPRINTSTOP"
+	name = "SPEEDBURSTJUMP",
+	parent = 2
 }
 slot0[101] = slot1
 slot1 = {
-	parent = 10,
-	name = "BOUNCE"
+	name = "SPRINTTURN",
+	parent = 1
 }
 slot0[102] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBSLIP"
+	name = "BOUNCE",
+	parent = 10
 }
 slot0[103] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBDASH"
+	name = "CLIMBSLIP",
+	parent = 15
 }
 slot0[104] = slot1
 slot1 = {
-	parent = 15,
-	name = "CLIMBSPRINT"
+	name = "CLIMBDASH",
+	parent = 15
 }
 slot0[105] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYDASH"
+	name = "CLIMBSPRINT",
+	parent = 15
 }
 slot0[106] = slot1
 slot1 = {
-	parent = 20,
-	name = "FLYSPRINT"
+	name = "FLYDASH",
+	parent = 20
 }
 slot0[107] = slot1
 slot1 = {
-	parent = 26,
-	name = "GLIDERISE"
+	name = "FLYSPRINT",
+	parent = 20
 }
 slot0[108] = slot1
 slot1 = {
-	parent = 30,
-	name = "SWIMDASH"
+	name = "GLIDERISE",
+	parent = 26
 }
 slot0[109] = slot1
 slot1 = {
-	name = "FOURWAY",
-	isStateMachine = true,
-	parent = 0
+	name = "SWIMDASH",
+	parent = 30
 }
 slot0[110] = slot1
 slot1 = {
-	parent = 110,
-	name = "FOURWAYMOVE"
+	parent = 0,
+	name = "FOURWAY",
+	isStateMachine = true
 }
 slot0[111] = slot1
 slot1 = {
-	parent = 110,
-	name = "FOURWAYIDLE"
+	name = "FOURWAYMOVE",
+	parent = 111
 }
 slot0[112] = slot1
 slot1 = {
-	name = "SKILLMOTION",
-	isStateMachine = true,
-	parent = 0
+	name = "FOURWAYIDLE",
+	parent = 111
 }
 slot0[113] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLMOVE"
+	parent = 0,
+	name = "SKILLMOTION",
+	isStateMachine = true
 }
 slot0[114] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLJUMP"
+	name = "SKILLMOVE",
+	parent = 114
 }
 slot0[115] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLJUMPEND"
+	name = "SKILLJUMP",
+	parent = 114
 }
 slot0[116] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLJUMPFALL"
+	name = "SKILLJUMPEND",
+	parent = 114
 }
 slot0[117] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLIDLE"
+	name = "SKILLJUMPFALL",
+	parent = 114
 }
 slot0[118] = slot1
 slot1 = {
-	name = "HOOKSPRINT",
-	isStateMachine = true,
-	parent = 0
+	name = "SKILLIDLE",
+	parent = 114
 }
 slot0[119] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKWAIT"
+	name = "SKILLDASH",
+	parent = 114
 }
 slot0[120] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKSUCCESS"
+	parent = 0,
+	name = "HOOKSPRINT",
+	isStateMachine = true
 }
 slot0[121] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKSPRINTLOOP"
+	name = "HOOKWAIT",
+	parent = 121
 }
 slot0[122] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKSUCCESSEND"
+	name = "HOOKSUCCESS",
+	parent = 121
 }
 slot0[123] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKFAILLOOP"
+	name = "HOOKSPRINTLOOP",
+	parent = 121
 }
 slot0[124] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKFAILEND"
+	name = "HOOKSUCCESSEND",
+	parent = 121
 }
 slot0[125] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKAIM"
+	name = "HOOKFAILLOOP",
+	parent = 121
 }
 slot0[126] = slot1
 slot1 = {
-	parent = 119,
-	name = "HOOKSTART"
+	name = "HOOKFAILEND",
+	parent = 121
 }
 slot0[127] = slot1
 slot1 = {
-	name = "SPECIALRIDE",
-	isStateMachine = true,
-	parent = 0
+	name = "HOOKAIM",
+	parent = 121
 }
 slot0[128] = slot1
 slot1 = {
-	parent = 128,
-	name = "SPECIALRIDECLIMBON"
+	name = "HOOKSTART",
+	parent = 121
 }
 slot0[129] = slot1
 slot1 = {
-	parent = 128,
-	name = "SPECIALRIDEBREAKFAIL"
+	parent = 0,
+	name = "SPECIALRIDE",
+	isStateMachine = true
 }
 slot0[130] = slot1
 slot1 = {
-	parent = 128,
-	name = "SPECIALRIDEBREAKSUCCESS"
+	name = "SPECIALRIDECLIMBON",
+	parent = 130
 }
 slot0[131] = slot1
 slot1 = {
-	parent = 128,
-	name = "SPECIALRIDEIDLE"
+	name = "SPECIALRIDEBREAKFAIL",
+	parent = 130
 }
 slot0[132] = slot1
 slot1 = {
-	name = "LATERALATTACK",
-	isStateMachine = true,
-	parent = 0
+	name = "SPECIALRIDEBREAKSUCCESS",
+	parent = 130
 }
 slot0[133] = slot1
 slot1 = {
-	parent = 133,
-	name = "NORMALSTANDATTACK"
+	name = "SPECIALRIDEIDLE",
+	parent = 130
 }
 slot0[134] = slot1
 slot1 = {
-	parent = 133,
-	name = "LEFTSIDEATTACK"
+	parent = 0,
+	name = "LATERALATTACK",
+	isStateMachine = true
 }
 slot0[135] = slot1
 slot1 = {
-	parent = 133,
-	name = "RIGHTSIDEATTACK"
+	name = "NORMALSTANDATTACK",
+	parent = 135
 }
 slot0[136] = slot1
 slot1 = {
-	parent = 133,
-	name = "FRONTSIDEATTACK"
+	name = "LEFTSIDEATTACK",
+	parent = 135
 }
 slot0[137] = slot1
 slot1 = {
-	parent = 133,
-	name = "BACKSIDEATTACK"
+	name = "RIGHTSIDEATTACK",
+	parent = 135
 }
 slot0[138] = slot1
 slot1 = {
-	parent = 0,
-	name = "SKILL"
+	name = "FRONTSIDEATTACK",
+	parent = 135
 }
 slot0[139] = slot1
 slot1 = {
-	parent = 0,
-	name = "NORMALATTACK"
+	name = "BACKSIDEATTACK",
+	parent = 135
 }
 slot0[140] = slot1
 slot1 = {
 	parent = 0,
-	name = "STRUGGLE"
+	name = "CLIMBWATERFALL",
+	isStateMachine = true
 }
 slot0[141] = slot1
 slot1 = {
-	parent = 0,
-	name = "HOOKCANCEL"
+	name = "CLIMBWATERFALLJUMPON",
+	parent = 141
 }
 slot0[142] = slot1
 slot1 = {
-	parent = 0,
-	name = "SKILLGLIDING"
+	name = "CLIMBWATERFALLIDLE",
+	parent = 141
 }
 slot0[143] = slot1
 slot1 = {
-	parent = 0,
-	name = "SKILLGLIDINGEND"
+	name = "CLIMBWATERFALLMOVE",
+	parent = 141
 }
 slot0[144] = slot1
 slot1 = {
-	parent = 0,
-	name = "INFLATEDASH"
+	name = "CLIMBWATERFALLJUMPOUT",
+	parent = 141
 }
 slot0[145] = slot1
 slot1 = {
-	parent = 92,
-	name = "CROUCHTHROWIDLE"
+	name = "CLIMBWATERFALLJUMPTOP",
+	parent = 141
 }
 slot0[146] = slot1
 slot1 = {
-	parent = 92,
-	name = "CROUCHTHROWMOVE"
+	name = "CLIMBWATERFALLJUMPDASH",
+	parent = 141
 }
 slot0[147] = slot1
 slot1 = {
-	name = "THROWING",
-	isStateMachine = true,
+	name = "SKILL",
 	parent = 0
 }
 slot0[148] = slot1
 slot1 = {
-	parent = 148,
-	name = "THROWWALK"
+	name = "NORMALATTACK",
+	parent = 0
 }
 slot0[149] = slot1
 slot1 = {
-	parent = 148,
-	name = "THROWIDLE"
+	name = "STRUGGLE",
+	parent = 0
 }
 slot0[150] = slot1
 slot1 = {
-	name = "MAGNESIS",
-	isStateMachine = true,
+	name = "HOOKCANCEL",
 	parent = 0
 }
 slot0[151] = slot1
 slot1 = {
-	parent = 151,
-	name = "MAGNESISBEGIN"
+	name = "SKILLGLIDING",
+	parent = 0
 }
 slot0[152] = slot1
 slot1 = {
-	parent = 151,
-	name = "MAGNESISGRABWALK"
+	name = "SKILLGLIDINGEND",
+	parent = 0
 }
 slot0[153] = slot1
 slot1 = {
-	parent = 151,
-	name = "MAGNESISTHROW"
+	name = "INFLATEDASH",
+	parent = 0
 }
 slot0[154] = slot1
 slot1 = {
-	parent = 151,
-	name = "MAGNESISGRABIDLE"
+	name = "SOCIALANIM",
+	parent = 0
 }
 slot0[155] = slot1
 slot1 = {
-	name = "CLIMBACROSS",
-	isStateMachine = true,
-	parent = 0
+	name = "CROUCHTHROWIDLE",
+	parent = 94
 }
 slot0[156] = slot1
 slot1 = {
-	parent = 156,
-	name = "CLIMBACROSSSTEPUP"
+	name = "CROUCHTHROWMOVE",
+	parent = 94
 }
 slot0[157] = slot1
 slot1 = {
-	parent = 156,
-	name = "CLIMBACROSSL"
+	parent = 0,
+	name = "THROWING",
+	isStateMachine = true
 }
 slot0[158] = slot1
 slot1 = {
-	parent = 156,
-	name = "CLIMBACROSSH"
+	name = "THROWWALK",
+	parent = 158
 }
 slot0[159] = slot1
 slot1 = {
-	parent = 44,
-	name = "SKATEBOARDSTART"
+	name = "THROWIDLE",
+	parent = 158
 }
 slot0[160] = slot1
 slot1 = {
-	parent = 44,
-	name = "SKATEBOARDJUMPSTART"
+	parent = 0,
+	name = "MAGNESIS",
+	isStateMachine = true
 }
 slot0[161] = slot1
 slot1 = {
-	parent = 44,
-	name = "SKATEBOARDJUMPFALL"
+	name = "MAGNESISBEGIN",
+	parent = 161
 }
 slot0[162] = slot1
 slot1 = {
-	parent = 44,
-	name = "SKATEBOARDJUMPEND"
+	name = "MAGNESISGRABWALK",
+	parent = 161
 }
 slot0[163] = slot1
 slot1 = {
-	name = "DRUMMING",
-	isStateMachine = true,
-	parent = 0
+	name = "MAGNESISTHROW",
+	parent = 161
 }
 slot0[164] = slot1
 slot1 = {
-	parent = 164,
-	name = "DRUMIDLE"
+	name = "MAGNESISGRABIDLE",
+	parent = 161
 }
 slot0[165] = slot1
 slot1 = {
-	parent = 164,
-	name = "DRUMLEFTHAND"
+	parent = 0,
+	name = "CLIMBACROSS",
+	isStateMachine = true
 }
 slot0[166] = slot1
 slot1 = {
-	parent = 164,
-	name = "DRUMRIGHTHAND"
+	name = "CLIMBACROSSSTEPUP",
+	parent = 166
 }
 slot0[167] = slot1
 slot1 = {
-	parent = 164,
-	name = "DRUMLEFTSTOP"
+	name = "CLIMBACROSSL",
+	parent = 166
 }
 slot0[168] = slot1
 slot1 = {
-	parent = 164,
-	name = "DRUMRIGHTSTOP"
+	name = "CLIMBACROSSH",
+	parent = 166
 }
 slot0[169] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLEND"
+	name = "SKATEBOARDSTART",
+	parent = 44
 }
 slot0[170] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLIDLETOMOVE"
+	name = "SKATEBOARDJUMPSTART",
+	parent = 44
 }
 slot0[171] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLMOVETOIDLE"
+	name = "SKATEBOARDJUMPFALL",
+	parent = 44
 }
 slot0[172] = slot1
 slot1 = {
-	parent = 113,
-	name = "SKILLBEGIN"
+	name = "SKATEBOARDJUMPEND",
+	parent = 44
 }
 slot0[173] = slot1
 slot1 = {
-	name = "SKILLTHROWING",
-	isStateMachine = true,
-	parent = 0
+	parent = 0,
+	name = "DRUMMING",
+	isStateMachine = true
 }
 slot0[174] = slot1
 slot1 = {
-	parent = 174,
-	name = "SKILLTHROWIDLE"
+	name = "DRUMIDLE",
+	parent = 174
 }
 slot0[175] = slot1
 slot1 = {
-	parent = 174,
-	name = "SKILLTHROWMOVE"
+	name = "DRUMLEFTHAND",
+	parent = 174
 }
 slot0[176] = slot1
 slot1 = {
-	name = "WALKINGATTACK",
-	isStateMachine = true,
-	parent = 0
+	name = "DRUMRIGHTHAND",
+	parent = 174
 }
 slot0[177] = slot1
 slot1 = {
-	parent = 177,
-	name = "WALKINGATTACKIDLE"
+	name = "DRUMLEFTSTOP",
+	parent = 174
 }
 slot0[178] = slot1
 slot1 = {
-	parent = 177,
-	name = "WALKINGATTACKMOVE"
+	name = "DRUMRIGHTSTOP",
+	parent = 174
 }
 slot0[179] = slot1
 slot1 = {
-	name = "BEGG",
-	isStateMachine = true,
-	parent = 0
+	name = "SKILLEND",
+	parent = 114
 }
 slot0[180] = slot1
 slot1 = {
-	parent = 180,
-	name = "BEGGPICK"
+	name = "SKILLIDLETOMOVE",
+	parent = 114
 }
 slot0[181] = slot1
 slot1 = {
-	parent = 180,
-	name = "BEGGIDLE"
+	name = "SKILLMOVETOIDLE",
+	parent = 114
 }
 slot0[182] = slot1
 slot1 = {
-	parent = 180,
-	name = "BEGGRUN"
+	name = "SKILLBEGIN",
+	parent = 114
 }
 slot0[183] = slot1
 slot1 = {
-	parent = 180,
-	name = "BEGGDROP"
+	parent = 0,
+	name = "SKILLTHROWING",
+	isStateMachine = true
 }
 slot0[184] = slot1
 slot1 = {
-	parent = 180,
-	name = "BEGGLAND"
+	name = "SKILLTHROWIDLE",
+	parent = 184
 }
 slot0[185] = slot1
 slot1 = {
-	parent = 180,
-	name = "BEGGFALL"
+	name = "SKILLTHROWMOVE",
+	parent = 184
 }
 slot0[186] = slot1
 slot1 = {
-	name = "FALLEN",
-	isStateMachine = true,
-	parent = 0
+	parent = 0,
+	name = "WALKINGATTACK",
+	isStateMachine = true
 }
 slot0[187] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENIDLE"
+	name = "WALKINGATTACKIDLE",
+	parent = 187
 }
 slot0[188] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENDMOVESTART"
+	name = "WALKINGATTACKMOVE",
+	parent = 187
 }
 slot0[189] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENMOVELOOP"
+	parent = 0,
+	name = "BEGG",
+	isStateMachine = true
 }
 slot0[190] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENMOVELOOPEND"
+	name = "BEGGPICK",
+	parent = 190
 }
 slot0[191] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENSTANDUP"
+	name = "BEGGIDLE",
+	parent = 190
 }
 slot0[192] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENSTART"
+	name = "BEGGRUN",
+	parent = 190
 }
 slot0[193] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENFALL"
+	name = "BEGGDROP",
+	parent = 190
 }
 slot0[194] = slot1
 slot1 = {
-	parent = 187,
-	name = "FALLENFALLTOGROUND"
+	name = "BEGGLAND",
+	parent = 190
 }
 slot0[195] = slot1
 slot1 = {
-	name = "AID",
-	isStateMachine = true,
-	parent = 0
+	name = "BEGGFALL",
+	parent = 190
 }
 slot0[196] = slot1
 slot1 = {
-	parent = 196,
-	name = "AIDSTART"
+	name = "BEGGJUMP",
+	parent = 190
 }
 slot0[197] = slot1
 slot1 = {
-	parent = 196,
-	name = "AIDLOOP"
+	parent = 0,
+	name = "FALLEN",
+	isStateMachine = true
 }
 slot0[198] = slot1
 slot1 = {
-	parent = 196,
-	name = "AIDEND"
+	name = "FALLENIDLE",
+	parent = 198
 }
 slot0[199] = slot1
 slot1 = {
-	name = "EGGMODE",
-	isStateMachine = true,
-	parent = 0
+	name = "FALLENDMOVESTART",
+	parent = 198
 }
 slot0[200] = slot1
 slot1 = {
-	parent = 200,
-	name = "EGGMODEIDLE"
+	name = "FALLENMOVELOOP",
+	parent = 198
 }
 slot0[201] = slot1
 slot1 = {
-	parent = 200,
-	name = "EGGMODEJUMP"
+	name = "FALLENMOVELOOPEND",
+	parent = 198
 }
 slot0[202] = slot1
 slot1 = {
-	parent = 200,
-	name = "EGGMODEBEATTACHED"
+	name = "FALLENSTANDUP",
+	parent = 198
 }
 slot0[203] = slot1
 slot1 = {
-	name = "DIGEGG",
-	isStateMachine = true,
-	parent = 0
+	name = "FALLENSTART",
+	parent = 198
 }
 slot0[204] = slot1
 slot1 = {
-	parent = 204,
-	name = "DIGEGGSTART"
+	name = "FALLENFALL",
+	parent = 198
 }
 slot0[205] = slot1
 slot1 = {
-	parent = 204,
-	name = "DIGEGGIDLE"
+	name = "FALLENFALLTOGROUND",
+	parent = 198
 }
 slot0[206] = slot1
 slot1 = {
-	parent = 204,
-	name = "DIGEGGACTION"
+	parent = 0,
+	name = "AID",
+	isStateMachine = true
 }
 slot0[207] = slot1
 slot1 = {
-	parent = 204,
-	name = "DIGEGGEND"
+	name = "AIDSTART",
+	parent = 207
 }
 slot0[208] = slot1
 slot1 = {
-	name = "CARRY",
-	isStateMachine = true,
-	parent = 0
+	name = "AIDLOOP",
+	parent = 207
 }
 slot0[209] = slot1
 slot1 = {
-	parent = 209,
-	name = "CARRYSTART"
+	name = "AIDEND",
+	parent = 207
 }
 slot0[210] = slot1
 slot1 = {
-	parent = 209,
-	name = "CARRYIDLE"
+	parent = 0,
+	name = "EGGMODE",
+	isStateMachine = true
 }
 slot0[211] = slot1
 slot1 = {
-	parent = 209,
-	name = "CARRYRUN"
+	name = "EGGMODEIDLE",
+	parent = 211
 }
 slot0[212] = slot1
 slot1 = {
-	parent = 209,
-	name = "CARRYLAND"
+	name = "EGGMODEJUMP",
+	parent = 211
 }
 slot0[213] = slot1
 slot1 = {
-	parent = 209,
-	name = "CARRYFALL"
+	name = "EGGMODEBEATTACHED",
+	parent = 211
 }
 slot0[214] = slot1
 slot1 = {
-	parent = 209,
-	name = "CARRYEND"
+	parent = 0,
+	name = "DIGEGG",
+	isStateMachine = true
 }
 slot0[215] = slot1
 slot1 = {
-	name = "FISHINGCAPTURE",
-	isStateMachine = true,
-	parent = 0
+	name = "DIGEGGSTART",
+	parent = 215
 }
 slot0[216] = slot1
 slot1 = {
-	parent = 216,
-	name = "FISHINGCAPTUREIDLE"
+	name = "DIGEGGIDLE",
+	parent = 215
 }
 slot0[217] = slot1
 slot1 = {
-	parent = 216,
-	name = "FISHINGCAPTUREMOVE"
+	name = "DIGEGGACTION",
+	parent = 215
 }
 slot0[218] = slot1
 slot1 = {
-	parent = 0,
-	name = "REVIVE"
+	name = "DIGEGGEND",
+	parent = 215
 }
 slot0[219] = slot1
 slot1 = {
 	parent = 0,
-	name = "SOCIALANIM"
+	name = "CARRY",
+	isStateMachine = true
 }
 slot0[220] = slot1
 slot1 = {
-	parent = 0,
-	name = "NEARDEAD"
+	name = "CARRYSTART",
+	parent = 220
 }
 slot0[221] = slot1
 slot1 = {
-	parent = 0,
-	name = "BEATTACHED"
+	name = "CARRYIDLE",
+	parent = 220
 }
 slot0[222] = slot1
+slot1 = {
+	name = "CARRYRUN",
+	parent = 220
+}
+slot0[223] = slot1
+slot1 = {
+	name = "CARRYLAND",
+	parent = 220
+}
+slot0[224] = slot1
+slot1 = {
+	name = "CARRYFALL",
+	parent = 220
+}
+slot0[225] = slot1
+slot1 = {
+	name = "CARRYEND",
+	parent = 220
+}
+slot0[226] = slot1
+slot1 = {
+	parent = 0,
+	name = "FISHINGCAPTURE",
+	isStateMachine = true
+}
+slot0[227] = slot1
+slot1 = {
+	name = "FISHINGCAPTUREIDLE",
+	parent = 227
+}
+slot0[228] = slot1
+slot1 = {
+	name = "FISHINGCAPTUREMOVE",
+	parent = 227
+}
+slot0[229] = slot1
+slot1 = {
+	name = "REVIVE",
+	parent = 0
+}
+slot0[230] = slot1
+slot1 = {
+	name = "NEARDEAD",
+	parent = 0
+}
+slot0[231] = slot1
+slot1 = {
+	name = "BEATTACHED",
+	parent = 0
+}
+slot0[232] = slot1
 
 return slot0
 --- END OF BLOCK #0 ---

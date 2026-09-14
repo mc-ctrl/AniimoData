@@ -1,4 +1,4 @@
---- BLOCK #0 1-2211, warpins: 1 ---
+--- BLOCK #0 1-2607, warpins: 1 ---
 slot0 = {}
 slot1 = {
 	"string",
@@ -6,7 +6,7 @@ slot1 = {
 }
 slot0.RPC_CS_SendBallMsg = slot1
 slot1 = {}
-slot0.RPC_CS_PVPBotPlayerCreated = slot1
+slot0.RPC_CS_BotPlayerCreated = slot1
 slot1 = {}
 slot0.RPC_CS_StartDialogue = slot1
 slot1 = {}
@@ -86,16 +86,35 @@ slot1 = {
 }
 slot0.RPC_CS_TiktokRequest = slot1
 slot1 = {
+	"int",
+	"int"
+}
+slot0.RPC_CS_UpdateClientVersion = slot1
+slot1 = {
 	"string",
 	"string"
 }
-slot0.RPC_CS_UpdateClientInfo = slot1
+slot0.RPC_CS_BindSocialMediaAccount = slot1
+slot1 = {
+	"string"
+}
+slot0.RPC_CS_UnbindSocialMediaAccount = slot1
+slot1 = {
+	"string",
+	"string",
+	"table"
+}
+slot0.RPC_CS_BatchResolveSocialAccounts = slot1
+slot1 = {
+	"string"
+}
+slot0.RPC_CS_ChangeThemePhotographyStudioUid = slot1
 slot1 = {
 	"float",
 	"float",
 	"float"
 }
-slot0.RPC_CS_GotoByPos = slot1
+slot0.RPC_CS_AICallTeleport = slot1
 slot1 = {
 	"string",
 	"float",
@@ -146,19 +165,17 @@ slot1 = {
 slot0.RPC_CS_StartGameTime = slot1
 slot1 = {
 	"string",
+	"int",
+	"float",
+	"int"
+}
+slot0.RPC_CS_SyncGameTimeScaleRequest = slot1
+slot1 = {
+	"string",
+	"int",
 	"int"
 }
 slot0.RPC_CS_StopGameTime = slot1
-slot1 = {
-	"string",
-	"table"
-}
-slot0.RPC_CS_OnEcsWorldUpdate = slot1
-slot1 = {
-	"string",
-	"table"
-}
-slot0.RPC_CS_OnEcsWorldBrocast = slot1
 slot1 = {
 	"string",
 	"string",
@@ -316,18 +333,6 @@ slot1 = {
 }
 slot0.RPC_CS_SyncStopMagnesisEffect = slot1
 slot1 = {
-	"number"
-}
-slot0.RPC_CS_SkillPortalTeleport = slot1
-slot1 = {
-	"table"
-}
-slot0.RPC_CS_PsychicControllTargetMove = slot1
-slot1 = {
-	"table"
-}
-slot0.RPC_CS_SetPsychicControlledOffset = slot1
-slot1 = {
 	"int",
 	"int"
 }
@@ -345,6 +350,13 @@ slot1 = {
 	"int"
 }
 slot0.RPC_CS_CastAbilityOnPosRot = slot1
+slot1 = {
+	"number",
+	"table",
+	"table",
+	"table"
+}
+slot0.RPC_CS_NotifyAbilityTeleport = slot1
 slot1 = {
 	"number",
 	"table",
@@ -576,17 +588,6 @@ slot1 = {
 slot0.RPC_CS_OnInteractProj = slot1
 slot1 = {
 	"number",
-	"table",
-	"table",
-	"table",
-	"table",
-	"number",
-	"boolean",
-	"table"
-}
-slot0.RPC_CS_CreatePortalEntity = slot1
-slot1 = {
-	"number",
 	"table"
 }
 slot0.RPC_CS_DebugModeCallDoAction = slot1
@@ -695,11 +696,6 @@ slot1 = {
 }
 slot2 = "RPC_CS_WaterAbsorbDataReady"
 slot0[slot2] = slot1
-slot1 = {
-	"number"
-}
-slot2 = "RPC_CS_PvpSpaceDoFastForward"
-slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_FinishDestroyAllProjectile"
 slot0[slot2] = slot1
@@ -717,24 +713,20 @@ slot2 = "RPC_CS_SyncVoxelTagNum"
 slot0[slot2] = slot1
 slot1 = {
 	"number",
+	"number",
+	"string",
+	"number"
+}
+slot2 = "RPC_CS_SyncServerPuppetCreationVoxelTagNum"
+slot0[slot2] = slot1
+slot1 = {
+	"number",
 	"table"
 }
 slot2 = "RPC_CS_DoActionCallback"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_OnPawnMovedDistanceReachThreshold"
-slot0[slot2] = slot1
-slot1 = {
-	"number"
-}
-slot2 = "RPC_CS_CutSceneFastforward"
-slot0[slot2] = slot1
-slot1 = {
-	"number",
-	"number",
-	"number"
-}
-slot2 = "RPC_CS_OnEcsBuffCountChange"
 slot0[slot2] = slot1
 slot1 = {
 	"number",
@@ -778,6 +770,11 @@ slot0[slot2] = slot1
 slot1 = {
 	"number"
 }
+slot2 = "RPC_CS_DisableReturnAbilityConsumes"
+slot0[slot2] = slot1
+slot1 = {
+	"number"
+}
 slot2 = "RPC_CS_CharacterStateChange"
 slot0[slot2] = slot1
 slot1 = {
@@ -789,6 +786,9 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_RemoveEntityTag"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_OnReachImpulseThreshold"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
@@ -805,20 +805,6 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_SetGhostEyeState"
-slot0[slot2] = slot1
-slot1 = {
-	"int"
-}
-slot2 = "RPC_CS_SyncEcsState"
-slot0[slot2] = slot1
-slot1 = {}
-slot2 = "RPC_CS_OnReachImpulseThreshold"
-slot0[slot2] = slot1
-slot1 = {
-	"number",
-	"table"
-}
-slot2 = "RPC_CS_NotifyAbilityTeleport"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_NotifyAbilityTeleportByUltimate"
@@ -840,6 +826,41 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_MountVehicle"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_StartDriveVehicle"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_StopDriveVehicle"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string"
+}
+slot2 = "RPC_CS_InviteRideVehicle"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string",
+	"boolean"
+}
+slot2 = "RPC_CS_AcceptRideVehicleInvite"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_ApplyRideVehicle"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string",
+	"boolean"
+}
+slot2 = "RPC_CS_ApproveRideVehicleApply"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
@@ -939,11 +960,6 @@ slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
-slot2 = "RPC_CS_EcoTraceGetReward"
-slot0[slot2] = slot1
-slot1 = {
-	"int"
-}
 slot2 = "RPC_CS_GetEnergyMatchAward"
 slot0[slot2] = slot1
 slot1 = {
@@ -1014,9 +1030,37 @@ slot1 = {}
 slot2 = "RPC_CS_GrowthGiftReceiveEgg"
 slot0[slot2] = slot1
 slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_ReceiveBindAccountAward"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_GetBindAccountAwardStatus"
+slot0[slot2] = slot1
+slot1 = {
 	"string"
 }
+slot2 = "RPC_CS_GetGuideMiniProgramCode"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_ReceiveBpCycleReward"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int"
+}
 slot2 = "RPC_CS_SetAvatarConfig"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_CheckAvatarSuitUnlocked"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int"
+}
+slot2 = "RPC_CS_SetAvatarMakeupConfig"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -1145,6 +1189,11 @@ slot1 = {
 slot2 = "RPC_CS_UploadAppearancePhoto"
 slot0[slot2] = slot1
 slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_CheckAppearanceItemList"
+slot0[slot2] = slot1
+slot1 = {
 	"int",
 	"int"
 }
@@ -1244,9 +1293,10 @@ slot1 = {
 slot2 = "RPC_CS_OpenPrivateChat"
 slot0[slot2] = slot1
 slot1 = {
+	"string",
 	"number"
 }
-slot2 = "RPC_CS_SwitchWorldChatChannel"
+slot2 = "RPC_CS_SwitchChannel"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_GetChatPositionCard"
@@ -1325,6 +1375,13 @@ slot1 = {
 	"table"
 }
 slot2 = "RPC_CS_SpaceMethod"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"table",
+	"string"
+}
+slot2 = "RPC_CS_ReliableSpaceMethod"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
@@ -1437,7 +1494,16 @@ slot1 = {
 slot2 = "RPC_CS_doEventFromClient"
 slot0[slot2] = slot1
 slot1 = {}
+slot2 = "RPC_CS_GetRecentDungeonPlaymates"
+slot0[slot2] = slot1
+slot1 = {}
 slot2 = "RPC_CS_GetRecommendPlayer"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int"
+}
+slot2 = "RPC_CS_UnlockFriendshipPermission"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
@@ -1479,6 +1545,22 @@ slot1 = {
 slot2 = "RPC_CS_AcceptPlatformShellInvite"
 slot0[slot2] = slot1
 slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_RequestPsnBlockStates"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string"
+}
+slot2 = "RPC_CS_CreateDiscordActivityInvite"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_AcceptDiscordActivityInvite"
+slot0[slot2] = slot1
+slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_ResetTarget"
@@ -1511,6 +1593,7 @@ slot1 = {
 slot2 = "RPC_CS_UseItem"
 slot0[slot2] = slot1
 slot1 = {
+	"int",
 	"int",
 	"int",
 	"int"
@@ -1748,7 +1831,20 @@ slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
+slot2 = "RPC_CS_SetMediaMarkerView"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
 slot2 = "RPC_CS_NpcFirstMeet"
+slot0[slot2] = slot1
+slot1 = {
+	"boolean"
+}
+slot2 = "RPC_CS_SetDirectBuySwitchChecked"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_ClaimRechargeRebateReward"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
@@ -1762,58 +1858,6 @@ slot1 = {
 	"string"
 }
 slot2 = "RPC_CS_DeletePayOrder"
-slot0[slot2] = slot1
-slot1 = {
-	"string",
-	"string"
-}
-slot2 = "RPC_CS_PetBallRename"
-slot0[slot2] = slot1
-slot1 = {
-	"string"
-}
-slot2 = "RPC_CS_PetBallStopAction"
-slot0[slot2] = slot1
-slot1 = {
-	"string"
-}
-slot2 = "RPC_CS_PetBallGetProduction"
-slot0[slot2] = slot1
-slot1 = {
-	"string",
-	"string"
-}
-slot2 = "RPC_CS_PetBallChangePet"
-slot0[slot2] = slot1
-slot1 = {
-	"string",
-	"int",
-	"int"
-}
-slot2 = "RPC_CS_PetBalladdExpAction"
-slot0[slot2] = slot1
-slot1 = {
-	"string"
-}
-slot2 = "RPC_CS_PetBallclearExpAction"
-slot0[slot2] = slot1
-slot1 = {
-	"string",
-	"string"
-}
-slot2 = "RPC_CS_PetBallChangeSubPet"
-slot0[slot2] = slot1
-slot1 = {
-	"string"
-}
-slot2 = "RPC_CS_PetBallSetCurIndex"
-slot0[slot2] = slot1
-slot1 = {
-	"string",
-	"string",
-	"table"
-}
-slot2 = "RPC_CS_PetBreed"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -1892,11 +1936,15 @@ slot0[slot2] = slot1
 slot1 = {
 	"int",
 	"int",
+	"int",
+	"int",
 	"int"
 }
 slot2 = "RPC_CS_ChangeDisplayPetForm"
 slot0[slot2] = slot1
 slot1 = {
+	"int",
+	"int",
 	"int",
 	"int"
 }
@@ -2193,6 +2241,12 @@ slot1 = {
 slot2 = "RPC_CS_PetReplaceAndUseCurrTransmogScheme"
 slot0[slot2] = slot1
 slot1 = {
+	"string",
+	"table"
+}
+slot2 = "RPC_CS_PetLockTransmogSchemeHole"
+slot0[slot2] = slot1
+slot1 = {
 	"string"
 }
 slot2 = "RPC_CS_PetBreakthrough"
@@ -2259,6 +2313,11 @@ slot1 = {
 slot2 = "RPC_CS_UpgradeCoreCarry"
 slot0[slot2] = slot1
 slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_CertifyCoreCarry"
+slot0[slot2] = slot1
+slot1 = {
 	"table"
 }
 slot2 = "RPC_CS_ComposeAssistCarry"
@@ -2289,12 +2348,6 @@ slot1 = {
 	"string"
 }
 slot2 = "RPC_CS_UpgradeResonance"
-slot0[slot2] = slot1
-slot1 = {
-	"string",
-	"int"
-}
-slot2 = "RPC_CS_UpgradePetSkill"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -2353,6 +2406,20 @@ slot1 = {
 }
 slot2 = "RPC_CS_LikePhotoPresetDel"
 slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_CheckPhotoUploadLimit"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string"
+}
+slot2 = "RPC_CS_UploadPhotoLightScheme"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_RemoveOSSPhoto"
+slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
@@ -2373,6 +2440,74 @@ slot1 = {
 	"table"
 }
 slot2 = "RPC_CS_SendSpecifyPhotoStudioMsg"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_ReqPhotographyStudioUnlock"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_CreatePhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_UpdatePhotographyStudioName"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_SyncPhotographyStudioContent"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_InvitePhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_AcceptInvitePhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_RemoveInvitePhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_RemovePhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string"
+}
+slot2 = "RPC_CS_LeaveInvitePhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_ChangeProfilePhotographyStudioUid"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_EnterPhotographyStudio"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_GetPhotographyStudioActives"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_LeavePhotographyStudio"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
@@ -2417,7 +2552,6 @@ slot1 = {
 slot2 = "RPC_CS_BossRushSelectTankEntId"
 slot0[slot2] = slot1
 slot1 = {
-	"int",
 	"int"
 }
 slot2 = "RPC_CS_BossRushSelectBattleBuff"
@@ -2430,6 +2564,9 @@ slot2 = "RPC_CS_BossRushGuankaBatAgain"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_BossRushQuitAndSettle"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_BossRushRequireAddBot"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
@@ -2444,6 +2581,14 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_BossRushPrepare"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_BossRushReceiveSeasonReward"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_BossRushReceiveAllSeasonReward"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
@@ -2536,6 +2681,11 @@ slot1 = {
 slot2 = "RPC_CS_DebugTeleportScene"
 slot0[slot2] = slot1
 slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_DebugCheckAttributeConstVersion"
+slot0[slot2] = slot1
+slot1 = {
 	"int",
 	"string",
 	"table"
@@ -2598,6 +2748,11 @@ slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
+slot2 = "RPC_CS_UnlockCourse"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
 slot2 = "RPC_CS_StartCourse"
 slot0[slot2] = slot1
 slot1 = {
@@ -2615,6 +2770,11 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_GetCourseReward"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_SubmitHomeCampSnapshot"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_ReqEnterSelfHomeCamp"
@@ -2637,6 +2797,11 @@ slot1 = {
 slot2 = "RPC_CS_AddCarOrnament"
 slot0[slot2] = slot1
 slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_AddCarOrnaments"
+slot0[slot2] = slot1
+slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_RemoveCarOrnament"
@@ -2653,19 +2818,98 @@ slot1 = {
 slot2 = "RPC_CS_UpdateCarOrnament"
 slot0[slot2] = slot1
 slot1 = {
-	"int"
+	"table",
+	"table"
 }
-slot2 = "RPC_CS_RefreshHomeOrder"
+slot2 = "RPC_CS_UpdateCarOrnaments"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_RecordHandbookViewedGrade"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_ReceiveHandbookGradeReward"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
-slot2 = "RPC_CS_RefreshOrderByMoney"
+slot2 = "RPC_CS_ReceiveCategoryProgressReward"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
-slot2 = "RPC_CS_SubmitHomeOrder"
+slot2 = "RPC_CS_ReceiveHomeSeasonTaskReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_SubmitHomeSeasonOrder"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_ReceiveHomeSeasonCollectionReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_StartHomeSeasonCelebration"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_BeginHomeSeasonCelebration"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_CancelHomeSeasonCelebration"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RecordHomeSeasonMutation"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_ReceiveHomeSeasonMutationReward"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_DecomposeHomeSeasonMutationItems"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int"
+}
+slot2 = "RPC_CS_SendHomeSeasonMutationGift"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int"
+}
+slot2 = "RPC_CS_RequestHelpToFriend"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int"
+}
+slot2 = "RPC_CS_RequestHelpToChannel"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_RespondHelp"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_GetSimulateOutputRecord"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_SetHomelandBgm"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_SubmitHomelandSnapshot"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_UnlockHomeland"
@@ -2677,6 +2921,64 @@ slot1 = {
 	"string"
 }
 slot2 = "RPC_CS_ReqEnterHomeland"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_DeleteHomeBlueprintBuildGroup"
+slot0[slot2] = slot1
+slot1 = {
+	"table",
+	"string",
+	"string",
+	"table",
+	"table"
+}
+slot2 = "RPC_CS_UploadHomeBlueprint"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_QueryHomeBlueprintByCode"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_SaveOtherHomeBlueprint"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_DeleteUploadedHomeBlueprint"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string",
+	"string",
+	"table"
+}
+slot2 = "RPC_CS_UpdateUploadedHomeBlueprint"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_DeleteSavedOtherHomeBlueprint"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_GetHomeBlueprintTabList"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string",
+	"table",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_BuildHomeBlueprint"
 slot0[slot2] = slot1
 slot1 = {
 	"table",
@@ -2701,6 +3003,11 @@ slot1 = {
 slot2 = "RPC_CS_RemoveOrnaments"
 slot0[slot2] = slot1
 slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_ClearAllHomeOrnaments"
+slot0[slot2] = slot1
+slot1 = {
 	"int",
 	"table",
 	"table"
@@ -2712,6 +3019,11 @@ slot1 = {
 	"table"
 }
 slot2 = "RPC_CS_UpdateOrnaments"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_LiftOrnaments"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -2754,17 +3066,21 @@ slot1 = {
 slot2 = "RPC_CS_FavoriteCarOrnament"
 slot0[slot2] = slot1
 slot1 = {
-	"table"
+	"table",
+	"int"
 }
 slot2 = "RPC_CS_BatchAddHomelandPet"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
+	"int",
 	"int"
 }
 slot2 = "RPC_CS_AddHomelandPet"
 slot0[slot2] = slot1
 slot1 = {
+	"table",
+	"int",
 	"table",
 	"int"
 }
@@ -2772,6 +3088,8 @@ slot2 = "RPC_CS_BatchRemoveHomelandPet"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
+	"int",
+	"int",
 	"int",
 	"int"
 }
@@ -2785,14 +3103,12 @@ slot2 = "RPC_CS_UpdateHomelandPetPosition"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
+	"int",
+	"int",
+	"int",
 	"int"
 }
 slot2 = "RPC_CS_UpdateHomelandPetIndex"
-slot0[slot2] = slot1
-slot1 = {
-	"int"
-}
-slot2 = "RPC_CS_UnlockHomelandZone"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -2801,6 +3117,16 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_HomelandSellMaterials"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_AccelerateHomelandPlant"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_BatchAccelerateHomelandPlant"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -2853,6 +3179,9 @@ slot1 = {
 	"boolean"
 }
 slot2 = "RPC_CS_DeallocateHomePet"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_ResetAllHomePetWork"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -2914,6 +3243,9 @@ slot1 = {
 }
 slot2 = "RPC_CS_HomelandFoodOp"
 slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_HomePettingReward"
+slot0[slot2] = slot1
 slot1 = {
 	"string",
 	"int"
@@ -2921,25 +3253,94 @@ slot1 = {
 slot2 = "RPC_CS_HomeOperationFinished"
 slot0[slot2] = slot1
 slot1 = {
+	"string",
 	"int"
 }
-slot2 = "RPC_CS_PlantBookReward"
-slot0[slot2] = slot1
-slot1 = {
-	"int"
-}
-slot2 = "RPC_CS_PlantBookProcessReward"
+slot2 = "RPC_CS_HomeLeisureFinished"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
-	"table"
+	"int",
+	"int",
+	"int"
 }
-slot2 = "RPC_CS_PlantGive"
+slot2 = "RPC_CS_TryMountHomeLeisureRide"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_HomeLeisureManualOperationFinished"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_DoSpecialPetAIAction"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_CancelSpecialPetAIAction"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"boolean"
+}
+slot2 = "RPC_CS_SetPlantAutoCollectSwitch"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_SolveMutationEvent"
 slot0[slot2] = slot1
 slot1 = {
 	"table"
 }
 slot2 = "RPC_CS_SetPinnedFormulas"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_SolveTillHelpEvents"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_HomelandDemoGreet"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_HomelandDemoChat"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_HomelandDemoLearnMine"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_HomelandDemoResetTargetChain"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_HomeLotteryDraw"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_CollectHomeVoucher"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RefreshHomeOrder"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RefreshOrderByMoney"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_SubmitHomeOrder"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_UnlockHomelandZone"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_ReqStopHornAction"
@@ -2963,11 +3364,17 @@ slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
+slot2 = "RPC_CS_SetChatBubble"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
 slot2 = "RPC_CS_SetCardBackground"
 slot0[slot2] = slot1
 slot1 = {
 	"table",
-	"boolean"
+	"boolean",
+	"table"
 }
 slot2 = "RPC_CS_SetShowTitle"
 slot0[slot2] = slot1
@@ -3040,6 +3447,31 @@ slot2 = "RPC_CS_JoinMultiAppearanceAction"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_ExitMultiAppearanceAction"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_ReadKnowledge"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_OnShowContent"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_OnShowPieces"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_MappingRegionEnter"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_MappingRegionLeave"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -3208,6 +3640,40 @@ slot1 = {
 slot2 = "RPC_CS_SwapRobEggEquipChip"
 slot0[slot2] = slot1
 slot1 = {
+	"int",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_PutIntoShowCase"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_PutOutSideShowCase"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_GetShowCaseReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RefineRobEggAntique"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_GetRobEggLevelReward"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_OnOpenRobEggBag"
+slot0[slot2] = slot1
+slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_EnterNpcDuel"
@@ -3286,6 +3752,11 @@ slot1 = {
 slot2 = "RPC_CS_ReDoQuestCompleteActions"
 slot0[slot2] = slot1
 slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_GetChapterQuestProgressReward"
+slot0[slot2] = slot1
+slot1 = {
 	"int",
 	"boolean"
 }
@@ -3316,6 +3787,24 @@ slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_SendArkReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RiftStart"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_RiftEnd"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RiftRestart"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RiftClaimReward"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -3360,7 +3849,15 @@ slot1 = {
 }
 slot2 = "RPC_CS_TakeItemFromResourceBox"
 slot0[slot2] = slot1
-slot1 = {}
+slot1 = {
+	"number",
+	"number",
+	"number",
+	"number",
+	"number",
+	"number",
+	"number"
+}
 slot2 = "RPC_CS_PutOffMovedEgg"
 slot0[slot2] = slot1
 slot1 = {
@@ -3406,6 +3903,9 @@ slot1 = {
 }
 slot2 = "RPC_CS_TakeItemFromPlayer"
 slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_NotifyAttachCarryEgg"
+slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
@@ -3436,16 +3936,25 @@ slot1 = {
 }
 slot2 = "RPC_CS_ControlEgg"
 slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_RobEggHurt"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"number",
+	"number"
+}
+slot2 = "RPC_CS_RobEggRamHit"
+slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_UncontrolEgg"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_RequestLeaveEggManMode"
-slot0[slot2] = slot1
-slot1 = {
-	"boolean"
-}
-slot2 = "RPC_CS_NotifyEggModePlayerTransparentChange"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -3469,9 +3978,6 @@ slot1 = {
 }
 slot2 = "RPC_CS_OpenTheDoor"
 slot0[slot2] = slot1
-slot1 = {}
-slot2 = "RPC_CS_WillExitBecameArea"
-slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
@@ -3480,10 +3986,31 @@ slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
+slot2 = "RPC_CS_ReceiveRogueBookBuffReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_ReceiveRogueBookBossReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
 slot2 = "RPC_CS_GetRogueWeeklyKillBossReward"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_GetAllRogueWeeklyKillBossReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_GetRogueWeeklyLevelReward"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_GetAllRogueWeeklyLevelReward"
 slot0[slot2] = slot1
 slot1 = {
 	"table"
@@ -3592,6 +4119,11 @@ slot1 = {}
 slot2 = "RPC_CS_CancelLevelItemInteractState"
 slot0[slot2] = slot1
 slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_PlayChestRewardAttract"
+slot0[slot2] = slot1
+slot1 = {
 	"int"
 }
 slot2 = "RPC_CS_StartSlotMachine"
@@ -3624,7 +4156,8 @@ slot2 = "RPC_CS_SocialInviteReply"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
-	"int"
+	"int",
+	"table"
 }
 slot2 = "RPC_CS_PveHeartbeat"
 slot0[slot2] = slot1
@@ -3702,15 +4235,25 @@ slot1 = {
 slot2 = "RPC_CS_SetSpaceLogicTime"
 slot0[slot2] = slot1
 slot1 = {
-	"table",
 	"int"
 }
-slot2 = "RPC_CS_GetSpecialTrainEntryReward"
+slot2 = "RPC_CS_GetSpecialTrainChapterReward"
 slot0[slot2] = slot1
 slot1 = {
 	"int"
 }
-slot2 = "RPC_CS_GetSpecialTrainChapterReward"
+slot2 = "RPC_CS_FirstViewSpeicalTrainChapter"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_ViewSpecialTrainStarTitleQuest"
+slot0[slot2] = slot1
+slot1 = {
+	"table",
+	"int"
+}
+slot2 = "RPC_CS_GetSpecialTrainEntryReward"
 slot0[slot2] = slot1
 slot1 = {
 	"boolean"
@@ -3724,14 +4267,9 @@ slot1 = {}
 slot2 = "RPC_CS_FirstOpenSpecialTrainInterface"
 slot0[slot2] = slot1
 slot1 = {
-	"int"
+	"string"
 }
-slot2 = "RPC_CS_FirstViewSpeicalTrainChapter"
-slot0[slot2] = slot1
-slot1 = {
-	"int"
-}
-slot2 = "RPC_CS_ViewSpecialTrainStarTitleQuest"
+slot2 = "RPC_CS_QueryTeamMemberCount"
 slot0[slot2] = slot1
 slot1 = {}
 slot2 = "RPC_CS_DisbandTeam"
@@ -3756,6 +4294,11 @@ slot1 = {
 slot2 = "RPC_CS_RequestJoinTeam"
 slot0[slot2] = slot1
 slot1 = {
+	"boolean"
+}
+slot2 = "RPC_CS_SetAutoAcceptTeamJoinRequest"
+slot0[slot2] = slot1
+slot1 = {
 	"string",
 	"boolean"
 }
@@ -3772,6 +4315,16 @@ slot1 = {
 slot2 = "RPC_CS_KickTeamMember"
 slot0[slot2] = slot1
 slot1 = {
+	"boolean"
+}
+slot2 = "RPC_CS_SetCrossPlatformPermissions"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_SetPlatformUGCSwitch"
+slot0[slot2] = slot1
+slot1 = {
 	"int",
 	"table"
 }
@@ -3785,12 +4338,7 @@ slot1 = {
 slot2 = "RPC_CS_SetRtcRoomMute"
 slot0[slot2] = slot1
 slot1 = {}
-slot2 = "RPC_CS_RequestUserSig"
-slot0[slot2] = slot1
-slot1 = {
-	"boolean"
-}
-slot2 = "RPC_CS_SetCrossPlatformPermissions"
+slot2 = "RPC_CS_GenerateUserSig"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -3923,9 +4471,129 @@ slot2 = "RPC_CS_AddTotemRunes"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
+	"int",
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_TradeList"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_TradeRemoveListing"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string",
+	"int"
+}
+slot2 = "RPC_CS_TradeBuy"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_TradeBuyByPrice"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"boolean"
+}
+slot2 = "RPC_CS_TradeWatch"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_TradeGetWatchList"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"string"
+}
+slot2 = "RPC_CS_TradeRush"
+slot0[slot2] = slot1
+slot1 = {
+	"table",
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_TradeGetListings"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_TradeGetListingsByPrice"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_TradeGetMyListings"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_TradeGetRecords"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_TradeGetOverview"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_TradeGetRecommendPrice"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
 	"boolean"
 }
 slot2 = "RPC_CS_SummonVehicle"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_PlaceWorldFurniture"
+slot0[slot2] = slot1
+slot1 = {}
+slot2 = "RPC_CS_RecycleWorldFurniture"
+slot0[slot2] = slot1
+slot1 = {
+	"string"
+}
+slot2 = "RPC_CS_SyncPsnAuthCode"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_RandomShopBuyGoods"
+slot0[slot2] = slot1
+slot1 = {
+	"int"
+}
+slot2 = "RPC_CS_RandomShopRefresh"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int",
+	"int",
+	"boolean"
+}
+slot2 = "RPC_CS_RandomShopSetGoodsLock"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_MoneyChange"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
@@ -3976,6 +4644,22 @@ slot1 = {
 	"string"
 }
 slot2 = "RPC_CS_ShopMallGiveCommodity"
+slot0[slot2] = slot1
+slot1 = {
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_ShopMallCartModifyCommodityNum"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_ShopMallCartDelCommodity"
+slot0[slot2] = slot1
+slot1 = {
+	"table"
+}
+slot2 = "RPC_CS_ShopMallCartBuyCommodity"
 slot0[slot2] = slot1
 slot1 = {
 	"int",
@@ -4085,11 +4769,6 @@ slot1 = {
 slot2 = "RPC_CS_ActionMeteorSandbox"
 slot0[slot2] = slot1
 slot1 = {
-	"table"
-}
-slot2 = "RPC_CS_UpdataClientWeatherInfo"
-slot0[slot2] = slot1
-slot1 = {
 	"number",
 	"table"
 }
@@ -4157,6 +4836,30 @@ slot2 = "RPC_CS_DebugGetSandboxInfo"
 slot0[slot2] = slot1
 slot1 = {
 	"string",
+	"table"
+}
+slot2 = "RPC_CS_EcsUploadState"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"table"
+}
+slot2 = "RPC_CS_EcsRequestFullState"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"table"
+}
+slot2 = "RPC_CS_EcsAuthorityReady"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"table"
+}
+slot2 = "RPC_CS_EcsBuffCountChangeBatch"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
 	"int",
 	"table",
 	"table"
@@ -4194,6 +4897,13 @@ slot1 = {
 	"string"
 }
 slot2 = "RPC_CS_CallGraphNodePort"
+slot0[slot2] = slot1
+slot1 = {
+	"string",
+	"int",
+	"int"
+}
+slot2 = "RPC_CS_MmoItemConditionTrigger"
 slot0[slot2] = slot1
 
 return slot0

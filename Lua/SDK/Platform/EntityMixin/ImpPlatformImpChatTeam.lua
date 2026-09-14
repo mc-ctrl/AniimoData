@@ -1,4 +1,4 @@
---- BLOCK #0 1-32, warpins: 1 ---
+--- BLOCK #0 1-35, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Common.NoticeDef"
@@ -15,8 +15,11 @@ slot4 = slot4(slot6)
 slot5 = require
 slot7 = "SDK.Platform.PlatformNameMaskService"
 slot5 = slot5(slot7)
+slot6 = require
+slot8 = "SDK.Platform.PlatformShellActivityService"
+slot6 = slot6(slot8)
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -91,9 +94,9 @@ slot6 = function(slot0, slot1, slot2)
 
 end
 
-slot0.showSpaceFollowNotify = slot6
+slot0.showSpaceFollowNotify = slot7
 
-slot6 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = PlatformShellInviteService
 	--- END OF BLOCK #0 ---
@@ -222,9 +225,9 @@ slot6 = function(slot0)
 
 end
 
-slot0.canHandleOfflineTeamInvitePlayerInfo = slot6
+slot0.canHandleOfflineTeamInvitePlayerInfo = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = M
 	slot4 = slot4.canHandleOfflineTeamInvitePlayerInfo
@@ -237,12 +240,12 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.canHandleOfflineTeamInvite = slot6
+slot0.canHandleOfflineTeamInvite = slot7
 
-slot6 = function(slot0, slot1, slot2)
+slot7 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = NoticeDef
-	slot3 = slot3.CROSS_PLATFORM_MISMATCH
+	slot3 = slot3.TEAM_MSG_MAX_PLAYER
 	--- END OF BLOCK #0 ---
 
 	if slot2 == slot3 then
@@ -252,13 +255,19 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 5-12, warpins: 1 ---
-	slot3 = PlatformCrossPlatformService
+	--- BLOCK #1 5-18, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.tips
 	slot5 = slot3
-	slot3 = slot3.onServerCrossPlatformRejected
-	slot6 = "family_mismatch"
+	slot3 = slot3.showTextTip
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "OTHER_TEAM_FULL"
+	MULTRES = slot6(slot8)
 
-	slot3(slot5, slot6)
+	slot3(slot5, MULTRES)
 
 	slot3 = true
 
@@ -266,12 +275,12 @@ slot6 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #2 13-16, warpins: 1 ---
+	--- BLOCK #2 19-22, warpins: 1 ---
 	slot3 = NoticeDef
-	slot3 = slot3.CROSS_PLATFORM_DISABLE_MATCHING
+	slot3 = slot3.CROSS_PLATFORM_MISMATCH
 	--- END OF BLOCK #2 ---
 
 	if slot2 == slot3 then
@@ -281,7 +290,49 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 17-23, warpins: 1 ---
+	--- BLOCK #3 23-34, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot5 = slot3
+	slot3 = slot3.clearCurrentActivity
+	slot6 = "cross_platform_team_notice"
+
+	slot3(slot5, slot6)
+
+	slot3 = PlatformCrossPlatformService
+	slot3 = slot3.showNoticeTip
+	slot5 = slot2
+
+	slot3(slot5)
+
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #4 35-38, warpins: 1 ---
+	slot3 = NoticeDef
+	slot3 = slot3.CROSS_PLATFORM_DISABLE_MATCHING
+	--- END OF BLOCK #4 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 39-50, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot5 = slot3
+	slot3 = slot3.clearCurrentActivity
+	slot6 = "cross_platform_team_notice"
+
+	slot3(slot5, slot6)
+
 	slot3 = PlatformCrossPlatformService
 	slot5 = slot3
 	slot3 = slot3.showMatchPermissionDeniedToast
@@ -292,42 +343,14 @@ slot6 = function(slot0, slot1, slot2)
 
 	return slot3
 
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #4 24-27, warpins: 1 ---
-	slot3 = NoticeDef
-	slot3 = slot3.CROSS_PLATFORM_DISABLE_TEAM
-	--- END OF BLOCK #4 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 28-34, warpins: 1 ---
-	slot3 = PlatformCrossPlatformService
-	slot5 = slot3
-	slot3 = slot3.showFamilyConflictToast
-
-	slot3(slot5)
-
-	slot3 = true
-
-	return slot3
-
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #6 35-38, warpins: 1 ---
+	--- BLOCK #6 51-54, warpins: 1 ---
 	slot3 = NoticeDef
-	slot3 = slot3.CROSS_PLATFORM_DISABLE_WORLD
+	slot3 = slot3.CROSS_PLATFORM_DISABLE_TEAM
 	--- END OF BLOCK #6 ---
 
 	if slot2 == slot3 then
@@ -337,7 +360,14 @@ slot6 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 39-44, warpins: 1 ---
+	--- BLOCK #7 55-66, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot5 = slot3
+	slot3 = slot3.clearCurrentActivity
+	slot6 = "cross_platform_team_notice"
+
+	slot3(slot5, slot6)
+
 	slot3 = PlatformCrossPlatformService
 	slot5 = slot3
 	slot3 = slot3.showFamilyConflictToast
@@ -350,22 +380,57 @@ slot6 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #8 45-46, warpins: 5 ---
+	--- BLOCK #8 67-70, warpins: 1 ---
+	slot3 = NoticeDef
+	slot3 = slot3.CROSS_PLATFORM_DISABLE_WORLD
+	--- END OF BLOCK #8 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 71-81, warpins: 1 ---
+	slot3 = PlatformShellActivityService
+	slot5 = slot3
+	slot3 = slot3.clearCurrentActivity
+	slot6 = "cross_platform_team_notice"
+
+	slot3(slot5, slot6)
+
+	slot3 = PlatformCrossPlatformService
+	slot5 = slot3
+	slot3 = slot3.showFamilyConflictToast
+
+	slot3(slot5)
+
+	slot3 = true
+
+	return slot3
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 82-83, warpins: 6 ---
 	slot3 = false
 
 	return slot3
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot0.recvTeamNotice = slot6
+slot0.recvTeamNotice = slot7
 
-slot6 = function(slot0, slot1, slot2, slot3)
+slot7 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -519,9 +584,9 @@ slot6 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.tryMaskPlayerName = slot6
+slot0.tryMaskPlayerName = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getPlayerInfo
@@ -542,9 +607,9 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot0.handleRequireSpaceFollowNotify = slot6
+slot0.handleRequireSpaceFollowNotify = slot7
 
-slot6 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getPlayerInfo
@@ -565,7 +630,7 @@ slot6 = function(slot0, slot1)
 
 end
 
-slot0.handleInviteSpaceFollowNotify = slot6
+slot0.handleInviteSpaceFollowNotify = slot7
 
 return slot0
 --- END OF BLOCK #0 ---

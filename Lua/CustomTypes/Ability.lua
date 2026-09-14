@@ -609,27 +609,7 @@ end
 slot20.refresh = slot21
 
 slot21 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.isDestroyed
-
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-4, warpins: 1 ---
-	return
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 5-13, warpins: 2 ---
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = true
 	slot0.isDestroyed = slot1
 	slot3 = slot0
@@ -643,7 +623,7 @@ slot21 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
@@ -1068,7 +1048,7 @@ slot21 = function(slot0)
 	if slot2 ~= slot3 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #27
 	end
 
 
@@ -1307,38 +1287,63 @@ slot21 = function(slot0)
 	slot6 = if slot6 then
 	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #24 98-114, warpins: 1 ---
+	--- BLOCK #24 98-117, warpins: 1 ---
 	slot7 = slot2.rogueCombatData
 	slot8 = AbilityConst
 	slot8 = slot8.ROGUE_BATTLE_DATA_KEY
 	slot8 = slot8.SKILL_EP
 	slot7 = slot7[slot8]
-	slot7 = slot7 - slot6
-	slot8 = math
-	slot8 = slot8.max
-	slot10 = 0
-	slot11 = slot7
-	slot8 = slot8(slot10, slot11)
-	slot7 = slot8
 	slot8 = slot2.rogueCombatData
 	slot9 = AbilityConst
 	slot9 = slot9.ROGUE_BATTLE_DATA_KEY
 	slot9 = slot9.SKILL_EP
-	slot8[slot9] = slot7
+	slot8 = slot8[slot9]
+	slot8 = slot8 - slot6
+	slot9 = math
+	slot9 = slot9.max
+	slot11 = 0
+	slot12 = slot8
+	slot9 = slot9(slot11, slot12)
+	slot8 = slot9
+	slot9 = slot1.lastAbilityConsume
 	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #25
+	slot9 = if slot9 then
+	JUMP TO BLOCK #25
+	else
+	JUMP TO BLOCK #26
+	end
 
 
-	--- BLOCK #25 115-116, warpins: 3 ---
+	--- BLOCK #25 118-120, warpins: 1 ---
+	slot9 = slot1.lastAbilityConsume
+	slot10 = slot7 - slot8
+	slot9.skillEp = slot10
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 121-125, warpins: 2 ---
+	slot9 = slot2.rogueCombatData
+	slot10 = AbilityConst
+	slot10 = slot10.ROGUE_BATTLE_DATA_KEY
+	slot10 = slot10.SKILL_EP
+	slot9[slot10] = slot8
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 126-127, warpins: 3 ---
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #25 ---
+	--- END OF BLOCK #27 ---
 
 
 
@@ -1377,7 +1382,7 @@ slot21 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-33, warpins: 2 ---
+	--- BLOCK #3 9-41, warpins: 2 ---
 	slot3 = math
 	slot3 = slot3.max
 	slot5 = slot1.actorCombatAttribute
@@ -1395,13 +1400,21 @@ slot21 = function(slot0, slot1)
 	slot7 = AttributeConst
 	slot7 = slot7.ep_cost_reduce_fix
 	slot4 = slot4(slot6, slot7)
-	slot5 = math
-	slot5 = slot5.max
-	slot7 = slot2 - slot4
-	slot7 = slot7 * slot3
-	slot8 = 0
+	slot5 = slot1.actorCombatAttribute
+	slot7 = slot5
+	slot5 = slot5.getRawAttribValue
+	slot8 = AttributeConst
+	slot8 = slot8.shining_ep_cost_inc_ratio
 	slot5 = slot5(slot7, slot8)
-	slot2 = slot5
+	slot5 = 1 + slot5
+	slot6 = math
+	slot6 = slot6.max
+	slot8 = slot2 - slot4
+	slot8 = slot8 * slot3
+	slot8 = slot8 * slot5
+	slot9 = 0
+	slot6 = slot6(slot8, slot9)
+	slot2 = slot6
 
 	return slot2
 	--- END OF BLOCK #3 ---
@@ -1673,13 +1686,16 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 68-78, warpins: 6 ---
+	--- BLOCK #16 68-81, warpins: 6 ---
 	slot7 = slot4.lastAbilityConsume
 	slot8 = 0
 	slot7.cd = slot8
 	slot7 = slot4.lastAbilityConsume
 	slot8 = 0
 	slot7.ep = slot8
+	slot7 = slot4.lastAbilityConsume
+	slot8 = 0
+	slot7.skillEp = slot8
 	slot7 = AbilityConst
 	slot7 = slot7.CAST_SOURCE
 	slot7 = slot7.CALL_FRIENDS
@@ -1692,7 +1708,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #17 79-81, warpins: 1 ---
+	--- BLOCK #17 82-84, warpins: 1 ---
 	slot7 = slot4.isDummyClone
 	--- END OF BLOCK #17 ---
 
@@ -1703,7 +1719,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #18 82-94, warpins: 1 ---
+	--- BLOCK #18 85-97, warpins: 1 ---
 	slot9 = slot0
 	slot7 = slot0.consumeCost
 
@@ -1726,7 +1742,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #19 95-97, warpins: 1 ---
+	--- BLOCK #19 98-100, warpins: 1 ---
 	slot8 = slot4.delItemById
 	--- END OF BLOCK #19 ---
 
@@ -1737,7 +1753,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #20 98-102, warpins: 1 ---
+	--- BLOCK #20 101-105, warpins: 1 ---
 	slot10 = slot4
 	slot8 = slot4.delItemById
 	slot11 = slot7.costItemId
@@ -1750,7 +1766,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 103-104, warpins: 3 ---
+	--- BLOCK #21 106-107, warpins: 3 ---
 	slot8 = slot4.lastAbilityConsume
 	slot8.cd = slot5
 	--- END OF BLOCK #21 ---
@@ -1758,7 +1774,7 @@ slot21 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 105-108, warpins: 4 ---
+	--- BLOCK #22 108-111, warpins: 4 ---
 	slot7 = slot0
 	slot5 = slot0.onAbilityCast
 
@@ -1801,7 +1817,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-36, warpins: 2 ---
+	--- BLOCK #2 12-37, warpins: 2 ---
 	slot4 = slot1
 	slot2 = slot1.clearHitBox
 	slot5 = slot0.abilityId
@@ -1825,34 +1841,73 @@ slot21 = function(slot0)
 	slot3 = slot0.getAbilityObject
 	slot3 = slot3(slot5)
 	slot3 = slot3.combatContext
-	slot4 = nil
-	slot5 = ToBool
-	slot7 = slot2
-	slot5 = slot5(slot7)
+	slot4 = 1
+	slot3.attackSpeed = slot4
+	slot6 = slot0
+	slot4 = slot0.isNormalAttack
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
-	slot5 = if slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 37-42, warpins: 1 ---
-	slot7 = slot0
-	slot5 = slot0.getCastingInfo
-	slot5 = slot5(slot7)
-	slot6 = slot5.targetActorId
+	--- BLOCK #3 38-40, warpins: 1 ---
+	slot4 = slot1.actorCombatAttribute
 	--- END OF BLOCK #3 ---
 
-	slot6 = if slot6 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 43-54, warpins: 1 ---
+	--- BLOCK #4 41-47, warpins: 1 ---
+	slot4 = slot1.actorCombatAttribute
+	slot6 = slot4
+	slot4 = slot4.getAttribRatioValue
+	slot7 = AttributeConst
+	slot7 = slot7.normal_attack_speed_add_ratio
+	slot4 = slot4(slot6, slot7)
+	slot3.attackSpeed = slot4
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 48-53, warpins: 3 ---
+	slot4 = nil
+	slot5 = ToBool
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 54-59, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getCastingInfo
+	slot5 = slot5(slot7)
+	slot6 = slot5.targetActorId
+	--- END OF BLOCK #6 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 60-71, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.global
 	slot6 = slot6.abilityMgr
@@ -1864,20 +1919,20 @@ slot21 = function(slot0)
 	slot6 = slot6(slot8, slot9, slot10)
 	slot4 = slot6
 	slot3.runtimeTargetInfo = slot4
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #5 55-56, warpins: 1 ---
+	--- BLOCK #8 72-73, warpins: 1 ---
 	slot6 = nil
 	slot3.runtimeTargetInfo = slot6
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 57-66, warpins: 2 ---
+	--- BLOCK #9 74-83, warpins: 2 ---
 	slot6 = lume
 	slot6 = slot6.clear
 	slot8 = slot3.nodeStack
@@ -1892,37 +1947,36 @@ slot21 = function(slot0)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #7 67-69, warpins: 2 ---
+	--- BLOCK #10 84-86, warpins: 2 ---
 	slot5 = slot1.setOverrideSteeringTime
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 70-75, warpins: 1 ---
-	slot5 = slot1.eModel
-	slot5 = slot5.motionComponent
-	slot8 = slot1
-	slot6 = slot1.setOverrideSteeringTime
-	slot9 = slot5.steeringTimeDefault
+	--- BLOCK #11 87-91, warpins: 1 ---
+	slot7 = slot1
+	slot5 = slot1.setOverrideSteeringTime
+	slot8 = slot1.eModel
+	slot8 = slot8.steeringTimeDefault
 
-	slot6(slot8, slot9)
+	slot5(slot7, slot8)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #9 76-84, warpins: 2 ---
+	--- BLOCK #12 92-100, warpins: 2 ---
 	slot5 = slot1.subject
 	slot7 = slot5
 	slot5 = slot5.notify
@@ -1932,16 +1986,16 @@ slot21 = function(slot0)
 
 	slot5(slot7, slot8, slot9)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #10 85-92, warpins: 1 ---
+	--- BLOCK #13 101-108, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.global
 	slot5 = slot5.abilityMgr
@@ -1952,17 +2006,17 @@ slot21 = function(slot0)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #11 93-95, warpins: 2 ---
+	--- BLOCK #14 109-111, warpins: 2 ---
 	slot5 = nil
 	slot3.runtimeTargetInfo = slot5
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #14 ---
 
 
 
@@ -2210,7 +2264,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 26-53, warpins: 3 ---
+	--- BLOCK #3 26-57, warpins: 3 ---
 	slot5 = slot0
 	slot3 = slot0.getAbilityObject
 	slot3 = slot3(slot5)
@@ -2218,7 +2272,13 @@ slot21 = function(slot0)
 	slot5 = slot0
 	slot3 = slot0.getCastingInfo
 	slot3 = slot3(slot5)
-	slot2.constCasterInfo = slot3
+	slot6 = slot2
+	slot4 = slot2.setConstCasterInfo
+	slot7 = slot3
+	slot8 = slot0.actorId
+
+	slot4(slot6, slot7, slot8)
+
 	slot4 = slot0.abilityId
 	slot2.abilityId = slot4
 	slot4 = slot0.storeType

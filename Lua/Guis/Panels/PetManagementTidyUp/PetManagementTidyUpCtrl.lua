@@ -1,4 +1,4 @@
---- BLOCK #0 1-42, warpins: 1 ---
+--- BLOCK #0 1-49, warpins: 1 ---
 slot0 = require
 slot2 = "Guis.UICtrl"
 slot0 = slot0(slot2)
@@ -17,14 +17,17 @@ slot4 = slot4(slot6)
 slot5 = require
 slot7 = "Core.Common.Time"
 slot5 = slot5(slot7)
-slot6 = slot1.LightClass
-slot8 = "PetManagementTidyUpCtrl"
-slot9 = slot0
-slot6 = slot6(slot8, slot9)
-slot7 = {}
-slot6.messages = slot7
+slot6 = require
+slot8 = "Common.NoticeDef"
+slot6 = slot6(slot8)
+slot7 = slot1.LightClass
+slot9 = "PetManagementTidyUpCtrl"
+slot10 = slot0
+slot7 = slot7(slot9, slot10)
+slot8 = {}
+slot7.messages = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -76,9 +79,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.onCreate = slot7
+slot7.onCreate = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -97,9 +100,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.closePanel = slot7
+slot7.closePanel = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
@@ -124,7 +127,73 @@ slot7 = function(slot0)
 	slot1 = slot1.btnCurrentUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-7, warpins: 1 ---
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.hasExpiredBox
+		slot3 = self
+		slot3 = slot3.boxId
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 9-15, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.showBubbleMessageById
+		slot2 = NoticeDef
+		slot2 = slot2.INVALID_PET_BOX_CANT_TIDY_UP
+
+		slot0(slot2)
+
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 16-23, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.hasManualLockedBox
+		slot3 = self
+		slot3 = slot3.boxId
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 24-32, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.showBubbleMessageRaw
+		slot2 = pg
+		slot2 = slot2.getGameString
+		slot4 = "ORGANIZE_LOCK_BOX"
+		MULTRES = slot2(slot4)
+
+		slot0(MULTRES)
+
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 33-39, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.tidyUp
@@ -134,7 +203,7 @@ slot7 = function(slot0)
 		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #4 ---
 
 
 
@@ -145,7 +214,51 @@ slot7 = function(slot0)
 	slot1 = slot1.btnAllUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-6, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.hasExpiredBox
+		slot3 = 0
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if not slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-14, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.hasManualLockedBox
+		slot3 = 0
+		slot0 = slot0(slot2, slot3)
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 15-20, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.showBubbleMessageById
+		slot2 = NoticeDef
+		slot2 = slot2.INVALID_PET_BOX_CANT_TIDY_UP
+
+		slot0(slot2)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 21-26, warpins: 2 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.tidyUp
@@ -154,7 +267,7 @@ slot7 = function(slot0)
 		slot0(slot2, slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -169,9 +282,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.addListener = slot7
+slot7.addListener = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.sortOptionList
@@ -399,9 +512,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.setOptions = slot7
+slot7.setOptions = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.sortOptionList
@@ -443,9 +556,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.deselectAllSortOptions = slot7
+slot7.deselectAllSortOptions = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.sortId
 	--- END OF BLOCK #0 ---
@@ -491,9 +604,9 @@ slot7 = function(slot0)
 
 end
 
-slot6.checkBotButtonsStatus = slot7
+slot7.checkBotButtonsStatus = slot8
 
-slot7 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.sortId
 	--- END OF BLOCK #0 ---
@@ -866,9 +979,111 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot6.tidyUp = slot7
+slot7.tidyUp = slot8
 
-slot7 = function(slot0)
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.petBoxMap
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.items
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.isTempLocked
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #2 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot8 = true
+
+	return slot8
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-18, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot3 = slot2[slot1]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-27, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.isTempLocked
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-28, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot7.hasExpiredBox = slot8
+
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -886,9 +1101,111 @@ slot7 = function(slot0)
 
 end
 
-slot6.onDestroy = slot7
+slot7.onDestroy = slot8
 
-return slot6
+slot8 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.petBoxMap
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.items
+	slot3, slot4, slot5 = slot3(slot5)
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot10 = slot7
+	slot8 = slot7.isManualLocked
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #2 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot8 = true
+
+	return slot8
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-18, warpins: 3 ---
+	--- END OF BLOCK #4 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #6 22-24, warpins: 1 ---
+	slot3 = slot2[slot1]
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-27, warpins: 1 ---
+	slot6 = slot3
+	slot4 = slot3.isManualLocked
+	slot4 = slot4(slot6)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-28, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot7.hasManualLockedBox = slot8
+
+return slot7
 --- END OF BLOCK #0 ---
 
 

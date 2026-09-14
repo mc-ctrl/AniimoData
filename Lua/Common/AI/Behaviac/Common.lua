@@ -1547,11 +1547,12 @@ end
 slot0.makeVariableId = slot9
 
 slot9 = function()
-	--- BLOCK #0 1-3, warpins: 1 ---
+	--- BLOCK #0 1-4, warpins: 1 ---
 	slot0 = Time
-	slot0 = slot0.getMillisecond
+	slot0 = slot0.realSecondCache
+	slot0 = slot0 * 1000
 
-	return slot0()
+	return slot0
 	--- END OF BLOCK #0 ---
 
 

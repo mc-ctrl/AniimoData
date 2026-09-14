@@ -26,7 +26,7 @@ slot9 = slot2
 slot6 = slot6(slot8, slot9)
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-86, warpins: 1 ---
+	--- BLOCK #0 1-96, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -112,6 +112,16 @@ slot7 = function(slot0)
 	slot6 = "timeUCountDown"
 	slot3 = slot3(slot5, slot6)
 	slot0.timeUCountDown = slot3
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "tagUWidget"
+	slot3 = slot3(slot5, slot6)
+	slot0.tagUWidget = slot3
+	slot5 = slot1
+	slot3 = slot1.GetRefValue
+	slot6 = "tagTxt"
+	slot3 = slot3(slot5, slot6)
+	slot0.tagTxt = slot3
 
 	return
 	--- END OF BLOCK #0 ---

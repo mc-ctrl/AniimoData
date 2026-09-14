@@ -17,8 +17,8 @@ slot9 = {}
 slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {
-		__isOriginMapCppWrapper = true,
-		_propertiesCnt = 0
+		_propertiesCnt = 0,
+		__isOriginMapCppWrapper = true
 	}
 	slot1._cppNode = slot0
 	slot2 = setmetatable

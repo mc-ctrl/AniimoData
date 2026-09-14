@@ -1,0 +1,126 @@
+--- BLOCK #0 1-96, warpins: 1 ---
+slot0 = {}
+slot1 = 8
+slot0.SHARD_BUCKET_NUM = slot1
+slot1 = 1
+slot0.TRADE_TYPE_ITEM = slot1
+slot1 = 2
+slot0.TRADE_TYPE_PET = slot1
+slot1 = 0
+slot0.PRICE_MODE_RECOMMEND = slot1
+slot1 = 1
+slot0.PRICE_MODE_FREE = slot1
+slot1 = {
+	RUSH = 2,
+	BUY = 1,
+	RUSH_SETTLE = 3
+}
+slot0.BUY_ACTION = slot1
+slot1 = {
+	REMOVED = "removed",
+	RUSH = "rush",
+	EXPIRED = "expired",
+	SETTLED = "settled",
+	AUDIT = "audit",
+	SOLD = "sold",
+	SELLING = "selling",
+	NOTICE = "notice",
+	ERROR = "error"
+}
+slot0.LISTING_STATUS = slot1
+slot1 = {
+	RUSH = 2,
+	BUY = 1,
+	RUSH_SETTLE = 3
+}
+slot0.BUY_ACTION = slot1
+slot1 = {}
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.NOTICE
+slot3 = true
+slot1[slot2] = slot3
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.RUSH
+slot3 = true
+slot1[slot2] = slot3
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.SELLING
+slot3 = true
+slot1[slot2] = slot3
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.AUDIT
+slot3 = true
+slot1[slot2] = slot3
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.EXPIRED
+slot3 = true
+slot1[slot2] = slot3
+slot0.ACTIVE_STATUS_SET = slot1
+slot1 = {}
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.SOLD
+slot3 = true
+slot1[slot2] = slot3
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.SETTLED
+slot3 = true
+slot1[slot2] = slot3
+slot2 = slot0.LISTING_STATUS
+slot2 = slot2.REMOVED
+slot3 = true
+slot1[slot2] = slot3
+slot0.TERMINAL_STATUS_SET = slot1
+slot1 = {
+	BUYER_PAID = "buyerPaid",
+	SELLER_MAILED = "sellerMailed",
+	SELLER_ASSET_ESCROWED = "sellerAssetEscrowed",
+	SELLER_SETTLED = "sellerSettled",
+	BUYER_DELIVERED = "buyerDelivered"
+}
+slot0.TXN_MARK = slot1
+slot1 = "trade_list"
+slot0.TXN_TYPE_TRADE_LIST = slot1
+slot1 = "trade_buy"
+slot0.TXN_TYPE_TRADE_BUY = slot1
+slot1 = "trade_settle"
+slot0.TXN_TYPE_TRADE_SETTLE = slot1
+slot1 = 4
+slot0.SHINY_SCORE_STAGE_THRESHOLD = slot1
+slot1 = true
+slot0.RUSH_RETRY_NEXT_ON_FAIL = slot1
+slot1 = 10
+slot0.RUSH_SETTLE_REPLY_TIMEOUT = slot1
+slot1 = 0.05
+slot0.TRADE_TAX_RATE = slot1
+slot1 = "trade_seller_gain"
+slot0.TRADE_MAIL_SRC_ID = slot1
+slot1 = 3600
+slot0.TRADE_NOTICE_DURATION = slot1
+slot1 = 1800
+slot0.TRADE_RUSH_DURATION = slot1
+slot1 = 86400
+slot0.TRADE_AUDIT_DURATION = slot1
+slot1 = "trade_listing"
+slot0.MONGO_COLLECTION_LISTING = slot1
+slot1 = "trade_history"
+slot0.MONGO_COLLECTION_HISTORY = slot1
+slot1 = "trade_price"
+slot0.MONGO_COLLECTION_PRICE = slot1
+slot1 = 10000
+slot0.LISTING_LOAD_LIMIT = slot1
+slot1 = 1
+slot0.SERVICE_TICK_SUB_INTERVAL = slot1
+slot1 = 5
+slot0.BUCKET_TICK_INTERVAL = slot1
+slot1 = "TRADE"
+slot0.FUNCTION_UNLOCK_NAME = slot1
+slot1 = 10
+slot0.DEFAULT_STALL_SLOTS = slot1
+slot1 = 100
+slot0.WATCH_LIST_LIMIT = slot1
+
+return slot0
+--- END OF BLOCK #0 ---
+
+
+

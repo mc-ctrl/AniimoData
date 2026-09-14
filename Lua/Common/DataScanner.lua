@@ -508,8 +508,8 @@ end
 
 slot4 = {}
 slot5 = {
-	usage = "graph_event {'setMarkState'}",
-	description = "Scan scene graph nodes that use the specified event name"
+	description = "Scan scene graph nodes that use the specified event name",
+	usage = "graph_event {'setMarkState'}"
 }
 
 slot6 = function(slot0)

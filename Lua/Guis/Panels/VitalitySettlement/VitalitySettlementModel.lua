@@ -1,34 +1,37 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-41, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.UIModel"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Utils.PetManagementDataHelper"
+slot4 = "Guis.UIModel"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Data.pet_data"
+slot5 = "Utils.PetManagementDataHelper"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.ActivityUtils"
+slot6 = "Data.pet_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.appearance_jewelry_pet_data"
+slot7 = "Common.Utils.ActivityUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.energy_match_theme_data"
+slot8 = "Data.appearance_jewelry_pet_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.pet_accessory_transform_data"
+slot9 = "Data.energy_match_theme_data"
 slot7 = slot7(slot9)
-slot8 = slot0.LightClass
-slot10 = "VitalitySettlementModel"
-slot11 = slot1
-slot8 = slot8(slot10, slot11)
+slot8 = require
+slot10 = "Data.pet_accessory_transform_data"
+slot8 = slot8(slot10)
+slot9 = slot1.LightClass
+slot11 = "VitalitySettlementModel"
+slot12 = slot2
+slot9 = slot9(slot11, slot12)
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = ActivityUtils
 	slot1 = slot1.getNewEnergyTheme
@@ -85,7 +88,7 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #4 26-26, warpins: 1 ---
-	slot8 = {}
+	slot8 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -209,9 +212,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.getScoreListData = slot9
+slot9.getScoreListData = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -316,9 +319,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.setPetProId = slot9
+slot9.setPetProId = slot10
 
-slot9 = function(slot0, slot1, slot2, slot3)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = PetData
 	slot4 = slot4[slot1]
@@ -443,9 +446,9 @@ slot9 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot8.parseDefaultAccessInfo = slot9
+slot9.parseDefaultAccessInfo = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = nil
 	slot0.adjustPetProId = slot1
@@ -459,9 +462,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.clearCacheData = slot9
+slot9.clearCacheData = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

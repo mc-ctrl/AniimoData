@@ -1,4 +1,4 @@
---- BLOCK #0 1-176, warpins: 1 ---
+--- BLOCK #0 1-185, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -15,44 +15,53 @@ slot4 = require
 slot6 = "Common.Utils.AIUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.CallbackHandler"
+slot7 = "Common.AI.VisionAreaTemplateCache"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.Utils"
+slot8 = "Core.Common.CallbackHandler"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.puppet_percept_group_define_data"
+slot9 = "Common.Utils.Utils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.puppet_visual_range_data"
+slot10 = "Data.puppet_percept_group_define_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.CharacterStateConst"
+slot11 = "Data.puppet_visual_range_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Container.TablePool"
+slot12 = "Common.Const.CharacterStateConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Container.ListPool"
+slot13 = "Common.Container.TablePool"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Const.AttributeConst"
+slot14 = "Common.Container.ListPool"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Core.Log.LoggerManager"
+slot15 = "Common.Const.AttributeConst"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Core.Log.LoggerConst"
+slot16 = "Core.Log.LoggerManager"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Core.Timer.TimerManager"
+slot17 = "Core.Log.LoggerConst"
 slot15 = slot15(slot17)
-slot16 = slot0.LiteClass
-slot18 = "VisionSensor"
-slot16 = slot16(slot18)
-slot17 = slot3.SEARCH_USR_TYPE_SENSOR
+slot16 = pairs
+slot17 = table
+slot17 = slot17.clear
+slot18 = slot0.LiteClass
+slot20 = "VisionSensor"
+slot18 = slot18(slot20)
+slot19 = {}
+slot20 = slot3.CLEN_USR_TYPE_PLAYER
+slot21 = true
+slot19[slot20] = slot21
+slot20 = slot3.CLEN_USR_TYPE_BOT_PLAYER
+slot21 = true
+slot19[slot20] = slot21
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-43, warpins: 1 ---
 	slot0.ent = slot1
 	slot2 = nil
@@ -104,9 +113,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.ctor = slot18
+slot18.ctor = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearVisualPerceptibility
@@ -133,24 +142,22 @@ slot18 = function(slot0)
 
 end
 
-slot16.destroy = slot18
+slot18.destroy = slot20
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-22, warpins: 1 ---
+slot20 = function(slot0, slot1)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setPerceptibilityGroupDataId
 	slot5 = slot1
 
 	slot2(slot4, slot5)
 
-	slot2 = table
-	slot2 = slot2.clear
+	slot2 = table_clear
 	slot4 = slot0.perceivedMap
 
 	slot2(slot4)
 
-	slot2 = table
-	slot2 = slot2.clear
+	slot2 = table_clear
 	slot4 = slot0.perceivedFilterMap
 
 	slot2(slot4)
@@ -177,9 +184,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.init = slot18
+slot18.init = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.groupData
 	--- END OF BLOCK #0 ---
@@ -214,9 +221,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.isValid = slot18
+slot18.isValid = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.getAIRootState
@@ -258,11 +265,10 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #3 18-24, warpins: 1 ---
-	slot2 = next
-	slot4 = slot0.ent
-	slot4 = slot4.perceptibility
-	slot4 = slot4.pauseReasonSet
+	--- BLOCK #3 18-23, warpins: 1 ---
+	slot2 = slot0.ent
+	slot4 = slot2
+	slot2 = slot2.checkPerceptibilityIsPause
 	slot2 = slot2(slot4)
 	--- END OF BLOCK #3 ---
 
@@ -273,7 +279,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #4 25-28, warpins: 1 ---
+	--- BLOCK #4 24-27, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.addTickTimer
 
@@ -284,7 +290,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 29-31, warpins: 2 ---
+	--- BLOCK #5 28-30, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.removeTickTimer
 
@@ -295,7 +301,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 32-32, warpins: 2 ---
+	--- BLOCK #6 31-31, warpins: 2 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -303,9 +309,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.refreshSensor = slot18
+slot18.refreshSensor = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.checkHasPerceptibility
@@ -346,9 +352,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.addTickTimer = slot18
+slot18.addTickTimer = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = false
 	slot0.tickAllow = slot1
@@ -360,9 +366,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.removeTickTimer = slot18
+slot18.removeTickTimer = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.tickAllow
 
@@ -421,9 +427,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.updateVisionByAI = slot18
+slot18.updateVisionByAI = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkPerceptibilityEnable
@@ -549,9 +555,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.updateVision = slot18
+slot18.updateVision = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearVisualPerceptibility
@@ -576,9 +582,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.clearAllPerceptibility = slot18
+slot18.clearAllPerceptibility = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.perceivedMap
@@ -646,11 +652,11 @@ slot18 = function(slot0)
 
 end
 
-slot16.resetPerceivedMap = slot18
+slot18.resetPerceivedMap = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = AIUtils
+	slot1 = Utils
 	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0.ent
 	slot1 = slot1(slot3)
@@ -672,13 +678,12 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-16, warpins: 2 ---
-	slot1 = table
-	slot1 = slot1.clearArray
-	slot3 = slot0.VP_visionArea
-
-	slot1(slot3)
-
+	--- BLOCK #2 8-17, warpins: 2 ---
+	slot1 = AiConst
+	slot1 = slot1.DefaultNullTable
+	slot0.VP_visionArea = slot1
+	slot1 = 0
+	slot0.VP_maxVisionDistance = slot1
 	slot3 = slot0
 	slot1 = slot0.isValid
 	slot1 = slot1(slot3)
@@ -692,7 +697,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #3 17-17, warpins: 1 ---
+	--- BLOCK #3 18-18, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -700,7 +705,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-24, warpins: 2 ---
+	--- BLOCK #4 19-25, warpins: 2 ---
 	slot1 = slot0.groupVPName
 	slot4 = slot0
 	slot2 = slot0.getPerceptibilityGroupDataProperty
@@ -715,7 +720,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #5 25-26, warpins: 1 ---
+	--- BLOCK #5 26-27, warpins: 1 ---
 	slot2 = AiConst
 	slot2 = slot2.DefaultNullTable
 	--- END OF BLOCK #5 ---
@@ -723,96 +728,29 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 27-30, warpins: 2 ---
-	slot3 = ipairs
-	slot5 = slot2
-	slot3, slot4, slot5 = slot3(slot5)
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #7 31-34, warpins: 1 ---
+	--- BLOCK #6 28-39, warpins: 2 ---
+	slot3 = VisionAreaTemplateCache
+	slot3 = slot3.getOrCreate
+	slot5 = slot0.groupId
+	slot6 = slot1
+	slot7 = slot2
 	slot8 = puppetVisualAreaData
-	slot8 = slot8[slot7]
-	--- END OF BLOCK #7 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 35-38, warpins: 1 ---
-	slot9 = ipairs
-	slot11 = slot8
-	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #9 39-43, warpins: 1 ---
-	slot14 = slot0.VP_visionArea
-	slot15 = slot0.VP_visionArea
-	slot15 = #slot15
-	slot15 = slot15 + 1
-	slot14[slot15] = slot13
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 44-45, warpins: 2 ---
-	--- END OF BLOCK #10 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #9
-	GO OUT TO BLOCK #11
-
-
-	--- BLOCK #11 46-53, warpins: 1 ---
-	slot9 = math
-	slot9 = slot9.max
-	slot11 = slot0.VP_maxVisionDistance
-	slot12 = #slot8
-	slot12 = slot8[slot12]
-	slot12 = slot12.distanceEnd
-	slot9 = slot9(slot11, slot12)
-	slot0.VP_maxVisionDistance = slot9
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 54-55, warpins: 3 ---
-	--- END OF BLOCK #12 ---
-
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #13
-
-
-	--- BLOCK #13 56-62, warpins: 1 ---
-	slot3 = table
-	slot3 = slot3.sort
-	slot5 = slot0.VP_visionArea
-	slot6 = AIUtils
-	slot6 = slot6.compareVisionAreaFunc
-
-	slot3(slot5, slot6)
+	slot3 = slot3(slot5, slot6, slot7, slot8)
+	slot4 = slot3.visionAreas
+	slot0.VP_visionArea = slot4
+	slot4 = slot3.maxVisionDistance
+	slot0.VP_maxVisionDistance = slot4
 
 	return
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot16.refreshVisualPerceptibilityGroup = slot18
+slot18.refreshVisualPerceptibilityGroup = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isValid
@@ -898,11 +836,12 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #7 38-43, warpins: 1 ---
+	--- BLOCK #7 38-44, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.checkEntityVisionPerceived
 	slot12 = slot7
-	slot9 = slot9(slot11, slot12)
+	slot13 = slot8
+	slot9 = slot9(slot11, slot12, slot13)
 	--- END OF BLOCK #7 ---
 
 	slot9 = if slot9 then
@@ -912,7 +851,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #8 44-47, warpins: 1 ---
+	--- BLOCK #8 45-48, warpins: 1 ---
 	slot10 = #slot3
 	slot10 = slot10 + 1
 	slot3[slot10] = slot7
@@ -921,7 +860,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 48-50, warpins: 1 ---
+	--- BLOCK #9 49-51, warpins: 1 ---
 	slot10 = #slot2
 	slot10 = slot10 + 1
 	slot2[slot10] = slot7
@@ -930,7 +869,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 51-52, warpins: 3 ---
+	--- BLOCK #10 52-53, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -938,7 +877,7 @@ slot18 = function(slot0)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 53-61, warpins: 1 ---
+	--- BLOCK #11 54-62, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.refreshPerceivedStateMap
 	slot7 = slot2
@@ -954,7 +893,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #12 62-66, warpins: 1 ---
+	--- BLOCK #12 63-67, warpins: 1 ---
 	slot9 = PerceptibilityConst
 	slot9 = slot9.VisionState
 	slot9 = slot9.addPerceivedValue
@@ -967,7 +906,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #13 67-73, warpins: 1 ---
+	--- BLOCK #13 68-74, warpins: 1 ---
 	slot9 = AIUtils
 	slot9 = slot9.getVisionPerceivedAreaMultiFunc
 	slot11 = slot0
@@ -982,7 +921,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #14 74-78, warpins: 1 ---
+	--- BLOCK #14 75-79, warpins: 1 ---
 	slot10 = AiConst
 	slot10 = slot10.AI_DEBUG
 	slot10 = slot10.PERCEPTIBILITY
@@ -995,7 +934,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #15 79-83, warpins: 1 ---
+	--- BLOCK #15 80-84, warpins: 1 ---
 	slot10 = AiConst
 	slot10 = slot10.AI_DEBUG
 	slot10 = slot10.ENT_ID
@@ -1008,7 +947,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #16 84-90, warpins: 1 ---
+	--- BLOCK #16 85-91, warpins: 1 ---
 	slot10 = slot0.ent
 	slot10 = slot10.actorId
 	slot11 = AiConst
@@ -1023,7 +962,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #17 91-109, warpins: 2 ---
+	--- BLOCK #17 92-110, warpins: 2 ---
 	slot10 = slot0.ent
 	slot10 = slot10.logger
 	slot12 = slot10
@@ -1050,7 +989,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 110-132, warpins: 3 ---
+	--- BLOCK #18 111-133, warpins: 3 ---
 	slot10 = slot0.ent
 	slot12 = slot10
 	slot10 = slot10.getPerceptibilityGroupValueChange
@@ -1080,7 +1019,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #19 133-138, warpins: 1 ---
+	--- BLOCK #19 134-139, warpins: 1 ---
 	slot12 = slot0
 	slot10 = slot0.addVisualPerceivedValue
 	slot13 = slot7
@@ -1093,7 +1032,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #20 139-143, warpins: 1 ---
+	--- BLOCK #20 140-144, warpins: 1 ---
 	slot9 = PerceptibilityConst
 	slot9 = slot9.VisionState
 	slot9 = slot9.subPerceivedValue
@@ -1106,7 +1045,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #21 144-151, warpins: 1 ---
+	--- BLOCK #21 145-152, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.addVisualPerceivedValue
 	slot12 = slot7
@@ -1121,7 +1060,7 @@ slot18 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #22 152-156, warpins: 1 ---
+	--- BLOCK #22 153-157, warpins: 1 ---
 	slot11 = slot0
 	slot9 = slot0.addVisualPerceivedValue
 	slot12 = slot7
@@ -1134,7 +1073,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 157-158, warpins: 5 ---
+	--- BLOCK #23 158-159, warpins: 5 ---
 	--- END OF BLOCK #23 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -1142,7 +1081,7 @@ slot18 = function(slot0)
 	GO OUT TO BLOCK #24
 
 
-	--- BLOCK #24 159-173, warpins: 1 ---
+	--- BLOCK #24 160-174, warpins: 1 ---
 	slot4 = ListPool
 	slot4 = slot4.returnList
 	slot6 = slot2
@@ -1170,9 +1109,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.updateVisualPerceivedMap = slot18
+slot18.updateVisualPerceivedMap = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = ipairs
 	slot5 = slot1
@@ -1320,9 +1259,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.refreshPerceivedStateMap = slot18
+slot18.refreshPerceivedStateMap = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0.ent
 	slot5 = slot3
@@ -1422,9 +1361,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.addVisualPerceivedValue = slot18
+slot18.addVisualPerceivedValue = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.visualPerceivedMap
 	slot3 = nil
@@ -1442,9 +1381,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.removeVisualPerceivedValue = slot18
+slot18.removeVisualPerceivedValue = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = next
 	slot3 = slot0.visualPerceivedMap
@@ -1496,62 +1435,75 @@ slot18 = function(slot0)
 
 end
 
-slot16.clearVisualPerceptibility = slot18
+slot18.clearVisualPerceptibility = slot20
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-20, warpins: 1 ---
-	slot2 = ListPool
-	slot2 = slot2.getList
-	slot4 = 3
+slot20 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot2 = slot0.ent
+	slot4 = slot2
+	slot2 = slot2.getPerceptibilityRangeCandidates
 	slot2 = slot2(slot4)
-	slot3 = AIUtils
-	slot3 = slot3.getPerceptibilitySearchEnt
-	slot5 = slot0.ent
-	slot3 = slot3(slot5)
-	slot4 = AIUtils
-	slot4 = slot4.SearchEntitiesInRangeWithTable
-	slot6 = slot3
-	slot7 = slot0.VP_maxVisionDistance
-	slot8 = searchType
-	slot9 = 0
-	slot10 = slot2
-	slot4 = slot4(slot6, slot7, slot8, slot9, slot10)
-	slot5 = 1
-	slot6 = slot4
-	slot7 = 1
+	slot3 = pairs
+	slot5 = slot2
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	FLOW; TARGET BLOCK #1
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #1 21-24, warpins: 2 ---
-	slot9 = slot2[slot8]
-	slot10 = 0
-	slot1[slot9] = slot10
+	--- BLOCK #1 9-12, warpins: 1 ---
+	slot8 = VISION_CLEN_USR_TYPE_MAP
+	slot8 = slot8[slot7]
 	--- END OF BLOCK #1 ---
 
-	for slot8=slot5, slot6, slot7
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #2
+	slot8 = if slot8 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
 
-	--- BLOCK #2 25-30, warpins: 1 ---
-	slot5 = ListPool
-	slot5 = slot5.returnList
-	slot7 = slot2
-	slot8 = 3
 
-	slot5(slot7, slot8)
-
-	return slot1
+	--- BLOCK #2 13-18, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.getEntityByActorId
+	slot10 = slot6
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #2 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 19-19, warpins: 1 ---
+	slot1[slot6] = slot8
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-21, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 22-22, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot16.getVisualEntityMap = slot18
+slot18.getVisualEntityMap = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.visualPerceivedMap
 
@@ -1562,9 +1514,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getVisualPerceivedMap = slot18
+slot18.getVisualPerceivedMap = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.visualPerceivedMap
 	slot2 = slot2[slot1]
@@ -1593,98 +1545,158 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getVisualPerceivedValue = slot18
+slot18.getVisualPerceivedValue = slot20
 
-slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.getEntityByActorId
-	slot4 = slot1
-	slot2 = slot2(slot4)
-	slot3 = slot2.id
-	slot4 = slot0.id
+slot20 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
-	if slot3 == slot4 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-10, warpins: 1 ---
-	slot3 = false
-
-	return slot3
-
+	--- BLOCK #1 3-7, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getEntityByActorId
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	slot2 = slot3
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-16, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.filterVisionEntity
-	slot6 = slot2
-	slot3, slot4 = slot3(slot5, slot6)
+	--- BLOCK #2 8-9, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 17-19, warpins: 1 ---
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-14, warpins: 2 ---
+	slot3 = slot0.ent
+	--- END OF BLOCK #4 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 15-17, warpins: 1 ---
+	slot3 = slot2.id
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 18-22, warpins: 1 ---
+	slot3 = slot2.id
+	slot4 = slot0.ent
+	slot4 = slot4.id
+	--- END OF BLOCK #6 ---
+
+	if slot3 == slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 23-24, warpins: 2 ---
+	slot3 = false
+
+	return slot3
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 25-30, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.filterVisionEntity
+	slot6 = slot2
+	slot3, slot4 = slot3(slot5, slot6)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 31-33, warpins: 1 ---
 	slot5 = true
 
 	return slot5
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #4 20-22, warpins: 1 ---
+	--- BLOCK #10 34-36, warpins: 1 ---
 	slot5 = slot0.perceivedFilterMap
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #10 ---
 
 	slot6 = if not slot4 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #5 23-23, warpins: 1 ---
+	--- BLOCK #11 37-37, warpins: 1 ---
 	slot6 = 0
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #6 24-26, warpins: 2 ---
+	--- BLOCK #12 38-40, warpins: 2 ---
 	slot5[slot1] = slot6
 	slot5 = false
 
 	return slot5
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #7 27-27, warpins: 2 ---
+	--- BLOCK #13 41-41, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot16.checkEntityVisionPerceived = slot18
+slot18.checkEntityVisionPerceived = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2, slot3 = nil
 	slot4 = AIUtils
@@ -1744,7 +1756,7 @@ slot18 = function(slot0, slot1)
 
 	--- BLOCK #4 26-34, warpins: 2 ---
 	slot4 = AIUtils
-	slot4 = slot4.filterVisionPerceivedFriendFunc
+	slot4 = slot4.filterVisionPerceivedSameSpeciesFunc
 	slot6 = slot0
 	slot7 = slot1
 	slot4, slot5 = slot4(slot6, slot7)
@@ -1770,7 +1782,45 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 38-46, warpins: 2 ---
+	--- BLOCK #6 38-39, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 40-48, warpins: 1 ---
+	slot4 = AIUtils
+	slot4 = slot4.filterVisionPerceivedFriendFunc
+	slot6 = slot0
+	slot7 = slot1
+	slot4, slot5 = slot4(slot6, slot7)
+	slot3 = slot5
+	slot2 = slot4
+	--- END OF BLOCK #7 ---
+
+	if slot2 == false then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 49-51, warpins: 1 ---
+	slot4 = false
+	slot5 = slot3
+
+	return slot4, slot5
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 52-60, warpins: 3 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterVisionPerceivedAffinityFunc
 	slot6 = slot0
@@ -1778,55 +1828,27 @@ slot18 = function(slot0, slot1)
 	slot4, slot5 = slot4(slot6, slot7)
 	slot3 = slot5
 	slot2 = slot4
-	--- END OF BLOCK #6 ---
-
-	if slot2 == false then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 47-49, warpins: 1 ---
-	slot4 = false
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 50-58, warpins: 2 ---
-	slot4 = AIUtils
-	slot4 = slot4.filterVisionPerceivedRayCastFunc
-	slot6 = slot0
-	slot7 = slot1
-	slot4, slot5 = slot4(slot6, slot7)
-	slot3 = slot5
-	slot2 = slot4
-	--- END OF BLOCK #8 ---
-
-	if slot2 == false then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 59-61, warpins: 1 ---
-	slot4 = false
-	slot5 = slot3
-
-	return slot4, slot5
-
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	if slot2 == false then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #10 62-70, warpins: 2 ---
+	--- BLOCK #10 61-63, warpins: 1 ---
+	slot4 = false
+	slot5 = slot3
+
+	return slot4, slot5
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 64-72, warpins: 2 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterVisionPerceivedInvisibleFunc
 	slot6 = slot0
@@ -1834,27 +1856,27 @@ slot18 = function(slot0, slot1)
 	slot4, slot5 = slot4(slot6, slot7)
 	slot3 = slot5
 	slot2 = slot4
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #11 ---
 
 	if slot2 == false then
-	JUMP TO BLOCK #11
-	else
 	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 71-73, warpins: 1 ---
+	--- BLOCK #12 73-75, warpins: 1 ---
 	slot4 = false
 	slot5 = slot3
 
 	return slot4, slot5
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #12 74-82, warpins: 2 ---
+	--- BLOCK #13 76-84, warpins: 2 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterVisionPerceivedTallGrassFunc
 	slot6 = slot0
@@ -1862,110 +1884,54 @@ slot18 = function(slot0, slot1)
 	slot4, slot5 = slot4(slot6, slot7)
 	slot3 = slot5
 	slot2 = slot4
-	--- END OF BLOCK #12 ---
-
-	if slot2 == false then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 83-85, warpins: 1 ---
-	slot4 = false
-	slot5 = slot3
-
-	return slot4, slot5
-
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 86-94, warpins: 2 ---
-	slot4 = AIUtils
-	slot4 = slot4.filterVisionPerceivedSameSpeciesFunc
-	slot6 = slot0
-	slot7 = slot1
-	slot4, slot5 = slot4(slot6, slot7)
-	slot3 = slot5
-	slot2 = slot4
-	--- END OF BLOCK #14 ---
-
 	if slot2 == false then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #15 95-97, warpins: 1 ---
+	--- BLOCK #14 85-87, warpins: 1 ---
 	slot4 = false
 	slot5 = slot3
 
 	return slot4, slot5
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #16 98-105, warpins: 2 ---
+	--- BLOCK #15 88-95, warpins: 2 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterDeadEntityFunc
 	slot6 = slot1
 	slot4, slot5 = slot4(slot6)
 	slot3 = slot5
 	slot2 = slot4
+	--- END OF BLOCK #15 ---
+
+	if slot2 == false then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 96-98, warpins: 1 ---
+	slot4 = false
+	slot5 = slot3
+
+	return slot4, slot5
+
 	--- END OF BLOCK #16 ---
 
-	if slot2 == false then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 106-108, warpins: 1 ---
-	slot4 = false
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 109-117, warpins: 2 ---
-	slot4 = AIUtils
-	slot4 = slot4.filterPosFunc
-	slot6 = slot0
-	slot7 = slot1
-	slot4, slot5 = slot4(slot6, slot7)
-	slot3 = slot5
-	slot2 = slot4
-	--- END OF BLOCK #18 ---
-
-	if slot2 == false then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 118-120, warpins: 1 ---
-	slot4 = false
-	slot5 = slot3
-
-	return slot4, slot5
-
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 121-129, warpins: 2 ---
+	--- BLOCK #17 99-107, warpins: 2 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterVisionPerceivedHighGrassRegionFunc
 	slot6 = slot0
@@ -1973,27 +1939,27 @@ slot18 = function(slot0, slot1)
 	slot4, slot5 = slot4(slot6, slot7)
 	slot3 = slot5
 	slot2 = slot4
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #17 ---
 
 	if slot2 == false then
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #18
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #21 130-132, warpins: 1 ---
+	--- BLOCK #18 108-110, warpins: 1 ---
 	slot4 = false
 	slot5 = slot3
 
 	return slot4, slot5
 
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #22 133-141, warpins: 2 ---
+	--- BLOCK #19 111-119, warpins: 2 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterVisionPerceivedBeAttachedFunc
 	slot6 = slot0
@@ -2001,27 +1967,27 @@ slot18 = function(slot0, slot1)
 	slot4, slot5 = slot4(slot6, slot7)
 	slot3 = slot5
 	slot2 = slot4
-	--- END OF BLOCK #22 ---
+	--- END OF BLOCK #19 ---
 
 	if slot2 == false then
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #23 142-144, warpins: 1 ---
+	--- BLOCK #20 120-122, warpins: 1 ---
 	slot4 = false
 	slot5 = slot3
 
 	return slot4, slot5
 
-	--- END OF BLOCK #23 ---
+	--- END OF BLOCK #20 ---
 
-	FLOW; TARGET BLOCK #24
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #24 145-153, warpins: 2 ---
+	--- BLOCK #21 123-131, warpins: 2 ---
 	slot4 = AIUtils
 	slot4 = slot4.filterVisionPerceivedSmokeFunc
 	slot6 = slot0
@@ -2029,39 +1995,95 @@ slot18 = function(slot0, slot1)
 	slot4, slot5 = slot4(slot6, slot7)
 	slot3 = slot5
 	slot2 = slot4
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #21 ---
 
 	if slot2 == false then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #25 154-156, warpins: 1 ---
+	--- BLOCK #22 132-134, warpins: 1 ---
 	slot4 = false
 	slot5 = slot3
 
 	return slot4, slot5
 
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 135-143, warpins: 2 ---
+	slot4 = AIUtils
+	slot4 = slot4.filterPosFunc
+	slot6 = slot0
+	slot7 = slot1
+	slot4, slot5 = slot4(slot6, slot7)
+	slot3 = slot5
+	slot2 = slot4
+	--- END OF BLOCK #23 ---
+
+	if slot2 == false then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 144-146, warpins: 1 ---
+	slot4 = false
+	slot5 = slot3
+
+	return slot4, slot5
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 147-155, warpins: 2 ---
+	slot4 = AIUtils
+	slot4 = slot4.filterVisionPerceivedRayCastFunc
+	slot6 = slot0
+	slot7 = slot1
+	slot4, slot5 = slot4(slot6, slot7)
+	slot3 = slot5
+	slot2 = slot4
 	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #26
+	if slot2 == false then
+	JUMP TO BLOCK #26
+	else
+	JUMP TO BLOCK #27
+	end
 
 
-	--- BLOCK #26 157-158, warpins: 2 ---
+	--- BLOCK #26 156-158, warpins: 1 ---
+	slot4 = false
+	slot5 = slot3
+
+	return slot4, slot5
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 159-160, warpins: 2 ---
 	slot4 = true
 
 	return slot4
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #27 ---
 
 
 
 end
 
-slot16.filterVisionEntity = slot18
+slot18.filterVisionEntity = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pairs
 	slot3 = slot0.otherPerceptibilityMap
@@ -2099,9 +2121,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.clearOtherPerceivedMap = slot18
+slot18.clearOtherPerceivedMap = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.otherPerceptibilityMap
 	slot3 = nil
@@ -2119,9 +2141,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.removeOtherPerceivedMap = slot18
+slot18.removeOtherPerceivedMap = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = table
 	slot1 = slot1.clear
@@ -2136,9 +2158,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.clearCurrentOtherPerceivedMap = slot18
+slot18.clearCurrentOtherPerceivedMap = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.otherPerceptibilityMap
 	slot2 = slot0.currentOtherPerceivedMap
@@ -2275,9 +2297,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.updateOtherPerceivedMap = slot18
+slot18.updateOtherPerceivedMap = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = 0
 	--- END OF BLOCK #0 ---
@@ -2364,9 +2386,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.updateOtherPerceptibilityValue = slot18
+slot18.updateOtherPerceptibilityValue = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.clearOtherPerceivedMap
@@ -2385,9 +2407,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.clearOtherPerceptibility = slot18
+slot18.clearOtherPerceptibility = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.checkPerceptibilityEnable
@@ -2486,9 +2508,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.addBallComingNearByTimer = slot18
+slot18.addBallComingNearByTimer = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkPerceptibilityEnable
@@ -2572,9 +2594,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.addBallComingHitPerceptibility = slot18
+slot18.addBallComingHitPerceptibility = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.removeOnceNearByTimer
@@ -2597,9 +2619,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.addBallComingNearbyPerceptibilityCallback = slot18
+slot18.addBallComingNearbyPerceptibilityCallback = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.OP_addNearbyTimerId
 	--- END OF BLOCK #0 ---
@@ -2635,9 +2657,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.removeOnceNearByTimer = slot18
+slot18.removeOnceNearByTimer = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.checkPerceptibilityEnable
@@ -2678,9 +2700,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.addDeformationTerrorPerceptibility = slot18
+slot18.addDeformationTerrorPerceptibility = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntityByActorId
@@ -2730,9 +2752,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.addOncePerceptibility = slot18
+slot18.addOncePerceptibility = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.otherPerceptibilityMap
 	slot3 = slot0.visualPerceivedMap
@@ -2806,9 +2828,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.removePerceivedEntity = slot18
+slot18.removePerceivedEntity = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0.perceivedMap
 	slot3 = slot3[slot1]
@@ -2854,9 +2876,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.updatePerceivedEntity = slot18
+slot18.updatePerceivedEntity = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = AIUtils
 	slot2 = slot2.checkHasPerceptibility
@@ -2944,9 +2966,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setPerceptibilityGroupDataId = slot18
+slot18.setPerceptibilityGroupDataId = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.groupId
 
@@ -2957,9 +2979,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkPerceptibilityEnable = slot18
+slot18.checkPerceptibilityEnable = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.groupData
 	slot2 = slot2[slot1]
@@ -2971,9 +2993,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getPerceptibilityGroupDataProperty = slot18
+slot18.getPerceptibilityGroupDataProperty = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.groupData
 	--- END OF BLOCK #0 ---
@@ -3013,9 +3035,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.getPerceptibilityEnvMatch = slot18
+slot18.getPerceptibilityEnvMatch = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.visionType
@@ -3046,9 +3068,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getPerceptibilityVisionType = slot18
+slot18.getPerceptibilityVisionType = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.ballNearbyAddValue
@@ -3077,9 +3099,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getBallNearbyAddValue = slot18
+slot18.getBallNearbyAddValue = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.ballHitAddValue
@@ -3108,9 +3130,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getBallHitAddValue = slot18
+slot18.getBallHitAddValue = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.valueChange
@@ -3139,9 +3161,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getPerceptibilityGroupValueChange = slot18
+slot18.getPerceptibilityGroupValueChange = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.attenuation
@@ -3172,9 +3194,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getPerceptibilityGroupAttenuation = slot18
+slot18.getPerceptibilityGroupAttenuation = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3202,9 +3224,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setAttenuationMultiple = slot18
+slot18.setAttenuationMultiple = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.groupData
 
@@ -3215,9 +3237,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getPerceptibilityGroupData = slot18
+slot18.getPerceptibilityGroupData = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.rayCastingSwitch
@@ -3253,9 +3275,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkPerceptibilityRayCast = slot18
+slot18.checkPerceptibilityRayCast = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.invisibleSwitch
@@ -3291,9 +3313,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkPerceptibilityInvisible = slot18
+slot18.checkPerceptibilityInvisible = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.groupData
 	slot1 = slot1.tallGrassSwitch
@@ -3329,9 +3351,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.checkPerceptibilityTallGrassSwitch = slot18
+slot18.checkPerceptibilityTallGrassSwitch = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = AIUtils
 	slot2 = slot2.getVisionPerceivedAreaMultiFunc
@@ -3376,9 +3398,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getDeformationTerrorAddValue = slot18
+slot18.getDeformationTerrorAddValue = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getPerceptibilityGroupData
@@ -3420,9 +3442,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.getPerceptibilityEnvMatch = slot18
+slot18.getPerceptibilityEnvMatch = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.groupVPName
 
@@ -3457,9 +3479,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.setVPGroupName = slot18
+slot18.setVPGroupName = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -3517,9 +3539,9 @@ slot18 = function(slot0, slot1)
 
 end
 
-slot16.getVisionValueChangeRatio = slot18
+slot18.getVisionValueChangeRatio = slot20
 
-slot18 = function(slot0, slot1)
+slot20 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getEntityByActorId
@@ -3531,48 +3553,62 @@ slot18 = function(slot0, slot1)
 	slot4 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	if slot4 == nil then
+	if slot4 ~= nil then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 11-12, warpins: 1 ---
+	--- BLOCK #1 11-16, warpins: 1 ---
+	slot5 = Utils
+	slot5 = slot5.isPlayer
+	slot7 = slot2
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #1 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 17-18, warpins: 2 ---
 	slot5 = 1
 
 	return slot5
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 13-15, warpins: 2 ---
-	slot5 = slot2.checkPRSneak
 	--- END OF BLOCK #2 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-20, warpins: 1 ---
-	slot7 = slot2
+	--- BLOCK #3 19-21, warpins: 2 ---
 	slot5 = slot2.checkPRSneak
-	slot5 = slot5(slot7)
 	--- END OF BLOCK #3 ---
 
 	slot5 = if slot5 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 21-32, warpins: 1 ---
+	--- BLOCK #4 22-26, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.checkPRSneak
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-38, warpins: 1 ---
 	slot7 = slot2
 	slot5 = slot2.checkPREnvironment
 	slot5 = slot5(slot7)
@@ -3584,36 +3620,36 @@ slot18 = function(slot0, slot1)
 	slot10 = slot5
 	slot6 = slot6(slot8, slot9, slot10)
 	slot3 = slot6
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #5 33-35, warpins: 2 ---
-	slot5 = slot2.PR_run
 	--- END OF BLOCK #5 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #6 36-40, warpins: 1 ---
-	slot7 = slot2
-	slot5 = slot2.checkPRRun
-	slot5 = slot5(slot7)
+	--- BLOCK #6 39-41, warpins: 2 ---
+	slot5 = slot2.PR_run
 	--- END OF BLOCK #6 ---
 
 	slot5 = if slot5 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 41-52, warpins: 1 ---
+	--- BLOCK #7 42-46, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.checkPRRun
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 47-58, warpins: 1 ---
 	slot7 = slot2
 	slot5 = slot2.checkPREnvironment
 	slot5 = slot5(slot7)
@@ -3625,36 +3661,36 @@ slot18 = function(slot0, slot1)
 	slot10 = slot5
 	slot6 = slot6(slot8, slot9, slot10)
 	slot3 = slot6
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #8 53-55, warpins: 2 ---
-	slot5 = slot2.checkPRSprint
 	--- END OF BLOCK #8 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #9 56-60, warpins: 1 ---
-	slot7 = slot2
+	--- BLOCK #9 59-61, warpins: 2 ---
 	slot5 = slot2.checkPRSprint
-	slot5 = slot5(slot7)
 	--- END OF BLOCK #9 ---
 
 	slot5 = if slot5 then
 	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 61-72, warpins: 1 ---
+	--- BLOCK #10 62-66, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.checkPRSprint
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #10 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 67-78, warpins: 1 ---
 	slot7 = slot2
 	slot5 = slot2.checkPREnvironment
 	slot5 = slot5(slot7)
@@ -3666,36 +3702,36 @@ slot18 = function(slot0, slot1)
 	slot10 = slot5
 	slot6 = slot6(slot8, slot9, slot10)
 	slot3 = slot6
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #11 73-75, warpins: 2 ---
-	slot5 = slot2.checkPRIdle
 	--- END OF BLOCK #11 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #12 76-80, warpins: 1 ---
-	slot7 = slot2
+	--- BLOCK #12 79-81, warpins: 2 ---
 	slot5 = slot2.checkPRIdle
-	slot5 = slot5(slot7)
 	--- END OF BLOCK #12 ---
 
 	slot5 = if slot5 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 81-91, warpins: 1 ---
+	--- BLOCK #13 82-86, warpins: 1 ---
+	slot7 = slot2
+	slot5 = slot2.checkPRIdle
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #13 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 87-97, warpins: 1 ---
 	slot7 = slot2
 	slot5 = slot2.checkPREnvironment
 	slot5 = slot5(slot7)
@@ -3707,40 +3743,40 @@ slot18 = function(slot0, slot1)
 	slot10 = slot5
 	slot6 = slot6(slot8, slot9, slot10)
 	slot3 = slot6
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 92-93, warpins: 6 ---
 	--- END OF BLOCK #14 ---
 
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 98-99, warpins: 6 ---
+	--- END OF BLOCK #15 ---
+
 	slot5 = if not slot3 then
-	JUMP TO BLOCK #15
-	else
 	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #15 94-94, warpins: 1 ---
+	--- BLOCK #16 100-100, warpins: 1 ---
 	slot5 = 1
 
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 95-95, warpins: 2 ---
-	return slot5
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 101-101, warpins: 2 ---
+	return slot5
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot16.getEntityEnvironmentMatch = slot18
+slot18.getEntityEnvironmentMatch = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 0
 	slot2 = 0
@@ -3793,9 +3829,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.refreshMaxPerceivedValue = slot18
+slot18.refreshMaxPerceivedValue = slot20
 
-slot18 = function(slot0, slot1, slot2)
+slot20 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0.maxPerceivedValue = slot2
 	slot0.maxPerceivedActorId = slot1
@@ -3856,9 +3892,9 @@ slot18 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setMaxPerceivedValue = slot18
+slot18.setMaxPerceivedValue = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.maxPerceivePercent
 
@@ -3869,9 +3905,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getMaxPerceivePercent = slot18
+slot18.getMaxPerceivePercent = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.maxPerceivedValue
 
@@ -3882,9 +3918,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getMaxPerceivedValue = slot18
+slot18.getMaxPerceivedValue = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.maxPerceivedActorId
 
@@ -3895,9 +3931,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getMaxPerceivedActorId = slot18
+slot18.getMaxPerceivedActorId = slot20
 
-slot18 = function(slot0)
+slot20 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPerceptibilityGroupDataProperty
@@ -3945,9 +3981,9 @@ slot18 = function(slot0)
 
 end
 
-slot16.getPerceiveStateTime = slot18
+slot18.getPerceiveStateTime = slot20
 
-return slot16
+return slot18
 --- END OF BLOCK #0 ---
 
 

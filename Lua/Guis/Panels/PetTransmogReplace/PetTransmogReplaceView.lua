@@ -14,7 +14,7 @@ slot6 = slot1
 slot3 = slot3(slot5, slot6)
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-46, warpins: 1 ---
+	--- BLOCK #0 1-51, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -60,6 +60,11 @@ slot4 = function(slot0)
 	slot5 = "btnCloseUButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.btnCloseUButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtBtnConfirm"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtBtnConfirm = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -82,7 +87,7 @@ end
 slot3.registerObjects = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.title
@@ -99,6 +104,16 @@ slot4 = function(slot0)
 	slot4 = pg
 	slot4 = slot4.getGameString
 	slot6 = "PETTRANSMOGRIFY_REPLACE_TIP"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtBtnConfirm
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "PETTRANSMOGRIFY_DELETE_ENTER_OK"
 	MULTRES = slot4(slot6)
 
 	slot1(slot3, MULTRES)

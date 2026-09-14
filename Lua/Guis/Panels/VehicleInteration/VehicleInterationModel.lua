@@ -31,11 +31,11 @@ slot8 = slot8(slot10)
 slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {
-		OTHER_PET = 4,
-		OTHER = 3,
 		PET = 2,
 		PLAYER = 1,
-		EMPTY = 0
+		EMPTY = 0,
+		OTHER_PET = 4,
+		OTHER = 3
 	}
 	slot0.SEAT_ENTITY_TYPE = slot1
 	slot1 = {

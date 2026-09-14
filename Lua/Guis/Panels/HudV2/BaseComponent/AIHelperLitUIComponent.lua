@@ -1146,7 +1146,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 19-37, warpins: 1 ---
+	--- BLOCK #1 19-39, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
@@ -1180,14 +1180,17 @@ slot9 = function(slot0, slot1)
 
 	end
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot10 = nil
+	slot11 = "other"
+
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 38-44, warpins: 1 ---
+	--- BLOCK #2 40-46, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.game
 	slot4 = slot4.chat
@@ -1202,7 +1205,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 45-52, warpins: 2 ---
+	--- BLOCK #3 47-54, warpins: 2 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.ui
@@ -1218,7 +1221,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 53-58, warpins: 1 ---
+	--- BLOCK #4 55-60, warpins: 1 ---
 	slot4 = slot0.keyWordUButton
 	slot6 = slot4
 	slot4 = slot4.SetActive
@@ -1231,7 +1234,7 @@ slot9 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 59-61, warpins: 1 ---
+	--- BLOCK #5 61-63, warpins: 1 ---
 	slot4 = slot2.action1
 	--- END OF BLOCK #5 ---
 
@@ -1242,7 +1245,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 62-78, warpins: 1 ---
+	--- BLOCK #6 64-80, warpins: 1 ---
 	slot4 = slot0.trackBtnKeybinding
 	slot5 = slot2.action1
 	slot4.actionPath = slot5
@@ -1268,7 +1271,7 @@ slot9 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 79-83, warpins: 1 ---
+	--- BLOCK #7 81-85, warpins: 1 ---
 	slot4 = slot0.keyWordUButton
 	slot6 = slot4
 	slot4 = slot4.SetActive
@@ -1281,7 +1284,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 84-125, warpins: 3 ---
+	--- BLOCK #8 86-127, warpins: 3 ---
 	slot4 = slot0.iconTrackUImage
 	slot5 = slot2.img
 	slot4.url = slot5

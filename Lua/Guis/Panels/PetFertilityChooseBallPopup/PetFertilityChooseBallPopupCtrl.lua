@@ -1,4 +1,4 @@
---- BLOCK #0 1-77, warpins: 1 ---
+--- BLOCK #0 1-83, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -27,19 +27,25 @@ slot7 = require
 slot9 = "Const.UIConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.item_source_data"
+slot10 = "Const.HotkeyConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.pet_hatch_egg_data"
+slot11 = "Data.item_source_data"
 slot9 = slot9(slot11)
-slot10 = slot1.LightClass
-slot12 = "PetFertilityChooseBallPopupCtrl"
-slot13 = slot2
-slot10 = slot10(slot12, slot13)
-slot11 = {}
-slot10.messages = slot11
+slot10 = require
+slot12 = "Data.pet_hatch_egg_data"
+slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Common.Utils.ItemSelectionTipsUtils"
+slot11 = slot11(slot13)
+slot12 = slot1.LightClass
+slot14 = "PetFertilityChooseBallPopupCtrl"
+slot15 = slot2
+slot12 = slot12(slot14, slot15)
+slot13 = {}
+slot12.messages = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -246,9 +252,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onCreate = slot11
+slot12.onCreate = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -257,10 +263,44 @@ slot11 = function(slot0)
 
 end
 
-slot10.addListener = slot11
+slot12.addListener = slot13
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.checkUIShow
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_COMMON_ITEM_TIP
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-18, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot3 = slot1
+	slot1 = slot1.close
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_COMMON_ITEM_TIP
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-23, warpins: 2 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -268,15 +308,15 @@ slot11 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot10.onDestroy = slot11
+slot12.onDestroy = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnCloseUButton
@@ -397,9 +437,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._setupClose = slot11
+slot12._setupClose = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listBallUList
@@ -415,14 +455,90 @@ slot11 = function(slot0)
 	--- BLOCK #1 5-5, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 6-20, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.listBallUList
+	--- BLOCK #2 6-18, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getCubeList
+	slot1 = slot1(slot3)
+	slot2 = ItemSelectionTipsUtils
+	slot2 = slot2.isMultiItem
+	slot4 = #slot1
+	slot2 = slot2(slot4)
+	slot0.isMultiItem = slot2
+	slot2 = slot0.view
+	slot2 = slot2.btnCloseUButton2
+	--- END OF BLOCK #2 ---
 
-	slot2 = function(slot0, slot1, slot2)
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 19-26, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnCloseUButton2
+	slot4 = slot2
+	slot2 = slot2.RemoveLuaGamepadHotkey
+
+	slot2(slot4)
+
+	slot2 = slot0.isMultiItem
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 27-43, warpins: 1 ---
+	slot2 = slot0.view
+	slot2 = slot2.btnCloseUButton2
+	slot4 = slot2
+	slot2 = slot2.SetGamepadAction
+	slot5 = HotkeyConst
+	slot5 = slot5.INPUT_MAP_ACTION_KEY
+	slot5 = slot5.GamepadButtonSouth
+	slot6 = nil
+
+	slot7 = function()
+		--- BLOCK #0 1-2, warpins: 1 ---
+		slot0 = true
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot2 = slot0.view
+	slot2 = slot2.btnCloseUButton2
+	slot4 = slot2
+	slot2 = slot2.SetHotkeyConsoleBar
+	slot5 = "CONSOLE_BAR_SELECT_DESELECT"
+	slot6 = 1
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 44-63, warpins: 3 ---
+	slot2 = slot0.view
+	slot2 = slot2.listBallUList
+
+	slot3 = function(slot0, slot1, slot2)
 		--- BLOCK #0 1-8, warpins: 1 ---
 		slot3 = self
 		slot5 = slot3
@@ -440,35 +556,148 @@ slot11 = function(slot0)
 
 	end
 
-	slot1.luaRenderItem = slot2
-	slot1 = slot0.view
-	slot1 = slot1.listBallUList
-	slot3 = slot1
-	slot1 = slot1.SetList
-	slot4 = slot0.model
-	slot6 = slot4
-	slot4 = slot4.getCubeList
-	MULTRES = slot4(slot6)
+	slot2.luaRenderItem = slot3
+	slot2 = slot0.view
+	slot2 = slot2.listBallUList
+	slot3 = nil
+	slot2.luaSelectedChanged = slot3
+	slot2 = slot0.view
+	slot2 = slot2.listBallUList
 
-	slot1(slot3, MULTRES)
+	slot3 = function(slot0, slot1)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot2 = ItemSelectionTipsUtils
+		slot2 = slot2.consumeLongPressClick
+		slot4 = slot0
+		slot2 = slot2(slot4)
+
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 7-7, warpins: 1 ---
+		return
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 8-9, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 10-10, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 11-14, warpins: 2 ---
+		slot2 = self
+		slot2 = slot2.isMultiItem
+		--- END OF BLOCK #4 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #8
+		end
+
+
+		--- BLOCK #5 15-19, warpins: 1 ---
+		slot2 = ItemSelectionTipsUtils
+		slot2 = slot2.isUsingGamepad
+		slot2 = slot2()
+
+		--- END OF BLOCK #5 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 20-20, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 21-29, warpins: 2 ---
+		slot2 = false
+		slot0.isSelected = slot2
+		slot2 = ItemSelectionTipsUtils
+		slot2 = slot2.showItemTips
+		slot4 = slot0
+		slot5 = slot1.itemId
+		slot6 = slot1.count
+
+		slot2(slot4, slot5, slot6)
+
+		return
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 30-35, warpins: 2 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2._onSelect
+		slot5 = slot1.itemId
+
+		slot2(slot4, slot5)
+
+		return
+		--- END OF BLOCK #8 ---
+
+
+
+	end
+
+	slot2.luaClick = slot3
+	slot2 = slot0.view
+	slot2 = slot2.listBallUList
+	slot4 = slot2
+	slot2 = slot2.SetList
+	slot5 = slot1
+
+	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #3 21-21, warpins: 2 ---
+	--- BLOCK #6 64-64, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot10._setupList = slot11
+slot12._setupList = slot13
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot13 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -482,10 +711,10 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #1 3-3, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #2 4-18, warpins: 1 ---
+	--- BLOCK #2 4-23, warpins: 1 ---
 	slot4 = false
 	slot1.draggable = slot4
 	slot4 = LuaUIUtils
@@ -499,6 +728,11 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	slot4(slot6, slot7)
 
+	slot4 = slot1.gameObject
+	slot5 = tostring
+	slot7 = slot3.itemId
+	slot5 = slot5(slot7)
+	slot4.name = slot5
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -512,7 +746,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #3 19-27, warpins: 1 ---
+	--- BLOCK #3 24-32, warpins: 1 ---
 	slot7 = slot4
 	slot5 = slot4.GetRefValue
 	slot8 = "txtNumUBaseText"
@@ -529,7 +763,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 28-33, warpins: 1 ---
+	--- BLOCK #4 33-38, warpins: 1 ---
 	slot6 = LuaUIUtils
 	slot6 = slot6.renderConsumeText
 	slot8 = slot5
@@ -543,14 +777,14 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 34-34, warpins: 1 ---
+	--- BLOCK #5 39-39, warpins: 1 ---
 	slot9 = 0
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 35-37, warpins: 2 ---
+	--- BLOCK #6 40-42, warpins: 2 ---
 	slot10 = 1
 	slot11 = 1
 
@@ -561,7 +795,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 38-46, warpins: 2 ---
+	--- BLOCK #7 43-51, warpins: 2 ---
 	slot8 = slot4
 	slot6 = slot4.GetRefValue
 	slot9 = "recommendUContainer"
@@ -578,7 +812,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #8 47-49, warpins: 1 ---
+	--- BLOCK #8 52-54, warpins: 1 ---
 	slot7 = slot3.isRecommend
 	--- END OF BLOCK #8 ---
 
@@ -589,7 +823,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #9 50-59, warpins: 1 ---
+	--- BLOCK #9 55-64, warpins: 1 ---
 	slot7 = slot6.gameObject
 	slot9 = slot7
 	slot7 = slot7.SetActiveEx
@@ -609,7 +843,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #10 60-63, warpins: 1 ---
+	--- BLOCK #10 65-68, warpins: 1 ---
 	slot9 = slot6
 	slot7 = slot6.LoadDefaultUrlManually
 
@@ -620,7 +854,7 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 64-68, warpins: 1 ---
+	--- BLOCK #11 69-73, warpins: 1 ---
 	slot7 = slot6.gameObject
 	slot9 = slot7
 	slot7 = slot7.SetActiveEx
@@ -633,150 +867,148 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 69-75, warpins: 5 ---
+	--- BLOCK #12 74-76, warpins: 5 ---
+	slot5 = slot0.isMultiItem
+	--- END OF BLOCK #12 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #13 77-83, warpins: 1 ---
 	slot5 = slot0.model
 	slot7 = slot5
 	slot5 = slot5.getSelectedItemId
 	slot5 = slot5(slot7)
 	slot6 = slot3.itemId
-	--- END OF BLOCK #12 ---
-
-	if slot5 ~= slot6 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 76-77, warpins: 1 ---
-	slot5 = false
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
-
-
-	--- BLOCK #14 78-78, warpins: 1 ---
-	slot5 = true
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 79-83, warpins: 2 ---
-	slot1.isSelected = slot5
-
-	slot5 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.model
-		slot2 = slot0
-		slot0 = slot0.getSelectedItemId
-		slot0 = slot0(slot2)
-		slot1 = data
-		slot1 = slot1.itemId
-
-		--- END OF BLOCK #0 ---
-
-		if slot0 == slot1 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 10-10, warpins: 1 ---
-		return
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 11-17, warpins: 2 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0._onSelect
-		slot3 = data
-		slot3 = slot3.itemId
-
-		slot0(slot2, slot3)
-
-		return
-		--- END OF BLOCK #2 ---
-
-
-
+	if slot5 ~= slot6 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
 	end
 
-	slot1.luaClick = slot5
 
-	return
+	--- BLOCK #14 84-85, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 86-86, warpins: 1 ---
+	slot5 = true
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 84-84, warpins: 2 ---
+	--- BLOCK #16 87-94, warpins: 3 ---
+	slot1.isSelected = slot5
+	slot5 = ItemSelectionTipsUtils
+	slot5 = slot5.bindLongPressTips
+	slot7 = slot1
+
+	slot8 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = ItemSelectionTipsUtils
+		slot0 = slot0.showItemTips
+		slot2 = button
+		slot3 = data
+		slot3 = slot3.itemId
+		slot4 = data
+		slot4 = slot4.count
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5(slot7, slot8)
+
 	return
 	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 95-95, warpins: 2 ---
+	return
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot10._renderBallItem = slot11
+slot12._renderBallItem = slot13
 
-slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
-	slot2 = slot0.model
-	slot4 = slot2
-	slot2 = slot2.setSelectedItemId
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot2 = ItemSelectionTipsUtils
+	slot2 = slot2.toggleSelectedId
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getSelectedItemId
+	slot4 = slot4(slot6)
 	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.setSelectedItemId
+	slot6 = slot2
 
-	slot2(slot4, slot5)
+	slot3(slot5, slot6)
 
-	slot2 = slot0.view
-	slot2 = slot2.listBallUList
+	slot3 = slot0.view
+	slot3 = slot3.listBallUList
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 10-14, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.listBallUList
-	slot2 = slot2.RefreshList
+	--- BLOCK #1 18-22, warpins: 1 ---
+	slot3 = slot0.view
+	slot3 = slot3.listBallUList
+	slot3 = slot3.RefreshList
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 15-19, warpins: 1 ---
-	slot2 = slot0.view
-	slot2 = slot2.listBallUList
-	slot4 = slot2
-	slot2 = slot2.RefreshList
+	--- BLOCK #2 23-27, warpins: 1 ---
+	slot3 = slot0.view
+	slot3 = slot3.listBallUList
+	slot5 = slot3
+	slot3 = slot3.RefreshList
 
-	slot2(slot4)
+	slot3(slot5)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 20-23, warpins: 3 ---
-	slot4 = slot0
-	slot2 = slot0._refreshSelectState
+	--- BLOCK #3 28-31, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0._refreshSelectState
 
-	slot2(slot4)
+	slot3(slot5)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -785,9 +1017,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10._onSelect = slot11
+slot12._onSelect = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._refreshDetails
@@ -811,9 +1043,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._refreshSelectState = slot11
+slot12._refreshSelectState = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.txtDetailsUSDFText
@@ -835,71 +1067,25 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-11, warpins: 2 ---
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.getSelectedInfo
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #2 ---
+	--- BLOCK #2 6-12, warpins: 2 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.view
+	slot3 = slot3.txtDetailsUSDFText
+	slot4 = ""
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 12-14, warpins: 1 ---
-	slot2 = slot1.suggestDesc
-	--- END OF BLOCK #3 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 15-20, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.getLocalizationText
-	slot4 = slot1.suggestDesc
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #4 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 21-21, warpins: 3 ---
-	slot2 = ""
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 22-28, warpins: 2 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.view
-	slot5 = slot5.txtDetailsUSDFText
-	slot6 = slot2
-
-	slot3(slot5, slot6)
+	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot10._refreshDetails = slot11
+slot12._refreshDetails = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1148,9 +1334,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._refreshTips = slot11
+slot12._refreshTips = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = ItemSourceData
 	--- END OF BLOCK #0 ---
@@ -1258,18 +1444,18 @@ slot11 = function(slot0)
 
 end
 
-slot10._getSourceTargetUIId = slot11
+slot12._getSourceTargetUIId = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = false
-	slot0._isOpeningSourceAfterClose = slot1
-	slot3 = slot0
-	slot1 = slot0.checkUIOpen
-	slot1 = slot1(slot3)
+	slot2 = false
+	slot0._isOpeningSourceAfterClose = slot2
+	slot4 = slot0
+	slot2 = slot0.checkUIOpen
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -1277,10 +1463,10 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #1 8-10, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.closeImmediately
+	slot4 = slot0
+	slot2 = slot0.closeImmediately
 
-	slot1(slot3)
+	slot2(slot4)
 
 	--- END OF BLOCK #1 ---
 
@@ -1288,18 +1474,18 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #2 11-20, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.checkUIOpen
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_PET_FERTILITY_CHOOSE_BALL
-	slot1 = slot1(slot3, slot4)
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.checkUIOpen
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_PET_FERTILITY_CHOOSE_BALL
+	slot2 = slot2(slot4, slot5)
 
 	--- END OF BLOCK #2 ---
 
-	slot1 = if not slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -1314,26 +1500,28 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-31, warpins: 2 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.tryGetCtrlByUid
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_PET_FERTILITY_CHOOSE_BALL
-	slot1 = slot1(slot3, slot4)
+	--- BLOCK #4 22-26, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.soulEggEvolution
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 32-34, warpins: 1 ---
-	slot2 = slot1.closeForSourceJump
+	--- BLOCK #5 27-35, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.soulEggEvolution
+	slot4 = slot2
+	slot2 = slot2.beginChooseCubeSourceJump
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
+
 	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
@@ -1343,44 +1531,81 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #6 35-38, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.closeForSourceJump
-
-	slot2(slot4)
+	--- BLOCK #6 36-36, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 39-46, warpins: 2 ---
+	--- BLOCK #7 37-46, warpins: 3 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
 	slot4 = slot2
-	slot2 = slot2.closeImmediately
+	slot2 = slot2.tryGetCtrlByUid
 	slot5 = UIConst
 	slot5 = slot5.UI_ID_PET_FERTILITY_CHOOSE_BALL
-
-	slot2(slot4, slot5)
-
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #8
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #8 47-47, warpins: 2 ---
-	return
+	--- BLOCK #8 47-49, warpins: 1 ---
+	slot3 = slot2.closeForSourceJump
 	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 50-53, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.closeForSourceJump
+
+	slot3(slot5)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 54-61, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.closeImmediately
+	slot6 = UIConst
+	slot6 = slot6.UI_ID_PET_FERTILITY_CHOOSE_BALL
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 62-62, warpins: 2 ---
+	return
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot10._closeChooseBallForSourceJump = slot11
+slot12._closeChooseBallForSourceJump = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._isOpeningSourceAfterClose
 	--- END OF BLOCK #0 ---
@@ -1536,12 +1761,13 @@ slot11 = function(slot0, slot1)
 	slot7 = slot1
 
 	slot8 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0._closeChooseBallForSourceJump
+		slot3 = seekData
 
-		slot0(slot2)
+		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -1590,9 +1816,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10._openSourceAfterClosingChooseBall = slot11
+slot12._openSourceAfterClosingChooseBall = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnConfirmUButton
@@ -1906,9 +2132,9 @@ slot11 = function(slot0)
 
 end
 
-slot10._refreshConfirmBtn = slot11
+slot12._refreshConfirmBtn = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2006,9 +2232,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10._onConfirmUse = slot11
+slot12._onConfirmUse = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -2024,9 +2250,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot10.onOpen = slot11
+slot12.onOpen = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2035,9 +2261,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onShow = slot11
+slot12.onShow = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2046,9 +2272,9 @@ slot11 = function(slot0)
 
 end
 
-slot10.onHide = slot11
+slot12.onHide = slot13
 
-return slot10
+return slot12
 --- END OF BLOCK #0 ---
 
 

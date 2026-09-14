@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-103, warpins: 1 ---
+	--- BLOCK #0 1-109, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -108,6 +108,12 @@ slot3 = function(slot0)
 	slot4 = "officialAccountUContainer"
 	slot1 = slot1(slot3, slot4)
 	slot0.officialAccountUContainer = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "bgBlurUIBlurEffect"
+	slot1 = slot1(slot3, slot4)
+	slot0.bgBlurUIBlurEffect = slot1
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent

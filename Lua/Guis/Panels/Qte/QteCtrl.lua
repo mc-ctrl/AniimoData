@@ -127,7 +127,7 @@ slot3 = function(slot0, slot1, slot2)
 
 	end
 
-	slot9 = true
+	slot9 = false
 
 	slot3(slot5, slot6, slot7, slot8, slot9)
 

@@ -7,8 +7,8 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
 	useForRoute = false,
+	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_Com_Cry",
 	version = 7
 }
@@ -16,18 +16,18 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	const = 5,
+	value = "5",
 	name = "tAnimationTimeout",
-	type = "float",
-	value = "5"
+	const = 5,
+	type = "float"
 }
 slot4[1] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "6",
-	class = "IfElse"
+	class = "IfElse",
+	id = "6"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -36,8 +36,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "17",
-	class = "Condition"
+	class = "Condition",
+	id = "17"
 }
 slot8 = {}
 slot9 = {
@@ -71,8 +71,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "15",
-	class = "Action"
+	class = "Action",
+	id = "15"
 }
 slot8 = {}
 slot9 = {}
@@ -128,8 +128,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "10",
-	class = "Action"
+	class = "Action",
+	id = "10"
 }
 slot8 = {}
 slot9 = {}

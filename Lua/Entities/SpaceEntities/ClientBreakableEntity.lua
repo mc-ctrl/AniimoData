@@ -1,4 +1,4 @@
---- BLOCK #0 1-59, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -12,27 +12,24 @@ slot3 = require
 slot5 = "Common.Const.Const"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.ClientConst"
+slot6 = "Entities.SpaceEntities.CommonComponent.ClientPrefabModelComponent"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Entities.SpaceEntities.CommonComponent.ClientPrefabModelComponent"
+slot7 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
 slot5 = slot5(slot7)
-slot6 = require
-slot8 = "Entities.SpaceEntities.CommonComponent.ClientPhysicsComponent"
-slot6 = slot6(slot8)
-slot7 = slot0.Class
-slot9 = "ClientBreakableEntity"
-slot10 = slot1
-slot7 = slot7(slot9, slot10)
-slot8 = {}
-slot8[1] = slot5
-slot9 = slot0.AddComponents
+slot6 = slot0.Class
+slot8 = "ClientBreakableEntity"
+slot9 = slot1
+slot6 = slot6(slot8, slot9)
+slot7 = {}
+slot7[1] = slot4
+slot8 = slot0.AddComponents
+slot10 = slot6
 slot11 = slot7
-slot12 = slot8
 
-slot9(slot11, slot12)
+slot8(slot10, slot11)
 
-slot9 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientBreakableEntity
 	slot2 = slot2.super
@@ -49,9 +46,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.ctor = slot9
+slot6.ctor = slot8
 
-slot9 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = ClientBreakableEntity
 	slot2 = slot2.super
@@ -111,10 +108,10 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.init = slot9
+slot6.init = slot8
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-18, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = ClientBreakableEntity
 	slot1 = slot1.super
 	slot1 = slot1.postInitializeComponents
@@ -122,15 +119,18 @@ slot9 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddMonoComponent
-	slot4 = ClientConst
+	slot3 = slot0
+	slot1 = slot0.addEModelMonoComponent
+	slot4 = Const
 	slot4 = slot4.COMPONENT_IDX_PHYSX
-	slot1 = slot1(slot3, slot4)
+
+	slot1(slot3, slot4)
+
+	slot1 = slot0.eModel
 	slot2 = Const
 	slot2 = slot2.TAG_INTERACT_ATTACK
 	slot1.tagType = slot2
+	slot1 = slot0.eModel
 
 	slot2 = function(slot0, slot1, slot2, slot3)
 		--- BLOCK #0 1-4, warpins: 1 ---
@@ -175,9 +175,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.postInitializeComponents = slot9
+slot6.postInitializeComponents = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.templateId
 	--- END OF BLOCK #0 ---
@@ -228,9 +228,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.getConfigData = slot9
+slot6.getConfigData = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isModelLoaded
 	--- END OF BLOCK #0 ---
@@ -262,9 +262,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.canBeLocked = slot9
+slot6.canBeLocked = slot8
 
-slot9 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isModelLoaded
 	--- END OF BLOCK #0 ---
@@ -286,23 +286,24 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-11, warpins: 2 ---
+	--- BLOCK #2 6-12, warpins: 2 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
 	slot4 = slot2
 	slot2 = slot2.GetMeshSize
-	slot5 = 0
+	slot5 = Const
+	slot5 = slot5.COMPONENT_IDX_ITEM
+	slot6 = 0
 
-	return slot2(slot4, slot5)
+	return slot2(slot4, slot5, slot6)
 	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot7.getBodySize = slot9
+slot6.getBodySize = slot8
 
-slot9 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isModelLoaded
 	--- END OF BLOCK #0 ---
@@ -325,13 +326,14 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-24, warpins: 2 ---
+	--- BLOCK #2 7-25, warpins: 2 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
 	slot4 = slot2
 	slot2 = slot2.GetMeshSize
-	slot5 = 1
-	slot2 = slot2(slot4, slot5)
+	slot5 = Const
+	slot5 = slot5.COMPONENT_IDX_ITEM
+	slot6 = 1
+	slot2 = slot2(slot4, slot5, slot6)
 	slot2 = slot2 * 0.5
 	slot5 = slot0
 	slot3 = slot0.getPosition
@@ -351,9 +353,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot7.getLockPartPosition = slot9
+slot6.getLockPartPosition = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = ClientBreakableEntity
 	slot1 = slot1.super
@@ -395,9 +397,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.refreshAppearance = slot9
+slot6.refreshAppearance = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
@@ -412,9 +414,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.isConfigKinematic = slot9
+slot6.isConfigKinematic = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.postComponentMethod
@@ -429,9 +431,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.onPrefabModelLoaded = slot9
+slot6.onPrefabModelLoaded = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playDestroyEffect
@@ -466,7 +468,7 @@ slot9 = function(slot0)
 	--- BLOCK #2 14-19, warpins: 2 ---
 	slot2 = ClientBreakableEntity
 	slot2 = slot2.super
-	slot2 = slot2.destroy
+	slot2 = slot2.preDestroy
 	slot4 = slot0
 
 	slot2(slot4)
@@ -478,9 +480,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.destroy = slot9
+slot6.preDestroy = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot4 = slot0
@@ -517,9 +519,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.getPreloadEffects = slot9
+slot6.getPreloadEffects = slot8
 
-slot9 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = nil
 
@@ -530,9 +532,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.getInteractionListData = slot9
+slot6.getInteractionListData = slot8
 
-return slot7
+return slot6
 --- END OF BLOCK #0 ---
 
 

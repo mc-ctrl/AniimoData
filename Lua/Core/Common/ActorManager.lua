@@ -57,7 +57,7 @@ end
 
 slot0.addEntity = slot1
 
-slot1 = function(slot0)
+slot1 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -87,48 +87,67 @@ slot1 = function(slot0)
 
 
 	--- BLOCK #3 6-10, warpins: 2 ---
-	slot1 = ActorManager
-	slot1 = slot1.entities
-	slot1 = slot1[slot0]
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 11-13, warpins: 1 ---
-	slot2 = slot1.uid
-	--- END OF BLOCK #4 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 14-18, warpins: 1 ---
-	slot2 = ActorManager
-	slot2 = slot2.uid2Ent
-	slot3 = slot1.uid
-	slot4 = nil
-	slot2[slot3] = slot4
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 19-23, warpins: 3 ---
 	slot2 = ActorManager
 	slot2 = slot2.entities
-	slot3 = nil
-	slot2[slot0] = slot3
+	slot2 = slot2[slot0]
+
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-11, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-13, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 14-16, warpins: 1 ---
+	slot3 = slot2.uid
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 17-21, warpins: 1 ---
+	slot3 = ActorManager
+	slot3 = slot3.uid2Ent
+	slot4 = slot2.uid
+	slot5 = nil
+	slot3[slot4] = slot5
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-26, warpins: 3 ---
+	slot3 = ActorManager
+	slot3 = slot3.entities
+	slot4 = nil
+	slot3[slot0] = slot4
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 
 

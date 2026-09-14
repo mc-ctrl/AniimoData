@@ -1,4 +1,4 @@
---- BLOCK #0 1-115, warpins: 1 ---
+--- BLOCK #0 1-141, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -84,7 +84,7 @@ slot30 = slot3
 slot27 = slot27(slot29, slot30)
 
 slot28 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = EvolutionSystem
 	slot1 = slot1.super
 	slot1 = slot1.onCtor
@@ -96,6 +96,8 @@ slot28 = function(slot0)
 	slot0.evolutionTimerList = slot1
 	slot1 = false
 	slot0._isInEvolution = slot1
+	slot1 = false
+	slot0._isFinishingEvolution = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -107,64 +109,140 @@ end
 slot27.onCtor = slot28
 
 slot28 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-95, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
-	slot3 = slot0.finishEvolution
+	slot3 = slot0._startEvolution
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = false
 
-	slot3(slot5)
+	slot3(slot5, slot6, slot7, slot8)
 
-	slot3 = EvolutionConst
-	slot3 = slot3.Pos
-	slot0.pos = slot3
-	slot3 = Quaternion
-	slot3 = slot3.identity
-	slot0.rot = slot3
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.startEvolution = slot28
+
+slot28 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._startEvolution
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = true
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.startPresentation = slot28
+
+slot28 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.finishEvolution
+
+	slot5(slot7)
+
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-55, warpins: 2 ---
+	slot0.presentationOnly = slot5
+	slot0.presentationCloseCallback = slot4
+	slot5 = EvolutionConst
+	slot5 = slot5.Pos
+	slot0.pos = slot5
+	slot5 = Quaternion
+	slot5 = slot5.identity
+	slot0.rot = slot5
 	slot0.oldEntityInfo = slot1
 	slot0.newEntityInfo = slot2
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.effect
-	slot5 = slot3
-	slot3 = slot3.playEffectAt
-	slot6 = nil
-	slot7 = EvolutionConst
-	slot7 = slot7.EvolutionSpaceEffectName
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.effect
+	slot7 = slot5
+	slot5 = slot5.playEffectAt
+	slot8 = nil
+	slot9 = EvolutionConst
+	slot9 = slot9.EvolutionSpaceEffectName
+	slot10 = slot0.pos
+	slot11 = slot0.rot
+	slot13 = slot11
+	slot11 = slot11.ToEulerAngles
+	slot11 = slot11(slot13)
+	slot12 = nil
+	slot13 = extraInfo
+	slot14 = true
+	slot5 = slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14)
+	slot0.bgEffectId = slot5
+	slot5 = ClientUtils
+	slot5 = slot5.createEvolutionEntity
+	slot7 = slot1
 	slot8 = slot0.pos
 	slot9 = slot0.rot
-	slot11 = slot9
-	slot9 = slot9.ToEulerAngles
-	slot9 = slot9(slot11)
-	slot10 = nil
-	slot11 = extraInfo
-	slot12 = true
-	slot3 = slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
-	slot0.bgEffectId = slot3
-	slot3 = ClientUtils
-	slot3 = slot3.createEvolutionEntity
-	slot5 = slot1
-	slot6 = slot0.pos
-	slot7 = slot0.rot
-	slot3 = slot3(slot5, slot6, slot7)
-	slot0.petEvolveVirtualOldEntity = slot3
-	slot3 = ClientUtils
-	slot3 = slot3.createEvolutionEntity
-	slot5 = slot2
-	slot6 = slot0.pos
-	slot7 = slot0.rot
-	slot3 = slot3(slot5, slot6, slot7)
-	slot0.petEvolveVirtualNewEntity = slot3
-	slot3 = true
-	slot0._isInEvolution = slot3
-	slot3 = slot0.evolutionTimerList
-	slot4 = slot0.evolutionTimerList
-	slot4 = #slot4
-	slot4 = slot4 + 1
-	slot5 = TimerManager
-	slot5 = slot5.addTimer
-	slot7 = EvolutionConst
-	slot7 = slot7.EvolutionPetUIShowTime
+	slot5 = slot5(slot7, slot8, slot9)
+	slot0.petEvolveVirtualOldEntity = slot5
+	slot5 = ClientUtils
+	slot5 = slot5.createEvolutionEntity
+	slot7 = slot2
+	slot8 = slot0.pos
+	slot9 = slot0.rot
+	slot5 = slot5(slot7, slot8, slot9)
+	slot0.petEvolveVirtualNewEntity = slot5
+	slot5 = true
+	slot0._isInEvolution = slot5
+	slot5 = slot0.presentationOnly
+	--- END OF BLOCK #3 ---
 
-	slot8 = function()
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 56-66, warpins: 1 ---
+	slot5 = slot0.evolutionTimerList
+	slot6 = slot0.evolutionTimerList
+	slot6 = #slot6
+	slot6 = slot6 + 1
+	slot7 = TimerManager
+	slot7 = slot7.addTimer
+	slot9 = EvolutionConst
+	slot9 = slot9.EvolutionPetUIShowTime
+
+	slot10 = function()
 		--- BLOCK #0 1-17, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
@@ -191,60 +269,186 @@ slot28 = function(slot0, slot1, slot2)
 
 	end
 
+	slot7 = slot7(slot9, slot10)
+	slot5[slot6] = slot7
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 67-87, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.setEvolveAbsolutelyControlCamera
+	slot8 = true
+
+	slot5(slot7, slot8)
+
+	slot5 = slot0.petEvolveVirtualOldEntity
+	slot7 = slot5
+	slot5 = slot5.setEvolutionScene
+	slot8 = slot0.evolutionScene
+
+	slot5(slot7, slot8)
+
+	slot5 = slot0.petEvolveVirtualNewEntity
+	slot7 = slot5
+	slot5 = slot5.setEvolutionScene
+	slot8 = slot0.evolutionScene
+
+	slot5(slot7, slot8)
+
+	slot7 = slot0
+	slot5 = slot0.setUIVisible
+	slot8 = false
+
+	slot5(slot7, slot8)
+
+	slot5 = slot0.presentationOnly
+	--- END OF BLOCK #5 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 88-91, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.startShinyPresentation
+
+	slot5(slot7)
+
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 92-97, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.playPetEvolutionOldPrepare
+
+	slot5(slot7)
+
+	slot7 = slot0
+	slot5 = slot0.playPetEvolutionNew
+
+	slot5(slot7)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 98-106, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.uiMgr
+	slot7 = slot5
+	slot5 = slot5.AddStreamingAnchor
+
+	slot5(slot7)
+
+	slot5 = slot0.presentationOnly
+	--- END OF BLOCK #8 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 107-113, warpins: 1 ---
+	slot5 = facade
+	slot7 = slot5
+	slot5 = slot5.SendMessageCommand
+	slot8 = MessageName
+	slot8 = slot8.PLAYER_PET_EVOLVE_PROCESS_FINISH
+	slot9 = true
+
+	slot5(slot7, slot8, slot9)
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 114-115, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot27._startEvolution = slot28
+
+slot28 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-16, warpins: 1 ---
+	slot4 = nil
+	slot5 = TimerManager
+	slot5 = slot5.addTimer
+	slot7 = math
+	slot7 = slot7.max
+	slot9 = slot2
+	slot10 = 0
+	slot7 = slot7(slot9, slot10)
+
+	slot8 = function()
+		--- BLOCK #0 1-10, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.timers
+		slot1 = timer
+		slot2 = nil
+		slot0[slot1] = slot2
+		slot0 = self
+		slot0 = slot0.presentationContext
+		slot1 = context
+		--- END OF BLOCK #0 ---
+
+		if slot0 == slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 11-14, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.active
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 15-16, warpins: 1 ---
+		slot0 = callback
+
+		slot0()
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-17, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
 	slot5 = slot5(slot7, slot8)
-	slot3[slot4] = slot5
-	slot5 = slot0
-	slot3 = slot0.setEvolveAbsolutelyControlCamera
+	slot4 = slot5
+	slot5 = slot1.timers
 	slot6 = true
-
-	slot3(slot5, slot6)
-
-	slot3 = slot0.petEvolveVirtualOldEntity
-	slot5 = slot3
-	slot3 = slot3.setEvolutionScene
-	slot6 = slot0.evolutionScene
-
-	slot3(slot5, slot6)
-
-	slot3 = slot0.petEvolveVirtualNewEntity
-	slot5 = slot3
-	slot3 = slot3.setEvolutionScene
-	slot6 = slot0.evolutionScene
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.setUIVisible
-	slot6 = false
-
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.playPetEvolutionOldPrepare
-
-	slot3(slot5)
-
-	slot5 = slot0
-	slot3 = slot0.playPetEvolutionNew
-
-	slot3(slot5)
-
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.uiMgr
-	slot5 = slot3
-	slot3 = slot3.AddStreamingAnchor
-
-	slot3(slot5)
-
-	slot3 = facade
-	slot5 = slot3
-	slot3 = slot3.SendMessageCommand
-	slot6 = MessageName
-	slot6 = slot6.PLAYER_PET_EVOLVE_PROCESS_FINISH
-	slot7 = true
-
-	slot3(slot5, slot6, slot7)
+	slot5[slot4] = slot6
 
 	return
 	--- END OF BLOCK #0 ---
@@ -253,135 +457,1392 @@ slot28 = function(slot0, slot1, slot2)
 
 end
 
-slot27.startEvolution = slot28
+slot27.addPresentationTimer = slot28
 
-slot28 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.finishEvolution
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot3 = slot0
-	slot1 = slot0.isEvolveToFinalBranch
-	slot4 = slot0.oldEntityInfo
-	slot5 = slot0.newEntityInfo
-	slot1 = slot1(slot3, slot4, slot5)
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = pairs
+	slot4 = slot1.timers
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 12-20, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.close
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_PET_EVOLUTION
+	--- BLOCK #1 5-8, warpins: 1 ---
+	slot6 = TimerManager
+	slot6 = slot6.removeTimer
+	slot8 = slot5
 
-	slot1(slot3, slot4)
+	slot6(slot8)
 
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 21-27, warpins: 1 ---
-	slot1 = LoggerManager
-	slot1 = slot1.checkLogger
-	slot3 = LoggerConst
-	slot3 = slot3.WARN
-	slot1 = slot1(slot3)
+	--- BLOCK #2 9-10, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	for slot5 in slot2, slot3, slot4
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #3
+
+
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.clear
+	slot4 = slot1.timers
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.clearPresentationTimers = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.resultReady
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.skipped
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 7-8, warpins: 1 ---
+	slot2 = slot1.closeDelayFinished
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 9-10, warpins: 0 ---
+	slot2 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 11-11, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-15, warpins: 4 ---
+	slot1.canClose = slot2
+	slot2 = slot1.refresh
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 28-34, warpins: 1 ---
-	slot1 = logger
-	slot3 = slot1
-	slot1 = slot1.warn
-	slot4 = "PetEvolutionSystem:onClosePetEvolveShow, not evolve to final branch, petId = %s"
-	slot5 = slot0.newEntityInfo
-	--- END OF BLOCK #3 ---
+	--- BLOCK #6 16-17, warpins: 1 ---
+	slot2 = slot1.refresh
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 35-38, warpins: 1 ---
-	slot5 = slot0.newEntityInfo
-	slot5 = slot5.id
-	--- END OF BLOCK #4 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 39-39, warpins: 2 ---
-	slot5 = "nil"
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 40-40, warpins: 2 ---
-	slot1(slot3, slot4, slot5)
+	slot2()
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 41-43, warpins: 2 ---
-	slot1 = slot0.delayTimer
+	--- BLOCK #7 18-18, warpins: 2 ---
+	return
 	--- END OF BLOCK #7 ---
 
-	slot1 = if slot1 then
+
+
+end
+
+slot27.refreshPresentation = slot28
+
+slot28 = function(slot0)
+	--- BLOCK #0 1-59, warpins: 1 ---
+	slot1 = {
+		canClose = false,
+		resultReady = false,
+		canSkip = false,
+		active = true
+	}
+	slot2 = {}
+	slot1.timers = slot2
+	slot0.presentationContext = slot1
+
+	slot2 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.skipShinyPresentation
+		slot3 = context
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.skip = slot2
+
+	slot2 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.presentationContext
+		slot1 = context
+		--- END OF BLOCK #0 ---
+
+		if slot0 == slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #1 6-9, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.active
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 10-16, warpins: 1 ---
+		slot0 = context
+		slot1 = true
+		slot0.closing = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.finishEvolution
+
+		slot0(slot2)
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-17, warpins: 3 ---
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot1.onViewDestroyed = slot2
+	slot2 = slot0.petEvolveVirtualOldEntity
+	slot4 = slot2
+	slot2 = slot2.setEvolutionVisible
+	slot5 = true
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.petEvolveVirtualNewEntity
+	slot4 = slot2
+	slot2 = slot2.setEvolutionVisible
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.petEvolveVirtualOldEntity
+	slot4 = slot2
+	slot2 = slot2.playSoundEvent
+	slot5 = EvolutionConst
+	slot5 = slot5.SoundEventName
+
+	slot2(slot4, slot5)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_PET_EVOLVE_PET_SHOW
+	slot6 = {}
+	slot7 = CallbackHandler
+	slot9 = slot0
+	slot10 = "onClosePetEvolveShow"
+	slot7 = slot7(slot9, slot10)
+	slot6.closeCallback = slot7
+	slot7 = slot0.newEntityInfo
+	slot6.petInfo = slot7
+	slot6.presentationContext = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	slot4 = slot0
+	slot2 = slot0.addPresentationTimer
+	slot5 = slot1
+	slot6 = EvolutionConst
+	slot6 = slot6.EvolutionDissolveOldMeshAnim
+	slot6 = slot6.startTime
+
+	slot7 = function()
+		--- BLOCK #0 1-16, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.petEvolveVirtualOldEntity
+		slot3 = slot0
+		slot1 = slot0.playEffect
+		slot4 = EvolutionConst
+		slot4 = slot4.VEG_OLD
+		slot4 = slot4.effectName
+
+		slot1(slot3, slot4)
+
+		slot3 = slot0
+		slot1 = slot0.playPresentationDissolve
+		slot4 = false
+
+		slot5 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = context
+			slot0 = slot0.active
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-8, warpins: 1 ---
+			slot0 = context
+			slot0 = slot0.skipped
+			--- END OF BLOCK #1 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #3
+			end
+
+
+			--- BLOCK #2 9-9, warpins: 2 ---
+			--- END OF BLOCK #2 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+			--- BLOCK #3 10-19, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.addPresentationTimer
+			slot3 = context
+			slot4 = EvolutionConst
+			slot4 = slot4.ShinyPresentation
+			slot4 = slot4.skipDelay
+
+			slot5 = function()
+				--- BLOCK #0 1-11, warpins: 1 ---
+				slot0 = context
+				slot1 = context
+				slot1 = slot1.resultReady
+				slot1 = not slot1
+				slot0.canSkip = slot1
+				slot0 = self
+				slot2 = slot0
+				slot0 = slot0.refreshPresentation
+				slot3 = context
+
+				slot0(slot2, slot3)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			slot0(slot2, slot3, slot4, slot5)
+
+			return
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 20-20, warpins: 2 ---
+			return
+			--- END OF BLOCK #4 ---
+
+
+
+		end
+
+		slot6 = function()
+			--- BLOCK #0 1-4, warpins: 1 ---
+			slot0 = context
+			slot0 = slot0.active
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 5-8, warpins: 1 ---
+			slot0 = context
+			slot0 = slot0.skipped
+
+			--- END OF BLOCK #1 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #3
+			end
+
+
+			--- BLOCK #2 9-9, warpins: 2 ---
+			return
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 10-15, warpins: 2 ---
+			slot0 = oldEntity
+			slot2 = slot0
+			slot0 = slot0.setEvolutionVisible
+			slot3 = false
+
+			slot0(slot2, slot3)
+
+			return
+			--- END OF BLOCK #3 ---
+
+
+
+		end
+
+		slot1(slot3, slot4, slot5, slot6)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot4 = slot0
+	slot2 = slot0.addPresentationTimer
+	slot5 = slot1
+	slot6 = EvolutionConst
+	slot6 = slot6.EvolutionDissolveNewMeshAnim
+	slot6 = slot6.startTime
+
+	slot7 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.playShinyPresentationNew
+		slot3 = context
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.startShinyPresentation = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-22, warpins: 1 ---
+	slot2 = slot0.petEvolveVirtualNewEntity
+	slot3 = EvolutionConst
+	slot3 = slot3.EvolutionDissolveNewMeshAnim
+	slot6 = slot2
+	slot4 = slot2.setEvolutionVisible
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	slot6 = slot2
+	slot4 = slot2.playEffect
+	slot7 = EvolutionConst
+	slot7 = slot7.VEG_NEW
+	slot7 = slot7.effectName
+	slot4 = slot4(slot6, slot7)
+	slot1.newEffectId = slot4
+	slot6 = slot2
+	slot4 = slot2.playPresentationDissolve
+	slot7 = true
+
+	slot8 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.active
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.skipped
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 10-28, warpins: 1 ---
+		slot0 = newEntity
+		slot2 = slot0
+		slot0 = slot0.setEvolutionVisible
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		slot0 = EvolutionConst
+		slot0 = slot0.EvolutionAnimation
+		slot0 = slot0.startTime
+		slot1 = dissolve
+		slot1 = slot1.startTime
+		slot0 = slot0 - slot1
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.addPresentationTimer
+		slot4 = context
+		slot5 = slot0
+
+		slot6 = function()
+			--- BLOCK #0 1-6, warpins: 1 ---
+			slot0 = self
+			slot2 = slot0
+			slot0 = slot0.playShinyPresentationAnimation
+			slot3 = context
+
+			slot0(slot2, slot3)
+
+			return
+			--- END OF BLOCK #0 ---
+
+
+
+		end
+
+		slot1(slot3, slot4, slot5, slot6)
+
+		return
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 29-29, warpins: 2 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot9 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.active
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = context
+		slot0 = slot0.skipped
+
+		--- END OF BLOCK #1 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		return
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 10-15, warpins: 2 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.completeShinyPresentation
+		slot3 = context
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot27.playShinyPresentationNew = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.animationPlayed
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-20, warpins: 2 ---
+	slot2 = true
+	slot1.animationPlayed = slot2
+	slot2 = EvolutionConst
+	slot2 = slot2.EvolutionAnimation
+	slot2 = slot2.animStateList
+	slot3 = math
+	slot3 = slot3.random
+	slot5 = 1
+	slot6 = #slot2
+	slot3 = slot3(slot5, slot6)
+	slot3 = slot2[slot3]
+	slot4 = type
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	if slot4 == "string" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 21-26, warpins: 1 ---
+	slot4 = slot0.petEvolveVirtualNewEntity
+	slot6 = slot4
+	slot4 = slot4.playAnimation
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 27-31, warpins: 1 ---
+	slot4 = slot0.petEvolveVirtualNewEntity
+	slot6 = slot4
+	slot4 = slot4.playCfgAnimation
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-32, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot27.playShinyPresentationAnimation = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.resultReady
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-7, warpins: 2 ---
+	slot2 = slot0.petEvolveVirtualOldEntity
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 8-12, warpins: 1 ---
+	slot2 = slot0.petEvolveVirtualOldEntity
+	slot4 = slot2
+	slot2 = slot2.setEvolutionVisible
+	slot5 = false
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 13-53, warpins: 2 ---
+	slot2 = slot0.pos
+	slot3 = Vector3
+	slot5 = 0
+	slot6 = EvolutionConst
+	slot6 = slot6.EvolutionSuccess
+	slot6 = slot6.heightMulti
+	slot7 = slot0.petEvolveVirtualNewEntity
+	slot9 = slot7
+	slot7 = slot7.getHeight
+	slot7 = slot7(slot9)
+	slot6 = slot6 * slot7
+	slot7 = 0
+	slot3 = slot3(slot5, slot6, slot7)
+	slot2 = slot2 + slot3
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.effect
+	slot5 = slot3
+	slot3 = slot3.playEffectAt
+	slot6 = nil
+	slot7 = EvolutionConst
+	slot7 = slot7.EvolutionSuccess
+	slot7 = slot7.effectName
+	slot8 = slot2
+	slot9 = slot0.rot
+	slot11 = slot9
+	slot9 = slot9.ToEulerAngles
+	slot9 = slot9(slot11)
+	slot10 = nil
+	slot11 = extraInfo
+	slot3 = slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11)
+	slot0.petSuccessEffectId = slot3
+	slot3 = true
+	slot1.resultReady = slot3
+	slot3 = false
+	slot1.canSkip = slot3
+	slot5 = slot0
+	slot3 = slot0.refreshPresentation
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot27.completeShinyPresentation = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.presentationContext
+	--- END OF BLOCK #0 ---
+
+	if slot2 == slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.active
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #2 7-9, warpins: 1 ---
+	slot2 = slot1.canSkip
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot2 = slot1.skipped
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 13-13, warpins: 4 ---
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #5 14-38, warpins: 1 ---
+	slot2 = true
+	slot1.skipped = slot2
+	slot2 = false
+	slot1.canSkip = slot2
+	slot2 = false
+	slot1.closeDelayFinished = slot2
+	slot4 = slot0
+	slot2 = slot0.clearPresentationTimers
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.refreshPresentation
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.addPresentationTimer
+	slot5 = slot1
+	slot6 = EvolutionConst
+	slot6 = slot6.ShinyPresentation
+	slot6 = slot6.closeDelayAfterSkip
+
+	slot7 = function()
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = context
+		slot1 = true
+		slot0.closeDelayFinished = slot1
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshPresentation
+		slot3 = context
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot2 = slot0.petEvolveVirtualOldEntity
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 39-51, warpins: 1 ---
+	slot2 = slot0.petEvolveVirtualOldEntity
+	slot4 = slot2
+	slot2 = slot2.stopSoundEvent
+	slot5 = EvolutionConst
+	slot5 = slot5.SoundEventName
+	slot6 = 0.1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = ClientUtils
+	slot2 = slot2.safeDestroy
+	slot4 = slot0.petEvolveVirtualOldEntity
+
+	slot2(slot4)
+
+	slot2 = nil
+	slot0.petEvolveVirtualOldEntity = slot2
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 52-55, warpins: 2 ---
+	slot2 = slot0.petEvolveVirtualNewEntity
+	slot3 = slot1.newEffectId
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 44-49, warpins: 1 ---
-	slot1 = TimerManager
-	slot1 = slot1.removeTimer
-	slot3 = slot0.delayTimer
+	--- BLOCK #8 56-61, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.stopEffectById
+	slot6 = slot1.newEffectId
 
-	slot1(slot3)
+	slot3(slot5, slot6)
 
-	slot1 = nil
-	slot0.delayTimer = slot1
+	slot3 = nil
+	slot1.newEffectId = slot3
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 50-55, warpins: 2 ---
-	slot1 = TimerManager
-	slot1 = slot1.addTimer
-	slot3 = 0.1
+	--- BLOCK #9 62-78, warpins: 2 ---
+	slot5 = slot2
+	slot3 = slot2.stopPresentationDissolve
 
-	slot4 = function()
+	slot3(slot5)
+
+	slot3 = EvolutionConst
+	slot3 = slot3.EvolutionDissolveNewMeshAnim
+	slot6 = slot0
+	slot4 = slot0.seekPresentationScene
+	slot7 = slot3.startTime
+	slot8 = slot3.duration
+	slot7 = slot7 + slot8
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.finishShinyPresentationSkip
+	slot7 = slot1
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 79-79, warpins: 2 ---
+	return
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot27.skipShinyPresentation = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot1.active
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot1.resultReady
+
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 8-31, warpins: 2 ---
+	slot2 = slot0.petEvolveVirtualNewEntity
+	slot5 = slot2
+	slot3 = slot2.stopPresentationDissolve
+
+	slot3(slot5)
+
+	slot5 = slot2
+	slot3 = slot2.setEvolutionVisible
+	slot6 = true
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.playShinyPresentationSkipSound
+	slot6 = slot1
+	slot7 = EvolutionConst
+	slot7 = slot7.EvolutionSuccess
+	slot7 = slot7.startTime
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.playShinyPresentationAnimation
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.completeShinyPresentation
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot27.finishShinyPresentationSkip = slot28
+
+slot28 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot1.skipSoundPlayed
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-24, warpins: 2 ---
+	slot3 = true
+	slot1.skipSoundPlayed = slot3
+	slot3 = slot0.petEvolveVirtualNewEntity
+	slot6 = slot3
+	slot4 = slot3.playSoundEvent
+	slot7 = EvolutionConst
+	slot7 = slot7.SoundEventName
+
+	slot4(slot6, slot7)
+
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.audio
+	slot6 = slot4
+	slot4 = slot4.seekEvent
+	slot7 = EvolutionConst
+	slot7 = slot7.SoundEventName
+	slot8 = slot3.eModel
+	slot8 = slot8.audioEmitter
+	slot9 = slot2
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot27.playShinyPresentationSkipSound = slot28
+
+slot28 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.evolutionScene
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = slot0.evolutionScene
+	slot2 = slot2.scene
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot3 = slot2.cutscene
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 11-23, warpins: 1 ---
+	slot3 = slot2.cutscene
+	slot3 = slot3.prefabRoot
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = typeof
+	slot8 = CS
+	slot8 = slot8.UnityEngine
+	slot8 = slot8.Playables
+	slot8 = slot8.PlayableDirector
+	MULTRES = slot6(slot8)
+	slot3 = slot3(slot5, MULTRES)
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-27, warpins: 1 ---
+	slot3.time = slot1
+	slot6 = slot3
+	slot4 = slot3.Evaluate
+
+	slot4(slot6)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-54, warpins: 4 ---
+	slot5 = slot0
+	slot3 = slot0.clearBgEffect
+
+	slot3(slot5)
+
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.effect
+	slot5 = slot3
+	slot3 = slot3.playEffectAt
+	slot6 = nil
+	slot7 = EvolutionConst
+	slot7 = slot7.EvolutionSpaceEffectName
+	slot8 = slot0.pos
+	slot9 = slot0.rot
+	slot11 = slot9
+	slot9 = slot9.ToEulerAngles
+	slot9 = slot9(slot11)
+	slot10 = nil
+	slot11 = {}
+	slot12 = ClientConst
+	slot12 = slot12.LayerDefine
+	slot12 = slot12.LAYER_CUTSCENE
+	slot11.layer = slot12
+	slot11.startTime = slot1
+	slot12 = true
+	slot3 = slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12)
+	slot0.bgEffectId = slot3
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot27.seekPresentationScene = slot28
+
+slot28 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = slot0.presentationOnly
+	slot2 = slot0.presentationCloseCallback
+	slot3 = slot0.newEntityInfo
+	slot6 = slot0
+	slot4 = slot0.finishEvolution
+	slot7 = not slot1
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-11, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-14, warpins: 1 ---
+	slot4 = slot2
+	slot6 = slot3
+
+	slot4(slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-15, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #4 16-22, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.isEvolveToFinalBranch
+	slot7 = slot0.oldEntityInfo
+	slot8 = slot0.newEntityInfo
+	slot4 = slot4(slot6, slot7, slot8)
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-31, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot6 = slot4
+	slot4 = slot4.close
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_PET_EVOLUTION
+
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #6 32-38, warpins: 1 ---
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.WARN
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 39-45, warpins: 1 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.warn
+	slot7 = "PetEvolutionSystem:onClosePetEvolveShow, not evolve to final branch, petId = %s"
+	slot8 = slot0.newEntityInfo
+	--- END OF BLOCK #7 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 46-49, warpins: 1 ---
+	slot8 = slot0.newEntityInfo
+	slot8 = slot8.id
+	--- END OF BLOCK #8 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 50-50, warpins: 2 ---
+	slot8 = "nil"
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 51-51, warpins: 2 ---
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 52-54, warpins: 2 ---
+	slot4 = slot0.delayTimer
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 55-60, warpins: 1 ---
+	slot4 = TimerManager
+	slot4 = slot4.removeTimer
+	slot6 = slot0.delayTimer
+
+	slot4(slot6)
+
+	slot4 = nil
+	slot0.delayTimer = slot4
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 61-66, warpins: 2 ---
+	slot4 = TimerManager
+	slot4 = slot4.addTimer
+	slot6 = 0.1
+
+	slot7 = function()
 		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = facade
 		slot2 = slot0
@@ -404,17 +1865,24 @@ slot28 = function(slot0)
 
 	end
 
-	slot1 = slot1(slot3, slot4)
-	slot0.delayTimer = slot1
+	slot4 = slot4(slot6, slot7)
+	slot0.delayTimer = slot4
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #10 56-57, warpins: 2 ---
+	--- BLOCK #14 67-68, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 69-69, warpins: 2 ---
+	return
+	--- END OF BLOCK #15 ---
 
 
 
@@ -964,59 +2432,31 @@ end
 slot27.playPetEvolutionNew = slot28
 
 slot28 = function(slot0, slot1)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setEvolveAbsolutelyControlCamera
-	slot5 = false
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0._isFinishingEvolution
 
-	slot2(slot4, slot5)
-
-	slot4 = slot0
-	slot2 = slot0.setUIVisible
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.petEvolveVirtualNewEntity
 	--- END OF BLOCK #0 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 12-29, warpins: 1 ---
-	slot2 = facade
-	slot4 = slot2
-	slot2 = slot2.sendLuaEvent
-	slot5 = SandboxConst
-	slot5 = slot5.COMMON_EVENT
-	slot5 = slot5.PET_EVOLUTION_COMPLETED
-	slot6 = slot0.petEvolveVirtualNewEntity
-	slot6 = slot6.templateId
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
 
-	slot2(slot4, slot5, slot6)
-
-	slot2 = pg
-	slot2 = slot2.getEntity
-	slot4 = slot0.petEvolveVirtualNewEntity
-	slot6 = slot4
-	slot4 = slot4.getEvolutionId
-	MULTRES = slot4(slot6)
-	slot2 = slot2(MULTRES)
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 30-32, warpins: 1 ---
-	slot3 = slot2.eventEmitter
+	--- BLOCK #2 5-10, warpins: 2 ---
+	slot2 = true
+	slot0._isFinishingEvolution = slot2
+	slot2 = slot0.presentationOnly
+	slot3 = slot0.presentationContext
 	--- END OF BLOCK #2 ---
 
 	slot3 = if slot3 then
@@ -1026,78 +2466,233 @@ slot28 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 33-38, warpins: 1 ---
-	slot3 = slot2.eventEmitter
-	slot5 = slot3
-	slot3 = slot3.emit
-	slot6 = EventConst
-	slot6 = slot6.TOPLOGO_HEIGHT
+	--- BLOCK #3 11-26, warpins: 1 ---
+	slot4 = false
+	slot3.active = slot4
+	slot4 = false
+	slot3.canSkip = slot4
+	slot4 = true
+	slot3.canClose = slot4
+	slot4 = true
+	slot3.closing = slot4
+	slot4 = nil
+	slot3.refresh = slot4
+	slot6 = slot0
+	slot4 = slot0.clearPresentationTimers
+	slot7 = slot3
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
+	slot4 = nil
+	slot0.presentationContext = slot4
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 39-60, warpins: 4 ---
-	slot4 = slot0
-	slot2 = slot0.clearPetEvolveVirtualEntity
-
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.clearBgEffect
-
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.clearPetSuccessEffect
-
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0.changeEnv
-
-	slot2(slot4)
-
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.uiMgr
-	slot4 = slot2
-	slot2 = slot2.ClearStreamingAnchor
-
-	slot2(slot4)
-
-	slot2 = false
-	slot0._isInEvolution = slot2
+	--- BLOCK #4 27-36, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot6 = slot4
+	slot4 = slot4.checkUIOpen
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_PET_EVOLVE_PET_SHOW
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #4 ---
 
-	slot1 = if slot1 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 61-67, warpins: 1 ---
-	slot2 = facade
-	slot4 = slot2
-	slot2 = slot2.SendMessageCommand
-	slot5 = MessageName
-	slot5 = slot5.PLAYER_PET_EVOLVE_PROCESS_FINISH
-	slot6 = false
+	--- BLOCK #5 37-44, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.ui
+	slot6 = slot4
+	slot4 = slot4.close
+	slot7 = UIConst
+	slot7 = slot7.UI_ID_PET_EVOLVE_PET_SHOW
 
-	slot2(slot4, slot5, slot6)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 68-68, warpins: 2 ---
-	return
+	--- BLOCK #6 45-55, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.setEvolveAbsolutelyControlCamera
+	slot7 = false
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.setUIVisible
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot4 = slot0.petEvolveVirtualNewEntity
 	--- END OF BLOCK #6 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 56-57, warpins: 1 ---
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 58-75, warpins: 1 ---
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.sendLuaEvent
+	slot7 = SandboxConst
+	slot7 = slot7.COMMON_EVENT
+	slot7 = slot7.PET_EVOLUTION_COMPLETED
+	slot8 = slot0.petEvolveVirtualNewEntity
+	slot8 = slot8.templateId
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = pg
+	slot4 = slot4.getEntity
+	slot6 = slot0.petEvolveVirtualNewEntity
+	slot8 = slot6
+	slot6 = slot6.getEvolutionId
+	MULTRES = slot6(slot8)
+	slot4 = slot4(MULTRES)
+	--- END OF BLOCK #8 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 76-78, warpins: 1 ---
+	slot5 = slot4.eventEmitter
+	--- END OF BLOCK #9 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 79-84, warpins: 1 ---
+	slot5 = slot4.eventEmitter
+	slot7 = slot5
+	slot5 = slot5.emit
+	slot8 = EventConst
+	slot8 = slot8.TOPLOGO_HEIGHT
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 85-112, warpins: 5 ---
+	slot6 = slot0
+	slot4 = slot0.clearPetEvolveVirtualEntity
+
+	slot4(slot6)
+
+	slot6 = slot0
+	slot4 = slot0.clearBgEffect
+
+	slot4(slot6)
+
+	slot6 = slot0
+	slot4 = slot0.clearPetSuccessEffect
+
+	slot4(slot6)
+
+	slot6 = slot0
+	slot4 = slot0.changeEnv
+
+	slot4(slot6)
+
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.uiMgr
+	slot6 = slot4
+	slot4 = slot4.ClearStreamingAnchor
+
+	slot4(slot6)
+
+	slot4 = false
+	slot0._isInEvolution = slot4
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.input
+	slot6 = slot4
+	slot4 = slot4.refreshCursorState
+
+	slot4(slot6)
+
+	--- END OF BLOCK #11 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 113-114, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 115-121, warpins: 1 ---
+	slot4 = facade
+	slot6 = slot4
+	slot4 = slot4.SendMessageCommand
+	slot7 = MessageName
+	slot7 = slot7.PLAYER_PET_EVOLVE_PROCESS_FINISH
+	slot8 = false
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 122-128, warpins: 3 ---
+	slot4 = nil
+	slot0.presentationOnly = slot4
+	slot4 = nil
+	slot0.presentationCloseCallback = slot4
+	slot4 = false
+	slot0._isFinishingEvolution = slot4
+
+	return
+	--- END OF BLOCK #14 ---
 
 
 
@@ -1252,9 +2847,9 @@ slot28 = function(slot0)
 
 
 	--- BLOCK #1 4-9, warpins: 1 ---
-	slot1 = slot0.petEvolveVirtualOldEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.petEvolveVirtualOldEntity
 
 	slot1(slot3)
 
@@ -1277,9 +2872,9 @@ slot28 = function(slot0)
 
 
 	--- BLOCK #3 13-18, warpins: 1 ---
-	slot1 = slot0.petEvolveVirtualNewEntity
-	slot3 = slot1
-	slot1 = slot1.destroy
+	slot1 = ClientUtils
+	slot1 = slot1.safeDestroy
+	slot3 = slot0.petEvolveVirtualNewEntity
 
 	slot1(slot3)
 

@@ -1,21 +1,24 @@
---- BLOCK #0 1-49, warpins: 1 ---
+--- BLOCK #0 1-52, warpins: 1 ---
 slot0 = require
-slot2 = "SDK.Platform.PlatformTextCommunicationService"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "SDK.Platform.PlatformUGCService"
+slot3 = "SDK.Platform.PlatformTextCommunicationService"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "SDK.Platform.PlatformSocialService"
+slot4 = "SDK.Platform.PlatformUGCService"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "SDK.Platform.PlatformLogger"
+slot5 = "SDK.Platform.PlatformSocialService"
 slot3 = slot3(slot5)
-slot4 = {}
-slot5 = "pending"
-slot4.PENDING_DECISION = slot5
+slot4 = require
+slot6 = "SDK.Platform.PlatformLogger"
+slot4 = slot4(slot6)
+slot5 = {}
+slot6 = "pending"
+slot5.PENDING_DECISION = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = {}
 	slot3.imageDecision = slot0
@@ -71,9 +74,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.makeContext = slot5
+slot5.makeContext = slot6
 
-slot5 = function()
+slot6 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = pg
 	--- END OF BLOCK #0 ---
@@ -126,9 +129,9 @@ slot5 = function()
 
 end
 
-slot4.getChatSystem = slot5
+slot5.getChatSystem = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = PlatformImageMaskService
 	slot1 = slot1.getChatSystem
@@ -189,9 +192,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getCachedPlayerInfo = slot5
+slot5.getCachedPlayerInfo = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -226,9 +229,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.resolveSeedPlayerInfo = slot5
+slot5.resolveSeedPlayerInfo = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = pg
 	--- END OF BLOCK #0 ---
@@ -512,9 +515,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isLocalPlayer = slot5
+slot5.isLocalPlayer = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = type
 	slot3 = PlatformSocialService
@@ -552,9 +555,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.peekPlatformBlocked = slot5
+slot5.peekPlatformBlocked = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -626,9 +629,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.peekIsPlatformFriend = slot5
+slot5.peekIsPlatformFriend = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot3 = PlatformImageMaskService
 	slot3 = slot3.resolveSeedPlayerInfo
@@ -916,7 +919,7 @@ slot5 = function(slot0, slot1, slot2)
 	if slot6 == "friends_only" then
 	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #42
 	end
 
 
@@ -1011,7 +1014,121 @@ slot5 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 144-153, warpins: 2 ---
+	--- BLOCK #31 144-145, warpins: 2 ---
+	--- END OF BLOCK #31 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #32 146-148, warpins: 1 ---
+	slot11 = PlatformUGCService
+	--- END OF BLOCK #32 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #33 149-154, warpins: 1 ---
+	slot11 = type
+	slot13 = PlatformUGCService
+	slot13 = slot13.resolveTargetVisibleDecision
+	slot11 = slot11(slot13)
+	--- END OF BLOCK #33 ---
+
+	if slot11 == "function" then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #34 155-162, warpins: 1 ---
+	slot11 = PlatformUGCService
+	slot13 = slot11
+	slot11 = slot11.resolveTargetVisibleDecision
+	slot14 = slot3
+	slot15 = "local_ugc_privacy_friends_only"
+	slot11, slot12 = slot11(slot13, slot14, slot15)
+	--- END OF BLOCK #34 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #36
+	end
+
+
+	--- BLOCK #35 163-165, warpins: 1 ---
+	slot13 = slot4.Allow
+	--- END OF BLOCK #35 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #36 166-166, warpins: 2 ---
+	slot13 = slot4.Deny
+	--- END OF BLOCK #36 ---
+
+	FLOW; TARGET BLOCK #37
+
+
+	--- BLOCK #37 167-175, warpins: 2 ---
+	slot14 = slot13
+	slot15 = slot11
+	slot16 = slot3
+	slot17 = PlatformImageMaskService
+	slot17 = slot17.makeContext
+	slot19 = slot13
+	slot20 = slot11
+	--- END OF BLOCK #37 ---
+
+	slot12 = if slot12 then
+	JUMP TO BLOCK #38
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #38 176-178, warpins: 1 ---
+	slot21 = slot12.ugcReason
+	--- END OF BLOCK #38 ---
+
+	slot21 = if not slot21 then
+	JUMP TO BLOCK #39
+	else
+	JUMP TO BLOCK #40
+	end
+
+
+	--- BLOCK #39 179-179, warpins: 2 ---
+	slot21 = "local_ugc_privacy_friends_only"
+	--- END OF BLOCK #39 ---
+
+	FLOW; TARGET BLOCK #40
+
+
+	--- BLOCK #40 180-181, warpins: 2 ---
+	MULTRES = slot17(slot19, slot20, slot21)
+
+	return slot14, slot15, slot16, MULTRES
+
+	--- END OF BLOCK #40 ---
+
+	FLOW; TARGET BLOCK #41
+
+
+	--- BLOCK #41 182-191, warpins: 4 ---
 	slot11 = slot10
 	slot12 = slot9
 	slot13 = slot3
@@ -1024,47 +1141,151 @@ slot5 = function(slot0, slot1, slot2)
 
 	return slot11, slot12, slot13, MULTRES
 
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #41 ---
 
-	FLOW; TARGET BLOCK #32
+	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #32 154-156, warpins: 2 ---
+	--- BLOCK #42 192-194, warpins: 2 ---
 	slot8 = slot7.Fallback
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #42 ---
 
 	if slot6 ~= slot8 then
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #43
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #44
 	end
 
 
-	--- BLOCK #33 157-158, warpins: 1 ---
-	--- END OF BLOCK #33 ---
+	--- BLOCK #43 195-196, warpins: 1 ---
+	--- END OF BLOCK #43 ---
 
 	if slot6 == "fallback" then
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #45
 	end
 
 
-	--- BLOCK #34 159-160, warpins: 2 ---
+	--- BLOCK #44 197-198, warpins: 2 ---
 	slot8 = "local_ugc_privacy_fallback"
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #44 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #36
+	UNCONDITIONAL JUMP; TARGET BLOCK #46
 
 
-	--- BLOCK #35 161-161, warpins: 1 ---
+	--- BLOCK #45 199-199, warpins: 1 ---
 	slot8 = "local_ugc_privacy_allow"
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #45 ---
 
-	FLOW; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #36 162-171, warpins: 2 ---
+	--- BLOCK #46 200-202, warpins: 2 ---
+	slot9 = PlatformUGCService
+	--- END OF BLOCK #46 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #47
+	else
+	JUMP TO BLOCK #55
+	end
+
+
+	--- BLOCK #47 203-208, warpins: 1 ---
+	slot9 = type
+	slot11 = PlatformUGCService
+	slot11 = slot11.resolveTargetVisibleDecision
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #47 ---
+
+	if slot9 == "function" then
+	JUMP TO BLOCK #48
+	else
+	JUMP TO BLOCK #55
+	end
+
+
+	--- BLOCK #48 209-216, warpins: 1 ---
+	slot9 = PlatformUGCService
+	slot11 = slot9
+	slot9 = slot9.resolveTargetVisibleDecision
+	slot12 = slot3
+	slot13 = slot8
+	slot9, slot10 = slot9(slot11, slot12, slot13)
+	--- END OF BLOCK #48 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #49
+	else
+	JUMP TO BLOCK #50
+	end
+
+
+	--- BLOCK #49 217-219, warpins: 1 ---
+	slot11 = slot4.Allow
+	--- END OF BLOCK #49 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #51
+	end
+
+
+	--- BLOCK #50 220-220, warpins: 2 ---
+	slot11 = slot4.Deny
+	--- END OF BLOCK #50 ---
+
+	FLOW; TARGET BLOCK #51
+
+
+	--- BLOCK #51 221-229, warpins: 2 ---
+	slot12 = slot11
+	slot13 = slot9
+	slot14 = slot3
+	slot15 = PlatformImageMaskService
+	slot15 = slot15.makeContext
+	slot17 = slot11
+	slot18 = slot9
+	--- END OF BLOCK #51 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #52
+	else
+	JUMP TO BLOCK #53
+	end
+
+
+	--- BLOCK #52 230-232, warpins: 1 ---
+	slot19 = slot10.ugcReason
+	--- END OF BLOCK #52 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #54
+	end
+
+
+	--- BLOCK #53 233-233, warpins: 2 ---
+	slot19 = slot8
+	--- END OF BLOCK #53 ---
+
+	FLOW; TARGET BLOCK #54
+
+
+	--- BLOCK #54 234-235, warpins: 2 ---
+	MULTRES = slot15(slot17, slot18, slot19)
+
+	return slot12, slot13, slot14, MULTRES
+
+	--- END OF BLOCK #54 ---
+
+	FLOW; TARGET BLOCK #55
+
+
+	--- BLOCK #55 236-245, warpins: 3 ---
 	slot9 = slot4.Allow
 	slot10 = true
 	slot11 = slot3
@@ -1076,15 +1297,15 @@ slot5 = function(slot0, slot1, slot2)
 	MULTRES = slot12(slot14, slot15, slot16)
 
 	return slot9, slot10, slot11, MULTRES
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #55 ---
 
 
 
 end
 
-slot4.evaluateVisibility = slot5
+slot5.evaluateVisibility = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0.requestState
@@ -1132,9 +1353,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.isRequestGuardEnabled = slot5
+slot5.isRequestGuardEnabled = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PlatformImageMaskService
 	slot1 = slot1.isRequestGuardEnabled
@@ -1192,9 +1413,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.nextRequestId = slot5
+slot5.nextRequestId = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot0.isAlive
@@ -1273,9 +1494,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isBindingAlive = slot5
+slot5.isBindingAlive = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -1342,9 +1563,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.checkImageVisibilityNow = slot5
+slot5.checkImageVisibilityNow = slot6
 
-slot5 = function(slot0, slot1, slot2)
+slot6 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot1
@@ -1389,7 +1610,7 @@ slot5 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #3 20-20, warpins: 1 ---
-	slot9 = {}
+	slot9 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -1706,9 +1927,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.resolveImageVisibility = slot5
+slot5.resolveImageVisibility = slot6
 
-slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot6 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot7 = PlatformImageMaskService
 	slot7 = slot7.isBindingAlive
@@ -1858,9 +2079,9 @@ slot5 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot4.applyVisible = slot5
+slot5.applyVisible = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -2199,9 +2420,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.bindImage = slot5
+slot5.bindImage = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -2210,9 +2431,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.clearCache = slot5
+slot5.clearCache = slot6
 
-return slot4
+return slot5
 --- END OF BLOCK #0 ---
 
 

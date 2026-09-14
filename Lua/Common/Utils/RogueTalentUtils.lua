@@ -729,57 +729,11 @@ end
 slot4.getEventData = slot5
 
 slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isPlayer
-	slot4 = slot0
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = true
 
 	return slot2
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-12, warpins: 2 ---
-	slot2 = TalentEventData
-	slot2 = slot2.unlockExtraTeamPos
-	--- END OF BLOCK #2 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 13-13, warpins: 1 ---
-	slot2 = {}
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 14-18, warpins: 2 ---
-	slot3 = RogueTalentUtils
-	slot3 = slot3.hasUnlockedEvent
-	slot5 = slot0.rogueTalentLevelUnlock
-	slot6 = slot2
-
-	return slot3(slot5, slot6)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #0 ---
 
 
 

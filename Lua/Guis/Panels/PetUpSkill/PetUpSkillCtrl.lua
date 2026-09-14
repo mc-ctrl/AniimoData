@@ -481,7 +481,7 @@ slot22 = function(slot0, slot1)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
@@ -491,10 +491,10 @@ slot22 = function(slot0, slot1)
 	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #4 93-113, warpins: 1 ---
+	--- BLOCK #4 93-105, warpins: 1 ---
 	slot9 = slot0.view
 	slot9 = slot9.iconConsumeUImage
 	slot10 = LuaUIUtils
@@ -502,16 +502,6 @@ slot22 = function(slot0, slot1)
 	slot12 = slot7
 	slot10 = slot10(slot12)
 	slot9.url = slot10
-	slot9 = ClientTextUtils
-	slot9 = slot9.setText
-	slot11 = slot0.view
-	slot11 = slot11.txtNumUSDFText
-	slot12 = tostring
-	slot14 = slot8
-	MULTRES = slot12(slot14)
-
-	slot9(slot11, MULTRES)
-
 	slot9 = ClientUtils
 	slot9 = slot9.getItemCountById
 	slot11 = slot7
@@ -521,26 +511,72 @@ slot22 = function(slot0, slot1)
 	if slot9 < slot8 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 114-115, warpins: 1 ---
+	--- BLOCK #5 106-106, warpins: 1 ---
 	slot3 = false
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 116-117, warpins: 1 ---
+	--- BLOCK #6 107-109, warpins: 2 ---
+	slot10 = slot8
 	--- END OF BLOCK #6 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 110-122, warpins: 1 ---
+	slot11 = UIConst
+	slot11 = slot11.ITEM_STATE_COLOR
+	slot12 = UIConst
+	slot12 = slot12.ITEM_STATE
+	slot12 = slot12.LACK
+	slot11 = slot11[slot12]
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "<style=%s>%s</style>"
+	slot15 = slot11
+	slot16 = slot8
+	slot12 = slot12(slot14, slot15, slot16)
+	slot10 = slot12
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 123-131, warpins: 2 ---
+	slot11 = ClientTextUtils
+	slot11 = slot11.setText
+	slot13 = slot0.view
+	slot13 = slot13.txtNumUSDFText
+	slot14 = tostring
+	slot16 = slot10
+	MULTRES = slot14(slot16)
+
+	slot11(slot13, MULTRES)
+
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 132-133, warpins: 1 ---
+	--- END OF BLOCK #9 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
 	LOOP BLOCK #4
-	GO OUT TO BLOCK #7
+	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #7 118-130, warpins: 4 ---
+	--- BLOCK #10 134-146, warpins: 3 ---
 	slot4 = slot0.view
 	slot4 = slot4.btnConsumeUButton
 	slot6 = slot4
@@ -554,31 +590,31 @@ slot22 = function(slot0, slot1)
 	slot6 = slot4
 	slot4 = slot4.TryChangePage
 	slot7 = "button"
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #10 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 131-132, warpins: 1 ---
+	--- BLOCK #11 147-148, warpins: 1 ---
 	slot8 = 0
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #9 133-133, warpins: 1 ---
+	--- BLOCK #12 149-149, warpins: 1 ---
 	slot8 = 4
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #10 134-152, warpins: 2 ---
+	--- BLOCK #13 150-168, warpins: 2 ---
 	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.view
@@ -618,7 +654,7 @@ slot22 = function(slot0, slot1)
 	slot0.currencyTickTimer = slot4
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #13 ---
 
 
 

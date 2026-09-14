@@ -1,4 +1,4 @@
---- BLOCK #0 1-54, warpins: 1 ---
+--- BLOCK #0 1-56, warpins: 1 ---
 slot0 = require
 slot2 = "GameApp.Camera.CameraMode.CameraMode"
 slot0 = slot0(slot2)
@@ -1054,6 +1054,24 @@ slot7 = function(slot0, slot1)
 end
 
 slot5.setTime = slot7
+
+slot7 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot2 = slot0.cameraMode
+	slot4 = slot2
+	slot2 = slot2.SetAnimSpeed
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.setAnimSpeed = slot7
 
 slot7 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---

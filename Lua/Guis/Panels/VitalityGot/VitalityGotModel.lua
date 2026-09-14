@@ -1,4 +1,4 @@
---- BLOCK #0 1-38, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -121,215 +121,296 @@ slot10 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 35-36, warpins: 4 ---
+	--- BLOCK #7 35-37, warpins: 4 ---
+	slot7 = false
 	--- END OF BLOCK #7 ---
 
 	slot6 = if slot6 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 37-39, warpins: 1 ---
-	slot7 = slot6.moneyShopItemId
+	--- BLOCK #8 38-40, warpins: 1 ---
+	slot8 = slot6.moneyShopItemId
 	--- END OF BLOCK #8 ---
 
-	slot7 = if slot7 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 40-44, warpins: 1 ---
-	slot7 = slot6.moneyShopItemId
-	slot8 = ShopMallCommodityData
-	slot8 = slot8[slot7]
+	--- BLOCK #9 41-47, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.appendMoneyShopItem
+	slot11 = slot3
+	slot12 = slot6.moneyShopItemId
+	slot13 = slot5
+	slot8 = slot8(slot10, slot11, slot12, slot13)
+	slot7 = slot8
 	--- END OF BLOCK #9 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #20
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 45-50, warpins: 1 ---
-	slot9 = ClientCashShopUtils
-	slot9 = slot9.isCommodityOnShelf
-	slot11 = slot8
-	slot9 = slot9(slot11)
+	--- BLOCK #10 48-49, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
-	slot9 = if slot9 then
+	slot7 = if not slot7 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #11 51-57, warpins: 1 ---
-	slot9 = ClientCashShopUtils
-	slot9 = slot9.getCommodityPrimaryCost
-	slot11 = slot7
-	slot12 = 1
-	slot9 = slot9(slot11, slot12)
+	--- BLOCK #11 50-51, warpins: 1 ---
 	--- END OF BLOCK #11 ---
 
-	slot9 = if slot9 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #12 58-63, warpins: 1 ---
-	slot10 = LuaUIUtils
-	slot10 = slot10.getItemInfoById
-	slot12 = slot9[1]
-	slot10 = slot10(slot12)
+	--- BLOCK #12 52-54, warpins: 1 ---
+	slot8 = slot6.shopItemId
 	--- END OF BLOCK #12 ---
 
-	slot10 = if not slot10 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #13 64-64, warpins: 2 ---
-	slot10 = nil
+	--- BLOCK #13 55-60, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.appendShopItem
+	slot11 = slot3
+	slot12 = slot6.shopItemId
+	slot13 = slot5
+
+	slot8(slot10, slot11, slot12, slot13)
+
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 65-66, warpins: 2 ---
+	--- BLOCK #14 61-63, warpins: 4 ---
+	slot8 = slot3
+	slot9 = slot2
+
+	return slot8, slot9
 	--- END OF BLOCK #14 ---
-
-	slot10 = if slot10 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #15 67-85, warpins: 1 ---
-	slot11 = ClientCashShopUtils
-	slot11 = slot11.getCommodityLeftLimit
-	slot13 = slot7
-	slot11 = slot11(slot13)
-	slot10.limitCount = slot11
-	slot10.moneyShopItemId = slot7
-	slot11 = slot9[2]
-	slot10.costNum = slot11
-	slot11 = slot8.num
-	slot10.obtainNum = slot11
-	slot11 = slot8.limitType
-	slot10.limitType = slot11
-	slot10.obtainName = slot5
-	slot11 = true
-	slot10.isMoneyShop = slot11
-	slot11 = #slot3
-	slot11 = slot11 + 1
-	slot3[slot11] = slot10
-	--- END OF BLOCK #15 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #16 86-87, warpins: 2 ---
-	--- END OF BLOCK #16 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #17 88-90, warpins: 1 ---
-	slot7 = slot6.shopItemId
-	--- END OF BLOCK #17 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #18 91-95, warpins: 1 ---
-	slot7 = slot6.shopItemId
-	slot8 = ShopCommodityData
-	slot8 = slot8[slot7]
-	--- END OF BLOCK #18 ---
-
-	slot8 = if slot8 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 96-134, warpins: 1 ---
-	slot9 = pg
-	slot9 = slot9.global
-	slot9 = slot9.ui
-	slot9 = slot9.shop
-	slot9 = slot9.model
-	slot11 = slot9
-	slot9 = slot9.getBuyPriceInfo
-	slot12 = slot7
-	slot13 = 1
-	slot9 = slot9(slot11, slot12, slot13)
-	slot10 = LuaUIUtils
-	slot10 = slot10.getItemInfoById
-	slot12 = slot9[1]
-	slot12 = slot12[1]
-	slot10 = slot10(slot12)
-	slot11 = pg
-	slot11 = slot11.global
-	slot11 = slot11.ui
-	slot11 = slot11.shop
-	slot11 = slot11.model
-	slot13 = slot11
-	slot11 = slot11.getLeftBuyPropCount
-	slot14 = slot7
-	slot11 = slot11(slot13, slot14)
-	slot10.limitCount = slot11
-	slot10.shopItemId = slot7
-	slot11 = slot9[1]
-	slot11 = slot11[2]
-	slot10.costNum = slot11
-	slot11 = slot8.itemNum
-	slot10.obtainNum = slot11
-	slot11 = slot8.limitType
-	slot10.limitType = slot11
-	slot10.obtainName = slot5
-	slot11 = true
-	slot10.isShop = slot11
-	slot11 = #slot3
-	slot11 = slot11 + 1
-	slot3[slot11] = slot10
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 135-137, warpins: 8 ---
-	slot7 = slot3
-	slot8 = slot2
-
-	return slot7, slot8
-	--- END OF BLOCK #20 ---
 
 
 
 end
 
 slot3.getPropDataList = slot10
+
+slot10 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = ShopMallCommodityData
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-11, warpins: 1 ---
+	slot5 = ClientCashShopUtils
+	slot5 = slot5.isCommodityOnShelf
+	slot7 = slot4
+	slot8 = slot2
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #1 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 2 ---
+	slot5 = false
+
+	return slot5
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-20, warpins: 2 ---
+	slot5 = ClientCashShopUtils
+	slot5 = slot5.getCommodityPrimaryCost
+	slot7 = slot2
+	slot8 = 1
+	slot5 = slot5(slot7, slot8)
+	--- END OF BLOCK #3 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-26, warpins: 1 ---
+	slot6 = LuaUIUtils
+	slot6 = slot6.getItemInfoById
+	slot8 = slot5[1]
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #4 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 27-27, warpins: 2 ---
+	slot6 = nil
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-29, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 30-31, warpins: 1 ---
+	slot7 = false
+
+	return slot7
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 32-51, warpins: 2 ---
+	slot7 = ClientCashShopUtils
+	slot7 = slot7.getCommodityLeftLimit
+	slot9 = slot2
+	slot7 = slot7(slot9)
+	slot6.limitCount = slot7
+	slot6.moneyShopItemId = slot2
+	slot7 = slot5[2]
+	slot6.costNum = slot7
+	slot7 = slot4.num
+	slot6.obtainNum = slot7
+	slot7 = slot4.limitType
+	slot6.limitType = slot7
+	slot6.obtainName = slot3
+	slot7 = true
+	slot6.isMoneyShop = slot7
+	slot7 = #slot1
+	slot7 = slot7 + 1
+	slot1[slot7] = slot6
+	slot7 = true
+
+	return slot7
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot3.appendMoneyShopItem = slot10
+
+slot10 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = ShopCommodityData
+	slot4 = slot4[slot2]
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot5 = false
+
+	return slot5
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-47, warpins: 2 ---
+	slot5 = pg
+	slot5 = slot5.global
+	slot5 = slot5.ui
+	slot5 = slot5.shop
+	slot5 = slot5.model
+	slot7 = slot5
+	slot5 = slot5.getBuyPriceInfo
+	slot8 = slot2
+	slot9 = 1
+	slot5 = slot5(slot7, slot8, slot9)
+	slot6 = LuaUIUtils
+	slot6 = slot6.getItemInfoById
+	slot8 = slot5[1]
+	slot8 = slot8[1]
+	slot6 = slot6(slot8)
+	slot7 = pg
+	slot7 = slot7.global
+	slot7 = slot7.ui
+	slot7 = slot7.shop
+	slot7 = slot7.model
+	slot9 = slot7
+	slot7 = slot7.getLeftBuyPropCount
+	slot10 = slot2
+	slot7 = slot7(slot9, slot10)
+	slot6.limitCount = slot7
+	slot6.shopItemId = slot2
+	slot7 = slot5[1]
+	slot7 = slot7[2]
+	slot6.costNum = slot7
+	slot7 = slot4.itemNum
+	slot6.obtainNum = slot7
+	slot7 = slot4.limitType
+	slot6.limitType = slot7
+	slot6.obtainName = slot3
+	slot7 = true
+	slot6.isShop = slot7
+	slot7 = #slot1
+	slot7 = slot7 + 1
+	slot1[slot7] = slot6
+	slot7 = true
+
+	return slot7
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot3.appendShopItem = slot10
 
 return slot3
 --- END OF BLOCK #0 ---

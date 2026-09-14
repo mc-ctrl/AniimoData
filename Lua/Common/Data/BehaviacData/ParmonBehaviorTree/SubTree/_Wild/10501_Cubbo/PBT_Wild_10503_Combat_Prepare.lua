@@ -7,10 +7,10 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 25,
 	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/_Wild/10501_Cubbo/PBT_Wild_10503_Combat_Prepare",
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	version = 25
 }
 slot4 = {}
 slot3.properties = slot4
@@ -26,8 +26,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "22"
+	id = "22",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -36,8 +36,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Assignment",
-	id = "27"
+	id = "27",
+	class = "Assignment"
 }
 slot8 = {}
 slot9 = {
@@ -65,8 +65,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "23"
+	id = "23",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -92,8 +92,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "25"
+	id = "25",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -102,7 +102,7 @@ slot10 = {
 }
 slot11 = {}
 slot12 = {
-	const = 2150102
+	const = 1145129
 }
 slot11[1] = slot12
 slot12 = {
@@ -129,8 +129,8 @@ slot6.node = slot7
 slot5[3] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "24"
+	id = "24",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -174,8 +174,8 @@ slot6.node = slot7
 slot5[4] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "26"
+	id = "26",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -207,8 +207,8 @@ slot6.node = slot7
 slot5[5] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "29"
+	id = "29",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}
@@ -287,8 +287,8 @@ slot6.node = slot7
 slot5[6] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "28"
+	id = "28",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

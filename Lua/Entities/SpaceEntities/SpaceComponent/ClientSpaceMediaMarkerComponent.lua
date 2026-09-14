@@ -620,68 +620,131 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-10, warpins: 2 ---
-	slot1 = slot0.loadMarkerIndexs
-	slot1 = #slot1
+	--- BLOCK #2 7-15, warpins: 2 ---
+	slot1 = Utils
+	slot1 = slot1.parseClassId
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.uid
+	slot1, slot2 = slot1(slot3)
+	slot3 = {}
 	--- END OF BLOCK #2 ---
 
-	if slot1 == 1 then
+	if slot1 ~= nil then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 11-28, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.callService
-	slot4 = "MediaMarkerService"
-	slot5 = "findMarkerByIndex"
-	slot6 = {}
-	slot7 = slot0.loadMarkerIndexs
-	slot7 = slot7[1]
-	slot6[1] = slot7
-	slot7 = CallbackHandler
-	slot9 = slot0
-	slot10 = "batchFindMediaMarkerCb"
-	slot7 = slot7(slot9, slot10)
-	slot8 = {}
-	slot9 = slot0.loadMarkerIndexs
-	slot9 = slot9[1]
-	slot8.hint = slot9
-
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
-
-	return
-
+	--- BLOCK #3 16-22, warpins: 1 ---
+	slot4 = Utils
+	slot4 = slot4.getAssociatedLanguageNo
+	slot6 = slot1
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	if slot4 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
 
 
-	--- BLOCK #4 29-47, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.callService
-	slot4 = "MediaMarkerService"
-	slot5 = "batchFindMarker"
-	slot6 = {}
-	slot7 = slot0.loadMarkerIndexs
-	slot6[1] = slot7
-	slot7 = {}
-	slot6[2] = slot7
-	slot7 = CallbackHandler
-	slot9 = slot0
-	slot10 = "batchFindMediaMarkerCb"
-	slot7 = slot7(slot9, slot10)
-	slot8 = {}
-	slot9 = slot0.loadMarkerIndexs
-	slot9 = slot9[1]
-	slot8.hint = slot9
+	--- BLOCK #4 23-24, warpins: 1 ---
+	--- END OF BLOCK #4 ---
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
+	if slot4 ~= slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-29, warpins: 1 ---
+	slot5 = {}
+	slot5[1] = slot2
+	slot5[2] = slot4
+	slot3 = slot5
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 30-32, warpins: 2 ---
+	slot5 = {}
+	slot5[1] = slot2
+	slot3 = slot5
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 33-36, warpins: 3 ---
+	slot4 = slot0.loadMarkerIndexs
+	slot4 = #slot4
+	--- END OF BLOCK #7 ---
+
+	if slot4 == 1 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 37-55, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.callService
+	slot7 = "MediaMarkerService"
+	slot8 = "findMarkerByIndex"
+	slot9 = {}
+	slot10 = slot0.loadMarkerIndexs
+	slot10 = slot10[1]
+	slot9[1] = slot10
+	slot9[2] = slot3
+	slot10 = CallbackHandler
+	slot12 = slot0
+	slot13 = "batchFindMediaMarkerCb"
+	slot10 = slot10(slot12, slot13)
+	slot11 = {}
+	slot12 = slot0.loadMarkerIndexs
+	slot12 = slot12[1]
+	slot11.hint = slot12
+
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
 
 	return
-	--- END OF BLOCK #4 ---
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 56-75, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.callService
+	slot7 = "MediaMarkerService"
+	slot8 = "batchFindMarker"
+	slot9 = {}
+	slot10 = slot0.loadMarkerIndexs
+	slot9[1] = slot10
+	slot10 = {}
+	slot9[2] = slot10
+	slot9[3] = slot3
+	slot10 = CallbackHandler
+	slot12 = slot0
+	slot13 = "batchFindMediaMarkerCb"
+	slot10 = slot10(slot12, slot13)
+	slot11 = {}
+	slot12 = slot0.loadMarkerIndexs
+	slot12 = slot12[1]
+	slot11.hint = slot12
+
+	slot4(slot6, slot7, slot8, slot9, slot10, slot11)
+
+	return
+	--- END OF BLOCK #9 ---
 
 
 
@@ -1055,27 +1118,27 @@ end
 
 slot10.RPC_SC_AddMediaMarker = slot11
 
-slot11 = function(slot0, slot1, slot2, slot3, slot4)
+slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot5 = Utils
-	slot5 = slot5.isSysMediaMarkerId
-	slot7 = slot2
-	slot5 = slot5(slot7)
+	slot7 = Utils
+	slot7 = slot7.isSysMediaMarkerId
+	slot9 = slot2
+	slot7 = slot7(slot9)
 	--- END OF BLOCK #0 ---
 
-	slot5 = if slot5 then
+	slot7 = if slot7 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	end
 
 
 	--- BLOCK #1 7-10, warpins: 1 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
 	--- END OF BLOCK #1 ---
 
-	if slot5 == nil then
+	if slot7 == nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -1083,21 +1146,21 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #2 11-13, warpins: 1 ---
-	slot5 = slot0.mediaMarkers
-	slot6 = {}
-	slot5[slot1] = slot6
+	slot7 = slot0.mediaMarkers
+	slot8 = {}
+	slot7[slot1] = slot8
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
 	--- BLOCK #3 14-18, warpins: 2 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
 	--- END OF BLOCK #3 ---
 
-	if slot5 == nil then
+	if slot7 == nil then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -1105,88 +1168,168 @@ slot11 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #4 19-22, warpins: 1 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot6 = {}
-	slot5[slot2] = slot6
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot8 = {}
+	slot7[slot2] = slot8
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 23-41, warpins: 2 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
-	slot6 = Const
-	slot6 = slot6.MediaMarkerType
-	slot6 = slot6.SystemText
-	slot5.type = slot6
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
-	slot5.likes = slot3
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
-	slot5.dislikes = slot4
-	slot7 = slot0
-	slot5 = slot0.refreshMediaMarkerUI
-
-	slot5(slot7)
-
+	--- BLOCK #5 23-39, warpins: 2 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot8 = Const
+	slot8 = slot8.MediaMarkerType
+	slot8 = slot8.SystemText
+	slot7.type = slot8
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.likes = slot3
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.dislikes = slot4
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #6 42-45, warpins: 1 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	--- END OF BLOCK #6 ---
-
-	slot5 = if slot5 then
-	JUMP TO BLOCK #7
+	if slot5 ~= nil then
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #7 46-50, warpins: 1 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
+	--- BLOCK #6 40-43, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.encourageDays = slot5
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 44-45, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
-	slot5 = if slot5 then
+	if slot6 ~= nil then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 51-61, warpins: 1 ---
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
-	slot5.likes = slot3
-	slot5 = slot0.mediaMarkers
-	slot5 = slot5[slot1]
-	slot5 = slot5[slot2]
-	slot5.dislikes = slot4
-	slot7 = slot0
-	slot5 = slot0.refreshMediaMarkerUI
-
-	slot5(slot7)
-
+	--- BLOCK #8 46-49, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.isPermanent = slot6
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 62-62, warpins: 4 ---
-	return
+	--- BLOCK #9 50-53, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.refreshMediaMarkerUI
+
+	slot7(slot9)
+
 	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #10 54-57, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	--- END OF BLOCK #10 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #11 58-62, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	--- END OF BLOCK #11 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #12 63-72, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.likes = slot3
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.dislikes = slot4
+	--- END OF BLOCK #12 ---
+
+	if slot5 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 73-76, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.encourageDays = slot5
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 77-78, warpins: 2 ---
+	--- END OF BLOCK #14 ---
+
+	if slot6 ~= nil then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 79-82, warpins: 1 ---
+	slot7 = slot0.mediaMarkers
+	slot7 = slot7[slot1]
+	slot7 = slot7[slot2]
+	slot7.isPermanent = slot6
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 83-85, warpins: 2 ---
+	slot9 = slot0
+	slot7 = slot0.refreshMediaMarkerUI
+
+	slot7(slot9)
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 86-86, warpins: 4 ---
+	return
+	--- END OF BLOCK #17 ---
 
 
 

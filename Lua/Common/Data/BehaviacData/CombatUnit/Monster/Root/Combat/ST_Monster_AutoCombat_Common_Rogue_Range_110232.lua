@@ -1,4 +1,4 @@
---- BLOCK #0 1-878, warpins: 1 ---
+--- BLOCK #0 1-836, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -8,65 +8,65 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Common_Rogue_Range_110232",
+	version = 123,
 	agenttype = "PuppetAgent",
-	version = 121
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Common_Rogue_Range_110232"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "CurrentDistToTarget",
 	type = "float",
+	name = "CurrentDistToTarget",
 	value = "0",
 	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	name = "CurrentBoxDistToTarget",
 	type = "float",
+	name = "CurrentBoxDistToTarget",
 	value = "0",
 	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	name = "goBackDist",
 	type = "float",
+	name = "goBackDist",
 	value = "0",
 	const = 0
 }
 slot4[3] = slot5
 slot5 = {
-	name = "skillStopDist",
 	type = "float",
+	name = "skillStopDist",
 	value = "0",
 	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	name = "tWeight_Group_SideWalk",
 	type = "int",
+	name = "tWeight_Group_SideWalk",
 	value = "0",
 	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	name = "tWeight_Group_Wait",
 	type = "int",
+	name = "tWeight_Group_Wait",
 	value = "0",
 	const = 0
 }
 slot4[6] = slot5
 slot5 = {
-	name = "tWeight_Group_Angry",
 	type = "int",
+	name = "tWeight_Group_Angry",
 	value = "0",
 	const = 0
 }
 slot4[7] = slot5
 slot5 = {
-	name = "skill_lock",
 	type = "int",
+	name = "skill_lock",
 	value = "0",
 	const = 0
 }
@@ -1249,68 +1249,6 @@ slot14[3] = slot15
 slot13.children = slot14
 slot12.node = slot13
 slot11[5] = slot12
-slot12 = {}
-slot13 = {
-	class = "Assignment",
-	id = "496"
-}
-slot14 = {}
-slot15 = {
-	CastRight = "false"
-}
-slot14[1] = slot15
-slot15 = {}
-slot16 = {
-	field = "skill_lock"
-}
-slot15.Opl = slot16
-slot14[2] = slot15
-slot15 = {}
-slot16 = {
-	const = 0
-}
-slot15.Opr = slot16
-slot14[3] = slot15
-slot13.properties = slot14
-slot14 = {}
-slot13.attachments = slot14
-slot14 = {}
-slot13.children = slot14
-slot12.node = slot13
-slot11[6] = slot12
-slot12 = {}
-slot13 = {
-	class = "Action",
-	id = "500"
-}
-slot14 = {}
-slot15 = {}
-slot16 = {
-	func = "startTimer"
-}
-slot17 = {}
-slot18 = {
-	const = "skill02"
-}
-slot17[1] = slot18
-slot16.params = slot17
-slot15.Method = slot16
-slot14[1] = slot15
-slot15 = {
-	ResultOption = "BT_INVALID"
-}
-slot14[2] = slot15
-slot15 = {
-	ResultResumeOption = "BT_None"
-}
-slot14[3] = slot15
-slot13.properties = slot14
-slot14 = {}
-slot13.attachments = slot14
-slot14 = {}
-slot13.children = slot14
-slot12.node = slot13
-slot11[7] = slot12
 slot10.children = slot11
 slot9.node = slot10
 slot8[1] = slot9

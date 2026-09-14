@@ -64,7 +64,7 @@ slot3 = function(slot0, slot1)
 
 	--- BLOCK #3 13-16, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.modelView
+	slot2 = slot2.shaderView
 	--- END OF BLOCK #3 ---
 
 	slot2 = if slot2 then
@@ -74,9 +74,8 @@ slot3 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 17-23, warpins: 1 ---
+	--- BLOCK #4 17-22, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.modelView
 	slot2 = slot2.shaderView
 	slot4 = slot2
 	slot2 = slot2.SetEnableRendererBatch
@@ -89,7 +88,7 @@ slot3 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 24-24, warpins: 5 ---
+	--- BLOCK #5 23-23, warpins: 5 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -209,7 +208,7 @@ slot3 = function(slot0)
 
 	--- BLOCK #1 4-7, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelView
+	slot1 = slot1.shaderView
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
@@ -232,9 +231,8 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-20, warpins: 1 ---
+	--- BLOCK #3 13-19, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelView
 	slot1 = slot1.shaderView
 	slot3 = slot1
 	slot1 = slot1.SetEnableRendererBatch
@@ -247,9 +245,8 @@ slot3 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #4 21-27, warpins: 1 ---
+	--- BLOCK #4 20-25, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelView
 	slot1 = slot1.shaderView
 	slot3 = slot1
 	slot1 = slot1.SetEnableRendererBatch
@@ -262,7 +259,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-28, warpins: 4 ---
+	--- BLOCK #5 26-26, warpins: 4 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -299,7 +296,7 @@ slot3 = function(slot0)
 
 	--- BLOCK #2 9-12, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelView
+	slot1 = slot1.shaderView
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -309,9 +306,8 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-26, warpins: 1 ---
+	--- BLOCK #3 13-24, warpins: 1 ---
 	slot1 = slot0.eModel
-	slot1 = slot1.modelView
 	slot1 = slot1.shaderView
 	slot3 = slot1
 	slot1 = slot1.SetEnableRendererBatch
@@ -320,7 +316,6 @@ slot3 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = slot0.eModel
-	slot1 = slot1.modelView
 	slot1 = slot1.shaderView
 	slot3 = slot1
 	slot1 = slot1.SetEnableRendererBatch
@@ -333,7 +328,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 27-27, warpins: 4 ---
+	--- BLOCK #4 25-25, warpins: 4 ---
 	return
 	--- END OF BLOCK #4 ---
 

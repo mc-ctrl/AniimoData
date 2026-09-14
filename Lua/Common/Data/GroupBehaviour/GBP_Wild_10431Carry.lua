@@ -42,8 +42,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPointGO",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointGO"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -63,8 +63,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -80,8 +80,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointGO",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointGO"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -101,8 +101,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointGO",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointGO"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -128,8 +128,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPointDoPatrol1",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointDoPatrol1"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -145,8 +145,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -162,8 +162,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointDoPatrol2",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointDoPatrol2"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -179,8 +179,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointDoPatrol3",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointDoPatrol3"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -202,8 +202,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPointCarry01",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointCarry01"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -223,8 +223,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -240,8 +240,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointCarry02",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointCarry02"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -261,8 +261,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointCarry03",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointCarry03"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -288,8 +288,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPointBack01",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointBack01"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -305,8 +305,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -322,8 +322,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointBack02",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointBack02"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -339,8 +339,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointBack03",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointBack03"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -362,8 +362,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	para = "GBPMsg_ResPointDrop01",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointDrop01"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -383,8 +383,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	para = "",
-	func = "goToNextStage"
+	func = "goToNextStage",
+	para = ""
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -400,8 +400,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[2] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointDrop02",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointDrop02"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -421,8 +421,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	para = "GBPMsg_ResPointDrop03",
-	func = "sendTrigger_ResPoint"
+	func = "sendTrigger_ResPoint",
+	para = "GBPMsg_ResPointDrop03"
 }
 slot5 = {
 	conditionName = "delayTime"

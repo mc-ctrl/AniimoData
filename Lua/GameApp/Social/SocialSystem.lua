@@ -1,4 +1,4 @@
---- BLOCK #0 1-145, warpins: 1 ---
+--- BLOCK #0 1-151, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -44,7 +44,7 @@ slot16 = slot1
 slot13 = slot13(slot15, slot16)
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-29, warpins: 1 ---
+	--- BLOCK #0 1-36, warpins: 1 ---
 	slot1 = SystemBase
 	slot1 = slot1.onCtor
 	slot3 = slot0
@@ -77,6 +77,14 @@ slot14 = function(slot0)
 	slot0._inPetInteractMode = slot1
 	slot1 = false
 	slot0._inCafeGathering = slot1
+	slot1 = nil
+	slot0._multiPetFollowPresentationTimerId = slot1
+	slot1 = nil
+	slot0._multiPetFollowPresentationCamera = slot1
+	slot3 = slot0
+	slot1 = slot0.registerMultiPetFollowPresentationTick
+
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -87,11 +95,184 @@ end
 
 slot13.onCtor = slot14
 
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0._multiPetFollowPresentationTimerId
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #2 5-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.camera
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-13, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 14-14, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 15-22, warpins: 1 ---
+	slot0._multiPetFollowPresentationCamera = slot1
+	slot4 = slot1
+	slot2 = slot1.addLateUpdateTimer
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.interactGestureComponent
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-7, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.tickMultiPetFollowPresentation
+
+		slot1(slot3)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 8-8, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2 = slot2(slot4, slot5)
+	slot0._multiPetFollowPresentationTimerId = slot2
+
+	return
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 23-23, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 24-24, warpins: 2 ---
+	return
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot13.registerMultiPetFollowPresentationTick = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = slot0._multiPetFollowPresentationTimerId
+	slot2 = slot0._multiPetFollowPresentationCamera
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-10, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.removeLateUpdateTimer
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-15, warpins: 3 ---
+	slot3 = nil
+	slot0._multiPetFollowPresentationTimerId = slot3
+	slot3 = nil
+	slot0._multiPetFollowPresentationCamera = slot3
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot13.unregisterMultiPetFollowPresentationTick = slot14
+
 slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = SystemBase
 	slot2 = slot2.onPlayerInit
 	slot4 = slot0
+
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.registerMultiPetFollowPresentationTick
 
 	slot2(slot4)
 
@@ -111,7 +292,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 12-15, warpins: 1 ---
+	--- BLOCK #1 15-18, warpins: 1 ---
 	slot2 = slot0.petSocialBehaviorComponent
 	slot4 = slot2
 	slot2 = slot2.resetData
@@ -123,7 +304,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 16-24, warpins: 2 ---
+	--- BLOCK #2 19-27, warpins: 2 ---
 	slot2 = false
 	slot0._inPetInteractMode = slot2
 	slot2 = false
@@ -140,7 +321,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 25-30, warpins: 1 ---
+	--- BLOCK #3 28-33, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.removeTimer
 	slot4 = slot0._initCafeCheckTimer
@@ -154,7 +335,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 31-39, warpins: 2 ---
+	--- BLOCK #4 34-42, warpins: 2 ---
 	slot2 = TimerManager
 	slot2 = slot2.addTimer
 	slot4 = SocialConst
@@ -191,7 +372,12 @@ end
 slot13.onPlayerInit = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.unregisterMultiPetFollowPresentationTick
+
+	slot1(slot3)
+
 	slot1 = SystemBase
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -208,7 +394,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-13, warpins: 1 ---
+	--- BLOCK #1 11-16, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
 	slot3 = slot0._initCafeCheckTimer
@@ -222,7 +408,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-16, warpins: 2 ---
+	--- BLOCK #2 17-19, warpins: 2 ---
 	slot1 = slot0.interactGestureComponent
 	--- END OF BLOCK #2 ---
 
@@ -233,7 +419,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #3 17-20, warpins: 1 ---
+	--- BLOCK #3 20-23, warpins: 1 ---
 	slot1 = slot0.interactGestureComponent
 	slot3 = slot1
 	slot1 = slot1.destroy
@@ -245,7 +431,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-23, warpins: 2 ---
+	--- BLOCK #4 24-26, warpins: 2 ---
 	slot1 = slot0.itemUseComponent
 	--- END OF BLOCK #4 ---
 
@@ -256,7 +442,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #5 24-27, warpins: 1 ---
+	--- BLOCK #5 27-30, warpins: 1 ---
 	slot1 = slot0.itemUseComponent
 	slot3 = slot1
 	slot1 = slot1.destroy
@@ -268,7 +454,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-30, warpins: 2 ---
+	--- BLOCK #6 31-33, warpins: 2 ---
 	slot1 = slot0.petSocialBehaviorComponent
 	--- END OF BLOCK #6 ---
 
@@ -279,7 +465,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #7 31-34, warpins: 1 ---
+	--- BLOCK #7 34-37, warpins: 1 ---
 	slot1 = slot0.petSocialBehaviorComponent
 	slot3 = slot1
 	slot1 = slot1.destroy
@@ -291,7 +477,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 35-35, warpins: 2 ---
+	--- BLOCK #8 38-38, warpins: 2 ---
 	return
 	--- END OF BLOCK #8 ---
 
@@ -2031,6 +2217,39 @@ slot14 = function(slot0)
 end
 
 slot13.onTick = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.interactGestureComponent
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.tickMultiPetFollowTransform
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot13.beforeAnimation = slot14
 
 slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---

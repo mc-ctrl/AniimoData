@@ -18,7 +18,7 @@ slot5 = require
 slot7 = "Utils.ClientDebugUtils"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.ClientSwitch"
+slot8 = "Common.ClientSwitch"
 slot6 = slot6(slot8)
 slot7 = require
 slot9 = "Const.ClientConst"
@@ -872,18 +872,19 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 153-163, warpins: 2 ---
+	--- BLOCK #11 153-164, warpins: 2 ---
 	slot2 = slot0.owner
 	slot2 = slot2.eModel
-	slot2 = slot2.motionComponent
 	slot4 = slot2
 	slot2 = slot2.SetComputeGravity
-	slot5 = ClientConst
-	slot5 = slot5.GravityMask
-	slot5 = slot5.SKill
-	slot6 = true
+	slot5 = Const
+	slot5 = slot5.COMPONENT_MOTION
+	slot6 = ClientConst
+	slot6 = slot6.GravityMask
+	slot6 = slot6.SKill
+	slot7 = true
 
-	slot2(slot4, slot5, slot6)
+	slot2(slot4, slot5, slot6, slot7)
 
 	return
 	--- END OF BLOCK #11 ---
@@ -945,7 +946,7 @@ slot14 = function(slot0, slot1)
 	--- BLOCK #3 25-25, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
 	--- BLOCK #4 26-28, warpins: 2 ---
@@ -974,7 +975,7 @@ slot14 = function(slot0, slot1)
 	--- BLOCK #6 33-33, warpins: 2 ---
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #16
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
 	--- BLOCK #7 34-39, warpins: 1 ---
@@ -999,7 +1000,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 42-98, warpins: 2 ---
+	--- BLOCK #9 42-91, warpins: 2 ---
 	slot3 = slot0.duration
 	slot3 = slot3 - slot1
 	slot0.duration = slot3
@@ -1063,6 +1064,38 @@ slot14 = function(slot0, slot1)
 	slot7 = slot7.getPosition
 	slot7 = slot7(slot9)
 	slot7 = slot6 - slot7
+	slot8 = slot0.isEnd
+	--- END OF BLOCK #9 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 92-95, warpins: 1 ---
+	slot8 = slot0.duration
+	slot9 = 0
+	--- END OF BLOCK #10 ---
+
+	if slot8 <= slot9 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 96-109, warpins: 2 ---
+	slot8 = EModelUtils
+	slot8 = slot8.clearDisplacementVelocitySource
+	slot10 = slot0.owner
+	slot11 = Const
+	slot11 = slot11.DisplacementVelocitySource
+	slot11 = slot11.ReboundDash
+
+	slot8(slot10, slot11)
+
 	slot8 = EModelUtils
 	slot8 = slot8.setMotionDisplacementOffset
 	slot10 = slot0.owner
@@ -1071,18 +1104,43 @@ slot14 = function(slot0, slot1)
 
 	slot8(slot10, slot11, slot12)
 
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 110-120, warpins: 1 ---
+	slot8 = EModelUtils
+	slot8 = slot8.setDisplacementVelocitySourceByOffset
+	slot10 = slot0.owner
+	slot11 = Const
+	slot11 = slot11.DisplacementVelocitySource
+	slot11 = slot11.ReboundDash
+	slot12 = slot7
+	slot13 = slot1
+	slot14 = true
+	slot15 = false
+
+	slot8(slot10, slot11, slot12, slot13, slot14, slot15)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 121-124, warpins: 2 ---
 	slot8 = ClientSwitch
 	slot8 = slot8.EnableDrawAbilityGizmo
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #13 ---
 
 	slot8 = if slot8 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #10 99-116, warpins: 1 ---
+	--- BLOCK #14 125-142, warpins: 1 ---
 	slot8 = ClientDebugUtils
 	slot8 = slot8.drawDebugMesh
 	slot10 = Vector3
@@ -1103,62 +1161,62 @@ slot14 = function(slot0, slot1)
 
 	slot8(slot10, slot11, slot12, slot13, slot14)
 
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 117-119, warpins: 2 ---
-	slot8 = slot0.isEnd
-	--- END OF BLOCK #11 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #12 120-123, warpins: 1 ---
-	slot8 = slot0.duration
-	slot9 = 0
-	--- END OF BLOCK #12 ---
-
-	if slot8 <= slot9 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 124-126, warpins: 1 ---
-	slot10 = slot0
-	slot8 = slot0.onEnd
-
-	slot8(slot10)
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 127-128, warpins: 3 ---
-	return
 	--- END OF BLOCK #14 ---
 
 	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 129-129, warpins: 2 ---
-	return
+	--- BLOCK #15 143-145, warpins: 2 ---
+	slot8 = slot0.isEnd
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #16 130-130, warpins: 2 ---
-	return
+	--- BLOCK #16 146-149, warpins: 1 ---
+	slot8 = slot0.duration
+	slot9 = 0
 	--- END OF BLOCK #16 ---
+
+	if slot8 <= slot9 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 150-152, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.onEnd
+
+	slot8(slot10)
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 153-154, warpins: 3 ---
+	return
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 155-155, warpins: 2 ---
+	return
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 156-156, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
 
 
 
@@ -1187,7 +1245,16 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-26, warpins: 2 ---
+	--- BLOCK #2 5-34, warpins: 2 ---
+	slot1 = EModelUtils
+	slot1 = slot1.clearDisplacementVelocitySource
+	slot3 = slot0.owner
+	slot4 = Const
+	slot4 = slot4.DisplacementVelocitySource
+	slot4 = slot4.ReboundDash
+
+	slot1(slot3, slot4)
+
 	slot1 = true
 	slot0.isEnd = slot1
 	slot1 = slot0.owner
@@ -1205,15 +1272,16 @@ slot14 = function(slot0)
 
 	slot1 = slot0.owner
 	slot1 = slot1.eModel
-	slot1 = slot1.motionComponent
 	slot3 = slot1
 	slot1 = slot1.ClearGravityMask
-	slot4 = ClientConst
-	slot4 = slot4.GravityMask
-	slot4 = slot4.SKill
-	slot5 = false
+	slot4 = Const
+	slot4 = slot4.COMPONENT_MOTION
+	slot5 = ClientConst
+	slot5 = slot5.GravityMask
+	slot5 = slot5.SKill
+	slot6 = false
 
-	slot1(slot3, slot4, slot5)
+	slot1(slot3, slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #2 ---

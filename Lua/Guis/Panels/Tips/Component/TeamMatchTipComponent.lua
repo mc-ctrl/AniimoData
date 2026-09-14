@@ -81,46 +81,19 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-8, warpins: 2 ---
-	slot2 = slot0.isCountDownPlaying
+	--- BLOCK #2 5-13, warpins: 2 ---
 	slot0.isCountDownPlaying = slot1
-	--- END OF BLOCK #2 ---
+	slot2 = facade
+	slot4 = slot2
+	slot2 = slot2.sendMsgToUI
+	slot5 = MessageName
+	slot5 = slot5.TEAM_MATCH_ENTRY_INTERACTABLE_CHANGE
+	slot6 = not slot1
 
-	if slot2 == true then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
+	slot2(slot4, slot5, slot6)
 
-
-	--- BLOCK #3 9-10, warpins: 1 ---
-	--- END OF BLOCK #3 ---
-
-	if slot1 == false then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 11-17, warpins: 1 ---
-	slot3 = facade
-	slot5 = slot3
-	slot3 = slot3.sendMsgToUI
-	slot6 = MessageName
-	slot6 = slot6.TEAM_MATCH_ENTRY_INTERACTABLE_CHANGE
-	slot7 = true
-
-	slot3(slot5, slot6, slot7)
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 18-18, warpins: 3 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -129,7 +102,7 @@ end
 slot12.setCountDownPlaying = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-88, warpins: 1 ---
+	--- BLOCK #0 1-94, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -178,6 +151,12 @@ slot14 = function(slot0)
 	slot4 = "btnNoHotKeyContent"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnNoHotKeyContent = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "txtNameUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.txtNameUSDFText = slot1
 	slot1 = slot0.btnOKUButton
 
 	slot2 = function()
@@ -833,7 +812,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #25 137-143, warpins: 1 ---
+	--- BLOCK #25 137-151, warpins: 1 ---
 	slot9 = slot0.uWidget
 	slot11 = slot9
 	slot9 = slot9.TryChangePage
@@ -842,12 +821,22 @@ slot14 = function(slot0)
 
 	slot9(slot11, slot12, slot13)
 
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.txtNameUSDFText
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "WAIT_OTHER_TEAM_CONFIRM"
+	MULTRES = slot12(slot14)
+
+	slot9(slot11, MULTRES)
+
 	--- END OF BLOCK #25 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #26 144-145, warpins: 1 ---
+	--- BLOCK #26 152-153, warpins: 1 ---
 	--- END OF BLOCK #26 ---
 
 	slot8 = if slot8 then
@@ -857,7 +846,7 @@ slot14 = function(slot0)
 	end
 
 
-	--- BLOCK #27 146-152, warpins: 1 ---
+	--- BLOCK #27 154-168, warpins: 1 ---
 	slot9 = slot0.uWidget
 	slot11 = slot9
 	slot9 = slot9.TryChangePage
@@ -866,12 +855,22 @@ slot14 = function(slot0)
 
 	slot9(slot11, slot12, slot13)
 
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.txtNameUSDFText
+	slot12 = pg
+	slot12 = slot12.getGameString
+	slot14 = "WAIT_OTHER_MEMBER_CONFIRM"
+	MULTRES = slot12(slot14)
+
+	slot9(slot11, MULTRES)
+
 	--- END OF BLOCK #27 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
-	--- BLOCK #28 153-158, warpins: 1 ---
+	--- BLOCK #28 169-179, warpins: 1 ---
 	slot9 = slot0.uWidget
 	slot11 = slot9
 	slot9 = slot9.TryChangePage
@@ -880,12 +879,19 @@ slot14 = function(slot0)
 
 	slot9(slot11, slot12, slot13)
 
+	slot9 = ClientTextUtils
+	slot9 = slot9.setText
+	slot11 = slot0.txtNameUSDFText
+	slot12 = ""
+
+	slot9(slot11, slot12)
+
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 159-164, warpins: 3 ---
+	--- BLOCK #29 180-185, warpins: 3 ---
 	slot9 = slot0.listPlayerUList
 	slot11 = slot9
 	slot9 = slot9.SetList
@@ -898,7 +904,7 @@ slot14 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #30 165-179, warpins: 1 ---
+	--- BLOCK #30 186-200, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.closeTeamMatchTip
 
@@ -925,7 +931,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 180-180, warpins: 3 ---
+	--- BLOCK #31 201-201, warpins: 3 ---
 	return
 	--- END OF BLOCK #31 ---
 

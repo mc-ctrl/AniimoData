@@ -1,4 +1,4 @@
---- BLOCK #0 1-123, warpins: 1 ---
+--- BLOCK #0 1-138, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -26,11 +26,15 @@ slot7 = slot7(slot9)
 slot8 = require
 slot10 = "Common.Const.Const"
 slot8 = slot8(slot10)
-slot9 = slot0.LightClass
-slot11 = "ExploreBtnComponent"
-slot12 = slot2
-slot9 = slot9(slot11, slot12)
-slot10 = {
+slot9 = require
+slot11 = "Const.AddressDataConst"
+slot9 = slot9(slot11)
+slot10 = slot0.LightClass
+slot12 = "ExploreBtnComponent"
+slot13 = slot2
+slot10 = slot10(slot12, slot13)
+slot11 = {
+	WaterfallClimb = 9,
 	Fly = 8,
 	InteractGesture = 7,
 	SpaceFollow = 6,
@@ -41,95 +45,107 @@ slot10 = {
 	Climb = 1,
 	None = 0
 }
-slot9.EXPLORE_TYPE = slot10
-slot11 = {}
-slot12 = slot1.ON_CONTROL_EXPLORE_PET
-slot13 = {
+slot10.EXPLORE_TYPE = slot11
+slot12 = {}
+slot13 = slot1.ON_CONTROL_EXPLORE_PET
+slot14 = {
 	"onControlExplorePet",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.PET_EXPLORE_STATE_CHANGED
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.PET_EXPLORE_STATE_CHANGED
+slot14 = {
 	"onPetExploreStateChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.PET_GHOST_EYE_STATE_CHANGED
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.PET_GHOST_EYE_STATE_CHANGED
+slot14 = {
 	"onPetGhostEyeStateChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.SCENT_TRACK_STATE_CHANGED
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.SCENT_TRACK_STATE_CHANGED
+slot14 = {
 	"refreshHudExplorePageState",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.ENTER_EXIT_DELAY_EXPLORE_STATE
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.ENTER_EXIT_DELAY_EXPLORE_STATE
+slot14 = {
 	"onDelayExitExploreStateChange",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.EXIT_EXIT_DELAY_EXPLORE_STATE
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.EXIT_EXIT_DELAY_EXPLORE_STATE
+slot14 = {
 	"onDelayExitExploreStateChange",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.PLAYER_START_CARRY
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.PLAYER_START_CARRY
+slot14 = {
 	"onPlayerStartCarryEnt",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.PLAYER_STOP_CARRY
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.PLAYER_STOP_CARRY
+slot14 = {
 	"onPlayerStopCarryEnt",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.SPACE_FOLLOW_UPDATE
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.SPACE_FOLLOW_UPDATE
+slot14 = {
 	"onSpaceFollowInfoChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.CHARACTER_STATE_CHANGED
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.CHARACTER_STATE_CHANGED
+slot14 = {
 	"onCharacterStateChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.MODULE_ENABLE_CHANGED
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.MODULE_ENABLE_CHANGED
+slot14 = {
 	"onModuleEnableChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.INTERACT_GESTURE_STATE_CHANGE
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.INTERACT_GESTURE_STATE_CHANGE
+slot14 = {
 	"onInteractGestureStateChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.ON_CONTROL_ENT
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.ON_CONTROL_ENT
+slot14 = {
 	"refreshHudExplorePageState",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot1.INPUT_DEVICE_CHANGED
-slot13 = {
+slot12[slot13] = slot14
+slot13 = slot1.INPUT_DEVICE_CHANGED
+slot14 = {
 	"refreshHudExplorePageState",
 	true
 }
-slot11[slot12] = slot13
-slot9.messages = slot11
+slot12[slot13] = slot14
+slot13 = slot1.GRAB_EGG_STRUGGLE_STATE_CHANGED
+slot14 = {
+	"refreshHudExplorePageState",
+	true
+}
+slot12[slot13] = slot14
+slot13 = slot1.GRAB_EGG_HUG_STATE_CHANGED
+slot14 = {
+	"refreshHudExplorePageState",
+	true
+}
+slot12[slot13] = slot14
+slot10.messages = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
@@ -149,14 +165,16 @@ slot11 = function(slot0)
 
 end
 
-slot9.findObjects = slot11
+slot10.findObjects = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = false
 	slot0.checkExploreState = slot1
 	slot1 = false
 	slot0.isInExploreMode = slot1
+	slot1 = false
+	slot0.normalBtnVisible = slot1
 	slot1 = LuaUIUtils
 	slot1 = slot1.setUIViewVisible
 	slot3 = slot0.btnNormalUButton
@@ -171,9 +189,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.initView = slot11
+slot10.initView = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.pawn
@@ -197,20 +215,236 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-12, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.space
+	--- BLOCK #2 8-15, warpins: 2 ---
+	slot2 = CharacterStateConst
+	slot2 = slot2.isChildOfState
+	slot4 = slot1.characterState
+	slot5 = CharacterStateConst
+	slot5 = slot5.SWIMMING
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 13-23, warpins: 1 ---
+	--- BLOCK #3 16-19, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.Swim
+
+	return slot2
+
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #4 20-27, warpins: 1 ---
+	slot2 = CharacterStateConst
+	slot2 = slot2.isChildOfState
+	slot4 = slot1.characterState
+	slot5 = CharacterStateConst
+	slot5 = slot5.CLIMBWATERFALL
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-31, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.WaterfallClimb
+
+	return slot2
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #6 32-39, warpins: 1 ---
+	slot2 = CharacterStateConst
+	slot2 = slot2.isChildOfState
+	slot4 = slot1.characterState
+	slot5 = CharacterStateConst
+	slot5 = slot5.CLIMBING
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 40-43, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.Climb
+
+	return slot2
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #8 44-51, warpins: 1 ---
+	slot2 = CharacterStateConst
+	slot2 = slot2.isChildOfState
+	slot4 = slot1.characterState
+	slot5 = CharacterStateConst
+	slot5 = slot5.GLIDING
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #8 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 52-55, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.Glide
+
+	return slot2
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #10 56-63, warpins: 1 ---
+	slot2 = CharacterStateConst
+	slot2 = slot2.isChildOfState
+	slot4 = slot1.characterState
+	slot5 = CharacterStateConst
+	slot5 = slot5.FLYING
+	slot2 = slot2(slot4, slot5)
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 64-67, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.Fly
+
+	return slot2
+
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #12 68-75, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.controller
+	slot4 = slot2
+	slot2 = slot2.isInDelayExit
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #12 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 76-79, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.DelayExit
+
+	return slot2
+
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #14 80-86, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isControllingExploreEnt
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #14 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 87-90, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.InExploreEnt
+
+	return slot2
+
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #16 91-99, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.social
+	slot2 = slot2.interactGestureComponent
+	slot4 = slot2
+	slot2 = slot2.checkInteractGesturePlaying
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #16 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 100-103, warpins: 1 ---
+	slot2 = EXPLORE_TYPE
+	slot2 = slot2.InteractGesture
+
+	return slot2
+
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
+
+
+	--- BLOCK #18 104-108, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.space
+	--- END OF BLOCK #18 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #19 109-119, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.space
@@ -220,261 +454,72 @@ slot11 = function(slot0)
 	slot5 = slot5.me
 	slot5 = slot5.uid
 	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #19 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #4 24-31, warpins: 1 ---
+	--- BLOCK #20 120-127, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.followState
 	slot3 = Const
 	slot3 = slot3.SpaceFollowMemberState
 	slot3 = slot3.Normal
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #20 ---
 
 	if slot2 ~= slot3 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #5 32-39, warpins: 1 ---
+	--- BLOCK #21 128-135, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.followState
 	slot3 = Const
 	slot3 = slot3.SpaceFollowMemberState
 	slot3 = slot3.Attach
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #21 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #6 40-43, warpins: 2 ---
+	--- BLOCK #22 136-138, warpins: 2 ---
 	slot2 = EXPLORE_TYPE
 	slot2 = slot2.SpaceFollow
 
 	return slot2
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #7 44-51, warpins: 3 ---
-	slot2 = CharacterStateConst
-	slot2 = slot2.isChildOfState
-	slot4 = slot1.characterState
-	slot5 = CharacterStateConst
-	slot5 = slot5.SWIMMING
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #7 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #8 52-55, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.Swim
-
-	return slot2
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #9 56-63, warpins: 1 ---
-	slot2 = CharacterStateConst
-	slot2 = slot2.isChildOfState
-	slot4 = slot1.characterState
-	slot5 = CharacterStateConst
-	slot5 = slot5.CLIMBING
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #9 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 64-67, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.Climb
-
-	return slot2
-
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #11 68-75, warpins: 1 ---
-	slot2 = CharacterStateConst
-	slot2 = slot2.isChildOfState
-	slot4 = slot1.characterState
-	slot5 = CharacterStateConst
-	slot5 = slot5.GLIDING
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #11 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 76-79, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.Glide
-
-	return slot2
-
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #13 80-87, warpins: 1 ---
-	slot2 = CharacterStateConst
-	slot2 = slot2.isChildOfState
-	slot4 = slot1.characterState
-	slot5 = CharacterStateConst
-	slot5 = slot5.FLYING
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #13 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 88-91, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.Fly
-
-	return slot2
-
-	--- END OF BLOCK #14 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #15 92-99, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.controller
-	slot4 = slot2
-	slot2 = slot2.isInDelayExit
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #15 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 100-103, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.DelayExit
-
-	return slot2
-
-	--- END OF BLOCK #16 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #17 104-110, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.isControllingExploreEnt
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #17 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #18
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #18 111-114, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.InExploreEnt
-
-	return slot2
-
-	--- END OF BLOCK #18 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
-
-
-	--- BLOCK #19 115-123, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.game
-	slot2 = slot2.social
-	slot2 = slot2.interactGestureComponent
-	slot4 = slot2
-	slot2 = slot2.checkInteractGesturePlaying
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #19 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 124-126, warpins: 1 ---
-	slot2 = EXPLORE_TYPE
-	slot2 = slot2.InteractGesture
-
-	return slot2
-
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 127-129, warpins: 9 ---
+	--- BLOCK #23 139-141, warpins: 12 ---
 	slot2 = EXPLORE_TYPE
 	slot2 = slot2.None
 
 	return slot2
-	--- END OF BLOCK #21 ---
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot9.getCurExploreState = slot11
+slot10.getCurExploreState = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.pawn
@@ -491,7 +536,7 @@ slot11 = function(slot0, slot1)
 	slot3 = false
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
 	--- BLOCK #2 7-20, warpins: 1 ---
@@ -516,13 +561,15 @@ slot11 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 21-33, warpins: 1 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
+	--- BLOCK #3 21-35, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
 	slot7 = false
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.EMPTY
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.btnNormalUButton
 	slot6 = slot4
@@ -535,28 +582,124 @@ slot11 = function(slot0, slot1)
 	slot3 = true
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #4 34-37, warpins: 1 ---
+	--- BLOCK #4 36-39, warpins: 1 ---
 	slot4 = EXPLORE_TYPE
-	slot4 = slot4.Climb
+	slot4 = slot4.WaterfallClimb
 	--- END OF BLOCK #4 ---
 
 	if slot1 == slot4 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 38-64, warpins: 1 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
+	--- BLOCK #5 40-67, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
 	slot7 = true
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.HIDE
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.btnNormalUButton
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "PetChar"
+	slot8 = 0
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.btnNormalUButton
+	slot6 = slot4
+	slot4 = slot4.GetComponent
+	slot7 = "ObjectReference"
+	slot4 = slot4(slot6, slot7)
+	slot7 = slot4
+	slot5 = slot4.GetRefValue
+	slot8 = "btnNormalKeyBindingPro"
+	slot5 = slot5(slot7, slot8)
+	slot8 = slot4
+	slot6 = slot4.GetRefValue
+	slot9 = "iconUImage"
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #5 ---
+
+	slot6 = if slot6 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 68-70, warpins: 1 ---
+	slot7 = AddressDataConst
+	slot7 = slot7.EXPLORE_SKILL_WATER_CLIMB_QUIT
+	slot6.url = slot7
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 71-77, warpins: 2 ---
+	slot7 = "Bind/WaterClimbJump"
+	slot5.actionPath = slot7
+	slot7 = slot0.btnNormalUButton
+
+	slot8 = function()
+		--- BLOCK #0 1-11, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.pawn
+		slot0 = slot0.eModel
+		slot2 = slot0
+		slot0 = slot0.SetInputCommand
+		slot3 = Const
+		slot3 = slot3.COMPONENT_INDEX_CHARACETER_CONTROLLER
+		slot4 = InputCommand
+		slot4 = slot4.ClimbJump
+
+		slot0(slot2, slot3, slot4)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot7.luaClick = slot8
+	slot3 = true
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #8 78-81, warpins: 1 ---
+	slot4 = EXPLORE_TYPE
+	slot4 = slot4.Climb
+	--- END OF BLOCK #8 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 82-110, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
+	slot7 = true
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.HIDE
+
+	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.btnNormalUButton
 	slot6 = slot4
@@ -580,17 +723,18 @@ slot11 = function(slot0, slot1)
 	slot6 = slot0.btnNormalUButton
 
 	slot7 = function()
-		--- BLOCK #0 1-10, warpins: 1 ---
+		--- BLOCK #0 1-11, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.pawn
 		slot0 = slot0.eModel
-		slot0 = slot0.controllerComponent
 		slot2 = slot0
 		slot0 = slot0.SetInputCommand
-		slot3 = InputCommand
-		slot3 = slot3.ClimbJump
+		slot3 = Const
+		slot3 = slot3.COMPONENT_INDEX_CHARACETER_CONTROLLER
+		slot4 = InputCommand
+		slot4 = slot4.ClimbJump
 
-		slot0(slot2, slot3)
+		slot0(slot2, slot3, slot4)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -601,75 +745,26 @@ slot11 = function(slot0, slot1)
 
 	slot6.luaClick = slot7
 	slot3 = true
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #6 65-68, warpins: 1 ---
-	slot4 = EXPLORE_TYPE
-	slot4 = slot4.Glide
-	--- END OF BLOCK #6 ---
-
-	if slot1 ~= slot4 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 69-72, warpins: 1 ---
-	slot4 = EXPLORE_TYPE
-	slot4 = slot4.Fly
-	--- END OF BLOCK #7 ---
-
-	if slot1 == slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 73-78, warpins: 2 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
-	slot7 = false
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #8 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #9 79-82, warpins: 1 ---
-	slot4 = EXPLORE_TYPE
-	slot4 = slot4.DelayExit
 	--- END OF BLOCK #9 ---
 
-	if slot1 == slot4 then
-	JUMP TO BLOCK #10
-	else
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #10 111-114, warpins: 1 ---
+	slot4 = EXPLORE_TYPE
+	slot4 = slot4.Glide
+	--- END OF BLOCK #10 ---
+
+	if slot1 ~= slot4 then
 	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #10 83-87, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0.setExitExploreButton
-
-	slot4(slot6)
-
-	slot3 = true
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #11 88-91, warpins: 1 ---
+	--- BLOCK #11 115-118, warpins: 1 ---
 	slot4 = EXPLORE_TYPE
-	slot4 = slot4.InExploreEnt
+	slot4 = slot4.Fly
 	--- END OF BLOCK #11 ---
 
 	if slot1 == slot4 then
@@ -679,23 +774,24 @@ slot11 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #12 92-98, warpins: 1 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
+	--- BLOCK #12 119-126, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
 	slot7 = false
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.NORMAL
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
-	slot3 = true
 	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #13 99-102, warpins: 1 ---
+	--- BLOCK #13 127-130, warpins: 1 ---
 	slot4 = EXPLORE_TYPE
-	slot4 = slot4.SpaceFollow
+	slot4 = slot4.DelayExit
 	--- END OF BLOCK #13 ---
 
 	if slot1 == slot4 then
@@ -705,13 +801,67 @@ slot11 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 103-129, warpins: 1 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
-	slot7 = true
+	--- BLOCK #14 131-135, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setExitExploreButton
 
-	slot4(slot6, slot7)
+	slot4(slot6)
+
+	slot3 = true
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #15 136-139, warpins: 1 ---
+	slot4 = EXPLORE_TYPE
+	slot4 = slot4.InExploreEnt
+	--- END OF BLOCK #15 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 140-148, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
+	slot7 = false
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.EMPTY
+
+	slot4(slot6, slot7, slot8)
+
+	slot3 = true
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
+
+
+	--- BLOCK #17 149-152, warpins: 1 ---
+	slot4 = EXPLORE_TYPE
+	slot4 = slot4.SpaceFollow
+	--- END OF BLOCK #17 ---
+
+	if slot1 == slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 153-181, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
+	slot7 = true
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.HIDE
+
+	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.btnNormalUButton
 	slot6 = slot4
@@ -752,30 +902,32 @@ slot11 = function(slot0, slot1)
 
 	slot6.luaClick = slot7
 	slot3 = true
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #18 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #15 130-133, warpins: 1 ---
+	--- BLOCK #19 182-185, warpins: 1 ---
 	slot4 = EXPLORE_TYPE
 	slot4 = slot4.InteractGesture
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #19 ---
 
 	if slot1 == slot4 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #16 134-160, warpins: 1 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
+	--- BLOCK #20 186-214, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
 	slot7 = true
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.HIDE
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.btnNormalUButton
 	slot6 = slot4
@@ -818,43 +970,45 @@ slot11 = function(slot0, slot1)
 
 	slot6.luaClick = slot7
 	slot3 = true
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #17 161-165, warpins: 1 ---
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
+	--- BLOCK #21 215-221, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
 	slot7 = false
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.NORMAL
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #21 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #18 166-167, warpins: 8 ---
+	--- BLOCK #22 222-223, warpins: 9 ---
 	return slot3
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #19 168-168, warpins: 2 ---
+	--- BLOCK #23 224-224, warpins: 2 ---
 	return slot3
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot9.innerRefreshExploreState = slot11
+slot10.innerRefreshExploreState = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-32, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = slot0.btnNormalUButton
 	slot3 = slot1
 	slot1 = slot1.TryChangePage
@@ -863,12 +1017,14 @@ slot11 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.btnNormalUButton
+	slot3 = slot0
+	slot1 = slot0._setNormalBtnVisible
 	slot4 = true
+	slot5 = ClientConst
+	slot5 = slot5.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot5 = slot5.HIDE
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	slot1 = slot0.model
 	slot3 = slot1
@@ -898,14 +1054,14 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 33-33, warpins: 1 ---
+	--- BLOCK #1 35-35, warpins: 1 ---
 	slot9 = ""
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 34-44, warpins: 2 ---
+	--- BLOCK #2 36-46, warpins: 2 ---
 	MULTRES = slot7(slot9)
 
 	slot4(slot6, MULTRES)
@@ -926,14 +1082,14 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 45-45, warpins: 1 ---
+	--- BLOCK #3 47-47, warpins: 1 ---
 	slot5 = ""
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 46-56, warpins: 2 ---
+	--- BLOCK #4 48-58, warpins: 2 ---
 	slot4.url = slot5
 	slot7 = slot2
 	slot5 = slot2.GetRefValue
@@ -971,10 +1127,10 @@ slot11 = function(slot0)
 
 end
 
-slot9.setExitExploreButton = slot11
+slot10.setExitExploreButton = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-32, warpins: 1 ---
+slot12 = function(slot0)
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = slot0.btnNormalUButton
 	slot3 = slot1
 	slot1 = slot1.TryChangePage
@@ -983,12 +1139,14 @@ slot11 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.btnNormalUButton
+	slot3 = slot0
+	slot1 = slot0._setNormalBtnVisible
 	slot4 = true
+	slot5 = ClientConst
+	slot5 = slot5.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot5 = slot5.HIDE
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1018,14 +1176,14 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #1 33-33, warpins: 1 ---
+	--- BLOCK #1 35-35, warpins: 1 ---
 	slot9 = ""
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 34-44, warpins: 2 ---
+	--- BLOCK #2 36-46, warpins: 2 ---
 	MULTRES = slot7(slot9)
 
 	slot4(slot6, MULTRES)
@@ -1046,14 +1204,14 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #3 45-45, warpins: 1 ---
+	--- BLOCK #3 47-47, warpins: 1 ---
 	slot5 = ""
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 46-57, warpins: 2 ---
+	--- BLOCK #4 48-59, warpins: 2 ---
 	slot4.url = slot5
 	slot7 = slot2
 	slot5 = slot2.GetRefValue
@@ -1093,9 +1251,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.setGhostEyeExitButton = slot11
+slot10.setGhostEyeExitButton = slot12
 
-slot11 = function(slot0, slot1, slot2)
+slot12 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = true
 	slot4 = slot1.checkPetLinkModuleEnable
@@ -1123,7 +1281,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-41, warpins: 2 ---
+	--- BLOCK #2 14-24, warpins: 2 ---
 	slot4 = slot0.btnNormalUButton
 	slot6 = slot4
 	slot4 = slot4.TryChangePage
@@ -1132,12 +1290,43 @@ slot11 = function(slot0, slot1, slot2)
 
 	slot4(slot6, slot7, slot8)
 
-	slot4 = LuaUIUtils
-	slot4 = slot4.setUIViewVisible
-	slot6 = slot0.btnNormalUButton
+	slot6 = slot0
+	slot4 = slot0._setNormalBtnVisible
 	slot7 = slot3
+	--- END OF BLOCK #2 ---
 
-	slot4(slot6, slot7)
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 25-29, warpins: 1 ---
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.HIDE
+	--- END OF BLOCK #3 ---
+
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 30-32, warpins: 2 ---
+	slot8 = ClientConst
+	slot8 = slot8.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot8 = slot8.NORMAL
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 33-50, warpins: 2 ---
+	slot4(slot6, slot7, slot8)
 
 	slot4 = slot0.btnNormalUButton
 	slot6 = slot4
@@ -1154,23 +1343,23 @@ slot11 = function(slot0, slot1, slot2)
 	slot9 = pg
 	slot9 = slot9.getLocalizationText
 	slot11 = slot1.name
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 	slot11 = if not slot11 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #3 42-42, warpins: 1 ---
+	--- BLOCK #6 51-51, warpins: 1 ---
 	slot11 = ""
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #4 43-51, warpins: 2 ---
+	--- BLOCK #7 52-60, warpins: 2 ---
 	MULTRES = slot9(slot11)
 
 	slot6(slot8, MULTRES)
@@ -1180,23 +1369,23 @@ slot11 = function(slot0, slot1, slot2)
 	slot9 = "iconUImage"
 	slot6 = slot6(slot8, slot9)
 	slot7 = slot1.skillIcon
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
 	slot7 = if not slot7 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 52-52, warpins: 1 ---
+	--- BLOCK #8 61-61, warpins: 1 ---
 	slot7 = ""
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 53-71, warpins: 2 ---
+	--- BLOCK #9 62-80, warpins: 2 ---
 	slot6.url = slot7
 	slot9 = slot4
 	slot7 = slot4.GetRefValue
@@ -1219,15 +1408,15 @@ slot11 = function(slot0, slot1, slot2)
 	slot0.curExploreNormalBtnInfo = slot1
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot9.setExplorePageNormalButton = slot11
+slot10.setExplorePageNormalButton = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curExploreNormalBtnInfo
 	--- END OF BLOCK #0 ---
@@ -1235,7 +1424,7 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	end
 
 
@@ -1247,7 +1436,7 @@ slot11 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #6
 	end
 
 
@@ -1260,29 +1449,60 @@ slot11 = function(slot0)
 	slot4 = slot4.ModuleKey
 	slot4 = slot4.PetLink
 	slot1 = slot1(slot3, slot4)
-	slot2 = LuaUIUtils
-	slot2 = slot2.setUIViewVisible
-	slot4 = slot0.btnNormalUButton
+	slot4 = slot0
+	slot2 = slot0._setNormalBtnVisible
 	slot5 = slot1
-
-	slot2(slot4, slot5)
-
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 21-21, warpins: 3 ---
-	return
+	--- BLOCK #3 21-25, warpins: 1 ---
+	slot6 = ClientConst
+	slot6 = slot6.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot6 = slot6.HIDE
 	--- END OF BLOCK #3 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-28, warpins: 2 ---
+	slot6 = ClientConst
+	slot6 = slot6.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot6 = slot6.NORMAL
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-29, warpins: 2 ---
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 30-30, warpins: 3 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot9.refreshExplorePageNormalButtonVisible = slot11
+slot10.refreshExplorePageNormalButtonVisible = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isInExploreMode
 
@@ -1348,9 +1568,81 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot9._setExploreMode = slot11
+slot10._setExploreMode = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.normalBtnVisible
+	--- END OF BLOCK #0 ---
+
+	if slot3 ~= slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot0.normalBtnVisible = slot1
+	slot3 = LuaUIUtils
+	slot3 = slot3.setUIViewVisible
+	slot5 = slot0.btnNormalUButton
+	slot6 = slot1
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot3 = slot0.ctrl
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 13-16, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot3 = slot3.notifyNormalAtkBtnStateChanged
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-21, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot5 = slot3
+	slot3 = slot3.notifyNormalAtkBtnStateChanged
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 22-22, warpins: 3 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot10._setNormalBtnVisible = slot12
+
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.btnNormalUButton
 	--- END OF BLOCK #0 ---
@@ -1365,7 +1657,7 @@ slot11 = function(slot0)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #29
 
 
 	--- BLOCK #2 5-8, warpins: 1 ---
@@ -1383,7 +1675,7 @@ slot11 = function(slot0)
 	--- BLOCK #3 9-9, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
+	UNCONDITIONAL JUMP; TARGET BLOCK #30
 
 
 	--- BLOCK #4 10-16, warpins: 1 ---
@@ -1401,15 +1693,17 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #5 17-28, warpins: 1 ---
+	--- BLOCK #5 17-30, warpins: 1 ---
 	slot1 = false
 	slot0.checkExploreState = slot1
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.btnNormalUButton
+	slot3 = slot0
+	slot1 = slot0._setNormalBtnVisible
 	slot4 = false
+	slot5 = ClientConst
+	slot5 = slot5.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot5 = slot5.NORMAL
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	slot3 = slot0
 	slot1 = slot0._setExploreMode
@@ -1419,10 +1713,172 @@ slot11 = function(slot0)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #6 29-37, warpins: 1 ---
+	--- BLOCK #6 31-37, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.RIDING_ST
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 38-49, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._setNormalBtnVisible
+	slot4 = false
+	slot5 = ClientConst
+	slot5 = slot5.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot5 = slot5.NORMAL
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0._setExploreMode
+	slot4 = false
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
+
+
+	--- BLOCK #8 50-56, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isEggStruggleButtonNeeded
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #8 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 57-70, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setExplorePageNormalButton
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getEggStruggleInfo
+	slot4 = slot4(slot6)
+
+	slot5 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.onClickEggStruggleButton
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0._setExploreMode
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 71-77, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.CARRY_EGG_ST
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #10 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 78-91, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setExplorePageNormalButton
+	slot4 = slot0.model
+	slot6 = slot4
+	slot4 = slot4.getExitCarryEggInfo
+	slot4 = slot4(slot6)
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.me
+		slot2 = slot0
+		slot0 = slot0.exitCarryEgg
+
+		slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 10-10, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0._setExploreMode
+	slot4 = true
+
+	slot1(slot3, slot4)
+
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 92-100, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getCurExploreState
 	slot1 = slot1(slot3)
@@ -1430,43 +1886,60 @@ slot11 = function(slot0)
 	slot2 = slot0.innerRefreshExploreState
 	slot5 = slot1
 	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #12 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #7 38-42, warpins: 1 ---
+	--- BLOCK #13 101-106, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._setExploreMode
 	slot5 = true
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #7 ---
+	return
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #27
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #8 43-49, warpins: 1 ---
+	--- BLOCK #14 107-113, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.isControllingEgg
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #14 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #9 50-62, warpins: 1 ---
+	--- BLOCK #15 114-120, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.EGG_BE_CARRIED_ST
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #15 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 121-128, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setExplorePageNormalButton
 	slot5 = slot0.model
@@ -1547,49 +2020,55 @@ slot11 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 129-133, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0._setExploreMode
 	slot5 = true
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #10 63-70, warpins: 1 ---
+	--- BLOCK #18 134-141, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.controller
 	slot4 = slot2
 	slot2 = slot2.isInControlEnt
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #18 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #19
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #11 71-77, warpins: 1 ---
+	--- BLOCK #19 142-148, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.isInGhostEyeState
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #19 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #20
 	else
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #12 78-85, warpins: 1 ---
+	--- BLOCK #20 149-156, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setGhostEyeExitButton
 
@@ -1601,27 +2080,27 @@ slot11 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #13 86-92, warpins: 1 ---
+	--- BLOCK #21 157-163, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.isInScentTrackReadyState
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #21 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #14 93-105, warpins: 1 ---
+	--- BLOCK #22 164-176, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setExplorePageNormalButton
 	slot5 = slot0.model
@@ -1653,156 +2132,116 @@ slot11 = function(slot0)
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #15 106-113, warpins: 1 ---
+	--- BLOCK #23 177-184, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.ui
 	slot4 = slot2
 	slot2 = slot2.runPlatformByMobile
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #23 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #24
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #16 114-117, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.pawn
-	--- END OF BLOCK #16 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #17
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #17 118-122, warpins: 1 ---
+	--- BLOCK #24 185-190, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.pawn
 	slot2 = slot2.eModel
-	--- END OF BLOCK #17 ---
+	slot2 = slot2.CharacterControllerIsFloating
+	--- END OF BLOCK #24 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #18 123-128, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.pawn
-	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
-	--- END OF BLOCK #18 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #19 129-135, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.pawn
-	slot2 = slot2.eModel
-	slot2 = slot2.controllerComponent
-	slot2 = slot2.isFloating
-	--- END OF BLOCK #19 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 136-140, warpins: 1 ---
+	--- BLOCK #25 191-195, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0._setExploreMode
 	slot5 = true
 
 	slot2(slot4, slot5)
 
-	--- END OF BLOCK #20 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
-
-
-	--- BLOCK #21 141-145, warpins: 5 ---
-	slot4 = slot0
-	slot2 = slot0._setExploreMode
-	slot5 = false
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
-
-
-	--- BLOCK #22 146-149, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._setExploreMode
-	slot5 = false
-
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 150-150, warpins: 6 ---
-	return
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 151-151, warpins: 2 ---
-	return
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 152-152, warpins: 2 ---
-	return
 	--- END OF BLOCK #25 ---
 
-	FLOW; TARGET BLOCK #26
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #26 153-153, warpins: 2 ---
-	return
+	--- BLOCK #26 196-200, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0._setExploreMode
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
+	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #27 154-154, warpins: 2 ---
-	return
+	--- BLOCK #27 201-204, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0._setExploreMode
+	slot5 = false
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 205-205, warpins: 6 ---
+	return
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 206-206, warpins: 2 ---
+	return
+	--- END OF BLOCK #29 ---
+
+	FLOW; TARGET BLOCK #30
+
+
+	--- BLOCK #30 207-207, warpins: 2 ---
+	return
+	--- END OF BLOCK #30 ---
+
+	FLOW; TARGET BLOCK #31
+
+
+	--- BLOCK #31 208-208, warpins: 2 ---
+	return
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 209-209, warpins: 2 ---
+	return
+	--- END OF BLOCK #32 ---
 
 
 
 end
 
-slot9.refreshHudExplorePageState = slot11
+slot10.refreshHudExplorePageState = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCurExploreState
@@ -1837,9 +2276,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.refreshHudExploreStateIfChanged = slot11
+slot10.refreshHudExploreStateIfChanged = slot12
 
-slot11 = function(slot0, slot1)
+slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot1.moduleKey
 	slot3 = ClientConst
@@ -1873,9 +2312,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot9.onModuleEnableChanged = slot11
+slot10.onModuleEnableChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.checkExploreState
 	--- END OF BLOCK #0 ---
@@ -1906,9 +2345,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onCharacterStateChanged = slot11
+slot10.onCharacterStateChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.checkExploreState
 	--- END OF BLOCK #0 ---
@@ -1939,9 +2378,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onControlExplorePet = slot11
+slot10.onControlExplorePet = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshHudExplorePageState
@@ -1955,9 +2394,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onPetExploreStateChanged = slot11
+slot10.onPetExploreStateChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshHudExplorePageState
@@ -1971,9 +2410,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onPetGhostEyeStateChanged = slot11
+slot10.onPetGhostEyeStateChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.checkExploreState
 	--- END OF BLOCK #0 ---
@@ -2004,12 +2443,12 @@ slot11 = function(slot0)
 
 end
 
-slot9.onDelayExitExploreStateChange = slot11
+slot10.onDelayExitExploreStateChange = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.refreshHudExplorePageState
+	slot1 = slot0.refreshHudExploreStateIfChanged
 
 	slot1(slot3)
 
@@ -2020,12 +2459,12 @@ slot11 = function(slot0)
 
 end
 
-slot9.onSpaceFollowInfoChanged = slot11
+slot10.onSpaceFollowInfoChanged = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.refreshHudExplorePageState
+	slot1 = slot0.refreshHudExploreStateIfChanged
 
 	slot1(slot3)
 
@@ -2036,16 +2475,18 @@ slot11 = function(slot0)
 
 end
 
-slot9.onInteractGestureStateChanged = slot11
+slot10.onInteractGestureStateChanged = slot12
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = LuaUIUtils
-	slot1 = slot1.setUIViewVisible
-	slot3 = slot0.btnNormalUButton
+slot12 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0._setNormalBtnVisible
 	slot4 = false
+	slot5 = ClientConst
+	slot5 = slot5.NORMAL_ATTACK_BTN_SHOW_MODE
+	slot5 = slot5.HIDE
 
-	slot1(slot3, slot4)
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -2054,9 +2495,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onPlayerStartCarryEnt = slot11
+slot10.onPlayerStartCarryEnt = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshHudExplorePageState
@@ -2070,9 +2511,9 @@ slot11 = function(slot0)
 
 end
 
-slot9.onPlayerStopCarryEnt = slot11
+slot10.onPlayerStopCarryEnt = slot12
 
-slot11 = function(slot0)
+slot12 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = HudBaseComponent
 	slot1 = slot1.onDestroy
@@ -2092,9 +2533,85 @@ slot11 = function(slot0)
 
 end
 
-slot9.onDestroy = slot11
+slot10.onDestroy = slot12
 
-return slot9
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.uWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Show
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot10.playShowAnim = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.uWidget
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-11, warpins: 1 ---
+	slot1 = slot0.uWidget
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Hide
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot10.playHideAnim = slot12
+
+return slot10
 --- END OF BLOCK #0 ---
 
 

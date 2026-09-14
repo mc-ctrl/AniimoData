@@ -1,14 +1,14 @@
 --- BLOCK #0 1-26, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.ClientConst"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
 slot4 = "Data.vehicle_seat_data"
 slot2 = slot2(slot4)
-slot3 = slot0.Component
+slot3 = slot1.Component
 slot5 = "ClientPrefabModelComponent"
 slot3 = slot3(slot5)
 
@@ -24,11 +24,10 @@ end
 slot3.start = slot4
 
 slot4 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_IDX_ITEM
 
 	slot1(slot3, slot4)
@@ -43,14 +42,15 @@ end
 slot3.EVENT_AddEComponent = slot4
 
 slot4 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.itemComponent
 	slot4 = slot2
 	slot2 = slot2.SetModelResId
-	slot5 = slot1
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_IDX_ITEM
+	slot6 = slot1
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---

@@ -1,4 +1,4 @@
---- BLOCK #0 1-86, warpins: 1 ---
+--- BLOCK #0 1-92, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -45,8 +45,14 @@ slot13 = slot13(slot15)
 slot14 = require
 slot16 = "Common.Utils.Utils"
 slot14 = slot14(slot16)
+slot15 = require
+slot17 = "Utils.PetRenameValidator"
+slot15 = slot15(slot17)
+slot16 = require
+slot18 = "Common.NoticeDef"
+slot16 = slot16(slot18)
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-215, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.talentUComponent
@@ -243,7 +249,7 @@ slot15 = function(slot0)
 	slot2 = slot0.listTagUList
 
 	slot3 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-19, warpins: 1 ---
+		--- BLOCK #0 1-25, warpins: 1 ---
 		slot3 = LuaUIUtils
 		slot3 = slot3.renderPetTagList
 		slot5 = slot0
@@ -262,7 +268,13 @@ slot15 = function(slot0)
 		slot9 = self
 		slot9 = slot9.petInfo
 		slot9 = slot9.label
-		MULTRES = slot6(slot8, slot9)
+		slot10 = self
+		slot10 = slot10.petInfo
+		slot10 = slot10.bodySizeType
+		slot11 = self
+		slot11 = slot11.petInfo
+		slot11 = slot11.shinyStyle
+		MULTRES = slot6(slot8, slot9, slot10, slot11)
 
 		slot3(slot5, MULTRES)
 
@@ -307,9 +319,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.findObjects = slot15
+slot2.findObjects = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-61, warpins: 1 ---
 	slot1 = slot0.btnRulesUButton
 
@@ -512,9 +524,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.initView = slot15
+slot2.initView = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot1.petId
 	slot0.petId = slot2
@@ -608,9 +620,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot2.init = slot15
+slot2.init = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -638,9 +650,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.renderValue = slot15
+slot2.renderValue = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -669,9 +681,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.renderRatio = slot15
+slot2.renderRatio = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.getLocalizationText
@@ -989,9 +1001,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot2.renderPetInfoCard = slot15
+slot2.renderPetInfoCard = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.btnRulesUButton
 
@@ -1031,9 +1043,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.onRulesBtnClick = slot15
+slot2.onRulesBtnClick = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetManagementUtils
 	slot1 = slot1.setRenderFavoriteToolTips
@@ -1049,10 +1061,37 @@ slot15 = function(slot0)
 
 end
 
-slot2.onClickFavoriteBtn = slot15
+slot2.onClickFavoriteBtn = slot17
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-33, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PetRenameValidator
+	slot1 = slot1.canRenamePet
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showBubbleMessage
+	slot3 = NoticeDef
+	slot3 = slot3.FORBID_CHANGE_PET_NAME
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 13-45, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getGameString
 	slot3 = "RENAME_TIPS_PET"
@@ -1135,37 +1174,44 @@ slot15 = function(slot0)
 	slot10 = {
 		characterLimit = 14
 	}
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot11 = if not slot3 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 34-34, warpins: 1 ---
+	--- BLOCK #3 46-46, warpins: 1 ---
 	slot11 = ""
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 35-38, warpins: 2 ---
+	--- BLOCK #4 47-50, warpins: 2 ---
 	slot10.text = slot11
 
 	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 51-51, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot2.showRename = slot15
+slot2.showRename = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PetManagementUtils
 	slot2 = slot2.refreshFavoriteBtn
@@ -1197,9 +1243,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot2.resetFavouriteBtnState = slot15
+slot2.resetFavouriteBtnState = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -1229,9 +1275,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot2.refreshPetName = slot15
+slot2.refreshPetName = slot17
 
-slot15 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -1270,9 +1316,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot2.renderProp = slot15
+slot2.renderProp = slot17
 
-slot15 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.renderSingleBtn
@@ -1385,9 +1431,9 @@ slot15 = function(slot0, slot1, slot2)
 
 end
 
-slot2.renderSpecificPropBtn = slot15
+slot2.renderSpecificPropBtn = slot17
 
-slot15 = function(slot0, slot1, slot2, slot3)
+slot17 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1513,9 +1559,9 @@ slot15 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.renderSingleBtn = slot15
+slot2.renderSingleBtn = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.curSelectedPropIndex
 	--- END OF BLOCK #0 ---
@@ -1600,7 +1646,7 @@ slot15 = function(slot0)
 
 	slot10 = slot0.curSelectedPropIndex
 	slot10 = slot8[slot10]
-	slot10 = slot10.individualLevel
+	slot10 = slot10.indLv
 	slot11 = Utils
 	slot11 = slot11.getTotalIndividualLevelMax
 	slot13 = slot0.curSelectedPropIndex
@@ -1642,7 +1688,7 @@ slot15 = function(slot0)
 	slot12 = slot2
 	slot13 = slot0.curSelectedPropIndex
 	slot13 = slot8[slot13]
-	slot13 = slot13.individualLevelByLearn
+	slot13 = slot13.iLvLn
 
 	slot10(slot12, slot13)
 
@@ -1651,14 +1697,14 @@ slot15 = function(slot0)
 	slot12 = slot3
 	slot13 = slot0.curSelectedPropIndex
 	slot13 = slot8[slot13]
-	slot13 = slot13.individualLevelByLearn
+	slot13 = slot13.iLvLn
 	slot13 = slot13 + 1
 
 	slot10(slot12, slot13)
 
 	slot10 = slot0.curSelectedPropIndex
 	slot10 = slot8[slot10]
-	slot10 = slot10.individualLevel
+	slot10 = slot10.indLv
 	slot10 = slot10 + 1
 	slot0.toLevel = slot10
 	slot10 = slot0.model
@@ -2077,9 +2123,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.refreshInfoPanel = slot15
+slot2.refreshInfoPanel = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2263,9 +2309,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.onResetBtnClick = slot15
+slot2.onResetBtnClick = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.ctrl
 	slot3 = slot1
@@ -2322,7 +2368,7 @@ slot15 = function(slot0)
 		slot1 = self
 		slot1 = slot1.curSelectedPropIndex
 		slot1 = slot0[slot1]
-		slot1 = slot1.individualLevel
+		slot1 = slot1.indLv
 		slot2 = Utils
 		slot2 = slot2.getTotalIndividualLevelMax
 		slot4 = self
@@ -2371,9 +2417,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.gradeUp = slot15
+slot2.gradeUp = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -2443,9 +2489,9 @@ slot15 = function(slot0)
 
 end
 
-slot2.refresh = slot15
+slot2.refresh = slot17
 
-slot15 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = nil
 	slot0.curSelectedPropIndex = slot1
@@ -2464,7 +2510,7 @@ slot15 = function(slot0)
 
 end
 
-slot2.onDestroy = slot15
+slot2.onDestroy = slot17
 
 return slot2
 --- END OF BLOCK #0 ---

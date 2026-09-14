@@ -589,7 +589,7 @@ slot16 = function(slot0)
 			UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-			--- BLOCK #2 10-38, warpins: 1 ---
+			--- BLOCK #2 10-39, warpins: 1 ---
 			slot2 = false
 			slot0.interactable = slot2
 			slot4 = slot0
@@ -820,7 +820,7 @@ slot16 = function(slot0)
 				FLOW; TARGET BLOCK #2
 
 
-				--- BLOCK #2 15-50, warpins: 2 ---
+				--- BLOCK #2 15-51, warpins: 2 ---
 				slot2 = pg
 				slot2 = slot2.global
 				slot2 = slot2.ui
@@ -834,6 +834,7 @@ slot16 = function(slot0)
 				slot7 = data2
 				slot7 = slot7.actionNames
 				slot6.originPath = slot7
+				slot6.candidateValue = slot1
 				slot6.conflictPaths = slot0
 
 				slot7 = function()
@@ -970,7 +971,38 @@ slot16 = function(slot0)
 
 			end
 
-			slot2 = slot2(slot4, slot5, slot6, slot7, slot8, slot9)
+			slot10 = function()
+				--- BLOCK #0 1-19, warpins: 1 ---
+				slot0 = pg
+				slot0 = slot0.global
+				slot0 = slot0.ui
+				slot0 = slot0.tips
+				slot2 = slot0
+				slot0 = slot0.showTextTip
+				slot3 = pg
+				slot3 = slot3.getGameString
+				slot5 = "ACTION_REPLACE_KEY_ERROR_TOAST"
+				MULTRES = slot3(slot5)
+
+				slot0(slot2, MULTRES)
+
+				slot0 = pg
+				slot0 = slot0.game
+				slot0 = slot0.input
+				slot0 = slot0.keyboardHotkeyManager
+				slot2 = slot0
+				slot0 = slot0.CancelRebindInputAction
+
+				slot0(slot2)
+
+				return
+				--- END OF BLOCK #0 ---
+
+
+
+			end
+
+			slot2 = slot2(slot4, slot5, slot6, slot7, slot8, slot9, slot10)
 			slot3 = LoggerManager
 			slot3 = slot3.checkLogger
 			slot5 = LoggerConst
@@ -985,7 +1017,7 @@ slot16 = function(slot0)
 			end
 
 
-			--- BLOCK #3 39-44, warpins: 1 ---
+			--- BLOCK #3 40-45, warpins: 1 ---
 			slot3 = logger
 			slot5 = slot3
 			slot3 = slot3.debug
@@ -999,14 +1031,14 @@ slot16 = function(slot0)
 			FLOW; TARGET BLOCK #4
 
 
-			--- BLOCK #4 45-46, warpins: 2 ---
+			--- BLOCK #4 46-47, warpins: 2 ---
 			return
 			--- END OF BLOCK #4 ---
 
 			FLOW; TARGET BLOCK #5
 
 
-			--- BLOCK #5 47-47, warpins: 2 ---
+			--- BLOCK #5 48-48, warpins: 2 ---
 			return
 			--- END OF BLOCK #5 ---
 

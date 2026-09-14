@@ -101,11 +101,11 @@ slot5 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 11-35, warpins: 1 ---
+	--- BLOCK #1 11-26, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -119,6 +119,33 @@ slot5 = function(slot0)
 	slot1 = slot1.me
 	slot2 = false
 	slot1.isPlayingSlotMachine = slot2
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.updateStateCache
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 27-32, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.updateStateCache
+	slot4 = "PLAY_SLOT_MACHINE_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 33-46, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.audio
@@ -137,21 +164,21 @@ slot5 = function(slot0)
 
 	slot1(slot3)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 36-39, warpins: 2 ---
+	--- BLOCK #4 47-50, warpins: 2 ---
 	slot1 = ipairs
 	slot3 = slot0.prompts
 	slot1, slot2, slot3 = slot1(slot3)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 40-46, warpins: 1 ---
+	--- BLOCK #5 51-57, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.global
 	slot6 = slot6.resMgr
@@ -161,31 +188,31 @@ slot5 = function(slot0)
 
 	slot6(slot8, slot9)
 
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 47-48, warpins: 2 ---
-	--- END OF BLOCK #4 ---
-
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
-
-
-	--- BLOCK #5 49-51, warpins: 1 ---
-	slot1 = slot0.golden
 	--- END OF BLOCK #5 ---
 
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 58-59, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	for slot4, slot5 in slot1, slot2, slot3
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
+
+
+	--- BLOCK #7 60-62, warpins: 1 ---
+	slot1 = slot0.golden
+	--- END OF BLOCK #7 ---
+
 	if slot1 ~= nil then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #6 52-58, warpins: 1 ---
+	--- BLOCK #8 63-69, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.resMgr
@@ -195,14 +222,14 @@ slot5 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 59-59, warpins: 2 ---
+	--- BLOCK #9 70-70, warpins: 2 ---
 	return
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -703,10 +730,10 @@ slot5 = function(slot0, slot1)
 	--- BLOCK #1 4-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #2 5-19, warpins: 1 ---
+	--- BLOCK #2 5-20, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
@@ -720,18 +747,45 @@ slot5 = function(slot0, slot1)
 	slot2 = slot2.me
 	slot3 = true
 	slot2.isPlayingSlotMachine = slot3
-	slot2 = {}
-	slot0.result = slot2
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.updateStateCache
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 20-45, warpins: 1 ---
+	--- BLOCK #3 21-26, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.updateStateCache
+	slot5 = "PLAY_SLOT_MACHINE_ST"
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 27-30, warpins: 2 ---
+	slot2 = {}
+	slot0.result = slot2
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 31-55, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
 	slot2 = slot2.audio
@@ -744,8 +798,7 @@ slot5 = function(slot0, slot1)
 	slot2 = slot0.slotMachineCom
 	slot4 = slot2
 	slot2 = slot2.StartNpcFx
-	slot5 = slot1.eModel
-	slot5 = slot5.gameObject
+	slot5 = slot1.actorId
 
 	slot2(slot4, slot5)
 
@@ -781,12 +834,12 @@ slot5 = function(slot0, slot1)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 46-53, warpins: 2 ---
+	--- BLOCK #6 56-63, warpins: 2 ---
 	slot2 = slot0.startDelayTime
 	slot5 = slot0
 	slot3 = slot0.addTimer
@@ -1024,14 +1077,14 @@ slot5 = function(slot0, slot1)
 	slot3(slot5, slot6, slot7)
 
 	return
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 54-54, warpins: 2 ---
+	--- BLOCK #7 64-64, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -1567,7 +1620,7 @@ end
 slot4.handleResult = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-21, warpins: 1 ---
+	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -1582,15 +1635,8 @@ slot5 = function(slot0)
 	slot2 = false
 	slot1.isPlayingSlotMachine = slot2
 	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.interact
-	slot3 = slot1
-	slot1 = slot1.show
-
-	slot1(slot3)
-
-	slot1 = slot0.npcFx
+	slot1 = slot1.me
+	slot1 = slot1.updateStateCache
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -1600,7 +1646,41 @@ slot5 = function(slot0)
 	end
 
 
-	--- BLOCK #1 22-30, warpins: 1 ---
+	--- BLOCK #1 17-22, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.updateStateCache
+	slot4 = "PLAY_SLOT_MACHINE_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 23-32, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.interact
+	slot3 = slot1
+	slot1 = slot1.show
+
+	slot1(slot3)
+
+	slot1 = slot0.npcFx
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 33-41, warpins: 1 ---
 	slot1 = slot0.slotMachineCom
 	slot3 = slot1
 	slot1 = slot1.PlayNpcFx
@@ -1647,41 +1727,41 @@ slot5 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 31-34, warpins: 2 ---
+	--- BLOCK #4 42-45, warpins: 2 ---
 	slot1 = ipairs
 	slot3 = slot0.prompts
 	slot1, slot2, slot3 = slot1(slot3)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #4
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 35-38, warpins: 1 ---
+	--- BLOCK #5 46-49, warpins: 1 ---
 	slot8 = slot5
 	slot6 = slot5.SetActiveEx
 	slot9 = false
 
 	slot6(slot8, slot9)
 
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 39-40, warpins: 2 ---
-	--- END OF BLOCK #4 ---
+	--- BLOCK #6 50-51, warpins: 2 ---
+	--- END OF BLOCK #6 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #5
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #5 41-53, warpins: 1 ---
+	--- BLOCK #7 52-64, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -1697,44 +1777,44 @@ slot5 = function(slot0)
 
 	slot1 = slot0.result
 	slot1 = slot1[1]
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 54-59, warpins: 1 ---
+	--- BLOCK #8 65-70, warpins: 1 ---
 	slot1 = slot0.result
 	slot1 = slot1[1]
 	slot2 = slot0.result
 	slot2 = slot2[2]
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #7
-	else
 	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 60-65, warpins: 1 ---
+	--- BLOCK #9 71-76, warpins: 1 ---
 	slot1 = slot0.result
 	slot1 = slot1[1]
 	slot2 = slot0.result
 	slot2 = slot2[3]
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 	if slot1 == slot2 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 66-137, warpins: 1 ---
+	--- BLOCK #10 77-148, warpins: 1 ---
 	slot1 = slot0.npcShell
 	slot3 = slot1
 	slot1 = slot1.playAnimation
@@ -1950,12 +2030,12 @@ slot5 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #9 138-197, warpins: 3 ---
+	--- BLOCK #11 149-208, warpins: 3 ---
 	slot1 = slot0.npcShell
 	slot3 = slot1
 	slot1 = slot1.playAnimation
@@ -2126,14 +2206,14 @@ slot5 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #10 198-199, warpins: 2 ---
+	--- BLOCK #12 209-210, warpins: 2 ---
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #12 ---
 
 
 

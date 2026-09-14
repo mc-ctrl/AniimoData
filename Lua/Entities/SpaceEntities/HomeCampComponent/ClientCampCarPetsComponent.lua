@@ -1,4 +1,4 @@
---- BLOCK #0 1-95, warpins: 1 ---
+--- BLOCK #0 1-112, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -50,20 +50,29 @@ slot15 = require
 slot17 = "Utils.HomeCampUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.pet_dispatch_data"
+slot18 = "Utils.LuaUIUtils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Data.custom_trigger_data"
+slot19 = "Utils.ClientUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Core.Timer.TimerManager"
+slot20 = "Data.pet_dispatch_data"
 slot18 = slot18(slot20)
-slot19 = slot2.Component
-slot21 = "ClientCampCarPetsComponent"
-slot22 = slot3
-slot19 = slot19(slot21, slot22)
+slot19 = require
+slot21 = "Data.pet_ball_config_data"
+slot19 = slot19(slot21)
+slot20 = require
+slot22 = "Data.custom_trigger_data"
+slot20 = slot20(slot22)
+slot21 = require
+slot23 = "Core.Timer.TimerManager"
+slot21 = slot21(slot23)
+slot22 = slot2.Component
+slot24 = "ClientCampCarPetsComponent"
+slot25 = slot3
+slot22 = slot22(slot24, slot25)
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientCampCarPetsComponent
 	slot2 = slot2.super
@@ -80,9 +89,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.postInit = slot20
+slot22.postInit = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.dispatchInfo
 
@@ -93,9 +102,64 @@ slot20 = function(slot0)
 
 end
 
-slot19.getPetsDispatchInfo = slot20
+slot22.getPetsDispatchInfo = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-10, warpins: 1 ---
+	slot3 = slot0.ownerUid
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.uid
+
+	--- END OF BLOCK #1 ---
+
+	if slot3 ~= slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-11, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-19, warpins: 2 ---
+	slot3 = facade
+	slot5 = slot3
+	slot3 = slot3.sendMsgToUI
+	slot6 = MessageName
+	slot6 = slot6.HOME_CAR_CAMP_DISPATCH_STATE_CHANGED
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot22.onDispatchFinishedChanged = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = HomeLandUtils
 	slot1 = slot1.getCarPetMaxCount
@@ -108,9 +172,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.getCarPetCanSetCount = slot20
+slot22.getCarPetCanSetCount = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPetsDispatchInfo
@@ -144,9 +208,52 @@ slot20 = function(slot0)
 
 end
 
-slot19.getDispatchId = slot20
+slot22.getDispatchId = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getPetsDispatchInfo
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot2 = slot1.campId
+	--- END OF BLOCK #1 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-9, warpins: 2 ---
+	slot2 = 0
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 10-10, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot22.getDispatchCampId = slot23
+
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.getCarPetCanSetCount
@@ -180,9 +287,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.isCanHoldToCmap = slot20
+slot22.isCanHoldToCmap = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getCampCopyPetIds
@@ -270,9 +377,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.tryAddCampPetIds = slot20
+slot22.tryAddCampPetIds = slot23
 
-slot20 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getCampCopyPetIds
@@ -390,9 +497,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.tryRemoveCampPetIds = slot20
+slot22.tryRemoveCampPetIds = slot23
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.me
@@ -546,9 +653,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot19.setCampPetIds = slot20
+slot22.setCampPetIds = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petIds
 	--- END OF BLOCK #0 ---
@@ -576,9 +683,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.getCampPetIds = slot20
+slot22.getCampPetIds = slot23
 
-slot20 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.pets
 	--- END OF BLOCK #0 ---
@@ -607,9 +714,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.getCampPetInfo = slot20
+slot22.getCampPetInfo = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getPetsDispatchInfo
@@ -675,9 +782,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.getCampPetDispatchState = slot20
+slot22.getCampPetDispatchState = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCampPetIds
@@ -720,21 +827,148 @@ slot20 = function(slot0)
 
 end
 
-slot19.getCampCopyPetIds = slot20
+slot22.getCampCopyPetIds = slot23
 
-slot20 = function(slot0, slot1)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.requestHomeCampOp
-	slot5 = OpDef
-	slot5 = slot5.OP
-	slot5 = slot5.CS_HC_Dispatch
-	slot6 = {}
-	slot6.dispatchId = slot1
+slot23 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = {}
+	slot2 = PetBallConfigData
+	slot2 = slot2.cannotBreedList
+	--- END OF BLOCK #0 ---
 
-	slot7 = function(slot0, slot1)
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	slot2 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-12, warpins: 2 ---
+	slot3 = ipairs
+	slot7 = slot0
+	slot5 = slot0.getCampPetIds
+	MULTRES = slot5(slot7)
+	slot3, slot4, slot5 = slot3(MULTRES)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot10 = slot0
+	slot8 = slot0.getCampPetInfo
+	slot11 = slot7
+	slot8 = slot8(slot10, slot11)
+	--- END OF BLOCK #3 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-21, warpins: 1 ---
+	slot9 = slot8.petPrototypeId
+	--- END OF BLOCK #4 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 2 ---
+	slot9 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-24, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #7 25-31, warpins: 1 ---
+	slot10 = table
+	slot10 = slot10.contains
+	slot12 = slot2
+	slot13 = slot9
+	slot10 = slot10(slot12, slot13)
+	--- END OF BLOCK #7 ---
+
+	slot10 = if slot10 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 32-43, warpins: 1 ---
+	slot10 = LuaUIUtils
+	slot10 = slot10.getPetNameByPetInfo
+	slot12 = slot8
+	slot10 = slot10(slot12)
+	slot11 = #slot1
+	slot11 = slot11 + 1
+	slot12 = string
+	slot12 = slot12.format
+	slot14 = "<style=Hint_BgD>%s</style>"
+	slot15 = slot10
+	slot12 = slot12(slot14, slot15)
+	slot1[slot11] = slot12
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 44-45, warpins: 4 ---
+	--- END OF BLOCK #9 ---
+
+	for slot6, slot7 in slot3, slot4, slot5
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 46-46, warpins: 1 ---
+	return slot1
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot22.getCannotBringEggPetNames = slot23
+
+slot23 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.requestHomeCampOp
+	slot7 = OpDef
+	slot7 = slot7.OP
+	slot7 = slot7.CS_HC_Dispatch
+	slot8 = {}
+	slot8.dispatchId = slot1
+	slot8.campId = slot2
+
+	slot9 = function(slot0, slot1)
 		--- BLOCK #0 1-4, warpins: 1 ---
 		slot2 = NoticeDef
 		slot2 = slot2.SUCCESS
@@ -1054,18 +1288,150 @@ slot20 = function(slot0, slot1)
 
 	end
 
-	slot2(slot4, slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8, slot9)
 
-	return
 	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 15-16, warpins: 1 ---
+	slot4 = slot3
+
+	slot4()
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 17-18, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot19.dispatchPet = slot20
+slot22.requestDispatchPet = slot23
 
-slot20 = function(slot0)
+slot23 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 5-6, warpins: 2 ---
+	slot4 = slot0.space
+	slot2 = slot4.staticId
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 7-13, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.getCannotBringEggPetNames
+	slot4 = slot4(slot6)
+	slot5 = #slot4
+	slot6 = 0
+	--- END OF BLOCK #3 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-37, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.getFormatText
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "PET_EXPLORE_CANT_BRING_EGG_INFO"
+	slot7 = slot7(slot9)
+	slot8 = table
+	slot8 = slot8.concat
+	slot10 = slot4
+	slot11 = ","
+	MULTRES = slot8(slot10, slot11)
+	slot5 = slot5(slot7, MULTRES)
+	slot6 = ClientUtils
+	slot6 = slot6.showConfirmRaw
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = "WARNING"
+	slot8 = slot8(slot10)
+	slot9 = slot5
+
+	slot10 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.requestDispatchPet
+		slot3 = dispatchId
+		slot4 = campId
+		slot5 = requestSentCb
+
+		slot0(slot2, slot3, slot4, slot5)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot11 = false
+
+	slot6(slot8, slot9, slot10, slot11)
+
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 38-45, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0.requestDispatchPet
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot22.dispatchPet = slot23
+
+slot23 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1182,14 +1548,22 @@ slot20 = function(slot0)
 
 end
 
-slot19.stopDispatch = slot20
+slot22.stopDispatch = slot23
 
-slot20 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot23 = function(slot0)
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = HomeCampUtils
 	slot1 = slot1.setPreDispatchId
 	slot5 = slot0
 	slot3 = slot0.getDispatchId
+	MULTRES = slot3(slot5)
+
+	slot1(MULTRES)
+
+	slot1 = HomeCampUtils
+	slot1 = slot1.setPreDispatchCampId
+	slot5 = slot0
+	slot3 = slot0.getDispatchCampId
 	MULTRES = slot3(slot5)
 
 	slot1(MULTRES)
@@ -1445,9 +1819,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.finishDispatch = slot20
+slot22.finishDispatch = slot23
 
-return slot19
+return slot22
 --- END OF BLOCK #0 ---
 
 

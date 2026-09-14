@@ -22,9 +22,9 @@ slot5 = require
 slot7 = "Utils.ClientTextUtils"
 slot5 = slot5(slot7)
 slot6 = {
-	FishEye = 2,
 	WideAngle = 1,
-	FreeCamera = 0
+	FreeCamera = 0,
+	FishEye = 2
 }
 slot3.CameraModeIds = slot6
 slot6 = {}
@@ -54,9 +54,9 @@ slot7.cameraModeId = slot8
 slot6[3] = slot7
 slot3.CameraModes = slot6
 slot6 = {
-	hiddenSelfPet = 2,
 	hiddenSelfPlayer = 1,
-	ReferenceLine = 0
+	ReferenceLine = 0,
+	hiddenSelfPet = 2
 }
 slot3.CameraModeParamIds = slot6
 slot6 = {}

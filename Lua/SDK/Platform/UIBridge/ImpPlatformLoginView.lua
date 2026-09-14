@@ -3,7 +3,7 @@ slot0 = require
 slot2 = "Utils.LuaUIUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Utils.ClientSwitch"
+slot3 = "SDK.SDKLoginConfig"
 slot1 = slot1(slot3)
 slot2 = {}
 
@@ -24,19 +24,20 @@ slot3 = function(slot0)
 	end
 
 
-	--- BLOCK #1 9-12, warpins: 1 ---
-	slot1 = ClientSwitch
-	slot1 = slot1.EnableSDKLogin
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot1 = SDKLoginConfig
+	slot1 = slot1.isEnabled
+	slot1 = slot1()
 	--- END OF BLOCK #1 ---
 
-	if slot1 == true then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 13-22, warpins: 1 ---
+	--- BLOCK #2 14-23, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.setUIViewVisible
 	slot3 = slot0.inputField
@@ -56,7 +57,7 @@ slot3 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 23-23, warpins: 3 ---
+	--- BLOCK #3 24-24, warpins: 3 ---
 	return
 	--- END OF BLOCK #3 ---
 

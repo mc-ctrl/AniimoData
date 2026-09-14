@@ -1,4 +1,4 @@
---- BLOCK #0 1-40, warpins: 1 ---
+--- BLOCK #0 1-42, warpins: 1 ---
 slot0 = require
 slot2 = "Core.PropertySync.CustomDict"
 slot0 = slot0(slot2)
@@ -24,99 +24,98 @@ slot7 = slot3.LiteClass
 slot9 = "OrnamentSingleData"
 slot10 = slot0
 slot7 = slot7(slot9, slot10)
-slot8 = slot5.ORNAMENT_SCALE_INT_BASE
+slot8 = slot5.ORNAMENT_POSITION_INT_BASE
+slot9 = slot5.ORNAMENT_ROTATION_INT_BASE
+slot10 = slot5.ORNAMENT_SCALE_INT_BASE
 
-slot9 = function(slot0)
+slot11 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = Vector3
+	slot3 = slot0.posX
+	slot4 = POSITION_INT_BASE
+	slot3 = slot3 / slot4
+	slot4 = slot0.posY
+	slot5 = POSITION_INT_BASE
+	slot4 = slot4 / slot5
+	slot5 = slot0.posZ
+	slot6 = POSITION_INT_BASE
+	slot5 = slot5 / slot6
+
+	return slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.getPosition = slot11
+
+slot11 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = Quaternion
+	slot1 = slot1.Euler
+	slot3 = slot0.rotX
+	slot4 = ROTATION_INT_BASE
+	slot3 = slot3 / slot4
+	slot4 = slot0.rotY
+	slot5 = ROTATION_INT_BASE
+	slot4 = slot4 / slot5
+	slot5 = slot0.rotZ
+	slot6 = ROTATION_INT_BASE
+	slot5 = slot5 / slot6
+
+	return slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.getRotation = slot11
+
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.pos3ToPosition
-	slot3 = slot0.pos3
+	slot1 = slot0.rotY
+	slot2 = ROTATION_INT_BASE
+	slot1 = slot1 / slot2
 
-	return slot1(slot3)
+	return slot1
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot7.getPosition = slot9
+slot7.getYawAngle = slot11
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
-	slot1 = HomeLandUtils
-	slot1 = slot1.normalizeOrnamentRot3
-	slot3 = slot0.rot3
-	slot4 = slot0.yawAngle
-	slot1 = slot1(slot3, slot4)
-	slot2 = Quaternion
-	slot2 = slot2.Euler
-	slot4 = slot1[1]
-	slot4 = slot4 * 0.01
-	slot5 = slot1[2]
-	slot5 = slot5 * 0.01
-	slot6 = slot1[3]
-	slot6 = slot6 * 0.01
-
-	return slot2(slot4, slot5, slot6)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot7.getRotation = slot9
-
-slot9 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = HomeLandUtils
-	slot1 = slot1.normalizeOrnamentRot3
-	slot3 = slot0.rot3
-	slot4 = slot0.yawAngle
-	slot1 = slot1(slot3, slot4)
-	slot2 = slot1[2]
-	slot2 = slot2 * 0.01
-
-	return slot2
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot7.getYawAngle = slot9
-
-slot9 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot1 = HomeLandUtils
-	slot1 = slot1.normalizeOrnamentScale3
-	slot3 = slot0.scale3
-	slot1 = slot1(slot3)
-	slot2 = Vector3
-	slot4 = slot1[1]
+slot11 = function(slot0)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot1 = Vector3
+	slot3 = slot0.scaleX
+	slot4 = SCALE_INT_BASE
+	slot3 = slot3 / slot4
+	slot4 = slot0.scaleY
 	slot5 = SCALE_INT_BASE
 	slot4 = slot4 / slot5
-	slot5 = slot1[2]
+	slot5 = slot0.scaleZ
 	slot6 = SCALE_INT_BASE
 	slot5 = slot5 / slot6
-	slot6 = slot1[3]
-	slot7 = SCALE_INT_BASE
-	slot6 = slot6 / slot7
 
-	return slot2(slot4, slot5, slot6)
+	return slot1(slot3, slot4, slot5)
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot7.getScale = slot9
+slot7.getScale = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
-	slot1 = slot1.checkRotationIsVertical
+	slot1 = slot1.checkYawIsVertical
 	slot5 = slot0
-	slot3 = slot0.getRotation
+	slot3 = slot0.getYawAngle
 	MULTRES = slot3(slot5)
 
 	return slot1(MULTRES)
@@ -126,9 +125,9 @@ slot9 = function(slot0)
 
 end
 
-slot7.checkIsVertical = slot9
+slot7.checkIsVertical = slot11
 
-slot9 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.find
@@ -168,7 +167,7 @@ slot9 = function(slot0)
 
 end
 
-slot7.isFoodSlot = slot9
+slot7.isFoodSlot = slot11
 
 return slot7
 --- END OF BLOCK #0 ---

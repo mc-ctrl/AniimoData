@@ -7,41 +7,41 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	name = "ParmonBehaviorTree/SubTree/PBT_AlertStare_Fly",
-	version = 6,
 	useForRoute = false,
-	agenttype = "CombatAgent"
+	agenttype = "CombatAgent",
+	version = 6,
+	name = "ParmonBehaviorTree/SubTree/PBT_AlertStare_Fly"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "int",
-	name = "tSensorTgtId",
 	const = 0,
-	value = "0"
+	type = "int",
+	value = "0",
+	name = "tSensorTgtId"
 }
 slot4[1] = slot5
 slot5 = {
-	type = "float",
-	name = "tMaxTime",
 	const = 0,
-	value = "0"
+	type = "float",
+	value = "0",
+	name = "tMaxTime"
 }
 slot4[2] = slot5
 slot5 = {
-	type = "float",
-	name = "tRandomWaitTime",
 	const = 0,
-	value = "0"
+	type = "float",
+	value = "0",
+	name = "tRandomWaitTime"
 }
 slot4[3] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Sequence",
-	id = "1"
+	id = "1",
+	class = "Sequence"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -50,8 +50,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	class = "Condition",
-	id = "2"
+	id = "2",
+	class = "Condition"
 }
 slot8 = {}
 slot9 = {
@@ -79,8 +79,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	class = "Action",
-	id = "9"
+	id = "9",
+	class = "Action"
 }
 slot8 = {}
 slot9 = {}

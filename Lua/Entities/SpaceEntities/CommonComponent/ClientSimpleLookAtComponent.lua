@@ -1,33 +1,36 @@
---- BLOCK #0 1-67, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerManager"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Core.Log.LoggerConst"
+slot4 = "Core.Log.LoggerManager"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.ClientConst"
+slot5 = "Core.Log.LoggerConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Utils.Utils"
+slot6 = "Const.ClientConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.Time"
+slot7 = "Common.Utils.Utils"
 slot5 = slot5(slot7)
-slot6 = typeof
-slot7 = CS
-slot7 = slot7.FunPlus
-slot7 = slot7.WorldX
-slot7 = slot7.Animations
-slot7 = slot7.SimpleLookAtComponent
-slot8 = slot0.Component
-slot10 = "ClientSimpleLookAtComponent"
-slot8 = slot8(slot10)
+slot6 = require
+slot8 = "Core.Common.Time"
+slot6 = slot6(slot8)
+slot7 = typeof
+slot8 = CS
+slot8 = slot8.FunPlus
+slot8 = slot8.WorldX
+slot8 = slot8.Animations
+slot8 = slot8.SimpleLookAtComponent
+slot9 = slot1.Component
+slot11 = "ClientSimpleLookAtComponent"
+slot9 = slot9(slot11)
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isEntityCanLookAt
@@ -52,53 +55,55 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-25, warpins: 2 ---
+	--- BLOCK #2 9-26, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_INDEX_IK
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.eModel
 	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	slot1 = slot1.AddDynamicRigComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_INDEX_IK
-	slot1 = slot1(slot3, slot4)
-	slot0.ikComp = slot1
-	slot4 = slot1
-	slot2 = slot1.AddDynamicRigComponent
 	slot5 = typeof
 	slot7 = SimpleLookAtComponent
 	MULTRES = slot5(slot7)
-	slot2 = slot2(slot4, MULTRES)
-	slot0.simpleIKComp = slot2
-	slot2 = slot0.npcLookAtTriggerId
+	slot1 = slot1(slot3, slot4, MULTRES)
+	slot0.simpleIKComp = slot1
+	slot1 = slot0.npcLookAtTriggerId
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #3 26-31, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isNpc
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #3 27-32, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.isNpc
+	slot3 = slot0
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 32-37, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.getSceneEntityCfg
-	slot5 = "canLookAt"
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #4 33-37, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCfgCanLookAt
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #4 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
@@ -106,21 +111,21 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #5 38-52, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot4 = slot2
-	slot2 = slot2.CreateSphereTrigger
-	slot5 = ClientConst
-	slot5 = slot5.TriggerType
-	slot5 = slot5.NPC_LOOK_AT
-	slot6 = 5
-	slot2 = slot2(slot4, slot5, slot6)
-	slot0.npcLookAtTriggerId = slot2
-	slot2 = 0
-	slot0.lastPawnDistanceSqr = slot2
-	slot2 = false
-	slot0.isLookingAtTemporaryEntity = slot2
-	slot2 = 0
-	slot0.lookAtTemporaryEntityTimer = slot2
+	slot1 = slot0.eModel
+	slot3 = slot1
+	slot1 = slot1.CreateSphereTrigger
+	slot4 = ClientConst
+	slot4 = slot4.TriggerType
+	slot4 = slot4.NPC_LOOK_AT
+	slot5 = 5
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0.npcLookAtTriggerId = slot1
+	slot1 = 0
+	slot0.lastPawnDistanceSqr = slot1
+	slot1 = false
+	slot0.isLookingAtTemporaryEntity = slot1
+	slot1 = 0
+	slot0.lookAtTemporaryEntityTimer = slot1
 
 	--- END OF BLOCK #5 ---
 
@@ -135,9 +140,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.EVENT_OnModelRefreshed = slot9
+slot9.EVENT_OnModelRefreshed = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.refreshAutoBlink
 	--- END OF BLOCK #0 ---
@@ -168,9 +173,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.EVENT_OnAnimatorReady = slot9
+slot9.EVENT_OnAnimatorReady = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = 0
 	slot0.lastPawnDistanceSqr = slot1
@@ -212,9 +217,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onLeaveSpace = slot9
+slot9.onLeaveSpace = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isEntityCanLookAt
@@ -239,72 +244,74 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-20, warpins: 2 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	--- BLOCK #2 9-18, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_INDEX_IK
-	slot1 = slot1(slot3, slot4)
-	slot0.ikComp = slot1
-	slot2 = IsNil
-	slot4 = slot0.simpleIKComp
-	slot2 = slot2(slot4)
+
+	slot1(slot3, slot4)
+
+	slot1 = IsNil
+	slot3 = slot0.simpleIKComp
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 21-27, warpins: 1 ---
-	slot4 = slot1
-	slot2 = slot1.AddDynamicRigComponent
+	--- BLOCK #3 19-28, warpins: 1 ---
+	slot1 = slot0.eModel
+	slot3 = slot1
+	slot1 = slot1.AddDynamicRigComponent
+	slot4 = CommonConst
+	slot4 = slot4.COMPONENT_INDEX_IK
 	slot5 = typeof
 	slot7 = SimpleLookAtComponent
 	MULTRES = slot5(slot7)
-	slot2 = slot2(slot4, MULTRES)
-	slot0.simpleIKComp = slot2
+	slot1 = slot1(slot3, slot4, MULTRES)
+	slot0.simpleIKComp = slot1
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 28-30, warpins: 2 ---
-	slot2 = slot0.npcLookAtTriggerId
+	--- BLOCK #4 29-31, warpins: 2 ---
+	slot1 = slot0.npcLookAtTriggerId
 	--- END OF BLOCK #4 ---
 
-	slot2 = if not slot2 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 31-36, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isNpc
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #5 32-37, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.isNpc
+	slot3 = slot0
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 37-42, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.getSceneEntityCfg
-	slot5 = "canLookAt"
-	slot2 = slot2(slot4, slot5)
+	--- BLOCK #6 38-42, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCfgCanLookAt
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #6 ---
 
-	slot2 = if slot2 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
@@ -312,21 +319,21 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #7 43-57, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot4 = slot2
-	slot2 = slot2.CreateSphereTrigger
-	slot5 = ClientConst
-	slot5 = slot5.TriggerType
-	slot5 = slot5.NPC_LOOK_AT
-	slot6 = 5
-	slot2 = slot2(slot4, slot5, slot6)
-	slot0.npcLookAtTriggerId = slot2
-	slot2 = 0
-	slot0.lastPawnDistanceSqr = slot2
-	slot2 = false
-	slot0.isLookingAtTemporaryEntity = slot2
-	slot2 = 0
-	slot0.lookAtTemporaryEntityTimer = slot2
+	slot1 = slot0.eModel
+	slot3 = slot1
+	slot1 = slot1.CreateSphereTrigger
+	slot4 = ClientConst
+	slot4 = slot4.TriggerType
+	slot4 = slot4.NPC_LOOK_AT
+	slot5 = 5
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0.npcLookAtTriggerId = slot1
+	slot1 = 0
+	slot0.lastPawnDistanceSqr = slot1
+	slot1 = false
+	slot0.isLookingAtTemporaryEntity = slot1
+	slot1 = 0
+	slot0.lookAtTemporaryEntityTimer = slot1
 
 	--- END OF BLOCK #7 ---
 
@@ -341,9 +348,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onSeamlessPostEnterSpace = slot9
+slot9.onSeamlessPostEnterSpace = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ClientConst
 	slot2 = slot2.TriggerType
@@ -376,9 +383,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onTriggerEnter = slot9
+slot9.onTriggerEnter = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = ClientConst
 	slot2 = slot2.TriggerType
@@ -411,9 +418,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.onTriggerExit = slot9
+slot9.onTriggerExit = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPetNpc
@@ -442,19 +449,18 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #2 13-16, warpins: 2 ---
+	--- BLOCK #2 13-15, warpins: 2 ---
 	slot3 = slot0
-	slot1 = slot0.getSceneEntityCfg
-	slot4 = "canLookAt"
+	slot1 = slot0.getCfgCanLookAt
 
-	return slot1(slot3, slot4)
+	return slot1(slot3)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 17-18, warpins: 2 ---
+	--- BLOCK #3 16-17, warpins: 2 ---
 	slot1 = true
 
 	return slot1
@@ -464,11 +470,75 @@ slot9 = function(slot0)
 
 end
 
-slot8.isEntityCanLookAt = slot9
+slot9.isEntityCanLookAt = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.ikComp
+	slot1 = slot0.getSceneEntityCfg
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getSceneEntityCfg
+	slot4 = "canLookAt"
+
+	return slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot1 = slot0.getConfigData
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getConfigData
+	slot1 = slot1(slot3)
+	slot1 = slot1.canLookAt
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-17, warpins: 2 ---
+	slot1 = false
+
+	return slot1
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot9.getCfgCanLookAt = slot10
+
+slot10 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.hasEModelComponent
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_INDEX_IK
+	slot2 = slot2(slot4, slot5)
 
 	--- END OF BLOCK #0 ---
 
@@ -479,7 +549,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 8-8, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -487,9 +557,9 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-11, warpins: 2 ---
-	slot2 = slot0.ikComp
-	slot2 = slot2.lookAtComponent
+	--- BLOCK #2 9-15, warpins: 2 ---
+	slot2 = slot0.eModel
+	slot2 = slot2.ikLookAtComponent
 	slot3 = IsNil
 	slot5 = slot2
 	slot3 = slot3(slot5)
@@ -503,7 +573,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 12-12, warpins: 1 ---
+	--- BLOCK #3 16-16, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #3 ---
@@ -511,7 +581,7 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 13-14, warpins: 2 ---
+	--- BLOCK #4 17-18, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
@@ -521,21 +591,23 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 15-21, warpins: 1 ---
-	slot3 = slot0.ikComp
+	--- BLOCK #5 19-27, warpins: 1 ---
+	slot3 = slot0.eModel
 	slot5 = slot3
 	slot3 = slot3.EnableRigComponent
-	slot6 = slot2
-	slot7 = false
+	slot6 = CommonConst
+	slot6 = slot6.COMPONENT_INDEX_IK
+	slot7 = slot2
+	slot8 = false
 
-	slot3(slot5, slot6, slot7)
+	slot3(slot5, slot6, slot7, slot8)
 
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 22-26, warpins: 1 ---
+	--- BLOCK #6 28-32, warpins: 1 ---
 	slot3 = ToBool
 	slot5 = slot0.lookAtFields
 	slot3 = slot3(slot5)
@@ -548,7 +620,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 27-29, warpins: 1 ---
+	--- BLOCK #7 33-35, warpins: 1 ---
 	slot3 = slot0.lookAtFields
 	slot3 = slot3.abandon
 	slot3 = not slot3
@@ -557,21 +629,23 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 30-35, warpins: 2 ---
-	slot4 = slot0.ikComp
+	--- BLOCK #8 36-43, warpins: 2 ---
+	slot4 = slot0.eModel
 	slot6 = slot4
 	slot4 = slot4.EnableRigComponent
-	slot7 = slot2
-	slot8 = slot3
+	slot7 = CommonConst
+	slot7 = slot7.COMPONENT_INDEX_IK
+	slot8 = slot2
+	slot9 = slot3
 
-	slot4(slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 36-36, warpins: 2 ---
+	--- BLOCK #9 44-44, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -579,9 +653,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.disableDefaultLookAtComp = slot9
+slot9.disableDefaultLookAtComp = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -593,14 +667,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #1 3-9, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.DEBUG
-	slot3 = slot3(slot5)
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.DEBUG
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -608,13 +682,13 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 10-15, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.debug
-	slot6 = "Trigger LookAtRole failed: targetEntity not exist"
-	slot7 = slot0.actorId
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.debug
+	slot7 = "Trigger LookAtRole failed: targetEntity not exist"
+	slot8 = slot0.actorId
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #2 ---
 
@@ -640,14 +714,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #5 19-25, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.DEBUG
-	slot3 = slot3(slot5)
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.DEBUG
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #5 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
@@ -655,13 +729,13 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #6 26-31, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.debug
-	slot6 = "Trigger LookAtRole failed: targetEntity is self"
-	slot7 = slot0.actorId
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.debug
+	slot7 = "Trigger LookAtRole failed: targetEntity is self"
+	slot8 = slot0.actorId
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #6 ---
 
@@ -677,11 +751,11 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #8 33-35, warpins: 2 ---
-	slot3 = slot0.canModelLookAt
+	slot4 = slot0.canModelLookAt
 
 	--- END OF BLOCK #8 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
@@ -697,10 +771,10 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #10 37-39, warpins: 2 ---
-	slot3 = slot0.simpleIKComp
+	slot4 = slot0.simpleIKComp
 	--- END OF BLOCK #10 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #14
@@ -708,14 +782,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #11 40-46, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.DEBUG
-	slot3 = slot3(slot5)
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.DEBUG
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #11 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
@@ -723,13 +797,13 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #12 47-52, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.debug
-	slot6 = "Trigger LookAtRole failed: ikComp not exist"
-	slot7 = slot0.actorId
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.debug
+	slot7 = "Trigger LookAtRole failed: ikComp not exist"
+	slot8 = slot0.actorId
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #12 ---
 
@@ -745,11 +819,11 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #14 54-59, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.disableDefaultLookAtComp
-	slot6 = true
+	slot6 = slot0
+	slot4 = slot0.disableDefaultLookAtComp
+	slot7 = true
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #14 ---
 
@@ -767,63 +841,83 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 61-79, warpins: 2 ---
-	slot3 = slot0.simpleIKComp
-	slot5 = slot3
-	slot3 = slot3.LookAtEntity
-	slot6 = slot1.id
-	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.ikComp
-	slot5 = slot3
-	slot3 = slot3.EnableRigComponent
-	slot6 = slot0.simpleIKComp
-	slot7 = true
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.DEBUG
-	slot3 = slot3(slot5)
+	--- BLOCK #16 61-62, warpins: 2 ---
 	--- END OF BLOCK #16 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 80-86, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.debug
-	slot6 = "Trigger LookAtRole: %d -> %d"
-	slot7 = slot0.actorId
-	slot8 = slot1.actorId
-
-	slot3(slot5, slot6, slot7, slot8)
-
+	--- BLOCK #17 63-63, warpins: 1 ---
+	slot3 = 0.2
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 87-87, warpins: 2 ---
-	return
+	--- BLOCK #18 64-85, warpins: 2 ---
+	slot4 = slot0.simpleIKComp
+	slot6 = slot4
+	slot4 = slot4.LookAtEntity
+	slot7 = slot1.id
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.eModel
+	slot6 = slot4
+	slot4 = slot4.EnableRigComponent
+	slot7 = CommonConst
+	slot7 = slot7.COMPONENT_INDEX_IK
+	slot8 = slot0.simpleIKComp
+	slot9 = true
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.DEBUG
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #18 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 86-92, warpins: 1 ---
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.debug
+	slot7 = "Trigger LookAtRole: %d -> %d"
+	slot8 = slot0.actorId
+	slot9 = slot1.actorId
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 93-93, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot8.lookAtRole = slot9
+slot9.lookAtRole = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -835,14 +929,14 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #1 3-9, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.DEBUG
-	slot2 = slot2(slot4)
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -850,13 +944,13 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #2 10-15, warpins: 1 ---
-	slot2 = slot0.logger
-	slot4 = slot2
-	slot2 = slot2.debug
-	slot5 = "Trigger LookAtTemporaryRole failed: targetEntity not exist"
-	slot6 = slot0.actorId
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = "Trigger LookAtTemporaryRole failed: targetEntity not exist"
+	slot7 = slot0.actorId
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #2 ---
 
@@ -882,14 +976,14 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #5 19-25, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.DEBUG
-	slot2 = slot2(slot4)
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #7
@@ -897,13 +991,13 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #6 26-31, warpins: 1 ---
-	slot2 = slot0.logger
-	slot4 = slot2
-	slot2 = slot2.debug
-	slot5 = "Trigger LookAtTemporaryRole failed: targetEntity is self"
-	slot6 = slot0.actorId
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = "Trigger LookAtTemporaryRole failed: targetEntity is self"
+	slot7 = slot0.actorId
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #6 ---
 
@@ -919,11 +1013,11 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #8 33-35, warpins: 2 ---
-	slot2 = slot0.canModelLookAt
+	slot3 = slot0.canModelLookAt
 
 	--- END OF BLOCK #8 ---
 
-	slot2 = if not slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
@@ -939,10 +1033,10 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #10 37-39, warpins: 2 ---
-	slot2 = slot0.simpleIKComp
+	slot3 = slot0.simpleIKComp
 	--- END OF BLOCK #10 ---
 
-	slot2 = if not slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #14
@@ -950,14 +1044,14 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #11 40-46, warpins: 1 ---
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.DEBUG
-	slot2 = slot2(slot4)
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #11 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
@@ -965,13 +1059,13 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #12 47-52, warpins: 1 ---
-	slot2 = slot0.logger
-	slot4 = slot2
-	slot2 = slot2.debug
-	slot5 = "Trigger LookAtTemporaryRole failed: ikComp not exist"
-	slot6 = slot0.actorId
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = "Trigger LookAtTemporaryRole failed: ikComp not exist"
+	slot7 = slot0.actorId
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #12 ---
 
@@ -987,13 +1081,13 @@ slot9 = function(slot0, slot1)
 
 
 	--- BLOCK #14 54-58, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.canAnimTriggerLookAt
-	slot2 = slot2(slot4)
+	slot5 = slot0
+	slot3 = slot0.canAnimTriggerLookAt
+	slot3 = slot3(slot5)
 
 	--- END OF BLOCK #14 ---
 
-	slot2 = if not slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
@@ -1008,74 +1102,94 @@ slot9 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 60-81, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.disableDefaultLookAtComp
-	slot5 = true
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.simpleIKComp
-	slot4 = slot2
-	slot2 = slot2.LookAtTemporaryEntity
-	slot5 = slot1.actorId
-
-	slot2(slot4, slot5)
-
-	slot2 = slot0.ikComp
-	slot4 = slot2
-	slot2 = slot2.EnableRigComponent
-	slot5 = slot0.simpleIKComp
-	slot6 = true
-
-	slot2(slot4, slot5, slot6)
-
-	slot2 = LoggerManager
-	slot2 = slot2.checkLogger
-	slot4 = LoggerConst
-	slot4 = slot4.DEBUG
-	slot2 = slot2(slot4)
+	--- BLOCK #16 60-61, warpins: 2 ---
 	--- END OF BLOCK #16 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 82-88, warpins: 1 ---
-	slot2 = slot0.logger
-	slot4 = slot2
-	slot2 = slot2.debug
-	slot5 = "Trigger LookAtTemporaryRole: %d -> %d"
-	slot6 = slot0.actorId
-	slot7 = slot1.actorId
-
-	slot2(slot4, slot5, slot6, slot7)
-
+	--- BLOCK #17 62-62, warpins: 1 ---
+	slot2 = 0.2
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 89-89, warpins: 2 ---
-	return
+	--- BLOCK #18 63-87, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.disableDefaultLookAtComp
+	slot6 = true
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.simpleIKComp
+	slot5 = slot3
+	slot3 = slot3.LookAtTemporaryEntity
+	slot6 = slot1.actorId
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.eModel
+	slot5 = slot3
+	slot3 = slot3.EnableRigComponent
+	slot6 = CommonConst
+	slot6 = slot6.COMPONENT_INDEX_IK
+	slot7 = slot0.simpleIKComp
+	slot8 = true
+	slot9 = slot2
+
+	slot3(slot5, slot6, slot7, slot8, slot9)
+
+	slot3 = LoggerManager
+	slot3 = slot3.checkLogger
+	slot5 = LoggerConst
+	slot5 = slot5.DEBUG
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #18 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 88-94, warpins: 1 ---
+	slot3 = slot0.logger
+	slot5 = slot3
+	slot3 = slot3.debug
+	slot6 = "Trigger LookAtTemporaryRole: %d -> %d"
+	slot7 = slot0.actorId
+	slot8 = slot1.actorId
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 95-95, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot8.lookAtTemporaryRole = slot9
+slot9.lookAtTemporaryRole = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot0.canModelLookAt
+	slot4 = slot0.canModelLookAt
 
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -1091,10 +1205,10 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 5-7, warpins: 2 ---
-	slot3 = slot0.simpleIKComp
+	slot4 = slot0.simpleIKComp
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #6
@@ -1102,14 +1216,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #3 8-14, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.DEBUG
-	slot3 = slot3(slot5)
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.DEBUG
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -1117,13 +1231,13 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #4 15-20, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.debug
-	slot6 = "Trigger LookAtCamera failed: ikComp not exist"
-	slot7 = slot0.actorId
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.debug
+	slot7 = "Trigger LookAtCamera failed: ikComp not exist"
+	slot8 = slot0.actorId
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #4 ---
 
@@ -1139,11 +1253,11 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #6 22-27, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.disableDefaultLookAtComp
-	slot6 = true
+	slot6 = slot0
+	slot4 = slot0.disableDefaultLookAtComp
+	slot7 = true
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
 	--- END OF BLOCK #6 ---
 
@@ -1161,39 +1275,59 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 29-41, warpins: 2 ---
-	slot3 = slot0.simpleIKComp
-	slot5 = slot3
-	slot3 = slot3.LookAtCamera
-	slot6 = slot1
-	slot7 = slot2
+	--- BLOCK #8 29-30, warpins: 2 ---
+	--- END OF BLOCK #8 ---
 
-	slot3(slot5, slot6, slot7)
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
-	slot3 = slot0.ikComp
-	slot5 = slot3
-	slot3 = slot3.EnableRigComponent
-	slot6 = slot0.simpleIKComp
-	slot7 = true
 
-	slot3(slot5, slot6, slot7)
+	--- BLOCK #9 31-31, warpins: 1 ---
+	slot3 = 0.2
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 32-47, warpins: 2 ---
+	slot4 = slot0.simpleIKComp
+	slot6 = slot4
+	slot4 = slot4.LookAtCamera
+	slot7 = slot1
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.eModel
+	slot6 = slot4
+	slot4 = slot4.EnableRigComponent
+	slot7 = CommonConst
+	slot7 = slot7.COMPONENT_INDEX_IK
+	slot8 = slot0.simpleIKComp
+	slot9 = true
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot8.lookAtCamera = slot9
+slot9.lookAtCamera = slot10
 
-slot9 = function(slot0, slot1, slot2)
+slot10 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot3 = slot0.canModelLookAt
+	slot4 = slot0.canModelLookAt
 
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
@@ -1209,10 +1343,10 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #2 5-7, warpins: 2 ---
-	slot3 = slot0.simpleIKComp
+	slot4 = slot0.simpleIKComp
 	--- END OF BLOCK #2 ---
 
-	slot3 = if not slot3 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #6
@@ -1220,14 +1354,14 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #3 8-14, warpins: 1 ---
-	slot3 = LoggerManager
-	slot3 = slot3.checkLogger
-	slot5 = LoggerConst
-	slot5 = slot5.DEBUG
-	slot3 = slot3(slot5)
+	slot4 = LoggerManager
+	slot4 = slot4.checkLogger
+	slot6 = LoggerConst
+	slot6 = slot6.DEBUG
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #3 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -1235,13 +1369,13 @@ slot9 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #4 15-20, warpins: 1 ---
-	slot3 = slot0.logger
-	slot5 = slot3
-	slot3 = slot3.debug
-	slot6 = "Trigger LookAtPos failed: ikComp not exist"
-	slot7 = slot0.actorId
+	slot4 = slot0.logger
+	slot6 = slot4
+	slot4 = slot4.debug
+	slot7 = "Trigger LookAtPos failed: ikComp not exist"
+	slot8 = slot0.actorId
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #4 ---
 
@@ -1273,39 +1407,59 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 25-41, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.disableDefaultLookAtComp
-	slot6 = true
+	--- BLOCK #8 25-26, warpins: 2 ---
+	--- END OF BLOCK #8 ---
 
-	slot3(slot5, slot6)
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
-	slot3 = slot0.simpleIKComp
-	slot5 = slot3
-	slot3 = slot3.LookAtPos
-	slot6 = slot1
-	slot7 = slot2
 
-	slot3(slot5, slot6, slot7)
+	--- BLOCK #9 27-27, warpins: 1 ---
+	slot3 = 0.2
+	--- END OF BLOCK #9 ---
 
-	slot3 = slot0.ikComp
-	slot5 = slot3
-	slot3 = slot3.EnableRigComponent
-	slot6 = slot0.simpleIKComp
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 28-47, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.disableDefaultLookAtComp
 	slot7 = true
 
-	slot3(slot5, slot6, slot7)
+	slot4(slot6, slot7)
+
+	slot4 = slot0.simpleIKComp
+	slot6 = slot4
+	slot4 = slot4.LookAtPos
+	slot7 = slot1
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.eModel
+	slot6 = slot4
+	slot4 = slot4.EnableRigComponent
+	slot7 = CommonConst
+	slot7 = slot7.COMPONENT_INDEX_IK
+	slot8 = slot0.simpleIKComp
+	slot9 = true
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot8.lookAtPos = slot9
+slot9.lookAtPos = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.canModelLookAt
 
@@ -1384,7 +1538,7 @@ slot9 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 24-38, warpins: 1 ---
+	--- BLOCK #7 24-40, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.disableDefaultLookAtComp
 	slot5 = true
@@ -1397,39 +1551,43 @@ slot9 = function(slot0, slot1)
 
 	slot2(slot4)
 
-	slot2 = slot0.ikComp
+	slot2 = slot0.eModel
 	slot4 = slot2
 	slot2 = slot2.EnableRigComponent
-	slot5 = slot0.simpleIKComp
-	slot6 = true
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_INDEX_IK
+	slot6 = slot0.simpleIKComp
+	slot7 = true
 
-	slot2(slot4, slot5, slot6)
+	slot2(slot4, slot5, slot6, slot7)
 
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 39-47, warpins: 1 ---
+	--- BLOCK #8 41-51, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.cancelLookAtRole
 
 	slot2(slot4)
 
-	slot2 = slot0.ikComp
+	slot2 = slot0.eModel
 	slot4 = slot2
 	slot2 = slot2.EnableRigComponent
-	slot5 = slot0.simpleIKComp
-	slot6 = false
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_INDEX_IK
+	slot6 = slot0.simpleIKComp
+	slot7 = false
 
-	slot2(slot4, slot5, slot6)
+	slot2(slot4, slot5, slot6, slot7)
 
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 48-48, warpins: 2 ---
+	--- BLOCK #9 52-52, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -1437,9 +1595,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.enableLookAtCameraCenter = slot9
+slot9.enableLookAtCameraCenter = slot10
 
-slot9 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -1551,9 +1709,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot8.cancelLookAtRole = slot9
+slot9.cancelLookAtRole = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.simpleIKComp
 	--- END OF BLOCK #0 ---
@@ -1587,9 +1745,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.canAnimTriggerLookAt = slot9
+slot9.canAnimTriggerLookAt = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.triggerLookAtTimer
 	--- END OF BLOCK #0 ---
@@ -1705,9 +1863,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onEnterLookAtTrigger = slot9
+slot9.onEnterLookAtTrigger = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.simpleIKComp
 	--- END OF BLOCK #0 ---
@@ -1769,9 +1927,9 @@ slot9 = function(slot0)
 
 end
 
-slot8.onLeaveLookAtTrigger = slot9
+slot9.onLeaveLookAtTrigger = slot10
 
-slot9 = function(slot0)
+slot10 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isInDialogue
 	--- END OF BLOCK #0 ---
@@ -1954,7 +2112,7 @@ slot9 = function(slot0)
 	--- BLOCK #13 79-86, warpins: 2 ---
 	slot2 = slot0.lookAtTemporaryEntityTimer
 	slot3 = Time
-	slot3 = slot3.unityDeltaTime
+	slot3 = slot3.unscaledDeltaTime
 	slot2 = slot2 - slot3
 	slot0.lookAtTemporaryEntityTimer = slot2
 	slot2 = slot0.isLookingAtTemporaryEntity
@@ -2004,39 +2162,46 @@ slot9 = function(slot0)
 
 end
 
-slot8.tickTriggerLookAtPlayer = slot9
+slot9.tickTriggerLookAtPlayer = slot10
 
-slot9 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = nil
-	slot0.ikComp = slot1
-	slot1 = nil
-	slot0.simpleIKComp = slot1
+slot10 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.npcLookAtTriggerId
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 8-13, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.isNpc
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.eModel
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #2 14-20, warpins: 1 ---
+	--- BLOCK #2 7-12, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.isNpc
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-19, warpins: 1 ---
 	slot1 = slot0.eModel
 	slot3 = slot1
 	slot1 = slot1.DestroyTrigger
@@ -2046,23 +2211,37 @@ slot9 = function(slot0)
 
 	slot1 = nil
 	slot0.npcLookAtTriggerId = slot1
-	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 21-23, warpins: 3 ---
-	slot1 = slot0.triggerLookAtTimer
 	--- END OF BLOCK #3 ---
 
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-20, warpins: 4 ---
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot9.preDestroy = slot10
+
+slot10 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = nil
+	slot0.simpleIKComp = slot1
+	slot1 = slot0.triggerLookAtTimer
+	--- END OF BLOCK #0 ---
+
 	if slot1 ~= nil then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #4 24-29, warpins: 1 ---
+	--- BLOCK #1 6-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.removeTimer
 	slot4 = slot0.triggerLookAtTimer
@@ -2072,22 +2251,22 @@ slot9 = function(slot0)
 	slot1 = nil
 	slot0.triggerLookAtTimer = slot1
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #5 30-30, warpins: 2 ---
+	--- BLOCK #2 12-12, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot8.destroy = slot9
+slot9.destroy = slot10
 
-return slot8
+return slot9
 --- END OF BLOCK #0 ---
 
 

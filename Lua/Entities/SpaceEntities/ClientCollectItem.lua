@@ -1,4 +1,4 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-79, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -19,90 +19,94 @@ slot7 = "Entities.SpaceEntities.CommonComponent.ClientAttachComponent"
 slot5 = slot5(slot7)
 slot6 = Vector3
 slot7 = require
-slot9 = "Common.NoticeDef"
+slot9 = "Core.Common.Time"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Entities.SpaceEntities.CommonComponent.ClientEcologyComponent"
+slot10 = "Common.NoticeDef"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Entities.SpaceEntities.CommonComponent.ClientResPointComponent"
+slot11 = "Entities.SpaceEntities.CommonComponent.ClientEcologyComponent"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Entities.SpaceEntities.PlayerComponent.ClientGhostEyeDetectedComponent"
+slot12 = "Entities.SpaceEntities.CommonComponent.ClientResPointComponent"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Entities.SpaceEntities.CommonComponent.ClientVoxelComponent"
+slot13 = "Entities.SpaceEntities.PlayerComponent.ClientGhostEyeDetectedComponent"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Entities.SpaceEntities.CommonComponent.ClientMagneticComponent"
+slot14 = "Entities.SpaceEntities.CommonComponent.ClientVoxelComponent"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.collect_item_data"
+slot15 = "Entities.SpaceEntities.CommonComponent.ClientMagneticComponent"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.InteractionConst"
+slot16 = "Data.collect_item_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Utils.DropUtils"
+slot17 = "Common.Const.InteractionConst"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Utils.LuaUIUtils"
+slot18 = "Common.Utils.DropUtils"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Const.UIConst"
+slot19 = "Utils.LuaUIUtils"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Const.EffectConst"
+slot20 = "Const.UIConst"
 slot18 = slot18(slot20)
 slot19 = require
-slot21 = "CustomTypes.ItemProperties"
+slot21 = "Const.EffectConst"
 slot19 = slot19(slot21)
 slot20 = require
-slot22 = "Entities.SpaceEntities.CommonComponent.ClientPrefabModelComponent"
+slot22 = "CustomTypes.ItemProperties"
 slot20 = slot20(slot22)
-slot21 = slot0.Class
-slot23 = "ClientCollectItem"
-slot24 = slot4
-slot21 = slot21(slot23, slot24)
-slot22 = {}
-slot22[1] = slot5
-slot22[2] = slot8
-slot22[3] = slot9
-slot22[4] = slot10
-slot22[5] = slot11
-slot22[6] = slot12
-slot22[7] = slot20
-slot23 = EnableBotTest
+slot21 = require
+slot23 = "Entities.SpaceEntities.CommonComponent.ClientPrefabModelComponent"
+slot21 = slot21(slot23)
+slot22 = slot0.Class
+slot24 = "ClientCollectItem"
+slot25 = slot4
+slot22 = slot22(slot24, slot25)
+slot23 = {}
+slot23[1] = slot5
+slot23[2] = slot9
+slot23[3] = slot10
+slot23[4] = slot11
+slot23[5] = slot12
+slot23[6] = slot13
+slot23[7] = slot21
+slot24 = EnableBotTest
 --- END OF BLOCK #0 ---
 
-slot23 = if slot23 then
+slot24 = if slot24 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #2
 end
 
 
---- BLOCK #1 77-81, warpins: 1 ---
-slot23 = {}
-slot23[1] = slot8
-slot23[2] = slot9
-slot23[3] = slot10
-slot22 = slot23
+--- BLOCK #1 80-84, warpins: 1 ---
+slot24 = {}
+slot24[1] = slot9
+slot24[2] = slot10
+slot24[3] = slot11
+slot23 = slot24
 --- END OF BLOCK #1 ---
 
 FLOW; TARGET BLOCK #2
 
 
---- BLOCK #2 82-130, warpins: 2 ---
-slot23 = slot0.AddComponents
-slot25 = slot21
+--- BLOCK #2 85-136, warpins: 2 ---
+slot24 = slot0.AddComponents
 slot26 = slot22
+slot27 = slot23
 
-slot23(slot25, slot26)
+slot24(slot26, slot27)
 
-slot23 = "CharacterWireFrameDissolve"
+slot24 = "CharacterWireFrameDissolve"
+slot25 = 0.5
 
-slot24 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ClientCollectItem
 	slot2 = slot2.super
@@ -119,9 +123,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot21.ctor = slot24
+slot22.ctor = slot26
 
-slot24 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot2 = ClientCollectItem
 	slot2 = slot2.super
@@ -265,9 +269,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot21.init = slot24
+slot22.init = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
@@ -348,9 +352,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.parseItemQuality = slot24
+slot22.parseItemQuality = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientCollectItem
 	slot1 = slot1.super
@@ -366,9 +370,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.postInitializeComponents = slot24
+slot22.postInitializeComponents = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = ClientCollectItem
 	slot1 = slot1.super
@@ -384,9 +388,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.start = slot24
+slot22.start = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.templateId
 	--- END OF BLOCK #0 ---
@@ -437,9 +441,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.getConfigData = slot24
+slot22.getConfigData = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.collectItemType
 	--- END OF BLOCK #0 ---
@@ -503,9 +507,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.getCollectItemType = slot24
+slot22.getCollectItemType = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = ClientCollectItem
 	slot1 = slot1.super
@@ -547,9 +551,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.refreshAppearance = slot24
+slot22.refreshAppearance = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshCollectItemOpened
@@ -656,9 +660,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.onPrefabModelLoaded = slot24
+slot22.onPrefabModelLoaded = slot26
 
-slot24 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = math
 	slot2 = slot2.random
@@ -725,9 +729,9 @@ slot24 = function(slot0, slot1)
 
 end
 
-slot21.playBloomEffect = slot24
+slot22.playBloomEffect = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isModelLoaded
 	--- END OF BLOCK #0 ---
@@ -849,9 +853,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.refreshCollectItemOpened = slot24
+slot22.refreshCollectItemOpened = slot26
 
-slot24 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.levelCondition
 	slot3 = Const
@@ -898,47 +902,22 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-21, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.isEggPlayer
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #4 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-23, warpins: 1 ---
-	slot2 = false
-
-	return slot2
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 24-28, warpins: 2 ---
+	--- BLOCK #4 15-19, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.isCollectItemOpened
 	slot2 = slot2(slot4)
 	slot2 = not slot2
 
 	return slot2
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot21.checkCanInteract = slot24
+slot22.checkCanInteract = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.status
 	slot2 = Const
@@ -976,9 +955,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.isCollectItemOpened = slot24
+slot22.isCollectItemOpened = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getDefaultInteractionListData
@@ -990,9 +969,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.getInteractionListData = slot24
+slot22.getInteractionListData = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = {}
 	slot2 = {}
@@ -1148,9 +1127,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.getDefaultInteractionListData = slot24
+slot22.getDefaultInteractionListData = slot26
 
-slot24 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.isCollectItemOpened
@@ -1173,22 +1152,58 @@ slot24 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-10, warpins: 2 ---
-	slot4 = slot0
-	slot2 = slot0.doInteract
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot2 = Time
+	slot2 = slot2.realtimeSinceStartup
+	slot3 = slot0.lastCollectInteractTime
+	--- END OF BLOCK #2 ---
 
-	slot2(slot4)
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 12-16, warpins: 1 ---
+	slot3 = slot0.lastCollectInteractTime
+	slot3 = slot2 - slot3
+	slot4 = COLLECT_INTERACT_INTERVAL
+
+	--- END OF BLOCK #3 ---
+
+	if slot3 < slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-17, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-22, warpins: 3 ---
+	slot0.lastCollectInteractTime = slot2
+	slot5 = slot0
+	slot3 = slot0.doInteract
+
+	slot3(slot5)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot21.interact = slot24
+slot22.interact = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -1255,9 +1270,9 @@ slot24 = function(slot0)
 
 end
 
-slot21.doInteract = slot24
+slot22.doInteract = slot26
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot26 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1266,9 +1281,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot21.onInteractStart = slot24
+slot22.onInteractStart = slot26
 
-slot24 = function(slot0, slot1, slot2, slot3, slot4)
+slot26 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot5 = slot0.isModelLoaded
 	--- END OF BLOCK #0 ---
@@ -1313,9 +1328,9 @@ slot24 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot21.onInteractInterrupt = slot24
+slot22.onInteractInterrupt = slot26
 
-slot24 = function(slot0, slot1, slot2)
+slot26 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
@@ -1447,9 +1462,27 @@ slot24 = function(slot0, slot1, slot2)
 
 end
 
-slot21.onInteractResult = slot24
+slot22.onInteractResult = slot26
 
-slot24 = function(slot0)
+slot26 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = ClientCollectItem
+	slot1 = slot1.super
+	slot1 = slot1.destroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot22.destroy = slot26
+
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.effectId
 	--- END OF BLOCK #0 ---
@@ -1485,7 +1518,7 @@ slot24 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
@@ -1496,31 +1529,35 @@ slot24 = function(slot0)
 	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 19-28, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot2 = slot2.modelView
-	slot2 = slot2.shaderView
-	slot4 = slot2
+	--- BLOCK #4 19-23, warpins: 1 ---
+	slot2 = ClientEffectUtils
 	slot2 = slot2.StopPreset
+	slot4 = slot0
 	slot5 = slot1
 
 	slot2(slot4, slot5)
 
-	slot2 = slot0.destroyPresetTimer
 	--- END OF BLOCK #4 ---
 
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-26, warpins: 3 ---
+	slot2 = slot0.destroyPresetTimer
+	--- END OF BLOCK #5 ---
+
 	slot2 = if slot2 then
-	JUMP TO BLOCK #5
-	else
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 29-34, warpins: 1 ---
+	--- BLOCK #6 27-32, warpins: 1 ---
 	slot2 = TimerManager
 	slot2 = slot2.removeTimer
 	slot4 = slot0.destroyPresetTimer
@@ -1529,29 +1566,29 @@ slot24 = function(slot0)
 
 	slot2 = nil
 	slot0.destroyPresetTimer = slot2
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #6 35-40, warpins: 4 ---
+	--- BLOCK #7 33-38, warpins: 2 ---
 	slot2 = ClientCollectItem
 	slot2 = slot2.super
-	slot2 = slot2.destroy
+	slot2 = slot2.preDestroy
 	slot4 = slot0
 
 	slot2(slot4)
 
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot21.destroy = slot24
+slot22.preDestroy = slot26
 
-return slot21
+return slot22
 --- END OF BLOCK #2 ---
 
 

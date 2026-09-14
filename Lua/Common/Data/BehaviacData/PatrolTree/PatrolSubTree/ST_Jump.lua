@@ -8,26 +8,26 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "PatrolTree/PatrolSubTree/ST_Jump",
-	agenttype = "CombatAgent",
+	useForRoute = true,
 	version = 5,
-	useForRoute = true
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tTimeout",
+	const = 0,
 	type = "float",
-	value = "0",
-	const = 0
+	name = "tTimeout",
+	value = "0"
 }
 slot4[1] = slot5
 slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -36,8 +36,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}

@@ -1,34 +1,40 @@
---- BLOCK #0 1-77, warpins: 1 ---
+--- BLOCK #0 1-90, warpins: 1 ---
 slot0 = require
-slot2 = "Const.MessageName"
+slot2 = "Const.HotkeyConst"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Const.MessageName"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Guis.UICtrl"
+slot4 = "Const.UIConst"
 slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "FriendSetupCtrl"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
+slot3 = require
+slot5 = "Core.Framework.Class"
+slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientTextUtils"
+slot6 = "Guis.UICtrl"
 slot4 = slot4(slot6)
-slot5 = require
-slot7 = "Utils.LuaUIUtils"
-slot5 = slot5(slot7)
+slot5 = slot3.LightClass
+slot7 = "FriendSetupCtrl"
+slot8 = slot4
+slot5 = slot5(slot7, slot8)
 slot6 = require
-slot8 = "Data.friendship_level_data"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.sys_config_data"
+slot9 = "Utils.LuaUIUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.Const"
+slot10 = "Data.friendship_level_data"
 slot8 = slot8(slot10)
+slot9 = require
+slot11 = "Data.sys_config_data"
+slot9 = slot9(slot11)
+slot10 = require
+slot12 = "Common.Const.Const"
+slot10 = slot10(slot12)
 
-slot9 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.playerInfo
 	slot2 = slot2.online
@@ -171,28 +177,34 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot3.innerSortFriendList = slot9
-slot9 = {}
-slot10 = slot0.UPDATE_FRIEND_CUSTOM_INFO
-slot11 = {
+slot5.innerSortFriendList = slot11
+slot11 = {}
+slot12 = slot1.UPDATE_FRIEND_CUSTOM_INFO
+slot13 = {
 	"closePanel",
 	true
 }
-slot9[slot10] = slot11
-slot10 = slot0.UPDATE_CHAT_GROUP
-slot11 = {
+slot11[slot12] = slot13
+slot12 = slot1.UPDATE_CHAT_GROUP
+slot13 = {
 	"closePanel",
 	true
 }
-slot9[slot10] = slot11
-slot10 = slot0.UPDATE_FRIEND_GROUP
-slot11 = {
+slot11[slot12] = slot13
+slot12 = slot1.UPDATE_FRIEND_GROUP
+slot13 = {
 	"closePanel",
 	true
 }
-slot9[slot10] = slot11
-slot3.messages = slot9
-slot9 = {
+slot11[slot12] = slot13
+slot12 = slot1.PLAYER_SPARK_CHANGE
+slot13 = {
+	"refreshPlayerSpark",
+	true
+}
+slot11[slot12] = slot13
+slot5.messages = slot11
+slot11 = {
 	[0] = "CREATE_FRIEND_GROUP_TITLE",
 	"EDIT_FRIEND_GROUP",
 	"CHATGROUP_CREAT",
@@ -200,7 +212,7 @@ slot9 = {
 	"CHATGROUP_REMOVE_MEMBER",
 	"CHANGE_FRIEND_GROUP"
 }
-slot10 = {
+slot12 = {
 	[0] = "CONFIRM_CREAT_GROUP",
 	"CONFIRM_EDIT",
 	"CONFIRM_CREAT_GROUP",
@@ -209,7 +221,7 @@ slot10 = {
 	"CONFIRM_CHANGE"
 }
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -236,10 +248,10 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.onCreate = slot11
+slot5.onCreate = slot13
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-61, warpins: 1 ---
+slot13 = function(slot0)
+	--- BLOCK #0 1-59, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.bgCloseUButton
 
@@ -419,30 +431,26 @@ slot11 = function(slot0)
 	slot1 = slot1(slot3, slot4)
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "btnSearchUButton"
+	slot5 = "btnDeleteUButton"
 	slot2 = slot2(slot4, slot5)
 	slot5 = slot1
 	slot3 = slot1.GetRefValue
-	slot6 = "btnDeleteUButton"
+	slot6 = "placeHolderUSDFText"
 	slot3 = slot3(slot5, slot6)
-	slot6 = slot1
-	slot4 = slot1.GetRefValue
-	slot7 = "placeHolderUSDFText"
-	slot4 = slot4(slot6, slot7)
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot4
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "FRIEND_SEARCH_DESC"
-	MULTRES = slot8(slot10)
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot3
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "FRIEND_SEARCH_DESC"
+	MULTRES = slot7(slot9)
 
-	slot5(slot7, MULTRES)
+	slot4(slot6, MULTRES)
 
-	slot5 = slot0.view
-	slot5 = slot5.searchInputField
+	slot4 = slot0.view
+	slot4 = slot4.searchInputField
 
-	slot6 = function(slot0)
+	slot5 = function(slot0)
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot1 = string
 		slot1 = slot1.len
@@ -502,11 +510,11 @@ slot11 = function(slot0)
 
 	end
 
-	slot5.luaValueChanged = slot6
-	slot5 = slot0.view
-	slot5 = slot5.searchInputField
+	slot4.luaValueChanged = slot5
+	slot4 = slot0.view
+	slot4 = slot4.searchInputField
 
-	slot6 = function(slot0)
+	slot5 = function(slot0)
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot1 = self
 		slot3 = slot1
@@ -522,7 +530,9 @@ slot11 = function(slot0)
 
 	end
 
-	slot5.luaEndEdit = slot6
+	slot4.luaEndEdit = slot5
+	slot4 = slot0.view
+	slot4 = slot4.btnSearchUButton
 
 	slot5 = function()
 		--- BLOCK #0 1-9, warpins: 1 ---
@@ -543,9 +553,9 @@ slot11 = function(slot0)
 
 	end
 
-	slot2.luaClick = slot5
+	slot4.luaClick = slot5
 
-	slot5 = function()
+	slot4 = function()
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.view
@@ -560,7 +570,7 @@ slot11 = function(slot0)
 
 	end
 
-	slot3.luaClick = slot5
+	slot2.luaClick = slot4
 
 	return
 	--- END OF BLOCK #0 ---
@@ -569,10 +579,10 @@ slot11 = function(slot0)
 
 end
 
-slot3.addListener = slot11
+slot5.addListener = slot13
 
-slot11 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-43, warpins: 1 ---
+slot13 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-44, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -597,179 +607,254 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot9 = slot4.GetRefValue
 	slot12 = "checkBoxUButton"
 	slot9 = slot9(slot11, slot12)
-	slot10 = LuaUIUtils
-	slot10 = slot10.renderPlayerAvatarButton
-	slot12 = slot5
-	slot13 = {
-		showOnlineState = true
-	}
-	slot14 = slot3.playerId
-	slot13.playerId = slot14
-	slot14 = slot3.playerInfo
-	slot13.playerInfo = slot14
-
-	slot10(slot12, slot13)
-
-	slot10 = LuaUIUtils
-	slot10 = slot10.getPlayerDisplayName
-	slot12 = slot3.playerId
-	slot13 = slot3.playerInfo
-	slot13 = slot13.playerName
+	slot12 = slot4
+	slot10 = slot4.GetRefValue
+	slot13 = "intimacyUButton"
 	slot10 = slot10(slot12, slot13)
-	slot11 = FriendSetupCtrl
-	slot11 = slot11._platformHooks
+	slot11 = LuaUIUtils
+	slot11 = slot11.renderPlayerAvatarButton
+	slot13 = slot5
+	slot14 = {
+		showOnlineState = true,
+		hideLevel = true
+	}
+	slot15 = slot3.playerId
+	slot14.playerId = slot15
+	slot15 = slot3.playerInfo
+	slot14.playerInfo = slot15
+	slot15 = LuaUIUtils
+	slot15 = slot15.PLAYER_AVATAR_TYPE
+	slot15 = slot15.CHAT
+	slot14.avatarType = slot15
+	slot15 = slot0.sparkAnimationPlayerUid
+	slot16 = slot3.playerId
 	--- END OF BLOCK #0 ---
 
-	slot11 = if slot11 then
+	if slot15 ~= slot16 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 44-46, warpins: 1 ---
-	slot12 = slot11.renderFriendItemName
+	--- BLOCK #1 45-46, warpins: 1 ---
+	slot15 = false
 	--- END OF BLOCK #1 ---
 
-	slot12 = if slot12 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 47-54, warpins: 1 ---
-	slot12 = slot11.renderFriendItemName
-	slot14 = slot0
-	slot15 = slot1
-	slot16 = slot3
-	slot17 = slot10
-	slot12 = slot12(slot14, slot15, slot16, slot17)
+	--- BLOCK #2 47-47, warpins: 1 ---
+	slot15 = true
 	--- END OF BLOCK #2 ---
 
-	slot10 = if not slot12 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #3
-	end
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 55-68, warpins: 4 ---
-	slot12 = ClientTextUtils
-	slot12 = slot12.setText
-	slot14 = slot6
-	slot15 = slot10
+	--- BLOCK #3 48-64, warpins: 2 ---
+	slot14.playSparkAnimation = slot15
 
-	slot12(slot14, slot15)
+	slot11(slot13, slot14)
 
-	slot12 = pg
-	slot12 = slot12.game
-	slot12 = slot12.chat
-	slot14 = slot12
-	slot12 = slot12.getFriendship
-	slot15 = slot3.playerId
-	slot12 = slot12(slot14, slot15)
+	slot13 = slot0
+	slot11 = slot0.bindFriendIntimacyEvent
+	slot14 = slot10
+	slot15 = slot3
+
+	slot11(slot13, slot14, slot15)
+
+	slot11 = LuaUIUtils
+	slot11 = slot11.getPlayerDisplayName
+	slot13 = slot3.playerId
+	slot14 = slot3.playerInfo
+	slot14 = slot14.playerName
+	slot11 = slot11(slot13, slot14)
+	slot12 = FriendSetupCtrl
+	slot12 = slot12._platformHooks
 	--- END OF BLOCK #3 ---
 
-	slot13 = if slot12 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #4 69-70, warpins: 1 ---
-	slot13 = FriendshipLevelData
-	slot13 = slot13[slot12]
+	--- BLOCK #4 65-67, warpins: 1 ---
+	slot13 = slot12.renderFriendItemName
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 71-72, warpins: 2 ---
-	--- END OF BLOCK #5 ---
-
 	slot13 = if slot13 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 73-81, warpins: 1 ---
-	slot14 = FriendshipLevelData
-	slot14 = slot14[slot12]
-	slot14 = slot14.levelIcon
-	slot17 = slot7
-	slot15 = slot7.SetActive
-	slot18 = true
+	--- BLOCK #5 68-75, warpins: 1 ---
+	slot13 = slot12.renderFriendItemName
+	slot15 = slot0
+	slot16 = slot1
+	slot17 = slot3
+	slot18 = slot11
+	slot13 = slot13(slot15, slot16, slot17, slot18)
+	--- END OF BLOCK #5 ---
 
-	slot15(slot17, slot18)
+	slot11 = if not slot13 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #6
+	end
 
-	slot7.url = slot14
+
+	--- BLOCK #6 76-89, warpins: 4 ---
+	slot13 = ClientTextUtils
+	slot13 = slot13.setText
+	slot15 = slot6
+	slot16 = slot11
+
+	slot13(slot15, slot16)
+
+	slot13 = pg
+	slot13 = slot13.game
+	slot13 = slot13.chat
+	slot15 = slot13
+	slot13 = slot13.getFriendship
+	slot16 = slot3.playerId
+	slot13 = slot13(slot15, slot16)
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
+	slot14 = if slot13 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
 
 
-	--- BLOCK #7 82-85, warpins: 1 ---
-	slot16 = slot7
-	slot14 = slot7.SetActive
-	slot17 = false
-
-	slot14(slot16, slot17)
-
+	--- BLOCK #7 90-91, warpins: 1 ---
+	slot14 = FriendshipLevelData
+	slot14 = slot14[slot13]
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 86-97, warpins: 2 ---
-	slot14 = LuaUIUtils
-	slot14 = slot14.getLastTimeStr
-	slot16 = slot3.playerInfo
-	slot16 = slot16.loginTime
-	slot14 = slot14(slot16)
-	slot15 = ClientTextUtils
-	slot15 = slot15.setText
-	slot17 = slot8
-	slot18 = slot3.playerInfo
-	slot18 = slot18.online
+	--- BLOCK #8 92-93, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	slot18 = if slot18 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 98-103, warpins: 1 ---
-	slot18 = pg
-	slot18 = slot18.getGameString
-	slot20 = "ONLINE"
-	slot18 = slot18(slot20)
+	--- BLOCK #9 94-102, warpins: 1 ---
+	slot15 = FriendshipLevelData
+	slot15 = slot15[slot13]
+	slot15 = slot15.levelIcon
+	slot18 = slot7
+	slot16 = slot7.SetActive
+	slot19 = true
+
+	slot16(slot18, slot19)
+
+	slot7.url = slot15
 	--- END OF BLOCK #9 ---
 
-	slot18 = if not slot18 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 104-104, warpins: 2 ---
-	slot18 = slot14
+	--- BLOCK #10 103-106, warpins: 1 ---
+	slot17 = slot7
+	slot15 = slot7.SetActive
+	slot18 = false
+
+	slot15(slot17, slot18)
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 105-115, warpins: 2 ---
-	slot15(slot17, slot18)
+	--- BLOCK #11 107-118, warpins: 2 ---
+	slot15 = LuaUIUtils
+	slot15 = slot15.getLastTimeStr
+	slot17 = slot3.playerInfo
+	slot17 = slot17.lastLogoutTime
+	slot15 = slot15(slot17)
+	slot18 = slot1
+	slot16 = slot1.TryChangePage
+	slot19 = "OnlineState"
+	slot20 = slot3.playerInfo
+	slot20 = slot20.online
+	--- END OF BLOCK #11 ---
 
-	slot15 = function()
+	slot20 = if slot20 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 119-120, warpins: 1 ---
+	slot20 = 0
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 121-121, warpins: 1 ---
+	slot20 = 1
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 122-129, warpins: 2 ---
+	slot16(slot18, slot19, slot20)
+
+	slot16 = ClientTextUtils
+	slot16 = slot16.setText
+	slot18 = slot8
+	slot19 = slot3.playerInfo
+	slot19 = slot19.online
+	--- END OF BLOCK #14 ---
+
+	slot19 = if slot19 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 130-135, warpins: 1 ---
+	slot19 = pg
+	slot19 = slot19.getGameString
+	slot21 = "ONLINE"
+	slot19 = slot19(slot21)
+	--- END OF BLOCK #15 ---
+
+	slot19 = if not slot19 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 136-136, warpins: 2 ---
+	slot19 = slot15
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 137-147, warpins: 2 ---
+	slot16(slot18, slot19)
+
+	slot16 = function()
 		--- BLOCK #0 1-7, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
@@ -855,119 +940,198 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot9.luaClick = slot15
-	slot15 = slot9.luaClick
-	slot1.luaClick = slot15
-	slot17 = slot9
-	slot15 = slot9.TryChangePage
-	slot18 = "Select"
-	slot19 = slot3.isSelected
-	--- END OF BLOCK #11 ---
-
-	slot19 = if slot19 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 116-117, warpins: 1 ---
-	slot19 = 1
-	--- END OF BLOCK #12 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
-
-
-	--- BLOCK #13 118-118, warpins: 1 ---
-	slot19 = 0
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 119-125, warpins: 2 ---
-	slot15(slot17, slot18, slot19)
-
-	slot15 = slot0.setupType
-	slot16 = slot0.model
-	slot16 = slot16.FriendSetupType
-	slot16 = slot16.AddChatGroupMember
-	--- END OF BLOCK #14 ---
-
-	if slot15 == slot16 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #15 126-128, warpins: 1 ---
-	slot15 = slot3.isSelected
-	--- END OF BLOCK #15 ---
-
-	slot15 = if slot15 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #19
-	end
-
-
-	--- BLOCK #16 129-138, warpins: 1 ---
-	slot17 = slot9
-	slot15 = slot9.TryChangePage
-	slot18 = "SelectState"
-	slot19 = 1
-
-	slot15(slot17, slot18, slot19)
-
-	slot15 = false
-	slot9.interactable = slot15
-	slot15 = false
-	slot1.interactable = slot15
-	--- END OF BLOCK #16 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
-
-
-	--- BLOCK #17 139-144, warpins: 1 ---
-	slot15 = slot0.setupType
-	slot16 = slot0.model
-	slot16 = slot16.FriendSetupType
-	slot16 = slot16.RemoveChatGroupMember
+	slot9.luaClick = slot16
+	slot16 = slot9.luaClick
+	slot1.luaClick = slot16
+	slot18 = slot9
+	slot16 = slot9.TryChangePage
+	slot19 = "Select"
+	slot20 = slot3.isSelected
 	--- END OF BLOCK #17 ---
 
-	if slot15 == slot16 then
+	slot20 = if slot20 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 145-149, warpins: 1 ---
-	slot17 = slot9
-	slot15 = slot9.TryChangePage
-	slot18 = "SelectState"
-	slot19 = 2
-
-	slot15(slot17, slot18, slot19)
-
+	--- BLOCK #18 148-149, warpins: 1 ---
+	slot20 = 1
 	--- END OF BLOCK #18 ---
 
-	FLOW; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 150-151, warpins: 4 ---
-	return
+	--- BLOCK #19 150-150, warpins: 1 ---
+	slot20 = 0
+
 	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 151-157, warpins: 2 ---
+	slot16(slot18, slot19, slot20)
+
+	slot16 = slot0.setupType
+	slot17 = slot0.model
+	slot17 = slot17.FriendSetupType
+	slot17 = slot17.AddChatGroupMember
+	--- END OF BLOCK #20 ---
+
+	if slot16 == slot17 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #21 158-160, warpins: 1 ---
+	slot16 = slot3.isSelected
+	--- END OF BLOCK #21 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #22 161-170, warpins: 1 ---
+	slot18 = slot9
+	slot16 = slot9.TryChangePage
+	slot19 = "SelectState"
+	slot20 = 1
+
+	slot16(slot18, slot19, slot20)
+
+	slot16 = false
+	slot9.interactable = slot16
+	slot16 = false
+	slot1.interactable = slot16
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #23 171-176, warpins: 1 ---
+	slot16 = slot0.setupType
+	slot17 = slot0.model
+	slot17 = slot17.FriendSetupType
+	slot17 = slot17.RemoveChatGroupMember
+	--- END OF BLOCK #23 ---
+
+	if slot16 == slot17 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 177-181, warpins: 1 ---
+	slot18 = slot9
+	slot16 = slot9.TryChangePage
+	slot19 = "SelectState"
+	slot20 = 2
+
+	slot16(slot18, slot19, slot20)
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 182-183, warpins: 4 ---
+	return
+	--- END OF BLOCK #25 ---
 
 
 
 end
 
-slot3.renderFriendItem = slot11
+slot5.renderFriendItem = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-27, warpins: 1 ---
+	slot3 = nil
+	slot1.luaClick = slot3
+	slot5 = slot1
+	slot3 = slot1.RemoveLuaGamepadHotkey
+
+	slot3(slot5)
+
+	slot3 = function()
+		--- BLOCK #0 1-23, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_FRIEND_INTIMACY
+		slot4 = {
+			notBackToPlayerCard = true
+		}
+		slot5 = data
+		slot5 = slot5.playerInfo
+		slot4.playerInfo = slot5
+		slot5 = pg
+		slot5 = slot5.game
+		slot5 = slot5.chat
+		slot7 = slot5
+		slot5 = slot5.getFriendIntimacy
+		slot8 = data
+		slot8 = slot8.playerId
+		slot5 = slot5(slot7, slot8)
+		slot4.friendshipValue = slot5
+
+		slot0(slot2, slot3, slot4)
+
+		slot0 = false
+
+		return slot0
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot3
+	slot6 = slot1
+	slot4 = slot1.SetGamepadLongPress
+	slot7 = HotkeyConst
+	slot7 = slot7.INPUT_MAP_ACTION_KEY
+	slot7 = slot7.GamepadButtonWest
+	slot8 = nil
+	slot9 = 0
+	slot10 = slot3
+
+	slot4(slot6, slot7, slot8, slot9, slot10)
+
+	slot6 = slot1
+	slot4 = slot1.SetHotkeyActiveOnlyInCurrentItem
+	slot7 = true
+
+	slot4(slot6, slot7)
+
+	slot6 = slot1
+	slot4 = slot1.SetHotkeyConsoleBar
+	slot7 = "CONSOLE_INTIMACY"
+	slot8 = 0
+
+	slot4(slot6, slot7, slot8)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.bindFriendIntimacyEvent = slot13
+
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.isSelected
 	--- END OF BLOCK #0 ---
@@ -1106,10 +1270,32 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.checkCanSelect = slot11
+slot5.checkCanSelect = slot13
 
-slot11 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-24, warpins: 1 ---
+slot13 = function(slot0, slot1)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot0.sparkAnimationPlayerUid = slot1
+	slot2 = slot0.view
+	slot2 = slot2.setupListUList
+	slot4 = slot2
+	slot2 = slot2.RefreshList
+
+	slot2(slot4)
+
+	slot2 = nil
+	slot0.sparkAnimationPlayerUid = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot5.refreshPlayerSpark = slot13
+
+slot13 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-28, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
 	slot7 = "ObjectReference"
@@ -1122,68 +1308,82 @@ slot11 = function(slot0, slot1, slot2, slot3)
 	slot6 = slot4.GetRefValue
 	slot9 = "btnSelectUButton"
 	slot6 = slot6(slot8, slot9)
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot5
-	slot10 = slot3.groupLabel
+	slot9 = slot4
+	slot7 = slot4.GetRefValue
+	slot10 = "textNowUSDFText"
+	slot7 = slot7(slot9, slot10)
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot5
+	slot11 = slot3.groupLabel
 
-	slot7(slot9, slot10)
+	slot8(slot10, slot11)
 
-	slot9 = slot1
-	slot7 = slot1.TryChangePage
-	slot10 = "Now"
-	slot11 = slot0.originGroupId
-	slot12 = slot3.id
+	slot10 = slot1
+	slot8 = slot1.TryChangePage
+	slot11 = "Now"
+	slot12 = slot0.originGroupId
+	slot13 = slot3.id
 	--- END OF BLOCK #0 ---
 
-	if slot11 == slot12 then
+	if slot12 == slot13 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 25-26, warpins: 1 ---
-	slot11 = 1
+	--- BLOCK #1 29-30, warpins: 1 ---
+	slot12 = 1
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 27-27, warpins: 1 ---
-	slot11 = 0
+	--- BLOCK #2 31-31, warpins: 1 ---
+	slot12 = 0
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 28-33, warpins: 2 ---
-	slot7(slot9, slot10, slot11)
+	--- BLOCK #3 32-45, warpins: 2 ---
+	slot8(slot10, slot11, slot12)
 
-	slot7 = slot3.isSelected
-	slot6.isSelected = slot7
-	slot7 = slot3.isSelected
+	slot8 = ClientTextUtils
+	slot8 = slot8.setText
+	slot10 = slot7
+	slot11 = pg
+	slot11 = slot11.getGameString
+	slot13 = "CHAT_NOW_SELECT"
+	MULTRES = slot11(slot13)
+
+	slot8(slot10, MULTRES)
+
+	slot8 = slot3.isSelected
+	slot6.isSelected = slot8
+	slot8 = slot3.isSelected
 	--- END OF BLOCK #3 ---
 
-	slot7 = if slot7 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 34-35, warpins: 1 ---
-	slot7 = slot3.id
-	slot0.groupSelectedId = slot7
+	--- BLOCK #4 46-47, warpins: 1 ---
+	slot8 = slot3.id
+	slot0.groupSelectedId = slot8
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 36-41, warpins: 2 ---
-	slot7 = function()
+	--- BLOCK #5 48-53, warpins: 2 ---
+	slot8 = function()
 		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = ipairs
 		slot2 = self
@@ -1240,9 +1440,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot1.luaClick = slot7
-	slot7 = slot1.luaClick
-	slot6.luaClick = slot7
+	slot1.luaClick = slot8
+	slot8 = slot1.luaClick
+	slot6.luaClick = slot8
 
 	return
 	--- END OF BLOCK #5 ---
@@ -1251,9 +1451,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.renderGroupItem = slot11
+slot5.renderGroupItem = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.widget
@@ -1560,13 +1760,11 @@ slot11 = function(slot0)
 
 
 	--- BLOCK #18 162-166, warpins: 3 ---
-	slot12 = table
-	slot12 = slot12.insert
-	slot14 = slot0.friendDatas
-	slot15 = slot10
-
-	slot12(slot14, slot15)
-
+	slot12 = slot0.friendDatas
+	slot13 = slot0.friendDatas
+	slot13 = #slot13
+	slot13 = slot13 + 1
+	slot12[slot13] = slot10
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
@@ -1976,8 +2174,8 @@ slot11 = function(slot0)
 	slot6 = slot6.insert
 	slot8 = slot0.friendDatas
 	slot9 = {
-		isSelected = false,
-		tIndex = 0
+		tIndex = 0,
+		isSelected = false
 	}
 	slot9.playerId = slot5
 	slot10 = pg
@@ -2045,9 +2243,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.openFriendSetupPanel = slot11
+slot5.openFriendSetupPanel = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = 0
 	slot0.selectedCount = slot1
@@ -2239,9 +2437,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.setSubTitle = slot11
+slot5.setSubTitle = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = {}
 	slot3 = pairs
@@ -2373,9 +2571,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.doSearch = slot11
+slot5.doSearch = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.setupType
 	slot2 = slot0.model
@@ -2687,9 +2885,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.onConfirmButtonClick = slot11
+slot5.onConfirmButtonClick = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot2 = FriendSetupCtrl
@@ -2795,9 +2993,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.createGroup = slot11
+slot5.createGroup = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -2870,9 +3068,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.addChatGroupMember = slot11
+slot5.addChatGroupMember = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -2929,9 +3127,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.removeChatGroupMember = slot11
+slot5.removeChatGroupMember = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.friendGroup
 	slot1 = slot1.groupLabel
@@ -3174,9 +3372,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.editGroup = slot11
+slot5.editGroup = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.playerId
 	slot2 = FriendSetupCtrl
@@ -3241,9 +3439,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.changeGroup = slot11
+slot5.changeGroup = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -3300,9 +3498,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.createChatGroup = slot11
+slot5.createChatGroup = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = nil
 	slot0.groupName = slot1
@@ -3332,9 +3530,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.closePanel = slot11
+slot5.closePanel = slot13
 
-return slot3
+return slot5
 --- END OF BLOCK #0 ---
 
 

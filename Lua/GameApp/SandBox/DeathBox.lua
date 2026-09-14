@@ -45,7 +45,7 @@ end
 slot6.ctor = slot8
 
 slot8 = function(slot0, slot1, slot2, slot3, slot4)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.space
 	slot7 = slot5
@@ -56,10 +56,8 @@ slot8 = function(slot0, slot1, slot2, slot3, slot4)
 	slot9[2] = slot2
 	slot9[3] = slot3
 	slot9[4] = slot4
-	slot10 = 5
-	slot11 = 3
 
-	slot5(slot7, slot8, slot9, slot10, slot11)
+	slot5(slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #0 ---

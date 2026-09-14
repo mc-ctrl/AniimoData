@@ -33,95 +33,82 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	slot5 = slot5.Failure
 	--- END OF BLOCK #0 ---
 
-	if slot1 ~= slot5 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 10-14, warpins: 1 ---
-	slot5 = Const
-	slot5 = slot5.ROB_EGG_RESULT
-	slot5 = slot5.BecameEggFailure
-	--- END OF BLOCK #1 ---
-
 	if slot1 == slot5 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #2 15-16, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	slot5 = if not slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 17-17, warpins: 1 ---
-	slot5 = slot0.killed_reason
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 18-20, warpins: 2 ---
-	slot0.killed_reason = slot5
-	--- END OF BLOCK #4 ---
-
-	slot5 = if not slot4 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 21-21, warpins: 1 ---
-	slot5 = slot0.killed_name
-	--- END OF BLOCK #5 ---
+	--- BLOCK #1 10-11, warpins: 1 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 22-23, warpins: 2 ---
-	slot0.killed_name = slot5
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #7 24-25, warpins: 1 ---
-	--- END OF BLOCK #7 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #8
+	slot5 = if not slot3 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #8 26-26, warpins: 1 ---
-	slot2 = {}
-	--- END OF BLOCK #8 ---
+	--- BLOCK #2 12-12, warpins: 1 ---
+	slot5 = slot0.killed_reason
+	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #9 27-30, warpins: 2 ---
-	slot5 = pairs
-	slot7 = slot2
-	slot5, slot6, slot7 = slot5(slot7)
-	--- END OF BLOCK #9 ---
+	--- BLOCK #3 13-15, warpins: 2 ---
+	slot0.killed_reason = slot5
+	--- END OF BLOCK #3 ---
+
+	slot5 = if not slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-16, warpins: 1 ---
+	slot5 = slot0.killed_name
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 17-18, warpins: 2 ---
+	slot0.killed_name = slot5
+	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #11
 
 
-	--- BLOCK #10 31-36, warpins: 1 ---
+	--- BLOCK #6 19-20, warpins: 1 ---
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 21-21, warpins: 1 ---
+	slot2 = {}
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 22-25, warpins: 2 ---
+	slot5 = pairs
+	slot7 = slot2
+	slot5, slot6, slot7 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 26-31, warpins: 1 ---
 	slot10 = slot0.reward
 	slot11 = ItemUtils
 	slot11 = slot11.getItemCountFromNumInfo
@@ -129,22 +116,22 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	slot11 = slot11(slot13)
 	slot10[slot8] = slot11
 
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 32-33, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 37-38, warpins: 2 ---
-	--- END OF BLOCK #11 ---
-
 	for slot8, slot9 in slot5, slot6, slot7
-	LOOP BLOCK #10
-	GO OUT TO BLOCK #12
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #12 39-39, warpins: 2 ---
+	--- BLOCK #11 34-34, warpins: 2 ---
 	return
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 
 

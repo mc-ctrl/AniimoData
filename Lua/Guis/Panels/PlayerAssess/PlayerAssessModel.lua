@@ -30,7 +30,7 @@ slot6 = function(slot0, slot1)
 	slot3 = slot3()
 	slot2.star = slot3
 	slot3 = LuaUIUtils
-	slot3 = slot3.getStarTitleName
+	slot3 = slot3.getStarTitleNameForIcon
 	slot5 = slot2.star
 	slot3 = slot3(slot5)
 	slot2.starName = slot3
@@ -73,7 +73,7 @@ slot6 = function(slot0, slot1)
 	--- BLOCK #3 26-55, warpins: 2 ---
 	slot2.assessStar = slot3
 	slot3 = LuaUIUtils
-	slot3 = slot3.getStarTitleName
+	slot3 = slot3.getStarTitleNameForIcon
 	slot5 = slot2.nextStar
 	slot3 = slot3(slot5)
 	slot2.nextStarName = slot3

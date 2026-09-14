@@ -890,49 +890,7 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	GO OUT TO BLOCK #84
 
 
-	--- BLOCK #84 287-293, warpins: 1 ---
-	slot15 = print
-	slot17 = "===PhotoAction finalWeights start=="
-
-	slot15(slot17)
-
-	slot15 = ipairs
-	slot17 = slot12
-	slot15, slot16, slot17 = slot15(slot17)
-	--- END OF BLOCK #84 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #86
-
-
-	--- BLOCK #85 294-300, warpins: 1 ---
-	slot20 = print
-	slot22 = slot4
-	slot23 = PhotoPetAction
-	slot23 = slot23.ResultKey
-	slot23 = slot23[slot18]
-	slot24 = slot19
-
-	slot20(slot22, slot23, slot24)
-
-	--- END OF BLOCK #85 ---
-
-	FLOW; TARGET BLOCK #86
-
-
-	--- BLOCK #86 301-302, warpins: 2 ---
-	--- END OF BLOCK #86 ---
-
-	for slot18, slot19 in slot15, slot16, slot17
-	LOOP BLOCK #85
-	GO OUT TO BLOCK #87
-
-
-	--- BLOCK #87 303-313, warpins: 1 ---
-	slot15 = print
-	slot17 = "===PhotoAction finalWeights end=="
-
-	slot15(slot17)
-
+	--- BLOCK #84 287-294, warpins: 1 ---
 	slot15 = math
 	slot15 = slot15.random
 	slot15 = slot15()
@@ -940,23 +898,23 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 	slot17 = ipairs
 	slot19 = slot12
 	slot17, slot18, slot19 = slot17(slot19)
-	--- END OF BLOCK #87 ---
+	--- END OF BLOCK #84 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #91
+	UNCONDITIONAL JUMP; TARGET BLOCK #88
 
 
-	--- BLOCK #88 314-316, warpins: 1 ---
+	--- BLOCK #85 295-297, warpins: 1 ---
 	slot22 = slot16 + slot21
-	--- END OF BLOCK #88 ---
+	--- END OF BLOCK #85 ---
 
 	if slot15 < slot22 then
-	JUMP TO BLOCK #89
+	JUMP TO BLOCK #86
 	else
-	JUMP TO BLOCK #90
+	JUMP TO BLOCK #87
 	end
 
 
-	--- BLOCK #89 317-321, warpins: 1 ---
+	--- BLOCK #86 298-302, warpins: 1 ---
 	slot22 = slot20
 	slot23 = PhotoPetAction
 	slot23 = slot23.ResultKey
@@ -964,30 +922,30 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4)
 
 	return slot22, slot23
 
-	--- END OF BLOCK #89 ---
+	--- END OF BLOCK #86 ---
 
-	FLOW; TARGET BLOCK #90
+	FLOW; TARGET BLOCK #87
 
 
-	--- BLOCK #90 322-322, warpins: 2 ---
+	--- BLOCK #87 303-303, warpins: 2 ---
 	slot16 = slot16 + slot21
 
-	--- END OF BLOCK #90 ---
+	--- END OF BLOCK #87 ---
 
-	FLOW; TARGET BLOCK #91
+	FLOW; TARGET BLOCK #88
 
 
-	--- BLOCK #91 323-324, warpins: 2 ---
-	--- END OF BLOCK #91 ---
+	--- BLOCK #88 304-305, warpins: 2 ---
+	--- END OF BLOCK #88 ---
 
 	for slot20, slot21 in slot17, slot18, slot19
-	LOOP BLOCK #88
-	GO OUT TO BLOCK #92
+	LOOP BLOCK #85
+	GO OUT TO BLOCK #89
 
 
-	--- BLOCK #92 325-325, warpins: 1 ---
+	--- BLOCK #89 306-306, warpins: 1 ---
 	return
-	--- END OF BLOCK #92 ---
+	--- END OF BLOCK #89 ---
 
 
 

@@ -553,30 +553,46 @@ slot15 = function(slot0)
 			slot4.num = slot5
 			slot3[slot0] = slot4
 
-			slot3 = function()
+			slot3 = function(slot0)
 				--- BLOCK #0 1-6, warpins: 1 ---
-				slot0 = state
-				slot1 = self
-				slot1 = slot1.REWARD_STATE
-				slot1 = slot1.CANGET
+				slot1 = state
+				slot2 = self
+				slot2 = slot2.REWARD_STATE
+				slot2 = slot2.CANGET
 				--- END OF BLOCK #0 ---
 
-				if slot0 == slot1 then
+				if slot1 == slot2 then
 				JUMP TO BLOCK #1
 				else
-				JUMP TO BLOCK #2
+				JUMP TO BLOCK #4
 				end
 
 
-				--- BLOCK #1 7-15, warpins: 1 ---
-				slot0 = self
-				slot0 = slot0.model
-				slot2 = slot0
-				slot0 = slot0.getHomeCarLevelReward
-				slot3 = data
-				slot3 = slot3.carLevel
+				--- BLOCK #1 7-8, warpins: 1 ---
+				--- END OF BLOCK #1 ---
 
-				slot4 = function(slot0)
+				slot0 = if slot0 then
+				JUMP TO BLOCK #2
+				else
+				JUMP TO BLOCK #3
+				end
+
+
+				--- BLOCK #2 9-9, warpins: 1 ---
+				--- END OF BLOCK #2 ---
+
+				UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+				--- BLOCK #3 10-18, warpins: 1 ---
+				slot1 = self
+				slot1 = slot1.model
+				slot3 = slot1
+				slot1 = slot1.getHomeCarLevelReward
+				slot4 = data
+				slot4 = slot4.carLevel
+
+				slot5 = function(slot0)
 					--- BLOCK #0 1-7, warpins: 1 ---
 					slot1 = self
 					slot3 = slot1
@@ -623,41 +639,51 @@ slot15 = function(slot0)
 
 				end
 
-				slot0(slot2, slot3, slot4)
+				slot1(slot3, slot4, slot5)
 
-				--- END OF BLOCK #1 ---
-
-				UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-				--- BLOCK #2 16-32, warpins: 1 ---
-				slot0 = pg
-				slot0 = slot0.global
-				slot0 = slot0.ui
-				slot2 = slot0
-				slot0 = slot0.open
-				slot3 = UIConst
-				slot3 = slot3.UI_ID_COMMON_ITEM_TIP
-				slot4 = {}
-				slot5 = itemData
-				slot5 = slot5.id
-				slot4.id = slot5
-				slot5 = itemData
-				slot5 = slot5.num
-				slot4.num = slot5
-				slot5 = itemButton
-				slot4.targetRect = slot5
-
-				slot0(slot2, slot3, slot4)
-
-				--- END OF BLOCK #2 ---
-
-				FLOW; TARGET BLOCK #3
-
-
-				--- BLOCK #3 33-33, warpins: 2 ---
-				return
 				--- END OF BLOCK #3 ---
+
+				UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+				--- BLOCK #4 19-35, warpins: 1 ---
+				slot1 = pg
+				slot1 = slot1.global
+				slot1 = slot1.ui
+				slot3 = slot1
+				slot1 = slot1.open
+				slot4 = UIConst
+				slot4 = slot4.UI_ID_COMMON_ITEM_TIP
+				slot5 = {
+					padding = 8,
+					autoHor = true
+				}
+				slot6 = itemData
+				slot6 = slot6.id
+				slot5.id = slot6
+				slot6 = itemData
+				slot6 = slot6.num
+				slot5.num = slot6
+				slot6 = itemButton
+				slot5.targetRect = slot6
+
+				slot1(slot3, slot4, slot5)
+
+				--- END OF BLOCK #4 ---
+
+				FLOW; TARGET BLOCK #5
+
+
+				--- BLOCK #5 36-36, warpins: 2 ---
+				return
+				--- END OF BLOCK #5 ---
+
+				FLOW; TARGET BLOCK #6
+
+
+				--- BLOCK #6 37-37, warpins: 2 ---
+				return
+				--- END OF BLOCK #6 ---
 
 
 

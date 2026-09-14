@@ -1,4 +1,4 @@
---- BLOCK #0 1-75, warpins: 1 ---
+--- BLOCK #0 1-77, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -172,29 +172,82 @@ end
 slot18.checkEnableRendererBatch = slot20
 
 slot20 = function(slot0)
-	--- BLOCK #0 1-20, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = ClientHomeFacility
+	slot1 = slot1.super
+	slot1 = slot1.destroy
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = slot0._destroyShadowPosition
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot1 = slot0._destroyShadowBounds
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-23, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.game
+	slot1 = slot1.home
+	slot3 = slot1
+	slot1 = slot1.refreshOrnamentShadow
+	slot4 = slot0._destroyShadowPosition
+	slot5 = slot0._destroyShadowBounds
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = nil
+	slot0._destroyShadowPosition = slot1
+	slot1 = nil
+	slot0._destroyShadowBounds = slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot18.destroy = slot20
+
+slot20 = function(slot0)
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBoundSize
 	slot1 = slot1(slot3)
-	slot4 = slot0
-	slot2 = slot0.getPosition
-	slot2 = slot2(slot4)
-	slot3 = ClientHomeFacility
-	slot3 = slot3.super
-	slot3 = slot3.destroy
-	slot5 = slot0
+	slot0._destroyShadowBounds = slot1
+	slot3 = slot0
+	slot1 = slot0.getPositionClone
+	slot1 = slot1(slot3)
+	slot0._destroyShadowPosition = slot1
+	slot1 = ClientHomeFacility
+	slot1 = slot1.super
+	slot1 = slot1.preDestroy
+	slot3 = slot0
 
-	slot3(slot5)
-
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.home
-	slot5 = slot3
-	slot3 = slot3.refreshOrnamentShadow
-	slot6 = slot2
-	slot7 = slot1
-
-	slot3(slot5, slot6, slot7)
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -203,7 +256,7 @@ slot20 = function(slot0)
 
 end
 
-slot18.destroy = slot20
+slot18.preDestroy = slot20
 
 return slot18
 --- END OF BLOCK #0 ---

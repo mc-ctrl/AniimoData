@@ -1,4 +1,4 @@
---- BLOCK #0 1-23, warpins: 1 ---
+--- BLOCK #0 1-28, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -8,12 +8,15 @@ slot1 = slot1(slot3)
 slot2 = require
 slot4 = "GameApp.Qte.QteClip"
 slot2 = slot2(slot4)
-slot3 = slot0.LightClass
-slot5 = "ButtonQteClip"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
+slot3 = require
+slot5 = "Data.element_prop_data"
+slot3 = slot3(slot5)
+slot4 = slot0.LightClass
+slot6 = "ButtonQteClip"
+slot7 = slot2
+slot4 = slot4(slot6, slot7)
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = ButtonQteClip
 	slot1 = slot1.super
@@ -34,56 +37,64 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #1 11-47, warpins: 1 ---
+	--- BLOCK #1 11-53, warpins: 1 ---
 	slot1 = slot0.gameObject
+	slot1 = slot1.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
-	slot4 = "UComponent"
+	slot4 = "ObjectReference"
 	slot1 = slot1(slot3, slot4)
-	slot0.uComponent = slot1
-	slot1 = slot0.uComponent
-	slot3 = slot1
-	slot1 = slot1.Find
-	slot4 = "BtnQTEClick"
-	slot1 = slot1(slot3, slot4)
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "UButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.qteBtn = slot1
-	slot1 = slot0.gameObject
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "AnimationPlayExtend"
-	slot1 = slot1(slot3, slot4)
-	slot0.animPlayer = slot1
-	slot1 = slot0.qteBtn
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "KeyBindingPro"
-	slot1 = slot1(slot3, slot4)
-	slot0.keyBind = slot1
-	slot3 = slot0
-	slot1 = slot0.initButtonHotKey
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rootComponent"
+	slot2 = slot2(slot4, slot5)
+	slot0.uComponent = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnQTEClickUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.qteBtn = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "uIPrefabQteBtnAnimationPlayExtend"
+	slot2 = slot2(slot4, slot5)
+	slot0.animPlayer = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "iconSkillUImage"
+	slot2 = slot2(slot4, slot5)
+	slot0.icon = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnQTEClickKeyBindingPro"
+	slot2 = slot2(slot4, slot5)
+	slot0.keyBind = slot2
+	slot4 = slot0
+	slot2 = slot0.initView
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot3 = slot0
-	slot1 = slot0.refreshView
+	slot4 = slot0
+	slot2 = slot0.initButtonHotKey
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot3 = slot0
-	slot1 = slot0.initPrefabPosition
+	slot4 = slot0
+	slot2 = slot0.refreshView
 
-	slot1(slot3)
+	slot2(slot4)
+
+	slot4 = slot0
+	slot2 = slot0.initPrefabPosition
+
+	slot2(slot4)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 48-48, warpins: 2 ---
+	--- BLOCK #2 54-54, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -91,9 +102,125 @@ slot4 = function(slot0)
 
 end
 
-slot3.onPrefabLoaded = slot4
+slot4.onPrefabLoaded = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.icon
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-8, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getQteIcon
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 9-10, warpins: 1 ---
+	slot2 = slot0.icon
+	slot2.url = slot1
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-15, warpins: 3 ---
+	slot3 = slot0
+	slot1 = slot0.getQteElementType
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 16-19, warpins: 1 ---
+	slot2 = ElementPropData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 20-24, warpins: 1 ---
+	slot2 = ElementPropData
+	slot2 = slot2[slot1]
+	slot2 = slot2.name
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-25, warpins: 2 ---
+	slot2 = "null"
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 26-32, warpins: 2 ---
+	slot3 = slot0.uComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "type"
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 33-38, warpins: 1 ---
+	slot2 = slot0.uComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "type"
+	slot6 = "null"
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 39-39, warpins: 2 ---
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot4.initView = slot5
+
+slot5 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.qteBtn
 	--- END OF BLOCK #0 ---
@@ -164,9 +291,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.initButtonHotKey = slot4
+slot4.initButtonHotKey = slot5
 
-slot4 = function(slot0)
+slot5 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.uComponent
 
@@ -387,7 +514,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #15 103-111, warpins: 1 ---
+	--- BLOCK #15 103-110, warpins: 1 ---
 	slot1 = "timeout"
 	slot5 = slot0.uComponent
 	slot7 = slot5
@@ -397,13 +524,12 @@ slot4 = function(slot0)
 
 	slot5(slot7, slot8, slot9)
 
-	slot4 = true
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #16 112-117, warpins: 1 ---
+	--- BLOCK #16 111-116, warpins: 1 ---
 	slot5 = slot0.phase
 	slot6 = QteDef
 	slot6 = slot6.CLIP_PHASE
@@ -417,7 +543,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #17 118-126, warpins: 1 ---
+	--- BLOCK #17 117-124, warpins: 1 ---
 	slot1 = "fail"
 	slot5 = slot0.uComponent
 	slot7 = slot5
@@ -427,13 +553,12 @@ slot4 = function(slot0)
 
 	slot5(slot7, slot8, slot9)
 
-	slot4 = true
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #18 127-132, warpins: 1 ---
+	--- BLOCK #18 125-130, warpins: 1 ---
 	slot5 = slot0.phase
 	slot6 = QteDef
 	slot6 = slot6.CLIP_PHASE
@@ -447,7 +572,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #19 133-141, warpins: 1 ---
+	--- BLOCK #19 131-138, warpins: 1 ---
 	slot1 = "good"
 	slot5 = slot0.uComponent
 	slot7 = slot5
@@ -457,13 +582,12 @@ slot4 = function(slot0)
 
 	slot5(slot7, slot8, slot9)
 
-	slot4 = true
 	--- END OF BLOCK #19 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #20 142-147, warpins: 1 ---
+	--- BLOCK #20 139-144, warpins: 1 ---
 	slot5 = slot0.phase
 	slot6 = QteDef
 	slot6 = slot6.CLIP_PHASE
@@ -477,7 +601,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #21 148-156, warpins: 1 ---
+	--- BLOCK #21 145-152, warpins: 1 ---
 	slot1 = "perfect"
 	slot5 = slot0.uComponent
 	slot7 = slot5
@@ -487,13 +611,12 @@ slot4 = function(slot0)
 
 	slot5(slot7, slot8, slot9)
 
-	slot4 = true
 	--- END OF BLOCK #21 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #24
 
 
-	--- BLOCK #22 157-162, warpins: 1 ---
+	--- BLOCK #22 153-158, warpins: 1 ---
 	slot5 = slot0.phase
 	slot6 = QteDef
 	slot6 = slot6.CLIP_PHASE
@@ -507,7 +630,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #23 163-169, warpins: 1 ---
+	--- BLOCK #23 159-165, warpins: 1 ---
 	slot1 = "none"
 	slot5 = slot0.uComponent
 	slot7 = slot5
@@ -522,7 +645,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #24
 
 
-	--- BLOCK #24 170-171, warpins: 11 ---
+	--- BLOCK #24 166-167, warpins: 11 ---
 	--- END OF BLOCK #24 ---
 
 	slot3 = if slot3 then
@@ -532,7 +655,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #25 172-174, warpins: 1 ---
+	--- BLOCK #25 168-170, warpins: 1 ---
 	slot5 = slot0.isStart
 	--- END OF BLOCK #25 ---
 
@@ -543,7 +666,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #26 175-180, warpins: 1 ---
+	--- BLOCK #26 171-176, warpins: 1 ---
 	slot5 = true
 	slot0.isStart = slot5
 	slot5 = slot0.operateTime
@@ -557,7 +680,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #27 181-184, warpins: 1 ---
+	--- BLOCK #27 177-180, warpins: 1 ---
 	slot5 = slot0.clipData
 	slot5 = slot5.animCut
 	--- END OF BLOCK #27 ---
@@ -569,14 +692,14 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #28 185-185, warpins: 1 ---
+	--- BLOCK #28 181-181, warpins: 1 ---
 	slot5 = 1
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 186-188, warpins: 2 ---
+	--- BLOCK #29 182-184, warpins: 2 ---
 	slot6 = 2 * slot5
 	slot7 = slot0.operateTime
 	slot2 = slot6 / slot7
@@ -585,7 +708,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #30
 
 
-	--- BLOCK #30 189-191, warpins: 2 ---
+	--- BLOCK #30 185-187, warpins: 2 ---
 	slot5 = slot0.animPlayer
 	--- END OF BLOCK #30 ---
 
@@ -596,7 +719,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #31 192-198, warpins: 1 ---
+	--- BLOCK #31 188-194, warpins: 1 ---
 	slot5 = slot0.animPlayer
 	slot7 = slot5
 	slot5 = slot5.PlayAnimExtend
@@ -611,7 +734,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 199-200, warpins: 4 ---
+	--- BLOCK #32 195-196, warpins: 4 ---
 	--- END OF BLOCK #32 ---
 
 	slot4 = if slot4 then
@@ -621,7 +744,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #33 201-204, warpins: 1 ---
+	--- BLOCK #33 197-200, warpins: 1 ---
 	slot5 = slot0.unloadTime
 	slot6 = 0
 	--- END OF BLOCK #33 ---
@@ -633,7 +756,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #34 205-206, warpins: 1 ---
+	--- BLOCK #34 201-202, warpins: 1 ---
 	slot5 = slot0.unloadTime
 	slot2 = 0.5 / slot5
 	--- END OF BLOCK #34 ---
@@ -641,7 +764,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 207-209, warpins: 2 ---
+	--- BLOCK #35 203-205, warpins: 2 ---
 	slot5 = slot0.animPlayer
 	--- END OF BLOCK #35 ---
 
@@ -652,7 +775,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #36 210-216, warpins: 1 ---
+	--- BLOCK #36 206-212, warpins: 1 ---
 	slot5 = slot0.animPlayer
 	slot7 = slot5
 	slot5 = slot5.PlayAnimExtend
@@ -667,7 +790,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 217-218, warpins: 3 ---
+	--- BLOCK #37 213-214, warpins: 3 ---
 	--- END OF BLOCK #37 ---
 
 	slot3 = if slot3 then
@@ -677,7 +800,7 @@ slot4 = function(slot0)
 	end
 
 
-	--- BLOCK #38 219-225, warpins: 1 ---
+	--- BLOCK #38 215-221, warpins: 1 ---
 	slot5 = slot0.uComponent
 	slot6 = CS
 	slot6 = slot6.XGUI
@@ -689,7 +812,7 @@ slot4 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #40
 
 
-	--- BLOCK #39 226-231, warpins: 1 ---
+	--- BLOCK #39 222-227, warpins: 1 ---
 	slot5 = slot0.uComponent
 	slot6 = CS
 	slot6 = slot6.XGUI
@@ -702,7 +825,7 @@ slot4 = function(slot0)
 	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #40 232-232, warpins: 2 ---
+	--- BLOCK #40 228-228, warpins: 2 ---
 	return
 	--- END OF BLOCK #40 ---
 
@@ -710,9 +833,9 @@ slot4 = function(slot0)
 
 end
 
-slot3.refreshView = slot4
+slot4.refreshView = slot5
 
-slot4 = function(slot0, slot1, slot2)
+slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -744,9 +867,9 @@ slot4 = function(slot0, slot1, slot2)
 
 end
 
-slot3.onPhaseChange = slot4
+slot4.onPhaseChange = slot5
 
-return slot3
+return slot4
 --- END OF BLOCK #0 ---
 
 

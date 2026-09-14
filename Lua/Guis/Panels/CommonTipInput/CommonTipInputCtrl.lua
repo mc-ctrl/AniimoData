@@ -832,7 +832,38 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 148-156, warpins: 3 ---
+	--- BLOCK #19 148-153, warpins: 3 ---
+	slot6 = string
+	slot6 = slot6.isNilOrEmpty
+	slot8 = slot4.inputTitle
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #19 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #20 154-162, warpins: 1 ---
+	slot6 = ClientTextUtils
+	slot6 = slot6.setText
+	slot8 = slot0.view
+	slot8 = slot8.textUSDFText
+	slot9 = pg
+	slot9 = slot9.getGameString
+	slot11 = slot4.inputTitle
+	MULTRES = slot9(slot11)
+
+	slot6(slot8, MULTRES)
+
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 163-171, warpins: 2 ---
 	slot6 = slot0.view
 	slot6 = slot6.textUSDFText
 	slot8 = slot6
@@ -843,7 +874,7 @@ slot7 = function(slot0, slot1, slot2, slot3, slot4)
 	slot6(slot8, slot9)
 
 	return
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #21 ---
 
 
 

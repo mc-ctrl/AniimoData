@@ -3,12 +3,6 @@ slot0 = require
 slot2 = "Core.Framework.AccessControl"
 slot0 = slot0(slot2)
 slot1 = {
-	SYNC_MODE_FRAME = 3,
-	ID_SYNC_START = 1,
-	ID_INIT = 0,
-	ID_LAZY_INIT = -1,
-	ID_NOT_INIT = -2,
-	ID_INVLIAD = -3,
 	SYNC_MODE_COMBINE = 2,
 	SYNC_MODE_BATCH = 1,
 	CALLBACK_RAISE = 2,
@@ -49,7 +43,13 @@ slot1 = {
 	PT_STRING = 3,
 	PT_DOUBLE = 2,
 	PT_INT = 1,
-	PT_START = 0
+	PT_START = 0,
+	ID_SYNC_START = 1,
+	ID_INIT = 0,
+	ID_LAZY_INIT = -1,
+	ID_NOT_INIT = -2,
+	ID_INVLIAD = -3,
+	SYNC_MODE_FRAME = 3
 }
 slot2 = {
 	"BatchSync",

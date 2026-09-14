@@ -168,7 +168,7 @@ slot20 = {}
 FLOW; TARGET BLOCK #9
 
 
---- BLOCK #9 85-163, warpins: 2 ---
+--- BLOCK #9 85-166, warpins: 2 ---
 slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = math_tan
@@ -2730,12 +2730,17 @@ end
 slot17.pointToLineDistanceSqr = slot22
 
 slot22 = function(slot0, slot1)
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = nil
 	slot3 = -1
 	slot4 = math_huge
 	slot5 = #slot1
 	slot5 = slot5 / 2
+	slot6 = Vector3
+	slot6 = slot6.enableCreateFromCache
+
+	slot6()
+
 	slot6 = Vector3
 	slot6 = slot6.New
 	slot6 = slot6()
@@ -2750,7 +2755,7 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 16-43, warpins: 2 ---
+	--- BLOCK #1 19-46, warpins: 2 ---
 	slot12 = slot11 * 2
 	slot12 = slot12 - 1
 	slot15 = slot6
@@ -2790,7 +2795,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 44-45, warpins: 1 ---
+	--- BLOCK #2 47-48, warpins: 1 ---
 	slot4 = slot14
 	slot3 = slot11
 	--- END OF BLOCK #2 ---
@@ -2798,14 +2803,14 @@ slot22 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 46-46, warpins: 2 ---
+	--- BLOCK #3 49-49, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	for slot11=slot8, slot9, slot10
 	LOOP BLOCK #1
 	GO OUT TO BLOCK #4
 
-	--- BLOCK #4 47-48, warpins: 1 ---
+	--- BLOCK #4 50-51, warpins: 1 ---
 	--- END OF BLOCK #4 ---
 
 	if slot3 ~= -1 then
@@ -2815,7 +2820,7 @@ slot22 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 49-108, warpins: 1 ---
+	--- BLOCK #5 52-111, warpins: 1 ---
 	slot8 = slot3 * 2
 	slot8 = slot8 - 1
 	slot11 = slot6
@@ -2880,13 +2885,18 @@ slot22 = function(slot0, slot1)
 	slot22 = slot17
 	slot18 = slot18(slot20, slot21, slot22)
 	slot2 = slot18
-
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 109-109, warpins: 2 ---
+	--- BLOCK #6 112-116, warpins: 2 ---
+	slot8 = Vector3
+	slot8 = slot8.disableCreateFromCache
+	slot10 = slot2
+
+	slot8(slot10)
+
 	return slot2
 	--- END OF BLOCK #6 ---
 
@@ -2957,6 +2967,73 @@ slot22 = function(slot0, slot1, slot2)
 end
 
 slot17.saveDiv = slot22
+slot22 = {
+	[0] = 0,
+	2,
+	4,
+	8,
+	16,
+	32,
+	64,
+	128,
+	256,
+	512,
+	1024,
+	2048,
+	4096,
+	8192,
+	16384,
+	32768,
+	65536,
+	131072,
+	262144,
+	524288,
+	1048576,
+	2097152,
+	4194304,
+	8388608,
+	16777216,
+	33554432,
+	67108864,
+	134217728,
+	268435456,
+	536870912,
+	1073741824,
+	2147483648.0,
+	4294967296.0
+}
+
+slot23 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = fast2ValueMap
+	slot1 = slot1[slot0]
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot1 = 2
+	slot1 = slot1^slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot17.fast2Value = slot23
 
 return slot17
 --- END OF BLOCK #9 ---

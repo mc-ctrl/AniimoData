@@ -559,7 +559,7 @@ slot19 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-51, warpins: 2 ---
+	--- BLOCK #2 5-63, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.clearTimer
 
@@ -609,6 +609,8 @@ slot19 = function(slot0)
 	slot1 = nil
 	slot0.__owner = slot1
 	slot1 = nil
+	slot0.__agent = slot1
+	slot1 = nil
 	slot0.__actorId = slot1
 	slot1 = nil
 	slot0.__behaviourId = slot1
@@ -616,6 +618,16 @@ slot19 = function(slot0)
 	slot0.__graphId = slot1
 	slot1 = nil
 	slot0.__graph = slot1
+	slot1 = nil
+	slot0.__finishFunc = slot1
+	slot1 = nil
+	slot0.__finishFuncObj = slot1
+	slot1 = nil
+	slot0.__activeCallback = slot1
+	slot1 = nil
+	slot0.__activeFailCallback = slot1
+	slot1 = nil
+	slot0.__inactiveCallback = slot1
 	slot1 = false
 	slot0.__isAwake = slot1
 	slot1 = CTUtils

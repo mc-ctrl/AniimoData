@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-121, warpins: 1 ---
+	--- BLOCK #0 1-133, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -132,6 +132,18 @@ slot3 = function(slot0)
 	slot4 = "btnTipsUSDFText"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnTipsUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "uIPbManualEvolvePetShowNewAnimation"
+	slot1 = slot1(slot3, slot4)
+	slot0.uIPbManualEvolvePetShowNewAnimation = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "keyListConsoleBar"
+	slot1 = slot1(slot3, slot4)
+	slot0.keyListConsoleBar = slot1
 
 	return
 	--- END OF BLOCK #0 ---

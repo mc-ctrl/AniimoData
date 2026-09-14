@@ -13,9 +13,9 @@ slot5 = "TimerSBOpNode"
 slot6 = slot1
 slot3 = slot3(slot5, slot6)
 slot4 = {
-	Reset = 2,
 	Stop = 1,
-	Play = 0
+	Play = 0,
+	Reset = 2
 }
 
 slot5 = function(slot0, slot1, slot2, slot3)

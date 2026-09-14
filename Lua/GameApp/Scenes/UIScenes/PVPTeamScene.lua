@@ -1,40 +1,46 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-66, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Utils.ClientUtils"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.UIScene.UISceneBase"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "PVPTeamScene"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Utils.LuaUIUtils"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "GameApp.UIScene.UISceneBase"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "PVPTeamScene"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Const.UIConst"
+slot6 = "Utils.LuaUIUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "GameApp.Camera.CameraMode.FixedCameraMode"
+slot7 = "Const.UIConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "GameApp.Camera.CameraConst"
+slot8 = "GameApp.Camera.CameraMode.FixedCameraMode"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.ClientTextUtils"
+slot9 = "GameApp.Camera.CameraConst"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.ClientVirtualEntityUtils"
+slot10 = "Utils.ClientTextUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.ClientConst"
+slot11 = "Utils.ClientVirtualEntityUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.AddressDataConst"
+slot12 = "GameApp.PetTransmog.PetTransmogUtils"
 slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Const.ClientConst"
+slot11 = slot11(slot13)
+slot12 = require
+slot14 = "Const.AddressDataConst"
+slot12 = slot12(slot14)
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	slot0.instArray = slot1
@@ -46,9 +52,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onCtor = slot11
+slot3.onCtor = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-161, warpins: 1 ---
 	slot1 = slot0.addIns
 	slot2 = AddressDataConst
@@ -326,9 +332,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onStart = slot11
+slot3.onStart = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = slot0.camera
 	slot1 = slot1.gameObject
@@ -363,9 +369,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onInitCamera = slot11
+slot3.onInitCamera = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -385,9 +391,10 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 15-17, warpins: 1 ---
+	--- BLOCK #1 15-18, warpins: 1 ---
+	slot9 = ClientUtils
+	slot9 = slot9.safeDestroy
 	slot11 = slot8
-	slot9 = slot8.destroy
 
 	slot9(slot11)
 
@@ -396,7 +403,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 18-19, warpins: 2 ---
+	--- BLOCK #2 19-20, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -404,7 +411,7 @@ slot11 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 20-27, warpins: 1 ---
+	--- BLOCK #3 21-28, warpins: 1 ---
 	slot4 = table
 	slot4 = slot4.clear
 	slot6 = slot0.instArray
@@ -419,7 +426,7 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #4 28-31, warpins: 1 ---
+	--- BLOCK #4 29-32, warpins: 1 ---
 	slot9 = nil
 	slot10 = slot8.empty
 	--- END OF BLOCK #4 ---
@@ -431,7 +438,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #5 32-46, warpins: 1 ---
+	--- BLOCK #5 33-41, warpins: 1 ---
 	slot10 = ClientVirtualEntityUtils
 	slot10 = slot10.createPetVirtualEntityWithDic
 	slot12 = slot8.templateId
@@ -439,14 +446,6 @@ slot11 = function(slot0)
 	slot14 = slot8.label
 	slot10 = slot10(slot12, slot13, slot14)
 	slot9 = slot10
-	slot12 = slot9
-	slot10 = slot9.setModelLayer
-	slot13 = ClientConst
-	slot13 = slot13.LayerDefine
-	slot13 = slot13.LAYER_UI_SCENE
-
-	slot10(slot12, slot13)
-
 	--- END OF BLOCK #5 ---
 
 	slot9 = if slot9 then
@@ -456,11 +455,25 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #6 47-56, warpins: 1 ---
+	--- BLOCK #6 42-61, warpins: 1 ---
+	slot10 = PetTransmogUtils
+	slot10 = slot10.applyAppliedTransmog
+	slot12 = slot9
+	slot13 = slot8.petId
+
+	slot10(slot12, slot13)
+
+	slot12 = slot9
+	slot10 = slot9.setModelLayer
+	slot13 = ClientConst
+	slot13 = slot13.LayerDefine
+	slot13 = slot13.LAYER_UI_SCENE
+
+	slot10(slot12, slot13)
+
 	slot10 = slot9.eModel
-	slot10 = slot10.transform
 	slot12 = slot10
-	slot10 = slot10.SetParent
+	slot10 = slot10.SetTransformParent
 	slot13 = slot0.modelPosArray
 	slot13 = slot13[slot7]
 	slot14 = false
@@ -474,7 +487,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 57-58, warpins: 3 ---
+	--- BLOCK #7 62-63, warpins: 3 ---
 	--- END OF BLOCK #7 ---
 
 	if slot9 ~= nil then
@@ -484,7 +497,7 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #8 59-72, warpins: 1 ---
+	--- BLOCK #8 64-77, warpins: 1 ---
 	slot3 = slot3 + 1
 	slot10 = slot0.uiPosArray
 	slot10 = slot10[slot7]
@@ -507,7 +520,7 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #9 73-79, warpins: 1 ---
+	--- BLOCK #9 78-84, warpins: 1 ---
 	slot10 = slot0.uiPosArray
 	slot10 = slot10[slot7]
 	slot12 = slot10
@@ -522,7 +535,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 80-81, warpins: 3 ---
+	--- BLOCK #10 85-86, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -530,7 +543,7 @@ slot11 = function(slot0)
 	GO OUT TO BLOCK #11
 
 
-	--- BLOCK #11 82-88, warpins: 1 ---
+	--- BLOCK #11 87-93, warpins: 1 ---
 	slot4 = ClientTextUtils
 	slot4 = slot4.setText
 	slot6 = slot0.teamNum
@@ -545,21 +558,21 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #12 89-90, warpins: 1 ---
+	--- BLOCK #12 94-95, warpins: 1 ---
 	slot9 = "<color=#A64141>%d</color>/%d"
 	--- END OF BLOCK #12 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #13 91-91, warpins: 1 ---
+	--- BLOCK #13 96-96, warpins: 1 ---
 	slot9 = "%d/%d"
 	--- END OF BLOCK #13 ---
 
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 92-96, warpins: 2 ---
+	--- BLOCK #14 97-101, warpins: 2 ---
 	slot10 = slot3
 	slot11 = slot2
 	MULTRES = slot7(slot9, slot10, slot11)
@@ -573,9 +586,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.refreshPetTeam = slot11
+slot3.refreshPetTeam = slot13
 
-slot11 = function(slot0, slot1, slot2)
+slot13 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-46, warpins: 1 ---
 	slot3 = slot0.uiPosArray
 	slot3 = slot3[slot1]
@@ -759,9 +772,9 @@ slot11 = function(slot0, slot1, slot2)
 
 end
 
-slot2.refreshPetUI = slot11
+slot3.refreshPetUI = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.menuCamera
 	slot3 = slot0.menuCameraParam
@@ -929,9 +942,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.focus = slot11
+slot3.focus = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -948,9 +961,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.disFocus = slot11
+slot3.disFocus = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
@@ -973,9 +986,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.tickRemandTime = slot11
+slot3.tickRemandTime = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot2 = LuaUIUtils
 	slot2 = slot2.setUIVisible
@@ -1005,9 +1018,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.switchState = slot11
+slot3.switchState = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1088,9 +1101,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.onSetPreselection = slot11
+slot3.onSetPreselection = slot13
 
-slot11 = function(slot0, slot1)
+slot13 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -1156,9 +1169,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot2.openEditPanel = slot11
+slot3.openEditPanel = slot13
 
-slot11 = function(slot0)
+slot13 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.instArray
 	--- END OF BLOCK #0 ---
@@ -1179,9 +1192,10 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 8-10, warpins: 1 ---
+	--- BLOCK #2 8-11, warpins: 1 ---
+	slot6 = ClientUtils
+	slot6 = slot6.safeDestroy
 	slot8 = slot5
-	slot6 = slot5.destroy
 
 	slot6(slot8)
 
@@ -1190,7 +1204,7 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 11-12, warpins: 2 ---
+	--- BLOCK #3 12-13, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -1198,7 +1212,7 @@ slot11 = function(slot0)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 13-54, warpins: 2 ---
+	--- BLOCK #4 14-55, warpins: 2 ---
 	slot1 = nil
 	slot0.instArray = slot1
 	slot1 = pg
@@ -1258,9 +1272,9 @@ slot11 = function(slot0)
 
 end
 
-slot2.onDestroy = slot11
+slot3.onDestroy = slot13
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

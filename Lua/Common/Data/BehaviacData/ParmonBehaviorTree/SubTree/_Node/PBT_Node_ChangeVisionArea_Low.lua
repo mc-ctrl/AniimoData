@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	name = "ParmonBehaviorTree/SubTree/_Node/PBT_Node_ChangeVisionArea_Low",
-	version = 12,
 	useForRoute = true,
+	version = 12,
 	agenttype = "CombatAgent"
 }
 slot4 = {}
@@ -19,8 +19,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	class = "Action",
-	id = "19"
+	id = "19",
+	class = "Action"
 }
 slot5 = {}
 slot6 = {}

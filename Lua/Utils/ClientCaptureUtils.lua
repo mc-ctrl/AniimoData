@@ -1,75 +1,66 @@
---- BLOCK #0 1-135, warpins: 1 ---
+--- BLOCK #0 1-134, warpins: 1 ---
 slot0 = require
-slot2 = "Common.Utils.Utils"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Utils.ClientUtils"
+slot3 = "Common.Utils.Utils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Data.sys_config_data"
+slot4 = "Utils.ClientUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.NoticeDef"
+slot5 = "Data.sys_config_data"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "GameApp.ResLoad.ResLoader"
+slot6 = "Common.NoticeDef"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Data.cast_item_data"
+slot7 = "GameApp.ResLoad.ResLoader"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.item_effect_data"
+slot8 = "Data.cast_item_data"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Utils.CatchProbContext"
+slot9 = "Data.item_effect_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.PlayableConst"
+slot10 = "Common.Utils.CatchProbContext"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Const.AudioConst"
+slot11 = "Common.Const.PlayableConst"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Const.UIConst"
+slot12 = "Const.AudioConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.LuaUIUtils"
+slot13 = "Const.UIConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Core.Common.lume"
+slot14 = "Utils.LuaUIUtils"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Const.ItemConst"
+slot15 = "Core.Common.lume"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.CaptureConst"
+slot16 = "Common.Const.ItemConst"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.item_data"
+slot17 = "Common.Utils.ItemUtils"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.pet_config_data"
+slot18 = "Common.Const.CaptureConst"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Common.Utils.FishingCaptureProbCalc"
+slot19 = "Data.item_data"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Data.fishing_capture_activity_data"
+slot20 = "Data.pet_config_data"
 slot18 = slot18(slot20)
-slot19 = require
-slot21 = "Data.fishing_capture_progress_data"
-slot19 = slot19(slot21)
-slot20 = require
-slot22 = "Data.fishing_capture_reward_progress_data"
-slot20 = slot20(slot22)
-slot21 = require
-slot23 = "Common.Const.FishingCaptureConst"
-slot21 = slot21(slot23)
-slot22 = Vector3
-slot23 = Quaternion
-slot24 = {}
+slot19 = Vector3
+slot20 = Quaternion
+slot21 = {}
 
-slot25 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -118,7 +109,7 @@ slot25 = function(slot0)
 
 
 	--- BLOCK #4 16-16, warpins: 2 ---
-	slot1 = {}
+	slot1 = EMPTY_TABLE
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
@@ -168,9 +159,9 @@ slot25 = function(slot0)
 
 end
 
-slot24.isBossCatchFreeBall = slot25
+slot21.isBossCatchFreeBall = slot22
 
-slot25 = function()
+slot22 = function()
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot0 = nil
 	slot1 = pairs
@@ -186,7 +177,7 @@ slot25 = function()
 
 
 	--- BLOCK #1 7-7, warpins: 1 ---
-	slot3 = {}
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -293,9 +284,9 @@ slot25 = function()
 
 end
 
-slot24.getDefaultBossCatchFreeBallId = slot25
+slot21.getDefaultBossCatchFreeBallId = slot22
 
-slot25 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -317,7 +308,7 @@ slot25 = function(slot0, slot1)
 	if slot2 <= slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #6
 	end
 
 
@@ -327,7 +318,7 @@ slot25 = function(slot0, slot1)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #5
 	end
 
 
@@ -369,172 +360,663 @@ slot25 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 32-35, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
+	--- BLOCK #5 32-33, warpins: 3 ---
+	slot2 = false
+
+	return slot2
+
 	--- END OF BLOCK #5 ---
 
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 34-35, warpins: 2 ---
+	slot2 = true
+
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot21.checkBallItem = slot22
+
+slot22 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.itemId2CastItemId
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot2 = castItemData
+	slot2 = slot2[slot1]
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
 	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-13, warpins: 1 ---
+	slot3 = slot2.isSpecialSlot
+	--- END OF BLOCK #3 ---
+
+	if slot3 ~= 1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 16-17, warpins: 0 ---
+	slot3 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 18-18, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 19-19, warpins: 3 ---
+	return slot3
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot21.isPaidBall = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = {}
+	slot1 = pg
+	slot1 = slot1.me
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.invEliteSlotBall
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-10, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-11, warpins: 1 ---
+	return slot0
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 12-19, warpins: 2 ---
+	slot2 = lume
+	slot2 = slot2.count
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	slot3 = 1
+	slot4 = slot2
+	slot5 = 1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-22, warpins: 2 ---
+	slot7 = slot1[slot6]
+	--- END OF BLOCK #5 ---
+
+	slot7 = if slot7 then
 	JUMP TO BLOCK #6
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #6 36-40, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.isInFishingCapture
+	--- BLOCK #6 23-24, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	slot2 = if slot2 then
+	if slot7 ~= 0 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #7 41-47, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.isInFishingCapture
-	slot2 = slot2(slot4)
+	--- BLOCK #7 25-28, warpins: 1 ---
+	slot8 = ItemData
+	slot8 = slot8[slot7]
 	--- END OF BLOCK #7 ---
 
-	slot2 = if slot2 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #8 48-52, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.hasAnyEnabledBall
+	--- BLOCK #8 29-34, warpins: 1 ---
+	slot8 = ClientCaptureUtils
+	slot8 = slot8.isPaidBall
+	slot10 = slot7
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 53-59, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.hasAnyEnabledBall
-	slot2 = slot2(slot4)
+	--- BLOCK #9 35-41, warpins: 1 ---
+	slot8 = ClientUtils
+	slot8 = slot8.getItemCountById
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	slot9 = 0
 	--- END OF BLOCK #9 ---
 
-	slot2 = if not slot2 then
+	if slot8 > slot9 then
 	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #10 60-67, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.setFishingCaptureTooltip
-	slot5 = true
-
-	slot2(slot4, slot5)
+	--- BLOCK #10 42-44, warpins: 1 ---
+	slot8 = #slot0
+	slot8 = slot8 + 1
+	slot0[slot8] = slot7
 
 	--- END OF BLOCK #10 ---
 
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 68-69, warpins: 7 ---
-	slot2 = false
-
-	return slot2
-
+	--- BLOCK #11 45-45, warpins: 6 ---
 	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #12
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #12
 
-
-	--- BLOCK #12 70-73, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
+	--- BLOCK #12 46-46, warpins: 1 ---
+	return slot0
 	--- END OF BLOCK #12 ---
 
+
+
+end
+
+slot21.getEquippedPaidBallItemIds = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.me
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-6, warpins: 1 ---
+	slot0 = nil
+
+	return slot0
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-12, warpins: 2 ---
+	slot0 = pairs
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.invQuickSlotBall
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-13, warpins: 1 ---
+	slot2 = EMPTY_TABLE
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	slot0, slot1, slot2 = slot0(slot2)
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #5 16-17, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot4 ~= 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #6 18-21, warpins: 1 ---
+	slot5 = ItemData
+	slot5 = slot5[slot4]
+	--- END OF BLOCK #6 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #7 22-27, warpins: 1 ---
+	slot5 = ClientCaptureUtils
+	slot5 = slot5.isPaidBall
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #7 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 28-33, warpins: 1 ---
+	slot5 = ClientCaptureUtils
+	slot5 = slot5.checkBallCanThrow
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #8 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 34-40, warpins: 1 ---
+	slot5 = ClientUtils
+	slot5 = slot5.getItemCountById
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	slot6 = 0
+
+	--- END OF BLOCK #9 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 41-41, warpins: 1 ---
+	return slot4
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-43, warpins: 7 ---
+	--- END OF BLOCK #11 ---
+
+	for slot3, slot4 in slot0, slot1, slot2
+	LOOP BLOCK #5
+	GO OUT TO BLOCK #12
+
+
+	--- BLOCK #12 44-45, warpins: 1 ---
+	slot0 = nil
+
+	return slot0
+	--- END OF BLOCK #12 ---
+
+
+
+end
+
+slot21.getFirstUsableNormalBallItemId = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = ClientCaptureUtils
+	slot0 = slot0.getFirstUsableNormalBallItemId
+	slot0 = slot0()
+	--- END OF BLOCK #0 ---
+
+	if slot0 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot0 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 8-8, warpins: 1 ---
+	slot0 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-9, warpins: 2 ---
+	return slot0
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot21.hasUsableNormalBall = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot0 = pg
+	slot0 = slot0.global
+	slot0 = slot0.ui
+	slot0 = slot0.hudV2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-14, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getCurSelectPropId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-18, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+
+	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 19-19, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 20-24, warpins: 2 ---
+	slot2 = ClientUtils
+	slot2 = slot2.isInDouYinOfflineScene
+	slot2 = slot2()
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 25-29, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isPlayerInSpaceCatchRogueDungeon
+	slot4 = pg
+	slot4 = slot4.me
+	slot2 = slot2(slot4)
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 30-31, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
 	slot2 = if slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 32-32, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 33-34, warpins: 2 ---
+	--- END OF BLOCK #10 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #11 35-38, warpins: 1 ---
+	slot3 = ItemData
+	slot3 = slot3[slot1]
+	--- END OF BLOCK #11 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 39-44, warpins: 1 ---
+	slot3 = ClientCaptureUtils
+	slot3 = slot3.isPaidBall
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #12 ---
+
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #13
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #13 74-78, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot2 = slot2.isInFishingCapture
+	--- BLOCK #13 45-50, warpins: 1 ---
+	slot3 = ClientCaptureUtils
+	slot3 = slot3.checkBallCanThrow
+	slot5 = slot1
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #13 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #14
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #14 79-85, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.isInFishingCapture
-	slot2 = slot2(slot4)
+	--- BLOCK #14 51-57, warpins: 1 ---
+	slot3 = ClientUtils
+	slot3 = slot3.getItemCountById
+	slot5 = slot1
+	slot3 = slot3(slot5)
+	slot4 = 0
+
 	--- END OF BLOCK #14 ---
 
-	slot2 = if slot2 then
+	if slot3 > slot4 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 86-93, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot2 = slot2.hudV2
-	slot4 = slot2
-	slot2 = slot2.setFishingCaptureTooltip
-	slot5 = false
-
-	slot2(slot4, slot5)
+	--- BLOCK #15 58-58, warpins: 1 ---
+	return slot1
 
 	--- END OF BLOCK #15 ---
 
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 94-95, warpins: 4 ---
-	slot2 = true
+	--- BLOCK #16 59-63, warpins: 6 ---
+	slot3 = ClientCaptureUtils
+	slot3 = slot3.getFirstUsableNormalBallItemId
+	slot3 = slot3()
 
-	return slot2
 	--- END OF BLOCK #16 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 64-64, warpins: 1 ---
+	return slot3
+
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 65-69, warpins: 2 ---
+	slot4 = ClientCaptureUtils
+	slot4 = slot4.getEquippedPaidBallItemIds
+	slot4 = slot4()
+	slot5 = slot4[1]
+
+	return slot5
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot24.checkBallItem = slot25
+slot21.getEnterCatchModeItemId = slot22
 
-slot25 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = nil
+slot22 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = false
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 4-13, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -543,16 +1025,16 @@ slot25 = function(slot0)
 	slot6 = UIConst
 	slot6 = slot6.UI_ID_CATCHBOSS_NEW
 	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #1
-	else
 	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 13-22, warpins: 1 ---
+	--- BLOCK #2 14-23, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -562,12 +1044,12 @@ slot25 = function(slot0)
 	slot3 = slot3(slot5)
 	slot1 = slot3
 	slot2 = true
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 23-32, warpins: 1 ---
+	--- BLOCK #3 24-33, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -576,16 +1058,16 @@ slot25 = function(slot0)
 	slot6 = UIConst
 	slot6 = slot6.UI_ID_CATCHBOSS
 	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
 	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 33-42, warpins: 1 ---
+	--- BLOCK #4 34-43, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -595,30 +1077,12 @@ slot25 = function(slot0)
 	slot3 = slot3(slot5)
 	slot1 = slot3
 	slot2 = true
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #4 43-52, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.prefsCacheUtils
-	slot5 = slot3
-	slot3 = slot3.getBool
-	slot6 = "HudV2Enable"
-	slot7 = false
-	slot3 = slot3(slot5, slot6, slot7)
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 53-61, warpins: 1 ---
+	--- BLOCK #5 44-51, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -629,95 +1093,81 @@ slot25 = function(slot0)
 	slot1 = slot3
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 62-69, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.hud
-	slot5 = slot3
-	slot3 = slot3.getCurSelectPropId
-	slot3 = slot3(slot5)
-	slot1 = slot3
+	--- BLOCK #6 52-53, warpins: 4 ---
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 70-71, warpins: 4 ---
-	--- END OF BLOCK #7 ---
-
 	slot2 = if slot2 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 72-77, warpins: 1 ---
+	--- BLOCK #7 54-59, warpins: 1 ---
 	slot3 = ClientCaptureUtils
 	slot3 = slot3.isBossCatchFreeBall
 	slot5 = slot1
 	slot3 = slot3(slot5)
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
 	slot3 = if slot3 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #9 78-79, warpins: 1 ---
+	--- BLOCK #8 60-61, warpins: 1 ---
 	slot3 = true
 
 	return slot3
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #10 80-86, warpins: 3 ---
+	--- BLOCK #9 62-68, warpins: 3 ---
 	slot3 = ClientCaptureUtils
 	slot3 = slot3.checkBallItem
 	slot5 = slot1
 	slot6 = slot0
 	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #9 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #11 87-88, warpins: 1 ---
+	--- BLOCK #10 69-70, warpins: 1 ---
 	slot3 = false
 
 	return slot3
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #12
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #12 89-90, warpins: 2 ---
+	--- BLOCK #11 71-72, warpins: 2 ---
 	slot3 = true
 
 	return slot3
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot24.hasBall = slot25
+slot21.hasBall = slot22
 
-slot25 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = CatchProbContext
 	slot3 = slot3.clientGet
@@ -734,61 +1184,10 @@ slot25 = function(slot0, slot1, slot2)
 
 end
 
-slot24.getFromBehindCatchProb = slot25
+slot21.getFromBehindCatchProb = slot22
 
-slot25 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	--- END OF BLOCK #0 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 5-9, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.isInFishingCapture
-	--- END OF BLOCK #1 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 10-16, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isInFishingCapture
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 17-19, warpins: 1 ---
-	slot3 = ClientCaptureUtils
-	slot3 = slot3._fishingCaptureCatchRate
-
-	return slot3()
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 20-32, warpins: 4 ---
+slot22 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = CatchProbContext
 	slot3 = slot3.clientGet
 	slot5 = slot1
@@ -803,236 +1202,15 @@ slot25 = function(slot0, slot1, slot2)
 	slot7 = slot3
 
 	return slot6, slot7
-	--- END OF BLOCK #4 ---
-
-
-
-end
-
-slot24.catchUIColorRate = slot25
-
-slot25 = function()
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
 	--- END OF BLOCK #0 ---
 
-	slot0 = if slot0 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot0 = pg
-	slot0 = slot0.me
-	slot0 = slot0.fishingCaptureCurPhase
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-9, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	slot0 = if slot0 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 10-12, warpins: 1 ---
-	slot1 = 0
-	--- END OF BLOCK #3 ---
-
-	if slot0 <= slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 13-18, warpins: 2 ---
-	slot1 = ClientCaptureUtils
-	slot1 = slot1.getColorPageByRate
-	slot3 = 0
-	slot1 = slot1(slot3)
-	slot2 = {
-		finalProb = 0,
-		canCatch = false
-	}
-
-	return slot1, slot2
-
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 19-21, warpins: 2 ---
-	slot1 = FishingCaptureActivityData
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
-
-
-	--- BLOCK #6 22-23, warpins: 1 ---
-	slot1 = FishingCaptureActivityData
-	slot1 = slot1[slot0]
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 24-25, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 26-31, warpins: 1 ---
-	slot2 = ClientCaptureUtils
-	slot2 = slot2.getColorPageByRate
-	slot4 = 0
-	slot2 = slot2(slot4)
-	slot3 = {
-		finalProb = 0,
-		canCatch = false
-	}
-
-	return slot2, slot3
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 32-35, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.me
-	--- END OF BLOCK #9 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #10 36-40, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.getFishingCaptureCurrentPhase
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #10 ---
-
-	FLOW; TARGET BLOCK #11
-
-
-	--- BLOCK #11 41-45, warpins: 2 ---
-	slot3 = FishingCaptureConst
-	slot3 = slot3.Phase
-	slot3 = slot3.CAPTURE
-	--- END OF BLOCK #11 ---
-
-	if slot2 ~= slot3 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 46-51, warpins: 1 ---
-	slot3 = ClientCaptureUtils
-	slot3 = slot3.getColorPageByRate
-	slot5 = 0
-	slot3 = slot3(slot5)
-	slot4 = {
-		finalProb = 0,
-		canCatch = false
-	}
-
-	return slot3, slot4
-
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 52-64, warpins: 2 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.getLayerCount
-	slot3 = slot3(slot5)
-	slot4 = FishingCaptureProbCalc
-	slot4 = slot4.calcCaptureProb
-	slot6 = slot1.setProp
-	slot7 = slot0
-	slot8 = slot3
-	slot9 = FishingCaptureProgressData
-	--- END OF BLOCK #13 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 65-66, warpins: 1 ---
-	slot9 = FishingCaptureProgressData
-	slot9 = slot9[slot0]
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 67-79, warpins: 2 ---
-	slot10 = FishingCaptureRewardProgressData
-	slot4 = slot4(slot6, slot7, slot8, slot9, slot10)
-	slot5 = ClientCaptureUtils
-	slot5 = slot5.getColorPageByRate
-	slot7 = slot4
-	slot5 = slot5(slot7)
-	slot6 = {
-		entTagProb = 1,
-		fromBehindProb = 1,
-		hpStateProb = 1,
-		ballProb = 1,
-		levelStateProb = 1,
-		canCatch = true
-	}
-	slot6.finalProb = slot4
-	slot7 = {
-		minMaxProb = 1,
-		isMust = false
-	}
-	slot6.probGroup = slot7
-	slot7 = slot5
-	slot8 = slot6
-
-	return slot7, slot8
-	--- END OF BLOCK #15 ---
-
 
 
 end
 
-slot24._fishingCaptureCatchRate = slot25
+slot21.catchUIColorRate = slot22
 
-slot25 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = 0
 	--- END OF BLOCK #0 ---
@@ -1130,9 +1308,9 @@ slot25 = function(slot0)
 
 end
 
-slot24.getColorPageByRate = slot25
+slot21.getColorPageByRate = slot22
 
-slot25 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1198,9 +1376,9 @@ slot25 = function(slot0)
 
 end
 
-slot24.getBossCatchPageByRate = slot25
+slot21.getBossCatchPageByRate = slot22
 
-slot25 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = 1
 	--- END OF BLOCK #0 ---
@@ -1287,17 +1465,17 @@ slot25 = function(slot0)
 
 end
 
-slot24.getSfxByRate = slot25
-slot25 = {
-	MagicBall = "MagicCatchContext",
+slot21.getSfxByRate = slot22
+slot22 = {
 	BagItem = "ParabolaThrowContext",
-	FishingCaptureBall = "CameraThrowContext",
+	MagicBall = "MagicCatchContext",
 	TrapBall = "TrapBallContext",
+	FishingCaptureBall = "CameraThrowContext",
 	CatchBall = "CameraThrowContext",
 	BigBall = "DriveBallContext"
 }
 
-slot26 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.itemId2CastItemId
@@ -1324,9 +1502,9 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot24.getThrowContext = slot26
+slot21.getThrowContext = slot23
 
-slot26 = function(slot0)
+slot23 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = ClientCaptureUtils
 	slot1 = slot1.getDefaultBossCatchFreeBallId
@@ -1343,165 +1521,127 @@ slot26 = function(slot0)
 	--- BLOCK #1 6-6, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #2 7-17, warpins: 1 ---
-	slot2 = nil
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.prefsCacheUtils
-	slot5 = slot3
-	slot3 = slot3.getBool
-	slot6 = "HudV2Enable"
-	slot7 = false
-	slot3 = slot3(slot5, slot6, slot7)
-	--- END OF BLOCK #2 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 18-26, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.hudV2
-	slot5 = slot3
-	slot3 = slot3.getCurSelectPropId
-	slot3 = slot3(slot5)
-	slot2 = slot3
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 27-34, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.ui
-	slot3 = slot3.hud
-	slot5 = slot3
-	slot3 = slot3.getCurSelectPropId
-	slot3 = slot3(slot5)
-	slot2 = slot3
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 35-42, warpins: 2 ---
+	--- BLOCK #2 7-21, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot2 = slot2.hudV2
+	slot4 = slot2
+	slot2 = slot2.getCurSelectPropId
+	slot2 = slot2(slot4)
 	slot3 = Utils
 	slot3 = slot3.itemId2CastItemId
 	slot5 = slot2
 	slot3 = slot3(slot5)
 	slot4 = castItemData
 	slot4 = slot4[slot3]
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 43-45, warpins: 1 ---
+	--- BLOCK #3 22-24, warpins: 1 ---
 	slot5 = slot4.canQuickCaptureInHand
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #3 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #7 46-52, warpins: 1 ---
+	--- BLOCK #4 25-31, warpins: 1 ---
 	slot5 = ClientUtils
 	slot5 = slot5.getItemCountById
 	slot7 = slot2
 	slot5 = slot5(slot7)
 	slot6 = 0
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 	if slot5 > slot6 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #8 53-53, warpins: 1 ---
-	--- END OF BLOCK #8 ---
+	--- BLOCK #5 32-32, warpins: 1 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #9 54-61, warpins: 3 ---
+	--- BLOCK #6 33-42, warpins: 3 ---
 	slot5 = pg
 	slot5 = slot5.me
-	slot6 = slot5.invInfo
-	slot7 = ItemConst
-	slot7 = slot7.INV_TYPE_BALL
-	slot6 = slot6[slot7]
-	--- END OF BLOCK #9 ---
+	slot6 = ItemUtils
+	slot6 = slot6.getTypedBag
+	slot8 = slot5
+	slot9 = ItemConst
+	slot9 = slot9.INV_TYPE_BALL
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #6 ---
 
 	slot6 = if not slot6 then
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #11
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #10 62-62, warpins: 1 ---
+	--- BLOCK #7 43-43, warpins: 1 ---
 	slot6 = {}
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #11
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #11 63-67, warpins: 2 ---
+	--- BLOCK #8 44-48, warpins: 2 ---
 	slot7 = {}
 	slot10 = slot6
 	slot8 = slot6.items
 	slot8, slot9, slot10 = slot8(slot10)
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #12 68-74, warpins: 1 ---
+	--- BLOCK #9 49-55, warpins: 1 ---
 	slot13 = LuaUIUtils
 	slot13 = slot13.getItemClientInfoById
 	slot15 = slot12.id
 	slot13 = slot13(slot15)
 	slot2 = slot13.itemId
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #9 ---
 
 	if slot2 ~= 0 then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #13 75-78, warpins: 1 ---
+	--- BLOCK #10 56-59, warpins: 1 ---
 	slot14 = ItemData
 	slot14 = slot14[slot2]
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #10 ---
 
 	slot14 = if slot14 then
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 79-110, warpins: 1 ---
+	--- BLOCK #11 60-91, warpins: 1 ---
 	slot14 = ClientUtils
 	slot14 = slot14.getItemCountById
 	slot16 = slot2
@@ -1532,54 +1672,54 @@ slot26 = function(slot0)
 	slot17 = castItemData
 	slot4 = slot17[slot3]
 	slot17 = 0
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #11 ---
 
 	if slot14 > slot17 then
-	JUMP TO BLOCK #15
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #15 111-112, warpins: 1 ---
-	--- END OF BLOCK #15 ---
+	--- BLOCK #12 92-93, warpins: 1 ---
+	--- END OF BLOCK #12 ---
 
 	slot4 = if slot4 then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #16 113-115, warpins: 1 ---
+	--- BLOCK #13 94-96, warpins: 1 ---
 	slot17 = slot4.canQuickCaptureInHand
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #13 ---
 
 	slot17 = if slot17 then
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #17 116-118, warpins: 1 ---
+	--- BLOCK #14 97-99, warpins: 1 ---
 	slot17 = #slot7
 	slot17 = slot17 + 1
 	slot7[slot17] = slot16
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #18 119-120, warpins: 7 ---
-	--- END OF BLOCK #18 ---
+	--- BLOCK #15 100-101, warpins: 7 ---
+	--- END OF BLOCK #15 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
-	LOOP BLOCK #12
-	GO OUT TO BLOCK #19
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #16
 
 
-	--- BLOCK #19 121-130, warpins: 1 ---
+	--- BLOCK #16 102-111, warpins: 1 ---
 	slot8 = lume
 	slot8 = slot8.sort
 	slot10 = slot7
@@ -1624,57 +1764,57 @@ slot26 = function(slot0)
 	slot7 = slot8
 	slot8 = #slot7
 	slot9 = 0
-	--- END OF BLOCK #19 ---
+	--- END OF BLOCK #16 ---
 
 	if slot8 > slot9 then
-	JUMP TO BLOCK #20
+	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #21
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #20 131-135, warpins: 1 ---
+	--- BLOCK #17 112-116, warpins: 1 ---
 	slot8 = slot7[1]
 	slot8 = slot8.itemId
 
 	return slot8
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
+
+
+	--- BLOCK #18 117-118, warpins: 1 ---
+	return
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 119-119, warpins: 2 ---
+	return
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 120-120, warpins: 2 ---
+	return slot1
 	--- END OF BLOCK #20 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 136-137, warpins: 1 ---
-	return
-	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 138-138, warpins: 2 ---
-	return
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 139-139, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 140-140, warpins: 2 ---
+	--- BLOCK #21 121-121, warpins: 2 ---
 	return slot2
-	--- END OF BLOCK #24 ---
+	--- END OF BLOCK #21 ---
 
 
 
 end
 
-slot24.getItemBossCatchValid = slot26
+slot21.getItemBossCatchValid = slot23
 
-slot26 = function(slot0, slot1, slot2, slot3)
+slot23 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-37, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.getPositionAgentPosition
@@ -1785,7 +1925,7 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 	--- BLOCK #5 76-85, warpins: 2 ---
 	slot15 = slot5
-	slot13 = slot5.Clone
+	slot13 = slot5.ForceClone
 	slot13 = slot13(slot15)
 	slot14 = Vector3
 	slot14 = slot14.returnToCache
@@ -1803,9 +1943,9 @@ slot26 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot24.getBallFinalPos = slot26
+slot21.getBallFinalPos = slot23
 
-slot26 = function(slot0, slot1, slot2)
+slot23 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-36, warpins: 1 ---
 	slot3 = {}
 	slot4 = pgUtils
@@ -1850,9 +1990,9 @@ slot26 = function(slot0, slot1, slot2)
 
 end
 
-slot24.getParticleConfig = slot26
+slot21.getParticleConfig = slot23
 
-slot26 = function(slot0, slot1)
+slot23 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot1.ballHitPos
 	slot3 = pg
@@ -1878,20 +2018,18 @@ slot26 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 10-14, warpins: 1 ---
-	slot4 = IsNil
-	slot6 = slot3.eModel
-	slot4 = slot4(slot6)
+	--- BLOCK #2 10-12, warpins: 1 ---
+	slot4 = slot3.eModel
 	--- END OF BLOCK #2 ---
 
-	slot4 = if not slot4 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 15-17, warpins: 1 ---
+	--- BLOCK #3 13-15, warpins: 1 ---
 	slot4 = slot0.FinalPos
 	--- END OF BLOCK #3 ---
 
@@ -1902,7 +2040,7 @@ slot26 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 18-50, warpins: 1 ---
+	--- BLOCK #4 16-48, warpins: 1 ---
 	slot4 = ClientCaptureUtils
 	slot4 = slot4.getBallFinalPos
 	slot6 = slot3
@@ -1942,7 +2080,7 @@ slot26 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 51-51, warpins: 5 ---
+	--- BLOCK #5 49-49, warpins: 5 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -1950,30 +2088,30 @@ slot26 = function(slot0, slot1)
 
 end
 
-slot24.fillCatchBallHitConfig = slot26
+slot21.fillCatchBallHitConfig = slot23
+slot23 = {}
+slot24 = {}
+slot25 = slot16.SESSION_STATE_HIT
 slot26 = {}
-slot27 = {}
-slot28 = slot14.SESSION_STATE_HIT
-slot29 = {}
-slot30 = slot14.CAPTURE_NORMAL_BALL_ABSORB_TIMELINE
-slot29[1] = slot30
-slot30 = slot14.CAPTURE_NORMAL_BALL_STRUGGLE_TIMELINE
-slot29[2] = slot30
-slot27[slot28] = slot29
-slot28 = slot14.SESSION_STATE_SETTLED
-slot29 = slot14.CAPTURE_NORMAL_BALL_RESULT_TIMELINE
-slot27[slot28] = slot29
-slot26.CatchBall = slot27
-slot27 = {}
-slot28 = slot14.SESSION_STATE_HIT
-slot29 = slot14.CAPTURE_BIG_BALL_STRUGGLE_TIMELINE
-slot27[slot28] = slot29
-slot28 = slot14.SESSION_STATE_SETTLED
-slot29 = slot14.CAPTURE_BIG_BALL_RESULT_TIMELINE
-slot27[slot28] = slot29
-slot26.BigBall = slot27
+slot27 = slot16.CAPTURE_NORMAL_BALL_ABSORB_TIMELINE
+slot26[1] = slot27
+slot27 = slot16.CAPTURE_NORMAL_BALL_STRUGGLE_TIMELINE
+slot26[2] = slot27
+slot24[slot25] = slot26
+slot25 = slot16.SESSION_STATE_SETTLED
+slot26 = slot16.CAPTURE_NORMAL_BALL_RESULT_TIMELINE
+slot24[slot25] = slot26
+slot23.CatchBall = slot24
+slot24 = {}
+slot25 = slot16.SESSION_STATE_HIT
+slot26 = slot16.CAPTURE_BIG_BALL_STRUGGLE_TIMELINE
+slot24[slot25] = slot26
+slot25 = slot16.SESSION_STATE_SETTLED
+slot26 = slot16.CAPTURE_BIG_BALL_RESULT_TIMELINE
+slot24[slot25] = slot26
+slot23.BigBall = slot24
 
-slot27 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2090,9 +2228,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.getCaptureTimelineId = slot27
+slot21.getCaptureTimelineId = slot24
 
-slot27 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = 3066
 	slot2 = Utils
@@ -2117,9 +2255,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.getCaptureTimelineShowIdx = slot27
+slot21.getCaptureTimelineShowIdx = slot24
 
-slot27 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = 0
 	slot2 = ipairs
@@ -2218,9 +2356,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.getFloatWeightedRandomIndex = slot27
+slot21.getFloatWeightedRandomIndex = slot24
 
-slot27 = function(slot0, slot1, slot2)
+slot24 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #0 ---
@@ -2324,9 +2462,9 @@ slot27 = function(slot0, slot1, slot2)
 
 end
 
-slot24.getEvenlyDistributedPoints = slot27
+slot21.getEvenlyDistributedPoints = slot24
 
-slot27 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2380,73 +2518,33 @@ slot27 = function(slot0)
 	if slot3 == "FishingCaptureBall" then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #5 18-21, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	--- END OF BLOCK #5 ---
-
-	slot3 = if slot3 then
 	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #6 22-26, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot3 = slot3.isInFishingCapture
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 27-33, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isInFishingCapture
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #7 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 34-35, warpins: 3 ---
+	--- BLOCK #5 18-19, warpins: 1 ---
 	slot3 = false
 
 	return slot3
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #9 36-37, warpins: 3 ---
+	--- BLOCK #6 20-21, warpins: 2 ---
 	slot3 = true
 
 	return slot3
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot24.checkBallCanThrow = slot27
+slot21.checkBallCanThrow = slot24
 
-slot27 = function(slot0)
+slot24 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2517,9 +2615,9 @@ slot27 = function(slot0)
 
 end
 
-slot24.isBigBall = slot27
+slot21.isBigBall = slot24
 
-return slot24
+return slot21
 --- END OF BLOCK #0 ---
 
 

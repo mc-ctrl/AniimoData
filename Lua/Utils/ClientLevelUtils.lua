@@ -1,4 +1,4 @@
---- BLOCK #0 1-113, warpins: 1 ---
+--- BLOCK #0 1-121, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -359,7 +359,7 @@ slot16 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 		slot1 = context
 		slot2 = Time
-		slot2 = slot2.secondCache
+		slot2 = slot2.realSecondCache
 		slot1.lastInteractTime = slot2
 		slot1 = ClientLevelUtils
 		slot1 = slot1.doInteractCustom
@@ -421,7 +421,7 @@ slot16 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 		--- BLOCK #4 13-18, warpins: 2 ---
 		slot2 = Time
-		slot2 = slot2.secondCache
+		slot2 = slot2.realSecondCache
 		slot3 = slot2 - slot1
 		slot4 = cd
 		--- END OF BLOCK #4 ---
@@ -593,6 +593,73 @@ slot17 = function()
 end
 
 slot14.getPawnEModel = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getEntityByActorId
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-8, warpins: 1 ---
+	slot2 = 0
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-13, warpins: 2 ---
+	slot4 = slot1
+	slot2 = slot1.getConfigData
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-16, warpins: 1 ---
+	slot3 = slot2.ethnicGroup
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-17, warpins: 2 ---
+	slot3 = 0
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-18, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot14.getEthnicGroup = slot17
 
 slot17 = function()
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -1406,6 +1473,71 @@ slot22 = function()
 end
 
 slot14.notifyEcsWeather = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot0 = appFacade
+	--- END OF BLOCK #0 ---
+
+	slot0 = if slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot0 = appFacade
+	slot0 = slot0.ecsMgr
+
+	--- END OF BLOCK #1 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-8, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-18, warpins: 2 ---
+	slot0 = ClientLevelUtils
+	slot0 = slot0.calcEnvTemperature
+	slot0 = slot0()
+	slot1 = appFacade
+	slot1 = slot1.ecsMgr
+	slot3 = slot1
+	slot1 = slot1.SetEnvTemperature
+	slot4 = slot0
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot14.notifyEcsTemperature = slot22
+
+slot22 = function()
+	--- BLOCK #0 1-1, warpins: 1 ---
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot14.calcEnvTemperature = slot22
 slot22 = require
 slot24 = "Data.weather_data"
 slot22 = slot22(slot24)
@@ -1776,6 +1908,87 @@ slot23 = function()
 end
 
 slot14.getLastDittoDungeonState = slot23
+
+slot23 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-9, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-10, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-19, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.space
+	slot6 = slot4
+	slot4 = slot4.getEntityByStaticId
+	slot7 = slot0
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #3 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 20-28, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.playCfgAnimation
+	slot8 = {}
+	slot8[1] = slot1
+	slot8[2] = slot2
+	slot8[3] = slot3
+	slot9 = {
+		true
+	}
+	slot8[4] = slot9
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot14.playCfgAnimation = slot23
 
 slot23 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---

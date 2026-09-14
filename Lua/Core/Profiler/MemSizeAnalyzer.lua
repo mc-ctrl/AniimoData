@@ -1,13 +1,5 @@
 --- BLOCK #0 1-44, warpins: 1 ---
 slot0 = {
-	LFUNC_UPVAL = 8,
-	LFUNC_HEADER = 32,
-	TAB_HASH_MIN = 1,
-	TAB_HASH_NODE = 32,
-	TAB_ARRAY_SLOT = 16,
-	TAB_HEADER = 56,
-	TVALUE = 16,
-	GCHEADER = 8,
 	UPVAL_CLOSED = 32,
 	PROTO_BASE = 128,
 	THREAD_DEFAULT_STACK = 40,
@@ -17,7 +9,15 @@ slot0 = {
 	UDATA_HEADER = 32,
 	STR_HEADER = 24,
 	CFUNC_UPVAL = 16,
-	CFUNC_HEADER = 24
+	CFUNC_HEADER = 24,
+	LFUNC_UPVAL = 8,
+	LFUNC_HEADER = 32,
+	TAB_HASH_MIN = 1,
+	TAB_HASH_NODE = 32,
+	TAB_ARRAY_SLOT = 16,
+	TAB_HEADER = 56,
+	TVALUE = 16,
+	GCHEADER = 8
 }
 slot1 = {
 	BddDataMgr = true
@@ -2590,11 +2590,11 @@ slot11 = function(slot0, slot1, slot2)
 	slot3(slot5, slot6, slot7)
 
 	slot3 = {
-		name = "__root__",
-		domsize = 0,
 		shallow = 0,
 		typename = "root",
-		id = 0
+		id = 0,
+		domsize = 0,
+		name = "__root__"
 	}
 	slot4 = {}
 	slot3.children = slot4

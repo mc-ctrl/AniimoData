@@ -1,4 +1,4 @@
---- BLOCK #0 1-328, warpins: 1 ---
+--- BLOCK #0 1-330, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Utils.Utils"
 slot0 = slot0(slot2)
@@ -100,20 +100,25 @@ slot33 = slot33(slot35)
 slot34 = require
 slot36 = "Common.Utils.SceneUtils"
 slot34 = slot34(slot36)
-slot35 = slot32.EBTRootState
-slot36 = slot4.Component
-slot38 = "AIComponent"
-slot36 = slot36(slot38)
+slot35 = bit
+slot36 = pg
+slot37 = table
+slot38 = ipairs
+slot39 = pairs
+slot40 = slot32.EBTRootState
+slot41 = slot4.Component
+slot43 = "AIComponent"
+slot41 = slot41(slot43)
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = nil
 	slot0.agent = slot1
 	slot1 = {
+		valid = false,
 		ignoreAILod = 0,
 		btTickLock = false,
-		gmPause = false,
-		valid = false
+		gmPause = false
 	}
 	slot2 = AIRunningFSM
 	slot2 = slot2.new
@@ -153,9 +158,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.ctor = slot37
+slot41.ctor = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = AIControllerUtils
 	slot2 = slot2.checkOpen
@@ -204,9 +209,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.init = slot37
+slot41.init = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = slot0.AI
 	slot2 = AIUtils
@@ -300,11 +305,11 @@ slot37 = function(slot0)
 
 end
 
-slot36.start = slot37
+slot41.start = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = AIUtils
+	slot2 = Utils
 	slot2 = slot2.checkIsAuthorityMaster
 	slot4 = slot0
 	slot2 = slot2(slot4)
@@ -359,9 +364,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.aiTick = slot37
+slot41.aiTick = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.actorBuff
 	--- END OF BLOCK #0 ---
@@ -469,11 +474,11 @@ slot37 = function(slot0)
 
 end
 
-slot36.initAIBtPauseInfo = slot37
+slot41.initAIBtPauseInfo = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = AIUtils
+	slot3 = Utils
 	slot3 = slot3.checkIsAuthorityMaster
 	slot5 = slot0
 	slot3 = slot3(slot5)
@@ -774,9 +779,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.EVENT_OnCharacterStateChange = slot37
+slot41.EVENT_OnCharacterStateChange = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.detachBt
@@ -819,9 +824,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.destroy = slot37
+slot41.destroy = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = AIControllerUtils
 	slot2 = slot2.refreshAllSpeed
@@ -836,9 +841,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.EVENT_OnModelScaleChanged = slot37
+slot41.EVENT_OnModelScaleChanged = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -881,9 +886,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.beforePetChangeTemplate = slot37
+slot41.beforePetChangeTemplate = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = LoggerManager
 	slot1 = slot1.checkLogger
@@ -926,11 +931,11 @@ slot37 = function(slot0)
 
 end
 
-slot36.afterPetChangeTemplate = slot37
+slot41.afterPetChangeTemplate = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = AIUtils
+	slot1 = Utils
 	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
@@ -965,25 +970,23 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-22, warpins: 1 ---
-	slot1 = require
-	slot3 = "Const.ClientConst"
-	slot1 = slot1(slot3)
-	slot2 = AIControllerUtils
-	slot2 = slot2.setUseKCCMove
-	slot4 = slot0
-	slot5 = true
-	slot6 = slot1.KccControlType
-	slot6 = slot6.InCombat
+	--- BLOCK #3 13-20, warpins: 1 ---
+	slot1 = AIControllerUtils
+	slot1 = slot1.setUseKCCMove
+	slot3 = slot0
+	slot4 = true
+	slot5 = Const
+	slot5 = slot5.KccControlType
+	slot5 = slot5.InCombat
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-38, warpins: 2 ---
+	--- BLOCK #4 21-36, warpins: 2 ---
 	slot1 = AIUtils
 	slot1 = slot1.enterCombat
 	slot3 = slot0
@@ -1012,11 +1015,11 @@ slot37 = function(slot0)
 
 end
 
-slot36.onEnterCombat = slot37
+slot41.onEnterCombat = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = AIUtils
+	slot1 = Utils
 	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
@@ -1083,25 +1086,23 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #5 27-36, warpins: 1 ---
-	slot1 = require
-	slot3 = "Const.ClientConst"
-	slot1 = slot1(slot3)
-	slot2 = AIControllerUtils
-	slot2 = slot2.setUseKCCMove
-	slot4 = slot0
-	slot5 = false
-	slot6 = slot1.KccControlType
-	slot6 = slot6.InCombat
+	--- BLOCK #5 27-34, warpins: 1 ---
+	slot1 = AIControllerUtils
+	slot1 = slot1.setUseKCCMove
+	slot3 = slot0
+	slot4 = false
+	slot5 = Const
+	slot5 = slot5.KccControlType
+	slot5 = slot5.InCombat
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 37-44, warpins: 2 ---
+	--- BLOCK #6 35-42, warpins: 2 ---
 	slot1 = Utils
 	slot1 = slot1.removeEntityTag
 	slot3 = slot0
@@ -1118,11 +1119,11 @@ slot37 = function(slot0)
 
 end
 
-slot36.onLeaveCombat = slot37
+slot41.onLeaveCombat = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = AIUtils
+	slot1 = Utils
 	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
@@ -1187,9 +1188,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_OnLifeDead = slot37
+slot41.EVENT_OnLifeDead = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.detachBt
@@ -1217,9 +1218,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onLifeRevival = slot37
+slot41.onLifeRevival = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.destroyed
 
@@ -1365,9 +1366,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.notifyBuffTagChange = slot37
+slot41.notifyBuffTagChange = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.destroyed
 
@@ -1469,9 +1470,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.onActionMaskChange = slot37
+slot41.onActionMaskChange = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._refreshVoxelRegionLoadState
@@ -1485,28 +1486,24 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_OnVoxelRegionChanged = slot37
+slot41.EVENT_OnVoxelRegionChanged = slot42
 
-slot37 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
-	slot1 = slot1.isPet
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1.checkClient
+	slot1 = slot1()
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-12, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.isVirtualPet
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	--- BLOCK #1 6-8, warpins: 1 ---
+	slot1 = FREE_WALK
 
 	--- END OF BLOCK #1 ---
 
@@ -1517,7 +1514,7 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #2 13-13, warpins: 2 ---
+	--- BLOCK #2 9-9, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #2 ---
@@ -1525,18 +1522,55 @@ slot37 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 14-16, warpins: 2 ---
-	slot1 = slot0.voxelRegionLoaded
+	--- BLOCK #3 10-15, warpins: 3 ---
+	slot1 = Utils
+	slot1 = slot1.isPet
+	slot3 = slot0
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #3 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 17-30, warpins: 1 ---
+	--- BLOCK #4 16-21, warpins: 1 ---
+	slot1 = Utils
+	slot1 = slot1.isVirtualPet
+	slot3 = slot0
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 22-22, warpins: 2 ---
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 23-25, warpins: 2 ---
+	slot1 = slot0.voxelRegionLoaded
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 26-39, warpins: 1 ---
 	slot1 = AIControllerUtils
 	slot1 = slot1.resume
 	slot3 = slot0
@@ -1554,12 +1588,12 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #5 31-43, warpins: 1 ---
+	--- BLOCK #8 40-52, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
 	slot4 = AiConst
@@ -1577,22 +1611,22 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #6 44-44, warpins: 2 ---
+	--- BLOCK #9 53-53, warpins: 2 ---
 	return
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #9 ---
 
 
 
 end
 
-slot36._refreshVoxelRegionLoadState = slot37
+slot41._refreshVoxelRegionLoadState = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.AI
 	slot2.btName = slot1
@@ -1604,9 +1638,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.setBtName = slot37
+slot41.setBtName = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.btName
@@ -1635,9 +1669,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.getBtName = slot37
+slot41.getBtName = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.fsm
@@ -1655,9 +1689,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.initAIBtLifeState = slot37
+slot41.initAIBtLifeState = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.AI
 	--- END OF BLOCK #0 ---
@@ -1705,9 +1739,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.resetAIBtLifeState = slot37
+slot41.resetAIBtLifeState = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.AI
 	slot2 = slot2.fsm
@@ -1745,9 +1779,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.setAIBtLifeState = slot37
+slot41.setAIBtLifeState = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.AI
 	slot2 = slot2.fsm
@@ -1784,9 +1818,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.checkBTState = slot37
+slot41.checkBTState = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkBTState
@@ -1800,9 +1834,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.isAIRunning = slot37
+slot41.isAIRunning = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBtName
@@ -2043,30 +2077,31 @@ slot37 = function(slot0)
 	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #17 110-112, warpins: 2 ---
+	--- BLOCK #17 110-114, warpins: 2 ---
 	slot5 = slot0
 	slot3 = slot0.clearAIAgent
 
 	slot3(slot5)
 
+	slot3 = false
+
+	return slot3
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 113-114, warpins: 2 ---
-	slot3 = false
-
-	return slot3
+	--- BLOCK #18 115-115, warpins: 2 ---
+	return
 	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot36.createAIAgent = slot37
+slot41.createAIAgent = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.agent
 	--- END OF BLOCK #0 ---
@@ -2104,9 +2139,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.resumeAIAgent = slot37
+slot41.resumeAIAgent = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.agent
 	--- END OF BLOCK #0 ---
@@ -2144,9 +2179,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.pauseAIAgent = slot37
+slot41.pauseAIAgent = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.agent
 	--- END OF BLOCK #0 ---
@@ -2215,9 +2250,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.clearAIAgent = slot37
+slot41.clearAIAgent = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBtName
@@ -2258,9 +2293,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.attachBt = slot37
+slot41.attachBt = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resetAIBtLifeState
@@ -2274,9 +2309,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.detachBt = slot37
+slot41.detachBt = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2352,9 +2387,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.pauseBt = slot37
+slot41.pauseBt = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.resumeBt
@@ -2372,9 +2407,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_OnAnimatorReady = slot37
+slot41.EVENT_OnAnimatorReady = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2426,9 +2461,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.resumeBt = slot37
+slot41.resumeBt = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2481,9 +2516,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.forceRunBt = slot37
+slot41.forceRunBt = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2536,9 +2571,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.cancelForceRunBt = slot37
+slot41.cancelForceRunBt = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -2738,9 +2773,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.checkBtPause = slot37
+slot41.checkBtPause = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getBtName
@@ -2825,9 +2860,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.refreshBtState = slot37
+slot41.refreshBtState = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
@@ -2848,9 +2883,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.pauseBtGM = slot37
+slot41.pauseBtGM = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = slot0.AI
 	slot2 = false
@@ -2870,9 +2905,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.resumeBtGM = slot37
+slot41.resumeBtGM = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.AI
 	slot2 = true
@@ -2885,25 +2920,36 @@ slot37 = function(slot0)
 
 end
 
-slot36.onBtTickBefore = slot37
+slot41.onBtTickBefore = slot42
 
-slot37 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.AI
 	slot2 = false
 	slot1.btTickLock = slot2
 	slot1 = slot0.AI
 	slot1 = slot1.btTickLockEvent
 	slot1 = #slot1
+	slot2 = 0
+	--- END OF BLOCK #0 ---
+
+	if slot1 > slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-13, warpins: 1 ---
 	slot2 = 1
 	slot3 = slot1
 	slot4 = 1
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #1
+	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #1 11-21, warpins: 2 ---
+	--- BLOCK #2 14-24, warpins: 2 ---
 	slot6 = AIControllerUtils
 	slot6 = slot6.sendAIEvent
 	slot8 = slot0
@@ -2916,13 +2962,13 @@ slot37 = function(slot0)
 
 	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #2 ---
 
 	for slot5=slot2, slot3, slot4
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #2
+	LOOP BLOCK #2
+	GO OUT TO BLOCK #3
 
-	--- BLOCK #2 22-32, warpins: 1 ---
+	--- BLOCK #3 25-34, warpins: 1 ---
 	slot2 = table
 	slot2 = slot2.clearArray
 	slot4 = slot0.AI
@@ -2937,16 +2983,22 @@ slot37 = function(slot0)
 
 	slot2(slot4)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 35-35, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot36.onBtTickLater = slot37
+slot41.onBtTickLater = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -2956,13 +3008,13 @@ slot37 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
 	--- BLOCK #1 6-11, warpins: 1 ---
 	slot1 = Utils
-	slot1 = slot1.isNpc
+	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #1 ---
@@ -2970,54 +3022,11 @@ slot37 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 12-17, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.checkIsInTown
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
 	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 18-23, warpins: 1 ---
-	slot1 = AIControllerUtils
-	slot1 = slot1.setAuthority
-	slot3 = slot0
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	return
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 24-29, warpins: 3 ---
-	slot1 = AIUtils
-	slot1 = slot1.checkIsAuthorityMaster
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #4 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 30-41, warpins: 1 ---
+	--- BLOCK #2 12-23, warpins: 1 ---
 	slot1 = AIControllerUtils
 	slot1 = slot1.setAuthority
 	slot3 = slot0
@@ -3033,12 +3042,12 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 42-53, warpins: 1 ---
+	--- BLOCK #3 24-35, warpins: 1 ---
 	slot1 = AIControllerUtils
 	slot1 = slot1.setAuthority
 	slot3 = slot0
@@ -3054,26 +3063,26 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #7 54-59, warpins: 1 ---
-	slot1 = AIUtils
+	--- BLOCK #4 36-41, warpins: 1 ---
+	slot1 = Utils
 	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #8 60-66, warpins: 1 ---
+	--- BLOCK #5 42-48, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
 	slot4 = AiConst
@@ -3082,12 +3091,12 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #9 67-72, warpins: 1 ---
+	--- BLOCK #6 49-54, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
 	slot4 = AiConst
@@ -3096,27 +3105,27 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #10
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #10 73-76, warpins: 4 ---
+	--- BLOCK #7 55-58, warpins: 4 ---
 	slot3 = slot0
 	slot1 = slot0.refreshBtState
 
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot36.EVENT_OnAuthorityChanged = slot37
+slot41.EVENT_OnAuthorityChanged = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.fsm
@@ -3240,9 +3249,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_EnterScene = slot37
+slot41.EVENT_EnterScene = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -3290,9 +3299,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_LeaveScene = slot37
+slot41.EVENT_LeaveScene = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._resetAIAgent
@@ -3345,9 +3354,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_ResetScene = slot37
+slot41.EVENT_ResetScene = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
@@ -3365,7 +3374,7 @@ slot37 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #12
+	JUMP TO BLOCK #9
 	end
 
 
@@ -3403,25 +3412,23 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #3 28-37, warpins: 1 ---
-	slot1 = require
-	slot3 = "Const.ClientConst"
-	slot1 = slot1(slot3)
-	slot2 = AIControllerUtils
-	slot2 = slot2.setUseKCCMove
-	slot4 = slot0
-	slot5 = true
-	slot6 = slot1.KccControlType
-	slot6 = slot6.InCombat
+	--- BLOCK #3 28-35, warpins: 1 ---
+	slot1 = AIControllerUtils
+	slot1 = slot1.setUseKCCMove
+	slot3 = slot0
+	slot4 = true
+	slot5 = Const
+	slot5 = slot5.KccControlType
+	slot5 = slot5.InCombat
 
-	slot2(slot4, slot5, slot6)
+	slot1(slot3, slot4, slot5)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 38-43, warpins: 3 ---
+	--- BLOCK #4 36-41, warpins: 3 ---
 	slot1 = clientUtils
 	slot1 = slot1.checkIsHideEntity
 	slot3 = slot0
@@ -3435,7 +3442,7 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #5 44-50, warpins: 1 ---
+	--- BLOCK #5 42-48, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
 	slot4 = AiConst
@@ -3449,7 +3456,7 @@ slot37 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 51-56, warpins: 1 ---
+	--- BLOCK #6 49-54, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
 	slot4 = AiConst
@@ -3463,7 +3470,7 @@ slot37 = function(slot0)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 57-69, warpins: 2 ---
+	--- BLOCK #7 55-67, warpins: 2 ---
 	slot1 = AIControllerUtils
 	slot1 = slot1.resume
 	slot3 = slot0
@@ -3474,62 +3481,19 @@ slot37 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = Utils
-	slot1 = slot1.isNpc
+	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #7 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #8 70-75, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.checkIsInTown
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #8 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 76-81, warpins: 1 ---
-	slot1 = AIControllerUtils
-	slot1 = slot1.setAuthority
-	slot3 = slot0
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	return
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 82-87, warpins: 3 ---
-	slot1 = AIUtils
-	slot1 = slot1.checkIsAuthorityMaster
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #10 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #11 88-99, warpins: 1 ---
+	--- BLOCK #8 68-79, warpins: 1 ---
 	slot1 = AIControllerUtils
 	slot1 = slot1.setAuthority
 	slot3 = slot0
@@ -3545,26 +3509,26 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #12 100-105, warpins: 1 ---
-	slot1 = AIUtils
+	--- BLOCK #9 80-85, warpins: 1 ---
+	slot1 = Utils
 	slot1 = slot1.checkIsAuthorityMaster
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #9 ---
 
 	slot1 = if not slot1 then
-	JUMP TO BLOCK #13
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #13 106-111, warpins: 1 ---
+	--- BLOCK #10 86-91, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
 	slot4 = AiConst
@@ -3573,12 +3537,12 @@ slot37 = function(slot0)
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #13 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #14
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #14 112-121, warpins: 2 ---
+	--- BLOCK #11 92-101, warpins: 2 ---
 	slot1 = slot0.AI
 	slot1 = slot1.fsm
 	slot3 = slot1
@@ -3593,22 +3557,22 @@ slot37 = function(slot0)
 
 	slot1(slot3)
 
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #11 ---
 
-	FLOW; TARGET BLOCK #15
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #15 122-122, warpins: 3 ---
+	--- BLOCK #12 102-102, warpins: 3 ---
 	return
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot36.onEnterSpace = slot37
+slot41.onEnterSpace = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.detachBt
@@ -3626,7 +3590,7 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-12, warpins: 1 ---
+	--- BLOCK #1 8-15, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.fsm
 	slot3 = slot1
@@ -3634,12 +3598,15 @@ slot37 = function(slot0)
 
 	slot1(slot3)
 
+	slot1 = slot0.AI
+	slot2 = nil
+	slot1.fsm = slot2
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 13-17, warpins: 2 ---
+	--- BLOCK #2 16-20, warpins: 2 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
 	slot1 = slot1()
@@ -3652,7 +3619,7 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #3 18-24, warpins: 1 ---
+	--- BLOCK #3 21-27, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isPet
 	slot3 = slot0
@@ -3667,7 +3634,7 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #4 25-27, warpins: 1 ---
+	--- BLOCK #4 28-30, warpins: 1 ---
 	slot1 = clientUtils
 	slot1 = slot1.exitAfkMode
 
@@ -3678,7 +3645,7 @@ slot37 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-28, warpins: 3 ---
+	--- BLOCK #5 31-31, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -3686,9 +3653,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onLeaveSpace = slot37
+slot41.onLeaveSpace = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
@@ -3714,38 +3681,18 @@ slot37 = function(slot0)
 
 end
 
-slot36.onPetSummon = slot37
+slot41.onPetSummon = slot42
 
-slot37 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = Utils
-	slot1 = slot1.isBotPet
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-12, warpins: 1 ---
+slot42 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
 	slot1 = AnimationUtils
-	slot1 = slot1.playAnimationState
+	slot1 = slot1.forceChangeState
 	slot3 = slot0
 	slot4 = CharacterStateConst
 	slot4 = slot4.LOCOMOTION
 
 	slot1(slot3, slot4)
 
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 13-26, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
 	slot4 = AiConst
@@ -3764,15 +3711,15 @@ slot37 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot36.onPetUnSummon = slot37
+slot41.onPetUnSummon = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isBotPet
@@ -3827,9 +3774,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_Before_BeControlled = slot37
+slot41.EVENT_Before_BeControlled = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
@@ -3855,7 +3802,7 @@ slot37 = function(slot0)
 	slot1(slot3, slot4)
 
 	slot1 = AnimationUtils
-	slot1 = slot1.playAnimationState
+	slot1 = slot1.forceChangeState
 	slot3 = slot0
 	slot4 = CharacterStateConst
 	slot4 = slot4.LOCOMOTION
@@ -3869,9 +3816,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_LoseControlled = slot37
+slot41.EVENT_LoseControlled = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-29, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
@@ -3914,9 +3861,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_BeStick = slot37
+slot41.EVENT_BeStick = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
@@ -3942,9 +3889,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_BeUnStick = slot37
+slot41.EVENT_BeUnStick = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
@@ -3970,9 +3917,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_OnEntityBeAttached = slot37
+slot41.EVENT_OnEntityBeAttached = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBt
@@ -3998,9 +3945,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_OnEntityBeDetached = slot37
+slot41.EVENT_OnEntityBeDetached = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.agent
 	--- END OF BLOCK #0 ---
@@ -4044,9 +3991,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.EVENT_onAddAbility = slot37
+slot41.EVENT_onAddAbility = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.agent
 	--- END OF BLOCK #0 ---
@@ -4090,9 +4037,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.EVENT_onRemoveAbility = slot37
+slot41.EVENT_onRemoveAbility = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = BehaviorTreeFactory
 	slot1 = slot1.clearCache
@@ -4121,9 +4068,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_PostReload = slot37
+slot41.EVENT_PostReload = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isBTRunning
@@ -4137,9 +4084,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.isBTPaused = slot37
+slot41.isBTPaused = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.fsm
@@ -4172,9 +4119,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.isBTRunning = slot37
+slot41.isBTRunning = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.fsm
@@ -4207,9 +4154,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.isBTInit = slot37
+slot41.isBTInit = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isStaticNpc
@@ -4251,9 +4198,9 @@ slot37 = function(slot0)
 
 end
 
-slot36._resetAIAgent = slot37
+slot41._resetAIAgent = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBtGM
@@ -4267,9 +4214,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.RPC_SC_PauseBtGM = slot37
+slot41.RPC_SC_PauseBtGM = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.resumeBtGM
@@ -4283,9 +4230,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.RPC_SC_ResumeBtGM = slot37
+slot41.RPC_SC_ResumeBtGM = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.pauseBt
@@ -4300,9 +4247,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.RPC_SC_PauseBt = slot37
+slot41.RPC_SC_PauseBt = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.resumeBt
@@ -4317,9 +4264,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.RPC_SC_ResumeBt = slot37
+slot41.RPC_SC_ResumeBt = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.isPauseBt
 	--- END OF BLOCK #0 ---
@@ -4361,9 +4308,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.on_isPauseBt_changed = slot37
+slot41.on_isPauseBt_changed = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = LoggerManager
 	slot2 = slot2.checkLogger
@@ -4493,9 +4440,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.RPC_CS_TriggerBlueprint = slot37
+slot41.RPC_CS_TriggerBlueprint = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = LoggerManager
 	slot3 = slot3.checkLogger
@@ -4543,9 +4490,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.RPC_SC_AIEvent = slot37
+slot41.RPC_SC_AIEvent = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = Utils
 	slot3 = slot3.checkClient
@@ -4583,9 +4530,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.simulateAIAction = slot37
+slot41.simulateAIAction = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCurrentAIParmonPlan
@@ -4645,9 +4592,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.checkAICanInteract = slot37
+slot41.checkAICanInteract = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.setAINodeDebug
@@ -4662,9 +4609,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.openAINodeDebug = slot37
+slot41.openAINodeDebug = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.addEntityTag
@@ -4688,9 +4635,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onAIEnterFog = slot37
+slot41.onAIEnterFog = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.removeEntityTag
@@ -4714,9 +4661,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onAIExitFog = slot37
+slot41.onAIExitFog = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -4803,9 +4750,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.initNpcStatusTrigger = slot37
+slot41.initNpcStatusTrigger = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = CTRPool
 	slot1 = slot1.getContext
@@ -4830,9 +4777,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.initTimePeriodTrigger = slot37
+slot41.initTimePeriodTrigger = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.checkIgnoreAILod
@@ -4919,9 +4866,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.setIgnoreAILod = slot37
+slot41.setIgnoreAILod = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.AI
 	slot1 = slot1.ignoreAILod
@@ -4958,9 +4905,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.checkIgnoreAILod = slot37
+slot41.checkIgnoreAILod = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = CTRPool
 	slot2 = slot2.getContext
@@ -4981,9 +4928,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.onAILandStateEnter = slot37
+slot41.onAILandStateEnter = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = CTRPool
 	slot2 = slot2.getContext
@@ -5006,9 +4953,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.onTimePeriodChangeAITrigger = slot37
+slot41.onTimePeriodChangeAITrigger = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-44, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.pauseBt
@@ -5157,9 +5104,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_BeTrapped = slot37
+slot41.EVENT_BeTrapped = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.resumeBt
@@ -5226,9 +5173,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.EVENT_CancelTrapped = slot37
+slot41.EVENT_CancelTrapped = slot42
 
-slot37 = function(slot0, slot1, slot2, slot3)
+slot42 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = Utils
 	slot4 = slot4.checkClient
@@ -5294,9 +5241,9 @@ slot37 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot36.onAIPlanFinish = slot37
+slot41.onAIPlanFinish = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -5345,9 +5292,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onExitAfkMode = slot37
+slot41.onExitAfkMode = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -5389,9 +5336,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onEnterAfkMode = slot37
+slot41.onEnterAfkMode = slot42
 
-slot37 = function(slot0, slot1, slot2, slot3, slot4)
+slot42 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot0.aiState = slot2
 	slot0.behaviorState = slot4
@@ -5433,7 +5380,7 @@ slot37 = function(slot0, slot1, slot2, slot3, slot4)
 
 
 	--- BLOCK #3 17-22, warpins: 1 ---
-	slot5 = AIUtils
+	slot5 = Utils
 	slot5 = slot5.checkIsAuthorityMaster
 	slot7 = slot0
 	slot5 = slot5(slot7)
@@ -5477,9 +5424,9 @@ slot37 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot36.onAIStateChange = slot37
+slot41.onAIStateChange = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -5527,9 +5474,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.Event_OnLeaveTeam = slot37
+slot41.Event_OnLeaveTeam = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -5577,9 +5524,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.Event_OnJoinTeam = slot37
+slot41.Event_OnJoinTeam = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -5645,9 +5592,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_OnHideShowEntityDictChange = slot37
+slot41.EVENT_OnHideShowEntityDictChange = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = AIControllerUtils
 	slot1 = slot1.checkOpen
@@ -5685,9 +5632,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.EVENT_ConfigDataChange = slot37
+slot41.EVENT_ConfigDataChange = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.resumeBt
@@ -5705,9 +5652,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onSkeletonLoaded = slot37
+slot41.onSkeletonLoaded = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = AIUtils
 	slot1 = slot1.pauseBt
@@ -5725,9 +5672,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.onSkeletonUnloaded = slot37
+slot41.onSkeletonUnloaded = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0.AI
 	slot3.lastPatrolId = slot1
@@ -5741,9 +5688,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.saveLastPatrolInfo = slot37
+slot41.saveLastPatrolInfo = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.AI
 	slot2 = slot2.lastPatrolId
@@ -5778,28 +5725,28 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.checkLastPatrolInfo = slot37
+slot41.checkLastPatrolInfo = slot42
 
-slot37 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isPet
-	slot4 = slot0
+slot42 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot2 = slot0.agent
+	slot4 = slot2
+	slot2 = slot2.getRootState
 	slot2 = slot2(slot4)
+	slot3 = Utils
+	slot3 = slot3.isPet
+	slot5 = slot0
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-14, warpins: 1 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
+	--- BLOCK #1 11-14, warpins: 1 ---
 	slot3 = EBTRootState
 	slot3 = slot3.ST_Root_Idle
 	--- END OF BLOCK #1 ---
@@ -5807,42 +5754,38 @@ slot37 = function(slot0, slot1)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #13
 	end
 
 
 	--- BLOCK #2 15-20, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._sendStateFreeMessage
-	slot5 = "IdleMsgTrigger"
-	slot6 = slot1
+	slot5 = slot0
+	slot3 = slot0._sendStateFreeMessage
+	slot6 = "IdleMsgTrigger"
+	slot7 = slot1
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #14
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
 	--- BLOCK #3 21-26, warpins: 1 ---
-	slot2 = Utils
-	slot2 = slot2.isPuppet
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	slot3 = Utils
+	slot3 = slot3.isPuppet
+	slot5 = slot0
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #4 27-34, warpins: 1 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
+	--- BLOCK #4 27-30, warpins: 1 ---
 	slot3 = EBTRootState
 	slot3 = slot3.ST_Root_Idle
 	--- END OF BLOCK #4 ---
@@ -5854,39 +5797,30 @@ slot37 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 35-49, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._sendStateFreeMessage
-	slot5 = "IdleMsgTrigger"
-	slot6 = slot1
+	--- BLOCK #5 31-42, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0._tempSendMsgVision
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5)
 
-	slot4 = slot0
-	slot2 = slot0._tempSendMsgVisionValueNone
+	slot5 = slot0
+	slot3 = slot0._sendStateFreeMessage
+	slot6 = "IdleMsgTrigger"
+	slot7 = slot1
 
-	slot2(slot4)
+	slot3(slot5, slot6, slot7)
 
-	slot4 = slot0
-	slot2 = slot0._tempSendMsgVisionValueAlert
+	slot5 = slot0
+	slot3 = slot0._perceptFullSendMsgToBrother
 
-	slot2(slot4)
-
-	slot4 = slot0
-	slot2 = slot0._tempSendMsgVisionValueFull
-
-	slot2(slot4)
+	slot3(slot5)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #6 50-57, warpins: 1 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
+	--- BLOCK #6 43-46, warpins: 1 ---
 	slot3 = EBTRootState
 	slot3 = slot3.ST_Root_Alert
 	--- END OF BLOCK #6 ---
@@ -5898,24 +5832,25 @@ slot37 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 58-63, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._sendStateFreeMessage
-	slot5 = "AlertMsgTrigger"
-	slot6 = slot1
+	--- BLOCK #7 47-55, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0._sendStateFreeMessage
+	slot6 = "AlertMsgTrigger"
+	slot7 = slot1
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0._perceptFullSendMsgToBrother
+
+	slot3(slot5)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #8 64-71, warpins: 1 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
+	--- BLOCK #8 56-59, warpins: 1 ---
 	slot3 = EBTRootState
 	slot3 = slot3.ST_Root_Sensed
 	--- END OF BLOCK #8 ---
@@ -5923,93 +5858,78 @@ slot37 = function(slot0, slot1)
 	if slot2 == slot3 then
 	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #10
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #9 72-76, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0._sendStateFreeMessage
-	slot5 = "SensedMsgTrigger"
-	slot6 = slot1
+	--- BLOCK #9 60-68, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0._sendStateFreeMessage
+	slot6 = "SensedMsgTrigger"
+	slot7 = slot1
 
-	slot2(slot4, slot5, slot6)
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0._perceptFullSendMsgToBrother
+
+	slot3(slot5)
 
 	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #10
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #10 77-84, warpins: 4 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
-	slot3 = EBTRootState
-	slot3 = slot3.ST_Root_Idle
+	--- BLOCK #10 69-74, warpins: 1 ---
+	slot3 = Utils
+	slot3 = slot3.isVirtualEntity
+	slot5 = slot0
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #10 ---
 
-	if slot2 ~= slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #11 85-92, warpins: 1 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
+	--- BLOCK #11 75-78, warpins: 1 ---
 	slot3 = EBTRootState
-	slot3 = slot3.ST_Root_Alert
+	slot3 = slot3.ST_Root_Idle
 	--- END OF BLOCK #11 ---
 
-	if slot2 ~= slot3 then
+	if slot2 == slot3 then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 93-100, warpins: 1 ---
-	slot2 = slot0.agent
-	slot4 = slot2
-	slot2 = slot2.getRootState
-	slot2 = slot2(slot4)
-	slot3 = EBTRootState
-	slot3 = slot3.ST_Root_Sensed
+	--- BLOCK #12 79-83, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0._sendStateFreeMessage
+	slot6 = "IdleMsgTrigger"
+	slot7 = slot1
+
+	slot3(slot5, slot6, slot7)
+
 	--- END OF BLOCK #12 ---
 
-	if slot2 == slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 101-103, warpins: 3 ---
-	slot4 = slot0
-	slot2 = slot0._perceptFullSendMsgToBrother
-
-	slot2(slot4)
-
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 104-104, warpins: 5 ---
+	--- BLOCK #13 84-84, warpins: 9 ---
 	return
-	--- END OF BLOCK #14 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot36.processRootStateMessage = slot37
+slot41.processRootStateMessage = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -6065,9 +5985,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36._sendStateFreeMessage = slot37
+slot41._sendStateFreeMessage = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.getMaxPerceptibility
 
@@ -6362,9 +6282,9 @@ slot37 = function(slot0)
 
 end
 
-slot36._perceptFullSendMsgToBrother = slot37
+slot41._perceptFullSendMsgToBrother = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.getMaxPerceptibility
 	--- END OF BLOCK #0 ---
@@ -6407,25 +6327,29 @@ slot37 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-16, warpins: 2 ---
+	--- BLOCK #4 11-24, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getMaxPerceptibility
 	slot1, slot2 = slot1(slot3)
-	slot3 = 0
+	slot5 = slot0
+	slot3 = slot0.hasAITag
+	slot6 = "TA_VisionAlert"
+	slot3 = slot3(slot5, slot6)
+	slot6 = slot0
+	slot4 = slot0.hasAITag
+	slot7 = "TA_VisionFull"
+	slot4 = slot4(slot6, slot7)
+	slot5 = 0
 	--- END OF BLOCK #4 ---
 
-	if slot2 <= slot3 then
+	if slot2 <= slot5 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #5 17-22, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.hasAITag
-	slot6 = "TA_VisionAlert"
-	slot3 = slot3(slot5, slot6)
+	--- BLOCK #5 25-26, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
 	slot3 = if not slot3 then
@@ -6435,14 +6359,10 @@ slot37 = function(slot0)
 	end
 
 
-	--- BLOCK #6 23-28, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.hasAITag
-	slot6 = "TA_VisionFull"
-	slot3 = slot3(slot5, slot6)
+	--- BLOCK #6 27-28, warpins: 1 ---
 	--- END OF BLOCK #6 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
@@ -6450,258 +6370,156 @@ slot37 = function(slot0)
 
 
 	--- BLOCK #7 29-37, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.removeAITag
-	slot6 = "TA_VisionAlert"
+	slot7 = slot0
+	slot5 = slot0.removeAITag
+	slot8 = "TA_VisionAlert"
 
-	slot3(slot5, slot6)
+	slot5(slot7, slot8)
 
-	slot5 = slot0
-	slot3 = slot0.removeAITag
-	slot6 = "TA_VisionFull"
+	slot7 = slot0
+	slot5 = slot0.removeAITag
+	slot8 = "TA_VisionFull"
 
-	slot3(slot5, slot6)
+	slot5(slot7, slot8)
 
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #8 38-48, warpins: 1 ---
-	slot3 = CTRPool
-	slot3 = slot3.getContext
-	slot3 = slot3()
-	slot4 = slot0.actorId
-	slot3.sourceActorId = slot4
-	slot4 = AIControllerUtils
-	slot4 = slot4.sendAIEvent
-	slot6 = slot0
-	slot7 = "VisionValue_None"
-	slot8 = slot3
+	--- BLOCK #8 38-49, warpins: 1 ---
+	slot5 = CTRPool
+	slot5 = slot5.getContext
+	slot5 = slot5()
+	slot6 = slot0.actorId
+	slot5.sourceActorId = slot6
+	slot6 = AIControllerUtils
+	slot6 = slot6.sendAIEvent
+	slot8 = slot0
+	slot9 = "VisionValue_None"
+	slot10 = slot5
 
-	slot4(slot6, slot7, slot8)
+	slot6(slot8, slot9, slot10)
 
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #9 49-49, warpins: 3 ---
-	return
+	--- BLOCK #9 50-52, warpins: 1 ---
+	slot5 = 10
 	--- END OF BLOCK #9 ---
 
-
-
-end
-
-slot36._tempSendMsgVisionValueNone = slot37
-
-slot37 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.getMaxPerceptibility
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
+	if slot2 > slot5 then
+	JUMP TO BLOCK #10
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot1 = slot0.hasAITag
+	--- BLOCK #10 53-55, warpins: 1 ---
+	slot5 = 99
+	--- END OF BLOCK #10 ---
 
-	--- END OF BLOCK #1 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
+	if slot2 <= slot5 then
+	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #2 7-7, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 8-13, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.getMaxPerceptibility
-	slot1, slot2 = slot1(slot3)
-	slot3 = 10
-	--- END OF BLOCK #3 ---
-
-	if slot2 > slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #4 14-16, warpins: 1 ---
-	slot3 = 99
-	--- END OF BLOCK #4 ---
-
-	if slot2 <= slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #5 17-22, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.hasAITag
-	slot6 = "TA_VisionAlert"
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #5 ---
+	--- BLOCK #11 56-57, warpins: 1 ---
+	--- END OF BLOCK #11 ---
 
 	slot3 = if not slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #6 23-28, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.hasAITag
-	slot6 = "TA_VisionFull"
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #6 ---
+	--- BLOCK #12 58-59, warpins: 1 ---
+	--- END OF BLOCK #12 ---
 
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #7
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #14
 	end
 
 
-	--- BLOCK #7 29-40, warpins: 1 ---
-	slot3 = CTRPool
-	slot3 = slot3.getContext
-	slot3 = slot3()
-	slot4 = slot0.actorId
-	slot3.sourceActorId = slot4
-	slot3.sensorTgtId = slot1
-	slot4 = AIControllerUtils
-	slot4 = slot4.sendAIEvent
-	slot6 = slot0
-	slot7 = "VisionValue_Alert"
-	slot8 = slot3
+	--- BLOCK #13 60-72, warpins: 1 ---
+	slot5 = CTRPool
+	slot5 = slot5.getContext
+	slot5 = slot5()
+	slot6 = slot0.actorId
+	slot5.sourceActorId = slot6
+	slot5.sensorTgtId = slot1
+	slot6 = AIControllerUtils
+	slot6 = slot6.sendAIEvent
+	slot8 = slot0
+	slot9 = "VisionValue_Alert"
+	slot10 = slot5
 
-	slot4(slot6, slot7, slot8)
+	slot6(slot8, slot9, slot10)
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #8
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #8 41-41, warpins: 5 ---
+	--- BLOCK #14 73-75, warpins: 4 ---
+	slot5 = 100
+	--- END OF BLOCK #14 ---
+
+	if slot2 >= slot5 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 76-77, warpins: 1 ---
+	--- END OF BLOCK #15 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 78-89, warpins: 1 ---
+	slot5 = CTRPool
+	slot5 = slot5.getContext
+	slot5 = slot5()
+	slot6 = slot0.actorId
+	slot5.sourceActorId = slot6
+	slot5.sensorTgtId = slot1
+	slot6 = AIControllerUtils
+	slot6 = slot6.sendAIEvent
+	slot8 = slot0
+	slot9 = "VisionValue_Full"
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 90-90, warpins: 6 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #17 ---
 
 
 
 end
 
-slot36._tempSendMsgVisionValueAlert = slot37
+slot41._tempSendMsgVision = slot42
 
-slot37 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.getMaxPerceptibility
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 4-6, warpins: 1 ---
-	slot1 = slot0.hasAITag
-
-	--- END OF BLOCK #1 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 7-7, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 8-13, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.getMaxPerceptibility
-	slot1, slot2 = slot1(slot3)
-	slot3 = 100
-	--- END OF BLOCK #3 ---
-
-	if slot2 >= slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #4 14-19, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.hasAITag
-	slot6 = "TA_VisionFull"
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #4 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 20-31, warpins: 1 ---
-	slot3 = CTRPool
-	slot3 = slot3.getContext
-	slot3 = slot3()
-	slot4 = slot0.actorId
-	slot3.sourceActorId = slot4
-	slot3.sensorTgtId = slot1
-	slot4 = AIControllerUtils
-	slot4 = slot4.sendAIEvent
-	slot6 = slot0
-	slot7 = "VisionValue_Full"
-	slot8 = slot3
-
-	slot4(slot6, slot7, slot8)
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 32-32, warpins: 3 ---
-	return
-	--- END OF BLOCK #6 ---
-
-
-
-end
-
-slot36._tempSendMsgVisionValueFull = slot37
-
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkIsAuthorityMaster
@@ -6749,9 +6567,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.addAITag = slot37
+slot41.addAITag = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkIsAuthorityMaster
@@ -6799,9 +6617,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.removeAITag = slot37
+slot41.removeAITag = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = slot0.AI
 	slot2 = slot2.aiTags
@@ -6838,9 +6656,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.hasAITag = slot37
+slot41.hasAITag = slot42
 
-slot37 = function(slot0)
+slot42 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = slot0.AI
@@ -6890,9 +6708,9 @@ slot37 = function(slot0)
 
 end
 
-slot36.getAITagInfo = slot37
+slot41.getAITagInfo = slot42
 
-slot37 = function(slot0, slot1)
+slot42 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pairs
 	slot4 = slot0.hatredMap
@@ -6935,9 +6753,9 @@ slot37 = function(slot0, slot1)
 
 end
 
-slot36.updateAIHatredList = slot37
+slot41.updateAIHatredList = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.pauseBt
@@ -6954,9 +6772,9 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.EVENT_OnEnterVehicle = slot37
+slot41.EVENT_OnEnterVehicle = slot42
 
-slot37 = function(slot0, slot1, slot2)
+slot42 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.resumeBt
@@ -6973,9 +6791,10 @@ slot37 = function(slot0, slot1, slot2)
 
 end
 
-slot36.EVENT_OnExitVehicle = slot37
+slot41.EVENT_OnExitVehicle = slot42
+slot42 = "getBubbleRoutePoints"
 
-slot37 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.space
 	--- END OF BLOCK #0 ---
@@ -7147,10 +6966,10 @@ slot37 = function(slot0)
 
 end
 
-slot36.getBubbleRoutePoints = slot37
-slot37 = "tryTickPerception"
+slot41[slot42] = slot43
+slot42 = "tryTickPerception"
 
-slot38 = function(slot0)
+slot43 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.perceptibility
 	--- END OF BLOCK #0 ---
@@ -7162,9 +6981,11 @@ slot38 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
+	--- BLOCK #1 4-9, warpins: 1 ---
 	slot1 = slot0.perceptibility
 	slot1 = slot1.visionSensor
+	slot2 = slot0.perceptibility
+	slot2 = slot2.noImpVisionSensor
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
@@ -7174,45 +6995,39 @@ slot38 = function(slot0)
 	end
 
 
-	--- BLOCK #2 8-12, warpins: 1 ---
-	slot1 = slot0.perceptibility
-	slot1 = slot1.visionSensor
-	slot3 = slot1
-	slot1 = slot1.updateVisionByAI
+	--- BLOCK #2 10-12, warpins: 1 ---
+	slot5 = slot1
+	slot3 = slot1.updateVisionByAI
 
-	slot1(slot3)
+	slot3(slot5)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 13-16, warpins: 2 ---
-	slot1 = slot0.perceptibility
-	slot1 = slot1.noImpVisionSensor
+	--- BLOCK #3 13-14, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 17-21, warpins: 1 ---
-	slot1 = slot0.perceptibility
-	slot1 = slot1.noImpVisionSensor
-	slot3 = slot1
-	slot1 = slot1.updateNoImpVisionByAI
+	--- BLOCK #4 15-17, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.updateNoImpVisionByAI
 
-	slot1(slot3)
+	slot3(slot5)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 22-22, warpins: 3 ---
+	--- BLOCK #5 18-18, warpins: 3 ---
 	return
 	--- END OF BLOCK #5 ---
 
@@ -7220,9 +7035,9 @@ slot38 = function(slot0)
 
 end
 
-slot36[slot37] = slot38
+slot41[slot42] = slot43
 
-return slot36
+return slot41
 --- END OF BLOCK #0 ---
 
 

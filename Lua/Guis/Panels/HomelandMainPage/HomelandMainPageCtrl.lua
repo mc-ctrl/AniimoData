@@ -1,4 +1,4 @@
---- BLOCK #0 1-95, warpins: 1 ---
+--- BLOCK #0 1-100, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -64,10 +64,16 @@ slot20 = {
 	true
 }
 slot18[slot19] = slot20
+slot19 = slot1.HOME_CAR_UPGRADE_STATE_CHANGED
+slot20 = {
+	"onHomeCarUpgradeStateChanged",
+	true
+}
+slot18[slot19] = slot20
 slot4.messages = slot18
 
 slot18 = function(slot0, slot1)
-	--- BLOCK #0 1-26, warpins: 1 ---
+	--- BLOCK #0 1-35, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -91,6 +97,10 @@ slot18 = function(slot0, slot1)
 	slot0.homeCarBaseInfo = slot2
 	slot2 = {}
 	slot0.visitorsList = slot2
+	slot2 = slot0.view
+	slot2 = slot2.btnLiveUButton
+	slot3 = false
+	slot2.interactable = slot3
 	slot4 = slot0
 	slot2 = slot0.refreshMainPageInfo
 
@@ -101,6 +111,183 @@ slot18 = function(slot0, slot1)
 
 	slot2(slot4)
 
+	slot2 = slot0.view
+	slot2 = slot2.btnLiveUButton
+
+	slot3 = function(slot0, slot1)
+		--- BLOCK #0 1-62, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.GetComponent
+		slot5 = "ObjectReference"
+		slot2 = slot2(slot4, slot5)
+		slot5 = slot2
+		slot3 = slot2.GetRefValue
+		slot6 = "txtNumTotalUSDFText"
+		slot3 = slot3(slot5, slot6)
+		slot6 = slot2
+		slot4 = slot2.GetRefValue
+		slot7 = "listAttriUList"
+		slot4 = slot4(slot6, slot7)
+		slot7 = slot2
+		slot5 = slot2.GetRefValue
+		slot8 = "txtTitleUSDFText"
+		slot5 = slot5(slot7, slot8)
+		slot6 = ClientTextUtils
+		slot6 = slot6.setText
+		slot8 = slot5
+		slot9 = pg
+		slot9 = slot9.getGameString
+		slot11 = "HOMELAND_COMPOSE_LIVE_VALUE"
+		MULTRES = slot9(slot11)
+
+		slot6(slot8, MULTRES)
+
+		slot6 = self
+		slot6 = slot6.petComfortVale
+		slot7 = self
+		slot7 = slot7.furnitureComfortValue
+		slot6 = slot6 + slot7
+		slot7 = ClientTextUtils
+		slot7 = slot7.setText
+		slot9 = slot3
+		slot10 = slot6
+
+		slot7(slot9, slot10)
+
+		slot7 = function(slot0, slot1, slot2)
+			--- BLOCK #0 1-3, warpins: 1 ---
+			slot3 = slot2.tIndex
+			--- END OF BLOCK #0 ---
+
+			if slot3 == 0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #6
+			end
+
+
+			--- BLOCK #1 4-18, warpins: 1 ---
+			slot5 = slot0
+			slot3 = slot0.GetComponent
+			slot6 = "ObjectReference"
+			slot3 = slot3(slot5, slot6)
+			slot6 = slot3
+			slot4 = slot3.GetRefValue
+			slot7 = "txtNameUSDFText"
+			slot4 = slot4(slot6, slot7)
+			slot7 = slot3
+			slot5 = slot3.GetRefValue
+			slot8 = "txtNumUSDFText"
+			slot5 = slot5(slot7, slot8)
+			slot6 = slot2.desc
+			--- END OF BLOCK #1 ---
+
+			slot6 = if slot6 then
+			JUMP TO BLOCK #2
+			else
+			JUMP TO BLOCK #3
+			end
+
+
+			--- BLOCK #2 19-23, warpins: 1 ---
+			slot6 = ClientTextUtils
+			slot6 = slot6.setText
+			slot8 = slot4
+			slot9 = slot2.desc
+
+			slot6(slot8, slot9)
+
+			--- END OF BLOCK #2 ---
+
+			FLOW; TARGET BLOCK #3
+
+
+			--- BLOCK #3 24-26, warpins: 2 ---
+			slot6 = slot2.num
+			--- END OF BLOCK #3 ---
+
+			slot6 = if slot6 then
+			JUMP TO BLOCK #4
+			else
+			JUMP TO BLOCK #5
+			end
+
+
+			--- BLOCK #4 27-32, warpins: 1 ---
+			slot6 = ClientTextUtils
+			slot6 = slot6.setText
+			slot8 = slot5
+			slot9 = slot2.num
+
+			slot6(slot8, slot9)
+
+			--- END OF BLOCK #4 ---
+
+			UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+			--- BLOCK #5 33-37, warpins: 1 ---
+			slot6 = ClientTextUtils
+			slot6 = slot6.setText
+			slot8 = slot5
+			slot9 = ""
+
+			slot6(slot8, slot9)
+
+			--- END OF BLOCK #5 ---
+
+			FLOW; TARGET BLOCK #6
+
+
+			--- BLOCK #6 38-38, warpins: 3 ---
+			return
+			--- END OF BLOCK #6 ---
+
+
+
+		end
+
+		slot4.luaRenderItem = slot7
+		slot7 = {}
+		slot8 = {
+			tIndex = 0
+		}
+		slot9 = pg
+		slot9 = slot9.getGameString
+		slot11 = "FURNITURE_COMFORT"
+		slot9 = slot9(slot11)
+		slot8.desc = slot9
+		slot9 = self
+		slot9 = slot9.furnitureComfortValue
+		slot8.num = slot9
+		slot7[1] = slot8
+		slot8 = {
+			tIndex = 0
+		}
+		slot9 = pg
+		slot9 = slot9.getGameString
+		slot11 = "PET_COMFORT"
+		slot9 = slot9(slot11)
+		slot8.desc = slot9
+		slot9 = self
+		slot9 = slot9.petComfortVale
+		slot8.num = slot9
+		slot7[2] = slot8
+		slot10 = slot4
+		slot8 = slot4.SetList
+		slot11 = slot7
+
+		slot8(slot10, slot11)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot2.luaRenderTooltip = slot3
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -109,6 +296,142 @@ slot18 = function(slot0, slot1)
 end
 
 slot4.onCreate = slot18
+
+slot18 = function(slot0)
+	--- BLOCK #0 1-27, warpins: 1 ---
+	slot1 = slot0.homeCarBaseInfo
+	slot1 = slot1.level
+	slot2 = slot0.homeCarBaseInfo
+	slot2 = slot2.modelLevel
+	slot3 = HomeLandUtils
+	slot3 = slot3.getHomeCarInfo
+	slot3 = slot3()
+	slot0.homeCarBaseInfo = slot3
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.refreshRedDotState
+	slot5 = RedDotConst
+	slot5 = slot5.RedDotPath
+	slot5 = slot5.FUNC_MENU_HOMECAR_UPGRADE
+
+	slot3(slot5)
+
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.refreshRedDotState
+	slot5 = RedDotConst
+	slot5 = slot5.RedDotPath
+	slot5 = slot5.FUNC_MENU_HOMECAR
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.checkUIVisible
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 28-28, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 29-37, warpins: 2 ---
+	slot3 = slot0.carScene
+	slot5 = slot3
+	slot3 = slot3.refreshHomeCar
+	slot6 = slot0.homeCarBaseInfo
+
+	slot3(slot5, slot6)
+
+	slot3 = slot0.homeCarBaseInfo
+	slot3 = slot3.level
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 38-54, warpins: 1 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.textUSDFText
+	slot6 = slot0.homeCarBaseInfo
+	slot6 = slot6.level
+
+	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0.refreshPetInfo
+
+	slot3(slot5)
+
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.refreshRedDotState
+	slot5 = RedDotConst
+	slot5 = slot5.RedDotPath
+	slot5 = slot5.HOMECAR_COMPONENT_UPGRADE
+
+	slot3(slot5)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 55-58, warpins: 2 ---
+	slot3 = slot0.homeCarBaseInfo
+	slot3 = slot3.modelLevel
+	--- END OF BLOCK #4 ---
+
+	if slot2 ~= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 59-67, warpins: 1 ---
+	slot3 = slot0.carScene
+	slot5 = slot3
+	slot3 = slot3.switchCamera
+	slot6 = UIConst
+	slot6 = slot6.HOMECAR_MODE_IDX
+	slot6 = slot6.MAINPAGE
+	slot7 = slot0.homeCarBaseInfo
+	slot7 = slot7.modelLevel
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 68-68, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot4.onHomeCarUpgradeStateChanged = slot18
 
 slot18 = function(slot0)
 	--- BLOCK #0 1-41, warpins: 1 ---
@@ -147,7 +470,7 @@ slot18 = function(slot0)
 	slot4 = nil
 
 	slot5 = function(slot0)
-		--- BLOCK #0 1-8, warpins: 1 ---
+		--- BLOCK #0 1-16, warpins: 1 ---
 		slot1 = ClientTextUtils
 		slot1 = slot1.setText
 		slot3 = self
@@ -157,8 +480,89 @@ slot18 = function(slot0)
 
 		slot1(slot3, slot4)
 
-		return
+		slot1 = self
+		slot1 = slot1.view
+		slot1 = slot1.btnLiveUButton
+		slot2 = true
+		slot1.interactable = slot2
+		slot1 = self
+		slot2 = slot0.petComfortValue
 		--- END OF BLOCK #0 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 17-17, warpins: 1 ---
+		slot2 = 0
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 18-22, warpins: 2 ---
+		slot1.petComfortVale = slot2
+		slot1 = self
+		slot2 = slot0.furnitureComfortValue
+		--- END OF BLOCK #2 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 23-23, warpins: 1 ---
+		slot2 = 0
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 24-28, warpins: 2 ---
+		slot1.furnitureComfortValue = slot2
+		slot1 = self
+		slot2 = slot0.liuliPetComfortValue
+		--- END OF BLOCK #4 ---
+
+		slot2 = if not slot2 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 29-29, warpins: 1 ---
+		slot2 = 0
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 30-45, warpins: 2 ---
+		slot1.liuliPetComfortValue = slot2
+		slot1 = ClientTextUtils
+		slot1 = slot1.setText
+		slot3 = self
+		slot3 = slot3.view
+		slot3 = slot3.txtNumLiveUSDFText
+		slot4 = self
+		slot4 = slot4.petComfortVale
+		slot5 = self
+		slot5 = slot5.furnitureComfortValue
+		slot4 = slot4 + slot5
+		slot5 = self
+		slot5 = slot5.liuliPetComfortValue
+		slot4 = slot4 + slot5
+
+		slot1(slot3, slot4)
+
+		return
+		--- END OF BLOCK #6 ---
 
 
 
@@ -601,7 +1005,7 @@ end
 slot4.getVisitorsInfo = slot18
 
 slot18 = function(slot0)
-	--- BLOCK #0 1-159, warpins: 1 ---
+	--- BLOCK #0 1-169, warpins: 1 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -1084,7 +1488,35 @@ slot18 = function(slot0)
 		slot0 = slot0.homeCarLevelUp
 		slot0 = slot0.model
 		slot2 = slot0
-		slot0 = slot0.redDot_GetLevelRewardState
+		slot0 = slot0.redDot_GetUpgradeState
+
+		return slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.setPreViewRedDot
+	slot3 = RedDotConst
+	slot3 = slot3.RedDotPath
+	slot3 = slot3.HOMECAR_COMPONENT_UPGRADE
+	slot4 = slot0.view
+	slot4 = slot4.btnLevelupUButton
+
+	slot5 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.homeCarLevelUpComp
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.redDot_GetUpgradeState
 
 		return slot0(slot2)
 		--- END OF BLOCK #0 ---
@@ -1133,7 +1565,7 @@ slot18 = function(slot0)
 	slot1 = slot1.btnShopUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-14, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -1141,11 +1573,38 @@ slot18 = function(slot0)
 		slot0 = slot0.open
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_HOMELAND_FURNITURE_STORE
+		slot4 = {}
+		slot5 = Utils
+		slot5 = slot5.isHomeland
+		slot7 = pg
+		slot7 = slot7.space
+		--- END OF BLOCK #0 ---
 
-		slot0(slot2, slot3)
+		slot7 = if slot7 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 15-17, warpins: 1 ---
+		slot7 = pg
+		slot7 = slot7.space
+		slot7 = slot7.spaceType
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 18-22, warpins: 2 ---
+		slot5 = slot5(slot7)
+		slot5 = not slot5
+		slot4.isCarGroupMode = slot5
+
+		slot0(slot2, slot3, slot4)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -1457,7 +1916,13 @@ end
 slot4.onEnterHomeland = slot18
 
 slot18 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
+	--- BLOCK #0 1-13, warpins: 1 ---
+	slot1 = nil
+	slot0.petComfortVale = slot1
+	slot1 = nil
+	slot0.furnitureComfortValue = slot1
+	slot1 = nil
+	slot0.liuliPetComfortValue = slot1
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -1474,7 +1939,7 @@ slot18 = function(slot0)
 	end
 
 
-	--- BLOCK #1 8-13, warpins: 1 ---
+	--- BLOCK #1 14-19, warpins: 1 ---
 	slot1 = TimerManager
 	slot1 = slot1.removeTimer
 	slot3 = slot0.gotoHomeDelayTimer
@@ -1489,7 +1954,7 @@ slot18 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-14, warpins: 2 ---
+	--- BLOCK #2 20-20, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -1646,7 +2111,7 @@ end
 slot4.onHide = slot18
 
 slot18 = function(slot0)
-	--- BLOCK #0 1-36, warpins: 1 ---
+	--- BLOCK #0 1-57, warpins: 1 ---
 	slot1 = HomeLandUtils
 	slot1 = slot1.getHomeCarInfo
 	slot1 = slot1()
@@ -1691,6 +2156,33 @@ slot18 = function(slot0)
 	slot4 = true
 
 	slot1(slot3, slot4)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.refreshRedDotState
+	slot3 = RedDotConst
+	slot3 = slot3.RedDotPath
+	slot3 = slot3.FUNC_MENU_HOMECAR_UPGRADE
+
+	slot1(slot3)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.refreshRedDotState
+	slot3 = RedDotConst
+	slot3 = slot3.RedDotPath
+	slot3 = slot3.HOMECAR_COMPONENT_UPGRADE
+
+	slot1(slot3)
+
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.refreshRedDotState
+	slot3 = RedDotConst
+	slot3 = slot3.RedDotPath
+	slot3 = slot3.FUNC_MENU_HOMECAR
+
+	slot1(slot3)
 
 	return
 	--- END OF BLOCK #0 ---

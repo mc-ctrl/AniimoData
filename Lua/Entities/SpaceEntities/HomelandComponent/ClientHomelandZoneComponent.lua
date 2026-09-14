@@ -1,4 +1,4 @@
---- BLOCK #0 1-44, warpins: 1 ---
+--- BLOCK #0 1-48, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -60,7 +60,7 @@ slot10 = function(slot0, slot1, slot2)
 	slot3 = slot3.game
 	slot3 = slot3.home
 	slot5 = slot3
-	slot3 = slot3.updateZones
+	slot3 = slot3.onZoneUnlock
 
 	slot3(slot5)
 
@@ -91,6 +91,44 @@ slot10 = function(slot0, slot1, slot2)
 end
 
 slot9.on_zone_delete = slot10
+
+slot10 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.home
+	slot6 = slot4
+	slot4 = slot4.onAreaUnlockedChanged
+
+	slot4(slot6)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.on_unlockArea_changed = slot10
+
+slot10 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.home
+	slot5 = slot3
+	slot3 = slot3.onAreaUnlockedChanged
+
+	slot3(slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot9.on_unlockArea_added = slot10
 
 slot10 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---

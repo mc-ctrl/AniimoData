@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -30,19 +30,25 @@ slot8 = require
 slot10 = "Utils.ClientTextUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.ClientUtils"
+slot11 = "Utils.HomeSeasonUtils"
 slot9 = slot9(slot11)
-slot10 = slot2.LightClass
-slot12 = "HomePlantsSendCtrl"
-slot13 = slot3
-slot10 = slot10(slot12, slot13)
-slot11 = 0
-slot12 = 1
-slot13 = 2
-slot14 = {}
-slot10.messages = slot14
+slot10 = require
+slot12 = "Common.NoticeDef"
+slot10 = slot10(slot12)
+slot11 = require
+slot13 = "Const.UIConst"
+slot11 = slot11(slot13)
+slot12 = slot2.LightClass
+slot14 = "HomePlantsSendCtrl"
+slot15 = slot3
+slot12 = slot12(slot14, slot15)
+slot13 = 0
+slot14 = 1
+slot15 = 2
+slot16 = {}
+slot12.messages = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -58,10 +64,10 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot10.onCreate = slot14
+slot12.onCreate = slot16
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-39, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-33, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.bgCloseUButton
 
@@ -104,101 +110,15 @@ slot14 = function(slot0)
 	slot1 = slot1.btnConfirmUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.sendPlayerUID
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-17, warpins: 1 ---
-		slot0 = ClientUtils
-		slot0 = slot0.showConfirmRaw
-		slot2 = ClientTextUtils
-		slot2 = slot2.getGameString
-		slot4 = "HOME_PLANT_SEND_TITLE"
-		slot2 = slot2(slot4)
-		slot3 = ClientTextUtils
-		slot3 = slot3.getGameString
-		slot5 = "HOME_PLANT_SEND_DESC"
-		slot3 = slot3(slot5)
-
-		slot4 = function()
-			--- BLOCK #0 1-4, warpins: 1 ---
-			slot0 = self
-			slot0 = slot0.sendPlayerUID
-			--- END OF BLOCK #0 ---
-
-			slot0 = if slot0 then
-			JUMP TO BLOCK #1
-			else
-			JUMP TO BLOCK #2
-			end
-
-
-			--- BLOCK #1 5-18, warpins: 1 ---
-			slot0 = {}
-			slot1 = self
-			slot1 = slot1.sendItemId
-			slot2 = self
-			slot2 = slot2.sendItemNum
-			slot0[slot1] = slot2
-			slot1 = pg
-			slot1 = slot1.me
-			slot3 = slot1
-			slot1 = slot1.reqSendPlantToFriend
-			slot4 = self
-			slot4 = slot4.sendPlayerUID
-			slot5 = slot0
-
-			slot1(slot3, slot4, slot5)
-
-			--- END OF BLOCK #1 ---
-
-			FLOW; TARGET BLOCK #2
-
-
-			--- BLOCK #2 19-23, warpins: 2 ---
-			slot0 = self
-			slot2 = slot0
-			slot0 = slot0.dismiss
-
-			slot0(slot2)
-
-			return
-			--- END OF BLOCK #2 ---
-
-
-
-		end
-
-		slot0(slot2, slot3, slot4)
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 18-21, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.dismiss
+		slot0 = slot0.onConfirm
 
 		slot0(slot2)
 
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 22-22, warpins: 2 ---
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #0 ---
 
 
 
@@ -297,7 +217,7 @@ slot14 = function(slot0)
 
 		slot11 = LuaUIUtils
 		slot11 = slot11.getLastTimeStr
-		slot13 = slot10.loginTime
+		slot13 = slot10.lastLogoutTime
 		slot11 = slot11(slot13)
 		slot12 = ClientTextUtils
 		slot12 = slot12.setText
@@ -624,6 +544,67 @@ slot14 = function(slot0)
 	end
 
 	slot1.luaValueChanged = slot2
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 34-41, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	slot3 = slot1
+	slot1 = slot1.AddLuaFocusCursorMovedListener
+	slot4 = "HomePlantsSend"
+
+	slot5 = function()
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.view
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshConsoleBarState
+
+		slot0(slot2)
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-9, warpins: 2 ---
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 42-52, warpins: 2 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.view
@@ -636,16 +617,91 @@ slot14 = function(slot0)
 	slot1(slot3, MULTRES)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot10.addListener = slot14
+slot12.addListener = slot16
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+slot16 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	slot1 = slot1.CurrentFocusedGroupName
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.navMgr
+	slot2 = slot2.CurrentFocusedUContent
+	--- END OF BLOCK #0 ---
+
+	if slot1 == "HomeCollectionFriendl" then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 11-12, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 13-16, warpins: 1 ---
+	slot3 = slot2.gameObject
+	slot3 = slot3.name
+	--- END OF BLOCK #2 ---
+
+	if slot3 ~= "UI_Node_Chat_Friend_Cell(Clone)" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 17-18, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 19-19, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 20-28, warpins: 3 ---
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.Navigation
+	slot4 = slot4.ConsoleBar
+	slot4 = slot4.SetStateForAll
+	slot6 = "HomePlantsSend_List"
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot12.refreshConsoleBarState = slot16
+
+slot16 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
 	slot3 = slot0
@@ -656,6 +712,12 @@ slot14 = function(slot0)
 	slot0.selectBtn = slot1
 	slot1 = nil
 	slot0.sendPlayerUID = slot1
+	slot1 = nil
+	slot0.sendItemId = slot1
+	slot1 = nil
+	slot0.sendMode = slot1
+	slot1 = nil
+	slot0.isRequesting = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -664,10 +726,10 @@ slot14 = function(slot0)
 
 end
 
-slot10.onDestroy = slot14
+slot12.onDestroy = slot16
 
-slot14 = function(slot0, slot1)
-	--- BLOCK #0 1-22, warpins: 1 ---
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -675,36 +737,126 @@ slot14 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-8, warpins: 1 ---
+	slot1 = {}
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 9-13, warpins: 2 ---
 	slot2 = slot1.itemId
 	slot0.sendItemId = slot2
-	slot2 = slot1.itemNum
-	slot0.sendItemNum = slot2
+	slot2 = slot1.mode
+	--- END OF BLOCK #2 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 14-16, warpins: 1 ---
+	slot2 = UIConst
+	slot2 = slot2.HOME_PLANTS_SEND_MODE
+	slot2 = slot2.GIFT
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-29, warpins: 2 ---
+	slot0.sendMode = slot2
+	slot2 = false
+	slot0.isRequesting = slot2
 	slot2 = nil
 	slot0.selectBtn = slot2
-	slot2 = slot0.view
-	slot2 = slot2.uIPbChatFriendlPopupUComponent
-	slot4 = slot2
-	slot2 = slot2.TryChangePage
-	slot5 = "State"
-	slot6 = 1
+	slot2 = nil
+	slot0.sendPlayerUID = slot2
+	slot2 = slot0.sendMode
+	slot3 = UIConst
+	slot3 = slot3.HOME_PLANTS_SEND_MODE
+	slot3 = slot3.HELP
+	--- END OF BLOCK #4 ---
 
-	slot2(slot4, slot5, slot6)
+	if slot2 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
-	slot4 = slot0
-	slot2 = slot0.doSearch
 
-	slot2(slot4)
+	--- BLOCK #5 30-31, warpins: 1 ---
+	slot2 = "HOMELAND_SEASON_CROP_HELP"
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 32-32, warpins: 1 ---
+	slot2 = "COMMON_CONFIRM"
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 33-61, warpins: 2 ---
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.txtConfirmUText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = slot2
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = ClientTextUtils
+	slot3 = slot3.setText
+	slot5 = slot0.view
+	slot5 = slot5.inputHolderUSDFText
+	slot6 = pg
+	slot6 = slot6.getGameString
+	slot8 = "HOMELAND_SEASON_CROP_INPUT_INFO"
+	MULTRES = slot6(slot8)
+
+	slot3(slot5, MULTRES)
+
+	slot3 = slot0.view
+	slot3 = slot3.uIPbChatFriendlPopupUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "State"
+	slot7 = 1
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.doSearch
+
+	slot3(slot5)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot10.onOpen = slot14
+slot12.onOpen = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -713,9 +865,9 @@ slot14 = function(slot0)
 
 end
 
-slot10.onShow = slot14
+slot12.onShow = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -724,9 +876,9 @@ slot14 = function(slot0)
 
 end
 
-slot10.onHide = slot14
+slot12.onHide = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -737,15 +889,20 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-4, warpins: 1 ---
-	slot2 = AvatarPresetData
-	slot2 = slot2[slot1]
+	--- BLOCK #1 3-9, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.avatar
+	slot4 = slot2
+	slot2 = slot2.getAvatarPresetData
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-6, warpins: 2 ---
+	--- BLOCK #2 10-11, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	slot2 = if slot2 then
@@ -755,7 +912,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #3 7-9, warpins: 1 ---
+	--- BLOCK #3 12-14, warpins: 1 ---
 	slot3 = slot2.templateId
 	--- END OF BLOCK #3 ---
 
@@ -766,14 +923,14 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 10-10, warpins: 2 ---
+	--- BLOCK #4 15-15, warpins: 2 ---
 	slot3 = 0
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 11-12, warpins: 2 ---
+	--- BLOCK #5 16-17, warpins: 2 ---
 	--- END OF BLOCK #5 ---
 
 	if slot3 == 4 then
@@ -783,7 +940,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #6 13-15, warpins: 1 ---
+	--- BLOCK #6 18-20, warpins: 1 ---
 	slot4 = GENDER_MALE
 
 	return slot4
@@ -793,7 +950,7 @@ slot14 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #7 16-17, warpins: 1 ---
+	--- BLOCK #7 21-22, warpins: 1 ---
 	--- END OF BLOCK #7 ---
 
 	if slot3 == 3 then
@@ -803,7 +960,7 @@ slot14 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 18-19, warpins: 1 ---
+	--- BLOCK #8 23-24, warpins: 1 ---
 	slot4 = GENDER_FEMALE
 
 	return slot4
@@ -813,7 +970,7 @@ slot14 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 20-21, warpins: 3 ---
+	--- BLOCK #9 25-26, warpins: 3 ---
 	slot4 = GENDER_UNKNOWN
 
 	return slot4
@@ -823,9 +980,357 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot10.resolveGenderPage = slot14
+slot12.resolveGenderPage = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.isRequesting
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.sendPlayerUID
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #3 8-14, warpins: 1 ---
+	slot1 = slot0.sendPlayerUID
+	slot2 = slot0.sendMode
+	slot3 = UIConst
+	slot3 = slot3.HOME_PLANTS_SEND_MODE
+	slot3 = slot3.HELP
+	--- END OF BLOCK #3 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-19, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.requestHelpToFriend
+	slot5 = slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 20-54, warpins: 1 ---
+	slot2 = HomeSeasonUtils
+	slot2 = slot2.getHomeSeasonMutationItemCount
+	slot4 = pg
+	slot4 = slot4.me
+	slot5 = slot0.sendItemId
+	slot2 = slot2(slot4, slot5)
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot3 = slot3.commonUseConfirm
+	slot5 = slot3
+	slot3 = slot3.open
+	slot6 = {
+		muteCheckEnough = true,
+		hideCurrency = 1
+	}
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "HOME_PLANT_SEND_TITLE"
+	slot7 = slot7(slot9)
+	slot6.title = slot7
+	slot7 = pg
+	slot7 = slot7.getGameString
+	slot9 = "HOMELAND_SEASON_CROP_SEND_CONFIRM_DESC"
+	slot7 = slot7(slot9)
+	slot6.tipTop = slot7
+	slot7 = {}
+	slot8 = {
+		nil,
+		1
+	}
+	slot9 = slot0.sendItemId
+	slot8[1] = slot9
+	slot8.ownNum = slot2
+	slot7[1] = slot8
+	slot6.data = slot7
+
+	slot7 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.sendGiftToFriend
+		slot3 = targetUid
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot6.confirmCb = slot7
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 55-55, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 56-56, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot12.onConfirm = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.isRequesting
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-16, warpins: 1 ---
+	slot2 = true
+	slot0.isRequesting = slot2
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.reqSendHomeSeasonMutationGift
+	slot5 = slot1
+	slot6 = slot0.sendItemId
+
+	slot7 = function(slot0)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot2 = false
+		slot1.isRequesting = slot2
+		slot1 = NoticeDef
+		slot1 = slot1.SUCCESS
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-30, warpins: 2 ---
+		slot1 = pg
+		slot1 = slot1.game
+		slot1 = slot1.chat
+		slot3 = slot1
+		slot1 = slot1.sendHomeSeasonMutationGiftChatCard
+		slot4 = targetUid
+		slot5 = self
+		slot5 = slot5.sendItemId
+
+		slot1(slot3, slot4, slot5)
+
+		slot1 = pg
+		slot1 = slot1.global
+		slot1 = slot1.showBubbleMessageRaw
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "HOMELAND_SEASON_CROP_GIFT_SUCCESS"
+		MULTRES = slot3(slot5)
+
+		slot1(MULTRES)
+
+		slot1 = self
+		slot3 = slot1
+		slot1 = slot1.dismiss
+
+		slot1(slot3)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot12.sendGiftToFriend = slot16
+
+slot16 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.isRequesting
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-16, warpins: 1 ---
+	slot2 = true
+	slot0.isRequesting = slot2
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.reqRequestHomeSeasonMutationHelpToFriend
+	slot5 = slot1
+	slot6 = slot0.sendItemId
+
+	slot7 = function(slot0, slot1)
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot2 = self
+		slot3 = false
+		slot2.isRequesting = slot3
+		slot2 = NoticeDef
+		slot2 = slot2.SUCCESS
+
+		--- END OF BLOCK #0 ---
+
+		if slot0 ~= slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-29, warpins: 2 ---
+		slot2 = pg
+		slot2 = slot2.global
+		slot2 = slot2.showBubbleMessageRaw
+		slot4 = pg
+		slot4 = slot4.getGameString
+		slot6 = "HOMELAND_SEASON_CROP_HELP_SUCCESS"
+		MULTRES = slot4(slot6)
+
+		slot2(MULTRES)
+
+		slot2 = pg
+		slot2 = slot2.game
+		slot2 = slot2.chat
+		slot4 = slot2
+		slot2 = slot2.sendHomeSeasonMutationHelpChatCard
+		slot5 = friendUid
+		slot6 = slot1
+
+		slot2(slot4, slot5, slot6)
+
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.dismiss
+
+		slot2(slot4)
+
+		return
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 2 ---
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot12.requestHelpToFriend = slot16
+
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -965,9 +1470,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot10.doSearch = slot14
+slot12.doSearch = slot16
 
-return slot10
+return slot12
 --- END OF BLOCK #0 ---
 
 

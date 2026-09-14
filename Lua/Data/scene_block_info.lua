@@ -1,4 +1,4 @@
---- BLOCK #0 1-597, warpins: 1 ---
+--- BLOCK #0 1-567, warpins: 1 ---
 slot0 = {}
 slot1 = {
 	priority = 1
@@ -9,49 +9,49 @@ slot1 = {
 }
 slot0[2] = slot1
 slot1 = {
-	priority = 3
-}
-slot0[3] = slot1
-slot1 = {
 	243.77592771264,
 	2305.7892742356,
 	-2479.1874548954,
 	-391.73611637823
 }
-slot0[4] = slot1
+slot0[3] = slot1
 slot1 = {
 	2098.7959651834,
 	3836.2198038883,
 	-1827.4467402233,
 	-290.50061962803
 }
-slot0[5] = slot1
+slot0[4] = slot1
 slot1 = {
 	3513.9102223729,
 	6020.229206954,
 	-2093.1353528233,
 	-103.07010173262
 }
-slot0[6] = slot1
+slot0[5] = slot1
 slot1 = {
 	1839.724339535,
 	3158.9216971869,
 	-2850.7546662134,
 	-1470.6422120849
 }
-slot0[7] = slot1
+slot0[6] = slot1
 slot1 = {
 	2304.8693039731,
 	2950.3684385593,
 	-2536.1349021069,
 	-1626.1266010568
 }
-slot0[8] = slot1
+slot0[7] = slot1
 slot1 = {
 	96.660683134127,
 	5919.2324716194,
 	-3679.5285251437,
 	-90.847235014049
+}
+slot0[8] = slot1
+slot1 = {
+	priority = 3
 }
 slot0[9] = slot1
 slot1 = {}
@@ -117,13 +117,6 @@ slot3 = {
 	10000
 }
 slot4 = 3000
-slot2[slot4] = slot3
-slot3 = {
-	31403,
-	21600,
-	10001
-}
-slot4 = 3003
 slot2[slot4] = slot3
 slot3 = {
 	41003,
@@ -4113,127 +4106,6 @@ slot4 = 3000
 slot2[slot4] = slot3
 slot3 = {}
 slot4 = {
-	3258.345,
-	-2517.885,
-	3387.345,
-	-2306.385,
-	3661.845,
-	-2180.385,
-	3649.845,
-	-1610.385,
-	3484.845,
-	-1391.385,
-	3073.125,
-	-961.35,
-	2596.8,
-	-962.775,
-	2362.47,
-	-1201.98,
-	2358.24,
-	-1506.24,
-	2407.695,
-	-1759.395,
-	2476.62,
-	-1982.385,
-	2691.54,
-	-2236.44,
-	priority = 1,
-	blockId = 31403
-}
-slot5 = {
-	2358.24,
-	3661.845,
-	-2517.885,
-	-961.35
-}
-slot4.aabb = slot5
-slot3[1] = slot4
-slot4 = {
-	3258.345,
-	-2517.885,
-	3387.345,
-	-2306.385,
-	3661.845,
-	-2180.385,
-	3649.845,
-	-1610.385,
-	3484.845,
-	-1391.385,
-	3073.125,
-	-961.35,
-	2596.8,
-	-962.775,
-	2362.47,
-	-1201.98,
-	2358.24,
-	-1506.24,
-	2407.695,
-	-1759.395,
-	2476.62,
-	-1982.385,
-	2691.54,
-	-2236.44,
-	2950.845,
-	-2525.385,
-	priority = 2,
-	blockId = 21600
-}
-slot5 = {
-	2358.24,
-	3661.845,
-	-2525.385,
-	-961.35
-}
-slot4.aabb = slot5
-slot3[2] = slot4
-slot4 = {
-	3258.345,
-	-2517.885,
-	3387.345,
-	-2306.385,
-	3661.845,
-	-2180.385,
-	3649.845,
-	-1610.385,
-	3484.845,
-	-1391.385,
-	3073.125,
-	-961.35,
-	2596.8,
-	-962.775,
-	2362.47,
-	-1201.98,
-	2358.24,
-	-1506.24,
-	2407.695,
-	-1759.395,
-	2476.62,
-	-1982.385,
-	2691.54,
-	-2236.44,
-	2817.345,
-	-3341.385,
-	3168.345,
-	-3593.385,
-	3537.345,
-	-3104.385,
-	3369.345,
-	-2750.385,
-	priority = 3,
-	blockId = 10001
-}
-slot5 = {
-	2358.24,
-	3661.845,
-	-3593.385,
-	-961.35
-}
-slot4.aabb = slot5
-slot3[3] = slot4
-slot4 = 3003
-slot2[slot4] = slot3
-slot3 = {}
-slot4 = {
 	1879.7230465982,
 	-2095.3180075945,
 	1839.724339535,
@@ -4397,7 +4269,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41003
 }
-slot5 = slot0[4]
+slot5 = slot0[3]
 slot4.aabb = slot5
 slot3[1] = slot4
 slot4 = {
@@ -4522,7 +4394,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41004
 }
-slot5 = slot0[5]
+slot5 = slot0[4]
 slot4.aabb = slot5
 slot3[2] = slot4
 slot4 = {
@@ -4677,7 +4549,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41005
 }
-slot5 = slot0[6]
+slot5 = slot0[5]
 slot4.aabb = slot5
 slot3[3] = slot4
 slot4 = {
@@ -5128,7 +5000,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41008
 }
-slot5 = slot0[7]
+slot5 = slot0[6]
 slot4.aabb = slot5
 slot3[6] = slot4
 slot4 = {
@@ -5245,7 +5117,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41001
 }
-slot5 = slot0[8]
+slot5 = slot0[7]
 slot4.aabb = slot5
 slot3[7] = slot4
 slot4 = {
@@ -5330,7 +5202,7 @@ slot4 = {
 	priority = 2,
 	blockId = 40001
 }
-slot5 = slot0[9]
+slot5 = slot0[8]
 slot4.aabb = slot5
 slot3[9] = slot4
 slot4 = 3004
@@ -5490,7 +5362,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41011
 }
-slot5 = slot0[4]
+slot5 = slot0[3]
 slot4.aabb = slot5
 slot3[1] = slot4
 slot4 = {
@@ -5603,7 +5475,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41012
 }
-slot5 = slot0[5]
+slot5 = slot0[4]
 slot4.aabb = slot5
 slot3[2] = slot4
 slot4 = {
@@ -5760,7 +5632,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41013
 }
-slot5 = slot0[6]
+slot5 = slot0[5]
 slot4.aabb = slot5
 slot3[3] = slot4
 slot4 = {
@@ -6197,7 +6069,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41016
 }
-slot5 = slot0[7]
+slot5 = slot0[6]
 slot4.aabb = slot5
 slot3[6] = slot4
 slot4 = {
@@ -6288,7 +6160,7 @@ slot4 = {
 	priority = 1,
 	blockId = 41009
 }
-slot5 = slot0[8]
+slot5 = slot0[7]
 slot4.aabb = slot5
 slot3[7] = slot4
 slot4 = {
@@ -6355,7 +6227,7 @@ slot4 = {
 	priority = 2,
 	blockId = 40002
 }
-slot5 = slot0[9]
+slot5 = slot0[8]
 slot4.aabb = slot5
 slot3[9] = slot4
 slot4 = 3005
@@ -6363,13 +6235,13 @@ slot2[slot4] = slot3
 slot1.blockList = slot2
 slot2 = {}
 slot3 = {}
-slot4 = slot0[3]
+slot4 = slot0[9]
 slot5 = 50001
 slot3[slot5] = slot4
 slot4 = 515
 slot2[slot4] = slot3
 slot3 = {}
-slot4 = slot0[3]
+slot4 = slot0[9]
 slot5 = 10000
 slot3[slot5] = slot4
 slot4 = slot0[2]
@@ -6529,18 +6401,6 @@ slot4 = slot0[1]
 slot5 = 31402
 slot3[slot5] = slot4
 slot4 = 3000
-slot2[slot4] = slot3
-slot3 = {}
-slot4 = slot0[3]
-slot5 = 10001
-slot3[slot5] = slot4
-slot4 = slot0[2]
-slot5 = 21600
-slot3[slot5] = slot4
-slot4 = slot0[1]
-slot5 = 31403
-slot3[slot5] = slot4
-slot4 = 3003
 slot2[slot4] = slot3
 slot3 = {}
 slot4 = slot0[2]

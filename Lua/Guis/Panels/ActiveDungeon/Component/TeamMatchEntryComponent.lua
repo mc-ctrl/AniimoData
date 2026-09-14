@@ -1,89 +1,143 @@
---- BLOCK #0 1-133, warpins: 1 ---
+--- BLOCK #0 1-198, warpins: 1 ---
 slot0 = require
-slot2 = "Utils.ClientTextUtils"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Utils.TeamUtils"
+slot3 = "Utils.ClientTextUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.AddressDataConst"
+slot4 = "Utils.TeamUtils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Utils.LuaUIUtils"
+slot5 = "Const.AddressDataConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.UIConst"
+slot6 = "Utils.LuaUIUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Const.Const"
+slot7 = "Const.UIConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Framework.Class"
+slot8 = "Common.Const.Const"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Helper.UIComponent"
+slot9 = "Core.Framework.Class"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Common.Const.Const"
+slot10 = "Guis.Helper.UIComponent"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Core.Common.lume"
+slot11 = "Common.Const.Const"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Core.Common.Time"
+slot12 = "Core.Common.lume"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.level_data"
+slot13 = "Core.Common.Time"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.match_data"
+slot14 = "Data.level_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.MessageName"
+slot15 = "Data.match_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Const.MatchConst"
+slot16 = "Const.MessageName"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Common.Utils.Utils"
+slot17 = "Common.Const.MatchConst"
 slot15 = slot15(slot17)
-slot16 = slot6.LightClass
-slot18 = "TeamMatchEntryComponent"
-slot19 = slot7
-slot16 = slot16(slot18, slot19)
-slot17 = {}
-slot18 = slot13.SPEECH_ROOM_STATE_CHANGE
-slot19 = {
-	"refreshBtnVoiceState"
+slot16 = require
+slot18 = "Common.Utils.Utils"
+slot16 = slot16(slot18)
+slot17 = require
+slot19 = "Common.NoticeDef"
+slot17 = slot17(slot19)
+slot18 = require
+slot20 = "Const.ClientConst"
+slot18 = slot18(slot20)
+
+slot19 = function()
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot0 = require
+	slot2 = "Common.Const.ItemConst"
+	slot0 = slot0(slot2)
+	slot0 = slot0.ROBEGG_TICKET_CHAOS
+	--- END OF BLOCK #0 ---
+
+	slot0 = if not slot0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-9, warpins: 1 ---
+	slot1 = nil
+	slot2 = 0
+
+	return slot1, slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot1 = next
+	slot3 = slot0
+
+	return slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot20 = slot7.LightClass
+slot22 = "TeamMatchEntryComponent"
+slot23 = slot8
+slot20 = slot20(slot22, slot23)
+slot21 = {}
+slot22 = slot14.SYNC_TEAM_INFO
+slot23 = {
+	"onTeamInfoChanged",
+	true
 }
-slot17[slot18] = slot19
-slot18 = slot13.TEAM_MATCH_START_TIME_CHANGE
-slot19 = {
+slot21[slot22] = slot23
+slot22 = slot14.TEAM_MATCHED_STATUS_CHANGE
+slot23 = {
+	"onTeamMatchedStatusChange",
+	true
+}
+slot21[slot22] = slot23
+slot22 = slot14.TEAM_MATCH_START_TIME_CHANGE
+slot23 = {
 	"refreshTeamMatchStartTime"
 }
-slot17[slot18] = slot19
-slot18 = slot13.TEAM_ENTER_MEMBER_AGREE_CHANGE
-slot19 = {
+slot21[slot22] = slot23
+slot22 = slot14.TEAM_ENTER_MEMBER_AGREE_CHANGE
+slot23 = {
 	"onTeamMatchedConFirmChanged",
 	true
 }
-slot17[slot18] = slot19
-slot18 = slot13.TEAM_PUSH_GO_READY_ROOM
-slot19 = {
+slot21[slot22] = slot23
+slot22 = slot14.TEAM_PUSH_GO_READY_ROOM
+slot23 = {
 	"onGoReadyRoomPush",
 	true
 }
-slot17[slot18] = slot19
-slot18 = slot13.TEAM_MATCH_ENTRY_INTERACTABLE_CHANGE
-slot19 = {
+slot21[slot22] = slot23
+slot22 = slot14.TEAM_MATCH_ENTRY_INTERACTABLE_CHANGE
+slot23 = {
 	"refreshMatchEntryInteractable",
 	true
 }
-slot17[slot18] = slot19
-slot16.messages = slot17
+slot21[slot22] = slot23
+slot20.messages = slot21
 
-slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-87, warpins: 1 ---
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-92, warpins: 1 ---
 	slot3 = slot0.transform
 	slot5 = slot3
 	slot3 = slot3.GetComponent
@@ -151,14 +205,19 @@ slot17 = function(slot0, slot1, slot2)
 	slot0.btnExitTeam = slot4
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
-	slot7 = "btnVoiceUButton"
+	slot7 = "txtWaitingUSDFText"
 	slot4 = slot4(slot6, slot7)
-	slot0.btnVoiceUButton = slot4
+	slot0.txtWaitingUSDFText = slot4
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
-	slot7 = "selectorUSelector"
+	slot7 = "goStraightInUButton"
 	slot4 = slot4(slot6, slot7)
-	slot0.selectorUSelector = slot4
+	slot0.goStraightInUButton = slot4
+	slot6 = slot3
+	slot4 = slot3.GetRefValue
+	slot7 = "addTeammatesUButton"
+	slot4 = slot4(slot6, slot7)
+	slot0.addTeammatesUButton = slot4
 	slot4 = slot0.btnCancel
 	slot4 = slot4.transform
 	slot6 = slot4
@@ -178,9 +237,9 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot16.findObjects = slot17
+slot20.findObjects = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.btnMatch
 
@@ -289,7 +348,7 @@ slot17 = function(slot0)
 	slot1 = slot0.btnTeam
 
 	slot2 = function()
-		--- BLOCK #0 1-13, warpins: 1 ---
+		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -297,12 +356,8 @@ slot17 = function(slot0)
 		slot0 = slot0.open
 		slot3 = UIConst
 		slot3 = slot3.UI_ID_TEAM_ROOM
-		slot4 = {}
-		slot5 = self
-		slot5 = slot5.dungeonId
-		slot4.dungeonId = slot5
 
-		slot0(slot2, slot3, slot4)
+		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -317,16 +372,10 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 26-34, warpins: 2 ---
-	slot1 = slot0.btnCancel
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = true
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.btnVoiceUButton
+	--- BLOCK #4 26-30, warpins: 2 ---
+	slot1 = NotNil
+	slot3 = slot0.goStraightInUButton
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
@@ -336,61 +385,23 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #5 35-37, warpins: 1 ---
-	slot1 = slot0.btnVoiceUButton
+	--- BLOCK #5 31-33, warpins: 1 ---
+	slot1 = slot0.goStraightInUButton
 
 	slot2 = function()
-		--- BLOCK #0 1-11, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.game
-		slot0 = slot0.speech
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.checkMemberInRoom
-		slot3 = pg
-		slot3 = slot3.me
-		slot3 = slot3.uid
-		slot0 = slot0(slot2, slot3)
-		--- END OF BLOCK #0 ---
+		slot0 = slot0.setSelectedMatchType
+		slot3 = self
+		slot5 = slot3
+		slot3 = slot3.getPrimaryMatchType
+		MULTRES = slot3(slot5)
 
-		slot0 = if not slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
+		slot0(slot2, MULTRES)
 
-
-		--- BLOCK #1 12-18, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot2 = slot0
-		slot0 = slot0.joinSpeechChannel
-		slot3 = {
-			notifyDenied = true
-		}
-
-		slot0(slot2, slot3)
-
-		--- END OF BLOCK #1 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-		--- BLOCK #2 19-23, warpins: 1 ---
-		slot0 = pg
-		slot0 = slot0.me
-		slot2 = slot0
-		slot0 = slot0.quitSpeechChannel
-
-		slot0(slot2)
-
-		--- END OF BLOCK #2 ---
-
-		FLOW; TARGET BLOCK #3
-
-
-		--- BLOCK #3 24-24, warpins: 2 ---
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #0 ---
 
 
 
@@ -402,8 +413,10 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 38-40, warpins: 2 ---
-	slot1 = slot0.selectorUSelector
+	--- BLOCK #6 34-38, warpins: 2 ---
+	slot1 = NotNil
+	slot3 = slot0.addTeammatesUButton
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #6 ---
 
 	slot1 = if slot1 then
@@ -413,92 +426,19 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #7 41-49, warpins: 1 ---
-	slot1 = slot0.selectorUSelector
-	slot2 = true
-	slot1.hideOnClick = slot2
-	slot1 = slot0.selectorUSelector
+	--- BLOCK #7 39-41, warpins: 1 ---
+	slot1 = slot0.addTeammatesUButton
 
-	slot2 = function(slot0, slot1)
-		--- BLOCK #0 1-13, warpins: 1 ---
-		slot2 = function(slot0, slot1, slot2)
-			--- BLOCK #0 1-14, warpins: 1 ---
-			slot5 = slot0
-			slot3 = slot0.GetComponent
-			slot6 = "ObjectReference"
-			slot3 = slot3(slot5, slot6)
-			slot6 = slot3
-			slot4 = slot3.GetRefValue
-			slot7 = "txtUText"
-			slot4 = slot4(slot6, slot7)
-			slot5 = ClientTextUtils
-			slot5 = slot5.setText
-			slot7 = slot4
-			slot8 = slot2.label
+	slot2 = function()
+		--- BLOCK #0 1-8, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.setSelectedMatchType
+		slot3 = MatchConst
+		slot3 = slot3.MATCH_TEAM_MEMBER_TYPE
+		slot3 = slot3.MATCH_MEMBER_ENTER
 
-			slot5(slot7, slot8)
-
-			return
-			--- END OF BLOCK #0 ---
-
-
-
-		end
-
-		slot1.luaRenderItem = slot2
-		slot4 = slot1
-		slot2 = slot1.SetList
-		slot5 = self
-		slot5 = slot5.selectorOptions
-
-		slot2(slot4, slot5)
-
-		slot2 = self
-		slot2 = slot2.selectorUSelector
-		slot2 = slot2.selectedIndex
-		slot3 = 0
-		--- END OF BLOCK #0 ---
-
-		if slot2 >= slot3 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 14-19, warpins: 1 ---
-		slot4 = slot1
-		slot2 = slot1.SelectItem
-		slot5 = self
-		slot5 = slot5.selectorUSelector
-		slot5 = slot5.selectedIndex
-
-		slot2(slot4, slot5)
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 20-20, warpins: 2 ---
-		return
-		--- END OF BLOCK #2 ---
-
-
-
-	end
-
-	slot1.luaRenderPopup = slot2
-	slot1 = slot0.selectorUSelector
-
-	slot2 = function(slot0)
-		--- BLOCK #0 1-6, warpins: 1 ---
-		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.refreshSelectorDisplay
-		slot4 = slot0
-
-		slot1(slot3, slot4)
+		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -507,14 +447,21 @@ slot17 = function(slot0)
 
 	end
 
-	slot1.luaSelectedChanged = slot2
-
+	slot1.luaClick = slot2
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 50-51, warpins: 2 ---
+	--- BLOCK #8 42-49, warpins: 2 ---
+	slot1 = slot0.btnCancel
+	slot1 = slot1.gameObject
+	slot3 = slot1
+	slot1 = slot1.SetActiveEx
+	slot4 = true
+
+	slot1(slot3, slot4)
+
 	return
 	--- END OF BLOCK #8 ---
 
@@ -522,9 +469,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.addListener = slot17
+slot20.addListener = slot21
 
-slot17 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot1.dungeonType
 	--- END OF BLOCK #0 ---
@@ -545,25 +492,88 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-16, warpins: 2 ---
+	--- BLOCK #2 7-10, warpins: 2 ---
 	slot0.dungeonType = slot2
-	slot2 = slot1.dungeonId
-	slot0.dungeonId = slot2
+	slot2 = slot0.ctrl
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 11-14, warpins: 1 ---
+	slot2 = slot0.ctrl
+	slot2 = slot2.className
+	--- END OF BLOCK #3 ---
+
+	if slot2 ~= "TeamRoomCtrl" then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 15-16, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 17-17, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 18-21, warpins: 3 ---
+	slot0.isTeamRoomCtrl = slot2
+	slot2 = slot1.hardLv
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 22-22, warpins: 1 ---
 	slot2 = 0
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 23-28, warpins: 2 ---
 	slot3 = slot1.dungeonType
 	slot4 = Const
 	slot4 = slot4.CUR_DUNGEON_TYPE
 	slot4 = slot4.Egg
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #8 ---
 
 	if slot3 == slot4 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #3 17-25, warpins: 1 ---
+	--- BLOCK #9 29-30, warpins: 1 ---
+	--- END OF BLOCK #9 ---
+
+	if slot2 == 0 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 31-39, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
@@ -573,91 +583,306 @@ slot17 = function(slot0, slot1)
 	slot3 = slot3.getSelectedDifLv
 	slot3 = slot3(slot5)
 	slot2 = slot3
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 26-33, warpins: 2 ---
-	slot0.hardLv = slot2
-	slot3 = LevelData
-	slot4 = slot1.dungeonId
-	slot3 = slot3[slot4]
-	slot0.dungeonConfig = slot3
-	slot3 = slot0.dungeonConfig
-	--- END OF BLOCK #4 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #5 34-35, warpins: 1 ---
-	slot3 = slot0.dungeonConfig
-	slot3 = slot3.matchId
-	--- END OF BLOCK #5 ---
+	--- BLOCK #11 40-50, warpins: 3 ---
+	slot3 = slot1.dungeonId
+	slot0.initialDungeonId = slot3
+	slot0.initialHardLv = slot2
+	slot5 = slot0
+	slot3 = slot0.updateDungeonMatchInfo
+	slot6 = slot1.dungeonId
+	slot7 = slot2
 
-	FLOW; TARGET BLOCK #6
+	slot3(slot5, slot6, slot7)
 
-
-	--- BLOCK #6 36-39, warpins: 2 ---
-	slot0.matchId = slot3
-	slot3 = slot0.matchId
-	--- END OF BLOCK #6 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 40-43, warpins: 1 ---
-	slot3 = MatchConfigData
-	slot4 = slot0.matchId
-	slot3 = slot3[slot4]
-	slot0.matchCfg = slot3
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 44-46, warpins: 2 ---
 	slot3 = 0
 	slot0.showCheck = slot3
 
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #11 ---
 
 
 
 end
 
-slot16.onCtor = slot17
+slot20.onCtor = slot21
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-49, warpins: 1 ---
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.txtTips
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "ADDITION_TEAMMATES_AUTO"
-	MULTRES = slot4(slot6)
+slot21 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0.isTeamRoomCtrl
+	--- END OF BLOCK #0 ---
 
-	slot1(slot3, MULTRES)
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.txtEnter
-	slot6 = slot0
-	slot4 = slot0.getMatchEnterBtnName
-	MULTRES = slot4(slot6)
 
-	slot1(slot3, MULTRES)
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.initialDungeonId
+	slot2 = slot0.initialHardLv
+	slot3 = true
+	--- END OF BLOCK #1 ---
 
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-8, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 9-10, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-11, warpins: 2 ---
+	slot0.dungeonId = slot1
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 12-13, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 14-14, warpins: 1 ---
+	slot0.hardLv = slot2
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 15-17, warpins: 2 ---
+	slot4 = slot0.dungeonId
+	--- END OF BLOCK #7 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 18-20, warpins: 1 ---
+	slot4 = LevelData
+	slot5 = slot0.dungeonId
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 21-24, warpins: 2 ---
+	slot0.dungeonConfig = slot4
+	slot4 = slot0.dungeonConfig
+	--- END OF BLOCK #9 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #10 25-28, warpins: 1 ---
+	slot4 = slot0.dungeonConfig
+	slot4 = slot4.fb_type
+	--- END OF BLOCK #10 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 29-29, warpins: 1 ---
+	slot4 = slot0.dungeonType
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 30-30, warpins: 2 ---
+	slot0.dungeonType = slot4
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 31-33, warpins: 2 ---
+	slot4 = slot0.dungeonConfig
+	--- END OF BLOCK #13 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 34-35, warpins: 1 ---
+	slot4 = slot0.dungeonConfig
+	slot4 = slot4.matchId
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 36-39, warpins: 2 ---
+	slot0.matchId = slot4
+	slot4 = slot0.matchId
+	--- END OF BLOCK #15 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 40-42, warpins: 1 ---
+	slot4 = MatchConfigData
+	slot5 = slot0.matchId
+	slot4 = slot4[slot5]
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 43-46, warpins: 2 ---
+	slot0.matchCfg = slot4
+	slot4 = slot0.matchId
+	--- END OF BLOCK #17 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #18 47-49, warpins: 1 ---
+	slot4 = slot0.matchId
+	--- END OF BLOCK #18 ---
+
+	if slot4 == 0 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 50-51, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 52-52, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 53-56, warpins: 3 ---
+	slot0.canMatch = slot4
+	slot4 = slot0.dungeonConfig
+	--- END OF BLOCK #21 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 57-58, warpins: 1 ---
+	slot4 = false
+	slot0.isAutoAddMembers = slot4
+
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 59-59, warpins: 2 ---
+	return
+	--- END OF BLOCK #23 ---
+
+
+
+end
+
+slot20.updateDungeonMatchInfo = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isInTeamDungeonScene
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-12, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.hide
+
+	slot1(slot3)
+
+	return
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 13-15, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.show
+
+	slot1(slot3)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 16-43, warpins: 2 ---
 	slot1 = ClientTextUtils
 	slot1 = slot1.setText
 	slot3 = slot0.txtCancelUText
@@ -668,10 +893,20 @@ slot17 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtWaitingUSDFText
+	slot4 = pg
+	slot4 = slot4.getGameString
+	slot6 = "MATCHING"
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
 	slot3 = slot0
 	slot1 = slot0.setBtnName
-	slot4 = slot0.btnVoiceUButton
-	slot5 = "ADD_VOICE"
+	slot4 = slot0.btnInvite
+	slot5 = "FAST_TEAM_INVITE"
 
 	slot1(slot3, slot4, slot5)
 
@@ -685,32 +920,16 @@ slot17 = function(slot0)
 
 	slot1(slot3)
 
-	slot3 = slot0
-	slot1 = slot0.refreshBtnVoiceState
-	slot4 = {}
-	slot5 = pg
-	slot5 = slot5.game
-	slot5 = slot5.speech
-	slot7 = slot5
-	slot5 = slot5.checkMemberInRoom
-	slot8 = pg
-	slot8 = slot8.me
-	slot8 = slot8.uid
-	slot5 = slot5(slot7, slot8)
-	slot4.inSpeechRoom = slot5
-
-	slot1(slot3, slot4)
-
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot16.initView = slot17
+slot20.initView = slot21
 
-slot17 = function(slot0, slot1, slot2)
+slot21 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -729,32 +948,24 @@ slot17 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 4-28, warpins: 2 ---
+	--- BLOCK #2 4-20, warpins: 2 ---
 	slot5 = slot1
 	slot3 = slot1.GetComponent
 	slot6 = "ObjectReference"
 	slot3 = slot3(slot5, slot6)
 	slot6 = slot3
 	slot4 = slot3.GetRefValue
-	slot7 = "uIBtn1stConfirmUButton"
+	slot7 = "txtNameUText"
 	slot4 = slot4(slot6, slot7)
-	slot7 = slot3
-	slot5 = slot3.GetRefValue
-	slot8 = "txtNameUText"
-	slot5 = slot5(slot7, slot8)
-	slot8 = slot3
-	slot6 = slot3.GetRefValue
-	slot9 = "keyHotKeyContent"
-	slot6 = slot6(slot8, slot9)
-	slot7 = ClientTextUtils
-	slot7 = slot7.setText
-	slot9 = slot5
-	slot10 = pg
-	slot10 = slot10.getGameString
-	slot12 = slot2
-	MULTRES = slot10(slot12)
+	slot5 = ClientTextUtils
+	slot5 = slot5.setText
+	slot7 = slot4
+	slot8 = pg
+	slot8 = slot8.getGameString
+	slot10 = slot2
+	MULTRES = slot8(slot10)
 
-	slot7(slot9, MULTRES)
+	slot5(slot7, MULTRES)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -763,64 +974,41 @@ slot17 = function(slot0, slot1, slot2)
 
 end
 
-slot16.setBtnName = slot17
+slot20.setBtnName = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.isAutoAddMembers
+	slot1 = slot0.selectedMatchType
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = MatchConst
-	slot1 = slot1.MATCH_TEAM_MEMBER_TYPE
-	slot1 = slot1.MATCH_MEMBER_ENTER
-
-	return slot1
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getPrimaryMatchType
+	slot1 = slot1(slot3)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-10, warpins: 2 ---
-	slot1 = slot0.selectedMatchType
-	--- END OF BLOCK #2 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 11-13, warpins: 1 ---
-	slot1 = MatchConst
-	slot1 = slot1.MATCH_TEAM_MEMBER_TYPE
-	slot1 = slot1.DIRECTLY_ENTER
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 14-14, warpins: 2 ---
+	--- BLOCK #2 7-7, warpins: 2 ---
 	return slot1
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot16.getSelectedMatchType = slot17
+slot20.getSelectedMatchType = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSelectedMatchType
@@ -860,116 +1048,14 @@ slot17 = function(slot0)
 
 end
 
-slot16.shouldMatchMembers = slot17
+slot20.shouldMatchMembers = slot21
 
-slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot0.selectedMatchType = slot1
-	slot2 = slot0.selectorUSelector
-	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 5-7, warpins: 1 ---
-	slot2 = slot0.selectorOptions
-
-	--- END OF BLOCK #1 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 8-8, warpins: 2 ---
-	return
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 9-12, warpins: 2 ---
-	slot2 = ipairs
-	slot4 = slot0.selectorOptions
-	slot2, slot3, slot4 = slot2(slot4)
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #4 13-15, warpins: 1 ---
-	slot7 = slot6.matchType
-	--- END OF BLOCK #4 ---
-
-	if slot7 == slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 16-25, warpins: 1 ---
-	slot7 = slot0.selectorUSelector
-	slot9 = slot7
-	slot7 = slot7.ForceSelect
-	slot10 = slot5 - 1
-
-	slot7(slot9, slot10)
-
-	slot9 = slot0
-	slot7 = slot0.refreshSelectorDisplay
-	slot10 = slot0.selectorUSelector
-
-	slot7(slot9, slot10)
-
-	return
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 26-27, warpins: 3 ---
-	--- END OF BLOCK #6 ---
-
-	for slot5, slot6 in slot2, slot3, slot4
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 28-37, warpins: 1 ---
-	slot2 = slot0.selectorUSelector
-	slot4 = slot2
-	slot2 = slot2.ForceSelect
-	slot5 = 0
-
-	slot2(slot4, slot5)
-
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
-	slot2 = slot0.refreshSelectorDisplay
-	slot5 = slot0.selectorUSelector
-
-	slot2(slot4, slot5)
-
-	return
-	--- END OF BLOCK #7 ---
-
-
-
-end
-
-slot16.setSelectedMatchType = slot17
-
-slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.selectorUSelector
+	slot2 = slot0.isMatchTypeAvailable
+	slot5 = slot1
+	slot2 = slot2(slot4, slot5)
 
 	--- END OF BLOCK #0 ---
 
@@ -980,7 +1066,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -988,128 +1074,1193 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-6, warpins: 2 ---
+	--- BLOCK #2 8-13, warpins: 2 ---
+	slot0.selectedMatchType = slot1
+	slot4 = slot0
+	slot2 = slot0.getMatchTypePrefsKey
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 7-15, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setSelectedMatchType
-	slot5 = pg
-	slot5 = slot5.me
-	slot7 = slot5
-	slot5 = slot5.isMatchPlayer
-	slot5 = slot5(slot7)
+	--- BLOCK #3 14-24, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.prefsCacheUtils
+	slot5 = slot3
+	slot3 = slot3.setInt
+	slot6 = slot2
+	slot7 = slot1
+	slot8 = ClientConst
+	slot8 = slot8.CACHE_TYPE_FLAG
+	slot8 = slot8.USER
+
+	slot3(slot5, slot6, slot7, slot8)
+
 	--- END OF BLOCK #3 ---
 
-	slot5 = if slot5 then
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 25-30, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshMatchTypeButtons
+	slot6 = false
+	slot7 = true
+
+	slot3(slot5, slot6, slot7)
+
+	return
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.setSelectedMatchType = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.dungeonId
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-13, warpins: 2 ---
+	slot1 = string
+	slot1 = slot1.format
+	slot3 = "%s_%s"
+	slot4 = ClientConst
+	slot4 = slot4.PrefKey
+	slot4 = slot4.LastTeamMatchType
+	slot5 = slot0.dungeonId
+
+	return slot1(slot3, slot4, slot5)
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot20.getMatchTypePrefsKey = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getMatchTypePrefsKey
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot2 = nil
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-21, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.prefsCacheUtils
+	slot4 = slot2
+	slot2 = slot2.getInt
+	slot5 = slot1
+	slot6 = -1
+	slot7 = ClientConst
+	slot7 = slot7.CACHE_TYPE_FLAG
+	slot7 = slot7.USER
+	slot2 = slot2(slot4, slot5, slot6, slot7)
+	slot3 = 0
+	--- END OF BLOCK #2 ---
+
+	if slot2 >= slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 22-23, warpins: 1 ---
+	--- END OF BLOCK #3 ---
+
+	slot3 = if not slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 16-20, warpins: 1 ---
-	slot5 = MatchConst
-	slot5 = slot5.MATCH_TEAM_MEMBER_TYPE
-	slot5 = slot5.MATCH_MEMBER_ENTER
+	--- BLOCK #4 24-24, warpins: 2 ---
+	slot3 = nil
+
 	--- END OF BLOCK #4 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-23, warpins: 2 ---
-	slot7 = slot0
-	slot5 = slot0.getSelectedMatchType
-	slot5 = slot5(slot7)
-
+	--- BLOCK #5 25-25, warpins: 2 ---
+	return slot3
 	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 24-24, warpins: 2 ---
-	slot2(slot4, slot5)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 25-27, warpins: 2 ---
-	slot2 = slot0.selectorUSelector
-	--- END OF BLOCK #7 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #8 28-34, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isInTeam
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #8 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #9 35-40, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isTeamLeader
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 41-42, warpins: 1 ---
-	slot3 = false
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #11 43-43, warpins: 1 ---
-	slot3 = true
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 44-45, warpins: 3 ---
-	slot2.interactable = slot3
-
-	return
-	--- END OF BLOCK #12 ---
 
 
 
 end
 
-slot16.refreshSelectorState = slot17
+slot20.getCachedMatchType = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = ipairs
+	slot4 = slot0.matchTypeOptions
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot4 = EMPTY_TABLE
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 8-10, warpins: 1 ---
+	slot7 = slot6.matchType
+	--- END OF BLOCK #3 ---
+
+	if slot7 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 11-12, warpins: 1 ---
+	slot7 = true
+
+	return slot7
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-14, warpins: 3 ---
+	--- END OF BLOCK #5 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 15-16, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot20.isMatchTypeAvailable = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.dungeonConfig
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = slot0.dungeonConfig
+	slot1 = slot1.aiGroupId
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 8-13, warpins: 1 ---
+	slot2 = Utils
+	slot2 = slot2.isTable
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 14-17, warpins: 1 ---
+	slot2 = #slot1
+	slot3 = 0
+	--- END OF BLOCK #4 ---
+
+	if slot2 <= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 18-20, warpins: 2 ---
+	slot2 = 0
+	--- END OF BLOCK #5 ---
+
+	if slot1 <= slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 23-23, warpins: 2 ---
+	slot2 = true
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 24-24, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #8 ---
+
+
+
+end
+
+slot20.hasAICooperate = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.hasAICooperate
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot1 = MatchConst
+	slot1 = slot1.MATCH_TEAM_MEMBER_TYPE
+	slot1 = slot1.MATCH_BOT_ENTER
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-13, warpins: 2 ---
+	slot1 = MatchConst
+	slot1 = slot1.MATCH_TEAM_MEMBER_TYPE
+	slot1 = slot1.DIRECTLY_ENTER
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot20.getPrimaryMatchType = slot21
+
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isCreateTeamState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot3 = {}
+	slot0.matchTypeOptions = slot3
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-9, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 12-12, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 13-14, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	if slot2 == false then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 15-16, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 17-17, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 18-20, warpins: 2 ---
+	slot3 = slot0.dungeonConfig
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 21-25, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getTeamMatchTypeFunc
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #9 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 26-26, warpins: 2 ---
+	slot3 = {}
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 27-31, warpins: 2 ---
+	slot0.matchTypeOptions = slot3
+	slot3 = slot0.matchTypeOptions
+	slot3 = #slot3
+	--- END OF BLOCK #11 ---
+
+	if slot3 == 0 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 32-35, warpins: 1 ---
+	slot3 = nil
+	slot0.selectedMatchType = slot3
+	slot3 = nil
+	slot0.defaultMatchType = slot3
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 36-37, warpins: 2 ---
+	--- END OF BLOCK #13 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #14 38-44, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isMatchPlayer
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #14 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #15 45-49, warpins: 1 ---
+	slot3 = MatchConst
+	slot3 = slot3.MATCH_TEAM_MEMBER_TYPE
+	slot3 = slot3.MATCH_MEMBER_ENTER
+	--- END OF BLOCK #15 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 50-52, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.getPrimaryMatchType
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 53-54, warpins: 2 ---
+	slot0.selectedMatchType = slot3
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #18 55-59, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getCachedMatchType
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #18 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #19 60-62, warpins: 1 ---
+	slot3 = slot0.selectedMatchType
+	--- END OF BLOCK #19 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #20 63-65, warpins: 1 ---
+	slot3 = slot0.defaultMatchType
+	--- END OF BLOCK #20 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 66-68, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getPrimaryMatchType
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 69-74, warpins: 4 ---
+	slot6 = slot0
+	slot4 = slot0.isMatchTypeAvailable
+	slot7 = slot3
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #22 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #24
+	end
+
+
+	--- BLOCK #23 75-76, warpins: 1 ---
+	--- END OF BLOCK #23 ---
+
+	slot4 = if not slot3 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 77-77, warpins: 2 ---
+	slot4 = slot0.defaultMatchType
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 78-78, warpins: 2 ---
+	slot0.selectedMatchType = slot4
+	--- END OF BLOCK #25 ---
+
+	FLOW; TARGET BLOCK #26
+
+
+	--- BLOCK #26 79-83, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.isCreateTeamState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #26 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #27 84-88, warpins: 1 ---
+	slot3 = slot0.matchTypeOptions
+	slot3 = #slot3
+	slot4 = 1
+	--- END OF BLOCK #27 ---
+
+	if slot3 > slot4 then
+	JUMP TO BLOCK #28
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #28 89-90, warpins: 1 ---
+	--- END OF BLOCK #28 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #29
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #29 91-92, warpins: 1 ---
+	--- END OF BLOCK #29 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #30 93-99, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInTeam
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #30 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 100-106, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isTeamLeader
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #31 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #32
+	else
+	JUMP TO BLOCK #33
+	end
+
+
+	--- BLOCK #32 107-108, warpins: 2 ---
+	slot3 = 1
+	--- END OF BLOCK #32 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
+
+
+	--- BLOCK #33 109-109, warpins: 5 ---
+	slot3 = 0
+	--- END OF BLOCK #33 ---
+
+	FLOW; TARGET BLOCK #34
+
+
+	--- BLOCK #34 110-119, warpins: 2 ---
+	slot0.showCheck = slot3
+	slot3 = slot0.rootUComponent
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "MateType"
+	slot7 = slot0.showCheck
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.showCheck
+	--- END OF BLOCK #34 ---
+
+	if slot3 == 1 then
+	JUMP TO BLOCK #35
+	else
+	JUMP TO BLOCK #37
+	end
+
+
+	--- BLOCK #35 120-121, warpins: 1 ---
+	--- END OF BLOCK #35 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #39
+	end
+
+
+	--- BLOCK #36 122-123, warpins: 1 ---
+	slot3 = not slot1
+	--- END OF BLOCK #36 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #37 124-125, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #37 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #39
+
+
+	--- BLOCK #38 126-126, warpins: 0 ---
+	slot3 = true
+	--- END OF BLOCK #38 ---
+
+	FLOW; TARGET BLOCK #39
+
+
+	--- BLOCK #39 127-137, warpins: 4 ---
+	slot6 = slot0
+	slot4 = slot0.getPrimaryMatchType
+	slot4 = slot4(slot6)
+	slot7 = slot0
+	slot5 = slot0.setBtnName
+	slot8 = slot0.goStraightInUButton
+	slot11 = slot0
+	slot9 = slot0.hasAICooperate
+	slot9 = slot9(slot11)
+	--- END OF BLOCK #39 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #40
+	else
+	JUMP TO BLOCK #41
+	end
+
+
+	--- BLOCK #40 138-139, warpins: 1 ---
+	slot9 = "MATCH_BOT_ENTER"
+	--- END OF BLOCK #40 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #42
+
+
+	--- BLOCK #41 140-140, warpins: 1 ---
+	slot9 = "DIRECTLY_ENTER"
+
+	--- END OF BLOCK #41 ---
+
+	FLOW; TARGET BLOCK #42
+
+
+	--- BLOCK #42 141-151, warpins: 2 ---
+	slot5(slot7, slot8, slot9)
+
+	slot7 = slot0
+	slot5 = slot0.setBtnName
+	slot8 = slot0.addTeammatesUButton
+	slot9 = "ADDITION_TEAMMATES"
+
+	slot5(slot7, slot8, slot9)
+
+	slot5 = NotNil
+	slot7 = slot0.goStraightInUButton
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #42 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #43
+	else
+	JUMP TO BLOCK #49
+	end
+
+
+	--- BLOCK #43 152-154, warpins: 1 ---
+	slot5 = slot0.goStraightInUButton
+	--- END OF BLOCK #43 ---
+
+	slot6 = if slot3 then
+	JUMP TO BLOCK #44
+	else
+	JUMP TO BLOCK #45
+	end
+
+
+	--- BLOCK #44 155-158, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.isMatchTypeAvailable
+	slot9 = slot4
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #44 ---
+
+	FLOW; TARGET BLOCK #45
+
+
+	--- BLOCK #45 159-169, warpins: 2 ---
+	slot5.interactable = slot6
+	slot5 = slot0.goStraightInUButton
+	slot6 = slot0.goStraightInUButton
+	slot6 = slot6.interactable
+	slot5.visualInteractable = slot6
+	slot5 = slot0.goStraightInUButton
+	slot7 = slot5
+	slot5 = slot5.SetSelected
+	slot8 = slot0.selectedMatchType
+	--- END OF BLOCK #45 ---
+
+	if slot8 ~= slot4 then
+	JUMP TO BLOCK #46
+	else
+	JUMP TO BLOCK #47
+	end
+
+
+	--- BLOCK #46 170-171, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #46 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #48
+
+
+	--- BLOCK #47 172-172, warpins: 1 ---
+	slot8 = true
+
+	--- END OF BLOCK #47 ---
+
+	FLOW; TARGET BLOCK #48
+
+
+	--- BLOCK #48 173-173, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #48 ---
+
+	FLOW; TARGET BLOCK #49
+
+
+	--- BLOCK #49 174-178, warpins: 2 ---
+	slot5 = NotNil
+	slot7 = slot0.addTeammatesUButton
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #49 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #50
+	else
+	JUMP TO BLOCK #56
+	end
+
+
+	--- BLOCK #50 179-181, warpins: 1 ---
+	slot5 = slot0.addTeammatesUButton
+	--- END OF BLOCK #50 ---
+
+	slot6 = if slot3 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
+
+
+	--- BLOCK #51 182-187, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.isMatchTypeAvailable
+	slot9 = MatchConst
+	slot9 = slot9.MATCH_TEAM_MEMBER_TYPE
+	slot9 = slot9.MATCH_MEMBER_ENTER
+	slot6 = slot6(slot8, slot9)
+	--- END OF BLOCK #51 ---
+
+	FLOW; TARGET BLOCK #52
+
+
+	--- BLOCK #52 188-201, warpins: 2 ---
+	slot5.interactable = slot6
+	slot5 = slot0.addTeammatesUButton
+	slot6 = slot0.addTeammatesUButton
+	slot6 = slot6.interactable
+	slot5.visualInteractable = slot6
+	slot5 = slot0.addTeammatesUButton
+	slot7 = slot5
+	slot5 = slot5.SetSelected
+	slot8 = slot0.selectedMatchType
+	slot9 = MatchConst
+	slot9 = slot9.MATCH_TEAM_MEMBER_TYPE
+	slot9 = slot9.MATCH_MEMBER_ENTER
+	--- END OF BLOCK #52 ---
+
+	if slot8 ~= slot9 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #54
+	end
+
+
+	--- BLOCK #53 202-203, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #53 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #55
+
+
+	--- BLOCK #54 204-204, warpins: 1 ---
+	slot8 = true
+
+	--- END OF BLOCK #54 ---
+
+	FLOW; TARGET BLOCK #55
+
+
+	--- BLOCK #55 205-205, warpins: 2 ---
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #55 ---
+
+	FLOW; TARGET BLOCK #56
+
+
+	--- BLOCK #56 206-206, warpins: 2 ---
+	return
+	--- END OF BLOCK #56 ---
+
+
+
+end
+
+slot20.refreshMatchTypeButtons = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.matchCfg
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.matchCfg
+	slot1 = slot1.autoAddMembers
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot1 = MatchConst
+	slot1 = slot1.MATCH_ADD_MEM_TYPE
+	slot1 = slot1.BAN_AUTO_ADD
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot20.getAutoAddMembersType = slot21
+
+slot21 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-7, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	if slot2 == false then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 8-9, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 10-10, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 11-12, warpins: 2 ---
+	--- END OF BLOCK #6 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 13-17, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.canMatchEntryStart
+	slot7 = slot1
+	slot4 = slot4(slot6, slot7)
+	slot3 = slot4
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 18-23, warpins: 2 ---
+	slot4 = slot0.rootUComponent
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "MatchLock"
+	--- END OF BLOCK #8 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 24-25, warpins: 1 ---
+	slot8 = 1
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 26-26, warpins: 1 ---
+	slot8 = 0
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 27-33, warpins: 2 ---
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.rootUComponent
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "MatchState"
+	--- END OF BLOCK #11 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 34-35, warpins: 1 ---
+	slot8 = 1
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 36-36, warpins: 1 ---
+	slot8 = 0
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 37-50, warpins: 2 ---
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.refreshMatchButtonState
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	slot6 = slot0
+	slot4 = slot0.refreshMatchTypeButtons
+	slot7 = slot1
+	slot8 = slot2
+
+	slot4(slot6, slot7, slot8)
+
+	slot6 = slot0
+	slot4 = slot0.refreshMatchTipsState
+
+	slot4(slot6)
+
+	return
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot20.refreshMatchModeState = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.dungeonConfig
 
@@ -1130,48 +2281,9 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-7, warpins: 2 ---
-	slot1 = slot0.matchId
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #3 8-10, warpins: 1 ---
-	slot1 = slot0.matchId
-	--- END OF BLOCK #3 ---
-
-	if slot1 == 0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 11-12, warpins: 1 ---
-	slot1 = false
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 13-13, warpins: 1 ---
-	slot1 = true
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 14-28, warpins: 3 ---
-	slot0.canMatch = slot1
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot1 = false
 	slot0.isAutoAddMembers = slot1
-	slot1 = 1
-	slot0.showCheck = slot1
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -1180,234 +2292,93 @@ slot17 = function(slot0)
 	slot1, slot2 = slot1(slot3, slot4)
 	slot3, slot4 = nil
 	slot5 = slot0.canMatch
+	--- END OF BLOCK #2 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #3 17-24, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0.getAutoAddMembersType
+	slot5 = slot5(slot7)
+	slot6 = MatchConst
+	slot6 = slot6.MATCH_ADD_MEM_TYPE
+	slot6 = slot6.FORCE_AUTO_ADD
+	--- END OF BLOCK #3 ---
+
+	if slot5 ~= slot6 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 25-26, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 27-27, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 28-35, warpins: 2 ---
+	slot0.isAutoAddMembers = slot5
+	slot5 = false
+	slot0.isSingle = slot5
+	slot3 = slot2
+	slot5 = slot0.matchCfg
+	slot5 = slot5.membersCount
 	--- END OF BLOCK #6 ---
 
 	slot5 = if slot5 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 29-32, warpins: 1 ---
+	--- BLOCK #7 36-40, warpins: 1 ---
 	slot5 = slot0.matchCfg
-	slot5 = slot5.autoAddMembers
+	slot5 = slot5.membersCount
+	slot5 = slot5[1]
 	--- END OF BLOCK #7 ---
 
-	slot5 = if slot5 then
+	slot4 = if not slot5 then
 	JUMP TO BLOCK #8
 	else
 	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #8 33-34, warpins: 1 ---
+	--- BLOCK #8 41-41, warpins: 2 ---
+	slot4 = 1
 	--- END OF BLOCK #8 ---
 
-	if slot5 ~= 2 then
-	JUMP TO BLOCK #9
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 42-44, warpins: 2 ---
+	slot5 = slot0.teamInviteUWidget
+	--- END OF BLOCK #9 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #10
 	else
 	JUMP TO BLOCK #11
 	end
 
 
-	--- BLOCK #9 35-36, warpins: 2 ---
-	slot6 = false
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 37-38, warpins: 0 ---
-	slot6 = false
-	--- END OF BLOCK #10 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #11 39-39, warpins: 1 ---
-	slot6 = true
-	--- END OF BLOCK #11 ---
-
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 40-47, warpins: 3 ---
-	slot0.isAutoAddMembers = slot6
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.isInTeam
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #12 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
-
-
-	--- BLOCK #13 48-54, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.isTeamLeader
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #13 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #14 55-56, warpins: 2 ---
-	--- END OF BLOCK #14 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #15 57-59, warpins: 1 ---
-	slot6 = slot0.isAutoAddMembers
-	--- END OF BLOCK #15 ---
-
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 60-61, warpins: 1 ---
-	slot6 = 1
-	--- END OF BLOCK #16 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #17 62-62, warpins: 3 ---
-	slot6 = 0
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 63-70, warpins: 2 ---
-	slot0.showCheck = slot6
-	slot6 = false
-	slot0.isSingle = slot6
-	slot3 = slot2
-	slot6 = slot0.matchCfg
-	slot6 = slot6.membersCount
-	--- END OF BLOCK #18 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #19 71-75, warpins: 1 ---
-	slot6 = slot0.matchCfg
-	slot6 = slot6.membersCount
-	slot6 = slot6[1]
-	--- END OF BLOCK #19 ---
-
-	slot4 = if not slot6 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #21
-	end
-
-
-	--- BLOCK #20 76-76, warpins: 2 ---
-	slot4 = 1
-	--- END OF BLOCK #20 ---
-
-	FLOW; TARGET BLOCK #21
-
-
-	--- BLOCK #21 77-98, warpins: 2 ---
-	slot6 = slot0.teamInviteUWidget
-	slot6 = slot6.gameObject
-	slot8 = slot6
-	slot6 = slot6.SetActiveEx
-	slot9 = pg
-	slot9 = slot9.me
-	slot11 = slot9
-	slot9 = slot9.isInTeam
-	slot9 = slot9(slot11)
-	slot9 = not slot9
-
-	slot6(slot8, slot9)
-
-	slot6 = slot0.teamStateUWidget
-	slot6 = slot6.gameObject
-	slot8 = slot6
-	slot6 = slot6.SetActiveEx
-	slot9 = pg
-	slot9 = slot9.me
-	slot11 = slot9
-	slot9 = slot9.isInTeam
-	MULTRES = slot9(slot11)
-
-	slot6(slot8, MULTRES)
-
-	--- END OF BLOCK #21 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
-
-
-	--- BLOCK #22 99-106, warpins: 1 ---
-	slot5 = 0
-	slot0.showCheck = slot5
-	slot5 = slot0.dungeonConfig
-	slot3 = slot5.playerNumMax
-	slot5 = slot0.dungeonConfig
-	slot4 = slot5.playerNumMin
-	--- END OF BLOCK #22 ---
-
-	if slot3 ~= 1 then
-	JUMP TO BLOCK #23
-	else
-	JUMP TO BLOCK #24
-	end
-
-
-	--- BLOCK #23 107-108, warpins: 1 ---
-	slot5 = false
-	--- END OF BLOCK #23 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #25
-
-
-	--- BLOCK #24 109-109, warpins: 1 ---
-	slot5 = true
-	--- END OF BLOCK #24 ---
-
-	FLOW; TARGET BLOCK #25
-
-
-	--- BLOCK #25 110-113, warpins: 2 ---
-	slot0.isSingle = slot5
-	slot5 = 1
-	--- END OF BLOCK #25 ---
-
-	if slot4 > slot5 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
-
-
-	--- BLOCK #26 114-135, warpins: 1 ---
+	--- BLOCK #10 45-55, warpins: 1 ---
 	slot5 = slot0.teamInviteUWidget
 	slot5 = slot5.gameObject
 	slot7 = slot5
@@ -1421,6 +2392,23 @@ slot17 = function(slot0)
 
 	slot5(slot7, slot8)
 
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 56-58, warpins: 2 ---
+	slot5 = slot0.teamStateUWidget
+	--- END OF BLOCK #11 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #12 59-69, warpins: 1 ---
 	slot5 = slot0.teamStateUWidget
 	slot5 = slot5.gameObject
 	slot7 = slot5
@@ -1433,12 +2421,122 @@ slot17 = function(slot0)
 
 	slot5(slot7, MULTRES)
 
-	--- END OF BLOCK #26 ---
+	--- END OF BLOCK #12 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #28
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
 
 
-	--- BLOCK #27 136-147, warpins: 1 ---
+	--- BLOCK #13 70-75, warpins: 1 ---
+	slot5 = slot0.dungeonConfig
+	slot3 = slot5.playerNumMax
+	slot5 = slot0.dungeonConfig
+	slot4 = slot5.playerNumMin
+	--- END OF BLOCK #13 ---
+
+	if slot3 ~= 1 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 76-77, warpins: 1 ---
+	slot5 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 78-78, warpins: 1 ---
+	slot5 = true
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 79-82, warpins: 2 ---
+	slot0.isSingle = slot5
+	slot5 = 1
+	--- END OF BLOCK #16 ---
+
+	if slot4 > slot5 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #17 83-85, warpins: 1 ---
+	slot5 = slot0.teamInviteUWidget
+	--- END OF BLOCK #17 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 86-96, warpins: 1 ---
+	slot5 = slot0.teamInviteUWidget
+	slot5 = slot5.gameObject
+	slot7 = slot5
+	slot5 = slot5.SetActiveEx
+	slot8 = pg
+	slot8 = slot8.me
+	slot10 = slot8
+	slot8 = slot8.isInTeam
+	slot8 = slot8(slot10)
+	slot8 = not slot8
+
+	slot5(slot7, slot8)
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 97-99, warpins: 2 ---
+	slot5 = slot0.teamStateUWidget
+	--- END OF BLOCK #19 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #20
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #20 100-110, warpins: 1 ---
+	slot5 = slot0.teamStateUWidget
+	slot5 = slot5.gameObject
+	slot7 = slot5
+	slot5 = slot5.SetActiveEx
+	slot8 = pg
+	slot8 = slot8.me
+	slot10 = slot8
+	slot8 = slot8.isInTeam
+	MULTRES = slot8(slot10)
+
+	slot5(slot7, MULTRES)
+
+	--- END OF BLOCK #20 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #25
+
+
+	--- BLOCK #21 111-113, warpins: 1 ---
+	slot5 = slot0.teamInviteUWidget
+	--- END OF BLOCK #21 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 114-119, warpins: 1 ---
 	slot5 = slot0.teamInviteUWidget
 	slot5 = slot5.gameObject
 	slot7 = slot5
@@ -1447,6 +2545,23 @@ slot17 = function(slot0)
 
 	slot5(slot7, slot8)
 
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 120-122, warpins: 2 ---
+	slot5 = slot0.teamStateUWidget
+	--- END OF BLOCK #23 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 123-128, warpins: 1 ---
 	slot5 = slot0.teamStateUWidget
 	slot5 = slot5.gameObject
 	slot7 = slot5
@@ -1455,85 +2570,27 @@ slot17 = function(slot0)
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #27 ---
+	--- END OF BLOCK #24 ---
 
-	FLOW; TARGET BLOCK #28
-
-
-	--- BLOCK #28 148-167, warpins: 3 ---
-	slot5 = slot0.rootUComponent
-	slot7 = slot5
-	slot5 = slot5.TryChangePage
-	slot8 = "MateType"
-	slot9 = slot0.showCheck
-
-	slot5(slot7, slot8, slot9)
-
-	slot5 = slot0.txtTips
-	slot5 = slot5.gameObject
-	slot7 = slot5
-	slot5 = slot5.SetActiveEx
-	slot8 = slot0.isAutoAddMembers
-
-	slot5(slot7, slot8)
-
-	slot5 = slot0.btnMatch
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.isInTeam
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #28 ---
-
-	slot6 = if slot6 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #31
-	end
+	FLOW; TARGET BLOCK #25
 
 
-	--- BLOCK #29 168-173, warpins: 1 ---
-	slot6 = pg
-	slot6 = slot6.me
-	slot8 = slot6
-	slot6 = slot6.isTeamLeader
-	slot6 = slot6(slot8)
-	--- END OF BLOCK #29 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
-
-
-	--- BLOCK #30 174-175, warpins: 0 ---
-	slot6 = false
-	--- END OF BLOCK #30 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #32
-
-
-	--- BLOCK #31 176-176, warpins: 1 ---
-	slot6 = true
-	--- END OF BLOCK #31 ---
-
-	FLOW; TARGET BLOCK #32
-
-
-	--- BLOCK #32 177-184, warpins: 3 ---
-	slot5.interactable = slot6
+	--- BLOCK #25 129-135, warpins: 6 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
 	slot5 = slot5.isInTeam
 	slot5 = slot5(slot7)
-	--- END OF BLOCK #32 ---
+	--- END OF BLOCK #25 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #26
 	else
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #33 185-197, warpins: 1 ---
+	--- BLOCK #26 136-148, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
@@ -1545,50 +2602,50 @@ slot17 = function(slot0)
 	slot8 = slot6
 	slot6 = slot6.isInTeam
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #33 ---
+	--- END OF BLOCK #26 ---
 
 	slot6 = if slot6 then
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #34 198-204, warpins: 1 ---
+	--- BLOCK #27 149-155, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.me
 	slot8 = slot6
 	slot6 = slot6.getTeamMemberCount
 	slot6 = slot6(slot8)
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #27 ---
 
 	slot6 = if not slot6 then
-	JUMP TO BLOCK #35
+	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #36
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #35 205-205, warpins: 2 ---
+	--- BLOCK #28 156-156, warpins: 2 ---
 	slot6 = 1
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #28 ---
 
-	FLOW; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #36 206-209, warpins: 2 ---
+	--- BLOCK #29 157-160, warpins: 2 ---
 	slot7 = slot3
 	slot8 = nil
-	--- END OF BLOCK #36 ---
+	--- END OF BLOCK #29 ---
 
 	slot5 = if slot5 then
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #30
 	else
-	JUMP TO BLOCK #38
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #37 210-220, warpins: 1 ---
+	--- BLOCK #30 161-171, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getFormatText
 	slot11 = pg
@@ -1599,12 +2656,12 @@ slot17 = function(slot0)
 	slot13 = slot7
 	slot9 = slot9(slot11, slot12, slot13)
 	slot8 = slot9
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #30 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #39
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #38 221-234, warpins: 1 ---
+	--- BLOCK #31 172-185, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.getFormatText
 	slot11 = pg
@@ -1619,12 +2676,12 @@ slot17 = function(slot0)
 	slot13 = slot7
 	slot9 = slot9(slot11, slot12, slot13)
 	slot8 = slot9
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #31 ---
 
-	FLOW; TARGET BLOCK #39
+	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #39 235-239, warpins: 2 ---
+	--- BLOCK #32 186-190, warpins: 2 ---
 	slot9 = ClientTextUtils
 	slot9 = slot9.setText
 	slot11 = slot0.txtTeamMember
@@ -1632,300 +2689,110 @@ slot17 = function(slot0)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #39 ---
+	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #40
+	FLOW; TARGET BLOCK #33
 
 
-	--- BLOCK #40 240-240, warpins: 2 ---
+	--- BLOCK #33 191-191, warpins: 2 ---
 	return
-	--- END OF BLOCK #40 ---
+	--- END OF BLOCK #33 ---
 
 
 
 end
 
-slot16.refreshNormalView = slot17
+slot20.refreshNormalView = slot21
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
-	slot1 = true
-	slot0.canMatch = slot1
-	slot1 = false
-	slot0.isAutoAddMembers = slot1
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.grabEggsPrepRoom
-	slot1 = slot1.model
-	slot3 = slot1
-	slot1 = slot1.tryParseTeamInfo
-	slot1 = slot1(slot3)
-	slot0.teamData = slot1
-	slot1 = slot0.teamData
-	slot1 = slot1.isLeader
+slot21 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshNormalView
+
+	slot1(slot3)
+
+	return
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #1 18-21, warpins: 1 ---
-	slot1 = slot0.teamData
-	slot1 = slot1.isFullTeam
-	--- END OF BLOCK #1 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #2 22-24, warpins: 1 ---
-	slot1 = slot0.isAutoAddMembers
-	--- END OF BLOCK #2 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 25-26, warpins: 1 ---
-	slot1 = 1
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 27-27, warpins: 3 ---
-	slot1 = 0
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 28-45, warpins: 2 ---
-	slot0.showCheck = slot1
-	slot1 = slot0.txtTips
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = slot0.isAutoAddMembers
-
-	slot1(slot3, slot4)
-
-	slot1 = slot0.btnMatch
-	slot1 = slot1.gameObject
-	slot3 = slot1
-	slot1 = slot1.SetActiveEx
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isInTeam
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #5 ---
-
-	slot4 = if slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 46-51, warpins: 1 ---
-	slot4 = pg
-	slot4 = slot4.me
-	slot6 = slot4
-	slot4 = slot4.isTeamLeader
-	slot4 = slot4(slot6)
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #7 52-53, warpins: 0 ---
-	slot4 = false
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 54-54, warpins: 1 ---
-	slot4 = true
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 55-71, warpins: 3 ---
-	slot1(slot3, slot4)
-
-	slot1 = slot0.rootUComponent
-	slot3 = slot1
-	slot1 = slot1.TryChangePage
-	slot4 = "MateType"
-	slot5 = slot0.showCheck
-
-	slot1(slot3, slot4, slot5)
-
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.view
-	slot3 = slot3.confirmTxt
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "START_MATCH"
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
-	return
-	--- END OF BLOCK #9 ---
-
 
 
 end
 
-slot16.refreshEggView = slot17
+slot20.refreshEggView = slot21
 
-slot17 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot3 = slot0.dungeonType
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-14, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.updateDungeonMatchInfo
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot5 = slot0
+	slot3 = slot0.refreshNormalView
+
+	slot3(slot5)
+
+	slot3 = slot0.matchStatus
 	slot4 = Const
-	slot4 = slot4.CUR_DUNGEON_TYPE
-	slot4 = slot4.Egg
+	slot4 = slot4.DUNGEON_CHANGE_STATUS
+	slot4 = slot4.WaitChange
 	--- END OF BLOCK #0 ---
 
 	if slot3 == slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
+	--- BLOCK #1 15-21, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInTeam
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 9-9, warpins: 1 ---
-	slot0.dungeonId = slot1
+	--- BLOCK #2 22-28, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isTeamLeader
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #3 10-11, warpins: 2 ---
+	--- BLOCK #3 29-35, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInMatching
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
-	slot2 = if slot2 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 12-12, warpins: 1 ---
-	slot0.hardLv = slot2
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 13-16, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.refreshEggView
-
-	slot3(slot5)
-
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 17-19, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.refreshNormalView
-
-	slot3(slot5)
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 20-25, warpins: 2 ---
-	slot3 = slot0.matchStatus
-	slot4 = Const
-	slot4 = slot4.DUNGEON_CHANGE_STATUS
-	slot4 = slot4.WaitChange
-	--- END OF BLOCK #7 ---
-
-	if slot3 == slot4 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #8 26-32, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isInTeam
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #8 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #9 33-39, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isTeamLeader
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #9 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #10 40-46, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.me
-	slot5 = slot3
-	slot3 = slot3.isInMatching
-	slot3 = slot3(slot5)
-	--- END OF BLOCK #10 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 47-51, warpins: 1 ---
+	--- BLOCK #4 36-40, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.onStartClick
 
@@ -1933,105 +2800,41 @@ slot17 = function(slot0, slot1, slot2)
 
 	slot3 = nil
 	slot0.matchStatus = slot3
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #12
-
-
-	--- BLOCK #12 52-54, warpins: 5 ---
-	slot3 = slot0.isAutoAddMembers
-	--- END OF BLOCK #12 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #13 55-57, warpins: 1 ---
-	slot3 = slot0.selectorUSelector
-	--- END OF BLOCK #13 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #18
-	end
-
-
-	--- BLOCK #14 58-71, warpins: 1 ---
+	--- BLOCK #5 41-54, warpins: 5 ---
 	slot5 = slot0
-	slot3 = slot0.getTeamMatchTypeFunc
+	slot3 = slot0.getTeamMatchingInfo
 	slot3 = slot3(slot5)
-	slot0.selectorOptions = slot3
-	slot3 = slot0.selectorUSelector
-	slot5 = slot3
-	slot3 = slot3.SetOptions
-	slot6 = slot0.selectorOptions
+	slot6 = slot0
+	slot4 = slot0.refreshMatchModeState
+	slot7 = slot3
 
-	slot3(slot5, slot6)
+	slot4(slot6, slot7)
 
-	slot5 = slot0
-	slot3 = slot0.setSelectedMatchType
-	slot6 = slot0.selectedMatchType
-	--- END OF BLOCK #14 ---
+	slot6 = slot0
+	slot4 = slot0.onTeamInfoChanged
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #17
-	end
+	slot4(slot6)
 
+	slot6 = slot0
+	slot4 = slot0.refreshTeamMatchStartTime
 
-	--- BLOCK #15 72-74, warpins: 1 ---
-	slot6 = slot0.defaultMatchType
-	--- END OF BLOCK #15 ---
+	slot4(slot6)
 
-	slot6 = if not slot6 then
-	JUMP TO BLOCK #16
-	else
-	JUMP TO BLOCK #17
-	end
-
-
-	--- BLOCK #16 75-77, warpins: 1 ---
-	slot6 = MatchConst
-	slot6 = slot6.MATCH_TEAM_MEMBER_TYPE
-	slot6 = slot6.DIRECTLY_ENTER
-
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 78-84, warpins: 3 ---
-	slot3(slot5, slot6)
-
-	slot5 = slot0
-	slot3 = slot0.refreshSelectorState
-	slot8 = slot0
-	slot6 = slot0.getTeamMatchingInfo
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 85-85, warpins: 3 ---
 	return
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot16.refreshView = slot17
+slot20.refreshView = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = {}
 	slot2 = MatchConst
@@ -2178,95 +2981,105 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 51-53, warpins: 3 ---
-	slot8 = slot3.aiGroupId
+	--- BLOCK #13 51-59, warpins: 3 ---
+	slot10 = slot0
+	slot8 = slot0.hasAICooperate
+	slot8 = slot8(slot10)
+	slot11 = slot0
+	slot9 = slot0.getPrimaryMatchType
+	slot9 = slot9(slot11)
+	slot10 = slot0.canMatch
 	--- END OF BLOCK #13 ---
 
-	slot8 = if slot8 then
+	slot10 = if not slot10 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #19
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #14 54-59, warpins: 1 ---
-	slot8 = Utils
-	slot8 = slot8.isTable
-	slot10 = slot3.aiGroupId
-	slot8 = slot8(slot10)
+	--- BLOCK #14 60-66, warpins: 1 ---
+	slot10 = #slot1
+	slot10 = slot10 + 1
+	slot11 = {}
+	slot11.matchType = slot9
+	slot1[slot10] = slot11
+	slot0.defaultMatchType = slot9
+
+	return slot1
+
 	--- END OF BLOCK #14 ---
 
-	slot8 = if slot8 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #15 60-64, warpins: 1 ---
-	slot8 = slot3.aiGroupId
-	slot8 = #slot8
-	slot9 = 0
+	--- BLOCK #15 67-74, warpins: 2 ---
+	slot12 = slot0
+	slot10 = slot0.getAutoAddMembersType
+	slot10 = slot10(slot12)
+	slot11 = MatchConst
+	slot11 = slot11.MATCH_ADD_MEM_TYPE
+	slot11 = slot11.AUTO_ADD
 	--- END OF BLOCK #15 ---
 
-	if slot8 <= slot9 then
+	if slot10 == slot11 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #17
 	end
 
 
-	--- BLOCK #16 65-68, warpins: 2 ---
-	slot8 = slot3.aiGroupId
-	slot9 = 0
+	--- BLOCK #16 75-76, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
-	if slot8 <= slot9 then
+	if slot4 >= slot7 then
 	JUMP TO BLOCK #17
 	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #17 69-70, warpins: 1 ---
-	slot8 = false
+	--- BLOCK #17 77-78, warpins: 2 ---
+	slot11 = false
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 71-71, warpins: 2 ---
-	slot8 = true
+	--- BLOCK #18 79-79, warpins: 1 ---
+	slot11 = true
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 72-74, warpins: 3 ---
-	slot9 = slot0.canMatch
+	--- BLOCK #19 80-84, warpins: 2 ---
+	slot12 = MatchConst
+	slot12 = slot12.MATCH_ADD_MEM_TYPE
+	slot12 = slot12.FORCE_AUTO_ADD
 	--- END OF BLOCK #19 ---
 
-	slot9 = if not slot9 then
+	if slot10 == slot12 then
 	JUMP TO BLOCK #20
 	else
 	JUMP TO BLOCK #21
 	end
 
 
-	--- BLOCK #20 75-88, warpins: 1 ---
-	slot9 = #slot1
-	slot9 = slot9 + 1
-	slot10 = {}
-	slot11 = slot2.DIRECTLY_ENTER
-	slot10.matchType = slot11
-	slot11 = pg
-	slot11 = slot11.getGameString
-	slot13 = "DIRECTLY_ENTER"
-	slot11 = slot11(slot13)
-	slot10.label = slot11
-	slot1[slot9] = slot10
-	slot9 = slot2.DIRECTLY_ENTER
-	slot0.defaultMatchType = slot9
+	--- BLOCK #20 85-98, warpins: 1 ---
+	slot12 = #slot1
+	slot12 = slot12 + 1
+	slot13 = {}
+	slot14 = slot2.MATCH_MEMBER_ENTER
+	slot13.matchType = slot14
+	slot14 = pg
+	slot14 = slot14.getGameString
+	slot16 = "ADDITION_TEAMMATES"
+	slot14 = slot14(slot16)
+	slot13.label = slot14
+	slot1[slot12] = slot13
+	slot12 = slot2.MATCH_MEMBER_ENTER
+	slot0.defaultMatchType = slot12
 
 	return slot1
 
@@ -2275,217 +3088,200 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 89-90, warpins: 2 ---
+	--- BLOCK #21 99-100, warpins: 2 ---
 	--- END OF BLOCK #21 ---
 
-	if slot4 >= slot7 then
+	if slot4 < slot5 then
 	JUMP TO BLOCK #22
 	else
-	JUMP TO BLOCK #23
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #22 91-92, warpins: 1 ---
-	slot9 = false
+	--- BLOCK #22 101-102, warpins: 1 ---
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
-
-
-	--- BLOCK #23 93-93, warpins: 1 ---
-	slot9 = true
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 94-95, warpins: 2 ---
-	--- END OF BLOCK #24 ---
-
-	if slot4 < slot5 then
-	JUMP TO BLOCK #25
+	slot8 = if not slot8 then
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #25 96-97, warpins: 1 ---
+	--- BLOCK #23 103-104, warpins: 1 ---
+	--- END OF BLOCK #23 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 105-115, warpins: 1 ---
+	slot12 = #slot1
+	slot12 = slot12 + 1
+	slot13 = {}
+	slot14 = slot2.MATCH_MEMBER_ENTER
+	slot13.matchType = slot14
+	slot14 = pg
+	slot14 = slot14.getGameString
+	slot16 = "ADDITION_TEAMMATES"
+	slot14 = slot14(slot16)
+	slot13.label = slot14
+	slot1[slot12] = slot13
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 116-118, warpins: 2 ---
+	slot12 = slot1[1]
 	--- END OF BLOCK #25 ---
 
-	slot8 = if not slot8 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 98-111, warpins: 1 ---
-	slot10 = #slot1
-	slot10 = slot10 + 1
-	slot11 = {}
-	slot12 = slot2.MATCH_MEMBER_ENTER
-	slot11.matchType = slot12
-	slot12 = pg
-	slot12 = slot12.getGameString
-	slot14 = "ADDITION_TEAMMATES_AUTO"
-	slot12 = slot12(slot14)
-	slot11.label = slot12
-	slot1[slot10] = slot11
-	slot10 = slot2.MATCH_MEMBER_ENTER
-	slot0.defaultMatchType = slot10
-
-	return slot1
-
+	--- BLOCK #26 119-122, warpins: 1 ---
+	slot12 = slot1[1]
+	slot12 = slot12.matchType
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
-
-
-	--- BLOCK #27 112-113, warpins: 3 ---
-	--- END OF BLOCK #27 ---
-
-	if slot5 <= slot4 then
-	JUMP TO BLOCK #28
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #27
 	else
-	JUMP TO BLOCK #29
+	JUMP TO BLOCK #28
 	end
 
 
-	--- BLOCK #28 114-124, warpins: 1 ---
-	slot10 = #slot1
-	slot10 = slot10 + 1
-	slot11 = {}
+	--- BLOCK #27 123-123, warpins: 2 ---
 	slot12 = slot2.DIRECTLY_ENTER
-	slot11.matchType = slot12
-	slot12 = pg
-	slot12 = slot12.getGameString
-	slot14 = "DIRECTLY_ENTER"
-	slot12 = slot12(slot14)
-	slot11.label = slot12
-	slot1[slot10] = slot11
+	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 124-125, warpins: 2 ---
+	slot0.defaultMatchType = slot12
+
+	return slot1
+
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 125-126, warpins: 2 ---
+	--- BLOCK #29 126-127, warpins: 3 ---
 	--- END OF BLOCK #29 ---
 
-	slot9 = if slot9 then
+	if slot5 > slot4 then
 	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #30 127-137, warpins: 1 ---
-	slot10 = #slot1
-	slot10 = slot10 + 1
-	slot11 = {}
-	slot12 = slot2.MATCH_MEMBER_ENTER
-	slot11.matchType = slot12
-	slot12 = pg
-	slot12 = slot12.getGameString
-	slot14 = "ADDITION_TEAMMATES"
-	slot12 = slot12(slot14)
-	slot11.label = slot12
-	slot1[slot10] = slot11
+	--- BLOCK #30 128-129, warpins: 1 ---
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
-
-
-	--- BLOCK #31 138-139, warpins: 2 ---
-	--- END OF BLOCK #31 ---
-
 	slot8 = if slot8 then
-	JUMP TO BLOCK #32
+	JUMP TO BLOCK #31
 	else
-	JUMP TO BLOCK #34
+	JUMP TO BLOCK #32
 	end
 
 
-	--- BLOCK #32 140-141, warpins: 1 ---
+	--- BLOCK #31 130-134, warpins: 2 ---
+	slot12 = #slot1
+	slot12 = slot12 + 1
+	slot13 = {}
+	slot13.matchType = slot9
+	slot1[slot12] = slot13
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 135-136, warpins: 2 ---
 	--- END OF BLOCK #32 ---
 
-	if slot4 < slot7 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #33
 	else
 	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #33 142-152, warpins: 1 ---
-	slot10 = #slot1
-	slot10 = slot10 + 1
-	slot11 = {}
-	slot12 = slot2.MATCH_BOT_ENTER
-	slot11.matchType = slot12
-	slot12 = pg
-	slot12 = slot12.getGameString
-	slot14 = "MATCH_BOT_ENTER"
-	slot12 = slot12(slot14)
-	slot11.label = slot12
-	slot1[slot10] = slot11
+	--- BLOCK #33 137-142, warpins: 1 ---
+	slot12 = #slot1
+	slot12 = slot12 + 1
+	slot13 = {}
+	slot14 = slot2.MATCH_MEMBER_ENTER
+	slot13.matchType = slot14
+	slot1[slot12] = slot13
 	--- END OF BLOCK #33 ---
 
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 153-156, warpins: 3 ---
-	slot10 = #slot1
-	slot11 = 1
+	--- BLOCK #34 143-146, warpins: 2 ---
+	slot12 = #slot1
+	slot13 = 1
 	--- END OF BLOCK #34 ---
 
-	if slot10 > slot11 then
+	if slot12 > slot13 then
 	JUMP TO BLOCK #35
 	else
 	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #35 157-158, warpins: 1 ---
+	--- BLOCK #35 147-148, warpins: 1 ---
 	--- END OF BLOCK #35 ---
 
-	slot9 = if slot9 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #36
 	else
 	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #36 159-161, warpins: 1 ---
-	slot10 = slot2.MATCH_MEMBER_ENTER
+	--- BLOCK #36 149-151, warpins: 1 ---
+	slot12 = slot2.MATCH_MEMBER_ENTER
 	--- END OF BLOCK #36 ---
 
-	slot10 = if not slot10 then
+	slot12 = if not slot12 then
 	JUMP TO BLOCK #37
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #37 162-164, warpins: 3 ---
-	slot10 = slot1[1]
+	--- BLOCK #37 152-154, warpins: 3 ---
+	slot12 = slot1[1]
 	--- END OF BLOCK #37 ---
 
-	slot10 = if slot10 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #38
 	else
 	JUMP TO BLOCK #39
 	end
 
 
-	--- BLOCK #38 165-166, warpins: 1 ---
-	slot10 = slot1[1]
-	slot10 = slot10.matchType
+	--- BLOCK #38 155-156, warpins: 1 ---
+	slot12 = slot1[1]
+	slot12 = slot12.matchType
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 167-168, warpins: 3 ---
-	slot0.defaultMatchType = slot10
+	--- BLOCK #39 157-158, warpins: 3 ---
+	slot0.defaultMatchType = slot12
 
 	return slot1
 	--- END OF BLOCK #39 ---
@@ -2494,53 +3290,936 @@ slot17 = function(slot0)
 
 end
 
-slot16.getTeamMatchTypeFunc = slot17
+slot20.getTeamMatchTypeFunc = slot21
 
-slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = math
-	slot2 = slot2.max
-	slot4 = slot1.selectedIndex
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.ctrl
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.className
+	--- END OF BLOCK #1 ---
+
+	if slot1 == "TeamRoomCtrl" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isInTeam
+	slot1 = slot1(slot3)
+	slot1 = not slot1
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #3 15-16, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 17-17, warpins: 0 ---
+	slot1 = true
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 18-18, warpins: 4 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot20.isCreateTeamState = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.ctrl
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.model
+	--- END OF BLOCK #1 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 8-12, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.model
+	slot1 = slot1.needPreEquip
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 13-20, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot1 = slot1.model
+	slot3 = slot1
+	slot1 = slot1.needPreEquip
+	slot4 = slot0.dungeonConfig
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 21-25, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isInTeam
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 26-26, warpins: 5 ---
+	return slot1
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot20.isNeedPreEquipTeamRoomState = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getFormatText
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "WAITING_READY"
+	slot3 = slot3(slot5)
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.getPrepareCount
+	slot4 = slot4(slot6)
+	slot5 = pg
+	slot5 = slot5.me
+	slot7 = slot5
+	slot5 = slot5.getTeamMemberCount
+	MULTRES = slot5(slot7)
+
+	return slot1(slot3, slot4, MULTRES)
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.getWaitingReadyText = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isNeedPreEquipTeamRoomState
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot4 = 0
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-11, warpins: 2 ---
-	slot5 = 0
-	slot2 = slot2(slot4, slot5)
-	slot3 = slot0.selectorOptions
+	--- BLOCK #2 8-14, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isTeamLeader
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 15-21, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isAllPrepare
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 22-27, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.getGameString
+	slot3 = "TEAM_START_CHALLENGE"
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 28-30, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.getWaitingReadyText
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 31-31, warpins: 2 ---
+	return slot1
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 32-43, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.getGameString
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isUidPrepare
+	slot6 = pg
+	slot6 = slot6.me
+	slot6 = slot6.uid
+	slot3 = slot3(slot5, slot6)
+	--- END OF BLOCK #7 ---
+
 	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 44-45, warpins: 1 ---
+	slot3 = "TEAM_CANCEL_READY"
+	--- END OF BLOCK #8 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #10
+
+
+	--- BLOCK #9 46-46, warpins: 1 ---
+	slot3 = "TEAM_READY"
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 47-47, warpins: 2 ---
+	return slot1(slot3)
+	--- END OF BLOCK #10 ---
+
+
+
+end
+
+slot20.getNeedPreEquipMatchEnterBtnName = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = ClientTextUtils
+	slot1 = slot1.setText
+	slot3 = slot0.txtEnter
+	slot6 = slot0
+	slot4 = slot0.getMatchEnterBtnName
+	MULTRES = slot4(slot6)
+
+	slot1(slot3, MULTRES)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.refreshMatchEnterBtnName = slot21
+
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-9, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isTeamMemberCountOverflow
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 12-14, warpins: 1 ---
-	slot3 = slot0.selectorOptions
-	slot4 = slot2 + 1
-	slot3 = slot3[slot4]
+	--- BLOCK #3 10-11, warpins: 1 ---
+	slot2 = false
+
+	return slot2
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-16, warpins: 2 ---
+	--- BLOCK #4 12-16, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isNeedPreEquipTeamRoomState
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #5 17-19, warpins: 1 ---
+	slot2 = slot0.dungeonConfig
+	--- END OF BLOCK #5 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 20-21, warpins: 1 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 22-28, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isTeamLeader
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #7 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-33, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isAllPrepare
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 34-35, warpins: 2 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 36-40, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isCreateTeamState
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #10 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 41-42, warpins: 1 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 43-45, warpins: 2 ---
+	slot2 = slot0.dungeonConfig
+	--- END OF BLOCK #12 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 46-52, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isInTeam
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #13 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #14 53-58, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isTeamLeader
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #15 59-60, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #15 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
+
+
+	--- BLOCK #16 61-61, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 62-62, warpins: 3 ---
+	return slot2
+	--- END OF BLOCK #17 ---
+
+
+
+end
+
+slot20.canMatchEntryStart = slot21
+
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-2, warpins: 1 ---
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 3-4, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 5-5, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 6-18, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshMatchEnterBtnName
+
+	slot2(slot4)
+
+	slot2 = slot0.btnMatch
+	slot2.interactable = slot1
+	slot2 = slot0.btnMatch
+	slot2.visualInteractable = slot1
+	slot2 = slot0.btnMatch
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "button"
+	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 19-20, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 21-21, warpins: 1 ---
+	slot6 = 4
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-28, warpins: 2 ---
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.rootUComponent
+	slot4 = slot2
+	slot2 = slot2.TryChangePage
+	slot5 = "Colour"
+	--- END OF BLOCK #6 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 29-30, warpins: 1 ---
+	slot6 = 0
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 31-31, warpins: 1 ---
+	slot6 = 1
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 32-33, warpins: 2 ---
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #9 ---
+
+
+
+end
+
+slot20.refreshMatchButtonState = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.dungeonConfig
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-10, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isInTeam
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 11-12, warpins: 2 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-16, warpins: 2 ---
+	slot1 = slot0.dungeonConfig
+	slot1 = slot1.playerNumMax
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 17-23, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getTeamMemberCount
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	if slot1 >= slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-25, warpins: 2 ---
+	slot2 = false
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 26-26, warpins: 1 ---
+	slot2 = true
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-27, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot20.isTeamMemberCountOverflow = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.dungeonConfig
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-11, warpins: 2 ---
+	slot1 = slot0.dungeonType
+	slot2 = Const
+	slot2 = slot2.CUR_DUNGEON_TYPE
+	slot2 = slot2.Egg
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #3 12-16, warpins: 1 ---
+	slot1 = slot0.dungeonId
+	slot2 = ConstData
+	slot2 = slot2.ROB_EGG_SCENE_ID
+	--- END OF BLOCK #3 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #4 17-22, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.grabEggsMode
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #5 23-29, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.grabEggsMode
+	slot1 = slot1.model
+	--- END OF BLOCK #5 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #6 30-39, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.ui
+	slot1 = slot1.grabEggsMode
+	slot1 = slot1.model
+	slot3 = slot1
+	slot1 = slot1.checkMatchCondition
+	slot1, slot2 = slot1(slot3)
+
+	--- END OF BLOCK #6 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 40-40, warpins: 1 ---
+	return slot2
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 41-46, warpins: 6 ---
+	slot1 = slot0.dungeonType
+	slot2 = Const
+	slot2 = slot2.CUR_DUNGEON_TYPE
+	slot2 = slot2.BOSSRush
+	--- END OF BLOCK #8 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #9 47-53, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.checkLevelConditionTitle
+	slot1, slot2, slot3 = slot1(slot3)
+	--- END OF BLOCK #9 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 54-60, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.getTitleTip
+	slot7 = slot2
+	slot8 = slot3
+
+	return slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 61-62, warpins: 3 ---
+	slot1 = nil
+
+	return slot1
+	--- END OF BLOCK #11 ---
+
+
+
+end
+
+slot20.getDungeonDisableTip = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = nil
+	slot2 = true
+	slot5 = slot0
+	slot3 = slot0.isCreateTeamState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-10, warpins: 1 ---
+	slot1 = nil
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #2 11-17, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInTeam
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #2 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #3 18-24, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isTeamLeader
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 25-27, warpins: 1 ---
+	slot3 = slot0.dungeonConfig
 	--- END OF BLOCK #4 ---
 
 	slot3 = if not slot3 then
@@ -2550,51 +4229,667 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #5 17-17, warpins: 1 ---
+	--- BLOCK #5 28-33, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "TEAM_ROOM_NO_TARGET_TIP"
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #6 34-40, warpins: 3 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInTeam
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #6 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #7 41-47, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isTeamLeader
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #8 48-52, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isNeedPreEquipTeamRoomState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 53-58, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "TEAM_ROOM_MEMBER_DISABLE_TIP"
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #10 59-63, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.isTeamMemberCountOverflow
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #10 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 64-69, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "NUMBER_NOT_READY"
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #15
+
+
+	--- BLOCK #12 70-75, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.getDungeonDisableTip
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	--- END OF BLOCK #12 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 76-78, warpins: 1 ---
+	slot3 = slot0.isAutoAddMembers
+	--- END OF BLOCK #13 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 79-84, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.getGameString
+	slot5 = "ADDITION_TEAMMATES_AUTO"
+	slot3 = slot3(slot5)
+	slot1 = slot3
+	slot2 = false
+	--- END OF BLOCK #14 ---
+
+	FLOW; TARGET BLOCK #15
+
+
+	--- BLOCK #15 85-86, warpins: 7 ---
+	--- END OF BLOCK #15 ---
+
+	if slot1 ~= nil then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #16 87-88, warpins: 1 ---
+	--- END OF BLOCK #16 ---
+
+	if slot1 ~= "" then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 89-93, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isTeamMatchingState
+	slot3 = slot3(slot5)
+	slot3 = not slot3
+	--- END OF BLOCK #17 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #18 94-95, warpins: 2 ---
+	slot3 = false
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #19 96-96, warpins: 0 ---
+	slot3 = true
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 97-107, warpins: 3 ---
+	slot4 = slot0.txtTips
+	slot4 = slot4.gameObject
+	slot6 = slot4
+	slot4 = slot4.SetActiveEx
+	slot7 = slot3
+
+	slot4(slot6, slot7)
+
+	slot4 = ClientTextUtils
+	slot4 = slot4.setText
+	slot6 = slot0.txtTips
+	--- END OF BLOCK #20 ---
+
+	slot7 = if not slot1 then
+	JUMP TO BLOCK #21
+	else
+	JUMP TO BLOCK #22
+	end
+
+
+	--- BLOCK #21 108-108, warpins: 1 ---
+	slot7 = ""
+
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 109-111, warpins: 2 ---
+	slot4(slot6, slot7)
+
+	--- END OF BLOCK #22 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #23
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #23 112-113, warpins: 1 ---
+	--- END OF BLOCK #23 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 114-119, warpins: 1 ---
+	slot4 = slot0.rootUComponent
+	slot6 = slot4
+	slot4 = slot4.TryChangePage
+	slot7 = "Colour"
+	slot8 = 1
+
+	slot4(slot6, slot7, slot8)
+
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 120-120, warpins: 3 ---
 	return
+	--- END OF BLOCK #25 ---
+
+
+
+end
+
+slot20.refreshMatchTipsState = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.createSingleTeam
+	slot4 = 0
+	slot5 = 0
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.createTeam = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.dungeonType
+	slot2 = Const
+	slot2 = slot2.CUR_DUNGEON_TYPE
+	slot2 = slot2.Egg
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot1 = slot0.dungeonId
+	slot2 = Const
+	slot2 = slot2.ROB_EGG_SCENE_CLIP_ID
+	--- END OF BLOCK #1 ---
+
+	if slot1 == slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-17, warpins: 1 ---
+	slot1 = slot0.hardLv
+	slot2 = Const
+	slot2 = slot2.DungeonDifficultLevel
+	slot2 = slot2.CHAOS
+	--- END OF BLOCK #2 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-19, warpins: 3 ---
+	slot1 = false
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #4 20-20, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 21-22, warpins: 2 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-24, warpins: 1 ---
+	slot2 = true
+
+	return slot2
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 25-28, warpins: 2 ---
+	slot2 = getChaosTicketConfig
+	slot2, slot3 = slot2()
+	--- END OF BLOCK #7 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 29-30, warpins: 1 ---
+	slot4 = true
+
+	return slot4
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 31-38, warpins: 2 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.getItemCountById
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
+	--- END OF BLOCK #9 ---
+
+	slot5 = if not slot3 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 39-39, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 40-41, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot4 < slot5 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 42-43, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #12 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #13 44-44, warpins: 1 ---
+	slot4 = true
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 45-45, warpins: 2 ---
+	return slot4
+	--- END OF BLOCK #14 ---
+
+
+
+end
+
+slot20.hasEnoughRobEggChaosTicket = slot21
+
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.ctrl
+	--- END OF BLOCK #0 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 4-7, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot3 = slot3.runWithInterceptConfirm
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-14, warpins: 1 ---
+	slot3 = slot0.ctrl
+	slot5 = slot3
+	slot3 = slot3.runWithInterceptConfirm
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	return
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 15-17, warpins: 3 ---
+	slot3 = slot2
+
+	slot3()
+
+	return
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot20.runWithTeamRoomInterceptConfirm = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isNeedPreEquipTeamRoomState
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-7, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-12, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.getTeamMatchingInfo
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-14, warpins: 1 ---
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot1 = slot0.dungeonConfig
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-19, warpins: 1 ---
+	slot1 = true
+
+	return slot1
 
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 18-22, warpins: 2 ---
-	slot4 = slot3.matchType
-	slot0.selectedMatchType = slot4
-	slot4 = slot1.title
+	--- BLOCK #6 20-26, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isTeamLeader
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #6 ---
 
-	slot4 = if slot4 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 23-27, warpins: 1 ---
-	slot4 = ClientTextUtils
-	slot4 = slot4.setText
-	slot6 = slot1.title
-	slot7 = slot3.label
+	--- BLOCK #7 27-33, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isAllPrepare
+	slot1 = slot1(slot3)
+	slot1 = not slot1
 
-	slot4(slot6, slot7)
+	return slot1
 
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 28-28, warpins: 2 ---
-	return
+	--- BLOCK #8 34-43, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isUidPrepare
+	slot4 = pg
+	slot4 = slot4.me
+	slot4 = slot4.uid
+	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #8 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 44-49, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.cancelPrepareTeamDungeon
+
+	slot1(slot3)
+
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #10 50-54, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.hasEnoughRobEggChaosTicket
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #10 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 55-62, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showBubbleMessageById
+	slot3 = NoticeDef
+	slot3 = slot3.ROB_EGG_LACK_TICKET
+
+	slot1(slot3)
+
+	slot1 = true
+
+	return slot1
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 63-67, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.prepareTeamDungeon
+
+	slot1(slot3)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 68-69, warpins: 2 ---
+	slot1 = true
+
+	return slot1
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot16.refreshSelectorDisplay = slot17
+slot20.handleNeedPreEquipTeamRoomClick = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.dungeonConfig
 	--- END OF BLOCK #0 ---
@@ -2662,9 +4957,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.startPlay = slot17
+slot20.startPlay = slot21
 
-slot17 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -2752,9 +5047,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.startEggMatch = slot17
+slot20.startEggMatch = slot21
 
-slot17 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -2858,9 +5153,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.startNormalMatch = slot17
+slot20.startNormalMatch = slot21
 
-slot17 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -2903,9 +5198,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.tryStartDungeon = slot17
+slot20.tryStartDungeon = slot21
 
-slot17 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3096,40 +5391,64 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.startMatch = slot17
+slot20.startMatch = slot21
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.isInTeam
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.isCreateTeamState
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 8-14, warpins: 1 ---
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.createTeam
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #2 10-16, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.isInTeam
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #3 17-23, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
 	slot1 = slot1.isTeamLeader
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
 	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #2 15-26, warpins: 1 ---
+	--- BLOCK #4 24-35, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -3143,27 +5462,27 @@ slot17 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #3 27-33, warpins: 2 ---
+	--- BLOCK #5 36-42, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
 	slot1 = slot1.isInTeam
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
 	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 34-43, warpins: 1 ---
+	--- BLOCK #6 43-52, warpins: 1 ---
 	slot1 = lume
 	slot1 = slot1.getMapLen
 	slot3 = pg
@@ -3172,16 +5491,16 @@ slot17 = function(slot0)
 	slot3 = slot3.playerInDungeon
 	slot1 = slot1(slot3)
 	slot2 = 0
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	if slot1 > slot2 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 44-55, warpins: 1 ---
+	--- BLOCK #7 53-64, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -3195,12 +5514,12 @@ slot17 = function(slot0)
 
 	slot1(slot3, MULTRES)
 
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #22
 
 
-	--- BLOCK #6 56-69, warpins: 2 ---
+	--- BLOCK #8 65-78, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -3213,22 +5532,22 @@ slot17 = function(slot0)
 	slot2 = Const
 	slot2 = slot2.DUNGEON_CHANGE_STATUS
 	slot2 = slot2.PASS
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	if slot1 ~= slot2 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 70-70, warpins: 1 ---
-	--- END OF BLOCK #7 ---
+	--- BLOCK #9 79-79, warpins: 1 ---
+	--- END OF BLOCK #9 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
+	UNCONDITIONAL JUMP; TARGET BLOCK #23
 
 
-	--- BLOCK #8 71-79, warpins: 1 ---
+	--- BLOCK #10 80-88, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSelectedMatchType
 	slot1 = slot1(slot3)
@@ -3236,50 +5555,27 @@ slot17 = function(slot0)
 	slot2 = slot0.shouldMatchMembers
 	slot2 = slot2(slot4)
 	slot3 = slot0.canMatch
-	--- END OF BLOCK #8 ---
-
-	slot3 = if not slot3 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 80-83, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.startPlay
-
-	slot3(slot5)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
-
-
-	--- BLOCK #10 84-86, warpins: 1 ---
-	slot3 = slot0.isAutoAddMembers
 	--- END OF BLOCK #10 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #11
 	else
 	JUMP TO BLOCK #12
 	end
 
 
-	--- BLOCK #11 87-91, warpins: 1 ---
+	--- BLOCK #11 89-92, warpins: 1 ---
 	slot5 = slot0
-	slot3 = slot0.startMatch
-	slot6 = slot1
+	slot3 = slot0.startPlay
 
-	slot3(slot5, slot6)
+	slot3(slot5)
 
 	--- END OF BLOCK #11 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #12 92-99, warpins: 1 ---
+	--- BLOCK #12 93-100, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.me
 	slot5 = slot3
@@ -3291,34 +5587,51 @@ slot17 = function(slot0)
 	slot2 = if not slot2 then
 	JUMP TO BLOCK #13
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #13 100-101, warpins: 1 ---
+	--- BLOCK #13 101-102, warpins: 1 ---
 	--- END OF BLOCK #13 ---
 
 	slot3 = if not slot3 then
 	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #14 102-106, warpins: 1 ---
+	--- BLOCK #14 103-106, warpins: 1 ---
 	slot5 = slot0.matchCfg
 	slot5 = slot5.autoAddMembersPrompt
-	slot6 = 0
 	--- END OF BLOCK #14 ---
 
-	if slot5 > slot6 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #15
 	else
 	JUMP TO BLOCK #16
 	end
 
 
-	--- BLOCK #15 107-130, warpins: 1 ---
+	--- BLOCK #15 107-107, warpins: 1 ---
+	slot5 = 0
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 108-110, warpins: 2 ---
+	slot6 = 0
+	--- END OF BLOCK #16 ---
+
+	if slot5 > slot6 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
+
+
+	--- BLOCK #17 111-134, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.global
 	slot5 = slot5.showConfirmMsgRaw
@@ -3362,55 +5675,62 @@ slot17 = function(slot0)
 
 	slot5(slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14)
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #17 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #17
+	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #16 131-134, warpins: 3 ---
+	--- BLOCK #18 135-138, warpins: 3 ---
 	slot7 = slot0
 	slot5 = slot0.startMatch
 	slot8 = slot1
 
 	slot5(slot7, slot8)
 
-	--- END OF BLOCK #16 ---
-
-	FLOW; TARGET BLOCK #17
-
-
-	--- BLOCK #17 135-136, warpins: 4 ---
-	return
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 137-137, warpins: 2 ---
-	return
 	--- END OF BLOCK #18 ---
 
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 138-138, warpins: 2 ---
+	--- BLOCK #19 139-140, warpins: 3 ---
 	return
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 139-139, warpins: 2 ---
+	--- BLOCK #20 141-141, warpins: 2 ---
 	return
 	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 142-142, warpins: 2 ---
+	return
+	--- END OF BLOCK #21 ---
+
+	FLOW; TARGET BLOCK #22
+
+
+	--- BLOCK #22 143-143, warpins: 2 ---
+	return
+	--- END OF BLOCK #22 ---
+
+	FLOW; TARGET BLOCK #23
+
+
+	--- BLOCK #23 144-144, warpins: 2 ---
+	return
+	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot16.onStartClick = slot17
+slot20.onStartClick = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -3479,7 +5799,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-39, warpins: 3 ---
+	--- BLOCK #5 28-33, warpins: 3 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
@@ -3487,59 +5807,16 @@ slot17 = function(slot0)
 
 	slot1(slot3)
 
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.isInTeam
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #5 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #6 40-46, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.isEggTeam
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #6 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #7 47-51, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.cancelTeamDungeon
-
-	slot1(slot3)
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 52-52, warpins: 3 ---
 	return
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot16.onCancelMatch = slot17
+slot20.onCancelMatch = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -3579,7 +5856,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-27, warpins: 3 ---
+	--- BLOCK #3 16-29, warpins: 3 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -3590,6 +5867,8 @@ slot17 = function(slot0)
 	slot5 = {}
 	slot6 = slot0.dungeonId
 	slot5.dungeonId = slot6
+	slot6 = slot0.hardLv
+	slot5.hardLv = slot6
 
 	slot1(slot3, slot4, slot5)
 
@@ -3600,16 +5879,16 @@ slot17 = function(slot0)
 
 end
 
-slot16.onInviteMember = slot17
+slot20.onInviteMember = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.showConfirmMsgRaw
 	slot3 = pg
 	slot3 = slot3.getGameString
-	slot5 = "GRAB_EGG_NAME"
+	slot5 = "WARNING"
 	slot3 = slot3(slot5)
 	slot4 = pg
 	slot4 = slot4.getGameString
@@ -3641,9 +5920,64 @@ slot17 = function(slot0)
 
 end
 
-slot16.onBtnExitTeam = slot17
+slot20.onBtnExitTeam = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.matchState
+	slot2 = Const
+	slot2 = slot2.PLAYER_MATCH_STATUS
+	slot2 = slot2.MATCH_DUNGEON
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 9-13, warpins: 1 ---
+	slot2 = Const
+	slot2 = slot2.PLAYER_MATCH_STATUS
+	slot2 = slot2.MATCH_TEAM
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 14-15, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 16-16, warpins: 2 ---
+	slot2 = true
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 17-17, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.isTeamMatchingState = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = Time
 	slot1 = slot1.secondCache
@@ -3682,16 +6016,9 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #2 23-33, warpins: 1 ---
+	--- BLOCK #2 23-26, warpins: 1 ---
 	slot5 = slot4.hardLv
-	slot6 = pg
-	slot6 = slot6.global
-	slot6 = slot6.ui
-	slot6 = slot6.grabEggsPrepRoom
-	slot6 = slot6.model
-	slot8 = slot6
-	slot6 = slot6.getDifficultLv
-	slot6 = slot6(slot8)
+	slot6 = slot0.hardLv
 	--- END OF BLOCK #2 ---
 
 	if slot5 == slot6 then
@@ -3701,7 +6028,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #3 34-43, warpins: 1 ---
+	--- BLOCK #3 27-36, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
@@ -3716,7 +6043,7 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #4 44-51, warpins: 2 ---
+	--- BLOCK #4 37-44, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot5 = slot5.matchState
@@ -3732,7 +6059,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #5 52-59, warpins: 1 ---
+	--- BLOCK #5 45-52, warpins: 1 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot5 = slot5.matchState
@@ -3748,7 +6075,7 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #6 60-66, warpins: 2 ---
+	--- BLOCK #6 53-59, warpins: 2 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot7 = slot5
@@ -3760,21 +6087,21 @@ slot17 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #7 67-68, warpins: 1 ---
+	--- BLOCK #7 60-61, warpins: 1 ---
 	slot2 = false
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 69-69, warpins: 0 ---
+	--- BLOCK #8 62-62, warpins: 0 ---
 	slot2 = true
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 70-72, warpins: 3 ---
+	--- BLOCK #9 63-65, warpins: 3 ---
 	slot5 = pg
 	slot5 = slot5.me
 	slot1 = slot5.matchStartTime
@@ -3783,7 +6110,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 73-75, warpins: 3 ---
+	--- BLOCK #10 66-68, warpins: 3 ---
 	slot4 = slot2
 	slot5 = slot1
 
@@ -3794,188 +6121,30 @@ slot17 = function(slot0)
 
 end
 
-slot16.getTeamMatchingInfo = slot17
+slot20.getTeamMatchingInfo = slot21
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot21 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot0.getTeamMatchingInfo
-	slot1, slot2 = slot1(slot3)
-	--- END OF BLOCK #0 ---
+	slot1 = slot0.refreshTeamRoomFrameMatchState
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #7
-	end
+	slot1(slot3)
 
+	slot3 = slot0
+	slot1 = slot0.refreshTeamMatchStartTime
 
-	--- BLOCK #1 6-8, warpins: 1 ---
-	slot3 = slot0.isAutoAddMembers
-	--- END OF BLOCK #1 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 9-16, warpins: 1 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.txtTips
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "ADDITION_TEAMMATES_AUTO_MATCH"
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 17-23, warpins: 2 ---
-	slot3 = slot0.rootUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "MateType"
-	slot7 = slot0.isAutoAddMembers
-	--- END OF BLOCK #3 ---
-
-	slot7 = if not slot7 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 24-25, warpins: 1 ---
-	slot7 = 1
-	--- END OF BLOCK #4 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
-
-
-	--- BLOCK #5 26-26, warpins: 1 ---
-	slot7 = 0
-
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 27-44, warpins: 2 ---
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.rootUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "MatchLock"
-	slot7 = 1
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.rootUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "MatchState"
-	slot7 = 1
-
-	slot3(slot5, slot6, slot7)
-
-	slot5 = slot0
-	slot3 = slot0.refreshSelectorState
-	slot6 = true
-
-	slot3(slot5, slot6)
-
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #7 45-47, warpins: 1 ---
-	slot3 = slot0.isAutoAddMembers
-	--- END OF BLOCK #7 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 48-55, warpins: 1 ---
-	slot3 = ClientTextUtils
-	slot3 = slot3.setText
-	slot5 = slot0.txtTips
-	slot6 = pg
-	slot6 = slot6.getGameString
-	slot8 = "ADDITION_TEAMMATES_AUTO"
-	MULTRES = slot6(slot8)
-
-	slot3(slot5, MULTRES)
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 56-77, warpins: 2 ---
-	slot3 = slot0.rootUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "MateType"
-	slot7 = slot0.showCheck
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.rootUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "MatchLock"
-	slot7 = 0
-
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.rootUComponent
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "MatchState"
-	slot7 = 0
-
-	slot3(slot5, slot6, slot7)
-
-	slot5 = slot0
-	slot3 = slot0.refreshSelectorState
-	slot6 = false
-
-	slot3(slot5, slot6)
-
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 78-81, warpins: 2 ---
-	slot5 = slot0
-	slot3 = slot0.refreshTeamMatchStartTime
-
-	slot3(slot5)
+	slot1(slot3)
 
 	return
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot16.onTeamMatchedStatusChange = slot17
+slot20.onTeamMatchedStatusChange = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -4003,7 +6172,7 @@ slot17 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-30, warpins: 2 ---
+	--- BLOCK #2 11-29, warpins: 2 ---
 	slot1 = slot0.countDown
 	slot2 = true
 	slot1.positiveTiming = slot2
@@ -4013,9 +6182,8 @@ slot17 = function(slot0)
 	slot4 = math
 	slot4 = slot4.max
 	slot6 = 0
-	slot7 = os
-	slot7 = slot7.time
-	slot7 = slot7()
+	slot7 = Time
+	slot7 = slot7.secondCache
 	slot8 = pg
 	slot8 = slot8.me
 	slot8 = slot8.matchStartTime
@@ -4032,11 +6200,107 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshTeamMatchStartTime = slot17
+slot20.refreshTeamMatchStartTime = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.getNeedPreEquipMatchEnterBtnName
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.isCreateTeamState
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-15, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "CREATE_TEAM"
+
+	return slot2(slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 16-19, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.getGameString
+	slot4 = "TEAM_START_CHALLENGE"
+
+	return slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+
+
+end
+
+slot20.getMatchEnterBtnName = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = slot0.btnMatch
+
+	slot2 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onTeamRoomFrameStartClick
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1.luaClick = slot2
+	slot3 = slot0
+	slot1 = slot0.refreshTeamRoomFrameMatchState
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot20.bindTeamRoomFrameStartButton = slot21
+
+slot21 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.matchCfg
+	slot1 = slot0.ctrl
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -4047,8 +6311,8 @@ slot17 = function(slot0)
 
 
 	--- BLOCK #1 4-7, warpins: 1 ---
-	slot1 = slot0.matchCfg
-	slot1 = slot1.startButtonTxt
+	slot1 = slot0.ctrl
+	slot1 = slot1.getTeamRoomFrameDungeonId
 	--- END OF BLOCK #1 ---
 
 	slot1 = if slot1 then
@@ -4058,47 +6322,183 @@ slot17 = function(slot0)
 	end
 
 
-	--- BLOCK #2 8-12, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.getLocalizationText
-	slot3 = slot0.matchCfg
-	slot3 = slot3.startButtonTxt
-
-	return slot1(slot3)
-
+	--- BLOCK #2 8-13, warpins: 1 ---
+	slot1 = slot0.ctrl
+	slot3 = slot1
+	slot1 = slot1.getTeamRoomFrameDungeonId
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 13-16, warpins: 3 ---
-	slot1 = pg
-	slot1 = slot1.getGameString
-	slot3 = "TEAM_START_CHALLENGE"
-
-	return slot1(slot3)
+	--- BLOCK #3 14-14, warpins: 3 ---
+	slot1 = slot0.dungeonId
 	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-18, warpins: 2 ---
+	slot2 = slot0.hardLv
+	slot3 = slot0.model
+	--- END OF BLOCK #4 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 19-22, warpins: 1 ---
+	slot3 = slot0.model
+	slot3 = slot3.getDifficultLv
+	--- END OF BLOCK #5 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 23-27, warpins: 1 ---
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getDifficultLv
+	slot3 = slot3(slot5)
+	slot2 = slot3
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 28-32, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.isTeamMatchingState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #7 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 33-50, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.updateDungeonMatchInfo
+	slot6 = slot1
+	slot7 = slot2
+	slot8 = true
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot5 = slot0
+	slot3 = slot0.refreshNormalView
+
+	slot3(slot5)
+
+	slot5 = slot0
+	slot3 = slot0.refreshMatchModeState
+	slot8 = slot0
+	slot6 = slot0.getTeamMatchingInfo
+	slot6 = slot6(slot8)
+	slot7 = false
+	slot8 = false
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	return
+
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 51-63, warpins: 2 ---
+	slot5 = slot0
+	slot3 = slot0.refreshTeamRoomFrameMatchEntryState
+	slot6 = slot1
+	slot7 = slot2
+
+	slot3(slot5, slot6, slot7)
+
+	slot3 = slot0.btnExitTeam
+	slot3 = slot3.gameObject
+	slot5 = slot3
+	slot3 = slot3.SetActiveEx
+	slot6 = slot0.ctrl
+	slot6 = slot6.className
+	--- END OF BLOCK #9 ---
+
+	if slot6 == "TeamRoomCtrl" then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 64-69, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.isInTeam
+	slot6 = slot6(slot8)
+	--- END OF BLOCK #10 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #11 70-71, warpins: 1 ---
+	slot6 = false
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
+
+
+	--- BLOCK #12 72-72, warpins: 0 ---
+	slot6 = true
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 73-74, warpins: 3 ---
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot16.getMatchEnterBtnName = slot17
+slot20.onTeamInfoChanged = slot21
 
-slot17 = function(slot0, slot1)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot2 = slot0.btnVoiceUButton
+slot21 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isTeamMatchingState
+	slot3 = slot3(slot5)
 
 	--- END OF BLOCK #0 ---
 
-	slot2 = if not slot2 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 6-6, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -4106,18 +6506,454 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-6, warpins: 2 ---
+	--- BLOCK #2 7-8, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 9-15, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.getMatchDungeonId
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #3 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 16-17, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot3 ~= 0 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-19, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	slot1 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 20-20, warpins: 3 ---
+	slot1 = slot0.dungeonId
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 21-22, warpins: 3 ---
+	--- END OF BLOCK #7 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #8 23-29, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.getCurTeamInfo
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #8 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 30-32, warpins: 1 ---
+	slot4 = slot3.hardLv
+	--- END OF BLOCK #9 ---
+
+	slot2 = if not slot4 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 33-33, warpins: 2 ---
+	slot2 = slot0.hardLv
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 34-38, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.updateDungeonMatchInfo
+	slot6 = slot1
+	--- END OF BLOCK #11 ---
+
+	slot7 = if not slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #12 39-39, warpins: 1 ---
+	slot7 = 0
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 40-47, warpins: 2 ---
+	slot8 = true
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot5 = slot0
+	slot3 = slot0.refreshNormalView
+
+	slot3(slot5)
+
+	slot3 = slot0.dungeonConfig
+	--- END OF BLOCK #13 ---
+
+	if slot3 == nil then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #14 48-49, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 50-50, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 51-52, warpins: 2 ---
+	--- END OF BLOCK #16 ---
+
+	slot4 = if slot3 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #21
+	end
+
+
+	--- BLOCK #17 53-59, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.isInTeam
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #17 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #18 60-65, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.isTeamLeader
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #18 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #19 66-67, warpins: 0 ---
+	slot4 = false
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 68-68, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 69-74, warpins: 4 ---
+	slot7 = slot0
+	slot5 = slot0.refreshMatchModeState
+	slot8 = false
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #21 ---
+
+
+
+end
+
+slot20.refreshTeamRoomFrameMatchEntryState = slot21
+
+slot21 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.getMatchDungeonId
+	slot1 = slot1(slot3)
+	--- END OF BLOCK #0 ---
+
 	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #1 8-9, warpins: 1 ---
+	--- END OF BLOCK #1 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #2 10-19, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getCurTeamInfo
+	slot2 = slot2(slot4)
+	slot5 = slot0
+	slot3 = slot0.updateDungeonMatchInfo
+	slot6 = slot1
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 7-9, warpins: 1 ---
-	slot2 = slot1.inSpeechRoom
+	--- BLOCK #3 20-22, warpins: 1 ---
+	slot7 = slot2.hardLv
+	--- END OF BLOCK #3 ---
+
+	slot7 = if not slot7 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 23-23, warpins: 2 ---
+	slot7 = slot0.hardLv
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-25, warpins: 2 ---
+	slot8 = true
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-31, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.refreshNormalView
+
+	slot2(slot4)
+
+	slot2 = slot0.dungeonConfig
+	--- END OF BLOCK #6 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 32-33, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 34-34, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 35-36, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	slot3 = if slot2 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 37-39, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.isTeamMatchingState
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 40-41, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot2 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #16
+	end
+
+
+	--- BLOCK #12 42-48, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.isInTeam
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #12 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #15
+	end
+
+
+	--- BLOCK #13 49-54, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.me
+	slot6 = slot4
+	slot4 = slot4.isTeamLeader
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #13 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #14 55-56, warpins: 0 ---
+	slot4 = false
+	--- END OF BLOCK #14 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
+
+
+	--- BLOCK #15 57-57, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 58-63, warpins: 4 ---
+	slot7 = slot0
+	slot5 = slot0.refreshMatchModeState
+	slot8 = slot3
+	slot9 = slot4
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #16 ---
+
+
+
+end
+
+slot20.refreshTeamRoomFrameMatchState = slot21
+
+slot21 = function(slot0, slot1)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isCreateTeamState
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-9, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.createTeam
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
+
+
+	--- BLOCK #2 10-14, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isNeedPreEquipTeamRoomState
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #3 15-21, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isTeamLeader
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #3 ---
 
 	slot2 = if not slot2 then
@@ -4127,105 +6963,214 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #4 10-10, warpins: 2 ---
-	slot2 = false
+	--- BLOCK #4 22-30, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.isUidPrepare
+	slot5 = pg
+	slot5 = slot5.me
+	slot5 = slot5.uid
+	slot2 = slot2(slot4, slot5)
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #5 11-16, warpins: 2 ---
-	slot3 = slot0.btnVoiceUButton
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "VioceState"
+	--- BLOCK #5 31-32, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #5 ---
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 33-33, warpins: 0 ---
+	slot2 = true
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 34-35, warpins: 4 ---
+	--- END OF BLOCK #7 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #6 17-18, warpins: 1 ---
-	slot7 = 1
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-	--- BLOCK #7 19-19, warpins: 1 ---
-	slot7 = 0
-
-	--- END OF BLOCK #7 ---
-
-	FLOW; TARGET BLOCK #8
-
-
-	--- BLOCK #8 20-35, warpins: 2 ---
-	slot3(slot5, slot6, slot7)
-
-	slot3 = slot0.btnVoiceUButton
-	slot3 = slot3.transform
-	slot5 = slot3
-	slot3 = slot3.GetComponent
-	slot6 = "ObjectReference"
-	slot3 = slot3(slot5, slot6)
-	slot6 = slot3
-	slot4 = slot3.GetRefValue
-	slot7 = "txtNameUText"
-	slot4 = slot4(slot6, slot7)
-	slot5 = ClientTextUtils
-	slot5 = slot5.setText
-	slot7 = slot4
+	--- BLOCK #8 36-37, warpins: 1 ---
 	--- END OF BLOCK #8 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 36-41, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "QUIT_SPEECH_ROOM"
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #9 ---
+	--- BLOCK #9 38-48, warpins: 1 ---
+	slot5 = slot0
+	slot3 = slot0.runWithTeamRoomInterceptConfirm
+	slot6 = pg
+	slot6 = slot6.me
+	slot8 = slot6
+	slot6 = slot6.isTeamLeader
+	slot6 = slot6(slot8)
 
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
+	slot7 = function()
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.onTeamRoomFrameStartClick
+		slot3 = true
+
+		slot0(slot2, slot3)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
 	end
 
+	slot3(slot5, slot6, slot7)
 
-	--- BLOCK #10 42-45, warpins: 2 ---
-	slot8 = pg
-	slot8 = slot8.getGameString
-	slot10 = "JOIN_SPEECH_ROOM"
-	slot8 = slot8(slot10)
+	return
+
+	--- END OF BLOCK #9 ---
+
+	FLOW; TARGET BLOCK #10
+
+
+	--- BLOCK #10 49-53, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.handleNeedPreEquipTeamRoomClick
+	slot3 = slot3(slot5)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	slot3 = if slot3 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 46-47, warpins: 2 ---
-	slot5(slot7, slot8)
+	--- BLOCK #11 54-55, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #11 ---
+
+	FLOW; TARGET BLOCK #12
+
+
+	--- BLOCK #12 56-58, warpins: 2 ---
+	slot3 = slot0.dungeonConfig
+
+	--- END OF BLOCK #12 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 59-60, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 61-67, warpins: 2 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isInTeam
+	slot3 = slot3(slot5)
+	--- END OF BLOCK #14 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 68-74, warpins: 1 ---
+	slot3 = pg
+	slot3 = slot3.me
+	slot5 = slot3
+	slot3 = slot3.isTeamLeader
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #15 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 75-76, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 77-81, warpins: 3 ---
+	slot5 = slot0
+	slot3 = slot0.getTeamMatchingInfo
+	slot3 = slot3(slot5)
+
+	--- END OF BLOCK #17 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 82-83, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 84-88, warpins: 2 ---
+	slot6 = slot0
+	slot4 = slot0.onStartClick
+
+	slot4(slot6)
 
 	return
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 89-89, warpins: 2 ---
+	return
+	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot16.refreshBtnVoiceState = slot17
+slot20.onTeamRoomFrameStartClick = slot21
 
-slot17 = function(slot0)
+slot21 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
@@ -4358,20 +7303,137 @@ slot17 = function(slot0)
 
 end
 
-slot16.onGoReadyRoomPush = slot17
+slot20.onGoReadyRoomPush = slot21
 
-slot17 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+slot21 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot1 = {}
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.dungeonMatchStatus
+	slot3 = Const
+	slot3 = slot3.DUNGEON_MATCH_STAGE
+	slot3 = slot3.AGREE_ENTER
 	--- END OF BLOCK #0 ---
+
+	if slot2 == slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #1 10-22, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getCurTeamInfo
+	slot2 = slot2(slot4)
+	slot2 = slot2.teamId
+	slot3 = pg
+	slot3 = slot3.me
+	slot3 = slot3.matchReadyTeams
+	slot3 = slot3[slot2]
+	slot4 = slot3.confirmStatus
+	--- END OF BLOCK #1 ---
+
+	slot1 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 23-23, warpins: 1 ---
+	slot1 = {}
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-24, warpins: 2 ---
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 25-32, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.getCurTeamInfo
+	slot2 = slot2(slot4)
+	slot2 = slot2.dungeonConfirms
+	--- END OF BLOCK #4 ---
+
+	slot1 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 33-33, warpins: 1 ---
+	slot1 = {}
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 34-37, warpins: 3 ---
+	slot2 = pairs
+	slot4 = slot1
+	slot2, slot3, slot4 = slot2(slot4)
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #7 38-42, warpins: 1 ---
+	slot7 = Const
+	slot7 = slot7.TEAM_DUNGEON_CONFIRM
+	slot7 = slot7.REFUSE
+	--- END OF BLOCK #7 ---
+
+	if slot6 == slot7 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 43-47, warpins: 1 ---
+	slot9 = slot0
+	slot7 = slot0.refreshMatchEntryInteractable
+	slot10 = true
+
+	slot7(slot9, slot10)
+
+	return
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 48-49, warpins: 3 ---
+	--- END OF BLOCK #9 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #7
+	GO OUT TO BLOCK #10
+
+
+	--- BLOCK #10 50-50, warpins: 1 ---
+	return
+	--- END OF BLOCK #10 ---
 
 
 
 end
 
-slot16.onTeamMatchedConFirmChanged = slot17
+slot20.onTeamMatchedConFirmChanged = slot21
 
-slot17 = function(slot0, slot1)
+slot21 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4396,7 +7458,28 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 6-11, warpins: 2 ---
+	--- BLOCK #3 6-9, warpins: 2 ---
+	slot2 = slot0.gameObject
+	slot2 = slot2.activeSelf
+
+	--- END OF BLOCK #3 ---
+
+	if slot2 == slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 10-10, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 11-16, warpins: 2 ---
 	slot2 = slot0.gameObject
 	slot4 = slot2
 	slot2 = slot2.SetActiveEx
@@ -4405,15 +7488,15 @@ slot17 = function(slot0, slot1)
 	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot16.refreshMatchEntryInteractable = slot17
+slot20.refreshMatchEntryInteractable = slot21
 
-return slot16
+return slot20
 --- END OF BLOCK #0 ---
 
 

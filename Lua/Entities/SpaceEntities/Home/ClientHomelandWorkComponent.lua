@@ -311,6 +311,28 @@ slot13.onTransportChanged = slot14
 
 slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = true
+	slot0.suppressNextHomeRestVehicleDropPosition = slot1
+	slot1 = slot0.onVehicleActorId
+
+	--- END OF BLOCK #0 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-11, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.playEffect
 	slot4 = "Eff_Switch_Hit"
@@ -318,7 +340,7 @@ slot14 = function(slot0)
 	slot1(slot3, slot4)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
@@ -327,7 +349,10 @@ end
 slot13.RPC_SC_PetStartRestTeleportEffect = slot14
 
 slot14 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = nil
+	slot0.suppressNextHomeRestVehicleDropPosition = slot1
+
 	return
 	--- END OF BLOCK #0 ---
 

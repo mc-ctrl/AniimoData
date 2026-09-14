@@ -23,23 +23,23 @@ slot7 = "Data.weather_data"
 slot5 = slot5(slot7)
 slot6 = {}
 slot7 = {
-	id = 1,
-	controlId = 0
+	controlId = 0,
+	id = 1
 }
 slot6[1] = slot7
 slot7 = {
-	id = 2,
-	controlId = 1
+	controlId = 1,
+	id = 2
 }
 slot6[2] = slot7
 slot7 = {
-	id = 3,
-	controlId = 2
+	controlId = 2,
+	id = 3
 }
 slot6[3] = slot7
 slot7 = {
-	id = 4,
-	controlId = 3
+	controlId = 3,
+	id = 4
 }
 slot6[4] = slot7
 slot3.WeatherConfig = slot6

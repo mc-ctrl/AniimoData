@@ -1,46 +1,49 @@
---- BLOCK #0 1-88, warpins: 1 ---
+--- BLOCK #0 1-91, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "GameApp.Sandbox.LevelItem"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.SceneUtils"
+slot4 = "GameApp.Sandbox.LevelItem"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Core.Common.inspect"
+slot5 = "Common.Utils.SceneUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Const.AudioConst"
+slot6 = "Core.Common.inspect"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.Time"
+slot7 = "Const.AudioConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.MessageName"
+slot8 = "Core.Common.Time"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Common.Const.SandboxConst"
+slot9 = "Const.MessageName"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Utils.LuaUIUtils"
+slot10 = "Common.Const.SandboxConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.default_map_mark_data"
+slot11 = "Utils.LuaUIUtils"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.ConflictTypes"
+slot12 = "Data.default_map_mark_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Common.Const.Const"
+slot13 = "Common.ConflictTypes"
 slot11 = slot11(slot13)
-slot12 = slot0.LightClass
-slot14 = "RacePuzzle"
-slot15 = slot1
-slot12 = slot12(slot14, slot15)
+slot12 = require
+slot14 = "Common.Const.Const"
+slot12 = slot12(slot14)
+slot13 = slot1.LightClass
+slot15 = "RacePuzzle"
+slot16 = slot2
+slot13 = slot13(slot15, slot16)
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot4 = RacePuzzle
 	slot4 = slot4.super
@@ -59,9 +62,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.ctor = slot13
+slot13.ctor = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.spawnInfo
 	slot1 = slot1.defaultValue
@@ -164,9 +167,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onInit = slot13
+slot13.onInit = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = RacePuzzle
 	slot1 = slot1.super
@@ -275,9 +278,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onSandboxReady = slot13
+slot13.onSandboxReady = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3, slot4)
+slot14 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot5 = RacePuzzle
 	slot5 = slot5.super
@@ -340,9 +343,9 @@ slot13 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot12.onValueChange = slot13
+slot13.onValueChange = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.lastPuzzleState
 	slot2 = SandboxConst
@@ -476,9 +479,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.destroy = slot13
+slot13.destroy = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestSpawnerId
 	--- END OF BLOCK #0 ---
@@ -580,7 +583,7 @@ slot13 = function(slot0)
 
 
 	--- BLOCK #8 41-41, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -628,9 +631,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.initRefChestStaticId = slot13
+slot13.initRefChestStaticId = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.isPlaying
@@ -694,9 +697,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.raceTick = slot13
+slot13.raceTick = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.raceSB
 	--- END OF BLOCK #0 ---
@@ -741,9 +744,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.RPC_SC_ChestCreated = slot13
+slot13.RPC_SC_ChestCreated = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.serverMsg
@@ -758,9 +761,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onReachStartTrigger = slot13
+slot13.onReachStartTrigger = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.raceSB
 	--- END OF BLOCK #0 ---
@@ -883,9 +886,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.RPC_SC_OnTriggerPuzzle = slot13
+slot13.RPC_SC_OnTriggerPuzzle = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.raceSB
 
@@ -1014,9 +1017,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.updateEffects = slot13
+slot13.updateEffects = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.syncInfo
 	slot2 = slot2.playerId
@@ -1354,9 +1357,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onPuzzleStateChange = slot13
+slot13.onPuzzleStateChange = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.syncInfo
 	slot1 = slot1.puzzleState
@@ -1474,9 +1477,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshAiHelperState = slot13
+slot13.refreshAiHelperState = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = slot0.syncInfo
 	slot1 = slot1.puzzleState
@@ -1515,9 +1518,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.isPlaying = slot13
+slot13.isPlaying = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1595,9 +1598,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.RPC_SC_OnPuzzleSuccess = slot13
+slot13.RPC_SC_OnPuzzleSuccess = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1665,9 +1668,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.RPC_SC_OnPuzzleFailed = slot13
+slot13.RPC_SC_OnPuzzleFailed = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-23, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -1723,9 +1726,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onStartWarning = slot13
+slot13.onStartWarning = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestStaticId
 	--- END OF BLOCK #0 ---
@@ -1761,9 +1764,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.tempHideChest = slot13
+slot13.tempHideChest = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.chestStaticId
 	--- END OF BLOCK #0 ---
@@ -1799,9 +1802,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.resetHideChest = slot13
+slot13.resetHideChest = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = SceneUtils
 	slot1 = slot1.getSceneMarkPointData
@@ -1839,9 +1842,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.getMarkConfigData = slot13
+slot13.getMarkConfigData = slot14
 
-slot13 = function(slot0, slot1, slot2, slot3)
+slot14 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot4 = LuaUIUtils
 	slot4 = slot4.clearToastPoiPopup
@@ -1881,7 +1884,7 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 
 	--- BLOCK #2 18-18, warpins: 1 ---
-	slot10 = {}
+	slot10 = EMPTY_TABLE
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
@@ -1931,9 +1934,9 @@ slot13 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot12.toastPoiPopup = slot13
+slot13.toastPoiPopup = slot14
 
-slot13 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = LuaUIUtils
 	slot1 = slot1.clearToastPoiPopup
@@ -1954,9 +1957,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.resetAndTeleport = slot13
+slot13.resetAndTeleport = slot14
 
-slot13 = function(slot0, slot1)
+slot14 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.pawn
@@ -2057,9 +2060,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.RPC_SC_OnResetPuzzle = slot13
+slot13.RPC_SC_OnResetPuzzle = slot14
 
-return slot12
+return slot13
 --- END OF BLOCK #0 ---
 
 

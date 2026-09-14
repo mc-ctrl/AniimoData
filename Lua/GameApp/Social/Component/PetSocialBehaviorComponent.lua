@@ -1,102 +1,108 @@
---- BLOCK #0 1-200, warpins: 1 ---
+--- BLOCK #0 1-206, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Timer.TimerManager"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.AiConst"
+slot4 = "Core.Timer.TimerManager"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.Const"
+slot5 = "Common.Const.AiConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Common.Const.EventConst"
+slot6 = "Common.Const.Const"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.NoticeDef"
+slot7 = "Common.Const.EventConst"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Const.MessageName"
+slot8 = "Common.NoticeDef"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.UIConst"
+slot9 = "Const.MessageName"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.sys_config_data"
+slot10 = "Const.UIConst"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Data.sys_notice_data"
+slot11 = "Data.sys_config_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_data"
+slot12 = "Data.sys_notice_data"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Utils.PetManagementDataHelper"
+slot13 = "Data.pet_data"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Utils.AutoPathFindUtils"
+slot14 = "Utils.PetManagementDataHelper"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Utils.AIControllerUtils"
+slot15 = "Common.Utils.AutoPathFindUtils"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "GameApp.Social.Component.PetPeekTag"
+slot16 = "Common.Utils.AIControllerUtils"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "GameApp.Social.Component.CocktailInviteBubble"
+slot17 = "GameApp.Social.Component.PetPeekTag"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Common.Const.PlayableConst"
+slot18 = "GameApp.Social.Component.CocktailInviteBubble"
 slot16 = slot16(slot18)
 slot17 = require
-slot19 = "Common.Utils.Utils"
+slot19 = "Common.Const.PlayableConst"
 slot17 = slot17(slot19)
 slot18 = require
-slot20 = "Common.Const.SocialConst"
+slot20 = "Common.Utils.Utils"
 slot18 = slot18(slot20)
-slot19 = slot0.LiteClass
-slot21 = "PetSocialBehaviorComponent"
+slot19 = require
+slot21 = "Common.Const.SocialConst"
 slot19 = slot19(slot21)
-slot20 = "$UI_Icon_MarkPoint_PetCoordinates.png"
-slot19.PET_AI_TRACK_ICON = slot20
-slot20 = {}
-slot21 = slot5.SOCIAL_PARTY_SNUGGLE_START
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_SNUGGLE_DROP_TOAST1
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_SNUGGLE_DROP_TOAST2
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_SNUGGLE_DROP_TOAST3
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_SNUGGLE_PET_PROP
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_FOLLOW_START
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_FOLLOW_DROP_TOAST
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_FOLLOW_PET_PROP
-slot22 = true
-slot20[slot21] = slot22
-slot19.CAFE_PET_NOTICE_SET = slot20
-slot20 = {}
-slot21 = slot5.SOCIAL_PARTY_SNUGGLE_PET_PROP
-slot22 = true
-slot20[slot21] = slot22
-slot21 = slot5.SOCIAL_PARTY_FOLLOW_PET_PROP
-slot22 = true
-slot20[slot21] = slot22
-slot19.CAFE_PET_IV_NOTICE_SET = slot20
+slot20 = require
+slot22 = "Common.Utils.PetAttributeCalcUtils"
+slot20 = slot20(slot22)
+slot21 = slot1.LiteClass
+slot23 = "PetSocialBehaviorComponent"
+slot21 = slot21(slot23)
+slot22 = "$UI_Icon_MarkPoint_PetCoordinates.png"
+slot21.PET_AI_TRACK_ICON = slot22
+slot22 = {}
+slot23 = slot6.SOCIAL_PARTY_SNUGGLE_START
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_SNUGGLE_DROP_TOAST1
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_SNUGGLE_DROP_TOAST2
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_SNUGGLE_DROP_TOAST3
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_SNUGGLE_PET_PROP
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_FOLLOW_START
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_FOLLOW_DROP_TOAST
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_FOLLOW_PET_PROP
+slot24 = true
+slot22[slot23] = slot24
+slot21.CAFE_PET_NOTICE_SET = slot22
+slot22 = {}
+slot23 = slot6.SOCIAL_PARTY_SNUGGLE_PET_PROP
+slot24 = true
+slot22[slot23] = slot24
+slot23 = slot6.SOCIAL_PARTY_FOLLOW_PET_PROP
+slot24 = true
+slot22[slot23] = slot24
+slot21.CAFE_PET_IV_NOTICE_SET = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = tonumber
 	slot3 = SysConfigData
@@ -140,9 +146,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.getPetInteractDesignPerformSec = slot20
+slot21.getPetInteractDesignPerformSec = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = tonumber
 	slot3 = SysConfigData
@@ -202,9 +208,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.getPetInteractPerformSec = slot20
+slot21.getPetInteractPerformSec = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._activePerforms
 	--- END OF BLOCK #0 ---
@@ -323,9 +329,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.resetData = slot20
+slot21.resetData = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -427,9 +433,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._isInGuardScene = slot20
+slot21._isInGuardScene = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -447,9 +453,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._setInteractMode = slot20
+slot21._setInteractMode = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -513,9 +519,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._safeResetMyPetAi = slot20
+slot21._safeResetMyPetAi = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -596,9 +602,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._getPetAiTraceTargetPetId = slot20
+slot21._getPetAiTraceTargetPetId = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -670,9 +676,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19._sendPetAiHudTrace = slot20
+slot21._sendPetAiHudTrace = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = pg
 	slot3 = slot3.getEntity
@@ -745,48 +751,106 @@ slot20 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 21-23, warpins: 2 ---
+	--- BLOCK #7 21-24, warpins: 2 ---
 	slot4.petAiTrackingIcon = slot5
+	slot4 = nil
 	--- END OF BLOCK #7 ---
 
 	if slot2 == true then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 24-26, warpins: 1 ---
-	slot6 = slot3
-	slot4 = slot3.createTopLogoItem
+	--- BLOCK #8 25-33, warpins: 1 ---
+	slot7 = slot3
+	slot5 = slot3.ensureTopLogoItem
+	slot8 = "pet_ai_tracking"
 
-	slot4(slot6)
+	slot5(slot7, slot8)
 
+	slot7 = slot3
+	slot5 = slot3.getTopLogoIcon
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	if slot5 ~= nil then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #11
+	end
 
 
-	--- BLOCK #9 27-34, warpins: 2 ---
-	slot6 = slot3
-	slot4 = slot3.executeTopLogoComponentMethod
-	slot7 = UIConst
-	slot7 = slot7.TOPLOGO_COMPONENT
-	slot7 = slot7.ICON
-	slot8 = "m_refreshIcon"
-
-	slot4(slot6, slot7, slot8)
-
-	return
+	--- BLOCK #9 34-41, warpins: 1 ---
+	slot7 = slot3
+	slot5 = slot3.ensureToplogoComponent
+	slot8 = UIConst
+	slot8 = slot8.TOPLOGO_COMPONENT
+	slot8 = slot8.ICON
+	slot5 = slot5(slot7, slot8)
+	slot4 = slot5
 	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 42-48, warpins: 1 ---
+	slot7 = slot3
+	slot5 = slot3.peekToplogoComponent
+	slot8 = UIConst
+	slot8 = slot8.TOPLOGO_COMPONENT
+	slot8 = slot8.ICON
+	slot5 = slot5(slot7, slot8)
+	slot4 = slot5
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 49-50, warpins: 3 ---
+	--- END OF BLOCK #11 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 51-53, warpins: 1 ---
+	slot5 = slot4.m_refreshIcon
+	--- END OF BLOCK #12 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 54-56, warpins: 1 ---
+	slot7 = slot4
+	slot5 = slot4.m_refreshIcon
+
+	slot5(slot7)
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 57-57, warpins: 3 ---
+	return
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot19._setPetAiTopLogoIcon = slot20
+slot21._setPetAiTopLogoIcon = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -925,9 +989,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19._startPetAiTrace = slot20
+slot21._startPetAiTrace = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1016,9 +1080,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19._stopPetAiTrace = slot20
+slot21._stopPetAiTrace = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._petAiHudTracePetId
 	--- END OF BLOCK #0 ---
@@ -1056,9 +1120,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._clearPetAiHudTrace = slot20
+slot21._clearPetAiHudTrace = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._interactCtxByGroupKey
 
@@ -1144,9 +1208,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._retainRewardContext = slot20
+slot21._retainRewardContext = slot22
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0._isInGuardScene
@@ -1463,9 +1527,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot19.onPetInteractAction = slot20
+slot21.onPetInteractAction = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1552,9 +1616,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.safePetName = slot20
+slot21.safePetName = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
@@ -1725,9 +1789,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.splitMyAndOtherPet = slot20
+slot21.splitMyAndOtherPet = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = {}
 	slot3 = Utils
@@ -1797,9 +1861,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.collectCafePetNoticeArgs = slot20
+slot21.collectCafePetNoticeArgs = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PetSocialBehaviorComponent
 	slot2 = slot2.CAFE_PET_NOTICE_SET
@@ -1836,9 +1900,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.isCafePetNotice = slot20
+slot21.isCafePetNotice = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PetSocialBehaviorComponent
 	slot2 = slot2.CAFE_PET_IV_NOTICE_SET
@@ -1875,9 +1939,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.isCafePetIvNotice = slot20
+slot21.isCafePetIvNotice = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1973,73 +2037,61 @@ slot20 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 32-34, warpins: 2 ---
-	slot4 = slot2.attributeCacheMap
-	--- END OF BLOCK #8 ---
-
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 35-35, warpins: 1 ---
-	slot4 = {}
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 36-40, warpins: 2 ---
+	--- BLOCK #8 32-42, warpins: 2 ---
+	slot4 = PetAttributeCalcUtils
+	slot4 = slot4.getAttributeMapByPetInfo
+	slot6 = pg
+	slot6 = slot6.me
+	slot7 = slot2
+	slot4 = slot4(slot6, slot7)
 	slot5 = {}
 	slot6 = pairs
 	slot8 = slot3
 	slot6, slot7, slot8 = slot6(slot8)
-	--- END OF BLOCK #10 ---
+	--- END OF BLOCK #8 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #11 41-46, warpins: 1 ---
+	--- BLOCK #9 43-48, warpins: 1 ---
 	slot11 = PetManagementDataHelper
 	slot11 = slot11.CUR_PROP
 	slot11 = slot11[slot9]
 	slot12 = nil
-	--- END OF BLOCK #11 ---
+	--- END OF BLOCK #9 ---
 
 	if slot11 ~= nil then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #11
+	end
+
+
+	--- BLOCK #10 49-49, warpins: 1 ---
+	slot12 = slot4[slot11]
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 50-51, warpins: 2 ---
+	--- END OF BLOCK #11 ---
+
+	if slot12 == nil then
 	JUMP TO BLOCK #12
 	else
 	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 47-47, warpins: 1 ---
-	slot12 = slot4[slot11]
+	--- BLOCK #12 52-52, warpins: 1 ---
+	slot12 = slot10.propDisplayVal
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 48-49, warpins: 2 ---
-	--- END OF BLOCK #13 ---
-
-	if slot12 == nil then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 50-50, warpins: 1 ---
-	slot12 = slot10.propDisplayVal
-	--- END OF BLOCK #14 ---
-
-	FLOW; TARGET BLOCK #15
-
-
-	--- BLOCK #15 51-63, warpins: 2 ---
+	--- BLOCK #13 53-65, warpins: 2 ---
 	slot13 = {}
 	slot14 = slot10.complexBaseLv
 	slot13.complexBaseLv = slot14
@@ -2051,59 +2103,59 @@ slot20 = function(slot0, slot1)
 	slot14 = slot10.propDisplayVal
 	slot13.propDisplayVal = slot14
 	slot14 = slot10.isMax
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #13 ---
 
 	if slot14 ~= true then
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #16 64-65, warpins: 1 ---
+	--- BLOCK #14 66-67, warpins: 1 ---
 	slot14 = false
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #14 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #17 66-66, warpins: 1 ---
+	--- BLOCK #15 68-68, warpins: 1 ---
 	slot14 = true
-	--- END OF BLOCK #17 ---
+	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #18
+	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #18 67-70, warpins: 2 ---
+	--- BLOCK #16 69-72, warpins: 2 ---
 	slot13.isMax = slot14
 	slot14 = slot10.l18nNameKey
 	slot13.l18nNameKey = slot14
 	slot5[slot9] = slot13
 
-	--- END OF BLOCK #18 ---
+	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #19
+	FLOW; TARGET BLOCK #17
 
 
-	--- BLOCK #19 71-72, warpins: 2 ---
-	--- END OF BLOCK #19 ---
+	--- BLOCK #17 73-74, warpins: 2 ---
+	--- END OF BLOCK #17 ---
 
 	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #11
-	GO OUT TO BLOCK #20
+	LOOP BLOCK #9
+	GO OUT TO BLOCK #18
 
 
-	--- BLOCK #20 73-73, warpins: 1 ---
+	--- BLOCK #18 75-75, warpins: 1 ---
 	return slot5
-	--- END OF BLOCK #20 ---
+	--- END OF BLOCK #18 ---
 
 
 
 end
 
-slot19.snapshotPropLevels = slot20
+slot21.snapshotPropLevels = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.splitMyAndOtherPet
@@ -2146,9 +2198,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._snapshotMyPetProps = slot20
+slot21._snapshotMyPetProps = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0._cocktailInviteBubble
 	--- END OF BLOCK #0 ---
@@ -2224,9 +2276,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._tryAttachCocktailInvite = slot20
+slot21._tryAttachCocktailInvite = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = SysNoticeData
 	slot3 = slot3[slot1]
@@ -2417,9 +2469,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19._showCafePetNoticeWithArgs = slot20
+slot21._showCafePetNoticeWithArgs = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.isCafePetNotice
@@ -2520,13 +2572,13 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.tryShowCafePetNotice = slot20
-slot20 = "SOCIAL_PARTY_PET_GET_ITEM"
-slot19.COIN_DROP_EFFECT_KEY = slot20
-slot20 = "SOCIAL_PARTY_PET_IMPROVE"
-slot19.IV_UP_EFFECT_KEY = slot20
+slot21.tryShowCafePetNotice = slot22
+slot22 = "SOCIAL_PARTY_PET_GET_ITEM"
+slot21.COIN_DROP_EFFECT_KEY = slot22
+slot22 = "SOCIAL_PARTY_PET_IMPROVE"
+slot21.IV_UP_EFFECT_KEY = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2560,9 +2612,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._playCoinDropEffect = slot20
+slot21._playCoinDropEffect = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2596,9 +2648,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._playIvUpEffect = slot20
+slot21._playIvUpEffect = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._interactCtxByGroupKey
 	--- END OF BLOCK #0 ---
@@ -2750,9 +2802,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._getLatestDropContext = slot20
+slot21._getLatestDropContext = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._interactCtxByGroupKey
 	--- END OF BLOCK #0 ---
@@ -2915,9 +2967,9 @@ slot20 = function(slot0)
 
 end
 
-slot19._getLatestIvUpContext = slot20
+slot21._getLatestIvUpContext = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0._isInGuardScene
@@ -3333,9 +3385,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.onCafePetIvUpNotice = slot20
+slot21.onCafePetIvUpNotice = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -3701,9 +3753,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.debugSimulateCafePetIvUp = slot20
+slot21.debugSimulateCafePetIvUp = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = tonumber
 	slot4 = slot1
@@ -3800,7 +3852,7 @@ slot20 = function(slot0, slot1)
 
 
 	--- BLOCK #8 33-33, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #8 ---
 
 	FLOW; TARGET BLOCK #9
@@ -3855,21 +3907,21 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19.onCafePetCoinDrop = slot20
-slot20 = {
+slot21.onCafePetCoinDrop = slot22
+slot22 = {
 	"Behav_LoveStart",
 	"Behav_LoveLoop",
 	"Behav_LoveEnd"
 }
-slot19.SNUGGLE_ANIM_KEYS = slot20
-slot20 = {
+slot21.SNUGGLE_ANIM_KEYS = slot22
+slot22 = {
 	"Behav_HappyStart",
 	"Behav_HappyLoop",
 	"Behav_HappyEnd"
 }
-slot19.FOLLOW_ANIM_KEYS = slot20
+slot21.FOLLOW_ANIM_KEYS = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = {}
 	slot4 = slot1[1]
@@ -3891,21 +3943,21 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.buildPerformAnimCfg = slot20
-slot20 = "Kiss"
-slot19.SNUGGLE_MATCH_EMOJI = slot20
-slot20 = {
+slot21.buildPerformAnimCfg = slot22
+slot22 = "Kiss"
+slot21.SNUGGLE_MATCH_EMOJI = slot22
+slot22 = {
 	"Happy",
 	"Laugh",
 	"Shy",
 	"Surprise",
 	"Halo"
 }
-slot19.SNUGGLE_MISMATCH_EMOJIS = slot20
-slot20 = "Laugh"
-slot19.FOLLOW_EMOJI = slot20
+slot21.SNUGGLE_MISMATCH_EMOJIS = slot22
+slot22 = "Laugh"
+slot21.FOLLOW_EMOJI = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4074,9 +4126,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.pickSnuggleEmoji = slot20
+slot21.pickSnuggleEmoji = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4122,9 +4174,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.tryPlayCfgAnim = slot20
+slot21.tryPlayCfgAnim = slot22
 
-slot20 = function(slot0, slot1, slot2, slot3)
+slot22 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4218,9 +4270,9 @@ slot20 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot19.tryShowEmojiBubble = slot20
+slot21.tryShowEmojiBubble = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4272,9 +4324,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19.tryForcePetPos = slot20
+slot21.tryForcePetPos = slot22
 
-slot20 = function(slot0, slot1, slot2, slot3, slot4, slot5)
+slot22 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -4518,9 +4570,9 @@ slot20 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 
 end
 
-slot19.tryGatherTo = slot20
+slot21.tryGatherTo = slot22
 
-slot20 = function(slot0, slot1, slot2)
+slot22 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = #slot2
 	slot4 = 2
@@ -4802,9 +4854,9 @@ slot20 = function(slot0, slot1, slot2)
 
 end
 
-slot19._applyBehaviorPose = slot20
+slot21._applyBehaviorPose = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0._activePerforms
 	slot2 = slot2[slot1]
@@ -4894,9 +4946,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._clearPerform = slot20
+slot21._clearPerform = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.isTable
@@ -4978,9 +5030,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._resumePausedPets = slot20
+slot21._resumePausedPets = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._activePerforms
 	--- END OF BLOCK #0 ---
@@ -5073,9 +5125,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.isMyPetInteracting = slot20
+slot21.isMyPetInteracting = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._activePerforms
 
@@ -5215,9 +5267,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.abortAllPerforms = slot20
+slot21.abortAllPerforms = slot22
 
-slot20 = function(slot0, slot1)
+slot22 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0._activePerforms
 	slot2 = slot2[slot1]
@@ -5299,9 +5351,9 @@ slot20 = function(slot0, slot1)
 
 end
 
-slot19._finishPerform = slot20
+slot21._finishPerform = slot22
 
-slot20 = function(slot0)
+slot22 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._activePerforms
 	--- END OF BLOCK #0 ---
@@ -5421,9 +5473,9 @@ slot20 = function(slot0)
 
 end
 
-slot19.destroy = slot20
+slot21.destroy = slot22
 
-return slot19
+return slot21
 --- END OF BLOCK #0 ---
 
 

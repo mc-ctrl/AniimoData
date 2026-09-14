@@ -1,4 +1,4 @@
---- BLOCK #0 1-35, warpins: 1 ---
+--- BLOCK #0 1-24, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -18,15 +18,46 @@ slot4 = slot4(slot6)
 slot5 = require
 slot7 = "Common.Utils.AIControllerUtils"
 slot5 = slot5(slot7)
-slot6 = slot0.LiteClass
-slot8 = "WayPointBehaviorState"
-slot9 = slot1
-slot6 = slot6(slot8, slot9)
-slot7 = "behaviorTreeTemplate"
-slot8 = "position"
+slot6 = require
+slot8 = "Common.Data.Scene.route_default_value_data"
+slot6 = slot6(slot8)
+--- END OF BLOCK #0 ---
 
-slot9 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-36, warpins: 1 ---
+slot6 = if slot6 then
+JUMP TO BLOCK #1
+else
+JUMP TO BLOCK #2
+end
+
+
+--- BLOCK #1 25-27, warpins: 1 ---
+slot7 = slot6.wayPoints
+--- END OF BLOCK #1 ---
+
+slot7 = if not slot7 then
+JUMP TO BLOCK #2
+else
+JUMP TO BLOCK #3
+end
+
+
+--- BLOCK #2 28-28, warpins: 2 ---
+slot7 = {}
+--- END OF BLOCK #2 ---
+
+FLOW; TARGET BLOCK #3
+
+
+--- BLOCK #3 29-44, warpins: 2 ---
+slot8 = slot0.LiteClass
+slot10 = "WayPointBehaviorState"
+slot11 = slot1
+slot8 = slot8(slot10, slot11)
+slot9 = "behaviorTreeTemplate"
+slot10 = "position"
+
+slot11 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-32, warpins: 1 ---
 	slot3 = WayPointBehaviorState
 	slot3 = slot3.super
 	slot3 = slot3.onEnter
@@ -59,6 +90,24 @@ slot9 = function(slot0, slot1, slot2)
 	slot6 = true
 	slot0.x_firstIn = slot6
 	slot6 = slot4.inexecutionAction
+	--- END OF BLOCK #0 ---
+
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 33-34, warpins: 1 ---
+	slot6 = WAY_POINT_DEFAULTS
+	slot6 = slot6.inexecutionAction
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 35-40, warpins: 2 ---
 	slot0.x_inexecutionAction = slot6
 	slot8 = slot0
 	slot6 = slot0.executeBehavior
@@ -67,15 +116,15 @@ slot9 = function(slot0, slot1, slot2)
 	slot6(slot8, slot9)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 
 
 end
 
-slot6.onEnter = slot9
+slot8.onEnter = slot11
 
-slot9 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = WayPointBehaviorState
 	slot2 = slot2.super
@@ -98,9 +147,9 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot6.onRun = slot9
+slot8.onRun = slot11
 
-slot9 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = WayPointBehaviorState
 	slot3 = slot3.super
@@ -129,9 +178,9 @@ slot9 = function(slot0, slot1, slot2)
 
 end
 
-slot6.onExit = slot9
+slot8.onExit = slot11
 
-slot9 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	slot2 = slot1.patrolPlan
 	--- END OF BLOCK #0 ---
@@ -396,10 +445,10 @@ slot9 = function(slot0, slot1)
 
 end
 
-slot6.executeBehavior = slot9
+slot8.executeBehavior = slot11
 
-return slot6
---- END OF BLOCK #0 ---
+return slot8
+--- END OF BLOCK #3 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-68, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -37,7 +37,10 @@ slot13 = "ClientSpaceWeatherComponent"
 slot11 = slot11(slot13)
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = {}
+	slot0._weatherChangeCallbacks = slot1
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -59,12 +62,20 @@ end
 slot11.start = slot12
 
 slot12 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-5, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.refreshSpaceWeather
 	slot6 = slot1
 
 	slot3(slot5, slot6)
+
+	slot5 = slot0
+	slot3 = slot0._notifyWeatherChange
+	slot6 = nil
+	slot7 = slot2
+	slot8 = slot1
+
+	slot3(slot5, slot6, slot7, slot8)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -113,7 +124,15 @@ slot12 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 20-20, warpins: 2 ---
+	--- BLOCK #2 20-26, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0._notifyWeatherChange
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+
+	slot5(slot7, slot8, slot9, slot10)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -124,7 +143,15 @@ end
 slot11.on_spaceWeatherInfoMap_changed = slot12
 
 slot12 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-1, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0._notifyWeatherChange
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -133,6 +160,67 @@ slot12 = function(slot0, slot1, slot2, slot3)
 end
 
 slot11.on_spaceWeatherInfoMap_weatherId_changed = slot12
+
+slot12 = function(slot0, slot1, slot2, slot3)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot4 = slot0._weatherChangeCallbacks
+
+	--- END OF BLOCK #0 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-8, warpins: 2 ---
+	slot4 = pairs
+	slot6 = slot0._weatherChangeCallbacks
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 9-13, warpins: 1 ---
+	slot9 = slot7
+	slot11 = slot1
+	slot12 = slot2
+	slot13 = slot3
+
+	slot9(slot11, slot12, slot13)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 14-15, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 16-16, warpins: 1 ---
+	return
+	--- END OF BLOCK #5 ---
+
+
+
+end
+
+slot11._notifyWeatherChange = slot12
 
 slot12 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
@@ -523,6 +611,72 @@ slot12 = function(slot0, slot1)
 end
 
 slot11.getAreaMeteorologyEndTime = slot12
+
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0._weatherChangeCallbacks
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot2 = {}
+	slot0._weatherChangeCallbacks = slot2
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot2 = slot0._weatherChangeCallbacks
+	slot3 = true
+	slot2[slot1] = slot3
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot11.addWeatherChangeCallback = slot12
+
+slot12 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0._weatherChangeCallbacks
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot2 = slot0._weatherChangeCallbacks
+	slot3 = nil
+	slot2[slot1] = slot3
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-7, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot11.removeWeatherChangeCallback = slot12
 
 return slot11
 --- END OF BLOCK #0 ---

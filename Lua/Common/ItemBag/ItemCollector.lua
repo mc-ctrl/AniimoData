@@ -961,72 +961,94 @@ slot4 = function(slot0, slot1, slot2, slot3, slot4, slot5)
 		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 11-16, warpins: 3 ---
-		slot3 = slot0
-		slot1 = slot0.checkDel
-		slot4 = source
-		slot1 = slot1(slot3, slot4)
+		--- BLOCK #3 11-13, warpins: 3 ---
+		slot1 = canDelExpired
 		--- END OF BLOCK #3 ---
 
 		slot1 = if not slot1 then
 		JUMP TO BLOCK #4
 		else
-		JUMP TO BLOCK #5
+		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #4 17-18, warpins: 1 ---
+		--- BLOCK #4 14-18, warpins: 1 ---
+		slot3 = slot0
+		slot1 = slot0.canUse
+		slot1 = slot1(slot3)
+		--- END OF BLOCK #4 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
+
+
+		--- BLOCK #5 19-20, warpins: 1 ---
 		slot1 = false
 
 		return slot1
 
-		--- END OF BLOCK #4 ---
-
-		FLOW; TARGET BLOCK #5
-
-
-		--- BLOCK #5 19-22, warpins: 2 ---
-		slot1 = slot0.id
-		slot2 = id
 		--- END OF BLOCK #5 ---
 
-		if slot1 == slot2 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
+		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 23-26, warpins: 1 ---
-		slot1 = slot0.isBind
-		slot2 = isBind
+		--- BLOCK #6 21-26, warpins: 3 ---
+		slot3 = slot0
+		slot1 = slot0.checkDel
+		slot4 = source
+		slot1 = slot1(slot3, slot4)
 		--- END OF BLOCK #6 ---
 
-		if slot1 ~= slot2 then
+		slot1 = if not slot1 then
 		JUMP TO BLOCK #7
 		else
 		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #7 27-28, warpins: 2 ---
+		--- BLOCK #7 27-28, warpins: 1 ---
 		slot1 = false
+
+		return slot1
+
 		--- END OF BLOCK #7 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
+		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 29-29, warpins: 1 ---
-		slot1 = true
-
+		--- BLOCK #8 29-32, warpins: 2 ---
+		slot1 = slot0.id
+		slot2 = id
 		--- END OF BLOCK #8 ---
 
-		FLOW; TARGET BLOCK #9
+		if slot1 ~= slot2 then
+		JUMP TO BLOCK #9
+		else
+		JUMP TO BLOCK #10
+		end
 
 
-		--- BLOCK #9 30-30, warpins: 2 ---
-		return slot1
+		--- BLOCK #9 33-34, warpins: 1 ---
+		slot1 = false
 		--- END OF BLOCK #9 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #10 35-35, warpins: 1 ---
+		slot1 = true
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 36-36, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #11 ---
 
 
 

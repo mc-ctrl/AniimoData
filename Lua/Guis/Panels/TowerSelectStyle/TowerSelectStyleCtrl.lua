@@ -1,4 +1,4 @@
---- BLOCK #0 1-69, warpins: 1 ---
+--- BLOCK #0 1-68, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -40,19 +40,16 @@ slot11 = require
 slot13 = "Utils.RogueUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Const.RedDotConst"
+slot14 = "Const.UIConst"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Const.UIConst"
+slot15 = "Data.rogue_transform_data"
 slot13 = slot13(slot15)
-slot14 = require
-slot16 = "Data.rogue_transform_data"
-slot14 = slot14(slot16)
-slot15 = {}
-slot5.messages = slot15
+slot14 = {}
+slot5.messages = slot14
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-17, warpins: 1 ---
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-23, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
@@ -60,12 +57,18 @@ slot15 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.rogueSeasonId
+	slot0.openSeasonId = slot2
 	slot2 = slot1.levelId
 	slot0.levelId = slot2
 	slot2 = nil
 	slot0.curSelectedItem = slot2
 	slot2 = nil
 	slot0.selectRandomTimer = slot2
+	slot2 = nil
+	slot0.selectCloseTimer = slot2
 	slot2 = pg
 	slot2 = slot2.me
 	slot2 = slot2.rogueInitSeriesInfo
@@ -79,14 +82,38 @@ slot15 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 18-25, warpins: 1 ---
+	--- BLOCK #1 24-31, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.initRogueSeriesInfo
 
 	slot5 = function(slot0)
-		--- BLOCK #0 1-5, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.openSeasonId
+		slot2 = pg
+		slot2 = slot2.me
+		slot2 = slot2.rogueSeasonId
+
+		--- END OF BLOCK #0 ---
+
+		if slot1 ~= slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-8, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 9-13, warpins: 2 ---
 		slot1 = self
 		slot3 = slot1
 		slot1 = slot1.initUI
@@ -94,7 +121,7 @@ slot15 = function(slot0, slot1)
 		slot1(slot3)
 
 		return
-		--- END OF BLOCK #0 ---
+		--- END OF BLOCK #2 ---
 
 
 
@@ -109,7 +136,7 @@ slot15 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 26-30, warpins: 2 ---
+	--- BLOCK #2 32-36, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.initUI
 
@@ -122,9 +149,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot5.onCreate = slot15
+slot5.onCreate = slot14
 
-slot15 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -157,7 +184,7 @@ slot15 = function(slot0)
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #13
+		JUMP TO BLOCK #15
 		end
 
 
@@ -266,7 +293,7 @@ slot15 = function(slot0)
 		slot4 = slot4.startTimer
 
 		slot7 = function()
-			--- BLOCK #0 1-34, warpins: 1 ---
+			--- BLOCK #0 1-37, warpins: 1 ---
 			slot0 = RogueUtils
 			slot0 = slot0.refreshSelectedStyleInfo
 			slot2 = self
@@ -306,6 +333,9 @@ slot15 = function(slot0)
 			slot0 = slot0.btnSelectUButton
 			slot1 = true
 			slot0.interactable = slot1
+			slot0 = self
+			slot1 = nil
+			slot0.selectRandomTimer = slot1
 
 			return
 			--- END OF BLOCK #0 ---
@@ -325,7 +355,7 @@ slot15 = function(slot0)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 79-108, warpins: 3 ---
+		--- BLOCK #6 79-100, warpins: 3 ---
 		slot0 = pg
 		slot0 = slot0.me
 		slot2 = slot0
@@ -335,20 +365,12 @@ slot15 = function(slot0)
 
 		slot0(slot2, slot3)
 
-		slot0 = pg
-		slot0 = slot0.me
-		slot2 = slot0
-		slot0 = slot0.setRedDotRecord
-		slot3 = Const
-		slot3 = slot3.CLIENT_KEY
-		slot3 = slot3.ROGUE
-		slot4 = RedDotConst
-		slot4 = slot4.RedDotPath
-		slot4 = slot4.TOWER_LEVEL_SELECTED
-		slot5 = self
-		slot5 = slot5.levelId
+		slot0 = RogueUtils
+		slot0 = slot0.setSelectedRogueLevel
+		slot2 = self
+		slot2 = slot2.levelId
 
-		slot0(slot2, slot3, slot4, slot5)
+		slot0(slot2)
 
 		slot0 = facade
 		slot2 = slot0
@@ -369,7 +391,7 @@ slot15 = function(slot0)
 		end
 
 
-		--- BLOCK #7 109-117, warpins: 1 ---
+		--- BLOCK #7 101-109, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.view
 		slot0 = slot0.styleUList
@@ -384,33 +406,54 @@ slot15 = function(slot0)
 		FLOW; TARGET BLOCK #8
 
 
-		--- BLOCK #8 118-121, warpins: 2 ---
+		--- BLOCK #8 110-113, warpins: 2 ---
 		slot0 = self
-		slot0 = slot0.curSelectedItem
+		slot0 = slot0.selectCloseTimer
+
 		--- END OF BLOCK #8 ---
 
 		slot0 = if slot0 then
 		JUMP TO BLOCK #9
 		else
-		JUMP TO BLOCK #12
+		JUMP TO BLOCK #10
 		end
 
 
-		--- BLOCK #9 122-127, warpins: 1 ---
+		--- BLOCK #9 114-115, warpins: 1 ---
+		return
+
+		--- END OF BLOCK #9 ---
+
+		FLOW; TARGET BLOCK #10
+
+
+		--- BLOCK #10 116-119, warpins: 2 ---
+		slot0 = self
+		slot0 = slot0.curSelectedItem
+		--- END OF BLOCK #10 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #11
+		else
+		JUMP TO BLOCK #14
+		end
+
+
+		--- BLOCK #11 120-125, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curSelectedStyle
 		slot1 = Const
 		slot1 = slot1.ROGUE_SERIES_SELECT_DELAY_VALUE
-		--- END OF BLOCK #9 ---
+		--- END OF BLOCK #11 ---
 
 		if slot0 == slot1 then
-		JUMP TO BLOCK #10
+		JUMP TO BLOCK #12
 		else
-		JUMP TO BLOCK #11
+		JUMP TO BLOCK #13
 		end
 
 
-		--- BLOCK #10 128-137, warpins: 1 ---
+		--- BLOCK #12 126-135, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curSelectedItem
 		slot2 = slot0
@@ -422,12 +465,12 @@ slot15 = function(slot0)
 
 		slot0(slot2, slot3)
 
-		--- END OF BLOCK #10 ---
+		--- END OF BLOCK #12 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #12
+		UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-		--- BLOCK #11 138-146, warpins: 1 ---
+		--- BLOCK #13 136-144, warpins: 1 ---
 		slot0 = self
 		slot0 = slot0.curSelectedItem
 		slot2 = slot0
@@ -439,19 +482,23 @@ slot15 = function(slot0)
 
 		slot0(slot2, slot3)
 
-		--- END OF BLOCK #11 ---
+		--- END OF BLOCK #13 ---
 
-		FLOW; TARGET BLOCK #12
+		FLOW; TARGET BLOCK #14
 
 
-		--- BLOCK #12 147-153, warpins: 3 ---
+		--- BLOCK #14 145-153, warpins: 3 ---
 		slot0 = 0.8
 		slot1 = self
-		slot3 = slot1
-		slot1 = slot1.startTimer
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.startTimer
 
-		slot4 = function()
-			--- BLOCK #0 1-5, warpins: 1 ---
+		slot5 = function()
+			--- BLOCK #0 1-8, warpins: 1 ---
+			slot0 = self
+			slot1 = nil
+			slot0.selectCloseTimer = slot1
 			slot0 = self
 			slot2 = slot0
 			slot0 = slot0.close
@@ -465,18 +512,18 @@ slot15 = function(slot0)
 
 		end
 
-		slot5 = slot0
+		slot6 = slot0
+		slot2 = slot2(slot4, slot5, slot6)
+		slot1.selectCloseTimer = slot2
 
-		slot1(slot3, slot4, slot5)
+		--- END OF BLOCK #14 ---
 
-		--- END OF BLOCK #12 ---
-
-		FLOW; TARGET BLOCK #13
+		FLOW; TARGET BLOCK #15
 
 
-		--- BLOCK #13 154-154, warpins: 2 ---
+		--- BLOCK #15 154-154, warpins: 2 ---
 		return
-		--- END OF BLOCK #13 ---
+		--- END OF BLOCK #15 ---
 
 
 
@@ -499,9 +546,9 @@ slot15 = function(slot0)
 
 end
 
-slot5.addListener = slot15
+slot5.addListener = slot14
 
-slot15 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = RogueDifficultyData
 	slot2 = slot0.levelId
@@ -779,8 +826,8 @@ slot15 = function(slot0)
 
 			--- BLOCK #2 20-64, warpins: 1 ---
 			slot0 = {
-				enabledTooltip = false,
-				hideSkillButton = true
+				hideSkillButton = true,
+				enabledTooltip = false
 			}
 			slot1 = pg
 			slot1 = slot1.getLocalizationText
@@ -1021,7 +1068,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #4 30-37, warpins: 1 ---
+	--- BLOCK #4 30-36, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot2
@@ -1029,7 +1076,6 @@ slot15 = function(slot0)
 		type = 0
 	}
 	slot11.styleId = slot6
-	slot11.info = slot7
 	slot11.originStyleId = slot6
 
 	slot8(slot10, slot11)
@@ -1039,7 +1085,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 38-41, warpins: 2 ---
+	--- BLOCK #5 37-40, warpins: 2 ---
 	slot8 = Const
 	slot8 = slot8.ROGUE_SERIES_SELECT_DELAY_VALUE
 	--- END OF BLOCK #5 ---
@@ -1051,7 +1097,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #6 42-45, warpins: 1 ---
+	--- BLOCK #6 41-44, warpins: 1 ---
 	slot8 = RogueUtils
 	slot8 = slot8.randomStyleRevealed
 	--- END OF BLOCK #6 ---
@@ -1063,7 +1109,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #7 46-57, warpins: 1 ---
+	--- BLOCK #7 45-55, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot2
@@ -1074,7 +1120,6 @@ slot15 = function(slot0)
 	slot12 = slot12.getRandomStyleRealId
 	slot12 = slot12()
 	slot11.styleId = slot12
-	slot11.info = slot7
 	slot11.originStyleId = slot6
 
 	slot8(slot10, slot11)
@@ -1084,7 +1129,7 @@ slot15 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 58-65, warpins: 1 ---
+	--- BLOCK #8 56-62, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.insert
 	slot10 = slot2
@@ -1092,7 +1137,6 @@ slot15 = function(slot0)
 		type = 1
 	}
 	slot11.styleId = slot6
-	slot11.info = slot7
 	slot11.originStyleId = slot6
 
 	slot8(slot10, slot11)
@@ -1102,7 +1146,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 66-67, warpins: 4 ---
+	--- BLOCK #9 63-64, warpins: 4 ---
 	--- END OF BLOCK #9 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -1110,7 +1154,7 @@ slot15 = function(slot0)
 	GO OUT TO BLOCK #10
 
 
-	--- BLOCK #10 68-75, warpins: 1 ---
+	--- BLOCK #10 65-72, warpins: 1 ---
 	slot3 = table
 	slot3 = slot3.sort
 	slot5 = slot2
@@ -1163,7 +1207,7 @@ slot15 = function(slot0)
 	end
 
 
-	--- BLOCK #11 76-81, warpins: 1 ---
+	--- BLOCK #11 73-78, warpins: 1 ---
 	slot3 = slot2[1]
 	slot3 = slot3.originStyleId
 	slot0.curSelectedStyle = slot3
@@ -1175,7 +1219,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 82-98, warpins: 2 ---
+	--- BLOCK #12 79-95, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.styleUList
 	slot5 = slot3
@@ -1218,7 +1262,7 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 99-99, warpins: 2 ---
+	--- BLOCK #13 96-96, warpins: 2 ---
 	return
 	--- END OF BLOCK #13 ---
 
@@ -1226,9 +1270,9 @@ slot15 = function(slot0)
 
 end
 
-slot5.initUI = slot15
+slot5.initUI = slot14
 
-slot15 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -1275,10 +1319,60 @@ slot15 = function(slot0)
 
 end
 
-slot5.onNavFocusChange = slot15
+slot5.onNavFocusChange = slot14
 
-slot15 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+slot14 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.selectRandomTimer
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.selectRandomTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.selectRandomTimer = slot1
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 10-12, warpins: 2 ---
+	slot1 = slot0.selectCloseTimer
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-18, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.killTimer
+	slot4 = slot0.selectCloseTimer
+
+	slot1(slot3, slot4)
+
+	slot1 = nil
+	slot0.selectCloseTimer = slot1
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 19-31, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -1296,16 +1390,16 @@ slot15 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot5.onDestroy = slot15
+slot5.onDestroy = slot14
 
-slot15 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot14 = function(slot0, slot1)
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -1313,6 +1407,11 @@ slot15 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.rogueSeasonId
+	slot0.openSeasonId = slot2
+
 	return
 	--- END OF BLOCK #0 ---
 
@@ -1320,9 +1419,9 @@ slot15 = function(slot0, slot1)
 
 end
 
-slot5.onOpen = slot15
+slot5.onOpen = slot14
 
-slot15 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1331,9 +1430,9 @@ slot15 = function(slot0)
 
 end
 
-slot5.onShow = slot15
+slot5.onShow = slot14
 
-slot15 = function(slot0)
+slot14 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -1342,7 +1441,45 @@ slot15 = function(slot0)
 
 end
 
-slot5.onHide = slot15
+slot5.onHide = slot14
+
+slot14 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.checkUIClosing
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-6, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 7-10, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.close
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot5.closePanel = slot14
 
 return slot5
 --- END OF BLOCK #0 ---

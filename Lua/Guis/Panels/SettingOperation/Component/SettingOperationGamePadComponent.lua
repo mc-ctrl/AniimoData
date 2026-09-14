@@ -383,7 +383,7 @@ slot8 = function(slot0)
 	--- BLOCK #13 38-42, warpins: 1 ---
 	slot1 = slot0.leftTriggerDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #13 ---
 
 	if slot1 <= slot2 then
@@ -427,7 +427,7 @@ slot8 = function(slot0)
 	--- BLOCK #16 58-62, warpins: 1 ---
 	slot1 = slot0.rightTriggerDisableTime
 	slot2 = Time
-	slot2 = slot2.secondCache
+	slot2 = slot2.realSecondCache
 	--- END OF BLOCK #16 ---
 
 	if slot1 <= slot2 then
@@ -482,7 +482,7 @@ slot8 = function(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.max
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot5 = slot0.leftTriggerDelay
 	slot4 = slot4 + slot5
 	slot5 = slot0.leftTriggerDisableTime
@@ -497,7 +497,7 @@ slot8 = function(slot0, slot1)
 	slot2 = math
 	slot2 = slot2.max
 	slot4 = Time
-	slot4 = slot4.secondCache
+	slot4 = slot4.realSecondCache
 	slot5 = slot0.rightTriggerDelay
 	slot4 = slot4 + slot5
 	slot5 = slot0.rightTriggerDisableTime

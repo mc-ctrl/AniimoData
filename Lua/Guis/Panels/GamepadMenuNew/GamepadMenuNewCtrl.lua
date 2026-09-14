@@ -1808,7 +1808,24 @@ slot20 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 22-47, warpins: 3 ---
+	--- BLOCK #3 22-23, warpins: 3 ---
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 24-24, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 25-50, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.switchLeftWheelButton
 	slot5 = slot3
@@ -1844,7 +1861,7 @@ slot20 = function(slot0)
 	slot0.isShowPetAndSkillWheel = slot1
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 
@@ -2147,7 +2164,7 @@ slot20 = function(slot0, slot1, slot2)
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
+	slot3 = slot3.hudV2
 	slot3 = slot3.view
 	--- END OF BLOCK #3 ---
 
@@ -2162,7 +2179,7 @@ slot20 = function(slot0, slot1, slot2)
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
+	slot3 = slot3.hudV2
 	slot3 = slot3.view
 	slot3 = slot3.rootComponent
 	slot5 = slot3
@@ -2330,7 +2347,7 @@ slot20 = function(slot0, slot1, slot2)
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
+	slot3 = slot3.hudV2
 	slot3 = slot3.view
 	--- END OF BLOCK #12 ---
 
@@ -2345,7 +2362,7 @@ slot20 = function(slot0, slot1, slot2)
 	slot3 = pg
 	slot3 = slot3.global
 	slot3 = slot3.ui
-	slot3 = slot3.hud
+	slot3 = slot3.hudV2
 	slot3 = slot3.view
 	slot3 = slot3.rootComponent
 	slot5 = slot3

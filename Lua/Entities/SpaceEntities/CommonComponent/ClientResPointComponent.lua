@@ -34,11 +34,11 @@ slot9 = function(slot0)
 	slot1 = nil
 	slot0.resPointSyncInfo = slot1
 	slot1 = {
+		followTargetActorId = 0,
 		followTargetIntegralValue = 0,
 		followTargetLastDistance = 0,
 		followTargetIndex = 0,
-		followTargetPointId = 0,
-		followTargetActorId = 0
+		followTargetPointId = 0
 	}
 	slot2 = Vector3
 	slot2 = slot2.zero
@@ -444,19 +444,34 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 22-40, warpins: 2 ---
+	--- BLOCK #2 22-49, warpins: 2 ---
+	slot5 = Vector3
+	slot5 = slot5.enableCreateFromCache
+
+	slot5()
+
 	slot5 = slot0.ResPoint
-	slot6 = Quaternion
-	slot6 = slot6.Slerp
-	slot8 = slot0.ResPoint
-	slot8 = slot8.virtualRotation
-	slot11 = slot0
-	slot9 = slot0.getRotation
-	slot9 = slot9(slot11)
-	slot10 = ResPointConst
-	slot10 = slot10.FormationRotationLerpParam
-	slot6 = slot6(slot8, slot9, slot10)
-	slot5.virtualRotation = slot6
+	slot5 = slot5.virtualRotation
+	slot7 = slot5
+	slot5 = slot5.Copy
+	slot8 = Quaternion
+	slot8 = slot8.Slerp
+	slot10 = slot0.ResPoint
+	slot10 = slot10.virtualRotation
+	slot13 = slot0
+	slot11 = slot0.getRotation
+	slot11 = slot11(slot13)
+	slot12 = ResPointConst
+	slot12 = slot12.FormationRotationLerpParam
+	MULTRES = slot8(slot10, slot11, slot12)
+
+	slot5(slot7, MULTRES)
+
+	slot5 = Vector3
+	slot5 = slot5.disableCreateFromCache
+
+	slot5()
+
 	slot5 = slot0.ResPoint
 	slot5 = slot5.entityLastPos
 	slot7 = slot5

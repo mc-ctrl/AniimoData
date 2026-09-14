@@ -7,24 +7,24 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 5,
 	useForRoute = false,
+	agenttype = "CombatAgent",
 	name = "ParmonBehaviorTree/SubTree/PBT_PlayEffect",
-	agenttype = "CombatAgent"
+	version = 5
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	type = "string",
-	const = "",
 	name = "tEffectName",
+	const = "",
+	type = "string",
 	value = ""
 }
 slot4[1] = slot5
 slot5 = {
-	type = "vector<float>",
 	name = "tEffectPos",
+	type = "vector<float>",
 	value = "0:"
 }
 slot6 = {}

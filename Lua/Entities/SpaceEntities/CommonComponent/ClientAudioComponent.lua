@@ -1,32 +1,44 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-91, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Const.AudioConst"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.VoxelConst"
+slot4 = "Const.AudioConst"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Utils.Utils"
+slot5 = "Common.Const.VoxelConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Data.puppet_data"
+slot6 = "Common.Utils.Utils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Const.ClientConst"
+slot7 = "Data.puppet_data"
 slot5 = slot5(slot7)
-slot6 = slot0.Component
+slot6 = slot1.Component
 slot8 = "ClientAudioComponent"
 slot6 = slot6(slot8)
 slot7 = {
-	Large = "SFX_3C_ParmonDashCommon_Heavy",
 	Medium = "SFX_3C_ParmonDashCommon_Medium",
+	Large = "SFX_3C_ParmonDashCommon_Heavy",
 	Small = "SFX_3C_ParmonDashCommon_Light"
 }
+slot8 = {
+	Medium = "SFX_3C_Common_HighGrass_Medium",
+	Large = "SFX_3C_Common_HighGrass_Large",
+	Small = "SFX_3C_Common_HighGrass_Small"
+}
+slot9 = {
+	"sound_avatar_loco_footstep_material_s",
+	"sound_avatar_loco_footstep_material_m",
+	"sound_avatar_loco_footstep_material_h",
+	"sound_avatar_loco_footstep_material_h_02"
+}
+slot10 = "RTPC_MovementSpeed"
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eModel
 	--- END OF BLOCK #0 ---
@@ -34,7 +46,7 @@ slot8 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #6
 	end
 
 
@@ -45,7 +57,7 @@ slot8 = function(slot0)
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
@@ -56,18 +68,29 @@ slot8 = function(slot0)
 	slot1 = if not slot1 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
-	slot1 = false
+	--- BLOCK #3 10-12, warpins: 1 ---
+	slot1 = slot0.isOfflineMainPlayer
 	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #4
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 11-18, warpins: 3 ---
+	--- BLOCK #4 13-13, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 14-21, warpins: 4 ---
 	slot2 = slot0.eModel
 	slot4 = slot2
 	slot2 = slot2.InitAudioEmitters
@@ -78,22 +101,22 @@ slot8 = function(slot0)
 
 	slot2(slot4, slot5, slot6)
 
-	--- END OF BLOCK #4 ---
-
-	FLOW; TARGET BLOCK #5
-
-
-	--- BLOCK #5 19-19, warpins: 2 ---
-	return
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot6.EVENT_EModelCreate = slot8
+slot6.EVENT_EModelCreate = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.eModel
 
@@ -147,11 +170,10 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 14-20, warpins: 3 ---
-	slot1 = slot0.eModel
-	slot3 = slot1
-	slot1 = slot1.GetOrAddComponent
-	slot4 = ClientConst
+	--- BLOCK #5 14-19, warpins: 3 ---
+	slot3 = slot0
+	slot1 = slot0.addEModelComponent
+	slot4 = CommonConst
 	slot4 = slot4.COMPONENT_INDEX_AUDIO
 
 	slot1(slot3, slot4)
@@ -163,16 +185,17 @@ slot8 = function(slot0)
 
 end
 
-slot6.EVENT_AddEComponent = slot8
+slot6.EVENT_AddEComponent = slot11
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot11 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshFootStepSound
 
 	slot1(slot3)
 
-	slot1 = slot0.isInCombat
+	slot1 = pg
+	slot1 = slot1.space
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -182,9 +205,11 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-11, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.isInCombat
+	--- BLOCK #1 8-14, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.space
+	slot3 = slot1
+	slot1 = slot1.checkSkipSkillCutScene
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #1 ---
 
@@ -195,33 +220,79 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #2 12-14, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.playCombatBgm
-
-	slot1(slot3)
-
+	--- BLOCK #2 15-16, warpins: 1 ---
+	slot1 = 0
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 15-18, warpins: 3 ---
-	slot3 = slot0
-	slot1 = slot0.playExtraTempPetBgm
+	--- BLOCK #3 17-17, warpins: 2 ---
+	slot1 = 1
+	--- END OF BLOCK #3 ---
 
-	slot1(slot3)
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 18-26, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.setSoundRTPCValue
+	slot5 = AudioConst
+	slot5 = slot5.RTPC_VOLUME_EX
+	slot6 = slot1
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = slot0.isInCombat
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 27-31, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.isInCombat
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #5 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 32-34, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.playCombatBgm
+
+	slot2(slot4)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 35-38, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.playExtraTempPetBgm
+
+	slot2(slot4)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot6.start = slot8
+slot6.start = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.getHeight
 	--- END OF BLOCK #0 ---
@@ -256,9 +327,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.getAudioRootHeightOffset = slot8
+slot6.getAudioRootHeightOffset = slot11
 
-slot8 = function(slot0, slot1, slot2, slot3)
+slot11 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -269,21 +340,19 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot4 = IsNil
-	slot6 = slot0.eModel
-	slot4 = slot4(slot6)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot4 = slot0.eModel
 
 	--- END OF BLOCK #1 ---
 
-	slot4 = if slot4 then
+	slot4 = if not slot4 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #2 6-6, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #2 ---
@@ -291,7 +360,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-10, warpins: 2 ---
+	--- BLOCK #3 7-8, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
 	slot2 = if slot2 then
@@ -301,7 +370,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #4 11-16, warpins: 1 ---
+	--- BLOCK #4 9-14, warpins: 1 ---
 	slot4 = IsNil
 	slot6 = slot0.eModel
 	slot6 = slot6.audioEmitter
@@ -315,7 +384,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 17-22, warpins: 1 ---
+	--- BLOCK #5 15-20, warpins: 1 ---
 	slot4 = slot0.eModel
 	slot4 = slot4.audioEmitter
 	slot5 = pairs
@@ -326,7 +395,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 23-31, warpins: 1 ---
+	--- BLOCK #6 21-29, warpins: 1 ---
 	slot10 = pg
 	slot10 = slot10.game
 	slot10 = slot10.audio
@@ -343,7 +412,7 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 32-33, warpins: 2 ---
+	--- BLOCK #7 30-31, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
@@ -351,31 +420,32 @@ slot8 = function(slot0, slot1, slot2, slot3)
 	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #8 34-40, warpins: 3 ---
+	--- BLOCK #8 32-39, warpins: 3 ---
 	slot4 = slot0.eModel
-	slot4 = slot4.audioComponent
 	slot6 = slot4
 	slot4 = slot4.PlayEvent
-	slot7 = slot1
+	slot7 = CommonConst
+	slot7 = slot7.COMPONENT_INDEX_AUDIO
+	slot8 = slot1
 	--- END OF BLOCK #8 ---
 
-	slot8 = if not slot3 then
+	slot9 = if not slot3 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 41-41, warpins: 1 ---
-	slot8 = 0
+	--- BLOCK #9 40-40, warpins: 1 ---
+	slot9 = 0
 
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 42-43, warpins: 2 ---
-	slot4(slot6, slot7, slot8)
+	--- BLOCK #10 41-42, warpins: 2 ---
+	slot4(slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #10 ---
@@ -384,9 +454,9 @@ slot8 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot6.triggerSoundEvent = slot8
+slot6.triggerSoundEvent = slot11
 
-slot8 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -397,21 +467,19 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot2 = IsNil
-	slot4 = slot0.eModel
-	slot2 = slot2(slot4)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot2 = slot0.eModel
 
 	--- END OF BLOCK #1 ---
 
-	slot2 = if slot2 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #2 6-6, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #2 ---
@@ -419,14 +487,15 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-15, warpins: 2 ---
+	--- BLOCK #3 7-14, warpins: 2 ---
 	slot2 = slot0.eModel
-	slot2 = slot2.audioComponent
 	slot4 = slot2
 	slot2 = slot2.PlaySoundAtPos
-	slot5 = slot1
+	slot5 = CommonConst
+	slot5 = slot5.COMPONENT_INDEX_AUDIO
+	slot6 = slot1
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -435,9 +504,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot6.playSoundAtSelfPos = slot8
+slot6.playSoundAtSelfPos = slot11
 
-slot8 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -448,21 +517,19 @@ slot8 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 3-7, warpins: 1 ---
-	slot3 = IsNil
-	slot5 = slot0.eModel
-	slot3 = slot3(slot5)
+	--- BLOCK #1 3-5, warpins: 1 ---
+	slot3 = slot0.eModel
 
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 8-8, warpins: 2 ---
+	--- BLOCK #2 6-6, warpins: 2 ---
 	return
 
 	--- END OF BLOCK #2 ---
@@ -470,16 +537,17 @@ slot8 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 9-17, warpins: 2 ---
+	--- BLOCK #3 7-16, warpins: 2 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.audioComponent
 	slot5 = slot3
 	slot3 = slot3.PlayEvent
-	slot6 = slot1
-	slot7 = 0
-	slot8 = slot2
+	slot6 = CommonConst
+	slot6 = slot6.COMPONENT_INDEX_AUDIO
+	slot7 = slot1
+	slot8 = 0
+	slot9 = slot2
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot3(slot5, slot6, slot7, slot8, slot9)
 
 	return
 	--- END OF BLOCK #3 ---
@@ -488,18 +556,39 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot6.playSoundEvent = slot8
+slot6.playSoundEvent = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.playSoundEventAt
+	slot4 = dashEventSizeMap
+	slot5 = slot0.sizeLevelName3
+	slot4 = slot4[slot5]
+	slot5 = slot0.eModel
+	slot5 = slot5.audioEmitterFootStep
+
+	slot1(slot3, slot4, slot5)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.playDashSoundEvent = slot11
+
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = dashEventSizeMap
-	slot2 = slot0.sizeLevelName3
-	slot1 = slot1[slot2]
 	slot4 = slot0
-	slot2 = slot0.playFootStepSoundEvent
-	slot5 = slot1
+	slot2 = slot0.playSoundEventAt
+	slot5 = stepEventMap
+	slot5 = slot5[slot1]
+	slot6 = slot0.eModel
+	slot6 = slot6.audioEmitterFootStep
 
-	slot2(slot4, slot5)
+	slot2(slot4, slot5, slot6)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -508,52 +597,72 @@ slot8 = function(slot0)
 
 end
 
-slot6.playDashSoundEvent = slot8
+slot6.playFootStepSoundEvent = slot11
 
-slot8 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = NotNil
-	slot4 = slot0.eModel
-	slot4 = slot4.audioEmitterFootStep
-	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
+slot11 = function(slot0)
+	--- BLOCK #0 1-9, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.playSoundEventAt
+	slot4 = grassMoveEventSizeMap
+	slot5 = slot0.sizeLevelName3
+	slot4 = slot4[slot5]
+	slot5 = slot0.eModel
+	slot5 = slot5.audioEmitter
 
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot1(slot3, slot4, slot5)
 
-
-	--- BLOCK #1 7-16, warpins: 1 ---
-	slot2 = slot0.eModel
-	slot2 = slot2.audioComponent
-	slot4 = slot2
-	slot2 = slot2.PlayEvent
-	slot5 = slot1
-	slot6 = 0
-	slot7 = nil
-	slot8 = slot0.eModel
-	slot8 = slot8.audioEmitterFootStep
-
-	slot2(slot4, slot5, slot6, slot7, slot8)
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 17-17, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot6.playFootStepSoundEvent = slot8
+slot6.playHighGrassSoundEvent = slot11
 
-slot8 = function(slot0, slot1, slot2)
+slot11 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.stopSoundEvent
+	slot4 = grassMoveEventSizeMap
+	slot5 = slot0.sizeLevelName3
+	slot4 = slot4[slot5]
+
+	slot1(slot3, slot4)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.stopHighGrassSoundEvent = slot11
+
+slot11 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-11, warpins: 1 ---
+	slot3 = slot0.eModel
+	slot5 = slot3
+	slot3 = slot3.PlayEvent
+	slot6 = CommonConst
+	slot6 = slot6.COMPONENT_INDEX_AUDIO
+	slot7 = slot1
+	slot8 = 0
+	slot9 = nil
+	slot10 = slot2
+
+	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot6.playSoundEventAt = slot11
+
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.eModel
 
@@ -594,9 +703,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot6.stopSoundEvent = slot8
+slot6.stopSoundEvent = slot11
 
-slot8 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.eModel
 
@@ -617,81 +726,196 @@ slot8 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-10, warpins: 2 ---
-	slot3 = NotNil
-	slot5 = slot0.eModel
-	slot5 = slot5.audioEmitter
-	slot3 = slot3(slot5)
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot3 = slot0.eModel
+	slot3 = slot3.audioEmitter
+	slot4 = NotNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #2 ---
 
-	slot3 = if slot3 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 11-20, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.audio
-	slot5 = slot3
-	slot3 = slot3.setSwitch
-	slot6 = slot1
-	slot7 = slot2
-	slot8 = slot0.eModel
-	slot8 = slot8.audioEmitter
+	--- BLOCK #3 12-20, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.audio
+	slot6 = slot4
+	slot4 = slot4.setSwitch
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
 
-	slot3(slot5, slot6, slot7, slot8)
+	slot4(slot6, slot7, slot8, slot9)
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 21-26, warpins: 2 ---
-	slot3 = NotNil
-	slot5 = slot0.eModel
-	slot5 = slot5.audioEmitterFootStep
-	slot3 = slot3(slot5)
+	--- BLOCK #4 21-27, warpins: 2 ---
+	slot4 = slot0.eModel
+	slot4 = slot4.audioEmitterFootStep
+	slot5 = NotNil
+	slot7 = slot4
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #4 ---
 
-	slot3 = if slot3 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #5 27-36, warpins: 1 ---
-	slot3 = pg
-	slot3 = slot3.game
-	slot3 = slot3.audio
-	slot5 = slot3
-	slot3 = slot3.setSwitch
-	slot6 = slot1
-	slot7 = slot2
-	slot8 = slot0.eModel
-	slot8 = slot8.audioEmitterFootStep
-
-	slot3(slot5, slot6, slot7, slot8)
-
+	--- BLOCK #5 28-29, warpins: 1 ---
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	if slot4 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 37-37, warpins: 2 ---
-	return
+	--- BLOCK #6 30-38, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.audio
+	slot7 = slot5
+	slot5 = slot5.setSwitch
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot4
+
+	slot5(slot7, slot8, slot9, slot10)
+
 	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 39-39, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot6.setSoundSwitch = slot8
+slot6.setSoundSwitch = slot11
 
-slot8 = function(slot0, slot1, slot2)
+slot11 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot3 = slot0.eModel
+
+	--- END OF BLOCK #0 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-11, warpins: 2 ---
+	slot3 = slot0.eModel
+	slot3 = slot3.audioEmitter
+	slot4 = NotNil
+	slot6 = slot3
+	slot4 = slot4(slot6)
+	--- END OF BLOCK #2 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 12-20, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.game
+	slot4 = slot4.audio
+	slot6 = slot4
+	slot4 = slot4.setSwitchById
+	slot7 = slot1
+	slot8 = slot2
+	slot9 = slot3
+
+	slot4(slot6, slot7, slot8, slot9)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-27, warpins: 2 ---
+	slot4 = slot0.eModel
+	slot4 = slot4.audioEmitterFootStep
+	slot5 = NotNil
+	slot7 = slot4
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #4 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 28-29, warpins: 1 ---
+	--- END OF BLOCK #5 ---
+
+	if slot4 ~= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 30-38, warpins: 1 ---
+	slot5 = pg
+	slot5 = slot5.game
+	slot5 = slot5.audio
+	slot7 = slot5
+	slot5 = slot5.setSwitchById
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot4
+
+	slot5(slot7, slot8, slot9, slot10)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 39-39, warpins: 3 ---
+	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot6.setSoundSwitchById = slot11
+
+slot11 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.eModel
 
@@ -784,9 +1008,156 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot6.setSoundRTPCValue = slot8
+slot6.setSoundRTPCValue = slot11
 
-slot8 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.eModel
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-9, warpins: 1 ---
+	slot2 = IsNil
+	slot4 = slot0.eModel
+	slot4 = slot4.audioEmitter
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 10-11, warpins: 2 ---
+	slot2 = false
+
+	return slot2
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 12-20, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.setGameObjectOutputBusVolume
+	slot5 = slot0.eModel
+	slot5 = slot5.audioEmitter
+	slot6 = slot1
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #3 ---
+
+
+
+end
+
+slot6.setSoundOutputBusVolume = slot11
+
+slot11 = function(slot0, slot1)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = slot0.eModel
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-10, warpins: 2 ---
+	slot2 = NotNil
+	slot4 = slot0.eModel
+	slot4 = slot4.audioEmitter
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-19, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.getRTPCValue
+	slot5 = slot1
+	slot6 = slot0.eModel
+	slot6 = slot6.audioEmitter
+
+	return slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-25, warpins: 2 ---
+	slot2 = NotNil
+	slot4 = slot0.eModel
+	slot4 = slot4.audioEmitterFootStep
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-34, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.audio
+	slot4 = slot2
+	slot2 = slot2.getRTPCValue
+	slot5 = slot1
+	slot6 = slot0.eModel
+	slot6 = slot6.audioEmitterFootStep
+
+	return slot2(slot4, slot5, slot6)
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 35-35, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot6.getSoundRTPCValue = slot11
+
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.playSoundEvent
@@ -801,9 +1172,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot6.playSoundOnAnimation = slot8
+slot6.playSoundOnAnimation = slot11
 
-slot8 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.stopSoundEvent
@@ -819,9 +1190,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot6.stopSoundOnAnimation = slot8
+slot6.stopSoundOnAnimation = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.playCombatBgm
@@ -835,9 +1206,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.onEnterCombat = slot8
+slot6.onEnterCombat = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopCombatBgm
@@ -851,9 +1222,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.onLeaveCombat = slot8
+slot6.onLeaveCombat = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.stopCombatBgm
@@ -872,9 +1243,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.destroy = slot8
+slot6.destroy = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isBoss
@@ -995,9 +1366,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.playCombatBgm = slot8
+slot6.playCombatBgm = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.isBoss
@@ -1059,9 +1430,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.stopCombatBgm = slot8
+slot6.stopCombatBgm = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isExtraTempPet
 	--- END OF BLOCK #0 ---
@@ -1126,9 +1497,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.playExtraTempPetBgm = slot8
+slot6.playExtraTempPetBgm = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.isExtraTempPet
 	--- END OF BLOCK #0 ---
@@ -1192,9 +1563,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.stopExtraTempPetBgm = slot8
+slot6.stopExtraTempPetBgm = slot11
 
-slot8 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
+slot11 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot7 = slot0.eModel
 	--- END OF BLOCK #0 ---
@@ -1297,9 +1668,9 @@ slot8 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6)
 
 end
 
-slot6.abilityPlaySoundStr = slot8
+slot6.abilityPlaySoundStr = slot11
 
-slot8 = function(slot0, slot1)
+slot11 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.refreshFootStepSound
@@ -1313,24 +1684,22 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot6.EVENT_ContactSurfaceVoxelChanged = slot8
+slot6.EVENT_ContactSurfaceVoxelChanged = slot11
 
-slot8 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = IsNil
-	slot3 = slot0.eModel
-	slot1 = slot1(slot3)
+slot11 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.eModel
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 6-6, warpins: 1 ---
+	--- BLOCK #1 4-4, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1338,7 +1707,7 @@ slot8 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-9, warpins: 2 ---
+	--- BLOCK #2 5-7, warpins: 2 ---
 	slot1 = slot0.surfaceVoxelCustomData
 	--- END OF BLOCK #2 ---
 
@@ -1349,14 +1718,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #3 10-10, warpins: 1 ---
+	--- BLOCK #3 8-8, warpins: 1 ---
 	slot1 = 0
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 11-20, warpins: 2 ---
+	--- BLOCK #4 9-18, warpins: 2 ---
 	slot2 = nil
 	slot3 = bit
 	slot3 = slot3.band
@@ -1374,14 +1743,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #5 21-22, warpins: 1 ---
+	--- BLOCK #5 19-20, warpins: 1 ---
 	slot2 = "swamp"
 	--- END OF BLOCK #5 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #6 23-31, warpins: 1 ---
+	--- BLOCK #6 21-29, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1398,14 +1767,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #7 32-33, warpins: 1 ---
+	--- BLOCK #7 30-31, warpins: 1 ---
 	slot2 = "water"
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #8 34-42, warpins: 1 ---
+	--- BLOCK #8 32-40, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1422,14 +1791,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #9 43-44, warpins: 1 ---
+	--- BLOCK #9 41-42, warpins: 1 ---
 	slot2 = "snow"
 	--- END OF BLOCK #9 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #10 45-53, warpins: 1 ---
+	--- BLOCK #10 43-51, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1446,14 +1815,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #11 54-55, warpins: 1 ---
+	--- BLOCK #11 52-53, warpins: 1 ---
 	slot2 = "ice"
 	--- END OF BLOCK #11 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #12 56-64, warpins: 1 ---
+	--- BLOCK #12 54-62, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1470,14 +1839,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #13 65-66, warpins: 1 ---
+	--- BLOCK #13 63-64, warpins: 1 ---
 	slot2 = "sand"
 	--- END OF BLOCK #13 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #14 67-75, warpins: 1 ---
+	--- BLOCK #14 65-73, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1494,14 +1863,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #15 76-77, warpins: 1 ---
+	--- BLOCK #15 74-75, warpins: 1 ---
 	slot2 = "grass"
 	--- END OF BLOCK #15 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #16 78-86, warpins: 1 ---
+	--- BLOCK #16 76-84, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1518,14 +1887,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #17 87-88, warpins: 1 ---
+	--- BLOCK #17 85-86, warpins: 1 ---
 	slot2 = "grass"
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #18 89-97, warpins: 1 ---
+	--- BLOCK #18 87-95, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1542,14 +1911,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #19 98-99, warpins: 1 ---
+	--- BLOCK #19 96-97, warpins: 1 ---
 	slot2 = "metal"
 	--- END OF BLOCK #19 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #20 100-108, warpins: 1 ---
+	--- BLOCK #20 98-106, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1566,14 +1935,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #21 109-110, warpins: 1 ---
+	--- BLOCK #21 107-108, warpins: 1 ---
 	slot2 = "concret"
 	--- END OF BLOCK #21 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #22 111-119, warpins: 1 ---
+	--- BLOCK #22 109-117, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1590,14 +1959,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #23 120-121, warpins: 1 ---
+	--- BLOCK #23 118-119, warpins: 1 ---
 	slot2 = "sand"
 	--- END OF BLOCK #23 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #24 122-130, warpins: 1 ---
+	--- BLOCK #24 120-128, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1614,14 +1983,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #25 131-132, warpins: 1 ---
+	--- BLOCK #25 129-130, warpins: 1 ---
 	slot2 = "soil"
 	--- END OF BLOCK #25 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #26 133-141, warpins: 1 ---
+	--- BLOCK #26 131-139, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1638,14 +2007,14 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #27 142-143, warpins: 1 ---
+	--- BLOCK #27 140-141, warpins: 1 ---
 	slot2 = "stone"
 	--- END OF BLOCK #27 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #28 144-152, warpins: 1 ---
+	--- BLOCK #28 142-150, warpins: 1 ---
 	slot3 = bit
 	slot3 = slot3.band
 	slot5 = VoxelConst
@@ -1662,54 +2031,99 @@ slot8 = function(slot0)
 	end
 
 
-	--- BLOCK #29 153-154, warpins: 1 ---
+	--- BLOCK #29 151-152, warpins: 1 ---
 	slot2 = "wood"
 	--- END OF BLOCK #29 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #31
 
 
-	--- BLOCK #30 155-155, warpins: 1 ---
+	--- BLOCK #30 153-153, warpins: 1 ---
 	slot2 = "concret"
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 156-157, warpins: 14 ---
+	--- BLOCK #31 154-155, warpins: 14 ---
 	--- END OF BLOCK #31 ---
 
 	slot2 = if slot2 then
 	JUMP TO BLOCK #32
 	else
-	JUMP TO BLOCK #33
+	JUMP TO BLOCK #36
 	end
 
 
-	--- BLOCK #32 158-162, warpins: 1 ---
-	slot5 = slot0
-	slot3 = slot0.setSoundSwitch
-	slot6 = "surface_material"
-	slot7 = slot2
-
-	slot3(slot5, slot6, slot7)
-
+	--- BLOCK #32 156-158, warpins: 1 ---
+	slot3 = slot0.curSoundSwitchName
 	--- END OF BLOCK #32 ---
 
-	FLOW; TARGET BLOCK #33
+	if slot3 ~= slot2 then
+	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #36
+	end
 
 
-	--- BLOCK #33 163-163, warpins: 2 ---
-	return
+	--- BLOCK #33 159-170, warpins: 1 ---
+	slot0.curSoundSwitchName = slot2
+	slot3 = pg
+	slot3 = slot3.game
+	slot3 = slot3.audio
+	slot5 = slot3
+	slot3 = slot3.tryGetSwitchIds
+	slot6 = AudioConst
+	slot6 = slot6.SWITCH_GROUP_SURFACE_MATERIAL
+	slot7 = slot2
+	slot3, slot4, slot5 = slot3(slot5, slot6, slot7)
 	--- END OF BLOCK #33 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #34
+	else
+	JUMP TO BLOCK #35
+	end
+
+
+	--- BLOCK #34 171-176, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.setSoundSwitchById
+	slot9 = slot4
+	slot10 = slot5
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #34 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #36
+
+
+	--- BLOCK #35 177-182, warpins: 1 ---
+	slot8 = slot0
+	slot6 = slot0.setSoundSwitch
+	slot9 = AudioConst
+	slot9 = slot9.SWITCH_GROUP_SURFACE_MATERIAL
+	slot10 = slot2
+
+	slot6(slot8, slot9, slot10)
+
+	--- END OF BLOCK #35 ---
+
+	FLOW; TARGET BLOCK #36
+
+
+	--- BLOCK #36 183-183, warpins: 4 ---
+	return
+	--- END OF BLOCK #36 ---
 
 
 
 end
 
-slot6.refreshFootStepSound = slot8
+slot6.refreshFootStepSound = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
@@ -1749,9 +2163,9 @@ slot8 = function(slot0)
 
 end
 
-slot6.playSwitchToPetSound = slot8
+slot6.playSwitchToPetSound = slot11
 
-slot8 = function(slot0)
+slot11 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getConfigData
@@ -1791,7 +2205,7 @@ slot8 = function(slot0)
 
 end
 
-slot6.playSummonPetSound = slot8
+slot6.playSummonPetSound = slot11
 
 return slot6
 --- END OF BLOCK #0 ---

@@ -114,7 +114,7 @@ end
 slot7.ctor = slot8
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-16, warpins: 1 ---
+	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = LevelItemMultiInteractor
 	slot1 = slot1.super
 	slot1 = slot1.onSandboxReady
@@ -133,6 +133,27 @@ slot8 = function(slot0)
 	slot1 = slot0.refreshOtherPlayerInfo
 
 	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.addTimer
+	slot4 = 0
+
+	slot5 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshInteractPlayerState
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot1(slot3, slot4, slot5)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -536,12 +557,13 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #8 32-42, warpins: 1 ---
+	--- BLOCK #8 32-43, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.playerFaceToInteractUnit
 	slot6 = slot2
+	slot7 = true
 
-	slot3(slot5, slot6)
+	slot3(slot5, slot6, slot7)
 
 	slot5 = slot0
 	slot3 = slot0.serverMsg
@@ -557,7 +579,7 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-43, warpins: 2 ---
+	--- BLOCK #9 44-44, warpins: 2 ---
 	return
 	--- END OF BLOCK #9 ---
 
@@ -581,19 +603,20 @@ slot8 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 6-9, warpins: 1 ---
+	--- BLOCK #1 6-10, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.playerFaceToInteractUnit
 	slot7 = slot3
+	slot8 = true
 
-	slot4(slot6, slot7)
+	slot4(slot6, slot7, slot8)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 10-10, warpins: 2 ---
+	--- BLOCK #2 11-11, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

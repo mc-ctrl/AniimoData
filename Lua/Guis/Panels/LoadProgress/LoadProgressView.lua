@@ -32,7 +32,7 @@ slot11 = "Utils.ClientTextUtils"
 slot9 = slot9(slot11)
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-37, warpins: 1 ---
+	--- BLOCK #0 1-49, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -66,6 +66,18 @@ slot10 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
+	slot4 = "teamUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.teamUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "listUList"
+	slot1 = slot1(slot3, slot4)
+	slot0.listUList = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
 	slot4 = "progressLoad"
 	slot1 = slot1(slot3, slot4)
 	--- END OF BLOCK #0 ---
@@ -77,7 +89,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #1 38-42, warpins: 1 ---
+	--- BLOCK #1 50-54, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.GetComponent
 	slot5 = "UProgress"
@@ -89,7 +101,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 43-43, warpins: 2 ---
+	--- BLOCK #2 55-55, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

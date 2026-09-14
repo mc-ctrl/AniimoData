@@ -1,4 +1,4 @@
---- BLOCK #0 1-60, warpins: 1 ---
+--- BLOCK #0 1-71, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -41,12 +41,21 @@ slot11 = slot11(slot13)
 slot12 = require
 slot14 = "Guis.Panels.Event.Component.EventContainerComponent"
 slot12 = slot12(slot14)
-slot13 = slot1.LightClass
-slot15 = "PaidWipeTestComponent"
-slot16 = slot12
-slot13 = slot13(slot15, slot16)
+slot13 = require
+slot15 = "GameApp.Recharge.RechargeUtils"
+slot13 = slot13(slot15)
+slot14 = CS
+slot14 = slot14.FunPlus
+slot14 = slot14.WorldX
+slot14 = slot14.SDK
+slot14 = slot14.Platform
+slot14 = slot14.PlatformBridgeLuaFacade
+slot15 = slot1.LightClass
+slot17 = "PaidWipeTestComponent"
+slot18 = slot12
+slot15 = slot15(slot17, slot18)
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.checkContentLoaded
@@ -69,7 +78,7 @@ slot14 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-101, warpins: 2 ---
+	--- BLOCK #2 7-106, warpins: 2 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetChild
@@ -164,6 +173,11 @@ slot14 = function(slot0)
 	slot5 = "button3UButton"
 	slot2 = slot2(slot4, slot5)
 	slot0.button3UButton = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rootUComponent"
+	slot2 = slot2(slot4, slot5)
+	slot0.rootUComponent = slot2
 
 	return
 	--- END OF BLOCK #2 ---
@@ -172,9 +186,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.findObjects = slot14
+slot15.findObjects = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = slot0.btnGoto
 
@@ -201,7 +215,49 @@ slot14 = function(slot0)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 7-20, warpins: 2 ---
+		--- BLOCK #2 7-14, warpins: 2 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.platform
+		slot2 = slot0
+		slot0 = slot0.isPS
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #3 15-19, warpins: 1 ---
+		slot0 = RechargeUtils
+		slot0 = slot0.isEmptyStore
+		slot0 = slot0()
+		--- END OF BLOCK #3 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #4 20-23, warpins: 1 ---
+		slot0 = PlatformBridgeLuaFacade
+		slot0 = slot0.ShowCommonMessageDialogEmptyStore
+
+		slot0()
+
+		return
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 24-37, warpins: 3 ---
 		slot0 = pg
 		slot0 = slot0.global
 		slot0 = slot0.ui
@@ -218,7 +274,7 @@ slot14 = function(slot0)
 		slot0(slot2, slot3, slot4)
 
 		return
-		--- END OF BLOCK #2 ---
+		--- END OF BLOCK #5 ---
 
 
 
@@ -293,9 +349,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.addListener = slot14
+slot15.addListener = slot16
 
-slot14 = function(slot0, slot1)
+slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
@@ -318,16 +374,10 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot13.onClickReward = slot14
+slot15.onClickReward = slot16
 
-slot14 = function(slot0)
-	--- BLOCK #0 1-121, warpins: 1 ---
-	slot1 = EventContainerComponent
-	slot1 = slot1.initView
-	slot3 = slot0
-
-	slot1(slot3)
-
+slot16 = function(slot0)
+	--- BLOCK #0 1-117, warpins: 1 ---
 	slot1 = RebateGearData
 	slot2 = 1701
 	slot1 = slot1[slot2]
@@ -469,9 +519,53 @@ slot14 = function(slot0)
 
 end
 
-slot13.initView = slot14
+slot15.onContentReady = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot1 = EventContainerComponent
+	slot1 = slot1.onBeforeRefreshPage
+	slot3 = slot0
+
+	slot1(slot3)
+
+	slot1 = slot0.rootUComponent
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-15, warpins: 1 ---
+	slot1 = slot0.rootUComponent
+	slot3 = slot1
+	slot1 = slot1.InvokeCallback
+	slot4 = CS
+	slot4 = slot4.XGUI
+	slot4 = slot4.EInvokeTime
+	slot4 = slot4.Custom1
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 16-16, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot15.onBeforeRefreshPage = slot16
+
+slot16 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.getEventTimeConfig
@@ -487,7 +581,7 @@ slot14 = function(slot0)
 
 
 	--- BLOCK #1 7-7, warpins: 1 ---
-	slot2 = slot1.eventEndDayTime
+	slot2 = slot1.tabEndDayTime
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -597,9 +691,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.refreshPage = slot14
+slot15.refreshPage = slot16
 
-slot14 = function(slot0)
+slot16 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UIComponent
 	slot1 = slot1.onDestroy
@@ -614,9 +708,9 @@ slot14 = function(slot0)
 
 end
 
-slot13.onDestroy = slot14
+slot15.onDestroy = slot16
 
-return slot13
+return slot15
 --- END OF BLOCK #0 ---
 
 

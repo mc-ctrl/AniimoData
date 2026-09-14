@@ -44,30 +44,30 @@ slot13 = function(slot0)
 	slot1 = {}
 	slot2 = VT_INT
 	slot3 = {
-		getFunc = "GetInt",
+		setFunc = "SetInt",
 		immediatelySetFunc = "SetIntImmediately",
-		setFunc = "SetInt"
+		getFunc = "GetInt"
 	}
 	slot1[slot2] = slot3
 	slot2 = VT_BOOL
 	slot3 = {
-		getFunc = "GetBool",
+		setFunc = "SetBool",
 		immediatelySetFunc = "SetBoolImmediately",
-		setFunc = "SetBool"
+		getFunc = "GetBool"
 	}
 	slot1[slot2] = slot3
 	slot2 = VT_FLOAT
 	slot3 = {
-		getFunc = "GetFloat",
+		setFunc = "SetFloat",
 		immediatelySetFunc = "SetFloatImmediately",
-		setFunc = "SetFloat"
+		getFunc = "GetFloat"
 	}
 	slot1[slot2] = slot3
 	slot2 = VT_STRING
 	slot3 = {
-		getFunc = "GetString",
+		setFunc = "SetString",
 		immediatelySetFunc = "SetStringImmediately",
-		setFunc = "SetString"
+		getFunc = "GetString"
 	}
 	slot1[slot2] = slot3
 	slot0.prefsFunc = slot1

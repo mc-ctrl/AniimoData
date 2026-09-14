@@ -7,59 +7,59 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
 	version = 8,
-	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/PBT_CastChargeSkill"
+	name = "ParmonBehaviorTree/SubTree/PBT_CastChargeSkill",
+	agenttype = "CombatAgent",
+	useForRoute = false
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	value = "0",
 	type = "int",
-	const = 0,
-	name = "tSkillTargetActorId"
+	value = "0",
+	name = "tSkillTargetActorId",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
-	value = "0",
 	type = "int",
-	const = 0,
-	name = "tSkillId"
+	value = "0",
+	name = "tSkillId",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
-	value = "true",
 	type = "bool",
-	const = true,
-	name = "tAutoCast"
+	value = "true",
+	name = "tAutoCast",
+	const = true
 }
 slot4[3] = slot5
 slot5 = {
-	value = "0",
 	type = "float",
-	const = 0,
-	name = "tChargeTime"
+	value = "0",
+	name = "tChargeTime",
+	const = 0
 }
 slot4[4] = slot5
 slot5 = {
-	value = "0",
 	type = "int",
-	const = 0,
-	name = "tPartId"
+	value = "0",
+	name = "tPartId",
+	const = 0
 }
 slot4[5] = slot5
 slot5 = {
-	value = "false",
 	type = "bool",
-	const = false,
-	name = "tSkipBackswing"
+	value = "false",
+	name = "tSkipBackswing",
+	const = false
 }
 slot4[6] = slot5
 slot5 = {
-	value = "Normal",
 	type = "CastAbilitySourceType",
+	value = "Normal",
 	name = "tCastAbilitySource"
 }
 slot6 = slot0.CastAbilitySourceType

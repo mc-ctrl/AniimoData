@@ -1,4 +1,4 @@
---- BLOCK #0 1-65, warpins: 1 ---
+--- BLOCK #0 1-63, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -72,52 +72,63 @@ slot10 = function(slot0)
 	slot1 = slot0.m_pendingPetChatId
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-5, warpins: 1 ---
-	slot1 = true
-
-	return slot1
-
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.m_cbCachePetChatInfo
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 6-8, warpins: 2 ---
-	slot1 = slot0.petChatEnabled
-	--- END OF BLOCK #2 ---
-
-	if slot1 ~= true then
-	JUMP TO BLOCK #3
+	slot1 = if slot1 then
+	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #3 9-10, warpins: 1 ---
-	slot1 = false
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
-
-
-	--- BLOCK #4 11-11, warpins: 1 ---
+	--- BLOCK #2 7-8, warpins: 2 ---
 	slot1 = true
 
+	return slot1
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 9-11, warpins: 2 ---
+	slot1 = slot0.petChatEnabled
+	--- END OF BLOCK #3 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 12-13, warpins: 1 ---
+	slot1 = false
 	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #5
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 12-12, warpins: 2 ---
-	return slot1
+	--- BLOCK #5 14-14, warpins: 1 ---
+	slot1 = true
+
 	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 15-15, warpins: 2 ---
+	return slot1
+	--- END OF BLOCK #6 ---
 
 
 
@@ -277,21 +288,6 @@ end
 slot7.findObjects = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.TOPLOGO_COMPONENT
-	slot1 = slot1.PET_CHAT
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot7.getComponentName = slot10
-
-slot10 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -400,19 +396,22 @@ slot10 = function(slot0, slot1)
 
 	--- BLOCK #6 49-50, warpins: 1 ---
 	slot4 = function(slot0)
-		--- BLOCK #0 1-2, warpins: 1 ---
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot1 = self
+		slot1 = slot1.m_cbCachePetChatInfo
+		slot2 = self
+		slot3 = nil
+		slot2.m_cbCachePetChatInfo = slot3
 		--- END OF BLOCK #0 ---
 
 		slot0 = if slot0 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #8
+		JUMP TO BLOCK #3
 		end
 
 
-		--- BLOCK #1 3-6, warpins: 1 ---
-		slot1 = self
-		slot1 = slot1.m_cbCachePetChatInfo
+		--- BLOCK #1 8-9, warpins: 1 ---
 		--- END OF BLOCK #1 ---
 
 		slot1 = if slot1 then
@@ -422,74 +421,34 @@ slot10 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #2 7-9, warpins: 1 ---
-		slot2 = slot1.id
+		--- BLOCK #2 10-16, warpins: 1 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.m_showPetChatInfo
+		slot5 = true
+		slot6 = slot1.id
+		slot7 = slot1.duration
+
+		slot2(slot4, slot5, slot6, slot7)
+
 		--- END OF BLOCK #2 ---
 
-		slot2 = if not slot2 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
+		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 10-10, warpins: 2 ---
-		slot2 = id
-		--- END OF BLOCK #3 ---
+		--- BLOCK #3 17-25, warpins: 3 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.notifyActiveStateChanged
+		slot5 = self
+		slot7 = slot5
+		slot5 = slot5.shouldBeActive
+		MULTRES = slot5(slot7)
 
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 11-12, warpins: 2 ---
-		--- END OF BLOCK #4 ---
-
-		slot1 = if slot1 then
-		JUMP TO BLOCK #5
-		else
-		JUMP TO BLOCK #6
-		end
-
-
-		--- BLOCK #5 13-15, warpins: 1 ---
-		slot3 = slot1.duration
-		--- END OF BLOCK #5 ---
-
-		slot3 = if not slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 16-16, warpins: 2 ---
-		slot3 = duration
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 17-23, warpins: 2 ---
-		slot4 = self
-		slot6 = slot4
-		slot4 = slot4.m_showPetChatInfo
-		slot7 = true
-		slot8 = slot2
-		slot9 = slot3
-
-		slot4(slot6, slot7, slot8, slot9)
-
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 24-27, warpins: 2 ---
-		slot1 = self
-		slot2 = nil
-		slot1.m_cbCachePetChatInfo = slot2
+		slot2(slot4, MULTRES)
 
 		return
-		--- END OF BLOCK #8 ---
+		--- END OF BLOCK #3 ---
 
 
 
@@ -697,9 +656,11 @@ end
 slot7.m_showPetChatInfo = slot10
 
 slot10 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot1 = nil
 	slot0.m_pendingPetChatId = slot1
+	slot1 = nil
+	slot0.m_cbCachePetChatInfo = slot1
 	slot3 = slot0
 	slot1 = slot0.refreshPetChatInfo
 	slot4 = false
@@ -719,7 +680,7 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #1 13-19, warpins: 1 ---
+	--- BLOCK #1 15-21, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -734,7 +695,7 @@ slot10 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 20-26, warpins: 2 ---
+	--- BLOCK #2 22-28, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.notifyActiveStateChanged
 	slot6 = slot0

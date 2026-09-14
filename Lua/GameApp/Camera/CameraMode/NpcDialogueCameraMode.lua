@@ -520,10 +520,8 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #3 9-13, warpins: 1 ---
-	slot6 = NotNil
-	slot8 = slot2.eModel
-	slot6 = slot6(slot8)
+	--- BLOCK #3 9-11, warpins: 1 ---
+	slot6 = slot2.eModel
 	--- END OF BLOCK #3 ---
 
 	slot6 = if slot6 then
@@ -533,7 +531,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #4 14-18, warpins: 1 ---
+	--- BLOCK #4 12-16, warpins: 1 ---
 	slot6 = slot0.cameraMode
 	slot7 = slot2.eModel
 	slot6.targetNpc = slot7
@@ -546,7 +544,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #5 19-21, warpins: 1 ---
+	--- BLOCK #5 17-19, warpins: 1 ---
 	slot6 = slot4.isNpcInBv
 	--- END OF BLOCK #5 ---
 
@@ -557,14 +555,14 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #6 22-22, warpins: 2 ---
+	--- BLOCK #6 20-20, warpins: 2 ---
 	slot6 = true
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 23-24, warpins: 2 ---
+	--- BLOCK #7 21-22, warpins: 2 ---
 	--- END OF BLOCK #7 ---
 
 	slot4 = if slot4 then
@@ -574,7 +572,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #8 25-27, warpins: 1 ---
+	--- BLOCK #8 23-25, warpins: 1 ---
 	slot7 = slot4.needTransition
 	--- END OF BLOCK #8 ---
 
@@ -585,7 +583,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	end
 
 
-	--- BLOCK #9 28-47, warpins: 1 ---
+	--- BLOCK #9 26-45, warpins: 1 ---
 	slot7 = slot0.cameraMode
 	slot8 = true
 	slot7.needProgramControlTransition = slot8
@@ -612,7 +610,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #10 48-67, warpins: 2 ---
+	--- BLOCK #10 46-65, warpins: 2 ---
 	slot7 = slot0.cameraMode
 	slot8 = false
 	slot7.needProgramControlTransition = slot8
@@ -639,7 +637,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 68-83, warpins: 2 ---
+	--- BLOCK #11 66-81, warpins: 2 ---
 	slot6 = slot0.cameraMode
 	slot7 = false
 	slot6.needProgramControlTransition = slot7
@@ -663,7 +661,7 @@ slot12 = function(slot0, slot1, slot2, slot3, slot4)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 84-90, warpins: 3 ---
+	--- BLOCK #12 82-88, warpins: 3 ---
 	slot6 = slot0.cameraMode
 	slot7 = 0
 	slot6.defaultBlendTime = slot7

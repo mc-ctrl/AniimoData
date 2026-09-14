@@ -1,11 +1,14 @@
---- BLOCK #0 1-116, warpins: 1 ---
+--- BLOCK #0 1-129, warpins: 1 ---
 slot0 = {
 	is_enum_dummy = true
 }
 slot1 = {}
+slot1.CLIENT_INFO_READY = slot0
 slot1.ENTITY_DESTROY = slot0
 slot1.ENTITY_ADD = slot0
 slot1.ENTITY_REMOVE = slot0
+slot1.ENTITY_ENTER_SPACE = slot0
+slot1.ENTITY_LEAVE_SPACE = slot0
 slot1.BALL_DRIVE_START = slot0
 slot1.BALL_DRIVE_TIME = slot0
 slot1.BALL_DRIVE_ADD_TIME = slot0
@@ -40,6 +43,7 @@ slot1.TOPLOGO_PETFERTILITY = slot0
 slot1.TOPLOGO_PET_EXCHANGE = slot0
 slot1.TOPLOGO_VLOG = slot0
 slot1.TOPLOGO_FOCUS = slot0
+slot1.ON_ALLY_MARK_STATE_CHANGED = slot0
 slot1.ON_FREEZE_HP_CHANGED = slot0
 slot1.ON_FREEZE_HP_HIT = slot0
 slot1.ON_FREEZE_HP_OUT_TIME = slot0
@@ -56,6 +60,7 @@ slot1.ON_MAP_MARK_TRACE_REMOVE = slot0
 slot1.ON_MAP_MARK_UPDATED = slot0
 slot1.ON_MAP_MARK_CHUNK_INDEX_CHANGED = slot0
 slot1.ON_MAP_AREA_UNLOCK = slot0
+slot1.ON_LEYLINE_RAINBOW_PET_SPAWN_PRESENTED = slot0
 slot1.ON_ITEM_OBTAIN_CLOSE_PANEL = slot0
 slot1.ON_PET_LEVEL_UP_CLOSE_PANEL = slot0
 slot1.QUEST_MARK_REFRESH = slot0
@@ -63,6 +68,7 @@ slot1.CAST_CHEM_SKILL_ON_TARGET = slot0
 slot1.NPC_INTERACT_BUBBLE_GROUP = slot0
 slot1.ENTITY_VISIBLE_CHANGED = slot0
 slot1.ENTITY_ACTIVE_CHANGED = slot0
+slot1.ENTITY_MODEL_REFRESHED = slot0
 slot1.VIRTUAL_CHEST_UNLOCKSTART = slot0
 slot1.VIRTUAL_CHEST_INTERACTRESULT = slot0
 slot1.VIRTUAL_CHEST_REFRESHMODEL = slot0
@@ -72,6 +78,7 @@ slot1.VIRTUAL_CHEST_SETVISIBLE = slot0
 slot1.HOMELAND_WORK_STATE_CHANGED = slot0
 slot1.HOMELAND_ACTION_STATE_CHANGED = slot0
 slot1.HOMELAND_TRANSPORT_STATE_CHANGED = slot0
+slot1.HOMELAND_LEISURE_STATE_CHANGED = slot0
 slot1.LIFT_BE_LIFTED = slot0
 slot1.LIFT_BE_UNLIFTED = slot0
 slot1.LIFTER_DEAD = slot0
@@ -83,6 +90,8 @@ slot1.ON_TOTEM_MAP_CHANGED = slot0
 slot1.PET_BALL_MAP_HATCH_SLOT_STATUS_CHANGED = slot0
 slot1.ON_MAP_RELOADED = slot0
 slot1.ON_LANGUAGE_CHANGED = slot0
+slot1.SETTING_BLOOD_TYPE_CHANGED = slot0
+slot1.CLIENT_SWITCH_CHANGED = slot0
 slot1.DIALOGUE_GRAPH_ON_START = slot0
 slot1.SANDBOX_PLAYER_PROPERTY_CHANGED = slot0
 slot1.SANDBOX_UPDATE = slot0
@@ -93,9 +102,6 @@ slot1.PLATFORM_NAME_MASK_POLICY_REFRESHED = slot0
 slot1.PLATFORM_UGC_POLICY_CHANGED = slot0
 slot1.PLATFORM_BLOCK_LIST_CHANGED = slot0
 slot1.PLATFORM_FRIEND_LIST_CHANGED = slot0
-slot1.FISHING_CAPTURE_SKILL_START = slot0
-slot1.FISHING_CAPTURE_SKILL_END = slot0
-slot1.FISHING_CAPTURE_SKILL_SHOT_END = slot0
 slot1.PLATFORM_ACHIEVEMENT_PHOTO_SAVED = slot0
 slot1.PLATFORM_ACHIEVEMENT_TAKE_PHOTO = slot0
 slot1.PLATFORM_ACHIEVEMENT_VARIANT_TRIGGERED = slot0
@@ -107,12 +113,19 @@ slot1.PLATFORM_ACHIEVEMENT_STAR_TITLE_CHANGED = slot0
 slot1.PLATFORM_ACHIEVEMENT_RAINBOW_PET_CAUGHT = slot0
 slot1.PLATFORM_ACHIEVEMENT_HUG_PET = slot0
 slot1.PLATFORM_ACHIEVEMENT_HOME_CAMP_DISPATCH_FINISHED = slot0
+slot1.PLATFORM_ACHIEVEMENT_BEGIN_BLOCK_EVALUATION = slot0
+slot1.PLATFORM_ACHIEVEMENT_END_BLOCK_EVALUATION = slot0
 slot1.PLATFORM_SOCIAL_ACTION_REQUEST = slot0
 slot1.PLATFORM_SOCIAL_INBOUND_INVITE = slot0
 slot1.PLATFORM_SHELL_INVITE_AUTO_ACCEPT = slot0
 slot1.PLATFORM_CROSS_PLATFORM_SETTING_CHANGED = slot0
 slot1.PLATFORM_USER_SIGNED_IN = slot0
 slot1.PLATFORM_ONLINE_ID_CHANGED = slot0
+slot1.GAMEFLOW_CHANGE = slot0
+slot1.ON_PLAYER_START_RIFT = slot0
+slot1.ON_PLAYER_END_RIFT = slot0
+slot1.RIFT_STATE_CHANGED = slot0
+slot1.RIFT_DEFEAT = slot0
 slot2 = pairs
 slot4 = slot1
 slot2, slot3, slot4 = slot2(slot4)
@@ -121,7 +134,7 @@ slot2, slot3, slot4 = slot2(slot4)
 UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
---- BLOCK #1 117-122, warpins: 1 ---
+--- BLOCK #1 130-135, warpins: 1 ---
 slot7 = string
 slot7 = slot7.upper
 slot9 = slot5
@@ -135,7 +148,7 @@ JUMP TO BLOCK #3
 end
 
 
---- BLOCK #2 123-128, warpins: 1 ---
+--- BLOCK #2 136-141, warpins: 1 ---
 slot7 = error
 slot9 = "attr.upper() != attr: "
 slot10 = slot5
@@ -148,7 +161,7 @@ slot7(slot9)
 UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
---- BLOCK #3 129-133, warpins: 1 ---
+--- BLOCK #3 142-146, warpins: 1 ---
 slot7 = type
 slot9 = slot6
 slot7 = slot7(slot9)
@@ -161,7 +174,7 @@ JUMP TO BLOCK #5
 end
 
 
---- BLOCK #4 134-136, warpins: 1 ---
+--- BLOCK #4 147-149, warpins: 1 ---
 slot7 = slot6.is_enum_dummy
 --- END OF BLOCK #4 ---
 
@@ -172,7 +185,7 @@ JUMP TO BLOCK #6
 end
 
 
---- BLOCK #5 137-141, warpins: 2 ---
+--- BLOCK #5 150-154, warpins: 2 ---
 slot7 = error
 slot9 = "%s: type(v) ~= enum_dummy: "
 slot10 = slot5
@@ -185,7 +198,7 @@ slot7(slot9)
 FLOW; TARGET BLOCK #6
 
 
---- BLOCK #6 142-142, warpins: 3 ---
+--- BLOCK #6 155-155, warpins: 3 ---
 slot1[slot5] = slot5
 
 --- END OF BLOCK #6 ---
@@ -193,7 +206,7 @@ slot1[slot5] = slot5
 FLOW; TARGET BLOCK #7
 
 
---- BLOCK #7 143-144, warpins: 2 ---
+--- BLOCK #7 156-157, warpins: 2 ---
 --- END OF BLOCK #7 ---
 
 for slot5, slot6 in slot2, slot3, slot4
@@ -201,7 +214,7 @@ LOOP BLOCK #1
 GO OUT TO BLOCK #8
 
 
---- BLOCK #8 145-145, warpins: 1 ---
+--- BLOCK #8 158-158, warpins: 1 ---
 return slot1
 --- END OF BLOCK #8 ---
 

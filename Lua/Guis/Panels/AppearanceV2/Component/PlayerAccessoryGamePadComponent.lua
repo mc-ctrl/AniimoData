@@ -73,10 +73,10 @@ slot6 = function(slot0)
 	--- BLOCK #0 1-121, warpins: 1 ---
 	slot1 = slot0.navigation
 	slot2 = {
-		AREA_SOURCE = 3,
-		ACCESSORY_AREA = 2,
 		SLOT_AREA = 1,
-		AREA_VALUE_ADJUST = 4
+		AREA_VALUE_ADJUST = 4,
+		AREA_SOURCE = 3,
+		ACCESSORY_AREA = 2
 	}
 	slot1.AREAS = slot2
 	slot1 = slot0.navigation

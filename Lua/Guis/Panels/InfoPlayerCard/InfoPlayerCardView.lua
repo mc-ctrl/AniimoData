@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-195, warpins: 1 ---
+	--- BLOCK #0 1-205, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -101,12 +101,6 @@ slot3 = function(slot0)
 	slot1 = slot0.infoPlayerPanelObjectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "likeAbilityImage"
-	slot1 = slot1(slot3, slot4)
-	slot0.likeAbilityImage = slot1
-	slot1 = slot0.infoPlayerPanelObjectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "btnFollow"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnFollow = slot1
@@ -179,12 +173,6 @@ slot3 = function(slot0)
 	slot1 = slot0.infoPlayerPanelObjectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "btnLikabilityUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnLikabilityUButton = slot1
-	slot1 = slot0.infoPlayerPanelObjectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "collectNumUSDFText"
 	slot1 = slot1(slot3, slot4)
 	slot0.collectNumUSDFText = slot1
@@ -206,6 +194,28 @@ slot3 = function(slot0)
 	slot4 = "togetherUWidget"
 	slot1 = slot1(slot3, slot4)
 	slot0.togetherUWidget = slot1
+	slot1 = slot0.infoPlayerPanelObjectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "hongGatherUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.hongGatherUButton = slot1
+	slot1 = slot0.hongGatherUButton
+	slot3 = slot1
+	slot1 = slot1.GetComponent
+	slot4 = "ObjectReference"
+	slot1 = slot1(slot3, slot4)
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "txtNameUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.hongGatherTxtNameUSDFText = slot2
+	slot2 = slot0.infoPlayerPanelObjectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "listBadgeUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.listBadgeUList = slot2
 
 	return
 	--- END OF BLOCK #0 ---

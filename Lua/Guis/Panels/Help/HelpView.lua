@@ -105,9 +105,9 @@ slot5 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "contextText"
+	slot4 = "scrollRectUScrollRect"
 	slot1 = slot1(slot3, slot4)
-	slot0.contextText = slot1
+	slot0.scrollRectUScrollRect = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -339,10 +339,11 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #7 43-50, warpins: 1 ---
+	--- BLOCK #7 43-51, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
-	slot4 = slot0.contextText
+	slot4 = slot0.scrollRectUScrollRect
+	slot4 = slot4.content
 	slot5 = pg
 	slot5 = slot5.getLocalizationText
 	slot7 = slot1.text
@@ -355,7 +356,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 51-53, warpins: 2 ---
+	--- BLOCK #8 52-54, warpins: 2 ---
 	slot2 = slot1.openUi
 	--- END OF BLOCK #8 ---
 
@@ -366,7 +367,7 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #9 54-56, warpins: 1 ---
+	--- BLOCK #9 55-57, warpins: 1 ---
 	slot2 = ToBool
 	slot4 = slot1.course
 	slot2 = slot2(slot4)
@@ -375,7 +376,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 57-58, warpins: 2 ---
+	--- BLOCK #10 58-59, warpins: 2 ---
 	--- END OF BLOCK #10 ---
 
 	slot2 = if slot2 then
@@ -385,7 +386,7 @@ slot5 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #11 59-64, warpins: 1 ---
+	--- BLOCK #11 60-65, warpins: 1 ---
 	slot3 = LuaUIUtils
 	slot3 = slot3.setUIViewVisible
 	slot5 = slot0.redirectBtn
@@ -398,7 +399,7 @@ slot5 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 65-69, warpins: 1 ---
+	--- BLOCK #12 66-70, warpins: 1 ---
 	slot3 = LuaUIUtils
 	slot3 = slot3.setUIViewVisible
 	slot5 = slot0.redirectBtn
@@ -411,7 +412,7 @@ slot5 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 70-70, warpins: 2 ---
+	--- BLOCK #13 71-71, warpins: 2 ---
 	return
 	--- END OF BLOCK #13 ---
 

@@ -1,77 +1,87 @@
---- BLOCK #0 1-112, warpins: 1 ---
+--- BLOCK #0 1-130, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.UICtrl"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Const.UIConst"
+slot4 = "Guis.UICtrl"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Const.MessageName"
+slot5 = "Const.UIConst"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Utils.ClientTextUtils"
+slot6 = "Const.ClientConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "GameApp.PetTransmog.PetTransmogUtils"
+slot7 = "Const.MessageName"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Guis.Panels.PetTransmog.PetTransmogModel"
+slot8 = "Utils.ClientTextUtils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Guis.Panels.PetTransmog.Component.PetTransmogMainInfoComponent"
+slot9 = "GameApp.PetTransmog.PetTransmogUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Guis.Panels.PetTransmog.Component.PetTransmogSchemeListComponent"
+slot10 = "Guis.Panels.PetTransmog.PetTransmogModel"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Utils.LuaUIUtils"
+slot11 = "Guis.Panels.PetTransmog.Component.PetTransmogMainInfoComponent"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.Const"
+slot12 = "Guis.Panels.PetTransmog.Component.PetTransmogSchemeListComponent"
 slot10 = slot10(slot12)
-slot11 = slot10.PetTransmogSlotType
-slot11 = slot11.Max
-slot12 = slot0.LightClass
-slot14 = "PetTransmogCtrl"
-slot15 = slot1
-slot12 = slot12(slot14, slot15)
-slot13 = {}
-slot14 = slot3.PET_TRANSMOG_SCHEME_APPLIED
-slot15 = {
+slot11 = require
+slot13 = "Utils.LuaUIUtils"
+slot11 = slot11(slot13)
+slot12 = require
+slot14 = "Common.Const.Const"
+slot12 = slot12(slot14)
+slot13 = require
+slot15 = "GameApp.UIScene.UISceneConst"
+slot13 = slot13(slot15)
+slot14 = slot12.PetTransmogSlotType
+slot14 = slot14.Max
+slot15 = 800
+slot16 = slot1.LightClass
+slot18 = "PetTransmogCtrl"
+slot19 = slot2
+slot16 = slot16(slot18, slot19)
+slot17 = {}
+slot18 = slot5.PET_TRANSMOG_SCHEME_APPLIED
+slot19 = {
 	"onSchemeApplied",
 	true
 }
-slot13[slot14] = slot15
-slot14 = slot3.PET_TRANSMOG_SCHEME_LIST_CHANGED
-slot15 = {
+slot17[slot18] = slot19
+slot18 = slot5.PET_TRANSMOG_SCHEME_LIST_CHANGED
+slot19 = {
 	"onSchemeListChanged",
 	true
 }
-slot13[slot14] = slot15
-slot14 = slot3.PET_TRANSMOG_ROLLED
-slot15 = {
+slot17[slot18] = slot19
+slot18 = slot5.PET_TRANSMOG_ROLLED
+slot19 = {
 	"onTransmogRolled",
 	true
 }
-slot13[slot14] = slot15
-slot14 = slot3.PET_TRANSMOG_ROLL_FINISHED
-slot15 = {
+slot17[slot18] = slot19
+slot18 = slot5.PET_TRANSMOG_ROLL_FINISHED
+slot19 = {
 	"onRollFinished",
 	true
 }
-slot13[slot14] = slot15
-slot14 = slot3.ITEM_COUNT_MAP_CHANGE
-slot15 = {
+slot17[slot18] = slot19
+slot18 = slot5.ITEM_COUNT_MAP_CHANGE
+slot19 = {
 	"onMoneyChanged",
 	true
 }
-slot13[slot14] = slot15
-slot12.messages = slot13
+slot17[slot18] = slot19
+slot16.messages = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -111,9 +121,18 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 15-37, warpins: 2 ---
+	--- BLOCK #3 15-46, warpins: 2 ---
 	slot2(slot4, slot5)
 
+	slot2 = pg
+	slot2 = slot2.game
+	slot2 = slot2.uiScene
+	slot4 = slot2
+	slot2 = slot2.getScene
+	slot5 = UISceneConst
+	slot5 = slot5.PET_TRANSMOG_SCENE
+	slot2 = slot2(slot4, slot5)
+	slot0.petTransmogScene = slot2
 	slot4 = slot0
 	slot2 = slot0.initUI
 
@@ -145,9 +164,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onCreate = slot13
+slot16.onCreate = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBack
@@ -160,7 +179,15 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 5-8, warpins: 1 ---
+	--- BLOCK #1 5-14, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnBack
+	slot3 = slot1
+	slot1 = slot1.SetGamepadAction
+	slot4 = "Raw/GamepadButtonEast"
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.view
 	slot1 = slot1.btnBack
 
@@ -185,7 +212,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-12, warpins: 2 ---
+	--- BLOCK #2 15-18, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
 	--- END OF BLOCK #2 ---
@@ -197,7 +224,15 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #3 13-16, warpins: 1 ---
+	--- BLOCK #3 19-28, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.btnClose
+	slot3 = slot1
+	slot1 = slot1.SetGamepadAction
+	slot4 = "Raw/GamepadButtonEast"
+
+	slot1(slot3, slot4)
+
 	slot1 = slot0.view
 	slot1 = slot1.btnClose
 
@@ -222,7 +257,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-20, warpins: 2 ---
+	--- BLOCK #4 29-32, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnHideUI
 	--- END OF BLOCK #4 ---
@@ -234,7 +269,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #5 21-24, warpins: 1 ---
+	--- BLOCK #5 33-36, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnHideUI
 
@@ -259,7 +294,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-28, warpins: 2 ---
+	--- BLOCK #6 37-40, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnPreview
 	--- END OF BLOCK #6 ---
@@ -271,7 +306,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #7 29-32, warpins: 1 ---
+	--- BLOCK #7 41-44, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnPreview
 
@@ -296,7 +331,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 33-36, warpins: 2 ---
+	--- BLOCK #8 45-48, warpins: 2 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnPlanChange
 	--- END OF BLOCK #8 ---
@@ -308,7 +343,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #9 37-40, warpins: 1 ---
+	--- BLOCK #9 49-52, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnPlanChange
 
@@ -333,9 +368,9 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 41-44, warpins: 2 ---
+	--- BLOCK #10 53-56, warpins: 2 ---
 	slot1 = slot0.view
-	slot1 = slot1.btnView
+	slot1 = slot1.btnInfo
 	--- END OF BLOCK #10 ---
 
 	slot1 = if slot1 then
@@ -345,17 +380,25 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #11 45-48, warpins: 1 ---
+	--- BLOCK #11 57-60, warpins: 1 ---
 	slot1 = slot0.view
-	slot1 = slot1.btnView
+	slot1 = slot1.btnInfo
 
 	slot2 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
+		--- BLOCK #0 1-13, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot0 = slot0.tips
 		slot2 = slot0
-		slot0 = slot0.onBtnView
+		slot0 = slot0.openEventRuleDesc
+		slot3 = pg
+		slot3 = slot3.getGameString
+		slot5 = "PETTRANSMOGRIFY_RULE_TEXT"
+		slot3 = slot3(slot5)
+		slot4 = "PETTRANSMOGRIFY_TITLE"
 
-		slot0(slot2)
+		slot0(slot2, slot3, slot4)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -370,9 +413,9 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 49-52, warpins: 2 ---
+	--- BLOCK #12 61-64, warpins: 2 ---
 	slot1 = slot0.view
-	slot1 = slot1.btnInfo
+	slot1 = slot1.listTabUList
 	--- END OF BLOCK #12 ---
 
 	slot1 = if slot1 then
@@ -382,32 +425,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #13 53-59, warpins: 1 ---
-	slot1 = slot0.view
-	slot1 = slot1.btnInfo
-	slot2 = pg
-	slot2 = slot2.getGameString
-	slot4 = "PETTRANSMOGRIFY_RULE_TEXT"
-	slot2 = slot2(slot4)
-	slot1.tooltipId = slot2
-	--- END OF BLOCK #13 ---
-
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 60-63, warpins: 2 ---
-	slot1 = slot0.view
-	slot1 = slot1.listTabUList
-	--- END OF BLOCK #14 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 64-71, warpins: 1 ---
+	--- BLOCK #13 65-72, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listTabUList
 
@@ -465,22 +483,22 @@ slot13 = function(slot0)
 
 	slot1.luaClick = slot2
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #16 72-73, warpins: 2 ---
+	--- BLOCK #14 73-74, warpins: 2 ---
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #14 ---
 
 
 
 end
 
-slot12.addListener = slot13
+slot16.addListener = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -548,7 +566,7 @@ slot13 = function(slot0)
 	slot5.name = slot6
 	slot4[1] = slot5
 	slot5 = {
-		tIndex = 0
+		tIndex = 2
 	}
 	slot6 = PetTransmogModel
 	slot6 = slot6.PLAN_TAB
@@ -576,10 +594,10 @@ slot13 = function(slot0)
 
 end
 
-slot12.initUI = slot13
+slot16.initUI = slot17
 
-slot13 = function(slot0, slot1)
-	--- BLOCK #0 1-7, warpins: 1 ---
+slot17 = function(slot0, slot1)
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
 	slot4 = slot0
@@ -587,17 +605,19 @@ slot13 = function(slot0, slot1)
 
 	slot2(slot4, slot5)
 
+	slot2 = slot0.petTransmogScene
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 8-10, warpins: 1 ---
-	slot2 = slot1.petId
+	--- BLOCK #1 9-12, warpins: 1 ---
+	slot2 = slot0.petTransmogScene
+	slot2 = slot2.addGamepadRotationBinding
 	--- END OF BLOCK #1 ---
 
 	slot2 = if slot2 then
@@ -607,11 +627,12 @@ slot13 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 11-15, warpins: 1 ---
-	slot2 = slot0.model
+	--- BLOCK #2 13-18, warpins: 1 ---
+	slot2 = slot0.petTransmogScene
 	slot4 = slot2
-	slot2 = slot2.setPetId
-	slot5 = slot1.petId
+	slot2 = slot2.addGamepadRotationBinding
+	slot5 = slot0.view
+	slot5 = slot5.gameObject
 
 	slot2(slot4, slot5)
 
@@ -620,17 +641,56 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 16-16, warpins: 3 ---
-	return
+	--- BLOCK #3 19-20, warpins: 3 ---
 	--- END OF BLOCK #3 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #4 21-23, warpins: 1 ---
+	slot2 = slot1.petId
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-28, warpins: 1 ---
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.setPetId
+	slot5 = slot1.petId
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-32, warpins: 3 ---
+	slot4 = slot0
+	slot2 = slot0.syncLockedHolesFromScheme
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #6 ---
 
 
 
 end
 
-slot12.onOpen = slot13
+slot16.onOpen = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshAll
@@ -659,7 +719,34 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-11, warpins: 2 ---
+	--- BLOCK #2 11-20, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.addNavFocusListener
+
+	slot4 = function()
+		--- BLOCK #0 1-5, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshConsoleBarState
+
+		slot0(slot2)
+
+		return
+		--- END OF BLOCK #0 ---
+
+
+
+	end
+
+	slot5 = "PetTransmogCtrl"
+
+	slot1(slot3, slot4, slot5)
+
+	slot3 = slot0
+	slot1 = slot0.tryShowFirstGuide
+
+	slot1(slot3)
+
 	return
 	--- END OF BLOCK #2 ---
 
@@ -667,9 +754,77 @@ slot13 = function(slot0)
 
 end
 
-slot12.onShow = slot13
+slot16.onShow = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
+	slot1 = ClientConst
+	slot1 = slot1.PrefKey
+	slot1 = slot1.PetTransmogFirstGuide
+	slot2 = pg
+	slot2 = slot2.me
+	slot2 = slot2.uid
+	slot1 = slot1 .. slot2
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.prefsCacheUtils
+	slot4 = slot2
+	slot2 = slot2.getBool
+	slot5 = slot1
+	slot6 = true
+	slot2 = slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #0 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 18-18, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 19-38, warpins: 2 ---
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.prefsCacheUtils
+	slot4 = slot2
+	slot2 = slot2.setBool
+	slot5 = slot1
+	slot6 = false
+
+	slot2(slot4, slot5, slot6)
+
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.ui
+	slot4 = slot2
+	slot2 = slot2.open
+	slot5 = UIConst
+	slot5 = slot5.UI_ID_FUNC_MENU_UNLOCK
+	slot6 = {}
+	slot7 = FIRST_GUIDE_GROUP
+	slot6.helpId = slot7
+
+	slot2(slot4, slot5, slot6)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.tryShowFirstGuide = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -678,10 +833,16 @@ slot13 = function(slot0)
 
 end
 
-slot12.onHide = slot13
+slot16.onHide = slot17
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.clearLockedHoles
+
+	slot1(slot3)
+
 	slot1 = ipairs
 	slot3 = slot0.needDestroyDownloadSprite
 	--- END OF BLOCK #0 ---
@@ -693,21 +854,21 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 5-5, warpins: 1 ---
-	slot3 = {}
+	--- BLOCK #1 9-9, warpins: 1 ---
+	slot3 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-7, warpins: 2 ---
+	--- BLOCK #2 10-11, warpins: 2 ---
 	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #2 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 8-14, warpins: 1 ---
+	--- BLOCK #3 12-18, warpins: 1 ---
 	slot6 = pg
 	slot6 = slot6.global
 	slot6 = slot6.mobileCameraMgr
@@ -722,7 +883,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 15-16, warpins: 2 ---
+	--- BLOCK #4 19-20, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	for slot4, slot5 in slot1, slot2, slot3
@@ -730,7 +891,7 @@ slot13 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 17-27, warpins: 1 ---
+	--- BLOCK #5 21-31, warpins: 1 ---
 	slot1 = nil
 	slot0.needDestroyDownloadSprite = slot1
 	slot1 = nil
@@ -750,9 +911,439 @@ slot13 = function(slot0)
 
 end
 
-slot12.onDestroy = slot13
+slot16.onDestroy = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.refreshPetRoundConsoleBar
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshRuleTipsConsoleBar
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot16.refreshConsoleBarState = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.navMgr
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #27
+	end
+
+
+	--- BLOCK #1 6-11, warpins: 1 ---
+	slot2 = slot1.CurrentFocusedGroupName
+	slot3 = false
+	slot4 = false
+	slot5 = false
+	--- END OF BLOCK #1 ---
+
+	if slot2 == "PetRound" then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #2 12-20, warpins: 1 ---
+	slot3 = false
+	slot4 = true
+	slot5 = true
+	slot6 = slot1.CurrentFocusedUContent
+	slot7 = NotNil
+	slot9 = slot6
+	slot7 = slot7(slot9)
+	--- END OF BLOCK #2 ---
+
+	slot7 = if slot7 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #3 21-30, warpins: 1 ---
+	slot7 = slot0.model
+	slot9 = slot7
+	slot7 = slot7.getPetId
+	slot7 = slot7(slot9)
+	slot8 = PetTransmogUtils
+	slot8 = slot8.getUnlockedHoles
+	slot10 = slot7
+	slot8 = slot8(slot10)
+	--- END OF BLOCK #3 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 31-33, warpins: 1 ---
+	slot9 = #slot8
+	--- END OF BLOCK #4 ---
+
+	slot9 = if not slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 34-34, warpins: 2 ---
+	slot9 = 0
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 35-37, warpins: 2 ---
+	slot10 = 2
+	--- END OF BLOCK #6 ---
+
+	if slot9 < slot10 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #8
+	end
+
+
+	--- BLOCK #7 38-39, warpins: 1 ---
+	slot9 = false
+	--- END OF BLOCK #7 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+	--- BLOCK #8 40-40, warpins: 1 ---
+	slot9 = true
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 41-42, warpins: 2 ---
+	--- END OF BLOCK #9 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #10
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #10 43-47, warpins: 1 ---
+	slot10 = slot6.parentComponent
+	slot11 = 1
+	slot12 = SLOT_TYPE_MAX
+	slot13 = 1
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 48-52, warpins: 2 ---
+	slot15 = slot0.view
+	slot15 = slot15.stars
+	slot15 = slot15[slot14]
+	--- END OF BLOCK #11 ---
+
+	slot15 = if slot15 then
+	JUMP TO BLOCK #12
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #12 53-54, warpins: 1 ---
+	--- END OF BLOCK #12 ---
+
+	if slot15 == slot10 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #13 55-61, warpins: 1 ---
+	slot16 = PetTransmogUtils
+	slot16 = slot16.isHoleUnlocked
+	slot18 = slot7
+	slot19 = slot14
+	slot16 = slot16(slot18, slot19)
+	--- END OF BLOCK #13 ---
+
+	slot16 = if slot16 then
+	JUMP TO BLOCK #14
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #14 62-66, warpins: 1 ---
+	slot17 = Const
+	slot17 = slot17.PetTransmogSlotType
+	slot17 = slot17.Flash
+	--- END OF BLOCK #14 ---
+
+	if slot14 ~= slot17 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #26
+	end
+
+
+	--- BLOCK #15 67-73, warpins: 1 ---
+	slot17 = slot0.model
+	slot19 = slot17
+	slot17 = slot17.isHoleLocked
+	slot20 = slot14
+	slot17 = slot17(slot19, slot20)
+	--- END OF BLOCK #15 ---
+
+	slot17 = if slot17 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 74-75, warpins: 1 ---
+	slot17 = 1
+	--- END OF BLOCK #16 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
+
+
+	--- BLOCK #17 76-76, warpins: 1 ---
+	slot17 = 0
+	--- END OF BLOCK #17 ---
+
+	FLOW; TARGET BLOCK #18
+
+
+	--- BLOCK #18 77-78, warpins: 2 ---
+	--- END OF BLOCK #18 ---
+
+	if slot17 ~= 0 then
+	JUMP TO BLOCK #19
+	else
+	JUMP TO BLOCK #20
+	end
+
+
+	--- BLOCK #19 79-80, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #19 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
+
+
+	--- BLOCK #20 81-81, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #20 ---
+
+	FLOW; TARGET BLOCK #21
+
+
+	--- BLOCK #21 82-83, warpins: 2 ---
+	--- END OF BLOCK #21 ---
+
+	if slot17 == 0 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
+
+
+	--- BLOCK #22 84-85, warpins: 1 ---
+	slot4 = false
+	--- END OF BLOCK #22 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #24
+
+
+	--- BLOCK #23 86-86, warpins: 1 ---
+	slot4 = true
+	--- END OF BLOCK #23 ---
+
+	FLOW; TARGET BLOCK #24
+
+
+	--- BLOCK #24 87-87, warpins: 2 ---
+	--- END OF BLOCK #24 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #26
+
+
+	--- BLOCK #25 88-88, warpins: 2 ---
+	--- END OF BLOCK #25 ---
+
+	for slot14=slot11, slot12, slot13
+	LOOP BLOCK #11
+	GO OUT TO BLOCK #26
+
+	--- BLOCK #26 89-112, warpins: 7 ---
+	slot6 = CS
+	slot6 = slot6.XGUI
+	slot6 = slot6.Navigation
+	slot6 = slot6.ConsoleBar
+	slot6 = slot6.SetStateForAll
+	slot8 = "PetBaptize_isSelectLock"
+	slot9 = slot3
+
+	slot6(slot8, slot9)
+
+	slot6 = CS
+	slot6 = slot6.XGUI
+	slot6 = slot6.Navigation
+	slot6 = slot6.ConsoleBar
+	slot6 = slot6.SetStateForAll
+	slot8 = "PetBaptize_isSelectUnLock"
+	slot9 = slot4
+
+	slot6(slot8, slot9)
+
+	slot6 = CS
+	slot6 = slot6.XGUI
+	slot6 = slot6.Navigation
+	slot6 = slot6.ConsoleBar
+	slot6 = slot6.SetStateForAll
+	slot8 = "PetBaptize_isSelect"
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
+	--- END OF BLOCK #26 ---
+
+	FLOW; TARGET BLOCK #27
+
+
+	--- BLOCK #27 113-113, warpins: 2 ---
+	return
+	--- END OF BLOCK #27 ---
+
+
+
+end
+
+slot16.refreshPetRoundConsoleBar = slot17
+
+slot17 = function(slot0)
+	--- BLOCK #0 1-10, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getUIState
+	slot1 = slot1(slot3)
+	slot2 = false
+	slot3 = PetTransmogModel
+	slot3 = slot3.UI_STATE
+	slot3 = slot3.HIDDEN
+	--- END OF BLOCK #0 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 11-12, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 13-17, warpins: 1 ---
+	slot3 = PetTransmogModel
+	slot3 = slot3.UI_STATE
+	slot3 = slot3.PLAN
+	--- END OF BLOCK #2 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-19, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 20-24, warpins: 1 ---
+	slot3 = PetTransmogModel
+	slot3 = slot3.UI_STATE
+	slot3 = slot3.NORMAL
+	--- END OF BLOCK #4 ---
+
+	if slot1 == slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 25-25, warpins: 1 ---
+	slot2 = true
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 26-42, warpins: 4 ---
+	slot3 = CS
+	slot3 = slot3.XGUI
+	slot3 = slot3.Navigation
+	slot3 = slot3.ConsoleBar
+	slot3 = slot3.SetStateForAll
+	slot5 = "PetBaptize_RuleTips"
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = CS
+	slot3 = slot3.XGUI
+	slot3 = slot3.Navigation
+	slot3 = slot3.ConsoleBar
+	slot3 = slot3.SetStateForAll
+	slot5 = "PetBaptize_CameraMove"
+	slot6 = true
+
+	slot3(slot5, slot6)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot16.refreshRuleTipsConsoleBar = slot17
+
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot2 = slot0.snapshotRequestId
 	slot2 = slot2 + 1
@@ -845,9 +1436,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.snapShot = slot13
+slot16.snapShot = slot17
 
-slot13 = function(slot0, slot1, slot2)
+slot17 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.uiScene
 	--- END OF BLOCK #0 ---
@@ -1027,9 +1618,9 @@ slot13 = function(slot0, slot1, slot2)
 
 end
 
-slot12.previewTransmogScheme = slot13
+slot16.previewTransmogScheme = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1071,9 +1662,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.getCurrentSource = slot13
+slot16.getCurrentSource = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1115,9 +1706,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.getCurrentSchemes = slot13
+slot16.getCurrentSchemes = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = {}
 	slot3 = PetTransmogUtils
@@ -1167,9 +1758,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.buildUnlockedSet = slot13
+slot16.buildUnlockedSet = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -1369,9 +1960,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.buildHoleData = slot13
+slot16.buildHoleData = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshBaptizeState
@@ -1440,9 +2031,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshAll = slot13
+slot16.refreshAll = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -1540,7 +2131,12 @@ slot13 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 47-47, warpins: 2 ---
+	--- BLOCK #6 47-50, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.refreshRuleTipsConsoleBar
+
+	slot2(slot4)
+
 	return
 	--- END OF BLOCK #6 ---
 
@@ -1548,9 +2144,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.changeUIState = slot13
+slot16.changeUIState = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
@@ -1589,9 +2185,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.refreshBaptizeState = slot13
+slot16.refreshBaptizeState = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.changeUIState
@@ -1608,9 +2204,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onBtnPlanChange = slot13
+slot16.onBtnPlanChange = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.changeUIState
@@ -1627,36 +2223,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onBtnHideUI = slot13
+slot16.onBtnHideUI = slot17
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot3 = slot1
-	slot1 = slot1.open
-	slot4 = UIConst
-	slot4 = slot4.UI_ID_PET_TRANSMOG_SCHEME
-	slot5 = {}
-	slot6 = slot0.model
-	slot8 = slot6
-	slot6 = slot6.getPetId
-	slot6 = slot6(slot8)
-	slot5.petId = slot6
-
-	slot1(slot3, slot4, slot5)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot12.onBtnView = slot13
-
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -1747,9 +2316,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onBtnBack = slot13
+slot16.onBtnBack = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
@@ -1781,18 +2350,17 @@ slot13 = function(slot0)
 
 end
 
-slot12.onBtnPreview = slot13
+slot16.onBtnPreview = slot17
 
-slot13 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+slot17 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._invalidatePhotoCache
 
 	slot1(slot3)
 
-	slot1 = slot0.model
-	slot3 = slot1
-	slot1 = slot1.clearLockedHoles
+	slot3 = slot0
+	slot1 = slot0.syncLockedHolesFromScheme
 
 	slot1(slot3)
 
@@ -1811,9 +2379,60 @@ slot13 = function(slot0)
 
 end
 
-slot12.onSchemeApplied = slot13
+slot16.onSchemeApplied = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
+	slot1 = PetTransmogUtils
+	slot1 = slot1.getCurrentScheme
+	slot3 = slot0.model
+	slot5 = slot3
+	slot3 = slot3.getPetId
+	MULTRES = slot3(slot5)
+	slot1 = slot1(MULTRES)
+	slot2 = slot0.model
+	slot4 = slot2
+	slot2 = slot2.setLockedHolesFromSet
+	slot5 = PetTransmogUtils
+	slot5 = slot5.getSchemeLockedSet
+	slot7 = slot1
+	MULTRES = slot5(slot7)
+
+	slot2(slot4, MULTRES)
+
+	slot2 = slot0.mainInfoComponent
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 19-22, warpins: 1 ---
+	slot2 = slot0.mainInfoComponent
+	slot4 = slot2
+	slot2 = slot2.refreshStarsLock
+
+	slot2(slot4)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 23-23, warpins: 2 ---
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot16.syncLockedHolesFromScheme = slot17
+
+slot17 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0._invalidatePhotoCache
@@ -1856,9 +2475,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onSchemeListChanged = slot13
+slot16.onSchemeListChanged = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = {}
 	slot0.photoCache = slot1
@@ -1870,9 +2489,9 @@ slot13 = function(slot0)
 
 end
 
-slot12._invalidatePhotoCache = slot13
+slot16._invalidatePhotoCache = slot17
 
-slot13 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = slot0.mainInfoComponent
 	slot3 = slot1
@@ -1887,9 +2506,9 @@ slot13 = function(slot0)
 
 end
 
-slot12.onTransmogRolled = slot13
+slot16.onTransmogRolled = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.mainInfoComponent
 	slot4 = slot2
@@ -1905,9 +2524,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onRollFinished = slot13
+slot16.onRollFinished = slot17
 
-slot13 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot2 = slot0.mainInfoComponent
 	slot4 = slot2
@@ -1928,9 +2547,9 @@ slot13 = function(slot0, slot1)
 
 end
 
-slot12.onMoneyChanged = slot13
+slot16.onMoneyChanged = slot17
 
-return slot12
+return slot16
 --- END OF BLOCK #0 ---
 
 

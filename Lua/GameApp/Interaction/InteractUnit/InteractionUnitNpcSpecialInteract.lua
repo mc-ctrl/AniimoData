@@ -54,8 +54,10 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 14-20, warpins: 2 ---
+	--- BLOCK #2 14-22, warpins: 2 ---
 	slot0.targetName = slot4
+	slot4 = slot1.eventType
+	slot0.eventType = slot4
 	slot4 = slot1.actionPrototypeId
 	slot0.actionPrototypeId = slot4
 	slot4 = InteractData
@@ -69,7 +71,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 21-27, warpins: 1 ---
+	--- BLOCK #3 23-29, warpins: 1 ---
 	slot4 = lume
 	slot4 = slot4.clone
 	slot6 = InteractData
@@ -84,14 +86,14 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 28-28, warpins: 2 ---
+	--- BLOCK #4 30-30, warpins: 2 ---
 	slot4 = {}
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 29-37, warpins: 2 ---
+	--- BLOCK #5 31-39, warpins: 2 ---
 	slot0.interactData = slot4
 	slot4 = slot0.interactData
 	slot4.styleId = slot3
@@ -108,7 +110,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 38-39, warpins: 1 ---
+	--- BLOCK #6 40-41, warpins: 1 ---
 	slot4 = slot0.interactData
 	slot4 = slot4.type
 	--- END OF BLOCK #6 ---
@@ -116,7 +118,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 40-46, warpins: 2 ---
+	--- BLOCK #7 42-48, warpins: 2 ---
 	slot0.interactionType = slot4
 	slot0.interactId = slot2
 	slot4 = slot1.targetPos
@@ -131,7 +133,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 47-50, warpins: 1 ---
+	--- BLOCK #8 49-52, warpins: 1 ---
 	slot4 = ToBool
 	slot6 = slot0.interactData
 	slot6 = slot6.handlePetEthnicGroup
@@ -141,7 +143,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 51-59, warpins: 2 ---
+	--- BLOCK #9 53-61, warpins: 2 ---
 	slot0.handlePetEthnicGroup = slot4
 	slot4 = false
 	slot0.useTurnAnim = slot4
@@ -158,7 +160,7 @@ slot9 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 60-64, warpins: 1 ---
+	--- BLOCK #10 62-66, warpins: 1 ---
 	slot4 = ipairs
 	slot6 = slot0.interactData
 	slot6 = slot6.stateCheckExclude
@@ -168,7 +170,7 @@ slot9 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #12
 
 
-	--- BLOCK #11 65-67, warpins: 1 ---
+	--- BLOCK #11 67-69, warpins: 1 ---
 	slot9 = slot0.stateCheckExclude
 	slot10 = true
 	slot9[slot8] = slot10
@@ -177,7 +179,7 @@ slot9 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 68-69, warpins: 2 ---
+	--- BLOCK #12 70-71, warpins: 2 ---
 	--- END OF BLOCK #12 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -185,7 +187,7 @@ slot9 = function(slot0, slot1, slot2)
 	GO OUT TO BLOCK #13
 
 
-	--- BLOCK #13 70-80, warpins: 2 ---
+	--- BLOCK #13 72-82, warpins: 2 ---
 	slot4 = slot1.interactFunc
 	slot0.interactFunc = slot4
 	slot4 = slot1.canInteractiveFunc

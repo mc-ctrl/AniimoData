@@ -1,22 +1,25 @@
---- BLOCK #0 1-30, warpins: 1 ---
+--- BLOCK #0 1-33, warpins: 1 ---
 slot0 = require
-slot2 = "Common.AICt.CTRNode"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Common.AICt.CTRNode"
 slot1 = slot1(slot3)
-slot2 = slot1.LightClass
-slot4 = "MessageTrigger"
-slot5 = slot0
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Common.Data.AICtrData.aictr_message_data"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "Core.Framework.Class"
+slot2 = slot2(slot4)
+slot3 = slot2.LightClass
+slot5 = "MessageTrigger"
+slot6 = slot1
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "Common.Data.AICtrData.aictr_const_data"
+slot6 = "Common.Data.AICtrData.aictr_message_data"
 slot4 = slot4(slot6)
+slot5 = require
+slot7 = "Common.Data.AICtrData.aictr_const_data"
+slot5 = slot5(slot7)
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot6 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = CTRNode
 	slot4 = slot4.ctor
@@ -34,9 +37,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot2.ctor = slot5
+slot3.ctor = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.registerSuffixPort
@@ -99,7 +102,7 @@ slot5 = function(slot0)
 
 
 	--- BLOCK #3 25-25, warpins: 1 ---
-	slot4 = {}
+	slot4 = EMPTY_TABLE
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
@@ -183,9 +186,9 @@ slot5 = function(slot0)
 
 end
 
-slot2.registerPorts = slot5
+slot3.registerPorts = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = ConstData
 	slot1 = slot1.repeatTrigger
@@ -229,9 +232,9 @@ slot5 = function(slot0)
 
 end
 
-slot2.registerSuffixPort = slot5
+slot3.registerSuffixPort = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.fullTriggerName
 	--- END OF BLOCK #0 ---
@@ -263,9 +266,9 @@ slot5 = function(slot0)
 
 end
 
-slot2.getTriggerName = slot5
+slot3.getTriggerName = slot6
 
-slot5 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.suffixPort
 	--- END OF BLOCK #0 ---
@@ -304,9 +307,9 @@ slot5 = function(slot0)
 
 end
 
-slot2._getFullTriggerName = slot5
+slot3._getFullTriggerName = slot6
 
-slot5 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.callFlowOut
@@ -322,9 +325,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot2.executeTrigger = slot5
+slot3.executeTrigger = slot6
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

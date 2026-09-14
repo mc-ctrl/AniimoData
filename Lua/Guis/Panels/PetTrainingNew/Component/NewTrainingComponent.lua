@@ -1,4 +1,4 @@
---- BLOCK #0 1-128, warpins: 1 ---
+--- BLOCK #0 1-131, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -63,19 +63,22 @@ slot19 = slot19(slot21)
 slot20 = require
 slot22 = "Guis.Panels.PetTrainingNew.Component.SubNodeComps.PetCardInfoComponent"
 slot20 = slot20(slot22)
-slot21 = math
-slot21 = slot21.floor
-slot22 = string
-slot22 = slot22.format
-slot23 = "InfoState"
-slot24 = {
+slot21 = require
+slot23 = "Utils.PetRenameValidator"
+slot21 = slot21(slot23)
+slot22 = math
+slot22 = slot22.floor
+slot23 = string
+slot23 = slot23.format
+slot24 = "InfoState"
+slot25 = {
 	ReadyMax_2 = 2,
 	Upgrade_1 = 1,
 	Empty_0 = 0,
 	Max_3 = 3
 }
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-112, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.newTalentUComponent
@@ -196,9 +199,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.findObjects = slot25
+slot5.findObjects = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = slot0.btnRulesUButton
 
@@ -268,9 +271,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.initView = slot25
+slot5.initView = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_isCreated
 
@@ -353,9 +356,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.init = slot25
+slot5.init = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-20, warpins: 1 ---
 	slot2 = slot0.model
 	slot4 = slot2
@@ -423,9 +426,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.refreshNewPropUI = slot25
+slot5.refreshNewPropUI = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.m_onClickPropBtn
@@ -439,9 +442,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.onSelected = slot25
+slot5.onSelected = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = slot0.petInfoCardComponent
 	slot4 = slot2
@@ -457,9 +460,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.refreshPetName = slot25
+slot5.refreshPetName = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -487,9 +490,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.renderPotentialPoint = slot25
+slot5.renderPotentialPoint = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.petId
 
@@ -531,9 +534,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.renderRatio = slot25
+slot5.renderRatio = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.btnRulesUButton
 
@@ -577,9 +580,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.onRulesBtnClick = slot25
+slot5.onRulesBtnClick = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -612,10 +615,37 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.resetFavouriteBtnState = slot25
+slot5.resetFavouriteBtnState = slot26
 
-slot25 = function(slot0)
-	--- BLOCK #0 1-30, warpins: 1 ---
+slot26 = function(slot0)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = PetRenameValidator
+	slot1 = slot1.canRenamePet
+	slot1 = slot1()
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-12, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.showBubbleMessage
+	slot3 = NoticeDef
+	slot3 = slot3.FORBID_CHANGE_PET_NAME
+
+	slot1(slot3)
+
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
+
+
+	--- BLOCK #2 13-42, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getGameString
 	slot3 = "RENAME_TIPS_PET"
@@ -695,37 +725,44 @@ slot25 = function(slot0)
 	slot10 = {
 		characterLimit = 14
 	}
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot11 = if not slot3 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 31-31, warpins: 1 ---
+	--- BLOCK #3 43-43, warpins: 1 ---
 	slot11 = ""
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 32-35, warpins: 2 ---
+	--- BLOCK #4 44-47, warpins: 2 ---
 	slot10.text = slot11
 
 	slot4(slot6, slot7, slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 48-48, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
 end
 
-slot5.showRename = slot25
+slot5.showRename = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = pairs
 	slot3 = Const
@@ -765,9 +802,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.renderNewProp = slot25
+slot5.renderNewProp = slot26
 
-slot25 = function(slot0, slot1, slot2)
+slot26 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot3 = PetManagementUtils
 	slot3 = slot3.getPetNewSixPropInfo
@@ -811,9 +848,9 @@ slot25 = function(slot0, slot1, slot2)
 
 end
 
-slot5.renderSpecificPropBtn = slot25
+slot5.renderSpecificPropBtn = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_curSelectedPropIndex
 
@@ -915,9 +952,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.m_onClickPropBtn = slot25
+slot5.m_onClickPropBtn = slot26
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot26 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-32, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -1134,9 +1171,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.renderSingleBtn = slot25
+slot5.renderSingleBtn = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = PetManagementUtils
 	slot1 = slot1.popupResetAllocatePoint
@@ -1152,9 +1189,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.onResetBtnClick = slot25
+slot5.onResetBtnClick = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-9, warpins: 1 ---
 	slot1 = nil
 	slot0.m_curSelectedPropIndex = slot1
@@ -1173,9 +1210,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.onDestroy = slot25
+slot5.onDestroy = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = RINFO_STATE
 	slot2 = slot2.Empty_0
@@ -2654,9 +2691,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.refreshInfoPanel = slot25
+slot5.refreshInfoPanel = slot26
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot26 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -2774,9 +2811,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.renderAddInfoItem = slot25
+slot5.renderAddInfoItem = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_curSelectedPropIndex
 
@@ -2849,9 +2886,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.onClickExtraPropsBtn = slot25
+slot5.onClickExtraPropsBtn = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = slot0.n_btnAfterAddUButton
 
@@ -2918,9 +2955,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.initExtraBtnsTooltipFunc = slot25
+slot5.initExtraBtnsTooltipFunc = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_extraStrengthInfos
 	--- END OF BLOCK #0 ---
@@ -3018,9 +3055,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.m_onRenderToolTip1 = slot25
+slot5.m_onRenderToolTip1 = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_extraStrengthInfos
 	--- END OF BLOCK #0 ---
@@ -3118,9 +3155,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.m_onRenderToolTip2 = slot25
+slot5.m_onRenderToolTip2 = slot26
 
-slot25 = function(slot0, slot1)
+slot26 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.m_extraStrengthInfos
 	--- END OF BLOCK #0 ---
@@ -3208,9 +3245,9 @@ slot25 = function(slot0, slot1)
 
 end
 
-slot5.m_onRenderToolTip3 = slot25
+slot5.m_onRenderToolTip3 = slot26
 
-slot25 = function(slot0, slot1, slot2, slot3)
+slot26 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-18, warpins: 1 ---
 	slot6 = slot1
 	slot4 = slot1.GetComponent
@@ -3279,9 +3316,9 @@ slot25 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot5.m_onRenderAddInfoItem = slot25
+slot5.m_onRenderAddInfoItem = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.m_curSelectedPropIndex
 
@@ -3369,9 +3406,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.onClickUpgrade = slot25
+slot5.onClickUpgrade = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3393,9 +3430,9 @@ slot25 = function(slot0)
 
 end
 
-slot5.onClickBatchAddPoints = slot25
+slot5.onClickBatchAddPoints = slot26
 
-slot25 = function(slot0)
+slot26 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
@@ -3417,7 +3454,7 @@ slot25 = function(slot0)
 
 end
 
-slot5.onClickRecommend = slot25
+slot5.onClickRecommend = slot26
 
 return slot5
 --- END OF BLOCK #0 ---

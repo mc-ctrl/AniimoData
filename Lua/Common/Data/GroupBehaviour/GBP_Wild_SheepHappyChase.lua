@@ -1,7 +1,7 @@
 --- BLOCK #0 1-118, warpins: 1 ---
 slot0 = {
-	behavID = "BP_Wild_GroupBehav_SheepHappyChase",
-	CDAfterEnd = 1
+	CDAfterEnd = 1,
+	behavID = "BP_Wild_GroupBehav_SheepHappyChase"
 }
 slot1 = {}
 slot2 = {
@@ -66,8 +66,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPoint01"
+	para = "GBPMsg_ResPoint01",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -87,8 +87,8 @@ slot5 = {
 slot4.role = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -217,8 +217,8 @@ slot5 = {
 slot4.role = slot5
 slot3[5] = slot4
 slot4 = {
-	func = "goToNextStage",
-	para = ""
+	para = "",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"

@@ -1,4 +1,4 @@
---- BLOCK #0 1-35, warpins: 1 ---
+--- BLOCK #0 1-32, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
@@ -9,12 +9,9 @@ slot2 = slot0.LightClass
 slot4 = "ShopView"
 slot5 = slot1
 slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Utils.LuaUIUtils"
-slot3 = slot3(slot5)
 
-slot4 = function(slot0)
-	--- BLOCK #0 1-151, warpins: 1 ---
+slot3 = function(slot0)
+	--- BLOCK #0 1-103, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -36,12 +33,6 @@ slot4 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "pbBuyListTag"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbBuyListTag = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "pbBuyListProp"
 	slot1 = slot1(slot3, slot4)
 	slot0.pbBuyListProp = slot1
@@ -54,45 +45,21 @@ slot4 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "pbPropInfoPurchase"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbPropInfoPurchase = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "inSufficientCurrencyUText"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbInSufficientCurrencyUText = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "pbPropInfoNumSelector"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbPropInfoNumSelector = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "listCoinsUList"
-	slot1 = slot1(slot3, slot4)
-	slot0.listCoinsUList = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "pbPropInfoLockTxtName"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbPropInfoLockTxtName = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "pbPropInfoBtnConfirm"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbPropInfoBtnConfirm = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "btnExit"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnExit = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "btnJumpUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.btnJumpUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "jumpUButton"
+	slot1 = slot1(slot3, slot4)
+	slot0.jumpUButton = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -114,39 +81,15 @@ slot4 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "pbLimitTitle"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbLimitTitle = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "pbLimitNumTxt"
-	slot1 = slot1(slot3, slot4)
-	slot0.pbLimitNumTxt = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "limitInfoUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.limitInfoUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "listTabIconUList"
 	slot1 = slot1(slot3, slot4)
 	slot0.listTabIconUList = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "panelPropInfoUComponent"
+	slot4 = "panelPropInfoUContainer"
 	slot1 = slot1(slot3, slot4)
-	slot0.panelPropInfoUComponent = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "propInfoUWidget"
-	slot1 = slot1(slot3, slot4)
-	slot0.propInfoUWidget = slot1
+	slot0.panelPropInfoUContainer = slot1
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
@@ -165,6 +108,12 @@ slot4 = function(slot0)
 	slot4 = "rogueBuffUBaseText"
 	slot1 = slot1(slot3, slot4)
 	slot0.rogueBuffUBaseText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "backgroundUImage"
+	slot1 = slot1(slot3, slot4)
+	slot0.backgroundUImage = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -173,9 +122,9 @@ slot4 = function(slot0)
 
 end
 
-slot2.findObjects = slot4
+slot2.findObjects = slot3
 
-slot4 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -184,9 +133,9 @@ slot4 = function(slot0)
 
 end
 
-slot2.initView = slot4
+slot2.initView = slot3
 
-slot4 = function(slot0)
+slot3 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.pbBuy
 	slot3 = slot1
@@ -201,10 +150,10 @@ slot4 = function(slot0)
 
 end
 
-slot2.getShopTagPage = slot4
-slot4 = {}
+slot2.getShopTagPage = slot3
+slot3 = {}
 
-slot5 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = buyShopTagItemComs
 	slot2 = slot2[slot1]
@@ -256,10 +205,10 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot2.getBuyShopTagItemComs = slot5
-slot5 = {}
+slot2.getBuyShopTagItemComs = slot4
+slot4 = {}
 
-slot6 = function(slot0, slot1)
+slot5 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = buyPropItemsComs
 	slot2 = slot2[slot1]
@@ -268,11 +217,11 @@ slot6 = function(slot0, slot1)
 	if slot2 == nil then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 5-194, warpins: 1 ---
+	--- BLOCK #1 5-185, warpins: 1 ---
 	slot2 = buyPropItemsComs
 	slot3 = {}
 	slot2[slot1] = slot3
@@ -330,6 +279,13 @@ slot6 = function(slot0, slot1)
 	slot7 = "coinIcon_2"
 	slot4 = slot4(slot6, slot7)
 	slot3.imgCoinIcon_2 = slot4
+	slot3 = buyPropItemsComs
+	slot3 = slot3[slot1]
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "numCoinUSDFText"
+	slot4 = slot4(slot6, slot7)
+	slot3.numCoinUSDFText = slot4
 	slot3 = buyPropItemsComs
 	slot3 = slot3[slot1]
 	slot6 = slot2
@@ -437,6 +393,54 @@ slot6 = function(slot0, slot1)
 	slot3.exclusiveUContainer = slot4
 	slot3 = buyPropItemsComs
 	slot3 = slot3[slot1]
+	slot6 = slot2
+	slot4 = slot2.GetRefValue
+	slot7 = "seasonTagUWidget"
+	slot4 = slot4(slot6, slot7)
+	slot3.seasonTagUWidget = slot4
+	slot3 = buyPropItemsComs
+	slot3 = slot3[slot1]
+	slot3 = slot3.seasonTagUWidget
+	--- END OF BLOCK #1 ---
+
+	slot3 = if slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 186-207, warpins: 1 ---
+	slot3 = buyPropItemsComs
+	slot3 = slot3[slot1]
+	slot3 = slot3.seasonTagUWidget
+	slot3 = slot3.transform
+	slot5 = slot3
+	slot3 = slot3.GetComponent
+	slot6 = "ObjectReference"
+	slot3 = slot3(slot5, slot6)
+	slot4 = buyPropItemsComs
+	slot4 = slot4[slot1]
+	slot7 = slot3
+	slot5 = slot3.GetRefValue
+	slot8 = "seasonTagUImage"
+	slot5 = slot5(slot7, slot8)
+	slot4.seasonTagUImage = slot5
+	slot4 = buyPropItemsComs
+	slot4 = slot4[slot1]
+	slot7 = slot3
+	slot5 = slot3.GetRefValue
+	slot8 = "titleUSDFText"
+	slot5 = slot5(slot7, slot8)
+	slot4.seasonTagTitleUSDFText = slot5
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 208-235, warpins: 2 ---
+	slot3 = buyPropItemsComs
+	slot3 = slot3[slot1]
 	slot4 = {}
 	slot3.itemLevelSubItems = slot4
 	slot3 = buyPropItemsComs
@@ -463,26 +467,26 @@ slot6 = function(slot0, slot1)
 	slot7 = "lv3UWidget"
 	slot4 = slot4(slot6, slot7)
 	slot3[3] = slot4
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 195-197, warpins: 2 ---
+	--- BLOCK #4 236-238, warpins: 2 ---
 	slot2 = buyPropItemsComs
 	slot2 = slot2[slot1]
 
 	return slot2
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot2.getBuyPropItemComs = slot6
-slot6 = {}
+slot2.getBuyPropItemComs = slot5
+slot5 = {}
 
-slot7 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = buyPropPriceRuleComs
 	slot2 = slot2[slot1]
@@ -548,10 +552,10 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.getBuyPropPriceRuleComs = slot7
-slot7 = {}
+slot2.getBuyPropPriceRuleComs = slot6
+slot6 = {}
 
-slot8 = function(slot0, slot1)
+slot7 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = currencyItemsComs
 	slot2 = slot2[slot1]
@@ -603,9 +607,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot2.getCurrencyItemComs = slot8
+slot2.getCurrencyItemComs = slot7
 
-slot8 = function(slot0)
+slot7 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = next
 	slot2 = currencyItemsComs
@@ -719,7 +723,7 @@ slot8 = function(slot0)
 
 end
 
-slot2.onDestroy = slot8
+slot2.onDestroy = slot7
 
 return slot2
 --- END OF BLOCK #0 ---

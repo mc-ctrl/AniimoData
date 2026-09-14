@@ -11,7 +11,7 @@ slot5 = slot0
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = 0
 	slot0.progressValue = slot1
 	slot1 = 0
@@ -26,6 +26,8 @@ slot3 = function(slot0)
 	slot0.levelRewardCount = slot1
 	slot1 = false
 	slot0.captureSuccess = slot1
+	slot1 = false
+	slot0.energyConvertRewardSent = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -37,7 +39,7 @@ end
 slot2.onActivityReset = slot3
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = 0
 	slot0.sessionBattleGrade = slot1
 	slot1 = 0
@@ -51,7 +53,9 @@ slot3 = function(slot0)
 	slot1 = false
 	slot0.captureSuccess = slot1
 	slot1 = false
-	slot0.offlineMailSent = slot1
+	slot0.settleRewardSent = slot1
+	slot1 = false
+	slot0.energyConvertRewardSent = slot1
 
 	return
 	--- END OF BLOCK #0 ---

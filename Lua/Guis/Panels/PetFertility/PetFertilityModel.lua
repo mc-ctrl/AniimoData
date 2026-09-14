@@ -1,54 +1,54 @@
 --- BLOCK #0 1-183, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Log.LoggerConst"
+slot3 = "Core.Log.LoggerManager"
 slot1 = slot1(slot3)
-slot2 = slot0.getLogger
-slot4 = "PetFertilityModel"
+slot2 = require
+slot4 = "Core.Log.LoggerConst"
 slot2 = slot2(slot4)
-slot3 = require
-slot5 = "Core.Framework.Class"
+slot3 = slot1.getLogger
+slot5 = "PetFertilityModel"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Guis.UIModel"
+slot6 = "Core.Framework.Class"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Common.Utils.Utils"
+slot7 = "Guis.UIModel"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Data.pet_data"
+slot8 = "Common.Utils.Utils"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Utils.LuaUIUtils"
+slot9 = "Data.pet_data"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Core.Common.lume"
+slot10 = "Utils.LuaUIUtils"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Const.ItemConst"
+slot11 = "Core.Common.lume"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Data.pet_research_content_data"
+slot12 = "Common.Const.ItemConst"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.item_data"
+slot13 = "Common.Utils.ItemUtils"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Data.pet_talent_data"
+slot14 = "Data.pet_research_content_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Common.Const.Const"
+slot15 = "Data.item_data"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Data.element_name_to_id"
+slot16 = "Data.pet_talent_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Data.pet_avatar_data"
+slot17 = "Common.Const.Const"
 slot15 = slot15(slot17)
 slot16 = require
-slot18 = "Data.pet_form_type_data"
+slot18 = "Data.element_name_to_id"
 slot16 = slot16(slot18)
 slot17 = require
 slot19 = "Data.pet_character_data"
@@ -68,9 +68,9 @@ slot21 = slot21(slot23)
 slot22 = require
 slot24 = "Const.UIConst"
 slot22 = slot22(slot24)
-slot23 = slot3.LightClass
+slot23 = slot4.LightClass
 slot25 = "PetFertilityModel"
-slot26 = slot4
+slot26 = slot5
 slot23 = slot23(slot25, slot26)
 slot24 = 3
 slot23.MAX_EXPLORE_PETS_COUNT = slot24
@@ -93,14 +93,6 @@ slot24 = {
 }
 slot23.FOOD_TYPE = slot24
 slot24 = {
-	SlideLeft2 = 18,
-	SlideRight3 = 17,
-	SlideLeft3 = 16,
-	SlideRight4Plus = 15,
-	SlideLeft4Plus = 14,
-	Fold1 = 13,
-	UnFold1 = 12,
-	Fold2 = 11,
 	UnFold2 = 10,
 	Fold3 = 9,
 	UnFold3 = 8,
@@ -120,7 +112,15 @@ slot24 = {
 	FocusGJLeftReverse = 22,
 	FocusGJRight = 21,
 	FocusGJLeft = 20,
-	SlideRight2 = 19
+	SlideRight2 = 19,
+	SlideLeft2 = 18,
+	SlideRight3 = 17,
+	SlideLeft3 = 16,
+	SlideRight4Plus = 15,
+	SlideLeft4Plus = 14,
+	Fold1 = 13,
+	UnFold1 = 12,
+	Fold2 = 11
 }
 slot23.TIMELINE_INDEX = slot24
 
@@ -138,7 +138,7 @@ slot24 = function(slot0, slot1)
 
 
 	--- BLOCK #1 5-5, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
@@ -333,127 +333,13 @@ end
 slot23.appendFormFilters = slot24
 
 slot24 = function(slot0, slot1)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = {}
-	slot3 = false
-	slot4 = pairs
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot2 = PetManagementDataHelper
+	slot2 = slot2.getSelectedFormTypeMap
+	slot4 = slot1
+
+	return slot2(slot4)
 	--- END OF BLOCK #0 ---
-
-	slot6 = if not slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 6-6, warpins: 1 ---
-	slot6 = {}
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 7-8, warpins: 2 ---
-	slot4, slot5, slot6 = slot4(slot6)
-	--- END OF BLOCK #2 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
-
-
-	--- BLOCK #3 9-10, warpins: 1 ---
-	--- END OF BLOCK #3 ---
-
-	if slot8 == true then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #4 11-15, warpins: 1 ---
-	slot9 = type
-	slot11 = slot7
-	slot9 = slot9(slot11)
-	--- END OF BLOCK #4 ---
-
-	if slot9 == "string" then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #5 16-22, warpins: 1 ---
-	slot9 = string
-	slot9 = slot9.match
-	slot11 = slot7
-	slot12 = "^isForm(%d+)$"
-	slot9 = slot9(slot11, slot12)
-	--- END OF BLOCK #5 ---
-
-	slot9 = if slot9 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #6 23-32, warpins: 1 ---
-	slot10 = tonumber
-	slot12 = slot9
-	slot10 = slot10(slot12)
-	slot11 = true
-	slot2[slot10] = slot11
-	slot3 = true
-	slot11 = pairs
-	slot13 = PetFormTypeData
-	slot11, slot12, slot13 = slot11(slot13)
-	--- END OF BLOCK #6 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #7 33-35, warpins: 1 ---
-	slot16 = slot15.belong
-	--- END OF BLOCK #7 ---
-
-	if slot16 == slot10 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 36-37, warpins: 1 ---
-	slot16 = true
-	slot2[slot14] = slot16
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 38-39, warpins: 3 ---
-	--- END OF BLOCK #9 ---
-
-	for slot14, slot15 in slot11, slot12, slot13
-	LOOP BLOCK #7
-	GO OUT TO BLOCK #10
-
-
-	--- BLOCK #10 40-41, warpins: 5 ---
-	--- END OF BLOCK #10 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #11
-
-
-	--- BLOCK #11 42-44, warpins: 1 ---
-	slot4 = slot2
-	slot5 = slot3
-
-	return slot4, slot5
-	--- END OF BLOCK #11 ---
 
 
 
@@ -2628,55 +2514,60 @@ slot24 = function(slot0, slot1, slot2)
 	slot10 = if slot10 then
 	JUMP TO BLOCK #12
 	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #12 71-77, warpins: 1 ---
+	slot11 = Utils
+	slot11 = slot11.getPetFormIdByTemplateId
+	slot13 = slot1.templateId
+	slot11 = slot11(slot13)
+	slot12 = slot9[slot11]
+	--- END OF BLOCK #12 ---
+
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 78-79, warpins: 1 ---
+	slot12 = false
+
+	return slot12
+
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 80-85, warpins: 3 ---
+	slot11 = slot8.isShiny
+	slot12 = slot8.isBoss
+	slot13 = slot8.isRainbow
+	slot14 = slot8.isBlackRainbow
+	--- END OF BLOCK #14 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #15
+	else
 	JUMP TO BLOCK #18
 	end
 
 
-	--- BLOCK #12 71-75, warpins: 1 ---
-	slot11 = PetAvatarData
-	slot12 = slot1.templateId
-	slot11 = slot11[slot12]
-	--- END OF BLOCK #12 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #13 76-78, warpins: 1 ---
-	slot12 = slot11[0]
-	--- END OF BLOCK #13 ---
-
-	slot12 = if slot12 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #15
-	end
-
-
-	--- BLOCK #14 79-82, warpins: 1 ---
-	slot12 = slot11[0]
-	slot12 = slot12.formId
-	--- END OF BLOCK #14 ---
-
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 83-83, warpins: 3 ---
-	slot12 = 0
+	--- BLOCK #15 86-87, warpins: 1 ---
 	--- END OF BLOCK #15 ---
 
-	FLOW; TARGET BLOCK #16
+	slot12 = if not slot12 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #16 84-86, warpins: 2 ---
-	slot13 = slot9[slot12]
+	--- BLOCK #16 88-89, warpins: 1 ---
 	--- END OF BLOCK #16 ---
 
 	slot13 = if not slot13 then
@@ -2686,200 +2577,156 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #17 87-88, warpins: 1 ---
-	slot13 = false
-
-	return slot13
-
+	--- BLOCK #17 90-91, warpins: 1 ---
+	slot15 = not slot14
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #18 89-94, warpins: 3 ---
-	slot11 = slot8.isShiny
-	slot12 = slot8.isBoss
-	slot13 = slot8.isRainbow
-	slot14 = slot8.isBlackRainbow
+	--- BLOCK #18 92-93, warpins: 3 ---
+	slot15 = false
 	--- END OF BLOCK #18 ---
 
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #22
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #19 95-96, warpins: 1 ---
+	--- BLOCK #19 94-94, warpins: 0 ---
+	slot15 = true
 	--- END OF BLOCK #19 ---
 
-	slot12 = if not slot12 then
-	JUMP TO BLOCK #20
-	else
-	JUMP TO BLOCK #22
-	end
+	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 97-98, warpins: 1 ---
+	--- BLOCK #20 95-97, warpins: 3 ---
+	slot16 = slot2.isNormal
 	--- END OF BLOCK #20 ---
 
-	slot13 = if not slot13 then
+	slot16 = if slot16 then
 	JUMP TO BLOCK #21
 	else
-	JUMP TO BLOCK #22
+	JUMP TO BLOCK #23
 	end
 
 
-	--- BLOCK #21 99-100, warpins: 1 ---
-	slot15 = not slot14
+	--- BLOCK #21 98-99, warpins: 1 ---
 	--- END OF BLOCK #21 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	slot15 = if slot15 then
+	JUMP TO BLOCK #22
+	else
+	JUMP TO BLOCK #23
+	end
 
 
-	--- BLOCK #22 101-102, warpins: 3 ---
-	slot15 = false
+	--- BLOCK #22 100-100, warpins: 1 ---
 	--- END OF BLOCK #22 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #24
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #23 103-103, warpins: 0 ---
-	slot15 = true
+	--- BLOCK #23 101-103, warpins: 2 ---
+	slot16 = slot2.isShiny
 	--- END OF BLOCK #23 ---
 
-	FLOW; TARGET BLOCK #24
+	slot16 = if slot16 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #26
+	end
 
 
-	--- BLOCK #24 104-106, warpins: 3 ---
-	slot16 = slot2.isNormal
+	--- BLOCK #24 104-105, warpins: 1 ---
 	--- END OF BLOCK #24 ---
 
-	slot16 = if slot16 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #25
 	else
-	JUMP TO BLOCK #27
+	JUMP TO BLOCK #26
 	end
 
 
-	--- BLOCK #25 107-108, warpins: 1 ---
+	--- BLOCK #25 106-106, warpins: 1 ---
 	--- END OF BLOCK #25 ---
 
-	slot15 = if slot15 then
-	JUMP TO BLOCK #26
-	else
-	JUMP TO BLOCK #27
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #26 109-109, warpins: 1 ---
+	--- BLOCK #26 107-109, warpins: 2 ---
+	slot16 = slot2.isBoss
 	--- END OF BLOCK #26 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #38
+	slot16 = if slot16 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #29
+	end
 
 
-	--- BLOCK #27 110-112, warpins: 2 ---
-	slot16 = slot2.isShiny
+	--- BLOCK #27 110-111, warpins: 1 ---
 	--- END OF BLOCK #27 ---
 
-	slot16 = if slot16 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #28
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #28 113-114, warpins: 1 ---
+	--- BLOCK #28 112-112, warpins: 1 ---
 	--- END OF BLOCK #28 ---
 
-	slot11 = if slot11 then
-	JUMP TO BLOCK #29
-	else
-	JUMP TO BLOCK #30
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #29 115-115, warpins: 1 ---
+	--- BLOCK #29 113-115, warpins: 2 ---
+	slot16 = slot2.isRainbow
 	--- END OF BLOCK #29 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #38
-
-
-	--- BLOCK #30 116-118, warpins: 2 ---
-	slot16 = slot2.isBoss
-	--- END OF BLOCK #30 ---
-
 	slot16 = if slot16 then
-	JUMP TO BLOCK #31
+	JUMP TO BLOCK #30
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #31 119-120, warpins: 1 ---
+	--- BLOCK #30 116-117, warpins: 1 ---
+	--- END OF BLOCK #30 ---
+
+	slot13 = if not slot13 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #34
+	end
+
+
+	--- BLOCK #31 118-119, warpins: 1 ---
 	--- END OF BLOCK #31 ---
 
-	slot12 = if slot12 then
+	slot14 = if slot14 then
 	JUMP TO BLOCK #32
 	else
 	JUMP TO BLOCK #33
 	end
 
 
-	--- BLOCK #32 121-121, warpins: 1 ---
+	--- BLOCK #32 120-120, warpins: 1 ---
 	--- END OF BLOCK #32 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #38
+	UNCONDITIONAL JUMP; TARGET BLOCK #34
 
 
-	--- BLOCK #33 122-124, warpins: 2 ---
-	slot16 = slot2.isRainbow
-	--- END OF BLOCK #33 ---
-
-	slot16 = if slot16 then
-	JUMP TO BLOCK #34
-	else
-	JUMP TO BLOCK #37
-	end
-
-
-	--- BLOCK #34 125-126, warpins: 1 ---
-	--- END OF BLOCK #34 ---
-
-	slot13 = if not slot13 then
-	JUMP TO BLOCK #35
-	else
-	JUMP TO BLOCK #38
-	end
-
-
-	--- BLOCK #35 127-128, warpins: 1 ---
-	--- END OF BLOCK #35 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #36
-	else
-	JUMP TO BLOCK #37
-	end
-
-
-	--- BLOCK #36 129-129, warpins: 1 ---
-	--- END OF BLOCK #36 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #38
-
-
-	--- BLOCK #37 130-131, warpins: 2 ---
+	--- BLOCK #33 121-122, warpins: 2 ---
 	slot16 = false
 
 	return slot16
 
-	--- END OF BLOCK #37 ---
+	--- END OF BLOCK #33 ---
 
-	FLOW; TARGET BLOCK #38
+	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #38 132-169, warpins: 6 ---
+	--- BLOCK #34 123-160, warpins: 6 ---
 	slot16 = Utils
 	slot16 = slot16.isMatchPetFuncType
 	slot18 = slot8.petType
@@ -2916,640 +2763,680 @@ slot24 = function(slot0, slot1, slot2)
 	slot23 = slot23.ENERGY
 	slot20 = slot20(slot22, slot23)
 	slot21 = slot2.isDPS
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #34 ---
 
 	slot21 = if slot21 then
-	JUMP TO BLOCK #39
+	JUMP TO BLOCK #35
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #39 170-171, warpins: 1 ---
-	--- END OF BLOCK #39 ---
+	--- BLOCK #35 161-162, warpins: 1 ---
+	--- END OF BLOCK #35 ---
 
 	slot16 = if slot16 then
-	JUMP TO BLOCK #40
+	JUMP TO BLOCK #36
 	else
-	JUMP TO BLOCK #41
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #40 172-172, warpins: 1 ---
-	--- END OF BLOCK #40 ---
+	--- BLOCK #36 163-163, warpins: 1 ---
+	--- END OF BLOCK #36 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #41 173-175, warpins: 2 ---
+	--- BLOCK #37 164-166, warpins: 2 ---
 	slot21 = slot2.isSup
-	--- END OF BLOCK #41 ---
+	--- END OF BLOCK #37 ---
 
 	slot21 = if slot21 then
-	JUMP TO BLOCK #42
+	JUMP TO BLOCK #38
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #42 176-177, warpins: 1 ---
-	--- END OF BLOCK #42 ---
+	--- BLOCK #38 167-168, warpins: 1 ---
+	--- END OF BLOCK #38 ---
 
 	slot17 = if slot17 then
-	JUMP TO BLOCK #43
+	JUMP TO BLOCK #39
 	else
-	JUMP TO BLOCK #44
+	JUMP TO BLOCK #40
 	end
 
 
-	--- BLOCK #43 178-178, warpins: 1 ---
-	--- END OF BLOCK #43 ---
+	--- BLOCK #39 169-169, warpins: 1 ---
+	--- END OF BLOCK #39 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #44 179-181, warpins: 2 ---
+	--- BLOCK #40 170-172, warpins: 2 ---
 	slot21 = slot2.isHeal
-	--- END OF BLOCK #44 ---
+	--- END OF BLOCK #40 ---
 
 	slot21 = if slot21 then
-	JUMP TO BLOCK #45
+	JUMP TO BLOCK #41
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #45 182-183, warpins: 1 ---
-	--- END OF BLOCK #45 ---
+	--- BLOCK #41 173-174, warpins: 1 ---
+	--- END OF BLOCK #41 ---
 
 	slot18 = if slot18 then
-	JUMP TO BLOCK #46
+	JUMP TO BLOCK #42
 	else
-	JUMP TO BLOCK #47
+	JUMP TO BLOCK #43
 	end
 
 
-	--- BLOCK #46 184-184, warpins: 1 ---
-	--- END OF BLOCK #46 ---
+	--- BLOCK #42 175-175, warpins: 1 ---
+	--- END OF BLOCK #42 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #47 185-187, warpins: 2 ---
+	--- BLOCK #43 176-178, warpins: 2 ---
 	slot21 = slot2.isBreak
-	--- END OF BLOCK #47 ---
+	--- END OF BLOCK #43 ---
 
 	slot21 = if slot21 then
-	JUMP TO BLOCK #48
+	JUMP TO BLOCK #44
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #48 188-189, warpins: 1 ---
-	--- END OF BLOCK #48 ---
+	--- BLOCK #44 179-180, warpins: 1 ---
+	--- END OF BLOCK #44 ---
 
 	slot19 = if slot19 then
-	JUMP TO BLOCK #49
+	JUMP TO BLOCK #45
 	else
-	JUMP TO BLOCK #50
+	JUMP TO BLOCK #46
 	end
 
 
-	--- BLOCK #49 190-190, warpins: 1 ---
-	--- END OF BLOCK #49 ---
+	--- BLOCK #45 181-181, warpins: 1 ---
+	--- END OF BLOCK #45 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #50 191-193, warpins: 2 ---
+	--- BLOCK #46 182-184, warpins: 2 ---
 	slot21 = slot2.isEnergy
-	--- END OF BLOCK #50 ---
+	--- END OF BLOCK #46 ---
 
 	slot21 = if slot21 then
-	JUMP TO BLOCK #51
+	JUMP TO BLOCK #47
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #51 194-195, warpins: 1 ---
-	--- END OF BLOCK #51 ---
+	--- BLOCK #47 185-186, warpins: 1 ---
+	--- END OF BLOCK #47 ---
 
 	slot20 = if slot20 then
-	JUMP TO BLOCK #52
+	JUMP TO BLOCK #48
 	else
-	JUMP TO BLOCK #53
+	JUMP TO BLOCK #49
 	end
 
 
-	--- BLOCK #52 196-196, warpins: 1 ---
-	--- END OF BLOCK #52 ---
+	--- BLOCK #48 187-187, warpins: 1 ---
+	--- END OF BLOCK #48 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #54
+	UNCONDITIONAL JUMP; TARGET BLOCK #50
 
 
-	--- BLOCK #53 197-198, warpins: 2 ---
+	--- BLOCK #49 188-189, warpins: 2 ---
 	slot21 = false
 
 	return slot21
+
+	--- END OF BLOCK #49 ---
+
+	FLOW; TARGET BLOCK #50
+
+
+	--- BLOCK #50 190-192, warpins: 6 ---
+	slot21 = slot1.favoriteType
+	--- END OF BLOCK #50 ---
+
+	slot21 = if not slot21 then
+	JUMP TO BLOCK #51
+	else
+	JUMP TO BLOCK #52
+	end
+
+
+	--- BLOCK #51 193-193, warpins: 1 ---
+	slot21 = 0
+	--- END OF BLOCK #51 ---
+
+	FLOW; TARGET BLOCK #52
+
+
+	--- BLOCK #52 194-199, warpins: 2 ---
+	slot22 = "isFavoriteType"
+	slot23 = slot21
+	slot22 = slot22 .. slot23
+	slot22 = slot2[slot22]
+	--- END OF BLOCK #52 ---
+
+	slot22 = if not slot22 then
+	JUMP TO BLOCK #53
+	else
+	JUMP TO BLOCK #54
+	end
+
+
+	--- BLOCK #53 200-201, warpins: 1 ---
+	slot22 = false
+
+	return slot22
 
 	--- END OF BLOCK #53 ---
 
 	FLOW; TARGET BLOCK #54
 
 
-	--- BLOCK #54 199-201, warpins: 6 ---
-	slot21 = slot1.favoriteType
+	--- BLOCK #54 202-204, warpins: 2 ---
+	slot22 = slot8.rating
 	--- END OF BLOCK #54 ---
 
-	slot21 = if not slot21 then
+	if slot22 ~= 0 then
 	JUMP TO BLOCK #55
 	else
 	JUMP TO BLOCK #56
 	end
 
 
-	--- BLOCK #55 202-202, warpins: 1 ---
-	slot21 = 0
+	--- BLOCK #55 205-206, warpins: 1 ---
+	slot22 = false
 	--- END OF BLOCK #55 ---
 
-	FLOW; TARGET BLOCK #56
+	UNCONDITIONAL JUMP; TARGET BLOCK #57
 
 
-	--- BLOCK #56 203-208, warpins: 2 ---
-	slot22 = "isFavoriteType"
-	slot23 = slot21
-	slot22 = slot22 .. slot23
-	slot22 = slot2[slot22]
+	--- BLOCK #56 207-207, warpins: 1 ---
+	slot22 = true
 	--- END OF BLOCK #56 ---
 
-	slot22 = if not slot22 then
-	JUMP TO BLOCK #57
-	else
-	JUMP TO BLOCK #58
-	end
+	FLOW; TARGET BLOCK #57
 
 
-	--- BLOCK #57 209-210, warpins: 1 ---
-	slot22 = false
-
-	return slot22
-
+	--- BLOCK #57 208-210, warpins: 2 ---
+	slot23 = slot8.rating
 	--- END OF BLOCK #57 ---
 
-	FLOW; TARGET BLOCK #58
+	if slot23 ~= 1 then
+	JUMP TO BLOCK #58
+	else
+	JUMP TO BLOCK #59
+	end
 
 
-	--- BLOCK #58 211-213, warpins: 2 ---
-	slot22 = slot8.rating
+	--- BLOCK #58 211-212, warpins: 1 ---
+	slot23 = false
 	--- END OF BLOCK #58 ---
 
-	if slot22 ~= 0 then
-	JUMP TO BLOCK #59
-	else
-	JUMP TO BLOCK #60
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #60
 
 
-	--- BLOCK #59 214-215, warpins: 1 ---
-	slot22 = false
+	--- BLOCK #59 213-213, warpins: 1 ---
+	slot23 = true
 	--- END OF BLOCK #59 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #61
+	FLOW; TARGET BLOCK #60
 
 
-	--- BLOCK #60 216-216, warpins: 1 ---
-	slot22 = true
+	--- BLOCK #60 214-216, warpins: 2 ---
+	slot24 = slot8.rating
 	--- END OF BLOCK #60 ---
 
-	FLOW; TARGET BLOCK #61
+	if slot24 ~= 2 then
+	JUMP TO BLOCK #61
+	else
+	JUMP TO BLOCK #62
+	end
 
 
-	--- BLOCK #61 217-219, warpins: 2 ---
-	slot23 = slot8.rating
+	--- BLOCK #61 217-218, warpins: 1 ---
+	slot24 = false
 	--- END OF BLOCK #61 ---
 
-	if slot23 ~= 1 then
-	JUMP TO BLOCK #62
-	else
-	JUMP TO BLOCK #63
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #63
 
 
-	--- BLOCK #62 220-221, warpins: 1 ---
-	slot23 = false
+	--- BLOCK #62 219-219, warpins: 1 ---
+	slot24 = true
 	--- END OF BLOCK #62 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #64
+	FLOW; TARGET BLOCK #63
 
 
-	--- BLOCK #63 222-222, warpins: 1 ---
-	slot23 = true
+	--- BLOCK #63 220-222, warpins: 2 ---
+	slot25 = slot8.rating
 	--- END OF BLOCK #63 ---
 
-	FLOW; TARGET BLOCK #64
-
-
-	--- BLOCK #64 223-225, warpins: 2 ---
-	slot24 = slot8.rating
-	--- END OF BLOCK #64 ---
-
-	if slot24 ~= 2 then
-	JUMP TO BLOCK #65
+	if slot25 ~= 3 then
+	JUMP TO BLOCK #64
 	else
-	JUMP TO BLOCK #66
+	JUMP TO BLOCK #65
 	end
 
 
-	--- BLOCK #65 226-227, warpins: 1 ---
-	slot24 = false
+	--- BLOCK #64 223-224, warpins: 1 ---
+	slot25 = false
+	--- END OF BLOCK #64 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #66
+
+
+	--- BLOCK #65 225-225, warpins: 1 ---
+	slot25 = true
 	--- END OF BLOCK #65 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #67
+	FLOW; TARGET BLOCK #66
 
 
-	--- BLOCK #66 228-228, warpins: 1 ---
-	slot24 = true
+	--- BLOCK #66 226-228, warpins: 2 ---
+	slot26 = slot2.isRating1
 	--- END OF BLOCK #66 ---
 
-	FLOW; TARGET BLOCK #67
+	slot26 = if slot26 then
+	JUMP TO BLOCK #67
+	else
+	JUMP TO BLOCK #69
+	end
 
 
-	--- BLOCK #67 229-231, warpins: 2 ---
-	slot25 = slot8.rating
+	--- BLOCK #67 229-230, warpins: 1 ---
 	--- END OF BLOCK #67 ---
 
-	if slot25 ~= 3 then
+	slot22 = if slot22 then
 	JUMP TO BLOCK #68
 	else
 	JUMP TO BLOCK #69
 	end
 
 
-	--- BLOCK #68 232-233, warpins: 1 ---
-	slot25 = false
+	--- BLOCK #68 231-231, warpins: 1 ---
 	--- END OF BLOCK #68 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #70
+	UNCONDITIONAL JUMP; TARGET BLOCK #79
 
 
-	--- BLOCK #69 234-234, warpins: 1 ---
-	slot25 = true
+	--- BLOCK #69 232-234, warpins: 2 ---
+	slot26 = slot2.isRating2
 	--- END OF BLOCK #69 ---
 
-	FLOW; TARGET BLOCK #70
+	slot26 = if slot26 then
+	JUMP TO BLOCK #70
+	else
+	JUMP TO BLOCK #72
+	end
 
 
-	--- BLOCK #70 235-237, warpins: 2 ---
-	slot26 = slot2.isRating1
+	--- BLOCK #70 235-236, warpins: 1 ---
 	--- END OF BLOCK #70 ---
 
-	slot26 = if slot26 then
+	slot23 = if slot23 then
 	JUMP TO BLOCK #71
 	else
-	JUMP TO BLOCK #73
+	JUMP TO BLOCK #72
 	end
 
 
-	--- BLOCK #71 238-239, warpins: 1 ---
+	--- BLOCK #71 237-237, warpins: 1 ---
 	--- END OF BLOCK #71 ---
 
-	slot22 = if slot22 then
-	JUMP TO BLOCK #72
-	else
-	JUMP TO BLOCK #73
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #79
 
 
-	--- BLOCK #72 240-240, warpins: 1 ---
+	--- BLOCK #72 238-240, warpins: 2 ---
+	slot26 = slot2.isRating3
 	--- END OF BLOCK #72 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #83
+	slot26 = if slot26 then
+	JUMP TO BLOCK #73
+	else
+	JUMP TO BLOCK #75
+	end
 
 
-	--- BLOCK #73 241-243, warpins: 2 ---
-	slot26 = slot2.isRating2
+	--- BLOCK #73 241-242, warpins: 1 ---
 	--- END OF BLOCK #73 ---
 
-	slot26 = if slot26 then
+	slot24 = if slot24 then
 	JUMP TO BLOCK #74
 	else
-	JUMP TO BLOCK #76
+	JUMP TO BLOCK #75
 	end
 
 
-	--- BLOCK #74 244-245, warpins: 1 ---
+	--- BLOCK #74 243-243, warpins: 1 ---
 	--- END OF BLOCK #74 ---
 
-	slot23 = if slot23 then
-	JUMP TO BLOCK #75
-	else
-	JUMP TO BLOCK #76
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #79
 
 
-	--- BLOCK #75 246-246, warpins: 1 ---
+	--- BLOCK #75 244-246, warpins: 2 ---
+	slot26 = slot2.isRating4
 	--- END OF BLOCK #75 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #83
+	slot26 = if slot26 then
+	JUMP TO BLOCK #76
+	else
+	JUMP TO BLOCK #78
+	end
 
 
-	--- BLOCK #76 247-249, warpins: 2 ---
-	slot26 = slot2.isRating3
+	--- BLOCK #76 247-248, warpins: 1 ---
 	--- END OF BLOCK #76 ---
 
-	slot26 = if slot26 then
+	slot25 = if slot25 then
 	JUMP TO BLOCK #77
 	else
-	JUMP TO BLOCK #79
+	JUMP TO BLOCK #78
 	end
 
 
-	--- BLOCK #77 250-251, warpins: 1 ---
+	--- BLOCK #77 249-249, warpins: 1 ---
 	--- END OF BLOCK #77 ---
 
-	slot24 = if slot24 then
-	JUMP TO BLOCK #78
-	else
-	JUMP TO BLOCK #79
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #79
 
 
-	--- BLOCK #78 252-252, warpins: 1 ---
+	--- BLOCK #78 250-251, warpins: 2 ---
+	slot26 = false
+
+	return slot26
+
 	--- END OF BLOCK #78 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #83
+	FLOW; TARGET BLOCK #79
 
 
-	--- BLOCK #79 253-255, warpins: 2 ---
-	slot26 = slot2.isRating4
+	--- BLOCK #79 252-258, warpins: 5 ---
+	slot26 = slot8.inBattle
+	slot27 = not slot26
+	slot28 = slot8.inExplore
+	slot29 = slot8.isPutInHomeland
+	slot30 = slot2.isInBattle
 	--- END OF BLOCK #79 ---
 
-	slot26 = if slot26 then
+	slot30 = if slot30 then
 	JUMP TO BLOCK #80
 	else
 	JUMP TO BLOCK #82
 	end
 
 
-	--- BLOCK #80 256-257, warpins: 1 ---
+	--- BLOCK #80 259-260, warpins: 1 ---
 	--- END OF BLOCK #80 ---
 
-	slot25 = if slot25 then
+	slot26 = if slot26 then
 	JUMP TO BLOCK #81
 	else
 	JUMP TO BLOCK #82
 	end
 
 
-	--- BLOCK #81 258-258, warpins: 1 ---
+	--- BLOCK #81 261-261, warpins: 1 ---
 	--- END OF BLOCK #81 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #83
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #82 259-260, warpins: 2 ---
-	slot26 = false
-
-	return slot26
-
+	--- BLOCK #82 262-264, warpins: 2 ---
+	slot30 = slot2.isNotInBattle
 	--- END OF BLOCK #82 ---
 
-	FLOW; TARGET BLOCK #83
+	slot30 = if slot30 then
+	JUMP TO BLOCK #83
+	else
+	JUMP TO BLOCK #85
+	end
 
 
-	--- BLOCK #83 261-267, warpins: 5 ---
-	slot26 = slot8.inBattle
-	slot27 = not slot26
-	slot28 = slot8.inExplore
-	slot29 = slot8.isPutInHomeland
-	slot30 = slot2.isInBattle
+	--- BLOCK #83 265-266, warpins: 1 ---
 	--- END OF BLOCK #83 ---
 
-	slot30 = if slot30 then
+	slot27 = if slot27 then
 	JUMP TO BLOCK #84
 	else
-	JUMP TO BLOCK #86
+	JUMP TO BLOCK #85
 	end
 
 
-	--- BLOCK #84 268-269, warpins: 1 ---
+	--- BLOCK #84 267-267, warpins: 1 ---
 	--- END OF BLOCK #84 ---
 
-	slot26 = if slot26 then
-	JUMP TO BLOCK #85
-	else
-	JUMP TO BLOCK #86
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #85 270-270, warpins: 1 ---
+	--- BLOCK #85 268-270, warpins: 2 ---
+	slot30 = slot2.isInExplore
 	--- END OF BLOCK #85 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #96
+	slot30 = if slot30 then
+	JUMP TO BLOCK #86
+	else
+	JUMP TO BLOCK #88
+	end
 
 
-	--- BLOCK #86 271-273, warpins: 2 ---
-	slot30 = slot2.isNotInBattle
+	--- BLOCK #86 271-272, warpins: 1 ---
 	--- END OF BLOCK #86 ---
 
-	slot30 = if slot30 then
+	slot28 = if slot28 then
 	JUMP TO BLOCK #87
 	else
-	JUMP TO BLOCK #89
+	JUMP TO BLOCK #88
 	end
 
 
-	--- BLOCK #87 274-275, warpins: 1 ---
+	--- BLOCK #87 273-273, warpins: 1 ---
 	--- END OF BLOCK #87 ---
 
-	slot27 = if slot27 then
-	JUMP TO BLOCK #88
-	else
-	JUMP TO BLOCK #89
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #88 276-276, warpins: 1 ---
+	--- BLOCK #88 274-276, warpins: 2 ---
+	slot30 = slot2.isInHomeland
 	--- END OF BLOCK #88 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #96
+	slot30 = if slot30 then
+	JUMP TO BLOCK #89
+	else
+	JUMP TO BLOCK #91
+	end
 
 
-	--- BLOCK #89 277-279, warpins: 2 ---
-	slot30 = slot2.isInExplore
+	--- BLOCK #89 277-278, warpins: 1 ---
 	--- END OF BLOCK #89 ---
 
-	slot30 = if slot30 then
+	slot29 = if slot29 then
 	JUMP TO BLOCK #90
 	else
-	JUMP TO BLOCK #92
+	JUMP TO BLOCK #91
 	end
 
 
-	--- BLOCK #90 280-281, warpins: 1 ---
+	--- BLOCK #90 279-279, warpins: 1 ---
 	--- END OF BLOCK #90 ---
 
-	slot28 = if slot28 then
-	JUMP TO BLOCK #91
-	else
-	JUMP TO BLOCK #92
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #92
 
 
-	--- BLOCK #91 282-282, warpins: 1 ---
-	--- END OF BLOCK #91 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #96
-
-
-	--- BLOCK #92 283-285, warpins: 2 ---
-	slot30 = slot2.isInHomeland
-	--- END OF BLOCK #92 ---
-
-	slot30 = if slot30 then
-	JUMP TO BLOCK #93
-	else
-	JUMP TO BLOCK #95
-	end
-
-
-	--- BLOCK #93 286-287, warpins: 1 ---
-	--- END OF BLOCK #93 ---
-
-	slot29 = if slot29 then
-	JUMP TO BLOCK #94
-	else
-	JUMP TO BLOCK #95
-	end
-
-
-	--- BLOCK #94 288-288, warpins: 1 ---
-	--- END OF BLOCK #94 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #96
-
-
-	--- BLOCK #95 289-290, warpins: 2 ---
+	--- BLOCK #91 280-281, warpins: 2 ---
 	slot30 = false
 
 	return slot30
 
-	--- END OF BLOCK #95 ---
+	--- END OF BLOCK #91 ---
 
-	FLOW; TARGET BLOCK #96
+	FLOW; TARGET BLOCK #92
 
 
-	--- BLOCK #96 291-294, warpins: 5 ---
+	--- BLOCK #92 282-285, warpins: 5 ---
 	slot30 = {}
 	slot31 = slot2.isClimb
-	--- END OF BLOCK #96 ---
+	--- END OF BLOCK #92 ---
 
 	slot31 = if slot31 then
-	JUMP TO BLOCK #97
+	JUMP TO BLOCK #93
 	else
-	JUMP TO BLOCK #98
+	JUMP TO BLOCK #94
 	end
 
 
-	--- BLOCK #97 295-296, warpins: 1 ---
+	--- BLOCK #93 286-287, warpins: 1 ---
 	slot31 = 1
-	--- END OF BLOCK #97 ---
+	--- END OF BLOCK #93 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #99
+	UNCONDITIONAL JUMP; TARGET BLOCK #95
 
 
-	--- BLOCK #98 297-297, warpins: 1 ---
+	--- BLOCK #94 288-288, warpins: 1 ---
 	slot31 = nil
-	--- END OF BLOCK #98 ---
+	--- END OF BLOCK #94 ---
 
-	FLOW; TARGET BLOCK #99
+	FLOW; TARGET BLOCK #95
 
 
-	--- BLOCK #99 298-301, warpins: 2 ---
+	--- BLOCK #95 289-292, warpins: 2 ---
 	slot30.isClimb = slot31
 	slot31 = slot2.isGlide
-	--- END OF BLOCK #99 ---
+	--- END OF BLOCK #95 ---
 
 	slot31 = if slot31 then
-	JUMP TO BLOCK #100
+	JUMP TO BLOCK #96
 	else
-	JUMP TO BLOCK #101
+	JUMP TO BLOCK #97
 	end
 
 
-	--- BLOCK #100 302-303, warpins: 1 ---
+	--- BLOCK #96 293-294, warpins: 1 ---
 	slot31 = 2
-	--- END OF BLOCK #100 ---
+	--- END OF BLOCK #96 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #102
+	UNCONDITIONAL JUMP; TARGET BLOCK #98
 
 
-	--- BLOCK #101 304-304, warpins: 1 ---
+	--- BLOCK #97 295-295, warpins: 1 ---
 	slot31 = nil
-	--- END OF BLOCK #101 ---
+	--- END OF BLOCK #97 ---
 
-	FLOW; TARGET BLOCK #102
+	FLOW; TARGET BLOCK #98
 
 
-	--- BLOCK #102 305-308, warpins: 2 ---
+	--- BLOCK #98 296-299, warpins: 2 ---
 	slot30.isGlide = slot31
 	slot31 = slot2.isSwim
-	--- END OF BLOCK #102 ---
+	--- END OF BLOCK #98 ---
 
 	slot31 = if slot31 then
-	JUMP TO BLOCK #103
+	JUMP TO BLOCK #99
 	else
-	JUMP TO BLOCK #104
+	JUMP TO BLOCK #100
 	end
 
 
-	--- BLOCK #103 309-310, warpins: 1 ---
+	--- BLOCK #99 300-301, warpins: 1 ---
 	slot31 = 3
-	--- END OF BLOCK #103 ---
+	--- END OF BLOCK #99 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #105
+	UNCONDITIONAL JUMP; TARGET BLOCK #101
 
 
-	--- BLOCK #104 311-311, warpins: 1 ---
+	--- BLOCK #100 302-302, warpins: 1 ---
 	slot31 = nil
-	--- END OF BLOCK #104 ---
+	--- END OF BLOCK #100 ---
 
-	FLOW; TARGET BLOCK #105
+	FLOW; TARGET BLOCK #101
 
 
-	--- BLOCK #105 312-315, warpins: 2 ---
+	--- BLOCK #101 303-306, warpins: 2 ---
 	slot30.isSwim = slot31
 	slot31 = slot2.isNone
-	--- END OF BLOCK #105 ---
+	--- END OF BLOCK #101 ---
 
 	slot31 = if slot31 then
-	JUMP TO BLOCK #106
+	JUMP TO BLOCK #102
 	else
-	JUMP TO BLOCK #107
+	JUMP TO BLOCK #103
 	end
 
 
-	--- BLOCK #106 316-317, warpins: 1 ---
+	--- BLOCK #102 307-308, warpins: 1 ---
 	slot31 = 4
+	--- END OF BLOCK #102 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #104
+
+
+	--- BLOCK #103 309-309, warpins: 1 ---
+	slot31 = nil
+	--- END OF BLOCK #103 ---
+
+	FLOW; TARGET BLOCK #104
+
+
+	--- BLOCK #104 310-315, warpins: 2 ---
+	slot30.isNone = slot31
+	slot31 = {}
+	slot32 = slot8.exploreSkillsLevel
+	slot32 = slot32.canClimb
+	--- END OF BLOCK #104 ---
+
+	slot32 = if slot32 then
+	JUMP TO BLOCK #105
+	else
+	JUMP TO BLOCK #106
+	end
+
+
+	--- BLOCK #105 316-317, warpins: 1 ---
+	slot32 = 1
+	slot31.isClimb = slot32
+	--- END OF BLOCK #105 ---
+
+	FLOW; TARGET BLOCK #106
+
+
+	--- BLOCK #106 318-321, warpins: 2 ---
+	slot32 = slot8.exploreSkillsLevel
+	slot32 = slot32.canGlide
 	--- END OF BLOCK #106 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #108
+	slot32 = if slot32 then
+	JUMP TO BLOCK #107
+	else
+	JUMP TO BLOCK #108
+	end
 
 
-	--- BLOCK #107 318-318, warpins: 1 ---
-	slot31 = nil
+	--- BLOCK #107 322-323, warpins: 1 ---
+	slot32 = 2
+	slot31.isGlide = slot32
 	--- END OF BLOCK #107 ---
 
 	FLOW; TARGET BLOCK #108
 
 
-	--- BLOCK #108 319-324, warpins: 2 ---
-	slot30.isNone = slot31
-	slot31 = {}
+	--- BLOCK #108 324-327, warpins: 2 ---
 	slot32 = slot8.exploreSkillsLevel
-	slot32 = slot32.canClimb
+	slot32 = slot32.canSwim
 	--- END OF BLOCK #108 ---
 
 	slot32 = if slot32 then
@@ -3559,1275 +3446,1235 @@ slot24 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #109 325-326, warpins: 1 ---
-	slot32 = 1
-	slot31.isClimb = slot32
+	--- BLOCK #109 328-329, warpins: 1 ---
+	slot32 = 3
+	slot31.isSwim = slot32
 	--- END OF BLOCK #109 ---
 
 	FLOW; TARGET BLOCK #110
 
 
-	--- BLOCK #110 327-330, warpins: 2 ---
+	--- BLOCK #110 330-333, warpins: 2 ---
 	slot32 = slot8.exploreSkillsLevel
-	slot32 = slot32.canGlide
+	slot32 = slot32.canClimb
 	--- END OF BLOCK #110 ---
 
-	slot32 = if slot32 then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #111
 	else
-	JUMP TO BLOCK #112
+	JUMP TO BLOCK #114
 	end
 
 
-	--- BLOCK #111 331-332, warpins: 1 ---
-	slot32 = 2
-	slot31.isGlide = slot32
+	--- BLOCK #111 334-337, warpins: 1 ---
+	slot32 = slot8.exploreSkillsLevel
+	slot32 = slot32.canGlide
 	--- END OF BLOCK #111 ---
 
-	FLOW; TARGET BLOCK #112
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #112
+	else
+	JUMP TO BLOCK #114
+	end
 
 
-	--- BLOCK #112 333-336, warpins: 2 ---
+	--- BLOCK #112 338-341, warpins: 1 ---
 	slot32 = slot8.exploreSkillsLevel
 	slot32 = slot32.canSwim
 	--- END OF BLOCK #112 ---
 
-	slot32 = if slot32 then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #113
 	else
 	JUMP TO BLOCK #114
 	end
 
 
-	--- BLOCK #113 337-338, warpins: 1 ---
-	slot32 = 3
-	slot31.isSwim = slot32
+	--- BLOCK #113 342-343, warpins: 1 ---
+	slot32 = 4
+	slot31.isNone = slot32
 	--- END OF BLOCK #113 ---
 
 	FLOW; TARGET BLOCK #114
 
 
-	--- BLOCK #114 339-342, warpins: 2 ---
-	slot32 = slot8.exploreSkillsLevel
-	slot32 = slot32.canClimb
+	--- BLOCK #114 344-346, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #114 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #115
 	else
-	JUMP TO BLOCK #118
+	JUMP TO BLOCK #119
 	end
 
 
-	--- BLOCK #115 343-346, warpins: 1 ---
-	slot32 = slot8.exploreSkillsLevel
-	slot32 = slot32.canGlide
+	--- BLOCK #115 347-349, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #115 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #116
 	else
-	JUMP TO BLOCK #118
+	JUMP TO BLOCK #119
 	end
 
 
-	--- BLOCK #116 347-350, warpins: 1 ---
-	slot32 = slot8.exploreSkillsLevel
-	slot32 = slot32.canSwim
+	--- BLOCK #116 350-352, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #116 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #117
 	else
-	JUMP TO BLOCK #118
+	JUMP TO BLOCK #119
 	end
 
 
-	--- BLOCK #117 351-352, warpins: 1 ---
-	slot32 = 4
-	slot31.isNone = slot32
+	--- BLOCK #117 353-355, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #117 ---
 
-	FLOW; TARGET BLOCK #118
+	if slot32 == nil then
+	JUMP TO BLOCK #118
+	else
+	JUMP TO BLOCK #119
+	end
 
 
-	--- BLOCK #118 353-355, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #118 356-358, warpins: 1 ---
+	slot32 = true
+
+	return slot32
+
 	--- END OF BLOCK #118 ---
 
-	if slot32 == nil then
-	JUMP TO BLOCK #119
-	else
-	JUMP TO BLOCK #123
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #119 356-358, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #119 359-361, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #119 ---
 
-	if slot32 == nil then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #120
 	else
-	JUMP TO BLOCK #123
+	JUMP TO BLOCK #125
 	end
 
 
-	--- BLOCK #120 359-361, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #120 362-364, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #120 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #121
 	else
-	JUMP TO BLOCK #123
+	JUMP TO BLOCK #125
 	end
 
 
-	--- BLOCK #121 362-364, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #121 365-367, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #121 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #122
 	else
-	JUMP TO BLOCK #123
+	JUMP TO BLOCK #125
 	end
 
 
-	--- BLOCK #122 365-367, warpins: 1 ---
-	slot32 = true
+	--- BLOCK #122 368-370, warpins: 1 ---
+	slot32 = slot30.isNone
+	--- END OF BLOCK #122 ---
+
+	if slot32 == nil then
+	JUMP TO BLOCK #123
+	else
+	JUMP TO BLOCK #125
+	end
+
+
+	--- BLOCK #123 371-373, warpins: 1 ---
+	slot32 = slot31.isClimb
+	--- END OF BLOCK #123 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #124
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #124 374-376, warpins: 1 ---
+	slot32 = false
 
 	return slot32
 
-	--- END OF BLOCK #122 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
-
-
-	--- BLOCK #123 368-370, warpins: 4 ---
-	slot32 = slot30.isClimb
-	--- END OF BLOCK #123 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #124
-	else
-	JUMP TO BLOCK #129
-	end
-
-
-	--- BLOCK #124 371-373, warpins: 1 ---
-	slot32 = slot30.isGlide
 	--- END OF BLOCK #124 ---
 
-	if slot32 == nil then
-	JUMP TO BLOCK #125
-	else
-	JUMP TO BLOCK #129
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #125 374-376, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #125 377-379, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #125 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #126
 	else
-	JUMP TO BLOCK #129
+	JUMP TO BLOCK #131
 	end
 
 
-	--- BLOCK #126 377-379, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #126 380-382, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #126 ---
 
-	if slot32 == nil then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #127
 	else
-	JUMP TO BLOCK #129
+	JUMP TO BLOCK #131
 	end
 
 
-	--- BLOCK #127 380-382, warpins: 1 ---
-	slot32 = slot31.isClimb
+	--- BLOCK #127 383-385, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #127 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #128
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #131
 	end
 
 
-	--- BLOCK #128 383-385, warpins: 1 ---
+	--- BLOCK #128 386-388, warpins: 1 ---
+	slot32 = slot30.isNone
+	--- END OF BLOCK #128 ---
+
+	if slot32 == nil then
+	JUMP TO BLOCK #129
+	else
+	JUMP TO BLOCK #131
+	end
+
+
+	--- BLOCK #129 389-391, warpins: 1 ---
+	slot32 = slot31.isGlide
+	--- END OF BLOCK #129 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #130
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #130 392-394, warpins: 1 ---
 	slot32 = false
 
 	return slot32
 
-	--- END OF BLOCK #128 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
-
-
-	--- BLOCK #129 386-388, warpins: 4 ---
-	slot32 = slot30.isClimb
-	--- END OF BLOCK #129 ---
-
-	if slot32 == nil then
-	JUMP TO BLOCK #130
-	else
-	JUMP TO BLOCK #135
-	end
-
-
-	--- BLOCK #130 389-391, warpins: 1 ---
-	slot32 = slot30.isGlide
 	--- END OF BLOCK #130 ---
 
-	if slot32 ~= nil then
-	JUMP TO BLOCK #131
-	else
-	JUMP TO BLOCK #135
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #131 392-394, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #131 395-397, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #131 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #132
 	else
-	JUMP TO BLOCK #135
+	JUMP TO BLOCK #137
 	end
 
 
-	--- BLOCK #132 395-397, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #132 398-400, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #132 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #133
 	else
-	JUMP TO BLOCK #135
+	JUMP TO BLOCK #137
 	end
 
 
-	--- BLOCK #133 398-400, warpins: 1 ---
-	slot32 = slot31.isGlide
+	--- BLOCK #133 401-403, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #133 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #134
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #137
 	end
 
 
-	--- BLOCK #134 401-403, warpins: 1 ---
+	--- BLOCK #134 404-406, warpins: 1 ---
+	slot32 = slot30.isNone
+	--- END OF BLOCK #134 ---
+
+	if slot32 == nil then
+	JUMP TO BLOCK #135
+	else
+	JUMP TO BLOCK #137
+	end
+
+
+	--- BLOCK #135 407-409, warpins: 1 ---
+	slot32 = slot31.isSwim
+	--- END OF BLOCK #135 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #136
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #136 410-412, warpins: 1 ---
 	slot32 = false
 
 	return slot32
 
-	--- END OF BLOCK #134 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
-
-
-	--- BLOCK #135 404-406, warpins: 4 ---
-	slot32 = slot30.isClimb
-	--- END OF BLOCK #135 ---
-
-	if slot32 == nil then
-	JUMP TO BLOCK #136
-	else
-	JUMP TO BLOCK #141
-	end
-
-
-	--- BLOCK #136 407-409, warpins: 1 ---
-	slot32 = slot30.isGlide
 	--- END OF BLOCK #136 ---
 
-	if slot32 == nil then
-	JUMP TO BLOCK #137
-	else
-	JUMP TO BLOCK #141
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #137 410-412, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #137 413-415, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #137 ---
 
-	if slot32 ~= nil then
+	if slot32 == nil then
 	JUMP TO BLOCK #138
 	else
-	JUMP TO BLOCK #141
+	JUMP TO BLOCK #143
 	end
 
 
-	--- BLOCK #138 413-415, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #138 416-418, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #138 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #139
 	else
-	JUMP TO BLOCK #141
+	JUMP TO BLOCK #143
 	end
 
 
-	--- BLOCK #139 416-418, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #139 419-421, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #139 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #140
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #143
 	end
 
 
-	--- BLOCK #140 419-421, warpins: 1 ---
+	--- BLOCK #140 422-424, warpins: 1 ---
+	slot32 = slot30.isNone
+	--- END OF BLOCK #140 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #141
+	else
+	JUMP TO BLOCK #143
+	end
+
+
+	--- BLOCK #141 425-427, warpins: 1 ---
+	slot32 = slot31.isNone
+	--- END OF BLOCK #141 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #142
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #142 428-430, warpins: 1 ---
 	slot32 = false
 
 	return slot32
 
-	--- END OF BLOCK #140 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
-
-
-	--- BLOCK #141 422-424, warpins: 4 ---
-	slot32 = slot30.isClimb
-	--- END OF BLOCK #141 ---
-
-	if slot32 == nil then
-	JUMP TO BLOCK #142
-	else
-	JUMP TO BLOCK #147
-	end
-
-
-	--- BLOCK #142 425-427, warpins: 1 ---
-	slot32 = slot30.isGlide
 	--- END OF BLOCK #142 ---
 
-	if slot32 == nil then
-	JUMP TO BLOCK #143
-	else
-	JUMP TO BLOCK #147
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #143 428-430, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #143 431-433, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #143 ---
 
-	if slot32 == nil then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #144
 	else
-	JUMP TO BLOCK #147
+	JUMP TO BLOCK #150
 	end
 
 
-	--- BLOCK #144 431-433, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #144 434-436, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #144 ---
 
 	if slot32 ~= nil then
 	JUMP TO BLOCK #145
 	else
-	JUMP TO BLOCK #147
+	JUMP TO BLOCK #150
 	end
 
 
-	--- BLOCK #145 434-436, warpins: 1 ---
-	slot32 = slot31.isNone
+	--- BLOCK #145 437-439, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #145 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #146
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #150
 	end
 
 
-	--- BLOCK #146 437-439, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #146 440-442, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #146 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 == nil then
+	JUMP TO BLOCK #147
+	else
+	JUMP TO BLOCK #150
+	end
 
 
-	--- BLOCK #147 440-442, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #147 443-445, warpins: 1 ---
+	slot32 = slot31.isClimb
 	--- END OF BLOCK #147 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #148
 	else
-	JUMP TO BLOCK #154
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #148 443-445, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #148 446-448, warpins: 1 ---
+	slot32 = slot31.isGlide
 	--- END OF BLOCK #148 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #149
 	else
-	JUMP TO BLOCK #154
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #149 446-448, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #149 449-451, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
 	--- END OF BLOCK #149 ---
 
-	if slot32 == nil then
-	JUMP TO BLOCK #150
-	else
-	JUMP TO BLOCK #154
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #150 449-451, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #150 452-454, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #150 ---
 
-	if slot32 == nil then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #151
 	else
-	JUMP TO BLOCK #154
+	JUMP TO BLOCK #157
 	end
 
 
-	--- BLOCK #151 452-454, warpins: 1 ---
-	slot32 = slot31.isClimb
+	--- BLOCK #151 455-457, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #151 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #152
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #157
 	end
 
 
-	--- BLOCK #152 455-457, warpins: 1 ---
-	slot32 = slot31.isGlide
+	--- BLOCK #152 458-460, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #152 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #153
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #157
 	end
 
 
-	--- BLOCK #153 458-460, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #153 461-463, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #153 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 == nil then
+	JUMP TO BLOCK #154
+	else
+	JUMP TO BLOCK #157
+	end
 
 
-	--- BLOCK #154 461-463, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #154 464-466, warpins: 1 ---
+	slot32 = slot31.isClimb
 	--- END OF BLOCK #154 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #155
 	else
-	JUMP TO BLOCK #161
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #155 464-466, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #155 467-469, warpins: 1 ---
+	slot32 = slot31.isSwim
 	--- END OF BLOCK #155 ---
 
-	if slot32 == nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #156
 	else
-	JUMP TO BLOCK #161
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #156 467-469, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #156 470-472, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
 	--- END OF BLOCK #156 ---
 
-	if slot32 ~= nil then
-	JUMP TO BLOCK #157
-	else
-	JUMP TO BLOCK #161
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #157 470-472, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #157 473-475, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #157 ---
 
-	if slot32 == nil then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #158
 	else
-	JUMP TO BLOCK #161
+	JUMP TO BLOCK #164
 	end
 
 
-	--- BLOCK #158 473-475, warpins: 1 ---
-	slot32 = slot31.isClimb
+	--- BLOCK #158 476-478, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #158 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #159
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #164
 	end
 
 
-	--- BLOCK #159 476-478, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #159 479-481, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #159 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #160
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #164
 	end
 
 
-	--- BLOCK #160 479-481, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #160 482-484, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #160 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 ~= nil then
+	JUMP TO BLOCK #161
+	else
+	JUMP TO BLOCK #164
+	end
 
 
-	--- BLOCK #161 482-484, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #161 485-487, warpins: 1 ---
+	slot32 = slot31.isClimb
 	--- END OF BLOCK #161 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #162
 	else
-	JUMP TO BLOCK #168
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #162 485-487, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #162 488-490, warpins: 1 ---
+	slot32 = slot31.isNone
 	--- END OF BLOCK #162 ---
 
-	if slot32 == nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #163
 	else
-	JUMP TO BLOCK #168
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #163 488-490, warpins: 1 ---
-	slot32 = slot30.isSwim
-	--- END OF BLOCK #163 ---
-
-	if slot32 == nil then
-	JUMP TO BLOCK #164
-	else
-	JUMP TO BLOCK #168
-	end
-
-
-	--- BLOCK #164 491-493, warpins: 1 ---
-	slot32 = slot30.isNone
-	--- END OF BLOCK #164 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #165
-	else
-	JUMP TO BLOCK #168
-	end
-
-
-	--- BLOCK #165 494-496, warpins: 1 ---
-	slot32 = slot31.isClimb
-	--- END OF BLOCK #165 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #166
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #166 497-499, warpins: 1 ---
-	slot32 = slot31.isNone
-	--- END OF BLOCK #166 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #167
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #167 500-502, warpins: 1 ---
+	--- BLOCK #163 491-493, warpins: 1 ---
 	slot32 = false
 
 	return slot32
 
-	--- END OF BLOCK #167 ---
+	--- END OF BLOCK #163 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #168 503-505, warpins: 4 ---
+	--- BLOCK #164 494-496, warpins: 4 ---
 	slot32 = slot30.isClimb
-	--- END OF BLOCK #168 ---
+	--- END OF BLOCK #164 ---
 
 	if slot32 == nil then
+	JUMP TO BLOCK #165
+	else
+	JUMP TO BLOCK #171
+	end
+
+
+	--- BLOCK #165 497-499, warpins: 1 ---
+	slot32 = slot30.isGlide
+	--- END OF BLOCK #165 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #166
+	else
+	JUMP TO BLOCK #171
+	end
+
+
+	--- BLOCK #166 500-502, warpins: 1 ---
+	slot32 = slot30.isSwim
+	--- END OF BLOCK #166 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #167
+	else
+	JUMP TO BLOCK #171
+	end
+
+
+	--- BLOCK #167 503-505, warpins: 1 ---
+	slot32 = slot30.isNone
+	--- END OF BLOCK #167 ---
+
+	if slot32 == nil then
+	JUMP TO BLOCK #168
+	else
+	JUMP TO BLOCK #171
+	end
+
+
+	--- BLOCK #168 506-508, warpins: 1 ---
+	slot32 = slot31.isGlide
+	--- END OF BLOCK #168 ---
+
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #169
 	else
-	JUMP TO BLOCK #175
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #169 506-508, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #169 509-511, warpins: 1 ---
+	slot32 = slot31.isSwim
 	--- END OF BLOCK #169 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #170
 	else
-	JUMP TO BLOCK #175
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #170 509-511, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #170 512-514, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
 	--- END OF BLOCK #170 ---
 
-	if slot32 ~= nil then
-	JUMP TO BLOCK #171
-	else
-	JUMP TO BLOCK #175
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #171 512-514, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #171 515-517, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #171 ---
 
 	if slot32 == nil then
 	JUMP TO BLOCK #172
 	else
-	JUMP TO BLOCK #175
+	JUMP TO BLOCK #178
 	end
 
 
-	--- BLOCK #172 515-517, warpins: 1 ---
-	slot32 = slot31.isGlide
+	--- BLOCK #172 518-520, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #172 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #173
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #178
 	end
 
 
-	--- BLOCK #173 518-520, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #173 521-523, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #173 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #174
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #178
 	end
 
 
-	--- BLOCK #174 521-523, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #174 524-526, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #174 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 ~= nil then
+	JUMP TO BLOCK #175
+	else
+	JUMP TO BLOCK #178
+	end
 
 
-	--- BLOCK #175 524-526, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #175 527-529, warpins: 1 ---
+	slot32 = slot31.isGlide
 	--- END OF BLOCK #175 ---
 
-	if slot32 == nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #176
 	else
-	JUMP TO BLOCK #182
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #176 527-529, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #176 530-532, warpins: 1 ---
+	slot32 = slot31.isNone
 	--- END OF BLOCK #176 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #177
 	else
-	JUMP TO BLOCK #182
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #177 530-532, warpins: 1 ---
-	slot32 = slot30.isSwim
-	--- END OF BLOCK #177 ---
-
-	if slot32 == nil then
-	JUMP TO BLOCK #178
-	else
-	JUMP TO BLOCK #182
-	end
-
-
-	--- BLOCK #178 533-535, warpins: 1 ---
-	slot32 = slot30.isNone
-	--- END OF BLOCK #178 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #179
-	else
-	JUMP TO BLOCK #182
-	end
-
-
-	--- BLOCK #179 536-538, warpins: 1 ---
-	slot32 = slot31.isGlide
-	--- END OF BLOCK #179 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #180
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #180 539-541, warpins: 1 ---
-	slot32 = slot31.isNone
-	--- END OF BLOCK #180 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #181
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #181 542-544, warpins: 1 ---
+	--- BLOCK #177 533-535, warpins: 1 ---
 	slot32 = false
 
 	return slot32
 
-	--- END OF BLOCK #181 ---
+	--- END OF BLOCK #177 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #182 545-547, warpins: 4 ---
+	--- BLOCK #178 536-538, warpins: 4 ---
 	slot32 = slot30.isClimb
-	--- END OF BLOCK #182 ---
+	--- END OF BLOCK #178 ---
 
 	if slot32 == nil then
-	JUMP TO BLOCK #183
+	JUMP TO BLOCK #179
 	else
-	JUMP TO BLOCK #189
+	JUMP TO BLOCK #185
 	end
 
 
-	--- BLOCK #183 548-550, warpins: 1 ---
+	--- BLOCK #179 539-541, warpins: 1 ---
 	slot32 = slot30.isGlide
-	--- END OF BLOCK #183 ---
+	--- END OF BLOCK #179 ---
 
 	if slot32 == nil then
-	JUMP TO BLOCK #184
+	JUMP TO BLOCK #180
 	else
-	JUMP TO BLOCK #189
+	JUMP TO BLOCK #185
 	end
 
 
-	--- BLOCK #184 551-553, warpins: 1 ---
+	--- BLOCK #180 542-544, warpins: 1 ---
 	slot32 = slot30.isSwim
-	--- END OF BLOCK #184 ---
+	--- END OF BLOCK #180 ---
 
 	if slot32 ~= nil then
-	JUMP TO BLOCK #185
+	JUMP TO BLOCK #181
 	else
-	JUMP TO BLOCK #189
+	JUMP TO BLOCK #185
 	end
 
 
-	--- BLOCK #185 554-556, warpins: 1 ---
+	--- BLOCK #181 545-547, warpins: 1 ---
 	slot32 = slot30.isNone
+	--- END OF BLOCK #181 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #182
+	else
+	JUMP TO BLOCK #185
+	end
+
+
+	--- BLOCK #182 548-550, warpins: 1 ---
+	slot32 = slot31.isSwim
+	--- END OF BLOCK #182 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #183
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #183 551-553, warpins: 1 ---
+	slot32 = slot31.isNone
+	--- END OF BLOCK #183 ---
+
+	slot32 = if not slot32 then
+	JUMP TO BLOCK #184
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #184 554-556, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
+	--- END OF BLOCK #184 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
+
+
+	--- BLOCK #185 557-559, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #185 ---
 
 	if slot32 ~= nil then
 	JUMP TO BLOCK #186
 	else
-	JUMP TO BLOCK #189
+	JUMP TO BLOCK #193
 	end
 
 
-	--- BLOCK #186 557-559, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #186 560-562, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #186 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #187
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #193
 	end
 
 
-	--- BLOCK #187 560-562, warpins: 1 ---
-	slot32 = slot31.isNone
+	--- BLOCK #187 563-565, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #187 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #188
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #193
 	end
 
 
-	--- BLOCK #188 563-565, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #188 566-568, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #188 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 == nil then
+	JUMP TO BLOCK #189
+	else
+	JUMP TO BLOCK #193
+	end
 
 
-	--- BLOCK #189 566-568, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #189 569-571, warpins: 1 ---
+	slot32 = slot31.isClimb
 	--- END OF BLOCK #189 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #190
 	else
-	JUMP TO BLOCK #197
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #190 569-571, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #190 572-574, warpins: 1 ---
+	slot32 = slot31.isGlide
 	--- END OF BLOCK #190 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #191
 	else
-	JUMP TO BLOCK #197
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #191 572-574, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #191 575-577, warpins: 1 ---
+	slot32 = slot31.isSwim
 	--- END OF BLOCK #191 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #192
 	else
-	JUMP TO BLOCK #197
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #192 575-577, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #192 578-580, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
 	--- END OF BLOCK #192 ---
 
-	if slot32 == nil then
-	JUMP TO BLOCK #193
-	else
-	JUMP TO BLOCK #197
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #193 578-580, warpins: 1 ---
-	slot32 = slot31.isClimb
+	--- BLOCK #193 581-583, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #193 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #194
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #201
 	end
 
 
-	--- BLOCK #194 581-583, warpins: 1 ---
-	slot32 = slot31.isGlide
+	--- BLOCK #194 584-586, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #194 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #195
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #201
 	end
 
 
-	--- BLOCK #195 584-586, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #195 587-589, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #195 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #196
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #201
 	end
 
 
-	--- BLOCK #196 587-589, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #196 590-592, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #196 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 ~= nil then
+	JUMP TO BLOCK #197
+	else
+	JUMP TO BLOCK #201
+	end
 
 
-	--- BLOCK #197 590-592, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #197 593-595, warpins: 1 ---
+	slot32 = slot31.isGlide
 	--- END OF BLOCK #197 ---
 
-	if slot32 == nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #198
 	else
-	JUMP TO BLOCK #205
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #198 593-595, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #198 596-598, warpins: 1 ---
+	slot32 = slot31.isSwim
 	--- END OF BLOCK #198 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #199
 	else
-	JUMP TO BLOCK #205
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #199 596-598, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #199 599-601, warpins: 1 ---
+	slot32 = slot31.isNone
 	--- END OF BLOCK #199 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #200
 	else
-	JUMP TO BLOCK #205
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #200 599-601, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #200 602-604, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
 	--- END OF BLOCK #200 ---
 
-	if slot32 ~= nil then
-	JUMP TO BLOCK #201
-	else
-	JUMP TO BLOCK #205
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #201 602-604, warpins: 1 ---
-	slot32 = slot31.isGlide
+	--- BLOCK #201 605-607, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #201 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #202
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #209
 	end
 
 
-	--- BLOCK #202 605-607, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #202 608-610, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #202 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #203
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #209
 	end
 
 
-	--- BLOCK #203 608-610, warpins: 1 ---
-	slot32 = slot31.isNone
+	--- BLOCK #203 611-613, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #203 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #204
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #209
 	end
 
 
-	--- BLOCK #204 611-613, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #204 614-616, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #204 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 ~= nil then
+	JUMP TO BLOCK #205
+	else
+	JUMP TO BLOCK #209
+	end
 
 
-	--- BLOCK #205 614-616, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #205 617-619, warpins: 1 ---
+	slot32 = slot31.isClimb
 	--- END OF BLOCK #205 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #206
 	else
-	JUMP TO BLOCK #213
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #206 617-619, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #206 620-622, warpins: 1 ---
+	slot32 = slot31.isSwim
 	--- END OF BLOCK #206 ---
 
-	if slot32 == nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #207
 	else
-	JUMP TO BLOCK #213
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #207 620-622, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #207 623-625, warpins: 1 ---
+	slot32 = slot31.isNone
 	--- END OF BLOCK #207 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #208
 	else
-	JUMP TO BLOCK #213
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #208 623-625, warpins: 1 ---
-	slot32 = slot30.isNone
+	--- BLOCK #208 626-628, warpins: 1 ---
+	slot32 = false
+
+	return slot32
+
 	--- END OF BLOCK #208 ---
 
-	if slot32 ~= nil then
-	JUMP TO BLOCK #209
-	else
-	JUMP TO BLOCK #213
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
 
 
-	--- BLOCK #209 626-628, warpins: 1 ---
-	slot32 = slot31.isClimb
+	--- BLOCK #209 629-631, warpins: 4 ---
+	slot32 = slot30.isClimb
 	--- END OF BLOCK #209 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #210
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #217
 	end
 
 
-	--- BLOCK #210 629-631, warpins: 1 ---
-	slot32 = slot31.isSwim
+	--- BLOCK #210 632-634, warpins: 1 ---
+	slot32 = slot30.isGlide
 	--- END OF BLOCK #210 ---
 
-	slot32 = if not slot32 then
+	if slot32 ~= nil then
 	JUMP TO BLOCK #211
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #217
 	end
 
 
-	--- BLOCK #211 632-634, warpins: 1 ---
-	slot32 = slot31.isNone
+	--- BLOCK #211 635-637, warpins: 1 ---
+	slot32 = slot30.isSwim
 	--- END OF BLOCK #211 ---
 
-	slot32 = if not slot32 then
+	if slot32 == nil then
 	JUMP TO BLOCK #212
 	else
-	JUMP TO BLOCK #226
+	JUMP TO BLOCK #217
 	end
 
 
-	--- BLOCK #212 635-637, warpins: 1 ---
-	slot32 = false
-
-	return slot32
-
+	--- BLOCK #212 638-640, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #212 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 ~= nil then
+	JUMP TO BLOCK #213
+	else
+	JUMP TO BLOCK #217
+	end
 
 
-	--- BLOCK #213 638-640, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #213 641-643, warpins: 1 ---
+	slot32 = slot31.isClimb
 	--- END OF BLOCK #213 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #214
 	else
-	JUMP TO BLOCK #221
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #214 641-643, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #214 644-646, warpins: 1 ---
+	slot32 = slot31.isGlide
 	--- END OF BLOCK #214 ---
 
-	if slot32 ~= nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #215
 	else
-	JUMP TO BLOCK #221
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #215 644-646, warpins: 1 ---
-	slot32 = slot30.isSwim
+	--- BLOCK #215 647-649, warpins: 1 ---
+	slot32 = slot31.isNone
 	--- END OF BLOCK #215 ---
 
-	if slot32 == nil then
+	slot32 = if not slot32 then
 	JUMP TO BLOCK #216
 	else
-	JUMP TO BLOCK #221
+	JUMP TO BLOCK #222
 	end
 
 
-	--- BLOCK #216 647-649, warpins: 1 ---
-	slot32 = slot30.isNone
-	--- END OF BLOCK #216 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #217
-	else
-	JUMP TO BLOCK #221
-	end
-
-
-	--- BLOCK #217 650-652, warpins: 1 ---
-	slot32 = slot31.isClimb
-	--- END OF BLOCK #217 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #218
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #218 653-655, warpins: 1 ---
-	slot32 = slot31.isGlide
-	--- END OF BLOCK #218 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #219
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #219 656-658, warpins: 1 ---
-	slot32 = slot31.isNone
-	--- END OF BLOCK #219 ---
-
-	slot32 = if not slot32 then
-	JUMP TO BLOCK #220
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #220 659-661, warpins: 1 ---
+	--- BLOCK #216 650-652, warpins: 1 ---
 	slot32 = false
 
 	return slot32
 
+	--- END OF BLOCK #216 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #222
+
+
+	--- BLOCK #217 653-655, warpins: 4 ---
+	slot32 = slot30.isClimb
+	--- END OF BLOCK #217 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #218
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #218 656-658, warpins: 1 ---
+	slot32 = slot30.isGlide
+	--- END OF BLOCK #218 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #219
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #219 659-661, warpins: 1 ---
+	slot32 = slot30.isSwim
+	--- END OF BLOCK #219 ---
+
+	if slot32 ~= nil then
+	JUMP TO BLOCK #220
+	else
+	JUMP TO BLOCK #222
+	end
+
+
+	--- BLOCK #220 662-664, warpins: 1 ---
+	slot32 = slot30.isNone
 	--- END OF BLOCK #220 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #226
+	if slot32 ~= nil then
+	JUMP TO BLOCK #221
+	else
+	JUMP TO BLOCK #222
+	end
 
 
-	--- BLOCK #221 662-664, warpins: 4 ---
-	slot32 = slot30.isClimb
+	--- BLOCK #221 665-666, warpins: 1 ---
+	slot32 = true
+
+	return slot32
+
 	--- END OF BLOCK #221 ---
 
-	if slot32 ~= nil then
-	JUMP TO BLOCK #222
-	else
-	JUMP TO BLOCK #226
-	end
+	FLOW; TARGET BLOCK #222
 
 
-	--- BLOCK #222 665-667, warpins: 1 ---
-	slot32 = slot30.isGlide
+	--- BLOCK #222 667-668, warpins: 48 ---
+	slot32 = true
+
+	return slot32
 	--- END OF BLOCK #222 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #223
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #223 668-670, warpins: 1 ---
-	slot32 = slot30.isSwim
-	--- END OF BLOCK #223 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #224
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #224 671-673, warpins: 1 ---
-	slot32 = slot30.isNone
-	--- END OF BLOCK #224 ---
-
-	if slot32 ~= nil then
-	JUMP TO BLOCK #225
-	else
-	JUMP TO BLOCK #226
-	end
-
-
-	--- BLOCK #225 674-675, warpins: 1 ---
-	slot32 = true
-
-	return slot32
-
-	--- END OF BLOCK #225 ---
-
-	FLOW; TARGET BLOCK #226
-
-
-	--- BLOCK #226 676-677, warpins: 48 ---
-	slot32 = true
-
-	return slot32
-	--- END OF BLOCK #226 ---
 
 
 
@@ -4849,6 +4696,24 @@ slot24 = function(slot0)
 
 	--- BLOCK #1 4-7, warpins: 1 ---
 	slot1 = {
+		isRating4 = false,
+		isRating3 = false,
+		isRating2 = false,
+		isRating1 = false,
+		isFavoriteType10 = false,
+		isFavoriteType9 = false,
+		isFavoriteType8 = false,
+		isFavoriteType7 = false,
+		isFavoriteType6 = false,
+		isFavoriteType5 = false,
+		isFavoriteType4 = false,
+		isFavoriteType3 = false,
+		isFavoriteType2 = false,
+		isFavoriteType1 = false,
+		isNotRareFeature = false,
+		isRareFeature = false,
+		isInHomeland = false,
+		isInExplore = false,
 		isNotInBattle = false,
 		isInBattle = false,
 		isNone = false,
@@ -4864,25 +4729,7 @@ slot24 = function(slot0)
 		isBoss = false,
 		isShiny = false,
 		isNormal = false,
-		keyword = "",
-		isFavoriteType6 = false,
-		isFavoriteType7 = false,
-		isFavoriteType8 = false,
-		isFavoriteType9 = false,
-		isFavoriteType10 = false,
-		isFavoriteType4 = false,
-		isFavoriteType3 = false,
-		isRating4 = false,
-		isFavoriteType5 = false,
-		isFavoriteType2 = false,
-		isFavoriteType1 = false,
-		isRating3 = false,
-		isRating2 = false,
-		isRating1 = false,
-		isNotRareFeature = false,
-		isRareFeature = false,
-		isInHomeland = false,
-		isInExplore = false
+		keyword = ""
 	}
 	slot2 = {}
 	slot1.elements = slot2
@@ -5463,48 +5310,64 @@ end
 slot23.setFilter = slot24
 
 slot24 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = {}
 	slot0.petBallMap = slot1
 	slot1 = pg
 	slot1 = slot1.me
 	slot1 = slot1.petBallMap
-	slot3 = slot1
-	slot1 = slot1.items
-	slot1, slot2, slot3 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 10-17, warpins: 1 ---
-	slot6 = {}
-	slot6.petBallId = slot4
-	slot6.petBallInfo = slot5
-	slot7 = slot0.petBallMap
-	slot8 = slot0.petBallMap
-	slot8 = #slot8
-	slot8 = slot8 + 1
-	slot7[slot8] = slot6
+	--- BLOCK #1 8-8, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #2 18-19, warpins: 2 ---
+	--- BLOCK #2 9-12, warpins: 1 ---
+	slot4 = slot1
+	slot2 = slot1.items
+	slot2, slot3, slot4 = slot2(slot4)
 	--- END OF BLOCK #2 ---
 
-	for slot4, slot5 in slot1, slot2, slot3
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 20-25, warpins: 1 ---
-	slot1 = table
-	slot1 = slot1.sort
-	slot3 = slot0.petBallMap
+	--- BLOCK #3 13-20, warpins: 1 ---
+	slot7 = {}
+	slot7.petBallId = slot5
+	slot7.petBallInfo = slot6
+	slot8 = slot0.petBallMap
+	slot9 = slot0.petBallMap
+	slot9 = #slot9
+	slot9 = slot9 + 1
+	slot8[slot9] = slot7
+	--- END OF BLOCK #3 ---
 
-	slot4 = function(slot0, slot1)
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-22, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	for slot5, slot6 in slot2, slot3, slot4
+	LOOP BLOCK #3
+	GO OUT TO BLOCK #5
+
+
+	--- BLOCK #5 23-28, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.sort
+	slot4 = slot0.petBallMap
+
+	slot5 = function(slot0, slot1)
 		--- BLOCK #0 1-6, warpins: 1 ---
 		slot2 = slot0.petBallInfo
 		slot2 = slot2.createTime
@@ -5598,10 +5461,17 @@ slot24 = function(slot0)
 
 	end
 
-	slot1(slot3, slot4)
+	slot2(slot4, slot5)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 29-29, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
@@ -5681,36 +5551,56 @@ slot24 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 6-16, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.getBallIndexByPetBallId
-	slot4 = pg
-	slot4 = slot4.me
-	slot4 = slot4.petBallMap
-	slot4 = slot4.curIndex
-	slot1 = slot1(slot3, slot4)
-	slot0.curSelectedPetBallIndex = slot1
-	slot1 = slot0.curSelectedPetBallIndex
+	--- BLOCK #2 6-10, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.petBallMap
 	--- END OF BLOCK #2 ---
 
-	slot1 = if not slot1 then
+	if slot1 == nil then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 17-17, warpins: 1 ---
-	slot1 = 1
+	--- BLOCK #3 11-12, warpins: 1 ---
+	slot2 = 1
+
+	return slot2
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 18-18, warpins: 2 ---
-	return slot1
+	--- BLOCK #4 13-20, warpins: 2 ---
+	slot4 = slot0
+	slot2 = slot0.getBallIndexByPetBallId
+	slot5 = slot1.curIndex
+	slot2 = slot2(slot4, slot5)
+	slot0.curSelectedPetBallIndex = slot2
+	slot2 = slot0.curSelectedPetBallIndex
 	--- END OF BLOCK #4 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 21-21, warpins: 1 ---
+	slot2 = 1
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 2 ---
+	return slot2
+	--- END OF BLOCK #6 ---
 
 
 
@@ -6447,313 +6337,296 @@ end
 slot23.getAllEggs = slot24
 
 slot24 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = {}
-	slot2 = pg
-	slot2 = slot2.me
-	slot3 = slot2.invInfo
+	slot2 = ItemUtils
+	slot2 = slot2.eachSupportedTypedBag
+	slot4 = pg
+	slot4 = slot4.me
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot4 = slot1
+		slot2 = slot1.items
+		slot2, slot3, slot4 = slot2(slot4)
+		--- END OF BLOCK #0 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #1 5-11, warpins: 1 ---
+		slot7 = self
+		slot9 = slot7
+		slot7 = slot7.getInfoByItem
+		slot10 = slot6
+		slot7 = slot7(slot9, slot10)
+		--- END OF BLOCK #1 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 12-16, warpins: 1 ---
+		slot8 = ret
+		slot9 = ret
+		slot9 = #slot9
+		slot9 = slot9 + 1
+		slot8[slot9] = slot7
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 17-18, warpins: 3 ---
+		--- END OF BLOCK #3 ---
+
+		for slot5, slot6 in slot2, slot3, slot4
+		LOOP BLOCK #1
+		GO OUT TO BLOCK #4
+
+
+		--- BLOCK #4 19-19, warpins: 1 ---
+		return
+		--- END OF BLOCK #4 ---
+
+
+
+	end
+
+	slot2(slot4, slot5)
+
+	slot2 = slot0.hatchSortId
 	--- END OF BLOCK #0 ---
 
-	slot3 = if not slot3 then
+	if slot2 == 1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
-	slot3 = {}
+	--- BLOCK #1 11-16, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.sort
+	slot4 = slot1
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.hatchIsDescending
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = slot0.id
+		slot3 = slot1.id
+		--- END OF BLOCK #1 ---
+
+		if slot3 >= slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 12-13, warpins: 2 ---
+		return slot2
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #5 14-17, warpins: 1 ---
+		slot2 = slot0.id
+		slot3 = slot1.id
+		--- END OF BLOCK #5 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 18-19, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 20-20, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 21-21, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 22-22, warpins: 2 ---
+		return
+		--- END OF BLOCK #9 ---
+
+
+
+	end
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #2 8-11, warpins: 2 ---
-	slot4 = pairs
-	slot6 = slot3
-	slot4, slot5, slot6 = slot4(slot6)
+	--- BLOCK #2 17-19, warpins: 1 ---
+	slot2 = slot0.hatchSortId
 	--- END OF BLOCK #2 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	if slot2 == 2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 12-15, warpins: 1 ---
-	slot11 = slot8
-	slot9 = slot8.items
-	slot9, slot10, slot11 = slot9(slot11)
+	--- BLOCK #3 20-25, warpins: 1 ---
+	slot2 = table
+	slot2 = slot2.sort
+	slot4 = slot1
+
+	slot5 = function(slot0, slot1)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.hatchIsDescending
+		--- END OF BLOCK #0 ---
+
+		slot2 = if slot2 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #5
+		end
+
+
+		--- BLOCK #1 5-8, warpins: 1 ---
+		slot2 = slot0.quality
+		slot3 = slot1.quality
+		--- END OF BLOCK #1 ---
+
+		if slot3 >= slot2 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 9-10, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #2 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+		--- BLOCK #3 11-11, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 12-13, warpins: 2 ---
+		return slot2
+
+		--- END OF BLOCK #4 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #9
+
+
+		--- BLOCK #5 14-17, warpins: 1 ---
+		slot2 = slot0.quality
+		slot3 = slot1.quality
+		--- END OF BLOCK #5 ---
+
+		if slot2 >= slot3 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 18-19, warpins: 1 ---
+		slot2 = false
+		--- END OF BLOCK #6 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+		--- BLOCK #7 20-20, warpins: 1 ---
+		slot2 = true
+
+		--- END OF BLOCK #7 ---
+
+		FLOW; TARGET BLOCK #8
+
+
+		--- BLOCK #8 21-21, warpins: 2 ---
+		return slot2
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 22-22, warpins: 2 ---
+		return
+		--- END OF BLOCK #9 ---
+
+
+
+	end
+
+	slot2(slot4, slot5)
+
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #6
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #4 16-21, warpins: 1 ---
-	slot16 = slot0
-	slot14 = slot0.getInfoByItem
-	slot17 = slot13
-	slot14 = slot14(slot16, slot17)
-	--- END OF BLOCK #4 ---
-
-	slot14 = if slot14 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-24, warpins: 1 ---
-	slot15 = #slot1
-	slot15 = slot15 + 1
-	slot1[slot15] = slot14
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 25-26, warpins: 3 ---
-	--- END OF BLOCK #6 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #4
-	GO OUT TO BLOCK #7
-
-
-	--- BLOCK #7 27-28, warpins: 2 ---
-	--- END OF BLOCK #7 ---
-
-	for slot7, slot8 in slot4, slot5, slot6
-	LOOP BLOCK #3
-	GO OUT TO BLOCK #8
-
-
-	--- BLOCK #8 29-31, warpins: 1 ---
-	slot4 = slot0.hatchSortId
-	--- END OF BLOCK #8 ---
-
-	if slot4 == 1 then
-	JUMP TO BLOCK #9
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #9 32-37, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.sort
-	slot6 = slot1
-
-	slot7 = function(slot0, slot1)
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.hatchIsDescending
-		--- END OF BLOCK #0 ---
-
-		slot2 = if slot2 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot2 = slot0.id
-		slot3 = slot1.id
-		--- END OF BLOCK #1 ---
-
-		if slot3 >= slot2 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 9-10, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #3 11-11, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 12-13, warpins: 2 ---
-		return slot2
-
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-		--- BLOCK #5 14-17, warpins: 1 ---
-		slot2 = slot0.id
-		slot3 = slot1.id
-		--- END OF BLOCK #5 ---
-
-		if slot2 >= slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 18-19, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #6 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-		--- BLOCK #7 20-20, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 21-21, warpins: 2 ---
-		return slot2
-		--- END OF BLOCK #8 ---
-
-		FLOW; TARGET BLOCK #9
-
-
-		--- BLOCK #9 22-22, warpins: 2 ---
-		return
-		--- END OF BLOCK #9 ---
-
-
-
-	end
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #9 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #10 38-40, warpins: 1 ---
-	slot4 = slot0.hatchSortId
-	--- END OF BLOCK #10 ---
-
-	if slot4 == 2 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #12
-	end
-
-
-	--- BLOCK #11 41-46, warpins: 1 ---
-	slot4 = table
-	slot4 = slot4.sort
-	slot6 = slot1
-
-	slot7 = function(slot0, slot1)
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot2 = self
-		slot2 = slot2.hatchIsDescending
-		--- END OF BLOCK #0 ---
-
-		slot2 = if slot2 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #1 5-8, warpins: 1 ---
-		slot2 = slot0.quality
-		slot3 = slot1.quality
-		--- END OF BLOCK #1 ---
-
-		if slot3 >= slot2 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #3
-		end
-
-
-		--- BLOCK #2 9-10, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #2 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
-
-
-		--- BLOCK #3 11-11, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 12-13, warpins: 2 ---
-		return slot2
-
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-		--- BLOCK #5 14-17, warpins: 1 ---
-		slot2 = slot0.quality
-		slot3 = slot1.quality
-		--- END OF BLOCK #5 ---
-
-		if slot2 >= slot3 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 18-19, warpins: 1 ---
-		slot2 = false
-		--- END OF BLOCK #6 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #8
-
-
-		--- BLOCK #7 20-20, warpins: 1 ---
-		slot2 = true
-
-		--- END OF BLOCK #7 ---
-
-		FLOW; TARGET BLOCK #8
-
-
-		--- BLOCK #8 21-21, warpins: 2 ---
-		return slot2
-		--- END OF BLOCK #8 ---
-
-		FLOW; TARGET BLOCK #9
-
-
-		--- BLOCK #9 22-22, warpins: 2 ---
-		return
-		--- END OF BLOCK #9 ---
-
-
-
-	end
-
-	slot4(slot6, slot7)
-
-	--- END OF BLOCK #11 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #12
-
-
-	--- BLOCK #12 47-48, warpins: 3 ---
+	--- BLOCK #4 26-27, warpins: 3 ---
 	return slot1
-	--- END OF BLOCK #12 ---
+	--- END OF BLOCK #4 ---
 
 
 
@@ -7132,8 +7005,8 @@ slot24 = function(slot0, slot1)
 
 	--- BLOCK #15 160-194, warpins: 1 ---
 	slot3 = {
-		isHatching = false,
-		isNormalEgg = true
+		isNormalEgg = true,
+		isHatching = false
 	}
 	slot4 = slot1.genID
 	slot3.genId = slot4
@@ -7276,14 +7149,16 @@ end
 slot23.setHatchDescending = slot24
 
 slot24 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = {}
 	slot2 = pg
 	slot2 = slot2.me
-	slot3 = slot2.invInfo
-	slot4 = ItemConst
-	slot4 = slot4.INV_TYPE_COMMON
-	slot3 = slot3[slot4]
+	slot3 = ItemUtils
+	slot3 = slot3.getTypedBag
+	slot5 = slot2
+	slot6 = ItemConst
+	slot6 = slot6.INV_TYPE_COMMON
+	slot3 = slot3(slot5, slot6)
 	--- END OF BLOCK #0 ---
 
 	slot3 = if not slot3 then
@@ -7293,14 +7168,14 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #1 10-10, warpins: 1 ---
+	--- BLOCK #1 12-12, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-22, warpins: 2 ---
+	--- BLOCK #2 13-24, warpins: 2 ---
 	slot6 = slot0
 	slot4 = slot0.getCurrentPetBallId
 	slot4 = slot4(slot6)
@@ -7320,7 +7195,7 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #3 23-26, warpins: 1 ---
+	--- BLOCK #3 25-28, warpins: 1 ---
 	slot7 = slot6.petBallInfo
 	slot7 = slot7.petId
 	--- END OF BLOCK #3 ---
@@ -7332,14 +7207,14 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #4 27-27, warpins: 2 ---
+	--- BLOCK #4 29-29, warpins: 2 ---
 	slot7 = nil
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 28-31, warpins: 2 ---
+	--- BLOCK #5 30-33, warpins: 2 ---
 	slot8 = pairs
 	slot10 = PetFeedItemData
 	slot8, slot9, slot10 = slot8(slot10)
@@ -7348,7 +7223,7 @@ slot24 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
-	--- BLOCK #6 32-34, warpins: 1 ---
+	--- BLOCK #6 34-36, warpins: 1 ---
 	slot13 = slot12.matchBallId
 	--- END OF BLOCK #6 ---
 
@@ -7359,7 +7234,7 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #7 35-41, warpins: 1 ---
+	--- BLOCK #7 37-43, warpins: 1 ---
 	slot13 = table
 	slot13 = slot13.contains
 	slot15 = slot12.matchBallId
@@ -7374,7 +7249,7 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #8 42-65, warpins: 2 ---
+	--- BLOCK #8 44-67, warpins: 2 ---
 	slot13 = ItemData
 	slot13 = slot13[slot11]
 	slot14 = {}
@@ -7406,7 +7281,7 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #9 66-72, warpins: 1 ---
+	--- BLOCK #9 68-74, warpins: 1 ---
 	slot17 = slot0
 	slot15 = slot0.checkMainPetTasteLevel
 	slot18 = slot14
@@ -7421,7 +7296,7 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #10 73-74, warpins: 2 ---
+	--- BLOCK #10 75-76, warpins: 2 ---
 	slot15 = slot0.TASTE_LEVEL
 	slot15 = slot15.NONE
 	--- END OF BLOCK #10 ---
@@ -7429,7 +7304,7 @@ slot24 = function(slot0)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 75-83, warpins: 2 ---
+	--- BLOCK #11 77-85, warpins: 2 ---
 	slot14.tasteLevel = slot15
 	slot15 = 0
 	slot14.count = slot15
@@ -7443,7 +7318,7 @@ slot24 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #14
 
 
-	--- BLOCK #12 84-86, warpins: 1 ---
+	--- BLOCK #12 86-88, warpins: 1 ---
 	slot20 = slot19.id
 	--- END OF BLOCK #12 ---
 
@@ -7454,7 +7329,7 @@ slot24 = function(slot0)
 	end
 
 
-	--- BLOCK #13 87-91, warpins: 1 ---
+	--- BLOCK #13 89-93, warpins: 1 ---
 	slot20 = slot19.count
 	slot14.count = slot20
 	slot20 = 1
@@ -7464,7 +7339,7 @@ slot24 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #15
 
 
-	--- BLOCK #14 92-93, warpins: 2 ---
+	--- BLOCK #14 94-95, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot18, slot19 in slot15, slot16, slot17
@@ -7472,7 +7347,7 @@ slot24 = function(slot0)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 94-96, warpins: 2 ---
+	--- BLOCK #15 96-98, warpins: 2 ---
 	slot15 = #slot1
 	slot15 = slot15 + 1
 	slot1[slot15] = slot14
@@ -7481,7 +7356,7 @@ slot24 = function(slot0)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 97-98, warpins: 3 ---
+	--- BLOCK #16 99-100, warpins: 3 ---
 	--- END OF BLOCK #16 ---
 
 	for slot11, slot12 in slot8, slot9, slot10
@@ -7489,7 +7364,7 @@ slot24 = function(slot0)
 	GO OUT TO BLOCK #17
 
 
-	--- BLOCK #17 99-105, warpins: 1 ---
+	--- BLOCK #17 101-107, warpins: 1 ---
 	slot8 = table
 	slot8 = slot8.sort
 	slot10 = slot1

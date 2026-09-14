@@ -66,7 +66,7 @@ slot9.setCurSelectPetId = slot11
 
 slot11 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
-	slot1 = petInfo
+	slot1 = slot0.pet
 	slot1 = slot1.unlockedAbilityMap
 	slot2 = {}
 	slot3 = pairs
@@ -77,50 +77,51 @@ slot11 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #1 8-53, warpins: 1 ---
-	slot8 = pg
-	slot8 = slot8.global
-	slot8 = slot8.abilityMgr
-	slot10 = slot8
-	slot8 = slot8.getAbilityParamData
-	slot11 = slot7.abilityId
+	--- BLOCK #1 8-54, warpins: 1 ---
+	slot8 = AbilityUtils
+	slot8 = slot8.getAbilityIdByParamId
+	slot10 = slot0.pet
+	slot10 = slot10.templateId
+	slot11 = slot6
 	slot8 = slot8(slot10, slot11)
-	slot11 = slot0
-	slot9 = slot0.getAbilityInfo
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.abilityMgr
+	slot11 = slot9
+	slot9 = slot9.getAbilityParamData
 	slot12 = slot8
 	slot9 = slot9(slot11, slot12)
-	slot10 = slot7.abilityId
-	slot9.abilityId = slot10
-	slot10 = {}
-	slot11 = #slot10
-	slot11 = slot11 + 1
-	slot12 = {}
-	slot13 = ElementPropData
-	slot14 = slot8.elementType
-	slot13 = slot13[slot14]
-	slot12.elementName = slot13
-	slot13 = slot8.elementType
-	slot12.elementTypeId = slot13
-	slot10[slot11] = slot12
-	slot9.elementList = slot10
-	slot11 = AbilityUtils
-	slot11 = slot11.getAbilityParamId
-	slot13 = slot7.abilityId
-	slot11 = slot11(slot13)
+	slot12 = slot0
+	slot10 = slot0.getAbilityInfo
+	slot13 = slot9
+	slot10 = slot10(slot12, slot13)
+	slot10.abilityId = slot8
+	slot11 = {}
+	slot12 = #slot11
+	slot12 = slot12 + 1
+	slot13 = {}
+	slot14 = ElementPropData
+	slot15 = slot9.elementType
+	slot14 = slot14[slot15]
+	slot13.elementName = slot14
+	slot14 = slot9.elementType
+	slot13.elementTypeId = slot14
+	slot11[slot12] = slot13
+	slot10.elementList = slot11
 	slot12 = ToInt
 	slot14 = AbilityUtils
 	slot14 = slot14.isRareAbilityByParamId
-	slot16 = slot11
+	slot16 = slot6
 	slot17 = slot0.pet
 	slot17 = slot17.templateId
 	MULTRES = slot14(slot16, slot17)
 	slot12 = slot12(MULTRES)
-	slot9.rare = slot12
+	slot10.rare = slot12
 	slot12 = slot0.pet
 	slot12 = slot12.petPrototypeId
 	slot13 = PetSkillData
 	slot13 = slot13[slot12]
-	slot13 = slot13[slot11]
+	slot13 = slot13[slot6]
 	slot13 = slot13.skillOrder
 	--- END OF BLOCK #1 ---
 
@@ -131,24 +132,24 @@ slot11 = function(slot0)
 	end
 
 
-	--- BLOCK #2 54-54, warpins: 1 ---
+	--- BLOCK #2 55-55, warpins: 1 ---
 	slot13 = 999
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 55-58, warpins: 2 ---
-	slot9.order = slot13
+	--- BLOCK #3 56-59, warpins: 2 ---
+	slot10.order = slot13
 	slot13 = #slot2
 	slot13 = slot13 + 1
-	slot2[slot13] = slot9
+	slot2[slot13] = slot10
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 59-60, warpins: 2 ---
+	--- BLOCK #4 60-61, warpins: 2 ---
 	--- END OF BLOCK #4 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -156,7 +157,7 @@ slot11 = function(slot0)
 	GO OUT TO BLOCK #5
 
 
-	--- BLOCK #5 61-67, warpins: 1 ---
+	--- BLOCK #5 62-68, warpins: 1 ---
 	slot3 = table
 	slot3 = slot3.sort
 	slot5 = slot2
@@ -209,58 +210,98 @@ end
 slot9.getPetUnlockSkill = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.getPetInfo
 	slot5 = slot0.curSelectPetId
 	slot2 = slot2(slot4, slot5)
-	slot2 = slot2.abilityPresetMap
-	slot3 = slot0.curShowPlanIdx
-	slot2 = slot2[slot3]
-	slot3 = pairs
-	slot5 = ATTACK_ABILITYS
-	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
 
 
-	--- BLOCK #1 14-16, warpins: 1 ---
-	slot8 = slot2[slot7]
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot3 = slot2.curAbilityMap
 	--- END OF BLOCK #1 ---
 
-	if slot1 == slot8 then
+	slot3 = if not slot3 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 17-18, warpins: 1 ---
-	slot8 = true
+	--- BLOCK #2 12-13, warpins: 2 ---
+	slot3 = false
 
-	return slot8
+	return slot3
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 19-20, warpins: 3 ---
+	--- BLOCK #3 14-17, warpins: 2 ---
+	slot3 = pairs
+	slot5 = ATTACK_ABILITYS
+	slot3, slot4, slot5 = slot3(slot5)
 	--- END OF BLOCK #3 ---
 
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #4 18-21, warpins: 1 ---
+	slot8 = slot2.curAbilityMap
+	slot8 = slot8[slot7]
+	--- END OF BLOCK #4 ---
+
+	slot8 = if slot8 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 22-24, warpins: 1 ---
+	slot9 = slot8.abilityId
+	--- END OF BLOCK #5 ---
+
+	if slot1 == slot9 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 25-26, warpins: 1 ---
+	slot9 = true
+
+	return slot9
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-28, warpins: 4 ---
+	--- END OF BLOCK #7 ---
+
 	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #8
 
 
-	--- BLOCK #4 21-22, warpins: 1 ---
+	--- BLOCK #8 29-30, warpins: 1 ---
 	slot3 = false
 
 	return slot3
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #8 ---
 
 
 
@@ -547,18 +588,104 @@ end
 slot9.tryModifyAbility = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.me
 	slot4 = slot2
 	slot2 = slot2.getPetInfo
 	slot5 = slot0.curSelectPetId
 	slot2 = slot2(slot4, slot5)
-	slot2 = slot2.abilityPresetMap
-	slot2 = slot2[slot1]
-
-	return slot2
 	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 9-11, warpins: 1 ---
+	slot3 = slot2.curAbilityMap
+	--- END OF BLOCK #1 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 2 ---
+	slot3 = {}
+
+	return slot3
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 14-18, warpins: 2 ---
+	slot3 = {
+		name = ""
+	}
+	slot4 = pairs
+	slot6 = ATTACK_ABILITYS
+	slot4, slot5, slot6 = slot4(slot6)
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #4 19-22, warpins: 1 ---
+	slot9 = slot2.curAbilityMap
+	slot9 = slot9[slot8]
+	--- END OF BLOCK #4 ---
+
+	slot9 = if slot9 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 23-25, warpins: 1 ---
+	slot10 = slot9.abilityId
+	--- END OF BLOCK #5 ---
+
+	slot10 = if not slot10 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 26-26, warpins: 2 ---
+	slot10 = slot0.EMPTY_ABILITY_ID
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 27-27, warpins: 2 ---
+	slot3[slot8] = slot10
+
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 28-29, warpins: 2 ---
+	--- END OF BLOCK #8 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #9
+
+
+	--- BLOCK #9 30-30, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #9 ---
 
 
 
@@ -567,17 +694,9 @@ end
 slot9.getPetsAbilityPlanInfo = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot0.curShowPlanIdx = slot1
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.serverMsg
-	slot5 = "RPC_CS_PetApplyAbilityPreset"
-	slot6 = slot0.curSelectPetId
-	slot7 = slot0.curShowPlanIdx
-
-	slot2(slot4, slot5, slot6, slot7)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot2 = 1
+	slot0.curShowPlanIdx = slot2
 
 	return
 	--- END OF BLOCK #0 ---
@@ -589,14 +708,8 @@ end
 slot9.setCurShowPlanIdx = slot11
 
 slot11 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.me
-	slot3 = slot1
-	slot1 = slot1.getPetInfo
-	slot4 = slot0.curSelectPetId
-	slot1 = slot1(slot3, slot4)
-	slot1 = slot1.curAbilityPreset
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot1 = 1
 
 	return slot1
 	--- END OF BLOCK #0 ---
@@ -608,19 +721,10 @@ end
 slot9.getCurFightIdx = slot11
 
 slot11 = function(slot0, slot1)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot2 = pg
-	slot2 = slot2.me
-	slot4 = slot2
-	slot2 = slot2.serverMsg
-	slot5 = "RPC_CS_PetRenameAbilityPreset"
-	slot6 = slot0.curSelectPetId
-	slot7 = slot0.curShowPlanIdx
-	slot8 = slot1
+	--- BLOCK #0 1-2, warpins: 1 ---
+	slot2 = false
 
-	slot2(slot4, slot5, slot6, slot7, slot8)
-
-	return
+	return slot2
 	--- END OF BLOCK #0 ---
 
 

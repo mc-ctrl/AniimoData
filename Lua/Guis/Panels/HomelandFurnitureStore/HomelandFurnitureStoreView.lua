@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-169, warpins: 1 ---
+	--- BLOCK #0 1-205, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -129,6 +129,30 @@ slot3 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
+	slot4 = "drawingNameUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.drawingNameUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "drawingSourceListUList"
+	slot1 = slot1(slot3, slot4)
+	slot0.drawingSourceListUList = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "drawingSourceTitleUWidget"
+	slot1 = slot1(slot3, slot4)
+	slot0.drawingSourceTitleUWidget = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
+	slot4 = "TextTitleGetUSDFText"
+	slot1 = slot1(slot3, slot4)
+	slot0.TextTitleGetUSDFText = slot1
+	slot1 = slot0.objectReference
+	slot3 = slot1
+	slot1 = slot1.GetRefValue
 	slot4 = "modelURawImage"
 	slot1 = slot1(slot3, slot4)
 	slot0.modelURawImage = slot1
@@ -180,6 +204,18 @@ slot3 = function(slot0)
 	slot5 = "txtDescUSDFText"
 	slot2 = slot2(slot4, slot5)
 	slot0.txtDescUSDFText = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "txtLoadNumUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtLoadNumUSDFText = slot2
+	slot2 = slot0.objectReference
+	slot4 = slot2
+	slot2 = slot2.GetRefValue
+	slot5 = "txtLiveNumUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.txtLiveNumUSDFText = slot2
 
 	return
 	--- END OF BLOCK #0 ---

@@ -7,46 +7,46 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "PuppetAgent",
-	version = 36,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Ripzor_Shadow",
 	useForRoute = false,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Ripzor_Shadow"
+	version = 36,
+	agenttype = "PuppetAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	name = "creations",
 	type = "int",
 	const = 0,
-	name = "creations",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	name = "disToTgtForSkillMon",
 	type = "float",
 	const = 0,
-	name = "disToTgtForSkillMon",
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	name = "selfhp",
 	type = "float",
 	const = 0,
-	name = "selfhp",
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
+	name = "hasUsedEx",
 	type = "bool",
 	const = false,
-	name = "hasUsedEx",
 	value = "false"
 }
 slot4[4] = slot5
 slot5 = {
+	name = "goBackDist",
 	type = "float",
 	const = 0,
-	name = "goBackDist",
 	value = "0"
 }
 slot4[5] = slot5
@@ -3912,10 +3912,10 @@ slot35 = {}
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
-	precondition = true,
+	id = "135",
 	transition = false,
 	effector = false,
-	id = "135",
+	precondition = true,
 	class = "Precondition"
 }
 slot37 = {}
@@ -4421,10 +4421,10 @@ slot29 = {}
 slot28.properties = slot29
 slot29 = {}
 slot30 = {
-	precondition = true,
+	id = "135",
 	transition = false,
 	effector = false,
-	id = "135",
+	precondition = true,
 	class = "Precondition"
 }
 slot31 = {}
@@ -4545,10 +4545,10 @@ slot41 = {}
 slot40.properties = slot41
 slot41 = {}
 slot42 = {
-	precondition = true,
+	id = "104",
 	transition = false,
 	effector = false,
-	id = "104",
+	precondition = true,
 	class = "Precondition"
 }
 slot43 = {}
@@ -4683,10 +4683,10 @@ slot41 = {}
 slot40.properties = slot41
 slot41 = {}
 slot42 = {
-	precondition = true,
+	id = "109",
 	transition = false,
 	effector = false,
-	id = "109",
+	precondition = true,
 	class = "Precondition"
 }
 slot43 = {}

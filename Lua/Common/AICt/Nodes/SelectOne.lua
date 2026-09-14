@@ -10,8 +10,8 @@ slot4 = "SelectOne"
 slot5 = slot0
 slot2 = slot2(slot4, slot5)
 slot3 = {
-	Table = 2,
-	List = 1
+	List = 1,
+	Table = 2
 }
 slot4 = {
 	Random = 3,
@@ -19,8 +19,8 @@ slot4 = {
 	Max = 1
 }
 slot5 = {
-	Key = 1,
-	Value = 2
+	Value = 2,
+	Key = 1
 }
 
 slot6 = function(slot0)

@@ -328,53 +328,78 @@ end
 
 slot7.findOneBuffByTemplateId = slot10
 
-slot10 = function(slot0, slot1)
+slot10 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
-	slot2 = {}
-	slot3 = pairs
-	slot5 = slot0.buffMap
-	slot3, slot4, slot5 = slot3(slot5)
+	slot3 = {}
+	slot4 = pairs
+	slot6 = slot0.buffMap
+	slot4, slot5, slot6 = slot4(slot6)
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
 	--- BLOCK #1 6-9, warpins: 1 ---
-	slot8 = slot7.buffData
-	slot8 = slot8.templateId
+	slot9 = slot8.buffData
+	slot9 = slot9.templateId
 	--- END OF BLOCK #1 ---
 
-	if slot8 == slot1 then
+	if slot9 == slot1 then
 	JUMP TO BLOCK #2
 	else
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	end
 
 
 	--- BLOCK #2 10-14, warpins: 1 ---
-	slot8 = table
-	slot8 = slot8.insert
-	slot10 = slot2
-	slot11 = slot7
-
-	slot8(slot10, slot11)
-
+	slot9 = ToBool
+	slot11 = slot2
+	slot9 = slot9(slot11)
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	slot9 = if slot9 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 15-16, warpins: 3 ---
+	--- BLOCK #3 15-18, warpins: 1 ---
+	slot9 = slot8.buffData
+	slot9 = slot9.srcEntityId
 	--- END OF BLOCK #3 ---
 
-	for slot6, slot7 in slot3, slot4, slot5
-	LOOP BLOCK #1
-	GO OUT TO BLOCK #4
+	if slot9 == slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
 
 
-	--- BLOCK #4 17-17, warpins: 1 ---
-	return slot2
+	--- BLOCK #4 19-23, warpins: 2 ---
+	slot9 = table
+	slot9 = slot9.insert
+	slot11 = slot3
+	slot12 = slot8
+
+	slot9(slot11, slot12)
+
 	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 24-25, warpins: 4 ---
+	--- END OF BLOCK #5 ---
+
+	for slot7, slot8 in slot4, slot5, slot6
+	LOOP BLOCK #1
+	GO OUT TO BLOCK #6
+
+
+	--- BLOCK #6 26-26, warpins: 1 ---
+	return slot3
+	--- END OF BLOCK #6 ---
 
 
 
@@ -559,47 +584,64 @@ slot10 = function(slot0, slot1)
 	slot2 = slot2.buffTag
 	--- END OF BLOCK #0 ---
 
-	if slot2 ~= 0 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 5-6, warpins: 1 ---
+	--- BLOCK #1 5-5, warpins: 1 ---
+	slot2 = 0
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot1 then
-	JUMP TO BLOCK #2
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-7, warpins: 2 ---
+	--- END OF BLOCK #2 ---
+
+	if slot2 ~= 0 then
+	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #2 7-9, warpins: 1 ---
-	slot3 = 0
-	--- END OF BLOCK #2 ---
-
-	if slot1 >= slot3 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 10-13, warpins: 1 ---
-	slot3 = AbilityConst
-	slot3 = slot3.BUFF_TAG_MAX
+	--- BLOCK #3 8-9, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
-	if slot1 <= slot3 then
+	slot3 = if slot1 then
 	JUMP TO BLOCK #4
 	else
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #4 14-24, warpins: 1 ---
+	--- BLOCK #4 10-12, warpins: 1 ---
+	slot3 = 0
+	--- END OF BLOCK #4 ---
+
+	if slot1 >= slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #5 13-16, warpins: 1 ---
+	slot3 = AbilityConst
+	slot3 = slot3.BUFF_TAG_MAX
+	--- END OF BLOCK #5 ---
+
+	if slot1 <= slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 17-27, warpins: 1 ---
 	slot3 = Bitset
 	slot3 = slot3.band
 	slot5 = slot2
@@ -609,33 +651,33 @@ slot10 = function(slot0, slot1)
 	slot9 = slot1 - 1
 	MULTRES = slot6(slot8, slot9)
 	slot3 = slot3(slot5, MULTRES)
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 	if slot3 == 0 then
-	JUMP TO BLOCK #5
+	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #5 25-26, warpins: 4 ---
+	--- BLOCK #7 28-29, warpins: 4 ---
 	slot3 = false
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
+	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #6 27-27, warpins: 1 ---
+	--- BLOCK #8 30-30, warpins: 1 ---
 	slot3 = true
 
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #7
+	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #7 28-28, warpins: 3 ---
+	--- BLOCK #9 31-31, warpins: 3 ---
 	return slot3
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
 
 
@@ -1124,40 +1166,26 @@ slot10 = function(slot0)
 	end
 
 
-	--- BLOCK #1 4-25, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.abilityMgr
-	slot1 = slot1.constCasterInfoPool
-	slot3 = slot1
-	slot1 = slot1.returnObject
-	slot4 = slot0.defaultCombatContext
-	slot4 = slot4.constCasterInfo
-
-	slot1(slot3, slot4)
-
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.abilityMgr
-	slot1 = slot1.combatContextPool
-	slot3 = slot1
-	slot1 = slot1.returnObject
-	slot4 = slot0.defaultCombatContext
-
-	slot1(slot3, slot4)
-
+	--- BLOCK #1 4-14, warpins: 1 ---
 	slot1 = slot0.defaultCombatContext
 	slot2 = nil
-	slot1.constCasterInfo = slot2
-	slot1 = nil
-	slot0.defaultCombatContext = slot1
+	slot0.defaultCombatContext = slot2
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.abilityMgr
+	slot2 = slot2.combatContextPool
+	slot4 = slot2
+	slot2 = slot2.returnObject
+	slot5 = slot1
+
+	slot2(slot4, slot5)
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 26-26, warpins: 2 ---
+	--- BLOCK #2 15-15, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -1179,7 +1207,7 @@ slot10 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 4-38, warpins: 1 ---
+	--- BLOCK #1 4-33, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.abilityMgr
@@ -1206,23 +1234,20 @@ slot10 = function(slot0, slot1)
 	slot3 = slot3(slot5)
 	slot2.id = slot3
 	slot2 = slot0.defaultCombatContext
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.abilityMgr
-	slot3 = slot3.constCasterInfoPool
-	slot5 = slot3
-	slot3 = slot3.getWithCtor
-	slot6 = true
-	slot7 = slot0.owner
-	slot7 = slot7.actorId
-	slot3 = slot3(slot5, slot6, slot7)
-	slot2.constCasterInfo = slot3
+	slot4 = slot2
+	slot2 = slot2.setConstCasterInfo
+	slot5 = nil
+	slot6 = slot0.owner
+	slot6 = slot6.actorId
+
+	slot2(slot4, slot5, slot6)
+
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 39-50, warpins: 2 ---
+	--- BLOCK #2 34-45, warpins: 2 ---
 	slot2 = pg
 	slot2 = slot2.global
 	slot2 = slot2.abilityMgr

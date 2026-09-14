@@ -1,62 +1,65 @@
---- BLOCK #0 1-76, warpins: 1 ---
+--- BLOCK #0 1-79, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Guis.UIModel"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
-slot2 = slot0.LightClass
-slot4 = "PvpMenuModel"
-slot5 = slot1
-slot2 = slot2(slot4, slot5)
-slot3 = require
-slot5 = "Data.pet_data"
-slot3 = slot3(slot5)
+slot2 = require
+slot4 = "Guis.UIModel"
+slot2 = slot2(slot4)
+slot3 = slot1.LightClass
+slot5 = "PvpMenuModel"
+slot6 = slot2
+slot3 = slot3(slot5, slot6)
 slot4 = require
-slot6 = "CustomTypes.FairPvpPreset"
+slot6 = "Data.pet_data"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "CustomTypes.UnFairPvpPreset"
+slot7 = "CustomTypes.FairPvpPreset"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Utils.LuaUIUtils"
+slot8 = "CustomTypes.UnFairPvpPreset"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Data.pvp_mode_data"
+slot9 = "Utils.LuaUIUtils"
 slot7 = slot7(slot9)
 slot8 = require
-slot10 = "Data.pvp_rank_data"
+slot10 = "Data.pvp_mode_data"
 slot8 = slot8(slot10)
 slot9 = require
-slot11 = "Common.Utils.ItemUtils"
+slot11 = "Data.pvp_rank_data"
 slot9 = slot9(slot11)
 slot10 = require
-slot12 = "Common.Const.ItemConst"
+slot12 = "Common.Utils.ItemUtils"
 slot10 = slot10(slot12)
 slot11 = require
-slot13 = "Data.item_data"
+slot13 = "Common.Const.ItemConst"
 slot11 = slot11(slot13)
 slot12 = require
-slot14 = "Common.Bitset"
+slot14 = "Data.item_data"
 slot12 = slot12(slot14)
 slot13 = require
-slot15 = "Data.tmp_pet_template_data"
+slot15 = "Common.Bitset"
 slot13 = slot13(slot15)
 slot14 = require
-slot16 = "Common.Utils.Utils"
+slot16 = "Data.tmp_pet_template_data"
 slot14 = slot14(slot16)
 slot15 = require
-slot17 = "Utils.ClientTextUtils"
+slot17 = "Common.Utils.Utils"
 slot15 = slot15(slot17)
-slot16 = Vector3
-slot16 = slot16.New
-slot18 = 10000
-slot19 = 600
-slot20 = 0
-slot16 = slot16(slot18, slot19, slot20)
-slot2.STAGE_OFFSET = slot16
+slot16 = require
+slot18 = "Utils.ClientTextUtils"
+slot16 = slot16(slot18)
+slot17 = Vector3
+slot17 = slot17.New
+slot19 = 10000
+slot20 = 600
+slot21 = 0
+slot17 = slot17(slot19, slot20, slot21)
+slot3.STAGE_OFFSET = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getTeamList
@@ -128,60 +131,62 @@ slot16 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #6 30-39, warpins: 1 ---
-	slot10 = pg
-	slot10 = slot10.me
-	slot10 = slot10.pets
-	slot10 = slot10[slot7]
+	--- BLOCK #6 30-40, warpins: 1 ---
+	slot10 = slot7
 	slot11 = pg
 	slot11 = slot11.me
-	slot11 = slot11.petJewelryInfos
-	slot11 = slot11[slot7]
+	slot11 = slot11.pets
+	slot11 = slot11[slot10]
+	slot12 = pg
+	slot12 = slot12.me
+	slot12 = slot12.petJewelryInfos
+	slot12 = slot12[slot10]
 	--- END OF BLOCK #6 ---
 
-	slot11 = if slot11 then
+	slot12 = if slot12 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 40-44, warpins: 1 ---
-	slot11 = pg
-	slot11 = slot11.me
-	slot11 = slot11.petJewelryInfos
-	slot11 = slot11[slot7]
-	slot9.appearanceData = slot11
+	--- BLOCK #7 41-45, warpins: 1 ---
+	slot12 = pg
+	slot12 = slot12.me
+	slot12 = slot12.petJewelryInfos
+	slot12 = slot12[slot10]
+	slot9.appearanceData = slot12
 	--- END OF BLOCK #7 ---
 
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 45-46, warpins: 2 ---
+	--- BLOCK #8 46-47, warpins: 2 ---
 	--- END OF BLOCK #8 ---
 
-	slot10 = if slot10 then
+	slot11 = if slot11 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 47-54, warpins: 1 ---
-	slot7 = slot10.templateId
-	slot11 = PetData
-	slot12 = slot10.templateId
-	slot8 = slot11[slot12]
-	slot11 = slot10.label
-	slot9.label = slot11
-	slot11 = slot10.gender
-	slot9.gender = slot11
+	--- BLOCK #9 48-56, warpins: 1 ---
+	slot9.petId = slot10
+	slot7 = slot11.templateId
+	slot12 = PetData
+	slot13 = slot11.templateId
+	slot8 = slot12[slot13]
+	slot12 = slot11.label
+	slot9.label = slot12
+	slot12 = slot11.gender
+	slot9.gender = slot12
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 55-57, warpins: 4 ---
+	--- BLOCK #10 57-59, warpins: 4 ---
 	slot9.templateId = slot7
 	--- END OF BLOCK #10 ---
 
@@ -192,7 +197,7 @@ slot16 = function(slot0)
 	end
 
 
-	--- BLOCK #11 58-96, warpins: 1 ---
+	--- BLOCK #11 60-105, warpins: 1 ---
 	slot10 = LuaUIUtils
 	slot10 = slot10.getPetIconByTemplateId
 	slot12 = slot7
@@ -218,6 +223,13 @@ slot16 = function(slot0)
 	slot12 = slot12(slot14)
 	slot9.isBoss = slot12
 	slot12 = Utils
+	slot12 = slot12.isLabelRainbow
+	slot14 = TmpPetTemplateData
+	slot14 = slot14[slot7]
+	slot14 = slot14.label
+	slot12 = slot12(slot14)
+	slot9.isMini = slot12
+	slot12 = Utils
 	slot12 = slot12.isLabelShiny
 	slot14 = TmpPetTemplateData
 	slot14 = slot14[slot7]
@@ -236,7 +248,7 @@ slot16 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 97-98, warpins: 1 ---
+	--- BLOCK #12 106-107, warpins: 1 ---
 	slot10 = true
 	slot9.empty = slot10
 	--- END OF BLOCK #12 ---
@@ -244,7 +256,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 99-99, warpins: 2 ---
+	--- BLOCK #13 108-108, warpins: 2 ---
 	slot2[slot6] = slot9
 
 	--- END OF BLOCK #13 ---
@@ -252,7 +264,7 @@ slot16 = function(slot0)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 100-101, warpins: 2 ---
+	--- BLOCK #14 109-110, warpins: 2 ---
 	--- END OF BLOCK #14 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -260,7 +272,7 @@ slot16 = function(slot0)
 	GO OUT TO BLOCK #15
 
 
-	--- BLOCK #15 102-102, warpins: 1 ---
+	--- BLOCK #15 111-111, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #15 ---
 
@@ -268,9 +280,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getSelectedPetList = slot16
+slot3.getSelectedPetList = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
@@ -384,9 +396,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getTeamList = slot16
+slot3.getTeamList = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = PvpModeData
 	slot2 = pg
@@ -496,9 +508,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.satisfyMinTeamNum = slot16
+slot3.satisfyMinTeamNum = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-26, warpins: 1 ---
 	slot1 = ItemUtils
 	slot1 = slot1.getItemCountById
@@ -533,9 +545,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getScoreAndRank = slot16
+slot3.getScoreAndRank = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = {}
 	slot2 = ItemUtils
@@ -648,7 +660,7 @@ slot16 = function(slot0)
 
 
 	--- BLOCK #5 43-43, warpins: 1 ---
-	slot13 = {}
+	slot13 = EMPTY_TABLE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -857,9 +869,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getRewardList = slot16
+slot3.getRewardList = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getRewardList
@@ -924,9 +936,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getNextReward = slot16
+slot3.getNextReward = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = PvpModeData
 	slot2 = pg
@@ -965,9 +977,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getModeName = slot16
+slot3.getModeName = slot17
 
-slot16 = function(slot0)
+slot17 = function(slot0)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot1 = PvpModeData
 	slot2 = pg
@@ -1005,9 +1017,9 @@ slot16 = function(slot0)
 
 end
 
-slot2.getMinMun = slot16
+slot3.getMinMun = slot17
 
-slot16 = function(slot0, slot1)
+slot17 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = pg
 	slot2 = slot2.game
@@ -1024,9 +1036,9 @@ slot16 = function(slot0, slot1)
 
 end
 
-slot2.getPlayerInfoWithUid = slot16
+slot3.getPlayerInfoWithUid = slot17
 
-return slot2
+return slot3
 --- END OF BLOCK #0 ---
 
 

@@ -124,54 +124,40 @@ slot7 = function(slot0)
 	slot4 = slot4.Failure
 	--- END OF BLOCK #0 ---
 
-	if slot3 ~= slot4 then
+	if slot3 == slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #7
 	end
 
 
-	--- BLOCK #1 10-15, warpins: 1 ---
-	slot3 = slot1.result
-	slot4 = Const
-	slot4 = slot4.ROB_EGG_RESULT
-	slot4 = slot4.BecameEggFailure
-	--- END OF BLOCK #1 ---
-
-	if slot3 == slot4 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #8
-	end
-
-
-	--- BLOCK #2 16-20, warpins: 2 ---
+	--- BLOCK #1 10-14, warpins: 1 ---
 	slot3 = Const
 	slot3 = slot3.ROBEGG_DEATH_REASON
 	slot3 = slot3.KILLED_BY_PLAYER
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #1 ---
 
 	if slot2 ~= slot3 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 15-19, warpins: 1 ---
+	slot3 = Const
+	slot3 = slot3.ROBEGG_DEATH_REASON
+	slot3 = slot3.ACCIDENGTAL_DEATH
+	--- END OF BLOCK #2 ---
+
+	if slot2 == slot3 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 21-25, warpins: 1 ---
-	slot3 = Const
-	slot3 = slot3.ROBEGG_DEATH_REASON
-	slot3 = slot3.ACCIDENGTAL_DEATH
-	--- END OF BLOCK #3 ---
-
-	if slot2 == slot3 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 26-33, warpins: 2 ---
+	--- BLOCK #3 20-27, warpins: 2 ---
 	slot3 = slot0.view
 	slot3 = slot3.rootUWidget
 	slot5 = slot3
@@ -181,25 +167,40 @@ slot7 = function(slot0)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #5 34-38, warpins: 1 ---
+	--- BLOCK #4 28-32, warpins: 1 ---
 	slot3 = Const
 	slot3 = slot3.ROBEGG_DEATH_REASON
 	slot3 = slot3.TIME_OUT
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #4 ---
 
 	if slot2 == slot3 then
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #6 39-46, warpins: 1 ---
+	--- BLOCK #5 33-40, warpins: 1 ---
+	slot3 = slot0.view
+	slot3 = slot3.rootUWidget
+	slot5 = slot3
+	slot3 = slot3.TryChangePage
+	slot6 = "Type"
+	slot7 = 2
+
+	slot3(slot5, slot6, slot7)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #6 41-48, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.rootUWidget
 	slot5 = slot3
@@ -211,25 +212,10 @@ slot7 = function(slot0)
 
 	--- END OF BLOCK #6 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
 
 
-	--- BLOCK #7 47-54, warpins: 1 ---
-	slot3 = slot0.view
-	slot3 = slot3.rootUWidget
-	slot5 = slot3
-	slot3 = slot3.TryChangePage
-	slot6 = "Type"
-	slot7 = 2
-
-	slot3(slot5, slot6, slot7)
-
-	--- END OF BLOCK #7 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #9
-
-
-	--- BLOCK #8 55-61, warpins: 1 ---
+	--- BLOCK #7 49-55, warpins: 1 ---
 	slot3 = slot0.view
 	slot3 = slot3.rootUWidget
 	slot5 = slot3
@@ -239,12 +225,12 @@ slot7 = function(slot0)
 
 	slot3(slot5, slot6, slot7)
 
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #9
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #9 62-70, warpins: 4 ---
+	--- BLOCK #8 56-64, warpins: 4 ---
 	slot3 = ClientTextUtils
 	slot3 = slot3.setText
 	slot5 = slot0.view
@@ -256,7 +242,7 @@ slot7 = function(slot0)
 	slot3(slot5, MULTRES)
 
 	return
-	--- END OF BLOCK #9 ---
+	--- END OF BLOCK #8 ---
 
 
 

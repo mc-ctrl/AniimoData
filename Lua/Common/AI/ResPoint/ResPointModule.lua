@@ -1,30 +1,33 @@
---- BLOCK #0 1-82, warpins: 1 ---
+--- BLOCK #0 1-85, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Framework.Class"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Common.Utils.Utils"
+slot3 = "Core.Framework.Class"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Utils.ResPointUtils"
+slot4 = "Common.Utils.Utils"
 slot2 = slot2(slot4)
 slot3 = require
-slot5 = "Common.Const.ResPointConst"
+slot5 = "Common.Utils.ResPointUtils"
 slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Timer.TimerManager"
+slot6 = "Common.Const.ResPointConst"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Core.Common.CallbackHandler"
+slot7 = "Core.Timer.TimerManager"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Core.Common.Time"
+slot8 = "Core.Common.CallbackHandler"
 slot6 = slot6(slot8)
-slot7 = slot0.LightClass
-slot9 = "ResPointModule"
+slot7 = require
+slot9 = "Core.Common.Time"
 slot7 = slot7(slot9)
+slot8 = slot1.LightClass
+slot10 = "ResPointModule"
+slot8 = slot8(slot10)
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-19, warpins: 1 ---
 	slot1 = {}
 	slot0.chunkStaticIds = slot1
@@ -88,9 +91,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.ctor = slot8
+slot8.ctor = slot9
 
-slot8 = function(slot0, slot1, slot2)
+slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0.space = slot1
 	slot0.sceneId = slot2
@@ -102,9 +105,9 @@ slot8 = function(slot0, slot1, slot2)
 
 end
 
-slot7.init = slot8
+slot8.init = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = slot0.tickTimer
 	slot2 = slot2 + slot1
@@ -207,9 +210,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onTick = slot8
+slot8.onTick = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = Utils
 	slot1 = slot1.checkClient
@@ -268,9 +271,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.onDestroy = slot8
+slot8.onDestroy = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -486,9 +489,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onChunkLoad = slot8
+slot8.onChunkLoad = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -582,9 +585,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onChunkUnload = slot8
+slot8.onChunkUnload = slot9
 
-slot8 = function(slot0, slot1, slot2, slot3, slot4)
+slot9 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-35, warpins: 1 ---
 	slot5 = ResPointUtils
 	slot5 = slot5.Log
@@ -630,9 +633,9 @@ slot8 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot7.__loadResPointEntity = slot8
+slot8.__loadResPointEntity = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot2 = ResPointUtils
 	slot2 = slot2.Log
@@ -672,45 +675,72 @@ slot8 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 14-18, warpins: 2 ---
+	--- BLOCK #3 14-20, warpins: 2 ---
 	slot2 = slot0.staticRpEnts
 	slot2 = slot2[slot1]
-	slot3 = slot2.destroyed
+	slot3 = Utils
+	slot3 = slot3.checkClient
+	slot3 = slot3()
 	--- END OF BLOCK #3 ---
 
-	slot3 = if not slot3 then
+	slot3 = if slot3 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
 	end
 
 
-	--- BLOCK #4 19-21, warpins: 1 ---
+	--- BLOCK #4 21-27, warpins: 1 ---
+	slot3 = require
+	slot5 = "Utils.ClientUtils"
+	slot3 = slot3(slot5)
+	slot4 = slot3.safeDestroy
+	slot6 = slot2
+
+	slot4(slot6)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 28-30, warpins: 1 ---
+	slot3 = slot2.destroyed
+	--- END OF BLOCK #5 ---
+
+	slot3 = if not slot3 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 31-33, warpins: 1 ---
 	slot5 = slot2
 	slot3 = slot2.destroy
 
 	slot3(slot5)
 
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #5
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 22-25, warpins: 2 ---
+	--- BLOCK #7 34-37, warpins: 3 ---
 	slot3 = slot0.staticRpEnts
 	slot4 = nil
 	slot3[slot1] = slot4
 
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot7.__unloadResPointEntity = slot8
+slot8.__unloadResPointEntity = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.__getCurrentAllResPointStaticIds
@@ -758,9 +788,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.__unloadAllResPointEntity = slot8
+slot8.__unloadAllResPointEntity = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = {}
 	slot2 = pairs
@@ -800,9 +830,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.__getCurrentAllResPointStaticIds = slot8
+slot8.__getCurrentAllResPointStaticIds = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.staticRpEnts
 	slot2 = slot2[slot1]
@@ -814,9 +844,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.getResPointEntByStaticId = slot8
+slot8.getResPointEntByStaticId = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.dynamicPoints
 
@@ -827,9 +857,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.getDynamicResPoints = slot8
+slot8.getDynamicResPoints = slot9
 
-slot8 = function(slot0)
+slot9 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	slot1 = slot0.formationPoints
 
@@ -840,9 +870,9 @@ slot8 = function(slot0)
 
 end
 
-slot7.getFormationResPoints = slot8
+slot8.getFormationResPoints = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -983,9 +1013,9 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onResPointInit = slot8
+slot8.onResPointInit = slot9
 
-slot8 = function(slot0, slot1)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = Utils
 	slot2 = slot2.checkClient
@@ -1126,39 +1156,39 @@ slot8 = function(slot0, slot1)
 
 end
 
-slot7.onResPointDestroy = slot8
-slot8 = {
+slot8.onResPointDestroy = slot9
+slot9 = {
 	1
 }
-slot9 = {
+slot10 = {
 	0.8
 }
-slot10 = {
-	g = 0,
-	b = 0,
-	r = 1,
-	a = 0.4196078431372549
-}
 slot11 = {
-	g = 1,
-	b = 0,
-	r = 0,
-	a = 0.4196078431372549
+	a = 0.4196078431372549,
+	r = 1,
+	g = 0,
+	b = 0
 }
 slot12 = {
-	g = 0,
-	b = 1,
+	a = 0.4196078431372549,
 	r = 0,
-	a = 0.6274509803921569
+	g = 1,
+	b = 0
 }
 slot13 = {
-	g = 0.92,
-	b = 0.016,
+	a = 0.6274509803921569,
+	r = 0,
+	g = 0,
+	b = 1
+}
+slot14 = {
+	a = 0.4196078431372549,
 	r = 1,
-	a = 0.4196078431372549
+	g = 0.92,
+	b = 0.016
 }
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = ResPointConst
 	slot2 = slot2.DebugDrawEntActorId
@@ -1217,9 +1247,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot7._checkNeedDraw = slot14
+slot8._checkNeedDraw = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = ResPointConst
 	slot1 = slot1.OpenDebugDraw
@@ -1364,9 +1394,9 @@ slot14 = function(slot0)
 
 end
 
-slot7._debugDraw = slot14
+slot8._debugDraw = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = 9
 	slot5 = slot1
@@ -1400,9 +1430,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot7._debugDrawPoint = slot14
+slot8._debugDrawPoint = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot2 = 9
 	slot5 = slot1
@@ -1436,9 +1466,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot7._debugDrawPort = slot14
+slot8._debugDrawPort = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = slot1.owner
 	slot4 = slot2
@@ -1606,9 +1636,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot7._debugDrawDirDesc = slot14
+slot8._debugDrawDirDesc = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = 1
 	slot3 = ResPointConst
@@ -1683,9 +1713,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot7._debugDrawFormationPos = slot14
+slot8._debugDrawFormationPos = slot15
 
-slot14 = function(slot0, slot1, slot2)
+slot15 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = slot0.debugBaseInfo
 	--- END OF BLOCK #0 ---
@@ -1746,7 +1776,7 @@ slot14 = function(slot0, slot1, slot2)
 
 
 	--- BLOCK #5 22-22, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -1805,9 +1835,9 @@ slot14 = function(slot0, slot1, slot2)
 
 end
 
-slot7._setDebugInfo = slot14
+slot8._setDebugInfo = slot15
 
-slot14 = function(slot0)
+slot15 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.getEntityByActorId
@@ -1848,9 +1878,9 @@ slot14 = function(slot0)
 
 end
 
-slot7.debugGetCenterActorPos = slot14
+slot8.debugGetCenterActorPos = slot15
 
-slot14 = function(slot0, slot1)
+slot15 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = ResPointUtils
 	slot2 = slot2.GetResPointInEntity
@@ -2153,7 +2183,7 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #25 130-130, warpins: 1 ---
-	slot11 = {}
+	slot11 = EMPTY_TABLE
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
@@ -2171,7 +2201,7 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #27 134-134, warpins: 1 ---
-	slot11 = {}
+	slot11 = EMPTY_TABLE
 	--- END OF BLOCK #27 ---
 
 	FLOW; TARGET BLOCK #28
@@ -2209,7 +2239,7 @@ slot14 = function(slot0, slot1)
 
 
 	--- BLOCK #31 144-144, warpins: 1 ---
-	slot11 = {}
+	slot11 = EMPTY_TABLE
 	--- END OF BLOCK #31 ---
 
 	FLOW; TARGET BLOCK #32
@@ -2277,7 +2307,7 @@ slot14 = function(slot0, slot1)
 
 	--- BLOCK #37 172-177, warpins: 1 ---
 	slot13 = Time
-	slot13 = slot13.secondCache
+	slot13 = slot13.realSecondCache
 	slot14 = slot9.startTime
 	slot13 = slot13 - slot14
 	--- END OF BLOCK #37 ---
@@ -2321,9 +2351,9 @@ slot14 = function(slot0, slot1)
 
 end
 
-slot7.debugGetResPointDetailInfo = slot14
+slot8.debugGetResPointDetailInfo = slot15
 
-slot14 = function(slot0, slot1, slot2, slot3, slot4)
+slot15 = function(slot0, slot1, slot2, slot3, slot4)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot5 = string
 	slot5 = slot5.isNilOrEmpty
@@ -2406,9 +2436,9 @@ slot14 = function(slot0, slot1, slot2, slot3, slot4)
 
 end
 
-slot7.debugGetResPointPortInRange = slot14
+slot8.debugGetResPointPortInRange = slot15
 
-return slot7
+return slot8
 --- END OF BLOCK #0 ---
 
 

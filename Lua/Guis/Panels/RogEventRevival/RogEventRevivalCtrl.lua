@@ -269,7 +269,7 @@ end
 slot8.refreshShow = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
+	--- BLOCK #0 1-21, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.listPet
 
@@ -361,16 +361,18 @@ slot9 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getPetListRenderInfo
+	slot1 = slot1(slot3)
+	slot0.showList = slot1
 	slot1 = slot0.view
 	slot1 = slot1.listPet
 	slot3 = slot1
 	slot1 = slot1.SetList
-	slot4 = slot0.model
-	slot6 = slot4
-	slot4 = slot4.getPetListRenderInfo
-	MULTRES = slot4(slot6)
+	slot4 = slot0.showList
 
-	slot1(slot3, MULTRES)
+	slot1(slot3, slot4)
 
 	return
 	--- END OF BLOCK #0 ---
@@ -679,10 +681,8 @@ end
 slot8.refreshRevivalInfo = slot9
 
 slot9 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.space
-	slot1 = slot1.petInfos
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.showList
 	--- END OF BLOCK #0 ---
 
 	slot1 = if slot1 then
@@ -692,7 +692,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #1 6-8, warpins: 1 ---
+	--- BLOCK #1 4-6, warpins: 1 ---
 	slot2 = slot0.selectEntityId
 	--- END OF BLOCK #1 ---
 
@@ -703,7 +703,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #2 9-12, warpins: 1 ---
+	--- BLOCK #2 7-10, warpins: 1 ---
 	slot2 = ipairs
 	slot4 = slot1
 	slot2, slot3, slot4 = slot2(slot4)
@@ -712,7 +712,7 @@ slot9 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #3 13-16, warpins: 1 ---
+	--- BLOCK #3 11-14, warpins: 1 ---
 	slot7 = slot6.id
 	slot8 = slot0.selectEntityId
 	--- END OF BLOCK #3 ---
@@ -724,7 +724,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #4 17-24, warpins: 1 ---
+	--- BLOCK #4 15-22, warpins: 1 ---
 	slot7 = slot0.view
 	slot7 = slot7.listPet
 	slot9 = slot7
@@ -740,7 +740,7 @@ slot9 = function(slot0)
 	end
 
 
-	--- BLOCK #5 25-27, warpins: 1 ---
+	--- BLOCK #5 23-25, warpins: 1 ---
 	slot9 = slot5
 	slot10 = slot8
 
@@ -750,7 +750,7 @@ slot9 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 28-29, warpins: 4 ---
+	--- BLOCK #6 26-27, warpins: 4 ---
 	--- END OF BLOCK #6 ---
 
 	for slot5, slot6 in slot2, slot3, slot4
@@ -758,7 +758,7 @@ slot9 = function(slot0)
 	GO OUT TO BLOCK #7
 
 
-	--- BLOCK #7 30-30, warpins: 3 ---
+	--- BLOCK #7 28-28, warpins: 3 ---
 	return
 	--- END OF BLOCK #7 ---
 

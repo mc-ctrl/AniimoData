@@ -1,4 +1,4 @@
---- BLOCK #0 1-6840, warpins: 1 ---
+--- BLOCK #0 1-7489, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,7 +7,7 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	version = 138,
+	version = 144,
 	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_Minespine",
 	useForRoute = false,
 	agenttype = "PuppetAgent"
@@ -16,65 +16,65 @@ slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "goBackDist",
-	const = 0,
 	type = "float",
+	const = 0,
+	name = "goBackDist",
 	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "selfhp",
-	const = 0,
 	type = "float",
+	const = 0,
+	name = "selfhp",
 	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "disToTgtForSkillMon",
-	const = 0,
 	type = "float",
+	const = 0,
+	name = "disToTgtForSkillMon",
 	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "creations",
-	const = 0,
 	type = "int",
+	const = 0,
+	name = "creations",
 	value = "0"
 }
 slot4[4] = slot5
 slot5 = {
-	name = "RandomYaw",
-	const = 0,
 	type = "float",
+	const = 0,
+	name = "RandomYaw",
 	value = "0"
 }
 slot4[5] = slot5
 slot5 = {
-	name = "battlestage",
-	const = 0,
 	type = "int",
+	const = 0,
+	name = "battlestage",
 	value = "0"
 }
 slot4[6] = slot5
 slot5 = {
-	name = "disToBornPos",
-	const = 0,
 	type = "float",
+	const = 0,
+	name = "disToBornPos",
 	value = "0"
 }
 slot4[7] = slot5
 slot5 = {
-	name = "skillfail",
-	const = 0,
 	type = "int",
+	const = 0,
+	name = "skillfail",
 	value = "0"
 }
 slot4[8] = slot5
 slot5 = {
-	name = "happyaction",
-	const = 0,
 	type = "int",
+	const = 0,
+	name = "happyaction",
 	value = "0"
 }
 slot4[9] = slot5
@@ -582,30 +582,117 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "227",
-	class = "Condition"
+	id = "665",
+	class = "And"
 }
 slot17 = {}
-slot18 = {
-	Operator = "Equal"
-}
-slot17[1] = slot18
-slot18 = {}
-slot19 = {
-	field = "battlestage"
-}
-slot18.Opl = slot19
-slot17[2] = slot18
-slot18 = {}
-slot19 = {
-	const = 0
-}
-slot18.Opr = slot19
-slot17[3] = slot18
 slot16.properties = slot17
 slot17 = {}
 slot16.attachments = slot17
 slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "664",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "NotEqual"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkIsInBreakRecover"
+}
+slot23 = {}
+slot24 = {
+	field = "selfId"
+}
+slot23[1] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "227",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "battlestage"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 0
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot18 = {}
+slot19 = {
+	id = "700",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkCanUseSkill"
+}
+slot23 = {}
+slot24 = {
+	field = "selfId"
+}
+slot23[1] = slot24
+slot24 = {
+	const = 12851003
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[3] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[1] = slot15
@@ -621,36 +708,84 @@ slot16.attachments = slot17
 slot17 = {}
 slot18 = {}
 slot19 = {
-	id = "33",
-	class = "Condition"
+	id = "669",
+	class = "And"
 }
 slot20 = {}
-slot21 = {
-	Operator = "Less"
-}
-slot20[1] = slot21
-slot21 = {}
-slot22 = {
-	func = "getHpPercent"
-}
-slot23 = {}
-slot24 = {
-	field = "selfId"
-}
-slot23[1] = slot24
-slot22.params = slot23
-slot21.Opl = slot22
-slot20[2] = slot21
-slot21 = {}
-slot22 = {
-	const = 0.8
-}
-slot21.Opr = slot22
-slot20[3] = slot21
 slot19.properties = slot20
 slot20 = {}
 slot19.attachments = slot20
 slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "668",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Greater"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "getHpPercent"
+}
+slot26 = {}
+slot27 = {
+	field = "selfId"
+}
+slot26[1] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = 0.5
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "33",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "Less"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "getHpPercent"
+}
+slot26 = {}
+slot27 = {
+	field = "selfId"
+}
+slot26[1] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = 0.8
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[1] = slot18
@@ -1065,17 +1200,17 @@ slot30 = {
 }
 slot29[2] = slot30
 slot30 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot30 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot31 = {}
 slot32 = {
@@ -1096,7 +1231,8 @@ slot32 = {}
 slot33 = {
 	const = true
 }
-slot32.Opr2 = slot33
+slot34 = "Opr2"
+slot32[slot34] = slot33
 slot31[4] = slot32
 slot32 = {
 	Phase = "Enter"
@@ -1169,11 +1305,11 @@ slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -1194,7 +1330,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -1209,30 +1346,80 @@ slot30.node = slot31
 slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	id = "540",
-	class = "Assignment"
+	id = "681",
+	class = "Sequence"
 }
 slot32 = {}
-slot33 = {
-	CastRight = "false"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	field = "skillfail"
-}
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 1
-}
-slot33.Opr = slot34
-slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot31.attachments = slot32
 slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "540",
+	class = "Assignment"
+}
+slot35 = {}
+slot36 = {
+	CastRight = "false"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "skillfail"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 1
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "682",
+	class = "Action"
+}
+slot35 = {}
+slot36 = {}
+slot37 = {
+	func = "addBuff"
+}
+slot38 = {}
+slot39 = {
+	const = 1000601
+}
+slot38[1] = slot39
+slot39 = {
+	const = 0
+}
+slot38[2] = slot39
+slot37.params = slot38
+slot36.Method = slot37
+slot35[1] = slot36
+slot36 = {
+	ResultOption = "BT_INVALID"
+}
+slot35[2] = slot36
+slot36 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
 slot31.children = slot32
 slot30.node = slot31
 slot29[2] = slot30
@@ -1457,17 +1644,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -1488,7 +1675,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -1561,11 +1749,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -1586,7 +1774,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -1601,30 +1790,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "537",
-	class = "Assignment"
+	id = "695",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "537",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "696",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -1717,17 +1956,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -1748,7 +1987,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -1821,11 +2061,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -1846,7 +2086,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -1861,30 +2102,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "533",
-	class = "Assignment"
+	id = "679",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "533",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "680",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -2231,17 +2522,17 @@ slot30 = {
 }
 slot29[2] = slot30
 slot30 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot30 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot31 = {}
 slot32 = {
@@ -2262,7 +2553,8 @@ slot32 = {}
 slot33 = {
 	const = true
 }
-slot32.Opr2 = slot33
+slot34 = "Opr2"
+slot32[slot34] = slot33
 slot31[4] = slot32
 slot32 = {
 	Phase = "Enter"
@@ -2335,11 +2627,11 @@ slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -2360,7 +2652,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -2375,30 +2668,80 @@ slot30.node = slot31
 slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	id = "530",
-	class = "Assignment"
+	id = "677",
+	class = "Sequence"
 }
 slot32 = {}
-slot33 = {
-	CastRight = "false"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	field = "skillfail"
-}
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 1
-}
-slot33.Opr = slot34
-slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot31.attachments = slot32
 slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "530",
+	class = "Assignment"
+}
+slot35 = {}
+slot36 = {
+	CastRight = "false"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "skillfail"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 1
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "678",
+	class = "Action"
+}
+slot35 = {}
+slot36 = {}
+slot37 = {
+	func = "addBuff"
+}
+slot38 = {}
+slot39 = {
+	const = 1000601
+}
+slot38[1] = slot39
+slot39 = {
+	const = 0
+}
+slot38[2] = slot39
+slot37.params = slot38
+slot36.Method = slot37
+slot35[1] = slot36
+slot36 = {
+	ResultOption = "BT_INVALID"
+}
+slot35[2] = slot36
+slot36 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
 slot31.children = slot32
 slot30.node = slot31
 slot29[2] = slot30
@@ -2726,17 +3069,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -2757,7 +3100,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -2830,11 +3174,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -2855,7 +3199,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -2870,30 +3215,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "528",
-	class = "Assignment"
+	id = "673",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "528",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "674",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -3040,17 +3435,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -3071,7 +3466,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -3144,11 +3540,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -3169,7 +3565,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -3184,30 +3581,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "525",
-	class = "Assignment"
+	id = "675",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "525",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "676",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -3228,14 +3675,91 @@ slot18.node = slot19
 slot17[2] = slot18
 slot18 = {}
 slot19 = {
-	id = "32",
-	class = "True"
+	id = "670",
+	class = "IfElse"
 }
 slot20 = {}
 slot19.properties = slot20
 slot20 = {}
 slot19.attachments = slot20
 slot20 = {}
+slot21 = {}
+slot22 = {
+	id = "671",
+	class = "Condition"
+}
+slot23 = {}
+slot24 = {
+	Operator = "LessEqual"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	func = "getHpPercent"
+}
+slot26 = {}
+slot27 = {
+	field = "selfId"
+}
+slot26[1] = slot27
+slot25.params = slot26
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = 0.5
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	id = "672",
+	class = "Assignment"
+}
+slot23 = {}
+slot24 = {
+	CastRight = "false"
+}
+slot23[1] = slot24
+slot24 = {}
+slot25 = {
+	field = "battlestage"
+}
+slot24.Opl = slot25
+slot23[2] = slot24
+slot24 = {}
+slot25 = {
+	const = 1
+}
+slot24.Opr = slot25
+slot23[3] = slot24
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	id = "32",
+	class = "True"
+}
+slot23 = {}
+slot22.properties = slot23
+slot23 = {}
+slot22.attachments = slot23
+slot23 = {}
+slot22.children = slot23
+slot21.node = slot22
+slot20[3] = slot21
 slot19.children = slot20
 slot18.node = slot19
 slot17[3] = slot18
@@ -3270,30 +3794,117 @@ slot13.attachments = slot14
 slot14 = {}
 slot15 = {}
 slot16 = {
-	id = "459",
-	class = "Condition"
+	id = "667",
+	class = "And"
 }
 slot17 = {}
-slot18 = {
-	Operator = "Equal"
-}
-slot17[1] = slot18
-slot18 = {}
-slot19 = {
-	field = "battlestage"
-}
-slot18.Opl = slot19
-slot17[2] = slot18
-slot18 = {}
-slot19 = {
-	const = 1
-}
-slot18.Opr = slot19
-slot17[3] = slot18
 slot16.properties = slot17
 slot17 = {}
 slot16.attachments = slot17
 slot17 = {}
+slot18 = {}
+slot19 = {
+	id = "666",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "NotEqual"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkIsInBreakRecover"
+}
+slot23 = {}
+slot24 = {
+	field = "selfId"
+}
+slot23[1] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[1] = slot18
+slot18 = {}
+slot19 = {
+	id = "459",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	field = "battlestage"
+}
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = 1
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[2] = slot18
+slot18 = {}
+slot19 = {
+	id = "697",
+	class = "Condition"
+}
+slot20 = {}
+slot21 = {
+	Operator = "Equal"
+}
+slot20[1] = slot21
+slot21 = {}
+slot22 = {
+	func = "checkCanUseSkill"
+}
+slot23 = {}
+slot24 = {
+	field = "selfId"
+}
+slot23[1] = slot24
+slot24 = {
+	const = 12851003
+}
+slot23[2] = slot24
+slot22.params = slot23
+slot21.Opl = slot22
+slot20[2] = slot21
+slot21 = {}
+slot22 = {
+	const = true
+}
+slot21.Opr = slot22
+slot20[3] = slot21
+slot19.properties = slot20
+slot20 = {}
+slot19.attachments = slot20
+slot20 = {}
+slot19.children = slot20
+slot18.node = slot19
+slot17[3] = slot18
 slot16.children = slot17
 slot15.node = slot16
 slot14[1] = slot15
@@ -3705,11 +4316,11 @@ slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot30 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot31 = {}
 slot32 = {
@@ -3730,7 +4341,8 @@ slot32 = {}
 slot33 = {
 	const = true
 }
-slot32.Opr2 = slot33
+slot34 = "Opr2"
+slot32[slot34] = slot33
 slot31[4] = slot32
 slot32 = {
 	Phase = "Enter"
@@ -3803,11 +4415,11 @@ slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -3828,7 +4440,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -3843,30 +4456,80 @@ slot30.node = slot31
 slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	id = "631",
-	class = "Assignment"
+	id = "683",
+	class = "Sequence"
 }
 slot32 = {}
-slot33 = {
-	CastRight = "false"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	field = "skillfail"
-}
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 1
-}
-slot33.Opr = slot34
-slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot31.attachments = slot32
 slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "631",
+	class = "Assignment"
+}
+slot35 = {}
+slot36 = {
+	CastRight = "false"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "skillfail"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 1
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "684",
+	class = "Action"
+}
+slot35 = {}
+slot36 = {}
+slot37 = {
+	func = "addBuff"
+}
+slot38 = {}
+slot39 = {
+	const = 1000601
+}
+slot38[1] = slot39
+slot39 = {
+	const = 0
+}
+slot38[2] = slot39
+slot37.params = slot38
+slot36.Method = slot37
+slot35[1] = slot36
+slot36 = {
+	ResultOption = "BT_INVALID"
+}
+slot35[2] = slot36
+slot36 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
 slot31.children = slot32
 slot30.node = slot31
 slot29[2] = slot30
@@ -4091,17 +4754,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -4122,7 +4785,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -4195,11 +4859,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -4220,7 +4884,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -4235,30 +4900,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "633",
-	class = "Assignment"
+	id = "685",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "633",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "686",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -4351,17 +5066,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -4382,7 +5097,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -4455,11 +5171,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -4480,7 +5196,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -4495,30 +5212,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "635",
-	class = "Assignment"
+	id = "687",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "635",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "688",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -4865,17 +5632,17 @@ slot30 = {
 }
 slot29[2] = slot30
 slot30 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot29[3] = slot30
 slot28.properties = slot29
 slot29 = {}
 slot30 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot31 = {}
 slot32 = {
@@ -4896,7 +5663,8 @@ slot32 = {}
 slot33 = {
 	const = true
 }
-slot32.Opr2 = slot33
+slot34 = "Opr2"
+slot32[slot34] = slot33
 slot31[4] = slot32
 slot32 = {
 	Phase = "Enter"
@@ -4969,11 +5737,11 @@ slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -4994,7 +5762,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -5009,30 +5778,80 @@ slot30.node = slot31
 slot29[1] = slot30
 slot30 = {}
 slot31 = {
-	id = "637",
-	class = "Assignment"
+	id = "689",
+	class = "Sequence"
 }
 slot32 = {}
-slot33 = {
-	CastRight = "false"
-}
-slot32[1] = slot33
-slot33 = {}
-slot34 = {
-	field = "skillfail"
-}
-slot33.Opl = slot34
-slot32[2] = slot33
-slot33 = {}
-slot34 = {
-	const = 1
-}
-slot33.Opr = slot34
-slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot31.attachments = slot32
 slot32 = {}
+slot33 = {}
+slot34 = {
+	id = "637",
+	class = "Assignment"
+}
+slot35 = {}
+slot36 = {
+	CastRight = "false"
+}
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	field = "skillfail"
+}
+slot36.Opl = slot37
+slot35[2] = slot36
+slot36 = {}
+slot37 = {
+	const = 1
+}
+slot36.Opr = slot37
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[1] = slot33
+slot33 = {}
+slot34 = {
+	id = "690",
+	class = "Action"
+}
+slot35 = {}
+slot36 = {}
+slot37 = {
+	func = "addBuff"
+}
+slot38 = {}
+slot39 = {
+	const = 1000601
+}
+slot38[1] = slot39
+slot39 = {
+	const = 0
+}
+slot38[2] = slot39
+slot37.params = slot38
+slot36.Method = slot37
+slot35[1] = slot36
+slot36 = {
+	ResultOption = "BT_INVALID"
+}
+slot35[2] = slot36
+slot36 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot35[3] = slot36
+slot34.properties = slot35
+slot35 = {}
+slot34.attachments = slot35
+slot35 = {}
+slot34.children = slot35
+slot33.node = slot34
+slot32[2] = slot33
 slot31.children = slot32
 slot30.node = slot31
 slot29[2] = slot30
@@ -5360,17 +6179,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -5391,7 +6210,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -5464,11 +6284,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -5489,7 +6309,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -5504,30 +6325,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "639",
-	class = "Assignment"
+	id = "691",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "639",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "692",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -5674,17 +6545,17 @@ slot33 = {
 }
 slot32[2] = slot33
 slot33 = {
-	ResultResumeOption = "BT_ResumeSelf"
+	ResultResumeOption = "BT_NextNode"
 }
 slot32[3] = slot33
 slot31.properties = slot32
 slot32 = {}
 slot33 = {
+	precondition = true,
 	id = "595",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot34 = {}
 slot35 = {
@@ -5705,7 +6576,8 @@ slot35 = {}
 slot36 = {
 	const = true
 }
-slot35.Opr2 = slot36
+slot37 = "Opr2"
+slot35[slot37] = slot36
 slot34[4] = slot35
 slot35 = {
 	Phase = "Enter"
@@ -5778,11 +6650,11 @@ slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	precondition = true,
 	id = "651",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot37 = {}
 slot38 = {
@@ -5803,7 +6675,8 @@ slot38 = {}
 slot39 = {
 	const = true
 }
-slot38.Opr2 = slot39
+slot40 = "Opr2"
+slot38[slot40] = slot39
 slot37[4] = slot38
 slot38 = {
 	Phase = "Enter"
@@ -5818,30 +6691,80 @@ slot33.node = slot34
 slot32[1] = slot33
 slot33 = {}
 slot34 = {
-	id = "641",
-	class = "Assignment"
+	id = "693",
+	class = "Sequence"
 }
 slot35 = {}
-slot36 = {
-	CastRight = "false"
-}
-slot35[1] = slot36
-slot36 = {}
-slot37 = {
-	field = "skillfail"
-}
-slot36.Opl = slot37
-slot35[2] = slot36
-slot36 = {}
-slot37 = {
-	const = 1
-}
-slot36.Opr = slot37
-slot35[3] = slot36
 slot34.properties = slot35
 slot35 = {}
 slot34.attachments = slot35
 slot35 = {}
+slot36 = {}
+slot37 = {
+	id = "641",
+	class = "Assignment"
+}
+slot38 = {}
+slot39 = {
+	CastRight = "false"
+}
+slot38[1] = slot39
+slot39 = {}
+slot40 = {
+	field = "skillfail"
+}
+slot39.Opl = slot40
+slot38[2] = slot39
+slot39 = {}
+slot40 = {
+	const = 1
+}
+slot39.Opr = slot40
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[1] = slot36
+slot36 = {}
+slot37 = {
+	id = "694",
+	class = "Action"
+}
+slot38 = {}
+slot39 = {}
+slot40 = {
+	func = "addBuff"
+}
+slot41 = {}
+slot42 = {
+	const = 1000601
+}
+slot41[1] = slot42
+slot42 = {
+	const = 0
+}
+slot41[2] = slot42
+slot40.params = slot41
+slot39.Method = slot40
+slot38[1] = slot39
+slot39 = {
+	ResultOption = "BT_INVALID"
+}
+slot38[2] = slot39
+slot39 = {
+	ResultResumeOption = "BT_NextNode"
+}
+slot38[3] = slot39
+slot37.properties = slot38
+slot38 = {}
+slot37.attachments = slot38
+slot38 = {}
+slot37.children = slot38
+slot36.node = slot37
+slot35[2] = slot36
 slot34.children = slot35
 slot33.node = slot34
 slot32[2] = slot33
@@ -6842,11 +7765,11 @@ slot23 = {}
 slot22.properties = slot23
 slot23 = {}
 slot24 = {
+	precondition = true,
 	id = "549",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot25 = {}
 slot26 = {
@@ -6873,7 +7796,8 @@ slot26 = {}
 slot27 = {
 	const = 1
 }
-slot26.Opr2 = slot27
+slot28 = "Opr2"
+slot26[slot28] = slot27
 slot25[4] = slot26
 slot26 = {
 	Phase = "Enter"
@@ -6882,11 +7806,11 @@ slot25[5] = slot26
 slot24.properties = slot25
 slot23[1] = slot24
 slot24 = {
+	precondition = true,
 	id = "550",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot25 = {}
 slot26 = {
@@ -6907,7 +7831,8 @@ slot26 = {}
 slot27 = {
 	const = true
 }
-slot26.Opr2 = slot27
+slot28 = "Opr2"
+slot26[slot28] = slot27
 slot25[4] = slot26
 slot26 = {
 	Phase = "Enter"
@@ -7865,11 +8790,11 @@ slot47 = {}
 slot46.properties = slot47
 slot47 = {}
 slot48 = {
+	precondition = true,
 	id = "553",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot49 = {}
 slot50 = {
@@ -7896,7 +8821,8 @@ slot50 = {}
 slot51 = {
 	const = 0.85
 }
-slot50.Opr2 = slot51
+slot52 = "Opr2"
+slot50[slot52] = slot51
 slot49[4] = slot50
 slot50 = {
 	Phase = "Enter"
@@ -7996,11 +8922,11 @@ slot47 = {}
 slot46.properties = slot47
 slot47 = {}
 slot48 = {
+	precondition = true,
 	id = "553",
 	class = "Precondition",
 	transition = false,
-	effector = false,
-	precondition = true
+	effector = false
 }
 slot49 = {}
 slot50 = {
@@ -8027,7 +8953,8 @@ slot50 = {}
 slot51 = {
 	const = 0.7
 }
-slot50.Opr2 = slot51
+slot52 = "Opr2"
+slot50[slot52] = slot51
 slot49[4] = slot50
 slot50 = {
 	Phase = "Enter"
@@ -8874,7 +9801,8 @@ slot48 = {}
 slot49 = {
 	field = "distToTgt"
 }
-slot48.Opr2 = slot49
+slot50 = "Opr2"
+slot48[slot50] = slot49
 slot47[4] = slot48
 slot46.properties = slot47
 slot47 = {}
@@ -9339,7 +10267,8 @@ slot36 = {}
 slot37 = {
 	const = 10
 }
-slot36.Opr2 = slot37
+slot38 = "Opr2"
+slot36[slot38] = slot37
 slot35[4] = slot36
 slot34.properties = slot35
 slot35 = {}
@@ -9661,7 +10590,8 @@ slot33 = {}
 slot34 = {
 	const = 10
 }
-slot33.Opr2 = slot34
+slot35 = "Opr2"
+slot33[slot35] = slot34
 slot32[4] = slot33
 slot31.properties = slot32
 slot32 = {}
@@ -9752,7 +10682,8 @@ slot33 = {}
 slot34 = {
 	const = 25
 }
-slot33.Opr2 = slot34
+slot35 = "Opr2"
+slot33[slot35] = slot34
 slot32[4] = slot33
 slot31.properties = slot32
 slot32 = {}
@@ -9830,7 +10761,8 @@ slot33 = {}
 slot34 = {
 	const = 25
 }
-slot33.Opr2 = slot34
+slot35 = "Opr2"
+slot33[slot35] = slot34
 slot32[4] = slot33
 slot31.properties = slot32
 slot32 = {}

@@ -1,4 +1,4 @@
---- BLOCK #0 1-72, warpins: 1 ---
+--- BLOCK #0 1-76, warpins: 1 ---
 slot0 = require
 slot2 = "Const.MessageName"
 slot0 = slot0(slot2)
@@ -41,14 +41,33 @@ slot14 = {
 slot12[slot13] = slot14
 slot3.messages = slot12
 
+slot12 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.view
+	slot1 = slot1.blurEffect
+
+	return slot1
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot3.getManagedBlurEffect = slot12
+
 slot12 = function(slot0, slot1)
-	--- BLOCK #0 1-11, warpins: 1 ---
+	--- BLOCK #0 1-14, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
 	slot4 = slot0
 	slot5 = slot1
 
 	slot2(slot4, slot5)
+
+	slot4 = slot0
+	slot2 = slot0.initializeManagedBlur
+
+	slot2(slot4)
 
 	slot2 = 0
 	slot0.state = slot2
@@ -63,7 +82,7 @@ slot12 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 12-15, warpins: 1 ---
+	--- BLOCK #1 15-18, warpins: 1 ---
 	slot2 = slot1.piecesId
 	slot3 = 0
 	--- END OF BLOCK #1 ---
@@ -75,7 +94,7 @@ slot12 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #2 16-20, warpins: 1 ---
+	--- BLOCK #2 19-23, warpins: 1 ---
 	slot2 = slot1.piecesId
 	slot0.piecesId = slot2
 	slot2 = 1
@@ -85,7 +104,7 @@ slot12 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 21-22, warpins: 2 ---
+	--- BLOCK #3 24-25, warpins: 2 ---
 	slot2 = 0
 	slot0.openType = slot2
 	--- END OF BLOCK #3 ---
@@ -93,7 +112,7 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 23-24, warpins: 2 ---
+	--- BLOCK #4 26-27, warpins: 2 ---
 	slot0.data = slot1
 
 	return
@@ -111,104 +130,15 @@ slot12 = function(slot0)
 	slot1 = slot1.close
 
 	slot2 = function()
-		--- BLOCK #0 1-3, warpins: 1 ---
-		slot0 = canClick
-		--- END OF BLOCK #0 ---
-
-		slot0 = if slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #1 4-7, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.state
-		--- END OF BLOCK #1 ---
-
-		if slot0 == 0 then
-		JUMP TO BLOCK #2
-		else
-		JUMP TO BLOCK #5
-		end
-
-
-		--- BLOCK #2 8-23, warpins: 1 ---
-		slot0 = self
-		slot1 = self
-		slot1 = slot1.model
-		slot3 = slot1
-		slot1 = slot1.getPiecesItemState
-		slot4 = self
-		slot4 = slot4.data
-		slot4 = slot4.id
-		slot5 = self
-		slot5 = slot5.openType
-		slot1 = slot1(slot3, slot4, slot5)
-		slot0.state = slot1
-		slot0 = self
-		slot0 = slot0.state
-		--- END OF BLOCK #2 ---
-
-		if slot0 == 0 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 24-27, warpins: 1 ---
+		--- BLOCK #0 1-5, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
-		slot0 = slot0.onBtnClose
+		slot0 = slot0.onCloseBtnClick
 
 		slot0(slot2)
 
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 28-32, warpins: 2 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.setPiecesState
-
-		slot0(slot2)
-
-		--- END OF BLOCK #4 ---
-
-		UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-		--- BLOCK #5 33-36, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.state
-		--- END OF BLOCK #5 ---
-
-		if slot0 ~= 0 then
-		JUMP TO BLOCK #6
-		else
-		JUMP TO BLOCK #7
-		end
-
-
-		--- BLOCK #6 37-40, warpins: 1 ---
-		slot0 = self
-		slot2 = slot0
-		slot0 = slot0.onBtnClose
-
-		slot0(slot2)
-
-		--- END OF BLOCK #6 ---
-
-		FLOW; TARGET BLOCK #7
-
-
-		--- BLOCK #7 41-41, warpins: 4 ---
 		return
-		--- END OF BLOCK #7 ---
+		--- END OF BLOCK #0 ---
 
 
 
@@ -226,15 +156,145 @@ end
 slot3.addListener = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot1 = UICtrl
-	slot1 = slot1.onDestroy
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = canClick
+	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #1 4-6, warpins: 1 ---
+	slot1 = slot0.state
+	--- END OF BLOCK #1 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #2 7-17, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getPiecesItemState
+	slot4 = slot0.data
+	slot4 = slot4.id
+	slot5 = slot0.openType
+	slot1 = slot1(slot3, slot4, slot5)
+	slot0.state = slot1
+	slot1 = slot0.state
+	--- END OF BLOCK #2 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-20, warpins: 1 ---
 	slot3 = slot0
+	slot1 = slot0.onBtnClose
 
 	slot1(slot3)
 
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-24, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.setPiecesState
+
+	slot1(slot3)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #5 25-27, warpins: 1 ---
+	slot1 = slot0.state
+	--- END OF BLOCK #5 ---
+
+	if slot1 ~= 0 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 28-30, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.onBtnClose
+
+	slot1(slot3)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 31-31, warpins: 4 ---
 	return
+	--- END OF BLOCK #7 ---
+
+
+
+end
+
+slot3.onCloseBtnClick = slot12
+
+slot12 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PiecesItemTipCtrl
+	slot1 = slot1._platformHooks
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.onDestroy
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = slot1.onDestroy
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-15, warpins: 3 ---
+	slot2 = UICtrl
+	slot2 = slot2.onDestroy
+	slot4 = slot0
+
+	slot2(slot4)
+
+	return
+	--- END OF BLOCK #3 ---
 
 
 
@@ -293,11 +353,36 @@ slot12 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 22-23, warpins: 2 ---
+	--- BLOCK #4 22-25, warpins: 2 ---
 	slot0.data = slot1
-
-	return
+	slot2 = slot0.openType
 	--- END OF BLOCK #4 ---
+
+	if slot2 == 1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 26-32, warpins: 1 ---
+	slot2 = pg
+	slot2 = slot2.me
+	slot4 = slot2
+	slot2 = slot2.serverMsg
+	slot5 = "RPC_CS_OnShowPieces"
+	slot6 = slot0.piecesId
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 33-33, warpins: 2 ---
+	return
+	--- END OF BLOCK #6 ---
 
 
 
@@ -306,7 +391,7 @@ end
 slot3.onOpen = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.audio
@@ -326,8 +411,42 @@ slot12 = function(slot0)
 
 	slot1(slot3)
 
-	return
+	slot1 = PiecesItemTipCtrl
+	slot1 = slot1._platformHooks
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 18-20, warpins: 1 ---
+	slot2 = slot1.onShow
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 21-23, warpins: 1 ---
+	slot2 = slot1.onShow
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-24, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 
@@ -1035,9 +1154,43 @@ end
 slot3.setPiecesItemInfo = slot12
 
 slot12 = function(slot0)
-	--- BLOCK #0 1-1, warpins: 1 ---
-	return
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PiecesItemTipCtrl
+	slot1 = slot1._platformHooks
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot1.onHide
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-10, warpins: 1 ---
+	slot2 = slot1.onHide
+	slot4 = slot0
+
+	slot2(slot4)
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 11-11, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 

@@ -244,137 +244,191 @@ slot4 = function(slot0, slot1)
 	if slot3 == slot4 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #24
+	JUMP TO BLOCK #29
 	end
 
 
-	--- BLOCK #15 57-63, warpins: 1 ---
-	slot4 = logger
+	--- BLOCK #15 57-64, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.platform
 	slot6 = slot4
-	slot4 = slot4.info
-	slot7 = "inbound_game_invite_filtered context=%s reason=%s"
-	slot8 = tostring
+	slot4 = slot4.isPS
+	slot4 = slot4(slot6)
 	--- END OF BLOCK #15 ---
 
-	slot10 = if not slot1 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #20
 	end
 
 
-	--- BLOCK #16 64-64, warpins: 1 ---
-	slot10 = ""
+	--- BLOCK #16 65-67, warpins: 1 ---
+	slot4 = true
 	--- END OF BLOCK #16 ---
 
-	FLOW; TARGET BLOCK #17
+	slot2 = if slot2 then
+	JUMP TO BLOCK #17
+	else
+	JUMP TO BLOCK #18
+	end
 
 
-	--- BLOCK #17 65-68, warpins: 2 ---
-	slot8 = slot8(slot10)
-	slot9 = tostring
+	--- BLOCK #17 68-70, warpins: 1 ---
+	slot5 = slot2.reason
 	--- END OF BLOCK #17 ---
 
-	slot2 = if slot2 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #18
 	else
 	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #18 69-71, warpins: 1 ---
-	slot11 = slot2.reason
+	--- BLOCK #18 71-71, warpins: 2 ---
+	slot5 = "allowed"
+
 	--- END OF BLOCK #18 ---
 
-	slot11 = if not slot11 then
-	JUMP TO BLOCK #19
-	else
-	JUMP TO BLOCK #20
-	end
+	FLOW; TARGET BLOCK #19
 
 
 	--- BLOCK #19 72-72, warpins: 2 ---
-	slot11 = "local_communication_blocked"
+	return slot4, slot5
+
 	--- END OF BLOCK #19 ---
 
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 73-77, warpins: 2 ---
-	MULTRES = slot9(slot11)
-
-	slot4(slot6, slot7, slot8, MULTRES)
-
-	slot4 = false
+	--- BLOCK #20 73-79, warpins: 2 ---
+	slot4 = logger
+	slot6 = slot4
+	slot4 = slot4.info
+	slot7 = "inbound_game_invite_filtered context=%s reason=%s"
+	slot8 = tostring
 	--- END OF BLOCK #20 ---
 
-	slot2 = if slot2 then
+	slot10 = if not slot1 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 78-80, warpins: 1 ---
-	slot5 = slot2.reason
+	--- BLOCK #21 80-80, warpins: 1 ---
+	slot10 = ""
 	--- END OF BLOCK #21 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #22
-	else
-	JUMP TO BLOCK #23
-	end
+	FLOW; TARGET BLOCK #22
 
 
-	--- BLOCK #22 81-81, warpins: 2 ---
-	slot5 = "local_communication_blocked"
-
+	--- BLOCK #22 81-84, warpins: 2 ---
+	slot8 = slot8(slot10)
+	slot9 = tostring
 	--- END OF BLOCK #22 ---
 
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 82-82, warpins: 2 ---
-	return slot4, slot5
-
-	--- END OF BLOCK #23 ---
-
-	FLOW; TARGET BLOCK #24
-
-
-	--- BLOCK #24 83-85, warpins: 2 ---
-	slot4 = true
-	--- END OF BLOCK #24 ---
-
 	slot2 = if slot2 then
-	JUMP TO BLOCK #25
+	JUMP TO BLOCK #23
 	else
-	JUMP TO BLOCK #26
+	JUMP TO BLOCK #24
 	end
 
 
-	--- BLOCK #25 86-88, warpins: 1 ---
-	slot5 = slot2.reason
+	--- BLOCK #23 85-87, warpins: 1 ---
+	slot11 = slot2.reason
+	--- END OF BLOCK #23 ---
+
+	slot11 = if not slot11 then
+	JUMP TO BLOCK #24
+	else
+	JUMP TO BLOCK #25
+	end
+
+
+	--- BLOCK #24 88-88, warpins: 2 ---
+	slot11 = "local_communication_blocked"
+	--- END OF BLOCK #24 ---
+
+	FLOW; TARGET BLOCK #25
+
+
+	--- BLOCK #25 89-93, warpins: 2 ---
+	MULTRES = slot9(slot11)
+
+	slot4(slot6, slot7, slot8, MULTRES)
+
+	slot4 = false
 	--- END OF BLOCK #25 ---
 
-	slot5 = if not slot5 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #26
 	else
 	JUMP TO BLOCK #27
 	end
 
 
-	--- BLOCK #26 89-89, warpins: 2 ---
-	slot5 = "allowed"
-
+	--- BLOCK #26 94-96, warpins: 1 ---
+	slot5 = slot2.reason
 	--- END OF BLOCK #26 ---
 
-	FLOW; TARGET BLOCK #27
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #27
+	else
+	JUMP TO BLOCK #28
+	end
 
 
-	--- BLOCK #27 90-90, warpins: 2 ---
-	return slot4, slot5
+	--- BLOCK #27 97-97, warpins: 2 ---
+	slot5 = "local_communication_blocked"
+
 	--- END OF BLOCK #27 ---
+
+	FLOW; TARGET BLOCK #28
+
+
+	--- BLOCK #28 98-98, warpins: 2 ---
+	return slot4, slot5
+
+	--- END OF BLOCK #28 ---
+
+	FLOW; TARGET BLOCK #29
+
+
+	--- BLOCK #29 99-101, warpins: 2 ---
+	slot4 = true
+	--- END OF BLOCK #29 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
+
+
+	--- BLOCK #30 102-104, warpins: 1 ---
+	slot5 = slot2.reason
+	--- END OF BLOCK #30 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #31
+	else
+	JUMP TO BLOCK #32
+	end
+
+
+	--- BLOCK #31 105-105, warpins: 2 ---
+	slot5 = "allowed"
+
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 106-106, warpins: 2 ---
+	return slot4, slot5
+	--- END OF BLOCK #32 ---
 
 
 

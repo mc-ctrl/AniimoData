@@ -74,11 +74,13 @@ end
 slot16.ctor = slot21
 
 slot21 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-133, warpins: 1 ---
+	--- BLOCK #0 1-139, warpins: 1 ---
 	slot3 = slot1.templateId
 	slot0.templateId = slot3
 	slot3 = nil
 	slot0.projectileTemplate = slot3
+	slot3 = nil
+	slot0.combatContext = slot3
 	slot3 = false
 	slot0.isDestroyed = slot3
 	slot3 = false
@@ -134,6 +136,10 @@ slot21 = function(slot0, slot1, slot2)
 	slot0.targetPos = slot3
 	slot3 = slot1.srcCombatContextId
 	slot0.srcCombatContextId = slot3
+	slot3 = slot1.castingCombatContextId
+	slot0.castingCombatContextId = slot3
+	slot3 = slot1.soundId
+	slot0.soundId = slot3
 	slot3 = {}
 	slot0.hitTargetSet = slot3
 	slot3 = 0
@@ -215,14 +221,14 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 134-134, warpins: 1 ---
+	--- BLOCK #1 140-140, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 135-153, warpins: 2 ---
+	--- BLOCK #2 141-159, warpins: 2 ---
 	slot0.circleData = slot3
 	slot3 = slot1.iterNumber
 	slot0.iterNumber = slot3
@@ -251,7 +257,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 154-156, warpins: 1 ---
+	--- BLOCK #3 160-162, warpins: 1 ---
 	slot3 = slot0.attributeSnapshot
 	--- END OF BLOCK #3 ---
 
@@ -262,7 +268,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #4 157-159, warpins: 1 ---
+	--- BLOCK #4 163-165, warpins: 1 ---
 	slot3 = AttributeSnapshot
 	slot3 = slot3()
 	slot0.attributeSnapshot = slot3
@@ -271,7 +277,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 160-165, warpins: 2 ---
+	--- BLOCK #5 166-171, warpins: 2 ---
 	slot3 = slot0.attributeSnapshot
 	slot5 = slot3
 	slot3 = slot3.init
@@ -284,7 +290,7 @@ slot21 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 166-167, warpins: 1 ---
+	--- BLOCK #6 172-173, warpins: 1 ---
 	slot3 = nil
 	slot0.attributeSnapshot = slot3
 	--- END OF BLOCK #6 ---
@@ -292,7 +298,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 168-186, warpins: 2 ---
+	--- BLOCK #7 174-192, warpins: 2 ---
 	slot3 = nil
 	slot0.keepRot = slot3
 	slot3 = nil
@@ -2840,14 +2846,11 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 77-85, warpins: 1 ---
-	slot8 = table
-	slot8 = slot8.unpack
-	slot10 = PhysicsUtils
-	slot10 = slot10.getGroundHeight
-	slot12 = slot0.pos
-	MULTRES = slot10(slot12)
-	slot8, slot9 = slot8(MULTRES)
+	--- BLOCK #9 77-82, warpins: 1 ---
+	slot8 = PhysicsUtils
+	slot8 = slot8.getGroundHeight
+	slot10 = slot0.pos
+	slot8, slot9 = slot8(slot10)
 	--- END OF BLOCK #9 ---
 
 	slot8 = if slot8 then
@@ -2857,7 +2860,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 86-92, warpins: 1 ---
+	--- BLOCK #10 83-89, warpins: 1 ---
 	slot10 = slot0.pos
 	slot11 = slot0.pos
 	slot11 = slot11.y
@@ -2870,7 +2873,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #11
 
 
-	--- BLOCK #11 93-96, warpins: 3 ---
+	--- BLOCK #11 90-93, warpins: 3 ---
 	slot8 = Vector3
 	slot8 = slot8.disableCreateFromCache
 
@@ -3145,7 +3148,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 20-42, warpins: 2 ---
+	--- BLOCK #4 20-41, warpins: 2 ---
 	slot4 = slot0
 	slot2 = slot0.applyTimeScale
 
@@ -3168,200 +3171,190 @@ slot21 = function(slot0)
 	slot3 = slot0.combatContext
 	slot4 = slot0.templateId
 	slot3.projectileTemplateId = slot4
-	slot3 = slot0.combatContext
 	--- END OF BLOCK #4 ---
 
-	slot2 = if slot2 then
+	slot3 = if slot2 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 43-47, warpins: 1 ---
-	slot6 = slot2
-	slot4 = slot2.getCastingInfo
-	slot4 = slot4(slot6)
+	--- BLOCK #5 42-44, warpins: 1 ---
+	slot5 = slot2
+	slot3 = slot2.getCastingInfo
+	slot3 = slot3(slot5)
 	--- END OF BLOCK #5 ---
 
-	slot4 = if not slot4 then
-	JUMP TO BLOCK #6
-	else
-	JUMP TO BLOCK #7
-	end
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 48-57, warpins: 2 ---
-	slot4 = pg
-	slot4 = slot4.global
-	slot4 = slot4.abilityMgr
-	slot4 = slot4.constCasterInfoPool
+	--- BLOCK #6 45-83, warpins: 2 ---
+	slot4 = slot0.combatContext
 	slot6 = slot4
-	slot4 = slot4.getWithCtor
-	slot7 = true
+	slot4 = slot4.setConstCasterInfo
+	slot7 = slot3
 	slot8 = slot0.owner
 	slot8 = slot8.actorId
-	slot4 = slot4(slot6, slot7, slot8)
+
+	slot4(slot6, slot7, slot8)
+
+	slot4 = slot0.combatContext
+	slot5 = nil
+	slot4.runtimeTargetInfo = slot5
+	slot4 = slot0.combatContext
+	slot5 = slot0.srcAbilityId
+	slot4.abilityId = slot5
+	slot4 = slot0.combatContext
+	slot5 = AbilityConst
+	slot5 = slot5.SRC_TYPE_ABILITY
+	slot4.srcType = slot5
+	slot4 = slot0.combatContext
+	slot5 = slot0.srcAbilityStoreType
+	slot4.abilityStoreType = slot5
+	slot4 = slot0.combatContext
+	slot5 = slot0.iterNumber
+	slot4.iterNumber = slot5
+	slot4 = slot0.combatContext
+	slot6 = slot4
+	slot4 = slot4.initNodeMap
+
+	slot4(slot6)
+
+	slot4 = slot0.combatContext
+	slot5 = slot0.srcCombatContextId
+	slot4.srcCombatContextId = slot5
+	slot4 = slot0.combatContext
+	slot5 = slot0.castingCombatContextId
+	slot4.castingCombatContextId = slot5
+	slot6 = slot1
+	slot4 = slot1.getCombatContext
+	slot7 = slot0.srcCombatContextId
+	slot4 = slot4(slot6, slot7)
 	--- END OF BLOCK #6 ---
 
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 58-87, warpins: 2 ---
-	slot3.constCasterInfo = slot4
-	slot3 = slot0.combatContext
-	slot4 = nil
-	slot3.runtimeTargetInfo = slot4
-	slot3 = slot0.combatContext
-	slot4 = slot0.srcAbilityId
-	slot3.abilityId = slot4
-	slot3 = slot0.combatContext
-	slot4 = AbilityConst
-	slot4 = slot4.SRC_TYPE_ABILITY
-	slot3.srcType = slot4
-	slot3 = slot0.combatContext
-	slot4 = slot0.srcAbilityStoreType
-	slot3.abilityStoreType = slot4
-	slot3 = slot0.combatContext
-	slot4 = slot0.iterNumber
-	slot3.iterNumber = slot4
-	slot3 = slot0.combatContext
-	slot5 = slot3
-	slot3 = slot3.initNodeMap
-
-	slot3(slot5)
-
-	slot3 = slot0.combatContext
-	slot4 = slot0.srcCombatContextId
-	slot3.srcCombatContextId = slot4
-	slot5 = slot1
-	slot3 = slot1.getCombatContext
-	slot6 = slot0.srcCombatContextId
-	slot3 = slot3(slot5, slot6)
-	--- END OF BLOCK #7 ---
-
-	slot3 = if slot3 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #11
-	end
-
-
-	--- BLOCK #8 88-94, warpins: 1 ---
-	slot6 = slot1
-	slot4 = slot1.addCombatContextRefCnt
-	slot7 = slot3
-
-	slot4(slot6, slot7)
-
-	slot4 = slot3.castingCombatContextId
-	--- END OF BLOCK #8 ---
-
 	slot4 = if slot4 then
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 95-97, warpins: 1 ---
-	slot4 = slot0.combatContext
-	slot5 = slot3.castingCombatContextId
-	slot4.castingCombatContextId = slot5
+	--- BLOCK #7 84-90, warpins: 1 ---
+	slot7 = slot1
+	slot5 = slot1.addCombatContextRefCnt
+	slot8 = slot4
+
+	slot5(slot7, slot8)
+
+	slot5 = slot4.castingCombatContextId
+	--- END OF BLOCK #7 ---
+
+	slot5 = if slot5 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
+
+
+	--- BLOCK #8 91-93, warpins: 1 ---
+	slot5 = slot0.combatContext
+	slot6 = slot4.castingCombatContextId
+	slot5.castingCombatContextId = slot6
+	--- END OF BLOCK #8 ---
+
+	FLOW; TARGET BLOCK #9
+
+
+	--- BLOCK #9 94-96, warpins: 2 ---
+	slot5 = slot0.combatContext
+	slot6 = slot4.curEpCost
+	slot5.curEpCost = slot6
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 98-100, warpins: 2 ---
-	slot4 = slot0.combatContext
-	slot5 = slot3.curEpCost
-	slot4.curEpCost = slot5
+	--- BLOCK #10 97-102, warpins: 2 ---
+	slot5 = Utils
+	slot5 = slot5.isTable
+	slot7 = slot0.maxReboundCnt
+	slot5 = slot5(slot7)
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	slot5 = if slot5 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #13
+	end
 
 
-	--- BLOCK #11 101-106, warpins: 2 ---
-	slot4 = Utils
-	slot4 = slot4.isTable
-	slot6 = slot0.maxReboundCnt
-	slot4 = slot4(slot6)
+	--- BLOCK #11 103-106, warpins: 1 ---
+	slot5 = slot0.maxReboundCnt
+	slot5 = slot5.name
 	--- END OF BLOCK #11 ---
 
-	slot4 = if slot4 then
+	slot5 = if slot5 then
 	JUMP TO BLOCK #12
 	else
-	JUMP TO BLOCK #14
+	JUMP TO BLOCK #13
 	end
 
 
-	--- BLOCK #12 107-110, warpins: 1 ---
-	slot4 = slot0.maxReboundCnt
-	slot4 = slot4.name
+	--- BLOCK #12 107-113, warpins: 1 ---
+	slot5 = slot1.combatAction
+	slot7 = slot5
+	slot5 = slot5.doAction
+	slot8 = slot0.maxReboundCnt
+	slot9 = slot0.combatContext
+	slot5 = slot5(slot7, slot8, slot9)
+	slot0.maxReboundCnt = slot5
 	--- END OF BLOCK #12 ---
 
-	slot4 = if slot4 then
-	JUMP TO BLOCK #13
-	else
-	JUMP TO BLOCK #14
-	end
+	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 111-117, warpins: 1 ---
-	slot4 = slot1.combatAction
-	slot6 = slot4
-	slot4 = slot4.doAction
-	slot7 = slot0.maxReboundCnt
-	slot8 = slot0.combatContext
-	slot4 = slot4(slot6, slot7, slot8)
-	slot0.maxReboundCnt = slot4
+	--- BLOCK #13 114-122, warpins: 3 ---
+	slot5 = slot0.projectileTemplate
+	slot6 = AbilityConst
+	slot6 = slot6.TRIGGER_ON_PROJECT_START
+	slot5 = slot5[slot6]
+	slot6 = ToBool
+	slot8 = slot5
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #13 ---
 
-	FLOW; TARGET BLOCK #14
-
-
-	--- BLOCK #14 118-126, warpins: 3 ---
-	slot4 = slot0.projectileTemplate
-	slot5 = AbilityConst
-	slot5 = slot5.TRIGGER_ON_PROJECT_START
-	slot4 = slot4[slot5]
-	slot5 = ToBool
-	slot7 = slot4
-	slot5 = slot5(slot7)
-	--- END OF BLOCK #14 ---
-
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #15
+	slot6 = if not slot6 then
+	JUMP TO BLOCK #14
 	else
-	JUMP TO BLOCK #16
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #15 127-128, warpins: 1 ---
-	slot5 = false
+	--- BLOCK #14 123-124, warpins: 1 ---
+	slot6 = false
 
-	return slot5
+	return slot6
 
-	--- END OF BLOCK #15 ---
+	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #16
+	FLOW; TARGET BLOCK #15
 
 
-	--- BLOCK #16 129-138, warpins: 2 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.abilityMgr
-	slot5 = slot5.combatAction
-	slot7 = slot5
-	slot5 = slot5.doActionIds
-	slot8 = slot4
-	slot9 = slot0.combatContext
+	--- BLOCK #15 125-134, warpins: 2 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.abilityMgr
+	slot6 = slot6.combatAction
+	slot8 = slot6
+	slot6 = slot6.doActionIds
+	slot9 = slot5
+	slot10 = slot0.combatContext
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
 	return
-	--- END OF BLOCK #16 ---
+	--- END OF BLOCK #15 ---
 
 
 
@@ -5060,11 +5053,12 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 31-36, warpins: 2 ---
+	--- BLOCK #6 31-37, warpins: 2 ---
 	slot5 = Utils
 	slot5 = slot5.checkValidTarget
 	slot7 = slot4
-	slot5 = slot5(slot7)
+	slot8 = slot3
+	slot5 = slot5(slot7, slot8)
 	--- END OF BLOCK #6 ---
 
 	slot5 = if slot5 then
@@ -5074,7 +5068,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #7 37-45, warpins: 1 ---
+	--- BLOCK #7 38-46, warpins: 1 ---
 	slot5 = Utils
 	slot5 = slot5.checkRelation
 	slot7 = slot3
@@ -5091,7 +5085,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 46-48, warpins: 2 ---
+	--- BLOCK #8 47-49, warpins: 2 ---
 	slot5 = slot0.isReboundSelf
 	--- END OF BLOCK #8 ---
 
@@ -5102,7 +5096,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #9 49-50, warpins: 1 ---
+	--- BLOCK #9 50-51, warpins: 1 ---
 	--- END OF BLOCK #9 ---
 
 	slot2 = if slot2 then
@@ -5112,7 +5106,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #10 51-53, warpins: 1 ---
+	--- BLOCK #10 52-54, warpins: 1 ---
 	slot5 = slot0.onProjectileHitRPC
 	--- END OF BLOCK #10 ---
 
@@ -5123,7 +5117,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #11 54-59, warpins: 1 ---
+	--- BLOCK #11 55-60, warpins: 1 ---
 	slot7 = slot0
 	slot5 = slot0.onProjectileHitRPC
 	slot8 = slot3
@@ -5137,7 +5131,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 60-60, warpins: 2 ---
+	--- BLOCK #12 61-61, warpins: 2 ---
 	slot0.targetActorId = slot2
 
 	--- END OF BLOCK #12 ---
@@ -5145,7 +5139,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 61-61, warpins: 3 ---
+	--- BLOCK #13 62-62, warpins: 3 ---
 	return
 
 	--- END OF BLOCK #13 ---
@@ -5153,7 +5147,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 62-70, warpins: 2 ---
+	--- BLOCK #14 63-71, warpins: 2 ---
 	slot5 = Utils
 	slot5 = slot5.checkRelation
 	slot7 = slot3
@@ -5171,7 +5165,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #15 71-71, warpins: 1 ---
+	--- BLOCK #15 72-72, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #15 ---
@@ -5179,7 +5173,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 72-76, warpins: 2 ---
+	--- BLOCK #16 73-77, warpins: 2 ---
 	slot5 = ToBool
 	slot7 = slot2
 	slot5 = slot5(slot7)
@@ -5192,7 +5186,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #17 77-83, warpins: 1 ---
+	--- BLOCK #17 78-84, warpins: 1 ---
 	slot5 = slot0.curHitIdx
 	slot5 = slot5 + 1
 	slot0.curHitIdx = slot5
@@ -5205,7 +5199,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 84-93, warpins: 2 ---
+	--- BLOCK #18 85-94, warpins: 2 ---
 	slot7 = slot0
 	slot5 = slot0.getSrcAbility
 	slot5 = slot5(slot7)
@@ -5223,7 +5217,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #19 94-99, warpins: 1 ---
+	--- BLOCK #19 95-100, warpins: 1 ---
 	slot8 = slot0
 	slot6 = slot0.onProjectileHitRPC
 	slot9 = slot3
@@ -5237,18 +5231,18 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #20
 
 
-	--- BLOCK #20 100-102, warpins: 2 ---
+	--- BLOCK #20 101-103, warpins: 2 ---
 	slot6 = slot0.isReboundSelf
 	--- END OF BLOCK #20 ---
 
-	slot6 = if slot6 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #21
 	else
 	JUMP TO BLOCK #22
 	end
 
 
-	--- BLOCK #21 103-105, warpins: 1 ---
+	--- BLOCK #21 104-106, warpins: 1 ---
 	slot6 = slot0.owner
 	--- END OF BLOCK #21 ---
 
@@ -5259,7 +5253,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #22 106-111, warpins: 2 ---
+	--- BLOCK #22 107-112, warpins: 2 ---
 	slot8 = slot0
 	slot6 = slot0.onProjectileHit
 	slot9 = slot5
@@ -5273,7 +5267,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 112-116, warpins: 2 ---
+	--- BLOCK #23 113-117, warpins: 2 ---
 	slot6 = slot0.projectileType
 	slot7 = ProjectileConst
 	slot7 = slot7.PROJECTILE_TYPE_TRACKING
@@ -5286,7 +5280,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #24 117-121, warpins: 1 ---
+	--- BLOCK #24 118-122, warpins: 1 ---
 	slot6 = ToBool
 	slot8 = slot2
 	slot6 = slot6(slot8)
@@ -5299,7 +5293,7 @@ slot21 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #25 122-122, warpins: 1 ---
+	--- BLOCK #25 123-123, warpins: 1 ---
 	slot0.targetActorId = slot2
 
 	--- END OF BLOCK #25 ---
@@ -5307,7 +5301,7 @@ slot21 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 123-123, warpins: 3 ---
+	--- BLOCK #26 124-124, warpins: 3 ---
 	return
 	--- END OF BLOCK #26 ---
 
@@ -5498,18 +5492,10 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 12-25, warpins: 2 ---
+	--- BLOCK #2 12-17, warpins: 2 ---
 	slot2 = slot0.combatContext
 	slot2 = slot2.runtimeTargetInfo
-	slot3 = pg
-	slot3 = slot3.global
-	slot3 = slot3.abilityMgr
-	slot3 = slot3.runtimeTargetInfoPool
-	slot5 = slot3
-	slot3 = slot3.getWithCtor
-	slot6 = true
-	slot7 = slot0.lastHitActorId
-	slot3 = slot3(slot5, slot6, slot7)
+	slot3 = nil
 	slot4 = slot0.lastHitActorId
 	--- END OF BLOCK #2 ---
 
@@ -5520,7 +5506,17 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #3 26-38, warpins: 1 ---
+	--- BLOCK #3 18-40, warpins: 1 ---
+	slot4 = pg
+	slot4 = slot4.global
+	slot4 = slot4.abilityMgr
+	slot4 = slot4.runtimeTargetInfoPool
+	slot6 = slot4
+	slot4 = slot4.getWithCtor
+	slot7 = true
+	slot8 = slot0.lastHitActorId
+	slot4 = slot4(slot6, slot7, slot8)
+	slot3 = slot4
 	slot4 = slot0.combatContext
 	slot4.runtimeTargetInfo = slot3
 	slot4 = slot0.combatContext
@@ -5539,7 +5535,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 39-41, warpins: 2 ---
+	--- BLOCK #4 41-43, warpins: 2 ---
 	slot4 = slot0.onProjectileFinishRPC
 	--- END OF BLOCK #4 ---
 
@@ -5550,7 +5546,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #5 42-44, warpins: 1 ---
+	--- BLOCK #5 44-46, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.onProjectileFinishRPC
 
@@ -5561,7 +5557,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 45-60, warpins: 2 ---
+	--- BLOCK #6 47-62, warpins: 2 ---
 	slot4 = slot0.combatContext
 	slot5 = AbilityConst
 	slot5 = slot5.TRIGGER_ON_PROJECT_FINISH
@@ -5587,7 +5583,7 @@ slot21 = function(slot0)
 	end
 
 
-	--- BLOCK #7 61-70, warpins: 1 ---
+	--- BLOCK #7 63-72, warpins: 1 ---
 	slot4 = pg
 	slot4 = slot4.global
 	slot4 = slot4.abilityMgr
@@ -5605,7 +5601,7 @@ slot21 = function(slot0)
 	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #8 71-74, warpins: 2 ---
+	--- BLOCK #8 73-76, warpins: 2 ---
 	slot4 = slot0.combatContext
 	slot5 = nil
 	slot4.triggerType = slot5

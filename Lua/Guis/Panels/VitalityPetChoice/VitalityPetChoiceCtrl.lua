@@ -37,12 +37,12 @@ slot13 = "VitalityPetChoiceCtrl"
 slot14 = slot2
 slot11 = slot11(slot13, slot14)
 slot12 = {
-	Personality = "personality",
-	Ability = "ability",
-	Evolution = "evolution",
-	Form = "form",
 	Position = "position",
-	Attribute = "attribute"
+	Personality = "personality",
+	Attribute = "attribute",
+	Evolution = "evolution",
+	Ability = "ability",
+	Form = "form"
 }
 slot11.BonusType = slot12
 slot12 = "attribute"
@@ -955,40 +955,34 @@ slot12 = function(slot0, slot1, slot2)
 	slot11 = if slot11 then
 	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 81-86, warpins: 1 ---
-	slot13 = slot1
-	slot11 = slot1.TryChangePage
-	slot14 = "Type"
-	slot15 = 1
-
-	slot11(slot13, slot14, slot15)
-
-	--- END OF BLOCK #3 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #4 87-89, warpins: 1 ---
-	slot11 = slot2.isMagic
-	--- END OF BLOCK #4 ---
-
-	slot11 = if slot11 then
-	JUMP TO BLOCK #5
-	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 90-95, warpins: 1 ---
-	slot13 = slot1
-	slot11 = slot1.TryChangePage
-	slot14 = "Type"
-	slot15 = 2
+	--- BLOCK #3 81-87, warpins: 1 ---
+	slot11 = LuaUIUtils
+	slot11 = slot11.renderPetHeadFlashBgAndFrame
+	slot13 = slot4
+	slot14 = true
+	slot15 = slot2.shinyStyle
+	--- END OF BLOCK #3 ---
 
+	slot15 = if not slot15 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 88-88, warpins: 1 ---
+	slot15 = 0
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 89-90, warpins: 2 ---
 	slot11(slot13, slot14, slot15)
 
 	--- END OF BLOCK #5 ---
@@ -996,20 +990,20 @@ slot12 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #6 96-100, warpins: 1 ---
-	slot13 = slot1
-	slot11 = slot1.TryChangePage
-	slot14 = "Type"
-	slot15 = 0
+	--- BLOCK #6 91-95, warpins: 1 ---
+	slot11 = LuaUIUtils
+	slot11 = slot11.renderPetHeadFlashBgAndFrame
+	slot13 = slot4
+	slot14 = false
 
-	slot11(slot13, slot14, slot15)
+	slot11(slot13, slot14)
 
 	--- END OF BLOCK #6 ---
 
 	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 101-101, warpins: 3 ---
+	--- BLOCK #7 96-96, warpins: 2 ---
 	return
 	--- END OF BLOCK #7 ---
 

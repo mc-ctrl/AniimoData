@@ -47,7 +47,7 @@ end
 slot2.ctor = slot7
 
 slot7 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = Peep
 	slot1 = slot1.super
 	slot1 = slot1.onSandboxReady
@@ -62,6 +62,8 @@ slot7 = function(slot0)
 	slot4 = "PeepSB"
 	slot1 = slot1(slot3, slot4)
 	slot0.peepSB = slot1
+	slot1 = 0.3
+	slot0.sneakModeTransitionTime = slot1
 
 	return
 	--- END OF BLOCK #0 ---
@@ -160,20 +162,47 @@ slot7 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 68-72, warpins: 2 ---
+	--- BLOCK #2 68-75, warpins: 2 ---
 	slot9 = pg
 	slot9 = slot9.me
 	slot9.inPeep = slot1
+	slot9 = pg
+	slot9 = slot9.pawn
+	slot9 = slot9.updateStateCache
 	--- END OF BLOCK #2 ---
 
-	slot1 = if slot1 then
+	slot9 = if slot9 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 73-95, warpins: 1 ---
+	--- BLOCK #3 76-81, warpins: 1 ---
+	slot9 = pg
+	slot9 = slot9.pawn
+	slot11 = slot9
+	slot9 = slot9.updateStateCache
+	slot12 = "PEEP_ST"
+
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 82-83, warpins: 2 ---
+	--- END OF BLOCK #4 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 84-113, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.global
 	slot9 = slot9.ui
@@ -200,12 +229,21 @@ slot7 = function(slot0, slot1)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #3 ---
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.cameraMgr
+	slot11 = slot9
+	slot9 = slot9.StartSneakMode
+	slot12 = slot0.sneakModeTransitionTime
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #5
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
 
 
-	--- BLOCK #4 96-112, warpins: 1 ---
+	--- BLOCK #6 114-137, warpins: 1 ---
 	slot9 = pg
 	slot9 = slot9.global
 	slot9 = slot9.ui
@@ -227,14 +265,23 @@ slot7 = function(slot0, slot1)
 
 	slot9(slot11, slot12)
 
-	--- END OF BLOCK #4 ---
+	slot9 = pg
+	slot9 = slot9.global
+	slot9 = slot9.cameraMgr
+	slot11 = slot9
+	slot9 = slot9.StopSneakMode
+	slot12 = slot0.sneakModeTransitionTime
 
-	FLOW; TARGET BLOCK #5
+	slot9(slot11, slot12)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #5 113-113, warpins: 2 ---
+	--- BLOCK #7 138-138, warpins: 2 ---
 	return
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
 
 
@@ -288,7 +335,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 28-45, warpins: 2 ---
+	--- BLOCK #2 28-44, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.game
 	slot1 = slot1.camera
@@ -303,6 +350,33 @@ slot7 = function(slot0)
 	slot1 = slot1.me
 	slot2 = false
 	slot1.inPeep = slot2
+	slot1 = pg
+	slot1 = slot1.pawn
+	slot1 = slot1.updateStateCache
+	--- END OF BLOCK #2 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 45-50, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.pawn
+	slot3 = slot1
+	slot1 = slot1.updateStateCache
+	slot4 = "PEEP_ST"
+
+	slot1(slot3, slot4)
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 51-56, warpins: 2 ---
 	slot1 = Peep
 	slot1 = slot1.super
 	slot1 = slot1.destroy
@@ -311,7 +385,7 @@ slot7 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 
 

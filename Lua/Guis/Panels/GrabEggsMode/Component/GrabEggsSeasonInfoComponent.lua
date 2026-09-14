@@ -1,57 +1,51 @@
---- BLOCK #0 1-83, warpins: 1 ---
+--- BLOCK #0 1-78, warpins: 1 ---
 slot0 = require
-slot2 = "Core.Log.LoggerManager"
-slot0 = slot0(slot2)
-slot0 = slot0.getLogger
-slot2 = "GrabEggsSeasonInfoComponent"
+slot2 = "Core.Framework.Class"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "Core.Framework.Class"
+slot3 = "Guis.Helper.UIComponent"
 slot1 = slot1(slot3)
-slot2 = require
-slot4 = "Guis.Helper.UIComponent"
-slot2 = slot2(slot4)
-slot3 = slot1.LightClass
-slot5 = "GrabEggsSeasonInfoComponent"
-slot6 = slot2
-slot3 = slot3(slot5, slot6)
+slot2 = slot0.LightClass
+slot4 = "GrabEggsSeasonInfoComponent"
+slot5 = slot1
+slot2 = slot2(slot4, slot5)
+slot3 = require
+slot5 = "Core.Common.Time"
+slot3 = slot3(slot5)
 slot4 = require
-slot6 = "Core.Common.Time"
+slot6 = "Utils.ClientTextUtils"
 slot4 = slot4(slot6)
 slot5 = require
-slot7 = "Utils.ClientTextUtils"
+slot7 = "Const.MessageName"
 slot5 = slot5(slot7)
 slot6 = require
-slot8 = "Common.Utils.TimeUtils"
+slot8 = "Const.UIConst"
 slot6 = slot6(slot8)
 slot7 = require
-slot9 = "Const.MessageName"
+slot9 = "Const.RedDotConst"
 slot7 = slot7(slot9)
-slot8 = require
-slot10 = "Const.UIConst"
-slot8 = slot8(slot10)
-slot9 = require
-slot11 = "Const.RedDotConst"
-slot9 = slot9(slot11)
-slot10 = require
-slot12 = "Common.Const.Const"
-slot10 = slot10(slot12)
-slot11 = {}
-slot12 = slot7.GRAB_EGG_REWARD_BOX_CHANGED
-slot13 = {
+slot8 = {}
+slot9 = slot5.GRAB_EGG_REWARD_BOX_CHANGED
+slot10 = {
 	"onRewardBoxChanged",
 	true
 }
-slot11[slot12] = slot13
-slot12 = slot7.GRAB_EGG_RANK_CHANGED
-slot13 = {
+slot8[slot9] = slot10
+slot9 = slot5.GRAB_EGG_RANK_CHANGED
+slot10 = {
 	"onRankChanged",
 	true
 }
-slot11[slot12] = slot13
-slot3.messages = slot11
+slot8[slot9] = slot10
+slot9 = slot5.GRAB_EGG_RANK_PROGRESS_CHANGED
+slot10 = {
+	"onRankProgressChanged",
+	true
+}
+slot8[slot9] = slot10
+slot2.messages = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.seasonInfoUContainer
@@ -64,10 +58,10 @@ slot11 = function(slot0)
 
 end
 
-slot3.findObjects = slot11
+slot2.findObjects = slot8
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-42, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-45, warpins: 1 ---
 	slot1 = slot0.container
 	slot1 = slot1.content
 	slot1 = slot1.transform
@@ -82,14 +76,24 @@ slot11 = function(slot0)
 	slot0.listRewardUList = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "textLevelUSDFText"
+	slot5 = "btnSeasonRankUButton"
 	slot2 = slot2(slot4, slot5)
-	slot0.textLevelUSDFText = slot2
+	slot0.btnSeasonRankUButton = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "iconUImage"
+	slot5 = "rankIconUImage"
 	slot2 = slot2(slot4, slot5)
-	slot0.iconUImage = slot2
+	slot0.rankIconUImage = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rankLevelUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.rankLevelUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "rankProgressUList"
+	slot2 = slot2(slot4, slot5)
+	slot0.rankProgressUList = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
 	slot5 = "txtNameUSDFText"
@@ -97,18 +101,36 @@ slot11 = function(slot0)
 	slot0.txtNameUSDFText = slot2
 	slot4 = slot1
 	slot2 = slot1.GetRefValue
-	slot5 = "btnInfoUButton"
+	slot5 = "numUSDFText"
 	slot2 = slot2(slot4, slot5)
-	slot0.btnInfoUButton = slot2
-	slot2 = slot0.btnInfoUButton
+	slot0.numUSDFText = slot2
+	slot2 = slot0.btnSeasonRankUButton
+	--- END OF BLOCK #0 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 46-60, warpins: 1 ---
+	slot2 = slot0.btnSeasonRankUButton
+	slot3 = true
+	slot2.interactable = slot3
+	slot2 = slot0.btnSeasonRankUButton
 
 	slot3 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot0 = self
+		--- BLOCK #0 1-9, warpins: 1 ---
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
 		slot2 = slot0
-		slot0 = slot0.openSeasonInfoTips
+		slot0 = slot0.open
+		slot3 = UIConst
+		slot3 = slot3.UI_ID_GRAB_EGGS_SEASON_RANK_MAIN
 
-		slot0(slot2)
+		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -118,6 +140,122 @@ slot11 = function(slot0)
 	end
 
 	slot2.luaClick = slot3
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.setPreViewRedDot
+	slot4 = RedDotConst
+	slot4 = slot4.RedDotPath
+	slot4 = slot4.GRAB_EGG_MODE_SEASON_RANK
+	slot5 = slot0.btnSeasonRankUButton
+
+	slot6 = function()
+		--- BLOCK #0 1-7, warpins: 1 ---
+		slot0 = self
+		slot0 = slot0.model
+		slot2 = slot0
+		slot0 = slot0.hasClaimableRankReward
+		slot0 = slot0(slot2)
+		--- END OF BLOCK #0 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 8-11, warpins: 1 ---
+		slot0 = RedDotConst
+		slot0 = slot0.RedDotStyle
+		slot0 = slot0.REWARD
+
+		return slot0
+
+		--- END OF BLOCK #1 ---
+
+		FLOW; TARGET BLOCK #2
+
+
+		--- BLOCK #2 12-15, warpins: 2 ---
+		slot0 = RedDotConst
+		slot0 = slot0.RedDotStyle
+		slot0 = slot0.NONE
+
+		return slot0
+		--- END OF BLOCK #2 ---
+
+
+
+	end
+
+	slot2(slot4, slot5, slot6)
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 61-63, warpins: 2 ---
+	slot2 = slot0.rankProgressUList
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 64-66, warpins: 1 ---
+	slot2 = slot0.rankProgressUList
+
+	slot3 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot5 = slot0
+		slot3 = slot0.TryChangePage
+		slot6 = "Stage"
+		slot7 = slot2.filled
+		--- END OF BLOCK #0 ---
+
+		slot7 = if slot7 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 7-8, warpins: 1 ---
+		slot7 = 1
+		--- END OF BLOCK #1 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+		--- BLOCK #2 9-9, warpins: 1 ---
+		slot7 = 0
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 10-11, warpins: 2 ---
+		slot3(slot5, slot6, slot7)
+
+		return
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
+	slot2.luaRenderItem = slot3
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 67-73, warpins: 2 ---
 	slot2 = {}
 	slot0.slotButtons = slot2
 	slot2 = slot0.listRewardUList
@@ -146,15 +284,15 @@ slot11 = function(slot0)
 	slot2.luaRenderItem = slot3
 
 	return
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot3.findContainerObjects = slot11
+slot2.findContainerObjects = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.killBoxTimer
@@ -178,9 +316,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.onDestroy = slot11
+slot2.onDestroy = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = false
 	slot0.isContainerLoading = slot1
@@ -192,9 +330,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.initView = slot11
+slot2.initView = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0.isContainerLoading
 	--- END OF BLOCK #0 ---
@@ -329,18 +467,30 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.initContainer = slot11
+slot2.initContainer = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.initContainer
 
 	slot4 = function()
-		--- BLOCK #0 1-9, warpins: 1 ---
+		--- BLOCK #0 1-17, warpins: 1 ---
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshSeasonInfo
+
+		slot0(slot2)
+
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.refreshRankInfo
+
+		slot0(slot2)
+
+		slot0 = self
+		slot2 = slot0
+		slot0 = slot0.refreshRankRewardRedDot
 
 		slot0(slot2)
 
@@ -366,9 +516,57 @@ slot11 = function(slot0)
 
 end
 
-slot3.refresh = slot11
+slot2.refresh = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.model
+	slot3 = slot1
+	slot1 = slot1.getSeasonDisplayInfo
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-18, warpins: 2 ---
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.numUSDFText
+	slot5 = slot1.numText
+
+	slot2(slot4, slot5)
+
+	slot2 = ClientTextUtils
+	slot2 = slot2.setText
+	slot4 = slot0.txtNameUSDFText
+	slot5 = slot1.name
+
+	slot2(slot4, slot5)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.refreshSeasonInfo = slot8
+
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.model
 	slot3 = slot1
@@ -392,17 +590,21 @@ slot11 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-26, warpins: 2 ---
+	--- BLOCK #2 8-10, warpins: 2 ---
+	slot2 = slot0.rankLevelUSDFText
+	--- END OF BLOCK #2 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 11-20, warpins: 1 ---
 	slot2 = ClientTextUtils
 	slot2 = slot2.setText
-	slot4 = slot0.txtNameUSDFText
-	slot5 = slot1.name
-
-	slot2(slot4, slot5)
-
-	slot2 = ClientTextUtils
-	slot2 = slot2.setText
-	slot4 = slot0.textLevelUSDFText
+	slot4 = slot0.rankLevelUSDFText
 	slot5 = slot0.model
 	slot7 = slot5
 	slot5 = slot5.getDisplayRoman
@@ -412,20 +614,131 @@ slot11 = function(slot0)
 
 	slot2(slot4, MULTRES)
 
-	slot2 = slot0.iconUImage
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 21-23, warpins: 2 ---
+	slot2 = slot0.rankIconUImage
+	--- END OF BLOCK #4 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 24-26, warpins: 1 ---
+	slot2 = slot0.rankIconUImage
 	slot3 = slot1.icon
 	slot2.url = slot3
+	--- END OF BLOCK #5 ---
 
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 27-29, warpins: 2 ---
+	slot2 = slot0.rankProgressUList
+	--- END OF BLOCK #6 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #7
+	else
+	JUMP TO BLOCK #13
+	end
+
+
+	--- BLOCK #7 30-34, warpins: 1 ---
+	slot2 = {}
+	slot3 = 1
+	slot4 = slot1.upNumber
+	slot5 = 1
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 35-38, warpins: 2 ---
+	slot7 = {}
+	slot8 = slot1.eggStar
+	--- END OF BLOCK #8 ---
+
+	if slot6 > slot8 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #9 39-40, warpins: 1 ---
+	slot8 = false
+	--- END OF BLOCK #9 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+	--- BLOCK #10 41-41, warpins: 1 ---
+	slot8 = true
+	--- END OF BLOCK #10 ---
+
+	FLOW; TARGET BLOCK #11
+
+
+	--- BLOCK #11 42-44, warpins: 2 ---
+	slot7.filled = slot8
+	slot2[slot6] = slot7
+	--- END OF BLOCK #11 ---
+
+	for slot6=slot3, slot4, slot5
+	LOOP BLOCK #8
+	GO OUT TO BLOCK #12
+
+	--- BLOCK #12 45-49, warpins: 1 ---
+	slot3 = slot0.rankProgressUList
+	slot5 = slot3
+	slot3 = slot3.SetList
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	--- END OF BLOCK #12 ---
+
+	FLOW; TARGET BLOCK #13
+
+
+	--- BLOCK #13 50-50, warpins: 2 ---
 	return
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #13 ---
 
 
 
 end
 
-slot3.refreshRankInfo = slot11
+slot2.refreshRankInfo = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
+	--- BLOCK #0 1-8, warpins: 1 ---
+	slot1 = pg
+	slot1 = slot1.global
+	slot1 = slot1.refreshRedDotState
+	slot3 = RedDotConst
+	slot3 = slot3.RedDotPath
+	slot3 = slot3.GRAB_EGG_MODE_SEASON_RANK
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot2.refreshRankRewardRedDot = slot8
+
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentSlots
 
@@ -490,9 +803,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.clearAllSlotRedDots = slot11
+slot2.clearAllSlotRedDots = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-16, warpins: 1 ---
 	slot1 = {}
 	slot0.slotButtons = slot1
@@ -520,9 +833,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.refreshBoxList = slot11
+slot2.refreshBoxList = slot8
 
-slot11 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-8, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.killBoxTimer
@@ -585,9 +898,9 @@ slot11 = function(slot0, slot1)
 
 end
 
-slot3.resetBoxTimer = slot11
+slot2.resetBoxTimer = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentSlots
 	--- END OF BLOCK #0 ---
@@ -668,9 +981,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.hasCountingDownSlot = slot11
+slot2.hasCountingDownSlot = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.currentSlots
 
@@ -901,9 +1214,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.tickCountDown = slot11
+slot2.tickCountDown = slot8
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot4 = slot2.isReady
 	--- END OF BLOCK #0 ---
@@ -1024,9 +1337,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.updateSlotCountDown = slot11
+slot2.updateSlotCountDown = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.boxtimer
 	--- END OF BLOCK #0 ---
@@ -1061,9 +1374,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.killBoxTimer = slot11
+slot2.killBoxTimer = slot8
 
-slot11 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-15, warpins: 1 ---
 	slot4 = string
 	slot4 = slot4.format
@@ -1352,32 +1665,9 @@ slot11 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot3.renderBoxSlot = slot11
+slot2.renderBoxSlot = slot8
 
-slot11 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.tips
-	slot3 = slot1
-	slot1 = slot1.openRogPopTips
-	slot4 = Const
-	slot4 = slot4.COMMON_POPUP_TIP_ID
-	slot4 = slot4.GRAB_EGG_SEASON_INFO
-
-	slot1(slot3, slot4)
-
-	return
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot3.openSeasonInfoTips = slot11
-
-slot11 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.container
 	slot3 = slot1
@@ -1419,9 +1709,58 @@ slot11 = function(slot0)
 
 end
 
-slot3.onRewardBoxChanged = slot11
+slot2.onRewardBoxChanged = slot8
 
-slot11 = function(slot0)
+slot8 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = slot0.container
+	slot3 = slot1
+	slot1 = slot1.CheckURLLoaded
+	slot1 = slot1(slot3)
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-7, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 8-17, warpins: 2 ---
+	slot3 = slot0
+	slot1 = slot0.refreshRankInfo
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshRankRewardRedDot
+
+	slot1(slot3)
+
+	slot3 = slot0
+	slot1 = slot0.refreshBoxList
+
+	slot1(slot3)
+
+	return
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot2.onRankChanged = slot8
+
+slot8 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = slot0.container
 	slot3 = slot1
@@ -1452,7 +1791,7 @@ slot11 = function(slot0)
 	slot1(slot3)
 
 	slot3 = slot0
-	slot1 = slot0.refreshBoxList
+	slot1 = slot0.refreshRankRewardRedDot
 
 	slot1(slot3)
 
@@ -1463,9 +1802,9 @@ slot11 = function(slot0)
 
 end
 
-slot3.onRankChanged = slot11
+slot2.onRankProgressChanged = slot8
 
-return slot3
+return slot2
 --- END OF BLOCK #0 ---
 
 

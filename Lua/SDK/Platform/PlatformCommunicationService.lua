@@ -1,187 +1,180 @@
---- BLOCK #0 1-12, warpins: 1 ---
+--- BLOCK #0 1-21, warpins: 1 ---
 slot0 = require
-slot2 = "SDK.Platform.PlatformIdentityUtils"
+slot2 = "Core.Common.EmptyTable"
 slot0 = slot0(slot2)
 slot1 = require
-slot3 = "SDK.Platform.PlatformLogger"
+slot3 = "SDK.Platform.PlatformIdentityUtils"
 slot1 = slot1(slot3)
 slot2 = require
-slot4 = "Common.Const.EventConst"
+slot4 = "SDK.Platform.PlatformNoticeUtils"
 slot2 = slot2(slot4)
-slot3 = CS
+slot3 = require
+slot5 = "Common.NoticeDef"
+slot3 = slot3(slot5)
+slot4 = require
+slot6 = "SDK.Platform.PlatformLogger"
+slot4 = slot4(slot6)
+slot5 = require
+slot7 = "Common.Const.EventConst"
+slot5 = slot5(slot7)
+slot6 = CS
 --- END OF BLOCK #0 ---
 
-slot3 = if slot3 then
+slot6 = if slot6 then
 JUMP TO BLOCK #1
 else
 JUMP TO BLOCK #6
 end
 
 
---- BLOCK #1 13-16, warpins: 1 ---
-slot3 = CS
-slot3 = slot3.FunPlus
+--- BLOCK #1 22-25, warpins: 1 ---
+slot6 = CS
+slot6 = slot6.FunPlus
 --- END OF BLOCK #1 ---
 
-slot3 = if slot3 then
+slot6 = if slot6 then
 JUMP TO BLOCK #2
 else
 JUMP TO BLOCK #6
 end
 
 
---- BLOCK #2 17-21, warpins: 1 ---
-slot3 = CS
-slot3 = slot3.FunPlus
-slot3 = slot3.WorldX
+--- BLOCK #2 26-30, warpins: 1 ---
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
 --- END OF BLOCK #2 ---
 
-slot3 = if slot3 then
+slot6 = if slot6 then
 JUMP TO BLOCK #3
 else
 JUMP TO BLOCK #6
 end
 
 
---- BLOCK #3 22-27, warpins: 1 ---
-slot3 = CS
-slot3 = slot3.FunPlus
-slot3 = slot3.WorldX
-slot3 = slot3.SDK
+--- BLOCK #3 31-36, warpins: 1 ---
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
+slot6 = slot6.SDK
 --- END OF BLOCK #3 ---
 
-slot3 = if slot3 then
+slot6 = if slot6 then
 JUMP TO BLOCK #4
 else
 JUMP TO BLOCK #6
 end
 
 
---- BLOCK #4 28-34, warpins: 1 ---
-slot3 = CS
-slot3 = slot3.FunPlus
-slot3 = slot3.WorldX
-slot3 = slot3.SDK
-slot3 = slot3.Platform
+--- BLOCK #4 37-43, warpins: 1 ---
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
+slot6 = slot6.SDK
+slot6 = slot6.Platform
 --- END OF BLOCK #4 ---
 
-slot3 = if slot3 then
+slot6 = if slot6 then
 JUMP TO BLOCK #5
 else
 JUMP TO BLOCK #6
 end
 
 
---- BLOCK #5 35-42, warpins: 1 ---
-slot3 = CS
-slot3 = slot3.FunPlus
-slot3 = slot3.WorldX
-slot3 = slot3.SDK
-slot3 = slot3.Platform
-slot3 = slot3.PlatformBridgeLuaFacade
+--- BLOCK #5 44-51, warpins: 1 ---
+slot6 = CS
+slot6 = slot6.FunPlus
+slot6 = slot6.WorldX
+slot6 = slot6.SDK
+slot6 = slot6.Platform
+slot6 = slot6.PlatformBridgeLuaFacade
 --- END OF BLOCK #5 ---
 
-slot3 = if not slot3 then
+slot6 = if not slot6 then
 JUMP TO BLOCK #6
 else
 JUMP TO BLOCK #7
 end
 
 
---- BLOCK #6 43-43, warpins: 6 ---
-slot3 = nil
+--- BLOCK #6 52-52, warpins: 6 ---
+slot6 = nil
 --- END OF BLOCK #6 ---
 
 FLOW; TARGET BLOCK #7
 
 
---- BLOCK #7 44-164, warpins: 2 ---
-slot4 = {}
-slot5 = {
-	Text = "text",
-	Voice = "voice"
+--- BLOCK #7 53-161, warpins: 2 ---
+slot7 = {}
+slot8 = {
+	Voice = "voice",
+	Text = "text"
 }
-slot4.Channel = slot5
-slot5 = {
-	Unknown = "unknown",
+slot7.Channel = slot8
+slot8 = {
 	Deny = "deny",
-	Fallback = "fallback",
-	Allow = "allow"
+	Unknown = "unknown",
+	Allow = "allow",
+	Fallback = "fallback"
 }
-slot4.Decision = slot5
-slot5 = {
+slot7.Decision = slot8
+slot8 = {
+	Everyone = "everyone",
 	Fallback = "fallback",
 	Blocked = "blocked",
-	FriendsOnly = "friends_only",
-	Everyone = "everyone",
+	Unknown = "unknown",
+	FriendsOnly = "friends_only"
+}
+slot7.AudiencePolicy = slot8
+slot8 = {
+	Friends = "friends",
+	Anyone = "anyone",
+	Fallback = "fallback",
+	Blocked = "blocked",
 	Unknown = "unknown"
 }
-slot4.AudiencePolicy = slot5
-slot5 = {
-	Unknown = "unknown",
-	Fallback = "fallback",
-	Blocked = "blocked",
-	Friends = "friends",
-	Anyone = "anyone"
-}
-slot4.CommunicationSetting = slot5
-slot5 = {
-	Text = "CommunicateUsingText",
+slot7.CommunicationSetting = slot8
+slot8 = {
 	LocalPrivacyText = "LocalCommunicatePrivacyText",
 	Voice = "CommunicateUsingVoice",
-	LocalPrivacyVoice = "LocalCommunicatePrivacyVoice"
+	LocalPrivacyVoice = "LocalCommunicatePrivacyVoice",
+	Text = "CommunicateUsingText"
 }
-slot4.PermissionName = slot5
-slot5 = {
-	CrossNetworkEveryone = "cross_network_everyone",
-	BridgeUnsupported = "bridge_unsupported",
-	CrossNetworkFriendsOnly = "cross_network_friends_only",
-	Allowed = "allowed",
-	CrossNetworkBlocked = "cross_network_blocked",
+slot7.PermissionName = slot8
+slot8 = {
 	CheckPending = "check_pending",
-	CrossNetworkUnknown = "cross_network_unknown",
-	PlatformUnsupported = "platform_unsupported"
+	CrossNetworkEveryone = "cross_network_everyone",
+	PlatformUnsupported = "platform_unsupported",
+	CrossNetworkFriendsOnly = "cross_network_friends_only",
+	BridgeUnsupported = "bridge_unsupported",
+	CrossNetworkBlocked = "cross_network_blocked",
+	Allowed = "allowed",
+	CrossNetworkUnknown = "cross_network_unknown"
 }
-slot4.Reason = slot5
-slot5 = {
-	lastTipTime = 0,
+slot7.Reason = slot8
+slot8 = {
 	lastTipReason = "",
-	lastTipKey = ""
+	lastTipKey = "",
+	privilegeRequestGeneration = 0,
+	lastTipTime = 0
 }
-slot6 = {}
-slot5.localSettingsByChannel = slot6
-slot6 = {}
-slot5.localSettingPendingByChannel = slot6
-slot6 = {}
-slot5.pendingCallbacksByPermission = slot6
-slot6 = {}
-slot5.pendingPrivilegeCallbacks = slot6
-slot6 = {}
-slot5.pendingLocalCommunicatePrivacyCallbacks = slot6
-slot4.state = slot5
-slot5 = slot4.PermissionName
-slot4.PermissionName = slot5
-slot5 = 1
-slot4.TIP_DEDUPE_INTERVAL = slot5
-slot5 = {}
-slot4.LOCAL_PRIVACY_DENIED_TIP_KEY_BY_CHANNEL = slot5
-slot5 = slot4.LOCAL_PRIVACY_DENIED_TIP_KEY_BY_CHANNEL
-slot6 = slot4.Channel
-slot6 = slot6.Text
-slot7 = "PLATFORM_SOCIAL_PUBLIC_CHAT_PRIVILEGE_DENIED"
-slot5[slot6] = slot7
-slot5 = slot4.LOCAL_PRIVACY_DENIED_TIP_KEY_BY_CHANNEL
-slot6 = slot4.Channel
-slot6 = slot6.Voice
-slot7 = "PLATFORM_SOCIAL_VOICE_PRIVILEGE_DENIED"
-slot5[slot6] = slot7
-slot5 = {
-	PLATFORM_SOCIAL_VOICE_PRIVILEGE_DENIED = "由于当前平台隐私设置限制，无法发送语音消息。",
-	PLATFORM_SOCIAL_PUBLIC_CHAT_PRIVILEGE_DENIED = "由于当前平台隐私设置限制，无法发送聊天消息。"
-}
-slot4.DEFAULT_TIP_TEXT = slot5
+slot9 = {}
+slot8.localSettingsByChannel = slot9
+slot9 = {}
+slot8.localSettingPendingByChannel = slot9
+slot9 = {}
+slot8.pendingCallbacksByPermission = slot9
+slot9 = {}
+slot8.pendingPrivilegeCallbacks = slot9
+slot9 = {}
+slot8.pendingLocalCommunicatePrivacyCallbacks = slot9
+slot7.state = slot8
+slot8 = slot7.PermissionName
+slot7.PermissionName = slot8
+slot8 = 1
+slot7.TIP_DEDUPE_INTERVAL = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot0 = package
 	slot0 = slot0.loaded
@@ -224,9 +217,9 @@ slot5 = function()
 
 end
 
-slot4.getNow = slot5
+slot7.getNow = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -283,9 +276,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.cloneTable = slot5
+slot7.cloneTable = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -483,9 +476,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isSameSettingPolicy = slot5
+slot7.isSameSettingPolicy = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = PlatformCommunicationService
 	slot1 = slot1.Channel
@@ -523,9 +516,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.normalizeChannel = slot5
+slot7.normalizeChannel = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.normalizeChannel
@@ -630,9 +623,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.getPrivacyPermissionName = slot5
+slot7.getPrivacyPermissionName = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -692,9 +685,9 @@ slot5 = function()
 
 end
 
-slot4.isBridgeSupported = slot5
+slot7.isBridgeSupported = slot8
 
-slot5 = function()
+slot8 = function()
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot0 = PlatformIdentityUtils
 	--- END OF BLOCK #0 ---
@@ -757,9 +750,9 @@ slot5 = function()
 
 end
 
-slot4.supportsConsoleCommunication = slot5
+slot7.supportsConsoleCommunication = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #0 ---
@@ -831,9 +824,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.makeSetting = slot5
+slot7.makeSetting = slot8
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -870,9 +863,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.makeChannelSetting = slot5
+slot7.makeChannelSetting = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot1 = PlatformCommunicationService
 	slot1 = slot1.makeChannelSetting
@@ -891,9 +884,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.makeUnsupportedPlatformSetting = slot5
+slot7.makeUnsupportedPlatformSetting = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = type
 	slot3 = slot0
@@ -950,9 +943,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.formatLocalCommunicationPolicyDiagnostics = slot5
+slot7.formatLocalCommunicationPolicyDiagnostics = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -1177,9 +1170,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.makeLegacyPolicy = slot5
+slot7.makeLegacyPolicy = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.normalizeChannel
@@ -1462,9 +1455,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.completeLocalSetting = slot5
+slot7.completeLocalSetting = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = slot0[slot1]
 	--- END OF BLOCK #0 ---
@@ -1493,9 +1486,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.getPermissionBucket = slot5
+slot7.getPermissionBucket = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot2 = PlatformBridgeLuaFacade
 	--- END OF BLOCK #0 ---
@@ -1636,9 +1629,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.dispatch = slot5
+slot7.dispatch = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.CommunicationSetting
@@ -1696,9 +1689,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.resolveLocalCommunicationSetting = slot5
+slot7.resolveLocalCommunicationSetting = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = PlatformCommunicationService
 	slot1 = slot1.normalizeChannel
@@ -1966,454 +1959,270 @@ slot5 = function(slot0)
 
 end
 
-slot4.startLocalCommunicationSettingPrefetch = slot5
+slot7.startLocalCommunicationSettingPrefetch = slot8
 
-slot5 = function(slot0, slot1)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot2 = string
-	slot2 = slot2.isNilOrEmpty
-	slot4 = slot0
-	slot2 = slot2(slot4)
+slot8 = function(slot0)
+	--- BLOCK #0 1-4, warpins: 1 ---
+	slot1 = PlatformNoticeUtils
+	slot1 = slot1.getText
+	slot3 = slot0
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot2 = true
-
-	return slot2
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-10, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	if slot0 == slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #4
-	end
-
-
-	--- BLOCK #3 11-12, warpins: 1 ---
-	slot2 = true
-
-	return slot2
-
-	--- END OF BLOCK #3 ---
-
-	FLOW; TARGET BLOCK #4
-
-
-	--- BLOCK #4 13-19, warpins: 2 ---
-	slot2 = string
-	slot2 = slot2.match
-	slot4 = slot0
-	slot5 = "^%-?%d+$"
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #4 ---
-
-	if slot2 == nil then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 20-21, warpins: 1 ---
-	slot2 = false
-	--- END OF BLOCK #5 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #7
-
-
-	--- BLOCK #6 22-22, warpins: 1 ---
-	slot2 = true
-
-	--- END OF BLOCK #6 ---
-
-	FLOW; TARGET BLOCK #7
-
-
-	--- BLOCK #7 23-23, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot4.shouldUseDefaultTipText = slot5
+slot7.getTipText = slot8
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = string
-	slot1 = slot1.isNilOrEmpty
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot1 = ""
-
-	return slot1
-
-	--- END OF BLOCK #1 ---
-
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 9-11, warpins: 2 ---
-	slot1 = pg
-	--- END OF BLOCK #2 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #3
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #3 12-15, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.getGameString
-	--- END OF BLOCK #3 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #5
-	end
-
-
-	--- BLOCK #4 16-21, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.getGameString
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	--- END OF BLOCK #4 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 22-22, warpins: 3 ---
-	slot1 = slot0
-	--- END OF BLOCK #5 ---
-
-	FLOW; TARGET BLOCK #6
-
-
-	--- BLOCK #6 23-29, warpins: 2 ---
-	slot2 = PlatformCommunicationService
-	slot2 = slot2.shouldUseDefaultTipText
-	slot4 = slot1
-	slot5 = slot0
-	slot2 = slot2(slot4, slot5)
-	--- END OF BLOCK #6 ---
-
-	slot2 = if slot2 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #10
-	end
-
-
-	--- BLOCK #7 30-34, warpins: 1 ---
-	slot2 = PlatformCommunicationService
-	slot2 = slot2.DEFAULT_TIP_TEXT
-	slot2 = slot2[slot0]
-	--- END OF BLOCK #7 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #8
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #8 35-35, warpins: 1 ---
-	slot2 = slot0
-
-	--- END OF BLOCK #8 ---
-
-	FLOW; TARGET BLOCK #9
-
-
-	--- BLOCK #9 36-36, warpins: 2 ---
-	return slot2
-	--- END OF BLOCK #9 ---
-
-	FLOW; TARGET BLOCK #10
-
-
-	--- BLOCK #10 37-37, warpins: 2 ---
-	return slot1
-	--- END OF BLOCK #10 ---
-
-
-
-end
-
-slot4.getTipText = slot5
-
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
 	if slot2 == true then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 3-8, warpins: 1 ---
-	slot3 = string
-	slot3 = slot3.isNilOrEmpty
-	slot5 = slot0
-	slot3 = slot3(slot5)
-
+	--- BLOCK #1 3-4, warpins: 1 ---
 	--- END OF BLOCK #1 ---
 
-	slot3 = if slot3 then
+	if slot0 ~= nil then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #2 9-9, warpins: 2 ---
-	return
-
+	--- BLOCK #2 5-6, warpins: 1 ---
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	if slot0 == "" then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
 
 
-	--- BLOCK #3 10-17, warpins: 2 ---
+	--- BLOCK #3 7-7, warpins: 3 ---
+	return
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 8-18, warpins: 2 ---
 	slot3 = PlatformCommunicationService
 	slot3 = slot3.getNow
 	slot3 = slot3()
-	slot4 = PlatformCommunicationService
-	slot4 = slot4.state
-	slot4 = slot4.lastTipKey
-	--- END OF BLOCK #3 ---
-
-	if slot4 == slot0 then
-	JUMP TO BLOCK #4
-	else
-	JUMP TO BLOCK #9
-	end
-
-
-	--- BLOCK #4 18-23, warpins: 1 ---
-	slot4 = PlatformCommunicationService
-	slot4 = slot4.state
-	slot4 = slot4.lastTipReason
-	slot5 = tostring
+	slot4 = tostring
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = PlatformCommunicationService
+	slot5 = slot5.state
+	slot5 = slot5.lastTipKey
 	--- END OF BLOCK #4 ---
 
-	slot7 = if not slot1 then
+	if slot5 == slot4 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #6
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #5 24-24, warpins: 1 ---
-	slot7 = ""
+	--- BLOCK #5 19-24, warpins: 1 ---
+	slot5 = PlatformCommunicationService
+	slot5 = slot5.state
+	slot5 = slot5.lastTipReason
+	slot6 = tostring
 	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #6
+	slot8 = if not slot1 then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
 
 
-	--- BLOCK #6 25-27, warpins: 2 ---
-	slot5 = slot5(slot7)
+	--- BLOCK #6 25-25, warpins: 1 ---
+	slot8 = ""
 	--- END OF BLOCK #6 ---
 
-	if slot4 == slot5 then
-	JUMP TO BLOCK #7
-	else
-	JUMP TO BLOCK #9
-	end
+	FLOW; TARGET BLOCK #7
 
 
-	--- BLOCK #7 28-35, warpins: 1 ---
-	slot4 = PlatformCommunicationService
-	slot4 = slot4.state
-	slot4 = slot4.lastTipTime
-	slot4 = slot3 - slot4
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.TIP_DEDUPE_INTERVAL
-
+	--- BLOCK #7 26-28, warpins: 2 ---
+	slot6 = slot6(slot8)
 	--- END OF BLOCK #7 ---
 
-	if slot4 < slot5 then
+	if slot5 == slot6 then
 	JUMP TO BLOCK #8
 	else
-	JUMP TO BLOCK #9
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #8 36-36, warpins: 1 ---
-	return
+	--- BLOCK #8 29-36, warpins: 1 ---
+	slot5 = PlatformCommunicationService
+	slot5 = slot5.state
+	slot5 = slot5.lastTipTime
+	slot5 = slot3 - slot5
+	slot6 = PlatformCommunicationService
+	slot6 = slot6.TIP_DEDUPE_INTERVAL
 
 	--- END OF BLOCK #8 ---
 
-	FLOW; TARGET BLOCK #9
+	if slot5 < slot6 then
+	JUMP TO BLOCK #9
+	else
+	JUMP TO BLOCK #10
+	end
 
 
-	--- BLOCK #9 37-46, warpins: 4 ---
-	slot4 = PlatformCommunicationService
-	slot4 = slot4.getTipText
-	slot6 = slot0
-	slot4 = slot4(slot6)
-	slot5 = string
-	slot5 = slot5.isNilOrEmpty
-	slot7 = slot4
-	slot5 = slot5(slot7)
+	--- BLOCK #9 37-37, warpins: 1 ---
+	return
 
 	--- END OF BLOCK #9 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #10
-	else
-	JUMP TO BLOCK #11
-	end
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 47-47, warpins: 1 ---
-	return
+	--- BLOCK #10 38-47, warpins: 4 ---
+	slot5 = PlatformCommunicationService
+	slot5 = slot5.getTipText
+	slot7 = slot0
+	slot5 = slot5(slot7)
+	slot6 = string
+	slot6 = slot6.isNilOrEmpty
+	slot8 = slot5
+	slot6 = slot6(slot8)
 
 	--- END OF BLOCK #10 ---
 
-	FLOW; TARGET BLOCK #11
+	slot6 = if slot6 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
 
 
-	--- BLOCK #11 48-55, warpins: 2 ---
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.state
-	slot5.lastTipKey = slot0
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.state
-	slot6 = tostring
+	--- BLOCK #11 48-48, warpins: 1 ---
+	return
+
 	--- END OF BLOCK #11 ---
 
-	slot8 = if not slot1 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	FLOW; TARGET BLOCK #12
 
 
-	--- BLOCK #12 56-56, warpins: 1 ---
-	slot8 = ""
+	--- BLOCK #12 49-56, warpins: 2 ---
+	slot6 = PlatformCommunicationService
+	slot6 = slot6.state
+	slot6.lastTipKey = slot4
+	slot6 = PlatformCommunicationService
+	slot6 = slot6.state
+	slot7 = tostring
 	--- END OF BLOCK #12 ---
 
-	FLOW; TARGET BLOCK #13
+	slot9 = if not slot1 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
 
 
-	--- BLOCK #13 57-64, warpins: 2 ---
-	slot6 = slot6(slot8)
-	slot5.lastTipReason = slot6
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.state
-	slot5.lastTipTime = slot3
-	slot5 = pg
+	--- BLOCK #13 57-57, warpins: 1 ---
+	slot9 = ""
 	--- END OF BLOCK #13 ---
 
-	slot5 = if slot5 then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #18
-	end
+	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 65-68, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
+	--- BLOCK #14 58-65, warpins: 2 ---
+	slot7 = slot7(slot9)
+	slot6.lastTipReason = slot7
+	slot6 = PlatformCommunicationService
+	slot6 = slot6.state
+	slot6.lastTipTime = slot3
+	slot6 = pg
 	--- END OF BLOCK #14 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #15
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #15 69-73, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
+	--- BLOCK #15 66-69, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
 	--- END OF BLOCK #15 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #16
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #16 74-79, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot5 = slot5.tips
+	--- BLOCK #16 70-74, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
 	--- END OF BLOCK #16 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #17
 	else
-	JUMP TO BLOCK #18
+	JUMP TO BLOCK #19
 	end
 
 
-	--- BLOCK #17 80-87, warpins: 1 ---
-	slot5 = pg
-	slot5 = slot5.global
-	slot5 = slot5.ui
-	slot5 = slot5.tips
-	slot7 = slot5
-	slot5 = slot5.showTextTip
-	slot8 = slot4
-
-	slot5(slot7, slot8)
-
+	--- BLOCK #17 75-80, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
 	--- END OF BLOCK #17 ---
 
-	FLOW; TARGET BLOCK #18
+	slot6 = if slot6 then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
 
 
-	--- BLOCK #18 88-88, warpins: 5 ---
-	return
+	--- BLOCK #18 81-88, warpins: 1 ---
+	slot6 = pg
+	slot6 = slot6.global
+	slot6 = slot6.ui
+	slot6 = slot6.tips
+	slot8 = slot6
+	slot6 = slot6.showTextTip
+	slot9 = slot5
+
+	slot6(slot8, slot9)
+
 	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 89-89, warpins: 5 ---
+	return
+	--- END OF BLOCK #19 ---
 
 
 
 end
 
-slot4.maybeShowTip = slot5
+slot7.maybeShowTip = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.supportsConsoleCommunication
@@ -2590,9 +2399,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.supportsPermission = slot5
+slot7.supportsPermission = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.supportsConsoleCommunication
@@ -2741,9 +2550,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.supportsLocalCommunicatePrivacy = slot5
+slot7.supportsLocalCommunicatePrivacy = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = PlatformCommunicationService
 	slot3 = slot3.supportsConsoleCommunication
@@ -2787,7 +2596,7 @@ slot5 = function(slot0, slot1, slot2)
 	--- BLOCK #3 17-17, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
+	UNCONDITIONAL JUMP; TARGET BLOCK #16
 
 
 	--- BLOCK #4 18-23, warpins: 1 ---
@@ -2814,234 +2623,233 @@ slot5 = function(slot0, slot1, slot2)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #19
+	UNCONDITIONAL JUMP; TARGET BLOCK #17
 
 
-	--- BLOCK #6 30-41, warpins: 1 ---
-	slot4 = PlatformCommunicationService
-	slot4 = slot4.state
-	slot4 = slot4.pendingPrivilegeCallbacks
-	slot5 = {}
-	slot5[1] = slot2
-	slot4[slot1] = slot5
-	slot4 = nil
+	--- BLOCK #6 30-44, warpins: 1 ---
+	slot4 = {}
+	slot4[1] = slot2
 	slot5 = PlatformCommunicationService
-	slot5 = slot5.PermissionName
-	slot5 = slot5.Text
+	slot5 = slot5.state
+	slot5 = slot5.pendingPrivilegeCallbacks
+	slot5[slot1] = slot4
+	slot5 = PlatformCommunicationService
+	slot5 = slot5.state
+	slot5 = slot5.privilegeRequestGeneration
+	slot6 = nil
+	slot7 = PlatformCommunicationService
+	slot7 = slot7.PermissionName
+	slot7 = slot7.Text
 	--- END OF BLOCK #6 ---
 
-	if slot1 == slot5 then
+	if slot1 == slot7 then
 	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #7 42-43, warpins: 1 ---
-	slot4 = "CheckTextCommunicationPrivilege"
+	--- BLOCK #7 45-46, warpins: 1 ---
+	slot6 = "CheckTextCommunicationPrivilege"
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-	--- BLOCK #8 44-48, warpins: 1 ---
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.PermissionName
-	slot5 = slot5.Voice
+	--- BLOCK #8 47-51, warpins: 1 ---
+	slot7 = PlatformCommunicationService
+	slot7 = slot7.PermissionName
+	slot7 = slot7.Voice
 	--- END OF BLOCK #8 ---
 
-	if slot1 == slot5 then
+	if slot1 == slot7 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 49-49, warpins: 1 ---
-	slot4 = "CheckVoiceCommunicationPrivilege"
+	--- BLOCK #9 52-52, warpins: 1 ---
+	slot6 = "CheckVoiceCommunicationPrivilege"
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 50-51, warpins: 3 ---
+	--- BLOCK #10 53-54, warpins: 3 ---
 	--- END OF BLOCK #10 ---
 
-	slot4 = if not slot4 then
+	slot6 = if not slot6 then
 	JUMP TO BLOCK #11
 	else
-	JUMP TO BLOCK #17
+	JUMP TO BLOCK #15
 	end
 
 
-	--- BLOCK #11 52-57, warpins: 1 ---
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.state
-	slot5 = slot5.pendingPrivilegeCallbacks
-	slot5 = slot5[slot1]
+	--- BLOCK #11 55-63, warpins: 1 ---
+	slot7 = PlatformCommunicationService
+	slot7 = slot7.state
+	slot7 = slot7.pendingPrivilegeCallbacks
+	slot8 = nil
+	slot7[slot1] = slot8
+	slot7 = ipairs
+	slot9 = slot4
+	slot7, slot8, slot9 = slot7(slot9)
 	--- END OF BLOCK #11 ---
 
-	slot5 = if not slot5 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
+	UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-	--- BLOCK #12 58-58, warpins: 1 ---
-	slot5 = {}
+	--- BLOCK #12 64-69, warpins: 1 ---
+	slot12 = slot11
+	slot14 = true
+	slot15 = 0
+	slot16 = string
+	slot16 = slot16.Empty
+
+	slot12(slot14, slot15, slot16)
+
 	--- END OF BLOCK #12 ---
 
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 59-67, warpins: 2 ---
-	slot6 = PlatformCommunicationService
-	slot6 = slot6.state
-	slot6 = slot6.pendingPrivilegeCallbacks
-	slot7 = nil
-	slot6[slot1] = slot7
-	slot6 = ipairs
-	slot8 = slot5
-	slot6, slot7, slot8 = slot6(slot8)
+	--- BLOCK #13 70-71, warpins: 2 ---
 	--- END OF BLOCK #13 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #15
+	for slot10, slot11 in slot7, slot8, slot9
+	LOOP BLOCK #12
+	GO OUT TO BLOCK #14
 
 
-	--- BLOCK #14 68-73, warpins: 1 ---
-	slot11 = slot10
-	slot13 = true
-	slot14 = 0
-	slot15 = string
-	slot15 = slot15.Empty
-
-	slot11(slot13, slot14, slot15)
-
+	--- BLOCK #14 72-72, warpins: 1 ---
 	--- END OF BLOCK #14 ---
 
-	FLOW; TARGET BLOCK #15
+	UNCONDITIONAL JUMP; TARGET BLOCK #18
 
 
-	--- BLOCK #15 74-75, warpins: 2 ---
-	--- END OF BLOCK #15 ---
+	--- BLOCK #15 73-79, warpins: 1 ---
+	slot7 = PlatformCommunicationService
+	slot7 = slot7.dispatch
+	slot9 = slot6
 
-	for slot9, slot10 in slot6, slot7, slot8
-	LOOP BLOCK #14
-	GO OUT TO BLOCK #16
-
-
-	--- BLOCK #16 76-76, warpins: 1 ---
-	--- END OF BLOCK #16 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #20
-
-
-	--- BLOCK #17 77-83, warpins: 1 ---
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.dispatch
-	slot7 = slot4
-
-	slot8 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-7, warpins: 1 ---
-		slot3 = PlatformCommunicationService
-		slot3 = slot3.state
-		slot3 = slot3.pendingPrivilegeCallbacks
-		slot4 = permissionName
-		slot3 = slot3[slot4]
+	slot10 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot3 = generation
+		slot4 = PlatformCommunicationService
+		slot4 = slot4.state
+		slot4 = slot4.privilegeRequestGeneration
 		--- END OF BLOCK #0 ---
 
-		slot3 = if not slot3 then
+		if slot3 == slot4 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 8-8, warpins: 1 ---
-		slot3 = {}
+		--- BLOCK #1 7-14, warpins: 1 ---
+		slot3 = PlatformCommunicationService
+		slot3 = slot3.state
+		slot3 = slot3.pendingPrivilegeCallbacks
+		slot4 = permissionName
+		slot3 = slot3[slot4]
+		slot4 = callbacks
+
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		if slot3 ~= slot4 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
 
 
-		--- BLOCK #2 9-18, warpins: 2 ---
-		slot4 = PlatformCommunicationService
-		slot4 = slot4.state
-		slot4 = slot4.pendingPrivilegeCallbacks
-		slot5 = permissionName
-		slot6 = nil
-		slot4[slot5] = slot6
-		slot4 = ipairs
-		slot6 = slot3
-		slot4, slot5, slot6 = slot4(slot6)
+		--- BLOCK #2 15-15, warpins: 2 ---
+		return
+
 		--- END OF BLOCK #2 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
+		FLOW; TARGET BLOCK #3
 
 
-		--- BLOCK #3 19-23, warpins: 1 ---
-		slot9 = slot8
-		slot11 = slot0
-		slot12 = slot1
-		slot13 = slot2
-
-		slot9(slot11, slot12, slot13)
-
+		--- BLOCK #3 16-25, warpins: 2 ---
+		slot3 = PlatformCommunicationService
+		slot3 = slot3.state
+		slot3 = slot3.pendingPrivilegeCallbacks
+		slot4 = permissionName
+		slot5 = nil
+		slot3[slot4] = slot5
+		slot3 = ipairs
+		slot5 = callbacks
+		slot3, slot4, slot5 = slot3(slot5)
 		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #4
+		UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-		--- BLOCK #4 24-25, warpins: 2 ---
+		--- BLOCK #4 26-30, warpins: 1 ---
+		slot8 = slot7
+		slot10 = slot0
+		slot11 = slot1
+		slot12 = slot2
+
+		slot8(slot10, slot11, slot12)
+
 		--- END OF BLOCK #4 ---
 
-		for slot7, slot8 in slot4, slot5, slot6
-		LOOP BLOCK #3
-		GO OUT TO BLOCK #5
+		FLOW; TARGET BLOCK #5
 
 
-		--- BLOCK #5 26-26, warpins: 1 ---
-		return
+		--- BLOCK #5 31-32, warpins: 2 ---
 		--- END OF BLOCK #5 ---
+
+		for slot6, slot7 in slot3, slot4, slot5
+		LOOP BLOCK #4
+		GO OUT TO BLOCK #6
+
+
+		--- BLOCK #6 33-33, warpins: 1 ---
+		return
+		--- END OF BLOCK #6 ---
 
 
 
 	end
 
-	slot5(slot7, slot8)
+	slot7(slot9, slot10)
 
+	return
+	--- END OF BLOCK #15 ---
+
+	FLOW; TARGET BLOCK #16
+
+
+	--- BLOCK #16 80-80, warpins: 2 ---
+	return
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 81-81, warpins: 2 ---
 	return
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 84-84, warpins: 2 ---
+	--- BLOCK #18 82-82, warpins: 2 ---
 	return
 	--- END OF BLOCK #18 ---
-
-	FLOW; TARGET BLOCK #19
-
-
-	--- BLOCK #19 85-85, warpins: 2 ---
-	return
-	--- END OF BLOCK #19 ---
-
-	FLOW; TARGET BLOCK #20
-
-
-	--- BLOCK #20 86-86, warpins: 2 ---
-	return
-	--- END OF BLOCK #20 ---
 
 
 
 end
 
-slot4.dispatchPrivilegeCheck = slot5
+slot7.dispatchPrivilegeCheck = slot8
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot4 = PlatformCommunicationService
 	slot4 = slot4.supportsConsoleCommunication
@@ -3085,282 +2893,442 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #3 17-17, warpins: 2 ---
 	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #21
+	UNCONDITIONAL JUMP; TARGET BLOCK #20
 
 
-	--- BLOCK #4 18-27, warpins: 1 ---
+	--- BLOCK #4 18-28, warpins: 1 ---
 	slot4 = PlatformCommunicationService
-	slot4 = slot4.getPermissionBucket
-	slot6 = PlatformCommunicationService
-	slot6 = slot6.state
-	slot6 = slot6.pendingCallbacksByPermission
-	slot7 = slot1
-	slot4 = slot4(slot6, slot7)
-	slot5 = slot4[slot2]
+	slot4 = slot4.state
+	slot4 = slot4.pendingCallbacksByPermission
+	slot5 = PlatformCommunicationService
+	slot5 = slot5.getPermissionBucket
+	slot7 = slot4
+	slot8 = slot1
+	slot5 = slot5(slot7, slot8)
+	slot6 = slot5[slot2]
 	--- END OF BLOCK #4 ---
 
-	slot5 = if slot5 then
+	slot6 = if slot6 then
 	JUMP TO BLOCK #5
 	else
 	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #5 28-33, warpins: 1 ---
-	slot6 = table
-	slot6 = slot6.insert
-	slot8 = slot5
-	slot9 = slot3
+	--- BLOCK #5 29-34, warpins: 1 ---
+	slot7 = table
+	slot7 = slot7.insert
+	slot9 = slot6
+	slot10 = slot3
 
-	slot6(slot8, slot9)
+	slot7(slot9, slot10)
 
 	--- END OF BLOCK #5 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #22
+	UNCONDITIONAL JUMP; TARGET BLOCK #21
 
 
-	--- BLOCK #6 34-42, warpins: 1 ---
-	slot6 = {}
-	slot6[1] = slot3
-	slot4[slot2] = slot6
-	slot6 = nil
-	slot7 = PlatformCommunicationService
-	slot7 = slot7.PermissionName
-	slot7 = slot7.Text
+	--- BLOCK #6 35-39, warpins: 1 ---
+	slot7 = {}
+	slot7[1] = slot3
+	slot8 = pg
 	--- END OF BLOCK #6 ---
 
-	if slot1 == slot7 then
+	slot8 = if slot8 then
 	JUMP TO BLOCK #7
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #9
 	end
 
 
-	--- BLOCK #7 43-44, warpins: 1 ---
-	slot6 = "CheckTextCommunicationPermission"
+	--- BLOCK #7 40-43, warpins: 1 ---
+	slot8 = pg
+	slot8 = slot8.me
 	--- END OF BLOCK #7 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #10
+	slot8 = if slot8 then
+	JUMP TO BLOCK #8
+	else
+	JUMP TO BLOCK #9
+	end
 
 
-	--- BLOCK #8 45-49, warpins: 1 ---
-	slot7 = PlatformCommunicationService
-	slot7 = slot7.PermissionName
-	slot7 = slot7.Voice
+	--- BLOCK #8 44-50, warpins: 1 ---
+	slot8 = tostring
+	slot10 = pg
+	slot10 = slot10.me
+	slot10 = slot10.uid
+	slot8 = slot8(slot10)
 	--- END OF BLOCK #8 ---
 
-	if slot1 == slot7 then
+	slot8 = if not slot8 then
 	JUMP TO BLOCK #9
 	else
 	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #9 50-50, warpins: 1 ---
-	slot6 = "CheckVoiceCommunicationPermission"
+	--- BLOCK #9 51-51, warpins: 3 ---
+	slot8 = ""
 	--- END OF BLOCK #9 ---
 
 	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #10 51-52, warpins: 3 ---
-	--- END OF BLOCK #10 ---
+	--- BLOCK #10 52-59, warpins: 2 ---
+	slot5[slot2] = slot7
 
-	slot7 = if slot6 then
-	JUMP TO BLOCK #11
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #11 53-55, warpins: 1 ---
-	slot7 = PlatformBridgeLuaFacade
-	--- END OF BLOCK #11 ---
-
-	slot7 = if slot7 then
-	JUMP TO BLOCK #12
-	else
-	JUMP TO BLOCK #13
-	end
-
-
-	--- BLOCK #12 56-57, warpins: 1 ---
-	slot7 = PlatformBridgeLuaFacade
-	slot7 = slot7[slot6]
-	--- END OF BLOCK #12 ---
-
-	FLOW; TARGET BLOCK #13
-
-
-	--- BLOCK #13 58-62, warpins: 3 ---
-	slot8 = type
-	slot10 = slot7
-	slot8 = slot8(slot10)
-	--- END OF BLOCK #13 ---
-
-	if slot8 ~= "function" then
-	JUMP TO BLOCK #14
-	else
-	JUMP TO BLOCK #20
-	end
-
-
-	--- BLOCK #14 63-65, warpins: 1 ---
-	slot8 = slot4[slot2]
-	--- END OF BLOCK #14 ---
-
-	slot8 = if not slot8 then
-	JUMP TO BLOCK #15
-	else
-	JUMP TO BLOCK #16
-	end
-
-
-	--- BLOCK #15 66-66, warpins: 1 ---
-	slot8 = {}
-	--- END OF BLOCK #15 ---
-
-	FLOW; TARGET BLOCK #16
-
-
-	--- BLOCK #16 67-72, warpins: 2 ---
-	slot9 = nil
-	slot4[slot2] = slot9
-	slot9 = ipairs
-	slot11 = slot8
-	slot9, slot10, slot11 = slot9(slot11)
-	--- END OF BLOCK #16 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #18
-
-
-	--- BLOCK #17 73-77, warpins: 1 ---
-	slot14 = slot13
-	slot16 = false
-	slot17 = -1
-	slot18 = "permission_check_not_supported"
-
-	slot14(slot16, slot17, slot18)
-
-	--- END OF BLOCK #17 ---
-
-	FLOW; TARGET BLOCK #18
-
-
-	--- BLOCK #18 78-79, warpins: 2 ---
-	--- END OF BLOCK #18 ---
-
-	for slot12, slot13 in slot9, slot10, slot11
-	LOOP BLOCK #17
-	GO OUT TO BLOCK #19
-
-
-	--- BLOCK #19 80-80, warpins: 1 ---
-	--- END OF BLOCK #19 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #23
-
-
-	--- BLOCK #20 81-86, warpins: 1 ---
-	slot8 = slot7
-	slot10 = slot2
-
-	slot11 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-5, warpins: 1 ---
-		slot3 = pendingBucket
-		slot4 = targetUserId
-		slot3 = slot3[slot4]
+	slot9 = function(slot0, slot1, slot2)
+		--- BLOCK #0 1-6, warpins: 1 ---
+		slot3 = PlatformCommunicationService
+		slot3 = slot3.state
+		slot3 = slot3.pendingCallbacksByPermission
+		slot4 = requestBuckets
 		--- END OF BLOCK #0 ---
 
-		slot3 = if not slot3 then
+		if slot3 == slot4 then
 		JUMP TO BLOCK #1
 		else
-		JUMP TO BLOCK #2
+		JUMP TO BLOCK #8
 		end
 
 
-		--- BLOCK #1 6-6, warpins: 1 ---
-		slot3 = {}
+		--- BLOCK #1 7-12, warpins: 1 ---
+		slot3 = requestBuckets
+		slot4 = permissionName
+		slot3 = slot3[slot4]
+		slot4 = pendingBucket
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		if slot3 == slot4 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #8
+		end
 
 
-		--- BLOCK #2 7-14, warpins: 2 ---
-		slot4 = pendingBucket
-		slot5 = targetUserId
-		slot6 = nil
-		slot4[slot5] = slot6
-		slot4 = ipairs
-		slot6 = slot3
-		slot4, slot5, slot6 = slot4(slot6)
+		--- BLOCK #2 13-18, warpins: 1 ---
+		slot3 = pendingBucket
+		slot4 = targetUserId
+		slot3 = slot3[slot4]
+		slot4 = callbacks
 		--- END OF BLOCK #2 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #4
+		if slot3 == slot4 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #8
+		end
 
 
-		--- BLOCK #3 15-19, warpins: 1 ---
-		slot9 = slot8
-		slot11 = slot0
-		slot12 = slot1
-		slot13 = slot2
-
-		slot9(slot11, slot12, slot13)
-
+		--- BLOCK #3 19-22, warpins: 1 ---
+		slot3 = ownerUid
+		slot4 = pg
 		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #4
+		slot4 = if slot4 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-		--- BLOCK #4 20-21, warpins: 2 ---
+		--- BLOCK #4 23-26, warpins: 1 ---
+		slot4 = pg
+		slot4 = slot4.me
 		--- END OF BLOCK #4 ---
 
-		for slot7, slot8 in slot4, slot5, slot6
-		LOOP BLOCK #3
-		GO OUT TO BLOCK #5
+		slot4 = if slot4 then
+		JUMP TO BLOCK #5
+		else
+		JUMP TO BLOCK #6
+		end
 
 
-		--- BLOCK #5 22-22, warpins: 1 ---
-		return
+		--- BLOCK #5 27-33, warpins: 1 ---
+		slot4 = tostring
+		slot6 = pg
+		slot6 = slot6.me
+		slot6 = slot6.uid
+		slot4 = slot4(slot6)
 		--- END OF BLOCK #5 ---
+
+		slot4 = if not slot4 then
+		JUMP TO BLOCK #6
+		else
+		JUMP TO BLOCK #7
+		end
+
+
+		--- BLOCK #6 34-34, warpins: 3 ---
+		slot4 = ""
+
+		--- END OF BLOCK #6 ---
+
+		FLOW; TARGET BLOCK #7
+
+
+		--- BLOCK #7 35-36, warpins: 2 ---
+		--- END OF BLOCK #7 ---
+
+		if slot3 ~= slot4 then
+		JUMP TO BLOCK #8
+		else
+		JUMP TO BLOCK #9
+		end
+
+
+		--- BLOCK #8 37-37, warpins: 4 ---
+		return
+
+		--- END OF BLOCK #8 ---
+
+		FLOW; TARGET BLOCK #9
+
+
+		--- BLOCK #9 38-45, warpins: 2 ---
+		slot3 = pendingBucket
+		slot4 = targetUserId
+		slot5 = nil
+		slot3[slot4] = slot5
+		slot3 = ipairs
+		slot5 = callbacks
+		slot3, slot4, slot5 = slot3(slot5)
+		--- END OF BLOCK #9 ---
+
+		UNCONDITIONAL JUMP; TARGET BLOCK #11
+
+
+		--- BLOCK #10 46-50, warpins: 1 ---
+		slot8 = slot7
+		slot10 = slot0
+		slot11 = slot1
+		slot12 = slot2
+
+		slot8(slot10, slot11, slot12)
+
+		--- END OF BLOCK #10 ---
+
+		FLOW; TARGET BLOCK #11
+
+
+		--- BLOCK #11 51-52, warpins: 2 ---
+		--- END OF BLOCK #11 ---
+
+		for slot6, slot7 in slot3, slot4, slot5
+		LOOP BLOCK #10
+		GO OUT TO BLOCK #12
+
+
+		--- BLOCK #12 53-53, warpins: 1 ---
+		return
+		--- END OF BLOCK #12 ---
 
 
 
 	end
 
-	slot8(slot10, slot11)
+	slot10 = nil
+	slot11 = PlatformCommunicationService
+	slot11 = slot11.PermissionName
+	slot11 = slot11.Text
+	--- END OF BLOCK #10 ---
 
+	if slot1 == slot11 then
+	JUMP TO BLOCK #11
+	else
+	JUMP TO BLOCK #12
+	end
+
+
+	--- BLOCK #11 60-61, warpins: 1 ---
+	slot10 = "CheckTextCommunicationPermission"
+	--- END OF BLOCK #11 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #14
+
+
+	--- BLOCK #12 62-66, warpins: 1 ---
+	slot11 = PlatformCommunicationService
+	slot11 = slot11.PermissionName
+	slot11 = slot11.Voice
+	--- END OF BLOCK #12 ---
+
+	if slot1 == slot11 then
+	JUMP TO BLOCK #13
+	else
+	JUMP TO BLOCK #14
+	end
+
+
+	--- BLOCK #13 67-67, warpins: 1 ---
+	slot10 = "CheckVoiceCommunicationPermission"
+	--- END OF BLOCK #13 ---
+
+	FLOW; TARGET BLOCK #14
+
+
+	--- BLOCK #14 68-69, warpins: 3 ---
+	--- END OF BLOCK #14 ---
+
+	slot11 = if slot10 then
+	JUMP TO BLOCK #15
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #15 70-72, warpins: 1 ---
+	slot11 = PlatformBridgeLuaFacade
+	--- END OF BLOCK #15 ---
+
+	slot11 = if slot11 then
+	JUMP TO BLOCK #16
+	else
+	JUMP TO BLOCK #17
+	end
+
+
+	--- BLOCK #16 73-74, warpins: 1 ---
+	slot11 = PlatformBridgeLuaFacade
+	slot11 = slot11[slot10]
+	--- END OF BLOCK #16 ---
+
+	FLOW; TARGET BLOCK #17
+
+
+	--- BLOCK #17 75-79, warpins: 3 ---
+	slot12 = type
+	slot14 = slot11
+	slot12 = slot12(slot14)
+	--- END OF BLOCK #17 ---
+
+	if slot12 ~= "function" then
+	JUMP TO BLOCK #18
+	else
+	JUMP TO BLOCK #19
+	end
+
+
+	--- BLOCK #18 80-86, warpins: 1 ---
+	slot12 = slot9
+	slot14 = false
+	slot15 = -1
+	slot16 = "permission_check_not_supported"
+
+	slot12(slot14, slot15, slot16)
+
+	return
+
+	--- END OF BLOCK #18 ---
+
+	FLOW; TARGET BLOCK #19
+
+
+	--- BLOCK #19 87-92, warpins: 2 ---
+	slot12 = slot11
+	slot14 = slot2
+	slot15 = slot9
+
+	slot12(slot14, slot15)
+
+	return
+	--- END OF BLOCK #19 ---
+
+	FLOW; TARGET BLOCK #20
+
+
+	--- BLOCK #20 93-93, warpins: 2 ---
 	return
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 87-87, warpins: 2 ---
+	--- BLOCK #21 94-94, warpins: 2 ---
 	return
 	--- END OF BLOCK #21 ---
-
-	FLOW; TARGET BLOCK #22
-
-
-	--- BLOCK #22 88-88, warpins: 2 ---
-	return
-	--- END OF BLOCK #22 ---
-
-	FLOW; TARGET BLOCK #23
-
-
-	--- BLOCK #23 89-89, warpins: 2 ---
-	return
-	--- END OF BLOCK #23 ---
 
 
 
 end
 
-slot4.dispatchPermissionCheck = slot5
+slot7.dispatchPermissionCheck = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot3 = PlatformCommunicationService
+	slot3 = slot3.state
+	slot3 = slot3.pendingCallbacksByPermission
+	--- END OF BLOCK #0 ---
+
+	if slot1 == nil then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 6-10, warpins: 1 ---
+	slot4 = PlatformCommunicationService
+	slot4 = slot4.state
+	slot5 = {}
+	slot4.pendingCallbacksByPermission = slot5
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #2 11-12, warpins: 1 ---
+	--- END OF BLOCK #2 ---
+
+	if slot2 == nil then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 13-15, warpins: 1 ---
+	slot4 = nil
+	slot3[slot1] = slot4
+	--- END OF BLOCK #3 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #4 16-18, warpins: 1 ---
+	slot4 = slot3[slot1]
+	--- END OF BLOCK #4 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 19-21, warpins: 1 ---
+	slot4 = slot3[slot1]
+	slot5 = nil
+	slot4[slot2] = slot5
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 22-22, warpins: 4 ---
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot7.invalidatePermissionRequests = slot8
+
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = PlatformCommunicationService
 	slot3 = slot3.supportsConsoleCommunication
@@ -3700,9 +3668,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.dispatchLocalCommunicatePrivacyCheck = slot5
+slot7.dispatchLocalCommunicatePrivacyCheck = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot1
@@ -3886,9 +3854,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.prefetchLocalCommunicationSetting = slot5
+slot7.prefetchLocalCommunicationSetting = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.normalizeChannel
@@ -3964,9 +3932,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.peekLocalCommunicationSetting = slot5
+slot7.peekLocalCommunicationSetting = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot1
@@ -4146,9 +4114,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.refreshLocalCommunicationSetting = slot5
+slot7.refreshLocalCommunicationSetting = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = type
 	slot5 = slot1
@@ -4387,9 +4355,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.prefetchLocalCommunicationPolicy = slot5
+slot7.prefetchLocalCommunicationPolicy = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.makeLegacyPolicy
@@ -4405,9 +4373,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.peekLocalCommunicationPolicy = slot5
+slot7.peekLocalCommunicationPolicy = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.supportsConsoleCommunication
@@ -4481,9 +4449,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isLocalCommunicationAllowed = slot5
+slot7.isLocalCommunicationAllowed = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-10, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.normalizeChannel
@@ -4613,9 +4581,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.requireLocalCommunicationPolicy = slot5
+slot7.requireLocalCommunicationPolicy = slot8
 
-slot5 = function(slot0, slot1, slot2)
+slot8 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = PlatformCommunicationService
 	slot3 = slot3.normalizeChannel
@@ -5031,9 +4999,9 @@ slot5 = function(slot0, slot1, slot2)
 
 end
 
-slot4.canSendOutgoingChat = slot5
+slot7.canSendOutgoingChat = slot8
 
-slot5 = function(slot0, slot1, slot2, slot3)
+slot8 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -5093,16 +5061,15 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #5 22-24, warpins: 1 ---
-	slot5 = PlatformCommunicationService
-	slot5 = slot5.LOCAL_PRIVACY_DENIED_TIP_KEY_BY_CHANNEL
-	slot4 = slot5[slot1]
+	--- BLOCK #5 22-23, warpins: 1 ---
+	slot5 = NoticeDef
+	slot4 = slot5.PRIVACY_SETTING_MISSMATCH
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 25-31, warpins: 2 ---
+	--- BLOCK #6 24-30, warpins: 2 ---
 	slot5 = PlatformCommunicationService
 	slot5 = slot5.maybeShowTip
 	slot7 = slot4
@@ -5117,14 +5084,14 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	end
 
 
-	--- BLOCK #7 32-33, warpins: 1 ---
+	--- BLOCK #7 31-32, warpins: 1 ---
 	slot9 = false
 	--- END OF BLOCK #7 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #8 34-34, warpins: 1 ---
+	--- BLOCK #8 33-33, warpins: 1 ---
 	slot9 = true
 
 	--- END OF BLOCK #8 ---
@@ -5132,7 +5099,7 @@ slot5 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 35-36, warpins: 2 ---
+	--- BLOCK #9 34-35, warpins: 2 ---
 	slot5(slot7, slot8, slot9)
 
 	return
@@ -5142,9 +5109,9 @@ slot5 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot4.notifyOutgoingCommunicationDenied = slot5
+slot7.notifyOutgoingCommunicationDenied = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.supportsConsoleCommunication
@@ -5218,10 +5185,33 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.isLocalCommunicationBlocked = slot5
+slot7.isLocalCommunicationBlocked = slot8
 
-slot5 = function(slot0)
-	--- BLOCK #0 1-25, warpins: 1 ---
+slot8 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
+	slot1 = PlatformCommunicationService
+	slot1 = slot1.state
+	slot2 = PlatformCommunicationService
+	slot2 = slot2.state
+	slot2 = slot2.privilegeRequestGeneration
+	slot2 = slot2 + 1
+	slot1.privilegeRequestGeneration = slot2
+	slot1 = PlatformCommunicationService
+	slot1 = slot1.state
+	slot2 = {}
+	slot1.pendingPrivilegeCallbacks = slot2
+
+	return
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot7.clearPrivilegeRequests = slot8
+
+slot8 = function(slot0)
+	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = PlatformCommunicationService
 	slot1 = slot1.state
 	slot2 = {}
@@ -5238,10 +5228,11 @@ slot5 = function(slot0)
 	slot1 = slot1.state
 	slot2 = {}
 	slot1.pendingCallbacksByPermission = slot2
-	slot1 = PlatformCommunicationService
-	slot1 = slot1.state
-	slot2 = {}
-	slot1.pendingPrivilegeCallbacks = slot2
+	slot3 = slot0
+	slot1 = slot0.clearPrivilegeRequests
+
+	slot1(slot3)
+
 	slot1 = PlatformCommunicationService
 	slot1 = slot1.state
 	slot2 = {}
@@ -5254,9 +5245,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.clearCache = slot5
+slot7.clearCache = slot8
 
-slot5 = function(slot0, slot1)
+slot8 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = PlatformCommunicationService
 	slot2 = slot2.supportsConsoleCommunication
@@ -5340,7 +5331,7 @@ slot5 = function(slot0, slot1)
 
 
 	--- BLOCK #5 46-46, warpins: 1 ---
-	slot5 = {}
+	slot5 = EMPTY_TABLE
 	--- END OF BLOCK #5 ---
 
 	FLOW; TARGET BLOCK #6
@@ -5488,9 +5479,9 @@ slot5 = function(slot0, slot1)
 
 end
 
-slot4.refreshLocalCommunicationPolicy = slot5
+slot7.refreshLocalCommunicationPolicy = slot8
 
-slot5 = function(slot0)
+slot8 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot1 = PlatformCommunicationService
 	slot1 = slot1.cloneTable
@@ -5584,9 +5575,9 @@ slot5 = function(slot0)
 
 end
 
-slot4.getDebugSnapshot = slot5
+slot7.getDebugSnapshot = slot8
 
-return slot4
+return slot7
 --- END OF BLOCK #7 ---
 
 

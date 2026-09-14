@@ -52,10 +52,10 @@ slot18 = "PetFertilityIncubateModel"
 slot19 = slot1
 slot16 = slot16(slot18, slot19)
 slot17 = {
-	Quality = 3,
+	Grow = 2,
 	Char = 1,
 	Element = 0,
-	Grow = 2
+	Quality = 3
 }
 slot16.BubbleType = slot17
 slot17 = {}
@@ -468,7 +468,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #13
 
 
-	--- BLOCK #13 52-106, warpins: 2 ---
+	--- BLOCK #13 52-111, warpins: 2 ---
 	slot4, slot5 = slot4()
 	slot2.ratingStr = slot5
 	slot2.ratingPageIdx = slot4
@@ -505,15 +505,20 @@ slot17 = function(slot0, slot1)
 	slot4 = slot4(slot6)
 	slot2.isBoss = slot4
 	slot4 = Utils
+	slot4 = slot4.isLabelRainbow
+	slot6 = slot1.label
+	slot4 = slot4(slot6)
+	slot2.isMini = slot4
+	slot4 = Utils
 	slot4 = slot4.isLabelShiny
 	slot6 = slot1.label
 	slot4 = slot4(slot6)
 	slot2.isShiny = slot4
 	slot4 = Utils
-	slot4 = slot4.isLabelMagic
+	slot4 = slot4.isLabelDark
 	slot6 = slot1.label
 	slot4 = slot4(slot6)
-	slot2.isMagic = slot4
+	slot2.isDark = slot4
 	slot4 = Utils
 	slot4 = slot4.isLabelVariant
 	slot6 = slot1.label
@@ -531,7 +536,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #14 107-111, warpins: 1 ---
+	--- BLOCK #14 112-116, warpins: 1 ---
 	slot4 = PetNatureData
 	slot5 = slot1.nature
 	slot4 = slot4[slot5]
@@ -544,7 +549,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 112-115, warpins: 1 ---
+	--- BLOCK #15 117-120, warpins: 1 ---
 	slot4 = PetNatureData
 	slot5 = slot1.nature
 	slot4 = slot4[slot5]
@@ -554,7 +559,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 116-122, warpins: 3 ---
+	--- BLOCK #16 121-127, warpins: 3 ---
 	slot2.nature = slot4
 	slot4 = slot1.level
 	slot5 = type
@@ -569,14 +574,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 123-123, warpins: 1 ---
+	--- BLOCK #17 128-128, warpins: 1 ---
 	slot4 = 0
 	--- END OF BLOCK #17 ---
 
 	FLOW; TARGET BLOCK #18
 
 
-	--- BLOCK #18 124-136, warpins: 2 ---
+	--- BLOCK #18 129-141, warpins: 2 ---
 	slot4 = slot4 + 1
 	slot5 = math
 	slot5 = slot5.min
@@ -597,7 +602,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #19 137-141, warpins: 1 ---
+	--- BLOCK #19 142-146, warpins: 1 ---
 	slot6 = PetLevelData
 	slot6 = slot6[slot5]
 	slot6 = slot6.needExp
@@ -610,14 +615,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 142-142, warpins: 2 ---
+	--- BLOCK #20 147-147, warpins: 2 ---
 	slot6 = 0
 	--- END OF BLOCK #20 ---
 
 	FLOW; TARGET BLOCK #21
 
 
-	--- BLOCK #21 143-149, warpins: 2 ---
+	--- BLOCK #21 148-154, warpins: 2 ---
 	slot2.maxExp = slot6
 	slot6 = PetPrototypeData
 	slot7 = slot1.templateId
@@ -632,14 +637,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #22 150-150, warpins: 1 ---
+	--- BLOCK #22 155-155, warpins: 1 ---
 	slot7 = {}
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 151-192, warpins: 2 ---
+	--- BLOCK #23 156-197, warpins: 2 ---
 	slot8 = LuaUIUtils
 	slot8 = slot8.getElementInfo
 	slot10 = slot3.elementType
@@ -689,7 +694,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #24 193-197, warpins: 1 ---
+	--- BLOCK #24 198-202, warpins: 1 ---
 	slot12 = slot1
 	slot10 = slot1.canEvolveAny
 	slot10 = slot10(slot12)
@@ -702,14 +707,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #25 198-198, warpins: 2 ---
+	--- BLOCK #25 203-203, warpins: 2 ---
 	slot10 = false
 	--- END OF BLOCK #25 ---
 
 	FLOW; TARGET BLOCK #26
 
 
-	--- BLOCK #26 199-203, warpins: 2 ---
+	--- BLOCK #26 204-208, warpins: 2 ---
 	slot2.canEvolve = slot10
 	slot10 = {}
 	slot11 = slot3.canClimb
@@ -722,7 +727,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #27 204-206, warpins: 1 ---
+	--- BLOCK #27 209-211, warpins: 1 ---
 	slot11 = slot3.canClimb
 	--- END OF BLOCK #27 ---
 
@@ -733,14 +738,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #28 207-207, warpins: 2 ---
+	--- BLOCK #28 212-212, warpins: 2 ---
 	slot11 = nil
 	--- END OF BLOCK #28 ---
 
 	FLOW; TARGET BLOCK #29
 
 
-	--- BLOCK #29 208-211, warpins: 2 ---
+	--- BLOCK #29 213-216, warpins: 2 ---
 	slot10.canClimb = slot11
 	slot11 = slot3.canGlide
 	--- END OF BLOCK #29 ---
@@ -752,7 +757,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #30 212-214, warpins: 1 ---
+	--- BLOCK #30 217-219, warpins: 1 ---
 	slot11 = slot3.canGlide
 	--- END OF BLOCK #30 ---
 
@@ -763,14 +768,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #31 215-215, warpins: 2 ---
+	--- BLOCK #31 220-220, warpins: 2 ---
 	slot11 = nil
 	--- END OF BLOCK #31 ---
 
 	FLOW; TARGET BLOCK #32
 
 
-	--- BLOCK #32 216-219, warpins: 2 ---
+	--- BLOCK #32 221-224, warpins: 2 ---
 	slot10.canGlide = slot11
 	slot11 = slot3.canSwim
 	--- END OF BLOCK #32 ---
@@ -782,7 +787,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #33 220-222, warpins: 1 ---
+	--- BLOCK #33 225-227, warpins: 1 ---
 	slot11 = slot3.canSwim
 	--- END OF BLOCK #33 ---
 
@@ -793,14 +798,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #34 223-223, warpins: 2 ---
+	--- BLOCK #34 228-228, warpins: 2 ---
 	slot11 = nil
 	--- END OF BLOCK #34 ---
 
 	FLOW; TARGET BLOCK #35
 
 
-	--- BLOCK #35 224-229, warpins: 2 ---
+	--- BLOCK #35 229-234, warpins: 2 ---
 	slot10.canSwim = slot11
 	slot2.exploreSkillsLevel = slot10
 	slot10 = slot2.exploreSkillsLevel
@@ -814,14 +819,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #36 230-230, warpins: 1 ---
+	--- BLOCK #36 235-235, warpins: 1 ---
 	slot10 = 0
 	--- END OF BLOCK #36 ---
 
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 231-235, warpins: 2 ---
+	--- BLOCK #37 236-240, warpins: 2 ---
 	slot2.climbLevel = slot10
 	slot10 = slot2.exploreSkillsLevel
 	slot10 = slot10.canGlide
@@ -834,14 +839,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #38 236-236, warpins: 1 ---
+	--- BLOCK #38 241-241, warpins: 1 ---
 	slot10 = 0
 	--- END OF BLOCK #38 ---
 
 	FLOW; TARGET BLOCK #39
 
 
-	--- BLOCK #39 237-241, warpins: 2 ---
+	--- BLOCK #39 242-246, warpins: 2 ---
 	slot2.glideLevel = slot10
 	slot10 = slot2.exploreSkillsLevel
 	slot10 = slot10.canSwim
@@ -854,14 +859,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #40 242-242, warpins: 1 ---
+	--- BLOCK #40 247-247, warpins: 1 ---
 	slot10 = 0
 	--- END OF BLOCK #40 ---
 
 	FLOW; TARGET BLOCK #41
 
 
-	--- BLOCK #41 243-249, warpins: 2 ---
+	--- BLOCK #41 248-254, warpins: 2 ---
 	slot2.swimLevel = slot10
 	slot10 = 999
 	slot11 = PetResearchIdToNumber
@@ -876,7 +881,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #42 250-252, warpins: 1 ---
+	--- BLOCK #42 255-257, warpins: 1 ---
 	slot11 = PetResearchIdToNumber
 	slot12 = slot1.templateId
 	slot10 = slot11[slot12]
@@ -885,7 +890,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 253-261, warpins: 2 ---
+	--- BLOCK #43 258-266, warpins: 2 ---
 	slot2.bookNum = slot10
 	slot11 = slot3.ethnicGroup
 	slot2.ethnicGroup = slot11
@@ -902,7 +907,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #44 262-265, warpins: 1 ---
+	--- BLOCK #44 267-270, warpins: 1 ---
 	slot13 = {}
 	slot14 = slot12.rare
 	--- END OF BLOCK #44 ---
@@ -914,14 +919,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #45 266-266, warpins: 1 ---
+	--- BLOCK #45 271-271, warpins: 1 ---
 	slot14 = 0
 	--- END OF BLOCK #45 ---
 
 	FLOW; TARGET BLOCK #46
 
 
-	--- BLOCK #46 267-282, warpins: 2 ---
+	--- BLOCK #46 272-287, warpins: 2 ---
 	slot13.rare = slot14
 	slot14 = pg
 	slot14 = slot14.getLocalizationText
@@ -942,14 +947,14 @@ slot17 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #48
 
 
-	--- BLOCK #47 283-283, warpins: 1 ---
+	--- BLOCK #47 288-288, warpins: 1 ---
 	slot2.featureInfo = slot12
 	--- END OF BLOCK #47 ---
 
 	FLOW; TARGET BLOCK #48
 
 
-	--- BLOCK #48 284-288, warpins: 2 ---
+	--- BLOCK #48 289-293, warpins: 2 ---
 	slot13 = PetBallConfigData
 	slot13 = slot13.canBreedingTimes
 	slot14 = slot1.breedCount
@@ -962,14 +967,14 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #49 289-289, warpins: 1 ---
+	--- BLOCK #49 294-294, warpins: 1 ---
 	slot14 = 0
 	--- END OF BLOCK #49 ---
 
 	FLOW; TARGET BLOCK #50
 
 
-	--- BLOCK #50 290-301, warpins: 2 ---
+	--- BLOCK #50 295-306, warpins: 2 ---
 	slot13 = slot13 - slot14
 	slot2.breedRemains = slot13
 	slot13 = PetBallConfigData
@@ -986,7 +991,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #51
 
 
-	--- BLOCK #51 302-305, warpins: 2 ---
+	--- BLOCK #51 307-310, warpins: 2 ---
 	slot18 = slot13[slot17]
 	slot18 = slot18.templateId
 	--- END OF BLOCK #51 ---
@@ -998,7 +1003,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #52 306-309, warpins: 1 ---
+	--- BLOCK #52 311-314, warpins: 1 ---
 	slot19 = PetTalentData
 	slot19 = slot19[slot18]
 	--- END OF BLOCK #52 ---
@@ -1010,7 +1015,7 @@ slot17 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #53 310-341, warpins: 1 ---
+	--- BLOCK #53 315-346, warpins: 1 ---
 	slot19 = PetTalentData
 	slot19 = slot19[slot18]
 	slot19 = slot19.talentName
@@ -1048,14 +1053,14 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #54
 
 
-	--- BLOCK #54 342-342, warpins: 3 ---
+	--- BLOCK #54 347-347, warpins: 3 ---
 	--- END OF BLOCK #54 ---
 
 	for slot17=slot14, slot15, slot16
 	LOOP BLOCK #51
 	GO OUT TO BLOCK #55
 
-	--- BLOCK #55 343-424, warpins: 1 ---
+	--- BLOCK #55 348-430, warpins: 1 ---
 	slot14 = table
 	slot14 = slot14.sort
 	slot16 = slot2.breedTalent
@@ -1099,80 +1104,127 @@ slot17 = function(slot0, slot1)
 	slot14(slot16, slot17)
 
 	slot14 = slot1.basePropertyList
-	slot15 = {}
+
+	slot15 = function(slot0)
+		--- BLOCK #0 1-4, warpins: 1 ---
+		slot1 = baseProperty
+		slot1 = slot1.getTotal
+		--- END OF BLOCK #0 ---
+
+		slot1 = if slot1 then
+		JUMP TO BLOCK #1
+		else
+		JUMP TO BLOCK #2
+		end
+
+
+		--- BLOCK #1 5-11, warpins: 1 ---
+		slot1 = baseProperty
+		slot3 = slot1
+		slot1 = slot1.getTotal
+		slot4 = slot0
+		slot1 = slot1(slot3, slot4)
+		--- END OF BLOCK #1 ---
+
+		slot1 = if not slot1 then
+		JUMP TO BLOCK #2
+		else
+		JUMP TO BLOCK #3
+		end
+
+
+		--- BLOCK #2 12-14, warpins: 2 ---
+		slot1 = baseProperty
+		slot1 = slot1[slot0]
+		slot1 = slot1.total
+
+		--- END OF BLOCK #2 ---
+
+		FLOW; TARGET BLOCK #3
+
+
+		--- BLOCK #3 15-15, warpins: 2 ---
+		return slot1
+		--- END OF BLOCK #3 ---
+
+
+
+	end
+
 	slot16 = {}
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "ATTRIBUTE_HP_SIMPLE"
-	slot17 = slot17(slot19)
-	slot16.title = slot17
-	slot17 = Const
-	slot17 = slot17.BASE_PROPERTY_HP_IDX
-	slot17 = slot14[slot17]
-	slot17 = slot17.total
-	slot16.value = slot17
-	slot15[1] = slot16
-	slot16 = {}
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "ATTRIBUTE_ATTACK"
-	slot17 = slot17(slot19)
-	slot16.title = slot17
-	slot17 = Const
-	slot17 = slot17.BASE_PROPERTY_ATK_IDX
-	slot17 = slot14[slot17]
-	slot17 = slot17.total
-	slot16.value = slot17
-	slot15[2] = slot16
-	slot16 = {}
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "ATTRIBUTE_DEFINE"
-	slot17 = slot17(slot19)
-	slot16.title = slot17
-	slot17 = Const
-	slot17 = slot17.BASE_PROPERTY_DEF_IDX
-	slot17 = slot14[slot17]
-	slot17 = slot17.total
-	slot16.value = slot17
-	slot15[3] = slot16
-	slot16 = {}
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "ATTRIBUTE_NAT"
-	slot17 = slot17(slot19)
-	slot16.title = slot17
-	slot17 = Const
-	slot17 = slot17.BASE_PROPERTY_EP_REGEN_FORCE_IDX
-	slot17 = slot14[slot17]
-	slot17 = slot17.total
-	slot16.value = slot17
-	slot15[4] = slot16
-	slot16 = {}
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "ATTRIBUTE_SP_DEFINE"
-	slot17 = slot17(slot19)
-	slot16.title = slot17
-	slot17 = Const
-	slot17 = slot17.BASE_PROPERTY_DEF_MAG_IDX
-	slot17 = slot14[slot17]
-	slot17 = slot17.total
-	slot16.value = slot17
-	slot15[5] = slot16
-	slot16 = {}
-	slot17 = pg
-	slot17 = slot17.getGameString
-	slot19 = "ATTRIBUTE_SP_ATTACK"
-	slot17 = slot17(slot19)
-	slot16.title = slot17
-	slot17 = Const
-	slot17 = slot17.BASE_PROPERTY_ATK_MAG_IDX
-	slot17 = slot14[slot17]
-	slot17 = slot17.total
-	slot16.value = slot17
-	slot15[6] = slot16
-	slot2.props = slot15
+	slot17 = {}
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "ATTRIBUTE_HP_SIMPLE"
+	slot18 = slot18(slot20)
+	slot17.title = slot18
+	slot18 = slot15
+	slot20 = Const
+	slot20 = slot20.BASE_PROPERTY_HP_IDX
+	slot18 = slot18(slot20)
+	slot17.value = slot18
+	slot16[1] = slot17
+	slot17 = {}
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "ATTRIBUTE_ATTACK"
+	slot18 = slot18(slot20)
+	slot17.title = slot18
+	slot18 = slot15
+	slot20 = Const
+	slot20 = slot20.BASE_PROPERTY_ATK_IDX
+	slot18 = slot18(slot20)
+	slot17.value = slot18
+	slot16[2] = slot17
+	slot17 = {}
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "ATTRIBUTE_DEFINE"
+	slot18 = slot18(slot20)
+	slot17.title = slot18
+	slot18 = slot15
+	slot20 = Const
+	slot20 = slot20.BASE_PROPERTY_DEF_IDX
+	slot18 = slot18(slot20)
+	slot17.value = slot18
+	slot16[3] = slot17
+	slot17 = {}
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "ATTRIBUTE_NAT"
+	slot18 = slot18(slot20)
+	slot17.title = slot18
+	slot18 = slot15
+	slot20 = Const
+	slot20 = slot20.BASE_PROPERTY_EP_REGEN_FORCE_IDX
+	slot18 = slot18(slot20)
+	slot17.value = slot18
+	slot16[4] = slot17
+	slot17 = {}
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "ATTRIBUTE_SP_DEFINE"
+	slot18 = slot18(slot20)
+	slot17.title = slot18
+	slot18 = slot15
+	slot20 = Const
+	slot20 = slot20.BASE_PROPERTY_DEF_MAG_IDX
+	slot18 = slot18(slot20)
+	slot17.value = slot18
+	slot16[5] = slot17
+	slot17 = {}
+	slot18 = pg
+	slot18 = slot18.getGameString
+	slot20 = "ATTRIBUTE_SP_ATTACK"
+	slot18 = slot18(slot20)
+	slot17.title = slot18
+	slot18 = slot15
+	slot20 = Const
+	slot20 = slot20.BASE_PROPERTY_ATK_MAG_IDX
+	slot18 = slot18(slot20)
+	slot17.value = slot18
+	slot16[6] = slot17
+	slot2.props = slot16
 
 	return slot2
 	--- END OF BLOCK #55 ---
@@ -1180,7 +1232,7 @@ slot17 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #56
 
 
-	--- BLOCK #56 425-425, warpins: 2 ---
+	--- BLOCK #56 431-431, warpins: 2 ---
 	return slot2
 	--- END OF BLOCK #56 ---
 

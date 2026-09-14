@@ -1,4 +1,4 @@
---- BLOCK #0 1-75, warpins: 1 ---
+--- BLOCK #0 1-77, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -24,6 +24,8 @@ slot7 = slot4.LightClass
 slot9 = "UIView"
 slot7 = slot7(slot9)
 slot8 = 128
+slot9 = 4
+slot7.DESTROY_DELAY_FRAME = slot9
 
 slot9 = function(slot0, slot1, slot2)
 	--- BLOCK #0 1-22, warpins: 1 ---
@@ -84,38 +86,38 @@ end
 
 slot7.ctor = slot9
 
-slot9 = function(slot0)
+slot9 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.onDestroy
+	slot4 = slot0
+	slot2 = slot0.onDestroy
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot3 = slot0
-	slot1 = slot0.cancelAllUIAsyncTask
+	slot4 = slot0
+	slot2 = slot0.cancelAllUIAsyncTask
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot3 = slot0
-	slot1 = slot0.destroyAllInstance
+	slot4 = slot0
+	slot2 = slot0.destroyAllInstance
 
-	slot1(slot3)
+	slot2(slot4)
 
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.uiMgr
-	slot3 = slot1
-	slot1 = slot1.RemoveAssetRef
-	slot4 = slot0.uid
+	slot2 = pg
+	slot2 = slot2.global
+	slot2 = slot2.uiMgr
+	slot4 = slot2
+	slot2 = slot2.RemoveAssetRef
+	slot5 = slot0.uid
 
-	slot1(slot3, slot4)
+	slot2(slot4, slot5)
 
-	slot1 = NotNil
-	slot3 = slot0.widget
-	slot1 = slot1(slot3)
+	slot2 = NotNil
+	slot4 = slot0.widget
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #3
@@ -123,17 +125,17 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #1 22-31, warpins: 1 ---
-	slot1 = slot0.widget
-	slot2 = CS
-	slot2 = slot2.XGUI
-	slot2 = slot2.EVisibility
-	slot2 = slot2.HitTestInvisible
-	slot1.visibility = slot2
-	slot1 = slot0.widget
-	slot1 = slot1.ClearCloseCor
+	slot2 = slot0.widget
+	slot3 = CS
+	slot3 = slot3.XGUI
+	slot3 = slot3.EVisibility
+	slot3 = slot3.HitTestInvisible
+	slot2.visibility = slot3
+	slot2 = slot0.widget
+	slot2 = slot2.ClearCloseCor
 	--- END OF BLOCK #1 ---
 
-	slot1 = if slot1 then
+	slot2 = if slot2 then
 	JUMP TO BLOCK #2
 	else
 	JUMP TO BLOCK #3
@@ -141,29 +143,71 @@ slot9 = function(slot0)
 
 
 	--- BLOCK #2 32-35, warpins: 1 ---
-	slot1 = slot0.widget
-	slot3 = slot1
-	slot1 = slot1.ClearCloseCor
+	slot2 = slot0.widget
+	slot4 = slot2
+	slot2 = slot2.ClearCloseCor
 
-	slot1(slot3)
+	slot2(slot4)
 
 	--- END OF BLOCK #2 ---
 
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 36-50, warpins: 3 ---
-	slot1 = TimerManager
-	slot1 = slot1.addTimer
-	slot3 = 0.03
+	--- BLOCK #3 36-37, warpins: 3 ---
+	--- END OF BLOCK #3 ---
 
-	slot4 = function()
-		--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = if slot1 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 38-41, warpins: 1 ---
+	slot4 = slot0
+	slot2 = slot0.delayDestroyUIView
+
+	slot2(slot4)
+
+	--- END OF BLOCK #4 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #6
+
+
+	--- BLOCK #5 42-57, warpins: 1 ---
+	slot2 = slot0.uid
+	slot3 = pg
+	slot3 = slot3.global
+	slot3 = slot3.ui
+	slot5 = slot3
+	slot3 = slot3.markUIPendingDestroy
+	slot6 = slot2
+
+	slot3(slot5, slot6)
+
+	slot3 = TimerManager
+	slot3 = slot3.addSpecificFrameCb
+	slot5 = UIView
+	slot5 = slot5.DESTROY_DELAY_FRAME
+	slot6 = false
+
+	slot7 = function()
+		--- BLOCK #0 1-12, warpins: 1 ---
 		slot0 = self
 		slot2 = slot0
 		slot0 = slot0.delayDestroyUIView
 
 		slot0(slot2)
+
+		slot0 = pg
+		slot0 = slot0.global
+		slot0 = slot0.ui
+		slot2 = slot0
+		slot0 = slot0.clearUIPendingDestroy
+		slot3 = uid
+
+		slot0(slot2, slot3)
 
 		return
 		--- END OF BLOCK #0 ---
@@ -172,19 +216,25 @@ slot9 = function(slot0)
 
 	end
 
-	slot1(slot3, slot4)
+	slot3(slot5, slot6, slot7)
 
-	slot1 = nil
-	slot0.transform = slot1
-	slot1 = nil
-	slot0.gameObject = slot1
-	slot1 = nil
-	slot0.widget = slot1
-	slot1 = nil
-	slot0.uid = slot1
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 58-67, warpins: 2 ---
+	slot2 = nil
+	slot0.transform = slot2
+	slot2 = nil
+	slot0.gameObject = slot2
+	slot2 = nil
+	slot0.widget = slot2
+	slot2 = nil
+	slot0.uid = slot2
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #6 ---
 
 
 
@@ -1298,8 +1348,8 @@ slot9 = function(slot0, slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8)
 	--- BLOCK #22 65-84, warpins: 2 ---
 	slot0.asyncTaskIdMap = slot10
 	slot10 = {
-		isBatch = true,
-		completed = 0
+		completed = 0,
+		isBatch = true
 	}
 	slot10.view = slot0
 	slot10.callback = slot4

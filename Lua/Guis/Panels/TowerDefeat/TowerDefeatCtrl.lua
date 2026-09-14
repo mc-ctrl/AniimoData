@@ -55,8 +55,8 @@ slot17 = require
 slot19 = "Common.NoticeDef"
 slot17 = slot17(slot19)
 slot18 = {
-	Level = 0,
-	Element = 1
+	Element = 1,
+	Level = 0
 }
 slot11.RecommendTipType = slot18
 slot18 = {}
@@ -343,7 +343,7 @@ slot18 = function(slot0)
 	slot1 = slot1.listTipsUList
 
 	slot2 = function(slot0, slot1, slot2)
-		--- BLOCK #0 1-23, warpins: 1 ---
+		--- BLOCK #0 1-32, warpins: 1 ---
 		slot5 = slot0
 		slot3 = slot0.GetComponent
 		slot6 = "ObjectReference"
@@ -356,167 +356,178 @@ slot18 = function(slot0)
 		slot5 = slot3.GetRefValue
 		slot8 = "listElementUList"
 		slot5 = slot5(slot7, slot8)
-		slot8 = slot0
-		slot6 = slot0.TryChangePage
-		slot9 = "Recommend"
-		slot10 = slot2.type
+		slot8 = slot3
+		slot6 = slot3.GetRefValue
+		slot9 = "titleUBaseText"
+		slot6 = slot6(slot8, slot9)
+		slot9 = slot0
+		slot7 = slot0.TryChangePage
+		slot10 = "Recommend"
+		slot11 = slot2.type
 
-		slot6(slot8, slot9, slot10)
+		slot7(slot9, slot10, slot11)
 
-		slot6 = slot2.type
-		slot7 = self
-		slot7 = slot7.RecommendTipType
-		slot7 = slot7.Level
+		slot7 = ClientTextUtils
+		slot7 = slot7.setText
+		slot9 = slot6
+		slot10 = slot2.label
+
+		slot7(slot9, slot10)
+
+		slot7 = slot2.type
+		slot8 = self
+		slot8 = slot8.RecommendTipType
+		slot8 = slot8.Level
 		--- END OF BLOCK #0 ---
 
-		if slot6 == slot7 then
+		if slot7 == slot8 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #11
 		end
 
 
-		--- BLOCK #1 24-37, warpins: 1 ---
-		slot6 = ClientTextUtils
-		slot6 = slot6.setText
-		slot8 = slot4
-		slot9 = slot2.level
+		--- BLOCK #1 33-46, warpins: 1 ---
+		slot7 = ClientTextUtils
+		slot7 = slot7.setText
+		slot9 = slot4
+		slot10 = slot2.level
 
-		slot6(slot8, slot9)
+		slot7(slot9, slot10)
 
-		slot6 = 0
 		slot7 = 0
-		slot8 = RogueUtils
-		slot8 = slot8.getBattlePetIds
-		slot8 = slot8()
-		slot9 = ipairs
-		slot11 = slot8
-		slot9, slot10, slot11 = slot9(slot11)
+		slot8 = 0
+		slot9 = RogueUtils
+		slot9 = slot9.getBattlePetIds
+		slot9 = slot9()
+		slot10 = ipairs
+		slot12 = slot9
+		slot10, slot11, slot12 = slot10(slot12)
 		--- END OF BLOCK #1 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #2 38-43, warpins: 1 ---
-		slot14 = pg
-		slot14 = slot14.me
-		slot14 = slot14.pets
-		slot14 = slot14[slot13]
+		--- BLOCK #2 47-52, warpins: 1 ---
+		slot15 = pg
+		slot15 = slot15.me
+		slot15 = slot15.pets
+		slot15 = slot15[slot14]
 		--- END OF BLOCK #2 ---
 
-		slot14 = if slot14 then
+		slot15 = if slot15 then
 		JUMP TO BLOCK #3
 		else
 		JUMP TO BLOCK #4
 		end
 
 
-		--- BLOCK #3 44-46, warpins: 1 ---
-		slot7 = slot7 + 1
-		slot15 = slot14.level
-		slot6 = slot6 + slot15
+		--- BLOCK #3 53-55, warpins: 1 ---
+		slot8 = slot8 + 1
+		slot16 = slot15.level
+		slot7 = slot7 + slot16
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 47-48, warpins: 3 ---
+		--- BLOCK #4 56-57, warpins: 3 ---
 		--- END OF BLOCK #4 ---
 
-		for slot12, slot13 in slot9, slot10, slot11
+		for slot13, slot14 in slot10, slot11, slot12
 		LOOP BLOCK #2
 		GO OUT TO BLOCK #5
 
 
-		--- BLOCK #5 49-50, warpins: 1 ---
+		--- BLOCK #5 58-59, warpins: 1 ---
 		--- END OF BLOCK #5 ---
 
-		if slot7 == 0 then
+		if slot8 == 0 then
 		JUMP TO BLOCK #6
 		else
 		JUMP TO BLOCK #7
 		end
 
 
-		--- BLOCK #6 51-56, warpins: 1 ---
-		slot11 = slot0
-		slot9 = slot0.TryChangePage
-		slot12 = "NotHave"
-		slot13 = 0
+		--- BLOCK #6 60-65, warpins: 1 ---
+		slot12 = slot0
+		slot10 = slot0.TryChangePage
+		slot13 = "NotHave"
+		slot14 = 0
 
-		slot9(slot11, slot12, slot13)
+		slot10(slot12, slot13, slot14)
 
 		--- END OF BLOCK #6 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-		--- BLOCK #7 57-63, warpins: 1 ---
-		slot11 = slot0
-		slot9 = slot0.TryChangePage
-		slot12 = "NotHave"
-		slot13 = slot6 / slot7
-		slot14 = slot2.level
+		--- BLOCK #7 66-72, warpins: 1 ---
+		slot12 = slot0
+		slot10 = slot0.TryChangePage
+		slot13 = "NotHave"
+		slot14 = slot7 / slot8
+		slot15 = slot2.level
 		--- END OF BLOCK #7 ---
 
-		if slot14 <= slot13 then
+		if slot15 <= slot14 then
 		JUMP TO BLOCK #8
 		else
 		JUMP TO BLOCK #9
 		end
 
 
-		--- BLOCK #8 64-65, warpins: 1 ---
-		slot13 = 0
+		--- BLOCK #8 73-74, warpins: 1 ---
+		slot14 = 0
 		--- END OF BLOCK #8 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #10
 
 
-		--- BLOCK #9 66-66, warpins: 1 ---
-		slot13 = 1
+		--- BLOCK #9 75-75, warpins: 1 ---
+		slot14 = 1
 
 		--- END OF BLOCK #9 ---
 
 		FLOW; TARGET BLOCK #10
 
 
-		--- BLOCK #10 67-68, warpins: 2 ---
-		slot9(slot11, slot12, slot13)
+		--- BLOCK #10 76-77, warpins: 2 ---
+		slot10(slot12, slot13, slot14)
 
 		--- END OF BLOCK #10 ---
 
 		UNCONDITIONAL JUMP; TARGET BLOCK #13
 
 
-		--- BLOCK #11 69-74, warpins: 1 ---
-		slot6 = slot2.type
-		slot7 = self
-		slot7 = slot7.RecommendTipType
-		slot7 = slot7.Element
+		--- BLOCK #11 78-83, warpins: 1 ---
+		slot7 = slot2.type
+		slot8 = self
+		slot8 = slot8.RecommendTipType
+		slot8 = slot8.Element
 		--- END OF BLOCK #11 ---
 
-		if slot6 == slot7 then
+		if slot7 == slot8 then
 		JUMP TO BLOCK #12
 		else
 		JUMP TO BLOCK #13
 		end
 
 
-		--- BLOCK #12 75-79, warpins: 1 ---
-		slot6 = LuaUIUtils
-		slot6 = slot6.renderPetElement
-		slot8 = slot5
-		slot9 = slot2.recommendElement
+		--- BLOCK #12 84-88, warpins: 1 ---
+		slot7 = LuaUIUtils
+		slot7 = slot7.renderPetElement
+		slot9 = slot5
+		slot10 = slot2.recommendElement
 
-		slot6(slot8, slot9)
+		slot7(slot9, slot10)
 
 		--- END OF BLOCK #12 ---
 
 		FLOW; TARGET BLOCK #13
 
 
-		--- BLOCK #13 80-80, warpins: 4 ---
+		--- BLOCK #13 89-89, warpins: 4 ---
 		return
 		--- END OF BLOCK #13 ---
 
@@ -1102,11 +1113,16 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #13 120-129, warpins: 1 ---
+	--- BLOCK #13 120-134, warpins: 1 ---
 	slot9 = table
 	slot9 = slot9.insert
 	slot11 = slot8
 	slot12 = {}
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "Rift_RecommendElement"
+	slot13 = slot13(slot15)
+	slot12.label = slot13
 	slot13 = slot0.RecommendTipType
 	slot13 = slot13.Element
 	slot12.type = slot13
@@ -1120,7 +1136,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #14
 
 
-	--- BLOCK #14 130-132, warpins: 2 ---
+	--- BLOCK #14 135-137, warpins: 2 ---
 	slot9 = slot2.recommendLv
 	--- END OF BLOCK #14 ---
 
@@ -1131,11 +1147,16 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #15 133-142, warpins: 1 ---
+	--- BLOCK #15 138-152, warpins: 1 ---
 	slot9 = table
 	slot9 = slot9.insert
 	slot11 = slot8
 	slot12 = {}
+	slot13 = pg
+	slot13 = slot13.getGameString
+	slot15 = "Rift_RecommendLevel"
+	slot13 = slot13(slot15)
+	slot12.label = slot13
 	slot13 = slot0.RecommendTipType
 	slot13 = slot13.Level
 	slot12.type = slot13
@@ -1149,7 +1170,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #16
 
 
-	--- BLOCK #16 143-159, warpins: 2 ---
+	--- BLOCK #16 153-169, warpins: 2 ---
 	slot9 = slot0.view
 	slot9 = slot9.listTipsUList
 	slot11 = slot9
@@ -1176,14 +1197,14 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #17 160-161, warpins: 1 ---
+	--- BLOCK #17 170-171, warpins: 1 ---
 	slot12 = false
 	--- END OF BLOCK #17 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #19
 
 
-	--- BLOCK #18 162-162, warpins: 1 ---
+	--- BLOCK #18 172-172, warpins: 1 ---
 	slot12 = true
 
 	--- END OF BLOCK #18 ---
@@ -1191,7 +1212,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #19
 
 
-	--- BLOCK #19 163-170, warpins: 2 ---
+	--- BLOCK #19 173-180, warpins: 2 ---
 	slot9(slot11, slot12)
 
 	slot9 = pg
@@ -1208,7 +1229,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #20 171-181, warpins: 1 ---
+	--- BLOCK #20 181-191, warpins: 1 ---
 	slot9 = 0
 	slot10 = 0
 	slot11 = 0
@@ -1227,7 +1248,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #21 182-191, warpins: 1 ---
+	--- BLOCK #21 192-201, warpins: 1 ---
 	slot14 = CatchRoguePhaseData
 	slot15 = slot1.gameId
 	slot14 = slot14[slot15]
@@ -1245,14 +1266,14 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #22 192-192, warpins: 1 ---
+	--- BLOCK #22 202-202, warpins: 1 ---
 	slot14 = 0
 	--- END OF BLOCK #22 ---
 
 	FLOW; TARGET BLOCK #23
 
 
-	--- BLOCK #23 193-205, warpins: 2 ---
+	--- BLOCK #23 203-215, warpins: 2 ---
 	slot9 = slot10 - slot14
 	slot14 = CatchRoguePhaseData
 	slot15 = slot1.gameId
@@ -1270,7 +1291,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #28
 
 
-	--- BLOCK #24 206-211, warpins: 1 ---
+	--- BLOCK #24 216-221, warpins: 1 ---
 	slot14 = slot0.failReason
 	slot15 = Const
 	slot15 = slot15.CatchRogue
@@ -1284,7 +1305,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #25 212-221, warpins: 1 ---
+	--- BLOCK #25 222-231, warpins: 1 ---
 	slot14 = CatchRoguePhaseData
 	slot15 = slot1.gameId
 	slot14 = slot14[slot15]
@@ -1302,14 +1323,14 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #26 222-222, warpins: 1 ---
+	--- BLOCK #26 232-232, warpins: 1 ---
 	slot14 = 0
 	--- END OF BLOCK #26 ---
 
 	FLOW; TARGET BLOCK #27
 
 
-	--- BLOCK #27 223-234, warpins: 2 ---
+	--- BLOCK #27 233-244, warpins: 2 ---
 	slot9 = slot10 - slot14
 	slot14 = CatchRoguePhaseData
 	slot15 = slot1.gameId
@@ -1327,7 +1348,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #28
 
 
-	--- BLOCK #28 235-281, warpins: 3 ---
+	--- BLOCK #28 245-291, warpins: 3 ---
 	slot0.catchRogueBuyCnt = slot9
 	slot14 = ClientTextUtils
 	slot14 = slot14.setText
@@ -1385,7 +1406,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #43
 
 
-	--- BLOCK #29 282-310, warpins: 1 ---
+	--- BLOCK #29 292-320, warpins: 1 ---
 	slot2 = slot0.view
 	slot2 = slot2.subTitleUWidget
 	slot4 = slot2
@@ -1428,14 +1449,14 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #30 311-311, warpins: 1 ---
+	--- BLOCK #30 321-321, warpins: 1 ---
 	slot3 = {}
 	--- END OF BLOCK #30 ---
 
 	FLOW; TARGET BLOCK #31
 
 
-	--- BLOCK #31 312-313, warpins: 2 ---
+	--- BLOCK #31 322-323, warpins: 2 ---
 	--- END OF BLOCK #31 ---
 
 	slot1 = if slot1 then
@@ -1445,7 +1466,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #32 314-316, warpins: 1 ---
+	--- BLOCK #32 324-326, warpins: 1 ---
 	slot4 = slot1.failReason
 	--- END OF BLOCK #32 ---
 
@@ -1456,7 +1477,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #33 317-319, warpins: 1 ---
+	--- BLOCK #33 327-329, warpins: 1 ---
 	slot4 = slot1.failReason
 	slot5 = false
 	slot3[slot4] = slot5
@@ -1465,7 +1486,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #34
 
 
-	--- BLOCK #34 320-324, warpins: 3 ---
+	--- BLOCK #34 330-334, warpins: 3 ---
 	slot4 = {}
 	slot5 = pairs
 	slot7 = slot3
@@ -1475,7 +1496,7 @@ slot18 = function(slot0, slot1)
 	UNCONDITIONAL JUMP; TARGET BLOCK #37
 
 
-	--- BLOCK #35 325-329, warpins: 1 ---
+	--- BLOCK #35 335-339, warpins: 1 ---
 	slot10 = {}
 	slot11 = LevelConditionData
 	slot11 = slot11[slot8]
@@ -1488,7 +1509,7 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #36 330-340, warpins: 1 ---
+	--- BLOCK #36 340-350, warpins: 1 ---
 	slot12 = pg
 	slot12 = slot12.getLocalizationText
 	slot14 = slot11.displayDesc
@@ -1507,7 +1528,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #37 341-342, warpins: 3 ---
+	--- BLOCK #37 351-352, warpins: 3 ---
 	--- END OF BLOCK #37 ---
 
 	for slot8, slot9 in slot5, slot6, slot7
@@ -1515,7 +1536,7 @@ slot18 = function(slot0, slot1)
 	GO OUT TO BLOCK #38
 
 
-	--- BLOCK #38 343-352, warpins: 1 ---
+	--- BLOCK #38 353-362, warpins: 1 ---
 	slot5 = slot0.view
 	slot5 = slot5.listMissionUList
 	slot7 = slot5
@@ -1535,11 +1556,16 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #39 353-362, warpins: 1 ---
+	--- BLOCK #39 363-377, warpins: 1 ---
 	slot6 = table
 	slot6 = slot6.insert
 	slot8 = slot5
 	slot9 = {}
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = "Rift_RecommendElement"
+	slot10 = slot10(slot12)
+	slot9.label = slot10
 	slot10 = slot0.RecommendTipType
 	slot10 = slot10.Element
 	slot9.type = slot10
@@ -1553,7 +1579,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #40
 
 
-	--- BLOCK #40 363-365, warpins: 2 ---
+	--- BLOCK #40 378-380, warpins: 2 ---
 	slot6 = slot2.recommendLv
 	--- END OF BLOCK #40 ---
 
@@ -1564,11 +1590,16 @@ slot18 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #41 366-375, warpins: 1 ---
+	--- BLOCK #41 381-395, warpins: 1 ---
 	slot6 = table
 	slot6 = slot6.insert
 	slot8 = slot5
 	slot9 = {}
+	slot10 = pg
+	slot10 = slot10.getGameString
+	slot12 = "Rift_RecommendLevel"
+	slot10 = slot10(slot12)
+	slot9.label = slot10
 	slot10 = slot0.RecommendTipType
 	slot10 = slot10.Level
 	slot9.type = slot10
@@ -1582,7 +1613,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #42
 
 
-	--- BLOCK #42 376-381, warpins: 2 ---
+	--- BLOCK #42 396-401, warpins: 2 ---
 	slot6 = slot0.view
 	slot6 = slot6.listTipsUList
 	slot8 = slot6
@@ -1596,7 +1627,7 @@ slot18 = function(slot0, slot1)
 	FLOW; TARGET BLOCK #43
 
 
-	--- BLOCK #43 382-382, warpins: 3 ---
+	--- BLOCK #43 402-402, warpins: 3 ---
 	return
 	--- END OF BLOCK #43 ---
 

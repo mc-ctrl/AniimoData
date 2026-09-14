@@ -191,16 +191,19 @@ end
 slot4._pullCameraMode = slot5
 
 slot5 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = ipairs
-	slot3 = slot0.subModes
-	slot1, slot2, slot3 = slot1(slot3)
+	--- BLOCK #0 1-5, warpins: 1 ---
+	slot1 = slot0.subModes
+	slot1 = #slot1
+	slot2 = 1
+	slot3 = -1
 	--- END OF BLOCK #0 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #1
 
 
-	--- BLOCK #1 5-7, warpins: 1 ---
+	--- BLOCK #1 6-11, warpins: 2 ---
+	slot5 = slot0.subModes
+	slot5 = slot5[slot4]
 	slot8 = slot5
 	slot6 = slot5.dispose
 
@@ -208,18 +211,11 @@ slot5 = function(slot0)
 
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
-
-
-	--- BLOCK #2 8-9, warpins: 2 ---
-	--- END OF BLOCK #2 ---
-
-	for slot4, slot5 in slot1, slot2, slot3
+	for slot4=slot1, slot2, slot3
 	LOOP BLOCK #1
-	GO OUT TO BLOCK #3
+	GO OUT TO BLOCK #2
 
-
-	--- BLOCK #3 10-16, warpins: 1 ---
+	--- BLOCK #2 12-18, warpins: 1 ---
 	slot1 = {}
 	slot0.subModes = slot1
 	slot1 = CameraMode
@@ -229,7 +225,7 @@ slot5 = function(slot0)
 	slot1(slot3)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #2 ---
 
 
 

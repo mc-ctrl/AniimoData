@@ -6,16 +6,16 @@ slot1 = {
 }
 slot0.ItemEvent = slot1
 slot1 = {
-	Infinite = 2,
-	AllowOverflowOnlyOnce = 1,
 	Default = 0,
-	CustomHandleWhenOverflow = 3
+	CustomHandleWhenOverflow = 3,
+	Infinite = 2,
+	AllowOverflowOnlyOnce = 1
 }
 slot0.BagOverFlowMode = slot1
 slot1 = {
+	CustomHandleWhenOverPile = 2,
 	DropWhenOverPile = 1,
-	AllowMultiPile = 0,
-	CustomHandleWhenOverPile = 2
+	AllowMultiPile = 0
 }
 slot0.PileupMode = slot1
 

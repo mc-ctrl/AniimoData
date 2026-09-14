@@ -141,56 +141,16 @@ end
 slot14.cacheInteractData = slot15
 
 slot15 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
+	slot1 = slot1.hudV2
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
+	slot1 = slot1.getCurSelectPropId
+
+	return slot1(slot3)
 	--- END OF BLOCK #0 ---
-
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
-
-
-	--- BLOCK #1 11-18, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	slot3 = slot1
-	slot1 = slot1.getCurSelectPropId
-
-	return slot1(slot3)
-
-	--- END OF BLOCK #1 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
-
-
-	--- BLOCK #2 19-25, warpins: 1 ---
-	slot1 = pg
-	slot1 = slot1.global
-	slot1 = slot1.ui
-	slot1 = slot1.hudV2
-	slot3 = slot1
-	slot1 = slot1.getCurSelectPropId
-
-	return slot1(slot3)
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 26-26, warpins: 2 ---
-	return
-	--- END OF BLOCK #3 ---
 
 
 
@@ -354,23 +314,22 @@ end
 slot14.setTargetId = slot15
 
 slot15 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.me
 	slot3 = slot1
-	slot1 = slot1.checkQuickCatch
-	slot4 = true
-	slot1 = slot1(slot3, slot4)
+	slot1 = slot1.isInCatchMode
+	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 9-10, warpins: 1 ---
+	--- BLOCK #1 8-9, warpins: 1 ---
 	slot1 = false
 
 	return slot1
@@ -380,53 +339,79 @@ slot15 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 11-16, warpins: 2 ---
+	--- BLOCK #2 10-17, warpins: 2 ---
+	slot1 = pg
+	slot1 = slot1.me
+	slot3 = slot1
+	slot1 = slot1.checkQuickCatch
+	slot4 = true
+	slot1 = slot1(slot3, slot4)
+	--- END OF BLOCK #2 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #3
+	else
+	JUMP TO BLOCK #4
+	end
+
+
+	--- BLOCK #3 18-19, warpins: 1 ---
+	slot1 = false
+
+	return slot1
+
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 20-25, warpins: 2 ---
 	slot1 = pg
 	slot1 = slot1.getEntity
 	slot3 = slot0.targetId
 	slot1 = slot1(slot3)
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #3
+	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #3 17-21, warpins: 1 ---
+	--- BLOCK #5 26-30, warpins: 1 ---
 	slot4 = slot1
 	slot2 = slot1.isDead
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 	slot2 = if slot2 then
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #10
+	end
+
+
+	--- BLOCK #6 31-34, warpins: 1 ---
+	slot2 = SysConfigData
+	slot2 = slot2.deadCatchTimeTolerance
+	--- END OF BLOCK #6 ---
+
+	slot2 = if not slot2 then
+	JUMP TO BLOCK #7
 	else
 	JUMP TO BLOCK #8
 	end
 
 
-	--- BLOCK #4 22-25, warpins: 1 ---
-	slot2 = SysConfigData
-	slot2 = slot2.deadCatchTimeTolerance
-	--- END OF BLOCK #4 ---
-
-	slot2 = if not slot2 then
-	JUMP TO BLOCK #5
-	else
-	JUMP TO BLOCK #6
-	end
-
-
-	--- BLOCK #5 26-26, warpins: 1 ---
+	--- BLOCK #7 35-35, warpins: 1 ---
 	slot2 = 1
-	--- END OF BLOCK #5 ---
+	--- END OF BLOCK #7 ---
 
-	FLOW; TARGET BLOCK #6
+	FLOW; TARGET BLOCK #8
 
 
-	--- BLOCK #6 27-39, warpins: 2 ---
+	--- BLOCK #8 36-48, warpins: 2 ---
 	slot3 = slot1.destroyDuration
 	slot4 = pg
 	slot4 = slot4.me
@@ -438,30 +423,30 @@ slot15 = function(slot0)
 	slot3 = slot3 - slot4
 	slot3 = slot3 - slot2
 	slot4 = 0
-	--- END OF BLOCK #6 ---
+	--- END OF BLOCK #8 ---
 
 	if slot3 <= slot4 then
-	JUMP TO BLOCK #7
+	JUMP TO BLOCK #9
 	else
-	JUMP TO BLOCK #8
+	JUMP TO BLOCK #10
 	end
 
 
-	--- BLOCK #7 40-41, warpins: 1 ---
+	--- BLOCK #9 49-50, warpins: 1 ---
 	slot4 = false
 
 	return slot4
 
-	--- END OF BLOCK #7 ---
+	--- END OF BLOCK #9 ---
 
-	FLOW; TARGET BLOCK #8
+	FLOW; TARGET BLOCK #10
 
 
-	--- BLOCK #8 42-43, warpins: 4 ---
+	--- BLOCK #10 51-52, warpins: 4 ---
 	slot2 = slot0.enableInteract
 
 	return slot2
-	--- END OF BLOCK #8 ---
+	--- END OF BLOCK #10 ---
 
 
 
@@ -512,7 +497,27 @@ end
 slot14.setEnableInteractive = slot15
 
 slot15 = function(slot0)
-	--- BLOCK #0 1-9, warpins: 1 ---
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.targetId
+
+	--- END OF BLOCK #0 ---
+
+	slot1 = if not slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-4, warpins: 1 ---
+	return
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 5-13, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.getInvalidInteractData
 	slot1 = slot1(slot3)
@@ -520,16 +525,16 @@ slot15 = function(slot0)
 	slot2 = slot2.getEntity
 	slot4 = slot0.targetId
 	slot2 = slot2(slot4)
-	--- END OF BLOCK #0 ---
+	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
-	JUMP TO BLOCK #1
+	JUMP TO BLOCK #3
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #1 10-24, warpins: 1 ---
+	--- BLOCK #3 14-28, warpins: 1 ---
 	slot3 = 0
 	slot1.rate = slot3
 	slot3 = 2
@@ -546,12 +551,12 @@ slot15 = function(slot0)
 
 	return slot3
 
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #2 25-68, warpins: 1 ---
+	--- BLOCK #4 29-72, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.getBallItemId
 	slot3 = slot3(slot5)
@@ -597,14 +602,14 @@ slot15 = function(slot0)
 	slot6[1] = slot7
 
 	return slot6
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
-	FLOW; TARGET BLOCK #3
+	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #3 69-69, warpins: 2 ---
+	--- BLOCK #5 73-73, warpins: 2 ---
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
 
 

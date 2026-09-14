@@ -243,12 +243,7 @@ slot12 = function(slot0)
 end
 
 slot13 = function(slot0)
-	--- BLOCK #0 1-29, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.tryTickPerception
-
-	slot1(slot3)
-
+	--- BLOCK #0 1-26, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.tickCheckAIParmonPlanInterrupt
 
@@ -296,7 +291,7 @@ slot13 = function(slot0)
 	end
 
 
-	--- BLOCK #1 30-48, warpins: 1 ---
+	--- BLOCK #1 27-45, warpins: 1 ---
 	slot1 = slot0.agent
 	slot2 = true
 	slot1.inBtExec = slot2
@@ -322,7 +317,7 @@ slot13 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 49-52, warpins: 1 ---
+	--- BLOCK #2 46-49, warpins: 1 ---
 	slot1 = slot0.agent
 	slot3 = slot1
 	slot1 = slot1.btExec
@@ -334,7 +329,7 @@ slot13 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 53-56, warpins: 2 ---
+	--- BLOCK #3 50-53, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.onBtTickLater
 

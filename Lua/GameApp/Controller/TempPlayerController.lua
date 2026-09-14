@@ -99,7 +99,7 @@ end
 slot13.enter = slot14
 
 slot14 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot4 = slot0.pawn
 	slot5 = pg
 	slot5 = slot5.game
@@ -112,36 +112,46 @@ slot14 = function(slot0, slot1, slot2, slot3)
 
 	slot5(slot7, slot8, slot9, slot10)
 
-	slot5 = slot4.eModel
-	slot5 = slot5.controllerComponent
 	--- END OF BLOCK #0 ---
 
-	slot5 = if slot5 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 15-22, warpins: 1 ---
+	--- BLOCK #1 13-15, warpins: 1 ---
 	slot5 = slot4.eModel
-	slot5 = slot5.controllerComponent
-	slot7 = slot5
-	slot5 = slot5.OnHandleMove
-	slot8 = slot1
-	slot9 = slot2
-	slot10 = slot3
-
-	slot5(slot7, slot8, slot9, slot10)
-
 	--- END OF BLOCK #1 ---
 
-	FLOW; TARGET BLOCK #2
+	slot5 = if slot5 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 23-23, warpins: 2 ---
-	return
+	--- BLOCK #2 16-24, warpins: 1 ---
+	slot5 = slot4.eModel
+	slot7 = slot5
+	slot5 = slot5.OnHandleMove
+	slot8 = Const
+	slot8 = slot8.COMPONENT_INDEX_CHARACETER_CONTROLLER
+	slot9 = slot1
+	slot10 = slot2
+	slot11 = slot3
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
+
 	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 25-25, warpins: 3 ---
+	return
+	--- END OF BLOCK #3 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-93, warpins: 1 ---
+--- BLOCK #0 1-96, warpins: 1 ---
 slot0 = require
 slot2 = "Core.Log.LoggerManager"
 slot0 = slot0(slot2)
@@ -50,26 +50,29 @@ slot14 = slot14(slot16)
 slot15 = require
 slot17 = "Common.Utils.Utils"
 slot15 = slot15(slot17)
-slot16 = slot2.LightClass
-slot18 = "AreaActivityCtrl"
-slot19 = slot3
-slot16 = slot16(slot18, slot19)
-slot17 = {}
-slot18 = slot1.EVENT_TASK_STATE_CHANGE
-slot19 = {
+slot16 = require
+slot18 = "Data.item_source_data"
+slot16 = slot16(slot18)
+slot17 = slot2.LightClass
+slot19 = "AreaActivityCtrl"
+slot20 = slot3
+slot17 = slot17(slot19, slot20)
+slot18 = {}
+slot19 = slot1.EVENT_TASK_STATE_CHANGE
+slot20 = {
 	"onRefreshUI",
 	true
 }
-slot17[slot18] = slot19
-slot18 = slot1.PLAYER_ONTELEPORT
-slot19 = {
+slot18[slot19] = slot20
+slot19 = slot1.PLAYER_ONTELEPORT
+slot20 = {
 	"onPlayerTeleport",
 	true
 }
-slot17[slot18] = slot19
-slot16.messages = slot17
+slot18[slot19] = slot20
+slot17.messages = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onCreate
@@ -85,9 +88,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.onCreate = slot17
+slot17.onCreate = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-30, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.btnBackUButton
@@ -462,9 +465,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.addListener = slot17
+slot17.addListener = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = UICtrl
 	slot1 = slot1.onDestroy
@@ -479,9 +482,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onDestroy = slot17
+slot17.onDestroy = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-21, warpins: 1 ---
 	slot2 = UICtrl
 	slot2 = slot2.onOpen
@@ -602,9 +605,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.onOpen = slot17
+slot17.onOpen = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.game
@@ -627,9 +630,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onShow = slot17
+slot17.onShow = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0._hideEventTimer
 	--- END OF BLOCK #0 ---
@@ -672,9 +675,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onHide = slot17
+slot17.onHide = slot18
 
-slot17 = function(slot0, slot1)
+slot18 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -704,9 +707,9 @@ slot17 = function(slot0, slot1)
 
 end
 
-slot16.onVisibleChange = slot17
+slot17.onVisibleChange = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = EventAreaActivityData
 	slot2 = slot0.eventPhase
@@ -1105,9 +1108,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.refreshUI = slot17
+slot17.refreshUI = slot18
 
-slot17 = function(slot0, slot1, slot2, slot3)
+slot18 = function(slot0, slot1, slot2, slot3)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot4 = slot3.taskData
 	slot7 = slot1
@@ -1166,7 +1169,7 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	slot10 = if slot10 then
 	JUMP TO BLOCK #5
 	else
-	JUMP TO BLOCK #37
+	JUMP TO BLOCK #38
 	end
 
 
@@ -1593,58 +1596,95 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	if slot33 == nil then
 	JUMP TO BLOCK #29
 	else
-	JUMP TO BLOCK #30
+	JUMP TO BLOCK #31
 	end
 
 
-	--- BLOCK #29 254-255, warpins: 1 ---
-	slot33 = false
+	--- BLOCK #29 254-256, warpins: 1 ---
+	slot33 = slot21.sourceId
 	--- END OF BLOCK #29 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #31
+	if slot33 == nil then
+	JUMP TO BLOCK #30
+	else
+	JUMP TO BLOCK #31
+	end
 
 
-	--- BLOCK #30 256-256, warpins: 1 ---
-	slot33 = true
-
+	--- BLOCK #30 257-258, warpins: 1 ---
+	slot33 = false
 	--- END OF BLOCK #30 ---
 
-	FLOW; TARGET BLOCK #31
+	UNCONDITIONAL JUMP; TARGET BLOCK #32
 
 
-	--- BLOCK #31 257-276, warpins: 2 ---
+	--- BLOCK #31 259-259, warpins: 2 ---
+	slot33 = true
+
+	--- END OF BLOCK #31 ---
+
+	FLOW; TARGET BLOCK #32
+
+
+	--- BLOCK #32 260-279, warpins: 2 ---
 	slot30(slot32, slot33)
 
 	slot30 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
+		--- BLOCK #0 1-6, warpins: 1 ---
 		slot0 = data
 		slot0 = slot0.taskEvent
+		slot1 = cfg
+		slot1 = slot1.sourceId
 		--- END OF BLOCK #0 ---
 
-		slot0 = if slot0 then
+		slot1 = if slot1 then
 		JUMP TO BLOCK #1
 		else
 		JUMP TO BLOCK #2
 		end
 
 
-		--- BLOCK #1 5-10, warpins: 1 ---
-		slot1 = pg
-		slot1 = slot1.me
-		slot3 = slot1
-		slot1 = slot1.doEvent
-		slot4 = slot0
+		--- BLOCK #1 7-13, warpins: 1 ---
+		slot2 = ItemSourceData
+		slot2 = slot2[slot1]
+		slot3 = LuaUIUtils
+		slot3 = slot3.clueSeek
+		slot5 = slot2
 
-		slot1(slot3, slot4)
+		slot3(slot5)
 
 		--- END OF BLOCK #1 ---
 
-		FLOW; TARGET BLOCK #2
+		UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-		--- BLOCK #2 11-11, warpins: 2 ---
-		return
+		--- BLOCK #2 14-15, warpins: 1 ---
 		--- END OF BLOCK #2 ---
+
+		slot0 = if slot0 then
+		JUMP TO BLOCK #3
+		else
+		JUMP TO BLOCK #4
+		end
+
+
+		--- BLOCK #3 16-21, warpins: 1 ---
+		slot2 = pg
+		slot2 = slot2.me
+		slot4 = slot2
+		slot2 = slot2.doEvent
+		slot5 = slot0
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #3 ---
+
+		FLOW; TARGET BLOCK #4
+
+
+		--- BLOCK #4 22-22, warpins: 3 ---
+		return
+		--- END OF BLOCK #4 ---
 
 
 
@@ -1666,46 +1706,46 @@ slot17 = function(slot0, slot1, slot2, slot3)
 	slot35 = ActivityConst
 	slot35 = slot35.TaskState
 	slot35 = slot35.Finihed_CanRecv
-	--- END OF BLOCK #31 ---
+	--- END OF BLOCK #32 ---
 
 	if slot20 ~= slot35 then
-	JUMP TO BLOCK #32
-	else
 	JUMP TO BLOCK #33
+	else
+	JUMP TO BLOCK #34
 	end
 
 
-	--- BLOCK #32 277-278, warpins: 1 ---
+	--- BLOCK #33 280-281, warpins: 1 ---
 	slot35 = false
-	--- END OF BLOCK #32 ---
-
-	UNCONDITIONAL JUMP; TARGET BLOCK #34
-
-
-	--- BLOCK #33 279-279, warpins: 1 ---
-	slot35 = true
 	--- END OF BLOCK #33 ---
 
-	FLOW; TARGET BLOCK #34
+	UNCONDITIONAL JUMP; TARGET BLOCK #35
 
 
-	--- BLOCK #34 280-285, warpins: 2 ---
+	--- BLOCK #34 282-282, warpins: 1 ---
+	slot35 = true
+	--- END OF BLOCK #34 ---
+
+	FLOW; TARGET BLOCK #35
+
+
+	--- BLOCK #35 283-288, warpins: 2 ---
 	slot36 = RedDotConst
 	slot36 = slot36.RedDotStyle
 	slot36 = slot36.REWARD
 
 	slot31(slot33, slot34, slot35, slot36)
 
-	--- END OF BLOCK #34 ---
+	--- END OF BLOCK #35 ---
 
 	slot24 = if slot24 then
-	JUMP TO BLOCK #35
-	else
 	JUMP TO BLOCK #36
+	else
+	JUMP TO BLOCK #37
 	end
 
 
-	--- BLOCK #35 286-292, warpins: 1 ---
+	--- BLOCK #36 289-295, warpins: 1 ---
 	slot31 = pg
 	slot31 = slot31.global
 	slot31 = slot31.setRedDot
@@ -1715,12 +1755,12 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 	slot31(slot33, slot34, slot35)
 
-	--- END OF BLOCK #35 ---
+	--- END OF BLOCK #36 ---
 
-	FLOW; TARGET BLOCK #36
+	FLOW; TARGET BLOCK #37
 
 
-	--- BLOCK #36 293-295, warpins: 2 ---
+	--- BLOCK #37 296-298, warpins: 2 ---
 	slot31 = function()
 		--- BLOCK #0 1-9, warpins: 1 ---
 		slot0 = pg
@@ -1742,29 +1782,29 @@ slot17 = function(slot0, slot1, slot2, slot3)
 
 	slot14.luaClick = slot31
 
-	--- END OF BLOCK #36 ---
-
-	FLOW; TARGET BLOCK #37
-
-
-	--- BLOCK #37 296-296, warpins: 2 ---
 	--- END OF BLOCK #37 ---
+
+	FLOW; TARGET BLOCK #38
+
+
+	--- BLOCK #38 299-299, warpins: 2 ---
+	--- END OF BLOCK #38 ---
 
 	for slot9=slot6, slot7, slot8
 	LOOP BLOCK #4
-	GO OUT TO BLOCK #38
+	GO OUT TO BLOCK #39
 
-	--- BLOCK #38 297-298, warpins: 1 ---
+	--- BLOCK #39 300-301, warpins: 1 ---
 	return
-	--- END OF BLOCK #38 ---
+	--- END OF BLOCK #39 ---
 
 
 
 end
 
-slot16.renderTaskItem = slot17
+slot17.renderTaskItem = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-24, warpins: 1 ---
 	slot1 = ClientActivityUtils
 	slot1 = slot1.getCanGetRewardByTaskGroupId
@@ -1800,9 +1840,9 @@ slot17 = function(slot0)
 
 end
 
-slot16._refreshGetAllBtnVisible = slot17
+slot17._refreshGetAllBtnVisible = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot1 = EventAreaActivityData
 	slot2 = slot0.eventPhase
@@ -1991,9 +2031,9 @@ slot17 = function(slot0)
 
 end
 
-slot16._refreshSideBtnVisible = slot17
+slot17._refreshSideBtnVisible = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.refreshUI
@@ -2007,9 +2047,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onRefreshUI = slot17
+slot17.onRefreshUI = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.dismiss
@@ -2023,9 +2063,9 @@ slot17 = function(slot0)
 
 end
 
-slot16.onPlayerTeleport = slot17
+slot17.onPlayerTeleport = slot18
 
-slot17 = function(slot0)
+slot18 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.startTimer
@@ -2087,9 +2127,9 @@ slot17 = function(slot0)
 
 end
 
-slot16._scheduleUnlockTick = slot17
+slot17._scheduleUnlockTick = slot18
 
-return slot16
+return slot17
 --- END OF BLOCK #0 ---
 
 

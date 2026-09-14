@@ -128,7 +128,7 @@ slot11 = function(slot0)
 
 	--- BLOCK #6 21-24, warpins: 1 ---
 	slot3 = CommonSwitch
-	slot3 = slot3.VITALITY
+	slot3 = slot3.COMMONENERGY
 	--- END OF BLOCK #6 ---
 
 	if slot3 ~= false then

@@ -297,9 +297,8 @@ slot3 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #3 10-17, warpins: 1 ---
+	--- BLOCK #3 10-16, warpins: 1 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.modelView
 	slot3 = slot3.shaderView
 	slot5 = slot3
 	slot3 = slot3.EnableChestOutline
@@ -312,7 +311,7 @@ slot3 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #4 18-22, warpins: 1 ---
+	--- BLOCK #4 17-21, warpins: 1 ---
 	slot3 = GhostEyeConst
 	slot3 = slot3.DETECT_ENTITY_EFFECT_TYPE
 	slot3 = slot3.CAMOUFLAGE
@@ -325,7 +324,7 @@ slot3 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #5 23-25, warpins: 1 ---
+	--- BLOCK #5 22-24, warpins: 1 ---
 	slot3 = slot0.setGhostEyeDetected
 	--- END OF BLOCK #5 ---
 
@@ -336,7 +335,7 @@ slot3 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #6 26-30, warpins: 1 ---
+	--- BLOCK #6 25-29, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setGhostEyeDetected
 	slot6 = slot1
@@ -348,7 +347,7 @@ slot3 = function(slot0, slot1, slot2)
 	UNCONDITIONAL JUMP; TARGET BLOCK #9
 
 
-	--- BLOCK #7 31-35, warpins: 1 ---
+	--- BLOCK #7 30-34, warpins: 1 ---
 	slot3 = GhostEyeConst
 	slot3 = slot3.DETECT_ENTITY_EFFECT_TYPE
 	slot3 = slot3.CONGENER
@@ -361,9 +360,8 @@ slot3 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #8 36-42, warpins: 1 ---
+	--- BLOCK #8 35-40, warpins: 1 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.modelView
 	slot3 = slot3.shaderView
 	slot5 = slot3
 	slot3 = slot3.EnableCongenerOutline
@@ -376,7 +374,7 @@ slot3 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #9
 
 
-	--- BLOCK #9 43-43, warpins: 5 ---
+	--- BLOCK #9 41-41, warpins: 5 ---
 	return
 	--- END OF BLOCK #9 ---
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-30, warpins: 1 ---
+--- BLOCK #0 1-43, warpins: 1 ---
 slot0 = {}
 slot1 = require
 slot3 = "Common.Const.Const"
@@ -12,17 +12,26 @@ slot3 = slot3(slot5)
 slot4 = require
 slot6 = "SDK.Platform.PlatformStringVerificationService"
 slot4 = slot4(slot6)
-slot5 = CS
-slot5 = slot5.FunPlus
-slot5 = slot5.WorldX
-slot5 = slot5.SDK
-slot5 = slot5.Platform
-slot5 = slot5.PlatformBridgeLuaFacade
+slot5 = require
+slot7 = "SDK.Platform.PlatformUGCService"
+slot5 = slot5(slot7)
 slot6 = require
-slot8 = "SDK.Platform.PlatformLogger"
+slot8 = "SDK.Platform.PlatformNoticeUtils"
 slot6 = slot6(slot8)
+slot7 = require
+slot9 = "Common.NoticeDef"
+slot7 = slot7(slot9)
+slot8 = CS
+slot8 = slot8.FunPlus
+slot8 = slot8.WorldX
+slot8 = slot8.SDK
+slot8 = slot8.Platform
+slot8 = slot8.PlatformBridgeLuaFacade
+slot9 = require
+slot11 = "SDK.Platform.PlatformLogger"
+slot9 = slot9(slot11)
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot2 = type
 	slot4 = slot1
@@ -207,9 +216,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot0.enrichSenderInfo = slot7
+slot0.enrichSenderInfo = slot10
 
-slot7 = function(slot0, slot1)
+slot10 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -303,45 +312,222 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot0.checkSendMessagePolicy = slot7
+slot0.checkSendMessagePolicy = slot10
 
-slot7 = function(slot0, slot1, slot2, slot3)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot4 = PlatformStringVerificationService
-	slot6 = slot4
-	slot4 = slot4.isSupported
-	slot4 = slot4(slot6)
+slot10 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = PlatformUGCService
+	slot5 = slot3
+	slot3 = slot3.peekLocalPolicy
+	slot3 = slot3(slot5)
+	slot4 = PlatformUGCService
 	--- END OF BLOCK #0 ---
 
-	slot4 = if not slot4 then
+	slot4 = if slot4 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-13, warpins: 1 ---
-	slot6 = slot0
-	slot4 = slot0._sensitiveWordsCheckImpl
-	slot7 = slot1
-	slot8 = slot2
-	slot9 = slot3
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot4 = PlatformUGCService
+	slot4 = slot4.LocalPolicy
+	--- END OF BLOCK #1 ---
 
-	slot4(slot6, slot7, slot8, slot9)
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	slot4 = {}
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-15, warpins: 2 ---
+	slot5 = slot4.Blocked
+	--- END OF BLOCK #3 ---
+
+	if slot3 ~= slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-17, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot3 == "blocked" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-23, warpins: 2 ---
+	slot5 = PlatformNoticeUtils
+	slot5 = slot5.showTextTipById
+	slot7 = NoticeDef
+	slot7 = slot7.PRIVACY_SETTING_MISSMATCH
+
+	slot5(slot7)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-29, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0._createChatGroupImpl
+	slot8 = slot1
+	slot9 = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot0.createChatGroup = slot10
+
+slot10 = function(slot0, slot1, slot2)
+	--- BLOCK #0 1-7, warpins: 1 ---
+	slot3 = PlatformUGCService
+	slot5 = slot3
+	slot3 = slot3.peekLocalPolicy
+	slot3 = slot3(slot5)
+	slot4 = PlatformUGCService
+	--- END OF BLOCK #0 ---
+
+	slot4 = if slot4 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 8-11, warpins: 1 ---
+	slot4 = PlatformUGCService
+	slot4 = slot4.LocalPolicy
+	--- END OF BLOCK #1 ---
+
+	slot4 = if not slot4 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-12, warpins: 2 ---
+	slot4 = {}
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 13-15, warpins: 2 ---
+	slot5 = slot4.Blocked
+	--- END OF BLOCK #3 ---
+
+	if slot3 ~= slot5 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 16-17, warpins: 1 ---
+	--- END OF BLOCK #4 ---
+
+	if slot3 == "blocked" then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
+
+
+	--- BLOCK #5 18-23, warpins: 2 ---
+	slot5 = PlatformNoticeUtils
+	slot5 = slot5.showTextTipById
+	slot7 = NoticeDef
+	slot7 = slot7.PRIVACY_SETTING_MISSMATCH
+
+	slot5(slot7)
+
+	return
+
+	--- END OF BLOCK #5 ---
+
+	FLOW; TARGET BLOCK #6
+
+
+	--- BLOCK #6 24-29, warpins: 2 ---
+	slot7 = slot0
+	slot5 = slot0._setChatGroupStatusImpl
+	slot8 = slot1
+	slot9 = slot2
+
+	slot5(slot7, slot8, slot9)
+
+	return
+	--- END OF BLOCK #6 ---
+
+
+
+end
+
+slot0.setChatGroupStatus = slot10
+
+slot10 = function(slot0, slot1, slot2, slot3, slot4)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot5 = PlatformStringVerificationService
+	slot7 = slot5
+	slot5 = slot5.isSupported
+	slot5 = slot5(slot7)
+	--- END OF BLOCK #0 ---
+
+	slot5 = if not slot5 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 7-14, warpins: 1 ---
+	slot7 = slot0
+	slot5 = slot0._sensitiveWordsCheckImpl
+	slot8 = slot1
+	slot9 = slot2
+	slot10 = slot3
+	slot11 = slot4
+
+	slot5(slot7, slot8, slot9, slot10, slot11)
 
 	--- END OF BLOCK #1 ---
 
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #2 14-22, warpins: 1 ---
-	slot4 = slot0
-	slot5 = PlatformStringVerificationService
-	slot7 = slot5
-	slot5 = slot5.verifyString
-	slot8 = slot1
+	--- BLOCK #2 15-23, warpins: 1 ---
+	slot5 = slot0
+	slot6 = PlatformStringVerificationService
+	slot8 = slot6
+	slot6 = slot6.verifyString
+	slot9 = slot1
 
-	slot9 = function(slot0, slot1, slot2, slot3)
+	slot10 = function(slot0, slot1, slot2, slot3)
 		--- BLOCK #0 1-2, warpins: 1 ---
 		--- END OF BLOCK #0 ---
 
@@ -352,15 +538,16 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #1 3-10, warpins: 1 ---
+		--- BLOCK #1 3-11, warpins: 1 ---
 		slot4 = selfRef
 		slot6 = slot4
 		slot4 = slot4._sensitiveWordsCheckImpl
 		slot7 = text
 		slot8 = success
 		slot9 = failure
+		slot10 = extraInfo
 
-		slot4(slot6, slot7, slot8, slot9)
+		slot4(slot6, slot7, slot8, slot9, slot10)
 
 		return
 
@@ -369,7 +556,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #2
 
 
-		--- BLOCK #2 11-27, warpins: 2 ---
+		--- BLOCK #2 12-28, warpins: 2 ---
 		slot4 = logger
 		slot6 = slot4
 		slot4 = slot4.warn
@@ -394,14 +581,14 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #3 28-28, warpins: 1 ---
+		--- BLOCK #3 29-29, warpins: 1 ---
 		slot13 = ""
 		--- END OF BLOCK #3 ---
 
 		FLOW; TARGET BLOCK #4
 
 
-		--- BLOCK #4 29-42, warpins: 2 ---
+		--- BLOCK #4 30-43, warpins: 2 ---
 		MULTRES = slot11(slot13)
 
 		slot4(slot6, slot7, slot8, slot9, slot10, MULTRES)
@@ -427,7 +614,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		end
 
 
-		--- BLOCK #5 43-48, warpins: 1 ---
+		--- BLOCK #5 44-49, warpins: 1 ---
 		slot4 = failure
 		slot6 = Const
 		slot6 = slot6.RISK_LEVEL
@@ -441,7 +628,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 		FLOW; TARGET BLOCK #6
 
 
-		--- BLOCK #6 49-49, warpins: 2 ---
+		--- BLOCK #6 50-50, warpins: 2 ---
 		return
 		--- END OF BLOCK #6 ---
 
@@ -449,7 +636,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 	end
 
-	slot5(slot7, slot8, slot9)
+	slot6(slot8, slot9, slot10)
 
 	return
 	--- END OF BLOCK #2 ---
@@ -457,7 +644,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 23-23, warpins: 2 ---
+	--- BLOCK #3 24-24, warpins: 2 ---
 	return
 	--- END OF BLOCK #3 ---
 
@@ -465,7 +652,7 @@ slot7 = function(slot0, slot1, slot2, slot3)
 
 end
 
-slot0.sensitiveWordsCheck = slot7
+slot0.sensitiveWordsCheck = slot10
 
 return slot0
 --- END OF BLOCK #0 ---

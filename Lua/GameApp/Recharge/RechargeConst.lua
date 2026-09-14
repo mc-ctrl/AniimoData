@@ -1,8 +1,9 @@
---- BLOCK #0 1-13, warpins: 1 ---
+--- BLOCK #0 1-15, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Const.Const"
 slot0 = slot0(slot2)
 slot1 = {
+	PAYMENT_TIMEOUT_SEC = 30,
 	ORDER_TIMEOUT_SEC = 30
 }
 slot2 = {
@@ -20,6 +21,12 @@ slot2 = {
 slot1.STATE = slot2
 slot2 = slot0.RECHARGE_TYPE
 slot1.RECHARGE_TYPE = slot2
+slot2 = {
+	["apple.official.Iwdfss"] = true,
+	["rustore-pay.official.A5yuvm"] = true,
+	["google.official.Aof9mf"] = true
+}
+slot1.RUSSIAN_THIRD_PARTY_PAY_CHANNELS = slot2
 slot2 = {
 	NORMAL = 1,
 	ADD = 3,

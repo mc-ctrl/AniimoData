@@ -1,58 +1,12 @@
---- BLOCK #0 1-39, warpins: 1 ---
+--- BLOCK #0 1-28, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {
-	"Event_PER_LeaveAndStare"
-}
+slot1 = {}
+slot2 = slot0.SafeCall
+slot3 = slot0.DoAction
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -82,9 +36,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeEventTrigger = slot7
+slot1.executeEventTrigger = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -134,9 +88,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -166,9 +120,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -269,9 +223,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_11_0 = slot7
+slot1._to_11_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -389,43 +343,15 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_12_0 = slot7
+slot1._to_12_0 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-13, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 17
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "SendMessageToTrigger"
-	slot7 = 0
-	slot8 = 1014
-
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
-
-	slot1 = true
-
-	return slot1
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_17_0 = slot7
-
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.addTimer
 	slot4 = 1
 	slot5 = _M
-	slot6 = "_to_17_0"
+	slot6 = "_to_19_0"
 	slot7 = slot0
 
 	slot1(slot3, slot4, slot5, slot6, slot7)
@@ -441,9 +367,44 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_18_0 = slot7
+slot1._to_18_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
+	--- BLOCK #0 1-20, warpins: 1 ---
+	slot3 = slot0
+	slot1 = slot0.setActive
+
+	slot1(slot3)
+
+	slot1 = _C
+	slot3 = 20
+	slot4 = "GetSelfId"
+	slot5 = slot0
+	slot1 = slot1(slot3, slot4, slot5)
+	slot2 = _M
+	slot2 = slot2._get_10_2
+	slot4 = slot0
+	slot2 = slot2(slot4)
+	slot3 = _A
+	slot5 = slot0
+	slot6 = "SendMessageToTriggerSpecial"
+	slot7 = slot1
+	slot8 = slot2
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = true
+
+	return slot3
+	--- END OF BLOCK #0 ---
+
+
+
+end
+
+slot1._to_19_0 = slot4
+
+slot4 = function(slot0)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getContextValue
@@ -456,9 +417,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_10_2 = slot7
+slot1._get_10_2 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSubMacro
@@ -492,9 +453,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_13_3 = slot7
+slot1._get_13_3 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getSubMacro
@@ -528,9 +489,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_13_1 = slot7
+slot1._get_13_1 = slot4
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

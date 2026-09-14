@@ -11,7 +11,7 @@ slot5 = slot1
 slot2 = slot2(slot4, slot5)
 
 slot3 = function(slot0)
-	--- BLOCK #0 1-67, warpins: 1 ---
+	--- BLOCK #0 1-77, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -78,6 +78,16 @@ slot3 = function(slot0)
 	slot5 = "placeHolderUSDFText"
 	slot2 = slot2(slot4, slot5)
 	slot0.placeHolderUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "groupNameHolderUSDFText"
+	slot2 = slot2(slot4, slot5)
+	slot0.groupNameHolderUSDFText = slot2
+	slot4 = slot1
+	slot2 = slot1.GetRefValue
+	slot5 = "btnSearchUButton"
+	slot2 = slot2(slot4, slot5)
+	slot0.btnSearchUButton = slot2
 
 	return
 	--- END OF BLOCK #0 ---

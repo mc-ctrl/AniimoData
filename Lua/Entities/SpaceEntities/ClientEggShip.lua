@@ -264,10 +264,9 @@ end
 slot8.on_finishEggTask_changed = slot11
 
 slot11 = function(slot0, slot1, slot2)
-	--- BLOCK #0 1-18, warpins: 1 ---
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot3 = slot0.eModel
-	slot3 = slot3.modelComponent
-	slot3 = slot3.modelView
+	slot3 = slot3.modelModelView
 	slot4 = ClientModelUtils
 	slot4 = slot4.applyModelAppearance
 	slot6 = slot3.modelInfo
@@ -294,7 +293,7 @@ slot11 = function(slot0, slot1, slot2)
 	end
 
 
-	--- BLOCK #1 19-22, warpins: 1 ---
+	--- BLOCK #1 18-21, warpins: 1 ---
 	slot6 = slot0
 	slot4 = slot0.playEffect
 	slot7 = "Eff_Env_GrabEgg_Indication_RVArrow"
@@ -306,7 +305,7 @@ slot11 = function(slot0, slot1, slot2)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 23-23, warpins: 2 ---
+	--- BLOCK #2 22-22, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 

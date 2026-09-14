@@ -1,8 +1,8 @@
---- BLOCK #0 1-28, warpins: 1 ---
+--- BLOCK #0 1-30, warpins: 1 ---
 slot0 = {}
 slot0.__index = slot0
 
-slot1 = function(slot0)
+slot1 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -21,12 +21,12 @@ slot1 = function(slot0)
 
 
 	--- BLOCK #2 4-8, warpins: 2 ---
-	slot1 = type
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot2 = type
+	slot4 = slot0
+	slot2 = slot2(slot4)
 	--- END OF BLOCK #2 ---
 
-	if slot1 == "number" then
+	if slot2 == "number" then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
@@ -34,10 +34,10 @@ slot1 = function(slot0)
 
 
 	--- BLOCK #3 9-11, warpins: 1 ---
-	slot1 = 0
+	slot2 = 0
 	--- END OF BLOCK #3 ---
 
-	if slot0 <= slot1 then
+	if slot0 <= slot2 then
 	JUMP TO BLOCK #4
 	else
 	JUMP TO BLOCK #5
@@ -45,34 +45,59 @@ slot1 = function(slot0)
 
 
 	--- BLOCK #4 12-14, warpins: 2 ---
-	slot1 = error
-	slot3 = "队列大小必须是正数"
+	slot2 = error
+	slot4 = "队列大小必须是正数"
 
-	slot1(slot3)
+	slot2(slot4)
 
 	--- END OF BLOCK #4 ---
 
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 15-23, warpins: 2 ---
-	slot1 = {
-		head = 1,
+	--- BLOCK #5 15-20, warpins: 2 ---
+	slot2 = {
 		counter = 0,
 		count = 0,
-		tail = 1
+		tail = 1,
+		head = 1
 	}
-	slot2 = {}
-	slot1.data = slot2
-	slot1.capacity = slot0
-	slot2 = setmetatable
-	slot4 = slot1
-	slot5 = CircularQueue
-
-	slot2(slot4, slot5)
-
-	return slot1
+	slot3 = {}
+	slot2.data = slot3
+	slot2.capacity = slot0
 	--- END OF BLOCK #5 ---
+
+	if slot1 ~= true then
+	JUMP TO BLOCK #6
+	else
+	JUMP TO BLOCK #7
+	end
+
+
+	--- BLOCK #6 21-22, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #6 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #8
+
+
+	--- BLOCK #7 23-23, warpins: 1 ---
+	slot3 = true
+	--- END OF BLOCK #7 ---
+
+	FLOW; TARGET BLOCK #8
+
+
+	--- BLOCK #8 24-29, warpins: 2 ---
+	slot2.fixedCapacity = slot3
+	slot3 = setmetatable
+	slot5 = slot2
+	slot6 = CircularQueue
+
+	slot3(slot5, slot6)
+
+	return slot2
+	--- END OF BLOCK #8 ---
 
 
 
@@ -142,6 +167,42 @@ end
 
 slot0.pop = slot1
 
+slot1 = function(slot0)
+	--- BLOCK #0 1-3, warpins: 1 ---
+	slot1 = slot0.count
+	--- END OF BLOCK #0 ---
+
+	if slot1 == 0 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 4-5, warpins: 1 ---
+	slot1 = nil
+
+	return slot1
+
+	--- END OF BLOCK #1 ---
+
+	FLOW; TARGET BLOCK #2
+
+
+	--- BLOCK #2 6-9, warpins: 2 ---
+	slot1 = slot0.data
+	slot2 = slot0.head
+	slot1 = slot1[slot2]
+
+	return slot1
+	--- END OF BLOCK #2 ---
+
+
+
+end
+
+slot0.peek = slot1
+
 slot1 = function(slot0, slot1)
 	--- BLOCK #0 1-4, warpins: 1 ---
 	slot2 = slot0.count
@@ -151,11 +212,46 @@ slot1 = function(slot0, slot1)
 	if slot3 <= slot2 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #4
+	JUMP TO BLOCK #6
 	end
 
 
-	--- BLOCK #1 5-20, warpins: 1 ---
+	--- BLOCK #1 5-7, warpins: 1 ---
+	slot2 = slot0.fixedCapacity
+	--- END OF BLOCK #1 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 8-23, warpins: 1 ---
+	slot2 = slot0.data
+	slot3 = slot0.tail
+	slot2 = slot2[slot3]
+	slot3 = slot0.data
+	slot4 = slot0.tail
+	slot3[slot4] = slot1
+	slot3 = slot0.tail
+	slot4 = slot0.capacity
+	slot3 = slot3 % slot4
+	slot3 = slot3 + 1
+	slot0.tail = slot3
+	slot3 = slot0.tail
+	slot0.head = slot3
+	slot3 = true
+	slot4 = slot2
+
+	return slot3, slot4
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 24-39, warpins: 2 ---
 	slot2 = math
 	slot2 = slot2.max
 	slot4 = math
@@ -171,25 +267,25 @@ slot1 = function(slot0, slot1)
 	slot5 = 1
 	slot6 = slot0.count
 	slot7 = 1
-	--- END OF BLOCK #1 ---
+	--- END OF BLOCK #3 ---
 
-	FLOW; TARGET BLOCK #2
+	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #2 21-27, warpins: 2 ---
+	--- BLOCK #4 40-46, warpins: 2 ---
 	slot9 = slot0.data
 	slot9 = slot9[slot4]
 	slot3[slot8] = slot9
 	slot9 = slot0.capacity
 	slot9 = slot4 % slot9
 	slot4 = slot9 + 1
-	--- END OF BLOCK #2 ---
+	--- END OF BLOCK #4 ---
 
 	for slot8=slot5, slot6, slot7
-	LOOP BLOCK #2
-	GO OUT TO BLOCK #3
+	LOOP BLOCK #4
+	GO OUT TO BLOCK #5
 
-	--- BLOCK #3 28-34, warpins: 1 ---
+	--- BLOCK #5 47-53, warpins: 1 ---
 	slot0.data = slot3
 	slot0.capacity = slot2
 	slot5 = 1
@@ -197,12 +293,12 @@ slot1 = function(slot0, slot1)
 	slot5 = slot0.count
 	slot5 = slot5 + 1
 	slot0.tail = slot5
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #5 ---
 
-	FLOW; TARGET BLOCK #4
+	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #4 35-47, warpins: 2 ---
+	--- BLOCK #6 54-66, warpins: 2 ---
 	slot2 = slot0.data
 	slot3 = slot0.tail
 	slot2[slot3] = slot1
@@ -217,7 +313,7 @@ slot1 = function(slot0, slot1)
 	slot2 = true
 
 	return slot2
-	--- END OF BLOCK #4 ---
+	--- END OF BLOCK #6 ---
 
 
 

@@ -1,4 +1,4 @@
---- BLOCK #0 1-3280, warpins: 1 ---
+--- BLOCK #0 1-3304, warpins: 1 ---
 slot0 = require
 slot2 = "Common.Data.BehaviacData.BaseEnum.BaseEnum"
 slot0 = slot0(slot2)
@@ -7,26 +7,26 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	useForRoute = false,
-	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10187_GDC_Rogue",
+	version = 25,
 	agenttype = "PuppetAgent",
-	version = 19
+	useForRoute = false,
+	name = "CombatUnit/Monster/Root/Combat/ST_Monster_AutoCombat_Boss_10187_GDC_Rogue"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "disToTgtForSkillMon",
-	const = 0,
+	type = "float",
 	value = "0",
-	type = "float"
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
 	name = "goBackDist",
-	const = 0,
+	type = "float",
 	value = "0",
-	type = "float"
+	const = 0
 }
 slot4[2] = slot5
 slot3.pars = slot4
@@ -756,6 +756,41 @@ slot39.node = slot40
 slot38[2] = slot39
 slot39 = {}
 slot40 = {
+	id = "354",
+	class = "Condition"
+}
+slot41 = {}
+slot42 = {
+	Operator = "LessEqual"
+}
+slot41[1] = slot42
+slot42 = {}
+slot43 = {
+	func = "getHpPercent"
+}
+slot44 = {}
+slot45 = {
+	field = "selfId"
+}
+slot44[1] = slot45
+slot43.params = slot44
+slot42.Opl = slot43
+slot41[2] = slot42
+slot42 = {}
+slot43 = {
+	const = 0.5
+}
+slot42.Opr = slot43
+slot41[3] = slot42
+slot40.properties = slot41
+slot41 = {}
+slot40.attachments = slot41
+slot41 = {}
+slot40.children = slot41
+slot39.node = slot40
+slot38[3] = slot39
+slot39 = {}
+slot40 = {
 	id = "303",
 	class = "Selector"
 }
@@ -836,7 +871,7 @@ slot42.node = slot43
 slot41[2] = slot42
 slot40.children = slot41
 slot39.node = slot40
-slot38[3] = slot39
+slot38[4] = slot39
 slot39 = {}
 slot40 = {
 	id = "299",
@@ -890,7 +925,7 @@ slot40.attachments = slot41
 slot41 = {}
 slot40.children = slot41
 slot39.node = slot40
-slot38[4] = slot39
+slot38[5] = slot39
 slot39 = {}
 slot40 = {
 	id = "300",
@@ -923,7 +958,7 @@ slot40.attachments = slot41
 slot41 = {}
 slot40.children = slot41
 slot39.node = slot40
-slot38[5] = slot39
+slot38[6] = slot39
 slot37.children = slot38
 slot36.node = slot37
 slot35[1] = slot36
@@ -4137,11 +4172,11 @@ slot35 = {}
 slot34.properties = slot35
 slot35 = {}
 slot36 = {
+	id = "135",
+	class = "Precondition",
 	transition = false,
 	effector = false,
-	precondition = true,
-	id = "135",
-	class = "Precondition"
+	precondition = true
 }
 slot37 = {}
 slot38 = {
@@ -4261,11 +4296,11 @@ slot47 = {}
 slot46.properties = slot47
 slot47 = {}
 slot48 = {
+	id = "104",
+	class = "Precondition",
 	transition = false,
 	effector = false,
-	precondition = true,
-	id = "104",
-	class = "Precondition"
+	precondition = true
 }
 slot49 = {}
 slot50 = {
@@ -4399,11 +4434,11 @@ slot47 = {}
 slot46.properties = slot47
 slot47 = {}
 slot48 = {
+	id = "109",
+	class = "Precondition",
 	transition = false,
 	effector = false,
-	precondition = true,
-	id = "109",
-	class = "Precondition"
+	precondition = true
 }
 slot49 = {}
 slot50 = {

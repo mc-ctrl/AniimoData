@@ -164,7 +164,7 @@ end
 slot5.addListener = slot16
 
 slot16 = function(slot0)
-	--- BLOCK #0 1-14, warpins: 1 ---
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = slot0.view
 	slot1 = slot1.rootUComponent
 	slot3 = slot1
@@ -201,8 +201,62 @@ slot16 = function(slot0)
 
 	slot1(slot3, slot4, slot5)
 
-	return
+	slot1 = pg
+	slot1 = slot1.me
+	slot1 = slot1.rogueUltimateSeries
+	slot2 = 0
 	--- END OF BLOCK #0 ---
+
+	if slot1 < slot2 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 19-20, warpins: 1 ---
+	slot1 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 21-21, warpins: 1 ---
+	slot1 = true
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 22-25, warpins: 2 ---
+	slot2 = slot0.view
+	slot2 = slot2.skillEmpty
+	--- END OF BLOCK #3 ---
+
+	slot2 = if slot2 then
+	JUMP TO BLOCK #4
+	else
+	JUMP TO BLOCK #5
+	end
+
+
+	--- BLOCK #4 26-31, warpins: 1 ---
+	slot2 = LuaUIUtils
+	slot2 = slot2.setUIVisible
+	slot4 = slot0.view
+	slot4 = slot4.skillEmpty
+	slot5 = not slot1
+
+	slot2(slot4, slot5)
+
+	--- END OF BLOCK #4 ---
+
+	FLOW; TARGET BLOCK #5
+
+
+	--- BLOCK #5 32-33, warpins: 2 ---
+	return
+	--- END OF BLOCK #5 ---
 
 
 
@@ -214,8 +268,8 @@ slot16 = function(slot0, slot1)
 	--- BLOCK #0 1-52, warpins: 1 ---
 	slot2 = {}
 	slot3 = {
-		tIndex = 0,
-		selected = true
+		selected = true,
+		tIndex = 0
 	}
 	slot4 = pg
 	slot4 = slot4.getGameString
@@ -287,7 +341,16 @@ slot16 = function(slot0, slot1)
 		end
 
 
-		--- BLOCK #1 15-19, warpins: 1 ---
+		--- BLOCK #1 15-26, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.buffDetailEmptyUWidget
+		slot4 = slot2
+		slot2 = slot2.SetActive
+		slot5 = false
+
+		slot2(slot4, slot5)
+
 		slot2 = self
 		slot4 = slot2
 		slot2 = slot2.showRogueSkill
@@ -296,10 +359,10 @@ slot16 = function(slot0, slot1)
 
 		--- END OF BLOCK #1 ---
 
-		UNCONDITIONAL JUMP; TARGET BLOCK #3
+		UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-		--- BLOCK #2 20-25, warpins: 1 ---
+		--- BLOCK #2 27-32, warpins: 1 ---
 		slot2 = slot1.tab
 		slot3 = self
 		slot3 = slot3.TitleTab
@@ -309,17 +372,51 @@ slot16 = function(slot0, slot1)
 		if slot2 == slot3 then
 		JUMP TO BLOCK #3
 		else
-		JUMP TO BLOCK #3
+		JUMP TO BLOCK #6
 		end
 
 
-		--- BLOCK #3 26-26, warpins: 1 ---
+		--- BLOCK #3 33-37, warpins: 1 ---
+		slot2 = self
+		slot2 = slot2.view
+		slot2 = slot2.skillEmpty
 		--- END OF BLOCK #3 ---
 
-		FLOW; TARGET BLOCK #3
+		slot2 = if slot2 then
+		JUMP TO BLOCK #4
+		else
+		JUMP TO BLOCK #5
+		end
 
 
-		--- BLOCK #3 26-30, warpins: 3 ---
+		--- BLOCK #4 38-44, warpins: 1 ---
+		slot2 = LuaUIUtils
+		slot2 = slot2.setUIVisible
+		slot4 = self
+		slot4 = slot4.view
+		slot4 = slot4.skillEmpty
+		slot5 = false
+
+		slot2(slot4, slot5)
+
+		--- END OF BLOCK #4 ---
+
+		FLOW; TARGET BLOCK #5
+
+
+		--- BLOCK #5 45-48, warpins: 2 ---
+		slot2 = self
+		slot4 = slot2
+		slot2 = slot2.refreshBuffList
+
+		slot2(slot4)
+
+		--- END OF BLOCK #5 ---
+
+		FLOW; TARGET BLOCK #6
+
+
+		--- BLOCK #6 49-53, warpins: 3 ---
 		slot2 = self
 		slot4 = slot2
 		slot2 = slot2.refreshConsoleBarState
@@ -327,7 +424,7 @@ slot16 = function(slot0, slot1)
 		slot2(slot4)
 
 		return
-		--- END OF BLOCK #3 ---
+		--- END OF BLOCK #6 ---
 
 
 

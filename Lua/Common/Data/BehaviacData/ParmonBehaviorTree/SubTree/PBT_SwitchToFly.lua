@@ -8,8 +8,8 @@ slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/PBT_SwitchToFly",
 	agenttype = "CombatAgent",
+	name = "ParmonBehaviorTree/SubTree/PBT_SwitchToFly",
 	version = 6
 }
 slot4 = {}
@@ -17,16 +17,16 @@ slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "tFlyHeight",
+	value = "3",
 	const = 3,
-	type = "float",
-	value = "3"
+	type = "float"
 }
 slot4[1] = slot5
 slot5 = {
 	name = "tMaxTime",
+	value = "5",
 	const = 5,
-	type = "float",
-	value = "5"
+	type = "float"
 }
 slot4[2] = slot5
 slot3.pars = slot4

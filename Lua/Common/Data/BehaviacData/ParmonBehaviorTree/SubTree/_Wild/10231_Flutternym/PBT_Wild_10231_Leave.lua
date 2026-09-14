@@ -7,38 +7,38 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "CombatAgent",
 	version = 8,
+	useForRoute = false,
 	name = "ParmonBehaviorTree/SubTree/_Wild/10231_Flutternym/PBT_Wild_10231_Leave",
-	useForRoute = false
+	agenttype = "CombatAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
-	name = "tTargetActorId",
 	type = "int",
-	value = "0",
-	const = 0
+	const = 0,
+	name = "tTargetActorId",
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
-	name = "tLeaveDistance",
 	type = "float",
-	value = "5",
-	const = 5
+	const = 5,
+	name = "tLeaveDistance",
+	value = "5"
 }
 slot4[2] = slot5
 slot5 = {
-	name = "tSpeed",
 	type = "float",
-	value = "4",
-	const = 4
+	const = 4,
+	name = "tSpeed",
+	value = "4"
 }
 slot4[3] = slot5
 slot5 = {
-	name = "tSpeedRateType",
 	type = "SpeedRateType",
+	name = "tSpeedRateType",
 	value = "Mid"
 }
 slot6 = slot0.SpeedRateType
@@ -46,10 +46,10 @@ slot6 = slot6.Mid
 slot5.const = slot6
 slot4[4] = slot5
 slot5 = {
-	name = "tMaxTime",
 	type = "float",
-	value = "10",
-	const = 10
+	const = 10,
+	name = "tMaxTime",
+	value = "10"
 }
 slot4[5] = slot5
 slot3.pars = slot4

@@ -24,7 +24,7 @@ slot7 = "Common.Const.Const"
 slot5 = slot5(slot7)
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-31, warpins: 1 ---
+	--- BLOCK #0 1-25, warpins: 1 ---
 	slot1 = slot0.transform
 	slot3 = slot1
 	slot1 = slot1.GetComponent
@@ -46,12 +46,6 @@ slot6 = function(slot0)
 	slot1 = slot0.objectReference
 	slot3 = slot1
 	slot1 = slot1.GetRefValue
-	slot4 = "btnConfirmUButton"
-	slot1 = slot1(slot3, slot4)
-	slot0.btnConfirmUButton = slot1
-	slot1 = slot0.objectReference
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
 	slot4 = "btnCloseUButton"
 	slot1 = slot1(slot3, slot4)
 	slot0.btnCloseUButton = slot1
@@ -66,7 +60,7 @@ end
 slot2.findObjects = slot6
 
 slot6 = function(slot0)
-	--- BLOCK #0 1-49, warpins: 1 ---
+	--- BLOCK #0 1-27, warpins: 1 ---
 	slot1 = nil
 	slot0.selectedMessageData = slot1
 	slot1 = slot0.btnCloseUButton
@@ -113,109 +107,6 @@ slot6 = function(slot0)
 	end
 
 	slot1.luaClick = slot2
-	slot1 = slot0.btnConfirmUButton
-
-	slot2 = function()
-		--- BLOCK #0 1-4, warpins: 1 ---
-		slot0 = self
-		slot0 = slot0.selectedMessageData
-
-		--- END OF BLOCK #0 ---
-
-		slot0 = if not slot0 then
-		JUMP TO BLOCK #1
-		else
-		JUMP TO BLOCK #2
-		end
-
-
-		--- BLOCK #1 5-5, warpins: 1 ---
-		return
-
-		--- END OF BLOCK #1 ---
-
-		FLOW; TARGET BLOCK #2
-
-
-		--- BLOCK #2 6-29, warpins: 2 ---
-		slot0 = self
-		slot0 = slot0.selectedMessageData
-		slot0 = slot0.textContent
-		slot1 = self
-		slot1 = slot1.selectedMessageData
-		slot1 = slot1.subType
-		slot2 = self
-		slot2 = slot2.selectedMessageData
-		slot2 = slot2.extraInfo
-		slot3 = self
-		slot3 = slot3.view
-		slot3 = slot3.channelListUList
-		slot3 = slot3.selectedItem
-		slot4 = pg
-		slot4 = slot4.game
-		slot4 = slot4.chat
-		slot6 = slot4
-		slot4 = slot4.sendMessage
-		slot7 = slot0
-		slot8 = slot1
-		slot9 = slot3.type
-		slot10 = slot3.channelId
-		--- END OF BLOCK #2 ---
-
-		slot10 = if not slot10 then
-		JUMP TO BLOCK #3
-		else
-		JUMP TO BLOCK #4
-		end
-
-
-		--- BLOCK #3 30-30, warpins: 1 ---
-		slot10 = slot3.playerId
-		--- END OF BLOCK #3 ---
-
-		FLOW; TARGET BLOCK #4
-
-
-		--- BLOCK #4 31-37, warpins: 2 ---
-		slot11 = slot2
-
-		slot4(slot6, slot7, slot8, slot9, slot10, slot11)
-
-		slot4 = self
-		slot4 = slot4.btnCloseUButton
-		slot4 = slot4.luaClick
-
-		slot4()
-
-		return
-		--- END OF BLOCK #4 ---
-
-
-
-	end
-
-	slot1.luaClick = slot2
-	slot1 = slot0.btnConfirmUButton
-	slot1 = slot1.transform
-	slot3 = slot1
-	slot1 = slot1.GetComponent
-	slot4 = "ObjectReference"
-	slot1 = slot1(slot3, slot4)
-	slot3 = slot1
-	slot1 = slot1.GetRefValue
-	slot4 = "txtNameUText"
-	slot1 = slot1(slot3, slot4)
-	slot0.confirmText = slot1
-	slot1 = ClientTextUtils
-	slot1 = slot1.setText
-	slot3 = slot0.confirmText
-	slot4 = pg
-	slot4 = slot4.getGameString
-	slot6 = "COMMON_CONFIRM"
-	MULTRES = slot4(slot6)
-
-	slot1(slot3, MULTRES)
-
 	slot1 = KeyBindingPro
 	slot1 = slot1.GetOrAddKeyBindingByName
 	slot3 = slot0.btnCloseUButton
@@ -346,14 +237,80 @@ slot6 = function(slot0)
 
 
 		--- BLOCK #6 51-54, warpins: 2 ---
-		slot5 = function()
-			--- BLOCK #0 1-4, warpins: 1 ---
-			slot0 = self
-			slot1 = data
-			slot0.selectedMessageData = slot1
+		slot5 = function(slot0)
+			--- BLOCK #0 1-2, warpins: 1 ---
+			--- END OF BLOCK #0 ---
+
+			slot0 = if slot0 then
+			JUMP TO BLOCK #1
+			else
+			JUMP TO BLOCK #2
+			end
+
+
+			--- BLOCK #1 3-3, warpins: 1 ---
+			return
+
+			--- END OF BLOCK #1 ---
+
+			FLOW; TARGET BLOCK #2
+
+
+			--- BLOCK #2 4-30, warpins: 2 ---
+			slot1 = self
+			slot2 = data
+			slot1.selectedMessageData = slot2
+			slot1 = self
+			slot1 = slot1.selectedMessageData
+			slot1 = slot1.textContent
+			slot2 = self
+			slot2 = slot2.selectedMessageData
+			slot2 = slot2.subType
+			slot3 = self
+			slot3 = slot3.selectedMessageData
+			slot3 = slot3.extraInfo
+			slot4 = self
+			slot4 = slot4.view
+			slot4 = slot4.channelListUList
+			slot4 = slot4.selectedItem
+			slot5 = pg
+			slot5 = slot5.game
+			slot5 = slot5.chat
+			slot7 = slot5
+			slot5 = slot5.sendMessage
+			slot8 = slot1
+			slot9 = slot2
+			slot10 = slot4.type
+			slot11 = slot4.channelId
+			--- END OF BLOCK #2 ---
+
+			slot11 = if not slot11 then
+			JUMP TO BLOCK #3
+			else
+			JUMP TO BLOCK #4
+			end
+
+
+			--- BLOCK #3 31-31, warpins: 1 ---
+			slot11 = slot4.playerId
+			--- END OF BLOCK #3 ---
+
+			FLOW; TARGET BLOCK #4
+
+
+			--- BLOCK #4 32-38, warpins: 2 ---
+			slot12 = slot3
+
+			slot5(slot7, slot8, slot9, slot10, slot11, slot12)
+
+			slot5 = self
+			slot5 = slot5.btnCloseUButton
+			slot5 = slot5.luaClick
+
+			slot5()
 
 			return
-			--- END OF BLOCK #0 ---
+			--- END OF BLOCK #4 ---
 
 
 

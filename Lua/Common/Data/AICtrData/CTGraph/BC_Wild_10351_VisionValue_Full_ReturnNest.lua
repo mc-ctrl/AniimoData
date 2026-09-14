@@ -1,58 +1,14 @@
---- BLOCK #0 1-127, warpins: 1 ---
+--- BLOCK #0 1-74, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {}
+slot1 = {}
+slot2 = slot0.SafeCall
+slot3 = slot0.DoPatrolBehavior
+slot4 = slot0.DoAction
+slot5 = slot0.BeginBehaviourV2
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {
-	"VisionValue_Full"
-}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -63,18 +19,62 @@ slot7 = function(slot0, slot1)
 	end
 
 
-	--- BLOCK #1 3-6, warpins: 1 ---
-	slot2 = _M
-	slot2 = slot2._to_65_0
+	--- BLOCK #1 3-38, warpins: 1 ---
 	slot4 = slot0
+	slot2 = slot0.setActive
 
-	return slot2(slot4)
+	slot2(slot4)
+
+	slot2 = _A
+	slot4 = slot0
+	slot5 = "AddAITag"
+	slot6 = 0
+	slot7 = "TA_VisionFull"
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot4 = slot0
+	slot2 = slot0.setActive
+
+	slot2(slot4)
+
+	slot2 = _A
+	slot4 = slot0
+	slot5 = "RemoveAITag"
+	slot6 = 0
+	slot7 = "TA_VisionAlert"
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot4 = slot0
+	slot2 = slot0.setActive
+
+	slot2(slot4)
+
+	slot2 = _C
+	slot4 = 72
+	slot5 = "GetSelfId"
+	slot6 = slot0
+	slot2 = slot2(slot4, slot5, slot6)
+	slot3 = _A
+	slot5 = slot0
+	slot6 = "HideEmojiOnTarget"
+	slot7 = slot2
+	slot8 = ""
+
+	slot3(slot5, slot6, slot7, slot8)
+
+	slot3 = _M
+	slot3 = slot3._to_63_0
+	slot5 = slot0
+
+	return slot3(slot5)
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 7-7, warpins: 2 ---
+	--- BLOCK #2 39-39, warpins: 2 ---
 	return
 	--- END OF BLOCK #2 ---
 
@@ -82,24 +82,39 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeMessageTrigger = slot7
+slot1.executeMessageTrigger = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._to_138_0
+slot6 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot3 = slot0
+	slot1 = slot0.setActive
 
-	return slot1(slot3)
+	slot1(slot3)
+
+	slot1 = _M
+	slot1 = slot1._get_111_1
+	slot3 = slot0
+	slot1 = slot1(slot3)
+	slot2 = _A
+	slot4 = slot0
+	slot5 = "RemoveAITag"
+	slot6 = slot1
+	slot7 = "TE_Env_BeUsed"
+
+	slot2(slot4, slot5, slot6, slot7)
+
+	slot2 = true
+
+	return slot2
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2.executeEndTrigger = slot7
+slot1.executeEndTrigger = slot6
 
-slot7 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -235,9 +250,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot6
 
-slot7 = function(slot0, slot1)
+slot6 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -246,22 +261,25 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot6 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_SwitchState"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -269,20 +287,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-35, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 63
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_SwitchState"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-29, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -320,106 +325,12 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_63_0 = slot7
+slot1._to_63_0 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 65
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "AddAITag"
-	slot7 = 0
-	slot8 = "TA_VisionFull"
-
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
-
-	slot1 = _M
-	slot1 = slot1._to_66_0
-	slot3 = slot0
-
-	return slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_65_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 66
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "RemoveAITag"
-	slot7 = 0
-	slot8 = "TA_VisionAlert"
-
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
-
-	slot1 = _M
-	slot1 = slot1._to_71_0
-	slot3 = slot0
-
-	return slot1(slot3)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_66_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-19, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_72_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 71
-	slot5 = "DoAction"
-	slot6 = slot0
-	slot7 = "HideEmojiOnTarget"
-	slot8 = slot1
-	slot9 = ""
-
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
-
-	slot2 = _M
-	slot2 = slot2._to_63_0
-	slot4 = slot0
-
-	return slot2(slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._to_71_0 = slot7
-
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
-	slot1 = slot1._get_109_1
+	slot1 = slot1._get_100_3
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	--- END OF BLOCK #0 ---
@@ -427,110 +338,112 @@ slot7 = function(slot0)
 	slot1 = if slot1 then
 	JUMP TO BLOCK #1
 	else
-	JUMP TO BLOCK #2
+	JUMP TO BLOCK #3
 	end
 
 
-	--- BLOCK #1 7-26, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setActive
-
-	slot2(slot4)
-
-	slot2 = _M
-	slot2 = slot2._get_111_1
-	slot4 = slot0
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot2 = next
+	slot4 = slot1
 	slot2 = slot2(slot4)
-	slot3 = _C
-	slot5 = 135
-	slot6 = "DoAction"
-	slot7 = slot0
-	slot8 = "AddEntityTag"
-	slot9 = slot2
-	slot10 = "TE_Env_BeUsed"
-
-	slot3(slot5, slot6, slot7, slot8, slot9, slot10)
-
-	slot3 = _M
-	slot3 = slot3._to_199_0
-	slot5 = slot0
-
-	return slot3(slot5)
-
 	--- END OF BLOCK #1 ---
 
-	UNCONDITIONAL JUMP; TARGET BLOCK #3
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
 
 
-	--- BLOCK #2 27-29, warpins: 1 ---
-	slot4 = slot0
-	slot2 = slot0.setActiveFail
-
-	slot2(slot4)
-
+	--- BLOCK #2 12-13, warpins: 1 ---
+	slot2 = false
 	--- END OF BLOCK #2 ---
 
-	FLOW; TARGET BLOCK #3
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
 
 
-	--- BLOCK #3 30-30, warpins: 2 ---
-	return
+	--- BLOCK #3 14-14, warpins: 2 ---
+	slot2 = true
 	--- END OF BLOCK #3 ---
 
+	FLOW; TARGET BLOCK #4
 
 
-end
+	--- BLOCK #4 15-17, warpins: 2 ---
+	slot3 = not slot2
+	--- END OF BLOCK #4 ---
 
-slot2._to_135_0 = slot7
+	slot3 = if slot3 then
+	JUMP TO BLOCK #5
+	else
+	JUMP TO BLOCK #6
+	end
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-17, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
 
-	slot1(slot3)
-
-	slot1 = _M
-	slot1 = slot1._get_111_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 138
-	slot5 = "DoAction"
+	--- BLOCK #5 18-35, warpins: 1 ---
 	slot6 = slot0
-	slot7 = "RemoveAITag"
-	slot8 = slot1
-	slot9 = "TE_Env_BeUsed"
+	slot4 = slot0.setActive
 
-	slot2(slot4, slot5, slot6, slot7, slot8, slot9)
+	slot4(slot6)
 
-	slot2 = true
+	slot4 = _M
+	slot4 = slot4._get_111_1
+	slot6 = slot0
+	slot4 = slot4(slot6)
+	slot5 = _A
+	slot7 = slot0
+	slot8 = "AddEntityTag"
+	slot9 = slot4
+	slot10 = "TE_Env_BeUsed"
 
-	return slot2
-	--- END OF BLOCK #0 ---
+	slot5(slot7, slot8, slot9, slot10)
+
+	slot5 = _M
+	slot5 = slot5._to_199_0
+	slot7 = slot0
+
+	return slot5(slot7)
+
+	--- END OF BLOCK #5 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #7
+
+
+	--- BLOCK #6 36-38, warpins: 1 ---
+	slot6 = slot0
+	slot4 = slot0.setActiveFail
+
+	slot4(slot6)
+
+	--- END OF BLOCK #6 ---
+
+	FLOW; TARGET BLOCK #7
+
+
+	--- BLOCK #7 39-39, warpins: 2 ---
+	return
+	--- END OF BLOCK #7 ---
 
 
 
 end
 
-slot2._to_138_0 = slot7
+slot1._to_135_0 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-15, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 141
-	slot4 = "DoAction"
-	slot5 = slot0
-	slot6 = "AddEntityTag"
-	slot7 = 0
-	slot8 = "TE_Wild_DewyInNest"
+	slot1 = _A
+	slot3 = slot0
+	slot4 = "AddEntityTag"
+	slot5 = 0
+	slot6 = "TE_Wild_DewyInNest"
 
-	slot1(slot3, slot4, slot5, slot6, slot7, slot8)
+	slot1(slot3, slot4, slot5, slot6)
 
 	slot1 = _M
 	slot1 = slot1._to_208_0
@@ -543,22 +456,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_141_0 = slot7
+slot1._to_141_0 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot6 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_TurnToTargetAtYaw"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -566,24 +482,11 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-45, warpins: 2 ---
+	--- BLOCK #2 8-39, warpins: 2 ---
 	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 142
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TurnToTargetAtYaw"
-
-	slot1(slot3, slot4, slot5, slot6)
-
-	slot1 = _M
-	slot1 = slot1._get_55_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot0.getContextValue
+	slot4 = "sensorTgtId"
+	slot1 = slot1(slot3, slot4)
 	slot2 = slot0.__agent
 	slot4 = slot2
 	slot2 = slot2.clearSubTreeLocalParams
@@ -629,9 +532,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_142_0 = slot7
+slot1._to_142_0 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -804,9 +707,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_199_0 = slot7
+slot1._to_199_0 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -841,7 +744,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 11-28, warpins: 1 ---
+	--- BLOCK #3 11-26, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActive
 
@@ -851,15 +754,13 @@ slot7 = function(slot0)
 	slot2 = slot2._get_191_1
 	slot4 = slot0
 	slot2 = slot2(slot4)
-	slot3 = _C
-	slot5 = 203
-	slot6 = "DoPatrolBehavior"
-	slot7 = slot0
+	slot3 = _P
+	slot5 = slot0
+	slot6 = 1
+	slot7 = slot2
 	slot8 = 1
-	slot9 = slot2
-	slot10 = 1
-	slot11 = nil
-	slot3 = slot3(slot5, slot6, slot7, slot8, slot9, slot10, slot11)
+	slot9 = nil
+	slot3 = slot3(slot5, slot6, slot7, slot8, slot9)
 	--- END OF BLOCK #3 ---
 
 	slot3 = if slot3 then
@@ -869,7 +770,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #4 29-35, warpins: 1 ---
+	--- BLOCK #4 27-33, warpins: 1 ---
 	slot5 = slot0
 	slot3 = slot0.setContinue
 	slot6 = 203
@@ -885,7 +786,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #6
 
 
-	--- BLOCK #5 36-38, warpins: 1 ---
+	--- BLOCK #5 34-36, warpins: 1 ---
 	slot4 = slot0
 	slot2 = slot0.setActiveFail
 
@@ -896,7 +797,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #6
 
 
-	--- BLOCK #6 39-39, warpins: 3 ---
+	--- BLOCK #6 37-37, warpins: 3 ---
 	return
 	--- END OF BLOCK #6 ---
 
@@ -904,22 +805,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_203_0 = slot7
+slot1._to_203_0 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot6 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_Com_Node_Wait"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -927,20 +831,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-29, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 208
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_Com_Node_Wait"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-23, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -970,66 +861,18 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_208_0 = slot7
+slot1._to_208_0 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-4, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getContextValue
-	slot4 = "sensorTgtId"
-
-	return slot1(slot3, slot4)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_55_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = _C
-	slot3 = 72
-	slot4 = "GetSelfId"
+	slot3 = 82
+	slot4 = "GetAoiEntityTableByLevel"
 	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_72_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_76_3
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 75
-	slot5 = "IsTableEmpty"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_75_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_82_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot6 = 0
+	slot7 = 50
+	slot8 = 256
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8)
 	slot4 = slot0
 	slot2 = slot0.getTempList
 	slot2 = slot2(slot4)
@@ -1041,7 +884,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 12-23, warpins: 1 ---
+	--- BLOCK #1 16-27, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.setCache
 	slot11 = 76
@@ -1063,7 +906,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #2 24-26, warpins: 1 ---
+	--- BLOCK #2 28-30, warpins: 1 ---
 	slot8 = #slot2
 	slot8 = slot8 + 1
 	slot2[slot8] = slot7
@@ -1073,7 +916,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 27-28, warpins: 3 ---
+	--- BLOCK #3 31-32, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -1081,7 +924,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 29-29, warpins: 1 ---
+	--- BLOCK #4 33-33, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #4 ---
 
@@ -1089,9 +932,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_76_3 = slot7
+slot1._get_76_3 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCache
@@ -1105,30 +948,63 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_76_2 = slot7
+slot1._get_76_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
-	slot1 = slot1._get_75_1
+	slot1 = slot1._get_76_3
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 78
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot2 = next
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-16, warpins: 2 ---
+	slot3 = not slot2
+
+	return slot3
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot2._get_78_1 = slot7
+slot1._get_78_1 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_76_3
@@ -1230,30 +1106,15 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_79_2 = slot7
+slot1._get_79_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCache
 	slot4 = 79
 	slot5 = "__iterItem"
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_79_3 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_79_3
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1(slot3, slot4, slot5)
 	slot2 = _C
 	slot4 = 80
 	slot5 = "GetDistance"
@@ -1269,9 +1130,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_80_3 = slot7
+slot1._get_80_3 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-11, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_76_2
@@ -1291,33 +1152,18 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_81_2 = slot7
+slot1._get_81_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-15, warpins: 1 ---
 	slot1 = _C
-	slot3 = 82
+	slot3 = 106
 	slot4 = "GetAoiEntityTableByLevel"
 	slot5 = slot0
 	slot6 = 0
-	slot7 = 50
+	slot7 = 100
 	slot8 = 256
-
-	return slot1(slot3, slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_82_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_106_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8)
 	slot4 = slot0
 	slot2 = slot0.getTempList
 	slot2 = slot2(slot4)
@@ -1329,7 +1175,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #3
 
 
-	--- BLOCK #1 12-23, warpins: 1 ---
+	--- BLOCK #1 16-27, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.setCache
 	slot11 = 100
@@ -1351,7 +1197,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #2 24-26, warpins: 1 ---
+	--- BLOCK #2 28-30, warpins: 1 ---
 	slot8 = #slot2
 	slot8 = slot8 + 1
 	slot2[slot8] = slot7
@@ -1361,7 +1207,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #3
 
 
-	--- BLOCK #3 27-28, warpins: 3 ---
+	--- BLOCK #3 31-32, warpins: 3 ---
 	--- END OF BLOCK #3 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -1369,7 +1215,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #4
 
 
-	--- BLOCK #4 29-29, warpins: 1 ---
+	--- BLOCK #4 33-33, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #4 ---
 
@@ -1377,9 +1223,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_100_3 = slot7
+slot1._get_100_3 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-5, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCache
@@ -1393,57 +1239,15 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_100_2 = slot7
+slot1._get_100_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_100_2
+slot6 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 101
-	slot5 = "HasEntityTag"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "TE_Env_BeUsed"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_101_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_101_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 103
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_103_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-12, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_110_3
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot0.getCache
+	slot4 = 110
+	slot5 = "__iterItem"
+	slot1 = slot1(slot3, slot4, slot5)
 	slot2 = _C
 	slot4 = 105
 	slot5 = "GetDistance"
@@ -1459,92 +1263,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_105_3 = slot7
+slot1._get_105_3 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-8, warpins: 1 ---
-	slot1 = _C
-	slot3 = 106
-	slot4 = "GetAoiEntityTableByLevel"
-	slot5 = slot0
-	slot6 = 0
-	slot7 = 100
-	slot8 = 256
-
-	return slot1(slot3, slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_106_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_100_2
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 107
-	slot5 = "HasEntityTag"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = "TE_Env_DewyNest"
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_107_2 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_100_3
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 108
-	slot5 = "IsTableEmpty"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_108_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_108_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 109
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_109_1 = slot7
-
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_100_3
@@ -1646,25 +1367,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_110_2 = slot7
+slot1._get_110_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getCache
-	slot4 = 110
-	slot5 = "__iterItem"
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_110_3 = slot7
-
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCache
@@ -1710,9 +1415,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_111_1 = slot7
+slot1._get_111_1 = slot6
 
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCache
@@ -1758,112 +1463,91 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_114_1 = slot7
+slot1._get_114_1 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = _M
-	slot1 = slot1._get_107_2
+	slot1 = slot1._get_100_2
 	slot3 = slot0
 	slot1 = slot1(slot3)
+	slot2 = _C
+	slot4 = 107
+	slot5 = "HasEntityTag"
+	slot6 = slot0
+	slot7 = slot1
+	slot8 = "TE_Env_DewyNest"
+	slot2 = slot2(slot4, slot5, slot6, slot7, slot8)
 	--- END OF BLOCK #0 ---
 
-	slot1 = if not slot1 then
+	slot2 = if not slot2 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 7-8, warpins: 1 ---
-	slot2 = false
+	--- BLOCK #1 14-15, warpins: 1 ---
+	slot3 = false
 
-	return slot2
+	return slot3
 
 	--- END OF BLOCK #1 ---
 
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 9-14, warpins: 2 ---
-	slot2 = _M
-	slot2 = slot2._get_103_1
-	slot4 = slot0
-	slot2 = slot2(slot4)
+	--- BLOCK #2 16-29, warpins: 2 ---
+	slot3 = _M
+	slot3 = slot3._get_100_2
+	slot5 = slot0
+	slot3 = slot3(slot5)
+	slot4 = _C
+	slot6 = 101
+	slot7 = "HasEntityTag"
+	slot8 = slot0
+	slot9 = slot3
+	slot10 = "TE_Env_BeUsed"
+	slot4 = slot4(slot6, slot7, slot8, slot9, slot10)
+	slot5 = not slot4
 	--- END OF BLOCK #2 ---
 
-	slot2 = if not slot2 then
+	slot5 = if not slot5 then
 	JUMP TO BLOCK #3
 	else
 	JUMP TO BLOCK #4
 	end
 
 
-	--- BLOCK #3 15-16, warpins: 1 ---
-	slot3 = false
+	--- BLOCK #3 30-31, warpins: 1 ---
+	slot6 = false
 
-	return slot3
+	return slot6
 
 	--- END OF BLOCK #3 ---
 
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 17-18, warpins: 2 ---
-	slot3 = true
+	--- BLOCK #4 32-33, warpins: 2 ---
+	slot6 = true
 
-	return slot3
+	return slot6
 	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot2._get_131_2 = slot7
+slot1._get_131_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-7, warpins: 1 ---
 	slot1 = _C
 	slot3 = 149
 	slot4 = "GetPerceptibilityTable"
 	slot5 = slot0
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_149_0 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_151_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 150
-	slot5 = "GetPerceptibilityValue"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_150_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-6, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_149_0
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1(slot3, slot4, slot5)
 
 	--- END OF BLOCK #0 ---
 
@@ -1874,7 +1558,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #1 7-7, warpins: 1 ---
+	--- BLOCK #1 8-8, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1882,7 +1566,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 8-15, warpins: 2 ---
+	--- BLOCK #2 9-16, warpins: 2 ---
 	slot2 = next
 	slot4 = slot1
 	slot2 = slot2(slot4)
@@ -1895,7 +1579,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #5
 
 
-	--- BLOCK #3 16-17, warpins: 1 ---
+	--- BLOCK #3 17-18, warpins: 1 ---
 	--- END OF BLOCK #3 ---
 
 	if slot3 < slot8 then
@@ -1905,7 +1589,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #4 18-20, warpins: 1 ---
+	--- BLOCK #4 19-21, warpins: 1 ---
 	slot9 = slot7
 	slot3 = slot8
 	slot2 = slot9
@@ -1915,7 +1599,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #5
 
 
-	--- BLOCK #5 21-22, warpins: 3 ---
+	--- BLOCK #5 22-23, warpins: 3 ---
 	--- END OF BLOCK #5 ---
 
 	for slot7, slot8 in slot4, slot5, slot6
@@ -1923,7 +1607,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #6
 
 
-	--- BLOCK #6 23-23, warpins: 1 ---
+	--- BLOCK #6 24-24, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #6 ---
 
@@ -1931,95 +1615,110 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_151_1 = slot7
+slot1._get_151_1 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-13, warpins: 1 ---
 	slot1 = _M
-	slot1 = slot1._get_150_1
+	slot1 = slot1._get_151_1
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	slot2 = _C
-	slot4 = 152
-	slot5 = "IsLessOrEqual"
+	slot4 = 150
+	slot5 = "GetPerceptibilityValue"
 	slot6 = slot0
 	slot7 = slot1
-	slot8 = 1
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
+	slot2 = slot2(slot4, slot5, slot6, slot7)
+	slot3 = 1
 	--- END OF BLOCK #0 ---
+
+	if slot2 > slot3 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #2
+	end
+
+
+	--- BLOCK #1 14-15, warpins: 1 ---
+	slot3 = false
+	--- END OF BLOCK #1 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #3
+
+
+	--- BLOCK #2 16-16, warpins: 1 ---
+	slot3 = true
+
+	--- END OF BLOCK #2 ---
+
+	FLOW; TARGET BLOCK #3
+
+
+	--- BLOCK #3 17-17, warpins: 2 ---
+	return slot3
+	--- END OF BLOCK #3 ---
 
 
 
 end
 
-slot2._get_152_2 = slot7
+slot1._get_152_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_190_3
 	slot3 = slot0
 	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 185
-	slot5 = "IsTableEmpty"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #0 ---
+
+	slot1 = if slot1 then
+	JUMP TO BLOCK #1
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #1 7-11, warpins: 1 ---
+	slot2 = next
+	slot4 = slot1
+	slot2 = slot2(slot4)
+	--- END OF BLOCK #1 ---
+
+	if slot2 ~= nil then
+	JUMP TO BLOCK #2
+	else
+	JUMP TO BLOCK #3
+	end
+
+
+	--- BLOCK #2 12-13, warpins: 1 ---
+	slot2 = false
+	--- END OF BLOCK #2 ---
+
+	UNCONDITIONAL JUMP; TARGET BLOCK #4
+
+
+	--- BLOCK #3 14-14, warpins: 2 ---
+	slot2 = true
+	--- END OF BLOCK #3 ---
+
+	FLOW; TARGET BLOCK #4
+
+
+	--- BLOCK #4 15-16, warpins: 2 ---
+	slot3 = not slot2
+
+	return slot3
+	--- END OF BLOCK #4 ---
 
 
 
 end
 
-slot2._get_185_1 = slot7
+slot1._get_186_1 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_185_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 186
-	slot5 = "Not"
-	slot6 = slot0
-	slot7 = slot1
-
-	return slot2(slot4, slot5, slot6, slot7)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_186_1 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_188_1
-	slot3 = slot0
-	slot1 = slot1(slot3)
-	slot2 = _C
-	slot4 = 187
-	slot5 = "UnpackResPointPort"
-	slot6 = slot0
-	slot7 = slot1
-	slot8 = 1
-
-	return slot2(slot4, slot5, slot6, slot7, slot8)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_187_1 = slot7
-
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-7, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.getCache
@@ -2065,10 +1764,10 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_188_1 = slot7
+slot1._get_188_1 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-10, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-17, warpins: 1 ---
 	slot1 = _C
 	slot3 = 189
 	slot4 = "GetAoiResPointPortTableByLevel"
@@ -2080,22 +1779,7 @@ slot7 = function(slot0)
 		"TR_NS_GenericTemplate"
 	}
 	slot10 = nil
-
-	return slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_189_3 = slot7
-
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_189_3
-	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10)
 	slot4 = slot0
 	slot2 = slot0.getTempList
 	slot2 = slot2(slot4)
@@ -2107,7 +1791,7 @@ slot7 = function(slot0)
 	UNCONDITIONAL JUMP; TARGET BLOCK #2
 
 
-	--- BLOCK #1 12-20, warpins: 1 ---
+	--- BLOCK #1 18-26, warpins: 1 ---
 	slot10 = slot0
 	slot8 = slot0.setCache
 	slot11 = 190
@@ -2125,7 +1809,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 21-22, warpins: 2 ---
+	--- BLOCK #2 27-28, warpins: 2 ---
 	--- END OF BLOCK #2 ---
 
 	for slot6, slot7 in slot3, slot4, slot5
@@ -2133,7 +1817,7 @@ slot7 = function(slot0)
 	GO OUT TO BLOCK #3
 
 
-	--- BLOCK #3 23-23, warpins: 1 ---
+	--- BLOCK #3 29-29, warpins: 1 ---
 	return slot2
 	--- END OF BLOCK #3 ---
 
@@ -2141,47 +1825,38 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_190_3 = slot7
+slot1._get_190_3 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
+slot6 = function(slot0)
+	--- BLOCK #0 1-18, warpins: 1 ---
 	slot1 = _M
-	slot1 = slot1._get_187_1
+	slot1 = slot1._get_188_1
 	slot3 = slot0
 	slot1 = slot1(slot3)
 	slot2 = _C
-	slot4 = 191
-	slot5 = "GetRouteIdFromResPoint"
+	slot4 = 187
+	slot5 = "UnpackResPointPort"
 	slot6 = slot0
-	slot7 = false
-	slot8 = slot1
+	slot7 = slot1
+	slot8 = 1
+	slot2 = slot2(slot4, slot5, slot6, slot7, slot8)
+	slot3 = _C
+	slot5 = 191
+	slot6 = "GetRouteIdFromResPoint"
+	slot7 = slot0
+	slot8 = false
+	slot9 = slot2
 
-	return slot2(slot4, slot5, slot6, slot7, slot8)
+	return slot3(slot5, slot6, slot7, slot8, slot9)
 	--- END OF BLOCK #0 ---
 
 
 
 end
 
-slot2._get_191_1 = slot7
+slot1._get_191_1 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-5, warpins: 1 ---
-	slot3 = slot0
-	slot1 = slot0.getCache
-	slot4 = 192
-	slot5 = "__iterItem"
-
-	return slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2._get_192_3 = slot7
-
-slot7 = function(slot0)
+slot6 = function(slot0)
 	--- BLOCK #0 1-6, warpins: 1 ---
 	slot1 = _M
 	slot1 = slot1._get_190_3
@@ -2283,14 +1958,15 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_192_2 = slot7
+slot1._get_192_2 = slot6
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-11, warpins: 1 ---
-	slot1 = _M
-	slot1 = slot1._get_192_3
+slot6 = function(slot0)
+	--- BLOCK #0 1-12, warpins: 1 ---
 	slot3 = slot0
-	slot1 = slot1(slot3)
+	slot1 = slot0.getCache
+	slot4 = 192
+	slot5 = "__iterItem"
+	slot1 = slot1(slot3, slot4, slot5)
 	slot2 = _C
 	slot4 = 193
 	slot5 = "GetDistanceFromEntityToResPointPort"
@@ -2305,9 +1981,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._get_193_2 = slot7
+slot1._get_193_2 = slot6
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

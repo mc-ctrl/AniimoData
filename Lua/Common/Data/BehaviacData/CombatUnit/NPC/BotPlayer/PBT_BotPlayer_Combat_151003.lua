@@ -7,47 +7,47 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
-	agenttype = "BotPlayerAgent",
-	version = 142,
 	name = "CombatUnit/NPC/BotPlayer/PBT_BotPlayer_Combat_151003",
-	useForRoute = false
+	version = 142,
+	useForRoute = false,
+	agenttype = "BotPlayerAgent"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
 	name = "tCurrentPet",
-	const = 0,
 	value = "0",
-	type = "int"
+	type = "int",
+	const = 0
 }
 slot4[1] = slot5
 slot5 = {
 	name = "tCurrentPetHpPercent",
-	const = 0,
 	value = "0",
-	type = "float"
+	type = "float",
+	const = 0
 }
 slot4[2] = slot5
 slot5 = {
 	name = "tSwitchPetId",
-	const = 0,
 	value = "0",
-	type = "int"
+	type = "int",
+	const = 0
 }
 slot4[3] = slot5
 slot5 = {
 	name = "tTargetSkillId",
-	const = 0,
 	value = "0",
-	type = "int"
+	type = "int",
+	const = 0
 }
 slot4[4] = slot5
 slot5 = {
 	name = "tCurrentEp",
-	const = 0,
 	value = "0",
-	type = "float"
+	type = "float",
+	const = 0
 }
 slot4[5] = slot5
 slot3.pars = slot4

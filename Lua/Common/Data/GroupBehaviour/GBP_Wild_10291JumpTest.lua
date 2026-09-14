@@ -1,8 +1,8 @@
 --- BLOCK #0 1-108, warpins: 1 ---
 slot0 = {
+	behavID = "BP_Wild_GroupBehav_10291JumpTest",
 	GroupBehavVisionArea = "visionAreaLow",
-	CDAfterEnd = 0.1,
-	behavID = "BP_Wild_GroupBehav_10291JumpTest"
+	CDAfterEnd = 0.1
 }
 slot1 = {}
 slot2 = {
@@ -60,8 +60,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "goToNextStage",
-	para = "GBPMsg_Common"
+	para = "GBPMsg_Common",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -146,8 +146,8 @@ slot2 = {
 }
 slot3 = {}
 slot4 = {
-	func = "goToNextStage",
-	para = "GBPMsg_Common"
+	para = "GBPMsg_Common",
+	func = "goToNextStage"
 }
 slot5 = {
 	conditionName = "behavEnd"
@@ -163,8 +163,8 @@ slot5.conditionParamList = slot6
 slot4.condition = slot5
 slot3[1] = slot4
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPointDoPatrol1"
+	para = "GBPMsg_ResPointDoPatrol1",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -180,8 +180,8 @@ slot5 = {
 slot4.role = slot5
 slot3[2] = slot4
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPointDoPatrol2"
+	para = "GBPMsg_ResPointDoPatrol2",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"
@@ -197,8 +197,8 @@ slot5 = {
 slot4.role = slot5
 slot3[3] = slot4
 slot4 = {
-	func = "sendTrigger_ResPoint",
-	para = "GBPMsg_ResPointgoat"
+	para = "GBPMsg_ResPointgoat",
+	func = "sendTrigger_ResPoint"
 }
 slot5 = {
 	conditionName = "delayTime"

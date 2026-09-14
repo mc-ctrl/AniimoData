@@ -1,62 +1,12 @@
---- BLOCK #0 1-51, warpins: 1 ---
+--- BLOCK #0 1-40, warpins: 1 ---
 slot0 = require
 slot2 = "Common.AI.ConditionTrigger.CTHelper"
 slot0 = slot0(slot2)
-slot1 = require
-slot3 = "Common.AICt.CTRConst"
-slot1 = slot1(slot3)
-slot2 = {}
-slot3 = slot0.SafeCall
-slot4 = {
-	"LevelMsgTriggerSheep2",
-	"LevelMsgTriggerYe2",
-	"LevelMsgTriggerSheep3",
-	"LevelMsgTriggerYe3",
-	"LevelMsgTriggerSheepEnd"
-}
+slot1 = {}
+slot2 = slot0.DoPatrolBehavior
+slot3 = slot0.BeginBehaviourV2
 
-slot5 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _eventTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getEventTriggerList = slot5
-slot5 = {}
-
-slot6 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _messageTriggerList
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getMessageTriggerList = slot6
-slot6 = -1
-
-slot7 = function()
-	--- BLOCK #0 1-2, warpins: 1 ---
-	slot0 = _tickLodTriggerLevel
-
-	return slot0
-	--- END OF BLOCK #0 ---
-
-
-
-end
-
-slot2.getTickLodTriggerLevel = slot7
-
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -174,9 +124,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeEventTrigger = slot7
+slot1.executeEventTrigger = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-2, warpins: 1 ---
 	--- END OF BLOCK #0 ---
 
@@ -460,9 +410,9 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.executeContinue = slot7
+slot1.executeContinue = slot4
 
-slot7 = function(slot0, slot1)
+slot4 = function(slot0, slot1)
 	--- BLOCK #0 1-1, warpins: 1 ---
 	return
 	--- END OF BLOCK #0 ---
@@ -471,22 +421,25 @@ slot7 = function(slot0, slot1)
 
 end
 
-slot2.checkInterrupt = slot7
+slot1.checkInterrupt = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot4 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_Com_Angry"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -494,20 +447,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-23, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 4
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_Com_Angry"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-17, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -529,22 +469,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_4_0 = slot7
+slot1._to_4_0 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot4 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_Com_Angry"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -552,20 +495,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-23, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 7
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_Com_Angry"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-17, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -587,9 +517,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_7_0 = slot7
+slot1._to_7_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -610,21 +540,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 21
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
-	slot6 = 1
-	slot7 = 88097319
-	slot8 = 0
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 88097319
+	slot6 = 0
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -634,7 +562,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 21
@@ -649,7 +577,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -657,9 +585,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_21_0 = slot7
+slot1._to_21_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -680,21 +608,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 22
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
-	slot6 = 1
-	slot7 = 88097320
-	slot8 = 0
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 88097320
+	slot6 = 0
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -704,7 +630,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 22
@@ -719,7 +645,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -727,9 +653,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_22_0 = slot7
+slot1._to_22_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -750,21 +676,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 23
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
-	slot6 = 1
-	slot7 = 88097318
-	slot8 = 0
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 88097318
+	slot6 = 0
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -774,7 +698,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 23
@@ -789,7 +713,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -797,9 +721,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_23_0 = slot7
+slot1._to_23_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -820,21 +744,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 24
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
-	slot6 = 1
-	slot7 = 88097321
-	slot8 = 0
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 88097321
+	slot6 = 0
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -844,7 +766,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 24
@@ -859,7 +781,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -867,9 +789,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_24_0 = slot7
+slot1._to_24_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -890,21 +812,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 25
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 88097322
 	slot6 = 1
-	slot7 = 88097322
-	slot8 = 1
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -914,7 +834,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 25
@@ -929,7 +849,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -937,9 +857,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_25_0 = slot7
+slot1._to_25_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -960,21 +880,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 26
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
-	slot6 = 1
-	slot7 = 88097323
-	slot8 = 0
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 88097323
+	slot6 = 0
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -984,7 +902,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 26
@@ -999,7 +917,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -1007,22 +925,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_26_0 = slot7
+slot1._to_26_0 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot4 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_TriggerBlueprint"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1030,20 +951,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-29, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 27
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TriggerBlueprint"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-23, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -1073,22 +981,25 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_27_0 = slot7
+slot1._to_27_0 = slot4
 
-slot7 = function(slot0)
-	--- BLOCK #0 1-3, warpins: 1 ---
-	slot1 = slot0.__isAdditive
+slot4 = function(slot0)
+	--- BLOCK #0 1-6, warpins: 1 ---
+	slot1 = _B
+	slot3 = slot0
+	slot4 = "PBT_TriggerBlueprint"
+	slot1 = slot1(slot3, slot4)
 
 	--- END OF BLOCK #0 ---
 
-	slot1 = if slot1 then
+	slot1 = if not slot1 then
 	JUMP TO BLOCK #1
 	else
 	JUMP TO BLOCK #2
 	end
 
 
-	--- BLOCK #1 4-4, warpins: 1 ---
+	--- BLOCK #1 7-7, warpins: 1 ---
 	return
 
 	--- END OF BLOCK #1 ---
@@ -1096,20 +1007,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-29, warpins: 2 ---
-	slot3 = slot0
-	slot1 = slot0.setActive
-
-	slot1(slot3)
-
-	slot1 = _C
-	slot3 = 28
-	slot4 = "DoBehaviour"
-	slot5 = slot0
-	slot6 = "PBT_TriggerBlueprint"
-
-	slot1(slot3, slot4, slot5, slot6)
-
+	--- BLOCK #2 8-23, warpins: 2 ---
 	slot1 = slot0.__agent
 	slot3 = slot1
 	slot1 = slot1.clearSubTreeLocalParams
@@ -1139,9 +1037,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_28_0 = slot7
+slot1._to_28_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -1162,21 +1060,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 29
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 90830200
 	slot6 = 1
-	slot7 = 90830200
-	slot8 = 1
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -1186,7 +1082,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 29
@@ -1201,7 +1097,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -1209,9 +1105,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_29_0 = slot7
+slot1._to_29_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -1232,21 +1128,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 30
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 90830205
 	slot6 = 1
-	slot7 = 90830205
-	slot8 = 1
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -1256,7 +1150,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 30
@@ -1271,7 +1165,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -1279,9 +1173,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_30_0 = slot7
+slot1._to_30_0 = slot4
 
-slot7 = function(slot0)
+slot4 = function(slot0)
 	--- BLOCK #0 1-3, warpins: 1 ---
 	slot1 = slot0.__isAdditive
 
@@ -1302,21 +1196,19 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #2
 
 
-	--- BLOCK #2 5-18, warpins: 2 ---
+	--- BLOCK #2 5-16, warpins: 2 ---
 	slot3 = slot0
 	slot1 = slot0.setActive
 
 	slot1(slot3)
 
-	slot1 = _C
-	slot3 = 31
-	slot4 = "DoPatrolBehavior"
-	slot5 = slot0
+	slot1 = _P
+	slot3 = slot0
+	slot4 = 1
+	slot5 = 90954734
 	slot6 = 1
-	slot7 = 90954734
-	slot8 = 1
-	slot9 = nil
-	slot1 = slot1(slot3, slot4, slot5, slot6, slot7, slot8, slot9)
+	slot7 = nil
+	slot1 = slot1(slot3, slot4, slot5, slot6, slot7)
 	--- END OF BLOCK #2 ---
 
 	slot1 = if slot1 then
@@ -1326,7 +1218,7 @@ slot7 = function(slot0)
 	end
 
 
-	--- BLOCK #3 19-24, warpins: 1 ---
+	--- BLOCK #3 17-22, warpins: 1 ---
 	slot3 = slot0
 	slot1 = slot0.setContinue
 	slot4 = 31
@@ -1341,7 +1233,7 @@ slot7 = function(slot0)
 	FLOW; TARGET BLOCK #4
 
 
-	--- BLOCK #4 25-25, warpins: 2 ---
+	--- BLOCK #4 23-23, warpins: 2 ---
 	return
 	--- END OF BLOCK #4 ---
 
@@ -1349,9 +1241,9 @@ slot7 = function(slot0)
 
 end
 
-slot2._to_31_0 = slot7
+slot1._to_31_0 = slot4
 
-return slot2
+return slot1
 --- END OF BLOCK #0 ---
 
 

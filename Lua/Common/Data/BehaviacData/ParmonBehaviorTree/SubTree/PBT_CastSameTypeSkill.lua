@@ -7,60 +7,60 @@ slot3 = "Common.AI.Behaviac.Enums"
 slot1 = slot1(slot3)
 slot2 = {}
 slot3 = {
+	version = 7,
 	useForRoute = false,
-	name = "ParmonBehaviorTree/SubTree/PBT_CastSameTypeSkill",
 	agenttype = "CombatAgent",
-	version = 7
+	name = "ParmonBehaviorTree/SubTree/PBT_CastSameTypeSkill"
 }
 slot4 = {}
 slot3.properties = slot4
 slot4 = {}
 slot5 = {
+	type = "float",
 	const = 0,
-	value = "0",
 	name = "tWaitTime",
-	type = "float"
+	value = "0"
 }
 slot4[1] = slot5
 slot5 = {
+	type = "int",
 	const = 0,
-	value = "0",
 	name = "tSkillId",
-	type = "int"
+	value = "0"
 }
 slot4[2] = slot5
 slot5 = {
+	type = "int",
 	const = 0,
-	value = "0",
 	name = "tSkillTargetActorId",
-	type = "int"
+	value = "0"
 }
 slot4[3] = slot5
 slot5 = {
+	type = "string",
 	const = "",
-	value = "",
 	name = "tEmojiBubbleKey",
-	type = "string"
+	value = ""
 }
 slot4[4] = slot5
 slot5 = {
+	type = "float",
 	const = 5,
-	value = "5",
 	name = "tEmojiBubbleTimeout",
-	type = "float"
+	value = "5"
 }
 slot4[5] = slot5
 slot5 = {
+	type = "bool",
 	const = false,
-	value = "false",
 	name = "tRaycastOpen",
-	type = "bool"
+	value = "false"
 }
 slot4[6] = slot5
 slot5 = {
-	value = "Normal",
+	type = "CastAbilitySourceType",
 	name = "tCastAbilitySource",
-	type = "CastAbilitySourceType"
+	value = "Normal"
 }
 slot6 = slot0.CastAbilitySourceType
 slot6 = slot6.Normal
@@ -70,8 +70,8 @@ slot3.pars = slot4
 slot4 = {}
 slot3.attachments = slot4
 slot4 = {
-	id = "1",
-	class = "Sequence"
+	class = "Sequence",
+	id = "1"
 }
 slot5 = {}
 slot4.properties = slot5
@@ -80,8 +80,8 @@ slot4.attachments = slot5
 slot5 = {}
 slot6 = {}
 slot7 = {
-	id = "2",
-	class = "Action"
+	class = "Action",
+	id = "2"
 }
 slot8 = {}
 slot9 = {}
@@ -113,8 +113,8 @@ slot6.node = slot7
 slot5[1] = slot6
 slot6 = {}
 slot7 = {
-	id = "3",
-	class = "IfElse"
+	class = "IfElse",
+	id = "3"
 }
 slot8 = {}
 slot7.properties = slot8
@@ -123,8 +123,8 @@ slot7.attachments = slot8
 slot8 = {}
 slot9 = {}
 slot10 = {
-	id = "4",
-	class = "Condition"
+	class = "Condition",
+	id = "4"
 }
 slot11 = {}
 slot12 = {
@@ -152,8 +152,8 @@ slot9.node = slot10
 slot8[1] = slot9
 slot9 = {}
 slot10 = {
-	id = "5",
-	class = "Assignment"
+	class = "Assignment",
+	id = "5"
 }
 slot11 = {}
 slot12 = {
@@ -191,8 +191,8 @@ slot9.node = slot10
 slot8[2] = slot9
 slot9 = {}
 slot10 = {
-	id = "6",
-	class = "Noop"
+	class = "Noop",
+	id = "6"
 }
 slot11 = {}
 slot10.properties = slot11
@@ -207,8 +207,8 @@ slot6.node = slot7
 slot5[2] = slot6
 slot6 = {}
 slot7 = {
-	id = "8",
-	class = "Action"
+	class = "Action",
+	id = "8"
 }
 slot8 = {}
 slot9 = {}
@@ -252,8 +252,8 @@ slot6.node = slot7
 slot5[3] = slot6
 slot6 = {}
 slot7 = {
-	id = "7",
-	class = "Assignment"
+	class = "Assignment",
+	id = "7"
 }
 slot8 = {}
 slot9 = {
@@ -287,8 +287,8 @@ slot6.node = slot7
 slot5[4] = slot6
 slot6 = {}
 slot7 = {
-	id = "9",
-	class = "Action"
+	class = "Action",
+	id = "9"
 }
 slot8 = {}
 slot9 = {}

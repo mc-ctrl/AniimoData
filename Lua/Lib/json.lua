@@ -4,13 +4,13 @@ slot0 = {
 }
 slot1 = nil
 slot2 = {
+	["\""] = "\\\"",
+	["\r"] = "\\r",
+	["\\"] = "\\\\",
 	["\n"] = "\\n",
 	[""] = "\\f",
 	[""] = "\\b",
-	["\t"] = "\\t",
-	["\""] = "\\\"",
-	["\r"] = "\\r",
-	["\\"] = "\\\\"
+	["\t"] = "\\t"
 }
 slot3 = {
 	["\\/"] = "/"
@@ -606,8 +606,8 @@ slot20 = "false"
 slot21 = "null"
 slot17 = slot17(slot19, slot20, slot21)
 slot18 = {
-	["true"] = true,
-	["false"] = false
+	["false"] = false,
+	["true"] = true
 }
 
 slot19 = function(slot0, slot1, slot2, slot3)

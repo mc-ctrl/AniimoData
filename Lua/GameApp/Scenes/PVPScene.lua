@@ -122,7 +122,7 @@ end
 slot7.onLoaded = slot8
 
 slot8 = function(slot0)
-	--- BLOCK #0 1-25, warpins: 1 ---
+	--- BLOCK #0 1-34, warpins: 1 ---
 	slot1 = pg
 	slot1 = slot1.global
 	slot1 = slot1.ui
@@ -144,65 +144,28 @@ slot8 = function(slot0)
 
 	slot1 = pg
 	slot1 = slot1.global
-	slot1 = slot1.prefsCacheUtils
+	slot1 = slot1.ui
 	slot3 = slot1
-	slot1 = slot1.getBool
-	slot4 = "HudV2Enable"
-	slot5 = false
-	slot1 = slot1(slot3, slot4, slot5)
-	--- END OF BLOCK #0 ---
+	slot1 = slot1.open
+	slot4 = UIConst
+	slot4 = slot4.UI_ID_HUD_V2
 
-	slot1 = if slot1 then
-	JUMP TO BLOCK #1
-	else
-	JUMP TO BLOCK #2
-	end
+	slot1(slot3, slot4)
 
+	slot1 = pg
+	slot1 = slot1.game
+	slot3 = slot1
+	slot1 = slot1.setModuleEnable
+	slot4 = "PVP_MODE"
+	slot5 = ClientConst
+	slot5 = slot5.ModuleKey
+	slot5 = slot5.Chat
+	slot6 = true
 
-	--- BLOCK #1 26-29, warpins: 1 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD_V2
-	--- END OF BLOCK #1 ---
-
-	slot1 = if not slot1 then
-	JUMP TO BLOCK #2
-	else
-	JUMP TO BLOCK #3
-	end
-
-
-	--- BLOCK #2 30-31, warpins: 2 ---
-	slot1 = UIConst
-	slot1 = slot1.UI_ID_HUD
-	--- END OF BLOCK #2 ---
-
-	FLOW; TARGET BLOCK #3
-
-
-	--- BLOCK #3 32-49, warpins: 2 ---
-	slot2 = pg
-	slot2 = slot2.global
-	slot2 = slot2.ui
-	slot4 = slot2
-	slot2 = slot2.open
-	slot5 = slot1
-
-	slot2(slot4, slot5)
-
-	slot2 = pg
-	slot2 = slot2.game
-	slot4 = slot2
-	slot2 = slot2.setModuleEnable
-	slot5 = "PVP_MODE"
-	slot6 = ClientConst
-	slot6 = slot6.ModuleKey
-	slot6 = slot6.Chat
-	slot7 = true
-
-	slot2(slot4, slot5, slot6, slot7)
+	slot1(slot3, slot4, slot5, slot6)
 
 	return
-	--- END OF BLOCK #3 ---
+	--- END OF BLOCK #0 ---
 
 
 

@@ -1,5 +1,7 @@
---- BLOCK #0 1-22, warpins: 1 ---
+--- BLOCK #0 1-24, warpins: 1 ---
 slot0 = {}
+slot1 = 4000
+slot0.CURRENCY_ITEM_ID = slot1
 slot1 = 5
 slot0.MAX_PET_COUNT = slot1
 slot1 = {
@@ -17,10 +19,10 @@ slot1 = {
 }
 slot0.LevelType = slot1
 slot1 = {
-	FIRE = 0,
-	BONUS = 3,
 	WATER = 2,
-	GLASS = 1
+	GLASS = 1,
+	FIRE = 0,
+	BONUS = 3
 }
 slot0.LevelItemRenderType = slot1
 slot1 = {
